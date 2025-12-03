@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A genome-wide RNAi screen identified 81 genes that influence oocyte protein aggregation in C. elegans hermaphrodites. The screen used the Ahringer library targeting ~87% of annotated genes, identified 367 primary candidates, validated 88 genes through multiple rounds, and confirmed 81 final candidates representing diverse cellular processes including translation, RNA processing, cytoskeletal organization, and lysosome acidification. Orthogonal verification using a different aggregation reporter (NMY-2::GFP) confirmed 53 of 55 tested candidates, indicating general effects on protein-aggregate clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is well-described with appropriate validation steps (C29, C46). Multiple independent validation rounds and orthogonal verification with a different reporter (C51, C52) strengthen confidence in the results. The enriched GO categories (C48-C50) are consistent with known proteostasis mechanisms and prior work, providing biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C53",
+      "C54"
+    ],
+    "result": "Protein aggregates accumulate in young, newly formed oocytes of females in the absence of sperm, demonstrating that aggregate formation is an integral part of oocyte development rather than a consequence of prolonged oocyte quiescence. Age-matched first-proximal oocytes from young females (at the 'Christmas-tree' L4 stage) often contained protein aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design directly addresses the question of whether aggregates form due to oocyte aging or developmental programming by examining age-matched newly formed oocytes (C53). The observation that aggregates appear in pristine female oocytes (C30, C53) provides strong evidence against the quiescence hypothesis and supports the developmental model (C31, C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The endoplasmic reticulum undergoes sperm-dependent morphological reorganization during oocyte maturation. In female oocytes, the ER forms bright distinctive patches and parallel stacks that are spatially segregated from protein aggregates, while hermaphrodite oocytes exhibit a fine network appearance. Sperm signals trigger ER remodeling within ~10 minutes, preceding aggregate clearance by several minutes. Genes involved in cytoskeletal organization, protein synthesis, and protein folding are required for normal ER morphology, while disrupting mitochondrial ATP synthase, V-ATPase, or ER function itself did not visibly alter the ER network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ER morphology differences are documented by both fluorescence microscopy (C56) and TEM (C59, C60), providing complementary evidence. The temporal dynamics of ER remodeling relative to aggregate clearance (C61-C63) support a causal relationship. The genetic requirements (C64, C65) help establish the pathway hierarchy, though the interpretation that some genes act indirectly requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Sperm signals regulate V-ATPase localization to lysosomes, enabling lysosome acidification. In hermaphrodites, GFP::VHA-13 forms distinct foci that colocalize with acidic lysosomes, while in females it exhibits diffuse cytoplasmic distribution. Mating triggers relocalization from diffuse to punctate within 20-30 minutes. Knockdown of vha-12 prevents GFP::VHA-13 foci formation, suggesting coordinated V-ATPase assembly. The findings suggest sperm signals lead to lysosome acidification by initiating recruitment of V-ATPase subunits to lysosomes and enabling proton-pump assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sperm-dependent localization pattern is well-documented (C70-C73), and the mating time-course (C78) provides temporal resolution. The tissue-specific RNAi experiments (C69) confirm germline expression despite inability to detect endogenously tagged proteins (C68). However, the use of overexpressed GFP::VHA-13 (MosSCI) rather than endogenous tagging is a limitation, though serial dilution experiments (C73) partially address this concern. The coordinated assembly model (C75, C76) is supported but remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The majority of gene knockdowns from the screen prevented lysosome acidification and blocked V-ATPase assembly, with ATP synthase genes (atp-2, atp-3) being the only exceptions. All knockdowns that blocked lysosome acidification showed reduced GFP::VHA-13 puncta formation (reduced skewness), while ATP synthase knockdowns did not affect V-ATPase assembly. This supports a model where most screen hits act upstream of V-ATPase assembly to prevent lysosome acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic analysis of lysosome acidification (C81) and V-ATPase localization (C84, C85) across the assay pool provides comprehensive evidence. The exception of ATP synthase genes (C82, C85) is consistent with prior work (C83) and helps establish pathway order. The correlation between lysosome acidification and V-ATPase assembly (C84, C86) is strong, though the causal interpretation requires the assumption that no other mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39"
+    ],
+    "result": "Inhibiting processes required for ER morphogenesis and function during oocyte maturation, including protein synthesis and actin dynamics, prevents lysosome acidification by preventing V-ATPase assembly. Unexpectedly, inhibiting TRiC-complex chaperonins, HSP70 chaperones, or proteasome function promotes protein aggregation indirectly by acting upstream to block lysosome acidification rather than through direct effects on protein folding or degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings that protein synthesis (C33), actin dynamics (C34), chaperones (C38), and proteasome (C39) inhibition all prevent lysosome acidification are well-documented experimentally. The interpretation that these act indirectly (C32, C38, C39) is supported by the observation that they affect ER morphology and V-ATPase assembly. However, this does not exclude additional direct roles at later steps, which the authors acknowledge in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Mitochondria have two distinct functions in protein aggregation, both independent of ATP generation. First, all gene knockdowns prevented the mitochondrial membrane potential (\u0394\u03a8) decrease in hermaphrodites, often elevating \u0394\u03a8 above female levels. Second, reducing \u0394\u03a8 through electron transport chain (ETC) inhibition did not prevent aggregate accumulation in females, demonstrating that high \u0394\u03a8 is not a prerequisite for aggregation. ETC knockdowns reduced ATP levels but did not cause aggregation in hermaphrodites, suggesting ATP synthase prevents aggregation through a mechanism independent of ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design effectively separates ATP production from other mitochondrial functions by comparing ATP synthase and ETC knockdowns (C94, C97). The observation that ETC inhibition reduces ATP but doesn't cause aggregation in hermaphrodites (C97) while ATP synthase inhibition does (C89) supports the ATP-independent model (C98). However, the ATP measurements rely on limited replicates (n=2 for some conditions in Figure 5\u2014figure supplement 2C), and the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Additional Krebs cycle genes (ogdh-1 and sdhd-1) cause protein aggregation when knocked down. Unlike ATP synthase inhibition, aco-2 (aconitase) inhibition prevented lysosome acidification, indicating that the Krebs cycle and ATP synthase have distinct roles in the protein-aggregation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of Krebs cycle versus ATP synthase inhibition on lysosome acidification (C100) provide clear evidence for distinct roles (C101). The identification of additional Krebs cycle genes (C99) strengthens the case. However, the mechanistic basis for this distinction (whether involving redox potential, metabolites, or other factors) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "ESCRT-complex proteins are required for aggregate removal, consistent with microautophagy as the clearance mechanism. Four ESCRT subunits (vps-20, vps-28, vps-37, vps-54) showed subtle aggregation phenotypes when knocked down. Importantly, ESCRT knockdowns permitted V-ATPase assembly and lysosome acidification, indicating they operate downstream of these processes. This strengthens the case that microautophagy is the mechanism by which aggregates are cleared in C. elegans oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ESCRT findings are supported by multiple lines of evidence: aggregation phenotypes (C113), maintained V-ATPase localization (C114), and preserved lysosome acidification (C115). The pathway ordering (C116) is well-established. However, the phenotypes are subtle and not observed in all animals (C113), and the ESCRT genes initially failed validation cutoffs, suggesting weaker effects. The morphological resemblance to microautophagy (C102) and ESCRT requirement (C104, C105) together provide reasonable but not definitive evidence for the microautophagy mechanism (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42",
+      "C107",
+      "C108",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Many genes from the germline screen also regulate age-dependent protein aggregation in the soma, suggesting a mechanistic link between germline proteostasis renewal and somatic longevity. Knockdowns affecting lysosomal V-ATPase and vesicle transport (COPII) accelerated aggregation of endogenous KIN-19 and polyQ (Q35::YFP) in somatic tissues. These knockdowns also affected intestinal lysosome acidification. Proteasome subunits (pbs-7, rpn-6.1) were also required for somatic proteostasis. ESCRT knockdown of vps-37 accelerated Q35::YFP but not KIN-19 aggregation, suggesting substrate-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The somatic aggregation experiments using endogenous KIN-19 (C117) and Q35::YFP (C120, C121) provide strong evidence for shared mechanisms (C8, C107, C108). The correlation with intestinal lysosome acidification (C118) supports the mechanistic link. However, the differential ESCRT effects on different substrates (C122, C123) indicate complexity. The KIN-19::split-wrmScarlet system is novel and well-validated with blinded scoring (Figure 6\u2014figure supplement 1), strengthening confidence in these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study builds on established knowledge that the germ-cell lineage is immortal while somatic cells age, and that germline immortality in C. elegans involves proteostasis renewal triggered by sperm signals. The current work proposes that lysosomes are acidified through changes in ER activity that permit V-ATPase assembly, which enables aggregate clearance via microautophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 represent established background knowledge and prior work that is accurately cited. Claims C5-C6 represent the main mechanistic model proposed by the current study, which is supported by the experimental evidence described in other result groups. The integration of prior knowledge with new findings is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The Introduction establishes relevant background on germline quality control mechanisms across species and C. elegans oocyte biology. This includes mechanisms of oocyte elimination via apoptosis, organelle quality control in mice and yeast, enhanced proteostasis in Drosophila eggs, C. elegans reproductive anatomy, and prior findings on carbonylated protein and aggregate clearance triggered by sperm signals during oocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent background knowledge and prior work that is appropriately cited (C10-C14, C17-C28). The C. elegans anatomical descriptions (C15, C16) are established knowledge. All citations appear accurate and relevant to establishing the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The screen utilized the Ahringer RNAi feeding library targeting ~87% of annotated C. elegans genes, and selected GFP::RHO-1 as the reporter because it forms aggregates in female oocytes and in unfertilized oocytes of aging hermaphrodites that have depleted their sperm stores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The library coverage (C43) and reporter characteristics (C44, C45) are well-established and appropriately cited. The reporter selection is justified based on prior work showing its aggregation properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Discussion contextualizes findings within aging research, noting that lysosomal acidity declines with age in yeast and worms, and that interventions enhancing lysosomal function (V-ATPase overexpression in yeast, HLH-30/TFEB overproduction in worms and mammals) can extend lifespan or slow immune system aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent prior work that is appropriately cited (C109-C112) and used to contextualize the current findings within the broader aging field. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

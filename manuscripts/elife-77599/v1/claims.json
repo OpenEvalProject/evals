@@ -1,0 +1,1243 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Large-scale functional magnetic resonance imaging (fMRI) datasets provide high-resolution brain responses to thousands of naturalistic visual stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Advances in artificial intelligence have inspired a paradigm shift in human neuroscience, yielding large-scale functional magnetic resonance imaging (fMRI) datasets that provide high-resolution brain responses to thousands of naturalistic visual stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the nature of modern fMRI datasets, supported by the existence of datasets like NSD and BOLD5000 described in the paper.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Brief stimulus durations and few repetitions of each stimulus in large-scale fMRI experiments pose challenges for achieving sufficient signal-to-noise ratio.",
+    "claim_type": "EXPLICIT",
+    "source": "Because such experiments necessarily involve brief stimulus durations and few repetitions of each stimulus, achieving sufficient signal-to-noise ratio can be a major challenge.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a known challenge in the field based on the experimental design constraints of condition-rich datasets.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "GLMsingle is a scalable, user-friendly toolbox available in MATLAB and Python that enables accurate estimation of single-trial fMRI responses.",
+    "claim_type": "EXPLICIT",
+    "source": "We address this challenge by introducing GLMsingle, a scalable, user-friendly toolbox available in MATLAB and Python that enables accurate estimation of single-trial fMRI responses (glmsingle.org).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of the tool developed by the authors, with reference to its availability.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "GLMsingle requires only fMRI time-series data and a design matrix as inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "Requiring only fMRI time-series data and a design matrix as inputs, GLMsingle integrates three techniques for improving the accuracy of trial-wise general linear model (GLM) beta estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the input requirements of the GLMsingle toolbox.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "GLMsingle integrates three techniques: custom HRF identification, cross-validation-derived noise regressors, and ridge regression regularization.",
+    "claim_type": "EXPLICIT",
+    "source": "Requiring only fMRI time-series data and a design matrix as inputs, GLMsingle integrates three techniques for improving the accuracy of trial-wise general linear model (GLM) beta estimates. First, for each voxel, a custom hemodynamic response function (HRF) is identified from a library of candidate functions. Second, cross-validation is used to derive a set of noise regressors from voxels unrelated to the experiment. Third, to improve the stability of beta estimates for closely spaced trials, betas are regularized on a voxel-wise basis using ridge regression.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the three main components of the GLMsingle algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "GLMsingle substantially improves the reliability of beta estimates across visually-responsive cortex in all subjects in the Natural Scenes Dataset and BOLD5000.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying GLMsingle to the Natural Scenes Dataset and BOLD5000, we find that GLMsingle substantially improves the reliability of beta estimates across visually-responsive cortex in all subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of empirical findings from applying GLMsingle to two datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Comparable improvements in reliability are observed in a smaller-scale auditory dataset from the StudyForrest experiment.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparable improvements in reliability are also observed in a smaller-scale auditory dataset from the StudyForrest experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This reports empirical findings from applying GLMsingle to an auditory dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "GLMsingle helps decorrelate response estimates between trials nearby in time.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that GLMsingle: (i) helps decorrelate response estimates between trials nearby in time",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a demonstrated benefit of GLMsingle, supported by temporal autocorrelation analyses in the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "GLMsingle enhances representational similarity between subjects within and across datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that GLMsingle: (i) helps decorrelate response estimates between trials nearby in time; (ii) enhances representational similarity between subjects within and across datasets",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a demonstrated benefit of GLMsingle, supported by RSA analyses in the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "GLMsingle boosts one-versus-many decoding of visual stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that GLMsingle: (i) helps decorrelate response estimates between trials nearby in time; (ii) enhances representational similarity between subjects within and across datasets; and (iii) boosts one-versus-many decoding of visual stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated as a demonstrated benefit of GLMsingle, supported by MVPA analyses in the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Datasets are rapidly increasing in size and scope across many scientific disciplines.",
+    "claim_type": "EXPLICIT",
+    "source": "Across many scientific disciplines, datasets are rapidly increasing in size and scope.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about scientific trends, supported by citations to various fields.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Large datasets have kickstarted a new era of data-driven scientific discovery.",
+    "claim_type": "EXPLICIT",
+    "source": "These resources have kickstarted a new era of data-driven scientific discovery (Richards et al., 2019; Jumper et al., 2021; Iten et al., 2020; Ravuri et al., 2021; Schawinski et al., 2018; D'Isanto and Polsterer, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to work in various scientific domains.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Recent efforts have yielded high-resolution fMRI datasets in which subjects view thousands of distinct images over several dozen hours of scanning.",
+    "claim_type": "EXPLICIT",
+    "source": "In visual neuroscience, recent efforts to sample individual brains at unprecedented scale and depth have yielded high-resolution functional magnetic resonance imaging (fMRI) datasets in which subjects view thousands of distinct images over several dozen hours of scanning (see Naselaris et al., 2021 for a review).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes recent developments in visual neuroscience, supported by a review citation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The Natural Scenes Dataset, BOLD5000, and THINGS are examples of condition-rich datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, resources such as the Natural Scenes Dataset (NSD, Allen et al., 2022), BOLD5000 (Chang et al., 2019), and THINGS (Hebart et al., 2019) may be useful for advancing our ability to characterize the tuning (Bao et al., 2020; Li and Bonner, 2022; Long et al., 2018; Kriegeskorte and Wei, 2021; Popham et al., 2021), topography (Blauch et al., 2022; Doshi and Konkle, 2021; Zhang et al., 2021; Lee et al., 2020), and computations (Yamins et al., 2014; DiCarlo et al., 2012; Freeman et al., 2013; Marques et al., 2021; Horikawa and Kamitani, 2017) performed in visual cortex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lists specific datasets with citations and describes their potential applications.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The potential of large-scale datasets to reveal general principles of neural function depends critically on signal-to-noise ratio (SNR).",
+    "claim_type": "EXPLICIT",
+    "source": "The potential of large-scale datasets to reveal general principles of neural function depends critically on signal-to-noise ratio (SNR), which refers to one's ability to reliably measure distinct neural signatures associated with different stimuli or experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the importance of SNR for dataset utility.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Diverse sources of noise affect fMRI data and limit the robustness and interpretability of data analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "Diverse sources of noise affect fMRI data, and these noise sources limit the robustness and interpretability of data analyses (Liu, 2016; Kay et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about noise in fMRI, supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Subject head motion, scanner instabilities, physiological noise, and thermal noise all contribute unwanted variability to fMRI data.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, subject head motion, scanner instabilities, physiological noise, and thermal noise all contribute unwanted variability to fMRI data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lists specific sources of noise in fMRI data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Noise is especially problematic in studies that sample a large number of conditions with limited repetitions.",
+    "claim_type": "EXPLICIT",
+    "source": "Noise is especially problematic in studies that sample a large number of conditions, since the number of repetitions of each condition is typically limited, resulting in noisy responses even after trial-averaging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why noise is particularly challenging in condition-rich designs.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "GLMsingle's approach to mitigate noise comes in the context of general linear model (GLM) analysis of fMRI time-series data.",
+    "claim_type": "EXPLICIT",
+    "source": "The approach we have developed to mitigate the effects of noise comes in the context of general linear model (GLM) analysis of fMRI time-series data (Dale, 1999; Monti, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the analytical framework for GLMsingle, with citations to GLM methodology.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The goal of GLM analysis is to estimate beta weights representing the BOLD response amplitude evoked by different experimental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We assume that the goal of the GLM analysis is to estimate beta weights representing the blood oxygenation level dependent (BOLD) response amplitude evoked by different experimental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the objective of GLM analysis in the context of fMRI.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Noise is defined as variability observed across repeated instances of a given condition.",
+    "claim_type": "EXPLICIT",
+    "source": "In this context, we define noise as variability observed across repeated instances of a given condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides the operational definition of noise used in the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "GLMsingle seeks to maximize data quality at the level of individual voxels in individual subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach seeks to maximize data quality at the level of individual voxels in individual subjects (as opposed to data quality assessed only at the region or group level), and seeks to obtain response estimates for single trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design goals of GLMsingle.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "GLMsingle is fully automated with no manual setting of parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, to enable fluid application to even the largest fMRI datasets, GLMsingle is fully automated (no manual setting of parameters) and can be executed efficiently even when gigabytes of fMRI data are passed as input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature of the GLMsingle implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "GLMsingle can be executed efficiently even when gigabytes of fMRI data are passed as input.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, to enable fluid application to even the largest fMRI datasets, GLMsingle is fully automated (no manual setting of parameters) and can be executed efficiently even when gigabytes of fMRI data are passed as input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the computational efficiency of GLMsingle.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The GLMsingle algorithm was previously used to estimate BOLD responses in the NSD dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We previously used the GLMsingle algorithm to estimate BOLD responses in the NSD dataset (Allen et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states prior application of the method, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "NSD and BOLD5000 were collected at different field strengths.",
+    "claim_type": "EXPLICIT",
+    "source": "However, there are a number of differences between the datasets: they were collected at different field strengths, with different event timings, and at different spatial and temporal resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes methodological differences between the two datasets analyzed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "NSD contains many repeated stimuli within each scan session while BOLD5000 contains very few.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, while NSD contains many repeated stimuli within each scan session, BOLD5000 contains very few.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key difference in experimental design between the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Processing BOLD5000 required grouping of input data across scan sessions to facilitate cross-validation procedures.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, processing BOLD5000 required grouping of input data across scan sessions to facilitate the cross-validation procedures used in GLMsingle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological adaptation required for analyzing BOLD5000.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The positive effect of GLMsingle is nearly uniform across voxels in NSD.",
+    "claim_type": "EXPLICIT",
+    "source": "The positive effect is nearly uniform across voxels in NSD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the spatial pattern of improvements observed in NSD.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Reliability metrics are inherently noisier in BOLD5000 due to the smaller number of repeated stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "A likely explanation for this is that reliability metrics are inherently noisier due to the smaller number of repeated stimuli in BOLD5000.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides an explanation for the greater variability in BOLD5000 results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The magnitude of benefits of b4 over b1 are somewhat smaller in BOLD5000 compared to NSD.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the magnitude of the benefits of b4 over b1 are somewhat smaller in BOLD5000 compared to NSD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from comparing results across the two datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "GLMsingle is more effective at higher levels of SNR as a data-driven technique.",
+    "claim_type": "EXPLICIT",
+    "source": "This is likely true for a number of reasons, including the generally lower SNR in BOLD5000 (as a data-driven technique, GLMsingle is more effective at higher levels of SNR)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why GLMsingle shows smaller benefits in BOLD5000.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Ridge regression is expected to have smaller impact when there is less overlap of the BOLD response across successive trials.",
+    "claim_type": "EXPLICIT",
+    "source": "and the relatively long inter-stimulus interval in BOLD5000 (ridge regression is expected to have smaller impact when there is less overlap of the BOLD response across successive trials).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains another reason for smaller benefits in BOLD5000.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "In active voxels, optimal HRF indices exhibit structure in the form of a low-frequency spatial gradient.",
+    "claim_type": "EXPLICIT",
+    "source": "In active voxels, we observe a structured, low-frequency spatial gradient in HRF indices (Figure 2\u2014figure supplement 1b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the spatial pattern of HRF selection, shown in a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Identified HRF indices are highly consistent from session to session.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, identified HRF indices are highly consistent from session to session (Figure 2\u2014figure supplement 1c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the temporal stability of HRF selection across sessions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The FitHRF procedure confers benefit by capturing voxel-wise differences in HRF shapes beyond subject-specific deviation from the assumed HRF.",
+    "claim_type": "EXPLICIT",
+    "source": "This provides evidence that, beyond merely capturing subject-specific deviation from the assumed HRF, the FitHRF procedure confers benefit by capturing voxel-wise differences in HRF shapes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the HRF analysis results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There are strong biophysical reasons to expect voxel-wise differences in HRF shapes, related to variation in the brain's vasculature.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that there are strong biophysical reasons to expect voxel-wise differences in HRF shapes, related to variation in the brain's vasculature (Kay et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides theoretical justification for voxel-wise HRF fitting, with citation.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Fractional ridge regression yields more reliable signal estimates than LSS for both assumed HRF and voxel-wise tailored HRFs.",
+    "claim_type": "EXPLICIT",
+    "source": "For both the case of an assumed HRF and the case of voxel-wise tailored HRFs, we find that fractional ridge regression yields more reliable signal estimates than LSS (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct comparison between two methods, shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The improvements of fractional ridge regression over LSS are most pronounced in the most reliable voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "These improvements are most pronounced in the most reliable voxels (Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes where the benefits of ridge regression are greatest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "LSS can be viewed as applying heavy regularization uniformly across voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "LSS can be viewed as applying heavy regularization uniformly across voxels, while our ridge regression approach is more flexible, tailoring the degree of regularization to the SNR of each voxel.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides a conceptual comparison between LSS and ridge regression.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Heavy regularization may degrade the quality of signal estimates in reliable voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "Heavy regularization may actually degrade the quality of signal estimates in reliable voxels, and our approach avoids this possibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why uniform regularization can be problematic.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "GLMsingle relies on an internal cross-validation procedure to optimize key hyperparameters.",
+    "claim_type": "EXPLICIT",
+    "source": "GLMsingle relies on an internal cross-validation procedure through which key hyperparameters (the number of noise regressors and the voxel-wise levels of ridge regression regularization) are optimized to maximize the consistency of responses across condition repetitions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the hyperparameter optimization strategy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Results are broadly unchanged when computing test-retest correlation values using only beta responses from completely separate data partitions.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that results are broadly unchanged using this more stringent evaluation procedure (Figure 3b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This validates that the reliability improvements are not artifacts of the cross-validation procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The StudyForrest music-listening dataset measures brain responses as subjects listen to 25 distinct 6-s musical clips from 5 genres, with 8 trials per condition for each of 16 subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset measures brain responses as subjects listen to 25 distinct 6-s musical clips from 5 genres, with 8 trials per condition for each of 16 subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental design of the StudyForrest dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The StudyForrest dataset differs from NSD and BOLD5000 in scale, task modality, and use of a jittered inter-stimulus interval.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset differs from NSD and BOLD5000 in several key respects: the scale (there are far fewer trials), the task modality (auditory, as opposed to visual), and the use of a jittered inter-stimulus interval (the delay between trials is variable between 4 and 8 s).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes key differences between StudyForrest and the visual datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Substantial improvements in reliability are observed in StudyForrest through the application of GLMsingle.",
+    "claim_type": "EXPLICIT",
+    "source": "As in NSD and BOLD5000, we observe substantial improvements in reliability through the application of GLMsingle (Figure 4a\u2013c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This reports the results of applying GLMsingle to the auditory dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The improvements in StudyForrest are consistent across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "these improvements are consistent across subjects (Figure 4d)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the consistency of improvements across the StudyForrest subjects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Each individual component of GLMsingle confers added benefit in reliability compared to the baseline GLM in StudyForrest.",
+    "claim_type": "EXPLICIT",
+    "source": "and each individual component of GLMsingle confers added benefit in reliability compared to the baseline GLM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the incremental benefits in the StudyForrest dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The findings from StudyForrest suggest the general applicability of GLMsingle to a wide range of datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "These findings, arising from a smaller scale dataset that may more closely resemble a typical fMRI study, suggest the general applicability of GLMsingle to a wide range of datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the StudyForrest results regarding generalizability.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The relatively long timescale of correlations reflects the long timescale of hemodynamic responses and/or slow physiological noise.",
+    "claim_type": "EXPLICIT",
+    "source": "We speculate that the relatively long timescale of the correlations reflects the long timescale of hemodynamic responses (the post-undershoot can extend for 30 s or longer) and/or the slow nature of (low-frequency) physiological noise related to cardiac and respiratory variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides a speculative explanation for the observed autocorrelation patterns.",
+    "evidence_type": [
+      "SPECULATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "When applying GLMsingle, patterns of temporal autocorrelation change dramatically.",
+    "claim_type": "EXPLICIT",
+    "source": "When applying GLMsingle, these patterns of temporal autocorrelation change dramatically.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the effect of GLMsingle on temporal autocorrelation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "GLMsingle demonstrates utility for disentangling neural responses to nearby stimuli in event-related designs, even when events are presented relatively slowly.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, these results demonstrate the utility of GLMsingle for disentangling neural responses to nearby stimuli in event-related designs, even when events are presented relatively slowly (as in BOLD5000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary interpretation of the temporal autocorrelation results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Noise is expected to be stochastic in data acquisition for each subject and should increase dissimilarities of BOLD response estimates across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "The underlying logic is that noise is expected to be stochastic in the data acquisition for each subject, and thus, should on average increase the dissimilarities of BOLD response estimates across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides the rationale for examining cross-subject representational similarity.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "A method that accurately removes noise would be expected to increase the similarity of BOLD responses across subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "A method that accurately removes noise would then be expected to increase the similarity of BOLD responses across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the previous claim about noise.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "GLMsingle is not designed to enhance or optimize cross-subject representational similarity.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that GLMsingle is not designed to enhance or optimize cross-subject representational similarity; as such, it is informative to examine RSA correlations between subjects as a way of assessing methods for denoising (Charest et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This clarifies that cross-subject similarity is an independent validation metric, not an optimization target.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The strengthening of RDM correspondence held within NSD, within BOLD5000, and when comparing RDMs between the two datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "This trend held within NSD, within BOLD5000, and when comparing the RDMs of subject pairs between the two datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the consistency of the RSA improvements across different comparisons.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The cross-dataset RDM correspondence result is especially notable given the many methodological differences between NSD and BOLD5000.",
+    "claim_type": "EXPLICIT",
+    "source": "The latter result is especially notable given the many methodological differences between NSD and BOLD5000: fMRI data were collected at different sites on different scanners, at different field strengths (7T vs. 3T), with different behavioral tasks, and with different inter-stimulus intervals (4 s vs. 10 s).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This emphasizes the significance of the cross-dataset RSA results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "GLMsingle helps reveal meaningful shared variance in neural responses across individuals who viewed the same stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "These results indicate that GLMsingle, through its multifaceted approach to mitigating the effects of noise, helps reveal meaningful shared variance in neural responses across individuals who viewed the same stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the RSA results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "GLMsingle clarifies the division in representational space between stimuli containing animate and inanimate objects.",
+    "claim_type": "EXPLICIT",
+    "source": "GLMsingle clarifies the division in representational space between stimuli containing animate and inanimate objects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the effect shown in the MDS visualization in Figure 7b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The HRF library incorporated into GLMsingle was previously used for signal estimation in analyzing the Natural Scenes Dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The HRF library incorporated into GLMsingle was previously used for signal estimation in analyzing the Natural Scenes Dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the origin of the HRF library.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The HRF library consists of 20 regularly-spaced points derived from empirically observed BOLD timecourses.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, empirically observed BOLD timecourses were subject to principal components analysis, projected onto the unit sphere, and parameterized using a path consisting of 20 regularly-spaced points through the area of greatest data density.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how the HRF library was constructed.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The HRF library is the default in GLMsingle and was used for all analyses of NSD, BOLD5000, and StudyForrest datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "This library is the default in GLMsingle, and was used for all analyses of the NSD, BOLD5000, and StudyForrest datasets described here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states which HRF library was used in the analyses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "GLMsingle requires the existence of and information regarding repeated trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that because of cross-validation, although GLMsingle produces estimates of responses to single trials, it does require the existence of and information regarding repeated trials (that is, trials for which the experimental manipulation is the same and expected to produce similar brain responses).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a requirement for applying GLMsingle.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The default behavior of GLMsingle is to return beta weights in units of percent signal change.",
+    "claim_type": "EXPLICIT",
+    "source": "The default behavior of GLMsingle is to return beta weights in units of percent signal change by dividing by the mean signal intensity observed at each voxel and multiplying by 100.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how GLMsingle scales its outputs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Running GLMsingle on the first NSD scan session for subj01 took 4.8 hours on a 32-core workstation.",
+    "claim_type": "EXPLICIT",
+    "source": "Code execution (including figure generation and saving results to disk) took 4.8 hr (average of 2 trials).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides empirical data on computational requirements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The maximum memory usage during GLMsingle execution was 38.0 GB of RAM.",
+    "claim_type": "EXPLICIT",
+    "source": "The maximum and mean memory usage over the course of code execution was 38.0 GB and 18.5 GB of RAM, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides empirical data on memory requirements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "GLMsingle is flexible and allows users to adjust parameters to achieve different behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "Although GLMsingle provides default settings for the parameters that control its operation, the toolbox is flexible and allows the user to adjust the parameters if desired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of the GLMsingle implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "NSD and BOLD5000 share an overlapping subset of stimuli from the Microsoft COCO database.",
+    "claim_type": "EXPLICIT",
+    "source": "NSD and BOLD5000 share an overlapping subset of stimuli from the Microsoft Common Objects in Context (COCO) database (Lin et al., 2014), enabling direct comparison between the brain responses observed in the two datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key feature enabling cross-dataset comparison.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "NSD functional data were collected at 7T with 1.8-mm isotropic resolution and TR of 1.6 s.",
+    "claim_type": "EXPLICIT",
+    "source": "Functional data were collected at 7T, with 1.8-mm isotropic resolution, and with a TR of 1.6 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the NSD data acquisition parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Each NSD trial lasted 4 s, consisting of 3 s image presentation followed by a 1-s gap.",
+    "claim_type": "EXPLICIT",
+    "source": "Each trial lasted 4 s, and consisted of the presentation of an image for 3 s, followed by a 1-s gap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the NSD trial structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "BOLD5000 functional data were collected at 3T with 2-mm isotropic resolution and TR of 2 s.",
+    "claim_type": "EXPLICIT",
+    "source": "Functional data were collected at 3T, with 2-mm isotropic resolution, and with a TR of 2 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the BOLD5000 data acquisition parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Each BOLD5000 trial lasted 10 s, consisting of 1 s image presentation followed by a 9-s gap.",
+    "claim_type": "EXPLICIT",
+    "source": "Each trial lasted 10 s, and consisted of the presentation of an image for 1 s, followed by a 9-s gap.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the BOLD5000 trial structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "For BOLD5000, data from groups of 5 sessions were concatenated before processing using GLMsingle.",
+    "claim_type": "EXPLICIT",
+    "source": "Because GLMsingle requires condition repetitions in order to perform internal cross-validation procedures, and because BOLD5000 contains a limited number of within-session repetitions, we concatenated data from groups of 5 sessions together before processing using GLMsingle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological adaptation for processing BOLD5000.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "A global rescaling operation was applied to BOLD5000 data to equate signal intensities across sessions.",
+    "claim_type": "EXPLICIT",
+    "source": "To account for differences in BOLD signal intensity across different sessions, we applied a global rescaling operation to the data within each session to roughly equate the time-series mean and variance across the five sessions comprising one batch of data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step specific to BOLD5000 analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The default GLMsingle parameters were used for processing both NSD and BOLD5000, except that up to 12 nuisance regressors were evaluated in GLMdenoise.",
+    "claim_type": "EXPLICIT",
+    "source": "The default GLMsingle parameters were used for processing both NSD and BOLD5000, except that we evaluated up to 12 nuisance regressors in GLMdenoise (default: 10).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the parameter settings used in the analyses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Prior to all analyses, the responses of each voxel were z-scored within each experimental session.",
+    "claim_type": "EXPLICIT",
+    "source": "Prior to all analyses, the responses of each voxel were z-scored within each experimental session in order to eliminate potential nonstationarities arising over time, and to equalize units across voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a preprocessing step applied before validation analyses.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The StudyForrest music-listening dataset includes 16 subjects for whom all functional data files were available.",
+    "claim_type": "EXPLICIT",
+    "source": "We analyzed the group of 16 subjects from this dataset for whom all functional data files were available within the online data repository.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the subject sample for the StudyForrest analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Each StudyForrest stimulus was a 6-s excerpt from the middle of a distinct musical piece.",
+    "claim_type": "EXPLICIT",
+    "source": "Each stimulus was a 6-s excerpt from the middle of a distinct musical piece, for each of five different musical genres: Ambient, Country, Heavy Metal, 50s Rock'n'Roll, and Symphonic.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the stimulus characteristics in StudyForrest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "StudyForrest trials had 4, 6, or 8 s of delay after each musical stimulus, with the order of delays randomized within a run.",
+    "claim_type": "EXPLICIT",
+    "source": "All trials had 4, 6, or 8 s of delay (no audio, white fixation cross) after each musical stimulus, with the order of delays randomized within a run.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the trial timing in StudyForrest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The 25 StudyForrest stimuli were identical across runs and presented exactly once per run.",
+    "claim_type": "EXPLICIT",
+    "source": "The 25 stimuli were identical across runs and presented exactly once per run.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the stimulus presentation design in StudyForrest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "GLMsingle was applied to StudyForrest data using default hyperparameter settings.",
+    "claim_type": "EXPLICIT",
+    "source": "GLMsingle was applied to the data from each subject using default hyperparameter settings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the analysis parameters for StudyForrest.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The nsdgeneral ROI is a liberal mask containing voxels in visual cortex that was manually drawn on fsaverage.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we used the nsdgeneral ROI from the NSD study, which was manually drawn on fsaverage to cover voxels responsive to the NSD experiment in the posterior aspect of cortex (Allen et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the ROI used for analyses.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "LSS is a popular technique for robust signal estimation in rapid event-related designs.",
+    "claim_type": "EXPLICIT",
+    "source": "Least-Squares Separate (LSS) is a popular technique for robust signal estimation in rapid event-related designs (Mumford et al., 2012; Mumford et al., 2014; Abdulrahman and Henson, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes LSS with citations to relevant literature.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The LSS procedure fits a separate GLM for each stimulus, where the trial of interest is modeled as one regressor and all other trials are collapsed into a second regressor.",
+    "claim_type": "EXPLICIT",
+    "source": "The LSS procedure fits a separate GLM for each stimulus, where the trial of interest is modeled as one regressor, and all other (non-target) trials are collapsed into a second regressor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how LSS works.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "An implementation of LSS is included in the GLMsingle toolbox.",
+    "claim_type": "EXPLICIT",
+    "source": "An implementation of LSS is included in the GLMsingle toolbox.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states that LSS is available in GLMsingle.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Temporal autocorrelation in GLM beta estimates is presumably undesirable and largely artifactual.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, we expect that such correlations are largely artifactual and unwanted.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states an assumption about temporal autocorrelation.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The order of stimulus presentation in NSD and BOLD5000 was essentially unstructured (pseudorandom).",
+    "claim_type": "EXPLICIT",
+    "source": "Note that in both NSD and BOLD5000, the order of stimulus presentation was essentially unstructured (pseudorandom).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the stimulus ordering in the datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "In the absence of noise, trials should be uncorrelated on average given pseudorandom stimulus ordering.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, in terms of signal content (stimulus-driven responses in the absence of noise), we expect that trials should be uncorrelated, on average, and that any non-zero correlations are indicative of the effects of noise that persist following GLM fitting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about expected correlations under pseudorandom ordering.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Noise is expected to be stochastic and increase dissimilarities of BOLD response estimates across subjects on average.",
+    "claim_type": "EXPLICIT",
+    "source": "The underlying logic is that noise is expected to be stochastic in the data acquisition for each subject, and thus, should on average increase the dissimilarities of BOLD response estimates across subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This provides the theoretical basis for using cross-subject similarity as a validation metric.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "241 stimuli overlap between BOLD5000 and the first 10 sessions of NSD.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we isolated stimuli that overlap between BOLD5000 and the subset of NSD analyzed for this manuscript (the first 10 sessions from each subject). Using these 241 stimuli, we constructed representational dissimilarity matrices (RDMs) using repetition-averaged betas from each individual",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the number of overlapping stimuli used for RSA.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "In NSD, 82 classes were used for MVPA decoding, representing images that overlapped across the 10 available sessions from subjects 01-04.",
+    "claim_type": "EXPLICIT",
+    "source": "In NSD, a total of 82 classes were used, representing the images that overlapped across the 10 available sessions from subj01-04.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the MVPA design for NSD.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "In BOLD5000, 20 classes were used for MVPA decoding, representing the subset of stimuli overlapping between all subjects of both datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "In BOLD5000, the subset of these 82 stimuli overlapping between all subjects of both datasets were used (a total of 20 classes).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the MVPA design for BOLD5000.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "BOLD5000 subject CSI4 was excluded from MVPA procedures due to insufficient stimulus repetitions.",
+    "claim_type": "EXPLICIT",
+    "source": "BOLD5000 subject CSI4, having completed only 9 of 15 experimental sessions, was excluded from MVPA procedures due to insufficient stimulus repetitions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains why one subject was excluded from MVPA analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

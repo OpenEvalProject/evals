@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C83"
+    ],
+    "result": "The authors identified differentially expressed genes (DEGs) in HD across human, mouse, and Drosophila models, finding approximately 40% concordance of gene expression changes across species. This concordance was statistically significant and not attributable to random overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 provide comprehensive transcriptomic data showing thousands of DEGs in each species with significant cross-species concordance (p<10^-158). The statistical validation (C21) and PCA analysis (C83) support the robustness of these findings. The methodology is clearly described with appropriate FDR thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Network analysis of DEGs revealed that both glial and neuronal mHTT response networks show significantly higher connectivity than random and form distinct functional clusters. Glial-specific clusters include genes involved in synapse assembly, calcium transport, and immune regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 describe systematic PPI network analysis with appropriate statistical controls comparing to random gene sets. The clustering analysis using InfoMap algorithm identified biologically meaningful clusters with GO/KEGG enrichment. The comparison to random striatal proteins strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The Synapse Assembly cluster identified in Drosophila glial networks was significantly enriched in genes downregulated in human HD oligodendrocyte progenitor cells (OPCs), with NRXN3 being the only upregulated gene in this cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate cross-species validation using human stem cell-derived glial progenitors. The Fisher's exact test (p<0.001, C34) provides statistical support for the enrichment. The identification of specific genes (SYT13, LRRTM1, GRM1, EPB41L2, DLGAP3, AGAP2) with consistent expression patterns strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Reducing expression of synapse assembly genes (SYT13, LRRTM1, GRM1, EPB41L2, DLGAP3, AGAP2, and their interactors) in Drosophila glia mitigated mHTT-induced behavioral deficits, indicating these changes represent compensatory responses rather than pathogenic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide functional validation through behavioral assays showing that further reducing expression of downregulated genes is protective. This counterintuitive finding is well-supported by the data in Figure 3D and supplements, with appropriate statistical analysis (p<0.001) and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Reducing dNRXN3 expression specifically in glia, but not neurons, mitigates mHTT toxicity in both glial-only and combined neuronal-glial mHTT expression models. Nrxn3 is expressed in striatal astrocytes of HD mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 demonstrate cell-type-specific effects through systematic genetic manipulation. The behavioral data (C41-C45) show clear differential effects between glial and neuronal knockdown. The in situ hybridization (C48) validates expression in mouse astrocytes. The logic that glial-specific knockdown is both necessary and sufficient (C47) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "High-throughput behavioral screening identified 25 genes that suppress mHTT-induced deficits in neurons, glia, or both, with many involved in actin cytoskeleton regulation, vesicular trafficking, and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 describe a comprehensive screen of 411 alleles representing 248 genes. The identification of functional categories is supported by the data in Figure 5 and supplements. However, the claim would be strengthened by more detailed statistical analysis of the screen hits and validation of the functional annotations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Knockdown of SERPINA1 (Spn42De in Drosophila, Serpina1a in mice) reduces mHTT protein levels and mitigates behavioral deficits across model systems. Serpina1a protein is upregulated in HD mouse striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide multi-species validation of SERPINA1 as a modifier that acts by reducing mHTT levels. The behavioral data (C51), western blots (C52), HTRF assay (C53), and immunofluorescence (C55) provide converging evidence. The mechanism (reducing mHTT levels, C54) is well-supported by the protein quantification data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "There is substantial conservation of HD-related transcriptional changes between Drosophila glia and mammalian glia, consistent with functional conservation of glial cell types across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide context for the cross-species comparisons. C56 is supported by the data, while C57-C59 are appropriately cited claims from prior literature that justify the comparative approach. The discussion acknowledges potential limitations in the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Synaptic dysfunction in HD involves excitotoxicity driven by elevated glutamate, calcium, and potassium at synapses, with contributions from both neuronal and glial dysfunction. Glial calcium signaling and physical positioning relative to synapses are disrupted in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 synthesize prior literature (appropriately cited) with the current findings. These claims provide mechanistic context for interpreting the gene expression and behavioral data. The integration of prior knowledge with current results is appropriate for the Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C89"
+    ],
+    "result": "The authors propose a model in which downregulating synaptic function is protective in HD because it attenuates excitotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C89 present a mechanistic model to explain the compensatory downregulation of synaptic genes. While this model is consistent with the data showing that further reducing synaptic gene expression is protective, it remains speculative. The model is plausible given the excitotoxicity literature, but direct evidence for reduced excitotoxicity as the mechanism is not provided. Alternative explanations (e.g., effects on mHTT aggregation, glial phagocytosis) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "HD mutation carriers show developmental abnormalities including enlarged striata and hyperconnectivity by age 6, with more severe hyperconnectivity predicting more rapid subsequent atrophy. Astrocytic neurexin-1\u03b1 deletion attenuates synaptic transmission without affecting synapse number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 cite recent literature on developmental aspects of HD and neurexin function. These appropriately cited claims provide context for the compensatory model. The citations appear accurate and relevant to the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Reactive astrocytes in HD eliminate synapses and can transmit mHTT aggregates through synapses via phagocytosis and secretion mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 synthesize prior literature on astrogliosis, synaptic pruning, and mHTT transmission. The citations are appropriate and provide mechanistic context for understanding how glial dysfunction contributes to HD pathology. These claims support the rationale for targeting glial genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Loss-of-function variants in synaptic genes (NRXN1-3, NLGN1, NLGN3, DLGAP3, LRRTM1) are associated with neurodevelopmental and psychiatric disorders, and many HD patients develop schizophrenia-like psychosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 appropriately cite literature linking synaptic gene variants to psychiatric disorders and noting psychiatric symptoms in HD. This provides interesting context suggesting that compensatory mechanisms in HD might eventually contribute to psychiatric symptoms, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Modulating expression of genes other than mHTT in glia could be an effective therapeutic strategy for HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a reasonable conclusion based on the findings that reducing expression of multiple glial genes improves HD phenotypes in Drosophila. However, translation to therapeutic applications would require additional validation in mammalian models and consideration of potential side effects from modulating these genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "SERPINA1 expression is low in healthy brain but upregulated in multiple disease conditions, consistent with a role in neuroinflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is appropriately cited and provides context for SERPINA1 as a therapeutic target. The upregulation in HD is confirmed by the authors' own data (C55), strengthening the relevance of this prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Downregulation of glial genes involved in synaptic function mitigates HD pathogenesis, and glial-specific reduction of dNRXN3 can improve phenotypes even when mHTT is expressed in neurons, suggesting glial dysfunction has brain-wide effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 represent the main conclusions of the study. C86 is well-supported by the transcriptomic and behavioral data. C87 is supported by the cell-type-specific experiments. C88 is a reasonable inference from C87, though the mechanism by which glial effects \"ramify throughout the brain\" could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing HD genetics, pathology, transcriptomic complexity, glial involvement, and prior findings on compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-cited background information establishing the context for the study. These claims are appropriately referenced to prior literature and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

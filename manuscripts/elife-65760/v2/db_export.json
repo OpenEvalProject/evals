@@ -1,0 +1,1699 @@
+{
+  "submission": {
+    "id": "322f7b2b-59eb-47e1-9341-3962fbc944bc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:40:16.641964Z",
+    "updated_at": "2025-12-03T03:40:16.641964Z"
+  },
+  "content": [
+    {
+      "id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "submission_id": "322f7b2b-59eb-47e1-9341-3962fbc944bc",
+      "content_type": "manuscript",
+      "content_text": "# Morphological and genomic shifts in mole-rat \u2018queens\u2019 increase fecundity but reduce skeletal integrity\n\n## Authors\n\n- Rachel A Johnston<sup>1</sup> ([ORCID: 0000-0002-8965-1162](https://orcid.org/0000-0002-8965-1162)) \u2020\n- Philippe Vullioud<sup>2</sup>\n- Jack Thorley<sup>2</sup>\n- Henry Kirveslahti<sup>3</sup>\n- Leyao Shen<sup>4</sup>\n- Sayan Mukherjee<sup>3</sup>\n- Courtney M Karner<sup>4</sup>\n- Tim Clutton-Brock<sup>2</sup>\n- Jenny Tung<sup>1</sup> ([ORCID: 0000-0003-0416-2958](https://orcid.org/0000-0003-0416-2958)) \u2020\n\n### Affiliations\n\n1. Department of Evolutionary Anthropology, Duke University Durham United States\n2. Department of Zoology, University of Cambridge Cambridge United Kingdom\n3. Department of Statistical Science, Duke University Durham United States\n4. Department of Orthopaedic Surgery, Duke Orthopaedic Cellular, Developmental, and Genome Laboratories, Duke University School of Medicine Durham United States\n5. Department of Computer Science, Duke University Durham United States\n6. Department of Mathematics, Duke University Durham United States\n7. Department of Bioinformatics & Biostatistics, Duke University Durham United States\n8. Department of Cell Biology, Duke University Durham United States\n9. Department of Zoology and Entomology, Mammal Research Institute, University of Pretoria Pretoria South Africa\n10. Department of Biology, Duke University Durham United States\n11. Duke Population Research Institute, Duke University Durham United States\n12. Canadian Institute for Advanced Research Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn some mammals and many social insects, highly cooperative societies are characterized by reproductive division of labor, in which breeders and nonbreeders become behaviorally and morphologically distinct. While differences in behavior and growth between breeders and nonbreeders have been extensively described, little is known of their molecular underpinnings. Here, we investigate the consequences of breeding for skeletal morphology and gene regulation in highly cooperative Damaraland mole-rats. By experimentally assigning breeding \u2018queen\u2019 status versus nonbreeder status to age-matched littermates, we confirm that queens experience vertebral growth that likely confers advantages to fecundity. However, they also upregulate bone resorption pathways and show reductions in femoral mass, which predicts increased vulnerability to fracture. Together, our results show that, as in eusocial insects, reproductive division of labor in mole-rats leads to gene regulatory rewiring and extensive morphological plasticity. However, in mole-rats, concentrated reproduction is also accompanied by costs to bone strength.\n\n## Introduction\n\nA hallmark of highly cooperative societies is reproductive division of labor. This phenomenon is best understood in eusocial insects, where environmental cues lead to reproductively and morphologically specialized castes, including one or few highly fecund \u2018queens\u2019 (Wilson, 1971). These changes help support the reproductive role of queens by differentiating them from nonbreeding colony members, who forage, care for young, and engage in colony defense (Wilson, 1971; Keller and Genoud, 1997). Queens are frequently much larger than their sterile colony mates (e.g., twice as large in honey bees and Pharaoh ants; Berndt and Eichler, 1987; Page and Peng, 2001), reflecting dramatically altered growth and development programs that are explained by changes in gene regulation (Smith et al., 2008). Social insects thus exemplify the tight evolutionary links between reproductive division of labor, cooperative behavior, and extreme morphological plasticity.\n\nSystems in which breeding is restricted to a single female supported by multiple nonbreeding helpers are also observed in vertebrates, including birds and mammals (Koenig and Dickinson, 2016). Here, breeding status is not determined during early development, but instead occurs in adulthood, and breeding is only achieved by those individuals who have the opportunity to transition into a reproductive role. In some species, new breeders undergo a period of accelerated growth, which may be important either for maintaining dominance or for supporting high fecundity (Clutton-Brock et al., 2006; Huchard et al., 2016; O'Riain et al., 2000; Russell et al., 2004; Thorley et al., 2018; Young and Bennett, 2010). While substantial gene regulatory divergence with breeding status has been described for the brain and some peripheral organs (Bens et al., 2018; Mulugeta et al., 2017; Sahm et al., 2020), we know little about the gene regulatory shifts responsible for breeder-associated patterns in growth. Because morphological change is often crucial for ramping up offspring production, these processes are key to understanding both the basis for, and limits of, status-driven differences in growth and development.\n\nHere, we investigate the morphological and molecular consequences of experimental transitions to breeding status in female Damaraland mole-rats (Fukomys damarensis). Like naked mole-rats (Heterocephalus glaber), Damaraland mole-rats are frequently classified as \u2018eusocial\u2019 (Bennett and Faulkes, 2000; Jarvis, 1981; Jarvis and Bennett, 1993), and female helpers who transition to queens experience accelerated vertebral growth associated with increases in fecundity (O'Riain et al., 2000; Thorley et al., 2018). However, it is not clear what triggers skeletal remodeling, where it is localized within the vertebral column, or whether it extends to other parts of the skeleton. Further, the gene regulatory changes that support skeletal remodeling in mole-rat queens are not known, nor are their consequences for skeletal growth potential and integrity. To address these questions, we experimentally assigned age-matched, female littermates to become queens or remain as nonbreeders and evaluated gene regulatory and morphological changes induced by the transition to queen status. Our results indicate that, as in eusocial insects, females that acquire breeding status experience substantial morphological remodeling, associated with pathway-specific changes in gene regulation. Notably, we found that queens not only experience lengthening of their lumbar vertebrae\u00a0(LV), but also show reductions in the growth potential and structural integrity of their long bones. These changes result from increased rates of bone resorption that may increase the risk of fracture, indicating that the presence of helpers does not annul the costs of reproduction to queens.\n\n## Results\n\n### Adaptive plasticity in the skeleton of Damaraland mole-rat queens\n\nAdult female Damaraland mole-rats were randomly assigned to either transition to queen status (n\u00a0=\u00a012) or remain as nonbreeders (n\u00a0=\u00a018) for the duration of the experiment (Figure 1A\u2013C; Supplementary file 1). Age at assignment (mean age\u00a0=\u00a019.4\u00a0\u00b1\u00a04.4 s.d. months) was consistent with the age at dispersal observed in wild Damaraland mole-rats (1\u20133 years, Thorley and Clutton-Brock, unpublished data). To resolve whether skeletal changes are a function of the queen transition per se versus release from reproductive suppression in the natal colony, nonbreeders were either kept in their natal colonies as helpers or placed into solitary housing in the absence of a breeding queen, recapitulating extended periods of dispersal in this species (Jarvis and Bennett, 1993) (n\u00a0=\u00a010 helpers and n\u00a0=\u00a08 solitaires). At the time of assignment, females assigned to the queen, helper, and solitaire treatments were statistically indistinguishable in body mass, age, and vertebral length (as measured by LV5; unpaired t-tests between all pairwise combinations of treatments: p>0.05; Figure 1\u2014figure supplement 1). When possible, we assigned age-matched littermates to queen versus nonbreeding treatments (26 of 30 experimental animals were in sets of littermate sisters; Supplementary file 1). Six nonexperimental animals (one queen and five nonbreeders) were also included in the sample, resulting in a total sample size of 13 breeders and 23 nonbreeders (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig1-v2.jpg)\n\n**Figure 1.:** (a) A breeding \u2018queen\u2019 (top) and nonbreeding female (bottom) Damaraland mole-rat, shown at the same scale. Animals are dye marked to allow for individual identification. Photo credit James Bird. (b) An x-ray of a female breeder, with lines depicting the x-ray measurements taken (LV1\u2013LV7, right femur, right tibia, and zygomatic arch). Three developing offspring are visible within the abdomen (highlighted by increased brightness and contrast), and span the length of the LV. (c) Experimental design: nonbreeding adult female () littermates were randomly assigned to transition to queen status (purple ) by being paired with an unrelated male (), or to remain in a nonbreeding treatment (cyan). Duration of treatment ranged from 12 to 22 months. (d) Queens (purple dots) show more rapid growth in LV5 in the first four months of the experiment, relative to nonbreeders (cyan diamonds; treatment by time point interaction: \u03b2\u00a0=\u00a00.078, n\u00a0=\u00a049, p=3.47\u00d710\u22123). Dots show means\u00a0\u00b1\u00a0standard errors (bars). (e) At the start of the experiment (0 months, left panel), the LV of breeders do not differ from those of nonbreeders (unpaired t-tests, all p>0.05). However, at 12 months (right panel), queens have longer LV relative to nonbreeders (unpaired t-tests, * indicates p<0.05). Dots show means\u00a0\u00b1\u00a0standard errors (bars). Lengths of LV above the plots are scaled to indicate the mean lengths of queens (top) and nonbreeders (bottom) at each time point; vertebrae highlighted in purple are significantly longer in queens relative to nonbreeders. (f) Litter size is positively correlated with maternal body length in the Damaraland mole-rat colony (\u03b2\u00a0=\u00a00.353, n\u00a0=\u00a0328 litters, p=1.35\u00d710\u22123).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Queen, helper, and solitaire female mole-rats do not differ in\u00a0(a)\u00a0mass,\u00a0(b)\u00a0age, or\u00a0(c)\u00a0lumbar vertebra\u00a0(LV)\u00a05\u00a0length at the start of the experiment.\u00a0Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5\u00d7 of the interquartile range. Dots represent individual animals. P-values are from unpaired t-tests between each pairwise comparison between helpers (n\u00a0=\u00a010), queens (n\u00a0=\u00a012), and solitaires (n\u00a0=\u00a08). For LV5 length, data were only available for 10 queens. Raw data values are provided in Supplementary file 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Helper and solitaire female mole-rats do not differ in (a) mass (unpaired t-test; t\u00a0=\u00a00.496, df\u00a0=\u00a012.733, p=0.629) or (b) LV5 length (unpaired t-test; t\u00a0=\u00a0\u22120.358, df\u00a0=\u00a08.391, p=0.729) after 12\u201322 months of experimental treatment of social status. Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5\u00d7 of the interquartile range. Dots represent individual animals. Raw data values are provided in Supplementary file 1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Pearson correlations between the length of each LV and body length from mole-rat x-ray data. Narrower ovals with darker shades of red indicate larger Pearson correlations; correlation values are also given in the lower left triangle.\n\nFemales assigned to the queen treatment were each transferred to a new tunnel system containing only an unrelated adult male, simulating the natural process of dispersal and new colony formation in the wild (Jarvis and Bennett, 1993). This pairing procedure, which defines the queen treatment, typically leads to immediate sexual activity and rapid activation of the reproductive axis, including initiation of ovulation and the potential for conception (Bennett et al., 1996; Snyman et al., 2006). Queens gave birth to a mean of 6.92\u00a0\u00b1\u00a05.57 s.d. live offspring during the 12\u201322-month follow-up period, produced in a mean of 2.85\u00a0\u00b1\u00a01.75 s.d. litters (range: 0\u20136; Supplementary file 1). As expected, helpers and solitaires produced no offspring, and did not differ from each other in body mass or vertebral length after the 12\u201322-month follow-up period (unpaired t-tests, all p>0.05; Figure 1\u2014figure supplement 2). Because helpers and solitaires were morphologically indistinguishable, and also exhibited no differences in gene expression in our subsequent genomic assays (Supplementary file 2), we grouped them together into a single \u2018nonbreeder\u2019 treatment for the remainder of our analyses.\n\nCompared to nonbreeders, queens showed rapid growth in the LV in the first 12 months post-pairing (Figure 1D,\u00a0E), especially in the vertebrae toward the caudal end of the vertebral column (LV5 and LV6). Based on longitudinal measurements, most of this differential growth was concentrated soon after the breeding status transition. Specifically, we observed a significant interaction between breeding status (queen versus nonbreeder) and post-pairing time point in the first four months of the experiment (Figure 1D; \u03b2\u00a0=\u00a00.0794, p=3.13\u00d710\u22123; n\u00a0=\u00a049 x-rays from 28 animals), but not for measurements taken in later time point intervals (4 versus 8 months; 8 versus 12 months, 12 versus 16 months, 16 versus 22 months; all p>0.05). Moreover, in the first four months, only queens that had already experienced pregnancy showed accelerated vertebral lengthening relative to nonbreeders (unpaired t-test; LV5 of pregnant queens versus nonbreeders: t\u00a0=\u00a0\u22125.735, df\u00a0=\u00a016.871, p=2.50\u00d710\u22125; LV5 of queens not yet pregnant versus nonbreeders: t\u00a0=\u00a0\u22120.789, df\u00a0=\u00a013.007, p=0.444; n\u00a0=\u00a014 nonbreeders, five pregnant queens, and two queens not yet pregnant).\n\nAs a result of accelerated vertebral growth in queens post-transition, size differences persisted throughout the study. After 12 months, the absolute length of LV5 in queens was, on average, 4.8% longer than nonbreeders (Figure 1E; LV5: unpaired t-test, t\u00a0=\u00a02.509, df\u00a0=\u00a021.095, p=0.020), and the absolute length of the LV column in queens relative to nonbreeders was 3.5% longer, although the latter difference was not significant (unpaired t-test, t\u00a0=\u00a01.945, df\u00a0=\u00a022.49, p=0.064). Differences between queens and nonbreeders were even more apparent if LV measures were scaled by zygomatic arch (head) width, as in previous studies (O'Riain et al., 2000; Thorley et al., 2018; Dengler-Crish and Catania, 2009) (LV5: 9.3% longer, unpaired t-test, t\u00a0=\u00a04.12, df\u00a0=\u00a015.135, p=8.87\u00d710\u22124; LV column length: 7.9% longer, unpaired t-test, t\u00a0=\u00a04.34, df\u00a0=\u00a015.37, p=5.58\u00d710\u22124). Thus, transitions to queen status induce reproductive investment, which in turn leads to organism-wide allometric changes that generate an elongated phenotype.\n\nThe elongated phenotype appears to subsequently facilitate future fecundity. Queens with longer bodies (which correlates with longer LV, Pearson\u2019s r\u00a0=\u00a00.856, p=5.99\u00d710\u221259; Figure 1\u2014figure supplement 3) had more pups per litter (Figure 1F; \u03b2\u00a0=\u00a00.353, p=1.35\u00d710\u22123, n\u00a0=\u00a0328 litters from all breeding groups maintained in the same breeding facility; Supplementary file 3). Controlling for litter size, longer queens also had larger pups: for every additional centimeter of maternal body length, pup body mass increased by 2.9% (\u03b2\u00a0=\u00a00.29, p=0.032, n\u00a0=\u00a0971 pups). Thus, the elongated queen phenotype is a strong candidate for adaptive plasticity that supports increased fertility in queen mole-rats.\n\n### Breeding status induces gene regulatory changes in the queen mole-rat skeleton\n\nTo identify the gene regulatory changes associated with skeletal plasticity, we cultured cells enriched for bone marrow-derived mesenchymal stromal cells (bMSCs) isolated from the LV (pooled LV1\u2013LV5) of queens and nonbreeders (n\u00a0=\u00a05 queens, 11 nonbreeders). bMSC cultures include multipotent skeletal stem cells, the precursor of the osteoblast and chondrocyte lineages responsible for bone growth. In parallel, we cultured cells enriched for bMSCs from the pooled long bones (humerus, ulna, radius, left femur, and left tibia) of the same animals, which do not show increased elongation in queens (femur at 12 months: unpaired t-test, t\u00a0=\u00a0\u22120.202, df\u00a0=\u00a019.326, p=0.842; tibia at 12 months: unpaired t-test, t\u00a0=\u00a0\u22120.860, df\u00a0=\u00a016.759, p=0.402). To evaluate the potential role of sex steroid hormone signaling on bone growth, we treated cells from each bone sample for 24 hr with either 10 nM estradiol or vehicle control, resulting in 47 total samples. We then performed RNA-Seq on each sample to screen for genes that were systematically differentially expressed in the bone cells of queens versus nonbreeders.\n\nOf 10,817 detectably expressed genes, 171 genes showed a significant effect of breeding status at a false discovery rate (FDR) threshold of 10% in the long bones (329 at an FDR of 20%; Supplementary file 4). Surprisingly, no genes showed a significant effect of breeding status in the LV at either FDR threshold. However, effect sizes were highly correlated between bone types overall (R2\u00a0=\u00a00.75, p=4.60\u00d710\u221253), with more pronounced effects of breeding status in the long bone samples than in the LV (paired t-test on breeding status effects in long bone versus vertebrae: t\u00a0=\u00a03.97, df\u00a0=\u00a0317.67, p=8.73\u00d710\u22125). Importantly, breeding status-related differences were not readily attributable to differences in bone cell composition. Based on both canonical markers of bMSC lineage cells and deconvolution of the RNA-Seq data using data from 27 mesenchymal or hematopoietic lineage mouse cell types, the majority cell type in both queen and nonbreeder samples was most similar to cells from the bMSC lineage (Dominici et al., 2006; Hume et al., 2010; Newman et al., 2015;\u00a0Figure 2\u2014figure supplements 1 and 2). Additionally, the top three principal components summarizing estimated cell-type proportions did not differ between queens and nonbreeders (all FDR\u00a0>\u00a010%, Supplementary file 5), and we identified no cases in which the effects of breeding status on gene expression were significantly mediated by the first principal component of cell composition (p>0.05 for all 171 queen-associated genes at 10% FDR; Supplementary file 6).\n\nThe majority of breeding status-associated genes were upregulated in queens (151 of 171 genes, 88%). In support of their role in skeletal plasticity, upregulated genes were enriched for bone remodeling (log2[OR]=4.07, p=5.07\u00d710\u22126), a process that involves the balanced cycle between bone formation by osteoblasts and bone resorption by osteoclasts (Redlich and Smolen, 2012;\u00a0Figure 2). Surprisingly, however, enriched pathways were specifically related to bone resorption, not formation (Supplementary file 7), including \u2018positive regulation of bone resorption\u2019 (Figure 2A,\u00a0C; log2[OR]=6.51, p=1.55\u00d710\u22126) and \u2018superoxide anion generation,\u2019 which is involved in osteoclast activity and degradation of bone matrix (Figure 2A,\u00a0C; log2[OR]=5.29, p=1.4\u00d710\u22125) (Darden et al., 1996; Datta et al., 1996; Key et al., 1990; Key et al., 1994). Differentially expressed genes were also enriched for immune-related processes (e.g., \u2018cytokine secretion,\u2019 \u2018chemotaxis,\u2019 \u2018leukocyte activation involved in immune response\u2019; Supplementary file 7). These observations suggest that transitions to queen status also involve changes in immunoregulatory signaling (osteoclast cells are derived from monocytes).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig2-v2.jpg)\n\n**Figure 2.:** (a) Gene Ontology (GO) terms enriched in queen upregulated genes, relative to the background set of all genes tested. Bars represent 95% confidence intervals. Processes highlighted in purple are also depicted in (c). Highest-level (most general) terms are shown; for full GO enrichment results, see Supplementary file 7. (b) Accessible transcription factor binding site motifs enriched near queen upregulated genes, relative to all genes tested. Bars represent 95% confidence intervals. Transcription factors highlighted in purple are also depicted in (c). (c) Schematic of the balance between bone formation and bone resorption, showing key regulators and markers for mesenchymal stem cell differentiation into osteoblasts and hematopoietic stem cell differentiation into osteoclasts (Redlich and Smolen, 2012; Segeletz and Hoflack, 2016). Note that not all genes or proteins in gray were tested for differential expression (e.g., because they were not annotated in the Damaraland mole-rat genome or were too lowly expressed in our sample); see Supplementary file 4 for full set of tested genes. Queen upregulated genes or corresponding proteins (false discovery rate [FDR] < 10%) are highlighted as purple ovals, and transcription factors with binding motifs enriched near queen upregulated genes are highlighted as purple hexagons. Inset for osteoclasts shows the NADPH oxidase system, which generates superoxide radicals (O2-) necessary for bone resorption and is highly enriched for queen upregulated genes (purple ovals).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Clustering was performed using Ward\u2019s hierarchical clustering method on Euclidean distances of the quantile normalized expression of the seven bMSC markers (out of 11 described; Dominici et al., 2006) that were quantified in both the mole-rat and reference mouse (Hume et al., 2010) data sets. The black box indicates mole-rat samples, and the blue box indicates mouse osteoblasts, a bMSC lineage cell type.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme estimates within 1.5\u00d7 the interquartile range. Cell proportions were estimated with CIBERSORT (Newman et al., 2015), based on reference gene expression levels for 412 marker genes in 27 purified mouse cell types (Hume et al., 2010). The predicted predominant cell type in the mole-rat samples is most similar to early stage osteoblasts, which are cells from the bone marrow-derived mesenchymal stromal cell lineage.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Transcription factor footprints were profiled separately for (a,\u00a0c,\u00a0e)\u00a0lumbar vertebrae (n\u00a0=\u00a04; two queens and two nonbreeders) and for (b,\u00a0d,\u00a0f)\u00a0long bones (n\u00a0=\u00a04; two queens and two nonbreeders). Transcription factor activity was not significantly different between queens and nonbreeders in any of the three transcription factors, in either bone type (paired t-tests; all p>0.05).\n\nOmni-ATAC-seq profiling of open chromatin regions further supports a central role for bone resorption and osteoclast activity in the queen skeleton (n\u00a0=\u00a08; Supplementary file 8). Specifically, transcription factor binding motifs (TFBMs) located in accessible chromatin near queen upregulated genes were enriched for PU.1 and MITF, two transcription factors that are essential for osteoclast differentiation (Segeletz and Hoflack, 2016;\u00a0Figure 2B,\u00a0C; PU.1 log2[OR]=1.041, p=2.84\u00d710\u22124; MITF log2[OR]=0.707, p=7.36\u00d710\u22123; see Supplementary file 8 for a\u00a0complete list of enriched TFBMs). MITF was also among the 151 genes that were differentially expressed between queens and nonbreeders and upregulated in both queen long bones and LV. Surprisingly, given the role of sex steroid hormones in bone growth and elevated estradiol levels in queen versus helper Damaraland mole-rats (Bennett, 1994), we observed no significant effects of estradiol treatment on gene expression in either bone type (all FDR\u00a0>\u00a010%). Queen upregulated genes were also not in closer proximity to androgen response elements (AREs) or estrogen response elements (EREs) than expected by chance (ARE log2[OR]=0.207, p=0.627; ERE log2[OR]=0.196, p=0.652). Consistent with this observation, transcription factor footprinting analysis showed no evidence of queen-associated differences in transcription factor activity of the androgen receptor (AR), estrogen receptor 1 (ESR1), or estrogen receptor 2 (ESR2), in either the long bones or LV (all paired t-tests: p>0.05; Figure 2\u2014figure supplement 3). Thus, our data point to the involvement of non-sex steroid-mediated signaling pathways in remodeling queen mole-rat bones, at least after 1 year post-transition.\n\n### Extensive skeletal remodeling in queen mole-rats\n\nThe gene expression data suggest that queen status-driven changes to the skeleton extend beyond the LV to the long bones. Further, they suggest that bone resorption\u2014an important counterpoint to bone formation that is required for normal skeletal maintenance\u2014also distinguishes breeding and nonbreeding females. To investigate this possibility, we performed high-resolution micro-computed tomography (\u03bcCT) scanning to generate 3D reconstructions of LV6, LV7, right femur, and right tibia of queens and female nonbreeders (n\u00a0=\u00a0140 bones from 36 animals; Figure 3A, Figure 3\u2014figure supplement 1). This approach substantially increases the level of resolution for investigating breeding status-linked differences in skeletal morphology, as previous studies relied on x-ray data alone (O'Riain et al., 2000; Thorley et al., 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig3-v2.jpg)\n\n**Figure 3.:** (a) Micro-computed tomography\u00a0(\u03bcCT) scans of Damaraland mole-rat tibias. Boxes indicate the location of the proximal growth plate, which varies between unfused (left) to fully fused (right). (b) Example Safranin\u00a0O-stained histological sections of the proximal tibia, in which the growth plate is unfused (top), partially fused (middle), or fully fused (bottom). Values indicate percent growth plate fusion across the width of the bone. The cartilaginous growth plate is stained deep pink, and calcified bone is stained green. (c) Queens, and specifically queens that gave birth to more offspring, show increased growth plate fusion (\u03b2\u00a0=\u00a00.050, p=4.51\u00d710\u22123, n\u00a0=\u00a012, controlling for age) and (d) decreased number of chondrocyte columns within the remaining growth plate (\u03b2\u00a0=\u00a0\u22120.132, p=0.020, n\u00a0=\u00a012, controlling for age). Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5\u00d7 of the interquartile range. In (c) and (d), dots represent individual animals, and shading indicates each animal\u2019s total offspring number. Ages of queens and nonbreeders do not significantly differ (unpaired t-test, t\u00a0=\u00a00.489, n\u00a0=\u00a012, p=0.644). (e\u2013g) Femoral cross-sections with area highlighted in gray show the measures represented in the corresponding plots below. Each line represents an age-matched, nonbreeder and queen littermate pair. (e) Queens have less cortical bone (relative to the total area of the femoral midshaft cross-section) compared to their paired nonbreeding littermates (paired t-test, t\u00a0=\u00a0\u22124.07, df\u00a0=\u00a08, p=3.60\u00d710\u22123). (f) Queens also have enlarged marrow cavities (paired t-test, t\u00a0=\u00a05.36, df\u00a0=\u00a08, p=6.82\u00d710\u22124) but (g) show no difference in overall periosteal area (paired t-test, t\u00a0=\u00a01.54, df\u00a0=\u00a08, p=0.162).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Micro-computed tomography\u00a0(\u03bcCT) scan of LV7 of a female Damaraland mole-rat. The boxes indicate the locations of the caudal and cranial growth plates. (b-c) The number of offspring produced by queens does not significantly predict (b)\u00a0growth plate fusion (quantified as the average of the caudal and cranial growth plates; \u03b2\u00a0=\u00a02.745\u00d710\u22124, p=0.970, n\u00a0=\u00a012, controlling for age) or (c)\u00a0chondrocyte proliferation within the remaining growth plate (\u03b2\u00a0=\u00a0\u22120.033, p=0.293, n\u00a0=\u00a012, controlling for age). Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5\u00d7 of the interquartile range. Dots represent individual animals, and shading indicates each animal\u2019s total offspring number.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** At top, cross-section with area highlighted in gray shows the measure represented in the plot. Each line represents an age-matched nonbreeder and queen littermate pair. Queens and nonbreeders show no difference in cortical area/total area at the LV6 midsection (paired t-test of cortical area/total area, t\u00a0=\u00a0\u22120.741, df\u00a0=\u00a06, p=0.487).\n\nWe first asked whether breeding status could be predicted from morphological differences in the 3D reconstructions. We found that it could for the LV, but not for the femur: by applying the smooth Euler characteristic transform (Crawford et al., 2016), we were able to predict queen versus nonbreeder status in LV6 (77.8% accuracy, p=0.01, n\u00a0=\u00a036), but not the femur (52.8% accuracy, p=0.53, n\u00a0=\u00a036). Including only highly fecund queens (\u22656 total offspring) improved predictive accuracy in the femur (70% accuracy, p=0.12, n\u00a0=\u00a030). Although these predictions did not reach statistical significance, they raised the possibility that morphological changes in femurs become enhanced with increasing reproductive effort.\n\nWe next tested whether the transition to queen status affects the ability to continue bone lengthening. Lengthening requires the presence of a growth plate, a region of cartilage in the bone where longitudinal growth occurs through proliferation of cartilage cells (chondrocytes) (Figure 3A,\u00a0B, Figure 3\u2014figure supplement 1). Closure of the growth plate, which indicates that bone lengthening potential has terminated, typically occurs in mammals after reaching sexual maturation, when energy begins to be invested in reproduction instead of growth (Kilborn et al., 2002). To test whether the transition to queen status alters bone lengthening potential, we performed Safranin\u00a0O staining on sections of the right tibia and LV7 to visualize growth plates (Figure 3B). In the proximal tibia but not LV7, queens were less likely to have open growth plates (Figure 3C, Figure 3\u2014figure supplement 1, and Supplementary file 9; tibia: two-sided binomial test, p=0.019; LV7: two-sided binomial test, p=0.422). The increased probability of growth plate closure in the tibia of queens is linked to the number of offspring a female has produced: females with more offspring showed a higher expanse of closure across the growth plate (\u03b2\u00a0=\u00a00.050, p=4.51\u00d710\u22123, n\u00a0=\u00a012, controlling for age). This pattern may be due in part to reduced chondrocyte proliferation,\u00a0as females that produced more offspring had fewer chondrocyte columns in the remaining growth plate (Figure 3D; \u03b2\u00a0=\u00a0\u22120.132, p=0.020, n\u00a0=\u00a012, controlling for age). Thus, offspring production in queens is associated with loss of the ability to lengthen the long bones, but not the LV, consistent with the importance of abdominal lengthening for supporting larger litters.\n\nA major demand on reproductively active female mammals is a high requirement for calcium, particularly during lactation when mothers support rapid offspring bone growth. Maternal skeletons are remodeled to meet this demand, although in most mammals, these changes are not permanent (reviewed in Kovacs, 2016). Because of the particularly intense reproductive investment made by cooperatively breeding mole-rat queens, we therefore also evaluated the effect of queen status on trabecular and cortical bone volumes, which are thought to be important in satisfying short-term and long-term calcium demands, respectively. We found no effect of queen status on the amount of trabecular bone in the femur, tibia, LV6, or LV7 (all p>0.05 for bone volume/total volume). However, we found that cortical bone was significantly reduced at the femoral midshaft, but not in the LV, in queens compared to their nonbreeding sisters (Figure 3E, Figure 3\u2014figure supplement 2; femur: paired t-test of cortical area\u00a0(CA)/total area, t\u00a0=\u00a0\u22124.067, df\u00a0=\u00a08, p=3.60\u00d710\u22123; LV6: paired t-test of CA/total area, t\u00a0=\u00a0\u22120.741, df\u00a0=\u00a06, p=0.487). Relative to nonbreeders, the femoral midshafts of queens showed significantly lower apparent density (paired t-test, t\u00a0=\u00a0\u22123.734, df\u00a0=\u00a08, p=5.75\u00d710\u22123), but no difference in material density (paired t-test, t\u00a0=\u00a0\u22120.074, df\u00a0=\u00a08, p=0.943). Thus, reduced bone mass in queens is due to reduced bone volume, and not to reduced mass per unit volume (e.g., due to increased porosity).\n\nThe reduction of apparent density in queens could be due to slowed bone growth, which typically occurs on the outer, periosteal bone surface, or to increased bone resorption, which typically affects the inner endosteal surface and increases the marrow cavity. Our analysis indicates that cortical bone loss in queens is due to the latter explanation: queens had a larger marrow cavity (paired t-test, t\u00a0=\u00a05.355, df\u00a0=\u00a08, p=6.82\u00d710\u22124; Figure 3F) but showed no difference in periosteal area compared to their nonbreeding sisters (paired t-test, t\u00a0=\u00a01.539, df\u00a0=\u00a08, p=0.162; Figure 3G).\n\nBecause changes in cortical bone are thought to reflect accumulated demands over long time frames, we hypothesized that cortical thinning in queens is a consequence of repeated cycles of pregnancy and lactation over time, which can occur simultaneously in Damaraland mole-rat queens. In support of this idea, we found that, within queens, the relative amount of cortical bone is not predicted by the number of pups in a queen\u2019s recent litter (pups born within the past 30 days; \u03b2\u00a0=\u00a0\u22120.024, n\u00a0=\u00a013, p=0.287), but instead by the total number of pups she produced in her lifetime. Specifically, queens who had more live births had reduced cortical bone thickness along the entire shaft of the femur (Figure 4 and Supplementary file 10; across decile sections of the femur: all p<0.05, controlling for mother\u2019s litter as a random effect). Thus, cortical thinning does not commence with the transition to queen status per se (i.e., it is not a correlate of achieving breeder status), but instead appears to be a consequence of repeated investment in pregnancy and lactation. Notably, thinning is particularly marked in queens who had at least six offspring, which usually occurs by 14 months after a breeding status transition (i.e., by the third litter; Supplementary file 10). Given that wild Damaraland mole-rat queens can maintain their status for many years (Schmidt et al., 2013), our results suggest that long-lived queens may experience substantial morphological change (although the long lives of wild Damaraland mole-rat queens [Schmidt et al., 2013] suggest these changes must be manageable to some degree, or potentially even recoverable).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig4-v2.jpg)\n\n**Figure 4.:** (a) Queens (top row) relative to their same-aged female nonbreeding littermates (bottom row) present thinner cortical bone across the femur, particularly in females that have many offspring (top right). Number of offspring is indicated above each femur, and vertical arrows indicate littermate pairs. (b) Within each decile section across the femoral shaft, number of offspring is negatively correlated with average cortical thickness (linear mixed model with littermate pair as random effect). Full results are presented in Supplementary file 10. Asterisk indicates p<0.05.\n\n### Skeletal remodeling predicts increased risk of femur breakage in queens\n\nIn humans, accelerated bone resorption is a central cause of osteoporosis-related bone fragility (Szulc et al., 2006). We therefore hypothesized that cortical thinning in queen mole-rat femurs would be linked to decreased bone strength. To test this hypothesis, we calculated three key indicators of femoral structural integrity: cortical area (CA), the minimum second moment of inertia (Imin, a correlate of minimum resistance to bending), and polar second moment of area (J, a correlate of torsional rigidity). In nonbreeders, the three measures are positively correlated with body mass (CA: R2\u00a0=\u00a00.409, n\u00a0=\u00a021, p=1.08\u00d710\u22123; Imin: R2\u00a0=\u00a00.412, n\u00a0=\u00a021, p=1.03\u00d710\u22123; J: R2\u00a0=\u00a00.422, n\u00a0=\u00a021, p=8.62\u00d710\u22124). However, in queens, Imin and J are not significantly predicted by body mass (Imin: R2\u00a0=\u00a00.088, n\u00a0=\u00a013, p=0.17; J: R2\u00a0=\u00a00.239, n\u00a0=\u00a013, p=0.0514), but are instead a function of number of offspring produced (Imin: R2\u00a0=\u00a00.283, p=0.0354; J: R2\u00a0=\u00a00.271, n\u00a0=\u00a013, p=0.0393). Queen CA is predicted by both offspring number and body mass, but offspring number explains almost twice the variance (offspring number R2\u00a0=\u00a00.634, p=6.83\u00d710\u22124; body mass R2\u00a0=\u00a00.385, p=0.014).\n\nTo evaluate the effects of reproductive activity on the risk of bone failure, we drew on data on the relationship between CA and bone mechanical failure in a large data set of mouse femurs (Jepsen et al., 2003). In this data set, CA is the best predictor of maximum load (the maximum force a bone can withstand prior to failure), and, crucially, the CA-max load relationship is highly linear (Figure 5\u2014figure supplement 1; R2\u00a0=\u00a00.877, p=6.64\u00d710\u221238). Scaling the mole-rat CA data to mouse suggests that transitions to queen significantly increase the risk of bone failure (Figure 5; hazard ratio [95% confidence interval]=2.68 (1.18, 6.08), n\u00a0=\u00a034, p=0.018). Similar to growth potential and cortical thinning, this effect is driven by highly fertile queens, such that those who had at least six offspring showed the highest predicted risk of bone failure (Figure 5; queens with\u00a0\u22656 offspring relative to nonbreeders: HR\u00a0=\u00a03.74 (1.42, 9.82), n\u00a0=\u00a028, p=0.007). The risk of bone failure is thus predicted to increase by 21% for each additional pup (HR\u00a0=\u00a01.21 (1.10, 1.33), n\u00a0=\u00a034, p=1.22\u00d710\u22124).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig5-v2.jpg)\n\n**Figure 5.:** Survival curves for femurs from nonbreeders versus queens (Wald test, p=0.02, n\u00a0=\u00a034) and versus queens with\u00a0\u22656 offspring (Wald test, p=0.006, n\u00a0=\u00a028), based on predictions from the midshaft cortical area and data from Jepsen et al., 2003. Vertical dashed lines indicate group medians, with the median failure time for nonbreeders fixed at a value of 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65760/elife-65760-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Max load shows a highly linear relationship with cortical area across mouse femurs (R2\u00a0=\u00a00.88, p=6.64\u00d710\u221238). Each dot represents a single mouse femur. Solid line indicates the best fit line. Data are from Jepsen et al., 2003.\n\n## Discussion\n\nOur results demonstrate that transitions to breeding status in Damaraland mole-rat queens lead to a cascade of skeletal changes linked to shifts in gene regulation. The vertebral lengthening observed in Damaraland mole-rat queens is concordant with previous reports of vertebral lengthening in both Damaraland mole-rats (Thorley et al., 2018) and naked mole-rats (O'Riain et al., 2000). Like naked mole-rats, our analyses show that most growth is concentrated soon after the breeding status transition, especially in connection with the first post-transition pregnancies (Dengler-Crish and Catania, 2009; Henry et al., 2007). However, our findings also suggest subtle differences: for instance, while the growth phenotype in naked mole-rats occurs at the cranial end of the LV (Henry et al., 2007), it is concentrated at the caudal end of the vertebral column in Damaraland mole-rats. Given that Damaraland mole-rats and naked mole-rats independently evolved a similar, highly cooperative social structure (Jarvis and Bennett, 1993; Faulkes and Bennett, 2016), this difference suggests potential convergent evolution of the vertebral lengthening phenotype in queens, presumably in response to the selection pressure for increased fertility.\n\nIn addition to previously described vertebral growth, we found that queen Damaraland mole-rats lose bone lengthening potential in the long bones and develop thinner femurs that are predicted to be more prone to mechanical failure. Moreover, gene expression levels in queens reflect a signature of bone resorption, rather than bone growth, at the time of sampling, which occurred 1\u20132 years post-transition. The molecular signature of bone resorption temporally aligns with changes in morphology, in which accelerated vertebral growth primarily occurs during a female\u2019s first pregnancy, whereas cortical thinning in the long bones is\u00a0a function of repeated cycles of offspring production. Thus, queens quickly progress from traits typically associated with pre-reproductive and pubertal growth in mammals (e.g., body elongation), to traits typically linked to aging (e.g., marrow cavity expansion and cortical thinning).\n\nThe complex pattern of bone growth and bone resorption in queens likely involves multiple regulatory mechanisms. Because estrogen is known to impact bone growth and maintenance (Cutler, 1997; Khalid and Krum, 2016), and estrogen levels are higher in mole-rat queens relative to nonbreeding females (Bennett, 1994), we hypothesized that queens and nonbreeders would differ in their response to estradiol in bone marrow-derived cells. Surprisingly, we observed no gene expression response to estradiol treatment. By itself, this result could be a function of the specific concentration or duration of estradiol treatment we applied. However, we also observed no enrichment for estrogen receptor binding motifs near queen upregulated genes, and no evidence that estrogen or androgen receptor binding sites are differentially bound in cells from queens versus nonbreeders. Thus, our results suggest a role for other, as-yet unknown signaling pathways in the queen-specific signature of long bone cortical resorption (although it does not exclude the possibility that estrogen signaling influences other phenotypes, such as bone elongation, growth plate closure, or collagen organization, which require further study; Juul, 2001; Cake et al., 2005; Ham et al., 2002).\n\nBone loss in Damaraland mole-rat queens may be an extreme of the typical mammalian pattern of bone remodeling, in which bone mineral density decreases during pregnancy and lactation, but recovers once offspring are weaned (Kovacs, 2016). Thinning in mole-rats may be sustained, however, because queens can begin gestating soon after lactating for the previous litter, leaving little to no time for recovery. One possible reason that this fast rate of breeding is achievable is that queens in colonies with more helpers work less and rest more (Houslay et al., 2020), consistent with studies in other cooperative species that show that helpers alleviate breeding-associated efforts (Bales et al., 2000; Clutton-Brock and Manser, 2016; Crick, 1992; Paquet et al., 2013; Russell, 2003; Scantlebury et al., 2002). Paradoxically, helpers might not only help offset costs of, but also contribute to, decreased bone mass in queens, given that large numbers of helpers are themselves produced via high queen fecundity, and reduced physical activity can also lead to decreases in bone mass (Morseth et al., 2011).\n\nThe extent to which helpers reduce the costs of breeding to queens may also differ between species depending on the relative numbers of helpers to breeders. For example, in eusocial insects, large colonies and the high ratio of helpers to queens reduce the costs of reproduction to queens to very low levels (Wilson, 1971; Keller and Genoud, 1997). Similarly, in naked mole-rats (where colonies can include hundreds of animals compared to dozens in Damaraland mole-rat colonies; Jarvis, 1981; Jarvis and Bennett, 1993; Jarvis et al., 1994), a small sample of queens (n\u00a0=\u00a06) suggests increased rather than decreased femoral cortical thickness relative to age-matched nonbreeders (Pinto et al., 2010). Testing how the costs and benefits of reproduction are resolved across different levels of cooperativity, including the molecular mechanisms that mediate these differences, is an important next step towards understanding the evolution of cooperative breeding in mammals.\n\nFinally, despite frequent analogies between Damaraland mole-rats and eusocial insects (Jarvis and Bennett, 1993; Jarvis et al., 1994; Burda et al., 2000), our results suggest some key points of differences. Specifically, while abdominal lengthening allows queen mole-rats to increase fecundity per reproductive effort, loss of cortical bone in the femur is unlikely to directly benefit either fertility or survival. Instead, it reflects the cumulative burden of continuous cycles of pregnancy and lactation (Kovacs, 2016). Thus, unlike eusocial insect queens (Rodrigues and Flatt, 2016; Rueppell et al., 2016), Damaraland mole-rat queens incur morphological costs to concentrated reproduction in addition to morphological changes that facilitate increased fitness. How these costs translate into fertility or survival outcomes in natural populations remains a fascinating, unanswered question.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant human fibroblast growth factor-basic</td>\n      <td>Biocom Africa Biotech (http://www.biocombiotech.com)</td>\n      <td>Cat # 571504</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Y-27632 Rock Inhibitor</td>\n      <td>Cayman Chemical</td>\n      <td>Cat # 10005583</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>R Project for Statistical Computing</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>cutadapt</td>\n      <td>cutadapt</td>\n      <td>RRID:SCR_011841</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HTSeq</td>\n      <td>HTSeq</td>\n      <td>RRID:SCR_005514</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>STAR</td>\n      <td>RRID:SCR_004463</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LIMMA</td>\n      <td>LIMMA</td>\n      <td>RRID:SCR_010943</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq</td>\n      <td>DESeq</td>\n      <td>RRID:SCR_000154</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>G:Profiler</td>\n      <td>G:Profiler</td>\n      <td>RRID:SCR_006809</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GATK</td>\n      <td>GATK</td>\n      <td>RRID:SCR_001876</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>VCFtools</td>\n      <td>VCFtools</td>\n      <td>RRID:SCR_001235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BEAGLE</td>\n      <td>BEAGLE</td>\n      <td>RRID:SCR_001789</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CIBERSORT</td>\n      <td>CIBERSORT</td>\n      <td>RRID:SCR_016955</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Trim Galore</td>\n      <td>Trim Galore</td>\n      <td>RRID:SCR_011847</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BWA</td>\n      <td>BWA</td>\n      <td>RRID:SCR_010910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MACS</td>\n      <td>MACS</td>\n      <td>RRID:SCR_013291</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOMER</td>\n      <td>HOMER</td>\n      <td>RRID:SCR_010881</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MATLAB</td>\n      <td>RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>ImageJ</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Avizo 3D Software</td>\n      <td>Avizo 3D Software</td>\n      <td>RRID:SCR_014431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>MEM-alpha</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat # M4526</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hyclone Research Grade Fetal Bovine Serum (FBS), South American (Colombia) origin, IRRADIATED</td>\n      <td>Separations (South Africa; http://separations.co.za)</td>\n      <td>SV30160.03IR</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Study system and experimental design\n\nDamaraland mole-rats (F. damarensis) were maintained in a captive colony at the Kuruman River Reserve in the Northern Cape Province of South Africa, within the species\u2019 natural range. With the exception of the predictive Euler characteristic transform analysis (which included two nonbreeding females born in the wild and subsequently maintained in captivity), only animals born in captivity, with known birthdates, ages, and litter composition, were used in this study. Animals were maintained in artificial tunnel systems built from PVC pipes with compartments for a nest-box and waste-box and transparent windows to allow behavioral observation (Z\u00f6ttl et al., 2016). Animals were fed ad libitum with sweet potatoes and cucumbers.\n\nAdult females (>1 year) from 16 natal colonies were randomly assigned to be either nonbreeders or queens, such that females assigned to queen status had age-matched littermates, where possible, who were assigned to the nonbreeding condition. To distinguish the effects of queen status from release from reproductive suppression, nonbreeders were either maintained in their natal colony as helpers or maintained alone, which models the social condition experienced by dispersing females. Females assigned to the breeder condition were transferred to a new tunnel system with an unrelated male from a separate social group. Nine new breeding females, six helpers, and eight solitaire females (age-matched littermates where possible; Supplementary file 1) were set up in December 2015\u2013July 2016 (Thorley et al., 2018). With one exception (animal G10F026), animals maintained their breeding status for 14\u201322 months before sample collection. One queen and five helpers that were siblings, but not age-matched littermates, of experimental animals were also included in sample collection. To increase the final sample size, an additional four breeding colonies, matched against four age-matched littermate helpers, were formed in October 2017 and followed for 11\u201312 months (Supplementary file 1). One queen died before sample collection, and one nonexperimental helper was euthanized during the course of the study and included in sample collection. The final sample size included 13 queens, 15 helpers, and 8 solitaire females.\n\n### X-ray data\n\nFor a subset of study subjects, full body X-rays were taken using the Gierth TR 90/20 battery-operated generator unit with portable Leonardo DR Mini plate (OR Technology, Rostock, Germany) every 2 months during the first 12 months of the experiment and at the time of sacrifice. From these X-rays, an experimenter blind to animal breeding status measured the length of each LV (from vertebra 1 to 7), the right femur, the right tibia, body length, and the width of the zygomatic arch using ImageJ (Schneider et al., 2012). The caudal-most LV was labeled as LV7. We tested for an effect of breeding status on LV5 using a linear mixed model in which post-pairing time point, breeding status, and the interaction of time point by breeding status were modeled as fixed effects and animal ID as a random effect.\n\n### Effects of queen body length on fertility\n\nTo test the effect of maternal body length on litter size and pup size, we used body length measurements obtained during routine colony monitoring of all queens maintained in the captive colony (i.e., not restricted to experimental animals). Following Thorley et al., 2018, we used body length measurements obtained nearest to, and no more than 90 days from, the date of parturition. The resulting data\u00a0set included 328 litters (971 pups) from 76 mothers, which represents a 76% increase over an earlier analysis of this relationship in Thorley et al., 2018. We fit two linear mixed effects models. In the first model, we modeled litter size as a function of maternal body length, controlling for whether the litter was the female\u2019s first litter, and included maternal ID as a random effect. In the second model, we modeled pup mass as a function of maternal body length, controlling for litter size and whether the litter was the female\u2019s first litter as fixed effects, and maternal ID and litter ID as random effects.\n\n### Sample collection and cell culture from LV and long bones\n\nAnimals were deeply anesthetized with isoflurane and sacrificed with decapitation following USGS National Wildlife Health Center guidelines and under approval from the Animal Ethics Committee of the University of Pretoria. Immediately upon sacrifice, the LV and long bones were dissected, and attached muscle tissue was removed with forceps. LV6 and 7 and the right femur and tibia were collected into 50% ethanol for 24 hr, then transferred to 70% ethanol and stored at 4\u00b0 C for \u03bcCT scans and histochemistry.\n\nTo isolate bone cells for culture, LV1\u20135 were incubated in 2% Collagenase P (Roche, Switzerland) for 30 min at 30\u00b0 C. Each bone was then cut in half and transferred to a 1.5 ml microcentrifuge tube containing a G-Tube microcentrifuge tube (VWR, Radnor, PA, USA) that had been punctured at the bottom with a 15 gauge needle. Tubes were spun at 3000 RCF for 5 s, allowing the marrow to collect into the 1.5 ml microcentrifuge tube. Cell pellets were resuspended in red blood cell lysis buffer, pooled, and incubated for 3 min at room temperature. 10 ml bMSC medium (MEM-alpha [Sigma-Aldrich, St. Louis, MO, USA]\u00a0+\u00a015% fetal bovine serum [Hyclone, Logan, UT, USA]\u00a0+\u00a01% penicillin/streptomycin\u00a0+\u00a02 ng/ml recombinant human fibroblast growth factor-basic [Biocam, Centurion, Gauteng, South Africa]\u00a0+\u00a010 nM ROCK inhibitor Y-27632 [RI; Cayman Chemical, Ann Arbor, MI, USA]) was added to stop lysis, and the tubes were spun for 5 min at 300 RCF. The cell pellet was resuspended in 1 ml bMSC medium and strained through a 70 \u00b5m cell strainer. Cells were plated at 1.6 \u00d7 105 cells per cm2. The long bones (excluding right femur and tibia) were processed to enrich for bMSCs following the same procedure, but without incubation in Collagenase P. Cells were cultured at 37\u00b0C and 5% CO2. 24\u00a0hr post plating, plates were carefully washed three times with 1\u00d7 PBS and supplied with fresh medium to remove nonadherent cells. Once bMSC clusters were visible (2\u20139 days post plating), plates were fed bMSC medium without RI or fed bMSC medium without RI\u00a0+10 nM estradiol (E2). 24\u00a0hr later, cells were collected into buffer RLT and stored at \u221280\u00b0C. Samples were shipped on dry ice to Duke University for RNA extraction using the Qiagen RNeasy Micro Kit. RNA-Seq libraries were generated using the NEBNext Single Cell/Low Input RNA Library Prep Kit for Illumina.\n\n### Gene expression analysis\n\nRNA-Seq libraries were sequenced on an Illumina HiSeq 4000 (100 basepair single-end reads) to a mean coverage of 16.1\u00a0\u00b1\u00a03.9 s.d. million reads. Reads were trimmed with cutadapt version 2.3 (Martin, 2011) (RRID:SCR_011841; parameters: -q 20 -e 0.2 --times 5 --overlap 2 -a AGATCGGAAGAGC -a \u2018T\u2019 --minimum-length=20). Trimmed reads were then mapped to the Damaraland mole-rat v1.0 genome (Fang et al., 2014) (DMR_v1.0) using two pass mapping with STAR (RRID:SCR_004463) (Dobin et al., 2013). Only uniquely mapped reads were retained. HTseq (RRID:SCR_005514) (Anders et al., 2015) was used to quantify read counts mapping to genes (using the v1.0.92 gtf file from Ensembl; we extended the genomic coordinates of the SERPINE1 gene by 2000 basepairs in both directions due to very high expression directly adjacent to the annotated coordinates). We transformed read counts to transcripts per million (TPM) (Wagner et al., 2012) and retained only genes with TPM\u00a0\u22652 in at least 25% of samples. We performed voom normalization (RRID:SCR_010943) (Law et al., 2014) on the raw counts using normalization factors produced by the trimmed mean of M-values (TMM) method (Robinson and Oshlack, 2010) in DESeq (RRID:SCR_000154) (Anders and Huber, 2010). We used the limma (Smyth, 2005) function lmFit to regress out the proportion of uniquely mapped reads in genes (which controls for efficiency of mRNA selection during RNA-Seq library preparation) and animal natal colony (which controls for littermate sets and date of sacrifice) to obtain normalized, batch-corrected gene expression values for downstream analysis. We used the mixed effects model approach in emmreml (Akdemir and Okeke, 2015) to estimate, for each gene, the effect of breeding status on gene expression within LV and within long bones using the following model:\n\n$$\ny_{1}=\u00a0\\mu+d_{i}\\beta_{1}+b_{i}\\beta_{2}+q_{i}\\beta_{3}\u2217I(b=0)+q_{i}\\beta_{4}\u2217I(b=1)+s_{i}\\beta_{5}\u2217I(b=0)+s\\beta_{6}\u2217I(b=1)+Zu+\\epsilon_{i},\n$$\n\n\n\n$$\nu~MVN0,\\sigma_{u}^{2}K\n$$\n\n\n\n$$\n\\epsilon~MVN0,\\sigma_{e}^{2}\n$$\n\nwhere y is the vector of gene expression levels for n = 47 samples (indexed by i); \u03bc is the intercept; d is the number of days in culture and \u03b21 its effect size; b is bone type (i.e., long bones or LV) and \u03b22 its effect size; and q is a 0/1 variable representing breeder status and \u03b23 and \u03b24 its effect size in long bones and LV, respectively. I is an indicator variable for bone type (0 = long bone; 1 = LV). s is a 0/1 variable representing whether the cells were cultured with estradiol and \u03b25 and \u03b26 are its effect sizes in long bones and LV, respectively. Z is an incidence matrix that maps samples to animal ID to take into account repeated sampling from the same individual, and u is a random effect term that controls for relatedness. K is an m by m matrix of pairwise relatedness estimates (derived from the genotype data, described below) between all m animals. \u03b5\u00a0is the residual error, $\\sigma_{u}^{2}$ is the genetic variance component, and $\\sigma_{e}^{2}$ is the environmental variance component. We also ran an identical model but with an additional fixed effect of solitaire status in long bones and in LV, to test for a difference in gene expression between helpers and solitaires. To control for multiple testing, we calculated the FDR following Storey and Tibshirani, 2003 using an empirical null distribution derived from 100 permutations of each variable of interest.\n\nWe used g:profiler (RRID:SCR_006809) (Raudvere et al., 2019) to perform Gene Ontology enrichment analysis of the genes upregulated with queen status in LV and long bones (151 of 171 genes significantly associated with queen status at a 10% FDR). All genes in the original analysis set were used as the background gene set. We set both the minimum size of the functional category and the minimum size of the query/term intersection to 3. Finally, we retained categories that passed a Bonferroni-corrected p-value of 0.05.\n\n### Genotyping to estimate relatedness\n\nTo control for relatedness when modeling the gene expression data, we performed single-nucleotide polymorphism (SNP) genotyping of the RNA-Seq data using the Genome Analysis Toolkit (McKenna et al., 2010) (GATK; RRID:SCR_001876). We used the SplitNCigarReads function on the trimmed, uniquely mapped reads and performed GATK indel realignment. Base recalibration was performed by using all SNPs with GQ\u00a0\u22654 in an initial UnifiedGenotyper run on the full data set as a reference. Genotypes were called on the recalibrated bam files using HaplotypeCaller. Variants were filtered with the following GATK VariantFiltration parameters: QUAL\u00a0<\u00a0100.0, QD\u00a0<\u00a02.0, MQ\u00a0<\u00a035, FS\u00a0>\u00a030, HaplotypeScore\u00a0>\u00a013, MQRankSum\u00a0<\u00a0\u221212.5, ReadPosRankSum < \u22128. Variants were further filtered with vcftools (RRID:SCR_001235) (Danecek et al., 2011) to only retain biallelic SNPs in Hardy\u2013Weinberg equilibrium (p>0.05) with minor allele frequency\u00a0\u2265\u00a00.1, minimum mean depth of 5, max missing count of 2, and minimum GQ of 99. Finally, SNPs were thinned to a distance of 10 kb basepairs, resulting in a final data\u00a0set of 1965 stringently filtered biallelic SNPs. Missing values were imputed using beagle (RRID:SCR_001789) (Browning and Browning, 2007), and the resulting vcf file was used to create a kinship matrix using vcftools (Danecek et al., 2011). Values of the kinship matrix were confirmed to be higher in known siblings compared to non-siblings (unpaired t-test, t\u00a0=\u00a027.939, p=2.23\u00d710\u221212; means\u00a0=\u00a00.513 and \u22120.097). Two pairs of siblings were found to have different fathers (G1F022 and G1F025; G4F020 and G4F019).\n\n### Cell-type heterogeneity\n\nAlthough selection for adherent cells from bone marrow enriches for bMSCs, other cell types are also present (Phinney et al., 1999). To assess whether cell-type heterogeneity accounts for queen-associated differential expression, we used CIBERSORT (RRID:SCR_016955) to deconvolve the proportion of component cell types from the RNA-Seq data (Newman et al., 2015). We trained CIBERSORT on a data set of quantile normalized gene expression values from mouse purified primary cell populations (Hume et al., 2010). Specifically, we subset the training data to 27 purified cell populations of mesenchymal or hematopoietic origin (Figure 2\u2014figure supplement 2) and to genes that were included in our mole-rat gene expression data\u00a0set. We then predicted the composition of the cells that contributed to the mole-rat quantile normalized gene expression data set, for each sample.\n\nTo test whether cell-type heterogeneity was significantly explained by queen status, we also modeled cell-type proportion (as summarized by the first principal component of CIBERSORT-estimated proportions for all 27 potential cell types; PC1 explains 50.9% of the overall variation) following the same method used for gene-by-gene expression analysis but with PC1 included as an explanatory variable. We then performed mediation analysis on each of the 171 genes that showed a significant effect of breeding status at FDR\u00a0<\u00a010%. To do so, we first estimated the indirect effect of breeding status on gene expression through the mediating variable (CIBERSORT PC1). The indirect effect of breeding status through CIBERSORT PC1 was estimated by calculating the difference in the effect of breeding status between two models: one model that did not include the mediator (i.e., \u03b23 and \u03b24 from Equation 1) and the same model with the addition of the mediating variable. We performed 1000 iterations of bootstrap resampling to obtain the 95% confidence interval for the indirect effect and considered an indirect effect for a gene significant if the 95% interval did not overlap 0.\n\n### ATAC-seq data and transcription factor binding site analysis\n\nTo investigate whether differentially expressed genes were associated with accessible binding motifs for specific transcription factors, we generated Omni-ATAC-seq data to profile regions of open chromatin (Buenrostro et al., 2013; Corces et al., 2017). We performed Omni-ATAC-seq on both LV bMSCs and long bone bMSCs from two female nonbreeding and two queen mole-rats (n\u00a0=\u00a08 libraries total), following the published protocol (Corces et al., 2017) with the following modifications: 5000 cells were centrifuged at 500 RCF for 5 min at 4\u00b0C. The pellet was resuspended in 50 \u03bcl transposition mix (25 \u03bcl 2\u00d7\u00a0TD buffer, 16.5 \u03bcl PBS, 6.75 \u03bcl water, 1 \u03bcl 10% NP40, 1 \u03bcl 10% Tween-20, 1 \u03bcl 1% digitonin, and 0.25 \u03bcl Tn5 transposase). The reaction was incubated at 37\u00b0C for 30 min without mixing, followed by a 1.5\u00d7 Ampure bead cleanup. Omni-ATAC libraries were sequenced on a NovaSeq 6000 as 100 basepair paired-end reads to a mean coverage (\u00b1\u00a0SD) of 26.9 (\u00b1\u00a04.4) million reads (range: 16.8\u201338.3). Reads were trimmed with Trim Galore! (RRID:SCR_011847) (Krueger, 2015) to remove adapter sequence and low-quality basepairs (Phred score\u00a0<20; reads\u00a0\u226525 bp). Read pairs were mapped to the DMR_v1.0 genome using bwa-mem (RRID:SCR_010910) (Li and Durbin, 2010) with default settings. Only uniquely mapped reads were retained. The alignment bam files for each treatment (breeding or nonbreeding) were merged, and open chromatin regions were identified using MACS2 v2.1.2 (RRID:SCR_013291) (Zhang et al., 2008) with the following parameters: \u2018-nomodel -keep-dup all -q 0.05\u2019. We combined open chromatin peaks with regions in the DMRv1.0 genome that match sequences of vertebrate transcription factor binding site motifs, using motifs defined in the HOMER database (RRID:SCR_010881) (Heinz et al., 2010). We used Fisher\u2019s exact tests (using a p-value threshold of 0.01) to test if TFBMs belonging to the same transcription factor were enriched in open chromatin regions within 2000 bp of the 5\u2032 most transcription start site of queen upregulated genes.\n\nTo compare genome-wide signatures of DNA-transcription factor binding for AR, ESR1, and ESR2, we characterized transcription factor footprints in queens and nonbreeders, in both the LV and long bones, using HINT-ATAC from the Regulatory Genomics Toolbox (RGT) with default parameters (Li et al., 2019). We focused on the subset of peak regions called using MACS2 (Zhang et al., 2008). We identified TF footprints by merging reads within each bone\u00a0type-breeding status combination and calling footprints on the combined data. For each bone type, we then created a meta-footprint set by merging the respective footprint calls across queens and nonbreeders using the bedtools function merge (Quinlan and Hall, 2010). We identified transcription factor motifs in the DMR_v1.0 genome that fell within meta-footprints, based on the JASPAR CORE Vertebrates set of curated position frequency matrices (Sandelin et al., 2004). Finally, we tested for differential footprints of AR, ESR1, and ESR2 binding using the RGT differential function, using the activity score metric described in Li et al., 2019 and default parameters.\n\n### Micro-CT scans and analysis\n\nWe performed \u03bcCT scans of LV6, LV7, right femur, and right tibia using a VivaCT 80 scanner (Scanco Medical AG, Br\u00fcttisellen, Switzerland) set at 55 kVp and 145 \u03bcA, with voxel size 10.4 \u03bcm. Trabecular bone was quantified using direct values (i.e., \u2018No model\u2019) from the 100 \u03bcCT slices below the proximal tibia growth plate, the 100 \u03bcCT slices above the distal femur growth plate, and the 100 \u03bcCT slices medial to the caudal growth plate of LV6. To obtain midshaft cross-sections of the femur, tibia, and LV6, we first reduced each bone mesh to 100,000 faces using Avizo Lite version 9.7.0. Mesh files from the same bone type were auto-aligned using Auto3dgm (Boyer et al., 2015) in MATLAB (RRID:SCR_001622). Aligned mesh files were then back scaled to their original sizes in MATLAB, and the midshaft cross-section was generated using Rhinoceros version 6. LV6 cross-sections required manual segmentation, which was performed in Adobe Illustrator CC version 23.0.2. The MomentMacro plugin in ImageJ (RRID:SCR_003070) was used to calculate bone area, minimum second moment of inertia, and polar second moment of area.\n\n### Classification of breeding status from bone shape\n\nTo predict breeding status from bone shape, we reduced each bone mesh to 100,000 faces using Avizo Lite version 9.7.0 (RRID:SCR_014431). Mesh files from the same bone type were auto-aligned using Auto3dgm (Boyer et al., 2015) in MATLAB. The resulting aligned and scaled mesh files were used as input to perform the unsmooth Euler characteristic transform (ECT) for LV6 and to perform the smooth Euler characteristic transform (SECT) for femurs (Crawford et al., 2016) (as performance was optimized for femurs by including smoothing).\n\nThe ECT represents each shape as a two-parameter function of direction and height. We evaluate these functions at a discrete lattice of points, so that each point is represented as a vector. For each bone type, we calculated the Euler characteristic curve in 162 directions distributed approximately uniformly across the shape. For each of the 162 Euler characteristic curves, we ran 100 height parameter evaluations for LV6 and an average of 71 height parameter evaluations for the femur, so that each LV6 (femur) was represented with a vector of length 16,200 (11,423). Using the ECT data, we performed leave-one-out predictions, running each bone type separately, using the linear kernel and c-classification with the support vector machine (SVM) implemented by the R package e1071 (Dimitriadou et al., 2008). The SVM classifier was equipped with 1:100,000 weighting to balance for the different number of breeders and nonbreeders in the sample. The empirical p-values were estimated for each bone type by running 100 permutations of the queen/nonbreeder labels (Golland et al., 2005).\n\nWe note that the ECT does not provide information about specific regions of a shape, but rather is a topological summary statistic that captures the geometric complexity of a shape by quantifying the shape\u2019s number of connected components, voids, and closed loops. This approach avoids the need for landmarks, which may be missing or vulnerable to observer error in some data sets (Crawford et al., 2016). The ECT is amenable to regression models and is therefore useful for testing whether shape significantly predicts the value of an outcome variable (here, breeding status). However, because it does not identify the regions of the shape that contribute most to predictive power, the regions of the LV and femur that most strongly differentiate queens from nonbreeders remain open to further study.\n\n### Histochemistry\n\nFor a subset of individuals (Supplementary file 9), the tibia and LV7 were plasticized, sectioned, and stained with Safranin O by the Washington University Musculoskeletal Research Center. The proportion of the tibia proximal growth plate that was fused, and the mean proportion of the LV7 cranial and caudal growth plates that were fused, were measured in ImageJ from Safranin O-stained sections. To quantify growth plate activity, we calculated the number of chondrocyte columns (defined as linear stacks of at least three chondrocytes) controlling for length of open growth plate. For each bone type (tibia and LV7), we ran two models: proportion of\u00a0growth plate fusion or chondrocyte columns per mm growth plate as the dependent variable, and number of\u00a0offspring born and age as the independent variables.\n\n### Cortical thickness across the femur\n\nWe used Stradview (Treece, 2019; Treece et al., 2010) on dicom images from the \u03bcCT scans to measure and visualize, in an automated manner, cortical thickness across the surface of the femur. Bone surface was defined in Stradview by thresholding pixel intensity and contouring the bone at every 14 sections, with the following parameters: resolution\u00a0=\u00a0medium, smoothing\u00a0=\u00a0standard, strength\u00a0=\u00a0very low, contour accuracy\u00a0=\u00a06. To measure cortical thickness, we used the auto threshold method in Stradview, with line width set to 5, smooth set to 1, and line length set to 3 mm. The smoothed thickness values of each femur were then registered (i.e., mapped) to a single \u2018canonical\u2019 femur surface (mole-rat GRF002) using wxRegSurf v18 (http://mi.eng.cam.ac.uk/\u223cahg/wxRegSurf/). We sectioned the cortical thickness values into deciles according to location along the length of the femur. The top and bottom deciles were removed because cortical and trabecular bone towards the ends of the femur could not be easily differentiated by the automated method. Deciles were then recreated for the remaining length of the bone (i.e., the central 80%). From each bone decile, we estimated cortical thickness as the mean of all cortical thickness measures within that interval. For each decile across animals, we used a linear mixed model to model cortical thickness as a function of breeding status and number of\u00a0offspring, with litter pair as a random effect.\n\n### Modeling the probability of bone failure\n\nPrevious research on mechanical properties of rodent femurs found that, among several morphological and compositional traits measured in eight morphologically varying mouse strains, CA at the midshaft was the best predictor of maximum load (defined as the greatest force attained prior to bone failure, measured via four-point bending; published Pearson\u2019s r\u00a0=\u00a00.95) (Jepsen et al., 2003). We therefore used CA at the femoral midshaft to predict max load of Damaraland mole-rat femurs. To do so, we first fit a linear model of max load as a function of CA (unadjusted for body weight) using published mouse data (R2\u00a0=\u00a00.877, n\u00a0=\u00a081, p=6.64\u00d710\u221238) (Jepsen et al., 2003). We extrapolated from this linear fit to predict max load from CA at the midshaft of Damaraland mole-rat femurs. Predicted max loads were then used as input for Cox proportional hazards models, comparing either all queens to nonbreeders or queens with\u00a0\u22656 offspring to nonbreeders. Models were fit using the R function coxph and were confirmed to meet the proportional hazards assumption using the cox.zph function in the R package survival (Therneau, 2020). Because max load was not directly measured in the Damaraland mole-rats, we used the Cox proportional hazards models to specifically evaluate the relative hazard of bone failure depending on queen status/number of offspring. We therefore report the results in Figure 5 based on relative force (with the median predicted failure value for nonbreeders set to 1) instead of absolute force in Newtons. We note that the analysis makes an important assumption that the linear relationship between CA and maximum load observed in mice is shared with Damaraland mole-rats. Future mechanical loading tests of mole-rat bones, which were not possible in this study, will therefore be important for validating and refining the present modeling results.\n",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "b118c232-50b8-402c-96ff-a1e8ab094089",
+      "submission_id": "322f7b2b-59eb-47e1-9341-3962fbc944bc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65760.sa1](https://doi.org/10.7554/eLife.65760.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis manuscript takes a deep dive into the skeletal effects of burrowing and eusocial Damaraland mole rats. By exploring the genetic and skeletal consequences of breeding restricted to a single queen with multiple and closely-timed pregnancies and lactation, this study offers a compelling story that will bolster textbooks on skeletal biology, mammalian evolution, and ethology. The results show the molecular mechanisms driving adaptive plasticity within the unusually expanded lumbar spine and thin limb bones of queens are an adaptive consequence of breeding status.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Morphological and genomic shifts in mole-rat 'queens' increase fecundity but reduce skeletal integrity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and George Perry as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) From Reviewer #1: I recommend generating a new first figure with an image of the queens and non-breeders along with a full skeleton (x-ray is fine). Because this work is a novel case-study in mole rats that I think belongs in textbooks, a figure illustrating the study taxon with a bit of introduction and then highlighting of the skeleton will potentially broaden the audience. I could easily see this work as part of skeletal biology course.\n\n2) Please also address all of the smaller editing and clarification changes requested by both reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nAdditional Figure: I recommend generating a new first figure with an image of the queens and non-breeders along with a full skeleton (x-ray is fine). Because this work is a novel case-study in mole rats that I think belongs in textbooks, a figure illustrating the study taxon with a bit of introduction and then highlighting of the skeleton will potentially broaden the audience. I could easily see this work as part of skeletal biology course.\n\nFigure 1 b: Change the shape of mean dots for queens such that they are different than that of non-breeders\n\nLine 623, I believe the VivaCT uses a known-density phantom for comparisons. Is density data available? This isn't a requirement but might offer another compelling measure to support a conclusion that extends beyond just endosteal resorption.\n\nDoes the concentration and integrity of collagens shift with breeding status?\n\nThis is lovely work. Thank you for publishing. Best of luck.\n\nReviewer #2 (Recommendations for the authors):\n\nI cannot comment on the gene regulation analyses or suitability of the protocols associated with those, as this is not my area of expertise. Specifically, I cannot comment on methods section line 500 \u2013 620.\n\nI have several minor comments, by line:\n\nLn331: \"a correlate of minimum resistance to bending\" would be more accurate description of Imin \u2013 it's the minimum second moment of inertia\n\nLn418: Also perhaps the extent to which this represents a recoverable insult given longevity in queens for this species, see:\n\nSchmidt, C. M., Jarvis, J. U. M., and Bennett, N. C. (2013). The long-lived queen: reproduction and longevity in female eusocial Damaraland mole-rats (Fukomys damarensis). African Zoology, 48(1), 193-196. doi:10.1080/15627020.2013.11407583\n\nLn631: Imin and CA can be extracted directly from the cross-section in Rhino using Areamoment without need for ImageJ. but here you re-thresholded a.tif or converted an extracted.eps and then used that in ImageJ, correct? Was this done to manual segment the endosteal margin?\n\nLn632: this macro extracts many other biomechanical properties (Imax,Imin, J, CA, TA, Theta, Ix, Iy), what was the rationale for selecting Imin? For example, J (Polar second moment of area) is often considered the most relevant indicator of a bones' mechanical performance. See, for example:\n\nRuff, C. B., Trinkaus, E., Walker, A., and Larsen, C. S. (1993). Postcranial robusticity in Homo. I: Temporal trends and mechanical interpretation. American journal of physical anthropology, 91(1), 21-53.\n\nImin is perhaps least likely to be strongly correlated with body mass. See also Davies and Shaw:\n\nDavies, T. G., and Stock, J. T. (2014). The influence of relative body breadth on the diaphyseal morphology of the human lower limb. American Journal of Human Biology, 26(6), 822-835.\n\nLn636: More information needs to be provided about how bone shape was evaluated. I assume this was done using the scaled mesh files (post-alignment) or was this run using the full-size meshes? How is the method computing differences between meshes? Is mesh face number standardized/reduced? What are the output data that are used to assess similarity? I did not find any information (or a figure illustrating) the differences in shape between the queens and non-breeders for either element \u2013 what were the main differences in shape that held predictive power in the sample?\n\nLn673: This is an interesting idea and I appreciate the authors' consideration of this aspect since it attempts to estimate the consequence of bone resorption. However, it may be useful to add a caveat on the assumptions associated with this approach \u2013 mainly, I am not sure how valid it may be to extrapolate a linear model based on body mass of mice in comparison to that of a mole-rat. Figure S2a indicates around 150 g body mass for the specimens in the study, and certainly well below 35 g for a mouse. Also, the weaker relationship between body mass and CA for these mole rats (cited earlier in the manuscript) and the likelihood that the relationship between body mass and CA may follow a different trajectory for the two species may impact the validity of this estimate.\n\nLn691: Please provide all code associated with analyses performed in R and Matlab.\n",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6412b4af-7ab6-4a34-9ee0-1dc5a340cbcc",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C1",
+      "claim": "Damaraland mole-rats are frequently classified as 'eusocial'.",
+      "claim_type": "EXPLICIT",
+      "source": "Like naked mole-rats (Heterocephalus glaber), Damaraland mole-rats are frequently classified as 'eusocial' (Bennett and Faulkes, 2000; Jarvis, 1981; Jarvis and Bennett, 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bennett and Faulkes, 2000; Jarvis, 1981; Jarvis and Bennett, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "e00325fa-e96f-49cd-b0ef-f6a5e07107ed",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C2",
+      "claim": "Female helpers who transition to queens experience accelerated vertebral growth associated with increases in fecundity.",
+      "claim_type": "EXPLICIT",
+      "source": "female helpers who transition to queens experience accelerated vertebral growth associated with increases in fecundity (O'Riain et al., 2000; Thorley et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Riain et al., 2000 and Thorley et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "50feaddc-43a8-4a8c-ad7c-764a031bb65b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C3",
+      "claim": "Queens experience vertebral growth that likely confers advantages to fecundity.",
+      "claim_type": "EXPLICIT",
+      "source": "we confirm that queens experience vertebral growth that likely confers advantages to fecundity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing vertebral growth in queens and correlation with fecundity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "7061232f-3901-4e6d-8408-ac2e17aca847",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C4",
+      "claim": "Queens upregulate bone resorption pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "they also upregulate bone resorption pathways",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression data showing enrichment of bone resorption pathways",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "10444d12-7419-4154-88e1-69ee8cd5fe6f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C5",
+      "claim": "Queens show reductions in femoral mass.",
+      "claim_type": "EXPLICIT",
+      "source": "show reductions in femoral mass",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT scan measurements of femoral cortical bone",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ff61fb86-b330-4e25-881b-805660cf2c88",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C6",
+      "claim": "Reductions in femoral mass predict increased vulnerability to fracture in queens.",
+      "claim_type": "EXPLICIT",
+      "source": "which predicts increased vulnerability to fracture",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on modeling using mouse data relating cortical area to maximum load",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "89197969-6092-42eb-8063-ad1577841edd",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C7",
+      "claim": "Reproductive division of labor in mole-rats leads to gene regulatory rewiring.",
+      "claim_type": "EXPLICIT",
+      "source": "reproductive division of labor in mole-rats leads to gene regulatory rewiring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq data showing differential gene expression between queens and nonbreeders",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "b027f551-aa34-403c-a154-a0738feee71a",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C8",
+      "claim": "Reproductive division of labor in mole-rats leads to extensive morphological plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "reproductive division of labor in mole-rats leads to gene regulatory rewiring and extensive morphological plasticity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by x-ray and micro-CT data showing morphological differences between queens and nonbreeders",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "9a13a211-b2bb-4f5c-a781-3b5976195e1b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C9",
+      "claim": "Concentrated reproduction in mole-rats is accompanied by costs to bone strength.",
+      "claim_type": "EXPLICIT",
+      "source": "in mole-rats, concentrated reproduction is also accompanied by costs to bone strength",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing reduced cortical bone and predicted increased fracture risk",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "d7abe796-93fa-407f-adbf-adab341ffaf2",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C10",
+      "claim": "Queens are frequently much larger than their sterile colony mates in eusocial insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Queens are frequently much larger than their sterile colony mates (e.g., twice as large in honey bees and Pharaoh ants; Berndt and Eichler, 1987; Page and Peng, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berndt and Eichler, 1987 and Page and Peng, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5571072b-f76c-4151-bb5d-9567c4b2b895",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C11",
+      "claim": "Dramatically altered growth and development programs in eusocial insect queens are explained by changes in gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "reflecting dramatically altered growth and development programs that are explained by changes in gene regulation (Smith et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "768fa238-ecba-4df2-91f9-ee9c71cbb9ba",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C12",
+      "claim": "New breeders in some vertebrate species undergo a period of accelerated growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In some species, new breeders undergo a period of accelerated growth, which may be important either for maintaining dominance or for supporting high fecundity (Clutton-Brock et al., 2006; Huchard et al., 2016; O'Riain et al., 2000; Russell et al., 2004; Thorley et al., 2018; Young and Bennett, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "53f2d02b-55bb-4c6c-b6b1-68059f845c41",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C13",
+      "claim": "Substantial gene regulatory divergence with breeding status has been described for the brain and some peripheral organs.",
+      "claim_type": "EXPLICIT",
+      "source": "While substantial gene regulatory divergence with breeding status has been described for the brain and some peripheral organs (Bens et al., 2018; Mulugeta et al., 2017; Sahm et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bens et al., 2018; Mulugeta et al., 2017; Sahm et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "9d458edf-f124-48e3-95d5-b924d01f75c2",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C14",
+      "claim": "At the time of assignment, females assigned to queen, helper, and solitaire treatments were statistically indistinguishable in body mass, age, and vertebral length.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of assignment, females assigned to the queen, helper, and solitaire treatments were statistically indistinguishable in body mass, age, and vertebral length (as measured by LV5; unpaired t-tests between all pairwise combinations of treatments: p>0.05; Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical tests and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "6d430a41-2c92-4931-ad9a-9d3b0d6487f5",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C15",
+      "claim": "Queens showed rapid growth in the lumbar vertebrae in the first 12 months post-pairing compared to nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to nonbreeders, queens showed rapid growth in the LV in the first 12 months post-pairing (Figure 1D, E), especially in the vertebrae toward the caudal end of the vertebral column (LV5 and LV6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by longitudinal x-ray measurements shown in Figure 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "396ae174-7046-4672-b3cc-3f3b681f491c",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C16",
+      "claim": "Most differential growth in queens was concentrated soon after the breeding status transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on longitudinal measurements, most of this differential growth was concentrated soon after the breeding status transition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of growth rates at different time intervals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5107bcfc-6b0e-49d4-8739-882629b4ed89",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C17",
+      "claim": "There is a significant interaction between breeding status and post-pairing time point in the first four months of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a significant interaction between breeding status (queen versus nonbreeder) and post-pairing time point in the first four months of the experiment (Figure 1D; \u03b2 = 0.0794, p=3.13\u00d710\u22123; n = 49 x-rays from 28 animals)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "3c65ea25-b4be-4a7e-8811-528cc3aa5bd8",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C18",
+      "claim": "Only queens that had already experienced pregnancy showed accelerated vertebral lengthening relative to nonbreeders in the first four months.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the first four months, only queens that had already experienced pregnancy showed accelerated vertebral lengthening relative to nonbreeders (unpaired t-test; LV5 of pregnant queens versus nonbreeders: t = \u22125.735, df = 16.871, p=2.50\u00d710\u22125; LV5 of queens not yet pregnant versus nonbreeders: t = \u22120.789, df = 13.007, p=0.444; n = 14 nonbreeders, five pregnant queens, and two queens not yet pregnant)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical tests comparing pregnant queens, non-pregnant queens, and nonbreeders",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "1d83d7d6-aa9a-4b00-8e40-85b2bb2ff8a7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C19",
+      "claim": "After 12 months, the absolute length of LV5 in queens was, on average, 4.8% longer than nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "After 12 months, the absolute length of LV5 in queens was, on average, 4.8% longer than nonbreeders (Figure 1E; LV5: unpaired t-test, t = 2.509, df = 21.095, p=0.020)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical test and Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "c30e17c4-ef5b-4662-91f6-f83b96a47a3c",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C20",
+      "claim": "Queens with longer bodies had more pups per litter.",
+      "claim_type": "EXPLICIT",
+      "source": "Queens with longer bodies (which correlates with longer LV, Pearson's r = 0.856, p=5.99\u00d710\u221259; Figure 1\u2014figure supplement 3) had more pups per litter (Figure 1F; \u03b2 = 0.353, p=1.35\u00d710\u22123, n = 328 litters from all breeding groups maintained in the same breeding facility; Supplementary file 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "0375c7dc-6f24-4d0c-a5de-99fc7a91f76f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C21",
+      "claim": "For every additional centimeter of maternal body length, pup body mass increased by 2.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "Controlling for litter size, longer queens also had larger pups: for every additional centimeter of maternal body length, pup body mass increased by 2.9% (\u03b2 = 0.29, p=0.032, n = 971 pups)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis controlling for litter size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "c45cfe15-16c6-4214-b7f6-b3498bfad03d",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C22",
+      "claim": "171 genes showed a significant effect of breeding status at a false discovery rate threshold of 10% in the long bones.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 10,817 detectably expressed genes, 171 genes showed a significant effect of breeding status at a false discovery rate (FDR) threshold of 10% in the long bones (329 at an FDR of 20%; Supplementary file 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "b92ff992-b750-40c0-a0e8-22c87ba09be8",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C23",
+      "claim": "No genes showed a significant effect of breeding status in the lumbar vertebrae at FDR thresholds of 10% or 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, no genes showed a significant effect of breeding status in the LV at either FDR threshold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "38b4b772-136a-4b68-b4f0-4e5090bb13a7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C24",
+      "claim": "Effect sizes were highly correlated between bone types overall.",
+      "claim_type": "EXPLICIT",
+      "source": "However, effect sizes were highly correlated between bone types overall (R2 = 0.75, p=4.60\u00d710\u221253)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis of effect sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "02e6412a-c0e5-44f9-b3c5-0742cffbb4e1",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C25",
+      "claim": "Effects of breeding status were more pronounced in long bone samples than in lumbar vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "with more pronounced effects of breeding status in the long bone samples than in the LV (paired t-test on breeding status effects in long bone versus vertebrae: t = 3.97, df = 317.67, p=8.73\u00d710\u22125)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of effect sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "fdbc5a67-650b-4469-9ac3-e1e4b50d42aa",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C26",
+      "claim": "The majority cell type in both queen and nonbreeder samples was most similar to cells from the bMSC lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on both canonical markers of bMSC lineage cells and deconvolution of the RNA-Seq data using data from 27 mesenchymal or hematopoietic lineage mouse cell types, the majority cell type in both queen and nonbreeder samples was most similar to cells from the bMSC lineage (Dominici et al., 2006; Hume et al., 2010; Newman et al., 2015; Figure 2\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell-type deconvolution analysis and Figure 2\u2014figure supplements 1 and 2",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "0027ce32-da2d-4177-b03a-2aa73607f4c3",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C27",
+      "claim": "The majority of breeding status-associated genes were upregulated in queens.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of breeding status-associated genes were upregulated in queens (151 of 171 genes, 88%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "2388dd9f-c370-42aa-ae55-c0702c2a4988",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C28",
+      "claim": "Upregulated genes in queens were enriched for bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of their role in skeletal plasticity, upregulated genes were enriched for bone remodeling (log2[OR]=4.07, p=5.07\u00d710\u22126), a process that involves the balanced cycle between bone formation by osteoblasts and bone resorption by osteoclasts (Redlich and Smolen, 2012; Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Gene Ontology enrichment analysis and Figure 2",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "7ba1d2b1-1f9c-4423-a35d-33085d0cc27e",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C29",
+      "claim": "Enriched pathways in queen upregulated genes were specifically related to bone resorption, not formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, enriched pathways were specifically related to bone resorption, not formation (Supplementary file 7), including 'positive regulation of bone resorption' (Figure 2A, C; log2[OR]=6.51, p=1.55\u00d710\u22126) and 'superoxide anion generation,' which is involved in osteoclast activity and degradation of bone matrix (Figure 2A, C; log2[OR]=5.29, p=1.4\u00d710\u22125) (Darden et al., 1996; Datta et al., 1996; Key et al., 1990; Key et al., 1994)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Gene Ontology enrichment analysis, Figure 2A and C, and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ed8d2576-e94a-4dbe-9d95-2e61aea6620f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C30",
+      "claim": "Differentially expressed genes were enriched for immune-related processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentially expressed genes were also enriched for immune-related processes (e.g., 'cytokine secretion,' 'chemotaxis,' 'leukocyte activation involved in immune response'; Supplementary file 7)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Gene Ontology enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "33cb7f1a-9ba0-47ef-84b1-8921257237e5",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C31",
+      "claim": "Transcription factor binding motifs located in accessible chromatin near queen upregulated genes were enriched for PU.1 and MITF.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, transcription factor binding motifs (TFBMs) located in accessible chromatin near queen upregulated genes were enriched for PU.1 and MITF, two transcription factors that are essential for osteoclast differentiation (Segeletz and Hoflack, 2016; Figure 2B, C; PU.1 log2[OR]=1.041, p=2.84\u00d710\u22124; MITF log2[OR]=0.707, p=7.36\u00d710\u22123; see Supplementary file 8 for a complete list of enriched TFBMs)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq analysis, Figure 2B and C, and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "7c42bc4d-0622-4825-a260-36c1981432a7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C32",
+      "claim": "No significant effects of estradiol treatment on gene expression were observed in either bone type.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, given the role of sex steroid hormones in bone growth and elevated estradiol levels in queen versus helper Damaraland mole-rats (Bennett, 1994), we observed no significant effects of estradiol treatment on gene expression in either bone type (all FDR > 10%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq analysis with estradiol treatment",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5057539d-3c5f-40a2-bb18-8c4786ce91af",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C33",
+      "claim": "Queen upregulated genes were not in closer proximity to androgen response elements or estrogen response elements than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Queen upregulated genes were also not in closer proximity to androgen response elements (AREs) or estrogen response elements (EREs) than expected by chance (ARE log2[OR]=0.207, p=0.627; ERE log2[OR]=0.196, p=0.652)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of proximity to hormone response elements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "bf6622f7-ca5a-4bd2-8003-180d6b36a70b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C34",
+      "claim": "Transcription factor footprinting analysis showed no evidence of queen-associated differences in transcription factor activity of AR, ESR1, or ESR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, transcription factor footprinting analysis showed no evidence of queen-associated differences in transcription factor activity of the androgen receptor (AR), estrogen receptor 1 (ESR1), or estrogen receptor 2 (ESR2), in either the long bones or LV (all paired t-tests: p>0.05; Figure 2\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcription factor footprinting analysis and Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "3e897643-cea6-4595-865d-1c233627a8c6",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C35",
+      "claim": "Breeding status could be predicted from morphological differences in LV6 with 77.8% accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that it could for the LV, but not for the femur: by applying the smooth Euler characteristic transform (Crawford et al., 2016), we were able to predict queen versus nonbreeder status in LV6 (77.8% accuracy, p=0.01, n = 36)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Euler characteristic transform analysis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "af86b215-58c5-4ca4-a3fb-6240a1c0b0d4",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C36",
+      "claim": "Breeding status could not be significantly predicted from femur morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "but not the femur (52.8% accuracy, p=0.53, n = 36)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Euler characteristic transform analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4e2ee911-0d61-429f-998b-96681ec424b7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C37",
+      "claim": "Queens were less likely to have open growth plates in the proximal tibia compared to nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "In the proximal tibia but not LV7, queens were less likely to have open growth plates (Figure 3C, Figure 3\u2014figure supplement 1, and Supplementary file 9; tibia: two-sided binomial test, p=0.019; LV7: two-sided binomial test, p=0.422)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis and statistical tests, shown in Figure 3C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "2619f16e-e957-47d5-9554-0ed33ed55aa9",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C38",
+      "claim": "Females with more offspring showed a higher expanse of closure across the growth plate in the tibia.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased probability of growth plate closure in the tibia of queens is linked to the number of offspring a female has produced: females with more offspring showed a higher expanse of closure across the growth plate (\u03b2 = 0.050, p=4.51\u00d710\u22123, n = 12, controlling for age)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of growth plate fusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ce2753a4-3e46-4d18-abcf-5f665b6b626a",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C39",
+      "claim": "Females that produced more offspring had fewer chondrocyte columns in the remaining growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern may be due in part to reduced chondrocyte proliferation, as females that produced more offspring had fewer chondrocyte columns in the remaining growth plate (Figure 3D; \u03b2 = \u22120.132, p=0.020, n = 12, controlling for age)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis and statistical test, shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "14027732-6c19-4511-99d2-b04392a47a8b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C40",
+      "claim": "Cortical bone was significantly reduced at the femoral midshaft in queens compared to their nonbreeding sisters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that cortical bone was significantly reduced at the femoral midshaft, but not in the LV, in queens compared to their nonbreeding sisters (Figure 3E, Figure 3\u2014figure supplement 2; femur: paired t-test of cortical area (CA)/total area, t = \u22124.067, df = 8, p=3.60\u00d710\u22123; LV6: paired t-test of CA/total area, t = \u22120.741, df = 6, p=0.487)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis and statistical tests, shown in Figure 3E and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "9e6b5671-b33b-4dc9-8f12-2c6c38a28e11",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C41",
+      "claim": "The femoral midshafts of queens showed significantly lower apparent density relative to nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to nonbreeders, the femoral midshafts of queens showed significantly lower apparent density (paired t-test, t = \u22123.734, df = 8, p=5.75\u00d710\u22123)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis and statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "749f9c8d-c2ac-4c6b-9d0f-bd825293414d",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C42",
+      "claim": "Queens showed no difference in material density compared to nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "but no difference in material density (paired t-test, t = \u22120.074, df = 8, p=0.943)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis and statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5ce49ca7-0a4e-464e-8e53-f303c2705c55",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C43",
+      "claim": "Reduced bone mass in queens is due to reduced bone volume, not to reduced mass per unit volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, reduced bone mass in queens is due to reduced bone volume, and not to reduced mass per unit volume (e.g., due to increased porosity)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that apparent density differs but material density does not",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4fdb8dd8-d487-4f70-83ff-a7f17954cf85",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C44",
+      "claim": "Queens had a larger marrow cavity compared to their nonbreeding sisters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that cortical bone loss in queens is due to the latter explanation: queens had a larger marrow cavity (paired t-test, t = 5.355, df = 8, p=6.82\u00d710\u22124; Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis and statistical test, shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "d41f985b-9f24-4a43-94d0-1eceb7ed61ef",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C45",
+      "claim": "Queens showed no difference in periosteal area compared to their nonbreeding sisters.",
+      "claim_type": "EXPLICIT",
+      "source": "but showed no difference in periosteal area compared to their nonbreeding sisters (paired t-test, t = 1.539, df = 8, p=0.162; Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by micro-CT analysis and statistical test, shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "c2cda68c-b908-4df8-9d0c-830361e906d0",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C46",
+      "claim": "The relative amount of cortical bone in queens is not predicted by the number of pups in a queen's recent litter.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, we found that, within queens, the relative amount of cortical bone is not predicted by the number of pups in a queen's recent litter (pups born within the past 30 days; \u03b2 = \u22120.024, n = 13, p=0.287)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "e70d7474-fde7-4039-8698-7b19b2deb291",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C47",
+      "claim": "Queens who had more live births had reduced cortical bone thickness along the entire shaft of the femur.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, queens who had more live births had reduced cortical bone thickness along the entire shaft of the femur (Figure 4 and Supplementary file 10; across decile sections of the femur: all p<0.05, controlling for mother's litter as a random effect)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis and Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "fee4cfa5-576e-46b3-b740-2e849e182430",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C48",
+      "claim": "Cortical thinning does not commence with the transition to queen status per se.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cortical thinning does not commence with the transition to queen status per se (i.e., it is not a correlate of achieving breeder status), but instead appears to be a consequence of repeated investment in pregnancy and lactation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that cortical thinning is predicted by total offspring number, not recent litter size",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "0d8aa8bd-49b6-42ba-8a1b-9b0b12793731",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C49",
+      "claim": "Thinning is particularly marked in queens who had at least six offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, thinning is particularly marked in queens who had at least six offspring, which usually occurs by 14 months after a breeding status transition (i.e., by the third litter; Supplementary file 10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of cortical thickness as a function of offspring number",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "dfde0fdd-605f-408c-a9d3-05c5d38a4526",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C50",
+      "claim": "In nonbreeders, cortical area, minimum second moment of inertia, and polar second moment of area are positively correlated with body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "In nonbreeders, the three measures are positively correlated with body mass (CA: R2 = 0.409, n = 21, p=1.08\u00d710\u22123; Imin: R2 = 0.412, n = 21, p=1.03\u00d710\u22123; J: R2 = 0.422, n = 21, p=8.62\u00d710\u22124)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5e613f8b-68a9-4922-b9fc-455ef549f54c",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C51",
+      "claim": "In queens, minimum second moment of inertia and polar second moment of area are not significantly predicted by body mass.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in queens, Imin and J are not significantly predicted by body mass (Imin: R2 = 0.088, n = 13, p=0.17; J: R2 = 0.239, n = 13, p=0.0514)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "3e0f086f-5d73-4125-a97c-77097d4a5982",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C52",
+      "claim": "In queens, minimum second moment of inertia and polar second moment of area are a function of number of offspring produced.",
+      "claim_type": "EXPLICIT",
+      "source": "but are instead a function of number of offspring produced (Imin: R2 = 0.283, p=0.0354; J: R2 = 0.271, n = 13, p=0.0393)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "451c6083-98ca-44c6-a199-95c80b106dbe",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C53",
+      "claim": "Queen cortical area is predicted by both offspring number and body mass, but offspring number explains almost twice the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Queen CA is predicted by both offspring number and body mass, but offspring number explains almost twice the variance (offspring number R2 = 0.634, p=6.83\u00d710\u22124; body mass R2 = 0.385, p=0.014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ac365264-1cc1-4323-bf5b-f21e2c6bbf08",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C54",
+      "claim": "Cortical area is the best predictor of maximum load in mouse femurs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this data set, CA is the best predictor of maximum load (the maximum force a bone can withstand prior to failure), and, crucially, the CA-max load relationship is highly linear (Figure 5\u2014figure supplement 1; R2 = 0.877, p=6.64\u00d710\u221238)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Jepsen et al., 2003 and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "c55c37ec-0ac0-492c-96c0-3bb1640a3a86",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C55",
+      "claim": "Transitions to queen significantly increase the risk of bone failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Scaling the mole-rat CA data to mouse suggests that transitions to queen significantly increase the risk of bone failure (Figure 5; hazard ratio [95% confidence interval]=2.68 (1.18, 6.08), n = 34, p=0.018)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling using mouse data and Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ab9fe59d-90f1-4495-98a6-8ec10b0164fb",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C56",
+      "claim": "Queens who had at least six offspring showed the highest predicted risk of bone failure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to growth potential and cortical thinning, this effect is driven by highly fertile queens, such that those who had at least six offspring showed the highest predicted risk of bone failure (Figure 5; queens with \u22656 offspring relative to nonbreeders: HR = 3.74 (1.42, 9.82), n = 28, p=0.007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by modeling and Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "e4225713-7847-4fb5-a63a-013dcbe53dee",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C57",
+      "claim": "The risk of bone failure is predicted to increase by 21% for each additional pup.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of bone failure is thus predicted to increase by 21% for each additional pup (HR = 1.21 (1.10, 1.33), n = 34, p=1.22\u00d710\u22124)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "44430f32-b1b7-4ded-b941-e151bc01ee89",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C58",
+      "claim": "Vertebral lengthening observed in Damaraland mole-rat queens is concordant with previous reports in both Damaraland mole-rats and naked mole-rats.",
+      "claim_type": "EXPLICIT",
+      "source": "The vertebral lengthening observed in Damaraland mole-rat queens is concordant with previous reports of vertebral lengthening in both Damaraland mole-rats (Thorley et al., 2018) and naked mole-rats (O'Riain et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Thorley et al., 2018 and O'Riain et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "9c02b42f-3c49-440b-a232-50bd70c240bd",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C59",
+      "claim": "Most growth in mole-rat queens is concentrated soon after the breeding status transition, especially in connection with the first post-transition pregnancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Like naked mole-rats, our analyses show that most growth is concentrated soon after the breeding status transition, especially in connection with the first post-transition pregnancies (Dengler-Crish and Catania, 2009; Henry et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data and citations to Dengler-Crish and Catania, 2009 and Henry et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "623d4160-d4fd-4f51-a306-a80bb0b801da",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C60",
+      "claim": "The growth phenotype in naked mole-rats occurs at the cranial end of the lumbar vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, while the growth phenotype in naked mole-rats occurs at the cranial end of the LV (Henry et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Henry et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "8bb0efba-0f85-44dc-b3b4-e08726206d38",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C61",
+      "claim": "The growth phenotype in Damaraland mole-rats is concentrated at the caudal end of the vertebral column.",
+      "claim_type": "EXPLICIT",
+      "source": "it is concentrated at the caudal end of the vertebral column in Damaraland mole-rats",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing differential growth in LV5 and LV6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4f86f846-4a72-4a87-88af-85dabc61856a",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C62",
+      "claim": "Damaraland mole-rats and naked mole-rats independently evolved a similar, highly cooperative social structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that Damaraland mole-rats and naked mole-rats independently evolved a similar, highly cooperative social structure (Jarvis and Bennett, 1993; Faulkes and Bennett, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jarvis and Bennett, 1993 and Faulkes and Bennett, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ba621de3-74f1-48ed-a339-1a4c60691072",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C63",
+      "claim": "The difference in location of vertebral growth between Damaraland and naked mole-rats suggests potential convergent evolution of the vertebral lengthening phenotype in queens.",
+      "claim_type": "EXPLICIT",
+      "source": "this difference suggests potential convergent evolution of the vertebral lengthening phenotype in queens, presumably in response to the selection pressure for increased fertility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of similar phenotypes in independently evolved species",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "50aa175e-cd1f-46c1-af51-0543033423c4",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C64",
+      "claim": "Gene expression levels in queens reflect a signature of bone resorption, rather than bone growth, at the time of sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, gene expression levels in queens reflect a signature of bone resorption, rather than bone growth, at the time of sampling, which occurred 1\u20132 years post-transition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq data showing enrichment of bone resorption pathways",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "55bed6a2-bd5c-4040-b247-b661d3ff6748",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C65",
+      "claim": "The molecular signature of bone resorption temporally aligns with changes in morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular signature of bone resorption temporally aligns with changes in morphology, in which accelerated vertebral growth primarily occurs during a female's first pregnancy, whereas cortical thinning in the long bones is a function of repeated cycles of offspring production",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the timing of gene expression changes and morphological changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "0b4dcd5e-165f-4bcd-a1d8-ce6fc02c4687",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C66",
+      "claim": "Queens quickly progress from traits typically associated with pre-reproductive and pubertal growth to traits typically linked to aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, queens quickly progress from traits typically associated with pre-reproductive and pubertal growth in mammals (e.g., body elongation), to traits typically linked to aging (e.g., marrow cavity expansion and cortical thinning)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed sequence of morphological changes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "32152d88-ea6c-42ce-b8c0-e3c39c7acc7e",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C67",
+      "claim": "Estrogen levels are higher in mole-rat queens relative to nonbreeding females.",
+      "claim_type": "EXPLICIT",
+      "source": "Because estrogen is known to impact bone growth and maintenance (Cutler, 1997; Khalid and Krum, 2016), and estrogen levels are higher in mole-rat queens relative to nonbreeding females (Bennett, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cutler, 1997; Khalid and Krum, 2016; and Bennett, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "f801214a-5a67-479c-9680-a264a238728d",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C68",
+      "claim": "The results suggest a role for other, as-yet unknown signaling pathways in the queen-specific signature of long bone cortical resorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results suggest a role for other, as-yet unknown signaling pathways in the queen-specific signature of long bone cortical resorption (although it does not exclude the possibility that estrogen signaling influences other phenotypes, such as bone elongation, growth plate closure, or collagen organization, which require further study; Juul, 2001; Cake et al., 2005; Ham et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the lack of estrogen response in gene expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "c2cb78eb-de33-4bd3-9dab-d3b35c7de35e",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C69",
+      "claim": "Bone loss in Damaraland mole-rat queens may be an extreme of the typical mammalian pattern of bone remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone loss in Damaraland mole-rat queens may be an extreme of the typical mammalian pattern of bone remodeling, in which bone mineral density decreases during pregnancy and lactation, but recovers once offspring are weaned (Kovacs, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative comparison to typical mammalian patterns, supported by citation to Kovacs, 2016",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "71600d15-2440-445d-94c5-37540c5f2ff7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C70",
+      "claim": "Thinning in mole-rats may be sustained because queens can begin gestating soon after lactating for the previous litter.",
+      "claim_type": "EXPLICIT",
+      "source": "Thinning in mole-rats may be sustained, however, because queens can begin gestating soon after lactating for the previous litter, leaving little to no time for recovery",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for sustained bone loss",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "3fe196e8-ce5e-4850-acef-eb7177e84b2f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C71",
+      "claim": "Queens in colonies with more helpers work less and rest more.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible reason that this fast rate of breeding is achievable is that queens in colonies with more helpers work less and rest more (Houslay et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Houslay et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "2fba644a-f352-4642-81c7-56e63128356b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C72",
+      "claim": "Helpers might contribute to decreased bone mass in queens, given that reduced physical activity can lead to decreases in bone mass.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, helpers might not only help offset costs of, but also contribute to, decreased bone mass in queens, given that large numbers of helpers are themselves produced via high queen fecundity, and reduced physical activity can also lead to decreases in bone mass (Morseth et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning supported by citation to Morseth et al., 2011",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "7f88af79-a2c4-48da-b192-7e9edd1650a9",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C73",
+      "claim": "In naked mole-rats, a small sample of queens suggests increased rather than decreased femoral cortical thickness relative to age-matched nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in naked mole-rats (where colonies can include hundreds of animals compared to dozens in Damaraland mole-rat colonies; Jarvis, 1981; Jarvis and Bennett, 1993; Jarvis et al., 1994), a small sample of queens (n = 6) suggests increased rather than decreased femoral cortical thickness relative to age-matched nonbreeders (Pinto et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jarvis, 1981; Jarvis and Bennett, 1993; Jarvis et al., 1994; and Pinto et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "38fa7b93-c564-4f51-9791-13a16797bc2a",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C74",
+      "claim": "Abdominal lengthening allows queen mole-rats to increase fecundity per reproductive effort.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, while abdominal lengthening allows queen mole-rats to increase fecundity per reproductive effort",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between body length and litter size",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "b5591ac5-1d0e-4a83-a961-76cd02a5bd1f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C75",
+      "claim": "Loss of cortical bone in the femur is unlikely to directly benefit either fertility or survival.",
+      "claim_type": "EXPLICIT",
+      "source": "loss of cortical bone in the femur is unlikely to directly benefit either fertility or survival",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the predicted increased fracture risk",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4f08141d-661a-4eb7-818a-f26fca131644",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C76",
+      "claim": "Loss of cortical bone reflects the cumulative burden of continuous cycles of pregnancy and lactation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it reflects the cumulative burden of continuous cycles of pregnancy and lactation (Kovacs, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation with total offspring number, supported by citation to Kovacs, 2016",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "44cf5310-fc74-495d-aa33-49c550ac4a39",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C77",
+      "claim": "Damaraland mole-rat queens incur morphological costs to concentrated reproduction in addition to morphological changes that facilitate increased fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike eusocial insect queens (Rodrigues and Flatt, 2016; Rueppell et al., 2016), Damaraland mole-rat queens incur morphological costs to concentrated reproduction in addition to morphological changes that facilitate increased fitness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combination of beneficial (vertebral lengthening) and costly (bone loss) changes, supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "72990e2f-854d-41ee-a7a9-45b77906aec4",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C78",
+      "claim": "Queens gave birth to a mean of 6.92 \u00b1 5.57 s.d. live offspring during the 12\u201322-month follow-up period.",
+      "claim_type": "EXPLICIT",
+      "source": "Queens gave birth to a mean of 6.92 \u00b1 5.57 s.d. live offspring during the 12\u201322-month follow-up period, produced in a mean of 2.85 \u00b1 1.75 s.d. litters (range: 0\u20136; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "233eace7-ce17-46cb-9174-dd038dbd08a7",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C79",
+      "claim": "Helpers and solitaires produced no offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, helpers and solitaires produced no offspring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "04334ce7-d873-409b-b610-ad294dd48254",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C80",
+      "claim": "Helpers and solitaires did not differ from each other in body mass or vertebral length after the 12\u201322-month follow-up period.",
+      "claim_type": "EXPLICIT",
+      "source": "and did not differ from each other in body mass or vertebral length after the 12\u201322-month follow-up period (unpaired t-tests, all p>0.05; Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical tests and Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "524f8202-7f81-4523-a5ff-9280f678312b",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C81",
+      "claim": "Helpers and solitaires exhibited no differences in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Because helpers and solitaires were morphologically indistinguishable, and also exhibited no differences in gene expression in our subsequent genomic assays (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "44fd84c3-6cbe-4203-895e-cc0b17406159",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C82",
+      "claim": "Age at assignment was consistent with the age at dispersal observed in wild Damaraland mole-rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Age at assignment (mean age = 19.4 \u00b1 4.4 s.d. months) was consistent with the age at dispersal observed in wild Damaraland mole-rats (1\u20133 years, Thorley and Clutton-Brock, unpublished data)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to unpublished data on wild mole-rats",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "80f205b7-1b5e-47e7-bd88-6a5353a8313d",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C83",
+      "claim": "The pairing procedure typically leads to immediate sexual activity and rapid activation of the reproductive axis.",
+      "claim_type": "EXPLICIT",
+      "source": "This pairing procedure, which defines the queen treatment, typically leads to immediate sexual activity and rapid activation of the reproductive axis, including initiation of ovulation and the potential for conception (Bennett et al., 1996; Snyman et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bennett et al., 1996 and Snyman et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "44e54593-8725-4cb2-a9ee-eb907fadfa42",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C84",
+      "claim": "No effect of queen status on the amount of trabecular bone in the femur, tibia, LV6, or LV7 was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no effect of queen status on the amount of trabecular bone in the femur, tibia, LV6, or LV7 (all p>0.05 for bone volume/total volume)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by micro-CT analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "ed03bcbf-b717-495c-ae44-f1716f7bfc0c",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C85",
+      "claim": "The top three principal components summarizing estimated cell-type proportions did not differ between queens and nonbreeders.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the top three principal components summarizing estimated cell-type proportions did not differ between queens and nonbreeders (all FDR > 10%, Supplementary file 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell-type deconvolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "309d3c28-dedb-4009-a333-ca768d373bef",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C86",
+      "claim": "No cases were identified in which the effects of breeding status on gene expression were significantly mediated by the first principal component of cell composition.",
+      "claim_type": "EXPLICIT",
+      "source": "and we identified no cases in which the effects of breeding status on gene expression were significantly mediated by the first principal component of cell composition (p>0.05 for all 171 queen-associated genes at 10% FDR; Supplementary file 6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mediation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "f82b366d-706f-424d-803b-1e338bbbdb16",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "claim_id": "C87",
+      "claim": "MITF was among the 151 genes that were differentially expressed between queens and nonbreeders and upregulated in both queen long bones and lumbar vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "MITF was also among the 151 genes that were differentially expressed between queens and nonbreeders and upregulated in both queen long bones and LV",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-Seq differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "90e25928-c1e0-4549-a11d-1a3ee29db22c",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Queens experience accelerated vertebral growth concentrated in the first four months post-transition, particularly in pregnant queens, resulting in 4.8% longer LV5 vertebrae after 12 months. This vertebral lengthening is concentrated at the caudal end of the vertebral column and correlates with increased litter size and larger pups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 provide strong experimental evidence from longitudinal x-ray measurements showing statistically significant vertebral growth in queens, particularly in pregnant queens during the first four months (C17, C18). The correlation with fecundity (C20, C21) is well-supported by statistical analysis of 328 litters. The experimental design with age-matched littermates (C14) strengthens causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Queens show gene regulatory changes in bone cells, with 171 genes differentially expressed in long bones (but not lumbar vertebrae at FDR<10%). The majority (88%) of these genes are upregulated in queens and enriched specifically for bone resorption pathways, including positive regulation of bone resorption and superoxide anion generation, with enrichment for PU.1 and MITF transcription factor binding motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C31 provide comprehensive RNA-Seq and ATAC-seq evidence for gene regulatory changes. The finding of bone resorption pathway enrichment (C28, C29) is well-supported by Gene Ontology analysis and consistent with chromatin accessibility data (C31). Cell-type deconvolution analysis (C26, C85, C86) rules out compositional differences as a confounding factor. The lack of significant differential expression in lumbar vertebrae (C23) is notable but effect sizes are correlated between bone types (C24, C25).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "e22b8282-cd3c-4c62-a231-b4c28713c618",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Despite elevated estrogen levels in queens, no significant effects of estradiol treatment on gene expression were observed, and queen upregulated genes showed no enrichment near estrogen or androgen response elements, suggesting non-sex steroid-mediated signaling pathways drive bone resorption in queens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide multiple lines of evidence (RNA-Seq with estradiol treatment, proximity analysis to hormone response elements, transcription factor footprinting) consistently showing no estrogen/androgen receptor involvement. However, the estradiol treatment was at a single concentration (10 nM) and duration (24 hr), which may not capture all possible hormone effects. The conclusion about non-sex steroid pathways (C68) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "6b383ee1-3b11-497e-8c13-542ca8c0f951",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Queens show increased growth plate closure in the proximal tibia (but not LV7), with closure extent and reduced chondrocyte proliferation both correlating with total offspring number, indicating reduced bone lengthening potential in long bones but not vertebrae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by histological analysis with appropriate statistical tests. The differential effect between tibia and LV7 (C37) is consistent with the vertebral lengthening phenotype. The correlation with offspring number (C38, C39) strengthens the interpretation that this is a consequence of reproductive investment. Sample size is modest (n=12) but the statistical significance is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Queens show significantly reduced cortical bone at the femoral midshaft (but not in lumbar vertebrae or trabecular bone), with lower apparent density but unchanged material density, due to enlarged marrow cavities rather than reduced periosteal area, indicating endosteal bone resorption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 provide detailed micro-CT analysis with paired t-tests on littermate pairs, strengthening causal inference. The distinction between apparent and material density (C41, C42) correctly identifies the mechanism as reduced bone volume rather than increased porosity (C43). The finding of enlarged marrow cavities with unchanged periosteal area (C44, C45) clearly implicates endosteal resorption. The lack of effect in trabecular bone (C84) is appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "5fa7e840-5666-4758-adc5-b4e8dad666e8",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cortical bone thinning in queens is predicted by total lifetime offspring number (not recent litter size), with thinning along the entire femoral shaft particularly marked in queens with \u22656 offspring, indicating that cortical loss is a consequence of repeated reproductive cycles rather than an immediate correlate of breeding status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 provide strong evidence that cortical thinning is cumulative rather than immediate. The distinction between recent litter size (C46) and total offspring (C47) is critical for establishing this temporal pattern. Statistical analysis across femoral deciles (C47) shows the effect is widespread. The threshold of \u22656 offspring (C49) provides a quantitative benchmark for when effects become pronounced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural integrity measures (cortical area, minimum second moment of inertia, polar second moment of area) in queens are predicted by offspring number rather than body mass. Modeling based on mouse femur data predicts that queen status increases bone failure risk by 2.68-fold, with queens having \u22656 offspring showing 3.74-fold increased risk and 21% increased risk per additional pup.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C53 provide solid evidence that structural integrity in queens is decoupled from body mass and instead tracks offspring number. However, the fracture risk predictions (C55-C57) rely on a critical assumption that the linear relationship between cortical area and maximum load in mice (C54) applies to mole-rats. This cross-species extrapolation is acknowledged in the methods but represents a significant limitation. Direct mechanical testing of mole-rat bones would be needed to validate these predictions. The modeling approach is reasonable but the conclusions about fracture risk remain uncertain without species-specific validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "03652d15-294a-4d9c-ba8e-8b2c22fa8db0",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Breeding status can be predicted from LV6 morphology with 77.8% accuracy using Euler characteristic transform analysis, but not from femur morphology (52.8% accuracy), indicating morphological differences are more pronounced in vertebrae than long bones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by appropriate statistical analysis using the Euler characteristic transform method. The significant prediction for LV6 (p=0.01) but not femur (p=0.53) is consistent with the more pronounced vertebral lengthening phenotype. The modest accuracy (77.8%) is reasonable given biological variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4cae41be-de56-4fee-b68b-0384dcd9e7c4",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The location of vertebral growth differs between Damaraland mole-rats (caudal end) and naked mole-rats (cranial end), suggesting potential convergent evolution of the vertebral lengthening phenotype in these independently evolved eusocial species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by appropriate citations and the current study's data. The inference of convergent evolution (C63) is reasonable given the independent evolution of eusociality in these species (C62) and the similar functional outcome (vertebral lengthening) achieved through different anatomical locations. However, this remains a hypothesis that would benefit from additional comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "4d307d60-b7c7-49d1-84e1-2cb39bf6f4f2",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The temporal sequence of skeletal changes in queens progresses from traits associated with pre-reproductive growth (vertebral elongation during first pregnancy) to traits associated with aging (marrow cavity expansion and cortical thinning with repeated reproduction), with the molecular signature of bone resorption aligning with this morphological progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 synthesize multiple lines of evidence about the temporal progression of skeletal changes. The alignment between gene expression (sampled 1-2 years post-transition) showing bone resorption and the morphological progression is logical. However, the characterization of these changes as 'aging-like' (C66) is somewhat interpretive, as the mechanisms may differ from typical aging despite phenotypic similarities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "49b7d195-2b0d-4181-95e7-60981bb83674",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental design successfully established distinct breeding and nonbreeding groups, with queens producing an average of 6.92\u00b15.57 offspring in 2.85\u00b11.75 litters over 12-22 months, while helpers and solitaires produced no offspring and showed no morphological or gene expression differences from each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C83 establish the validity of the experimental design. The successful induction of breeding (C78, C83) and maintenance of nonbreeding status (C79) are well-documented. The lack of differences between helpers and solitaires (C80, C81) justifies combining them into a single nonbreeder group. Age at assignment (C82) is appropriate for the species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "7c3f359e-2485-4e11-8cfc-65308e22124f",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Bone loss in Damaraland mole-rat queens may represent an extreme of typical mammalian reproductive bone remodeling, sustained by rapid breeding cycles that prevent recovery. Unlike eusocial insects, mole-rat queens incur morphological costs (bone loss) in addition to beneficial changes (vertebral lengthening), with helpers potentially both offsetting and contributing to these costs through reduced activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C72 are largely speculative (as indicated by 'may be' language) and represent discussion/interpretation rather than direct findings. The comparison to typical mammalian patterns (C69) and the role of helpers (C71, C72) are reasonable hypotheses but lack direct experimental support in this study. The comparison to naked mole-rats (C73) is based on a small sample (n=6) from another study. The overall conclusion about costs vs. benefits (C77) is well-supported by the data, but the mechanistic explanations require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    },
+    {
+      "id": "8cf113f9-b17c-42c2-9476-1614dc6816a5",
+      "content_id": "5709fa52-80ee-4479-bdf5-18390c15c409",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context establishes that Damaraland mole-rats are classified as eusocial with breeding-associated vertebral growth, similar to patterns in eusocial insects where queens show dramatic size differences and altered gene regulation, and comparable to other cooperative vertebrate species where breeders undergo accelerated growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background context supported by citations to prior literature. These establish the scientific context for the current study but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:40:16.641964Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d458edf-f124-48e3-95d5-b924d01f75c2",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "6d430a41-2c92-4931-ad9a-9d3b0d6487f5",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "396ae174-7046-4672-b3cc-3f3b681f491c",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "5107bcfc-6b0e-49d4-8739-882629b4ed89",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "3c65ea25-b4be-4a7e-8811-528cc3aa5bd8",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "1d83d7d6-aa9a-4b00-8e40-85b2bb2ff8a7",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "c30e17c4-ef5b-4662-91f6-f83b96a47a3c",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "0375c7dc-6f24-4d0c-a5de-99fc7a91f76f",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "50feaddc-43a8-4a8c-ad7c-764a031bb65b",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "44430f32-b1b7-4ded-b941-e151bc01ee89",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "9c02b42f-3c49-440b-a232-50bd70c240bd",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "8bb0efba-0f85-44dc-b3b4-e08726206d38",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "38fa7b93-c564-4f51-9791-13a16797bc2a",
+      "result_id": "90e25928-c1e0-4549-a11d-1a3ee29db22c"
+    },
+    {
+      "claim_id": "c45cfe15-16c6-4214-b7f6-b3498bfad03d",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "b92ff992-b750-40c0-a0e8-22c87ba09be8",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "38b4b772-136a-4b68-b4f0-4e5090bb13a7",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "02e6412a-c0e5-44f9-b3c5-0742cffbb4e1",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "fdbc5a67-650b-4469-9ac3-e1e4b50d42aa",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "0027ce32-da2d-4177-b03a-2aa73607f4c3",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "2388dd9f-c370-42aa-ae55-c0702c2a4988",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "7ba1d2b1-1f9c-4423-a35d-33085d0cc27e",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "ed8d2576-e94a-4dbe-9d95-2e61aea6620f",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "33cb7f1a-9ba0-47ef-84b1-8921257237e5",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "7061232f-3901-4e6d-8408-ac2e17aca847",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "89197969-6092-42eb-8063-ad1577841edd",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "50aa175e-cd1f-46c1-af51-0543033423c4",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "f82b366d-706f-424d-803b-1e338bbbdb16",
+      "result_id": "2691bf7f-c035-4cd4-a343-4bff87b07ce0"
+    },
+    {
+      "claim_id": "7c42bc4d-0622-4825-a260-36c1981432a7",
+      "result_id": "e22b8282-cd3c-4c62-a231-b4c28713c618"
+    },
+    {
+      "claim_id": "5057539d-3c5f-40a2-bb18-8c4786ce91af",
+      "result_id": "e22b8282-cd3c-4c62-a231-b4c28713c618"
+    },
+    {
+      "claim_id": "bf6622f7-ca5a-4bd2-8003-180d6b36a70b",
+      "result_id": "e22b8282-cd3c-4c62-a231-b4c28713c618"
+    },
+    {
+      "claim_id": "32152d88-ea6c-42ce-b8c0-e3c39c7acc7e",
+      "result_id": "e22b8282-cd3c-4c62-a231-b4c28713c618"
+    },
+    {
+      "claim_id": "f801214a-5a67-479c-9680-a264a238728d",
+      "result_id": "e22b8282-cd3c-4c62-a231-b4c28713c618"
+    },
+    {
+      "claim_id": "4e2ee911-0d61-429f-998b-96681ec424b7",
+      "result_id": "6b383ee1-3b11-497e-8c13-542ca8c0f951"
+    },
+    {
+      "claim_id": "2619f16e-e957-47d5-9554-0ed33ed55aa9",
+      "result_id": "6b383ee1-3b11-497e-8c13-542ca8c0f951"
+    },
+    {
+      "claim_id": "ce2753a4-3e46-4d18-abcf-5f665b6b626a",
+      "result_id": "6b383ee1-3b11-497e-8c13-542ca8c0f951"
+    },
+    {
+      "claim_id": "14027732-6c19-4511-99d2-b04392a47a8b",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "9e6b5671-b33b-4dc9-8f12-2c6c38a28e11",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "749f9c8d-c2ac-4c6b-9d0f-bd825293414d",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "5ce49ca7-0a4e-464e-8e53-f303c2705c55",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "4fdb8dd8-d487-4f70-83ff-a7f17954cf85",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "d41f985b-9f24-4a43-94d0-1eceb7ed61ef",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "10444d12-7419-4154-88e1-69ee8cd5fe6f",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "44e54593-8725-4cb2-a9ee-eb907fadfa42",
+      "result_id": "40dc99b6-759c-4df8-ab0d-a3a4e93e70f1"
+    },
+    {
+      "claim_id": "c2cda68c-b908-4df8-9d0c-830361e906d0",
+      "result_id": "5fa7e840-5666-4758-adc5-b4e8dad666e8"
+    },
+    {
+      "claim_id": "e70d7474-fde7-4039-8698-7b19b2deb291",
+      "result_id": "5fa7e840-5666-4758-adc5-b4e8dad666e8"
+    },
+    {
+      "claim_id": "fee4cfa5-576e-46b3-b740-2e849e182430",
+      "result_id": "5fa7e840-5666-4758-adc5-b4e8dad666e8"
+    },
+    {
+      "claim_id": "0d8aa8bd-49b6-42ba-8a1b-9b0b12793731",
+      "result_id": "5fa7e840-5666-4758-adc5-b4e8dad666e8"
+    },
+    {
+      "claim_id": "9a13a211-b2bb-4f5c-a781-3b5976195e1b",
+      "result_id": "5fa7e840-5666-4758-adc5-b4e8dad666e8"
+    },
+    {
+      "claim_id": "dfde0fdd-605f-408c-a9d3-05c5d38a4526",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "5e613f8b-68a9-4922-b9fc-455ef549f54c",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "3e0f086f-5d73-4125-a97c-77097d4a5982",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "451c6083-98ca-44c6-a199-95c80b106dbe",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "ac365264-1cc1-4323-bf5b-f21e2c6bbf08",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "c55c37ec-0ac0-492c-96c0-3bb1640a3a86",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "ab9fe59d-90f1-4495-98a6-8ec10b0164fb",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "e4225713-7847-4fb5-a63a-013dcbe53dee",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "ff61fb86-b330-4e25-881b-805660cf2c88",
+      "result_id": "9a4f2329-e8b1-4c6d-a23e-dda1d2e74a04"
+    },
+    {
+      "claim_id": "3e897643-cea6-4595-865d-1c233627a8c6",
+      "result_id": "03652d15-294a-4d9c-ba8e-8b2c22fa8db0"
+    },
+    {
+      "claim_id": "af86b215-58c5-4ca4-a3fb-6240a1c0b0d4",
+      "result_id": "03652d15-294a-4d9c-ba8e-8b2c22fa8db0"
+    },
+    {
+      "claim_id": "623d4160-d4fd-4f51-a306-a80bb0b801da",
+      "result_id": "4cae41be-de56-4fee-b68b-0384dcd9e7c4"
+    },
+    {
+      "claim_id": "8bb0efba-0f85-44dc-b3b4-e08726206d38",
+      "result_id": "4cae41be-de56-4fee-b68b-0384dcd9e7c4"
+    },
+    {
+      "claim_id": "4f86f846-4a72-4a87-88af-85dabc61856a",
+      "result_id": "4cae41be-de56-4fee-b68b-0384dcd9e7c4"
+    },
+    {
+      "claim_id": "ba621de3-74f1-48ed-a339-1a4c60691072",
+      "result_id": "4cae41be-de56-4fee-b68b-0384dcd9e7c4"
+    },
+    {
+      "claim_id": "55bed6a2-bd5c-4040-b247-b661d3ff6748",
+      "result_id": "4d307d60-b7c7-49d1-84e1-2cb39bf6f4f2"
+    },
+    {
+      "claim_id": "0b4dcd5e-165f-4bcd-a1d8-ce6fc02c4687",
+      "result_id": "4d307d60-b7c7-49d1-84e1-2cb39bf6f4f2"
+    },
+    {
+      "claim_id": "72990e2f-854d-41ee-a7a9-45b77906aec4",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "233eace7-ce17-46cb-9174-dd038dbd08a7",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "04334ce7-d873-409b-b610-ad294dd48254",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "524f8202-7f81-4523-a5ff-9280f678312b",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "44fd84c3-6cbe-4203-895e-cc0b17406159",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "80f205b7-1b5e-47e7-bd88-6a5353a8313d",
+      "result_id": "49b7d195-2b0d-4181-95e7-60981bb83674"
+    },
+    {
+      "claim_id": "c2cb78eb-de33-4bd3-9dab-d3b35c7de35e",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "71600d15-2440-445d-94c5-37540c5f2ff7",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "3fe196e8-ce5e-4850-acef-eb7177e84b2f",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "2fba644a-f352-4642-81c7-56e63128356b",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "7f88af79-a2c4-48da-b192-7e9edd1650a9",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "4f08141d-661a-4eb7-818a-f26fca131644",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "44cf5310-fc74-495d-aa33-49c550ac4a39",
+      "result_id": "7c3f359e-2485-4e11-8cfc-65308e22124f"
+    },
+    {
+      "claim_id": "6412b4af-7ab6-4a34-9ee0-1dc5a340cbcc",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    },
+    {
+      "claim_id": "e00325fa-e96f-49cd-b0ef-f6a5e07107ed",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    },
+    {
+      "claim_id": "d7abe796-93fa-407f-adbf-adab341ffaf2",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    },
+    {
+      "claim_id": "5571072b-f76c-4151-bb5d-9567c4b2b895",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    },
+    {
+      "claim_id": "768fa238-ecba-4df2-91f9-ee9c71cbb9ba",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    },
+    {
+      "claim_id": "53f2d02b-55bb-4c6c-b6b1-68059f845c41",
+      "result_id": "8cf113f9-b17c-42c2-9476-1614dc6816a5"
+    }
+  ],
+  "comparisons": []
+}

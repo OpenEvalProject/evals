@@ -1,0 +1,1556 @@
+{
+  "submission": {
+    "id": "ea89e13a-0dc0-47b4-ae67-2d563b8b8550",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:41:25.169657Z",
+    "updated_at": "2025-12-03T05:41:25.169657Z"
+  },
+  "content": [
+    {
+      "id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "submission_id": "ea89e13a-0dc0-47b4-ae67-2d563b8b8550",
+      "content_type": "manuscript",
+      "content_text": "# Inversion of pheromone preference optimizes foraging in C. elegans\n\n## Authors\n\n- Martina Dal Bello<sup>1</sup> ([ORCID: 0000-0003-3706-2929](https://orcid.org/0000-0003-3706-2929)) \u2020\n- Alfonso P\u00e9rez-Escudero<sup>1</sup> ([ORCID: 0000-0002-4782-6139](https://orcid.org/0000-0002-4782-6139))\n- Frank C Schroeder<sup>3</sup> ([ORCID: 0000-0002-4420-0237](https://orcid.org/0000-0002-4420-0237))\n- Jeff Gore<sup>1</sup> ([ORCID: 0000-0003-4583-8555](https://orcid.org/0000-0003-4583-8555)) \u2020\n\n### Affiliations\n\n1. Physics of Living Systems Group, Department of Physics, Massachusetts Institute of Technology Cambridge United States\n2. Centre de Recherches sur la Cognition Animale (CRCA), Centre de Biologie Int\u00e9grative (CBI), Universit\u00e9 de Toulouse; CNRS; UPS Toulouse France\n3. Boyce Thompson Institute and Department of Chemistry and Chemical Biology, Cornell University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nForaging animals have to locate food sources that are usually patchily distributed and subject to competition. Deciding when to leave a food patch is challenging and requires the animal to integrate information about food availability with cues signaling the presence of other individuals (e.g., pheromones). To study how social information transmitted via pheromones can aid foraging decisions, we investigated the behavioral responses of the model animal Caenorhabditis elegans to food depletion and pheromone accumulation in food patches. We experimentally show that animals consuming a food patch leave it at different times and that the leaving time affects the animal preference for its pheromones. In particular, worms leaving early are attracted to their pheromones, while worms leaving later are repelled by them. We further demonstrate that the inversion from attraction to repulsion depends on associative learning and, by implementing a simple model, we highlight that it is an adaptive solution to optimize food intake during foraging.\n\n## Introduction\n\nForaging for food is among the most critical activities for an animal's survival (Calhoun et al., 2014). It is also among the most challenging, because food is usually patchily distributed in space and time, and other individuals are attempting to find and consume the same resources (Abu Baker and Brown, 2014; Driessen and Bernstein, 1999; Stephens and Krebs, 1987).\n\nAn important factor, which has been the focus of considerable effort in models of foraging behavior, is for how long to exploit a food patch. At any given time, an individual feeding in a food patch has to choose between leaving to search for a better patch or staying. Leaving incurs the cost of exploring an unknown territory, while staying results in the cost of feeding in a depleting food patch. Most models addressing this \u2018dilemma\u2019 involve patch assessment by individuals and postulate that the leaving time depends on local estimates of foraging success (Charnov, 1976; Oaten, 1977; Stephens and Krebs, 1987). As such, foragers are predicted to depart from a food patch when the instantaneous intake rate drops below the average intake rate expected from the environment, a phenomenon that has been observed in several animals, from insects (Wajnberg et al., 2008) to birds (Cowie, 1977; Krebs et al., 1974) and large mammals (Searle et al., 2005). The presence of other animals, however, affects individual foraging success so that different leaving times can be expected (Aubert-Kato et al., 2015; Couzin et al., 2005; Giraldeau and Caraco, 2000; Karpas et al., 2017).\n\nOnce an animal leaves a food patch, it will have to explore the environment to locate new sources of food. Since natural habitats are usually saturated with many different non-specific chemical cues, animals use pheromones and other odors to orientate their searches (Wyatt, 2014). This, however, implies determining whether pheromones point toward a resource supporting growth and reproduction or an already exploited one. To acquire this knowledge, animals have to learn from experience. In the context of social foraging, it has been shown that individuals might need to rely only on the most recent experience (Krebs and Inman, 1992). As such, the valence (positive or negative signal) of pheromones acquired during the most recent feeding activity is crucial for the success of the foraging process. While this has been shown in bumblebees feeding on transient resources (Ayasse and Jarau, 2014), we still do\u00a0not know whether it is important for other animals feeding in groups. Moreover, it is not clear if the ability to use associative learning\u2014the capacity to learn and remember the features of the environment that are associated with positive or aversive stimuli (Ardiel and Rankin, 2010)\u2014to change the valence of pheromones could improve foraging success.\n\nThe nematode Caenorhabditis elegans is a powerful model system to investigate how information about food availability and pheromones can shape foraging in patchy habitats. C. elegans feeds in large groups on ephemeral bacterial patches growing on decomposing plant material, a habitat that can be mimicked in a petri dish (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017). Importantly, C. elegans can evaluate population density inside food patches using a suite of pheromones, belonging to the family of ascarosides, which are continuously excreted by worms (Greene et al., 2016; Ludewig and Schroeder, 2013). Finally, it has been shown that pheromones and food availability control the leaving times of foraging worms. In particular, the rate at which individuals abandon the patch increases when food becomes scarce and pheromones are at high concentrations (Figure 1A; Harvey, 2009; Milward et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig1-v1.jpg)\n\n**Figure 1.:** (A) During the feeding process, worms remaining in the food patch experience different environmental conditions. At the beginning, food is still abundant and pheromones have already accumulated. By the end, food is scarce and pheromone concentration is even higher. (B) In the behavioral assay, as animals feed and leave from a food patch, they are presented with the choice between a spot containing the pheromone blend and a spot containing a control solvent. In the two spots, sodium azide is added in order to anesthetize the animals and prevent them from leaving the chosen spot. (C) Individual worms leave the food patch at different times. The average number of worms that abandoned the food patch at each hour is shown (mean worm count\u00a0\u00b1\u00a0SEM across replicates, n. experiments\u00a0=\u00a02). (D) Animals leaving the food patch earlier prefer the pheromone blend while those leaving later, when the food is almost depleted, avoid the pheromone blend. In the plot, chemotaxis index is calculated on the number of naive MY1 young adult hermaphrodites that, at each hour, reach the two spots (mean CI\u00a0\u00b1\u00a0SEM across replicates, n. experiments\u00a0=\u00a02). The red region in each plot approximately indicates when food in the patch is exhausted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Choice after food assay: 100 mm petri dish filled with 25 ml of NGM. In blue, the spot with 20 \u03bcl of the pheromone blend, in gray the spot with 20 \u03bcl of the control solvent and in brown the food patch, 15 \u03bcl of a diluted E. coli OP50 culture. In the pheromone and control spots, 2 \u03bcl of 0.5 M sodium azide was added in order to anesthetize the animals once they reached the spots. Since the anesthetic action of sodium azide lasts for about 2 hr in this set-up, another 1 \u03bcl was added two hours after the beginning of the assay in both spots. (B) Chemotaxis assay: 60 mm petri dish filled with 10 ml of NGM. In blue, the spot with 20 \u03bcl of either pheromone blend or pure synthetic ascarosides; in gray the spot with 20 \u03bcl of control solvent. In both spots, 1 \u03bcl of Na azide 0.5M is added to paralyze the worms once they reached the cue. Worms are placed equidistant from the two spots.\n\nIn the present study, we experimentally investigated the behavioral responses of C. elegans to food depletion and pheromone accumulation in food patches. We confirmed that individual worms consuming a food patch leave at different times, and we found that worms leaving early have a preference for worm-secreted pheromones while those leaving late avoid the pheromones. A simple foraging model suggests that these two behaviors may optimize foraging success in the presence of competitors. Finally, using a series of behavioral assays altering worm exposure to food and pheromones, we demonstrate that associative learning underpins the change in pheromone preference.\n\n## Results\n\n### The leaving time from a food patch affects the preference for pheromones of a C. elegans natural isolate\n\nTo investigate C. elegans behavioral responses to food depletion, we developed an assay to simultaneously assess patch-leaving behavior and pheromone preference over time (see Materials and methods section and Figure 1B). We used young adult hermaphrodites of the natural isolate MY1 (Lingen, Germany) to assess behavioral patterns that could be as close as possible to those exhibited by C. elegans in its natural habitat. In our assay, a small patch of bacteria is gradually depleted by feeding animals (about 5 hr). At equal distances from the food patch there are two spots, one of which contains a pheromone blend. Shortly after worms leave the food patch, they make a decision by choosing between the two spots (Figure 1\u2014figure supplement 1). This assay mimics a foraging activity in which animals decide first when to leave a food patch and later whether to follow a pheromone cue, which is indicative of the presence of others. In these experiments, the pheromone blend is obtained by collecting and filtering the supernatant of well-fed worms maintained in a liquid culture (Choe et al., 2012; Harvey, 2009; White et al., 2007). In agreement with previous results (Milward et al., 2011), we found that feeding animals abandon the food patch at very different times, with some worms leaving at the beginning while others staying until the food patch is depleted (Figure 1C). In addition, the leaving time affects worms\u2019 preference for their pheromones, with individuals leaving the food patch early (first three hours) going to the pheromone blend (positive chemotaxis index, Figure 1D) while worms leaving the food patch later avoiding it (negative chemotaxis index, Figure 1D). C. elegans responses to food depletion, therefore, include an inversion in pheromone preference dependent on the leaving time from the food patch.\n\n### A simple model shows that the inversion of the preference for pheromones can be a strategy to optimize foraging\n\nInside rotting fruits and stems where C. elegans forage, bacterial food is patchily distributed (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017). We might then expect that the timing of dispersal from existing food patches and the strategies that optimize food intake are crucial for worm survival. A natural question then arises: can the behaviors we observed in our experiments provide any benefit to C. elegans foraging? We addressed this question with a simple theoretical model exploring the optimality of the inversion in pheromone preference in the context of foraging in a heterogeneous environment. This model uses the tools of Game Theory to find the strategy that maximizes the food eaten by a worm, taking into account that other worms will also follow the same strategy. This strategy is called Evolutionary Stable Strategy, and should have been selected by evolution (Maynard Smith, 1982).\n\nOur model considers one unoccupied and two occupied food patches (Figure 2A). Initially, $n_{1}$\u00a0worms are in patch 1, and $n_{2}$ worms are in patch 2 (Figure 2A). We assume by convention that\u00a0$n_{1}\\geqn_{2}$, so patch 1 is initially overcrowded and patch 2 is undercrowded. Worms have three possible choices: (1) remain in their current food patch, (2) switch to another occupied food patch, and (3) disperse away from the occupied patches, in search for an unoccupied one. Switching means that a worm will leave its initial food patch and follow pheromone cues in order to find another occupied food patch. Dispersing means that the worm will leave its current food patch and avoid pheromones to maximize the probability of finding an unoccupied food patch. We assume that unoccupied food patches are hard to find, because they are not marked by pheromones and may be on average further away. Therefore, dispersal will not be advantageous until the occupied food patches are nearly depleted. A proof of this result, which closely resembles the marginal value theorem (Charnov, 1976), can be found in the supplement; here we will simply assume that worms will not disperse until the occupied food patches are depleted. Therefore, initially the individuals will choose between remaining or switching.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0Schematic of model predictions (only three identical food patches are depicted). Initially, two patches are unequally populated by C. elegans individuals (overcrowded and undercrowded food patch) while a third one is unoccupied. The release of pheromones by worms makes the occupied patches easier to find compared to the unoccupied one. During the first phase, worms equalize occupancy in the occupied patches. Then, all worms stay in their patches until food becomes scarce. In this last phase, worms benefit from dispersing to the unoccupied patch avoiding pheromone cues. This would be favored by a change in pheromone preference. (B) Expected payoff for each strategy (Remain, $H_{Remain}$, in black; Switch\u00a0$H_{Switch}$, in color as a function of the fraction of individuals that switch ($p$). In the absence of cost, switching is always advantageous (blue line), so the equilibrium switching probability is $p_{c=0}^{*}=1$ (blue dot). A switching cost shifts the equilibrium probability to an intermediate value (orange dot). Lines computed with Equations 3a and 3b with parameters\u00a0$n_{1}=9$, $n_{2}=1$,\u00a0$A_{E}=1$. (C) Probability to switch in equilibrium ($p^{*}$), as a function of switching cost c and the initial fraction of worms in patch 1($\\frac{n_{1}}{n_{1}+n_{2}})$).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Benefit that individuals obtain from switching at time $t=0$, with respect to individuals that remain , versus the probability of switching.Blue: Cost\u00a0$c=0$. Orange: Cost\u00a0$c=0.05$. For both curves, $K=5$, $n_{i}=i,N=15$, $g_{D}=0.1$\u00a0and\u00a0$A_{0}=1.1$.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Benefit that individuals obtain from switching at time\u00a0$t=0$, with respect to individuals that remain, versus the probability of switching when patches have equal or different sizes.Blue: Cost\u00a0$c=0$. Orange: Cost\u00a0$c=0.05$. For all cases, $K=5$, $N=15$, $g_{D}=0.1$\u00a0and\u00a0$A_{0}=1.1$. Results are averaged across 100 simulations, with each of the 15 individuals starting at a random food patch in every simulation. (A) All food patches have size 1 (curves computed using Equation S12). (B) Food patches have different sizes. For each simulation, the 5 sizes are drawn from a uniform distribution between 0 and 2 (curves computed using Equation S16).\n\nWe assess now the consequences of switching. We assume that the choice between switching or remaining cannot depend on the worm\u2019s initial patch, because worms cannot know whether they start in the overcrowded or the undercrowded patch. Indeed, even if an individual can assess the density of its conspecifics in its current food patch, it does not have reliable information about the density of the other patch. As such, all worms have a probability p of switching, regardless of their initial patch. Also, worms that decide to switch may return to their original patch before finding the other one, so worms that switch have a probability \u00bd of ending up in either food patch. Therefore, the number of worms in the $i$-th food patch after the switch will be\n\n$$\nm_{i}=n_{i}1-p+\\frac{n_{1}+n_{2}p}{2},\n$$\n\nwhere the first term represents the worms that started in the $i$-th patch and remained there, and the second term represents the worms that switched and ended up in the $i$-th patch (regardless of their initial patch). After the switch, worms exploit their chosen food patch until it\u2019s exhausted. The food in each patch is shared evenly among the worms exploiting it, so if each food patch contains $A_{E}$ units of food, each worm in the $i$-th patch will eat\n\n$$\nG_{i}=\\frac{A_{E}}{m_{i}}=\\frac{A_{E}}{n_{i}1-p+\\frac{n_{1}+n_{2}p}{2}}\n$$\n\nunits of food. We can now ask: Is switching on average more advantageous than remaining? Does it depend on the cost of switching or on the initial distribution of worms in the two food patches?\n\nTo test if switching is more advantageous than remaining, we calculate the payoff for each strategy. The payoff depends on the food intake achieved in each patch (Equation 2) and the probability for each worm to end up in either of the two occupied food patches after switching or remaining. We assume that worms that switch have a probability \u00bd of ending in either food patch, while worms that remain have a probability $\\frac{n_{i}}{n_{1}+n_{2}}$ of being in the $i$-th food patch. The expected payoff for remaining then is\n\n$$\nH_{Remain}=\\sumi=12\\frac{n_{i}}{n_{1}+n_{2}}\\frac{A}{n_{i}1-p+\\frac{n_{1}+n_{2}p}{2}}.\n$$\n\nThe payoff for switching is instead\n\n$$\nH_{Switch}=\\sumi=12\\frac{1}{2}\\frac{A}{n_{i}1-p+\\frac{n_{1}+n_{2}p}{2}}-c,\n$$\n\nwhere $c$\u00a0is the cost of switching.\n\nIf both the switching probability and the cost are low ($p\u22480$,$c\u22480$), the expected payoff is higher for switching than for remaining. This happens because every individual has a higher probability of being in the overcrowded patch than in the undercrowded one and therefore has an incentive to switch. The difference between the two payoffs diminishes as the probability of switching increases, but if switching is costless all worms should switch in order to perfectly equalize their distribution across the two food patches (Figure 2B, blue). In contrast, when switching is costly, the equilibrium is reached when only a fraction of the population switches (Figure 2B orange). This equilibrium fraction ($p^{*}$) depends both on the cost of switching and on the initial imbalance in patch occupancy (Figure 2C).\n\nOur model recapitulates the two key experimental observations highlighted in Figure 1: First, a fraction of worms will switch at the beginning, leaving the food patch before it is depleted and following pheromones to reach another occupied food patch. Second, once the food patches are depleted all worms will disperse, avoiding depleted food patches by reversing their preference for pheromones (which now mark depleted food patches). Here, we have illustrated these results with a simplified model, with two identical food patches and in which worms can only switch or disperse at particular times. A more general model in which individuals can move at any time between any number of food patches of equal or different sizes gives the same Evolutionary Stable Strategy (see Appendix\u00a01).\n\nOur theoretical results show what features of C. elegans environment may lead to the evolution of the observed behaviors, regardless of how the behaviors are implemented. In particular, the inversion in pheromone preference may be triggered by several different factors, and our model cannot distinguish between them. In the following, we will examine experimental evidence related to these mechanisms.\n\n### The change in pheromones preference is likely due to associative learning\n\nAs anticipated, our model does not encode any specific mechanism underpinning the inversion of pheromone preference. The most parsimonious explanation is that animals leaving the patch earlier might differ from worms leaving later simply due to their feeding status. Indeed, early-leaving worms abandon the food patch when food is still abundant and therefore, they are more likely to be well-fed. By contrast, worms leaving later\u2014when the food is scarce\u2014are more likely to be famished. However, worms leaving earlier are also exposed to pheromones in the presence of abundant food, while worms leaving later experience high levels of pheromones in association with scarce food. These conditions are analogous to those that have been shown to support associative learning in C. elegans (Ardiel and Rankin, 2010). Similarly to the well-known case of associative learning with salt (Hukema et al., 2008; Saeki et al., 2001), in our experiment worms could be initially attracted to pheromones because of the positive association with the presence of food. Attraction could later turn into repulsion if worms start associating pheromones with food scarcity.\n\nTo distinguish between the change in pheromone preference being caused by feeding status alone or by associative learning, we performed experiments in which young adult hermaphrodites were conditioned for five hours in the four scenarios corresponding to the combinations of\u00a0\u00b1\u00a0food and\u00a0\u00b1\u00a0pheromone blend (see Conditioning experiments in the Materials and methods section). After conditioning, animals were assayed for chemotaxis to the pheromone blend (Figure 3A). We found that worms go to the pheromone blend when they are conditioned with\u00a0+food\u00a0+ pheromone blend whereas they avoid it when they are conditioned with \u2013 food\u00a0+pheromone blend (Figure 3B, blue and yellow bars, chemotaxis index of CI++ = 0.38 \u00b1 0.07 vs CI-+ = \u2013 0.15\u00a0\u00b1\u00a00.04). Interestingly, worms conditioned without the pheromone blend do not exhibit a particular preference for their pheromones (Figure 3B, red and turquoise bars, chemotaxis index for the\u00a0+\u00a0food \u2013 pheromone blend and the \u2013 food \u2013 pheromone blend scenarios are 0\u00a0\u00b1\u00a00.07 and \u2013 0.02\u00a0\u00b1\u00a00.06, respectively). Worms therefore exhibit attraction when pheromones are paired with abundant food and aversion when pheromones are associated with absence of food. Otherwise, C. elegans does not show a specific preference for pheromones. These findings are consistent with the hypothesis that the C. elegans preference for the pheromone blend changes due to associative learning.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig3-v1.jpg)\n\n**Figure 3.:** (A) MY1 individuals grow at high density and with plenty of food until young adult. Animals are then transferred to conditioning plates, where they spend 5 hr. Conditioning scenarios are four:\u00a0+\u00a0food\u00a0+ pheromone blend; \u2013 food\u00a0+\u00a0pheromone blend;\u00a0+\u00a0food\u00a0\u2013 pheromone blend; \u2013 food \u2013 pheromone blend. To prevent uncontrolled pheromone accumulation, the conditioning scenarios without added pheromone blend had to be repeated at low worm density. Worms are then assayed for chemotaxis to the pheromone blend. (B) MY1 individuals are not generally attracted the pheromone blend unless it is paired with abundant food. Chemotaxis index is shown for the four different conditioning scenarios:\u00a0+\u00a0food\u00a0+ pheromone blend (blue bar); \u2013 food\u00a0+\u00a0pheromone blend (yellow bar);\u00a0+\u00a0food\u00a0\u2013 pheromone blend (red bar); \u2013 food \u2013 pheromone blend (turquoise bar). As a comparison, chemotaxis index is shown for the\u00a0+\u00a0food\u00a0\u2013 pheromone blend scenario and the \u2013 food \u2013 pheromone blend scenarios with conditioning done at normal animal density (Panel B, inset). Points indicate the outcome of each independent replicated experiments (n\u00a0=\u00a04 and n\u00a0=\u00a03 for experiments with worms at low population density) while bars indicate the CI\u00a0\u00b1\u00a0SEM across independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Schematic of the conditioning experiment. Worms grow at high density and with plenty of food until they are young adults. Animals are then transferred to conditioning plates, where they spend 5 hr, before being assayed for chemotaxis to the pure ascaroside. (B) Chemotaxis index (CI) is shown for the four different conditioning scenarios:\u00a0+\u00a0food\u00a0+ ascaroside (blue bars); \u2013 food\u00a0+\u00a0ascaroside (yellow bars);\u00a0+\u00a0food\u00a0\u2013 ascaroside (red bars); \u2013 food \u2013 ascaroside (turquoise bars). Points indicate the outcome of each independent replicated experiment (n\u00a0=\u00a04 for each ascaroside) while bars indicate the CI\u00a0\u00b1\u00a0SEM across independent experiments. If attraction is turned into repulsion by the feeding status only, we expect the blue and red bars not to differ and the CI to be positive, while the yellow and turquoise bars not to differ and the CI to be either negative or equal to zero. In the experiment with ascr#5 (on the left), the CI is positive in the\u00a0+\u00a0food\u00a0+ ascaroside and the\u00a0+\u00a0food\u2013 ascaroside scenarios, but it differs in the two conditions without food, being negative in the \u2013 food\u00a0+\u00a0ascaroside scenario and not differing from zero in the \u2013 food \u2013 ascaroside scenario. These results are consistent with a combination of associative learning and feeding status driving the change in preference for ascr#5. In the experiment with icas#9 (on the right), the CI in the two conditions with food does not differ, mostly because of the large variability among the repetitions of the\u00a0+\u00a0food\u00a0\u2013 ascaroside scenario (red points). The CI in the two conditions without food is instead negative. The most parsimonious explanation for the change in preference for icas#9 is the different feeding status rather than associative learning, although the accumulation of secreted pheromones during the conditioning period (due to the high worm density in the conditioning plates) may once again obscure the evidence of associative learning (as in the inset of Figure 3).\n\nConditioning in the two scenarios without pheromone blend added had to be performed at low worm density due to uncontrolled pheromone accumulation. Indeed, when conditioned at high worm density, animals in the\u00a0+food \u2013 pheromone blend scenario are still exposed to the pheromones that they keep excreting during the 5 hr conditioning period (Sakai et al., 2013) and therefore exhibit attraction to the pheromone blend, albeit variable (CI+- = 0.25 \u00b1 0.07, Figure 3B inset, red bar). Worms conditioned in\u00a0\u2013 food \u2013 pheromone blend display no significant attraction to the pheromone (CI--=0.10\u00a0\u00b1\u00a00.15, Figure 3B inset, turquoise bar). The variation here is even bigger, likely due to the fact that the pheromone cocktail produced by starved worms can be different from the pheromone blend we used, which was obtained from well-fed worms (Kaplan et al., 2011).\n\nIn addition to a cocktail of ascaroside pheromones, the pheromone blend contains other products of worm metabolism, compounds deriving from the decomposition of dead worms and bacteria, and perhaps other unknown substances. Worms could in principle learn and change preference for any of these compounds and thus forage efficiently as indicated by our model. To probe whether specific pheromones are involved in the foraging optimization, we asked two questions: 1. Can C. elegans attraction to ascarosides be turned into repulsion? 2. Can C. elegans learn with ascarosides? To address these questions, we conducted the conditioning experiments (see Materials and methods) with two synthetic ascarosides, ascr#5 and icas#9, instead of the pheromone blend. We found that C. elegans can change its preference for both ascarosides (Figure 3\u2014figure supplement 1), suggesting that ascaroside pheromones are likely contributing to the response to the pheromone blend found previously. However, these experiments were performed at high worm density, meaning that accumulation of secreted pheromones during the conditioning period prevents a definitive quantification of the relative importance of associative learning versus feeding status (as in Figure 3 inset with the pheromone blend). Nonetheless, these results show that C. elegans can alter its preference for ascarosides, highlighting the flexible role of pheromones in foraging optimization.\n\nTo provide further support that the C. elegans preference for pheromones can change through associative learning, we asked whether the change in preference occurs also via the association with a repellent compound, namely glycerol (Hukema et al., 2008). To answer this question, we performed another conditioning experiment in which young adult hermaphrodites were conditioned for 1 hr in four different scenarios deriving from all the possible combinations of\u00a0\u00b1\u00a0repellent (glycerol) and\u00a0\u00b1\u00a0pheromone blend. During conditioning, animals were free to dwell in a plate seeded with E. coli OP50, and therefore, they were always exposed to a high concentration of bacterial food. Here, uncontrolled pheromone accumulation was not an issue thanks to the short conditioning period. After conditioning, worms were tested for chemotaxis to the pheromone blend (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58144/elife-58144-fig4-v1.jpg)\n\n**Figure 4.:** (A) MY1 individuals grow at high density and with plenty of food until young adult. Animals are then transferred to conditioning plates, where they spend 1 hr. Conditioning scenarios are four:\u00a0+\u00a0pheromone blend \u2013 repellent;\u00a0+\u00a0pheromone blend\u00a0+\u00a0repellent; \u2013 pheromone blend \u2013 repellent; \u2013 pheromone blend\u00a0+\u00a0repellent. Bacterial food is always abundant to prevent confounding effects due to the feeding status of animals. The short conditioning time prevents uncontrolled pheromone accumulation. Worms are then assayed for chemotaxis to the pheromone blend. (B) MY1 individuals are not attracted to the pheromone blend unless it is present and paired with food. Association with the repellent disrupts worm preference for pheromones gained in the presence of abundant food. Chemotaxis index is shown for the four different conditioning scenarios:\u00a0+\u00a0pheromone blend \u2013 repellent (blue bar);\u00a0+pheromone blend\u00a0+\u00a0repellent (yellow bar); \u2013 pheromone blend \u2013 repellent (red bar); \u2013 pheromone blend\u00a0+\u00a0repellent (turquoise bar). Points indicate the outcome of each independent replicated experiments (n\u00a0=\u00a05) while bars indicate the CI\u00a0\u00b1\u00a0SEM across independent experiments.\n\nWe found that the preference for the pheromone blend, which is retained in the \u2013 repellent\u00a0+\u00a0pheromone blend scenario (Figure 4B, blue bar, CI-+=0.26\u00a0\u00b1\u00a00.04), is lost in the\u00a0+\u00a0repellent\u00a0+ pheromone blend condition (Figure 4B, yellow bar, CI ++ = 0.04 \u00b1 0.03). Again, when animals were conditioned in the absence of pheromones, they do not show any particular preference for the pheromone blend (CI\u00a0=\u00a00.01\u00a0\u00b1\u00a00.05 for\u00a0+\u00a0repellent \u2013 pheromone blend and CI = \u2013 0.05\u00a0\u00b1\u00a00.08 for \u2013 repellent \u2013 pheromone blend, Figure 4B red and turquoise bars). In other words, animals do not exhibit a particular preference for pheromones, except when they are exposed to pheromones and food (in the absence of the repellent). Exposure to the repellent in the presence of food and pheromones is required to disrupt attraction. The outcome of this experiment provides further support that C. elegans can change its preference for the pheromone cocktail it produces through associative learning.\n\n## Discussion\n\nWe have assessed the response of C. elegans to food depletion and how this influences worms\u2019 response to their pheromones. In agreement with previous studies, our findings indicate that worms exhibit different leaving times when feeding in groups on transient bacterial food patches. Interestingly, the leaving time affects C. elegans preference for its pheromones, with animals leaving early being attracted to their pheromones and worms leaving later being repelled by them. We showed that this inversion from attraction to repulsion depends on associative learning and appears to be an adaptive solution to optimize food intake during foraging.\n\nOur model shows that a change from pheromone attraction to repulsion is required to optimize food intake when three different factors are combined. First, food patches that give diminishing returns, and should be abandoned when the environment provides a better average intake rate. This first factor has been thoroughly studied both theoretically and experimentally in the context of optimal foraging and the marginal value theorem (Charnov, 1976; Krebs et al., 1978; Oaten, 1977; Stephens and Krebs, 1987; Watanabe et al., 2014), and in this respect, our model simply reproduces previous results. A recent paper on C. elegans foraging contradicts this general assumption of diminishing returns, showing a near-linear depletion of food patches (Ding et al., 2020). This result was obtained in laboratory conditions, with very rich and uniform food patches, which may not reflect natural ones, but at least indicates that the general assumption of diminishing returns is relatively easy to break, and opens the question of whether more care should be put in assessing the conditions in which current optimal foraging models are applicable.\n\nThe second factor is competition for limited resources, which in our model creates the need to switch between pheromone-marked food patches in order to distribute the individuals more evenly. This redistribution closely resembles the Ideal Free Distribution, which postulates that animals should distribute across patches proportionally to the resources available at each source (Bautista et al., 1995; Fretwell and Lucas, 1969; Houston and McNamara, 1987; Kennedy and Gray, 1993). However, here, our model does depart from previous studies. The Ideal Free Distribution applies to cases in which the benefit per unit time decreases with the number of individuals exploiting the same resource. This is the case for habitat choice (Fretwell and Lucas, 1969), or if the instantaneous feeding rate decreases with the number of feeders (Houston and McNamara, 1987). It is not, however, the case in many foraging scenarios, including the one represented by our model (and implicitly by most optimal foraging models), in which animals can feed unimpeded by each other. In these cases, a higher number of animals simply means that the resource is depleted faster. Therefore, simply adding competition to standard optimal foraging models will not change their results qualitatively. Animals will stay in each food source until the food is so scarce that the instantaneous feeding rate falls below the environment's average. This will happen earlier for more crowded food sources, but animals will never need to switch across food sources before they are depleted.\n\nThe third key factor in our model is non-stationarity: we assume that all pheromone-marked food patches will be depleted at roughly the same time. This fact creates the need to switch before the current patch is depleted, because by then most of the benefit from undercrowded (but pheromone-marked) food patches will be gone. This non-stationary environment has received less attention than the previous factors. It is typical of species with boom-and-bust life cycles such as C. elegans (Fr\u00e9zal and F\u00e9lix, 2015), but may also be applicable to other cases, such as migratory species (which arrive synchronously to a relatively virgin landscape), fast-dispersing invader species or, in general, species that occupy a non-stationary ecological niche.\n\nIt\u00a0is interesting to note that the Evolutionary Stable Strategy found by our model does not give any benefit at the level of the species, and may even be deleterious. If we compute the average expected payoff across the whole population using the same rational as for Equation 3, we get\u00a0$H_{all}=\\frac{2A_{E}}{N}-pc$. Therefore, increasing the probability of switching ($p$) has no effect on this population-level payoff when it\u2019s costless, and decreases it when it\u2019s costly. This Evolutionary Stable Strategy therefore emerges from intraspecific competition: Individuals benefit from paying the cost of switching to prevent being outcompeted by other individuals within the population, even if the end result is deleterious for the population as a whole.\n\nC. elegans individuals use stimuli coming from the environment (smells, tastes, temperature, oxygen, and carbon dioxide levels) and from other individuals (pheromones) to efficiently navigate their habitat. An important evolutionary adaptation in this regard is that the C. elegans preference for each of these stimuli can change through experience, including acclimation (Fenk and de Bono, 2017) and associative learning phenomena (Ardiel and Rankin, 2010; Colbert and Bargmann, 1995; Rankin, 2004). We have identified associative learning as the most plausible phenomenon underpinning the change in pheromone preference. During feeding, worms learn to give a positive or negative preference to pheromones depending on the context in which they experience them, in particular the presence or absence of food (Wyatt, 2014). A similar learning process occurs in bumblebees that, in their natural habitat, do not land or probe flowers that have been recently visited and marked by chemical footprints left by themselves or other bees. It has been shown that only experienced foragers, that\u00a0is those that learnt to associate the chemical footprints with the absence of nectar in marked flowers, can successfully avoid them and increase their overall nectar intake (Ayasse and Jarau, 2014). This suggests that associative learning based on pairing pheromones or similar chemical signals with food availability might be frequently observed in animals feeding in groups, not only eusocial insects, as a strategy to increase food intake.\n\nWe have shown that dispersal of feeding stages of C. elegans from occupied patches is regulated by the recent experience of food availability and pheromones, which indicates, at any time, whether it is better to follow the scent of pheromones or to avoid it. A mechanism based on the synergistic interaction between food and pheromones also regulates C. elegans dispersal over longer time scales and, in general, its boom-and-bust life cycle (Edison, 2009; Fr\u00e9zal and F\u00e9lix, 2015). Indeed, scarce food and high concentration of pheromones promote the entry into a resting stage (the dauer larva), allowing worms to survive unfavorable seasons and disperse to uncolonized rotten material, where abundant food, in turn, resumes development to adulthood (Fr\u00e9zal and F\u00e9lix, 2015). Our findings establish an interesting parallel between mechanisms promoting dispersal over short and long temporal scales and highlight the important role that non-dauer stages play in exploiting transient bacterial patches. They also point to the emergence of interesting group dynamics promoted by this synergistic interaction between food and pheromones, adding to the wealth of studies addressing aggregation behaviors in C. elegans (Ding et al., 2019; Greene et al., 2016; Sugi et al., 2019).\n\nAlthough we could not exclude the influence of the worms\u2019 feeding status in driving the change of preference for specific ascaroside pheromones, we showed that C. elegans attraction to two ascarosides can be turned into repulsion. Ascr#5 and icas#9 are potent signaling cues that are usually detected in C. elegans exudates (von Reuss et al., 2012), but other ascarosides can be abundant and the list of newly discovered compounds of the worm metabolism acting as signaling molecules is continuously expanding (von Reuss et al., 2012). The ability to assign a positive or negative preference to the pheromone blend through associative learning might depend also on other byproducts of worm metabolism or derive from the presence of multiple ascaroside molecules acting synergistically (Srinivasan et al., 2012). More studies are required to establish a link between associative learning and the composition of the pheromone blend, which is known to vary among developmental stages (Kaplan et al., 2011), sexes (Izrayelit et al., 2012) and strains (Diaz et al., 2014), ultimately allowing the discovery of novel roles for C. elegans pheromones (Viney and Harvey, 2017).\n\nAs a final remark, our results suggest that C. elegans preference for pheromones might not be innate, as it was previously stated (Greene et al., 2016; Macosko et al., 2009; Pungaliya et al., 2009; Simon and Sternberg, 2002; Srinivasan et al., 2012; Srinivasan et al., 2008) and question what it means to be a naive worm (see also Webster and Rutz, 2020). Worms that we call \u2018naive\u2019 are directly assayed for chemotaxis after being simultaneously exposed to both bacterial food and ascaroside pheromones, which are continuously excreted by the animals during their growth (Kaplan et al., 2011). Hence, it is possible that the attraction that \u2018naive\u2019 worms exhibit is due to the positive association with food that they learn to make during growth on the plate.\n\nIn conclusion, our study establishes a link between learning and social signals, providing a framework for further analysis unravelling the neuronal origin of the observed behaviors. However, the experiments presented here were performed with the natural isolate MY1. Thus, it remains to be tested if the same responses occur in the canonical lab strain N2, whose social behavior has changed due to laboratory domestication (Sterken et al., 2015), and in other natural strains with a social life more similar to MY1 (Greene et al., 2016). Nonetheless, by working with a natural isolate rather than N2, we could provide insights into the ecological significance of the inversion in the preference for pheromones and respond to the pressing need to further our knowledge of C. elegans ecology (Petersen et al., 2015).\n\n## Materials and methods\n\n### Strains and culture conditions\n\nWe used a Caenorhabditis elegans strain recently isolated from the wild, MY1 (Lingen, Germany). The strain has been obtained from the Caenorhabditis Genetic Centre (CGC). Animals were grown at 21\u201323\u00b0C (room temperature) on nematode growth media (NGM) plates (100 mm) seeded with 200 \u03bcl of a saturated culture of E. coli OP50 bacteria (Stiernagle, 2006). As for OP50 culture, a single colony was inoculated into 5 ml of LB medium and grown for 24 hr at 37\u00b0C.\n\n### Pheromones\n\nWe obtained the crude pheromone blend by growing worms in liquid culture for 9 days (at room temperature and shaking at 250 rpm) (von Reuss et al., 2012). Individuals from one plate were washed and added to a 1-l flask with 150 ml of S-medium inoculated with concentrated E. coli OP50 pellet made from 1 l of an overnight culture. Concentrated E. coli OP50 pellet was added any time the food supply was low, that\u00a0is when the solution was no longer visibly cloudy (Stiernagle, 2006). The pheromone blend was then obtained by collecting the supernatant and filter-sterilizing it twice. A new pheromone blend was produced every 3 months. Pure synthetic ascarosides (ascr#5 and icas#9) were obtained from the Schroeder lab and kept at \u221220\u00b0C in ethanol. Each time an experiment was performed, an aqueous solution at the desired molar concentration was prepared (10 \u03bcM for ascr#5 and 10 pM for icas#9). The control solvent for the pheromone blend is S-medium, while the control solvent for the pure ascarosides is an aqueous solution with the same amount of ethanol present in the ascaroside aqueous solution (Srinivasan et al., 2012).\n\n### Choice after food assay\n\nIt is a chemotaxis assay modified from Bargmann and Horvitz, 1991 and Saeki et al., 2001, performed on naive worms that encounter a food patch before making the choice between the pheromone blend and the control solvent. We used 100 mm NGM plates in which we deployed 20 \u03bcl of the pheromone blend, 20 \u03bcl of control solvent and 15 \u03bcl of a diluted OP50 E. coli culture at equal distance from each other (Figure 1\u2014figure supplement 1A). In the pheromone and control spots, 2 \u03bcl of 0.5 M sodium azide was added in order to anesthetize the animals once they reached the spots. Since the anesthetic action of sodium azide lasts for about 2 hr in this set-up, another 1 \u03bcl was added two hours after the beginning of the assay in both spots. naive animals were placed close to the bacteria spot, so that they stop and feed in the patch before chemotaxis toward the two cues. Worms are left to wander freely on the assay plate for 5 hr. The number of worms around the two spots was counted every hour and the chemotaxis index was calculated based on the number of new worms that reached the two spots during each hour.\n\n### Chemotaxis assay\n\nChemotaxis assay has been performed in 60 mm NGM plates, in which worms are given the choice between pheromone (either 20 \u03bcl of the pheromone blend or 20 \u03bcl of a pure ascaroside in aqueous solution) and a control solvent (20 \u03bcl) (Bargmann and Horvitz, 1991; Saeki et al., 2001). The two spots are deployed ~3 cm apart from each other (Figure 1\u2014figure supplement 1B). Shortly before the start of the assay, 1 \u03bcl of 0.5 M sodium azide is added to both spots in order to anesthetize the animals once they reach the spots. Animals, either naive or trained, are placed equidistant from the two spots and left to wander on the assay plate for 1 hr at room temperature (Figure 1\u2014figure supplement 1B). The average number of worms in each experiment is indicated in the figure captions. The assay plates were then cooled at 4\u00b0C and the number of worms around each spot was counted using a lens. The chemotaxis index is then calculated as\u00a0$\\frac{N_{p}-N_{c}}{N_{p}+N_{c}}$, where $N_{p}$ is the number of worms within 1 cm of the center of the pheromone spot, while $N_{c}$ is the number of worms within 1 cm of the center of the control spot. The number of independent experiments (performed in different days) is indicated in each figure caption. For each experiment, we usually performed 10 replicated assays for each scenario. The average number of worms used in each replicated assay across all experiments is ~ 50.\n\n### Conditioning experiments\n\nHermaphrodite individuals of the MY1 strain are grown until they become young adults in NGM plates seeded with 200 \u03bcl of saturated E. coli OP50 bacteria. Then, animals are washed off the plates with wash buffer (M9\u00a0+\u00a00.1% triton), transferred to an Eppendorf tube and washed twice by spinning down the worms and replacing the supernatant with fresh wash buffer each time. After that, animals are transferred to conditioning plates. In the first series of experiments, the four different scenarios derive from all the possible combinations of\u00a0\u00b1\u00a0food and\u00a0\u00b1\u00a0pheromone blend. Plates are prepared\u00a0~16 hr before the training starts, so that bacteria can grow and form a lawn. NGM plates are seeded with\u00a0\u00b1200 \u03bcl of saturated E. coli OP50 culture and\u00a0\u00b1200 \u03bcl of pheromone blend. Animals spend 5 hr in the conditioning plates at room temperature before being assayed for chemotaxis to the pheromone blend.\n\nIn the series of experiments with the repellent, the four different scenarios derive from all the possible combinations of\u00a0\u00b1\u00a0repellent (glycerol) and\u00a0\u00b1\u00a0pheromone blend. Conditioning plates are prepared\u00a0~1 before the start of the experiment and are NGM plates seeded with 200 \u03bcl of saturated E. coli OP50 culture\u00a0\u00b1\u00a00.5 M glycerol and\u00a0\u00b1200 \u03bcl of pheromone blend. To keep the concentration constant, when the pheromone blend was not added, we dilute OP50 with \u03bcl of S-medium. Animals stay in the conditioning plates for one hour at room temperature before being assayed for chemotaxis to the pheromone blend.\n\nIn the experiments with pure ascarosides ascr#5 and icas#9, the four different scenarios derive from all the possible combinations of\u00a0\u00b1\u00a0food and\u00a0\u00b1\u00a0pure ascaroside (in aqueous solution) and are prepared as the experiment with food and the pheromone blend. However, the concentration of ascaroside that was added in the conditioning plate was higher than the concentration at which the worms were tested for chemotaxis (for ascr#5 was 10 \u03bcM, while for icas#9 was 10 pM icas#9) to compensate for the diffusion of the ascaroside throughout the agar in the conditioning plates. Ascr#5 was added at a concentration of 100 \u03bcM onto conditioning plates, while icas#9 was added at a concentration of 1 \u03bcM. Worms spent 5 hr in the conditioning plates at room temperature, after which they are assayed for pheromone chemotaxis.\n",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "10d3939a-669b-4f85-a673-e7787f606b5b",
+      "submission_id": "ea89e13a-0dc0-47b4-ae67-2d563b8b8550",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antonio Celani, ICTP Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58144.sa1](https://doi.org/10.7554/eLife.58144.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper will be of interest to scientists in the field of animal behaviour, especially those working on foraging, navigation and the integration of sensory cues. Experimental data obtained with C. elegans convincingly demonstrate an inversion of preferences depending on the presence of other individuals. The authors interpret this behaviour as an optimal foraging strategy and suggest a model that might represent a first step towards a theoretical understanding of these observations.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inversion of pheromone preference optimizes foraging in C. elegans\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Rutz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that you will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors present an analysis of the foraging dynamics of C. elegans in patchy food environments and show how they bias their decisions depending on feeding history and sensory cues that reflect the density of worms. Navigational preference for these sensory cues is found to change from attractive to repulsive depending on the time at which worms leave a food patch, and additional experiments that condition worms under different combinations of conditions indicate that associative learning is involved in this inversion of preference. This behavior is illuminated by a mathematical model that points to the conclusion that this inversion represents an optimal, evolutionarily stable foraging strategy.\n\nEssential revisions:\n\nOverall, the results are interesting and clearly presented but could be better supported by experiments and modeling. The paper is of high quality and would be of interest to the readership of eLife provided that the following crucial remarks on experiments and modeling are duly addressed by a major revision.\n\nExperiments:\n\nRegarding the interpretation of the data in Figure S2, which was designed to test for associative learning in the preference for specific pheromone molecules (synthetic ascarosides). You state in the main text that the results in Figure 3 of associative learning experiments with the 'pheromone blend' (i.e., supernatant from worms in liquid culture) could be 'recapitulated' with these pure forms of the pheromone molecules, but the data appear to contradict this statement. It appears that difference in navigational preference for these pheromone molecules exist between worms conditioned in the +food and -food conditions, regardless of whether the pheromone molecules are present during the conditioning. Thus, it appears as if the preference for these pheromones might be explained by feeding status only, without associative learning. Have we missed something here? The results of Figure 3 are still consistent with associative learning, but the results of Figure S2 appear to suggest that the cues involved in the associative learning are different from the specific pheromones tested within Figure S2, and must in fact override the feeding-state dependent preference to these specific ascaroside molecules. This leaves us wondering whether it is fair to conclude that the sensory cues involved in the associative learning are really pheromone molecules. Can you rule out that the learning is a response to other substances in the supernatant, e.g. (in their own words) \"other products of worm metabolism, compounds deriving from the decomposition of dead worms and bacteria, and perhaps other unknown substances\"?\n\nYou may want to consider conducting additional experiments (to find other pheromone molecules that do demonstrate evidence for associative learning), or to just change relevant wording to avoid committing to what appears to be at present a weakly supported conclusion.\n\nMathematical modeling:\n\nAlthough conceptually appealing, the modeling appears to be an add-on to the experimental results. It also seems to suffer from weaknesses that should be addressed as detailed below. First, it would seem that at least some of the analysis results (e.g., that equal petitioning would be optimal) might depend on the assumption that all patches are of equal size. This does seem a strong assumption if the model is to be considered relevant to natural ecology. Which of the model-based conclusions are still valid if this assumption is removed? Second, how reasonable is the assumption that all worms start in all patches at the same time? Naively, it would seem more realistic that a small founder population would arrive at a patch, and that these foraging dynamics would play out in a context that involves not only food depletion but also population growth. Would the main conclusions of the model (about optimal foraging and evolutionary stability) still hold in a more realistic model that considers such expected natural population dynamics? Third, the key conceptual assumption is that all patches are either colonized together or left unoccupied. It would be helpful to provide references supporting this assumption. Fourth, the statement at line 135 that \"worms have no way to tell if they are in the overcrowded or under-crowded environment\" seems at first sight to be inconsistent with the very idea of pheromone signalling. Can you please clarify? Since the mathematical model -- currently relegated to the supplement -- forms an important part of the manuscript, we think that it should be clearly summarized in the main text with an accompanying figure, taking into account all the concerns raised above.\n\n- Why was the natural isolate MY1 used? Would the results change with a different strain? Would it be feasible to consider a mutant with blocked pheromone sensing as a null control?\n\n- Could the observed behavior be related to recent observations of nontrivial collective behavior in C. elegans (e.g., \"C. elegans collectively forms dynamical networks\", Sugi et al., 2019, Nat. Comm.; \"Shared behavioral mechanisms underlie C. elegans aggregation and swarming\", Ding et al., 2019, eLife)?\n\n- The worms are described in the text to be constantly leaving the patch but the supplement states that each worm only leaves when the food intake decreases below a certain threshold value. Could you please explain the seemingly contradictory statements?\n\n- You might want to consider citing \"Information socialtaxis and efficient collective behavior emerging in groups of information-seeking agents\" by Karpas et al., (2017, PNAS), and related work, on how optimal foraging is different in group as opposed to individual contexts.\n\n- You might also want to consider the following reference, perhaps relevant for the discussion: \"Measuring Caenorhabditis elegans Spatial Foraging and Food Intake Using Bioluminescent Bacteria\" (Ding et al., 2020, Genetics).\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Inversion of pheromone preference optimizes foraging in C. elegans\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Rutz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Sreekanth H Chalasani (Reviewer #4).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers concur that this article offers an interesting conclusion regarding optimal foraging and chemosensory valence. However, they also agree that it would benefit from a second round of revision, aiming at an improved precision of language and a better discussion of the assumptions of the model and experimental conclusions.\n\nEssential Revisions:\n\n1) A summary of the model and its most important parameters appears to be necessary. The revised version is still unsatisfactory from this point of view.\n\n2) The paper still requires some improvement on the precision of language.\n\n3) The discussion of the assumptions of the model and experimental conclusions could be further improved.\n\nFor more detail about these points, please read the Recommendations by the Reviewers.\n\nReviewer #1:\n\nMany aspects of the manuscript have improved in this revision but unfortunately, I feel that the authors still haven't adequately incorporated the model details into the manuscript. I do feel strongly that one shouldn't show model predictions (Figure 2) without a summary of the model and its most important parameters. Such a summary is necessary so that readers can reasonable judge the modeling choices. I also disagree with the authors own assessment \"The model is now extensively described in the main text (lines 123-159)\". One cannot read these lines and easily recreate any sense of the model. There are many more details given in the \"Foraging model\" section of the supplement, but these details are also not presented in such a way so that the model architecture is clear.\n\nOne small comment for the abstract:\n\nLine 22 consider removing \"model\" or changing to \"animal model\" to distinguish from the computational model\n\nReviewer #2:\n\nThe authors present experiments that demonstrate how C. elegans worms bias their foraging decisions depending on feeding history and sensory cues (here, called pheromones) that reflect the density of worms. Navigational preference for these sensory cues is found to change from attractive to repulsive depending on the time at which worms leave a food patch, and additional experiments that condition worms under different combinations of conditions (with/without the sensory cues, with/without food, with/without repellent) indicate that associative learning is involved in this inversion of preference. A mathematical model is provided to argue that this inversion represents an optimal foraging strategy that is also evolutionarily stable.\n\nI am satisfied that the edits made by the authors sufficiently addressed concerns I raised in the previous round.\n\nReviewer #4:\n\nThe authors use the nematode C. elegans to reveal how animals associate social signals with specific contexts and modify their behaviors. Specifically, they show that C. elegans leaving a food patch are attracted to pheromonal cues, while those leaving later are repelled from pheromones. The authors using a behavioral model to suggest that the switch from attraction to repulsion is likely due to a change in learning. This study links learning with social signals providing a framework for further analysis into the underlying neuronal pathways.\n\nLine 36 + 46: The word decision is used but lacks definition. Decision-making in C. elegans is controversial and should require precise language in using. If there is a decision to be made regarding exploitation of a food patch, what are the possible actions that the animal can choose to take?\n\nLine 58: Similarly, the term associative learning requires definition.\n\nLine 99: As stated in the rebuttal, MY1 was used as (1) it was deemed to be more natural/ethological and (2) it is known to respond to synthetic pheromones. It is unclear whether or not the use of N2 in these experiments would change the results. If these results do not hold in N2, this is of note because it could lead to interesting follow-up experiments aiming to identify the biology underlying the MY1-specific behavior. The use of MY1 is cause for concern in truly placing these results within the full body of C. elegans literature. It seems prudent that the use of this strain be further addressed in the discussion.\n\nHow far do pheromones diffuse to (within the detectable limit of a C. elegans)? Is it clear that the decision to leave a patch is made without knowledge of other food patches? Or is it possible that the animals are receiving pheromonal cues about other patches even while residing on a food patch bathed in pheromones. This distinction seems important to both the conclusions of the paper and the model and are not discussed in the body of the text. Can the diffusion of pheromones be experimentally defined or modeled to support the assumptions of the foraging model?\n\nIs this foraging model ethological? Would worms not have a much lower payoff of leaving their patch in their natural boom-and-bust environment? Specifically, would patch density not be significantly lower in a natural environment such that switching patches is not beneficial until much later in food depletion (which could presumably be generations later)? Consider the spatial scale of a C. elegans to a rotting fruit.\n\nLine 218: This brings up an interesting discussion point. The model and experiments assume stationarity of the pheromone blend over time with an inversion of valence occurring due to associative learning and satiety. However, would the pheromone blend not change throughout the course of the experiment? Could the specific combination of pheromones in the blend possibly be cause for the valence change?\n\nOverall, I think this paper offers an interesting conclusion regarding optimal foraging and chemosensory valence. However, I do think it would benefit from precision of language and better discussion of the assumptions of the model and experimental conclusions.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Inversion of pheromone preference optimizes foraging in C. elegans\" for further consideration by eLife. Your revised article has been evaluated by Christian Rutz (Senior Editor), Antonio Celani (Reviewing Editor), and two reviewers.\n\nSummary:\n\nThis paper will be of interest to scientists in the field of animal behaviour with a focus on foraging, navigation and the integration of sensory cues. Experimental data obtained with C. elegans convincingly demonstrate an inversion of preferences depending on the presence of other individuals. The authors interpret this behaviour as an optimal foraging strategy but the modelling in support of this conclusion could be improved.\n\nDel Bello et al., present experiments that demonstrate how C. elegans worms bias their foraging decisions depending on feeding history and sensory cues (pheromones) that reflect the density of worms. Navigational preference for these sensory cues is found to change from attractive to repulsive depending on the time at which worms leave a food patch, and additional experiments that condition worms under different combinations of conditions (with/without the sensory cues, with/without food, with/without repellent) indicate that associative learning is involved in this inversion of preference. A mathematical model is provided to argue that this inversion represents an optimal foraging strategy that is also evolutionarily stable.\n\nThe paper offers an interesting conclusion regarding optimal foraging and chemosensory valence that is mostly supported by the data. However, the modelling part is comparatively weaker. Below is a list of the issues that still need to be addressed:\n\n\u2013 How reasonable is the assumption that all worms start in all patches at the same time? Naively, it would seem more realistic that a small founder population would arrive at a patch, and that these foraging dynamics would play out in a context that involves not only food depletion but also population growth. Would the main conclusions of the model (about optimal foraging and evolutionary stability) still hold in a more realistic model that considers such expected natural population dynamics?\n\n\u2013 How far do pheromones diffuse to (within the detectable limit of a C. elegans)? Is it clear that the decision to leave a patch is made without knowledge of other food patches? Or is it possible that the animals are receiving pheromonal cues about other patches even while residing on a food patch bathed in pheromones. This distinction seems important to both the conclusions of the paper and the model and is not discussed in the main text. Can the diffusion of pheromones be experimentally defined or modeled, to support the assumptions of the foraging model?\n\n\u2013 Is this foraging model ethological? Would worms not have a much lower payoff of leaving their patch in their natural boom-and-bust environment? Specifically, would patch density not be significantly lower in a natural environment such that switching patches is not beneficial until much later in food depletion (which could presumably be generations later)?\n\n\u2013 The model and experiments assume stationarity of the pheromone blend over time with an inversion of valence occurring due to associative learning and satiety. However, would the pheromone blend not change throughout the course of the experiment? Could the specific combination of pheromones in the blend possibly be cause for the valence change?\n\n\u2013 Finally, we wish to draw your attention to the STRANGE framework for animal behaviour research, which is currently being adopted by eLife and seems relevant to your study: https://doi.org/10.1038/d41586-020-01751-5\n\nReviewer #1:\n\nI am now satisfied with the improved presentation of model details.\n\nI do note a typo in the caption of Figure 2: \"During the first phase, worms equalize occupancy the occupied patches.\"\n\nReviewer #4:\n\nGore et al., show that C. elegans leaving food patches at different times and different preferences to pheromones. Animals leaving early are attracted, while those leaving later are repelled from pheromones. I have no concerns with the data. Most of my concerns are with the model.\n\nIt remains unclear whether the inversion is due the association of pheromones with food odorants or due to food-deprivation. I would recommend either testing these two possibilities or clarifying this in the manuscript with specific predictions for each outcome.\n\nLine 192 \u2013 Evolutionary Stable Strategy is introduced for the first time, but is neither defined nor cited. Further, small typo exists with the word \"the\" on this line.\n",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b36e3069-f6cf-43ee-826d-cc7f804c4c0c",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C1",
+      "claim": "C. elegans feeds in large groups on ephemeral bacterial patches growing on decomposing plant material.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans feeds in large groups on ephemeral bacterial patches growing on decomposing plant material, a habitat that can be mimicked in a petri dish (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "be242cc7-40f5-402a-904c-8baace792370",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C2",
+      "claim": "C. elegans can evaluate population density inside food patches using a suite of pheromones belonging to the family of ascarosides.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans can evaluate population density inside food patches using a suite of pheromones, belonging to the family of ascarosides, which are continuously excreted by worms (Greene et al., 2016; Ludewig and Schroeder, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research (Greene et al., 2016; Ludewig and Schroeder, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "e88c54c2-bc68-4975-ab08-fda3003874af",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C3",
+      "claim": "Ascaroside pheromones are continuously excreted by C. elegans worms.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans can evaluate population density inside food patches using a suite of pheromones, belonging to the family of ascarosides, which are continuously excreted by worms (Greene et al., 2016; Ludewig and Schroeder, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research (Greene et al., 2016; Ludewig and Schroeder, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "8e594dc0-f7ea-499d-9602-8d45daaecbdb",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C4",
+      "claim": "Pheromones and food availability control the leaving times of foraging C. elegans worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it has been shown that pheromones and food availability control the leaving times of foraging worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "a49ddcff-7ec0-4e0e-bf25-6c62df1dd532",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C5",
+      "claim": "The rate at which C. elegans individuals abandon a food patch increases when food becomes scarce and pheromones are at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the rate at which individuals abandon the patch increases when food becomes scarce and pheromones are at high concentrations (Figure 1A; Harvey, 2009; Milward et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations (Harvey, 2009; Milward et al., 2011) and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f7827db1-c01d-49f0-b810-6275a20c944d",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C6",
+      "claim": "Individual C. elegans worms leave a food patch at different times during the feeding process.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous results (Milward et al., 2011), we found that feeding animals abandon the food patch at very different times, with some worms leaving at the beginning while others staying until the food patch is depleted (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C and citation to previous work (Milward et al., 2011).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f1ca6af9-edd9-4672-be6e-48c73b8bf54d",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C7",
+      "claim": "C. elegans worms leaving a food patch early (first three hours) are attracted to the pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the leaving time affects worms' preference for their pheromones, with individuals leaving the food patch early (first three hours) going to the pheromone blend (positive chemotaxis index, Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "32152f91-aa5a-47d8-95e5-a426a91492e5",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C8",
+      "claim": "C. elegans worms leaving a food patch later avoid the pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "while worms leaving the food patch later avoiding it (negative chemotaxis index, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "6c5ef678-6875-4d45-bd65-a63c8cba835f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C9",
+      "claim": "The leaving time from a food patch affects C. elegans preference for pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the leaving time affects worms' preference for their pheromones, with individuals leaving the food patch early (first three hours) going to the pheromone blend (positive chemotaxis index, Figure 1D) while worms leaving the food patch later avoiding it (negative chemotaxis index, Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f21ad2c7-9cf9-4bb3-9a2e-4bfd720ce97e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C10",
+      "claim": "C. elegans responses to food depletion include an inversion in pheromone preference dependent on the leaving time from the food patch.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans responses to food depletion, therefore, include an inversion in pheromone preference dependent on the leaving time from the food patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing different pheromone preferences at different leaving times.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "af75d26d-1096-4fd7-a8a0-a270acf17ac8",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C11",
+      "claim": "Bacterial food is patchily distributed inside rotting fruits and stems where C. elegans forage.",
+      "claim_type": "EXPLICIT",
+      "source": "Inside rotting fruits and stems where C. elegans forage, bacterial food is patchily distributed (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research (Fr\u00e9zal and F\u00e9lix, 2015; Schulenburg and F\u00e9lix, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "3918d306-8b6b-4350-a99f-c200c167fd8b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C12",
+      "claim": "The timing of dispersal from existing food patches is crucial for C. elegans survival.",
+      "claim_type": "EXPLICIT",
+      "source": "We might then expect that the timing of dispersal from existing food patches and the strategies that optimize food intake are crucial for worm survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the patchy distribution of food.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "9dd40d3f-2553-4964-a938-ea30afbd9c1b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C13",
+      "claim": "The inversion in pheromone preference can be an adaptive solution to optimize food intake during foraging in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that the inversion from attraction to repulsion depends on associative learning and, by implementing a simple model, we highlight that it is an adaptive solution to optimize food intake during foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "d0fcdb96-892b-4889-b945-5c14e0ad70da",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C14",
+      "claim": "The theoretical model uses Game Theory to find the strategy that maximizes food eaten by a worm.",
+      "claim_type": "EXPLICIT",
+      "source": "This model uses the tools of Game Theory to find the strategy that maximizes the food eaten by a worm, taking into account that other worms will also follow the same strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methodology of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "c386c448-e1c6-4e48-8146-23b2ac2ecee3",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C15",
+      "claim": "The Evolutionary Stable Strategy should have been selected by evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy is called Evolutionary Stable Strategy, and should have been selected by evolution (Maynard Smith, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Game Theory literature (Maynard Smith, 1982).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "59ecc0d8-21c7-4cd0-a76b-49f8165895fc",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C16",
+      "claim": "Unoccupied food patches are hard to find because they are not marked by pheromones and may be on average further away.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that unoccupied food patches are hard to find, because they are not marked by pheromones and may be on average further away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption stated in the theoretical model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f5993145-61ee-4433-a22c-3a8d0642f773",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C17",
+      "claim": "Dispersal will not be advantageous until the occupied food patches are nearly depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, dispersal will not be advantageous until the occupied food patches are nearly depleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the model assumptions and resembles the marginal value theorem.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f852c481-99af-44a4-bf07-3134365eab3f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C18",
+      "claim": "When switching is costless, all worms should switch in order to perfectly equalize their distribution across the two food patches.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the two payoffs diminishes as the probability of switching increases, but if switching is costless all worms should switch in order to perfectly equalize their distribution across the two food patches (Figure 2B, blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from the theoretical model and illustrated in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2906c973-7274-4c8b-9353-6653cc90c09e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C19",
+      "claim": "When switching is costly, the equilibrium is reached when only a fraction of the population switches.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when switching is costly, the equilibrium is reached when only a fraction of the population switches (Figure 2B orange).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from the theoretical model and illustrated in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "73fd6ebb-2e59-4bb4-8176-d5a0fad4cb1b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C20",
+      "claim": "The equilibrium fraction of worms that switch depends both on the cost of switching and on the initial imbalance in patch occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "This equilibrium fraction (p*) depends both on the cost of switching and on the initial imbalance in patch occupancy (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from the theoretical model and illustrated in Figure 2C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "c9adcea9-4e6e-4fbb-a06e-941aa95f9848",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C21",
+      "claim": "A fraction of worms will switch at the beginning, leaving the food patch before it is depleted and following pheromones to reach another occupied food patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model recapitulates the two key experimental observations highlighted in Figure 1: First, a fraction of worms will switch at the beginning, leaving the food patch before it is depleted and following pheromones to reach another occupied food patch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the theoretical model and connects to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "8e528d0a-3632-4356-bbea-e6cfd33e7a65",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C22",
+      "claim": "Once the food patches are depleted all worms will disperse, avoiding depleted food patches by reversing their preference for pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, once the food patches are depleted all worms will disperse, avoiding depleted food patches by reversing their preference for pheromones (which now mark depleted food patches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the theoretical model and connects to experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "c2092cd0-c28a-4912-bf22-f7c34afebbf7",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C23",
+      "claim": "C. elegans worms conditioned with +food +pheromone blend are attracted to the pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that worms go to the pheromone blend when they are conditioned with +food + pheromone blend whereas they avoid it when they are conditioned with \u2013 food +pheromone blend (Figure 3B, blue and yellow bars, chemotaxis index of CI++ = 0.38 \u00b1 0.07 vs CI-+ = \u2013 0.15 \u00b1 0.04).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "11d085b0-dd59-4ada-a9ea-8b43931ecbd9",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C24",
+      "claim": "C. elegans worms conditioned with -food +pheromone blend avoid the pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that worms go to the pheromone blend when they are conditioned with +food + pheromone blend whereas they avoid it when they are conditioned with \u2013 food +pheromone blend (Figure 3B, blue and yellow bars, chemotaxis index of CI++ = 0.38 \u00b1 0.07 vs CI-+ = \u2013 0.15 \u00b1 0.04).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "228a0555-3540-4915-9e99-750679984ccb",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C25",
+      "claim": "C. elegans worms conditioned without the pheromone blend do not exhibit a particular preference for their pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, worms conditioned without the pheromone blend do not exhibit a particular preference for their pheromones (Figure 3B, red and turquoise bars, chemotaxis index for the + food \u2013 pheromone blend and the \u2013 food \u2013 pheromone blend scenarios are 0 \u00b1 0.07 and \u2013 0.02 \u00b1 0.06, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "3261e9e3-8ec0-42a3-8d40-764efc7eadf8",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C26",
+      "claim": "C. elegans exhibit attraction when pheromones are paired with abundant food and aversion when pheromones are associated with absence of food.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms therefore exhibit attraction when pheromones are paired with abundant food and aversion when pheromones are associated with absence of food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the experimental results from the conditioning experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "48ba935d-85b2-4beb-9ff5-9aaf4f71f828",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C27",
+      "claim": "The findings are consistent with the hypothesis that C. elegans preference for the pheromone blend changes due to associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the hypothesis that the C. elegans preference for the pheromone blend changes due to associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "142fc0a1-a564-46c0-8988-662439bb50df",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C28",
+      "claim": "C. elegans can change its preference for both ascr#5 and icas#9 ascarosides.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C. elegans can change its preference for both ascarosides (Figure 3\u2014figure supplement 1), suggesting that ascaroside pheromones are likely contributing to the response to the pheromone blend found previously.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "ec7ef616-c870-4cf3-bc8d-50a7af77a25f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C29",
+      "claim": "Ascaroside pheromones are likely contributing to the response to the pheromone blend.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C. elegans can change its preference for both ascarosides (Figure 3\u2014figure supplement 1), suggesting that ascaroside pheromones are likely contributing to the response to the pheromone blend found previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results with pure ascarosides.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "89ed9145-fd57-43e9-bd78-f119c498ecee",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C30",
+      "claim": "The preference for the pheromone blend is retained in the -repellent +pheromone blend conditioning scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the preference for the pheromone blend, which is retained in the \u2013 repellent + pheromone blend scenario (Figure 4B, blue bar, CI-+=0.26 \u00b1 0.04), is lost in the + repellent + pheromone blend condition (Figure 4B, yellow bar, CI ++ = 0.04 \u00b1 0.03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "44e90738-35b4-4d2c-80f8-8651dd42b3e0",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C31",
+      "claim": "The preference for the pheromone blend is lost in the +repellent +pheromone blend conditioning scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the preference for the pheromone blend, which is retained in the \u2013 repellent + pheromone blend scenario (Figure 4B, blue bar, CI-+=0.26 \u00b1 0.04), is lost in the + repellent + pheromone blend condition (Figure 4B, yellow bar, CI ++ = 0.04 \u00b1 0.03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "46394b14-1b7b-47bf-92be-f41cae25e33e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C32",
+      "claim": "Animals do not exhibit a particular preference for pheromones except when they are exposed to pheromones and food in the absence of the repellent.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, animals do not exhibit a particular preference for pheromones, except when they are exposed to pheromones and food (in the absence of the repellent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the experimental results from the repellent conditioning experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "5866aec2-a6f6-4def-895b-32305e186c7a",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C33",
+      "claim": "Exposure to the repellent in the presence of food and pheromones is required to disrupt attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to the repellent in the presence of food and pheromones is required to disrupt attraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the experimental results with the repellent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "ffd8d8bd-bded-4ea9-b642-4893e6fe6667",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C34",
+      "claim": "The outcome of the repellent experiment provides further support that C. elegans can change its preference for the pheromone cocktail through associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The outcome of this experiment provides further support that C. elegans can change its preference for the pheromone cocktail it produces through associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f6bc6889-641c-4c1a-b06b-1e22c64ba5ad",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C35",
+      "claim": "The inversion from attraction to repulsion depends on associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that this inversion from attraction to repulsion depends on associative learning and appears to be an adaptive solution to optimize food intake during foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the conditioning experiments and theoretical model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "e7ec373f-d984-4db5-9c3e-f4e9b939d115",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C36",
+      "claim": "The inversion in pheromone preference appears to be an adaptive solution to optimize food intake during foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that this inversion from attraction to repulsion depends on associative learning and appears to be an adaptive solution to optimize food intake during foraging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "b9e62a61-6058-4e69-ac11-6e57cc207dc6",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C37",
+      "claim": "A change from pheromone attraction to repulsion is required to optimize food intake when three different factors are combined: food patches that give diminishing returns, competition for limited resources, and non-stationarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that a change from pheromone attraction to repulsion is required to optimize food intake when three different factors are combined. First, food patches that give diminishing returns, and should be abandoned when the environment provides a better average intake rate... The second factor is competition for limited resources... The third key factor in our model is non-stationarity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from the theoretical model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "823243b1-0e1a-497d-b834-cfc3b4aa3051",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C38",
+      "claim": "The Evolutionary Stable Strategy found by the model does not give any benefit at the level of the species and may even be deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the Evolutionary Stable Strategy found by our model does not give any benefit at the level of the species, and may even be deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from analysis of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "0f231f9a-a2bd-484b-a255-73cafd68752a",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C39",
+      "claim": "The Evolutionary Stable Strategy emerges from intraspecific competition.",
+      "claim_type": "EXPLICIT",
+      "source": "This Evolutionary Stable Strategy therefore emerges from intraspecific competition: Individuals benefit from paying the cost of switching to prevent being outcompeted by other individuals within the population, even if the end result is deleterious for the population as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is derived from analysis of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "af9d6894-4231-433b-89ba-f3ee298f9d07",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C40",
+      "claim": "C. elegans preference for environmental stimuli can change through experience, including acclimation and associative learning phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "An important evolutionary adaptation in this regard is that the C. elegans preference for each of these stimuli can change through experience, including acclimation (Fenk and de Bono, 2017) and associative learning phenomena (Ardiel and Rankin, 2010; Colbert and Bargmann, 1995; Rankin, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "d3658fcd-f57e-410f-b6f3-8100425c93b1",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C41",
+      "claim": "During feeding, C. elegans worms learn to give a positive or negative preference to pheromones depending on the context in which they experience them, in particular the presence or absence of food.",
+      "claim_type": "EXPLICIT",
+      "source": "During feeding, worms learn to give a positive or negative preference to pheromones depending on the context in which they experience them, in particular the presence or absence of food (Wyatt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental results and a citation (Wyatt, 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "4c56b970-cf6b-43ea-889f-d8c1cc415f2b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C42",
+      "claim": "Experienced bumblebee foragers that learnt to associate chemical footprints with the absence of nectar can successfully avoid marked flowers and increase their overall nectar intake.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that only experienced foragers, that is those that learnt to associate the chemical footprints with the absence of nectar in marked flowers, can successfully avoid them and increase their overall nectar intake (Ayasse and Jarau, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Ayasse and Jarau, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "0b7d3792-6a2c-47c9-b1d2-f470fdbc477b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C43",
+      "claim": "Associative learning based on pairing pheromones or similar chemical signals with food availability might be frequently observed in animals feeding in groups as a strategy to increase food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that associative learning based on pairing pheromones or similar chemical signals with food availability might be frequently observed in animals feeding in groups, not only eusocial insects, as a strategy to increase food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the bumblebee example and the C. elegans results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2d2e7036-89a8-4c93-bdb1-0bccf4121aeb",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C44",
+      "claim": "Dispersal of feeding stages of C. elegans from occupied patches is regulated by the recent experience of food availability and pheromones.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that dispersal of feeding stages of C. elegans from occupied patches is regulated by the recent experience of food availability and pheromones, which indicates, at any time, whether it is better to follow the scent of pheromones or to avoid it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "48aec897-ccd5-41f5-a37c-dc18d21bdb8a",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C45",
+      "claim": "A mechanism based on the synergistic interaction between food and pheromones regulates C. elegans dispersal over longer time scales and its boom-and-bust life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanism based on the synergistic interaction between food and pheromones also regulates C. elegans dispersal over longer time scales and, in general, its boom-and-bust life cycle (Edison, 2009; Fr\u00e9zal and F\u00e9lix, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research (Edison, 2009; Fr\u00e9zal and F\u00e9lix, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "37659eb7-738f-4e6b-b6fd-40ac0274fda4",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C46",
+      "claim": "Scarce food and high concentration of pheromones promote the entry into the dauer larva stage in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, scarce food and high concentration of pheromones promote the entry into a resting stage (the dauer larva), allowing worms to survive unfavorable seasons and disperse to uncolonized rotten material, where abundant food, in turn, resumes development to adulthood (Fr\u00e9zal and F\u00e9lix, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Fr\u00e9zal and F\u00e9lix, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2ede913a-13f3-4d70-aaec-17682306de7b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C47",
+      "claim": "Abundant food resumes development to adulthood in C. elegans after the dauer stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, scarce food and high concentration of pheromones promote the entry into a resting stage (the dauer larva), allowing worms to survive unfavorable seasons and disperse to uncolonized rotten material, where abundant food, in turn, resumes development to adulthood (Fr\u00e9zal and F\u00e9lix, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Fr\u00e9zal and F\u00e9lix, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "e2c39597-5ee8-414b-be84-8ee2173d6eba",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C48",
+      "claim": "Non-dauer stages play an important role in exploiting transient bacterial patches in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings establish an interesting parallel between mechanisms promoting dispersal over short and long temporal scales and highlight the important role that non-dauer stages play in exploiting transient bacterial patches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "690d2052-a839-491d-86f6-a0c8d13a6c9f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C49",
+      "claim": "Ascr#5 and icas#9 are potent signaling cues that are usually detected in C. elegans exudates.",
+      "claim_type": "EXPLICIT",
+      "source": "Ascr#5 and icas#9 are potent signaling cues that are usually detected in C. elegans exudates (von Reuss et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (von Reuss et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2dcefcdd-8641-4930-b50e-55d7e82811b0",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C50",
+      "claim": "The list of newly discovered compounds of the worm metabolism acting as signaling molecules is continuously expanding.",
+      "claim_type": "EXPLICIT",
+      "source": "but other ascarosides can be abundant and the list of newly discovered compounds of the worm metabolism acting as signaling molecules is continuously expanding (von Reuss et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (von Reuss et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "23e0f7c5-7e09-47a6-a3a5-4d8783077a99",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C51",
+      "claim": "The composition of the pheromone blend varies among developmental stages in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "More studies are required to establish a link between associative learning and the composition of the pheromone blend, which is known to vary among developmental stages (Kaplan et al., 2011), sexes (Izrayelit et al., 2012) and strains (Diaz et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Kaplan et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "ab8d6c44-5a83-4551-9e77-5ad33cc9d12b",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C52",
+      "claim": "The composition of the pheromone blend varies among sexes in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "More studies are required to establish a link between associative learning and the composition of the pheromone blend, which is known to vary among developmental stages (Kaplan et al., 2011), sexes (Izrayelit et al., 2012) and strains (Diaz et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Izrayelit et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "337bc25d-f94e-4bb1-8ba5-aaab0934cf6c",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C53",
+      "claim": "The composition of the pheromone blend varies among strains in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "More studies are required to establish a link between associative learning and the composition of the pheromone blend, which is known to vary among developmental stages (Kaplan et al., 2011), sexes (Izrayelit et al., 2012) and strains (Diaz et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Diaz et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "022be0c3-f8d3-4f1d-8327-0828d6fcfd48",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C54",
+      "claim": "C. elegans preference for pheromones might not be innate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a final remark, our results suggest that C. elegans preference for pheromones might not be innate, as it was previously stated (Greene et al., 2016; Macosko et al., 2009; Pungaliya et al., 2009; Simon and Sternberg, 2002; Srinivasan et al., 2012; Srinivasan et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results and contrasts with previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "4b93a38d-56de-4f91-8548-2ded35415efb",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C55",
+      "claim": "The attraction that 'naive' worms exhibit may be due to the positive association with food that they learn to make during growth on the plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is possible that the attraction that 'naive' worms exhibit is due to the positive association with food that they learn to make during growth on the plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "da8e8298-d5a9-4949-aac9-686877dba314",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C56",
+      "claim": "The social behavior of the canonical lab strain N2 has changed due to laboratory domestication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it remains to be tested if the same responses occur in the canonical lab strain N2, whose social behavior has changed due to laboratory domestication (Sterken et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Sterken et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "9448294f-7acc-4795-bc9a-c83bf24695fa",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C57",
+      "claim": "The MY1 strain was used to assess behavioral patterns that could be as close as possible to those exhibited by C. elegans in its natural habitat.",
+      "claim_type": "EXPLICIT",
+      "source": "We used young adult hermaphrodites of the natural isolate MY1 (Lingen, Germany) to assess behavioral patterns that could be as close as possible to those exhibited by C. elegans in its natural habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim explains the rationale for strain selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "a0466f4b-b89a-4da4-8264-c293576d8d95",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C58",
+      "claim": "The pheromone blend is obtained by collecting and filtering the supernatant of well-fed worms maintained in a liquid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, the pheromone blend is obtained by collecting and filtering the supernatant of well-fed worms maintained in a liquid culture (Choe et al., 2012; Harvey, 2009; White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methodology and is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "58969f7d-99a2-445d-ba3d-a616c5a84b30",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C59",
+      "claim": "Foraging for food is among the most critical activities for an animal's survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Foraging for food is among the most critical activities for an animal's survival (Calhoun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Calhoun et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "8563a70c-c2a8-416a-9f5f-e120c53c7b1f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C60",
+      "claim": "Food is usually patchily distributed in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also among the most challenging, because food is usually patchily distributed in space and time, and other individuals are attempting to find and consume the same resources (Abu Baker and Brown, 2014; Driessen and Bernstein, 1999; Stephens and Krebs, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "e5d0e0bf-dd4f-45b0-b388-8a6a272ade92",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C61",
+      "claim": "Foragers are predicted to depart from a food patch when the instantaneous intake rate drops below the average intake rate expected from the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, foragers are predicted to depart from a food patch when the instantaneous intake rate drops below the average intake rate expected from the environment, a phenomenon that has been observed in several animals, from insects (Wajnberg et al., 2008) to birds (Cowie, 1977; Krebs et al., 1974) and large mammals (Searle et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research across multiple taxa.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "c676601e-9e03-4cf6-a9e5-3fb13de08a83",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C62",
+      "claim": "The presence of other animals affects individual foraging success so that different leaving times can be expected.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of other animals, however, affects individual foraging success so that different leaving times can be expected (Aubert-Kato et al., 2015; Couzin et al., 2005; Giraldeau and Caraco, 2000; Karpas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "1d257610-439d-4556-8d61-7b753b82c42f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C63",
+      "claim": "Animals use pheromones and other odors to orientate their searches for food.",
+      "claim_type": "EXPLICIT",
+      "source": "Since natural habitats are usually saturated with many different non-specific chemical cues, animals use pheromones and other odors to orientate their searches (Wyatt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Wyatt, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "643d1d62-eff9-43ba-a67e-fd45892a068e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C64",
+      "claim": "In the context of social foraging, individuals might need to rely only on the most recent experience.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of social foraging, it has been shown that individuals might need to rely only on the most recent experience (Krebs and Inman, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published research (Krebs and Inman, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "d5abd439-cbe2-4954-8a74-69fcf4dbf28f",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C65",
+      "claim": "The valence of pheromones acquired during the most recent feeding activity is crucial for the success of the foraging process.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the valence (positive or negative signal) of pheromones acquired during the most recent feeding activity is crucial for the success of the foraging process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the discussion of social foraging and recent experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "97c0cdd3-01d3-49d3-96e7-a4e7166fdb29",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C66",
+      "claim": "Ascaroside pheromones are likely contributing to foraging optimization in C. elegans.",
+      "claim_type": "IMPLICIT",
+      "source": "We found that C. elegans can change its preference for both ascarosides (Figure 3\u2014figure supplement 1), suggesting that ascaroside pheromones are likely contributing to the response to the pheromone blend found previously. However, these experiments were performed at high worm density, meaning that accumulation of secreted pheromones during the conditioning period prevents a definitive quantification of the relative importance of associative learning versus feeding status (as in Figure 3 inset with the pheromone blend). Nonetheless, these results show that C. elegans can alter its preference for ascarosides, highlighting the flexible role of pheromones in foraging optimization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results with pure ascarosides.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "d92dd4b7-2570-4c7f-97fe-50b1d6835400",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C67",
+      "claim": "The pheromone blend contains ascaroside pheromones, other products of worm metabolism, compounds deriving from the decomposition of dead worms and bacteria, and perhaps other unknown substances.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to a cocktail of ascaroside pheromones, the pheromone blend contains other products of worm metabolism, compounds deriving from the decomposition of dead worms and bacteria, and perhaps other unknown substances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the composition of the pheromone blend used in experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "46438b10-207e-4ae9-a856-3c95ab4b1a1d",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C68",
+      "claim": "Worms could learn and change preference for any of the compounds in the pheromone blend and thus forage efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Worms could in principle learn and change preference for any of these compounds and thus forage efficiently as indicated by our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the model predictions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "16e89369-9237-488b-9da6-3ad1f04717ed",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C69",
+      "claim": "Sodium azide is used to anesthetize C. elegans in the behavioral assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pheromone and control spots, 2 \u03bcl of 0.5 M sodium azide was added in order to anesthetize the animals once they reached the spots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "acae0741-4c1a-4c5c-b241-127326625713",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C70",
+      "claim": "The anesthetic action of sodium azide lasts for about 2 hr in the choice after food assay setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the anesthetic action of sodium azide lasts for about 2 hr in this set-up, another 1 \u03bcl was added two hours after the beginning of the assay in both spots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes an observation about the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "11bd1f85-30cb-417c-a72f-3e31308c1ec0",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C71",
+      "claim": "The MY1 strain was obtained from the Caenorhabditis Genetic Centre (CGC).",
+      "claim_type": "EXPLICIT",
+      "source": "The strain has been obtained from the Caenorhabditis Genetic Centre (CGC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the source of the experimental strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f209cdcc-5988-49b0-ae2a-731e2b9478f9",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C72",
+      "claim": "A new pheromone blend was produced every 3 months for the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A new pheromone blend was produced every 3 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "b3c4ade8-9f0a-4d85-80c5-e26493483b23",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C73",
+      "claim": "The control solvent for the pheromone blend is S-medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The control solvent for the pheromone blend is S-medium, while the control solvent for the pure ascarosides is an aqueous solution with the same amount of ethanol present in the ascaroside aqueous solution (Srinivasan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "855bb34c-7946-4144-ac4b-b5b62e767d78",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "claim_id": "C74",
+      "claim": "The control solvent for pure ascarosides is an aqueous solution with the same amount of ethanol present in the ascaroside aqueous solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The control solvent for the pheromone blend is S-medium, while the control solvent for the pure ascarosides is an aqueous solution with the same amount of ethanol present in the ascaroside aqueous solution (Srinivasan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methodology and is supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b27190a9-a690-4001-aff7-ae02dedced8e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans worms leave food patches at different times, with early-leaving worms (first three hours) attracted to pheromones and late-leaving worms avoiding them, demonstrating an inversion in pheromone preference dependent on leaving time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are supported by experimental data from the choice after food assay (Figure 1C-D). The chemotaxis index shows clear positive values for early leavers and negative values for late leavers, with appropriate controls and replication (n=2 experiments). The temporal dynamics are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Conditioning experiments demonstrate that C. elegans exhibit attraction to pheromones when paired with food (CI++ = 0.38 \u00b1 0.07) and aversion when paired with food absence (CI-+ = -0.15 \u00b1 0.04), with no preference when pheromones are absent during conditioning, consistent with associative learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are supported by systematic conditioning experiments (Figure 3B) with appropriate controls testing all four combinations of \u00b1food and \u00b1pheromone. The statistical differences between conditions are clear, and the pattern is consistent with associative learning. However, the low-density conditioning controls show some variability that the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Repellent conditioning experiments show that pairing pheromones with glycerol (a repellent) in the presence of food disrupts attraction (CI++ = 0.04 \u00b1 0.03 vs CI-+ = 0.26 \u00b1 0.04), providing additional evidence for associative learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by the repellent conditioning experiments (Figure 4B) with n=5 replicates. The experimental design appropriately controls for feeding status by maintaining food throughout, isolating the effect of associative learning with the repellent. The results are statistically clear and support the associative learning hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A Game Theory model predicts that the evolutionarily stable strategy involves a fraction of worms switching between occupied patches (following pheromones) when patches are unequally populated, with the equilibrium fraction depending on switching cost and initial imbalance, followed by dispersal (avoiding pheromones) when patches are depleted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 present a coherent theoretical model with mathematical derivations (Equations 1-3) and graphical results (Figure 2B-C). The model logic is sound and appropriately uses Game Theory to derive evolutionarily stable strategies. However, the model makes simplifying assumptions (C16) that may not fully reflect natural conditions, as the authors acknowledge in the discussion regarding recent contradictory findings (Ding et al., 2020).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "47514d53-eafa-4c95-8fa5-63a7293acaf4",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The inversion in pheromone preference is an adaptive solution to optimize food intake during foraging, requiring three factors: diminishing returns from food patches, competition for resources, and environmental non-stationarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C35-C37 integrate the experimental and theoretical results. The model demonstrates optimality under specific conditions (C37), and the experimental data support the behavioral mechanism (C35). However, the claim of adaptiveness is based on theoretical optimality rather than direct fitness measurements, and the model's assumptions may not fully capture natural foraging conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "01381a96-e6f2-44c4-ad8d-bceba415730d",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "C. elegans can change its preference for individual ascarosides (ascr#5 and icas#9), suggesting these pheromones contribute to the response to the pheromone blend and play a flexible role in foraging optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C29 and C66 are supported by data in Figure 3\u2014figure supplement 1, but the authors explicitly acknowledge that high worm density during conditioning prevents definitive quantification of associative learning versus feeding status effects. The experiments show preference changes but cannot isolate the mechanism, making the contribution of specific ascarosides to associative learning uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f020952c-cb2d-4e35-80cf-467974b3de3d",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The evolutionarily stable strategy found by the model provides no benefit at the species level and may be deleterious, emerging from intraspecific competition where individuals pay switching costs to avoid being outcompeted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by mathematical analysis showing that population-level payoff H_all = 2A_E/N - pc decreases with switching probability when costly. This is a valid theoretical insight about individual versus group selection, though it remains a model prediction without empirical validation of population-level fitness effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "850f720e-b3b2-4441-95a9-4cf0bbf8145c",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "C. elegans preference for pheromones might not be innate as previously stated, with the attraction exhibited by 'naive' worms potentially due to positive associations learned during growth on plates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55 challenge previous literature but are speculative (C55 uses 'it is possible'). While the conditioning experiments show learned preferences can be established, the claim that baseline attraction is learned rather than innate requires testing truly naive worms that have never been exposed to pheromones with food, which was not done. The authors acknowledge this limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2acd34cf-1b4b-4ad6-a582-49ba767d3a19",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Dispersal of feeding-stage C. elegans from occupied patches is regulated by recent experience of food availability and pheromones, with non-dauer stages playing an important role in exploiting transient bacterial patches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C48 summarize the main experimental findings. C44 is directly supported by the choice after food assay and conditioning experiments. C48 is a reasonable inference connecting short-term dispersal mechanisms to ecological function, though direct evidence for the ecological importance of non-dauer dispersal is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "eba537d1-87cc-49e5-a0a2-306e06729a55",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "C. elegans feeds in groups on ephemeral bacterial patches in decomposing plant material, uses ascaroside pheromones to evaluate population density, and increases patch-leaving rates when food is scarce and pheromones are concentrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C11 establish the ecological and behavioral context, all supported by appropriate citations to published research. These are well-established facts in the field that provide the foundation for the current study. The claims accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "63da0a2e-f736-47ce-a1f9-93996063b17c",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "C. elegans preference for environmental stimuli can change through associative learning, similar to bumblebees learning to avoid marked flowers, suggesting this strategy might be common in group-feeding animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by appropriate citations. C43 is speculative ('might be frequently observed') but represents a reasonable hypothesis based on the parallel between C. elegans and bumblebees. The generalization is appropriately cautious and acknowledges uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "444d160c-b1ff-48b0-951d-f43e410b6444",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Food-pheromone interactions regulate C. elegans dispersal over longer timescales through the boom-and-bust life cycle, with scarce food and high pheromones promoting dauer entry and abundant food resuming development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by citations to published research (Edison, 2009; Fr\u00e9zal and F\u00e9lix, 2015). These establish the broader ecological context and parallel mechanisms at different timescales, though they represent prior work rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "53bb9210-a481-46bc-aef7-6cfc20ddcefc",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The MY1 natural isolate strain from Lingen, Germany was used to assess behavioral patterns close to those in natural habitats, obtained from the Caenorhabditis Genetic Centre.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C71 describe methodological choices that are appropriate and well-justified. Using a natural isolate rather than the domesticated N2 strain is a strength of the study, as the authors discuss (C56). The rationale is sound and the strain source is properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "a351b754-9637-4c68-a4b5-3b60084633c3",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Foraging is critical for survival but challenging due to patchy food distribution and competition. Foragers depart patches when intake rates drop below environmental averages, use pheromones to orient searches, and may rely on recent experience in social foraging contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 establish the theoretical background from foraging theory and behavioral ecology, all supported by appropriate citations. These represent well-established principles that motivate the current study. The claims accurately represent the state of knowledge in optimal foraging theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ascr#5 and icas#9 are potent signaling cues in C. elegans exudates, the list of signaling compounds is expanding, and pheromone blend composition varies among developmental stages, sexes, and strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by appropriate citations to published research. These establish the complexity of the pheromone system and acknowledge limitations in understanding which specific compounds mediate the observed behaviors. The claims accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "7d9007a0-a5c9-436a-aeef-5ddb25fe8fde",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The pheromone blend contains ascarosides, other worm metabolites, decomposition products, and possibly unknown substances, and worms could potentially learn to change preference for any of these compounds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 accurately describes the complexity of the pheromone blend preparation. C68 is appropriately speculative ('could in principle') and acknowledges that multiple compounds might contribute to the learned response. The claims appropriately convey uncertainty about which specific compounds mediate the behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "65ac6deb-b33e-49ac-9009-d2a95d624ca0",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The social behavior of the canonical lab strain N2 has changed due to laboratory domestication, requiring future testing of whether the same responses occur in N2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by citation (Sterken et al., 2015) and appropriately identifies a limitation of the current study. The authors correctly note that their findings in MY1 may not generalize to N2, which is an important caveat for the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    },
+    {
+      "id": "f53fbbb8-de81-406a-9e11-08c3215a0b49",
+      "content_id": "11c184cc-01ae-4247-98a9-6b7c80b5fb3a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details include pheromone blend preparation from liquid culture supernatants, use of sodium azide for anesthetization (lasting ~2 hours), production of fresh pheromone blend every 3 months, and appropriate control solvents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C69-C70, C72-C74 describe experimental methods that are standard in the field and appropriately documented. The methods are sufficiently detailed for replication, with proper citations to established protocols. The observation about sodium azide duration (C70) is a useful practical detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:41:25.169657Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f7827db1-c01d-49f0-b810-6275a20c944d",
+      "result_id": "b27190a9-a690-4001-aff7-ae02dedced8e"
+    },
+    {
+      "claim_id": "f1ca6af9-edd9-4672-be6e-48c73b8bf54d",
+      "result_id": "b27190a9-a690-4001-aff7-ae02dedced8e"
+    },
+    {
+      "claim_id": "32152f91-aa5a-47d8-95e5-a426a91492e5",
+      "result_id": "b27190a9-a690-4001-aff7-ae02dedced8e"
+    },
+    {
+      "claim_id": "6c5ef678-6875-4d45-bd65-a63c8cba835f",
+      "result_id": "b27190a9-a690-4001-aff7-ae02dedced8e"
+    },
+    {
+      "claim_id": "f21ad2c7-9cf9-4bb3-9a2e-4bfd720ce97e",
+      "result_id": "b27190a9-a690-4001-aff7-ae02dedced8e"
+    },
+    {
+      "claim_id": "c2092cd0-c28a-4912-bf22-f7c34afebbf7",
+      "result_id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6"
+    },
+    {
+      "claim_id": "11d085b0-dd59-4ada-a9ea-8b43931ecbd9",
+      "result_id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6"
+    },
+    {
+      "claim_id": "228a0555-3540-4915-9e99-750679984ccb",
+      "result_id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6"
+    },
+    {
+      "claim_id": "3261e9e3-8ec0-42a3-8d40-764efc7eadf8",
+      "result_id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6"
+    },
+    {
+      "claim_id": "48ba935d-85b2-4beb-9ff5-9aaf4f71f828",
+      "result_id": "455c4eec-0829-4718-b0e2-7b85dc7ea6e6"
+    },
+    {
+      "claim_id": "89ed9145-fd57-43e9-bd78-f119c498ecee",
+      "result_id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e"
+    },
+    {
+      "claim_id": "44e90738-35b4-4d2c-80f8-8651dd42b3e0",
+      "result_id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e"
+    },
+    {
+      "claim_id": "46394b14-1b7b-47bf-92be-f41cae25e33e",
+      "result_id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e"
+    },
+    {
+      "claim_id": "5866aec2-a6f6-4def-895b-32305e186c7a",
+      "result_id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e"
+    },
+    {
+      "claim_id": "ffd8d8bd-bded-4ea9-b642-4893e6fe6667",
+      "result_id": "426da21d-5f0a-4082-9bac-9b8ad1a1466e"
+    },
+    {
+      "claim_id": "d0fcdb96-892b-4889-b945-5c14e0ad70da",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "c386c448-e1c6-4e48-8146-23b2ac2ecee3",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "59ecc0d8-21c7-4cd0-a76b-49f8165895fc",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "f5993145-61ee-4433-a22c-3a8d0642f773",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "f852c481-99af-44a4-bf07-3134365eab3f",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "2906c973-7274-4c8b-9353-6653cc90c09e",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "73fd6ebb-2e59-4bb4-8176-d5a0fad4cb1b",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "c9adcea9-4e6e-4fbb-a06e-941aa95f9848",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "8e528d0a-3632-4356-bbea-e6cfd33e7a65",
+      "result_id": "0576a4c0-17d6-43ef-b725-b399c7aad7a9"
+    },
+    {
+      "claim_id": "9dd40d3f-2553-4964-a938-ea30afbd9c1b",
+      "result_id": "47514d53-eafa-4c95-8fa5-63a7293acaf4"
+    },
+    {
+      "claim_id": "f6bc6889-641c-4c1a-b06b-1e22c64ba5ad",
+      "result_id": "47514d53-eafa-4c95-8fa5-63a7293acaf4"
+    },
+    {
+      "claim_id": "e7ec373f-d984-4db5-9c3e-f4e9b939d115",
+      "result_id": "47514d53-eafa-4c95-8fa5-63a7293acaf4"
+    },
+    {
+      "claim_id": "b9e62a61-6058-4e69-ac11-6e57cc207dc6",
+      "result_id": "47514d53-eafa-4c95-8fa5-63a7293acaf4"
+    },
+    {
+      "claim_id": "142fc0a1-a564-46c0-8988-662439bb50df",
+      "result_id": "01381a96-e6f2-44c4-ad8d-bceba415730d"
+    },
+    {
+      "claim_id": "ec7ef616-c870-4cf3-bc8d-50a7af77a25f",
+      "result_id": "01381a96-e6f2-44c4-ad8d-bceba415730d"
+    },
+    {
+      "claim_id": "97c0cdd3-01d3-49d3-96e7-a4e7166fdb29",
+      "result_id": "01381a96-e6f2-44c4-ad8d-bceba415730d"
+    },
+    {
+      "claim_id": "823243b1-0e1a-497d-b834-cfc3b4aa3051",
+      "result_id": "f020952c-cb2d-4e35-80cf-467974b3de3d"
+    },
+    {
+      "claim_id": "0f231f9a-a2bd-484b-a255-73cafd68752a",
+      "result_id": "f020952c-cb2d-4e35-80cf-467974b3de3d"
+    },
+    {
+      "claim_id": "022be0c3-f8d3-4f1d-8327-0828d6fcfd48",
+      "result_id": "850f720e-b3b2-4441-95a9-4cf0bbf8145c"
+    },
+    {
+      "claim_id": "4b93a38d-56de-4f91-8548-2ded35415efb",
+      "result_id": "850f720e-b3b2-4441-95a9-4cf0bbf8145c"
+    },
+    {
+      "claim_id": "2d2e7036-89a8-4c93-bdb1-0bccf4121aeb",
+      "result_id": "2acd34cf-1b4b-4ad6-a582-49ba767d3a19"
+    },
+    {
+      "claim_id": "e2c39597-5ee8-414b-be84-8ee2173d6eba",
+      "result_id": "2acd34cf-1b4b-4ad6-a582-49ba767d3a19"
+    },
+    {
+      "claim_id": "b36e3069-f6cf-43ee-826d-cc7f804c4c0c",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "be242cc7-40f5-402a-904c-8baace792370",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "e88c54c2-bc68-4975-ab08-fda3003874af",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "8e594dc0-f7ea-499d-9602-8d45daaecbdb",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "a49ddcff-7ec0-4e0e-bf25-6c62df1dd532",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "af75d26d-1096-4fd7-a8a0-a270acf17ac8",
+      "result_id": "eba537d1-87cc-49e5-a0a2-306e06729a55"
+    },
+    {
+      "claim_id": "af9d6894-4231-433b-89ba-f3ee298f9d07",
+      "result_id": "63da0a2e-f736-47ce-a1f9-93996063b17c"
+    },
+    {
+      "claim_id": "d3658fcd-f57e-410f-b6f3-8100425c93b1",
+      "result_id": "63da0a2e-f736-47ce-a1f9-93996063b17c"
+    },
+    {
+      "claim_id": "4c56b970-cf6b-43ea-889f-d8c1cc415f2b",
+      "result_id": "63da0a2e-f736-47ce-a1f9-93996063b17c"
+    },
+    {
+      "claim_id": "0b7d3792-6a2c-47c9-b1d2-f470fdbc477b",
+      "result_id": "63da0a2e-f736-47ce-a1f9-93996063b17c"
+    },
+    {
+      "claim_id": "48aec897-ccd5-41f5-a37c-dc18d21bdb8a",
+      "result_id": "444d160c-b1ff-48b0-951d-f43e410b6444"
+    },
+    {
+      "claim_id": "37659eb7-738f-4e6b-b6fd-40ac0274fda4",
+      "result_id": "444d160c-b1ff-48b0-951d-f43e410b6444"
+    },
+    {
+      "claim_id": "2ede913a-13f3-4d70-aaec-17682306de7b",
+      "result_id": "444d160c-b1ff-48b0-951d-f43e410b6444"
+    },
+    {
+      "claim_id": "9448294f-7acc-4795-bc9a-c83bf24695fa",
+      "result_id": "53bb9210-a481-46bc-aef7-6cfc20ddcefc"
+    },
+    {
+      "claim_id": "11bd1f85-30cb-417c-a72f-3e31308c1ec0",
+      "result_id": "53bb9210-a481-46bc-aef7-6cfc20ddcefc"
+    },
+    {
+      "claim_id": "58969f7d-99a2-445d-ba3d-a616c5a84b30",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "8563a70c-c2a8-416a-9f5f-e120c53c7b1f",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "e5d0e0bf-dd4f-45b0-b388-8a6a272ade92",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "c676601e-9e03-4cf6-a9e5-3fb13de08a83",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "1d257610-439d-4556-8d61-7b753b82c42f",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "643d1d62-eff9-43ba-a67e-fd45892a068e",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "d5abd439-cbe2-4954-8a74-69fcf4dbf28f",
+      "result_id": "a351b754-9637-4c68-a4b5-3b60084633c3"
+    },
+    {
+      "claim_id": "690d2052-a839-491d-86f6-a0c8d13a6c9f",
+      "result_id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47"
+    },
+    {
+      "claim_id": "2dcefcdd-8641-4930-b50e-55d7e82811b0",
+      "result_id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47"
+    },
+    {
+      "claim_id": "23e0f7c5-7e09-47a6-a3a5-4d8783077a99",
+      "result_id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47"
+    },
+    {
+      "claim_id": "ab8d6c44-5a83-4551-9e77-5ad33cc9d12b",
+      "result_id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47"
+    },
+    {
+      "claim_id": "337bc25d-f94e-4bb1-8ba5-aaab0934cf6c",
+      "result_id": "2253c9ef-bd0f-446b-a23a-fe8743bf0f47"
+    },
+    {
+      "claim_id": "d92dd4b7-2570-4c7f-97fe-50b1d6835400",
+      "result_id": "7d9007a0-a5c9-436a-aeef-5ddb25fe8fde"
+    },
+    {
+      "claim_id": "46438b10-207e-4ae9-a856-3c95ab4b1a1d",
+      "result_id": "7d9007a0-a5c9-436a-aeef-5ddb25fe8fde"
+    },
+    {
+      "claim_id": "da8e8298-d5a9-4949-aac9-686877dba314",
+      "result_id": "65ac6deb-b33e-49ac-9009-d2a95d624ca0"
+    },
+    {
+      "claim_id": "a0466f4b-b89a-4da4-8264-c293576d8d95",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    },
+    {
+      "claim_id": "16e89369-9237-488b-9da6-3ad1f04717ed",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    },
+    {
+      "claim_id": "acae0741-4c1a-4c5c-b241-127326625713",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    },
+    {
+      "claim_id": "f209cdcc-5988-49b0-ae2a-731e2b9478f9",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    },
+    {
+      "claim_id": "b3c4ade8-9f0a-4d85-80c5-e26493483b23",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    },
+    {
+      "claim_id": "855bb34c-7946-4144-ac4b-b5b62e767d78",
+      "result_id": "f53fbbb8-de81-406a-9e11-08c3215a0b49"
+    }
+  ],
+  "comparisons": []
+}

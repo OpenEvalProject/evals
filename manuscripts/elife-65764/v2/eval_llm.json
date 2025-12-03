@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mice successfully acquired Pavlovian conditioned licking behavior, showing significantly increased licking during CS+ trials (reward-predictive cue) compared to CS- trials (neutral cue) in late learning sessions. Statistical analysis confirmed a significant cue by session interaction (F1,47 = 165.1; p < 0.001), with post hoc tests showing mice licked significantly more during CS+ trials in late learning compared to both CS- trials and CS+ trials in early learning (p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 provide converging behavioral evidence with appropriate statistical analysis (two-way ANOVA with post hoc tests) demonstrating successful task acquisition. The behavioral data show clear discrimination between CS+ and CS- cues after learning, with visual evidence in figures and quantitative metrics (auROC scores). The statistical approach is appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Five distinct neuronal ensembles were identified in dmPFC using spectral clustering analysis of calcium imaging data from late learning sessions. Cluster 1 showed excitatory responses to CS+, CS-, and reward (n=192 neurons); Cluster 2 showed excitatory responses during CS+ trials (n=346); Cluster 3 showed excitatory responses during both CS+ and CS- trials (n=291); Cluster 4 showed excitatory responses during reward delivery (n=320); and Cluster 5 showed inhibitory responses during CS+ trials (n=362).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C23-C27 describe the identification of five neuronal ensembles with distinct activity patterns. The clustering was performed using spectral clustering (validated against other methods in C75), and the qualitative descriptions are supported by heat maps and activity traces in Figure 1. However, the clustering approach has acknowledged limitations (C76), and the qualitative nature of ensemble characterization could benefit from more quantitative validation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The proportion of neurons in Cluster 5 (inhibitory CS+ responders) positively predicts behavioral performance in cue discrimination (Pearson-R correlation, p = 0.012), while no significant correlation was found for Clusters 1-4 (p > 0.2). This suggests that mice with more Cluster 5 neurons show improved behavioral performance in the appetitive learning task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 report a specific correlation between Cluster 5 proportion and behavioral performance with appropriate statistical testing (Pearson correlation). The correlation is statistically significant and biologically plausible given prior findings about dmPFC\u2192PVT neurons. However, the correlation is modest and based on n=21 FOVs, and the interpretation (C30) appropriately uses cautious language ('may have improved').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The proportion of neurons in Cluster 3 (excitatory responders to both CS+ and CS-) positively predicts licking errors during CS- trials (Pearson-R correlation, p = 0.009), while no significant correlation was found for other clusters (p > 0.2). This suggests that mice with more Cluster 3 neurons are more likely to initiate reward seeking when rewards are not available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 report a specific correlation between Cluster 3 proportion and behavioral errors with appropriate statistical testing. The finding is logical given that Cluster 3 neurons respond equally to both cues, which could lead to inappropriate responding. The interpretation (C33) uses appropriate cautious language. Sample size is the same as for the Cluster 5 correlation (n=21 FOVs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "dmPFC population activity can decode CS+, CS-, cue discrimination, reward, and licking rate during late learning sessions, but only CS+, CS-, and cue discrimination during early learning sessions. Decoding accuracy significantly improved across learning for CS+ detection (p = 0.020), reward detection (p = 0.020), and lick rate prediction (p = 0.009), suggesting that coding of reward and licking variables is learning-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe decoding analyses with appropriate statistical comparisons (ANOVAs with post hoc tests) and shuffled controls. The differential decoding performance between early and late learning is well-documented in Figure 3A-B. The interpretation that reward and licking coding is learning-dependent (C41) is reasonable given the data, though alternative explanations (e.g., signal-to-noise improvements) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Different neuronal ensembles show specialized coding for specific task variables: Cluster 1 best predicts CS+ and CS- presentation; Cluster 2 uniquely discriminates between CS+ and CS-; Cluster 4 best predicts reward delivery; and Cluster 5 uniquely predicts conditioned licking. All clusters can decode CS+ presentation, while CS- is predicted by Clusters 1, 3, 4, and 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe ensemble-specific decoding with statistical validation (ANOVAs, p-values reported). The specialized coding patterns are supported by Figure 3C-D and are consistent with the distinct activity profiles of each cluster. The finding that Cluster 2 uniquely discriminates cues while Cluster 5 uniquely predicts licking suggests functional specialization, though the mechanisms underlying this specialization remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Longitudinal tracking revealed that Cluster 1 neurons show stable responses to CS+, CS-, and reward across learning, while Clusters 2-5 show minimal responses early in learning that evolve during conditioning. Statistical analysis confirmed significant response adaptations for CS+ trials in Clusters 2, 4, and 5, and for CS- trials in Clusters 3 and 4 (p < 0.02), while Cluster 1 showed no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe longitudinal tracking data with appropriate statistical analysis (two-way ANOVAs with post hoc tests). The differential evolution of ensemble responses is well-documented in Figure 4B-D. The finding that Cluster 1 is stable while other clusters evolve is consistent with the interpretation that Clusters 2-5 reflect learning-related changes. Sample size is adequate (n=5 mice, 9 FOVs, 416 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Despite response adaptations across learning, early learning responses predict late learning responses for all neurons combined and for individual clusters except Cluster 2 (Pearson correlations, p < 0.05). Shuffling tracking IDs abolished these correlations, confirming that the predictive relationships reflect individual neuron stability rather than general FOV-level correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe correlation analyses with appropriate controls (shuffled data). The finding that early responses predict late responses despite adaptation suggests that neurons maintain relative response properties across learning. The shuffling control (C54-C55) is critical for validating that correlations reflect true cell-to-cell relationships. The exception of Cluster 2 is interesting and suggests this ensemble may be most plastic during learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Both behavioral responses and neuronal activity showed within-session stability during early and late learning, with strong correlations between activity in trials 1-10 versus trials 41-50 (Pearson correlations, p < 0.001). This demonstrates trial-to-trial consistency in both behavior and neural coding within individual sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe within-session stability with appropriate correlation analyses. The data in Figure 5 show consistent behavioral and neuronal patterns across trials within sessions. This is an important control demonstrating that the observed neural patterns are stable within sessions, not just across days. Sample size is adequate (n=5 mice, 9 FOVs, 416 neurons).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "dmPFC neuronal ensembles display day-to-day stability after learning, with equivalent behavioral performance across two late learning sessions (t3 = 0.217, p = 0.835) and highly correlated neuronal responses for both CS+ (Pearson-R = 0.75, p < 0.001) and CS- trials (Pearson-R = 0.30, p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe post-learning stability with appropriate statistical tests (repeated t-test, Pearson correlations). The data demonstrate that ensemble activity patterns are maintained across days after learning is complete. However, the sample size is smaller (n=3 mice, 4 FOVs, 142 neurons) than other analyses, and the CS- correlation is notably weaker than CS+, which could reflect greater variability in CS- responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Neuronal ensembles differentially emerge across training and stabilize after learning in a manner that improves predictive validity of dmPFC activity for decoding behavioral conditioning variables. The ensemble dynamics stably predict reward availability and conditioned reward seeking after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are high-level summary claims supported by the collective evidence from longitudinal tracking (C47-C55), decoding improvements (C34-C41), and post-learning stability (C60-C63). The claims accurately synthesize the major findings, though they represent interpretations of the data rather than direct observations. The evidence strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Spectral clustering was selected for ensemble identification based on superior performance (average silhouette score = 0.38) compared to agglomerative (0.08) and K-means (0.24) clustering methods. The improved performance likely reflects spectral clustering's ability to separate dynamic and non-singular response features, though the authors acknowledge these methods are imperfect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe the methodological choice of clustering algorithm with quantitative comparison shown in Figure 1\u2014figure supplements 3-4. The silhouette scores provide objective metrics for comparing methods. The acknowledgment of limitations (C76) is appropriate given the inherent challenges in clustering heterogeneous neural data. This methodological validation strengthens confidence in the identified ensembles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Multiple lines of evidence suggest that identified adaptations in dmPFC activity dynamics are related to cue-reward associative learning rather than non-associative factors: (1) cluster-specific responses differ between CS+ and CS- trials; (2) decoding improved despite consistent reward consumption; and (3) prior work shows dmPFC responses are critical for associative learning but not licking alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 address an important alternative explanation (non-associative learning or general feeding effects). The evidence presented is logical and includes both current data (differential CS+/CS- responses, decoding improvements) and prior findings (C79). However, the argument could be strengthened with additional controls (e.g., unpaired cue-reward presentations). The interpretation is reasonable but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Cross-correlation analysis reveals minimal lag between neurons within the same cluster compared to neurons across different clusters, both during early and late learning sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes cross-correlation analysis shown in Figure 4\u2014figure supplement 2. This provides additional support for the clustering results by showing temporal coordination within ensembles. However, the authors acknowledge limitations due to calcium indicator dynamics and imaging speed, which prevent precise spike-to-spike comparisons. The analysis supports ensemble coherence on longer timescales (hundreds of milliseconds).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The observed day-to-day stability of ensemble activity suggests each ensemble may comprise unique cell types, with Cluster 5 predicted to include dmPFC\u2192PVT neurons based on similar inhibitory CS+ responses. However, given heterogeneity in projection-specific studies, it is unlikely that single projection pathways map to single ensembles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 are speculative interpretations about the cellular composition of ensembles. While the reasoning is logical and based on prior findings (C14-C15, C67-C68), these claims lack direct experimental validation in the current study. The authors appropriately acknowledge this uncertainty (C65: 'further investigation is required'; C66: 'unlikely'). Future experiments combining activity-based identification with anatomical tracing would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The observed conditioned licking responses could be influenced by water restriction and the sucrose/water ratio used as reward, as acknowledged by the authors with supporting citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 acknowledge potential confounds with appropriate citations. This is an important caveat, as water restriction and reward composition could affect motivation and behavioral responses. However, the authors provide justification for these methods (C88-C89) and present evidence that adaptations are learning-related rather than purely motivational (C77-C80). The acknowledgment of limitations is appropriate scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work establishes that dmPFC is dysregulated in reward-processing disorders and shows heterogeneous neuronal activity during reward-seeking tasks. Cell-type specific recording strategies have partially resolved this heterogeneity, but substantial response diversity remains unexplained even within genetically or projection-defined populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C15 summarize prior literature with appropriate citations. These claims provide context and motivation for the current study. The citations appear appropriate and the characterization of prior work is consistent with the field. These are background claims rather than novel findings from the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Prior studies have characterized dmPFC projection pathways, gene expression patterns, and coordinated activity during reward seeking, including findings that dmPFC\u2192PVT inhibition facilitates learning while activation prevents it, and that certain genes (NPAS4, Camk2\u03b1) and receptors show specific expression patterns in cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 cite prior literature to provide context for interpreting the current findings. The citations appear appropriate and are used to support discussion points about potential cellular composition of ensembles and comparison with prior electrophysiology studies. These are background claims that help interpret the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The data suggest that unique aspects of reward seeking may be controlled by distinct neuronal ensembles, based on the specialized coding patterns observed in different clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a high-level interpretation of the ensemble-specific decoding results (C42-C46). The interpretation is reasonable given the specialized coding patterns, though it is somewhat speculative as causal relationships were not tested. The claim appropriately uses cautious language ('may be controlled'). Functional manipulation experiments would be needed to definitively establish causal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study used male and female C57BL/6J mice with appropriate surgical procedures for GCaMP6s expression and GRIN lens implantation, behavioral training with mild water restriction, two-photon imaging with careful FOV separation, and blinded manual ROI tracing with independent confirmation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 describe methodological details that are standard and appropriate for this type of study. The methods include proper controls (blinded analysis, independent confirmation), appropriate justification for water restriction (C88-C89), and careful procedures to avoid imaging the same cells in multiple FOVs (C91). The methods are described in sufficient detail for replication and are consistent with best practices in the field.",
+    "result_type": "MINOR"
+  }
+]

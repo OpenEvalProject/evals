@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study enrolled 20 patients with type 2 diabetes mellitus and CAD (10 with acute coronary syndrome showing plaque rupture, 10 with chronic coronary syndrome without rupture). Patients with plaque rupture had significantly worse glycemic control (HbA1c: 7.4\u00b11.4 vs. 6.1\u00b10.5, p=0.026) but were otherwise similar in clinical characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 and C81-C83 describe the study population and baseline characteristics with clear statistical data (C31) and appropriate ethical approval (C83). The sample size calculation (C82) is documented, though the arbitrary rounding from 7 to 10 per group is acknowledged. The finding of worse glycemic control in the rupture group is statistically significant and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Ruptured lesions showed significantly lower fibrous cap thickness (minimal: 49\u00b110 vs. 97\u00b115 \u00b5m, p<0.001; mean: 94\u00b117 vs. 133\u00b112 \u00b5m, p=0.006), more extensive necrotic lipid core (lipid arc: 178\u00b139\u00b0 vs. 110\u00b18\u00b0, p=0.001; lipid volume index: 9876\u00b13088 vs. 3853\u00b11294, p=0.011), and higher incidence of thin-capped fibroatheromas (70% vs. 0%, p=0.003) compared to non-ruptured lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present well-established morphological differences between ruptured and non-ruptured plaques with appropriate statistical testing and significant p-values. These findings are consistent with prior literature on plaque vulnerability features and serve to validate the study cohort selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C37",
+      "C38",
+      "C104"
+    ],
+    "result": "Ruptured plaques demonstrated significantly higher stress concentrations than non-ruptured plaques, with peak cap stress of 174\u00b167 vs. 52\u00b142 kPa (p<0.001) and maximal plaque stress of 399\u00b1233 vs. 90\u00b195 kPa (p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C37-C38, and C104 consistently report highly significant differences in stress concentrations between ruptured and non-ruptured plaques using finite-element analysis. The statistical significance is strong (p<0.001 and p=0.001), and the findings are supported by visual evidence in Figure 1. However, the large standard deviations suggest substantial variability within groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C105",
+      "C106"
+    ],
+    "result": "Plaque ruptures occurred in immediate spatial proximity to sites of maximal stress concentration, with angular distances of 21.8\u00b130.3\u00b0 for peak cap stress and 20.7\u00b123.7\u00b0 for maximal plaque stress. Notably, 50% of ruptures occurred within 10\u00b0 of both peak cap stress and maximal plaque stress locations, and only 50% of ruptures were in the shoulder region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C39-C43, and C105-C106 demonstrate strong spatial correlation between computed stress maxima and observed rupture sites. The small angular distances and the finding that 50% of ruptures occurred within 10\u00b0 of stress maxima provide compelling evidence for the mechanistic link. The observation that only 50% of ruptures were in the shoulder region (C39) challenges conventional assumptions and strengthens the stress-based hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Stress concentrations excellently predicted plaque rupture with AUC of 0.940 for peak cap stress (optimal cut-off: 150.5 kPa, sensitivity 90%, specificity 80%) and AUC of 0.950 for maximal plaque stress (optimal cut-off: 169.5 kPa, sensitivity 90%, specificity 90%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C44-C47 present ROC analysis results showing excellent predictive performance of stress-based metrics. The AUC values of 0.940 and 0.950 indicate excellent discrimination, and optimal cut-offs are clearly defined with corresponding sensitivity and specificity values. However, the small sample size (n=20) may limit the generalizability of these exact cut-off values, as acknowledged by the authors in C80.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C68",
+      "C69"
+    ],
+    "result": "The finite-element analysis model demonstrated superior diagnostic efficiency compared to established vulnerability features: significantly better than minimal FCT (AUC 0.630), mean FCT (AUC 0.630), and macrophage infiltration, and numerically superior to lipid volume index (AUC 0.870).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C48-C53, and C68-C69 show that stress-based metrics outperformed traditional morphological parameters with statistical significance for FCT and macrophage infiltration (p<0.05). The comparison with lipid volume index showed numerical but not statistical superiority (p=0.409 and p=0.386), which is appropriately acknowledged. The DeLong test was used for ROC curve comparison, which is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C70"
+    ],
+    "result": "Combined OCT vulnerability scores (CLIMA score: AUC 0.870; Burgmaier score: AUC 0.900) showed very good to excellent diagnostic efficiency but remained numerically lower than the morpho-mechanic analysis. The finite-element analysis model showed comparable efficiency to these combined scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C70 compare the finite-element analysis to established combined scoring systems. While the combined scores showed good performance (AUC 0.870-0.900), the stress-based metrics were numerically superior (AUC 0.940-0.950). The claim of 'comparable efficiency' (C70) appears conservative given the numerical differences, though statistical significance testing between these ROC curves is not explicitly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The findings of higher stress concentrations in ruptured plaques and spatial coincidence between stress maxima and rupture sites confirm the causal link between plaque biomechanics and rupture. Stress concentration patterns depend on plaque morphology, and material failure occurs when stress exceeds the ultimate tensile strength of the vessel wall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 synthesize the experimental findings with mechanistic interpretation. C57 appropriately cites prior pathology-based studies (Loree et al., 1992; Cheng et al., 1993) for context. C58-C60 draw mechanistic conclusions from the spatial correlation data. While the causal language is strong, the spatial correlation data (angular distances ~20\u00b0, 50% within 10\u00b0) provide substantial support for the mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study's stress threshold for rupture (150.5-169.5 kPa) differs from the previously reported 300 kPa threshold. This difference may be explained by tissue shrinkage during fixation in pathology specimens (10-20% reduction), the exponential relationship between FCT and peak cap stress, and the use of linear elastic modeling appropriate for small displacements (<20-30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 address the discrepancy between the current findings and prior literature. The explanations provided are scientifically reasonable: tissue fixation effects (C62), exponential stress-thickness relationship (C63, citing Finet et al., 2004), and appropriate use of linear elasticity for small displacements (C64-C66). The average displacement of 10% (C78) supports the linear model assumption. C67 acknowledges the limitation of not including dynamic flow shear stress.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C79",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "This study is the first to develop an OCT-based finite-element model for patient-specific plaque biomechanics analysis and the first to employ a morpho-metric approach on in vivo intravascular imaging. Previous finite-element studies used pathology specimens (lacking clinical applicability) or single lesions analyzed qualitatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C79, and C100-C103 establish the novelty of the work. The authors appropriately cite prior pioneering studies (Loree et al., 1992; Cheng et al., 1993) while distinguishing their in vivo, patient-specific, quantitative approach from previous pathology-based or qualitative single-lesion studies. The novelty claims are reasonable given the cited literature, though the phrase 'to the best of our knowledge' appropriately acknowledges potential limitations in literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "The study has several acknowledged limitations: 2D reconstruction not accounting for longitudinal plaque structure or flow shear stress; potential segmentation imprecisions due to limited OCT penetration; inability to assess positive remodeling; use of linear elastic model; small sample size (n=20) potentially reducing reliability of exact AUC and cut-off values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 and C80 transparently acknowledge multiple methodological limitations. The 2D approach (C72-C73), OCT penetration limits (C74-C76), linear elasticity assumption (C77-C78), and small sample size (C80) are all appropriately recognized. The authors note that average displacement of 10% (C78) justifies the linear model, though some plaques may have larger displacements. These limitations are important for interpreting the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study employed standardized OCT acquisition (C7XR system, DragonFly catheter, 20 mm/s pullback) and systematic finite-element analysis methodology including manual segmentation, 3D extrusion (10 mm length), pressure loading (130 mmHg), fixed outer boundary, and von Mises stress calculation. Analysis was performed blinded to clinical presentation with 20% interobserver validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C99 comprehensively describe the methodology. The OCT acquisition parameters are standard (C84-C86). The frame selection strategy is reasonable: pre-rupture frame for ruptured plaques (C87) and minimal lumen area for stable plaques (C88). The finite-element modeling parameters are clearly specified (C89-C95), including the conventional 4 mm vessel diameter and 130 mmHg pressure. Blinding (C96) and interobserver validation (C97) strengthen methodological rigor. The approach to handling non-punctual ruptures (C99) is pragmatic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "OCT-based finite-element analysis effectively assesses plaque biomechanics, which in turn predicts plaque rupture in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 represents the main conclusion of the study. It is well-supported by the convergent evidence from multiple result groups: significantly higher stress in ruptured plaques (C22-C23), spatial correlation between stress maxima and rupture sites (C24, C40-C42), excellent predictive performance (C25, C44-C45), and superiority over traditional metrics (C26, C51-C53). However, the small sample size (C80) and acknowledged limitations (C72-C78) suggest this is a proof-of-concept requiring validation in larger cohorts.",
+    "result_type": "MAJOR"
+  }
+]

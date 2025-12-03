@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "RNRs are essential enzymes used by all free-living organisms and many viruses for DNA precursor biosynthesis. Despite high diversity in sequence and cofactor requirements, all RNRs share a conserved 10-stranded \u03b1/\u03b2 barrel structure and a three-step radical-based catalytic mechanism involving thiyl radical generation, nucleotide reduction, and active site re-reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 describe well-established biochemical and structural features of RNRs, all supported by multiple citations to peer-reviewed literature (Torrents et al., 2002; Lundin et al., 2015; Licht et al., 1996; Greene et al., 2020; and others). These are foundational background claims representing consensus knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Class I and II RNRs share more structural similarities with each other than with class III RNRs, including anti-parallel dimerization, loop 1 specificity sites, loop 2 coupling, and \u03b2-hairpin motifs, while class III RNRs have distinct parallel dimerization and structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 describe structural comparisons supported by citations (Larsson et al., 2004; Zimanyi et al., 2016; Logan et al., 1999; Kang et al., 2020) and visual evidence in Figure 1. The inference that classes I and II share more similarities (C29) logically follows from the detailed structural comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Previous evolutionary models proposed that class III RNRs are the most ancient based on oxygen sensitivity and cofactor complexity, while an alternative structure-based network model suggested class I evolved from class II, though this latter model used less rigorous phylogenetic methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 accurately summarize prior hypotheses from the literature with appropriate citations (Reichard, 1997; Riera et al., 1997; Lundin et al., 2015; Bryant and Moulton, 2004). These are background claims establishing the context for the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C48",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study overcame computational challenges to reconstruct the largest RNR phylogeny to date (6779 \u03b1 sequences) using structure-guided HMM alignment and maximum-likelihood inference with multiple evolutionary models and redundancy thresholds to test robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C48, C116-C119 describe the methodological approach with appropriate citations (Spence et al., 2021) and are supported by the data presented in Figure 2 and supplementary figures. The rigorous testing with multiple models (LG+R10, WAG+R10) and redundancy thresholds demonstrates methodological soundness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C120"
+    ],
+    "result": "The comprehensive phylogeny reveals three major monophyletic clades corresponding to classes I-III, with a novel ancestral clade (class \u00d8) positioned as ancestral to classes I and II. Class III is placed as the most ancestral when rooted at the midpoint, followed by the emergence of the LCA of classes \u00d8, I, and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C49-C53, and C120 present the core phylogenetic findings supported by Figure 2, high bootstrap values (Figure 2B), AU-test results, and reproducibility across multiple tree inferences. The identification of class \u00d8 and its placement are consistently supported across different analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Evo-velocity analysis using the ESM-1b protein language model independently validates the phylogenetic results, showing class III as diverged, classes I and II sharing sequence space, and class \u00d8 sequences occupying the ancestral interface between classes I and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C54-C62 describe the evo-velocity analysis with appropriate citations (Hie et al., 2022; Rives et al., 2021) and visual support in Figure 3. The congruence between alignment-independent evo-velocity and traditional phylogenetic methods strengthens confidence in the evolutionary model, though the multiple roots identified (C60-C61) suggest some complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C121",
+      "C122"
+    ],
+    "result": "The combined phylogenetic and evo-velocity analyses indicate that class III RNRs diverged early and evolved independently, while classes I and II diverged from an ancestor shared with class \u00d8 RNRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C121-C122 synthesize the main evolutionary conclusions from both analytical approaches. These are well-supported by the convergent evidence from phylogenetic reconstruction (Figure 2) and evo-velocity analysis (Figure 3), though they represent inferences from the data rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C123"
+    ],
+    "result": "Class \u00d8 RNRs are found exclusively in marine microbes including cyanophages and photosynthetic bacteria, with nearly half from cyanophages or uncultured phages. All completely sequenced operons contain a ferritin-like gene immediately downstream of the \u03b1 gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C123 describe the taxonomic distribution and genomic organization of class \u00d8, supported by Figure 4A, BLAST searches, and genomic analysis (Figure 4\u2014figure supplement 1). The data clearly show the marine/phototroph association and conserved operon structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C124"
+    ],
+    "result": "Class \u00d8 RNRs show poor sequence homology to class I (E-value > 0.05) but hundreds of significant hits to class II (E-value < 1E-10), indicating they are more class II-like by sequence despite association with ferritin-like genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C124 are directly supported by the all-vs-all pBLAST results shown in Figure 4B. The quantitative E-value data clearly demonstrate differential homology, supporting the conclusion that class \u00d8 is phylogenetically distinct but sequence-similar to class II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Class \u00d8 \u03b1 sequences are the shortest RNRs characterized (average 412 amino acids), lacking the ATP-cone motif and containing either CXXC (10/24) or CXC (14/24) C-terminal motifs, with CXXC-containing sequences being more ancestral within the clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 describe sequence features supported by length analysis, sequence comparisons with citations (Rose et al., 2019; Meisburger et al., 2017), and phylogenetic positioning within the class \u00d8 clade. The data on C-terminal motif distribution is quantitative and specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SAXS analysis of S-CBP4 \u03b1 subunit shows a monomer-dimer equilibrium in the absence of nucleotides, with the protein predominantly monomeric at low concentrations (\u22644 \u03bcM). GDP addition does not shift the equilibrium, but TTP strongly favors dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are directly supported by SAXS data in Figure 4\u2014figure supplement 2, showing concentration-dependent Rg values and TTP-induced dimerization. The experimental design with matched buffers and appropriate controls supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cryo-EM structure of S-CBP4 \u03b12 dimer at 3.46 \u00c5 resolution reveals the most minimal RNR architecture to date, containing shared features of classes I and II including loop 1 with bound TTP, \u03b2-hairpin, and stacked tyrosine dyad (Y420/Y421) adjacent to catalytic cysteine C185.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 describe the cryo-EM structure supported by Figure 4C-F, Table 1, and Figure 4\u2014figure supplements 3-4. The resolution (3.46 \u00c5, FSC=0.143), model refinement statistics (RMSD 1.44 \u00c5 from AlphaFold2), and clear density for key features provide strong structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The S-CBP4 structure shows a disulfide between active-site cysteines C30 and C196. The stacked YY dyad arrangement resembles class I RNRs (required for PCET), while the space between \u03b2J and finger-loop differs from the cobalamin-binding pocket in class II RNRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 compare structural features with appropriate citations (Greene et al., 2017; Larsson et al., 2010; Sintchak et al., 2002) and visual evidence in Figure 4F-G and Figure 4\u2014figure supplement 5. The observed disulfide and YY dyad positioning are clearly resolved in the cryo-EM density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Class \u00d8 ferritin-like proteins are significantly shorter than class I \u03b2 subunits (240 vs 346 amino acids) with poor sequence homology to known ferritins, but AlphaFold2 predicts they resemble class I \u03b2 subunits with a ferritin fold, metal-binding motifs, and a redox-inert residue (Phe/Leu) instead of the radical tyrosine. They have unusually short C-termini lacking the \u03b1-binding extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 are supported by sequence length analysis, BLAST searches against PFAM families, AlphaFold2 predictions (Figure 4\u2014figure supplement 6), and sequence alignments with appropriate citations (Ruskoski and Boal, 2021; Bollinger et al., 2008). The structural predictions are consistent with the sequence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Class \u00d8 ferritin-like proteins likely use a similar radical-generating mechanism as class I \u03b2 subunits but may interact differently with the \u03b1 subunit to enable PCET. Biochemical confirmation has been challenging due to protein instability in the absence of metals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are speculative inferences from structural data, explicitly acknowledged as uncertain pending biochemical validation. C105 reports experimental difficulties but doesn't provide the biochemical data needed to confirm the proposed mechanism. This represents an important hypothesis requiring future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C106",
+      "C126"
+    ],
+    "result": "The class \u00d8 \u03b1 structure defines the minimum set of features shared by class I and II RNRs (dimer orientation, loop 1 specificity site, \u03b2-hairpin), providing an explanation for the structural similarities between classes I and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C106, and C126 synthesize the structural findings to explain evolutionary relationships. This is well-supported by the cryo-EM structure (Figure 4C-E) and structural comparisons, though the evolutionary interpretation is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Prior phylogenetic work on RNRs was limited to small-scale studies (8-96 sequences) using less sophisticated methods (Clustal W, neighbor-joining with Poisson models, structure-based networks), lacking class \u00d8 sequences and many RNR subclasses, and differing significantly from modern ML approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C115 accurately review prior phylogenetic studies with appropriate citations (Jordan et al., 1997; Torrents et al., 2002; Lundin et al., 2010, 2015; Minh et al., 2020). This contextualizes the current study's methodological advances and larger dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The phylogeny suggests an alternative evolutionary model where a class II-like enzyme resembling class \u00d8 recruited a ferritin-like protein before diverging into classes I and II. The stacked YY dyad in the S-CBP4 structure supports ferritin usage for long-range radical transfer, though differences in C-termini and CXC motifs indicate key distinctions from classes I and II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C131 present an evolutionary model that is inferential and speculative (C128 explicitly marked as INFERENCE/SPECULATION). While the phylogenetic placement and structural features (YY dyad) are well-supported, the mechanistic interpretation requires biochemical validation. The model is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The proposed evolutionary model suggests the LCA of RNRs resembled class III, with increasing oxygen availability driving divergence into anaerobic class III and oxygen-tolerant classes \u00d8-II, implying parallel evolution of multiple oxygen adaptation strategies rather than sequential evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C134 present a speculative evolutionary model (marked as INFERENCE/SPECULATION) based on phylogenetic results and oxygen chemistry reasoning. While consistent with the phylogeny and biochemical properties, this represents a hypothesis about ancient evolutionary events that cannot be directly tested. The model is plausible but inherently uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Gloeobacter sequences (earliest diverging cyanobacterium, 'missing link' in photosynthesis evolution) are found near the root of class II, suggesting class II RNRs may have evolved before the Great Oxygenation Event. This timing would imply class I also emerged pre-GOE, consistent with recent evidence that oxygen availability was sufficient for O2-utilizing enzymes before the geochemically defined GOE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C141 connect phylogenetic placement (C135, supported by data) with evolutionary timing hypotheses (C137-C138, marked as SPECULATION). While C139 cites supporting evidence (Jab\u0142o\u0144ska and Tawfik, 2021), the timing of class II evolution relative to GOE remains speculative. The association with phototrophs (C141) is intriguing but doesn't definitively establish timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The evolutionary model supports the idea that adaptations to an oxygenated atmosphere appeared earlier than initially thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is marked as INFERENCE/SPECULATION and depends on the uncertain timing claims (C137-C138). While the phylogeny is robust, the temporal interpretation regarding when oxygen adaptations arose is speculative and would require additional evidence such as molecular clock analysis or geological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Future work is expected to provide insights into ancestral radical-generating mechanisms, evolution of allosteric and catalytic mechanisms through analysis of barrel insertions, and detailed evolutionary trajectories through ancestral sequence reconstruction, with the phylogeny guiding these studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145 are all marked as SPECULATION and represent reasonable proposals for future research directions based on the current phylogeny. These are appropriate forward-looking statements rather than current results, and are properly framed as expectations rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

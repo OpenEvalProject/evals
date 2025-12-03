@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C68"
+    ],
+    "result": "A GPU-accelerated implementation of 2DTM in cisTEM achieved 10.5x speedup over CPU implementation through optimizations including FP16 precision, CUDA streams, and kernel fusion, with near-linear scaling across multiple GPUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C27, C28 provide specific performance measurements (23x for C++, 8.5x for GPU, 10.5x with FP16) with controlled hardware comparisons. C29 demonstrates scalability with data in Figure 2d. The technical implementation details in C65, C68 are consistent with the measured improvements. However, the comparison methodology could be more rigorous - 'similar hardware' and 'scaled for generational differences' introduce uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "2DTM successfully identified 6558 50S ribosomal subunits in M. pneumoniae cells, with optimal detection using B-factor 85 \u00c5\u00b2, exposure-weighted frames, and multi-defocus search. 3D reconstruction from detected targets revealed 30S subunit density and tRNA binding sites not present in the template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe systematic optimization with quantitative results shown in Figure 3 supplements. C34-C37 demonstrate that reconstruction reveals features absent from template (30S, tRNAs, flexible stalks), validating detection specificity. The nominal 4.3 \u00c5 resolution (C34) is acknowledged as unrealistic due to template bias, with appropriate 20 \u00c5 filtering applied. The appearance of non-template features provides strong evidence against excessive template bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Cross-species template matching using B. subtilis 50S detected M. pneumoniae ribosomes with reduced sensitivity (2874 vs 6558 targets) but reconstructions revealed species-specific features including M. pneumoniae protein extensions and absence of B. subtilis-specific proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C83, C84 document reduced detection with heterologous template (Figure 4b,c). C39, C40, C86 demonstrate species-specific features in reconstruction, with C41, C87 concluding minimal template bias at high SNR thresholds. The FSC analysis (Figure 4 supplement 1d) supports interpretable resolution. This is strong evidence for generalizability, though the ~56% reduction in detection (C38) indicates significant sensitivity loss with template mismatch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C67",
+      "C100"
+    ],
+    "result": "Direct comparison of 2DTM and 3DTM on identical sample locations showed 2DTM detected ~90% of 2DTM targets matched 3DTM targets, while 2DTM detected ~60% of 3DTM targets overall, with sensitivity negatively correlated with sample thickness and reaching ~90% in optimal 100nm samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 provide detailed quantitative comparison with clear methodology (Figure 5). C49 shows asymmetric matching (90% of 2DTM vs 60% of 3DTM), with C51, C56 demonstrating thickness dependence. C67, C100 appropriately conclude 'comparable sensitivity' with caveats. The experimental design (C43) with pre-exposure is well-controlled (C44-C46). However, the 3DTM serves as imperfect ground truth given its own false positive rate, creating circular validation issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C82"
+    ],
+    "result": "SNR threshold validation using Gaussian noise model and Neyman-Pearson criterion showed predicted false positive rates matched experimental observations at SNR >7.6, though deviations below SNR 7.2 suggest model limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe threshold calculation and validation with Figure 5f,g showing agreement between predicted and observed false positives. C55 notes excess unmatched 2DTM targets (76 vs 19 expected) attributed to 3DTM false negatives. C82 acknowledges model breakdown at low SNR. The validation is reasonably strong but relies on 3DTM as ground truth, which has its own error rate. The Gaussian noise assumption may not fully capture structural noise from overlapping molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "2DTM detected ~60% of 3DTM targets classified as true positives (50S/70S) but <5% of 3DTM false positives, demonstrating ability to discriminate true targets without requiring subtomogram classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 show 2DTM effectively filters 3DTM false positives (Figure 6a). This is strong evidence for 2DTM precision, though the comparison depends on RELION classification accuracy. The complementary nature is well-demonstrated, but the claim that 2DTM eliminates need for classification (C59, C101) may be overstated since 2DTM itself requires careful threshold selection and has thickness-dependent sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C80",
+      "C81"
+    ],
+    "result": "Local 30S detection using 2DTM identified 30S subunits at only ~45% of 50S locations versus ~70% expected from 3DTM classification, likely due to conformational heterogeneity of the 30S subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C80 document low 30S detection rate with C81 providing reasonable explanation based on 30S dynamics. The evidence in Figure 3d (30S density in reconstruction) and Figure 6 supplement 1 (no bias toward isolated 50S) supports the conformational heterogeneity explanation. However, this represents a significant limitation of 2DTM that deserves more investigation - the 700 kDa 30S should be detectable based on prior work (C80), suggesting either template quality or algorithmic issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparison of 2DTM and 3DTM coordinates showed high agreement in orientation (95% within 20\u00b0, median 7\u00b0) and in-plane position (median 12 \u00c5), but larger out-of-plane error (median \u00b159 \u00c5 after refinement) due to coarse defocus sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide quantitative coordinate comparison (Figure 6c-e). The angular and in-plane agreement is excellent, validating 2DTM accuracy. The larger z-error (C63) is expected given 200 \u00c5 defocus steps and is reduced by refinement. C62 appropriately attributes in-plane differences to beam-induced motion. The fivefold difference in z vs xy accuracy is consistent with the physics of defocus determination from 2D images.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C90",
+      "C91"
+    ],
+    "result": "2DTM successfully detected overlapping 50S ribosomes in projection, validated by comparison with 3DTM results, demonstrating ability to resolve targets at different z-positions without sample tilting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C91 demonstrate overlapping particle detection with visual evidence (Figure 6f-i). C90 explains the mechanism (different x,y, views, defocus). This is well-supported and addresses a key advantage of 2DTM over simple 2D approaches. However, the extent of overlap that can be resolved is not quantified, and performance likely degrades with increasing overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C11",
+      "C14",
+      "C15",
+      "C21"
+    ],
+    "result": "Current limitations of cryo-ET include computational demands of tilt series alignment, ~20 \u00c5 resolution limit in tomograms, high false positive rate in 3DTM requiring manual curation, and difficulty detecting rare complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, C14, C15 describe established limitations of cryo-ET and 3DTM with appropriate citations. C4, C21 note computational cost of 2DTM. These are well-established facts in the field supported by citations and provide context for the work. The characterization is accurate based on current literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "2DTM addresses 3DTM limitations by utilizing high-resolution signal from single-tilt images, achieving high precision and in-plane accuracy, but with trade-offs of increased structural noise and poor z-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C18 describe 2DTM advantages with citations to prior work. C19-C20 acknowledge limitations. This accurately summarizes the 2DTM approach from prior publications (Rickgauer et al. 2017, 2020). The current work validates these properties experimentally (see other results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C26"
+    ],
+    "result": "GPU performance optimization exploited FP16 format to double memory bandwidth and addressed FFT bottleneck (85% of computation), with cascading summation preventing precision loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 explain technical optimizations with C26 quantifying FFT bottleneck. The FP16 approach is well-justified and the cascading summation (described in Results) addresses precision concerns. This is solid computational methods work, though independent verification of numerical accuracy would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Template matching in cryo-EM can cause template bias in reconstructions, requiring validation through observation of non-template features. The B-factor of 85 \u00c5\u00b2 used here matches prior in situ reconstructions, though observed SNR values were lower than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe established template bias issues with appropriate citations. C74 validates B-factor choice against prior work. C75 notes lower SNR than expected, attributed to template generation methods and coordinate errors. This is honest reporting of limitations and appropriate contextualization within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "2DTM employs matched filtering, which is statistically optimal but limited by template molecular mass and biased toward template-like conformations, meaning detected targets represent a subset of in vivo states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide theoretical framework for 2DTM with appropriate citation (C76) and logical inferences about detection limits (C77) and bias (C78-C79). This is accurate characterization of the method's fundamental limitations. The conformational bias is demonstrated experimentally by low 30S detection (C80-C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "3DTM shows less sensitivity to sample thickness due to reliance on low-resolution signal, while 2DTM achieves higher precision through high-resolution information but with reduced sensitivity in thick samples and poor z-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 compare 2DTM and 3DTM trade-offs with data support (Figure 5 supplement 2). C93-C94 explain 3DTM robustness, C95-C97 explain 2DTM advantages and limitations. This is well-reasoned analysis supported by experimental data, though the mechanistic explanations (C93) are somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "A combined 2DTM-3DTM approach could leverage complementary strengths (2DTM precision, 3DTM sensitivity and 3D context) for improved visual proteomics, potentially extending to rare molecules in thick samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C99, C102 propose combined approach as future direction. While the complementary nature is demonstrated (C7, C57-C59), the specific benefits of the combined workflow are speculative. The proposal is reasonable given the demonstrated complementarity, but lacks experimental validation. This is appropriate as a discussion point but should not be considered a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "2DTM enables in situ 3D reconstruction from 2D images without tilt series, potentially delivering high-resolution structures faster than subtomogram averaging, and can study rare complexes if detectable in 2D images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C103 are demonstrated by Figures 3-4 reconstructions. C104-C106 propose applications with appropriate caveats ('potential', 'may', 'provided'). The reconstruction capability is proven, though the 'high resolution' claim (C104) is aspirational - current results show 20 \u00c5 interpretable features. The speed advantage (C105) is logical given data collection differences but not quantified. These are reasonable conclusions with appropriate hedging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The core 2DTM algorithm remains unchanged from original description, with CPU implementation still requiring ~7100 CPU-hours for typical K3 images with 13 defocus planes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe implementation details. C24 confirms algorithm fidelity, C25 quantifies computational cost motivating GPU acceleration. These are straightforward factual statements about the implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C66",
+      "C101"
+    ],
+    "result": "2DTM is a versatile tool for in situ visual proteomics and structure determination, offering complementary information to 3DTM and eliminating need for manual curation through significance thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C66 summarize main findings appropriately. C101 claims elimination of manual curation, which is supported by SNR threshold validation (C52-C54) but may be overstated given thickness-dependent sensitivity and need for careful parameter optimization. The 'versatile tool' characterization is justified by the demonstrated capabilities, though limitations (thickness sensitivity, conformational bias) should be emphasized.",
+    "result_type": "MAJOR"
+  }
+]

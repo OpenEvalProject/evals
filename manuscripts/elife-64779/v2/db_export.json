@@ -1,0 +1,1360 @@
+{
+  "submission": {
+    "id": "06dcb15e-2e3c-4bbf-b647-e9c6d754d3fb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:02:30.807603Z",
+    "updated_at": "2025-12-03T02:02:30.807603Z"
+  },
+  "content": [
+    {
+      "id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "submission_id": "06dcb15e-2e3c-4bbf-b647-e9c6d754d3fb",
+      "content_type": "manuscript",
+      "content_text": "# Non-genetic inheritance restraint of cell-to-cell variation\n\n## Authors\n\n- Harsh Vashistha<sup>1</sup> ([ORCID: 0000-0002-9411-5137](https://orcid.org/0000-0002-9411-5137))\n- Maryam Kohram<sup>1</sup>\n- Hanna Salman<sup>1</sup> ([ORCID: 0000-0002-5847-524X](https://orcid.org/0000-0002-5847-524X)) \u2020\n\n### Affiliations\n\n1. Department of Physics and Astronomy, The Dietrich School of Arts and Sciences, University of Pittsburgh Pittsburgh United States\n2. Department of Computational and Systems Biology, School of Medicine, University of Pittsburgh Pittsburgh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeterogeneity in physical and functional characteristics of cells (e.g. size, cycle time, growth rate, protein concentration) proliferates within an isogenic population due to stochasticity in intracellular biochemical processes and in the distribution of resources during divisions. Conversely, it is limited in part by the inheritance of cellular components between consecutive generations. Here we introduce a new experimental method for measuring proliferation of heterogeneity in bacterial cell characteristics, based on measuring how two sister cells become different from each other over time. Our measurements provide the inheritance dynamics of different cellular properties, and the \u2018inertia\u2019 of cells to maintain these properties along time. We find that inheritance dynamics are property specific and can exhibit long-term memory (\u223c10 generations) that works to restrain variation among cells. Our results can reveal mechanisms of non-genetic inheritance in bacteria and help understand how cells control their properties and heterogeneity within isogenic cell populations.\n\n## Introduction\n\nOne of the main challenges in biological physics today is to quantitatively predict the change over time in cells\u2019\u00a0physical and functional characteristics, such as cell size, growth rate, cell-cycle time, and gene expression. All cellular characteristics are determined at all times by the interaction of genetic and non-genetic factors. While genetic information passed from generation to the next is the main scheme, by which cells conserve their characteristics, non-genetic cellular components, such as all proteins, RNA, and other chemicals, are also transferred between consecutive generations and thus influence the state of the cell\u2019s characteristics (or its phenotype) in future generations (Lambert et al., 2014; Robert et al., 2010). The mechanism of genetic information transfer between generations, as well as how this information is expressed, is\u00a0mostly understood (Casades\u00fas and Low, 2006; Chen et al., 2017; Turnbough, 2019). This information can be altered by rare occurring processes such as mutations, lateral gene transfer, or gene loss (Bryant et al., 2012; Robert et al., 2018). Therefore, changes resulting from genetic alterations emerge over very long timescales (several 10 s of generations). On the other hand, inheritance of non-genetic cellular components, which are subject to a considerable level of fluctuations, can influence cellular characteristics at shorter timescales (Casades\u00fas and Low, 2013; Huh and Paulsson, 2011; Norman et al., 2013; Veening et al., 2008).\n\nHere we focus on understanding how robust cellular characteristics are to intrinsic sources (stochastic gene expression and division noise) and extrinsic sources (environmental fluctuations) of variation, and how cells that emerge from a single mother develop distinct features and over what time scale. While our understanding of variation sources has increased significantly over the past two decades (Ackermann, 2015; Avery, 2006; Elowitz et al., 2002), progress in understanding non-genetic inheritance and its contribution to restraining the proliferation of heterogeneity has been extremely limited. Extensive studies have been dedicated to revealing the different non-genetic mechanisms that influence specific cellular processes and how they are inherited over time (Chai et al., 2010; Govers et al., 2017; Mosheiff et al., 2018; Sandler et al., 2015; Wakamoto et al., 2005). However, the cell\u2019s phenotype is determined by the integration of multiple processes. Thus, to predict the inheritance dynamics of a cellular phenotype, we need to measure the inheritance dynamics directly rather than characterizing the effect of individual inheritance mechanisms separately. Progress in this research has been drastically hindered by the limited experimental techniques that can provide reliable quantitative measurements.\n\nThe recent development of the \u2018mother machine\u2019\u00a0(Brenner et al., 2015; Wang et al., 2010) has provided valuable data of growth and division, as well as protein expression dynamics. These data have been used to gain insight into non-genetic inheritance and cellular memory. The results obtained have consistently showed that non-genetic memory in bacteria is almost completely erased within two generation (Susman et al., 2018; Tanouchi et al., 2015; Wang et al., 2010). This has also been\u00a0the conclusion of theoretical calculations of cell size autocorrelation (Ho et al., 2018; Susman et al., 2018), which are based on the adder model (Amir, 2014; Taheri-Araghi et al., 2015; Si et al., 2019) for size homeostasis. The consensus of previous experimental studies is founded on the calculation of the autocorrelation function (ACF) for the different measurable cellular properties, such as cell size, growth rate, cell-cycle time, and protein content. It is important to note that in calculating the ACF, measurements of cells from different traps of the mother machine are averaged together. However, small variation in the trap sizes can manifest during the fabrication process, which can lead to distinct environments in different traps (Yang et al., 2018). In addition, cells might experience slightly different environments at different times resulting from thermal fluctuations and their dynamic interaction with their surroundings, i.e. environmental fluctuations can influence the cell\u2019s growth and division dynamics, which in turn can change the cell\u2019s micro-environment through consumption of nutrients and/or secretion of other chemicals. As a result of the individuality of the cell\u2013environment interaction, different micro-niches can be created in different traps (as we demonstrate later in the Results section), which give rise to diverse patterns of growth and division dynamics and therefore distinct ACFs (Figure 1\u2014figure supplement 1) (see also Susman et al., 2018; Yang et al., 2018; Tanouchi et al., 2015). Averaging over many traps, with such various ACFs, will thus erase the dynamics of cellular memory.\n\nTo overcome this hurdle, we have developed a new measurement technique, which enables us to separate environmental effects from cellular ones. The technique is based on a new microfluidic device that allows trapping two cells immediately after they divide from a single mother simultaneously and sustain them right next to each other for extended time. Thus, with this technique, we track the lineages of the two sister cells (SCs) from the time of their birth and follow them as they age together for tens of generations. This enables us to measure how two cells that originate from the same mother become different over time, while experiencing exactly the same environment. Thus, we are able to measure the non-genetic memory of bacterial cells for several different traits. Our results reveal important features of cellular memory. We find that different traits of the cell exhibit different memory patterns with distinct timescales. While the cell-cycle time and cell size exhibit slow exponential decay of their memory that extends over several generations, other cellular features exhibit complex memory dynamics over time. The growth rates of two SCs, for example, diverge immediately after division, but re-converge toward the end of the first cell cycle and subsequently persist together for several generations. In comparison, the mean fluorescence intensities, reporting gene expression, are identical in both cells immediately after they separate but diverge within two cell cycles.\n\n## Results\n\nOur new microfluidic device, dubbed the \u2018sisters machine\u2019 (Figure 1A), consists of 30 \u03bcm long narrow trapping channels (1 \u03bcm\u20141 \u03bcm) open at one end to a wide channel (30 \u03bcm\u201430 \u03bcm), through which fresh medium is continuously pumped to supply nutrients to cells in the traps and wash away cells that are pushed out of them. Here however, every two neighboring trapping channels are joined on the closed end through a v-shaped connection of the same width and height. The tip of the v-shaped connection is made 0.5 \u03bcm narrower than the rest of the channel to reduce the likelihood of cells passing from one side to the other (Figure 1B). Therefore, once it happens, the cells at the tip will remain there, while we track their growth and division events, and measure their size and protein expression (Figure 1C,D), until the next cell passage occurs, which can take 10 s of generations (see Figure 1\u2014video 1). The environment in this setup is identical for both cells at the tip of the v-shaped connection, as they are kept in close proximity to each other. This ensures that differences observed between the two cells are due to internal cellular factors only. A comparison of the growth patterns of two pairs of SCs measured in the same experiment, where each pair shares a common trap, reveals that while the growth dynamics of SCs are strikingly similar, they are significantly different between the two pairs (Figure 2A). This is further confirmed by comparing the distribution of the difference between the average growth rates of SCs to that of pairs of cells residing in different channels (Figure 2B). These results highlight the significance of the contribution of environmental fluctuations to cellular growth dynamics and support the existence of different environmental micro-niches within our, and similar, microfluidic setups as mentioned earlier. Note, however, that cell division in the new v-shaped channels does not alter the statistics of SCs\u2019 relative sizes, growth rates, or generation times, in comparison to that observed in the case of division in straight channels (Figure 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig1-v2.jpg)\n\n**Figure 1.:** (A) Long (30 \u03bcm) narrow traps (1 \u03bcm\u20141 \u03bcm) are connected on one end and open on the other to wide (30 \u03bcm\u201430 \u03bcm) perpendicular flow channels through which fresh medium is pumped and washes out cells that are pushed out of the traps. (B) Illustration of SCs being born from a single mother cell at the tip of the trap, as can also\u00a0be seen in real fluorescence images of the cells in the trap (C), which are then followed for a long time (see Figure 1\u2014video 1). (D) Section of example traces of two sister cells from the time they are born, which shows how they become different over time.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The ACFs of individual lineages, measured in the same experiment in separate traps in the mother machine, are presented in different colors. Each ACF was calculated from a lineage longer than 150 generations to maximize the statistics. Note that each ACF exhibits distinct dynamical pattern. Averaging all ACFs results in a simple exponentially decaying function with a decay time of \u223c2 generations depicted by the black line in the graph.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig2-v2.jpg)\n\n**Figure 2.:** (A) Depicts the cell length of two pairs of SCs measured in two different V-shaped traps as a function of time. The length of each cell is presented in a \u2018stitched\u2019 form, where the length of the cell in each cell cycle is adjusted to start from the length of the cell at the end of the previous cycle, ignoring by this the division events. This is done by dividing the length in each cycle by the starting length and multiplying it by the length of the cell at the end of the previous cycle. This presentation emphasizes the difference in the average growth rates measured in different traps. Note, however, that each pair of SCs exhibits similar average growth rate. (B) Probability distribution function (PDF) of the absolute difference in the average growth rate of two SCs is compared with the absolute difference in the average growth rate of two randomly paired cells (RPs) growing in separate traps in the same device (see Figure 4A for further elaboration on random pairing of cells). The standard deviation of the difference for SCs ($\\sigma_{S\u2062C\u2062s}$) is almost half of the calculated value for RPs ($\\sigma_{R\u2062P\u2062s}$). This shows that cells grow with different average growth rates in different traps and supports the idea of micro-niche formation in the microfluidic device.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig3-v2.jpg)\n\n**Figure 3.:** (A) Probability distribution Function (PDF) of the difference in the first cell-cycle time of two sister cells after separation relative to the population\u2019s average cycle time under the same experimental conditions. (B) PDF of the difference in cell length between the sister cells immediately after division relative to the population\u2019s average length at the start of the cell cycle. (C) PDF of the difference in the growth rate of the two sister cells after separation relative to the population\u2019s average growth rate. The difference measured in the straight channels here is larger than that measured in the v-shaped channels. This could be due to the fact that the two cells in the mother machine trap are at different distance from the nutrients diffusing from the flow channel into the traps. This has been shown before to result in variation in the cells growth rate\u00a0(Yang et al., 2018). In all graphs, the blue curves represent the distributions measured in our new device with the v-shaped channels using 194 pairs, while the brown curves were measured in the straight channels of the mother machine using 198 pairs.\n\nUsing this setup, we successfully trapped pairs of cells next to each other for 20\u2212160 generations. Images of the cells in both Differential Interference Contrast (DIC) and fluorescence modes were acquired every 3 min. Under our experimental conditions (cells growing in LB medium at 32\u00b0C), the average generation time was 34\u00a0\u00b1\u00a07 min, which provided ~11 images every generation. The acquired images were used to measure various cellular characteristics as a function of time, including cell size, protein concentration, growth rate, and generation time. To measure cellular memory, we replace the ACF, used in previous studies, with the Pearson correlation function (PCF) between pairs of cells:\n\n$$\nP\u2062C\u2062F^{(y)}\u2062(t)=\\frac{1}{\\sigma_{y^{(1)}}\u2062\\sigma_{y^{(2)}}}\u2062\\sumi=1n(y_{i}^{(1)}\u2062(t)-<y^{(1)}>).(y_{i}^{(2)}\u2062(t)-<y^{(2)}>)\n$$\n\nwhere y is the cellular property of interest, t is the measurement time, n is the number of cell pairs measured, $\\sigma_{y}$\u00a0is\u00a0the population standard deviation of y, and (1) and (2) represent the two cells being considered. $P\u2062C\u2062F^{(y)}\u2062(t)$ is therefore a measure of the correlation between the values of a specific cellular property at time t. We use this correlation function to compare three types of cell pairs (Figure 4A): (1) SCs are cells that originate from the same mother at time 0, and therefore, the value of PCF at time 0 is 1. (2) Neighbor cells (NCs) are cells that reside next to each other at the tip of the v-shaped connection. However, NCs are cells that do not originate from the same mother. They are cells that happen to enter into both sides of the same v-shaped channel from the start of the experiment. We initiate their tracking though, only when they happen to divide at the same time, such that at time 0, they are both at the start of a new cell cycle, and if their length is almost identical at that point in time. This choice is to ensure that any long-term correlation measured in SCs does not stem from a size homeostasis mechanism, which would maintain the size of both cells similar for several generations if they start similar. (3) Random cell pairs (RPs) are cells that reside in different traps and their lineages are aligned artificially even though they can be measured at different times. In this case, t is measured relative to the alignment point, which is chosen to be at the start of the cell cycle for both cells. Since NCs and RPs do not originate from the same mother at time 0, the PCF is measured from the first generation only, and we set it to be 1 at time 0. Comparing the correlation of NCs, which experience the same environmental conditions at the same time, with that of RPs allows us to determine the effect of the environment on the correlation. On the other hand, the comparison of SCs with NCs provides the effect of cellular factors (i.e. epigenetics) that are shared between SCs, on the correlation function. This in turn allows us to determine the cellular memory of a specific property resulting from shared information passed on from the mother to the two sisters (see Appendix for the mathematical relationship between the different measures).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-v2.jpg)\n\n**Figure 4.:** (A) Three types of pairs used for calculating PCF. (B) PCF of cell-cycle time for SCs (122 pairs from three separate experiments) exhibit memory that extends for almost nine generations (half lifetime \u223c 4.5 generations). This is \u223c3.5\u00d7 longer than the half lifetime of NCs PCF (calculated using a 100 pairs from three separate experiments) (C), which is comparable to the ACF (half lifetime \u223c1 generation). (D) Similarly, SCs exhibit strong cell size correlation that decays slowly over a long time (half lifetime \u223c3.5 generations), while (E)\u00a0NCs show almost no correlation in cell size similar to ACF of initial sizes (half lifetime \u223c1 generation). For details of the cell-cycle time PCF and errors calculation see SI and Figure 4\u2014figure supplements 1 and 2. PCF values for cell size were calculated in similar way to cell-cycle time and were then averaged over a window of six consecutive time frames (15 min time window) (See Figure 4\u2014figure supplement 4 for raw data). Shaded area represents the standard deviation of the average. The equations in the graphs represent the best fit to the PCF depicted in each graph with g is generation number.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In order to avoid artifacts arising in calculations due to differences between experiments carried out on different days, raw data from these experiments was normalized by subtracting the mean (\u03bc) and dividing by the standard deviation (\u03c3) for each experiment separately. Later, this normalized data was combined and used for calculating the PCF and variances for different parameters. (A,B) distributions of cell cycle times (T) before and after normalization. (C,D) distributions of elongation rate (\u03b1) before and after normalization. (E,F) distributions of mean fluorescence intensity (f) before and after normalization.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013I) Slopes of the best fit lines for TimeA vs TimeB show that cell-cycle times are strongly correlated for first few generations in SCs (summary of the slopes values is presented in Appendix 1\u2014table 1). This shows existence of non-genetic memory that restrains the divergence of the phenotypes in cells originating from the same mother cell.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The PCF of SCs cell-cycle time in LB at 37\u00b0C (57 pairs from two separate experiments) (A) and in M9CL at 32\u00b0C (29 pairs from two separate experiments) (B). Existence of strong correlation between cell-cycle duration in both (A) and (B) demonstrates the robustness of non-genetic restraint in different experimental conditions. The lines in both graphs are the best fits to the data depicted in the graphs. The decay rate of the correlation in both cases is very similar to that observed in LB medium at 32\u00b0C described in the main text (y=exp(\u22120.23 g)).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The cell size PCF for SCs (A) and for NCs (B) are compared in both graphs with the cell size ACF and PCF for RPs. Sister cells show strong cell size correlation that decays slowly over a long time. NCs show almost no correlation in cell size similar to ACF of initial sizes. For details of the PCF and errors calculations, refer to earlier SI.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** PCF of cell-cycle time (A) and cell length (B) for NCs starting from random initial sizes are compared in both graphs with ACF and PCF for RPs. NCs starting with random initial sizes show almost no correlation in cell size or cell-cycle time similar to RPs.\n\nWe measured the correlations between the different pair types for cell-cycle time (T). We find that T of SCs remain strongly correlated for up to eight successive cell divisions (Figure 4B also see Figure 4\u2014figure supplements 1 and 2) regardless of the environmental conditions (Figure 4\u2014figure supplement 3), while the NCs correlation decays to zero within three generations (Figure 4C). These results clearly reveal the effects of epigenetics and environmental conditions on cellular memory when compared to the RPs correlation, which as expected decays to zero within one generation similar to the ACF (Figure 4B,C).\n\nNext, we applied our method to cell size. Also here, our measurements show that SCs correlation decays slowly over \u223c7 generations (Figure 4D), while the correlation of NCs exhibit fast decay to zero within two generations similar to the ACF (Figure 4E). Note that RPs exhibit no correlation from the start of the measurement (Figure 4D,E). These results further demonstrate the existence of strong non-genetic memory that restrains the variability of cell size between SCs for a long time. Unlike the cell-cycle time however, the effect of both epigenetic factors and environmental conditions on the cellular memory appears to extend for a slightly shorter time.\n\nTo quantify the increase in variability among cells along time differently, we measured the change in the variance of a cellular property as time advances, which is expected to reach an equilibrium saturation value at long timescales. Measuring how the variance reaches saturation provides information about cellular memory and the nature of forces acting to restrain variation. The cellular memories of cell-cycle time and length, measured using this method, agree well with our previous PCF results (Figure 5\u2014figure supplements 1 and 2). Thus, we have measured the relative fluctuations in the exponential elongation rate of the cell pairs $\\delta\u2062\\alpha$ defined as:\n\n$$\n\\delta\u2062\\alpha\u2062(t)=\\alpha^{(1)}\u2062(t)-\\alpha^{(2)}\u2062(t)\n$$\n\nwhere $\\alpha\u2062(t)=(d\u2062ln\u2061L/d\u2062t)$ is the exponential elongation rate of the cell, L(t) is the cell length at time t, and (1) and (2) distinguish the cell pair (Figure 5\u2014figure supplement 3). As expected, $\\delta\u2062\\alpha$ for all pairs of lineages is randomly distributed with $\u27e8\\delta\\alpha\u27e9$ = 0 (Figure 5\u2014figure supplement 3), as the elongation rate of all cells fluctuate about a fixed value identical for all cells in the population and depends on the experimental conditions. The variance of $\\delta\u2062\\alpha$ for both RPs ($\\sigma_{\\delta\u2062\\alpha_{R\u2062P\u2062s}}^{2}$) and NCs ($\\sigma_{\\delta\u2062\\alpha_{N\u2062C\u2062s}}^{2}$) was found to be constant over time and is similar for both types of cell pairs (Figure 5A). However, the variance of $\\delta\u2062\\alpha$ for SCs ($\\sigma_{\\delta\u2062\\alpha_{S\u2062C\u2062s}}^{2}$) exhibits a complex pattern (Figure 5B), which eventually converges to the same value as RPs ($\\sigma_{\\delta\u2062\\alpha_{R\u2062P\u2062s}}^{2}$) and NCs ($\\sigma_{\\delta\u2062\\alpha_{N\u2062C\u2062s}}^{2}$). The time it takes for ($\\sigma_{\\delta\u2062\\alpha_{S\u2062C\u2062s}}^{2}$) to reach saturation extends over almost eight generations, which again reflects a long memory resulting from epigenetic factors. These results show that, unlike cell-cycle time and cell length, elongation rates of SCs immediately after their division from a single mother exhibit the largest variation. This variation decreases to its minimum value within a single cell-cycle time (\u223c30 min). To understand the source of this large variation immediately following separation, we have measured the growth rate over a moving time window of 6 min throughout the cell cycle and compared the results between SCs. Our comparison clearly shows that an SC that receives a smaller size-fraction from its mother exhibits a larger growth rate immediately after division. The growth rate difference between the small and large sisters decreases to almost zero by the end of the first cell cycle after separation (Figure 5B inset). This result reveals that the exponential growth rate of a cell immediately after division inversely scales with the size-fraction the cell receives from its mother (see also Kohram et al., 2020). It also demonstrates that the difference in the growth rates between SCs changes during the cell cycle, indicating that they are not constant throughout the whole cycle as has been accepted so far (Godin et al., 2010; Soifer et al., 2016; Wang et al., 2010). Note that similar results have been reported recently for Bacillus subtilis (Nordholt et al., 2020), where it was observed that the growth rate is inversely proportional to the cell size at the start of the cell cycle and changes as the cell-cycle advances.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig5-v2.jpg)\n\n**Figure 5.:** Variance ($\\sigma_{\\delta\u2062\\alpha}^{2}$) as a function of the time.(A) $\\sigma^{2}$ of the growth rate difference ($\\delta\u2062\\alpha$) between cell pairs for NCs and RPs as a function of time (see Figure 5\u2014figure supplement 3 for the details of the calculation). The variance for both pair types does not change over time. (B) $\\delta\u2062\\alpha$ of SCs, on the other hand, exhibits large variance immediately after separation (\u223c50%) higher than NCs and RPs and rapidly drops to its minimum value within one generation time (\u223c30 min), and increases thereafter for 4 hr (\u223c8 generations) until saturating at a fixed value equivalent to that observed for NCs and RPs. Each point in A and B is the average over three frames moving window, and the shaded area represents the standard deviation of that average. (C) Unlike $\\delta\u2062\\alpha$, \u03b4f of SCs increases to its saturation value within \u223c2 generations (see Figure 5\u2014figure supplement 4 for the details of the calculation). Here, each point represents the average of three different experiments, and the shaded part represents the standard deviation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cell-cycle time variance ($\\sigma_{\\delta\u2062T}^{2}$) as a function of time.(A\u2013C) Individual traces showing difference in cell-cycle times ($\\delta\u2062T$) for SCs, NCs, and RPs, respectively. The variance ($\\sigma^{2}$) of cell cycles times differences ($\\delta\u2062T$) as a function of time (D) represent the variance of the plots in (A\u2013C) calculated at different time points using $\\sigma_{\\deltaT}^{2}=<(\\deltaT)^{2}>\u2212<\\deltaT>^{2}$. $\\sigma_{\\delta\u2062T}^{2}$ for SCs starts from a small value in first generation and saturate to a constant value after \u223c7 generations (similar to the time\u00a0scale obtained from the PCF \u223c8 generations), while $\\sigma_{\\delta\u2062T}^{2}$ for NCs and RPs remain constant over time.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Cell size variance ($\\sigma_{\\delta\u2062L_{0}}^{2}$) as a function of time.Birth size variance $\\sigma_{\\delta\u2062L_{0}}^{2}$ was calculated similar to $\\sigma_{\\delta\u2062T}^{2}$ in Figure 5\u2014figure supplement 1. $\\sigma_{\\delta\u2062L_{0}}^{2}$ for SCs increases slowly and saturates at a fixed value after \u223c7 generations (mean lifetime \u223c3.5 generations) similar to the time scale observed in the PCF. For NCs with random initial sizes (A), $\\sigma_{\\delta\u2062L_{0}}^{2}$ remains constant similar to RPs. $\\sigma_{\\delta\u2062L_{0}}^{2}$ for NCs with similar birth sizes starts from a value similar to SCs but shoots up to the saturation value within one generation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Exponential elongation rate difference ($\\delta\u2062\\alpha$) as a function of time.Individual traces showing the difference between the exponential elongation rates ($\\delta\u2062\\alpha$) for SCs (A), NCs (B), and RPs (C). (D) The mean of $\\delta\u2062\\alpha$ for all cell pairs remains zero along time as expected. For details of $\\delta\u2062\\alpha$ calculations, please refer to the main text.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64779/elife-64779-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Mean fluorescence variance ($\\sigma_{\\delta\u2062f}^{2}$) as a function of time.Individual traces showing the difference in mean fluorescence intensity (\u03b4f) of gfp expressed in SCs (A), NCs (B), and RPs (C). (D) The variance ($\\sigma_{\\delta\u2062f}^{2}$ calculated similarly to $\\sigma_{\\delta\u2062T}^{2}$ in Figure 5\u2014figure supplement 1) of GFP expressed under the control of the Lac Operon promoter in lactose medium (metabolically relevant) is compared with that of GFP expressed under the control of the $\\lambda^{\u2032}$ Pr promoter in LB medium (metabolically irrelevant). It is clear that both exhibit no significant difference and a very short memory (\u22642 generations).\n\nWe have also examined how the protein concentration varies over time between the two cells by measuring the concentration of GFP (green fluorescent protein), via its fluorescence intensity, expressed from a constitutive promoter in a medium copy-number plasmid. The variance of fluorescence intensity difference between cell pairs \u03b4f was calculated as for the growth rate (see Figure 5\u2014figure supplement 4 for details). Upon division, soluble proteins are partitioned symmetrically with both daughters receiving almost the same protein concentration. As expected, $\\sigma_{\\delta\u2062f_{S\u2062C\u2062s}}^{2}$ starts from \u223c0 initially, and diverges to reach saturation within two generations (Figure 5C). On the other hand, NCs and RPs exhibit constant variance throughout the whole time, with $\\sigma_{\\delta\u2062f_{R\u2062P\u2062s}}^{2}$ twice as large as $\\sigma_{\\delta\u2062f_{N\u2062C\u2062s}}^{2}$, which reflects the influence of the shared environment resulting in additional correlations between NCs. The relatively short-term memory in protein concentration may be protein specific (Figure 5\u2014figure supplement 4), or it could reflect the fact that in this case the protein is expressed from a plasmid. Nevertheless, this result indicates that cellular properties are controlled differently and can exhibit distinct memory patterns. It is important therefore to distinguish between different cellular characteristics and to examine their inheritance patterns individually.\n\n## Discussion\n\nThere has been a rising interest over the past two decades in understanding the contribution of epigenetic factors to cellular properties and their evolution over time. Here, we introduce a new measurement technique that can separate environmental fluctuations from cellular processes. This allows for quantitative measurement of non-genetic memory in bacteria and reveals its contribution to restraining the variability of cellular properties. Our results show that the restraining force dynamics vary significantly among different cellular properties, and its effects can extend up to sim10 generations. In addition, the growth rate variation emphasizes the effect of division asymmetry, which can help in understanding the mechanism that controls cellular growth rate. The slow increase in the growth rate variance that follows reflects the effect of inheritance. Since both cells inherit similar content, which ultimately determines the rate of all biochemical activities in the cell and thus its growth rate, it is expected that both cells would exhibit similar growth rates once they make up for the uneven partitioning of size acquired during division. The short memory we see in the protein concentration, on the other hand, suggests that cells are less restrictive of their protein concentration. This might be protein specific, or for proteins that are expressed from plasmids only. Nevertheless, these results highlight the importance of such studies, and how this new method can help answer fundamental questions about non-genetic memory and variability in cellular properties.\n\nFinally, in order to understand and characterize the evolution of population growth rate as it reflects its fitness, there is a need to incorporate inheritance effects, which has been thus far assumed to be short lived. This study confirms that cellular memory can persist for several generations, and therefore limits the variation in certain cellular characteristics, including growth rate. Such memory should be considered in future studies and has the potential of changing our perception of population growth and fitness.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>MG1655</td>\n      <td>Coli Genetic Stock Center (CGSC)</td>\n      <td>6300</td>\n      <td>F-, \u03bb-, rph-1</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZA3R-GFP</td>\n      <td>Lutz and Bujard, 1997</td>\n      <td>https://academic.oup.com/nar/article/25/6/1203/1197243</td>\n      <td>GFP expressed from the \u03bb Pr promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pZA32wt-GFP</td>\n      <td>Lutz and Bujard, 1997</td>\n      <td>https://academic.oup.com/nar/article/25/6/1203/1197243</td>\n      <td>GFP expressed from the LacO promoter</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Oufti</td>\n      <td>Paintdakhi et al., 2016</td>\n      <td>http://oufti.org/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Device fabrication\n\nThe master mold of the microfluidic device was fabricated in two layers. Initially, the growth channels for the cells were printed on a 1 mm\u00a0\u00d7 1 mm fused silica substrate using Nanoscribe Photonic professional (GT). The second layer, containing the main flow channels that supply nutrients and wash out excess cells, was formed using standard soft lithography techniques (Jenkins, 2013; Martinez-Duarte and Madou, 2016). SU8 2015 photoresist (MicroChem, Newton, MA) was spin coated onto the substrate to achieve a layer thickness of 30 \u03bcm and cured using maskless aligner MLA100 (Heidelberg Instruments). Following a wash step with SU8 developer, the master mold was baked and salinized. The experimental setup described in the main text was then prepared using this master mold, from PDMS prepolymer and its curing agent (Sylgard 184, Dow Corning) as described in previous studies.\n\n### Cell culture preparation\n\nThe wild-type MG1655 E. coli bacteria were used in all experiments described. Protein content was measured through the fluorescence intensity of green fluorescent protein (GFP) inserted into the bacteria on the medium copy-number plasmid pZA (Lutz and Bujard, 1997). The expression of GFP was controlled by one of two different promoters, the Lac Operon (LacO) promoter was used to measure the expression level of a metabolically relevant protein, while the viral \u03bb-phage Pr promoter was used to measure the expression level of a constitutive metabolically irrelevant protein.\n\nTwo testing media were used in our experiments. M9 minimal medium supplemented with 1 g/l casamino acids and 4 g/l lactose (M9CL) was used for measuring the expression level from the LacO Promoter, and LB medium was used for all other experiments. The cultures were grown over night at 30\u00b0C, in either LB or M9CL medium depending on the intended conditions. The following day, the cells were diluted in the same medium and regrown to early exponential phase, optical density (OD) between 0.1 and 0.2. When the cells reached the desired OD, they were concentrated into fresh testing medium to an OD\u223c0.3 and loaded into a microfluidic device. Once enough cells were trapped in the channels, fresh testing medium was pumped through the wide channels of the device to supply the trapped cells with nutrients and wash out extra cells that are pushed out of the channels. The cells were allowed to grow in this device for days, while maintaining the temperature, using a microscope top incubator (Okolab, H201-1-T-UNIT-BL).\n\n### Image acquisition and data analysis\n\nImages of the channels were acquired every 3 min (in LB medium) or 7 min (in M9CL medium) in DIC and fluorescence modes using a Nikon eclipse Ti2 microscope with a 100\u00d7 objective. The size and protein content of the SCs\u00a0were measured from these images using the image analysis software Oufti (Paintdakhi et al., 2016). The data were then used to generate traces such as in Figure 1D, and for further analysis as detailed in the main text. Single-cell measurements were analyzed using MATLAB. Sample ACFs, Pearson correlation coefficients, sample distributions, and curve fitting were all calculated by their implementations in MATLAB toolboxes.\n",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "b0c49f99-907c-44f8-add1-6fae322d16e7",
+      "submission_id": "06dcb15e-2e3c-4bbf-b647-e9c6d754d3fb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Petra Anne Levin, Washington University in St. Louis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64779.sa1](https://doi.org/10.7554/eLife.64779.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Non-genetic inheritance restraint of cell-to-cell variation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Minsu Kim (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife at this time. However, if you feel you can satisfy the reviewers' comments, we encourage you to resubmit.\n\nAs you will see from the reviews which are copied below, all three reviewers as well as the Reviewing Editor were enthusiastic about your innovative microfluidic device and its ability to assess sister cell development and the impact of microenvironment on cell fate. However, in addition to specific concerns listed below, there was consensus that the data themselves represent a more modest advance over previous work. This was unfortunate, as reviewer 2 noted, as the set-up has the potential to permit disentangling of the effect of micro-environment and inheritance, a thorny and important problem that has not yet been solved.\n\nGiven the dichotomy of opinion about the potential impact of the approach versus the included results, we would encourage you to consider obtaining additional, data specifically addressing the relative effect of microenvironment and inheritance on cell fate. If you are amenable to this idea, eLife would be happy to consider the manuscript as a new submission at a later date. At the same time, we recognize that obtaining additional data is time consuming and completely understand if you would prefer to publish elsewhere.\n\nReviewer #2:\n\nThis article describes correlation timescale of various cellular properties. The experimental design is ingenious, and findings shed new light on epigenetic inheritance. I believe that this article warrants publication in eLife.\n\nThere are two points that are not clear to me.\n\n1) The first is the disagreement with previous ACF measurements with mother machine data for similar traits. The author argues \"These cells might experience slightly different environments at different times resulting from thermal fluctuations and their dynamic interaction with their surroundings [\u2026] Thus, averaging over many traps erases the dynamics of cellular memory\". I find it hard to imagine that significant variation in tiny microfluidic traps that are flushed actively by fresh medium. In principle, this could be easily checked by performing ACF for each trap (rather than averaging over many traps)?\n\n2) Figure 3C. What is the dashed line for? What does it means that the correlation drops below the dash line immediately within a one generation, before it slowly goes back?\n\nReviewer #3:\n\nThis is an interesting paper introducing a microfluidics system, the \"sister machine\", that traps two Escherichia coli sister cells in a v-shaped ending, which allows to study the progeny of each sister over future generations. This is a novel approach and the device, in fact, allows certain measurements that were not possible with previous microfluidics systems. The widely-used mother machine traps one mother cell in each channel, hence the sister cell is eventually pushed away from the channel within several generations.\n\nWith this new device, authors performed live cells microscopy experiments and proceeded with detailed image and statistical analysis of individual cells in three different pairing categories: (1) Sister cells (SCs), (2) Neighbor cells (NCs), and (3) Random cell pairs (Rps). The sister cells are form the same mother cells. The neighbor cells are from random mothers but positioned next to each other similar to two sister cells. And the random pairs are cells from random mothers in different channels. Comparison between these three categories reveals long-term memory in specific cellular characteristic (size, generation time, growth rate, protein expression, etc) that may arise only in sister cells progenies.\n\nThe quantities that were measured in this work are (1) cell size, (2) generation time, (3) elongation rate, (4) fluorescent intensity (a proxy for protein expression). Authors presented Pearson- and auto-correlation of each pairing category to show there are long-term effects (up to ~9 generations) among sister cells that are not found in random pairs or non-sister neighbor cells.\n\nOverall, this is an interesting manuscript mainly due to the introduction of the v-shaped microfluidics device and I do recommend it for publication. However, I am concerned that the focus of the results in the main text are on the cells size and generation time, which are somehow predictable from our prior knowledge on cell size (as I explain below in 3e). As such, the data does not fully reveal the potential of the device. Perhaps focus on protein expression data is a better choice for demonstrating sister cell correlations which in fact show distinct feature as depicted in Figure 3C.\n\nBelow I have detailed point-by-point comments. Most of the items blow concerned with presentations and are rather suggestions.\n\n1) Abstract\n\na) The authors mention that they \"introduce a new experimental method\" and discuss the findings and results of using the device. But unfortunately there is not mentioned of the new experimental method, which I think is the single most important part of this work. I suggest including a short description of sisters cells trapping early in the Abstract.\n\nb) I also suggest adding a few words to elucidate \"physical and functional characteristics\" term in the Abstract.\n\n2) Introduction\n\na) The opening paragraph contains many terms that need to defined or elucidated such as \"physical and functional characteristics\", \"cellular characteristics\", \"the state of the cell\", and \"non-genetic cellular components.\"\n\nb) The statement \"\u2026 non-genetic memory in bacteria is almost completely erased within one generation\" does not apply to every parameter. Cell-size is known to have a long-term memory as authors discuss later.\n\nc) Because of the small size, this is not clear how much \"different environment\" cells may experience in a microfluidics system. Thus, the statement \"These cells might experience slightly different environments at different times resulting from.\u2026\", needs to be backed by data or references.\n\nd) Again, more important than the environmental fluctuation, the significance of the device is that it allows a certain tracking of the lineage which was not possible with mother machine. I believe this needs to be emphasized more clearly.\n\n3) Results\n\na) Is there any side-effects from physical confinement and bending of the mother cell at the v-shaped end? This needs detailed discussion.\n\nb) Since number of generations and imaging interval is mentioned, it helps if authors add the cells' average generation time too. The explanation of NCs and the difference between them and SCs is not very clear in the text. The figure made it clear though.\n\nc) \"Since NCs and RPs do not originate from the same mother at time 0, the PCF is measured from the first generation only, and we set it to be 1 at time 0.\" Why is the correlation set to 1? If they are from different mother cells, isn't that expected to be zero?\n\nd) Figure 2 has number of issues.\n\n\u2013 With no panel title it is not clear what quantity is plotted without reading the caption.\n\n\u2013 Axes limit need adjustment. Some error bars span outside the border.\n\n\u2013 The variable \u201cg\u201d is not defined. Is it the generation number?\n\n\u2013 The grid lines are not necessary.\n\ne) The E. coli cell-size is known to have long-term memory based on the adder model. Thus, the progeny of each sister cell will retain the correlation with the mother cell for a number of generations. Thus it is not a surprise to see stronger Pearson correlation between the progenies of a sister pair that random pairs. The same goes with the generation time. Perhaps similar data for protein expression shows something that has not been studied before?\n\nf) Presentation of all panels of Figure 3 can be improved by eliminating grid lines and using a solid line with shades to depict error bars.\n\nReviewer #4:\n\nThe paper by Vashistha et al. presents a new method to investigate the inheritance and memory of cellular characteristics in bacteria, such as cell cycle properties (cell size, division time\u2026), protein content or growth rate. This method is based on the development of a new microfluidic device, that the authors name the \"sisters machine\", that allows keeping sister cells created from a single mother close to one another in a v-shaped channel, for tens of generation. These sister cells and their descendants therefore share the same microenvironment. The authors can then compute the correlation between the characteristics of the two sister cells and their progeny as a function of time. They can then compare this correlation function to the same correlation obtained on non-related cells sharing the same microenvironment, or on non-related cells in different channels/microenvironment. In doing so they aim at disentangling the effect of epigenetic memory and micro-environment fluctuations.\n\nI think introducing a new tool to disentangle environment fluctuations and epigenetic memory is very interesting, and this new microfluidic chip offers great possibilities in that regard. Given the small dimensions of the chip and the precision that is probably needed for the tip of the v-shaped channels (so that sister cells can be trapped for generations), the development of this sisters machine represents an impressive technical achievement. The data produced in this work is new and very interesting. However, I think this paper does not present the theoretical foundations that are required to interpret the results and quantify inheritance of cellular characteristics. I will list below several issues that are completely unclear for me and that would probably all be resolved by defining a clear theoretical framework.\n\n\u2013 I do not understand why the autocorrelation functions (ACF) vanish so fast (Figure 2B and C). The authors say (l.60-61) that averaging over many channels erases the memory. But I do not see why/how this would be the case. I believe there are several models in which this is not true. For simplicity let's take a non-normalized form for the ACF of X(t), i.e. E(X(t)X(t+tau)) and assume all the variables are of average 0. Let's say that the random variable of interest at time t X(t) (for example cell cycle time) is the sum of an environment-dependent noise N(t) and an environment-independent variable Y(t). Then the ACF of X is the sum of the ACF of N(t) and the ACF of Y(t) (assuming independence of Y and N). So the inheritance of environmental fluctuations and the inheritance of epigenetic fluctuations are entangled, but the ACF does not vanish.\n\n\u2013 From the definition of the PCF (Equation 1) I can see clearly why the PCF decreases with time for SC but I cannot understand why it is not constant for NC in Figure 2 (the only way I see to have a decreasing function for NC is that the environmental fluctuations are non-stationary, and their variance decreases with time)\n\n\u2013 Likewise I understand the trends in Figure 3\u2014figure supplement1 panel D, where the variance is constant for NC and RP and increases for SC. But why is it different in Figure 3\u2014figure supplement 2 ?\n\nTo answer these questions and all the others that could be raised by this interesting data, I think a theoretical framework has to be clearly defined. Maybe the authors had such a framework in mind when interpreting the data. In this case I would recommend that they define it clearly in the paper. If on the contrary, the development of such a framework is beyond the scope of this work, then simulations should be provided and compared with the data. Otherwise it is very difficult to interpret the data and demonstrate the validity of the method.\n\nAnother important point that was unclear to me : how are NC pairs of cells defined? I understood that they are not sisters but how can the authors be sure that they are not cousins (1st, 2nd, 3rd, 4th cousins\u2026)? In which case the NC cells at time 0 would be the same as the SC cells but at a larger generation (this would explain why the PCF of NC cells decrease in Figure 2). This should be clarified in the text.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Non-genetic inheritance restraint of cell-to-cell variation\" for further consideration by eLife. Your revised article has been evaluated by Aleksandra Walczak (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are a few small remaining issues that need to be addressed before acceptance. In particular, please note the comments from reviewer 1 regarding the need to clarify the tracking period in the appendix, from reviewer 2 requesting proper citation of relevant articles from the cell size literature, and from reviewer 3 requesting clarification of how your results compare with those of previous studies and a more thorough explanation of the data in Figure 1\u2014figure supplement 1. See full reviewer comments below:\n\nReviewer #1:\n\nThe manuscript by Vashistha et al. is a revised manuscript. My concerns about the previous version were satisfyingly addressed in the present version and in the authors' answers. So I recommend this manuscript for publication\n\nI just have a minor comment :\n\nI now understand that NC cells are tracked from a point where they divide at the same time and have approximately the same lengths (this is now clearly stated in the present version, I hadn't understood from the previous one\u2026). However in the appendix where the mathematical framework is presented (which I find very useful) it is not stated and I think it may be misleading. I think it could be useful to mention that in the appendix too\n\nReviewer #2:\n\nSince cell size is discussed in the manuscript, I suggest authors to cite related and key publications in the field of cell-size too.\n\nReviewer #3:\n\nI believe that Figure 1\u2014figure supplement 1 is new. I like this graph, but it requires further explanation. The legend says \"This presentation emphasizes the difference in the average growth rates measured in different traps. Note however, that each pair of SCs exhibits similar average growth rate.\" Can authors quantify the difference and similarity? It is hard to deduce that numbers from the graph. And also, do authors know whether this variation from different traps is also a problem in previous experimental set-up (mother machine)?\n",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "094eb5a3-c9fd-41b3-abfd-1772b9c117a3",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C1",
+      "claim": "Heterogeneity in physical and functional characteristics of cells (e.g. size, cycle time, growth rate, protein concentration) proliferates within an isogenic population due to stochasticity in intracellular biochemical processes and in the distribution of resources during divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneity in physical and functional characteristics of cells (e.g. size, cycle time, growth rate, protein concentration) proliferates within an isogenic population due to stochasticity in intracellular biochemical processes and in the distribution of resources during divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about known sources of cellular heterogeneity, drawing from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "03edf196-0756-450a-8451-7ff0a6846296",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C2",
+      "claim": "Heterogeneity in cellular characteristics is limited in part by the inheritance of cellular components between consecutive generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, it is limited in part by the inheritance of cellular components between consecutive generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about inheritance mechanisms that limit heterogeneity, based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "5d30fce9-65c4-4aa4-8686-1d6db853099c",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C3",
+      "claim": "Inheritance dynamics are property specific.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that inheritance dynamics are property specific and can exhibit long-term memory (\u223c10 generations) that works to restrain variation among cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements presented in the manuscript showing different inheritance patterns for different cellular properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d18759e3-8aa7-4c0f-a844-35f903601ac3",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C4",
+      "claim": "Inheritance dynamics can exhibit long-term memory of approximately 10 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that inheritance dynamics are property specific and can exhibit long-term memory (\u223c10 generations) that works to restrain variation among cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing correlation functions that persist for multiple generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d1b1960d-fb33-4d8d-b9f6-6ff8d7c32262",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C5",
+      "claim": "Long-term memory works to restrain variation among cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that inheritance dynamics are property specific and can exhibit long-term memory (\u223c10 generations) that works to restrain variation among cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental measurements of correlation functions and variance over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "5b15c293-6976-4843-a5af-885f2db5b2c2",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C6",
+      "claim": "Non-genetic cellular components such as proteins, RNA, and other chemicals are transferred between consecutive generations and influence the state of the cell's characteristics in future generations.",
+      "claim_type": "EXPLICIT",
+      "source": "While genetic information passed from generation to the next is the main scheme, by which cells conserve their characteristics, non-genetic cellular components, such as all proteins, RNA, and other chemicals, are also transferred between consecutive generations and thus influence the state of the cell's characteristics (or its phenotype) in future generations (Lambert et al., 2014; Robert et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "5198e985-2fdf-499e-b949-ec4325c3595d",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C7",
+      "claim": "The mechanism of genetic information transfer between generations and how this information is expressed is mostly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of genetic information transfer between generations, as well as how this information is expressed, is mostly understood (Casades\u00fas and Low, 2006; Chen et al., 2017; Turnbough, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "89e55cf0-031c-44e2-999e-51962a628ef2",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C8",
+      "claim": "Changes resulting from genetic alterations emerge over very long timescales (several 10s of generations).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes resulting from genetic alterations emerge over very long timescales (several 10 s of generations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the timescales of genetic mutations and their effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "e69499c7-73b5-4a4f-8978-a376c872968d",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C9",
+      "claim": "Inheritance of non-genetic cellular components can influence cellular characteristics at shorter timescales than genetic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, inheritance of non-genetic cellular components, which are subject to a considerable level of fluctuations, can influence cellular characteristics at shorter timescales (Casades\u00fas and Low, 2013; Huh and Paulsson, 2011; Norman et al., 2013; Veening et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "28800a10-3703-4862-a0f9-7b84a32c72c9",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C10",
+      "claim": "Progress in understanding non-genetic inheritance and its contribution to restraining the proliferation of heterogeneity has been extremely limited.",
+      "claim_type": "EXPLICIT",
+      "source": "While our understanding of variation sources has increased significantly over the past two decades (Ackermann, 2015; Avery, 2006; Elowitz et al., 2002), progress in understanding non-genetic inheritance and its contribution to restraining the proliferation of heterogeneity has been extremely limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "17282d28-935c-46d0-a3f2-cd5d2e359a89",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C11",
+      "claim": "Previous experimental studies using the mother machine have consistently shown that non-genetic memory in bacteria is almost completely erased within two generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The results obtained have consistently showed that non-genetic memory in bacteria is almost completely erased within two generation (Susman et al., 2018; Tanouchi et al., 2015; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d9424441-47cd-46c6-bc6c-663ce7ad0ff5",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C12",
+      "claim": "Theoretical calculations of cell size autocorrelation based on the adder model conclude that memory is erased within two generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This has also been the conclusion of theoretical calculations of cell size autocorrelation (Ho et al., 2018; Susman et al., 2018), which are based on the adder model (Amir, 2014; Taheri-Araghi et al., 2015; Si et al., 2019) for size homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "eced557f-c224-421d-a12a-42ae86cb3c05",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C13",
+      "claim": "Small variation in trap sizes can manifest during the fabrication process of the mother machine, which can lead to distinct environments in different traps.",
+      "claim_type": "EXPLICIT",
+      "source": "However, small variation in the trap sizes can manifest during the fabrication process, which can lead to distinct environments in different traps (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8496e517-2d56-4ba2-b39b-61f2153eb20a",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C14",
+      "claim": "Different micro-niches can be created in different traps due to the individuality of the cell-environment interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of the individuality of the cell\u2013environment interaction, different micro-niches can be created in different traps (as we demonstrate later in the Results section), which give rise to diverse patterns of growth and division dynamics and therefore distinct ACFs (Figure 1\u2014figure supplement 1) (see also Susman et al., 2018; Yang et al., 2018; Tanouchi et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "b8c70217-ab7f-41b1-9b43-64e1f2d08f2b",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C15",
+      "claim": "Averaging over many traps with various ACFs will erase the dynamics of cellular memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging over many traps, with such various ACFs, will thus erase the dynamics of cellular memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of distinct ACFs in different traps.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "2b2d51cc-e41a-49ab-85f1-13d3d361775d",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C16",
+      "claim": "The sisters machine consists of 30 \u03bcm long narrow trapping channels (1 \u03bcm\u20141 \u03bcm) open at one end to a wide channel (30 \u03bcm\u201430 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Our new microfluidic device, dubbed the 'sisters machine' (Figure 1A), consists of 30 \u03bcm long narrow trapping channels (1 \u03bcm\u20141 \u03bcm) open at one end to a wide channel (30 \u03bcm\u201430 \u03bcm), through which fresh medium is continuously pumped to supply nutrients to cells in the traps and wash away cells that are pushed out of them.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental device design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7b38918f-51c3-4d5d-aad1-9f018c57efe8",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C17",
+      "claim": "Every two neighboring trapping channels are joined on the closed end through a v-shaped connection of the same width and height.",
+      "claim_type": "EXPLICIT",
+      "source": "Here however, every two neighboring trapping channels are joined on the closed end through a v-shaped connection of the same width and height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental device design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "62a1267a-9d18-4629-b0c1-9ed61897c99d",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C18",
+      "claim": "The tip of the v-shaped connection is made 0.5 \u03bcm narrower than the rest of the channel to reduce the likelihood of cells passing from one side to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The tip of the v-shaped connection is made 0.5 \u03bcm narrower than the rest of the channel to reduce the likelihood of cells passing from one side to the other (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental device design and its purpose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "84ae5ede-f3df-4d70-b75a-273184b67379",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C19",
+      "claim": "Cells at the tip of the v-shaped connection can remain there for tens of generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, once it happens, the cells at the tip will remain there, while we track their growth and division events, and measure their size and protein expression (Figure 1C,D), until the next cell passage occurs, which can take 10 s of generations (see Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "e1c5df8b-152f-4bbb-acea-888945f30188",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C20",
+      "claim": "The environment in the sisters machine setup is identical for both cells at the tip of the v-shaped connection.",
+      "claim_type": "EXPLICIT",
+      "source": "The environment in this setup is identical for both cells at the tip of the v-shaped connection, as they are kept in close proximity to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the device design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "e7a61d33-128c-46dc-8de0-27cd812a4a90",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C21",
+      "claim": "Differences observed between the two sister cells are due to internal cellular factors only.",
+      "claim_type": "EXPLICIT",
+      "source": "This ensures that differences observed between the two cells are due to internal cellular factors only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the device design that ensures identical environments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "c10e4bdd-e8d8-4484-9326-ff50f27f73ad",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C22",
+      "claim": "The growth dynamics of sister cells are strikingly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the growth patterns of two pairs of SCs measured in the same experiment, where each pair shares a common trap, reveals that while the growth dynamics of SCs are strikingly similar, they are significantly different between the two pairs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "16cfde49-d7cc-4a19-91b6-cf83ca0017d6",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C23",
+      "claim": "The growth dynamics of sister cell pairs are significantly different between pairs residing in different traps.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the growth patterns of two pairs of SCs measured in the same experiment, where each pair shares a common trap, reveals that while the growth dynamics of SCs are strikingly similar, they are significantly different between the two pairs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "e73d2d8c-daa8-455e-b09c-32e70ed45e38",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C25",
+      "claim": "Cells grow with different average growth rates in different traps.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that cells grow with different average growth rates in different traps and supports the idea of micro-niche formation in the microfluidic device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data on growth rate differences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "c58b13d2-dcd2-463f-ab81-ab948e7e3ecb",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C26",
+      "claim": "Cell division in the new v-shaped channels does not alter the statistics of sister cells' relative sizes, growth rates, or generation times, in comparison to division in straight channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that cell division in the new v-shaped channels does not alter the statistics of SCs' relative sizes, growth rates, or generation times, in comparison to that observed in the case of division in straight channels (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "712baaa8-ded6-438f-bb35-1c2000f06b01",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C27",
+      "claim": "Pairs of cells were successfully trapped next to each other for 20-160 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this setup, we successfully trapped pairs of cells next to each other for 20\u2212160 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "0bb141df-44f3-49cf-ab15-c3447cd199a2",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C28",
+      "claim": "Under experimental conditions (cells growing in LB medium at 32\u00b0C), the average generation time was 34 \u00b1 7 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our experimental conditions (cells growing in LB medium at 32\u00b0C), the average generation time was 34 \u00b1 7 min, which provided ~11 images every generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a report of experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7152c6cd-c9dc-4daf-92ad-2fbd9a2a5cf7",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C29",
+      "claim": "The cell-cycle time of sister cells remain strongly correlated for up to eight successive cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that T of SCs remain strongly correlated for up to eight successive cell divisions (Figure 4B also see Figure 4\u2014figure supplements 1 and 2) regardless of the environmental conditions (Figure 4\u2014figure supplement 3), while the NCs correlation decays to zero within three generations (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "c2dfe27c-889a-4f35-813b-3a99d45f23a0",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C30",
+      "claim": "The cell-cycle time correlation of sister cells persists regardless of environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that T of SCs remain strongly correlated for up to eight successive cell divisions (Figure 4B also see Figure 4\u2014figure supplements 1 and 2) regardless of the environmental conditions (Figure 4\u2014figure supplement 3), while the NCs correlation decays to zero within three generations (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8501d584-e2f3-48e1-abc2-28299a4629f0",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C31",
+      "claim": "The cell-cycle time correlation of neighbor cells decays to zero within three generations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that T of SCs remain strongly correlated for up to eight successive cell divisions (Figure 4B also see Figure 4\u2014figure supplements 1 and 2) regardless of the environmental conditions (Figure 4\u2014figure supplement 3), while the NCs correlation decays to zero within three generations (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "0f965361-af01-4315-90d8-923a2813b781",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C32",
+      "claim": "The cell size correlation of sister cells decays slowly over approximately 7 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we applied our method to cell size. Also here, our measurements show that SCs correlation decays slowly over \u223c7 generations (Figure 4D), while the correlation of NCs exhibit fast decay to zero within two generations similar to the ACF (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "2705d6e0-ab4a-49f0-9f94-9f55884be213",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C33",
+      "claim": "The cell size correlation of neighbor cells exhibits fast decay to zero within two generations similar to the ACF.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we applied our method to cell size. Also here, our measurements show that SCs correlation decays slowly over \u223c7 generations (Figure 4D), while the correlation of NCs exhibit fast decay to zero within two generations similar to the ACF (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "2b05238b-3668-4030-8365-41cb436f0d76",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C34",
+      "claim": "Random cell pairs exhibit no correlation in cell size from the start of the measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that RPs exhibit no correlation from the start of the measurement (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "4141f51f-973a-4957-b382-2eb95779a1a1",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C38",
+      "claim": "Elongation rates of sister cells immediately after their division from a single mother exhibit the largest variation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that, unlike cell-cycle time and cell length, elongation rates of SCs immediately after their division from a single mother exhibit the largest variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on variance patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "4a70530d-d3fa-47bf-a252-e922b0eca387",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C39",
+      "claim": "The variation in elongation rates between sister cells decreases to its minimum value within a single cell-cycle time (approximately 30 min).",
+      "claim_type": "EXPLICIT",
+      "source": "This variation decreases to its minimum value within a single cell-cycle time (\u223c30 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "13724e41-061e-41fe-9e0a-3e4c0943732b",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C40",
+      "claim": "A sister cell that receives a smaller size-fraction from its mother exhibits a larger growth rate immediately after division.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comparison clearly shows that an SC that receives a smaller size-fraction from its mother exhibits a larger growth rate immediately after division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 5B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "243c6021-15f6-44aa-a4ad-d03afae8a162",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C41",
+      "claim": "The growth rate difference between the small and large sisters decreases to almost zero by the end of the first cell cycle after separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate difference between the small and large sisters decreases to almost zero by the end of the first cell cycle after separation (Figure 5B inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "0337508a-f841-48f5-86a4-845d8bb640dd",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C42",
+      "claim": "The exponential growth rate of a cell immediately after division inversely scales with the size-fraction the cell receives from its mother.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reveals that the exponential growth rate of a cell immediately after division inversely scales with the size-fraction the cell receives from its mother (see also Kohram et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and a citation to related work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d1b35fe7-5fba-44a0-950e-f3378ce252a8",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C43",
+      "claim": "The difference in the growth rates between sister cells changes during the cell cycle, indicating that they are not constant throughout the whole cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "It also demonstrates that the difference in the growth rates between SCs changes during the cell cycle, indicating that they are not constant throughout the whole cycle as has been accepted so far (Godin et al., 2010; Soifer et al., 2016; Wang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and contrasts with previous literature cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7df88ff5-2462-440d-84b9-0bdf2db709ce",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C44",
+      "claim": "Similar results showing growth rate inversely proportional to cell size at the start of the cell cycle have been reported for Bacillus subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that similar results have been reported recently for Bacillus subtilis (Nordholt et al., 2020), where it was observed that the growth rate is inversely proportional to the cell size at the start of the cell cycle and changes as the cell-cycle advances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "deab823a-d18c-4ebb-a1e3-5d039d2e1c96",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C45",
+      "claim": "Upon division, soluble proteins are partitioned symmetrically with both daughters receiving almost the same protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon division, soluble proteins are partitioned symmetrically with both daughters receiving almost the same protein concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about protein partitioning during cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "c5d1d1f9-aa0f-4e28-a03f-70dcbbbf85bd",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C49",
+      "claim": "The relatively short-term memory in protein concentration may be protein specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively short-term memory in protein concentration may be protein specific (Figure 5\u2014figure supplement 4), or it could reflect the fact that in this case the protein is expressed from a plasmid.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d98eed17-7aa8-4435-864c-4156ca2f3edb",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C50",
+      "claim": "The short-term memory in protein concentration could reflect the fact that the protein is expressed from a plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively short-term memory in protein concentration may be protein specific (Figure 5\u2014figure supplement 4), or it could reflect the fact that in this case the protein is expressed from a plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental setup.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7b595ee4-2d07-4d09-93c3-fe6d5794d6d3",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C51",
+      "claim": "Cellular properties are controlled differently and can exhibit distinct memory patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this result indicates that cellular properties are controlled differently and can exhibit distinct memory patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing different memory patterns for different properties.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "9fb667e0-ae74-4cbc-9bf7-6a89c0a3ff38",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C52",
+      "claim": "The restraining force dynamics vary significantly among different cellular properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the restraining force dynamics vary significantly among different cellular properties, and its effects can extend up to sim10 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing different correlation and variance patterns for different properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "897d7433-c3d2-4c52-b96c-b4156bb1ff2e",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C53",
+      "claim": "The effects of restraining forces can extend up to approximately 10 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the restraining force dynamics vary significantly among different cellular properties, and its effects can extend up to sim10 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on correlation functions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "20c5e5ad-0eb1-4f8d-8184-fc1192012681",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C54",
+      "claim": "Both sister cells inherit similar content, which ultimately determines the rate of all biochemical activities in the cell and thus its growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both cells inherit similar content, which ultimately determines the rate of all biochemical activities in the cell and thus its growth rate, it is expected that both cells would exhibit similar growth rates once they make up for the uneven partitioning of size acquired during division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established biological knowledge and inference from experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d767387e-851d-4aff-bece-72bdcf88a30a",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C55",
+      "claim": "Both sister cells would exhibit similar growth rates once they make up for the uneven partitioning of size acquired during division.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both cells inherit similar content, which ultimately determines the rate of all biochemical activities in the cell and thus its growth rate, it is expected that both cells would exhibit similar growth rates once they make up for the uneven partitioning of size acquired during division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by experimental data showing convergence of growth rates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8aa23e16-b92b-4a98-9ec3-f14bcf79fb8e",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C56",
+      "claim": "Cells are less restrictive of their protein concentration compared to other properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The short memory we see in the protein concentration, on the other hand, suggests that cells are less restrictive of their protein concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing shorter memory for protein concentration.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "3c9f2fa2-4140-4ca6-b839-9c25df92d5be",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C57",
+      "claim": "Cellular memory can persist for several generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This study confirms that cellular memory can persist for several generations, and therefore limits the variation in certain cellular characteristics, including growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "a1fb9d20-dda3-4577-b74b-2179645be568",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C58",
+      "claim": "Cellular memory limits the variation in certain cellular characteristics, including growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This study confirms that cellular memory can persist for several generations, and therefore limits the variation in certain cellular characteristics, including growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on correlation functions and variance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "bd98e5f5-0c9c-4ba2-a9d6-56ebb1bfe954",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C59",
+      "claim": "Cellular memory should be considered in future studies of population growth and fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Such memory should be considered in future studies and has the potential of changing our perception of population growth and fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "09ee16f2-8026-4bb8-ab82-10c282e877b4",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C60",
+      "claim": "The wild-type MG1655 E. coli bacteria were used in all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type MG1655 E. coli bacteria were used in all experiments described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "35be78f0-57c2-4027-8dd4-05403685d382",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C61",
+      "claim": "Protein content was measured through the fluorescence intensity of green fluorescent protein (GFP) inserted into the bacteria on the medium copy-number plasmid pZA.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein content was measured through the fluorescence intensity of green fluorescent protein (GFP) inserted into the bacteria on the medium copy-number plasmid pZA (Lutz and Bujard, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "fb68b0b2-1903-4f2e-bf58-1cba93c27ebc",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C62",
+      "claim": "The Lac Operon (LacO) promoter was used to measure the expression level of a metabolically relevant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of GFP was controlled by one of two different promoters, the Lac Operon (LacO) promoter was used to measure the expression level of a metabolically relevant protein, while the viral \u03bb-phage Pr promoter was used to measure the expression level of a constitutive metabolically irrelevant protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "2a38d367-7204-4d53-8f58-950f577d5c8f",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C63",
+      "claim": "The viral \u03bb-phage Pr promoter was used to measure the expression level of a constitutive metabolically irrelevant protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of GFP was controlled by one of two different promoters, the Lac Operon (LacO) promoter was used to measure the expression level of a metabolically relevant protein, while the viral \u03bb-phage Pr promoter was used to measure the expression level of a constitutive metabolically irrelevant protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7646a3d1-8967-4cfd-ab4d-4047b4c0d520",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C64",
+      "claim": "Images of the channels were acquired every 3 min in LB medium or 7 min in M9CL medium in DIC and fluorescence modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of the channels were acquired every 3 min (in LB medium) or 7 min (in M9CL medium) in DIC and fluorescence modes using a Nikon eclipse Ti2 microscope with a 100\u00d7 objective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "bb71231f-28d0-4119-bb47-af140a4fe7e8",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C65",
+      "claim": "The size and protein content of the sister cells were measured from images using the image analysis software Oufti.",
+      "claim_type": "EXPLICIT",
+      "source": "The size and protein content of the SCs were measured from these images using the image analysis software Oufti (Paintdakhi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8b862054-4bbb-403c-9bb0-602be5e5395e",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C66",
+      "claim": "The ACFs of individual lineages measured in separate traps in the mother machine exhibit distinct dynamical patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The ACFs of individual lineages, measured in the same experiment in separate traps in the mother machine, are presented in different colors. Each ACF was calculated from a lineage longer than 150 generations to maximize the statistics. Note that each ACF exhibits distinct dynamical pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "ba19efab-6033-4dff-80c8-7e4bac143bf9",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C67",
+      "claim": "Averaging all ACFs from individual lineages results in a simple exponentially decaying function with a decay time of approximately 2 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging all ACFs results in a simple exponentially decaying function with a decay time of \u223c2 generations depicted by the black line in the graph.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "7c3ed1b8-3bb8-4afa-a450-7b58de460d69",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C68",
+      "claim": "The difference measured in growth rates in straight channels is larger than that measured in the v-shaped channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference measured in the straight channels here is larger than that measured in the v-shaped channels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "8e837c71-7b4a-4770-bfce-6c3d2263b41c",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C69",
+      "claim": "The larger difference in growth rates in straight channels could be due to the fact that the two cells in the mother machine trap are at different distances from the nutrients diffusing from the flow channel into the traps.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be due to the fact that the two cells in the mother machine trap are at different distance from the nutrients diffusing from the flow channel into the traps. This has been shown before to result in variation in the cells growth rate (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "6a448057-2f9c-48ec-8dd2-721bab90aeb5",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C70",
+      "claim": "The PCF of sister cells' cell-cycle time exhibits memory that extends for almost nine generations with a half lifetime of approximately 4.5 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "PCF of cell-cycle time for SCs (122 pairs from three separate experiments) exhibit memory that extends for almost nine generations (half lifetime \u223c 4.5 generations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "3104bb84-876a-4aa2-9843-76ee53d76ea1",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C71",
+      "claim": "The half lifetime of neighbor cells' PCF for cell-cycle time is approximately 3.5 times longer than that of the ACF.",
+      "claim_type": "EXPLICIT",
+      "source": "This is \u223c3.5\u00d7 longer than the half lifetime of NCs PCF (calculated using a 100 pairs from three separate experiments) (C), which is comparable to the ACF (half lifetime \u223c1 generation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "db1195b4-a904-40fe-b28c-53f1dd668965",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C72",
+      "claim": "Sister cells exhibit strong cell size correlation that decays slowly over a long time with a half lifetime of approximately 3.5 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SCs exhibit strong cell size correlation that decays slowly over a long time (half lifetime \u223c3.5 generations), while (E) NCs show almost no correlation in cell size similar to ACF of initial sizes (half lifetime \u223c1 generation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "c7bf9b64-77e4-4ee0-894b-cd29b9d572ee",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "claim_id": "C73",
+      "claim": "Neighbor cells show almost no correlation in cell size similar to ACF of initial sizes with a half lifetime of approximately 1 generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SCs exhibit strong cell size correlation that decays slowly over a long time (half lifetime \u223c3.5 generations), while (E) NCs show almost no correlation in cell size similar to ACF of initial sizes (half lifetime \u223c1 generation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "49809c1e-410e-4372-b16f-9de69439d596",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel microfluidic device called the 'sisters machine' that traps sister cells in v-shaped channels, maintaining them in identical environments for 20-160 generations. The device design does not alter division statistics compared to straight channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 describe the device design and its key feature of maintaining identical environments for sister cells. Claims C26-C28 provide validation data showing the device works as intended. The experimental setup is well-documented with appropriate controls comparing v-shaped to straight channels (C26), demonstrating methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "6b2987b5-c1a6-423f-843a-d908a01b7b79",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that different traps in microfluidic devices create distinct micro-niches with different autocorrelation functions (ACFs), and that averaging across traps erases cellular memory dynamics, reducing apparent memory to ~2 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are supported by citations and experimental data (Figure 1\u2014figure supplement 1, C66). Claim C15 is a logical inference from the observation of distinct ACFs. Claim C67 provides quantitative support showing that averaging yields ~2 generation decay time. This provides crucial motivation for the new experimental approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "06b8ecae-6513-4e84-8c45-91b822979408",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sister cells within the same trap exhibit strikingly similar growth dynamics, while sister cell pairs in different traps show significantly different growth patterns, supporting micro-niche formation in the microfluidic device.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are directly supported by experimental data in Figure 2A. Claim C25 is an inference supported by Figure 2B showing different standard deviations for sister cells versus random pairs. The evidence clearly demonstrates environmental heterogeneity between traps while confirming environmental similarity within traps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell-cycle time of sister cells remains strongly correlated for up to 8-9 successive cell divisions (half-life ~4.5 generations) regardless of environmental conditions, while neighbor cell correlation decays within three generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by experimental data in Figure 4B-C and supplementary figures. Claim C30 is validated across different conditions (Figure 4\u2014figure supplement 3). Claims C70-C71 provide quantitative details. The use of 122 sister cell pairs from three experiments provides adequate statistical power. However, the manuscript lacks explicit statistical testing (e.g., confidence intervals, p-values) to support claims of significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sister cell size correlation decays slowly over ~7 generations (half-life ~3.5 generations), while neighbor cells show rapid decay within two generations similar to ACF, and random pairs show no correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by experimental data in Figure 4D-E. Claims C72-C73 provide quantitative details consistent with the main claims. The pattern is similar to cell-cycle time but with slightly shorter memory. The control comparisons (neighbor cells and random pairs) strengthen the interpretation that the observed correlation is due to shared inheritance rather than environmental factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sister cell elongation rates exhibit maximum variation immediately after division, with smaller sisters growing faster. This variation decreases to minimum within one cell cycle (~30 min), demonstrating that growth rates are not constant throughout the cell cycle and inversely scale with inherited size fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by experimental data in Figure 5B and its inset. The finding challenges previous assumptions (C43 cites contradicting literature). Claim C42 is additionally supported by citation to Kohram et al., 2020. The temporal resolution (~11 images per generation, C28) is sufficient to capture intra-cycle dynamics. However, the mechanism underlying size-dependent growth rate adjustment is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "60a6ddbd-4017-48a4-b99d-775295b056b6",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inheritance dynamics are property-specific, with restraining forces varying significantly among cellular properties and extending up to ~10 generations, working to restrain variation among cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 represent the main conclusions of the study, supported by the diverse memory patterns observed for different properties (cell-cycle time, size, growth rate, protein concentration). Claims C51-C53 reiterate these findings. The experimental data across multiple figures (4B-E, 5A-C) demonstrate property-specific dynamics. However, the ~10 generation claim appears to be an upper bound based on cell-cycle time data, while other properties show shorter memory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "2c18081e-4f1d-4908-b345-2799361c6ad9",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Protein concentration exhibits relatively short-term memory (~2 generations), which may be protein-specific or reflect plasmid-based expression, suggesting cells are less restrictive of protein concentration compared to other properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C50 are explicitly speculative (evidence_type: SPECULATION). Claim C56 is an inference from limited data. Figure 5C and Figure 5\u2014figure supplement 4 show short memory, but only two promoter types were tested (LacO and \u03bb-phage Pr), both on plasmids. Without chromosomal expression data or testing of multiple proteins, the generalizability is unclear. The speculation about plasmid vs. chromosomal expression is reasonable but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "168054d7-2521-4742-8469-4c32ebd6d8f6",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sister cells inherit similar cellular content that determines biochemical activity rates and growth rates, leading to similar growth rates once uneven size partitioning is compensated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 combine established biological knowledge with inference from experimental observations. The convergence of growth rates after initial divergence (Figure 5B) supports this interpretation. However, the claim about 'similar content' is not directly measured\u2014the authors infer this from the observed phenotypic convergence. Direct measurement of inherited molecular content would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "098be5b3-23f5-4f57-8aec-a69c4e814bc3",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cellular memory persists for several generations and limits variation in cellular characteristics including growth rate, with implications for understanding population growth and fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 summarize the main findings supported by the experimental data throughout the manuscript. Claim C59 is a forward-looking recommendation rather than a result. The evidence for multi-generational memory is strong, but the claim about 'limiting variation' is somewhat circular\u2014the memory is inferred from the limited variation. The fitness implications (C59) are speculative and would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "d2be4ce9-fdd6-44d9-afa3-54e1641489e4",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous studies using the mother machine and theoretical calculations based on the adder model concluded that non-genetic memory in bacteria is erased within two generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 accurately represent prior work through appropriate citations (Susman et al., 2018; Tanouchi et al., 2015; Wang et al., 2010; Ho et al., 2018). This provides important context for why the current study's findings of longer memory are significant. The authors correctly identify the methodological limitation (averaging across traps) that led to the previous consensus.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "58abd1fe-f660-47d7-a842-0dd7f1168232",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Growth rate differences between sister cells are larger in straight channels than v-shaped channels, possibly due to differential nutrient access in the mother machine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by data in Figure 3C. Claim C69 is speculation supported by citation to Yang et al., 2018. This observation validates that the v-shaped design improves environmental uniformity. However, the explanation remains speculative without direct measurement of nutrient gradients. The difference could also arise from other factors like mechanical constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that cellular heterogeneity arises from stochasticity but is limited by inheritance, that genetic and non-genetic inheritance operate on different timescales, and that understanding of non-genetic inheritance has been limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 represent established knowledge about sources and constraints on heterogeneity. Claims C6-C9 are supported by appropriate citations to prior literature. Claim C10 characterizes the state of the field with citations. These background claims are well-supported and provide appropriate context, though they are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    },
+    {
+      "id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c",
+      "content_id": "fc28d67e-208b-4afc-86c3-f8425795c947",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details including bacterial strain (MG1655 E. coli), protein measurement approach (GFP fluorescence from plasmid pZA with LacO or \u03bb-phage Pr promoters), imaging parameters, and analysis software (Oufti).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 describe experimental methods with appropriate detail and citations. The methods appear sound and reproducible. However, some details are missing: no information about biological vs. technical replicates, limited detail on image analysis parameters, and no mention of data/code availability. The use of plasmid-based reporters (C61) may limit generalizability as noted in the protein concentration results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:02:30.807603Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2b2d51cc-e41a-49ab-85f1-13d3d361775d",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "7b38918f-51c3-4d5d-aad1-9f018c57efe8",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "62a1267a-9d18-4629-b0c1-9ed61897c99d",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "84ae5ede-f3df-4d70-b75a-273184b67379",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "e1c5df8b-152f-4bbb-acea-888945f30188",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "e7a61d33-128c-46dc-8de0-27cd812a4a90",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "c58b13d2-dcd2-463f-ab81-ab948e7e3ecb",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "712baaa8-ded6-438f-bb35-1c2000f06b01",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "0bb141df-44f3-49cf-ab15-c3447cd199a2",
+      "result_id": "49809c1e-410e-4372-b16f-9de69439d596"
+    },
+    {
+      "claim_id": "eced557f-c224-421d-a12a-42ae86cb3c05",
+      "result_id": "6b2987b5-c1a6-423f-843a-d908a01b7b79"
+    },
+    {
+      "claim_id": "8496e517-2d56-4ba2-b39b-61f2153eb20a",
+      "result_id": "6b2987b5-c1a6-423f-843a-d908a01b7b79"
+    },
+    {
+      "claim_id": "b8c70217-ab7f-41b1-9b43-64e1f2d08f2b",
+      "result_id": "6b2987b5-c1a6-423f-843a-d908a01b7b79"
+    },
+    {
+      "claim_id": "8b862054-4bbb-403c-9bb0-602be5e5395e",
+      "result_id": "6b2987b5-c1a6-423f-843a-d908a01b7b79"
+    },
+    {
+      "claim_id": "ba19efab-6033-4dff-80c8-7e4bac143bf9",
+      "result_id": "6b2987b5-c1a6-423f-843a-d908a01b7b79"
+    },
+    {
+      "claim_id": "c10e4bdd-e8d8-4484-9326-ff50f27f73ad",
+      "result_id": "06b8ecae-6513-4e84-8c45-91b822979408"
+    },
+    {
+      "claim_id": "16cfde49-d7cc-4a19-91b6-cf83ca0017d6",
+      "result_id": "06b8ecae-6513-4e84-8c45-91b822979408"
+    },
+    {
+      "claim_id": "e73d2d8c-daa8-455e-b09c-32e70ed45e38",
+      "result_id": "06b8ecae-6513-4e84-8c45-91b822979408"
+    },
+    {
+      "claim_id": "7152c6cd-c9dc-4daf-92ad-2fbd9a2a5cf7",
+      "result_id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082"
+    },
+    {
+      "claim_id": "c2dfe27c-889a-4f35-813b-3a99d45f23a0",
+      "result_id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082"
+    },
+    {
+      "claim_id": "8501d584-e2f3-48e1-abc2-28299a4629f0",
+      "result_id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082"
+    },
+    {
+      "claim_id": "6a448057-2f9c-48ec-8dd2-721bab90aeb5",
+      "result_id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082"
+    },
+    {
+      "claim_id": "3104bb84-876a-4aa2-9843-76ee53d76ea1",
+      "result_id": "f0c7d310-0182-4bbc-ac29-fa3e3bef6082"
+    },
+    {
+      "claim_id": "0f965361-af01-4315-90d8-923a2813b781",
+      "result_id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa"
+    },
+    {
+      "claim_id": "2705d6e0-ab4a-49f0-9f94-9f55884be213",
+      "result_id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa"
+    },
+    {
+      "claim_id": "2b05238b-3668-4030-8365-41cb436f0d76",
+      "result_id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa"
+    },
+    {
+      "claim_id": "db1195b4-a904-40fe-b28c-53f1dd668965",
+      "result_id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa"
+    },
+    {
+      "claim_id": "c7bf9b64-77e4-4ee0-894b-cd29b9d572ee",
+      "result_id": "1e1c9c56-a9be-4a27-9544-d18130ce1efa"
+    },
+    {
+      "claim_id": "4141f51f-973a-4957-b382-2eb95779a1a1",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "4a70530d-d3fa-47bf-a252-e922b0eca387",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "13724e41-061e-41fe-9e0a-3e4c0943732b",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "243c6021-15f6-44aa-a4ad-d03afae8a162",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "0337508a-f841-48f5-86a4-845d8bb640dd",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "d1b35fe7-5fba-44a0-950e-f3378ce252a8",
+      "result_id": "80b8c9d8-7e5a-4d10-9a82-591c27fb53bd"
+    },
+    {
+      "claim_id": "5d30fce9-65c4-4aa4-8686-1d6db853099c",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "d18759e3-8aa7-4c0f-a844-35f903601ac3",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "d1b1960d-fb33-4d8d-b9f6-6ff8d7c32262",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "7b595ee4-2d07-4d09-93c3-fe6d5794d6d3",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "9fb667e0-ae74-4cbc-9bf7-6a89c0a3ff38",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "897d7433-c3d2-4c52-b96c-b4156bb1ff2e",
+      "result_id": "60a6ddbd-4017-48a4-b99d-775295b056b6"
+    },
+    {
+      "claim_id": "c5d1d1f9-aa0f-4e28-a03f-70dcbbbf85bd",
+      "result_id": "2c18081e-4f1d-4908-b345-2799361c6ad9"
+    },
+    {
+      "claim_id": "d98eed17-7aa8-4435-864c-4156ca2f3edb",
+      "result_id": "2c18081e-4f1d-4908-b345-2799361c6ad9"
+    },
+    {
+      "claim_id": "8aa23e16-b92b-4a98-9ec3-f14bcf79fb8e",
+      "result_id": "2c18081e-4f1d-4908-b345-2799361c6ad9"
+    },
+    {
+      "claim_id": "20c5e5ad-0eb1-4f8d-8184-fc1192012681",
+      "result_id": "168054d7-2521-4742-8469-4c32ebd6d8f6"
+    },
+    {
+      "claim_id": "d767387e-851d-4aff-bece-72bdcf88a30a",
+      "result_id": "168054d7-2521-4742-8469-4c32ebd6d8f6"
+    },
+    {
+      "claim_id": "3c9f2fa2-4140-4ca6-b839-9c25df92d5be",
+      "result_id": "098be5b3-23f5-4f57-8aec-a69c4e814bc3"
+    },
+    {
+      "claim_id": "a1fb9d20-dda3-4577-b74b-2179645be568",
+      "result_id": "098be5b3-23f5-4f57-8aec-a69c4e814bc3"
+    },
+    {
+      "claim_id": "bd98e5f5-0c9c-4ba2-a9d6-56ebb1bfe954",
+      "result_id": "098be5b3-23f5-4f57-8aec-a69c4e814bc3"
+    },
+    {
+      "claim_id": "17282d28-935c-46d0-a3f2-cd5d2e359a89",
+      "result_id": "d2be4ce9-fdd6-44d9-afa3-54e1641489e4"
+    },
+    {
+      "claim_id": "d9424441-47cd-46c6-bc6c-663ce7ad0ff5",
+      "result_id": "d2be4ce9-fdd6-44d9-afa3-54e1641489e4"
+    },
+    {
+      "claim_id": "7c3ed1b8-3bb8-4afa-a450-7b58de460d69",
+      "result_id": "58abd1fe-f660-47d7-a842-0dd7f1168232"
+    },
+    {
+      "claim_id": "8e837c71-7b4a-4770-bfce-6c3d2263b41c",
+      "result_id": "58abd1fe-f660-47d7-a842-0dd7f1168232"
+    },
+    {
+      "claim_id": "094eb5a3-c9fd-41b3-abfd-1772b9c117a3",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "03edf196-0756-450a-8451-7ff0a6846296",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "5b15c293-6976-4843-a5af-885f2db5b2c2",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "5198e985-2fdf-499e-b949-ec4325c3595d",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "89e55cf0-031c-44e2-999e-51962a628ef2",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "e69499c7-73b5-4a4f-8978-a376c872968d",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "28800a10-3703-4862-a0f9-7b84a32c72c9",
+      "result_id": "f1c96399-7302-4c1e-9c23-8a9da1251b6c"
+    },
+    {
+      "claim_id": "09ee16f2-8026-4bb8-ab82-10c282e877b4",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    },
+    {
+      "claim_id": "35be78f0-57c2-4027-8dd4-05403685d382",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    },
+    {
+      "claim_id": "fb68b0b2-1903-4f2e-bf58-1cba93c27ebc",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    },
+    {
+      "claim_id": "2a38d367-7204-4d53-8f58-950f577d5c8f",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    },
+    {
+      "claim_id": "7646a3d1-8967-4cfd-ab4d-4047b4c0d520",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    },
+    {
+      "claim_id": "bb71231f-28d0-4119-bb47-af140a4fe7e8",
+      "result_id": "9cf9676c-0e51-4864-96c3-d7342e1c6c5c"
+    }
+  ],
+  "comparisons": []
+}

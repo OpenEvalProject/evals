@@ -1,0 +1,1680 @@
+{
+  "submission": {
+    "id": "6c6abd6b-c96e-4aa1-8499-6a775964b574",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:40:21.881645Z",
+    "updated_at": "2025-12-03T14:40:21.881645Z"
+  },
+  "content": [
+    {
+      "id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "submission_id": "6c6abd6b-c96e-4aa1-8499-6a775964b574",
+      "content_type": "manuscript",
+      "content_text": "# CXCR4high megakaryocytes regulate host-defense immunity against bacterial pathogens\n\n## Authors\n\n- Jin Wang<sup>1</sup> ([ORCID: 0000-0002-4924-1716](https://orcid.org/0000-0002-4924-1716))\n- Jiayi Xie<sup>2</sup> ([ORCID: 0000-0001-8977-6654](https://orcid.org/0000-0001-8977-6654))\n- Daosong Wang<sup>3</sup> ([ORCID: 0000-0002-4786-6202](https://orcid.org/0000-0002-4786-6202))\n- Xue Han<sup>2</sup>\n- Minqi Chen<sup>3</sup>\n- Guojun Shi<sup>1</sup> \u2020\n- Linjia Jiang<sup>2</sup> ([ORCID: 0000-0001-8854-2610](https://orcid.org/0000-0001-8854-2610)) \u2020\n- Meng Zhao<sup>2</sup> ([ORCID: 0000-0001-7909-7594](https://orcid.org/0000-0001-7909-7594)) \u2020\n\n### Affiliations\n\n1. Department of Endocrinology & Metabolism, The Third Affiliated Hospital, Sun Yat-sen University Guangzhou China ([ROR:04tm3k558](https://ror.org/04tm3k558))\n2. RNA Biomedical Institute, Sun Yat-sen Memorial Hospital, Sun Yat-sen University Guangzhou China ([ROR:01px77p81](https://ror.org/01px77p81))\n3. Key Laboratory of Stem Cells and Tissue Engineering, Zhongshan School of Medicine, Sun Yat-sen University, Ministry of Education Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMegakaryocytes (MKs) continuously produce platelets to support hemostasis and form a niche for hematopoietic stem cell maintenance in the bone marrow. MKs are also involved in inflammatory responses; however, the mechanism remains poorly understood. Using single-cell sequencing, we identified a CXCR4 highly expressed MK subpopulation, which exhibited both MK-specific and immune characteristics. CXCR4high MKs interacted with myeloid cells to promote their migration and stimulate the bacterial phagocytosis of macrophages and neutrophils by producing TNF\u03b1 and IL-6. CXCR4high MKs were also capable of phagocytosis, processing, and presenting antigens to activate T cells. Furthermore, CXCR4high MKs also egressed circulation and infiltrated into the spleen, liver, and lung upon bacterial infection. Ablation of MKs suppressed the innate immune response and T cell activation to impair the anti-bacterial effects in mice under the Listeria monocytogenes challenge. Using hematopoietic stem/progenitor cell lineage-tracing mouse lines, we show that CXCR4high MKs were generated from infection-induced emergency megakaryopoiesis in response to bacterial infection. Overall, we identify the CXCR4high MKs, which regulate host-defense immune response against bacterial infection.\n\n## Introduction\n\nMegakaryocytes (MKs) are large and rare hematopoietic cells in the bone marrow, which continually produce platelets to support hemostasis and thrombosis (Deutsch and Tomer, 2006). MK progenitors undergo multiple rounds of endomitosis during maturation to achieve polyploidy (Chang et al., 2007; Deutsch and Tomer, 2013; Machlus and Italiano, 2013; Nagata et al., 1997; Patel et al., 2005). MKs and their progenitors migrate between distinct microenvironments and organs for their proliferation, maturation, and biological functions (Avecilla et al., 2004; Fuentes et al., 2010; Lefran\u00e7ais et al., 2017; Pal et al., 2020; Tamura et al., 2016; Wang et al., 1998). Although platelet generation is the prominent role of MKs, emerging evidence suggests that MKs have other biological functions. Mature MKs interact with HSCs and constitute a unique niche to preserve HSC quiescence in the bone marrow (Bruns et al., 2014; Zhao et al., 2014). MKs also interact with other niche cells, such as osteoblasts (Dominici et al., 2009; Olson et al., 2013), non-myelinating Schwann cells (Jiang et al., 2018; Yamazaki et al., 2011), and blood vessels (Avecilla et al., 2004; Sa\u00e7ma et al., 2019) to further influence the attraction and retention of hematopoietic stem and progenitor cells during homeostasis and stress.\n\nMK-biased hematopoietic stem cells (HSCs) induce emergency megakaryopoiesis to actively generate MKs upon acute inflammation, which can efficiently replenish the platelet loss during inflammatory insult (Haas et al., 2015). Studies suggested that MKs might participate in immune responses independent of their platelet generation role (Cunin and Nigrovic, 2019). MKs express multiple immune receptors, such as IgG Fc receptors and toll-like receptors (TLRs), enabling them to sense inflammation directly (Cunin and Nigrovic, 2019). Mature MKs also express major histocompatibility complex (MHC) to activate antigen-specific CD8+ T cells and enhance CD4+ T cells and Th17 cell responses through stimulating antigen processing (Finkielsztein et al., 2015; Pariser et al., 2021; Zufferey et al., 2017). Furthermore, MKs release multiple cytokines and chemokines to influence immune cells. For example, MKs produce IL-1\u03b1 and IL-1\u03b2 to promote arthritis susceptibility in mice resistant to arthritis (Cunin et al., 2017) and produce CXCL1 and CXCL2 to promote neutrophil efflux from the bone marrow (K\u00f6hler et al., 2011). Lung MKs contribute to thrombosis (Lefran\u00e7ais et al., 2017) and, more interestingly, participate in immune responses (Pariser et al., 2021), although the relationship between lung MKs and bone marrow circulating MKs (Nishimura et al., 2015) remains unexplored. Furthermore, the recent single-cell atlas shows that MKs are heterogeneous and contain subpopulations that express multiple immune genes and are involved in inflammation response (Liu et al., 2021; Pariser et al., 2021; Sun et al., 2021; Yeung et al., 2020). Here, by combining scRNA-seq with functional assays, we identified a CXCR4high MK population, which was generated by infection-induced emergency megakaryopoiesis, and stimulated innate immunity against bacterial infection.\n\n## Results\n\n### Single-cell atlas identifies an immune-modulatory subpopulation of MKs\n\nWe applied droplet-based scRNA-seq with CD41+ forward scatter (FSC)high bone marrow MKs to explore the MK heterogeneity (Figure 1A; Figure 1\u2014figure supplement 1A,B). To enrich accurate MKs, we further performed transcriptomic profile analysis in the phenotypically enriched MKs (Yeung et al., 2020). Our scRNA-seq successfully detected 5368 high-quality cells (Figure 1\u2014figure supplement 1B,C), in which one MK cluster (1712 cells) and six immune cell clusters (3656 cells) were annotated according to their gene profile (Figure 1\u2014figure supplement 1D-G) and the alignment with published scRNA-seq data (Almanzar et al., 2020; Hamey et al., 2021; Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020). Our annotated MKs were similar to MKs but distinct to immune cells, including myeloid progenitors, basophils, neutrophils, monocytes, dendritic cells, macrophages, B cells, and T cells, in an integrated scRNA-seq analysis platform (Figure 1\u2014figure supplement 2). Therefore, we re-clustered the transcriptionally enriched 1712 MKs into five subpopulations, termed MK1 to MK5 (Figure 1B; Figure 1\u2014figure supplement 3A,B), which were further confirmed by the integrated scRNA-seq analysis platform to rule out the potential immune cell contamination (Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020; Figure 1\u2014figure supplement 3C,D). We noticed that mature MKs with huge sizes were captured at a relatively low rate, potentially due to the limitation in current techniques in cell purification and single-cell preparation (Liu et al., 2021; Sun et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic strategy for MK preparation, scRNA-seq and data analysis. (B) Clustering of 1712 bone marrow MKs. (C) Heatmap of signature gene expression in MK subpopulations (fold-change >1.5, p value <0.05) with exemplar genes listed on the right (top, color-coded by subpopulations). Columns denote cells; rows denote genes. Z score, row-scaled expression of the signature genes in each subpopulation. (D) Gene Ontology (GO) analysis of signature genes (fold-change >1.5, p value <0.05) for each MK subpopulations. GO terms selected with Benjamini\u2013Hochberg-corrected p values <0.05 and colored by \u2013log10(p value). Bubble size indicates the enriched gene number of each term. (E\u2013F) UMAP visualization (E) and statistical analysis (F) of cytokine score (left), inflammatory score (middle) and chemokine score (right) in MK1 to 5. (G) Dotplots of significant cytokine ligand (source) -receptor (target) interactions between MKs and immune cells discovered. The color indicates the means of the receptor-ligand pairs between two cell types and bubble size indicates p values. Mon, monocytes; M\u03a6, macrophages (Dong et al., 2020); DC, dendritic cells; Neu, neutrophils; MP, myeloid progenitors; T, T cells; B, B cells. (H\u2013I) Violin plot (H) and feature plot (I) of selected signature genes of MK5. Red lines in (H) indicate the median gene expression. Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (F), \u01c2\u01c2 <0.01, \u01c2\u01c2\u01c2 p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Flow cytometry gating for isolation of MKs (CD41+ FSChigh) in bone marrow for scRNA-seq. (B) Quality control of scRNA-seq data. Violin plots showing the number of unique genes (gene number) before and after removing doublets, number of total unique molecular identifiers (UMI counts) and percentage of mitochondrial transcripts in single cells after removing doublets. Scatter plot showing the correlation between UMI counts and gene numbers. corr indicates Pearson correlation coefficient. (C\u2013D) UMAP of 5368 bone marrow cells, colored by gene numbers (C) and by cluster identity indicated on the right (D). MK, megakaryocytes; Neu, neutrophils; M\u03a6, macrophages; MP, myeloid progenitors; DC, dendritic cells; Mon, monocytes; B, B cells; T, T cells. (E) Heatmap of row-scaled signature gene expression in each cell type (top, color-coded by subpopulations). Columns denote cells; rows denote genes. Z score, row-scaled expression of the signature genes in each subpopulation. (F) Feature plots showing selected gene expression. (G) Violin plots showing the number of unique genes (gene number) of 1712 MKs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Radar charts showing cell similarities of our single cell dataset with the published bone marrow MK single cells (Pariser et al., 2021; Yeung et al., 2020), bone marrow immune cells and myeloid progenitor single cells (Almanzar et al., 2020; Hamey et al., 2021; Xie et al., 2020) using MetaNeighbor R package. (B) Comparison of our bone marrow scRNA-seq data with published bone marrow MK (Pariser et al., 2021; Yeung et al., 2020) and immune cell (Almanzar et al., 2020; Hamey et al., 2021; Xie et al., 2020) datasets. All cells were integrated by iMAP.py and projected on UMAP. (C) Column-scaled Euclidean distances between the centroid of each cluster. Z score, column-scaled Euclidean distance. MK, megakaryocytes; Neu, neutrophils; M\u03a6, macrophages; MP, myeloid progenitors; DC, dendritic cells; Mon, monocytes; B, B cells; T, T cells.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Re-clustering of 1712 MKs from 5368 cells. (B) Violin plots showing MK marker gene expression (Aburima et al., 2021; Bernardes et al., 2020; Kanaji et al., 2005; Liu et al., 2021; Couldwell and Machlus, 2019; Ozaki et al., 2005; Sun et al., 2021; Yeung et al., 2020) of MK1 to 5. Red lines indicate the median gene expression. (C) Projection of our datasets on reported MK (Pariser et al., 2021; Yeung et al., 2020) and immune cell (Hamey et al., 2021; Xie et al., 2020) scRNA-seq datasets by Symphony R package. MK, megakaryocytes; Neu, neutrophils; M\u03a6, macrophages; MP, myeloid progenitors; DC, dendritic cells; Mon, monocytes; Bas, basophils; B, B cells; T, T cells; ABM, adult bone marrow. (D) MKs (MK1 to 5) and cell types projection based on similarities of our single-cell transcriptional profiles and published MK (Pariser et al., 2021; Yeung et al., 2020) and immune cell datasets (Hamey et al., 2021; Xie et al., 2020) by scmap R package.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Volcano plot showing MK5 and MK1 to 4 enriched genes (|fold change|>1.4, p value <0.05). (B\u2013C) Gene Ontology (GO) analysis showing MK5 enriched immune pathway genes and MK1 to 4 mainly enriched hemopoiesis and RNA processing pathway genes. (D\u2013F) Gene set enrichment analysis (GSEA) evaluated enrichment of selected pathways in MK5 cells compared to other MK subpopulations (MK1 to 4).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Dotplots of significant cytokine ligand (source) -receptor (target) interactions between MKs and immune cells discovered using CellChat. Color indicates communication probabilities, and bubble size indicates p value of the ligand-receptor pairs between MK subpopulations (source) and immune cells (target). (B) Selected signature gene expression in MK subpopulations.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) Representative flow cytometry plots of gating strategy of CD41 and CXCR4 in the bone marrow of control mice and mice 3 days after L. monocytogenes infection. (B) Relative expression of Pf4, Vwf and Mpl in CXCR4high and CXCR4low MKs by RT-qPCR. (C) Representative immunofluorescent staining image showing membranous CD41 staining typical of sorted bone marrow CXCR4high MKs. (D) Sorted CXCR4low and CXCR4high MKs produced proplatelets in vitro on day five post cultured under 100 ng ml\u20131 TPO. White arrowheads indicate proplatelet formation. (E) Polyploidy distribution of CXCR4low MKs and CXCR4high MKs (right). (F) Representative immunofluorescent staining images showing CD41 and CXCR4 expression of CXCR4low and CXCR4high MKs in the bone marrow. CD41, green; CXCR4, red; DAPI, blue. (G) Comparison of cell size between CXCR4low MKs and CXCR4high MKs on day three post cultured under 100 ng ml\u20131 Thrombopoietin (TPO). (H) Median fluorescence intensity of CXCR4 in small and large sizes of MKs by flow cytometry. Scale bars, 20\u00b5m. Data represent mean \u00b1 s.e.m in (B, D, E, H) or mean \u00b1first and third quartiles in (G). Two-sample KS test was performed to assess statistical significance in (G). Two-tailed Student\u2019s t-test was performed to assess statistical significance in (B, D, E, H). * p<0.05, ** p<0.01, *** p<0.001.\n\nEnriched signature genes by Gene Ontology exhibited that MK1 and MK2 highly expressed nuclear division, DNA replication and repair genes for endomitosis (Figure 1C,D). MK3 enriched blood coagulation and thrombosis genes for platelet generation (Figure 1C,D). No signature pathways were enriched in MK4. MK5 enriched cell migration and immune response genes (Figure 1C,D; Figure 1\u2014figure supplement 4A-E), cytokine, chemokine (Figure 1E,F; Figure 1\u2014figure supplement 4F), and genes involved in immune cell interaction (Figure 1G, Figure 1\u2014figure supplement 5A). MK5 also expressed signature genes in recently reported inflammatory-related MKs (Cd53, Lsp1, Anxa1, Spi) (Sun et al., 2021) and immune MKs (Ccl3, Cd52, Selplg, Sell, Adam8) (Liu et al., 2021; Figure 1\u2014figure supplement 5B). We also noticed that MK5 highly expressed Cxcr4 than other MK subpopulations (Figure 1H,I), although most MKs express CXCR4 (Hamada et al., 1998; Figure 1\u2014figure supplement 6A). To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H). CXCR4high MKs generated platelets in lower efficiencies compared to CXCR4low MKs (Figure 1\u2014figure supplement 6D), suggesting CXCR4high MKs might be specialized for immune functions. Overall, using scRNA-seq, we identified an MK subpopulation that exhibited both MK-specific and immune transcriptional characteristics.\n\n### CXCR4high MKs enhance myeloid cell mobility and bacterial phagocytosis\n\nAs MK5 enriched genes involved in myeloid cell activation (Figure 1\u2014figure supplement 4E) and myeloid cell interactions (Figure 1G, Figure 1\u2014figure supplement 5A), we further explored the role of CXCR4high MKs, which enriched MK5, in regulating myeloid immune cells, in regulating the innate immunity function of myeloid cells against pathogens. We challenged mice with Listeria (L.) monocytogenes, a Gram-positive facultative intracellular bacterium (Bishop and Hinrichs, 1987; Edelson and Unanue, 2000), which induce myelopoiesis (Eash et al., 2009; Figure 2\u2014figure supplement 1A, B). Interestingly, we noticed that CXCR4high MKs were more dramatically associated with myeloid cells in the bone marrow of mice 3 days after L. monocytogenes infection, which was a significant increase than the association between myeloid cells and CXCR4low MKs or the association between randomly placed myeloid cells and CXCR4high MKs (Figure 2A,B). The myeloid cell-CXCR4high MK association (mean distance 15.36 \u03bcm) was significantly closer than the myeloid cell-CXCR4low MKs association (Figure 2C; mean distance 25.62 \u03bcm, p=7.0 \u00d7 10\u20134 by KS test), and the association between randomly placed myeloid cells and CXCR4high MKs [35.37 \u03bcm, p (\u03bc<15.36)=1.8 \u00d7 10\u201310] in the bone marrow of mice 3 days after L. monocytogenes infection. Whereas the observed mean distance of myeloid cells to CXCR4low MKs (25.62 \u03bcm) is not different from random simulations [27.76 \u03bcm, p (\u03bc<25.62)=0.14] (Figure 2C). This suggested that the increased association between myeloid cell-CXCR4high MK may not be due to the infection-induced expansion of myeloid cells. Furthermore, we did not observe a significant association between myeloid cells and MKs during homeostasis (Figure 2\u2014figure supplement 1C,D). We also noticed that bone marrow myeloid cells were preferably adjacent to the CXCR4high MK-blood vessel intersection in mice 3 days after L. monocytogenes infection (Figure 2\u2014figure supplement 1E,F). These observations indicated that CXCR4high MKs might regulate myeloid cells upon bacterial infection.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig2-v2.jpg)\n\n**Figure 2.:** (A) Distribution of myeloid cells to CXCR4low or CXCR4high MKs 3 days after L. monocytogenes infection. Representative images of MKs (blue), CXCR4 (red), and myeloid cells (green) in mouse bone marrow. Yellow arrows indicate CXCR4high MKs and white arrowheads indicate CXCR4low MKs. (B\u2013C) Distance (B) and mean distance (C) of actual or randomly positioned myeloid cells to the closest CXCR4low and CXR4high MKs 3 days after L. monocytogenes infection. (D) Numbers of transmigrated myeloid cells normalized to Ctrl (without MKs in the lower chambers) as indicated by transwell assays. Mon, monocytes; M\u03a6, macrophages; DC, dendritic cells; Neu, neutrophils. (E\u2013F) Representative images (E) and quantification (F) of neutrophil phagocytosis capacity with or without MK co-culture as indicated. CD11b, red; E. coli, green; DAPI, blue. Ctrl, neutrophil without MK co-culture. (G\u2013H) Representative images (G) and quantification (H) of macrophage phagocytosis capacity with or without MK co-culture as indicated. F4/80, red; E. coli, green; DAPI, blue. Ctrl, macrophage without MK co-culture. (I) Spearman correlation analysis between expression profiles of Cxcr4 and feature genes in MK subpopulations. (J) Quantification of TNF\u03b1+ and IL-6+ cells in CXCR4low MKs and CXCR4high MKs from control mice or mice 3 days after L. monocytogenes infection. (K\u2013L) Quantification of neutrophil (K) and macrophage (L) phagocytosis with or without CXCR4high MK co-culture in the absence or presence of anti-TNF\u03b1 or anti-IL-6 neutralizing antibodies. (M\u2013N) Quantification of the phagocytosis abilities by neutrophils (M) and macrophages (N) with or without CXCR4low MK or CXCR4high MK co-culture in the absence or presence of anti-TNF\u03b1 or anti-IL-6 neutralizing antibodies by flow cytometry. Ctrl, neutrophils (M) or macrophages (N) without MKs co-culture. Scale bars, 20 \u03bcm (A, E, G). Data represent mean \u00b1 s.e.m (D) and boxplots show medians, first and third quartiles (F, H, K\u2013L). Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (D, M, N), \u01c2 p<0.05, \u01c2\u01c2 p<0.01, n.s., not significant. A two-sample KS test was performed to assess statistically significant (C, F, H, K, L), n.s., not significant. Paired Student\u2019s t-test was performed to assess statistical significance (J), # p<0.05, ## p<0.01, n.s., not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Representative immunofluorescent staining image (A) and statistical analysis (B) showing association of MKs (blue) and myeloid cells (green) in the bone marrow of control mice and mice 3 days after L. monocytogenes infection (n=30 control and infected MKs). CD41, blue; CD11b, green. (C\u2013D) Distance (C) and mean distance (D) of actual or randomly positioned myeloid cells to the closest CXCR4low Mks and CXR4high MKs from mice without infection. (E\u2013F) Representative images of MKs (blue), CXCR4 (red), vascular endothelial cells (green) and myeloid cells (white) (E), and statistical analysis (F) in bone marrow showing the distribution of myeloid cells to CXCR4low or CXCR4high MKs and vascular cells 3 days after L. monocytogenes infection. CD41, blue; CXCR4, red; EMCN, green; CD11b, white. Yellow arrows indicate CXCR4high MKs and white arrowheads indicate CXCR4low MKs (left) and two-dimensional probability distribution of distances from myeloid cells to CXCR4low or CXCR4high MKs and vascular cells (n=104 CD11b+ cells; p=0.04 by 2D KS test). Scale bars, 20\u00b5m. Boxplots show medians, first and third quartiles in (B). Two-sample KS test was performed to assess statistical significance in (B, D). Two-dimensional-two-sample KS test was performed to assess statistical significance in (F).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013B) Quantification of phagocytosis abilities in neutrophils (A) and macrophages (B) without or with CXCR4low MKs or CXCR4high MKs as indicated. (C\u2013E) TNF\u03b1 and IL-6 protein levels in CXCR4low and CXCR4high MKs were shown by immunofluorescent staining (C\u2013D) using sorted MKs, compared to their levels in sorted macrophages upon L. monocytogenes infection (E).Scale bars, 5\u03bcm. Data represent mean \u00b1 s.e.m in (A, B) and boxplots show medians, first and third quartiles in (C\u2013E). Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (A, B), \u01c2 p<0.05, \u01c2\u01c2 p<0.01. Two-sample KS test was performed to assess statistical significance in (C\u2013E).\n\nTo explore how CXCR4high MKs regulate myeloid cells, we interestingly found that CXCR4high MKs, but not CXCR4low MKs, effectively promoted myeloid cell mobilization in our transwell assays (Figure 2D). Furthermore, we asked whether CXCR4high MKs regulate myeloid cell function against pathogens. To this aim, we incubated purified CXCR4low MKs and CXCR4high MKs with neutrophils or macrophages for bacterial phagocytosis analysis. We found that CXCR4high MKs, but not CXCR4low MKs, efficiently enhanced the bacterial phagocytosis of neutrophils and macrophages (Figure 2E\u2013H; Figure 2\u2014figure supplement 2A,B).\n\nOur scRNA-seq also exhibited that the high expression of Cxcr4 was positively correlated with immune cell-stimulating cytokines, such as Ccl6, Tnf, and Il6 (Li et al., 2018; Rothe et al., 1993; Shapouri-Moghaddam et al., 2018) in MKs (Figure 2I). In line with this, CXCR4high MKs had higher TNF\u03b1 and IL-6 protein levels than CXCR4low MKs (Figure 2J; Figure 2\u2014figure supplement 2C,D). The TNF\u03b1 and IL-6 levels in CXCR4high MKs were comparable to macrophages from mice 3 days after L. monocytogenes infection (Figure 2\u2014figure supplement 2E), which are known as the primary cellular source of TNF\u03b1 and IL-6 upon infection (Shapouri-Moghaddam et al., 2018). These observations suggested that CXCR4high MKs might stimulate myeloid cell phagocytosis by producing TNF\u03b1 and IL-6. Indeed, anti-TNF\u03b1 and anti-IL-6 blocking antibodies compromised the role of CXCR4high MKs in stimulating bacterial phagocytosis of neutrophils and macrophages (Figure 2K\u2013N).\n\n### CXCR4high MKs stimulate host-defense immunity against bacterial pathogens\n\nTo explore the in vivo role of MKs upon L. monocytogenes infection in mice, we employed Pf4Cre; Rosa26fs-iDTR mice, in which MKs were rendered sensitive to diphtheria toxin (DT) (Zhao et al., 2014; Figure 3A and B). MK ablation increased the number of hematopoietic stem and progenitor cells and myelopoiesis in the bone marrow upon infection (Figure 3\u2014figure supplement 1A-D). Notably, MK ablation dramatically increased the bacterial burdens in the liver and spleen 3 days after L. monocytogenes infection (Figure 3C). We also found that MK ablation reduced the number of myeloid cells, including monocytes, macrophages, dendritic cells (DCs), and neutrophils, in the liver and spleen (Figure 3D,E; Figure 3\u2014figure supplement 1E,F), suggesting the role of MKs in promoting myeloid cells against pathogens. We further investigated whether MKs regulate adaptative immunity against pathogen infection. Interestingly, we noticed that CXCR4high MKs were able to phagocytose bacteria and presented the ovalbumin (OVA) antigens on their surface via MHC-I (Figure 3F,G). Furthermore, OVA antigens presented by CXCR4high MKs activated OT-I CD8+ T cells (Figure 3H) and B3Z T cells (Figure 3\u2014figure supplement 2), a T cell hybridoma which expresses TCR that specifically recognizes OVA (Karttunen et al., 1992). We challenged Pf4Cre; Rosa26fs-iDTR mice with OVA-expressing recombinant microbe (L. monocytogenes-OVA). Seven days after L. monocytogenes-OVA infection, splenocytes from control or MK ablated mice were re-stimulated with OVA peptide in vitro to assess OVA-specific T cell activation (Figure 3I). Notably, MK ablation dramatically reduced the number of CD4+ IFN\u03b3+ Th1, CD4+ IL4+ Th2, and CD8+ cytotoxic T lymphocytes but did not impact the total number of CD4+ T cells and CD8+ T cells (Figure 3J). These observations demonstrated that MKs regulate host-defense immunity against L. monocytogenes infection. To explore whether CXCR4high MKs contribute to the immune response against bacterial pathogens, we infused the purified CXCR4high MKs and CXCR4low MKs into MK ablation mice during L. monocytogenes infection (Figure 3K). Notably, we found that the infusion with CXCR4high MKs, but not CXCR4low MKs, partially rescued the bacterial clearance defect in MK ablation mice (Figure 3L). This is potentially due to the reduced platelets known for regulating immune responses (Semple et al., 2011).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schema for diphtheria toxin (DT) and L. monocytogenes administration used for the experiments shown in (B\u2013E). (B) Representative images of MKs (blue, indicated by arrows) and vascular endothelial cells (green) in the bone marrow of mice after four daily DT treatments. (C) Bacterial burdens in the liver and spleen of Pf4Cre; Rosa26fs-iDTR mice 3 days after L. monocytogenes (L.m.) infection with four-time DT injections. (D\u2013E) Myeloid cells in the liver (D) and spleen (E) of Pf4Cre; Rosa26fs-iDTR mice 3 days after L. monocytogenes (L.m.) infection with four-time DT injections. (F) Quantification of bacterial phagocytosis capacities of neutrophils, CXCR4low MKs and CXCR4high MKs. (G) Quantification of MHCI-OVA levels on CXCR4low MKs, CXCR4high MKs and bone-marrow-derived dendritic cells (DCs) upon a pulse of 24 hr with or without OVA. (H) Quantification of activated OT-I CD8+ T cells after co-culture with bone-marrow-derived DCs, OVA-pulsed bone-marrow-derived DCs, CXCR4low MKs, or CXCR4high MKs. (I) Schema for antigen-specific T cell activation assay shown in (J). (J) Splenocytes from control or MK ablated mice 7 days after L. monocytogenes-OVA257-264 infection and seven DT injections were stimulated with OVA peptide in vitro for 4 hr, and antigen-specific activated T cells were quantified (n=4 mice). L.m.-OVA, L. monocytogenes-OVA257-264. (K) Schema for DT, L. monocytogenes administration, MK transfusing and bacterial burden determination shown in (L). (L) Bacterial burdens in the liver and spleen of Pf4Cre; Rosa26fs-iDTR mice without or with CXCR4low or CXCR4high MK transfused. Scale bars, 20\u03bcm. Data represent mean \u00b1 s.e.m. Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (F), \u01c2\u01c2\u01c2 p<0.001. Paired Student\u2019s t-test was performed to assess statistical significance (G), # p<0.05, n.s., not significant. Two-tailed Student\u2019s t-test was performed to assess statistical significance except (F), * p<0.05, ** p<0.01, *** p<0.001, n.s., not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Schema for diphtheria toxin (DT) and L. monocytogenes administration used for the experiments shown in (B\u2013D). (B) Number of bone marrow hematopoietic stem and progenitor cells in Pf4Cre+; Rosa26fs-iDTR+/- mice compared to Pf4Cre-; Rosa26fs-iDTR+/- mice after L. monocytogenes infection and DT injection. (C\u2013D) Gating strategies (C) and numbers (D) of myeloid cells in the bone marrow of Pf4Cre; Rosa26fs-iDTR+/- mice after L. monocytogenes infection and DT injection. (D\u2013E) Gating strategies of myeloid cells in the liver (D) and spleen (E) of Pf4Cre; Rosa26fs-iDTR+/- mice at 3 days after L. monocytogenes infection. Neu, neutrophil; MF, macrophage; Mono, monocyte; DC, dendritic cell. Two-tailed Student\u2019s t-test was performed to assess statistical significance. * p<0.05, ** p<0.01, *** p<0.001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The LacZ activity in B3Z T cells with or without co-culture as indicated. Ctrl indicates B3Z cells without MKs co-culture; bone-marrow-derived DCs, CXCR4low MKs and CXCR4high MKs were pulsed with OVA for 24 hr. Two-tailed Student\u2019s t-test was performed to assess statistical significance, * p<0.05.\n\n### Bacterial infection stimulates the migration of CXCR4high MKs\n\nHigh Cxcr4 expression indicated that CXCR4high MKs might migrate between the bone marrow microenvironment and circulation in response to infection (Suraneni et al., 2018). In line with this, our spatial distribution analysis showed that ~80% of MKs directly contacted blood vessels 3 days after L. monocytogenes infection, which was much higher than in control mice (~40%) (Figure 4A,B; Figure 4\u2014figure supplement 1A). Furthermore, more CXCR4high MKs, with small cell sizes (Figure 1\u2014figure supplement 6F-H), were tightly associated with blood vessels and trapped in the sinusoid than CXCR4low MKs 3 days after L. monocytogenes infection (Figure 4C,D). However, L. monocytogenes infection did not influence the association between MKs and HSCs (Figure 4A,E), albeit the critical role of perivascular MKs in maintaining HSC quiescence (Bruns et al., 2014; Itkin et al., 2016; Zhao et al., 2014) and the dramatic HSC activation upon infection (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative image of CD41 (blue), CD150 (red), EMCN (green), and lineage cells (white) in bone marrow from control mice or mice at 3 days after L. monocytogenes infection. dHSC and dEC indicate the distance between the MK (blue, marked with an asterisk) and the closest HSC (red), endothelial cell (green), respectively. Yellow boxes indicate the locations of the magnified images. Arrowheads indicate HSCs. EMCN, endomucin; EC, endothelial cell. (B) Comparison of the distance between MKs to Ecs (n=119 control and 103 infected MKs) in the bone marrow of control mice or mice at 3 days after L. monocytogenes infection. (C) Comparison of the distance between CXCR4low or CXCR4high MKs and endothelial cells (Ecs) in the bone marrow of mice 3 days after L. monocytogenes infection (n=68 CXCR4low and 78 CXCR4high MKs). CD41 (blue), CXCR4 (red), and EMCN (green). Yellow arrows indicate CXCR4high MKs, while white arrowheads indicate CXCR4low MKs. (D) Representative immunofluorescent staining images (left) and quantification (right) of CXCR4 (red) labeled MKs (blue) egressed into sinusoids (green) upon infection (n=46 CXCR4low MKs and 69 CXCR4high MKs in 4 biological replicates). Yellow arrows indicate CXCR4high MKs. (E) Comparison of the distance between HSCs to MKs (n=96 control and 127 infected HSCs, p=0.21 by two-sample KS test) in the bone marrow of control mice or mice at 3 days after L. monocytogenes infection. (F) Visualization of MK migration (red, arrowhead) into sinusoids (green) by live imaging in the bone marrow of Pf4Cre+; Rosa26fs-tdTomato+/- mice 24 hr after L. monocytogenes infection (Movie S1). \u2018S\u2019 indicates sinusoid and dashed lines demarcate the border of sinusoids. (G) Quantification of CXCR4high MKs in bone marrow, peripheral blood, liver, spleen, and lung of control mice and mice 3 days after L. monocytogenes infection. (H) Quantification of CXCR4 levels on CXCR4low MKs treated with IFN-\u03b3, LPS or L. monocytogenes for 4 hr compared to CXCR4high MKs. (I) Quantification of tdTomato+ CXCR4high MKs in the liver and spleen from control mice or mice 3 days after L. monocytogenes infection by flow cytometry. (J) Schema of mtdTomato+ bone marrow (from R26RmTmG mice) cell perfusion in control and L. monocytogenes infected recipients. (K) The percentage of CXCR4high mtdTomato+ MKs and CXCR4low mtdTomato+ MKs in bone marrow, liver, and spleen of control or infected recipients were analyzed 2 days after mtdTomato+ bone marrow cells were perfused. (L) Radar chart showing transcriptomic similarities of bone marrow MK subpopulations with reported BM and lung MK datasets (Pariser et al., 2021; Yeung et al., 2020). (M) Schema for transfer experiments using tdTomato+ MKs from Pf4Cre+; Rosa26fs-tdTomato+/- mice into control recipients or recipients 1 day following L. monocytogenes infection. (N\u2013O) Representative images (N) and quantification by flow cytometry (O) of tdTomato+ MKs in the lung of control or infected recipients 2 days after cell perfusion (n=3 mice). Arrows indicate tdTomato+ MKs in the lung. Scale bars without indicated, 20 \u03bcm. Data represent mean \u00b1 s.e.m. A two-sample KS test was performed to assess statistical significance in (E). Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (H), \u01c2\u01c2 p<0.01, \u01c2\u01c2\u01c2 p<0.001. Two-tailed Student\u2019s t-test was performed to assess statistical significance except (E, H), * p<0.05, ** p<0.01, *** p<0.001, n.s., not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Bone marrow MKs (blue) and sinusoids (green) in control mice and mice 3 days after L. monocytogenes infection. CD41, blue; EMCN, green. Yellow arrows indicate MKs egressed into sinusoids. \u2018S\u2019 indicates sinusoid and dashed lines demarcate the border of sinusoids. (B) HSC and progenitor cell number in the bone marrow of control mice and mice 3 days after L. monocytogenes infection. LT, long term; ST, short term; MPP, multipotential progenitor. (C\u2013D) MK numbers (C) and CXCR4low MK frequency (D) in the bone marrow of control mice and mice 3 days after L. monocytogenes infection (n=8 mice). (E\u2013F) Frequency of BrdU+ (E) and Annexin V+ (F) cells in CXCR4high MKs from bone marrow of control mice or mice 3 days after L. monocytogenes infection (n=5 mice). Scale bars, 20\u00b5m. Data represent mean \u00b1 s.e.m. Two-tailed Student\u2019s t-test was performed to assess statistical significance. * p<0.05, n.s., not significant.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Schematic depicting the strategy of scRNA-seq using bone marrow MKs from mice 3 days after L. monocytogenes infection. (B) Violin plots showing the number of unique genes (gene number) before and after removing doublets, number of total unique molecular identifiers (UMI counts) and percentage of mitochondrial transcripts in single cells after removing doublets. Scatter plot showing the correlation between UMI counts and gene numbers. corr indicates Pearson correlation coefficient. (C) UMAP of the combined 5368 cells from control bone marrow and 4276 cells from L. monocytogenes infection bone marrow, colored by cell types. Neu, neutrophil; MP, myeloid progenitor; Mon, monocytes; B, B cells; T, T cells. (D) UMAP of the combined 1712 control MKs and 1560 infection MKs in the bone marrow, colored by clusters. (E) Fraction of each MK subpopulation from control MKs or L. monocytogenes infection MKs. (F) Violin plot showing Cxcr4 expression in each MK subpopulation of control and infection MKs.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A\u2013H) Relative expression of Cxcl12 (A\u2013D) and frequency of CXCL12DsRed cells (E\u2013H) in the bone marrow (A), lung (B), liver (C), and spleen (D) from control mice and mice 3 days after L. monocytogenes infection by RT-qPCR (A\u2013D) and flow cytometry (E\u2013H), respectively. Two-tailed Student\u2019s t-test was performed to assess statistical significance. * p<0.05, ** p<0.01, *** p<0.001.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013B) Fraction of BrdU+ and Annexin V+ MKs in CXCR4high MKs in the liver (A) and spleen (B) from control mice or mice 3 days after L. monocytogenes infection. (C) Quantification of CXCR4low MKs in peripheral blood, liver, spleen, and lung of control mice and mice at 3 days after L. monocytogenes infection. (D) Quantification of CXCR4 levels on CXCR4high MKs and CXCR4low MKs treated with LPS or IFN-\u03b3 for 18 or 24 hr. (E\u2013F) Representative images and quantification of mGFP+ MKs (green) in the liver (E) and spleen (F) from control mice or mice 3 days after L. monocytogenes infection (n=4 and 7 mice, respectively). (G\u2013H) Gating strategies for CXCR4high MKs in the liver (G) and spleen (H). (I) Quantification of tdTomato+CXCR4low MKs in the liver and spleen from control mice or mice 3 days after L. monocytogenes infection by flow cytometry. Scale bars, 20\u03bcm. Data represent mean \u00b1 s.e.m. Two-tailed Student\u2019s t-test was performed to assess statistical significance except (D). * p<0.05, ** p<0.01, *** p<0.001, n.s., not significant. Repeated-measures one-way ANOVA followed by Dunnett\u2019s test for multiple comparisons in (D), \u01c2\u01c2 p<0.01, \u01c2\u01c2\u01c2 p<0.01.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Gene set variation analysis (GSVA) of each MK subpopulation under control or L. monocytogenes infection, colored by row-scaled GSVA enrichment scores. (B) Antigen processing and presentation score of control MK5, infection MK5, and bone marrow and lung MKs from Yeung et al., 2020. (C) Heatmap showing the row-scaled antigen processing and presentation gene expression of control and infection MK5 cells, comparing with bone marrow MK and lung MK from Yeung et al., 2020. Data represent mean \u00b1first and third quartiles in (B). Two-sample KS test was performed to assess statistical significance in (B).\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) Schema for transfer experiments using tdTomato+ MKs from Pf4Cre+; Rosa26fs-tdTomato+/- mice into recipients 1 day following L. monocytogenes infection. (B) Transfused MKs (red) and sinusoids (green) in the lung of mice after L. monocytogenes infection as indicated in Figure 4M. DAPI, blue; EMCN, green; tdTomato, red. (C) Quantification of transfused intravascular and extravascular MKs in the lung. Scale bar, 20\u03bcm. Data represent mean \u00b1 s.e.m. Two-tailed Student\u2019s t-test was performed to assess statistical significance. *** p<0.001.\n\nTo further explore the dynamic migration of MKs upon pathogen infection, we adapted an ex vivo real-time imaging method to trace MK migration in the bone marrow (Xie et al., 2009). Using Pf4Cre; Rosa26fs-tdTomato mice and ex vivo live imaging approach, we observed that small tdTomato+ MKs rapidly migrated into sinusoids without rupture or platelet release upon infection (Figure 4F, Figure 4\u2014video 1). In contrast, MKs with large sizes showed much slower migration (Figure 4\u2014video 1). Additionally, CXCR4high MKs were decreased in the bone marrow 3 days after L. monocytogenes infection but with a similar proliferation and apoptosis rate compared to CXCR4low MKs (Figure 4G; Figure 4\u2014figure supplement 1C-F), indicating CXCR4high MKs might migrate out of bone marrow. Consistent with this, the frequency of MK5, which enriched CXCR4high MKs, decreased in bone marrow after L. monocytogenes infection in our single-cell atlas (Figure 4\u2014figure supplement 2). Furthermore, we found that L. monocytogenes infection decreased the expression of CXCL12, the ligand of CXCR4 (Sugiyama et al., 2006), in bone marrow but increased CXCL12 expression in the lung, liver, and spleen (Figure 4\u2014figure supplement 3), suggesting that the distinguished CXCL12 levels between tissues might drive the migration of CXCR4high MKs between tissues. In line with this, CXCR4high MKs were increased in the peripheral blood and organs, including the liver, spleen, and lung 3 days after L. monocytogenes infection without an alternation of cell cycle and apoptosis, whereas CXCR4low MKs did not differ except for a slight increase in the liver (Figure 4G; Figure 4\u2014figure supplement 4A-C). Moreover, inflammatory stresses, such as IFN\u03b3 and Lipopolysaccharides (LPS), or L. monocytogenes treatment did not increase CXCR4 expression in CXCR4low MKs (Figure 4H; Figure 4\u2014figure supplement 4D).\n\nTo further explore how MKs migrate between organs during bacterial infection in vivo, we employed Pf4Cre; Rosa26fs-tdTomato, and Pf4Cre; cell membrane-localized tdTomato cell membrane-localized EGFP (Rosa26fs-mTmG) mice in which Tomato or cell membrane-localized EGFP (mGFP) were exclusively expressed in MK lineage (Tiedt et al., 2007). mGFP expressing MKs or Tomato expressing CXCR4high MKs were increased in the liver and spleen 3 days after L. monocytogenes infection (Figure 4I; Figure 4\u2014figure supplement 4E-H), whereas Tomato expressing CXCR4low MKs did not change (Figure 4\u2014figure supplement 4I). To further confirm the tissue infiltration of MKs upon infection, we intravenously injected membrane-localized tdTomato (mTomato) expressing bone marrow cells from Rosa26Rfs-mTmG mice into control recipients or recipients infected with L. monocytogenes 1 day before mTomato+ cell perfusion (Figure 4J). We found that 2 days after mTomato+ cell perfusion, engrafted mTomato+ CXCR4high MKs more efficiently infiltrated into the liver (92.1%) and spleen (92.5%); by contrast, most mTomato+ CXCR4low MKs (66.7%) migrated to the bone marrow (Figure 4K).\n\nAs the lung is an important site for platelet generation (Lefran\u00e7ais et al., 2017), we aligned our MK sc-RNAseq data with lung MKs (Pariser et al., 2021; Yeung et al., 2020), and found that MK5, MK4, and MK3 showed similar gene profiles with lung MKs (Figure 4L). Moreover, MK5 enriched more inflammatory pathway genes, antigen processing, and presentation pathway after L. monocytogenes infection, which enabled MK5 to achieve a more similar transcriptional profile as the lung MKs than normal MK5 (Figure 4\u2014figure supplement 5). Interestingly, we found that engrafted Tomato+ MKs (from Pf4Cre; Rosa26fs-tdTomato mice) more efficiently infiltrated the lungs in the infected recipients as extravascular MKs than in the control recipients (Figure 4M\u2013O and Figure 4\u2014figure supplement 6).\n\n### Acute inflammation-induced emergency megakaryopoiesis generates CXCR4high MKs upon infection\n\nInfection-induced emergency megakaryopoiesis compensates the platelet consumption (Verschoor et al., 2011). Consistently, we observed that MKs were ruptured in the bone marrow 3 days after L. monocytogenes infection to recover the reduced platelets post-L. monocytogenes infection (Couldwell and Machlus, 2019; Nishimura et al., 2015; Figure 5A\u2013C). However, CXCR4high MKs were increased at 18 hr after L. monocytogenes infection and substantially declined at 72 hr in bone marrow, whereas CXCR4low MKs remained unchanged upon infection (Figure 5D). As MK-committed HSCs drive infection-induced emergency megakaryopoiesis (Haas et al., 2015), we asked whether emergency megakaryopoiesis also generates CXCR4high MKs to participate in the host-defense response. To this aim, we employed SclCreER; Rosa26fs-tdTomato mice (G\u00f6thert et al., 2005) to monitor the HSPC derived emergency megakaryopoiesis upon bacterial infection. Eighteen hours after tamoxifen recombining Tomato in HSPCs and L. monocytogenes infection (Figure 5E), we observed that Tomato+ HSPCs derived Tomato+ CXCR4high MKs rapidly increased in the bone marrow, similar to the platelet-generating MKs (tdTomato+ CXCR4low MKs) (Figure 5F), without a noticeable rise of hematopoietic progenitors (Figure 5G). Overall, our observations indicated that CXCR4high MKs might be generated by emergency megakaryopoiesis to stimulate pathogen defense.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78662/elife-78662-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Representative images (A) and statistical analysis (B) of CD41 (green) and DAPI (blue) in bone marrow from control mice or mice 3 days after L. monocytogenes infection. Arrows indicate ruptured MKs, yellow boxes indicate the locations of the magnified images. (C) Platelets in peripheral blood in control mice or mice after L. monocytogenes infection on indicated days. (D) The dynamics percentage of CXCR4high MKs (left) or CXCR4low MKs (right) in the bone marrow of L. monocytogenes-challenged mice within 72 hr of infection. (E) Schema for HSC lineage tracing upon L. monocytogenes infection using SclCreER+; Rosa26fs-tdTomato+/- mice. (F\u2013G) Cell numbers of tdTomato+ CXCR4low MKs and tdTomato+ CXCR4high MKs (F), and tdTomato+ progenitors (G) in the bone marrow of control and L. monocytogenes infected SclCreER+; Rosa26fs-tdTomato+/- recipients 18 hr after L. monocytogenes infection and tamoxifen administration. CMP, common myeloid progenitor; GMP, granulocyte-monocyte progenitor; MEP, megakaryocyte-erythroid progenitor. Scale bars, 20 \u03bcm. Data represent mean \u00b1 s.e.m. Two-tailed Student\u2019s t-test was performed to assess statistical significance, * p<0.05, ** p<0.01, n.s., not significant.\n\n## Discussion\n\nMKs participate in megakaryocyte maturation, platelet activation, and potentially influence neutrophils and the adaptive immune cells (Cunin and Nigrovic, 2019). Accordingly, MKs prevent the spread of dengue virus infection by enhancing the type 1 interferons pathway in murine and clinical biospecimens (Campbell et al., 2019) and contribute to cytokine storms in severe COVID-19 patients (Bernardes et al., 2020; Ren et al., 2021; Stephenson et al., 2021). MKs were reported to express multiple inflammation receptors, such as Fc\u03b3 receptors (Markovic et al., 1995), Toll-like receptors (Beaulieu et al., 2011; Ward et al., 2005), interleukin receptors (Navarro et al., 1991; Yang et al., 2000), and IFN receptors (Negrotto et al., 2011), which might enable MKs to receive inflammation signals and express cytokines. Recent scRNA-seq studies suggested the existence of MK subpopulations for inflammation responses (Liu et al., 2021; Pariser et al., 2021; Sun et al., 2021; Wang et al., 2021a). Here, we identified that MK5 has both MK and immune cell characteristics for platelet generation and immune responses. More importantly, we demonstrated that CXCR4high MKs recruited and stimulated innate myeloid cells by producing TNF\u03b1 and IL-6, for bacterial phagocytosis. Furthermore, CXCR4high MKs had the ability for antigen processing and antigen presentation capacity, which suggested that CXCR4high MKs might contribute to the regulation of adaptive immune function. This is consistent with a previous observation that lung MKs are able to process and present antigens (Pariser et al., 2021). Our data suggested that CXCR4high MKs might contribute to the regulation of adaptive immune function. However, as the distinction between CXCR4high MKs and CXCR4low MKs is not entirely objective, additional markers are warranted to further enrich CXCR4high MKs.\n\nWe observed that MK ablation increased HSPCS and myeloid granulocyte/macrophage progenitor (GMP) in bone marrow under bacterial infection, which is consistent with 5-FU stress (H\u00e9rault et al., 2017). However, increased GMP only increased myeloid cells in the bone marrow but not in other organs, which further supported the role of CXCR4high MKs in promoting the migration of myeloid cells. Normal HSC to MK development takes 11\u201312 days in humans and 4 days in mice; However, emergency megakaryopoiesis takes less than a day to generate MKs upon inflammation stress (Couldwell and Machlus, 2019; Liu et al., 2021; Sun et al., 2021; Figure 5D). Previously, researchers believed that emergency megakaryopoiesis mainly contributes to the replenishment of damaged platelets upon acute inflammation (Haas et al., 2015). We found that inflammation signals could not upregulate CXCR4 in CXCR4low MKs in vitro, although we cannot entirely exclude the plasticity of MKs in vivo. Our data showed that CXCR4high MKs might be generated from the emergency megakaryopoiesis, instead of CXCR4low MKs, to facilitate host-defense responses against bacterial infection.\n\nA recent report showed that the lung is a reservoir of MKs for platelet production (Lefran\u00e7ais et al., 2017). Other works also indicate that lung MKs share a similar transcriptional profile with lung DCs and participate in pathogen infection (Boilard and Machlus, 2021; Pariser et al., 2021). However, the correspondence between MKs in the lung and bone marrow remains unexplored. Neonatal lung MKs lack the immune molecules in adult lung MKs (Pariser et al., 2021), which indicates that lung MKs might have distinct developmental origins. Similarly, MKs are observed to egress and migrate to the pulmonary capillary under stresses (Davis et al., 1997). Our works suggested lung MKs might migrate from bone marrow upon infection challenges, although more detailed investigations are warranted in future studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD41a (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#17-0411-82RRID:AB_1603237</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CXCR4 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#53-9991-80 RRID:AB_953573</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11b (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#12-0112-82 RRID:AB_2734869</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-F4/80 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#17-4801-80 RRID:AB_2784647</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Gr-1 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#108424 RRID:AB_2137485</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ly-6C (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#128022 RRID:AB_10639728</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11c (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#12-0114-82 RRID:AB_465552</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD45.1 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#15-0453-82 RRID:AB_468759</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD45.2 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#109831 RRID:AB_10900256</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD4 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#12-0041-82 RRID:AB_465506</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD8a (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#100707 RRID:AB_312746</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IFN-\u03b3 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#505813 RRID:AB_493312</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IL-4 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#504118 RRID:AB_10898116</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD34 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#11-0341-82 RRID:AB_465021</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Sca-1 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#108114 RRID:AB_493596</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-c-Kit (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#105812 RRID:AB_313221</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD135 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#135314 RRID:AB_2562339</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD3\u03b5 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#100310 RRID:AB_312675</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-B220 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#103210 RRID:AB_312995</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TER-119 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#116210 RRID:AB_313711</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IgM (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#15-5790-82 RRID:AB_494222</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD16/32 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#101333 RRID:AB_2563692</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD127 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#135021 RRID:AB_1937274</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TNF\u03b1 (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#17-7321-81 RRID:AB_469507</td>\n      <td>FACS (1 \u03bcl per test)IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IL-6 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#504507 RRID:AB_10694868</td>\n      <td>FACS (1 \u03bcl per test)IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-BrdU (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#11-5071-42 RRID:AB_11042627</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Endomucin (mouse polyclonal)</td>\n      <td>R&amp;D</td>\n      <td>Cat#AF4666</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD150 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#115908 RRID:AB_345278</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Lineage Panel (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#133307 RRID:AB_11124348</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Goat AF488 (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#A32814 RRID:AB_2762838</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TNF-alpha (mouse monoclonal)</td>\n      <td>Sino Biological</td>\n      <td>Cat#50349-R023</td>\n      <td>2 \u03bcg ml\u20131</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit AF488 (rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#R37118 RRID:AB_2556546</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-OVA257-264 (SIINFEKL) peptide bound to H-2Kb (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#17-5743-82 RRID:AB_1311286</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IL-2 (mouse monoclonal)</td>\n      <td>eBioscience</td>\n      <td>Cat#25-7021-80 RRID:AB_1235007</td>\n      <td>FACS (1 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Diphtheria toxin (DT)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#D0564-1MG</td>\n      <td>40 \u03bcg kg\u20131 body mass</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BrdU (5-Bromo-2\u00b4-Deoxyuridine)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#B5002-250mg</td>\n      <td>125 mg kg\u20131 body mass</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CFSE (5-Carboxyfluorescein, Succinimidyl Ester)</td>\n      <td>Invitrogen</td>\n      <td>Cat#C2210</td>\n      <td>2.5 \u03bcM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GM-CSF</td>\n      <td>Abbkine</td>\n      <td>Cat#PRP2116</td>\n      <td>10 ng ml\u20131</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IL-4</td>\n      <td>novoprotein</td>\n      <td>Cat#CK15</td>\n      <td>10 ng ml\u20131</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#T5648</td>\n      <td>20 mg ml\u20131 corn oil</td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>Chromium Single Cell 3\u2032 GEM, Library &amp; Gel Bead Kit v3</td>\n      <td>10 x Genomics</td>\n      <td>PN-1000075</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial kit</td>\n      <td>Chromium Chip B Single Cell Kit</td>\n      <td>10 x Genomics</td>\n      <td>PN-1000074</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>NCTC clone 929</td>\n      <td>ATCC</td>\n      <td>CCL-1RRID:CVCL_0462</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>B3Z hybridoma CD8 T cell</td>\n      <td>Dr. Nilabh Shastri</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>scRNA sequencing data (raw and processed data)</td>\n      <td>This paper</td>\n      <td>GEO: GSE168224</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>C57BL/6 J</td>\n      <td>Shanghai Model Organisms</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Tg(Pf4-icre)Q3Rsko/J (Pf4Cre)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 008535</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Gt(ROSA) 26Sortm1(HBEGF) Awai/J (Rosa26fs-iDTR)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 007900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (Rosa26fs-mTmG)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 007576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (Rosa26fs-tdTomato)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 007905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>SclCreER mice</td>\n      <td>G\u00f6thert et al., 2005</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Cxcl12tm2.1Sjm/J (Cxcl12fs-DsRed)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 022458</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>C57BL/6-Tg(TcraTcrb)1,100Mjb/J (OT-I)</td>\n      <td>Jackson Laboratory</td>\n      <td>Stock No: 003831</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (L. monocytogenes)</td>\n      <td>10403 S</td>\n      <td>Bishop and Hinrichs, 1987</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cell ranger_3.0.2</td>\n      <td>10 x Genomics</td>\n      <td>tenxRRID:SCR_01695</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R_3.6.3</td>\n      <td>https://cran.r-project.org/</td>\n      <td>R 3.6.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat_3.0.2</td>\n      <td>Butler et al., 2018</td>\n      <td>SeuratRRID:SCR_016341</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ggplot2_3.2.0</td>\n      <td>https://cran.r-project.org/web/packages/ggplot2/index.html</td>\n      <td>ggplot2 RRID:SCR_014601</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>clusterProfiler_3.12.0</td>\n      <td>Yu et al., 2012</td>\n      <td>clusterProfiler RRID:SCR_016884</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pheatmap_1.0.12</td>\n      <td>https://cran.r-project.org/web/packages/pheatmap/</td>\n      <td>pheatmap RRID:SCR_016418</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellPhoneDB_2.1.7</td>\n      <td>Efremova et al., 2020</td>\n      <td>CellPhoneDB RRID:SCR_017054</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CellChat_1.1.3</td>\n      <td>Jin et al., 2021</td>\n      <td>CellChat 1.1.3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>symphony_1.0</td>\n      <td>Kang et al., 2021</td>\n      <td>symphony 1.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MetaNeighbor_1.10.0</td>\n      <td>Crow et al., 2018</td>\n      <td>MetaNeighbor RRID:SCR_016727</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>iMAP_1.0.0</td>\n      <td>Wang et al., 2021b</td>\n      <td>iMAP 1.0.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scmap_ 1.16.0</td>\n      <td>Kiselev et al., 2018</td>\n      <td>Scmap RRID:SCR_017338</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>enrichplot_1.4.0</td>\n      <td>Yu, 2019</td>\n      <td>enrichplot 1.4.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris_8.4</td>\n      <td>Bitplane</td>\n      <td>Imaris RRID:SCR_007370</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo_10</td>\n      <td>BD Bioscience</td>\n      <td>FlowJo RRID:SCR_008520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ_ 1.8.0</td>\n      <td>National Institutes of Health</td>\n      <td>ImageJ RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI (4',6-Diamidino-2-Phenylindole, Dihydrochloride)</td>\n      <td>Thermo Fisher</td>\n      <td>Cat#D1306</td>\n      <td>IF (0.5 \u00b5g/mL)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Corn oil</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#PHR2897</td>\n      <td>Tamoxifen dissolution</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lymphocyte Separation Medium</td>\n      <td>TBD Science</td>\n      <td>Cat#LTS1077</td>\n      <td>Liver cell isolation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nC57BL/6-Tg(Pf4-cre)Q3Rsko/J (Pf4Cre), C57BL/6-Gt(ROSA) 26Sortm1(HBEGF) Awai/J (Rosa26fs-iDTR), C57BL/6-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (Rosa26fs-mTmG), Gt(ROSA)26Sortm9(CAG-tdTomato)Hze (Rosa26fs-tdTomato), CXCL12tm2.1Sjm/J (Cxcl12DsRed) and C57BL/6-Tg(TcraTcrb)1,100Mjb/J (OT-I) mice were obtained from the Jackson Laboratory. SclCreER mice were provided by J. R. Go\u0308thert. All mice were maintained in the C57BL/6 background. Animals were blindly included in the experiments according to genotyping results as a mix of male and female. All animal experiments were performed according to protocols approved by the Sun Yat-sen University animal care and use committee (approval No. SYSU-IACUC-2021-B0617).\n\n### Cell line\n\nB3Z hybridoma T cells were kindly gifted by Dr. Nilabh Shastri (Johns Hopkins University). This cell line was verified to be mycoplasma free by EZdetect PCR Kit for Mycoplasma Detection (HiMedia).\n\n### Bacteria and infections\n\nListeria (L.) monocytogenes infection was performed as described with minor modifications (Edelson and Unanue, 2000; Verschoor et al., 2011). In brief, wild-type L. monocytogenes strain 10,403 S grown to exponential phase at 37 \u00b0C in TSB media was injected intravenously at a dose of 2500 colony-forming units (CFUs) to determine spleen and liver bacterial burdens 3 days after infection. Recombinant L. monocytogenes expressing the chicken ovalbumin peptide (OVA257-264) (L.m. \u2013 OVA257-264) was injected intravenously at a dose of 2500 CFUs to determine activated spleen T cells 7 days after infection. Escherichia (E.) coli wild-type strain 85,344 expressing GFP was constructed as previously described (Feng et al., 2020). GFP-labeled E. coli was grown to exponential phase at 37 \u00b0C in LB media and washed with PBS before being suspended for phagocytosis assays.\n\n### Antibodies for flow cytometry analysis and cell sorting\n\nFor cell sorting and analysis, monoclonal antibodies to CD41 (MWReg30, eBioscience), CXCR4 (2B11, eBioscience), CD11b (M1/70, eBioscience), F4/80 (BM8, eBioscience), Gr-1 (RB6-8C5, Biolegend), Ly6C (HK1.4, Biolegend), CD11c (N418, eBioscience), CD45.1 (A20, eBioscience), CD45.2 (104, Biolegend), CD4 (GK1.5, eBioscience), CD8 (53\u20136.7, Biolegend), INF-\u03b3 (XMG1.2, Biolegend), IL4 (11B11, Biolegend), CD34 (RAM34, eBioscience), Sca-1 (D7, Biolegend), c-kit (2B8, Biolegend), CD135 (A2F10, Biolegend), CD3\u03b5 (145\u20132 C11, Biolegend), CD45R (RA3-6B2, Biolegend), TER-119 (Ter-119, Biolegend), IgM (II/41, eBioscience), F\u03b3RII (93, Biolegend), IL-7R (A7R34, Biolegend), TNF\u03b1 (MP6-XT22, Invitrogen), IL-6 (MP5-20F3, Biolegend), OVA257-264 (SIINFEKL) peptide bound to H-2Kb (eBio25-D1.16 (25-D1.16), Invitrogen) and IL-2 (JES6-5H4, eBioscience) were used where indicated.\n\n### Flow cytometry and cell sorting\n\nBone marrow cells were isolated from mouse femora and tibiae as previously reported (Jiang et al., 2018). Splenocytes were mechanically dissociated in PBS with 2% FBS. Peripheral blood was collected from the retro\u2010orbital sinus and anticoagulated by K2-EDTA. Those three kinds of cells then underwent red blood cell lysis for 5 min using 0.16 M ammonium chloride solution. Liver cells were mechanically dissociated and lysed using 0.16 M ammonium chloride solution, followed by gradient sedimentation using a density reagent (LTS1077, TBD Science) following the manufacturer\u2019s instruction. Cell sorting was performed using a cell sorter (MoFlo Astrios, Beckman Coulter) with a 100 \u03bcm nozzle at a speed of around 5000 cells s\u20131. For intracellular cytokine staining, cells were pretreated with Brefeldin-A (BFA, 10 \u03bcg ml\u20131) for 4 hr at 37\u2103 before staining. For MK antigen presentation detection, MKs were co-culture with 100 \u03bcg ml\u20131 soluble full-length OVA for 24 hr before staining. For IFN\u03b3, LPS and L. monocytogenes treatment, cells were co-culture with 10 ng ml\u20131 IFN-\u03b3 or 30 \u03bcg ml\u20131 LPS for 4, 18, or 24 hr, or 106 L. monocytogenes for 4 hr in a 37\u2103 incubator before staining. Cell analysis was performed on either one of the flow cytometers (Attune NxT, Thermo Fisher; Cytek AURORA, Aurora).\n\n### Single-cell library construction and sequencing\n\nSorted CD41+ FSChigh single cells from four mice of a control MK group and an MK group from mice 3 days upon L. monocytogenes infection each were processed through the Chromium Single Cell Platform using the Chromium Single Cell 3\u2019 Library and Gel Bead Kit v3 (PN-1000075, 10 x Genomics) and the Chromium Single Cell B Chip Kit (PN-1000074, 10 x Genomics) as the manufacturer\u2019s protocol. In brief, over 7000 cells were loaded onto the Chromium instrument to generate single-cell barcoded droplets. Cells were lysed and barcoded reverse transcription of RNA occurred. The library was prepared by following amplification, fragmentation, adaptor, and index attachment then sequenced on an Illumina NovaSeq platform.\n\n### scRNA-seq processing\n\nThe scRNA-seq reads were aligned to the mm10 reference genomes, and unique molecular identifier (UMI) counts were obtained by Cell Ranger 3.0.2. Normalization, dimensionality reduction, and clustering were performed with the Seurat 3.0 R package (Butler et al., 2018). For the control and Listeria (L.) monocytogenes infection group, we loaded one 10 x Genomics well each and detected 5663 and 5948 cells that passed the Cell Ranger pipeline, respectively. To ruled out low quality cells, cells with >12% mitochondrial content or <200 detected genes were excluded with Seurat function subset (percent.mt <12 & nFeature_RNA >200). We ruled out doublets with default parameters of DoubletDecon R package, and 54 control cells and 939 L. monocytogenes infected cells were excluded. Following the standard procedure in Seurat\u2019s pipeline, we identified 3272 MKs from control mice (1712 MKs) and mice with L. monocytogenes infection (1560 MKs) (3897 and 3449 immune cells were discarded, respectively) in combination with MetaNeighbor method. Preprocessed dataset normalization was performed by dividing the UMI counts per gene by the total UMI counts in the corresponding cell and log-transforming before scaling and centering. SCT normalization was performed with the script: object <- SCTransform(object, vars.to.regress = \u201c\"percent.mt\u201d\", verbose = FALSE). Signature genes of each cluster were obtained using the Seurat function FindMarkers with Wilcox test with fold change >1.5 and p value <0.05 after clustering. Heatmaps, individual UMAP plots, and violin plots were generated by the Seurat functions in conjunction with ggplot2 and pheatmap R packages.\n\nSimilarities and UMAP projection between our scRNA-seq data and published datasets GSE152574 (Yeung et al., 2020), GSE158358 (Pariser et al., 2021), GSE137540 (Xie et al., 2020), GSE128074 (Hamey et al., 2021), or GSE132042 (Almanzar et al., 2020) were conducted by MetaNeighbor R package (Crow et al., 2018), iMAP.py and Symphony R package (Kang et al., 2021). iMAP integration was performed using the default parameters except n_top_genes = 2000, min_genes = 0, min_cells = 0, and n_epochs = 100 before doing dimensionality reduction using Uniform Manifold Approximation and Projection method (UMAP, n_neighbors = 30, n_pca = 30). Radar charts were generated with JavaScript written by Nadieh Bremer (https://www.visualcinnamon.com/). Euclidean distances denote the distances between the centroid of each cluster.\n\nCorrelations were calculated based on normalized RNA values, with the function cor and the parameter \u2018method = \u201cspearman\u201d\u2019. Multiple testing correction using the function cor.test with the parameter \u201cmethod = \u201cspearman\u201d and it was applied for Cxcr4 expression correlations. We calculated the similarities between MK1 to 5 with the published MK, immune cell, and myeloid progenitor datasets (Almanzar et al., 2020; Hamey et al., 2021; Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020) using scmap R package (Kiselev et al., 2018). Default parameters and 1000 features were used and threshold >0 was set. Cell-type matches are selected based on the highest value of similarities and the second-highest value which is not 0.01 less than the highest value across all reference cell types.\n\nCytokine, inflammatory, chemokine, and antigen processing and presentation scores were evaluated with the AddModuleScore function of Seurat using genes from KEGG pathway ko04060, cytokine-cytokine receptor interaction; GO:0006954, inflammatory response; chemokine ligands from CellPhoneDB.mouse (Jin et al., 2021) and GO:0019882, antigen processing and presentation.\n\nInteraction analysis of MKs and immune cells were conducted by CellPhoneDB (Efremova et al., 2020) (transformed to human orthologous genes Davidson et al., 2020) and CellChat R package (Jin et al., 2021). Only interactions involving cytokines were shown. Gene Ontology (GO) analysis was performed using clusterProfiler R package (Yu et al., 2012) and visualized using enrichplot R package (Yu, 2019).\n\nGene set enrichment analysis (GSEA) was performed using gsea R package (Subramanian et al., 2005) and visualized using enrichplot R package. Gene lists were pre-ranked by the fold change values of the differential expression analysis using Seurat function FindMarkers. Gene sets for GSEA were obtained from GO database (GO:0002367, cytokine production involved in immune response; GO:0006954, inflammatory response; GO:0008009, chemokine activity; GO:0022409, positive regulation of cell-cell adhesion; GO:0002275, myeloid cell activation involved in immune response).\n\nGene set variation analysis (GSVA) was performed using GSVA R package (H\u00e4nzelmann et al., 2013). GSVA was performed to calculate GSVA score of indicated pathway genes in single cell datasets with the whole protein encoding genes after log normalization of expression values. Gene sets for GSVA were obtained from GO database (GO:0022409, positive regulation of cell-cell adhesion; GO:0002275, myeloid cell activation involved in immune response; GO:0002367, cytokine production involved in immune response; GO:0007596, blood coagulation; GO:0019882, antigen processing and presentation; GO:0034340: response to type I interferon; GO:0034341: response to interferon-gamma; GO:0045088, regulation of innate immune response; GO:0042742, defense response to bacterium; GO:0002819, regulation of adaptive immune response; GO:1903708, positive regulation of hemopoiesis).\n\n### Lung cells preparation for flow cytometry\n\nLungs were removed and digested as described with minor modifications (Lefran\u00e7ais et al., 2017). In brief, removed lungs were placed in 1.5 ml tubes, minced with scissors, and digested with 1 ml digestion buffer (HBSS with 1 mg ml\u20131 collagenase D, 0.1 mg ml\u20131 DNase I, 25 mM HEPES, 2 mM L-glutamine, and 2% FBS) for 30 min at 37\u2103 before filtration through a 100 \u03bcm cell strainer and red blood cell lysis for 5 min. Samples were then filtered through 70 \u03bcm strainers and resuspended for subsequent surface marker staining for flow cytometry.\n\n### Megakaryocyte ablation induction\n\nPf4Cre mice were mated with the Rosa26fs-iDTR line to generate Pf4Cre; Rosa26fs-iDTR mice. Diphtheria toxin (DT, Sigma-Aldrich) was injected intraperitoneally every day at a dose of 40 ng g\u20131 bodyweight into Pf4Cre+; Rosa26fs-iDTR+/\u2013 mice and their cre negative counterparts to induce megakaryocyte ablation as indicated.\n\n### Cre-ER recombinase induction\n\nSclCreER mice were mated with the Rosa26fs-tdTomato line to generate SclCreER; Rosa26fs-tdTomato mice. For induction of cre-ER recombinase, SclCreER, Rosa26fs-tdTomato+/\u2013 mice were injected with tamoxifen intraperitoneally once (2 mg in 0.1 ml corn oil; Sigma-Aldrich).\n\n### BrdU incorporation assay\n\n5-Bromo-2-deoxyuridine (BrdU) was administered at a single dose of 125 mg kg\u20131 body mass by intraperitoneal injection. Whole bone marrow cells were collected 12 hr later and incubated with anti-CD41 and anti-CXCR4 for 1 hr. Cells were washed and then fixed with 4% PFA at 4 \u00b0C overnight. Cells were then permeabilized with 0.5% TritonX-100 for 15 min at room temperature and incubated with 1 mg ml\u20131 DNase I (Roche) for 1 hr at 37 \u00b0C followed by incubating with anti-BrdU (BU20A, eBioscience) for 1 hr at room temperature before being analyzed.\n\n### Annexin V binding assay\n\nFor Annexin V binding assay, bone marrow cells were incubated with cell surface markers for 1 hr at 4 \u00b0C and then washed with PBS before being resuspended with Annexin V binding buffer (Biolegend). Cells were then incubated with FITC Annexin V (Biolegend) for 15 min at room temperature in dark, and then 300 \u03bcl Annexin V binding buffer was added to each tube. Cells were analyzed by a flow cytometer.\n\n### Immunostaining\n\nImmunostaining of frozen sections was performed as described (Jiang et al., 2018). For bone sections, mice were perfused with PBS and 4% paraformaldehyde (PFA). Then the bones were fixed with 4% PFA for 24 hr, decalcified with 0.5 M EDTA for 2 days, and gradient dehydrated by 15% and 30% sucrose for another 2 days. The thick of sections was 30 \u03bcm. We used CD41 (MWReg30; eBioscience; 1:200), Endomucin (R&D; 1:100), CD150 (TC15-12F12.2; Biolegend; 1:100), CD48 (HM48-1; Biolegend; 1:100), CXCR4 (2B11, eBioscience; 1:100) antibodies, and lineage panel (Biolegend; cat #133307; 1:50). Secondary staining was done with donkey anti\u2013goat AlexaFluor 488 (Invitrogen; 1:1000). For the liver and spleen from Pf4Cre+; Rosa26fs-mTmG+/\u2013 mice, and lung from Pf4-cre+; Rosa26fs-tdTomato+/\u2013 mice, we used DAPI (Thermo Fisher; 0.5 \u03bcg ml\u20131) to stain the frozen sections. For phagocytosis analysis, F4/80 (BM8, eBioscience; 1:100), CD11b (M1/70; Invitrogen; 1:100), CD41 (MWReg30; Thermo Fisher; 1:200) and DAPI was used. For sorted MKs, we used CXCR4 (2B11, eBioscience; 1:100), TNF\u03b1 (R023, Sino Biological; 1:100) and IL-6 (MP5-20F3, Biolegend; 1:100) antibody. Secondary staining was performed with donkey anti-rabbit AlexaFluor 488 (Invitrogen; 1:1000). Confocal images were obtained using a spinning-disk confocal microscope (Dragonfly, Andor) and analyzed using Imaris 9.0 software (Oxford Instruments). Three-Dimension plots were generated using Matplotlib (Hunter, 2007).\n\n### Quantitative real-time (qRT-) PCR\n\nFor RT-qPCR, MKs were dissociated in Trizol (Magen), and RNA was extracted following the manufacture\u2019s instruction. RNA was reverse transcribed into cDNA using the TransCript All-in-One First-Strand cDNA Synthesis kit (Transgene). Quantitative PCR was performed using a Bio-Rad CFX 96 touch. The primers for Pf4 were 5\u2019-GGGATCCATCTTAAGCACATCAC-3\u2019 (forward) and 5\u2019-CCATTCTTCAGGGTGGCTATG-3\u2019 (reverse). The primers for Vwf were 5\u2019-CTTCTGTACGCCTCAGCTATG-3\u2019 (forward) and 5\u2019-GCCGTTGTAATTCCCACACAAG-3\u2019 (reverse). The primers for Mpl were 5\u2019-AACCCGGTATGTGTGCCAG-3\u2019 (forward) and 5\u2019-AGTTCATGCCTCAGGAAGTCA-3\u2019 (reverse). The primers for Cxcl12 were 5\u2019-AGGTTCTTATTTCACGGCTTGT-3\u2019 (forward) and 5\u2019-TGGGTGCTGAGACCTTTGAT-3\u2019 (reverse). The primers for Gapdh were 5\u2019-AGGTCGGTGTGAACGGATTTG-3\u2019 (forward) and 5\u2019-GGGGTCGTTGATGGCAACA-3\u2019 (reverse). Gapdh was used as the reference gene for qRT-PCR analysis.\n\n### Transwell migration\n\nTransmigration assays were performed on a transwell with a pore size of 5 \u03bcm (Biofil). CXCR4low MKs or CXCR4high MKs from bone marrow were sorted (5000 cells per well) from control mice and added to the lower chamber with 600 \u03bcl IMDM (Thermo Fisher) plus 10% FBS (Gibco). Peripheral blood cells were collected as described in the \u2018Flow cytometry and cell sorting\u2019 section. 6\u00d7105 peripheral blood cells were resuspended in 100 \u03bcl RPMI 1640 (Gibco) plus 10% FBS and added to the upper insert to continue for 2-hr incubation at 37 \u00b0C, 5% CO2. Cells in the lower chamber were harvested, washed with PBS once, and resuspended with 100 \u03bcl PBS for staining and FACS counting.\n\n### Phagocytosis\n\nBone-marrow-derived macrophages (BMDM) from C57BL/6 mice at 6\u20138 weeks of age were differentiated from bone marrow precursors with minor modifications (Minutti et al., 2019). In brief, bone marrow cells were isolated and propagated for 7 days in DMEM without sodium pyruvate or HEPES (Gibco), containing 20% FBS (Gibco), 30% supernatants of L929 conditioned media, and 1% Pen/Strep (Hyclone) at 37 \u00b0C. Macrophage phagocytosis assays were performed on a transwell plate with a pore size of 3 \u03bcm (Biofil) as described with modifications (Sharif et al., 2014). Briefly, attached cells were replated into 24-well plates, 5\u00d7104 cells per well, on glass coverslips for 24 hr culture. Then 5000 sorted CXCR4low MKs or CXCR4high MKs were added in the upper inserts and placed onto macrophages chambers for additional 16 hr incubation without or with 2 \u03bcg ml\u20131 TNF\u03b1 neutralizing antibody (R023, Sino Biological; 1:100) or 2 \u03bcg ml\u20131 IL-6 neutralizing antibody (MP5-20F3, Biolegend) at 37 \u00b0C, 5% CO2. The upper inserts were discarded and macrophages were washed with PBS without antibiotics and incubated with 105 GFP-labeled E. coli for 2 hr at 37 \u00b0C, 5% CO2. Cells were washed three times with PBS and incubated with DMEM without sodium pyruvate or HEPES (Gibco) with gentamycin (50 \u03bcg ml\u20131) for 30 min at 37 \u00b0C, 5% CO2 to remove adherent bacteria. Cells were then detected by flow cytometry or fixed by cold methanol for 15 min and blocked with 10% BSA overnight, followed by incubation with F4/80 (BM8, eBioscience; 1:100) for 2 hr at room temperature before being quantified using a spinning disk confocal microscope (Dragonfly, Andor).\n\nFor neutrophil phagocytosis, CD11b+ Gr1+ Ly6c\u2013 neutrophils were sorted from the spleen and propagated in RPMI 1640 (Gibco) containing 10% FBS. Neutrophil phagocytosis was performed as described in macrophage phagocytosis assay, except cells were sedimented for 30 min and fixed on glass coverslips after incubated with GFP-E. coli and gentamycin. The capacity of phagocytosis was evaluated by flow cytometry or by fluorescence intensity of GFP-E. coli. using the confocal microscope within macrophages and neutrophils.\n\nFor megakaryocyte phagocytosis, CXCR4low and CXCR4high MKs were sorted from the bone marrow and propagated in RPMI 1640 (Gibco) containing 10% FBS without antibiotics and incubated with 105 GFP-labeled E. coli for 2 hr at 37 \u00b0C, 5% CO2. Cells were washed three times with PBS and incubated with DMEM without sodium pyruvate or HEPES (Gibco) with gentamycin (50 \u03bcg ml\u20131) for 30 min at 37 \u00b0C, 5% CO2 to remove adherent bacteria. Cells were then detected by flow cytometry.\n\n### Bone marrow ex vivo live imaging\n\nPf4Cre+; Rosa26fs-tdTomato+/\u2013 mice were infected with L. monocytogenes for 24 hr. FITC-Dextran (average mol wt 2000000, Sigma-Aldrich) was injected intravenously at a dose of 1.25 mg per mouse before being sacrificed. The ends of the femur below the end of the marrow cavity were cut. The bone marrow plug was gently flushed out of the end of the bone with a 21-gauge blunt needle not to break up the marrow plug. Bone marrow was flushed integrally and fixed onto a glass slide in a chamber, rinsed with RPMI 1640 (Gibco), and covered slightly with a coverslip. The integrity of the vascular structure in the bone marrow was observed and warranted through FITC-Dextran inflorescence before capturing images. Confocal images were obtained every minute on the spinning-disk confocal microscope (Dragonfly, Andor) and analyzed using Imaris 9.0 software (Oxford Instruments).\n\n### In vitro MK culture, MK size, and proplatelet formation measurement\n\nMKs were sorted using a cell sorter (MoFlo Astrios, Beckman Coulter) and cultured in 24-well plates in SFEM (Stem Cell Technologies) plus 100 ng ml\u20131 mTPO (Novoprotein) and 1% Pen/Strep (Hyclone), and incubated at 37 \u00b0C, 5% CO2 for 4 days. Images were taken by a Nikon Ts2R microscope equipped with a Nikon DS-Ri2 camera. Cell size and proplatelet formation were measured on day 3 or day 5 post-cultured, respectively, using Nikon NIS-Elements BR.\n\n### Bone marrow transfer experiments\n\nPf4Cre mice were mated with the Rosa26fs-tdTomato line to generate Pf4Cre+; Rosa26fs-tdTomato+/\u2013 mice. tdTomato+ MKs were isolated from Pf4Cre+; Rosa26fs-tdTomato+/\u2013 mice. Six- to 8-week-old recipient mice were pre-treated with PBS or 2500 CFUs of L. monocytogenes as previously described 1 day before cell perfusion. 1\u00d7105 tdTomato+ MKs were sorted and intravenously injected into control or L. monocytogenes infected mice. tdTomato+ MKs were detected in lungs with immunostaining 2 days after cell perfusion.\n\nmtdTomato+ bone marrow cells were isolated from Pf4Cre\u2013; Rosa26fs-mTmG+/\u2013 mice. 1\u00d7106 mtdTomato+ bone marrow cells were intravenously injected into control or one-day-L. monocytogenes infected mice. mtdTomato+ MKs were detected in bone marrow, liver, and spleen 2 days after cell perfusion.\n\nFor in vivo CXCR4high MK function assay in MK ablation mice, DT was intraperitoneally injected every day for 5 days. On the second and fourth days, 2\u00d7105 sorted wild-type CXCR4high MKs or CXCR4low MKs were intravenously injected into indicated groups. PBS or 2500 CFUs of L. monocytogenes as previously described were injected intravenously on the third day. Spleen and liver were harvested 3 days after infection to determine the bacterial burdens as described.\n\n### T cell reactivation in vitro\n\nSplenocytes (1\u00d7106 cells well\u20131) from control or MK ablated mice after 7 days L.m.-OVA infection were re-stimulated for 4 hr in vitro with OVA peptide (10 \u03bcM) in the presence of Brefeldin-A (BFA, 10 \u03bcg ml\u20131). Activated T cells were then analyzed by a flow cytometer.\n\nFor MK-induced T cell activation, 3\u00d7104 MK subpopulations for each sample were sorted and co-cultured with 100 \u03bcg ml\u20131 soluble full-length OVA for 24 hr, then co-cultured with 6\u00d7104 OT-I CD8+ T cells or B3Z T cells (Karttunen et al., 1992) for 48 hr at 37 \u00b0C in a 5% CO2 incubator as described (Zufferey et al., 2017). OT-I T cell activation was detected by measuring intracellular IL-2 levels. B3Z T cell activation was detected using \u03b2-galactosidase Assay Kit (RG0036, Beyotime). Bone marrow-derived dendritic cells (DCs) were adopted as positive controls for T cell activation assay. To obtain bone marrow-derived DCs, isolated bone marrow cells were cultured in RPMI 1640 with 10 ng ml\u20131 of GM-CSF and 10 ng ml\u20131 of IL-4 as described (Roney, 2019).\n\n### Computational modeling of random myeloid cell localization\n\nWe have performed randomized simulations as in previous reports (Bruns et al., 2014; Jiang et al., 2018) in Python. Images of a 400 \u03bcm \u00d7 400 \u03bcm bone marrow region with CXCR4high and CXCR4low MKs, in which background staining was removed, were used to generate MKs onto which 200 myeloid cells were randomly placed, consistent with an average density of 200 myeloid cells per field. Each simulated run placed 200 random myeloid cells (mean diameter 5 \u03bcm) was repeated 500 times. The shortest Euclidean distance was calculated for each myeloid cell to CXCR4high or CXCR4low MKs. Random and observed distance distributions were compared using the modified nonparametric two-dimensional (2D) KS test as described (Bruns et al., 2014; Jiang et al., 2018).\n\n### Statistical analyses\n\nData are presented as means \u00b1 s.e.m or presented medians, first and third quartiles. For phagocytosis assay and MK size measurement, data were analyzed by a one-dimensional KS test. Differences were considered statistically significant if p<0.05. For the comparison of three-dimensional distances, a two-dimensional KS test was used. The difference was considered statistically significant if p<0.05. For multiple comparisons analysis, data were analyzed by repeated-measures one-way analysis of variance (ANOVA) followed by Dunnett\u2019s test. Differences were considered statistically significant if p<0.05. \u01c2 p<0.05, \u01c2\u01c2 p<0.01, \u01c2\u01c2\u01c2 p<0.001, n.s., not significant. For pairs of measurements, data were analyzed by paired Student\u2019s t-test. Differences were considered statistically significant if p<0.05. # p<0.05, ## p<0.01, ### p<0.001, n.s., not significant. For other experiments except for scRNA-seq analysis, data were analyzed by a two-tailed Student\u2019s t-test. Differences were considered statistically significant if p<0.05. * p<0.05, ** p<0.01, *** p<0.001, n.s., not significant.\n",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "50d81414-e461-4da2-8521-b6c6ffe0e0fd",
+      "submission_id": "6c6abd6b-c96e-4aa1-8499-6a775964b574",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jalees Rehman, https://ror.org/02mpq6x41 University of Illinois at Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78662.sa0](https://doi.org/10.7554/eLife.78662.sa0)\n\nThe manuscript by Wang and colleagues studies the heterogeneity of megakaryocytes using single-cell RNA-seq and identifies a subpopulation of CXCR4-high megakaryocytes with immune modulatory roles. Functional studies in this paper show that this subpopulation of megakaryocytes promotes bacterial phagocytosis by macrophages and neutrophils. The compelling evidence for these findings in the manuscript and the fundamental significance of identifying mechanisms by which megakaryocyte subpopulations can impact host defense make this work of interest to researchers in the fields of immunology, hematopoiesis and megakaryocyte biology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jalees Rehman, https://ror.org/02mpq6x41 University of Illinois at Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78662.sa1](https://doi.org/10.7554/eLife.78662.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Megakaryocyte derived immune-stimulating cells regulate host-defense immunity against bacterial pathogens\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Jalees Rehman as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos van der Meer as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Please clarify whether these are Megakaryocyte-derived immune cells (MDICs) or simply a subpopulation of megakaryocytes (MK5). The presented data does not provide any evidence for the \"derivation\" process such as differentiation factors that convert the megakaryocyte subpopulation MK5 into a different \"immune cell\". Therefore, it is requested to change the MDIC term and instead use an expression that indicates that these cells are a subset of megakaryocytes.\n\n2. Please perform studies to ascertain the phagocytosis potential of this megakaryocyte subset. Are they capable of direct bacterial phagocytosis in the absence of other immune cells or do they only enhance bacterial phagocytosis by other immune cells?\n\n3. Does this CXCR4 high megakaryocyte subset overlap with other megakaryocyte subsets demonstrating immune cell functions that have been recently reported such as antigen processing or antigen presentation? Assessing their antigen processing or antigen presentation capacity would help define the roles of this MK subset in host defense.\n\n4. Does the CXCR4 high megakaryocyte subset also generate platelets or is their platelet generation function diminished compared to other megakaryocyte subsets, thus indicating that they are more specialized for immune functions.\n\n5. How is this CXCR4 subset generated and what is their fate after infusion? Does CXCR4 get upregulated during infection on non-CXCR4 megakaryocytes? This would suggest that they are not terminally programmed to be CXCR4 high but that other megakaryocyte subsets can become MK5/CXCR4 high and take on such host defense functions.\n\n6. Conclusions and generalizations need to be adjusted based on the comments of the reviewers as provided below. One specific example is the need to moderate claims about the role of megakaryocytes in adaptive immunity as this was not addressed in depth. Other examples of conclusions that need to be moderated are also listed by the reviewers in their specific comments.\n\n7. Some technical details need to be addressed such as clarifying flow cytometry gating strategies or describing the new imaging approach. Description of the imaging approach and objective quantification of imaging data is essential to increase the robustness of the conclusions. The goal is for readers to be able to understand and replicate the experiments. More protein level quantifications of cytokines using flow cytometry or ELISA are also required to justify several of the conclusions.\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific suggestions to include in the manuscript would include:\n\n1. Perform antigen processing assays with CXCR4 high and CXCR4 low MKs to then assess whether this is the subset that drives the adaptive immune modulatory function\n\n2. Use CXCR4 low cells and expose them ex vivo to inflammatory or infectious stimuli to assess whether they can become CXCR4 high. This would assess the plasticity of the MK subsets.\n\nReviewer #2 (Recommendations for the authors):\n\nPrevious studies suggested that immune MKs are capable of phagocytosis themselves and not just supporting immune cells. Are MDIC cells capable of direct bacterial phagocytosis?\n\nIn Figure 2, it's unclear if the myeloid cell-CXCR4high MK association is simply a result of the expansion of myeloid cells upon infection. Is this association observed in homeostasis?\n\nWhat happens to CXCR4 expression on MKs upon infection? It would be important to understand if CXCR4low MKs are \"reprogrammed\" into CXCR4high MKs upon infection.\n\nOther technical concerns:\n\n\u2013 Elisa or flow cytometry analyses would be more accurate to evaluate TNF\u03b1, IL-6, and CXCL12 levels.\n\n\u2013 The authors describe a new method of \"bone marrow live imaging\", however it's unclear how imaging of flushed bone marrow plugs ex vivo accurately reflects live imaging.\n\n\u2013 It's unclear the gating strategy used to quantify bone marrow, liver and spleen myeloid cell populations in Figure 3 as some of these populations rely on tissue specific markers.\n\n\u2013 In Figure 4 supplemental 3, it's unusual to present CXCL12 levels as mRNA expression from total cells in the tissue, and it's even more surprising that the authors can detect accurate levels in organs such as the bone marrow or spleen since only small subsets of cells express CXCL12 in the tissue.\n\n\u2013 Small concern, in Figure 4G the results are presented in different formats alternating between absolute number quantification or percentages.\n\nReviewer #3 (Recommendations for the authors):\n\nThere are a number of specific things the authors can do to improve this manuscript.\n\n1. The term MDIC should be reconsidered \u2013 especially the meaning of the D \u2013 are they Mk derived, or a subset of Mks? Since seem to be a subset, the derived is not really appropriate.\n\n2. The authors indicate that the MDIC enhance the phagocytosis capacity of other cells \u2013 but do they also phagocytose bacteria? Is this contact dependent or independent to better show is a secreted product or not.\n\n3. The DT model ablates both Mks and platelets. Therefore many of the changes in bacteria and immune cells could be platelet driven, not Mk or MDIC driven. This must be reconciled or the conclusions drastically restated in Figure 3.\n\n4. Where do the infused MDIC go? Marrow, spleen, lung or all of the above? Do they make platelets and if so better or worse than Mk1 or Mk2 populations?\n\n5. Do any of the lung migrated Mk become extravascular lung Mks, as 2/3 of lung Mks are extravascular? Or do they stay intravascular platelet producing Mks?\n",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "481e9209-af31-434f-865a-bc09a3bb6605",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C1",
+      "claim": "Megakaryocytes (MKs) continuously produce platelets to support hemostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Megakaryocytes (MKs) continuously produce platelets to support hemostasis and form a niche for hematopoietic stem cell maintenance in the bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations in the introduction section (Deutsch and Tomer, 2006).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "2095e656-a656-4905-a724-af02fd47da91",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C2",
+      "claim": "Megakaryocytes form a niche for hematopoietic stem cell maintenance in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Megakaryocytes (MKs) continuously produce platelets to support hemostasis and form a niche for hematopoietic stem cell maintenance in the bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction (Bruns et al., 2014; Zhao et al., 2014).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6fb9ae1b-208c-49ca-b0fe-6b50e59df541",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C3",
+      "claim": "Using single-cell sequencing, a CXCR4 highly expressed MK subpopulation was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell sequencing, we identified a CXCR4 highly expressed MK subpopulation, which exhibited both MK-specific and immune characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by scRNA-seq data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "d06821bf-a122-4617-8973-f3969c1b07c0",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C4",
+      "claim": "CXCR4high MKs exhibited both MK-specific and immune characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell sequencing, we identified a CXCR4 highly expressed MK subpopulation, which exhibited both MK-specific and immune characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis shown in Figure 1C-D and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "2c2d8141-d886-40b9-80ce-3e61885bd07c",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C5",
+      "claim": "CXCR4high MKs interacted with myeloid cells to promote their migration.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs interacted with myeloid cells to promote their migration and stimulate the bacterial phagocytosis of macrophages and neutrophils by producing TNF\u03b1 and IL-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transwell migration assays shown in Figure 2D and spatial distribution analysis in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "70c5050a-6d04-48f4-812f-7620f382a7a5",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C6",
+      "claim": "CXCR4high MKs stimulate the bacterial phagocytosis of macrophages and neutrophils by producing TNF\u03b1 and IL-6.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs interacted with myeloid cells to promote their migration and stimulate the bacterial phagocytosis of macrophages and neutrophils by producing TNF\u03b1 and IL-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phagocytosis assays (Figure 2E-H) and cytokine blocking experiments (Figure 2K-N).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6bf85526-8193-4ace-8c74-c9db127769f6",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C7",
+      "claim": "CXCR4high MKs were capable of phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs were also capable of phagocytosis, processing, and presenting antigens to activate T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial phagocytosis assays shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "19eaef14-cc82-435b-8083-066aaae07e94",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C8",
+      "claim": "CXCR4high MKs were capable of processing and presenting antigens to activate T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs were also capable of phagocytosis, processing, and presenting antigens to activate T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by antigen presentation assays (Figure 3G-H) and T cell activation experiments (Figure 3\u2014figure supplement 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "54343570-2912-4dcf-b797-e5a6906a9a6c",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C9",
+      "claim": "CXCR4high MKs egressed circulation and infiltrated into the spleen, liver, and lung upon bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CXCR4high MKs also egressed circulation and infiltrated into the spleen, liver, and lung upon bacterial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data (Figure 4G, I, K) and immunofluorescence imaging (Figure 4N-O).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "65c3d921-65ea-495c-9cd6-eed17909949f",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C10",
+      "claim": "Ablation of MKs suppressed the innate immune response under Listeria monocytogenes challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of MKs suppressed the innate immune response and T cell activation to impair the anti-bacterial effects in mice under the Listeria monocytogenes challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial burden measurements (Figure 3C) and myeloid cell quantification (Figure 3D-E) in MK-ablated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "15f76ae7-2bf2-436d-8408-52d452ec8777",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C11",
+      "claim": "Ablation of MKs suppressed T cell activation under Listeria monocytogenes challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of MKs suppressed the innate immune response and T cell activation to impair the anti-bacterial effects in mice under the Listeria monocytogenes challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by T cell activation assays shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9dcea0da-eb1f-4493-8a32-5275a5b82d04",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C12",
+      "claim": "CXCR4high MKs were generated from infection-induced emergency megakaryopoiesis in response to bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hematopoietic stem/progenitor cell lineage-tracing mouse lines, we show that CXCR4high MKs were generated from infection-induced emergency megakaryopoiesis in response to bacterial infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by lineage tracing experiments using SclCreER; Rosa26fs-tdTomato mice shown in Figure 5E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9c8022f5-442a-42c4-836e-db4b870fe77b",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C13",
+      "claim": "MK progenitors undergo multiple rounds of endomitosis during maturation to achieve polyploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "MK progenitors undergo multiple rounds of endomitosis during maturation to achieve polyploidy (Chang et al., 2007; Deutsch and Tomer, 2013; Machlus and Italiano, 2013; Nagata et al., 1997; Patel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "37981810-49aa-480b-877a-9657a78b9301",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C14",
+      "claim": "MKs and their progenitors migrate between distinct microenvironments and organs for their proliferation, maturation, and biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "MKs and their progenitors migrate between distinct microenvironments and organs for their proliferation, maturation, and biological functions (Avecilla et al., 2004; Fuentes et al., 2010; Lefran\u00e7ais et al., 2017; Pal et al., 2020; Tamura et al., 2016; Wang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "3f7fa81c-fe35-4004-9e23-2b65e5c1f354",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C15",
+      "claim": "Mature MKs interact with HSCs and constitute a unique niche to preserve HSC quiescence in the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature MKs interact with HSCs and constitute a unique niche to preserve HSC quiescence in the bone marrow (Bruns et al., 2014; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "5cd463b6-ea85-4f4b-a827-aad62f365363",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C16",
+      "claim": "MKs interact with osteoblasts to influence the attraction and retention of hematopoietic stem and progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MKs also interact with other niche cells, such as osteoblasts (Dominici et al., 2009; Olson et al., 2013), non-myelinating Schwann cells (Jiang et al., 2018; Yamazaki et al., 2011), and blood vessels (Avecilla et al., 2004; Sa\u00e7ma et al., 2019) to further influence the attraction and retention of hematopoietic stem and progenitor cells during homeostasis and stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "60ce5e1b-d2da-4332-a9ec-3d4c53dce4a8",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C17",
+      "claim": "MKs interact with non-myelinating Schwann cells to influence the attraction and retention of hematopoietic stem and progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MKs also interact with other niche cells, such as osteoblasts (Dominici et al., 2009; Olson et al., 2013), non-myelinating Schwann cells (Jiang et al., 2018; Yamazaki et al., 2011), and blood vessels (Avecilla et al., 2004; Sa\u00e7ma et al., 2019) to further influence the attraction and retention of hematopoietic stem and progenitor cells during homeostasis and stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "4312938d-7838-4f2b-9b91-6211714c3936",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C18",
+      "claim": "MKs interact with blood vessels to influence the attraction and retention of hematopoietic stem and progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MKs also interact with other niche cells, such as osteoblasts (Dominici et al., 2009; Olson et al., 2013), non-myelinating Schwann cells (Jiang et al., 2018; Yamazaki et al., 2011), and blood vessels (Avecilla et al., 2004; Sa\u00e7ma et al., 2019) to further influence the attraction and retention of hematopoietic stem and progenitor cells during homeostasis and stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "f0982ade-4ec4-4fb8-a1fc-a17ff8628ca4",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C19",
+      "claim": "MK-biased hematopoietic stem cells induce emergency megakaryopoiesis to actively generate MKs upon acute inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "MK-biased hematopoietic stem cells (HSCs) induce emergency megakaryopoiesis to actively generate MKs upon acute inflammation, which can efficiently replenish the platelet loss during inflammatory insult (Haas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "2e638814-720e-4626-b7ca-165a64604dab",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C20",
+      "claim": "MKs express multiple immune receptors, such as IgG Fc receptors and toll-like receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "MKs express multiple immune receptors, such as IgG Fc receptors and toll-like receptors (TLRs), enabling them to sense inflammation directly (Cunin and Nigrovic, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "8d3ae675-5f6d-4fa3-9d02-60ae02a40971",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C21",
+      "claim": "Mature MKs express major histocompatibility complex (MHC) to activate antigen-specific CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature MKs also express major histocompatibility complex (MHC) to activate antigen-specific CD8+ T cells and enhance CD4+ T cells and Th17 cell responses through stimulating antigen processing (Finkielsztein et al., 2015; Pariser et al., 2021; Zufferey et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "69f5b924-8203-43c8-92fe-c552d46f55a5",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C22",
+      "claim": "MKs produce IL-1\u03b1 and IL-1\u03b2 to promote arthritis susceptibility in mice resistant to arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MKs produce IL-1\u03b1 and IL-1\u03b2 to promote arthritis susceptibility in mice resistant to arthritis (Cunin et al., 2017) and produce CXCL1 and CXCL2 to promote neutrophil efflux from the bone marrow (K\u00f6hler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "c254a4af-9d65-49d5-b318-41e1706f1910",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C23",
+      "claim": "MKs produce CXCL1 and CXCL2 to promote neutrophil efflux from the bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MKs produce IL-1\u03b1 and IL-1\u03b2 to promote arthritis susceptibility in mice resistant to arthritis (Cunin et al., 2017) and produce CXCL1 and CXCL2 to promote neutrophil efflux from the bone marrow (K\u00f6hler et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "faff3934-2c82-4288-aec6-a5f48f4922dd",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C24",
+      "claim": "Lung MKs contribute to thrombosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung MKs contribute to thrombosis (Lefran\u00e7ais et al., 2017) and, more interestingly, participate in immune responses (Pariser et al., 2021), although the relationship between lung MKs and bone marrow circulating MKs (Nishimura et al., 2015) remains unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "26ffbcf8-439f-4bab-a108-072c4e6109ed",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C25",
+      "claim": "Lung MKs participate in immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung MKs contribute to thrombosis (Lefran\u00e7ais et al., 2017) and, more interestingly, participate in immune responses (Pariser et al., 2021), although the relationship between lung MKs and bone marrow circulating MKs (Nishimura et al., 2015) remains unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "c53c3c45-d891-40f7-b2b7-5c302186f3c0",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C26",
+      "claim": "MKs are heterogeneous and contain subpopulations that express multiple immune genes and are involved in inflammation response.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the recent single-cell atlas shows that MKs are heterogeneous and contain subpopulations that express multiple immune genes and are involved in inflammation response (Liu et al., 2021; Pariser et al., 2021; Sun et al., 2021; Yeung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "cfccdf88-cce5-4ab4-ab9f-535f413cd03d",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C27",
+      "claim": "The scRNA-seq successfully detected 5368 high-quality cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scRNA-seq successfully detected 5368 high-quality cells (Figure 1\u2014figure supplement 1B,C), in which one MK cluster (1712 cells) and six immune cell clusters (3656 cells) were annotated according to their gene profile (Figure 1\u2014figure supplement 1D-G) and the alignment with published scRNA-seq data (Almanzar et al., 2020; Hamey et al., 2021; Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by scRNA-seq data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e5676df8-bf8d-4c45-9112-5e0b87c7d3fb",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C28",
+      "claim": "One MK cluster (1712 cells) and six immune cell clusters (3656 cells) were annotated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scRNA-seq successfully detected 5368 high-quality cells (Figure 1\u2014figure supplement 1B,C), in which one MK cluster (1712 cells) and six immune cell clusters (3656 cells) were annotated according to their gene profile (Figure 1\u2014figure supplement 1D-G) and the alignment with published scRNA-seq data (Almanzar et al., 2020; Hamey et al., 2021; Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by scRNA-seq data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9ef36933-f61c-4a80-b244-d27816a2ab05",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C29",
+      "claim": "1712 MKs were re-clustered into five subpopulations, termed MK1 to MK5.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we re-clustered the transcriptionally enriched 1712 MKs into five subpopulations, termed MK1 to MK5 (Figure 1B; Figure 1\u2014figure supplement 3A,B), which were further confirmed by the integrated scRNA-seq analysis platform to rule out the potential immune cell contamination (Pariser et al., 2021; Xie et al., 2020; Yeung et al., 2020; Figure 1\u2014figure supplement 3C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by scRNA-seq data shown in Figure 1B and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "62787695-c8b3-4a47-9683-06d9b174383b",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C30",
+      "claim": "MK1 and MK2 highly expressed nuclear division, DNA replication and repair genes for endomitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Enriched signature genes by Gene Ontology exhibited that MK1 and MK2 highly expressed nuclear division, DNA replication and repair genes for endomitosis (Figure 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Gene Ontology analysis shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e9bd286e-1308-4255-9b08-952f98d5673c",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C31",
+      "claim": "MK3 enriched blood coagulation and thrombosis genes for platelet generation.",
+      "claim_type": "EXPLICIT",
+      "source": "MK3 enriched blood coagulation and thrombosis genes for platelet generation (Figure 1C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Gene Ontology analysis shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "d840a942-f419-4dea-bda4-351cf36ff1f2",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C32",
+      "claim": "MK5 enriched cell migration and immune response genes.",
+      "claim_type": "EXPLICIT",
+      "source": "MK5 enriched cell migration and immune response genes (Figure 1C,D; Figure 1\u2014figure supplement 4A-E), cytokine, chemokine (Figure 1E,F; Figure 1\u2014figure supplement 4F), and genes involved in immune cell interaction (Figure 1G, Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Gene Ontology analysis shown in Figure 1C-D and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "01cae6f7-d58b-42d0-88ae-0cce1b54dad6",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C33",
+      "claim": "MK5 highly expressed Cxcr4 than other MK subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that MK5 highly expressed Cxcr4 than other MK subpopulations (Figure 1H,I), although most MKs express CXCR4 (Hamada et al., 1998; Figure 1\u2014figure supplement 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis shown in Figure 1H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e6469ad4-c2ee-4807-bea3-f99a3da8147f",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C34",
+      "claim": "CXCR4high MKs expressed MK markers.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "0654939a-a862-4d68-80e7-9d62057f802f",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C35",
+      "claim": "CXCR4high MKs were mainly polyploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence imaging shown in Figure 1\u2014figure supplement 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "2e0f4470-612f-4764-81ba-b26aae3b2622",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C36",
+      "claim": "CXCR4high MKs had platelet generation ability.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proplatelet formation assays shown in Figure 1\u2014figure supplement 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "feaf3029-ceeb-4a13-b8f9-803fee7db055",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C37",
+      "claim": "CXCR4high MKs have relatively low polyploidy compared to CXCR4low MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by polyploidy distribution analysis shown in Figure 1\u2014figure supplement 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "b3169372-64f5-43db-b544-7c2153253ed4",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C38",
+      "claim": "CXCR4high MKs have smaller cell size compared to CXCR4low MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we found that CXCR4high MKs expressed MK markers (Figure 1\u2014figure supplement 6B), were mainly polyploid cells (Figure 1\u2014figure supplement 6C), and had platelet generation ability (Figure 1\u2014figure supplement 6D), although they have relatively low polyploidy (Figure 1\u2014figure supplement 6E) and smaller cell size (Figure 1\u2014figure supplement 6F-H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell size measurements shown in Figure 1\u2014figure supplement 6F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e3e59545-2335-473a-b5ad-83a010767bf0",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C39",
+      "claim": "CXCR4high MKs generated platelets in lower efficiencies compared to CXCR4low MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs generated platelets in lower efficiencies compared to CXCR4low MKs (Figure 1\u2014figure supplement 6D), suggesting CXCR4high MKs might be specialized for immune functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proplatelet formation assays shown in Figure 1\u2014figure supplement 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e825ac6f-cc97-43f8-946c-bd1354a1e496",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C40",
+      "claim": "CXCR4high MKs might be specialized for immune functions.",
+      "claim_type": "EXPLICIT",
+      "source": "CXCR4high MKs generated platelets in lower efficiencies compared to CXCR4low MKs (Figure 1\u2014figure supplement 6D), suggesting CXCR4high MKs might be specialized for immune functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that CXCR4high MKs have lower platelet generation efficiency but high immune gene expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "dd26346e-ee07-4f8d-b08e-3342b5f1fc9a",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C41",
+      "claim": "CXCR4high MKs were more dramatically associated with myeloid cells in the bone marrow of mice 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that CXCR4high MKs were more dramatically associated with myeloid cells in the bone marrow of mice 3 days after L. monocytogenes infection, which was a significant increase than the association between myeloid cells and CXCR4low MKs or the association between randomly placed myeloid cells and CXCR4high MKs (Figure 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial distribution analysis shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "50490966-e83d-48c8-ba71-728e911694af",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C42",
+      "claim": "The myeloid cell-CXCR4high MK association (mean distance 15.36 \u03bcm) was significantly closer than the myeloid cell-CXCR4low MKs association (mean distance 25.62 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "The myeloid cell-CXCR4high MK association (mean distance 15.36 \u03bcm) was significantly closer than the myeloid cell-CXCR4low MKs association (Figure 2C; mean distance 25.62 \u03bcm, p=7.0 \u00d7 10\u20134 by KS test), and the association between randomly placed myeloid cells and CXCR4high MKs [35.37 \u03bcm, p (\u03bc<15.36)=1.8 \u00d7 10\u201310] in the bone marrow of mice 3 days after L. monocytogenes infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by distance measurements and statistical analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "5a020605-0cf4-41d5-9c00-2e044c059ff7",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C43",
+      "claim": "CXCR4high MKs, but not CXCR4low MKs, effectively promoted myeloid cell mobilization in transwell assays.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore how CXCR4high MKs regulate myeloid cells, we interestingly found that CXCR4high MKs, but not CXCR4low MKs, effectively promoted myeloid cell mobilization in our transwell assays (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transwell migration assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "ea651feb-6bcc-4afa-a965-858978c4b092",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C44",
+      "claim": "CXCR4high MKs, but not CXCR4low MKs, efficiently enhanced the bacterial phagocytosis of neutrophils and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CXCR4high MKs, but not CXCR4low MKs, efficiently enhanced the bacterial phagocytosis of neutrophils and macrophages (Figure 2E\u2013H; Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phagocytosis assays shown in Figure 2E-H and Figure 2\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e9a9ffb1-27c9-49de-8e58-490a00d1c5fd",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C45",
+      "claim": "The high expression of Cxcr4 was positively correlated with immune cell-stimulating cytokines, such as Ccl6, Tnf, and Il6 in MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scRNA-seq also exhibited that the high expression of Cxcr4 was positively correlated with immune cell-stimulating cytokines, such as Ccl6, Tnf, and Il6 (Li et al., 2018; Rothe et al., 1993; Shapouri-Moghaddam et al., 2018) in MKs (Figure 2I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "ff98ae37-7076-40c7-9985-fec534f0f771",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C46",
+      "claim": "CXCR4high MKs had higher TNF\u03b1 and IL-6 protein levels than CXCR4low MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CXCR4high MKs had higher TNF\u03b1 and IL-6 protein levels than CXCR4low MKs (Figure 2J; Figure 2\u2014figure supplement 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry and immunofluorescence data shown in Figure 2J and Figure 2\u2014figure supplement 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9b2bb39d-a3d6-4f82-89fc-a7a55a915d30",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C47",
+      "claim": "The TNF\u03b1 and IL-6 levels in CXCR4high MKs were comparable to macrophages from mice 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The TNF\u03b1 and IL-6 levels in CXCR4high MKs were comparable to macrophages from mice 3 days after L. monocytogenes infection (Figure 2\u2014figure supplement 2E), which are known as the primary cellular source of TNF\u03b1 and IL-6 upon infection (Shapouri-Moghaddam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data shown in Figure 2\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "68a67941-c223-4b54-82e1-8dbf203a0d7e",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C48",
+      "claim": "Anti-TNF\u03b1 and anti-IL-6 blocking antibodies compromised the role of CXCR4high MKs in stimulating bacterial phagocytosis of neutrophils and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, anti-TNF\u03b1 and anti-IL-6 blocking antibodies compromised the role of CXCR4high MKs in stimulating bacterial phagocytosis of neutrophils and macrophages (Figure 2K\u2013N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phagocytosis assays with blocking antibodies shown in Figure 2K-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "8b5c26d7-ac90-4f3a-84c0-a4d97889ab1e",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C49",
+      "claim": "MK ablation increased the number of hematopoietic stem and progenitor cells and myelopoiesis in the bone marrow upon infection.",
+      "claim_type": "EXPLICIT",
+      "source": "MK ablation increased the number of hematopoietic stem and progenitor cells and myelopoiesis in the bone marrow upon infection (Figure 3\u2014figure supplement 1A-D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "2c7cb457-186c-4b11-a4d3-335c6076ea61",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C50",
+      "claim": "MK ablation dramatically increased the bacterial burdens in the liver and spleen 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, MK ablation dramatically increased the bacterial burdens in the liver and spleen 3 days after L. monocytogenes infection (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial burden measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "c4ebc922-e7c1-4721-a366-95856017e5b2",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C51",
+      "claim": "MK ablation reduced the number of myeloid cells, including monocytes, macrophages, dendritic cells (DCs), and neutrophils, in the liver and spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that MK ablation reduced the number of myeloid cells, including monocytes, macrophages, dendritic cells (DCs), and neutrophils, in the liver and spleen (Figure 3D,E; Figure 3\u2014figure supplement 1E,F), suggesting the role of MKs in promoting myeloid cells against pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3D-E and Figure 3\u2014figure supplement 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "4e9271e8-4ae8-4531-9f17-d3acacf3d202",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C52",
+      "claim": "CXCR4high MKs were able to phagocytose bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that CXCR4high MKs were able to phagocytose bacteria and presented the ovalbumin (OVA) antigens on their surface via MHC-I (Figure 3F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phagocytosis assays shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9329ef4a-42c4-4354-9e49-f3444626c49a",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C53",
+      "claim": "CXCR4high MKs presented the ovalbumin (OVA) antigens on their surface via MHC-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that CXCR4high MKs were able to phagocytose bacteria and presented the ovalbumin (OVA) antigens on their surface via MHC-I (Figure 3F,G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by MHC-I-OVA staining shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "387aad7f-aa52-4f62-b168-f1f3031fa7b1",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C54",
+      "claim": "OVA antigens presented by CXCR4high MKs activated OT-I CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, OVA antigens presented by CXCR4high MKs activated OT-I CD8+ T cells (Figure 3H) and B3Z T cells (Figure 3\u2014figure supplement 2), a T cell hybridoma which expresses TCR that specifically recognizes OVA (Karttunen et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by T cell activation assays shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "54c246aa-0a6f-462d-a0a1-e910e5c0ad39",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C55",
+      "claim": "OVA antigens presented by CXCR4high MKs activated B3Z T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, OVA antigens presented by CXCR4high MKs activated OT-I CD8+ T cells (Figure 3H) and B3Z T cells (Figure 3\u2014figure supplement 2), a T cell hybridoma which expresses TCR that specifically recognizes OVA (Karttunen et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by T cell activation assays shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "fb387a5d-dbcb-43b7-b35e-a0d24f97ec48",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C56",
+      "claim": "MK ablation dramatically reduced the number of CD4+ IFN\u03b3+ Th1, CD4+ IL4+ Th2, and CD8+ cytotoxic T lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, MK ablation dramatically reduced the number of CD4+ IFN\u03b3+ Th1, CD4+ IL4+ Th2, and CD8+ cytotoxic T lymphocytes but did not impact the total number of CD4+ T cells and CD8+ T cells (Figure 3J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "b4007e3a-d61c-44d5-bc11-f2772c051440",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C57",
+      "claim": "The infusion with CXCR4high MKs, but not CXCR4low MKs, partially rescued the bacterial clearance defect in MK ablation mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that the infusion with CXCR4high MKs, but not CXCR4low MKs, partially rescued the bacterial clearance defect in MK ablation mice (Figure 3L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bacterial burden measurements shown in Figure 3L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "fa43d9e9-c247-4798-ad27-5a6f232d8dcd",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C58",
+      "claim": "~80% of MKs directly contacted blood vessels 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, our spatial distribution analysis showed that ~80% of MKs directly contacted blood vessels 3 days after L. monocytogenes infection, which was much higher than in control mice (~40%) (Figure 4A,B; Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial distribution analysis shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "fd8ef34b-fef7-4da1-8ccd-3fe2e5016ec6",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C59",
+      "claim": "More CXCR4high MKs, with small cell sizes, were tightly associated with blood vessels and trapped in the sinusoid than CXCR4low MKs 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, more CXCR4high MKs, with small cell sizes (Figure 1\u2014figure supplement 6F-H), were tightly associated with blood vessels and trapped in the sinusoid than CXCR4low MKs 3 days after L. monocytogenes infection (Figure 4C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial distribution analysis and immunofluorescence imaging shown in Figure 4C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "42936e46-025d-4d68-93aa-164ffeb357ff",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C60",
+      "claim": "L. monocytogenes infection did not influence the association between MKs and HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, L. monocytogenes infection did not influence the association between MKs and HSCs (Figure 4A,E), albeit the critical role of perivascular MKs in maintaining HSC quiescence (Bruns et al., 2014; Itkin et al., 2016; Zhao et al., 2014) and the dramatic HSC activation upon infection (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial distribution analysis shown in Figure 4A and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "98a5fff9-c8fe-47d4-8e4c-3c03cd418fa2",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C61",
+      "claim": "Small tdTomato+ MKs rapidly migrated into sinusoids without rupture or platelet release upon infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Pf4Cre; Rosa26fs-tdTomato mice and ex vivo live imaging approach, we observed that small tdTomato+ MKs rapidly migrated into sinusoids without rupture or platelet release upon infection (Figure 4F, Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 4F and Figure 4\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "163bf08d-ab2f-4474-a71c-3ba4607fe9dc",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C62",
+      "claim": "MKs with large sizes showed much slower migration than small MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MKs with large sizes showed much slower migration (Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by live imaging data shown in Figure 4\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "c097b93a-ab53-4b44-b79d-cf9e5f76a78b",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C63",
+      "claim": "CXCR4high MKs were decreased in the bone marrow 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CXCR4high MKs were decreased in the bone marrow 3 days after L. monocytogenes infection but with a similar proliferation and apoptosis rate compared to CXCR4low MKs (Figure 4G; Figure 4\u2014figure supplement 1C-F), indicating CXCR4high MKs might migrate out of bone marrow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "ae286a78-8bde-4ef8-bdfd-04fa08d076c0",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C64",
+      "claim": "The frequency of MK5, which enriched CXCR4high MKs, decreased in bone marrow after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the frequency of MK5, which enriched CXCR4high MKs, decreased in bone marrow after L. monocytogenes infection in our single-cell atlas (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by scRNA-seq data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "4b5f5345-deaa-4501-9bd5-f90496073213",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C65",
+      "claim": "L. monocytogenes infection decreased the expression of CXCL12 in bone marrow but increased CXCL12 expression in the lung, liver, and spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that L. monocytogenes infection decreased the expression of CXCL12, the ligand of CXCR4 (Sugiyama et al., 2006), in bone marrow but increased CXCL12 expression in the lung, liver, and spleen (Figure 4\u2014figure supplement 3), suggesting that the distinguished CXCL12 levels between tissues might drive the migration of CXCR4high MKs between tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR and flow cytometry data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "4b1878e8-c3c2-4b24-af4e-3b9c15d009cc",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C66",
+      "claim": "CXCR4high MKs were increased in the peripheral blood and organs, including the liver, spleen, and lung 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CXCR4high MKs were increased in the peripheral blood and organs, including the liver, spleen, and lung 3 days after L. monocytogenes infection without an alternation of cell cycle and apoptosis, whereas CXCR4low MKs did not differ except for a slight increase in the liver (Figure 4G; Figure 4\u2014figure supplement 4A-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4G and Figure 4\u2014figure supplement 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "3403f1f7-21c9-43db-887e-1e91d63a6d8e",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C67",
+      "claim": "Inflammatory stresses, such as IFN\u03b3 and Lipopolysaccharides (LPS), or L. monocytogenes treatment did not increase CXCR4 expression in CXCR4low MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inflammatory stresses, such as IFN\u03b3 and Lipopolysaccharides (LPS), or L. monocytogenes treatment did not increase CXCR4 expression in CXCR4low MKs (Figure 4H; Figure 4\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4H and Figure 4\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "72f54394-0cef-4b90-a274-f7616407f88f",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C68",
+      "claim": "mGFP expressing MKs or Tomato expressing CXCR4high MKs were increased in the liver and spleen 3 days after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "mGFP expressing MKs or Tomato expressing CXCR4high MKs were increased in the liver and spleen 3 days after L. monocytogenes infection (Figure 4I; Figure 4\u2014figure supplement 4E-H), whereas Tomato expressing CXCR4low MKs did not change (Figure 4\u2014figure supplement 4I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry and immunofluorescence data shown in Figure 4I and Figure 4\u2014figure supplement 4E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "716dbd08-c5f2-4265-94b2-6af79427c5b8",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C69",
+      "claim": "Engrafted mTomato+ CXCR4high MKs more efficiently infiltrated into the liver (92.1%) and spleen (92.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 2 days after mTomato+ cell perfusion, engrafted mTomato+ CXCR4high MKs more efficiently infiltrated into the liver (92.1%) and spleen (92.5%); by contrast, most mTomato+ CXCR4low MKs (66.7%) migrated to the bone marrow (Figure 4K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6749380e-daa3-42d6-be18-5fee2d2e4453",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C70",
+      "claim": "MK5, MK4, and MK3 showed similar gene profiles with lung MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "As the lung is an important site for platelet generation (Lefran\u00e7ais et al., 2017), we aligned our MK sc-RNAseq data with lung MKs (Pariser et al., 2021; Yeung et al., 2020), and found that MK5, MK4, and MK3 showed similar gene profiles with lung MKs (Figure 4L).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptomic similarity analysis shown in Figure 4L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6da9ca89-b673-44a7-99df-f81fdf33ee4a",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C71",
+      "claim": "MK5 enriched more inflammatory pathway genes, antigen processing, and presentation pathway after L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MK5 enriched more inflammatory pathway genes, antigen processing, and presentation pathway after L. monocytogenes infection, which enabled MK5 to achieve a more similar transcriptional profile as the lung MKs than normal MK5 (Figure 4\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene set variation analysis shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "cb451fba-63e3-4a98-b9fe-ec1ed50fd1de",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C72",
+      "claim": "Engrafted Tomato+ MKs more efficiently infiltrated the lungs in the infected recipients as extravascular MKs than in the control recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that engrafted Tomato+ MKs (from Pf4Cre; Rosa26fs-tdTomato mice) more efficiently infiltrated the lungs in the infected recipients as extravascular MKs than in the control recipients (Figure 4M\u2013O and Figure 4\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence imaging and flow cytometry data shown in Figure 4M-O and Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "3f5abd48-530a-49fb-a7bc-47784b76744c",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C73",
+      "claim": "MKs were ruptured in the bone marrow 3 days after L. monocytogenes infection to recover the reduced platelets post-L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we observed that MKs were ruptured in the bone marrow 3 days after L. monocytogenes infection to recover the reduced platelets post-L. monocytogenes infection (Couldwell and Machlus, 2019; Nishimura et al., 2015; Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence imaging and platelet counts shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "b71f8b65-c3a3-4d47-8bbf-f34992f3c45d",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C74",
+      "claim": "CXCR4high MKs were increased at 18 hr after L. monocytogenes infection and substantially declined at 72 hr in bone marrow.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CXCR4high MKs were increased at 18 hr after L. monocytogenes infection and substantially declined at 72 hr in bone marrow, whereas CXCR4low MKs remained unchanged upon infection (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "a1f0bcd0-1392-4106-a55a-48195f10fe45",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C75",
+      "claim": "Tomato+ HSPCs derived Tomato+ CXCR4high MKs rapidly increased in the bone marrow 18 hours after tamoxifen recombining Tomato in HSPCs and L. monocytogenes infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen hours after tamoxifen recombining Tomato in HSPCs and L. monocytogenes infection (Figure 5E), we observed that Tomato+ HSPCs derived Tomato+ CXCR4high MKs rapidly increased in the bone marrow, similar to the platelet-generating MKs (tdTomato+ CXCR4low MKs) (Figure 5F), without a noticeable rise of hematopoietic progenitors (Figure 5G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by lineage tracing experiments shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "9a347d64-ff94-44c3-9ebe-0ce8eb274e31",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C76",
+      "claim": "MKs prevent the spread of dengue virus infection by enhancing the type 1 interferons pathway in murine and clinical biospecimens.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, MKs prevent the spread of dengue virus infection by enhancing the type 1 interferons pathway in murine and clinical biospecimens (Campbell et al., 2019) and contribute to cytokine storms in severe COVID-19 patients (Bernardes et al., 2020; Ren et al., 2021; Stephenson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "963bc448-5180-4ea9-aa6f-6986b66a3008",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C77",
+      "claim": "MKs contribute to cytokine storms in severe COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, MKs prevent the spread of dengue virus infection by enhancing the type 1 interferons pathway in murine and clinical biospecimens (Campbell et al., 2019) and contribute to cytokine storms in severe COVID-19 patients (Bernardes et al., 2020; Ren et al., 2021; Stephenson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "284f3580-c8ca-45be-850b-5e9017c00843",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C78",
+      "claim": "MK ablation increased HSPCS and myeloid granulocyte/macrophage progenitor (GMP) in bone marrow under bacterial infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that MK ablation increased HSPCS and myeloid granulocyte/macrophage progenitor (GMP) in bone marrow under bacterial infection, which is consistent with 5-FU stress (H\u00e9rault et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 3\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6641330e-5f5d-4f20-a7df-1839e82f9ec4",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C79",
+      "claim": "Normal HSC to MK development takes 11\u201312 days in humans and 4 days in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal HSC to MK development takes 11\u201312 days in humans and 4 days in mice; However, emergency megakaryopoiesis takes less than a day to generate MKs upon inflammation stress (Couldwell and Machlus, 2019; Liu et al., 2021; Sun et al., 2021; Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "3e04383a-5fa0-4531-a8a1-a6ebc8bc34db",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C80",
+      "claim": "Emergency megakaryopoiesis takes less than a day to generate MKs upon inflammation stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal HSC to MK development takes 11\u201312 days in humans and 4 days in mice; However, emergency megakaryopoiesis takes less than a day to generate MKs upon inflammation stress (Couldwell and Machlus, 2019; Liu et al., 2021; Sun et al., 2021; Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations and data shown in Figure 5D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "7feaee99-679c-4c09-9545-1e70145ff52d",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C81",
+      "claim": "Inflammation signals could not upregulate CXCR4 in CXCR4low MKs in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, researchers believed that emergency megakaryopoiesis mainly contributes to the replenishment of damaged platelets upon acute inflammation (Haas et al., 2015). We found that inflammation signals could not upregulate CXCR4 in CXCR4low MKs in vitro, although we cannot entirely exclude the plasticity of MKs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 4H and Figure 4\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "1f8a4b70-1534-4854-9f81-e65b10aec86c",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C82",
+      "claim": "The lung is a reservoir of MKs for platelet production.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent report showed that the lung is a reservoir of MKs for platelet production (Lefran\u00e7ais et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "d8188952-49ca-4deb-bd13-ade313a0107e",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C83",
+      "claim": "Lung MKs share a similar transcriptional profile with lung DCs and participate in pathogen infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Other works also indicate that lung MKs share a similar transcriptional profile with lung DCs and participate in pathogen infection (Boilard and Machlus, 2021; Pariser et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "97132b55-17d7-4e88-8a7b-1009224c06ca",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C84",
+      "claim": "Neonatal lung MKs lack the immune molecules in adult lung MKs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neonatal lung MKs lack the immune molecules in adult lung MKs (Pariser et al., 2021), which indicates that lung MKs might have distinct developmental origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "f9d5fc41-9a6f-4500-8c7f-fe4881eaeedf",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C85",
+      "claim": "MKs are observed to egress and migrate to the pulmonary capillary under stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, MKs are observed to egress and migrate to the pulmonary capillary under stresses (Davis et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e1d5b52f-d87f-4c29-8785-f973d208515a",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "claim_id": "C86",
+      "claim": "Lung MKs might migrate from bone marrow upon infection challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Our works suggested lung MKs might migrate from bone marrow upon infection challenges, although more detailed investigations are warranted in future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing CXCR4high MKs infiltrating the lung upon infection (Figure 4M-O).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about megakaryocyte (MK) biology, including their role in platelet production, endomitosis, migration, and niche functions in the bone marrow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C13-C18 represent well-established background knowledge supported by appropriate citations from the literature. These claims provide context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "3576c947-850d-4f43-87da-47b0d8ea8c55",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work showing that MKs participate in immune responses through expression of immune receptors, cytokine production, MHC-mediated T cell activation, and heterogeneous subpopulations with immune functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 accurately summarize established knowledge from cited literature about MK immune functions. These provide important background but represent prior work rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "46a91795-b932-4be4-9582-0ed737da149f",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing identified five MK subpopulations (MK1-MK5) with distinct transcriptional profiles, including a CXCR4high subpopulation (MK5) that expresses both MK-specific and immune-related genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C27-C33 are supported by comprehensive scRNA-seq data (Figure 1), Gene Ontology analysis, and validation against published datasets. The identification of MK subpopulations with distinct functional signatures is well-documented with appropriate quality control and bioinformatic analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CXCR4high MKs are characterized as polyploid cells with MK markers and platelet generation ability, but have relatively lower polyploidy, smaller cell size, and reduced platelet generation efficiency compared to CXCR4low MKs, suggesting specialization for immune functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by multiple complementary assays including RT-qPCR, immunofluorescence, flow cytometry, and proplatelet formation assays (Figure 1\u2014figure supplement 6). However, claim C40 is an inference that, while reasonable, requires additional functional validation beyond the correlative data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CXCR4high MKs spatially associate with myeloid cells in infected bone marrow, promote myeloid cell migration, and enhance bacterial phagocytosis by neutrophils and macrophages through production of TNF\u03b1 and IL-6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48, C5-C6 are supported by spatial distribution analysis with appropriate statistical testing (KS test), transwell migration assays, phagocytosis assays, cytokine expression data, and antibody blocking experiments (Figure 2). The mechanistic link through TNF\u03b1 and IL-6 is demonstrated by blocking antibody experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CXCR4high MKs are capable of bacterial phagocytosis, antigen processing and presentation via MHC-I, and activation of antigen-specific T cells (OT-I CD8+ T cells and B3Z T cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C52-C55 are supported by phagocytosis assays, MHC-I-OVA staining, and T cell activation assays (Figure 3F-H, Figure 3\u2014figure supplement 2). The functional demonstration of antigen presentation and T cell activation provides strong evidence for this immune function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "c716c1cf-7539-405c-9db7-651ded148359",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MK ablation in Pf4Cre; Rosa26fs-iDTR mice impairs host defense against L. monocytogenes infection, as evidenced by increased bacterial burdens, reduced myeloid cell numbers in organs, and decreased antigen-specific T cell activation. CXCR4high MK infusion partially rescues this defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C49-C51, C56-C57 are supported by MK ablation experiments with bacterial burden measurements, flow cytometry quantification of immune cells, and T cell activation assays (Figure 3). The rescue experiment with CXCR4high MK infusion provides functional validation. However, the partial rescue suggests additional factors may be involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "38de955d-8f9c-4586-aa45-639e6bec5adb",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Upon L. monocytogenes infection, MKs increase contact with blood vessels, with CXCR4high MKs preferentially associating with sinusoids and migrating into circulation. CXCR4high MKs decrease in bone marrow while CXCL12 expression decreases in bone marrow but increases in peripheral organs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C65 are supported by spatial distribution analysis, live imaging (Figure 4F, Figure 4\u2014video 1), flow cytometry, scRNA-seq, and RT-qPCR data (Figure 4). The complementary approaches provide strong evidence for infection-induced MK migration, though the mechanistic link to CXCL12 gradients is correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CXCR4high MKs infiltrate peripheral organs (liver, spleen, lung) upon bacterial infection, with preferential trafficking to these sites demonstrated by lineage tracing and cell transfer experiments. MK5 shows transcriptional similarity to lung MKs and enriches inflammatory and antigen presentation pathways upon infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C66-C72 are supported by flow cytometry, immunofluorescence, lineage tracing with multiple reporter mice, and cell transfer experiments (Figure 4). The transcriptomic similarity analysis and GSVA provide additional support. However, claim C67 showing that inflammatory signals don't upregulate CXCR4 in CXCR4low MKs is important for ruling out plasticity but is based on in vitro data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "faff2456-7d00-4c57-8cfb-d441cd617f38",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CXCR4high MKs are generated through infection-induced emergency megakaryopoiesis within 18 hours, as demonstrated by lineage tracing with SclCreER; Rosa26fs-tdTomato mice. This rapid generation is distinct from normal megakaryopoiesis and CXCR4 expression is not induced by inflammatory signals in CXCR4low MKs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C73-C75, C80-C81 are supported by lineage tracing experiments, temporal analysis of CXCR4high MK dynamics, and in vitro stimulation experiments (Figure 5). The kinetic data showing rapid appearance of tdTomato+ CXCR4high MKs after tamoxifen and infection provides strong evidence for emergency megakaryopoiesis as the source.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about MK roles in viral infections, COVID-19, emergency megakaryopoiesis kinetics, and lung MK biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 and C82-C85 accurately cite established knowledge from the literature. These provide context for interpreting the current findings but represent prior work rather than novel results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    },
+    {
+      "id": "5cc65835-1004-418e-95b3-0c8927aa41ba",
+      "content_id": "7b061558-4dff-4961-9237-7cd8f9d8fb2f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors suggest that lung MKs might migrate from bone marrow upon infection challenges, though they acknowledge this requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C86 is presented as an inference based on the data showing CXCR4high MK infiltration into lungs (Figure 4M-O). While the cell transfer experiments support migration, the authors appropriately note this is speculative and requires additional investigation. The claim is reasonable but not definitively proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:40:21.881645Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "481e9209-af31-434f-865a-bc09a3bb6605",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "2095e656-a656-4905-a724-af02fd47da91",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "9c8022f5-442a-42c4-836e-db4b870fe77b",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "37981810-49aa-480b-877a-9657a78b9301",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "3f7fa81c-fe35-4004-9e23-2b65e5c1f354",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "5cd463b6-ea85-4f4b-a827-aad62f365363",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "60ce5e1b-d2da-4332-a9ec-3d4c53dce4a8",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "4312938d-7838-4f2b-9b91-6211714c3936",
+      "result_id": "7a4f551d-3abf-4861-98c6-aa7e83e4e7e4"
+    },
+    {
+      "claim_id": "f0982ade-4ec4-4fb8-a1fc-a17ff8628ca4",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "2e638814-720e-4626-b7ca-165a64604dab",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "8d3ae675-5f6d-4fa3-9d02-60ae02a40971",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "69f5b924-8203-43c8-92fe-c552d46f55a5",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "c254a4af-9d65-49d5-b318-41e1706f1910",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "faff3934-2c82-4288-aec6-a5f48f4922dd",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "26ffbcf8-439f-4bab-a108-072c4e6109ed",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "c53c3c45-d891-40f7-b2b7-5c302186f3c0",
+      "result_id": "3576c947-850d-4f43-87da-47b0d8ea8c55"
+    },
+    {
+      "claim_id": "6fb9ae1b-208c-49ca-b0fe-6b50e59df541",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "d06821bf-a122-4617-8973-f3969c1b07c0",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "cfccdf88-cce5-4ab4-ab9f-535f413cd03d",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "e5676df8-bf8d-4c45-9112-5e0b87c7d3fb",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "9ef36933-f61c-4a80-b244-d27816a2ab05",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "62787695-c8b3-4a47-9683-06d9b174383b",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "e9bd286e-1308-4255-9b08-952f98d5673c",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "d840a942-f419-4dea-bda4-351cf36ff1f2",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "01cae6f7-d58b-42d0-88ae-0cce1b54dad6",
+      "result_id": "46a91795-b932-4be4-9582-0ed737da149f"
+    },
+    {
+      "claim_id": "e6469ad4-c2ee-4807-bea3-f99a3da8147f",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "0654939a-a862-4d68-80e7-9d62057f802f",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "2e0f4470-612f-4764-81ba-b26aae3b2622",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "feaf3029-ceeb-4a13-b8f9-803fee7db055",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "b3169372-64f5-43db-b544-7c2153253ed4",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "e3e59545-2335-473a-b5ad-83a010767bf0",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "e825ac6f-cc97-43f8-946c-bd1354a1e496",
+      "result_id": "290709b7-439c-4c4a-9750-1b59b1d5ef4b"
+    },
+    {
+      "claim_id": "dd26346e-ee07-4f8d-b08e-3342b5f1fc9a",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "50490966-e83d-48c8-ba71-728e911694af",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "5a020605-0cf4-41d5-9c00-2e044c059ff7",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "ea651feb-6bcc-4afa-a965-858978c4b092",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "e9a9ffb1-27c9-49de-8e58-490a00d1c5fd",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "ff98ae37-7076-40c7-9985-fec534f0f771",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "9b2bb39d-a3d6-4f82-89fc-a7a55a915d30",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "68a67941-c223-4b54-82e1-8dbf203a0d7e",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "2c2d8141-d886-40b9-80ce-3e61885bd07c",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "70c5050a-6d04-48f4-812f-7620f382a7a5",
+      "result_id": "628d1f9a-427b-4283-a409-6d6b9b3c8c2a"
+    },
+    {
+      "claim_id": "6bf85526-8193-4ace-8c74-c9db127769f6",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "19eaef14-cc82-435b-8083-066aaae07e94",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "4e9271e8-4ae8-4531-9f17-d3acacf3d202",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "9329ef4a-42c4-4354-9e49-f3444626c49a",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "387aad7f-aa52-4f62-b168-f1f3031fa7b1",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "54c246aa-0a6f-462d-a0a1-e910e5c0ad39",
+      "result_id": "6ddd30f8-039c-4750-b0ce-ef3f77827a7e"
+    },
+    {
+      "claim_id": "65c3d921-65ea-495c-9cd6-eed17909949f",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "15f76ae7-2bf2-436d-8408-52d452ec8777",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "8b5c26d7-ac90-4f3a-84c0-a4d97889ab1e",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "2c7cb457-186c-4b11-a4d3-335c6076ea61",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "c4ebc922-e7c1-4721-a366-95856017e5b2",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "fb387a5d-dbcb-43b7-b35e-a0d24f97ec48",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "b4007e3a-d61c-44d5-bc11-f2772c051440",
+      "result_id": "c716c1cf-7539-405c-9db7-651ded148359"
+    },
+    {
+      "claim_id": "fa43d9e9-c247-4798-ad27-5a6f232d8dcd",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "fd8ef34b-fef7-4da1-8ccd-3fe2e5016ec6",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "42936e46-025d-4d68-93aa-164ffeb357ff",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "98a5fff9-c8fe-47d4-8e4c-3c03cd418fa2",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "163bf08d-ab2f-4474-a71c-3ba4607fe9dc",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "c097b93a-ab53-4b44-b79d-cf9e5f76a78b",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "ae286a78-8bde-4ef8-bdfd-04fa08d076c0",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "4b5f5345-deaa-4501-9bd5-f90496073213",
+      "result_id": "38de955d-8f9c-4586-aa45-639e6bec5adb"
+    },
+    {
+      "claim_id": "54343570-2912-4dcf-b797-e5a6906a9a6c",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "4b1878e8-c3c2-4b24-af4e-3b9c15d009cc",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "3403f1f7-21c9-43db-887e-1e91d63a6d8e",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "72f54394-0cef-4b90-a274-f7616407f88f",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "716dbd08-c5f2-4265-94b2-6af79427c5b8",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "6749380e-daa3-42d6-be18-5fee2d2e4453",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "6da9ca89-b673-44a7-99df-f81fdf33ee4a",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "cb451fba-63e3-4a98-b9fe-ec1ed50fd1de",
+      "result_id": "e2ea165a-b439-4f02-bb83-ce528c0ffe48"
+    },
+    {
+      "claim_id": "9dcea0da-eb1f-4493-8a32-5275a5b82d04",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "3f5abd48-530a-49fb-a7bc-47784b76744c",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "b71f8b65-c3a3-4d47-8bbf-f34992f3c45d",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "a1f0bcd0-1392-4106-a55a-48195f10fe45",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "3e04383a-5fa0-4531-a8a1-a6ebc8bc34db",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "7feaee99-679c-4c09-9545-1e70145ff52d",
+      "result_id": "faff2456-7d00-4c57-8cfb-d441cd617f38"
+    },
+    {
+      "claim_id": "9a347d64-ff94-44c3-9ebe-0ce8eb274e31",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "963bc448-5180-4ea9-aa6f-6986b66a3008",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "284f3580-c8ca-45be-850b-5e9017c00843",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "6641330e-5f5d-4f20-a7df-1839e82f9ec4",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "1f8a4b70-1534-4854-9f81-e65b10aec86c",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "d8188952-49ca-4deb-bd13-ade313a0107e",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "97132b55-17d7-4e88-8a7b-1009224c06ca",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "f9d5fc41-9a6f-4500-8c7f-fe4881eaeedf",
+      "result_id": "6bb8ba14-32cf-41be-a24d-ffa0fdf056c8"
+    },
+    {
+      "claim_id": "e1d5b52f-d87f-4c29-8785-f973d208515a",
+      "result_id": "5cc65835-1004-418e-95b3-0c8927aa41ba"
+    }
+  ],
+  "comparisons": []
+}

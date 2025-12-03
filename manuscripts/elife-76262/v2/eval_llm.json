@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C42",
+      "C43"
+    ],
+    "result": "Organotypic pancreatic slices preserve \u03b2-cell structure and organization better than isolated islets. Slices maintain intact capillary beds with enriched ECM (laminin) around capillaries, preserve \u03b2-cell polarity (Par3 localization), and maintain cell-cell contacts (E-cadherin). In contrast, isolated islets show disrupted ECM distribution, loss of capillaries (reduced CD31), and loss of \u03b2-cell polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C31, C42-C43 are strongly supported by comprehensive immunostaining data (Figure 1) showing preserved capillary structure, ECM organization, and cellular polarity in slices versus isolated islets. The quantitative measurements of laminin and CD31 area provide statistical support (p<0.001). This is a well-controlled comparison using identical culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39"
+    ],
+    "result": "Integrins and FAK are selectively activated at the \u03b2-cell capillary interface in pancreatic slices. Integrin-\u03b21 shows tight alignment with laminin-stained capillaries, and phospho-FAK is enriched at the capillary interface in slices. In isolated islets, phospho-FAK area is reduced approximately fivefold compared to slices, though some enrichment remains at residual capillary fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C34, C38-C39 are supported by immunostaining data showing spatial localization of integrin-\u03b21 and phospho-FAK (Figure 1E-F, L). The quantification shows statistically significant reduction in phospho-FAK area in isolated islets (p<0.01, n=29 cells in slices, 112 in islets). The use of phospho-FAK as a readout of focal adhesion activity is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C35",
+      "C36",
+      "C40",
+      "C41"
+    ],
+    "result": "The presynaptic scaffold protein liprin is enriched at the \u03b2-cell capillary interface in slices but dispersed in isolated islets. In slices, liprin shows significant enrichment in the capillary-adjacent region compared to lateral and apical regions. In isolated islets, liprin is evenly distributed across all regions of the \u03b2-cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C35-C36, C40-C41 are supported by immunostaining and quantitative fluorescence analysis (Figure 1G-P). The regional quantification using four regions of interest shows statistically significant enrichment at the capillary interface in slices (one-way ANOVA p<0.0001, Tukey post-hoc p<0.0001, n=29 cells). In isolated islets, no regional differences were observed (one-way ANOVA p=0.054, n=31 cells). The heatmap visualization provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Nearly 80% of insulin granule fusion events occur at the capillary interface in pancreatic slices, showing significantly enhanced targeting compared to isolated islets. This enhanced targeting is consistent with the tight focus of phospho-FAK enrichment at the capillary interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by the granule fusion assay using dye-tracing technique (Figure 2). The quantification shows ~80% of fusion events occur within 2.9 \u03bcm of capillaries in slices versus ~40% in isolated islets (p<0.05, n=6 slices and 6 islets from 3 mice). The correlation with phospho-FAK enrichment (C45) is a reasonable inference supported by the spatial data, though the mechanistic link requires the additional experiments shown later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pancreatic slices show significantly enhanced glucose-stimulated insulin secretion compared to isolated islets. Slices secrete more insulin at all glucose concentrations tested, show secretion at low glucose (2.8-5 mM) not seen in islets, and have a lower EC50 (8.6 mM for slices vs 10.2 mM for islets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C48 are supported by insulin secretion assays (Figure 3A). Two-way ANOVA shows significant effects of preparation type (p<0.0001) and glucose concentration (p<0.0001) with n=3-14 mice per condition. The EC50 values are derived from fitted dose-response curves. Control experiments show agarose embedding has no effect (C49), and proinsulin secretion is unchanged (C50), ruling out confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Glucose-dependent amplification is paradoxically larger in isolated islets compared to slices, suggesting that the reduced insulin secretion in isolated islets is due to impaired glucose-dependent triggering rather than amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by experiments using diazoxide to separate triggering from amplification pathways (Figure 3B). The amplification measured in the presence of diazoxide plus high K+ is significantly greater in islets (p<0.001, n=6-13 preparations from 3 animals). Claim C52 is a logical inference: since total secretion is lower in islets but amplification is higher, the triggering pathway must be impaired. This is a sound interpretation of the biphasic model of insulin secretion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The KATP channel blocker glibenclamide increases insulin secretion at 2.8 mM glucose in both preparations, but only increases secretion at 8 mM glucose in isolated islets, not in slices. This supports the idea that glucose-dependent triggering is compromised in isolated islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by insulin secretion assays with glibenclamide treatment (Figure 3C). At 2.8 mM glucose, glibenclamide significantly increases secretion in both preparations (p<0.01, n=3 mice). At 8 mM glucose, glibenclamide increases secretion only in islets (p<0.05) but not in slices (p=0.36, n=3 mice). This differential response supports the interpretation that KATP channels are more active (or less glucose-sensitive) in isolated islets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C56",
+      "C60",
+      "C61"
+    ],
+    "result": "\u03b2 cells in slices show enhanced Ca2+ excitability compared to isolated islets, including pulsatile Ca2+ activity at 2.8 mM glucose (not seen in islets), rapid Ca2+ pulsing at the onset of high glucose responses, and significantly higher baseline Ca2+ signal. The Ca2+ activity at 2.8 mM glucose is glucose-dependent and abolished when glucose is lowered to 1 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C55-C56, C60-C61 are supported by GCaMP6 Ca2+ imaging data (Figures 4-5). The pulsatile activity at 2.8 mM glucose is consistently observed in slices (5/7 slices) and results in significantly elevated baseline fluorescence (p<0.001, n=18 cells in slices vs 43 cells in islets from 3 animals). The glucose-dependence is demonstrated by loss of activity when glucose is lowered to 1 mM (Figure 5E). The rapid pulsing at high glucose onset (C56) is an inference from the observed patterns, which is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Ca2+ responses to high glucose (16.7 mM) are initiated almost simultaneously with glucose addition in slices, whereas isolated islets show a consistent delay. The time to peak Ca2+ response is significantly shorter in slices (89\u00b110 s) compared to isolated islets (178\u00b19 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by Ca2+ imaging with fluorescent glucose tracer (Figure 5, Figure 5-supplement 1). The timing measurements are quantified relative to the arrival of the glucose tracer (SRB). The difference in time to peak is statistically significant (p<0.01, n=27 cells in slices, 37 cells in islets from \u22653 mice). The frequency distribution also shows a shift to shorter times in slices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "\u03b2 cells in slices show fast intracellular Ca2+ waves (50.6\u00b16.1 \u03bcm/s) that originate at the capillary interface and spread to the apical region. In isolated islets, Ca2+ waves are rare and much slower (1.8\u00b10.2 \u03bcm/s). During repetitive Ca2+ spiking at 2.8 mM glucose in slices, each spike shows evidence of a Ca2+ wave from capillary to apical region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by spatiotemporal Ca2+ imaging analysis (Figure 6). The wave velocities are measured from GCaMP6 imaging and are significantly different between preparations (p<0.01, n=7 slices from 6 animals, n=3 islets from 3 animals for high glucose; n=24 waves in slices, n=3 waves in islets for velocity comparison). The observation of waves during each spike at 2.8 mM glucose (C66) is shown in Figure 6G. The caveat about scarcity of waves in isolated islets is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68"
+    ],
+    "result": "FAK inhibition with Y15 abolishes Ca2+ spikes at 2.8 mM glucose and significantly reduces Ca2+ responses to 16.7 mM glucose in pancreatic slices, demonstrating that FAK activation regulates glucose-dependent Ca2+ responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67-C68 are supported by Ca2+ imaging experiments with Y15 treatment (Figure 7A-D). Y15 completely abolishes Ca2+ spikes at 2.8 mM glucose (shown in GCaMP6 recordings from 3 animals). The peak amplitude of responses to 16.7 mM glucose measured with Fura-2 is significantly reduced (p<0.001, n=8 cells from 3 animals). The use of both GCaMP6 and Fura-2 provides complementary evidence with different Ca2+ indicators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70"
+    ],
+    "result": "FAK inhibition with Y15 reduces glucose-induced insulin secretion in slices but has no effect on high potassium-induced secretion, demonstrating selective regulation of the glucose-dependent pathway by FAK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C70 are supported by insulin secretion assays with Y15 treatment (Figure 7E). Two-way ANOVA shows significant effects of Y15 (p<0.0224), glucose (p<0.0001), and interaction (p=0.0043), with Tukey post-hoc showing significant reduction at 16.7 mM glucose (p=0.0115, n=4-8 slices from 3 mice). High K+-induced secretion is unaffected (p=0.89, n=8 slices from 3 mice), demonstrating specificity for the glucose pathway. This is a critical control showing FAK acts upstream of membrane depolarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "FAK inhibition with Y15 reduces the total number of insulin granule fusion events and significantly reduces targeting of fusion events to the capillary interface, supporting the role of integrin/FAK activation in localizing granule fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by the granule fusion assay with Y15 treatment (Figure 7F-H). Y15 reduces total exocytic events (p<0.05, n=5 control and 4 Y15-treated slices) and reduces targeting to the capillary interface (percentage of events within 2.5 \u03bcm, p<0.05). This provides direct evidence linking FAK activity to both the magnitude and spatial organization of exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Y15 fails to inhibit insulin secretion in isolated islets when stimulated with either high glucose or high potassium, supporting the conclusion that integrin/FAK signaling is compromised in isolated islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by insulin secretion assays in isolated islets with Y15 treatment (Figure 7I). Two-way ANOVA shows significant effect of glucose (p=0.0024) but no effect of Y15 (p=0.5306) and no interaction (p=0.3245, n=3 mice). High K+-induced secretion is also unaffected (p=0.36, n=3 preparations). Claim C74 is a reasonable inference combining this result with the reduced phospho-FAK observed in isolated islets (C32, C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C79",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Integrin and FAK activation positions presynaptic scaffold proteins ELKS and liprin. In vitro, \u03b2 cells cultured on laminin show enrichment of ELKS and liprin at the laminin-cell interface, which is disrupted by either integrin-\u03b21 blocking antibodies or FAK inhibition with Y15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C79, C82-C83, C86 are supported by immunofluorescence experiments in cultured \u03b2 cells (Figures 8-9). On laminin, ELKS and liprin are significantly enriched at the cell-substrate interface (p<0.001, 36 ROIs from 6 cells, 3 animals). Integrin-\u03b21 blocking antibodies disrupt this localization (Figure 8-supplement 1, p<0.05 for liprin, p<0.01 for talin, 6 cell clusters from 3 mice). Y15 treatment also disrupts ELKS and liprin distribution (Figure 9E-J, p=0.15 for ELKS, p=0.28 for liprin, 36 ROIs from 6 cells, 3 animals). The p-values for Y15 effects on protein localization are not significant, which is a weakness, though the visual data appear convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "\u03b2 cells cultured on BSA (control) do not adhere well and grow in multilayers with sporadic phospho-FAK staining, while cells cultured on laminin grow as an organized monolayer with extensive punctate phospho-FAK staining at the cell footprint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by immunofluorescence imaging (Figure 8A-B). The images clearly show multilayered organization on BSA versus monolayer on laminin, with corresponding differences in phospho-FAK distribution. This provides an appropriate control for the laminin experiments and demonstrates that the observed effects are ECM-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "\u03b2 cells cultured on laminin show robust, sustained Ca2+ oscillations in response to glucose with significantly greater area under the curve compared to cells on BSA. FAK inhibition with Y15 significantly reduces glucose-induced Ca2+ responses and reversibly inhibits glucose-induced (but not high K+-induced) insulin secretion in cells cultured on laminin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C84-C85 are supported by Fura-2 Ca2+ imaging and insulin secretion assays in cultured cells (Figures 8I-K, 9A-D). The AUC of Ca2+ responses is significantly greater on laminin versus BSA (p<0.001, n=36 cells on laminin, 21 on BSA). Y15 significantly reduces Ca2+ response AUC (p<0.001, n=218 cells DMSO, 208 cells Y15 from 3 mice) and reversibly inhibits glucose-induced secretion (p<0.001, n=3 animals) but not high K+-induced secretion (p=0.25, n=3 animals). This recapitulates the findings from slices in a simpler in vitro system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "FAK orchestrates the final steps of glucose-dependent insulin secretion within the restricted domain where \u03b2 cells contact the islet capillaries, acting as a master regulator that positions presynaptic scaffold proteins and shapes Ca2+ responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is the main conclusion and is supported by the convergence of multiple lines of evidence: (1) FAK is activated at the capillary interface (C4, C32-C34), (2) FAK inhibition disrupts positioning of ELKS and liprin (C5, C79, C86), (3) FAK inhibition reduces Ca2+ responses (C6, C67-C68, C84), (4) FAK inhibition reduces insulin secretion (C7, C69, C85), and (5) FAK inhibition reduces granule fusion targeting (C71-C72). The selectivity for glucose versus high K+ stimulation supports the conclusion that FAK acts specifically on the glucose-dependent triggering pathway. This is a well-supported integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Control experiments show that embedding isolated islets in agarose has no effect on insulin secretion, and proinsulin secretion is unchanged between slices and isolated islets, ruling out these factors as confounders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by control experiments (Figure 3-supplement 1). These are appropriate controls that rule out potential confounding factors: agarose embedding (used for slices) does not affect islet function, and the enhanced insulin secretion in slices is not due to altered insulin processing (proinsulin secretion is unchanged). These strengthen the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "The \u03b2-cell capillary interface is specialized for secretion, with \u03b2 cells making discrete contact with capillary ECM, this region being the target for insulin granule fusion and enriched in presynaptic scaffold proteins, giving it characteristics analogous to a neuronal presynaptic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C13-C14 are supported by citations to previous work and data in this manuscript. The citations (Gan et al., 2017; Low et al., 2014; Ohara-Imaizumi et al., 2019, 2005) establish the prior evidence for this concept. The current manuscript provides additional support through immunostaining showing ECM contact (C10, Figure 1B), granule fusion targeting (C11, Figure 2), and enrichment of presynaptic proteins (C12, Figure 1G-J). The analogy to neuronal presynaptic domains (C13) is reasonable given the enrichment of presynaptic scaffold proteins and targeted secretion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background on Ca2+ regulation of insulin secretion: Ca2+ is the dominant regulator of insulin secretion through voltage-sensitive Ca2+ channels, the location of Ca2+ channels relative to fusion sites is critical, Ca2+ channels are regulated by intracellular Ca2+, and in neurons presynaptic scaffold complexes collocate Ca2+ channels and vesicles. In \u03b2 cells, there is evidence for Cav1.2 channel association with exocytosis and syntaxin 1A, though syntaxin 1A is not enriched at the capillary interface. ELKS interacts with the Ca2+ channel \u03b2 subunit and enhances Ca2+ responses at residual capillary structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 are background claims supported by appropriate citations to established literature. These provide context for the current work. The citations appear appropriate for the claims made (e.g., Schulla et al., 2003 for Ca2+ channels in insulin secretion; S\u00fcdhof, 2012 for neuronal presynaptic complexes; Ohara-Imaizumi et al., 2019 for ELKS-Ca2+ channel interaction). Claim C21 about syntaxin 1A distribution is cited to Low et al., 2014, which is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C93"
+    ],
+    "result": "The pancreatic slice preparation maintains complex cell-to-cell arrangements including intact capillary beds and local microenvironment, promotes \u03b2-cell polarization, and represents an important advance with closer preservation of native islet structure than isolated islets. The same organization is present in rodent and human islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C93 are supported by citations (Cohrs et al., 2017; Gan et al., 2017; Cottle et al., 2021; Meneghel-Rozzo et al., 2004) and by the immunostaining data in Figure 1 showing preserved structure. The claim about human islets (C27) is supported by citation to Cottle et al., 2021. These establish the rationale for using the slice preparation and its relevance to native tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Endothelial cells are the only source of intra-islet ECM, and enzymatic islet isolation results in loss of endothelial cells and capillaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by appropriate citations (Nikolova et al., 2006; Lukinius et al., 1995) and by the immunostaining data showing loss of laminin and CD31 in isolated islets (Figure 1A, C). This provides important context for interpreting the differences between preparations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Prior work has shown that FAK phosphorylation is enhanced by glucose stimulation, block of integrins or FAK inhibits insulin secretion from MIN6 cells affecting F-actin remodeling, and FAK knockout causes hyperglycemia in mice with reduced insulin secretion but no effect on Ca2+ responses in isolated islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by appropriate citations to previous studies (Rondas et al., 2011, 2012; Cai et al., 2012). The authors appropriately note that the lack of Ca2+ effect in the Cai et al. study may be due to the use of isolated islets where integrin/FAK signaling is compromised. This provides important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior work has established that culture of \u03b2 cells on ECM-coated coverslips enhances insulin secretion and leads to targeting of granule fusion through local integrin activation, that there is functional evidence for close association of Cav1.2 Ca2+ channels and insulin granule exocytosis, and that presynaptic scaffold proteins are present in \u03b2 cells and function to control insulin secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C91-C92 are supported by appropriate citations to previous studies (Parnaud et al., 2006; Gan et al., 2018; Bokvist et al., 1995; Gandasi et al., 2017; Pertusa et al., 1999; Wiser et al., 1999; Low et al., 2014; Ohara-Imaizumi et al., 2005; Fujimoto et al., 2002; Shibasaki et al., 2004). These establish the foundation for the current work and justify the use of the in vitro laminin culture system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The fundamental relationships between \u03b2 cells and capillaries are similar between mouse and human islets, suggesting that the integrin/FAK pathway may play a similar role in human \u03b2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is supported by citation to Cottle et al., 2021. However, claim C97 is speculative (marked as IMPLICIT with SPECULATION in evidence_type). While the inference is reasonable, no direct evidence is provided in this manuscript that the integrin/FAK pathway functions similarly in human \u03b2 cells. This would require experimental validation in human tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "In type 2 diabetes, both capillary structure and ECM composition are altered, and \u03b2-cell function is compromised prior to loss of \u03b2-cell mass. The authors speculate that functional changes in diabetes might result from disruption of capillaries and effects on the integrin/FAK pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are supported by appropriate citations (Brissova et al., 2015; Hayden et al., 2005; Cohrs et al., 2020). However, claim C100 is speculative (marked as IMPLICIT with SPECULATION in evidence_type). While the hypothesis is plausible given the findings, no direct evidence is provided linking the integrin/FAK pathway to diabetes pathophysiology. This would require studies in diabetic models or human diabetic tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Sulfonylureas can improve insulin secretion in type 2 diabetes, demonstrating that enhancement of glucose-dependent triggering is beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by citation to established knowledge (Rorsman and Ashcroft, 2018). Claim C102 is an inference about the mechanism of sulfonylurea action (KATP channel blockade enhances triggering), which is well-established. This provides context for the therapeutic implications of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Stem cell-based \u03b2-cell replacement spheroids do not contain organized ECM and the \u03b2-like cells are not polarized. The authors suggest that amplification will be the dominant pathway in these spheroids and that the cells will lack drive from the integrin/FAK pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are supported by citation to Singh et al., 2021. However, claims C105-C106 are speculative (marked as IMPLICIT with SPECULATION in evidence_type). While the inference is logical based on the findings about the importance of ECM and FAK signaling, no direct evidence is provided about the secretory mechanisms in stem cell-derived spheroids. This would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Imposing polarity to \u03b2-like cells enhances secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is supported by citation to Singh et al., 2021. This provides evidence for a potential therapeutic strategy to improve stem cell-derived \u03b2 cells, though the details are not presented in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

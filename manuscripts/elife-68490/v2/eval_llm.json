@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors developed FOB microscopy, a novel integrated system combining optical diffraction tomography (ODT), Brillouin microscopy, and epifluorescence imaging. The system achieves spatial resolutions of 0.25 \u03bcm (lateral) and 0.5 \u03bcm (axial) for ODT, and 0.4 \u03bcm (lateral) and ~1 \u03bcm (axial) for Brillouin microscopy, with laser frequency stabilization to improve measurement quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C138-C142 describe the technical implementation and specifications of the FOB microscopy system. The setup description is detailed with specific technical parameters, and validation experiments with cell phantoms (C37-C48) demonstrate the system functions as designed. The integration of three modalities in one system is a clear technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The FOB microscopy system was validated using artificial cell phantoms consisting of PDMS beads embedded in PAA beads. Measurements yielded RI values of 1.3920\u00b10.0080 for PDMS and 1.3485\u00b10.0024 for PAA, Brillouin shifts of 7.279\u00b10.043 GHz for PDMS and 7.574\u00b10.020 GHz for PAA, and longitudinal moduli of 2.022\u00b10.030 GPa for PDMS and 2.274\u00b10.012 GPa for PAA, consistent with literature values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 provide comprehensive validation data for the FOB system using well-characterized materials. The measurements include appropriate error estimates (standard deviations), and results are compared to literature values with citations (C38, C48). The use of the two-substance mixture model for PAA and literature density values for PDMS is appropriately justified (C44-C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C55",
+      "C54",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In wild-type HeLa cells, the nucleoplasm has lower absolute density (1.0207\u00b10.0005 g/ml) than the cytoplasm (1.0234\u00b10.0006 g/ml), indicating higher water content, yet exhibits higher longitudinal modulus (2.448\u00b10.005 GPa vs 2.410\u00b10.005 GPa). This demonstrates that longitudinal modulus is not solely determined by water content but is substantially influenced by mechanical properties of the specimen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C55, C106-C108 present a key finding that challenges the water content hypothesis for Brillouin measurements. The data from 139 HeLa cells with statistical analysis (Figure 2) shows statistically significant differences (p<0.001). The inference that mechanical properties, not just water content, influence the longitudinal modulus is logically sound given the inverse relationship between density and modulus observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Nucleoli in HeLa cells showed statistically significantly higher RI (1.3618\u00b10.0004), longitudinal modulus (2.487\u00b10.005 GPa), and Brillouin peak linewidth compared to both cytoplasm and nucleoplasm, indicating higher viscosity and less fluid-like behavior. This suggests membraneless compartments formed by phase separation can maintain distinct physical properties despite thermodynamic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe measurements of nucleoli with appropriate statistical analysis showing significant differences. The interpretation that increased linewidth indicates higher viscosity (C63) is consistent with Brillouin theory (C15). The inference about phase-separated compartments (C64) is reasonable given the data, though somewhat speculative about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PolyQ aggregates in HeLa cells exhibited statistically significantly higher RI (1.3856\u00b10.0018) and longitudinal modulus (3.051\u00b10.029 GPa) compared to peripheral cytoplasm (p<0.0001), with calculated protein concentration of 255.8\u00b19.4 mg/ml, fourfold higher than previously measured in G3BP1 in vitro systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present measurements from 22 cells with clear statistical significance (p<0.0001). The protein concentration calculation (C70) is based on measured RI using the two-substance mixture model. The comparison to literature values (C71) provides context, though the different systems (polyQ vs G3BP1, in vivo vs in vitro) limit direct comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C80"
+    ],
+    "result": "Stress granules (SGs) in living arsenite-treated P525L HeLa cells showed no statistically significant differences in RI or longitudinal modulus compared to peri-SG cytoplasm, but exhibited statistically significantly higher longitudinal modulus after chemical fixation. This is consistent with previous studies and demonstrates that fixation can substantially alter mechanical and optical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe measurements from over 100 cells under three conditions with appropriate statistical analysis. The finding that SGs differ from cytoplasm only after fixation is well-supported by the data and consistent with cited literature (C86-C87). The observation of FUS relocation (C80) provides biological context. However, the manual selection of measurement regions (C78) introduces potential sampling bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Lipid droplets in adipocytes showed higher RI (1.409\u00b10.004) and Brillouin shift (8.25\u00b10.02 GHz) than cytoplasm, but lower longitudinal modulus (2.161\u00b10.005 GPa vs 2.398\u00b10.009 GPa) when accounting for their lower absolute density. Neglecting RI and density would result in 26% overestimation of longitudinal modulus, demonstrating that RI and density do not universally cancel out and must be measured for accurate modulus calculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98, C112-C114 provide compelling evidence that accounting for RI and density is essential for accurate longitudinal modulus calculation. The adipocyte data (N=3) shows a clear case where Brillouin shift and modulus trends diverge when density is considered. The 26% error calculation (C97) quantitatively demonstrates the importance of the FOB approach. The use of literature density values for lipids (C91-C92) is appropriately justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C110",
+      "C111",
+      "C135"
+    ],
+    "result": "The authors demonstrate that neglecting RI and density in Brillouin microscopy can lead to erroneous conclusions, particularly for compartments not described by the two-substance mixture model. While neglecting these factors may preserve qualitative trends in some cases, it introduces systematic errors in longitudinal modulus calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C25, C110-C111, C135 synthesize the main conclusion of the manuscript. The adipocyte data (C97, C112) provides direct quantitative evidence of errors from neglecting RI and density. The statement is appropriately cautious, noting that trends may be preserved in some cases (C110) while emphasizing the systematic error introduced (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C3"
+    ],
+    "result": "The integrated FOB setup simplifies sample handling, eliminates the need to locate the same cell on different setups, and reduces time between acquisition of different modalities from multiple minutes to a few seconds compared to using separate systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C3 describe practical advantages of the integrated system. While no quantitative comparison data is provided, the advantages are logically sound based on the system design. The importance for dynamic processes like SG formation is demonstrated by the experimental approach used (partial cell scans to reduce acquisition time).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The two-substance mixture model can be used to calculate mass density and protein concentration from RI for most biological samples, but requires knowledge of the refraction increment (0.173-0.215 ml/g for proteins, 0.135-0.138 ml/g for phospholipids) and does not apply to compartments like lipid droplets. Fluorescence specificity is necessary to determine model applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36, C88-C90 describe the theoretical framework and limitations of the two-substance mixture model with appropriate citations. The need for fluorescence specificity (C36) is demonstrated by the adipocyte experiments. The refraction increment values are well-documented in cited literature (C32-C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that the chromatin network in the nucleoplasm is responsible for the higher longitudinal modulus observed compared to cytoplasm, despite lower mass density, based on previous literature suggesting chromatin networks determine nuclear mechanical response at GHz frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 present a mechanistic hypothesis for the nucleoplasm findings, supported by citations to previous work (C100-C102). However, this is explicitly speculative (C103: \"it seems reasonable to assume\") and no direct experimental evidence for the chromatin network hypothesis is provided in this study. Further experiments would be needed to validate this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C146"
+    ],
+    "result": "The simplified two-substance mixture model equation used may overestimate absolute density by approximately 10% for HeLa cells due to unknown partial specific volume of the dry fraction, which the authors consider acceptable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C146 acknowledge a systematic error in the density calculation method. The 10% estimate is stated but not rigorously derived. However, the authors appropriately acknowledge this limitation and consider it acceptable for their purposes. This level of error is unlikely to change the main qualitative conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C56",
+      "C57"
+    ],
+    "result": "Accurate density calculations require knowledge of molecular composition, as refraction increments may vary between compartments. The calculated cytoplasm density might be underestimated in membrane-rich perinuclear regions of HeLa cells due to lower refraction increment of phospholipids compared to proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C56-C57 identify limitations in the density calculation approach. The concern about membrane-rich regions (C56-C57, C117) is valid given the different refraction increments for phospholipids vs proteins (C34). This is appropriately acknowledged as a potential source of error rather than claimed as a major limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "When analyzing whole-cell RI distributions, nucleoplasm RI was slightly (not statistically significantly) lower than cytoplasm RI, contrary to manually selected regions. The authors attribute this to manual selection bias in regions of SG formation near cell boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 acknowledge a discrepancy between whole-cell and region-specific measurements with a reasonable explanation. This demonstrates appropriate self-criticism and transparency about potential methodological limitations. The manual selection approach was necessitated by the dynamic nature of SGs and phototoxicity concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Not every condensation process is accompanied by changes in RI, absolute density, or longitudinal modulus, based on comparison of nucleoli, polyQ aggregates, and stress granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a reasonable inference from the data showing that nucleoli and polyQ aggregates have elevated properties while SGs do not (in living cells). However, the sample size is limited (three types of condensates) and the conclusion is somewhat general. The statement is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors propose multiple future improvements to the FOB setup including: multi-channel fluorescence for better molecular identification, Raman spectroscopy integration for direct concentration measurements, longer wavelength lasers to reduce phototoxicity, dynamic diffusers or numerical filtering to reduce speckle noise, transverse phonon measurements for shear modulus, and algorithms for multiple light scattering to enable tissue measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 describe potential future improvements with appropriate citations to relevant literature. These are presented as speculative possibilities rather than validated approaches. The suggestions are technically reasonable and would address acknowledged limitations of the current system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors provide background on Brillouin microscopy as an emerging technique for measuring mechanical properties of biological samples, its physical basis, relationship to longitudinal modulus, and limitations of conventional approaches that neglect RI and density or require separate measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C22, C26-C29 provide literature review and background information, all supported by appropriate citations. These establish the context and motivation for the FOB microscopy development. The characterization of prior work is accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors discuss ongoing debates about whether Brillouin shift depends primarily on water content versus mechanical properties, note that multiple studies have observed biologically relevant changes in longitudinal modulus, and suggest Brillouin microscopy may report on intermolecular interactions and supramolecular processes relevant to biology, though further studies are needed to establish relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C128-C134 provide balanced discussion of the field with appropriate citations. The authors acknowledge ongoing debates (C105) and present their findings (C106-C108) as evidence against the water content hypothesis. The discussion is appropriately cautious about biological relevance (C132-C134) while defending the potential utility of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors provide background on polyQ aggregates and FUS stress granules, including their phase separation behavior, liquid-to-solid transitions, and previous Brillouin microscopy studies showing differences in fixed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C72-C75 provide background information on the biological systems studied, all supported by appropriate citations. This contextualizes the experimental findings on these systems. The information accurately represents the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49",
+      "C31",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors provide relevant biological and technical background including: nucleoli as sites of ribosomal subunit synthesis, validation of ODT protein concentration measurements, and identification of palmitoyl triacylglycerides as predominant lipid species in adipocyte culture models with density of 0.8932 g/ml.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C31, C91-C92 provide factual background information supported by appropriate citations. These establish the biological context and justify methodological choices (e.g., density value used for lipid droplets).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The authors conclude that FOB microscopy enables quantitative measurements of mechanical properties of single cells and compartments, and might potentially contribute to understanding physiological and pathological processes such as phase separation and transition in response to external stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 present the concluding statements about the potential impact of FOB microscopy. The capability for quantitative measurements (C136) is well-demonstrated by the results. The potential contributions to understanding biological processes (C137) is appropriately presented as speculative (\"might potentially\") rather than as established fact.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "DTT toxicity in C. elegans is modulated by bacterial diet composition. C. elegans showed severe developmental arrest at L1/L2 stages on E. coli OP50 diet with \u22655 mM DTT, but developed significantly better on E. coli HT115, C. aquatica DA1877, P. aeruginosa PA14, S. enterica, and S. marcescens diets at the same DTT concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C14-C15 provide direct experimental evidence from developmental stage quantification across multiple bacterial diets (Figures 1A-E, Figure 1\u2014figure supplement 1). The correlation between diet type and DTT resistance is consistently demonstrated across multiple bacterial species, with appropriate controls and replicates (n=3, >80 animals per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Vitamin B12 content in bacterial diets correlates inversely with DTT toxicity. Using the acdh-1p::GFP reporter strain as a vitamin B12 sensor, bacterial diets with higher vitamin B12 (C. aquatica DA1877, P. aeruginosa PA14, E. coli HT115) showed lower GFP expression and reduced DTT toxicity, while low vitamin B12 diets (E. coli OP50) showed high GFP expression and severe DTT toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 establish the acdh-1p::GFP reporter mechanism (cited from Watson et al., 2014) and provide fluorescence imaging data (Figure 1F) showing perfect correlation between vitamin B12 levels and DTT resistance across six bacterial diets (Figure 1G). The use of an established reporter system strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Vitamin B12 supplementation rescues DTT toxicity through methionine synthase (METR-1) but not methylmalonyl-CoA mutase (MMCM-1). Supplementation with 50 nM vitamin B12 rescued developmental defects in wild-type and mmcm-1 mutants on 10 mM DTT, but failed to rescue metr-1 mutants, indicating that vitamin B12 acts specifically through the methionine-homocysteine cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide genetic evidence using loss-of-function mutants for both vitamin B12-dependent enzymes (Figures 2C-F). The differential rescue pattern clearly demonstrates METR-1 dependence. The ability to both prevent and reverse DTT toxicity (C31-C32, Figure 2\u2014figure supplement 1) strengthens the causal relationship. Statistical significance is shown (p<0.001, n=3, >60 animals per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Forward genetic screen identified rips-1 (R08E5.3), a SAM-dependent methyltransferase, as the sole mediator of DTT toxicity. All 12 independent DTT-resistant mutants from ~50,000 mutagenized genomes carried loss-of-function mutations in rips-1, which encodes an intestinally-expressed SAM-dependent methyltransferase. The DTT-resistant phenotype was completely rescued by expressing wild-type rips-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe a well-powered genetic screen with whole-genome sequencing validation (Figures 3A-B, Figure 3\u2014figure supplement 2). The recovery of 12 independent alleles all in the same gene (including nonsense and splice mutations, C53-C54) provides strong genetic evidence. Complementation rescue (C56, Figure 3E) confirms causality. The screen appears saturated given recovery of only rips-1 alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DTT upregulates rips-1 and related SAM-dependent methyltransferases, and this upregulation mediates DTT toxicity. DTT exposure significantly increased transcript levels of rips-1, R08E5.1, and R08F11.4 by qRT-PCR and GFP reporter assays. RNAi knockdown of rips-1 or R08E5.1 dramatically improved development on DTT, while rips-1 overexpression enhanced DTT sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide qRT-PCR and GFP reporter data showing DTT-induced upregulation (Figures 3G-I, p<0.01-0.001). Claims C62-C64 show RNAi knockdown phenotypes (Figure 3\u2014figure supplement 3A-B), and C69 shows overexpression enhances sensitivity (Figure 3\u2014figure supplement 3C-D). The bidirectional genetic evidence (loss-of-function resistance, gain-of-function sensitivity) strongly supports the model. However, C65-C68 acknowledge uncertainty about whether related methyltransferases act independently or through cross-RNAi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DTT induces mitochondrial UPR through the methionine-homocysteine cycle. Animals exposed to 10 mM DTT showed upregulation of the mitochondrial UPR reporter hsp-6p::GFP, which was rescued by vitamin B12 supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide fluorescence data showing DTT-induced mitochondrial UPR and its rescue by vitamin B12 (Figure 3\u2014figure supplement 4A-B, p<0.001, n=15-16 animals). The rescue by vitamin B12 supports the inference (C74) that DTT induces mitochondrial UPR via the methionine-homocysteine cycle. The connection to prior work (C71) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "\u03b2-mercaptoethanol (\u03b2-ME) shares the DTT toxicity mechanism, while N-acetylcysteine (NAC) acts through a different mechanism. rips-1 mutants showed resistance to \u03b2-ME but not NAC toxicity. \u03b2-ME, but not NAC, induced rips-1p::GFP expression and was rescued by vitamin B12 supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 provide consistent evidence across three assays (developmental phenotype, reporter expression, vitamin B12 rescue) distinguishing \u03b2-ME from NAC (Figures 4A-F). The parallel behavior of \u03b2-ME and DTT across all three assays strongly supports shared mechanism (C81), while NAC's distinct behavior supports a different mechanism (C82). Sample sizes appear adequate (n=3, >50 animals; n=16 for fluorescence).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "SAM depletion, rather than methionine depletion, is the primary cause of DTT toxicity. Methionine supplementation rescued DTT toxicity in wild-type and metr-1 mutants in a dose-dependent manner, but failed to rescue sams-1 mutants that cannot convert methionine to SAM. Similarly, vitamin B12 supplementation failed to rescue sams-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 show methionine rescue works even in metr-1 mutants (Figures 5A-C), demonstrating methionine acts downstream of METR-1. Claims C88-C89 show that sams-1 mutants, which cannot convert methionine to SAM, are not rescued by either methionine or vitamin B12 (Figures 5D-E). This genetic epistasis analysis clearly places SAM depletion as the proximal cause. The dose-dependent rescue (C84) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DTT exposure depletes SAM levels in wild-type but not rips-1 mutant animals. Mass spectrometry quantification showed significant SAM reduction in N2 animals exposed to DTT, while rips-1(jsn11) mutants maintained SAM levels upon DTT exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide direct biochemical evidence via LC-MS quantification (Figure 5F, p<0.01, n=3 biological replicates). The differential response between wild-type and rips-1 mutants directly links RIPS-1 activity to SAM depletion. This is critical biochemical validation of the genetic model. The methods describe appropriate sample preparation and quantification procedures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Phosphatidylcholine is a major SAM-dependent product responsible for combating DTT toxicity. Choline supplementation, which allows SAM-independent phosphatidylcholine synthesis, rescued DTT toxicity in wild-type and metr-1 mutants. The rescue was only partial in sams-1 mutants, suggesting other SAM-dependent functions also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 show choline rescues wild-type and metr-1 mutants but only partially rescues sams-1 mutants (Figures 5G-H, n=3, >50 animals). This pattern is consistent with phosphatidylcholine being a major but not sole SAM-dependent protective factor. The interpretation (C101-C102) appropriately acknowledges the partial rescue in sams-1 mutants indicates additional SAM functions. The logic connecting SAM to phosphatidylcholine through established pathways (C94-C98, appropriately cited) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "DTT causes ER stress in part through modulation of the methionine-homocysteine cycle. Supplementation with vitamin B12, methionine, or choline all suppressed DTT-induced upregulation of the ER stress reporter hsp-4p::GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104 and C106 provide fluorescence quantification showing all three supplements (vitamin B12, methionine, choline) suppress DTT-induced ER stress (Figures 6A-B, p<0.001, n=16 animals). The connection to prior work on methionine-homocysteine cycle and ER stress (C103, C105) is appropriately cited. The conclusion (C107) that DTT causes ER stress \"in part\" through this cycle is appropriately cautious given that supplements suppress but may not eliminate ER stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "At low DTT concentrations (5 mM), toxicity is primarily due to methionine-homocysteine cycle modulation and does not require functional UPR. At high concentrations (10 mM), toxicity requires both cycle modulation and ER proteotoxic stress, necessitating a functional IRE-1/XBP-1 pathway. Vitamin B12 rescued all UPR mutants at 5 mM DTT but failed to rescue ire-1 and xbp-1 mutants at 10 mM DTT, while rescuing atf-6 and pek-1 mutants at both concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 provide comprehensive data across multiple UPR pathway mutants at two DTT concentrations (Figures 6C-J, Figure 6\u2014figure supplement 1-2, n=3, >80 animals). The dose-dependent ER stress (C108-C109) and differential rescue pattern clearly distinguish two mechanisms. The specific requirement for IRE-1/XBP-1 but not ATF-6 or PEK-1 at high DTT is well-documented. This represents a sophisticated genetic dissection of concentration-dependent toxicity mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "DTT is a reducing agent that disrupts ER oxidative protein folding and has been widely used as an ER-specific stressor, though some studies suggest alternative mechanisms including ROS generation and ER-independent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C118-C126 summarize established knowledge about DTT's properties and effects, all appropriately supported by citations to prior literature. This provides necessary background context for the study. The claims accurately represent the state of knowledge including conflicting views about DTT's mechanism of action.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "DTT toxicity in C. elegans occurs primarily through modulation of the methionine-homocysteine cycle via upregulation of rips-1, leading to SAM depletion. This mechanism extends beyond the ER to affect mitochondrial UPR, challenging the view of DTT as an ER-specific stressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C139 represent summary conclusions integrating multiple lines of evidence from the study. The conclusions are well-supported by the experimental data presented. The challenge to DTT being ER-specific (C133-C135) is justified by the mitochondrial UPR data and the genetic screen results showing specific methionine-homocysteine cycle involvement. The concentration-dependent mechanism (C137-C139) is supported by the UPR mutant analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "DTT may be a substrate for RIPS-1 methyltransferase, and upregulation of methyltransferases might represent a general defense response against thiol reagents, analogous to the gliotoxin defense mechanism in fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C141 are explicitly speculative about DTT being a RIPS-1 substrate. While C142 cites evidence that thiols can be methylated, and C144-C147 describe the gliotoxin defense mechanism in fungi, these do not directly demonstrate that DTT is methylated by RIPS-1 in C. elegans. The hypothesis (C148) is reasonable but requires direct biochemical validation of RIPS-1 substrate specificity and DTT methylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The methionine-homocysteine cycle is an important intervention point for health and lifespan, and DTT at non-toxic concentrations might have beneficial effects through modulating this cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C152 appropriately cite literature on the importance of methionine metabolism for health and lifespan. However, C153 is explicitly speculative (\"it will be intriguing to test\") about potential beneficial effects of low-dose DTT. No data are presented testing this hypothesis. While the speculation is reasonable given that SAM reduction can extend lifespan, this remains untested future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Modulation of the methionine-homocysteine cycle by DTT may be conserved across organisms including A. niger and mammalian cells, based on observations of methyltransferase upregulation and altered cysteine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C154 and C158 are explicitly speculative (\"it is likely possible,\" \"it is possible\"). While C155 cites evidence of increased cysteine in DTT-treated mammalian cells and C58 notes methyltransferase upregulation in A. niger, these observations are indirect. The connection between DTT, methyltransferase upregulation, and methionine-homocysteine cycle modulation has only been directly demonstrated in C. elegans in this study. Cross-species conservation requires direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Summary of main findings: Dietary vitamin B12 alleviates DTT toxicity through methionine synthase; loss-of-function of rips-1 confers DTT resistance; DTT upregulates rips-1 and modulates the methionine-homocysteine cycle; DTT toxicity results from SAM depletion; IRE-1/XBP-1 UPR is required at high but not low DTT concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 are abstract-level summaries of the main findings, each supported by multiple detailed experimental results evaluated above. These represent accurate high-level summaries of well-supported conclusions from the study.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C22",
+      "C38"
+    ],
+    "result": "The authors demonstrate high structural similarity between the methyltransferase cores of human METTL3, METTL14, and bacterial EcoP15I, suggesting evolutionary origin from a common ancestor. Structural superposition reveals an rmsd of 2.55 \u00c5 over 278 C\u03b1 atoms between EcoP15I ModB and METTL14, with similar arrangement of canonical MTase motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C22, and C38 are well-supported by structural analysis data shown in Figure 1. The quantitative rmsd value and visual structural comparisons provide strong evidence for the structural similarity and inferred evolutionary relationship. The methodology (secondary structure-based superposition) is appropriate and clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "METTL3-METTL14 preferentially methylates single-stranded DNA (ssDNA) substrates. The enzyme shows 2-fold higher activity on d6T* (a true ssDNA) compared to d6T (which can form partial duplex), and >12-fold higher activity on d6T* compared to the RNA equivalent r6T. No activity was observed on perfect duplex DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C46 are strongly supported by radiometric assay data in Figure 2a. The experimental design appropriately addresses the question of substrate preference by comparing structurally distinct oligonucleotides. The inference that d6T forms partial duplex (C43) is reasonable based on sequence analysis, though direct structural confirmation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "An inverse relationship exists between substrate binding affinity and methylation activity for METTL3-METTL14. Structured RNAs (rNEAT2, rTCE23) bind with highest affinity (Kd = 2-25 nM) but show lowest methylation. DNA substrates (d6T, d6T*) bind with lowest affinity (Kd = 370-509 nM) but show highest methylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C49-C55 are well-supported by comprehensive fluorescence polarization binding data (Figure 2b, Table 1) and methylation assays (Figure 2a). The inverse relationship is clearly demonstrated across multiple substrates with consistent methodology. The data quality appears robust with error bars indicating reproducibility across replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C56",
+      "C57"
+    ],
+    "result": "METTL3-METTL14 methylates RNA substrates much less efficiently than ssDNA. Structured RNAs (rNEAT2, rTCE23) show low to negligible methylation activity, with rTCE23 showing no detectable activity and rNEAT2 showing only low but detectable activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47, C48, C56, C57 are supported by radiometric assay data in Figure 2a and 2c. The lack of activity on rTCE23 is expected given the absence of RRACH motif, serving as an appropriate negative control. The low activity on rNEAT2 despite containing a DRACH motif supports the conclusion about reduced RNA methylation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "Structured RNA elements (rNEAT2, rTCE23) dose-dependently inhibit METTL3-METTL14-mediated DNA methylation. rNEAT2 shows stronger inhibition (IC50 = 216 nM) than rTCE23 (IC50 = 887 nM). Equimolar addition of these RNAs reduces DNA methylation from 80.5% to 14.5% (rNEAT2) or 7.3% (rTCE23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C67, C70-C71 are strongly supported by multiple orthogonal methods: radiometric assays (Figure 2c, 2e), LC/MS oligonucleotide intact mass analysis (Figure 2f), and nucleoside analysis (Figure 2g). The consistency across different analytical approaches strengthens confidence in the inhibition phenomenon. IC50 values are appropriately determined from dose-response curves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The sequence and shape of target RNAs dictate m6A activity of METTL3-METTL14. rNEAT2* (with perfect GGACU motif) shows higher methylation than rNEAT2 but ~6-fold reduced binding affinity, and still methylates less efficiently than d6T* DNA. rNEAT2* also inhibits DNA methylation but less effectively than rNEAT2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by experimental data comparing rNEAT2 and rNEAT2* variants (Figure 2b, 2c). The design appropriately tests the contribution of sequence versus structure. However, the conclusion about sequence and shape dictating activity (C61) is somewhat broad given the limited number of sequence variants tested. Additional sequence variants would strengthen this generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 proposes a mechanistic explanation (slow off rates) for the observed inverse relationship between binding and methylation. While the inverse relationship is well-documented, the proposed mechanism is speculative and not directly tested. Kinetic measurements of on/off rates or product release would be needed to support this mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "Nucleoside analysis confirms that deoxyadenosine on d6T* and adenosine on rNEAT2 are the only modified bases. In absence of inhibitory RNAs, 86.3% of dAs on d6T* are modified. rNEAT2 shows 5.8% modification of rAs, while rTCE23 shows no modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, C72, C73 are well-supported by nucleoside composition analysis (Figure 2g). This orthogonal validation method confirms the identity of modified bases and quantifies methylation efficiency. The lack of modification on rTCE23 serves as an appropriate negative control given the absence of RRACH motif.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The C-terminal RGG repeat motif of METTL14 plays a major role in substrate binding and mediates RNA-dependent restriction of DNA methylation activity. Deletion of RGG reduces binding affinity 2-10 fold, decreases DNA methylation activity by 60%, and substantially reduces RNA-mediated inhibition (from >90% to ~75% activity reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are well-supported by systematic comparison of full-length and RGG-deleted enzymes using binding assays (Figure 3b, Table 1) and activity assays (Figure 3c). The experimental design appropriately tests the contribution of the RGG domain. Statistical analysis (t-test, p<0.0001) supports the significance of observed differences. The conclusion that RGG mediates shape-specific RNA recognition is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Other parts of the enzyme (CCCH-type zinc finger domains in METTL3 and MTase core of METTL14) may also contribute to overall substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is reasonably inferred from the observation that RGG deletion does not completely abolish binding (C75). The residual binding activity suggests contributions from other domains. However, this remains an inference as these other domains were not directly tested through deletion or mutation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose that structured RNA elements could facilitate METTL3-METTL14 recruitment to chromatin and/or maintain enzyme engagement during co-transcriptional m6A deposition. This topological arrangement could restrict m6dA deposition to single-stranded DNA regions exposed during transcription, recombination, damage/repair, and R-loop metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C94 are speculative models based on the in vitro findings but not directly tested. While the in vitro data on RNA-mediated inhibition of DNA methylation is solid, the proposed in vivo mechanisms and biological contexts are hypothetical. These claims appropriately cite relevant literature but would require cellular or in vivo experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparative analysis reveals two major differences between METTL3/METTL14 and bacterial EcoP15I: loss of the target recognition domain (TRD) and acquisition of the RGG motif in METTL14. The authors speculate that gene fusion/genome rearrangement events during evolution may have ensured low/no occurrence of m6dA in mammalian genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 regarding structural differences are supported by sequence/structural analysis (Figure 1, 3a). However, claim C100 about evolutionary gene fusion events is highly speculative. While the structural observations are valid, the evolutionary interpretation lacks direct evidence and represents one possible explanation among several. Phylogenetic analysis would strengthen this evolutionary claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C104"
+    ],
+    "result": "The authors propose that high affinity binding to structured RNAs could ensure efficient recruitment of METTL3-METTL14 to specific nuclear compartments, and that structured RNA elements may regulate ssDNA and ssRNA methylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101 and C104 are reasonable speculations based on the in vitro findings but lack direct experimental support. The high-affinity RNA binding is well-documented, but the proposed role in nuclear compartment recruitment is hypothetical. Cellular localization studies or chromatin immunoprecipitation experiments would be needed to test these proposals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95",
+      "C96",
+      "C102",
+      "C103"
+    ],
+    "result": "Background and literature context claims establishing known functions of METTL3-METTL14, m6A biology, structural features of methyltransferases, and relevant cellular contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C8-C16, C19-C21, C23-C37, C39-C41, C82-C88, C95-C96, C102-C103) represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for the current work. The citations appear appropriate and the claims accurately represent prior work based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Methodological details regarding protein constructs, expression systems, and purification procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 describe methodological details that are clearly stated in the Materials and Methods section. The protein expression and purification procedures appear standard and appropriate. Figure 1f shows quality control data (SEC chromatograms and gels) confirming protein purity and complex formation.",
+    "result_type": "MINOR"
+  }
+]

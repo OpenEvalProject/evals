@@ -1,0 +1,393 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The SpliZ method was applied to analyze large-scale single-cell RNA-seq datasets across three mammalian species: 109,981 human cells, 165,200 mouse lemur cells, and 14,700 mouse cells, all sequenced with 10X Chromium technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide explicit cell counts with citations to established data sources (Tabula Sapiens, Tabula Microcebus, and Tabula Muris consortia). The numbers are specific and verifiable, and the manuscript clearly documents the datasets analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C70"
+    ],
+    "result": "Approximately 9% of genes with computable SpliZ scores exhibit cell-type-specific splicing patterns in human cells, based on analysis of 10X data from individual 1 (129 out of 1416 genes with p-value < 0.05 and effect size > 0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C70 are consistent and provide specific statistical thresholds (p-value < 0.05, effect size > 0.5). The percentage calculation (129/1416 \u2248 9.1%) is mathematically correct. The result is based on rigorous statistical methodology with appropriate multiple testing correction (Benjamini-Hochberg).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C38"
+    ],
+    "result": "Three ubiquitously expressed genes\u2014MYL6 (actin light chain), RPS24 (ribosomal protein), and ATP5F1C (ATP synthase subunit)\u2014exhibit the highest compartment-specific splicing effects, with conservation across human, mouse, and mouse lemur. Their splicing patterns are independent of gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C27-C30, C33-C34, and C38 collectively establish that these three genes show compartment-specific splicing that is conserved across species and independent of expression. The independence from gene expression is demonstrated through supplementary figures (C38), and conservation is explicitly stated with supporting data (C30, C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MYL6 exhibits compartment-specific exon skipping involving orthologous splice sites across human, mouse lemur, and mouse, with immune cells showing higher exon skipping rates than stromal cells. RNA FISH validation in human lung confirmed these patterns with specific percentages: smooth muscle (57% inclusion), respiratory epithelium (16%), macrophages (10%), and lymphocytes (8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 provide comprehensive evidence including computational analysis across species (C44-C46), experimental validation via RNA FISH (C47-C48), and specific quantitative measurements (C49-C52). The convergence of computational and experimental evidence strongly supports the result. The FISH validation provides independent confirmation of the computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RPS24, an essential ribosomal protein, exhibits complex cell-type-specific alternative splicing involving three short exons (a: 3nt, b: 18nt, c: 22nt) with ultraconserved sequences. The +a-b+c isoform is epithelial-specific in humans but rare in mouse and mouse lemur, while different isoforms are dominant in endothelial, stromal, and immune compartments, with monocyte subtypes showing distinct splicing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C69 describe a comprehensive characterization of RPS24 splicing across cell types and species. The result is supported by computational analysis (C54, C58-C69), single-cell PCR validation (referenced in C64), RNA FISH (Figure 4E), and Bowtie2 alignment validation (Figure 4\u2014figure supplement 2). The complexity and conservation patterns are well-documented with specific isoform distributions across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The SpliZ method's power to detect differential alternative splicing increases with sequencing depth, plateauing at approximately 20,000 spliced reads per gene, at which point around 15% of genes are called as significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe the relationship between sequencing depth and detection power, with specific quantitative thresholds. This is supported by Figure 1E showing the saturation curve. The result provides important methodological context for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "1.6% of genes (22 out of 1353) with computable SpliZ scores show consistent compartment-specific splicing effects across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides specific counts and percentages with reference to supplementary materials. The statistical methodology is described in the Materials and methods section. The result is more conservative than the cell-type-specific analysis (9%), which is expected since compartment-level analysis groups multiple cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C41"
+    ],
+    "result": "Splicing patterns of just two genes (RPS24 and ATP5F1C) can predict cellular compartment origin with high accuracy through unsupervised k-means clustering: 78%, 84%, and 95% accuracy for stromal, epithelial, and immune compartments in individual 1, though accuracy was lower in individual 2 (70%, 100%, 49%), possibly due to fewer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C41 describe the predictive power of splicing-based clustering with specific accuracy metrics. The analysis is methodologically sound (k-means with k=3), and the authors appropriately acknowledge the lower performance in individual 2 with a plausible explanation (C41). The result demonstrates biological significance of the splicing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Compartment-specific splicing patterns for RPS24 and MYL6 are conserved between human, mouse lemur, and mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by parallel analysis across species with reference to Figures 3 and 4. The conservation analysis is further supported by LiftOver analysis (C88) showing significant enrichment of shared SpliZsites between human and mouse lemur (15.5% vs 7% expected).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Cell-type-specific splicing patterns show reproducibility across individuals and technologies, with Pearson correlation of 0.77 between individuals 1 and 2 (both 10X) and 0.44 between 10X and Smart-seq2 within individual 1 for genes called significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide specific correlation values with statistical significance (p < 10e-50). The lower correlation between technologies (0.44) compared to between individuals (0.77) is expected given technical differences. The analysis appropriately restricted comparison to shared junctions and cell types, strengthening the validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TPM1, a known cell-type-specifically spliced gene serving as positive control, was ranked 27th by effect size, with capillary endothelial cells expressing approximately equal levels of three isoforms while smooth muscle cells almost exclusively express the isoform with the 3\u2032-most domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 describe validation using a positive control gene. The ranking (27th) and cell-type-specific patterns are consistent with known TPM1 biology (C73 cites prior knowledge). The result validates the SpliZ method's ability to detect known splicing differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PNRC1, a nuclear receptor coregulator and tumor suppressor, exhibits the fifth highest effect size for cell-type-specific splicing, with splice variants known to modify interaction domains and nuclear functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 identify PNRC1 as a significantly spliced gene with functional implications. The ranking (5th) is specific, and functional context is provided through citations (C77, C79). Figure 7A shows the splicing patterns across cell types and datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Unsupervised hierarchical clustering based on median SpliZ scores reveals that cell types from the same tissue cluster together (e.g., macrophages and T cells from different tissues), and that splicing programs are highly similar within compartments independent of tissue origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe clustering analysis results shown in Figure 7B. The finding that splicing programs cluster by cell type and compartment rather than tissue is biologically significant and well-supported by the visualization. The methodology is appropriate (hierarchical clustering on median SpliZ values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Among SpliZsites in significant genes, 93% are at boundaries of annotated exons, but only 38.5% are annotated as alternatively spliced, suggesting that unannotated exon skipping accounts for underappreciated splicing variation in single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide genome-wide analysis of SpliZsites. The high percentage at annotated exon boundaries (93%) validates the method, while the low percentage of annotated alternative splicing (38.5%) suggests novel discoveries. The inference about unannotated splicing (C84) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SpliZsites have functional impact on proteomes: more than half affect protein coding domains, 34% impact the 3\u2032 UTR, and 16% impact the 5\u2032 UTR, consistent with 10X technology's 3\u2032 bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide genome-wide functional annotation of SpliZsites. The percentages sum to 100% (assuming overlap or rounding), and the 3\u2032 bias observation (C87) is consistent with known 10X technology limitations. The result demonstrates biological relevance of detected splicing variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Conservation analysis shows that 15.5% of human SpliZsites are also SpliZsites in mouse lemur (vs 7% expected under null), while only 8.0% are conserved in mouse (vs 8.8% expected), suggesting greater conservation with mouse lemur than mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide quantitative conservation analysis with null expectations. The significant enrichment in mouse lemur (p=0.0003 per methods) but not mouse is surprising but could reflect evolutionary distance, sample size differences, or sequencing depth as the authors note. The statistical approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Classical monocytes contain two subpopulations distinguishable by SAT1 splicing (involving an ultraconserved exon) but not by gene expression, identified through Gaussian mixture modeling with the largest Bhattacharyya distance among detected subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe subpopulation discovery using splicing. The statistical approach (GMM with ICL model selection, Bhattacharyya distance) is rigorous. The independence from gene expression (C93) is demonstrated through cellxgene visualization. Binomial test validation (p<0.05) in individual 1 supports the finding. This demonstrates the power of splicing-based cell state identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "170 genes (out of 1757 with computable SpliZ in >100 cells) show splicing patterns significantly correlated with pseudotime during human spermatogenesis (|Spearman's correlation| > 0.1, Bonferroni-corrected p < 0.05), including genes implicated in male fertility (TPPP2, FAM71E1, SPATA42) and mitochondrial function (MTFR1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C94-C99 describe developmentally regulated splicing in spermatogenesis. The statistical thresholds are appropriate with multiple testing correction. The identified genes have relevant functions (C95-C99 with citations), supporting biological validity. The result represents the first comprehensive single-cell splicing analysis of normal human spermatogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Among genes with regulated splicing in human spermatogenesis, 10 are also developmentally regulated in mouse and mouse lemur, including CEP112 (highest correlation), which shows conserved orthologous splicing affecting the apolipoprotein domain and has been associated with male infertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C100-C106 describe conserved developmental splicing regulation. CEP112 is well-characterized with functional context (C103-C104 with citations), conserved splice sites (C105), and functional domain impact (C106). The conservation across three species and association with fertility strongly support biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SPTY2D1OS shows conserved regulated splicing in spermatogenesis across species; it corresponds to Sirena1 in mouse (known for oocyte development function) but has not been previously implicated in spermatogenesis, suggesting transcriptome-wide splicing regulation in spermatogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 identify a novel role for SPTY2D1OS/Sirena1 in spermatogenesis. The conservation (C108 with citation) and lack of prior spermatogenesis association (C109) make this a discovery. The broader conclusion about transcriptome-wide regulation (C110) is supported by the 170 genes identified (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Droplet-based 10X sequencing has much lower coverage than Smart-seq2 (1416 vs 9802 genes with computable SpliZ in human individual 1) and is 3\u2032-biased, but is ~50-fold faster (2-3 days vs ~26 weeks for 5000 cells), making it valuable for large-scale splicing analysis despite limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 provide methodological comparison between technologies. The specific numbers (C114-C115) and time estimates (C112 with citations) are explicit. The 3\u2032 bias (C116) is a known limitation. The discussion appropriately balances advantages and limitations of droplet-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The fraction of genes with cell-type-specific splicing is predicted to increase substantially beyond the current ~10% estimate as more cells, cell types, and non-3\u2032-biased data are analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is a prediction about future findings rather than a current result. While the prediction is reasonable given current limitations (3\u2032 bias, limited cell types, sequencing depth), it cannot be evaluated as supported or unsupported without additional data. The ~10% estimate is based on current data limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C118",
+      "C119"
+    ],
+    "result": "This comprehensive analysis across multiple organs and species provides strong evidence that alternative splicing in a large fraction of human genes is cell-type-specifically regulated and that splicing is central to functional specialization of cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C118-C119 represent the main conclusions of the work. These are supported by the cumulative evidence: ~9% of genes show cell-type-specific splicing (C5, C70), conservation across species (C30, C43, C88), functional validation (C47-C52, RNA FISH), and biological relevance (compartment prediction C42, subpopulation discovery C90-C93). The evidence is comprehensive and multi-faceted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work has established that isoform-specific RNA expression is conserved, tissue-specific, functionally important for development and signaling, and can produce proteins with opposite functions, but the extent of cell-type-specific splicing remains controversial due to confounding from tissue-level studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 summarize prior knowledge with appropriate citations. These background claims establish context and motivation for the study. The controversy about extent of cell-type-specific splicing (C23) is appropriately noted and motivates the single-cell approach. All claims are properly attributed to cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "LIMCH1, a non-muscle myosin regulator associated with Huntington's disease, shows compartment-specific splicing with no prior reports of regulated splicing, representing a novel discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C35-C37 describe LIMCH1 as a novel example of compartment-specific splicing. The functional annotations (C35-C36) are cited, and the novelty (C37) is explicitly stated. Figure 2A shows the splicing patterns across cell types and datasets, supporting the discovery.",
+    "result_type": "MAJOR"
+  }
+]

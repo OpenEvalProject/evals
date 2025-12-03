@@ -1,0 +1,453 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C122"
+    ],
+    "result": "The authors developed a high-throughput multi-larva tracking system that performs real-time behavior detection of up to 16 larvae simultaneously with independent optogenetic and thermogenetic stimulation delivered with high temporal precision (\u226450ms for optogenetics, 4s heating time for thermogenetics) in both open- and closed-loop configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C63 and C122 provide comprehensive technical specifications with measured performance metrics. The system architecture is well-documented with hardware specifications, timing measurements (Figure 2\u2014figure supplement 1), and behavior detection performance values provided in methods. The 4s heating time and \u226450ms optogenetic delay are experimentally measured values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Proof-of-principle optogenetic experiments demonstrate that combined red light from two DMDs successfully activates CsChrimson-expressing neurons, triggering rolling behavior in >50% of 69F06>CsChrimson and >90% of 72F11>CsChrimson larvae during 5s stimulation, with significantly elevated bending compared to attP2>CsChrimson controls, while red light alone is minimally aversive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C80 present optogenetic validation data with appropriate controls (Figure 2D). Statistical comparisons use Fisher's exact test with Bonferroni correction across multiple time bins. The low bending in controls (C77) supports the inference that red light is minimally aversive. Sample sizes are adequate (n=32-46 per group).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Thermogenetic stimulation with 1490nm IR laser activates dTrpA1-expressing neurons, triggering rolling in >60% of 69F06>dTrpA1 and >40% of 72F11>dTrpA1 larvae with a predictable 4-5s temporal delay, though control larvae show elevated bending indicative of mild heat aversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 demonstrate thermogenetic efficacy with measured temporal dynamics (Figure 2E). The 4-5s delay is consistent with heating kinetics (Figure 2\u2014figure supplement 1). The caveat about heat aversion in controls (C88-C89) is appropriately acknowledged and limits the utility of thermogenetics for certain paradigms. Statistical tests are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C177",
+      "C178",
+      "C180",
+      "C181"
+    ],
+    "result": "Drosophila larvae demonstrate trace conditioning for the first time, showing reduced attraction to Or42b activation after forward-paired training with Basin neuron activation (9s gap between CS offset and US onset). Experimental larvae showed significantly smaller percentage bending differences after forward-paired training (mean=-5.22%) compared to backward-paired training (mean=-29.65%, p<0.0001, CLES=0.852), and compared to control larvae receiving heat alone (mean=-21.76%, p<0.0001, CLES=0.752).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C111 and C177-C181 present the first demonstration of trace conditioning in larvae with appropriate experimental design (Figure 3). The 9s gap calculation (C97) accounts for measured heating dynamics. Statistical analyses use Mann-Whitney U tests appropriate for non-normal distributions. Multiple controls (backward-paired, genetic controls) strengthen conclusions. However, the novelty claim (C7, C111) relies on authors' literature knowledge and should be independently verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C178"
+    ],
+    "result": "Control larvae without dTrpA1 in Basin neurons also showed reduced attraction after forward-paired training (mean=-21.76%) compared to backward-paired (mean=-30.22%, p=0.009, CLES=0.648), suggesting mild heat alone can weaken attraction to Or42b, consistent with prior work using heat as reinforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 appropriately identify a control effect that complicates interpretation. The statistical comparison is valid, and the connection to prior work (Khurana et al., 2012) is appropriate. This control result is important for understanding the contribution of Basin activation versus heat alone, and the authors correctly note the significantly larger effect in experimental larvae (C107-C108).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C187",
+      "C188"
+    ],
+    "result": "Drosophila larvae demonstrate operant conditioning of bend direction through optogenetic activation of Ddc neurons. After training, Ddc>CsChrimson larvae showed significantly greater bend rate to the previously stimulated side (mean=4.84) versus unstimulated side (mean=4.10, p=0.0007, CLES=0.59), with no initial bias before training (p>0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C124-C127 present operant conditioning results with appropriate experimental design (Figure 4). Statistical tests (Wilcoxon signed-rank) are appropriate for paired data. The lack of initial bias (C124) and development of preference during training (C125-C126) support operant learning interpretation. Sample size (n=143) is adequate. Replication on single-larva tracker (C128) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The operant conditioning result was replicated on a single-larva tracker, showing significant bend direction preference (p=0.0043, CLES=0.63), while effector control larvae (UAS-CsChrimson without Ddc-GAL4) showed no preference, confirming absence of leaky expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide important replication on an independent system and genetic control. The effector control is critical for ruling out leaky expression artifacts. Statistical test is appropriate and sample size adequate (n=109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Larvae receiving random, uncorrelated stimulation during 50% of bends showed no directional bias and significantly lower difference in bend rates after training (mean=-0.28) compared to pair-trained larvae (mean=0.74, p=0.0020, CLES=0.60). Uncorrelated-trained larvae bent significantly more than pair-trained larvae to the unstimulated side (p=0.0037), suggesting pair-trained larvae learned to avoid the unstimulated side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 present critical control experiments demonstrating that learning requires contingency between behavior and stimulation. Statistical comparisons are appropriate. The interpretation about learning to avoid the unstimulated side (C135) is reasonable given the data pattern, though alternative explanations exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Restricting Ddc expression to brain and SEZ (using tsh-Gal80) eliminated operant conditioning. Ddc>CsChrimson, tsh>Gal80 larvae showed no learned direction preference after training (p>0.5) and significantly lower difference in bend rate (mean=0.029) compared to Ddc>CsChrimson larvae (mean=0.74, p=0.012, CLES=0.58), indicating VNC dopaminergic and serotonergic neurons are critical for operant conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C153 use intersectional genetics to dissect circuit requirements. The tsh-Gal80 expression pattern is validated by immunohistochemistry (Figure 4\u2014figure supplement 1, C145). Statistical comparisons are appropriate. The conclusion that VNC neurons are critical (C153) is well-supported, though the inference that brain neurons are 'not sufficient' (C152) is more cautious than claiming they are unnecessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C159",
+      "C160",
+      "C161",
+      "C163"
+    ],
+    "result": "Activating PAM cluster dopaminergic neurons (58E02>CsChrimson) did not induce operant conditioning. Larvae showed no learned direction preference after training (p>0.5) and significantly lower difference in bend rate (mean=-0.14) compared to Ddc>CsChrimson larvae (mean=0.74, p=0.015, CLES=0.58), supporting the idea that operant conditioning may not be mediated by the mushroom body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C163 test MB involvement using PAM-specific driver. Negative result is appropriately interpreted with caution (C163). The observation of preference to unstimulated side during training (C156) raises questions about motor control effects that are appropriately acknowledged. Sample size adequate (n=145). This result contrasts with classical conditioning where MB is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C165",
+      "C189"
+    ],
+    "result": "Activating dopaminergic TH neurons (excluding PAM cluster) did not yield significant learned direction preference in operant conditioning, with no difference in bend rates before or after training (p>0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165 and C189 present negative result with TH-Gal4 driver. Statistical test appropriate and sample sizes adequate (n=75 before, n=122 after). The negative result is important for circuit dissection but must be interpreted cautiously as absence of evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C190",
+      "C191"
+    ],
+    "result": "Activating serotonergic Tph neurons was sufficient to induce operant conditioning, with significantly higher bend rate to stimulated side (mean=3.62) versus unstimulated side (mean=3.29) after training (p=0.019, CLES=0.58). However, direct comparison between TH and Tph groups was not significant (p>0.5), suggesting cautious interpretation that Tph neurons are sufficient but TH neurons may weakly contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 and C190-C191 demonstrate sufficiency of serotonergic neurons with appropriate statistical tests. The cautious interpretation (C170-C171) acknowledging that lack of significance between TH and Tph doesn't prove equivalence is scientifically appropriate. Sample sizes adequate (n=77 before, n=126 after for Tph).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C192",
+      "C193"
+    ],
+    "result": "Restricting Tph expression to brain and SEZ (Tph>CsChrimson, tsh>Gal80) eliminated operant conditioning, with no learned direction preference (p>0.05) and significantly lower difference in bend rate (mean=-0.12) compared to Tph>CsChrimson larvae (mean=0.33, p=0.025, CLES=0.58), suggesting VNC serotonergic neurons play a novel role in conveying reward signals for operant conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C174 and C192-C193 use intersectional genetics to localize critical neurons to VNC. Statistical comparisons appropriate. The conclusion about VNC serotonergic neurons (C193) is well-supported by the data. This is a novel finding that contrasts with classical conditioning circuits. Sample sizes adequate (n=76 before, n=111 after).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors determined that thermogenetic stimulation is too slow for operant conditioning because average bend duration is 1.35s (sd=1.67s, n=4622) while heating requires ~4s, and increasing laser intensity risks tissue damage. Mild heat is more aversive than red light based on control bending behavior, leading to choice of optogenetics for operant paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 present logical reasoning for methodological choices based on measured parameters. The bend duration measurement (C117) is from substantial data (n=4622). The inference about temporal mismatch (C118) is sound. The comparison of aversiveness (C121) is based on control data from Figures 2D and 2E. This reasoning appropriately guides experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C185",
+      "C186"
+    ],
+    "result": "The authors did not observe increased attraction to Or42b after backward-paired training, potentially due to slow cooling dynamics causing Basin neurons to remain partially active during subsequent Or42b stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C185-C186 acknowledge a negative result and offer speculation (C186). The explanation about residual heat is plausible given measured cooling dynamics (Figure 2\u2014figure supplement 1) but remains untested. This represents an appropriate acknowledgment of limitations and suggests future experiments with optogenetic US for backward-paired training.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C203"
+    ],
+    "result": "The Drosophila larva is a tractable model system for studying circuit basis of behavior due to powerful genetic tools, uniquely identifiable neurons with preserved morphology/function, binary expression systems, and complete EM-based wiring diagram of the mushroom body, though many forms of associative learning have not yet been demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C16-C26 present established knowledge about Drosophila larvae as a model system, supported by extensive citations. These claims provide appropriate context for the study. The statement about many forms of learning not being demonstrated (C2) motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "There is overwhelming evidence that Drosophila larvae are capable of classical conditioning with various CS-US pairings (odor-reward, odor-light, odor-shock, odor-heat, odor-vibration, odor-quinine), and adult flies can perform trace conditioning, but trace conditioning has never been shown in larvae prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 summarize prior literature with appropriate citations. The statement about absence of larval trace conditioning (C37) reflects the state of knowledge and motivates the current experiments. This provides important context for evaluating the novelty of the trace conditioning result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The absence of evidence for trace conditioning in larvae might reflect limitations of current methods rather than genuine learning limitations. Current methods often lack temporal precision, using optogenetic US with natural odor CS, and prior thermogenetic approaches (e.g., hot plates) are slow relative to optogenetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present reasonable speculation (C38) about methodological limitations, supported by citations to current approaches (C39, C41). The inference about temporal precision limitations (C40, C42) is logical and motivates the technical development. This reasoning appropriately frames the contribution of the new system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Operant conditioning has been demonstrated across vertebrates and invertebrates, but it is unknown whether Drosophila larvae can associate their own actions with sensory outcomes. For such learning, behavioral information must converge with circuits encoding outcome valence, exemplified by vertebrate basal ganglia, though some action-outcome associations do not require the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 provide appropriate background on operant conditioning with extensive citations. The statement about unknown capacity in larvae (C45) motivates the study. The theoretical framework about convergence requirements (C46-C48) is well-established and provides context for circuit dissection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Prior work in adult flies shows conflicting results about MB involvement in operant conditioning, with some studies suggesting involvement and others suggesting it is not required and may involve motor neuron plasticity. In classical conditioning, the MB is a convergence site for CS and US, comprising ~110 Kenyon cells synapsing onto 24 MBONs, with dopaminergic/octopaminergic modulation. The extent to which MB is dispensable in larval operant conditioning is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 appropriately summarize conflicting literature on MB involvement in operant conditioning with citations, contrasting with established role in classical conditioning. This provides important context for the negative results with MB-specific drivers (58E02) and motivates circuit dissection experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Biogenic amine neurotransmitters (dopamine, octopamine, serotonin) can provide reinforcement signals across the animal kingdom. The Ddc-Gal4 driver covers a broad set of dopaminergic and serotonergic neurons including MB-innervating PAM cluster neurons. PAM activation is necessary and sufficient for reward in classical conditioning, and collective Ddc activation can substitute for olfactory reward in adult flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 provide appropriate background on reward signaling with citations. This establishes the rationale for using Ddc-Gal4 as a starting point for operant conditioning experiments, though the broad expression pattern necessitates subsequent circuit dissection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "There is growing evidence from classical conditioning that larvae can learn that an unpaired stimulus predicts absence of reinforcement. The authors speculate that larvae may form memories of opposite valence in operant conditioning, bending less to the unstimulated side because it predicts absence of appetitive Ddc activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 connect to prior work on inhibitory learning (C136, with citations) and offer speculation about mechanism (C137). The speculation is reasonable given the data pattern (C133-C135) but remains untested. This represents appropriate hypothesis generation for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "Prior work used optogenetic activation of sugar-sensing neurons for operant conditioning in adult flies. The authors were unsuccessful using similar US for larval bend direction conditioning, but suggest other sensory rewards may mediate operant conditioning if information retrieval occurs within the VNC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C194-C196 acknowledge a negative result (C195, data not shown) and offer speculation (C196) based on the Ddc and Tph results. The speculation is reasonable but untested. The negative result with sugar-sensing neurons is mentioned but not detailed, limiting evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The authors suggest future directions including investigating FoxP and PKC expression (involved in adult operant learning), replicating paradigms with natural stimuli using microfluidic devices, and addressing challenges of low-frequency behaviors through probabilistic thermogenetic activation of command neurons with optogenetic reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C197-C202 present suggestions for future work. These are reasonable directions based on the current findings and prior literature (C198 with citations), but represent speculation about untested approaches. The acknowledgment of validation needs (C199) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "The authors acknowledge a notable limitation: inability to maintain object identity following larval collisions, which could be addressed in future software modifications. The system will enable rapid screening for learning circuits and has potential for studying larval taxis, decision-making, and spatial navigation/memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C207 appropriately acknowledge a technical limitation (C204) and suggest future improvements (C205). The statements about utility (C206-C207) are reasonable inferences based on demonstrated capabilities, though some applications remain to be demonstrated. The acknowledgment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  }
+]

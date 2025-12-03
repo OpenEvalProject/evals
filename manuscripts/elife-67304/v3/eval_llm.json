@@ -1,0 +1,471 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Four macaque monkeys participated in the study: two performed tasks in a 3T MRI scanner, and two were implanted with 1024 electrodes each in visual cortex (V1, V4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide explicit descriptions of the experimental subjects and their respective setups (fMRI vs. electrophysiology). These are straightforward methodological statements that are well-documented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C124",
+      "C125",
+      "C130",
+      "C131",
+      "C191",
+      "C196"
+    ],
+    "result": "BOLD-fMRI pRFs were most similar to MUA-pRFs in V1 and V4, with LFP gamma power also providing a good approximation, establishing that fMRI-based pRFs reliably reflect neuronal receptive field properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C124-C125, C130-C131, C191, and C196 collectively demonstrate the main finding through statistical comparisons of eccentricity-size relationships. The fMRI eccentricity-size relationship was similar to MUA in V1 (F=0.38, p=0.54) but different from LFP signals, while in V4 gamma power also approximated fMRI results. This is supported by data in Figures 11-12 and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C68",
+      "C69",
+      "C138"
+    ],
+    "result": "Whole-brain fMRI revealed retinotopic tuning in occipital, temporal, parietal, and frontal cortex, with pRF size consistently increasing with eccentricity across areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C35-C38, C68-C69, and C138 describe widespread retinotopic organization shown in Figure 2 and Figure 5. The consistent eccentricity-size relationship is demonstrated across multiple brain regions with statistical support, and findings are consistent with previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C134",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Two classes of negative pRFs were identified: one representing surround suppression in visual cortex, and another in default mode network (DMN) nodes showing retinotopically specific deactivation similar to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C60-C67, C134, C150-C155 describe negative pRFs with supporting evidence from Figure 4. The first class shows pRFs outside the stimulated field consistent with surround suppression, while the second class in DMN areas (mOP, lOP, LatS) aligns with recent human findings (Szinte and Knapen, 2020). Both are well-documented with anatomical and functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C135",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C168",
+      "C169",
+      "C197"
+    ],
+    "result": "The CSS model outperformed linear models, revealing subadditive spatial summation (pRF exponent 0.2-0.4) as a widespread feature across BOLD, MUA, and LFP signals in both V1 and V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53, C80, C82-C86, C135, C162-C166, C168-C169, and C197 demonstrate that the CSS model provided significantly better fits than P-LIN (Kruskal-Wallis, p<0.0001) with pRF exponents significantly below 1 (Wilcoxon signed-rank, p<0.0001). The CSS model also estimated pRF sizes similar to conventional cRF methods, supporting its validity. This is a consistent finding across modalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87",
+      "C92"
+    ],
+    "result": "MUA pRFs showed excellent model fits (average R\u00b2=64% in V1, 53% in V4), covered the lower-right visual field with clustered locations per array, and showed pRF size increasing with eccentricity consistent with previous electrophysiology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78, C87, and C92 describe MUA pRF characteristics with quantitative support. The high R\u00b2 values substantially exceed fMRI (11%), spatial clustering matches known retinotopy (Hubel and Wiesel, 1974), and size-eccentricity relationships align with previous studies (Gattass et al., 1987; Van Essen et al., 1984). Data shown in Figures 6 and 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Two V1 arrays in both monkeys showed unexpectedly small pRF sizes (~3x smaller), located in thin gray matter regions, suspected to reflect thalamic afferent activity rather than cortical neurons, and were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 identify an anomaly and propose an explanation (C90 is speculative). While the exclusion is reasonable given the anatomical location and unusual pRF sizes (Figure 9A), the interpretation that electrodes recorded from white matter/thalamic afferents lacks direct verification. The decision to exclude is justified but the mechanistic explanation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C186",
+      "C187"
+    ],
+    "result": "LFP pRFs varied by frequency band: gamma (30-120 Hz) resembled MUA with high R\u00b2 and no negative pRFs; lower frequencies yielded larger pRFs with stronger compression; and MRI pRF exponents matched \u03b3-low in V1 and both \u03b3-low and \u03b3-high in V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99, C115-C121, C186-C187 describe frequency-dependent LFP pRF properties with statistical support. The CSS model outperformed others for gamma, pRF sizes increased for lower frequencies, and exponent comparisons with MRI showed no significant differences for specific bands (p>0.05, Figure 11C). The frequency-dependent spatial spread interpretation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C156",
+      "C157"
+    ],
+    "result": "Alpha and beta LFP bands showed two electrode classes: positive pRFs representing visually driven activity, and negative pRFs (larger, lower eccentricity, shifted toward fixation) possibly reflecting attention-related suppression or eye movement effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C113 and C156-C157 describe distinct positive and negative pRF classes in \u03b1/\u03b2 bands with quantitative differences (Figure 10). However, the mechanistic interpretations (C108-C111, C157) are speculative. While the data clearly show two classes with different properties, the underlying causes (attention vs. eye movements) are not directly tested, making the functional interpretation uncertain despite solid descriptive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "In V1, eccentricity-size slopes differed significantly between signal types (F=14.44, p<0.0001), with fMRI matching MUA but differing from LFP signals; in V4, no clear differences existed between MUA, \u03b3-low, and \u03b3-high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 and C126-C129 present statistical comparisons of eccentricity-size relationships with explicit test results. V1 shows significant interaction (LMM) and pairwise differences, while V4 shows no significant differences (F=1.11, p=0.24). The area-specific patterns are well-documented in Figure 12 and supported by appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Subcortical retinotopic maps were identified in LGN and pulvinar based on higher R\u00b2, with clear maps in LGN but more variable organization in pulvinar, and limited detail due to few voxels and inter-animal variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C139-C144 describe subcortical findings with appropriate caveats. LGN maps are clearly shown (Figure 3A) and roughly consistent with previous work (Erwin et al., 1999), while pulvinar shows more variability. The authors appropriately acknowledge limitations (few voxels, variability) and note that more targeted investigations are needed, making this a well-qualified supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C81"
+    ],
+    "result": "U-LIN and DoG models outperformed P-LIN (p<0.0001), with DoG showing slight advantage overall; DoG's improved fit was due to suppressive surround (median normalized amplitude=0.71), particularly pronounced in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 and C81 describe model comparisons with statistical support (Kruskal-Wallis, Tukey's HSD). The DoG model's advantage is quantified and attributed to the suppressive surround component with specific parameter values. The area-specific pattern (strongest in V1, decreasing in higher areas) is consistent with known physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "pRFs from different electrophysiology signals on the same electrode had similar locations (<1 dva separation), and MUA/\u03b3-low pRF exponents were similar to BOLD-fMRI in V1 and V4, while \u03b3-high exponent was larger in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C171-C173 describe within-electrode consistency and cross-modality comparisons. The spatial co-localization is shown in Figure 11A, and exponent comparisons are statistically supported (p>0.05 for MUA and \u03b3-low vs. MRI). The V1-specific difference for \u03b3-high is noted, providing a nuanced and well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "All pRF models provided good fits to BOLD time courses across visual processing areas; an R\u00b2>5% threshold was used to reveal retinotopic information in frontal and subcortical regions with lower SNR; functional parcellation aligned well with probabilistic atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39-C41 describe methodological choices and data quality. The R\u00b2>5% threshold is justified for revealing information in areas with lower SNR, and the alignment with the D99 atlas (Reveley et al., 2017) provides anatomical validation. These are well-supported methodological and quality control findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Eye movements can affect pRF size estimates, but high fixation performance (IQR-span 0.18-0.60 dva) and averaging across presentations minimized these effects on the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 acknowledge a potential confound and document the controls implemented. The fixation performance data are quantified for all animals, and the averaging procedure is described. This represents appropriate experimental control and transparent reporting of potential limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The difference between V1 and V4 in BOLD similarity to electrophysiology signals may be due to V4 being smaller and more heterogeneous, with voxels sampling more heterogeneous neuronal populations, or due to signal quality differences and partial volume effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C193-C195 are speculative explanations for observed V1/V4 differences. While the observations are supported (C192), these mechanistic interpretations are not directly tested. The hypotheses are plausible and cite relevant literature (Kolster et al., 2014; Zhu and Vanduffel, 2019), but remain speculative without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on receptive fields and pRF methods: RFs are crucial for understanding perception/cognition, can be measured via various signals (spiking, LFP, calcium), and pRF methods have been widely used in humans, but systematic within-species comparisons of BOLD, MUA, and LFP pRFs had not been conducted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C33 provide literature review and context, all supported by appropriate citations. Claim C29 establishes the novelty of the current study. These are well-documented background claims that accurately represent prior work and identify the gap filled by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Good pRF fits were obtained in occipital, temporal, and parietal cortex consistent with previous studies; retinotopy was observed in frontal areas despite suboptimal stimuli; cerebellar retinotopy was not detected likely due to lower SNR and technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 describe cortical and cerebellar findings with appropriate comparisons to literature and acknowledgment of limitations. The frontal findings despite suboptimal stimuli strengthen the result, and the failure to detect cerebellar retinotopy is reasonably attributed to technical factors rather than claimed as absence of organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "V1/V2 slope differences were smaller than expected from electrophysiology but not uncommon for fMRI; unexpected retinotopy was observed in anterior cingulate cortex in one animal, a region with resting-state correlations to V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 report findings with appropriate caveats. The V1/V2 comparison acknowledges known fMRI limitations (Kay et al., 2013), and the anterior cingulate finding is presented as unexpected but contextualized with relevant literature (Griffis et al., 2017). The single-animal observation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "pRF sizes and eccentricity-size relationships were consistent with previous human and monkey neuroimaging studies, previous electrophysiology in V1-V4, and human subdural electrode recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176 provide extensive cross-validation with prior literature through multiple citations. The consistency across different methods (neuroimaging, single-unit/MUA electrophysiology, human iEEG) and species strengthens confidence in the current findings. This represents thorough contextualization within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The spatial scale of neural signals depends on signal type and recording method: MUA has ~140 \u00b5m range, LFP spatial extent is debated (120 \u00b5m to >1 cm), with lower frequencies potentially having larger reach; LFP-pRFs were larger than MUA-pRFs as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C185 review the biophysical basis of different signals with appropriate citations and acknowledge ongoing debates (C182-C184). The prediction that LFP-pRFs should be larger than MUA-pRFs (C185) is confirmed by the data, providing internal consistency between biophysical expectations and empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "fMRI involves trade-offs between spatial and temporal resolution; typical studies use 1-2 mm isotropic voxels with 2-3 s TR at 3T; the complex BOLD-neural relationship makes it difficult to predict stimulus sensitivity from voxel size alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C190 describe fundamental fMRI properties and limitations. These are well-established characteristics of the method that provide context for interpreting the study's findings. The statements accurately represent current fMRI capabilities and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C137",
+      "C159",
+      "C198",
+      "C199"
+    ],
+    "result": "This systematic within-species comparison of fMRI and electrophysiology in V1/V4 demonstrates retinotopic tuning across brain regions, negative pRFs in DMN and visual cortex, subadditive spatial summation across modalities, and that BOLD-pRFs accurately represent spatial tuning of underlying neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133, C137, C159, C198-C199 summarize the study's main contributions and conclusions. These are supported by the collective evidence from multiple analyses (model comparisons, eccentricity-size relationships, cross-modality comparisons). The conclusion that BOLD-pRFs accurately represent neuronal spatial tuning (C137) is justified by the convergent evidence, particularly the similarity to MUA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "In human iEEG recordings, spatial compression in broadband iEEG was reported to be similar in strength to BOLD signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 accurately cites previous work (Winawer et al., 2013) and provides relevant context for comparing the current findings to human studies. This is a straightforward citation of prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C192"
+    ],
+    "result": "In V4, the BOLD eccentricity-size slope was also very similar to that of LFP gamma power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C192 reports an area-specific finding shown in Figure 12\u2014figure supplement 1. This is a direct observation from the data that differs from the V1 pattern, representing an important nuance in the cross-modality comparison.",
+    "result_type": "MAJOR"
+  }
+]

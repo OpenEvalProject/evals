@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C5",
+      "C34",
+      "C73"
+    ],
+    "result": "STDP protocols fail to induce LTP in distal LOT synapses (layer Ia). The authors demonstrate that pairing EPSPs with back-propagating action potentials (BAPs) at distal apical dendrites (~300 \u03bcm from soma) results in no significant potentiation (103.06% \u00b1 2.81% of control, p=0.7658, n=11), whether BAPs are evoked by somatic current injection or synaptic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C5, C34, and C73 collectively demonstrate with statistical rigor that STDP fails at distal LOT synapses. The data include appropriate controls, sufficient sample sizes (n=11, n=3), non-significant p-values (p=0.7658, p=0.7577), and replication with different BAP induction methods. This is consistent with prior literature (C21, C76-C78) regarding BAP attenuation in distal dendrites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C44",
+      "C6",
+      "C35",
+      "C45"
+    ],
+    "result": "STDP protocols successfully induce LTP in proximal IC synapses in both apical (layer Ib) and basal dendrites, but with smaller magnitude compared to LOT synapses. Proximal apical IC synapses show 168.93% \u00b1 6.54% potentiation (p=0.01387, n=6), while basal IC synapses show 137.12% \u00b1 6.11% potentiation (p=0.0031, n=8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C44, C6, C35, and C45 provide statistically significant evidence with appropriate sample sizes and p-values. The comparative analysis between proximal and distal locations, and between IC and LOT synapses, is well-controlled. The finding that IC synapses undergo plasticity with STDP is consistent with prior literature (C16-C17).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C31",
+      "C33",
+      "C75",
+      "C4",
+      "C74"
+    ],
+    "result": "Local NMDA-spikes delivered at 4 Hz induce robust and strong LTP (>200%) in distal LOT synapses. As few as 2 NMDA-spikes are sufficient for potentiation (213.98% \u00b1 10.81%, p=0.0000687, n=26), which lasts >75 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C31, C33, C75, C4, and C74 present the central finding with strong statistical support (highly significant p-value, substantial sample size n=26). The dose-response relationship (Figure 3E) and duration of effect are well-documented. This challenges the prevailing view (C2-C3, C22-C23) that LOT inputs are 'hardwired' in adulthood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "NMDA-spikes are necessary for LTP induction in distal LOT synapses. Subthreshold EPSPs fail to induce potentiation (106.79% \u00b1 5.69%, p=0.8373, n=5), and blocking NMDA receptors with APV prevents potentiation (95.06% \u00b1 4.69%, p=0.817, n=5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide critical negative controls demonstrating the necessity of NMDA-spikes. Both experiments show non-significant changes with appropriate statistical tests. The sample sizes (n=5 each) are modest but adequate for negative controls. These results establish causality for the NMDA-spike mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C51"
+    ],
+    "result": "NMDA-spike-induced LTP of LOT inputs persists in the presence of the GABAB agonist baclofen (100 \u03bcM), which selectively silences IC inputs. Potentiation remains robust (236.57% \u00b1 17.51%, p=0.0246, n=5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C51 demonstrate that the observed LTP is specifically due to LOT input activation, not contamination from IC inputs. The use of baclofen is well-justified (C51 cites prior work showing it doesn't affect NMDA-spikes), and the result shows similar magnitude of potentiation as without baclofen. Sample size (n=5) is adequate for this control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Optogenetic activation of LOT inputs paired with NMDA-spikes induces robust LTP. Only 3 pairings are sufficient (232.45% \u00b1 16.55%, p=0.000286, n=11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 provides critical validation using an orthogonal method (optogenetics) to confirm the synaptic stimulation results. The statistical significance is strong (p=0.000286) with adequate sample size (n=11). This addresses potential concerns about electrical stimulation artifacts and confirms the specificity of LOT input potentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NMDA-spike induction protocol induces smaller LTP in proximal apical IC synapses (148.48% \u00b1 4.1%, p=0.00204, n=9) compared to distal LOT synapses (p=0.0013) and compared to STDP-induced potentiation in the same IC synapses (p=0.0127). NMDA-spikes, not accompanying BAPs, are crucial for this potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate location-specific plasticity rules with appropriate statistical comparisons. The control experiment (C57) showing that BAP pairing alone doesn't induce potentiation is critical for establishing that NMDA-spikes are necessary. The comparative statistics (p=0.0013, p=0.0127) are properly conducted. Sample size (n=9) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C86"
+    ],
+    "result": "Despite significantly larger calcium transients evoked by NMDA-spikes compared to STDP stimulation (p<0.0001) in proximal IC synapses, the degree of potentiation with STDP is higher (p=0.0127). This indicates calcium entry alone does not determine the degree of potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 and C86 present an important mechanistic insight with strong statistical support (p<0.0001 for calcium difference, p=0.0127 for potentiation difference). This dissociation between calcium influx and potentiation magnitude is well-documented and suggests additional factors (C87-C88) may be involved. The conclusion (C61) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "NMDA-spikes can be evoked in basal dendrites and induce LTP of IC synapses (140.64% \u00b1 4.5%, p=0.006526, n=6), though to a smaller extent than LOT inputs. NMDA-spikes are necessary, as subthreshold EPSPs (108.73% \u00b1 3.13%, p=0.8253, n=5) and APV blockade (100.69% \u00b1 4.27%, p=0.9948, n=5) prevent potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 extend the NMDA-spike plasticity mechanism to basal dendrites with appropriate positive and negative controls. The characterization of NMDA-spike properties (C64-C65) is quantitative. Statistical support is adequate (significant for potentiation, non-significant for controls). Sample sizes (n=6, n=5, n=5) are reasonable. This demonstrates the generality of the mechanism across dendritic compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Based on anatomical and connectivity assumptions from the literature, the authors calculate that the probability of at least one dendritic branch being activated by \u226510 LOT synapses during typical odor stimulation (110 glomeruli, 70 synapses/neuron) is ~15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C118 present a theoretical calculation based on multiple assumptions (10 terminal branches, 100 \u03bcm LOT band, 1 spine/\u03bcm density, 0.64 synapses/glomerulus, 110 activated glomeruli, random connectivity). While each assumption is cited (C111-C112, C114, C116-C117), the compounding of assumptions introduces uncertainty. The 15% probability is model-dependent and would benefit from experimental validation or sensitivity analysis. The calculation is useful for feasibility assessment but not definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The 4 Hz frequency used for NMDA-spike induction mimics the exploratory sniff cycle in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by citation to Wilson, 1998. This provides physiological relevance to the experimental protocol, though the manuscript studies mice (C119-C122) and rats, and the sniff frequency may vary across species and behavioral states. The choice of 4 Hz is well-justified for the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Methodological details: whole-cell patch-clamp recordings were performed on layer II pyramidal neurons filled with OGB-1 and CF633 for calcium imaging. All experiments used GABAA blockers (bicuculline or gabazine) with no differences in outcomes between blockers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 describe standard electrophysiological methods. The statement that no differences were observed between GABAA blockers (C122) is important for internal consistency but lacks quantitative support. The methods are appropriate for the experiments conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C71",
+      "C72"
+    ],
+    "result": "The prevailing view in the field, which the authors challenge, is that LOT inputs are 'hardwired' after the critical period (~4 weeks postnatal) and only IC inputs undergo plasticity in adulthood. Prior studies showed weak LTP (10-25%) with theta burst stimulation and failure of STDP protocols in LOT synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C19-C23, C71-C72 accurately represent the prior literature with appropriate citations. This establishes the context and significance of the current findings. The authors correctly identify the conflict between this view and in vivo learning studies (C25).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The failure of STDP in distal LOT synapses is consistent with reports from other pyramidal neuron types and is explained by severe BAP attenuation and high density of A-type potassium channels in distal apical dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 appropriately contextualize the findings within the broader literature on dendritic physiology. The mechanistic explanation (BAP attenuation, K+ channels) is well-supported by citations. This strengthens the interpretation of the STDP failure results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "NMDA-spikes generate large local calcium influx and serve as strong postsynaptic signals for plasticity. The results are consistent with prior studies in CA3 and CA1 pyramidal neurons and with in vivo olfactory learning data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately place the findings in the context of prior work on NMDA-spike-mediated plasticity in other brain regions. The consistency with in vivo learning data (C83) is important for physiological relevance. These claims strengthen the interpretation but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The authors infer that prior studies failed to induce robust LOT LTP because their protocols did not reliably generate local NMDA-spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a reasonable inference based on the current findings, though it cannot be definitively proven without re-examining the prior studies. The inference is supported by the strong LTP observed with NMDA-spike protocols versus the weak/absent LTP with other protocols. This reconciles the literature discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose that NMDA-spike-mediated potentiation enables branch-specific storage of odor combinations, increasing computational capacity and forming odor memory traces at LOT inputs. This mechanism is consistent with in vivo findings of LOT potentiation during olfactory learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C97-C101 present a theoretical model for how NMDA-spike plasticity could contribute to odor learning. While the model is plausible and consistent with the data (C98), it remains speculative (evidence_type: SPECULATION). The proposed mechanisms (branch-specific storage, increased capacity) are supported by computational modeling citations but lack direct experimental validation in this study. Further experiments would be needed to test these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose that NMDA-spike plasticity enables rapid odor learning (after few sniffs) because it requires only a few spikes, unlike STDP which requires many repetitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 present a plausible advantage of NMDA-spike plasticity for rapid learning. While C103 is supported by citations showing rapid odor learning, the comparison to STDP (C104) is speculative. The number of repetitions required for STDP-mediated learning in vivo is not directly tested. This is a reasonable hypothesis but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose that NMDA-spike plasticity, being independent of somatic action potentials, is better protected from memory erosion and enables more resilient odor representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 present a theoretical advantage supported by one citation (Bono and Clopath, 2017). While the logic is sound (independence from somatic output could reduce interference), this is speculative and not directly tested. The resilience of NMDA-spike-mediated memories versus STDP-mediated memories would require longitudinal experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that NMDA-spikes can interact with proximal IC inputs via subthreshold voltage spread, enabling associations between odors and contextual information, and facilitating odor recall through potentiated LOT inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C110 present a model for how LOT and IC plasticity mechanisms could interact. While C107 is supported by citation, the proposed interactions (C108-C110) are speculative. The model is plausible but lacks direct experimental evidence in this study. Testing would require manipulating both LOT and IC inputs during learning tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors suggest that factors beyond calcium entry (kinetics, source, neuromodulators like BDNF) may influence potentiation magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 appropriately acknowledge limitations in understanding the mechanisms underlying differential potentiation. The citations support that additional factors can gate plasticity. This is a reasonable interpretation of the unexpected finding that larger calcium transients don't always produce greater LTP (C59-C61).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C24",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C46",
+      "C62",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background and anatomical context: PCx is essential for odor learning, receives LOT inputs on distal apical dendrites and IC inputs on proximal apical and basal dendrites. Prior work established IC plasticity and theories of odor learning via IC recurrent connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C18, C24, C36-C37, C42-C43, C46, C62, C89-C96 provide established background knowledge and anatomical context, all appropriately cited. These claims set up the rationale for the study but are not novel findings. They are accurately represented.",
+    "result_type": "MINOR"
+  }
+]

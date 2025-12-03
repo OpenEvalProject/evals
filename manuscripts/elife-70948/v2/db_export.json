@@ -1,0 +1,1508 @@
+{
+  "submission": {
+    "id": "d09e4f09-5222-4fe4-aa60-d94f5d22ba33",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:07:48.464055Z",
+    "updated_at": "2025-12-03T07:07:48.464055Z"
+  },
+  "content": [
+    {
+      "id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "submission_id": "d09e4f09-5222-4fe4-aa60-d94f5d22ba33",
+      "content_type": "manuscript",
+      "content_text": "# Inducible and reversible inhibition of miRNA-mediated gene repression in vivo\n\n## Authors\n\n- Gaspare La Rocca<sup>1</sup> ([ORCID: 0000-0003-1277-0566](https://orcid.org/0000-0003-1277-0566)) \u2020\n- Bryan King<sup>1</sup>\n- Bing Shui<sup>2</sup> ([ORCID: 0000-0002-5956-130X](https://orcid.org/0000-0002-5956-130X))\n- Xiaoyi Li<sup>1</sup>\n- Minsi Zhang<sup>1</sup>\n- Kemal M Akat<sup>4</sup> ([ORCID: 0000-0002-9012-3551](https://orcid.org/0000-0002-9012-3551))\n- Paul Ogrodowski<sup>1</sup>\n- Chiara Mastroleo<sup>1</sup>\n- Kevin Chen<sup>1</sup> ([ORCID: 0000-0002-0674-1411](https://orcid.org/0000-0002-0674-1411))\n- Vincenzo Cavalieri<sup>5</sup>\n- Yilun Ma<sup>6</sup>\n- Viviana Anelli<sup>7</sup>\n- Doron Betel<sup>8</sup>\n- Joana Vidigal<sup>9</sup>\n- Thomas Tuschl<sup>4</sup>\n- Gunter Meister<sup>10</sup> ([ORCID: 0000-0002-2098-9923](https://orcid.org/0000-0002-2098-9923))\n- Craig B Thompson<sup>1</sup> ([ORCID: 0000-0003-3580-2751](https://orcid.org/0000-0003-3580-2751))\n- Tullia Lindsten<sup>11</sup>\n- Kevin Haigis<sup>2</sup>\n- Andrea Ventura<sup>1</sup> ([ORCID: 0000-0003-4320-9907](https://orcid.org/0000-0003-4320-9907)) \u2020\n\n### Affiliations\n\n1. Cancer Biology and Genetics Program, Memorial Sloan Kettering Cancer Center New York United States\n2. Department of Cancer Biology, Dana Farber Cancer Institute Boston United States\n3. Louis V. Gerstner Jr. Graduate School of Biomedical Sciences, Memorial Sloan Kettering Cancer Center New York United States\n4. Laboratory of RNA Molecular Biology, The Rockefeller University New York United States\n5. Department of Biological, Chemical and Pharmaceutical Sciences and Technologies, University of Palermo Palermo Italy\n6. Weill Cornell/Rockefeller/Sloan-Kettering Tri-Institutional MD-PhD Program New York United States\n7. Center of Integrative Biology, University of Trento Trento Italy\n8. Hem/Oncology, Medicine and Institution for Computational Biomedicine, Weill Cornell Medical College New York United States\n9. Laboratory of Biochemistry and Molecular Biology, National Cancer Institute Bethesda United States\n10. Regensburg Center for Biochemistry, University of Regensburg Regensburg Germany\n11. Immunology Program, Memorial Sloan Kettering Cancer Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough virtually all gene networks are predicted to be controlled by miRNAs, the contribution of this important layer of gene regulation to tissue homeostasis in adult animals remains unclear. Gain and loss-of-function experiments have provided key insights into the specific function of individual miRNAs, but effective genetic tools to study the functional consequences of global inhibition of miRNA activity in vivo are lacking. Here we report the generation and characterization of a genetically engineered mouse strain in which miRNA-mediated gene repression can be reversibly inhibited without affecting miRNA biogenesis or abundance. We demonstrate the usefulness of this strategy by investigating the consequences of acute inhibition of miRNA function in adult animals. We find that different tissues and organs respond differently to global loss of miRNA function. While miRNA-mediated gene repression is essential for the homeostasis of the heart and the skeletal muscle, it is largely dispensable in the majority of other organs. Even in tissues where it is not required for homeostasis, such as the intestine and hematopoietic system, miRNA activity can become essential during regeneration following acute injury. These data support a model where many metazoan tissues primarily rely on miRNA function to respond to potentially pathogenic events.\n\n## Introduction\n\nMicroRNAs (miRNAs) are short non-coding RNAs that in Metazoa repress gene expression at the post-transcriptional level by binding to partially complementary sequences on target mRNAs (Bartel, 2009; Bartel, 2018; Eichhorn et al., 2014; Izaurralde, 2015).\n\nmiRNAs act as part of a large ribonucleoprotein complex known as the miRNA-induced silencing complex (miRISC). In mammals, the Argonaute protein family (AGO1-4) and the trinucleotide repeat-containing gene 6 protein family (TNRC6A/GW182, TNRC6B and TNRC6C) are the core components of the miRISC. AGO binds to the miRNA and facilitates its interaction with target mRNAs (Schirle et al., 2014). In turn, TNRC6 binds to AGO and recruits the decapping and deadenylation complexes, leading to degradation of target mRNAs (Braun et al., 2011; Chekulaeva et al., 2011; Chen et al., 2009; Chen et al., 2014; Fabian et al., 2011; Guo et al., 2010a; Huntzinger et al., 2013; Lazzaretti et al., 2009; Nishihara et al., 2013; Rehwinkel et al., 2005; Till et al., 2007).\n\nAlthough miRNAs are abundantly expressed in embryonic and adult mouse tissues, and computational and experimental analyses indicate that they target components of virtually every cellular process (Flynt and Lai, 2008), animals harboring targeted deletion of single miRNA genes are often indistinguishable from their wild-type counterparts (Abdellatif, 2012; Chivukula et al., 2014; Cimmino et al., 2005; Liu et al., 2008; Park et al., 2010; van Rooij et al., 2007; Vechetti et al., 2019; Williams et al., 2009). One explanation for these observations is that the redundant functions of related miRNAs may buffer the emergence of obvious phenotypes in mutant animals (Bartel, 2009; Bartel, 2018). Interestingly, however, clear phenotypes often emerge in mutant adult animals when exposed to external or internal perturbations (Chivukula et al., 2014; Mendell and Olson, 2012; van Rooij et al., 2007). These observations suggest that, at least in some contexts, miRNA function is conditionally, rather than constitutively, required to carry on cellular processes.\n\nPrevious efforts to investigate the consequences of global inhibition of miRNA function have relied upon the targeted deletion of the core miRNA biogenesis factors DICER, DROSHA, and DGCR8 (Treiber et al., 2019). Several animal models harboring conditional or constitutive knockout alleles of these genes have been generated (Bernstein et al., 2003; Chong et al., 2008; Hebert et al., 2010; Huang et al., 2012; JnBaptiste et al., 2017; Kanellopoulou et al., 2005; Kobayashi et al., 2015; Kumar et al., 2007; Wang et al., 2007). Although these strategies have provided important insights into miRNA biology, they suffer from several limitations.\n\nFirst, inactivation of these gene products is known to have other consequences in addition to impairing miRNA biogenesis. For instance, DICER is involved in epigenetic regulation in the nucleus in a miRNA-independent manner (Fukagawa et al., 2004; Giles et al., 2010; Gullerova and Proudfoot, 2012; Okamura and Lai, 2008; Song and Rossi, 2017; Tam et al., 2008) and is essential to metabolize transcripts from short interspersed nuclear elements, predominantly Alu RNAs in humans and B1 and B2 RNAs in rodents (Kaneko et al., 2011). DROSHA, on the other hand, regulates the expression of several coding and non-coding RNAs by directly cleaving stem\u2013loop structures embedded within the transcripts (Chong et al., 2010). Furthermore, DICER and DROSHA are also involved in the DNA-damage response (Francia et al., 2012; Michelini et al., 2017), and DGCR8 regulates the maturation of small nucleolar RNAs and of some long non-coding RNAs (Cirera-Salinas et al., 2017; Macias et al., 2015). Consequently, the phenotypes observed in these models cannot be solely attributed to inhibition of miRNA activity.\n\nAnother limitation of conditional ablation of miRNA biogenesis genes in vivo is that due to their high stability mature miRNAs can persist for several days after their biogenesis is inhibited. For example, 4 weeks after near complete conditional ablation of Dicer1 in the muscle, the levels of the highest expressed miRNAs were found to be only reduced by 30\u201340% and their expression remained substantial even 18 months later (Vechetti et al., 2019). This complicates the interpretation of experiments based on temporally controlled conditional ablation of these biogenesis factors, especially in non-proliferating tissues.\n\nThird, a subset of mammalian miRNAs does not rely on the canonical biosynthesis pathway, and therefore their expression and activity are not affected by inactivation of the core miRNA biogenesis factors (Cheloufi et al., 2010; Chong et al., 2010; Cifuentes et al., 2010; Kim et al., 2016; Okamura et al., 2007; Ruby et al., 2007; Yang and Lai, 2011).\n\nFinally, these genetic approaches are not reversible and therefore these animal models cannot be used to study the effects of transient inhibition of miRNA function.\n\nTo circumvent these limitations, we have generated a novel genetically engineered mouse strain that allows inducible and reversible disassembly of the miRISC, thereby achieving controllable inhibition of miRNA-mediated gene repression in vivo without affecting small RNA biogenesis. To address the reliance of adult tissues on miRNA-mediated gene repression, we have used this novel strain to investigate the consequences of acute inhibition of the miRISC under homeostatic conditions, and during tissue regeneration.\n\n## Results\n\n### Inhibition of the miRNA pathway through peptide-mediated disruption of the miRISC\n\nMultiple motifs within the N-terminal domain of TNRC6 proteins contain regularly spaced tryptophan residues that mediate the interaction between AGO and TNRC6 by inserting into conserved hydrophobic pockets located on AGO\u2019s Piwi domain (Lian et al., 2009; Sheu-Gruttadauria and MacRae, 2018).\n\nA peptide encompassing one of the AGO-interacting motifs of human TNRC6B has been previously employed as an alternative to antibody-based approaches to efficiently pull down all AGO family members from cell and tissue extracts (Hauptmann et al., 2015; Pfaff et al., 2013). This peptide, named T6B, competes with endogenous TNRC6 proteins for binding to AGOs. However, as it lacks the domains necessary for the recruitment of decapping and deadenylation factors, it prevents the assembly of the full miRISC, thus resulting in effective inhibition of miRISC-mediated gene repression in cells (Danner et al., 2017; Hauptmann et al., 2015).\n\nBased on these results, we reasoned that temporally and spatially controlled expression of a T6B transgene in animals would offer the unprecedented opportunity to study the consequences of acute and reversible inhibition of miRNA function in vivo without interfering with miRNA biogenesis or abundance (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig1-v2.jpg)\n\n**Figure 1.:** T6B fusion protein prevents miRNA-induced silencing complex (miRISC) assembly and impairs microRNA (miRNA) activity in vitro.\n(A) Schematics of T6B action: T6B competes with TNRC6 for binding to AGO proteins preventing miRISC assembly. (B) Schematics of the size-exclusion chromatography (SEC) assay for the fractionation of AGO-containing complexes according to their molecular weight. (C) SEC profiling of miRISC components upon T6B expression: total lysates from HCT116 cells expressing no fusion protein (upper panel), T6B (middle panel), or T6BMut (lower panel) were fractionated as described in (B) and immunoblotted to detect AGO2, TNRC6A, T6B, and PABP1. For each blot, the relative signal intensity was assessed by densitometric analysis. (D) RNAseq analysis of total and small RNAs isolated from mouse embryo fibroblasts (MEFs) cell lines expressing either no fusion protein, T6B, or T6BMut (n = 3 for each cell line). Upper panel: bubble plot of target de-repression against miRNA abundance. The mean log2-fold change (T6B or T6BMut vs. control) of predicted targets for each conserved miRNA family was calculated, converted to a z-score and is plotted on the x-axis against the miRNA family abundance (log of the sum of read counts for each member of the family). The size of each circle is proportional to the number of predicted targets. A positive z-score indicates that the targets for that family are preferentially upregulated upon T6B expression, while a negative score would indicate preferential downregulation. Expression of T6B, but not of T6BMut, causes preferential upregulation of miRNA targets of the most miRNA families and the effect is roughly proportional to each miRNA family abundance. Lower panel: cumulative distribution plot of predicted let-7 targets compared to background in T6B-expressing MEFs. (E) Scatter plots of miRNA abundance as determined by small-RNAseq of total RNA extracted from MEFs expressing either T6B or T6BMut (n = 3 for each cell line). Each dot represents a miRNA in miRbase. (F) Effect of T6B expression on AGO2 slicing activity. MEFs expressing either T6B or T6BMut were transfected with siRNAs targeting GAPDH mRNA (siGAPDH) or with scramble siRNA (siCTL). Levels of GAPDH, T6B, and tubulin were assessed by immunoblot 72 hr post-transfection. T6B and T6BMut have slightly different migration on PAGE, as previously observed by Hauptmann et al., 2015.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequence and properties of the FH-T6B-YFP fusion protein.\n(A) HCTT116 cells transduced with retroviral vectors expressing a doxycycline-inducible T6B or T6BMut transgene (FH-T6B-YFP) were cultured in the presence of doxycycline for 48 hr. Whole-cell lysates were probed with an anti-HA antibody. (B) Lysates from (A) were immunoprecipitated with the indicated antibodies and blotted against AGO2, FH-T6B-YFP (anti-HA), and GAPDH. Note that the T6B fusion protein, but not its mutant version (T6BMut), binds to AGO proteins. Lower panel: amino acid sequence of the T6B and T6BMut fusion proteins. Both T6B versions have HA and FLAG tags at the N termini and are fused to the yellow fluorescent protein (YFP) at the C-termini. In T6BMut, all tryptophan residues (red) are mutated to alanine to prevent interaction with AGO proteins. Blue: FLAG-tag; light blue: HA-tag; bold black: T6B; green: YFP.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Size-exclusion chromatography was performed on whole-cell lysates from mouse embryo fibroblasts transduced with retroviral vectors expressing a doxycycline-inducible T6B or T6BMut transgene and cultured in the presence of doxycycline for 48 hr.\nEluted fractions were probed with the anti-AGO2 or anti-HA antibodies to determine the elution profile of AGO2 and T6B, respectively.\n\nTo test the suitability of this approach, we first investigated the dynamics of interaction between T6B and the miRISC in mouse and human cell lines. We employed a previously reported size-exclusion chromatography (SEC)-based assay (La Rocca et al., 2015; Olejniczak et al., 2013) to analyze the molecular weight of AGO-containing complexes in lysates from cells expressing either a doxycycline-inducible FLAG-HA-T6B-YFP fusion protein (hereafter referred to as T6B) or a mutant version (hereafter referred to as T6BMut) incapable of binding to AGO (Figure 1\u2014figure supplement 1). We reasoned that if T6B expression prevents AGO from stably binding to TNRC6 and its targets, AGO proteins should be detected in fractions corresponding to ~120\u2013130 kDa, the sum of the molecular weights of AGO (~95 kDa) and the T6B fusion protein (~30 kDa). In contrast, unperturbed AGO complexes that are part of the fully assembled miRISC bound to mRNAs should elute in the void of the column, which contains complexes larger than 2 MDa (Figure 1B).\n\nAs expected, in lysates from cells expressing no T6B or T6BMut, AGO2 and TNRC6A were mostly detected in the high-molecular-weight fractions, indicating the presence of target-bound miRISC (Figure 1C). In contrast, AGO2 and TNRC6A were nearly completely depleted from the high-molecular-weight fractions in lysates from cells expressing T6B (Figure 1C). Moreover, while AGO2, TNRC6A, and the polyA-binding protein 1 (PABP1) co-fractionated in lysates from control cells, they eluted in different fractions in lysates from T6B-expressing cells (Figure 1C), indicating that T6B leads to loss of interactions between the miRISC components and mRNAs. As expected based on the strong evolutionary conservation of human and mouse AGO and TNRC6 proteins (Pfaff et al., 2013; Zielezinski and Karlowski, 2015; Zipprich et al., 2009), we obtained identical results when human T6B was expressed in mouse embryo fibroblasts (MEFs; Figure 1\u2014figure supplement 2).\n\nTo test whether the redistribution of AGO-containing complexes induced by T6B expression was mirrored by a loss of miRNA-mediated gene repression, we performed RNAseq analysis on MEFs expressing T6B or T6BMut. Cells expressing T6B displayed marked and selective de-repression of predicted mRNA targets for expressed miRNAs (Figure 1D). The extent of de-repression was roughly proportional to the abundance of individual miRNA families, with predicted targets of poorly expressed miRNAs collectively showing modest de-repression compared to targets of more abundantly expressed miRNA families (Figure 1D). Importantly, de-repression of miRNA targets was not accompanied by a global change in mature miRNAs levels (Figure 1E), consistent with the role of T6B in perturbing the effector step of the miRNA pathway, without affecting miRNA processing.\n\nOf the four mammalian AGO proteins, AGO2 is the only one that has endo-ribonucleolytic activity, which does not require TNRC6 (Liu et al., 2019) and is triggered when the AGO2-loaded small RNA and the target are perfectly complementary (Doench et al., 2003; Liu et al., 2004; Zeng et al., 2003). AGO2\u2019s catalytic activity is essential for gene regulation in the germline. For example, in mouse oocytes, AGO2 loaded with endogenous small-interfering RNAs (endo-siRNAs) mediates the cleavage of coding and non-coding transcripts bearing perfectly complementary sequences (Stein et al., 2015; Tam et al., 2008). In metazoan somatic tissues, in contrast, AGO2 catalytic activity is mainly involved in the biogenesis of miR-486 and miR-451 in the hematopoietic system (Cheloufi et al., 2010; Jee et al., 2018), and in occasional instances of miRNA-directed cleavage of mRNAs (Yekta et al., 2004).\n\nImportantly, T6B expression does not interfere with the ability of synthetic siRNAs to cleave perfectly complementary endogenous targets (Figure 1F), indicating that AGO2\u2019s catalytic function is not affected by the binding of T6B, and implying that the loading of small RNAs onto AGOs is also not perturbed by T6B.\n\nCollectively these results demonstrate that ectopic T6B expression in mammalian cells causes global inhibition of miRISC function with minimal perturbation of the expression of mature miRNAs, and with preservation of AGO2\u2019s endo-nucleolytic activity.\n\n### Generation of a mouse strain with inducible expression of a T6B transgene\n\nTo apply this general strategy to an in vivo setting, we next generated mouse embryonic stem cells (mESCs) expressing a doxycycline-inducible T6B transgene. We used a knock-in approach in which the doxycycline-inducible transgene is inserted into the Col1a1 locus of mESC expressing the reverse tetracycline-controlled transactivator (rtTA) under the control of the endogenous Rosa26 promoter (Beard et al., 2006; Figure 2A). Targeted mESCs were tested for the ability to express the T6B transgene in response to doxycycline (Figure 2\u2014figure supplement 1) and then used to generate mice with genotype Rosa26rtTA/rtTA; Col1a1T6B/T6B\n (hereafter R26T6B). Rosa26rtTA/rtTA; Col1a1+/+\n mice, with untargeted Col1a1 loci but expressing rtTA served as negative controls (hereafter R26CTL).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig2-v2.jpg)\n\n**Figure 2.:** Expression of T6B reversibly blocks miRNA-induced silencing complex (miRISC) assembly and inhibits microRNA (miRNA) function in vivo.\n(A) Schematic of the targeting strategy to generate the T6B mouse. The construct contains a flippase recognition target site (frt) that allows homing into the Col1a1 locus when electroporated together with a vector expressing the Flippase recombinase into KH2 (Col1a1-frt/Rosa26-rtTA) murine embryonic stem cells. KH2 also express the rtTA trans-activator driven by the endogenous Rosa26 (R26) promoter. (B) Immunofluorescence imaging performed using an anti-YFP antibody, showing T6B expression in a panel of tissues of adult R26T6B mice fed doxycycline for 7 days. Tissues from R26CTL (carrying the rtTA allele but not the T6B allele) were used as negative controls. (C) Protein lysates from the liver of R26T6B mice on or off doxycycline-containing chow for the indicated number of days were resolved by SDS-PAGE and western blotting was performed with anti-HA antibody to detect expression of the T6B transgene. (D) Co-IP experiments using an anti-YFP antibody showing interaction between AGO and T6B in total liver extracts from T6B mice on doxycycline-containing chow. (E) Size-exclusion chromatography (SEC) elution profile of AGO2-containing complexes in liver lysates from T6B mice euthanized at the indicated time points after doxycycline administration. Notice the shift of AGO2 from the high-molecular-weight fractions to the low-molecular-weight fractions after 5 days of doxycycline treatment and the reconstitution of the full miRISC after removal of doxycycline from the diet. (F, G) Total RNA extracted from the large intestine (F) and the liver (G) of R26CTL and R26T6B mice was subjected to RNAseq (n = 3 for each strain). Left panel: scatter plot showing the effect of T6B expression on targets of all miRNA families was generated as described in Figure 1D. The abundance of each miRNA family was calculated using dataset from Isakova et al., 2020. Right panel: representative cumulative distribution plot of log2-fold changes in expression of predicted targets of the indicated miRNA families.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Expression of FH-T6B-YFP fusion protein in targeted ES clones.\n(A) Two independent targeted ES clones were cultured in the presence or absence of doxycycline for 48 hr and examined by epifluorescence microscopy to detect FH-T6B-YFP expression. The same exposure was used for all images. Bright-field images are also shown for each clone. (B) Whole-cell lysates from the clones shown in (A) were probed with an anti-HA antibody to detect expression of the T6B fusion protein.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Immunofluorescence imaging using a YFP-specific antibody, showing T6B expression in a panel of tissues of adult R26T6B mice (second column) and CAGT6B mice (third column) fed doxycycline-containing diet for 7 days.\nTissues from R26CTL (first column) mice fed doxycycline-containing diet for 7 days were included as negative controls.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Total extracts from the colon of R26T6B mice kept on doxycycline-containing diet for 1 week were immunoprecipitated using an anti-YFP antibody and probed with the indicated antibodies to measure the interaction between the T6B fusion protein and AGO2 in vivo.\nAn anti-HA antibody was used to detect T6B.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Size-exclusion chromatography (SEC) fractionation followed by western blotting of total extracts from the liver and large intestine of control and R26T6B mice treated with doxycycline-containing chow for 7 days.\nThe shift of AGO2 from high-molecular-weight to low-molecular-weight complexes confirms disruption of the miRNA-induced silencing complex.\n\nUpon doxycycline administration, we observed strong expression of T6B in R26T6B mice and across most adult tissues (Figure 2B). Notable exceptions were the central nervous system (Figure 2B, Figure 2\u2014figure supplement 2), probably due to low blood\u2013brain barrier penetration of doxycycline, and the skeletal muscle and the heart, most likely due to low expression of the rtTA transgene in these tissues (Premsrirut et al., 2011).\n\nWhen doxycycline was administered in the diet, T6B became detectable after 24 hr, reached a plateau after 3 days, and completely disappeared 4 days after doxycycline removal from the diet (Figure 2C).\n\nBecause colon and liver expressed uniformly high levels of T6B in response to doxycycline, we used these tissues to test the effects of T6B expression on miRISC activity in vivo. Co-IP experiments using antibodies directed to T6B confirmed the interaction between AGO and T6B in these tissues (Figure 2D, Figure 2\u2014figure supplement 3). Expression of T6B resulted in nearly complete disassembly of the miRISC, as indicated by the elution shift of AGO from the high-molecular-weight to low-molecular-weight fractions in both tissues (Figure 2E, Figure 2\u2014figure supplement 4). Importantly, doxycycline removal from the diet led to a complete reconstitution of the miRISC, as indicated by the reappearance of AGO2 in the high-molecular-weight fractions (Figure 2E).\n\nTo test whether T6B expression also resulted in inhibition of miRNA-mediated gene repression in vivo, we performed RNAseq on total RNAs extracted from the liver and colon of R26T6B and R26CTL mice kept on doxycycline-containing diet for 1 week. As shown in Figure 2F, T6B expression resulted in marked de-repression of miRNA targets in both tissues.\n\nBased on these results,we conclude that T6B expression allows acute and reversible disruption of the miRISC, and concomitant inhibition of miRNA function in vivo.\n\n### Consequences of miRISC disruption in adult tissues under homeostatic conditions\n\nGiven the central role of miRNAs in gene regulatory networks, one might expect widespread phenotypes emerging when miRISC function is systemically inhibited. Consistent with this hypothesis, inhibition of miRISC starting either at conception (Figure 3A) or at mid-gestation caused developmental defects and perinatal lethality in R26T6B mice (Figure 3B, Figure 3\u2014figure supplement 1). Histological examination of hematoxylin-eosin-stained sections of P0 R26T6B pups treated with doxycycline starting at mid-gestation confirmed a general delay in development and reduced growth, but no specific organ defects. Surprisingly, however, adult R26T6B mice kept on doxycycline diet for up to 2 months remained healthy and appeared normal upon macroscopic and histopathological examination.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-v2.jpg)\n\n**Figure 3.:** Phenotypic analysis of R26T6B mice during homeostasis.\n(A) Rosa26+/+; Col1a1T6B/T6B\n females were crossed with Rosa26rtTA/+; Col1a1T6B/T6B\n males and doxycycline was administered by chow starting at 0.5 d.p.c. No viable pups positive for both the rtTA and T6B allele were observed (n = 15, p-value = 0.002, Fisher\u2019s exact test). (B) Pregnant females were kept on doxycycline diet from E13.5 to E18.5 and the pups delivered on E18.5 by c-section. Note the significantly smaller size of Rosa26rtTA/rtTA; Col1a1T6B/T6B\n embryos relative to Rosa26rtTA/rtTA;Col1a1+/+\n control littermates. Lower row: YFP detection by epifluorescence in E18.5 pups of the indicated genotypes. (C) Comparison of intestine architecture in H&E sections from R26T6B and R26CTL mice (n = 3 for each genotype) maintained on doxycycline for 2 months. (D) Immunofluorescence imaging of the small intestine of R26T6B and R26CTL mice (n = 3\u20135 for each genotype) kept on doxycycline diet for a month (upper row), showing a reduction in lysozyme expression in Paneth cells in the crypts. Lysozyme expression in R26T6B mice returned to normal levels upon removal of doxycycline from the diet (lower row). (E) Peripheral blood analysis conducted in R26T6B and R26CTL mice (R26CTL n = 4; R26T6B n = 5). (F) Flow cytometric analysis of bone marrow of R26T6B and R26CTL mice kept on doxycycline diet for 3 weeks showing developmental block at the Pro-B to Pre-B. p-Values (from left to right): *p=0.0348, **p=0.0023, *p=0.0340, **p=0.0004, unpaired t-test. R26CTL n = 4; R26T6B n = 5. (G) Flow cytometry analysis of the bone marrow of control and R26T6B mice kept on doxycycline diet for 3 weeks. p-Values (from left to right): p=0.0994, **p=0.0092, **p=0.0085, *p=0.0312, unpaired t-test. R26CTL n = 4; R26T6B n = 5.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Effects of FH-T6B-YFP fusion protein expression during development.\n(A) Litter obtained by c-section from a pregnant Rosa26rtTA/rtTA; Col1a1T6B/+\n female crossed to a Rosa26rtTA/rtTA; Col1a1T6B/+\n male and maintained on doxycycline from d.p.c. 13.5 to d.p.c. 18.5. (B) Pups from (A) were weighted and genotyped and the results plotted. p-Value: two-tailed unpaired t-test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Immunofluorescence imaging of the small and large intestine of R26T6B and R26CTL mice kept on doxycycline diet for a month.\nAn antibody against YFP was used to detect the T6B fusion protein.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Sections from the colon and small intestine sections of R26T6B and control mice kept on doxycycline-containing diet for 2 months were probed by immunohistochemistry with an anti-Ki67 antibody.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Detection of goblet cells by staining of acidic and neutral mucins in intestine sections from R26T6B and control mice kept on doxycycline diet for 2 months.\nNeutral mucins are stained with periodic acid-Shiff, whereas acidic mucins are stained with Alcian blue.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Body weight of R26T6B (n = 5) and control (n = 8) female mice was assessed after 2-month administration of doxycycline-containing chow.\nns, not significant (p=0. 6264, unpaired t-test).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Representative flow cytometry plots showing the gating strategy for the identification of hematopoietic stem and progenitor cells from whole bone marrow harvested from R26T6B and R26CTL mice maintained on doxycycline diet for 3 weeks.\nLT-HSC: Lin- Kit+ Sca1+ CD150+ CD48-; ST-HSC: Lin- Kit+ Sca1+ CD150- CD48-; MPP2: Lin- Kit+ Sca1+ CD150+ CD48+; MPP3/4: Lin- Kit+ Sca1+ CD150 CD48+.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Representative flow cytometry plots showing the gating strategy for the identification of B cell lineage populations from whole bone marrow harvested from R26T6B and R26CTL mice maintained on doxycycline diet for 3 weeks.\nPro-B: B220+ CD19+ IgD-IgM-CD25-Kit+; Pre-B: B220+ CD19+ IgD-IgM-CD25+; Imm B: B220+ CD19+ IgD-IgM+; Mat B: B220+ CD19+ IgD + IgM+/lo.\n\nDetailed examination of the intestine confirmed extensive T6B expression in the epithelium and in the mesenchymal compartment (Figure 3\u2014figure supplement 2), but no architectural abnormalities were observed (Figure 3C). Cells in the crypts showed no significant changes in expression pattern of Ki67 protein (Figure 3\u2014figure supplement 3), suggesting that the proliferation and turnover of the epithelium are maintained even in the absence of a functional miRISC. No significant change in the number of goblet cells was detected throughout the intestine (Figure 3\u2014figure supplement 4), and mice maintained normal body mass throughout the period of doxycycline treatment (Figure 3\u2014figure supplement 5), suggesting that general intestinal functions were not affected.\n\nAlthough no obvious macroscopic, functional, or architectural abnormalities were caused by T6B expression in the intestine, we observed a reduction in lysozyme expression in Paneth cells in the crypts (Figure 3D, upper row). However, this phenotype was reversible as lysozyme signal in the crypts returned to normal levels when doxycycline was removed from the diet (Figure 3D, lower row), suggesting that T6B expression did not affect neither the viability of intestinal stem cells nor their self-renewal ability.\n\nComplete blood counts showed a modest, but significant, decrease in erythrocytes volume (MCV) and hemoglobin content (MCH) in R26T6B RBCs (Figure 3E, Figure 3\u2014source data 1), analogously to what was reported in mice harboring targeted deletion of miR-451 (Patrick et al., 2010). Flow cytometric analysis of bone marrow showed a threefold depletion in Pre-B cells as well as a significant decrease in immature and mature circulating B cells in R26T6B mice. We also observed a reciprocal increase in the frequency of Pro-B cells in the bone marrow of these animals (Figure 3F, Figure 3\u2014figure supplement 6). These results are reminiscent of the partial block in B cell differentiation observed upon deletion of the miR-17\u201392 cluster (Ventura et al., 2008).\n\nFurther characterization of hematopoietic stem cells (HSCs) showed that the number of long-term repopulating hematopoietic stem cells (LT-HSC) was unaffected after 3 weeks of doxycycline exposure. However, we observed a modest decrease in short-term repopulating HSCs (ST-HSCs) and a concomitant increase in multipotent progenitors (MPPs) relative to controls (Figure 3G, Figure 3\u2014figure supplement 7).\n\nCollectively, these data suggest that in a subset of adult tissues miRISC function can be suppressed with minimal or no consequences on the ability of these tissues to maintain homeostasis.\n\n### miRISC disruption impairs the regeneration of injured colon epithelium\n\nSeveral studies have shown that the phenotype caused by targeted deletion of individual miRNAs often manifests only after the mutant animals are subjected to \u2018stress\u2019 (Chivukula et al., 2014; Leung and Sharp, 2010; Mendell and Olson, 2012; van Rooij et al., 2007). For example, ablation of miR-143/145 causes no apparent phenotype under homeostasis but severely impairs the ability of the mutant animals to respond to acute damage to the intestinal epithelium (Chivukula et al., 2014).\n\nPrompted by these reports, and by our initial observation that prolonged T6B expression does not substantially affect intestinal homeostasis, we tested the consequences of miRISC disruption on the regenerating intestine. A cohort of R26T6B and R26CTL mice were kept on doxycycline-containing diet for 10 days, after which they were treated with dextran sulfate sodium (DSS), which induces severe colitis in mice (Chivukula et al., 2014; Okayasu et al., 1990).\n\nA significant and progressive loss of body mass was observed in both groups during DSS treatment and 2 days following DSS removal (Figure 4A). However, R26T6B mice lost body mass more rapidly than controls and reached critical health conditions 7 days after DSS removal. Three days after DSS removal, control animals started to regain weight, reaching the initial body mass within 5 days after DSS removal (Figure 4A). In contrast, R26T6B mice failed to fully recover (Figure 4A), and all reached a humane endpoint within 5 days after DSS removal from the diet (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig4-v2.jpg)\n\n**Figure 4.:** T6B-induced block of miRNA-induced silencing complex (miRISC) assembly leads to impaired intestinal regeneration.\n(A) R26T6B and R26CTL mice (n = 6 for each genotype) kept on doxycycline diet were treated with dextran sulfate sodium (DSS) for 5 days to induce inflammatory colitis and their weight was monitored daily. Data are presented as mean \u00b1 SD. p-Values (from left to right): *p=0.034, *p=0.005, *p=0.029, *p=0.024, *p=0.011, from unpaired t-test. (B) Kaplan\u2013Meier curves of animals treated with DSS as described in panel (A). p-Value from log-rank test (C) Representative hematoxylin-eosin-stained sections of intestine of R26T6B and R26CTL mice (n = 3 for each genotype) at different time points pre- and post-DSS treatment. (D) Ki67 immunostaining of section of intestine at the indicated time points. (E) Sections from the large intestine of control and T6B mice euthanized at day 13 were subjected to RNA in situ hybridization with a probe against the IGFBP5 transcript. The results show increased levels of IGFBP5 mRNA in ulcerated areas of R26T6B as compared to controls (n = 4 for each genotype).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Bar plots showing measurement of colon length, aggregated length of ulcers, percentage of colon with ulcers, area of ulcers, number of immune nodules, and the area of immune nodules performed on H&E longitudinal sections of colon from R26CTL and R26T6B mice 5 days post-dextran sulfate sodium (DSS) treatment.\nMeasurements of these parameters were obtained using OMERO (https://www.openmicroscopy.org/omero/) and used to estimate the extent of damage and colitis induced by DSS treatment. Plots show that no significant differences between R26CTL and R26T6B mice were observed, suggesting that both groups experienced similar level of DSS-induced colitis.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Representative immunohistochemistry image showing Ki67 signal in control mice (n = 3) 5 days after dextran sulfate sodium (DSS) treatment was discontinued.\nThe presence of highly proliferating cells indicates residual dysplasia.\n\nHistological analysis confirmed that DSS treatment induced the disruption of the architecture of the epithelium and the appearance of ulcerative areas to a similar extent in both R26T6B and R26CTL control mice (Figure 4C, Figure 4\u2014figure supplement 1). In contrast, although 5 days after DSS removal the integrity of the colonic epithelium of control mice was largely reestablished with the exception of isolated dysplastic areas (Figure 4\u2014figure supplement 2), extensive ulcerated regions persisted in the colon of R26T6B mice (Figure 4C). Importantly, we observed the presence of dysplastic epithelium in R26T6B mice during and after DSS treatment, indicating that miRISC disruption does not completely abolish the potential of cells to proliferate, as also confirmed by Ki67 staining (Figure 4D). Therefore, we speculate that other factors, such as impaired stem cell maintenance or differentiation, may be responsible for the increased susceptibility of T6B-expressing colon to DSS treatment.\n\nChivukula and colleagues have shown that defective intestinal regeneration in the colon of miR-143/145-deficient mice is associated with upregulation of the miRNA-143 target IGFBP5 in the mesenchymal compartment. The increased levels of IGFBP5 protein cause the inhibition of IGF1R signaling in the epithelium through a non-cell-autonomous mechanism, which ultimately prevented epithelial regeneration (Chivukula et al., 2014). Consistent with their findings, in situ hybridization analyses in the colon of DSS-treated R26T6B mice showed a significant upregulation of IGFBP5 mRNA in the mesenchymal compartment compared to controls (Figure 4E). The extent of de-repression of IGFBP5 was comparable to that previously observed in miRNA-143/145 knockout mice (Chivukula et al., 2014), providing further evidence that T6B-mediated miRISC disassembly is an effective strategy to globally inhibit miRNA function in vivo.\n\nCollectively, these results support a model whereby miRNA-mediated gene regulation, while dispensable to maintain normal colon homeostasis, becomes critical for its regeneration following acute damage.\n\n### miRISC disruption impairs regeneration of the hematopoietic system\n\nTo further characterize the consequences of miRISC inhibition during tissue regeneration, we explored the possibility that other tissues may adopt a similar dynamic reliance on miRNA function.\n\nAlong with the intestinal epithelium, blood is one of the most rapidly turned over tissues in mice. HSCs reside as a predominantly quiescent population in the bone marrow and are rapidly induced to re-enter the cell cycle in response to external cues, such as infection or injury (Ng and Alexander, 2017). Furthermore, HSCs can be readily isolated by flow cytometry and transplanted, allowing the study of mechanisms underlying regeneration at the single-cell level.\n\nTo test the consequences of miRISC disruption in the regenerating hematopoietic system, we treated R26T6B and R26CTL mice on doxycycline-containing diet with a single dose of the cytotoxic drug 5-fluorouracil (5FU). 5-FU selectively depletes rapidly proliferating hematopoietic progenitors and leads to a compensatory increase in LT-HSC proliferation. Flow cytometry analysis of the bone marrow 7 days after 5FU-injection showed that T6B expression prevented this compensatory increase in LT-HSC. We observed an identical phenotype when R26T6B and R26CTL mice were bled repeatedly over a 3-week period to induce LT-HSC to re-enter the cell cycle (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig5-v2.jpg)\n\n**Figure 5.:** T6B-induced block of miRNA-induced silencing complex (miRISC) assembly impairs the regeneration of the hematopoietic system.\n(A) Long-term hematopoietic stem cell (HSC) in the bone marrow of R26T6B and R26CTL mice treated with 5-fluorouracil (5-FU) or subjected to repeated bleeding (n = 5 for each genotype). Mice were maintained on doxycycline-containing diet throughout the experiment. (B) Kaplan\u2013Meier plots of R26T6B (n = 5) and R26CTL (n = 5) mice treated weekly with 5-FU for 7 weeks. (C) Schematic of the bone marrow transplantation experiments: T6B was induced at different time points post-transplantation, and multilineage reconstitution was assessed at the indicated time points by FACS. (D) FACS analysis conducted on the peripheral blood of irradiated recipients transplanted 1:1 with T6B-expressing and wild-type bone marrow, and maintained on doxycycline diet according to scheme shown in panel (C). Data are presented as mean \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA. off > off, n = 9; off > on, n = 10; on > off, n = 8; on > on, n = 8. (E) FACS analysis showing the frequency of T6B-extressing HSCs in the bone marrow of transplanted recipient mice kept on doxycycline diet according to scheme shown in panel (C). off > off, n = 5; off > on, n = 5; on > off, n = 4; on > on, n = 5, one-way ANOVA.\n\nThe decreased number of HSCs in the bone marrow of R26T6B mice after a single 5-FU challenge compared to controls suggested that miRISC disruption impaired HSCs\u2019 ability to re-enter the cell cycle and regenerate the hematopoietic compartment. Consistent with this hypothesis, when injected with repetitive 5-FU doses, R26T6B mice showed significantly shorter survival compared to controls (Figure 5B).\n\nTo measure the regenerative capacity of HSCs more directly in a context where T6B would only be expressed in hematopoietic cells, we performed competitive transplantation of T6B-expressing (CD45.2+) and wild-type (CD45.1+) bone marrows (1:1 ratio) into lethally irradiated hosts. The recipient animals were divided into four groups as shown in Figure 5C: (1) a control group that was never administered doxycycline; (2) a group maintained on a doxycycline-containing diet throughout the duration of the experiment (8 weeks); (3) a group treated with doxycycline starting 4 weeks after transplant; and (4) a group that was on doxycycline for only the first 4 weeks after transplant. Blood samples were taken at 4 and 8 weeks following the start of the experiment for analysis (Figure 5C). This experiment was designed to test the prediction that expression of T6B during the first 4 weeks following transplant, when the regenerative demand is highest and when we hypothesize miRNA-mediated gene repression is required, would more severely affect the ability of donor cells to contribute to the recipient hematopoietic reconstitution compared to T6B expression after homeostasis is reestablished.\n\nConsistent with this prediction, mice that were administered doxycycline in the first 4 weeks post-transplant had significantly fewer CD45.2+ peripheral blood mononuclear cells (PBMCs; Figure 5D). Contribution to the B cell population was particularly impaired by T6B expression, but this was reversed once the recipients were taken off of doxycycline, consistent with the developmental block described earlier (Figure 3D, Figure 3\u2014figure supplement 6). Interestingly, the decrease in total CD45.2+ PBMCs and CD45.2+ myeloid cells was not reversed by doxycycline withdrawal, which suggested that the T6B-expressing CD45.2+ HSCs might have been outcompeted by wild-type CD45.1+ HSCs in these recipients (Figure 5D). Consistent with this hypothesis, we observed a significant reduction in CD45.2+ HSCs only in the bone marrow of recipient animals that were fed a doxycycline-containing diet in the first 4 weeks post-transplant (Figure 5E).\n\nTaken together, these results support a model where the miRNA-mediated gene regulation is conditionally essential for the maintenance of HSCs during acute regeneration but is largely dispensable under homeostasis.\n\n### An essential role for miRNA-mediated gene repression in the skeletal muscle and in the heart\n\nAs previously discussed, we observed low or no expression of T6B in the heart and skeletal muscle of R26T6B mice treated with doxycycline (Figure 2\u2014figure supplement 2), consistent with previous reports indicating that rtTA expression from the endogenous Rosa26 promoter is tissue restricted (Premsrirut et al., 2011). To extend the analysis of the phenotype caused by the loss of miRISC activity to these tissues, we crossed T6B transgenic mice with the Rosa26-CAGs-rtTA3 strain (Dow et al., 2014) in which the modified chicken beta-actin with CMV-IE enhancer (CAG) promoter (Niwa et al., 1991) drives a more ubiquitous expression of the rtTA variant rtTA3 (hereafter CAGT6B). As expected, the pattern and intensity of T6B expression upon dox administration in CAGT6B mice and R26T6B mice were largely overlapping, except for the heart and the skeletal muscle, for which significant T6B expression was only observed in CAGT6B mice (Figure 6A, Figure 2\u2014figure supplement 2). RNAseq analyses confirmed inhibition of miRNA function in both heart and skeletal muscle of CAGT6B mice upon dox administration (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig6-v2.jpg)\n\n**Figure 6.:** The microRNA (miRNA) pathway is essential in heart and skeletal muscle during homeostasis.\n(A) Detection of T6B expression with an anti-YFP antibody in the heart and skeletal muscle of R26T6B, CAGT6B, and R26CTL mice maintained on doxycycline-containing diet for 7 days. (B) Total RNA extracted from the heart (upper panel) and the skeletal muscle (lower panel) of CAGCTL and CAGT6B mice (n = 3 for each strain) maintained on dox for 7 days was analyzed by RNAseq. Left panels: scatter plot showing the effect of T6B expression on targets of conserved miRNA families was generated as described in Figure 1D. The abundance of each miRNA family was calculated using dataset from Isakova et al., 2020. Right panels: representative cumulative distribution plot of log2-fold changes in expression of predicted targets of the indicated miRNA families. (C) Kaplan\u2013Meier curves of CAGT6B and CAGCTL mice (n = 8 for each genotype) maintained on doxycycline throughout the duration of the experiment. p-Value from log-rank test. (D) Upper row: representative H&E staining showing marked dilation of the four cardiac chambers in hearts of CAGT6B mice compared to controls (n = 9 for each genotype). Despite having thinner walls, the histomorphology of ventricular cardiomyofibers was within normal limits. Bottom row: representative H&E staining showing degenerative and regenerative changes in the skeletal muscle of the hind limbs of CAGT6B mice compared to controls (n = 9 for each genotype).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Body weight of CAGT6B and control mice maintained on doxycycline for up to 45 days was assessed the day on which euthanasia was performed.\nn = 8 (four females and four males) for each genotype (age and sex matched). Mice were kept on doxycycline diet throughout the duration of the experiment, and control mice were euthanized at day 45. P-values: unpaired t-test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Representative H&E staining showing vasculitis of the pulmonary veins as revealed by inflammatory immune cell infiltration of the vessel wall (arrows).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70948/elife-70948-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** T6B blocks miRNA activity in sea urchins and zebrafish.\n(A) Left panel: representative examples of Mediterranean sea urchin (Paracentrotus lividus) zygotes injected with 1 pg of in vitro-transcribed mRNA coding for either T6B or T6BMut proteins and observed under DIC optics at 48 hr post-fertilization. Both embryos are oriented in a vegetal view. T6B-expressing embryos displayed severe developmental aberrations ranging from the failure to form a proper archenteron and skeletal structures, to overall delay in development and embryonic lethality. By contrast, control T6BMut-expressing embryos observed at the same developmental stage went through embryogenesis normally and exhibited the characteristic easel-like shape of the echinoid pluteus larva. Right panel: quantitative PCR showing dysregulation of territorial marker genes involved in the developmental gene regulatory network of the sea urchin (Cavalieri and Spinelli, 2015a, Cavalieri and Spinelli, 2015b) upon T6B expression. Data are indicated as fold difference in transcript abundance with respect to control T6BMut-expressing embryos at the same stage of development. The gray region represents changes in mRNA abundance corresponding to less than threefold difference, while error bars are standard errors for the qPCR replicates. PMCs: primary mesenchyme cells; SMCs: secondary mesenchyme cells. (B) Zebrafish (Danio rerio) fertilized eggs were injected with 75 pg of in vitro-transcribed mRNA coding for either T6B or T6BMut fusion proteins. While T6BMut-expressing embryos developed normally, the majority of T6B-expressing embryos underwent severe developmental defects.\n\nIn contrast to R26T6B mice, CAGT6B mice fed a doxycycline-containing diet showed a progressive decline in body mass (Figure 6\u2014figure supplement 1) and died or reached a humane endpoint within 4\u20136 weeks (Figure 6C). The decrease in body mass was not caused by intestinal malabsorption as, similarly to what was observed in R26T6B mice, we found no evidence of architectural defects throughout the intestine. In contrast, histopathological examination of heart and skeletal muscle showed severe alterations in both organs, including dilated cardiomyopathy and diffuse muscular degeneration (Figure 6D). All mice also showed necro-inflammatory changes in the liver, variable alterations in the pancreas, and increased urea nitrogen and alanine aminotransferase levels in the serum. Such alterations are likely secondary to congestive heart failure and/or to severe muscle catabolism as they were not observed in R26T6B mice. Another phenotype that distinguished the R26T6B strain from the CAGT6B strain was the presence in the latter of vasculitis of pulmonary veins (Figure 6\u2014figure supplement 2). A likely explanation is that these lesions are caused by increased pressure in the pulmonary veins secondary to congestive heart failure, but we cannot exclude that they reflect a direct effect of T6B expression on the pulmonary vasculature. Discriminating between these two possibility will require the use of transgenic mice harboring tissue-restricted rtTA transgenes.\n\nThe emergence of severe cardiac and skeletal muscle phenotypes, as opposed to the lack of obvious structural and functional abnormalities in most T6B-expressing tissues, points toward the existence of significant differences among adult tissues in their reliance on the miRNA pathway during homeostasis.\n\n## Discussion\n\nWe report the generation of a novel genetically engineered mouse strain in which miRISC assembly and function can be temporally and spatially controlled in a reversible manner by a doxycycline-inducible transgene encoding a T6B-YFP fusion protein to address the role(s) miRNA-mediated gene regulation plays in vivo in adult tissues.\n\nSurprisingly, in most adult tissues, we do not find an essential role for miRNA-mediated gene repression in organ homeostasis. A notable exception are the heart and the skeletal muscle, where miRISC inactivation in adult mice results in acute tissue degeneration and death even in the absence of tissue damage or exogenous stress.\n\nEven though miRISC function is not overtly required for the homeostasis of other tissues, we have investigated the consequences of miRNA inhibition in the intestine and in the hematopoietic system of adult mice under homeostatic conditions and during tissue regeneration. These are tissues that periodically respond to external/internal stresses. In both tissues, we have found that miRISC activity is dispensable for homeostasis. However, miRNA function becomes essential during tissue regeneration following acute injury. These results lend experimental support to the hypothesis that a major role for miRNA-mediated gene repression is to support tissue adaptation to stress.\n\nIn previous studies where Dicer1 was conditionally ablated in the skeletal muscle of adult mice, muscle regeneration was impaired after acute injury, but no effect on muscle morphology or function was observed during homeostasis (Oikawa et al., 2019a; Oikawa et al., 2019b; Vechetti et al., 2019). An explanation for this difference is that in the Dicer1 conditional knockout experiments miRNA levels were only partially reduced even weeks after Dicer1 ablation, likely reflecting the high stability of these short non-coding RNAs. The T6B mouse strain we describe here overcomes this major limitation and allows the rapid and effective inhibition of miRNA activity independently from the half-life of these molecules.\n\nIn this article, we have focused on the role of miRNA-mediated gene repression in adult mice. The same strategy for the acute inhibition of miRISC activity can in principle be applied to other organisms. We have found that expression of T6B in embryos of both sea urchin (Paracentrotus lividus) and zebrafish (Danio rerio) induces developmental defects and gene expression changes consistent with the essential role of the miRNA pathway during development (Ambros and Horvitz, 1984; Chalfie et al., 1981; Lee et al., 1993; Reinhart et al., 2000; Song et al., 2012; Wienholds et al., 2003; Wightman et al., 1993, Figure 6\u2014figure supplement 3). Considering that in vitro T6B efficiently binds to AGO proteins from different non-mammalian organisms (Hauptmann et al., 2015), these findings are not unexpected, yet they highlight the usefulness of the T6B system for dissecting the miRNA pathway in a variety of animal models.\n\nDespite its many advantages, the T6B mouse strain has also some unique limitations that need to be considered when designing and interpreting experiments.\n\nFirst, although our biochemical and computational analysis of cells and tissues expressing T6B indicates that the peptide can effectively impair miRISC function, we cannot exclude some residual miRISC activity even in cells expressing high levels of the T6B transgene. The observation that we can recapitulate phenotypes observed in mice harboring complete targeted deletion of miR-143/145 miRNAs in the intestine (Chivukula et al., 2014) and of miR-17\u201392 and miR-451 in the hematopoietic system (Koralov et al., 2008; Patrick et al., 2010; Ventura et al., 2008) is reassuring in this respect. For example, consistent with observations made in the regenerating intestine of miRNA-143/145 knockout mice (Chivukula et al., 2014), we did not record any abnormalities or toxicity during the normal intestinal homeostasis of R26T6B mice, whereas T6B expression became lethal during intestinal regeneration. Moreover, in the hematopoietic system, abnormalities were mostly restricted to B cell maturation, which are consistent with a developmental block at the Pro-B to Pre-B transition found in mir17\u201392 knockout mice (Ventura et al., 2008). Finally, we also observed a statistically significant decrease in hematocrit, erythrocyte volume, and hemoglobin content in adult T6B-expressing mice, analogous to what was reported in mice harboring targeted deletion of miR-451 (Patrick et al., 2010).\n\nIn contrast, some of our results markedly differ from the results obtained by conditional ablation of Dicer1 in mice. For example, conditional knockout of Dicer1 in the hematopoietic system has been reported to result in the rapid depletion of HSCs (Guo et al., 2010b). Furthermore, the lack of an overt phenotype in the intestine contrasts with previous reports showing that postnatal, conditional deletion of Dicer1 results in depletion of goblet cells (Biton et al., 2011; McKenna et al., 2010), in addition to abnormal vacuolation and villous distortion in the small intestine (Huang et al., 2012; McKenna et al., 2010). We cannot exclude that these differences are due to an incomplete inactivation of the miRNA pathway in T6B mice, but an alternative explanation is that they reflect the well-characterized miRNA-independent functions of DICER.\n\nAnother limitation to be considered is the possibility that T6B expression impairs the activity of other complexes in addition to the miRISC. Although RNAseq analysis of cells expressing T6B has not revealed changes that are not explained by loss of miRNA-mediated gene repression and the phenotypes observed are consistent with loss of miRNA activity, this possibility cannot be formally excluded at this time. Further studies to experimentally identify T6B interactors in cells and tissues will be important to formally address this possibility.\n\nIn conclusion, we have developed a novel mouse strain that enables investigating the role of miRNA-mediated gene repression in adult organisms. The body of data presented here suggests that in adult animals miRNAs primarily provide for the ability to adaptively change gene expression in response to the physiological and pathological stresses that accompany metazoans\u2019 life. It is likely that the specific miRNAs and stresses differ based on the adult organ or tissue being studied, and the model we have generated will be useful to address these important aspects of miRNA biology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background(Mus musculus)</td>\n      <td>T6B</td>\n      <td>This paper</td>\n      <td>Stock #036470</td>\n      <td>The T6Bwt allele is integrated in the Col1a1 locus</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(M. musculus)</td>\n      <td>CD45.1+ C57BL/6 (BoyJ)</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:002014</td>\n      <td>Carries the differential Ptprca\n pan leukocyte marker</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(M. musculus)</td>\n      <td>C57BL/6J</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background(M. musculus)</td>\n      <td>Rosa26-CAGs-rtTA3</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:IMSR_JAX:029627</td>\n      <td>The CAG promoter drives the expression of rtTA3</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>KH2</td>\n      <td>PMID:16400644</td>\n      <td>RRID:CVCL_C317</td>\n      <td>Embryonic stem cells</td>\n    </tr>\n    <tr>\n      <td>Cell line (M. musculus)</td>\n      <td>DR4</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_VK72</td>\n      <td>Irradiated feeder cells</td>\n    </tr>\n    <tr>\n      <td>Transfected construct(M. musculus)</td>\n      <td>Silencer GAPDH siRNA</td>\n      <td>Thermo Fisher</td>\n      <td>#AM4624</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct(M. musculus)</td>\n      <td>Negative Control 1 siRNA</td>\n      <td>Thermo Fisher</td>\n      <td>#AM4611</td>\n      <td>Nontargeting control</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-E-cadherin(mouse monoclonal)</td>\n      <td>BD</td>\n      <td>#610181</td>\n      <td>IF: (1:750)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-lysozyme(rabbit polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>#RB-372-A1</td>\n      <td>IF: (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PH3(mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#970</td>\n      <td>IF: (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-YFP(rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>#A11122</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ki67(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#12202</td>\n      <td>IF: (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit IgG, Alexa Fluor 488(goat polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>#A11034</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG2a, Alexa Fluor 594(goat polyclonal)</td>\n      <td>Thermo Fisher</td>\n      <td>#A-21135</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP(chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>#ab13970</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat IgG(rat polyclonal)</td>\n      <td>Sigma</td>\n      <td>#I-8015</td>\n      <td>IF: (1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GW182(rabbit polyclonal)</td>\n      <td>Bethyl</td>\n      <td>#A302-329A</td>\n      <td>WB: (1:1000, in 5% milk)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ago2(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#2897</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RPL26(rabbit polyclonal)</td>\n      <td>Bethyl</td>\n      <td>#A300-686A</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GAPDH(mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>#G8795</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b2-actin(mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>#A2228</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-tubulin(mouse monoclonal)</td>\n      <td>Sigma-Aldrich</td>\n      <td>#T9026</td>\n      <td>WB: (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA(rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#C29F4</td>\n      <td>WB: (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG, HRP-conjugated(donkey polyclonal)</td>\n      <td>GE Healthcare</td>\n      <td>#NA934</td>\n      <td>WB: (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG, HRP-conjugated(sheep polyclonal)</td>\n      <td>GE Healthcare</td>\n      <td>#NA931</td>\n      <td>WB: (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-AGO2(mouse monoclonal)</td>\n      <td>WAKO</td>\n      <td>#011-22033</td>\n      <td>IP: (1 \u00b5g/100 \u00b5l)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-AGO1-4(mouse monoclonal)</td>\n      <td>EMD Millipore</td>\n      <td>#MABE56</td>\n      <td>IP: (1 \u00b5g/100 \u00b5l)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-FLAG(mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#8146S</td>\n      <td>IP: (1 \u00b5g/100 \u00b5l)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA(mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#2367S</td>\n      <td>IP: (1 \u00b5g/100 \u00b5l)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IgG1 isotype(mouse monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>#5415</td>\n      <td>IP: (1 \u00b5g/100 \u00b5l)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAGGS-flpE-puro (plasmid)</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_20733</td>\n      <td>Flippase recombinase-expressing vector</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pgk-ATG-frt plasmid</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_20734</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Col1a1 common _F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AATCATCCCAGGTGCACAGCATTGCGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Col1a1 wildtype _R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTTTGAGGGCTCATGAACCTCCCAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Col1a1 mutant _R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATCAAGGAAACCCTGGACTACTGCG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R26_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AAAGTCGCTCTGAGTTGTTAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R26a_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCGAAGAGTTTGTCCTCAACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>R26b_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCTCCAATTTTACACCTGTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>T6B-YFP_F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GACTACAAGGACGACGATGACAAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>T6B-YFP_R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTTACTTGTACAGCTCGTCCATG</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAscope 2.5 HD Detection Reagent, BROWN</td>\n      <td>ACD</td>\n      <td>#320771</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAScope Igfbp5 Probe</td>\n      <td>ACD</td>\n      <td>#425738</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superose 6 10/300 GL</td>\n      <td>Cytiva</td>\n      <td>#GE17-5172-01</td>\n      <td>Now available as Increase 10/300 GL,Cytiva #GE29-0915-96</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Novex NuPAGE SDS/PAGE gel system</td>\n      <td>Thermo Fisher</td>\n      <td>#NP0321</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EnVision + HRP</td>\n      <td>DAKO, Glostrup, Denmark</td>\n      <td>#K401111-2, RRID:AB_2827819</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GFP-trap</td>\n      <td>Chromotek</td>\n      <td>#gtma-10RRID:AB_2827592</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TruSeq Stranded mRNA LT Kit,</td>\n      <td>Illumina</td>\n      <td>#RS-122-2102</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OMERO</td>\n      <td>PMID:22373911</td>\n      <td>RRID:SCR_002629</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR v2.5.3a</td>\n      <td>PMID:23104886</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2</td>\n      <td>PMID:25516281</td>\n      <td>RRID:SCR_015687</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>miRbase version 21</td>\n      <td>https://www.mirbase.org/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TargetScan</td>\n      <td>PMID:26267216</td>\n      <td>RRID:SCR_010845</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Doxycyline-containingRodent diet</td>\n      <td>Envigo</td>\n      <td>#TD01306</td>\n      <td>625 mg/kg doxycycline</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dextran sulfate sodium (DSS)</td>\n      <td>Cayman Chemical</td>\n      <td>#23250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Surgipath Decalcifier I</td>\n      <td>Leica Biosystems</td>\n      <td>#3800400</td>\n      <td>Formic acid solution</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>EDTA-free complete protease inhibitors</td>\n      <td>Sigma-Aldrich</td>\n      <td>#11836170001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>KnockOut DMEM</td>\n      <td>GIBCO</td>\n      <td>#10829018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Phosphate inhibitors</td>\n      <td>Roche</td>\n      <td>#04906837001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TRIzol Reagent</td>\n      <td>Thermo Fisher</td>\n      <td>#15596026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Sigma-Aldrich</td>\n      <td>#62248</td>\n      <td>5 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Mowiol 4-88</td>\n      <td>Calbiochem</td>\n      <td>#475904100 GM</td>\n      <td>Mounting media</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>GlutaMax</td>\n      <td>GIBCO</td>\n      <td>#35050061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>A/G PLUS-Agarose beads</td>\n      <td>Santa Cruz</td>\n      <td>#2003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RIPA buffer</td>\n      <td>Sigma-Aldrich</td>\n      <td>#R0278</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lipofectamine RNAiMAX</td>\n      <td>Thermo Fisher</td>\n      <td>#13778100</td>\n      <td>Transfection reagent</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alexa Fluor 488 tyramide signal amplification reagent</td>\n      <td>Life Technologies</td>\n      <td>B40953</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal models\n\nThe Rosa26rtTA/rtTA; Col1a1T6B/T6B\n (R26T6B) mice were generated by site-specific integration of the transgene coding for the FLAG-HA-T6B-YFP fusion protein within the Col1a1 locus of KH2 embryonic stem cells (Col1a1-frt/Rosa26 rtTA; Beard et al., 2006). Briefly, the FLAG-HA-T6B-YFP (FH-T6B-YFP) DNA fragment was subcloned into the targeting vector, as described in \u2018Vectors and molecular cloning.\u2019 A mixture of 5 \u00b5g of the targeting vector and 2.5 \u00b5g of the pCAGGS-flpE-puro (Addgene #20733), Flippase recombinase-expressing vector was electroporated into KH2 cells, using 4D-Nucleofector core unit (Lonza), following the manufacturer\u2019s \u2018primary cells P3\u2019 protocol. Selection of targeted clones was initiated 48 hr after electroporation, using 150 \u00b5g hygromycin per ml of culture medium. 10 days later, individual hygromycin-resistant ES cell clones were analyzed by PCR to confirm correct integration of the knock-in allele. Clones carrying the correctly integrated knock-in allele were genotyped using a three-primer PCR, with the following primers: (1) 5\u2032-AATCATCCCAGGTGCACAGCATTGCGG-3\u2032; (2) 5\u2032-CTTTGAGGGCTCATGAACCTCCCAGG-3\u2032; and (3) 5\u2032-ATCAAGGAAACCCTGGACTACTGCG-3\u2032. A 287-bp-long PCR product indicates successful integration of the transgene into the Col1a1 locus, while a 238-bp-long PCR product indicates a wild-type, untargeted locus. Two independent ES clones were injected into C57BL/6J albino blastocysts and backcrossed the resulting chimeras to C57BL/6J mice to achieve germline transmission of the recombinant allele. F1 animals were then intercrossed to generate animals expressing rtTA from the Rosa26 locus under control of the Rosa26 endogenous promoter, while expressing the T6B fusion protein from the Col1a1 locus under control of the tetracycline-responsive element (TRE) and the minimal CMV promoter. Animals were genotyped as follows: to assess the presence of the transgene in the Col1a1 locus, PCR was carried out as for the genotyping of KH2 cells. To assess the presence of the rtTA transgene in the Rosa26 locus, a three-primer PCR was performed, with the following primers: (1) 5\u2032-AAAGTCGCTCTGAGTTGTTAT-3\u2032; (2) 5\u2032-GCGAAGAGTTTGTCCTCAACC-3\u2032; and (3) 5\u2032-CCTCCAATTTTACACCTGTTC-3\u2032. A 350-bp-long PCR product indicates the presence of the rtTA transgene into the Rosa26 locus, while a 297-bp-long PCR product indicates the presence of a wild-type locus. CAGrtTA/rtTA; Col1a1T6B/T6B\n (CAGT6B) mice were generated by backcrossing R26T6B mice with Rosa26-CAGs-rtTA3 mice (a gift from Scott Lowe, MSKCC). In the Rosa26-CAGs-rtTA3 mice, the knock-in allele has the CAG promoter driving the expression of the third-generation reverse tetracycline-regulated transactivator gene (rtTA3), all inserted into the Gt(ROSA)26Sor locus. In vivo doxycycline-dependent expression of the FLAG-HA-T6B-YFP transgene was achieved by feeding mice chow that contained doxycycline at the concentration of 625 mg/kg (Envigo #TD01306). Mice were maintained and euthanized in accordance with a protocol approved by the Memorial Sloan Kettering Cancer Center Institutional Animal Care and Use Committee. The T6B transgenic strain has been deposited at the Jackson Laboratory (JAX stock #036470).\n\n### Necropsy, staining, and histopathology\n\nMice were euthanized with CO2. Following gross examination, all organs were fixed in 10% neutral buffered formalin, followed by decalcification of bone in a formic acid solution (Surgipath Decalcifier I, Leica Biosystems). Tissues were then processed in ethanol and xylene and embedded in paraffin in a Leica ASP6025 tissue processor. Paraffin blocks were sectioned at 5 \u00b5m, stained with hematoxylin and eosin (H&E), and examined by a board-certified veterinary pathologist. The following tissues were processed and examined: heart, thymus, lungs, liver, gallbladder, kidneys, pancreas, stomach, duodenum, jejunum, ileum, cecum, colon, lymph nodes (submandibular, mesenteric), salivary glands, skin (trunk and head), urinary bladder, uterus, cervix, vagina, ovaries, oviducts, adrenal glands, spleen, thyroid gland, esophagus, trachea, spinal cord, vertebrae, sternum, femur, tibia, stifle join, skeletal muscle, nerves, skull, nasal cavity, oral cavity, teeth, ears, eyes, pituitary gland, and brain. To detect goblet cells in the intestine, the AB/PAS kit (Thermo Fisher #87023) was used according to the manufacturer\u2019s instructions.\n\n### Immunofluorescence\n\nFor the staining of intestine sections shown in Figure 3 and Figure 3\u2014figure supplement 2, formalin-fixed, paraffin-embedded (FFPE) slides were deparaffinized and rehydrated according to a standard xylene/ethanol series. After heat-induced epitope retrieval in sodium citrate (pH 6), tissue sections were permeabilized in triton X-100, blocked, and incubated with the following 1\u00b0 antibodies: PH3 (Cell Signaling #970) at 1:200 dilution; lysozyme (Thermo Fisher #RB-372-A1) at 1:200 dilution; E-cadherin (BD #610181) at 1:750 dilution; YFP (Invitrogen #A11122) at 1:250 dilution; and Ki67 (Cell Signaling #12202) at 1:400 dilution. Next, cells were washed with PBS containing 0.05% Triton X and incubated with the following 2\u00b0 antibodies: goat anti-rabbit IgG, Alexa Fluor 488 (Thermo Fisher #A11034) at 1:250 dilution; goat anti-mouse IgG2a, Alexa Fluor 594 (Thermo Fisher #A11029) at 1:250 dilution. For the staining of tissue sections shown in Figures 2 and 4 and Figure 2\u2014figure supplement 2, FFPE tissue sections were cut at 5 \u03bcm and heated at 58\u00b0C for 1 hr. The antibody against GFP (Abcam, ab13970, 2 \u00b5g/ml) was incubated for 1 hr and detected with Leica Bond RX. Appropriate species-matched secondary antibody and Leica Bond Polymer anti-rabbit HRP were used, followed by Alexa Fluor 488 tyramide signal amplification reagent (Life Technologies, B40953). After staining, slides were washed in PBS and incubated in 5 \u03bcg/ml 4\u2032,6-diamidino-2-phenylindole (DAPI; Sigma-Aldrich) in PBS (Sigma-Aldrich) for 5 min, rinsed in PBS, and mounted in Mowiol 4-88 (Calbiochem). Slides were kept overnight at \u201320\u00b0C before imaging.\n\n### Immunohistochemistry\n\nFor immunohistochemistry, deparaffinized sections were subjected to antigen retrieval and processed with the EnVision + HRP kit (K401111-2, DAKO, Glostrup, Denmark) according to the manufacturer\u2019s instructions. A primary polyclonal antibody against Ki67 (Cell Signaling #12202) at 1:400 dilution was diluted in Antibody Diluent (DAKO #S0809) and incubated overnight at 4\u00b0C. Next, sections were incubated in the provided anti-rabbit HRP-labeled polymer reagent, and detection was performed according to the manufacturer\u2019s protocol. Images were acquired using an Olympus BX-UCB slide scanner.\n\n### RNA in situ hybridization\n\n5 \u03bcm sections were obtained from FFPE colons from age/sex-matched mice. Before staining, tissue slides were deparaffinized, rehydrated, and permeabilized according to standard procedures. Detection was carried out using RNAscope 2.5 HD Detection Reagent, BROWN (ACD # 320771), with a specific RNAScope Igfbp5 Probe (ACD #425738), according to the manufacturer\u2019s instructions.\n\n### Serum chemistry and hematology\n\nFor serum chemistry, blood was collected into tubes containing a serum separator, the tubes were centrifuged, and the serum was obtained for analysis. Serum chemistry was performed on a Beckman Coulter AU680 analyzer, and the concentration of the following analytes was determined: alkaline phosphatase, alanine aminotransferase, aspartate aminotransferase, creatine kinase, gamma-glutamyl transpeptidase, albumin, total protein, globulin, total bilirubin, blood urea nitrogen, creatinine, cholesterol, triglycerides, glucose, calcium, phosphorus, chloride, potassium, and sodium. Na/K ratio and albumin/globulin ratio were calculated. For hematology, blood was collected retro-orbitally into EDTA microtainers. Automated analysis was performed on an IDEXX Procyte DX hematology analyzer.\n\n### DSS treatment and post-DSS treatment quantitative analyses\n\nMice kept in doxycycline-containing chow were treated for 5 days with 4% w/v DSS (FW 40.000; Cayman Chemical #23250) dissolved in drinking water. Body mass was monitored daily. Measurements of colon length, aggregated length of ulcers, percentage of colon with ulcers, area of ulcers, the number of immune nodules, and the area of immune nodules were obtained using OMERO (https://www.openmicroscopy.org/omero/). Measurements of these parameters were used to estimate the extent of damage and colitis induced by DSS treatment. All measurements were acquired from H&E-stained colon sections. Ulcer was defined as regions of colon with complete/partial loss of epithelial structure, accompanied by massive immune infiltrates. Colon length was measured by tracing the length of muscular layer of each colon. Length of ulcer was measured as the added length of each ulcerated region along the colon. Ulcer percentage was calculated as the length of ulcer/length of colon. The area of each individual ulcer was also measured and summed for each animal. Clear immune nodules are visible, showing aggregates of immune cells with high nucleus/cytoplasm ratio. Number and area of the immune nodules were summarized for each animal.\n\n### Tissue isolation and total lysates preparation\n\nOrgans extracted from 8- to 12-week-old mice, perfused with PBS, were snap-frozen in liquid nitrogen and stored at \u221280\u00b0C until further processing. To prepare total extract from solid tissues, tissues were pulverized using a mortar, resuspended in 1 ml of lysis buffer per cm3 of tissue, and dounce-homogenized with a tight pestle until completely homogenized. Next, extracts were cleared by centrifugation at 20,000\u00d7 g for 5 min followed by a second step of centrifugation at 20,000\u00d7 g for 5 min. To prepare total extracts from cultured cells, pelleted cells were snap frozen in liquid nitrogen and stored at \u221280\u00b0C until further processing. Pellets were then resuspended in lysis buffer, incubated for 10 min on ice, and cleared by centrifugation at 20,000\u00d7 g. Two different lysis buffers were used, depending on the specific downstream application. For IP and SEC, lysates were prepared in SEC buffer (150 mM NaCl, 10 mM Tris-HCl pH 7.5, 2.5 mM MgCl2, 0.01% Triton X-100). For western blotting applications, lysates were prepared in RIPA buffer (Sigma-Aldrich #R0278). Upon usage, both buffers were supplemented with the addition of EDTA-free complete protease inhibitors (Sigma-Aldrich #11836170001), phosphate inhibitors (Roche #04906837001), and 1 mM DTT.\n\n### Cell lines and culture conditions\n\nCell lines were maintained in log-phase growth in a humidified incubator at 37\u00b0C, 5% CO2 prior to experimental manipulation. HCT116 colorectal adenocarcinoma cells were obtained from ATCC prior to this study and tested negative for Mycoplasma and were maintained in McCoy\u2019s medium supplemented with 10% heat-inactivated fetal calf serum (FCS, GIBCO, Cat#16141079), 10 U/ml penicillin/streptomycin, and 2 mM L-glutamine. MEFs were grown in Dulbecco\u2019s Modified Eagle Medium (DMEM) supplemented with 10% heat-inactivated FCS (GIBCO), 10 U/ml penicillin/streptomycin, and 2 mM L-glutamine. KH2 embryonic stem cells were cultured in gelatin-coated plates in the presence of irradiated DR4 Mouse Embryonic Fibroblasts (Thermo Fisher #A34966), and maintained in KnockOut DMEM (GIBCO, Cat#10829018), supplemented with 15% FCS (GIBCO), GlutaMax (GIBCO Cat#35050061), 100 \u00b5M non-essential amino acids (Sigma-Aldrich Cat#M7145), 1000 U/ml leukemia inhibitory factor (LIF, Millipore Cat#ESG1107), 10 U/ml penicillin/streptomycin (GIBCO Cat#15070063), 100 mM 2-mercaptoethanol (Bio-Rad Cat#1610710), and nucleosides (Millipore Cat#ES-008-D).\n\n### Flow cytometry\n\nAnalysis of bone marrow populations was performed by harvesting femurs and tibiae from euthanized mice. Bone marrow was isolated by centrifugation, resuspended in FACS buffer (PBS with 2% FCS), and passed through a 40 \u00b5m cell strainer to make a single-cell suspension. Nonspecific antibody binding was blocked by incubation with 10 \u00b5g/ml rat IgG (Sigma #I-8015) for 15 min on ice. Antibodies used to identify HSCs included a cocktail of biotinylated lineage antibodies (Gr1, CD11b, TER119, B220, CD3, CD4, CD8), CD117 (c-kit) APC (2B8), Sca-1 (D7) PE-cy7, CD150 PE, and CD48 Pacific Blue. B cell progenitors were identified with the following antibodies: B220, CD19, CD25, CD43, IgM, IgD, and c-kit. For analysis of PBMCs, blood was collected retro-orbitally from live mice into EDTA microtainers. Whole blood was lysed in ACK buffer for 5 min at room temperature, washed with FACS buffer, and pelleted prior to antibody staining. Mature blood populations were identified with the following antibodies: CD45.1, CD45.2, Gr1, CD11b, B220, and CD3. Cells were incubated with primary antibodies for 45 min, washed once with FACS buffer, and incubated with BV711 streptavidin conjugate for 15 min. All incubations were carried out on ice and protected from light. Antibodies were purchased from BioLegend or eBioscience.\n\n### Bone marrow transplantation\n\n8- to 12-week-old CD45.1+ C57BL/6 (BoyJ) mice (JAX) were lethally irradiated by exposure to 1100 cGy of gamma irradiation from a cesium source, administered in two doses, split 4 hr apart. Bone marrow suspensions from CAGT6B (CD45.2+) and BoyJ mice were counted, mixed 1:1, and transferred intravenously by retro-orbital injection into isofluorane-anesthetized, irradiated recipients.\n\n### Size-exclusion chromatography (SEC)\n\nSEC was performed using a Superose 6 10/300 GL prepacked column (GE Healthcare) equilibrated with SEC buffer essentially as previously described (La Rocca et al., 2015; Olejniczak et al., 2013). Briefly, 400 \u03bcl (1.5\u20132 mg) of total extracts precleared by centrifugation were run on the SEC column at a flow rate of 0.3 ml/min. 1 ml fractions were collected. Proteins were extracted from each fraction by TCA precipitation following standard procedures and run on SDS-PAGE gels for western blotting analysis.\n\n### Western blotting and antibodies\n\nWestern blotting was performed using the Novex NuPAGE SDS/PAGE gel system (Invitrogen). Total cell lysates were run either on 3\u20138% Tris-acetate or 4\u201312% Bis-Tris precast gels, transferred to nitrocellulose membranes, and probed with antibodies specific to proteins of interest. Detection and quantification of blots were performed on Amersham hyperfilm ECL (Cytiva #28906839) and developed on film processor SRX-101A (Konica). Antibodies used for western blots were obtained from commercial sources as follows: anti-GW182 (Bethyl #A302-239A), anti-Ago2 (Cell Signaling #2897), anti-PABP1 (Cell Signaling #4992), anti-RPL26 (Bethyl #A300-686A), anti-GAPDH (Sigma #G8795), anti-\u03b2-actin (Sigma #A2228), anti-GFP (Roche #11814460001), anti-tubulin (Sigma-Aldrich #T9026), anti-HA (Cell Signaling #C29F4), anti-rabbit IgG, HRP-conjugated (GE Healthcare #NA934), and anti-mouse IgG, HRP-conjugated (GE Healthcare #NA931).\n\n### Immunoprecipitation (IP)\n\nFor IP of AGO-T6B complexes from human HCT116 cells, 500 \u03bcg of lysates in 500 \u03bcl of SEC buffer were incubated for 3 hr with primary antibodies directed to either AGO proteins (WAKO anti-AGO2 #011-22033, EMD Millipore anti-panAGO #MABE56) or directed to T6B-fusion protein (Cell Signaling anti-FLAG #8146S, Cell Signaling anti-HA #2367S) or mouse IgG1 isotype control (Cell Signaling #5415). Next, lysates were incubated with 20 \u00b5l of protein A/G PLUS-Agarose beads (Santa Cruz #2003) for 1 hr. For IP of AGO-T6B complexes from mouse tissues, 500 \u03bcg of lysates in 500 \u03bcl of SEC buffer were incubated for 2 hr with GFP-trap magnetic agarose beads (Chromotek #gtma-10) or binding control beads (Chromotek #bmab-20). The immune complexes were run on SDS-PAGE and analyzed by western blotting.\n\n### Vectors and molecular cloning\n\nThe targeting vector expressing the FH-T6B-YFP under control of TRE and CMV minimal promoter was generated from a modified version of the pgk-ATG-frt plasmid (Addgene plasmid #20734), in which the region of pgk-ATG-frt comprised between the EcoRI site and the PciI site was substituted with the rabbit \u03b2-globin polyadenylation signal (RBG pA). The FH-T6B-YFP DNA insert was generated by PCR using the plasmid pIRES-Neo-FH-T6B-YFP58 as a template. PCR was carried out using the following primers: forward: 5\u2032-GACTACAAGGACGACGATGACAAG-3\u2032, reverse: GTTACTTGTACAGCTCGTCCATG. Next, the modified pgk-ATG-frt was cut with NcoI, filled-in to produce blunt ends, dephosphorylated, and ligated to the PCR-generated FH-T6B-YFP DNA fragment according to standard subcloning procedures. A scheme of the cloning strategy is shown as follows:\n\n![Scheme 1.](https://cdn.elifesciences.org/articles/70948/elife-70948-scheme1-v2.jpg)\n\n**Scheme 1.:** Cloning strategy for the generation of the targeting vector expressing the FH-T6B-YFP transgene.\n\nTo generated cell lines expressing either FH-T6B-YFP or FH-T6BMut-YFP fusion proteins in a doxycycline-inducible manner, a modified version of the retroviral vector pSIN-TREtight-HA-UbiC-rtTA3-IRES-Hygro (hereafter TURN vector, a gift from Scott Lowe) was used to transduce commercially available HCT116 and MEFs cell lines. TURN is an all-in-one Tet-on vector that includes (1) the rtTA3 gene under the human ubiquitin C promoter and (2) the transgene of interest driven by a TRE/CMV promoter. We used the pIRES-Neo-FH-T6B-YFP described in Hauptmann et al., 2015 as a template to generate by PCR the DNA fragments coding either for FH-T6B-YFP or for FH-T6BMut-YFP fusion proteins. DNA fragments were then inserted into the XhoI/EcoRI-digested TURN vector to generate TURNT6B and TURNT6Bmut vectors used for the transduction of parental HCT116 and MEFs.\n\n### Small RNA transfection\n\nSilencer GAPDH siRNA (Thermo Fisher AM4624) and Silencer Select Negative Control 1 siRNA (Thermo Fisher AM4611) small RNAs were transfected at 10 pM per 1 \u00d7 106 cells. MEFs were reverse transfected using Lipofectamine RNAiMAX. Lipofectamine RNAiMAX was combined with 20 \u00b5M small RNAs at a 4:3 ratio (vol:vol) in Opti-MEM and incubated for 20 min at room temperature. Trypsinized cells were added to culture dishes containing siRNAs and Lipofectamine RNAiMAX at 3.8 \u00d7 104 cells per cm2. Three volumes of complete medium were added to culture dishes, and cells were incubated for 2\u20133 days before further processing.\n\n### Small RNA sequencing\n\nTotal RNA was extracted from MEFs transduced with the retroviral vectors encoding a doxycycline-inducible T6B or T6Bmut transgene and cultured in the presence or absence of doxycycline. Small RNA-seq library preparation was as described in Hafner et al., 2011. Briefly, 1 \u00b5g total RNA was ligated to nine distinct pre-adenylated 26-nt 3\u2032-adapters with a 5-nt barcode using a mutated and truncated Rnl2 followed by urea gel purification and size selection and 5\u2032-adapter ligation with Rnl1. This ligation reaction was again gel-purified and size-selected for fully ligated product and reverse-transcribed using SuperScript III RT followed by PCR amplification using Taq polymerase for 25 cycles. The final PCR product was separated on a 2% agarose gel in TBE buffer and extracted using the QIAgen gel extraction kit according to the manufacturer\u2019s instructions including all optional steps. After high-throughput sequencing, small RNA reads were aligned to a miRNA genome index built from 1915 murine pre-miRNA sequences from miRbase version 21 (Kozomara et al., 2019; ftp://mirbase.org/pub/mirbase/21/) using Bowtie v2.4.296. Mature miRNA abundance was calculated by counting reads falling within 4 bps at each of the 5\u2032 and 3\u2032 end of the annotated mature miRNAs. miRNA seed family data were downloaded from the TargetScan website at http://www.targetscan.org/cgi-bin/targetscan/data_download.cgi?db=mmu_71. For miRNA family-level analysis, read counts mapping to members of the same miRNA family were summed up.\n\n### RNAseq analysis\n\nTotal RNA from heart, skeletal muscle, colon, and liver of sex-matched littermate animals, and total RNA from cell lines were extracted using TRIzol Reagent (Invitrogen) according to the manufacturer\u2019s instructions and subjected to DNase (QIAGEN) treatment. After RiboGreen quantification and quality control by Agilent BioAnalyzer, 500 ng of total RNA with RIN values of 7.0\u201310 underwent polyA selection and TruSeq library preparation according to the instructions provided by Illumina (TruSeq Stranded mRNA LT Kit, Cat#RS-122-2102), with eight cycles of PCR. Samples were barcoded and run on a HiSeq 4000 in a PE50/50 run using the HiSeq 3000/4000 SBS Kit (Illumina). An average of 34 million paired reads was generated per sample. The percent of mRNA bases averaged 60% over all samples. Reads were aligned to the standard mouse genome (mm10) using STAR v2.5.3a (Dobin et al., 2013). RNA reads aligned were counted at each gene locus. Expressed genes were subjected to differential gene expression analysis using DESeq2 (Love et al., 2014), and log2-fold changes were determined comparing T6B-expressing tissues to controls.\n\n### Z-score calculation\n\nFor each conserved miRNA families, the mean log2-fold change of predicted targets, as defined by TargetScan, compared to the rest of the transcriptome (background), was calculated. The means were converted to z-scores as described by Kim and Volsky, 2005: Z-score = (Sm - \u00b5)*m1/2*\u2202\u20131, where Sm is the mean of log2-fold changes of genes for a given gene set, m is the size of the gene set, and \u00b5 and \u2202 are the mean and the standard deviation of background log2-fold change values.\n\n### Real-time quantitative PCR\n\nReal-time quantitative PCR analysis to assess the expression levels of the territorial marker genes involved in the developmental gene regulatory network of the sea urchin was conducted as previously described by Cavalieri et al., 2009. Briefly, total RNA from batches of 150 microinjected embryos was extracted by using the High Pure RNA Isolation kit (Roche). RNA samples were treated with reagents provided by the Turbo DNA-free kit (Ambion) and resuspended in a final volume of 30 \u00b5l. Reverse transcription into cDNA was performed in an 80 \u00b5l reaction using random hexamers and the TaqMan Reverse Transcription Reagents kit (Applied Biosystems). The resulting cDNA sample was further diluted, and the equivalent amount corresponding to one embryo was used as template for Q-PCR analysis. Q-PCR experiments were performed from two different batches, and all reactions were run in triplicate on the 7300 Real-Time PCR system (Applied Biosystems) using SYBR Green detection chemistry (Applied Biosystems). ROX was used as a measure of background fluorescence, and MBF-1 and z12 mRNAs were used as internal controls. At the end of the amplification reactions, a \u2018melting-curve analysis\u2019 was run to confirm the homogeneity of all Q-PCR products. Calculations from Q-PCR raw data were performed by the RQ Study software version 1.2.3 (Applied Biosystems) using the comparative Ct method (Ct). Oligonucleotide primer pairs used for qPCR reactions and amplicon lengths have been described previously (Cavalieri et al., 2008, Cavalieri et al., 2011, Cavalieri and Spinelli, 2014, Cavalieri et al., 2017, Turturici et al., 2018).\n",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "3275a480-37fe-4888-9546-29afe66cce3a",
+      "submission_id": "d09e4f09-5222-4fe4-aa60-d94f5d22ba33",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ashish Lal, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70948.sa1](https://doi.org/10.7554/eLife.70948.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nIn this manuscript, the authors have extensively characterized a new tool for studying the phenotypic roles of miRNA-mediated regulation in mice. Analysis of this model has convincingly demonstrated that miRNA activity is dispensable for homeostasis in most adult tissues, with the notable exception of heart and skeletal muscle. This work provides an extremely useful tool for the study of miRNAs in vivo and provides new insights into the roles of miRNAs in adult mammalian tissues.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inducible and reversible inhibition of miRNA-mediated gene repression in vivo\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Ashish Lal as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Joshua T Mendell (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nIn this manuscript the authors developed an inducible and reversible system for inhibition of miRNA-mediated gene repression in vivo. The authors demonstrate the use of this system by investigating the consequences of inhibition of miRNA activity in adult animals. Interestingly, they found that global loss if miRNA function has different effects on different tissues and organs and in some tissues the effect is context dependent. Overall, this work is novel, interesting and data presented is solid. The results are presented in a clear and straightforward way. While most aspects of this work are very intriguing and supported well by solid experiments, a few additional analyses would provide additional information that would be interesting to readers.\n\n1. An overall histopathologic analysis of P0 T6B mice exposed to dox between E13.5-E18.5 could be interesting to see if the development of any tissues are particularly sensitive to inhibition of miRNA-mediated silencing during this window. This would be straightforward if fixed P0 mice are available, although this analysis could be the subject of a future study if tissues are not readily available.\n\n2. Figure 2 \u2013 supplement 2 shows T6B activation in lung in CAG-T6B but not R26-T6B animals. Does activation of the transgene in CAG-T6B mice result in any noticeable abnormalities in adult lung?\n",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e532b8ab-e7d4-481d-a823-8677648feb7d",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C1",
+      "claim": "MicroRNAs (miRNAs) are short non-coding RNAs that in Metazoa repress gene expression at the post-transcriptional level by binding to partially complementary sequences on target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs (miRNAs) are short non-coding RNAs that in Metazoa repress gene expression at the post-transcriptional level by binding to partially complementary sequences on target mRNAs (Bartel, 2009; Bartel, 2018; Eichhorn et al., 2014; Izaurralde, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to established literature on miRNA function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "dc79402c-4baa-4a77-802c-54117f08210c",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C2",
+      "claim": "In mammals, the Argonaute protein family (AGO1-4) and the trinucleotide repeat-containing gene 6 protein family (TNRC6A/GW182, TNRC6B and TNRC6C) are the core components of the miRISC.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the Argonaute protein family (AGO1-4) and the trinucleotide repeat-containing gene 6 protein family (TNRC6A/GW182, TNRC6B and TNRC6C) are the core components of the miRISC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about miRISC composition in mammals.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "f56ac5f0-51d3-409d-8eb0-7140217b58f5",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C3",
+      "claim": "AGO binds to the miRNA and facilitates its interaction with target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "AGO binds to the miRNA and facilitates its interaction with target mRNAs (Schirle et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Schirle et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "b2cf4444-98f0-414c-b1e1-007fcbc727f0",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C4",
+      "claim": "TNRC6 binds to AGO and recruits the decapping and deadenylation complexes, leading to degradation of target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, TNRC6 binds to AGO and recruits the decapping and deadenylation complexes, leading to degradation of target mRNAs (Braun et al., 2011; Chekulaeva et al., 2011; Chen et al., 2009; Chen et al., 2014; Fabian et al., 2011; Guo et al., 2010a; Huntzinger et al., 2013; Lazzaretti et al., 2009; Nishihara et al., 2013; Rehwinkel et al., 2005; Till et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing TNRC6 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "7d8272c3-8ae5-4efc-b47c-79ca0e20fe10",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C5",
+      "claim": "Animals harboring targeted deletion of single miRNA genes are often indistinguishable from their wild-type counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although miRNAs are abundantly expressed in embryonic and adult mouse tissues, and computational and experimental analyses indicate that they target components of virtually every cellular process (Flynt and Lai, 2008), animals harboring targeted deletion of single miRNA genes are often indistinguishable from their wild-type counterparts (Abdellatif, 2012; Chivukula et al., 2014; Cimmino et al., 2005; Liu et al., 2008; Park et al., 2010; van Rooij et al., 2007; Vechetti et al., 2019; Williams et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies showing minimal phenotypes in single miRNA knockout animals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "c7523018-7c49-4b0a-8c86-4b5ead16bc19",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C6",
+      "claim": "Clear phenotypes often emerge in mutant adult animals when exposed to external or internal perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, clear phenotypes often emerge in mutant adult animals when exposed to external or internal perturbations (Chivukula et al., 2014; Mendell and Olson, 2012; van Rooij et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies showing stress-dependent phenotypes in miRNA mutants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "fd6b3220-64cd-4a07-82f0-7dbf30c257db",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C7",
+      "claim": "miRNA function is conditionally, rather than constitutively, required to carry on cellular processes in some contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that, at least in some contexts, miRNA function is conditionally, rather than constitutively, required to carry on cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that phenotypes emerge under stress but not homeostasis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "2c64a7df-b144-4443-915e-3a6d4f77d6cf",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C8",
+      "claim": "DICER is involved in epigenetic regulation in the nucleus in a miRNA-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, DICER is involved in epigenetic regulation in the nucleus in a miRNA-independent manner (Fukagawa et al., 2004; Giles et al., 2010; Gullerova and Proudfoot, 2012; Okamura and Lai, 2008; Song and Rossi, 2017; Tam et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing non-canonical DICER functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "2e5942db-34eb-459c-958c-b6800ad36bd2",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C9",
+      "claim": "DICER is essential to metabolize transcripts from short interspersed nuclear elements, predominantly Alu RNAs in humans and B1 and B2 RNAs in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "DICER is involved in epigenetic regulation in the nucleus in a miRNA-independent manner (Fukagawa et al., 2004; Giles et al., 2010; Gullerova and Proudfoot, 2012; Okamura and Lai, 2008; Song and Rossi, 2017; Tam et al., 2008) and is essential to metabolize transcripts from short interspersed nuclear elements, predominantly Alu RNAs in humans and B1 and B2 RNAs in rodents (Kaneko et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kaneko et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "3783418e-212e-40c0-b11f-bb0ab5d03fe1",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C10",
+      "claim": "DROSHA regulates the expression of several coding and non-coding RNAs by directly cleaving stem\u2013loop structures embedded within the transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "DROSHA, on the other hand, regulates the expression of several coding and non-coding RNAs by directly cleaving stem\u2013loop structures embedded within the transcripts (Chong et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "eb57fdb9-16ae-4c31-afb7-7b8c57079c69",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C11",
+      "claim": "DICER and DROSHA are involved in the DNA-damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DICER and DROSHA are also involved in the DNA-damage response (Francia et al., 2012; Michelini et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Francia et al., 2012 and Michelini et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "effa5a0f-cb01-4136-a0a7-ee0f0fea20b2",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C12",
+      "claim": "DGCR8 regulates the maturation of small nucleolar RNAs and of some long non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and DGCR8 regulates the maturation of small nucleolar RNAs and of some long non-coding RNAs (Cirera-Salinas et al., 2017; Macias et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cirera-Salinas et al., 2017 and Macias et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "7156267a-8ac8-4a75-a289-ee0592e06a7b",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C13",
+      "claim": "4 weeks after near complete conditional ablation of Dicer1 in the muscle, the levels of the highest expressed miRNAs were found to be only reduced by 30\u201340%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 4 weeks after near complete conditional ablation of Dicer1 in the muscle, the levels of the highest expressed miRNAs were found to be only reduced by 30\u201340% and their expression remained substantial even 18 months later (Vechetti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vechetti et al., 2019 describing experimental data on miRNA stability after Dicer1 deletion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "09e1880d-3626-44a2-9d2a-d7631a347e71",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C14",
+      "claim": "A subset of mammalian miRNAs does not rely on the canonical biosynthesis pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, a subset of mammalian miRNAs does not rely on the canonical biosynthesis pathway, and therefore their expression and activity are not affected by inactivation of the core miRNA biogenesis factors (Cheloufi et al., 2010; Chong et al., 2010; Cifuentes et al., 2010; Kim et al., 2016; Okamura et al., 2007; Ruby et al., 2007; Yang and Lai, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing non-canonical miRNA biogenesis pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "c6fb88e5-d8e7-49e0-9cb4-00b58707f5db",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C15",
+      "claim": "A peptide encompassing one of the AGO-interacting motifs of human TNRC6B has been previously employed to efficiently pull down all AGO family members from cell and tissue extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "A peptide encompassing one of the AGO-interacting motifs of human TNRC6B has been previously employed as an alternative to antibody-based approaches to efficiently pull down all AGO family members from cell and tissue extracts (Hauptmann et al., 2015; Pfaff et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hauptmann et al., 2015 and Pfaff et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "db6bd6bb-08c2-49ca-a888-ecc34607fa0a",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C16",
+      "claim": "The T6B peptide competes with endogenous TNRC6 proteins for binding to AGOs and prevents the assembly of the full miRISC, resulting in effective inhibition of miRISC-mediated gene repression in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This peptide, named T6B, competes with endogenous TNRC6 proteins for binding to AGOs. However, as it lacks the domains necessary for the recruitment of decapping and deadenylation factors, it prevents the assembly of the full miRISC, thus resulting in effective inhibition of miRISC-mediated gene repression in cells (Danner et al., 2017; Hauptmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Danner et al., 2017 and Hauptmann et al., 2015 describing T6B function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "04d533da-6583-46ba-9d33-f08501b86821",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C17",
+      "claim": "In lysates from cells expressing T6B, AGO2 and TNRC6A were nearly completely depleted from the high-molecular-weight fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AGO2 and TNRC6A were nearly completely depleted from the high-molecular-weight fractions in lysates from cells expressing T6B (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C demonstrating the shift in AGO2 and TNRC6A elution profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "6e3effe3-0a96-4166-9924-1c993acdb4da",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C18",
+      "claim": "T6B expression leads to loss of interactions between the miRISC components and mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while AGO2, TNRC6A, and the polyA-binding protein 1 (PABP1) co-fractionated in lysates from control cells, they eluted in different fractions in lysates from T6B-expressing cells (Figure 1C), indicating that T6B leads to loss of interactions between the miRISC components and mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C demonstrating differential co-fractionation patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "66325005-094d-4a41-99d9-2c79caf7585e",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C19",
+      "claim": "Cells expressing T6B displayed marked and selective de-repression of predicted mRNA targets for expressed miRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing T6B displayed marked and selective de-repression of predicted mRNA targets for expressed miRNAs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAseq data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "982d2496-4de1-46c9-b134-a7a55b7c83c1",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C20",
+      "claim": "The extent of de-repression was roughly proportional to the abundance of individual miRNA families.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of de-repression was roughly proportional to the abundance of individual miRNA families, with predicted targets of poorly expressed miRNAs collectively showing modest de-repression compared to targets of more abundantly expressed miRNA families (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAseq analysis shown in Figure 1D demonstrating correlation between miRNA abundance and target de-repression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "f79b8145-3ab4-4332-8c99-19c916d13be3",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C21",
+      "claim": "De-repression of miRNA targets was not accompanied by a global change in mature miRNAs levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, de-repression of miRNA targets was not accompanied by a global change in mature miRNAs levels (Figure 1E), consistent with the role of T6B in perturbing the effector step of the miRNA pathway, without affecting miRNA processing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by small-RNAseq data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "995edf34-369d-4358-a276-45a901a691f7",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C22",
+      "claim": "AGO2 is the only mammalian AGO protein that has endo-ribonucleolytic activity, which does not require TNRC6.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the four mammalian AGO proteins, AGO2 is the only one that has endo-ribonucleolytic activity, which does not require TNRC6 (Liu et al., 2019) and is triggered when the AGO2-loaded small RNA and the target are perfectly complementary (Doench et al., 2003; Liu et al., 2004; Zeng et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing AGO2's unique catalytic activity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "de02eefd-8ed6-4e2f-9e2d-f7aa0701b4ec",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C23",
+      "claim": "T6B expression does not interfere with the ability of synthetic siRNAs to cleave perfectly complementary endogenous targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, T6B expression does not interfere with the ability of synthetic siRNAs to cleave perfectly complementary endogenous targets (Figure 1F), indicating that AGO2's catalytic function is not affected by the binding of T6B, and implying that the loading of small RNAs onto AGOs is also not perturbed by T6B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F demonstrating preserved siRNA-mediated cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "f8869097-8928-4000-b121-be87fc261db8",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C24",
+      "claim": "Ectopic T6B expression in mammalian cells causes global inhibition of miRISC function with minimal perturbation of the expression of mature miRNAs, and with preservation of AGO2's endo-nucleolytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these results demonstrate that ectopic T6B expression in mammalian cells causes global inhibition of miRISC function with minimal perturbation of the expression of mature miRNAs, and with preservation of AGO2's endo-nucleolytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "e2dc065d-8911-497b-b6d6-8887d0661615",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C25",
+      "claim": "T6B became detectable after 24 hr of doxycycline administration, reached a plateau after 3 days, and completely disappeared 4 days after doxycycline removal from the diet.",
+      "claim_type": "EXPLICIT",
+      "source": "When doxycycline was administered in the diet, T6B became detectable after 24 hr, reached a plateau after 3 days, and completely disappeared 4 days after doxycycline removal from the diet (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C demonstrating T6B expression kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "e7cb83dc-b273-461a-9424-3219f1dab2cf",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C26",
+      "claim": "Expression of T6B resulted in nearly complete disassembly of the miRISC in colon and liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of T6B resulted in nearly complete disassembly of the miRISC, as indicated by the elution shift of AGO from the high-molecular-weight to low-molecular-weight fractions in both tissues (Figure 2E, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 2E and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "5c32afa8-69f4-4046-8fb9-cfddb5f6eccf",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C27",
+      "claim": "Doxycycline removal from the diet led to a complete reconstitution of the miRISC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, doxycycline removal from the diet led to a complete reconstitution of the miRISC, as indicated by the reappearance of AGO2 in the high-molecular-weight fractions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SEC data shown in Figure 2E demonstrating reversibility of miRISC disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "45f868d2-b4a5-44ef-889c-196dcc0528a1",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C28",
+      "claim": "T6B expression resulted in marked de-repression of miRNA targets in liver and colon.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether T6B expression also resulted in inhibition of miRNA-mediated gene repression in vivo, we performed RNAseq on total RNAs extracted from the liver and colon of R26T6B and R26CTL mice kept on doxycycline-containing diet for 1 week. As shown in Figure 2F, T6B expression resulted in marked de-repression of miRNA targets in both tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAseq data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "5e2288bf-c254-4a49-a6f2-fab0ffb2320e",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C29",
+      "claim": "T6B expression allows acute and reversible disruption of the miRISC, and concomitant inhibition of miRNA function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results,we conclude that T6B expression allows acute and reversible disruption of the miRISC, and concomitant inhibition of miRNA function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "b46d660d-9974-4a81-9cdd-4209654dc810",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C30",
+      "claim": "Inhibition of miRISC starting either at conception or at mid-gestation caused developmental defects and perinatal lethality in R26T6B mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, inhibition of miRISC starting either at conception (Figure 3A) or at mid-gestation caused developmental defects and perinatal lethality in R26T6B mice (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A, 3B, and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "8a3917c4-354d-40b7-9059-a0969cab0cdf",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C31",
+      "claim": "Adult R26T6B mice kept on doxycycline diet for up to 2 months remained healthy and appeared normal upon macroscopic and histopathological examination.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, adult R26T6B mice kept on doxycycline diet for up to 2 months remained healthy and appeared normal upon macroscopic and histopathological examination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on histopathological examination of adult mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "7a6c133e-ec96-4992-bc00-d9c641a74992",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C32",
+      "claim": "T6B expression in the intestine caused no architectural abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed examination of the intestine confirmed extensive T6B expression in the epithelium and in the mesenchymal compartment (Figure 3\u2014figure supplement 2), but no architectural abnormalities were observed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 3C and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "c336b693-ac88-498a-943b-eeb10c1594b9",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C33",
+      "claim": "T6B expression caused a reduction in lysozyme expression in Paneth cells in the crypts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no obvious macroscopic, functional, or architectural abnormalities were caused by T6B expression in the intestine, we observed a reduction in lysozyme expression in Paneth cells in the crypts (Figure 3D, upper row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "de2d2fda-0652-4131-8a9c-283ba9b60df0",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C34",
+      "claim": "The reduction in lysozyme expression was reversible upon removal of doxycycline from the diet.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this phenotype was reversible as lysozyme signal in the crypts returned to normal levels when doxycycline was removed from the diet (Figure 3D, lower row), suggesting that T6B expression did not affect neither the viability of intestinal stem cells nor their self-renewal ability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 3D demonstrating reversibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "a90489a4-50af-4b4c-9d04-0dac26f4e908",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C35",
+      "claim": "Complete blood counts showed a modest, but significant, decrease in erythrocytes volume (MCV) and hemoglobin content (MCH) in R26T6B RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete blood counts showed a modest, but significant, decrease in erythrocytes volume (MCV) and hemoglobin content (MCH) in R26T6B RBCs (Figure 3E, Figure 3\u2014source data 1), analogously to what was reported in mice harboring targeted deletion of miR-451 (Patrick et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by hematology data shown in Figure 3E and comparison to published miR-451 knockout data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "36d9de91-ac9d-408b-a493-81fd9affe329",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C36",
+      "claim": "Flow cytometric analysis of bone marrow showed a threefold depletion in Pre-B cells as well as a significant decrease in immature and mature circulating B cells in R26T6B mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis of bone marrow showed a threefold depletion in Pre-B cells as well as a significant decrease in immature and mature circulating B cells in R26T6B mice. We also observed a reciprocal increase in the frequency of Pro-B cells in the bone marrow of these animals (Figure 3F, Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3F and Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "5c651217-e402-40ef-95f9-e9bbfff2fd78",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C37",
+      "claim": "The B cell differentiation block observed in R26T6B mice is reminiscent of the partial block in B cell differentiation observed upon deletion of the miR-17\u201392 cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are reminiscent of the partial block in B cell differentiation observed upon deletion of the miR-17\u201392 cluster (Ventura et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the observed phenotype to published data on miR-17-92 knockout mice.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "05543f0a-7b71-4475-bfa7-984c074e2596",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C38",
+      "claim": "The number of long-term repopulating hematopoietic stem cells (LT-HSC) was unaffected after 3 weeks of doxycycline exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Further characterization of hematopoietic stem cells (HSCs) showed that the number of long-term repopulating hematopoietic stem cells (LT-HSC) was unaffected after 3 weeks of doxycycline exposure. However, we observed a modest decrease in short-term repopulating HSCs (ST-HSCs) and a concomitant increase in multipotent progenitors (MPPs) relative to controls (Figure 3G, Figure 3\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 3G and Figure 3\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "9b194b00-dffb-4f76-a400-4854f8b974a9",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C39",
+      "claim": "In a subset of adult tissues miRISC function can be suppressed with minimal or no consequences on the ability of these tissues to maintain homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that in a subset of adult tissues miRISC function can be suppressed with minimal or no consequences on the ability of these tissues to maintain homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the homeostasis data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "89943622-62c0-4975-98ac-957927ed9af5",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C40",
+      "claim": "Ablation of miR-143/145 causes no apparent phenotype under homeostasis but severely impairs the ability of the mutant animals to respond to acute damage to the intestinal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ablation of miR-143/145 causes no apparent phenotype under homeostasis but severely impairs the ability of the mutant animals to respond to acute damage to the intestinal epithelium (Chivukula et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chivukula et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "beaa74ab-8281-4f7e-a7b7-2e8943b9460c",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C41",
+      "claim": "R26T6B mice lost body mass more rapidly than controls during DSS treatment and reached critical health conditions 7 days after DSS removal.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant and progressive loss of body mass was observed in both groups during DSS treatment and 2 days following DSS removal (Figure 4A). However, R26T6B mice lost body mass more rapidly than controls and reached critical health conditions 7 days after DSS removal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by body weight data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "7d969cdb-4034-4d5f-b6c5-e917e259a280",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C42",
+      "claim": "Control animals started to regain weight 3 days after DSS removal, reaching the initial body mass within 5 days after DSS removal.",
+      "claim_type": "EXPLICIT",
+      "source": "Three days after DSS removal, control animals started to regain weight, reaching the initial body mass within 5 days after DSS removal (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by body weight data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "9faef9ed-5736-42fb-b8db-598f423adbce",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C43",
+      "claim": "R26T6B mice failed to fully recover after DSS treatment and all reached a humane endpoint within 5 days after DSS removal from the diet.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, R26T6B mice failed to fully recover (Figure 4A), and all reached a humane endpoint within 5 days after DSS removal from the diet (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "c3a1e359-d4b5-41f5-92b8-eb5446b0a2a6",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C44",
+      "claim": "DSS treatment induced the disruption of the architecture of the epithelium and the appearance of ulcerative areas to a similar extent in both R26T6B and R26CTL control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological analysis confirmed that DSS treatment induced the disruption of the architecture of the epithelium and the appearance of ulcerative areas to a similar extent in both R26T6B and R26CTL control mice (Figure 4C, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 4C and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "4df920e8-fdaa-498b-9cc4-7db46d76eb85",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C45",
+      "claim": "5 days after DSS removal the integrity of the colonic epithelium of control mice was largely reestablished with the exception of isolated dysplastic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, although 5 days after DSS removal the integrity of the colonic epithelium of control mice was largely reestablished with the exception of isolated dysplastic areas (Figure 4\u2014figure supplement 2), extensive ulcerated regions persisted in the colon of R26T6B mice (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 4C and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "25928fad-6444-48b4-9bab-eb403dd85920",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C46",
+      "claim": "Extensive ulcerated regions persisted in the colon of R26T6B mice 5 days after DSS removal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, although 5 days after DSS removal the integrity of the colonic epithelium of control mice was largely reestablished with the exception of isolated dysplastic areas (Figure 4\u2014figure supplement 2), extensive ulcerated regions persisted in the colon of R26T6B mice (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "90759d61-027e-4f4b-b942-a24b60acdc5e",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C47",
+      "claim": "Dysplastic epithelium was present in R26T6B mice during and after DSS treatment, indicating that miRISC disruption does not completely abolish the potential of cells to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed the presence of dysplastic epithelium in R26T6B mice during and after DSS treatment, indicating that miRISC disruption does not completely abolish the potential of cells to proliferate, as also confirmed by Ki67 staining (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological and Ki67 staining data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "4be940aa-b4e5-4508-98bb-985582f39ce8",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C48",
+      "claim": "In situ hybridization analyses in the colon of DSS-treated R26T6B mice showed a significant upregulation of IGFBP5 mRNA in the mesenchymal compartment compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their findings, in situ hybridization analyses in the colon of DSS-treated R26T6B mice showed a significant upregulation of IGFBP5 mRNA in the mesenchymal compartment compared to controls (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in situ hybridization data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "9ed3ac7d-3b32-47a1-8154-c5cb8029f131",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C49",
+      "claim": "The extent of de-repression of IGFBP5 was comparable to that previously observed in miRNA-143/145 knockout mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of de-repression of IGFBP5 was comparable to that previously observed in miRNA-143/145 knockout mice (Chivukula et al., 2014), providing further evidence that T6B-mediated miRISC disassembly is an effective strategy to globally inhibit miRNA function in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the observed IGFBP5 upregulation to published data on miR-143/145 knockout mice.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "4c69e786-706e-49d1-88ba-893f9cac6175",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C50",
+      "claim": "miRNA-mediated gene regulation, while dispensable to maintain normal colon homeostasis, becomes critical for its regeneration following acute damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results support a model whereby miRNA-mediated gene regulation, while dispensable to maintain normal colon homeostasis, becomes critical for its regeneration following acute damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the DSS treatment data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "d3af35d9-7768-4c0b-b2c4-6c7f99dab27b",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C51",
+      "claim": "T6B expression prevented the compensatory increase in LT-HSC proliferation 7 days after 5FU-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis of the bone marrow 7 days after 5FU-injection showed that T6B expression prevented this compensatory increase in LT-HSC. We observed an identical phenotype when R26T6B and R26CTL mice were bled repeatedly over a 3-week period to induce LT-HSC to re-enter the cell cycle (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "99e5add2-2e08-4b78-8e17-1f8c936c4655",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C52",
+      "claim": "When injected with repetitive 5-FU doses, R26T6B mice showed significantly shorter survival compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, when injected with repetitive 5-FU doses, R26T6B mice showed significantly shorter survival compared to controls (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by survival data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "d5ff1ed0-d93a-465f-bd57-46e484ef5f29",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C53",
+      "claim": "Mice that were administered doxycycline in the first 4 weeks post-transplant had significantly fewer CD45.2+ peripheral blood mononuclear cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, mice that were administered doxycycline in the first 4 weeks post-transplant had significantly fewer CD45.2+ peripheral blood mononuclear cells (PBMCs; Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "cf293755-01ed-4d72-aef2-ae964e6a417d",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C54",
+      "claim": "The decrease in total CD45.2+ PBMCs and CD45.2+ myeloid cells was not reversed by doxycycline withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the decrease in total CD45.2+ PBMCs and CD45.2+ myeloid cells was not reversed by doxycycline withdrawal, which suggested that the T6B-expressing CD45.2+ HSCs might have been outcompeted by wild-type CD45.1+ HSCs in these recipients (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5D and inference about HSC competition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "12e68e67-c1f4-4b38-861a-f486d5fc1f8b",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C55",
+      "claim": "A significant reduction in CD45.2+ HSCs was observed only in the bone marrow of recipient animals that were fed a doxycycline-containing diet in the first 4 weeks post-transplant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we observed a significant reduction in CD45.2+ HSCs only in the bone marrow of recipient animals that were fed a doxycycline-containing diet in the first 4 weeks post-transplant (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by flow cytometry data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "cc9700ba-dafe-4147-ae6a-01582bfd1fe2",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C56",
+      "claim": "miRNA-mediated gene regulation is conditionally essential for the maintenance of HSCs during acute regeneration but is largely dispensable under homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results support a model where the miRNA-mediated gene regulation is conditionally essential for the maintenance of HSCs during acute regeneration but is largely dispensable under homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the HSC regeneration data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "0f88e140-8bb5-4140-ab98-3db74611d355",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C57",
+      "claim": "The pattern and intensity of T6B expression upon dox administration in CAGT6B mice and R26T6B mice were largely overlapping, except for the heart and the skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the pattern and intensity of T6B expression upon dox administration in CAGT6B mice and R26T6B mice were largely overlapping, except for the heart and the skeletal muscle, for which significant T6B expression was only observed in CAGT6B mice (Figure 6A, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 6A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "77bc9dc5-2e5b-4810-b013-c429a2e13268",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C58",
+      "claim": "RNAseq analyses confirmed inhibition of miRNA function in both heart and skeletal muscle of CAGT6B mice upon dox administration.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAseq analyses confirmed inhibition of miRNA function in both heart and skeletal muscle of CAGT6B mice upon dox administration (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNAseq data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "464c76ef-04ad-47d0-a563-e683808fc2d2",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C59",
+      "claim": "CAGT6B mice fed a doxycycline-containing diet showed a progressive decline in body mass and died or reached a humane endpoint within 4\u20136 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to R26T6B mice, CAGT6B mice fed a doxycycline-containing diet showed a progressive decline in body mass (Figure 6\u2014figure supplement 1) and died or reached a humane endpoint within 4\u20136 weeks (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by body weight and survival data shown in Figure 6C and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "1913db99-805a-4ffc-a338-11a5eec6abc1",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C60",
+      "claim": "Histopathological examination of heart and skeletal muscle showed severe alterations in both organs, including dilated cardiomyopathy and diffuse muscular degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, histopathological examination of heart and skeletal muscle showed severe alterations in both organs, including dilated cardiomyopathy and diffuse muscular degeneration (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histopathological data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "3876954e-456e-4d41-b154-22d027d5ee4b",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C61",
+      "claim": "All CAGT6B mice showed necro-inflammatory changes in the liver, variable alterations in the pancreas, and increased urea nitrogen and alanine aminotransferase levels in the serum.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice also showed necro-inflammatory changes in the liver, variable alterations in the pancreas, and increased urea nitrogen and alanine aminotransferase levels in the serum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on histopathological and serum chemistry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "08500a4d-aaf1-4935-8f89-766aa4cec093",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C62",
+      "claim": "The alterations in liver and pancreas are likely secondary to congestive heart failure and/or to severe muscle catabolism as they were not observed in R26T6B mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Such alterations are likely secondary to congestive heart failure and/or to severe muscle catabolism as they were not observed in R26T6B mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison between CAGT6B and R26T6B phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "8be43869-6493-441c-8432-2d33df68f034",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C63",
+      "claim": "CAGT6B mice showed vasculitis of pulmonary veins.",
+      "claim_type": "EXPLICIT",
+      "source": "Another phenotype that distinguished the R26T6B strain from the CAGT6B strain was the presence in the latter of vasculitis of pulmonary veins (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histopathological data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "66534ae1-1c55-4cab-ae29-2aa678dd0f94",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C64",
+      "claim": "The emergence of severe cardiac and skeletal muscle phenotypes points toward the existence of significant differences among adult tissues in their reliance on the miRNA pathway during homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The emergence of severe cardiac and skeletal muscle phenotypes, as opposed to the lack of obvious structural and functional abnormalities in most T6B-expressing tissues, points toward the existence of significant differences among adult tissues in their reliance on the miRNA pathway during homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the differential tissue responses to T6B expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "191a10a7-7f1d-4794-a793-82c196c25616",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C65",
+      "claim": "In most adult tissues, there is no essential role for miRNA-mediated gene repression in organ homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in most adult tissues, we do not find an essential role for miRNA-mediated gene repression in organ homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the homeostasis data across multiple tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "940f7eed-9c58-4c37-9be0-06a8ba5022dc",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C66",
+      "claim": "miRISC inactivation in adult mice results in acute tissue degeneration and death in the heart and the skeletal muscle even in the absence of tissue damage or exogenous stress.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception are the heart and the skeletal muscle, where miRISC inactivation in adult mice results in acute tissue degeneration and death even in the absence of tissue damage or exogenous stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the CAGT6B phenotype data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "ea9d2d6a-5787-4d8a-a303-bfb233d986e6",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C67",
+      "claim": "miRISC activity is dispensable for homeostasis in the intestine and in the hematopoietic system.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though miRISC function is not overtly required for the homeostasis of other tissues, we have investigated the consequences of miRNA inhibition in the intestine and in the hematopoietic system of adult mice under homeostatic conditions and during tissue regeneration. These are tissues that periodically respond to external/internal stresses. In both tissues, we have found that miRISC activity is dispensable for homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the homeostasis data for intestine and hematopoietic system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "ace60f2b-29b5-4ad3-982c-32fb4d2bee81",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C68",
+      "claim": "miRNA function becomes essential during tissue regeneration following acute injury in the intestine and hematopoietic system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, miRNA function becomes essential during tissue regeneration following acute injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the DSS and 5-FU treatment data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "32376ade-ac20-41e7-b624-e4ca7184ce95",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C69",
+      "claim": "A major role for miRNA-mediated gene repression is to support tissue adaptation to stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These results lend experimental support to the hypothesis that a major role for miRNA-mediated gene repression is to support tissue adaptation to stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the differential requirement for miRNAs during homeostasis versus stress.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "f1eb6ff5-e84c-4566-a0e2-1636ca499252",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C70",
+      "claim": "In previous studies where Dicer1 was conditionally ablated in the skeletal muscle of adult mice, muscle regeneration was impaired after acute injury, but no effect on muscle morphology or function was observed during homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies where Dicer1 was conditionally ablated in the skeletal muscle of adult mice, muscle regeneration was impaired after acute injury, but no effect on muscle morphology or function was observed during homeostasis (Oikawa et al., 2019a; Oikawa et al., 2019b; Vechetti et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies on Dicer1 conditional knockout in muscle.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "4dda4424-209d-4599-8b26-910ac55d011e",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C71",
+      "claim": "In the Dicer1 conditional knockout experiments miRNA levels were only partially reduced even weeks after Dicer1 ablation, likely reflecting the high stability of these short non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "An explanation for this difference is that in the Dicer1 conditional knockout experiments miRNA levels were only partially reduced even weeks after Dicer1 ablation, likely reflecting the high stability of these short non-coding RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of T6B and Dicer1 knockout approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "e4e41360-52b6-4656-bd1c-7df180653b40",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C72",
+      "claim": "The T6B mouse strain overcomes the major limitation of Dicer1 conditional knockout and allows the rapid and effective inhibition of miRNA activity independently from the half-life of these molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The T6B mouse strain we describe here overcomes this major limitation and allows the rapid and effective inhibition of miRNA activity independently from the half-life of these molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion comparing the T6B approach to Dicer1 knockout.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "2f9d7483-9f1b-4737-8c0d-8f3434e6b125",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C73",
+      "claim": "Expression of T6B in embryos of both sea urchin (Paracentrotus lividus) and zebrafish (Danio rerio) induces developmental defects and gene expression changes consistent with the essential role of the miRNA pathway during development.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that expression of T6B in embryos of both sea urchin (Paracentrotus lividus) and zebrafish (Danio rerio) induces developmental defects and gene expression changes consistent with the essential role of the miRNA pathway during development (Ambros and Horvitz, 1984; Chalfie et al., 1981; Lee et al., 1993; Reinhart et al., 2000; Song et al., 2012; Wienholds et al., 2003; Wightman et al., 1993, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 3 and citations to published studies on miRNA function in development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "e0cb1e31-65fc-4f39-9c43-d261f17796fe",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C74",
+      "claim": "T6B efficiently binds to AGO proteins from different non-mammalian organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that in vitro T6B efficiently binds to AGO proteins from different non-mammalian organisms (Hauptmann et al., 2015), these findings are not unexpected, yet they highlight the usefulness of the T6B system for dissecting the miRNA pathway in a variety of animal models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hauptmann et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "7309301e-da06-4572-bb6c-d566b171d980",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C75",
+      "claim": "Some residual miRISC activity may exist even in cells expressing high levels of the T6B transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "First, although our biochemical and computational analysis of cells and tissues expressing T6B indicates that the peptide can effectively impair miRISC function, we cannot exclude some residual miRISC activity even in cells expressing high levels of the T6B transgene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential limitations of the T6B approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "53020673-3537-47bb-91f7-418825cf78ad",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C76",
+      "claim": "The T6B mouse model can recapitulate phenotypes observed in mice harboring complete targeted deletion of miR-143/145 miRNAs in the intestine and of miR-17\u201392 and miR-451 in the hematopoietic system.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that we can recapitulate phenotypes observed in mice harboring complete targeted deletion of miR-143/145 miRNAs in the intestine (Chivukula et al., 2014) and of miR-17\u201392 and miR-451 in the hematopoietic system (Koralov et al., 2008; Patrick et al., 2010; Ventura et al., 2008) is reassuring in this respect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of T6B phenotypes to published knockout phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "4f3539be-09f5-456b-9ad6-014b21a39c9b",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C77",
+      "claim": "Conditional knockout of Dicer1 in the hematopoietic system has been reported to result in the rapid depletion of HSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, conditional knockout of Dicer1 in the hematopoietic system has been reported to result in the rapid depletion of HSCs (Guo et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guo et al., 2010b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "9ce70927-3ab6-4b71-a6c2-55929f5ebec6",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C78",
+      "claim": "Postnatal, conditional deletion of Dicer1 results in depletion of goblet cells, in addition to abnormal vacuolation and villous distortion in the small intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the lack of an overt phenotype in the intestine contrasts with previous reports showing that postnatal, conditional deletion of Dicer1 results in depletion of goblet cells (Biton et al., 2011; McKenna et al., 2010), in addition to abnormal vacuolation and villous distortion in the small intestine (Huang et al., 2012; McKenna et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies on Dicer1 conditional knockout in intestine.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "fdd53278-0e1b-4190-89ce-164292f2bae3",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C79",
+      "claim": "The differences between T6B and Dicer1 knockout phenotypes may reflect the well-characterized miRNA-independent functions of DICER.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot exclude that these differences are due to an incomplete inactivation of the miRNA pathway in T6B mice, but an alternative explanation is that they reflect the well-characterized miRNA-independent functions of DICER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential explanations for phenotypic differences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "888555ec-cacb-438b-a7ad-04d37157f9d9",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "claim_id": "C80",
+      "claim": "In adult animals miRNAs primarily provide for the ability to adaptively change gene expression in response to the physiological and pathological stresses that accompany metazoans' life.",
+      "claim_type": "EXPLICIT",
+      "source": "The body of data presented here suggests that in adult animals miRNAs primarily provide for the ability to adaptively change gene expression in response to the physiological and pathological stresses that accompany metazoans' life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7cf796e3-5175-44fb-82db-e418bf0a0125",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "T6B peptide disrupts miRISC assembly by competing with TNRC6 for AGO binding, causing selective de-repression of miRNA targets without affecting miRNA levels or AGO2's catalytic activity in mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 provide strong biochemical (SEC) and transcriptomic (RNAseq) evidence for miRISC disruption and target de-repression. Claim C23 demonstrates preserved AGO2 catalytic function through siRNA experiments. The mechanism is well-supported by prior literature (C15-C16) and comprehensive experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "1ecefbdc-16c2-4e79-adad-29d647a80b58",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Doxycycline-inducible T6B expression in R26T6B mice causes rapid, reversible miRISC disassembly and miRNA target de-repression in vivo in liver and colon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide strong evidence from multiple complementary approaches (western blot kinetics, SEC, RNAseq) demonstrating both the inducibility and reversibility of miRISC disruption in vivo. The data directly support the conclusion in C29.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "miRISC disruption in adult R26T6B mice causes developmental lethality but is largely tolerated during adult homeostasis, with only modest phenotypes in erythrocytes, B cell development, and Paneth cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C38 provide comprehensive phenotypic characterization across multiple tissues and cell types. The data consistently show minimal homeostatic defects in most tissues (C31-C32) with specific, modest phenotypes in hematopoietic lineages (C35-C38) that recapitulate known miRNA knockout phenotypes (C37), supporting the conclusion in C39.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "1cb7e578-7434-4a18-a17a-77166a1540c4",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "miRNA function is dispensable for colon homeostasis but becomes essential for regeneration after DSS-induced injury, with R26T6B mice showing impaired epithelial recovery and upregulation of IGFBP5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 provide strong evidence from body weight, survival, and histological analyses demonstrating impaired regeneration in T6B mice. Claims C48-C49 show mechanistic consistency with prior miR-143/145 knockout studies. The data comprehensively support the conditional requirement model in C50.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "39a93470-11ee-4ae4-80e2-a86e0105e459",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "miRNA function is dispensable for HSC homeostasis but becomes essential during regeneration after 5-FU treatment or bone marrow transplantation, with T6B expression impairing HSC expansion and competitive fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 provide strong evidence from multiple complementary stress models (5-FU, bleeding, transplantation) with flow cytometry data showing impaired HSC regeneration. The temporal specificity of the transplantation experiment (C53-C55) particularly supports the conditional requirement model in C56.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "879fe376-2e6c-427f-a606-90aec1df5ab0",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "miRNA function is constitutively required in heart and skeletal muscle during homeostasis, with CAGT6B mice showing rapid lethality, dilated cardiomyopathy, and muscle degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 establish T6B expression in heart and muscle with RNAseq confirmation of miRNA inhibition. Claims C59-C63 provide strong histopathological and survival data demonstrating severe tissue-specific phenotypes. The data clearly support the conclusion of constitutive miRNA requirement in these tissues (C64, C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "941caf12-7ab0-4d2f-89ea-0413f87098d5",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In adult animals, miRNA-mediated gene repression is largely dispensable for homeostasis in most tissues but becomes essential during stress and regeneration, supporting a primary role in adaptive responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C65, C67-C69, C80) are well-supported by the comprehensive experimental data from multiple tissue systems showing differential requirements for miRNAs during homeostasis versus stress. The conclusion represents a valid synthesis of the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "80a17d84-ff64-4bd0-8143-40a00e19273a",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The T6B approach overcomes limitations of Dicer1 conditional knockout by enabling rapid miRNA inhibition independent of miRNA half-life, unlike Dicer1 deletion which shows incomplete miRNA depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately cite prior Dicer1 knockout studies showing incomplete miRNA depletion. Claim C72 represents a valid conclusion based on the demonstrated rapid and complete miRISC disruption shown in earlier results. The comparison is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "bb8bf698-6ee8-4667-b10d-985930f3614f",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "T6B phenotypes differ from Dicer1 knockout phenotypes in some tissues, potentially reflecting miRNA-independent functions of DICER rather than incomplete T6B-mediated miRNA inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 accurately cite prior Dicer1 knockout phenotypes. However, claim C79 presents speculation about the cause of phenotypic differences without definitive experimental evidence to distinguish between incomplete miRNA inhibition versus DICER-independent functions. Additional experiments would be needed to resolve this uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "8ec52b1c-fd2a-4aec-a307-64500222d2a5",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "T6B expression in sea urchin and zebrafish embryos causes developmental defects consistent with miRNA pathway disruption, demonstrating cross-species applicability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 provides experimental evidence from two non-mammalian species showing developmental phenotypes consistent with miRNA loss. Claim C74 cites prior work showing T6B binds AGO from diverse organisms. Together these support the cross-species utility of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    },
+    {
+      "id": "575b1626-e51e-446d-8dc2-eaab3f4ce39c",
+      "content_id": "0072e075-b661-41ff-8ba0-60c14088b3cf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite potential residual miRISC activity, T6B mice recapitulate phenotypes from complete miRNA knockouts (miR-143/145, miR-17-92, miR-451), validating the effectiveness of the approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 acknowledges a limitation but claim C76 provides strong validation through phenotypic concordance with multiple established miRNA knockout models. The recapitulation of known phenotypes provides reassurance about the completeness of miRNA inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:07:48.464055Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c6fb88e5-d8e7-49e0-9cb4-00b58707f5db",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "db6bd6bb-08c2-49ca-a888-ecc34607fa0a",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "04d533da-6583-46ba-9d33-f08501b86821",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "6e3effe3-0a96-4166-9924-1c993acdb4da",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "66325005-094d-4a41-99d9-2c79caf7585e",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "982d2496-4de1-46c9-b134-a7a55b7c83c1",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "f79b8145-3ab4-4332-8c99-19c916d13be3",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "995edf34-369d-4358-a276-45a901a691f7",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "de02eefd-8ed6-4e2f-9e2d-f7aa0701b4ec",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "f8869097-8928-4000-b121-be87fc261db8",
+      "result_id": "7cf796e3-5175-44fb-82db-e418bf0a0125"
+    },
+    {
+      "claim_id": "e2dc065d-8911-497b-b6d6-8887d0661615",
+      "result_id": "1ecefbdc-16c2-4e79-adad-29d647a80b58"
+    },
+    {
+      "claim_id": "e7cb83dc-b273-461a-9424-3219f1dab2cf",
+      "result_id": "1ecefbdc-16c2-4e79-adad-29d647a80b58"
+    },
+    {
+      "claim_id": "5c32afa8-69f4-4046-8fb9-cfddb5f6eccf",
+      "result_id": "1ecefbdc-16c2-4e79-adad-29d647a80b58"
+    },
+    {
+      "claim_id": "45f868d2-b4a5-44ef-889c-196dcc0528a1",
+      "result_id": "1ecefbdc-16c2-4e79-adad-29d647a80b58"
+    },
+    {
+      "claim_id": "5e2288bf-c254-4a49-a6f2-fab0ffb2320e",
+      "result_id": "1ecefbdc-16c2-4e79-adad-29d647a80b58"
+    },
+    {
+      "claim_id": "b46d660d-9974-4a81-9cdd-4209654dc810",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "8a3917c4-354d-40b7-9059-a0969cab0cdf",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "7a6c133e-ec96-4992-bc00-d9c641a74992",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "c336b693-ac88-498a-943b-eeb10c1594b9",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "de2d2fda-0652-4131-8a9c-283ba9b60df0",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "a90489a4-50af-4b4c-9d04-0dac26f4e908",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "36d9de91-ac9d-408b-a493-81fd9affe329",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "5c651217-e402-40ef-95f9-e9bbfff2fd78",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "05543f0a-7b71-4475-bfa7-984c074e2596",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "9b194b00-dffb-4f76-a400-4854f8b974a9",
+      "result_id": "45dd44f3-c1e4-4503-a2e6-e87f660a7eb2"
+    },
+    {
+      "claim_id": "89943622-62c0-4975-98ac-957927ed9af5",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "beaa74ab-8281-4f7e-a7b7-2e8943b9460c",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "7d969cdb-4034-4d5f-b6c5-e917e259a280",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "9faef9ed-5736-42fb-b8db-598f423adbce",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "c3a1e359-d4b5-41f5-92b8-eb5446b0a2a6",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "4df920e8-fdaa-498b-9cc4-7db46d76eb85",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "25928fad-6444-48b4-9bab-eb403dd85920",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "90759d61-027e-4f4b-b942-a24b60acdc5e",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "4be940aa-b4e5-4508-98bb-985582f39ce8",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "9ed3ac7d-3b32-47a1-8154-c5cb8029f131",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "4c69e786-706e-49d1-88ba-893f9cac6175",
+      "result_id": "1cb7e578-7434-4a18-a17a-77166a1540c4"
+    },
+    {
+      "claim_id": "d3af35d9-7768-4c0b-b2c4-6c7f99dab27b",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "99e5add2-2e08-4b78-8e17-1f8c936c4655",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "d5ff1ed0-d93a-465f-bd57-46e484ef5f29",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "cf293755-01ed-4d72-aef2-ae964e6a417d",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "12e68e67-c1f4-4b38-861a-f486d5fc1f8b",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "cc9700ba-dafe-4147-ae6a-01582bfd1fe2",
+      "result_id": "39a93470-11ee-4ae4-80e2-a86e0105e459"
+    },
+    {
+      "claim_id": "0f88e140-8bb5-4140-ab98-3db74611d355",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "77bc9dc5-2e5b-4810-b013-c429a2e13268",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "464c76ef-04ad-47d0-a563-e683808fc2d2",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "1913db99-805a-4ffc-a338-11a5eec6abc1",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "3876954e-456e-4d41-b154-22d027d5ee4b",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "08500a4d-aaf1-4935-8f89-766aa4cec093",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "8be43869-6493-441c-8432-2d33df68f034",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "66534ae1-1c55-4cab-ae29-2aa678dd0f94",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "940f7eed-9c58-4c37-9be0-06a8ba5022dc",
+      "result_id": "879fe376-2e6c-427f-a606-90aec1df5ab0"
+    },
+    {
+      "claim_id": "191a10a7-7f1d-4794-a793-82c196c25616",
+      "result_id": "941caf12-7ab0-4d2f-89ea-0413f87098d5"
+    },
+    {
+      "claim_id": "ea9d2d6a-5787-4d8a-a303-bfb233d986e6",
+      "result_id": "941caf12-7ab0-4d2f-89ea-0413f87098d5"
+    },
+    {
+      "claim_id": "ace60f2b-29b5-4ad3-982c-32fb4d2bee81",
+      "result_id": "941caf12-7ab0-4d2f-89ea-0413f87098d5"
+    },
+    {
+      "claim_id": "32376ade-ac20-41e7-b624-e4ca7184ce95",
+      "result_id": "941caf12-7ab0-4d2f-89ea-0413f87098d5"
+    },
+    {
+      "claim_id": "888555ec-cacb-438b-a7ad-04d37157f9d9",
+      "result_id": "941caf12-7ab0-4d2f-89ea-0413f87098d5"
+    },
+    {
+      "claim_id": "f1eb6ff5-e84c-4566-a0e2-1636ca499252",
+      "result_id": "80a17d84-ff64-4bd0-8143-40a00e19273a"
+    },
+    {
+      "claim_id": "4dda4424-209d-4599-8b26-910ac55d011e",
+      "result_id": "80a17d84-ff64-4bd0-8143-40a00e19273a"
+    },
+    {
+      "claim_id": "e4e41360-52b6-4656-bd1c-7df180653b40",
+      "result_id": "80a17d84-ff64-4bd0-8143-40a00e19273a"
+    },
+    {
+      "claim_id": "4f3539be-09f5-456b-9ad6-014b21a39c9b",
+      "result_id": "bb8bf698-6ee8-4667-b10d-985930f3614f"
+    },
+    {
+      "claim_id": "9ce70927-3ab6-4b71-a6c2-55929f5ebec6",
+      "result_id": "bb8bf698-6ee8-4667-b10d-985930f3614f"
+    },
+    {
+      "claim_id": "fdd53278-0e1b-4190-89ce-164292f2bae3",
+      "result_id": "bb8bf698-6ee8-4667-b10d-985930f3614f"
+    },
+    {
+      "claim_id": "2f9d7483-9f1b-4737-8c0d-8f3434e6b125",
+      "result_id": "8ec52b1c-fd2a-4aec-a307-64500222d2a5"
+    },
+    {
+      "claim_id": "e0cb1e31-65fc-4f39-9c43-d261f17796fe",
+      "result_id": "8ec52b1c-fd2a-4aec-a307-64500222d2a5"
+    },
+    {
+      "claim_id": "7309301e-da06-4572-bb6c-d566b171d980",
+      "result_id": "575b1626-e51e-446d-8dc2-eaab3f4ce39c"
+    },
+    {
+      "claim_id": "53020673-3537-47bb-91f7-418825cf78ad",
+      "result_id": "575b1626-e51e-446d-8dc2-eaab3f4ce39c"
+    }
+  ],
+  "comparisons": []
+}

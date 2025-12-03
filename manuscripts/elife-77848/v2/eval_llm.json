@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors generated a Stag2 floxed mouse line by targeting exon 8 on the X chromosome. Complete knockout (Stag2null) embryos showed severe developmental defects and necrosis by E11.5, demonstrating that Stag2 is required for embryonic development. Combined with the requirement for Stag1, this establishes that Stag1 and Stag2 have nonredundant developmental functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide direct experimental evidence from mouse genetics showing Stag2null embryos die early (C32), supported by Figure 1\u2014figure supplement 1B. The conclusion that Stag2 is required for development (C33) is well-supported and consistent with cited literature (C33). The inference of nonredundancy (C34) logically follows from both Stag1 and Stag2 being individually essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nervous system-specific deletion of Stag2 (Stag2f/y;NesCre mice) causes growth retardation, premature death (>50% by 3 weeks, remainder by 4 months), neurological defects including limb clasping and tremors, hydrocephaly, and reduced plasma IGF-1 levels, while feeding and drinking behaviors remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 are supported by multiple experimental observations including survival curves (Figure 1G), body weight measurements (Figure 1F), behavioral assessments (Figure 1K, Video 1), and IGF-1 measurements (Figure 1J). The phenotypic characterization is comprehensive with appropriate controls (Stag2f/y mice). The inference that Stag2 deficiency causes these phenotypes (C45) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNA-seq analysis of Stag2 cKO brains at P21 revealed 105 downregulated and 62 upregulated genes (>2-fold change), with 44 of the downregulated genes enriched in myelin. Cholesterol biosynthesis pathways were the most affected canonical pathways, confirmed by reduced cholesterol biosynthesis precursors in Stag2 cKO brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by RNA-seq data (Figure 2A-D), RT-qPCR validation (Figure 2B), pathway analysis (Figure 2D), and mass spectrometry confirmation (Figure 2\u2014figure supplement 1F). The analysis includes appropriate biological replicates (n=4 pairs) and statistical validation. The histological observations (C46-C47) provide important context showing no gross anatomical defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Stag2 cKO mice exhibit hypomyelination as evidenced by reduced luxol fast blue staining, decreased MBP and PLP1 immunostaining in cortex and cerebellum, and fewer myelin-wrapped axons in optic nerves at P18-P21. The timing of premature death correlates with the period of active myelination (3 weeks postnatal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by multiple complementary techniques: LFB staining (Figure 3A), immunohistochemistry with quantification (Figure 3B-F), and transmission electron microscopy (Figure 3G). The data include appropriate statistical analysis and biological replicates. The temporal correlation between myelination timing and lethality (C62) is a reasonable inference, though causality is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Single-cell RNA-seq analysis of P13 forebrains revealed similar cellular compositions between genotypes with all cell clusters present. However, trajectory analysis showed delayed oligodendrocyte maturation in Stag2 cKO brains, with more cells retained at undifferentiated stages and specific repression of myelination genes (e.g., Mal) in mature oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by scRNA-seq data with appropriate biological replicates (n=2 per genotype). The trajectory analysis (Figure 4\u2014figure supplement 2) and cell-type-specific gene expression analysis (Figure 4D) provide strong evidence for delayed maturation. The inferences about STAG2 deficiency effects (C74-C75) are well-supported by the quantitative data, though the mechanistic basis remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Bulk RNA-seq of isolated primary oligodendrocytes revealed 271 downregulated and 292 upregulated genes (>2-fold) in Stag2-deleted cells. Downregulated genes were highly expressed in WT cells and enriched for cholesterol biosynthesis and oligodendrocyte differentiation pathways, while upregulated genes had low baseline expression and were enriched for cilium organization pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by bulk RNA-seq data from isolated primary OLs (Figure 4F-H) with appropriate pathway analysis (Figure 4G, Figure 4\u2014figure supplement 5-6). The observation that downregulated genes are highly expressed while upregulated genes have low expression (C80-C81) is an important finding supported by Figure 4\u2014figure supplement 4B-D. The inference about defective cholesterol biosynthesis and oligodendrocyte differentiation (C85) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ChIP-seq analysis showed that Stag2 loss did not affect H3K27ac enrichment at TSSs globally. STAG2 was enriched at TSSs of stable and downregulated genes (77% of 271 downregulated genes had STAG2 peaks within TSS\u00b12kb), including cholesterol biosynthesis and myelination genes, but was less enriched at upregulated genes (40%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by ChIP-seq data (Figure 5A-D) showing STAG2 binding patterns and H3K27ac enrichment. The quantitative analysis of STAG2 occupancy at different gene categories is rigorous. The speculation that upregulated genes are indirectly affected (C92) is reasonable given the lower STAG2 binding, though alternative explanations exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Hi-C analysis revealed minimal compartment switching and preserved TAD structure in Stag2-deleted oligodendrocytes. While genes in the A compartment were preferentially downregulated and genes in the B compartment were upregulated, compartment switching itself did not correlate with gene expression changes. STAG1-cohesin appears to compensate for STAG2-cohesin loss at megabase scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 are supported by comprehensive Hi-C analysis (Figure 6) with biological replicates. The observation of minimal compartment switching (C93-C94) and preserved TADs (C100) is well-documented. The lack of correlation between compartment switching and gene expression changes (C97-C98) is an important negative result. The inference about STAG1 compensation (C101) is reasonable but remains speculative without direct STAG1 depletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C117"
+    ],
+    "result": "Stag2 deletion reduced the number of chromosome loops across most genomic distances, with STAG2-dependent loops being shorter than STAG1-mediated loops. Promoter-anchored loops at downregulated genes were preferentially reduced, with 85% of 162 downregulated genes with reduced P-loops having STAG2 peaks at their promoters. Loop strength was not reduced, only loop number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C113 and C117 are supported by detailed Hi-C loop analysis (Figure 7) with reproducible results across replicates. The quantitative analysis of loop numbers, lengths, and strengths is rigorous. The integration with ChIP-seq data (C112) strengthens the conclusions. The distinction between loop number and strength (C117) is an important mechanistic insight supported by pile-up analysis (Figure 7E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Pile-up analysis of Hi-C maps revealed asymmetric promoter-anchored stripes extending in the direction of transcription at downregulated genes, consistent with one-sided loop extrusion from promoter to gene body. These stripes persisted in Stag2-deleted cells, suggesting STAG1-cohesin can mediate their formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 and C146-C148 are supported by Hi-C pile-up analysis (Figure 7F). The observation of directional stripes (C119) is clear in the data. The interpretation as one-sided loop extrusion (C120, C147) is a reasonable inference based on the pattern, though direct evidence for the mechanism is lacking. The persistence of stripes in Stag2-deleted cells (C121, C148) supports STAG1 compensation, though this remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C145"
+    ],
+    "result": "The authors conclude that STAG2-cohesin generates promoter-anchored loops at myelination-promoting genes to facilitate their transcription, based on the correlation between reduced promoter-anchored loops and reduced gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C145 represent the central mechanistic conclusion integrating Hi-C and RNA-seq data. The correlation between reduced P-loops and gene downregulation is well-documented (C9, C108-C111). However, the causal relationship is inferred rather than directly demonstrated. The conclusion is reasonable given the data, but alternative mechanisms (e.g., effects on transcription elongation, R-loop resolution) cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C123",
+      "C129",
+      "C130",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "The study implicates defective myelination as a contributing factor to cohesinopathy and establishes oligodendrocytes as a relevant cell type for studying cohesin-mediated transcription regulation. The authors suggest that hypomyelination is a major underlying cause for the Stag2 cKO phenotypes and that myelination defects may occur in human cohesinopathy patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C12 and C123 represent important translational conclusions. While the mouse data strongly support a role for myelination defects in the Stag2 cKO phenotype (C129-C130), the extrapolation to human cohesinopathy (C137-C138) is more speculative. The cited reports of myelination defects in CdLS patients (C138) provide some support, but STAG2 mutations are rare and hypomorphic in human disease (C134). The therapeutic speculation (C140) is premature without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C151"
+    ],
+    "result": "Stag1 transcripts are less abundant than Stag2 in the oligodendrocyte lineage (except cycling OPCs), which may make mature oligodendrocytes more dependent on Stag2 for function and explain why oligodendrocytes are more severely affected by Stag2 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by scRNA-seq data (Figure 4\u2014figure supplement 3B-C) showing differential expression patterns. However, the speculation about functional dependence (C77, C151) is not directly tested. While the correlation between low Stag1 expression and oligodendrocyte sensitivity is suggestive, alternative explanations (discussed in C152-C157) are equally plausible and not distinguished by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors propose three non-mutually exclusive models for how STAG2-mediated chromosome looping facilitates transcription: (1) promoter-enhancer loops bring enhancer factors to the promoter; (2) loop extrusion promotes transcription elongation by regulating R-loop formation and pre-mRNA processing; (3) promoter-terminator loops recycle RNA polymerase II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-C163 represent mechanistic models proposed in the Discussion. While these models are plausible and consistent with the data, they are largely speculative. The R-loop interaction data (C160-C161) from cited literature provides some support for model 2, but direct evidence for any of these mechanisms in oligodendrocytes is lacking. These represent hypotheses for future testing rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In situ hybridization analysis showed that both Stag1 and Stag2 are expressed at high levels in hippocampus, medial habenula, neocortex, and cerebellum granular layer, with Stag2 also detected in subventricular zone, thalamus, fiber tracts, midbrain, and hindbrain, indicating ubiquitous brain expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by in situ hybridization data (Figure 3\u2014figure supplement 1B). The expression patterns are clearly documented, and the conclusion of ubiquitous expression (C65) is reasonable. This provides important context for understanding the cell-type-specific effects of Stag2 deletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The Introduction provides established background on cohesin function, composition, and disease relevance, including its role in chromosome folding, loop extrusion, TAD formation, transcription regulation, and mutations causing cohesinopathy and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 represent background knowledge supported by appropriate citations to the literature. These establish the scientific context for the study and are generally well-accepted in the field. The claims about Stag1 and Stag2 nonredundancy (C28-C29) are supported by cited literature and the authors' own data.",
+    "result_type": "MINOR"
+  }
+]

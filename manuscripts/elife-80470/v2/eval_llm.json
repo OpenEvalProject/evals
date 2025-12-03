@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C19",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study used a 185-odorant panel covering diverse chemical space, with concentrations systematically adjusted across a >1000-fold range (sub-picomolar to nanomolar) to identify high-sensitivity odorant-glomerulus interactions. Final concentrations ranged from 4\u00d710\u207b\u00b9\u2074 to 4\u00d710\u207b\u2079 M (median: 1\u00d710\u207b\u00b9\u2070 M), with concentrations identical across animals for 145/185 odorants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C19, C143-C145 provide comprehensive methodological details about odorant panel design, concentration selection, and preparation procedures. The systematic approach is well-documented with specific numerical data, figures (Figure 1A, 1C), and supplementary files. The concentration range and consistency across animals are clearly reported with appropriate precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "163 of 185 odorants (88%) evoked responses in one or more dorsal glomeruli, with response amplitudes lognormally distributed (mean ln(\u0394F/F) = 1.48). The cumulative number of activated glomeruli ranged from 103-142 per OB (median: 126), estimated to represent 75-90% of glomeruli in the imaged area based on comparison with recent OR mapping studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 are well-supported by specific numerical data, statistical testing (Kolmogorov-Smirnov test, ANOVA), and figures (Figure 1B, Figure 1\u2014figure supplement 1). The estimate of 75-90% coverage is reasonably justified by comparison with Zhu et al., 2021 data, accounting for detection limitations. The consistency across OBs is demonstrated with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Maximal glomerular sensitivity had a median concentration of 2\u00d710\u207b\u00b9\u00b9 M (0.5 ppb), substantially lower (4-5 orders of magnitude) than concentrations used in earlier studies. These concentrations are comparable to 'ultrasensitive' TAAR OSN sensitivities and indicate that high odorant sensitivity is a general feature of OSN inputs to glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C77-C80 are supported by specific concentration data (Figure 1C), systematic comparison with prior studies (Figure 1\u2014figure supplement 2), and appropriate citations (Zhang et al., 2013; Oka et al., 2006; Tan et al., 2010). The conclusion about general high sensitivity is well-justified by the comprehensive dataset across 185 odorants and multiple glomeruli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Odorant responses were exceptionally sparse, with each odorant activating a median of 2 glomeruli (quartiles: 1-3). Population sparseness was exceptionally high (median SP: 0.994), and lifetime sparseness was extremely high (median SL: 0.995), with 25-30% of glomeruli responding to only one odorant and only 19% responding to more than five odorants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are strongly supported by specific numerical data, appropriate sparseness metrics (SP and SL), statistical testing (paired Wilcoxon Signed-Ranks test), and figures (Figure 1\u2014figure supplement 3A-C). The definitions of sparseness measures are properly cited (Davison and Katz, 2007; Schlief and Wilson, 2007). The data consistently demonstrate narrow tuning across the glomerular population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Sparse responses and narrow tuning were not artifacts of low signal-to-noise ratios. 75% of glomeruli responding to multiple odorants had dynamic ranges >2, 50% had ranges >4, and 20% had ranges >10. Lifetime sparseness values were consistently high and independent of both dynamic range and maximum response amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are well-supported by specific numerical data on dynamic ranges and analysis showing independence of SL from dynamic range and response amplitude (Figure 1\u2014figure supplement 3D, E). The argument against the 'iceberg effect' is logically sound and empirically supported by the observation that response amplitudes were many times greater than baseline variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C75"
+    ],
+    "result": "At tenfold higher concentrations (10x), glomerular tuning remained narrow, with 12% of glomeruli activated by only one odorant and median SL of 0.983. This demonstrates that narrow OSN tuning is not restricted to perithreshold concentrations and is a robust feature of odorant representations in low-concentration regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C75 are supported by two-photon imaging data at 10x concentrations (Figure 1G, H, Figure 1\u2014figure supplement 4) with specific numerical results. The conclusion about robustness is justified by the persistence of narrow tuning across a tenfold concentration range. However, only two preparations were used for the 10x concentration experiments, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Glomerulus-odorant response matrices appeared high-dimensional, with the first PC accounting for only 4-7% of variance and 54-67 PCs (44-55% of possible PCs) required to explain 90% of variance. Effective dimensionality (ED: 48.6\u00b14.4) was substantially higher than reported for higher-concentration studies (ED: 13.5 in Pashkovski et al., 2020; 21 PCs for 90% variance in Chae et al., 2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by PCA analysis (Figure 1I, J) with specific numerical results and appropriate comparisons to prior studies (Chae et al., 2019; Pashkovski et al., 2020; Litwin-Kumar et al., 2017). The high dimensionality is consistently demonstrated across 8 OBs. The comparison accounts for differences in dataset size by expressing variance as a fraction of possible PCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Comparison with a publicly available dataset (Ma et al., 2012) using ~1000x higher concentrations (median: 4.3 ppm vs. 3.4 ppb) showed that higher concentrations activated substantially more glomeruli per odorant (median: 5 vs. 1.75), had significantly lower SL (median: 0.9 vs. 1.0), and lower dimensionality (ED: 5.3 vs. 13.2\u00b11.1), confirming that narrow tuning and higher dimensionality directly reflect the lower concentration regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are well-supported by systematic comparison with Ma et al., 2012 dataset using 31 common odorants, with specific numerical data, statistical testing (paired Wilcoxon Signed Ranks, Mann-Whitney U test), and reference to Supplementary file 3. The comparison effectively controls for odorant panel composition by using the same odorants, strengthening the conclusion that concentration is the key variable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C115",
+      "C116",
+      "C119",
+      "C120"
+    ],
+    "result": "The narrow tuning and high sensitivity enabled functional identification of glomeruli using single diagnostic odorants at low concentrations. 41 odorants from the panel could serve as diagnostic probes to identify 26 unique glomeruli (representing ~15% of glomeruli on the imaged surface), with 19 odorants showing 100% match between strongest-activated and most-correlated glomeruli (median r: 0.95\u00b10.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62, C65, C115-C116, C119-C120 are strongly supported by systematic screening criteria, correlation analysis, specific numerical data, and figures (Figure 2A-C, Table 1, Supplementary file 4). The spatial consistency is demonstrated with appropriate jitter analysis consistent with OR-defined projections (Zapiec and Mombaerts, 2015). The 15% estimate is reasonably derived from 26/~160 glomeruli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C133"
+    ],
+    "result": "Diagnostic odorant-concentration pairs evoked singular activation of the same functionally-identified glomeruli in awake, head-fixed mice at the same low concentrations, suggesting that OSNs are similarly sensitive and selective during natural odorant sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C133 are supported by imaging data from awake mice (Figure 2\u2014figure supplement 1) showing consistent responses at the same concentrations. However, the data are from a limited number of glomeruli and mice (3 awake mice), and the conclusion about 'natural odorant sampling' is somewhat speculative since head-fixed conditions with artificial odorant delivery may not fully replicate natural sampling behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Despite overall sparse representation, systematic co-tuning relationships were found among glomeruli sensitive to their highest-sensitivity odorants, largely reflecting straightforward structural features. The most extensive co-tuning was observed among glomeruli sensitive to amines, acids/esters/aldehydes, and pyrazines/thiazoles, likely corresponding to TAAR, class I OR, and potentially a distinct class II OR subfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C103-C105 are supported by co-tuning analysis (Figure 4, Figure 5) and network visualization showing clear structural relationships. The inference about TAAR and class I ORs is reasonable based on established knowledge. However, the speculation about pyrazine/thiazole-tuned glomeruli representing a distinct OR subfamily requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Models incorporating relatively simple structural features (SMARTS42 and MACCS fingerprints) were more effective at predicting glomerular co-tuning than models using larger sets of computationally derived physicochemical properties. SMARTS42 had significantly higher performance metrics than all other descriptor sets including optimized Dragon32 (p=4.0\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are well-supported by systematic comparison of multiple descriptor sets using ROC-derived performance metrics (Figure 3D-F), with appropriate statistical testing (Kruskal-Wallis test, post-hoc Dunn tests). The SMARTS42 set is clearly defined (Table 2) with 42 interpretable structural features. The conclusion is strengthened by testing across 694 co-tuned glomeruli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Spatial clustering of glomeruli with high sensitivities to structurally similar odorants was common across nearly all tested structural classes. However, clustering arose from proximal positioning of glomeruli tuned to similar but distinct odorants rather than overlapping tuning, and was overlapping/interdigitated rather than discrete (except for carboxylic acids), consistent with a functional mosaic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 are supported by point-pattern analysis (Ripley's K) showing significant clustering in 7/9 testable classes (Figure 6A, B), with appropriate statistical testing (p<0.01, Monte Carlo simulation). The mosaic organization is consistent with prior studies (Soucy et al., 2009; Chae et al., 2019). The distinction from prior discrete clustering studies (Takahashi et al., 2004; Johnson and Leon, 2007) is attributed to concentration differences, which is plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C76"
+    ],
+    "result": "Individual glomeruli are sensitively and selectively tuned to a very narrow portion of odorant chemical space, leading to sparse and apparently high-dimensional representations in low-concentration regimes. The small amount of structure in this coding regime was well-represented by simple descriptions of chemical space derived from structural features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C76 represent the main conclusions of the study, synthesizing results from multiple analyses (sparseness, dimensionality, chemical descriptor modeling, spatial organization). These conclusions are well-supported by the comprehensive dataset and multiple converging lines of evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The current findings of narrow tuning differ from most prior studies reporting a mix of broadly- and narrowly-tuned ORs/OSNs. The likely explanation is the much lower odorant concentrations used here (several orders of magnitude lower than earlier in vivo studies and 4-6 orders lower than in vitro studies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 appropriately contextualize the current findings relative to prior literature with extensive citations. The explanation based on concentration differences is well-supported by the systematic comparison with Ma et al., 2012 (C48-C53) and Figure 1\u2014figure supplement 2. However, other factors (reporter sensitivity, odorant panel size) are also acknowledged as potential contributors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The concentrations used (median: 1\u00d710\u207b\u00b9\u2070 M, 2.4 ppb) were comparable to or higher than psychophysical detection thresholds in mice and to ambient concentrations of volatile organic compounds in natural environments (0.1-10 ppb), suggesting these concentrations reflect a common operating regime of the mouse olfactory system during natural behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C138-C140 are supported by appropriate citations to behavioral studies (Dewan et al., 2018; Cichy et al., 2019; Williams and Dewan, 2020) and environmental measurements (Petersson, 1988; Jansen et al., 2009; Bach et al., 2020; Ruuskanen et al., 2011; M\u00e4ki et al., 2019; Dehimeche et al., 2021). The inference about ecological relevance is reasonable, though natural odor environments are complex and variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The narrow tuning of OSNs has implications for olfactory information processing. Canonical models relying on reduced dimensionality may be less applicable in low-concentration regimes. Instead, activation of particular glomeruli may directly encode specific odorants or small groups with shared features. Natural odors may elicit combinatorial patterns reflecting component composition, and narrowly-tuned glomeruli may facilitate recognition at trace concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C93 present speculative implications and hypotheses about information processing, supported by citations to relevant models (Chae et al., 2019; Pashkovski et al., 2020) and prior observations (Davison and Katz, 2007; Lin et al., 2006; Dunkel et al., 2014). While the speculations are reasonable given the data, they require direct experimental testing of neural coding and behavior in low-concentration regimes to be confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The heterogeneity of tuning properties implies that the selectivity of different ORs may be determined by different rule sets. Relating OR ligand binding to solved protein structures will be important for understanding the molecular basis of this heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 present reasonable inferences from the observed heterogeneity in co-tuning relationships, with appropriate citation to recent structural work (Del M\u00e1rmol et al., 2021). However, these remain speculative hypotheses requiring structural and functional studies of mammalian ORs to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The functionally-identified glomeruli exceed the number of OR-defined glomeruli previously characterized and provide a platform for future studies. Potential applications include probing response spectra with larger panels, examining response dynamics with faster reporters, investigating circuit transformations, and facilitating OR deorphanization through alignment with spatial transcriptomics maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C129 appropriately discuss prior work and future applications with relevant citations. The comparison showing 26 functionally-identified glomeruli exceeds prior characterizations (Peterlin et al., 2014; Shirasu et al., 2014; Saito et al., 2017) is supported. The proposed applications are reasonable extensions, though they represent future work rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C135"
+    ],
+    "result": "While absolute sensitivities may be dynamically modulated by experience and sampling behavior (supported by citations to prior studies), the authors predict that response spectra remain consistent and narrowly tuned across ethologically relevant contexts. The current datasets provide a platform for testing this prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C135 acknowledge potential plasticity with appropriate citations (Verhagen et al., 2007; Eiting and Wachowiak, 2020; Jordan et al., 2018; Tsukahara et al., 2021; Jones et al., 2008; Kass et al., 2013; Bhattarai et al., 2020) but predict consistency based on limited awake mouse data. The prediction requires more extensive testing across behavioral contexts and experience-dependent manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C146"
+    ],
+    "result": "Experiments used compound heterozygous crosses of OMP-IRES-tTA and tetO-GCaMP6s mice aged 2-6 months, with procedures approved by IACUC. The OMP-IRES-tTA expression strategy did not appear to affect OSN targeting to glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142, C146 provide essential methodological information with appropriate citations (Yu et al., 2004; Wekselblatt et al., 2016; Ma et al., 2014; Inagaki et al., 2020; Zhu et al., 2021). The statement about not affecting targeting is supported by prior reports and recent mapping data, though this was not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C27",
+      "C42",
+      "C81"
+    ],
+    "result": "Prior studies have reported mixed findings on OR tuning breadth and OSN sensitivity. Discrepancies with the current study could be explained by smaller odorant panels, less-sensitive reporters, and higher concentrations used in earlier work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C42, C81 appropriately cite prior literature (Hallem and Carlson, 2006; Saito et al., 2009; Nara et al., 2011; Chae et al., 2019; Si et al., 2019; Pashkovski et al., 2020) and provide reasonable explanations for discrepancies. The explanations are supported by the systematic comparison with Ma et al., 2012 showing concentration-dependent effects.",
+    "result_type": "MINOR"
+  }
+]

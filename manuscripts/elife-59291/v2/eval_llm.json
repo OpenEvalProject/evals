@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "rAAV induces dose-dependent and age-dependent cell death in adult-born dentate granule cells (abDGCs). Cells 2 days old or younger at the time of injection are almost completely eliminated (>80% loss), while cells 7-9 days old show partial protection (~40% loss), and cells 14-16 days or older are largely protected. The effect is dose-dependent, with near-complete ablation at 3e12 gc/mL, partial ablation at 1e12 gc/mL, and modest reduction at 3e11 gc/mL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C30-C33, and C36-C38 collectively demonstrate robust dose-dependent and age-dependent toxicity of rAAV in abDGCs. The data from Figure 1B and 1D provide quantitative support with appropriate statistical tests (p<0.001 for most comparisons), clear dose-response relationships, and consistent patterns across multiple experimental conditions. The experimental design includes appropriate controls (contralateral DG, empty capsid) and multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "rAAV-induced cell death is rapid and persistent. BrdU+ and Tbr2+ cells show significant loss within 12-18 hours post-injection, accompanied by increased caspase-3 activation and pyknosis. Tbr2+ intermediate progenitors are almost entirely lost by 2 days and show no recovery by 4 weeks. DCX+ immature neurons show progressive decline until near-complete loss at 4 weeks, with no recovery at 3 months post-injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C40-C42, and C50-C54 are well-supported by time-course data in Figures 2B-M showing rapid onset of cell death (12-18 hr), markers of apoptosis (caspase-3, pyknosis), and persistent loss over 3 months. The acute time-course experiments with saline controls (Figure 2H-M) provide strong evidence for the rapid kinetics. Statistical significance is reported throughout (p<0.001 for most comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C76"
+    ],
+    "result": "Sox2+ neural stem cells in the subgranular zone show only modest reduction (~20%) following rAAV injection and are relatively spared compared to other progenitor populations. This is consistent with Sox2+ cells being largely quiescent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C76 are supported by quantitative data in Figure 2B,C showing modest but significant reduction in Sox2+ cells (Ftreatment(1,19)=15.5, p<0.001) that is much less severe than the loss of Tbr2+ or DCX+ populations. The interpretation that this reflects the quiescent nature of Sox2+ cells is reasonable given established knowledge about adult neurogenesis, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C43",
+      "C44"
+    ],
+    "result": "Viral DNA is required for rAAV-induced cell loss. Empty AAV viral capsids (lacking viral DNA) do not cause significant loss of BrdU+, Tbr2+, or DCX+ cells at 1 week post-injection, though a mild decrease in BrdU+ cells is observed at 4 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C43-C44 are supported by experiments comparing intact virus to empty capsids (Figures 1B, 2E-F, Figure 1\u2014supplement 1C, Figure 2\u2014supplement 1G). The data show no significant effect at 1 week for empty capsids, establishing that viral DNA is necessary for acute toxicity. The mild effect at 4 weeks suggests some contribution from capsid-related inflammation, but this does not account for the rapid, severe cell loss seen with intact virus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The loss of immature neuron marker DCX occurs across a variety of rAAV preparations, regardless of production facility, purification method, capsid serotype (AAV1, AAV8), promoter (CAG, Syn, CaMKIIa), or expressed protein (GFP, jRGECO1a, mCherry).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by qualitative observations in Figure 1\u2014supplement 1A showing DCX loss across multiple viral preparations. However, the evidence is primarily qualitative rather than quantitative, and the variability in magnitude is acknowledged. This demonstrates the generality of the phenomenon but lacks the rigor of the dose-response and time-course experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Viral tropism does not explain differential toxicity across cell types. While 75.6% of surviving Sox2+ cells express GFP, only 35.9% of surviving DCX+ cells and 7.1% of surviving Tbr2+ cells express GFP, suggesting survivorship bias in populations with substantial loss rather than differences in viral tropism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by colocalization data in Figure 2\u2014supplement 1A,F showing an inverse relationship between cell survival and GFP expression. The interpretation that this reflects survivorship bias rather than tropism differences is logical and well-reasoned. However, this is correlative evidence and the mechanism of differential susceptibility remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Environmental enrichment increases adult neurogenesis but does not protect against rAAV-induced cell loss. Nearly all BrdU+ cells gained from enrichment and exercise are eliminated by rAAV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 2\u2014supplement 1I showing that enriched environment increases BrdU+ cells but these additional cells are eliminated by rAAV (home cage: -79.5%, enriched: -139.9%, both p<0.001). This demonstrates that proliferating cells are the primary target regardless of the stimulus driving proliferation. The experimental design is appropriate with proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "rAAV-induced toxicity appears to be cell-autonomous and not mediated by inflammation. Rapid cell loss (<48 hr) occurs before significant increases in microglial (Iba1) or astrocyte (GFAP) markers, which do not increase until 4 weeks post-injection. Toxicity is not altered in Sting knockout mice, suggesting independence from Sting-mediated innate immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by temporal dissociation between cell loss and inflammation markers (Figure 2\u2014supplement 2A-D), spatial restriction of toxicity to areas of viral spread (Figure 2\u2014supplement 2E), and lack of effect in Sting-KO mice (Figure 2\u2014supplement 2F). The timing data strongly argue against inflammation as the primary mechanism. However, the conclusion of cell-autonomy is inferred rather than directly proven, and alternative non-cell-autonomous mechanisms cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In vitro application of rAAV to neural progenitor cells induces dose-dependent inhibition of proliferation and cell death. At 1e7 MOI, NPCs cease proliferation within 24 hours and show the most significant increase in cell death. At 1e6 MOI, NPCs show intermediate effects, while 1e5 and 1e4 MOI are indistinguishable from PBS control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C59-C61 are supported by in vitro time-lapse imaging data in Figure 3A-C showing clear dose-dependent effects on both proliferation and cell death (propidium iodide permeability). Statistical significance is reported (p<0.001) and the dose-response is consistent with in vivo findings. This provides strong evidence for direct toxicity independent of the in vivo microenvironment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C62",
+      "C63",
+      "C77",
+      "C78"
+    ],
+    "result": "Electroporation of AAV2 inverted terminal repeats (ITRs) is sufficient to induce cell death in vitro. High-dose ITR (5e6 copies/cell) causes cell loss within 6 hours and arrest of proliferation by 40 hours. FACS analysis shows disproportionate loss of dividing cells (S/G2 phase), with greatly increased death in S/G2 cells at 12 and 24 hours. This recapitulates the in vivo finding that actively dividing Type 2 NPCs and recently post-mitotic immature neurons are most sensitive to rAAV-induced death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C62-C63, C77-C78 are supported by electroporation experiments in Figure 3D-H showing ITR-induced toxicity with appropriate controls (scrambled sequence, PBS). The FACS data (Figure 3G-H) provides mechanistic insight showing preferential death of dividing cells. However, the authors acknowledge that in vivo validation of ITR sufficiency is needed. The scrambled control shows some effect at high dose, suggesting potential non-specific effects of high oligonucleotide concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "rAAV-induced cell death appears to be cell-autonomous and mediated by AAV2 ITRs, which are used nearly universally in rAAVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the combination of in vitro ITR electroporation experiments (Figure 3D-H), spatial restriction of toxicity in vivo (Figure 2\u2014supplement 2E), and temporal dissociation from inflammation (Figure 2\u2014supplement 2A-D). However, this is an integrative conclusion based on multiple lines of indirect evidence. Direct in vivo demonstration of ITR sufficiency is lacking, and the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C74",
+      "C87"
+    ],
+    "result": "rAAV-induced ablation of neurogenesis results in dose-dependent hyperactivity of mature DGCs at 4 weeks post-injection, as measured by cFOS expression. The highest dose (3e12 gc/mL) produces the largest increase in cFOS+ cells, with significant correlation between BrdU+ cell loss and cFOS activation (R\u00b2=0.59, p<0.001). This is consistent with previous studies showing that abDGCs normally inhibit mature DGC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C64-C66, C74, C87 are supported by cFOS expression data in Figure 4A-B showing dose-dependent increases in mature DGC activity following neurogenesis ablation. The correlation analysis (Figure 4\u2014supplement 1A) strengthens the relationship. The interpretation is consistent with cited previous work on the role of abDGCs in regulating DG activity. However, cFOS is an indirect measure of activity, and the functional consequences are inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C88"
+    ],
+    "result": "Retrograde delivery of rAAV2-retro by injection into CA3 enables efficient transduction and two-photon calcium imaging of mature DGCs while preserving adult neurogenesis. Histology confirms intact Tbr2+ and DCX+ populations 2 weeks post-injection. Imaging reveals sparse DGC activity (~255 cells/DG, ~24% active/minute, ~2 events/active cell/minute), consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C67-C71, C88 are supported by combined histology (Figure 4D-F) and calcium imaging data (Figure 4G-L). The preservation of neurogenesis markers is quantitatively demonstrated (Tbr2: +4.7%, DCX: +14.3%). The imaging data are consistent with previous studies (C71). This provides a validated alternative approach for studying DG function. However, imaging was limited to 2 weeks post-injection due to inflammation at later time points, which limits the temporal scope of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The viral titers demonstrated to ablate neurogenesis (3e11 to 3e12 gc/mL) are within or below the range of experimentally relevant titers commonly used in mouse DG studies (1.5e12 to 3.6e13 gc/mL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by extensive citations to previous studies using similar or higher viral titers. This establishes the practical significance of the findings for the field. However, this is a literature-based comparison rather than direct experimental validation, and differences in injection volumes, viral preparations, and experimental conditions across studies may affect the actual MOI achieved in different experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Under physiological conditions, the Tbr2+ population replenishes DCX+ progenitors and immature neurons, which can retain DCX expression for more than 3 weeks post-mitosis in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by citation to established knowledge (Kempermann et al., 2003) and is consistent with the observed progressive loss of DCX+ cells following Tbr2+ cell elimination. This provides context for interpreting the temporal dynamics of cell loss but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Multiple viruses including CMV, rubella, varicella-zoster, herpes simplex, HIV, and Zika have been implicated in microcephaly through elimination of neural progenitor cell populations. Zika virus, like rAAV, attenuates proliferation and neurogenesis in the adult mouse DG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by citations to previous research and represent established knowledge in the field. These claims provide context for the significance of rAAV toxicity in NPCs but are not novel findings of this study. The comparison to Zika virus is appropriate and helps frame the potential broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "rAAV offers a tractable model system to dissect the molecular events underlying virus-induced toxicity in neural progenitor cells due to its simple genome, broad tropism, and inability to replicate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is speculative and represents a proposed future direction rather than a demonstrated result. While the characteristics of rAAV (simple genome, broad tropism, no replication) are accurate, whether it will prove to be a useful model system for understanding viral toxicity mechanisms remains to be demonstrated. This is a reasonable hypothesis but requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The dentate gyrus is involved in hippocampus-dependent pattern separation and pattern completion. DG activity depends on adult-born DGCs, which inhibit mature DGCs through monosynaptic or polysynaptic mechanisms, thereby enhancing pattern separation by suppressing competing engrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by extensive citations to previous theoretical and experimental studies. These represent established knowledge in the field and provide important context for interpreting the functional consequences of rAAV-induced neurogenesis ablation. However, these are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "More than 100 clinical trials using AAV vectors have claimed vector safety, resulting in two FDA-approved therapies for CNS disorders. Despite high rates of AAV infection among humans, AAV infection has not been associated with illness or pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by citations to reviews of clinical trials and represent established knowledge about AAV safety in clinical applications. These claims provide important context for the clinical implications of the findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Given the steep dose-response of rAAV-induced cell death, intravenous administration at clinically relevant titers is less likely to reach the SGZ with sufficient MOI to ablate neurogenesis due to the blood-brain barrier. However, high MOI may reach the SGZ in clinical trials using intrathecal or direct brain injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are reasonable inferences based on the dose-response data (Figure 1D) and knowledge of BBB permeability. The steep dose-response (significant effects only at \u22653e11 gc/mL) combined with limited BBB penetration suggests lower risk for systemic administration. However, these are inferences rather than direct experimental demonstrations, and the actual MOI achieved in human SGZ following different delivery routes is not measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The extent of ablation induced by rAAV is striking and shows no signs of recovery throughout the duration of the experiments (up to 3 months), which is more severe than attenuation of neurogenesis from chemotherapy or radiation treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the 3-month time point data (Figure 2G) showing persistent DCX loss (-68.7%, p<0.001) with no evidence of recovery. The comparison to other treatments is supported by citations. However, the comparison is qualitative rather than quantitative, and the specific mechanisms and recovery potential may differ between rAAV and other treatments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background and context claims about rAAV, adult neurogenesis, and previous reports of rAAV toxicity. These establish the scientific context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C27 represent established knowledge and literature context supported by appropriate citations. These are accurate representations of the field and provide essential background but are not novel findings of this study. Claim C27 correctly identifies a gap in the literature that this study addresses.",
+    "result_type": "MINOR"
+  }
+]

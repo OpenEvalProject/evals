@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C67",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C116"
+    ],
+    "result": "The authors identified a novel off-cycle E1P tight state in phosphorylated KdpFABC that is not part of the canonical Post-Albers cycle. This state exhibits a compact fold of cytoplasmic domains with the N domain closely associated with the A domain, and features a partial 26\u00b0 tilt of the A domain helix 4 without full E2P transition. The E1P tight state represents a stalled intermediate adopted when the E1P to E2P transition is blocked by electrostatic repulsion between the catalytic phosphate (KdpBD307-P) and inhibitory phosphate (KdpBS162-P), with conformational changes that relieve electrostatic strain around the phosphorylated catalytic aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E1P tight state is well-supported by multiple lines of evidence: cryo-EM structures at 3.3-3.4 \u00c5 resolution showing the compact domain arrangement (C57, C58, C59), orthovanadate experiments demonstrating that inhibited KdpFABC adopts E1P tight instead of E2P (C63, C64, C67, C104), quantitative measurements of domain tilts (C86, C87, C88), and detailed structural analysis of electrostatic interactions (C89-C94). The mechanistic interpretation linking structural features to inhibition is logically consistent with prior biochemical data (C36, C102) and supported by the observed conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C97",
+      "C98"
+    ],
+    "result": "Non-phosphorylatable KdpFABS162AC under turnover conditions progresses through the complete Post-Albers cycle, yielding E1P\u00b7ADP and E2P structures. The E1P\u00b7ADP state (3.7 \u00c5, ~35% particles) shows ADP bound with phosphorylated KdpBD307, while the E2P state (4.0 \u00c5, ~28% particles) shows the A domain tilted 60\u00b0 and rotated 64\u00b0 around the P domain, with the P domain tilted 40\u00b0. The accumulation of these states suggests ADP release in E1 and orthophosphate release in E2 are rate-limiting steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization of the non-inhibited cycle is well-supported by cryo-EM data at 3.7-4.0 \u00c5 resolution (C46, C48), with clear density interpretation for nucleotides and phosphorylation states (C47). The quantitative measurements of domain movements (C50, C51) are precise and consistent with P-type ATPase mechanisms. The inference about rate-limiting steps (C98) is reasonable based on state accumulation, though direct kinetic measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Wild-type phosphorylated KdpFABC under turnover conditions shows higher conformational variability than the non-phosphorylatable variant, yielding three distinct structures: E1\u00b7ATPearly (3.5 \u00c5, ~9% particles), E1P\u00b7ADP (3.1 \u00c5, ~31% particles), and E1P tight (3.4 \u00c5, ~14% particles). In orthovanadate-stabilized samples, the major fraction (~62%) adopts E1P tight rather than the expected E2P state, with only ~11% in E2P likely representing residual non-phosphorylated protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased conformational heterogeneity in phosphorylated KdpFABC is well-documented by the three distinct structures obtained (C52, C53, C55, C57). The orthovanadate experiment provides strong evidence for the inhibition mechanism, as the failure to stabilize E2P in the majority of particles (C63, C64, C65) directly demonstrates the blocked E1P/E2P transition. The correlation with residual ATPase activity (C66) strengthens the interpretation that the minor E2P fraction represents uninhibited protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "Nucleotide-free KdpFABD307NC yields two E1 states: E1 apo open (26% particles, resolved as two substates at 3.5 and 3.7 \u00c5 differing in N domain position) showing high conformational heterogeneity, and E1 apo tight (19% particles, 3.4 \u00c5) with close N-A domain association. The presence of tight conformations in both E1P and E1 apo states indicates that KdpBS162 phosphorylation enables tight state formation before or after ATP binding and cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization of nucleotide-free states is well-supported by cryo-EM data (C69, C70, C72, C75) with appropriate resolution for the conclusions drawn. The observation of conformational heterogeneity in E1 apo open (C71) is evidenced by lower local resolution and the ability to resolve two substates. The inference about timing of tight state formation (C76) is logical based on observing similar conformations in both phosphorylated and non-phosphorylated states, though the physiological relevance of E1 apo tight is appropriately questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C85"
+    ],
+    "result": "EPR measurements demonstrate that KdpBS162 phosphorylation stabilizes the tight state. In nucleotide-free conditions, phosphorylatable KdpFABD307N shows 34% E1 apo tight and 66% E1 apo open, while non-phosphorylatable KdpBS162A shows only 18% tight state. In the presence of AMPPCP, a single well-defined distance corresponding to E1\u00b7ATP is observed, indicating the tight state interactions can be easily broken by nucleotide binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EPR data provide quantitative support for the role of KdpBS162 phosphorylation in stabilizing the tight state (C77, C78, C79). The comparison between phosphorylatable and non-phosphorylatable variants is appropriate, and the significant decrease in tight state population (from 34% to 18%) supports the stabilization role. The AMPPCP experiment (C84) effectively demonstrates that nucleotide binding can overcome the tight state interactions, supporting the conclusion that these interactions are stabilizing but not the primary cause of inhibition (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MD simulations reveal that E1 tight states (E1 apo tight, E1P tight) uniquely show increased interactions between A and N domains compared to other E1 states, with the domains moving in a concerted manner. The most evident interaction is salt bridges between phosphorylated KdpBS162 and KdpBK357/R363, but these are not essential for inhibition as demonstrated by prior functional studies and the ability of nucleotide binding to break these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation results (C80, C81) provide computational support for the enhanced A-N domain interactions in tight states, with appropriate simulation length (3 \u00d7 50 ns) to sample side-chain interactions while preserving overall conformations. The identification of salt bridges (C82) is consistent with prior structural observations. The conclusion that these interactions are stabilizing but not causative of inhibition (C83, C85) is well-supported by integration of functional data from prior studies and the current EPR results showing these interactions can be disrupted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The charge distribution of inhibitors affects their ability to stabilize E2P states in phosphorylated KdpFABC. Orthovanadate, with the same charge distribution as phosphorylated KdpBD307, stabilizes E1P tight rather than E2P. In contrast, AlF4\u207b with lower negative charge can stabilize E2P, likely because reduced electrostatic repulsion makes the E1P/E2P transition more favorable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior of orthovanadate versus AlF4\u207b (C104, C106) provides strong support for the electrostatic repulsion mechanism of inhibition. The chemical reasoning about charge distributions (C105) is sound and explains the experimental observations. The comparison with prior AlF4\u207b data (C106) appropriately cites previous work and integrates it with current findings to support the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on KdpFABC structure, function, and regulation: KdpFABC is a high-affinity K+ uptake system (Km = 2 \u00b5M) comprising four subunits (KdpA, KdpB, KdpF, KdpC) that can pump K+ against gradients up to 10\u2074 to maintain ~200 mM cytosolic K+. The complex follows a Post-Albers cycle with inverted alternating access. Regulation occurs at transcriptional (KdpD/KdpE), post-translational (cardiolipin stimulation), and inhibitory (KdpBS162 phosphorylation) levels. Prior studies showed KdpBS162 phosphorylation stalls the complex in an E1P state, with salt bridges to the N domain observed in crystal structures but shown to be non-essential for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to prior literature (C11-C13, C14-C17, C30-C32, C33-C36). The structural and functional descriptions (C1, C18-C29) accurately represent established knowledge about P-type ATPases and KdpFABC's unique features. The summary of prior work on inhibition (C33-C36) correctly represents the state of knowledge that motivated this study, including the unresolved questions about the inhibition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study obtained 10 cryo-EM structures representing 6 distinct states covering the KdpFABC conformational cycle (except highly transient E1P after ADP release and E2 after dephosphorylation). All variants were produced in E. coli at high K+ to induce KdpBS162 phosphorylation. Structures were characterized by cryo-EM, EPR, and MD simulations. All structures show the conserved intersubunit tunnel filled with K+ ions varying in number and position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive structural coverage (C37, C42) is well-documented with appropriate methods (C39, C40). The experimental design using high K+ production conditions (C40) is appropriate for studying the inhibited state. The observation of conserved structural features like the intersubunit tunnel (C43, C44) provides internal validation of the structures. The acknowledgment of missing highly transient states (C42) is appropriately transparent about the limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The E1P tight conformation shows similarities to the E1 crystal structure [5MRW] (RMSD 4.92 \u00c5), the first structure of KdpFABC ever solved, particularly in the close association of N and A domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with the crystal structure [5MRW] (C68) is appropriate and provides historical context. The RMSD value indicates significant but not identical similarity, which is consistent with the claim of showing \"some similarities.\" This connection helps place the new E1P tight structure in the context of prior structural work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "The study extends understanding of P-type ATPase regulation by off-cycle states. While regulation by inactive states has been postulated for other P-type ATPases (e.g., AHA2 stochastically entering inactive states, SERCA non-Post-Albers state), the KdpFABC E1P tight state represents a structurally characterized off-cycle state with a clear regulatory role, differing from these other examples in mechanism and domain organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization within the broader P-type ATPase field (C111, C112, C114) appropriately cites relevant prior work. The comparisons highlight both similarities and differences (C113, C115), demonstrating critical evaluation of how the KdpFABC mechanism relates to other systems. The claim about extending the conformational landscape and supporting the emerging concept of off-cycle states (C117) is justified by the detailed structural and functional characterization presented.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "B cell activation through BCR stimulation (anti-IgM), co-stimulation (anti-IgM + anti-CD40), or TLR4 activation (LPS) induces metabolic reprogramming with increased mitochondrial respiration and glycolysis, accompanied by dynamic changes in Orai isoform expression. Specifically, Orai1 expression increases, Orai2 decreases, and Orai3 increases only with co-stimulation or LPS. Anti-CD40 stimulation alone fails to induce these metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 provide comprehensive Seahorse metabolic data (OCR, ECAR), flow cytometry (mitochondrial content and membrane potential), and qPCR data (Orai isoform expression) showing consistent patterns across multiple stimulation conditions. The data demonstrate clear metabolic activation with BCR and TLR4 stimulation but not CD40 alone, with corresponding changes in Orai expression profiles. Statistical significance is reported with appropriate replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both Orai1 and Orai3 contribute to SOCE in A20 B lymphoblasts, with Orai1 deletion reducing SOCE by ~62%, Orai3 deletion by ~28%, and combined deletion causing ~91% reduction. Ca2+ oscillation frequency is substantially reduced only with combined Orai1/Orai3 knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by calcium imaging data in CRISPR/Cas9 knockout A20 cell lines with validated genomic deletions and mRNA ablation (C2-C4 in Figure 2). The additive effect of double knockout and differential contributions of each isoform are clearly demonstrated with large sample sizes (n=76-100 cells) and appropriate statistical tests. The data establish functional redundancy between Orai isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In primary B cells, Orai1 deletion reduces SOCE by ~69%, while Orai3 deletion alone has no significant effect (~102% of control). Combined Orai1/Orai3 deletion reduces SOCE by ~83%. The remaining SOCE in Orai1 knockout cells is resistant to 2-APB but sensitive to Gd3+, consistent with Orai3-mediated Ca2+ entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C62-C65 are supported by calcium imaging in B cell-specific knockout mice with validated Orai1 deletion (~97% mRNA reduction, C54). The pharmacological profiling with 2-APB and Gd3+ provides mechanistic insight into isoform contributions. Large sample sizes (n=147-200 cells) and appropriate statistical tests strengthen the conclusions. The lack of effect from Orai3 single knockout is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Despite significantly reducing SOCE, Orai1 deletion does not impair BCR-induced Ca2+ oscillation frequency in primary B cells, indicating that Orai1 is dispensable for maintaining physiological Ca2+ oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by calcium oscillation measurements (Figure 3H-J) showing comparable oscillation frequency between control and Orai1-deficient B cells (n=97 and 111 cells). This finding is consistent with data from A20 cells (C52) and previous work in HEK293 cells cited by the authors. The dissociation between SOCE magnitude and oscillation frequency is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Orai1 is essential for NFAT activation in B cells, with Orai1 deletion reducing anti-IgM-mediated NFAT1 nuclear translocation and thapsigargin-induced NFAT1 dephosphorylation by 43.6% in na\u00efve B cells and 78% in activated B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by complementary approaches: ImageStream analysis of NFAT1 nuclear translocation (Figure 6A-C) and Western blot analysis of NFAT1 dephosphorylation (Figure 6D-G). The data show consistent impairment of NFAT activation in Orai1-deficient cells with appropriate biological replicates (n=3-4). The greater effect in activated versus na\u00efve B cells is consistent with the increased Orai1 expression upon activation (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Combined Orai1/Orai3 deletion, but not Orai1 deletion alone, substantially impairs B cell proliferation (60.8% vs 83.1% proliferating) and survival (10% vs 20.9% viable) in response to anti-IgM stimulation. These defects are partially rescued by CD40 co-stimulation and fully rescued by LPS stimulation. RNA-seq analysis confirms downregulation of cell cycle and survival pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by CFSE proliferation assays (Figure 7A-C) with appropriate biological replicates (n=4-9) and GSEA analysis of RNA-seq data (Figure 7D-E). The differential effects of single versus double knockout, and the rescue by co-stimulatory signals, are clearly demonstrated. However, the partial rescue by CD40 co-stimulation is described as \"to a lesser extent\" without quantification, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Combined Orai1/Orai3 deletion impairs metabolic reprogramming of activated B cells, reducing both mitochondrial respiration (OCR) and glycolysis (ECAR) following anti-IgM stimulation. GSEA shows specific inhibition of oxidative phosphorylation and Myc target gene sets in double knockout but not single Orai1 knockout, while glycolysis gene set is inhibited in both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by Seahorse metabolic flux analysis (Figure 8E-H) with appropriate replicates (n=4) and complementary RNA-seq/GSEA analysis. The data show graded effects (control > Orai1 KO > Orai1/Orai3 DKO) consistent with additive functions. The differential effects on oxidative phosphorylation versus glycolysis gene sets between single and double knockouts provide mechanistic insight. Mitochondrial content and electron transport chain components are unchanged (Figure 8D, Figure 8\u2014figure supplement 1C-D), ruling out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C81",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SOCE regulates metabolic reprogramming in B cells through NFAT-dependent mechanisms. Anti-IgM stimulation increases glycolytic and TCA cycle metabolites, which is blocked by the calcineurin inhibitor FK506 or CRAC channel inhibitor GSK-7975A, and significantly reduced in Orai1/Orai3-deficient B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C90-C92 are supported by comprehensive metabolomics analysis (Figure 9) with appropriate replicates (n=3). The pharmacological experiments with FK506 and GSK-7975A provide strong evidence for SOCE-calcineurin-NFAT pathway involvement. The observation that GSK-7975A has greater effects than Orai1/Orai3 double knockout (C105) is consistent with residual Orai2-mediated SOCE. The metabolomics data are well-presented with heatmaps showing consistent patterns across metabolite classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Despite profound in vitro defects, B cell-specific deletion of Orai1 and Orai3 does not impair humoral immunity to influenza A virus infection in vivo. Germinal center B cells, plasma cells, class switching, and virus-specific antibody production are all normal in Orai1/Orai3-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by comprehensive in vivo analysis (Figure 10) including flow cytometry of B cell populations, ELISA for virus-specific antibodies, and histology, all with appropriate sample sizes (n=10 mice per group). The data consistently show no significant differences between control and knockout mice across multiple parameters. This surprising result is well-documented but creates tension with the in vitro findings, which the authors address through discussion of compensatory pathways (C12, C109, C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Co-stimulatory pathways including CD40, TLR4, and TLR7 can bypass the requirement for BCR-induced SOCE in B cell activation. The normal in vivo immune response to influenza A virus in Orai1/Orai3-deficient mice is likely explained by TLR7 activation, which signals through the same Myd88-IRAK4-TRAF6 pathway as TLR4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 are supported by citations to previous work showing rescue of STIM1/STIM2-deficient B cells by CD40 and TLR agonists. However, claims C110-C113 regarding TLR7's role in the influenza model are speculative (C113 explicitly states this is speculation). The authors did not directly test whether TLR7 activation rescues Orai1/Orai3-deficient B cell function in vitro, nor did they block TLR7 in vivo to test this hypothesis. While the reasoning is logical and well-supported by citations, the specific mechanism remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "B cell-specific deletion of Orai1 does not alter B cell development in bone marrow (fractions A-F) or spleen (transitional T1, T2, T3 populations and mature follicular/marginal zone B cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by comprehensive flow cytometry analysis of B cell developmental stages (Figure 4) with appropriate sample sizes (n=6-7 mice). The data are consistent with previous reports in global Orai1-deficient mice and with the known dispensability of SOCE for B cell development. This establishes that the functional defects observed are not due to developmental abnormalities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C61"
+    ],
+    "result": "B cell-specific knockout mice show efficient deletion of Orai isoforms, with ~70% reduction in Orai1 surface protein, ~97% reduction in Orai1 mRNA, and ~96-99.7% reduction in respective Orai isoform mRNAs in single and double knockout mice, without compensatory changes in other Orai isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C61 are supported by multiple validation approaches: flow cytometry for surface protein (Figure 3A-B), qPCR for mRNA levels (Figures 3C-E, 5A), with appropriate replicates (n=3-6). The residual 30% surface signal is reasonably attributed to antibody cross-reactivity with other Orai isoforms. The lack of compensatory upregulation of other Orai isoforms is important for interpreting the functional data. These are essential validation data for the genetic models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C104"
+    ],
+    "result": "Orai2 acts as a negative regulator of SOCE in B cells, as B cells from Orai2-/- mice show enhanced SOCE compared to wild-type controls. The remaining SOCE in Orai1/Orai3 double knockout B cells is likely mediated by Orai2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by calcium imaging data (Figure 5F-G) showing enhanced SOCE in Orai2-/- B cells with large sample sizes (n=147 and 240 cells). This is consistent with previous findings in T cells and other cell types (cited). Claim C104 is a reasonable inference given that Orai2 is the only remaining Orai isoform in double knockout cells and can mediate SOCE. The pharmacological data with GSK-7975A (C105) further supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C102",
+      "C115"
+    ],
+    "result": "Both Orai1 and Orai3 contribute additively to CRAC channel activity and Ca2+ signaling in B cells, regulating NFAT activation, metabolism, survival, and proliferation. However, whether they form homomeric or heteromeric channels remains unknown, and CRAC channel composition appears cell-type and context-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C115 are well-supported summary conclusions based on the comprehensive data presented throughout the manuscript. Claims C94 and C102 appropriately acknowledge limitations\u2014the oligomeric state of native CRAC channels in B cells is not determined in this study, and the authors note species and cell-type differences in Orai isoform contributions based on their data and literature. These are fair assessments of what is known versus unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Orai3 may mediate effects through store-independent Ca2+ influx pathways activated by arachidonic acid or leukotriene C4. Orai3 expression is increased in CD4+ T cells from rheumatoid arthritis patients and its silencing reduces inflammation, though Orai3-deficient mice show no altered susceptibility to collagen-induced arthritis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is explicitly speculative and supported only by citations to previous work on store-independent Orai3 function in other systems. Claims C96-C98 are entirely based on citations to other studies and represent conflicting findings in the literature (increased expression and therapeutic benefit of silencing versus no phenotype in knockout mice). These claims provide context but are not directly tested in this manuscript. The speculation about store-independent pathways is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "CRAC channel composition differs between B cells and T cells, and between mouse and human lymphocytes. In murine T cells, Orai1/Orai2 mediate most SOCE, while in murine B cells, Orai1/Orai3 are the major contributors. Human B cells from Orai1 LoF patients retain residual SOCE, suggesting species differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C103 are supported by citations to previous literature and are consistent with the current findings. The comparison between B and T cells is important for understanding cell-type specificity of CRAC channel function. The species differences between mouse and human are well-documented in the cited literature. These claims provide important context for interpreting the current results, though they rely on prior work rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background knowledge claims establishing the importance of Ca2+ signaling, SOCE, CRAC channels, and Orai isoforms in immune cell function, including patient phenotypes, previous knockout studies, and the state of knowledge regarding Orai isoform contributions to B cell function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C40 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation and rationale for the current study. The claims accurately represent prior knowledge including: the essential role of SOCE in T cells (C1), the gap in knowledge for B cells (C2), the molecular mechanisms of CRAC channel activation (C13-C19), patient phenotypes (C23-C25), and previous findings on Orai isoform functions (C27-C40). These are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C114"
+    ],
+    "result": "B cells may sustain Ca2+ signals through Orai1/Orai3 while downregulating Orai2 to relieve inhibition of CRAC channels. Despite the importance of Ca2+ and SOCE for B cell function, B cells have developed Ca2+-independent mechanisms to ensure proper activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is a reasonable hypothesis based on the observed expression changes (C46-C48) and the negative regulatory role of Orai2 (C68), supported by analogy to T cells (citation). Claim C114 is a well-supported conclusion based on the disconnect between in vitro defects and normal in vivo immunity (C11, C88), with mechanistic explanation through co-stimulatory pathways (C109). These interpretive claims appropriately synthesize the data while acknowledging alternative mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

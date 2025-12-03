@@ -1,0 +1,1354 @@
+{
+  "submission": {
+    "id": "ae451f7d-4623-45b9-8107-85b7eed02145",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:09:25.773414Z",
+    "updated_at": "2025-12-03T08:09:25.773414Z"
+  },
+  "content": [
+    {
+      "id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "submission_id": "ae451f7d-4623-45b9-8107-85b7eed02145",
+      "content_type": "manuscript",
+      "content_text": "# Transcription initiation at a consensus bacterial promoter proceeds via a \u2018bind-unwind-load-and-lock\u2019 mechanism\n\n## Authors\n\n- Abhishek Mazumder<sup>1</sup> ([ORCID: 0000-0002-9339-6256](https://orcid.org/0000-0002-9339-6256)) \u2020\n- Richard H Ebright<sup>2</sup> ([ORCID: 0000-0001-8915-7140](https://orcid.org/0000-0001-8915-7140))\n- Achillefs N Kapanidis<sup>1</sup> ([ORCID: 0000-0001-6699-136X](https://orcid.org/0000-0001-6699-136X)) \u2020\n\n### Affiliations\n\n1. Biological Physics Research Group, Clarendon Laboratory, Department of Physics, University of Oxford Oxford United Kingdom\n2. Waksman Institute and Department of Chemistry, Rutgers University Piscataway United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscription initiation starts with unwinding of promoter DNA by RNA polymerase (RNAP) to form a catalytically competent RNAP-promoter complex (RPo). Despite extensive study, the mechanism of promoter unwinding has remained unclear, in part due to the transient nature of intermediates on path to RPo. Here, using single-molecule unwinding-induced fluorescence enhancement to monitor promoter unwinding, and single-molecule fluorescence resonance energy transfer to monitor RNAP clamp conformation, we analyse RPo formation at a consensus bacterial core promoter. We find that the RNAP clamp is closed during promoter binding, remains closed during promoter unwinding, and then closes further, locking the unwound DNA in the RNAP active-centre cleft. Our work defines a new, \u2018bind-unwind-load-and-lock\u2019, model for the series of conformational changes occurring during promoter unwinding at a consensus bacterial promoter and provides the tools needed to examine the process in other organisms and at other promoters.\n\n## Introduction\n\nTranscription initiation is the first and most highly regulated step in gene expression (Mazumder and Kapanidis, 2019; Ruff et al., 2015). During transcription initiation, RNA polymerase (RNAP), together with the transcription initiation factor \u03c3, unwinds ~13 bp of promoter DNA to form a \u2018transcription bubble\u2019, and places the template-strand ssDNA of the unwound transcription bubble in contact with the RNAP active centre, yielding a catalytically competent RNAP-promoter transcription-initiation complex (RPo; Mazumder and Kapanidis, 2019). High-resolution structures of RPo define the contacts that RNAP and \u03c3 make with promoter DNA, as well as the conformation and interactions of unwound template-strand ssDNA engaging the RNAP active centre (Bae et al., 2015; Zuo and Steitz, 2015; Zhang et al., 2012). Structural and biochemical experiments suggest that transcription-bubble formation is initiated by unwinding the DNA base pair at the upstream end of the transcription bubble \u2013 breaking the base pair, and unstacking and flipping the non-template-strand base of the broken base pair, and inserting the unstacked and flipped non-template-strand base into a protein pocket of \u03c3 \u2013 followed by propagation of the unwinding in a downstream direction (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Zhang et al., 2012; Feklistov and Darst, 2011). However, the mechanism by which DNA is unwound and loaded into the RNAP active-centre cleft has remained controversial (reviewed in Mazumder and Kapanidis, 2019). In crystal structures of RNAP \u03c3 holoenzyme, the RNAP active-centre cleft is too narrow to accommodate double-stranded DNA (dsDNA) (<20 \u00c5), and \u03c3 obstructs access of dsDNA to the RNAP active-centre cleft (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002). As a result, there is no unobstructed path by which dsDNA can access the RNAP active-centre cleft in RNAP holoenzyme (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002; Young et al., 2002; Murakami and Darst, 2003). Accordingly, it has remained unclear where, when, and how promoter DNA is unwound and loaded into the RNAP active-centre cleft.\n\nTo address these questions, two classes of models have been proposed. One class of models, termed \u2018load-unwind\u2019 models, propose that: (i) the RNAP active-centre cleft opens, through the swinging outward of one wall, termed the \u2018clamp\u2019, of the active-centre cleft, allowing loading of promoter DNA into the active-centre cleft as dsDNA; (ii) promoter DNA unwinds inside the active-centre cleft; and (iii) the active-centre cleft closes, through the swinging inward of the clamp, during or after DNA unwinding (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Young et al., 2002; Darst et al., 2002; Chakraborty et al., 2012). The other class of models, termed \u2018unwind-load\u2019 models, proposes that: (i) promoter DNA unwinds outside the RNAP active-centre cleft and (ii) unwound-promoter DNA loads into the active-centre cleft as single-stranded DNA (Mazumder and Kapanidis, 2019; Vassylyev et al., 2002). Some versions of the unwind-load model postulate that opening and closing of the RNAP clamp is required for DNA unwinding and DNA loading to occur (Feklistov et al., 2017; Boyaci et al., 2019). Other versions of the unwind-load model postulate that opening and closing motions of the RNAP clamp is not required for DNA unwinding and DNA loading (Chen et al., 2020).\n\nSome previous results have been interpreted as supporting load-unwind models, including results from static DNA footprinting of trapped putative on-pathway intermediates in formation of RPo, suggesting the presence of dsDNA inside the active-centre cleft (Spassky et al., 1985; Duval-Valentin and Ehrlich, 1986; Cowing et al., 1989; Schickor et al., 1990), results from kinetic DNA footprinting suggesting the existence of on-pathway intermediates having dsDNA inside the active-centre cleft (Davis et al., 2007), fluorescence resonance energy transfer (FRET) results showing clamp opening and closing in RNAP and in trapped putative on-pathway intermediates in formation of RPo (Chakraborty et al., 2012; Lin et al., 2018; Duchi et al., 2018; Mazumder et al., 2021), functional correlations between inhibition of clamp opening and closing with inhibition of formation of RPo (Chakraborty et al., 2012; Lin et al., 2018; Duchi et al., 2018), and crystal and cryo-EM structures of trapped putative on-pathway intermediates in formation of RPo having dsDNA inside an open active-centre cleft (Glyde et al., 2018).\n\nOther previous results have been interpreted as supporting unwind-load models, including time-resolved footprinting experiments suggesting that promoter unwinding occurs outside the active-centre cleft and precedes rate-limiting conformational changes in RNAP (Rogozina et al., 2009), and cryo-EM structures of trapped putative on-pathway intermediates in formation of RPo containing partly unwound DNA inside a closed active-centre cleft (Chen et al., 2020).\n\nHowever, the previous results either have relied on analysis of artificially trapped complexes that have not been firmly established to correspond to bona fide on-pathway intermediates, or have relied on analysis of ensemble kinetics for which the identities and orders of appearance of intermediates have not been firmly established (Chakraborty et al., 2012; Spassky et al., 1985; Duval-Valentin and Ehrlich, 1986; Cowing et al., 1989; Schickor et al., 1990; Davis et al., 2007; Lin et al., 2018; Duchi et al., 2018; Mazumder et al., 2021; Glyde et al., 2018; Rogozina et al., 2009). Moreover, the previous results have been complicated by differences in the species source of the RNAP analysed, differences in the \u03c3 factors analysed, and differences in the promoter sequences analysed (Chakraborty et al., 2012; Spassky et al., 1985; Duval-Valentin and Ehrlich, 1986; Cowing et al., 1989; Schickor et al., 1990; Davis et al., 2007; Lin et al., 2018; Duchi et al., 2018; Mazumder et al., 2021; Glyde et al., 2018; Rogozina et al., 2009). Here, we report the use of single-molecule kinetic studies to define the pathway of DNA unwinding and DNA loading, without the assumptions that complicate analysis of artificially trapped complexes, and without the heterogeneity, population averaging, and time averaging that complicate analysis of ensemble kinetics. We used single-molecule promoter unwinding-induced fluorescence enhancement (smUIFE) to monitor DNA unwinding in solution in real time during formation of RPo, and we used single-molecule fluorescence resonance energy transfer (smFRET) to monitor opening and closing of the RNAP clamp in solution in real time during formation of RPo. In all experiments, we analysed Escherichia coli RNAP \u03c370 holoenzyme at a consensus bacterial core promoter, comprising a consensus \u201335 element, a consensus \u201310 element, and a consensus \u221235/\u201310 spacer.\n\n## Results\n\n### Single-molecule UIFE\n\nPrevious work indicates that a promoter derivative having the fluorescent probe Cy3 site-specifically incorporated in the transcription-bubble region exhibits an ~2-fold increase in fluorescence emission intensity upon promoter unwinding during RPo formation and exhibits an ~ 2-fold decrease in fluorescence emission intensity upon promoter rewinding during promoter escape (Feklistov et al., 2017; Ko and Heyduk, 2014; Koh et al., 2018). These changes in fluorescence emission intensity provide a powerful approach to monitor promoter unwinding and rewinding in solution during transcription initiation (Feklistov et al., 2017; Ko and Heyduk, 2014; Koh et al., 2018). Here, we have adapted this approach to enable detection of promoter unwinding in solution at the single-molecule level in real time, and we designate our adaptation of the approach \u2018smUIFE\u2019, to underscore the similarity to the established method of single-molecule protein-induced fluorescence enhancement (Hwang and Myong, 2014; Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig1-v2.jpg)\n\n**Figure 1.:** (A) (Top) Design of experiment monitoring promoter unwinding in real time. Grey, RNAP; orange, RNAP clamp; purple dot, RNAP active-centre; black, ds-DNA; blue, ss-DNA; light green, Cy3 on ds-DNA; dark green, Cy3 on ss-DNA. (Bottom) A cropped area (0.94 \u03bcm \u00d7 1.034 \u03bcm) of the field of view, showing appearance and enhancement of fluorescence signal from binding of single Cy3-labelled promoter fragment to an immobilised RNAP molecule. (B) (Left) Time trajectories of intensity from Cy3 on downstream segment of promoter bubble. Black, raw intensity; dark blue, idealised intensity; hidden Markov model (HMM)-assigned states: no promoter (black bars), closed promoter (light yellow bars) and open promoter (green bars). Frame rates: 50 ms, top and middle; 200 ms, bottom. Laser powers: 0.60 mW, top and middle; 0.15 mW, bottom. (Right) Dwell-time histograms of promoter state before unwinding, tUNWIND. (C) (Left) Time trajectories of intensity from Cy3 on upstream segment of promoter bubble. Colours as in B. Frame rates: 50 ms. Laser powers: 0.6 mW. (Right) Dwell-time histograms of promoter state before unwinding, tUNWIND. (D) Table comparing unwinding times for different promoter constructs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top strand: non-template DNA strand; bottom strand: template strand. Nucleotides labelled with Cy3 are shown in green. The numbering refers to the DNA position relative to the transcription start site.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Raw images (field of view: 24 \u03bcm \u00d7 24 \u03bcm) of immobilised hexahistidine-tagged RNAP holoenzyme (left), immobilised hexahistidine-tagged RNAP holoenzyme bound to lacCONS-[+ 2Cy3] promoter fragment before (middle) and after (right) addition of heparin. (B) Mean number of localisations per field of view for single lacCONS-[+ 2Cy3] promoter fragments bound to immobilised hexahistidine-tagged RNAP holoenzyme in absence and presence of heparin. (C) Mean number of localisations per field of view for single non-promoter-[Cy3] fragments bound to immobilised hexahistidine-tagged RNAP holoenzyme in absence and presence of heparin. (D) Mean number of localisations per field of view for single Cy3-labelled promoter fragments bound to immobilised hexahistidine-tagged RNAP core enzyme in absence and presence of heparin. Mean number of localisations are average of three measurements. Errors bars represent the standard deviation from the mean.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Binding of lacCONS-[+ 2 Cy3] promoter fragment to immobilised RNAP holoenzyme. (B) (Top) Stalled initial transcribing complexes (RPitc <11) formed with RNAP holoenzyme, lacCONS-[+ 2 Cy3] and subset of NTPs (ATP, GTP, and UTP). (Bottom) Real-time addition of NTPs (GTP and CTP) to stalled initial transcribing complexes (Rpitc <11). (C) Binding of non-promoter-[Cy3] fragment to immobilised RNAP holoenzyme. (D) Binding of lacCONS-[+ 2 Cy3] promoter fragment to immobilised RNAP core enzyme. Black, raw intensity; dark blue, idealised intensity; hidden Markov model (HMM)-assigned states: no promoter (black bars), closed promoter (light yellow bars), and open promoter (green bars). Frame duration: 50 ms; laser power: 0.60 mW.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Hidden Markov model (HMM)-assigned histograms and Gaussian fits of fluorescence intensities, pre-unwinding (yellow) and post-unwinding (green) for Cy3-labelled promoter fragments. Mean intensities for the two states and fold-increase of intensities are shown (inset). (A) Data for lacCONS-[+ 2Cy3] promoter fragments. (B) Data for lacCONS-[\u20139Cy3] promoter fragments.\n\nFirst, we analysed a promoter DNA fragment having Cy3 incorporated at a site at the downstream edge of the transcription bubble (non-template-strand position +2) of a consensus \u03c370-dependent bacterial promoter (lacCONS-[+ 2 Cy3]; Figure 1\u2014figure supplement 1A). Upon adding the Cy3-containing promoter DNA fragment to E. coli RNAP \u03c370 holoenzyme immobilised on a coverslip mounted in a total-internal-reflection fluorescence (TIRF) microscope, we detected the appearance of fluorescence signal from single fluorescent species, indicating binding of single molecules of Cy3-containing promoter DNA fragment to surface-immobilised single molecules of RNAP holoenzyme (Figure 1A, bottom). Control experiments show that: (i) Cy3-containing promoter DNA fragments bound exclusively to immobilised RNAP molecules (Figure 1\u2014figure supplement 2A), and the majority (~60%) of the resulting complexes were resistant to challenge with heparin (Figure 1\u2014figure supplement 2B); (ii) binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme molecules did not result in heparin-resistant complexes (Figure 1\u2014figure supplement 2C); and (iii) binding of Cy3-containing promoter DNA fragments to immobilised RNAP core enzyme molecules did not result in heparin-resistant complexes (Figure 1\u2014figure supplement 2D). These results confirm that sequence-specific, heparin-resistant, complexes were formed only between RNAP holoenzyme and Cy3-containing promoter DNA fragments.\n\nWe extracted intensity vs. time trajectories for the formation of RNAP-promoter complexes, and identified different classes of trajectories. A large class of trajectories (~45%) was characterised by the appearance of a fluorescence intensity of ~200 counts, followed by an increase in fluorescence intensity to ~450 counts, followed by either a decrease of the intensity to ~200 counts or a disappearance of the intensity (Figure 1B, top left; Figure 1\u2014figure supplement 3, middle). Control experiments show that (i) binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme did not result in \u22652-fold fluorescence enhancement (Figure 1\u2014figure supplement 3C); and (ii) binding of Cy3-containing promoter DNA fragments to immobilised RNAP core molecules did not result in \u22652-fold fluorescence enhancement events for the overwhelming majority of the time trajectories (~96%; Figure 1\u2014figure supplement 3D). These results indicate that the detected ~2-fold fluorescence enhancement events represent sequence-specific complexes between RNAP holoenzyme and promoter DNA fragments. Therefore, we assigned the states with no intensity as species that lack promoter DNA or that have promoter DNA with photobleached Cy3; the states with an intensity level of ~200 counts as RNAP-promoter complexes having dsDNA at the Cy3 incorporation site; and states with an intensity level ~450 counts as RNAP-promoter complexes having single-stranded DNA at the Cy3 incorporation site. This assignment yields a reaction sequence comprising: binding of double-stranded promoter DNA to RNAP (~200 counts; \u2018pre-unwinding state\u2019), followed by promoter unwinding (~450 counts; \u2018unwound state\u2019), followed by promoter rewinding (~200 counts) or probe photobleaching (~0 counts). Upon addition of an NTP subset enabling synthesis of transcripts up to 11 nt in length (ATP, UTP, and GTP), ~ 49% of trajectories showed formation of a stable unwound-promoter state (with fluorescence intensity similar to that of the sub-population exhibiting promoter unwinding), as expected for the formation of initial transcribing complexes (RPitc <11; Figure 1\u2014figure supplement 3B, top; see also Materials and methods). Upon subsequent addition of a separate NTP subset (GTP and CTP), enabling synthesis of transcripts up to 14 nt in length, ~ 27% of the resulting complexes showed formation of a stable rewound-promoter state (Figure 1\u2014figure supplement 3B, bottom), as expected for promoter escape and formation of a transcription elongation complex. The results show that RNAP-promoter complexes formed in these experiments are transcriptionally active and are competent for promoter escape (see also Materials and methods).\n\nFocusing on the class of trajectories that showed promoter unwinding after binding (as opposed to other classes of trajectories that did not show promoter unwinding after binding; Figure 1\u2014figure supplement 3A ), we analysed trajectories further to define the kinetics of promoter unwinding (see Materials and methods). Using hidden Markov model (HMM; van de Meent et al., 2014), we extracted dwell times for the pre-unwinding states and plotted a dwell-time histogram (Figure 1B, top right). The dwell-time histogram showed a peaked distribution, indicating a non-Markovian process having more than one rate-limiting steps before the formation of the unwound state (Floyd et al., 2010). We fitted this histogram to a two-exponential function (see Materials and methods for a detailed explanation; Floyd et al., 2010), and estimated the total time spent in the pre-unwinding state to be ~7.5 s (Figure 1B, top right; Figure 1D).\n\nTo assess whether the assay reports accurately on the kinetics of promoter unwinding, we analysed altered promoter derivatives predicted to unwind more quickly or more slowly than lacCONS. To accelerate unwinding, we lowered the energy barrier for unwinding by introducing a non-complementary sequence at positions \u201310 to \u20134 relative to the transcription start site (pre-unwound lacCONS-[+ 2 Cy3]; Figure 1\u2014figure supplement 1). Time trajectories for pre-unwound lacCONS-[+ 2 Cy3] were qualitatively similar to those for lacCONS-[+ 2 Cy3] in terms of the intensity increase (Figure 1B, middle left, S4A) and the shape of the dwell-time histogram (Figure 1B, middle right); however, the trajectories showed significantly shorter dwell times in the pre-unwinding state (~2.8 s vs. ~7.5 s; Figure 1B, middle right vs. top right). To decelerate the process, we raised the energy barrier for unwinding by introducing a G/C-rich sequence at positions \u20134 to +1 relative to the transcription start site (G/C lacCONS-[+ 2 Cy3]; Figure 1\u2014figure supplement 1). Time trajectories for G/C lacCONS-[+ 2 Cy3] showed significantly longer dwell times in the pre-unwinding state (~18.8 s vs. 7.5 s; Figure 1B, bottom right vs. top right; Figure 1D). Taken together, these results show that dwell times in the pre-unwinding state depend on energy barriers for promoter unwinding, consistent with expectation that the dwell times report on the kinetics of promoter unwinding.\n\nNext, to determine whether promoter unwinding occurs in one step, or in more than one step, we assessed whether unwinding of the upstream half of the transcription bubble (positions \u201311 to \u20135) coincides with, or does not coincide with, unwinding of the downstream half of the transcription bubble (positions \u20134 to +2). To probe unwinding of the upstream half of GC promoter bubble, we performed analogous smUIFE experiments using promoter derivatives having Cy3 incorporated in the upstream half of the transcription bubble, at template-strand position \u20139 (lacCONS-[\u20139 Cy3] and G/C lacCONS-[\u20139 Cy3]; and Figure 1\u2014figure supplement 1). The resulting trajectories were similar in terms of intensity increases (Figure 1\u2014figure supplement 4B) and dwell-time-distribution shapes to those obtained with promoter DNA fragments having Cy3 incorporated in the downstream edge of the transcription bubble, but the dwell times in the pre-unwinding state were significantly shorter: ~ 5.5 s vs. ~7.5 s for lacCONS-[\u20139 Cy3] vs. lacCONS-[+ 2 Cy3] (Figure 1C, top right vs. Figure 1B, top right; Figure 1D) and ~6.0 s vs. ~18.8 s for G/C lacCONS-[\u20139 Cy3] vs. G/C lacCONS-[+ 2 Cy3] (Figure 1C, bottom right vs. Figure 1B, bottom right; 1D). We conclude that, for the promoters analysed, unwinding of the upstream half of the transcription bubble occurs faster than unwinding of the downstream half of the transcription bubble, and we conclude that we can estimate from our data both the reaction time required for unwinding of the upstream half of the transcription bubble, tUNWIND-UP (from the lifetime of the pre-unwinding state when Cy3 is incorporated at position \u20139; ~ 5.5 s for lacCONS), and the reaction time required for the subsequent unwinding of the downstream half of the transcription bubble, tUNWIND-DOWN (from the difference in lifetimes between the pre-unwinding state when Cy3 is incorporated at position +2 and the pre-unwinding state when Cy3 is incorporated at position \u20139; ~ 2.0 s for lacCONS; Figure 1D). Our results confirm previous results (Boyaci et al., 2019; Chen et al., 2020; Rogozina et al., 2009; Suh et al., 1993; Helmann and deHaseth, 1999; Lim et al., 2001; Auner et al., 2003), indicating that promoter unwinding proceeds in a step-wise fashion, in an upstream-downstream direction, and suggest that the step for upstream unwinding is slower than downstream unwinding for lacCONS (~5.5 s vs. ~2.0 s), whereas the step for downstream unwinding is slower than upstream unwinding for G/C lacCONS (~6.0 s vs. ~13.0 s).\n\n### smUIFE in the presence of an inhibitor that prevents RNAP clamp opening\n\nTo determine whether promoter unwinding is affected by preventing opening of the RNAP clamp, we repeated our experiments in presence of myxopyronin (Myx; Chakraborty et al., 2012; Feklistov et al., 2017; Mukhopadhyay et al., 2008; Belogurov et al., 2009; Dulin et al., 2018), an RNAP inhibitor that prevents RNAP clamp opening (Chakraborty et al., 2012; Duchi et al., 2018; Mukhopadhyay et al., 2008; state with an smFRET efficiency, E*~0.36 in Figure 2\u2014figure supplement 1D) and that allows formation of heparin-sensitive RNAP-promoter complexes but prevents formation of heparin-resistant RNAP-promoter complexes (Mukhopadhyay et al., 2008; Figure 2\u2014figure supplement 1A\u2013B, ). We reasoned that, if clamp opening is obligatory for promoter unwinding, preventing clamp opening by addition of Myx should either prevent or delay downstream unwinding. We first performed smUIFE experiments in the presence of Myx using promoter DNA fragment lacCONS-[+ 2 Cy3], which has Cy3 incorporated at the downstream edge of the transcription bubble. The results showed a fluorescence intensity enhancement of ~2.4-fold, consistent with unwinding of the downstream edge of the transcription bubble (Figure 2B, bottom; Figure 2\u2014figure supplement 1C; see Feklistov et al., 2017) and showed a dwell time between initial binding and intensity enhancement of ~4.1 s (Figure 2C, bottom). We next performed smUIFE experiments in the presence of Myx using promoter DNA fragment lacCONS-[\u20139 Cy3], which has Cy3 incorporated in the upstream half of the transcription bubble. The results were essentially identical: a fluorescence intensity enhancement of ~2.4-fold (Figure 2B, top; Figure 2\u2014figure supplement 1C, top) and a dwell time between initial binding and intensity enhancement of ~4.0 s (Figure 2C). For both promoter derivatives, the observed fluorescence intensity enhancements were similar in the absence and presence of Myx (Figure 1\u2014figure supplement 4 vs. Figure 2\u2014figure supplement 1C), and the observed dwell times between initial binding and intensity enhancement times were shorter \u2013 not longer \u2013 in the presence of Myx than in the absence of Myx (~3.5 s shorter for transcription-bubble downstream edge and ~1.5 s shorter for transcription-bubble upstream half; Figure 2B\u2013C vs. Figure 1B\u2013C, top panels). We suggest that Myx prevents formation of heparin-resistant open complexes either by preventing loading of unwound DNA into active-centre cleft or by preventing subsequent locking of the RNAP clamp. We infer \u2013 contrary to the models in which clamp opening is obligatory for promoter unwinding \u2013 that preventing RNAP clamp opening does not prevent promoter unwinding, and increases, not decreases, the kinetics of promoter unwinding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig2-v2.jpg)\n\n**Figure 2.:** (A) Design of promoter unwinding experiment in presence of myxopyronin (Myx). Blue sphere, Myx; rest as in 1 A. (B) (Left) Time trajectory of intensity from Cy3 on upstream (top) and downstream (bottom) segment of promoter bubble. Colours as in 1B. Frame rates: 50 ms. Laser powers: 0.60 mW. (Right) Dwell-time histograms of promoter state before unwinding, tUNWIND.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Raw images showing field of view (24 \u03bcm \u00d7 24 \u03bcm) with immobilised biotin promoter fragment bound to labelled RNAP complexes formed in presence of Myx (left), and with remaining immobilised hexahistidine-tagged RNAP holoenzyme complexes bound to Cy3-labelled promoter fragment, formed in presence of Myx, after addition of heparin (right). (B) Mean number of localisations per field of view for single Cy3-labelled promoter fragments bound to immobilised hexahistidine-tagged RNAP holoenzyme, formed in presence of Myx, before and after addition of heparin. Mean number of localisations are average of three measurements. Error bars represent the standard deviation from the mean. (C) Hidden Markov model (HMM)-assigned histograms and Gaussian fits of fluorescence intensities corresponding to pre-unwinding (yellow) and post-unwinding (green) states for promoter fragments with Cy3 on +2 position of the non-template strand (top) or \u20139 position of the template strand (bottom) of the promoter bubble. Mean intensities for the two states and fold-increase of intensities are shown (inset). (D) Histogram and Gaussian fit of E* showing mean E* values for clamp conformational state for clamp-labelled RNAP molecules bound to immobilised lacCONS-promoter fragments in presence of Myx.\n\n### Single-molecule FRET\n\nTo assess directly whether RNAP clamp motions occur during RPo formation, we performed smFRET measurements using an RNAP derivative containing Cy3B, serving as a fluorescence donor, incorporated at the tip of the RNAP clamp and Alexa647, serving as a fluorescence acceptor, incorporated at the tip of the opposite wall of the RNAP active-centre cleft, monitoring smFRET efficiency (E*) during RPo formation (Figure 3A). In previous smFRET studies using the same probes, we showed that the RNAP clamp interconverts between open (E* ~ 0.2), partly-closed (E* ~ 0.3), and closed (E* ~ 0.4) conformations in solution (Chakraborty et al., 2012; Lin et al., 2018; Duchi et al., 2018; Mazumder et al., 2021). To monitor RNAP clamp motions during the formation of RPo, we immobilised promoter DNA molecules (biotin-lacCONS; Figure 1\u2014figure supplement 1, Figure 3\u2014figure supplement 1) on a coverslip mounted on a TIRF microscope, started recording, and added the doubly labelled RNAP (Figure 3A). Binding of doubly labelled RNAP molecules to DNA was monitored by detecting the simultaneous appearance of donor and acceptor fluorescence emission signals on the surface, and RNAP clamp motions in RNAP-promoter complexes at and after binding were monitored by quantifying E* (Figure 3\u2014figure supplement 2A). Control experiments show that: (i) doubly labelled RNAP molecules bound exclusively to immobilised promoter DNA molecules (Figure 3\u2014figure supplement 1A); (ii) the majority (~87%) of the resulting complexes were resistant to challenge with heparin (Figure 3\u2014figure supplement 1B); and (iii) doubly labelled RNAP molecules did not bind stably to immobilised non-promoter DNA molecules (Figure 3\u2014figure supplement 2C). These results indicate that sequence-specific, heparin-resistant RNAP-promoter complexes were only formed between the doubly labelled RNAP holoenzyme molecules and promoter DNA fragments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig3-v2.jpg)\n\n**Figure 3.:** (A) Design of experiment monitoring clamp status in real time. Black, ds-DNA; orange, RNAP clamp; grey, rest of RNAP; purple dot, RNAP active-centre; blue, ss-DNA; green, Cy3B; and red, Alexa647. (B) Representative time trajectories of E* for experiments with a lacCONS promoter fragment, showing hidden Markov model (HMM)-assigned closed-clamp state (orange), locked-clamp state (red), and interstate transition (dark-blue). Expected range of E* values for an open-clamp state is highlighted in light blue. Frame rate: 100 ms. Laser powers: 200 \u03bcW in red and 500 \u03bcW in green. (C) HMM-assigned histograms and Gaussian fits of E* for full-time trajectories from experiments with a lacCONS promoter fragment. (D) Dwell-time histograms of time before transition to the locked-clamp state, tLOCK, for experiments with a lacCONS promoter fragment. (E) Table showing mean E*; difference in E* (\u0394E*) between closed-clamp or locked-clamp states and time to transition to a locked-clamp state after initial binding for the lacCONS and lacCONS-GC promoter fragments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Raw images of the green emission channel showing field of view (24 mm \u00d7 24 mm) with immobilised biotin-lacCONS promoter fragments (left), with immobilised biotin-lacCONS promoter fragments bound to clamp-labelled RNAP (middle), and with remaining immobilised biotin-lacCONS promoter fragments bound to clamp-labelled RNAP, after addition of heparin (right). (B) Mean number of localisations per field of view for single clamp-labelled RNAP molecules with both green (Cy3B) and red (Alexa647) probes, bound to immobilised biotin-lacCONS promoter fragments, before and after addition of heparin. Mean number of localisations are average of three measurements. Error bars represent the standard deviation from the mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Fluorescence intensity vs. time trajectories showing simultaneous appearance (at ~8 s) of donor and acceptor signals from labelled RNAP bound to biotin-lacCONS promoter fragment (top) and FRET efficiency, E* (bottom). Range for expected E* values corresponding to an open-clamp conformation is highlighted in cyan. (B) Histogram and Gaussian fit of E* values for first five frames after binding define the mean E* for initial binding. Frame duration: 100 ms. Laser powers: 200 \u03bcW in red and 500 \u03bcW in green. (C) Fluorescence intensity vs. time trajectories showing simultaneous appearance of donor and acceptor signals from labelled RNAP bound to biotin-non-promoter fragment (top) and FRET efficiency, E* (bottom). Range for expected E* values corresponding to an open-clamp conformation is highlighted in cyan.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Hidden Markov model (HMM)-assigned E* time trajectories showing closed-clamp states (orange), locked-clamp states (red), open-clamp states (cyan), and interstate transitions (dark-blue).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Time trajectory of E*, showing hidden Markov model (HMM)-assigned closed-clamp state (orange) and locked-clamp state (red). Frame duration: 400 ms. Laser powers: 50 \u03bcW in red and 150 \u03bcW in green. (B) HMM-assigned histograms and Gaussian fits of E* for first five frames (left) and full time trajectories (right). (C) Dwell-time histograms for time before transition to the locked-clamp state, tLOCK.\n\nIn order to determine the RNAP clamp conformations immediately upon initial binding of RNAP to promoter DNA, we plotted distributions of E* values for the first five frames (0.5 s) after initial binding. The resulting distributions could be fitted to a Gaussian function with mean E* of ~0.4, indicating that the initial binding of RNAP to promoter DNA involved RNAP with a closed clamp (Figure 3\u2014figure supplement 2B). Next, we examined full E* time trajectories, for up to ~60 s, following initial binding, seeking E* changes potentially consistent with RNAP clamp opening. We detected no E* changes \u2013 not even transient E* changes, within the ~100 ms temporal resolution of the analysis \u2013 that potentially could be assigned as consistent with clamp opening (E* of ~0.2; Figure 3B, area highlighted in cyan; Figure 3\u2014figure supplement 2A).\n\nNext, we examined full E* time trajectories, following initial binding, seeking any E* changes potentially consistent with any RNAP clamp motions (see Materials ad methods and Figure 3\u2014figure supplement 3 for full classification). Intriguingly, a large fraction of trajectories (~44%) started at E*~0.40, indicative of the previously defined closed-clamp state, then transitioned to E*~0.48, indicative of a new, more tightly closed, clamp state, and then returned to E*~0.40 or photobleached (Figure 3B\u2013C; Figure 3\u2014figure supplement 3B, top). We refer to the new, more tightly closed, clamp state with E*~0.48, as the \u2018locked-clamp\u2019 state. We further analysed E* time trajectories to determine the time between initial binding of RNAP to promoter DNA and appearance of the locked-clamp state. The corresponding dwell-time histogram showed a peaked distribution and was fitted to a two-exponential function, yielding ~7.8 s, as the time between initial binding of RNAP to promoter DNA and appearance of the locked-clamp state (Figure 3D), a time that, within error, is identical to the ~7.5 s time between initial binding and unwinding of the downstream half of the transcription bubble.\n\nAnalogous experiments with a promoter derivative having G/C-rich sequence at positions \u20134 to +1 relative to the transcription start site, G/C lacCONS, yielded similar results: that is, initial binding by RNAP with a closed-clamp state (E*~0.41; Figure 3\u2014figure supplement 4A; B, left); no trajectories showing transitions \u2013 not even transient transitions, within the ~400 ms temporal resolution of the analysis \u2013 to an open-clamp state during a period up to ~200 s after initial binding; a large fraction of trajectories (~48%), showing a transition to a locked-clamped state (E*~0.50, Figure 3\u2014figure supplement 4A; B, right), and a time between initial binding and appearance of the locked-clamped state matching the time required for unwinding of the downstream half of the transcription bubble (Figure 3E, Figure 3\u2014figure supplement 4C).\n\nWe conclude that the RNAP clamp is in a closed state upon promoter binding, that the RNAP clamp does not open--not even transiently, within the temporal resolution of our analysis \u2013 between promoter binding and promoter unwinding, and that the RNAP clamp closes further \u2013 \u2018locks\u2019 \u2013 after promoter unwinding.\n\n## Discussion\n\nTaken together, our results indicate that RPo formation by E. coli RNAP \u03c370 holoenzyme at a consensus bacterial core promoter proceeds through a \u2018bind-unwind-load-and-lock\u2019 mechanism, in which the RNAP clamp is closed upon promoter binding, remains closed during unwinding of promoter DNA \u2013 which proceeds in an upstream-to-downstream direction \u2013 and then closes further, locking the unwound DNA in the RNAP active-centre cleft (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70090/elife-70090-fig4-v2.jpg)\n\n**Figure 4.:** Orange, closed clamp; red, locked clamp; grey, rest of RNAP; purple dot, RNAP active-centre; black, ds-DNA; magenta, partly unwound bubble and blue, fully unwound bubble.\n\nAs described in the introduction, it has been the predominant view that structural considerations necessitate RNAP clamp opening for loading of dsDNA into the RNAP active-centre cleft but do not necessitate RNAP clamp opening for loading of ssDNA into the RNAP active-centre cleft (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Young et al., 2002; Darst et al., 2002; Chakraborty et al., 2012). Under that predominant view, our finding that the RNAP clamp remains closed throughout promoter unwinding at a consensus bacterial promoter implies that it is ssDNA, not dsDNA, that enters the RNAP active-centre-cleft, and thus that promoter unwinding occurs at least in part outside, not inside, the RNAP active-centre cleft (Figure 4).\n\nIn contrast to the predominant view, it recently has been speculated, based on molecular-dynamics simulations, that part of the RNAP cleft potentially could become accessible to both dsDNA and ssDNA without clamp opening, due to motions, putatively occurring on the nanosecond time scale, of the RNAP \u03b2 lobe (\u2018gate opening\u2019; Unarta et al., 2021). Under this alternative view, our finding that the RNAP clamp remains closed throughout promoter unwinding at a consensus bacterial promoter potentially could be consistent with either ssDNA or dsDNA entering the RNAP active-centre cleft, and thus potentially could be consistent with promoter unwinding that occurs either outside or inside the RNAP active-centre cleft. Nevertheless, in view of the absence of experimental support for the alternative view, and in view of the mismatch between the nanosecond time scale of the limiting reaction in the alternative view and the millisecond-to-second time scales of promoter unwinding, we tend to disfavour this alternative view.\n\nThe consensus bacterial promoter employed in this study has been used in previous work to define transcription mechanisms, including RNAP clamp closure upon RPo formation (Chakraborty et al., 2012), DNA scrunching in transcription-start-site selection (Winkelman et al., 2016), DNA scrunching in initial transcription (Kapanidis et al., 2006), and RNAP pausing in initial transcription (Duchi et al., 2016; Winkelman et al., 2020), all of which subsequently were validated for other promoters. Nevertheless, we emphasise that it remains to be determined whether the bind-unwind-load-and-lock pathway defined here for the consensus bacterial promoter is also used by E. coli RNAP \u03c370 holoenzyme at other promoters and by other E. coli RNAP holoenzymes. Consistent with the possibility that a similar mechanism is used by E. coli RNAP \u03c370 holoenzyme at other promoters, a recent cryo-EM study of transcription initiation by E. coli RNAP \u03c370 holoenzyme at another promoter, rpsT P2, identified structural states having a partly unwound transcription bubble and a closed RNAP clamp (Chen et al., 2020). We note that the smUIFE and smFRET methods reported in this work could be applied to analyse transcription initiation by any E. coli RNAP holoenzyme at any promoter and potentially could be adapted to analyse transcription initiation by any RNAP \u2013 bacterial, archaeal, or eukaryotic \u2013 at any promoter. Extension of these assays using more complex labelling and imaging schemes should allow simultaneous observation of promoter unwinding and RNAP clamp conformational changes in the same molecule, enabling a more detailed view of the coupling of the molecular motions involved in promoter unwinding. Finally, development of massively parallel single-molecule assays interrogating large libraries of promoter sequences would enable a comprehensive analysis of general and specific features of this first step in transcription initiation for different promoter sequences.\n\n## Materials and methods\n\n### Preparation of reagents: RNAP, oligodeoxyribonucleotides, Myx\n\n#### RNAP derivatives\n\nFor experiments in Figures 1 and 2, hexahistidine-tagged E. coli RNAP holoenzyme was prepared using co-expression of genes encoding RNAP \u03b2', \u03b2, \u03b1, \u03c9, and \u03c370 subunits to afford an RNAP \u03c370 holoenzyme derivative as follows: single colonies of E. coli strain BL21(DE3) (Millipore) co-transformed with plasmid pV10 (Belogurov et al., 2007) and plasmid pRSFduet-sigma (Hudson et al., 2009) were used to inoculate 20 ml LB broth (Sambrook and Russell, 2001) containing 100 \u03bcg/ml ampicillin and 50 \u03bcg/ml kanamycin and cultures were incubated 16 hr at 37\u00b0C with shaking. Culture aliquots (2 \u00d7 10 ml) were used to inoculate LB broth (2 \u00d7 1 L) containing 100 \u03bcg/ml ampicillin and 50 \u03bcg/ml kanamycin; cultures were incubated at 37\u00b0C with shaking until OD600 = 0.6; IPTG was added to 1 mM; and cultures were further incubated 3.5 hr at 37\u00b0C with shaking. Cells were harvested by centrifugation (4000 \u00d7 g; 20 min at 4\u00b0C), re-suspended in 20 ml buffer A (10 mM Tris-HCl, pH 7.9, 200 mM NaCl, and 5% glycerol), and lysed using an EmulsiFlex-C5 cell disrupter (Avestin). The lysate was cleared by centrifugation (20,000 \u00d7 g; 30 min at 4\u00b0C), precipitated with polyethyleneimine (Sigma-Aldrich) as in Niu et al., 1996, and precipitated with ammonium sulphate as in Niu et al., 1996. The precipitate was dissolved in 30 ml buffer A and loaded onto a 5 ml column of Ni-NTA-agarose (Qiagen) pre-equilibrated in buffer A; the column was washed with 50 ml buffer A containing 10 mM imidazole, and eluted with 25 ml buffer A containing 200 mM imidazole. The sample was further purified by anion-exchange chromatography on Mono Q 10/100 GL (GE Healthcare; 160 ml linear gradient of 300\u2013500 mM NaCl in 10 mM Tris-HCl, pH 7.9, 0.1 mM EDTA, and 5% glycerol; flow rate = 2 ml/min). Fractions containing hexahistidine-tagged E. coli RNAP \u03c370 holoenzyme were pooled, concentrated to ~2 mg/ml using 30 kDa MWCO Amicon Ultra-15 centrifugal ultrafilters (EMD Millipore), and stored in aliquots at \u201380\u00b0C.\n\nFor experiments in Figure 3 and Figure 3\u2014figure supplements 1\u20134, fluorescently labelled, hexahistidine-tagged E. coli RNAP holoenzyme (hereafter \u2018labelled-RNAP\u2019) with Cy3B and Alexa647 at positions 284 on the \u03b2' subunit, and 106 on the \u03b2 subunit, respectively, was prepared using in vivo reconstitution methods as described (Lin et al., 2018).\n\n#### Nucleic acids\n\nOligodeoxyribonucleotides were purchased from IBA Lifesciences, dissolved in nuclease-free water (Ambion) to a final concentration of 100 \u03bcM and stored at \u201320\u00b0C. Oligodeoxyribonucleotides used in Figure 1, Figure 1\u2014figure supplements 2\u20134, and Figure 2\u2014figure supplement 1 were labelled with Cy3 N-hydroxysuccinimidyl ester (Fisher Scientific) as described (Mukhopadhyay et al., 2003). Oligodeoxyribonucleotides were annealed by mixing two complementary strands in a ratio of 1:1 in hybridisation buffer (50 mM Tris\u2013HCl pH 8.0, 500 mM NaCl, 1 mM EDTA) and by heating for 5 min at 95\u00b0C, followed by cooling to 25\u00b0C in 2\u00b0C steps with 1 min per step using a thermal cycler (Applied Biosystems).\n\nMyx was prepared as described (Mukhopadhyay et al., 2008).\n\n### Single-molecule fluorescence microscopy: smUIFE experiments\n\nFor experiments in Figures 1 and 2, Figure 1\u2014figure supplements 2\u20134, and Figure 2\u2014figure supplement 1, observation wells for real-time experiments were prepared as described (Lin et al., 2018). Briefly, a biotin-PEG-passivated glass surface was prepared, functionalised with Neutravidin (Sigma-Aldrich), and treated with biotinylated anti-hexahistidine monoclonal antibody (Penta-His Biotin Conjugate; Qiagen), yielding wells with (biotinylated anti-hexahistidine monoclonal antibody)-Neutravidin-biotin-PEG-functionalised glass floors. Hexahistidine-tagged RNAP \u03c370 holoenzyme molecules were immobilised in observation wells with (biotinylated anti-hexahistidine monoclonal antibody)-Neutravidin-biotin-PEG-functionalised glass floors, as follows: aliquots (30 \u03bcl) of 0.1 nM hexahistidine-tagged RNAP \u03c370 holoenzyme in KG7 buffer (40 mM HEPES-NaOH, pH 7.0, 100 mM potassium glutamate, 10 mM MgCl2, 1 mM dithiothreitol, 100 \u03bcg/ml bovine serum albumin, and 5% glycerol) were added to the observation chamber and incubated 2\u20134 min at 22\u00b0C, solutions were removed, wells were washed with 2 \u00d7 30 \u03bcl KG7, and 30 \u03bcl KG7 imaging buffer (KG7 buffer containing 2 mM Trolox, 1 mg/ml glucose oxidase, 40 \u03bcg/ml catalase, and 1.4% w/v D-glucose) at 22\u00b0C was added.\n\nFor experiments in Figure 1\u2014figure supplement 2, Cy3-labelled promoter (or non-promoter) fragments were manually added (final concentration of 2 nM) to the observation wells containing immobilised RNAP \u03c370 holoenzyme (or RNAP core enzyme) molecules and incubated for 5 min; wells were then washed with KG7 and movies were recorded. Next, observation wells containing RNAP-promoter complexes were supplemented with KG7 containing 250 \u03bcg/ml heparin (Sigma-Aldrich) solution, incubated for 1 min; wells were then washed with KG7 and movies were recorded.\n\nFor experiments monitoring RNAP-promoter complex formation reactions in real time (Figures 1 and 2, Figure 1\u2014figure supplement 3, and Figure 2\u2014figure supplement 1), observation wells containing immobilised RNAP were supplemented with KG7 imaging buffer, recordings were started, and Cy3-labelled promoter (or non-promoter) fragments were manually added (using a pipette) to the observation wells during the recording so as to yield a final concentration of 2 nM of Cy3-labelled DNA in the wells. For experiments in Figure 2\u2014figure supplement 1A-C, same procedures were followed, except that KG7 imaging buffer was supplemented with 20 \u03bcM Myx.\n\nFor experiments in Figure 1\u2014figure supplement 3B top panel, observation wells containing immobilised RNAP-promoter complexes (formed with LC-[+ 2-Cy3]; sequence in Figure 1\u2014figure supplement 1) were supplemented with KG7 buffer containing an NTP subset (500 \u03bcM ApU and 100 \u03bcM each of ATP, GTP, and UTP) directing synthesis of RNA up to position +11(RPitc <11), incubated for 5 min at 22\u00b0C, solutions were removed, wells were washed with 2 \u00d7 30 \u03bcl KG7, and 30 \u03bcl KG7 imaging buffer at 22\u00b0C was added. Movies of complexes corresponding to stalled RPitc <11 molecules were recorded. For experiments in Figure 1\u2014figure supplement 3B bottom panel, observation wells containing immobilised stalled RPitc <11 molecules were supplemented with KG7 imaging buffer, the recording of a movie was started, and an NTP subset (100 \u03bcM each of GTP and CTP) directing extension of stalled complexes with 11-mer RNA to a 14-mer RNA was added in real time. Extension of RNA up to +11 results in stalled initial transcribing complexes (Dulin et al., 2018) and extension of RNA to +14 results in promoter escape and leads to formation of stalled elongation complexes for the lacCONS promoter used (Wang, Mazumder et al., in preparation).\n\n### Single-molecule fluorescence microscopy: smFRET experiments\n\nFor experiments in Figure 3 and Figure 3\u2014figure supplements 1\u20134, observation wells of biotin-PEG-passivated glass surface were prepared and functionalised with Neutravidin (Sigma-Aldrich) to yield Neutravidin-biotin-PEG-functionalised glass floors. Biotin-tagged promoter DNA fragments were then immobilised in these observation wells as follows: aliquots (30 \u03bcl) of 0.05 nM biotin-tagged promoter fragments in KG7 were added to the observation chamber and incubated 1 min at 22\u00b0C, solutions were removed, wells were washed with 2 \u00d7 30 \u03bcl KG7, and 30 \u03bcl KG7 imaging buffer at 22\u00b0C was added.\n\nFor experiments in Figure 3\u2014figure supplement 1, clamp-labelled RNAP molecules were manually added (final concentration of 2 nM) to the observation wells containing immobilised promoter DNA fragments, incubated for 5 min, wells were washed with KG7, and movies were recorded. Next, observation wells containing RNAP-promoter complexes were supplemented with KG7 containing 250 \u03bcg/ml heparin solution, incubated for 1 min, wells were washed with KG7, and movies were recorded.\n\nFor experiments monitoring RNAP-promoter complex formation reactions in real time (Figure 3 and Figure 3\u2014figure supplements 2\u20134), observation wells containing immobilised promoter (or non-promoter) fragments were supplemented with KG7 imaging buffer, recordings were started, and labelled-RNAP molecules (with Cy3B and Alexa647 at positions 284 on the \u03b2' subunit, and 106 on the \u03b2 subunit of RNAP \u03c370 holoenzyme) were manually added (using a pipette) to the observation wells during the recording so as to yield a final concentration of 2 nM of labelled RNAP in the wells.\n\n### Single-molecule fluorescence microscopy: data collection\n\nSingle-molecule fluorescence experiments were performed using a custom-built objective-type TIRF microscope (Holden et al., 2010). Light from a green laser (532 nm; Samba; Cobolt) and a red laser (635 nm; CUBE 635-30E, Coherent) was combined using a dichroic mirror coupled into a fiber-optic cable focused onto the rear focal plane of a 100\u00d7 oil-immersion objective (numerical aperture 1.4; Olympus) and was displaced off the optical axis, such that the incident angle at the oil-glass interface of a stage-mounted observation chamber exceeded the critical angle, thereby creating an exponentially decaying evanescent wave (Axelrod et al., 1983). Alternating-laser excitation (ALEX; Kapanidis et al., 2006; Lee et al., 2005) was implemented by directly modulating the green and red lasers using an acousto-optical modulator (1205 C, Isomet). Fluorescence emission was collected from the objective, was separated from excitation light using a dichroic mirror (545 nm/650 nm, Semrock) and emission filters (545 nm LP, Chroma; and 633/25 nm notch filter, Semrock), was focused on a slit to crop the image, and then was spectrally separated (using a dichroic mirror; 630 nm DLRP, Omega) into donor and emission channels focused side-by-side onto an electron-multiplying charge-coupled device camera (EMCCD; iXon 897; Andor Technology). A motorised x/y-scanning stage (MS-2000; ASI) was used to control the sample position relative to the objective.\n\nFor experiments in Figures 1\u20132, Figure 1\u2014figure supplements 2\u20134, and Figure 2\u2014figure supplement 1, frame rates were either 50 or 200 ms, and laser powers were either 0.60 or 0.15 mW at 532 nm. For experiments in Figure 3 and Figure 3\u2014figure supplements 2\u20133, frames were either 100 or 200 ms long, and laser powers were either 200 \u03bcW in red, 500 \u03bcW in green, or 80 \u03bcW in red, 200 \u03bcW in green, respectively. For experiments in Figure 3\u2014figure supplement 4, frame rates were 400 ms long, and laser powers were 50 \u03bcW in red, 150 \u03bcW in green. All data acquisition was carried out at 22\u00b0C.\n\n### Single-molecule fluorescence microscopy: data analysis for smUIFE experiments\n\nFor experiments in Figures 1\u20132, Figure 1\u2014figure supplements 2\u20134, and Figure 2\u2014figure supplement 1, localisation of single fluorescence emitters was detected and background-corrected fluorescence intensity vs. time trajectories from each localisation were extracted and curated to exclude trajectories exhibiting very high fluorescence intensities (ICy3) upon binding (ICy3 >750 photon counts), trajectories exhibiting multiple binding events during the observation window and trajectories exhibiting photoblinking. Initial inspection of time trajectories for experiments with lacCONS-[+ 2 Cy3] revealed three main classes of molecules. Class-I molecules started with the appearance of signal having intensity of ~200 photon counts, which remained stable until its disappearance (~46%; Figure 1\u2014figure supplement 3, top). Class-II molecules also started with appearance of a signal having intensity of ~200 photon counts, followed by intensity increase to ~450 photon counts after some time, followed by either signal disappearance or intensity decrease to ~200 photon counts (~45%: Figure 1B, Figure 1\u2014figure supplement 3, middle). Class-III molecules started with appearance of a signal having intensity of ~450 photon counts, followed by intensity decrease to ~220 photon counts, and subsequent signal disappearance, or intensity increase to ~450 photon counts (~9%; Figure 1\u2014figure supplement 3, bottom). Similar observations were made for all other Cy3-labelled promoters studied.\n\nBased on intensity levels, we assigned states with no signal to absence of a promoter DNA or to a bleached probe; states with ~200 photon counts to a promoter DNA that is dsDNA in the Cy3 vicinity; and states with ~450 counts to a promoter that is unwound in the Cy3 vicinity. We thus assigned events in Class-I molecules to binding of a promoter DNA molecule to RNAP, followed by dissociation of complexes, indicating formation of non-specific complexes; these events are also consistent with bleaching occurring prior to any intensity increase. We assigned events in Class-II molecules to binding of a promoter DNA molecule to RNAP, followed by promoter unwinding, followed by bleaching or promoter rewinding. Finally, we assigned events in Class-III molecules to binding of an unwound-promoter DNA molecule to RNAP, followed by promoter rewinding, followed by bleaching or promoter unwinding, indicating formation of complexes where the initial unwinding event is missed. We further curated intensity time trajectories up to the point of initial ~2 fold intensity enhancement for Class-II molecules only, since they showed an unambiguous bubble-opening event after initial binding.\n\nNext, photon counts (ICy3) for the set of curated intensity vs. time trajectories were divided by 1000 to obtain ICy3*; the corresponding ICy3* vs. time trajectories were analysed to identify the different fluorescence intensity states using HMM as implemented in the MATLAB (MathWorks) software package ebFRET (van de Meent et al., 2014) using a three-state model (one of which corresponds to a negligible ICy3* state). The intensity ICy3*, for each of the other two HMM-derived states, was extracted from ebFRET and converted to ICy3 values, which in turn were binned and plotted as ICy3 count histograms (Figure 1\u2014figure supplement 4, Figure 2\u2014figure supplement 1C). These histograms were fitted using Gaussian distributions in Origin to define the mean fluorescence intensity that corresponds to each state (Figure 1\u2014figure supplement 4, Figure 2\u2014figure supplement 1).\n\nDwell times for each fluorescence intensity states were extracted from HMM fits to ICy3* vs. time trajectories, were binned, and were plotted as distribution histograms in Origin. For experiments in Figures 1\u20132, dwell-time distributions corresponding to the pre-unwinding state resembled peaked distributions indicating presence of at least two sub-steps and were fit to a two-exponential function of the form y = A*(e-x/t1 \u2013 e-x/t2), where y represents counts of dwells in the closed-bubble state following the initial binding event and before the signal increase event, x represents time, and t1 and t2 represent the lifetime of the individual sub-steps. From the fit, we estimate the lifetimes corresponding to the two sub-steps, as well as the total time spent in the first closed-bubble state (as the sum of time spent in the two sub-steps; Figure 2B, right panels).\n\nWe note that it is possible that the transition involves more than two steps, but our current analysis and available data sets cannot specify the number and duration of each sub-step; consequently, we interpret qualitatively the shape of the dwell-time histogram as an indication of a multi-step process, and focus on the total time spent before the intensity enhancement event, since that can be interpreted with certainty as the time taken before unwinding in the vicinity of Cy3.\n\n### Single-molecule fluorescence microscopy: data analysis for smFRET experiments\n\nFor experiments in Figure 3 and Figure 3\u2014figure supplements 1\u20134, localisations in donor-emission (green) and acceptor-emission (red) channels were detected using the peak-finding algorithm of the MATLAB (MathWorks) software package Twotone, as described (Holden et al., 2010). Peaks detected in both emission channels (i.e., peaks for molecules containing both donor and acceptor probes) were fitted with two-dimensional Gaussian functions to extract background-corrected intensity vs. time trajectories for donor-emission intensity upon donor excitation (IDD), acceptor-emission intensity upon donor excitation (IDA), and acceptor-emission intensity upon acceptor excitation (IAA), as described (Holden et al., 2010). Intensity vs. time trajectories were curated to exclude trajectories exhibiting IDD <100 or > 1000 counts or IAA <200 or > 1000 counts, trajectories exhibiting multiple-step donor or acceptor photobleaching, trajectories exhibiting donor or acceptor photo-blinking and portions of trajectories following donor or acceptor photobleaching. Intensity vs. time trajectories were used to calculate trajectories of apparent donor-acceptor smFRET efficiency (E*) as described (Holden et al., 2010; Kapanidis et al., 2004; Lee et al., 2005):\n\nE* = IDA/ (IDD + IDA)\n\nE* time trajectories were analysed globally to identify E* states by use of HMM as implemented in MATLAB (MathWorks) software package ebFRET (van de Meent et al., 2014).\n\nHMM analysis of E* time trajectories revealed four types of molecules. The most abundant were Class-I molecules (~45% of all events) that started with E*~0.40, remained at E*~0.40, and then bleached (Figure 3\u2014figure supplement 3A), and Class-II molecules (~44%) that started with E*~0.40, transitioned to E*~0.48, and then bleached or returned to E*~0.40 (Figure 3\u2014figure supplement 3B, top). More rarely, we observed Class-III molecules (~9% of all events) that started with E*~0.48, transitioned to E*~0.40, followed by bleaching or transition to E*~0.48; Figure 3\u2014figure supplement 3C, and, very rarely, we observed Class-IV molecules (~2%) that started with E*~0.40, switched between E*~0.40\u20130.20 and bleached (Figure 3\u2014figure supplement 3D).\n\nWe refer to the new E*~0.48 state observed here as the \u2018locked-clamp\u2019 conformation, with Class-II molecules providing information on the time taken to form the \u2018locked-clamp\u2019 conformation; in contrast, Class-I molecules represent RNAP molecules that either bleach before the transition to the locked-clamp state or bind non-specifically to DNA; and Class-III molecules represent molecules where the initial clamp locking is missed.\n\nE* time trajectories for Class-II molecules were fitted to a two-state HMM model, E*-values from the fitted model were extracted, binned, and plotted using Origin (Origin Lab), and were fitted to Gaussian distributions using Origin (Figure 3B, right panels and Figure 3\u2014figure supplement 3B, left panel; coloured curves). The resulting histograms provide population distributions of E* states and, for each E* state, define mean E* (Figure 3B, right panels and Figure 3\u2014figure supplement 4B, right panel; coloured bars and inset). Dwell-time distributions corresponding to time spent before the first transition from a closed-clamp state to a locked-clamp state were extracted from HMM fits to E* vs. time trajectories, and were binned and plotted as distribution histograms in Origin (Figure 3 and Figure 3\u2014figure supplement 4C). Dwell-time histograms obtained in this manner exhibited the shape of a peaked distribution, indicating presence of at least two sub-steps, were fitted to a two-exponential function of the form y = A*(e-x/t1 \u2013 e-x/t2), where y represents counts of dwells in the closed-clamp state following the initial binding event and before the clamp-locking event, x represents time, and t1 and t2 represent the lifetimes of the individual sub-steps. From the fit, we estimate the time spent in the two sub-steps, as well as the total time before transition to \u2018locked-clamp\u2019 conformation (tLOCK) from the sum of times corresponding to the two sub-steps. Similar to the case for fluorescence enhancement experiments described previously, we note that there may be more than two steps which contribute significantly to these dwell times, and we could not infer an accurate model in terms of the number and duration of each sub-step involved from this dataset. Therefore, we avoid assigning the two sub-steps to specific conformations or events and focus on the total time spent before the transition to \u2018locked-clamp\u2019 conformation.\n\n### Data and software availability\n\nAll information for replication is included in the submission and data corresponding to each figure are provided as source data files. MATLAB software packages TwoTone and ebFRET are available on GitHub (https://github.com/annawang692/TwoTone2018, Wang, 2020 and http://ebfret.github.io/).\n",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "d553692c-9620-4b92-867d-17c563d93045",
+      "submission_id": "ae451f7d-4623-45b9-8107-85b7eed02145",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, University of Iowa United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70090.sa1](https://doi.org/10.7554/eLife.70090.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis work provides new insights into the molecular mechanism by which RNA polymerase separates the two strands of DNA, generating a single-stranded template for RNA synthesis. Using single-molecule analysis the authors examined two conformational transitions taking place during RNA transcription initiation: DNA unwinding and RNAP clamp movements. The paper will help to distinguish between two competing hypotheses within the literature. Namely, using the bacterial consensus promoter the authors showed that a clamp-opening event is not obligatory for promoter unwinding and that promoter unwinding proceeds via a \"bind-unwind-load-and-lock\" model. The work will be of relevance to a wide range of researchers interested in the molecular basis of gene expression and gene regulation.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcription initiation at a consensus bacterial promoter proceeds via a \"bind-unwind-load- and-lock\" mechanism\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Maria Spies as a Reviewing Editor and Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Nigel J Savery (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers and the reviewing editor found the work well executed and technically sounds, but concluded that additional experiments are needed to exclude the model where the RNAP clamp needs to acquire more open conformations in order for DNA unwinding to take place.\n\n1. Controls suggested by reviewer 1, points (1) and (2) are essential.\n\n2. The results currently presented in the paper are for a consensus promoter. Including another promoter or two would constitute reasonable amount of work and would greatly increase the generality and impact of the work. Studying multiple promoters within the context of one system and one group seems the best way for deciding if the same mechanism is always observed or if a variety of different mechanisms is possible (which may explain the existence of support for different mechanisms in the field).\n\n3. The Discussion is quite brief. The authors could discuss their results in the context of the evidences for other models. In particular, the issue of alternative means through which the DNA may be loaded in the cleft despite a lack of conformational change in the clamp should be discussed.\n\n4. The proposition that no \"open\" clamp conformations were observed in the E* traces needs further discussion. Considering the time resolution of the experiments, very rapid opening would not be detected. Additionally, DNA opening and RNA polymerase opening were measured in separate experiments and therefore, the conclusions rely in part on correlation between results gained in slightly different conditions. This needs to be discussed.\n\nReviewer #1 (Recommendations for the authors):\n\n(1) The claim by the authors that heparin-resistance shows specificity is not convincing as heparin as a variety of effects depending on the system. The authors should do not provide traces from Cy3-labeled promoter-less DNA templates as negative controls. Nor do they provide traces using promoter-less templates to recruit labeled RNAP to the surface. These experiments would allow for the facile identification of non-specific signals. In addition, on promoter templates, core RNAP in the absence of \u03c3 factor could be used as a negative control for promoter-specific signals.\n\n(2) No NTP chase controls are shown to suggest that any of these complexes are on-pathway and capable of escaping the promoter.\n\n(3) These experiments are done with the lacCONS promoter which does not faithfully represent real E. coli promoters. In fact, it is rare for real promoters to have fully consensus sequences. In addition, there may be multiple conformational pathways for DNA unwinding during initiation. Without measuring the process using a variety of real promoters taken from E. coli, no general conclusions regarding \"the\" pathway of initiation can be made.\n\n(4) The premise is that no \"open\" clamp conformations are observed in the E* traces. However, I suppose that only a lower limit on the lifetime of such a state can be given based on the time resolution of the measurement.\n\n(5) It is not clear how to map \"openness\" from FRET measurements presented here to those made in structural work unless there is some calibrated way to convert E* to a distance.\n\nThe combination of these points really limits the impact that this manuscript would have on the field.\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript was presented logically and clearly and I have only a few suggestions for the authors to consider.\n\n1. The smFRET experiments directly examine the state of the clamp, and the experiments support the conclusion that the labelled residues do not adopt the \"open clamp\" conformation during promoter melting (within the time resolution of the experiments). A recent paper has suggested that movement of the \u0392 lobe might allow loading of double-stranded DNA even in the presence of what they called a \"partially closed\" clamp (Unarta et al., PNAS 2021 PNAS April 27, 2021 118 (17) e2024324118). Ref 17 in the current ms, which examined open complex formation in a different system using cryo-em, also raised the possible importance of movements of the \u0392 lobe for loading of dsDNA. These findings do not affect the validity of the author's conclusions about the state of the clamp in their system, but do suggest that some caution might be needed when deciding how strongly these observations about the clamp suggest that unwinding must be taking place prior to loading. It would be useful to discuss the potential role of RNA polymerase conformational changes that would not be reflected in the smFRET analysis when interpreting the data.\n\n2. P8 Para 2 line 3. The term E* is introduced for the first time in the manuscript here and it would be helpful to provide more explanation for readers not familiar with the technique.\n\n3. P8 It is shown that Myx prevents the formation of heparin-resistant complexes, but the reason why the open complexes are not heparin-resistant is not clear, given that promoter unwinding occurs. It would be helpful to add more explanation here: do the authors think that Myx prevents the \"lock\" stage?\n\n4. Figure 2B: is the very short lifetime of the unwound state in the example shown for the +2 construct typical of the data collected and was the lifetime of the -9 constructs typically longer? If so, does this indicate that the presence of the probe at that position is affecting the stability of the open complex (and hence potentially the kinetics of unwinding?) I note that this is related in part to point 3 as these experiments are done with Myx, and so the complexes are heparin-sensitive.\n\n5. Figure S2B, Figure S5B, Figure S6B: number of repeats is not stated.\n",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19ca6a73-6446-47ad-ac9a-0a1363d11d3d",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C1",
+      "claim": "Transcription initiation is the first and most highly regulated step in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription initiation is the first and most highly regulated step in gene expression (Mazumder and Kapanidis, 2019; Ruff et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Mazumder and Kapanidis, 2019; Ruff et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "a4cf2150-eb7e-42e3-bd36-0f24c690d4a1",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C2",
+      "claim": "During transcription initiation, RNA polymerase (RNAP), together with the transcription initiation factor \u03c3, unwinds ~13 bp of promoter DNA to form a 'transcription bubble'.",
+      "claim_type": "EXPLICIT",
+      "source": "During transcription initiation, RNA polymerase (RNAP), together with the transcription initiation factor \u03c3, unwinds ~13 bp of promoter DNA to form a 'transcription bubble', and places the template-strand ssDNA of the unwound transcription bubble in contact with the RNAP active centre, yielding a catalytically competent RNAP-promoter transcription-initiation complex (RPo; Mazumder and Kapanidis, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Mazumder and Kapanidis, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "d66ead06-6174-4903-babe-d72d0dc4fa68",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C3",
+      "claim": "High-resolution structures of RPo define the contacts that RNAP and \u03c3 make with promoter DNA, as well as the conformation and interactions of unwound template-strand ssDNA engaging the RNAP active centre.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution structures of RPo define the contacts that RNAP and \u03c3 make with promoter DNA, as well as the conformation and interactions of unwound template-strand ssDNA engaging the RNAP active centre (Bae et al., 2015; Zuo and Steitz, 2015; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural studies (Bae et al., 2015; Zuo and Steitz, 2015; Zhang et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "e57910d6-b340-41e3-9574-4c9242ad264d",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C4",
+      "claim": "Transcription-bubble formation is initiated by unwinding the DNA base pair at the upstream end of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and biochemical experiments suggest that transcription-bubble formation is initiated by unwinding the DNA base pair at the upstream end of the transcription bubble \u2013 breaking the base pair, and unstacking and flipping the non-template-strand base of the broken base pair, and inserting the unstacked and flipped non-template-strand base into a protein pocket of \u03c3 \u2013 followed by propagation of the unwinding in a downstream direction (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Zhang et al., 2012; Feklistov and Darst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural and biochemical experiments (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Zhang et al., 2012; Feklistov and Darst, 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "5b8bbc63-ba6b-4859-838b-5865164bdc56",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C5",
+      "claim": "In crystal structures of RNAP \u03c3 holoenzyme, the RNAP active-centre cleft is too narrow to accommodate double-stranded DNA (<20 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "In crystal structures of RNAP \u03c3 holoenzyme, the RNAP active-centre cleft is too narrow to accommodate double-stranded DNA (dsDNA) (<20 \u00c5), and \u03c3 obstructs access of dsDNA to the RNAP active-centre cleft (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to crystal structures (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "c015391b-b75c-4aac-b3ed-b80a825984c3",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C6",
+      "claim": "There is no unobstructed path by which dsDNA can access the RNAP active-centre cleft in RNAP holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there is no unobstructed path by which dsDNA can access the RNAP active-centre cleft in RNAP holoenzyme (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002; Young et al., 2002; Murakami and Darst, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to structural studies (Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Vassylyev et al., 2002; Young et al., 2002; Murakami and Darst, 2003).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "79aa07ca-2163-46d1-be70-e9f74918b31b",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C7",
+      "claim": "'Load-unwind' models propose that the RNAP active-centre cleft opens through the swinging outward of the clamp, allowing loading of promoter DNA into the active-centre cleft as dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "One class of models, termed 'load-unwind' models, propose that: (i) the RNAP active-centre cleft opens, through the swinging outward of one wall, termed the 'clamp', of the active-centre cleft, allowing loading of promoter DNA into the active-centre cleft as dsDNA; (ii) promoter DNA unwinds inside the active-centre cleft; and (iii) the active-centre cleft closes, through the swinging inward of the clamp, during or after DNA unwinding (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Young et al., 2002; Darst et al., 2002; Chakraborty et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model proposed in the literature, supported by citations (Mazumder and Kapanidis, 2019; Ruff et al., 2015; Mekler et al., 2002; Murakami et al., 2002b; Murakami et al., 2002a; Young et al., 2002; Darst et al., 2002; Chakraborty et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "9ec1b781-474a-401b-b0f2-cb7a5e9c0248",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C8",
+      "claim": "'Unwind-load' models propose that promoter DNA unwinds outside the RNAP active-centre cleft and unwound-promoter DNA loads into the active-centre cleft as single-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The other class of models, termed 'unwind-load' models, proposes that: (i) promoter DNA unwinds outside the RNAP active-centre cleft and (ii) unwound-promoter DNA loads into the active-centre cleft as single-stranded DNA (Mazumder and Kapanidis, 2019; Vassylyev et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a model proposed in the literature, supported by citations (Mazumder and Kapanidis, 2019; Vassylyev et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "9647646c-8a59-492c-a98a-da6577cb10ca",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C9",
+      "claim": "A promoter derivative having Cy3 site-specifically incorporated in the transcription-bubble region exhibits an ~2-fold increase in fluorescence emission intensity upon promoter unwinding during RPo formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work indicates that a promoter derivative having the fluorescent probe Cy3 site-specifically incorporated in the transcription-bubble region exhibits an ~2-fold increase in fluorescence emission intensity upon promoter unwinding during RPo formation and exhibits an ~ 2-fold decrease in fluorescence emission intensity upon promoter rewinding during promoter escape (Feklistov et al., 2017; Ko and Heyduk, 2014; Koh et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work (Feklistov et al., 2017; Ko and Heyduk, 2014; Koh et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "84ca92ef-19a0-4620-ab67-9a15c0fb3a21",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C10",
+      "claim": "Cy3-containing promoter DNA fragments bound exclusively to immobilised RNAP molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments show that: (i) Cy3-containing promoter DNA fragments bound exclusively to immobilised RNAP molecules (Figure 1\u2014figure supplement 2A), and the majority (~60%) of the resulting complexes were resistant to challenge with heparin (Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "e690b2fd-909d-4683-b1b1-95248fec2f4d",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C11",
+      "claim": "The majority (~60%) of RNAP-promoter complexes were resistant to challenge with heparin.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments show that: (i) Cy3-containing promoter DNA fragments bound exclusively to immobilised RNAP molecules (Figure 1\u2014figure supplement 2A), and the majority (~60%) of the resulting complexes were resistant to challenge with heparin (Figure 1\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "10b1b5bf-91e5-4326-bcbe-3e2511dbb13b",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C12",
+      "claim": "Binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme molecules did not result in heparin-resistant complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme molecules did not result in heparin-resistant complexes (Figure 1\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "11b9b374-ac61-4e35-b3ef-da8fb6092fe9",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C13",
+      "claim": "Binding of Cy3-containing promoter DNA fragments to immobilised RNAP core enzyme molecules did not result in heparin-resistant complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) binding of Cy3-containing promoter DNA fragments to immobilised RNAP core enzyme molecules did not result in heparin-resistant complexes (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "6e6bb72e-6230-4cc6-96ff-38be9cf1d802",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C14",
+      "claim": "Sequence-specific, heparin-resistant, complexes were formed only between RNAP holoenzyme and Cy3-containing promoter DNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that sequence-specific, heparin-resistant, complexes were formed only between RNAP holoenzyme and Cy3-containing promoter DNA fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the control experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "2af74f4c-fd2c-48cd-9135-f3fd6451c0dd",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C15",
+      "claim": "A large class of trajectories (~45%) was characterised by the appearance of a fluorescence intensity of ~200 counts, followed by an increase in fluorescence intensity to ~450 counts.",
+      "claim_type": "EXPLICIT",
+      "source": "A large class of trajectories (~45%) was characterised by the appearance of a fluorescence intensity of ~200 counts, followed by an increase in fluorescence intensity to ~450 counts, followed by either a decrease of the intensity to ~200 counts or a disappearance of the intensity (Figure 1B, top left; Figure 1\u2014figure supplement 3, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "a3697e53-c1be-42ba-a40f-3ec196fc01f0",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C16",
+      "claim": "Binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme did not result in \u22652-fold fluorescence enhancement.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments show that (i) binding of Cy3-containing non-promoter DNA fragments to immobilised RNAP holoenzyme did not result in \u22652-fold fluorescence enhancement (Figure 1\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "2a4d03dd-7b5b-415d-aa2f-b87a5e3d7fab",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C17",
+      "claim": "Binding of Cy3-containing promoter DNA fragments to immobilised RNAP core molecules did not result in \u22652-fold fluorescence enhancement events for the overwhelming majority of the time trajectories (~96%).",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) binding of Cy3-containing promoter DNA fragments to immobilised RNAP core molecules did not result in \u22652-fold fluorescence enhancement events for the overwhelming majority of the time trajectories (~96%; Figure 1\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "52ab2a74-d749-427d-af41-e76b45b2b51a",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C18",
+      "claim": "The detected ~2-fold fluorescence enhancement events represent sequence-specific complexes between RNAP holoenzyme and promoter DNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the detected ~2-fold fluorescence enhancement events represent sequence-specific complexes between RNAP holoenzyme and promoter DNA fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the control experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "2811d7ae-f2f1-4101-8937-fa92fbaf0066",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C19",
+      "claim": "Upon addition of an NTP subset enabling synthesis of transcripts up to 11 nt in length (ATP, UTP, and GTP), ~ 49% of trajectories showed formation of a stable unwound-promoter state.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of an NTP subset enabling synthesis of transcripts up to 11 nt in length (ATP, UTP, and GTP), ~ 49% of trajectories showed formation of a stable unwound-promoter state (with fluorescence intensity similar to that of the sub-population exhibiting promoter unwinding), as expected for the formation of initial transcribing complexes (RPitc <11; Figure 1\u2014figure supplement 3B, top; see also Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "4b3a88f4-bb2c-46a4-b6cf-fb56a89a4422",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C20",
+      "claim": "Upon subsequent addition of a separate NTP subset (GTP and CTP), enabling synthesis of transcripts up to 14 nt in length, ~ 27% of the resulting complexes showed formation of a stable rewound-promoter state.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon subsequent addition of a separate NTP subset (GTP and CTP), enabling synthesis of transcripts up to 14 nt in length, ~ 27% of the resulting complexes showed formation of a stable rewound-promoter state (Figure 1\u2014figure supplement 3B, bottom), as expected for promoter escape and formation of a transcription elongation complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "1a9a61ae-cfb4-4532-9cc5-9a936f4005a7",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C21",
+      "claim": "RNAP-promoter complexes formed in these experiments are transcriptionally active and are competent for promoter escape.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that RNAP-promoter complexes formed in these experiments are transcriptionally active and are competent for promoter escape (see also Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing formation of initial transcribing complexes and promoter escape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "cfee326f-76a1-4c87-a180-1cb577a42ef7",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C22",
+      "claim": "The dwell-time histogram for lacCONS-[+2 Cy3] showed a peaked distribution, indicating a non-Markovian process having more than one rate-limiting steps before the formation of the unwound state.",
+      "claim_type": "EXPLICIT",
+      "source": "The dwell-time histogram showed a peaked distribution, indicating a non-Markovian process having more than one rate-limiting steps before the formation of the unwound state (Floyd et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Floyd et al., 2010) and by the experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "623600b8-8591-4f14-a285-981a3305f5d9",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C23",
+      "claim": "The total time spent in the pre-unwinding state for lacCONS-[+2 Cy3] was estimated to be ~7.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted this histogram to a two-exponential function (see Materials and methods for a detailed explanation; Floyd et al., 2010), and estimated the total time spent in the pre-unwinding state to be ~7.5 s (Figure 1B, top right; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "7bbd4860-8ff7-4697-aa60-892ba063f2d2",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C24",
+      "claim": "Time trajectories for pre-unwound lacCONS-[+ 2 Cy3] showed significantly shorter dwell times in the pre-unwinding state (~2.8 s vs. ~7.5 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Time trajectories for pre-unwound lacCONS-[+ 2 Cy3] were qualitatively similar to those for lacCONS-[+ 2 Cy3] in terms of the intensity increase (Figure 1B, middle left, S4A) and the shape of the dwell-time histogram (Figure 1B, middle right); however, the trajectories showed significantly shorter dwell times in the pre-unwinding state (~2.8 s vs. ~7.5 s; Figure 1B, middle right vs. top right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "67039990-d734-4835-8ac2-7baa4da98226",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C25",
+      "claim": "Time trajectories for G/C lacCONS-[+ 2 Cy3] showed significantly longer dwell times in the pre-unwinding state (~18.8 s vs. 7.5 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Time trajectories for G/C lacCONS-[+ 2 Cy3] showed significantly longer dwell times in the pre-unwinding state (~18.8 s vs. 7.5 s; Figure 1B, bottom right vs. top right; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "266d8ea2-53f5-4a74-a85e-9c37cb6f7e14",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C26",
+      "claim": "Dwell times in the pre-unwinding state depend on energy barriers for promoter unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that dwell times in the pre-unwinding state depend on energy barriers for promoter unwinding, consistent with expectation that the dwell times report on the kinetics of promoter unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing different dwell times for promoters with different energy barriers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "11b87530-3ddc-433d-aaa8-950ecdbfacb7",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C27",
+      "claim": "The dwell times in the pre-unwinding state for lacCONS-[\u20139 Cy3] were significantly shorter than for lacCONS-[+ 2 Cy3]: ~ 5.5 s vs. ~7.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting trajectories were similar in terms of intensity increases (Figure 1\u2014figure supplement 4B) and dwell-time-distribution shapes to those obtained with promoter DNA fragments having Cy3 incorporated in the downstream edge of the transcription bubble, but the dwell times in the pre-unwinding state were significantly shorter: ~ 5.5 s vs. ~7.5 s for lacCONS-[\u20139 Cy3] vs. lacCONS-[+ 2 Cy3] (Figure 1C, top right vs. Figure 1B, top right; Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C, Figure 1B, and Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "022d4242-8076-4cc3-9b60-e2760e73962d",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C28",
+      "claim": "The dwell times in the pre-unwinding state for G/C lacCONS-[\u20139 Cy3] were significantly shorter than for G/C lacCONS-[+ 2 Cy3]: ~6.0 s vs. ~18.8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "and ~6.0 s vs. ~18.8 s for G/C lacCONS-[\u20139 Cy3] vs. G/C lacCONS-[+ 2 Cy3] (Figure 1C, bottom right vs. Figure 1B, bottom right; 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C, Figure 1B, and Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "44c2448e-1e84-4971-84d4-1a0400e4c70b",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C29",
+      "claim": "For the promoters analysed, unwinding of the upstream half of the transcription bubble occurs faster than unwinding of the downstream half of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that, for the promoters analysed, unwinding of the upstream half of the transcription bubble occurs faster than unwinding of the downstream half of the transcription bubble",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing shorter dwell times for upstream unwinding compared to total unwinding time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "baceaf8c-cc63-4512-b1d3-c0eb94120b4f",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C30",
+      "claim": "Promoter unwinding proceeds in a step-wise fashion, in an upstream-downstream direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirm previous results (Boyaci et al., 2019; Chen et al., 2020; Rogozina et al., 2009; Suh et al., 1993; Helmann and deHaseth, 1999; Lim et al., 2001; Auner et al., 2003), indicating that promoter unwinding proceeds in a step-wise fashion, in an upstream-downstream direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data in this study and by citations to previous results (Boyaci et al., 2019; Chen et al., 2020; Rogozina et al., 2009; Suh et al., 1993; Helmann and deHaseth, 1999; Lim et al., 2001; Auner et al., 2003).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "c468d952-ed4e-4d3b-99e4-381649c4ad6d",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C31",
+      "claim": "The step for upstream unwinding is slower than downstream unwinding for lacCONS (~5.5 s vs. ~2.0 s).",
+      "claim_type": "EXPLICIT",
+      "source": "and suggest that the step for upstream unwinding is slower than downstream unwinding for lacCONS (~5.5 s vs. ~2.0 s), whereas the step for downstream unwinding is slower than upstream unwinding for G/C lacCONS (~6.0 s vs. ~13.0 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "89842b08-3f1b-44a0-9567-a4407158d2b5",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C32",
+      "claim": "The step for downstream unwinding is slower than upstream unwinding for G/C lacCONS (~6.0 s vs. ~13.0 s).",
+      "claim_type": "EXPLICIT",
+      "source": "and suggest that the step for upstream unwinding is slower than downstream unwinding for lacCONS (~5.5 s vs. ~2.0 s), whereas the step for downstream unwinding is slower than upstream unwinding for G/C lacCONS (~6.0 s vs. ~13.0 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "b6d364dd-0f51-4cfa-8057-32ea25029140",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C33",
+      "claim": "Myxopyronin (Myx) is an RNAP inhibitor that prevents RNAP clamp opening.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether promoter unwinding is affected by preventing opening of the RNAP clamp, we repeated our experiments in presence of myxopyronin (Myx; Chakraborty et al., 2012; Feklistov et al., 2017; Mukhopadhyay et al., 2008; Belogurov et al., 2009; Dulin et al., 2018), an RNAP inhibitor that prevents RNAP clamp opening (Chakraborty et al., 2012; Duchi et al., 2018; Mukhopadhyay et al., 2008; state with an smFRET efficiency, E*~0.36 in Figure 2\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior work (Chakraborty et al., 2012; Duchi et al., 2018; Mukhopadhyay et al., 2008) and by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "2dc10894-9254-437b-b3af-6999cc025e0c",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C34",
+      "claim": "Myx allows formation of heparin-sensitive RNAP-promoter complexes but prevents formation of heparin-resistant RNAP-promoter complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "and that allows formation of heparin-sensitive RNAP-promoter complexes but prevents formation of heparin-resistant RNAP-promoter complexes (Mukhopadhyay et al., 2008; Figure 2\u2014figure supplement 1A\u2013B, ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to prior work (Mukhopadhyay et al., 2008) and by data shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "d4baea7e-165e-481c-b751-0ae810f217d2",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C35",
+      "claim": "In the presence of Myx, lacCONS-[+ 2 Cy3] showed a fluorescence intensity enhancement of ~2.4-fold, consistent with unwinding of the downstream edge of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed smUIFE experiments in the presence of Myx using promoter DNA fragment lacCONS-[+ 2 Cy3], which has Cy3 incorporated at the downstream edge of the transcription bubble. The results showed a fluorescence intensity enhancement of ~2.4-fold, consistent with unwinding of the downstream edge of the transcription bubble (Figure 2B, bottom; Figure 2\u2014figure supplement 1C; see Feklistov et al., 2017)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1C, and by a citation to prior work (Feklistov et al., 2017).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "97a2b185-ab35-4815-adfd-4054fae27dfb",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C36",
+      "claim": "In the presence of Myx, lacCONS-[+ 2 Cy3] showed a dwell time between initial binding and intensity enhancement of ~4.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "and showed a dwell time between initial binding and intensity enhancement of ~4.1 s (Figure 2C, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "a7320e6c-308f-4252-b188-d77f4f49d0d3",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C37",
+      "claim": "In the presence of Myx, lacCONS-[\u20139 Cy3] showed a fluorescence intensity enhancement of ~2.4-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed smUIFE experiments in the presence of Myx using promoter DNA fragment lacCONS-[\u20139 Cy3], which has Cy3 incorporated in the upstream half of the transcription bubble. The results were essentially identical: a fluorescence intensity enhancement of ~2.4-fold (Figure 2B, top; Figure 2\u2014figure supplement 1C, top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "7df36ad8-0f21-4ae3-abc6-b3a699dd454c",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C38",
+      "claim": "In the presence of Myx, lacCONS-[\u20139 Cy3] showed a dwell time between initial binding and intensity enhancement of ~4.0 s.",
+      "claim_type": "EXPLICIT",
+      "source": "and a dwell time between initial binding and intensity enhancement of ~4.0 s (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "8a3eb4d8-19ec-4ed6-94e6-8e404e39d46f",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C39",
+      "claim": "The observed fluorescence intensity enhancements were similar in the absence and presence of Myx.",
+      "claim_type": "EXPLICIT",
+      "source": "For both promoter derivatives, the observed fluorescence intensity enhancements were similar in the absence and presence of Myx (Figure 1\u2014figure supplement 4 vs. Figure 2\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of experimental data shown in Figure 1\u2014figure supplement 4 and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "e79f9c7d-ff0d-4690-b572-f09867031f47",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C40",
+      "claim": "The observed dwell times between initial binding and intensity enhancement times were shorter in the presence of Myx than in the absence of Myx (~3.5 s shorter for transcription-bubble downstream edge and ~1.5 s shorter for transcription-bubble upstream half).",
+      "claim_type": "EXPLICIT",
+      "source": "and the observed dwell times between initial binding and intensity enhancement times were shorter \u2013 not longer \u2013 in the presence of Myx than in the absence of Myx (~3.5 s shorter for transcription-bubble downstream edge and ~1.5 s shorter for transcription-bubble upstream half; Figure 2B\u2013C vs. Figure 1B\u2013C, top panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of experimental data shown in Figure 2B\u2013C and Figure 1B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "364cf050-090e-4660-a41c-cee582b1dbdf",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C41",
+      "claim": "Myx prevents formation of heparin-resistant open complexes either by preventing loading of unwound DNA into active-centre cleft or by preventing subsequent locking of the RNAP clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that Myx prevents formation of heparin-resistant open complexes either by preventing loading of unwound DNA into active-centre cleft or by preventing subsequent locking of the RNAP clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "fad73cc9-be41-4229-9b31-7e2d2ca759a7",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C42",
+      "claim": "Preventing RNAP clamp opening does not prevent promoter unwinding, and increases, not decreases, the kinetics of promoter unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "We infer \u2013 contrary to the models in which clamp opening is obligatory for promoter unwinding \u2013 that preventing RNAP clamp opening does not prevent promoter unwinding, and increases, not decreases, the kinetics of promoter unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing promoter unwinding in the presence of Myx.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "274f0a73-1598-4da2-b259-09bf4507f7b5",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C43",
+      "claim": "Doubly labelled RNAP molecules bound exclusively to immobilised promoter DNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments show that: (i) doubly labelled RNAP molecules bound exclusively to immobilised promoter DNA molecules (Figure 3\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "013def44-edf6-49fc-a7cc-604d479a57a8",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C44",
+      "claim": "The majority (~87%) of RNAP-promoter complexes formed with doubly labelled RNAP were resistant to challenge with heparin.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) the majority (~87%) of the resulting complexes were resistant to challenge with heparin (Figure 3\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "417ae28b-0824-46b9-a520-b864bf8a2ad0",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C45",
+      "claim": "Doubly labelled RNAP molecules did not bind stably to immobilised non-promoter DNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) doubly labelled RNAP molecules did not bind stably to immobilised non-promoter DNA molecules (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "048a4115-0364-41e1-b6f4-76446ed35d01",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C46",
+      "claim": "Sequence-specific, heparin-resistant RNAP-promoter complexes were only formed between the doubly labelled RNAP holoenzyme molecules and promoter DNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that sequence-specific, heparin-resistant RNAP-promoter complexes were only formed between the doubly labelled RNAP holoenzyme molecules and promoter DNA fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the control experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "0c2221cd-cd13-42d4-94e5-5108f18795d2",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C47",
+      "claim": "The initial binding of RNAP to promoter DNA involved RNAP with a closed clamp (mean E* of ~0.4).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to determine the RNAP clamp conformations immediately upon initial binding of RNAP to promoter DNA, we plotted distributions of E* values for the first five frames (0.5 s) after initial binding. The resulting distributions could be fitted to a Gaussian function with mean E* of ~0.4, indicating that the initial binding of RNAP to promoter DNA involved RNAP with a closed clamp (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "aba52ae7-2524-4dfe-a2e4-c8ea67b6b8d2",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C48",
+      "claim": "No E* changes potentially consistent with clamp opening (E* of ~0.2) were detected in full E* time trajectories following initial binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we examined full E* time trajectories, for up to ~60 s, following initial binding, seeking E* changes potentially consistent with RNAP clamp opening. We detected no E* changes \u2013 not even transient E* changes, within the ~100 ms temporal resolution of the analysis \u2013 that potentially could be assigned as consistent with clamp opening (E* of ~0.2; Figure 3B, area highlighted in cyan; Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "9943c92f-bf31-4f16-bc39-e33ced21a722",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C49",
+      "claim": "A large fraction of trajectories (~44%) started at E*~0.40, then transitioned to E*~0.48, and then returned to E*~0.40 or photobleached.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a large fraction of trajectories (~44%) started at E*~0.40, indicative of the previously defined closed-clamp state, then transitioned to E*~0.48, indicative of a new, more tightly closed, clamp state, and then returned to E*~0.40 or photobleached (Figure 3B\u2013C; Figure 3\u2014figure supplement 3B, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B\u2013C and Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "cbe7db26-8753-4fee-b2ce-c09b138578ad",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C50",
+      "claim": "The new, more tightly closed, clamp state with E*~0.48 is referred to as the 'locked-clamp' state.",
+      "claim_type": "EXPLICIT",
+      "source": "We refer to the new, more tightly closed, clamp state with E*~0.48, as the 'locked-clamp' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a definition based on the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "93856200-2f97-46d3-99d4-904a9438c5be",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C51",
+      "claim": "The time between initial binding of RNAP to promoter DNA and appearance of the locked-clamp state was ~7.8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We further analysed E* time trajectories to determine the time between initial binding of RNAP to promoter DNA and appearance of the locked-clamp state. The corresponding dwell-time histogram showed a peaked distribution and was fitted to a two-exponential function, yielding ~7.8 s, as the time between initial binding of RNAP to promoter DNA and appearance of the locked-clamp state (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "8c875758-f9fc-4ec6-9980-66028e599986",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C52",
+      "claim": "The time between initial binding and appearance of the locked-clamp state (~7.8 s) is, within error, identical to the ~7.5 s time between initial binding and unwinding of the downstream half of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "a time that, within error, is identical to the ~7.5 s time between initial binding and unwinding of the downstream half of the transcription bubble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of the experimental data for clamp locking and promoter unwinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "1ef5a021-2ed7-4780-81c5-9935189f99af",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C53",
+      "claim": "For G/C lacCONS, initial binding by RNAP occurred with a closed-clamp state (E*~0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous experiments with a promoter derivative having G/C-rich sequence at positions \u20134 to +1 relative to the transcription start site, G/C lacCONS, yielded similar results: that is, initial binding by RNAP with a closed-clamp state (E*~0.41; Figure 3\u2014figure supplement 4A; B, left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "b12c2192-d3d0-4db7-b679-7945ee1b04f2",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C54",
+      "claim": "For G/C lacCONS, no trajectories showed transitions to an open-clamp state during a period up to ~200 s after initial binding.",
+      "claim_type": "EXPLICIT",
+      "source": "no trajectories showing transitions \u2013 not even transient transitions, within the ~400 ms temporal resolution of the analysis \u2013 to an open-clamp state during a period up to ~200 s after initial binding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data for G/C lacCONS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "b6532ea9-15b5-434e-90d2-a149c61e72c4",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C55",
+      "claim": "For G/C lacCONS, a large fraction of trajectories (~48%) showed a transition to a locked-clamped state (E*~0.50).",
+      "claim_type": "EXPLICIT",
+      "source": "a large fraction of trajectories (~48%), showing a transition to a locked-clamped state (E*~0.50, Figure 3\u2014figure supplement 4A; B, right)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "54971ea4-5fa8-42bb-a129-2af1193875dd",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C56",
+      "claim": "For G/C lacCONS, the time between initial binding and appearance of the locked-clamped state matches the time required for unwinding of the downstream half of the transcription bubble.",
+      "claim_type": "EXPLICIT",
+      "source": "and a time between initial binding and appearance of the locked-clamped state matching the time required for unwinding of the downstream half of the transcription bubble (Figure 3E, Figure 3\u2014figure supplement 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3E and Figure 3\u2014figure supplement 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "9e9d9a32-9247-4120-b0f1-00735e0291b9",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C57",
+      "claim": "The RNAP clamp is in a closed state upon promoter binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the RNAP clamp is in a closed state upon promoter binding, that the RNAP clamp does not open--not even transiently, within the temporal resolution of our analysis \u2013 between promoter binding and promoter unwinding, and that the RNAP clamp closes further \u2013 'locks' \u2013 after promoter unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing closed clamp upon binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "c2676c56-6146-45c7-b8e9-083ef80a52be",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C58",
+      "claim": "The RNAP clamp does not open--not even transiently, within the temporal resolution of the analysis \u2013 between promoter binding and promoter unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the RNAP clamp is in a closed state upon promoter binding, that the RNAP clamp does not open--not even transiently, within the temporal resolution of our analysis \u2013 between promoter binding and promoter unwinding, and that the RNAP clamp closes further \u2013 'locks' \u2013 after promoter unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing no clamp opening events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "ca89fb56-c17d-4095-8b09-472cbb219645",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C59",
+      "claim": "The RNAP clamp closes further \u2013 'locks' \u2013 after promoter unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the RNAP clamp is in a closed state upon promoter binding, that the RNAP clamp does not open--not even transiently, within the temporal resolution of our analysis \u2013 between promoter binding and promoter unwinding, and that the RNAP clamp closes further \u2013 'locks' \u2013 after promoter unwinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing transition to a locked-clamp state after unwinding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "ba07d808-b4c2-40e0-a303-15678b2d40ea",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C60",
+      "claim": "RPo formation by E. coli RNAP \u03c370 holoenzyme at a consensus bacterial core promoter proceeds through a 'bind-unwind-load-and-lock' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that RPo formation by E. coli RNAP \u03c370 holoenzyme at a consensus bacterial core promoter proceeds through a 'bind-unwind-load-and-lock' mechanism, in which the RNAP clamp is closed upon promoter binding, remains closed during unwinding of promoter DNA \u2013 which proceeds in an upstream-to-downstream direction \u2013 and then closes further, locking the unwound DNA in the RNAP active-centre cleft (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the combined experimental results and is illustrated in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "b515f4cc-aa93-4b4e-8506-74886ef39997",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C61",
+      "claim": "The finding that the RNAP clamp remains closed throughout promoter unwinding at a consensus bacterial promoter implies that it is ssDNA, not dsDNA, that enters the RNAP active-centre-cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Under that predominant view, our finding that the RNAP clamp remains closed throughout promoter unwinding at a consensus bacterial promoter implies that it is ssDNA, not dsDNA, that enters the RNAP active-centre-cleft, and thus that promoter unwinding occurs at least in part outside, not inside, the RNAP active-centre cleft (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental results and structural considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "4b6ada84-01e8-4c7e-88fc-c5b7216bea42",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C62",
+      "claim": "Promoter unwinding occurs at least in part outside, not inside, the RNAP active-centre cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Under that predominant view, our finding that the RNAP clamp remains closed throughout promoter unwinding at a consensus bacterial promoter implies that it is ssDNA, not dsDNA, that enters the RNAP active-centre-cleft, and thus that promoter unwinding occurs at least in part outside, not inside, the RNAP active-centre cleft (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental results and structural considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "f3b01d72-adb1-4f52-92c7-37382a31a0f0",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C63",
+      "claim": "The consensus bacterial promoter employed in this study has been used in previous work to define transcription mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus bacterial promoter employed in this study has been used in previous work to define transcription mechanisms, including RNAP clamp closure upon RPo formation (Chakraborty et al., 2012), DNA scrunching in transcription-start-site selection (Winkelman et al., 2016), DNA scrunching in initial transcription (Kapanidis et al., 2006), and RNAP pausing in initial transcription (Duchi et al., 2016; Winkelman et al., 2020), all of which subsequently were validated for other promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work (Chakraborty et al., 2012; Winkelman et al., 2016; Kapanidis et al., 2006; Duchi et al., 2016; Winkelman et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "a28dccbe-717e-41cb-b507-7d41e0f588c5",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C64",
+      "claim": "A recent cryo-EM study of transcription initiation by E. coli RNAP \u03c370 holoenzyme at the rpsT P2 promoter identified structural states having a partly unwound transcription bubble and a closed RNAP clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the possibility that a similar mechanism is used by E. coli RNAP \u03c370 holoenzyme at other promoters, a recent cryo-EM study of transcription initiation by E. coli RNAP \u03c370 holoenzyme at another promoter, rpsT P2, identified structural states having a partly unwound transcription bubble and a closed RNAP clamp (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a cryo-EM study (Chen et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "9075d577-5b7f-4296-a69a-78ef92f8b420",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C65",
+      "claim": "The smUIFE and smFRET methods reported in this work could be applied to analyse transcription initiation by any E. coli RNAP holoenzyme at any promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the smUIFE and smFRET methods reported in this work could be applied to analyse transcription initiation by any E. coli RNAP holoenzyme at any promoter and potentially could be adapted to analyse transcription initiation by any RNAP \u2013 bacterial, archaeal, or eukaryotic \u2013 at any promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the potential applicability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "e34c4af7-5111-4c99-802a-3ac33caef3f6",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "claim_id": "C66",
+      "claim": "The smUIFE and smFRET methods could potentially be adapted to analyse transcription initiation by any RNAP \u2013 bacterial, archaeal, or eukaryotic \u2013 at any promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the smUIFE and smFRET methods reported in this work could be applied to analyse transcription initiation by any E. coli RNAP holoenzyme at any promoter and potentially could be adapted to analyse transcription initiation by any RNAP \u2013 bacterial, archaeal, or eukaryotic \u2013 at any promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the potential applicability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior knowledge about transcription initiation, including the structural basis for promoter unwinding, the narrowness of the RNAP active-centre cleft, and two competing mechanistic models ('load-unwind' vs. 'unwind-load') for how DNA enters the RNAP active-centre cleft.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 accurately summarize established knowledge from the literature, supported by appropriate citations. These claims provide necessary background context for the current work and are consistent with the cited structural and biochemical studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "2ae6689f-9584-4204-a7eb-563ca25c9938",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a single-molecule unwinding-induced fluorescence enhancement (smUIFE) assay using Cy3-labeled promoter DNA that shows ~2-fold fluorescence increase upon promoter unwinding. Control experiments confirm that fluorescence enhancement events represent sequence-specific RNAP holoenzyme-promoter complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C18 describe the smUIFE method and validation controls. The controls (C10-C13) appropriately demonstrate specificity: promoter DNA binds RNAP holoenzyme but not core enzyme, forms heparin-resistant complexes only with promoter sequences, and shows fluorescence enhancement only with holoenzyme and promoter DNA. The experimental design is sound and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "67abe85b-437f-45e0-823a-88403d4f2f9b",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNAP-promoter complexes formed in the smUIFE experiments are transcriptionally active and competent for promoter escape, as demonstrated by formation of stalled initial transcribing complexes and subsequent promoter escape upon NTP addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 demonstrate functional competence of the complexes studied. The sequential addition of NTP subsets shows expected behavior: formation of stable unwound complexes with incomplete NTP sets (~49%) and promoter escape with complete NTP sets (~27%). This validates that the assay monitors physiologically relevant complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The dwell time in the pre-unwinding state for lacCONS-[+2 Cy3] is ~7.5 s and depends on the energy barrier for promoter unwinding, as shown by shorter times (~2.8 s) for pre-unwound promoter and longer times (~18.8 s) for G/C-rich promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 present kinetic measurements with appropriate controls. The peaked dwell-time distribution indicates multi-step kinetics (C22), and the systematic variation with predicted energy barriers (pre-unwound faster, G/C-rich slower) validates that the assay reports on unwinding kinetics. The two-exponential fitting approach is reasonable for extracting total dwell times, though the authors appropriately acknowledge uncertainty about the number of sub-steps.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "c4047ee2-d733-46e3-9731-3e90291a0cb8",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Promoter unwinding proceeds in a stepwise, upstream-to-downstream direction. For lacCONS, upstream unwinding (~5.5 s) is slower than downstream unwinding (~2.0 s), while for G/C lacCONS, downstream unwinding (~12.7 s) is slower than upstream unwinding (~6.0 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 demonstrate directional unwinding by comparing Cy3 positions at upstream (-9) vs. downstream (+2) locations. The shorter dwell times for upstream probes compared to downstream probes indicate sequential unwinding. The result confirms prior work (C30) and provides quantitative kinetic resolution of the two steps. The promoter-specific differences in rate-limiting steps are internally consistent with the G/C content at different positions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "97739423-6cbd-4721-b2a0-ba0262128b58",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the presence of myxopyronin (Myx), an inhibitor that prevents RNAP clamp opening, promoter unwinding still occurs with similar fluorescence enhancement but faster kinetics (~4.0-4.1 s vs. ~5.5-7.5 s without Myx). This indicates that clamp opening is not required for promoter unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 present a critical test of the 'load-unwind' model using a clamp-opening inhibitor. The observation that unwinding occurs (C35, C37) and is actually accelerated (C40) in the presence of Myx contradicts models requiring clamp opening for unwinding. The controls showing Myx prevents heparin-resistant complex formation (C34) while allowing unwinding support the interpretation. However, C41 is speculative about the mechanism of Myx action, and the acceleration of unwinding in the presence of Myx is not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "37fc3c6c-cbc1-4c55-8616-cacdf5daba9c",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Control experiments for smFRET assays demonstrate that doubly-labeled RNAP forms sequence-specific, heparin-resistant complexes exclusively with promoter DNA fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 provide appropriate controls for the smFRET experiments, parallel to those for smUIFE. The high percentage of heparin-resistant complexes (~87%) and specificity for promoter DNA validate the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "smFRET measurements show that RNAP binds promoter DNA with a closed clamp (E*~0.4), does not open during unwinding (no E*~0.2 detected), and transitions to a 'locked-clamp' state (E*~0.48) after ~7.8 s, coinciding with the time for complete promoter unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 present the key smFRET results. The temporal resolution (~100 ms) is sufficient to detect transient opening if it occurred. The coincidence of clamp locking time (~7.8 s) with unwinding time (~7.5 s) within error (C52) supports coupling of these events. The identification of a new 'locked-clamp' state (C49-C50) is well-supported by the data showing E* increase from 0.40 to 0.48.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "0915a444-41b1-436e-b2f0-593aeac4f728",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For G/C lacCONS promoter, smFRET results show similar behavior: closed clamp upon binding (E*~0.41), no clamp opening detected (up to ~200 s with ~400 ms resolution), transition to locked-clamp state (E*~0.50), with timing matching the unwinding kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 demonstrate reproducibility of the clamp behavior with a different promoter sequence. The longer observation time (~200 s) and similar temporal resolution (~400 ms) strengthen the conclusion that clamp opening does not occur. The consistency across promoters supports generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "3815f1a3-c9a0-44fb-aff6-c392d110b4af",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that the RNAP clamp is closed upon promoter binding, does not open during promoter unwinding (within the temporal resolution of the analysis), and locks after promoter unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 represent the main conclusions from the smFRET experiments. These are well-supported by the data showing: (1) E*~0.4 at binding, (2) no transitions to E*~0.2 during the pre-unwinding period, and (3) transition to higher E* (~0.48-0.50) after unwinding. The caveat about temporal resolution is appropriate and honestly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "16b65b63-769d-42d9-a3e3-24c9a4772f52",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a 'bind-unwind-load-and-lock' mechanism for RPo formation, in which the clamp remains closed during unwinding, implying that ssDNA (not dsDNA) enters the active-centre cleft and that unwinding occurs at least partially outside the cleft.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 present the central mechanistic model. This is well-supported by the combined smUIFE and smFRET data showing: (1) sequential unwinding (C27-C32), (2) unwinding without clamp opening (C48, C54, C58), (3) clamp locking after unwinding (C51, C56, C59), and (4) unwinding occurring even when clamp opening is inhibited (C42). The inference that ssDNA enters the cleft (C61-C62) is logical given structural constraints (C5-C6) and the closed clamp, though the authors appropriately note an alternative interpretation involving 'gate opening' in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "bef4852d-0309-4bec-b680-3817b0ec46b6",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The consensus promoter used in this study has been validated in prior work for studying transcription mechanisms, and recent cryo-EM studies of other promoters show similar features (partly unwound bubble with closed clamp), suggesting the mechanism may be general.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 provide context for generalizability. C63 appropriately cites prior validation of the promoter system, and C64 notes consistency with recent structural studies. However, the authors appropriately acknowledge that generalization to other promoters and RNAP holoenzymes requires further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    },
+    {
+      "id": "d1f54ec3-3d2e-4d86-928f-55d36fd78729",
+      "content_id": "0942cab5-e896-4d5c-ae45-48ee2bf47cd4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that the smUIFE and smFRET methods could be applied to other E. coli RNAP holoenzymes and promoters, and potentially adapted for other organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 are speculative statements about future applications. While the methods are likely adaptable, no data are presented to support application beyond the specific system studied. These are reasonable suggestions for future work but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:09:25.773414Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19ca6a73-6446-47ad-ac9a-0a1363d11d3d",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "a4cf2150-eb7e-42e3-bd36-0f24c690d4a1",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "d66ead06-6174-4903-babe-d72d0dc4fa68",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "e57910d6-b340-41e3-9574-4c9242ad264d",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "5b8bbc63-ba6b-4859-838b-5865164bdc56",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "c015391b-b75c-4aac-b3ed-b80a825984c3",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "79aa07ca-2163-46d1-be70-e9f74918b31b",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "9ec1b781-474a-401b-b0f2-cb7a5e9c0248",
+      "result_id": "8a92ab2e-4ec3-4568-b7b9-8983b29ac135"
+    },
+    {
+      "claim_id": "9647646c-8a59-492c-a98a-da6577cb10ca",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "84ca92ef-19a0-4620-ab67-9a15c0fb3a21",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "e690b2fd-909d-4683-b1b1-95248fec2f4d",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "10b1b5bf-91e5-4326-bcbe-3e2511dbb13b",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "11b9b374-ac61-4e35-b3ef-da8fb6092fe9",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "6e6bb72e-6230-4cc6-96ff-38be9cf1d802",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "2af74f4c-fd2c-48cd-9135-f3fd6451c0dd",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "a3697e53-c1be-42ba-a40f-3ec196fc01f0",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "2a4d03dd-7b5b-415d-aa2f-b87a5e3d7fab",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "52ab2a74-d749-427d-af41-e76b45b2b51a",
+      "result_id": "2ae6689f-9584-4204-a7eb-563ca25c9938"
+    },
+    {
+      "claim_id": "2811d7ae-f2f1-4101-8937-fa92fbaf0066",
+      "result_id": "67abe85b-437f-45e0-823a-88403d4f2f9b"
+    },
+    {
+      "claim_id": "4b3a88f4-bb2c-46a4-b6cf-fb56a89a4422",
+      "result_id": "67abe85b-437f-45e0-823a-88403d4f2f9b"
+    },
+    {
+      "claim_id": "1a9a61ae-cfb4-4532-9cc5-9a936f4005a7",
+      "result_id": "67abe85b-437f-45e0-823a-88403d4f2f9b"
+    },
+    {
+      "claim_id": "cfee326f-76a1-4c87-a180-1cb577a42ef7",
+      "result_id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b"
+    },
+    {
+      "claim_id": "623600b8-8591-4f14-a285-981a3305f5d9",
+      "result_id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b"
+    },
+    {
+      "claim_id": "7bbd4860-8ff7-4697-aa60-892ba063f2d2",
+      "result_id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b"
+    },
+    {
+      "claim_id": "67039990-d734-4835-8ac2-7baa4da98226",
+      "result_id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b"
+    },
+    {
+      "claim_id": "266d8ea2-53f5-4a74-a85e-9c37cb6f7e14",
+      "result_id": "f450e96d-59d9-4b72-bbc0-89a1b5fe198b"
+    },
+    {
+      "claim_id": "11b87530-3ddc-433d-aaa8-950ecdbfacb7",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "022d4242-8076-4cc3-9b60-e2760e73962d",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "44c2448e-1e84-4971-84d4-1a0400e4c70b",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "baceaf8c-cc63-4512-b1d3-c0eb94120b4f",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "c468d952-ed4e-4d3b-99e4-381649c4ad6d",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "89842b08-3f1b-44a0-9567-a4407158d2b5",
+      "result_id": "c4047ee2-d733-46e3-9731-3e90291a0cb8"
+    },
+    {
+      "claim_id": "b6d364dd-0f51-4cfa-8057-32ea25029140",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "2dc10894-9254-437b-b3af-6999cc025e0c",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "d4baea7e-165e-481c-b751-0ae810f217d2",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "97a2b185-ab35-4815-adfd-4054fae27dfb",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "a7320e6c-308f-4252-b188-d77f4f49d0d3",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "7df36ad8-0f21-4ae3-abc6-b3a699dd454c",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "8a3eb4d8-19ec-4ed6-94e6-8e404e39d46f",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "e79f9c7d-ff0d-4690-b572-f09867031f47",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "364cf050-090e-4660-a41c-cee582b1dbdf",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "fad73cc9-be41-4229-9b31-7e2d2ca759a7",
+      "result_id": "97739423-6cbd-4721-b2a0-ba0262128b58"
+    },
+    {
+      "claim_id": "274f0a73-1598-4da2-b259-09bf4507f7b5",
+      "result_id": "37fc3c6c-cbc1-4c55-8616-cacdf5daba9c"
+    },
+    {
+      "claim_id": "013def44-edf6-49fc-a7cc-604d479a57a8",
+      "result_id": "37fc3c6c-cbc1-4c55-8616-cacdf5daba9c"
+    },
+    {
+      "claim_id": "417ae28b-0824-46b9-a520-b864bf8a2ad0",
+      "result_id": "37fc3c6c-cbc1-4c55-8616-cacdf5daba9c"
+    },
+    {
+      "claim_id": "048a4115-0364-41e1-b6f4-76446ed35d01",
+      "result_id": "37fc3c6c-cbc1-4c55-8616-cacdf5daba9c"
+    },
+    {
+      "claim_id": "0c2221cd-cd13-42d4-94e5-5108f18795d2",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "aba52ae7-2524-4dfe-a2e4-c8ea67b6b8d2",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "9943c92f-bf31-4f16-bc39-e33ced21a722",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "cbe7db26-8753-4fee-b2ce-c09b138578ad",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "93856200-2f97-46d3-99d4-904a9438c5be",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "8c875758-f9fc-4ec6-9980-66028e599986",
+      "result_id": "4a8ecebb-bc1a-4a47-b991-f8824e5d7309"
+    },
+    {
+      "claim_id": "1ef5a021-2ed7-4780-81c5-9935189f99af",
+      "result_id": "0915a444-41b1-436e-b2f0-593aeac4f728"
+    },
+    {
+      "claim_id": "b12c2192-d3d0-4db7-b679-7945ee1b04f2",
+      "result_id": "0915a444-41b1-436e-b2f0-593aeac4f728"
+    },
+    {
+      "claim_id": "b6532ea9-15b5-434e-90d2-a149c61e72c4",
+      "result_id": "0915a444-41b1-436e-b2f0-593aeac4f728"
+    },
+    {
+      "claim_id": "54971ea4-5fa8-42bb-a129-2af1193875dd",
+      "result_id": "0915a444-41b1-436e-b2f0-593aeac4f728"
+    },
+    {
+      "claim_id": "9e9d9a32-9247-4120-b0f1-00735e0291b9",
+      "result_id": "3815f1a3-c9a0-44fb-aff6-c392d110b4af"
+    },
+    {
+      "claim_id": "c2676c56-6146-45c7-b8e9-083ef80a52be",
+      "result_id": "3815f1a3-c9a0-44fb-aff6-c392d110b4af"
+    },
+    {
+      "claim_id": "ca89fb56-c17d-4095-8b09-472cbb219645",
+      "result_id": "3815f1a3-c9a0-44fb-aff6-c392d110b4af"
+    },
+    {
+      "claim_id": "ba07d808-b4c2-40e0-a303-15678b2d40ea",
+      "result_id": "16b65b63-769d-42d9-a3e3-24c9a4772f52"
+    },
+    {
+      "claim_id": "b515f4cc-aa93-4b4e-8506-74886ef39997",
+      "result_id": "16b65b63-769d-42d9-a3e3-24c9a4772f52"
+    },
+    {
+      "claim_id": "4b6ada84-01e8-4c7e-88fc-c5b7216bea42",
+      "result_id": "16b65b63-769d-42d9-a3e3-24c9a4772f52"
+    },
+    {
+      "claim_id": "f3b01d72-adb1-4f52-92c7-37382a31a0f0",
+      "result_id": "bef4852d-0309-4bec-b680-3817b0ec46b6"
+    },
+    {
+      "claim_id": "a28dccbe-717e-41cb-b507-7d41e0f588c5",
+      "result_id": "bef4852d-0309-4bec-b680-3817b0ec46b6"
+    },
+    {
+      "claim_id": "9075d577-5b7f-4296-a69a-78ef92f8b420",
+      "result_id": "d1f54ec3-3d2e-4d86-928f-55d36fd78729"
+    },
+    {
+      "claim_id": "e34c4af7-5111-4c99-802a-3ac33caef3f6",
+      "result_id": "d1f54ec3-3d2e-4d86-928f-55d36fd78729"
+    }
+  ],
+  "comparisons": []
+}

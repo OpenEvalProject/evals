@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors generated a comprehensive CRISPR-based genome editing toolkit targeting 103 PI signaling genes in Drosophila. This involved sequencing genomes to avoid SNPs, designing dual gRNAs targeting first and last exons, and validating functionality in both cell culture and flies, with 102 of 103 dgRNA lines producing expected deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 and C84-C85 collectively demonstrate successful generation and validation of the dgRNA toolkit. The genomic sequencing approach (C30-C33) ensured gRNA specificity across genetic backgrounds, the dual-gRNA design strategy (C34) was clearly described, and functional validation showed 102/103 lines worked as expected (C84-C85). The experimental evidence from PCR, sequencing, and multiple validation approaches strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors validated tissue-specific CRISPR knockout of ocrl in nephrocytes, demonstrating complete loss of OCRL protein by western blot, immunostaining, and PCR detection of genomic deletions specifically in nephrocytes but not in whole body controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide converging evidence from multiple orthogonal methods (western blot, immunostaining, PCR) all showing complete loss of OCRL protein in tissue-specific knockouts. The specificity is demonstrated by presence of deletion bands only in appropriate tissues (C38, C39). This represents strong validation of the tissue-specific editing capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors generated and validated a novel UAS-Cas9-T2A-eGFP construct that expresses Cas9 and eGFP as independent proteins, with Cas9 showing nuclear localization and functional gene editing capability. This construct provides advantages over existing tools by marking Cas9-expressing cells with eGFP while avoiding potential fusion protein artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C73-C76 demonstrate successful generation and validation of the construct through western blot (C40-C41), functional deletion assays (C42), and immunostaining showing nuclear localization (C43). The design features (C73-C76) are logical and well-justified. The functional validation in both cell culture and flies supports the utility of this reagent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C4",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors performed a tissue-specific screen in the Drosophila eye using the dgRNA toolkit, identifying functions for 30 PI signaling genes in eye development including 9 genes not previously implicated. The screen demonstrated tissue-specific deletions and revealed phenotypes including altered eye size for genes like Dp110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 and C70-C71 demonstrate successful tissue-specific screening with clear phenotypes. PCR evidence confirms tissue-specific deletions (C44), and quantitative phenotypic analysis shows significant effects (C47-C48). The identification of 30 genes with functions in eye development, including 9 novel genes (C70-C71), represents a substantial contribution. The comparison with RNAi showing stronger CRISPR phenotypes (C47-C48) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors demonstrated genetic interaction analysis by simultaneously targeting Dp110 and Pten, showing that double knockout produces an intermediate eye size phenotype, consistent with these genes having opposing biochemical functions in PIP2/PIP3 interconversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 show successful multi-gene targeting with phenotypes consistent with known biochemical functions (C51-C52). The intermediate phenotype in double knockouts (C50, C53) demonstrates genetic interaction and validates the approach for epistasis analysis. The quantitative data in Figure 5C supports the intermediate phenotype claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors generated germline knockouts for 48 genes using the dgRNA toolkit with high efficiency (4-100% in F1, 3-70% in F2), producing deletions ranging from 400 bp to 38 kb. For 13 genes, germline deletions could not be obtained, possibly due to essential roles in gametogenesis or embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 document systematic germline knockout generation with quantitative efficiency data provided in Supplementary file 1. The rdgB knockout validation (C57) with ERG recordings matching classical alleles provides strong functional validation. The range of deletion sizes (C60) and documentation of failures (C61) demonstrates thoroughness. The efficiency ranges are reasonable for CRISPR-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C82"
+    ],
+    "result": "The authors identified a limitation of tissue-specific editing for rdgB, where eye-specific Cas9 expression failed to deplete RDGB protein levels despite genomic deletion, likely due to protein perdurance. In contrast, germline knockout showed complete protein loss and expected ERG phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide clear evidence of the limitation through western blots showing residual protein (C62), normal ERG recordings (C63), and contrast with successful germline knockout (C64-C65). The speculation about protein half-life (C82) is reasonable given the data, though not definitively proven. This represents an important caveat for the methodology that is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C81"
+    ],
+    "result": "The authors identified another limitation where eye-specific deletion of the essential gene sktl resulted in morphologically normal eyes. Sequencing revealed that 132/141 F2 flies had in-frame indels maintaining the kinase domain, suggesting selection for cells with partially functional protein during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 and C81 document this limitation with sequencing data showing predominantly in-frame indels (C68). The inference that only cells with partially functional protein survived (C69, C81) is reasonable given the essential nature of sktl (C67) and the sequencing results. This represents another important caveat that is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors demonstrated applicability of the toolkit beyond the eye by showing tissue-specific deletions in the wing, where Pten deletion increased wing size while Dp110 and akt deletions reduced wing size, consistent with known roles in growth control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 demonstrate the toolkit works in multiple tissues with phenotypes consistent with established gene functions. The wing phenotypes validate the broader applicability of the approach beyond the eye screen. Figure 4E provides visual evidence supporting these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C83"
+    ],
+    "result": "The authors found that genomic deletions occurred even in cases without observable phenotypes, indicating that absence of phenotype does not necessarily mean absence of deletion, but may reflect protein perdurance or other factors. They conclude that germline knockouts may be necessary when tissue-specific approaches fail to produce phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by PCR data in Figure 4\u2014figure supplement 2 showing deletions regardless of phenotype. The conclusion (C83) that absence of phenotype is not conclusive is appropriately cautious and supported by the rdgB and sktl examples. This represents important guidance for users of the toolkit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors provide background on PI signaling, describing the seven PIs generated by combinatorial phosphorylation, their roles in cellular processes, involvement in development across species, links to human diseases, and the identification of 103 conserved PI signaling genes in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 represent well-established background knowledge supported by appropriate citations. These claims provide context for the study but do not represent novel findings. The annotation of 103 PI signaling genes (C21) is based on prior work (Balakrishnan et al., 2015) and serves as the foundation for the current toolkit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C29"
+    ],
+    "result": "The authors provide methodological background on the GAL4/UAS system for spatial/temporal control in Drosophila, the emergence of CRISPR/Cas9 for genome editing, the availability of genome-wide RNAi resources, and the specificity requirements for CRISPR targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C29 represent established methodological knowledge supported by appropriate citations. These provide important context for why the current toolkit was needed and how it was designed, but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C28",
+      "C72"
+    ],
+    "result": "The authors describe the overall scope and contributions of the study, including generation of CRISPR tools for spatial/temporal manipulation of PI signaling proteins, identification of new molecules controlling eye development, and provision of reagents for editing 72 PI binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C28, and C72 represent accurate summary statements of the study's contributions that are supported by the detailed results. These are appropriate framing claims that are validated by the specific experimental results described in other claim groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors discuss potential applications and design considerations, including use with CoinFLP for mosaic analysis, relevance to cell competition studies, comparison with alternative gRNA design strategies, and potential for gene knock-in approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 represent discussion of potential applications and design rationale rather than demonstrated results. While C77-C78 cite relevant prior work, these applications are not experimentally validated in the current study. C79-C80 discuss design choices but do not provide experimental comparison with alternative approaches. These represent reasonable speculation but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors provide background on the Drosophila eye as a model system, describing its structure (~800 ommatidia with 8 photoreceptors each), utility for studying neurodegeneration and development, dependence on PI signaling for phototransduction, and the expression pattern of the eyeless gene used to drive Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 represent established knowledge about the Drosophila eye model system supported by appropriate citations. These provide important context for why the eye was chosen for the screen but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors cite prior work establishing roles for specific PI signaling genes, including PI3K in cell growth and RDGB in phototransduction, to provide context for their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C54-C56 represent accurate citations of prior work that provide context for interpreting the current results. These are appropriately used to validate that the toolkit recapitulates known phenotypes, but do not represent novel findings.",
+    "result_type": "MINOR"
+  }
+]

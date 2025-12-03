@@ -1,0 +1,1571 @@
+{
+  "submission": {
+    "id": "debc19c1-30af-493f-bfb4-bcc79fecd131",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:36:29.507544Z",
+    "updated_at": "2025-12-03T05:36:29.507544Z"
+  },
+  "content": [
+    {
+      "id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "submission_id": "debc19c1-30af-493f-bfb4-bcc79fecd131",
+      "content_type": "manuscript",
+      "content_text": "# Genetic variant in 3\u2019 untranslated region of the mouse pycard gene regulates inflammasome activity\n\n## Authors\n\n- Brian Ritchey<sup>1</sup>\n- Qimin Hai<sup>1</sup>\n- Juying Han<sup>1</sup>\n- John Barnard<sup>2</sup>\n- Jonathan D Smith<sup>1</sup> ([ORCID: 0000-0002-0415-386X](https://orcid.org/0000-0002-0415-386X)) \u2020\n\n### Affiliations\n\n1. Department of Cardiovascular & Metabolic Sciences, Lerner Research Institute, Cleveland Clinic Cleveland United States\n2. Department of Quantitative Health Sciences, Lerner Research Institute, Cleveland Clinic Cleveland United States\n3. Department of Molecular Medicine, Cleveland Clinic Lerner College of Medicine of Case Western Reserve University Cleveland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nQuantitative trait locus mapping for interleukin-1\u03b2 release after inflammasome priming and activation was performed on bone-marrow-derived macrophages (BMDM) from an AKRxDBA/2 mouse strain intercross. The strongest associated locus mapped very close to the Pycard gene on chromosome 7, which codes for the inflammasome adaptor protein apoptosis-associated speck-like protein containing a CARD (ASC). The DBA/2 and AKR Pycard genes only differ at a single-nucleotide polymorphism (SNP) in their 3\u2019 untranslated region (UTR). DBA/2 vs. AKR BMDM had increased levels of Pycard mRNA expression and ASC protein, and increased inflammasome speck formation, which was associated with increased Pycard mRNA stability without an increased transcription rate. CRISPR/Cas9 gene editing was performed on DBA/2 embryonic stem cells to change the Pycard 3\u2019UTR SNP from the DBA/2 to the AKR allele. This single base change significantly reduced Pycard expression and inflammasome activity after cells were differentiated into macrophages due to reduced Pycard mRNA stability.\n\n## Introduction\n\nGenetic differences between inbred mouse strains have facilitated the discovery of many disease genes and pathways, as well as modifier genes, through the use of quantitative trait locus (QTL) mapping and molecular technologies. Our group has focused on the AKR and DBA/2 mouse strains to interrogate genes and pathways associated with atherosclerosis, along with several macrophage phenotypes that may contribute to atherosclerosis pathology. We previously observed that 16-week-old chow diet-fed DBA/2 vs. AKR mice develop\u00a0~10 fold larger aortic root atherosclerotic lesions after breeding hyperlipidemic apoE knockout mice onto these distinct genetic backgrounds. This divergent atherosclerosis phenotype was observed in both males and females (Smith et al., 2006). Two independent strain intercrosses were performed and QTL analysis identified three significant loci associated with lesion area, called Ath28, Ath22, and Ath26, on chromosomes 2, 15, and 17, respectively (Hsu and Smith, 2013). We subsequently identified the Cyp4f13 gene as an atherosclerosis modifier gene at the Ath26 locus (Han et al., 2019). However, we observed that even within inbred apoE knockout mice, there was a large coefficient of variation (~50%) in early aortic root lesion area. Since early mouse atherosclerotic lesions are dominated by the accumulation of intimal macrophages (Nakashima et al., 1994), we performed an additional AKRxDBA/2 strain intercross to specifically identify candidate genes for bone-marrow-derived macrophage (BMDM) phenotypes, which might also effect atherosclerosis severity. We discovered that ex vivo macrophage phenotypes are generally less variable than atherosclerotic lesion size, which facilitates more robust and precise genetic mapping and therefore faster and more reliable candidate gene identification. We identified the Soat1 and Gpnmb genes as strong modifier gene candidates for macrophage cholesterol metabolism and lysosome function, respectively; and, we used CRISPR/Cas9 gene editing to validate them as causal modifier genes (Hai et al., 2018; Robinet et al., 2021).\n\nIn the current study, we assessed IL-1\u03b2 release from macrophages after inflammasome priming with LPS and activation with ATP; and, we discovered\u00a0~two fold more IL-1\u03b2 was released from DBA/2 vs. AKR BMDM. IL-1\u03b2 is an inflammatory cytokine, and its role in human atherosclerotic disease was proven in the CANTOS trial, where anti-IL-1\u03b2 monoclonal antibody infusions led to a significant reduction in nonfatal myocardial infarction, stroke, or cardiovascular death (Ridker et al., 2017). The goal of this study was to identify and validate candidate genes that contribute to the divergent macrophage inflammasome/IL-1\u03b2 phenotype between AKR and DBA/2 mice. Additionally, we sought to gain mechanistic insight into how these genes influence this phenotype at a molecular level. Using cryopreserved bone marrow samples from the same F4 strain intercross we utilized in a previous study (Hai et al., 2018), we prepared BMDM, primed and activated inflammasomes, and measured IL-1\u03b2 released into the media. QTL mapping identified a strong locus on the distal end of chromosome 7, which we named inflammatory response modulator 3 (Irm3). The Irm3 QTL interval is located within a larger QTL on chromosome seven that was previously identified in genetic studies from high and low inflammatory responder recombinant partially inbred strains derived from an intercross of eight parental inbred mouse strains, including the DBA/2 strain used in the current study (Vorraro et al., 2010). Irm3 harbors the Pycard gene, which codes for the ASC adaptor protein required for assembly of the majority of canonical inflammasomes. Additionally, QTLs on chromosomes 2, 11, and 16 reached statistical significance after correcting for Irm3. Here, we describe the identification and validation of Pycard as the Irm3 causal modifier gene, and rs33183533 in the 3\u2019 untranslated region (UTR) as the causal genetic variant, which alters Pycard mRNA turnover.\n\n## Results\n\n### Pycard was identified as a strong candidate gene for the modulation of macrophage IL-1\u03b2 secretion\n\nDBA/2 vs. AKR BMDM release\u00a0~two fold more IL-1\u03b2 after priming with LPS and subsequent inflammasome activation via ATP treatment (Figure 1A). To identify genetic loci responsible for the difference in BMDM IL-1\u03b2 release (a measure of inflammasome activity) between these strains, QTL mapping was performed. Parental AKR and DBA/2 mice were crossed to generate an F1 population, and their progeny, as well as the progeny of subsequent generations, were brother-sister mated to produce a population of 122 genetically diverse AKRxDBA/2 F4 mice. These F4 mice were genotyped via a dense mouse SNP array, which revealed the desired tapestry of genetic recombination among the cohort (Hai et al., 2018), with an average of\u00a0>2 recombination events per chromosome. BMDM were cultured from these mice and subjected to LPS priming and subsequent ATP treatment. The levels of secreted IL-1\u03b2 normalized to cellular protein from the F4 BMDM were positively skewed, so a log10 transformation was performed to achieve a normal distribution, which is required for subsequent analyses that utilize linear regression models. There was no sex effect on IL-1\u03b2 levels, thus both sexes were used. QTL mapping was performed to identify regions in the genome where genetic variation was significantly associated with phenotypic variation. A highly significant QTL mapped to distal chromosome 7 (log10 of the odds score (LOD)\u00a0=\u00a08.60, peak position\u00a0=\u00a0134.80 Mb), which we named inflammatory response modulator 3 (Irm3) in accordance with Mouse Genome Informatics nomenclature conventions (Figure 1B). Loci on chromosome 2 (147Mb, LOD\u00a0=\u00a03.79) and chromosome 11 (73Mb, LOD\u00a0=\u00a03.85) were highly suggestive, falling just short of the genome-wide significance threshold of LOD\u00a0=\u00a04.02 (\u03b1\u00a0=\u00a00.05) determined by permutation analysis. After correcting for Irm3 by using its peak marker genotypes as an additive covariate, loci on chromosomes 2, 11, and 16 reached genome-wide significance, and were named Irm4, Irm5, and Irm6, respectively (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig1-v1.jpg)\n\n**Figure 1.:** (A)\u00a0IL-1\u03b2 released into conditioned media (normalized to cell protein) from AKR (magenta) or DBA/2 (green) BMDM after treatment with LPS (4 hr, single well) only or LPS (4 hr)+ATP (30 min, biological triplicates), p<0.05 where indicated by two-tailed t-test, mean and SD shown. Representative of several independent experiments. (B) QTL mapping for IL-1\u03b2 release from F4 BMDMs, showing the prominent Irm3 QTL peak on chromosome 7. (C) QTL mapping for IL-1\u03b2 release from F4 BMDMs after adjusting for the effect of the Irm3 QTL, showing Irm4-6 QTLs on chromosomes 2, 11, and 16, respectively (dashed red line in (B and C) represents the genome-wide significance threshold). (D) Log10 IL-1\u03b2 release from F4 BMDMs by genotype at the strongest associated SNP at the Irm3 peak (AA, AKR homozygotes; AD heterozygotes; DD, DBA/2 homozygotes; p<0.0001 by ANOVA linear trend posttest). (E) eQTL mapping for Pycard mRNA levels, showing the cis-eQTL peak mapping to chromosome seven where the Pycard gene resides. (F) Pycard gene sequence conservation at the stop codon (red text) and the immediate 3\u2019UTR (conserved residues highlighted in green and the AKR-DBA/2 SNP in yellow). Source data in file Source data 1.\n\nIrm3 has a Bayesian credible interval (probability\u00a0>0.95 for the causal gene(s) to reside in the interval) of 134.80\u2013138.45 Mb, which contains 66 genes (Supplementary file 1a). Separating the F4 BMDM by their genotype at the Irm3 locus revealed an additive gene dose response for log IL-1\u03b2 release, with an R2 value of 0.28 (p<0.0001 by ANOVA linear trend test) indicating that this locus is associated with 28% of the variance in IL-1\u03b2 release among the F4 BMDM (Figure 1D). Pycard was selected as the top candidate gene based on its established role in inflammasome assembly, its proximity to the QTL peak (0.33 Mb), and the presence of a strong cis-expression QTL (eQTL, showing genetic variation near that gene is associated with its expression) with a LOD score of 20.0 determined in our prior BMDM transcriptomic study based on an independent intercross of the same two parental strains (Hsu and Smith, 2013). Only 3 of the 66 genes in this interval had nonsynonymous SNPs (Zfp646, Bag3, Dmbt1), but none of these SNPs were predicted to alter protein function based on in silico PROVEAN analysis (Choi and Chan, 2015; Supplementary file 1a). There was one other gene in this interval that we previously found to have a cis-eQTL (Rgs10), with a marginal LOD score of 2.6 (2). Taken together, these data suggest that genetic variability within or flanking the Pycard gene plays a causal role in manifesting the divergent levels of secreted IL-1\u03b2 in AKR vs. DBA/2 BMDM, potentially due to differences in Pycard gene expression. There is only one SNP (rs33183533) within the Pycard gene between the AKR and DBA/2 parental strains, which resides in the 3\u2019 UTR. There are also two known upstream SNPs (rs31253258, rs33187231; 5602 and 7736 bp upstream, respectively) and one downstream SNP (rs33182327; 913 bp distal to gene) within 10 kb of the gene. The Sanger Mouse Genomes Project (REL-1505) shows that the 3\u2019 UTR SNP rs33183533 DBA/2 allele (T on the coding strand) is the same as the C57BL/6J reference genome allele. Additionally, 24 of the 36 other mouse strains sequenced had a T allele at the 3\u2019UTR SNP, while the AKR allele (A on the coding strand) is shared by 12 of the 36 other mouse strains (Yalcin et al., 2012). We performed overlapping PCR (Supplementary file 1b) of AKR and DBA/2 genomic DNA covering the entire Pycard gene plus 456 bp and 2361 bp of upstream and downstream flanking region (5310 bp sequenced), which confirmed the presence of the 3\u2019 UTR SNP rs33183533 and the downstream SNP rs33182327, with no other sequence variants in Pycard exons, introns, or flanking regions. The 3\u2019UTR SNP is 3 bp downstream from the stop codon, and this region is perfectly conserved in rats, which have the DBA/2 allele. Thus, the DBA/2 allele is likely the ancestral mouse allele, but this region is not perfectly conserved in rabbits or primates (Figure 1E).\n\n### DBA/2 vs. AKR BMDM have higher Pycard expression and form more ASC specks\n\nReal-time quantitative PCR analysis showed that Pycard mRNA is expressed at\u00a0~2\u20133 fold higher levels in DBA/2 BMDM relative to AKR BMDM in several independent experiments (Figure 2A), in agreement with our prior cis-eQTL data. LPS priming had no effect on Pycard mRNA levels or the observed strain difference (Figure 2A). Western blotting showed 1.5-fold higher levels of the protein product of Pycard, ASC, in DBA/2 vs. AKR BMDM (Figure 2B, p<0.01). When inflammasome activation is triggered, ASC assembles into higher-order protein complexes termed \u2018ASC specks\u2019. Immunostaining for ASC in untreated BMDM showed an expected diffuse cytosolic distribution in both strains (Figure 2C). When inflammasomes were primed and activated by treatment with LPS (4 hr) and ATP (30 min), more ASC speck puncta were observed in DBA/2 vs. AKR BMDM (Figure 2C). The ASC specks in both strains appeared similar in size and shape, and displayed characteristic perinuclear localization. In a separate experiment, automated image analysis revealed that, after LPS and ATP treatment, 54 AKR BMDM had specks while 8664 did not (0.6% speck positive), and 850 DBA/2 BMDM had specks while 2357 did not (26.5% speck positive, p<0.0001 by Fisher\u2019s exact test).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0Relative Pycard mRNA levels in AKR (magenta) and DBA/2 (green) BMDM, showing no induction by LPS (different letters above columns show p<0.05 by ANOVA Tukey posttest, mean and SD shown). Median of technical triplicates of biological triplicates plotted, representative of two independent experiments. (B) Western blot for ASC (top) and \u03b2-actin (bottom) in biological triplicate lysates from AKR and DBA/2 BMDM. Densitometric analysis revealed a 50% increase in the ASC/\u03b2-actin ratio (p<0.01 by two-tailed t-test). (C) Immunofluorescent staining for ACS specks (red) showing assembled inflammasomes and nuclei (blue) in AKR and DBA/2 BMDM with or without inflammasome priming and activation by LPS (4 hr)+ATP (30 min) treatment. For the fields shown in the lower panels, primed and activated AKR BMDM yielded 2 specks among 98 nuclei, while DBA/2 BMDM yielded 23 specks among 58 nuclei. Source data in file Source data 1. Unedited western blots in (B) unedited western blot source data.docx.\n\n### Pycard mRNA half-life is shorter in AKR vs. DBA/2 BMDM\n\nWe hypothesized that the Pycard 3\u2019UTR SNP could influence Pycard mRNA turnover. To determine if Pycard mRNA turnover was different between DBA/2 and AKR BMDM, an actinomycin D time course study was performed. The study revealed that Pycard mRNA had a longer half-life (t1/2) in DBA/2 BMDM than in AKR BMDM (1.64 vs. 1.16 hr, respectively, Figure 3A), with two-way ANOVA showing significant time (p<0.0001), strain (p=0.031), and interaction effects (p=0.002). Similar results were obtained in an independent experiment. To test for differences in Pycard transcription rate, a nuclear run-on experiment was performed, which revealed no significant difference between AKR and DBA/2 BMDM (Figure 3B). The secondary structure of a 30 nucleotide sequence of Pycard mRNA encompassing the 3\u2019UTR SNP was predicted using the RNAfold WebServer (http://rna.tbi.univie.ac.at/cgi-bin/RNAfold.cgi). There is a marked difference in predicted mRNA secondary structure near the SNP, where the AKR allele has a longer stem without a loop after the SNP, and the DBA/2 allele forms a shorter stem followed by a loop (Figure 3C). To determine potential allele-specific miRNA target sites, we searched the miRDB (Wong and Wang, 2015) for miRNAs predicted to bind to 150 nucleotide segments of Pycard mRNA centered on the 3\u2019UTR SNP. Although we identified the target sequence CCAGCUA, eight nt after the SNP, which is predicted to bind to murine miR-7688\u20135 p, miR-7085\u20133 p, and miR7669-3p, no allele-specific miRNA targets were identified. To determine if the 3\u2019UTR SNP altered mRNA splicing or isoform expression, we performed RNAseq on RNA isolated from AKR and DBA/2 BMDM. Assessment of the mapped reads using the IGV browser (Robinson et al., 2011) revealed that both strains express the identical 3-exon isoform (Figure 3D), although both the 5\u2019 and the 3\u2019UTRs are shorter than the canonical major transcript isoform (Pycard-201, ENSMUST00000033056.4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig3-v1.jpg)\n\n**Figure 3.:** (A)\u00a0Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of AKR (magenta) and DBA/2 (green) BMDM (***, p<0.001 by two-tailed t-test). Each point is the mean\u00a0\u00b1\u00a0SD of biological triplicates using the mean of technical triplicates. (B) Relative level of Pycard mRNA run-on transcription in AKR (magenta) and DBA/2 (green) BMDM (not significant by two-tailed t-test). Biological triplicates, mean and SD shown. (C) Predicted structure of AKR and DBA/2 Pycard mRNA segments near the 3\u2019UTR SNP. (D) Sashimi plot of exon junctional reads and read depth histogram (IGV browser view) of RNAseq from AKR and DBA/2 BMDM, with the Pycard gene exon-intron structure below (gene on lower strand, 5\u2019 to 3\u2019 from right to left). Source data in file Source data 1.\n\n### CRISPR/Cas9 editing of Pycard in embryonic stem cells\n\nTo confirm the role of the Pycard 3\u2019UTR SNP on Pycard expression and IL-1\u03b2 release after inflammasome activation, CRISPR/Cas9 homology directed repair (HDR) gene editing was employed to change the DBA/2 allele (T on coding strand) to the AKR allele (A on coding strand) in the DBA/2J mouse embryonic stem (ES) cell line AC173/GrsrJ. We were able to enrich for HDR editing vs. non-homologous end joining (NHEJ) by using: (1) selection via an HDR-dependent GFP-stop codon reporter; (2) a NHEJ inhibitor; and, (3) cell cycle synchronization (Figure 4A). The Pycard guide RNA target sequence (on the antisense strand) contained the SNP (Figure 4B), so that successful HDR would eliminate the perfect match with the single guide RNA (sgRNA) and limit re-cutting of the edited allele. After co-transfection with sgRNAs and single-strand donor DNAs to correct the GFP stop codon and edit the Pycard SNP, we sorted GFP+ cells for clonal growth. We screened 49 colonies by allele-specific PCR (Figure 4B,C) and Sanger sequencing (Figure 4D). We obtained five colonies (10.2%) homozygous for the AKR allele, and three of these colonies (H2, H5, and H35) were expanded for functional testing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig4-v1.jpg)\n\n**Figure 4.:** (A)\u00a0Strategy used to decrease NHEJ by use of HDR reporter and small molecules to modulate cell cycle and inhibit NHEJ. (B) Sequence of the AKR allele ss donor (3\u2019UTR SNP highlighted in red) with 500 nt homology arm (HA), which will change the SNP from DBA/2 to AKR and eliminate Cas9 re-cutting, since the SNP is within the sgRNA sequence (underlined in the DBA/2 gene sequence). The sequence of the AKR and DBA/2 allele-specific PCR reverse primers are also shown with the SNP at the 3\u2019 end, along with the positions of the common forward primer and the reverse PCR primer used for sequencing the edited clonally derived genomic DNA. (C) Example of allele-specific PCR using AKR and DBA/2 genomic controls, and DNA from expanded colonies after gene editing. Genotypes cannot all be distinguished, as one of both alleles may be edited by NHEJ precluding DNA amplification. (D) Sanger sequencing of DNA after gene editing showing a homozygous HDR conversion to the AKR allele (top) and a compound heterozygous with editing to one AKR allele and one indel allele due to NHEJ (bottom).\n\n### Pycard 3\u2019UTR SNP confirmed as a causal modifier via ES cell derived macrophage (ESDM) functional tests\n\nMacrophage-directed differentiation was performed on the three homozygous Pycard edited cell lines and their parental clonally derived DBA/2 ES cell line as previously described, and confirmed by acetylated LDL uptake (Hai et al., 2018). After LPS and ATP treatment the DBA/2 ESDM released about twofold more IL-1\u03b2 vs. the three independent Pycard edited ESDM lines (p<0.05 or<0.01, Figure 5A). qPCR demonstrated that Pycard mRNA was\u00a0~3 fold higher in DBA/2 ESDM relative to Pycard edited ESDM lines (p=0.014, Figure 5B). This difference in Pycard mRNA was associated with mRNA t1/2 of 6.37 vs. 4.56 hr in DBA/2 ESDM vs. Pycard edited ESDM, respectively (Figure 5C). Western blot analysis showed greater heterogeneity in the levels of ASC protein among the three Pycard edited ESDM lines; however, all three edited ESDM lines had reduced ASC protein vs. DBA/2 ESDM (p<0.05 or p<0.001, Figure 5D). These results confirm that the Pycard 3\u2019UTR SNP is a causal variant that alters Pycard mRNA turnover, Pycard mRNA levels, ASC protein levels, and IL-1\u03b2 release. Of interest, compared to the BMDM, the absolute values of IL-1\u03b2 secretion and the Pycard mRNA t1/2 were different in the ESDM, suggesting these macrophages may be less mature than BMDM.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68203/elife-68203-fig5-v1.jpg)\n\n**Figure 5.:** (A)\u00a0IL-1\u03b2 release from ESDM derived from DBA/2 ES (green) and three independent homozygous Pycard edited ES lines (magenta), in the absence or presence of inflammasome priming and activation with LPS\u00a0+ATP (each point is a biological replicate; *, p<0.05; **, p<0.01 vs DBA/2 derived ESDM in the presence of LPS\u00a0+ATP by ANOVA with Dunnett's multiple comparisons test, mean and SD shown). (B) Pycard mRNA levels in two DBA/2 ESDM differentiations and three independent homozygous Pycard edited ESDM (p=0.014 by two-tailed t-test). Each point is a biological replicate of qPCR technical triplicates, mean shown. (C) Semi-log plot of Pycard mRNA turnover after Actinomycin D treatment of ESDM derived from two differentiations of DBA/2 ES and three independent homozygous Pycard edited ES lines (magenta), (*, p<0.05 by two-tailed t-test). Each point is the average of biological triplicates of qPCR technical triplicates, mean and SD shown. (D) Left side, western blot for ASC (top) and \u03b2-actin (bottom) from ESDM lysates derived from DBA/2 ES and three independent homozygous Pycard edited ES lines. Right side, densitometry of western blot showing ASC levels are lower in all three Pycard edited cell lines (*, p<0.05; ***, p<0.001 vs. DBA/2 derived ESDM by ANOVA with Dunnett's multiple comparisons test, mean and SD shown).\n\n## Discussion\n\nQTL mapping of macrophage IL-1\u03b2 secretion performed on an AKRxDBA/2 F4 population identified an approximate 3.5 Mb locus on distal chromosome 7, which we named Irm3. Pycard resides in Irm3 and was recognized as a very strong candidate gene because its protein product, ASC, is an inflammasome adaptor protein, and Pycard had a strong cis-eQTL in a prior study (Hsu and Smith, 2013). DBA/2 vs. AKR BMDM were shown to express Pycard and ASC at higher levels and assemble more ASC specks upon LPS and ATP stimulation. The lone SNP in the Pycard gene sequence (rs33183533) between AKR and DBA/2 mice, located in the 3\u2019UTR, was unequivocally verified as a significant modulator of macrophage IL-1\u03b2 secretion and Pycard expression using CRISPR/Cas9 gene editing.\n\nAnother group previously identified the inflammatory response modulator 1 (Irm1) QTL on the distal end of mouse chromosome 7, which was associated with both IL-1\u03b2 release from ex vivo stimulated blood leukocytes and in vivo leukocyte Biogel infiltration. This QTL was mapped by intercrossing incompletely inbred high and low responder strains derived from an eight-strain intercross followed by selective breeding (Vorraro et al., 2010). The Irm1 1-LOD confidence interval for leukocyte IL-1\u03b2 release extends from 130.75 to 144.75 Mb, which encompasses the Irm3 QTL (134.80\u2013138.45 Mb) discovered in the current study. Therefore, it is possible that Irm3 represents a fine-mapping of a candidate gene in the Irm1 locus, which is plausible considering we started with inbred strains, created an F4 versus an F2 cross, and used a denser SNP panel. Although these investigators never identified the gene responsible for Irm1, they ruled out Pycard as the causal gene for Irm1 due to equal distribution of the 3\u2019UTR SNP we evaluated (rs33183533) and another SNP in the first intron of the Pycard gene (rs51540238) among the high and low responder parental strains used in their study (Vorraro et al., 2010). However, their study did not examine the Pycard 3\u2019UTR SNP genotype effect on IL-1\u03b2 produced in the F2 mice, and thus it is possible that the Irm1 QTL is indeed due to the Pycard 3\u2019UTR SNP due to the selection and success of specific breeders within the incompletely inbred parental high and low responder strains. In addition, Pycard mRNA and ASC expression levels in the F2 mice were not reported in their study. As with any QTL study, it is also possible that there are additional genes that modulate IL-1\u03b2 secretion at the distal end of chromosome 7, and another gene is the primary modulator for the strains used in their study. Additional mouse QTLs that overlap Irm3 include Lsq-1, a QTL for hindlimb ischemia (Dokun et al., 2008), and Civq1, a QTL for infarct volume following ischemic stroke (Keum and Marchuk, 2009). Neither study postulates a role for Pycard in these phenotypes.\n\nHuman GWAS studies revealed an SNP near Pycard that is associated with bronchodilator response in asthma, although this association does not meet the commonly used threshold (<5\u00d710\u22128) for genome-wide significance (Lutz et al., 2015). The dbSNP database lists only two common human SNPs within the PYCARD gene, rs115908198 located in the 3\u2019UTR and rs73532217 located in the first intron. These two SNPs are only common (>1% minor allele frequency) in African populations with minor allele frequencies of\u00a0~7% and\u00a0~2%, respectively. However, neither of these SNPs have been studied mechanistically to determine effects on PYCARD expression. The human GTEx portal (Release V8) study of gene expression in many postmortem human tissues identifies 80 distinct cis-eQTL SNPs near the PYCARD gene associated with PYCARD mRNA expression at p<5\u00d710\u22128, including the intronic SNP rs73532217. Due to linkage disequilibrium, the co-inheritance of nearby variants from ancestral chromosomes, it is likely that only one or a few of these cis-eQTL SNPs are true regulatory SNPs that alter mRNA production or turnover, which must be confirmed by mechanistic investigations such as those performed in the current study.\n\nSearching the human GWAS catalog (https://www.ebi.ac.uk/gwas/home) for \u2018interleukin-1 beta measurement\u2019 in January, 2021 yielded four studies; however, three of these found no common SNPs associated with plasma/serum IL-1\u03b2 at genome-wide significance, albeit these studies did identify SNPs associated with other cytokines (Matteini et al., 2014; Ahola-Olli et al., 2017; Offenbacher et al., 2018). The single study that identified common SNPs associated with plasma IL-1\u03b2 found two independent SNPs on chromosome 6, near the HLA locus, associated with IL-1\u03b2 levels (Sliz et al., 2019). We suspect that human GWAS studies for IL-1\u03b2 may be susceptible to false negative findings, as IL-1\u03b2 levels have a large environmental component due to its response to infection or inflammation. Therefore, mouse studies may be useful to identify genes, pathways, and\u00a0mechanisms that regulate IL-1\u03b2 release after inflammasome activation, which would be difficult to perform in humans. Performing in vitro human genetic studies with a large panel of human-induced pluripotent stem cells differentiated into macrophages or dendritic cells (Warren and Cowan, 2018) might be an excellent alternative to identify common human genetic variants associated with inflammasome priming/activation and IL-1\u03b2 release.\n\nASC protein/PYCARD gene has been previously shown to be subject to additional regulatory control by post-translational modifications such as ubiquitination and phosphorylation and by mRNA splicing (Hoss et al., 2017). The tyrosine kinase Syk is required for Nlrp3 inflammasome activation in mouse BMDM (Gross et al., 2009). Both Syk and Jnk kinases are required for Nlrp3 and AIM2 inflammasome activation in mouse and transfected human cells, which are associated with ASC phosphorylation and oligomerization (Hara et al., 2013). Human ASC tyrosines 146 and 187 are critical for Syk-mediated ASC oligomerization and inflammasome activity (Lin et al., 2015). Syk phosphorylates Pyk2 kinase, which then directly phosphorylates ASC on tyrosine 146 (Chung et al., 2016). In contrast I\u03baB kinase \u03b1 (IKK\u03b1) binds directly to ASC, requiring ASC serines 16 and 193, and negatively regulates Nlrp3 inflammasome activity, so that upon inflammasome activation by ATP or other agonists IKK\u03b1 is released from ASC (Martin et al., 2014). Protein phosphatases also regulate ASC oligomerization and activity, with the broad-spectrum tyrosine phosphatase inhibitor phenylarsine oxide reducing ASC assembly and speck formation (Mambwe et al., 2019), although this appears to be in the opposite direction of the Syk effects on ASC phosphorylation. The protein tyrosine phosphatase PTPN2 is a negative regulator of inflammasome activity, as demonstrated in myeloid-specific Ptpn2 knockout mice that have increased inflammasome activity and ASC phosphorylation via increased Jnk activity (Spalinger et al., 2018). Based on cDNA sequences, RT-PCR, and ASC domain-specific antibodies, alternative splicing of PYCARD mRNA has been proposed leading to three alternative human ASC isoforms; and, transfection overexpression studies found some inflammasome activity with the alternative exon two skipped isoform (Bryan et al., 2010).\n\nOur study identified an additional ASC regulatory mechanism in mice due to a Pycard 3\u2019 UTR SNP, where the allele that decreases Pycard mRNA stability was found in\u00a0~1/3 of sequenced mouse strains. We further showed that the Pycard 3\u2019UTR SNP led to different predicted mRNA secondary structure without altering the transcript isoform expressed; and, we identified three mouse miRNAs with target sequences eight nt downstream of the 3\u2019UTR SNP. Additional studies would be required to determine if the different structures of AKR and DBA/2 Pycard mRNAs influence the binding of miRNAs or putative RNA-binding proteins that might alter transcript turnover.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Pycard</td>\n      <td>Ensemble</td>\n      <td>ENSG00000103490</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>AKR/J</td>\n      <td>JAX</td>\n      <td>648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>DBA/2J</td>\n      <td>JAX</td>\n      <td>671</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>DBA/2J mouse ES cell line AC173/GrsrJ</td>\n      <td>JAX</td>\n      <td>000671C02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>(Puromycin-resistant MEF feeder cells)</td>\n      <td>Cell Biolabs</td>\n      <td>CBA-312</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>Neomycin-resistant MEF feeder cells (Cell Biolabs, CBA-311)</td>\n      <td>Cell Biolabs</td>\n      <td>CBA-311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (S. pyogenes)</td>\n      <td>Cas9 expression plasmid pSpCas9(BB)\u22122A-Puro</td>\n      <td>Addgene</td>\n      <td>PX459</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Aequorea Victoria)</td>\n      <td>MSCV-miRE-shRNA IFT88-PGK-neo-IRES-GFP plasmid,</td>\n      <td>Addgene</td>\n      <td>73576</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti Cas9 (Diagenode, C15200203)</td>\n      <td>Diagenode</td>\n      <td>C15200203</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-mouse AS</td>\n      <td>Cell Signalling</td>\n      <td>67824</td>\n      <td>WB(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-ASC N-terminus</td>\n      <td>Santa Cruz Biotech</td>\n      <td>Sc-22514-R</td>\n      <td>IF (10 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat polyclonal alexa Flour 568 anti-rabbit IgG</td>\n      <td>ThermoFisher</td>\n      <td>A-11011</td>\n      <td>IF (2 \u03bcg/ml)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonalHRP-conjugated anti \u03b2-actin</td>\n      <td>Santa Cruz Biotech</td>\n      <td>Sc-47778-HRP</td>\n      <td>(WB (1:20,000))</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR for mouse Pycard</td>\n      <td>ThermoFisher</td>\n      <td>4331182, Assay ID: Mm00445747_g1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR for mouse Actb</td>\n      <td>ThermoFisher</td>\n      <td>4448484, Assay ID: Mm02619580_g1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Nuclear run-on qPCR for mouse Pycard</td>\n      <td>ThermoFisher</td>\n      <td>4441114, Assay ID: AJMSHN7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA for GFP stop codon</td>\n      <td>Synthego</td>\n      <td>Custom</td>\n      <td>GGGCGAGGGCGAUGCCACCU</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA for Pycard 3\u2019 UTR</td>\n      <td>Synthego</td>\n      <td>Custom</td>\n      <td>AGAUACCUCAGCUCUGCUCC</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Leukaemia inhibitory factor</td>\n      <td>Millipore-Sigma</td>\n      <td>ESG1107</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Mouse IL-3</td>\n      <td>R and D Systems</td>\n      <td>403 ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Mouse Il-1\u03b2 ELISA</td>\n      <td>R and D Systems</td>\n      <td>MLB00C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript VILO cDNA synthesis kit</td>\n      <td>ThermoFisher</td>\n      <td>1175505</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iScript cDNA synthesis kit</td>\n      <td>BioRad</td>\n      <td>1708891</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LPS from E. coli O55:B5</td>\n      <td>Sigma</td>\n      <td>L6529</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATP</td>\n      <td>Sigma</td>\n      <td>A2383</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom special R functions</td>\n      <td>This paper</td>\n      <td>https://github.com/BrianRitchey/qtl</td>\n      <td>See Methods section</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>r/QTL</td>\n      <td>Reference 30 in this paper</td>\n      <td>https://rqtl.org/download/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>30 \u00b5m sterile filters</td>\n      <td>Sysmex</td>\n      <td>04-004-2326</td>\n      <td>To filter out embryonic bodies during ESDM differentiation</td>\n    </tr>\n  </tbody>\n</table>\n\n### Generation and genotyping of AKRxDBA/2 F4 mice\n\nAll animal studies were approved by the Cleveland Clinic Institutional Animal Care and Use Committee. Parental wild type male AKR/J and female DBA/2J mice, obtained from JAX (# 648 and 671), were crossed to create the F1 generation, fixing the Y chromosome from the AKR strain. Two breeding pairs of F1 mice were bred to generate F2 mice, and two breeding pairs of F2 mice were used to generate F3 mice. Six breeding pairs of F3 mice were used to generate the 122 F4 mice, which consisted of 70 males and 52 females. Healthy F4 mice were sacrificed at 8\u201310 weeks of age. Ear tissue was collected from each mouse and digested overnight at 55\u00b0C in lysis buffer containing 20 mg/mL proteinase K. DNA was ethanol precipitated and resuspended in 10 mM Tris 1 mM EDTA (pH\u00a0=\u00a08). Femurs were promptly flushed after sacrifice, and resultant bone marrow cells were washed, aliquoted, and cryopreserved. Cells were thawed and differentiated into macrophages at the time of experimentation, as described below. F4 mice were genotyped as described previously (Hai et al., 2018). Briefly, the GeneSeek MegaMUGA SNP array was used, and filtering for call frequency and strain polymorphism using parental and F1 DNA yielded 16,975 informative SNPs that were used for QTL analysis. All marker locations are based on NCBI Mouse Genome Build 37.\n\n### Bone-marrow-derived macrophages\n\nCryopreserved bone marrow cells were resuspended and plated in macrophage growth medium (DMEM, 10% FBS, 20% L-cell conditioned media as a source of Macrophage Colony Stimulating Factor). Media was renewed twice per week. Cells were used for experiments 11\u201314 days after plating, when the cells were confluent and fully differentiated into BMDM. Three of the 122 F4 frozen bone marrow cells did not generate macrophages yielding 119 samples assessed below.\n\n### IL-1\u03b2 release assay\n\nBMDM or ESDM were primed with 1 \u03bcg/mL LPS from Escherichia coli O55:B5 (Sigma, L6529) for 4 hr at 37\u00b0C and subsequently treated with 5 mM adenosine triphosphate (ATP) (Sigma; A2383) for 30 min at 37\u00b0C. Media were collected and briefly centrifuged to pellet any cellular debris and the resultant supernatant was collected. IL-1\u03b2 levels were measured via a mouse IL-1\u03b2 ELISA assay according to the manufacturer\u2019s instructions (R and D Systems, MLB00C). Released IL-1\u03b2 levels were normalized to cellular protein, as determined by the bicinchoninic acid protein assay (ThermoFisher, 23227) of total cell lysates prepared by incubation at 37\u00b0C for\u00a0>4 hr in 0.2 N NaOH, 0.2% SDS.\n\n### Quantitative trait locus (QTL) mapping of macrophage IL-1\u03b2 release\n\nQTL mapping of log10 IL-1\u03b2 released from 119 AKR x DBA/2 F4 BMDM was performed using R/qtl software (Broman et al., 2003). The \u2018scanone\u2019 function was utilized using Haley-Knott regression by specifying the \u2018method\u2019 argument as \u2018hk\u2019. False discovery rates (FDRs) were estimated via permutation analysis, using 10,000 permutations by specifying the \u2018n.perm\u2019 argument in the \u2018scanone\u2019 function. QTL credible intervals were determined using the Bayesian credible interval (\u2018bayesint\u2019) function in R/qtl, with the \u2018prob\u2019 argument set at 0.95. QTL mapping for Irm4-6 was performed using the genotypes from the most strongly associated Irm3 marker as an additive covariate (\u2018addcovar\u2019) in the \u2018scanone\u2019 function of R/qtl, and again subjected to 10,000 permutation analyses to determine FDRs. Loci that reached significance were designated Irm4-6 based on their occurrence scanning left to right across the genome. To aid in prioritizing candidate genes, a custom R function termed \u2018flank_LOD\u2019 was written (https://github.com/BrianRitchey/qtl/blob/master/flank_LOD.R). \u2018flank_LOD\u2019 utilizes the \u2018find.flanking\u2019 function in R/qtl and returns the LOD score of the nearest flanking marker for a given candidate gene position based on \u2018scanone\u2019 output data.\n\n### Pycard mRNA expression assay\n\nRNA was extracted from BMDM or ESDM by scrapping cells in QIAzol reagent and homogenization by 5\u201310 passages through a 27 gauge syringe with subsequent phenol/chloroform extraction. RNA was purified using the miRNeasy Mini Kit (Qiagen, 217004) with on-column DNA digestion according to manufacturer\u2019s instructions. cDNA was generated using SuperScript VILO Master Mix (ThermoFisher, 11755050) or IScript cDNA Synthesis Kit (BioRad, 1708891). mRNA levels were determined via TaqMan qPCR assays for mouse Pycard (ThermoFisher, 4331182, Assay ID: Mm00445747_g1), with Actb (4448484, Assay ID: Mm02619580_g1) serving as an internal control. Samples were run for 40 cycles on an Applied Biosystems StepOnePlus Real-Time PCR System using the comparative Ct method. Resultant data were analyzed using the 2^-\u0394\u0394Ct method relative to the average AKR \u0394Ct for BMDM, and the average DBA/2 ESDM \u0394Ct for ESDM. In some experiments, Pycard mRNA turnover was assessed by treating cells with 10 \u03bcg/mL Actinomycin D (Sigma, A1410) at various time points before cells were harvested.\n\n### Nuclear run-on\n\nPreviously published methods were followed (Roberts et al., 2015; Patrone et al., 2000). AKR and DBA/2 BMDM were first primed with 1 \u03bcg/mL LPS for 4 hr. Cells were collected into strain-specific pools, counted on a hemocytometer, and lysed in NP-40 lysis buffer to obtain nuclei. In vitro RNA synthesis with biotin-16-UTP was performed using 50 million nuclei per reaction, with triplicate concurrent reactions for each strain. Reactions were incubated at 30\u00b0C for 30 min, and RNA was extracted and purified using the miRNeasy Mini Kit. Newly synthesized transcripts were selected for biotin-16-UTP incorporation using streptavidin coated magnetic beads (ThermoFisher, Dynabeads M-280). Beads were extracted using QIAzol reagent, with subsequent phenol/chloroform extraction, and RNA was ultimately isopropanol precipitated with glycogen added as a carrier. cDNA was generated using SuperScript VILO Master Mix, and RNA levels were determined via TaqMan qPCR assays for mouse Pycard (ThermoFisher, 4441114, Assay ID: AJMSHN7), with Actb (ThermoFisher, 4448484, Assay ID: Mm02619580_g1) serving as an internal control. A custom TaqMan assay was designed for Pycard, with primers spanning an intron-exon boundary. The specific Actb TaqMan assay was selected because primers were within a single exon. These assays comply with the primer design guidelines for nascent transcript quantification as previously described (Roberts et al., 2015).\n\n### ASC western blot assay\n\nProteins were extracted from BMDM or ESDM in triplicate with RIPA buffer (Pierce, 89900) as previously described (Hai et al., 2018). Fifteen to 50 \u00b5g of each cell lysate was mixed with SDS sample buffer and incubated for 8 min at 95\u00b0C then immediately cooled on ice for 8 min. Proteins were separated by SDS-PAGE (ThermoFisher, XP04200BOX) for 2 hr at 110V, and then transferred to a PDVF membrane. After incubating with Casein Blocker in TBS (ThermoFisher, 37532) for 1 hr at room temperature, the membrane was incubated overnight at 4\u00b0C with primary rabbit ASC antibody (Cell Signaling, 67824) 1:500 in blocking buffer. After washing with PBS-0.05% Tween20, the membrane was probed with HRP-conjugated secondary antibody (goat anti-rabbit) 1:20,000 in blocking buffer for 1 hr at room temperature. The bands were visualized by HRP chemiluminescence detection Reagent (Millipore, WBKLS0500). The membrane was re-probed with HRP-conjugated anti \u03b2-actin (Santa Cruz Biotech, sc-47778-HRP) 1:20,000 in blocking buffer for 1 hr at room temperature and visualized in the same way. Densitometric analysis of bands was performed using ImageJ software.\n\n### ASC speck imaging and quantification\n\nBMDM grown in 24-well plates were fixed in ethanol and blocked in 1% BSA. Immunostaining against ASC was performed using ASC (N-15) antibody (Santa Cruz Biotechnology; sc-22514-R) at 10 \u03bcg/mL for 1 hr at room temperature. Alexa Fluor 568 anti-rabbit (ThermoFisher; A-11011) was then incubated at 2 \u03bcg/mL for 1 hr at room temperature. DAPI (Simga; D9542) staining (300 nM) was performed for five minutes at room temperature. Images were captured using the Cytation 3 Cell Imaging Multi-Mode Reader (Biotek) using a \u00d720 objective lens. For one experiment, automated images were captured using the Cytation three instrument from triplicate LPS\u00a0+ATP treated BMDM wells per strain using a 12 \u00d7 10 grid in each well (120 total images per well). Nuclei and ASC specks were counted using the cellular analysis feature in Gen5 software (Biotek). Nuclei and speck counts were compared in AKR vs. DBA/2 BMDM by Fisher\u2019s exact test contingency table analysis.\n\n### RNA sequencing\n\nTotal RNA was prepared from AKR and DBA/2 BMDM using miRNeasy Mini Kit (Qiagen; # ID 217004) with on-column DNA digestion according to manufacturer\u2019s instructions. RNA integrity and RNAseq was performed by the University of Chicago Genomics Core. 30 million paired end reads were obtained using the Illumina NovaSeq 6000 with library preparation using the oligo dT directional method. Fasta files were preprocessed, aligned and quantified using the nf-core/rnaseq pipeline version 1.4.2, which is part of nf-core framework for community-curated bioinformatics pipelines (Ewels et al., 2020). Specifically, reads were aligned using the STAR aligner version 2.6.1d with the Gencode M25 transcriptome and GRCm38 primary assembly genome and all default values of the pipeline were used except read trimming was not performed before alignment. The BAM and BAM index files were viewed and Sashimi plots prepared using the Integrative Genomics Viewer (IGV) browser (Robinson et al., 2011).\n\n### Cell lines and cell culture\n\nPuromycin-resistant MEF feeder cells (Cell Biolabs, CBA-312) and neomycin-resistant MEF feeder cells (Cell Biolabs, CBA-311) were cultured in DMEM high glucose supplemented with 10% fetal bovine serum and 1% PenStrep at 37\u00b0C, then inactivated with 10 \u00b5g/ml mitomycin C (Sigma, M4287) for 2 hr for mouse embryonic stem cell culture, as previously described (Hai et al., 2018). DBA/2J mouse ES cell line AC173/GrsrJ (JAX, 000671C02), was cultured on 0.1% gelatin-coated plates with mitomycin C inactivated MEFs, in ES culture medium (DMEM high glucose with 15% fetal bovine serum, 1% MEM Non-Essential Amino Acids, 1% PenStrep, 0.1 mM 2-mercaptoethanol, 103 unit/ml leukemia inhibitory factor (Millipore Sigma, ESG1107), 1 \u03bcM PD0325901 (Sigma, PZ0162) and 3 \u03bcM CHIR99021 (Sigma, 361571)), at 37\u00b0C. All cell lines were detached with trypsin and frozen with 80% ES culture medium supplemented with 10% DMSO and an additional 10% FBS. Only mouse cell lines used. No STR profiling methods are available to authenticate mouse cell lines. DNA sequencing was used to confirm editing of the DBA/2 allele to the AKR allele of the mouse ES cell line used. Mycoplasm testing was negative.\n\n### Gene editing by homology directed repair (HDR)\n\nCRISPR/Cas9 HDR was employed in DBA/2 ES to make a single base pair change in the Pycard 3\u2019UTR SNP from the DBA/2 allele to the AKR allele. In order to enhance the low frequency of HDR, multiple strategies were employed, including reporter-dependent co-selection, non-homologous end joining (NHEJ) inhibition, and cell cycle control (Figure 4A,B). Five \u00b5g Cas9 expression plasmid pSpCas9(BB)\u22122A-Puro (Addgene, PX459) was stably transfected into 8 \u00d7 105 DBA/2 ES cells via electroporation, using a Lonza Amaxa nucleofector II with program A-24 and mouse ES cell nucleofector kit (Amaxa, VAPH-1001). Transfected cells were plated in 2 mg/ml puromycin in ES culture medium on the puromycin resistant MEFs in P100 tissue culture dishes. One week later, the medium was replaced with regular ES culture medium. Three to 7 days later individual colonies were picked and expanded and western blot was used to confirm Cas9 protein expression (Diagenode, C15200203). Cas9 expression in a high expressing line was confirmed by immunohistochemistry (Hai et al., 2018).\n\nTo create a selectable HDR reporter, we used site-directed mutagenesis of a GFP expression plasmid (MSCV-miRE-shRNA IFT88-PGK-neo-IRES-GFP plasmid, Addgene # 73576), and substituted a single G for a C to introduce an in frame stop codon (TAG) in place of a tyrosine codon (TAC) in the initial region of the GFP coding sequence and simultaneously generate a new PAM sequence (AGG) from the original sequence (ACG). Two oligos (F: GCGATGCCACCTAGGGCAAGCTGACCCTG and R: CAGGGTCAGCTTGCCCTAGGTGGCATCGC) were used with the QuikChange II mutagenesis kit (Agilent, 200523). We confirmed that this mutation (GFPstop) extinguished GFP expression compared to the parent plasmid by transient transfection. Two \u00b5g of the GFPstop expression plasmid was stably transfected into the Cas9 stably transfected DBA/2 ES cell line as described above, followed by selection in growth media containing 900 \u00b5g/ml G418. Colonies were expanded and stable transfection confirmed by PCR of genomic DNA using GFP specific primers (F: ATAAGGCCGGTGTGCGTTTGTCTA; R: CGCGCTTCTCGTTGGGGTCTTTG).\n\nsgRNAs were designed to target Cas9 nuclease to the GFPstop (GGGCGAGGGCGAUGCCACCU) and the Pycard 3\u2019 UTR SNP (AGAUACCUCAGCUCUGCUCC) using ZiFit software (Sander et al., 2010) and purchased from Synthego with their chemical modification to increase stability. To perform HDR gene editing we prepared two ssDNA donor templates by PCR and single strand degradation as described below. The GFP donor repairs the created stop codon and removes the PAM sequence utilized by the GFP sgRNA, thus HDR would simultaneously generate GFP\u00a0+\u00a0cells that cannot be recut by Cas9 nuclease. The GFP donor PCR primers 5\u2019 phosphorylated-CGCGCTTCTCGTTGGGGTCTTTG (the non-PAM strand) and ATAAGGCCGGTGTGCGTTTGTCTA (PAM strand) generated an 1188 bp dsDNA product using the non-mutated GFP expression vector as a template. The Guide-it Long ssDNA Production System (Takara Bio, 632644,) was used to degrade the 5\u2019 phosphorylated strand to generate the ssDNA PAM-strand GFP donor. The Pycard donor creates the AKR allele at the 3\u2019 UTR SNP and changes the sgRNA target sequence such that HDR would simultaneously generate the AKR allele that cannot be recut by Cas9 nuclease. The Pycard donor PCR primers 5\u2019 phosphorylated -TGTGTCCCCTTGTTCGTCTACCC (non-PAM strand) and TTTCTAAGCCCCATTGCCTGTTTT (PAM strand) generated an 1144 bp dsDNA product using AKR mouse genomic DNA as a template. The ssDNA PAM-strand Pycard donor was generated as described above.\n\nElectroporation for HDR was performed as described above on 2 \u00d7 106 Cas9+/GFPstop stably transfected ES cells using 100 pmol each of the GFP and Pycard template donors and 2 \u00b5g of each sgRNA. In order to increase HDR we used cell cycle control, as previously described (Lin et al., 2014), by treatment of 70% confluent ES cells for 3 hr with 5 \u00b5g/ml aphidicolin prior to the electroporation and 8 hr treatment with 300 ng/ml nocodazole after the electroporation. We also inhibited NHEJ (Yu et al., 2015) by adding 0.1 \u00b5M brefeldin A1 and 5mM L755507 for the first 16 hr after electroporation and then replacing with ES growth medium. Ninety-six hr after electroporation, the transfected cells were detached for fluorescent activated cell sorting (FACS) to collect the GFP\u00a0+\u00a0cells competent for HDR. GFP\u00a0+\u00a0cells were plated at low density on inactivated MEFs for 10 days and individual colonies were picked and expanded.\n\nFifty-five clonally derived GFP+ cell lines were subjected to Pycard genotyping by allele-specific PCR. Genomic DNA was extracted from each cell line and used as a PCR template in separate reaction with AKR allele-specific primers (F: AACAGCCCCACCCCCAAAATCCAC; R: CCTGGAGCAGAGCTGAGGA) and DBA/2 allele-specific primer (F: AACAGCCCCACCCCCAAAATCCAC; R: CCTGGAGCAGAGCTGAGGT), which only differed from each other in the 3\u2019 terminal nucleotide on the R primer (Figure 4B). Genomic DNA from AKR and DBA/2 mice was used as positive and negative controls for the respective allele-specific PCR reactions. The allele specific PCR reactions can also yield a false negative if an indel is introduced by NHEJ such that neither primer pair would work. Thus, samples yielding product only with the DBA/2 primers can be derived from unedited wild-type DBA/2 (WT) WT/WT alleles, or WT/NHEJ alleles (Figure 4C). Likewise, for samples yielding product only with the AKR primer set can be derived from homozygous AKR alleles derived by HDR, HDR/HDR alleles, or HDR/NHEJ alleles. To distinguish HDR/HDR from HDR/NHEJ genotypes we performed a non-allele-specific PCR reaction (F: AACAGCCCCACCCCCAAAATCCAC; R: GTGGCTTTCCTTGATTCT) for sequencing (Figure 4B). The PCR product was purified with ExoSAP-IT PCR Product Cleanup Reagent (ThermoFisher), and Sanger sequenced using the primer CATAACTTGGGTCTGTGG. If only one sequence was obtained corresponding to the HDR allele the genotype is homozygous HDR/HDR, that\u00a0is mutated to the AKR allele at the Pycard 3\u2019 UTR SNP (Figure 4D). In subsequent functional studies, three independent homozygous (H) HDR/HDR Pycard edited cell lines were used, named H2, H5, and H35.\n\n### ESDM differentiation\n\nThe macrophage differentiation protocol was adapted from previous publications (Zhuang et al., 2012; Yeung et al., 2015). Three homozygous Pycard edited cell lines and their parental Cas9+/GFPstop stably transfected DBA/2 ES cell line (DBA/2) were cultured on inactivated MEFs as described above. These cell lines were passaged without inactivated MEFs for two generations from low density to 80% confluence to decrease MEF contamination. To eliminate any possible residual MEFs, detached cells were bound to gelatin coated tissue culture plates in ES culture medium at 37\u00b0C for 30 min, such that MEFs stuck to the plate and ES cells remained in the supernatant. 6 \u00d7 105 ES cells from each cell line were resuspended in macrophage differentiation medium (MDM), which consists of DMEM high glucose, 15% FBS, 1% PenStrep, 1% MEM non-essential amino acids, 0.1 mM 2-mercaptoethanol, 3 ng/ml mouse IL-3 (R and D Systems), and 20% L-cell conditioned medium. These cells were cultured in petri dishes (low adherence) in a 37\u00b0C incubator while on a horizontal rocker at one cycle/3 s for 7 days to avoid attachment and aggregation of newly forming embryoid bodes. On day 8, the floating embryoid bodies were transferred to gelatin coated P-100 tissue culture plates in MDM. Five days later, floating macrophage progenitor cells were harvested and filtered through a 30 \u00b5m sterile filters (Sysmex, 04-004-2326) to remove any embryoid bodies, and plated on gelatin-coated tissue culture plates. This harvest of macrophage progenitors was repeated every other day. In order to determine the efficacy of differentiation into macrophages, we performed a DiI labeled acetlylated low-density lipoprotein (DiI-AcLDL) uptake 13 days after plating the macrophage progenitors. Cells were incubated with DiI-AcLDL for 30 min at 37\u00b0C and uptake was confirmed by fluorescent-microscopy as previously described (Hai et al., 2018). In addition, we compared ESDM with BMDM and found that they were similar by flow cytometry using antibodies against common mouse leukocyte markers: CD11b+, CD11c+, Ly6G-, and Ly6Clo. We also determined that undifferentiated DBA/2 ES cells were CD11b- and CD11c-.\n\n### Bioinformatic analysis\n\nGenes in QTL intervals were determined by custom written R functions (\u2018QTL_gene\u2019 and \u2018QTL_summary\u2019) which utilize publicly available BioMart data from Mouse Genome Build 37. A custom written R function (\u2018pubmed_count\u2019), which utilizes the rentrez package in R was used to determine the number of PubMed hits for Boolean searches of gene name and term of interest. Custom written R functions (\u2018sanger_AKRvDBA_missense_genes\u2019 and \u2018missense_for_provean\u2019) were used to determine the number of missense (non-synonymous) mutations between AKR/J and DBA/2J mice in QTLs, as documented by the Wellcome Trust Sanger Institute\u2019s Query SNP webpage for NCBIm37 (https://www.sanger.ac.uk/sanger/Mouse_SnpViewer/rel-1211). Custom written VBA subroutines (\u2018Provean_IDs\u2019 and \u2018Navigate_to_PROVEAN\u2019) were used to automate PROVEAN software (http://provean.jcvi.org/seq_submit.php) queries for predicted functional effects of missense mutations in each QTL, with rentrez functions utilized to retrieve dbSNP and protein sequence data. Ultimately, custom R code was used to generate output tables. Deleterious mutations were designated as defined by PROVEAN parameters (Choi and Chan, 2015). All custom written code can be found at http://www.github.com/BrianRitchey/qtl, (Ritchey, 2021; copy archived at swh:1:rev:9792fef3dfa7ecdd62857d58ca3f9966456ae6b8).\n",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "7af4a9d2-8cbb-4fb8-a02a-dbe8e9dda540",
+      "submission_id": "debc19c1-30af-493f-bfb4-bcc79fecd131",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68203.sa1](https://doi.org/10.7554/eLife.68203.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study highlights that a single nucleotide change in the gene encoding for the universal inflammasome adaptor protein ASC regulates mRNA stability of Pycard and thereby inflammasome function. The authors show that a single SNP in the Pycard gene sequence between AKR and DBA/2 mice causes variation in inflammasome activity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Genetic Variant in 3' Untranslated Region of the Mouse Pycard Gene Regulates Inflammasome Activity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Eicke Latz (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) Please add quantification of ASC speck formation provided in Figure 2C. This is easily done with image analysis software.\n\n2) ASC is highly regulated on the posttranscriptional and posttranslational levels. For example, in humans and mice, phosphorylation of ASC regulates its activity, and in humans, elaborate splicing of the gene occurs, which regulated inflammasome activity. These points could be discussed to broaden the implications of this study.\n\nReviewer #1:\n\nGenetic differences in outbred species such as humans and differences in the epigenomic structure form the basis of the large variability in the immune response. In particular, the inflammasome is highly regulated at multiple levels, including the post-transcriptional and post-translational levels. Inflammasome responses towards a myriad of triggers are associated with disease development in murine models of disease. Furthermore, clinical trials are ongoing testing the ability of inflammasome inhibitory small molecules to prevent or ameliorate inflammasome-driven pathologies in patient populations.\n\nThis manuscript identified that a single nucleotide change in the gene encoding for the universal inflammasome adaptor protein ASC regulates mRNA stability of Pycard and thereby inflammasome function. A particular strength of this manuscript is that the authors managed to show, using genetic alterations, that the single SNP in the Pycard gene sequence (rs33183533) between AKR and DBA/2 mice is the cause of variance in inflammasome activity. Given the relevance of inflammasome for various human pathologies, this work is important for a broad readership.\n\nReviewer #2:\n\nIn this manuscript, Ritchey and colleagues studied an intercross of two inbred mouse strains for their inflammasome response to interrogate the genetic basis for enhanced inflammasome activity. This was spurred by the observation that bone marrow-derived macrophages (BMDM) from DBA/2 mice showed an approximately 2-fold enhanced NLRP3 inflammasome response compared to BMDMs from AKR mice. To explore this phenomenon, they stimulated BMDMs from DBA/2 and AKR intercrosses (F4 generation) with NLRP3 agonists and then studied the ensuing IL-1\u03b2 response. Conducting quantitative trait locus (QTL) mapping the authors then identified a region on chromosome 7 to have the highest LOD score for the phenotype studied (this region was named Irm3). The Irm3 region encompasses the 134.80-138.45 Mb interval on chromosome 7 that encodes for 66 genes. Given its established role in inflammasome signaling and also a strong cis eQTL LOD score, the authors focused on Pycard in the following. Comparing the two mouse strains, the authors noted an SNV in the 3' UTR of the Pycard gene with differing genotypes for DBA/2 and AKR mice. This SNV is located just downstream the stop codon, a region that seems to display little conservation across different mammalian species. Comparing ASC protein expression, the authors noted increased levels of ASC in BMDMs from DBA/2 mice, a finding that also translated into higher amounts of ASC speck levels following inflammasome stimulation. Subsequent experiments indicated that Pycard mRNA levels of BMDMs from DBA/2 mice displayed a longer half-life, while Pycard mRNA transcription or splicing was not affected. Modeling the 3' UTR region of interest furthermore suggested that the SNV impacts on the structure of this region. To validate the causal role of this SNV in regulating Pycard expression, the authors generated DBA/2 ES cells, in which they changed the genotype of this SNV into the corresponding AKR variant. Comparing ES-cell-derived macrophages of the parental DBA/2 genotype to the AKR-adapted Pycard genotype, the authors found that ASC expression levels were indeed decreased and that this reduced expression translated into a reduced NLRP3 inflammasome response in these cells. Altogether, these data suggest that an SNV in the 3' UTR of the murine Pycard gene impacts the stability of its mRNA, which translates into altered ASC protein levels and thereby the activity of inflammasome pathways.\n\nStrength:\n\nThe conclusions of this paper are well supported by data and there are no major gaps or flaws in the line of reasoning. A particular stronghold is the functional validation of the here-identified SNV using a CRISPR-based point mutagenesis approach. This set of data provides a high level of confidence for the proposed model.\n\nWeakness:\n\nWhile this manuscript provides an elegant QTL mapping approach to identify differential expression of Pycard as a major regulator of inflammasome activity in murine BMDMs, the outcome of this study does not provide any new biological insight into inflammasome biology. The fact that differential expression of ASC impacts on inflammasome activity is well expected based on its firmly established role in inflammasome signaling.\n\nUnfortunately, the here-identified mechanism of the differential regulation of the half-life of the Pycard mRNA is not conserved in other species, which precludes any extrapolations to other organisms. Moreover, as also correctly summarized by the authors, there is currently no evidence that genetic variants leading to differential ASC expression in humans would impact on human health or disease. These shortcomings obviously limit the conceptual advance and relevance of the here-identified mechanism.\n",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c23d495c-bd7d-4356-8e03-33378aac5a72",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C1",
+      "claim": "DBA/2 vs. AKR BMDM release approximately two-fold more IL-1\u03b2 after priming with LPS and subsequent inflammasome activation via ATP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "DBA/2 vs. AKR BMDM release ~two fold more IL-1\u03b2 after priming with LPS and subsequent inflammasome activation via ATP treatment (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements shown in Figure 1A comparing IL-1\u03b2 release between the two strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b6c2492a-4b49-45f3-bde4-2559b1353854",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C2",
+      "claim": "QTL mapping identified a highly significant locus on distal chromosome 7 named Irm3 with a LOD score of 8.60 at peak position 134.80 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "A highly significant QTL mapped to distal chromosome 7 (log10 of the odds score (LOD) = 8.60, peak position = 134.80 Mb), which we named inflammatory response modulator 3 (Irm3) in accordance with Mouse Genome Informatics nomenclature conventions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by QTL mapping data from F4 BMDM shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "671b39c5-1ff2-495b-876b-487d8349a02d",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C3",
+      "claim": "The genome-wide significance threshold for QTL mapping was LOD = 4.02 (\u03b1 = 0.05) as determined by permutation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Loci on chromosome 2 (147Mb, LOD = 3.79) and chromosome 11 (73Mb, LOD = 3.85) were highly suggestive, falling just short of the genome-wide significance threshold of LOD = 4.02 (\u03b1 = 0.05) determined by permutation analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Threshold determined by statistical permutation analysis of the QTL mapping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "acf8af42-dc69-40ce-bcbf-600cec7cedad",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C4",
+      "claim": "After correcting for Irm3, loci on chromosomes 2, 11, and 16 reached genome-wide significance and were named Irm4, Irm5, and Irm6, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After correcting for Irm3 by using its peak marker genotypes as an additive covariate, loci on chromosomes 2, 11, and 16 reached genome-wide significance, and were named Irm4, Irm5, and Irm6, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by QTL mapping data after adjusting for Irm3 shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "4cad4cb2-5731-4989-8917-c02701f74a59",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C5",
+      "claim": "The Irm3 locus is associated with 28% of the variance in IL-1\u03b2 release among F4 BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating the F4 BMDM by their genotype at the Irm3 locus revealed an additive gene dose response for log IL-1\u03b2 release, with an R2 value of 0.28 (p<0.0001 by ANOVA linear trend test) indicating that this locus is associated with 28% of the variance in IL-1\u03b2 release among the F4 BMDM (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis of genotype-phenotype associations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "73c65498-59e8-4afe-a4f8-ba90c83e532f",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C6",
+      "claim": "The Irm3 Bayesian credible interval (probability >0.95) is 134.80\u2013138.45 Mb and contains 66 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Irm3 has a Bayesian credible interval (probability >0.95 for the causal gene(s) to reside in the interval) of 134.80\u2013138.45 Mb, which contains 66 genes (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian credible interval analysis of QTL mapping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "39e515e5-966f-4ded-8acd-98ba84f4a2cf",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C7",
+      "claim": "Pycard was selected as the top candidate gene based on its established role in inflammasome assembly, its proximity to the QTL peak (0.33 Mb), and the presence of a strong cis-eQTL with a LOD score of 20.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Pycard was selected as the top candidate gene based on its established role in inflammasome assembly, its proximity to the QTL peak (0.33 Mb), and the presence of a strong cis-expression QTL (eQTL, showing genetic variation near that gene is associated with its expression) with a LOD score of 20.0 determined in our prior BMDM transcriptomic study based on an independent intercross of the same two parental strains (Hsu and Smith, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior transcriptomic study data cited from Hsu and Smith, 2013, and knowledge of Pycard's role in inflammasome assembly.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "9fa776b0-64a4-4be5-92f4-cc6eb4716631",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C8",
+      "claim": "Only 3 of the 66 genes in the Irm3 interval had nonsynonymous SNPs (Zfp646, Bag3, Dmbt1), but none were predicted to alter protein function based on in silico PROVEAN analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 3 of the 66 genes in this interval had nonsynonymous SNPs (Zfp646, Bag3, Dmbt1), but none of these SNPs were predicted to alter protein function based on in silico PROVEAN analysis (Choi and Chan, 2015; Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in silico PROVEAN analysis cited from Choi and Chan, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "4eabb675-87f5-43b4-98eb-46806dc8d89e",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C10",
+      "claim": "Overlapping PCR of AKR and DBA/2 genomic DNA covering the entire Pycard gene plus flanking regions (5310 bp sequenced) confirmed the presence of the 3' UTR SNP rs33183533 and the downstream SNP rs33182327, with no other sequence variants in Pycard exons, introns, or flanking regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed overlapping PCR (Supplementary file 1b) of AKR and DBA/2 genomic DNA covering the entire Pycard gene plus 456 bp and 2361 bp of upstream and downstream flanking region (5310 bp sequenced), which confirmed the presence of the 3' UTR SNP rs33183533 and the downstream SNP rs33182327, with no other sequence variants in Pycard exons, introns, or flanking regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by PCR and sequencing data of genomic DNA from both strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "19d484a9-861e-4df8-8c9a-f5fc83b18259",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C11",
+      "claim": "The 3'UTR SNP is 3 bp downstream from the stop codon, and this region is perfectly conserved in rats, which have the DBA/2 allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3'UTR SNP is 3 bp downstream from the stop codon, and this region is perfectly conserved in rats, which have the DBA/2 allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence conservation analysis across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "ffb9c221-930a-4c2b-b889-39bdfddf0fbd",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C12",
+      "claim": "The DBA/2 allele at the 3'UTR SNP is likely the ancestral mouse allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the DBA/2 allele is likely the ancestral mouse allele, but this region is not perfectly conserved in rabbits or primates (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from sequence conservation data showing the DBA/2 allele matches the reference genome and is shared by most sequenced mouse strains.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "990042ad-5212-41c3-93e9-cd63ffc944b0",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C13",
+      "claim": "The 3' UTR SNP rs33183533 DBA/2 allele (T on the coding strand) is the same as the C57BL/6J reference genome allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The Sanger Mouse Genomes Project (REL-1505) shows that the 3' UTR SNP rs33183533 DBA/2 allele (T on the coding strand) is the same as the C57BL/6J reference genome allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the Sanger Mouse Genomes Project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "26097003-a06e-4bca-a669-46aaef885968",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C14",
+      "claim": "24 of the 36 other mouse strains sequenced had a T allele at the 3'UTR SNP, while the AKR allele (A on the coding strand) is shared by 12 of the 36 other mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 24 of the 36 other mouse strains sequenced had a T allele at the 3'UTR SNP, while the AKR allele (A on the coding strand) is shared by 12 of the 36 other mouse strains (Yalcin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Yalcin et al., 2012 on mouse strain sequencing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "5aa25132-c5ac-40b1-a42c-538c785c9dd1",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C15",
+      "claim": "Pycard mRNA is expressed at approximately 2-3 fold higher levels in DBA/2 BMDM relative to AKR BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Real-time quantitative PCR analysis showed that Pycard mRNA is expressed at ~2\u20133 fold higher levels in DBA/2 BMDM relative to AKR BMDM in several independent experiments (Figure 2A), in agreement with our prior cis-eQTL data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "394f9b6e-8510-4709-b6d2-ad76ca02afbe",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C16",
+      "claim": "LPS priming had no effect on Pycard mRNA levels or the observed strain difference.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS priming had no effect on Pycard mRNA levels or the observed strain difference (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements comparing untreated and LPS-treated cells shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "fba133c1-ad91-4d41-9945-23239d011966",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C17",
+      "claim": "Western blotting showed 1.5-fold higher levels of ASC protein in DBA/2 vs. AKR BMDM (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed 1.5-fold higher levels of the protein product of Pycard, ASC, in DBA/2 vs. AKR BMDM (Figure 2B, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot densitometry analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "22dda7eb-3dd2-48c0-9a08-661180f1fd8e",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C18",
+      "claim": "More ASC speck puncta were observed in DBA/2 vs. AKR BMDM after LPS and ATP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "When inflammasomes were primed and activated by treatment with LPS (4 hr) and ATP (30 min), more ASC speck puncta were observed in DBA/2 vs. AKR BMDM (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "1e19f0bf-0bf1-4017-a505-bdf923a39d33",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C19",
+      "claim": "After LPS and ATP treatment, 0.6% of AKR BMDM were speck positive (54 out of 8718 cells) while 26.5% of DBA/2 BMDM were speck positive (850 out of 3207 cells), p<0.0001 by Fisher's exact test.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate experiment, automated image analysis revealed that, after LPS and ATP treatment, 54 AKR BMDM had specks while 8664 did not (0.6% speck positive), and 850 DBA/2 BMDM had specks while 2357 did not (26.5% speck positive, p<0.0001 by Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by automated image analysis and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "3d847d95-efe1-4b4b-80ed-cd9f986a9da0",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C20",
+      "claim": "Pycard mRNA had a longer half-life in DBA/2 BMDM than in AKR BMDM (1.64 vs. 1.16 hr, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The study revealed that Pycard mRNA had a longer half-life (t1/2) in DBA/2 BMDM than in AKR BMDM (1.64 vs. 1.16 hr, respectively, Figure 3A), with two-way ANOVA showing significant time (p<0.0001), strain (p=0.031), and interaction effects (p=0.002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by actinomycin D time course study shown in Figure 3A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "a808025b-d2ae-4990-8f13-93a2017609a4",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C21",
+      "claim": "Nuclear run-on experiments revealed no significant difference in Pycard transcription rate between AKR and DBA/2 BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for differences in Pycard transcription rate, a nuclear run-on experiment was performed, which revealed no significant difference between AKR and DBA/2 BMDM (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nuclear run-on experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "a0dff44d-10c8-4c27-af66-b47059949067",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C22",
+      "claim": "There is a marked difference in predicted mRNA secondary structure near the 3'UTR SNP, where the AKR allele has a longer stem without a loop after the SNP, and the DBA/2 allele forms a shorter stem followed by a loop.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a marked difference in predicted mRNA secondary structure near the SNP, where the AKR allele has a longer stem without a loop after the SNP, and the DBA/2 allele forms a shorter stem followed by a loop (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAfold WebServer predictions shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "257d712c-36ed-4560-a870-3d7d2703d06c",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C23",
+      "claim": "No allele-specific miRNA targets were identified at the Pycard 3'UTR SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we identified the target sequence CCAGCUA, eight nt after the SNP, which is predicted to bind to murine miR-7688\u20135 p, miR-7085\u20133 p, and miR7669-3p, no allele-specific miRNA targets were identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by miRDB database searches for miRNA binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "176e687f-491e-4bd6-8604-5e4e30967e95",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C24",
+      "claim": "Both AKR and DBA/2 strains express the identical 3-exon Pycard isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of the mapped reads using the IGV browser (Robinson et al., 2011) revealed that both strains express the identical 3-exon isoform (Figure 3D), although both the 5' and the 3'UTRs are shorter than the canonical major transcript isoform (Pycard-201, ENSMUST00000033056.4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAseq data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "4e995f15-0ad7-41d4-a6dd-60b257ad0894",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C25",
+      "claim": "CRISPR/Cas9 HDR gene editing was used to change the Pycard 3'UTR SNP from the DBA/2 allele to the AKR allele in DBA/2 embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the role of the Pycard 3'UTR SNP on Pycard expression and IL-1\u03b2 release after inflammasome activation, CRISPR/Cas9 homology directed repair (HDR) gene editing was employed to change the DBA/2 allele (T on coding strand) to the AKR allele (A on coding strand) in the DBA/2J mouse embryonic stem (ES) cell line AC173/GrsrJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by description of gene editing methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "bb553615-9ce4-40b3-a26f-94f32726e405",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C26",
+      "claim": "Five colonies (10.2%) homozygous for the AKR allele were obtained from 49 screened colonies after gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We screened 49 colonies by allele-specific PCR (Figure 4B,C) and Sanger sequencing (Figure 4D). We obtained five colonies (10.2%) homozygous for the AKR allele, and three of these colonies (H2, H5, and H35) were expanded for functional testing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by screening results of gene-edited colonies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "ba93e75c-da0a-405a-adfa-14b3639fbbb9",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C27",
+      "claim": "DBA/2 ESDM released about twofold more IL-1\u03b2 vs. the three independent Pycard edited ESDM lines after LPS and ATP treatment (p<0.05 or<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "After LPS and ATP treatment the DBA/2 ESDM released about twofold more IL-1\u03b2 vs. the three independent Pycard edited ESDM lines (p<0.05 or<0.01, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IL-1\u03b2 ELISA measurements from ESDM shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "ef22b1a2-671c-4263-a14a-06feee757387",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C28",
+      "claim": "Pycard mRNA was approximately 3-fold higher in DBA/2 ESDM relative to Pycard edited ESDM lines (p=0.014).",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR demonstrated that Pycard mRNA was ~3 fold higher in DBA/2 ESDM relative to Pycard edited ESDM lines (p=0.014, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements from ESDM shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "6179a8e6-0b7e-47e8-9ba3-f113660d7eb5",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C29",
+      "claim": "Pycard mRNA half-life was 6.37 hr in DBA/2 ESDM vs. 4.56 hr in Pycard edited ESDM.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in Pycard mRNA was associated with mRNA t1/2 of 6.37 vs. 4.56 hr in DBA/2 ESDM vs. Pycard edited ESDM, respectively (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by actinomycin D time course study in ESDM shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b1cfd5d6-29b4-41f6-b7a4-7e081ebefbd9",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C30",
+      "claim": "All three Pycard edited ESDM lines had reduced ASC protein vs. DBA/2 ESDM (p<0.05 or p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis showed greater heterogeneity in the levels of ASC protein among the three Pycard edited ESDM lines; however, all three edited ESDM lines had reduced ASC protein vs. DBA/2 ESDM (p<0.05 or p<0.001, Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "ffea04e7-dc48-4fb3-b4dd-2c243e27071b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C31",
+      "claim": "The Pycard 3'UTR SNP is a causal variant that alters Pycard mRNA turnover, Pycard mRNA levels, ASC protein levels, and IL-1\u03b2 release.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that the Pycard 3'UTR SNP is a causal variant that alters Pycard mRNA turnover, Pycard mRNA levels, ASC protein levels, and IL-1\u03b2 release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the gene editing experiments showing changes in all these parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "64bc76db-317a-49c0-bf8c-d8031aea3d45",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C32",
+      "claim": "16-week-old chow diet-fed DBA/2 vs. AKR mice develop approximately 10-fold larger aortic root atherosclerotic lesions after breeding hyperlipidemic apoE knockout mice onto these distinct genetic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that 16-week-old chow diet-fed DBA/2 vs. AKR mice develop ~10 fold larger aortic root atherosclerotic lesions after breeding hyperlipidemic apoE knockout mice onto these distinct genetic backgrounds. This divergent atherosclerosis phenotype was observed in both males and females (Smith et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior study cited from Smith et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "6aa7cdb9-94f2-49ca-bdaf-ea850d44d82f",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C33",
+      "claim": "Two independent strain intercrosses identified three significant loci associated with lesion area, called Ath28, Ath22, and Ath26, on chromosomes 2, 15, and 17, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Two independent strain intercrosses were performed and QTL analysis identified three significant loci associated with lesion area, called Ath28, Ath22, and Ath26, on chromosomes 2, 15, and 17, respectively (Hsu and Smith, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior QTL study cited from Hsu and Smith, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "765223b1-9451-42da-ae3e-e419aadc6585",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C34",
+      "claim": "The Cyp4f13 gene was identified as an atherosclerosis modifier gene at the Ath26 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We subsequently identified the Cyp4f13 gene as an atherosclerosis modifier gene at the Ath26 locus (Han et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior study cited from Han et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "79c366e7-0fa1-4b59-8cae-34b58e3e70ff",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C35",
+      "claim": "Early mouse atherosclerotic lesions are dominated by the accumulation of intimal macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Since early mouse atherosclerotic lesions are dominated by the accumulation of intimal macrophages (Nakashima et al., 1994), we performed an additional AKRxDBA/2 strain intercross to specifically identify candidate genes for bone-marrow-derived macrophage (BMDM) phenotypes, which might also effect atherosclerosis severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior study cited from Nakashima et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "19ad254c-30b3-45a3-9b81-66a7a924ffd3",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C36",
+      "claim": "Ex vivo macrophage phenotypes are generally less variable than atherosclerotic lesion size, which facilitates more robust and precise genetic mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that ex vivo macrophage phenotypes are generally less variable than atherosclerotic lesion size, which facilitates more robust and precise genetic mapping and therefore faster and more reliable candidate gene identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observations comparing variability of different phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "7f66c153-303c-454a-b018-452bc445c7e3",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C37",
+      "claim": "The Soat1 and Gpnmb genes were identified as strong modifier gene candidates for macrophage cholesterol metabolism and lysosome function, respectively, and validated using CRISPR/Cas9 gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the Soat1 and Gpnmb genes as strong modifier gene candidates for macrophage cholesterol metabolism and lysosome function, respectively; and, we used CRISPR/Cas9 gene editing to validate them as causal modifier genes (Hai et al., 2018; Robinet et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior studies cited from Hai et al., 2018 and Robinet et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "5e1728ce-810b-46dd-bcf4-81276dd514e8",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C38",
+      "claim": "IL-1\u03b2 is an inflammatory cytokine, and its role in human atherosclerotic disease was proven in the CANTOS trial, where anti-IL-1\u03b2 monoclonal antibody infusions led to a significant reduction in nonfatal myocardial infarction, stroke, or cardiovascular death.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-1\u03b2 is an inflammatory cytokine, and its role in human atherosclerotic disease was proven in the CANTOS trial, where anti-IL-1\u03b2 monoclonal antibody infusions led to a significant reduction in nonfatal myocardial infarction, stroke, or cardiovascular death (Ridker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial results cited from Ridker et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "bd6cb265-bba2-4452-aa03-eb80913b88a7",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C39",
+      "claim": "The Irm3 QTL interval is located within a larger QTL on chromosome seven that was previously identified in genetic studies from high and low inflammatory responder recombinant partially inbred strains derived from an intercross of eight parental inbred mouse strains, including the DBA/2 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Irm3 QTL interval is located within a larger QTL on chromosome seven that was previously identified in genetic studies from high and low inflammatory responder recombinant partially inbred strains derived from an intercross of eight parental inbred mouse strains, including the DBA/2 strain used in the current study (Vorraro et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior QTL study cited from Vorraro et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "8f90c085-7726-4d14-a26b-b1c6414c564c",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C40",
+      "claim": "Pycard codes for the ASC adaptor protein required for assembly of the majority of canonical inflammasomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Irm3 harbors the Pycard gene, which codes for the ASC adaptor protein required for assembly of the majority of canonical inflammasomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Pycard/ASC function in inflammasome biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "35000ee4-f820-4ef6-8c49-6f7c3cd643a0",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C41",
+      "claim": "The AKRxDBA/2 F4 population consisted of 122 genetically diverse mice with an average of >2 recombination events per chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These F4 mice were genotyped via a dense mouse SNP array, which revealed the desired tapestry of genetic recombination among the cohort (Hai et al., 2018), with an average of >2 recombination events per chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data from the F4 population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "f122fa14-1cd3-4228-a3b6-d18e9090197e",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C42",
+      "claim": "There was no sex effect on IL-1\u03b2 levels in the F4 BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no sex effect on IL-1\u03b2 levels, thus both sexes were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of IL-1\u03b2 levels by sex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "52258f18-1230-45a6-bfd5-5acb6205b17d",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C43",
+      "claim": "The Irm1 QTL 1-LOD confidence interval for leukocyte IL-1\u03b2 release extends from 130.75 to 144.75 Mb, which encompasses the Irm3 QTL (134.80\u2013138.45 Mb).",
+      "claim_type": "EXPLICIT",
+      "source": "The Irm1 1-LOD confidence interval for leukocyte IL-1\u03b2 release extends from 130.75 to 144.75 Mb, which encompasses the Irm3 QTL (134.80\u2013138.45 Mb) discovered in the current study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of QTL intervals from the current study and Vorraro et al., 2010.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "2f78fcf4-d19a-424b-9a85-160e8b785163",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C44",
+      "claim": "It is possible that Irm3 represents a fine-mapping of a candidate gene in the Irm1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that Irm3 represents a fine-mapping of a candidate gene in the Irm1 locus, which is plausible considering we started with inbred strains, created an F4 versus an F2 cross, and used a denser SNP panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on methodological differences between studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "6d8d596d-9bc9-4c47-a95d-2d14dca7148e",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C45",
+      "claim": "Vorraro et al. ruled out Pycard as the causal gene for Irm1 due to equal distribution of the 3'UTR SNP (rs33183533) and another SNP in the first intron of the Pycard gene (rs51540238) among the high and low responder parental strains used in their study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these investigators never identified the gene responsible for Irm1, they ruled out Pycard as the causal gene for Irm1 due to equal distribution of the 3'UTR SNP we evaluated (rs33183533) and another SNP in the first intron of the Pycard gene (rs51540238) among the high and low responder parental strains used in their study (Vorraro et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by findings from Vorraro et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "070d5194-439a-4444-806d-fcf1f0aaf5f1",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C46",
+      "claim": "It is possible that the Irm1 QTL is due to the Pycard 3'UTR SNP due to the selection and success of specific breeders within the incompletely inbred parental high and low responder strains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their study did not examine the Pycard 3'UTR SNP genotype effect on IL-1\u03b2 produced in the F2 mice, and thus it is possible that the Irm1 QTL is indeed due to the Pycard 3'UTR SNP due to the selection and success of specific breeders within the incompletely inbred parental high and low responder strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential confounding factors in the Vorraro et al. study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b2ce2672-bc72-4079-9e72-e2cb9a52b948",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C47",
+      "claim": "It is possible that there are additional genes that modulate IL-1\u03b2 secretion at the distal end of chromosome 7.",
+      "claim_type": "EXPLICIT",
+      "source": "As with any QTL study, it is also possible that there are additional genes that modulate IL-1\u03b2 secretion at the distal end of chromosome 7, and another gene is the primary modulator for the strains used in their study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement acknowledging limitations of QTL studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "3dc36277-59ef-4feb-b700-e380f33b1cf5",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C48",
+      "claim": "Additional mouse QTLs that overlap Irm3 include Lsq-1, a QTL for hindlimb ischemia, and Civq1, a QTL for infarct volume following ischemic stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mouse QTLs that overlap Irm3 include Lsq-1, a QTL for hindlimb ischemia (Dokun et al., 2008), and Civq1, a QTL for infarct volume following ischemic stroke (Keum and Marchuk, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by prior QTL studies cited from Dokun et al., 2008 and Keum and Marchuk, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "2524f216-eee3-4c55-8489-c89990f25dd6",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C49",
+      "claim": "Neither the Lsq-1 nor Civq1 study postulates a role for Pycard in their respective phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither study postulates a role for Pycard in these phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of the cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "cdaf3650-be79-4a54-a712-9899bfd61d68",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C50",
+      "claim": "Human GWAS studies revealed an SNP near Pycard that is associated with bronchodilator response in asthma, although this association does not meet the commonly used threshold (<5\u00d710\u22128) for genome-wide significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Human GWAS studies revealed an SNP near Pycard that is associated with bronchodilator response in asthma, although this association does not meet the commonly used threshold (<5\u00d710\u22128) for genome-wide significance (Lutz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GWAS study cited from Lutz et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "1ee999b4-2117-4719-8121-ec9bb67c4286",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C51",
+      "claim": "The dbSNP database lists only two common human SNPs within the PYCARD gene: rs115908198 located in the 3'UTR and rs73532217 located in the first intron.",
+      "claim_type": "EXPLICIT",
+      "source": "The dbSNP database lists only two common human SNPs within the PYCARD gene, rs115908198 located in the 3'UTR and rs73532217 located in the first intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on dbSNP database query.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "209eb21e-15c0-4fc5-82a0-1698ae1a6edd",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C52",
+      "claim": "The two common human PYCARD SNPs are only common (>1% minor allele frequency) in African populations with minor allele frequencies of approximately 7% and approximately 2%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These two SNPs are only common (>1% minor allele frequency) in African populations with minor allele frequencies of ~7% and ~2%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on population frequency data from dbSNP database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "0db19d2d-49b5-4ce9-9852-a3ae39b4c71c",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C53",
+      "claim": "Neither of the two common human PYCARD SNPs have been studied mechanistically to determine effects on PYCARD expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither of these SNPs have been studied mechanistically to determine effects on PYCARD expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "758eda52-2571-41c9-969c-802639a0f750",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C54",
+      "claim": "The human GTEx portal study identifies 80 distinct cis-eQTL SNPs near the PYCARD gene associated with PYCARD mRNA expression at p<5\u00d710\u22128, including the intronic SNP rs73532217.",
+      "claim_type": "EXPLICIT",
+      "source": "The human GTEx portal (Release V8) study of gene expression in many postmortem human tissues identifies 80 distinct cis-eQTL SNPs near the PYCARD gene associated with PYCARD mRNA expression at p<5\u00d710\u22128, including the intronic SNP rs73532217.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data from the GTEx portal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "d7eace1a-2d88-40f8-9eed-2204c6bb3524",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C55",
+      "claim": "Due to linkage disequilibrium, it is likely that only one or a few of the 80 cis-eQTL SNPs near PYCARD are true regulatory SNPs that alter mRNA production or turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to linkage disequilibrium, the co-inheritance of nearby variants from ancestral chromosomes, it is likely that only one or a few of these cis-eQTL SNPs are true regulatory SNPs that alter mRNA production or turnover, which must be confirmed by mechanistic investigations such as those performed in the current study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of linkage disequilibrium and the need for mechanistic validation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "9fda8e3d-7eb9-4f4f-94b9-2f03b6b25737",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C56",
+      "claim": "Three of four human GWAS studies searching for 'interleukin-1 beta measurement' found no common SNPs associated with plasma/serum IL-1\u03b2 at genome-wide significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Searching the human GWAS catalog (https://www.ebi.ac.uk/gwas/home) for 'interleukin-1 beta measurement' in January, 2021 yielded four studies; however, three of these found no common SNPs associated with plasma/serum IL-1\u03b2 at genome-wide significance, albeit these studies did identify SNPs associated with other cytokines (Matteini et al., 2014; Ahola-Olli et al., 2017; Offenbacher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on GWAS catalog search and cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "959f35aa-ac66-41dd-92be-829af2535f83",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C57",
+      "claim": "The single human GWAS study that identified common SNPs associated with plasma IL-1\u03b2 found two independent SNPs on chromosome 6, near the HLA locus, associated with IL-1\u03b2 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The single study that identified common SNPs associated with plasma IL-1\u03b2 found two independent SNPs on chromosome 6, near the HLA locus, associated with IL-1\u03b2 levels (Sliz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GWAS study cited from Sliz et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "d76ce8cc-3730-42bf-a66a-339dc22093a4",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C58",
+      "claim": "Human GWAS studies for IL-1\u03b2 may be susceptible to false negative findings, as IL-1\u03b2 levels have a large environmental component due to its response to infection or inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that human GWAS studies for IL-1\u03b2 may be susceptible to false negative findings, as IL-1\u03b2 levels have a large environmental component due to its response to infection or inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about limitations of human GWAS for IL-1\u03b2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b4f15d5d-cb76-4157-af11-275ebd5a4b7a",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C59",
+      "claim": "Mouse studies may be useful to identify genes, pathways, and mechanisms that regulate IL-1\u03b2 release after inflammasome activation, which would be difficult to perform in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, mouse studies may be useful to identify genes, pathways, and mechanisms that regulate IL-1\u03b2 release after inflammasome activation, which would be difficult to perform in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about the utility of mouse models for studying IL-1\u03b2 regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "a4981db7-7782-44a1-963d-0ab1c567cfcd",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C60",
+      "claim": "Performing in vitro human genetic studies with a large panel of human-induced pluripotent stem cells differentiated into macrophages or dendritic cells might be an excellent alternative to identify common human genetic variants associated with inflammasome priming/activation and IL-1\u03b2 release.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing in vitro human genetic studies with a large panel of human-induced pluripotent stem cells differentiated into macrophages or dendritic cells (Warren and Cowan, 2018) might be an excellent alternative to identify common human genetic variants associated with inflammasome priming/activation and IL-1\u03b2 release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative suggestion for alternative approach to study human genetic variants, citing Warren and Cowan, 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "7e877644-d08e-42a6-b175-3ea03c1e69fd",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C61",
+      "claim": "ASC protein/PYCARD gene has been previously shown to be subject to additional regulatory control by post-translational modifications such as ubiquitination and phosphorylation and by mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "ASC protein/PYCARD gene has been previously shown to be subject to additional regulatory control by post-translational modifications such as ubiquitination and phosphorylation and by mRNA splicing (Hoss et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by review cited from Hoss et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "8c38d195-5e64-4326-9a7e-d4788532c34a",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C62",
+      "claim": "The tyrosine kinase Syk is required for Nlrp3 inflammasome activation in mouse BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "The tyrosine kinase Syk is required for Nlrp3 inflammasome activation in mouse BMDM (Gross et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Gross et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "55a358c5-2508-4edb-8c08-583d2f2aa0da",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C63",
+      "claim": "Both Syk and Jnk kinases are required for Nlrp3 and AIM2 inflammasome activation in mouse and transfected human cells, which are associated with ASC phosphorylation and oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Syk and Jnk kinases are required for Nlrp3 and AIM2 inflammasome activation in mouse and transfected human cells, which are associated with ASC phosphorylation and oligomerization (Hara et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Hara et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "40512d51-c060-4669-b862-2213a175eb6b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C64",
+      "claim": "Human ASC tyrosines 146 and 187 are critical for Syk-mediated ASC oligomerization and inflammasome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Human ASC tyrosines 146 and 187 are critical for Syk-mediated ASC oligomerization and inflammasome activity (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Lin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "3b507ba2-6c5d-44bf-9f6f-d33dc6cb7413",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C65",
+      "claim": "Syk phosphorylates Pyk2 kinase, which then directly phosphorylates ASC on tyrosine 146.",
+      "claim_type": "EXPLICIT",
+      "source": "Syk phosphorylates Pyk2 kinase, which then directly phosphorylates ASC on tyrosine 146 (Chung et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Chung et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "790c42d4-f514-48ae-9246-8c7e5ff83fc6",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C66",
+      "claim": "I\u03baB kinase \u03b1 (IKK\u03b1) binds directly to ASC, requiring ASC serines 16 and 193, and negatively regulates Nlrp3 inflammasome activity, so that upon inflammasome activation by ATP or other agonists IKK\u03b1 is released from ASC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast I\u03baB kinase \u03b1 (IKK\u03b1) binds directly to ASC, requiring ASC serines 16 and 193, and negatively regulates Nlrp3 inflammasome activity, so that upon inflammasome activation by ATP or other agonists IKK\u03b1 is released from ASC (Martin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Martin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "129f54c3-131d-4f13-a359-415c100f276c",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C67",
+      "claim": "The broad-spectrum tyrosine phosphatase inhibitor phenylarsine oxide reduces ASC assembly and speck formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein phosphatases also regulate ASC oligomerization and activity, with the broad-spectrum tyrosine phosphatase inhibitor phenylarsine oxide reducing ASC assembly and speck formation (Mambwe et al., 2019), although this appears to be in the opposite direction of the Syk effects on ASC phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Mambwe et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "6fbaa4ad-ef8f-4e0b-9302-903c02ebf6e1",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C68",
+      "claim": "The protein tyrosine phosphatase PTPN2 is a negative regulator of inflammasome activity, as demonstrated in myeloid-specific Ptpn2 knockout mice that have increased inflammasome activity and ASC phosphorylation via increased Jnk activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein tyrosine phosphatase PTPN2 is a negative regulator of inflammasome activity, as demonstrated in myeloid-specific Ptpn2 knockout mice that have increased inflammasome activity and ASC phosphorylation via increased Jnk activity (Spalinger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Spalinger et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "914d0448-01ce-4a2b-89b9-cdd611ccfc6b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C69",
+      "claim": "Alternative splicing of PYCARD mRNA has been proposed leading to three alternative human ASC isoforms based on cDNA sequences, RT-PCR, and ASC domain-specific antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on cDNA sequences, RT-PCR, and ASC domain-specific antibodies, alternative splicing of PYCARD mRNA has been proposed leading to three alternative human ASC isoforms; and, transfection overexpression studies found some inflammasome activity with the alternative exon two skipped isoform (Bryan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by study cited from Bryan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "d3281784-1a96-4a22-9eb8-a0ceec4483d9",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C70",
+      "claim": "The study identified an additional ASC regulatory mechanism in mice due to a Pycard 3' UTR SNP, where the allele that decreases Pycard mRNA stability was found in approximately 1/3 of sequenced mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study identified an additional ASC regulatory mechanism in mice due to a Pycard 3' UTR SNP, where the allele that decreases Pycard mRNA stability was found in ~1/3 of sequenced mouse strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study findings and comparison with Sanger Mouse Genomes Project data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b4fee3ed-7d3f-4ba0-9396-5cdb6f441e45",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C71",
+      "claim": "The Pycard 3'UTR SNP led to different predicted mRNA secondary structure without altering the transcript isoform expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that the Pycard 3'UTR SNP led to different predicted mRNA secondary structure without altering the transcript isoform expressed; and, we identified three mouse miRNAs with target sequences eight nt downstream of the 3'UTR SNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAfold predictions and RNAseq data showing identical isoforms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "5e932aee-d78d-43d7-8458-42b6d1d71e11",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C72",
+      "claim": "Three mouse miRNAs (miR-7688-5p, miR-7085-3p, and miR7669-3p) have target sequences eight nt downstream of the 3'UTR SNP.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that the Pycard 3'UTR SNP led to different predicted mRNA secondary structure without altering the transcript isoform expressed; and, we identified three mouse miRNAs with target sequences eight nt downstream of the 3'UTR SNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by miRDB database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "8dec6ebe-451c-444c-9149-006104978f91",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C73",
+      "claim": "Additional studies would be required to determine if the different structures of AKR and DBA/2 Pycard mRNAs influence the binding of miRNAs or putative RNA-binding proteins that might alter transcript turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies would be required to determine if the different structures of AKR and DBA/2 Pycard mRNAs influence the binding of miRNAs or putative RNA-binding proteins that might alter transcript turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "8a44da18-fecd-4984-8127-57bc96c0819b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C74",
+      "claim": "The absolute values of IL-1\u03b2 secretion and the Pycard mRNA half-life were different in ESDM compared to BMDM, suggesting these macrophages may be less mature than BMDM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of interest, compared to the BMDM, the absolute values of IL-1\u03b2 secretion and the Pycard mRNA t1/2 were different in the ESDM, suggesting these macrophages may be less mature than BMDM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from comparison of phenotypic measurements between ESDM and BMDM.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "63f2f5d7-f611-4661-b07b-4136c7c45964",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C75",
+      "claim": "The AKRxDBA/2 F4 population consisted of 70 males and 52 females.",
+      "claim_type": "EXPLICIT",
+      "source": "Six breeding pairs of F3 mice were used to generate the 122 F4 mice, which consisted of 70 males and 52 females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "c5a3f4c4-fc7e-4fbc-88ea-27a18498bef7",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C76",
+      "claim": "The GeneSeek MegaMUGA SNP array was used for genotyping, and filtering yielded 16,975 informative SNPs that were used for QTL analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "F4 mice were genotyped as described previously (Hai et al., 2018). Briefly, the GeneSeek MegaMUGA SNP array was used, and filtering for call frequency and strain polymorphism using parental and F1 DNA yielded 16,975 informative SNPs that were used for QTL analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of genotyping methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "4edaaa6e-36bb-4ffd-84f7-662c551a5c8b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C77",
+      "claim": "Three of the 122 F4 frozen bone marrow cells did not generate macrophages yielding 119 samples assessed.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the 122 F4 frozen bone marrow cells did not generate macrophages yielding 119 samples assessed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sample attrition during cell culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "62868187-a99c-4df0-8c1e-02d099010f40",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C78",
+      "claim": "ESDM were similar to BMDM by flow cytometry using antibodies against common mouse leukocyte markers: CD11b+, CD11c+, Ly6G-, and Ly6Clo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we compared ESDM with BMDM and found that they were similar by flow cytometry using antibodies against common mouse leukocyte markers: CD11b+, CD11c+, Ly6G-, and Ly6Clo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry analysis comparing ESDM and BMDM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "a014f0da-447c-4e2b-8d99-4b4c79170f2b",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C79",
+      "claim": "Undifferentiated DBA/2 ES cells were CD11b- and CD11c-.",
+      "claim_type": "EXPLICIT",
+      "source": "We also determined that undifferentiated DBA/2 ES cells were CD11b- and CD11c-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry analysis of undifferentiated ES cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "7ff76b64-e48d-4f4e-8ade-e5bf1e199eac",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "claim_id": "C80",
+      "claim": "All animal studies were approved by the Cleveland Clinic Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal studies were approved by the Cleveland Clinic Institutional Animal Care and Use Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "QTL mapping of IL-1\u03b2 release from AKRxDBA/2 F4 BMDM identified a highly significant locus (Irm3) on chromosome 7 (LOD=8.60, peak at 134.80 Mb) that accounts for 28% of phenotypic variance. After correcting for Irm3, three additional significant loci (Irm4, Irm5, Irm6) were identified on chromosomes 2, 11, and 16. The Irm3 Bayesian credible interval (134.80-138.45 Mb) contains 66 genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide converging evidence from QTL mapping with appropriate statistical thresholds (LOD=4.02, \u03b1=0.05 by permutation), genotype-phenotype associations (R\u00b2=0.28, p<0.0001), and Bayesian credible interval analysis. The F4 population design (C41, C75-C77) with 119 samples and >16,000 informative SNPs (C76) provides adequate power. The additive gene dose response (C5) and conditional mapping revealing additional loci (C4) are methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pycard was identified as the top candidate gene at Irm3 based on its known role in inflammasome assembly, proximity to the QTL peak (0.33 Mb), and strong cis-eQTL (LOD=20.0). Sequencing revealed only one SNP (rs33183533) in the Pycard gene between AKR and DBA/2 strains, located in the 3'UTR, 3 bp downstream of the stop codon. The DBA/2 allele (T) matches the reference genome and is shared by 24/36 sequenced mouse strains, while the AKR allele (A) is found in 12/36 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 provide strong evidence for Pycard as the candidate gene through multiple lines of reasoning: functional relevance (C7, C40), genetic proximity (C7), prior eQTL data (C7), comprehensive sequencing excluding other variants (C8, C10), and evolutionary conservation analysis (C11-C14). The exclusion of nonsynonymous SNPs in other genes by PROVEAN analysis (C8) strengthens the case for the 3'UTR SNP as causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "6d2ee337-cea7-4975-9b61-73c93af42ebd",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DBA/2 BMDM express 2-3 fold higher Pycard mRNA and 1.5-fold higher ASC protein compared to AKR BMDM. LPS priming did not affect Pycard mRNA levels or strain differences. After LPS+ATP treatment, DBA/2 BMDM showed significantly more ASC speck formation (26.5% speck-positive) compared to AKR BMDM (0.6% speck-positive, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 provide consistent evidence across multiple assays (qPCR, Western blot, immunofluorescence, automated image analysis) showing higher Pycard/ASC expression and inflammasome activity in DBA/2 vs. AKR BMDM. The statistical significance (p<0.01 for protein, p<0.0001 for speck formation by Fisher's exact test) and use of multiple independent experiments (C15) support the findings. The lack of LPS effect (C16) is an important control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "1180de79-a643-475a-9f9c-6cfc634d8a5a",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The difference in Pycard expression between strains is due to altered mRNA stability rather than transcription rate. Pycard mRNA half-life was longer in DBA/2 (1.64 hr) vs. AKR (1.16 hr) BMDM, while nuclear run-on experiments showed no difference in transcription rate. The 3'UTR SNP creates different predicted mRNA secondary structures between strains, though no allele-specific miRNA targets were identified and both strains express the identical 3-exon isoform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 provide mechanistic insight through complementary approaches. The actinomycin D time course (C20) with appropriate statistical analysis (two-way ANOVA showing significant time, strain, and interaction effects) demonstrates differential mRNA stability. Nuclear run-on experiments (C21) appropriately rule out transcriptional differences. RNA secondary structure predictions (C22) and RNAseq analysis (C24) provide structural context, though the mechanism remains incompletely defined (C23, C73).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "aaf20120-4a7e-4871-8c33-cd00302db150",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 gene editing was used to change the Pycard 3'UTR SNP from DBA/2 to AKR allele in DBA/2 ES cells. Three independent homozygous edited ESDM lines showed approximately 2-fold reduced IL-1\u03b2 release, 3-fold reduced Pycard mRNA, reduced mRNA half-life (4.56 vs. 6.37 hr), and reduced ASC protein compared to parental DBA/2 ESDM, confirming the 3'UTR SNP as a causal variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 provide definitive causal validation through gene editing. The use of three independent clones (C26) controls for off-target effects and clonal variation. The edited ESDM recapitulate all key phenotypes observed in BMDM: reduced IL-1\u03b2 (C27, p<0.05-0.01), reduced Pycard mRNA (C28, p=0.014), reduced mRNA stability (C29), and reduced ASC protein (C30, p<0.05-0.001). The consistency across multiple phenotypes in independent clones strongly supports causality (C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study builds on prior work showing DBA/2 mice develop ~10-fold larger atherosclerotic lesions than AKR mice, with three QTLs (Ath28, Ath22, Ath26) previously identified. The current study used macrophage phenotypes for QTL mapping because early lesions are dominated by macrophages and ex vivo phenotypes are less variable than lesion size. IL-1\u03b2's role in human atherosclerosis was validated by the CANTOS trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 accurately cite prior work (Smith et al. 2006, Hsu and Smith 2013, Han et al. 2019, Nakashima et al. 1994, Ridker et al. 2017) establishing the biological context and rationale for the current study. The reasoning about using macrophage phenotypes (C36) is sound and supported by the observation of lower variability. These claims provide appropriate background but are not primary findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "d42bc54e-399f-4081-aa85-b0814944da15",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Irm3 QTL overlaps with a previously identified Irm1 QTL (130.75-144.75 Mb) from Vorraro et al. 2010. While that study ruled out Pycard based on SNP distribution in their parental strains, the current study suggests Irm3 may represent fine-mapping of Irm1, though alternative explanations including additional genes at this locus remain possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C47 appropriately discuss the relationship to prior work, but the interpretation is speculative (C44, C46, C47). The overlap between Irm1 and Irm3 intervals (C43) is factual, but whether they represent the same or different QTLs cannot be definitively determined from the current data. The authors appropriately acknowledge uncertainty and alternative explanations (C47), making this discussion appropriately cautious but not a definitive result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "5c9586d8-151c-4299-8456-87e2a5c0de53",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Irm3 locus overlaps with other mouse QTLs (Lsq-1, Civq1) that did not implicate Pycard. In humans, the PYCARD gene region shows limited common variation (two SNPs in African populations at ~7% and ~2% frequency) that have not been mechanistically studied, though GTEx identifies 80 cis-eQTL SNPs near PYCARD. Due to linkage disequilibrium, only a few of these are likely true regulatory variants requiring mechanistic validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C55 accurately report database queries and prior studies. The discussion of human genetic variation (C51-C55) appropriately cites GTEx data and acknowledges the need for mechanistic validation (C55). These claims provide useful context for translational relevance but represent literature review and database queries rather than primary experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Human GWAS studies have largely failed to identify common SNPs associated with plasma IL-1\u03b2 at genome-wide significance (3 of 4 studies), with one study finding associations near the HLA locus. The authors speculate this may reflect the large environmental component of IL-1\u03b2 levels and suggest mouse studies or iPSC-derived macrophages may be more useful for identifying genetic regulators of inflammasome activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 accurately report GWAS catalog searches and cited studies. However, C58-C60 are speculative interpretations about why human GWAS may fail and suggestions for future approaches. While the speculation is reasonable, these claims represent discussion points rather than experimental findings. The citation of Warren and Cowan 2018 (C60) appropriately supports the iPSC suggestion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "883fb770-704c-4a94-91b5-a096aca5db52",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ASC/PYCARD is subject to multiple regulatory mechanisms including post-translational modifications (phosphorylation by Syk/Jnk/Pyk2 kinases at specific tyrosines, regulation by IKK\u03b1 at specific serines, dephosphorylation by PTPN2) and alternative splicing producing three human isoforms. These prior findings establish the broader regulatory context for ASC function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C69 accurately cite multiple prior studies (Hoss et al. 2017, Gross et al. 2009, Hara et al. 2013, Lin et al. 2015, Chung et al. 2016, Martin et al. 2014, Mambwe et al. 2019, Spalinger et al. 2018, Bryan et al. 2010) establishing the regulatory complexity of ASC. These claims provide important biological context but represent literature review rather than primary findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "1b77bb0c-1319-485f-a225-741bae589032",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study identified a novel ASC regulatory mechanism in mice involving a 3'UTR SNP that alters mRNA stability. The SNP creates different predicted mRNA secondary structures without changing the transcript isoform, and three miRNAs have predicted binding sites 8 nt downstream of the SNP. The AKR allele (decreasing stability) is found in ~1/3 of sequenced mouse strains. Further studies are needed to determine if structural differences affect miRNA or RNA-binding protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 appropriately summarize the study's findings and their significance. The identification of a novel regulatory mechanism (C70) is supported by the experimental data. The structural predictions (C71) and miRNA target identification (C72) provide mechanistic hypotheses. Claim C73 appropriately acknowledges that the precise mechanism remains to be determined, which is an honest assessment of the study's limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "c0d25fad-82c4-4a71-8f69-51939b144f0d",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ESDM showed different absolute values of IL-1\u03b2 secretion and Pycard mRNA half-life compared to BMDM, suggesting they may be less mature. ESDM were confirmed to be macrophage-like by flow cytometry (CD11b+, CD11c+, Ly6G-, Ly6Clo), while undifferentiated ES cells were CD11b- and CD11c-.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C78-C79 provide appropriate characterization of the ESDM model used for gene editing validation. The flow cytometry data (C78-C79) confirms macrophage differentiation. The observation of different absolute values (C74) is important for interpreting the ESDM results, and the suggestion of reduced maturity is a reasonable inference, though not definitively proven.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    },
+    {
+      "id": "af38e531-7308-4dd3-b9ee-8062035dda81",
+      "content_id": "3cf98628-6174-42ee-bc4a-3ca7aec5d485",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All animal studies were approved by the Cleveland Clinic Institutional Animal Care and Use Committee.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is a standard ethical compliance statement that is appropriately included in the methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:36:29.507544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c23d495c-bd7d-4356-8e03-33378aac5a72",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "b6c2492a-4b49-45f3-bde4-2559b1353854",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "671b39c5-1ff2-495b-876b-487d8349a02d",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "acf8af42-dc69-40ce-bcbf-600cec7cedad",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "4cad4cb2-5731-4989-8917-c02701f74a59",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "73c65498-59e8-4afe-a4f8-ba90c83e532f",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "35000ee4-f820-4ef6-8c49-6f7c3cd643a0",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "f122fa14-1cd3-4228-a3b6-d18e9090197e",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "63f2f5d7-f611-4661-b07b-4136c7c45964",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "c5a3f4c4-fc7e-4fbc-88ea-27a18498bef7",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "4edaaa6e-36bb-4ffd-84f7-662c551a5c8b",
+      "result_id": "f25b8cd4-4059-49dc-a1ea-f3ff789e62ed"
+    },
+    {
+      "claim_id": "39e515e5-966f-4ded-8acd-98ba84f4a2cf",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "9fa776b0-64a4-4be5-92f4-cc6eb4716631",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "4eabb675-87f5-43b4-98eb-46806dc8d89e",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "19d484a9-861e-4df8-8c9a-f5fc83b18259",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "ffb9c221-930a-4c2b-b889-39bdfddf0fbd",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "990042ad-5212-41c3-93e9-cd63ffc944b0",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "26097003-a06e-4bca-a669-46aaef885968",
+      "result_id": "25e64e8f-b2ea-4355-8faa-b0950b6a626f"
+    },
+    {
+      "claim_id": "5aa25132-c5ac-40b1-a42c-538c785c9dd1",
+      "result_id": "6d2ee337-cea7-4975-9b61-73c93af42ebd"
+    },
+    {
+      "claim_id": "394f9b6e-8510-4709-b6d2-ad76ca02afbe",
+      "result_id": "6d2ee337-cea7-4975-9b61-73c93af42ebd"
+    },
+    {
+      "claim_id": "fba133c1-ad91-4d41-9945-23239d011966",
+      "result_id": "6d2ee337-cea7-4975-9b61-73c93af42ebd"
+    },
+    {
+      "claim_id": "22dda7eb-3dd2-48c0-9a08-661180f1fd8e",
+      "result_id": "6d2ee337-cea7-4975-9b61-73c93af42ebd"
+    },
+    {
+      "claim_id": "1e19f0bf-0bf1-4017-a505-bdf923a39d33",
+      "result_id": "6d2ee337-cea7-4975-9b61-73c93af42ebd"
+    },
+    {
+      "claim_id": "3d847d95-efe1-4b4b-80ed-cd9f986a9da0",
+      "result_id": "1180de79-a643-475a-9f9c-6cfc634d8a5a"
+    },
+    {
+      "claim_id": "a808025b-d2ae-4990-8f13-93a2017609a4",
+      "result_id": "1180de79-a643-475a-9f9c-6cfc634d8a5a"
+    },
+    {
+      "claim_id": "a0dff44d-10c8-4c27-af66-b47059949067",
+      "result_id": "1180de79-a643-475a-9f9c-6cfc634d8a5a"
+    },
+    {
+      "claim_id": "257d712c-36ed-4560-a870-3d7d2703d06c",
+      "result_id": "1180de79-a643-475a-9f9c-6cfc634d8a5a"
+    },
+    {
+      "claim_id": "176e687f-491e-4bd6-8604-5e4e30967e95",
+      "result_id": "1180de79-a643-475a-9f9c-6cfc634d8a5a"
+    },
+    {
+      "claim_id": "4e995f15-0ad7-41d4-a6dd-60b257ad0894",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "bb553615-9ce4-40b3-a26f-94f32726e405",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "ba93e75c-da0a-405a-adfa-14b3639fbbb9",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "ef22b1a2-671c-4263-a14a-06feee757387",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "6179a8e6-0b7e-47e8-9ba3-f113660d7eb5",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "b1cfd5d6-29b4-41f6-b7a4-7e081ebefbd9",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "ffea04e7-dc48-4fb3-b4dd-2c243e27071b",
+      "result_id": "aaf20120-4a7e-4871-8c33-cd00302db150"
+    },
+    {
+      "claim_id": "64bc76db-317a-49c0-bf8c-d8031aea3d45",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "6aa7cdb9-94f2-49ca-bdaf-ea850d44d82f",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "765223b1-9451-42da-ae3e-e419aadc6585",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "79c366e7-0fa1-4b59-8cae-34b58e3e70ff",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "19ad254c-30b3-45a3-9b81-66a7a924ffd3",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "7f66c153-303c-454a-b018-452bc445c7e3",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "5e1728ce-810b-46dd-bcf4-81276dd514e8",
+      "result_id": "c13b797c-46c1-427a-a12c-2982f2a9cd7f"
+    },
+    {
+      "claim_id": "bd6cb265-bba2-4452-aa03-eb80913b88a7",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "52258f18-1230-45a6-bfd5-5acb6205b17d",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "2f78fcf4-d19a-424b-9a85-160e8b785163",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "6d8d596d-9bc9-4c47-a95d-2d14dca7148e",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "070d5194-439a-4444-806d-fcf1f0aaf5f1",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "b2ce2672-bc72-4079-9e72-e2cb9a52b948",
+      "result_id": "d42bc54e-399f-4081-aa85-b0814944da15"
+    },
+    {
+      "claim_id": "3dc36277-59ef-4feb-b700-e380f33b1cf5",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "2524f216-eee3-4c55-8489-c89990f25dd6",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "cdaf3650-be79-4a54-a712-9899bfd61d68",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "1ee999b4-2117-4719-8121-ec9bb67c4286",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "209eb21e-15c0-4fc5-82a0-1698ae1a6edd",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "0db19d2d-49b5-4ce9-9852-a3ae39b4c71c",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "758eda52-2571-41c9-969c-802639a0f750",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "d7eace1a-2d88-40f8-9eed-2204c6bb3524",
+      "result_id": "5c9586d8-151c-4299-8456-87e2a5c0de53"
+    },
+    {
+      "claim_id": "9fda8e3d-7eb9-4f4f-94b9-2f03b6b25737",
+      "result_id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e"
+    },
+    {
+      "claim_id": "959f35aa-ac66-41dd-92be-829af2535f83",
+      "result_id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e"
+    },
+    {
+      "claim_id": "d76ce8cc-3730-42bf-a66a-339dc22093a4",
+      "result_id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e"
+    },
+    {
+      "claim_id": "b4f15d5d-cb76-4157-af11-275ebd5a4b7a",
+      "result_id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e"
+    },
+    {
+      "claim_id": "a4981db7-7782-44a1-963d-0ab1c567cfcd",
+      "result_id": "b57edcf5-fed5-4e0d-864b-f52b05a26c5e"
+    },
+    {
+      "claim_id": "7e877644-d08e-42a6-b175-3ea03c1e69fd",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "8c38d195-5e64-4326-9a7e-d4788532c34a",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "55a358c5-2508-4edb-8c08-583d2f2aa0da",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "40512d51-c060-4669-b862-2213a175eb6b",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "3b507ba2-6c5d-44bf-9f6f-d33dc6cb7413",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "790c42d4-f514-48ae-9246-8c7e5ff83fc6",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "129f54c3-131d-4f13-a359-415c100f276c",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "6fbaa4ad-ef8f-4e0b-9302-903c02ebf6e1",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "914d0448-01ce-4a2b-89b9-cdd611ccfc6b",
+      "result_id": "883fb770-704c-4a94-91b5-a096aca5db52"
+    },
+    {
+      "claim_id": "d3281784-1a96-4a22-9eb8-a0ceec4483d9",
+      "result_id": "1b77bb0c-1319-485f-a225-741bae589032"
+    },
+    {
+      "claim_id": "b4fee3ed-7d3f-4ba0-9396-5cdb6f441e45",
+      "result_id": "1b77bb0c-1319-485f-a225-741bae589032"
+    },
+    {
+      "claim_id": "5e932aee-d78d-43d7-8458-42b6d1d71e11",
+      "result_id": "1b77bb0c-1319-485f-a225-741bae589032"
+    },
+    {
+      "claim_id": "8dec6ebe-451c-444c-9149-006104978f91",
+      "result_id": "1b77bb0c-1319-485f-a225-741bae589032"
+    },
+    {
+      "claim_id": "8a44da18-fecd-4984-8127-57bc96c0819b",
+      "result_id": "c0d25fad-82c4-4a71-8f69-51939b144f0d"
+    },
+    {
+      "claim_id": "62868187-a99c-4df0-8c1e-02d099010f40",
+      "result_id": "c0d25fad-82c4-4a71-8f69-51939b144f0d"
+    },
+    {
+      "claim_id": "a014f0da-447c-4e2b-8d99-4b4c79170f2b",
+      "result_id": "c0d25fad-82c4-4a71-8f69-51939b144f0d"
+    },
+    {
+      "claim_id": "7ff76b64-e48d-4f4e-8ade-e5bf1e199eac",
+      "result_id": "af38e531-7308-4dd3-b9ee-8062035dda81"
+    }
+  ],
+  "comparisons": []
+}

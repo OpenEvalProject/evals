@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C138"
+    ],
+    "result": "The theory identifies an optimal integration time determined by input statistics and receptor number, and establishes a resource allocation principle where the number of independent measurements equals the number of readout molecules and the work required to store them reliably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C31-C34, and C138 collectively establish the core theoretical framework. The optimal integration time (C2) and resource allocation principle (C3, C32) are derived mathematically in Equations 6-13 and demonstrated in Figures 3-5. The predictions about receptor number effects (C33) and input dynamics (C34) follow logically from the theory and are illustrated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C139",
+      "C140",
+      "C141",
+      "C185",
+      "C186",
+      "C195"
+    ],
+    "result": "Application of the theory to E. coli chemotaxis predicts that the measured integration time (50-500 ms) is both optimal and necessary for sensing shallow gradients, with no fit parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C139-C141 are supported by Figure 4a showing agreement between predicted and measured integration times, and Figure 4b demonstrating necessity. The parameter-free prediction (C140) strengthens the result. However, the claim relies on literature values for several parameters (\u03c4_c, \u03c4_L, R_T) and estimates for \u03c3_L/L\u0304, introducing some uncertainty in the quantitative agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C76",
+      "C78"
+    ],
+    "result": "The sensing error decomposes into sampling error (depending on sample number, independence, and reliability) and dynamical error (depending on integration time and input timescale), with the dynamical error being irreducible by improving sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C76-C78 describe the error decomposition formalized in Equations 5-6. The mathematical derivation in Appendix 1 supports this decomposition. The claim that dynamical error cannot be eliminated by sampling improvements (C76) follows from the mathematical structure where it depends only on timescale ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C93"
+    ],
+    "result": "For time-varying signals, the three resource classes (receptors, readout molecules, power) cannot compensate each other, and time integration can never completely eliminate sensing error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C93 are supported by Equation 8 and Figure 3a-b, which demonstrate that sensing precision is bounded by the limiting resource. The mathematical structure shows that even with infinite resources in one class, the other classes still impose fundamental limits. This is consistent with filtering theory predictions cited in C93.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The cell estimates current ligand concentration by using the push-pull network to discretely sample receptor state via readout molecule collisions, with the fraction of active readout molecules estimating average receptor occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe the discrete sampling framework illustrated in Figure 2. This conceptual framework is internally consistent and provides the foundation for deriving resource requirements. The framework is supported by citation to Ouldridge et al. 2017 for the copying mechanism (C23) and extends the approach of Govern and Ten Wolde 2014a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C168"
+    ],
+    "result": "The theory enables derivation of Pareto fronts quantifying trade-offs between sensing precision and system cost, with optimal designs obeying the resource allocation principle and predicting protein numbers without fit parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 are demonstrated in Figure 5, showing the Pareto front and that optimal designs obey Equation 12. Claim C168 connects this to E. coli predictions. The parameter-free predictions for E. coli are supported by prior work (Govern and Ten Wolde 2014a) cited in C168, though the current manuscript focuses on integration time rather than protein numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C161",
+      "C34"
+    ],
+    "result": "When input varies more rapidly, receptors and power must increase to maintain sensing precision while readout molecules do not need to increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161 and C34 state the same prediction, which follows from the resource allocation principle (Equation 12) and the analysis showing that R_T \u03c4_r/\u03c4_c must remain constant while \u03c4_r decreases with \u03c4_L. The reasoning is explained in the Discussion section and is mathematically consistent with the theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C111",
+      "C119"
+    ],
+    "result": "Time integration requires work input to copy receptor states into readout molecules, with quasi-reversible regime offering higher precision per power but requiring more readout molecules than irreversible regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by citations and thermodynamic principles. Claim C119 follows from Equations 10-11 and Figure 3b, showing the trade-off between sample quality and number. The mathematical analysis of the two regimes (\u0394\u03bc < 4k_BT vs \u0394\u03bc > 4k_BT) is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The Gaussian model-based theory minimizes mean square error, equivalent to Wiener-Kolmogorov and Kalman filtering for stationary systems, providing complete description for optimal sensing of memoryless signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 establish the theoretical foundation and its connection to filtering theory. The equivalence to filtering theory (C145-C146) is well-established for Gaussian systems. The claim of completeness (C148) is supported by the comprehensive treatment of all resource requirements, though it is limited to memoryless signals as acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The results generalize to systems with cooperativity, feedback, or multiple layers, as these architectural features change response time but not fundamental resource requirements for time integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C172 assert generality based on prior work (Govern and Ten Wolde 2014a). While the citation provides some support, the current manuscript does not demonstrate these generalizations. The claims about cooperativity (C171) and multiple layers (C170) are stated with caveats but lack direct evidence in the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C194",
+      "C195"
+    ],
+    "result": "E. coli can sense extremely shallow gradients with length scale ~10^4 \u03bcm, and the optimal integration time is both sufficient and necessary for this capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 cites experimental evidence (Shimizu et al. 2010). Claims C194-C195 interpret the theoretical predictions in Figure 4b, showing SNR_\u03c4_L = 1 at gradient length scales consistent with experiments. The agreement between theory and experiment supports the necessity claim, though it relies on estimated parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior filtering theory work shows that time integration improves sensing of time-varying signals by reducing receptor noise through low-pass filtering, though signal distortion prevents complete noise removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C19-C20 summarize prior work with appropriate citations (Andrews et al. 2006, Hinczewski and Thirumalai 2014, Becker et al. 2015). These are well-established results in the field that provide context for the current work. The citations support the claims about filtering theory applications to cellular sensing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Cellular sensing requires receptors and time for measurements, downstream molecules to store receptor states, and energy to store states reliably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 state fundamental requirements supported by citations (Berg and Purcell 1977, Govern and Ten Wolde 2014a). These are well-established principles in the field that motivate the resource-based analysis. The claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "E. coli uses run-and-tumble strategy creating fluctuating input with timescale ~1 second, and employs push-pull network to filter receptor-ligand binding noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C38 describe established E. coli behavior with appropriate citations (Berg and Brown 1972, Taute et al. 2015, Sartori and Tu 2011). These provide the biological context for applying the theory. The parameter values are well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C48",
+      "C54"
+    ],
+    "result": "The model assumes Gaussian ligand concentration statistics, with receptor correlation time determining independent measurement timescale, and dynamic input-output relation averaging over noise and past trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44, C48, and C54 describe modeling assumptions and framework. The Gaussian assumption (C42) is standard for this type of analysis and cited appropriately. The interpretation of receptor correlation time (C44) and averaging procedure (C48) are clearly defined. Claim C54 correctly positions the work as extending prior static sensing theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C154"
+    ],
+    "result": "Optimal sensing systems match response to input statistics, with the discrete sampling framework providing detailed resource-based description of this principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 summarize principles from filtering and information theory with appropriate citations. Claim C154 positions the sampling framework as providing resource-level detail beyond standard filtering theory. This is a reasonable characterization of the contribution, connecting established principles to resource requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C164"
+    ],
+    "result": "Fitness depends on both sensing precision and energetic cost, with improved precision requiring more protein synthesis and energy expenditure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162 and C164 state general biological principles about fitness trade-offs. These are well-established concepts that motivate the Pareto front analysis. The claims are reasonable and consistent with evolutionary biology principles, though they are not directly tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C173",
+      "C174"
+    ],
+    "result": "E. coli adaptation system exhibits accuracy-speed-power trade-offs, and simulations suggest combined sensing and adaptation enables estimation of future concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174 cite prior work (Lan et al. 2012, Sartori and Tu 2015, Becker et al. 2015) on the adaptation system. These claims provide context for future work but are not central to the current study. The citations appropriately support the claims about adaptation system properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Cells that navigate shape input signal statistics through movement, measure concentrations via surface receptors, with measurements corrupted by stochastic ligand arrival and binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 describe general principles of cellular sensing. C6 is supported by the context of navigating cells. C7-C8 state fundamental aspects of receptor-based sensing that are well-established in the field. These provide appropriate background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Circadian systems adapt to input statistics as predicted by Kalman filtering, and negative feedback/incoherent feedforward motifs enable signal extrapolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 cite prior work (Husain et al. 2019, Alon 2007, Becker et al. 2015) on applications of filtering theory and network motifs. These provide context for the current work and are appropriately supported by citations. The claims accurately represent prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Push-pull networks constitute exponential filters where current output depends on current and past input with exponentially decaying weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe properties of push-pull networks with appropriate citations (Hinczewski and Thirumalai 2014, Becker et al. 2015). This is established knowledge about these network motifs that provides foundation for the analysis. The characterization is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C197"
+    ],
+    "result": "Chemotaxis protein copy numbers in E. coli vary with growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C197 cites experimental data (Li and Hazelbauer 2004) showing growth rate dependence of protein numbers. This observation motivates potential future experiments to measure integration time under different conditions. The citation appropriately supports the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Living cells often need to measure time-varying chemical concentrations, but accuracy limits are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 states the motivation for the study. This is a reasonable characterization of the state of the field prior to this work, as evidenced by the literature review showing that resource requirements for time-varying signals were not well understood despite progress on static signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "Strong selection pressure exists to design sensing systems optimally by maximizing precision given resource constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C143 infers evolutionary selection pressure from the agreement between theory and E. coli measurements. While the agreement is striking, this is an inference about evolutionary history rather than a direct demonstration. Alternative explanations (e.g., developmental constraints, historical contingency) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C183"
+    ],
+    "result": "Shallow gradients allow larger integration time while steep gradients necessitate shorter integration time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C183 follows from the trade-off between sampling and dynamical errors shown in Equation 6 and Figure 4a. As gradient steepness (\u03c3_L/L\u0304) increases, the relative importance of dynamical error increases, requiring shorter integration time. This is a logical consequence of the theory.",
+    "result_type": "MINOR"
+  }
+]

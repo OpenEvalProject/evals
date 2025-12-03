@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study collected continuous microelectrode array recordings from 10 epilepsy patients over 4.3\u00b12.4 days, capturing 22 seizures and detecting 45,623 candidate IEDs using an algorithm with 0.86\u00b10.04 positive predictive value and 61.1% agreement with expert raters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 provide comprehensive methodological details about data collection and IED detection. The algorithm validation (C33-C35) shows reasonable performance, with interrater reliability (C34) comparable to published multicenter studies. The quantitative metrics are clearly stated and the detection rate (C36: 0.43\u00b10.51 IEDs/min) is consistent with clinical expectations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "66.4% of detected IEDs (30,278 total) were classified as traveling waves, with each participant showing a statistically significant dominant direction (p<10\u207b\u00b3). In 8 of 10 participants, IED distributions were bimodal with sub-distributions separated by 177.9\u00b110.7 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C42-C44 present the core finding about IED directionality with appropriate statistical testing (Hermans-Rasson tests with permutations). The bimodality classification (C43) is supported by a rigorous permutation-based approach detailed in methods. The near-antipodal angle (C44: ~178\u00b0) strongly supports the linear axis interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In 6 participants with recruited microelectrode arrays (10 seizures), IEDs traveled opposite to seizure expansion (148.9\u00b117.2\u00b0 from ictal wavefront, p<0.05) and in similar directions to seizure discharges (23.7\u00b133.7\u00b0 difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 establish the key directional relationship between IEDs and seizure propagation in recruited tissue. The statistical significance (C47: median tests p<0.05) and quantitative angular measurements support the conclusion. However, the relatively large standard deviations (C47: \u00b117.2\u00b0, C48: \u00b133.7\u00b0) indicate substantial variability that the authors acknowledge in C65-C66.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Kullback-Leibler Divergence between IED and seizure discharge distributions was 0.66\u00b10.56 (significantly greater than chance, p<0.01), indicating less than one bit of additional information is needed to encode seizure discharge directions from IED directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide information-theoretic quantification of the IED-SD relationship. The KLD analysis (C49-C50) is appropriately tested against permutation distributions. The interpretation (C51) correctly translates KLD values into predictive utility, though the relatively high standard deviation (\u00b10.56) suggests variable predictive power across participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In participants with bimodal IED distributions, 5 of 7 seizures showed bimodal seizure discharge distributions with antipodal sub-distributions (135.2\u00b124.6\u00b0 separation). IED and SD sub-distributions showed matching speed differences (p<10\u207b\u2074 for IEDs; p<0.04 in 5/7 seizures for SDs) and proportions (p<10\u207b\u2076 in 4/5 participants), but no differences in waveforms or firing rates (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 demonstrate detailed correspondence between IED and SD spatial properties. The statistical tests are appropriate (Mann-Whitney U for speeds, cluster-based permutation for waveforms/firing rates, proportion tests). The lack of waveform/firing rate differences (C54) suggests the bimodality reflects directional rather than physiological distinctions. The correspondence in speeds and proportions (C55-C57) strongly supports the learned pathway hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C27"
+    ],
+    "result": "The majority of IEDs are traveling waves that traverse the same path as seizure discharges with fixed, predominantly bidirectional propagation patterns, with predominant and auxiliary sub-distributions whose directions, speeds, and proportions echo those of seizure discharges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C26-C27 state the primary findings supported by the detailed analyses in other claim groups. The traveling wave classification (66.4%, C37), directional consistency (C42), bimodality (C43-C44), and correspondence with seizure discharges (C47-C48, C52-C57) collectively support these summary claims. The data-driven approach with appropriate statistical validation strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C60"
+    ],
+    "result": "IEDs originate from tissue immediately eccentric to the seizure core and propagate inwardly toward the seizure onset zone, providing useful information for localizing the seizure focus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 and C60 are inferences from the directional data (C47-C48) rather than direct observations. While the antipodal relationship to seizure expansion supports this interpretation, the study does not directly demonstrate IED origins or validate seizure focus localization. The authors acknowledge limitations (C76, C81) requiring multiple arrays for accurate triangulation. Clinical validation of localization utility is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Seizure discharges likely potentiate propagation pathways through neocortex that are revisited during IEDs, corroborated by computational model predictions of spike-timing dependent plasticity. Spatiotemporal biases exist in epileptic tissue with correspondences between IED and SD spatial properties in recruited recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59, C67-C70, C72 propose a mechanistic interpretation linking observations to synaptic plasticity. While the correspondence between IED and SD properties (C68-C70) is well-supported by data, the causal mechanism (C58, C67) remains speculative. The computational model (C59) provides theoretical support but does not constitute experimental validation. Claim C73 explicitly acknowledges that causality cannot be determined from this dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C40"
+    ],
+    "result": "IED speeds are comparable to seizure discharge speeds before ictal wavefront passage, and action potential firing during IEDs is heterogeneous, particularly in areas distant from the seizure onset zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C40 are supported by citations to previous work and are consistent with the observation that LFP-based traveling wave detection (66.4%, C37) was more reliable than MUA-based detection (48.6%). The heterogeneity explanation (C40) is well-established in the literature and explains the methodological choice to focus on LFP measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "IEDs travel bidirectionally on a linear axis even without an ictal wavefront, extending beyond previous observations of bidirectional seizure discharges emanating from the slowly expanding ictal wavefront. IED directions are not perfectly antipodal to the ictal wavefront.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 contextualize findings relative to prior work. The bidirectional pattern in the absence of an ictal wavefront (C64) is a novel observation supported by the bimodality analysis (C43-C44). The acknowledgment of imperfect antipodality (C65) and potential sources of error (C66) demonstrates appropriate scientific caution. The comparison to previous seizure observations (C62-C63) is well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study has several limitations: relationships could not be determined in penumbral recordings; causality between IEDs and seizure discharges cannot be established; recordings cover small spatial scales with sampling bias toward seizure onset zones; and clinical application would require multiple arrays or alternative recording technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73-C81 appropriately acknowledge study limitations. The inability to analyze penumbral recordings (C71) is a data limitation. The small spatial scale (C75-C76) and sampling bias (C76) are inherent to the microelectrode array approach. The suggestions for future work (C80-C81) are reasonable. These limitations do not invalidate the main findings but appropriately constrain their interpretation and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Three participants with mesial temporal lobe seizure onsets exhibited similar IED and seizure discharge dynamics after seizures spread to lateral temporal cortex, though two showed larger differences between IED and SD direction distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe a subgroup analysis showing that the main findings extend to cases with mesial temporal lobe onsets after lateral spread. The observation of larger directional differences in two cases (C84) is noted but not fully explained. This supports generalizability while acknowledging heterogeneity in the patient population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "IEDs are frequent electrophysiological events in epilepsy patients that occur far more often than seizures, exhibit temporal correlations with seizure likelihood, and show some spatial overlap with seizure onset zones. However, their relationship to seizure-generating tissue remains debated despite evidence that removing IED-rich areas may improve surgical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C14 establish the clinical and scientific context from prior literature. These are well-supported by multiple citations and represent established knowledge in the field. The statement that the IED-seizure relationship remains unclear (C3, C14) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior microelectrode array studies revealed spatiotemporal features of seizures including ictal core/penumbra regions, the ictal wavefront, and bidirectional seizure discharges. A computational model incorporating synaptic plasticity predicted that IEDs would propagate in similar directions to seizure discharges, opposite to seizure expansion, which this study tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 provide essential background from prior work and establish the study hypothesis. The citations to previous microelectrode array studies (C15-C21) and computational modeling (C22-C24) are appropriate. The hypothesis (C25) logically follows from the model predictions and is clearly testable with the methods employed.",
+    "result_type": "MINOR"
+  }
+]

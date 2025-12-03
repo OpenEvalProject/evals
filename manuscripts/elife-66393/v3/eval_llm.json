@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In situ hybridization reveals that plin2 mRNA is not expressed in unfed 6 dpf larvae but is strongly induced in the intestine following a high-fat meal. Plin3 mRNA is present in the intestine of both unfed and fed larvae, with stronger signal after feeding. Neither plin2 nor plin3 mRNA was detected in the liver or other tissues at 6 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are directly supported by in situ hybridization data shown in Figure 1A and B, with appropriate controls (unfed vs. fed, sense vs. antisense probes). The findings are consistent with previous studies in mice and the authors' prior RNAseq/qRT-PCR data (C28, C29, C30). The absence of hepatic expression (C31) is unexpected but clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Fluorescent knock-in reporter lines faithfully recapitulate endogenous plin2 and plin3 expression patterns. EGFP-Plin2 is only detected in the intestine of fed larvae, while Plin3-RFP is present in the intestine of both unfed and fed larvae. No fluorescence is observed in the liver or other tissues at 6 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are well-supported by fluorescence imaging data (Figure 1E, Figure 1\u2014figure supplement 2) that directly correspond to the in situ hybridization results (C27-C31). The knock-in strategy ensures expression under endogenous regulatory control, and the observed patterns match mRNA expression, validating the reporter lines as faithful representations of endogenous protein expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "EGFP-Plin2 and Plin3-RFP localize to the surface of intestinal lipid droplets labeled with BODIPY fatty acid analogs. Both proteins can co-label the same lipid droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by confocal imaging data (Figure 1G, 1H) showing ring-like fluorescence patterns characteristic of surface coating on BODIPY-labeled lipid droplets. The co-localization experiment (C41) demonstrates that both proteins can simultaneously decorate lipid droplets, validating both reporters as functional lipid droplet markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Following a high-fat meal, Plin3-RFP fluorescence increases approximately twofold with peak at 14-16 hours, while EGFP-Plin2 increases ~20 million-fold with peak at 8-12 hours. Substantial variability in EGFP-Plin2 fluorescence between individual fish correlates with the quantity of lipid consumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by quantitative whole-mount fluorescence measurements over 30 hours (Figure 2A-D) with appropriate sample sizes (n=14-23 per timepoint) and statistical analysis (Kruskal-Wallis with Dunn's multiple comparisons). The correlation between EGFP-Plin2 fluorescence and intestinal opacity (R\u00b2=0.6828, p<0.0001) provides mechanistic insight into the observed variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In unfed larvae, Plin3-RFP is distributed throughout the cytoplasm of enterocytes. After feeding, Plin3-RFP redistributes to lipid droplet puncta within 1.5 hours. EGFP-Plin2 signal emerges 2-3 hours after feeding, appearing almost exclusively on lipid droplets. Over time, EGFP-Plin2 signal increases while Plin3-RFP returns to predominantly cytoplasmic localization by 6-7 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by time-course confocal imaging (Figure 3A-B) showing the temporal dynamics of both proteins. The timing of EGFP-Plin2 appearance (C54, C55) is consistent with the need for transcription and translation, supported by in situ hybridization data (Figure 1A) and previous RNAseq studies. The progression from Plin3 to Plin2 coating is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Detailed time-course imaging with BODIPY-labeled fatty acids reveals that Plin3-RFP associates with nascent lipid droplets as early as 45 minutes post-feeding (p<0.0001) and remains associated for ~6 hours with declining intensity (R=-0.3266). EGFP-Plin2 first appears at 2-3 hours and becomes statistically enriched on droplets by 5.5 hours (p=0.0103), with increasing intensity through 8.5 hours (R=0.7732). Plin2 continues to decorate droplets through 30 hours with declining intensity from 16-30 hours (R=-0.6321), while Plin3 shows no significant droplet association after 16 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 are strongly supported by comprehensive quantitative analysis of confocal time-course data (Figure 4A-D) using automated lipid droplet segmentation and fluorescence quantification. Statistical testing (two-way ANOVA with \u0160\u00edd\u00e1k multiple comparisons) confirms the temporal progression. The methodology for separating droplet-associated vs. cytoplasmic fluorescence is well-described and appropriate. The conclusion (C66) is a valid inference from the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Over-expressed human EGFP-PLIN2 appears on lipid droplets earlier than endogenously expressed EGFP-Plin2, suggesting that the sequential targeting of Plin3 followed by Plin2 reflects relative expression levels and protein affinity rather than droplet size or maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by comparative time-course data (Figure 4E) showing EGFP-PLIN2 visible at 45 minutes (earliest timepoint) and statistically enriched on droplets by 3.5 hours, earlier than endogenous EGFP-Plin2 (5.5 hours). While C68 is an inference, it is a reasonable interpretation supported by the experimental comparison. However, alternative explanations (e.g., differences in protein stability or trafficking) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The delay in appearance of Plin expression in the liver until late larval stages suggests that aspects of hepatic lipid metabolism may not reach full maturity until later in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by imaging data showing LipidTOX-labeled lipid droplets at 6 dpf without Plin2/Plin3 labeling (Figure 5A, D), while Plin-labeled hepatic droplets appear at 15-18 dpf (Figure 5B-D). This is an unexpected finding given that the liver is functionally mature by 5 dpf (C71, C72). The inference about developmental maturation of hepatic lipid metabolism is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "At 15 dpf, visceral adipocytes containing lipid droplets co-labeled with EGFP-Plin2 and Plin3-RFP are visible. As adipose depots expand, both proteins continue to decorate unilocular lipid droplets at 21 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by confocal imaging data (Figure 6B-H) showing Plin2 and Plin3 labeling of adipocyte lipid droplets at both developmental stages. The findings are consistent with previous characterization of zebrafish adipose tissue development using lipophilic dyes. No adverse effects on adipose tissue area or fish growth were observed (Figure 6\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C80"
+    ],
+    "result": "Small EGFP-Plin2-positive lipid droplets are consistently observed in neuromasts of the posterior lateral line at 15 dpf. The lipid droplets appear at the edge of the organs, suggesting localization in support cells, mantle cells, or neuromast border cells rather than hair cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by imaging data (Figure 7) showing EGFP-Plin2-positive lipid droplets in neuromasts. Claim C80 is an inference based on the spatial location of the droplets within the neuromast structure, which is reasonable but not definitively proven. The finding is consistent with previous reports of lipid droplets near neuromasts using lattice light sheet microscopy (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C86"
+    ],
+    "result": "The Fus(EGFP-plin2) and Fus(plin3-RFP) knock-in zebrafish lines provide new tools for visualizing lipid droplets in vivo in the intestine, liver, and adipose tissue. These tools reveal that perilipin 3 is rapidly loaded on intestinal lipid droplets following a high-fat meal and later replaced by perilipin 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C86 represent the main conclusions of the study, which are well-supported by the comprehensive characterization of the knock-in lines and the temporal dynamics experiments. The tools have been validated for tissue-specific expression, subcellular localization, and functional relevance. The ordered recruitment of Plin3 followed by Plin2 is a novel finding supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Over-expression of Plin proteins can alter lipid droplet dynamics by affecting lipolysis and lipophagy rates, potentially resulting in altered cytoplasmic lipid levels and lipoprotein secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by multiple citations to published literature and represent established knowledge in the field. This rationale justified the authors' decision to create knock-in lines rather than overexpression transgenic lines to avoid artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "PLIN3 is expressed throughout the cytoplasm in the absence of lipid droplets and binds to nascent lipid droplets as they emerge from the ER. PLIN2 is only stable when bound to lipid droplets and is rapidly ubiquitinated and degraded in their absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by multiple citations to published literature and represent established knowledge about PLIN2 and PLIN3 biology. These claims provide important context for interpreting the observed expression patterns in the zebrafish reporters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The shift from Plin3 to Plin2 over time is consistent with previous observations in cultured adipocytes and hierarchical binding studies. However, this contrasts with findings in mice where PLIN2 was not found on enterocyte lipid droplets 3 hours after feeding. It remains unclear whether the ordered recruitment is specific to fish or would be observed in mammals with more frequent sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 appropriately contextualize the findings within existing literature. Claim C90 acknowledges uncertainty about species-specific differences, which is appropriate given the limited temporal resolution in previous mouse studies. The comparison is fair and the speculation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "PLIN2 knock-out mice are less efficient at absorbing dietary fat, have higher fecal lipids, altered microbiome, and are resistant to adverse effects of high-fat diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by citation to published literature (Frank et al., 2015) and provide important context for the potential physiological significance of PLIN2 in intestinal lipid metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The human PLIN2 gene region is strongly associated with plasma cholesterol levels (p=1.362e-20), and a PLIN2 mutation (Ser251Pro) is associated with decreased atherogenic lipids. While causality of Ser251Pro remains uncertain, genome-wide association data suggest PLIN2 can impact metabolic and cardiovascular diseases, though the cell biological mechanism remains to be described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by citations to databases and published literature. The authors appropriately acknowledge uncertainty about causality (C95) while noting the potential clinical relevance. This provides important motivation for studying PLIN2 function in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background information on lipid droplets and perilipins, including their dynamic nature, structural features, evolutionary conservation, and tissue-specific expression patterns in mammals and fish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C19 represent established knowledge in the field, supported by multiple citations to published literature. These claims provide essential background context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Historical methods for studying lipid droplets in vivo and in cell culture, including fluorescently tagged proteins, lipophilic dyes, fluorescent fatty acids, and label-free microscopy. In vivo expression of fluorescently tagged lipid droplet proteins has been primarily limited to yeast, Drosophila, and C. elegans, though a transgenic zebrafish Plin2-tdtomato line was recently described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by multiple citations to published literature and accurately describe the state of the field prior to this study. This establishes the novelty and significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Enterocytes are responsible for absorbing and packaging dietary fat as triacylglycerol into chylomicrons for export or cytoplasmic lipid droplets for storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by citation to published literature and represents established knowledge about enterocyte function, providing important context for the intestinal lipid droplet studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In mice, no lipid droplets are found in fasted enterocytes, but they grow in number and size in the hours following a high-fat meal and are nearly depleted by 12 hours. PLIN3 is present on droplets after acute feeding but not chronic feeding, while PLIN2 is only present after chronic high-fat feeding despite being upregulated after acute feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by citations to published literature and provide important comparative context for interpreting the zebrafish findings. These claims highlight differences between acute and chronic feeding responses in mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "By 5 dpf, the zebrafish liver has differentiated hepatocytes and functional biliary and vasculature systems. It performs many hepatic functions including bile secretion, insulin responsiveness, lipid and glycogen storage, and serum protein secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by multiple citations to published literature and establish that the zebrafish liver is functionally mature by 5 dpf, making the delayed Plin expression (C73) particularly surprising.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "In adult grass carp, plin1 mRNA expression in liver is higher than in adipose tissue, suggesting Plin1 might coat hepatocyte lipid droplets in young zebrafish larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by citation to published literature. However, C75 is speculation without direct evidence. The authors acknowledge this is speculative, but no experiments were performed to test whether Plin1 is present on hepatic lipid droplets in young larvae. This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "Neuromasts are sensory epithelial receptor organs containing hair cells that respond to water movement and pressure. Lipid droplets adjacent to neuromasts have been previously reported using lattice light sheet microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C81 are supported by citations to published literature and provide context for the neuromast lipid droplet findings. C81 validates that the observation is consistent with previous reports.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Studies on vertebrate PLINs have been mostly performed in cell culture or fixed tissues. In vivo studies are essential for understanding PLIN impact on whole animal physiology, particularly for systems like intestinal enterocytes where bile and microbiota influence lipid absorption and are difficult to replicate ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 represent the authors' rationale for developing in vivo tools and are supported by general knowledge of the field and citations. These claims effectively motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Specific microbes are associated with profound increases in intestinal lipid droplet number and/or size, but the mechanism is not understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by citations to published literature including the authors' previous work. This identifies an important future application for the reporter lines.",
+    "result_type": "MINOR"
+  }
+]

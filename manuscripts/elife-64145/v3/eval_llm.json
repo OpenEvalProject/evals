@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "B. subtilis exhibits medium-dependent biofilm formation, with LB supporting limited biofilm characteristics and MSgg promoting extracellular matrix production that establishes colony architecture and supports functionally distinct subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by citations to prior work and represent established knowledge about B. subtilis biofilm biology. These claims provide essential background context for the study but do not constitute novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A CRISPRi library of 302 essential and conditionally essential gene knockdowns was constructed in B. subtilis 3610, with tunable knockdown levels demonstrated in both biofilm and non-biofilm colonies, and a fluorescence-based quantification method validated for measuring competitive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 describe the construction and validation of the CRISPRi library and quantification methods. The data in Figures 1 and supplementary figures demonstrate successful library construction, tunable knockdown (C11-C12), and accurate quantification of strain ratios (C13). These technical achievements enable the subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Basal knockdown of essential genes resulted in a narrow distribution of colony sizes on LB but wider distribution on MSgg, while competitive fitness assays revealed that 210 strains on LB and 198 on MSgg were significantly defective in competition under basal knockdown, with even more severe defects under full knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by experimental data in Figure 2 and supplementary files. The statistical thresholds (two standard deviations from controls) are clearly defined, and the data show consistent patterns across media types. The increased sensitivity on MSgg (C15) is particularly notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Ribosomal protein knockdowns exhibited significantly reduced competitive fitness, with some showing ~20% lower maximum growth rates in liquid culture, and a reaction-diffusion model confirmed that growth rate is a major determinant of competitive fitness in colonies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by DAVID functional enrichment analysis (C21, with p-values), experimental growth rate measurements (C22, Figure 2C), and computational modeling (C23, Figure 2E). The model provides mechanistic insight linking growth rate differences to competitive fitness outcomes, though the model parameters require several assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Some knockdowns maintained high competitive fitness despite reduced monoculture growth, with enrichment for integral membrane components among strains with fitness similar to controls, and four specific strains showed compromised monoculture growth but high competitive fitness, suggesting nutrient sharing mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by experimental data and statistical analysis. The enrichment of integral membrane components (C25) is statistically significant (p=2.1\u00d710\u207b\u00b3). The identification of specific strains with discordant monoculture/co-culture phenotypes (C26) suggests interesting biology, though the mechanisms remain incompletely characterized. The reproducibility and stability data (C27) strengthen confidence in the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "93% of strains exhibited similar competitive fitness on LB and MSgg, but 36 strains showed medium-dependent fitness differences enriched for amino acid biosynthesis genes, with specific nutrient supplementation (glycine, Mg2+, Mn2+) rescuing fitness defects for glyA, mgtE, and mntA knockdowns respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by experimental data in Figure 3. The statistical enrichment for amino acid biosynthesis genes (C30, p<10\u207b\u2075) is highly significant. The rescue experiments (C31-C33) provide direct evidence for nutrient-dependent fitness effects. However, the authors note that many predicted nutrient additions did not rescue fitness (Figure 3\u2014figure supplement 1B), indicating complexity beyond simple nutrient availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The alrA knockdown failed to form colonies as a monoculture but survived in biofilm colony co-culture through D-alanine sharing from wild-type cells, with rescue specific to colony growth and not occurring in liquid culture, and specificity demonstrated by rescue with D-methionine but not other D-amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe a key discovery of the paper. The data in Figure 4 clearly show that alrA knockdown is rescued in colony co-culture (C34) but not liquid (C40-C41), and that exogenous D-alanine or D-methionine rescue growth (C37-C38) while other D-amino acids do not (C39). The cell wall defects (C36) provide mechanistic context. This represents a clear example of colony-specific genetic rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Matrix-deficient co-cultures maintained alrA rescue, but combining matrix-proficient alrA knockdown with matrix-deficient parent resulted in stable mutualism with competitive fitness ~1 for 48 hours, suggesting reciprocal benefits through D-alanine and matrix sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 describe the mutualism discovery. The data in Figure 5A-B show that matrix is not required for alrA rescue (C42-C44) but that the matrix-deficient parent benefits from matrix-producing alrA cells (C45-C46). The inference of reciprocal benefits (C47-C48) is reasonable given the stable 1:1 ratio over time, though direct measurements of D-alanine and matrix exchange are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The mutualism between alrA knockdown and matrix-deficient parent was eliminated when colony growth was constrained to two dimensions, with the parent outcompeting alrA at the colony edge in all matrix-production combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by the two-dimensional growth experiments in Figure 5C,F. The consistent outcompetition of alrA by parent-RFP at the colony edge in 2D growth across all matrix combinations demonstrates that three-dimensional colony architecture is critical for the mutualism. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Eight additional essential gene knockdowns exhibited high mutualism scores, including racE and menE as candidates for nutrient-sharing mutualisms, with four non-essential genes also showing mutualism, and all tested mutualisms requiring three-dimensional colony growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 extend the mutualism findings beyond alrA. The mutualism screen data (Figure 5E, supplementary figures) identify multiple genes with high mutualism scores. The functional predictions for racE and menE (C52) are reasonable inferences based on gene function. The requirement for 3D growth (C56-C57) is demonstrated experimentally for four genes. However, the mechanistic details for most of these mutualisms remain to be fully characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Despite D-alanine being undetectable in B. subtilis 168 liquid culture supernatants, wild-type cells produce and secrete sufficient D-alanine to support alrA mutant growth in colonies, with rescue likely occurring early in biofilm development, demonstrating that cell wall synthesis mutants can be supported through sharing of cell wall components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 synthesize the alrA findings with prior literature. The contrast with prior work (C58, citing Lam et al. 2009) highlights the novelty of colony-based rescue. The inference about timing (C60) is reasonable given the rapid cell death in liquid (Figure 4C,E) and the citation to work on biofilm development. The generalization to other cell wall mutants (C61) is appropriately cautious, noting the common peptidoglycan structure across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The stable mutualism resembles behavior of \u0394tasA and \u0394epsH mutants in pellicle biofilms, demonstrating that biofilm colony growth can drive genetic diversity and illustrating potential for mutualism in native biofilms including during plant root colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by the experimental findings and represent reasonable conclusions. The comparison to prior work (C62, citing Drago\u0161 et al. 2018) provides context. The general conclusion about genetic diversity (C63) is justified by the multiple examples of rescue and mutualism. However, C64 is explicitly speculative about plant root colonization and represents a hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  }
+]

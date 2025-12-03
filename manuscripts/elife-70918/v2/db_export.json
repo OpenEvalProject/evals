@@ -1,0 +1,1414 @@
+{
+  "submission": {
+    "id": "a3b29ae1-fd38-49b6-b30f-ce8408c09b4c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:55:37.458072Z",
+    "updated_at": "2025-12-03T07:55:37.458072Z"
+  },
+  "content": [
+    {
+      "id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "submission_id": "a3b29ae1-fd38-49b6-b30f-ce8408c09b4c",
+      "content_type": "manuscript",
+      "content_text": "# Dynamics and variability in the pleiotropic effects of adaptation in laboratory budding yeast populations\n\n## Authors\n\n- Christopher W Bakerlee<sup>1</sup> ([ORCID: 0000-0002-0819-882X](https://orcid.org/0000-0002-0819-882X))\n- Angela M Phillips<sup>2</sup> ([ORCID: 0000-0002-9806-7574](https://orcid.org/0000-0002-9806-7574))\n- Alex N Nguyen Ba<sup>2</sup>\n- Michael M Desai<sup>2</sup> ([ORCID: 0000-0002-9581-1150](https://orcid.org/0000-0002-9581-1150)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology, Harvard University Cambridge United States\n2. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States\n3. Department of Cell and Systems Biology, University of Toronto Toronto Canada\n4. Department of Physics, Harvard University, Cambridge Cambridge United States\n5. NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States\n6. Quantitative Biology Initiative, Harvard University, Cambridge Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEvolutionary adaptation to a constant environment is driven by the accumulation of mutations which can have a range of unrealized pleiotropic effects in other environments. These pleiotropic consequences of adaptation can influence the emergence of specialists or generalists, and are critical for evolution in temporally or spatially fluctuating environments. While many experiments have examined the pleiotropic effects of adaptation at a snapshot in time, very few have observed the dynamics by which these effects emerge and evolve. Here, we propagated hundreds of diploid and haploid laboratory budding yeast populations in each of three environments, and then assayed their fitness in multiple environments over 1000 generations of evolution. We find that replicate populations evolved in the same condition share common patterns of pleiotropic effects across other environments, which emerge within the first several hundred generations of evolution. However, we also find dynamic and environment-specific variability within these trends: variability in pleiotropic effects tends to increase over time, with the extent of variability depending on the evolution environment. These results suggest shifting and overlapping contributions of chance and contingency to the pleiotropic effects of adaptation, which could influence evolutionary trajectories in complex environments that fluctuate across space and time.\n\n## Introduction\n\nAs a population adapts to a given environment, it accumulates mutations that are beneficial in that environment, along with neutral and mildly deleterious \u2018hitchhiker\u2019 mutations. Because these mutations can also affect fitness in other environments, adaptation will tend to lead to pleiotropic fitness changes in other conditions. These pleiotropic consequences of adaptation need not be negative: evolution in one condition can lead to correlated fitness increases in similar environments as well as fitness declines in more dissimilar conditions. It is also natural to expect these consequences to vary over shorter or longer evolutionary timescales. For example, after a sufficiently long time adapting to a single condition, we might expect a population to increasingly specialize to that condition at the expense of its fitness elsewhere.\n\nNumerous laboratory evolution experiments (Jerison et al., 2020; Ostrowski et al., 2005; Leiby and Marx, 2014; Kinsler et al., 2020; Jasmin et al., 2012; Novak et al., 2006; Meyer et al., 2010; Cooper and Lenski, 2000; Bailey and Kassen, 2012; Schick et al., 2015; Anderson et al., 2011; Li et al., 2019; Dillon et al., 2016) as well as empirical studies of natural variation in diverse model systems (Geiler-Samerotte et al., 2020; Wang et al., 2015; Hall et al., 2006; Mackay and Huang, 2018) have analyzed the pleiotropic consequences of adaptation. These studies have found examples of specialization, as well as cases of correlated adaptation and the evolution of more generalist phenotypes (Meyer et al., 2016; Hall et al., 2011; Duffy et al., 2006; Duffy et al., 2007; Jerison et al., 2020; Li et al., 2019; Leiby and Marx, 2014). Pleiotropic fitness tradeoffs, such as those underlying specialization, can arise from either antagonistic pleiotropy (i.e., direct tradeoffs between the fitness effects of individual mutations across conditions), mutation accumulation (i.e., accumulation of mutations that are neutral in the evolution environment but impose fitness costs in other conditions), or some combination of these phenomena. More complex patterns of correlated fitness changes across conditions, such as those that underlie more generalist phenotypes, can result from more general relationships between fitness effects in different environments. Recent experimental and theoretical work has also analyzed how these distributions of mutational effects across environments can lead to an interplay between chance and contingency in determining both the typical pleiotropic consequences of adaptation and the predictability of these effects (Jerison et al., 2020; Ardell and Kryazhimskiy, 2020).\n\nThe way in which these pleiotropic consequences of adaptation change as populations evolve is less well understood. That is, as a population adapts to a given environment, how steadily and consistently does its fitness change in alternate environments? Do these pleiotropic effects change systematically with time? For example, do fitness tradeoffs tend to become stronger the longer a population adapts to its home environment? And do the pleiotropic consequences of adaptation between replicate lines become more or less similar over time? These questions are critical both for understanding the nature of pleiotropic tradeoffs and for predicting the dynamics and outcomes of evolution in environments that fluctuate across time or space.\n\nPrevious studies have shed some light on these questions. For example, Meyer et al., 2010 reported on changes in phage susceptibility over 45,000 generations of Escherichia coli evolution, finding variable yet somewhat consistent trends across six evolved lines. Studying lines from the same evolution experiment, Leiby and Marx, 2014 found a patchwork of pleiotropic patterns across 12 populations assayed for growth rate in 29 environments at two timepoints. While fitness changed predictably across replicates in some environments, changes were much more variable in others, with mutation rate modifying these patterns. However, these and other studies of the evolutionary dynamics of pleiotropy have been limited to a small number of timepoints, replicate populations, or evolution and assay environments (Cooper and Lenski, 2000; Novak et al., 2006; Bailey and Kassen, 2012). These limitations constrain the degree to which we can make useful inferences about how chance and contingency influence the pleiotropic consequences of adaptation, and how these consequences change over time.\n\nTo overcome these limitations, we experimentally evolved hundreds of uniquely barcoded haploid and diploid yeast populations in three environments for 1000 generations. Using sequencing-based bulk fitness assays (BFAs), we assayed the fitness of each evolving population in five environments at 200-generation intervals spanning the 1000 generations of evolution. We then used the resulting data to quantify how the pleiotropic consequences of adaptation unfold in different evolution environments, along with the extent of variation among replicate populations. Our results allow us to investigate differential roles for chance and contingency over evolutionary time, with implications for the outcomes of adaptation in more complex fluctuating environments.\n\n## Results\n\nTo study the dynamics of the pleiotropic consequences of adaptation, we experimentally evolved 152 diploid yeast populations for about 1000 generations in one of three different environments (48 populations in rich media (YPD) at 30\u00b0C, 54 populations in YPD +0.2% acetic acid at 30 \u00b0C, and 50 populations in YPD at 37\u00b0C). We chose these environments to facilitate comparisons with previous experimental evolution studies in yeast (e.g., Nguyen Ba et al., 2019; Jerison et al., 2020), which have used YPD at 30 \u00b0C as a rich environment and acetic acid and high temperature to apply distinct types of stress (Figure 1\u2014figure supplement 2; Taymaz-Nikerel et al., 2016; Giannattasio et al., 2013). In addition, we evolved 20 haploid (MAT\u03b1) yeast populations in YPD at 37\u00b0C; these are a subset of populations that did not autodiploidize from a larger haploid evolution experiment (see Methods for details).\n\nEach haploid population was founded by a single clone of a putatively isogenic laboratory strain, labeled with a unique DNA barcode at a neutral locus prior to the evolution experiment (Figure 1A). Diploid populations were founded by mating uniquely barcoded haploids and selecting for diploids. We then propagated each population for 1000 generations in batch culture, with a 1:210 dilution every 24hr; this corresponds to a population bottleneck size of 104 (Figure 1A and Figure 1\u2014source data 1; see Methods for details). We froze an aliquot from each population at 50-generation intervals at \u221280\u00b0C in 8% glycerol for long-term storage.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-v2.jpg)\n\n**Figure 1.:** (A) Yeast cells were uniquely barcoded to generate founder clones. Uniquely barcoded founder clones were used to seed individual populations in 96-well plates. Populations were evolved for 1000 generations in three distinct environments: rich media (YPD), rich media at elevated temperature (YPD, 37 \u00b0C), and rich media with 0.2 % acetic acid (YPD+ AA), and frozen at 50-generation intervals. Fitness assays were performed at 200-generation intervals. (B) Bulk fitness assay of barcoded adapted populations by competitive growth in each evolution environment and two additional environments (YPD, 21 \u00b0C and YPD +0.4 M NaCl). Relative fitness of each population was evaluated from the log frequency of the respective barcode sequence over time compared to that of ancestral references, based on assay generations 10, 30, and 50.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each point corresponds to the fitness of a population at a given evolution timepoint in the environment indicated. Point color corresponds to the relative density of points, as determined by distance to five nearest points. The black line in each plot indicates x = y.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Growth curves for two haploid ancestral clones. (B) Growth curves for two diploid ancestral clones. For both haploids and diploids, two technical replicate measurements were made per clone.\n\nAfter completing the evolution, we revived populations from generations 0, 200, 400, 600, 800, and 1000. We then conducted parallel BFAs (two technical replicates [Figure 1\u2014figure supplement 1]) to measure the fitness of each population at each timepoint across five environments (the three evolution environments, YPD +0.4 M NaCl at 30 \u00b0C [transfers every 24 hr], and YPD at 21 \u00b0C [transfers every 48 hr]) which exposed the populations to unique osmotic and temperature stresses (Figure 1\u2014figure supplement 2). In each BFA, we pooled all populations of a given ploidy from a given generation along with a small number of common reference clones and propagated them for 50 generations (Figure 1B). We then sequenced the barcode locus at generations 10, 30, and 50, and we inferred the fitness of each population from the change in log frequency of each corresponding barcode. By exploiting the fact that each population is uniquely barcoded, these BFAs allowed us to estimate the fitness of all 172 populations at each of the five 200-generation intervals in each of the five environments with minimal cost and effort (Figure 2\u2014source data 1 see Methods for details).\n\nBased on the measured fitness of the generation 0f ancestral populations, we found that some diploid populations had substantially higher ancestral fitness in certain assay environments, likely because they acquired mutations prior to the start of the evolution. To clarify our downstream analyses, we excluded 19 outlier diploid populations whose ancestors differed from the mean ancestral fitness by at least 4 % in at least one environment, leaving us with 133 diploid populations (43 YPD at 30 \u00b0C, 48 YPD+ acetic acid, and 42 YPD at 37 \u00b0C) and 20 haploid populations (153 populations total). However, we note that the results of all our analyses are very similar when we consider the entire dataset with outliers included (see Figure Supplements).\n\n### Adaptation to the home environment leads to consistent fitness gains and pleiotropic effects\n\nWhile there is modest variability between replicate populations, adaptation in each environment leads to a consistent increase in fitness in that \u2018home\u2019 environment (Figure 2, subplots with bold black borders). As observed in earlier experiments (Couce and Tenaillon, 2015), this fitness increase is largely predictable and follows a characteristic pattern of declining adaptability: early rapid fitness gains that slow down over time (p < 0.0001; Figure 2\u2014figure supplement 6). There are some differences among evolution environments with respect to this pattern: declining adaptability appears to be especially pronounced in the acetic acid environment, while haploid populations evolved at 37 \u00b0C appear not to exhibit this trend, possibly because the fitness gains in this environment were generally minimal.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-v2.jpg)\n\n**Figure 2.:** (A) Population fitness trajectories. Replicate populations for each evolution condition are shown in each column. Environments in which the fitnesses of these populations were assayed are shown in the rows. Plots for which evolution and assay environment are the same are indicated by a bold outer border. The black line in each plot indicates the median fitness. Error bars indicate standard error of the mean. (B) Summary of population changes in fitness: generations 0\u20131000. Populations are categorized according to whether their fitness at generation 1000 is equal to, less than, or greater than their fitness at generation zero. Significance of fitness differences evaluated using one-sided Welch\u2019s unequal variances t-tests, the number of observations for both fitness values is 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Replicate populations for each evolution condition are shown in each column. Environments in which these populations\u2019 fitnesses were assayed are shown in the rows. Plots for which evolution and assay environment are the same are indicated by a bold outer border. The black line in each plot indicates the median fitness. Error bars indicate standard error of the mean.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0\u2013200 for each combination of evolution and assay environments. Summary statistics provided in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0\u2013400 for each combination of evolution and assay environments. Summary statistics provided in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0\u2013600 for each combination of evolution and assay environments. Summary statistics provided in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Percentage of populations that improve, decline, and maintain similar relative fitness from generations 0\u2013800 for each combination of evolution and assay environments. Summary statistics provided in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Changes in fitness over the first (0\u2013400) and last (600\u20131000) 400 generations of the evolution experiment are plotted for each population. Points are colored by evolution condition (environment and ploidy). (B) Summary statistics for t-test comparing the mean change in fitness over the first and last 400 generations for all populations evolved in each condition. n refers to the number of populations in that evolution condition.\n\nAdaptation in each evolution environment also led to fitness changes in most other environments (Figure 2). In general, these fitness changes tend to have a consistent direction over time for each environment pair. For example, populations adapted to YPD+ acetic acid and YPD at 37 \u00b0C steadily gained fitness in the YPD at 30 \u00b0C and YPD +0.4 M NaCl environments over time, with the average fitness across populations largely following the same trend seen at home: initial rapid fitness gains followed by slower increases over time. In other instances, fitness gains at home correspond to fitness declines in away environments. For example, populations evolved in YPD+ acetic acid tend to lose fitness in YPD at 21 \u00b0C. However, pleiotropic effects are less predictable than the fitness gains in the home environment: we see more variability among replicate lines in away environments, both in the shapes of their fitness trajectories and in their ultimate evolutionary outcomes (see analysis below).\n\nTo review the extent of specialization across evolution environments, we summarize the changes in fitness for populations evolved in each environment (Figure 2B, Figure 2\u2014figure supplements 2\u20135). Overall, we find that specialization is quite rare, as the majority of populations improve in fitness in each assay environment. The major exception is that a substantial fraction of populations decline in fitness at 21 \u00b0C after evolution in other conditions. Additionally, some populations evolved at 37 \u00b0C (diploid and haploid) decline in fitness in YPD+ acetic acid, and some populations evolved in YPD+ acetic acid decline in fitness at 37 \u00b0C. Importantly, even in the 21 \u00b0C environment, specialization is not inevitable, as there are indeed populations evolved in other environments that gain fitness at 21 \u00b0C.\n\nTo visualize how these pleiotropic effects change over time, we plot these fitness trajectories across pairs of environments (Figure 3). This representation of the data shows clear but sometimes subtle differences in patterns of pleiotropy depending on evolution environment and ploidy. For instance, while almost all populations gained fitness in both YPD at 30 \u00b0C and YPD+ NaCl, the dynamics of fitness change differed based on evolution environment: populations evolved at 37 \u00b0C (orange lines in Figure 3) initially made substantial fitness gains in YPD+ NaCl sometimes followed by more significant gains in YPD at 30 \u00b0C, whereas the populations evolved in YPD at 30 \u00b0C (cyan lines) and YPD+ acetic acid (green lines) only gained substantial fitness in YPD+ NaCl after initial fitness increases in YPD at 30 \u00b0C (Figure 3\u2014animation 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig3-v2.jpg)\n\n**Figure 3.:** Axes correspond to fitness in the indicated assay environments. Colors correspond to evolution condition. Gray vertical and horizontal lines indicate zero fitness relative to an ancestral reference in each environment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Axes correspond to fitness in the indicated assay environments. Colors correspond to evolution condition. Gray vertical and horizontal lines indicate zero fitness relative to an ancestral reference in each environment.\n\nSeparately, these plots and those in Figure 2 highlight similarities and differences between the fitness trajectories of populations of different ploidy. Haploids and diploids evolved at 37 \u00b0C tend to show quite similar patterns of fitness evolution across alternate environments (Figure 2). There are, however, salient differences. For example, comparing fitness in YPD+ NaCl with fitness in YPD at 21 \u00b0C reveals haploid trajectories that are both more positive than diploid trajectories in 21 \u00b0C and more variable overall (Figure 3; Figure 3\u2014animation 1). The divergence of these pleiotropic trajectories is thus contingent on both the evolution environment and an organism\u2019s genomic architecture (Marad et al., 2018) and associated physiological differences.\n\n### Characteristic environment- and ploidy-specific pleiotropic profiles emerge over time\n\nTo understand the diversity of fitness trajectories across environments, we treated the fitness of each population across all five assay environments as a single \u2018pleiotropic profile\u2019. We then conducted principal component analysis across all these pleiotropic profiles to characterize variation between replicate populations, across different evolution environments, and over time.\n\nIn Figure 4A, we plot the first two principal components of each pleiotropic profile (which together consistently explain well over half the variance in the data [Figure 4\u2014figure supplement 2]) for populations from each of the six measured timepoints (Figure 4\u2014source data 1). We see that the populations separate over time into somewhat distinct clusters based on their evolution environment and ploidy. These clusters suggest that evolution in each environment leads to the formation of a characteristic environment- and ploidy-specific pleiotropic profile.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-v2.jpg)\n\n**Figure 4.:** (A) Principal component analysis of evolving populations, performed independently each 200 generations. The first two PCs are plotted. Populations are colored according to evolution condition. (B) Principal component analysis of all populations using all fitness data from across the 1000 generations. The first two PCs are plotted and explain 30% and 22% of the variance, respectively. (C) Plots of fitness trajectories in all five assay environments for eight example populations (a\u2013h, identified as points in (B)). (D) Population clustering in PCA by evolution condition over time. Clustering of each population was quantified as the number of five nearest neighbors that share the same evolution condition, for each 200-generation interval, and across all intervals. Clustering metrics were averaged for each evolution condition to calculate point estimates; error bars represent 95 % confidence intervals of the mean clustering metric, estimated by performing PCA on bootstrapped replicate fitness measurements.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) correspond to the same panels of Figure 4, except with analyses performed on the whole dataset including outlier populations. (C) is identical to Figure 4C. Principal component analyses presented in (A) and (B) can be found in and , respectively.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Variance explained by five principal components corresponding to the PCAs conducted for each generation interval in Figure 4A. (B) Variance explained by five principal components corresponding to the PCAs conducted for each generation interval in Figure 4\u2014figure supplement 1A.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Summed magnitudes of contributions of assay environments at each interval to the two principal components presented in Figure 4B. (B) Summed magnitudes of contributions of assay environments at each interval to the two principal components presented in Figure 4\u2014figure supplement 1B.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Clustering metrics were averaged for each evolution condition to calculate point estimates; error bars represent 95 % confidence intervals of the mean clustering metric, estimated by performing PCA on bootstrapped replicate fitness measurements.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Contributions of each assay environment to each principal component for PCAs on individual 200-generation fitness measurements (left, corresponding to Figure 4A) and on all 200-generation fitness measurements (right, corresponding to Figure 4B) with outlier populations excluded. (B) Same as in A but with outlier populations included.\n\nCharacteristic pleiotropic profiles can also be observed when running principal component analysis on the complete concatenated (but unordered) fitness data (i.e., with the pleiotropic profile of each population now defined as its fitness across all five assay environments at all six 200-generation timepoints, a total of 30 measurements [Figure 4\u2014figure supplement 5]) and plotting data according to the first two components, which explain 30% and 22% of total variance, respectively (Figure 4B, Figure 4\u2014source data 2). To provide an intuition for the meaning of distance and location in this principal component space, we show home and away environment fitness trajectories for select populations indicated in Figure 4B, C. The extent of evolution condition-specific clustering in this two-dimensional PCA is indicative of characteristic pleiotropic profiles (Figure 4C), and it appears comparable to that observed in analyses conducted independently for generations 600, 800, and 1000. This is unsurprising given the outsized weighting of later generations in each principal component (Figure 4\u2014figure supplement 3).\n\nTo more formally quantify the emergence of characteristic pleiotropic profiles over time in Figure 4A and B, we developed a simple clustering metric, which counts how many of a given population\u2019s five nearest neighbors belong to the same evolution condition on average. We see that the degree of clustering in this two-dimensional space rises appreciably until the 600-generation mark, at which point it plateaus (Figure 4D). The observed clustering from generation 200 onward is much greater than expected by chance, as is clustering for the total-data PCA shown in Figure 4B (compared to a null expectation constructed by randomly permuting the evolution condition assigned to each population; p < 0.001). Note that this trend is consistent when the number of neighbors in the analysis is lowered to 3 or elevated to 10 (Figure 4\u2014figure supplement 4). Thus, we observe the rapid emergence and later stabilization of general pleiotropic profiles characteristic to each evolution condition.\n\n### General trends contain significant variation, which varies with ploidy, environment, and time\n\nOur principal component analysis shows that replicate populations in each evolution condition tend to follow similar trends in fitness changes across environments, leading to characteristic environment-specific pleiotropic profiles. However, it is apparent from Figures 2 and 3 that there remains significant stochastic variability in the pleiotropic effects of adaptation among populations evolved in the same environment. For instance, populations evolved in the acetic acid environment splay out into all four quadrants when plotting fitness at 37 \u00b0C against fitness at 21 \u00b0C (Figure 3; Figure 3\u2014animation 1). This variability can also be seen in the wide dispersion of populations within clusters in Figure 4B, particularly among diploids evolved in the acetic acid environment and at 37 \u00b0C.\n\nWe find that these patterns of variability are structured, with specific evolution conditions fostering more variable outcomes in certain assay environments (Figure 5). For example, populations evolved in YPD+ acetic acid exhibit generally wider variation in home and away environments than populations evolved in other environments. While it is tempting to link this pattern to the large fitness gains these populations make in their home environment, we note that populations evolved in YPD at 30 \u00b0C also make significant correlated gains in YPD+ acetic acid without generating such variable results across other assay environments. This suggests that, with respect to the distribution of pleiotropic effects of fixed driver or hitchhiking mutations, paths to higher fitness in YPD+ acetic acid are qualitatively different for the populations evolved in YPD at 30 \u00b0C. In another example, while diploid and haploid populations evolved at 37 \u00b0C show similar variability in 37 \u00b0C, 30 \u00b0C, and YPD+ NaCl across the experiment, they experience more variable outcomes in YPD+ acetic acid and 21 \u00b0C, respectively. Together, these results suggest that the role for chance in the pleiotropic trajectories of evolving populations is contingent on the condition to which the population is adapted.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-v2.jpg)\n\n**Figure 5.:** (A) Box plots summarizing population mean fitness over time for each evolution condition (columns) in each assay environment (rows). Line, box, and whiskers represent the median, quartiles, and data within 1.5 \u00d7 IQR (interquartile range), respectively; outlier populations beyond whiskers are shown as points. (B) IQR from box plots in (A) are plotted as a function of time for each evolution condition and assay environment. IQR for fitness measured in home and away environments are represented by solid and dashed lines, respectively. Error bars represent 95 % confidence intervals of IQR calculated from bootstrapped replicate fitness measurements.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Box plots summarizing population mean fitness over time for each evolution condition (columns) in each assay environment (rows). Line, box, and whiskers represent the median, quartiles, and data within 1.5 \u00d7 IQR, respectively; outlier populations beyond whiskers are shown as points. (B) IQR from box plots in (A) are plotted as a function of time for each evolution condition and assay environment. IQR for fitness measured in home and away environments are represented by solid and dashed lines, respectively. Error bars represent 95 % confidence intervals of IQR calculated from bootstrapped replicate fitness measurements.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Brown\u2013Forsythe test p values for paired comparisons of fitness variance in home environment and away environment for populations evolved in each evolution condition (columns). White boxes correspond to invalid self-comparisons. p values represent a one-sided test in which the alternative hypothesis is that home variance is less than away variance. 0 < p < 0.05 (blue) indicates home variance significantly less than away variance. 0.95 \u2264 p < 1 (red) indicates home variance significantly greater than away variance. (A) Excluding outliers. (B) Including outliers. Figure 5\u2014source data 1 contains test statistics.\n\nIn addition, the variation in outcomes is a function of evolutionary time. While variation in fitness at home tends to remain relatively low over the course of 1000 generations (Figure 5A, bold black boxes; Figure 5B, thick solid lines), variation in away environments generally (if haltingly) increases over time, with a few exceptions. In other words, selection appears to suppress variation among trajectories in the home environment, at least on the timescales studied. To assess the statistical significance of these differences in variance, we used a one-tailed variant of a Brown\u2013Forsythe test to perform pairwise comparisons of home and away fitness variance among replicate lines evolved in a given condition at each evolution timepoint. Of the 80 nonancestral pairwise comparisons, over half (48/80) indicated significantly greater variance in the away environment (at a threshold of p < 0.05) and only six showed significantly greater variance at home (Figure 5\u2014figure supplement 2).\n\nThe role of stochasticity and temporal shifts in pleiotropic dynamics also can be seen in the relative nonmonotonicity of fitness trajectories in away environments compared to home environments. To assess nonmonotonicity, we interpolated fitness at 500 generations for each population in each assay environment and compared the 0- to 500-generation and 500- to 1000-generation fitness changes. Trajectories were considered nonmonotonic if fitness changes in these intervals were in opposite directions (Figure 6A, see shaded quadrants), reflecting pleiotropic effects that change in sign over time. We find that populations rarely possess clearly nonmonotonic trajectories in their home environment, whereas they much more commonly possess clearly nonmonotonic trajectories in away environments (4/153 [2.6%] home and 102/612 [16.7%] away trajectories, respectively; p < 0.0001, \u03c72 test) (Figure 6B). Many but not all of these monotonic trajectories (72/102, or 71%) reflect initially positive pleiotropic effects that become negative in the second half of the experiment, as we might expect if a population increasingly specializes to its home environment over time.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig6-v2.jpg)\n\n**Figure 6.:** (A) Each panel shows, for each of the five assay environments, the change in fitness over the first 500 (x-axis) and second 500 (y-axis) generations of evolution of each population in a given evolution environment. Error bars correspond to standard error. Populations that fall in shaded quadrants have trajectories that are nonmonotonic. Points corresponding to fitness in the home environment are colored more opaquely than points corresponding to fitness in away environments, and panel borders have been colored to match the home environment. Fitness at generation 500 has been interpolated. (B) Each panel corresponds to a given evolution environment and shows the proportion of populations evolved in that environment that exhibit clearly nonmonotonic fitness trajectories in (A). \u2018Clearly nonmonotonic\u2019 trajectories are those populations (points) in (A) that fall in the gray quadrants and whose error bars (one standard error in either direction) do not span either the x- or y-axis. As in (A), bars corresponding to the home environment are colored more opaquely than bars corresponding to away environments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70918/elife-70918-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Each panel shows\u2014for each of the five assay environments\u2014the change in fitness over the first 500 (x-axis) and second 500 (y-axis) generations of evolution of each population in a given evolution environment. Populations that fall in shaded quadrants have trajectories that are nonmonotonic. Points corresponding to fitness in the home environment are colored more opaquely than points corresponding to fitness in away environments, and panel borders have been colored to match the home environment. Fitness at generation 500 has been interpolated. (B) Each panel corresponds to a given evolution environment and shows the proportion of populations evolved in that environment that exhibit clearly nonmonotonic fitness trajectories in (A). \u2018Clearly nonmonotonic\u2019 trajectories are those populations (points) in (A) that fall in the gray quadrants and whose error bars (one standard error in either direction) do not span either the x- or y-axis. As in (A), bars corresponding to the home environment are colored more opaquely than bars corresponding to away environments. As with the outliers-excluded data, populations exhibit clearly nonmonotonic trajectories in away environments much more commonly than in home environments (p < 0.0001), with most of these reflecting initially positive pleiotropic effects.\n\n## Discussion\n\nTo characterize the dynamics of pleiotropy during adaptation, we evolved hundreds of diploid and haploid yeast populations in three environments for 1000 generations, and assayed their fitness in these and two other environments at 200-generation intervals. Our results offer insight into how pleiotropic effects emerge and change on an evolutionary timescale. Consistent with earlier work, we observe repeatable fitness trajectories across many replicate populations in their home environments, which follow a pattern of initial rapid fitness gains followed by declining adaptability over time. Replicate populations also tend to follow consistent fitness trajectories in away environments, whether gaining or losing fitness on average. Looking across populations and environments, characteristic patterns of pleiotropy specific to each evolution condition emerge rapidly and stabilize within about 600 generations.\n\nDespite these characteristic patterns, we also observe ample variability within these trends. Examining the fitness trajectories of populations individually, we find that about 17 % of away-environment trajectories are nonmonotonic, compared to just 3 % of home-environment trajectories. This nonmonotonicity is indicative of the sequential establishment of mutations with opposing pleiotropic effects in these populations. Meanwhile, across replicate populations, there is substantial variability in the pleiotropic consequences of evolution in each condition. Consistent with past work, we observe more variability in away than in home environments at the end of the experiment (Travisano and Lenski, 1996; Ostrowski et al., 2005). However, our results also reveal how populations can follow very different trajectories in arriving at these endpoint fitnesses. Diverse away-environment trajectories manifest as changes in the variance among replicate populations over time, with a general tendency for variance to increase over the course of the experiment.\n\nTogether, patterns of pleiotropy along with variability among replicate populations suggest an important and dynamic role for chance and contingency in the fates of populations evolving in environments that fluctuate in space and time. Whether populations trend toward specialist or generalist phenotypes will not simply reflect physiological constraints (Bono et al., 2017; Jerison et al., 2020). Rather, as we observe, mutational opportunities to move toward higher or lower fitness in alternate environments may be accessible at all times. Thus, the emergence of specialism or generalism will be a product of both the distribution of pleiotropic effects of mutations that establish and dynamical factors that influence the timescale, sequence, and likelihood of their fixation (e.g., epistasis, ploidy, clonal interference, mutation rate, and population size). For instance, while previous studies observe substantial specialization in high-salt environments (Jerison et al., 2020), here we observe general improvement in fitness in high-salt across evolution environments (Figure 2), which may be attributable to differences in the strain background or ploidy, the salt concentration used, or some combination of these factors.\n\nFurthermore, the timescale over which pleiotropic effects emerge and change will interact with patterns of environmental fluctuations to determine evolutionary outcomes. In the conditions studied here, we observe that pleiotropic profiles generally emerge early and stabilize by 600 generations. Independent of other dynamical consequences of the rate of environmental change (Cvijovi\u0107 et al., 2015), it is therefore likely that fluctuations on longer timescales (e.g., longer than 600 generations in this system) will lead to qualitatively different outcomes than fluctuations on shorter timescales. Our data show that both the average and variance in these outcomes will also depend critically on the specific sequence of environments experienced by a population.\n\nThese results underscore the need for further empirical and theoretical work to understand patterns of pleiotropic effects over time and their effects on evolutionary trajectories. Additional experiments will be required to describe how general pleiotropic trends and variability within these trends arise and shift across a wider array of environments, as well as in different model systems. Likewise, studies of pleiotropy in populations evolved for longer periods, such as those described by Johnson et al., 2021, may provide a richer perspective on the repeatability, diversity, and stability of pleiotropic trajectories. Finally, this work motivates further theoretical inquiry into how the dynamics and variability of pleiotropic effects will interact with other important parameters \u2013 such as patterns of environmental fluctuation, mutation rate, sexual recombination, and the underlying distributions of fitness effects \u2013 to influence evolutionary outcomes. Integrating empirical datasets like the one presented here with such theoretical insight will enable better prediction of adaptation in complex environments.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>YCB140B</td>\n      <td>This paper</td>\n      <td>MATa, his3\u03941, leu2\u03940, lys2\u03940, RME1pr::ins-308A, ycr043c\u03940::NatMX, can1::STE2pr_SpHIS5_STE3pr_LEU2, ybr209w::GAL10pr-CRE, trp1\u0394, URA3::STE5pr_URA3, HO::CgTRP1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Saccharomyces cerevisiae)</td>\n      <td>YCB137A</td>\n      <td>This paper</td>\n      <td>MAT\u03b1, his3\u03941, leu2\u03940, lys2\u03940, RME1pr::ins-308A, ycr043c\u03940::NatMX, can1::STE2pr_SpHIS5_STE3pr_LEU2, ybr209w::GAL10pr-CRE, trp1\u0394, URA3::STE5pr_URA3, HO::CgTRP1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Barcoding plasmid landing pad 1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid map in Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Barcoding plasmid landing pad 2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Plasmid map in Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Illumina sequencing primers</td>\n      <td>IDT</td>\n      <td></td>\n      <td>Sequences listed in Supplementary file 4</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Zymolyase 20T</td>\n      <td>Nacalai Tesque</td>\n      <td>Zymolyase 20T</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom code</td>\n      <td>This paper</td>\n      <td></td>\n      <td>https://github.com/amphilli/pleiotropy-dynamics</td>\n    </tr>\n  </tbody>\n</table>\n\n### Strain generation\n\nStrains in this study are derived from YAN404 and YAN407 (Nguyen Ba et al., 2019), which were constructed on the BY4742 background (S288C: MAT\u03b1, his3\u22061, ura3\u22060, leu2\u22060, lys2\u22060) to add the RME1pr::ins-308A mutation, meant to improve transformation efficiency in both the MATa and MAT\u03b1 cell types. Several additional modifications were made to enable proper barcoding, mating, and selection, as stated in Supplementary file 1. Ultimately, YCB140B and YCB137A (and YCB140B \u00d7 YCB137A mated diploids) were used to found the populations evolved in this experiment.\n\n### Barcode plasmid design and integration\n\nOur barcoding system uses two different landing pad types, hereafter referred to as type 1 and type 2. Both plasmids had a pUC origin and ampicillin resistance cassette in the vector backbone. The inserts into this 1998 bp backbone were 6728 and 6384 bp, respectively, with ~450 bp homology to the regions flanking the CgTrp1 in the HO locus on either side. Between these flanking regions were modified versions of the KanMX and CAN1 genes, as well as a ccdB gene that is toxic to sensitive E. coli strains. Many other components, including lox sites, artificial introns, and unexpressed TRP1 genes, were also present in these plasmids, and the entirety of the annotated plasmids can be viewed in Supplementary files 2 and 3. These extraneous elements \u2013 both in the plasmids and in our strain backgrounds \u2013 were included to enable capabilities that ultimately were not harnessed for the purposes of this study, such as mating, sporulation, and the inducible and selectable Cre-driven recombination of barcodes.\n\nTo generate diversely barcoded plasmid libraries, we cloned oligonucleotides containing random nucleotides into the type 1 and type 2 plasmids via a Golden Gate reaction (Engler et al., 2008). This reaction replaced the ccdB gene in the plasmid. The barcoded plasmids were transformed via electroporation into ccdB-sensitive E. coli. Barcoded plasmids were then purified from these transformants using the Geneaid Presto Mini Plasmid Kit (Cat. No. PDH300).\n\nTo barcode ancestral YCB137A and YCB140B strains, we took advantage of PmeI restriction endonuclease sites on either side of the HO homology regions of the plasmid, cutting and transforming (Gietz, 2015) into the HO locus and replacing the CgTRP1 gene.\n\nTo select for successful haploid yeast transformants, we used 200 \u00b5g/ml G418 (GoldBio, G-418), following up with a screen in SD-Trp (1.71 g/l Yeast Nitrogen Base Without Amino Acids and Ammonium Sulphate [Sigma-Aldrich, Y1251], 5 g/l ammonium sulfate [Sigma-Aldrich, A4418], 20 g/l dextrose [VWR #90000-904], 0.1 g/l L-glutamic acid [Sigma-Aldrich, G1251], 0.05 g/l L-phenylalanine [Sigma-Aldrich, P2126], 0.375 g/l L-serine [Sigma-Aldrich, S4500], 0.2 g/l L-threonine [Sigma-Aldrich, T8625], 0.01 g/l myo-Inositol [Sigma-Aldrich, I5125], 0.08 g/l adenine hemisulfate salt [Sigma-Aldrich, A9126], 0.035 g/l L-histidine [Sigma-Aldrich, H6034], 0.11 g/l L-leucine [Sigma-Aldrich, L8000], 0.12 g/l L-lysine monohydrate [Acros Organics, CAS: 39665-12-8], 0.04 g/l L-methionine [Sigma-Aldrich, M9625], 0.04 g/l uracil [Sigma-Aldrich, U1128]). After ~25 generations of selection in liquid media, strains auxotrophic for tryptophan and resistant to G418 were arrayed into plates for experimental evolution.\n\nOther successful transformants (of the same landing pad type) were mated to form diploids, which were selected for resistance to 300 \u00b5g/ml hygromycin B (GoldBio, H-270), 100 \u00b5g/ml nourseothricin sulfate (GoldBio, N-500), 200 \u00b5g/ml G418, and 1 mg/ml 5-fluoroorotic acid monohydrate (Matrix Scientific, CAS: 220141-70-8) in S/MSG D media (1.71 g/l Yeast Nitrogen Base Without Amino Acids and Ammonium Sulphate, L-glutamic acid monosodium salt hydrate [Sigma-Aldrich, G1626], 20 g/l dextrose, 0.1 g/l L-glutamic acid, 0.05 g/l L-phenylalanine, 0.375 g/l L-serine, 0.2 g/l L-threonine, 0.01 g/l myo-Inositol, 0.08 g/l adenine hemisulfate salt, 0.035 g/l L-histidine, 0.11 g/l L-leucine, 0.12 g/l L-lysine monohydrate, 0.04 g/l L-methionine, 0.04 g/l uracil, 0.08 g/l L-tryptophan [Sigma-Aldrich, T0254]) for ~25 generations prior to arraying into 96-well plates alongside haploids for experimental evolution.\n\n### Experimental evolution\n\nBarcoded yeast were used to found 192 MATa, 192 MAT\u03b1, and 162 diploid populations for evolution, respectively (though most haploid populations were excluded from further analysis due to the fixation of autodiploids). Each population was founded by a uniquely barcoded single colony or uniquely barcoded colonies that were then mated to form a diploid (see \u2018Strain generation\u2019), and was subsequently propagated in a well of an unshaken flat-bottom polypropylene 96-well plate in one of three conditions: YPD (1 % Bacto yeast extract [VWR #90000-726], 2 % Bacto peptone [VWR #90000-368], 2 % dextrose) at 30 \u00b0C, YPD at 37 \u00b0C, and YPD +0.2 % acetic acid (Sigma Aldrich #A6283) at 30 \u00b0C (128 \u00b5l/well). Each 96-well plate contained diploid and haploid populations of both mating types (with each mating type occupying one side of the plate) and five empty wells to monitor for potential cross contamination. With the exception of the YPD at 37 \u00b0C condition, the evolution conditions were arranged in a checkered pattern on each 96-well plate to minimize potential plate effects. Daily 1:210 dilutions (bottleneck ~104 cells) were performed using a Biomek-FX pipetting robot (Beckman-Coulter) after thorough resuspension by shaking on a Titramax 100 orbital plate shaker at 1200 rpm for at least 1 min. Populations underwent daily transfers for ~1000 generations (~10 generations/day); every 50 generations, populations were mixed with glycerol to a final concentration of 8 % for long-term storage at \u221280 \u00b0C. No contamination of blank wells was observed over the course of the evolution experiment. One of the 96-well plates was dropped at generation 170 and evolution was resumed by thawing and reviving populations from the generation 150 archive; thus, all future archives of populations on this plate lagged 40 generations behind the populations on all other plates.\n\n### Population growth curve and bottleneck size measurements\n\nGrowth curves were observed and population bottleneck sizes were determined for two haploid and two diploid ancestral clones in each of the evolution and assay environments. Clones were first preconditioned in each environment for 20 generations (except for the 21 \u00b0C environment, in which preconditioning was performed for 10 generations). Following preconditioning, cultures were serially diluted and spotted onto YPD-agar to determine the population bottleneck size (Figure 1\u2014source data 1). To measure growth rate, the same preconditioned cultures were diluted 1:210 in technical duplicate in 96-well plates and shaken on a Titramax 100 orbital plate shaker at 1200 rpm for 1 min, as in the evolution experiment (see above). Plates were then sealed with a breathable membrane (VWR #60941-086) and loaded into a Biotek Epoch 2, and relative absorbance measurements (600 nm) were made for 24 hr (48 hr for the 21 \u00baC environment) at an interval of 20 min, preceded by 2 min of linear shaking at maximum speed. Following the 24 (or 48)-hr period of absorbance measurements, cultures were diluted and spotted onto YPD-agar to quantify the final cell density. Relative absorbance measurements and cell densities are provided in Figure 1\u2014source data 1 and the corresponding growth curves are plotted in Figure 1\u2014figure supplement 2. We note that for the 21 \u00baC evolution environment, the growth rate was actually measured at 24 \u00baC due to practical constraints.\n\n### Nucleic acid staining for ploidy\n\nPopulations frozen at generation 1000 of the evolution experiment were thawed and revived by diluting 1:25 in YPD. The following day, saturated cultures were diluted 1:20 into 120 \u00b5l of sterile water in round-bottom polystyrene 96-well plates. Plates were centrifuged at 3000 \u00d7 g for 3 minutes, the supernatant was removed, and cultures were resuspended in 50 \u00b5l sterile water. 100 \u00b5l of ethanol was added to each well, the cultures were mixed thoroughly and placed at 4 \u00b0C overnight. The following day, the cultures were centrifuged, the ethanol solution was removed, and 65 \u00b5l RNase A (VWR #97062-172) solution (2 mg/ml RNase A in 10 mM Tris\u2013HCl, pH 8.0 + 15 mM NaCl) was added to each well and the cultures were incubated at 37 \u00b0C for 2 h. Then 65 \u00b5l of 300 nM SYTOX green (Thermo Fisher Scientific, S-34860) was added to each well and the cultures were mixed and incubated at room temperature in the dark for 30 min. Fluorescence was measured by flow cytometry on a BD LSRFortessa using the FITC channel (488 nm). Ploidy was assessed by comparing the fluorescence distributions of evolved populations to known haploid and diploid controls of the same strain. By generation 1000, all 192 MATa populations had autodiploidized, and 172 of the MAT\u03b1 populations had autodiploidized, as judged by the absence of a clear haploid peak. Only the remaining 20 haploid MAT\u03b1 populations were included in the BFAs described below.\n\n### Bulk fitness assays\n\nPopulations frozen at generations 0, 200, 400, 600, 800, and 1000 of the evolution experiment were thawed by diluting 1:25 in YPD. The following day, once these cultures had grown to saturation, equivalent volumes of each population were pooled by ploidy for each generation (12 pools total). For the haploid populations, evolved populations were only pooled if they were verified to be haploid at the end of the evolution experiment (see \u2018Nucleic acid staining for ploidy\u2019). Each of the haploid pools was spiked with five uniquely barcoded ancestral reference strains of the same mating type at 4\u00d7 the volume of each evolved population; each of the diploid pools was spiked with 10 reference strains at 4\u00d7 the volume of each evolved population. The resulting pools comprised time point zero for the BFA and were diluted 1:210 in the appropriate media (described below) and divided between 16 wells (128 \u00b5l/well) of flat-bottom polypropylene 96-well plates. The BFA was performed in each of the three evolution environments (YPD at 30 \u00b0C, YPD at 37 \u00b0C, and YPD +0.2 % acetic acid at 30 \u00b0C), in addition to two novel environments (YPD at 21 \u00b0C and YPD +0.4 M NaCl at 30 \u00b0C). The 16 wells of each pool comprised two technical replicates of 8 wells. Every 24 hr (or every 48 hr in the case of the YPD 21 \u00b0C environment) the populations were resuspended by shaking on a Titramax 100 orbital plate shaker at 1,200 rpm for at least 1 min and the contents of the eight wells constituting each replicate were combined, mixed, and diluted 1:210 into eight new wells using a Biomek-FX pipetting robot (Beckman-Coulter). This split-pool strategy was designed to mimic the evolution conditions while maintaining sufficient diversity for bulk fitness measurements. At BFA timepoints 0, 10, 30, and 50 generations, 1 ml of the diploid pool was combined with 200 \u00b5l of the haploid pool for each generation, this culture was centrifuged at 21,000 \u00d7 g for 1 min, the supernatant was removed, and the pellet was stored at \u221220 \u00b0C for downstream DNA extraction and sequencing.\n\n### Sequencing library preparation\n\nGenomic DNA was extracted from cell pellets using zymolyase-mediated cell lysis (5 mg/ml Zymolyase 20T (Nacalai Tesque), 1 M sorbitol, 100 mM sodium phosphate pH 7.4, 10 mM EDTA, 0.5 % 3-(N,N-dimethylmyristylammonio)propanesulfonate (Sigma T7763), 200 \u00b5g/ml RNase A, 20 mM DTT), binding on silica columns (IBI scientific, IB47207) with 4 volumes of guanidine thiocyanate (4.125 M guanidine thiocyanate, 100 mM MES pH 5, 25 % isopropanol, 10 mM EDTA), washing with wash buffer 1 (10% guanidine thiocyanate, 25 % isopropyl alcohol, 10 mM EDTA) and wash buffer 2 (20 mM Tris\u2013HCl pH 7.5, 80 % ethanol), and eluting in 50 \u00b5l 10 mM Tris pH 8.5, as previously described (Nguyen Ba et al., 2019). Two rounds of PCR were performed to generate amplicon sequencing libraries for sequencing the barcode locus. In the first round of PCR, the barcode locus was amplified with primers containing unique molecular identifiers (UMI), generation-specific inline indices, and partial Illumina adapters (see Supplementary file 4 for primer sequences). This 20 \u00b5l 10-cycle PCR reaction was performed using Q5 polymerase (NEB M0491L) following the manufacturer\u2019s guidelines, using 10 \u00b5l (~250 ng) of gDNA as template, annealing at 54 \u00b0C, and extending for 45 s. The first-round PCR products were then purified using one equivalent volume of DNA-binding beads (Aline Biosciences PCRCleanDX C-1003-5) and eluting in 33 \u00b5l 10 mM Tris pH 8.5. In the second-round PCR, the remainder of the Illumina adapters and sample-specific Illumina indices were appended to the first-round PCR products (see Supplementary file 4 for primer sequences). The second-round PCR was performed using Kapa HiFi HotStart polymerase (Kapa Bio KK2502) following the manufacturer\u2019s guidelines for a 25 \u00b5l reaction, using 17.25 \u00b5l of first-round PCR product, annealing at 63 \u00b0C and extending for 30 s for 26 cycles. The second-round PCR products were then purified using one equivalent volume of DNA-binding beads and eluting in 33 \u00b5l 10 mM Tris pH 8.5. Following bead cleanup, the concentration of the PCR products was quantified using the Accugreen High Sensitivity dsDNA Quantitation Kit (Biotium 31068). Sequencing libraries were then pooled equally and sequenced on a NextSeq500 Mid flow cell (150 bp single-end reads).\n\n### BFA barcode enumeration and fitness inference\n\nLineage fitnesses were inferred from the concatenated sequencing data yielded by two separate NextSeq500 Mid flow cells (150 bp single-end reads). The second of these two runs allowed for deeper sequencing of specific BFA timepoints to enable superior determination of barcode frequencies associated with less fit lineages in certain environments. The second run also allowed sequencing of libraries that were omitted from the first run.\n\nOnce fastq files were concatenated, barcode information was extracted as described below. However, in addition to subjecting the barcode regions to error-tolerant \u2018fuzzy\u2019 matching based on regular expressions, we allowed for fuzzy matching of the epoch-specific inline indices. For the indices, we applied a list of decreasingly strict regular expressions, looking for exact matches, then one mismatch, then two mismatches. For the indices associated with epochs 6, 8, and 10, which were longer than the indices associated with epochs 0, 2, and 4, we allowed up to three mismatches.\n\nThen, as with the barcode association mapping, we used a previously described \u2018deletion-error-correction\u2019 algorithm (Johnson et al., 2019) to correct errors in barcode sequences induced by library preparation and sequencing.\n\nTo check for cross-contamination between wells during library preparation and index-hopping during sequencing, we searched for reads where the inline index was inconsistent with the associated pairs of Illumina indices. In almost all cases, we found little evidence of cross contamination ( << 1%). In one case, corresponding to landing pad type 2 of the 30 \u00b0C replicate 2 BFA 10-generation timepoint for generation-1000 populations, we found that 11,484 of the 258,462 reads (4.4%) included the inline index associated with the generation-200 populations. We removed all apparently cross-contaminating reads from our analysis.\n\nThen, we summed reads associated with all barcodes in a given population, since some populations contained more than one unique barcode (or, in the case of diploids, more than two unique barcodes). In addition, some barcodes were present in the BFAs that could not be confidently assigned to a single well, representing 0.3 % of all reads. These were summed together and retained in the dataset.\n\nTo determine the fitness of each population over time and across environments and technical replicates, we measured the log-frequency slope for each population in two intervals: between assay timepoints 10 and 30 and between timepoints 30 and 50 generations. Frequencies were calculated separately for each landing pad type. We scaled these values of fitness (s) by subtracting out the corresponding median log-frequency slope of a set of between 2 and 5 reference ancestral populations of each ploidy and landing pad type, which were included in every BFA to allow comparisons of fitness across the evolutionary time course. The source data file indicates these reference populations. For a given BFA and interval, s values only were calculated this way if the mean number of reads for the reference populations was greater than 5. If not, these intervals were excluded from subsequent analysis.\n\nTo determine s values for each population in each environment at each generation, interval-specific s estimates were averaged. Then, s estimates from each of the two technical replicates were averaged, producing a final s estimate. The standard error of this final s estimate was calculated from the two technical replicate s estimates.\n\nTo clarify our downstream analyses, we excluded 19 outlier diploid populations whose ancestors differed from the mean ancestral fitness by at least 4 % in at least one environment. We believe we see such divergent ancestral fitness values due mutations that emerged during the process of selecting colonies, mating, and performing purifying selection for ~50 generations on barcoded transformants immediately prior to evolution.\n\nTo account for the offset in plate two progress through evolution, plate two population fitness estimates for 200, 400, 600, and 800 generations were linearly interpolated from fitnesses on either side, e.g., gen 200 fitness inferred from gen 160 and gen 360 fitnesses. Fitness estimates for gen 1000 were extrapolated linearly from gen 760 and gen 960 fitnesses. The standard error of the s estimate for gen 160 was used for gen 200 fitness, the standard error of s for gen 360 was used for gen 400 fitness, and so on.\n\n### Barcode association\n\nTo map barcodes to wells of the evolution experiment, we pooled ancestral strains in equal volumes from across the eight evolution plates, creating three sets of pools: column-specific pools (n = 12), row-specific pools (n = 8), and plate-specific pools (n = 8). We then lysed portions of these pools by diluting in yeast lysis buffer 1 mg/ml Zymolyase 20T, 0.1 M sodium phosphate buffer pH 7.4, 1 M sorbitol, 10 mg/ml SB3-14 (3-(N,N-dimethylmyristylammonio)propanesulfonate [Sigma T7763]) at 37 \u00b0C for 1 hr and 95 \u00b0C for 10 min. Two rounds of PCR were then performed to generate amplicon sequencing libraries for sequencing the barcode locus (both landing pad versions). In the first round, the barcode locus was amplified via a 10-cycle PCR reaction with Kapa HiFi HotStart polymerase (Kapa Bio KK2502), annealing at 58 \u00b0C for 30 s and extending at 72 \u00b0C for 30 s, with a final 10 min extension. PCR products were then purified using one equivalent volume of DNA-binding beads and eluting in 20 \u00b5l water. Following bead purification, a second-round PCR reaction was performed using 1.5 \u00b5l of each of a unique pair of Illumina indices (see Supplementary file 4 for primer sequences) with Kapa HiFi Hotstart ReadyMix (2\u00d7) in a 15 \u00b5l reaction, with 4.5 \u00b5l of first-round PCR product as template, annealing at 61 \u00b0C and extending for 30 s for 30 cycles. The second-round PCR products were then purified using 0.8\u00d7 DNA-binding beads (Aline Biosciences PCRClean DX C-1003-5), washed 2\u00d7 with 80 % ethanol and eluted in 50 \u03bcl of molecular biology-grade water. Following bead cleanup, the concentration of the second-round PCR products was quantified using the Accugreen High Sensitivity dsDNA Quantitation Kit (Biotium 31068). These libraries were then normalized, pooled, and sequenced on a NextSeq500 High flow cell (150 bp paired-end reads).\n\nTo extract barcode information from sequencing reads, we followed Johnson et al., 2019, using a list of decreasingly strict regular expressions (using the python regex module https://pypi.org/project/regex/). For landing pad 1, this was:\n\nThen, after parsing and tallying barcodes in each sequencing library, we used the \u2018deletion-error-correction\u2019 algorithm described by Johnson et al., 2019 to correct errors in barcode sequences induced by library preparation and sequencing.\n\nTo triangulate the position of each barcode across the eight plates, for each error-corrected barcode that appeared in the sequencing data, we tabulated which barcodes were present in which libraries, and how many reads were associated with each barcode in each library. These data allowed us to determine the wells in which barcodes belonged.\n\n### Changes in fitness analysis\n\nTo summarize changes in fitness at each generation since the beginning of the experiment, we assessed the fraction of populations in each assay environment and evolution condition that had increased in fitness, decreased, or remained the same. To categorize a population in one of these three categories, we performed a Welch\u2019s unequal variances t-test comparing the fitness of that population in a given assay environment at 0 generations to the fitness of that population at 200, 400, 600, 800, or 1000 generations. Since each fitness measurement is the result of two independent technical replicate measurements, we treated each as the mean of two observations. If the fitness at the later timepoint was greater than the ancestral fitness, we applied a one-sided test to determine whether that difference was significant. We did the converse one-sided test for populations that appeared to have declined in fitness. Populations for which we rejected the alternate hypothesis were considered to have maintained the same fitness (i.e., \u2018equally fit\u2019).\n\n### IQR variability analysis\n\nFitness variability was examined by plotting box-and-whisker plots of population mean fitness values, where the line, box, and whiskers represent the median, quartiles, and data within 1.5 \u00d7 IQR, respectively, and outlier populations beyond whiskers are shown as points (Figure 5A). To compare the resulting IQR for various evolution conditions and fitness assay environments, 95 % confidence intervals of the IQR were calculated from bootstrapped interval-specific replicate s measurements (Figure 5B).\n\nTo evaluate whether home environment fitness variance was less than away environment fitness variances at each evolution timepoint, we applied a Brown\u2013Forsythe test (Brown and Forsythe, 1974). Since this test is typically a two-tailed test, and we wanted instead to employ a one-tailed test, we used the z scores from the Brown\u2013Forsythe test to arrive at a two-tailed t-statistic. We could then obtain a one-tailed p value with this t-statistic, evaluated at N \u2212 1 degrees of freedom, where N is the number of populations in consideration. No multiple hypothesis testing correction was applied.\n\n### Principal components analysis\n\nAll principal components analysis excluded ancestral reference populations. To minimize the influence of varying scales of data features on the analysis, fitness values for each field \u2013 corresponding to fitness in a given assay environment, possibly at a specific evolutionary timepoint \u2013 were standardized to have a mean of 0 and standard deviation of 1 using the scikit-learn StandardScaler function. We then used the scikit-learn PCA() function.\n\n### Clustering metric\n\nTo quantify the degree of clustering by evolution condition in the two-dimensional principal component analyses, the NearestNeighbors algorithm in the scikit-learn python package was implemented to identify the five nearest neighbors for each population in the two-dimensional PC1 versus PC2 plots (Figure 4A and B). The clustering metric plotted in Figure 4D is the number of five nearest neighbors that belong to the same evolution condition as the focal population, averaged for each evolution condition. Error bars represent 95 % confidence intervals of the mean clustering metric, which were calculated by performing the PCA and clustering analysis on bootstrapped interval-specific replicate s measurements. The null expectation for populations to cluster by evolution condition was computed by permuting the evolution condition 1000 times and calculating the clustering metric as described above. The true mean clustering metrics were then compared to this null expectation by calculating a multiple testing-corrected p value, computed as the percentage of permutations for which the clustering metric was greater than the true mean for a given evolution environment.\n\n### Nonmonotonicity analysis\n\nTo assess nonmonotonicity, we linearly interpolated fitness at 500 generations for each population in each assay environment. We achieved the interpolated standard errors in fitness by taking the square root of the sum of the squares of the errors associated with the fitnesses used in the interpolation and dividing by two. For evolution plate two populations, which were offset from the others by 40 generations, we took a weighted average for the interpolation (500 generation fitness estimate) and extrapolation (1000 generation fitness estimate) steps. For the 500 generation fitness standard error estimate, we adapted this weighting approach for the standard error propagation as described for the other populations. For the 1000 generation fitness standard error estimate, we used the error assigned to the generation 960 fitness estimate. Then, we calculated the change in fitness (\u2206s) between 0 and 500 generations and between 500 and 1000 generations for each population in each environment, where the standard error of \u2206s is propagated from the standard error of the two fitnesses used in the calculation as the square root of the sum of the squared errors. Finally, we plotted these \u2206s values as x\u2013y coordinates. If a point and its error bars were completely within the top-left or lower-right quadrant \u2013 corresponding to an increase followed by a decrease, or a decrease followed by an increase, over the 1000-generation experiment \u2013 these were considered to be \u2018clearly nonmonotonic\u2019. We applied a \u03c72 test with 1 degree of freedom to evaluate the significance in the difference in the frequency of nonmonotonicity in home versus away trajectories.\n\n### Declining adaptability analysis\n\nTo assess the extent of declining adaptability among populations in their home environments, we calculated the difference in fitness for each population between 0 and 400 generations and between 600 and 1000 generations. Standard errors for these differences were calculated as the square root of the sum of the squares of the standard errors associated with the fitness estimates from each generation. Across the populations, we then compared the mean fitness change in each interval using a one-sided t-test, in which the alternate hypothesis was that the fitness increase in the first 400 generations was greater than the increase in the final 400 generations of the experiment.\n",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "b796ec4b-ebc3-42df-8017-7a74d421e009",
+      "submission_id": "a3b29ae1-fd38-49b6-b30f-ce8408c09b4c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vaughn S Cooper, University of Pittsburgh United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70918.sa1](https://doi.org/10.7554/eLife.70918.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nWhen populations adapt to one environment, their fitness in that environment will increase but effects in other environments, known as pleiotropy, are unclear over longer time scales. Using a technically innovative and ambitious experimental design with evolving yeast populations, the authors show that patterns of pleiotropy depend on the evolution environment and these patterns can change over relatively short timescales. They also find a surprising amount of variation among experimental replicates that increases over time, so generalism or specialism is not deterministic.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dynamics and variability in the pleiotropic effects of adaptation in laboratory budding yeast populations\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Vaughn Cooper as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: G. Ozan Bozdag (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions (for the authors):\n\n1) All 3 reviewers found the experimental design and data intriguing, but struggled to find a clear take-home message. Most of the major suggestions in the following reviews aim to remedy this weakness. As one example, can you describe in more detail the relatively uncommon dynamics in which local adaptation corresponds to a significant decline in fitness in an away environment, such as the acetic acid populations in high- and low-temperature environments? These exceptions might prove valuable.\n\n2) Please clarify the population sizes, because it is curious that no-stress and stressful conditions are equivalent. This might help our understanding of chance effects on within-group variation.\n\n3) Please show how the ancestor's growth is affected by stressful conditions. If they were chosen because they generate distinct environments, what was this evidence and what is the extent of these effects?\n\nReviewer #1 (Recommendations for the authors):\n\nThe work appears to be elegant and sound, so I have nothing much to recommend in the way of more experiments. Rather I think the results (to some degree) and the discussion can help from more explicative and declarative summaries of the major findings, with an eye towards broader significance or any particular surprises you noted. This may require additional analyses of data subsets that demonstrate these novelties, but it's hard for me to pick one beyond the effects of ploidy that I mentioned.\n\nReviewer #2 (Recommendations for the authors):\n\nWhile the manuscript is generally well-written and well-supported, I have one concern.\n\n1. The authors claim that the observations in Figure 2 are consistent with the trend of declining adaptability observed in many previous studies. While this claim appears to be visually supported in the YPD+Acetic acid populations, this trend is not obvious in the other three evolution treatments (YPD, YPD 37C diploids and YPD 37C haploids). There also does not appear to be any formal statistical analysis supporting this claim. While this claim is not central to the manuscript, I would appreciate some statistical support for this statement.\n\nReviewer #3 (Recommendations for the authors):\n\n#1 The scale of the experiment is quite impressive. However, none of the treatment groups evolved a specialist phenotype -i.e., defined with the evolution of a pleiotropic outcome where replicate populations as a whole start to lose against their ancestor in an alternate environment. There is one case where adaptation to acetic acid corresponds to a decline in median fitness in low-temperature, but this is not true for all populations as some gain fitness in the away environment. It would have been fascinating to observe the dynamics of specialization in an experimental setup like this (e.g., is there a monotonic or a fluctuating decline in fitness in the away environment?). Considering the large scale of these experiments, I will not advise testing the temporal dynamics of pleiotropy across other away environments (e.g., low or high pH, galactose) with the hope of discovering an away environment where there is a corresponding cost of adaptation. However, I still would prefer authors to look at some instances where local adaptation corresponds to a significant decline in fitness in an away environment. A large number of the acetic acid populations show a fitness decline in high- and low-temperature environments. Extracting this data and discussing the trends in the evolution of fitness costs would be pretty valuable.\n\n#2 A numerical summary of the pleiotropic outcomes is worth considering. For instance, how many populations showed higher relative fitness gains in an away environment, how many populations showed a decline in relative fitness in an away environment, and how many populations showed similar relative fitness outcomes between the home and an away environment. Doing this comparatively for generation-200 and generation-1000 would be interesting. The number of replicate populations is a strength of this study, and such a numerical summary would be helpful for a potential future review paper summarizing the results of pleiotropy papers.\n\n#3 Jerison et al., (2020) lately tested the pleiotropic consequences of local adaptation using the same model organism for 700 experimental evolution. They report that specialization is common in high salt (!) and low and high pH environments. However, here we see a contradictory result for the high salt environment. Instead of a decrease, there is an increase in fitness across all evolution treatments. It would have a general value to discuss this contrasting outcome in the sign of pleiotropic effects despite the growth of the same model organism under quite similar growth conditions. The authors say that they chose these environments to facilitate comparisons with previous studies in yeast, but they do not come back to this point.\n\n#4 The pleiotropy is tested in three (plus two) different environments. The difference among environments is a crucial part of an article that focuses on pleiotropy. These environments are said to be different as they are supposed to apply distinct types of stress. Therefore, it is necessary to quantify the negative effect of stress on an ancestral population, ideally with a small-scale relative fitness assay or a growth curve measurement in the same well-plate setup (e.g., YPD+0.2% acetic acid vs. YPD).\n\nThe authors cite two papers regarding the choice of these stressful environments. However, I could not find a quantitative assay reporting the effect of stress in those papers (e.g., see Methods section in Jerison et al., 2020).\n\n#5 The study reports a large variability in pleiotropic effects. It would be beneficial to report the population size and bottleneck size for each condition, at least for the early stages of this experiment. The demographic differences would affect the interplay between drift and selection differently across the evolution treatments, potentially providing more insights about the results.\n\nFollowing this, the authors report a daily bottleneck of 10,000 cells for each environment (each culture is transferred by the pipetting robot). It means that there is no difference in population size at saturation across environments. If this is true, the stress conditions do not negatively affect the ancestral population. Alternatively, the population size estimates do not represent the reality of each environmental condition (e.g., high temperature is expected to impact the growth). Therefore, I recommend carefully measuring the bottleneck size in five conditions for a few founder clones, and if Ne values are significantly different, please report the outcome in the main text.\n\n#6 The study presents a large dataset and numerous plots, with varying outcomes for most experiments (# of plots: 20 in Figure 2, 10 in Figure 3, 16 in Figure 4, 24 in Figure 5, 8 in Figure 6). However, it is laborious to connect all those different visual information with a take-home message in the end. Of course, the Discussion section summarizes the results nicely, but the paper would still benefit from a graphical, conceptual summary. For instance, using the plots in Figure 3 as a template (i.e., comparing fitness trajectories in-home vs. away environment) and/or Figure 4A, it would be nice to summarize the most important findings of this work. A conceptual summary that focuses on the characteristic and uncharacteristic findings of the study and how that changes the way we understand pleiotropy.\n\n#7 Figure 2 shows the temporal dynamics of fitness change. Even though each plot has a bold black line showing the median fitness, it is hard for the reader to compare relative fitness at time-0 and time-1000 quantitatively. Despite that large variability across populations, it would still be valuable to report the median relative fitness at the final time point in the main text. Looking at Figure 2, it is not possible to tell whether populations evolving in high temperatures reach a higher fitness than their ancestor. For instance, see Figure 1 in Jerison et al., 2020 for a nice graphical summary.\n",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08f98491-06d0-4813-b54b-36158bc3358f",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C1",
+      "claim": "152 diploid yeast populations were experimentally evolved for about 1000 generations in one of three different environments (48 populations in rich media (YPD) at 30\u00b0C, 54 populations in YPD +0.2% acetic acid at 30 \u00b0C, and 50 populations in YPD at 37\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "To study the dynamics of the pleiotropic consequences of adaptation, we experimentally evolved 152 diploid yeast populations for about 1000 generations in one of three different environments (48 populations in rich media (YPD) at 30\u00b0C, 54 populations in YPD +0.2% acetic acid at 30 \u00b0C, and 50 populations in YPD at 37\u00b0C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of populations evolved and the specific environments used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "340c166d-cd7b-4231-8630-aa6b065d28e5",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C2",
+      "claim": "20 haploid (MAT\u03b1) yeast populations were evolved in YPD at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we evolved 20 haploid (MAT\u03b1) yeast populations in YPD at 37\u00b0C; these are a subset of populations that did not autodiploidize from a larger haploid evolution experiment (see Methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of haploid populations evolved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "323d9339-f15c-4b7d-827e-03f3c0b5dcde",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C3",
+      "claim": "YPD at 30 \u00b0C, acetic acid, and high temperature apply distinct types of stress to yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose these environments to facilitate comparisons with previous experimental evolution studies in yeast (e.g., Nguyen Ba et al., 2019; Jerison et al., 2020), which have used YPD at 30 \u00b0C as a rich environment and acetic acid and high temperature to apply distinct types of stress (Figure 1\u2014figure supplement 2; Taymaz-Nikerel et al., 2016; Giannattasio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies that characterize these environments as applying distinct stresses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "acfe634b-dfa4-4be3-bd65-4dd2460844e1",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C4",
+      "claim": "Each haploid population was founded by a single clone of a putatively isogenic laboratory strain, labeled with a unique DNA barcode at a neutral locus prior to the evolution experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Each haploid population was founded by a single clone of a putatively isogenic laboratory strain, labeled with a unique DNA barcode at a neutral locus prior to the evolution experiment (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the experimental design for founding populations with barcoded clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "b67fea28-192d-4eea-9f50-9c8484024339",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C5",
+      "claim": "Diploid populations were founded by mating uniquely barcoded haploids and selecting for diploids.",
+      "claim_type": "EXPLICIT",
+      "source": "Diploid populations were founded by mating uniquely barcoded haploids and selecting for diploids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for generating diploid populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "a61b06c4-4060-4071-bce9-2938b2778885",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C6",
+      "claim": "Each population was propagated for 1000 generations in batch culture, with a 1:210 dilution every 24hr, corresponding to a population bottleneck size of 10^4.",
+      "claim_type": "EXPLICIT",
+      "source": "We then propagated each population for 1000 generations in batch culture, with a 1:210 dilution every 24hr; this corresponds to a population bottleneck size of 104 (Figure 1A and Figure 1\u2014source data 1; see Methods for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the propagation conditions and bottleneck size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "02563377-8ca3-42f0-91ae-62a6b35b0379",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C7",
+      "claim": "An aliquot from each population was frozen at 50-generation intervals at \u221280\u00b0C in 8% glycerol for long-term storage.",
+      "claim_type": "EXPLICIT",
+      "source": "We froze an aliquot from each population at 50-generation intervals at \u221280\u00b0C in 8% glycerol for long-term storage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the storage protocol for populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "726ec348-fdfd-406b-8b08-c04127619ea1",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C8",
+      "claim": "Populations from generations 0, 200, 400, 600, 800, and 1000 were revived and their fitness was assayed across five environments.",
+      "claim_type": "EXPLICIT",
+      "source": "After completing the evolution, we revived populations from generations 0, 200, 400, 600, 800, and 1000. We then conducted parallel BFAs (two technical replicates [Figure 1\u2014figure supplement 1]) to measure the fitness of each population at each timepoint across five environments (the three evolution environments, YPD +0.4 M NaCl at 30 \u00b0C [transfers every 24 hr], and YPD at 21 \u00b0C [transfers every 48 hr]) which exposed the populations to unique osmotic and temperature stresses (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the timepoints and environments used for fitness assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "79af3daa-0699-44b3-a76a-7cee9983672a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C9",
+      "claim": "19 outlier diploid populations whose ancestors differed from the mean ancestral fitness by at least 4% in at least one environment were excluded from downstream analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "To clarify our downstream analyses, we excluded 19 outlier diploid populations whose ancestors differed from the mean ancestral fitness by at least 4 % in at least one environment, leaving us with 133 diploid populations (43 YPD at 30 \u00b0C, 48 YPD+ acetic acid, and 42 YPD at 37 \u00b0C) and 20 haploid populations (153 populations total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the exclusion criteria and number of populations excluded.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "1c59de41-28c2-408c-8343-b95454fdbc5a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C10",
+      "claim": "Adaptation in each environment leads to a consistent increase in fitness in that 'home' environment.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is modest variability between replicate populations, adaptation in each environment leads to a consistent increase in fitness in that 'home' environment (Figure 2, subplots with bold black borders).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the observed pattern of fitness increases in home environments, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "59d4c1c0-c328-4162-916a-d6e196162fe6",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C11",
+      "claim": "Fitness increases in home environments follow a pattern of declining adaptability: early rapid fitness gains that slow down over time.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in earlier experiments (Couce and Tenaillon, 2015), this fitness increase is largely predictable and follows a characteristic pattern of declining adaptability: early rapid fitness gains that slow down over time (p < 0.0001; Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the pattern of declining adaptability and cites previous work observing similar patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "c5cb8b23-5a54-4108-9722-bda7d972dab0",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C12",
+      "claim": "Declining adaptability appears to be especially pronounced in the acetic acid environment.",
+      "claim_type": "EXPLICIT",
+      "source": "There are some differences among evolution environments with respect to this pattern: declining adaptability appears to be especially pronounced in the acetic acid environment, while haploid populations evolved at 37 \u00b0C appear not to exhibit this trend, possibly because the fitness gains in this environment were generally minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes environment-specific differences in the pattern of declining adaptability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "79f812c7-ae04-4d03-a409-e9b68e55d1b4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C13",
+      "claim": "Haploid populations evolved at 37 \u00b0C do not exhibit declining adaptability, possibly because fitness gains in this environment were generally minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "There are some differences among evolution environments with respect to this pattern: declining adaptability appears to be especially pronounced in the acetic acid environment, while haploid populations evolved at 37 \u00b0C appear not to exhibit this trend, possibly because the fitness gains in this environment were generally minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the lack of declining adaptability in haploid populations at 37\u00b0C and offers a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "e6125ccb-0a2c-4a93-affe-f2d78b35fa90",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C14",
+      "claim": "Adaptation in each evolution environment led to fitness changes in most other environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptation in each evolution environment also led to fitness changes in most other environments (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes pleiotropic effects of adaptation, supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "d620d0a9-45ec-4f30-b579-8015204a9c55",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C15",
+      "claim": "Fitness changes in away environments tend to have a consistent direction over time for each environment pair.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, these fitness changes tend to have a consistent direction over time for each environment pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the general pattern of pleiotropic effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "638ea798-5f02-4b80-836e-20633da083d5",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C16",
+      "claim": "Populations adapted to YPD+ acetic acid and YPD at 37 \u00b0C steadily gained fitness in the YPD at 30 \u00b0C and YPD +0.4 M NaCl environments over time.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, populations adapted to YPD+ acetic acid and YPD at 37 \u00b0C steadily gained fitness in the YPD at 30 \u00b0C and YPD +0.4 M NaCl environments over time, with the average fitness across populations largely following the same trend seen at home: initial rapid fitness gains followed by slower increases over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes specific examples of pleiotropic fitness gains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "1484f161-7c7d-4025-b4f8-031564a96d44",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C17",
+      "claim": "Populations evolved in YPD+ acetic acid tend to lose fitness in YPD at 21 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, populations evolved in YPD+ acetic acid tend to lose fitness in YPD at 21 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a specific example of pleiotropic fitness decline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "d301fec2-eff5-44e5-acef-6b444fb76775",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C18",
+      "claim": "Pleiotropic effects are less predictable than the fitness gains in the home environment, with more variability among replicate lines in away environments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, pleiotropic effects are less predictable than the fitness gains in the home environment: we see more variability among replicate lines in away environments, both in the shapes of their fitness trajectories and in their ultimate evolutionary outcomes (see analysis below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the greater variability in pleiotropic effects compared to home environment fitness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "9e1a5c47-8dfb-4c35-8efa-e81cb62a61f4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C19",
+      "claim": "Specialization is quite rare, as the majority of populations improve in fitness in each assay environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that specialization is quite rare, as the majority of populations improve in fitness in each assay environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the overall pattern of fitness changes across environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "436394df-68c9-47b3-b109-10d8dfb62c3e",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C20",
+      "claim": "A substantial fraction of populations decline in fitness at 21 \u00b0C after evolution in other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The major exception is that a substantial fraction of populations decline in fitness at 21 \u00b0C after evolution in other conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes an exception to the general pattern of fitness improvements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "c72ca129-6a28-4a9f-a500-2874d4d186e2",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C21",
+      "claim": "Some populations evolved at 37 \u00b0C (diploid and haploid) decline in fitness in YPD+ acetic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, some populations evolved at 37 \u00b0C (diploid and haploid) decline in fitness in YPD+ acetic acid, and some populations evolved in YPD+ acetic acid decline in fitness at 37 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes specific instances of fitness declines in away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "4dc3dbed-117b-40f3-9533-a2b5ee4ae5c8",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C22",
+      "claim": "Some populations evolved in YPD+ acetic acid decline in fitness at 37 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, some populations evolved at 37 \u00b0C (diploid and haploid) decline in fitness in YPD+ acetic acid, and some populations evolved in YPD+ acetic acid decline in fitness at 37 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes specific instances of fitness declines in away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "42b15220-370d-4cf8-8062-51ed7469ebb6",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C23",
+      "claim": "Even in the 21 \u00b0C environment, specialization is not inevitable, as there are populations evolved in other environments that gain fitness at 21 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, even in the 21 \u00b0C environment, specialization is not inevitable, as there are indeed populations evolved in other environments that gain fitness at 21 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript notes that specialization is not universal even in the environment where it is most common.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "90dab79d-5325-4259-9e7f-93801b1d35b6",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C24",
+      "claim": "Almost all populations gained fitness in both YPD at 30 \u00b0C and YPD+ NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while almost all populations gained fitness in both YPD at 30 \u00b0C and YPD+ NaCl, the dynamics of fitness change differed based on evolution environment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a general pattern of fitness gains across two environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "072119a8-aa22-410a-8c22-e7166594f873",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C25",
+      "claim": "Populations evolved at 37 \u00b0C initially made substantial fitness gains in YPD+ NaCl sometimes followed by more significant gains in YPD at 30 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "populations evolved at 37 \u00b0C (orange lines in Figure 3) initially made substantial fitness gains in YPD+ NaCl sometimes followed by more significant gains in YPD at 30 \u00b0C",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the specific trajectory of fitness changes for populations evolved at 37\u00b0C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "32888a2a-3a67-4d7c-8646-991cb5664b59",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C26",
+      "claim": "Populations evolved in YPD at 30 \u00b0C and YPD+ acetic acid only gained substantial fitness in YPD+ NaCl after initial fitness increases in YPD at 30 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the populations evolved in YPD at 30 \u00b0C (cyan lines) and YPD+ acetic acid (green lines) only gained substantial fitness in YPD+ NaCl after initial fitness increases in YPD at 30 \u00b0C (Figure 3\u2014animation 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the specific trajectory of fitness changes for populations evolved in YPD at 30\u00b0C and YPD+ acetic acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "fdf2d5ed-daa6-4731-be13-a5ec1378e1f6",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C27",
+      "claim": "Haploids and diploids evolved at 37 \u00b0C tend to show quite similar patterns of fitness evolution across alternate environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, these plots and those in Figure 2 highlight similarities and differences between the fitness trajectories of populations of different ploidy. Haploids and diploids evolved at 37 \u00b0C tend to show quite similar patterns of fitness evolution across alternate environments (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes similarities in fitness trajectories between haploid and diploid populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "b6f86808-d28f-4711-8fc8-e01121d5dda9",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C28",
+      "claim": "Haploid trajectories at 37\u00b0C are both more positive than diploid trajectories in 21 \u00b0C and more variable overall when comparing fitness in YPD+ NaCl with fitness in YPD at 21 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, comparing fitness in YPD+ NaCl with fitness in YPD at 21 \u00b0C reveals haploid trajectories that are both more positive than diploid trajectories in 21 \u00b0C and more variable overall (Figure 3; Figure 3\u2014animation 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes specific differences between haploid and diploid fitness trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "f16d851e-de2d-4f2c-a6ae-77bfc53204a1",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C29",
+      "claim": "The divergence of pleiotropic trajectories is contingent on both the evolution environment and an organism's genomic architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The divergence of these pleiotropic trajectories is thus contingent on both the evolution environment and an organism's genomic architecture (Marad et al., 2018) and associated physiological differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the observed differences in trajectories as being contingent on environment and genomic architecture, citing previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "9e1c90a3-4486-4bc3-8707-31528b34c2dc",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C30",
+      "claim": "The first two principal components of pleiotropic profiles consistently explain well over half the variance in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 4A, we plot the first two principal components of each pleiotropic profile (which together consistently explain well over half the variance in the data [Figure 4\u2014figure supplement 2]) for populations from each of the six measured timepoints (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the variance explained by the first two principal components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "07db9905-e35a-44d9-a042-4546d9858a9b",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C31",
+      "claim": "Populations separate over time into somewhat distinct clusters based on their evolution environment and ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the populations separate over time into somewhat distinct clusters based on their evolution environment and ploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the clustering pattern observed in the PCA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "0cfa281e-b11d-4be8-b047-fd6776decdd4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C32",
+      "claim": "Evolution in each environment leads to the formation of a characteristic environment- and ploidy-specific pleiotropic profile.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters suggest that evolution in each environment leads to the formation of a characteristic environment- and ploidy-specific pleiotropic profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the clustering as evidence for characteristic pleiotropic profiles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "fcc89868-02f7-40fa-9b31-2a90ae5a17d0",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C33",
+      "claim": "In the PCA of all populations using all fitness data from across the 1000 generations, the first two PCs explain 30% and 22% of the variance, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Characteristic pleiotropic profiles can also be observed when running principal component analysis on the complete concatenated (but unordered) fitness data (i.e., with the pleiotropic profile of each population now defined as its fitness across all five assay environments at all six 200-generation timepoints, a total of 30 measurements [Figure 4\u2014figure supplement 5]) and plotting data according to the first two components, which explain 30% and 22% of total variance, respectively (Figure 4B, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the variance explained by the first two principal components in the concatenated PCA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "ae29c5ab-faef-4092-b923-cdd18e4bd72f",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C34",
+      "claim": "The degree of clustering in two-dimensional PCA space rises appreciably until the 600-generation mark, at which point it plateaus.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that the degree of clustering in this two-dimensional space rises appreciably until the 600-generation mark, at which point it plateaus (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the temporal dynamics of clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "a6fdb935-776c-4936-bd58-6e1517bec972",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C35",
+      "claim": "The observed clustering from generation 200 onward is much greater than expected by chance (p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The observed clustering from generation 200 onward is much greater than expected by chance, as is clustering for the total-data PCA shown in Figure 4B (compared to a null expectation constructed by randomly permuting the evolution condition assigned to each population; p < 0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical significance of clustering compared to a null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "72d34b83-d1fd-471d-a8fd-b9990de94f9d",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C36",
+      "claim": "Replicate populations in each evolution condition tend to follow similar trends in fitness changes across environments, leading to characteristic environment-specific pleiotropic profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our principal component analysis shows that replicate populations in each evolution condition tend to follow similar trends in fitness changes across environments, leading to characteristic environment-specific pleiotropic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings from the PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "2d0a8e09-c1a6-4a6d-83b0-d54bc3f0fccf",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C37",
+      "claim": "There is significant stochastic variability in the pleiotropic effects of adaptation among populations evolved in the same environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is apparent from Figures 2 and 3 that there remains significant stochastic variability in the pleiotropic effects of adaptation among populations evolved in the same environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes variability among replicate populations despite general trends.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "43102b33-8240-43a4-82d1-e42655bd0ff4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C38",
+      "claim": "Populations evolved in the acetic acid environment splay out into all four quadrants when plotting fitness at 37 \u00b0C against fitness at 21 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, populations evolved in the acetic acid environment splay out into all four quadrants when plotting fitness at 37 \u00b0C against fitness at 21 \u00b0C (Figure 3; Figure 3\u2014animation 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes a specific example of variability in pleiotropic effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "3145a367-1f58-48be-b301-4ac961b4d1f4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C39",
+      "claim": "Populations evolved in YPD+ acetic acid exhibit generally wider variation in home and away environments than populations evolved in other environments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, populations evolved in YPD+ acetic acid exhibit generally wider variation in home and away environments than populations evolved in other environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes environment-specific patterns of variability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "91e41f07-d71c-4acd-a95b-4032f6547710",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C40",
+      "claim": "Paths to higher fitness in YPD+ acetic acid are qualitatively different for populations evolved in YPD at 30 \u00b0C compared to those evolved in YPD+ acetic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is tempting to link this pattern to the large fitness gains these populations make in their home environment, we note that populations evolved in YPD at 30 \u00b0C also make significant correlated gains in YPD+ acetic acid without generating such variable results across other assay environments. This suggests that, with respect to the distribution of pleiotropic effects of fixed driver or hitchhiking mutations, paths to higher fitness in YPD+ acetic acid are qualitatively different for the populations evolved in YPD at 30 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers qualitative differences in evolutionary paths based on observed patterns of variability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "e0e1ad34-ee7d-4961-94d6-9d968ff35017",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C41",
+      "claim": "Diploid and haploid populations evolved at 37 \u00b0C show similar variability in 37 \u00b0C, 30 \u00b0C, and YPD+ NaCl across the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In another example, while diploid and haploid populations evolved at 37 \u00b0C show similar variability in 37 \u00b0C, 30 \u00b0C, and YPD+ NaCl across the experiment, they experience more variable outcomes in YPD+ acetic acid and 21 \u00b0C, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes similarities and differences in variability between haploid and diploid populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "d4e613ae-e03b-41d8-af07-cc2af4433f34",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C42",
+      "claim": "Diploid and haploid populations evolved at 37 \u00b0C experience more variable outcomes in YPD+ acetic acid and 21 \u00b0C, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In another example, while diploid and haploid populations evolved at 37 \u00b0C show similar variability in 37 \u00b0C, 30 \u00b0C, and YPD+ NaCl across the experiment, they experience more variable outcomes in YPD+ acetic acid and 21 \u00b0C, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes environment-specific differences in variability between haploid and diploid populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "d9a6ced6-c83d-4ffc-92d7-30742e614d4e",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C43",
+      "claim": "The role for chance in the pleiotropic trajectories of evolving populations is contingent on the condition to which the population is adapted.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the role for chance in the pleiotropic trajectories of evolving populations is contingent on the condition to which the population is adapted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the observed patterns of variability as evidence for contingency in the role of chance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "becdb479-b5f3-400a-a846-90a2539ea070",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C44",
+      "claim": "Variation in fitness at home tends to remain relatively low over the course of 1000 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the variation in outcomes is a function of evolutionary time. While variation in fitness at home tends to remain relatively low over the course of 1000 generations (Figure 5A, bold black boxes; Figure 5B, thick solid lines), variation in away environments generally (if haltingly) increases over time, with a few exceptions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the temporal dynamics of variance in home environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "163ab194-20ad-47ab-9b0f-29e47aba406f",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C45",
+      "claim": "Variation in away environments generally increases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the variation in outcomes is a function of evolutionary time. While variation in fitness at home tends to remain relatively low over the course of 1000 generations (Figure 5A, bold black boxes; Figure 5B, thick solid lines), variation in away environments generally (if haltingly) increases over time, with a few exceptions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the temporal dynamics of variance in away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "f21b8a9b-6c73-4b74-a3a8-1b08263ce648",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C46",
+      "claim": "Selection appears to suppress variation among trajectories in the home environment, at least on the timescales studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, selection appears to suppress variation among trajectories in the home environment, at least on the timescales studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the low variance in home environments as evidence for selection suppressing variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "fd7e9cc3-b3b5-46cb-a86d-62c6ba771d4f",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C47",
+      "claim": "Over half (48/80) of nonancestral pairwise comparisons indicated significantly greater variance in the away environment (at a threshold of p < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 80 nonancestral pairwise comparisons, over half (48/80) indicated significantly greater variance in the away environment (at a threshold of p < 0.05) and only six showed significantly greater variance at home (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparisons of variance between home and away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "999f78e2-f784-4177-8c65-3f3322336984",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C48",
+      "claim": "Only six of 80 nonancestral pairwise comparisons showed significantly greater variance at home.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 80 nonancestral pairwise comparisons, over half (48/80) indicated significantly greater variance in the away environment (at a threshold of p < 0.05) and only six showed significantly greater variance at home (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparisons of variance between home and away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "927ff08b-010b-4614-8371-228a23ec94e9",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C49",
+      "claim": "Populations rarely possess clearly nonmonotonic trajectories in their home environment (4/153, 2.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that populations rarely possess clearly nonmonotonic trajectories in their home environment, whereas they much more commonly possess clearly nonmonotonic trajectories in away environments (4/153 [2.6%] home and 102/612 [16.7%] away trajectories, respectively; p < 0.0001, \u03c72 test) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the frequency of nonmonotonic trajectories in home environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "573a6049-933a-45a8-b6a7-77023a833de2",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C50",
+      "claim": "Populations much more commonly possess clearly nonmonotonic trajectories in away environments (102/612, 16.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that populations rarely possess clearly nonmonotonic trajectories in their home environment, whereas they much more commonly possess clearly nonmonotonic trajectories in away environments (4/153 [2.6%] home and 102/612 [16.7%] away trajectories, respectively; p < 0.0001, \u03c72 test) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the frequency of nonmonotonic trajectories in away environments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "2aca91ba-75f7-44e4-884e-134d4b958877",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C51",
+      "claim": "The difference in frequency of nonmonotonic trajectories between home and away environments is statistically significant (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that populations rarely possess clearly nonmonotonic trajectories in their home environment, whereas they much more commonly possess clearly nonmonotonic trajectories in away environments (4/153 [2.6%] home and 102/612 [16.7%] away trajectories, respectively; p < 0.0001, \u03c72 test) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical significance of the difference in nonmonotonic trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "10c6794b-030e-4c79-9501-cd0f74b55a41",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C52",
+      "claim": "71% (72/102) of nonmonotonic trajectories reflect initially positive pleiotropic effects that become negative in the second half of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Many but not all of these monotonic trajectories (72/102, or 71%) reflect initially positive pleiotropic effects that become negative in the second half of the experiment, as we might expect if a population increasingly specializes to its home environment over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the proportion of nonmonotonic trajectories with a specific pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "026c2cf5-6426-4629-8d2f-c4432d55f717",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C53",
+      "claim": "Replicate populations follow repeatable fitness trajectories in their home environments, which follow a pattern of initial rapid fitness gains followed by declining adaptability over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with earlier work, we observe repeatable fitness trajectories across many replicate populations in their home environments, which follow a pattern of initial rapid fitness gains followed by declining adaptability over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes key findings about home environment fitness trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "a8bad444-8b26-48c7-bdf0-e5d39bb69e8a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C54",
+      "claim": "Replicate populations tend to follow consistent fitness trajectories in away environments, whether gaining or losing fitness on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Replicate populations also tend to follow consistent fitness trajectories in away environments, whether gaining or losing fitness on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes key findings about away environment fitness trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "456ec8ed-ea64-4625-865d-810ca8cc56f7",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C55",
+      "claim": "Characteristic patterns of pleiotropy specific to each evolution condition emerge rapidly and stabilize within about 600 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking across populations and environments, characteristic patterns of pleiotropy specific to each evolution condition emerge rapidly and stabilize within about 600 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the temporal dynamics of pleiotropic profile emergence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "a9f7bf01-38b3-424c-bf0b-8dcbcf0d4724",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C56",
+      "claim": "About 17% of away-environment trajectories are nonmonotonic, compared to just 3% of home-environment trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the fitness trajectories of populations individually, we find that about 17 % of away-environment trajectories are nonmonotonic, compared to just 3 % of home-environment trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the frequency of nonmonotonic trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "6dbb8ce0-f24e-4125-a498-75cecac525bd",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C57",
+      "claim": "Nonmonotonicity is indicative of the sequential establishment of mutations with opposing pleiotropic effects in these populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This nonmonotonicity is indicative of the sequential establishment of mutations with opposing pleiotropic effects in these populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets nonmonotonic trajectories as evidence for sequential fixation of mutations with opposing effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "bdbaf20e-72fe-42af-b3a1-86fe0674c214",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C58",
+      "claim": "There is more variability in away than in home environments at the end of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with past work, we observe more variability in away than in home environments at the end of the experiment (Travisano and Lenski, 1996; Ostrowski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes greater variability in away environments and cites previous work observing similar patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "82f3ad02-7d32-4c72-b98b-7e492e777095",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C59",
+      "claim": "Populations can follow very different trajectories in arriving at their endpoint fitnesses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results also reveal how populations can follow very different trajectories in arriving at these endpoint fitnesses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes variability in the trajectories leading to endpoint fitnesses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "21417ee9-197f-4073-9fc9-54fee9adbd45",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C60",
+      "claim": "Variance among replicate populations tends to increase over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse away-environment trajectories manifest as changes in the variance among replicate populations over time, with a general tendency for variance to increase over the course of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the temporal dynamics of variance among replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "6e3bd4ba-8365-4172-9d64-d2d95b9233f3",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C61",
+      "claim": "Whether populations trend toward specialist or generalist phenotypes will not simply reflect physiological constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, patterns of pleiotropy along with variability among replicate populations suggest an important and dynamic role for chance and contingency in the fates of populations evolving in environments that fluctuate in space and time. Whether populations trend toward specialist or generalist phenotypes will not simply reflect physiological constraints (Bono et al., 2017; Jerison et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings as suggesting that specialization/generalization is not solely determined by physiological constraints, citing previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "37eb1789-a5a7-4586-8dfb-fb2398dd518a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C62",
+      "claim": "Mutational opportunities to move toward higher or lower fitness in alternate environments may be accessible at all times.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, as we observe, mutational opportunities to move toward higher or lower fitness in alternate environments may be accessible at all times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the observed variability that mutations with diverse pleiotropic effects are available throughout evolution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "fe0ee44d-8dc5-411c-9c5c-d5cc0fd0ea74",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C63",
+      "claim": "The emergence of specialism or generalism will be a product of both the distribution of pleiotropic effects of mutations that establish and dynamical factors that influence the timescale, sequence, and likelihood of their fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the emergence of specialism or generalism will be a product of both the distribution of pleiotropic effects of mutations that establish and dynamical factors that influence the timescale, sequence, and likelihood of their fixation (e.g., epistasis, ploidy, clonal interference, mutation rate, and population size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the findings as suggesting that both mutational effects and evolutionary dynamics determine outcomes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "8254fca0-1313-480e-8814-a1d46dd7ce48",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C64",
+      "claim": "Pleiotropic profiles generally emerge early and stabilize by 600 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the conditions studied here, we observe that pleiotropic profiles generally emerge early and stabilize by 600 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the temporal dynamics of pleiotropic profile emergence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "cb7c9a82-f5c3-4ae8-ad6f-176bc644c88c",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C65",
+      "claim": "Fluctuations on longer timescales (e.g., longer than 600 generations in this system) will likely lead to qualitatively different outcomes than fluctuations on shorter timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of other dynamical consequences of the rate of environmental change (Cvijovi\u0107 et al., 2015), it is therefore likely that fluctuations on longer timescales (e.g., longer than 600 generations in this system) will lead to qualitatively different outcomes than fluctuations on shorter timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers implications for evolution in fluctuating environments based on the observed timescale of pleiotropic profile emergence.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "2e1ec50e-4ad0-4011-bf24-e7db2dbcf68e",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C66",
+      "claim": "Both the average and variance in evolutionary outcomes depend critically on the specific sequence of environments experienced by a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that both the average and variance in these outcomes will also depend critically on the specific sequence of environments experienced by a population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers that the sequence of environments matters for evolutionary outcomes based on the observed environment-specific patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "3fc840dc-3c57-4cec-8d9d-d26d28a4a75d",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C67",
+      "claim": "By generation 1000, all 192 MATa populations had autodiploidized.",
+      "claim_type": "EXPLICIT",
+      "source": "By generation 1000, all 192 MATa populations had autodiploidized, and 172 of the MAT\u03b1 populations had autodiploidized, as judged by the absence of a clear haploid peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the ploidy status of populations at the end of the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "eb72295f-565b-4a11-9d7c-2150fa777767",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C68",
+      "claim": "By generation 1000, 172 of the MAT\u03b1 populations had autodiploidized.",
+      "claim_type": "EXPLICIT",
+      "source": "By generation 1000, all 192 MATa populations had autodiploidized, and 172 of the MAT\u03b1 populations had autodiploidized, as judged by the absence of a clear haploid peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the ploidy status of populations at the end of the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "1fdb7505-ff61-4cea-b7f1-a4b9a3e6f4f5",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C69",
+      "claim": "Only the remaining 20 haploid MAT\u03b1 populations were included in the bulk fitness assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the remaining 20 haploid MAT\u03b1 populations were included in the BFAs described below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes which populations were included in the fitness assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "57ca9075-3436-4dc1-a563-bc4cae32f82f",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C70",
+      "claim": "Strains in this study are derived from YAN404 and YAN407.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in this study are derived from YAN404 and YAN407 (Nguyen Ba et al., 2019), which were constructed on the BY4742 background (S288C: MAT\u03b1, his3\u22061, ura3\u22060, leu2\u22060, lys2\u22060) to add the RME1pr::ins-308A mutation, meant to improve transformation efficiency in both the MATa and MAT\u03b1 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the strain background used in the study, citing the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "46bbc748-026d-4248-9069-1ea99de9b0e4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C71",
+      "claim": "The RME1pr::ins-308A mutation was added to improve transformation efficiency in both the MATa and MAT\u03b1 cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains in this study are derived from YAN404 and YAN407 (Nguyen Ba et al., 2019), which were constructed on the BY4742 background (S288C: MAT\u03b1, his3\u22061, ura3\u22060, leu2\u22060, lys2\u22060) to add the RME1pr::ins-308A mutation, meant to improve transformation efficiency in both the MATa and MAT\u03b1 cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the purpose of a specific genetic modification.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "2d539027-c844-418b-afdb-fed5ac5e14d7",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "claim_id": "C72",
+      "claim": "YCB140B and YCB137A (and YCB140B \u00d7 YCB137A mated diploids) were used to found the populations evolved in this experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, YCB140B and YCB137A (and YCB140B \u00d7 YCB137A mated diploids) were used to found the populations evolved in this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the specific strains used to found experimental populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors evolved 152 diploid and 20 haploid yeast populations in three distinct environments (YPD at 30\u00b0C, YPD + acetic acid at 30\u00b0C, and YPD at 37\u00b0C) for ~1000 generations using barcoded strains, with fitness assayed at 200-generation intervals across five environments. 19 outlier diploid populations were excluded from analysis, leaving 153 populations total.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 and C67-C72 provide comprehensive experimental design details including population numbers, environments, barcoding strategy, propagation conditions, and quality control measures. The methods are clearly described with appropriate technical details (bottleneck size, storage conditions, exclusion criteria). The autodiploidization of most haploid populations (C67-C68) is documented, justifying the final sample composition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "80bb6e24-4762-4de5-95e4-957ec99e80ef",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Populations consistently increased fitness in their home environments following a pattern of declining adaptability (early rapid gains slowing over time, p < 0.0001), with this pattern especially pronounced in acetic acid but absent in haploid populations at 37\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 describe home environment fitness dynamics with statistical support (p < 0.0001 for declining adaptability). The pattern is consistent with cited prior work and supported by Figure 2. Environment-specific differences are noted with appropriate caveats about the speculative explanation for haploid 37\u00b0C populations (C13).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "d1a45257-86da-4176-b37c-b1a252acc0d9",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adaptation in each environment led to pleiotropic fitness changes in most other environments, with consistent directional trends for each environment pair but greater variability than home environment fitness. Specialization was rare overall, though substantial fractions of populations declined in fitness at 21\u00b0C after evolution in other conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 comprehensively describe pleiotropic effects with specific examples of fitness gains (C16) and losses (C17, C20-C22). The characterization of greater variability in away environments (C18) and rarity of specialization (C19, C23) is supported by Figure 2 and summary statistics. The claims appropriately distinguish general trends from exceptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "30be31b4-82d7-4960-a37a-e82466fd7b2a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The dynamics of pleiotropic fitness changes differed by evolution environment and ploidy. Populations evolved at 37\u00b0C initially gained fitness in YPD+NaCl before YPD at 30\u00b0C, while populations evolved in YPD at 30\u00b0C or acetic acid showed the reverse pattern. Haploid and diploid populations at 37\u00b0C showed similar overall patterns but differed in specific environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 describe environment- and ploidy-specific trajectories supported by Figure 3. The temporal ordering of fitness gains in different environments (C25-C26) provides mechanistic insight. The interpretation that divergence depends on environment and genomic architecture (C29) is appropriately supported by citation and data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Principal component analysis revealed that populations separated into distinct clusters by evolution environment and ploidy over time, with characteristic pleiotropic profiles emerging rapidly and stabilizing by ~600 generations. The first two PCs consistently explained >50% of variance at each timepoint, and clustering was statistically significant (p < 0.001) from generation 200 onward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C36 describe PCA results with appropriate quantification of variance explained and statistical testing of clustering. The temporal dynamics of cluster formation (C34) and statistical significance (C35) are well-documented. The interpretation of characteristic pleiotropic profiles (C32, C36) follows logically from the clustering patterns shown in Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "c105bc29-5bd5-4665-aab1-7d6a66876e17",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite general trends, significant stochastic variability existed among replicate populations, with patterns structured by evolution condition. Populations evolved in acetic acid showed wider variation across environments, and the role of chance in pleiotropic trajectories was contingent on the adaptation condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 characterize variability within general trends, supported by Figures 2-5. Specific examples (C38-C39, C41-C42) illustrate environment-specific patterns. The inference about qualitatively different evolutionary paths (C40) is appropriately cautious and based on observed patterns. The conclusion about contingency (C43) is a reasonable interpretation of the structured variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Variation in fitness at home remained relatively low over 1000 generations while variation in away environments generally increased over time. Statistical testing showed significantly greater variance in away environments for 48/80 comparisons (p < 0.05) versus only 6/80 showing greater home variance, suggesting selection suppresses variation in home environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 describe temporal dynamics of variance with statistical support from Brown-Forsythe tests. The quantification (48/80 vs 6/80 comparisons) provides strong evidence. The interpretation that selection suppresses home environment variation (C46) is reasonable given the data, though appropriately qualified to the timescales studied. Figure 5 supports these patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "794b5cd7-7786-47a7-a2b6-a79607fc90c2",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Populations rarely showed nonmonotonic fitness trajectories in home environments (4/153, 2.6%) but commonly showed them in away environments (102/612, 16.7%; p < 0.0001). Of nonmonotonic trajectories, 71% reflected initially positive pleiotropic effects becoming negative in the second half of the experiment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 quantify nonmonotonicity with clear statistical support (\u03c7\u00b2 test, p < 0.0001). The methodology for defining nonmonotonic trajectories is described in the methods. The characterization of the predominant pattern (C52) provides biological insight. Figure 6 supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study found repeatable fitness trajectories in home environments with declining adaptability, consistent trajectories in away environments, rapid emergence of characteristic pleiotropic patterns stabilizing by ~600 generations, and ~17% nonmonotonic away-environment trajectories indicating sequential fixation of mutations with opposing pleiotropic effects. Variance among replicates tended to increase over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 summarize key findings appropriately supported by the data presented throughout. The interpretation of nonmonotonicity as evidence for sequential fixation (C57) is reasonable though inferential. The summary is consistent with earlier work (C58) and integrates multiple lines of evidence about trajectory diversity (C59-C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    },
+    {
+      "id": "af6c4339-38b7-4b0c-94d3-c97689294aa1",
+      "content_id": "4a190c91-fdb4-4cf8-8031-5171f223f12f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that specialization versus generalization will not simply reflect physiological constraints but rather depends on both the distribution of pleiotropic effects and dynamical factors influencing mutation fixation. Pleiotropic profiles stabilize by ~600 generations, suggesting environmental fluctuations on different timescales will lead to qualitatively different outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 present interpretations and implications appropriately grounded in the data. The conclusions about the role of chance and contingency (C61-C63) follow from observed variability patterns. The inference about timescale effects (C65) is reasonable given the observed stabilization at 600 generations (C64). The claim about sequence dependence (C66) is appropriately inferential based on environment-specific patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:55:37.458072Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "08f98491-06d0-4813-b54b-36158bc3358f",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "340c166d-cd7b-4231-8630-aa6b065d28e5",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "323d9339-f15c-4b7d-827e-03f3c0b5dcde",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "acfe634b-dfa4-4be3-bd65-4dd2460844e1",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "b67fea28-192d-4eea-9f50-9c8484024339",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "a61b06c4-4060-4071-bce9-2938b2778885",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "02563377-8ca3-42f0-91ae-62a6b35b0379",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "726ec348-fdfd-406b-8b08-c04127619ea1",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "79af3daa-0699-44b3-a76a-7cee9983672a",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "3fc840dc-3c57-4cec-8d9d-d26d28a4a75d",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "eb72295f-565b-4a11-9d7c-2150fa777767",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "1fdb7505-ff61-4cea-b7f1-a4b9a3e6f4f5",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "57ca9075-3436-4dc1-a563-bc4cae32f82f",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "46bbc748-026d-4248-9069-1ea99de9b0e4",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "2d539027-c844-418b-afdb-fed5ac5e14d7",
+      "result_id": "7fabbd9a-a689-41a6-aa44-767ea6e017c4"
+    },
+    {
+      "claim_id": "1c59de41-28c2-408c-8343-b95454fdbc5a",
+      "result_id": "80bb6e24-4762-4de5-95e4-957ec99e80ef"
+    },
+    {
+      "claim_id": "59d4c1c0-c328-4162-916a-d6e196162fe6",
+      "result_id": "80bb6e24-4762-4de5-95e4-957ec99e80ef"
+    },
+    {
+      "claim_id": "c5cb8b23-5a54-4108-9722-bda7d972dab0",
+      "result_id": "80bb6e24-4762-4de5-95e4-957ec99e80ef"
+    },
+    {
+      "claim_id": "79f812c7-ae04-4d03-a409-e9b68e55d1b4",
+      "result_id": "80bb6e24-4762-4de5-95e4-957ec99e80ef"
+    },
+    {
+      "claim_id": "e6125ccb-0a2c-4a93-affe-f2d78b35fa90",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "d620d0a9-45ec-4f30-b579-8015204a9c55",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "638ea798-5f02-4b80-836e-20633da083d5",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "1484f161-7c7d-4025-b4f8-031564a96d44",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "d301fec2-eff5-44e5-acef-6b444fb76775",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "9e1a5c47-8dfb-4c35-8efa-e81cb62a61f4",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "436394df-68c9-47b3-b109-10d8dfb62c3e",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "c72ca129-6a28-4a9f-a500-2874d4d186e2",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "4dc3dbed-117b-40f3-9533-a2b5ee4ae5c8",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "42b15220-370d-4cf8-8062-51ed7469ebb6",
+      "result_id": "d1a45257-86da-4176-b37c-b1a252acc0d9"
+    },
+    {
+      "claim_id": "90dab79d-5325-4259-9e7f-93801b1d35b6",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "072119a8-aa22-410a-8c22-e7166594f873",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "32888a2a-3a67-4d7c-8646-991cb5664b59",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "fdf2d5ed-daa6-4731-be13-a5ec1378e1f6",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "b6f86808-d28f-4711-8fc8-e01121d5dda9",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "f16d851e-de2d-4f2c-a6ae-77bfc53204a1",
+      "result_id": "30be31b4-82d7-4960-a37a-e82466fd7b2a"
+    },
+    {
+      "claim_id": "9e1c90a3-4486-4bc3-8707-31528b34c2dc",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "07db9905-e35a-44d9-a042-4546d9858a9b",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "0cfa281e-b11d-4be8-b047-fd6776decdd4",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "fcc89868-02f7-40fa-9b31-2a90ae5a17d0",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "ae29c5ab-faef-4092-b923-cdd18e4bd72f",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "a6fdb935-776c-4936-bd58-6e1517bec972",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "72d34b83-d1fd-471d-a8fd-b9990de94f9d",
+      "result_id": "e0828d80-05d8-48cc-9a41-0e29b3adb00a"
+    },
+    {
+      "claim_id": "2d0a8e09-c1a6-4a6d-83b0-d54bc3f0fccf",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "43102b33-8240-43a4-82d1-e42655bd0ff4",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "3145a367-1f58-48be-b301-4ac961b4d1f4",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "91e41f07-d71c-4acd-a95b-4032f6547710",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "e0e1ad34-ee7d-4961-94d6-9d968ff35017",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "d4e613ae-e03b-41d8-af07-cc2af4433f34",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "d9a6ced6-c83d-4ffc-92d7-30742e614d4e",
+      "result_id": "c105bc29-5bd5-4665-aab1-7d6a66876e17"
+    },
+    {
+      "claim_id": "becdb479-b5f3-400a-a846-90a2539ea070",
+      "result_id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1"
+    },
+    {
+      "claim_id": "163ab194-20ad-47ab-9b0f-29e47aba406f",
+      "result_id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1"
+    },
+    {
+      "claim_id": "f21b8a9b-6c73-4b74-a3a8-1b08263ce648",
+      "result_id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1"
+    },
+    {
+      "claim_id": "fd7e9cc3-b3b5-46cb-a86d-62c6ba771d4f",
+      "result_id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1"
+    },
+    {
+      "claim_id": "999f78e2-f784-4177-8c65-3f3322336984",
+      "result_id": "fd5d7dda-3124-44b0-830a-42dcb3ff55f1"
+    },
+    {
+      "claim_id": "927ff08b-010b-4614-8371-228a23ec94e9",
+      "result_id": "794b5cd7-7786-47a7-a2b6-a79607fc90c2"
+    },
+    {
+      "claim_id": "573a6049-933a-45a8-b6a7-77023a833de2",
+      "result_id": "794b5cd7-7786-47a7-a2b6-a79607fc90c2"
+    },
+    {
+      "claim_id": "2aca91ba-75f7-44e4-884e-134d4b958877",
+      "result_id": "794b5cd7-7786-47a7-a2b6-a79607fc90c2"
+    },
+    {
+      "claim_id": "10c6794b-030e-4c79-9501-cd0f74b55a41",
+      "result_id": "794b5cd7-7786-47a7-a2b6-a79607fc90c2"
+    },
+    {
+      "claim_id": "026c2cf5-6426-4629-8d2f-c4432d55f717",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "a8bad444-8b26-48c7-bdf0-e5d39bb69e8a",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "456ec8ed-ea64-4625-865d-810ca8cc56f7",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "a9f7bf01-38b3-424c-bf0b-8dcbcf0d4724",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "6dbb8ce0-f24e-4125-a498-75cecac525bd",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "bdbaf20e-72fe-42af-b3a1-86fe0674c214",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "82f3ad02-7d32-4c72-b98b-7e492e777095",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "21417ee9-197f-4073-9fc9-54fee9adbd45",
+      "result_id": "c9740c8f-69c9-449f-a9e1-37a7f08146f2"
+    },
+    {
+      "claim_id": "6e3bd4ba-8365-4172-9d64-d2d95b9233f3",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    },
+    {
+      "claim_id": "37eb1789-a5a7-4586-8dfb-fb2398dd518a",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    },
+    {
+      "claim_id": "fe0ee44d-8dc5-411c-9c5c-d5cc0fd0ea74",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    },
+    {
+      "claim_id": "8254fca0-1313-480e-8814-a1d46dd7ce48",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    },
+    {
+      "claim_id": "cb7c9a82-f5c3-4ae8-ad6f-176bc644c88c",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    },
+    {
+      "claim_id": "2e1ec50e-4ad0-4011-bf24-e7db2dbcf68e",
+      "result_id": "af6c4339-38b7-4b0c-94d3-c97689294aa1"
+    }
+  ],
+  "comparisons": []
+}

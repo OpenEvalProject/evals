@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "The triplet polymerase ribozyme (TPR) can catalyze sustained rolling circle synthesis (RCS) on small circular RNA templates, extending beyond full-length circle synthesis with strand displacement to yield concatemeric RNA products. Extension efficiency increases with template size and is predicted to reach parity with linear templates at ~120 nt. Sequencing data demonstrate templated synthesis beyond full circle with 10-100-fold higher probability for circular vs. linear templates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C33, C37-C41, C45-C46, and C65-C74 collectively provide strong experimental evidence from gel electrophoresis (Figures 1D, 2B-F) and deep sequencing (Figure 4B-C) demonstrating RNA-catalyzed RCS. The periodic banding pattern (C34), size-dependent efficiency trends (C38-C39), and quantitative fidelity measurements (C67-C71) provide converging lines of evidence. The conclusion (C74) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Molecular dynamics simulations reveal that progressive RNA synthesis on circular templates leads to build-up of conformational strain, relieved by extension of the ssRNA segment and dynamic destabilization (peeling) of dsRNA 5\u2032- and 3\u2032-ends rather than by bending. This destabilization may facilitate strand displacement but could also reduce primer extension efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C64 describe MD simulation results (Figure 3, Videos 1-2) showing the structural response to RCS. The simulations demonstrate that dsRNA does not bend to accommodate circular topology (C60) but instead relieves strain through end destabilization (C48, C61). Control simulations (C53) and analysis of helical parameters (C54-C58) support the mechanism. The dual effects on strand displacement and extension efficiency (C62-C63) are logical inferences from the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "Branched RCS using double priming on circular templates yields long concatemeric products exceeding 2.5 times full-length circle synthesis (up to 96 nt, 29 triplets), representing the longest product synthesized by the TPR. Freeze-thaw cycling enhances RCS efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 and C82-C83 are supported by gel electrophoresis (Figure 5B-C) and deep sequencing data (Figure 5D) showing products up to 96 nt. The claim that this represents the longest TPR product (C80) is stated but cannot be independently verified from the manuscript alone. The enhancement by freeze-thaw cycles (C82) is demonstrated experimentally. The evidence converges to support sustained RCS with branched priming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "A designed 39-nt micro-Hammerhead ribozyme (\u00b5HHz) can catalyze both self-cleavage and re-circularization under eutectic ice conditions, representing the smallest self-cleaving and self-circularizing RNA system and the first demonstration of self-circularization in a Hammerhead ribozyme. Kinetic analysis shows initially high circularization (~40% at 12 hr) with progressive trapping in non-ligatable states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C112-C121 are supported by experimental data in Figure 6D showing cleavage and circularization activity, with controls demonstrating the requirement for 5\u2032-OH (C121). Kinetic data (Figure 6\u2014figure supplement 1) support the transient circularization model (C115-C117). The claims about size and novelty (C113-C114) are stated as factual but cannot be independently verified without comprehensive literature review. The core functional claims are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "All steps of a viroid-like RNA replication pathway can be catalyzed by RNA alone, with one-half of a viroid replication cycle ((-)-strand replication leading to self-circularizing (+)-strand) demonstrated using two ribozymes (TPR for RCS and \u00b5HHz for cleavage/circularization).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C94-C97 represent the major conceptual conclusion integrating the RCS results (C3-C4) with the \u00b5HHz results (C5-C6). The experimental evidence supports that RNA can catalyze RCS (Result 1), produce concatemers (Result 3), and perform cleavage/circularization (Result 4). The claim about completing a full cycle (C97) is appropriately framed as requiring additional work. The demonstrated half-cycle is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Extension efficiency on circular RNA templates shows a periodic banding pattern with ~11.3 bp periodicity matching the helical pitch of dsRNA, attributed to differential accessibility of triplet junctions on the inside vs. outside of the circular template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by experimental data in Figure 1E showing the periodic pattern, with C35 providing the established dsRNA helical pitch from literature. The mechanistic interpretation (C36) is a reasonable inference from the structural model (Figure 1F), though it remains somewhat speculative without direct structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C73"
+    ],
+    "result": "Greater dilution of reaction mixtures prior to freezing enhances strand displacement efficiency and fidelity, potentially through increased eutectic phase/ice interface area facilitating strand invasion via surface effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C73 are supported by experimental data in Figure 2\u2014figure supplement 1C-D and Figure 4\u2014figure supplement 2B showing enhanced invasion with dilution. The mechanistic explanation involving eutectic phase interface (C43-C44) is supported by citation to prior work on eutectic phase behavior and RNA refolding, making it a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Circular RNA can be distinguished from linear RNA by resistance to exonuclease T digestion, and the TPR comprises a catalytic subunit (5TU) and non-catalytic subunit (t1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is directly demonstrated by gel data in Figure 1B showing differential exonuclease resistance. Claim C32 describes the TPR structure from prior work (Attwater et al., 2018) and is shown schematically in Figure 1C. Both claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establishing the RNA world hypothesis, the strand separation problem in RNA replication, properties of RNA polymerase ribozymes, and the prevalence of circular genomes and rolling circle synthesis in biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C27 represent established knowledge in the field, supported by appropriate citations to prior literature. These provide necessary context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In the proposed RCS mechanism, triplet binding and dissociation are equilibrium processes that are nearly isoenergetic, while extension (triplet ligation) is irreversible, leading to ratchet-like RCS driven by triphosphate hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C30 present a theoretical model for the RCS mechanism. While the chemical principles are sound (C29 is based on established chemistry), the claims about isoenergetic binding/dissociation (C28) and the ratchet mechanism (C30) are theoretical inferences not directly tested experimentally. The MD simulations provide some support but do not directly validate this specific energetic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background claims about viroids, their replication mechanisms, advantages of circular genomes, and comparisons between RNA and DNA RCS in biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 and C100-C104 represent established knowledge about viroid biology and circular genome replication, supported by appropriate citations. These provide important biological context for interpreting the experimental results but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Speculative claims about the generality of strain-induced strand displacement, potential mechanisms for RCS enhancement, and future improvements needed for more efficient RNA-catalyzed RCS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 and C106-C111 are explicitly speculative inferences about mechanisms and future directions. While grounded in the experimental observations, these represent hypotheses rather than demonstrated results. Claims about poor processivity (C107) are supported by citations, but the proposed improvements (C106, C108, C110-C111) are untested predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Background claims about eutectic ice phase conditions and their effects on ribozyme activity, and prior observations of cleavage/ligation equilibrium in hairpin ribozyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120 and C123-C125 describe established knowledge about eutectic phase chemistry and prior ribozyme work, supported by appropriate citations. These provide methodological context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "5\u2032-phosphorylation blocks the 5\u2032-hydroxyl required as nucleophile for re-ligation in the Hammerhead ribozyme mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is based on established understanding of the chemical mechanism and is experimentally validated by the control in Figure 6D showing that 5\u2032-phosphorylated \u00b5HHz undergoes cleavage but not circularization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Freeze-thaw cycles enhance ribozyme activity by affecting RNA refolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by citation to prior work (Mutschler et al., 2015) and is consistent with the experimental observation (C82) that freeze-thaw cycles enhance RCS efficiency in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "RNA-catalyzed polymerization is currently limited to RCS on small circular RNAs with maximum ~200 nt products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 represents the current state of the field as supported by citation (Attwater et al., 2013) and provides context for the significance of the 96 nt products achieved in this work (C79-C80).",
+    "result_type": "MINOR"
+  }
+]

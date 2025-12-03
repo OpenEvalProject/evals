@@ -1,0 +1,1883 @@
+{
+  "submission": {
+    "id": "d8615dba-7fc1-4b49-8727-fec969b24830",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:26:47.759063Z",
+    "updated_at": "2025-12-03T07:26:47.759063Z"
+  },
+  "content": [
+    {
+      "id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "submission_id": "d8615dba-7fc1-4b49-8727-fec969b24830",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis for membrane recruitment of ATG16L1 by WIPI2 in autophagy\n\n## Authors\n\n- Lisa M Strong<sup>1</sup> ([ORCID: 0000-0002-4293-8131](https://orcid.org/0000-0002-4293-8131))\n- Chunmei Chang<sup>1</sup> ([ORCID: 0000-0002-5607-7985](https://orcid.org/0000-0002-5607-7985))\n- Julia F Riley<sup>3</sup> ([ORCID: 0000-0001-8518-9786](https://orcid.org/0000-0001-8518-9786))\n- C Alexander Boecker<sup>3</sup> ([ORCID: 0000-0001-9701-5273](https://orcid.org/0000-0001-9701-5273))\n- Thomas G Flower<sup>1</sup> ([ORCID: 0000-0002-7890-6473](https://orcid.org/0000-0002-7890-6473))\n- Cosmo Z Buffalo<sup>1</sup>\n- Xuefeng Ren<sup>1</sup>\n- Andrea KH Stavoe<sup>5</sup> ([ORCID: 0000-0002-4073-4565](https://orcid.org/0000-0002-4073-4565))\n- Erika LF Holzbaur<sup>3</sup> ([ORCID: 0000-0001-5389-4114](https://orcid.org/0000-0001-5389-4114))\n- James H Hurley<sup>1</sup> ([ORCID: 0000-0001-5054-5445](https://orcid.org/0000-0001-5054-5445)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences, University of California, Berkeley Berkeley United States\n3. Aligning Science Across Parkinson\u2019s (ASAP) Collaborative Research Network Chevy Chase United States\n4. Department of Physiology, University of Pennsylvania Perelman School of Medicine Philadelphia United States\n5. Department of Neurobiology and Anatomy, The University of Texas Health Science Center at Houston McGovern Medical School Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAutophagy is a cellular process that degrades cytoplasmic cargo by engulfing it in a double-membrane vesicle, known as the autophagosome, and delivering it to the lysosome. The ATG12\u20135\u201316L1 complex is responsible for conjugating members of the ubiquitin-like ATG8 protein family to phosphatidylethanolamine in the growing autophagosomal membrane, known as the phagophore. ATG12\u20135\u201316L1 is recruited to the phagophore by a subset of the phosphatidylinositol 3-phosphate-binding seven-bladed\u00df -propeller WIPI proteins. We determined the crystal structure of WIPI2d in complex with the WIPI2 interacting region (W2IR) of ATG16L1 comprising residues 207\u2013230 at 1.85 \u00c5 resolution. The structure shows that the ATG16L1 W2IR adopts an alpha helical conformation and binds in an electropositive and hydrophobic groove between WIPI2 \u00df-propeller blades 2 and 3. Mutation of residues at the interface reduces or blocks the recruitment of ATG12\u20135\u201316 L1 and the conjugation of the ATG8 protein LC3B to synthetic membranes. Interface mutants show a decrease in starvation-induced autophagy. Comparisons across the four human WIPIs suggest that WIPI1 and 2 belong to a W2IR-binding subclass responsible for localizing ATG12\u20135\u201316 L1 and driving ATG8 lipidation, whilst WIPI3 and 4 belong to a second W34IR-binding subclass responsible for localizing ATG2, and so directing lipid supply to the nascent phagophore. The structure provides a framework for understanding the regulatory node connecting two central events in autophagy initiation, the action of the autophagic PI 3-kinase complex on the one hand and ATG8 lipidation on the other.\n\n## Introduction\n\nMacroautophagy (hereafter autophagy) maintains cellular homeostasis by sequestering unneeded or harmful cytoplasmic material in double-membrane vesicles known as autophagosomes (Morishita and Mizushima, 2019). Mature autophagosomes fuse with lysosomes, leading to degradation of engulfed contents. Starvation-induced autophagy is thought to target bulk cytosol, while various forms of selective autophagy target damaged mitochondria and other organelles, invading bacteria, protein aggregates, and many other intracellular materials (Anding and Baehrecke, 2017; Gomes and Dikic, 2014). Defects in autophagy are associated with increased vulnerability to pathogens, aging, and neurodegenerative diseases (Levine and Kroemer, 2019). Defects in the autophagy of mitochondria (\u2018mitophagy\u2019) downstream of Parkin and PINK1 are associated with hereditary early onset Parkinson\u2019s disease (Pickrell and Youle, 2015; Stavoe and Holzbaur, 2019).\n\nThe many varieties of bulk and selective autophagy all rely on a handful of shared core components, which include the class III phosphatidylinositol 3-kinase complex I (PI3KC3-C1); the ubiquitin-like ATG8 family (LC3A-C, GABARAP, and GABARAPL1-2 in mammals); the proteins ATG7, ATG3, and ATG12\u20135-16 L1 responsible for conjugating ATG8s to phosphatidylethanolamine (PE); and the WD-repeat protein interacting with phosphoinositide (WIPI family) (Chang et al., 2021a; Mizushima et al., 2011). PI3KC3-C1 is targeted to sites of autophagy initiation by its ATG14 subunit, where it phosphorylates phosphatidylinositol (PI) at the third position in the inositol ring to generate PI(3)P (Itakura et al., 2008; Obara et al., 2006; Sun et al., 2008). ATG8 proteins are attached to the membrane lipid phosphatidylethanolamine (PE) in a process that is closely analogous to the conjugation of ubiquitin to its target proteins (Ichimura et al., 2000). In brief, ATG4 cleaves ATG8 to expose the C-terminal glycine, the ubiquitin E1-like ATG7 then activates ATG8 for transfer to the ubiquitin E2-like ATG3, and the ATG12\u20135-16 L1 complex scaffolds the ATG8 transfer from ATG3 to the headgroup of PE (Klionsky and Schulman, 2014). The function of ATG12\u20135-16L1 is analogous to that of ubiquitin E3 ligases, and we therefore refer to this complex here as \u2018E3\u2019. This process is often referred to as LC3 lipidation, after LC3, the founding member of the ATG8 family in mammals (Kabeya et al., 2000). In mammals, ATG8 conjugation to membranes is important for multiple steps in autophagy and is particularly critical for autophagosome-lysosome fusion (Nguyen et al., 2016; Tsuboyama et al., 2016).\n\nThe two critical steps in autophagy initiation, PI 3-phosphorylation and LC3 lipidation, are connected to one another via a direct interaction between a subset of the PI(3)P-binding WIPI proteins and ATG16L1 (Dooley et al., 2014). The human WIPI1-4 proteins comprise a subset of the seven bladed \u03b2-propeller protein binding to phosphoinositides (PROPPINs) (Dove et al., 2004). PROPPINs bind to PI(3)P and PI(3,5)P2 headgroups through a conserved FRRG motif (Dove et al., 2004; Gaugel et al., 2012) and bind tightly, but reversibly, to membranes using a hydrophobic loop in blade six that inserts into the membrane (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012). WIPI2 is expressed as six known isoforms, which appear to have overlapping functions (Proikas-Cezanne et al., 2015). WIPI2b in particular has been shown to have a central role in bulk and selective autophagy initiation in cells (Dooley et al., 2014; Polson et al., 2010), and WIPI2d potently activated LC3 lipidation in an in vitro giant unilamellar vesicle (GUV) reconstituted system (Fracchiolla et al., 2020).\n\nDespite the centrality of the WIPI2:ATG16L1 interaction to mammalian autophagy initiation, only a predictive model (Dooley et al., 2014), but no experimentally determined structure has been available. Here, we report the crystal structure of WIPI2d:ATG16L1 (207\u2013230) complex at a 1.85 \u00c5 resolution. WIPI2d point mutations in the interface disrupted ATG16L1 binding, reduced the ability of WIPI2 to recruit ATG12\u20135-16 L1 and promote LC3 lipidation on GUVs, and reduced starvation-induced autophagy in cells.\n\n## Results\n\n### Structure determination of WIPI2d:ATG16L1-W2IR\n\nIn order to generate a crystallizable form of WIPI2d, the flexible hydrophobic loop in blade six and the putatively disordered C-terminal region were deleted (Figure 1A). The deletion construct removes the only regions whose sequence diverges between WIPI2b and WIPI2d; thus, the construct represents a WIPI2b/d consensus. A peptide corresponding to the WIPI2-interacting region (\u2018W2IR\u2019) comprising residues 207\u2013230 of ATG16L1 (Dooley et al., 2014) was synthesized. The crystal structure of the WIPI2d:ATG16L1 complex was determined at 1.85 \u00c5 (Figure 1B,C) by molecular replacement using the structure of Kluveromyces lactis Hsv2 (Baskaran et al., 2012) (PDB: 4EXV) as a search model. ATG16L1 was modeled de novo into the density (Figure 1D). The asymmetric unit contains two copies of the WIPI2d:ATG16L1 W2IR complex. One WIPI2d monomer is bound to one ATG16L1 peptide, and the two copies align with a C\u03b1 root-mean-square deviation (RMSD) of 0.3 \u00c5. Statistics of crystallographic data collection and structure refinement are provided in Supplementary file 1. As expected on the basis of the Hsv2 (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012) and WIPI3 (Ren et al., 2020) structures, WIPI2d folds into a seven blade \u00df -propeller, with each blade containing four anti-parallel \u00df-strands. The propeller is ~50 \u00c5 wide and ~30 \u00c5 tall (Figure 1B,C). The FRRG motif that enables WIPI2d binding to phosphoinositides is distal to the ATG16L1 binding site.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig1-v3.jpg)\n\n**Figure 1.:** Structure of WIPI2d bound to ATG16L1 W2IR. (A) Annotated WIPI2d and ATG16L1 domain schematics. WIPI2d construct for crystallography is shown and W2IR from ATG16L1. (B, C) The ribbon diagram of the WIPI2d complex with ATG16L1 W2IR from the (B) bottom and (C) side views. Each blade is colored in accordance with (A). (D) Composite omit map of ATG16L1 W2IR. Modeled ATG16L1 is shown as red carton and the composite omit 2mFo-DFc map contoured at 1\u03c3 is shown in gray.\n\n### Analysis of WIPI2d W2IR: ATG16L1 interface\n\nThe ATG16L1 W2IR nestles between blades 2 and 3 of WIPI2d, burying ~550 \u00c52 of solvent-accessible surface area. Blades 2 and 3 are identical in all six WIPI2 isoforms; thus, we expect that conclusions concerning the ATG16L1 binding mode drawn here will pertain to all WIPI2 isoforms. The WIPI2d binding site for the ATG16L1 W2IR consists of a single deep groove with a mixed electropositive and hydrophobic character (Figure 2A,C). Hydrophobic side chains of Leu 64, Phe 65, Leu 69, Val 83, Ile 92, Cys 93, Ile 124, and Met 127 on WIPI2d contribute to the hydrophobic surface of the groove. The surfaces of Leu 220 and Leu 224 of the ATG16L1 W2IR are buried in this interface (Figure 2C,D). The side chains of WIPI2d His 85, Lys 88, Arg 108, and Lys 128 contribute to the electropositive character of the groove. The acidic side chains of Glu 226 and Glu 230 of ATG16L1 interact with the electropositive patch on WIPI2 (Figure 2E). The presence of WIPI2d Arg 108 and Arg 125, and ATG16L1 Glu 230 in the binding site was correctly predicted by the modeling efforts of Tooze and colleagues (Dooley et al., 2014). The nature of their interactions can now be defined on the basis of the crystal structure of the complex. Gln 217 of ATG16L1 forms a hydrogen bond with Lys 128 of WIPI2d at the N-terminus of the W2IR and WIPI2d, respectively. The C-terminus of the ATG16L1 W2IR, Glu 230 forms a salt bridge with Arg 108 of ATG16L1. Arg125 makes a water-mediated bridge to the W2IR peptide backbone in one of the two complexes in the asymmetric unit. Ser 66, Ser 67, and Ser 68 contribute additional polar interactions. The backbone of ATG16L1 near Ala 227 and Ala 228 forms a hydrogen bond with the backbone of WIPI2d between residues Ser 68 and Leu 69. This backbone binding favorably buries residues Leu 64, Phe 65, and Ser 67 within WIPI2d.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig2-v3.jpg)\n\n**Figure 2.:** Analysis of the Interface. (A) Overall electrostatic surface and (B) closer view of electrostatic surface with ATG16 W2IR shown as a cartoon and key residues labeled. (C) Overall hydrophobic surface of WIPI2d and (D) closer view of the hydrophobic interface with key residues labeled where yellow represents hydrophobic regions. (E) A cartoon and stick representation of hydrogen bonds between ATG16 and WIPI2d shown as black dotted lines with distances noted and key residues shown as sticks.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig3-v3.jpg)\n\n**Figure 3.:** Key interacting residues shown as sticks in cartoon representation of WIPI2d:ATG16L1 interface shown from (A) the WIPI2d face or (B) down the ATG16L1 helix. (C) Inputs for the (D) Pull-down assays of mutant WIPI2d constructs and wild type with GST-ATG16L1 W2IR. GSH resin was used to pull-down GST-ATG16L1 W2IR from purified protein mixture. The pull-down results were performed in triplicates and visualized by SDS\u2013PAGE and Coomassie blue staining.\n\n### Roles of WIPI2 interfacial residues\n\nTo evaluate the role of specific residues at the interface, we introduced single site mutations into WIPI2d to disrupt binding. H85E, K88E, and C93E were designed to perturb the electropositive WIPI2d surface on blade 2 (Figures 2B and 3A,B). L69E and I92E were designed to disrupt the hydrophobic groove for hydrophobic packing of ATG16L1 (Figures 2 and 3Figures 2D and 3A,B). K128E and R108E were chosen to abolish the interactions with Gln 217 and Glu 230 in ATG16L1, respectively (Figures 2E and 3A,B). R125E was designed to disrupt the bridging interaction to Lys88 (Dooley et al., 2014). Both R108E and R125E were previously shown to reduce binding within the cellular context; thus, these two mutants also served to confirm that our in vitro binding experiments support the findings of previously reported immunoprecipitations (Dooley et al., 2014). To investigate the effects of these mutants on complex formation, we purified the mutant proteins and performed a coprecipitation assay using immobilized GST-ATG16L1 W2IR (Figure 3C,D). It was observed that L69E and C93E were prone to aggregation and were therefore not characterized further. All other mutants expressed at near identical levels as wild type, were purified at equivalent yields, and so presumed not to have grossly perturbed structures and stabilities. H85E, K88E, and I92E completely abolished binding to ATG16L1, while R108E and R125E retained weak binding to ATG16L1 (Figure 3D). Interestingly, K128E is coprecipitated at similar levels to WT WIPI2d (Figure 3D). Lys128 is positioned within a flexible loop (Figure 3A) near the location of three disordered Arg residues in the N-terminal part of the ATG16L1 W2IR preceding Gln 217. The resulting charge repulsion might offset the contribution of the W2IR Gln 217 hydrogen bond. The presence of these apparent negative interactions suggests that the association of the wild-type complex has evolved to a moderate affinity to facilitate the dissolution of the complex during the course of autophagosome maturation.\n\n### The WIPI2d:ATG16L1 W2IR interface is required for LC3 lipidation in vitro\n\nWe next assessed the ability of WIPI2d mutants to activate E3 membrane recruitment and LC3 lipidation in a microscopy-based GUV assay (Chang et al., 2021b; Fracchiolla et al., 2020). In the presence of WIPI2d WT and the LC3 conjugation machinery (ATG7, ATG3, the ATG12\u20135-16 L, and a mCherry-LC3B construct corresponding to the ATG4-processed form) (Figure 4A), PI3KC3-C1 robustly triggered membrane recruitment of the E3-GFP complex and activated mCherry-LC3B lipidation (Figure 4B,C). Consistent with expectation, mutation of the previously characterized ATG16L1 binding sites R108E and R125E significantly reduced E3 membrane binding and LC3 lipidation (Figure 4B,C). The mutants H85E and I92E almost completely abolished E3 membrane binding and LC3 lipidation (Figure 4B,C). The K88E mutant also had an obvious defect in E3 recruitment and LC3 lipidation (Figure 4B,C). All of these observations are consistent with the loss of binding noted in the GST pull-down experiments. Consistent with the positive pull-down result, the K128E mutant fully retained the ability to recruit E3 to GUV membrane and activate subsequent LC3 lipidation (Figure 4). These data confirm that the ATG16L1 binding interface on WIPI2d is responsible for the E3 recruitment and activation that promotes LC3 membrane conjugation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig4-v3.jpg)\n\n**Figure 4.:** (A) The schematic drawing illustrates the reaction setting. Colors indicate fluorescent protein-fused components. Components in gray are not labeled but are present in the reaction. (B) Representative confocal images of GUVs showing E3 membrane binding and LC3B lipidation. PI3KC3-C1, WIPI2d WT or mutant, E3-GFP, ATG7, ATG3, mCherry-LC3B, and ATP/Mn2+ were incubated with GUVs (64.8% DOPC: 20% DOPE: 5% DOPS: 10% POPI: 0.2% Atto647 DOPE) at room temperature. Images taken at 30 min were shown. Scale bars, 10 \u00b5m. (C) Quantification of relative intensities of E3-GFP and mCherry-LC3B on GUV membranes in (A) (means \u00b1 SDs are shown; N = 40). p\u22650.5: (ns); 0.01<p<0.05: (*); 0.001<p<0.01: (**); p<0.001 (***); p<0.0001 (****).\n\n### Mutations that disrupt the WIPI2:ATG16L1 W2IR interface impair starvation-induced autophagy\n\nThese structural observations and in vitro reconstitutions cumulatively suggest that mutations disrupting the interface between WIPI2 and ATG16 might be expected to disrupt autophagosome formation. To test this hypothesis, we engineered Halo-tagged WIPI2B constructs containing H85E, K88E, and I92E mutations, as well as a construct containing all three of these mutations. In parallel, we expressed a Halo-tagged WIPI2B construct containing an R108E mutation, previously shown to disrupt the WIPI2B/ATG16 interaction (Dooley et al., 2014). Engineered WIPI2 constructs were expressed in WIPI2 KO HeLa cells generated by CRISPR/Cas9 gene editing and verified by Sanger sequencing and western blot (Fischer et al., 2020). The parent HeLa cell line was tested in parallel, transfected with a vector encoding the Halo-tag only. Autophagy was induced by incubating cells for 2 hr in 1\u00d7 EBSS (starvation media). All EBSS contained 100 nM of bafilomycin A (BafA) to block autophagosome/lysosome fusion.\n\nAutophagosome number was scored to assess the impact of WIPI2 mutations on starvation-induced autophagy (Figure 5A,B). Compared to WIPI2B KO cells transfected with Halo-tagged WT WIPI2, autophagosome number was significantly lower in KO cells expressing the H85E (p<0.0001), I92E (p<0.0001), and triple mutant (H85E/K88E/I92E) (p<0.0001) constructs (n = 4). Each of these mutations caused a reduction in autophagosome formation comparable to that of the previously characterized R108E mutation; no statistically significant difference in autophagosome formation existed between the R108E construct and these mutations. Moreover, introducing WIPI2 containing these mutations lowered autophagosome number per cell significantly compared to WIPI2 KO cells (H85E, p<0.01; I92E, p<0.01; R108E, p<0.01; H85E/K88E/I92E, p<0.01), indicating these mutations likely have a dominant negative effect on autophagosome formation. Consistent with this observation, the R108E WIPI2 mutant was previously found to have a dominant negative effect on autophagosome formation in cells that were partially depleted in WIPI2 by RNAi knockdown (Dooley et al., 2014). WIPI2 with the K88E point mutation was able to facilitate autophagosome formation at a level that was not significantly different than Halo-tagged WT WIPI2, but not to the same extent as cells containing endogenous WIPI2 (p<0.0001). This is consistent with results shown in Figure 4, where the K88E mutation did not have as severe an impact on LC3B lipidation as the H85E and I92E mutations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig5-v3.jpg)\n\n**Figure 5.:** (A) Representative maximum projections of LC3 staining and either Halo or Halo-WIPI2 signal in WT or WIPI2 knockout (KO) cells (indicated on left) following 2 hr of starvation and 100 nM BafA treatment. Scale bar 15 \u00b5m. (B) Number of LC3-positive autophagosomes in either WT cells transfected with Halo, WIPI2 KO cells transfected with Halo, or WIPI2 KO cells transfected with the indicated Halo-tagged WIPI2 construct (labeled by mutation). (C) Number of discrete WIPI2 puncta under the conditions described in (B), measured using maximum projections of Halo-tag fluorescence. Experimental replicates are color-coded, with translucent dots representing individual measurements from each replicate and opaque dots, the corresponding arithmetic mean of that replicate. Error bars \u00b1 SEM; n = 4 independent experiments; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001 based on a one-way ANOVA with Tukey\u2019s multiple comparisons between all conditions.\n\nIn addition to autophagosome number, we also analyzed the number of discrete WIPI2 puncta visualized with the Halo-tag (Figure 5C). We found significantly more WIPI2 puncta in cells transfected with WIPI2 that contained one of the three mutations shown to disrupt autophagosome formation compared to WT (H85E, p<0.0001; I92E, p<0.01; R108E, p<0.0001). Interestingly, the WIPI2 construct containing three mutations (H85E, I92E, and R108E) did not form significantly more puncta compared to WT WIPI2. This suggests that mutations that disrupt, but not eliminate, the W2IR interface may still recruit ATG16 but either fail to function efficiently or are improperly cleared.\n\nAltogether, these data support the model that the interface between WIPI2 and ATG16 mediates autophagosome formation under starvation conditions. Notably, autophagosome formation persists at higher levels in cells without WIPI2 than is observed upon expression of some mutated constructs of WIPI2. Therefore, these data also suggest a robust mechanism for autophagosome formation in which WIPI2 may be one component of the preferential, but not sole, machinery with the potential to orchestrate autophagosome formation.\n\n### In vitro reconstitution of WIPI2 membrane recruitment\n\nWe examined whether WIPI2 recruitment to GUV membranes was perturbed by the W2IR binding site mutations. A simple system including PI3KC3-C1 and E3 was used to explore the possibility that even in the presence of PI(3)P, E3 binding might contribute to WIPI2 recruitment. K88E, R108E, and R125E decreased WIPI2 recruitment to a significant extent (Figure 6A,B), while other mutants did not. In order to determine whether the loss in recruitment resulted from decreased interactions with E3 or membranes, an even simpler model was tested in which 5% PI(3)P was included in the GUVs but no proteins other than WIPI2 were present (Figure 6C). K88E and K128E reduced binding to pure lipid membranes, but other mutants tested, including R108E and R125E, did not (Figure 6C). The effect of the K88E and K128E mutations on binding to PI(3)P-containing GUVs was unexpected, given that these residues are located distal to the FRRG motif involved in the known structural PI(3)P binding site (Baskaran et al., 2012; Krick et al., 2012), and suggests that membrane binding by WIPIs may be more complex than previously appreciated. The defects in autophagosome formation may thus represent a combination of defects in both lipid membrane and ATG16L1 binding. The unique effect of R108E and R125E on ATG16L1 binding and their strong autophagosome formation phenotype confirm the functional importance of ATG16L1 recruitment by WIPI2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig6-v3.jpg)\n\n**Figure 6.:** (A) Representative confocal images of GUVs showing membrane binding of mCherry-WIPI2d. PI3KC3-C1, mCherry-WIPI2d WT or mutant, E3-GFP were incubated with GUVs (64.8% DOPC: 20% DOPE: 5% DOPS: 10% POPI: 0.2% Atto647 DOPE) at room temperature. Images taken at 30 min were shown. Scale bars, 10 \u00b5m. (B) Quantification of relative intensities of mCherry-WIPI2d on GUV membranes in (A) membranes (means \u00b1 SDs are shown; N = 40). (C) Quantification of confocal images of GUVs (69.8% DOPC: 20% DOPE: 5% DOPS: 5% DOPI(3)P: 0.2% Atto647 DOPE) showing membrane binding of mCherry-WIPI2d. mCherry-WIPI2d WT or mutant were incubated with GUVs at room temperature for 30 min and then imaged. (Means \u00b1 SDs are shown; N = 40). p\u22650.5: (ns); 0.01<p<0.05: (*); 0.001<p<0.01: (**); p<0.001 (***); p<0.0001 (****).\n\n### Comparison across the WIPI protein family\n\nThe structure reported here was based on a construct corresponding to a consensus of the WIPI2b/d sequences for blades 1\u20137, since the C-terminal extension, the only region of divergence between the two proteins was deleted. These are the two WIPI2 isoforms that have been previously shown to bind ATG16L1 in immunoprecipitations from cells (Dooley et al., 2014). While the remaining WIPI isoforms diverge from the 2b/d consensus in blade 1, their sequences are identical in the blades 2 and 3 involved in ATG16L1 binding site. To the extent that these other isoforms were reported not to bind ATG16L1, these differences cannot be inherent in the W2IR binding groove itself, but rather must reflect other differences in the cellular context and modifications.\n\nThe only other human WIPI for which a structure is known is that of WIPI3 (Liang et al., 2019; Ren et al., 2020). WIPI3 interacts with the lipid transporter ATG2A (Ren et al., 2020) via what is believed to be a conserved binding site also present in WIPI4. WIPI4 is responsible for recruiting the phospholipid conduit ATG2A to sites of phagophore initiation, where it promotes tethering of the nascent phagophore to the ER membrane source (Chowdhury et al., 2018; Zheng et al., 2017). The structure of WIPI3 is superimposable on that of WIPI2d with a C\u03b1 r.m.s.d. of 1.2 \u00c5 (Figure 7A,B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig7-v3.jpg)\n\n**Figure 7.:** Comparison of WIPI2d and WIPI3. Alignment of WIPI2d and WIPI3 (A) structure and (B) sequence based on structures with W2IR residues denoted with white squares, W34IR with black, and from both with gray. Electrostatic surface comparison of (C) WIPI2d and (D) WIPI3.\n\n### Comparison of yeast and human membrane recruitment of Atg16\n\nA recently reported structure of the yeast WIPI2 ortholog K. lactis Atg21 (Munzel et al., 2021) bound to a fragment of yeast (A. gossypii) Atg16 allowed us to make a direct comparison of Atg16 membrane recruitment across species. Of the three yeast WIPI orthologs Atg18, Hsv2, and Atg21, it is Atg21 that recruits Atg12\u20135\u201316, the preautophagosomal membrane for Atg8 lipidation through its interaction with Atg16 in yeast (Juris et al., 2015). The two \u00df-propeller domains of KlAtg21 and WIPI2d align well with a C\u03b1 r.m.s.d. of 1.5 \u00c5, and both contain a basic patch on blade 2 (Figure 8A,C). The Atg16 peptide is bound between blades two and three in both structures (Figure 8A). Atg16 residues involved in binding share a similar composition (Figure 8B,C). Both AgAtg16 and ATG16L1 interact through a salt bridge situated in the 3AB loop of the \u00df-propeller and hydrophobic residues that are favorably buried between blades two and three. Remarkably, despite these similarities, the N-terminal to C-terminal orientation of the Atg16 helix is reversed (Figure 8B,C). Atg21 orients the N-terminus of AgAtg16 towards the membrane, while WIPI2 orients ATG16L1 N-terminus away from the membrane (Figure 8D,E).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig8-v3.jpg)\n\n**Figure 8.:** (A) Structural alignment of WIPI2 (PDB: 7MU2) and Atg21 (PDB: 6RGO; indigo) structures bound to Atg16. (B) Sequence alignment of Atg16 \u00df-propeller binding residues based on structure. Residues for WIPI2 and Atg21 binding are in highlighted in red and purple, respectively. (C) Electrostatic potential of Atg21 with overlay of AgAtg16 and ATG16L1 in purple and red, respectively. Key interacting residues are shown in sticks and labeled. Model of ATG12\u20135-16 performing LC3 lipidation on the autophagic membrane with (D) WIPI2 recruitment in humans with Helix one membrane binding is labeled (Lystad et al., 2019), and a secondary upward conformation is shown in faded colors versus (E) Atg21 recruitment in yeast.\n\n## Discussion\n\nWIPI2 is the linchpin of the circuit that connects two of the key reactions in autophagy initiation, the synthesis of PI(3)P by PI3KC3-C1, and LC3 lipidation by ATG12\u20135-16 L1. The WIPI2-ATG16L1 interaction is essential for starvation-induced bulk autophagy and xenophagy (Dooley et al., 2014) and for efficient LC3 lipidation in a reconstituted system with physiologically reasonable nanomolar concentrations of autophagy core complexes (Fracchiolla et al., 2020). From the perspective of therapeutic restoration of autophagic function in aging and neurodegeneration, ectopic expression of WIPI2b restores a normal rate of autophagosome biogenesis in aged neurons (Stavoe et al., 2019). Here, we report the high-resolution crystal structure of human WIPI2 and show how its unique electropositive and hydrophobic groove between blades 2 and 3 binds to the ATG16L1 W2IR.\n\nThe functional relevance of the groove residues was investigated by in vitro LC3 lipidation assays and by LC3 puncta formation in starvation-induced autophagy. All but one of the binding site mutants, K128E, reduced in vitro binding as judged by pull-down assays of purified proteins. WIPI2 activation of LC3 lipidation of GUV membranes by ATG12\u20135-16L1 precisely mirrored the results of the pull-down assays, with K128E again being the only mutant exhibiting no reduction. In cells, LC3 puncta formation was also reduced by most of the mutants, although the pattern did not follow the same rank order as the in vitro results. We interpret these data as confirmation that the W2IR binding site is important for LC3 lipidation in vivo, but that the many additional autophagy initiation components, including lipid membranes, present in cells still modulate the effects in subtle ways. Indeed, two of the mutants tested perturbed lipid membrane binding despite being distant from the known PI(3)P binding FRRG motif. In a simple linear paradigm of autophagy initiation, PI(3)P generated by PI3KC3-C1 recruits WIPI2, which in turn recruits E3 to catalyze LC3 lipidation. In this model, mutations that perturb the E3 binding of WIPI2 would not be expected to alter the recruitment of WIPI2 itself. However, at least one other upstream component, FIP200 (Fujita et al., 2013; Gammoh et al., 2013; Nishimura et al., 2013), contributes to E3 recruitment, and ATG16L1 has inherent membrane binding of its own (Lystad et al., 2019). Thus, the presence of E3 can stabilize WIPI2 on membranes in cells, a finding bolstered by our observation of the same effect in vitro.\n\nRemarkably, the binding site for ATG2A is between blades 2 and 3 of WIPI3, the same two blades involved in binding ATG16L1 by WIPI2 (Figure 7). Despite the overall close similarity in the folds of the two WIPIs, the detailed structure of the blade 2\u20133 groove is quite divergent, explaining why WIPI3 does not bind ATG16L1, and WIPI2 does not bind to ATG2A. The Val- and Pro-rich ATG2A sequence that binds to WIPI3 in an extended conformation (Ren et al., 2020), and presumably WIPI4, is completely different in character from the Leu- and Glu-rich helical W2IR of ATG16L1. We propose the term WIPI3/4 interacting region (W34IR) for the ATG2A binding motif to contrast it with the distinct W2IR of ATG16L1. The ATG2A binding groove of WIPI3 is electrostatically neutral, as compared to the electropositive groove in WIPI2. A subset of the essential W2IR binding residues of WIPI2 (Figure 7, white squares) are altered in WIPI3. For example, the critical His 85 of WIPI2 is replaced by Asp in WIPI3. Expanding the analysis to WIPI1 and 4, the main features of the WIPI2 ATG16L1 binding groove are preserved in WIPI1, but not WIPI4 (Figure 9). Conversely, the ATG2A binding groove of WIPI3 is preserved in WIPI4, but not WIPI1 (Figure 9). Thus, the structural findings are consistent with the concept that the four human WIPIs can be subclassified into two groups (Polson et al., 2010): an ATG16L1-binding WIPI1/2 group and an ATG2A-binding WIPI3/4 group.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/70372/elife-70372-fig9-v3.jpg)\n\n**Figure 9.:** Comparison of electrostatic surface potential of (A) WIPI1-4. (B) Hydrophobic surface of WIPI1 with predicted ATG16L1 W2IR shown as cartoon. (C, D) Alignment of WIPI2d crystal structure and WIPI1 homology structure with WIPI1 shown as light green and key residues labeled in the same color as structure.\n\nWhilst WIPI-based recruitment of ATG16L1 is critical for autophagy, a number of other factors are also involved. FIP200 can recruit ATG16L1 to sites of phagophore initiation (Fujita et al., 2013; Gammoh et al., 2013; Nishimura et al., 2013) via the central region of ATG16L1 that centers on residues 239\u2013246 (Fujita et al., 2013) and so adjoins with the WIPI2 binding site. Binding to FIP200 alone in the absence of WIPI2 binding does not support autophagy induction (Dooley et al., 2014), and the nature of the interplay between FIP200 and WIPI2 binding to the ATG16L1 central region will be important to clarify. The Golgi-resident RAB33B also binds to ATG16L1 (Itoh et al., 2008), although the role of this interaction in autophagy is unclear. The RAB33B interaction was recently mapped structurally (Metje-Sprink et al., 2020), and the RAB33B binding site was found to terminate at ATG16L1 residue 210, just N-terminal to the first-ordered residues in the W2IR. In principle, it seems possible that RAB33B, FIP200, and WIPI2 might be capable of binding simultaneously.\n\nOrienting WIPI2d membrane in the edge-on geometry proposed on the basis of previous studies (Baskaran et al., 2012; Krick et al., 2012), the N-terminus of the W2IR projects in the direction opposite to the membrane (Figure 8D). This potentially positions the ATG16L1 coiled coil to project away from the PI(3)P-containing membrane to which WIPI2 is bound. One model is that ATG16L1 could conjugate LC3 to the nascent phagophore in trans whilst anchored to a PI(3)P-containing domain of the ER (Dooley et al., 2014). In vitro, however, it is possible for WIPI2 to efficiently stimulate LC3 lipidation PI(3)P containing membranes in cis (Fracchiolla et al., 2020). On the basis of the recent yeast Atg21:Atg16 crystal structure (Munzel et al., 2021), and the presence of an intact yeast Atg21-binding motif at residues 164\u2013165 of human ATG16L1, we predict that Atg21 is capable of binding to the E3 and positioning its active Atg12\u2013Atg5 unit \u2018backwards\u2019 relative to its positioning by WIPI2. This likely explains why Atg21 is capable of targeting the human E3 to membranes yet fails to activate it for LC3 lipidation (Fracchiolla et al., 2020). Given the possibility that the ATG16L1 coiled coil can pivot with respect to the W2IR, these structural data on their own do not rule cis or trans LC3 lipidation in or out. Additional structures of ATG16L1 as assembled with multiple regulators, in the context of the full ATG12\u20135-16 L1 complex, and in the context of membranes, will be required to answer this question. The high-resolution structure presented here will be an important component for the interpretation of the larger scale, yet likely lower resolution, structures of assemblies yet to be solved.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa human epithelial cell line</td>\n      <td>ATCC</td>\n      <td>CCL-2</td>\n      <td>Authenticated by STR profiling; tested negative for mycoplasma</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>WIPI2-KO cells: HeLa cell line gene-edited to knockout WIPI2 expression</td>\n      <td>Fischer et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pHTC HaloTag</td>\n      <td>Promega</td>\n      <td>G7711</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-WT (Homo sapiens) plasmid for transfection</td>\n      <td>Stavoe et al., 2019</td>\n      <td>Addgene 175025</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-H85E (Homo sapiens) plasmid for transfection</td>\n      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>\n      <td>Addgene 175027</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-K88E (Homo sapiens) plasmid for transfection</td>\n      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>\n      <td>Addgene 175028</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-I92E(Homo sapiens) plasmid for transfection</td>\n      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>\n      <td>Addgene 175029</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-R108E (Homo sapiens) plasmid for transfection</td>\n      <td>Stavoe et al., 2019</td>\n      <td>Addgene 176004</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Halo-WIPI2-H85/K88/I92E (Homo sapiens) plasmid for transfection</td>\n      <td>Modified from Halo-WIPI2-WT in Stavoe et al., 2019</td>\n      <td>Addgene 175033</td>\n      <td>Available from Addgene</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-LC3B, (Rabbit polyclonal) primary antibody</td>\n      <td>Abcam</td>\n      <td>Cat.#ab48394</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rabbit AlexaFluor488, (Goat polyclonal) secondary antibody</td>\n      <td>ThermoFisher</td>\n      <td>Cat.#A11034</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TMRDirect Halo Ligand</td>\n      <td>Promega</td>\n      <td>Cat.#G2991</td>\n      <td>37.5 nM final concentration</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>PMID:22743772</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Ilastik</td>\n      <td>PMID:31570887</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Illustrator 2021</td>\n      <td>Adobe</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 9</td>\n      <td>GraphPad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>35 mm #1.5 glass bottom imaging dishes</td>\n      <td>MatTek</td>\n      <td>Cat.# P35G-1.5\u201320 C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>EBSS</td>\n      <td>ThermoFisher</td>\n      <td>Cat.# 24010043</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK GnTi</td>\n      <td>ATCC</td>\n      <td>CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2d-cs-TEV</td>\n      <td>Fracchiolla et al., 2020</td>\n      <td>Addgene 171419</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2d10-364\u0394263\u2013295-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171830</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dH85E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171831</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dK88E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171832</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dI92E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171833</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dC93E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171834</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dR108E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171835</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dR125E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171836</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-WIPI2dK128E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171837</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2d-cs-TEV</td>\n      <td>Fracchiolla et al., 2020</td>\n      <td>Addgene 178912</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dH85E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171838</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dK88E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171839</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dI92E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171840</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dC93E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171841</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dR108E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171842</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dR125E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171843</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-mcherry-WIPI2dK128E-cs-TEV</td>\n      <td>This paper</td>\n      <td>Addgene 171844</td>\n      <td>Materials and methods section: Plasmids</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLEXm-GST-TEV-ATG14</td>\n      <td></td>\n      <td>Addgene 99329</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-TSF-TEV-BECN1</td>\n      <td></td>\n      <td>Addgene 99328</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-TSF-TEV-VPS34</td>\n      <td></td>\n      <td>Addgene 99327</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCAG-VPS15</td>\n      <td>Stjepanovic et al., 2017</td>\n      <td>Addgene 99326</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGBdest-ATG12-10xHis-TEV-ATG5-10xHis-TEVcs-ATG16L1-GFP-TEVcs-StrepII, ATG7, ATG10</td>\n      <td>Fracchiolla et al., 2020</td>\n      <td>Addgene 169077</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pFast BacHT(B)\u20136xHis-TEV-ATG7</td>\n      <td>Fracchiolla et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET Duet-1-6xHis-TEV-ATG3</td>\n      <td>Fracchiolla et al., 2020</td>\n      <td>Addgene 169079</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET Duet-1-6xHis-TEV-mCherry-LC3B-Gly(\u22065 C)</td>\n      <td>Zaffagnini et al., 2018</td>\n      <td>Addgene 169168</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>96\u20132 well,INTELLI-PLATE (original) tray</td>\n      <td>Molecular Dimensions, Maumee, OH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Greiner pre-greased 24 well Combo Plate (SBS format) with lid</td>\n      <td>Molecular Dimensions, Maumee, OH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Nikon Elements microscope imaging software 4.60</td>\n      <td>Nikon Corporation, Tokyo, Japan</td>\n      <td colspan=\"2\">https://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Glutathione Sepharose 4B GST-tagged protein purification resin</td>\n      <td>GE healthcare, Chicago, IL</td>\n      <td>Cat# 17075605</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Strep-Tactin Superflow high capacity 50 % suspension</td>\n      <td>IBA Lifesciences,G\u00f6ttingen, Germany</td>\n      <td>Cat# 2-1208-010</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>phenix.refine</td>\n      <td>PMID:20124702, 22505256, 31588918</td>\n      <td>RRID:SCR_016736</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS</td>\n      <td>PMID:20124692</td>\n      <td>RRID:SCR_015652</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>POINTLESS</td>\n      <td>PMID:21460446</td>\n      <td>RRID:SCR_014218</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHASER</td>\n      <td>PMID:19461840</td>\n      <td>RRID:SCR_014219</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMol</td>\n      <td>PyMol (pymol.org)</td>\n      <td>RRID:SCR_000305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>APBS</td>\n      <td>PMID:11517324</td>\n      <td>RRID:SCR_008387</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SWISS-MODEL</td>\n      <td>PMID:29788355</td>\n      <td>RRID:SCR_018123</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>PMID:20383002</td>\n      <td>RRID:SCR_014222</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids\n\nWIPI2d crystallography constructs and mutants were sub-cloned from a plasmid from a previous study (Fracchiolla et al., 2020) into the pCAG vector using restriction enzyme cloning. mCherry constructs were cloned similarly with an N-terminal mCherry tag. All constructs had a C-terminal TEV cleavage site followed by TwinStrep tags. WIPI2b WT and R108E plasmids for mammalian cell transfection were as previously described (Stavoe et al., 2019); additional point mutations H85E, K88E, I92E, and the triple mutation 85/88/108E were introduced into the WT construct and verified by sequencing. Protocol available at https://doi.org/10.17504/protocols.io.bxktpkwn (Strong, 2021a).\n\n### Protein expression and purification\n\nPurification of WIPI2d constructs used for crystallization, pull-down assays, and GUV assays were expressed in HEK GnTi cells. Constructs were transfected to cells using polyethylenimine (Polysciences). After 60 hr of expression, cells were harvested and lysed with lysis buffer (50 mM Hepes, pH 7.4, 1% Triton X-100, 300 mM NaCl, and 1 mM Tris(2-carboxyethyl)phosphine [TCEP]) supplemented with EDTA-free protease inhibitors (Roche). The lysate was clarified by centrifugation (17,000 rpm for 1 hr at 4\u00b0C) and incubated with StrepTactin Sepharose resin (IBA) for 2 hr at 4\u00b0C, applied to a gravity column, and washed extensively with wash buffer (50 mM Hepes, pH 7.4, 300 mM NaCl, and 1 mM TCEP). The protein complexes were eluted with wash buffer containing 10 mM desthiobiotin (Sigma) and treated with TEV protease at 4\u00b0C overnight. Cleaved protein was applied to a Superdex 200 column (16/60 prep grade) equilibrated with gel filtration buffer (25 mM Hepes, pH 7.4, 150 mM NaCl, and 1 mM TCEP). Peak fractions were collected, pooled, snap frozen in liquid nitrogen, and stored at \u201380\u00b0C. Purification of ATG12\u20135-16, PI3KC3-C1, ATG7, ATG3, and LC3 used for GUV assays were performed as previously described (Fracchiolla et al., 2020). Protocols are available at https://doi.org/10.17504/protocols.io.buxqnxmw (Strong, 2021b), https://doi.org/10.17504/protocols.io.br6qm9dw (Fracchiolla, 2021a), https://doi.org/10.17504/protocols.io.bseenbbe (Chang, 2021a), https://doi.org/10.17504/protocols.io.bsennbde (Fracchiolla, 2021b), https://doi.org/10.17504/protocols.io.btgknjuw (Turco and Fracchiolla, 2021), https://doi.org/10.17504/protocols.io.btiunkew (Fracchiolla, 2021c).\n\n### Crystallization and structural determination\n\nWIPI2d10-364\u0394263\u2013295: ATG16L1 (207\u2013230) complex was formed overnight with 5\u00d7 molar excess peptide (GenScript). Crystals of the complex were grown using hanging drop vapor diffusion method at 4\u00b0C. One \u03bcL of the protein complex (2 mg/mL) was mixed with one \u03bcL reservoir solution and 0.3 \u00b5L of a crystal seed stock. This was suspended over a 500 \u00b5L reservoir of 22% w/v PEG 3,350 (Hampton Research), 2% v/v Tacsimate pH 7.0 (Molecular Dimension), and 100 mM Hepes pH 7.7. Crystals appeared within 2 days and were continued to grow for approximately a week. Crystals were cryoprotected in reservoir solution supplemented with 25% (v/v) glycerol. A native dataset was collected from a single crystal under cryogenic conditions (100 K) at a wavelength of 0.979 \u00c5 using a Dectris PILATUS 6 M/EIGER 16 M detector (beamline BL12-2, SSRL). The data was indexed and integrated using LABELIT and XDS (Kabsch, 2010). Integrated reflections were scaled, merged, and truncated using AIMLESS and TRUNCATE, respectively. Initial phases were determined by molecular replacement with the program PHASER (McCoy et al., 2007) using KIHsv2 (PDB: 4EXV) (Baskaran et al., 2012) as a search model. ATG16L1 peptide was manually modeled into the structure according to the 2Fo-Fc and Fo-Fc electron density maps using Coot (Emsley et al., 2010). Iterative rounds of manual model building and refinement were performed using Coot (Emsley et al., 2010) and Phenix Refine (Afonine et al., 2012), respectively (https://www.mrc-lmb.cam.ac.uk/public/xtal/doc/phenix/tutorials/mr_refine.html). Data collection and refinement statistics are listed in Supplementary file 1. WIPI2 ATG16L1 interface was analyzed using PDBePISA (Krissinel and Henrick, 2007). All figures were generated with PyMol (http://www.pymol.org). The electrostatic surface was calculated using APBS (Baker et al., 2001) https://github.com/Electrostatics/electrostatics.github.io; Nathan, 2021, in PyMOL. Hydrophobic surface was generated using YBR script in PyMOL (Hagemans et al., 2015). WIPI1 and WIPI4 homology models were generated in SWISS-Model (Bertoni et al., 2017; Bienert et al., 2017; Studer et al., 2020; Studer et al., 2021; Waterhouse et al., 2018) using WIPI2d10-364\u0394263\u2013295 and WIPI3 (PDB: 6KLR) as templates, respectively. Protocol available at https://doi.org/10.17504/protocols.io.bu7tnznn (Strong, 2021c).\n\n### Coprecipitation assay\n\nTen micromolar purified WIPI2d was mixed with 20 \u03bcM of GST or GST-ATG16L1(207\u2013230) and 10 \u03bcL Glutathione Sepharose 4B (GE Healthcare). The final buffer was 25 mM HEPES pH 7.4, 150 mM NaCl, 1 mM TCEP. The final volume was 150 \u03bcL. The system was gently rocked at 4\u00b0C for 2 hr before washing the protein-bound resin three times. Loading dye was added to the beads and bands were visualized using SDS\u2013PAGE gel after coomassie staining. Three replicates were performed. Protocol available at https://doi.org/10.17504/protocols.io.bxkspkwe (Strong, 2021d).\n\n### GUV assay\n\nGUVs were prepared by hydrogel-assisted swelling as described previously (Chang et al., 2021b). The reactions were set up in an eight-well observation chamber (Lab Tek) that pre-coated with 5 mg/mL \u03b2 casein for 30 min. For E3 membrane recruitment and LC3 lipidation assay, a final concentration of 50 nM PI3KC3-C1 complex, 250 nM WIPI2d or mutant proteins, 50 nM E3-GFP complex, 100 nM ATG7, 100 nM ATG3, 500 nM mCherry-LC3B, 50 \u00b5M ATP, and 2 mM MnCl2 were used. For WIPI2d membrane binding assay, a final concentration of 50 nM PI3KC3-C1, 400 nM mCherry-WIPI2d or mutant proteins, and 50 nM E3-GFP complex were used. A final volume of 120 \u00b5L mixture was made for all the reactions. Ten microliters GUVs were added to initiate the reaction. After 5 min incubation, during which random views were picked for imaging, time-lapse images were acquired in multitracking mode on a Nikon A1 confocal microscope with a 63\u00d7 Plan Apochromat 1.4 NA objective. Three biological replicates were performed for each experimental condition. Identical laser power and gain settings were used during the course of all conditions.\n\nFor quantification of protein intensity on GUV membranes, the outline of individual vesicle was manually defined based on the membrane channel. The intensity threshold was calculated by the average intensities of pixels inside and outside of the bead and then intensity measurements of individual bead were obtained. Averages and standard deviations were calculated among the measured values per each condition and plotted in a bar graph. The data were analyzed with GraphPad Prism nine by using one-way ANOVA with Dunn\u2019s multiple comparisons test. Protocol available at https://doi.org/10.17504/protocols.io.bxm2pk8e (Chang, 2021b).\n\n### Starvation experiments in WT and WIPI2 knockout HeLa cells\n\nWIPI2 knockout (KO) HeLa cells and their corresponding parent line were generously provided by Richard Youle (National Institute of Health). Cells were cultured in DMEM (10% FBS, 1% Pen/Strep, 1% GlutaMAX). Cells were authenicated by STR profiling and tested as myoplasma-free at the Penn Genomic Analysis Core. Cells were transfected with 0.75 \u03bcg of the indicated WIPI2 construct or soluble Halo-tag control 18 hr prior to starvation using FuGENE transfection reagent as recommended. To induce starvation, cells were washed twice in 1\u00d7 Earle\u2019s balanced salt solution (EBSS) and incubated for 2 hr in EBSS containing 100 nM baflomycin A and TMR Direct Halo Ligand. To visualize autophagosomes, cells were fixed in ice-cold MeOH at \u221220\u00b0C for 10 min. Cells were incubated in blocking solution (5% normal goat serum, 1% BSA, 0.05% NaN3 in 1\u00d7 PBS) for 1.5 hr. Primary LC3 antibody (ab48394, 1 \u03bcg/mL) was diluted in blocking solution and used for 1 hr at room temperature. Cells were washed thrice in 1\u00d7 PBS and incubated in AlexaFluor 488 (1:1000 in blocking buffer). Cells were then washed once in 1\u00d7 PBS, incubated in PBS with Hoechst (4 \u03bcg/mL) for 10 min to allow for visualization of nuclei, washed thrice more, and stored at 4\u00b0C. HeLa cells were imaged in PBS on a Perkin Elmer spinning disk confocal setup with a Nikon Eclipse Ti inverted microscope, a Hamamatsu EMCCD 9100\u201350 camera, and an Apochromat 100 \u00d7 1.49 NA oil immersion objective. Images were acquired as z-stacks with a 200 nm step size.\n\nZ-stacks were assembled into maximum projections and channels were split using FIJI (NIH). At least one image from each condition, compiled from across biological replicates (a unique passage of HeLa cells was considered a biological replicate), was used to train Ilastik to identify LC3 and WIPI2 puncta. Training images were not used in subsequent data analysis. Images from each experiment and for each condition were processed in batch mode by Ilastik to yield simple segmentation files. Using the Halo-tag channel, cell outlines were drawn by hand and saved as ROIs in FIJI. LC3 and WIPI2 puncta were counted within resulting ROIs using Analyze Particles in FIJI. For both LC3 and WIPI2 puncta, size was set to 0-Infinity (square pixels). Results were tabulated in Microsoft Excel; graphing and statistical tests were performed using GraphPad Prism 9. Superplots were generated as discussed in Lord et al., 2020. One-way ANOVAs were performed on the averages for the biological replicates; Tukey\u2019s multiple comparisons test was used post hoc to compare all conditions to each other. Protocol available at https://doi.org/10.17504/protocols.io.bxpdpmi6 (Riley and Holzbaur, 2021).\n",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "a4db218e-d610-41ec-9b36-698aee40b0e0",
+      "submission_id": "d8615dba-7fc1-4b49-8727-fec969b24830",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wade Harper, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70372.sa1](https://doi.org/10.7554/eLife.70372.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis paper describes the structure of WIPI2d in association with a region of ATG16L1 that interacts with WIPI. Previous work has demonstrated that WIPI proteins bind to PI3P on the surface of phagophores to initiate autophagy. WIPI also associates with ATG16 orthologs to template assembly of the phagophore expansion machinery. The authors map the interface, and also perform biochemical and cell biological experiments that support the molecular structure. Analysis of mutations within the interaction interface reveal the residues required for interaction, confirming the structural data. This information will be very important in efforts to biochemically reconstitute the initial stages of autophagy. This work also highlights the complications of examining mutations in complex interaction surfaces in cells, particularly in cases where multivalent interactions drive the process. The results also explain why there are multiple WIPI proteins in the human genome, reflecting distinct mechanisms of recruitment of ATG16 and ATG2 orthologs to the appropriate membrane.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural Basis for Membrane Recruitment of ATG16L1 by WIPI2 in Autophagy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Volker D\u00f6tsch as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nOverall, the reviewers feel that the paper has merit and in particular provides structural clarity to WIPI2 and its various interactions. However, the reviewers feel that the paper needs additional experiments to fully substantiate the major conclusions. These fall into two areas:\n\n1) As pointed out in detail by reviewer 3, additional data is needed on the binding of some of the WIPI2 mutants to membranes (GUVs) and in particular, addressing the question of whether binding of the mutants requires E3 or not. Specifically, the authors should test the recruitment to GUVs in the absence of E3 for the whole panel shown in Figure 6 (which is apparently done in the presence of E3).\n\n2) Reviewers 1 and 2 commented on the functional studies performed in cells. In these experiments, siRNA was used to reduce the levels of WIPI2, although there was substantial endogenous protein remaining. This creates limitations in the conclusions that can be made in part because certain mutant proteins could be behaving in a dominant negative manner. The reviewers feel, after significant discussion, that the best way to address the function of the mutant WIPIs is to create a knockout allele and perform rescue experiments by expressing the mutant proteins at near endogenous levels. Otherwise one is left trying to argue loss of activity rather than a dominant negative effect. This could potentially be done on key mutants, and would strengthen the paper substantially.\n\n3) It will be important to appropriately cite prior work from the Tooze lab, as mentioned by reviewer 2.\n\nReviewer #1 (Recommendations for the authors):\n\nThis paper describes the structure of WIPI2d in association with a region of ATG16L1 that interacts with WIPI. Previous work has demonstrated that WIPI proteins bind to PI3P on the surface of phagophores to initiate autophagy. WIPI also associates with ATG16 orthologs to template assembly of the phagophore expansion machinery. The authors map the interface, and also perform biochemical and cell biological experiments that support the molecular structure.\n\nIn detail, the authors employed a composite WIPI2b/WIPI2d consensus protein to facilitate crystallization and were able to resolve to <2.0 angstroms. The structure itself is straightforward and the presentation is clear. Mutations in the interface reduce binding between ATG16L1 and WIPI2d, as predicted by the structure.\n\nThe biochemical experiments looking at recruitment to GUVs are straightforward. To examine the relevance of the WIPI2-ATG16L1 interface in cells, the authors partially depleted WIPI2 and then rescued with point mutants or WT using Halo-fused WIPI. They do not show how much the WIPI rescue constructs are over expressed and this could impact some of the results in that at endogenous levels, there could be a stronger phenotype. Another limitation of the experimental approach is that WIPI1, WIPI3 and WIPI4 are still present and could serve partially redundant functions in terms of LC3 puncta. It isn't clear why the authors did not employ a more rigorous approach, such as endogenous knock-ins of the relevant mutants in order to address the question.\n\nAlthough not surprising on a complex interface involving a WD40 surface, some of the mutants affect binding to PI3P on GUVs as well as binding to ATG16L1. The issue here is that some of the effects seen in cells could reflect mostly the PI3P binding function than the ATG16L1 binding function. Indeed the mutants with the strongest phenotypes for LC3 puncta also have the most drastic effect on PI3P binding. The authors address this in the discussion by essentially saying there are additional components that may work together in a partially redundant manner.\n\nFinally, the authors end with some comparative analyses that explain much about why there are multiple WIPI proteins.\n\nOverall, the strength of the paper is the strong biochemistry and crystallography. The in cellulo data largely support the model but are limiting in impact because of the system (RNAi) used and the other complex redundant pathways. In the end, it may be that biochemical reconstituted of the autophagy system provides a better understanding of the pathway than the in cellulo studies, from a mechanistic point of view, given the difficulty in interpreting redundant pathways.\n\nReviewer #2 (Recommendations for the authors):\n\nIn vivo confirmation of mutant relevance \u2013 The hypothesis/design of this figure is not well articulated in the text. It would be helpful to express the expectation that the mutants will function as dominant negatives and to cite that expectation with respect to the Tooze paper (assuming that is what the authors predict). It seems imperative to show what the LC3 puncta formation looks like in the knockdown alone. One interpretation could be that the mutants are all rescuing just not quite to the level of the wildtype protein, if the knockdown is already severely impaired. Furthermore, it seems likely that a more complete knockdown would provide some dynamic range to the LC3 results, making it easier to interpret whether these mutations are significantly impactful.\n\nIn Panel D, the most impressive result is with C93E, but in the in vitro experiments the authors note that this protein is largely insoluble. Is there any reason to believe it is better behaved in cells? If not, this is a simple explanation for why WIPI2 puncta numbers are reduced and further argues against showing any C93E data.\n\nIs there a good reason to not show ATG16 puncta formation? This seems like the most direct test of the authors predictions, that these mutants will disrupt recruitment of the ATG16L1 complex?\n\nDo the mutants in the ATG16L1 interaction site impact WIPI-membrane interaction? The authors interpret the reduction of some WIPI2 puncta in cells as evidence for a disruption in membrane binding and further, they suspect this is due to a cooperative interaction of WIPI with ATG16L1 and with membranes. To test this, they look at WIPI recruitment in their in vitro GUV assay in the presence of ATG16L1. It seems essential to do the same experiment without ATG16L1 though, to rule out the alternative interpretation that these mutations are having effects outside of ATG16L1 binding and perhaps are directly modifying the affinity of WIPI2 for phosphoinositide-rich membranes.\n\nFigure 3 \u2013 D is not indicated in legend. The text describes the outcomes of this experiment for individual mutations as they bind with similar or low \"affinity\", but the design of the experiment does not avail itself to this metric. Furthermore, no replicates are shown or quantification provided.\n\nFigure 4 and Figure 6, axes labeled \"Indensity\".\n\nFigure 3 supplement (uncropped source data not included in main manuscript).\n",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "17b4d49d-174f-4bc4-9629-4ab5173335c1",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C1",
+      "claim": "Autophagy is a cellular process that degrades cytoplasmic cargo by engulfing it in a double-membrane vesicle, known as the autophagosome, and delivering it to the lysosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophagy is a cellular process that degrades cytoplasmic cargo by engulfing it in a double-membrane vesicle, known as the autophagosome, and delivering it to the lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established definition of autophagy supported by extensive scientific literature and represents established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "ad1e5163-205f-43ef-925c-e259eebc0a9f",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C2",
+      "claim": "The ATG12\u20135\u201316L1 complex is responsible for conjugating members of the ubiquitin-like ATG8 protein family to phosphatidylethanolamine in the growing autophagosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATG12\u20135\u201316L1 complex is responsible for conjugating members of the ubiquitin-like ATG8 protein family to phosphatidylethanolamine in the growing autophagosomal membrane, known as the phagophore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of the ATG12-5-16L1 complex in autophagy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "1c97c0c8-2b08-4f54-8ce7-f87c74b22a34",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C4",
+      "claim": "The crystal structure of WIPI2d in complex with the WIPI2 interacting region (W2IR) of ATG16L1 comprising residues 207\u2013230 was determined at 1.85 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the crystal structure of WIPI2d in complex with the WIPI2 interacting region (W2IR) of ATG16L1 comprising residues 207\u2013230 at 1.85 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding reported in the manuscript with crystallographic data provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "944b159f-984c-440e-996a-c0b471724a40",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C7",
+      "claim": "Mutation of residues at the WIPI2-ATG16L1 interface reduces or blocks the recruitment of ATG12\u20135\u201316L1 to synthetic membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of residues at the interface reduces or blocks the recruitment of ATG12\u20135\u201316 L1 and the conjugation of the ATG8 protein LC3B to synthetic membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from GUV assays shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "d766f499-d3e6-441b-8426-307071c555ee",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C8",
+      "claim": "Mutation of residues at the WIPI2-ATG16L1 interface reduces or blocks the conjugation of the ATG8 protein LC3B to synthetic membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of residues at the interface reduces or blocks the recruitment of ATG12\u20135\u201316 L1 and the conjugation of the ATG8 protein LC3B to synthetic membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from GUV assays shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "fc14976d-8b44-4458-a36f-ceecc85663b9",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C9",
+      "claim": "Interface mutants show a decrease in starvation-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interface mutants show a decrease in starvation-induced autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cellular autophagy assays shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "20769ede-b76d-4e8e-bff3-be59d3b564c9",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C10",
+      "claim": "WIPI1 and 2 belong to a W2IR-binding subclass responsible for localizing ATG12\u20135\u201316L1 and driving ATG8 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons across the four human WIPIs suggest that WIPI1 and 2 belong to a W2IR-binding subclass responsible for localizing ATG12\u20135\u201316 L1 and driving ATG8 lipidation, whilst WIPI3 and 4 belong to a second W34IR-binding subclass responsible for localizing ATG2, and so directing lipid supply to the nascent phagophore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparisons and sequence analysis across WIPI family members.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3a6ac3d3-12d1-4744-961c-a8c67c9815c4",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C11",
+      "claim": "WIPI3 and 4 belong to a W34IR-binding subclass responsible for localizing ATG2 and directing lipid supply to the nascent phagophore.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons across the four human WIPIs suggest that WIPI1 and 2 belong to a W2IR-binding subclass responsible for localizing ATG12\u20135\u201316 L1 and driving ATG8 lipidation, whilst WIPI3 and 4 belong to a second W34IR-binding subclass responsible for localizing ATG2, and so directing lipid supply to the nascent phagophore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparisons and sequence analysis across WIPI family members.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3ba99dbd-26df-4a0c-806c-85e379aad9b4",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C12",
+      "claim": "Starvation-induced autophagy is thought to target bulk cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation-induced autophagy is thought to target bulk cytosol, while various forms of selective autophagy target damaged mitochondria and other organelles, invading bacteria, protein aggregates, and many other intracellular materials (Anding and Baehrecke, 2017; Gomes and Dikic, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c1e29bd3-af81-4a64-942a-e6cf32570f12",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C13",
+      "claim": "Various forms of selective autophagy target damaged mitochondria and other organelles, invading bacteria, protein aggregates, and many other intracellular materials.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation-induced autophagy is thought to target bulk cytosol, while various forms of selective autophagy target damaged mitochondria and other organelles, invading bacteria, protein aggregates, and many other intracellular materials (Anding and Baehrecke, 2017; Gomes and Dikic, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "6305fbd2-7644-45a8-a92d-fd462216d782",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C14",
+      "claim": "Defects in autophagy are associated with increased vulnerability to pathogens, aging, and neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in autophagy are associated with increased vulnerability to pathogens, aging, and neurodegenerative diseases (Levine and Kroemer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "195875d3-d23f-475a-ad0b-dc260ae9994b",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C15",
+      "claim": "Defects in the autophagy of mitochondria ('mitophagy') downstream of Parkin and PINK1 are associated with hereditary early onset Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in the autophagy of mitochondria ('mitophagy') downstream of Parkin and PINK1 are associated with hereditary early onset Parkinson's disease (Pickrell and Youle, 2015; Stavoe and Holzbaur, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "44d6c329-443f-432c-916c-51876c4ad08d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C16",
+      "claim": "PI3KC3-C1 is targeted to sites of autophagy initiation by its ATG14 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "PI3KC3-C1 is targeted to sites of autophagy initiation by its ATG14 subunit, where it phosphorylates phosphatidylinositol (PI) at the third position in the inositol ring to generate PI(3)P (Itakura et al., 2008; Obara et al., 2006; Sun et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "7267e6f3-988d-4d7f-9263-6a2b87cbcf51",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C17",
+      "claim": "PI3KC3-C1 phosphorylates phosphatidylinositol (PI) at the third position in the inositol ring to generate PI(3)P.",
+      "claim_type": "EXPLICIT",
+      "source": "PI3KC3-C1 is targeted to sites of autophagy initiation by its ATG14 subunit, where it phosphorylates phosphatidylinositol (PI) at the third position in the inositol ring to generate PI(3)P (Itakura et al., 2008; Obara et al., 2006; Sun et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "466faae1-d2ce-45de-b4dc-c35a447947bc",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C18",
+      "claim": "ATG4 cleaves ATG8 to expose the C-terminal glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, ATG4 cleaves ATG8 to expose the C-terminal glycine, the ubiquitin E1-like ATG7 then activates ATG8 for transfer to the ubiquitin E2-like ATG3, and the ATG12\u20135-16 L1 complex scaffolds the ATG8 transfer from ATG3 to the headgroup of PE (Klionsky and Schulman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "9cc52cf0-e4d2-45d7-a3bf-0917f149a898",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C19",
+      "claim": "The ubiquitin E1-like ATG7 activates ATG8 for transfer to the ubiquitin E2-like ATG3.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, ATG4 cleaves ATG8 to expose the C-terminal glycine, the ubiquitin E1-like ATG7 then activates ATG8 for transfer to the ubiquitin E2-like ATG3, and the ATG12\u20135-16 L1 complex scaffolds the ATG8 transfer from ATG3 to the headgroup of PE (Klionsky and Schulman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3b1497b1-df9d-4ce2-a360-cf7603e35f69",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C20",
+      "claim": "The ATG12\u20135-16L1 complex scaffolds the ATG8 transfer from ATG3 to the headgroup of PE.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, ATG4 cleaves ATG8 to expose the C-terminal glycine, the ubiquitin E1-like ATG7 then activates ATG8 for transfer to the ubiquitin E2-like ATG3, and the ATG12\u20135-16 L1 complex scaffolds the ATG8 transfer from ATG3 to the headgroup of PE (Klionsky and Schulman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "a19f3990-3be2-46d0-ac4d-42702ad69cfd",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C21",
+      "claim": "In mammals, ATG8 conjugation to membranes is important for multiple steps in autophagy and is particularly critical for autophagosome-lysosome fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, ATG8 conjugation to membranes is important for multiple steps in autophagy and is particularly critical for autophagosome-lysosome fusion (Nguyen et al., 2016; Tsuboyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "11947889-25ac-4350-895c-ea04c26d7aa6",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C22",
+      "claim": "The two critical steps in autophagy initiation, PI 3-phosphorylation and LC3 lipidation, are connected to one another via a direct interaction between a subset of the PI(3)P-binding WIPI proteins and ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "The two critical steps in autophagy initiation, PI 3-phosphorylation and LC3 lipidation, are connected to one another via a direct interaction between a subset of the PI(3)P-binding WIPI proteins and ATG16L1 (Dooley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "82e89deb-25b8-4d5d-a8c7-c1816f72da7a",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C23",
+      "claim": "PROPPINs bind to PI(3)P and PI(3,5)P2 headgroups through a conserved FRRG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "PROPPINs bind to PI(3)P and PI(3,5)P2 headgroups through a conserved FRRG motif (Dove et al., 2004; Gaugel et al., 2012) and bind tightly, but reversibly, to membranes using a hydrophobic loop in blade six that inserts into the membrane (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "bb110eb5-355e-47c1-a2ac-7f74f3f130da",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C24",
+      "claim": "PROPPINs bind tightly, but reversibly, to membranes using a hydrophobic loop in blade six that inserts into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PROPPINs bind to PI(3)P and PI(3,5)P2 headgroups through a conserved FRRG motif (Dove et al., 2004; Gaugel et al., 2012) and bind tightly, but reversibly, to membranes using a hydrophobic loop in blade six that inserts into the membrane (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "631f4717-8d93-4c1e-a235-1233f82f64f7",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C25",
+      "claim": "WIPI2 is expressed as six known isoforms, which appear to have overlapping functions.",
+      "claim_type": "EXPLICIT",
+      "source": "WIPI2 is expressed as six known isoforms, which appear to have overlapping functions (Proikas-Cezanne et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "07921a6f-4660-46a6-94b1-c2bbb70834b9",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C26",
+      "claim": "WIPI2b has been shown to have a central role in bulk and selective autophagy initiation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "WIPI2b in particular has been shown to have a central role in bulk and selective autophagy initiation in cells (Dooley et al., 2014; Polson et al., 2010), and WIPI2d potently activated LC3 lipidation in an in vitro giant unilamellar vesicle (GUV) reconstituted system (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "1784a256-3598-480a-be6b-fa352f8004a4",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C27",
+      "claim": "WIPI2d potently activated LC3 lipidation in an in vitro giant unilamellar vesicle (GUV) reconstituted system.",
+      "claim_type": "EXPLICIT",
+      "source": "WIPI2b in particular has been shown to have a central role in bulk and selective autophagy initiation in cells (Dooley et al., 2014; Polson et al., 2010), and WIPI2d potently activated LC3 lipidation in an in vitro giant unilamellar vesicle (GUV) reconstituted system (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "111f7b5f-d402-4240-9fce-861658c40da9",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C28",
+      "claim": "WIPI2d folds into a seven blade \u03b2-propeller, with each blade containing four anti-parallel \u03b2-strands.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected on the basis of the Hsv2 (Baskaran et al., 2012; Krick et al., 2012; Watanabe et al., 2012) and WIPI3 (Ren et al., 2020) structures, WIPI2d folds into a seven blade \u00df -propeller, with each blade containing four anti-parallel \u00df-strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure determination, consistent with previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "e37a447c-5a09-4085-b4cd-831f5ed35084",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C29",
+      "claim": "The WIPI2d propeller is approximately 50 \u00c5 wide and approximately 30 \u00c5 tall.",
+      "claim_type": "EXPLICIT",
+      "source": "The propeller is ~50 \u00c5 wide and ~30 \u00c5 tall (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structure shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "4ced3dd8-862b-4294-9fd1-f8373b2d514c",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C30",
+      "claim": "The FRRG motif that enables WIPI2d binding to phosphoinositides is distal to the ATG16L1 binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRRG motif that enables WIPI2d binding to phosphoinositides is distal to the ATG16L1 binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure determination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3d3f02b1-e516-425a-bdd7-5c4552e6a865",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C31",
+      "claim": "The ATG16L1 W2IR nestles between blades 2 and 3 of WIPI2d, burying approximately 550 \u00c52 of solvent-accessible surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATG16L1 W2IR nestles between blades 2 and 3 of WIPI2d, burying ~550 \u00c52 of solvent-accessible surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation and calculation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "1819be34-e01b-45e4-81b4-c8ee343a9525",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C32",
+      "claim": "Blades 2 and 3 are identical in all six WIPI2 isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Blades 2 and 3 are identical in all six WIPI2 isoforms; thus, we expect that conclusions concerning the ATG16L1 binding mode drawn here will pertain to all WIPI2 isoforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of WIPI2 isoforms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "8086b814-37d8-4f8f-8e28-d95a86e9a5e8",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C33",
+      "claim": "The WIPI2d binding site for the ATG16L1 W2IR consists of a single deep groove with a mixed electropositive and hydrophobic character.",
+      "claim_type": "EXPLICIT",
+      "source": "The WIPI2d binding site for the ATG16L1 W2IR consists of a single deep groove with a mixed electropositive and hydrophobic character (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "57fbeb8b-f90d-4ccd-9135-d41df004f8b3",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C34",
+      "claim": "Hydrophobic side chains of Leu 64, Phe 65, Leu 69, Val 83, Ile 92, Cys 93, Ile 124, and Met 127 on WIPI2d contribute to the hydrophobic surface of the groove.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic side chains of Leu 64, Phe 65, Leu 69, Val 83, Ile 92, Cys 93, Ile 124, and Met 127 on WIPI2d contribute to the hydrophobic surface of the groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "bf1a9599-ba17-45fd-96f1-294f5ecc334c",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C35",
+      "claim": "The surfaces of Leu 220 and Leu 224 of the ATG16L1 W2IR are buried in the WIPI2d interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The surfaces of Leu 220 and Leu 224 of the ATG16L1 W2IR are buried in this interface (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "e260880a-04a6-4461-92ed-de9277240408",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C36",
+      "claim": "The side chains of WIPI2d His 85, Lys 88, Arg 108, and Lys 128 contribute to the electropositive character of the groove.",
+      "claim_type": "EXPLICIT",
+      "source": "The side chains of WIPI2d His 85, Lys 88, Arg 108, and Lys 128 contribute to the electropositive character of the groove.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "6b543397-9334-4ecb-811b-f2767e53f2f3",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C37",
+      "claim": "The acidic side chains of Glu 226 and Glu 230 of ATG16L1 interact with the electropositive patch on WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "The acidic side chains of Glu 226 and Glu 230 of ATG16L1 interact with the electropositive patch on WIPI2 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "9fd982ef-0e66-4381-898d-2d61522d5f14",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C38",
+      "claim": "The presence of WIPI2d Arg 108 and Arg 125, and ATG16L1 Glu 230 in the binding site was correctly predicted by the modeling efforts of Tooze and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of WIPI2d Arg 108 and Arg 125, and ATG16L1 Glu 230 in the binding site was correctly predicted by the modeling efforts of Tooze and colleagues (Dooley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous modeling work cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "63882a72-61ed-4cd9-9381-77fc2fe0ea10",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C39",
+      "claim": "Gln 217 of ATG16L1 forms a hydrogen bond with Lys 128 of WIPI2d.",
+      "claim_type": "EXPLICIT",
+      "source": "Gln 217 of ATG16L1 forms a hydrogen bond with Lys 128 of WIPI2d at the N-terminus of the W2IR and WIPI2d, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "7d72d869-6599-4b09-ae23-f25390b1b55a",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C40",
+      "claim": "Glu 230 of ATG16L1 forms a salt bridge with Arg 108 of WIPI2d.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus of the ATG16L1 W2IR, Glu 230 forms a salt bridge with Arg 108 of ATG16L1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "1b418bb4-cbe6-4c49-a5f7-db84c19e288e",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C41",
+      "claim": "Arg125 makes a water-mediated bridge to the W2IR peptide backbone in one of the two complexes in the asymmetric unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg125 makes a water-mediated bridge to the W2IR peptide backbone in one of the two complexes in the asymmetric unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "7dd7100b-7b49-49ad-84bb-1e733da8eb1b",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C42",
+      "claim": "The backbone of ATG16L1 near Ala 227 and Ala 228 forms a hydrogen bond with the backbone of WIPI2d between residues Ser 68 and Leu 69.",
+      "claim_type": "EXPLICIT",
+      "source": "The backbone of ATG16L1 near Ala 227 and Ala 228 forms a hydrogen bond with the backbone of WIPI2d between residues Ser 68 and Leu 69.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "2217e38b-9cd1-47b1-9ad9-fac6e932d64a",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C43",
+      "claim": "H85E, K88E, and I92E WIPI2d mutants completely abolished binding to ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "H85E, K88E, and I92E completely abolished binding to ATG16L1, while R108E and R125E retained weak binding to ATG16L1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "0a97e43c-3091-4951-a9c5-7953b475910f",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C44",
+      "claim": "R108E and R125E WIPI2d mutants retained weak binding to ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "H85E, K88E, and I92E completely abolished binding to ATG16L1, while R108E and R125E retained weak binding to ATG16L1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "13238a4b-b171-49ed-b668-f11097b2b691",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C45",
+      "claim": "K128E WIPI2d mutant is coprecipitated at similar levels to WT WIPI2d.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, K128E is coprecipitated at similar levels to WT WIPI2d (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pull-down assay data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "bcbc03ad-e1d8-4dbf-b3db-bc05a8057d8f",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C46",
+      "claim": "In the presence of WIPI2d WT and the LC3 conjugation machinery, PI3KC3-C1 robustly triggered membrane recruitment of the E3-GFP complex and activated mCherry-LC3B lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of WIPI2d WT and the LC3 conjugation machinery (ATG7, ATG3, the ATG12\u20135-16 L, and a mCherry-LC3B construct corresponding to the ATG4-processed form) (Figure 4A), PI3KC3-C1 robustly triggered membrane recruitment of the E3-GFP complex and activated mCherry-LC3B lipidation (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c3dcb79d-275a-400d-93eb-0f7c669c3258",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C47",
+      "claim": "R108E and R125E WIPI2d mutations significantly reduced E3 membrane binding and LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with expectation, mutation of the previously characterized ATG16L1 binding sites R108E and R125E significantly reduced E3 membrane binding and LC3 lipidation (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "38367e44-e062-4e57-a226-3df5b0ece106",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C48",
+      "claim": "H85E and I92E WIPI2d mutants almost completely abolished E3 membrane binding and LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutants H85E and I92E almost completely abolished E3 membrane binding and LC3 lipidation (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "2642664c-18ff-4ffc-81ce-f178ff832b66",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C49",
+      "claim": "K88E WIPI2d mutant had an obvious defect in E3 recruitment and LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "The K88E mutant also had an obvious defect in E3 recruitment and LC3 lipidation (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "8066fe90-3906-4ed9-84de-4c81de308c4d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C50",
+      "claim": "K128E WIPI2d mutant fully retained the ability to recruit E3 to GUV membrane and activate subsequent LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the positive pull-down result, the K128E mutant fully retained the ability to recruit E3 to GUV membrane and activate subsequent LC3 lipidation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "86c76d78-9b8e-4b9a-a3c8-cafb82949313",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C51",
+      "claim": "Autophagosome number was significantly lower in WIPI2 KO cells expressing H85E compared to cells expressing WT WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WIPI2B KO cells transfected with Halo-tagged WT WIPI2, autophagosome number was significantly lower in KO cells expressing the H85E (p<0.0001), I92E (p<0.0001), and triple mutant (H85E/K88E/I92E) (p<0.0001) constructs (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "cdec9934-833c-44d8-837c-d4999c463c9b",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C52",
+      "claim": "Autophagosome number was significantly lower in WIPI2 KO cells expressing I92E compared to cells expressing WT WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WIPI2B KO cells transfected with Halo-tagged WT WIPI2, autophagosome number was significantly lower in KO cells expressing the H85E (p<0.0001), I92E (p<0.0001), and triple mutant (H85E/K88E/I92E) (p<0.0001) constructs (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "a66b081f-ea9f-4dcc-8a58-6554a50b51c8",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C53",
+      "claim": "Autophagosome number was significantly lower in WIPI2 KO cells expressing the triple mutant (H85E/K88E/I92E) compared to cells expressing WT WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to WIPI2B KO cells transfected with Halo-tagged WT WIPI2, autophagosome number was significantly lower in KO cells expressing the H85E (p<0.0001), I92E (p<0.0001), and triple mutant (H85E/K88E/I92E) (p<0.0001) constructs (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "f4375cab-4aaf-4499-98da-d411b4065199",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C54",
+      "claim": "Each of the H85E, I92E, and triple mutant mutations caused a reduction in autophagosome formation comparable to that of the R108E mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these mutations caused a reduction in autophagosome formation comparable to that of the previously characterized R108E mutation; no statistically significant difference in autophagosome formation existed between the R108E construct and these mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "97df7040-7d32-4ef1-9834-2bf65379c565",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C55",
+      "claim": "Introducing WIPI2 containing H85E, I92E, R108E, or triple mutations lowered autophagosome number per cell significantly compared to WIPI2 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, introducing WIPI2 containing these mutations lowered autophagosome number per cell significantly compared to WIPI2 KO cells (H85E, p<0.01; I92E, p<0.01; R108E, p<0.01; H85E/K88E/I92E, p<0.01), indicating these mutations likely have a dominant negative effect on autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "38f17854-62b9-4f4a-9595-97bc10e8f633",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C56",
+      "claim": "H85E, I92E, R108E, and triple WIPI2 mutations likely have a dominant negative effect on autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, introducing WIPI2 containing these mutations lowered autophagosome number per cell significantly compared to WIPI2 KO cells (H85E, p<0.01; I92E, p<0.01; R108E, p<0.01; H85E/K88E/I92E, p<0.01), indicating these mutations likely have a dominant negative effect on autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that mutant WIPI2 expression reduces autophagosome formation below KO levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "2eceb382-2214-40a3-9923-a1cc4ca58e0f",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C57",
+      "claim": "WIPI2 with the K88E point mutation was able to facilitate autophagosome formation at a level that was not significantly different than Halo-tagged WT WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "WIPI2 with the K88E point mutation was able to facilitate autophagosome formation at a level that was not significantly different than Halo-tagged WT WIPI2, but not to the same extent as cells containing endogenous WIPI2 (p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "50f30ede-820f-4e83-b6d3-ca30d7fcd8ee",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C58",
+      "claim": "K88E, R108E, and R125E WIPI2d mutations decreased WIPI2 recruitment to GUV membranes to a significant extent.",
+      "claim_type": "EXPLICIT",
+      "source": "K88E, R108E, and R125E decreased WIPI2 recruitment to a significant extent (Figure 6A,B), while other mutants did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c5847323-7783-46c6-a98e-568e34f24db2",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C59",
+      "claim": "K88E and K128E WIPI2d mutations reduced binding to pure lipid membranes containing PI(3)P.",
+      "claim_type": "EXPLICIT",
+      "source": "K88E and K128E reduced binding to pure lipid membranes, but other mutants tested, including R108E and R125E, did not (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "4de97633-d3ed-4c18-b81e-78162fac7588",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C60",
+      "claim": "R108E and R125E WIPI2d mutations did not reduce binding to pure lipid membranes containing PI(3)P.",
+      "claim_type": "EXPLICIT",
+      "source": "K88E and K128E reduced binding to pure lipid membranes, but other mutants tested, including R108E and R125E, did not (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GUV assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "7dfcb7a7-151e-425a-8cf5-a712752f8eac",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C61",
+      "claim": "The structure of WIPI3 is superimposable on that of WIPI2d with a C\u03b1 r.m.s.d. of 1.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of WIPI3 is superimposable on that of WIPI2d with a C\u03b1 r.m.s.d. of 1.2 \u00c5 (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison calculation shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "bde117b9-73df-41d8-97e0-4e404e695b96",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C62",
+      "claim": "The two \u03b2-propeller domains of KlAtg21 and WIPI2d align well with a C\u03b1 r.m.s.d. of 1.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The two \u00df-propeller domains of KlAtg21 and WIPI2d align well with a C\u03b1 r.m.s.d. of 1.5 \u00c5, and both contain a basic patch on blade 2 (Figure 8A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison calculation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "e5f174cf-0141-4dd9-8147-453adf5d2945",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C63",
+      "claim": "Both KlAtg21 and WIPI2d contain a basic patch on blade 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The two \u00df-propeller domains of KlAtg21 and WIPI2d align well with a C\u03b1 r.m.s.d. of 1.5 \u00c5, and both contain a basic patch on blade 2 (Figure 8A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c1eeab6a-3ab2-41fd-8a9b-b0acea08e606",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C64",
+      "claim": "The Atg16 peptide is bound between blades two and three in both KlAtg21 and WIPI2d structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The Atg16 peptide is bound between blades two and three in both structures (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "e8dad326-7097-404b-b8eb-596cacc3d6c4",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C65",
+      "claim": "Despite similarities in binding location and composition, the N-terminal to C-terminal orientation of the Atg16 helix is reversed between KlAtg21 and WIPI2d.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, despite these similarities, the N-terminal to C-terminal orientation of the Atg16 helix is reversed (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "131c2e12-e85e-4c5e-a4a7-fe7c00f1f143",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C66",
+      "claim": "Atg21 orients the N-terminus of AgAtg16 towards the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg21 orients the N-terminus of AgAtg16 towards the membrane, while WIPI2 orients ATG16L1 N-terminus away from the membrane (Figure 8D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation and interpretation shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "53525958-d355-48e7-a88e-1a25a23cc1db",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C67",
+      "claim": "WIPI2 orients ATG16L1 N-terminus away from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg21 orients the N-terminus of AgAtg16 towards the membrane, while WIPI2 orients ATG16L1 N-terminus away from the membrane (Figure 8D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation and interpretation shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "93673dd6-a19b-4abc-99d6-c90fb3ff648b",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C68",
+      "claim": "WIPI2 is the linchpin of the circuit that connects two of the key reactions in autophagy initiation, the synthesis of PI(3)P by PI3KC3-C1, and LC3 lipidation by ATG12\u20135-16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "WIPI2 is the linchpin of the circuit that connects two of the key reactions in autophagy initiation, the synthesis of PI(3)P by PI3KC3-C1, and LC3 lipidation by ATG12\u20135-16 L1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the findings and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "8a464c23-f421-4dff-995b-e79f0e55b8f5",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C69",
+      "claim": "The WIPI2-ATG16L1 interaction is essential for starvation-induced bulk autophagy and xenophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "The WIPI2-ATG16L1 interaction is essential for starvation-induced bulk autophagy and xenophagy (Dooley et al., 2014) and for efficient LC3 lipidation in a reconstituted system with physiologically reasonable nanomolar concentrations of autophagy core complexes (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "424fa244-01cc-4817-9650-1ace65a6610c",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C70",
+      "claim": "The WIPI2-ATG16L1 interaction is essential for efficient LC3 lipidation in a reconstituted system with physiologically reasonable nanomolar concentrations of autophagy core complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The WIPI2-ATG16L1 interaction is essential for starvation-induced bulk autophagy and xenophagy (Dooley et al., 2014) and for efficient LC3 lipidation in a reconstituted system with physiologically reasonable nanomolar concentrations of autophagy core complexes (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "29099fb8-fbc7-462e-872e-9ab5a76a0712",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C71",
+      "claim": "Ectopic expression of WIPI2b restores a normal rate of autophagosome biogenesis in aged neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "From the perspective of therapeutic restoration of autophagic function in aging and neurodegeneration, ectopic expression of WIPI2b restores a normal rate of autophagosome biogenesis in aged neurons (Stavoe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "50ef781f-f15a-472e-b678-f8fae2087165",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C72",
+      "claim": "The binding site for ATG2A is between blades 2 and 3 of WIPI3, the same two blades involved in binding ATG16L1 by WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the binding site for ATG2A is between blades 2 and 3 of WIPI3, the same two blades involved in binding ATG16L1 by WIPI2 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison observation shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "9aff9225-c67a-45b6-b73f-a3dcf028aa30",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C73",
+      "claim": "Despite the overall close similarity in the folds of WIPI2 and WIPI3, the detailed structure of the blade 2\u20133 groove is quite divergent.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the overall close similarity in the folds of the two WIPIs, the detailed structure of the blade 2\u20133 groove is quite divergent, explaining why WIPI3 does not bind ATG16L1, and WIPI2 does not bind to ATG2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison and interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c9754e2e-052e-4536-8843-917156398ce6",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C74",
+      "claim": "WIPI3 does not bind ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the overall close similarity in the folds of the two WIPIs, the detailed structure of the blade 2\u20133 groove is quite divergent, explaining why WIPI3 does not bind ATG16L1, and WIPI2 does not bind to ATG2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural differences and supported by previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "af6c8da9-b684-449e-9818-0c21d616eed0",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C75",
+      "claim": "WIPI2 does not bind to ATG2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the overall close similarity in the folds of the two WIPIs, the detailed structure of the blade 2\u20133 groove is quite divergent, explaining why WIPI3 does not bind ATG16L1, and WIPI2 does not bind to ATG2A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural differences and supported by previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "5eac2e8a-512d-491a-b131-95f913f3f13c",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C76",
+      "claim": "The ATG2A binding groove of WIPI3 is electrostatically neutral, as compared to the electropositive groove in WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATG2A binding groove of WIPI3 is electrostatically neutral, as compared to the electropositive groove in WIPI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "0e043c5d-f1de-4d6a-97c5-b1a8cb88cd47",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C77",
+      "claim": "The main features of the WIPI2 ATG16L1 binding groove are preserved in WIPI1, but not WIPI4.",
+      "claim_type": "EXPLICIT",
+      "source": "Expanding the analysis to WIPI1 and 4, the main features of the WIPI2 ATG16L1 binding groove are preserved in WIPI1, but not WIPI4 (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence and structural comparison shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "d1be59cd-a9b3-46c4-ad24-f7e842f6641d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C78",
+      "claim": "The ATG2A binding groove of WIPI3 is preserved in WIPI4, but not WIPI1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the ATG2A binding groove of WIPI3 is preserved in WIPI4, but not WIPI1 (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence and structural comparison shown in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "7aaa3ec9-6695-4324-9d4b-3ade3c9a1b27",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C79",
+      "claim": "The four human WIPIs can be subclassified into an ATG16L1-binding WIPI1/2 group and an ATG2A-binding WIPI3/4 group.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the structural findings are consistent with the concept that the four human WIPIs can be subclassified into two groups (Polson et al., 2010): an ATG16L1-binding WIPI1/2 group and an ATG2A-binding WIPI3/4 group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural comparisons and supported by previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "24a3a970-4aa5-4dd6-a53f-5ae71d9712b6",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C80",
+      "claim": "FIP200 can recruit ATG16L1 to sites of phagophore initiation via the central region of ATG16L1 that centers on residues 239\u2013246.",
+      "claim_type": "EXPLICIT",
+      "source": "FIP200 can recruit ATG16L1 to sites of phagophore initiation (Fujita et al., 2013; Gammoh et al., 2013; Nishimura et al., 2013) via the central region of ATG16L1 that centers on residues 239\u2013246 (Fujita et al., 2013) and so adjoins with the WIPI2 binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "bdb3a7e4-61b3-4c44-b56f-835e7be09620",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C81",
+      "claim": "Binding to FIP200 alone in the absence of WIPI2 binding does not support autophagy induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding to FIP200 alone in the absence of WIPI2 binding does not support autophagy induction (Dooley et al., 2014), and the nature of the interplay between FIP200 and WIPI2 binding to the ATG16L1 central region will be important to clarify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "61fc0eb4-b308-4a5b-b821-02754de1b686",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C82",
+      "claim": "The Golgi-resident RAB33B binds to ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi-resident RAB33B also binds to ATG16L1 (Itoh et al., 2008), although the role of this interaction in autophagy is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "0ebd19be-bcdb-40b4-b5de-269d248bafc7",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C83",
+      "claim": "The RAB33B binding site terminates at ATG16L1 residue 210, just N-terminal to the first-ordered residues in the W2IR.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAB33B interaction was recently mapped structurally (Metje-Sprink et al., 2020), and the RAB33B binding site was found to terminate at ATG16L1 residue 210, just N-terminal to the first-ordered residues in the W2IR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "4ef24c98-8fc8-4205-a902-be51a58b0a92",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C84",
+      "claim": "It is possible that RAB33B, FIP200, and WIPI2 might be capable of binding simultaneously to ATG16L1.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, it seems possible that RAB33B, FIP200, and WIPI2 might be capable of binding simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the structural locations of binding sites.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "001251dd-9251-46dd-895d-4063d2a4a823",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C85",
+      "claim": "The N-terminus of the W2IR projects in the direction opposite to the membrane when WIPI2d is oriented in the edge-on geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Orienting WIPI2d membrane in the edge-on geometry proposed on the basis of previous studies (Baskaran et al., 2012; Krick et al., 2012), the N-terminus of the W2IR projects in the direction opposite to the membrane (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation based on structural orientation and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "dcd6f208-6846-4beb-a3e5-0f6f3fdf5af0",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C86",
+      "claim": "One model is that ATG16L1 could conjugate LC3 to the nascent phagophore in trans whilst anchored to a PI(3)P-containing domain of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "One model is that ATG16L1 could conjugate LC3 to the nascent phagophore in trans whilst anchored to a PI(3)P-containing domain of the ER (Dooley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "9503fceb-4acb-418d-bdb8-b0763b7d6865",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C87",
+      "claim": "In vitro, it is possible for WIPI2 to efficiently stimulate LC3 lipidation PI(3)P containing membranes in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, however, it is possible for WIPI2 to efficiently stimulate LC3 lipidation PI(3)P containing membranes in cis (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "aedf99aa-2635-445c-b134-d0982265f2ab",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C88",
+      "claim": "Atg21 is capable of binding to the human E3 and positioning its active Atg12\u2013Atg5 unit 'backwards' relative to its positioning by WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of the recent yeast Atg21:Atg16 crystal structure (Munzel et al., 2021), and the presence of an intact yeast Atg21-binding motif at residues 164\u2013165 of human ATG16L1, we predict that Atg21 is capable of binding to the E3 and positioning its active Atg12\u2013Atg5 unit 'backwards' relative to its positioning by WIPI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on structural comparison and sequence analysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "4b6e1504-7fb2-4f8d-882d-85369155b914",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C89",
+      "claim": "The predicted backwards positioning of E3 by Atg21 likely explains why Atg21 is capable of targeting the human E3 to membranes yet fails to activate it for LC3 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "This likely explains why Atg21 is capable of targeting the human E3 to membranes yet fails to activate it for LC3 lipidation (Fracchiolla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural reasoning and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "78166ab2-587a-4b07-ae4a-2d004b2f65c1",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C90",
+      "claim": "The asymmetric unit contains two copies of the WIPI2d:ATG16L1 W2IR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric unit contains two copies of the WIPI2d:ATG16L1 W2IR complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a crystallographic observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "78853a23-2b20-4302-90d4-ac25f36227c1",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C91",
+      "claim": "One WIPI2d monomer is bound to one ATG16L1 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "One WIPI2d monomer is bound to one ATG16L1 peptide, and the two copies align with a C\u03b1 root-mean-square deviation (RMSD) of 0.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a crystallographic observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "209fe340-0d32-43ad-a875-ceceb861e6b3",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C92",
+      "claim": "The two copies of the WIPI2d:ATG16L1 W2IR complex in the asymmetric unit align with a C\u03b1 root-mean-square deviation (RMSD) of 0.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "One WIPI2d monomer is bound to one ATG16L1 peptide, and the two copies align with a C\u03b1 root-mean-square deviation (RMSD) of 0.3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a crystallographic calculation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "af7b05cb-1081-4dde-9372-fd9841418d93",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C93",
+      "claim": "L69E and C93E WIPI2d mutants were prone to aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "It was observed that L69E and C93E were prone to aggregation and were therefore not characterized further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation during protein purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3910c025-f242-4e7c-b107-ffe073af7ae9",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C94",
+      "claim": "All WIPI2d mutants except L69E and C93E expressed at near identical levels as wild type and were purified at equivalent yields.",
+      "claim_type": "EXPLICIT",
+      "source": "All other mutants expressed at near identical levels as wild type, were purified at equivalent yields, and so presumed not to have grossly perturbed structures and stabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation during protein expression and purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "47491da6-1e0c-4b85-a151-cbfd573b5324",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C95",
+      "claim": "Significantly more WIPI2 puncta were found in cells transfected with WIPI2 containing H85E, I92E, or R108E mutations compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly more WIPI2 puncta in cells transfected with WIPI2 that contained one of the three mutations shown to disrupt autophagosome formation compared to WT (H85E, p<0.0001; I92E, p<0.01; R108E, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "066b9eab-eadb-4301-9156-178d69d0591d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C96",
+      "claim": "The WIPI2 construct containing three mutations (H85E, I92E, and R108E) did not form significantly more puncta compared to WT WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the WIPI2 construct containing three mutations (H85E, I92E, and R108E) did not form significantly more puncta compared to WT WIPI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cellular imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "ef609bdb-c71d-4305-9ac0-048c4da199ca",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C97",
+      "claim": "Mutations that disrupt, but not eliminate, the W2IR interface may still recruit ATG16 but either fail to function efficiently or are improperly cleared.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that mutations that disrupt, but not eliminate, the W2IR interface may still recruit ATG16 but either fail to function efficiently or are improperly cleared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the puncta formation data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "c270b7cc-8522-4da4-ab06-b4f7d398bc1a",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C98",
+      "claim": "Autophagosome formation persists at higher levels in cells without WIPI2 than is observed upon expression of some mutated constructs of WIPI2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, autophagosome formation persists at higher levels in cells without WIPI2 than is observed upon expression of some mutated constructs of WIPI2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from cellular autophagy assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "1371ad17-4478-4c60-b4a0-eb90adf9777d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C99",
+      "claim": "There is a robust mechanism for autophagosome formation in which WIPI2 may be one component of the preferential, but not sole, machinery with the potential to orchestrate autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these data also suggest a robust mechanism for autophagosome formation in which WIPI2 may be one component of the preferential, but not sole, machinery with the potential to orchestrate autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that autophagy persists in WIPI2 KO cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "f807dbd6-b1a5-4048-9dd9-8369d563de93",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "claim_id": "C100",
+      "claim": "The R108E WIPI2 mutant was previously found to have a dominant negative effect on autophagosome formation in cells that were partially depleted in WIPI2 by RNAi knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, the R108E WIPI2 mutant was previously found to have a dominant negative effect on autophagosome formation in cells that were partially depleted in WIPI2 by RNAi knockdown (Dooley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea5302d0-b04c-4e61-91f5-9ec155df552d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of WIPI2d in complex with ATG16L1 W2IR (residues 207-230) was determined at 1.85 \u00c5 resolution, revealing a seven-blade \u03b2-propeller fold with the W2IR binding between blades 2 and 3, burying ~550 \u00c5\u00b2 of surface area. The structure shows the propeller is ~50 \u00c5 wide and ~30 \u00c5 tall, with the FRRG motif distal to the ATG16L1 binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C32, and C90-C92 provide comprehensive crystallographic data including resolution, structural measurements, and binding interface details. The structure determination is well-documented with appropriate statistics (Supplementary file 1) and multiple structural observations are consistent with previous PROPPIN structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "21937400-3d29-4715-95d7-b3222e04c55d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The WIPI2d-ATG16L1 interface consists of a deep groove with mixed electropositive and hydrophobic character. Specific residues including hydrophobic residues (Leu64, Phe65, Leu69, Val83, Ile92, Cys93, Ile124, Met127) and electropositive residues (His85, Lys88, Arg108, Lys128) on WIPI2d interact with ATG16L1 residues (Leu220, Leu224, Glu226, Glu230) through hydrogen bonds and salt bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 describe detailed structural interactions at the interface supported by crystallographic data shown in Figure 2. The interactions are consistent with previous modeling predictions (C38) and include specific distance measurements and hydrogen bonding patterns visible in the electron density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "0414259a-c0d2-4394-8239-cb0f537c49e6",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutagenesis of interface residues shows differential effects on ATG16L1 binding: H85E, K88E, and I92E completely abolished binding, R108E and R125E retained weak binding, while K128E maintained wild-type binding levels. L69E and C93E mutants aggregated and could not be characterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 and C93-C94 are supported by pull-down assay data (Figure 3D) showing clear differences in binding between mutants. The experimental controls (protein expression and purification yields) support that observed differences reflect binding rather than protein stability issues, except for the aggregation-prone mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro GUV reconstitution assays demonstrate that WIPI2d interface mutations differentially affect E3 recruitment and LC3B lipidation. H85E and I92E almost completely abolished activity, K88E showed obvious defects, R108E and R125E significantly reduced activity, while K128E retained full activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by quantitative GUV assay data (Figure 4B,C) with statistical analysis (N=40, means \u00b1 SDs shown). The results are internally consistent with the binding data (C43-C45) and demonstrate functional consequences of the structural interactions. The experimental design includes appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cellular autophagy assays in WIPI2 KO HeLa cells show that H85E, I92E, and triple mutant (H85E/K88E/I92E) significantly reduced autophagosome formation compared to WT WIPI2 (p<0.0001), with effects comparable to R108E. These mutants reduced autophagosome numbers below KO levels, suggesting dominant negative effects. K88E showed intermediate effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 are supported by cellular imaging data (Figure 5A,B) with appropriate statistical analysis (n=4 independent experiments, one-way ANOVA with Tukey's multiple comparisons). The dominant negative interpretation (C56) is reasonably inferred from the observation that mutant expression reduces autophagy below KO baseline. However, the mechanism of dominant negativity is not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "2f62c1ac-5bdd-4d79-817f-82fd0a28cd4c",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "WIPI2d membrane recruitment assays reveal that K88E, R108E, and R125E decreased recruitment to GUVs containing PI3KC3-C1 and E3, while K88E and K128E (but not R108E and R125E) reduced binding to pure PI(3)P-containing membranes, suggesting complex membrane binding mechanisms beyond the FRRG motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by GUV binding data (Figure 6A-C, N=40). The unexpected finding that K88E and K128E affect PI(3)P binding despite being distant from the FRRG motif is appropriately noted as surprising. The differential effects between the two assay conditions (with/without proteins) suggest both direct lipid binding and protein-mediated recruitment contribute to WIPI2 localization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural comparisons across human WIPI family members reveal two functional subclasses: WIPI1/2 with conserved ATG16L1-binding features (electropositive groove) and WIPI3/4 with conserved ATG2A-binding features (neutral groove). Despite overall structural similarity (WIPI2d-WIPI3 C\u03b1 RMSD 1.2 \u00c5), the blade 2-3 groove is divergent, explaining binding specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C61-C79 are supported by structural alignments (Figures 7, 9), sequence analysis, and comparison with WIPI3 structure (PDB: 6KLR). The subclassification is consistent with previous literature (Polson et al., 2010) and supported by structural data. However, the functional assignments for WIPI1 and WIPI4 are based on homology modeling rather than experimental structures, introducing some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "ccc06427-2ab4-410c-aef1-ef49341485da",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison with yeast KlAtg21:AgAtg16 structure reveals that despite similar binding location (between blades 2-3) and basic patch on blade 2 (C\u03b1 RMSD 1.5 \u00c5), the N-to-C terminal orientation of the Atg16 helix is reversed between species. This likely explains why yeast Atg21 can recruit but not activate human E3 for LC3 lipidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 and C88-C89 are supported by structural comparison with KlAtg21 (PDB: 6RGO) shown in Figure 8. The reversed orientation is clearly demonstrated. The functional interpretation (C89) connecting orientation to activation is reasonably inferred and supported by citation to Fracchiolla et al., 2020, though the prediction about human ATG16L1 binding to Atg21 (C88) is speculative based on sequence motif presence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "aac24136-c596-46d8-af4e-0307695beafe",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "WIPI2 puncta analysis shows that H85E, I92E, and R108E mutations significantly increased puncta formation compared to WT (p<0.0001, p<0.01, p<0.0001 respectively), while the triple mutant did not. This suggests partial-loss-of-function mutants may recruit ATG16 but fail to function efficiently or clear properly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 are supported by cellular imaging data (Figure 5C). However, the interpretation in C97 is speculative. The increased puncta could reflect multiple mechanisms (impaired function, impaired clearance, altered dynamics), and the data do not distinguish between these possibilities. The unexpected behavior of the triple mutant (C96) further complicates interpretation and is not adequately explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "d24ee6d7-26fd-4435-87ed-4c70c7d7ff70",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Autophagosome formation persists at higher levels in WIPI2 KO cells than in cells expressing certain WIPI2 mutants, suggesting WIPI2 is one component of a robust autophagosome formation mechanism but not the sole machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are supported by the cellular autophagy data (Figure 5B) showing residual autophagy in KO cells. The interpretation that WIPI2 is not the sole machinery is reasonable given the data. However, alternative explanations (e.g., compensation by WIPI1, or dominant negative effects of mutants) are not fully explored. The conclusion is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "55503bf8-ea24-47af-a179-4adcca914e05",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establish that autophagy involves autophagosome formation and lysosomal degradation, with ATG12-5-16L1 conjugating ATG8 proteins to PE. WIPI proteins connect PI(3)P synthesis by PI3KC3-C1 to LC3 lipidation via direct interaction with ATG16L1, which is essential for starvation-induced autophagy and has therapeutic relevance in aging and neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C27, C68-C71 represent established knowledge supported by extensive citations to prior literature. These provide appropriate context for the current work. The claims are well-supported by the cited references and represent consensus understanding in the autophagy field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple proteins interact with ATG16L1's central region: FIP200 (residues 239-246), RAB33B (terminating at residue 210), and WIPI2 (residues 207-230). FIP200 binding alone does not support autophagy induction without WIPI2. The adjacent binding sites suggest possible simultaneous binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by citations to previous structural and functional studies. The speculation about simultaneous binding (C84) is appropriately qualified as uncertain and based on structural proximity. The functional relationship between FIP200 and WIPI2 binding (C81) is supported by citation but acknowledged as requiring further clarification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "39013b70-8c50-4d0f-b906-dca8c424e851",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Based on WIPI2d membrane orientation, the W2IR N-terminus projects away from the membrane, potentially positioning ATG16L1 to conjugate LC3 in trans to the phagophore while anchored to ER. However, in vitro data show WIPI2 can efficiently stimulate LC3 lipidation in cis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is an interpretation based on structural orientation and previous studies. Claims C86-C87 present competing models (trans vs. cis) that are both supported by different lines of evidence. The structural data alone cannot distinguish between these mechanisms, and the authors appropriately acknowledge this uncertainty. Additional experiments would be needed to resolve the cis vs. trans question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    },
+    {
+      "id": "3294e66f-908c-41b0-9de3-037236668a8d",
+      "content_id": "caf9cb74-5e00-4bd6-bf57-b63ad1e490bc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The R108E WIPI2 mutant was previously found to have a dominant negative effect on autophagosome formation in cells partially depleted of WIPI2 by RNAi knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 is supported by citation to Dooley et al., 2014 and is consistent with the current findings (C55-C56). This provides independent validation of the dominant negative phenotype observed in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:26:47.759063Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1c97c0c8-2b08-4f54-8ce7-f87c74b22a34",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "111f7b5f-d402-4240-9fce-861658c40da9",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "e37a447c-5a09-4085-b4cd-831f5ed35084",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "4ced3dd8-862b-4294-9fd1-f8373b2d514c",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "3d3f02b1-e516-425a-bdd7-5c4552e6a865",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "1819be34-e01b-45e4-81b4-c8ee343a9525",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "78166ab2-587a-4b07-ae4a-2d004b2f65c1",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "78853a23-2b20-4302-90d4-ac25f36227c1",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "209fe340-0d32-43ad-a875-ceceb861e6b3",
+      "result_id": "ea5302d0-b04c-4e61-91f5-9ec155df552d"
+    },
+    {
+      "claim_id": "8086b814-37d8-4f8f-8e28-d95a86e9a5e8",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "57fbeb8b-f90d-4ccd-9135-d41df004f8b3",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "bf1a9599-ba17-45fd-96f1-294f5ecc334c",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "e260880a-04a6-4461-92ed-de9277240408",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "6b543397-9334-4ecb-811b-f2767e53f2f3",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "9fd982ef-0e66-4381-898d-2d61522d5f14",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "63882a72-61ed-4cd9-9381-77fc2fe0ea10",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "7d72d869-6599-4b09-ae23-f25390b1b55a",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "1b418bb4-cbe6-4c49-a5f7-db84c19e288e",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "7dd7100b-7b49-49ad-84bb-1e733da8eb1b",
+      "result_id": "21937400-3d29-4715-95d7-b3222e04c55d"
+    },
+    {
+      "claim_id": "2217e38b-9cd1-47b1-9ad9-fac6e932d64a",
+      "result_id": "0414259a-c0d2-4394-8239-cb0f537c49e6"
+    },
+    {
+      "claim_id": "0a97e43c-3091-4951-a9c5-7953b475910f",
+      "result_id": "0414259a-c0d2-4394-8239-cb0f537c49e6"
+    },
+    {
+      "claim_id": "13238a4b-b171-49ed-b668-f11097b2b691",
+      "result_id": "0414259a-c0d2-4394-8239-cb0f537c49e6"
+    },
+    {
+      "claim_id": "af7b05cb-1081-4dde-9372-fd9841418d93",
+      "result_id": "0414259a-c0d2-4394-8239-cb0f537c49e6"
+    },
+    {
+      "claim_id": "3910c025-f242-4e7c-b107-ffe073af7ae9",
+      "result_id": "0414259a-c0d2-4394-8239-cb0f537c49e6"
+    },
+    {
+      "claim_id": "bcbc03ad-e1d8-4dbf-b3db-bc05a8057d8f",
+      "result_id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a"
+    },
+    {
+      "claim_id": "c3dcb79d-275a-400d-93eb-0f7c669c3258",
+      "result_id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a"
+    },
+    {
+      "claim_id": "38367e44-e062-4e57-a226-3df5b0ece106",
+      "result_id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a"
+    },
+    {
+      "claim_id": "2642664c-18ff-4ffc-81ce-f178ff832b66",
+      "result_id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a"
+    },
+    {
+      "claim_id": "8066fe90-3906-4ed9-84de-4c81de308c4d",
+      "result_id": "218be8d2-cd32-4e49-97c6-5b47bf5b356a"
+    },
+    {
+      "claim_id": "86c76d78-9b8e-4b9a-a3c8-cafb82949313",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "cdec9934-833c-44d8-837c-d4999c463c9b",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "a66b081f-ea9f-4dcc-8a58-6554a50b51c8",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "f4375cab-4aaf-4499-98da-d411b4065199",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "97df7040-7d32-4ef1-9834-2bf65379c565",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "38f17854-62b9-4f4a-9595-97bc10e8f633",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "2eceb382-2214-40a3-9923-a1cc4ca58e0f",
+      "result_id": "3681c0f2-7f35-43b4-ae35-3b6973e9ec9d"
+    },
+    {
+      "claim_id": "50f30ede-820f-4e83-b6d3-ca30d7fcd8ee",
+      "result_id": "2f62c1ac-5bdd-4d79-817f-82fd0a28cd4c"
+    },
+    {
+      "claim_id": "c5847323-7783-46c6-a98e-568e34f24db2",
+      "result_id": "2f62c1ac-5bdd-4d79-817f-82fd0a28cd4c"
+    },
+    {
+      "claim_id": "4de97633-d3ed-4c18-b81e-78162fac7588",
+      "result_id": "2f62c1ac-5bdd-4d79-817f-82fd0a28cd4c"
+    },
+    {
+      "claim_id": "20769ede-b76d-4e8e-bff3-be59d3b564c9",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "3a6ac3d3-12d1-4744-961c-a8c67c9815c4",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "7dfcb7a7-151e-425a-8cf5-a712752f8eac",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "50ef781f-f15a-472e-b678-f8fae2087165",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "9aff9225-c67a-45b6-b73f-a3dcf028aa30",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "c9754e2e-052e-4536-8843-917156398ce6",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "af6c8da9-b684-449e-9818-0c21d616eed0",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "5eac2e8a-512d-491a-b131-95f913f3f13c",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "0e043c5d-f1de-4d6a-97c5-b1a8cb88cd47",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "d1be59cd-a9b3-46c4-ad24-f7e842f6641d",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "7aaa3ec9-6695-4324-9d4b-3ade3c9a1b27",
+      "result_id": "6b265db8-c92d-44f0-b205-c4f37dbbcd79"
+    },
+    {
+      "claim_id": "bde117b9-73df-41d8-97e0-4e404e695b96",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "e5f174cf-0141-4dd9-8147-453adf5d2945",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "c1eeab6a-3ab2-41fd-8a9b-b0acea08e606",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "e8dad326-7097-404b-b8eb-596cacc3d6c4",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "131c2e12-e85e-4c5e-a4a7-fe7c00f1f143",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "53525958-d355-48e7-a88e-1a25a23cc1db",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "aedf99aa-2635-445c-b134-d0982265f2ab",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "4b6e1504-7fb2-4f8d-882d-85369155b914",
+      "result_id": "ccc06427-2ab4-410c-aef1-ef49341485da"
+    },
+    {
+      "claim_id": "47491da6-1e0c-4b85-a151-cbfd573b5324",
+      "result_id": "aac24136-c596-46d8-af4e-0307695beafe"
+    },
+    {
+      "claim_id": "066b9eab-eadb-4301-9156-178d69d0591d",
+      "result_id": "aac24136-c596-46d8-af4e-0307695beafe"
+    },
+    {
+      "claim_id": "ef609bdb-c71d-4305-9ac0-048c4da199ca",
+      "result_id": "aac24136-c596-46d8-af4e-0307695beafe"
+    },
+    {
+      "claim_id": "c270b7cc-8522-4da4-ab06-b4f7d398bc1a",
+      "result_id": "d24ee6d7-26fd-4435-87ed-4c70c7d7ff70"
+    },
+    {
+      "claim_id": "1371ad17-4478-4c60-b4a0-eb90adf9777d",
+      "result_id": "d24ee6d7-26fd-4435-87ed-4c70c7d7ff70"
+    },
+    {
+      "claim_id": "17b4d49d-174f-4bc4-9629-4ab5173335c1",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "ad1e5163-205f-43ef-925c-e259eebc0a9f",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "3ba99dbd-26df-4a0c-806c-85e379aad9b4",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "c1e29bd3-af81-4a64-942a-e6cf32570f12",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "6305fbd2-7644-45a8-a92d-fd462216d782",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "195875d3-d23f-475a-ad0b-dc260ae9994b",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "44d6c329-443f-432c-916c-51876c4ad08d",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "7267e6f3-988d-4d7f-9263-6a2b87cbcf51",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "466faae1-d2ce-45de-b4dc-c35a447947bc",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "9cc52cf0-e4d2-45d7-a3bf-0917f149a898",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "3b1497b1-df9d-4ce2-a360-cf7603e35f69",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "a19f3990-3be2-46d0-ac4d-42702ad69cfd",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "11947889-25ac-4350-895c-ea04c26d7aa6",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "82e89deb-25b8-4d5d-a8c7-c1816f72da7a",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "bb110eb5-355e-47c1-a2ac-7f74f3f130da",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "631f4717-8d93-4c1e-a235-1233f82f64f7",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "07921a6f-4660-46a6-94b1-c2bbb70834b9",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "1784a256-3598-480a-be6b-fa352f8004a4",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "93673dd6-a19b-4abc-99d6-c90fb3ff648b",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "8a464c23-f421-4dff-995b-e79f0e55b8f5",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "424fa244-01cc-4817-9650-1ace65a6610c",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "29099fb8-fbc7-462e-872e-9ab5a76a0712",
+      "result_id": "55503bf8-ea24-47af-a179-4adcca914e05"
+    },
+    {
+      "claim_id": "24a3a970-4aa5-4dd6-a53f-5ae71d9712b6",
+      "result_id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3"
+    },
+    {
+      "claim_id": "bdb3a7e4-61b3-4c44-b56f-835e7be09620",
+      "result_id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3"
+    },
+    {
+      "claim_id": "61fc0eb4-b308-4a5b-b821-02754de1b686",
+      "result_id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3"
+    },
+    {
+      "claim_id": "0ebd19be-bcdb-40b4-b5de-269d248bafc7",
+      "result_id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3"
+    },
+    {
+      "claim_id": "4ef24c98-8fc8-4205-a902-be51a58b0a92",
+      "result_id": "56a564d3-3f71-4e55-84dc-3cd8dcb8cfb3"
+    },
+    {
+      "claim_id": "001251dd-9251-46dd-895d-4063d2a4a823",
+      "result_id": "39013b70-8c50-4d0f-b906-dca8c424e851"
+    },
+    {
+      "claim_id": "dcd6f208-6846-4beb-a3e5-0f6f3fdf5af0",
+      "result_id": "39013b70-8c50-4d0f-b906-dca8c424e851"
+    },
+    {
+      "claim_id": "9503fceb-4acb-418d-bdb8-b0763b7d6865",
+      "result_id": "39013b70-8c50-4d0f-b906-dca8c424e851"
+    },
+    {
+      "claim_id": "f807dbd6-b1a5-4048-9dd9-8369d563de93",
+      "result_id": "3294e66f-908c-41b0-9de3-037236668a8d"
+    }
+  ],
+  "comparisons": []
+}

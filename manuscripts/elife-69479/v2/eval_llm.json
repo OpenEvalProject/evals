@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study validated that a modified STARR-seq MPRA construct with enhancers cloned in the 3'-UTR of EGFP driven by HspMinP, packaged in scAAV and delivered to P0 mouse brain, can drive cell-type-specific expression. Using the Dlx enhancer, 92.7% of EGFP+ cells resembled interneurons by morphology, with similar specificity to a conventional 5' orientation construct, demonstrating that enhancer orientation and minimal promoter choice did not greatly affect cell-type-specific activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C47 provide converging evidence from morphological analysis (C44: 92.7% interneuron-like cells), Lhx6 co-labeling (C37), and comparison with conventional construct orientation (C46) that the 3'-UTR STARR-seq design maintains cell-type specificity. The data support that the construct design is valid for the MPRA application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A proof-of-principle miniMPRA testing 16 mouse sequences (~900 bp each) in P7 mouse cortex successfully distinguished putative enhancers from negative controls. Previously validated embryonic brain enhancers and putative enhancers near neurodevelopmental disorder genes showed activity, while negative control sequences displayed low transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the miniMPRA experiment with clear positive and negative results matching predictions based on prior data (C50, C55). This provides initial validation that the approach can identify functional enhancers in vivo, supporting progression to the full-scale MPRA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study generated an MPRA library of 408 candidate human DNA sequences (~900 bp each) organized into four groups: GWAS lead SNPs (epilepsy/schizophrenia), SNPs in LD with CACNA1C/SCN1A loci, fetal brain DNase hypersensitive sites near autism risk genes, and human orthologs of miniMPRA sequences. After batch cloning, 345/408 (84.6%) amplicons were verified in the library, with 59% expected to have no enhancer activity and 41% with evidence for brain regulatory capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C69 describe the library design and cloning success with clear rationale for each group (C58-C65) and quantitative outcomes (C68: 84.6% cloning success). The balanced design with expected positives and negatives (C66) is appropriate for validating the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The viral MPRA library was delivered to four P0 mouse brains and analyzed at P7. After quality filtering (308/345 amplicons passing), DNA replicates showed high correlation (r > 0.824), while RNA replicates showed lower but significant correlation (r > 0.546). Strong correlation between previral library and P7 viral DNA (r > 0.804) and between technical replicates (r = 0.827) demonstrated that viral packaging, delivery, and processing did not substantially affect amplicon representation, though some replicate-specific RNA dropout was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 provide comprehensive quality control data showing the assay is reproducible at the DNA level with expected variability at the RNA level. The technical replicate control (C78) rules out PCR bias as the main source of RNA variability, supporting the validity of the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Amplicon representation in the previral library and P7 viral DNA correlated with GC content, indicating GC-based differences impact PCR and cloning efficiency. However, reduced correlation between GC content and MPRA RNA, with no further GC bias arising after viral packaging and delivery, suggests GC bias originated from the batch cloning process. Input viral DNA and MPRA RNA were generally correlated, indicating basal transcription from the minimal promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 identify and localize a technical bias (GC content affecting cloning, C82, C84) while demonstrating it does not confound the RNA measurements (C83). The correlation between DNA and RNA (C85) is appropriately interpreted as basal promoter activity, consistent with other MPRA studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Using two analytical approaches (regression residual-based and ratiometric RNA/DNA comparison), the study identified 41 amplicons (13%) with significantly increased RNA (p < 0.05, 17 with FDR < 0.1) using the linear model, and 71 amplicons using RNA/DNA ratio > 1.5. The approaches showed 78% overlap (32/41), with 20 amplicons showing the strongest and most consistent activity. Amplicon group was a significant predictor of activity (ANOVA p = 0.006), with highest activity in PutEnh and FBDHS groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 describe complementary analytical approaches with reasonable overlap (C91: 78%) and appropriate statistical testing including multiple testing correction (C88: FDR < 0.1). The convergence of methods and association with amplicon group (C89) support the validity of the activity calls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Significant amplicons (p < 0.05 from linear model) showed enrichment for fetal brain DNase hypersensitivity (p = 0.0355), H3K4me1 (p = 0.0274), H3K4me3 (p = 0.0131), human neuron ATAC-seq (p = 0.0497), and human glia ATAC-seq (p = 0.0159), but not for gene body marks (H3K36me3) or heterochromatin marks (H3K9me3, H3K27me3). In regression modeling, fetal DNase hypersensitivity and H3K4me1 had the strongest predictive power (0.2 and 0.178 correlations) and improved model fit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 demonstrate that MPRA-identified enhancers are enriched for expected epigenomic signatures (enhancer marks) but not for inappropriate signatures (gene body/heterochromatin marks, C97, C100). The regression analysis (C101-C103) provides additional validation that relevant signatures predict activity. This supports the biological validity of the MPRA results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Among 41 significantly active amplicons, 20 (15.9% of ascertained likely enhancers) had prior evidence of enhancer function based on DNase/ATAC-seq, while 21 (11.5% of predicted negatives) lacked such evidence. This difference was not significant (Fisher's exact test, OR = 1.45, p = 0.176). However, among the most significant amplicons (FDR < 0.1), 12/17 were ascertained likely enhancers (9.5% of positives vs 2.7% of negatives, OR = 3.73, p = 0.011), demonstrating that enhancer ascertainment based on open chromatin was associated with MPRA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 show appropriate statistical analysis with the key finding that the strongest MPRA signals (FDR < 0.1) are significantly enriched for pre-ascertained enhancers (C109: p = 0.011), while the broader set (p < 0.05) is not (C106). This suggests the assay has specificity for true enhancers at stringent thresholds, though sensitivity may be limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The MPRA library included 204 amplicons harboring SNPs from GWAS studies or in LD with lead SNPs. While 439/440 SNPs were represented in the library, only 147 had minor allele frequency > 0.1. Among eight amplicons with significant MPRA activity containing such SNPs, none showed significant allelic differences. Luciferase assays for CACNA1C amplicon #3 also found no allelic differences. Limited allele coverage, unbalanced frequencies, and reduced RNA allele correlation resulted in insufficient power to detect moderate to small allelic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 appropriately acknowledge the limitation that the study was underpowered for allele-specific analysis (C116, C147). The lack of observed allelic effects (C114, C115) is correctly interpreted as inconclusive rather than evidence of no effect. The technical issues are well-characterized (unbalanced alleles, C112-C113).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Eight amplicons were tested in both the mouse miniMPRA and as human orthologs in the full MPRA. General correlation was observed between activity in the two experiments, indicating reproducible activity and conserved function between orthologous mouse and human sequences in the postnatal mouse brain context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 provide cross-validation between the miniMPRA and full MPRA experiments. The correlation (C118) supports both technical reproducibility and functional conservation of enhancer activity across species, strengthening confidence in the MPRA results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Single-candidate validation experiments confirmed MPRA predictions. Amplicon #161 (FBDHS group, near SCN2A), which showed strong MPRA activity, drove consistent EGFP expression in P7 mouse brain with enrichment in cortical layers IV-V. Amplicon #264, a predicted negative that lacked MPRA activity, showed no EGFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 provide direct validation of MPRA predictions through independent single-construct experiments. The positive (C122-C123) and negative (C124) validations are consistent with MPRA results, supporting the assay's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "To validate cell-type specificity, brains transduced with Dlx or amplicon #161 enhancer constructs were co-stained for Ctip2, a Layer V excitatory neuron marker. EGFP+ cells driven by Dlx showed significantly lower Ctip2+ frequencies compared to CAG-driven mRuby3+ cells or EGFP+ cells driven by amplicon #161, demonstrating that the MPRA construct accurately reflects cell-type-specific enhancer activity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 provide functional validation that the MPRA construct maintains cell-type specificity for different enhancers. The differential Ctip2 labeling (C127) between interneuron enhancer (Dlx) and a putative excitatory enhancer (#161) supports that the assay can distinguish cell-type-specific regulatory activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The MPRA assessed 17 amplicons within the CACNA1C third intron spanning a psychiatric disorder-associated LD interval, plus five control amplicons from a hematocrit-associated locus. Three CACNA1C amplicons (#3, #6, #7) showed significant enhancer activity in both linear and ratiometric models, while no hematocrit control amplicons were active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C135 describe a focused analysis of a disease-relevant locus with appropriate controls (C133, C135). The identification of three active enhancers (C134) with negative controls showing no activity (C135) supports the specificity of the findings for brain-relevant regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Single-candidate validation confirmed MPRA predictions for CACNA1C amplicons. Amplicons #3 and #6 drove detectable EGFP expression throughout the cerebral cortex at P7, while amplicon #2 (MPRA-negative) showed no significant EGFP expression. Amplicon #3 continued to drive EGFP expression in cortical neurons at P28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 provide validation of MPRA predictions for the CACNA1C locus through independent experiments. The concordance between MPRA results and single-construct validation (C138-C139) and the demonstration of sustained activity at P28 (C140) support the biological relevance of the identified enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Amplicon #5, spanning rs1006737 and rs2007044 (highly significant GWAS SNPs), showed no MPRA activity. However, two of three identified CACNA1C enhancers (#6, #7) had prior evidence of enhancer activity in vitro, indicating the assay can reproducibly detect enhancers identified in orthogonal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 acknowledge both a notable negative result (C141: no activity at lead GWAS SNPs) and validation against prior work (C142-C145). The concordance with prior in vitro studies (C143-C145) supports assay validity, while the negative at lead SNPs (C141) appropriately highlights that statistical association does not guarantee regulatory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study design was not well-powered for allele-specific analysis. Disease-relevant SNPs may alter enhancer function in specific cell-type or developmental contexts not captured by in vitro assays, highlighting the need for in vivo parallel functional assays to understand how sequence variation affects gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 appropriately acknowledge study limitations (C147) and provide reasonable speculation about mechanisms (C148) and future directions (C149). This represents honest assessment of what the study can and cannot conclude about allelic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The in vivo parallelized enhancer reporter assay in P7 mouse brain enabled identification of novel enhancers active in early postnatal brain and pinpointed potential regulatory regions where disease-associated sequence variation may contribute to transcriptional pathology. The rAAV-based approach enabled efficient transduction of the mammalian CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 summarize the main achievements of the study. The identification of novel enhancers (C150) is supported by the MPRA and validation data. The application to disease-associated loci (C151) is demonstrated for CACNA1C. The efficiency of rAAV delivery (C152) is supported by the correlation data (C74-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The main sources of variation across MPRA replicates were rAAV transduction rate and injection site, highlighting the need for delivery controls. Variability in RNA dropout was likely due to transduction efficiency variability, sensitivity in recapturing low-representation amplicons, and PCR stochasticity, but not PCR amplification bias. High-titer preparations and high-infectivity serotypes are critical for maximizing cell sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C176 provide thorough analysis of technical variability sources. The identification of transduction and injection site as main variables (C171) is supported by figure references. The exclusion of PCR bias (C174) is supported by technical replicate data (C78). The recommendations (C172, C176) follow logically from the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Amplicons were ~900 bp long, representing some of the longer sequences tested in MPRAs, chosen to provide more native biological context. This was the maximum length for efficient scAAV packaging. Longer sequences may contribute to increased variability and mRNA degradation, though traditional single-stranded AAV could increase capacity with potential trade-offs in transduction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 explain the design rationale (C158-C159) and constraints (C160) for amplicon length. The discussion of trade-offs (C161-C162) is appropriately speculative and acknowledges both benefits and potential limitations of the chosen design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Some amplicons showed reduced RNA compared to expected background, potentially representing silencer activity or artifacts from 3'-UTR insertion causing mRNA degradation. However, orthologous mouse sequences showed correlated activity with human sequences, amplicons consistently reproduced in independent deliveries, and active amplicons were enriched for enhancer signatures (DNase, H3K4me1, H3K4me3, ATAC-seq), providing evidence that positive MPRA results represent true enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C168 acknowledge potential artifacts (C163-C164) while providing multiple lines of evidence supporting assay validity: cross-species correlation (C165), reproducibility (C166), and enrichment for appropriate epigenomic signatures (C167). The conclusion (C168) is appropriately supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  }
+]

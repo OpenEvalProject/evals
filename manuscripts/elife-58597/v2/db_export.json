@@ -1,0 +1,1617 @@
+{
+  "submission": {
+    "id": "616aab95-b714-4e84-b62f-77883de93ff0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T00:56:11.412631Z",
+    "updated_at": "2025-12-03T00:56:11.412631Z"
+  },
+  "content": [
+    {
+      "id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "submission_id": "616aab95-b714-4e84-b62f-77883de93ff0",
+      "content_type": "manuscript",
+      "content_text": "# The leukocyte non-coding RNA landscape in critically ill patients with sepsis\n\n## Authors\n\n- Brendon P Scicluna<sup>1</sup> ([ORCID: 0000-0003-2826-0341](https://orcid.org/0000-0003-2826-0341)) \u2020\n- Fabrice Uhel<sup>1</sup> ([ORCID: 0000-0003-4946-8184](https://orcid.org/0000-0003-4946-8184))\n- Lonneke A van Vught<sup>1</sup>\n- Maryse A Wiewel<sup>1</sup>\n- Arie J Hoogendijk<sup>1</sup>\n- Ingelore Baessman<sup>3</sup>\n- Marek Franitza<sup>3</sup>\n- Peter N\u00fcrnberg<sup>3</sup>\n- Janneke Horn<sup>5</sup>\n- Olaf L Cremer<sup>6</sup>\n- Marc J Bonten<sup>7</sup>\n- Marcus J Schultz<sup>5</sup>\n- Tom van der Poll<sup>1</sup>\n\n### Affiliations\n\n1. Amsterdam UMC, University of Amsterdam, Center for Experimental Molecular Medicine, Amsterdam Infection & Immunity Amsterdam Netherlands\n2. Amsterdam UMC, University of Amsterdam, Department of Clinical Epidemiology, Biostatistics and Bioinformatics Amsterdam Netherlands\n3. Cologne Center for Genomics, University of Cologne Cologne Germany\n4. Center for Molecular Medicine Cologne, University of Cologne Cologne Germany\n5. Amsterdam UMC, University of Amsterdam, Department of Intensive Care Medicine Amsterdam Netherlands\n6. Department of Intensive Care, University Medical Center Utrecht Utrecht Netherlands\n7. Department of Medical Microbiology, University Medical Center Utrecht Utrecht Netherlands\n8. Julius Center for Health Sciences and Primary Care, University Medical Center Utrecht Utrecht Netherlands\n9. Amsterdam UMC, University of Amsterdam, Division of Infectious Diseases Amsterdam Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe extent of non-coding RNA alterations in patients with sepsis and their relationship to clinical characteristics, soluble mediators of the host response to infection, as well as an advocated in vivo model of acute systemic inflammation is unknown. Here we obtained whole blood from 156 patients with sepsis and 82 healthy subjects among whom eight were challenged with lipopolysaccharide in a clinically controlled setting (human endotoxemia). Via next-generation microarray analysis of leukocyte RNA we found that long non-coding RNA and, to a lesser extent, small non-coding RNA were significantly altered in sepsis relative to health. Long non-coding RNA expression, but not small non-coding RNA, was largely recapitulated in human endotoxemia. Integrating RNA profiles and plasma protein levels revealed known as well as previously unobserved pathways, including non-sensory olfactory receptor activity. We provide a benchmark dissection of the blood leukocyte \u2018regulome\u2019 that can facilitate prioritization of future functional studies.\n\n## Introduction\n\nSepsis is a multifaceted syndrome that develops as the consequence of an abnormal host response to infection leading to organ failure and high risk of death\u00a0(Angus and van der Poll, 2013; Cecconi et al., 2018). It is estimated that 2\u20135 million deaths worldwide are attributable to sepsis\u00a0(Fleischmann et al., 2016). Despite empirical antimicrobial therapy and advances in intensive care, it is expected that sepsis will remain a major healthcare problem. As such, sepsis has been recognized as a global health priority in 2017 by the World Health Assembly and WHO\u00a0(World Health Organization, 2017). In spite of more than 100 clinical trials having evaluated drugs targeting specific components of the host response to infection\u00a0(Marshall, 2014), no specific treatment for sepsis has been approved\u00a0(Angus and van der Poll, 2013; Cecconi et al., 2018). This argues for a deeper understanding of sepsis immunopathology to identify veritable drug targets\u00a0(Marshall, 2014; Tse, 2013).\n\nProtein-coding RNA expression profiling of blood leukocytes from sepsis patients has helped to broaden our understanding of sepsis immunopathology\u00a0(van der Poll et al., 2017), for example, by unmasking defects in leukocyte energy metabolism of sepsis patients\u00a0(Cheng et al., 2016), and by classifying sepsis patients as transcriptomic endotypes with prognostic and pathophysiological value\u00a0(Scicluna et al., 2017; Davenport et al., 2016; Wong et al., 2009). From fruit flies to man, the protein-coding part of genomes from different species is remarkably similar in numbers and functions\u00a0(Liu et al., 2013), which suggests that numerous aspects of complex biology in eukaryotes might stem from non-protein-coding regions of the genome. The increase in genomic coverage of tiled microarrays and massive cDNA sequencing undertaken by the Functional Annotation of the Mammalian genome (FANTOM) consortium revealed pervasive transcription outside of the known gene loci\u00a0(Kapranov et al., 2002; Carninci et al., 2005). Moreover, such studies facilitated the demonstration that non-coding RNAs were under negative evolutionary selection, which implied functionality rather than plain \u2018transcriptional noise\u2019\u00a0(Ponjavic et al., 2007). Indeed, a substantial proportion of non-coding RNA, by general convention defined as long (>200 nucleotides) or small (<200 nucleotides) non-coding RNAs, yields clear phenotypic effects in both in vitro and in vivo functional studies\u00a0(Zhu et al., 2016; Gebert and MacRae, 2019; Atianand et al., 2016; Carpenter et al., 2013). Ever-growing numbers of small non-coding RNAs, for example micro (mi)RNAs (20\u201324 nucleotides), or long non-coding RNAs such as long intergenic non-coding (linc)RNAs, have been linked to human diseases\u00a0(Bao et al., 2019; Esteller, 2011). An important aspect of non-coding RNAs is their capacity for precise regulation of cellular biological processes via epigenetic mechanisms, including complex immune system processes\u00a0(Carpenter, 2018; Atianand and Fitzgerald, 2014; Mehta and Baltimore, 2016).\n\nKnowledge of the non-coding RNA landscape in patients with sepsis is limited. Here we report a comprehensive screen of non-coding RNA expression patterns in blood leukocytes of patients with sepsis and their relation to clinical characteristics and soluble mediators of the host response. In addition, by using a guilt-by-association approach we positioned non-coding RNAs in network modules encompassing protein-coding RNA reflecting distinct cellular biological pathways.\n\n## Results\n\n### Protein-coding and non-coding blood transcriptomes\n\nIn order to build a comprehensive map of RNA expression in the context of sepsis, we evaluated protein-coding, long and small non-coding RNA expression in whole blood leukocytes from 156 sepsis patients and 82 healthy subjects (median age (Q1\u2013Q3), 54 (42 \u2013 60); 26% male). Patient characteristics are tabulated in Table 1, causative pathogens in Supplementary file 1. Principal component (PC) analysis of the most abundant protein-coding RNAs (n\u00a0=\u00a018,063) and long non-coding RNAs (n\u00a0=\u00a016,087) showed clear partitioning of patients with sepsis distinct from healthy subjects (Figure 1A). In contrast, small non-coding RNAs (n\u00a0=\u00a04949) showed only minimal separation between patients and healthy subjects. We observed similar patterns after calculating the molecular distance to health (MDTH)(Berry et al., 2010; Dunning et al., 2018) index, a measure of transcript-level expression perturbation relative to health, with significantly higher MDTH indices in sepsis (Figure 1B). Notably, long non-coding RNA transcripts exhibited the broadest expression perturbations in healthy participants and sepsis patients, exemplified by the highest overall MDTH indices (Figure 1B).\n\n**Table 1.**\n Baseline characteristics and outcomes of critically ill patients with sepsis.Table 1\u2014source data 1.Baseline characteristics and outcomes of critically ill patients with sepsis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Sepsis patients (n\u00a0=\u00a0156)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, years</td>\n      <td>62 (50 - 70)</td>\n    </tr>\n    <tr>\n      <td>Male sex</td>\n      <td>98 (62.8)</td>\n    </tr>\n    <tr>\n      <td>White ethnicity</td>\n      <td>140 (89.7)</td>\n    </tr>\n    <tr>\n      <td>Medical admission</td>\n      <td>117 (75.0)</td>\n    </tr>\n    <tr>\n      <td>Immune suppression</td>\n      <td>45 (28.8)</td>\n    </tr>\n    <tr>\n      <td>Cardiovascular insufficiency</td>\n      <td>43 (27.6)</td>\n    </tr>\n    <tr>\n      <td>Malignancy</td>\n      <td>45 (28.8)</td>\n    </tr>\n    <tr>\n      <td>Renal insufficiency</td>\n      <td>18 (11.5)</td>\n    </tr>\n    <tr>\n      <td>Respiratory insufficiency</td>\n      <td>37 (23.7)</td>\n    </tr>\n    <tr>\n      <td>Charlson comorbidity index</td>\n      <td>4 (2 - 6)</td>\n    </tr>\n    <tr>\n      <td>APACHE IV score</td>\n      <td>72 [58 - 92]</td>\n    </tr>\n    <tr>\n      <td>SOFA score</td>\n      <td>7 (4 - 9)</td>\n    </tr>\n    <tr>\n      <td>Shock</td>\n      <td>86 (55.1)</td>\n    </tr>\n    <tr>\n      <td>Mechanical ventilation</td>\n      <td>128 (82.1)</td>\n    </tr>\n    <tr>\n      <td>Primary diagnosis</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pneumonia</td>\n      <td>99 (63.5)</td>\n    </tr>\n    <tr>\n      <td>Community-acquired</td>\n      <td>68 (43.6)</td>\n    </tr>\n    <tr>\n      <td>Hospital-acquired</td>\n      <td>31 (19.9)</td>\n    </tr>\n    <tr>\n      <td>Abdominal sepsis</td>\n      <td>57 (36.5)</td>\n    </tr>\n    <tr>\n      <td>Outcome</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>28-day mortality</td>\n      <td>48 (30.8)</td>\n    </tr>\n    <tr>\n      <td>90-day mortality</td>\n      <td>59 (37.8)</td>\n    </tr>\n    <tr>\n      <td>1-year mortality</td>\n      <td>77 (49.4)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data presented as median [Q1\u2013Q3], or n (%).Abbreviations: APACHE, Acute Physiology and Chronic Health Evaluation; ICU, Intensive care unit; GI, gastrointestinal; SOFA, Sequential Organ Failure Assessment._\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig1-v2.jpg)\n\n**Figure 1.:** (A) Principal component (PC) plot depicting PC1 and PC2, and (B) the molecular distance to health (MDTH) index of protein-coding (n\u00a0=\u00a018,063), long non-coding (n\u00a0=\u00a016,087), and small non-coding RNAs (n\u00a0=\u00a04949) in healthy subjects and sepsis patients. **p<0.01; ***p<0.001. (C) Volcano plot representation of differences in coding and non-coding RNA expression between sepsis patients and healthy subjects. Horizontal (black) line denotes \u2212log10 transformed adjusted p-value of 0.01. (D) Pie chart showing the subclass distribution of significant long non-coding RNA (adjusted p<0.01). LincRNA, long intergenic non-coding RNA; rRNA, ribosomal RNA; TEC, to be experimentally confirmed; Mt tRNA, mitochondrial transfer RNA; Mt rRNA, mitochondrial ribosomal RNA. (E) Pie chart showing the subclass distribution of significant small non-coding RNA (adjusted p<0.01). miRNA, microRNA; snoRNA, small nucleolar RNA; C/D box snoRNA, C/D box small nucleolar RNA; H/ACA box snoRNA, H/ACA box small nucleolar RNA; scaRNA, small cajal body-specific RNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Red bars denote pathways harboring protein-coding RNA with elevated expression; turquoise bars denote pathways harboring protein-coding RNA with reduced expression. Significance was demarcated at Benjamini\u2013Hochberg (BH) adjusted p<0.01. \u2212log(BH) p, negative log-transformed BH p-value.\n\nComparing sepsis patients to healthy subjects identified 15,097, 13,158, and 635 significantly altered (adjusted p-value\u00a0<0.01) protein-coding, long\u00a0non-coding, and small non-coding RNAs, respectively (Figure 1C). Ingenuity pathway analysis of the significantly altered protein-coding RNA transcripts revealed associations with various canonical signaling pathways that included elevated pro- and anti-inflammatory pathways, cell cycle, DNA damage response, and metabolic pathways (Figure 1\u2014figure supplement 1). Transcripts with reduced expression were predominantly associated with T helper cell activation, antigen presentation, and B cell responses. Results on protein-coding RNA profiles are in agreement with previous reports from our and other groups\u00a0(van der Poll et al., 2017). LincRNAs, antisense, and pseudogene RNA transcripts represented the most highly altered long non-coding RNA biotypes in sepsis relative to health (Figure 1D). Micro (mi)RNAs, stem loop RNAs, and small nucleolar (sno)RNAs were the most abundant small non-coding RNA biotypes (Figure 1E).\n\n### Protein-coding and non-coding blood transcriptomes, demographics, and clinical characteristics\n\nIn order to understand inter-individual variation in RNA expression profiles, we set out to determine the contribution of demographics and clinical characteristics to protein-coding and non-coding RNA expression variation in sepsis patients (Figure 2), as well as healthy subjects. Using a variance partition (multivariable) approach\u00a0(Hoffman and Schadt, 2016), differences in gender and age of healthy subjects explained 5%, 4%, and 4% of the variation in protein-coding, long\u00a0non-coding, and small non-coding RNA expression, respectively (Figure 2\u2014figure supplement 1A). Specific transcripts had high percentages of explainable variance, in particular long non-coding RNAs against gender. Not surprisingly, expression of long non-coding RNAs positioned on the X and Y chromosomes, for example TXLNGY, LINC00278, and XIST had 98%, 97%, and 94% of variance explained by gender, respectively (Figure 2\u2014figure supplement 1B). In sepsis patients, a multivariable model that incorporated demographics and common clinical characteristics, including APACHE IV, SOFA scores, shock and Charlson comorbidity indices, cumulatively explained 18%, 13%, and 8% of protein-coding, long\u00a0non-coding, and small non-coding RNA expression variance, respectively (Figure 2A). Specifically, sepsis primary site of infection (lung or abdomen) and place of acquisition (community or hospital) explained the highest proportion of variation in protein-coding (6.7%) and long non-coding (4.4%) RNA expression (Figure 2A). Despite overall low proportions of variance explained, outlier RNA transcripts could be detected. For example, some specific transcripts demonstrated high individual explained variance against primary sepsis diagnosis, including protein-coding RNA encoding basic leucine zipper and W2 domains 1 (BZW1); long non-coding RNA SUMO2 pseudogene 1 (SUMO2P1); and small non-coding RNA miRNA hsa-miR-7855\u20135 p (Figure 2B). Septic shock explained low proportions of variation in RNA expression (Figure 2A), and directly comparing patients with septic shock to patients without shock resulted in 837 and 80 significantly altered protein-coding and long non-coding RNA, respectively (Figure 2C). High expression protein-coding RNA included matrix metalloproteinase 8 (MMP8), resistin (RETN), and lipocalin 2 (LCN2). Low expression protein-coding RNA included a Na+/Ca2+ exchanger (SLC8A1), membrane metalloendopeptidase (MME), and interleukin (IL-) six receptor (IL6R). Long non-coding RNA included lincRNA lung cancer-associated transcript 1 (LUCAT1; low expression) and antisense RNA (LRRC75A-AS1; high expression) (Figure 2C). No significant alterations were identified in small non-coding RNA expression profiles. Evaluating RNA expression in patients discordant for survival after 28 days identified 146 significantly altered protein-coding RNA (Figure 2\u2014figure supplement 1C). No significant differences were uncovered in non-coding RNA expression profiles, suggesting that non-coding RNA profiles obtained on ICU admission may not be suitable as mortality predictors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig2-v2.jpg)\n\n**Figure 2.:** (A) Violin plots of percent variation in protein-coding, long\u00a0non-coding, and small non-coding RNA expression explained by sepsis patient demographics and clinical variables. Black dots depict outlier RNA transcripts. (B) Percent variance of select protein-coding and long non-coding RNA partitioned into the segment attributable to each demographic and clinical variable ranked by percent variation (>20%) for primary diagnosis (site of infection and place of acquisition). (C) Volcano plots depicting the changes in protein-coding and long non-coding RNA in patients discordant for septic shock on ICU admission. Horizontal (black) line denotes the adjusted p-value threshold for significance (adjusted p\u22640.01). Abbreviations: BC+, blood culture positive microbiology; diagnosis, infection site (lung or abdomen) and source (community or hospital); Charlson, Charlson comorbidity index; Apache IV, Acute Physiology and Chronic Health Evaluation; ICU, Intensive care unit; SOFA, Sequential Organ Failure Assessment.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Violin plots of percent variation in protein-coding, long\u00a0non-coding, and small non-coding RNA expression explained by age in gender in healthy subjects (n\u00a0=\u00a082).\u00a0Black dots depict outlier RNA. (B) Expression of long non-coding RNA TXLNGY, LINC00278, and XIST in healthy males and females. (C) Volcano plot of significantly altered protein-coding RNA in non-survivors relative to survivors after 28 days since ICU admission. Horizontal (black) line denotes \u2212log10 transformed adjusted p-value thresholds.\n\n### Protein-coding and non-coding RNA profiles of sepsis patients relative to human endotoxemia\n\nPrevious studies have compared the protein-coding RNA response in patients with sepsis or trauma (non-septic) to the response after lipopolysaccharide\u00a0(LPS) administration to healthy volunteers in a controlled clinical setting (human endotoxemia)\u00a0(Cheng et al., 2016; Calvano et al., 2005; Scicluna et al., 2013; Perlee et al., 2018; Seok et al., 2013; Xiao et al., 2011; Takao and Miyakawa, 2015). Here we sought to extend on those observations by evaluating long and small non-coding RNA expression in sepsis relative to temporal leukocyte responses in human endotoxemia (Figure 3). As previously reported in this model\u00a0(Cheng et al., 2016; Calvano et al., 2005; Scicluna et al., 2013; Perlee et al., 2018), robust alterations in protein-coding RNA expression were noted after 2, 4, and 6 hr of LPS administration (Figure 3\u2014figure supplement 1). Fold expression in sepsis (relative to health) was directly correlated with fold expression after 2, 4, and 6 hr LPS (Figure 3A). Long non-coding RNA expression was robustly altered in endotoxemia, with 2361, 5053, 2925, and 43 significant differences after 2, 4, 6, and 24 hr endotoxemia, respectively (Figure 3\u2014figure supplement 2A). Pseudogenes, lincRNA, and antisense RNA were the most abundant long non-coding RNA biotypes (Figure 3B). Small non-coding RNA were modestly altered in human endotoxemia (Figure 3\u2014figure supplement 2B). The most abundant biotypes of small RNA were miRNA (Figure 3C).\u00a0Comparing fold expression in sepsis (relative to health) to human endotoxemia revealed significant correlations after 2, 4, and 6 hr of endotoxemia (Figure 3D). The highest r2 was found for sepsis and 4 hr post-LPS (r2\u00a0=\u00a00.51). Correlation analysis of small RNA fold expression during endotoxemia against fold expression in sepsis revealed indirect correlations (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig3-v2.jpg)\n\n**Figure 3.:** (A) Dot plots depicting the correlation between protein-coding RNA fold expression indices in sepsis (compared to health) and fold expression after 2, 4, 6, and\u00a024 hr lipopolysaccharide\u00a0(LPS) infusion relative to pre-LPS. (B) Pie chart illustrating the biotypes of significantly altered long non-coding RNA (adjusted p<0.01) across endotoxemia time points (2, 4, 6, and 24 hr after 2 ng/kg LPS). LincRNA, long intergenic non-coding RNA; rRNA, ribosomal RNA; TEC, to be experimentally confirmed; Mt tRNA, mitochondrial transfer RNA; Mt rRNA, mitochondrial ribosomal RNA. (C) Pie chart showing the biotypes of significantly altered small non-coding RNA (adjusted p<0.05) in human endotoxemia. miRNA, microRNA; snoRNA, small nucleolar RNA; C/D box snoRNA, C/D box small nucleolar RNA; H/ACA box snoRNA, H/ACA box small nucleolar RNA; scaRNA, small cajal body-specific RNA. (D) Dot plots illustrating the correlation between long non-coding RNA fold expression indices in sepsis (compared to health) and fold expression of 2, 4, 6, and\u00a024 hr after LPS relative to pre-LPS. rho, Spearman\u2019s coefficient. (E) Dot plots depicting the correlation between small non-coding RNA fold expression indices in sepsis (compared to health) and 2, 4, 6, and\u00a024 hr after LPS relative to pre-LPS. rho, Spearman\u2019s coefficient.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Volcano plot representation of significantly altered protein-coding RNA after 2, 4, 6, and 24 hr lipopolysaccharide (LPS) infusion relative to pre-LPS.\u00a0Horizontal (black) line denotes \u2212log10 transformed adjusted p-value threshold of 0.01. (B\u2013D) Ingenuity pathway analysis of significant protein-coding RNA after 2, 4, and 6 hr human endotoxemia. Red bars denote pathways harboring protein-coding RNA with elevated expression; turquoise bars denote pathways harboring protein-coding RNA with reduced expression. Significance was demarcated at Benjamini\u2013Hochberg (BH) adjusted p<0.01. Adjusted P, negative log-transformed BH p-value.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Long non-coding RNA and (B) small non-coding RNA after 2, 4, 6, and 24 hr lipopolysaccharide (LPS) relative to pre-LPS. Horizontal (black) line denotes \u2212log10 transformed adjusted p-value thresholds.\n\n### Functional inference of non-coding RNA\n\nTo better understand the functional organization of the non-coding leukocyte transcriptome in sepsis, particularly long non-coding RNA, we undertook a guilt-by-association approach. On the basis of a bi-weight midcorrelation matrix of the most variable protein-coding and long non-coding RNA (n\u00a0=\u00a08539; coefficient of variation\u00a0>5%) in sepsis patients only (Figure 4), a weighted network was built with scale-free topology (Figure 4\u2014figure supplement 1A;\u00a0Langfelder and Horvath, 2008; Langfelder and Horvath, 2012; Scicluna et al., 2015a). Hierarchical clustering uncovered 23 network modules (clusters) each harboring more than 100 inter-correlating RNA transcripts (Figure 4A and Figure 4\u2014figure supplement 1B). Of the 8539 RNA transcripts, 158 transcripts did not cluster (designated as a gray module). Seventeen modules were associated with specific gene ontologies or canonical signaling pathways that included cell death/olfactory receptor activity/cell-cycle G2/M DNA damage checkpoint and regulation (turquoise module, n\u00a0=\u00a01001 transcripts) and RNA biosynthesis/RNA binding (yellow module, n\u00a0=\u00a0579 transcripts) (Figure 4A). Eight modules in the co-expression network were significantly enriched for long non-coding RNA relative to protein-coding RNA (Fisher\u2019s adjusted p<0.01; Figure 4B). This suggests\u00a0that the leukocyte long non-coding transcriptome of sepsis patients is primarily co-expressed with protein-coding RNA, but 34% of non-coding RNA modules were organized into distinct units. Evaluation of total and intra-module connectivities, which measure the importance of each module relative to the overall structure of co-expression networks\u00a0(Langfelder and Horvath, 2008), identified two \u2018driver\u2019 modules, namely the cell death/olfactory receptor activity/cell-cycle G2/M DNA damage checkpoint and regulation (turquoise module, n\u00a0=\u00a01001 transcripts) and RNA biosynthesis/RNA binding (yellow module, n\u00a0=\u00a0579 transcripts) modules (Figure 4C\u00a0and\u00a0D and Figure 4\u2014figure supplement 1C). The former module included protein-coding RNA encoding ATM serine/threonine kinase (ATM), TNF alpha-induced protein 3 (TNFAIP3 or A20), histone deacetylase 2 (HDAC2), and mucosa-associated lymphoid tissue lymphoma translocation protein 1 (MALT1) paracaspase (Figure 4D). Non-coding RNA included GABPB1-AS1, THAP9-AS1, and SCARNA9. We subsequently focused our attention on integrating miRNA profiles to the co-expression network. Considering miRNA profiles that were significantly altered in sepsis patients relative to health (Figure 1C), and miRNA-to-gene interactions (miRWalk method), we detected 49 small RNAs in five network modules with explained variance estimated\u00a0>20%, including hsa-miR-200c-3p (translation initiation module), SNORD84 (regulation of cytokine secretion/Toll-like receptor [TLR] signaling module), HBII-276 (translation initiation module), hsa-miR-1275 (sensory perception of chemical stimulus/olfactory receptor activity module), and hsa-miR-664b-3p (neutrophil degranulation/extracellular exosome module) (Figure 4E). Of note, hsa-miR-200c-3p has been shown to modify TLR4 signaling efficiency dependent on MYD88-mediated pathways in an embryonic kidney cell line (HEK293)\u00a0(Wendlandt et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig4-v2.jpg)\n\n**Figure 4.:** (A) Circular plot of protein-coding and long non-coding co-expression network modules characterized by significantly associated (Fisher\u2019s adjusted p<0.01) gene ontologies and Ingenuity canonical signaling pathways. Seventeen modules were associated with specific ontologies or canonical signaling pathways. (B) Bar plot depicting the distribution of protein coding and long non-coding RNA in each network module. *Fisher\u2019s Benjamini\u2013Hochberg adjusted p<0.01. (C) Dot plot illustrating the correlation between intramodular and total connectivities of each RNA transcript in their respective network module. Yellow dots illustrate protein-coding and long non-coding RNA in the RNA biosynthesis/RNA binding module; Turquoise dots depict the cell death and olfactory receptor activity module. (D) Diagrammatic representation of Ingenuity\u2019s biofunctions (z-score\u00a0<2 or\u00a0>2 and adjusted p<0.05) together with predicted long intergenic non-coding RNA (lincRNA) and antisense RNA in the cell death/olfactory receptor activity/cell-cycle G2/M DNA damage checkpoint and regulation module (turquoise). Blue, reduced expression; red, elevated expression in sepsis relative to health (fold change\u00a0\u22651.2 or\u00a0\u2264\u22121.2; adjusted p-value<0.01). (E) Violin plots of network module eigengene (first principal component) percent variance attributable to small non-coding RNA.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Evaluation of scale free topology model fit and mean connectivities (y-axes) across various soft threshold powers (x-axis) with scale independence denoted at R2\u00a0>\u00a00.85 (red horizontal line) for protein-coding and long non-coding RNA expression in sepsis patients (n\u00a0=\u00a08539). (B) Topological overlap plot of adjacencies calculated for 8539 protein-coding and long non-coding RNA expression and module colors. (C) Cytoscape plot (organic layout) of protein-coding and long non-coding RNA (nodes) and connectivities (edges; weight\u00a0>0.2). Turquoise and yellow modules were visibly central to the co-expression network.\n\nNext, we evaluated the association of network modules with soluble mediators of the host response and clinical severity scores. Neutrophil degranulation (secretory; red), protein ubiquitination (pink), and mitotic cell cycle (tan) modules correlated with soluble mediators of inflammation (C reactive protein [CRP], IL-6, IL-10, IL-8), endothelial responses (E-selectin and angiopoietin-2 [ANG2]), coagulation (D-Dimer), and clinical variables of disease severity (Figure 5A). In contrast, antigen presentation/Th1-Th2 cell activation (green module), regulation of cytokine secretion/TLR signaling (black module), and type-I interferon signaling/double stranded RNA binding (salmon module) were indirectly correlated with various soluble mediators and clinical severity indices. Patients with septic shock showed significantly higher neutrophil degranulation (secretory) expression patterns (Figure 5B). Protein-coding RNA transcripts in the neutrophil degranulation (secretory) module included matrix metalloproteinases (MMP8 and MMP9), neutrophil activation cluster of differentiation 177 (CD177), lipocalin 2 (LCN2), and arginase 1 (ARG1) (Figure 5C). LincRNA and antisense RNA included an inducer of differentiation MYOSLID (myocardin-induced smooth muscle LncRNA, inducer of differentiation), cell proliferation, and metastasis-associated antisense RNA of the titin gene (TTN-AS1) and an IL10 receptor beta subunit antisense RNA, IL10RB-AS1. Calculating intra-modular connectivities enabled us to define \u2018hub\u2019 transcripts, which are understood to represent cogs in the functional output of a network module\u00a0(Langfelder and Horvath, 2008; Zhao et al., 2010), and identified MYOSLID (neutrophil degranulation; red module) and LUCAT1 (Lung Cancer Associated Transcript 1) in the TLR-signaling (black) module, as module \u2018hubs\u2019. In line with their respective module eigengene correlations with inflammatory response markers, MYOSLID expression was directly correlated with levels of inflammatory response markers IL-6, IL-8, IL-10, and acute phase response protein CRP (Figure 5D). In contrast, LUCAT1 expression was indirectly correlated with soluble mediators of inflammation, except for CRP (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58597/elife-58597-fig5-v2.jpg)\n\n**Figure 5.:** (A) Heatmap representation of Pearson correlation coefficients (adjusted p<0.05) calculated for each network module eigengene (first principal component) against soluble mediators of inflammation, endothelial function, coagulation, as well as clinical parameters of disease severity. APACHE IV, Acute Physiology and Chronic Health Evaluation; SOFA, Sequential Organ Failure Assessment. Red denotes direct correlations and blue denotes indirect correlations (B) Boxplot showing differences in neutrophil degranulation (red) module eigengene values in sepsis patients discordant for septic shock on intensive care unit admission. High module eigengene values mean overall elevated RNA expression; low module eigengene values mean reduced expression. (C) Diagrammatic representation of the neutrophil degranulation (secretory; red) module (Ingenuity\u2019s biofunction z-score\u00a0<2 or\u00a0>2; adjusted p<0.05) together with predicted long intergenic non-coding RNA (lincRNA) and antisense RNA. Red or blue nodes denote high or low expression RNA transcripts in sepsis relative to health, respectively. ***Mann\u2013Whitney p<0.001. (D and E) Dot plots of (D) MYOSLID expression and (E) LUCAT1 expression against soluble mediators of inflammation IL-6, IL-8, and IL-10, as well as the acute phase response protein CRP. Rho, Spearman\u2019s coefficient.\n\n## Discussion\n\nIn this study we found that the transcriptional changes in critically ill patients with sepsis are not exclusive to protein-coding RNAs. Whole blood long non-coding RNAs, and to a lesser extent small non-coding RNAs, were significantly altered in sepsis patients relative to healthy subjects. The pattern of protein-coding and long non-coding RNA profiles in sepsis was mimicked by expression profiles in a human endotoxemia model, notably at a time point indicative of endotoxin tolerance. Small non-coding RNA profiles in sepsis patients were not recapitulated in human endotoxemia. In general, common clinical characteristics explained low proportions of variation in protein-coding and non-coding RNA profiles, suggesting that variation in leukocyte responses are largely not explained by clinical parameters. Leveraging on the concepts of network biology, protein-coding and non-coding RNA were clustered as functional biological units with RNA binding/RNA biosynthesis and cell death/olfactory receptor activity/cell-cycle G2-M DNA damage checkpoint and regulation modules central to network architecture.\n\nAdvances in genomics, notably massively parallel cDNA sequencing, have shown that active transcription is not exclusive to protein-coding RNA regions\u00a0(Carninci et al., 2005). Regions of the genome void of protein-coding genes have since been shown to be actively transcribed in the context of various diseases\u00a0(Esteller, 2011). Small non-coding RNAs, mainly microRNAs, as well as long non-coding RNAs were linked to specific immune processes\u00a0(Mehta and Baltimore, 2016; Fitzgerald and Caffrey, 2014). While microRNAs have been established as veritable epigenetic modifiers of transcriptional outputs, studies on the functional aspects of long non-coding RNAs have only recently begun. However, those studies were centered primarily on mouse models\u00a0(Atianand et al., 2016; Carpenter et al., 2013). This presents a problem for translation to human physiology because non-coding RNA sequences are typically not conserved between species (Diederichs, 2014). Furthermore, expression of non-coding RNAs was shown to exhibit substantially higher inter-individual variation in healthy subjects as compared to protein-coding RNAs alone\u00a0(Kornienko et al., 2016). In line with those observations our data showed that long non-coding RNA expression patterns were far more variable across individuals (healthy or sepsis) than protein-coding and small non-coding RNAs. The sources of increased inter-individual variation in long non-coding RNA expression relative to protein-coding and small non-coding RNAs are as yet unknown. Lower conservation coupled with faster evolution rates of long non-coding RNA regions, which seemingly harbor more single nucleotide polymorphisms (SNPs) than protein-coding genes\u00a0(Necsulea and Kaessmann, 2014), as well as the possibility of their relatively higher susceptibility to environmental and lifestyle factors\u00a0(Dumeaux et al., 2010), may be at the basis of the extensive variation in long non-coding RNA expression.\n\nIn line with previous studies\u00a0(Seok et al., 2013; Takao and Miyakawa, 2015), we found that protein-coding RNA alterations during endotoxemia mimicked those that ensue in sepsis patients. The human endotoxemia model is a highly relevant in vivo model of acute systemic inflammation in the context of a controlled clinical setting\u00a0(Lowry, 2005). In general, the model is characterized by a robust systemic response, including leukocyte transcriptional responses, exhibiting shared and unique temporal changes that resolve within 24 hr of bolus administration\u00a0(Calvano et al., 2005; Perlee et al., 2018). In extension to the previously reported data, based on a single time-point of human endotoxemia\u00a0(Seok et al., 2013; Takao and Miyakawa, 2015), we found that the correlation between sepsis and human endotoxemia was also dependent, at least in part, on timing of the response to LPS. The highest correlation was found at 4 hr, a time point at which the capacity of cytokine production by leukocytes is typically reduced in the human endotoxemia model, indicative of endotoxin tolerance\u00a0(Cheng et al., 2016; de Vos et al., 2009). Long non-coding RNA alterations in human endotoxemia also mimicked those in sepsis, with similar time dependencies as protein-coding RNA. In contrast, small non-coding RNA expression profiles in sepsis patients were not reliably recapitulated in human endotoxemia, primarily showing indirect correlations. This may be due to typically low expression patterns of miRNA, compared to protein-coding and long non-coding RNA, and reported high specificities of miRNA to developmental stage and cell-type\u00a0(Bernstein et al., 2003). The host response during infection is characterized by a balance between resistance (seeking to limit the pathogen load) and tolerance (aiming to retain cell and organ functions)\u00a0(Schneider and Ayres, 2008). In sepsis both mechanisms can become uncontrolled, wherein aberrant activation of resistance pathways results in tissue damage and inadequate tolerance can cause immune suppression with enhanced susceptibility to secondary infections\u00a0(Bauer and Wetzker, 2020). While our time-sequential data in healthy humans injected with LPS suggest that coding and long non-coding RNA profiles in blood leukocytes of sepsis patients particularly reflect a tolerant state, time course studies in patients are needed to increase the insight into the role of distinct RNA species in the interplay between resistance and tolerance.\n\nA substantial proportion of variance in protein-coding and non-coding RNA expression in critically ill patients with sepsis remained unexplained. Other sources of variation, not assessed in this study, include patient genetics and time between the onset of sepsis and ICU admission\u00a0(Schadt et al., 2003; Maslove and Wong, 2014). The former represents an important source of inter-individual variation where SNPs segregating in populations are in part tightly related to RNA expression variability\u00a0(Schadt et al., 2003). This was shown in a recent prospective study in sepsis due to community-acquired pneumonia (CAP), wherein SNPs influencing gene expression patterns were identified\u00a0(Davenport et al., 2016). The time of onset of sepsis is a current \u2018black box\u2019 in the field as it cannot be accurately determined, thereby resulting in considerable uncertainty since patients are presumably admitted to the ICU at various stages of the sepsis syndrome.\u00a0Overall, we determined that clinical characteristics and outcome explained low proportions of variation in RNA expression; however, specific protein-coding and long non-coding RNA transcripts had high percent variation attributable to, particularly, primary diagnosis that included infections site (lung or abdomen) and place of acquisition (community or hospital), which may constitute important proxies to discern organ-specific infections that are typically caused by different causal pathogens\u00a0(van Vught et al., 2016a; van Vught et al., 2016b; Sartelli, 2010).\n\nAscribing long non-coding RNA function to cellular biological pathways is a major challenge. To address this challenge, we undertook a guilt-by-association strategy that sought to position long non-coding RNA in co-expression modules of tightly correlating protein-coding RNA, thereby infer on functional outputs of long non-coding RNA by virtue of the pathways that associate with protein-coding RNA in each module. By leveraging on the concepts of scale free networks\u00a0(Barab\u00e1si, 2009), we built a map of protein-coding and non-coding RNA relationships that pointed to cell death/olfactory receptor activity/cell-cycle G2/M DNA damage checkpoint and regulation (turquoise module) and RNA biosynthesis/RNA binding (yellow module) as central to the organization of the co-expression network. Cell death or exhaustion, particularly in lymphocytes, have been proposed as causal features of immunosuppression and lethality in sepsis\u00a0(Hotchkiss et al., 2013). Our findings further strengthen this hypothesis and position previously unknown non-coding RNA, including an autophagy and chemical stress responder GABPB1-AS1\u00a0(Tani et al., 2014; Luan et al., 2019), as putative regulators of cell death in the context of sepsis. Interestingly, protein-coding RNA in the cell death (turquoise) module also included olfactory receptors and cell-cycle DNA damage regulators. Modulation of DNA damage responses was demonstrated as a potential therapeutic path that might be exploited to confer protection to severe sepsis\u00a0(Figueiredo et al., 2013). Little is known about olfactory receptors in non-chemosensory cells, but a growing body of evidence suggests they are not exclusive to the nose\u00a0(Kang and Koo, 2012). They have been shown to be involved in cell\u2013cell recognition, migration, proliferation, and apoptosis\u00a0(Ma\u00dfberg and Hatt, 2018).\n\nIn conclusion, we here describe the non-coding RNA landscape in blood leukocytes of sepsis patients upon admission to the ICU. By considering non-coding RNA expression patterns in relation to protein-coding RNA we provide an important layer to the blood leukocyte \u2018regulome\u2019 in a clinical context, which may facilitate prioritization of non-coding RNA in future functional studies.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Total RNA</td>\n      <td>Leukocytes</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PAXgene Blood miRNA kit</td>\n      <td>Qiagen</td>\n      <td>Cat no./ID: 763134</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human Transcriptome Array 2.0</td>\n      <td>Affymetrix; Thermo Fisher</td>\n      <td></td>\n      <td>microarray</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>miRNA 4.1 96-array plate</td>\n      <td>Affymetrix; Thermo Fisher</td>\n      <td></td>\n      <td>microarray</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>FlexSet cytometric bead arrays</td>\n      <td>BD Biosciences</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Immunoturbidimetric assay</td>\n      <td>Roche diagnostics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Luminex Flow Cytometry Analyzer</td>\n      <td>Luminex Corp.</td>\n      <td>RRID:SCR_018025</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Sysmex CA-1500 System</td>\n      <td>Siemens Healthineers</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipopolysaccharide- Escherichia coli, 100 ng/ml, Ultrapure</td>\n      <td>Invivogen</td>\n      <td>Cat#0111:B4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing, (version 3.5.0)</td>\n      <td>R Development Core Team</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Oligo (version 1.44)</td>\n      <td>Bioconductor (Carvalho and Irizarry, 2010)</td>\n      <td>RRID:SCR_015729</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SVA (version 3.28)</td>\n      <td>Bioconductor (Leek and Storey, 2007)</td>\n      <td>RRID:SCR_012836</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>genefilter (version 1.62)</td>\n      <td>Bioconductor (Bourgon et al., 2010)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>arrayQualityMetrics</td>\n      <td>Bioconductor (Kauffmann et al., 2009)</td>\n      <td>RRID:SCR_001335</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Affymetrix Transcriptome Analysis Console</td>\n      <td>Affymetrix</td>\n      <td>RRID:SCR_018718</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>limma (version 3.36)</td>\n      <td>Bioconductor (Smyth, 2005)</td>\n      <td>RRID:SCR_010943</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Ingenuity pathway analysis software</td>\n      <td>Qiagen</td>\n      <td>RRID:SCR_008653</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>WGCNA (version 1.64)</td>\n      <td>Bioconductor (Langfelder and Horvath, 2008)</td>\n      <td>RRID:SCR_003302</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>miR-Walk 2.0</td>\n      <td>University of Heidelberg, Germany (Dweep et al., 2011)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>variancePartition (version 1.10)</td>\n      <td>Bioconductor (Hoffman and Schadt, 2016)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>mixOmics</td>\n      <td>Bioconductor (Rohart et al., 2017)</td>\n      <td>RRID:SCR_016889</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Deposited data super-series</td>\n      <td>Gene Expression Omnibus</td>\n      <td>GSE134364</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Patient population and inclusion criteria\n\nThis study was part of the Molecular Diagnosis and Risk Stratification of sepsis (MARS) project, a prospective observational study in the mixed ICUs of two tertiary teaching hospitals in the Netherlands (Academic Medical Center, Amsterdam and University Medical Center Utrecht, Utrecht) (ClinicalTrials.gov identifier NCT01905033)\u00a0(van Vught et al., 2016a; Klein Klouwenberg et al., 2013; Scicluna et al., 2015b). For the current study, we selected consecutive patients with sepsis from the MARS biorepository who were older than 18 years of age\u00a0and had been admitted to the ICU between July 2012 and January 2014. Sepsis (n\u00a0=\u00a0156) was defined as the presence of CAP, hospital-acquired pneumonia (HAP), or intra-abdominal infection diagnosed within 24 hr of ICU admission with a culture proven or probable likelihood using criteria as described\u00a0(Zimmerman et al., 2006), accompanied by at least one additional general, inflammatory, hemodynamic, organ dysfunction, or tissue perfusion variable described in the third international consensus definitions for sepsis and septic shock\u00a0(Singer et al., 2016). Patients with aspiration pneumonia, with multiple sites of infection, and patients admitted to the ICU more than 2 days after the initiation of antibiotics were excluded. All readmissions and patients transferred from another ICU were also excluded, except when patients were referred to one of the study centers on the same day of presentation to the first ICU. Severity was assessed by APACHE IV\u00a0(Zimmerman et al., 2006) and SOFA score excluding the central nervous system component\u00a0(Vincent et al., 1996). Shock was qualified by the use of vasopressors (norepinephrine, epinephrine, or dopamine) for hypotension in a norepinephrine-equivalent dose of more than 0.1 \u00b5g/kg/min in patients with a SOFA score of at least 2\u00a0(Singer et al., 2016). Blood was collected in PAXgene tubes (Becton-Dickinson, Breda, The Netherlands) and ethylenediaminetetraacetic acid (EDTA) vacutainer tubes within 24 hr of ICU admission. Definitions of comorbid and immunocompromised conditions are reported in the online data supplement.\n\n### Healthy participants and endotoxemia\n\nPAXgene and EDTA tubes were also obtained from 82 healthy subjects. Eight male subjects were exposed to intravenous LPS in a Phase I, randomized, single-blind, parallel group, placebo controlled study (Clinicaltrials.gov identifier NCT02328612); the subjects who received placebo were used in the current study\u00a0(Perlee et al., 2018). Subjects were infused with LPS over 1 min (2 ng/kg; from Escherichia [E. coli], US standard reference endotoxin, kindly provided by Anthony Suffredini, National Institute of Health, Bethesda, MD). Whole blood was collected in PaxGene Blood tubes (Qiagen) before and 2, 4, 6,\u00a0and 24 hr after LPS administration.\n\n### Immunological markers\n\nEDTA-anticoagulated blood plasma collected on ICU admission was used for soluble mediator measurements. IL-6, IL-8, IL-10, soluble intercellular adhesion molecule-1 (ICAM-1), soluble E-selectin, and fractalkine were measured using FlexSet cytometric bead arrays (BD Biosciences, San Jose, CA) using a FACS Calibur (Becton Dickinson, Franklin Lakes, NJ, NJ, USA). Neutrophil gelatinase-associated lipocalin (NGAL), ANG-1, ANG-2, protein C, antithrombin, matrix metalloproteinase (MMP)\u22128 (R and D Systems, Abingdon, UK), and D-dimer (Procartaplex, eBioscience, San Diego, CA) were measured by Luminex multiplex assay using a BioPlex 200 (BioRas, Hercules, CA). CRP was determined by an immunoturbidimetric assay (Roche diagnostics). Platelet counts were determined by hemocytometry, prothrombin time (PT), and activated partial thromboplastin time (aPTT) by using a photometric method with Dade Innovin Reagent or by Dade Actin FS Activated PTT Reagent, respectively (Siemens Healthcare Diagnostics). Normal biomarker values were obtained from 27 age- and sex-matched healthy subjects, except for CRP, platelet counts, PT, and aPTT (routine laboratory reference values).\n\n### Microarrays and data processing\n\nTotal RNA was isolated by means of PaxGene blood miRNA isolation kit (Thermo-Fisher) as per manufacturer\u2019s instructions. Quality RNA (Agilent 2100 Bioanalyzer, Agilent Technologies; RIN\u00a0>\u00a06) was processed and hybridized to either the GeneChip Human Transcriptome Array (HTA) 2.0 (Thermo-Fisher) or the miRNA 4.1 96-array plate (Thermo-Fisher) following manufacturer\u2019s instructions. Both arrays were done on all samples (sepsis patients, controls, and healthy subjects injected with LPS). Microarrays were scanned at the Cologne Center for Genomics, Cologne, Germany.\n\nThe HTA 2.0 scans (.CEL) were processed in the R language and environment for statistical computing version 3.5.0 (R Development Core Team, Foundation for Statistical Computing, Vienna, Austria). Following robust multi-average (RMA) background-correction, quantile normalization, and log2-transformation using the oligo method (version 1.44)\u00a0(Carvalho and Irizarry, 2010) data were evaluated for non-experimental chip effects by means of surrogate variable analysis (SVA; version 3.28) and adjusted using the combat method\u00a0(Leek and Storey, 2007). Probes were annotated using biomart (version 2.36.1)\u00a0(Smedley et al., 2015), and low expression probes were filtered by means of the genefilter method (version 1.62)\u00a0(Bourgon et al., 2010). The miRNA-4.1 scans (.CEL) were analyzed by means of Affymetrix Expression Console software (Thermo-Fisher). Probes were normalized using the RMA method and detection above background (DABG) probe level detection. Homo sapiens annotated probes with detection p-value\u00a0<0.05 in at least one sample were considered for downstream analyses. Quality of HTA2.0 and miRNA-4.1 arrays was evaluated by means of the arrayqualitymetrics R package\u00a0(Kauffmann et al., 2009). Comparisons between study groups were done using the limma method (version 3.36)\u00a0(Smyth, 2005) and significance was demarcated by Benjamini\u2013Hochberg multiple test adjusted probabilities (adjusted p<0.01). The linear model included age and sex as additive covariates. The MDTH index was calculated as described previously\u00a0(Berry et al., 2010; Dunning et al., 2018). Ingenuity Pathway Analysis (Ingenuity systems, Qiagen) was used to determine the most significant canonical signaling pathways for elevated and reduced protein-coding RNA transcripts considering adjusted Fisher\u2019s probabilities (adjusted p<0.05) specifying the Ingenuity knowledgebase as reference and human species. All other parameters were default.\n\nThe novelty of our study, that is, profiling non-coding RNA expression in leukocytes of patients with sepsis, precludes an adequate study power estimation. However, considering known co-regulation with protein-coding RNA expression, we provide study power estimates based on previous observations in typical gene expression studies\u00a0(Cheng et al., 2016; Scicluna et al., 2017; Davenport et al., 2016). Considering a false discovery rate of 5%, beta error level 5% (95% power), and typical effect sizes greater than 0.25 in sepsis relative to health, a sample size of 42 per group was estimated. In addition, eight healthy volunteers in a human endotoxemia challenge would have more than 95% power to detect differences relative to pre-challenge (baseline) samples\u00a0(Cheng et al., 2016; Davenport et al., 2016; Calvano et al., 2005; Scicluna et al., 2013; Perlee et al., 2018; Seok et al., 2013; Xiao et al., 2011; Takao and Miyakawa, 2015). Using a continuous model, we estimated\u00a0that 156 patients would have more than 98% power to detect significant associations with demographic or clinical variables (false-discovery rates of 5%).\n\n### Co-expression network and pathway analysis\n\nThe weighted gene co-expression network analysis (WGCNA) method (version 1.64) was used to build the leukocyte co-expression network as described previously\u00a0(Langfelder and Horvath, 2008; Scicluna et al., 2015a; Zhao et al., 2010). A pair-wise biweight midcorrelation matrix of the most variable transcripts (coefficient of variation\u00a0>5%) was transformed into an adjacency matrix by using a \u2018soft\u2019 power function of 8 ensuring scale-free topology\u00a0(Langfelder and Horvath, 2008; Zhao et al., 2010). The adjacency matrix was further transformed into a topological overlap matrix to enable the identification of modules (clusters) encompassing highly inter-correlating RNA transcripts by using a dynamic tree cut method (version 1.63)\u00a0(Langfelder and Horvath, 2008; Zhao et al., 2010). Modules were summarized by means of the eigengene value, defined as the first PC\u00a0of the module expression matrix and the module membership measure. Protein-coding RNA in each module were analyzed for enrichment of gene ontologies for biological processes (GO:BP), molecular function (GO:MF), and cellular compartment (GO:CC) using the Gene Ontology Consortium database with significance defined by adjusted p-value\u00a0<0.05 (http://www.geneontology.org)\u00a0(Ashburner et al., 2000). Biofunctions were predicted using Ingenuity Pathways software (Ingenuity pathway analysis, Qiagen Bioinformatics) specifying activation z-score\u00a0<2 or\u00a0>2 and adjusted p-value\u00a0<0.05. The miR-Walk atlas of gene-miRNA-target interactions was used to evaluate predicted interactions of miRNA with module-specific genes by specifying the miR-Walk algorithm\u00a0(Dweep et al., 2011; Mills et al., 2017). Human species annotations and 3\u2019 untranslated region (UTR) interactions as well as a minimum seed length equating to seven were specified. All other parameters were default.\n\n### Statistics\n\nStatistical analysis was performed in the R statistical environment (v 3.5.0). Comparison of continuous data between categories was done with the Wilcoxon rank sum test. Correlation analysis of continuous data was performed using Pearson\u2019s method unless otherwise stated as well as the coefficient of determination (r2). Categorical data were analyzed by Fisher exact tests or chi-squared tests. Multiple comparison (Benjamini\u2013Hochberg) adjusted p-values\u00a0<0.05 defined significance. The proportion of variance in RNA expression explained by demographics and clinical characteristics was calculated using a multivariate approach implemented in the variancePartition method (version 1.10)\u00a0(Hoffman and Schadt, 2016). A multivariate linear model was fit including age, gender, primary diagnosis, total SOFA, APACHE IV scores, shock, and Charlson comorbidity indices. PC\u00a0analysis was done using the mixOmics package, specifying 10 components\u00a0(Rohart et al., 2017). Data is presented in the form of volcano plots, pie charts, dot plots, bar charts, and\u00a0circular and violin plots.\n",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "ec80cdd8-483d-4d1f-9640-1db87734526f",
+      "submission_id": "616aab95-b714-4e84-b62f-77883de93ff0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Evangelos J Giamarellos-Bourboulis, Attikon University Hospital Greece\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58597.sa1](https://doi.org/10.7554/eLife.58597.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nSepsis is a serious clinical condition, in which an abnormal host response to infection leads to organ failure with a high risk of death. This study by Scicluna et al. assesses the role of non-coding RNA in patients with sepsis. Using advanced molecular analysis and bioinformatics the authors compare non-coding RNA patterns in sepsis patients and healthy subjects. In addition, the authors have treated healthy volunteers with bacterial endotoxin, which is considered an important factor in bacterial sepsis, to investigate the role non-coding RNAs. They have found that long non-coding RNAs, and to a lesser extent small non-coding RNAs, were significantly altered in sepsis patients as compared to healthy controls. Thereby, this paper significantly adds to the current concepts of the regulatory responses in sepsis.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The leukocyte non-coding RNA landscape in critically ill patients with sepsis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Evangelos J Giamarellos-Bourboulis as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos van der Meer as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Michael Bauer (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nConsensus review proposal:\n\nNon-coding RNA have been recently discovered as a new component of regulatory complexity of gene Expression in eukaryotic cells. The present study by Scicluna et al. is aimed to assess the role of non-coding RNA in sepsis patients. Using advanced molecular analysis and bioinformatics the authors compare non-coding RNA patterns in sepsis patients and healthy subjects. Additional, healthy volunteers have been treated with lipopolysaccharide to investigate effects of endotoxemia on non-coding RNAs. Resulting data are of novelty and significantly add to the current knowledge on sepsis related regulatory responses. The RNA preparation and analysis has been accomplished by up-to-date technology.\n\nThe paper is descriptive, well-written, and with reasonable conclusions. It is a reasonable step forward in the field, but to some degree the paper suffers from a lack of context. Other authors have written on this topic and no attempt is made to discuss, reproduce, or bioinformatically include/compare to those studies.\n\nEssential revisions:\n\n1) The authors might consider PMID: 29657277 (data on GEO). A very small study is here: https://doi.org/10.1089/gtmb.2017.0061. They also might consider mining their own dataset GSE65682 as others have done recently: https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-020-02372-2. Many microarrays measure lncRNAs and the data are available, just not examined, online. Shouldn't the authors try to validate their findings externally?\n\n2) As a brief aside, much of the above is also true for endotoxin studies. There are also a huge number of studies looking at miRNAs in sepsis in a mechanistic fashion; nice review here: PMC6255943. All of this could be contextualized better.\n\n3) Why is the analysis of non-coding RNAs in this submission accompanied by an analysis of protein-coding regions? We understand that the authors try to investigate how the expression of coding regions is modulated by non-coding regions in terms of pathways analysis, but the way data are analysed does not support such conclusions.\n\n4) Although there is a positive association of coding-RNAs between sepsis patients and the LPS endotoxemia model, this is at the best marginal for the non-coding RNAs. This should be highlighted and the data of Figure 3\u2014figure supplement 1 showing this should be moved in the core of the manuscript.\n\n5) For Figure 1C and the resulting pathways analysis, was an effect size threshold also used? Or just significance?\n\n6) Remarkable that the endotoxemia model had so few genes differently expressed from sepsis at 24 hours (just 43). Worth a comment on the model?\n\n7) Across which data was the functional inference done? Sepsis only? Sepsis and healthy?\n\n8) Figure 5 should be revised and demonstrate the correlation of biomarkers with non-coding RNAs.\n\n9) Figure 5B examines shock vs. non-shock; can Figure 1 add this subclassification?\n\n10) We welcome the authors to present Volcano plots and analysis of non-coding RNAs between survivors and non-survivors. Since data on 1-year survival are available, can the authors shifts in expression of non-coding RNAs between original after 28-days who become survivors and non-survivors after one year?\n\n11) Materials and methods: do any patients profiled here overlap with this group's prior microarray studies?\n\n12) Materials and methods: why were two different microarray types used, and how was this technical difference accounted for in the sepsis-vs.-endotoxemia analysis?\n\n13) As the results indicating correlation of non-coding RNA profiles in sepsis patients and expression profiles in the human endotoxemia model simultaneously with endotoxin tolerance is of extraordinary importance and interest, we suggest discussion of the (accidental) interplay of resistance and tolerance responses during endoxemia and sepsis.\n",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4590be02-b55f-47c1-a20e-77df1f666753",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C1",
+      "claim": "Long non-coding RNA and small non-coding RNA were significantly altered in sepsis relative to health.",
+      "claim_type": "EXPLICIT",
+      "source": "Via next-generation microarray analysis of leukocyte RNA we found that long non-coding RNA and, to a lesser extent, small non-coding RNA were significantly altered in sepsis relative to health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states findings from microarray analysis showing alterations in non-coding RNA in sepsis patients compared to healthy subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "50a386a2-251d-4878-8855-91e80c36e408",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C2",
+      "claim": "Long non-coding RNA expression was largely recapitulated in human endotoxemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Long non-coding RNA expression, but not small non-coding RNA, was largely recapitulated in human endotoxemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that long non-coding RNA expression patterns in sepsis were reproduced in the human endotoxemia model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3da272fc-f1be-4c2f-b0b8-468c7c184233",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C3",
+      "claim": "Small non-coding RNA expression was not recapitulated in human endotoxemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Long non-coding RNA expression, but not small non-coding RNA, was largely recapitulated in human endotoxemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that small non-coding RNA patterns were not reproduced in human endotoxemia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "5af25ea6-4390-4b0a-a536-82595f1cc46b",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C4",
+      "claim": "Integrating RNA profiles and plasma protein levels revealed non-sensory olfactory receptor activity pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating RNA profiles and plasma protein levels revealed known as well as previously unobserved pathways, including non-sensory olfactory receptor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that integration of RNA and protein data revealed olfactory receptor activity as a pathway.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "657df938-48e9-4d7c-bc79-727eb5302093",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C5",
+      "claim": "2\u20135 million deaths worldwide are attributable to sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that 2\u20135 million deaths worldwide are attributable to sepsis (Fleischmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Fleischmann et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3a039d32-aee4-4e12-8d5c-a75e1ea63bac",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C6",
+      "claim": "Sepsis was recognized as a global health priority in 2017 by the World Health Assembly and WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, sepsis has been recognized as a global health priority in 2017 by the World Health Assembly and WHO (World Health Organization, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to the World Health Organization, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "f76c6fc3-d109-4d3d-ba31-c098ed4b72e0",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C7",
+      "claim": "No specific treatment for sepsis has been approved despite more than 100 clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of more than 100 clinical trials having evaluated drugs targeting specific components of the host response to infection (Marshall, 2014), no specific treatment for sepsis has been approved (Angus and van der Poll, 2013; Cecconi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Marshall, 2014; Angus and van der Poll, 2013; and Cecconi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "499435f1-58ea-455f-873a-8ec359628907",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C8",
+      "claim": "Protein-coding RNA expression profiling has helped broaden understanding of sepsis immunopathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-coding RNA expression profiling of blood leukocytes from sepsis patients has helped to broaden our understanding of sepsis immunopathology (van der Poll et al., 2017), for example, by unmasking defects in leukocyte energy metabolism of sepsis patients (Cheng et al., 2016), and by classifying sepsis patients as transcriptomic endotypes with prognostic and pathophysiological value (Scicluna et al., 2017; Davenport et al., 2016; Wong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by multiple citations including van der Poll et al., 2017; Cheng et al., 2016; Scicluna et al., 2017; Davenport et al., 2016; and Wong et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "2ac0ceee-2a7f-4f64-ac00-ac041337dfc7",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C9",
+      "claim": "The protein-coding part of genomes from different species is remarkably similar in numbers and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "From fruit flies to man, the protein-coding part of genomes from different species is remarkably similar in numbers and functions (Liu et al., 2013), which suggests that numerous aspects of complex biology in eukaryotes might stem from non-protein-coding regions of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Liu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "a5c25e58-ff8f-4540-91ee-7102e8ec38ab",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C10",
+      "claim": "Non-coding RNAs were under negative evolutionary selection, implying functionality rather than transcriptional noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such studies facilitated the demonstration that non-coding RNAs were under negative evolutionary selection, which implied functionality rather than plain 'transcriptional noise' (Ponjavic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Ponjavic et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "512462ba-454e-4891-8c5b-e676fdd3ea77",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C11",
+      "claim": "A substantial proportion of non-coding RNA yields clear phenotypic effects in both in vitro and in vivo functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a substantial proportion of non-coding RNA, by general convention defined as long (>200 nucleotides) or small (<200 nucleotides) non-coding RNAs, yields clear phenotypic effects in both in vitro and in vivo functional studies (Zhu et al., 2016; Gebert and MacRae, 2019; Atianand et al., 2016; Carpenter et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Zhu et al., 2016; Gebert and MacRae, 2019; Atianand et al., 2016; and Carpenter et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "08cbdba7-d7a5-4d56-b5e6-155ac9da7a2c",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C12",
+      "claim": "Non-coding RNAs have been linked to human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Ever-growing numbers of small non-coding RNAs, for example micro (mi)RNAs (20\u201324 nucleotides), or long non-coding RNAs such as long intergenic non-coding (linc)RNAs, have been linked to human diseases (Bao et al., 2019; Esteller, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Bao et al., 2019 and Esteller, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "69224ad5-cb03-47db-8d64-d3662eb06703",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C13",
+      "claim": "Non-coding RNAs have capacity for precise regulation of cellular biological processes via epigenetic mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "An important aspect of non-coding RNAs is their capacity for precise regulation of cellular biological processes via epigenetic mechanisms, including complex immune system processes (Carpenter, 2018; Atianand and Fitzgerald, 2014; Mehta and Baltimore, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Carpenter, 2018; Atianand and Fitzgerald, 2014; and Mehta and Baltimore, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "b3911b9c-5b8a-4070-8a92-71d5a00447b1",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C14",
+      "claim": "Principal component analysis showed clear partitioning of sepsis patients distinct from healthy subjects for protein-coding and long non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component (PC) analysis of the most abundant protein-coding RNAs (n = 18,063) and long non-coding RNAs (n = 16,087) showed clear partitioning of patients with sepsis distinct from healthy subjects (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is supported by data from principal component analysis and reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "8103d6ca-afe1-4d4e-99e4-0312e6cf4887",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C15",
+      "claim": "Small non-coding RNAs showed only minimal separation between patients and healthy subjects in principal component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, small non-coding RNAs (n = 4949) showed only minimal separation between patients and healthy subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on principal component analysis results comparing sepsis patients to healthy subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "c837f74f-4b59-47f2-81e2-e42f02930a0c",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C16",
+      "claim": "Long non-coding RNA transcripts exhibited the broadest expression perturbations in healthy participants and sepsis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, long non-coding RNA transcripts exhibited the broadest expression perturbations in healthy participants and sepsis patients, exemplified by the highest overall MDTH indices (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is supported by MDTH index data and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "b9552c91-df64-4e27-9071-99c0cd349daa",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C17",
+      "claim": "15,097 protein-coding RNAs were significantly altered between sepsis patients and healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing sepsis patients to healthy subjects identified 15,097, 13,158, and 635 significantly altered (adjusted p-value <0.01) protein-coding, long non-coding, and small non-coding RNAs, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis with statistical significance threshold and reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "35f6259f-2159-4ea2-840f-bb817ec10991",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C18",
+      "claim": "13,158 long non-coding RNAs were significantly altered between sepsis patients and healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing sepsis patients to healthy subjects identified 15,097, 13,158, and 635 significantly altered (adjusted p-value <0.01) protein-coding, long non-coding, and small non-coding RNAs, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis with statistical significance threshold and reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "24649f44-e044-4c23-8562-be451f346c2f",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C19",
+      "claim": "635 small non-coding RNAs were significantly altered between sepsis patients and healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing sepsis patients to healthy subjects identified 15,097, 13,158, and 635 significantly altered (adjusted p-value <0.01) protein-coding, long non-coding, and small non-coding RNAs, respectively (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis with statistical significance threshold and reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "b46fff90-8659-4712-b3c0-19fcf8ebbab0",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C20",
+      "claim": "LincRNAs, antisense, and pseudogene RNA transcripts represented the most highly altered long non-coding RNA biotypes in sepsis relative to health.",
+      "claim_type": "EXPLICIT",
+      "source": "LincRNAs, antisense, and pseudogene RNA transcripts represented the most highly altered long non-coding RNA biotypes in sepsis relative to health (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on analysis of long non-coding RNA biotypes and reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "98a9a582-4783-4874-aaab-7cabce0f06e8",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C21",
+      "claim": "Micro (mi)RNAs, stem loop RNAs, and small nucleolar (sno)RNAs were the most abundant small non-coding RNA biotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Micro (mi)RNAs, stem loop RNAs, and small nucleolar (sno)RNAs were the most abundant small non-coding RNA biotypes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on analysis of small non-coding RNA biotypes and reference to Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "76032594-ac3a-46df-a78a-ce6498c2c350",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C22",
+      "claim": "Gender and age of healthy subjects explained 5%, 4%, and 4% of the variation in protein-coding, long non-coding, and small non-coding RNA expression, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a variance partition (multivariable) approach (Hoffman and Schadt, 2016), differences in gender and age of healthy subjects explained 5%, 4%, and 4% of the variation in protein-coding, long non-coding, and small non-coding RNA expression, respectively (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on variance partition analysis and reference to Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "8a8b3e46-3c38-49f2-b365-7a625b1b9d38",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C23",
+      "claim": "Demographics and clinical characteristics cumulatively explained 18%, 13%, and 8% of protein-coding, long non-coding, and small non-coding RNA expression variance in sepsis patients, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In sepsis patients, a multivariable model that incorporated demographics and common clinical characteristics, including APACHE IV, SOFA scores, shock and Charlson comorbidity indices, cumulatively explained 18%, 13%, and 8% of protein-coding, long non-coding, and small non-coding RNA expression variance, respectively (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on multivariable variance partition analysis and reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "344c17d1-4da7-47c6-8ceb-4b656722afd8",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C24",
+      "claim": "Sepsis primary site of infection and place of acquisition explained the highest proportion of variation in protein-coding (6.7%) and long non-coding (4.4%) RNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, sepsis primary site of infection (lung or abdomen) and place of acquisition (community or hospital) explained the highest proportion of variation in protein-coding (6.7%) and long non-coding (4.4%) RNA expression (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on variance partition analysis and reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "e98d0998-637d-463c-b1c2-4efba5e2fd1d",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C25",
+      "claim": "837 protein-coding RNAs and 80 long non-coding RNAs were significantly altered when comparing patients with septic shock to patients without shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Septic shock explained low proportions of variation in RNA expression (Figure 2A), and directly comparing patients with septic shock to patients without shock resulted in 837 and 80 significantly altered protein-coding and long non-coding RNA, respectively (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis comparing shock vs. no shock patients and reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "fc60d386-75d4-49fc-b66a-c465aeb89d1a",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C26",
+      "claim": "146 significantly altered protein-coding RNAs were identified when evaluating RNA expression in patients discordant for survival after 28 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating RNA expression in patients discordant for survival after 28 days identified 146 significantly altered protein-coding RNA (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis comparing survivors vs. non-survivors and reference to Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "86e19ffa-f0cc-4b6f-a1df-dc4cd5c6cda6",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C27",
+      "claim": "No significant differences were uncovered in non-coding RNA expression profiles between survivors and non-survivors.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were uncovered in non-coding RNA expression profiles, suggesting that non-coding RNA profiles obtained on ICU admission may not be suitable as mortality predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on differential expression analysis comparing survivors vs. non-survivors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1262a4d1-ee38-48f1-89a5-3039c486f398",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C28",
+      "claim": "Non-coding RNA profiles obtained on ICU admission may not be suitable as mortality predictors.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were uncovered in non-coding RNA expression profiles, suggesting that non-coding RNA profiles obtained on ICU admission may not be suitable as mortality predictors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is an inference based on the lack of significant differences in non-coding RNA between survivors and non-survivors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "087c0885-8a8a-4c3d-b804-7dc703241875",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C29",
+      "claim": "2361, 5053, 2925, and 43 significant differences in long non-coding RNA expression were found after 2, 4, 6, and 24 hr endotoxemia, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Long non-coding RNA expression was robustly altered in endotoxemia, with 2361, 5053, 2925, and 43 significant differences after 2, 4, 6, and 24 hr endotoxemia, respectively (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on differential expression analysis at multiple time points in human endotoxemia and reference to Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "68db7905-6689-49db-9bc7-12187c39d80c",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C30",
+      "claim": "The highest correlation coefficient (r2 = 0.51) for long non-coding RNA fold expression was found between sepsis and 4 hr post-LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing fold expression in sepsis (relative to health) to human endotoxemia revealed significant correlations after 2, 4, and 6 hr of endotoxemia (Figure 3D). The highest r2 was found for sepsis and 4 hr post-LPS (r2 = 0.51).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on correlation analysis between sepsis and endotoxemia time points and reference to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3c7d83c8-6e8e-4c3b-b4cb-422e682b8683",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C31",
+      "claim": "Correlation analysis of small RNA fold expression during endotoxemia against fold expression in sepsis revealed indirect correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation analysis of small RNA fold expression during endotoxemia against fold expression in sepsis revealed indirect correlations (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on correlation analysis and reference to Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "293337e6-3c84-4531-ba4f-5d727ed610d4",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C32",
+      "claim": "Hierarchical clustering uncovered 23 network modules each harboring more than 100 inter-correlating RNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering uncovered 23 network modules (clusters) each harboring more than 100 inter-correlating RNA transcripts (Figure 4A and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on weighted network analysis and hierarchical clustering with reference to Figure 4A and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "111cc875-bbc2-49bd-b1b0-0717375e41d5",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C33",
+      "claim": "Eight modules in the co-expression network were significantly enriched for long non-coding RNA relative to protein-coding RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight modules in the co-expression network were significantly enriched for long non-coding RNA relative to protein-coding RNA (Fisher's adjusted p<0.01; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on enrichment analysis with statistical significance and reference to Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3461d026-3e04-4cba-a87a-987ad9945bcf",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C34",
+      "claim": "34% of non-coding RNA modules were organized into distinct units.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the leukocyte long non-coding transcriptome of sepsis patients is primarily co-expressed with protein-coding RNA, but 34% of non-coding RNA modules were organized into distinct units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is an inference based on the enrichment analysis showing 8 out of modules enriched for long non-coding RNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "fda6ae4b-4f43-4304-9669-eb5033389ca7",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C35",
+      "claim": "49 small RNAs in five network modules had explained variance estimated >20%.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering miRNA profiles that were significantly altered in sepsis patients relative to health (Figure 1C), and miRNA-to-gene interactions (miRWalk method), we detected 49 small RNAs in five network modules with explained variance estimated >20%, including hsa-miR-200c-3p (translation initiation module), SNORD84 (regulation of cytokine secretion/Toll-like receptor [TLR] signaling module), HBII-276 (translation initiation module), hsa-miR-1275 (sensory perception of chemical stimulus/olfactory receptor activity module), and hsa-miR-664b-3p (neutrophil degranulation/extracellular exosome module) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on integration of miRNA profiles with network modules and reference to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "4842746c-6b6b-4136-a95e-0b8702c5f663",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C36",
+      "claim": "hsa-miR-200c-3p has been shown to modify TLR4 signaling efficiency dependent on MYD88-mediated pathways in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, hsa-miR-200c-3p has been shown to modify TLR4 signaling efficiency dependent on MYD88-mediated pathways in an embryonic kidney cell line (HEK293) (Wendlandt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Wendlandt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "fc2f4e3a-15cd-4da0-9a04-f8d92ac42f98",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C37",
+      "claim": "Neutrophil degranulation, protein ubiquitination, and mitotic cell cycle modules correlated with soluble mediators of inflammation, endothelial responses, coagulation, and clinical variables of disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophil degranulation (secretory; red), protein ubiquitination (pink), and mitotic cell cycle (tan) modules correlated with soluble mediators of inflammation (C reactive protein [CRP], IL-6, IL-10, IL-8), endothelial responses (E-selectin and angiopoietin-2 [ANG2]), coagulation (D-Dimer), and clinical variables of disease severity (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on correlation analysis between module eigengenes and clinical/biochemical parameters with reference to Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "9744fdbb-a636-4a0a-8c6e-db84e73c1aeb",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C38",
+      "claim": "Antigen presentation/Th1-Th2 cell activation, regulation of cytokine secretion/TLR signaling, and type-I interferon signaling/double stranded RNA binding modules were indirectly correlated with various soluble mediators and clinical severity indices.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, antigen presentation/Th1-Th2 cell activation (green module), regulation of cytokine secretion/TLR signaling (black module), and type-I interferon signaling/double stranded RNA binding (salmon module) were indirectly correlated with various soluble mediators and clinical severity indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on correlation analysis between module eigengenes and clinical/biochemical parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "229ff083-eb47-4f94-80d1-770540a1aa37",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C39",
+      "claim": "Patients with septic shock showed significantly higher neutrophil degranulation (secretory) expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with septic shock showed significantly higher neutrophil degranulation (secretory) expression patterns (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on comparison of module eigengene values between shock and no shock patients with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "00ca61ba-3953-492d-a757-280fc2930d52",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C40",
+      "claim": "MYOSLID expression was directly correlated with levels of inflammatory response markers IL-6, IL-8, IL-10, and CRP.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with their respective module eigengene correlations with inflammatory response markers, MYOSLID expression was directly correlated with levels of inflammatory response markers IL-6, IL-8, IL-10, and acute phase response protein CRP (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on correlation analysis between MYOSLID expression and inflammatory markers with reference to Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1c0f38ec-da77-441d-acab-2c96bc8c6f29",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C41",
+      "claim": "LUCAT1 expression was indirectly correlated with soluble mediators of inflammation, except for CRP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, LUCAT1 expression was indirectly correlated with soluble mediators of inflammation, except for CRP (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The statement is based on correlation analysis between LUCAT1 expression and inflammatory markers with reference to Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "ce0ed22d-9df7-4a56-8950-71d20df17455",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C42",
+      "claim": "The study included 156 sepsis patients and 82 healthy subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to build a comprehensive map of RNA expression in the context of sepsis, we evaluated protein-coding, long and small non-coding RNA expression in whole blood leukocytes from 156 sepsis patients and 82 healthy subjects (median age (Q1\u2013Q3), 54 (42 \u2013 60); 26% male).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement describes the study population size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "9495c6d0-2607-40c4-b507-960b4b37e612",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C43",
+      "claim": "Eight healthy volunteers were challenged with lipopolysaccharide in a controlled clinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we obtained whole blood from 156 patients with sepsis and 82 healthy subjects among whom eight were challenged with lipopolysaccharide in a clinically controlled setting (human endotoxemia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the human endotoxemia experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3862f73a-9703-4fd7-8e26-0f49187e2c9a",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C44",
+      "claim": "The median age of sepsis patients was 62 years (Q1-Q3: 50-70).",
+      "claim_type": "EXPLICIT",
+      "source": "Age, years\t62 (50 - 70)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides demographic data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "782984ed-7f87-4aa0-b725-f42b29698b06",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C45",
+      "claim": "62.8% of sepsis patients were male.",
+      "claim_type": "EXPLICIT",
+      "source": "Male sex\t98 (62.8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides demographic data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1e57e256-248b-4603-bd49-206f10d5228d",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C46",
+      "claim": "89.7% of sepsis patients were of white ethnicity.",
+      "claim_type": "EXPLICIT",
+      "source": "White ethnicity\t140 (89.7)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides demographic data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "5cdf2067-d5e4-4d1f-93ed-3d32295540a6",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C47",
+      "claim": "75.0% of sepsis patients had medical admission.",
+      "claim_type": "EXPLICIT",
+      "source": "Medical admission\t117 (75.0)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical characteristics for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "0f7261e1-5edb-4ab5-9967-e014489e1d0b",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C48",
+      "claim": "28.8% of sepsis patients had immune suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune suppression\t45 (28.8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical characteristics for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "4d8c04f6-2ede-46e3-b1c5-51c08ded18c8",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C49",
+      "claim": "The median APACHE IV score of sepsis patients was 72 (Q1-Q3: 58-92).",
+      "claim_type": "EXPLICIT",
+      "source": "APACHE IV score\t72 [58 - 92]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical severity scores for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1431fd20-63fc-4c52-a77c-bbba3108e52b",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C50",
+      "claim": "The median SOFA score of sepsis patients was 7 (Q1-Q3: 4-9).",
+      "claim_type": "EXPLICIT",
+      "source": "SOFA score\t7 (4 - 9)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical severity scores for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "07ac638c-b0ec-4a35-b85c-ccbdf56c51d6",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C51",
+      "claim": "55.1% of sepsis patients had shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Shock\t86 (55.1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical characteristics for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "583ef364-f1ae-4b3a-a691-057d826b4241",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C52",
+      "claim": "82.1% of sepsis patients required mechanical ventilation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical ventilation\t128 (82.1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides clinical characteristics for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "d34b1241-e82c-4558-a88f-8a78c812f662",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C53",
+      "claim": "63.5% of sepsis patients had pneumonia as primary diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pneumonia\t99 (63.5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides primary diagnosis data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "622f89bb-39ac-4e0b-98f2-ef9f68a7e262",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C54",
+      "claim": "36.5% of sepsis patients had abdominal sepsis as primary diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Abdominal sepsis\t57 (36.5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides primary diagnosis data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "fda40adb-599e-49d1-a938-34f49835a198",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C55",
+      "claim": "The 28-day mortality rate was 30.8% in sepsis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "28-day mortality\t48 (30.8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides outcome data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1b7b6c3a-3b3e-4719-8114-4be73275a977",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C56",
+      "claim": "The 90-day mortality rate was 37.8% in sepsis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "90-day mortality\t59 (37.8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides outcome data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1ca924ad-4951-4c2f-bfe3-3aa93f89cffc",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C57",
+      "claim": "The 1-year mortality rate was 49.4% in sepsis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "1-year mortality\t77 (49.4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 provides outcome data for sepsis patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "a1645f3b-8285-4da5-b0d7-152df8a80b9c",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C58",
+      "claim": "Sepsis is a multifaceted syndrome that develops as the consequence of an abnormal host response to infection leading to organ failure and high risk of death.",
+      "claim_type": "EXPLICIT",
+      "source": "Sepsis is a multifaceted syndrome that develops as the consequence of an abnormal host response to infection leading to organ failure and high risk of death (Angus and van der Poll, 2013; Cecconi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Angus and van der Poll, 2013 and Cecconi et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "6cb0b062-9c65-49b2-bbde-4f205f8ad59f",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C59",
+      "claim": "Lower conservation coupled with faster evolution rates of long non-coding RNA regions may be at the basis of extensive variation in long non-coding RNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower conservation coupled with faster evolution rates of long non-coding RNA regions, which seemingly harbor more single nucleotide polymorphisms (SNPs) than protein-coding genes (Necsulea and Kaessmann, 2014), as well as the possibility of their relatively higher susceptibility to environmental and lifestyle factors (Dumeaux et al., 2010), may be at the basis of the extensive variation in long non-coding RNA expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is a speculation based on citations to Necsulea and Kaessmann, 2014 and Dumeaux et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "bf114542-f013-4111-8c5e-89b295fd7d7b",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C60",
+      "claim": "The human endotoxemia model is a highly relevant in vivo model of acute systemic inflammation in the context of a controlled clinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The human endotoxemia model is a highly relevant in vivo model of acute systemic inflammation in the context of a controlled clinical setting (Lowry, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Lowry, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3fa73081-79f9-4a2c-a950-809bb8deceda",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C61",
+      "claim": "The correlation between sepsis and human endotoxemia was dependent on timing of the response to LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "In extension to the previously reported data, based on a single time-point of human endotoxemia (Seok et al., 2013; Takao and Miyakawa, 2015), we found that the correlation between sepsis and human endotoxemia was also dependent, at least in part, on timing of the response to LPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on correlation analysis at multiple time points and references previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "c0b16ab5-cc95-42ac-835a-97fb893144e0",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C62",
+      "claim": "The highest correlation between sepsis and endotoxemia was found at 4 hr, a time point at which the capacity of cytokine production by leukocytes is typically reduced, indicative of endotoxin tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest correlation was found at 4 hr, a time point at which the capacity of cytokine production by leukocytes is typically reduced in the human endotoxemia model, indicative of endotoxin tolerance (Cheng et al., 2016; de Vos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on correlation analysis and supported by citations to Cheng et al., 2016 and de Vos et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "22ae963c-977e-4ad6-ab4a-40c979c210f3",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C63",
+      "claim": "Small non-coding RNA expression profiles in sepsis patients were not reliably recapitulated in human endotoxemia, primarily showing indirect correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, small non-coding RNA expression profiles in sepsis patients were not reliably recapitulated in human endotoxemia, primarily showing indirect correlations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on correlation analysis between sepsis and endotoxemia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "66288fe5-dca0-418e-84b6-b5f3fbc498b0",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C64",
+      "claim": "Low expression patterns of miRNA compared to protein-coding and long non-coding RNA may explain why small non-coding RNA profiles were not recapitulated in human endotoxemia.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to typically low expression patterns of miRNA, compared to protein-coding and long non-coding RNA, and reported high specificities of miRNA to developmental stage and cell-type (Bernstein et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is a speculation based on a citation to Bernstein et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "9b6e80fc-b22a-4d41-92c2-d68b4125efc6",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C65",
+      "claim": "The host response during infection is characterized by a balance between resistance and tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "The host response during infection is characterized by a balance between resistance (seeking to limit the pathogen load) and tolerance (aiming to retain cell and organ functions) (Schneider and Ayres, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Schneider and Ayres, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "0fde4b54-2deb-4a2a-9194-b78bbef6e9be",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C66",
+      "claim": "In sepsis both resistance and tolerance mechanisms can become uncontrolled.",
+      "claim_type": "EXPLICIT",
+      "source": "In sepsis both mechanisms can become uncontrolled, wherein aberrant activation of resistance pathways results in tissue damage and inadequate tolerance can cause immune suppression with enhanced susceptibility to secondary infections (Bauer and Wetzker, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Bauer and Wetzker, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "13e87c1e-aa07-4028-8069-df79f00de363",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C67",
+      "claim": "Coding and long non-coding RNA profiles in blood leukocytes of sepsis patients particularly reflect a tolerant state.",
+      "claim_type": "EXPLICIT",
+      "source": "While our time-sequential data in healthy humans injected with LPS suggest that coding and long non-coding RNA profiles in blood leukocytes of sepsis patients particularly reflect a tolerant state, time course studies in patients are needed to increase the insight into the role of distinct RNA species in the interplay between resistance and tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is an inference based on the correlation with the 4-hour endotoxemia time point.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "f53d3344-dff7-4b8d-b7db-6d055d8ccb61",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C68",
+      "claim": "SNPs influencing gene expression patterns were identified in a recent prospective study in sepsis due to community-acquired pneumonia.",
+      "claim_type": "EXPLICIT",
+      "source": "This was shown in a recent prospective study in sepsis due to community-acquired pneumonia (CAP), wherein SNPs influencing gene expression patterns were identified (Davenport et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Davenport et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "1ae8d336-f615-47f3-8eed-4c2bcb0e77e1",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C69",
+      "claim": "The time of onset of sepsis cannot be accurately determined, resulting in considerable uncertainty since patients are presumably admitted to the ICU at various stages of the sepsis syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "The time of onset of sepsis is a current 'black box' in the field as it cannot be accurately determined, thereby resulting in considerable uncertainty since patients are presumably admitted to the ICU at various stages of the sepsis syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on knowledge of clinical practice in sepsis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "857178c4-0088-40eb-940a-4b5521a2db68",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C70",
+      "claim": "Cell death or exhaustion, particularly in lymphocytes, have been proposed as causal features of immunosuppression and lethality in sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell death or exhaustion, particularly in lymphocytes, have been proposed as causal features of immunosuppression and lethality in sepsis (Hotchkiss et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Hotchkiss et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "864570d6-43d4-4f17-94fc-17fe3a9a6bf6",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C71",
+      "claim": "GABPB1-AS1 is an autophagy and chemical stress responder.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings further strengthen this hypothesis and position previously unknown non-coding RNA, including an autophagy and chemical stress responder GABPB1-AS1 (Tani et al., 2014; Luan et al., 2019), as putative regulators of cell death in the context of sepsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to Tani et al., 2014 and Luan et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "80699439-3cba-4309-8ca3-275cc5e1f21f",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C72",
+      "claim": "Modulation of DNA damage responses was demonstrated as a potential therapeutic path that might be exploited to confer protection to severe sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulation of DNA damage responses was demonstrated as a potential therapeutic path that might be exploited to confer protection to severe sepsis (Figueiredo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Figueiredo et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "fd2a719a-1625-412f-8294-3e0be9842c91",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C73",
+      "claim": "Olfactory receptors have been shown to be involved in cell\u2013cell recognition, migration, proliferation, and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "They have been shown to be involved in cell\u2013cell recognition, migration, proliferation, and apoptosis (Ma\u00dfberg and Hatt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Ma\u00dfberg and Hatt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "f68b40ef-9b21-42d9-aa7a-1ffabf7343c4",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C74",
+      "claim": "Olfactory receptors are not exclusive to the nose.",
+      "claim_type": "EXPLICIT",
+      "source": "Little is known about olfactory receptors in non-chemosensory cells, but a growing body of evidence suggests they are not exclusive to the nose (Kang and Koo, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Kang and Koo, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "ed472f3b-e159-433e-82bf-4010394dafa9",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C75",
+      "claim": "The study provides a benchmark dissection of the blood leukocyte 'regulome' that can facilitate prioritization of future functional studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide a benchmark dissection of the blood leukocyte 'regulome' that can facilitate prioritization of future functional studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the overall contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "e8d76198-1d80-4907-b04c-6ebe3ec48812",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C76",
+      "claim": "The study was part of the Molecular Diagnosis and Risk Stratification of sepsis (MARS) project.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was part of the Molecular Diagnosis and Risk Stratification of sepsis (MARS) project, a prospective observational study in the mixed ICUs of two tertiary teaching hospitals in the Netherlands (Academic Medical Center, Amsterdam and University Medical Center Utrecht, Utrecht) (ClinicalTrials.gov identifier NCT01905033) (van Vught et al., 2016a; Klein Klouwenberg et al., 2013; Scicluna et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the study design and provides citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "979ea1f5-9463-4d38-818e-9b03abd5e619",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C77",
+      "claim": "Total RNA was isolated using PaxGene blood miRNA isolation kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Total RNA was isolated by means of PaxGene blood miRNA isolation kit (Thermo-Fisher) as per manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the RNA isolation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "3a23b7e9-71a8-4939-b19f-92f6f6771391",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C78",
+      "claim": "Quality RNA was processed and hybridized to the GeneChip Human Transcriptome Array (HTA) 2.0 or the miRNA 4.1 96-array plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Quality RNA (Agilent 2100 Bioanalyzer, Agilent Technologies; RIN > 6) was processed and hybridized to either the GeneChip Human Transcriptome Array (HTA) 2.0 (Thermo-Fisher) or the miRNA 4.1 96-array plate (Thermo-Fisher) following manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the microarray procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "4cc4f07f-18b8-4bf7-b44f-7a6570602730",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "claim_id": "C79",
+      "claim": "Microarrays were scanned at the Cologne Center for Genomics, Cologne, Germany.",
+      "claim_type": "EXPLICIT",
+      "source": "Microarrays were scanned at the Cologne Center for Genomics, Cologne, Germany.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes where microarray scanning was performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3b777e56-7275-49bd-8076-ffc21cef4e4d",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Long non-coding RNAs and small non-coding RNAs are significantly altered in sepsis patients compared to healthy subjects, with long non-coding RNAs showing the broadest expression perturbations. Principal component analysis revealed clear separation between sepsis patients and healthy subjects for protein-coding and long non-coding RNAs, but minimal separation for small non-coding RNAs. Differential expression analysis identified 13,158 long non-coding RNAs and 635 small non-coding RNAs significantly altered in sepsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14-C21 provide converging evidence from multiple analytical approaches (PCA, MDTH indices, differential expression analysis) demonstrating significant alterations in non-coding RNA expression in sepsis. The statistical thresholds (adjusted p<0.01) and sample sizes (156 sepsis patients, 82 healthy subjects) are appropriate, and the findings are internally consistent across different analytical methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Long non-coding RNA expression patterns in sepsis patients are largely recapitulated in the human endotoxemia model, with the highest correlation (r\u00b2=0.51) observed at 4 hours post-LPS administration. This time point corresponds to endotoxin tolerance, when cytokine production capacity is typically reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C29-C30, C61-C62 demonstrate that long non-coding RNA profiles in sepsis correlate with human endotoxemia in a time-dependent manner. The correlation analysis is appropriately conducted across multiple time points (2, 4, 6, 24 hours), with the 4-hour time point showing the strongest correlation. The interpretation linking this to endotoxin tolerance is supported by cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "e85f3a12-eaf0-444a-b430-a4c5037efa48",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Small non-coding RNA expression patterns in sepsis patients were not reliably recapitulated in human endotoxemia, showing primarily indirect correlations. This may be due to low expression levels and high cell-type specificity of miRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31, C63-C64 consistently demonstrate that small non-coding RNAs behave differently from long non-coding RNAs in the endotoxemia model. The correlation analysis (Figure 3E) supports the finding of indirect correlations. The proposed explanation (C64) is appropriately presented as speculation with supporting citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "ce43d9f6-26d2-42b3-898d-3f05b591ac54",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Demographics and clinical characteristics explain relatively low proportions of variance in RNA expression profiles. In healthy subjects, gender and age explained 4-5% of variance, while in sepsis patients, clinical variables cumulatively explained 8-18% of variance, with primary site of infection and place of acquisition explaining the highest proportions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are supported by variance partition analysis using appropriate multivariable methods. The findings are clearly quantified with specific percentages and are consistent with the interpretation that clinical variables explain only modest proportions of RNA expression variance. The methodology (variancePartition) is appropriate for this analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "6c4fb2fe-8237-4a54-8125-55c02064fca1",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Septic shock is associated with modest transcriptional changes, with 837 protein-coding RNAs and 80 long non-coding RNAs significantly altered. Patients with septic shock showed significantly higher neutrophil degranulation (secretory) expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C39 are supported by differential expression analysis (Figure 2C) and module eigengene analysis (Figure 5B) with appropriate statistical testing. The finding that shock explains low proportions of overall variance but shows specific module-level differences is internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "ee13e046-c1ac-4fa0-babb-0fa138da1e7d",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA expression profiles show limited association with 28-day mortality, with 146 protein-coding RNAs significantly altered between survivors and non-survivors, but no significant differences in non-coding RNA profiles. This suggests non-coding RNA profiles at ICU admission may not be suitable mortality predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by differential expression analysis. However, the conclusion (C28) that non-coding RNA profiles are unsuitable as mortality predictors is appropriately cautious, acknowledging this is based on single time-point data at ICU admission. The negative finding for non-coding RNAs is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "77482cbd-bcd6-4cfc-9a01-d1f13d73a2c3",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Weighted co-expression network analysis identified 23 network modules, with 8 modules significantly enriched for long non-coding RNA relative to protein-coding RNA. This indicates that 34% of non-coding RNA modules are organized into distinct functional units, while the majority co-express with protein-coding RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by WGCNA analysis with appropriate statistical testing (Fisher's adjusted p<0.01). The methodology is well-established for co-expression analysis, and the interpretation that most long non-coding RNAs co-express with protein-coding RNAs while some form distinct modules is reasonable based on the enrichment analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "d4a0eedf-f740-4e6d-85ab-6b4c15a39674",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Integration of miRNA profiles with co-expression networks identified 49 small RNAs in five network modules with >20% explained variance, including hsa-miR-200c-3p in the translation initiation module. This miRNA has been previously shown to modify TLR4 signaling efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by miRNA-to-gene interaction analysis using the miRWalk method. The identification of specific miRNAs with high explained variance is methodologically sound, and the connection to prior functional studies (C36) appropriately contextualizes the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "282cd33d-dec3-429f-bf9f-009f4c4d50ae",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Network modules show distinct correlation patterns with clinical and biochemical parameters. Neutrophil degranulation, protein ubiquitination, and mitotic cell cycle modules correlate directly with inflammatory mediators and disease severity, while antigen presentation, TLR signaling, and type-I interferon signaling modules show indirect correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by correlation analysis between module eigengenes and clinical/biochemical parameters (Figure 5A). The analysis appropriately uses Pearson correlation with adjustment for multiple testing (adjusted p<0.05), and the findings are biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "e66e7d1a-20db-47cf-8083-228750f20647",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hub long non-coding RNAs MYOSLID and LUCAT1 show opposing correlation patterns with inflammatory markers. MYOSLID expression directly correlates with IL-6, IL-8, IL-10, and CRP, while LUCAT1 shows indirect correlations with inflammatory mediators except CRP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by correlation analysis (Figures 5D-E) between individual lncRNA expression and inflammatory markers. The identification of these lncRNAs as module hubs is based on intramodular connectivity analysis, and the correlation patterns are clearly demonstrated in the figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "0f1af250-3045-4a80-acbe-63295622723b",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Integration of RNA profiles and plasma protein levels revealed previously unobserved pathways including non-sensory olfactory receptor activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C4 states that olfactory receptor activity pathways were revealed through integration of RNA and protein data, but the manuscript does not provide clear methodological details on how this integration was performed. While olfactory receptors are mentioned in network modules (C32, Figure 4), the specific integration method with plasma protein levels is not adequately described to evaluate this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "82e805ef-6657-4e92-aed6-b3dee2a502aa",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Coding and long non-coding RNA profiles in blood leukocytes of sepsis patients particularly reflect a tolerant state, based on correlation with the 4-hour endotoxemia time point associated with endotoxin tolerance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 makes an inference about the immune state of sepsis patients based on correlation with a specific endotoxemia time point. While the correlation data (C30, C62) support that the 4-hour time point shows the highest correlation, the leap to concluding that sepsis patients are in a 'tolerant state' requires additional validation. The authors appropriately note that 'time course studies in patients are needed,' acknowledging the limitation of this inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study included 156 sepsis patients and 82 healthy subjects (including 8 challenged with LPS) from the MARS project. Patient demographics show median age 62 years, 62.8% male, with high disease severity (median APACHE IV 72, SOFA 7) and substantial mortality (30.8% at 28 days, 49.4% at 1 year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C57, C76 provide descriptive statistics of the study population. These are straightforward demographic and clinical data presented in Table 1 and the methods section. The data are internally consistent and appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "18d55b2d-6325-4a47-b92d-5aaeb08d7bc4",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RNA was isolated using PAXgene blood miRNA isolation kit and hybridized to GeneChip Human Transcriptome Array 2.0 or miRNA 4.1 96-array plate, with scanning performed at the Cologne Center for Genomics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe standard methodological procedures that are clearly stated in the methods section. These are appropriate methods for comprehensive RNA profiling including non-coding RNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about sepsis epidemiology, prior transcriptomic studies, non-coding RNA biology, and relevant mechanistic pathways are supported by appropriate citations to the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C13, C58-C60, C65-C66, C68-C74 are background/contextual claims supported by citations. These appropriately frame the study rationale and interpret findings in the context of existing literature. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    },
+    {
+      "id": "f5ea467d-02af-4fd8-a283-f2160c195561",
+      "content_id": "32010cbe-4829-4175-bbd1-9a07c14f486f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study provides a benchmark dissection of the blood leukocyte 'regulome' that can facilitate prioritization of future functional studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a summary statement about the study's contribution. Given the comprehensive profiling of coding and non-coding RNAs, network analysis, and integration with clinical parameters, this characterization is reasonable. However, the actual utility for prioritizing functional studies will depend on future validation work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:56:11.412631Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4590be02-b55f-47c1-a20e-77df1f666753",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "b3911b9c-5b8a-4070-8a92-71d5a00447b1",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "8103d6ca-afe1-4d4e-99e4-0312e6cf4887",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "c837f74f-4b59-47f2-81e2-e42f02930a0c",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "b9552c91-df64-4e27-9071-99c0cd349daa",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "35f6259f-2159-4ea2-840f-bb817ec10991",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "24649f44-e044-4c23-8562-be451f346c2f",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "b46fff90-8659-4712-b3c0-19fcf8ebbab0",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "98a9a582-4783-4874-aaab-7cabce0f06e8",
+      "result_id": "3b777e56-7275-49bd-8076-ffc21cef4e4d"
+    },
+    {
+      "claim_id": "50a386a2-251d-4878-8855-91e80c36e408",
+      "result_id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871"
+    },
+    {
+      "claim_id": "087c0885-8a8a-4c3d-b804-7dc703241875",
+      "result_id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871"
+    },
+    {
+      "claim_id": "68db7905-6689-49db-9bc7-12187c39d80c",
+      "result_id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871"
+    },
+    {
+      "claim_id": "3fa73081-79f9-4a2c-a950-809bb8deceda",
+      "result_id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871"
+    },
+    {
+      "claim_id": "c0b16ab5-cc95-42ac-835a-97fb893144e0",
+      "result_id": "7da1e8a9-b838-4493-bdaf-1ed801cf0871"
+    },
+    {
+      "claim_id": "3da272fc-f1be-4c2f-b0b8-468c7c184233",
+      "result_id": "e85f3a12-eaf0-444a-b430-a4c5037efa48"
+    },
+    {
+      "claim_id": "3c7d83c8-6e8e-4c3b-b4cb-422e682b8683",
+      "result_id": "e85f3a12-eaf0-444a-b430-a4c5037efa48"
+    },
+    {
+      "claim_id": "22ae963c-977e-4ad6-ab4a-40c979c210f3",
+      "result_id": "e85f3a12-eaf0-444a-b430-a4c5037efa48"
+    },
+    {
+      "claim_id": "66288fe5-dca0-418e-84b6-b5f3fbc498b0",
+      "result_id": "e85f3a12-eaf0-444a-b430-a4c5037efa48"
+    },
+    {
+      "claim_id": "76032594-ac3a-46df-a78a-ce6498c2c350",
+      "result_id": "ce43d9f6-26d2-42b3-898d-3f05b591ac54"
+    },
+    {
+      "claim_id": "8a8b3e46-3c38-49f2-b365-7a625b1b9d38",
+      "result_id": "ce43d9f6-26d2-42b3-898d-3f05b591ac54"
+    },
+    {
+      "claim_id": "344c17d1-4da7-47c6-8ceb-4b656722afd8",
+      "result_id": "ce43d9f6-26d2-42b3-898d-3f05b591ac54"
+    },
+    {
+      "claim_id": "e98d0998-637d-463c-b1c2-4efba5e2fd1d",
+      "result_id": "6c4fb2fe-8237-4a54-8125-55c02064fca1"
+    },
+    {
+      "claim_id": "229ff083-eb47-4f94-80d1-770540a1aa37",
+      "result_id": "6c4fb2fe-8237-4a54-8125-55c02064fca1"
+    },
+    {
+      "claim_id": "fc60d386-75d4-49fc-b66a-c465aeb89d1a",
+      "result_id": "ee13e046-c1ac-4fa0-babb-0fa138da1e7d"
+    },
+    {
+      "claim_id": "86e19ffa-f0cc-4b6f-a1df-dc4cd5c6cda6",
+      "result_id": "ee13e046-c1ac-4fa0-babb-0fa138da1e7d"
+    },
+    {
+      "claim_id": "1262a4d1-ee38-48f1-89a5-3039c486f398",
+      "result_id": "ee13e046-c1ac-4fa0-babb-0fa138da1e7d"
+    },
+    {
+      "claim_id": "293337e6-3c84-4531-ba4f-5d727ed610d4",
+      "result_id": "77482cbd-bcd6-4cfc-9a01-d1f13d73a2c3"
+    },
+    {
+      "claim_id": "111cc875-bbc2-49bd-b1b0-0717375e41d5",
+      "result_id": "77482cbd-bcd6-4cfc-9a01-d1f13d73a2c3"
+    },
+    {
+      "claim_id": "3461d026-3e04-4cba-a87a-987ad9945bcf",
+      "result_id": "77482cbd-bcd6-4cfc-9a01-d1f13d73a2c3"
+    },
+    {
+      "claim_id": "fda6ae4b-4f43-4304-9669-eb5033389ca7",
+      "result_id": "d4a0eedf-f740-4e6d-85ab-6b4c15a39674"
+    },
+    {
+      "claim_id": "4842746c-6b6b-4136-a95e-0b8702c5f663",
+      "result_id": "d4a0eedf-f740-4e6d-85ab-6b4c15a39674"
+    },
+    {
+      "claim_id": "fc2f4e3a-15cd-4da0-9a04-f8d92ac42f98",
+      "result_id": "282cd33d-dec3-429f-bf9f-009f4c4d50ae"
+    },
+    {
+      "claim_id": "9744fdbb-a636-4a0a-8c6e-db84e73c1aeb",
+      "result_id": "282cd33d-dec3-429f-bf9f-009f4c4d50ae"
+    },
+    {
+      "claim_id": "00ca61ba-3953-492d-a757-280fc2930d52",
+      "result_id": "e66e7d1a-20db-47cf-8083-228750f20647"
+    },
+    {
+      "claim_id": "1c0f38ec-da77-441d-acab-2c96bc8c6f29",
+      "result_id": "e66e7d1a-20db-47cf-8083-228750f20647"
+    },
+    {
+      "claim_id": "5af25ea6-4390-4b0a-a536-82595f1cc46b",
+      "result_id": "0f1af250-3045-4a80-acbe-63295622723b"
+    },
+    {
+      "claim_id": "13e87c1e-aa07-4028-8069-df79f00de363",
+      "result_id": "82e805ef-6657-4e92-aed6-b3dee2a502aa"
+    },
+    {
+      "claim_id": "ce0ed22d-9df7-4a56-8950-71d20df17455",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "9495c6d0-2607-40c4-b507-960b4b37e612",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "3862f73a-9703-4fd7-8e26-0f49187e2c9a",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "782984ed-7f87-4aa0-b725-f42b29698b06",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "1e57e256-248b-4603-bd49-206f10d5228d",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "5cdf2067-d5e4-4d1f-93ed-3d32295540a6",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "0f7261e1-5edb-4ab5-9967-e014489e1d0b",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "4d8c04f6-2ede-46e3-b1c5-51c08ded18c8",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "1431fd20-63fc-4c52-a77c-bbba3108e52b",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "07ac638c-b0ec-4a35-b85c-ccbdf56c51d6",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "583ef364-f1ae-4b3a-a691-057d826b4241",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "d34b1241-e82c-4558-a88f-8a78c812f662",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "622f89bb-39ac-4e0b-98f2-ef9f68a7e262",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "fda40adb-599e-49d1-a938-34f49835a198",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "1b7b6c3a-3b3e-4719-8114-4be73275a977",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "1ca924ad-4951-4c2f-bfe3-3aa93f89cffc",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "e8d76198-1d80-4907-b04c-6ebe3ec48812",
+      "result_id": "741d6006-02d9-46f1-8ff7-947e2ba9e7f9"
+    },
+    {
+      "claim_id": "979ea1f5-9463-4d38-818e-9b03abd5e619",
+      "result_id": "18d55b2d-6325-4a47-b92d-5aaeb08d7bc4"
+    },
+    {
+      "claim_id": "3a23b7e9-71a8-4939-b19f-92f6f6771391",
+      "result_id": "18d55b2d-6325-4a47-b92d-5aaeb08d7bc4"
+    },
+    {
+      "claim_id": "4cc4f07f-18b8-4bf7-b44f-7a6570602730",
+      "result_id": "18d55b2d-6325-4a47-b92d-5aaeb08d7bc4"
+    },
+    {
+      "claim_id": "657df938-48e9-4d7c-bc79-727eb5302093",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "3a039d32-aee4-4e12-8d5c-a75e1ea63bac",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "f76c6fc3-d109-4d3d-ba31-c098ed4b72e0",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "499435f1-58ea-455f-873a-8ec359628907",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "2ac0ceee-2a7f-4f64-ac00-ac041337dfc7",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "a5c25e58-ff8f-4540-91ee-7102e8ec38ab",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "512462ba-454e-4891-8c5b-e676fdd3ea77",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "08cbdba7-d7a5-4d56-b5e6-155ac9da7a2c",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "69224ad5-cb03-47db-8d64-d3662eb06703",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "a1645f3b-8285-4da5-b0d7-152df8a80b9c",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "6cb0b062-9c65-49b2-bbde-4f205f8ad59f",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "bf114542-f013-4111-8c5e-89b295fd7d7b",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "9b6e80fc-b22a-4d41-92c2-d68b4125efc6",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "0fde4b54-2deb-4a2a-9194-b78bbef6e9be",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "f53d3344-dff7-4b8d-b7db-6d055d8ccb61",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "1ae8d336-f615-47f3-8eed-4c2bcb0e77e1",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "857178c4-0088-40eb-940a-4b5521a2db68",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "864570d6-43d4-4f17-94fc-17fe3a9a6bf6",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "80699439-3cba-4309-8ca3-275cc5e1f21f",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "fd2a719a-1625-412f-8294-3e0be9842c91",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "f68b40ef-9b21-42d9-aa7a-1ffabf7343c4",
+      "result_id": "b8a26944-85b8-42cd-a4d6-c25e3fe2d226"
+    },
+    {
+      "claim_id": "ed472f3b-e159-433e-82bf-4010394dafa9",
+      "result_id": "f5ea467d-02af-4fd8-a283-f2160c195561"
+    }
+  ],
+  "comparisons": []
+}

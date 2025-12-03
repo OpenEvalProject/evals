@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C94",
+      "C95"
+    ],
+    "result": "DEPTOR is a unique partial inhibitor of mTORC1, leaving approximately 50% residual kinase activity even at saturating concentrations. This partial inhibition is observed for both 4EBP1 (IC50 = 14 \u00b5M) and S6K1 (IC50 = 51 \u00b5M) substrates, in contrast to PRAS40 which shows full inhibition under identical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C40-C43 provide converging evidence from multiple substrates and experimental approaches (western blots, Phos-tag gels) demonstrating partial inhibition with ~50% residual activity. The comparison with PRAS40 (C43) provides a critical control showing that full inhibition is achievable under the same conditions. The novelty claim (C95) is supported by the in vitro reconstitution data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The minimal inhibitory unit of DEPTOR consists of the long-linker (residues 228-323) and PDZ domain (residues 324-409). The PDZ domain alone shows no measurable inhibition, while the N-terminal tandem DEP domains contribute to but are not sufficient for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide systematic deletion analysis showing that the linker-PDZ is necessary and sufficient for inhibition, while the PDZ alone is not. The increased IC50 for linker-PDZ compared to full-length DEPTOR (C51) supports the contributory role of the DEP domains. The data are internally consistent across multiple constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cryo-EM structure at 4.3 \u00c5 resolution reveals a bipartite binding mode where DEPTOR's PDZ domain interacts with the mTOR FAT region (residues 1527-1571) and the unstructured linker binds to the mTOR FRB domain. The structure resembles basal mTORC1 rather than RHEB-activated mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C38, C58-C64 describe the cryo-EM structure with appropriate resolution (4.3 \u00c5) and identify two distinct binding sites. The density for the PDZ domain is clearly observed (C59-C60), and additional density at the FRB is modeled as helical turns (C61-C62). The speculation about linker identity (C63) is appropriately qualified. The bipartite binding model (C64) is consistent with the kinetic data showing both regions are required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The DEPTOR PDZ domain binds to mTOR FAT helices in a non-canonical fashion, with the binding interface involving PDZ residues 338-342 and 358-362. This binding mode is similar to the INAD PDZ3/TRP channel interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by both cryo-EM structural data (C70) and NMR line-broadening experiments (C71) that independently identify the binding interface. The comparison to INAD PDZ3 (C72) provides precedent for this non-canonical binding mode, strengthening the structural interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The DEPTOR long-linker interacts with the mTOR FRB domain with weak affinity (Kd ~500 \u00b5M). NMR and HDX-MS experiments identify multiple regions in the linker (residues 228-232, 244-249, 261-264, 280-285) that interact with FRB residues 2035-2042 and 2103-2109.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 provide complementary evidence from NMR chemical shift perturbation (C73-C76) and HDX-MS (C77) that converge on similar regions of the linker interacting with the FRB. The identification of multiple binding regions (C78) is supported by both techniques. The weak Kd (C75) is consistent with the partial inhibition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Activated mTORC1 (by RHEB-GTP or oncogenic mutation A1459P) is more potently inhibited by DEPTOR, with IC50 decreasing approximately 400-fold compared to basal mTORC1. However, RHEB activation of mTORC1 is not significantly affected by DEPTOR presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C80-C82 demonstrate a counterintuitive finding with robust quantitative data showing 400-fold decrease in IC50 for both RHEB-activated and mutant mTORC1 (C80-C81). The control experiment (C82) showing RHEB activation is unaffected by DEPTOR rules out simple competitive inhibition and supports the partial inhibition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The cancer-associated A1459P mutation increases DEPTOR PDZ binding affinity 10-fold (Kd = 0.6 \u00b5M vs 7 \u00b5M for wild-type) by causing helix f\u03b112 disorder and widening the cleft between N-heat and FAT domains. The N-heat domain restricts PDZ binding in wild-type mTOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide a structural mechanism for increased DEPTOR binding to activated mTORC1. The cryo-EM structure shows helix disorder (C83) and cleft widening (C84), while SPR data quantify the affinity difference with fast vs. slow kinetics (C85-C86). The role of N-heat is supported by the 40-fold lower IC50 for mTOR\u0394N (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C89",
+      "C90",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "mTORC1 prevents DEPTOR inhibition by phosphorylating DEPTOR. Pre-phosphorylated DEPTOR shows almost no inhibition of mTORC1, and this phosphorylation-dependent release occurs independently of degradation machinery, establishing that mTORC1 regulates its own inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C89-C90, C114-C116 demonstrate mutual antagonism between DEPTOR and mTORC1. The key experiment with pre-phosphorylated DEPTOR (C89) shows loss of inhibition in a reconstituted system without degradation machinery (C90), formally establishing that phosphorylation alone is sufficient to release inhibition. This supports the self-regulation model (C115-C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The DEPTOR long-linker is unstructured in solution, as demonstrated by HDX-MS showing rapid solvent exchange and NMR secondary structure analysis revealing no regions of secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide complementary evidence from two independent biophysical techniques (HDX-MS and NMR) that converge on the same conclusion about the unstructured nature of the long-linker. This is consistent with the lack of density in the cryo-EM structure spanning the two binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The short-linker region (residues 305-323) significantly stabilizes the PDZ domain, increasing its melting temperature by approximately 10\u00b0C, although the short-linker-PDZ construct is not an mTORC1 inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by differential scanning fluorimetry data showing ~10\u00b0C increase in melting temperature and NMR relaxation data showing reduced flexibility in the PDZ N-terminus. The functional data showing no inhibition by short-linker-PDZ distinguishes stabilization from inhibitory function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "DEPTOR does not compete with 4EBP1 at the TOS motif binding site on RAPTOR, as increasing DEPTOR concentrations have no effect on KM,4EBP1 for the TOS site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by kinetic data showing no change in KM1 (TOS site) with increasing DEPTOR. This is consistent with the structural model where DEPTOR binds the FRB and FAT domains but not the RAPTOR TOS-binding site, explaining the partial inhibition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DEPTOR inhibits monomeric mTOR\u0394N-mLST8 with IC50 = 0.4 \u00b5M and 33% residual activity, demonstrating that partial inhibition is not due to the dimeric nature of mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide a critical control experiment showing that partial inhibition persists in a monomeric mTOR construct. The 40-fold lower IC50 compared to full-length mTORC1 also supports the role of the N-heat domain in restricting DEPTOR binding. The conclusion (C48) is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "A DEPTOR mutant with 13 serine/threonine residues mutated to alanine (13A mutant) shows comparable IC50 to wild-type DEPTOR for both wild-type and A1459P mutant mTORC1, indicating these phosphorylation sites are not important for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by IC50 measurements showing no significant difference between wild-type and 13A mutant DEPTOR. This distinguishes the role of these sites in mTORC1-mediated regulation (phosphorylation for release) from their role in initial binding/inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The isolated PDZ and tandem DEP domains are not phosphorylated by mTOR, while DEPDEP-long-linker is phosphorylated at reduced rates compared to full-length DEPTOR, indicating the PDZ domain assists linker interaction with mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 use phosphorylation as a proxy for productive binding to mTORC1. The data show that both PDZ and linker are required for efficient phosphorylation, consistent with the bipartite binding model. The inference (C57) is reasonable but could be strengthened with direct binding measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C69"
+    ],
+    "result": "The overall architecture of DEPTOR-bound mTORC1 resembles basal mTORC1 rather than RHEB-activated mTORC1, with similar ATP-binding site conformations between free and DEPTOR-bound mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C69 are supported by structural comparisons showing that DEPTOR-bound mTORC1 adopts a conformation similar to the basal state. This is consistent with DEPTOR stabilizing an inactive or less active conformation, explaining the partial inhibition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The isolated PDZ domain does not inhibit the A1459P mutant even at saturating concentrations, despite tight binding (Kd = 0.6 \u00b5M), demonstrating that PDZ binding alone is insufficient for inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 provides a critical control showing that high-affinity PDZ binding is necessary but not sufficient for inhibition. This strongly supports the requirement for bipartite binding and rules out PDZ-mediated allosteric inhibition as the sole mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Two possible modes of DEPTOR bipartite binding exist: (1) linker binding to FRB with PDZ bound to FAT, or (2) DEPt binding to a DEPt site with PDZ bound to FAT. Both modes contribute to mTORC1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 integrate the authors' data with concurrent work by W\u00e4lchli et al., 2021. The model is supported by the authors' demonstration of linker-FRB interaction and the increased IC50 of linker-PDZ vs. full-length DEPTOR suggesting DEPt contribution. The two-mode model reconciles all available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "DEPTOR shares only the FRB-binding site with substrates and allows residual mTOR activity, while PRAS40 shares both FRB and TOS sites and causes full inhibition. This partial inhibition establishes an upper limit on mTORC1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 synthesize the mechanistic findings to explain differential inhibition by DEPTOR vs. PRAS40. The conclusion is supported by the structural and kinetic data showing DEPTOR does not compete at the TOS site (C44-C45) and maintains ~50% activity (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "DEPTOR is an endogenous mTORC1/mTORC2 inhibitor whose mis-regulation is associated with cancer. DEPTOR levels are low in most tumors but overexpressed in some multiple myeloma, thyroid, and lung cancers, where it causes hyperactivation of PI3K/mTORC2/Akt signaling. Small molecule inhibitors targeting mTOR/DEPTOR interaction show selective cytotoxicity against multiple myeloma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C22, C33-C37 provide established background knowledge from the literature about DEPTOR's role in cancer. These claims are well-supported by multiple citations and provide important context for the study, though they represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background information on mTORC1 structure, function, regulation, and substrate recognition, including the roles of RHEB, Rag GTPases, PRAS40, and previous models of DEPTOR regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C32 provide comprehensive background on mTORC1 biology from established literature. These are well-cited and accurate representations of prior knowledge that contextualize the current study. They are not new findings but necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The residual mTORC1 activity in the presence of DEPTOR explains phenotypic differences between rapamycin and DEPTOR inhibition, and why DEPTOR deletion has lesser effects than TSC1/2 loss. Multi-site interactions are a hallmark of mTORC1 that enable fine-tuned regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 connect the mechanistic findings to cellular phenotypes and broader principles of mTORC1 regulation. The explanations are logical extensions of the partial inhibition data (C2, C39, C42) and are supported by citations to prior cellular studies (C96-C97) and principles of multi-site binding (C98-C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Partial inhibition by DEPTOR may be important for maintaining balance in mTOR/PI3K signaling and could inform therapeutic strategies. The short-linker/PDZ interface represents a potential drug target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104, C108, and C111 are speculative about therapeutic implications. While the mechanistic data (C105-C106) support the uniqueness of DEPTOR's partial inhibition, the therapeutic value of mimicking this property (C104, C108) or targeting the short-linker/PDZ interface (C111) requires experimental validation. Claim C107 about feedback loops is established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The discrepancy between reduced DEPTOR binding to activated mutants in cells versus increased affinity in the reconstituted system may be explained by upregulated cellular processes. The A1459P mutation alone increases DEPTOR binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is supported by SPR data (C85-C86) showing increased affinity. However, the explanation for the discrepancy with cellular data (C112) is speculative. The authors acknowledge multiple factors in cells (localization, competing interactors, phosphorylation) that could explain the difference, but these are not tested.",
+    "result_type": "MINOR"
+  }
+]

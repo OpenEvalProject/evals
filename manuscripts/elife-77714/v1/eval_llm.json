@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CAGE sequencing of WT and E\u00b5-Tcl1 B cells identified 28,616 promoters corresponding to 11,515 genes, with high technical quality and reproducibility. The data showed 3,337 upregulated and 1,829 downregulated TSSs in E\u00b5-Tcl1, suggesting overall promoter upregulation in CLL. A significant fraction of TSSs were intronic/intergenic, with most (79-85%) derived from enhancer RNAs (eRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C49 describe the CAGE data generation and quality control metrics. The technical validation is strong: high Pearson correlation coefficients between replicates (C36), alignment with FANTOM5 reference data (C35), and appropriate PCA separation (C41). The identification of eRNAs using bidirectional transcription criteria (C39-C40) is methodologically sound. The inference of overall promoter upregulation (C43) is reasonable given the 1.8-fold excess of upregulated vs downregulated TSSs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of alternative promoter usage revealed 550 upregulated and 373 downregulated differential TSS usage (DTU) events in E\u00b5-Tcl1, with upregulated alternative TSSs enriched at core promoters, 5' UTRs, CDS, and introns. These upregulated alternative TSSs showed elevated association with active enhancers marked by eRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 describe DTU analysis with appropriate statistical methods. The 47% excess of upregulated alternative TSSs (C53) is a reasonable inference from the data. The correlation between alternative TSSs and eRNAs (C55) provides mechanistic insight, though the correlation analysis method could be more explicitly described. The enrichment at specific genomic locations (C54) is well-supported by Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Specific examples of DTU include: (1) PD-L2 showing promoter shift from an inactive truncated isoform in WT to full-length protein in CLL; (2) Chd1 showing intra-genic TSS activation leading to domain truncation; (3) Fbxo5 showing 5' UTR shortening. Global analysis revealed dramatic increases in alternative TSS isoforms predicted to generate N-terminally truncated/modified proteins in E\u00b5-Tcl1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 provide specific examples and global analysis of DTU consequences. The examples are well-illustrated in Figure 2D-F with clear genomic tracks. However, C58 includes speculation about immunosuppression that is not directly tested. C59 uses 'presumably' indicating uncertainty about functional consequences. The global analysis (C61) is supported by Figure 2G showing dramatic enrichment of N-terminally modified isoforms. The inference about proteome diversity (C62) is reasonable but requires future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Gene ontology analysis of genes affected by alternative promoter usage showed enrichment in critical CLL pathways including NF-\u03baB signaling, MAPK signaling, Toll-like receptor signaling, PI3K signaling, and chromatin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 describes GO enrichment analysis with appropriate citations linking these pathways to CLL biology. The analysis is supported by Supplementary file 1. This provides biological context for the DTU findings, though the statistical significance of enrichments is not explicitly stated in the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "34 chromatin remodelers showed ORF-retaining or -truncating alternative TSSs in E\u00b5-Tcl1, with 28 upregulated. Most upregulated alternative TSSs in chromatin modifiers (Hdac4, Hdac5, Sirt2, Kdm4a, Dnmt3a, Chd1, Mgmt) are predicted to express truncated proteins lacking critical domains. 5' RACE-qPCR validation confirmed dramatic upregulation of alternative TSS isoforms for Dnmt3a, Chd1, Kdm4a, and Sirt2. Additional epigenetic regulators of closed chromatin were strongly downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe chromatin regulator alterations with strong experimental support. The 5' RACE-qPCR validation (C66, Figure 3\u2014figure supplement 1) provides orthogonal confirmation of CAGE findings for four key genes. The downregulation data (C67) is supported by Table 1 showing log fold changes and adjusted p-values. The inference about widespread chromatin deregulation (C68) is well-supported by the convergent evidence of truncated activators and downregulated repressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Exogenous expression of hTCL1 in MEFs induced significant elevation of intra-genic truncating TSSs for Hdac5, Dnmt3a, and Kdm4a (but not Zswim4), suggesting that Tcl1 itself can promote chromatin relaxation and promoter shifts in at least some genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe a key mechanistic experiment testing whether TCL1 is sufficient to induce cryptic promoters. The MEF experiment (Figure 3B-C) provides evidence for intrinsic TCL1 effects. However, the claim appropriately hedges with 'at least in some genes' (C70) since not all tested genes showed induction (Zswim4 negative). The experiment uses multiple independent clones strengthening the conclusion, though statistical significance indicators suggest variable effects across genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Transcription factor binding site (TFBS) analysis identified 63 enriched motifs in upregulated alternative TSS promoters, with upregulated proto-oncogenes Ets2 and c-Myc corresponding to enriched Ets-related and bHLH motifs. c-Myc was upregulated in CAGE data and dramatically upregulated in all hTCL1-expressing MEF clones, indicating its activation in E\u00b5-Tcl1 B CLL is likely intrinsic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 link TFBS enrichment to upregulated transcription factors. The Fisher's exact test for enrichment (C71) is appropriate. The connection between motif enrichment and TF upregulation (C72) is supported by Figure 4B and Supplementary file 3. The MEF experiment (C74, Figure 4C) provides strong evidence that TCL1 can activate c-Myc, with all three independent clones showing dramatic upregulation (***p<0.001). The inference about intrinsic activation (C75) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nine enriched TFBS motifs were found in upregulated enhancers, with all corresponding transcription factors (Mef2b, Pbx3, Maff, Nfil3, Atf3, Baft3, Tfap4, Arid3a) upregulated in E\u00b5-Tcl1, suggesting these enhancers and TFs act as inducers of DTUs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe enhancer-associated TFBS enrichment. The analysis parallels the promoter TFBS analysis with appropriate methods. The remarkable concordance that all nine enriched motifs correspond to upregulated TFs (C77) strengthens the mechanistic model. However, C78 is an inference ('strongly suggest') that would benefit from functional validation of specific TF-enhancer-promoter relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Polysome profiling of E\u00b5-Tcl1 CLL cells showed a high monosome-to-polysome ratio reminiscent of translation initiation halt, suggesting limited protein synthesis capacity. CAGE analysis of polysome fractions identified 30,246 promoters. 'Differential Low-TE' TSSs showed longer 5' UTRs and more upstream ORFs (uORFs), consistent with known inhibitory translation features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe polysome-CAGE methodology and quality control. The high monosome:polysome ratio (C79, Figure 5A) is clearly visible. The inference about limited protein synthesis (C80) is reasonable but somewhat speculative without direct measurement of protein synthesis rates. The validation that Low-TE TSSs have longer 5' UTRs and more uORFs (C82, Figure 5B) provides important internal validation of the TE classification method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Of 543 DTUs in 5' UTRs, 142 were differentially translated. The vast majority of transcriptionally upregulated DTUs (60/76, 79%) were High-TE, while most downregulated DTUs (41/66, 62%) were Low-TE, indicating coordination of TSS selection with mRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe the relationship between DTU and translation efficiency. The data (Figure 5C) clearly show the coordination between transcriptional upregulation and high TE. The inference about coordination (C86) is well-supported by the strong enrichment patterns. However, the sample size for this analysis is relatively small (142 differentially translated DTUs), which limits statistical power for subgroup analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "73 intra-genic alternative TSSs upregulated in E\u00b5-Tcl1 exceeded 50% of canonical TSS levels in polysomes, while 168 had lower translatability. Examples include Dnmt3a (loss of DNA-binding domain), Sirt2 (truncated deacetylase domain with higher translatability), and Kdm4a (truncated isoform equally represented in polysomes). With five truncated HDAC/KDM family members and dramatic downregulation of Hdac11 and Hdac9, E\u00b5-Tcl1 B cells are characterized by reduced histone deacetylation and demethylation activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 integrate transcriptional and translational data to assess functional impact. The 50% threshold (C87) is a reasonable cutoff for functional significance. The specific examples (C89-C93) are well-illustrated in Figure 5F with clear genomic tracks and protein domain schematics. C91 appropriately hedges ('suggesting') about functional impairment. The synthesis about reduced eraser activities (C94) is a logical inference from the convergent evidence, though direct measurement of enzymatic activities would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of TSS nucleotide frequencies showed purines (A+G) account for 83% in E\u00b5-Tcl1 vs 64% in MEFs, suggesting increased purine preference. Transcripts initiated with 'C' had substantially lower translation efficiency than A, G, or T. Among C-initiating triplets, those with pyrimidine in the third position (CNY) showed much lower TE, with nucleotides following CNY not contributing to TE suppression, indicating CNY is the predominant inhibitory feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 describe a novel finding about CNY trinucleotides and translation efficiency. The data (Figure 6A-D) clearly show the CNY effect. The comparison to MEFs (C96) provides context, though it's from a different study (cited). The analysis that nucleotides beyond position 3 don't contribute (C101) is supported by Figure 6D. The inference that CNY is the predominant feature (C102) is well-supported. However, the mechanism underlying CNY-mediated TE suppression is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Reanalysis of energy-starved MEF data showed CNY is also associated with greater TE inhibition under metabolic stress. The high monosome:polysome ratio and CNY-associated TE reduction are consistent with E\u00b5-Tcl1 B CLL cells being under metabolic stress, similar to the hallmark TOP element downregulation seen in various metabolic stresses and mTOR inhibition. This effect was linked to reduced eIF4E levels affecting cap-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C121 connect the CNY finding to metabolic stress. The reanalysis of published data (C103, Figure 6\u2014figure supplement 1) strengthens the CNY-stress connection. The inference about metabolic stress (C104, C119) is reasonable given the convergent evidence: high monosome:polysome ratio, CNY-TE association, and similarity to energy-starved cells. However, this remains correlative\u2014direct measurement of metabolic parameters or ATP levels would strengthen the conclusion. The mechanistic link to eIF4E (C121) is from prior work, not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Survival assays showed non-CLL and healthy B cells were inhibited by HDAC2A and eIF4E inhibitors in a dose-dependent manner, whereas CLL cells displayed reduced sensitivity. None of the B-cell types were affected by HDAC3A and KDM4A inhibitors at the concentrations used, suggesting CLL cells are less dependent on these limiting factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 describe functional validation experiments. Figure 7 shows clear dose-response curves with statistical significance markers. The differential sensitivity between CLL and non-CLL cells (C105) supports the model that CLL cells have adapted to reduced epigenetic regulator activity. However, the lack of effect for HDAC3A and KDM4A inhibitors (C106) could reflect insufficient concentrations rather than lack of dependence. The inference (C107) is reasonable but alternative explanations (compensatory mechanisms, different isoform dependencies) are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Intra-genic promoter shifts in B CLL follow a feed-forward loop where activation of N-terminally truncated closed chromatin modifiers further enhances cryptic promoter activity. The combined loss of epigenetic regulators and induced expression of specific transcription factors underlie the dramatic TSS and AP usage changes. These features are likely intrinsic to E\u00b5-Tcl1 B CLL, as hTCL1 expression in MEFs is sufficient to induce intra-genic promoters and upregulate c-Myc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 synthesize the major mechanistic findings. The feed-forward loop model (C108) is a logical inference from the data showing truncated chromatin regulators and increased cryptic promoter activity. The synthesis (C109) appropriately integrates multiple lines of evidence. The conclusion about intrinsic effects (C110) is well-supported by the MEF experiments (Figures 3C, 4C). However, this remains a model that would benefit from additional functional validation, such as rescue experiments with full-length chromatin regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Prior studies showed TCL1 interacts with and inhibits DNMT3A/3B enzymatic activity, and TCL1-activated AKT signaling also reduces DNMT3A activity. Combined with the current finding of DNMT3A truncation via cryptic promoter activation, multiple mechanisms converge to inhibit DNMT3A. Since DNMT3A inhibition together with HDAC inhibition is sufficient to induce cryptic promoters, DNMT3A downregulation by TCL1 is proposed as the initial trigger for the feed-forward loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 integrate prior literature with current findings to propose DNMT3A as the initial trigger. While the logic is sound and multiple mechanisms converge on DNMT3A (C111-C113 from literature, plus C89 from current data), C115 is explicitly labeled as a proposal/speculation. The claim that DNMT3A+HDAC inhibition is 'sufficient' (C114) is from prior work, but whether DNMT3A is 'the initial trigger' vs. one of several parallel mechanisms is not definitively established. Temporal experiments or DNMT3A rescue experiments would be needed to test this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Polysome-CAGE enabled assessment of N-terminally truncated/modified protein isoform contribution to protein functionality, revealing substantial impairments in chromatin regulation and energy metabolism pathways expected to contribute to the transformed phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 describe the methodological contribution and overall findings. The polysome-CAGE approach is novel and well-executed. The inference about pathway impairments (C117) is supported by the GO analysis (Figure 5E) and specific examples. However, 'expected to contribute' indicates this is predictive rather than directly demonstrated\u2014functional assays of specific truncated proteins would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Given TCL1's profound effects on multiple regulatory pathways and CLL cell tolerance to pathway inhibition, targeting TCL1 itself may be more effective than targeting affected pathways. Identifying TCL1 inhibitors should be an important therapeutic direction. The discovery of highly translated N-terminally modified proteins could enable identification of CLL-specific antigens for immunotherapy, and combining TCL1 inhibitors with immunotherapy could be promising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 are explicitly speculative about therapeutic implications. While the logic is reasonable given the data (Figure 7 shows pathway inhibitor resistance), these are proposals for future work rather than tested hypotheses. C122 uses 'reasonable' and C123 uses 'should be', indicating speculation. C124-C125 propose potential applications but provide no experimental evidence for antigen identification or combination therapy efficacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "In summary, Tcl1 promotes activation of intra-genic cryptic promoters of epigenetic regulators, creating a feed-forward loop where loss of 'closed chromatin' function enhances cryptic promoter activity. Tcl1's ability to boost c-Myc levels expands understanding of its transforming capacities. Polysome-CAGE verified N-terminally modified protein expression and uncovered restricted protein synthesis as a vulnerability. These findings form the basis for future approaches to interfere with TCL1-mediated tumorigenic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 provide summary statements. C126-C127 accurately synthesize the major findings with appropriate support from the data. C128 combines verified findings (N-terminal modifications) with inferred vulnerabilities (restricted protein synthesis as drug target), where the latter is more speculative. C129 appropriately frames this as foundational work for future studies rather than claiming immediate therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction provides background on CLL epidemiology, TCL1's role in CLL pathogenesis through multiple oncogenic pathways (AKT, ATM, CREB, NF-\u03baB, AP-1, DNMT3A), the E\u00b5-Tcl1 mouse model, and the biological significance of alternative promoter usage and TSS selection in cancer. The study aims to examine TSS and AP usage changes and their impact on the translatome during TCL1-driven malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide established background knowledge with appropriate citations. These are primarily literature review claims that set up the study rationale. C25 clearly states the study objective. All claims are well-supported by citations to prior work and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The abstract summarizes the main findings: marked elevation of alternative promoters in CLL B cells, particularly intra-genic promoters generating N-terminally truncated/modified proteins; mechanisms involving loss of closed chromatin regulators and upregulation of transcription factors including c-Myc; sufficiency of exogenous Tcl1 to induce these changes in MEFs; and dramatic translation downregulation of CNY-containing transcripts reminiscent of metabolic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are abstract statements summarizing results detailed elsewhere in the manuscript. These are supported by the full results presented in the paper. C32 appropriately frames the overall conclusion about Tcl1's role in altering promoter usage and translation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on ASICs as trimeric pH-activated channels involved in various physiological and pathophysiological processes, including synaptic transmission, fear memory, epilepsy, and ischemic cell death. ASICs possess both ionic and metabotropic signaling capabilities, with the intracellular domains remaining structurally unresolved despite available extracellular and transmembrane structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C18 establish well-supported background knowledge from prior literature. These claims are appropriately cited and represent consensus understanding of ASIC biology, structure, and function. They provide necessary context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors validated the DPA quenching approach using membrane-tethered CFP and YFP constructs. Lck-CFP showed robust voltage-dependent quenching (\u0394F/F = 0.45 \u00b1 0.03) consistent with membrane proximity and high R0 (47 \u00c5), while Lck-YFP showed weaker quenching (\u0394F/F = 0.16 \u00b1 0.013) consistent with lower R0 (36.5 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24\u2013C32 describe validation experiments with appropriate controls and quantification. The DPA properties are well-established in prior literature, and the Lck-FP controls demonstrate the expected behavior based on FRET theory and R0 distances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Fluorescent protein insertions into ASIC1 did not substantially disrupt channel function, as assessed by desensitization and recovery kinetics, though small differences were observed for C4 desensitization and C1 recovery. All constructs showed robust plasma membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C34 are supported by electrophysiology data (Figure 2\u2014figure supplement 2) and confocal imaging (Figure 2\u2014figure supplement 3). The functional validation is critical for interpreting subsequent topography measurements, though the small kinetic differences noted warrant caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DPA quenching experiments with CFP and YFP insertions at multiple positions along the N and C tails revealed position-dependent quenching patterns. The N terminus projects ~6\u201310 \u00c5 from the inner leaflet, the C1 position is ~12\u201316 \u00c5 away, and the C-terminal end (C4) is within 30\u201340 \u00c5 of the membrane. The pattern indicates the C tail extends progressively away from the membrane rather than lying parallel to it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35\u2013C45 present the core topographical mapping results. While the quenching data show clear position-dependent patterns (C35\u2013C40) and statistical significance, the distance estimates (C42\u2013C44) rely on modeling assumptions including a 10 \u00c5 correction for FP size and theoretical FRET curves. The authors acknowledge multiple sources of error including background fluorescence, FP orientation effects, and potential structural disruption. The provisional nature of these distance estimates is appropriately noted but limits confidence in precise values. Alternative methods (e.g., smaller fluorophores, complementary techniques) would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FLIM FRET measurements comparing intra-subunit versus inter-subunit distances show that FPs on the same subunit (CFP-cA1-YFP) exhibit higher FRET efficiency (24%) than FPs on neighboring subunits (CFP-cA1-cA1 + C4 YFP, 15% efficiency, p < 1e-6), suggesting the N and C tails of the same subunit are physically closer and more likely to associate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46\u2013C51 are supported by systematic FLIM experiments with appropriate controls and dilution series to isolate single FRET pairs. The statistical comparison is robust (p < 1e-6), and the interpretation that intra-subunit tails are closer than inter-subunit tails is well-justified by the data. This supports the proposed salt bridge model from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Using pH-sensitive CFP-YFP pairs, acidification produced apparent FRET changes, but these are confounded by YFP's pH sensitivity. With pH-insensitive GFP-RFP pairs (pKa 3.4 and 3.8), no change in FRET was detected upon acidification at either the C4 or C1 position, indicating no detectable lateral movement between N and C tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52\u2013C62 appropriately address a key hypothesis about tail separation during acidification. The authors recognize the pH sensitivity problem with standard FPs (C54\u2013C56) and employ pH-insensitive variants (C57\u2013C59). The negative result (no FRET change, C60, C62) is clearly reported with appropriate controls (C61). While negative results have limitations, the experimental design is sound and the conclusion that no substantial lateral movement is detectable is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "DPA quenching at different pH values reveals that the N and C1 positions show significantly reduced quenching at pH 6 compared to pH 8, while other positions (C2\u2013C4) and Lck-CFP controls show no pH-dependent changes. This indicates axial movement of the membrane-proximal N and C tail segments toward the plasma membrane upon channel desensitization, with the effect being reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63\u2013C71 demonstrate pH-dependent conformational changes with appropriate controls (Lck-CFP shows no pH effect, C63) and specificity (only N and C1 affected, C68). The reversibility (C67) strengthens the conclusion. The interpretation that reduced quenching indicates movement toward the membrane (C70) is consistent with the theoretical framework, though the C1 interpretation is acknowledged as more complex due to its position on the FRET curve. Statistical significance is demonstrated with correction for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The ASIC intracellular domains are likely largely disordered based on lack of resolved density in cryo-EM structures, with the N tail projecting 6\u201310 \u00c5 and the C tail extending 30\u201340 \u00c5 into the cytosol. Secondary structure predictions suggest the proximal C tail may form alpha helices while the remainder is unstructured. The N and proximal C tail segments from the same subunit are closer than adjacent subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C23 and C72\u2013C74 synthesize the study's findings with prior structural knowledge. The inference of disorder (C19, C73) is reasonable given unresolved cryo-EM density (C72) and is supported by computational predictions (C74). The distance estimates (C20\u2013C21) are appropriately qualified as provisional. The intra-subunit proximity (C23) is well-supported by FLIM data. This represents a coherent integration of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript discusses the physiological relevance of ASIC intracellular domain structure in the context of known protein-protein interactions (PICK1, PSD-95, stomatin) and proposed metabotropic signaling through RIP1 kinase recruitment during acidification-induced necroptosis, noting that ASIC1 lacks a death domain unlike canonical RIP1 activators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75\u2013C81 provide appropriate discussion context citing relevant prior work. These are well-supported literature-based claims that frame the significance of the structural findings. The discussion appropriately identifies open questions about ASIC-RIP1 interaction mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study used chicken ASIC1 with 15 and 67 amino acid intracellular tails in HEK293T cells with endogenous ASIC1 knocked out. The DPA molar extinction coefficient was experimentally determined to be 26,500 M\u207b\u00b9cm\u207b\u00b9, consistent with prior measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82\u2013C85 describe methodological details that are appropriately documented and validated. The cell line is properly characterized (C83), and the DPA characterization (C84\u2013C85) provides important validation for the quenching experiments.",
+    "result_type": "MINOR"
+  }
+]

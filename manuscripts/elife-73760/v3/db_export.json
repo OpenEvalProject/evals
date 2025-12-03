@@ -1,0 +1,2466 @@
+{
+  "submission": {
+    "id": "28fcdaa8-7a63-4b5d-9725-ead2a0fb7eca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:05:24.222771Z",
+    "updated_at": "2025-12-03T11:05:24.222771Z"
+  },
+  "content": [
+    {
+      "id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "submission_id": "28fcdaa8-7a63-4b5d-9725-ead2a0fb7eca",
+      "content_type": "manuscript",
+      "content_text": "# Comprehensive and unbiased multiparameter high-throughput screening by compaRe finds effective and subtle drug responses in AML models\n\n## Authors\n\n- Morteza Chalabi Hajkarim<sup>1</sup> ([ORCID: 0000-0002-2039-2676](https://orcid.org/0000-0002-2039-2676))\n- Ella Karjalainen<sup>2</sup> ([ORCID: 0000-0002-9865-5384](https://orcid.org/0000-0002-9865-5384))\n- Mikhail Osipovitch<sup>1</sup>\n- Konstantinos Dimopoulos<sup>3</sup>\n- Sandra L Gordon<sup>1</sup> ([ORCID: 0000-0003-0270-8291](https://orcid.org/0000-0003-0270-8291))\n- Francesca Ambri<sup>1</sup> ([ORCID: 0000-0002-1999-9294](https://orcid.org/0000-0002-1999-9294))\n- Kasper Dindler Rasmussen<sup>4</sup> ([ORCID: 0000-0002-7344-4177](https://orcid.org/0000-0002-7344-4177))\n- Kirsten Gr\u00f8nb\u00e6k<sup>1</sup> ([ORCID: 0000-0002-1535-9601](https://orcid.org/0000-0002-1535-9601))\n- Kristian Helin<sup>1</sup>\n- Krister Wennerberg<sup>1</sup> ([ORCID: 0000-0002-1352-4220](https://orcid.org/0000-0002-1352-4220)) \u2020\n- Kyoung-Jae Won<sup>1</sup> ([ORCID: 0000-0002-2924-9630](https://orcid.org/0000-0002-2924-9630)) \u2020\n\n### Affiliations\n\n1. Biotech Research and Innovation Centre (BRIC) and Novo Nordisk Foundation Center for Stem Cell Biology (DanStem), University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n2. Institute for Molecular Medicine Finland (FIMM), Helsinki Institute of Life Science, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))\n3. Rigshospitalet Copenhagen Denmark ([ROR:03mchdq19](https://ror.org/03mchdq19))\n4. Centre for Gene Regulation and Expression, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))\n5. Cell Biology Program and Center for Epigenetics Research, Memorial Sloan Kettering Cancer Center (MSKCC) New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLarge-scale multiparameter screening has become increasingly feasible and straightforward to perform thanks to developments in technologies such as high-content microscopy and high-throughput flow cytometry. The automated toolkits for analyzing similarities and differences between large numbers of tested conditions have not kept pace with these technological developments. Thus, effective analysis of multiparameter screening datasets becomes a bottleneck and a limiting factor in unbiased interpretation of results. Here we introduce compaRe, a toolkit for large-scale multiparameter data analysis, which integrates quality control, data bias correction, and data visualization methods with a mass-aware gridding algorithm-based similarity analysis providing a much faster and more robust analyses than existing methods. Using mass and flow cytometry data from acute myeloid leukemia and myelodysplastic syndrome patients, we show that compaRe can reveal interpatient heterogeneity and recognizable phenotypic profiles. By applying compaRe to high-throughput flow cytometry drug response data in AML models, we robustly identified multiple types of both deep and subtle phenotypic response patterns, highlighting how this analysis could be used for therapeutic discoveries. In conclusion, compaRe is a toolkit that uniquely allows for automated, rapid, and precise comparisons of large-scale multiparameter datasets, including high-throughput screens.\n\n## Introduction\n\nTechnological developments have accelerated the generation of large-scale multiparameter screening data through methodologies such as high-content microscopy and high-throughput flow cytometry (Boutros et al., 2015; Saeys et al., 2016; Caraus et al., 2015). These technologies can test hundreds of samples (such as drug treatments) each with tens of thousands of events (e.g. cells) labeled for numerous biomarkers (such as cytoplasmic or membrane markers). However, analyzing this massive multiparameter data to provide an overview of similarities and differences between hundreds of samples is still a challenge (Boutros et al., 2015; Saeys et al., 2016; Caraus et al., 2015). This analytical challenge is further complicated by various sources of bias and noise often existing in the data, such as batch effect and signal drift (a gradual shift in the marker intensity across a multi-well plate) (Boutros et al., 2015; Saeys et al., 2016; Caraus et al., 2015).\n\nThere have been efforts to cluster samples from large-scale multiparameter (multidimensional) screening data. A simple approach is to use a representative value for each cell marker such as median fluorescence intensity (MFI) for clustering samples (Cossarizza et al., 2019). However, using a single representative value can easily lead to loss of information about biologically relevant variance within and between cell subpopulations. Meta-clustering with single-cell clustering algorithms has been suggested to cluster samples based on the similarity of the centroids of cell subpopulations identified in the individual samples (Qiu et al., 2011; Levine et al., 2015; Van Gassen et al., 2015; Ogishi et al., 2021). While these algorithms are widely used in single-cell data analysis for clustering cells, they are not efficient for clustering of samples. This is because centroid-based analysis can be misleading when subclusters are not sufficiently distinct or the number of sub-clusters varies. Additionally, the heavy computing cost of meta-clustering makes it poorly suited for analyses of large datasets with many samples. Manual gating and machine learning based on prior knowledge have been used to cluster samples (Amir et al., 2019; Bruggner et al., 2014), but using prior knowledge for subpopulation identification can both lead to biased interpretations and failure to make de novo discoveries. Dimension reduction methods (Lvd and Hinton, 2008; Amir et al., 2013; McInnes et al., 2018) coupled with the Jensen-Shannon divergence (JSD) metric have also been used to cluster multidimensional samples (Amir et al., 2013). These algorithms including factor analysis and principal component analysis (PCA) still require excessive computing costs with an inherent information loss. It is also important to note that none of the methodologies developed so far efficiently correct for sources of bias and noise in large-scale multiparameter screening data.\n\nAvailable computational toolkits (BioScience E, 2020; Potdar et al., 2020; Boutros et al., 2006) mostly allow for single-parameter or unautomated analyses of large-scale screening data using the aforementioned methods. In these toolkits, each well should be first represented by a single parameter such as cell counts or centroids or they require manual intervention. To provide a useful toolkit for precise and effective interpretation of small- to large-scale multiparameter screening data, we developed compaRe. This toolkit has several unique modules for quality control, bias correction, pairwise comparisons, clustering, and data visualization. The quality control and bias correction modules can effectively reveal and remove various sources of bias in the screening data. compaRe clusters samples by measuring the similarity between them using a dynamic mass-aware gridding algorithm. This algorithm increases the robustness of the toolkit to the size of data and signal shift (a technical term referring to batch effect and signal drift), while guaranteeing fast clustering, as it does not bear the computing cost of dimension reduction and subsampling. The toolkit is available both as a command-line version and a graphical user interface (GUI) version that provides various visualizations to help with the interpretation of its readouts.\n\ncompaRe performed robustly in the presence of background noise and batch effects even where these input data artifacts could not be corrected. compaRe analyses of multiparameter mass and flow cytometric data from acute myeloid leukemia (AML) and myelodysplastic syndrome (MDS) patient samples revealed interpatient heterogeneity and recognizable phenotypic profiles. When applied to high-throughput flow cytometry of the dose response of AML samples treated with various drugs, compaRe successfully corrected for various sources of bias and clustered the samples based on their response to treatment, allowing for detection of both drastic and subtle phenotypic responses.\n\n## Results\n\n### compaRe is a comprehensive toolkit for multiparameter screening data\n\ncompaRe is designed to analyze the data from small to large-scale multiparameter screening assays such as high-throughput flow cytometry, high-content microscopy, mass cytometry, and standard flow cytometry. The toolkit comprises several modules for quality control, bias correction, clustering, and visualization. Figure 1 shows the modules for a high-throughput flow cytometry of AML samples taken from a mouse model treated with various drugs. During quality control, several sources of bias such as autofluorescence, bioluminescence, carryover effect, edge effect, signal drift, and cell viability drift (drift in the number of live cells across the plate) were identified. The bias correction module could effectively correct for signal and cell viability drifts (two main sources of bias in high-throughput screening with fluorescent markers) using regression analysis (Figure 1, Materials and methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig1-v3.jpg)\n\n**Figure 1.:** High-throughput flow cytometry generates massive multidimensional data from hundreds of samples. compaRe\u2019s quality control (QC) module reveals several sources of bias in the assay such as signal (intensity difference between the top left and bottom right corners) and cell viability drifts. These two are corrected for in the bias correction modules within and between the plates. compaRe performs a pairwise similarity calculation between the samples using dynamic gridding and forming hypercubes (represented by distinct colors). The portions of the data within individual hypercubes are used to calculate similarity. Clustering is performed based on similarity. The graphical user interface (GUI) provides several ways to thoroughly explore and visualize the read-outs.\n\nAt the core of the compaRe toolkit is a module for pairwise comparisons of samples. It measures the similarity between two samples using a dynamic mass-aware gridding algorithm (Figure 1, Materials and methods). Given two samples, the algorithm divides the higher dimensional space (formed by, for example, cell surface markers) of the samples individually into several spatial units called hypercubes. The average difference between proportions of data points present in corresponding hypercubes across the samples is used to represent similarity. In this setting, the module becomes robust to signal shift and data size difference between the two samples (Appendix 1). This module generates a similarity (affinity) matrix for the clustering module.\n\nThe clustering module uses a graphical algorithm (Figure 1, Materials and methods). Initially, all nodes (samples) are connected forming a complete weighted graph wherein weights represent similarity values. The graph is then pruned to remove potential false positive edges using a threshold inferred from negative controls (untreated samples). After constructing a linked graph, clustering is tantamount to finding maximal cliques (complete subgraphs that cannot be extended), each containing samples with similar responses. compaRe benefits from parallel computing and modular design. Its modular design allows the modules to run independently; thus, the similarity and clustering modules of compaRe can be potentially applied to any problem space.\n\n### compaRe is ultra-fast and robust to background noise and batch effect\n\nTo evaluate the robustness of compaRe\u2019s comparison module to noise and batch effect, we benchmarked it against JSD with UMAP (for simplicity just JSD) and meta-clustering with PhenoGraph (for simplicity just meta-clustering) (Levine et al., 2015). We analyzed the publicly available mass cytometry data of a total of 21 bone marrow aspirate samples collected from 16 pediatric AML patients and five healthy adult donors labeled for detection of 16 cell surface markers (Levine et al., 2015). We introduced random noise with Gaussian distribution to the 16 parameters of each sample to simulate a batch effect. In this setting, although the added noise undermines similarity, the overall cell population configuration remains intact, and consequently the simulated samples will still have the highest similarity with their original samples.\n\nEven with the added noise, the comparison module correctly identified similar samples (Figure 2a). Conversely, the batch effect seriously compromised the performance of both meta-clustering and JSD, showing several maximum similarities other than the originals (Figure 2b and C). In additional comparison with FlowSOM and SPADE, other commonly used tools for flow cytometry, compaRe\u2019s performance far exceeded their performance (Appendix 1\u2014figure 1). This result demonstrates the advantage of using dynamic gridding for comparison of samples in the presence of noise or batch effect.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig2-v3.jpg)\n\n**Figure 2.:** Similarity matrix generated by compaRe is shown in (a). Size and color of dots represent the level of similarity. Self-comparisons were removed. Noise was added (marked with *) to the original 21 mass cytometry samples of bone marrow aspirates from 16 pediatric AML patients (S) and five healthy adult donors (H). Similarity matrices using JSD with UMAP and meta-clustering with PhenoGraph are shown in (b) and (c), respectively. The run time of comparing each sample to itself is shown in (d). Samples were sorted based on their size.\n\nNotably, compaRe took only 25 min to analyze the 21 samples (210 pairwise comparisons), without subsampling or dimension reduction. Meanwhile, meta-clustering and JSD took 39 hr and 10 hr respectively. For the feasibility of JSD, we subsampled each sample to 100,000 cells (default value suggested in Amir et al., 2013). When we fixed this limit to 60% of each sample, the computing time of JSD increased to 3 days. To investigate the relation between run time and sample size, we compared each sample to itself and sorted measured times based on sample size (Figure 2d). The run time increased steeply for both meta-clustering and JSD as the sample size increased, while the increase for compaRe was almost unnoticeable.\n\nTo further show that compaRe can identify phenotypic changes from a high-dimensional dataset, we used a subset of the data with three healthy and two AML samples stained with 29 (15 membrane and 14 intracellular signaling) markers (Appendix 1\u2014figure 2). Taking H1 as reference, we gradually removed 25%, 50%, 75%, and 100% of cells from a target cluster identified by PhenoGraph. The gradual removal can be regarded as a phenotypic change and the 75% reduction can potentially resemble a rare cell population (a small cluster of cells). As shown in the UMAP projections, the similarity decreased concurrently and more drastically after 100% reduction when phenotypic changes were detected, indicating compaRe is sensitive to phenotypic changes and the existence of rare cell populations.\n\n### compaRe reveals interpatient similarity\n\nNon-AML myeloid neoplasias such as MDS can evolve to become AML. Over time, about one-third of all MDS cases develop into AML (DeVita and Lawrence, 2015; Niederhuber et al., 2020). The risk of developing AML largely depends on the MDS subtype at the time of diagnosis, with high-risk MDS developing into AML more often than the lower-risk MDS subtypes (Greenberg et al., 2012). As many immunophenotypic abnormalities are not unique to MDS, several diagnostic flow cytometric antibody panels have been proposed (van Dongen et al., 2012; Alhan et al., 2016). The EuroFlow AML/MDS antibody panel (van Dongen et al., 2012) aims at the parallel identification and categorization of AML and MDS. Both diseases are heterogeneous, affecting multiple cell lineages and multiple maturation stages. Therefore, this panel concerns major myeloid lineages (neutrophilic, monocytic and erythroid) and the detection of abnormal lymphoid maturation profiles in four tubes. The panel uses four backbone markers to identify myeloblasts and an additional set of 15 markers devoted to the characterization of myeloid lineages (Supplementary files 1 and 2).\n\nUnlike the backbone markers, the characterization markers are divided into each tube exclusively. This design was made so that characterization markers from different tubes can be inferred on the same backbone marker subpopulations, but the design makes it impossible to form a multiparameter dataset which is required for clustering methods. However, as compaRe\u2019s comparison module can compare cell population morphologies even in subspaces, we were able to use it to measure similarities between patient samples.\n\nWe analyzed 25 bone marrow mononuclear cell samples collected from 16 MDS patients and 9 AML patients (Supplementary file 3). The comparison module provided a detailed overview of similarities of samples. As expected, the AML samples exhibited a great amount of interpatient heterogeneity compared to the MDS samples (Figure 3a and b) with all MDS samples clustered together, and the AML samples spread over three clusters. To verify the performance of the module, we visualized the pairwise comparisons using UMAP projection (Figure 3c and Appendix 1\u2014figures 3\u201326). The measured similarities perfectly matched the projections so that from top left to bottom right, as the similarity decreases, the degree of overlap decreases, and the number of exclusive cell populations increases.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig3-v3.jpg)\n\n**Figure 3.:** (a) The similarity band plot visualizes the similarity between a sample specified by its row (band) and other samples measured by compaRe (H: higher-risk MDS, L: lower-risk MDS and A: AML). Each band was independently transformed by an exponential function to emphasize the highest and the lowest similarity values. (b) A graphical representation of the similarities. The graph nodes (samples) were clustered by a random walk. (c) The UMAP projection of A1 sample against the other patient samples is provided as an example. The other projections are given in Appendix 1\u2014figures 3\u201326. The projections were sorted based on similarity.\n\nWe further investigated how different the three groups of the AML samples were (Figure 4 and Appendix 1\u2014figure 27). AML samples 1 and 9 of the blue cluster were confirmed to have a high degree of monocytic differentiation with marked expression of the monocytic maturation markers CD14, CD35, CD64, and CD300e. The AML samples of the green cluster, on the other hand, represented a cluster of poorly differentiated AML cases with low expression of differentiation markers and high expression of the stem cell/progenitor markers CD34 and CD117. Unlike the blue cluster with high monocytic differentiation, and the green cluster with poor monocytic differentiation, the AML samples 2 and 5 of the red cluster included both positive and negative populations of CD11b which is a common granulocytic and monocytic maturity marker, a feature observed in all MDS samples as well (Appendix 1\u2014figure 27).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig4-v3.jpg)\n\n**Figure 4.:** Each row shows the UMAP projection of AML samples 1 and 9 (red and orange) vs AML samples 3, 4, 6-8 (blue) of the green cluster of Figure 3b stained by the markers available in each tube.\n\nIn conclusion, compaRe\u2019s comparison module can be used to optimize true cytometric n-dimensional immunophenotypic characterization of patient samples. Interpretation can then be performed in a conventional manner assisted by lower-dimensional projection tools such as PCA and UMAP that promptly provide a phenotypic profile of the patient samples.\n\n### Identifying cell-subtype-specific drug responses in mouse AML cells\n\nWe applied compaRe to high-throughput flow cytometry data to identify cell subtype-specific responses evoked by antineoplastic agents in leukemic spleen cells from an AML mouse model. Splenic cells were sorted for c-Kit cell surface expression, allowing for the enrichment of stem/progenitor-type leukemic cells. On ex vivo expansion, these cells continuously expand and differentiate in a similar way as in vivo with a clear stem cell/progenitor population and partial differentiation towards CD11b/Gr-1 or CD16/CD32-expressing myeloid cells. After ex vivo expansion, the leukemic cells were plated onto multi-well plates containing a library of 116 antineoplastic agents including surface and nuclear receptor inhibitors and activators, enzyme inhibitors and, cytotoxic chemotherapy in a five-point concentration range, as well as 20 negative control wells (Supplementary file 4). After 72 hr of drug exposure, we stained the cells with fluorescently labeled antibodies against three cell surface markers (CD16/32, Gr-1 and CD11b) and quantified cell surface marker expression using a high-throughput flow cytometer.\n\ncompaRe corrected the intraplate signal drift, sources of bias in cell numbers, as well as inter-plate sources of bias (Appendix 1\u2014figure 28). After clustering and clique analysis, we obtained 134 cliques, each sharing similar drug responses (Supplementary file 5).\n\nTo get an overview of the assay, we generated a dispersion map of the clusters (Figure 5a and b and Materials and methods). We identified a distinct response group characterized with decreased Gr-1 and concomitant increase of CD16/CD32 as compared to control (Group one in Figure 5a). Most of the cliques included in this response group consisted of drugs in high concentrations with cytotoxic/cytostatic effects. However, some drugs in this group had a milder effect on live cell numbers, and these were enriched for mitogen-activated protein kinase (MAPK) pathway-associated inhibitors (Figure 5c, Supplementary file 6). For instance, trametinib (2.5 nM) in clique 23 (C23) showed a marked decrease of Gr-1 and increase of CD16/CD32, further confirming the results of compaRe (Figure 5d). The MAPK pathway is a regulator of diverse cellular processes such as proliferation, survival, differentiation, and motility (Dhillon et al., 2007). Our findings suggest that MAPK signaling controls the differentiation and/or proliferation towards Gr-1-/CD16+ cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig5-v3.jpg)\n\n**Figure 5.:** (a) A UMAP plot of cliques identified by compaRe. Cliques are colored by Gr-1 and CD16/CD32 MFIs. Group one is characterized with reduced Gr-1 and increased CD16/CD32 as compared with control. Group two has increased Gr-1 expression compared with control. (b) Heatmap of marker MFIs. Values are normalized between 0 and 1 per marker to make cross-comparisons possible. Cliques containing control, trametinib (2.5 nM) (C23), molibresib and birabresib (C100 and C110), and vincristine (C80) are marked. (c) Waterfall plot of compounds belonging to response group 1, showing live cell count as a percentage of control treatment (DMSO). (d) Density scatter plots for Control (DMSO), C23, C100, and C80.\n\nIn high concentration, molibresib and birabresib, inhibitors of BET proteins BRD2, BRD3, and BRD4, caused a reduction in live cell counts but also a reduction of MFI in all the measured markers, which corresponds to the loss of differentiation marker positive cells (Gr-1+, CD11b+, CD16/CD32 high) (Figure 5b: C100, C110, Figure 5d). The BRD2/3/4 proteins regulate transcription via recognition of acetylated lysines on histones and concomitant recruitment of other transcription and chromatin remodeling factors to enhance transcriptional activity (Ferri et al., 2016). The enrichment of undifferentiated cells could therefore be due to an early block in differentiation or that inhibition of BRD2/3/4 has led to a general decrease of cell surface protein transcription.\n\nIn this cell model, the leukemic stem-like cells are expected to be present within the differentiation marker negative population. These cells are potential targets for treatments against leukemia. We observed response group 2 (Figure 5a) had a higher MFI in marker Gr-1 as compared to control, the increase was very slight and seemed to be linked to toxic drug concentrations. However, three drugs, vincristine (C80), tazemetostat, and tretinoin clearly reduced the proportion of differentiation marker negative cells (Figure 5d). Interestingly, these three drugs have distinct modes of action: vincristine is a microtubule polymerization inhibitor, tazemetostat inhibits the histone methyltransferase EZH2, and tretinoin is a retinoic acid receptor agonist (Supplementary file 6).\n\nTaken together, compaRe analysis of the high-throughput flow cytometry screening data allowed rapid identification of several distinct phenotypic responses in this mouse AML model, as well as the cellular signals that drive them. Drugs of different mechanism of action can still cluster together if the cellular processes they affect converge in a specific model. Drug response in association with genetic alterations can be one of the applications of compaRe. The genetic alteration could be visualized in the clusters that compaRe identifies.\n\n### Identifying highly selective signal transduction inhibitors in human AML cells\n\nWe further applied compaRe to the drug screening data from an AML patient sample. Primary AML bone marrow mononuclear cells were dispensed into a 384-multiwell plate containing a library of 40 drugs and drug combinations in seven-point concentration ranges (Supplementary file 7). After 72 hr of drug exposure, the cells were stained with fluorescently labeled antibodies against a panel of AML-related cell surface markers (CD45, CD34, CD38, CD117, HLA-DR, CD45-RA, CD3 and a mix of myeloid differentiation-related markers). A high-throughput flow cytometer was used to quantify cell surface marker expression.\n\ncompaRe analysis identified several distinct response groups (Figure 6a, Supplementary file 8). Response group one had notably higher MFIs in the CD34 and CD38 channels compared to controls. Interestingly, the increase in MFIs was due to a drug concentration-dependent appearance of a CD34+/CD38+ cell population that was barely detectable in the DMSO control samples (Figure 6b). The appearance of this CD34+/CD38+ population was also concomitant to a general increase in live cell count (Figure 6c). Altogether, seven different drugs had the same effect (Figure 6d), most of them being selective signal transduction inhibitors such as trametinib (MEK inhibitor), copanlisib (PI3K inhibitor), and PIM447 (PIM kinase inhibitor).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73760/elife-73760-fig6-v3.jpg)\n\n**Figure 6.:** (a) UMAP of cliques identified by compaRe. Cliques are colored by CD34 and CD38 MFIs. Response groups of interest are indicated using a dashed line. (b) Example of response group 1: density scatter plot of markers CD34 and CD38 in different concentrations of PIM kinase inhibitor PIM447. (c) Count of live cells after 72 hr exposure to different concentrations of PIM kinase inhibitor PIM447. (d) Table of drugs that induced expansion of the CD34+/CD38+ cell population.\n\nResponse group 2 consisted of two drugs: birabresib and lenalidomide in different concentrations. These induced a decrease in the MFI of CD45-RA and CD45 channels (Appendix 1\u2014figure 29a). In the case of lenalidomide, this response was likely due to cell toxicity and/or growth inhibition (Appendix 1\u2014figure 29b). Interestingly, the birabresib response was very pronounced without the loss of live cell numbers, (Appendix 1\u2014figure 29b) but with a decrease in the MFI in the cell differentiation marker mix channel (Appendix 1\u2014figure 29c).\n\ncompaRe also detected response group three as distinct from the controls. This group includes treatment with tretinoin (several concentrations), navitoclax, and mitoxantrone (low dose). Further validation showed the phenotypic response in group three is subtle but with a distinct increase in CD34+ cells (Appendix 1\u2014figure 29d). This result highlights compaRe analysis is sensitive enough to identify these subtle changes.\n\n## Discussion\n\nTechnological advancements in multiparameter high-throughput screening have enabled testing thousands of biological conditions in a short amount of time. This requires algorithmic development to analyze the large amount of data generated by such technologies. We developed an automated comprehensive toolkit, compaRe, for robust analysis of small- to large-scale multidimensional screening data with several modules for quality control, bias correction, comparison, clustering, and visualization.\n\nThe toolkit is unique in many ways. Its quality control and bias correction modules can correct for signal and cell viability drifts in large-scale fluorescence-based screening assays using regression analysis. Its comparison module utilizes a dynamic mass-aware gridding algorithm, which substantially reduces the computing cost and provides robustness to signal shift (batch effect and signal drift). Alternative approaches such as meta-clustering and JSD require both sub-sampling of the data, with the possible loss of valuable subpopulations, and considerably more computing time.\n\nWe tested the robustness of the comparison module to batch effect and noise through simulation. The module effectively circumvented the batch effect while JSD and meta-clustering significantly suffered from it. The poor accuracy of meta-clustering demonstrates the drawback of using cluster centroids for similarity comparison across samples while the poor performance of JSD indicates that this approach can work well only in the absence of signal shift. It is of particular note that compaRe does not need subsampling or dimension reduction of the input data.\n\nMultiparameter cytometric analysis of immunophenotypes of AML and MDS patient samples by the comparison module coupled with the EuroFlow AML/MDS antibody panel revealed interpatient heterogeneity and recognizable phenotypic profiles. Even though EuroFlow markers are divided into several discrete tubes, compaRe\u2019s comparison module can compare the cell population distribution to measure similarities between patient samples.\n\nWe investigated several types of responses evoked by different doses of antineoplastic agents in two high-throughput flow cytometry screening assays of an AML mouse model and an AML human patient. We could identify subtle but distinct phenotypic drug-induced changes. We also identified drugs with different mechanism of action but similar responses. In general, we showed that drugs will cluster together if the cellular processes they affect converge in a specific model.\n\nThe quality control and bias correction modules could successfully correct for signal and cell viability drifts in these studies. In our explored assays, signal drift was obviously associated with the order in which wells were read. It was caused by the time differences in antibody incubation across the plate as the high-throughput flow cytometer requires more than one hour to sample all wells in a 384-well plate. For high-density assay plate formats with large numbers of wells, this can cause gradual incremental influences in intensity and cell viability. Therefore, when aligning wells along the order that the flow cytometer sampled the wells, we found a linear trend in MFIs. We benefited from regression analysis to remove the effect of signal shifts.\n\nDuring the analyses, the compaRe toolkit made it easy to explore and compare highly complex datasets in a substantially reduced timeline. It is equipped with multithreading and can run through command-line interface on a computer server or GUI on a desktop. The GUI provides the investigator with numerous interactive visualization tools including cell staining, graphical representation, and gating. In sum, it provides a total package for fast, accurate, and readily interpretable multiparameter screening data analysis.\n\n## Materials and methods\n\n### Mass cytometry of healthy and pediatric AML bone marrow aspirates\n\nMass cytometry dataset for 21 samples labeled with 16 surface markers collected from 16 pediatric AML patients obtained at diagnosis and five healthy adult donors (Levine et al., 2015) were downloaded from Cytobank Community with the experiment ID 44185. There are 378 FCS files in this experiment with one FCS file for each of 21 patients for each of 17 conditions (two basal replicates and 16 perturbations). All FCS files from a single patient had been pooled then clustered with the PhenoGraph algorithm. Each file includes a column named PhenoGraph that specifies the PhenoGraph cluster to which each event was assigned as an integer. A value of 0 indicates no cluster was assigned because the cells were identified as outliers during some stage of analysis. Using the PhenoGraph column, we determined centroids of cell clusters, and used PhenoGraph to meta-cluster them as described in Levine et al., 2015 To generate the similarity matrix, we adapted an approach similar to that of compaRe such that each meta-cluster as a spatial unit was treated like a hypercube. We set compaRe\u2019s n to four for this assay (Materials and methods and Appendix 1).\n\n### High-throughput flow cytometry of AML mouse model\n\nAML primary splenic cells from Npm1+/cA (Vassiliou et al., 2011); Flt3+/ITD (Lee et al., 2007); Dnmt3a+/- (Kaneda et al., 2004) Mx1-Cre+ (K\u00fchn et al., 1995) moribund mice were sorted for c-Kit positivity and expanded ex vivo. AML cells were treated with a library of 116 chemotherapy and immunotherapy antineoplastic agents in a five-point concentration range (Supplementary file 4). Treated samples were stained with three informative cell surface antibodies (Supplementary file 9) and fluorescence was detected using a high-throughput flow cytometer iQue Screener Plus (Intellicyt). We set compaRe\u2019s n to five for this assay.\n\n### High-throughput flow cytometry of an AML human patient sample\n\nMononuclear cells were isolated from a donated human bone marrow aspirate from an AML patient (Danish National Ethical committee/National Videnskabsetisk Komit\u00e9 permit 1705391). The cells were treated with a library of 40 chemotherapy and targeted antineoplastic agents in a seven-point concentration range (Supplementary file 7) for 72 hr. Cells were subsequently incubated with fluorescently labeled antibodies targeting 11 informative cell surface proteins in eight fluorescence channels (Supplementary file 10). Samples were read using a high-throughput flow cytometer (iQue Screener Plus, Intellicyt). We set compaRe\u2019s n to three for this assay.\n\n### Flow cytometry of AML and MDS patients\n\nClinical flow cytometry data using a slightly modified AML panel as described by the Euroflow Consortium (van Dongen et al., 2012) from 25 bone marrow aspirates from MDS and AML patients from Rigshospitalet (Copenhagen, DK) were used for analysis. Each sample was analyzed using a total of four tubes (Euroflow AML panel tubes 1\u20134) with eight antibodies in each tube (Supplementary files 1 and 2). Acquisition of data was performed on a FACS Canto (Becton Dickinson Immunocytometry Systems), and data analysis was done in the Infinicyt software (Cytognos, Salamanca, Spain). We set compaRe\u2019s n to five for this assay.\n\n### Quality control (QC)\n\nMultiwell plate heatmaps of medians come in handy in QC to reveal issues such as signal and cell viability drifts occurring during screening. However, as a typical heatmap has an equally spaced color palette, small but significant differences between wells may be obscured and not visible. Therefore, we normalized the color palette by the distribution of the medians. Also, before clustering, we removed outliers in the negative controls that were different from the others in terms of similarity values measured by compaRe.\n\n### Correcting signal and cell viability drifts\n\nDepending on the protocol by which wells are processed, time may become a major concern so that some specific wells may have lower or higher values than expected. To correct for these sources of bias, we employed a two-step correction: intra-plate shift (signal drift) correction and inter-plate shift (batch effect) correction. For a given plate, we first fit a linear regression model and then vertically translate points (well values) with respect to the learned line as it rotates to the slope zero. After correcting for the intra-plate bias, the inter-plate bias is corrected by aligning medians of the plates, that is, translating to a common baseline.\n\n### Similarity calculation using dynamic gridding\n\nTo measure the similarity between two datasets, compaRe divides each dimension into n subsets for each dataset individually so that a dataset with d dimensions (markers) will be gridded into at most nd spatial units called hypercubes. compaRe grids only the part of the space encompassing data points, avoiding empty regions. It then measures the proportion of data points for either dataset within each of the corresponding hypercubes. The difference between the two proportions is indicative of the similarity within that relative spatial position represented by each hypercube. The similarity in the exclusive hypercubes is considered 0. We employed local outlier factor (Breunig et al., 2000) for anomaly detection and removing noise cells. Averaging these differences across all the hypercubes indicates the amount of similarity between the two datasets.\n\ncompaRe captures the configuration of data enabling it to measure similarity even without correcting for signal drift or batch effect (Appendix 1). This way, two technical replicates analyzed by two different instruments or configurations suffering from signal shift will still have the highest similarity. To generate a similarity matrix of multiple input samples, compaRe runs in parallel. The similarity matrix could then be used for identifying clusters of samples such as drugs with similar dose responses.\n\n### Graphical clustering of samples\n\nTo cluster samples, we developed a graphical clustering algorithm in which initially all nodes (samples) are connected forming a weighted complete graph wherein edges represent similarity between nodes. This graph is then pruned to remove potential false positive edges for a given cutoff inferred from negative controls. The optimal cutoff turns out to be the minimum weight in the maximum spanning tree of negative control nodes. After pruning, some samples may end up being connected to the negative controls (biologically inactive agents) and some disconnected (active agents). After constructing this graph, clustering is tantamount to finding maximal cliques among potent agents. In addition to maximal cliques, it also reports communities (a clique is a subset of a community). Communities can be seen as loose clusters. In a community, unlike a clique, similarity is not necessarily transitive meaning that if A is similar to B and B is similar to C, A is not necessarily similar to C. If these were three drugs within a community, concluding they had an equal response was not necessarily right unless they would form a clique.\n\n### Dispersion graph and Dispersion map\n\ncompaRe visualizes the similarity of samples in the form of a dispersion graph by constructing their maximum spanning tree (Appendix 1, Appendix 1\u2014figure 30). compaRe also uses UMAP to represent a dispersion map of clusters. The map is constructed using the centroid (median) of each clique. An informative map shows different groups by coloring the centroids according to their value. These groups are mostly the identified communities the cliques come from.\n\n### Availability of data\n\nMass cytometry datasets were downloaded from Cytobank Community with the experiment ID 44185. AML mouse and human high-throughput flow cytometry data have been deposited in FLOWRepository with the repository IDs FR-FCM-Z357 and FR-FCM-Z3DP respectively. Flow cytometry data of AML and MDS patients have been deposited in FLOWRepository with the repository ID FR-FCM-Z3ET. Acquisition, installation and more technical details are available in compaRe\u2019s online tutorial on (https://github.com/morchalabi/COMPARE-suite, swh:1:rev:df2feaf6aa982e0f6f077eb85f26acce6bb61063, Chalabi, 2022b). Similarity measurement and clustering modules as stand-alone tools have been merged into a separate R package and are available for download at (https://github.com/morchalabi/compaRe, swh:1:rev:594106b1e34c17b405064f1a0f9fb39975a4ec79, Chalabi, 2022a).\n",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b8b2d186-9b13-4d17-82d0-df02f276f057",
+      "submission_id": "28fcdaa8-7a63-4b5d-9725-ead2a0fb7eca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, https://ror.org/02feahw73 CNRS LPENS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73760.sa0](https://doi.org/10.7554/eLife.73760.sa0)\n\nThis paper aims to address the current gap in the efficient analysis of large-scale multiparameter flow cytometry and other datasets. The authors offer a software toolkit with an efficient algorithm for comparing numerous samples at once. The study is well presented and is relevant to single cell analysis research.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Aleksandra M Walczak, https://ror.org/02feahw73 CNRS LPENS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73760.sa1](https://doi.org/10.7554/eLife.73760.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Comprehensive and unbiased multiparameter high-throughput screening by compaRe finds effective and subtle drug responses in AML models\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Aik Choon Tan (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease address all the reviewers comments. The reviewers agree it is a strong paper that is well written but certain improvements can still be made. Especially please give the reader more context in the introduction and compare your method with other existing methods.\n\nReviewer #1:\n\nComprehensive and unbiased multiparameter high-throughput screening by compaRe finds effective and subtle drug responses in AML models by Hajkariim et al. introduces a pipeline for pre-processing and analyzing data from multiplex flow cytometry and other technologies. Preprocessing steps include algorithms for correcting common sources of bias in such data. Another key feature is a robust approach to measuring cell similarity across samples. Among the strengths are that the manuscript is well-written, the analysis pipeline is well-motivated, and illustrated with apt examples. The similarity measure is very interesting as well.\n\nThere are a few weaknesses as well. It is not completely clear to me how this pipeline agrees and disagrees with common practice in the field. References 1-3, cited to document ongoing analytic challenges, are all at least 5 years old. Comparisons to other approaches, including the use Jensen-Shannon Divergence for similarity, make a convincing case that the proposed method is both effective and computationally efficient, but it is not clear if the comparators represent true standard of practice, or mere straw men. Methodologies are complex and can be difficult to follow, especially the similarity measure.\n\nI would like to see the current state of the field described more clearly in the introduction, as context for the current effort. What makes this unique and important today? This type of clustering is common in single cell sequencing analysis, is it also commonly done in multiplex flow etc, maybe with less computationally demanding tools than JSD? If not, why not?\n\nI think I understand how the similarity measure here works, though its hard to follow the details. Its very interesting, but to be honest, I can't decide if I think its a good solution or needlessly complex. The key, as I understand it, is the binning into \"relative\" expression groups. This is, after all, how 2-dimensional flow data is commonly interpreted \u2013 with plots treated as a visual 2 X 2 table, with row and column boundaries existing largely in the eye of the beholder. The methods need to be clearer throughout, esp. this part. It might help to add another author, a third party who has to understand the method from scratch, and who, having not lived with the details as long, might be expected to provide a more user friendly sense of the overall approach.\n\nReviewer #2:\n\nIn this manuscript, Hajkarim et al. developed compaRe, a user friendly software suite (written in R) for analyzing high-throughput, multi-parameter screening data. There are several modules included in the compaRe toolkit, which can be individually invoked to perform specific tasks, such as quality control, bias correction, pairwise comparisons, clustering and data visualization. All of these modules are available as command-line version and a GUI version for users to use in data analysis, visualization and results interpretation. The authors showed the utility of their toolkit in analyzing multiparameter mass and flow cytometric data from AML and MDS patient samples. Through this analysis using compaRe, the authors showed that they can identify patient heterogeneity and drug response profiles. Overall, this is a well organized and written manuscript describing the development of the new compaRe toolkit. The method is clearly described, and the user manual/tutorial is easy to follow. It seems like compaRe will be a useful toolkit for the research community, which is eager for a one-stop pipeline for analyzing high-throughout multiparameter screening data.\n\net al.\n\nStrengths:\n\n1. All of these modules are available as command-line version and a GUI version for users to use in data analysis, visualization and results interpretation.\n\n2. The authors showed the utility of their toolkit in analyzing multiparameter mass and flow cytometric data from AML and MDS patient samples. Through this analysis using compaRe, the authors showed that they can identify patient heterogeneity and drug response profiles.\n\n3. Overall, this is a well organized and written manuscript describing the development of the new compaRe toolkit. The method is clearly described, and the user manual/tutorial is easy to follow.\n\n4. It seems like compaRe will be a useful toolkit for the research community, which is eager for a one-stop pipeline for analyzing high-throughout multiparameter screening data.\n\nWeaknesses:\n\n1. The current manuscript didn't compare with some other existing programs/software in analyzing flow and mass cytometry data. It will be important to compare compaRe with existing tools, to show the strengths and weaknesses of compaRe with other tools.\n\n2. The authors could think about adding an additional module to integrate other \"omics\" data (e.g. such as mutational or gene expression/signatures or pathways), this could be useful for doing the clustering step or to identify patients having the same mutational profiles.\n\nReviewer #3:\n\nHajkarim et al. implement an algorithm in their presented toolkit compaRe to compare samples based on the similarities of samples, distinct from the more commonly used meta-clustering approaches, such as PhenoGraph, or dimensional reduction with Jenssen-Shannon Divergence analysis. Similarities among samples are calculated based on the proportions of cells within a sample belonging to an n-dimensional \"hypercubes\" (or \"hypergridding\" that is actually mass-aware and not blind) that are stratified by expression levels for n number of markers. The authors demonstrate that this method is much more time-efficient, obviates subsampling, and is robust to batch effects. This method is particularly appropriate for large-scale datasets, facilitating the comparison of numerous samples which would be helpful in screening efforts. The manuscript is written and presented well.\n\nMajor strengths:\n\n1. The study demonstrates sufficiently strong support for the toolkit's ability to determine similarity across samples and its computing efficiency with Figure 2, an important advantage of this tool.\n\n2. Compared to other approaches, the method is advantageous for identifying groups of samples that may be similar in a very large-scale dataset. CompaRe does not require (or make use of) manual expert annotation of meta-clusters. The workflow is efficient and unbiased.\n\nMajor weakness:\n\nA major weakness of the current presentation of the study is that it has not clearly demonstrated the toolkit's utility in exploring specific phenotypes in-depth within a high-parameter dataset. The following are two examples in which this limitation is relevant, and the authors may address this to strengthen this paper, if in fact detailed phenotyping is considered by the authors as an important feature of the toolkit. If not, the authors should revise the manuscript as such.\n\nFirst, the authors stated that their approach can be used to \"optimize true cytometric n-dimensional immunophenotypic characterization\" even in the setting of multi-panel workflow. However, the demonstration was based on samples that seem to have predominant phenotypes that are almost mutually exclusive. It is unlikely that this toolkit would be useful for reliable phenotypic characterization in a largely heterogeneous population of cell types, e.g. even in normal peripheral blood, unless a high number of parameters was concurrently acquired within the dataset. This is an inherent limitation. Nonetheless, a revision to demonstrate how compaRe can evaluate specific clusters of phenotypes with biological significance from a high-parameter dataset (20-30 marker cytometry) would be very helpful.\n\nSecond, the authors refer to the method's ability to include all rare cell subsets in the analysis, i.e. the ability to forego any subsampling. The work does not, however, demonstrate clearly how the presence of a rare cell subset in a given sample influences its similarity to other samples. Thus, the toolkit's value of being able to include such a rare subset in the analysis remains unestablished. It would be beneficial to include such a test to see whether the algorithm is sensitive to such changes.\n",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64b1c36c-859b-4a1b-b174-107583c6ffbe",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C1",
+      "claim": "Large-scale multiparameter screening has become increasingly feasible and straightforward to perform thanks to developments in technologies such as high-content microscopy and high-throughput flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale multiparameter screening has become increasingly feasible and straightforward to perform thanks to developments in technologies such as high-content microscopy and high-throughput flow cytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about technological developments in the field, drawing from established scientific knowledge about these technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "917116e6-a5c1-4d26-aa3b-ad274ed4630a",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C2",
+      "claim": "The automated toolkits for analyzing similarities and differences between large numbers of tested conditions have not kept pace with technological developments in multiparameter screening.",
+      "claim_type": "EXPLICIT",
+      "source": "The automated toolkits for analyzing similarities and differences between large numbers of tested conditions have not kept pace with these technological developments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the state of analytical tools relative to technological advancement, based on the authors' assessment of the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "148265e9-e8cd-4e4a-944a-de948f3d07e4",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C3",
+      "claim": "Effective analysis of multiparameter screening datasets becomes a bottleneck and a limiting factor in unbiased interpretation of results.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, effective analysis of multiparameter screening datasets becomes a bottleneck and a limiting factor in unbiased interpretation of results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that analytical tools have not kept pace with technological developments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "28eceb70-0bd4-4a07-99fc-ace23a4be8b0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C4",
+      "claim": "compaRe is a toolkit for large-scale multiparameter data analysis that integrates quality control, data bias correction, and data visualization methods with a mass-aware gridding algorithm-based similarity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce compaRe, a toolkit for large-scale multiparameter data analysis, which integrates quality control, data bias correction, and data visualization methods with a mass-aware gridding algorithm-based similarity analysis providing a much faster and more robust analyses than existing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the features and components of the compaRe toolkit developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "fe23a450-1caa-4bee-bfa5-42dfea5b517d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C5",
+      "claim": "compaRe provides much faster and more robust analyses than existing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce compaRe, a toolkit for large-scale multiparameter data analysis, which integrates quality control, data bias correction, and data visualization methods with a mass-aware gridding algorithm-based similarity analysis providing a much faster and more robust analyses than existing methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparative benchmarking data presented in the manuscript (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d3ff4451-b057-475d-a201-f4ed735e76d7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C6",
+      "claim": "compaRe can reveal interpatient heterogeneity and recognizable phenotypic profiles using mass and flow cytometry data from acute myeloid leukemia and myelodysplastic syndrome patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mass and flow cytometry data from acute myeloid leukemia and myelodysplastic syndrome patients, we show that compaRe can reveal interpatient heterogeneity and recognizable phenotypic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from patient samples analyzed in the study (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "fa749ab9-58ae-43e7-9c24-584440bade7c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C7",
+      "claim": "compaRe robustly identified multiple types of both deep and subtle phenotypic response patterns when applied to high-throughput flow cytometry drug response data in AML models.",
+      "claim_type": "EXPLICIT",
+      "source": "By applying compaRe to high-throughput flow cytometry drug response data in AML models, we robustly identified multiple types of both deep and subtle phenotypic response patterns, highlighting how this analysis could be used for therapeutic discoveries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental drug screening data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4aeeb85e-045b-4a5e-8cc2-36ddaa954c24",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C8",
+      "claim": "compaRe allows for automated, rapid, and precise comparisons of large-scale multiparameter datasets, including high-throughput screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, compaRe is a toolkit that uniquely allows for automated, rapid, and precise comparisons of large-scale multiparameter datasets, including high-throughput screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the performance data and various applications demonstrated throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d8fb5fdb-e068-4ef2-bb01-8ca62f7c4fd6",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C9",
+      "claim": "High-content microscopy and high-throughput flow cytometry can test hundreds of samples each with tens of thousands of events labeled for numerous biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "These technologies can test hundreds of samples (such as drug treatments) each with tens of thousands of events (e.g. cells) labeled for numerous biomarkers (such as cytoplasmic or membrane markers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of these technologies based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f345c717-faf3-496e-b6e0-e61038c637c7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C10",
+      "claim": "Analyzing massive multiparameter data to provide an overview of similarities and differences between hundreds of samples is still a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "However, analyzing this massive multiparameter data to provide an overview of similarities and differences between hundreds of samples is still a challenge (Boutros et al., 2015; Saeys et al., 2016; Caraus et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature discussing challenges in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "75a3b80e-98ce-4242-8c6b-4166ad558a52",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C11",
+      "claim": "The analytical challenge in multiparameter data analysis is further complicated by various sources of bias and noise such as batch effect and signal drift.",
+      "claim_type": "EXPLICIT",
+      "source": "This analytical challenge is further complicated by various sources of bias and noise often existing in the data, such as batch effect and signal drift (a gradual shift in the marker intensity across a multi-well plate) (Boutros et al., 2015; Saeys et al., 2016; Caraus et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature and is also demonstrated in the quality control data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4a76241b-237c-49cf-be0b-f4304f5bde08",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C12",
+      "claim": "Using a single representative value such as median fluorescence intensity for clustering samples can easily lead to loss of information about biologically relevant variance within and between cell subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using a single representative value can easily lead to loss of information about biologically relevant variance within and between cell subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of data analysis principles and the limitations of summary statistics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "bae9972e-59ab-4e41-8273-82994225ca3b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C13",
+      "claim": "Meta-clustering with single-cell clustering algorithms has been suggested to cluster samples based on the similarity of the centroids of cell subpopulations identified in the individual samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Meta-clustering with single-cell clustering algorithms has been suggested to cluster samples based on the similarity of the centroids of cell subpopulations identified in the individual samples (Qiu et al., 2011; Levine et al., 2015; Van Gassen et al., 2015; Ogishi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work describing these methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "5bfd77bd-2356-4303-aaab-c41d5ab6c197",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C14",
+      "claim": "Single-cell clustering algorithms are not efficient for clustering of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "While these algorithms are widely used in single-cell data analysis for clustering cells, they are not efficient for clustering of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' analysis and is supported by benchmarking data in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ed622d96-c05a-4626-97c3-a59b16356af0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C15",
+      "claim": "Centroid-based analysis can be misleading when subclusters are not sufficiently distinct or the number of sub-clusters varies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because centroid-based analysis can be misleading when subclusters are not sufficiently distinct or the number of sub-clusters varies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on understanding of centroid-based clustering methods and their limitations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "390620c0-7f7e-4530-aafe-ab66e9b32c16",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C16",
+      "claim": "The heavy computing cost of meta-clustering makes it poorly suited for analyses of large datasets with many samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the heavy computing cost of meta-clustering makes it poorly suited for analyses of large datasets with many samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by benchmarking data showing computing times in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "15402df2-d207-4a21-8651-26a775dc98a0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C17",
+      "claim": "Using prior knowledge for subpopulation identification can both lead to biased interpretations and failure to make de novo discoveries.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual gating and machine learning based on prior knowledge have been used to cluster samples (Amir et al., 2019; Bruggner et al., 2014), but using prior knowledge for subpopulation identification can both lead to biased interpretations and failure to make de novo discoveries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of methods that rely on prior knowledge, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8be0ccd5-41c7-4fc0-8ed1-ed3c5bb0d11b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C18",
+      "claim": "Dimension reduction methods coupled with the Jensen-Shannon divergence metric have been used to cluster multidimensional samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimension reduction methods (Lvd and Hinton, 2008; Amir et al., 2013; McInnes et al., 2018) coupled with the Jensen-Shannon divergence (JSD) metric have also been used to cluster multidimensional samples (Amir et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work describing these methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "6d7b5b56-1000-42d8-af36-c45bad966ce8",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C19",
+      "claim": "Dimension reduction algorithms including factor analysis and principal component analysis still require excessive computing costs with an inherent information loss.",
+      "claim_type": "EXPLICIT",
+      "source": "These algorithms including factor analysis and principal component analysis (PCA) still require excessive computing costs with an inherent information loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of these methods and is supported by benchmarking data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "33b37a2c-8193-4210-a7ff-5e2a55daba85",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C20",
+      "claim": "None of the methodologies developed so far efficiently correct for sources of bias and noise in large-scale multiparameter screening data.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that none of the methodologies developed so far efficiently correct for sources of bias and noise in large-scale multiparameter screening data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of existing methods based on review of the literature and the authors' analysis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "e5b2d6c6-99e6-4ac1-816b-c27e4eba42d7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C21",
+      "claim": "Available computational toolkits mostly allow for single-parameter or unautomated analyses of large-scale screening data.",
+      "claim_type": "EXPLICIT",
+      "source": "Available computational toolkits (BioScience E, 2020; Potdar et al., 2020; Boutros et al., 2006) mostly allow for single-parameter or unautomated analyses of large-scale screening data using the aforementioned methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing toolkits and their capabilities.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "6c49b261-330d-47b3-8f85-515c285d9917",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C22",
+      "claim": "compaRe has several unique modules for quality control, bias correction, pairwise comparisons, clustering, and data visualization.",
+      "claim_type": "EXPLICIT",
+      "source": "This toolkit has several unique modules for quality control, bias correction, pairwise comparisons, clustering, and data visualization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the components of the compaRe toolkit developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d50a32ab-ca9d-4c02-8237-e9ad2e8bc4b1",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C23",
+      "claim": "The quality control and bias correction modules of compaRe can effectively reveal and remove various sources of bias in the screening data.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality control and bias correction modules can effectively reveal and remove various sources of bias in the screening data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1 and Appendix 1\u2014figure 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b2bdaea0-65aa-4dc3-83d9-31a064d4c1c3",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C24",
+      "claim": "compaRe clusters samples by measuring the similarity between them using a dynamic mass-aware gridding algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe clusters samples by measuring the similarity between them using a dynamic mass-aware gridding algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the core methodology of compaRe developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "9d58f5d9-bf81-48da-8a9b-81035b321e63",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C25",
+      "claim": "The dynamic mass-aware gridding algorithm increases the robustness of the toolkit to the size of data and signal shift while guaranteeing fast clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm increases the robustness of the toolkit to the size of data and signal shift (a technical term referring to batch effect and signal drift), while guaranteeing fast clustering, as it does not bear the computing cost of dimension reduction and subsampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by benchmarking data in Figure 2 showing robustness to noise and computing time comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "91f8a4f4-0634-4455-8536-fbfbb9ab2a51",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C26",
+      "claim": "The compaRe toolkit is available both as a command-line version and a graphical user interface version.",
+      "claim_type": "EXPLICIT",
+      "source": "The toolkit is available both as a command-line version and a graphical user interface (GUI) version that provides various visualizations to help with the interpretation of its readouts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the availability and formats of the toolkit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8ddaf159-44f2-4ff7-a533-0576acda8903",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C27",
+      "claim": "compaRe performed robustly in the presence of background noise and batch effects even where these input data artifacts could not be corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe performed robustly in the presence of background noise and batch effects even where these input data artifacts could not be corrected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by benchmarking data in Figure 2 showing performance with added noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ad4b4641-ad14-43f9-858e-38e25362d08b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C28",
+      "claim": "compaRe analyses of multiparameter mass and flow cytometric data from AML and MDS patient samples revealed interpatient heterogeneity and recognizable phenotypic profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe analyses of multiparameter mass and flow cytometric data from acute myeloid leukemia (AML) and myelodysplastic syndrome (MDS) patient samples revealed interpatient heterogeneity and recognizable phenotypic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from patient sample analysis shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "99cd6cc9-bae7-45f2-af8a-91723dda2d46",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C29",
+      "claim": "When applied to high-throughput flow cytometry of the dose response of AML samples treated with various drugs, compaRe successfully corrected for various sources of bias and clustered the samples based on their response to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to high-throughput flow cytometry of the dose response of AML samples treated with various drugs, compaRe successfully corrected for various sources of bias and clustered the samples based on their response to treatment, allowing for detection of both drastic and subtle phenotypic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by drug screening data presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a161251b-8bef-4bd0-8cc8-e9c29dacdbb6",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C30",
+      "claim": "compaRe allowed for detection of both drastic and subtle phenotypic responses in drug-treated AML samples.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to high-throughput flow cytometry of the dose response of AML samples treated with various drugs, compaRe successfully corrected for various sources of bias and clustered the samples based on their response to treatment, allowing for detection of both drastic and subtle phenotypic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by drug screening data showing various response patterns in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "7039701d-d208-46cd-b318-8541e2956e97",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C31",
+      "claim": "compaRe is designed to analyze the data from small to large-scale multiparameter screening assays such as high-throughput flow cytometry, high-content microscopy, mass cytometry, and standard flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe is designed to analyze the data from small to large-scale multiparameter screening assays such as high-throughput flow cytometry, high-content microscopy, mass cytometry, and standard flow cytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the intended applications of the compaRe toolkit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "c3b27dcf-0472-44c4-bcea-705430274aa4",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C32",
+      "claim": "During quality control of high-throughput flow cytometry of AML samples, several sources of bias such as autofluorescence, bioluminescence, carryover effect, edge effect, signal drift, and cell viability drift were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "During quality control, several sources of bias such as autofluorescence, bioluminescence, carryover effect, edge effect, signal drift, and cell viability drift (drift in the number of live cells across the plate) were identified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quality control data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d5deb82c-1310-47a0-b172-ec68bc885515",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C33",
+      "claim": "The bias correction module of compaRe could effectively correct for signal and cell viability drifts using regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias correction module could effectively correct for signal and cell viability drifts (two main sources of bias in high-throughput screening with fluorescent markers) using regression analysis (Figure 1, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1 demonstrating before and after bias correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "999c10b9-d38e-42cd-a9fa-454acf2a04ab",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C34",
+      "claim": "The compaRe comparison module measures the similarity between two samples using a dynamic mass-aware gridding algorithm that divides the higher dimensional space into several spatial units called hypercubes.",
+      "claim_type": "EXPLICIT",
+      "source": "It measures the similarity between two samples using a dynamic mass-aware gridding algorithm (Figure 1, Materials and methods). Given two samples, the algorithm divides the higher dimensional space (formed by, for example, cell surface markers) of the samples individually into several spatial units called hypercubes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology of the comparison module as illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "39959010-da6d-4c84-83b3-ef914f179711",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C35",
+      "claim": "The average difference between proportions of data points present in corresponding hypercubes across the samples is used to represent similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The average difference between proportions of data points present in corresponding hypercubes across the samples is used to represent similarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mathematical approach used in the comparison module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "c1c04930-a86f-46fd-a319-54473adc33d6",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C36",
+      "claim": "The comparison module becomes robust to signal shift and data size difference between the two samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, the module becomes robust to signal shift and data size difference between the two samples (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by benchmarking data in Figure 2 and Appendix 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "5d32e564-abd1-4a85-ad15-6d8ce736924d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C37",
+      "claim": "The clustering module of compaRe uses a graphical algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustering module uses a graphical algorithm (Figure 1, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology of the clustering module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d0596c3e-abb6-4388-b887-08352ad7fac9",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C38",
+      "claim": "In the clustering module, all nodes (samples) are initially connected forming a complete weighted graph wherein weights represent similarity values.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, all nodes (samples) are connected forming a complete weighted graph wherein weights represent similarity values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial step of the clustering algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4a8b8427-bc34-4b9d-b119-fc60f66b350a",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C39",
+      "claim": "The graph is pruned to remove potential false positive edges using a threshold inferred from negative controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The graph is then pruned to remove potential false positive edges using a threshold inferred from negative controls (untreated samples).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a step in the clustering algorithm methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ee8b814b-4f2b-4ebc-bade-3d468a6c01d4",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C40",
+      "claim": "After constructing a linked graph, clustering is tantamount to finding maximal cliques, each containing samples with similar responses.",
+      "claim_type": "EXPLICIT",
+      "source": "After constructing a linked graph, clustering is tantamount to finding maximal cliques (complete subgraphs that cannot be extended), each containing samples with similar responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering approach used in compaRe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8de56cfb-8c32-4060-be6a-377c9c1e03d1",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C41",
+      "claim": "compaRe benefits from parallel computing and modular design.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe benefits from parallel computing and modular design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical features of the compaRe implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "45e9d635-2b00-41ee-acd4-ad7733885b83",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C42",
+      "claim": "The modular design of compaRe allows the modules to run independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Its modular design allows the modules to run independently; thus, the similarity and clustering modules of compaRe can be potentially applied to any problem space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design flexibility of compaRe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b1051e14-4e49-4c18-8824-fe15159aac6d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C43",
+      "claim": "The similarity and clustering modules of compaRe can be potentially applied to any problem space.",
+      "claim_type": "EXPLICIT",
+      "source": "Its modular design allows the modules to run independently; thus, the similarity and clustering modules of compaRe can be potentially applied to any problem space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of compaRe modules.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "9fef65ef-4dcf-4b14-a3ef-10f2c58ca621",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C44",
+      "claim": "compaRe was benchmarked against JSD with UMAP and meta-clustering with PhenoGraph.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the robustness of compaRe's comparison module to noise and batch effect, we benchmarked it against JSD with UMAP (for simplicity just JSD) and meta-clustering with PhenoGraph (for simplicity just meta-clustering) (Levine et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking methodology used to evaluate compaRe.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "df0a2dca-4be3-490a-8573-521ca29db15b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C45",
+      "claim": "The benchmarking analysis used publicly available mass cytometry data of 21 bone marrow aspirate samples collected from 16 pediatric AML patients and five healthy adult donors labeled for detection of 16 cell surface markers.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the publicly available mass cytometry data of a total of 21 bone marrow aspirate samples collected from 16 pediatric AML patients and five healthy adult donors labeled for detection of 16 cell surface markers (Levine et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for benchmarking, with citation to the original source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "0a276425-1f9c-4466-a2f9-b8197ae669dc",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C46",
+      "claim": "Random noise with Gaussian distribution was introduced to the 16 parameters of each sample to simulate a batch effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced random noise with Gaussian distribution to the 16 parameters of each sample to simulate a batch effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology used for benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "365487a4-6479-47cc-a42e-d558bfd37f20",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C47",
+      "claim": "Although the added noise undermines similarity, the overall cell population configuration remains intact, and consequently the simulated samples will still have the highest similarity with their original samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, although the added noise undermines similarity, the overall cell population configuration remains intact, and consequently the simulated samples will still have the highest similarity with their original samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the expected behavior of the simulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "c88d386a-a4bf-4e7a-beca-3998ccafdc20",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C48",
+      "claim": "Even with the added noise, the comparison module correctly identified similar samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with the added noise, the comparison module correctly identified similar samples (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by benchmarking results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "afa93b3b-5eaa-4667-b954-6b1b88f6797c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C49",
+      "claim": "The batch effect seriously compromised the performance of both meta-clustering and JSD, showing several maximum similarities other than the originals.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the batch effect seriously compromised the performance of both meta-clustering and JSD, showing several maximum similarities other than the originals (Figure 2b and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by benchmarking results shown in Figures 2b and 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8dfc3f0f-010c-4ef7-94d7-f3c094167920",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C50",
+      "claim": "In additional comparison with FlowSOM and SPADE, compaRe's performance far exceeded their performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In additional comparison with FlowSOM and SPADE, other commonly used tools for flow cytometry, compaRe's performance far exceeded their performance (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by benchmarking data in Appendix 1\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ca1ea250-af14-431a-ad60-0449f2f2d45e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C51",
+      "claim": "The benchmarking result demonstrates the advantage of using dynamic gridding for comparison of samples in the presence of noise or batch effect.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates the advantage of using dynamic gridding for comparison of samples in the presence of noise or batch effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the benchmarking results presented in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "cdf43db3-4b72-495f-b965-0f815059f70c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C52",
+      "claim": "compaRe took only 25 min to analyze the 21 samples (210 pairwise comparisons), without subsampling or dimension reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, compaRe took only 25 min to analyze the 21 samples (210 pairwise comparisons), without subsampling or dimension reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of computing time reported from the benchmarking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "0e25d564-b871-4f86-9862-8b163974c42d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C53",
+      "claim": "Meta-clustering took 39 hr and JSD took 10 hr to analyze the 21 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, meta-clustering and JSD took 39 hr and 10 hr respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of computing time reported from the benchmarking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "85f86f96-7331-4b11-bbfa-0a071e18d6d9",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C54",
+      "claim": "For the feasibility of JSD, each sample was subsampled to 100,000 cells (default value suggested in Amir et al., 2013).",
+      "claim_type": "EXPLICIT",
+      "source": "For the feasibility of JSD, we subsampled each sample to 100,000 cells (default value suggested in Amir et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological detail of the benchmarking with citation to the original recommendation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "337bf6b9-ef5c-47fd-9bd1-04dc621a263e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C55",
+      "claim": "When the subsampling limit was fixed to 60% of each sample, the computing time of JSD increased to 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "When we fixed this limit to 60% of each sample, the computing time of JSD increased to 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of computing time from the benchmarking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "be5c22e7-4c8d-4a6a-9dec-e82d38f341df",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C56",
+      "claim": "The run time increased steeply for both meta-clustering and JSD as the sample size increased, while the increase for compaRe was almost unnoticeable.",
+      "claim_type": "EXPLICIT",
+      "source": "The run time increased steeply for both meta-clustering and JSD as the sample size increased, while the increase for compaRe was almost unnoticeable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the run time comparison data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f2701d01-055c-494f-9ced-10b6c12db294",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C57",
+      "claim": "compaRe can identify phenotypic changes from a high-dimensional dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "To further show that compaRe can identify phenotypic changes from a high-dimensional dataset, we used a subset of the data with three healthy and two AML samples stained with 29 (15 membrane and 14 intracellular signaling) markers (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Appendix 1\u2014figure 2 showing detection of gradual cell population removal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "62157779-cf65-405c-b545-7adef2723f5c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C58",
+      "claim": "The similarity decreased concurrently and more drastically after 100% reduction when phenotypic changes were detected, indicating compaRe is sensitive to phenotypic changes and the existence of rare cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the UMAP projections, the similarity decreased concurrently and more drastically after 100% reduction when phenotypic changes were detected, indicating compaRe is sensitive to phenotypic changes and the existence of rare cell populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data shown in Appendix 1\u2014figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "db178b45-f3bd-4b25-85a2-09de795e4649",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C59",
+      "claim": "Over time, about one-third of all MDS cases develop into AML.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, about one-third of all MDS cases develop into AML (DeVita and Lawrence, 2015; Niederhuber et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citations to medical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "145f867a-21f0-4721-bb20-2391d8a4ccce",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C60",
+      "claim": "The risk of developing AML largely depends on the MDS subtype at the time of diagnosis, with high-risk MDS developing into AML more often than the lower-risk MDS subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of developing AML largely depends on the MDS subtype at the time of diagnosis, with high-risk MDS developing into AML more often than the lower-risk MDS subtypes (Greenberg et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge supported by citation to medical literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "e694f0df-8a23-4b66-a024-9039678f1a6a",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C61",
+      "claim": "Many immunophenotypic abnormalities are not unique to MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "As many immunophenotypic abnormalities are not unique to MDS, several diagnostic flow cytometric antibody panels have been proposed (van Dongen et al., 2012; Alhan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "69df8cea-1823-4ea6-aa26-6d683b4655bd",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C62",
+      "claim": "The EuroFlow AML/MDS antibody panel aims at the parallel identification and categorization of AML and MDS.",
+      "claim_type": "EXPLICIT",
+      "source": "The EuroFlow AML/MDS antibody panel (van Dongen et al., 2012) aims at the parallel identification and categorization of AML and MDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the EuroFlow panel with citation to the original work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b101e007-0cf0-4d2f-8a40-3608a01ecb8d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C63",
+      "claim": "Both AML and MDS are heterogeneous, affecting multiple cell lineages and multiple maturation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Both diseases are heterogeneous, affecting multiple cell lineages and multiple maturation stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about these diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "df5ba9e3-d528-40a2-bab9-8af4d7ff011f",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C64",
+      "claim": "The EuroFlow panel concerns major myeloid lineages (neutrophilic, monocytic and erythroid) and the detection of abnormal lymphoid maturation profiles in four tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this panel concerns major myeloid lineages (neutrophilic, monocytic and erythroid) and the detection of abnormal lymphoid maturation profiles in four tubes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the EuroFlow panel.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "2bc016b1-c062-4ec1-a27b-9759ba699c4b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C65",
+      "claim": "The EuroFlow panel uses four backbone markers to identify myeloblasts and an additional set of 15 markers devoted to the characterization of myeloid lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The panel uses four backbone markers to identify myeloblasts and an additional set of 15 markers devoted to the characterization of myeloid lineages (Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker composition of the EuroFlow panel.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "1c5f1a63-37e8-4741-92ec-6ca47cd56f30",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C66",
+      "claim": "Unlike the backbone markers, the characterization markers are divided into each tube exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the backbone markers, the characterization markers are divided into each tube exclusively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the EuroFlow panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a38175c4-e8a8-4f88-81ab-0493cb6e1704",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C67",
+      "claim": "The design of the EuroFlow panel makes it impossible to form a multiparameter dataset which is required for clustering methods.",
+      "claim_type": "EXPLICIT",
+      "source": "This design was made so that characterization markers from different tubes can be inferred on the same backbone marker subpopulations, but the design makes it impossible to form a multiparameter dataset which is required for clustering methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of the EuroFlow panel design for certain analytical approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8379d765-4d3c-4e14-8179-93f01e374f31",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C68",
+      "claim": "compaRe's comparison module can compare cell population morphologies even in subspaces.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as compaRe's comparison module can compare cell population morphologies even in subspaces, we were able to use it to measure similarities between patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of compaRe that enables analysis of the EuroFlow data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a93aa2cc-39c1-44f8-8d87-f76b9f210f0a",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C69",
+      "claim": "25 bone marrow mononuclear cell samples were analyzed, collected from 16 MDS patients and 9 AML patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed 25 bone marrow mononuclear cell samples collected from 16 MDS patients and 9 AML patients (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the patient sample dataset analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "efd5efb5-9d74-43b5-a333-7f00020bb2d6",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C70",
+      "claim": "The comparison module provided a detailed overview of similarities of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison module provided a detailed overview of similarities of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the output of compaRe analysis on patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d2d3d3be-44ae-4139-a869-2975c0e33d7e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C71",
+      "claim": "The AML samples exhibited a great amount of interpatient heterogeneity compared to the MDS samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the AML samples exhibited a great amount of interpatient heterogeneity compared to the MDS samples (Figure 3a and b) with all MDS samples clustered together, and the AML samples spread over three clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the clustering results shown in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "169feaf1-f567-421a-a137-4994f60fabc0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C72",
+      "claim": "All MDS samples clustered together, and the AML samples spread over three clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the AML samples exhibited a great amount of interpatient heterogeneity compared to the MDS samples (Figure 3a and b) with all MDS samples clustered together, and the AML samples spread over three clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the clustering results shown in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "50cbd60d-64c3-4b8e-b53a-4dd86822bdbf",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C73",
+      "claim": "The measured similarities perfectly matched the UMAP projections so that as the similarity decreases, the degree of overlap decreases, and the number of exclusive cell populations increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured similarities perfectly matched the projections so that from top left to bottom right, as the similarity decreases, the degree of overlap decreases, and the number of exclusive cell populations increases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the UMAP projections shown in Figure 3c and Appendix 1\u2014figures 3\u201326.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8b4f6204-5da7-488c-946b-6db1ed9ab2f4",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C74",
+      "claim": "AML samples 1 and 9 of the blue cluster were confirmed to have a high degree of monocytic differentiation with marked expression of the monocytic maturation markers CD14, CD35, CD64, and CD300e.",
+      "claim_type": "EXPLICIT",
+      "source": "AML samples 1 and 9 of the blue cluster were confirmed to have a high degree of monocytic differentiation with marked expression of the monocytic maturation markers CD14, CD35, CD64, and CD300e.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the marker expression data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d46ecd16-434c-465b-8428-80aa648159cd",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C75",
+      "claim": "The AML samples of the green cluster represented a cluster of poorly differentiated AML cases with low expression of differentiation markers and high expression of the stem cell/progenitor markers CD34 and CD117.",
+      "claim_type": "EXPLICIT",
+      "source": "The AML samples of the green cluster, on the other hand, represented a cluster of poorly differentiated AML cases with low expression of differentiation markers and high expression of the stem cell/progenitor markers CD34 and CD117.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the marker expression data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "16db701c-96d5-4d07-94f7-73f10719d5a3",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C76",
+      "claim": "The AML samples 2 and 5 of the red cluster included both positive and negative populations of CD11b which is a common granulocytic and monocytic maturity marker, a feature observed in all MDS samples as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the blue cluster with high monocytic differentiation, and the green cluster with poor monocytic differentiation, the AML samples 2 and 5 of the red cluster included both positive and negative populations of CD11b which is a common granulocytic and monocytic maturity marker, a feature observed in all MDS samples as well (Appendix 1\u2014figure 27).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the marker expression data shown in Appendix 1\u2014figure 27.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "2996480b-b12f-4079-8ae6-ffced132e31c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C77",
+      "claim": "compaRe's comparison module can be used to optimize true cytometric n-dimensional immunophenotypic characterization of patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, compaRe's comparison module can be used to optimize true cytometric n-dimensional immunophenotypic characterization of patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the successful application of compaRe to patient sample analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "6b7dd682-9882-48fd-ad5b-32b4fbb11351",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C78",
+      "claim": "Interpretation can be performed in a conventional manner assisted by lower-dimensional projection tools such as PCA and UMAP that promptly provide a phenotypic profile of the patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpretation can then be performed in a conventional manner assisted by lower-dimensional projection tools such as PCA and UMAP that promptly provide a phenotypic profile of the patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how compaRe can be integrated with existing visualization tools for interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "c252ea21-784e-407f-b189-ce4118aa349b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C79",
+      "claim": "Splenic cells from an AML mouse model were sorted for c-Kit cell surface expression, allowing for the enrichment of stem/progenitor-type leukemic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Splenic cells were sorted for c-Kit cell surface expression, allowing for the enrichment of stem/progenitor-type leukemic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for the mouse AML model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a09f5ad1-2809-4b3e-b234-3604a864f0d7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C80",
+      "claim": "On ex vivo expansion, the sorted leukemic cells continuously expand and differentiate in a similar way as in vivo with a clear stem cell/progenitor population and partial differentiation towards CD11b/Gr-1 or CD16/CD32-expressing myeloid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On ex vivo expansion, these cells continuously expand and differentiate in a similar way as in vivo with a clear stem cell/progenitor population and partial differentiation towards CD11b/Gr-1 or CD16/CD32-expressing myeloid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of the mouse AML cells in culture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "3de5d1b7-b17c-42ab-9db7-e4af0f7e13c5",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C81",
+      "claim": "The leukemic cells were treated with a library of 116 antineoplastic agents including surface and nuclear receptor inhibitors and activators, enzyme inhibitors and, cytotoxic chemotherapy in a five-point concentration range, as well as 20 negative control wells.",
+      "claim_type": "EXPLICIT",
+      "source": "After ex vivo expansion, the leukemic cells were plated onto multi-well plates containing a library of 116 antineoplastic agents including surface and nuclear receptor inhibitors and activators, enzyme inhibitors and, cytotoxic chemotherapy in a five-point concentration range, as well as 20 negative control wells (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the drug screening experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b73b361a-5385-4778-a8e1-e6b8a3bace4c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C83",
+      "claim": "compaRe corrected the intraplate signal drift, sources of bias in cell numbers, as well as inter-plate sources of bias in the mouse AML drug screening data.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe corrected the intraplate signal drift, sources of bias in cell numbers, as well as inter-plate sources of bias (Appendix 1\u2014figure 28).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the bias correction data shown in Appendix 1\u2014figure 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d7f3cc09-3b03-4238-906e-8e0121e26670",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C84",
+      "claim": "After clustering and clique analysis, 134 cliques were obtained, each sharing similar drug responses.",
+      "claim_type": "EXPLICIT",
+      "source": "After clustering and clique analysis, we obtained 134 cliques, each sharing similar drug responses (Supplementary file 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering results from the mouse AML drug screening analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f35a13b5-4c7a-4b91-97f8-f930a0dd7137",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C85",
+      "claim": "A distinct response group was identified characterized with decreased Gr-1 and concomitant increase of CD16/CD32 as compared to control (Group one).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a distinct response group characterized with decreased Gr-1 and concomitant increase of CD16/CD32 as compared to control (Group one in Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the dispersion map and marker expression data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "13d391c4-c44a-42e5-a826-2e8a922fbf82",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C86",
+      "claim": "Most of the cliques included in response group one consisted of drugs in high concentrations with cytotoxic/cytostatic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the cliques included in this response group consisted of drugs in high concentrations with cytotoxic/cytostatic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the clustering results and drug annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ada2d9b5-fea6-4a92-b3cc-887ce6a8bfb0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C87",
+      "claim": "Some drugs in response group one had a milder effect on live cell numbers, and these were enriched for MAPK pathway-associated inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some drugs in this group had a milder effect on live cell numbers, and these were enriched for mitogen-activated protein kinase (MAPK) pathway-associated inhibitors (Figure 5c, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the waterfall plot and drug annotations shown in Figure 5c and Supplementary file 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4b34294c-7db6-4a23-b1ce-19c309bb89d7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C88",
+      "claim": "Trametinib (2.5 nM) in clique 23 showed a marked decrease of Gr-1 and increase of CD16/CD32, further confirming the results of compaRe.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, trametinib (2.5 nM) in clique 23 (C23) showed a marked decrease of Gr-1 and increase of CD16/CD32, further confirming the results of compaRe (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the density scatter plots shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "9bab5a4e-92e8-4bae-8007-e71785397401",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C89",
+      "claim": "The MAPK pathway is a regulator of diverse cellular processes such as proliferation, survival, differentiation, and motility.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAPK pathway is a regulator of diverse cellular processes such as proliferation, survival, differentiation, and motility (Dhillon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "ee6d563b-5e34-495d-87be-0e64d8ecc558",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C90",
+      "claim": "The findings suggest that MAPK signaling controls the differentiation and/or proliferation towards Gr-1-/CD16+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that MAPK signaling controls the differentiation and/or proliferation towards Gr-1-/CD16+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the drug response data showing MAPK inhibitor effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4d155b7b-a359-4966-9c23-f24c752e33ae",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C91",
+      "claim": "In high concentration, molibresib and birabresib, inhibitors of BET proteins BRD2, BRD3, and BRD4, caused a reduction in live cell counts but also a reduction of MFI in all the measured markers, which corresponds to the loss of differentiation marker positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In high concentration, molibresib and birabresib, inhibitors of BET proteins BRD2, BRD3, and BRD4, caused a reduction in live cell counts but also a reduction of MFI in all the measured markers, which corresponds to the loss of differentiation marker positive cells (Gr-1+, CD11b+, CD16/CD32 high) (Figure 5b: C100, C110, Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap and density scatter plots shown in Figure 5b and 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "0c3eea9b-29f6-4e15-90ae-18ab971c6ef8",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C92",
+      "claim": "The BRD2/3/4 proteins regulate transcription via recognition of acetylated lysines on histones and concomitant recruitment of other transcription and chromatin remodeling factors to enhance transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The BRD2/3/4 proteins regulate transcription via recognition of acetylated lysines on histones and concomitant recruitment of other transcription and chromatin remodeling factors to enhance transcriptional activity (Ferri et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "605465cf-e603-44c4-9a4a-6a139228ef0a",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C93",
+      "claim": "The enrichment of undifferentiated cells after BET inhibitor treatment could be due to an early block in differentiation or that inhibition of BRD2/3/4 has led to a general decrease of cell surface protein transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of undifferentiated cells could therefore be due to an early block in differentiation or that inhibition of BRD2/3/4 has led to a general decrease of cell surface protein transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying the observed phenotypic response.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "558ba2ee-3e21-4419-9910-0aeb1e67bdad",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C94",
+      "claim": "In the mouse AML cell model, the leukemic stem-like cells are expected to be present within the differentiation marker negative population.",
+      "claim_type": "EXPLICIT",
+      "source": "In this cell model, the leukemic stem-like cells are expected to be present within the differentiation marker negative population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of leukemic stem cell characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "7b99ee4d-4f52-403a-ad50-1b6179128bbb",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C95",
+      "claim": "Leukemic stem-like cells are potential targets for treatments against leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are potential targets for treatments against leukemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "bd472a83-b95b-4a78-9abe-a1bf17dfc58b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C96",
+      "claim": "Response group 2 had a higher MFI in marker Gr-1 as compared to control, but the increase was very slight and seemed to be linked to toxic drug concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed response group 2 (Figure 5a) had a higher MFI in marker Gr-1 as compared to control, the increase was very slight and seemed to be linked to toxic drug concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the dispersion map shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "e61aa4d6-c01f-45dc-a10c-4f87ccf4db45",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C97",
+      "claim": "Three drugs, vincristine (C80), tazemetostat, and tretinoin clearly reduced the proportion of differentiation marker negative cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, three drugs, vincristine (C80), tazemetostat, and tretinoin clearly reduced the proportion of differentiation marker negative cells (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the density scatter plots shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "dfd1614f-79ca-4c5b-8391-5e7467f24f43",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C98",
+      "claim": "Vincristine, tazemetostat, and tretinoin have distinct modes of action: vincristine is a microtubule polymerization inhibitor, tazemetostat inhibits the histone methyltransferase EZH2, and tretinoin is a retinoic acid receptor agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these three drugs have distinct modes of action: vincristine is a microtubule polymerization inhibitor, tazemetostat inhibits the histone methyltransferase EZH2, and tretinoin is a retinoic acid receptor agonist (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about these drugs supported by reference to supplementary data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "cb930536-07ba-4aff-83f2-edebbe60fe2c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C99",
+      "claim": "compaRe analysis of the high-throughput flow cytometry screening data allowed rapid identification of several distinct phenotypic responses in the mouse AML model, as well as the cellular signals that drive them.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, compaRe analysis of the high-throughput flow cytometry screening data allowed rapid identification of several distinct phenotypic responses in this mouse AML model, as well as the cellular signals that drive them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from the drug screening results presented in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "fcdf1683-a100-4b84-bbbd-060d09276129",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C100",
+      "claim": "Drugs of different mechanism of action can still cluster together if the cellular processes they affect converge in a specific model.",
+      "claim_type": "EXPLICIT",
+      "source": "Drugs of different mechanism of action can still cluster together if the cellular processes they affect converge in a specific model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that drugs with different mechanisms can produce similar phenotypic responses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f44efcd4-af44-4609-ba04-7976d0609eb2",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C101",
+      "claim": "Drug response in association with genetic alterations can be one of the applications of compaRe.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug response in association with genetic alterations can be one of the applications of compaRe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of compaRe.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "139adbe1-54ca-4412-a539-f69595a60f94",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C102",
+      "claim": "Primary AML bone marrow mononuclear cells were dispensed into a 384-multiwell plate containing a library of 40 drugs and drug combinations in seven-point concentration ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary AML bone marrow mononuclear cells were dispensed into a 384-multiwell plate containing a library of 40 drugs and drug combinations in seven-point concentration ranges (Supplementary file 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for the human AML patient sample drug screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "3f1fa3fe-b6be-42c1-ae19-29d4f512e899",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C103",
+      "claim": "After 72 hr of drug exposure, the human AML cells were stained with fluorescently labeled antibodies against a panel of AML-related cell surface markers (CD45, CD34, CD38, CD117, HLA-DR, CD45-RA, CD3 and a mix of myeloid differentiation-related markers).",
+      "claim_type": "EXPLICIT",
+      "source": "After 72 hr of drug exposure, the cells were stained with fluorescently labeled antibodies against a panel of AML-related cell surface markers (CD45, CD34, CD38, CD117, HLA-DR, CD45-RA, CD3 and a mix of myeloid differentiation-related markers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for the human AML drug screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "9305a77b-ea57-4035-b461-e635b98e76ba",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C104",
+      "claim": "compaRe analysis of the human AML patient sample identified several distinct response groups.",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe analysis identified several distinct response groups (Figure 6a, Supplementary file 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the UMAP clustering shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "dd51f4ab-7836-4dc4-853d-136aa633b0ab",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C105",
+      "claim": "Response group one in the human AML sample had notably higher MFIs in the CD34 and CD38 channels compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Response group one had notably higher MFIs in the CD34 and CD38 channels compared to controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the UMAP plot shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "1365dd75-c83d-4a32-a266-dd845b729f6c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C106",
+      "claim": "The increase in MFIs in response group one was due to a drug concentration-dependent appearance of a CD34+/CD38+ cell population that was barely detectable in the DMSO control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the increase in MFIs was due to a drug concentration-dependent appearance of a CD34+/CD38+ cell population that was barely detectable in the DMSO control samples (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the density scatter plots shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "1e1abfa1-a0d3-48c1-a8aa-14854ca37712",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C107",
+      "claim": "The appearance of the CD34+/CD38+ population was concomitant to a general increase in live cell count.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance of this CD34+/CD38+ population was also concomitant to a general increase in live cell count (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the live cell count data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "87e53f89-249b-4cad-bfb5-8344d323d5c0",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C108",
+      "claim": "Seven different drugs had the same effect of inducing the CD34+/CD38+ population, most of them being selective signal transduction inhibitors such as trametinib (MEK inhibitor), copanlisib (PI3K inhibitor), and PIM447 (PIM kinase inhibitor).",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, seven different drugs had the same effect (Figure 6d), most of them being selective signal transduction inhibitors such as trametinib (MEK inhibitor), copanlisib (PI3K inhibitor), and PIM447 (PIM kinase inhibitor).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the table of drugs shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "efd64f9c-bdf8-4fb8-9b4a-097145cbe52c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C109",
+      "claim": "Response group 2 in the human AML sample consisted of two drugs: birabresib and lenalidomide in different concentrations, which induced a decrease in the MFI of CD45-RA and CD45 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Response group 2 consisted of two drugs: birabresib and lenalidomide in different concentrations. These induced a decrease in the MFI of CD45-RA and CD45 channels (Appendix 1\u2014figure 29a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Appendix 1\u2014figure 29a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "930979f7-e28c-4782-80a6-2fa563ba54ad",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C110",
+      "claim": "In the case of lenalidomide, the response was likely due to cell toxicity and/or growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of lenalidomide, this response was likely due to cell toxicity and/or growth inhibition (Appendix 1\u2014figure 29b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the cell count data shown in Appendix 1\u2014figure 29b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "d1afb7b0-8bfa-4ef0-b398-bb552b635046",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C111",
+      "claim": "The birabresib response was very pronounced without the loss of live cell numbers, but with a decrease in the MFI in the cell differentiation marker mix channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the birabresib response was very pronounced without the loss of live cell numbers, (Appendix 1\u2014figure 29b) but with a decrease in the MFI in the cell differentiation marker mix channel (Appendix 1\u2014figure 29c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Appendix 1\u2014figures 29b and 29c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "3e2f65d5-aade-429a-afd1-e19694c75b88",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C112",
+      "claim": "compaRe detected response group three as distinct from the controls, which includes treatment with tretinoin (several concentrations), navitoclax, and mitoxantrone (low dose).",
+      "claim_type": "EXPLICIT",
+      "source": "compaRe also detected response group three as distinct from the controls. This group includes treatment with tretinoin (several concentrations), navitoclax, and mitoxantrone (low dose).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a response group identified by compaRe analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "26876877-0dc0-4d52-8191-4e6dddb59b15",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C113",
+      "claim": "The phenotypic response in group three is subtle but with a distinct increase in CD34+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further validation showed the phenotypic response in group three is subtle but with a distinct increase in CD34+ cells (Appendix 1\u2014figure 29d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Appendix 1\u2014figure 29d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "83be85f4-095a-4813-8f21-d4b02bf67d9d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C114",
+      "claim": "The detection of subtle changes in response group three highlights that compaRe analysis is sensitive enough to identify these subtle changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result highlights compaRe analysis is sensitive enough to identify these subtle changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ability to detect the subtle response in group three.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "524fbe1a-5b47-4c45-b3e0-a1b85f432ae8",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C115",
+      "claim": "The toolkit is unique in many ways, including its quality control and bias correction modules that can correct for signal and cell viability drifts in large-scale fluorescence-based screening assays using regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The toolkit is unique in many ways. Its quality control and bias correction modules can correct for signal and cell viability drifts in large-scale fluorescence-based screening assays using regression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes unique features of compaRe supported by the bias correction results shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "14b482f6-a5ec-4e85-a57f-12300b9de260",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C116",
+      "claim": "The comparison module utilizes a dynamic mass-aware gridding algorithm, which substantially reduces the computing cost and provides robustness to signal shift (batch effect and signal drift).",
+      "claim_type": "EXPLICIT",
+      "source": "Its comparison module utilizes a dynamic mass-aware gridding algorithm, which substantially reduces the computing cost and provides robustness to signal shift (batch effect and signal drift).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking data in Figure 2 showing reduced computing time and robustness to noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "0e6542f3-4605-4963-8412-ae0637a2d4d1",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C117",
+      "claim": "Alternative approaches such as meta-clustering and JSD require both sub-sampling of the data, with the possible loss of valuable subpopulations, and considerably more computing time.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative approaches such as meta-clustering and JSD require both sub-sampling of the data, with the possible loss of valuable subpopulations, and considerably more computing time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking data in Figure 2 showing computing time comparisons and the need for subsampling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "022479a6-7aa1-4a96-a915-e4f416eacdd8",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C118",
+      "claim": "The comparison module effectively circumvented the batch effect while JSD and meta-clustering significantly suffered from it.",
+      "claim_type": "EXPLICIT",
+      "source": "The module effectively circumvented the batch effect while JSD and meta-clustering significantly suffered from it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "bc50d177-c176-4277-999a-78e5c0fac8e3",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C119",
+      "claim": "The poor accuracy of meta-clustering demonstrates the drawback of using cluster centroids for similarity comparison across samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The poor accuracy of meta-clustering demonstrates the drawback of using cluster centroids for similarity comparison across samples while the poor performance of JSD indicates that this approach can work well only in the absence of signal shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the benchmarking results in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "c8c36a95-759d-4582-9b6e-43852f0dfb66",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C120",
+      "claim": "The poor performance of JSD indicates that this approach can work well only in the absence of signal shift.",
+      "claim_type": "EXPLICIT",
+      "source": "The poor accuracy of meta-clustering demonstrates the drawback of using cluster centroids for similarity comparison across samples while the poor performance of JSD indicates that this approach can work well only in the absence of signal shift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the benchmarking results in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a1e1b46d-ce3f-4554-b8a2-4653b4f43d7e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C121",
+      "claim": "compaRe does not need subsampling or dimension reduction of the input data.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of particular note that compaRe does not need subsampling or dimension reduction of the input data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of compaRe's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "9ce64582-0d96-4d78-bb44-2cc626126eec",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C122",
+      "claim": "Multiparameter cytometric analysis of immunophenotypes of AML and MDS patient samples by the comparison module coupled with the EuroFlow AML/MDS antibody panel revealed interpatient heterogeneity and recognizable phenotypic profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiparameter cytometric analysis of immunophenotypes of AML and MDS patient samples by the comparison module coupled with the EuroFlow AML/MDS antibody panel revealed interpatient heterogeneity and recognizable phenotypic profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the patient sample analysis results shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "6fe6f773-0ba2-4855-bb63-5aa1a61829ab",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C123",
+      "claim": "Even though EuroFlow markers are divided into several discrete tubes, compaRe's comparison module can compare the cell population distribution to measure similarities between patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though EuroFlow markers are divided into several discrete tubes, compaRe's comparison module can compare the cell population distribution to measure similarities between patient samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of compaRe demonstrated in the patient sample analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "e4b1873c-61a8-4a6e-9367-55b70ae137de",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C124",
+      "claim": "The quality control and bias correction modules could successfully correct for signal and cell viability drifts in the drug screening studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality control and bias correction modules could successfully correct for signal and cell viability drifts in these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the bias correction data shown in Figure 1 and Appendix 1\u2014figure 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "33f15803-ccad-40db-bad0-c664429a41e7",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C125",
+      "claim": "Signal drift was obviously associated with the order in which wells were read.",
+      "claim_type": "EXPLICIT",
+      "source": "In our explored assays, signal drift was obviously associated with the order in which wells were read.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the quality control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a6dfc609-9673-4691-bd9b-ead5d5c52fab",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C126",
+      "claim": "Signal drift was caused by the time differences in antibody incubation across the plate as the high-throughput flow cytometer requires more than one hour to sample all wells in a 384-well plate.",
+      "claim_type": "EXPLICIT",
+      "source": "It was caused by the time differences in antibody incubation across the plate as the high-throughput flow cytometer requires more than one hour to sample all wells in a 384-well plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of signal drift based on the experimental setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "74a6f19f-de40-424d-b3a4-028802bd562d",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C127",
+      "claim": "For high-density assay plate formats with large numbers of wells, time differences can cause gradual incremental influences in intensity and cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "For high-density assay plate formats with large numbers of wells, this can cause gradual incremental influences in intensity and cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effects of time differences in high-throughput assays.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f134c87e-9e2c-49d9-8902-10bc40918523",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C128",
+      "claim": "When aligning wells along the order that the flow cytometer sampled the wells, a linear trend in MFIs was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when aligning wells along the order that the flow cytometer sampled the wells, we found a linear trend in MFIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the quality control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "5f949eae-09db-4e26-991b-276a84267db2",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C129",
+      "claim": "Regression analysis was used to remove the effect of signal shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "We benefited from regression analysis to remove the effect of signal shifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used for bias correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "dfd58ee4-57ec-4442-a898-32e1c90f987e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C130",
+      "claim": "The compaRe toolkit made it easy to explore and compare highly complex datasets in a substantially reduced timeline.",
+      "claim_type": "EXPLICIT",
+      "source": "During the analyses, the compaRe toolkit made it easy to explore and compare highly complex datasets in a substantially reduced timeline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment based on the authors' experience using compaRe.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b7259935-e7b4-4739-8ebf-bcc2deb0aae9",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C131",
+      "claim": "compaRe is equipped with multithreading and can run through command-line interface on a computer server or GUI on a desktop.",
+      "claim_type": "EXPLICIT",
+      "source": "It is equipped with multithreading and can run through command-line interface on a computer server or GUI on a desktop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical features of the compaRe implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "2808e4b3-3b5b-4193-a503-ccf6ccb3f816",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C132",
+      "claim": "The GUI provides the investigator with numerous interactive visualization tools including cell staining, graphical representation, and gating.",
+      "claim_type": "EXPLICIT",
+      "source": "The GUI provides the investigator with numerous interactive visualization tools including cell staining, graphical representation, and gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes features of the compaRe GUI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "fa45c1a8-b86c-451d-9080-d80dd7fea5c9",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "claim_id": "C133",
+      "claim": "compaRe provides a total package for fast, accurate, and readily interpretable multiparameter screening data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, it provides a total package for fast, accurate, and readily interpretable multiparameter screening data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about compaRe's capabilities supported by the various analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify a gap in analytical tools for multiparameter screening data, arguing that while high-throughput technologies have advanced, automated analysis methods have not kept pace, creating a bottleneck in data interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C11, C20-C21 establish the motivation for developing compaRe by documenting the gap between technological capabilities and analytical tools. These claims are supported by citations to relevant literature and represent a reasonable assessment of the field's state, though the characterization of existing tools as inadequate (C20) is somewhat subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "a9954e04-0d99-483e-8ae5-deb60296e11e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed compaRe, a comprehensive toolkit with modules for quality control, bias correction, similarity calculation using dynamic mass-aware gridding, and clustering via graphical algorithms, designed for multiparameter screening data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C22-C42, C115-C116, C121, C131-C133 describe the architecture and features of compaRe. The toolkit's components are well-documented with methodological details in Figure 1 and the Materials and methods section. The modular design and technical implementation are clearly presented, though some claims about uniqueness (C115) require comparative context provided by benchmarking results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "43126fc5-a79d-4695-8100-f85077ecec80",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "compaRe outperforms existing methods (JSD with UMAP and meta-clustering with PhenoGraph) in robustness to batch effects and computational efficiency, correctly identifying similar samples even with added noise while being 15-90\u00d7 faster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C56, C118-C120 present benchmarking results supported by Figure 2. The simulation approach (adding Gaussian noise) is reasonable, and the performance differences are substantial and clearly documented. However, the benchmarking uses only one dataset (21 samples), and the noise simulation may not capture all real-world batch effect scenarios. The computing time comparisons are direct measurements but depend on implementation details and hardware that could affect generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "4eb4ca46-cb0b-42d0-bec7-b20f51e830a1",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "compaRe can detect phenotypic changes and is sensitive to rare cell populations, as demonstrated by gradual removal of cell populations from high-dimensional datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 are supported by data in Appendix 1\u2014figure 2 showing detection of gradual cell population removal. The experiment demonstrates sensitivity to phenotypic changes, though the claim about rare cell population detection (C58) is somewhat inferential since the 75% reduction scenario is used as a proxy for rarity rather than testing actual rare populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "33eec24a-edcd-4499-8803-897005cf4047",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors provide background on AML/MDS diseases and the EuroFlow antibody panel, noting that the panel's design with markers divided across tubes makes it incompatible with standard clustering methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C67 provide medical and methodological context supported by appropriate citations. The characterization of the EuroFlow panel design limitation (C67) is a reasonable inference about the incompatibility with methods requiring complete multiparameter datasets, setting up the rationale for using compaRe's subspace comparison capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "43362761-288e-4462-a4d2-330c3ff2304e",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "compaRe analysis of AML and MDS patient samples using the EuroFlow panel revealed interpatient heterogeneity, with MDS samples clustering together and AML samples forming three distinct clusters with recognizable phenotypic profiles based on differentiation markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28, C68-C78, C122-C123 describe patient sample analysis supported by Figures 3-4. The clustering results show clear separation between MDS and AML samples, and the phenotypic characterization of the three AML clusters is supported by marker expression data. However, the sample size is modest (25 samples from 25 patients), and the clinical significance of the clustering patterns is not validated against clinical outcomes or established diagnostic criteria.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "f4e48588-0ccb-4035-acd8-e6657e702efb",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In mouse AML drug screening, compaRe identified distinct phenotypic response patterns including MAPK pathway inhibitors causing decreased Gr-1 and increased CD16/CD32, BET inhibitors enriching undifferentiated cells, and drugs with different mechanisms (vincristine, tazemetostat, tretinoin) reducing differentiation marker-negative cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C100 describe mouse AML drug screening results supported by Figure 5 and supplementary data. The identification of response groups and their phenotypic characterization is well-documented. However, some mechanistic interpretations are speculative (C90, C93), and the biological significance of the phenotypic changes requires further validation. The claim that drugs with different mechanisms can cluster together (C100) is supported but represents an expected finding rather than a novel discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "8d82cabc-bcf5-447d-8607-5519e7120e0b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In human AML patient sample drug screening, compaRe detected multiple response groups including signal transduction inhibitors inducing CD34+/CD38+ population expansion, BET/immunomodulatory drugs affecting differentiation markers, and subtle responses to tretinoin and other agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C29-C30, C102-C114 describe human AML drug screening supported by Figure 6 and Appendix 1\u2014figure 29. The identification of distinct response groups is well-documented, and the detection of subtle changes (C113-C114) demonstrates sensitivity. However, this is a single patient sample, severely limiting generalizability. The biological and therapeutic significance of the CD34+/CD38+ population expansion is not established, and some mechanistic interpretations (C110) are inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "b1edec3b-a023-4883-8d80-b8736c8f750c",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "compaRe provides faster and more robust analyses than existing methods, performing well even with uncorrected batch effects and without requiring subsampling or dimension reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C8, C27, C117 summarize compaRe's performance advantages supported by benchmarking data in Figure 2. The speed and robustness advantages are clearly demonstrated, though the generalizability depends on the representativeness of the test datasets and the specific implementations of comparison methods used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "compaRe's quality control and bias correction modules effectively identify and correct signal drift and cell viability drift in high-throughput screening data using regression analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C33, C83, C124-C129 describe bias correction capabilities supported by Figure 1 and Appendix 1\u2014figure 28. The identification of drift sources and correction approach using regression is well-documented. However, the effectiveness claim relies on visual inspection of heatmaps rather than quantitative validation metrics, and the generalizability to other sources of bias is not established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors critique existing methods for multiparameter sample clustering, identifying limitations including information loss from summary statistics, computational cost of meta-clustering, bias from prior knowledge, and information loss from dimension reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 present critiques of existing methods supported by citations and demonstrated through benchmarking (C14, C16). The limitations identified are reasonable and supported by the comparative analysis in Figure 2, though some characterizations (C14, C15) are somewhat subjective and depend on specific use cases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    },
+    {
+      "id": "7a0b16e9-66e7-4353-a313-e49f833c746b",
+      "content_id": "f954b20d-9717-451f-a015-3ab47435ec7f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that compaRe's similarity and clustering modules could be applied to other problem spaces and that drug response analysis in association with genetic alterations could be an application.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43 and C101 are speculative statements about potential applications without supporting evidence. While the modular design (C42) supports the possibility of broader applications, no data or examples are provided to validate these potential uses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:05:24.222771Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64b1c36c-859b-4a1b-b174-107583c6ffbe",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "917116e6-a5c1-4d26-aa3b-ad274ed4630a",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "148265e9-e8cd-4e4a-944a-de948f3d07e4",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "f345c717-faf3-496e-b6e0-e61038c637c7",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "75a3b80e-98ce-4242-8c6b-4166ad558a52",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "33b37a2c-8193-4210-a7ff-5e2a55daba85",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "e5b2d6c6-99e6-4ac1-816b-c27e4eba42d7",
+      "result_id": "b234c42f-ea94-4075-8e9f-b0d10c52a8d1"
+    },
+    {
+      "claim_id": "28eceb70-0bd4-4a07-99fc-ace23a4be8b0",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "6c49b261-330d-47b3-8f85-515c285d9917",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "d50a32ab-ca9d-4c02-8237-e9ad2e8bc4b1",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "b2bdaea0-65aa-4dc3-83d9-31a064d4c1c3",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "9d58f5d9-bf81-48da-8a9b-81035b321e63",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "91f8a4f4-0634-4455-8536-fbfbb9ab2a51",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "7039701d-d208-46cd-b318-8541e2956e97",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "c3b27dcf-0472-44c4-bcea-705430274aa4",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "d5deb82c-1310-47a0-b172-ec68bc885515",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "999c10b9-d38e-42cd-a9fa-454acf2a04ab",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "39959010-da6d-4c84-83b3-ef914f179711",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "c1c04930-a86f-46fd-a319-54473adc33d6",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "5d32e564-abd1-4a85-ad15-6d8ce736924d",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "d0596c3e-abb6-4388-b887-08352ad7fac9",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "4a8b8427-bc34-4b9d-b119-fc60f66b350a",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "ee8b814b-4f2b-4ebc-bade-3d468a6c01d4",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "8de56cfb-8c32-4060-be6a-377c9c1e03d1",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "45e9d635-2b00-41ee-acd4-ad7733885b83",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "524fbe1a-5b47-4c45-b3e0-a1b85f432ae8",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "14b482f6-a5ec-4e85-a57f-12300b9de260",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "a1e1b46d-ce3f-4554-b8a2-4653b4f43d7e",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "b7259935-e7b4-4739-8ebf-bcc2deb0aae9",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "2808e4b3-3b5b-4193-a503-ccf6ccb3f816",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "fa45c1a8-b86c-451d-9080-d80dd7fea5c9",
+      "result_id": "a9954e04-0d99-483e-8ae5-deb60296e11e"
+    },
+    {
+      "claim_id": "9fef65ef-4dcf-4b14-a3ef-10f2c58ca621",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "df0a2dca-4be3-490a-8573-521ca29db15b",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "0a276425-1f9c-4466-a2f9-b8197ae669dc",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "365487a4-6479-47cc-a42e-d558bfd37f20",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "c88d386a-a4bf-4e7a-beca-3998ccafdc20",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "afa93b3b-5eaa-4667-b954-6b1b88f6797c",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "8dfc3f0f-010c-4ef7-94d7-f3c094167920",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "ca1ea250-af14-431a-ad60-0449f2f2d45e",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "cdf43db3-4b72-495f-b965-0f815059f70c",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "0e25d564-b871-4f86-9862-8b163974c42d",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "85f86f96-7331-4b11-bbfa-0a071e18d6d9",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "337bf6b9-ef5c-47fd-9bd1-04dc621a263e",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "be5c22e7-4c8d-4a6a-9dec-e82d38f341df",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "022479a6-7aa1-4a96-a915-e4f416eacdd8",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "bc50d177-c176-4277-999a-78e5c0fac8e3",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "c8c36a95-759d-4582-9b6e-43852f0dfb66",
+      "result_id": "43126fc5-a79d-4695-8100-f85077ecec80"
+    },
+    {
+      "claim_id": "f2701d01-055c-494f-9ced-10b6c12db294",
+      "result_id": "4eb4ca46-cb0b-42d0-bec7-b20f51e830a1"
+    },
+    {
+      "claim_id": "62157779-cf65-405c-b545-7adef2723f5c",
+      "result_id": "4eb4ca46-cb0b-42d0-bec7-b20f51e830a1"
+    },
+    {
+      "claim_id": "db178b45-f3bd-4b25-85a2-09de795e4649",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "145f867a-21f0-4721-bb20-2391d8a4ccce",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "e694f0df-8a23-4b66-a024-9039678f1a6a",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "69df8cea-1823-4ea6-aa26-6d683b4655bd",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "b101e007-0cf0-4d2f-8a40-3608a01ecb8d",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "df5ba9e3-d528-40a2-bab9-8af4d7ff011f",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "2bc016b1-c062-4ec1-a27b-9759ba699c4b",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "1c5f1a63-37e8-4741-92ec-6ca47cd56f30",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "a38175c4-e8a8-4f88-81ab-0493cb6e1704",
+      "result_id": "33eec24a-edcd-4499-8803-897005cf4047"
+    },
+    {
+      "claim_id": "d3ff4451-b057-475d-a201-f4ed735e76d7",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "ad4b4641-ad14-43f9-858e-38e25362d08b",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "8379d765-4d3c-4e14-8179-93f01e374f31",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "a93aa2cc-39c1-44f8-8d87-f76b9f210f0a",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "efd5efb5-9d74-43b5-a333-7f00020bb2d6",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "d2d3d3be-44ae-4139-a869-2975c0e33d7e",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "169feaf1-f567-421a-a137-4994f60fabc0",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "50cbd60d-64c3-4b8e-b53a-4dd86822bdbf",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "8b4f6204-5da7-488c-946b-6db1ed9ab2f4",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "d46ecd16-434c-465b-8428-80aa648159cd",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "16db701c-96d5-4d07-94f7-73f10719d5a3",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "2996480b-b12f-4079-8ae6-ffced132e31c",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "6b7dd682-9882-48fd-ad5b-32b4fbb11351",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "9ce64582-0d96-4d78-bb44-2cc626126eec",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "6fe6f773-0ba2-4855-bb63-5aa1a61829ab",
+      "result_id": "43362761-288e-4462-a4d2-330c3ff2304e"
+    },
+    {
+      "claim_id": "c252ea21-784e-407f-b189-ce4118aa349b",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "a09f5ad1-2809-4b3e-b234-3604a864f0d7",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "3de5d1b7-b17c-42ab-9db7-e4af0f7e13c5",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "b73b361a-5385-4778-a8e1-e6b8a3bace4c",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "d7f3cc09-3b03-4238-906e-8e0121e26670",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "f35a13b5-4c7a-4b91-97f8-f930a0dd7137",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "13d391c4-c44a-42e5-a826-2e8a922fbf82",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "ada2d9b5-fea6-4a92-b3cc-887ce6a8bfb0",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "4b34294c-7db6-4a23-b1ce-19c309bb89d7",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "9bab5a4e-92e8-4bae-8007-e71785397401",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "ee6d563b-5e34-495d-87be-0e64d8ecc558",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "4d155b7b-a359-4966-9c23-f24c752e33ae",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "0c3eea9b-29f6-4e15-90ae-18ab971c6ef8",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "605465cf-e603-44c4-9a4a-6a139228ef0a",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "558ba2ee-3e21-4419-9910-0aeb1e67bdad",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "7b99ee4d-4f52-403a-ad50-1b6179128bbb",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "bd472a83-b95b-4a78-9abe-a1bf17dfc58b",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "e61aa4d6-c01f-45dc-a10c-4f87ccf4db45",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "dfd1614f-79ca-4c5b-8391-5e7467f24f43",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "cb930536-07ba-4aff-83f2-edebbe60fe2c",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "fcdf1683-a100-4b84-bbbd-060d09276129",
+      "result_id": "f4e48588-0ccb-4035-acd8-e6657e702efb"
+    },
+    {
+      "claim_id": "fa749ab9-58ae-43e7-9c24-584440bade7c",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "99cd6cc9-bae7-45f2-af8a-91723dda2d46",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "a161251b-8bef-4bd0-8cc8-e9c29dacdbb6",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "139adbe1-54ca-4412-a539-f69595a60f94",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "3f1fa3fe-b6be-42c1-ae19-29d4f512e899",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "9305a77b-ea57-4035-b461-e635b98e76ba",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "dd51f4ab-7836-4dc4-853d-136aa633b0ab",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "1365dd75-c83d-4a32-a266-dd845b729f6c",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "1e1abfa1-a0d3-48c1-a8aa-14854ca37712",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "87e53f89-249b-4cad-bfb5-8344d323d5c0",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "efd64f9c-bdf8-4fb8-9b4a-097145cbe52c",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "930979f7-e28c-4782-80a6-2fa563ba54ad",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "d1afb7b0-8bfa-4ef0-b398-bb552b635046",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "3e2f65d5-aade-429a-afd1-e19694c75b88",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "26876877-0dc0-4d52-8191-4e6dddb59b15",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "83be85f4-095a-4813-8f21-d4b02bf67d9d",
+      "result_id": "8d82cabc-bcf5-447d-8607-5519e7120e0b"
+    },
+    {
+      "claim_id": "fe23a450-1caa-4bee-bfa5-42dfea5b517d",
+      "result_id": "b1edec3b-a023-4883-8d80-b8736c8f750c"
+    },
+    {
+      "claim_id": "4aeeb85e-045b-4a5e-8cc2-36ddaa954c24",
+      "result_id": "b1edec3b-a023-4883-8d80-b8736c8f750c"
+    },
+    {
+      "claim_id": "8ddaf159-44f2-4ff7-a533-0576acda8903",
+      "result_id": "b1edec3b-a023-4883-8d80-b8736c8f750c"
+    },
+    {
+      "claim_id": "0e6542f3-4605-4963-8412-ae0637a2d4d1",
+      "result_id": "b1edec3b-a023-4883-8d80-b8736c8f750c"
+    },
+    {
+      "claim_id": "d50a32ab-ca9d-4c02-8237-e9ad2e8bc4b1",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "d5deb82c-1310-47a0-b172-ec68bc885515",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "b73b361a-5385-4778-a8e1-e6b8a3bace4c",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "e4b1873c-61a8-4a6e-9367-55b70ae137de",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "33f15803-ccad-40db-bad0-c664429a41e7",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "a6dfc609-9673-4691-bd9b-ead5d5c52fab",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "74a6f19f-de40-424d-b3a4-028802bd562d",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "f134c87e-9e2c-49d9-8902-10bc40918523",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "5f949eae-09db-4e26-991b-276a84267db2",
+      "result_id": "74de7c60-f7b4-4a37-a59f-438ee8b6a8a3"
+    },
+    {
+      "claim_id": "4a76241b-237c-49cf-be0b-f4304f5bde08",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "bae9972e-59ab-4e41-8273-82994225ca3b",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "5bfd77bd-2356-4303-aaab-c41d5ab6c197",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "ed622d96-c05a-4626-97c3-a59b16356af0",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "390620c0-7f7e-4530-aafe-ab66e9b32c16",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "15402df2-d207-4a21-8651-26a775dc98a0",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "8be0ccd5-41c7-4fc0-8ed1-ed3c5bb0d11b",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "6d7b5b56-1000-42d8-af36-c45bad966ce8",
+      "result_id": "0a7679eb-dbfc-4488-a1a0-9ee51473cb47"
+    },
+    {
+      "claim_id": "b1051e14-4e49-4c18-8824-fe15159aac6d",
+      "result_id": "7a0b16e9-66e7-4353-a313-e49f833c746b"
+    },
+    {
+      "claim_id": "f44efcd4-af44-4609-ba04-7976d0609eb2",
+      "result_id": "7a0b16e9-66e7-4353-a313-e49f833c746b"
+    }
+  ],
+  "comparisons": []
+}

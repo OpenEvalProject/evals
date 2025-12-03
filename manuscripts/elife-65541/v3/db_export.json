@@ -1,0 +1,2369 @@
+{
+  "submission": {
+    "id": "5527c6ab-aaa4-4618-9846-8bd744d5e090",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:54:51.117494Z",
+    "updated_at": "2025-12-03T03:54:51.117494Z"
+  },
+  "content": [
+    {
+      "id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "submission_id": "5527c6ab-aaa4-4618-9846-8bd744d5e090",
+      "content_type": "manuscript",
+      "content_text": "# Creating and controlling visual environments using BonVision\n\n## Authors\n\n- Gon\u00e7alo Lopes<sup>1</sup> ([ORCID: 0000-0003-0731-4945](https://orcid.org/0000-0003-0731-4945))\n- Karolina Farrell<sup>2</sup> ([ORCID: 0000-0002-0707-2838](https://orcid.org/0000-0002-0707-2838))\n- Edward AB Horrocks<sup>2</sup> ([ORCID: 0000-0003-4019-5351](https://orcid.org/0000-0003-4019-5351))\n- Chi-Yu Lee<sup>2</sup> ([ORCID: 0000-0001-6440-3050](https://orcid.org/0000-0001-6440-3050))\n- Mai M Morimoto<sup>2</sup> ([ORCID: 0000-0002-9654-3960](https://orcid.org/0000-0002-9654-3960))\n- Tomaso Muzzu<sup>2</sup> ([ORCID: 0000-0002-0018-8416](https://orcid.org/0000-0002-0018-8416))\n- Amalia Papanikolaou<sup>2</sup> ([ORCID: 0000-0002-0048-6560](https://orcid.org/0000-0002-0048-6560))\n- Fabio R Rodrigues<sup>2</sup> ([ORCID: 0000-0002-4848-7167](https://orcid.org/0000-0002-4848-7167))\n- Thomas Wheatcroft<sup>2</sup> ([ORCID: 0000-0001-7990-3744](https://orcid.org/0000-0001-7990-3744))\n- Stefano Zucca<sup>2</sup> ([ORCID: 0000-0002-8891-1225](https://orcid.org/0000-0002-8891-1225))\n- Samuel G Solomon<sup>2</sup> ([ORCID: 0000-0001-5321-0288](https://orcid.org/0000-0001-5321-0288)) \u2020\n- Aman B Saleem<sup>2</sup> ([ORCID: 0000-0002-7100-1954](https://orcid.org/0000-0002-7100-1954)) \u2020\n\n### Affiliations\n\n1. NeuroGEARS Ltd. London United Kingdom\n2. UCL Institute of Behavioural Neuroscience, Department of Experimental Psychology, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nReal-time rendering of closed-loop visual environments is important for next-generation understanding of brain function and behaviour, but is often prohibitively difficult for non-experts to implement and is limited to few laboratories worldwide. We developed BonVision as an easy-to-use open-source software for the display of virtual or augmented reality, as well as standard visual stimuli. BonVision has been tested on humans and mice, and is capable of supporting new experimental designs in other animal models of vision. As the architecture is based on the open-source Bonsai graphical programming language, BonVision benefits from native integration with experimental hardware. BonVision therefore enables easy implementation of closed-loop experiments, including real-time interaction with deep neural networks, and communication with behavioural and physiological measurement and manipulation devices.\n\n## Introduction\n\nUnderstanding behaviour and its underlying neural mechanisms calls for the ability to construct and control environments that immerse animals, including humans, in complex naturalistic environments that are responsive to their actions. Gaming-driven advances in computation and graphical\u00a0rendering have driven the development of immersive closed-loop visual environments, but these new platforms are not readily amenable to traditional research paradigms. For example, they do not specify an image in egocentric units (of visual angle), sacrifice precise control of a visual display, and lack transparent interaction with external hardware.\n\nMost vision research has been performed in non-immersive environments with standard two-dimensional visual stimuli, such as gratings or dot stimuli, using established platforms including PsychToolbox (Brainard, 1997) or PsychoPy (Peirce, 2007; Peirce, 2008). Pioneering efforts to bring gaming-driven advances to neuroscience research have provided new platforms for closed-loop visual stimulus generation: STYTRA (\u0160tih et al., 2019) provides 2D visual stimuli for larval zebrafish in python, ratCAVE (Del Grosso and Sirota, 2019) is a specialised augmented reality system for rodents in python, FreemoVR (Stowers et al., 2017) provides virtual reality in Ubuntu/Linux, and ViRMEn (Aronov and Tank, 2014) provides virtual reality in Matlab. However, these new platforms lack the generalised frameworks needed to specify or present standard visual stimuli.\n\nOur initial motivation was to create a visual display software with three key features. First, an integrated, standardised platform that could rapidly switch between traditional visual stimuli (such as grating patterns) and immersive virtual reality. Second, the ability to replicate experimental workflows across different physical configurations (e.g. when moving from one to two computer monitors, or from flat-screen to spherical projection). Third, the ability for rapid and efficient interfacing with external hardware (needed for experimentation) without needing to develop\u00a0complex multi-threaded routines. We wanted to provide these advances in a way that made it easier for users to construct and run closed-loop experimental designs. In closed-loop experiments, stimuli are ideally conditioned by asynchronous inputs, such as those provided by multiple independent behavioural and neurophysiological measurement devices. Most existing platforms require the development of multi-threaded routines to run experimental paradigms (e.g. control brain stimulation, or sample from recording devices) without compromising the rendering of visual scenes. Implementing such multi-thread routines is complex. We therefore chose to develop a visual presentation framework within the Bonsai programming language (Lopes et al., 2015). Bonsai is a graphical, high-performance, and event-based language that is widely used in neuroscience experiments and is already capable of real-time interfacing with most types of external hardware. Bonsai is specifically designed for flexible and high-performance composition of data streams and external events, and is therefore able to monitor and connect multiple sensor and effector systems in parallel, making it easier to implement closed-loop experimental designs.\n\nWe developed BonVision, an open-source software package that can generate and display well-defined visual stimuli in 2D and 3D environments. BonVision exploits Bonsai\u2019s ability to run OpenGL commands on the graphics card through the Bonsai.Shaders package. BonVision further extends Bonsai by providing pre-built GPU shaders and resources for stimuli used in vision research, including movies, along with an accessible, modular interface for composing stimuli and designing experiments. The definition of stimuli in BonVision is independent of the display hardware, allowing for easy replication of workflows across different experimental configurations. Additional unique features include the ability to automatically detect and define the relationship between the observer and the display from a photograph of the experimental apparatus, and to use the outputs of real-time inference methods to determine the position and pose of an observer online, thereby generating augmented reality environments.\n\n## Results\n\nTo provide a framework that allowed both traditional visual presentation and immersive virtual reality, we needed to bring these very different ways of defining the visual scene into the same architecture. We achieved this by mapping the 2D retino-centric coordinate frame (i.e. degrees of the visual field) to the surface of a 3D sphere using the Mercator projection (Figure 1A, Figure 1\u2014figure supplement 1). The resulting sphere could therefore be rendered onto displays in the same way as any other 3D environment. We then used \u2018cube mapping\u2019 to specify the 360\u00b0 projection of 3D environments onto arbitrary viewpoints around an experimental observer (human or animal; Figure 1B). Using this process, a display device becomes a window into the virtual environment, where each pixel on the display specifies a vector from the observer through that window. The vector links pixels on the display to pixels in the \u2018cube map\u2019, thereby rendering the corresponding portion of the visual field onto the display.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Illustration of how two-dimensional textures are generated in BonVision using Mercator projection for sphere mapping, with elevation as latitude and azimuth as longitude. The red dot indicates the position of the observer. (B) Three-dimensional objects were placed at the appropriate positions and the visual environment was rendered using cube-mapping.\u00a0(C\u2013E) Examples of the same two stimuli, a checkerboard\u00a0+\u00a0grating (middle row) or four three-dimensional objects (bottom row), displayed in different experimental configurations (top row): two angled LCD monitors (C), a head-mounted display (D), and demi-spherical dome (E).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Checkerboard stimulus being rendered. (B) Projection of the stimulus onto a sphere using Mercator projection. (C) Example display positions (dA\u2013dF) and (D) corresponding rendered images. Red dot in C indicates the observer position.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Description of the modules in BonVision workflows that generate stimuli. Every BonVision stimuli includes a module that creates and initialises the render window, shown in \u2018BonVision window and resources\u2019. This defines the window parameters in Create Window (such as background colour, screen index, VSync), and loads predefined (BonVision Resources) and user defined textures (Texture Resources, not shown), and 3D meshes (Mesh Resources). This is followed by the modules: \u2018Drawing region\u2019, where the visual space covered by the stimuli is defined, which can be the complete visual space, 360\u00b0 \u00d7 360\u00b0. \u2018Draw stimuli\u2019 and \u2018Define scene\u2019 are where the stimulus is defined, \u2018Map Stimuli\u2019, which maps the stimuli into the 3D environment, and \u2018Define display\u2019, where the display devices are defined. (B\u00a0and\u00a0C) Modules that define the checkerboard\u00a0+grating stimulus (B) shown in the middle row of Figure 1 and 3D world (C) with five objects shown in the bottom row of Figure 1. The display device is defined separately and either display can be appended at the end of the workflow. This separation of the display device allows for replication between experimental configurations. (D) The variants of the modules used to display stimuli on a head-mounted display. The empty region under \u2018Define scene\u2019 would be filled by the corresponding nodes in B and C.\n\nOur approach has the advantage that the visual stimulus is defined irrespectively of display hardware, allowing us to independently define each experimental apparatus without changing the preceding specification of the visual scene, or the experimental design (Figure 1C\u2013E, Figure 1\u2014figure supplements 1 and 2). Consequently, BonVision makes it easy to replicate visual environments and experimental designs on various display devices, including multiple monitors, curved projection surfaces, and head-mounted displays (Figure 1C\u2013E). To facilitate easy and rapid porting between different experimental apparatus, BonVision features a fast semi-automated display calibration. A photograph of the experimental setup with fiducial markers (Garrido-Jurado et al., 2014) measures the 3D position and orientation of each display relative to the observer (Figure 2 and Figure 2\u2014figure supplement 1). BonVision\u2019s inbuilt image processing algorithms then estimate the position and orientation of each marker to fully specify the display environment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0Schematic showing the position of two hypothetical displays of different sizes, at different distances and orientation relative to the observer (red dot). (B) How a checkerboard of the same visual angle would appear on each of the two displays. (C) Example of automatic calibration of display position. Standard markers are presented on the display, or in the environment, to allow automated detection of the position and orientation of both the display and the observer. These positions and orientations are indicated by the superimposed red cubes as calculated by BonVision. (D) How the checkerboard would appear on the display when rendered, taking into account the precise position of the display. (E\u00a0and\u00a0F)\u00a0Same as (C\u00a0and\u00a0D), but for another pair of display and observer positions. The automated calibration was based on the images shown in C and E.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The automated calibration is carried out by taking advantage of ArUco markers (Del Grosso and Sirota, 2019) that can be used to calculate the 3D position of a surface. (Ai) We use one marker on the display and one placed in the position of the observer. We then use a picture of the display and observer position taken by a calibrated camera. This is an example where we used a mobile phone camera for calibration. (Aii) The detected 3D positions of the screen and the observer, as calculated by BonVision. (Aiii) A checkerboard image and a small superimposed patch of grating, rendered based on the precise position of the display. (B\u00a0and\u00a0C) same as A\u00a0and\u00a0C for different screen and observer positions: with the screen tilted towards the animal (B), or the observer shifted to the right of the screen (C). The automated calibration was based on the images shown in Ai, Bi,\u00a0and Ci, which in this case were taken using a mobile phone camera.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** BonVision monitored a photodiode (Photodiode v2.1, https://www.cf-hw.org/harp/behavior) through a HARP microprocessor to measure the light output of the monitor (Dell Latitude 7480). The red, green, and blue channels of the display were sent the same values (i.e. grey scale). (A) Gamma calibration. The input to the display channels was modulated by a linear ramp (range 0\u2013255). Without calibration the monitor output (arbitrary units) increased exponentially (blue line). The measurement was then used to construct an intermediate look-up table that corrected the values sent to the display. Following calibration, the display intensity is close to linear (red line). Inset at top: schematic of the experimental configuration. (B) Similar to A, but showing the intensity profile of a drifting sinusoidal grating. Measurements before calibration resemble an exponentiated sinusoid (blue dotted line). Measurements after calibration resemble a regular sinusoid (red dotted line).\n\nVirtual reality environments are easy to generate in BonVision. BonVision has a library of standard pre-defined 3D structures (including planes, spheres, and cubes), and environments can be defined by specifying the position and scale of the structures, and the textures rendered on them (e.g. Figure 1\u2014figure supplement 2 and Figure 5F). BonVision also has the ability to import standard format 3D design files created elsewhere in order to generate more complex environments (file formats listed in Materials\u00a0and\u00a0methods). This allows users to leverage existing 3D drawing platforms (including open source platform \u2018Blender\u2019: https://www.blender.org/) to construct complex virtual scenes (see Appendix\u00a01).\n\nBonVision can define the relationship between the display and the observer in real-time. This makes it easy to generate augmented reality environments, where what is rendered on a display depends on the position of an observer (Figure 3A). For example, when a mouse navigates through an arena surrounded by displays, BonVision enables closed-loop, position-dependent updating of those displays. Bonsai can track markers to determine the position of the observer, but it also has turn-key capacity for real-time live pose estimation techniques \u2013 using deep neural networks (Mathis et al., 2018; Pereira et al., 2019;\u00a0Kane et al., 2020) \u2013 to keep track of the observer\u2019s movements. This allows users to generate and present interactive visual environments (simulation in Figure 3\u2014video 1 and Figure 3B\u00a0and\u00a0C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0Illustration of how the image on a fixed display needs to adapt as an observer (red dot) moves around an environment. The displays simulate windows from a box into a virtual world outside. (B) The virtual scene (from: http://scmapdb.com/wad:skybox-skies) that was used to generate the example images and Figure 3\u2014video 1 offline. (C) Real-time simulation of scene rendering in augmented reality. We show two snapshots of the simulated scene rendering, which is also shown in Figure 3\u2014video 1. In each case the inset image shows the actual video images, of a mouse exploring an arena, that were used to determine the viewpoint of an observer in the simulation. The mouse\u2019s head position was inferred (at a rate of 40 frames/s) by a network trained using DeepLabCut (Aronov and Tank, 2014). The top image shows an instance when the animal was on the left of the arena (head position indicated by the red dot in the main panel) and the lower image shows an instance when it was on the right of the arena.\n\nBonVision is capable of rendering visual environments near the limits of the hardware (Figure 4). This is possible because Bonsai is based on a just-in-time compiler architecture such that there is little computational overhead. BonVision accumulates a list of the commands to OpenGL as the programme makes them. To optimise rendering performance, the priority of these commands is ordered according to that defined in the Shaders component of the LoadResources node (which the user can manipulate for high-performance environments). These ordered calls are then executed when the frame is rendered. To benchmark the responsiveness of BonVision in closed-loop experiments, we measured the delay (latency) between an external event and the presentation of a visual stimulus. We first measured the closed-loop latency for BonVision when a monitor was refreshed at a rate of 60 Hz (Figure 4A). We found delays averaged 2.11\u00a0\u00b1\u00a00.78 frames (35.26\u00a0\u00b1\u00a013.07 ms). This latency was slightly shorter than that achieved by PsychToolbox (Brainard, 1997) on the same laptop (2.44\u00a0\u00b1\u00a00.59 frames, 40.73\u00a0\u00b1\u00a09.8 ms; Welch\u2019s t-test, p<10\u221280, n\u00a0=\u00a01000). The overall latency of BonVision was mainly constrained by the refresh rate of the display device, such that higher frame rate displays yielded lower latency (60 Hz: 35.26\u00a0\u00b1\u00a013.07 ms; 90 Hz: 28.45\u00a0\u00b1\u00a07.22 ms; 144 Hz: 18.49\u00a0\u00b1\u00a010.1 ms; Figure 4A). That is, the number of frames between the external event and stimulus presentation was similar across frame rate (60 Hz: 2.11\u00a0\u00b1\u00a00.78 frames; 90 Hz: 2.56\u00a0\u00b1\u00a00.65 frames; 144 Hz: 2.66\u00a0\u00b1\u00a01.45 frames; Figure 4C). We used two additional methods to benchmark visual display performance relative to other frameworks (we did not try to optimise code fragments for each framework) (Figure 4B\u00a0and\u00a0C). BonVision was able to render up to 576 independent elements and up to eight overlapping textures at 60 Hz without missing (\u2018dropping\u2019) frames, broadly matching PsychoPy (Peirce, 2007; Peirce, 2008) and Psychtoolbox (Brainard, 1997). BonVision\u2019s performance was similar at different frame rates \u2013 at standard frame rate (60 Hz) and at 144 Hz (Figure 4\u2014figure supplement 1). BonVision achieved slightly fewer overlapping textures than PsychoPy, as BonVision does not currently have the option to trade-off the resolution of a texture and its mask for performance. BonVision also supports video playback, either by preloading the video or by streaming it from the disk. The streaming mode, which utilises real-time file I/O and decompression, is capable of displaying both standard definition (SD: 480 p) and full HD (HD: 1080 p) at 60 Hz on a standard computer (Figure 4D). At higher rates, performance is impaired for Full HD videos, but is improved by buffering, and fully restored by preloading the video onto memory (Figure 4D). We benchmarked BonVision on a standard Windows OS laptop, but BonVision is now also capable of running on Linux.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Latency between sending a command (virtual key press) and updating the display (measured using a photodiode). (A.i and\u00a0A.ii) Latency depended on the frame rate of the display, updating stimuli with a delay of one\u00a0to\u00a0three frames. (A.iii and\u00a0A.iv). (B\u00a0and\u00a0C) Benchmarked performance of BonVision with respect to Psychtoolbox and PsychoPy. (B) When using non-overlapping textures BonVision and Psychtoolbox could present 576 independent textures without dropping frames, while PsychoPy could present 16. (C) When using overlapping textures PsychoPy could present 16 textures, while BonVision and Psychtoolbox could present eight textures without dropping frames. (D) Benchmarks for movie playback. BonVision is capable of displaying standard definition (480 p) and high definition (1080 p) movies at 60 frames/s on a laptop computer with a standard CPU and graphics card. We measured display rate when fully pre-loading the movie into memory (blue), or when streaming from disk (with no buffer: orange; 1-frame buffer: green; 2-frame buffer: red; 4-frame buffer: purple). When asked to display at rates higher than the monitor refresh rate (>60 frames/s), the 480 p video played at the maximum frame rate of 60fps in all conditions, while the 1080 p video reached the maximum rate when pre-loaded. Using a buffer slightly improved performance. A black square at the bottom right of the screen in A\u2013C is the position of a flickering rectangle, which switches between black and white at every screen refresh. The luminance in this square is detected by a photodiode and used to measure the actual frame flip times.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0When using non-overlapping textures BonVision was able to render 576 independent textures without dropping frames at 60 Hz. At 144 Hz BonVision was able to 256 non-overlapping textures, with no dropped frames, and seldom dropped frames with 576 textures. BonVision was unable to render 1024 or more textures at the requested frame rate. (B)\u00a0When using overlapping textures BonVision was able to render 64 independent textures without dropping frames at 60 Hz. At 144 Hz BonVision was able to render 32 textures, with no dropped frames. Note that these tests were performed on a computer with better hardware specification than that used in Figure 4, which led to improved performance on the benchmarks at 60 Hz. A black square at the bottom right of the screen in A\u00a0and\u00a0B is the position of a flickering rectangle, which switches between black and white at every screen refresh. The luminance in this square is detected by a photodiode and used to measure the actual frame flip times.\n\nTo confirm that the rendering speed and timing accuracy of BonVision are sufficient to support neurophysiological experiments, which need high timing precision, we mapped the receptive fields of neurons early in the visual pathway (Yeh et al., 2009), in the mouse primary visual cortex and superior colliculus. The stimulus (\u2018sparse noise\u2019) consisted of small black or white squares briefly (0.1 s) presented at random locations (Figure 5A). This stimulus, which is commonly used to measure receptive fields of visual neurons, is sensitive to the timing accuracy of the visual stimulus, meaning that errors in timing would prevent the identification of receptive fields. In our experiments using BonVision, we were able to recover receptive fields from electrophysiological measurements - both in the superior colliculus and primary visual cortex of awake mice (Figure 5B\u00a0and\u00a0C) \u2013 demonstrating that BonVision meets the timing requirements for visual neurophysiology. The receptive fields show in Figure 5C were generated using timing signals obtained directly from the stimulus display (via a photodiode). BonVision\u2019s independent logging of stimulus presentation timing was also sufficient to capture the receptive field (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0Sparse noise stimulus, generated with BonVision, is rendered onto a demi-spherical screen. (B\u00a0and\u00a0C) Receptive field maps from recordings of local field potential in the superior colliculus (B), and spiking activity in the primary visual cortex (C) of mouse. (D) Two cubes were presented at different depths in a virtual environment through a head-mounted display to human subjects. Subjects had to report which cube was larger: left or right. (E) Subjects predominantly reported the larger object correctly, with a slight bias to report that the object in front was bigger. (F) BonVision was used to generate a closed-loop virtual platform that a mouse could explore (top: schematic of platform). Mice naturally tended to run faster along the platform, and in later sessions developed a speed profile, where they slowed down as they approached the end of the platform (virtual cliff). (G) The speed of the animal at the start of the platform and at the end of the platform as a function training. (H) BonVision was used to present visual stimuli overhead while an animal was free to explore an environment (which included a refuge). The stimulus was a small dot (5\u00b0 diameter) moving across the projected surface over several seconds. (I) The cumulative probability of Freeze and Flight behaviour across time in response to moving dot presented overhead.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65541/elife-65541-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top row in each case shows the receptive field identified using the timing information provided by a photodiode that monitored a small square on the stimulus display that was obscured from the animal.\u00a0Bottom row in each case shows the receptive field identified by using the timing logged by BonVision during the stimulus presentation (a separate timing system was used to align the clocks between the computer hosting BonVision and the Open EPhys recording device). (A) Average OFF and ON receptive field maps for 33 simultaneously recorded units in a single recording session. (B) Individual OFF receptive field maps for three representative units in the same session.\n\nTo assess the ability of BonVision to control virtual reality environments we first tested its ability to present stimuli to human observers on a head-mounted display (Scarfe and Glennerster, 2015). BonVision uses positional information (obtained from the head-mounted display) to update the view of the world that needs to be provided to each eye, and returns two appropriately rendered images. On each trial, we asked observers to identify the larger of two non-overlapping cubes that were placed at different virtual depths (Figure 5D\u00a0and\u00a0E). The display was updated in closed-loop to allow observers to alter their viewpoint by moving their head. Distinguishing objects of the same retinal size required observers to use depth-dependent cues (Rolland et al., 1995), and we found that all observers were able to identify which cube was larger (Figure 5E).\n\nWe next asked if BonVision was capable of supporting other visual display environments that are increasingly common in the study of animal behaviour. We first projected a simple environment onto a dome that surrounded a head-fixed mouse (as shown in Figure 1E). The mouse was free to run on a treadmill, and the treadmill\u2019s movements were used to update the mouse\u2019s position on a virtual platform (Figure 5F). Not only did mouse locomotion speed increase with repeated exposure, but the animals modulated their speed depending on their location in the platform (Figure 5F\u00a0and\u00a0G). BonVision is therefore capable of generating virtual reality environments which both elicit and are responsive to animal behaviour. BonVision was also able to produce instinctive avoidance behaviours in freely\u00a0moving mice (Figure 5H\u00a0and\u00a0I). We displayed a small black dot slowly sweeping across the overhead visual field. Visual stimuli presented in BonVision primarily elicited a freezing response, which similar experiments have previously described (De Franceschi et al., 2016;\u00a0Figure 5I). Together these results show that BonVision provides sufficient rendering performance to support human and animal visual behaviour.\n\n## Discussion\n\nBonVision is a single software package to support experimental designs that require visual display, including virtual and augmented reality environments. BonVision is easy and fast to implement, cross-platform and open source, providing versatility and reproducibility.\n\nBonVision makes it easier to address several barriers to reproducibility in visual experiments. First, BonVision is able to replicate and deliver visual stimuli on very different experimental apparatus. This is possible because BonVision\u2019s architecture separates specification of the display and the visual environment. Second, BonVision includes a library of workflows and operators to standardise and ease the construction of new stimuli and virtual environments. For example, it has established protocols for defining display positions (Figure 3), mesh-mapping of curved displays (Figure 1E), and automatic linearisation of display luminance (Figure 4), as well as a library of examples for experiments commonly used in visual neuroscience. In addition, the modular structure of BonVision enables the development and exchange of custom nodes for generating new visual stimuli or functionality without the need to construct the complete experimental paradigm. Third, BonVision is based on Bonsai (Lopes et al., 2015), which has a large user base and an active developer community, and is now a standard tool for open-source neuroscience research. BonVision naturally integrates Bonsai\u2019s established packages in the multiple domains important for modern neuroscience, which are widely used in applications including real-time video processing (Zacarias et al., 2018; Buccino et al., 2018), optogenetics (Zacarias et al., 2018; Buccino et al., 2018; Moreira et al., 2019), fibre photometry (Soares et al., 2016; Hrvatin et al., 2020), electrophysiology (including specific packages for Open Ephys Siegle et al., 2017; Neto et al., 2016 and high-density silicon probes Jun et al., 2017; Dimitriadis, 2018), and calcium imaging (e.g. UCLA miniscope Aharoni et al., 2019; Cai et al., 2016). Bonsai requires researchers to get accustomed to its graphical interface and event-based framework. However, it subsequently reduces the time required to learn real-time programming, and the time to build new interfaces with external devices (see Appendix\u00a01). Moreover, since Bonsai workflows can be called via the command line, BonVision can also be integrated into pre-existing, specialised frameworks in established laboratories.\n\nIn summary, BonVision can generate complex 3D environments and retinotopically defined 2D visual stimuli within the same framework. Existing platforms used for vision research, including PsychToolbox (Brainard, 1997), PsychoPy (Peirce, 2007; Peirce, 2008), STYTRA (\u0160tih et al., 2019), or RigBox (Bhagat et al., 2020), focus on well-defined 2D stimuli. Similarly, gaming-driven software, including FreemoVR (Stowers et al., 2017), ratCAVE (Del Grosso and Sirota, 2019), and ViRMEn (Aronov and Tank, 2014), are oriented towards generating virtual reality environments. BonVision combines the advantages of both these approaches in a single framework\u00a0(Appendix\u00a01), while bringing the unique capacity to automatically calibrate the display environment, and use deep neural networks to provide real-time control of virtual environments. Experiments in BonVision can be rapidly prototyped and easily replicated across different display configurations. Being free, open-source, and portable, BonVision is a state-of-the-art tool for visual display that is accessible to the wider community.\n\n## Materials and methods\n\n### Benchmarking\n\nWe performed benchmarking to measure latencies and skipped (\u2018dropped\u2019) frames. For benchmarks at 60 Hz refresh rate, we used a standard laptop with the following configuration: Dell Latitude 7480, Intel Core i7-6600U Processor Base with Integrated HD Graphics 520 (Dual Core, 2.6 GHz), 16 GB RAM. For higher refresh rates we used a gaming laptop ASUS ROG Zephyrus GX501GI, with an Intel Core i7-8750H (six cores, 2.20 GHz), 16 GB RAM, equipped with a NVIDIA GeForce GTX 1080. The gaming laptop's built-in display refreshes at 144 Hz, and for measuring latencies at 90 Hz we connected it to a Vive Pro SteamVR head-mounted display (90 Hz refresh rate). All tests were run on Windows 10 Pro 64-bit.\n\nTo measure the time from input detection to display update, as well as dropped frames detection, we used open-source HARP devices from Champalimaud Research Scientific Hardware Platform, using the Bonsai.HARP package. Specifically we used the HARP Behavior device (a lost latency DAQ; https://www.cf-hw.org/harp/behavior), to synchronise all measurements with the extensions: \u2018Photodiode v2.1\u2019 to measure the change of the stimulus on the screen, and \u2018Mice poke simple v1.2\u2019 as the nose poke device to externally trigger changes. To filter out the infrared noise generated from an internal LED sensor inside the Vive Pro HMD, we positioned an infrared cut-off filter between the internal headset optics and the photodiode. Typically, the minimal latency for any update is two frames: one which is needed for the VSync, and one is the delay introduced by the OS. Display hardware can add further delays if they include additional buffering. Benchmarks for video playback were carried out using a trailer from the Durian Open Movie Project ( copyright Blender Foundation | durian.blender.org).\n\nAll benchmark programmes and data are available at https://github.com/bonvision/benchmarks.\n\n### File formats\n\nWe tested the display of images and videos using the image and video benchmark workflows. We confirmed the ability to use the following image formats: PNG, JPG, BMP, TIFF,\u00a0and GIF. Movie display relies on the FFmpeg library (https://ffmpeg.org/), an industry standard, and we confirmed ability to use the following containers: AVI, MP4, OGG, OGV, and WMV; in conjunction with standard codecs: H264, MPEG4, MPEG2, DIVX. Importing 3D models and complex scenes relies on the Open Asset Importer Library (Assimp | http://assimp.org/). We confirmed the ability to import and render 3D models and scenes from the following formats: OBJ, Blender.\n\n### Animal experiments\n\nAll experiments were performed in accordance with the Animals (Scientific Procedures) Act 1986 (United Kingdom) and Home Office (United Kingdom) approved project and personal licenses. The experiments were approved by the University College London Animal Welfare Ethical Review Board under Project License 70/8637. The mice (C57BL6 wild-type) were group-housed with a maximum of five to a cage, under a 12 hr light/dark cycle. All behavioural and electrophysiological recordings were carried out during the dark phase of the cycle.\n\n### Innate defensive behaviour\n\nMice (five male, C57BL6, 8 weeks old) were placed in a 40 cm square arena. A dark refuge placed outside the arena could be accessed through a 10 cm door in one wall. A DLP projector (Optoma GT760) illuminated a screen 35 cm above the arena with a grey background (80 candela/m2). When the mouse was near the centre of the arena, a 2.5 cm black dot appeared on one side of the projection screen and translated smoothly to the opposite side over 3.3 s. Ten trials were conducted over 5 days and the animal was allowed to explore the environment for 5\u201310 min before the onset of each trial.\n\nMouse movements were recorded with a near infrared camera (Blackfly S, BFS-U3-13Y3M-C, sampling rate: 60 Hz) positioned over the arena. An infrared LED was used to align video and stimulus. Freezing was defined as a drop in the animal speed below 2 cm/s that lasted more than 0.1 s; flight responses as an increase in the animal running speed above 40 cm/s\u00a0(De Franceschi et al., 2016). Responses were only considered if they occurred within 3.5 s from stimulus onset.\n\n### Surgery\n\nMice were implanted with a custom-built stainless-steel metal plate on the skull under isoflurane anaesthesia. A\u00a0~1 mm craniotomy was performed either over the primary visual cortex (2 mm lateral and 0.5 mm anterior from lambda) or superior colliculus (0.5 mm lateral and 0.2 mm anterior from lambda). Mice were allowed to recover for 4\u201324 hr before the first recording session.\n\nWe used a virtual reality apparatus similar to those used in previous studies (Schmidt-Hieber and H\u00e4usser, 2013; Muzzu et al., 2018). Briefly, mice were head-fixed above a polystyrene wheel with a radius of 10 cm. Mice were positioned in the geometric centre of a truncated spherical screen onto which we projected the visual stimulus. The visual stimulus was centred at\u00a0+60\u00b0 azimuth and\u00a0+30\u00b0 elevation and had a span of 120\u00b0 azimuth and 120\u00b0 elevation.\n\n### Virtual reality behaviour\n\nFive male, 8-week-old, C57BL6 mice were used for this experiment. One week after the surgery, mice were placed on a treadmill and habituated to the virtual reality (VR) environment by progressively increasing the number of time spent head fixed: from\u00a0~15 min to 2 hr. Mice spontaneously ran on the treadmill, moving through the VR in absence of reward. The VR environment was a 100 cm long platform with a patterned texture that animals ran over for multiple trials. Each trial started with an animal at the start of the platform and ended when it reached the end, or if 60 s had elapsed. At the end of a trial, there was a 2 s grey interval before the start of the next trial.\n\n### Neural recordings\n\nTo record neural activity, we used multi-electrode array probes with two shanks and 32 channels (ASSY-37 E-1, Cambridge Neurotech Ltd., Cambridge, UK). Electrophysiology data was acquired with an Open Ephys acquisition board connected to a different computer from that used to generate the visual stimulus.\n\nThe electrophysiological data from each session was processed using Kilosort 1\u00a0or\u00a0Kilosort\u00a02 (Pachitariu et al., 2016). We synchronised spike times with behavioural data by aligning the signal of a photodiode that detected the visual stimuli transitions (PDA25K2, Thorlabs, Inc, USA). We sampled the firing rate at 60 Hz, and then smoothed it with a 300 ms Gaussian filter. We calculated receptive fields as the average firing rate or local field potential elicited by the appearance of a stimulus in each location (custom routines in MATLAB).\n\n### Augmented reality for mice\n\nThe mouse behaviour videos were acquired by Bruno Cruz from the lab of Joe Paton at the Champalimaud Centre for the Unknown, using methods similar to Soares et al., 2016. A ResNet-50 network was trained using DeepLabCut (Mathis et al., 2018;\u00a0Kane et al., 2020). We simulated a visual environment in which a virtual scene was presented beyond the arena, and updated the scenes on three walls of the arena. This simulated how the view changed as the animal moved through the environment. The position of the animal was updated from the video file at a rate of 40 frames/s on a gaming laptop: ASUS ROG Zephyrus GX501GI, with an Intel Core i7-8750H (six cores, 2.20 GHz), 16 GB RAM, equipped with a NVIDIA GeForce GTX 1080, using a 512 \u00d7 512 video. The performance can be improved using a lower pixel resolution for video capture, and we were able to achieve up to 80 frames/s without a\u00a0noticeable decrease in tracking accuracy using this strategy. Further enhancements can be achieved using a MobileNetV2 network\u00a0(Kane et al., 2020). The position inference from the deep neural network and the BonVision visual stimulus rendering were run on the same machine.\n\n### Human psychophysics\n\nAll procedures were approved by the Experimental Psychology Ethics Committee at University College London (Ethics Application EP/2019/002). We obtained informed consent and consent to publish from all participants. Four male participants were tested for this experiment. The experiments were run on a gaming laptop (described above) connected to a Vive Pro SteamVR head-mounted display (90 Hz refresh rate). BonVision is compatible with different headsets (e.g. Oculus Rift, HTC Vive). BonVision receives the projection matrix (perspective projection of world display) and the view matrix (position of eye in the world) for each eye from the head set. BonVision uses these matrices to generate two textures, one for the left eye and one for the right eye. Standard onboard computations on the headset provide additional non-linear transformations that account for the relationship between the eye and the display (such as lens distortion effects).\n\n### Code availability\n\nBonVision is an open-source software package available to use under the MIT license. It can be downloaded through the Bonsai (bonsai-rx.org) package manager, and the source code is available at: github.com/bonvision/BonVision. All benchmark programmes and data are available at https://github.com/bonvision/benchmarks (copy archived at swh:1:rev:7205c04aa8fcba1075e9c9991ac117bd25e92639, Lopes, 2021). Installation instructions, demos, and learning tools are available at: bonvision.github.io/.\n",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "da4ab90b-6656-44b3-8431-401c0ff708ee",
+      "submission_id": "5527c6ab-aaa4-4618-9846-8bd744d5e090",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris I Baker, National Institute of Mental Health, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65541.sa1](https://doi.org/10.7554/eLife.65541.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nIncreasingly, neuroscience experiments require immersive virtual environments that approximate natural sensory motor loops while permitting high-bandwidth measurements of brain activity. BonVision is an open-source graphics programming library that allows experimenters to quickly implement immersive 3D visual environments across display hardware and geometry with automated calibration and integration with hundreds of different neural recording technologies, behavioral apparatuses, etc. BonVision standardizes sharing complex, closed-loop visual tasks between labs with vastly different equipment and provides a concrete and easy way to do so.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Creating and controlling visual environments using BonVision\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Chris Baker as the Senior and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jonathan P Newman (Reviewer #1); Andr\u00e9 Maia Chagas (Reviewer #2); Sue Ann Koay (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\nIn general, the reviewers were very positive about the manuscript and appreciated the time and effort taken both to develop BonVision and write this manuscript. The major concerns reflect a desire from the reviewers to see more detail on specific points as well as clarification over some of the statements made.\n\nIn your revision please address the specific recommendations below.\n\nReviewer #1 (Recommendations for the authors):\n\nGeneral comment: There are two measures of performance that are not explored in the manuscript but may aid in describing BonVision's advantages over alternative software. The first is the improved performance and ease of use compared to alternatives in cases where the input used to drive visual stimuli consists of mixtures of asynchronous data sources (e.g. ephys and behavioral measurements together). This is something I imagine BonVision could do with less effort and greater computational efficiency than alternative software. The animal experiments provided are good benchmarks because they are common designs, but do not demonstrate BonVision's immense potential for easily creating visual tasks with complex IO and stimulus contingencies. The second is a measure of human effort required to implement an experiment using BonVision compared to imperative, text-based alternatives. I think both of these issues could be tackled in the discussion by expanding a bit on Lines 144-146: why are BonVision and Bonsai so good at data stream composition compared to alternatives, and why is a visual programming approach so appropriate for Bonsai/BonVision's target use cases?\n\nGeneral comment: Following up on my desire for a more detailed explanation of the operation of the Bonsai.Shaders library, most of its operators have obvious relations to traditional OpenGL programming operations. However, an explanation of how the traditionally global state machine (context) of OpenGL was mapped onto the Bonsai.Shaders nodes and how temporal order of OpenGL context option manipulation is enforced might be helpful for those wishing to understand the underlying mechanics of BonVision and create their own tools using the Shaders library.\n\nLine 11: The use of the word \"timing\" is ambiguous to me. Are the authors referring to closed loop reaction times and determinism, hardware IO delays, the combination of samples from asynchronous data streams, or all of the above?\n\nLines 13 and 22: The authors correctly state that graphics programming requires advanced training. However, the use of Bonsai, a functional language that operates entirely on Observable Sequences, also requires quite a lot of training to use effectively. I do think the authors have a point here, and I agree Bonsai is tool worth learning, but I feel the main strength of using Bonsai is its (broadly defined) performance (speed, elegance when dealing with asynchronous data, ease and formality of experiment sharing, ease of rapid prototyping, etc) rather than its learning curve. This point is exacerbated by the lack of documentation (outside of the source code) for many Bonsai features.\n\nLine 64: Adding a parenthetical link to the Blender website seems appropriate.\n\nLine 97: The model species should be stated here.\n\nFigure 4(C): There is a single instance of BonVision being outperformed by PsychoPy3 in the case of 16-layer texture blending at 60 FPS. Can the authors comment on why this might be (e.g. PsychoPy3's poor performance at low layer counts is due to some memory bottleneck?) and why this matters (or does not matter) practically in the context of BonVision's target uses?\n\nFigure 4(A-C): The cartoons of display screens have little black boxes in the lower right corners and I'm not sure what they mean.\n\nFigure 5(A): As mentioned previously, it seems that these are post-hoc temporally aligned receptive fields (RFs). Is it worth seeing what the RFs created without post-hoc photodiode-based alignment of stimuli onset look like so that we can see the effect of display presentation jitter (or lack thereof)? This would be a nice indication of the utility of the package for real-time stimulus shaping for system ID purposes where ground truth alignment might not be possible. This is made more relevant given BonVision's apparent larger latency jitter compared to PsychToolbox (Figure 4A).\n\nFigure 5(D): Although useful, the size discrimination task probably does not cover all potential corner cases with this type of projection. I don't think more experiments need to be performed but a more thorough theoretical comparison with other methods, e.g. sphere mapping, might be useful to motivate the choice of cube mapping for rendering 3D objects, perhaps in the discussion.\n\nFigure 5(I): The caption refers to the speed of the animal on the ordinate axis but that figure seems to display a psychometric curve for freezing or running behaviors over time from stimulus presentation.\n\nLine 293 and 319-322: HARP is a small enough project that I feel some explanation of the project's intentions and capabilities and the Bonsai library used to acquire it from HARP hardware might be useful.\n\nLine 384: \"OpenEphys\" should be changed to \"Open Ephys\" in the text and in reference 13 used to cite the Acquisition Board's use.\n\nReviewer #2 (Recommendations for the authors):\n\n\u2013 Figures 1, 2, 3 and Supp1 \u2013 the indication of the observer in these figures is sometimes a black, and sometimes a red dot. This is not bad, but I think you could streamline your figures if on the first one you had a legend for what represents the observer (ie observer = red dot) and have the same pattern through the figures?\n\n\u2013 Figure 2 \u2013 If I understand correctly, in panels C and E, the markers are read by an external camera, which I am supposing in this case are the laptop camera? If this is the case, could you please change these panels so that they explicitly show where the cameras are? Maybe adding the first top left panel from supp Figure 3 to Figure 2 and indicate from where the markers are read would solve this?\n\n\u2013 Figure 5 \u2013 Panel I: the legend states \"The speed of the animal across different trials, aligned to the time of stimulus appearance.\" but the figure Y axis states Cumulative probability. I guess the legend needs updating? Also it is not clear to me how the cumulative probabilities of freeze and flight can sum up to more than one, as it seems to be the case from the figure? I am assuming that an animal either freezes of flees in this test? Maybe I missed something?\n\n\u2013 In the results, lines 40 to 42, the authors describe how they have managed to have a single framework for both traditional visual presentation and immersive virtual reality. Namely they project 2D coordinate frame to a 3D sphere using Mercator projection. I would like to ask the authors to explain a bit how they deal with the distortions present in this type of projection. As far as I understand, this type of projection inflates the size of objects that are further away from the sphere midline (with increased intensity the further away)? Is this compensated for in the framework somehow? Would it make sense to offer users the option to choose different projections depending on their application?\n\n\u2013 In line 62 \"BonVision also has the ability to import standard format 3D design files\" could the authors specify which file formats are accepted?\n\n\u2013 When benchmarking BonVision (starting on line 73), the authors focus on 60Hz stimulus presentation using monitors with different capabilities. This is great, as it addresses main points for human, non-human primates and rodent experiments. I believe however that it would be great for the paper and the community in general if the authors could do some benchmarking with higher frame rates and contextualize BonVision for the use with other animal models, such as Fly, fish, etc. Given that there are a couple of papers describing visual stimulators that take care of the different wavelengths needed to stimulate the visual system of these animals, it seems to me that BonVision would be a great tool to create stimuli and environments for these stimulators and animal models.\n\nReviewer #3 (Recommendations for the authors):\n\nI have a few presentation style points where I feel the text should be more careful not to come across as unintendedly too strong, or otherwise justification need to be provided to substantiate the claims. Most importantly, line 19 \"the ability for rapid and efficient interfacing with external hardware (needed for experimentation) without development of complex multi-threaded routines\" is a bit mysterious to me because I am unsure what these external hardware are that BonVision facilitates interfacing with. For example, experimenters do prefer multi-threaded routines where the other threads are used to trigger reward delivery, sensory stimuli of other modalities, or control neural stimulation or recording devices. This is in order to avoid blocking execution of the visual display software when these other functions are called. If BonVision provides a solution for these kinds of experiment interfacing requirements, I think they are definitely important enough to mention in the text. Otherwise, the sentence of line 19 needs some work in order to make it clear as to exactly which functionalities of BonVision are being referred to.\n\nThe other claims that stood out to me are as follows. In the abstract it is said that \"Real-time rendering\u2026 necessary for next-generation\u2026\", but I don't know if anybody can actually claim that any one method is necessary. In line 116, \"suggesting habituation to the virtual environment\", the authors can also acknowledge that mice might simply be habituating to the rig (e.g. even if there was no visual display), since this does not seem to be a major claim that needs to be made. The virtual cliff effect (line 118) also seems very interesting, but the authors have not fully demonstrated that mice are not alternatively responding to a change in floor texture. It is also unclear to me why a gray floor (which looks to be equiluminant with the rest of the textured floor at least by guessing from Figure 5F) should be visually identified as a cliff, as opposed to, say, black. In order to make this claim about visual cliff identification especially without binocular vision, the authors would probably have to show experiments where the mice do not slow down at other floor changes (to white maybe?), but I'm unsure as to whether the data exists for this nor whether it is worth the effort. Overall I don't see a reason why the authors should attempt to claim that \"BonVision is capable of eliciting naturalistic behaviors in a virtual environment\", since the naturalness of rodent behaviors in virtual environments is a topic of debate in some circles, independent of the software used to generate those environments. I figure it's better to stay away unless this is a fight that one desires to fight.\n",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "664da6c2-7f76-4b17-9d1c-9889ab0021cb",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C1",
+      "claim": "BonVision is an open-source software package for the display of virtual or augmented reality, as well as standard visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed BonVision as an easy-to-use open-source software for the display of virtual or augmented reality, as well as standard visual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of what was developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c14b04f7-c25b-455d-8cf3-0cd933be566a",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C2",
+      "claim": "BonVision has been tested on humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision has been tested on humans and mice, and is capable of supporting new experimental designs in other animal models of vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that testing was performed on these species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6bce4d38-623f-4763-84e4-162768ec5585",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C3",
+      "claim": "BonVision is based on the open-source Bonsai graphical programming language.",
+      "claim_type": "EXPLICIT",
+      "source": "As the architecture is based on the open-source Bonsai graphical programming language, BonVision benefits from native integration with experimental hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the architectural foundation of BonVision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6a514d06-80bf-49f2-8376-c6f4b294639d",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C4",
+      "claim": "BonVision enables easy implementation of closed-loop experiments, including real-time interaction with deep neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision therefore enables easy implementation of closed-loop experiments, including real-time interaction with deep neural networks, and communication with behavioural and physiological measurement and manipulation devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This capability is explicitly stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6a17ec24-a422-4b70-89bf-a07defb9490e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C5",
+      "claim": "Gaming-driven advances in computation and graphical rendering have driven the development of immersive closed-loop visual environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaming-driven advances in computation and graphical rendering have driven the development of immersive closed-loop visual environments, but these new platforms are not readily amenable to traditional research paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background context in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "eb4bdffc-1b8c-4025-bad5-c6c01b2a45ef",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C6",
+      "claim": "Gaming-driven platforms do not specify an image in egocentric units (of visual angle).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, they do not specify an image in egocentric units (of visual angle), sacrifice precise control of a visual display, and lack transparent interaction with external hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of gaming platforms in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "aa3bf27c-e19d-40f1-9e71-ad1f0e6b3db3",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C7",
+      "claim": "Most vision research has been performed in non-immersive environments with standard two-dimensional visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Most vision research has been performed in non-immersive environments with standard two-dimensional visual stimuli, such as gratings or dot stimuli, using established platforms including PsychToolbox (Brainard, 1997) or PsychoPy (Peirce, 2007; Peirce, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background context with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "bea407ff-a69f-464b-9cbd-922ba208d63b",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C8",
+      "claim": "STYTRA provides 2D visual stimuli for larval zebrafish in python.",
+      "claim_type": "EXPLICIT",
+      "source": "STYTRA (\u0160tih et al., 2019) provides 2D visual stimuli for larval zebrafish in python",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the STYTRA paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "3c7ab7b7-24a8-4dde-be52-2aafa8b5180d",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C9",
+      "claim": "ratCAVE is a specialised augmented reality system for rodents in python.",
+      "claim_type": "EXPLICIT",
+      "source": "ratCAVE (Del Grosso and Sirota, 2019) is a specialised augmented reality system for rodents in python",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the ratCAVE paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "2a26bb92-f3a3-44b4-bf94-883fb572b977",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C10",
+      "claim": "FreemoVR provides virtual reality in Ubuntu/Linux.",
+      "claim_type": "EXPLICIT",
+      "source": "FreemoVR (Stowers et al., 2017) provides virtual reality in Ubuntu/Linux",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the FreemoVR paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c193bc38-4b56-40dc-8769-0abc3aff4040",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C11",
+      "claim": "ViRMEn provides virtual reality in Matlab.",
+      "claim_type": "EXPLICIT",
+      "source": "ViRMEn (Aronov and Tank, 2014) provides virtual reality in Matlab",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to the ViRMEn paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "ea87a08c-d43d-4c61-bf89-c5304c4cfefb",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C12",
+      "claim": "New platforms for closed-loop visual stimulus generation lack the generalised frameworks needed to specify or present standard visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these new platforms lack the generalised frameworks needed to specify or present standard visual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing platforms in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "d608b607-72ba-42aa-8e03-b498d2b7fe58",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C13",
+      "claim": "BonVision exploits Bonsai's ability to run OpenGL commands on the graphics card through the Bonsai.Shaders package.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision exploits Bonsai's ability to run OpenGL commands on the graphics card through the Bonsai.Shaders package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical implementation detail in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "29cbcef4-3dab-44f3-bd7e-bffc367f065c",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C14",
+      "claim": "BonVision provides pre-built GPU shaders and resources for stimuli used in vision research.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision further extends Bonsai by providing pre-built GPU shaders and resources for stimuli used in vision research, including movies, along with an accessible, modular interface for composing stimuli and designing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of BonVision in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "d782fc73-29e1-4436-9b5d-f5a7faa9ee81",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C15",
+      "claim": "The definition of stimuli in BonVision is independent of the display hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "The definition of stimuli in BonVision is independent of the display hardware, allowing for easy replication of workflows across different experimental configurations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key feature of BonVision in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "b1fa0350-681c-4d0a-b132-11da6b220f7a",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C16",
+      "claim": "BonVision can automatically detect and define the relationship between the observer and the display from a photograph of the experimental apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional unique features include the ability to automatically detect and define the relationship between the observer and the display from a photograph of the experimental apparatus, and to use the outputs of real-time inference methods to determine the position and pose of an observer online, thereby generating augmented reality environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a unique feature in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "5e9fbcaf-4b10-4737-803c-e5c7031cc91f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C17",
+      "claim": "BonVision maps the 2D retino-centric coordinate frame to the surface of a 3D sphere using the Mercator projection.",
+      "claim_type": "EXPLICIT",
+      "source": "We achieved this by mapping the 2D retino-centric coordinate frame (i.e. degrees of the visual field) to the surface of a 3D sphere using the Mercator projection (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "f47c2d8e-85fc-4f88-99e4-c716ee81ce98",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C18",
+      "claim": "BonVision uses 'cube mapping' to specify the 360\u00b0 projection of 3D environments onto arbitrary viewpoints around an experimental observer.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used 'cube mapping' to specify the 360\u00b0 projection of 3D environments onto arbitrary viewpoints around an experimental observer (human or animal; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "8987c2c6-3551-4670-969a-8a96e02086fa",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C19",
+      "claim": "BonVision makes it easy to replicate visual environments and experimental designs on various display devices, including multiple monitors, curved projection surfaces, and head-mounted displays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, BonVision makes it easy to replicate visual environments and experimental designs on various display devices, including multiple monitors, curved projection surfaces, and head-mounted displays (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and demonstrated in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "ef6bc650-2c8a-424f-9e47-0f2d898ee0ed",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C20",
+      "claim": "BonVision features a fast semi-automated display calibration using a photograph of the experimental setup with fiducial markers.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate easy and rapid porting between different experimental apparatus, BonVision features a fast semi-automated display calibration. A photograph of the experimental setup with fiducial markers (Garrido-Jurado et al., 2014) measures the 3D position and orientation of each display relative to the observer (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with a citation and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "40e31ac4-476d-48a8-8655-2385599a2e1c",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C21",
+      "claim": "BonVision's inbuilt image processing algorithms estimate the position and orientation of each marker to fully specify the display environment.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision's inbuilt image processing algorithms then estimate the position and orientation of each marker to fully specify the display environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical capability in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a3395490-80ad-47b3-87e6-123a82c23418",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C22",
+      "claim": "BonVision has a library of standard pre-defined 3D structures including planes, spheres, and cubes.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision has a library of standard pre-defined 3D structures (including planes, spheres, and cubes), and environments can be defined by specifying the position and scale of the structures, and the textures rendered on them (e.g. Figure 1\u2014figure supplement 2 and Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "41860d63-baa5-41e9-98ed-c2afec7fd206",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C23",
+      "claim": "BonVision has the ability to import standard format 3D design files created elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision also has the ability to import standard format 3D design files created elsewhere in order to generate more complex environments (file formats listed in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "59e0e587-5c9b-4882-9a66-4930dbaeb685",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C24",
+      "claim": "BonVision can define the relationship between the display and the observer in real-time.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision can define the relationship between the display and the observer in real-time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "9eb5694c-319a-435d-aa2d-0aa5ce184c03",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C25",
+      "claim": "BonVision enables closed-loop, position-dependent updating of displays when a mouse navigates through an arena surrounded by displays.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when a mouse navigates through an arena surrounded by displays, BonVision enables closed-loop, position-dependent updating of those displays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example application in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "778b2e9f-04c6-4d33-980a-087274f9c681",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C26",
+      "claim": "Bonsai has turn-key capacity for real-time live pose estimation techniques using deep neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Bonsai can track markers to determine the position of the observer, but it also has turn-key capacity for real-time live pose estimation techniques \u2013 using deep neural networks (Mathis et al., 2018; Pereira et al., 2019; Kane et al., 2020) \u2013 to keep track of the observer's movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to relevant papers in the Results section.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "67c86829-c1ca-4623-9aa8-e4066a33202c",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C27",
+      "claim": "BonVision is capable of rendering visual environments near the limits of the hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision is capable of rendering visual environments near the limits of the hardware (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a513e4c0-2485-4901-9a67-83408ce5225e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C28",
+      "claim": "Bonsai is based on a just-in-time compiler architecture such that there is little computational overhead.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possible because Bonsai is based on a just-in-time compiler architecture such that there is little computational overhead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for performance in the Results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "eab8ea01-d9a7-449a-a31e-a7e6ed10e661",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C29",
+      "claim": "BonVision's closed-loop latency averaged 2.11 \u00b1 0.78 frames (35.26 \u00b1 13.07 ms) when a monitor was refreshed at 60 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We found delays averaged 2.11 \u00b1 0.78 frames (35.26 \u00b1 13.07 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measured result reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "f24540be-0467-49dc-ba72-efc7d234d680",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C30",
+      "claim": "BonVision's latency was slightly shorter than that achieved by PsychToolbox on the same laptop.",
+      "claim_type": "EXPLICIT",
+      "source": "This latency was slightly shorter than that achieved by PsychToolbox (Brainard, 1997) on the same laptop (2.44 \u00b1 0.59 frames, 40.73 \u00b1 9.8 ms; Welch's t-test, p<10\u221280, n = 1000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative result with statistical testing reported in the Results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "e9c538a7-65cb-4685-8993-07b6612bff32",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C31",
+      "claim": "Higher frame rate displays yielded lower latency in BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall latency of BonVision was mainly constrained by the refresh rate of the display device, such that higher frame rate displays yielded lower latency (60 Hz: 35.26 \u00b1 13.07 ms; 90 Hz: 28.45 \u00b1 7.22 ms; 144 Hz: 18.49 \u00b1 10.1 ms; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result reported in the Results section and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "83a7420a-b270-4bfe-8281-0e3623e574f1",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C32",
+      "claim": "BonVision was able to render up to 576 independent elements at 60 Hz without missing frames.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision was able to render up to 576 independent elements and up to eight overlapping textures at 60 Hz without missing ('dropping') frames, broadly matching PsychoPy (Peirce, 2007; Peirce, 2008) and Psychtoolbox (Brainard, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a benchmarking result reported in the Results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0e21cfd6-3d48-4322-b5e4-8b2af97c1925",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C33",
+      "claim": "BonVision was able to render up to eight overlapping textures at 60 Hz without missing frames.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision was able to render up to 576 independent elements and up to eight overlapping textures at 60 Hz without missing ('dropping') frames, broadly matching PsychoPy (Peirce, 2007; Peirce, 2008) and Psychtoolbox (Brainard, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a benchmarking result reported in the Results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "771fd4b5-8318-4121-9b23-9c63063097b6",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C34",
+      "claim": "BonVision supports video playback, either by preloading the video or by streaming it from the disk.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision also supports video playback, either by preloading the video or by streaming it from the disk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "162ba29f-e2ef-46c9-9652-23538ddce2bd",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C35",
+      "claim": "BonVision's streaming mode is capable of displaying both standard definition (SD: 480 p) and full HD (HD: 1080 p) at 60 Hz on a standard computer.",
+      "claim_type": "EXPLICIT",
+      "source": "The streaming mode, which utilises real-time file I/O and decompression, is capable of displaying both standard definition (SD: 480 p) and full HD (HD: 1080 p) at 60 Hz on a standard computer (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a performance result reported in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c65716d2-b879-43e6-85bd-075e3a8339f6",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C36",
+      "claim": "BonVision is capable of running on Linux.",
+      "claim_type": "EXPLICIT",
+      "source": "We benchmarked BonVision on a standard Windows OS laptop, but BonVision is now also capable of running on Linux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "733df11a-2111-410e-a8db-11f178b07493",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C37",
+      "claim": "BonVision's rendering speed and timing accuracy are sufficient to support neurophysiological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the rendering speed and timing accuracy of BonVision are sufficient to support neurophysiological experiments, which need high timing precision, we mapped the receptive fields of neurons early in the visual pathway (Yeh et al., 2009), in the mouse primary visual cortex and superior colliculus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from experimental validation in the Results section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a67632b3-5764-47bb-b071-135f55635bba",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C38",
+      "claim": "Receptive fields were recovered from electrophysiological measurements in the superior colliculus and primary visual cortex of awake mice using BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments using BonVision, we were able to recover receptive fields from electrophysiological measurements - both in the superior colliculus and primary visual cortex of awake mice (Figure 5B and C) \u2013 demonstrating that BonVision meets the timing requirements for visual neurophysiology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result reported in the Results section and shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "2ced34ab-faff-4455-ba68-0cc4f6310792",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C39",
+      "claim": "BonVision's independent logging of stimulus presentation timing was sufficient to capture the receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision's independent logging of stimulus presentation timing was also sufficient to capture the receptive field (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a validation result in the Results section with reference to a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "f6ac03ac-ca44-422d-921a-aead1db870b2",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C40",
+      "claim": "All human observers were able to identify which cube was larger in the virtual reality depth perception task using BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinguishing objects of the same retinal size required observers to use depth-dependent cues (Rolland et al., 1995), and we found that all observers were able to identify which cube was larger (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result reported in the Results section with a citation and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "4a6e16e6-a240-4334-a06e-5df1bfb1f261",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C41",
+      "claim": "Mouse locomotion speed increased with repeated exposure to the virtual platform in BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did mouse locomotion speed increase with repeated exposure, but the animals modulated their speed depending on their location in the platform (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result reported in the Results section and shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c7667864-1de6-4946-9220-6ae2ef77440c",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C42",
+      "claim": "Mice modulated their speed depending on their location in the virtual platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did mouse locomotion speed increase with repeated exposure, but the animals modulated their speed depending on their location in the platform (Figure 5F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result reported in the Results section and shown in Figure 5F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "1f2bd150-dc67-4319-94fd-f53b27a24d42",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C43",
+      "claim": "Visual stimuli presented in BonVision primarily elicited a freezing response in freely moving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual stimuli presented in BonVision primarily elicited a freezing response, which similar experiments have previously described (De Franceschi et al., 2016; Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result reported in the Results section with a citation and shown in Figure 5I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "48d83d2f-c186-44f0-ae10-b8f705f6f0c2",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C44",
+      "claim": "BonVision provides sufficient rendering performance to support human and animal visual behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these results show that BonVision provides sufficient rendering performance to support human and animal visual behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "ec05f731-9d13-4f2b-8c5a-255f809ff9e8",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C45",
+      "claim": "BonVision is a single software package to support experimental designs that require visual display, including virtual and augmented reality environments.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision is a single software package to support experimental designs that require visual display, including virtual and augmented reality environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "fddaaeca-5105-42eb-91b4-dadf63bd7819",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C46",
+      "claim": "BonVision is easy and fast to implement, cross-platform and open source.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision is easy and fast to implement, cross-platform and open source, providing versatility and reproducibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of features in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "9dd63551-a9c1-4d58-bbb6-bb3d6cd74155",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C47",
+      "claim": "BonVision's architecture separates specification of the display and the visual environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is possible because BonVision's architecture separates specification of the display and the visual environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an architectural feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "68611e67-5d6c-451f-a4f5-4e4e86feaea7",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C48",
+      "claim": "BonVision includes a library of workflows and operators to standardise and ease the construction of new stimuli and virtual environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, BonVision includes a library of workflows and operators to standardise and ease the construction of new stimuli and virtual environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "1757b86c-3e8d-4a68-97ce-aefdc7c50e75",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C49",
+      "claim": "The modular structure of BonVision enables the development and exchange of custom nodes for generating new visual stimuli or functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the modular structure of BonVision enables the development and exchange of custom nodes for generating new visual stimuli or functionality without the need to construct the complete experimental paradigm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "adba32b9-ad8b-4ba2-ba95-9375b546adea",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C50",
+      "claim": "Bonsai has a large user base and an active developer community.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, BonVision is based on Bonsai (Lopes et al., 2015), which has a large user base and an active developer community, and is now a standard tool for open-source neuroscience research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation in the Discussion section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "f655e770-cca5-476e-82ad-80c249bde981",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C51",
+      "claim": "Bonsai is now a standard tool for open-source neuroscience research.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, BonVision is based on Bonsai (Lopes et al., 2015), which has a large user base and an active developer community, and is now a standard tool for open-source neuroscience research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation in the Discussion section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "4b13f4eb-b634-4441-a9f5-4f3860a5e3f3",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C52",
+      "claim": "Bonsai is widely used in applications including real-time video processing.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision naturally integrates Bonsai's established packages in the multiple domains important for modern neuroscience, which are widely used in applications including real-time video processing (Zacarias et al., 2018; Buccino et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "5f34c5b5-b43d-48f5-b36d-7e7bc7f494aa",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C53",
+      "claim": "Bonsai is widely used in optogenetics applications.",
+      "claim_type": "EXPLICIT",
+      "source": "optogenetics (Zacarias et al., 2018; Buccino et al., 2018; Moreira et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "01ce2b2a-606e-43a4-ab5a-1ab44c283de8",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C54",
+      "claim": "Bonsai is widely used in fibre photometry applications.",
+      "claim_type": "EXPLICIT",
+      "source": "fibre photometry (Soares et al., 2016; Hrvatin et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "fec27282-91c3-46d2-85d2-424fe927eb82",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C55",
+      "claim": "Bonsai is widely used in electrophysiology applications.",
+      "claim_type": "EXPLICIT",
+      "source": "electrophysiology (including specific packages for Open Ephys Siegle et al., 2017; Neto et al., 2016 and high-density silicon probes Jun et al., 2017; Dimitriadis, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "646fb0f6-401e-41b0-9956-fba1489f56a9",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C56",
+      "claim": "Bonsai is widely used in calcium imaging applications.",
+      "claim_type": "EXPLICIT",
+      "source": "calcium imaging (e.g. UCLA miniscope Aharoni et al., 2019; Cai et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "1cb63131-8164-4957-8894-c77a2fcdc536",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C57",
+      "claim": "Bonsai workflows can be called via the command line.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since Bonsai workflows can be called via the command line, BonVision can also be integrated into pre-existing, specialised frameworks in established laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0372c099-d96e-4100-97cf-e3ec29243442",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C58",
+      "claim": "BonVision can generate complex 3D environments and retinotopically defined 2D visual stimuli within the same framework.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, BonVision can generate complex 3D environments and retinotopically defined 2D visual stimuli within the same framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "4f4ad4db-0260-4e70-9b93-408c0e28aae2",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C59",
+      "claim": "Existing platforms used for vision research, including PsychToolbox, PsychoPy, STYTRA, or RigBox, focus on well-defined 2D stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing platforms used for vision research, including PsychToolbox (Brainard, 1997), PsychoPy (Peirce, 2007; Peirce, 2008), STYTRA (\u0160tih et al., 2019), or RigBox (Bhagat et al., 2020), focus on well-defined 2D stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "dabb877d-6549-4e5b-8cbc-46f5259ff378",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C60",
+      "claim": "Gaming-driven software, including FreemoVR, ratCAVE, and ViRMEn, are oriented towards generating virtual reality environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, gaming-driven software, including FreemoVR (Stowers et al., 2017), ratCAVE (Del Grosso and Sirota, 2019), and ViRMEn (Aronov and Tank, 2014), are oriented towards generating virtual reality environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations in the Discussion section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "fc9af396-6949-46cb-b7d0-cf40bddd72a2",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C61",
+      "claim": "BonVision brings the unique capacity to automatically calibrate the display environment.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision combines the advantages of both these approaches in a single framework (Appendix 1), while bringing the unique capacity to automatically calibrate the display environment, and use deep neural networks to provide real-time control of virtual environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a unique feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "18c7b8b6-0d19-4497-bd09-5aa63b052161",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C62",
+      "claim": "BonVision can use deep neural networks to provide real-time control of virtual environments.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision combines the advantages of both these approaches in a single framework (Appendix 1), while bringing the unique capacity to automatically calibrate the display environment, and use deep neural networks to provide real-time control of virtual environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a unique feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "48b0212d-dfe6-46e0-bdd4-5b455ea40057",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C63",
+      "claim": "Experiments in BonVision can be rapidly prototyped and easily replicated across different display configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in BonVision can be rapidly prototyped and easily replicated across different display configurations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "d698b303-cc2c-4e9e-a12f-0444f4d0d1fe",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C64",
+      "claim": "BonVision is free, open-source, and portable.",
+      "claim_type": "EXPLICIT",
+      "source": "Being free, open-source, and portable, BonVision is a state-of-the-art tool for visual display that is accessible to the wider community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "8a753145-6a0c-4199-a49b-30157ff84f83",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C65",
+      "claim": "All animal experiments were performed in accordance with the Animals (Scientific Procedures) Act 1986 (United Kingdom).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in accordance with the Animals (Scientific Procedures) Act 1986 (United Kingdom) and Home Office (United Kingdom) approved project and personal licenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "63ea945f-5094-4ebb-9f71-d83db2044848",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C66",
+      "claim": "The experiments were approved by the University College London Animal Welfare Ethical Review Board under Project License 70/8637.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were approved by the University College London Animal Welfare Ethical Review Board under Project License 70/8637.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "801cff42-9fec-4f2f-92d0-32bbc45b3216",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C67",
+      "claim": "The mice used were C57BL6 wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The mice (C57BL6 wild-type) were group-housed with a maximum of five to a cage, under a 12 hr light/dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "81801c52-301d-4c3f-a16c-9d7eb4dea8bf",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C68",
+      "claim": "All behavioural and electrophysiological recordings were carried out during the dark phase of the cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All behavioural and electrophysiological recordings were carried out during the dark phase of the cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c1ed9cca-885f-4265-a19e-7199341c109b",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C69",
+      "claim": "Freezing was defined as a drop in the animal speed below 2 cm/s that lasted more than 0.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Freezing was defined as a drop in the animal speed below 2 cm/s that lasted more than 0.1 s; flight responses as an increase in the animal running speed above 40 cm/s (De Franceschi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological definition in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "184d7e3a-23ea-4b5d-9472-61f933382c78",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C70",
+      "claim": "Flight responses were defined as an increase in the animal running speed above 40 cm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Freezing was defined as a drop in the animal speed below 2 cm/s that lasted more than 0.1 s; flight responses as an increase in the animal running speed above 40 cm/s (De Franceschi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological definition in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "eb77f9cb-bd9a-4c7b-8773-6a55ed5970f1",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C71",
+      "claim": "Multi-electrode array probes with two shanks and 32 channels were used to record neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To record neural activity, we used multi-electrode array probes with two shanks and 32 channels (ASSY-37 E-1, Cambridge Neurotech Ltd., Cambridge, UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "db624e3e-b0ac-4a17-a619-07eda8f93aa3",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C72",
+      "claim": "Electrophysiology data was acquired with an Open Ephys acquisition board connected to a different computer from that used to generate the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiology data was acquired with an Open Ephys acquisition board connected to a different computer from that used to generate the visual stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "19302b51-148f-4a35-8ed6-f4be8504297b",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C73",
+      "claim": "The electrophysiological data from each session was processed using Kilosort 1 or Kilosort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrophysiological data from each session was processed using Kilosort 1 or Kilosort 2 (Pachitariu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with a citation in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "09987949-a872-4c49-9417-2e4a90a5003b",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C74",
+      "claim": "A ResNet-50 network was trained using DeepLabCut for mouse tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "A ResNet-50 network was trained using DeepLabCut (Mathis et al., 2018; Kane et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail with citations in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "22c3871b-23ee-4b1a-a3b2-2757d96bf9b7",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C75",
+      "claim": "The position of the animal was updated from the video file at a rate of 40 frames/s on a gaming laptop.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the animal was updated from the video file at a rate of 40 frames/s on a gaming laptop: ASUS ROG Zephyrus GX501GI, with an Intel Core i7-8750H (six cores, 2.20 GHz), 16 GB RAM, equipped with a NVIDIA GeForce GTX 1080, using a 512 \u00d7 512 video.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "07eb35fc-8518-4bbc-8aa0-fcc95deb5f81",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C76",
+      "claim": "BonVision is compatible with different headsets including Oculus Rift and HTC Vive.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision is compatible with different headsets (e.g. Oculus Rift, HTC Vive).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a compatibility feature in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "3ac1159f-dac7-4f1b-8cf7-5d246a4ff742",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C77",
+      "claim": "BonVision receives the projection matrix and the view matrix for each eye from the head set.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision receives the projection matrix (perspective projection of world display) and the view matrix (position of eye in the world) for each eye from the head set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "37eab235-6631-45bf-b5a7-d99136ec14ee",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C78",
+      "claim": "BonVision uses matrices from the headset to generate two textures, one for the left eye and one for the right eye.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision uses these matrices to generate two textures, one for the left eye and one for the right eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "ed68027b-60c0-44d2-baa7-f53554af92da",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C79",
+      "claim": "BonVision is available under the MIT license.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision is an open-source software package available to use under the MIT license.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "25b99bdf-2431-455a-8fff-fe9b4ad39c1f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C80",
+      "claim": "BonVision can be downloaded through the Bonsai package manager.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be downloaded through the Bonsai (bonsai-rx.org) package manager, and the source code is available at: github.com/bonvision/BonVision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0869c606-0729-4ebb-865c-9aa5b792a718",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C81",
+      "claim": "BonVision source code is available at github.com/bonvision/BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be downloaded through the Bonsai (bonsai-rx.org) package manager, and the source code is available at: github.com/bonvision/BonVision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "e3f0e973-9a6a-4690-8349-8a419324a364",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C82",
+      "claim": "BonVision supports the following image formats: PNG, JPG, BMP, TIFF, and GIF.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the ability to use the following image formats: PNG, JPG, BMP, TIFF, and GIF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a tested capability in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "af8fe32d-1eeb-48d8-85c6-011193f1d543",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C83",
+      "claim": "Movie display in BonVision relies on the FFmpeg library.",
+      "claim_type": "EXPLICIT",
+      "source": "Movie display relies on the FFmpeg library (https://ffmpeg.org/), an industry standard",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c25a06d0-7624-440b-a8e7-05ea1fae2ea3",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C84",
+      "claim": "BonVision supports the following movie containers: AVI, MP4, OGG, OGV, and WMV.",
+      "claim_type": "EXPLICIT",
+      "source": "we confirmed ability to use the following containers: AVI, MP4, OGG, OGV, and WMV",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a tested capability in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "397cee55-ace8-4410-a644-b8b357df6c66",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C85",
+      "claim": "BonVision supports the following codecs: H264, MPEG4, MPEG2, DIVX.",
+      "claim_type": "EXPLICIT",
+      "source": "in conjunction with standard codecs: H264, MPEG4, MPEG2, DIVX",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a tested capability in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "623c2880-d3c5-4439-ab36-a1938fe4974f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C86",
+      "claim": "Importing 3D models and complex scenes in BonVision relies on the Open Asset Importer Library (Assimp).",
+      "claim_type": "EXPLICIT",
+      "source": "Importing 3D models and complex scenes relies on the Open Asset Importer Library (Assimp | http://assimp.org/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "333734fc-e923-439e-b28e-14a5d7faa8b8",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C87",
+      "claim": "BonVision can import and render 3D models and scenes from the following formats: OBJ, Blender.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the ability to import and render 3D models and scenes from the following formats: OBJ, Blender.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a tested capability in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "5baa39e4-98f3-4a5c-88a4-a8406940bc33",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C88",
+      "claim": "BonVision maps 2D stimuli onto a sphere to unify 2D and 3D visual presentation.",
+      "claim_type": "IMPLICIT",
+      "source": "We achieved this by mapping the 2D retino-centric coordinate frame (i.e. degrees of the visual field) to the surface of a 3D sphere using the Mercator projection (Figure 1A, Figure 1\u2014figure supplement 1). The resulting sphere could therefore be rendered onto displays in the same way as any other 3D environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the description of the technical approach to unifying 2D and 3D presentation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "cf4e19bb-6c20-40e3-9abc-03cfdbc9f346",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C89",
+      "claim": "The number of frames between external event and stimulus presentation was similar across different frame rates in BonVision.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the number of frames between the external event and stimulus presentation was similar across frame rate (60 Hz: 2.11 \u00b1 0.78 frames; 90 Hz: 2.56 \u00b1 0.65 frames; 144 Hz: 2.66 \u00b1 1.45 frames; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measured result reported in the Results section and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "945df2f9-1336-4b1e-abc3-97401738c586",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C90",
+      "claim": "BonVision achieved slightly fewer overlapping textures than PsychoPy because BonVision does not currently have the option to trade-off the resolution of a texture and its mask for performance.",
+      "claim_type": "EXPLICIT",
+      "source": "BonVision achieved slightly fewer overlapping textures than PsychoPy, as BonVision does not currently have the option to trade-off the resolution of a texture and its mask for performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for a performance difference in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c74e0f6c-fba1-4137-85cf-fc4ffd845f5e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C91",
+      "claim": "At higher rates, performance for Full HD videos is impaired, but is improved by buffering, and fully restored by preloading the video onto memory.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher rates, performance is impaired for Full HD videos, but is improved by buffering, and fully restored by preloading the video onto memory (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a performance result reported in the Results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "f65a35e3-5e04-49d2-9e93-a91eafb94e82",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C92",
+      "claim": "The sparse noise stimulus is sensitive to the timing accuracy of the visual stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus, which is commonly used to measure receptive fields of visual neurons, is sensitive to the timing accuracy of the visual stimulus, meaning that errors in timing would prevent the identification of receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a property of the stimulus in the Results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "067ab547-a160-4e52-bea7-a035ba6ab253",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C93",
+      "claim": "Errors in timing would prevent the identification of receptive fields using sparse noise stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus, which is commonly used to measure receptive fields of visual neurons, is sensitive to the timing accuracy of the visual stimulus, meaning that errors in timing would prevent the identification of receptive fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of timing errors in the Results section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "86e88c97-3677-4bfb-af07-45fdc4afde9a",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C94",
+      "claim": "Bonsai requires researchers to get accustomed to its graphical interface and event-based framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Bonsai requires researchers to get accustomed to its graphical interface and event-based framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a learning requirement in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "9dd88433-8585-491f-bb9c-9374440b01c9",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C95",
+      "claim": "Bonsai reduces the time required to learn real-time programming after researchers get accustomed to it.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it subsequently reduces the time required to learn real-time programming, and the time to build new interfaces with external devices (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "62a1d411-d321-4d07-930e-12e5e54db8de",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C96",
+      "claim": "Bonsai reduces the time to build new interfaces with external devices.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it subsequently reduces the time required to learn real-time programming, and the time to build new interfaces with external devices (see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a9f67fed-8e43-4aad-9c74-c50691be1d9f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C97",
+      "claim": "BonVision can be integrated into pre-existing, specialised frameworks in established laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since Bonsai workflows can be called via the command line, BonVision can also be integrated into pre-existing, specialised frameworks in established laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a1cd1c9f-74da-405c-bc92-ffc42ad39c39",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C98",
+      "claim": "BonVision is a state-of-the-art tool for visual display that is accessible to the wider community.",
+      "claim_type": "EXPLICIT",
+      "source": "Being free, open-source, and portable, BonVision is a state-of-the-art tool for visual display that is accessible to the wider community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a04e3d5c-294c-4937-9c3f-11cb713a4b87",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C99",
+      "claim": "Benchmarking was performed on a Dell Latitude 7480 laptop with Intel Core i7-6600U Processor and Integrated HD Graphics 520 for 60 Hz tests.",
+      "claim_type": "EXPLICIT",
+      "source": "For benchmarks at 60 Hz refresh rate, we used a standard laptop with the following configuration: Dell Latitude 7480, Intel Core i7-6600U Processor Base with Integrated HD Graphics 520 (Dual Core, 2.6 GHz), 16 GB RAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6a7456d5-7567-4d17-8e80-d4679b48f546",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C100",
+      "claim": "For higher refresh rates, benchmarking used an ASUS ROG Zephyrus GX501GI gaming laptop with Intel Core i7-8750H and NVIDIA GeForce GTX 1080.",
+      "claim_type": "EXPLICIT",
+      "source": "For higher refresh rates we used a gaming laptop ASUS ROG Zephyrus GX501GI, with an Intel Core i7-8750H (six cores, 2.20 GHz), 16 GB RAM, equipped with a NVIDIA GeForce GTX 1080.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "d400c164-5050-43da-a44f-573a1937ff1a",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C101",
+      "claim": "All benchmarking tests were run on Windows 10 Pro 64-bit.",
+      "claim_type": "EXPLICIT",
+      "source": "All tests were run on Windows 10 Pro 64-bit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "2fae4122-70d7-4c68-8800-45bdb94630d5",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C102",
+      "claim": "HARP devices from Champalimaud Research Scientific Hardware Platform were used to measure latency and dropped frames.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the time from input detection to display update, as well as dropped frames detection, we used open-source HARP devices from Champalimaud Research Scientific Hardware Platform, using the Bonsai.HARP package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "fe4f08ca-8cdc-4585-9e0e-7dbaf4a8f4ef",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C103",
+      "claim": "The minimal latency for any update is typically two frames: one for VSync and one for OS delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the minimal latency for any update is two frames: one which is needed for the VSync, and one is the delay introduced by the OS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical explanation in the Materials and methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "cab4be80-32d0-4d06-86fc-437628a03c7a",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C104",
+      "claim": "Display hardware can add further delays if they include additional buffering.",
+      "claim_type": "EXPLICIT",
+      "source": "Display hardware can add further delays if they include additional buffering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical explanation in the Materials and methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0386e103-547c-4220-b6bc-924964f996ab",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C105",
+      "claim": "Five male, 8-week-old, C57BL6 mice were used for the virtual reality behaviour experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Five male, 8-week-old, C57BL6 mice were used for this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "a9ff133a-93a4-4153-98bb-dd349c762356",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C106",
+      "claim": "Mice were habituated to the virtual reality environment by progressively increasing the time spent head fixed from ~15 min to 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "One week after the surgery, mice were placed on a treadmill and habituated to the virtual reality (VR) environment by progressively increasing the number of time spent head fixed: from ~15 min to 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "becb32c9-5af4-4a20-8f36-ffdbeef71421",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C107",
+      "claim": "Mice spontaneously ran on the treadmill, moving through the VR in absence of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice spontaneously ran on the treadmill, moving through the VR in absence of reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "7c00adbd-8fe5-48f2-9db1-7b2f6583f85e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C108",
+      "claim": "The VR environment was a 100 cm long platform with a patterned texture.",
+      "claim_type": "EXPLICIT",
+      "source": "The VR environment was a 100 cm long platform with a patterned texture that animals ran over for multiple trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "96416299-e3f3-405f-8914-51c64cfe64c7",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C109",
+      "claim": "Spike times were synchronized with behavioural data by aligning the signal of a photodiode that detected the visual stimuli transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "We synchronised spike times with behavioural data by aligning the signal of a photodiode that detected the visual stimuli transitions (PDA25K2, Thorlabs, Inc, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "c621f3f9-89f2-48ee-b54c-0ef471587d22",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C110",
+      "claim": "Firing rate was sampled at 60 Hz and smoothed with a 300 ms Gaussian filter.",
+      "claim_type": "EXPLICIT",
+      "source": "We sampled the firing rate at 60 Hz, and then smoothed it with a 300 ms Gaussian filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "46965bd8-11b8-4ca5-a1dd-981ab865bfc5",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C111",
+      "claim": "Receptive fields were calculated as the average firing rate or local field potential elicited by the appearance of a stimulus in each location.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated receptive fields as the average firing rate or local field potential elicited by the appearance of a stimulus in each location (custom routines in MATLAB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "b14b1e7a-e628-4a53-988b-271bd900d311",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C112",
+      "claim": "The position inference from the deep neural network and the BonVision visual stimulus rendering were run on the same machine.",
+      "claim_type": "EXPLICIT",
+      "source": "The position inference from the deep neural network and the BonVision visual stimulus rendering were run on the same machine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "eaac3498-48e2-4590-b587-64e327861fd4",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C113",
+      "claim": "Performance can be improved using a lower pixel resolution for video capture, achieving up to 80 frames/s without a noticeable decrease in tracking accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance can be improved using a lower pixel resolution for video capture, and we were able to achieve up to 80 frames/s without a noticeable decrease in tracking accuracy using this strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a performance optimization result in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "cd56291f-de55-42ab-aeae-978a07b5c8a7",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C114",
+      "claim": "Further enhancements in tracking performance can be achieved using a MobileNetV2 network.",
+      "claim_type": "EXPLICIT",
+      "source": "Further enhancements can be achieved using a MobileNetV2 network (Kane et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation in the Materials and methods section.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "022eda41-eee1-4ea0-8390-52c641c84b84",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C115",
+      "claim": "Four male participants were tested for the human psychophysics experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Four male participants were tested for this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "5f296c52-ca2f-4fa5-8b62-1c29f26d50cd",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C116",
+      "claim": "The human psychophysics experiments were run on a gaming laptop connected to a Vive Pro SteamVR head-mounted display (90 Hz refresh rate).",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were run on a gaming laptop (described above) connected to a Vive Pro SteamVR head-mounted display (90 Hz refresh rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological detail in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "b156211b-2325-4d08-8424-2b5b599d79e2",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "claim_id": "C117",
+      "claim": "Standard onboard computations on the headset provide additional non-linear transformations that account for the relationship between the eye and the display.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard onboard computations on the headset provide additional non-linear transformations that account for the relationship between the eye and the display (such as lens distortion effects).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a technical detail in the Materials and methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5936f931-cfb4-41f8-9b49-db4b353d30ae",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BonVision is an open-source software package built on the Bonsai graphical programming language that provides visual stimulus presentation capabilities for both 2D and 3D environments. The software is freely available under the MIT license and can be downloaded through the Bonsai package manager.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3, C13, C14, C45, C46, C64, C79, C80, and C81 collectively establish BonVision as an open-source tool with clear technical foundations and accessibility. The architectural basis (Bonsai), licensing (MIT), and distribution method (package manager) are explicitly stated with verifiable details.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "e10167d1-6dd2-414e-a674-917593840620",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BonVision unifies 2D and 3D visual presentation by mapping 2D retino-centric coordinates onto a 3D sphere using Mercator projection, then using cube mapping to project 360\u00b0 environments onto arbitrary viewpoints. This architecture separates stimulus definition from display hardware, enabling replication across different display configurations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C88, C19, C15, and C47 describe a coherent technical approach supported by Figure 1 and supplementary figures. The Mercator projection and cube mapping methodology is explicitly stated and illustrated, and the independence of stimulus definition from hardware is demonstrated across multiple display types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "752d68c0-9bcc-4f4d-afae-8a4ebf32f807",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BonVision features semi-automated display calibration using photographs of experimental setups with fiducial markers. Image processing algorithms estimate marker positions to fully specify the display environment, enabling automatic calibration of the relationship between observer and display.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C16, and C61 are supported by explicit descriptions and Figure 2 with supplementary figures showing the calibration process. The use of ArUco markers and the automated detection process are documented with visual evidence of successful calibration across different configurations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6855c47c-1f58-457e-9026-a8ad5fad4c79",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "BonVision's closed-loop latency averaged 2.11 \u00b1 0.78 frames (35.26 \u00b1 13.07 ms) at 60 Hz, which was slightly shorter than PsychToolbox (p<10\u207b\u2078\u2070). Latency decreased with higher refresh rates (90 Hz: 28.45 \u00b1 7.22 ms; 144 Hz: 18.49 \u00b1 10.1 ms), though the number of frames between event and presentation remained similar across refresh rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, C31, C89, C103, and C104 present quantitative benchmarking data with statistical testing (Welch's t-test, n=1000). The measurements are supported by Figure 4A and methodological details describing the HARP device measurement system. The consistency of frame counts across refresh rates supports the interpretation that display hardware is the primary constraint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "25c0da90-b60e-4a39-9fa9-a72bc5f163cc",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BonVision rendered up to 576 independent elements and eight overlapping textures at 60 Hz without dropping frames, broadly matching PsychToolbox and PsychoPy. BonVision achieved slightly fewer overlapping textures than PsychoPy because it lacks the option to trade off texture/mask resolution for performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C33, and C90 provide comparative benchmarking data supported by Figure 4B-C. The performance metrics are quantified and the explanation for the difference in overlapping texture performance is explicitly stated, providing transparency about current limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "00bd68c4-be57-400b-b89c-0abbbfdcf571",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BonVision supports video playback through preloading or streaming from disk. Streaming mode can display standard definition (480p) and full HD (1080p) at 60 Hz on standard computers. At higher frame rates, Full HD performance is impaired but improved by buffering and fully restored by preloading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, and C91 describe video playback capabilities with specific performance metrics shown in Figure 4D. The hardware specifications are provided, and the effects of different buffering strategies are quantified, supporting the performance claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BonVision's rendering speed and timing accuracy are sufficient for neurophysiological experiments. Receptive fields were successfully recovered from electrophysiological measurements in mouse superior colliculus and primary visual cortex using sparse noise stimuli, which are sensitive to timing errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C38, C39, C92, and C93 demonstrate neurophysiological validation through successful receptive field mapping shown in Figure 5B-C and supplementary figures. The sparse noise stimulus is appropriately characterized as timing-sensitive, and successful receptive field recovery using both photodiode and BonVision logging validates timing accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "6a433586-6b60-435d-a407-b9378c2428cd",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All four human observers successfully identified which of two cubes at different virtual depths was larger in a head-mounted display experiment, demonstrating BonVision's capability to support depth perception tasks requiring depth-dependent cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C115, and C116 describe a human psychophysics validation with explicit sample size (n=4 males), hardware specifications, and results shown in Figure 5D-E. However, the small sample size and lack of quantitative performance metrics (e.g., accuracy rates, confidence intervals) limit the strength of this validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mice in virtual reality showed increased locomotion speed with repeated exposure and modulated their speed based on location within a 100 cm virtual platform. Five male C57BL6 mice spontaneously ran on the treadmill without reward after habituation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, C105, C106, C107, and C108 describe mouse virtual reality behavior with explicit experimental details and results shown in Figure 5F-G. The sample size (n=5), habituation protocol, and behavioral observations are clearly documented, supporting the conclusion that BonVision can elicit and respond to animal behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "b59551d7-d80e-454c-beab-1a69bd69291e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Visual stimuli presented in BonVision primarily elicited freezing responses in freely moving mice, consistent with previous studies. Freezing was defined as speed below 2 cm/s for >0.1 s, and flight as speed above 40 cm/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C69, and C70 describe innate defensive behavior with explicit operational definitions and citation to prior work (De Franceschi et al., 2016). Results are shown in Figure 5H-I. The consistency with previous findings and clear methodological definitions support this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BonVision can define observer-display relationships in real-time using deep neural networks for pose estimation. Using DeepLabCut with ResNet-50, animal position was updated at 40 frames/s, with potential improvement to 80 frames/s at lower resolution or using MobileNetV2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C26, C74, C75, C112, C113, and C114 describe real-time augmented reality capabilities with specific technical details (network architecture, frame rates, hardware). Figure 3 and video demonstrate the capability. The performance metrics and optimization strategies are explicitly stated with appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BonVision includes a library of pre-defined 3D structures (planes, spheres, cubes) and can import standard format 3D files (OBJ, Blender). It supports multiple image formats (PNG, JPG, BMP, TIFF, GIF) and video containers (AVI, MP4, OGG, OGV, WMV) with standard codecs (H264, MPEG4, MPEG2, DIVX).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C82, C83, C84, C85, C86, and C87 enumerate tested capabilities with explicit format lists. The reliance on industry-standard libraries (FFmpeg, Assimp) is documented. These are straightforward technical specifications that are verifiable and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0945a345-73eb-4a4d-9bd9-2b40df73d672",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BonVision is capable of rendering visual environments near hardware limits due to Bonsai's just-in-time compiler architecture, which minimizes computational overhead.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C28 are supported by the benchmarking results in Figure 4 and the technical explanation of Bonsai's architecture. The performance data demonstrating rendering at high frame rates with minimal dropped frames substantiates the claim of near-hardware-limit performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "3910ef48-9621-4d95-bc09-02540a27a0e3",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "BonVision provides sufficient rendering performance to support human and animal visual behavior, having been tested on humans and mice across multiple experimental paradigms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C2 are supported by the collective experimental validations including neurophysiology (C37-C39), human psychophysics (C40), mouse virtual reality (C41-C42), and innate behavior (C43). The diversity of successful applications across species and paradigms supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "fe65d4de-7283-4ee1-9d9a-bd974d4d521e",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "BonVision includes a library of workflows and operators to standardize stimulus construction, and its modular structure enables development and exchange of custom nodes without constructing complete experimental paradigms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C49, and C14 describe software architecture features illustrated in Figure 1\u2014figure supplement 2. The modular workflow structure is visually demonstrated, and the description of pre-built shaders and resources is consistent with the documented capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "5a85738a-28c3-46e2-b8ba-91e6b168033f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "BonVision is based on Bonsai, which has a large user base, active developer community, and is widely used in neuroscience applications including video processing, optogenetics, photometry, electrophysiology, and calcium imaging. While Bonsai requires initial familiarization, it subsequently reduces time for real-time programming and hardware interfacing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 and C94-C96 describe Bonsai's ecosystem with multiple citations supporting its widespread use. The characterization of the learning curve (C94-C96) is stated explicitly. The integration capabilities are well-documented with specific examples and citations, supporting the claim of broad applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "11b0c9eb-cab1-46f0-a906-d39eecd97978",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "BonVision combines capabilities for both complex 3D environments and retinotopically defined 2D stimuli in a single framework, distinguishing it from existing platforms that focus on either 2D stimuli (PsychToolbox, PsychoPy, STYTRA, RigBox) or virtual reality (FreemoVR, ratCAVE, ViRMEn). Unique features include automatic display calibration and real-time control using deep neural networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 position BonVision relative to existing tools with appropriate citations. The unique features (automatic calibration, deep neural network integration) are demonstrated in the results. The comparison is fair and supported by the documented capabilities, though direct head-to-head comparisons are limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "0ae4da55-101b-4bbd-9f54-836164726d01",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "BonVision benchmarking was performed on Windows 10 Pro using standard (Dell Latitude 7480) and gaming (ASUS ROG Zephyrus GX501GI) laptops with HARP devices for measurement. BonVision is also capable of running on Linux.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C99, C100, C101, and C102 provide explicit hardware and software specifications for benchmarking. The Linux compatibility claim (C36) is stated but not demonstrated with benchmarking data, representing a minor limitation in validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "1066fca3-974d-448e-adde-6aac45a1abf9",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "All animal experiments were performed in accordance with UK regulations (Animals Scientific Procedures Act 1986) and approved by UCL Animal Welfare Ethical Review Board (Project License 70/8637). C57BL6 wild-type mice were used, with recordings during the dark phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C66, C67, and C68 provide explicit ethical approval details and experimental conditions. These are standard methodological statements that are appropriately documented for reproducibility and ethical compliance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "4cf85e3c-0714-49d9-af7a-1fc96168971f",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Neural recordings used 32-channel multi-electrode arrays with Open Ephys acquisition on a separate computer. Data was processed with Kilosort 1 or 2, synchronized using photodiode signals, with firing rates sampled at 60 Hz and smoothed with 300 ms Gaussian filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C72, C73, C109, C110, and C111 provide detailed methodological information for neurophysiology experiments. The equipment, software, and analysis parameters are explicitly stated with appropriate citations, enabling reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "726eb980-f6a9-4198-9431-32a538862e34",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "BonVision is compatible with head-mounted displays (Oculus Rift, HTC Vive) by receiving projection and view matrices from the headset and generating separate textures for each eye. Onboard computations handle lens distortion corrections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C77, C78, and C117 describe the technical implementation for VR headset compatibility. The approach is standard for VR applications, and successful human experiments (C40) demonstrate functional implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "71d4e012-2f90-4689-8657-247e0d0cff68",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "BonVision enables easy implementation of closed-loop experiments with real-time interaction with deep neural networks and hardware devices. It can be integrated into pre-existing frameworks via command line, making it accessible to the wider community.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C97, and C98 describe integration capabilities supported by demonstrations of closed-loop experiments (C24-C26, C41-C42) and the documented command-line interface. The accessibility claim is supported by open-source licensing and documentation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    },
+    {
+      "id": "1f93f267-f26a-487a-b022-715dfe9ac7f9",
+      "content_id": "c913eaf6-96e2-4509-8b69-62e3249bf8eb",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Gaming-driven platforms have advanced visual environments but lack egocentric coordinate specification and hardware integration. Traditional vision research uses 2D stimuli (PsychToolbox, PsychoPy), while newer platforms (STYTRA, ratCAVE, FreemoVR, ViRMEn) provide specialized solutions but lack generalized frameworks for standard stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 provide context for BonVision's development with appropriate citations. These are characterizations of the existing landscape supported by cited literature, establishing the motivation for BonVision's unified approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:54:51.117494Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "664da6c2-7f76-4b17-9d1c-9889ab0021cb",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "6bce4d38-623f-4763-84e4-162768ec5585",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "d608b607-72ba-42aa-8e03-b498d2b7fe58",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "29cbcef4-3dab-44f3-bd7e-bffc367f065c",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "ec05f731-9d13-4f2b-8c5a-255f809ff9e8",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "fddaaeca-5105-42eb-91b4-dadf63bd7819",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "d698b303-cc2c-4e9e-a12f-0444f4d0d1fe",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "ed68027b-60c0-44d2-baa7-f53554af92da",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "25b99bdf-2431-455a-8fff-fe9b4ad39c1f",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "0869c606-0729-4ebb-865c-9aa5b792a718",
+      "result_id": "5936f931-cfb4-41f8-9b49-db4b353d30ae"
+    },
+    {
+      "claim_id": "5e9fbcaf-4b10-4737-803c-e5c7031cc91f",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "f47c2d8e-85fc-4f88-99e4-c716ee81ce98",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "5baa39e4-98f3-4a5c-88a4-a8406940bc33",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "8987c2c6-3551-4670-969a-8a96e02086fa",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "d782fc73-29e1-4436-9b5d-f5a7faa9ee81",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "9dd63551-a9c1-4d58-bbb6-bb3d6cd74155",
+      "result_id": "e10167d1-6dd2-414e-a674-917593840620"
+    },
+    {
+      "claim_id": "ef6bc650-2c8a-424f-9e47-0f2d898ee0ed",
+      "result_id": "752d68c0-9bcc-4f4d-afae-8a4ebf32f807"
+    },
+    {
+      "claim_id": "40e31ac4-476d-48a8-8655-2385599a2e1c",
+      "result_id": "752d68c0-9bcc-4f4d-afae-8a4ebf32f807"
+    },
+    {
+      "claim_id": "b1fa0350-681c-4d0a-b132-11da6b220f7a",
+      "result_id": "752d68c0-9bcc-4f4d-afae-8a4ebf32f807"
+    },
+    {
+      "claim_id": "fc9af396-6949-46cb-b7d0-cf40bddd72a2",
+      "result_id": "752d68c0-9bcc-4f4d-afae-8a4ebf32f807"
+    },
+    {
+      "claim_id": "eab8ea01-d9a7-449a-a31e-a7e6ed10e661",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "f24540be-0467-49dc-ba72-efc7d234d680",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "e9c538a7-65cb-4685-8993-07b6612bff32",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "cf4e19bb-6c20-40e3-9abc-03cfdbc9f346",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "fe4f08ca-8cdc-4585-9e0e-7dbaf4a8f4ef",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "cab4be80-32d0-4d06-86fc-437628a03c7a",
+      "result_id": "6855c47c-1f58-457e-9026-a8ad5fad4c79"
+    },
+    {
+      "claim_id": "83a7420a-b270-4bfe-8281-0e3623e574f1",
+      "result_id": "25c0da90-b60e-4a39-9fa9-a72bc5f163cc"
+    },
+    {
+      "claim_id": "0e21cfd6-3d48-4322-b5e4-8b2af97c1925",
+      "result_id": "25c0da90-b60e-4a39-9fa9-a72bc5f163cc"
+    },
+    {
+      "claim_id": "945df2f9-1336-4b1e-abc3-97401738c586",
+      "result_id": "25c0da90-b60e-4a39-9fa9-a72bc5f163cc"
+    },
+    {
+      "claim_id": "771fd4b5-8318-4121-9b23-9c63063097b6",
+      "result_id": "00bd68c4-be57-400b-b89c-0abbbfdcf571"
+    },
+    {
+      "claim_id": "162ba29f-e2ef-46c9-9652-23538ddce2bd",
+      "result_id": "00bd68c4-be57-400b-b89c-0abbbfdcf571"
+    },
+    {
+      "claim_id": "c74e0f6c-fba1-4137-85cf-fc4ffd845f5e",
+      "result_id": "00bd68c4-be57-400b-b89c-0abbbfdcf571"
+    },
+    {
+      "claim_id": "733df11a-2111-410e-a8db-11f178b07493",
+      "result_id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5"
+    },
+    {
+      "claim_id": "a67632b3-5764-47bb-b071-135f55635bba",
+      "result_id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5"
+    },
+    {
+      "claim_id": "2ced34ab-faff-4455-ba68-0cc4f6310792",
+      "result_id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5"
+    },
+    {
+      "claim_id": "f65a35e3-5e04-49d2-9e93-a91eafb94e82",
+      "result_id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5"
+    },
+    {
+      "claim_id": "067ab547-a160-4e52-bea7-a035ba6ab253",
+      "result_id": "d7c84b6f-5e36-4b58-ad73-37ac13ec01e5"
+    },
+    {
+      "claim_id": "f6ac03ac-ca44-422d-921a-aead1db870b2",
+      "result_id": "6a433586-6b60-435d-a407-b9378c2428cd"
+    },
+    {
+      "claim_id": "022eda41-eee1-4ea0-8390-52c641c84b84",
+      "result_id": "6a433586-6b60-435d-a407-b9378c2428cd"
+    },
+    {
+      "claim_id": "5f296c52-ca2f-4fa5-8b62-1c29f26d50cd",
+      "result_id": "6a433586-6b60-435d-a407-b9378c2428cd"
+    },
+    {
+      "claim_id": "4a6e16e6-a240-4334-a06e-5df1bfb1f261",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "c7667864-1de6-4946-9220-6ae2ef77440c",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "0386e103-547c-4220-b6bc-924964f996ab",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "a9ff133a-93a4-4153-98bb-dd349c762356",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "becb32c9-5af4-4a20-8f36-ffdbeef71421",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "7c00adbd-8fe5-48f2-9db1-7b2f6583f85e",
+      "result_id": "e72a23cf-2b32-44b2-9d0f-fefa4b138972"
+    },
+    {
+      "claim_id": "1f2bd150-dc67-4319-94fd-f53b27a24d42",
+      "result_id": "b59551d7-d80e-454c-beab-1a69bd69291e"
+    },
+    {
+      "claim_id": "c1ed9cca-885f-4265-a19e-7199341c109b",
+      "result_id": "b59551d7-d80e-454c-beab-1a69bd69291e"
+    },
+    {
+      "claim_id": "184d7e3a-23ea-4b5d-9472-61f933382c78",
+      "result_id": "b59551d7-d80e-454c-beab-1a69bd69291e"
+    },
+    {
+      "claim_id": "59e0e587-5c9b-4882-9a66-4930dbaeb685",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "9eb5694c-319a-435d-aa2d-0aa5ce184c03",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "778b2e9f-04c6-4d33-980a-087274f9c681",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "09987949-a872-4c49-9417-2e4a90a5003b",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "22c3871b-23ee-4b1a-a3b2-2757d96bf9b7",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "b14b1e7a-e628-4a53-988b-271bd900d311",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "eaac3498-48e2-4590-b587-64e327861fd4",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "cd56291f-de55-42ab-aeae-978a07b5c8a7",
+      "result_id": "358d71e2-4ba2-428c-bdb9-709bf6cc8e83"
+    },
+    {
+      "claim_id": "a3395490-80ad-47b3-87e6-123a82c23418",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "41860d63-baa5-41e9-98ed-c2afec7fd206",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "e3f0e973-9a6a-4690-8349-8a419324a364",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "af8fe32d-1eeb-48d8-85c6-011193f1d543",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "c25a06d0-7624-440b-a8e7-05ea1fae2ea3",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "397cee55-ace8-4410-a644-b8b357df6c66",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "623c2880-d3c5-4439-ab36-a1938fe4974f",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "333734fc-e923-439e-b28e-14a5d7faa8b8",
+      "result_id": "dfa1e3f4-bce9-4391-a3b5-55ca039d7572"
+    },
+    {
+      "claim_id": "67c86829-c1ca-4623-9aa8-e4066a33202c",
+      "result_id": "0945a345-73eb-4a4d-9bd9-2b40df73d672"
+    },
+    {
+      "claim_id": "a513e4c0-2485-4901-9a67-83408ce5225e",
+      "result_id": "0945a345-73eb-4a4d-9bd9-2b40df73d672"
+    },
+    {
+      "claim_id": "48d83d2f-c186-44f0-ae10-b8f705f6f0c2",
+      "result_id": "3910ef48-9621-4d95-bc09-02540a27a0e3"
+    },
+    {
+      "claim_id": "c14b04f7-c25b-455d-8cf3-0cd933be566a",
+      "result_id": "3910ef48-9621-4d95-bc09-02540a27a0e3"
+    },
+    {
+      "claim_id": "68611e67-5d6c-451f-a4f5-4e4e86feaea7",
+      "result_id": "fe65d4de-7283-4ee1-9d9a-bd974d4d521e"
+    },
+    {
+      "claim_id": "1757b86c-3e8d-4a68-97ce-aefdc7c50e75",
+      "result_id": "fe65d4de-7283-4ee1-9d9a-bd974d4d521e"
+    },
+    {
+      "claim_id": "29cbcef4-3dab-44f3-bd7e-bffc367f065c",
+      "result_id": "fe65d4de-7283-4ee1-9d9a-bd974d4d521e"
+    },
+    {
+      "claim_id": "adba32b9-ad8b-4ba2-ba95-9375b546adea",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "f655e770-cca5-476e-82ad-80c249bde981",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "4b13f4eb-b634-4441-a9f5-4f3860a5e3f3",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "5f34c5b5-b43d-48f5-b36d-7e7bc7f494aa",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "01ce2b2a-606e-43a4-ab5a-1ab44c283de8",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "fec27282-91c3-46d2-85d2-424fe927eb82",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "646fb0f6-401e-41b0-9956-fba1489f56a9",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "1cb63131-8164-4957-8894-c77a2fcdc536",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "86e88c97-3677-4bfb-af07-45fdc4afde9a",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "9dd88433-8585-491f-bb9c-9374440b01c9",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "62a1d411-d321-4d07-930e-12e5e54db8de",
+      "result_id": "5a85738a-28c3-46e2-b8ba-91e6b168033f"
+    },
+    {
+      "claim_id": "0372c099-d96e-4100-97cf-e3ec29243442",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "4f4ad4db-0260-4e70-9b93-408c0e28aae2",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "dabb877d-6549-4e5b-8cbc-46f5259ff378",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "fc9af396-6949-46cb-b7d0-cf40bddd72a2",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "18c7b8b6-0d19-4497-bd09-5aa63b052161",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "48b0212d-dfe6-46e0-bdd4-5b455ea40057",
+      "result_id": "11b0c9eb-cab1-46f0-a906-d39eecd97978"
+    },
+    {
+      "claim_id": "c65716d2-b879-43e6-85bd-075e3a8339f6",
+      "result_id": "0ae4da55-101b-4bbd-9f54-836164726d01"
+    },
+    {
+      "claim_id": "a04e3d5c-294c-4937-9c3f-11cb713a4b87",
+      "result_id": "0ae4da55-101b-4bbd-9f54-836164726d01"
+    },
+    {
+      "claim_id": "6a7456d5-7567-4d17-8e80-d4679b48f546",
+      "result_id": "0ae4da55-101b-4bbd-9f54-836164726d01"
+    },
+    {
+      "claim_id": "d400c164-5050-43da-a44f-573a1937ff1a",
+      "result_id": "0ae4da55-101b-4bbd-9f54-836164726d01"
+    },
+    {
+      "claim_id": "2fae4122-70d7-4c68-8800-45bdb94630d5",
+      "result_id": "0ae4da55-101b-4bbd-9f54-836164726d01"
+    },
+    {
+      "claim_id": "8a753145-6a0c-4199-a49b-30157ff84f83",
+      "result_id": "1066fca3-974d-448e-adde-6aac45a1abf9"
+    },
+    {
+      "claim_id": "63ea945f-5094-4ebb-9f71-d83db2044848",
+      "result_id": "1066fca3-974d-448e-adde-6aac45a1abf9"
+    },
+    {
+      "claim_id": "801cff42-9fec-4f2f-92d0-32bbc45b3216",
+      "result_id": "1066fca3-974d-448e-adde-6aac45a1abf9"
+    },
+    {
+      "claim_id": "81801c52-301d-4c3f-a16c-9d7eb4dea8bf",
+      "result_id": "1066fca3-974d-448e-adde-6aac45a1abf9"
+    },
+    {
+      "claim_id": "eb77f9cb-bd9a-4c7b-8773-6a55ed5970f1",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "db624e3e-b0ac-4a17-a619-07eda8f93aa3",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "19302b51-148f-4a35-8ed6-f4be8504297b",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "96416299-e3f3-405f-8914-51c64cfe64c7",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "c621f3f9-89f2-48ee-b54c-0ef471587d22",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "46965bd8-11b8-4ca5-a1dd-981ab865bfc5",
+      "result_id": "4cf85e3c-0714-49d9-af7a-1fc96168971f"
+    },
+    {
+      "claim_id": "07eb35fc-8518-4bbc-8aa0-fcc95deb5f81",
+      "result_id": "726eb980-f6a9-4198-9431-32a538862e34"
+    },
+    {
+      "claim_id": "3ac1159f-dac7-4f1b-8cf7-5d246a4ff742",
+      "result_id": "726eb980-f6a9-4198-9431-32a538862e34"
+    },
+    {
+      "claim_id": "37eab235-6631-45bf-b5a7-d99136ec14ee",
+      "result_id": "726eb980-f6a9-4198-9431-32a538862e34"
+    },
+    {
+      "claim_id": "b156211b-2325-4d08-8424-2b5b599d79e2",
+      "result_id": "726eb980-f6a9-4198-9431-32a538862e34"
+    },
+    {
+      "claim_id": "6a514d06-80bf-49f2-8376-c6f4b294639d",
+      "result_id": "71d4e012-2f90-4689-8657-247e0d0cff68"
+    },
+    {
+      "claim_id": "a9f67fed-8e43-4aad-9c74-c50691be1d9f",
+      "result_id": "71d4e012-2f90-4689-8657-247e0d0cff68"
+    },
+    {
+      "claim_id": "a1cd1c9f-74da-405c-bc92-ffc42ad39c39",
+      "result_id": "71d4e012-2f90-4689-8657-247e0d0cff68"
+    },
+    {
+      "claim_id": "6a17ec24-a422-4b70-89bf-a07defb9490e",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "eb4bdffc-1b8c-4025-bad5-c6c01b2a45ef",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "aa3bf27c-e19d-40f1-9e71-ad1f0e6b3db3",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "bea407ff-a69f-464b-9cbd-922ba208d63b",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "3c7ab7b7-24a8-4dde-be52-2aafa8b5180d",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "2a26bb92-f3a3-44b4-bf94-883fb572b977",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "c193bc38-4b56-40dc-8769-0abc3aff4040",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    },
+    {
+      "claim_id": "ea87a08c-d43d-4c61-bf89-c5304c4cfefb",
+      "result_id": "1f93f267-f26a-487a-b022-715dfe9ac7f9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,544 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Hst4 protein levels are downregulated in response to replication stress induced by both MMS and HU treatment in wild-type S. pombe cells, with downregulation occurring after 90 minutes and showing similar kinetics for both agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are supported by western blot data showing reduced Hst4 band intensity after MMS and HU treatment (Figure 1A-C). The time course experiments demonstrate consistent kinetics of degradation for both replication stress agents, providing converging evidence for the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Hst4 downregulation is dependent on DNA replication and is accelerated during S phase upon MMS treatment, despite MMS slowing S phase progression. Hst4 levels remain stable in G2-arrested cells treated with MMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are well-supported by synchronized cell experiments (Figure 1D-H) showing differential Hst4 degradation in replicating versus non-replicating cells. Claims C9-C10 provide appropriate literature context. The experimental design with G2 arrest controls effectively demonstrates replication-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Hst4 is degraded via the proteasome pathway through ubiquitination, as demonstrated by stabilization in proteasome mutants and detection of ubiquitinated Hst4 in vivo. This regulation occurs post-transcriptionally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14-C17 are supported by multiple lines of evidence: RT-qPCR showing no transcriptional change (Figure 2\u2014supplement 1A), stabilization in mts2-1 proteasome mutant (Figure 2B-C), and Ni-NTA pulldown demonstrating ubiquitination (Figure 2D). The convergence of genetic and biochemical approaches strongly supports proteasome-mediated degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The C-terminal domain of Hst4, specifically amino acids 352-370, is required for its degradation upon replication stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by deletion analysis showing that C-terminal truncation (C\u0394-Hst4) prevents degradation (Figure 2E-F), while more refined deletions (T1\u0394 and T2\u0394) narrow the critical region to amino acids 352-370 (Figure 2\u2014supplement 1C-D). The systematic truncation approach provides strong evidence for the degron location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Both full-length and C-terminal deletion mutant of Hst4 localize to the nucleus, but only full-length Hst4 is degraded upon MMS treatment as shown by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by immunofluorescence data (Figure 2G) showing nuclear localization of both constructs and differential stability upon MMS treatment. This confirms that the degradation phenotype is not due to mislocalization of the truncation mutant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Hst4 is phosphorylated at serine residues upon MMS treatment and during unperturbed S phase, as demonstrated by phosphoserine antibody detection and lambda phosphatase sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by immunoprecipitation experiments with phosphoserine antibody (Figure 3A, 3C) and lambda phosphatase treatment causing mobility shift (Figure 3B). The detection of phosphorylation both during MMS treatment and normal S phase progression provides strong evidence for phosphorylation-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Hsk1 kinase is specifically required for Hst4 degradation upon replication stress, as demonstrated by stabilization in hsk1-89 mutant but not gsk3\u0394, degradation in mcm4 mutant, and complementation experiments with wild-type but not kinase-dead Hsk1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are strongly supported by multiple genetic experiments (Figure 3D-E, Figure 3\u2014supplement 1A-C). The specificity is demonstrated by negative result with gsk3\u0394 (C27), positive result with hsk1-89 (C28), control with mcm4 (C29), and complementation showing kinase activity requirement (C30-C31). This provides compelling evidence for Hsk1-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "DDK components (Dfp1 and Hsk1) remain associated with chromatin upon replication stress in S. pombe, while chromatin-bound Hst4 is reduced due to degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by chromatin fractionation experiments (Figure 3F) showing differential behavior of DDK components versus Hst4. This addresses a controversy in the field regarding DDK chromatin association during replication stress and provides important mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Hsk1 directly phosphorylates Hst4, as demonstrated by loss of phosphorylation in hsk1-89 mutant, MMS-dependent interaction detected by crosslinking, in vitro complex formation, and in vitro kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by converging biochemical evidence: loss of phosphorylation in hsk1-89 (Figure 3G), crosslinking-dependent co-IP (Figure 3H), in vitro binding (Figure 3I), and in vitro kinase assay (Figure 3J). The requirement for crosslinking to detect interaction suggests transient substrate-enzyme interaction, which is consistent with kinase-substrate relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All four serine residues (S354, S355, S362, S363) in the C-terminus of Hst4 are required for its phosphorylation and degradation, as demonstrated by the 4SA mutant which is stabilized, has increased half-life, and is not phosphorylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are well-supported by systematic mutagenesis showing that only mutation of all four serines (4SA) fully stabilizes Hst4 (Figure 4\u2014supplement 1A, Figure 4B-D). The combination of stability, half-life, and phosphorylation data provides strong evidence that these residues form a functional phosphodegron.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The 4SA-Hst4 mutant loses ubiquitination under both untreated and MMS-treated conditions and is not phosphorylated by Hsk1 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by ubiquitination assays (Figure 4\u2014supplement 1B) and in vitro kinase assays with radioactive ATP (Figure 4E). These results establish the mechanistic link between phosphorylation and ubiquitination, supporting a phosphodegron model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cells expressing non-degradable 4SA-hst4 mutant are slow growing, sensitive to MMS and HU, and show significant growth recovery defects after replication stress, with HU causing more severe defects than MMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by spot assays (Figure 4F) and colony formation assays (Figure 4G-H). The quantitative survival data clearly demonstrate the functional importance of Hst4 degradation for cell viability under replication stress. The differential sensitivity to HU versus MMS is an interesting observation but lacks mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Hst4 is stabilized in pof3\u0394 and skp1-94 mutants but not in skp1-A4, demonstrating that SCFPof3 E3 ubiquitin ligase mediates Hst4 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by western blots and half-life measurements in various mutants (Figure 5A-C, Figure 5\u2014supplement 1C). The specificity is demonstrated by the differential effects of skp1-94 (defective in Pof3 interaction) versus skp1-A4 (intact Pof3 interaction), providing strong genetic evidence for SCFPof3 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Hst4 interacts with Pof3 in mts2-1 proteasome mutant cells both with and without MMS treatment, but in wild-type cells the interaction is detected only upon MMS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by co-immunoprecipitation experiments (Figure 5D-E). The detection of interaction in mts2-1 without stress suggests constitutive substrate recognition, while MMS-dependent interaction in wild-type cells reflects the requirement for phosphorylation. This is consistent with a phosphodegron model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Pof3 protein levels are upregulated upon both MMS and HU treatment in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by western blot data (Figure 5F) showing increased Pof3 levels after replication stress. This is a novel finding suggesting coordinated regulation of both substrate (Hst4 phosphorylation) and E3 ligase (Pof3 upregulation) during replication stress response. However, the mechanism of Pof3 upregulation is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The 4SA-hst4 mutant shows high DNA fragmentation and septated cells after 6 hours of HU treatment, indicating aberrant mitosis, while wild-type cells are properly arrested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by microscopy data (Figure 6A) showing differential cellular morphology. However, the interpretation of septated cells as \"aberrant mitosis\" (C62) is somewhat inferential. The phenotype could also reflect checkpoint defects or premature mitotic entry. Additional markers of mitotic progression would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The 4SA-hst4 mutant shows delayed S-phase progression and persistent H2A phosphorylation during recovery from MMS treatment, while wild-type cells show reduced H2A phosphorylation by 3 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by flow cytometry (Figure 6B) and western blot data (Figure 6C). The persistent H2A phosphorylation in the mutant indicates ongoing DNA damage signaling, consistent with defective recovery from replication stress. These results establish functional consequences of preventing Hst4 degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Wild-type cells complete S phase and resume cell cycle progression after HU-induced arrest, while 4SA-hst4 mutant shows delayed S-phase progression, confirming inability to recover from HU-induced replication stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by flow cytometry data (Figure 6\u2014supplement 1A) showing differential cell cycle progression after HU washout. This provides additional evidence for the recovery defect phenotype and complements the H2A phosphorylation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The 4SA-hst4 mutant shows significantly lower IdU:CldU ratio compared to wild-type, indicating defective fork restart, while initial CldU foci are similar, indicating normal early replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by dual nucleotide analog labeling experiments (Figure 6D-E). The similar initial CldU foci (C70) is an important control showing that the defect is specifically in restart rather than replication initiation. The quantification shows statistical significance (p<0.05), supporting the conclusion of defective fork restart.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Only 25% of 4SA-hst4 cells recover from MMS treatment as measured by BrdU incorporation, while wild-type cells show approximately 45% recovery, demonstrating efficient restart in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by BrdU incorporation assays (Figure 6\u2014supplement 1B-C). This single-analog approach complements the dual-labeling experiments and provides additional quantitative evidence for the fork restart defect. The statistical significance is indicated (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Double mutants swi1\u0394hst4\u0394 and swi3\u0394hst4\u0394 are synthetic lethal, indicating that Hst4 functions in a parallel pathway to the fork protection complex components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by tetrad dissection data (Figure 7A) showing no viable double mutant spores. Synthetic lethality is strong genetic evidence for parallel pathway function. However, the interpretation assumes complete loss of function for the deletion alleles, which is reasonable but not explicitly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Hst4 physically interacts with both Swi1 and Swi3 in vitro, as demonstrated by binding of recombinant Hst4 to immunoprecipitated FLAG-tagged FPC components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by in vitro binding assays (Figure 7B). The physical interaction complements the genetic interaction data. However, these are in vitro interactions with recombinant protein, so the physiological relevance and whether these interactions occur in vivo remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FPC components Swi1, Mcl1, and Mrc1 are significantly overexpressed in whole cell extracts of 4SA-hst4 mutant compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by western blot data (Figure 7C, Figure 7\u2014supplement 1D) showing increased band intensity for these proteins. The quantification (Figure 7\u2014supplement 1B-C) shows statistical significance. This unexpected finding suggests a feedback regulatory mechanism, though the molecular basis is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "PCNA expression is not altered in 4SA-hst4 strain upon MMS or HU treatment, demonstrating specific regulation of FPC components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by western blots (Figure 7\u2014supplement 1E-F) showing similar PCNA levels. This is an important negative control demonstrating specificity of the regulatory effect to FPC components rather than general replication machinery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Chromatin-associated Swi1 and Mcl1 are reduced in 4SA-hst4 strain despite increased whole cell levels, as shown by chromatin fractionation and co-immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by chromatin fractionation (Figure 7D) and chromatin IP (Figure 7E). This paradoxical finding\u2014increased total protein but decreased chromatin association\u2014is a key mechanistic insight suggesting that Hst4 degradation regulates FPC function through chromatin recruitment rather than protein stability alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Intra-S phase checkpoint activation, as measured by Cds1 kinase activity, is normal in 4SA-hst4 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by Cds1 kinase assay (Figure 7F-G) showing similar activity in wild-type and mutant. This is a critical control demonstrating that the phenotypes of 4SA-hst4 are independent of checkpoint activation, supporting a checkpoint-independent role for Hst4 degradation in fork stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "H3K56 acetylation is significantly reduced in 4SA-hst4 mutant compared to wild-type in both untreated and MMS-treated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by western blot data (Figure 8A) showing decreased H3K56ac in the mutant. This establishes the mechanistic link between Hst4 degradation and H3K56 acetylation levels, consistent with Hst4's known deacetylase activity. The constitutive expression of Hst4 in the mutant leads to hypoacetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "H3K56R mutant shows upregulated whole cell levels of FPC components (Swi1 and Mcl1) but reduced chromatin association, phenocopying the 4SA-hst4 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by western blots and chromatin fractionation (Figure 8B-C). The H3K56R mutant phenocopying 4SA-hst4 provides strong evidence that the FPC regulation is mediated through H3K56 acetylation rather than other potential Hst4 substrates. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "H3K56 acetylation is drastically reduced in both hsk1-89 and pof3\u0394 strains where Hst4 is constitutively expressed due to lack of degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by western blot data (Figure 8\u2014supplement 1A-B). This provides additional evidence linking Hst4 stabilization to reduced H3K56ac and completes the mechanistic pathway: loss of Hsk1 or Pof3 \u2192 Hst4 stabilization \u2192 reduced H3K56ac \u2192 FPC defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Knockdown of Asf1a in U2OS cells results in significant reduction of FPC components Timeless, Tipin, and And-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by western blot data (Figure 8D) showing decreased FPC protein levels upon Asf1a knockdown. This demonstrates conservation of the regulatory mechanism in human cells. However, the knockdown approach may have off-target effects, and the specificity to H3K56ac pathway is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Sirtuin 2 levels are not altered upon Asf1a knockdown in U2OS cells, demonstrating specificity of the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by western blot (Figure 8D). This is an important control showing that the effect is not due to general changes in sirtuin levels. However, Sirtuin 2 may not be the relevant H3K56 deacetylase in human cells, so this control has limited interpretive value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Chromatin-bound Timeless and And-1 are significantly decreased upon Asf1a knockdown in U2OS cells, consistent with reduced whole cell levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by chromatin fractionation (Figure 8E). This demonstrates that the effect of Asf1a knockdown on FPC is conserved at the chromatin level in human cells. However, unlike in yeast, the chromatin reduction appears proportional to total protein reduction rather than showing the paradoxical increase in total with decrease at chromatin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "DDK/Hsk1 phosphorylates Hst4 upon replication stress at C-terminal serine residues, marking it for degradation via SCFPof3 ubiquitin ligase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 summarize the core mechanistic findings supported by multiple experiments throughout the paper. The phosphorylation by DDK is demonstrated by in vitro and in vivo experiments, and SCFPof3-mediated degradation is shown by genetic and biochemical approaches. This represents the central conclusion of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The phosphorylation-defective 4SA-hst4 mutant displays multiple defects including impaired recovery from replication stress, faulty fork restart, slow S-phase progression, and decreased viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 summarize the phenotypic consequences of preventing Hst4 degradation, supported by multiple assays (survival, cell cycle, fork restart). These results establish the functional importance of the regulatory mechanism and demonstrate that dynamic Hst4 regulation is required for genome stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "FPC components Swi1 and Mcl1 show compromised chromatin recruitment in 4SA-hst4 mutant despite increased whole cell levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 summarize a key paradoxical finding supported by chromatin fractionation and western blots. This suggests that Hst4 degradation regulates FPC function through chromatin recruitment rather than protein stability, representing an important mechanistic insight into how chromatin modifications regulate replication fork stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The defects in 4SA-hst4 mutant are dependent on H3K56 acetylation but independent of intra-S phase checkpoint activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by H3K56R phenocopy experiments and normal Cds1 activation. This establishes that the pathway operates through chromatin modification rather than checkpoint signaling, representing a checkpoint-independent mechanism for fork stability. This is an important conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The H3K56ac-dependent regulation of FPC components (Timeless, Tipin, And-1) is conserved in human U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by Asf1a knockdown experiments showing reduced FPC levels and chromatin association. This demonstrates evolutionary conservation of the regulatory mechanism, though the molecular details may differ between yeast and humans. The conservation has important implications for cancer biology given FPC overexpression in tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The proposed model is that DDK-mediated degradation of Hst4 increases H3K56ac, changing chromatin state at stalled forks to facilitate FPC recruitment and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 represent the proposed mechanistic model. While C110 is well-supported by data showing inverse correlation between Hst4 levels and H3K56ac, claims C111-C112 about chromatin state changes and facilitated FPC recruitment are more speculative. The model is consistent with the data but direct evidence for chromatin state changes at stalled forks and the mechanism of H3K56ac-dependent FPC recruitment is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "This study identifies crucial roles for DDK and FPC in replication stress response with implications for cancer therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by the comprehensive characterization of DDK and FPC functions presented in the manuscript. Claim C115 regarding cancer therapeutic implications is more speculative but reasonable given that FPC components are overexpressed in cancers (cited in the paper). However, no direct cancer-relevant experiments are performed.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C28",
+      "C53",
+      "C54"
+    ],
+    "result": "Current theories of perceptual inference assume that the brain computes sensory uncertainty instantaneously and independently for each stimulus, with neural theories suggesting instantaneous representation in neuronal population response gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, C28, C53, and C54 consistently characterize the current theoretical framework in the field, supported by appropriate citations (Ma and Jazayeri, 2014; Zemel et al., 1998; Ma et al., 2006; Hou et al., 2019; Ernst and Banks, 2002; Alais and Burr, 2004). This represents an accurate summary of prior work that the manuscript challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Across three continuous visual noise sequences (sinusoidal, RW1, RW2), observers showed temporal asymmetry in auditory weights, with smaller weights during increasing visual noise and larger weights during decreasing visual noise, suggesting past visual noise influences current uncertainty estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 present converging evidence from three experiments with appropriate statistical tests (repeated measures ANOVAs with significant main effects: p=0.002 for sinusoidal, p<0.001 for RW1, and significant interaction p=0.010 for RW2). The temporal asymmetry is consistently observed despite the physical visual noise being designed symmetrically (C17), providing strong evidence for temporal integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Regression analyses across all three continuous sequences showed that both current visual STD and the difference between current and previous STD significantly predicted observers' relative auditory weights, demonstrating that visual uncertainty estimates depend on recent history of sensory noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide quantitative statistical support with large effect sizes (Cohen's d ranging from 2.769 to 3.153 for current STD, and -0.451 to -0.737 for STD difference) across all three sequences. The regression approach appropriately tests the influence of past signals while controlling for current signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Computational modeling comparing instantaneous, Bayesian, and exponential learners showed that both Bayesian and exponential learners substantially outperformed the instantaneous learner across all three continuous experiments, though the two learning models could not be reliably distinguished from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 describe rigorous model comparison using both fixed-effects (WAIC) and random-effects (protected exceedance probability) analyses. The models are clearly defined (C26-C28), and both quantitative (C29-C31) and qualitative (C32) comparisons consistently show superiority of learning models over instantaneous estimation. The inability to distinguish Bayesian from exponential learners is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "Parameter estimates from the Bayesian and exponential learners accurately reflected the different rates of change across the three continuous sequences, with observers weighting visual signals from 4-5 seconds in the past at approximately 5% of current signal weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C36 provide interpretable parameter estimates with confidence intervals that appropriately reflect the designed differences in temporal dynamics across sequences. The temporal window of influence (4-5 seconds, 5% weight) provides a concrete characterization of the learning process, though the wide confidence intervals noted in C33 warrant caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In the fourth experiment with discontinuous jumps in visual noise, the temporal asymmetry pattern was replicated, with both Bayesian and exponential learners substantially outperforming the instantaneous learner but remaining indistinguishable from each other (\u0394WAIC = +2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 demonstrate replication of the main finding in a different experimental paradigm (discontinuous vs. continuous sequences). Statistical support is strong (F(1,17) = 24.824, p<0.001, partial \u03b7\u00b2 = 0.594 for ANOVA; large Cohen's d values for regression). The model comparison results are consistent with the continuous sequences, strengthening the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C62"
+    ],
+    "result": "Across all four experiments, Bayesian or exponential learners consistently outperformed instantaneous learners, but optimal Bayesian learning can be well approximated by exponential discounting with fixed learning rates, making experimental discrimination challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C62 appropriately synthesize findings across all experiments. The conclusion that exponential discounting approximates Bayesian learning is supported by both empirical model comparisons and theoretical considerations (C44-C45). This represents a nuanced interpretation that acknowledges both the evidence for temporal integration and the practical limitations in distinguishing optimal from heuristic strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Simulations showed that while the Bayesian learner adapts faster to increases but slower to decreases in visual noise compared to the exponential learner, these differences are small (mean log likelihood differences of 1.82-2.74), and both learners substantially reduce estimation error compared to instantaneous learning, especially with fewer dots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 present simulation results that explain why the two learning models are difficult to distinguish experimentally. The quantitative comparisons (C48-C50) show meaningful improvements in uncertainty estimation (error reduction from 21.7% to 13.7-14.9% for 20 dots, and from 46.8% to 23.9-29.5% for 5 dots), supporting the functional benefit of temporal integration while explaining the empirical indistinguishability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C52",
+      "C55",
+      "C65"
+    ],
+    "result": "The study demonstrates that human observers do not access sensory uncertainty instantaneously from current signals alone but learn uncertainty over time by combining past experiences with current inputs, challenging classical models of perceptual inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C52, C55, and C65 represent the main conclusions of the study, directly supported by the converging evidence from behavioral experiments (temporal asymmetries, regression analyses) and computational modeling (superiority of learning models). The challenge to classical models (C52) is justified by the comprehensive experimental and modeling results across four experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Observers' visual reliability estimates were influenced by visual inputs from 4-5 seconds in the past (at 5% weight) and adapted flexibly to the rate of change in visual noise, relying more strongly on past inputs when noise changed more slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide specific quantitative characterizations of the temporal integration process. The 4-5 second window and 5% weight (C56) are derived from parameter estimates, while the flexible adaptation (C57-C58) is supported by differences in parameter estimates across sequences with different temporal dynamics (C33-C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Observers did not explicitly notice the repetitive temporal structure of the sequences, and implicit learning of this structure would have attenuated rather than explained the observed temporal lag in visual reliability estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 address a potential confound through logical reasoning. The argument that learning the repetitive structure would reduce rather than produce the observed temporal lag (C60-C61) is sound. However, the claim that observers did not explicitly notice the structure (C59) lacks formal assessment, representing a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The findings suggest that current theories of probabilistic population coding may need extension to accommodate past experiences' influence on sensory uncertainty representations, potentially through temporal sampling strategies, revealing fundamental principles of uncertainty computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 and C67 represent theoretical implications and speculations about neural mechanisms and broader significance. While the behavioral findings support the need for theoretical extensions (C63), the specific mechanisms (C64) and claims about fundamental principles (C67) extend beyond the direct evidence. These are reasonable interpretations but require further neural and computational investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The experimental methods involved 76 participants across four experiments using audiovisual spatial localization with dynamically varying visual noise (clouds of 20 dots at 5 Hz), with appropriate ethical approval, sample sizes based on pilot data, and exclusion criteria orthogonal to the main hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C68-C82 describe the experimental methods in detail. The design is appropriate for testing the hypotheses, with adequate sample sizes (20-38 participants per experiment, justified by pilot data in C81), proper ethical approval (C70), and reasonable exclusion criteria (C82). The audiovisual spatial disparity paradigm (C14-C16) provides a valid method for quantifying uncertainty estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Model fitting used Metropolis-Hastings sampling with appropriate convergence criteria (R < 1.1), WAIC for model comparison, and parameter recovery validation showing bias < 10% for all parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 describe rigorous computational methods. The sampling approach (C84), convergence assessment (C85), and model comparison method (C86) are appropriate for the analysis. Parameter recovery validation (C87) with bias < 10% provides confidence in the model fitting procedure, though full details are referenced in supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Simulations with 12 subjects using 5-dot visual clouds showed that Bayesian and exponential learner models produced very similar fits (log likelihood differences of 1.82-2.74), with parameter recovery confirming model validity and demonstrating the practical difficulty of distinguishing the models experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe simulation studies that validate the models and explain the empirical results. The parameter recovery (C90) and similarity of model fits (C91-C92) provide important context for interpreting the inability to distinguish models in behavioral data. The reduction to 5 dots (C89) appropriately increases uncertainty to maximize potential differences between models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establish that multisensory integration weights signals by reliability, sensory uncertainty shapes causal inference, observers are near-optimal in many tasks, natural sensory noise evolves slowly, and combining past with current inputs could improve uncertainty estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C9-C11 provide appropriate background context supported by citations to prior literature. These establish the theoretical motivation for the study, characterizing both established principles (C4-C6) and the gap in current understanding (C9-C11) that the study addresses. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The key theoretical distinction between Bayesian and exponential learners is that only the Bayesian learner adapts dynamically based on uncertainty about reliability estimates, predicting faster adaptation to increases but slower adaptation to decreases in visual noise, consistent with prior research on variance learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 articulate the theoretical distinction between models clearly. The prediction about asymmetric adaptation rates (C45) follows logically from the Bayesian framework, and the connection to prior work (C46, Berniker et al., 2010) is appropriate, though the authors correctly note that prior work addressed different aspects of uncertainty (priors vs. likelihoods).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The influence of past signals on uncertainty estimates likely affects learning at both slower timescales across trials (as shown) and faster timescales of evidence accumulation within trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 represents speculation about broader implications beyond the current data. While the extrapolation to within-trial dynamics is plausible and supported by citation (Drugowitsch et al., 2014), it remains a hypothesis requiring direct empirical testing. The claim appropriately uses cautious language ('likely to affect').",
+    "result_type": "MINOR"
+  }
+]

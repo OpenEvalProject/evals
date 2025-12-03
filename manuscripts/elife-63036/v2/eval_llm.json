@@ -1,0 +1,435 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "TaDa is a method that uses Dam:PolII fusion protein to methylate GATC motifs when bound to DNA, providing a measure of PolII occupancy correlated with transcriptional activity. The Dam-alone control can also provide chromatin accessibility information (CATaDa), analogous to ATAC-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the TaDa/CATaDa methodology with appropriate citations to prior work (Southall et al., 2013; Aughey et al., 2018; Buenrostro et al., 2013). The principles are well-established and the manuscript applies these methods to a new biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TaDa successfully profiles Ir64a neurons, showing specific enrichment of Dam:PolII at the Ir64a gene (OS=0.20, FDR=4.26e-10) only in Ir64a neurons and not in six other Ir neuron populations. Expression of Dam or Dam:PolII does not affect IR64a receptor expression, localization, or neuronal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 provide validation that TaDa works in Ir64a neurons through multiple lines of evidence: immunofluorescence showing no perturbation of receptor or projections (C15-C16, Figure 1B-C), sequencing data showing specific enrichment at the Ir64a locus (C17-C18, Figure 1D-E), and statistical analysis with appropriate FDR correction (C19-C20). The pattern extends to other Ir genes (C21, Figure 1F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In Ir31a neurons, Ir40a shows positive but lower occupancy (OS=0.12) compared to Ir31a (OS=0.41). The tandemly clustered Ir75a/b/c genes show positive OSs in all three corresponding neuron populations, likely due to overlapping transcription units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 identify exceptions to the general pattern of receptor-specific expression. The Ir40a signal in Ir31a neurons (C22) is quantified with appropriate statistics. The Ir75a/b/c pattern (C23) is explained by overlapping transcription units (C24) with citation to prior work (Prieto-Godino et al., 2017), which is a reasonable interpretation given the tandem arrangement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Co-receptor genes Ir8a and Ir25a show expected expression patterns: Ir8a has significant OS in all Ir populations except Ir40a neurons (consistent with its role in acid-sensing but not hygrosensory neurons), while Ir25a shows significant OS in all seven populations (consistent with broad expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 validate TaDa specificity by showing that co-receptor expression patterns match known biology. The Ir8a pattern (C25-C26) correctly excludes Ir40a neurons, and Ir25a (C27-C28) shows broad expression, both consistent with prior work (Abuin et al., 2011; Benton et al., 2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Broadly expressed neuronal genes (elav, nSyb) and OSN marker peb show significant OSs across Ir populations, while PN marker oaz and support cell genes (Obp59a, Obp84a) do not, validating TaDa specificity for neurons versus other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 provide important validation of TaDa cell-type specificity. Positive controls (neuronal genes) show expected signals while negative controls (non-neuronal genes) do not, despite some OBPs being highly expressed in the antenna. This demonstrates that TaDa is not simply detecting abundant transcripts but is specific to the targeted cell population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cholinergic markers (VAChT, ChAT) show significant OSs in all Ir populations while glutamatergic and GABAergic markers (VGlut, Gad1) do not, consistent with OSNs being cholinergic. GABA-B-R2 shows variable OSs across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 validate neurotransmitter identity through TaDa. The cholinergic markers match electrophysiological data (C35, Kazama and Wilson, 2008), and the absence of other neurotransmitter markers is appropriate. The variable GABA-B-R2 expression (C38) is consistent with known heterogeneous presynaptic gain control (Root et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among neuropeptides, only sNPF (which originates from OSNs and has a role in presynaptic facilitation) shows significant OSs in Ir populations, while neuropeptides from central neurons (Tk, Mip) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 further validate TaDa specificity by distinguishing OSN-expressed neuropeptides from those expressed in central neurons. The pattern matches proteomic data (Carlsson et al., 2010) and known sNPF function (Root et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Genome-wide TaDa analysis identified 3603-4775 significantly occupied genes (20-27% of genome) across seven Ir populations. Hierarchical clustering of OSs corresponds with receptor gene phylogeny: recently duplicated Ir75b/c cluster together, then with ancestral Ir75a; Ir40a/Ir64a cluster separately, possibly reflecting sacculus development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 describe global TaDa patterns with appropriate quantification and statistical support (hierarchical clustering with >99% support values except one node at 60%, Figure 2B). The phylogenetic correspondence (C45-C47) is an interesting observation supported by citation to prior work (Prieto-Godino et al., 2017). The Ir40a/Ir64a clustering interpretation (C49) is appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Each Ir neuron population displays PolII occupancy of distinct combinations of signaling genes: 3-9 neuropeptide genes (of 49 total), 18-31 GPCR genes (of 111), and 29-47 ion channel genes (of 149).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 quantify signaling molecule diversity across Ir populations with data shown in Figure 2C-E. The numbers are clearly stated and the heatmaps show distinct patterns, though few genes are unique to single populations (Supplementary files 8, 11, 14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Each Ir neuron population has a unique combination of many dozens of PolII-occupied neuron projection guidance genes, but individual datasets have very few or no unique genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe the pattern of guidance molecule expression (Figure 2F, Supplementary file 17). The observation that populations use overlapping sets of guidance factors in unique combinations is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Half of 754 predicted transcription factors (379) show significant occupancy in at least one Ir population, with individual populations having 190-286 occupied TF genes. Considerable variation exists across populations, consistent with unique gene regulatory networks. Ir31a has 45 unique TF genes; Ir75a has only one (pdm3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 characterize transcription factor expression with appropriate quantification (Figure 2G, Supplementary files 18-20). The variation supports the interpretation of unique regulatory networks (C59). The extreme cases of Ir31a (many unique TFs) and Ir75a (one unique TF, pdm3) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Broadly expressed OSN transcription factors (Acj6, Fer1, Onecut) show positive OSs in all seven Ir populations. Engrailed (en), expressed in a subset of OSNs, shows significant OSs only in Ir31a, Ir40a, and Ir64a populations, concordant with En protein detection in these neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 validate TaDa by showing expected patterns for known transcription factors. The broad factors (C62-C63) are detected in all populations as expected. The restricted En expression (C64-C66) matches both TaDa data (Figure 2\u2014figure supplement 1A) and immunofluorescence validation (Figure 2\u2014figure supplement 1B-C), demonstrating TaDa can detect heterogeneous TF expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "CATaDa analysis reveals heterogeneous chromatin accessibility patterns across the genome with expected decrease toward centromeric regions. Globally similar chromatin accessibility at Ir genes across populations is consistent with embryonic studies showing comparable accessibility despite transcriptional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe CATaDa results with appropriate visualization (Figure 3A) and comparison to prior work (Haines and Eisen, 2018). The observation of similar accessibility despite different transcription is well-supported and appropriately contextualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CATaDa peaks at Ir genes are present at promoters and upstream regions (potential enhancers) with similar distribution across populations, indicating neuron-specific transcription is not due to overt accessibility differences. However, unique peaks upstream of Ir75a and Ir75c (q<0.05) correspond to known regulatory regions. Shared peaks upstream of Ir64a in both Ir64a and Ir40a neurons suggest other factors determine cell-type-specific transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 describe detailed CATaDa analysis at Ir loci (Figure 3B). The general similarity in accessibility (C70-C71) is an important finding, while the exceptions (C72-C76) are appropriately identified with statistical thresholds and validated against known regulatory regions (Ai et al., 2010; Prieto-Godino et al., 2017; Silbering et al., 2011). The interpretation that trans-acting factors determine specificity (C76) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Using DESeq2 analysis of GATC fragment read depth, 1694 genes (\u22488%) show significant differential PolII occupancy across seven Ir populations, encompassing all expected Ir genes. Closely related populations (Ir75a/b/c) show few differences (0.4-1.7%), while distant populations (Ir84a vs Ir40a) show more (51% of Ir84a differences).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe a complementary analysis method (DESeq2) with appropriate statistical criteria (log2FC>1.5, adjusted p<0.05). The quantification is clear and the pattern of differences correlates with the hierarchical clustering (Figure 2B), providing internal consistency. The caveat about overlapping genes (C77) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Gene Ontology analysis of 1694 differentially occupied genes shows highly significant enrichment in neuron, neural development, and signaling categories, consistent with these genes underlying unique anatomical and physiological properties of neuron classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide appropriate functional annotation of differentially occupied genes using standard GO analysis (Figure 4C). The enrichment in relevant categories validates the biological significance of the identified genes, and the interpretation (C83) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "pdm3 is the sole transcription factor uniquely occupied in Ir75a neurons (significant OS only in Ir75a). Pdm3 is a nervous-system enriched transcription factor that functions in Or neuron receptor expression and axon guidance in the maxillary palp. Only Ir75a neurons show robust nuclear Pdm3 immunofluorescence (with some Ir40a neurons showing above-background signals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 identify pdm3 as a candidate for Ir75a-specific function through TaDa (Figure 4E), validate its unique occupancy (C85, Figure 2G), provide context from prior work (C86-C87), and confirm protein expression by immunofluorescence (C88, Figure 5A-B). The convergence of genomic and protein data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "peb-Gal4-driven pdm3 RNAi leads to loss of most IR75a expression (remaining neurons have very low levels) while maintaining robust expression of all other Irs. However, the number of IR75b-expressing cells increases, suggesting Pdm3 promotes IR75a expression and represses IR75b expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 describe the pdm3 RNAi phenotype with clear quantification (Figure 5C-D). The loss of IR75a (C89) and maintenance of other Irs (C90) demonstrate specificity. The increase in IR75b cells (C91) is an important observation leading to the interpretation of Pdm3 as a genetic switch (C92), which is appropriately presented as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Ectopic IR75b-expressing cells in pdm3 RNAi antennae are located where Ir75a neurons normally reside. Ir-GFP reporters faithfully report receptor expression and show that pdm3 RNAi causes loss of Ir75a-GFP and ectopic Ir75b-GFP expression. In the antennal lobe, Ir75a-GFP signal in DP1l is lost while Ir75b-GFP signal in DL2d is intensified and the glomerulus enlarged, indicating Ir75a neurons adopt Ir75b fate including receptor identity and glomerular targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 provide strong evidence for a cell fate switch using multiple approaches: anatomical localization (C93, Figure 6A), transcriptional reporters (C95-C96, Figure 6B-D), and projection analysis (C97-C98, Figure 6E). The interpretation of fate switch (C99) is well-supported by the convergent evidence of both receptor expression and axon targeting changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Pdm3 expression persists in adult Ir75a neurons, suggesting ongoing function. Adult-only pdm3 RNAi (using Gal80ts) produces the same receptor expression changes, including cells co-expressing IR75a and IR75b (never seen in controls). Ir75b-GFP is detected in both DL2d and DP1l in adult-only RNAi, indicating Pdm3 has a persistent role in mature neurons to repress Ir75b and promote Ir75a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 demonstrate persistent Pdm3 function using temporal control experiments (Figure 6F-I). The adult-only RNAi producing similar phenotypes (C101) is strong evidence for ongoing function. The co-expression of receptors (C102) and ectopic Ir75b-GFP in DP1l (C104) after adult-only RNAi are particularly compelling, as they show receptor switching after neurons have already targeted correctly. The interpretation (C103, C105) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Fmi protein shows dynamic expression in OSNs during development: trace levels in soma at 48h APF, stronger in axons at 24h APF (suggesting axonal transport), robust expression at 48h APF as OSNs coalesce onto glomeruli, then decreasing to undetectable levels in some adult glomeruli while persisting in others (including DL2d/Ir75b and DL2v/Ir75c but not DP1l/Ir75a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 characterize Fmi expression dynamics through developmental time series (Figure 7A-B, Figure 7\u2014figure supplement 1A). The progression from axonal to glomerular expression is clearly documented. The heterogeneous adult expression (C111-C112) partially matches TaDa data (Figure 4E), though the authors appropriately note imperfect correspondence, suggesting dynamic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "From 48h APF, Fmi is detected in \u224816 cells adjacent to the antennal lobe, likely local interneurons (LNs) based on Elav expression and projection patterns. LN-specific fmi RNAi reveals more marked differential glomerular Fmi expression at 48h APF. Fmi protein levels do not precisely correspond with TaDa OSs, suggesting dynamic expression during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 identify LN expression of Fmi through anatomical and molecular criteria (Figure 7A, Figure 7\u2014figure supplement 1B-C). The LN RNAi experiment (C115, Figure 7C) cleverly reveals OSN-specific Fmi patterns. The acknowledgment of imperfect TaDa-protein correspondence (C116) is appropriate given the temporal integration of TaDa versus snapshot immunofluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Constitutive fmi RNAi causes fully penetrant, severe antennal lobe defects with loss of stereotyped glomerular boundaries. The phenotype is reproduced with an independent RNAi line. Individual Ir neuron populations (Ir75a/b/c-GFP) show mistargeting but relatively mild defects, suggesting Fmi impacts local OSN segregation rather than long-range targeting. Double-labeled adjacent populations (Ir75a+Ir75b, Ir84a+Ir31a) show frequent overlap in fmi RNAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 describe the fmi RNAi phenotype with appropriate controls (independent RNAi line, C118) and multiple visualization approaches (Figure 8A-C). The interpretation that Fmi affects local segregation rather than long-range targeting (C120) is reasonable given the relatively mild individual population defects but clear overlap of adjacent populations (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "OSN-specific fmi RNAi (peb-Gal4) produces equally strong defects as constitutive RNAi, while LN-specific and PN-specific fmi RNAi show no defects, indicating Fmi functions principally (if not exclusively) within OSNs for glomerulus formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 use cell-type-specific RNAi to localize Fmi function (Figure 8D). The OSN-specific requirement is clearly demonstrated by the strong peb-Gal4 phenotype (C122) and absence of LN/PN phenotypes (C123-C124). The interpretation (C125) is well-supported, though the authors appropriately hedge slightly given the LN expression of Fmi.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Temporal control of fmi RNAi using Gal80ts shows that induction at 10h APF produces defects in all animals, induction at 20h APF produces diminished defects, and induction at 40h APF produces no defects, indicating an early developmental function for Fmi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 use temporal control to define the critical period for Fmi function (Figure 8E). The progressive reduction in phenotype severity with later induction clearly demonstrates early requirement. The interpretation (C129) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "In peb>fmi RNAi animals at 24h APF, OSN axons reach the antennal lobe but bundle organization is highly disrupted with premature defasciculation in the central area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 examines the early phenotype at the time when Fmi is normally expressed (Figure 8F). The observation of disrupted bundle organization with premature defasciculation is consistent with the proposed role in axon segregation and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Mutations in planar cell polarity components (frizzled, dishevelled), Fmi partners in other contexts (frazzled, golden goal, espinas), and proposed downstream signaling (G\u03b1q) do not reproduce the fmi phenotype, suggesting Fmi functions through other cellular mechanisms to control OSN axon segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 test candidate interacting genes with appropriate citations to prior work establishing these interactions in other contexts (Figure 8\u2014figure supplement 1). The negative results (C131-C135) are important for ruling out known mechanisms and support the interpretation that Fmi acts through novel mechanisms in OSNs (C136). Multiple independent RNAi lines were tested for several genes, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "TaDa dataset reproducibility (average r\u00b2=0.85 among triplicates) is consistent with previous TaDa studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 provides important quality control information with citation to prior work (Southall et al., 2013). The reproducibility metric validates the technical quality of the datasets.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1592 @@
+{
+  "submission": {
+    "id": "132b4c30-b91e-4dd3-ade8-36321bf6e16f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:25:38.412485Z",
+    "updated_at": "2025-12-03T02:25:38.412485Z"
+  },
+  "content": [
+    {
+      "id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "submission_id": "132b4c30-b91e-4dd3-ade8-36321bf6e16f",
+      "content_type": "manuscript",
+      "content_text": "# One-shot analysis of translated mammalian lncRNAs with AHARIBO\n\n## Authors\n\n- Luca Minati<sup>1</sup>\n- Claudia Firrito<sup>1</sup>\n- Alessia Del Piano<sup>1</sup>\n- Alberto Peretti<sup>1</sup>\n- Simone Sidoli<sup>2</sup>\n- Daniele Peroni<sup>3</sup> ([ORCID: 0000-0002-0862-266X](https://orcid.org/0000-0002-0862-266X))\n- Romina Belli<sup>3</sup> ([ORCID: 0000-0002-5690-2797](https://orcid.org/0000-0002-5690-2797))\n- Francesco Gandolfi<sup>4</sup>\n- Alessandro Romanel<sup>4</sup>\n- Paola Bernabo<sup>1</sup>\n- Jacopo Zasso<sup>5</sup> ([ORCID: 0000-0002-3151-6443](https://orcid.org/0000-0002-3151-6443))\n- Alessandro Quattrone<sup>5</sup>\n- Graziano Guella<sup>6</sup>\n- Fabio Lauria<sup>7</sup>\n- Gabriella Viero<sup>7</sup> ([ORCID: 0000-0002-6755-285X](https://orcid.org/0000-0002-6755-285X))\n- Massimiliano Clamer<sup>1</sup> ([ORCID: 0000-0001-8185-059X](https://orcid.org/0000-0001-8185-059X)) \u2020\n\n### Affiliations\n\n1. IMMAGINA BioTechnology Trento Italy\n2. Department of Biochemistry, Albert Einstein College of Medicine Bronx United States\n3. Mass Spectrometry Facility, Computational and Integrative Biology (CIBIO), University of Trento Trento Italy\n4. Laboratory of Bioinformatics and Computational Genomics, Department of Cellular, Computational and Integrative Biology (CIBIO), University of Trento Trento Italy\n5. Laboratory of Translational Genomics, Department of Cellular, Computational and Integrative Biology (CIBIO), University of Trento Trento Italy\n6. Department of Physics, University of Trento Trento Italy\n7. Institute of Biophysics, CNR Unit at Trento Trento Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nA vast portion of the mammalian genome is transcribed as long non-coding RNAs (lncRNAs) acting in the cytoplasm with largely unknown functions. Surprisingly, lncRNAs have been shown to interact with ribosomes, encode peptides, or act as ribosome sponges. These functions still remain mostly undetected and understudied owing to the lack of efficient tools for genome-wide simultaneous identification of ribosome-associated and peptide-producing lncRNAs. Here, we present AHA-mediated RIBOsome isolation (AHARIBO), a method for the detection of lncRNAs either untranslated, but associated with ribosomes, or encoding small peptides. Using AHARIBO in mouse embryonic stem cells during neuronal differentiation, we isolated ribosome-protected RNA fragments, translated RNAs, and corresponding de novo synthesized peptides. Besides identifying mRNAs under active translation and associated ribosomes, we found and distinguished lncRNAs acting as ribosome sponges or encoding micropeptides, laying the ground for a better functional understanding of hundreds of lncRNAs.\n\n## Introduction\n\nAn incredibly small fraction of the mammalian genome is protein-coding (<3%), while the number of potentially functional non-coding genes remains unclear (Djebali et al., 2012).\u00a0Long non-coding RNAs\u00a0(lncRNAs) are defined as non-coding RNA exceeding 200 nt. They have gained much attention because of their role in a variety of cellular processes, from chromatin architecture (Minajigi et al., 2015) to mRNA turnover (Kleaveland et al., 2018) and translation (Ingolia et al., 2011). Typically, lncRNAs are abundant transcripts (Iyer et al., 2015) that display short and not evolutionarily conserved Open Reading Frames (ORFs with minimal homology to known protein domains (Guttman and Rinn, 2012). The majority of lncRNAs are localized in the cytoplasm (Carlevaro-Fita et al., 2016), where they are supposed to remain untranslated. Ribosome profiling (RIBO-seq), which provides positional information of ribosomes along transcripts (Clamer et al., 2018; Ingolia et al., 2012), identified several ribosome-associated lncRNAs (Bazzini et al., 2014; Ingolia et al., 2011; Lee et al., 2012; Zeng et al., 2018). A handful of lncRNAs have been shown to be involved in translation regulation (Carrieri et al., 2012; Yoon et al., 2012), while others are themselves potentially or partially translated (Anderson et al., 2015; Aspden et al., 2014; Bazin et al., 2017; Ingolia et al., 2011; Nelson et al., 2016; Ruiz-Orera et al., 2014; van Heesch et al., 2019). As coding RNAs, lncRNAs can be associated with actively translating or translationally silent ribosomes (Chandrasekaran et al., 2019; Chen et al., 2020; Jiao and Meyerowitz, 2010; Kapur et al., 2017). Hence, the potential involvement of lncRNAs in translation increases the complexity of the mammalian control of gene expression at the translatome and proteome level. Unfortunately, classical RIBO-seq approaches barely distinguish between lncRNAs producing peptides from those that sequester ribosomes (lncRNA bound to ribosomes without translation) and act as ribosome sponges. Proteomics approaches, such as mass spectrometry, can help to define and quantitatively monitor\u00a0the production of peptides, but are less sensitive techniques than RNA sequencing (Slavoff et al., 2013; van Heesch et al., 2019). Therefore, proteomics and RIBO-seq alone cannot unravel the wide functional range of cytoplasmic lncRNAs associated with the translation machinery.\n\nTo fill this gap, we developed AHA-mediated RIBOsome isolation\u00a0(AHARIBO), a combination of protocols that simultaneously isolate RNAs and nascent proteins associated with translationally active ribosomes. AHARIBO is based on the isolation of ribosomes trapped with their nascent peptides by incorporating the non-canonical amino acid L-azidohomoalanine (AHA), followed by parallel RNA-seq, ribosome profiling, and proteomics.\n\nWe applied AHARIBO to human and mouse cells and showed that it enables to (1) purify translating ribosomes via nascent peptide chains, (2) co-purify RNAs and proteins for transcriptome/de novo proteome-associated studies, and (3) detect the regulatory network of lncRNAs translated or associated with ribosomes.\n\n## Results\n\n### Nascent peptide labeling and separation of the ribosome complex with AHARIBO-rC\n\nTo simultaneously purify ribosomes under active translation, associated RNAs, and corresponding growing peptide chains, we optimized a protocol in HeLa cells (Figure 1A). Briefly, the protocol consists of the following phases: (1) incubation with a methionine-depleted medium, (2) addition of the methionine analog AHA, (3) on-ribosome anchorage of nascent peptide chains with a small molecule, (4) cell lysis and AHA \u2018copper-free click reaction\u2019 (Jewett and Bertozzi, 2010) for (5) ribosome capture with magnetic beads. We reasoned that the protocol for isolating ribosomes through AHA can be used to obtain information about nascent peptides, constitutive components of ribosomes, mRNAs, and lncRNAs associated with them. For this reason, we optimized several parameters from washing steps to nuclease treatments (Figure 1A) to isolate (1) the full translational complex (AHARIBO-rC, ribosomal complexes: ribosomes, ribosome-associated proteins, nascent peptides, and RNAs), (2) the de novo synthesized proteome (AHARIBO-nP, nascent proteome), and (3) ribosome-protected fragments (RPFs) (AHARIBO RIBO-seq: RIBOsome profiling by sequencing).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of AHA-mediated\u00a0RIBOsome isolation\u00a0(AHARIBO) workflow. After methionine depletion, AHA incubation, and sBlock treatment, cell lysates can be processed for (1) AHARIBO-rC: isolation of translational complexes (ribosomes, ribosome-associated proteins, nascent peptides, and RNAs); (2) AHARIBO-nP: isolation of de novo synthesized proteome; and\u00a0(3) AHARIBO RIBO-seq: for ribosome profiling. (B) Polysomal profiles in HeLa cells. On the right of each profile, example of SDS-PAGE of protein extracts from each fraction of the profile. Staining of the membrane was performed by biotin cycloaddition followed by streptavidin-Horseradish peroxidase\u00a0(HRP). RPL26 protein was used as a\u00a0marker of the large ribosome subunit. (C) Box plot showing the AHA signal enrichment in the polysomal fractions of the profiles in cells untreated (NT) and treated with either cycloheximide\u00a0(CHX) or sBlock. Results are shown as the median (\u00b1SE) of three independent experiments. NS: not significant. *p-value=0.05 was obtained through an unpaired t-test. (D) Volcano plots of AHARIBO-rC-isolated proteins. Data are compared with input (AHA-containing lysate, left) or with streptavidin-coated beads without biotin-DBCO (right). DBCO: dibenzocyclooctyne. Red line: t-test p-value<0.05.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Labeling of nascent peptides in cells treated with AHA (250 \u00b5M) at different incubation times (10, 30, 60, and\u00a0120 min). After SDS-PAGE of cell extracts, AHA residues were biotinylated by on-membrane cycloaddition based \u2018click chemistry\u2019 and detected by streptavidin-HRP. (B) Ponceaus S staining of the membrane reported in (A). (C) RNA enrichment in AHARIBO-rC pulldown at different AHA incubation times (10, 30, and\u00a060 min) compared to control (AHA-) and reported as % of input (1/10 of total RNA). (D) RNA enrichment in AHARIBO-rC pulldown before or after sucrose cushioning compared to control (AHA-).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Volcano plots showing the -Log (p-value) versus the relative abundance of AHARIBO-rC-isolated proteins. Data are compared with the non-specific signal derived from streptavidin-coated beads incubated with lysates from control (AHA-, without L-azidohomoalanine) (A) and puromycin-treated cells (without sBlock). Red broken line\u00a0indicates threshold p-value<0.05. (B) Western blots of RPL26, RPS6, and actin with related quantifications of band intensities are reported on the right of each dot blot.\u00a0AHARIBO:\u00a0AHA-mediated\u00a0RIBOsome isolation.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A, B) Agarose gel electrophoresis of total RNA extracted from input lysates (1/10 of the total lysate volume) and lysates subjected to AHA-mediated\u00a0RIBOsome isolation\u00a0(AHARIBO) pulldown, obtained from cells either treated or not treated with L-azidohomoalanine\u00a0(AHA), with or without puromycin (50 \u00b5M) and with different stress. NT: non-treated cells; Ar: arsenite-treated cells; Puro: puromycin treatment (50 \u00b5M). Red broken line\u00a0indicates no enrichment. (C) Total RNA enrichment after AHARIBO-rC pulldown of lysates obtained from unstimulated cells over cells treated with arsenite and heat shock. For each condition, cells were either treated or not treated with AHA. Signal ratios (AHA+/AHA-) for each pulldown sample were normalized to the respective inputs. NT: non-treated; HS: heat shock-treated (42\u00b0C for 10 min); Puro: puromycin treatment (50 \u00b5M). Square box\u00a0indicates mean; stars\u00a0indicate 1\u201399% percentile. (D) 18S rRNA qRT-PCR analysis of RNA extracted from lysates subjected to AHARIBO-rC pulldown and input lysates obtained from unstimulated cells or cells subjected to arsenite treatment. For each condition, cells were either treated or not treated with AHA. For each sample, 18S AHA+/AHA- signal ratios were normalized to the input and to the housekeeping gene HPRT1. NT: non-treated; Ar: arsenite. (E) Detection of TUG1-BOAT. Scheme of the experimental setup (left) and RT-pPCR enrichment for FUG1-BOAT transcript (right) among the three different constructs normalized to the input and for two different times of transfection (24 and 48 hr) (*p-value<0.05 compared with \u0394Met).\n\nTo minimize the amount of AHA-tagged and fully synthesized proteins released from ribosomes and achieve optimal on-ribosome polypeptide stabilization, we tested multiple incubation\u00a0times of AHA exposure and compared the effect of two small molecules (namely cycloheximide [CHX] and sBlock, an anisomycin-based reagent). Anisomycin is known to inhibit the activity of eukaryotic ribosomes, while keeping polypeptides bound to translating ribosomes (Garreau de Loubresse et al., 2014; Grollman, 1967; Seedhom et al., 2016).\n\nWe observed that 30 min is the optimal incubation time for sufficient AHA incorporation and maximum RNA recovery (Figure 1\u2014figure supplement 1A\u2013C). Next, we compared the efficiency of CHX and sBlock in stabilizing the nascent peptide by co-sedimentation analysis of AHA-tagged polypeptides with ribosomes along the sucrose gradient (Figure 1B). As a control, cells were treated in parallel with puromycin to cause ribosome disassembly and release of the growing peptide chains (Figure 1B; Blobel and Sabatini, 1971; Enam et al., 2020). In agreement with literature, we found that both CHX and sBlock are able to stabilize AHA-peptides on ribosomes and polysomes (Biever et al., 2020; Mathias et al., 1964). The efficiency of anchoring polypeptides on ribosomes in CHX- and sBlock-treated cells was about 50% higher compared to untreated cells, confirming that the treatment effectively stabilizes nascent polypeptides (Figure 1C). The high signal observed in lighter fractions is likely caused by AHA-labeled proteins released from ribosomes. To overcome this problem, it is possible to perform a pre-cleaning of the cell lysate by sucrose cushioning. This step can increase the efficiency of total RNA isolation with AHARIBO compared with the control (no AHA) (Figure 1\u2014figure supplement 1D). As expected, in puromycin-treated samples, the AHA signal was mainly detected in the first two fractions of the gradient, proving that the signal observed in the heavier fractions of CHX- and sBlock-treated cells was not caused by diffusion of AHA-labeled peptides from lighter to heavier fractions. Since sBlock outperformed CHX in anchoring efficiency (Figure 1C), we used this compound in all further experiments.\n\nPrompted by the evidence that nascent peptides can be stably anchored on ribosomes by a small molecule, we isolated RNAs and proteins associated with the translation complex. To this aim, we performed a label-free liquid chromatography-mass spectrometry (LC-MS) analysis of AHARIBO-captured proteins relative to the input, to the background biotin-DBCO- (Figure 1D) or AHA- (Figure 1\u2014figure supplement 2A; Figure 1\u2014source data 1) and to a sample treated with puromycin (AHA+ puromycin) (Figure 1\u2014figure supplement 2B), which causes the release of nascent chains. We observed that ribosomal proteins belonging to both the large and small ribosome subunits are indeed more abundant in AHARIBO-rC samples than in controls. LC-MS results were confirmed by western blot analysis of proteins that are component of the large and small ribosomal subunits (RPS6, RPL26) (Figure 1\u2014figure supplement 2B). Gene ontology (GO) analysis revealed that terms related to translation (biological process), nucleic acid binding (cellular function), and ribonucleoprotein complex (cellular component) are enriched in AHARIBO-rC compared to the control (no AHA), confirming efficient pulldown of translation-related proteins (Figure 1\u2014source data 2).\n\nThen, we used AHARIBO-rC to determine the translational status of cultured cells. To this aim, we downregulated protein synthesis by treating HeLa cells with puromycin, heat shock (HS) (10 min at 42\u00b0C, during AHA incubation), or arsenite (Ar) treatment, which induces translational inhibition and stress granules formation (Wang et al., 2016). We observed a reduction of RNA captured in puromycin-, HS-, and Ar-treated cells relative to the control (Figure 1\u2014figure supplement 3A\u2013C). In line with this finding, qRT-PCR analysis showed about 50% reduction in 18S rRNA levels when translation was inhibited (Figure 1\u2014figure supplement 3D).\n\nTo further validate AHARIBO-rC, we took advantage of a micropeptide (176 aa) originating from an open reading frame of the TUG1 lncRNA, called TUG1-BOAT (Lewandowski et al., 2020). The wild-type (WT) ORF has a non-canonical start codon and a methionine 75 nt upstream of\u00a0the stop codon. We ectopically expressed the WT TUG1-BOAT transcript and two mutant constructs (Figure 1\u2014figure supplement 3E): (1) the \u0394TUG1-BOAT, without the methionine 75 nt upstream of\u00a0the stop codon and\u00a0(2) the +1Met TUG1-BOAT with an ATG (methionine) as start codon. The +1Met TUG1-BOAT has two methionines, one at the N terminal and the\u00a0other\u00a0at 25 aa (75 nt) before the C-terminal. Our RT-qPCR analysis performed 24 hr or 48 hr after transfection showed a good efficiency of AHARIBO in capturing the TUG1-BOAT RNA when methionines are present (about 50 times more in +1Met TUG1-BOAT than in \u0394Met TUG1-BOAT after 24 hr) (Figure 1\u2014figure supplement 3E), confirming the efficiency of AHARIBO-rC in capturing translated RNA.\n\n### AHARIBO-nP: genome-wide portray of the de novo synthesized proteome\n\nMotivated by the evidence that AHARIBO-rC can be used to isolate bona\u00a0fide active ribosomes, we further tested our method genome-wide in mouse embryonic stem cells (mESCs) under basal condition and after differentiation into early neurons (ENs) (Tebaldi et al., 2018; Figure 2\u2014figure supplement 1A). We analyzed both AHARIBO-rC-isolated RNA and newly synthesized polypeptides associated with actively translating ribosomes by RNA-seq and LC-MS, respectively. The protocol for the isolation of the de novo synthesized polypeptides (named AHARIBO-nP) is based on urea washing to remove all proteins that are not nascent peptides (Figure 2\u2014figure supplement 1B). In parallel, we isolated and analyzed the global translatome by extracting the RNA after 30% sucrose cushioning of cytoplasmatic lysates (Wang et al., 2013), and then\u00a0analyzed the global proteome by pulsed SILAC (pSILAC) (Schwanh\u00e4usser et al., 2009; Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig2-v2.jpg)\n\n**Figure 2.:** (A) Workflow for parallel AHARIBo-nP and pSILAC. mESCs: mouse embryonic stem cells; EN: mouse embryonic stem cells differentiated in early neurons. (B) Venn diagram representing the number of differentially expressed proteins (EN/mESCs) identified by AHARIBO-nP and pSILAC (p-value<0.05). (C) Volcano plot for each differentially expressed protein (EN/mESC) of\u00a0AHARIBO-nP proteome versus -log2(p-value). Red broken line indicates p-value<0.05. Orange and purple dots represent upregulated proteins involved in cytoskeleton organization (GO:0007010) and neurogenesis (GO:0022008), respectively. Blue, green, and magenta dots represent downregulated proteins related to RNA processing (GO:0006396), protein synthesis (GO:0006412), and mouse pluripotency (WP1763). Gray dots represent all other proteins. (D) Schematic representation of combined cell treatments for pSILAC and AHARIBO-nP. (E) Volcano plots displaying for each protein the -log2 t-test p-value against the fold changes of protein turnover (heavy/light) in pSILAC proteome (left) and AHARIBO-nP (right) for double-treated mESCs.\u00a0GO: gene ontology; AHARIBO: AHA-mediated RIBOsome isolation;\u00a0pSILAC:\u00a0pulsed SILAC.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immunofluorescence for mouse embryonic stem cells\u00a0(mESCs) (Oct4) and neuronal (\u03b23-tubulin) marker expression on self-renewing mESCs and 15DIV mESC-derived neurons. Scale bar 200 \u03bcm. (B) Rank plot of fold change of full proteome (black dots) and ribosomal proteins (green dots) comparing AHA-mediated\u00a0RIBOsome isolation\u00a0(AHARIBO) pulldown versus input samples, mild washing (left), and urea washing (right). Since AHARIBO-rC liquid chromatography-mass spectrometry\u00a0(LC-MS) analysis might cause an underestimation of the de novo synthesized proteome due to the enrichment of abundant ribosomal proteins, newly synthesized proteins bound to dibenzocyclooctyne\u00a0(DBCO)-conjugate magnetic beads were separated from ribosome subunits by harsh washing conditions (8\u00a0M urea) before tryptic digestion and LC-MS analysis. The effectiveness of the washing procedure was confirmed since no evident enrichment of ribosomal proteins in the pulldown was observed. (C) The scatter plots represent protein abundance versus protein turnover in mESCs (left) and early neurons\u00a0(ENs) (right). (D) Normalized protein abundance (left) and turnover distribution (right) as determined by pulsed SILAC\u00a0(pSILAC) and AHARIBO. ***p-value<0.001.\n\nQuantitative proteomic analysis of ENs versus mESCs (EN/mESC) led to the identification of 2654 differentially expressed proteins (Figure 2B, Figure 2\u2014source data 1). As expected, differentiated cells (EN) showed a reduced turnover compared to mESCs (Figure 2\u2014figure supplement 1C). In parallel, EN and mESC cells were analyzed by AHARIBO-nP, which captured 1365 and 2215 proteins, respectively. Of note, 74% of proteins identified through AHARIBO-nP is in common with the pSILAC dataset. The smaller number of proteins identified with AHARIBO-nP compared to pSILAC is most probably related to the shorter time of incubation with AHA (30 min) compared to pSILAC (24 hr) and is consistent with previous observations from similar pulldown enrichment strategies (Bagert et al., 2014; Rothenberg et al., 2018). Differential expression analysis (EN/mESC) identified 573 proteins (p-value<0.05) in AHARIBO-nP (Figure 2B; Figure 2\u2014source data 2). The GO analysis of differentially expressed proteins showed that proteins involved in cytoskeleton organization and neurogenesis were upregulated (Figure 2C), further confirming the reliability of AHARIBO-nP in monitoring de novo protein expression. We focused on proteins captured by AHARIBO-nP during differentiation (Figure 2C, Figure 2\u2014source data 2) and found that several are known to be expressed during early stages of development of the nervous system (e.g., Map1b, Tubb3, and Dync1h1) (Fiorillo et al., 2014; Gonzalez-Billault et al., 2002; Latremoliere et al., 2018). In addition, we performed AHARIBO-nP pulldown in mESCs double-labeled for pSILAC (24 hr) and AHA (30 min) (Figure 2D). Interestingly, we observed high fold changes of heavy amino acids in AHARIBO-nP (Figure 2E) and a significantly higher protein turnover in the AHARIBO-nP compared to the pSILAC proteins (Figure 2\u2014figure supplement 1D), suggesting that AHARIBO-nP is indeed able to capture the de novo synthesized polypeptides.\n\nCollectively, these results show that AHARIBO-nP captures de novo synthesized proteins and produces meaningful descriptions of phenotypic changes occurring upon cell differentiation. Moreover, these results demonstrate that our AHARIBO-nP protocol is suitable to monitor dynamic changes in protein expression by LC-MS analysis.\n\n### Combination of AHARIBO-rC and AHARIBO-nP: parallel genome-wide analysis of translated RNAs and de novo synthesized proteome\n\nPrompted by previous results, we asked if mRNAs purified using AHARIBO-rC are a good proxy of protein levels. To this aim, we compared AHARIBO-rC RNA and the global translatome with AHARIBO-nP in mESCs during differentiation.\n\nTo exclude any bias related to protein length, we checked whether AHARIBO-nP preferentially captures long or short proteins. We plotted the peptide size against the enrichment resulting from AHARIBO-rC compared with the global transcriptome (Figure 3A). This value represents the extent to which AHARIBO-rC RNA differs from the standard method. Our results confirm that AHARIBO captures transcripts encoding for polypeptides in a wide range of length (Figure 3A). Since in all eukaryotes proteins are initiated with a methionine residue and the average protein size in eukaryotes is about 300 aa (Frith et al., 2006), virtually any protein can be captured as soon as the nascent peptide exits the ribosome (i.e., when it reaches a length of about 35\u201340 aa). In about 70% of the proteome, the N-terminal methionine is co-translationally cleaved when the peptide is at least 50 aa long by the enzyme methionine aminopeptidase (Wild et al., 2020), while the remaining 30% retains the methionine (Martinez et al., 2008). Therefore, there is a reasonable probability for at least one AHA residue to be available for each peptide when the inhibitor of translation (sBlock) is added to the cell medium, enabling the capture of the polypeptide outside the ribosome exit tunnel.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig3-v2.jpg)\n\n**Figure 3.:** (A) Enrichment of a given transcript obtained with AHA-mediated\u00a0RIBOsome isolation\u00a0(AHARIBO) versus global translatome (x-axis) as a function of the theoretical protein length (y-axis) for mouse embryonic stem cells\u00a0(mESCs) (left) and early neurons\u00a0(ENs) (right). Each bar represents the number of enriched transcripts with the defined theoretical protein length. (B) Fraction of coding genes expressed above a minimum threshold in EN. The AHARIBO-rC and global translatome group are represented in yellow and cyan, respectively. For each group, the mean (solid line) and SD (shades) of the fractions for a given count per million (CPM) threshold are calculated over all samples (n\u00a0=\u00a06) in that group. (C) Scatter plot of RNA fold change (global translatome on the left, AHARIBO-rC on the right) compared to protein fold change (AHARIBO-nP) obtained by comparing EN with mESC. N: number of differentially expressed genes\u00a0(DEGs) with p-value<0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Linear plot illustrating the fraction of coding genes (y-axis) expressed above a minimum threshold (x-axis) in mouse embryonic stem cells\u00a0(mESCs). The AHARIBO-rC and the global translatome group are respectively represented in yellow and cyan as indicated. For each group, the mean (solid line) and the SD (shades) of the fractions for a given count per million\u00a0(CPM) threshold are calculated over all samples (n\u00a0=\u00a06) in that group. (B) Histogram showing Pearson\u2019s correlation analysis of AHARIBO-nP protein fold change (EN/mESC) determined by mass spectrometry versus global translatome and AHARIBO-rC RNA fold change (EN/mESC) determined by RNA-seq. N: number of differentially expressed genes\u00a0(DEGs). p-value<0.05. (C) Histogram of the number of DEGs (EN/mESCs) up- and downregulated in AHARIBO-rC RNA or global translatome relative to the AHARIBO-nP proteome. (D) Scatter plot of RNA fold change (global translatome) compared to protein turnover (pSILAC).\u00a0AHARIBO:\u00a0AHA-mediated\u00a0RIBOsome isolation;\u00a0EN:\u00a0early neurons;\u00a0pSILAC:\u00a0pulsed SILAC.\n\nTo further prove the reliability of our method, we measured the efficiency of AHARIBO-rC to capture coding transcripts compared to a global translatome analysis. Using increasing abundance thresholds in EN, we observed that AHARIBO-rC efficiency is comparable to the global translatome for low abundant transcripts in EN and for all transcripts in undifferentiated mESCs (Figure 3\u2014figure supplement 1A). Strikingly, AHARIBO captures abundant transcripts in EN with much higher efficiency than the global translatome (Figure 3B).\n\nFinally, we tested whether the RNA isolated with AHARIBO-rC can predict the de novo synthesized proteome. After comparing differentially expressed genes (DEGs) during differentiation to the AHARIBO-nP proteome (Figure 3\u2014source data 1), we observed that AHARIBO-rC RNA is a good proxy of the newly synthesized proteome (Pearson\u2019s correlation r\u00a0=\u00a00.75, Figure 3C,Figure 3\u2014figure supplement 1B). In particular, we found that AHARIBO-rC RNA presents less uncoupled genes (up-RNA and down-protein or down-RNA and up-protein) than the global translatome (Figure 3\u2014figure supplement 1C), thus faithfully recapitulating proteome changes. The correlation of the global translatome with the global protein turnover measured with pSILAC shows a Pearson\u2019s r\u00a0=\u00a00.27 (Figure 3\u2014figure supplement 1D, Figure 3\u2014source data 2). This result demonstrates that AHARIBO-nP does reflect the labeling of peptides rather than completely synthesized proteins.\n\n### Combined AHARIBO approaches define the functional role of lncRNAs in translation\n\nBased on the evidence that a combination of AHARIBO approaches can simultaneously detect RNAs under active translation and peptides in the process of being produced, we applied our methods to detect ribosome-associated and translated native lncRNAs.\n\nIn AHARIBO-rC data, we identified a total of 687 lncRNA genes in mESCs and about 400 differentially expressed (DE) lncRNAs during neuronal differentiation (Figure 4\u2014figure supplement 1A, Figure 4\u2014source data 1). Among the top\u00a0five DE lncRNAs (fold change\u00a0>10; p-value<1\u00d710\u221210), we found Pantr1 and Lhx1os, known to be involved in neuronal development (Biscarini et al., 2018; Carelli et al., 2019). To identify potentially translated lncRNAs, we applied the abundance threshold analysis to the subset of AHARIBO-rC non-coding RNAs in common with a published dataset (n\u00a0=\u00a0270) of lncRNA identified by ribosome profiling data in mESCs (Ingolia et al., 2011; Figure 4\u2014figure supplement 1B). The analysis of 100 lncRNAs in common between the two datasets showed a stronger enrichment of ribosome footprints in the AHARIBO-rC than in the global translatome (Figure 4A, Figure 4\u2014figure supplement 1C). Altogether, these results suggest that a fraction of non-coding transcripts, which is efficiently isolated with AHARIBO-rC, is potentially translated.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig4-v2.jpg)\n\n**Figure 4.:** (A) Linear plot illustrating the fraction of non-coding genes expressed above a minimum threshold in early neurons\u00a0(EN).\u00a0The AHARIBO-rC and the global translatome group are represented in yellow and cyan, respectively. For each group, the mean (solid line) and the SD (shades) of the fractions for a given count per million\u00a0(CPM) threshold are calculated over all samples (n\u00a0=\u00a03) in that group. Expression values are indicated as normalized CPM. AHARIBO-rC was performed on the ribosome pellet after sucrose cushioning. (B) Venn diagram of the number of lncRNAs genes with at least 1 CPM identified by RNA-seq, AHARIBO-rC, RIBO-seq, and\u00a0AHARIBO RIBO-seq. (C) Classification of lncRNAs interacting with ribosomes and relative detection through the multiple AHARIBO and standard approaches. ND: no detection of protein synthesis. (D) (Left) Schematic representation of the number of mouse embryonic stem cell\u00a0(mESC) lncRNAs in common between AHARIBO RIBO-seq, AHARIBO-rC RNA, and\u00a0standard RIBO-seq. These lnRNAs were validated by liquid chromatography-mass spectrometry\u00a0(LC-MS). (Right) Example\u00a0of an AHARIBO RIBO-seq ribosome occupancy profile of lncRNA 1810058I24Rik displaying the reads distribution along the entire transcript and the accumulation of reads at the known short open reading frame (shadow area and blue arrow on top).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Number of up- and downregulated differentially expressed non-coding RNAs in the global translatome and AHARIBO-rC RNA. DE: differentially expressed;\u00a0ncRNA: non-coding RNA. (B) Venn diagram representing the number of differentially expressed lncRNAs identified by AHARIBO-rC (orange) and number of lncRNAs with at least 1 count per million\u00a0(CPM) in Ingolia et al., 2011 (blue). (C) Linear plot illustrating the fraction of non-coding genes (y-axis) expressed above a minimum threshold (x-axis) in mouse embryonic stem cells\u00a0(mESCs) (left) and early neurons\u00a0(ENs) (right). The AHARIBO-rC and the global translatome group are respectively represented in yellow and cyan as indicated. For each group, the mean (solid line) and the SD (shades) of the fractions for a given CPM threshold are calculated over all samples (n\u00a0=\u00a06) in that group.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Percentage of ribosome P-sites mapping to the 5\u2032 UTR, coding sequence (CDS), and 3\u2032 UTR of mRNA from AHARIBO RIBO-seq and standard RIBO-seq data. The percentage length of each mRNA region is indicated on the right-hand y-axis. (B) Data correlation of AHARIBO RIBO-seq and standard RIBO-seq (performed on the input) obtained in mouse embryonic stem cells\u00a0(mESCs). Results are representative of two independent replicates for each method. (C) Percentage of P-sites according to the three reading frames for the 5\u2032 UTR, 3\u2032 UTR, and CDS for AHARIBO RIBO-seq data, reflecting the codon periodicity along the CDS.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59303/elife-59303-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Representative data of three different lncRNAs (from left to right) displaying massive hallmarks of translation along the entire transcript. In silico translation in three different frames (from top to bottom) was performed to predict potential peptide. Shadow area: predicted in silico micropeptides. The lncRNA reported are representative of a list of translated lncRNA identified by the combination of AHA-mediated\u00a0RIBOsome isolation\u00a0(AHARIBO) approaches (between brackets the unique peptide or the number of putative peptides predicted): ENSMUST00000051089 (NSFVNDIFER), ENSMUST00000181328 (KIDNQINLPK), ENSMUST00000181149 (KINQLQNMVKDNK), ENSMUST00000099446 (NLMNVINVVKLLHFS), ENSMUST00000180524 (MSPSQLLELKRNQ), ENSMUST00000182499 (VCVALIINICHIMI), ENSMUST00000134140 (NGGGLLMSYVIK), ENSMUST00000180432 (ELAEQPSSALKTSNREQ), ENSMUST00000181251 (QLTDNQRVNQKA), ENSMUST00000179344 (KELQLK), ENSMUST00000181443 (KGPNDISLAQSYLPI), ENSMUST00000071101 (KNNPPPQNAKPK), ENSMUST00000180407 (IELRENLQTY), ENSMUST00000180489 (EISASANLELNGAPSQQ), ENSMUST00000188038 (LALEELR), ENSMUST00000149246 (LLLPGVIK), ENSMUST00000180396 (23), ENSMUST00000181751 (61), ENSMUST00000182010 (43), ENSMUST00000192833 (94), ENSMUST00000200021 (27), ENSMUST00000223012 (86).\n\nTo understand if and how lncRNAs interact with ribosomes, we performed ribosome profiling experiments after AHARIBO pulldown (named AHARIBO RIBO-seq), with parallel standard RNA-seq (on inputs) analysis in mESCs. For protein-coding genes, both standard and AHARIBO RIBO-seq show an enrichment of RPFs in the coding sequence (Figure 4\u2014figure supplement 2A). The two datasets show high correlation (Figure 4\u2014figure supplement 2B) and the expected codon periodicity in the coding sequence in AHARIBO RIBO-seq (Figure 4\u2014figure supplement 2C). These results further confirm the capability of AHARIBO in capturing ribosomes. With AHARIBO RIBO-seq, we identified a list of lncRNAs covered by ribosome footprints (Figure 4\u2014source data 2). By intersecting our AHARIBO RIBO-seq data with those obtained from standard methods (RIBO-seq and RNA-seq after sucrose cushioning) or AHARIBO-rC, we identified 125 common putative translated lncRNAs (Figure 4B). Some of these lncRNA (n\u00a0=\u00a019) are known to be translated in mouse tissue (van Heesch et al., 2019). The vast majority of these lncRNAs do not have a\u00a0known function. Two of the identified lncRNAs (9330151L19Rik and Gm9776) were detected only by standard RIBO-seq and RNA-seq but not with AHARIBO (Figure 4C). This result may be due to the absence of translation events (i.e., transcripts loaded with idle ribosomes). Next we validated the coding potential of lncRNAs that are in common between AHARIBO and standard RIBO-seq (Figure 4D). We translated in silico the transcripts in all frames to find potential ORFs with a canonical start codon (AUG). Translated sequences were semi-trypsin-digested in silico and then manually annotated to find confident matching spectra from the AHARIBO-nP protein dataset. Out of the about 46,000 collected spectra (Figure 4\u2014source data 3), our MS-based proteomics analysis detected peptides with highly corresponding ribosome footprints (e.g., Gm42743, Gm26518, B230354K17Rik, D030068K23Rik, 1810058I24Rik). From the list of 129 lncRNAs that are in common among all AHARIBO protocols and standard RIBO-seq (Figure 4D), we identified by MS analysis a micropeptide (Mm47) of 47 aa (Figure 4D) at a high degree of confidence. This micropeptide derives from a lncRNA expressed in murine macrophages, and recently characterized by an independent group (Bhatta et al., 2020) as a relevant peptide able to modulate the innate immunity in mice. Several other lncRNAs show high confidence of translation events with in silico prediction even if they were not perfectly matching our proteomic spectra (Figure 4\u2014figure supplement 3), paving the way for a better characterization of translatable lncRNA that has not been reported before. These results, combined with (1) AHARIBO\u2019s efficiency in detecting an ectopically expressed micropeptide (TUG1-BOAT) and (2) concordance with recently published data, prove that our approach could be useful to unravel translation events in lncRNAs that are misannotated as non-coding. Altogether, our data confirm that our three diverse and complementary AHARIBO approaches represent a unique method to identify ribosome-associated and translated RNAs.\n\n## Discussion\n\nLncRNAs localize in the nucleus or in the cytoplasm. In the nucleus, they modulate transcription, pre-mRNA splicing, or act as scaffold for protein interaction during chromatin organization (Sun et al., 2018). In the cytoplasm, the majority of lncRNAs is associated with polysomes (Carlevaro-Fita et al., 2016), where they either can or cannot produce proteins (Chen et al., 2020; Ingolia et al., 2011). Numerous lncRNAs are misannotated as non-coding but contain short ORFs encoding for micropeptides with biological relevance in cancer (D'Lima et al., 2017; Huang et al., 2017), bone development (Galindo et al., 2007), immunity (van Solingen et al., 2018), metabolism (Magny et al., 2013; Nelson et al., 2016), and DNA repair (Slavoff et al., 2014). Different methodological approaches have been developed to quantify the variations of RNA abundance by sequencing or imaging techniques (Blumberg et al., 2019; Jao and Salic, 2008; Morisaki et al., 2016; Wu et al., 2016), RNA engagement with the translational machinery by RIBO-seq or polysomal profiling (Arava et al., 2003; Clamer et al., 2018; Eden et al., 2011; Taniguchi et al., 2010), and protein synthesis by mass spectrometry or metabolic labeling (Aviner et al., 2013; Dieterich et al., 2006; Schwanh\u00e4usser et al., 2009; Yan et al., 2016). Despite these advantages, available technologies hardly capture in a single experiment the dynamics of translation across multiple biological conditions, the translation of unannotated coding transcripts, and translation-related functions of lncRNAs. Now that it is widely accepted that a portion of the genome annotated as non-coding can result in a complex transcriptome partially engaged with ribosomes (Chen et al., 2020; Djebali et al., 2012; Iyer et al., 2015), RNA sequencing and ribosome profiling should include micropeptide detection.\n\nOur data show that AHARIBO serves as a flexible tool to detect translated RNAs, identify lncRNAs bound to elongating ribosomes, and detect de novo synthesized proteins. The intersection of standard RIBO-seq, RNA-seq, and AHARIBO approaches allowed us to identify translated lncRNAs. We demonstrated that AHARIBO is efficient in capturing short translated open reading frames, both native or ectopically expressed. Although LC-MS technologies are not as sensitive as RNA sequencing, we successfully identified a mouse-specific micropeptide reported to originate from a native lncRNA ORF, confirming the effectiveness of AHARIBO. To overcome existing limitations in LC-MS detection, many other translation events on lncRNAs can be predicted combining AHARIBO approaches with in\u00a0silico translation of the identified leads. This approach would likely allow to selectively validate a list of still uncharacterized lncRNAs. Although the unlabeled background cannot be avoided, a pre-cleaning of the cell lysate with a cushioning step can help to increase the resolution with difficult samples. Moreover, a puromycin treatment instead of sBlock could be added as control in proteomic experiments. A unique feature of AHARIBO is the possibility to simultaneously isolate ribosomes, RNA engaged with ribosomes, and the corresponding proteins produced. Besides the versatility of the method, AHA labeling has the advantage of minimal interference with protein synthesis (Hodas et al., 2012; Tom Dieck et al., 2012).\n\nThe most prominent limitation of the method relies on the methionine starvation required for efficient AHA incorporation (Calve et al., 2016; Hodas et al., 2012; Saleh et al., 2019). This step can modify the physiological conditions of the cell and needs to be taken into consideration when planning experiments requiring certain stimuli (e.g., drug treatment) during methionine depletion. The conditions used in the AHARIBO protocol give robust protein labeling, but AHA concentration can be conveniently tuned based on specific cell types or biological questions.\u00a0Additionally, we observed that there are still challenges for LC-MS verification of putative lncRNA peptides identified with AHARIBO. Of note, a potential contribution from background signal needs to be taken into consideration in LC-MS and Ribo-seq analysis.\n\nWith AHARIBO we introduce a strategy for the selective isolation of active ribosomes using the nascent peptide chain as bait for a\u00a0more comprehensive interrogation of lncRNA biology and proteogenomic studies. Overall, we provide evidence that AHARIBO is a comprehensive and reliable toolkit suitable for downstream parallel RNA-seq, RIBO-seq, and LC-MS analysis, empowering scientists to shed light on the functional complexity of translation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>Papillomavirus-related endocervical adenocarcinoma</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>46C embryonic stem cells</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_Y482</td>\n      <td>Quattrone A. Lab. (CIBIO)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b23-tubulin (mouse monoclonal)</td>\n      <td>Promega</td>\n      <td>Cat. #G712A RRID:AB_430874</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Oct4 (mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnologies</td>\n      <td>Cat. #SC 5279 RRID:AB_628051</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human RPL26 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #ab59567 RRID:AB_945306</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human RPS6 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #ab40820 RRID:AB_945319</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human beta actin (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat. #ab8227 RRID:AB_2305186</td>\n      <td>(1:2000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>WT TUG1-BOAT (plasmid)</td>\n      <td>PMID:32894169</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>\u0394 TUG1-BOAT (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See 'Materials and methods section: 'TUG1-BOAT ectopic expression and qPCR\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>+1Met TUG1-BOAT (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See 'Materials and methods' section: 'TUG1-BOAT ectopic expression and qPCR\u2019</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Precision Protein StrepTactin-HRP Conjugate</td>\n      <td>BioRad</td>\n      <td>Cat. #1610380</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-Arginine-13C6,15N4 hydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #608033</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-Lysine-13C6,15N2 hydrochloride</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #608041</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-Azidohomoalanine (Click-IT AHA)</td>\n      <td>Invitrogen</td>\n      <td>Cat. #C10102</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dibenzocyclooctyne-PEG4-biotin conjugate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #760749SML1656</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>sBlock</td>\n      <td>IMMAGINA BioTechnology</td>\n      <td>Cat. #SM8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat. #P8833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma-Aldrich</td>\n      <td>#C4859</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 3000 Transfection Reagent</td>\n      <td>Thermo Fisher\u00a0Scientific.</td>\n      <td>Cat. #L3000001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Mag-DBCO beads</td>\n      <td>IMMAGINA BioTechnology</td>\n      <td>Cat. #MDBCO</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>eMagSi-cN beads</td>\n      <td>IMMAGINA BioTechnology</td>\n      <td>#018-eMS-001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>commercial assay or kit</td>\n      <td>SMART-Seq Stranded Kit</td>\n      <td>Takara</td>\n      <td>Cat. #634443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript III Reverse Transcriptase</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. #18080044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Kapa Probe Fast Universal qPCR Kit</td>\n      <td>Kapa Biosystems</td>\n      <td>#KK4702</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image analysis</td>\n      <td>ImageJ</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Statistical package</td>\n      <td>edgeR</td>\n      <td>RRID:SCR_012802</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culturing and treatments\n\nFor protocol development, optimization, and validation, HeLa cells were used. HeLa cells were maintained on adherent plates in Dulbecco's modified Eagle's medium (DMEM; EuroClone #ECM0728L) supplemented with 10% fetal bovine serum, 2 mM L-glutamine, 100 units/mL penicillin, and 100 \u00b5g/mL streptomycin at 37\u00b0C, 5% CO2. For passaging, cells were washed with 1\u00d7 Phosphate-Buffered Saline\u00a0(PBS), detached using 0.25% trypsin-EDTA, and spun down at 260 \u00d7 g for 5 min.\n\nFor treatments, 250,000\u2013400,000 HeLa cells per well were seeded in six-well plates and grown to 80% confluence. At the time of treatment, culture medium was removed and cells were washed once with warm 1\u00d7 PBS. Subsequently, cells were incubated with Dulbecco's modified Eagle's limiting medium (DMEM-LM; Thermo Scientific #30030) supplemented with 10% fetal bovine serum and 800 \u00b5M L-leucine for 40 min to deplete methionine reserves. Methionine-free medium was then supplemented with L-azidohomoalanine (Click-IT AHA; Invitrogen #C10102) at a final concentration of 250 \u00b5M and incubation time (ranging from 10 min to 120 min; 30 min set as incubation time for the protocol). Cells were then treated with 1\u00d7 sBlock (IMMAGINA BioTechnology, catalog no. #RM8; sBlock is an anisomycin-containing proprietary reagent) for 10 min. Then, six-well plates were placed on ice, medium was removed, and cells were washed once with cold 1\u00d7 PBS supplemented with 1\u00d7 sBlock. After removing residual PBS with a pipette, hypotonic lysis buffer (0.01 M NaCl, 0.01 M MgCl2, 0.01\u00a0M Tris-HCl, 1% Tx-100, 1\u00d7 sBlock, 1% sodium deoxycholate, 5 units/mL DNAse I [Thermo Scientific #89836], 200 units/mL RiboLock RNase Inhibitor [Thermo Scientific #EO0381], 1\u00d7 Protease Inhibitor Cocktail [Cell Signaling Technology #5871S]) was added to each well, and cells were lysed with the aid of a scraper. After hypotonic lysis, nuclei and cellular debris were removed by centrifuging at 18,000 \u00d7 g, 4\u00b0C for 5 min. For quantification of the total absorbance value of cell lysates, the absorbance was measured (260 nm) using a Nanodrop ND1000 UV-VIS Spectrophotometer. Lysates were aliquoted and processed directly or stored at \u221280\u00b0C.\n\nArsenite pre-treatment was performed by\u00a0adding sodium arsenite (Sigma-Aldrich #S7400) at a final concentration of 500 \u00b5M for 1 hr.\n\nFor RNA-seq and proteomics experiments, two biological settings were assessed in triplicate experiments: (1) undifferentiated mouse 46C embryonic stem cells (mESCs) (Ying et al., 2003) and (2) mESCs induced to differentiate into ENs. mESCs were maintained in mESC self-renewal medium composed of Glasgow\u2019s MEM (Thermo Scientific #11710-035) supplemented with 1000 units/mL ESGRO Recombinant Mouse LIF protein (Millipore #ESG1107), 10% fetal bovine serum, 55 \u03bcM 2-mercaptoethanol, 1 mM sodium pyruvate (Thermo Scientific #11360070), MEM non-essential amino acids (Thermo Scientific #11140050), GlutaMax (Thermo Scientific #35050061), and penicillin/streptomycin. For passaging, mESCs were washed twice with 1\u00d7 PBS, detached using 0.02\u20130.05% trypsin-EDTA, and spun down at 260 \u00d7 g for 3 min. Pellet was resuspended in fresh medium and plated onto 0.1% gelatin-coated culture vessels.\n\nFor treatments, 5 \u00d7 105 mESCs/cm2 were seeded in Petri dishes and grown to 60% confluence. For pSILAC proteomics, 24 hr before lysis mESCs were washed twice with 1\u00d7 PBS and the medium was replaced with SILAC Advanced DMEM/F-12 Flex Medium (Thermo Scientific #A2494301), supplemented with 1000 units/mL ESGRO Recombinant Mouse LIF protein, 10% dialyzed fetal bovine serum, 4500 mg/L glucose, 17.25 mg/L proline, and penicillin/streptomycin. Either light or heavy L-arginine (Sigma-Aldrich #608033) and L-lysine (Sigma-Aldrich #608041) were added at 84 mg/L and 146 mg/L, respectively. For both AHA+ proteomics and RNA-seq experiments, treatments were performed as described above for HeLa cells, with the exception that methionine-free medium was supplemented with 1000 units/mL ESGRO Recombinant Mouse LIF protein and 10% dialyzed fetal bovine serum. After methionine depletion, cells were treated with 250 \u00b5M AHA for 30 min. The remaining treatment steps and hypotonic lysis were performed as detailed above.\n\nNeuronal differentiation was performed according to a previously described protocol\u00a0(Ying et al., 2003). Briefly, 2.000 mESCs/cm2 were seeded on gelatin-coated culture vessels in N2B27 medium. Cells were gently washed with 1\u00d7 PBS, and medium was renewed every 1\u20132 days until 15DIV. N2B27 medium is composed of 1:1 mix of DMEM/F-12 (Thermo Scientific #21331020) and Neurobasal Medium (Thermo Scientific #21103049), supplemented with 0.5% N-2 (Thermo Scientific #17502048), 1% B-27 (Thermo Scientific #17504044), GlutaMax, and penicillin/streptomycin.\n\nUpon differentiation, ENs were treated directly in culture vessels. For pSILAC proteomics, 24 hr before lysis ENs were washed once with 1\u00d7 PBS and the medium was replaced with SILAC Advanced DMEM/F-12 Flex Medium, supplemented with 0.5% N2, 1% B27, 4500 mg/L glucose, 17.25 mg/L proline, and penicillin/streptomycin, 4500 mg/L glucose, 17.25 mg/L proline, and penicillin/streptomycin. Either light or heavy L-arginine and L-lysine were added at 84 mg/L and 146 mg/L, respectively. For both AHA+ proteomics and RNA-seq experiments, ENs were treated as described above for HeLa cells, with 250 \u00b5M AHA for 30 min. The remaining treatment steps and hypotonic lysis were performed as detailed above.\n\nCell lines were purchased directly from ATCC and passaged fewer than 15 times. Mus musculus 46C ES were obtained from Quattrone A. Lab (CIBIO, RRID:CVCL_Y482). All cells tested negative for mycoplasma contamination.\n\n### Immunocytochemistry\n\nFor immunofluorescence assay, cells were fixed with 4% paraformaldehyde for 15 min at room temperature, permeabilized using 0.5% Triton X-100 in 1\u00d7 PBS for 15 min at room temperature, and blocked using 5% fetal bovine serum, 0.3% Triton X-100 in 1\u00d7 PBS for 2 hr at room temperature. Cultures were then incubated overnight at 4\u00b0C with either anti-\u03b23-tubulin (Promega #G712A) or anti-Oct4 (Santa Cruz Biotechnologies #SC-5279) primary antibodies diluted in 2% fetal bovine serum, 0.2% Triton X-100 in 1\u00d7 PBS. Cells were then washed three times with 1\u00d7 PBS and incubated with Alexa-555 anti-mouse secondary antibodies for 2 hr. Nuclei were counterstained with Hoechst 33258 before imaging with a Zeiss Axio Observer Z1 inverted microscope equipped with a 2.83 Megapixel AxioCam 503 mono D camera.\n\n### AHARIBO-rC/AHARIBO-nP: purification of active ribosomes for RNA/protein isolation\n\nFor RNA-seq experiments, lysates were diluted in W-buffer (10 mM NaCl, 10 mM MgCl2, 10 mM HEPES, 1\u00d7 sBlock) to a final Nanodrop-measured absorbance (260 nm) of 1\u20132 a.u./mL, supplemented with 40 U of Superase-In RNase Inhibitor (Thermo Scientific #AM2696) and incubated with dibenzocyclooctyne-PEG4-biotin conjugate (Sigma-Aldrich #760749; 50 \u00b5M final concentration) in a reaction volume of 100 \u00b5L for 1 hr on a rotator in slow motion (9 rpm) at 4\u00b0C. Lysates were then incubated with 50 \u00b5L of eMagSi-cN beads (IMMAGINA BioTechnology #018-eMS-001) for 30 min at 4\u00b0C on the rotator in slow motion (9 rpm). Subsequently, samples were taken off the rotator and placed on a magnetic rack on ice, and supernatants were discarded. Beads were washed two times with 500 \u00b5L of 1\u00d7 PBS supplemented with 0.1% Triton-X100, 1\u00d7 sBlock, and 1:10,000 RiboLock RNase Inhibitor (Thermo Scientific #EO0381) on the rotator in slow motion at 4\u00b0C, removing supernatants from the tubes sitting on the magnetic rack and gently adding new washing solution each time. After the final wash, beads were resuspended in 200 \u00b5L of W-buffer and transferred to a new vial. Then, 20 \u00b5L of 10% SDS and 5 \u00b5L of Proteinase K (Qiagen #19131) were added to each sample, and samples were incubated at 37\u00b0C for 75 min in a water bath. Subsequently, suspensions were transferred to a new vial, and acid phenol:chloroform:isoamyl alcohol RNA extraction was performed. Briefly, an equal volume of acid phenol:chloroform:isoamyl alcohol (pH 4.5) was added, and samples were vortexed and centrifuged at 14,000 \u00d7\u00a0g for 5 min. Aqueous phases were then transferred to new vials, 500 \u00b5L of isopropanol and 2 \u00b5L of GlycoBlue (Thermo Scientific #AM9516) were added, samples were mixed and incubated at room temperature for 3 min, and then stored overnight at \u221280\u00b0C. The following day samples were centrifuged at 14,000 \u00d7 g for 30 min, supernatants were removed, 500 \u00b5L of 70% ethanol were added to each sample, and samples were then centrifuged at 14,000 \u00d7 g for 10 min. Finally, pellets were air-dried and resuspended in 10 \u00b5L of nuclease-free water. When quality check and quantification was needed, RNA samples were run on a 2100 Bioanalyzer (Agilent) using the Agilent RNA 6000 Nano Reagents kit (Agilent #5067\u20131511) and assayed on the Qubit fluorometer using the Qubit RNA HS Assay Kit (Thermo Scientific #Q32852). For visualization of total RNA patterns, samples were run on a 1% agarose gel. ImageJ software (v 1.45s) was used for\u00a0the quantitation of signal intensities of ribosomal RNA bands.\n\nFor proteomics experiments, lysates were diluted in W-buffer to a final Nanodrop-measured absorbance (260 nm) of 1\u20132 a.u./mL in a final volume of 100 \u00b5L. Ribosome pulldown was performed using Mag-DBCO beads (IMMAGINA BioTechnology #MDBCO). Lysates were incubated with 50 \u00b5L of beads for 1 hr on a rotator in slow motion (9 rpm) at 4\u00b0C. Supernatants were discarded after placing samples on the magnetic rack. Beads were washed three times with 500 \u00b5L of 200 mM Tris, 4% CHAPS, 1 M NaCl, 8\u00a0M urea, and\u00a0pH 8.0 at room temperature on a shaker at 1000 rpm, using the magnetic rack to replace the washing solution. After the final wash, beads were resuspended in 30 \u00b5L of water and transferred to a new vial.\n\n### qRT-PCR analysis\n\nTotal RNA was extracted from samples processed through the AHARIBO-rC protocol as described above. Depending on the available input material, RNA was retrotranscribed using either RevertAid First Strand cDNA Synthesis Kit (Thermo Scientific #K1621) or SuperScript III Reverse Transcriptase (Thermo Fisher #18080044), per manufacturer's protocols. qPCR was run on CFX Connect Real-Time PCR Detection System (BioRad) using Kapa Probe Fast Universal qPCR Kit (Kapa Biosystems #KK4702). Reactions were performed in technical duplicates of biological triplicates. The following TaqMan probes were used: Hs99999901_s1 (18S), Hs02800695_m1 (HPRT1).\n\nFor the\u00a0normalization of qRT-PCR results, HPRT1 was used as housekeeping gene. The fold change in normalized 18S RNA levels between untreated (control) and treated (arsenite) samples was calculated. A second normalization to threshold cycles from non-AHA-treated samples was done to account for background signal.\n\n### TUG1-BOAT ectopic expression and qPCR\n\nWe ectopically express the putative protein produced by the open reading frame of TUG1, called TUG1-BOAT (Tug1-Bifunctional ORF and Transcript), in HeLa cells. Briefly, construct generation and transfection was performed as in Lewandowski et al., 2020 with some minor changes to adapt the experimental setup to the AHARIBO method. We synthesized three different constructs for human Tug1 ORF1 (Thermo Scientific):\n\nWe cloned the constructs in the pcDNA3.1(+) plasmid with HindIII and EcoRV restriction enzymes. For transfection of TUG1-BOAT constructs, we seeded HeLa cells in a six-well plate and\u00a0transfected the cells with 2.5 \u03bcg of plasmids (pcDNA3.1(+) containing each of the inserts) using 742 Lipofectamine 3000 Transfection Reagent (Thermo Fisher Scientific). After 24 or 48 hr post transfection, cells were processed with AHARIBO-rC protocol followed by RNA extraction.\n\nWe performed qPCR analysis on AHARIBO pulldowns and input for each vector to validate the efficiency in capturing short translated ORF deriving from RNA annotated as lncRNA (TUG1). Briefly, 200 ng of DNase I-treated RNA was used as input to generate cDNA using High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems), according to the manufacturer's protocol. qPCR was run on CFX Connect Real-Time PCR Detection System (BioRad) using Powerup Sybr Master Mix (Applied Biosystems) and a couple of primers design to amplify 150 nt of the CDS of TUG1-BOAT transcript (see below). Reactions were performed in technical duplicates of biological duplicates. For normalization, 18S was used as housekeeping gene. Ct values were analyzed using the \u2206\u2206Ct method (Livak and Schmittgen, 2001).\n\nTUG1-BOAT sequences are listed below:\n\nItalics: 5\u2032 UTR leader sequence; bold: canonical and non-canonical start codons; red: methionine.\n\n### RNA-seq\n\nRNA samples were subjected to library preparation for the Illumina platform using the SMART-Seq Stranded Kit (Takara #634443) as per\u00a0manufacturer's instructions using 5 ng of RNA as starting material. For quality check and quantification, the final libraries were run on a 2100 Bioanalyzer (Agilent) using the Agilent DNA 1000 Kit (Agilent #5067-1504) and assayed on the Qubit fluorometer using the Qubit dsDNA HS Assay Kit (Thermo Scientific #Q32851). Libraries were sequenced on an Illumina HiSeq2500 by the NGS Core Facility (University of Trento).\n\n### Polysome profiling\n\nHeLa cells were treated and lysed as described above, adding one of\u00a0the following blocking drugs: (1) sBlock (IMMAGINA BioTechnology #SM8, final concentration 1\u00d7, 10 min treatment); (2) cycloheximide (Sigma-Aldrich #C4859; final concentration 30 \u00b5M, 5 min treatment); (3) puromycin (Sigma-Aldrich #P8833; final concentration 50 \u00b5M, 5 min treatment); and\u00a0(4) no blocking drug. Cleared supernatants obtained from cytoplasmic lysates were loaded on a linear 15\u201350% sucrose gradient and ultracentrifuged in a SW41Ti rotor (Beckman) for 1 hr and 40 min at 180,000 \u00d7 g at 4\u00b0C in a Beckman Optima LE-80K Ultracentrifuge. After ultracentrifugation, gradients were fractionated in 1 mL volume fractions with continuous absorbance monitoring at 254 nm using an ISCO UA-6 UV detector. Each fraction was flash-frozen in liquid nitrogen and stored at\u00a0\u221280\u00b0C for subsequent protein extraction.\n\nPolysome profiles were analyzed as follows. The relative intensity of each individual fraction was determined for both on-membrane AHA and RPL26 signals, then the AHA/RPL26 relative intensity ratio was calculated for each fraction. For each profile, the relative intensity ratios of polysome-containing fractions (fractions 8/9\u201310/11) were averaged and normalized to the relative intensity ratio of the 60S fraction, which was chosen as internal baseline for background signal based on the fact that it should be devoid of translationally active ribosomes. To assess the effect of the different blocking drugs, averaged normalized relative intensity ratios for the profiles obtained from different blocking drugs and from the untreated control sample were compared. ImageJ software (v 1.45s) was used for quantitation of signal intensities of protein bands.\n\n### Sucrose cushioning for ribosome enrichment (global translatome)\n\nHeLa cells were treated in Petri dishes and lysed as described above, adding 1\u00d7 sBlock as blocking drug. Sucrose cushioning was performed according to a modified version of a previously described protocol (Ingolia et al., 2012). For each sample, a volume of cell lysate corresponding to 1.7 a.u. (based on Nanodrop measurement of absorbance at 260 nm) was layered on top of 900 \u00b5L of 30% sucrose cushion (30 mM Tris-HCl pH 7.5, 100 mM NaCl, 10 mM MgCl2, 1\u00a0M sucrose in nuclease-free water) supplemented with 1\u00d7 sBlock. Samples were ultracentrifuged at 95,000 rpm at 4\u00b0C for 1 hr and 40 min using a TLA100.2 rotor (Beckman). Pellets were resuspended in 100 \u00b5L of nuclease-free water supplemented with 30 mM Tris-HCl, pH 7.5, 100 mM NaCl, 10 mM MgCl2.\n\n### Protein extraction from sucrose gradient fractions\n\nPolysomal fractions (1 mL) or pellet/supernatant fractions from 30% sucrose cushioning (1/5th of total amount, adjusted to 260 \u00b5L volume) were processed for methanol/chloroform protein extraction. Briefly, 600 \u00b5L of methanol and 150 \u00b5L of chloroform were added to each sample and samples were vortexed. Then, 450 \u00b5L of deionized water were added to each sample and samples were vortexed again. Samples were centrifuged at 14,000 \u00d7 g for 1 min at room temperature, and the resulting aqueous phase was removed without disrupting the underlying white ring (protein interface). Subsequently, 450 \u00b5L of methanol were added to each sample, samples were vortexed, and then centrifuged at 14,000 \u00d7 g for 2 min at room temperature. After centrifugation, supernatants were removed and pellets air-dried. Finally, pellets were resuspended in deionized water supplemented with Pierce Lane Marker Reducing Sample Buffer (Thermo Scientific #39000) to a final volume of 15 \u00b5L and either stored at \u221280\u00b0C or heated at 95\u00b0C and directly used for SDS-PAGE.\n\n### On-membrane click chemistry\n\nCell lysate or protein extracts obtained from sucrose gradient fractions were supplemented with Pierce Lane Marker Reducing Sample Buffer (Thermo Scientific #39000), heated at 95\u00b0C for 10 min, and separated by SDS-PAGE. Separated proteins were transferred to nitrocellulose membranes, then membranes were blocked overnight at 4\u00b0C in 5% milk prepared in 1\u00d7 Tris-Buffered Saline\u00a0(TBS)\u00a0\u2212 0.1% Tween20 supplemented with dibenzocyclooctyne-PEG4-biotin conjugate (Sigma-Aldrich #760749; 50 \u00b5M final concentration). Membranes were washed three times in 1\u00d7 TBS\u00a0\u2212 0.1% Tween20 for 10 min each, then incubated with Precision Protein StrepTactin-HRP Conjugate (BioRad #1610380; 1:1000 in 5% milk prepared in 1\u00d7 TBS\u00a0\u2212 0.1% Tween20) for 1 hr at room temperature, then washed again. Membranes were subsequently developed using Amersham ECL Prime Western Blotting Detection Reagent (GE Healthcare #RPN2236). Images were acquired through the ChemiDoc MP Imaging System. ImageJ software (v 1.45s) was used for quantitation of AHA signal intensities.\n\n### Immunoblotting\n\nAliquots of 10\u201320 \u00b5L of cell lysate or protein extracts obtained from sucrose gradient fractions were supplemented with Pierce Lane Marker Reducing Sample Buffer (Thermo Scientific #39000), heated at 95\u00b0C for 10 min, and separated by SDS-PAGE. Separated proteins were transferred to nitrocellulose membranes, then membranes were blocked for 1 hr at room temperature in 5% milk prepared in 1\u00d7 TBS\u00a0\u2212 0.1% Tween20. Membranes were subsequently incubated for 1 hr at room temperature with the following primary antibodies, diluted in 5% milk prepared in 1\u00d7 TBS\u00a0\u2212 0.1% Tween20: anti-RPL26 (Abcam #ab59567; 1:2000), anti-RPS6 (Abcam #ab40820; 1:1000), and\u00a0anti-beta-actin (Abcam #ab8227; 1:2000). Membranes were washed three times in 1\u00d7 TBS\u00a0\u2212 0.1% Tween20 for 10 min each, then incubated with the appropriate HRP-conjugated secondary antibodies for 1 hr at room temperature and washed again as before. Membranes were then developed using either Amersham ECL Prime Western Blotting Detection Reagent (GE Healthcare #RPN2236) or SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Scientific #34095), depending on signal intensities. Images were acquired through the ChemiDoc MP Imaging System. ImageJ software (v 1.45s) was used for quantitation of signal intensities of protein bands.\n\n### RNA-seq data analysis\n\nFASTQ files from Illumina HiSeq2500 were first checked for adapters and quality-base distribution using FASTQC tool (http://www.bioinformatics.babraham.ac.uk/projects/fastqc), followed by trimming with Trimmomatic-0.35\u00a0(Bolger et al., 2014) with the following settings: ILLUMINACLIP:ADAPTOR_FILE:2:30:8:1 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15. Prior to sequencing data processing, technical replicates (different sequencing lanes) from the same library were merged together generating a unique FASTQ per sample. Reads were aligned onto mm10 Mouse genome using STAR-2.6.0a (Dobin et al., 2013) with a maximum mismatch of two and default setting for all other parameters. Once uniquely mapped reads were selected, the GRCm38.92 mouse gene annotation from Ensembl (http://www.ensembl.org) was incorporated in the HTSeq-count v0.5.4 (Anders et al., 2015) tool to obtain gene-level counts. Genes with counts per million\u00a0(CPM)\u00a0<1 in all samples were considered as not expressed and hence removed from the analysis. Trimmed mean of M values\u00a0(TMM) (Robinson and Oshlack, 2010) normalization and CPM conversion were then performed to obtain gene expression levels for downstream analyses. For each comparison, differential expression testing was performed using the edgeR-3.20.9 (Robinson et al., 2010) statistical package from Bioconductor. According to the edgeR approach, both common (all genes in all samples) and separate (gene-wise) dispersions were estimated and integrated into a negative binomial generalized linear model to moderate gene variability across samples. Finally, genes having a Log fold\u00a0change higher/smaller than 1.5/\u22121.5 and an FDR-corrected p-value of 0.01 (or smaller) were considered as significant.\n\n### Proteomics experiments\n\nProteomic analysis was performed on samples processed through the pSILAC and AHARIBO workflows, as described above. For pSILAC experiments, cells were prepared as described above (see 'Cell culturing and treatments'). Then,\u00a050 \u03bcg of lysates was subjected to acetone precipitation and protein pellets were dissolved in 50 mM ammonium bicarbonate and 6\u00a0M urea. For AHARIBO enrichment, the beads used for ribosome pulldown were reconstituted in 100 \u00b5L 6\u00a0M urea with 50 mM ammonium bicarbonate.\n\nSamples were reduced using 10 mM DTT, 1,4-Dithiothreitol\u00a0(DTT) for 1 hr at room temperature and alkylated with 20 mM iodoacetamide in the dark for 30 min at room temperature. Subsequently, proteins were digested at room temperature with 0.5 \u03bcg Lys-C (Promega, #VA1170) for 4 hr, after which the solution was diluted four times in 50 mM ammonium bicarbonate. Then,\u00a01 \u03bcg of trypsin (Promega, #V5111) was added to the samples and proteolysis was carried out overnight. Digestion was interrupted by adding 1% trifluoroacetic acid. Samples were then desalted by C18 stage-tip, lyophilized, and resuspended in 20 \u03bcL of buffer A (0.1% formic acid) for LC-MS/MS analysis.\n\nSamples were analyzed using an Easy-nLC 1200 system coupled online with an Orbitrap Fusion Tribrid mass spectrometer (both Thermo Fisher Scientific). Peptides were loaded onto a 25-cm-long Acclaim PepMap RSLC C18 column (Thermo Fisher Scientific, 2 \u00b5m particle size, 100 \u00c5 pore size, id 75 \u00b5m) heated at 40\u00b0C. For pSILAC samples, the gradient for peptide elution was set as follows: 5\u201325% buffer-B (80% acetonitrile, 0.1% formic acid) over 90 min, 25\u201340% over 15 min, 40\u2013100% over 18 min, and 100% for 17 min at a flow rate of 400 nL/min. For AHARIBO pulldown samples, the same steps for peptide elution were set over a total gradient of 80 min. The instrument was set in a data-dependent acquisition mode. The full MS scan was 350\u20131100 m/z in the orbitrap with a resolution of 120,000 (200 m/z) and an AGC target of 1 \u00d7 106. MS/MS was performed in the ion trap using the top speed mode (3 s), an AGC target of 5 \u00d7 103,\u00a0and an HCD collision energy of 30.\n\nMS raw files were analyzed by using Proteome Discoverer (v2.2, Thermo Scientific). MS/MS spectra were searched by the SEQUEST HT search engine against the human or the mouse UniProt FASTA databases (UniProtKB 11/2018). Trypsin was specified as the digestive enzyme. Cysteine carbamidomethylation (+57.021 Da) was set as fixed modification, and\u00a0methionine oxidation (+15.995 Da) and N-term acetylation (+42.011 Da) as variable modifications. SILAC labeling (Lys +8.014 Da, Arg +10.008 Da) was used as quantification method for pSILAC samples. All other values were kept as default.\n\n### Proteomics data analysis\n\nHeteroscedastic T-test was used to assess the significant differences in peptide/protein abundance (p-value lower than 0.05) unless stated otherwise. Data distribution was assumed to be normal, but this was not formally tested. GO and Kyoto Encyclopedia of Genes and Genomes pathway analysis were performed using DAVID version 6.8, PANTHER 14.1, and Enrichr (http://amp.pharm.mssm.edu/Enrichr/).\n\n### Identification of lncRNA peptides from result spectra\n\nSequenced non-coding RNAs were in\u00a0silico translated into amino acid sequences using the EMBOSS Transeq tool from EMBL. Only the three forward frames were translated. Spectra obtained from the AHARIBO enrichment of newly synthesized proteins were searched against a database of typical contaminants like keratins, trypsin, and\u00a0bovine serum albumin provided by MaxQuant (Cox and Mann, 2008). The software utilized for database searching was Proteome Discoverer (v2.4, Thermo Scientific); the non-fragment filter and the Top N Peaks Filter (with N\u00a0=\u00a04 per 100 Da) were also used in the workflow to eliminate noise signals from the MS/MS spectra. The spectra not matching with high confidence this database were searched against the human SwissProt database. Those not matching with both databases were used to match the in\u00a0silico translated database generated by EMBOSS Transeq using semi-specific tryptic cleavage to consider also unexpected translation start sites. We considered only those spectra that passed the 1% FDR threshold and created two distinct groups for those peptides with an AUG \u2018in-frame\u2019 versus not in-frame.\n\n#### Ribosome profiling\n\nmESCs at 80% confluence were pre-treated with the elongation inhibitor cycloheximide before rapid harvest on ice and cell lysis (lysis buffer, IMMAGINA BioTechnology #RL001-1). Clarified cell lysates (1.7 total a.u., measured by Nanodrop) were treated with 1.3 U of RNase I (Thermo, #AM2295) in W-buffer (IMMAGINA BioTechnology #RL001-4) containing 1\u00d7 sBlock to digest RNA not protected by ribosomes. Digestion was performed for 45 min at RT and then stopped with Superase-In RNase Inhibitor (Thermo Scientific #AM2696) for 10 min on ice. Samples were then processed differentially according to the specific approaches described below.\n\n#### Standard RIBO-seq\n\n80S ribosomes were isolated by centrifuging lysates through a 30% sucrose cushion at 95,000 rpm, for 2 hr at 4\u00b0C. The cushion was resuspended in W-buffer and treated with SDS 10% (final 1%) and 5 \u00b5L of proteinase K (20 mg/mL), and incubated at 37\u00b0C in a water bath for 75 min before acid phenol:chloroform:isoamyl alcohol (pH 4.5) RNA extraction.\n\n#### AHARIBO RIBO-seq\n\nThe lysates were incubated with dibenzocyclooctyne-PEG4-biotin conjugate (Sigma-Aldrich #760749; 50 \u00b5M final concentration) in a reaction volume of 100 \u00b5L for 1 hr on a rotator in slow motion (9 rpm) at 4\u00b0C. Lysates were then incubated with 50 \u00b5L of eMagSi-cN beads (IMMAGINA BioTechnology #018-eMS-001) for 30 min at 4\u00b0C on the rotator in slow motion (9 rpm). Subsequently, samples were taken off the rotator and placed on a magnetic rack on ice, and supernatants were discarded. Beads were washed two times with 500 \u00b5L of 1\u00d7 PBS supplemented with 0.1% Triton-X100, 1\u00d7 sBlock, and 1:10,000 RiboLock RNase Inhibitor (Thermo Scientific #EO0381) on the rotator in slow motion at 4\u00b0C, removing supernatants from the tubes sitting on the magnetic rack and gently adding new washing solution each time. After the final wash, beads were resuspended in 200 \u00b5L of W-buffer and transferred to a new vial. Then, 20 \u00b5L of 10% SDS and 5 \u00b5L of Proteinase K (Qiagen #19131) were added to each sample, and samples were incubated at 37\u00b0C for 75 min in a water bath. Subsequently, suspensions were transferred to a new vial, and acid phenol:chloroform:isoamyl alcohol (pH 4.5) RNA extraction was performed.\n\nFor both approaches, protocol steps starting from RNA extraction were performed as follows. Briefly, an equal volume of phenol:chloroform:isoamyl alcohol was added, and samples were vortexed and centrifuged at 14,000 \u00d7 g for 5 min. Aqueous phases were then transferred to new vials, 500 \u00b5L of isopropanol and 2 \u00b5L of GlycoBlue (Thermo Scientific #AM9516) were added, samples were mixed and incubated at room temperature for 3 min, and then stored overnight at\u00a0\u221280\u00b0C. The following day samples were centrifuged at 14,000 \u00d7 g for 30 min, supernatants were removed, 500 \u00b5L of 70% ethanol were added to each sample, and samples were then centrifuged at 14,000 \u00d7 g for 10 min. Finally, pellets were air-dried and resuspended in 10 \u00b5L of nuclease-free water. Extracted RNA was then resolved by electrophoresis through denaturing TBE-urea gels, and fragments between 25 nt and 35 nt were excised. Libraries were prepared using the RiboLace kit_module 2 (IMMAGINA BioTechnolgy #RL001_mod2) and sequenced on an Illumina HiSeq 2500 sequencer with a single-end 50 bp run.\n\n### RIBO-seq data analysis\n\nReads were processed by removing 5' adapters, discarding reads shorter than 20 nucleotides, and trimming the first nucleotide of the remaining ones (using Trimmomatic v0.36). Reads mapping on the collection of M. musculus rRNAs (from the SILVA rRNA database, release 119) and tRNAs (from the Genomic tRNA database: gtrnadb.ucsc.edu/) were removed. Remaining reads were mapped on the mouse transcriptome (using the Gencode M17 transcript annotations). Antisense and duplicate reads were removed. All alignments were performed with STAR (v020201) employing default settings.\n\nThe identification of the P-site position within the reads was performed using riboWaltz (v1.1.0) computing the P-site offsets from the 3' end of the reads. The percentage of P-sites falling in the three annotated transcript regions (5' UTR, CDS, and 3' UTR) was computed using the function region_psite included in riboWaltz (v1.1.0). Transcript counts were normalized using the TMM\u00a0method implemented in the edgeR Bioconductor package. Transcripts displaying 1 CPM in at least one replicate were kept for further analyses.\n",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5cadcf2f-3617-4e12-b231-9e7db906edef",
+      "submission_id": "132b4c30-b91e-4dd3-ade8-36321bf6e16f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Y Chang, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59303.sa1](https://doi.org/10.7554/eLife.59303.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nUsing AHA labeling approach, the authors reported a one-shot approach by combining RNA-seq, Ribo-seq, and LC-MS. The authors provide evidence that this approach helps identification of translatable lncRNAs.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"One-shot analysis of translated mammalian lncRNAs with AHARIBO\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: John L Rinn (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMinati et al. reported a method called AHARIBO to detect RNAs with active translation. Using L-azidohomoalanine (AHA) to label nascent polypeptides, the authors purified the translation complex via click chemistry followed by high-throughput analysis including RNA-seq. LC-MS, and Ribo-seq. The authors compared translatome between ESC and differentiated neurons (EN) using AHARIBO and found some long non-coding RNAs (lncRNAs) that could encode peptides.\n\nThe overall methodology is straightforward and useful. The authors claim that AHARIBO is able to distinguish ribosome-associated lncRNAs and ribosome-translating lncRNAs. This is indeed an important question in the field since a growing body of evidence suggests that a substantial amount of lncRNAs contain functional open reading frames. Although the title, Abstract, and Introduction primarily focus on this topic, the result section did not serve this goal at all. A revision needs to address the key issues below, as well as temper claims and list the potential limitations and interpretations in a revised Discussion.\n\nEssential revisions:\n\n1) AHARIBO detection of nascent peptide vs. mature protein association with RNA.Nascent peptide capture does seem to offer a new approach to measure translation. The core strategy is not adequately validated, however, and so it is not clear that these techniques are capturing proteins and RNAs through nascent-chain labeling. Further, individual applications of this technique for proteomics or sequencing are not subject to incisive tests that clearly distinguish the proposed nascent chain capture mechanism from alternative explanations. It is in fact unclear if there is a straightforward path to address these central concerns.\n\na) It is clear that the great majority of AHA label is found in completed free proteins rather than in nascent proteins (Figure 1B). Capture of ribosomal proteins (along with a range of other unspecified proteins) in AHA- controls doesn't exclude the possibility that this (Figure 1D) reflects enrichment of new proteins. In addition to labeling of mature proteins, it seems that only 2- to 3-fold enrichment is achieved in comparison with AHA- samples (Figure 1\u2014figure supplement 1D). This means that a large fraction of captured protein, including captured ribosomes/polysomes - is unlabelled background.\n\nb) Likewise, AHA labeling is often used to measure nascent protein synthesis, much like pSILAC labeling. What is the evidence that the concordance in pSILAC and AHARIBO-nP doesn't simply reflect the labeling of fairly new but completely synthesized protein in AHARIBO-nP lysates?\n\nc) If AHARIBO is capturing nascent peptides, certain strong polarity effects are expected: peptides should be strongly enriched near the N-terminus of proteins relative to the C-terminus. Ribosome footprints should be absent from the first 30 \u2013 40 codons, because these proteins should not expose nascent peptide.\n\n2) Evidence for newly detected lncRNA encoded peptides via epitope tagging. Can the authors express a tagged version (even if ectopically) of some of the newly identified peptides. This would be a complimentary validation to the mass spec performed and provide spatial localization information. For example, the lncRNA TUG1 was recently reported in Cell and Genome Biology to encode a peptide and is highly abundant in both cell types. Cell : DOI:https://doi.org/10.1016/j.cell.2019.05.010) and genome biology: in press, currently: https://www.biorxiv.org/content/10.1101/562066v1. Do the authors find TUG1 translated in these cells (the RNA is abundant in both) that would be another validation of a \"validated\" new peptide that is larger than 100a.a\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"One-shot analysis of translated mammalian lncRNAs with AHARIBO\" for further consideration by eLife. Your revised article has been evaluated by James Manley (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The validation of TUG1 peptide strengthens the original conclusion. Since TUG1 cannot be identified from AHARIBO, it will be highly desirable if the authors could show any newly identified peptides from lncRNA, i.e., translatable lincRNA that has not been reported before. At least, a thorough discussion about this potential is needed.\n\n2) The puromycin treatment resulted in ~15-20% reduction in AHARIBO signal rather than the >80% seen in ribosome profiling experiments, which implies that a substantial fraction of the AHARIBO signal comes from nonspecific background. Please incorporate text to explicitly address this point \u2013 should puromycin treatment always be done to confirm AHARIBO screen hits?\n",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "790ea1ed-4635-48a3-8be3-b8cd2ae2f2e1",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C1",
+      "claim": "A vast portion of the mammalian genome is transcribed as long non-coding RNAs (lncRNAs) acting in the cytoplasm with largely unknown functions.",
+      "claim_type": "EXPLICIT",
+      "source": "A vast portion of the mammalian genome is transcribed as long non-coding RNAs (lncRNAs) acting in the cytoplasm with largely unknown functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about lncRNAs that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "dc49da39-5f73-497d-8a81-640f0f5d5670",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C2",
+      "claim": "lncRNAs have been shown to interact with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, lncRNAs have been shown to interact with ribosomes, encode peptides, or act as ribosome sponges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established findings in the literature about lncRNA-ribosome interactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "01a4611f-08c6-4580-94fc-3f83f6b45703",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C3",
+      "claim": "lncRNAs encode peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, lncRNAs have been shown to interact with ribosomes, encode peptides, or act as ribosome sponges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established findings in the literature about lncRNA peptide-encoding capacity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "8a95b62b-f84f-4a4b-b1b4-08e08ed4e552",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C4",
+      "claim": "lncRNAs act as ribosome sponges.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, lncRNAs have been shown to interact with ribosomes, encode peptides, or act as ribosome sponges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established findings in the literature about lncRNA function as ribosome sponges.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "935000ce-bd45-444b-842b-7206e84eb9c3",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C5",
+      "claim": "These functions of lncRNAs still remain mostly undetected and understudied owing to the lack of efficient tools for genome-wide simultaneous identification of ribosome-associated and peptide-producing lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These functions still remain mostly undetected and understudied owing to the lack of efficient tools for genome-wide simultaneous identification of ribosome-associated and peptide-producing lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current state of the field and available methodologies.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "79a88d07-01c7-4159-a979-940b86712d2b",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C6",
+      "claim": "AHARIBO is a method for the detection of lncRNAs either untranslated, but associated with ribosomes, or encoding small peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present AHA-mediated RIBOsome isolation (AHARIBO), a method for the detection of lncRNAs either untranslated, but associated with ribosomes, or encoding small peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim about the method developed in this study, supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "35fcab13-afda-41de-8a46-01dfd0786fb0",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C7",
+      "claim": "Using AHARIBO in mouse embryonic stem cells during neuronal differentiation, ribosome-protected RNA fragments, translated RNAs, and corresponding de novo synthesized peptides were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using AHARIBO in mouse embryonic stem cells during neuronal differentiation, we isolated ribosome-protected RNA fragments, translated RNAs, and corresponding de novo synthesized peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript showing the isolation of these components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "44ef5bd2-42c5-455b-b4e3-47074be4e1ab",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C8",
+      "claim": "AHARIBO identified mRNAs under active translation and associated ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides identifying mRNAs under active translation and associated ribosomes, we found and distinguished lncRNAs acting as ribosome sponges or encoding micropeptides, laying the ground for a better functional understanding of hundreds of lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing identification of actively translated mRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "444b5393-7469-4bbc-88ed-47d1c0a15516",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C9",
+      "claim": "AHARIBO found and distinguished lncRNAs acting as ribosome sponges or encoding micropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides identifying mRNAs under active translation and associated ribosomes, we found and distinguished lncRNAs acting as ribosome sponges or encoding micropeptides, laying the ground for a better functional understanding of hundreds of lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing identification and distinction of different types of lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "f03b83ad-8b4b-4ce3-9af3-55edaf02054e",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C10",
+      "claim": "An incredibly small fraction of the mammalian genome is protein-coding (<3%).",
+      "claim_type": "EXPLICIT",
+      "source": "An incredibly small fraction of the mammalian genome is protein-coding (<3%), while the number of potentially functional non-coding genes remains unclear (Djebali et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Djebali et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "fc13090e-19dd-4c0a-bf52-1e1fa184ee12",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C11",
+      "claim": "The number of potentially functional non-coding genes remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "An incredibly small fraction of the mammalian genome is protein-coding (<3%), while the number of potentially functional non-coding genes remains unclear (Djebali et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Djebali et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "a85cc828-7e57-4f79-94e9-2c4a03ff80ac",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C12",
+      "claim": "Long non-coding RNAs (lncRNAs) are defined as non-coding RNA exceeding 200 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Long non-coding RNAs (lncRNAs) are defined as non-coding RNA exceeding 200 nt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "20733548-883d-48ff-8bb5-d5a554169139",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C13",
+      "claim": "lncRNAs have gained much attention because of their role in a variety of cellular processes, from chromatin architecture to mRNA turnover and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "They have gained much attention because of their role in a variety of cellular processes, from chromatin architecture (Minajigi et al., 2015) to mRNA turnover (Kleaveland et al., 2018) and translation (Ingolia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "15fe8e26-66b7-47b5-8eb0-470dc278b94f",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C14",
+      "claim": "lncRNAs are abundant transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, lncRNAs are abundant transcripts (Iyer et al., 2015) that display short and not evolutionarily conserved Open Reading Frames (ORFs with minimal homology to known protein domains (Guttman and Rinn, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Iyer et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "ab23ab6b-9a8e-45f1-8d7b-5b99326e5039",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C15",
+      "claim": "lncRNAs display short and not evolutionarily conserved Open Reading Frames (ORFs) with minimal homology to known protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, lncRNAs are abundant transcripts (Iyer et al., 2015) that display short and not evolutionarily conserved Open Reading Frames (ORFs with minimal homology to known protein domains (Guttman and Rinn, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Guttman and Rinn, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "67e9876b-aae5-4032-aa3e-c3939638ee0d",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C16",
+      "claim": "The majority of lncRNAs are localized in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of lncRNAs are localized in the cytoplasm (Carlevaro-Fita et al., 2016), where they are supposed to remain untranslated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Carlevaro-Fita et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "416fc0f8-1a06-4eff-b374-7d4c21762921",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C17",
+      "claim": "Cytoplasmic lncRNAs are supposed to remain untranslated.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of lncRNAs are localized in the cytoplasm (Carlevaro-Fita et al., 2016), where they are supposed to remain untranslated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general assumption in the field that is being challenged by the research presented.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5755a262-2c5f-4f0b-83ba-13993ce8c1cb",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C18",
+      "claim": "Ribosome profiling (RIBO-seq) provides positional information of ribosomes along transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome profiling (RIBO-seq), which provides positional information of ribosomes along transcripts (Clamer et al., 2018; Ingolia et al., 2012), identified several ribosome-associated lncRNAs (Bazzini et al., 2014; Ingolia et al., 2011; Lee et al., 2012; Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Clamer et al., 2018 and Ingolia et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "249b0dcc-8029-44ea-910c-838fae95d789",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C19",
+      "claim": "Ribosome profiling identified several ribosome-associated lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome profiling (RIBO-seq), which provides positional information of ribosomes along transcripts (Clamer et al., 2018; Ingolia et al., 2012), identified several ribosome-associated lncRNAs (Bazzini et al., 2014; Ingolia et al., 2011; Lee et al., 2012; Zeng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "4780371f-b379-4f9d-a18a-f36e3ddd6baf",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C20",
+      "claim": "A handful of lncRNAs have been shown to be involved in translation regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of lncRNAs have been shown to be involved in translation regulation (Carrieri et al., 2012; Yoon et al., 2012), while others are themselves potentially or partially translated (Anderson et al., 2015; Aspden et al., 2014; Bazin et al., 2017; Ingolia et al., 2011; Nelson et al., 2016; Ruiz-Orera et al., 2014; van Heesch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Carrieri et al., 2012 and Yoon et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "26b0652d-093f-4910-800c-3345110552a9",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C21",
+      "claim": "Some lncRNAs are themselves potentially or partially translated.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of lncRNAs have been shown to be involved in translation regulation (Carrieri et al., 2012; Yoon et al., 2012), while others are themselves potentially or partially translated (Anderson et al., 2015; Aspden et al., 2014; Bazin et al., 2017; Ingolia et al., 2011; Nelson et al., 2016; Ruiz-Orera et al., 2014; van Heesch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "10132ead-9a8a-4a98-8c05-f5438ad994be",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C22",
+      "claim": "lncRNAs can be associated with actively translating or translationally silent ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "As coding RNAs, lncRNAs can be associated with actively translating or translationally silent ribosomes (Chandrasekaran et al., 2019; Chen et al., 2020; Jiao and Meyerowitz, 2010; Kapur et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "ffdd2a57-24c9-449f-8981-af07fd2c3de4",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C23",
+      "claim": "Classical RIBO-seq approaches barely distinguish between lncRNAs producing peptides from those that sequester ribosomes and act as ribosome sponges.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, classical RIBO-seq approaches barely distinguish between lncRNAs producing peptides from those that sequester ribosomes (lncRNA bound to ribosomes without translation) and act as ribosome sponges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "dc8f0e11-5214-46d2-8f9d-68437016d0ff",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C24",
+      "claim": "Proteomics approaches, such as mass spectrometry, can help to define and quantitatively monitor the production of peptides, but are less sensitive techniques than RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics approaches, such as mass spectrometry, can help to define and quantitatively monitor the production of peptides, but are less sensitive techniques than RNA sequencing (Slavoff et al., 2013; van Heesch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Slavoff et al., 2013 and van Heesch et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "11e424e6-1c33-4a91-aed5-2c5b2a669aca",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C25",
+      "claim": "Proteomics and RIBO-seq alone cannot unravel the wide functional range of cytoplasmic lncRNAs associated with the translation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, proteomics and RIBO-seq alone cannot unravel the wide functional range of cytoplasmic lncRNAs associated with the translation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "fadde863-660d-49d7-89d2-e4e64b77133e",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C26",
+      "claim": "AHARIBO is a combination of protocols that simultaneously isolate RNAs and nascent proteins associated with translationally active ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To fill this gap, we developed AHA-mediated RIBOsome isolation (AHARIBO), a combination of protocols that simultaneously isolate RNAs and nascent proteins associated with translationally active ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "814792cf-d710-4251-a4dc-76556f7b7c97",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C27",
+      "claim": "AHARIBO is based on the isolation of ribosomes trapped with their nascent peptides by incorporating the non-canonical amino acid L-azidohomoalanine (AHA), followed by parallel RNA-seq, ribosome profiling, and proteomics.",
+      "claim_type": "EXPLICIT",
+      "source": "AHARIBO is based on the isolation of ribosomes trapped with their nascent peptides by incorporating the non-canonical amino acid L-azidohomoalanine (AHA), followed by parallel RNA-seq, ribosome profiling, and proteomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological basis of AHARIBO as implemented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "7d324edb-ed9e-4be8-ad63-0881024bf35d",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C28",
+      "claim": "AHARIBO enables to purify translating ribosomes via nascent peptide chains.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied AHARIBO to human and mouse cells and showed that it enables to (1) purify translating ribosomes via nascent peptide chains, (2) co-purify RNAs and proteins for transcriptome/de novo proteome-associated studies, and (3) detect the regulatory network of lncRNAs translated or associated with ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5ad8b6ab-ecdd-4d36-8861-8acb17192ea8",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C29",
+      "claim": "AHARIBO enables to co-purify RNAs and proteins for transcriptome/de novo proteome-associated studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied AHARIBO to human and mouse cells and showed that it enables to (1) purify translating ribosomes via nascent peptide chains, (2) co-purify RNAs and proteins for transcriptome/de novo proteome-associated studies, and (3) detect the regulatory network of lncRNAs translated or associated with ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "842e997f-8682-4710-91ad-cb4b82619f53",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C30",
+      "claim": "AHARIBO enables to detect the regulatory network of lncRNAs translated or associated with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied AHARIBO to human and mouse cells and showed that it enables to (1) purify translating ribosomes via nascent peptide chains, (2) co-purify RNAs and proteins for transcriptome/de novo proteome-associated studies, and (3) detect the regulatory network of lncRNAs translated or associated with ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "ffb17878-9a7b-4260-a84a-d9e48b68949c",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C31",
+      "claim": "30 min is the optimal incubation time for sufficient AHA incorporation and maximum RNA recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 30 min is the optimal incubation time for sufficient AHA incorporation and maximum RNA recovery (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "7fbee629-4e37-4076-aee7-96004081266d",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C32",
+      "claim": "Both CHX and sBlock are able to stabilize AHA-peptides on ribosomes and polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with literature, we found that both CHX and sBlock are able to stabilize AHA-peptides on ribosomes and polysomes (Biever et al., 2020; Mathias et al., 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Biever et al., 2020 and Mathias et al., 1964.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "df9c036d-301c-4f06-a981-c0aa1ddafa10",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C33",
+      "claim": "The efficiency of anchoring polypeptides on ribosomes in CHX- and sBlock-treated cells was about 50% higher compared to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of anchoring polypeptides on ribosomes in CHX- and sBlock-treated cells was about 50% higher compared to untreated cells, confirming that the treatment effectively stabilizes nascent polypeptides (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "341579be-bd8c-4e92-a4dc-1aec277c67c9",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C34",
+      "claim": "sBlock outperformed CHX in anchoring efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Since sBlock outperformed CHX in anchoring efficiency (Figure 1C), we used this compound in all further experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "ef53c0f2-7f2b-455a-9e68-2d7fefe9499f",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C35",
+      "claim": "Ribosomal proteins belonging to both the large and small ribosome subunits are more abundant in AHARIBO-rC samples than in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that ribosomal proteins belonging to both the large and small ribosome subunits are indeed more abundant in AHARIBO-rC samples than in controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LC-MS data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "166671df-1147-4403-ade7-715ad605f1f8",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C36",
+      "claim": "Gene ontology (GO) analysis revealed that terms related to translation (biological process), nucleic acid binding (cellular function), and ribonucleoprotein complex (cellular component) are enriched in AHARIBO-rC compared to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis revealed that terms related to translation (biological process), nucleic acid binding (cellular function), and ribonucleoprotein complex (cellular component) are enriched in AHARIBO-rC compared to the control (no AHA), confirming efficient pulldown of translation-related proteins (Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GO analysis data presented in Figure 1\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "0327ded1-4735-4e4a-9e20-77c2c4b6bfd2",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C37",
+      "claim": "A reduction of RNA captured in puromycin-, HS-, and Ar-treated cells relative to the control was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a reduction of RNA captured in puromycin-, HS-, and Ar-treated cells relative to the control (Figure 1\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "c0d48db0-c0c1-44ee-9f51-a4a81820b746",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C38",
+      "claim": "qRT-PCR analysis showed about 50% reduction in 18S rRNA levels when translation was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this finding, qRT-PCR analysis showed about 50% reduction in 18S rRNA levels when translation was inhibited (Figure 1\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "8b036581-95f6-48fd-9cba-26edd056a8ab",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C39",
+      "claim": "RT-qPCR analysis showed a good efficiency of AHARIBO in capturing the TUG1-BOAT RNA when methionines are present (about 50 times more in +1Met TUG1-BOAT than in \u0394Met TUG1-BOAT after 24 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Our RT-qPCR analysis performed 24 hr or 48 hr after transfection showed a good efficiency of AHARIBO in capturing the TUG1-BOAT RNA when methionines are present (about 50 times more in +1Met TUG1-BOAT than in \u0394Met TUG1-BOAT after 24 hr) (Figure 1\u2014figure supplement 3E), confirming the efficiency of AHARIBO-rC in capturing translated RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-qPCR data shown in Figure 1\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "78d13992-d79e-4a2e-87ac-9f348475dd82",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C40",
+      "claim": "Quantitative proteomic analysis of ENs versus mESCs (EN/mESC) led to the identification of 2654 differentially expressed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative proteomic analysis of ENs versus mESCs (EN/mESC) led to the identification of 2654 differentially expressed proteins (Figure 2B, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by proteomic data shown in Figure 2B and Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "77f96818-6d53-482a-925a-56ecc8d613dc",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C41",
+      "claim": "Differentiated cells (EN) showed a reduced turnover compared to mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, differentiated cells (EN) showed a reduced turnover compared to mESCs (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "e69c0052-7af9-4264-9dfd-4cc5cb3c588b",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C42",
+      "claim": "AHARIBO-nP captured 1365 proteins in EN and 2215 proteins in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, EN and mESC cells were analyzed by AHARIBO-nP, which captured 1365 and 2215 proteins, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by proteomic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5bc968c2-2c9a-42b5-be0d-c65945f7cd50",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C43",
+      "claim": "74% of proteins identified through AHARIBO-nP is in common with the pSILAC dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, 74% of proteins identified through AHARIBO-nP is in common with the pSILAC dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of proteomic datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "282858b9-51d9-4f86-b9d4-efbfcc5ed255",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C44",
+      "claim": "Differential expression analysis (EN/mESC) identified 573 proteins (p-value<0.05) in AHARIBO-nP.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis (EN/mESC) identified 573 proteins (p-value<0.05) in AHARIBO-nP (Figure 2B; Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential expression analysis data shown in Figure 2B and Figure 2\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "018b8f79-b656-4b19-a0fe-dfc7eed4fc3a",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C45",
+      "claim": "GO analysis of differentially expressed proteins showed that proteins involved in cytoskeleton organization and neurogenesis were upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "The GO analysis of differentially expressed proteins showed that proteins involved in cytoskeleton organization and neurogenesis were upregulated (Figure 2C), further confirming the reliability of AHARIBO-nP in monitoring de novo protein expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GO analysis data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "c5c891c0-06ba-4c0e-8e7a-45622e64bbd1",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C46",
+      "claim": "High fold changes of heavy amino acids in AHARIBO-nP were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed high fold changes of heavy amino acids in AHARIBO-nP (Figure 2E) and a significantly higher protein turnover in the AHARIBO-nP compared to the pSILAC proteins (Figure 2\u2014figure supplement 1D), suggesting that AHARIBO-nP is indeed able to capture the de novo synthesized polypeptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "fb47302b-4760-4c49-9470-4398735ca4f0",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C47",
+      "claim": "A significantly higher protein turnover in the AHARIBO-nP compared to the pSILAC proteins was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed high fold changes of heavy amino acids in AHARIBO-nP (Figure 2E) and a significantly higher protein turnover in the AHARIBO-nP compared to the pSILAC proteins (Figure 2\u2014figure supplement 1D), suggesting that AHARIBO-nP is indeed able to capture the de novo synthesized polypeptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "0ec5cbd1-8063-4c78-b86f-15dcec9cef5b",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C48",
+      "claim": "AHARIBO captures transcripts encoding for polypeptides in a wide range of length.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirm that AHARIBO captures transcripts encoding for polypeptides in a wide range of length (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "cf2fc818-aac6-49d3-8759-e40a238479da",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C49",
+      "claim": "AHARIBO-rC efficiency is comparable to the global translatome for low abundant transcripts in EN and for all transcripts in undifferentiated mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using increasing abundance thresholds in EN, we observed that AHARIBO-rC efficiency is comparable to the global translatome for low abundant transcripts in EN and for all transcripts in undifferentiated mESCs (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "b7d36e4e-995c-4e1e-af97-8db4bb1edc70",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C50",
+      "claim": "AHARIBO captures abundant transcripts in EN with much higher efficiency than the global translatome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, AHARIBO captures abundant transcripts in EN with much higher efficiency than the global translatome (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5e3d3229-a622-4ce6-a40d-455c188fb398",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C52",
+      "claim": "AHARIBO-rC RNA presents less uncoupled genes (up-RNA and down-protein or down-RNA and up-protein) than the global translatome.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found that AHARIBO-rC RNA presents less uncoupled genes (up-RNA and down-protein or down-RNA and up-protein) than the global translatome (Figure 3\u2014figure supplement 1C), thus faithfully recapitulating proteome changes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "1f64a920-9c58-42b2-8383-0c2af8a332ee",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C53",
+      "claim": "The correlation of the global translatome with the global protein turnover measured with pSILAC shows a Pearson's r = 0.27.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation of the global translatome with the global protein turnover measured with pSILAC shows a Pearson's r = 0.27 (Figure 3\u2014figure supplement 1D, Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis data shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "0bbee973-6ae3-4d47-8b1f-c631c6a63f1f",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C54",
+      "claim": "A total of 687 lncRNA genes were identified in mESCs in AHARIBO-rC data.",
+      "claim_type": "EXPLICIT",
+      "source": "In AHARIBO-rC data, we identified a total of 687 lncRNA genes in mESCs and about 400 differentially expressed (DE) lncRNAs during neuronal differentiation (Figure 4\u2014figure supplement 1A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1A and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "86edd6dd-74d0-4235-a242-278c2c66405b",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C55",
+      "claim": "About 400 differentially expressed (DE) lncRNAs were identified during neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In AHARIBO-rC data, we identified a total of 687 lncRNA genes in mESCs and about 400 differentially expressed (DE) lncRNAs during neuronal differentiation (Figure 4\u2014figure supplement 1A, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 1A and Figure 4\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "b6df83b1-8aa7-426c-885b-82e79c86a0ce",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C56",
+      "claim": "Among the top five DE lncRNAs (fold change >10; p-value<1\u00d710\u221210), Pantr1 and Lhx1os were found, known to be involved in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the top five DE lncRNAs (fold change >10; p-value<1\u00d710\u221210), we found Pantr1 and Lhx1os, known to be involved in neuronal development (Biscarini et al., 2018; Carelli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis and citations to Biscarini et al., 2018 and Carelli et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "2dd3b234-6fef-4008-a54d-769f6018a8bf",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C57",
+      "claim": "The analysis of 100 lncRNAs in common between AHARIBO-rC and published ribosome profiling data showed a stronger enrichment of ribosome footprints in the AHARIBO-rC than in the global translatome.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of 100 lncRNAs in common between the two datasets showed a stronger enrichment of ribosome footprints in the AHARIBO-rC than in the global translatome (Figure 4A, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "d8875d0a-25a4-4864-bd88-9a1c10aa8f65",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C58",
+      "claim": "Both standard and AHARIBO RIBO-seq show an enrichment of RPFs in the coding sequence for protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For protein-coding genes, both standard and AHARIBO RIBO-seq show an enrichment of RPFs in the coding sequence (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "9a70a5ed-f2ff-4710-97e1-ee652b0d9f50",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C59",
+      "claim": "Standard and AHARIBO RIBO-seq datasets show high correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "The two datasets show high correlation (Figure 4\u2014figure supplement 2B) and the expected codon periodicity in the coding sequence in AHARIBO RIBO-seq (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "004d9b04-854c-4e82-a333-08453c57e5f0",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C60",
+      "claim": "AHARIBO RIBO-seq shows the expected codon periodicity in the coding sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The two datasets show high correlation (Figure 4\u2014figure supplement 2B) and the expected codon periodicity in the coding sequence in AHARIBO RIBO-seq (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "8d718917-e45f-47c5-a0d2-0f2cfb069ca1",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C61",
+      "claim": "By intersecting AHARIBO RIBO-seq data with those obtained from standard methods (RIBO-seq and RNA-seq after sucrose cushioning) or AHARIBO-rC, 125 common putative translated lncRNAs were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "By intersecting our AHARIBO RIBO-seq data with those obtained from standard methods (RIBO-seq and RNA-seq after sucrose cushioning) or AHARIBO-rC, we identified 125 common putative translated lncRNAs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "010a5b6d-6076-4dea-a551-582c9baf4305",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C62",
+      "claim": "Some of the identified lncRNAs (n = 19) are known to be translated in mouse tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these lncRNA (n = 19) are known to be translated in mouse tissue (van Heesch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to van Heesch et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "a0a4f134-2a36-45a6-9ee2-ccc10cb03e00",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C63",
+      "claim": "MS-based proteomics analysis detected peptides with highly corresponding ribosome footprints (e.g., Gm42743, Gm26518, B230354K17Rik, D030068K23Rik, 1810058I24Rik).",
+      "claim_type": "EXPLICIT",
+      "source": "From the list of 129 lncRNAs that are in common among all AHARIBO protocols and standard RIBO-seq (Figure 4D), we identified by MS analysis a micropeptide (Mm47) of 47 aa (Figure 4D) at a high degree of confidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MS-based proteomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "57a5497b-c41d-4080-8261-49fda4ed856e",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C64",
+      "claim": "A micropeptide (Mm47) of 47 aa was identified by MS analysis at a high degree of confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "From the list of 129 lncRNAs that are in common among all AHARIBO protocols and standard RIBO-seq (Figure 4D), we identified by MS analysis a micropeptide (Mm47) of 47 aa (Figure 4D) at a high degree of confidence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MS analysis data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "2cff7fe3-8881-4e7a-a430-e74d65300c68",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C65",
+      "claim": "The micropeptide Mm47 derives from a lncRNA expressed in murine macrophages, and was recently characterized by an independent group as a relevant peptide able to modulate the innate immunity in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This micropeptide derives from a lncRNA expressed in murine macrophages, and recently characterized by an independent group (Bhatta et al., 2020) as a relevant peptide able to modulate the innate immunity in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bhatta et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "d0256541-d1ef-420f-9041-0e93868870e4",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C66",
+      "claim": "In the nucleus, lncRNAs modulate transcription, pre-mRNA splicing, or act as scaffold for protein interaction during chromatin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the nucleus, they modulate transcription, pre-mRNA splicing, or act as scaffold for protein interaction during chromatin organization (Sun et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sun et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "76e4a037-7ed7-4e55-8837-78b055a861be",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C67",
+      "claim": "In the cytoplasm, the majority of lncRNAs is associated with polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytoplasm, the majority of lncRNAs is associated with polysomes (Carlevaro-Fita et al., 2016), where they either can or cannot produce proteins (Chen et al., 2020; Ingolia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Carlevaro-Fita et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "88910b6e-df9a-492d-9578-89c218eb2ddd",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C68",
+      "claim": "Numerous lncRNAs are misannotated as non-coding but contain short ORFs encoding for micropeptides with biological relevance in cancer, bone development, immunity, metabolism, and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous lncRNAs are misannotated as non-coding but contain short ORFs encoding for micropeptides with biological relevance in cancer (D'Lima et al., 2017; Huang et al., 2017), bone development (Galindo et al., 2007), immunity (van Solingen et al., 2018), metabolism (Magny et al., 2013; Nelson et al., 2016), and DNA repair (Slavoff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "54d0af26-bbf8-4196-8fb2-679b232112f7",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C69",
+      "claim": "Available technologies hardly capture in a single experiment the dynamics of translation across multiple biological conditions, the translation of unannotated coding transcripts, and translation-related functions of lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these advantages, available technologies hardly capture in a single experiment the dynamics of translation across multiple biological conditions, the translation of unannotated coding transcripts, and translation-related functions of lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of existing technologies.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "491c6de7-837b-423b-b1a9-27961e01220b",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C70",
+      "claim": "AHARIBO serves as a flexible tool to detect translated RNAs, identify lncRNAs bound to elongating ribosomes, and detect de novo synthesized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that AHARIBO serves as a flexible tool to detect translated RNAs, identify lncRNAs bound to elongating ribosomes, and detect de novo synthesized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "acfe3897-b505-45de-b004-28cd3533ac88",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C71",
+      "claim": "The intersection of standard RIBO-seq, RNA-seq, and AHARIBO approaches allowed to identify translated lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The intersection of standard RIBO-seq, RNA-seq, and AHARIBO approaches allowed us to identify translated lncRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "30d1f127-05b2-4345-b2ec-6e724da8a6e0",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C72",
+      "claim": "AHARIBO is efficient in capturing short translated open reading frames, both native or ectopically expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that AHARIBO is efficient in capturing short translated open reading frames, both native or ectopically expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "efd947ac-9ec8-40d8-999b-5569044d0e18",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C73",
+      "claim": "A mouse-specific micropeptide reported to originate from a native lncRNA ORF was successfully identified, confirming the effectiveness of AHARIBO.",
+      "claim_type": "EXPLICIT",
+      "source": "Although LC-MS technologies are not as sensitive as RNA sequencing, we successfully identified a mouse-specific micropeptide reported to originate from a native lncRNA ORF, confirming the effectiveness of AHARIBO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the MS data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "3ee779e5-16b7-4efa-a5d7-62c12fa8012f",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C74",
+      "claim": "A pre-cleaning of the cell lysate with a cushioning step can help to increase the resolution with difficult samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the unlabeled background cannot be avoided, a pre-cleaning of the cell lysate with a cushioning step can help to increase the resolution with difficult samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "e0669f01-89a8-4da9-ae69-841643e1c21c",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C75",
+      "claim": "A unique feature of AHARIBO is the possibility to simultaneously isolate ribosomes, RNA engaged with ribosomes, and the corresponding proteins produced.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique feature of AHARIBO is the possibility to simultaneously isolate ribosomes, RNA engaged with ribosomes, and the corresponding proteins produced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "f3a6b7f4-4bae-4b2c-94d1-33cb54ab23bb",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C76",
+      "claim": "AHA labeling has the advantage of minimal interference with protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the versatility of the method, AHA labeling has the advantage of minimal interference with protein synthesis (Hodas et al., 2012; Tom Dieck et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hodas et al., 2012 and Tom Dieck et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "5730f618-666c-46f2-8546-93d09dd429d7",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C77",
+      "claim": "The most prominent limitation of the method relies on the methionine starvation required for efficient AHA incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent limitation of the method relies on the methionine starvation required for efficient AHA incorporation (Calve et al., 2016; Hodas et al., 2012; Saleh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "f0542944-9d02-4ee1-b26e-da50397f0d13",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C78",
+      "claim": "Methionine starvation can modify the physiological conditions of the cell and needs to be taken into consideration when planning experiments requiring certain stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This step can modify the physiological conditions of the cell and needs to be taken into consideration when planning experiments requiring certain stimuli (e.g., drug treatment) during methionine depletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the potential effects of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "a006b7ee-15fe-40cb-bcf9-ca0f943b9262",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C79",
+      "claim": "There are still challenges for LC-MS verification of putative lncRNA peptides identified with AHARIBO.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that there are still challenges for LC-MS verification of putative lncRNA peptides identified with AHARIBO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "92c8b046-7a08-4a57-a3d8-9184231b53a3",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C80",
+      "claim": "A potential contribution from background signal needs to be taken into consideration in LC-MS and Ribo-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a potential contribution from background signal needs to be taken into consideration in LC-MS and Ribo-seq analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "ae470db9-35f3-419c-b38d-02296a215fcf",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "claim_id": "C81",
+      "claim": "AHARIBO is a comprehensive and reliable toolkit suitable for downstream parallel RNA-seq, RIBO-seq, and LC-MS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we provide evidence that AHARIBO is a comprehensive and reliable toolkit suitable for downstream parallel RNA-seq, RIBO-seq, and LC-MS analysis, empowering scientists to shed light on the functional complexity of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and motivation for developing AHARIBO by reviewing the current understanding of lncRNAs and limitations of existing methods. Claims describe that lncRNAs are abundant cytoplasmic transcripts with diverse functions including ribosome interaction, peptide encoding, and ribosome sponging, but that existing RIBO-seq and proteomics approaches cannot adequately distinguish these functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are primarily background knowledge supported by appropriate citations to published literature (C2-C4, C10-C11, C13-C22, C24, C66-C68). The assessment of methodological limitations (C23, C25, C69) represents reasonable inference from the cited literature. Together, these claims establish a well-supported rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AHARIBO is a novel method that simultaneously isolates translationally active ribosomes, associated RNAs, and nascent peptides by incorporating the non-canonical amino acid AHA into nascent peptides, enabling parallel RNA-seq, ribosome profiling, and proteomics analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The method description is supported by detailed experimental protocols and validation data throughout the manuscript (C26-C30, C75). Multiple complementary experiments demonstrate that AHARIBO successfully captures active ribosomes and associated components (C31-C39, C58-C60). The claim that AHARIBO is comprehensive and reliable (C81) is supported by the convergent evidence from multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "88062148-5f62-4ef1-a0ff-c90803610771",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optimization experiments established that 30 minutes is the optimal AHA incubation time and that sBlock outperforms cycloheximide in stabilizing nascent peptides on ribosomes, with approximately 50% higher anchoring efficiency compared to untreated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These optimization claims are directly supported by experimental data shown in Figure 1 and supplementary figures (C31-C34). The comparison between CHX and sBlock is quantified and statistically evaluated. The 30-minute incubation time is justified by data on AHA incorporation and RNA recovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "54e661ba-432c-4b19-8e7b-06132529d6f7",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LC-MS analysis and gene ontology analysis confirmed that AHARIBO-rC efficiently enriches for ribosomal proteins from both large and small subunits and translation-related proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The enrichment of ribosomal proteins is demonstrated by LC-MS data (C35) and validated by GO analysis showing enrichment of translation-related terms (C36). These complementary analyses provide strong evidence for the specificity of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "4edaf264-8959-4ac8-8c1f-6610d6ba6478",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AHARIBO-rC captures RNA in a translation-dependent manner, as demonstrated by reduced RNA capture when translation is inhibited by puromycin, heat shock, or arsenite treatment, and by efficient capture of ectopically expressed translated constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The translation-dependence is demonstrated through multiple complementary approaches: reduction in RNA capture upon translation inhibition (C37-C38) and selective capture of methionine-containing translated constructs (C39). The TUG1-BOAT validation experiment provides particularly strong evidence with ~50-fold enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AHARIBO-nP successfully captures de novo synthesized proteins during mESC neuronal differentiation, identifying 573 differentially expressed proteins enriched for neurogenesis and cytoskeleton organization, with significantly higher protein turnover compared to pSILAC, demonstrating its ability to monitor nascent polypeptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The proteomics results are well-supported by multiple lines of evidence: identification of differentially expressed proteins (C40, C42-C44), appropriate GO enrichment (C45), and higher turnover in AHARIBO-nP compared to pSILAC (C46-C47). The 74% overlap with pSILAC (C43) provides validation while the higher turnover demonstrates capture of nascent peptides specifically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "37c153e7-a414-4a08-9382-678a88e0188a",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AHARIBO-rC captures transcripts encoding polypeptides across a wide range of lengths and shows comparable efficiency to global translatome for low-abundance transcripts, but captures abundant transcripts in differentiated neurons with much higher efficiency than standard methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by systematic analysis across protein lengths (C48) and abundance thresholds (C49-C50). The differential performance for abundant versus low-abundance transcripts is clearly demonstrated in Figure 3B and supplementary data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "cec182fe-3869-43ab-99a0-5d9faddd4c27",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AHARIBO-rC RNA shows better correlation with proteome changes than global translatome, with fewer uncoupled genes and higher correlation with protein turnover (Pearson's r = 0.75 for AHARIBO-rC vs r = 0.27 for global translatome).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The superior correlation of AHARIBO-rC with proteome is demonstrated by quantitative correlation analysis (C52-C53) and shown in Figure 3C and supplementary figures. The substantial difference in Pearson correlation coefficients (0.75 vs 0.27) provides strong quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "e8806de2-a5fb-4086-a13a-30f77cdb8d6e",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AHARIBO-rC identified 687 lncRNA genes in mESCs with ~400 differentially expressed during neuronal differentiation, including known neuronal development lncRNAs (Pantr1, Lhx1os), and showed stronger enrichment of ribosome footprints compared to global translatome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The lncRNA identification is supported by RNA-seq data (C54-C55), validated by identification of known neuronal lncRNAs (C56), and confirmed by comparison with published ribosome profiling data showing stronger enrichment (C57). The convergent evidence from multiple approaches supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "dc712c6b-6b11-445f-9a30-b9e66f092072",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AHARIBO RIBO-seq shows expected characteristics of ribosome profiling (enrichment in coding sequences, high correlation with standard RIBO-seq, codon periodicity) and identified 125 putative translated lncRNAs common across multiple methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The technical validation of AHARIBO RIBO-seq is well-supported by multiple quality metrics (C58-C60) shown in Figure 4 supplement 2. The identification of 125 common lncRNAs (C61) through intersection of multiple methods provides high-confidence candidates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "61919219-3d70-4beb-9552-453c042861fc",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mass spectrometry analysis identified a 47 amino acid micropeptide (Mm47) from a lncRNA at high confidence, which was independently validated as a functional peptide involved in innate immunity, along with peptides from several other lncRNAs showing corresponding ribosome footprints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of Mm47 is supported by MS data (C64) and validated by independent publication (C65, citing Bhatta et al., 2020). The detection of peptides from multiple lncRNAs with corresponding ribosome footprints (C63) provides additional support. The independent validation is particularly strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "3308171d-946c-4a5b-ba0e-efba88cef988",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Using AHARIBO in mESCs during neuronal differentiation successfully isolated ribosome-protected RNA fragments, translated RNAs, and de novo synthesized peptides, identifying mRNAs under active translation and distinguishing lncRNAs acting as ribosome sponges from those encoding micropeptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims are supported by the comprehensive experimental data presented throughout the manuscript. The isolation of multiple components (C7) is demonstrated by RNA-seq, RIBO-seq, and proteomics data. The identification and distinction of different lncRNA types (C9, C70-C73) is supported by the integration of multiple AHARIBO approaches and validation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    },
+    {
+      "id": "223f2461-27e0-409d-a20e-9d272870c9c5",
+      "content_id": "613dad41-7de1-4c80-a87b-351146c88cbc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript acknowledges methodological limitations including the requirement for methionine starvation which may alter cellular physiology, challenges in LC-MS verification of lncRNA peptides, and potential background signal contributions that need consideration in analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations are appropriately acknowledged and supported by citations (C76-C77) and experimental observations (C74, C79-C80). The discussion of methionine starvation effects (C78) is a reasonable inference. Acknowledging limitations strengthens rather than weakens the overall conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:25:38.412485Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "790ea1ed-4635-48a3-8be3-b8cd2ae2f2e1",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "dc49da39-5f73-497d-8a81-640f0f5d5670",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "01a4611f-08c6-4580-94fc-3f83f6b45703",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "8a95b62b-f84f-4a4b-b1b4-08e08ed4e552",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "935000ce-bd45-444b-842b-7206e84eb9c3",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "f03b83ad-8b4b-4ce3-9af3-55edaf02054e",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "fc13090e-19dd-4c0a-bf52-1e1fa184ee12",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "a85cc828-7e57-4f79-94e9-2c4a03ff80ac",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "20733548-883d-48ff-8bb5-d5a554169139",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "15fe8e26-66b7-47b5-8eb0-470dc278b94f",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "ab23ab6b-9a8e-45f1-8d7b-5b99326e5039",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "67e9876b-aae5-4032-aa3e-c3939638ee0d",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "416fc0f8-1a06-4eff-b374-7d4c21762921",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "5755a262-2c5f-4f0b-83ba-13993ce8c1cb",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "249b0dcc-8029-44ea-910c-838fae95d789",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "4780371f-b379-4f9d-a18a-f36e3ddd6baf",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "26b0652d-093f-4910-800c-3345110552a9",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "10132ead-9a8a-4a98-8c05-f5438ad994be",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "ffdd2a57-24c9-449f-8981-af07fd2c3de4",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "dc8f0e11-5214-46d2-8f9d-68437016d0ff",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "11e424e6-1c33-4a91-aed5-2c5b2a669aca",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "d0256541-d1ef-420f-9041-0e93868870e4",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "76e4a037-7ed7-4e55-8837-78b055a861be",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "88910b6e-df9a-492d-9578-89c218eb2ddd",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "54d0af26-bbf8-4196-8fb2-679b232112f7",
+      "result_id": "f5080a74-ed57-493b-ac1e-e5426f2c9ca7"
+    },
+    {
+      "claim_id": "79a88d07-01c7-4159-a979-940b86712d2b",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "fadde863-660d-49d7-89d2-e4e64b77133e",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "814792cf-d710-4251-a4dc-76556f7b7c97",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "7d324edb-ed9e-4be8-ad63-0881024bf35d",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "5ad8b6ab-ecdd-4d36-8861-8acb17192ea8",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "842e997f-8682-4710-91ad-cb4b82619f53",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "e0669f01-89a8-4da9-ae69-841643e1c21c",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "ae470db9-35f3-419c-b38d-02296a215fcf",
+      "result_id": "0516adec-6d3c-462a-ad87-6ac2eb43a2be"
+    },
+    {
+      "claim_id": "ffb17878-9a7b-4260-a84a-d9e48b68949c",
+      "result_id": "88062148-5f62-4ef1-a0ff-c90803610771"
+    },
+    {
+      "claim_id": "7fbee629-4e37-4076-aee7-96004081266d",
+      "result_id": "88062148-5f62-4ef1-a0ff-c90803610771"
+    },
+    {
+      "claim_id": "df9c036d-301c-4f06-a981-c0aa1ddafa10",
+      "result_id": "88062148-5f62-4ef1-a0ff-c90803610771"
+    },
+    {
+      "claim_id": "341579be-bd8c-4e92-a4dc-1aec277c67c9",
+      "result_id": "88062148-5f62-4ef1-a0ff-c90803610771"
+    },
+    {
+      "claim_id": "ef53c0f2-7f2b-455a-9e68-2d7fefe9499f",
+      "result_id": "54e661ba-432c-4b19-8e7b-06132529d6f7"
+    },
+    {
+      "claim_id": "166671df-1147-4403-ade7-715ad605f1f8",
+      "result_id": "54e661ba-432c-4b19-8e7b-06132529d6f7"
+    },
+    {
+      "claim_id": "0327ded1-4735-4e4a-9e20-77c2c4b6bfd2",
+      "result_id": "4edaf264-8959-4ac8-8c1f-6610d6ba6478"
+    },
+    {
+      "claim_id": "c0d48db0-c0c1-44ee-9f51-a4a81820b746",
+      "result_id": "4edaf264-8959-4ac8-8c1f-6610d6ba6478"
+    },
+    {
+      "claim_id": "8b036581-95f6-48fd-9cba-26edd056a8ab",
+      "result_id": "4edaf264-8959-4ac8-8c1f-6610d6ba6478"
+    },
+    {
+      "claim_id": "78d13992-d79e-4a2e-87ac-9f348475dd82",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "77f96818-6d53-482a-925a-56ecc8d613dc",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "e69c0052-7af9-4264-9dfd-4cc5cb3c588b",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "5bc968c2-2c9a-42b5-be0d-c65945f7cd50",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "282858b9-51d9-4f86-b9d4-efbfcc5ed255",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "018b8f79-b656-4b19-a0fe-dfc7eed4fc3a",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "c5c891c0-06ba-4c0e-8e7a-45622e64bbd1",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "fb47302b-4760-4c49-9470-4398735ca4f0",
+      "result_id": "91782606-db0d-4b6c-ba0e-3a0c0a8b5117"
+    },
+    {
+      "claim_id": "0ec5cbd1-8063-4c78-b86f-15dcec9cef5b",
+      "result_id": "37c153e7-a414-4a08-9382-678a88e0188a"
+    },
+    {
+      "claim_id": "cf2fc818-aac6-49d3-8759-e40a238479da",
+      "result_id": "37c153e7-a414-4a08-9382-678a88e0188a"
+    },
+    {
+      "claim_id": "b7d36e4e-995c-4e1e-af97-8db4bb1edc70",
+      "result_id": "37c153e7-a414-4a08-9382-678a88e0188a"
+    },
+    {
+      "claim_id": "5e3d3229-a622-4ce6-a40d-455c188fb398",
+      "result_id": "cec182fe-3869-43ab-99a0-5d9faddd4c27"
+    },
+    {
+      "claim_id": "1f64a920-9c58-42b2-8383-0c2af8a332ee",
+      "result_id": "cec182fe-3869-43ab-99a0-5d9faddd4c27"
+    },
+    {
+      "claim_id": "0bbee973-6ae3-4d47-8b1f-c631c6a63f1f",
+      "result_id": "e8806de2-a5fb-4086-a13a-30f77cdb8d6e"
+    },
+    {
+      "claim_id": "86edd6dd-74d0-4235-a242-278c2c66405b",
+      "result_id": "e8806de2-a5fb-4086-a13a-30f77cdb8d6e"
+    },
+    {
+      "claim_id": "b6df83b1-8aa7-426c-885b-82e79c86a0ce",
+      "result_id": "e8806de2-a5fb-4086-a13a-30f77cdb8d6e"
+    },
+    {
+      "claim_id": "2dd3b234-6fef-4008-a54d-769f6018a8bf",
+      "result_id": "e8806de2-a5fb-4086-a13a-30f77cdb8d6e"
+    },
+    {
+      "claim_id": "d8875d0a-25a4-4864-bd88-9a1c10aa8f65",
+      "result_id": "dc712c6b-6b11-445f-9a30-b9e66f092072"
+    },
+    {
+      "claim_id": "9a70a5ed-f2ff-4710-97e1-ee652b0d9f50",
+      "result_id": "dc712c6b-6b11-445f-9a30-b9e66f092072"
+    },
+    {
+      "claim_id": "004d9b04-854c-4e82-a333-08453c57e5f0",
+      "result_id": "dc712c6b-6b11-445f-9a30-b9e66f092072"
+    },
+    {
+      "claim_id": "8d718917-e45f-47c5-a0d2-0f2cfb069ca1",
+      "result_id": "dc712c6b-6b11-445f-9a30-b9e66f092072"
+    },
+    {
+      "claim_id": "010a5b6d-6076-4dea-a551-582c9baf4305",
+      "result_id": "61919219-3d70-4beb-9552-453c042861fc"
+    },
+    {
+      "claim_id": "a0a4f134-2a36-45a6-9ee2-ccc10cb03e00",
+      "result_id": "61919219-3d70-4beb-9552-453c042861fc"
+    },
+    {
+      "claim_id": "57a5497b-c41d-4080-8261-49fda4ed856e",
+      "result_id": "61919219-3d70-4beb-9552-453c042861fc"
+    },
+    {
+      "claim_id": "2cff7fe3-8881-4e7a-a430-e74d65300c68",
+      "result_id": "61919219-3d70-4beb-9552-453c042861fc"
+    },
+    {
+      "claim_id": "35fcab13-afda-41de-8a46-01dfd0786fb0",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "44ef5bd2-42c5-455b-b4e3-47074be4e1ab",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "444b5393-7469-4bbc-88ed-47d1c0a15516",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "491c6de7-837b-423b-b1a9-27961e01220b",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "acfe3897-b505-45de-b004-28cd3533ac88",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "30d1f127-05b2-4345-b2ec-6e724da8a6e0",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "efd947ac-9ec8-40d8-999b-5569044d0e18",
+      "result_id": "3308171d-946c-4a5b-ba0e-efba88cef988"
+    },
+    {
+      "claim_id": "3ee779e5-16b7-4efa-a5d7-62c12fa8012f",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    },
+    {
+      "claim_id": "f3a6b7f4-4bae-4b2c-94d1-33cb54ab23bb",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    },
+    {
+      "claim_id": "5730f618-666c-46f2-8546-93d09dd429d7",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    },
+    {
+      "claim_id": "f0542944-9d02-4ee1-b26e-da50397f0d13",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    },
+    {
+      "claim_id": "a006b7ee-15fe-40cb-bcf9-ca0f943b9262",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    },
+    {
+      "claim_id": "92c8b046-7a08-4a57-a3d8-9184231b53a3",
+      "result_id": "223f2461-27e0-409d-a20e-9d272870c9c5"
+    }
+  ],
+  "comparisons": []
+}

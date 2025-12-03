@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The crystal structure of full-length TgGAC was determined at 2.7 \u00c5 resolution, revealing a unique supercoiled armadillo repeat region forming a closed ring conformation. The structure comprises three major regions (RI, RII, RIII) with 53 consecutive helical bundles and a C-terminal PH domain, with key structural features highly conserved across Apicomplexa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C43 collectively provide strong structural evidence from X-ray crystallography (2.7 \u00c5 resolution, Rfree 26%), NMR spectroscopy (RMSD 0.17 \u00c5), and AlphaFold2 validation (RMSD 1.5 \u00c5). The detailed structural description, including the N/C interface (1550 \u00c5\u00b2), specific electrostatic interactions, and sequence conservation analysis, provides robust support for the closed ring architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "GAC adopts multiple conformations in solution, with SAXS data at pH 8.0 revealing an extended monomeric structure (Rg 105-122 \u00c5, Dmax 394 \u00c5) that differs significantly from the closed crystal structure (Rg 48 \u00c5, Dmax 138 \u00c5). The closed conformation is likely functionally important as the N/C interface is conserved, while extended conformations may facilitate assembly with binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are well-supported by complementary SAXS data, AlphaFold2 predictions, and sequence conservation analysis. The SAXS measurements provide quantitative evidence for extended conformations (molecular mass 264-286 kDa consistent with monomer), while conservation of the N/C interface supports functional relevance of the closed state. The integration of multiple biophysical approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The PH domain of GAC binds specifically to phosphatidic acid (PA) through a conserved basic surface patch. NMR titrations determined a Kdapp of 60\u00b13 \u03bcM for PfGACPH binding to PA-enriched liposomes, with PRE mapping identifying a contiguous binding surface. Coarse-grained molecular dynamics simulations revealed two membrane-binding regions: the PH domain and an adjacent basic protrusion from AHR53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 are strongly supported by multiple complementary approaches: NMR titrations with quantitative binding measurements (Kdapp values), PRE mapping identifying specific residues, CG-MD simulations (all three repeats showing binding within 10 \u03bcs), and mutagenesis studies showing reduced affinity for mutants. The convergence of computational and experimental data provides robust evidence for the PA-binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutations in the PA-binding site of GAC significantly reduced binding to PA-enriched liposomes in vitro, but did not impair GAC localization to PCRs, motility-induced basal accumulation, or parasite fitness in vivo. The TgGAC-PfPH chimera showed only minor defects in plaque size and invasion capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by consistent in vitro binding assays (liposome co-sedimentation) and in vivo functional assays (immunofluorescence, plaque assays, invasion assays). The data demonstrate that while PA-binding residues are important for lipid interaction in vitro, they are not essential for GAC function in parasites, suggesting functional redundancy or compensatory mechanisms (e.g., AHR53 contribution mentioned in C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C87",
+      "C88",
+      "C89",
+      "C100"
+    ],
+    "result": "The principal F-actin binding region of TgGAC localizes to residues 1-1114, with the minimal binding interface likely between residues 559-1114 (AHRs 15-25). HDX-MS analysis revealed that TgGAC1-619 adopts a similar conformation to full-length GAC for residues 1-558 but shows increased flexibility at its C-terminus (559-609), which may contribute to its inability to bind F-actin. Full-length TgGAC shows lower affinity for F-actin than TgGAC1-1114.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76, C87-C89, C100 are well-supported by co-sedimentation assays showing differential binding of GAC fragments and HDX-MS data revealing conformational differences. The HDX-MS analysis provides mechanistic insight into why TgGAC1-619 fails to bind F-actin despite adopting the correct fold for most of its sequence. The lower affinity of full-length GAC compared to TgGAC1-1114 supports the hypothesis that structural rearrangement is required for optimal binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C91",
+      "C92"
+    ],
+    "result": "The closed ring structure of GAC results from an extensive N/C interface with hydrophilic and titratable electrostatic interactions. This closed conformation likely represents a functionally important state of cytosolic GAC or during initial glideosome engagement, with pH-dependent deprotonation potentially facilitating transitions to open conformations. PA binding and MIC2 recruitment may contribute to conformational changes from closed to open structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C81, C91-C92 combine well-supported structural observations (C77-C79 from crystal structure) with speculative mechanistic interpretations (C80-C81, C92). While the structural data are robust, the proposed pH-dependent mechanism and role of PA/MIC2 in conformational transitions are largely speculative and lack direct experimental validation. The spatial constraint argument (C91) is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The C-terminal AHR arch region (AHRs 38-53) shows structural similarity to \u03b2-catenin ARM domains (RMSD 4.2 \u00c5 over 348 residues). GAC may function analogously to both \u03b1-catenin (RI for actin binding) and \u03b2-catenin (RII for adhesin binding) in a single chain. Force-dependent conformational changes, similar to those in catenins, could unveil cryptic F-actin binding sites and strengthen binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is well-supported by structural comparison data (RMSD 4.2 \u00c5). However, claims C94-C99 are largely speculative analogies to catenin function. While the structural similarity is documented and the functional parallels are plausible, direct experimental evidence for force-dependent conformational changes in GAC or catch-bond behavior is lacking. The comparison relies heavily on inference from catenin literature (C96) rather than GAC-specific data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The C-terminal ARM region of GAC (TgGAC1670-2639) shows structural similarity to myosin-specific UCS domain chaperones. While T. gondii possesses a dedicated UCS chaperone (TgUNC) for TgMyoA, GAC may assist in TgMyoA organization on F-actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is supported by structural comparison data. However, claim C103 is explicitly speculative ('tempting to speculate') and acknowledges the absence of direct evidence for GAC-MyoA interaction. The functional implication is purely hypothetical and would require experimental validation through interaction studies and functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "GAC's conformational behavior is reminiscent of HUWE1, an ARM-rich E3 ligase that forms a closed ring from 34 tandem ARM repeats and can adopt open conformations to regulate protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by citation to prior work on HUWE1 and represent a valid structural comparison. This provides useful context for understanding GAC's conformational flexibility, though it is a comparative observation rather than a primary finding about GAC itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background information on Apicomplexa parasites, gliding motility, glideosome components, and prior knowledge about GAC structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6-C25 represent established knowledge about Apicomplexa biology, gliding motility mechanisms, and prior GAC research, all supported by appropriate citations. These provide essential context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The extended N-terminal helix in GAC's PH domain is reminiscent of PH domains from TgAPH and TgISP and appears to be a common feature among apicomplexan PH domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by structural comparison with cited prior work on TgAPH and TgISP. This represents a valid comparative structural observation about apicomplexan PH domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "GAC interacts with PA-enriched membranes generated through signaling cascades in activated parasites. Other regions like the basic protrusion in AHR53 likely contribute to membrane binding in vivo, and the PH domain membrane interaction surface suggests nearby MIC2 cytoplasmic tail binding with potential cooperative interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is supported by citation. Claim C85 is a reasonable inference from structural and simulation data showing AHR53 membrane contacts. Claim C86 is speculative about MIC2 binding location and cooperativity, lacking direct experimental evidence. The claims mix established knowledge (C84) with reasonable inference (C85) and speculation (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Membrane association simulations reveal a specific membrane-binding surface involving the PH domain and RII, positioning the TgGAC1-1114 region distally for actin filament interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by CG-MD simulation data showing consistent membrane binding orientation across three independent repeats. This provides a structural model for how GAC might simultaneously engage membrane and actin, though it remains a computational prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Characterization of solution properties together with membrane and F-actin binding interfaces suggests that GAC adopts several conformations from closed to open and extended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a summary conclusion supported by the collective evidence from SAXS (C47-C50), HDX-MS (C72-C76), structural analysis (C4, C36-C43), and binding studies (C55-C61, C69-C70). This represents an integrative conclusion from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  }
+]

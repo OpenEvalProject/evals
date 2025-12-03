@@ -1,0 +1,1670 @@
+{
+  "submission": {
+    "id": "f69c9e85-a13a-486d-91af-549edacbe0b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:20:44.866270Z",
+    "updated_at": "2025-12-03T08:20:44.866270Z"
+  },
+  "content": [
+    {
+      "id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "submission_id": "f69c9e85-a13a-486d-91af-549edacbe0b0",
+      "content_type": "manuscript",
+      "content_text": "# Sequence features of retrotransposons allow for epigenetic variability\n\n## Authors\n\n- Kevin R Costello<sup>1</sup> ([ORCID: 0000-0001-6104-0776](https://orcid.org/0000-0001-6104-0776))\n- Amy Leung<sup>1</sup>\n- Candi Trac<sup>1</sup>\n- Michael Lee<sup>1</sup>\n- Mudaser Basam<sup>1</sup>\n- J Andrew Pospisilik<sup>3</sup>\n- Dustin E Schones<sup>1</sup> ([ORCID: 0000-0001-7692-8583](https://orcid.org/0000-0001-7692-8583)) \u2020\n\n### Affiliations\n\n1. Department of Diabetes Complications and Metabolism, Beckman Research Institute Duarte United States\n2. Irell and Manella Graduate School of Biological Sciences, City of Hope Duarte United States\n3. Van Andel Research Institute Grand Rapids United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransposable elements (TEs) are mobile genetic elements that make up a large fraction of mammalian genomes. While select TEs have been co-opted in host genomes to have function, the majority of these elements are epigenetically silenced by DNA methylation in somatic cells. However, some TEs in mice, including the Intracisternal A-particle (IAP) subfamily of retrotransposons, have been shown to display interindividual variation in DNA methylation. Recent work has revealed that IAP sequence differences and strain-specific KRAB zinc finger proteins (KZFPs) may influence the methylation state of these IAPs. However, the mechanisms underlying the establishment and maintenance of interindividual variability in DNA methylation still remain unclear. Here, we report that sequence content and genomic context influence the likelihood that IAPs become variably methylated. IAPs that differ from consensus IAP sequences have altered KZFP recruitment that can lead to decreased KAP1 recruitment when in proximity of constitutively expressed genes. These variably methylated loci have a high CpG density, similar to CpG islands, and can be bound by ZF-CxxC proteins, providing a potential mechanism to maintain this permissive chromatin environment and protect from DNA methylation. These observations indicate that variably methylated IAPs escape silencing through both attenuation of KZFP binding and recognition by ZF-CxxC proteins to maintain a hypomethylated state.\n\n## Introduction\n\nSequences derived from transposable elements (TEs) make up a large fraction of mammalian genomes (Bourque et al., 2018). TEs are silenced by both histone modifications and DNA methylation to prevent these elements from having deleterious impact on the host genome. Certain TEs, however, can escape silencing and behave as sites of interindividual epigenetic variability (Bakshi et al., 2016; Dolinoy et al., 2007a; Gunasekara et al., 2019; Hernando-Herraez et al., 2015; Oey et al., 2015; Reiss et al., 2010). These loci have been reported to be sensitive to environmental stimuli such as diet and exposure to toxins (Dolinoy et al., 2007b; Morgan et al., 1999; Rosenfeld et al., 2013; Waterland et al., 2007; Waterland and Jirtle, 2003), although this field remains an area of active research (Bertozzi et al., 2021). The well-most studied metastable epiallele is present in the Agouti viable yellow mouse, where genetically identical mice display phenotypic diversity that manifests as a range of coat colors and susceptibility to obesity (Bernal et al., 2011; Rakyan et al., 2002). This variable coat color has been linked to the methylation state of a novel insertion of an Intracisternal A-particle (IAP) retrotransposon (Dolinoy et al., 2010). Variable methylation of this IAP contributes to variable transcription of the agouti gene across all tissues and variation in coat color, hyperphagia and hyperinsulinemia (Bernal et al., 2011; Rakyan et al., 2002). These observations in the Agouti viable mouse model highlights the impact of variable methylation of TEs on phenotypic outputs. Thus, elucidating the mechanisms underlying the establishment and maintenance of these variably methylated TEs is important to further our understanding of non-Mendelian phenotypic variability and epigenetic plasticity (Ecker et al., 2018; Ecker et al., 2017; Tejedor and Fraga, 2017).\n\nRecent work profiling interindividual epigenetic variability in mice identified roughly 50 loci that are variably methylated in a manner similar to the IAP that drives the agouti mouse phenotype (Adams et al., 2012; Bertozzi et al., 2020; Elmer et al., 2020; Kazachenka et al., 2018). (Adams et al., 2012; Kazachenka et al., 2018). The majority of these variably methylated loci are IAP retrotransposons (VM-IAPs) (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018). IAPs are silenced in a sequence-specific manner by KRAB-domain containing zinc finger proteins (KZFPs) (Coluccio et al., 2018). KZFPs recruit KAP1, also known as TRIM28, which, in turn, recruits repressive protein complexes to deposit H3K9me3 and DNA methylation at these loci (Bulut-Karslioglu et al., 2014; Ecco et al., 2017; Ecco et al., 2016; Schultz et al., 2002; Turelli et al., 2014). While this has been thought to happen primarily in embryonic stem cells, recent work has demonstrated that KZFPs and KAP1 regulated TEs in somatic cells as well (Ecco et al., 2016). KZFPs have evolved in clusters through imperfect gene duplication and spontaneous mutations that can allow for the recognition of novel TEs (Imbeault et al., 2017; Kauzlaric et al., 2017). Over time, TEs can mutate and escape from KZFP targeted silencing (Imbeault et al., 2017; Kauzlaric et al., 2017; Wolf et al., 2020). It has been proposed that these KZFPs are engaged in an evolutionary arms race with TEs to maintain their silencing (Jacobs et al., 2014).\n\nIAPs have an unusually high CpG content that is more similar to CpG islands (CGIs) than to the rest of the mouse genome (Elmer et al., 2020; Kazachenka et al., 2018). CGIs are generally hypomethylated and can recruit ZF-CxxC proteins, which help maintain a permissive chromatin environment (Clouaire et al., 2012; Gu et al., 2018; Mikkelsen et al., 2007; Thomson et al., 2010; van de Lagemaat et al., 2018). Notable CxxC domain containing proteins include CFP1, which is a subunit of the SET1 complex that deposit H3K4me3, and TET1/TET3, which are responsible for the active removal of methylation from CpG dinucleotides to maintain a hypomethylated state (Gu et al., 2018; Tahiliani et al., 2009; Williams et al., 2011). Mammalian genomes in general have an underrepresentation of CpG dinucleotides as a result of deamination at methylated cytosines over evolutionary time (Duncan and Miller, 1980; Crayle et al., 2016; Shen et al., 1994). The \u2018richness\u2019 of CpG dinucleotides at IAPs is potentially due to the fact these elements are more recent additions to the genome that have yet to undergo \u2018evolutionary\u2019 deamination at methylated CpG dinucleotides. It has been previously shown that recently evolved CpG dense TEs have the potential to be hypomethylated when there is no targeted suppression of these elements (Jacobs et al., 2014; Long et al., 2016; Ward et al., 2013).\n\nBased on this evidence, we postulated that variably methylated CpG dense IAPs can have sequence variants that allow for partial escape from KZFP-mediated silencing (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018) and subsequently be bound by ZF-CxxC proteins, thereby preventing stable repression. Focusing on the IAPLTR1 subfamily identified as IAPLTR1_Mm in RepBase,, we performed multiple sequence alignment and hierarchical clustering of these elements and confirmed that the VM-IAPs have a unique sequence that is distinct from other IAPLTRs. These IAPLTRs have altered KZFP binding and diminished KAP1 recruitment. Relative to silenced IAPs \u2013 that are found in gene poor regions or proximal to tissue specific transcripts \u2013 we find that VM-IAPs are over-represented proximal to constitutively expressed genes. Importantly, we find that CpG dense TEs (regardless of subfamily) have increased recruitment of ZF-CxxC proteins such as CFP1 and TET1 in the absence of KZFP-mediated silencing.\n\n## Results\n\n### IAP sequence influences KZFP recruitment and establishment of variable methylation\n\nRecent work has identified novel VM loci, which are largely IAPs of the IAPLTR1 and IAPLTR2 subfamilies, across tissues in C57BL/6J mice (Bertozzi et al., 2020; Elmer et al., 2020; Kazachenka et al., 2018). IAPLTR1 and IAPLTR2 are among the most evolutionarily recent IAPs (Qin et al., 2010) As KZFPs are responsible for silencing IAP elements in a sequence-specific manner (Coluccio et al., 2018), we examined if the previously identified VM-IAPs have shared sequence variants that could allow for escape from KZFP-mediated silencing at both the LTR and internal element. While many older IAPs have lost their internal elements over time, many IAPLTR1 and IAPLTR2, which among the most evolutionarily recent IAPLTRs, flank an IAPEz-int (Qin et al., 2010; Stoye, 2001). We performed multiple sequence alignment and hierarchical clustering of all LTRs belonging to the IAPLTR1 and IAPLTR2 subfamilies that were greater than 300 bps long using the ETE3 pipeline (Huerta-Cepas et al., 2016). This analysis treated all LTRs independently, regardless of whether the LTR was a solo LTR or part of an ERV. We also performed multiple sequence alignment and hierarchical clustering the first 150bps of IAPEz-ints flanked by either IAPLTR1 or IAPLTR2 elements, which has previously been show to recruit the KZFP Gm14419 (Wolf et al., 2020). This profiling resulted in the characterization of four sequence \u2018clades\u2019 for IAPLTR1s (Figure 1A, Figure 1\u2014figure supplements 1 and 2 and Supplementary file 1), two sequence \u2018clades\u2019 for the IAPLTR2s (Figure 1\u2014figure supplement 1 and Supplementary file 1), and three sequence clades for IAPEz-ints. All IAPLTRs flanking an IAPEz-int belonged to the same sequence clade.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-v3.jpg)\n\n**Figure 1.:** (A) All IAPLTR1 elements larger than 300 bps and the first 150bps of IAPEz-ints flanked by IAPLTR1 or IAPLTRs were clustered by sequence using PhyML with default settings. Major sequence variants for IAPLTR1s were separated into separate clades: clade1 (blue), clade 2 (Green), clade 3 (red), and clade 4 (orange). Major sequence variants for IAPEz-ints were separated into separate clades: clade \u03b1 (dark blue), clade \u03b2 (light blue), and clade \u03b3 (yellow). KZFP and KAP1 ChIP-seq signal was mapped across the consensus IAPLTR1 sequence as determined by MAFFT multiple sequence alignment. Gaps in the multiple sequence alignment for the IAPLTR1 sequence are displayed as grey. Heatmaps for KZFP and KAP1 ChIP-seq signals centered on the 5\u2019 end of the IAPEz-int elements are show as well (B) Average KAP1 ChIP-seq signal across all IAPLTR1 and IAPEz-int clades. Each data point refers to the average KAP1 ChIP-seq signal at an individual IAPLTR1 element. Mean and standard deviation for each clade is shown as well. (C) Distribution of the IAPLTR1 elements clades (outer circle) and IAPEz-int clades (inner circle) for all IAP elements and VM-IAP elements. (D) Percent of VM-IAPLTR1s clade three elements and non VM-IAPLTR1 clade three elements that are within 50 kb of a constitutively expressed gene or 1 kb enhancer element, as a proxy for constitutive euchromatin environment. (E) Conservation of IAPLTR1 and IAPEz-int variants across mouse strains. Presence or absence of a IAP was determined using structural variants identified from the Sanger mouse genome project. Mouse KZFP and KAP1 ChIP-seq date are from GEO: GSE115291. VM-loci coordinates were obtained from Elmer et al., 2020.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Bases present in less than 10 % of IAPLTR elements were trimmed from the alignment. Sequences were clustered using PhyML with default settings. Each base is visualized by a different color: thymine is orange, adenine is dark gray, cytosine is yellow, and guanine is light gray. Bases with no alignment are white.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Bases present in less than 10 % of IAPLTR elements were trimmed from the alignment. CpG dinucleotides are highlighted in light gray.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Consensus sequence of the IAPLTR1 clades at the region of increased ZFP989/Gm21082 binding. Arrows indicate locations of indels between clades. Previously identified Gm21082 binding motif from Wolf et al., 2020.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp4-v3.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp5-v3.jpg)\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp6-v3.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Each point refers to the percentage of IAPLTR1 proximal to a constitutively expressed gene at a given value. Distances were sampled every 2500bps.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp7-v3.jpg)\n\n**Figure 1\u2014figure supplement 7.:** Presence or absence of a IAP was determined using structural variants identified from the Sanger mouse genome project. If the entire IAP was found to be missing from the other mouse assembly, the IAP was determined to be not conserved.\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig1-figsupp8-v3.jpg)\n\nTo determine whether these clades have altered KZFP recruitment, we used published KZFP ChIP-seq profiles (Wolf et al., 2020) to survey the occupancy of KZFPs at each identified clade. We aligned all ChIP-seq libraries to the mm10 genome with multimapping, but allowed no SNPs, as we were specifically interested in identifying which sequences the KZFPs could bind (see Materials and methods for details). We identified that clade 1 IAPLTR1 elements have evidence of binding by ZFP989 and Gm21082, while clade 2 IAPLTR1 elements have evidence of binding by ZFP429 (Figure 1A and Figure 1\u2014figure supplement 3). However, clade 3 and clade 4 IAPLTR1 elements do not show evidence of binding by these KZFPs and have decreased KAP1 binding (Figure 1A and B and Figure 1\u2014figure supplement 3). Similar analysis with IAPLTR2s demonstrated that clade 1 IAPLTR2s are bound by ZFP429, while clade 2 IAPLTR2 elements are largely bound by ZFP989 (Figure 1\u2014figure supplement 4). Both clades have evidence of KAP1 binding (Figure 1\u2014figure supplement 4). When profiling KZFP and KAP1 occupation at the IAPEz-int variants, we observed that clade \u03b3 elements displayed the weakest Gm14419 binding and the lowest KAP1 signal compared to clades \u03b1 and \u03b2 (Figure 1A and B). Additionally, we observed that IAPLTR2s can flank either clade \u03b1 or \u03b2 IAPEz-ints, (Figure 1\u2014figure supplement 5), while IAPLTR1s can flank any IAPEz-int, including IAPEz-int clade \u03b3 elements that have decreased KAP1 binding (Figure 1C). These results suggest that both LTR and internal sequence variants can result in altered KZFP recruitment and KAP1-mediated silencing.\n\nFinally, we were interested in profiling whether the elements that have decreased KZFP-mediated silencing were significantly more likely to be variably methylated. We observed that VM-IAPLTR1s were significantly enriched at IAPs with IAPLTR1 clade three elements flanking IAPEz-int clade \u03b3 elements (Figure 1C), and VM-IAPLTR2 elements were significantly enriched at solo IAPLTR2 clade 1 elements (P-value < 1e-16 as determined using a Fisher exact test) (Figure 1\u2014figure supplement 5). Consistent with previous work (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018), these results suggest that sequence is a contributing factor in the establishment of VM-IAPs. Overall, these results demonstrate that the IAPs that are most prone to be variably methylated are those that are escaping KZFP-mediated silencing.\n\n### VM-IAP are proximal to constitutively expressed transcripts and enhancer elements\n\nWhile sequence has been shown to be a factor in the establishment of variable methylation (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018), not all IAPs with sequences identical to VM-IAPs are variably methylated (Figure 1A), as has been reported previously (Kazachenka et al., 2018). Previous studies have identified that CTCF enrichment, a protein involved in regulating chromatin architecture, has been bound at these VM-IAPs when hypomethylated (Elmer et al., 2020; Kazachenka et al., 2018). However, as CTCF binding motifs appear to be present at both VM-IAPs and silenced IAPs (Elmer et al., 2020) we examined whether genomic context had an impact on the establishment of variable methylation at the VM-IAPs. We used proximity of the IAP to constitutively expressed genes (Li et al., 2017) and ENCODE annotated enhancer elements from any cell type (Moore et al., 2020) as our proxy for a euchromatic environment (see Materials and methods for details). We found that 83 % of the VM-IAPLTR1s were within 50 kb of a constitutively expressed gene, while the remaining 17 % of VM-IAPLTR1s were less than 1 kb from an annotated enhancer element. In contrast, only 12 % of the non-VM IAPs were proximal to a constitutively expressed gene and 7 % were proximal to an enhancer (Figure 1D). Clade 3 VM-IAPLTR1s were more likely to be proximal to a constitutively expressed gene than other clade 3 IAPLTR1s regardless of the FPKM or distance profiled (Figure 1\u2014figure supplement 6). This indicates that while sequence allows these elements to have the potential to become variably methylated, VM-IAPs are present in a permissive chromatin environment to escape being silenced, as heterochromatin spreading from neighboring loci may drive silencing of these elements.\n\n### Conservation of IAPs between mouse strains\n\nIAP elements are a potential source of novelty between mouse strains and VM-IAPs in particular have been shown to be highly polymorphic (Gagnier et al., 2019; Kazachenka et al., 2018; Nell\u00e5ker et al., 2012; Rebollo et al., 2020). In order to investigate the relationship between IAP sequence, potential for variable methylation and conservation across strains, we leveraged structural variant differences between mouse strains identified by the Sanger mouse genome project (Keane et al., 2011). We found that clade 3\u20134 IAPLTR1s, which have the lowest KAP1 binding of the IAPLTR1 clades and IAPEz-int clade \u03b3 elements are more polymorphic across mouse strains than the other clades (Figure 1E). Additionally, we found that IAPLTR2 clade 1 elements, which are more prone to be variably methylated, are more likely to be polymorphic across mouse strains (Figure 1\u2014figure supplement 7). Thus, IAPs that have diminished KZFP recruitment are more likely to be polymorphic between mouse strains (Figure 1\u2014figure supplement 8).\n\n### IAPs that have loss of KZFP binding are bound by the ZF-CxxC containing proteins TET1 and CFP1\n\nIt has previously been reported that IAPLTR1s and IAPLTR2s have a significantly higher CpG density than the genomic average (Elmer et al., 2020; Kazachenka et al., 2018). Given the prevalence of variable methylation at these elements, we wanted to assess the relationship between CpG content and variable methylation directly. For each TE subfamily, we profiled the CpG density of all LTRs (see Materials and methods for details) and the percentage of elements that were variably methylated using the previously identified list of VM-TEs in C57BL/6J mice (Kazachenka et al., 2018). We observed that TE subfamilies with a higher average CpG density had a larger percentage of elements that are variably methylated, with IAPLTRs being the most CpG dense and having the largest percentage of variably methylated elements (Figure 2A). The CpG content of VM-IAPLTR1s and VM-IAPLTR2s is similar to non-VM-IAPLTR1s and VM-IAPLTR2s, indicating that high CpG content alone is not sufficient to induce variable methylation (Figure 2B). As CpG dense loci are capable of being recognized and bound by ZF-CxxC proteins (Blackledge et al., 2010; Thomson et al., 2010), we examined the ability of ZF-CxxC proteins to bind to IAPLTR1s. Utilizing a publicly available ChIP-seq dataset for the ZF-CxxC-domain containing protein TET1 in mouse embryonic stem cells (mESCs) (Gu et al., 2018), we identified increased TET1 binding at clade3 IAPLTR1s elements, which contains the most variably methylated elements (Figure 2C and Figure 2\u2014figure supplement 1). We furthermore profiled CpG methylation of VM-IAPLTRs in Tet1 knockout (KO) and Tet1/Dnmt3a double knockout (DKO) mESCs (Gu et al., 2018) and found that VM-IAPs displayed a significant increase in CpG methylation in the Tet1 KO cells (Figure 2D). This increase in methylation is reversed when both Dnmt3a and Tet1 are knocked out in mESCs (Figure 2D). We also profiled the recruitment of another ZF-CxxC protein, CFP1, using existing CFP1 ChIP-seq data from C57Bl/6 mice and observed CFP1 binding appears to be specific to VM-IAPLTRs (Figure 2\u2014figure supplement 2). As CFP1 is a subunit of the SET1 complex responsible for depositing H3K4me3, we examined publicly available H3K4me3 ChIP-seq data from B cells (Adams et al., 2012) to determine if H3K4me3 is enriched at VM-IAPs. Consistent with previous observations (Bertozzi et al., 2020), we observed that VM-IAPs were more likely to ben enriched for H3K4me3 compared to non-variable IAPs (Figure 2\u2014figure supplement 3). De novo motif discovery applied to VM-IAP sequences furthermore revealed known recognition sequences for ZF-CxxC proteins such as CFP1 (Figure 2\u2014figure supplement 4). ZF-CxxC protein binding has been shown to protect the underlying DNA from methylation (Blackledge et al., 2010; Thomson et al., 2010). From these results we propose that recruitment of ZF-CxxC proteins, which have been shown to be involved in maintaining a euchromatic state at CpG islands, may be involved in the establishment of variable methylation at VM-IAPs in mice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig2-v3.jpg)\n\n**Figure 2.:** (A) Percent of ERV LTRs elements that are variably methylated for a given TE subfamily and average maximum CpG score of the TE subfamily. The size of each dot is determined by the number of VM-loci for each subfamily, with the largest dots indicating the greatest number of variably methylated elements. Average CpG score was determined by identifying the most CpG dense 200 bp window of each LTR and calculating the average CpG score for the whole subfamily. (B) Average CpG density of silenced and variably methylated IAPLTRs, as well as the average CpG score of a randomly selected background the same size as the IAPLTRs. Each dot refers to an individual IAPLTR element in the mm10 genome. Mean and standard deviation for each group is shown. (C) Aggregate plots of TET1 ChIP-seq signal across all identified IAPLTR1 clades. (D) Average methylation percentage of non-variable and VM-IAPLTR elements in wild type, Tet1 knockout (KO), and Dnmt3a/Tet1 double knockout cells (DKO). Each dot refers to the average methylation of an individual IAPLTR element. Only CpGs with >5 x coverage were retained to calculate methylation. Significance determined using a Wilcoxon rank sum test. *** indicates a p.value <0.0001. Bars for mean and standard deviation is shown as well for (B and D). TET1 ChIP-seq from GEO:GSE100957. Mouse Tet1 and Tet1/Dnmt3a DKO WGBS from GEO:GSE134396.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig2-figsupp1-v3.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Aggregate plots of Cfp1 signal at variably methylated and other IAPLTRs. Heatmaps of Cfp1 signal at (B) VM-IAPLTRs and (C) all other IAPLTR1 and IAPLTR2 elements (2819 elements). Reads were uniquely aligned using bowtie1. Data from GEO:GSE18578.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Observed over expected H3K4me3 signal at variably methylated and non-variably methylated IAPLTRs. Expected H3K4me3 signal determined using average H3K4me3 signal at 50 randomly selected loci repeated 1000 times. (B) H3K4me4 ChIP-seq signal at all VM-IAPLTRs, silenced IAPLTRs and a random sampling of 50 IAPLTRs that were not variably methylated. (C) Aggregate plots of H3K4me3 ChIP-seq signal at the three groups identified in Figure 2\u2014figure supplement 1C.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** P-values obtained from MEME.\n\nTo determine if evolutionarily recent CpG-dense TEs are also more prone to be variably methylated in humans, we used a previously identified list of loci that display interindividual epigenetic variation in humans (Gunasekara et al., 2019). We determined the observed frequency at which variably methylated loci were found to be present on a TEs and compared this to an expected distribution if the variable methylation was only due to chance. Expected distribution was determined by selecting random loci in the genome the same size of the variably methylated loci. We observed that evolutionarily recent TEs were overrepresented in the variably methylated dataset (Figure 3A). TE subfamily ages were obtained from DFAM (Hubley et al., 2016). We also found the TE subfamilies with a higher CpG density are more likely to be variably methylated (Figure 3B and Figure 3\u2014figure supplement 1), with the highly CpG dense transposable element subfamily LTR12C having both one of the highest CpG densities and one of highest percentage of elements that are variably methylated. LTR12Cs are recently evolved TEs that have previously been shown to have latent regulatory potential (Ward et al., 2013) and can act as cryptic promoter elements in cancer cells (Babaian and Mager, 2016). These results demonstrate a correlation between CpG density and variable methylation in both mice and humans.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig3-v3.jpg)\n\n**Figure 3.:** (A) Observed over expected distribution of VM-TE elements in humans stratified by the evolutionary age of the TE. Expected distribution was determined using a random sampling of the hg38 genome the same size as the VM-loci. Evolutionary age for each TE subfamily was obtained from DFAM. (B) Scatterplot showing the percent of LTR elements which display VM for a given TE subfamily and average CpG score of the TE subfamily. The size of each dot is determined by the number of VM-loci for each subfamily. Average CpG score was determined by identifying the most CpG dense 200 bp window of each ERV and calculating the average CpG score for the whole subfamily. The coordinates of VM-loci for humans were obtained from Gunasekara et al., 2019.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig3-figsupp1-v3.jpg)\n\n### CpG dense TEs are hypomethylated and recruit ZF-CxxC proteins in the absence of KZFP-mediated silencing\n\nTo further investigate the relationship between KZFP/KAP1 silencing, DNA methylation, and ZF-CxxC binding to CpG dense TEs, we profiled DNA methylation and ZF-CxxC binding in Tc1 mouse liver. This \u2018transchromosomic\u2019 mouse carries the majority of human chromosome 21 (Hsa21), which possesses human specific transposable elements without the corresponding KZFPs for silencing (O\u2019Doherty et al., 2005) and has previously been used to identify the latent regulatory potential of primate specific TEs (Jacobs et al., 2014; Long et al., 2016; Ward et al., 2013). We performed MinION nanopore sequencing to globally profile DNA methylation of human chromosome 21 in Tc1 mouse liver and compared this with existing DNA methylation data from human liver cells (Li et al., 2016; Figure 4A and B). Consistent with previous reports (Jacobs et al., 2014; Long et al., 2016; Ward et al., 2013), we found that TE-derived CGIs were hypomethylated in the absence of KZFP-mediated silencing (Figure 4B). In contrast, TE-derived CGIs that can be targeted by KZFPs shared between mice and humans were largely methylated (Figure 4\u2014figure supplement 1). These silenced TE-derived CGIs are largely Alu elements that are derived from the same ancestral sequence as mouse B2 SINE elements and can be silenced by the KZFP ZNF182, which is present in both mice and humans (Imbeault et al., 2017). Additionally, other primate specific TEs that are not CpG rich are methylated in both the Tc1 and human livers (Figured 4B), highlighting the importance of CpG density in escaping CpG methylation at TEs. To profile ZF-CxxC occupancy at these hypomethylated TEs, we performed CUT&RUN for CFP1, a ZF-CxxC protein expressed in somatic tissue, in Tc1 mouse livers and compared this with existing CFP1 ChIP-seq data from human erythroblasts (van de Lagemaat et al., 2018). We observed that CpG dense TEs that are not targeted by KZFPs displayed CFP1 recruitment, while the methylated CpG poor TEs have no CFP1 signal (Figure 4C). This CFP1 binding was also unique to the Tc1 mice as there was no CFP1 binding at these loci in humans (Figure 4C), while non-TE CGIs in both the mouse and human genomes have CFP1 binding (Figure 4\u2014figure supplement 2). Together this work demonstrates that in the absence of targeted KZFP-mediated silencing, TEs with high CpG content can be hypomethylated and bound by ZF-CxxC proteins.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig4-v3.jpg)\n\n**Figure 4.:** (A) UCSC genome browser screenshot of an LTR12C element which is hypomethylated in Tc1 mice and shows novel CFP1 recruitment in Tc1 mice. (B) CpG methylation of TE CpG islands (CGIs) and other TEs for human chromosome 21 in both Tc1 mouse and human genomes. Each data point refers to an individual CpG island that had greater than 5 x coverage. Mean and standard deviation for DNA methylation at is shown as well. (C) CFP1 signal in Tc1 mice and humans at the human TE CGIs and other TEs (from B) on human chromosome 21. Human CFP1 ChIP-seq from GEO:GSM3132538. WGBS from human liver GEO:GSM1716957.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** TEs were separated by CpG density and their capability of being silenced by a KZFP element shared between mouse and humans. Largely, these silenced repeat CGIs were found at Alu elements.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig4-figsupp2-v3.jpg)\n\n### Trim28 haploinsufficiency activates evolutionarily recent TEs\n\nAs TRIM28/KAP1 is a key protein involved in the establishment of heterochromatin at TEs, we profiled Trim28 haploinsufficient mice to determine if decreased abundance of TRIM28 allows for CpG dense TEs to escape silencing. Trim28 haploinsufficiency has previously been shown to impact the Agouti viable yellow mouse coat color (Daxinger et al., 2016) and drive a bimodal obesity phenotype in FVB/NJ mice (Dalgaard et al., 2016). We performed both H3K4me3 ChIP-seq and CFP1 CUT&RUN in the livers of Trim28 haploinsufficient (Trim28+/D9) mice and their wild-type littermates (Materials and methods; Figure 5A). We identified 69 loci that had novel H3K4me3 signal in the Trim28+/D9 mice compared to control (Materials and methods; Figure 6\u2014figure supplement 1). The majority of these loci with novel H3K4me3 recruitment were evolutionarily recent TEs (Figure 6B and - supplement 2). These loci also had an increase in CFP1 signal in Trim28+/D9 mice relative to control mice (Figure 6C and Figure 6\u2014figure supplement 1). Additionally, we profiled global changes in expression of TE subfamilies in the Trim28+/D9 mice compared to wild-type mice using our previously generated RNA-seq datasets (Dalgaard et al., 2016). We identified that TEs which have a significant increase in gene expression in the Trim28+/D9 mice compared to wild-type mice have significantly higher CpG density than expected when compared to non-responsive TE subfamilies (Figure 6D). Together this work demonstrates that loss of KAP1-mediated silencing allows for some evolutionary recent TEs to be active and recruit ZF-CxxC proteins.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig5-v3.jpg)\n\n**Figure 5.:** (A) Genome screenshot of an IAPLTR2 element with novel H3K4me3 enrichment in Trim28 haploinsufficient mice. (B) Breakdown of loci with novel H3K4me3 in Trim28 haploinsufficient mice. Age of each TE was determined by DFAM. (C) Aggregate plots of H3K4me3 and CFP11 signal across all loci that have novel H3K4me3 signal in Trim28 haploinsufficient mice (D) CpG Score of TE subfamilies with a global increase expression in Trim28 haploinsufficient mice and a random selection of non-responsive TEs subfamilies. Expression levels for each TE subfamily was determined using RepEnrich, and Deseq2 was used to determine TE subfamilies with a significant increase in expression in the Trim28 haploinsufficient mice. Bar is placed at mean and error bars cover one standard deviation. Each data point refers to an individual TE subfamily. p-Values for CpG density difference was calculated using a Wilcoxon rank sum test. Trim28 haploinsufficient and wild-type mouse RNA-seq was obtained from ENA:PRJEB11740.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig5-figsupp1-v3.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Evolutionary age was obtained from Dfam (Hubley et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig6-v3.jpg)\n\n**Figure 6.:** Loci with high CpG density and loss of KZFP binding have the potential to recruit ZF-CxxC proteins to protect these TEs from being silenced. However, elements with high CpG density but strong KZFP recruitment will remain methylated.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71104/elife-71104-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Only a portion of the IAPLTR1 containing identifiable sequence variants for each clade is shown to improve visibility.\n\n## Discussion\n\nThis work provides the foundation for a deeper understanding of how mammalian genomes are shaped during evolution. It has been proposed that genomes are locked in an \u2018evolutionary arms race\u2019 between endogenous retrovirus and KZFPs to maintain proper silencing of the genome. The variable methylation observed at IAPs could be the result of the IAPs winning this \u2018battle\u2019. We observed that VM-IAPs have unique sequence variants that allow them to have diminished KZFP recruitment. This provides an explanation to previous works that identified sequence biases for variably methylated IAPs in mice (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018). We also found that IAPs with the same sequence variants as the VM-IAPs are more likely to be polymorphic between individual mouse strains. Interestingly, we find that the IAPLTRs flanking the \u2018master\u2019 IAP that has been proposed to be responsible for an expansion of IAPs in C3H/HeJ mice (Rebollo et al., 2020) has the same sequence as the clade 3 IAPLTR1s (Figure 6\u2014figure supplement 1). Together this implies that these VM-IAPs may be more active in certain mouse strains and may be propagating due to a lack of repression.\n\nOur work also highlights the potential importance of CpG density in the silencing of the endogenous retroviruses. We observed that VM-IAPs have recruitment of ZF-CxxC proteins. In the absence of targeted silencing, CpG-dense TEs have the potential to become hypomethylated and recruit ZF-CxxC proteins, while CpG poor TEs remain methylated. As TEs can lose CpG density over time, the observation that the CpG rich TEs have the potential for reactivation supports the idea that deamination of methylated loci could be one means for driving permanent silencing of TEs over time (Long et al., 2016).\n\nBased on our results, we propose a model that VM-IAP loci are established as a result of partial KZFP mediated silencing at CpG dense TEs, which can then be protected from silencing through recruitment of ZF-CxxC containing proteins such as TET1 (Figure 6). This potentially results in a stochastically silenced locus, which is then inherited by all tissues during development. Together our work has significant implications in furthering our understanding of how TEs can alter both the genomes and epigenomes of mammals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Trim29+/D9</td>\n      <td>Blewitt et al., 2005</td>\n      <td>(RRID:MGI:3821610)</td>\n      <td>Haploinsufficient for Trim28</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>B6129S-Tc(HSA21)1TybEmcf/J</td>\n      <td>The Jackson Laboratory</td>\n      <td>Stock No: 010801 (JAX)(RRID:IMSR_JAX:010801)</td>\n      <td>2 Mb of a freely segregating human fragment of Chr21</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit Polyclonal anti-CFP1 antibody</td>\n      <td>Millipore</td>\n      <td>ABE211(RRID:AB_10806210)</td>\n      <td>CUT&amp;RUN(1:50 dilution)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-H3K4me3Antibody</td>\n      <td>Abcam</td>\n      <td>ab8580(RRID:AB_306649)</td>\n      <td>ChIP-seq(2 \u00b5g antibody per25 \u00b5g chromatin)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Multiple sequence alignment and hierarchical clustering\n\nIAPLTR1_Mm, IAPLTR2_Mm, and IAPEz-int elements were defined by RepeatMasker (RRID:SCR_012954) (Smit, AFA, Hubley, R & Smit et al., 2010) in the mm10 genome. Only IAPLTRs greater than 300bps in length were profiled. For IAPEz-ints, only IAPEz-int elements flanked by either IAPLTR1 or IAPLTR2 elements were selected for profiling, and only the first 150bps of the 5\u2019 end of the IAPEz-int were aligned and clustered. All elements were processed using the ETE3 pipeline (Huerta-Cepas et al., 2016) using MAFFT (RRID:SCR_011811) with default settings (Katoh and Standley, 2013), and bases that were found in less than 10 % of the samples were trimmed from the multiple sequence alignment using trimAL (RRID:SCR_017334) (Capella-Guti\u00e9rrez et al., 2009). The multiple sequence alignments were then hierarchically clustered using PhyML (RRID:SCR_014629) (Guindon et al., 2010). Sequence clades were empirically selected.\n\n### Alignment of existing ChIP-Seq data\n\nReads were trimmed using Trimgalore version 0.5.0 (RRID:SCR_011847), which utilizes cutadapt (RRID:SCR_011841) (Martin, 2011), and were aligned to either the mm10 genome for mouse data, hg38 genome for human data, or a custom assembly that included both the mm10 genome and human chromosome 21 for the Tc1 mice. Reads were aligned using bowtie1 version 1.2.3 (RRID:SCR_005476) retaining only reads that could be mapped to unambiguously to a single locus using the -m one option (Langmead et al., 2009). Aligned reads were sorted using samtools version 1.10 (RRID:SCR_002105) (Li et al., 2009) and filtered to remove duplicate reads using the MarkDuplicates function of Picardtools version 2.21.1 (RRID:SCR_006525). Regions of enrichment were called using the callpeaks function of MACS2 version 2.2.5 (RRID:SCR_01329) (Zhang et al., 2008) with a q-val threshold of 1e-3.\n\nKZFP and KAP1 data in Figure 1 was aligned using different parameters to allow for potential multimapping as the reads were too short to provide confident unique mapping at repetitive elements. These reads were aligned to the mm10 genome using bowtie2 version 2.3.5.1 (RRID:SCR_016368) with the --end-to-end --very-sensitive options (Langmead and Salzberg, 2012). Aligned reads were sorted using samtools version 1.10 (RRID:SCR_002105) (Li et al., 2009) and filtered for duplicate reads using the MarkDuplicates function of Picardtools version 2.21.1 (RRID:SCR_006525). Regions of enrichment were called using MACS2 version 2.2.5 callpeaks (RRID:SCR_01329) (Zhang et al., 2008) with a q-val threshold of 1e-3.\n\nFor all datasets, Bedgraph files were generated using bedtools version 2.29.0 genomecov (RRID:SCR_006646) with the -bg -ibam options (Quinlan and Hall, 2010). BigWigs (RRID:SCR_007708) were generated using the UCSCtools bedGraphToBigWig (Karolchik et al., 2004). Heatmaps of ChIP-seq signal across the IAP multiple sequence alignments were generated using a custom script to profile the read coverage at each base and were visualized using pheatmap (RRID:SCR_016418). All other heatmaps and aggregate plots of loci that extend were generated using deeptools (RRID:SCR_016366) (Ram\u00edrez et al., 2016).\n\n### Genomic context analysis\n\nWe used proximity to a constitutively expressed gene or annotated enhancer element as a proxy for profiling a euchromatic environment. Constitutive expressed genes were identified as genes that have a fragments per kilobase of transcript per million mapped reads (FPKM) greater than two in more than 90 % of the samples previously profiled in Li et al., 2017, while enhancers were all ENCODE annotated enhancer elements (RRID:SCR_006793) (Moore et al., 2020). While FPKM of >2 was used, observed trends appeared regardless of FPKM threshold set (Figure 1\u2014figure supplement 6).\n\n### Polymorphism analysis between mouse strains\n\nCoordinates of the structural variants between mouse strains were obtained from the Sanger mouse genome project (RRID:SCR_006239) (Keane et al., 2011). Deletions between mouse strains were extracted for each of the profiled mouse strains. Bedtools version 2.29.0 intersect (RRID:SCR_006646) (Quinlan and Hall, 2010) with the -f one option was used to determine if an IAP was fully deleted in each mouse strain relative to C57BL/6 J. Phylogeny of the mouse strains was obtained from previous work (Nell\u00e5ker et al., 2012). For branches where multiple mouse strains are similarly diverged from C57BL6/J, the IAP was considered to be present if the IAP existed in any of profiled mice at that branch.\n\n### Profiling of CpG score\n\nCpG score was calculated as previously described (Gardiner-Garden and Frommer, 1987). Briefly, we calculated CpG score as Obs/Exp CpG = Number of CpG * N / (Number of C * Number of G). When profiling the CpG density of across the TE using sliding 200 bp tiles with 10 bp steps between windows and selected the most CpG dense portion of the TE to remove and impact of TE size. Window size was chosen to match the minimum size of a CpG island (Gardiner-Garden and Frommer, 1987). Differences in CpG density across an element was most pronounced on L1 elements, which can contain a CpG island in their 5\u2019 UTR but have low CpG density across the rest of the element. TEs with low copy numbers, such as IAPLTR4, were removed from this analysis.\n\n### MinION sequencing and alignment\n\nLivers from B6129S-Tc(HSA21)1TybEmcf/J mice (RRID:IMSR_JAX:010801) were purchased from JAX. Purified DNA from Tc1 mouse liver was prepared using the SQK-LSK109 ligation sequencing kit and run on R9 flow cells purchased from Nanopore. 1 ug of DNA was end repaired with NEBNext FFPE DNA repair and Ultra II End-prep purchased from New England Biolabs. The repaired DNA was cleaned with KAPA Pure Beads. Adapters were ligated using NEBNext quick T4 ligase purchased from New England Biolabs. Prepared libraries were mixed with Sequencing Buffer from the SQK-LSK109 kit and approximately 200 ng was loaded onto the MinION flowcell. Reads were aligned using bwa mem with the options -x ont2d -t 100 (RRID:SCR_010910) (Li, 2013) to a custom assembly that included all of the mm10 genome and human chromosome 21, and then sorted using samtools version 1.10 (RRID:SCR_002105) (Li et al., 2009). Reads were processed using minimap2 (RRID:SCR_018550) with the options -a -x map-ont (Li, 2018). Methylation state of CpGs was called using nanopolish (RRID:SCR_016157) with the options call-methylation -t 100 (Loman et al., 2015). Only loci with greater than 5 x coverage were considered in the analysis. CpG islands were obtained from the UCSC table browser (Gardiner-Garden and Frommer, 1987; Karolchik et al., 2004). Methylation percentage was averaged across CpG islands.\n\n### CFP1 CUT&RUN sequencing and alignment\n\nCUT&RUN was performed as previously described (Skene and Henikoff, 2017) on livers from B6129S-Tc(HSA21)1TybEmcf/J mice (RRID:IMSR_JAX:010801) purchased from JAX and Trim28+/D9 livers using the CFP1 antibody (RRID:AB_10806210) (ABE211, Millipore). Briefly, unfixed permeabilized cells are incubated with the CFP1 antibody fused to A-Micrococcal Nuclease. Fragmented DNA was isolated and sequenced on an Illumina HiSeq 2,500 System. We assessed standard QC measures on the FASTQ file using FASTQC (RRID:SCR_014583) and adapters were trimmed using Trimgalore version 0.5.0 (RRID:SCR_011847). Trimmed reads were aligned to a custom assembly that included both the mm10 genome and human chromosome 21, or only the mm10 genome using bowtie1 version 1.2.3 (RRID:SCR_005476) using the -m one option to only retain reads that could be mapped to unambiguously to a single locus (Langmead et al., 2009). Aligned reads were sorted using samtools version 1.10 (RRID:SCR_002105) (Li et al., 2009) and filtered for duplicate reads using the MarkDuplicates function of Picardtools version 2.21.1 (RRID:SCR_006525). Regions of CFP1 enrichment were called using the call peaks function of MACS2 version 2.2.5 (RRID:SCR_01329) (Zhang et al., 2008) with a q-val threshold of 1e-3. Only peaks found in two animals were retained to remove biological noise. Additionally, due to small fragment size, loci that could not be mapped unambiguously by 90 bp fragments were removed from consideration using the deadzones tool from RSEG (RRID:SCR_007695) (Song and Smith, 2011).\n\n### Animals\n\nThe generation of Trim28+/D9 mice (RRID:MGI:3821610) has been described elsewhere (Blewitt et al., 2005). Animals were kept on a 12 hr light/dark cycle with free access to food and water and housed in accordance with international guidelines. Livers were isolated at 2 weeks of age and immediately snap-frozen for further processing.\n\nTc1 mouse livers (RRID:IMSR_JAX:010801), freshly harvested and snap frozen, were purchased from JAX Laboratories (Stock No: 010801).\n\n### ChIP-Seq analysis of H3K4me3 ChIP-Seq\n\nChromatin immunoprecipitation was performed with an H3K4me3 antibody (RRID:AB_306649) (ab8580, Abcam) as previously described (Leung et al., 2013). Isolated DNA was sequenced on an Illumina HiSeq 2,500 System. We assessed standard QC measures on the FASTQ file using FASTQC (RRID:SCR_014583) and adapters were trimmed using Trimgalore version 0.5.0 (RRID:SCR_011847). Reads were aligned to the mm10 genome using bowtie1 version 1.2.3 (RRID:SCR_005476) using the -m one option to only retain reads that could be mapped to unambiguously to a single locus (Langmead et al., 2009). Aligned reads were sorted using samtools version 1.10 (RRID:SCR_002105) (Li et al., 2009) and filtered for duplicate reads using the MarkDuplicates function of Picardtools version 2.21.1 (RRID:SCR_006525). Regions of enrichment were called using the call peaks function of MACS2 version 2.2.5 (RRID:SCR_01329) (Zhang et al., 2008) with a q-val threshold of 1e-3. Loci that displayed enrichment of H3K4me3 in at least two animals were retained to remove biological noise. The loci with increased H3K4me3 as shown in Figure 6B\u2013C were identified by finding peaks present in Trim28+/D9 mice that were absent from WT mice and also had 3 x more H3K4me3 signal in Trim28+/D9 mice compared to WT. Heatmaps and aggregate plots were generated using deeptools (RRID:SCR_016366) (Ram\u00edrez et al., 2016).\n\n### Differential expression analysis of repetitive element subfamilies\n\nRNA-seq reads were downloaded from ENA:PRJEB11740, and adapters were trimmed using Trimgalore version 0.5.0 (RRID:SCR_011847). Reads were then aligned and processed using the RepEnrich2 pipeline RRID:SCR_021733 as previously described (Criscione et al., 2014). This package sums the number of reads mapping to each repetitive element subfamily. Differentially expressed subfamilies between Trim28+/D9 and wild-type mice were identified using DEseq2 (RRID:SCR_015687) (Love et al., 2014) with a p-val threshold of 0.05.\n",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "d6a43a75-fce9-4784-8f1d-f48ac5173034",
+      "submission_id": "f69c9e85-a13a-486d-91af-549edacbe0b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Deborah Bourc'his, Institut Curie France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71104.sa1](https://doi.org/10.7554/eLife.71104.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study aims at understanding how certain retrotransposons escape chromatin-based silencing. Focusing on variably methylated IAP copies (VM-IAPs) in the mouse, the authors show that escapees share sequence variations that alter KRAB zinc finger protein (KZFP) binding and KAP1 recruitment, proximity to expressed genes and high CpG content. Analysis of human retrotransposons in a human KZFP-free mouse cell line recapitulates some of these observations. The authors propose that ZF-CxxC proteins play a role in establishing permissive chromatin at retrotransposons that harbor high CpG content and weak KZFP binding. Although correlative, these findings open the path for further mechanistical demonstration. The paper is of interest to readers in the field of epigenetics, genome biology and transposable elements.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mechanisms regulating interindividual epigenetic variability at transposable elements\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Todd S Macfarlan (Reviewer #4).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers all agreed on the interest of the question and the significance and robustness of the analyses, even though the conclusions may not be entirely novel in some places. They also raised the requirement for 1- providing improved method description, 2-performing additional bioinformatic analyses, 3- not overinterpreting correlative data, 4- discussing previous literature. Please refer to the main three points further expanded below to prepare your revisions, and please consult the detailed points raised by the reviewers, for further modification, editing and discussion in a point-by-point rebuttal.\n\n1) More information is needed regarding the Material and Methods. This is key to understand how the data were treated in terms of bioinformatic analyses: i) precise everywhere it is required whether unique or multiple mapping was used, ii) precise whether 5'LTR and/or 3'LTR were used for LTR alignment when referring to full length VM-IAP copies, iii) considering the strain-specificity of some VM-IAPS and KZFP controllers, when relying on public mouse datasets, specify from which mouse strain they come from. The same mouse strain should ideally be used throughout the study.\n\n2) Additional bioinformatic analyses are needed to strengthen the paper:\n\n\u2013 plot KAP1 across IAPLTR2 sequences and over IAPEz internal sequence (reviewer #4).\n\n\u2013 in VM versus non-VM comparisons, please use a random set of sequences to compare the same number of sequences (the number of VM-IAPs being overwhelmingly smaller compared to other categories of IAPS (non-VM, others)) (reviewer #3).\n\n\u2013 use GTEX human liver methylation instead of the HepG2 cell line WGBS dataset (reviewer #2).\n\n\u2013 from their CPF1 CandR in wildtype liver, the authors should analyze the level of CPF1 binding at VM-IAPs specifically, as they did for H3K4me3 (from public B cell dataset).\n\n4 \u2013 Data are only correlative as this stage. VM-IAPs are less bound by KAP1/KZFP, but whether this lower recruitment is key to the VM status would need to be genetically tested: by modifying the KZFP binding site of a unique VM-IAP to convert towards weaker or stronger binding. Similarly, whether CFP1 presence on VM-IAPs was not demonstrated here to be causative of the VM-IAP status. IAPs that fail to be protected by KZFPs may just be accessible to all DNA binding proteins. It would require testing whether KAP1 or KZFP loss leads to CFP1 recruitment and then test if CPF1 is required for the VM status in mice. Considering the amount of time and work that these approaches would require, they are not requested within the frame of this revision. However, without formal demonstration, the authors should balance their discussion, and acknowledge that their data provide correlative, not causative, evidence, and should be treated as such. Reviewer #4 listed several instances where the text should be toned down.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall I think this could be a good manuscript if more emphasis was put on precision and an extensive description of patterns observed, as well as a more detailed analysis and a balanced discussion of the CPF1 results and their meaning for our mechanistical understanding of VM-IAPs and other epistable epialles. In addition to the points mentioned in the public review:\n\n\u2013 I think the title is not supported by the content of the article and should be modified to something more neutral that showcases the novel findings but does not overplay them. There is no new 'mechanism' in this article, but a few correlations and observations, some of which could suggest future research avenues to prove if they play a mechanistical role. Similarly, claims of the same nature in the abstract, results and Discussion sections should be toned down.\n\n\u2013 Much of my problems with the current manuscript have to be with the interpretation of the CPF1 findings \u2013 in my view there is absolutely no reason to think there is a mechanistical link between VM-IAP status and CPF1. Derepressed elements being now bound by various factors because they are accessible is not surprising and does not imply any causality with the VM status.\n\n\u2013 As described in the public review, a clear description of what strains which dataset comes from is imperative, as KZFPs and young IAPs can be strain specific.\n\n\u2013 the 'IAPLTR#' nomenclature should be changed to IAP LTRs #.\n\n\u2013 'euchromatic environment' should be changed to 'proximity of expressed genes' or a similar definition. There can be pockets of local repression close to expressed genes.\n\n\u2013 less than 1 kb from an annotated enhancer element\u2026 in what cell type(s)? What is the genome distribution of these elements \u2013 is there one every 10 kb, which is possible if the database from all cell types was used (which would not be relevant at all)? Some kind of enrichment calculation should be performed instead.\n\n\u2013 sentence starting at line 131: I see no support for such a strong statement, even if the above point is clarified. There is enrichment for sure but it is not exclusive, which is implied here with 'must'.\n\n\u2013 Figure 1: Why only IAPLTR1s, and not show IAPLTR2s?\n\n\u2013 line 137: 'intact' is most probably not correct here \u2013 these all have their full open reading frames with no mutations?\n\n\u2013 line 142-145: wrong definition of the grey sections \u2013 these are gaps, not sequence with no homology.\n\n\u2013 provide justification for using only the first 150 bps of IAPEz-ints \u2013 repression from KZFPs can have a longer range than a single nucleosome.\n\n\u2013 line 181: 'least conserved' is potentially misleading \u2013 is it that they were lost in other strains, or that they are new a few related strains? 'conserved' implies the former, while I think here it is the latter. Should be changed elsewhere in the text and in figure legends (for example 2C) to something more precise.\n\n\u2013 Figure 2A: IAPEz-clade # should be IAPEz-int clade #.\n\n\u2013 Figure 2B: is there no clade 3-4 LTRs associated with IAPLTR2s?\n\n\u2013 Figure 2C: again, why no mention of LTR2s?\n\n\u2013 Figure 2C: 'cade' instead of 'clade' in a few spots.\n\n\u2013 Figure 2C: This one is overall confusing \u2013 are clade 2, 3 and 4 never associated with IAPEz-Int? Figure 2B show that they are, and the legend should reflect this, as now this gives the impression that they are solo LTRs given the lack of annotation following the initial presence of it.\n\n\u2013 line 224-225: this is backward logic, there's no such demonstration. It should be precised that 'in the absence of repression from KZFPs, IAPs are capable\u2026'\n\n\u2013 Figure 3A: 'Mouse ERVs LTRs', in both the figure and the text.\n\n\u2013 Figure 3A: The use of the CpG Score metric is puzzling me \u2013 why restrict it to 'the 200 bp window with the densest CpG'? This is never explained \u2013 why not use the full element?\n\n\u2013 line 245: comparing to random sampling of the genome does not make any sense \u2013 compare instead to non variably methylated loci of the same TE family (or families).\n\n\u2013 Figure 4: be careful in calling 40 million year old elements 'young' \u2013 the timescale between mouse and human-specific elements is very different.\n\n\u2013 Use GTEx liver methylation instead of in addition to the HepG2 datasets.\n\n\u2013 line 285: what tissue was used from the Tc1 mice? Erythroblasts just the same? The expression of KZFPs is also tissue specific, this comparison should be made in ES cells where DNA methylation patterns are established.\n\n\u2013 line 322: The sentence is completely unsupported by the data.\n\n\u2013 Figure 6B: please compare to the genome-wide distribution of TEs \u2013 is it surprising to find that proportion of Mus-specific elements?\n\n\u2013 Figure 6D: the use of random sampling of non-responsive TEs is not adequate \u2013 compare with random sampling from the same families where you see increased expression.\n\n\u2013 The discussion should be rewritten to take into account the above comments \u2013 as of now, much of the CPF1 section is not supported by the data.\n\n\u2013 provide version numbers for all software and databases used.\n\n\u2013 justify the use of bowtie1 in some cases, and bowtie2 in others. Use a single pipeline is preferred.\n\n\u2013 Bowtie2 to map RNA-seq is not appropriate as it does not take splicing into account \u2013 please use a RNA-seq specific mapping strategy.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors should state the number of copies they are referring to (the VM-IAPs). It seems to me that there is a small number of variably methylated IAPs and this is such a tiny number that reinforces the idea that most IAPs are silenced, and only a few are able to escape silencing. This discussion strengthens the fact that is not only a matter of IAP sequence, but also context, and potentially strain as the authors suggest in the conclusion. Finally, this would put into context the idea that the IAPs are \"winning this arms race\".\n\nSince the authors are using clusters of IAP sequences, it would be interesting to estimate the age of such clusters and their relationship. This would imply discussing other articles that have previously classified IAP sequences (for instance 10.1002/mc.20576), and even taken into account their methylation level (10.1186/1471-2164-14-48), and potentially their CpG density.\n\nAs stated by the authors, 93% of VM-IAPLTR1s are full length sequences, so I wonder how LTRs stemming from the same copy were treated? Are both included in the analysis? Also, of these 93% FL copies, what are the differences in sequence/methylation/binding KZFP/KAP1 etc, between the two LTRs? Are there any FL copy that has different sequences at their LTR and therefore different chromatin state? Previous articles have shown that LTRs bearing the same sequence can have different methylation/chromatin state depending on their distance to nearby genes. Can the authors include this observation in their discussion?\n\nI don't understand the consensus mapping for ChIP-seq for the ZFPs, while the KAP1 ChIP-seq is done on individual IAPLTR1 element (is this uniquely mapping reads?). From the methods, I understand that the ChIP-seq reads are mapped to the mm10 genome, and then the enrichment for each base is translated to a consensus in order to illustrate as a heatmap in Figure 1? Are these uniquely or multimapped reads? These methods should be stated clearly.\n\nIn order to associate chromatin environment and VM-IAP state, the authors demonstrate that VM-IAPs are enriched within 50Kb of constitutively expressed genes. This distance seems very large for me, and I wonder how the authors have decided to chose it. Finally, In the Elmer et al., article, where the VM-IAP set is chosen, there is a valid association between CTCF and variably methylated IAP copies. In my opinion this shows how the chromatin environment is associated with VM-IAP state. The authors should discuss this in their manuscript.\n\nThe four wild-derived mouse inbred strains from Nellaker et al., ((CAST/EiJ, PWK/PhJ, WSB/EiJ and SPRET/EiJ)) have disproportionate numbers of ERV TEV calls (see Figure 1c from their paper), which could be associated with false positive calls in those species. It would be more stringent to remove these strains from this analysis, in order to have a conservation estimation between lab strains.\n\nGiven that VM-IAPs are a smaller set than all the other IAPs, comparisons stating enrichment or \"more likely\", should take into account these differences. For instance, on Figure 3 D or E, the \"other IAPs\" or \"non-VM\" should be a random set that has the same number of copies as the \"VM\" set.\n\nIn the transchromosomic mouse, the authors show that human TE derived CpG islands are hypomethylated due to lack of KZFP that would silence such TEs. I wonder what is the extent of hypomethylation in TEs that are not CpG-rich? It would strengthen the authors argument to show that non-CpG rich TEs are highly methylated (I hope I didn't miss something here though!).\n\nReviewer #4 (Recommendations for the authors):\n\nHow the conclusions of this paper could be strengthened:\n\n\u2013 To establish that the identified sequence variants are causal to diminished KZFP recruitment and increased CxxC domain containing protein recruitment, motifs could be called in the sequence variants and identified motifs could be deleted and KZFP and CxxX domain containing protein recruitment profiled to assess if the proposed competition between KZFP and CxxC is dependent on the sequence variant.\n\n\u2013 As decreased Kap1 recruitment is central to the conclusions of the paper, the authors should provide Kap1 coverage heatmaps for the IAP regions in Figures S1.6 and 2.A. This data could support the conclusion that sequence clades confer altered KAP1 mediated silencing for IAP elements by expanding the observation for IAPLTR1 to IAPLTR2 elements.\n\n\u2013 To strengthen the claims of the paper in respect to mouse VM-IAPs, the authors could assess CFP1 binding by ChIP-seq or cutandrun (which they did successfully in human) in previously used available mouse embryonic stem cell lines and mice that lack mouse-specific KZFPs and no longer repress VM-IAPs (see Bertozzi 2020 and Wolf 2020).\n\n\u2013 To test if genetic context indeed causes VM, the authors could e.g. remove and ectopically insert a VM-IAP to a different context to test if VM is lost.\n\n\u2013 Line 121 'While sequence has been shown to be a factor in the establishment of variable methylation' Please add a reference (Bertozzi et al., for example) to the experimental evidence supporting this claim.\n\n\u2013 The authors could consider more directly comparing human and mouse data by performing CFP1 cutandrun or ChIP-seq (that the lab successfully performed in Tc1 liver) also in mouse instead of H3K4me3 as a proxy.\n\nHow the presentation of the data could be improved:\n\n\u2013 Given that the sequence features distinguishing IAPLTR1 and 2 elements that are or are not variably methylated are a main claim of the paper, the authors should consider providing more reader-friendly sequence information for the observed sequence changes that correlate with diminished KZFP recruitment (e.g. in Figure S1.1 and also for internal seq in S2.1). In the related pre-print, but not the manuscript, one can zoom into the pdf to observe the sequences, but it is very hard to identify actual sequence changes and where they reside. A detailed file in the supplement or zoom ups of the exact sequence changes referred to would be helpful.\n\n\u2013 The logic of the sentence in line 154f is not obvious \"As the majority of IAPLTR2s exist as solo LTRs this indicates that these elements can be repressed through binding of KZFPs to the IAP internal sequence\". Why does it follow from existing as solo LTR that the LTR can be repressed via KZFP binding to the internal sequence? Figure S1.7 does not help understand this point. Please clarify.\n\n\u2013 Figure 2C: the authors could consider showing conservation of all VM-sequences individually (given there are not so many) in the supplement in addition to the whole clade.\n\n\u2013 In some cases, the manuscript would benefit from toning down statements about causality, when only correlation is assessed (see public review). Further examples include:\n\n\u2013 Figure 1 heading \"Sequence and chromatin context influence the establishment of a VM-IAPLTRs.\" The figure shows that VM-IAPs occur in a different chromatin context (less Kap1, more close to constitutively expressed genes and regulatory elements), but not that this context influences variable methylation.\n\n\u2013 Relating to the same Figure in 107f: \"these results demonstrate that sequence can be a contributing factor in the establishment of VM-IAPs\". More appropriate would be \"these results suggest that sequence could be a contributing factor in the establishment of VM-IAPs.\n\n\u2013 Relating to the same Figure the header in Line 120 'chromatin environment can influence establishment of VM-IAP'. More appropriate would be 'correlates with a distinct chromatin environment'.\n\n\u2013 Line 198 'IAPs that have loss of KZFP binding have recruitment of the ZF-CxxC containing proteins TET1 and CFP1' while data supporting this statement is shown in the Tc1 mouse model, the data in this section for mouse is correlative. It does support presence, rather than 'recruitment' of the ZF-CxxC domain containing proteins.\n\n\u2013 Line 253f 'our results highlight the potentially conserved importance of high CpG density in the establishment of variable methylation' The human data does not show that CpG density establishes LTR12C elements as variably methylated. It shows that LTR12C elements that are variably methylated are also CpG dense.\n",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5414dad2-341f-415c-be8f-720541738754",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C1",
+      "claim": "Transposable elements (TEs) are mobile genetic elements that make up a large fraction of mammalian genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transposable elements (TEs) are mobile genetic elements that make up a large fraction of mammalian genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in genomics supported by extensive research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "fd001a11-9422-4c7b-bbf3-6edbca1aa42e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C2",
+      "claim": "The majority of TEs are epigenetically silenced by DNA methylation in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While select TEs have been co-opted in host genomes to have function, the majority of these elements are epigenetically silenced by DNA methylation in somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of epigenetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "89e896dd-833d-4217-84d5-c6b36c194708",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C3",
+      "claim": "Some TEs in mice, including the Intracisternal A-particle (IAP) subfamily of retrotransposons, display interindividual variation in DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some TEs in mice, including the Intracisternal A-particle (IAP) subfamily of retrotransposons, have been shown to display interindividual variation in DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references existing research findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "7bf00016-60bf-4fd0-bafd-f874ae639eeb",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C4",
+      "claim": "IAP sequence differences and strain-specific KRAB zinc finger proteins (KZFPs) may influence the methylation state of IAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work has revealed that IAP sequence differences and strain-specific KRAB zinc finger proteins (KZFPs) may influence the methylation state of these IAPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on recent research findings in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "3d7173ca-0c4b-498e-9d77-e5013950d4cb",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C5",
+      "claim": "Sequence content and genomic context influence the likelihood that IAPs become variably methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that sequence content and genomic context influence the likelihood that IAPs become variably methylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "5afe09fa-9950-4aa2-9512-30c1ba1e5237",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C6",
+      "claim": "IAPs that differ from consensus IAP sequences have altered KZFP recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "IAPs that differ from consensus IAP sequences have altered KZFP recruitment that can lead to decreased KAP1 recruitment when in proximity of constitutively expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "ca847a19-0260-41a6-a729-110e5611a8a5",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C7",
+      "claim": "IAPs with altered KZFP recruitment can lead to decreased KAP1 recruitment when in proximity of constitutively expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "IAPs that differ from consensus IAP sequences have altered KZFP recruitment that can lead to decreased KAP1 recruitment when in proximity of constitutively expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing KAP1 binding patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "22bc2964-572d-4027-8934-a74b694b6432",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C8",
+      "claim": "Variably methylated IAPs have a high CpG density, similar to CpG islands.",
+      "claim_type": "EXPLICIT",
+      "source": "These variably methylated loci have a high CpG density, similar to CpG islands, and can be bound by ZF-CxxC proteins, providing a potential mechanism to maintain this permissive chromatin environment and protect from DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by CpG density analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cd386bb4-c348-4a24-8e40-db44798161cd",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C9",
+      "claim": "Variably methylated IAPs can be bound by ZF-CxxC proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These variably methylated loci have a high CpG density, similar to CpG islands, and can be bound by ZF-CxxC proteins, providing a potential mechanism to maintain this permissive chromatin environment and protect from DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq and CUT&RUN data for CFP1 and TET1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "3fa845e9-10fa-463d-a06d-f977691140ac",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C10",
+      "claim": "ZF-CxxC protein binding provides a potential mechanism to maintain a permissive chromatin environment and protect from DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "These variably methylated loci have a high CpG density, similar to CpG islands, and can be bound by ZF-CxxC proteins, providing a potential mechanism to maintain this permissive chromatin environment and protect from DNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the data and known functions of ZF-CxxC proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "53ba7443-0971-4b96-b4c4-68c78be652f1",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C11",
+      "claim": "Variably methylated IAPs escape silencing through both attenuation of KZFP binding and recognition by ZF-CxxC proteins to maintain a hypomethylated state.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that variably methylated IAPs escape silencing through both attenuation of KZFP binding and recognition by ZF-CxxC proteins to maintain a hypomethylated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "aadb2032-fa12-459b-b2d5-c807daf19487",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C12",
+      "claim": "Certain TEs can escape silencing and behave as sites of interindividual epigenetic variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain TEs, however, can escape silencing and behave as sites of interindividual epigenetic variability (Bakshi et al., 2016; Dolinoy et al., 2007a; Gunasekara et al., 2019; Hernando-Herraez et al., 2015; Oey et al., 2015; Reiss et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "f1af90eb-4bda-4a83-bfa0-e0dfeed05002",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C13",
+      "claim": "Variably methylated loci have been reported to be sensitive to environmental stimuli such as diet and exposure to toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "These loci have been reported to be sensitive to environmental stimuli such as diet and exposure to toxins (Dolinoy et al., 2007b; Morgan et al., 1999; Rosenfeld et al., 2013; Waterland et al., 2007; Waterland and Jirtle, 2003), although this field remains an area of active research (Bertozzi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "9b31ec6a-b77e-4400-bb66-9eac711ccb59",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C14",
+      "claim": "The Agouti viable yellow mouse is the most well-studied metastable epiallele.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-most studied metastable epiallele is present in the Agouti viable yellow mouse, where genetically identical mice display phenotypic diversity that manifests as a range of coat colors and susceptibility to obesity (Bernal et al., 2011; Rakyan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "86f81008-9c24-4723-a900-b7d79af021e5",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C15",
+      "claim": "Genetically identical Agouti viable yellow mice display phenotypic diversity that manifests as a range of coat colors and susceptibility to obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-most studied metastable epiallele is present in the Agouti viable yellow mouse, where genetically identical mice display phenotypic diversity that manifests as a range of coat colors and susceptibility to obesity (Bernal et al., 2011; Rakyan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "0dcb9026-7084-4f48-b301-dc04b2dde204",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C16",
+      "claim": "Variable coat color in Agouti viable yellow mice has been linked to the methylation state of a novel insertion of an Intracisternal A-particle (IAP) retrotransposon.",
+      "claim_type": "EXPLICIT",
+      "source": "This variable coat color has been linked to the methylation state of a novel insertion of an Intracisternal A-particle (IAP) retrotransposon (Dolinoy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "219db099-e6d5-486f-a647-062e976a5e2f",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C17",
+      "claim": "Variable methylation of the IAP in Agouti mice contributes to variable transcription of the agouti gene across all tissues and variation in coat color, hyperphagia and hyperinsulinemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Variable methylation of this IAP contributes to variable transcription of the agouti gene across all tissues and variation in coat color, hyperphagia and hyperinsulinemia (Bernal et al., 2011; Rakyan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "6a9c10da-c0ce-43b1-9267-f024a118bf9b",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C18",
+      "claim": "Roughly 50 loci are variably methylated in mice in a manner similar to the IAP that drives the agouti mouse phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work profiling interindividual epigenetic variability in mice identified roughly 50 loci that are variably methylated in a manner similar to the IAP that drives the agouti mouse phenotype (Adams et al., 2012; Bertozzi et al., 2020; Elmer et al., 2020; Kazachenka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "dff56a99-4733-4417-955e-a9a079a89722",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C19",
+      "claim": "The majority of variably methylated loci are IAP retrotransposons (VM-IAPs).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these variably methylated loci are IAP retrotransposons (VM-IAPs) (Bertozzi et al., 2020; Faulk et al., 2013; Kazachenka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "498087d9-b754-4b4c-8130-f8207b0094a0",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C20",
+      "claim": "IAPs are silenced in a sequence-specific manner by KRAB-domain containing zinc finger proteins (KZFPs).",
+      "claim_type": "EXPLICIT",
+      "source": "IAPs are silenced in a sequence-specific manner by KRAB-domain containing zinc finger proteins (KZFPs) (Coluccio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "4bd5acc8-f1cf-444e-bfdb-ffc8838cdf9c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C21",
+      "claim": "KZFPs recruit KAP1, which in turn recruits repressive protein complexes to deposit H3K9me3 and DNA methylation at IAP loci.",
+      "claim_type": "EXPLICIT",
+      "source": "KZFPs recruit KAP1, also known as TRIM28, which, in turn, recruits repressive protein complexes to deposit H3K9me3 and DNA methylation at these loci (Bulut-Karslioglu et al., 2014; Ecco et al., 2017; Ecco et al., 2016; Schultz et al., 2002; Turelli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "435cabd5-58af-49dc-a875-e7b0652d3a9e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C22",
+      "claim": "KZFPs and KAP1 regulate TEs in somatic cells as well as embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While this has been thought to happen primarily in embryonic stem cells, recent work has demonstrated that KZFPs and KAP1 regulated TEs in somatic cells as well (Ecco et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cf864d06-2c8b-4c0a-8c72-844e56580e32",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C23",
+      "claim": "KZFPs have evolved in clusters through imperfect gene duplication and spontaneous mutations that can allow for the recognition of novel TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "KZFPs have evolved in clusters through imperfect gene duplication and spontaneous mutations that can allow for the recognition of novel TEs (Imbeault et al., 2017; Kauzlaric et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cf6aa31b-2531-4f45-a45b-ca924a92295c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C24",
+      "claim": "TEs can mutate and escape from KZFP targeted silencing over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, TEs can mutate and escape from KZFP targeted silencing (Imbeault et al., 2017; Kauzlaric et al., 2017; Wolf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "a90606b9-2186-438d-93b3-944e9bfed284",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C25",
+      "claim": "KZFPs are engaged in an evolutionary arms race with TEs to maintain their silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that these KZFPs are engaged in an evolutionary arms race with TEs to maintain their silencing (Jacobs et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "9ea20bed-5d58-4ee5-a905-0b7bdd0c8734",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C26",
+      "claim": "IAPs have an unusually high CpG content that is more similar to CpG islands (CGIs) than to the rest of the mouse genome.",
+      "claim_type": "EXPLICIT",
+      "source": "IAPs have an unusually high CpG content that is more similar to CpG islands (CGIs) than to the rest of the mouse genome (Elmer et al., 2020; Kazachenka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "7809fc18-8a93-434c-9620-ee0a1813450a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C27",
+      "claim": "CGIs are generally hypomethylated and can recruit ZF-CxxC proteins, which help maintain a permissive chromatin environment.",
+      "claim_type": "EXPLICIT",
+      "source": "CGIs are generally hypomethylated and can recruit ZF-CxxC proteins, which help maintain a permissive chromatin environment (Clouaire et al., 2012; Gu et al., 2018; Mikkelsen et al., 2007; Thomson et al., 2010; van de Lagemaat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "fa179336-07a8-488b-a231-2071209a7a1c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C28",
+      "claim": "CFP1 is a subunit of the SET1 complex that deposits H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable CxxC domain containing proteins include CFP1, which is a subunit of the SET1 complex that deposit H3K4me3, and TET1/TET3, which are responsible for the active removal of methylation from CpG dinucleotides to maintain a hypomethylated state (Gu et al., 2018; Tahiliani et al., 2009; Williams et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "69c0015f-c6be-4505-82ec-daacc2f8d40c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C29",
+      "claim": "TET1/TET3 are responsible for the active removal of methylation from CpG dinucleotides to maintain a hypomethylated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable CxxC domain containing proteins include CFP1, which is a subunit of the SET1 complex that deposit H3K4me3, and TET1/TET3, which are responsible for the active removal of methylation from CpG dinucleotides to maintain a hypomethylated state (Gu et al., 2018; Tahiliani et al., 2009; Williams et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "b7b59863-b33c-4a9b-b492-ec8d0273bc23",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C30",
+      "claim": "Mammalian genomes have an underrepresentation of CpG dinucleotides as a result of deamination at methylated cytosines over evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian genomes in general have an underrepresentation of CpG dinucleotides as a result of deamination at methylated cytosines over evolutionary time (Duncan and Miller, 1980; Crayle et al., 2016; Shen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "2e811787-27cb-4dd4-90cf-21516406a386",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C31",
+      "claim": "The CpG richness of IAPs is potentially due to the fact these elements are more recent additions to the genome that have yet to undergo evolutionary deamination at methylated CpG dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'richness' of CpG dinucleotides at IAPs is potentially due to the fact these elements are more recent additions to the genome that have yet to undergo 'evolutionary' deamination at methylated CpG dinucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on evolutionary principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "fbcb67b1-8554-4117-9893-4c52ee6e5269",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C32",
+      "claim": "Recently evolved CpG dense TEs have the potential to be hypomethylated when there is no targeted suppression of these elements.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that recently evolved CpG dense TEs have the potential to be hypomethylated when there is no targeted suppression of these elements (Jacobs et al., 2014; Long et al., 2016; Ward et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "62755d86-d9e7-43b8-b32c-68b97a133e13",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C33",
+      "claim": "Multiple sequence alignment and hierarchical clustering identified four sequence 'clades' for IAPLTR1s.",
+      "claim_type": "EXPLICIT",
+      "source": "This profiling resulted in the characterization of four sequence 'clades' for IAPLTR1s (Figure 1A, Figure 1\u2014figure supplements 1 and 2 and Supplementary file 1), two sequence 'clades' for the IAPLTR2s (Figure 1\u2014figure supplement 1 and Supplementary file 1), and three sequence clades for IAPEz-ints.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequence analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "57b30c8b-a989-4dbe-91d9-aba219e3b49c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C34",
+      "claim": "Multiple sequence alignment and hierarchical clustering identified two sequence 'clades' for IAPLTR2s.",
+      "claim_type": "EXPLICIT",
+      "source": "This profiling resulted in the characterization of four sequence 'clades' for IAPLTR1s (Figure 1A, Figure 1\u2014figure supplements 1 and 2 and Supplementary file 1), two sequence 'clades' for the IAPLTR2s (Figure 1\u2014figure supplement 1 and Supplementary file 1), and three sequence clades for IAPEz-ints.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequence analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "5b8f458b-d13b-493c-b99f-e498fc2810e5",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C35",
+      "claim": "Multiple sequence alignment and hierarchical clustering identified three sequence clades for IAPEz-ints.",
+      "claim_type": "EXPLICIT",
+      "source": "This profiling resulted in the characterization of four sequence 'clades' for IAPLTR1s (Figure 1A, Figure 1\u2014figure supplements 1 and 2 and Supplementary file 1), two sequence 'clades' for the IAPLTR2s (Figure 1\u2014figure supplement 1 and Supplementary file 1), and three sequence clades for IAPEz-ints.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the sequence analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "6e25c9a1-c026-4bae-86b7-a4adae84a53b",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C36",
+      "claim": "Clade 1 IAPLTR1 elements have evidence of binding by ZFP989 and Gm21082.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that clade 1 IAPLTR1 elements have evidence of binding by ZFP989 and Gm21082, while clade 2 IAPLTR1 elements have evidence of binding by ZFP429 (Figure 1A and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "fc72e4eb-5b2b-4971-99ae-fcac67651be7",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C37",
+      "claim": "Clade 2 IAPLTR1 elements have evidence of binding by ZFP429.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that clade 1 IAPLTR1 elements have evidence of binding by ZFP989 and Gm21082, while clade 2 IAPLTR1 elements have evidence of binding by ZFP429 (Figure 1A and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "6a867c54-55e9-486c-b704-279019e0514e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C38",
+      "claim": "Clade 3 and clade 4 IAPLTR1 elements do not show evidence of binding by ZFP989, Gm21082, or ZFP429 and have decreased KAP1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clade 3 and clade 4 IAPLTR1 elements do not show evidence of binding by these KZFPs and have decreased KAP1 binding (Figure 1A and B and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "512608f8-68ea-4e13-bbd4-b4baa904b1be",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C39",
+      "claim": "Clade 1 IAPLTR2s are bound by ZFP429.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar analysis with IAPLTR2s demonstrated that clade 1 IAPLTR2s are bound by ZFP429, while clade 2 IAPLTR2 elements are largely bound by ZFP989 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cc0b2199-f4de-4f6c-aaa2-7b244a6e25fe",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C40",
+      "claim": "Clade 2 IAPLTR2 elements are largely bound by ZFP989.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar analysis with IAPLTR2s demonstrated that clade 1 IAPLTR2s are bound by ZFP429, while clade 2 IAPLTR2 elements are largely bound by ZFP989 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "4054aed2-3364-42d8-b742-ec11c2294e2c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C41",
+      "claim": "Both IAPLTR2 clades have evidence of KAP1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Both clades have evidence of KAP1 binding (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "d204ccdb-5f64-455f-9363-8eb6a75847d3",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C42",
+      "claim": "IAPEz-int clade \u03b3 elements displayed the weakest Gm14419 binding and the lowest KAP1 signal compared to clades \u03b1 and \u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "When profiling KZFP and KAP1 occupation at the IAPEz-int variants, we observed that clade \u03b3 elements displayed the weakest Gm14419 binding and the lowest KAP1 signal compared to clades \u03b1 and \u03b2 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ChIP-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "c41b9284-267a-47e8-a67b-daef7dc6cd64",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C43",
+      "claim": "VM-IAPLTR1s were significantly enriched at IAPs with IAPLTR1 clade three elements flanking IAPEz-int clade \u03b3 elements.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that VM-IAPLTR1s were significantly enriched at IAPs with IAPLTR1 clade three elements flanking IAPEz-int clade \u03b3 elements (Figure 1C), and VM-IAPLTR2 elements were significantly enriched at solo IAPLTR2 clade 1 elements (P-value < 1e-16 as determined using a Fisher exact test) (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "f87e446f-2769-4334-ab86-19fb6f56c4b7",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C44",
+      "claim": "VM-IAPLTR2 elements were significantly enriched at solo IAPLTR2 clade 1 elements (P-value < 1e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that VM-IAPLTR1s were significantly enriched at IAPs with IAPLTR1 clade three elements flanking IAPEz-int clade \u03b3 elements (Figure 1C), and VM-IAPLTR2 elements were significantly enriched at solo IAPLTR2 clade 1 elements (P-value < 1e-16 as determined using a Fisher exact test) (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cfb20f3a-b74d-4003-b4b1-29d78e04f70e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C45",
+      "claim": "83% of VM-IAPLTR1s were within 50 kb of a constitutively expressed gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 83 % of the VM-IAPLTR1s were within 50 kb of a constitutively expressed gene, while the remaining 17 % of VM-IAPLTR1s were less than 1 kb from an annotated enhancer element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic location analysis of VM-IAPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cf713e68-8f19-44ba-9fa9-b0550bd37a26",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C46",
+      "claim": "17% of VM-IAPLTR1s were less than 1 kb from an annotated enhancer element.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 83 % of the VM-IAPLTR1s were within 50 kb of a constitutively expressed gene, while the remaining 17 % of VM-IAPLTR1s were less than 1 kb from an annotated enhancer element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genomic location analysis of VM-IAPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "5e17781a-d20e-499e-a84e-9ce6f73749b7",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C47",
+      "claim": "Only 12% of non-VM IAPs were proximal to a constitutively expressed gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 12 % of the non-VM IAPs were proximal to a constitutively expressed gene and 7 % were proximal to an enhancer (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic location analysis of non-VM IAPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "ab370ff5-a61b-4a13-9bed-2e482fa4e17a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C48",
+      "claim": "7% of non-VM IAPs were proximal to an enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 12 % of the non-VM IAPs were proximal to a constitutively expressed gene and 7 % were proximal to an enhancer (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genomic location analysis of non-VM IAPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "3c9599d5-5d8f-4c8f-8037-4161c1f2901f",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C49",
+      "claim": "Clade 3-4 IAPLTR1s are more polymorphic across mouse strains than the other clades.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that clade 3\u20134 IAPLTR1s, which have the lowest KAP1 binding of the IAPLTR1 clades and IAPEz-int clade \u03b3 elements are more polymorphic across mouse strains than the other clades (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of structural variants between mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "0cd5ac15-31b7-4615-a14d-2ec361e03037",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C50",
+      "claim": "IAPEz-int clade \u03b3 elements are more polymorphic across mouse strains than the other clades.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that clade 3\u20134 IAPLTR1s, which have the lowest KAP1 binding of the IAPLTR1 clades and IAPEz-int clade \u03b3 elements are more polymorphic across mouse strains than the other clades (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of structural variants between mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "8a2d5d37-0bb8-44d4-bc0d-a11ab3da60d0",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C51",
+      "claim": "IAPLTR2 clade 1 elements are more likely to be polymorphic across mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that IAPLTR2 clade 1 elements, which are more prone to be variably methylated, are more likely to be polymorphic across mouse strains (Figure 1\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of structural variants between mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "647728ac-e36b-49ae-95b9-7a624823a9aa",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C52",
+      "claim": "TE subfamilies with a higher average CpG density had a larger percentage of elements that are variably methylated.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that TE subfamilies with a higher average CpG density had a larger percentage of elements that are variably methylated, with IAPLTRs being the most CpG dense and having the largest percentage of variably methylated elements (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CpG density and variable methylation across TE subfamilies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "3d1ab73d-80a4-46f3-a57d-153ceda3763e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C53",
+      "claim": "IAPLTRs are the most CpG dense TEs and have the largest percentage of variably methylated elements.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that TE subfamilies with a higher average CpG density had a larger percentage of elements that are variably methylated, with IAPLTRs being the most CpG dense and having the largest percentage of variably methylated elements (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CpG density and variable methylation across TE subfamilies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "5b4acb75-5e9d-4a61-9787-72ba7a212f5a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C54",
+      "claim": "The CpG content of VM-IAPLTR1s and VM-IAPLTR2s is similar to non-VM-IAPLTR1s and non-VM-IAPLTR2s.",
+      "claim_type": "EXPLICIT",
+      "source": "The CpG content of VM-IAPLTR1s and VM-IAPLTR2s is similar to non-VM-IAPLTR1s and VM-IAPLTR2s, indicating that high CpG content alone is not sufficient to induce variable methylation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on CpG density analysis comparing VM and non-VM IAPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "489f3c78-9c1c-48ac-9c12-659b1b97710b",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C55",
+      "claim": "High CpG content alone is not sufficient to induce variable methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The CpG content of VM-IAPLTR1s and VM-IAPLTR2s is similar to non-VM-IAPLTR1s and VM-IAPLTR2s, indicating that high CpG content alone is not sufficient to induce variable methylation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the CpG density data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "0b4f397b-a5f9-4918-8b51-78f9fb8ff254",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C56",
+      "claim": "TET1 binding is increased at clade 3 IAPLTR1s elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing a publicly available ChIP-seq dataset for the ZF-CxxC-domain containing protein TET1 in mouse embryonic stem cells (mESCs) (Gu et al., 2018), we identified increased TET1 binding at clade3 IAPLTR1s elements, which contains the most variably methylated elements (Figure 2C and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published TET1 ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "3c6b12f3-9394-4a77-99e1-2d73c39bb415",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C57",
+      "claim": "VM-IAPs displayed a significant increase in CpG methylation in Tet1 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore profiled CpG methylation of VM-IAPLTRs in Tet1 knockout (KO) and Tet1/Dnmt3a double knockout (DKO) mESCs (Gu et al., 2018) and found that VM-IAPs displayed a significant increase in CpG methylation in the Tet1 KO cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published methylation data from Tet1 KO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "b13931e1-f48c-455e-8441-efffbc7745be",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C58",
+      "claim": "The increase in methylation at VM-IAPs in Tet1 KO cells is reversed when both Dnmt3a and Tet1 are knocked out in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in methylation is reversed when both Dnmt3a and Tet1 are knocked out in mESCs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published methylation data from Tet1/Dnmt3a DKO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "8423189e-1b36-4536-a5c8-9c31755c8cd3",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C59",
+      "claim": "CFP1 binding appears to be specific to VM-IAPLTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also profiled the recruitment of another ZF-CxxC protein, CFP1, using existing CFP1 ChIP-seq data from C57Bl/6 mice and observed CFP1 binding appears to be specific to VM-IAPLTRs (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published CFP1 ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "17dc0abc-4f76-4fd2-9633-1d015759a05a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C60",
+      "claim": "VM-IAPs were more likely to be enriched for H3K4me3 compared to non-variable IAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Bertozzi et al., 2020), we observed that VM-IAPs were more likely to ben enriched for H3K4me3 compared to non-variable IAPs (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of published H3K4me3 ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "5daa175c-22a9-4ee7-9429-ce8e30104bd8",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C61",
+      "claim": "Evolutionarily recent TEs were overrepresented in the variably methylated dataset in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that evolutionarily recent TEs were overrepresented in the variably methylated dataset (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of human variably methylated loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "e1a11840-46f8-4444-bfd1-bffd47ff69d8",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C62",
+      "claim": "TE subfamilies with a higher CpG density are more likely to be variably methylated in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the TE subfamilies with a higher CpG density are more likely to be variably methylated (Figure 3B and Figure 3\u2014figure supplement 1), with the highly CpG dense transposable element subfamily LTR12C having both one of the highest CpG densities and one of highest percentage of elements that are variably methylated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of human variably methylated loci and CpG density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "2c5d9484-8321-4100-87c3-5d23648f5bc9",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C63",
+      "claim": "LTR12C has one of the highest CpG densities and one of highest percentage of elements that are variably methylated in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found the TE subfamilies with a higher CpG density are more likely to be variably methylated (Figure 3B and Figure 3\u2014figure supplement 1), with the highly CpG dense transposable element subfamily LTR12C having both one of the highest CpG densities and one of highest percentage of elements that are variably methylated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of human variably methylated loci and CpG density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "cf517c1b-116f-48fd-98c2-9497fc792c4a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C64",
+      "claim": "LTR12Cs are recently evolved TEs that have previously been shown to have latent regulatory potential.",
+      "claim_type": "EXPLICIT",
+      "source": "LTR12Cs are recently evolved TEs that have previously been shown to have latent regulatory potential (Ward et al., 2013) and can act as cryptic promoter elements in cancer cells (Babaian and Mager, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "e3d4613d-a7ce-4e71-8ef5-15e3c8a0c58c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C65",
+      "claim": "LTR12Cs can act as cryptic promoter elements in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LTR12Cs are recently evolved TEs that have previously been shown to have latent regulatory potential (Ward et al., 2013) and can act as cryptic promoter elements in cancer cells (Babaian and Mager, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "9d22c0c4-c23e-4640-9c88-170204cbb603",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C66",
+      "claim": "TE-derived CGIs were hypomethylated in Tc1 mouse liver in the absence of KZFP-mediated silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Jacobs et al., 2014; Long et al., 2016; Ward et al., 2013), we found that TE-derived CGIs were hypomethylated in the absence of KZFP-mediated silencing (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on MinION nanopore sequencing data from Tc1 mouse liver.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "7ad2af77-8bc7-4923-8328-f250b3c4fbef",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C67",
+      "claim": "TE-derived CGIs that can be targeted by KZFPs shared between mice and humans were largely methylated in Tc1 mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, TE-derived CGIs that can be targeted by KZFPs shared between mice and humans were largely methylated (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on MinION nanopore sequencing data from Tc1 mouse liver.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "96c1486b-6cdf-4e5b-9a0f-88daf313bc76",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C68",
+      "claim": "CpG dense TEs that are not targeted by KZFPs displayed CFP1 recruitment in Tc1 mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that CpG dense TEs that are not targeted by KZFPs displayed CFP1 recruitment, while the methylated CpG poor TEs have no CFP1 signal (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on CFP1 CUT&RUN data from Tc1 mouse liver.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "459151c2-cb12-4fab-bfff-dfab223bde1c",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C69",
+      "claim": "Methylated CpG poor TEs have no CFP1 signal in Tc1 mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that CpG dense TEs that are not targeted by KZFPs displayed CFP1 recruitment, while the methylated CpG poor TEs have no CFP1 signal (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on CFP1 CUT&RUN data from Tc1 mouse liver.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "f9ad3128-202f-4c2e-9973-c3fdeb99baac",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C70",
+      "claim": "CFP1 binding at CpG dense TEs on human chromosome 21 was unique to Tc1 mice and not present in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This CFP1 binding was also unique to the Tc1 mice as there was no CFP1 binding at these loci in humans (Figure 4C), while non-TE CGIs in both the mouse and human genomes have CFP1 binding (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of CFP1 data from Tc1 mice and humans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "986f1e91-e738-4f3c-ad64-ba9c1e56f69e",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C71",
+      "claim": "In the absence of targeted KZFP-mediated silencing, TEs with high CpG content can be hypomethylated and bound by ZF-CxxC proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this work demonstrates that in the absence of targeted KZFP-mediated silencing, TEs with high CpG content can be hypomethylated and bound by ZF-CxxC proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Tc1 mouse experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "dd07adaa-804d-4644-a02a-4caa4c193541",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C72",
+      "claim": "69 loci had novel H3K4me3 signal in Trim28+/D9 mice compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 69 loci that had novel H3K4me3 signal in the Trim28+/D9 mice compared to control (Materials and methods; Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on H3K4me3 ChIP-seq data from Trim28 haploinsufficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "f43b7735-c678-49c2-a3d1-d84763ced257",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C73",
+      "claim": "The majority of loci with novel H3K4me3 recruitment in Trim28+/D9 mice were evolutionarily recent TEs.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these loci with novel H3K4me3 recruitment were evolutionarily recent TEs (Figure 6B and - supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of H3K4me3 ChIP-seq data from Trim28 haploinsufficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "60dab702-5fac-4414-9359-95fc9ef34c3a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C74",
+      "claim": "Loci with novel H3K4me3 in Trim28+/D9 mice had an increase in CFP1 signal relative to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These loci also had an increase in CFP1 signal in Trim28+/D9 mice relative to control mice (Figure 6C and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on CFP1 CUT&RUN data from Trim28 haploinsufficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "9b0116a5-14e9-49fc-bbb5-9c7ba25332d6",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C75",
+      "claim": "TEs with a significant increase in gene expression in Trim28+/D9 mice have significantly higher CpG density than non-responsive TE subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified that TEs which have a significant increase in gene expression in the Trim28+/D9 mice compared to wild-type mice have significantly higher CpG density than expected when compared to non-responsive TE subfamilies (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis of Trim28 haploinsufficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "059cdcf9-5831-4d19-a05d-254628fcd859",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C76",
+      "claim": "Trim28 haploinsufficiency has previously been shown to impact the Agouti viable yellow mouse coat color.",
+      "claim_type": "EXPLICIT",
+      "source": "Trim28 haploinsufficiency has previously been shown to impact the Agouti viable yellow mouse coat color (Daxinger et al., 2016) and drive a bimodal obesity phenotype in FVB/NJ mice (Dalgaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "1ca6c4f2-cfee-470b-828b-9d04932351af",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C77",
+      "claim": "Trim28 haploinsufficiency drives a bimodal obesity phenotype in FVB/NJ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Trim28 haploinsufficiency has previously been shown to impact the Agouti viable yellow mouse coat color (Daxinger et al., 2016) and drive a bimodal obesity phenotype in FVB/NJ mice (Dalgaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "992805bf-bfea-4cdd-b65f-378ba12e0dfc",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C78",
+      "claim": "VM-IAPs have unique sequence variants that allow them to have diminished KZFP recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that VM-IAPs have unique sequence variants that allow them to have diminished KZFP recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequence analysis and ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "c439b65b-ed78-4760-9f96-8a54baa09e83",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C79",
+      "claim": "IAPs with the same sequence variants as VM-IAPs are more likely to be polymorphic between individual mouse strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that IAPs with the same sequence variants as the VM-IAPs are more likely to be polymorphic between individual mouse strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of structural variants between mouse strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "775ba61e-501f-4309-a311-459fb71777a9",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C80",
+      "claim": "The IAPLTRs flanking the 'master' IAP proposed to be responsible for an expansion of IAPs in C3H/HeJ mice has the same sequence as the clade 3 IAPLTR1s.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we find that the IAPLTRs flanking the 'master' IAP that has been proposed to be responsible for an expansion of IAPs in C3H/HeJ mice (Rebollo et al., 2020) has the same sequence as the clade 3 IAPLTR1s (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence comparison with the master IAP.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "8087d3e6-0b2d-4e17-877a-6998236f47eb",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C81",
+      "claim": "VM-IAPs may be more active in certain mouse strains and may be propagating due to a lack of repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this implies that these VM-IAPs may be more active in certain mouse strains and may be propagating due to a lack of repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the polymorphism and sequence data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "64a013c8-5969-4137-9103-cbd8412e865a",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C82",
+      "claim": "VM-IAPs have recruitment of ZF-CxxC proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that VM-IAPs have recruitment of ZF-CxxC proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on CFP1 and TET1 binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "f3ac655a-9e86-4fdf-8978-0cb2c50448df",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C83",
+      "claim": "Deamination of methylated loci could be one means for driving permanent silencing of TEs over time.",
+      "claim_type": "EXPLICIT",
+      "source": "As TEs can lose CpG density over time, the observation that the CpG rich TEs have the potential for reactivation supports the idea that deamination of methylated loci could be one means for driving permanent silencing of TEs over time (Long et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "59db006e-2e37-4d41-9865-7d389116e59b",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "claim_id": "C84",
+      "claim": "VM-IAP loci are established as a result of partial KZFP mediated silencing at CpG dense TEs, which can then be protected from silencing through recruitment of ZF-CxxC containing proteins such as TET1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we propose a model that VM-IAP loci are established as a result of partial KZFP mediated silencing at CpG dense TEs, which can then be protected from silencing through recruitment of ZF-CxxC containing proteins such as TET1 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the proposed model based on all the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Multiple sequence alignment and hierarchical clustering identified distinct sequence clades for IAPLTR1s (4 clades), IAPLTR2s (2 clades), and IAPEz-ints (3 clades), with differential KZFP and KAP1 binding patterns. Clade 1 IAPLTR1s bind ZFP989/Gm21082, clade 2 binds ZFP429, while clades 3-4 show reduced KZFP and KAP1 binding. Similar patterns were observed for IAPLTR2 and IAPEz-int clades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C42 present a comprehensive sequence analysis with corresponding ChIP-seq validation showing differential KZFP recruitment across clades. The methodology is clearly described, figures show consistent patterns, and the hierarchical clustering approach is appropriate for identifying sequence variants with functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "ae61d492-c009-46e1-9c97-5b72a7aeef96",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "VM-IAPs are significantly enriched in specific sequence clades: VM-IAPLTR1s at clade 3 elements flanking IAPEz-int clade \u03b3 (p<1e-16), and VM-IAPLTR2s at solo clade 1 elements (p<1e-16). These VM-IAPs have unique sequence variants that result in diminished KZFP recruitment and decreased KAP1 binding, particularly near constitutively expressed genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 provide statistical significance (Fisher exact test, p<1e-16) for the enrichment of VM-IAPs in specific clades. The connection between sequence variants, altered KZFP recruitment, and variable methylation is supported by multiple lines of evidence including ChIP-seq data and genomic location analysis (C5-C7, C78).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "1c0ef3da-eee1-4da7-a0e1-8dfe769c4887",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "VM-IAPLTR1s are predominantly located in euchromatic environments: 83% within 50 kb of constitutively expressed genes and 17% within 1 kb of enhancer elements. In contrast, only 12% of non-VM IAPs are proximal to constitutively expressed genes and 7% to enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 present clear genomic location analysis with substantial differences between VM and non-VM IAPs. The use of proximity to constitutively expressed genes and enhancers as proxies for euchromatic environment is reasonable, though the specific distance thresholds (50 kb, 1 kb) could be better justified. The data support the conclusion that genomic context influences variable methylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "65d77af1-7d03-44d4-b181-3d6d8eb744c7",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IAP clades with reduced KZFP/KAP1 binding (IAPLTR1 clades 3-4, IAPEz-int clade \u03b3, and IAPLTR2 clade 1) show increased polymorphism across mouse strains compared to other clades. IAPs with VM-IAP sequence variants are more likely to be polymorphic between mouse strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C79 demonstrate a correlation between reduced silencing and increased polymorphism using structural variant data from the Sanger mouse genome project. The analysis is appropriate, though the manuscript could benefit from quantitative statistics beyond the visual representation in Figure 1E and supplements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "74d9adc9-fcfa-43a8-a22c-097b48f11425",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TE subfamilies with higher average CpG density have a larger percentage of variably methylated elements, with IAPLTRs being the most CpG dense and having the largest percentage of VM elements. However, CpG content of VM-IAPLTRs is similar to non-VM-IAPLTRs, indicating high CpG content alone is insufficient for variable methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 present a nuanced finding: CpG density correlates with VM at the subfamily level but not at the individual element level within IAPLTRs. This is well-supported by Figure 2A-B and demonstrates that additional factors beyond CpG density are required for establishing variable methylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "fd86a543-fa4b-4c8c-a73d-5293624e769d",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VM-IAPs show increased TET1 binding at clade 3 IAPLTR1s and display significant methylation increase in Tet1 KO cells, which is reversed in Tet1/Dnmt3a double knockout. VM-IAPs recruit ZF-CxxC proteins including TET1 and CFP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58, C9, C82 provide strong evidence for ZF-CxxC protein involvement using published ChIP-seq and methylation data. The Tet1 KO and DKO experiments (C57-C58) provide functional validation that TET1 protects VM-IAPs from methylation. However, the reliance on published data from different cell types (mESCs vs. the somatic tissues studied) is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "7e2ab0e5-1274-4add-bfcc-6a0e27269f18",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CFP1 binding is specific to VM-IAPLTRs, and VM-IAPs are more likely to be enriched for H3K4me3 compared to non-variable IAPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by analysis of published CFP1 ChIP-seq and H3K4me3 ChIP-seq data. The specificity of CFP1 binding to VM-IAPLTRs (C59) is clearly shown in Figure 2\u2014figure supplement 2. The H3K4me3 enrichment (C60) is consistent with CFP1's role in the SET1 complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "c6d63f90-c2a6-47c0-9e8b-ae9603f23693",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In humans, evolutionarily recent TEs are overrepresented in variably methylated datasets, and TE subfamilies with higher CpG density are more likely to be variably methylated. LTR12C has one of the highest CpG densities and highest percentages of variably methylated elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 extend the mouse findings to humans using published human VM data. The analysis appropriately uses observed vs. expected distributions and shows consistent patterns with the mouse data. This cross-species validation strengthens the generalizability of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "53b3105c-e9b0-453e-b89c-d83abdc477a1",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Tc1 mice carrying human chromosome 21, TE-derived CGIs lacking KZFP-mediated silencing are hypomethylated and recruit CFP1, while TE-CGIs targetable by shared mouse-human KZFPs remain methylated. CpG-dense TEs display CFP1 recruitment while CpG-poor TEs do not. This CFP1 binding is unique to Tc1 mice and absent in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 use the Tc1 mouse model effectively to demonstrate that CpG-dense TEs can escape methylation and recruit ZF-CxxC proteins in the absence of KZFP silencing. The MinION nanopore sequencing and CFP1 CUT&RUN data provide direct evidence. The comparison with human data strengthens the conclusion that KZFP absence is causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "2f4fc25f-0fee-4eca-8ac5-3964c54142e5",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In Trim28 haploinsufficient mice, 69 loci show novel H3K4me3 signal, predominantly at evolutionarily recent TEs. These loci also show increased CFP1 signal. TEs with significantly increased expression in Trim28+/D9 mice have significantly higher CpG density than non-responsive TE subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 provide functional validation using a genetic perturbation model. The H3K4me3 ChIP-seq, CFP1 CUT&RUN, and RNA-seq data converge to show that reduced KAP1 allows CpG-dense TEs to recruit ZF-CxxC proteins and become transcriptionally active. The methodology for identifying novel H3K4me3 peaks could be better described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "2653c952-e517-489e-bc35-18a2affdf994",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The IAPLTRs flanking the 'master' IAP proposed to drive IAP expansion in C3H/HeJ mice have the same sequence as clade 3 IAPLTR1s, suggesting VM-IAPs may be more active and propagating in certain mouse strains due to lack of repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C80 presents an interesting sequence comparison, but C81 is speculative. While the sequence similarity is documented, the inference that VM-IAPs are actively propagating requires additional evidence such as insertion polymorphism analysis or direct measurement of transposition activity. The connection between variable methylation and transposition competence is not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "2cc90ad7-8017-42cd-b05d-86cdbd376182",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a model where VM-IAP loci are established through partial KZFP-mediated silencing at CpG-dense TEs, which are then protected from DNA methylation through recruitment of ZF-CxxC proteins (TET1, CFP1). VM-IAPs escape silencing through both attenuation of KZFP binding and recognition by ZF-CxxC proteins to maintain a hypomethylated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C84 present the central mechanistic model integrating all findings. The model is well-supported by multiple lines of evidence: sequence analysis showing reduced KZFP binding, ChIP-seq/CUT&RUN showing ZF-CxxC recruitment, methylation analysis in Tet1 KO showing functional importance, and genetic perturbations (Tc1, Trim28+/D9) validating the model. The dual mechanism (reduced silencing + active protection) is a key insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "9a26a6a9-a429-439c-87be-ffebcd442d85",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Deamination of methylated loci could be one means for driving permanent silencing of TEs over time, as CpG-rich TEs have potential for reactivation while TEs lose CpG density over evolutionary time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 presents an evolutionary inference that is logical and supported by the data showing CpG-dense TEs are more prone to escape silencing. The connection to evolutionary deamination is well-established in the literature (C30) and the authors' data provide functional support for why CpG loss would stabilize silencing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    },
+    {
+      "id": "961385ea-d089-4855-955c-09ef528899be",
+      "content_id": "3c12e1ac-8baa-46df-9a35-2668cbdf6216",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and context claims establishing the biological framework: TEs are mobile genetic elements silenced by DNA methylation in somatic cells, some TEs display interindividual methylation variation, IAPs are silenced by KZFPs recruiting KAP1, KZFPs evolve through gene duplication in an evolutionary arms race with TEs, IAPs have high CpG content similar to CpG islands which recruit ZF-CxxC proteins, and mammalian genomes show CpG depletion due to evolutionary deamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C12-C32, C64-C65, C76-C77 provide established background knowledge supported by appropriate citations. These claims set up the biological context and are well-supported by the literature. They are not novel findings but necessary framework for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:20:44.866270Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62755d86-d9e7-43b8-b32c-68b97a133e13",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "57b30c8b-a989-4dbe-91d9-aba219e3b49c",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "5b8f458b-d13b-493c-b99f-e498fc2810e5",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "6e25c9a1-c026-4bae-86b7-a4adae84a53b",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "fc72e4eb-5b2b-4971-99ae-fcac67651be7",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "6a867c54-55e9-486c-b704-279019e0514e",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "512608f8-68ea-4e13-bbd4-b4baa904b1be",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "cc0b2199-f4de-4f6c-aaa2-7b244a6e25fe",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "4054aed2-3364-42d8-b742-ec11c2294e2c",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "d204ccdb-5f64-455f-9363-8eb6a75847d3",
+      "result_id": "5fec753e-c2f6-464a-a6a9-f12d69987bd2"
+    },
+    {
+      "claim_id": "c41b9284-267a-47e8-a67b-daef7dc6cd64",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "f87e446f-2769-4334-ab86-19fb6f56c4b7",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "3d7173ca-0c4b-498e-9d77-e5013950d4cb",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "5afe09fa-9950-4aa2-9512-30c1ba1e5237",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "ca847a19-0260-41a6-a729-110e5611a8a5",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "992805bf-bfea-4cdd-b65f-378ba12e0dfc",
+      "result_id": "ae61d492-c009-46e1-9c97-5b72a7aeef96"
+    },
+    {
+      "claim_id": "cfb20f3a-b74d-4003-b4b1-29d78e04f70e",
+      "result_id": "1c0ef3da-eee1-4da7-a0e1-8dfe769c4887"
+    },
+    {
+      "claim_id": "cf713e68-8f19-44ba-9fa9-b0550bd37a26",
+      "result_id": "1c0ef3da-eee1-4da7-a0e1-8dfe769c4887"
+    },
+    {
+      "claim_id": "5e17781a-d20e-499e-a84e-9ce6f73749b7",
+      "result_id": "1c0ef3da-eee1-4da7-a0e1-8dfe769c4887"
+    },
+    {
+      "claim_id": "ab370ff5-a61b-4a13-9bed-2e482fa4e17a",
+      "result_id": "1c0ef3da-eee1-4da7-a0e1-8dfe769c4887"
+    },
+    {
+      "claim_id": "3c9599d5-5d8f-4c8f-8037-4161c1f2901f",
+      "result_id": "65d77af1-7d03-44d4-b181-3d6d8eb744c7"
+    },
+    {
+      "claim_id": "0cd5ac15-31b7-4615-a14d-2ec361e03037",
+      "result_id": "65d77af1-7d03-44d4-b181-3d6d8eb744c7"
+    },
+    {
+      "claim_id": "8a2d5d37-0bb8-44d4-bc0d-a11ab3da60d0",
+      "result_id": "65d77af1-7d03-44d4-b181-3d6d8eb744c7"
+    },
+    {
+      "claim_id": "c439b65b-ed78-4760-9f96-8a54baa09e83",
+      "result_id": "65d77af1-7d03-44d4-b181-3d6d8eb744c7"
+    },
+    {
+      "claim_id": "647728ac-e36b-49ae-95b9-7a624823a9aa",
+      "result_id": "74d9adc9-fcfa-43a8-a22c-097b48f11425"
+    },
+    {
+      "claim_id": "3d1ab73d-80a4-46f3-a57d-153ceda3763e",
+      "result_id": "74d9adc9-fcfa-43a8-a22c-097b48f11425"
+    },
+    {
+      "claim_id": "5b4acb75-5e9d-4a61-9787-72ba7a212f5a",
+      "result_id": "74d9adc9-fcfa-43a8-a22c-097b48f11425"
+    },
+    {
+      "claim_id": "489f3c78-9c1c-48ac-9c12-659b1b97710b",
+      "result_id": "74d9adc9-fcfa-43a8-a22c-097b48f11425"
+    },
+    {
+      "claim_id": "0b4f397b-a5f9-4918-8b51-78f9fb8ff254",
+      "result_id": "fd86a543-fa4b-4c8c-a73d-5293624e769d"
+    },
+    {
+      "claim_id": "3c6b12f3-9394-4a77-99e1-2d73c39bb415",
+      "result_id": "fd86a543-fa4b-4c8c-a73d-5293624e769d"
+    },
+    {
+      "claim_id": "b13931e1-f48c-455e-8441-efffbc7745be",
+      "result_id": "fd86a543-fa4b-4c8c-a73d-5293624e769d"
+    },
+    {
+      "claim_id": "cd386bb4-c348-4a24-8e40-db44798161cd",
+      "result_id": "fd86a543-fa4b-4c8c-a73d-5293624e769d"
+    },
+    {
+      "claim_id": "64a013c8-5969-4137-9103-cbd8412e865a",
+      "result_id": "fd86a543-fa4b-4c8c-a73d-5293624e769d"
+    },
+    {
+      "claim_id": "8423189e-1b36-4536-a5c8-9c31755c8cd3",
+      "result_id": "7e2ab0e5-1274-4add-bfcc-6a0e27269f18"
+    },
+    {
+      "claim_id": "17dc0abc-4f76-4fd2-9633-1d015759a05a",
+      "result_id": "7e2ab0e5-1274-4add-bfcc-6a0e27269f18"
+    },
+    {
+      "claim_id": "5daa175c-22a9-4ee7-9429-ce8e30104bd8",
+      "result_id": "c6d63f90-c2a6-47c0-9e8b-ae9603f23693"
+    },
+    {
+      "claim_id": "e1a11840-46f8-4444-bfd1-bffd47ff69d8",
+      "result_id": "c6d63f90-c2a6-47c0-9e8b-ae9603f23693"
+    },
+    {
+      "claim_id": "2c5d9484-8321-4100-87c3-5d23648f5bc9",
+      "result_id": "c6d63f90-c2a6-47c0-9e8b-ae9603f23693"
+    },
+    {
+      "claim_id": "9d22c0c4-c23e-4640-9c88-170204cbb603",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "7ad2af77-8bc7-4923-8328-f250b3c4fbef",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "96c1486b-6cdf-4e5b-9a0f-88daf313bc76",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "459151c2-cb12-4fab-bfff-dfab223bde1c",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "f9ad3128-202f-4c2e-9973-c3fdeb99baac",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "986f1e91-e738-4f3c-ad64-ba9c1e56f69e",
+      "result_id": "53b3105c-e9b0-453e-b89c-d83abdc477a1"
+    },
+    {
+      "claim_id": "dd07adaa-804d-4644-a02a-4caa4c193541",
+      "result_id": "2f4fc25f-0fee-4eca-8ac5-3964c54142e5"
+    },
+    {
+      "claim_id": "f43b7735-c678-49c2-a3d1-d84763ced257",
+      "result_id": "2f4fc25f-0fee-4eca-8ac5-3964c54142e5"
+    },
+    {
+      "claim_id": "60dab702-5fac-4414-9359-95fc9ef34c3a",
+      "result_id": "2f4fc25f-0fee-4eca-8ac5-3964c54142e5"
+    },
+    {
+      "claim_id": "9b0116a5-14e9-49fc-bbb5-9c7ba25332d6",
+      "result_id": "2f4fc25f-0fee-4eca-8ac5-3964c54142e5"
+    },
+    {
+      "claim_id": "775ba61e-501f-4309-a311-459fb71777a9",
+      "result_id": "2653c952-e517-489e-bc35-18a2affdf994"
+    },
+    {
+      "claim_id": "8087d3e6-0b2d-4e17-877a-6998236f47eb",
+      "result_id": "2653c952-e517-489e-bc35-18a2affdf994"
+    },
+    {
+      "claim_id": "3fa845e9-10fa-463d-a06d-f977691140ac",
+      "result_id": "2cc90ad7-8017-42cd-b05d-86cdbd376182"
+    },
+    {
+      "claim_id": "53ba7443-0971-4b96-b4c4-68c78be652f1",
+      "result_id": "2cc90ad7-8017-42cd-b05d-86cdbd376182"
+    },
+    {
+      "claim_id": "59db006e-2e37-4d41-9865-7d389116e59b",
+      "result_id": "2cc90ad7-8017-42cd-b05d-86cdbd376182"
+    },
+    {
+      "claim_id": "f3ac655a-9e86-4fdf-8978-0cb2c50448df",
+      "result_id": "9a26a6a9-a429-439c-87be-ffebcd442d85"
+    },
+    {
+      "claim_id": "5414dad2-341f-415c-be8f-720541738754",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "fd001a11-9422-4c7b-bbf3-6edbca1aa42e",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "89e896dd-833d-4217-84d5-c6b36c194708",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "7bf00016-60bf-4fd0-bafd-f874ae639eeb",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "aadb2032-fa12-459b-b2d5-c807daf19487",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "f1af90eb-4bda-4a83-bfa0-e0dfeed05002",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "9b31ec6a-b77e-4400-bb66-9eac711ccb59",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "86f81008-9c24-4723-a900-b7d79af021e5",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "0dcb9026-7084-4f48-b301-dc04b2dde204",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "219db099-e6d5-486f-a647-062e976a5e2f",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "6a9c10da-c0ce-43b1-9267-f024a118bf9b",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "dff56a99-4733-4417-955e-a9a079a89722",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "498087d9-b754-4b4c-8130-f8207b0094a0",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "4bd5acc8-f1cf-444e-bfdb-ffc8838cdf9c",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "435cabd5-58af-49dc-a875-e7b0652d3a9e",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "cf864d06-2c8b-4c0a-8c72-844e56580e32",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "cf6aa31b-2531-4f45-a45b-ca924a92295c",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "a90606b9-2186-438d-93b3-944e9bfed284",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "9ea20bed-5d58-4ee5-a905-0b7bdd0c8734",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "7809fc18-8a93-434c-9620-ee0a1813450a",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "fa179336-07a8-488b-a231-2071209a7a1c",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "69c0015f-c6be-4505-82ec-daacc2f8d40c",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "b7b59863-b33c-4a9b-b492-ec8d0273bc23",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "2e811787-27cb-4dd4-90cf-21516406a386",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "fbcb67b1-8554-4117-9893-4c52ee6e5269",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "cf517c1b-116f-48fd-98c2-9497fc792c4a",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "e3d4613d-a7ce-4e71-8ef5-15e3c8a0c58c",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "059cdcf9-5831-4d19-a05d-254628fcd859",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    },
+    {
+      "claim_id": "1ca6c4f2-cfee-470b-828b-9d04932351af",
+      "result_id": "961385ea-d089-4855-955c-09ef528899be"
+    }
+  ],
+  "comparisons": []
+}

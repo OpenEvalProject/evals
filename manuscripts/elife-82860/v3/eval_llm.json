@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ATAD1 is frequently co-deleted with PTEN in human cancers. The authors demonstrate through immunohistochemistry and TCGA genomic analysis that ATAD1, located 40 kb upstream of PTEN on chromosome 10q23, is co-deleted with PTEN in the majority of PTEN-null tumors across multiple cancer types, including >25% of prostate cancer, 11% of melanoma, 7% of glioblastoma, and 4% of gastric adenocarcinoma. ATAD1 is rarely deleted independently and lacks recurrent inactivating mutations, suggesting it is a 'hitchhiker' deletion rather than a tumor suppressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-deletion pattern is well-supported by multiple lines of evidence: IHC showing ATAD1 loss in 21/37 PTEN-null tumors but presence in all 15 PTEN-WT controls (C15-C16), TCGA genomic data confirming co-deletion (C17), and mutation analysis showing ATAD1 is almost never deleted independently and lacks inactivating mutations (C18-C19). The deletion frequencies across cancer types are directly supported by data in Figure 1C (C23-C26). The genomic proximity (C8) and deletion span analysis (C22) provide mechanistic context for the co-deletion pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ATAD1 and MARCH5 are synthetic lethal. Two independent genome-wide CRISPR screens in different cellular contexts (Jurkat T-ALL and HGC27 gastric cancer) both identified MARCH5 as the top candidate for synthetic lethality with ATAD1. MARCH5 deletion had negligible effect in ATAD1-proficient cells but was essential in ATAD1-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synthetic lethality is robustly supported by two independent, unbiased genome-wide CRISPR screens in different cell types (C27, C32), with consistent results showing MARCH5 as the top hit in both contexts. The differential essentiality is clearly demonstrated (C33-C34). The identification of MUL1, another OMM E3 ligase, as a top hit (C35) provides additional support for the biological relevance of this pathway. The use of two different experimental systems strengthens confidence in the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATAD1 and MARCH5 regulate BIM and NOXA to control apoptosis through MCL1. ATAD1 deletion increases BIM levels and decreases its inhibitory phosphorylation at Ser69/Ser77, while MARCH5 deletion increases NOXA levels. Double deletion of ATAD1 and MARCH5 increases both BIM and NOXA, leading to synthetic lethality that is partially rescued by BIM knockout or MCL1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model is well-supported by western blot data showing increased BIM in ATAD1\u2206 cells (C45), decreased BIM phosphorylation (C46-C47), and differential regulation of BIM vs NOXA by ATAD1 vs MARCH5 (C49-C51). The genetic interaction experiments demonstrate that BIM knockout partially rescues ATAD1\u2206 sensitivity to MARCH5 deletion (C54), and MCL1 overexpression suppresses the synthetic lethality (C55). The viability data (C52-C53) confirm the functional consequences. The partial rescue by BIM deletion suggests additional substrates contribute, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ATAD1 directly and specifically extracts BIM from membranes. The authors demonstrate through co-immunoprecipitation that ATAD1 and BIM physically interact in cells, and through in vitro reconstitution assays that purified ATAD1 directly extracts BIM from liposomes in an ATP-dependent manner requiring catalytic activity and membrane anchoring. ATAD1 shows substrate specificity, extracting BIM but not other BH3-only proteins (BIK, PUMA) or the negative control Fis1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct extraction mechanism is strongly supported by multiple complementary approaches: reciprocal co-IP showing physical interaction (C61-C63), dose-dependent BIM sensitivity in ATAD1\u2206 cells (C56-C58), BH3 profiling showing ATAD1 suppresses apoptotic priming (C59-C60), and most importantly, in vitro reconstitution with purified components demonstrating direct, ATP-dependent extraction (C64-C67). The substrate specificity is well-documented (C68-C69), with structural features explaining selectivity (C70). The use of catalytically inactive mutants and controls for membrane anchoring strengthen the mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ATAD1 alters BIM localization and phosphorylation during proteasome inhibition. Under basal conditions, ATAD1 generates GFP-BIM puncta that do not colocalize with mitochondria. During proteasome inhibition with bortezomib, ATAD1 shifts BIM localization from mitochondria to cytoplasmic puncta and promotes inhibitory phosphorylation of BIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization and phosphorylation changes are supported by confocal microscopy showing ATAD1-dependent BIM puncta formation (C71-C72) and western blots demonstrating differential BIM phosphorylation in the presence vs absence of ATAD1 during bortezomib treatment in both SW1088 and PC3 cells (C73-C74). The microscopy experiments were conducted by a blinded investigator with appropriate controls. However, the identity of the cytoplasmic puncta remains unclear, as they do not colocalize with mitochondria, lysosomes, or peroxisomes according to supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ATAD1-deficient cells are hypersensitive to proteasome inhibitors through apoptosis. Re-expression of ATAD1 in Del(10q23) cell lines or deletion of ATAD1 in ATAD1-proficient cells modulates sensitivity to multiple structurally distinct proteasome inhibitors. The protective effect is mediated specifically through apoptosis, as caspase inhibition completely rescues the phenotype, while BIM deletion provides only partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteasome inhibitor sensitivity is robustly demonstrated across multiple cell lines (HGC27, SW1088, RPMI7951, PC3) and multiple inhibitors (bortezomib, carfilzomib, marizomib) (C76-C78). The apoptotic mechanism is confirmed by PARP cleavage (C79) and complete rescue by caspase inhibition (C83-C85). The observation that polyubiquitinated proteins accumulate equally regardless of ATAD1 status (C80) supports the conclusion that ATAD1 affects the cellular response to proteotoxic stress rather than preventing the stress itself (C81). The incomplete rescue by BIM deletion (C87) is acknowledged and suggests additional substrates contribute, which is consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Bortezomib is preferentially toxic to ATAD1-deficient tumors in vivo. In PC3 xenografts, bortezomib significantly decreased tumor growth in ATAD1-deleted tumors but had no effect on control tumors. Bortezomib treatment induced NOXA accumulation specifically in ATAD1-deleted tumors, while NRF1 induction (marker of proteasome inhibition) was equivalent in both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo efficacy is clearly demonstrated by tumor growth curves showing differential response to bortezomib based on ATAD1 status (C89-C90). The molecular analysis of tumor samples confirms the mechanism, with NOXA induction specific to ATAD1-deleted tumors (C91) and equivalent NRF1 induction (C92) supporting that ATAD1 affects the response to proteotoxic stress rather than the stress itself. The xenograft experiments used appropriate controls and statistical analysis (mixed effects model with Tukey's multiple comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ATAD1 promotes tumor growth in SW1088 glioma xenografts. SW1088 cells transduced with empty vector failed to form tumors in 17/17 mice, while cells expressing ATAD1 formed tumors in 20/21 mice, despite ATAD1 not affecting proliferation in 2D culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tumor-promoting effect is clearly demonstrated by the dramatic difference in tumor formation (0/17 vs 20/21) (C95-C96). The observation that ATAD1 does not affect 2D proliferation (C98) suggests the effect is specific to the in vivo tumor microenvironment. However, the mechanism by which ATAD1 promotes tumorigenesis in this context is not explored. The use of NOD/SCID mice and the large difference in tumor formation rates provide strong support for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C107",
+      "C108"
+    ],
+    "result": "ATAD1 loss correlates with improved survival in metastatic castration-resistant prostate cancer patients. Patients with PTEN-null/ATAD1-null tumors had median overall survival of 77 months compared to 37 months for PTEN-null or unaltered tumors. ATAD1/PTEN double-null patients also showed longer survival after hormone therapy or chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical correlation is supported by analysis of two mCRPC patient cohorts showing significantly improved survival in ATAD1/PTEN double-null patients (C99-C100). The survival benefit is observed both for overall survival and post-therapy survival (C107-C108). However, this is an observational correlation from retrospective data analysis, not a prospective clinical trial. The p-value of 0.0270 for overall survival is statistically significant but modest. Potential confounders such as treatment regimens, tumor stage, and other genetic alterations are not fully addressed. The data suggest but do not prove that ATAD1 loss improves therapeutic response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Co-deletion of PTEN may buffer apoptotic priming induced by ATAD1 loss. PTEN loss activates AKT, which has pro-survival effects including decreasing BIM transcription by inhibiting FOXO3A and inactivating BAD by phosphorylation, potentially explaining why ATAD1 deletion is tolerated in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a reasonable hypothesis supported by established knowledge about PTEN/AKT signaling (C103), but it is not directly tested in this manuscript. The authors provide no experimental data showing that PTEN loss rescues ATAD1 deficiency or that AKT activation modulates the ATAD1-BIM axis. This remains an inference based on known pathway interactions rather than a demonstrated result. Testing this hypothesis would require experiments comparing ATAD1 deletion effects in PTEN-WT vs PTEN-null contexts or examining AKT inhibition in ATAD1/PTEN double-null cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Approximately 32,000 patients die annually from ATAD1-deficient gastric cancer. This is calculated from the 4.1% ATAD1 deletion frequency in gastric cancer and the ~800,000 annual gastric cancer deaths worldwide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculation is straightforward and based on cited data for gastric cancer mortality (C30) and the measured ATAD1 deletion frequency (C29). However, this assumes that ATAD1 deletion frequency in the analyzed cohort is representative of all gastric cancers globally, which may not be accurate given geographic and molecular heterogeneity of gastric cancer. The calculation also assumes all ATAD1-deleted gastric cancer patients die from their disease, which is an overestimate. Despite these limitations, the calculation provides a reasonable order-of-magnitude estimate of the patient population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ATAD1's anti-apoptotic function may extend beyond cancer to neuroprotection. ATAD1 was originally discovered in a screen for factors preventing neuronal cell death, and Atad1 phenocopies Bcl2/Bcl2l1 in mouse models of ischemic stroke. The authors speculate that BIM antagonism may contribute to ATAD1's neuroprotective function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The prior work on ATAD1 in neuronal cell death and stroke models is appropriately cited (C109-C110), but the speculation that BIM antagonism contributes to neuroprotection (C111) is not tested. This is explicitly presented as speculation by the authors. While the hypothesis is reasonable given the findings in cancer cells, demonstrating this would require experiments in neuronal systems examining whether ATAD1's neuroprotective effects are BIM-dependent. This represents an interesting direction for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Additional ATAD1 substrates beyond BIM likely contribute to proteasome inhibitor sensitivity. BIM deletion does not completely rescue ATAD1 deletion effects, suggesting multiple ATAD1 substrates accumulate on the OMM during proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The incomplete rescue by BIM deletion is clearly demonstrated in the genetic interaction experiments (C112). The inference that additional substrates must exist (C113) is logical and well-supported. The speculation about multiple substrates accumulating during proteasome inhibition (C114) is reasonable but remains speculative. The authors appropriately acknowledge this as a limitation. Identifying these additional substrates would be important future work but does not diminish the significance of the BIM findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "ATAD1 and the ubiquitin proteasome system represent parallel pathways for removing mitochondrial TA proteins. The model proposes that ATAD1 becomes essential only when the UPS is dysfunctional, and caspase inhibition completely rescues ATAD1 absence, indicating ATAD1's importance is specifically for preventing apoptosis rather than general cell fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is well-supported by the synthetic lethality with MARCH5 (a UPS component) and sensitivity to proteasome inhibitors (C117), combined with the complete rescue by caspase inhibition (C118). The parallel pathway model (C116) is consistent with all the experimental data and provides a coherent framework. However, the model is somewhat simplified - the relationship between ATAD1 extraction and subsequent protein fate is not fully elucidated. The authors acknowledge that extracted proteins may or may not be subsequently degraded by the proteasome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ATAD1 loss may have therapeutic implications for treating Del(10q23) tumors with proteasome inhibitors or MARCH5 inhibitors. Prior trials of proteasome inhibitors in prostate cancer showed activity in a subset of patients, potentially enriched for ATAD1-null tumors. MARCH5 inhibitors might achieve better therapeutic windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable speculations about therapeutic applications (C119, C121) based on the findings, but they are not tested. The reference to prior clinical trials (C120) is appropriately cited, but the suggestion that responders were enriched for ATAD1-null tumors is speculation - no retrospective analysis of ATAD1 status in those trials is presented. The prediction about MARCH5 inhibitors (C121) is logical but entirely speculative as no such inhibitors are tested. These represent important future directions but are not supported results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6"
+    ],
+    "result": "PTEN is the second most commonly deleted gene in cancer and is deleted in >33% of metastatic prostate tumors and ~10% of glioblastoma and melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts in the field, appropriately cited to prior work (C5-C6). The claim that PTEN is the second most commonly deleted gene (C1) is presented as established knowledge. While no primary data supporting these statistics are shown in this manuscript, they are well-established in the cancer genomics literature and provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on ATAD1 function and collateral deletion concept. ATAD1 is a conserved, essential AAA+ ATPase that extracts tail-anchored proteins from the OMM, and collateral deletion of genes adjacent to tumor suppressors can create therapeutic vulnerabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the conceptual framework and prior knowledge about ATAD1 function. They are appropriately supported by citations to prior work (C9-C10, C12-C14) and represent established knowledge in the field. The collateral deletion concept (C7) is well-precedented in the literature. These provide essential context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on MARCH5 and BCL2 family protein regulation of apoptosis. MARCH5 is an E3 ligase that ubiquitinates OMM proteins for p97/VCP-mediated extraction and proteasomal degradation, functioning to suppress apoptosis by regulating BH3-only proteins. MARCH5 and ATAD1 mediate parallel pathways for OMM protein removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the mechanistic context for understanding the ATAD1-MARCH5 synthetic lethality. They are appropriately supported by citations to recent literature (C36, C38, C43) and represent established knowledge about apoptosis regulation (C39-C42). The inference that MARCH5/p97 and ATAD1 represent parallel pathways (C37) is reasonable based on their known functions and is supported by the synthetic lethality data. The structural similarity of BIM to known ATAD1 substrates (C44) provides a mechanistic rationale for testing BIM as a substrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Genetic lesions that prime for apoptosis are not always selected against in cancer, as exemplified by MYC oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established knowledge in cancer biology, appropriately cited (C105). It provides important context for understanding why ATAD1 deletion might be tolerated in tumors despite increasing apoptotic priming. This is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

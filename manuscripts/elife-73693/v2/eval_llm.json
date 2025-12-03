@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study employed an fMRI experiment where 15 subjects (after exclusions) watched 10 short movies and then verbally recalled them in any order without external cues. The experimental design, data acquisition, and preprocessing procedures are described in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C19, C95-C116 collectively describe the experimental design, participant characteristics, stimuli, procedures, and data acquisition/preprocessing methods. These methodological details are clearly documented and internally consistent, providing a solid foundation for the study's analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Univariate analysis revealed transient activation changes at between-movie boundaries during recall, with generally lower activation in boundary periods compared to non-boundary periods in motor, auditory, and inferior parietal cortices, though some regions showed higher activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C122-C127 describe the univariate activation analysis and its findings. The analysis methods are clearly specified (15s windows, 4.5s hemodynamic delay correction, FDR correction), and the results are presented with appropriate statistical corrections. The findings are visualized in Figure 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Pattern similarity analysis identified consistent boundary patterns in several cortical parcels including the DMN and auditory/motor areas during recall, with boundary patterns showing greater similarity across movies than non-boundary patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C128-C132 describe the pattern similarity analysis methods and findings within the recall phase. The analysis approach is well-specified with appropriate statistical corrections (Bonferroni), and the results demonstrate content-general boundary patterns in multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "DMN areas, particularly the posterior medial cortex (PMC), showed consistent boundary patterns across both encoding and recall phases and across different movies, with highly significant positive correlations (t(14)=11.82-14.54, p<0.001) for boundary patterns but not for non-boundary patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 present the key finding of generalized boundary patterns in DMN, especially PMC. The statistical evidence is strong with large effect sizes (Cohen's dz=3.05-3.75) and appropriate confidence intervals. The specificity to boundary periods is demonstrated by the absence of correlations in non-boundary patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Time-resolved analysis revealed that boundary patterns emerged 4.5s after movie offsets, well before the onsets of subsequent movies, indicating that offset responses significantly contributed to the boundary patterns rather than onset responses alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C133-C136 describe the temporal dynamics analysis that disambiguates onset vs. offset contributions. The TR-by-TR analysis with appropriate corrections (Bonferroni) provides clear evidence for the timing of boundary pattern emergence, supporting the interpretation that offsets drive the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Within-movie event boundary patterns in PMC were negatively correlated with between-movie boundary patterns (t(14)=5.10-7.31, p<0.001), demonstrating that between-movie boundaries represent a qualitatively distinct neural phenomenon rather than simply stronger versions of within-movie boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C137-C144 present a critical finding distinguishing two types of boundaries. The analysis is methodologically sound with clear operational definitions of within-movie boundaries (identified by independent coders), appropriate exclusion criteria to avoid carryover effects, and robust statistical evidence including robustness checks across different time windows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Control analyses ruled out low-level visual features and absence of speech as explanations for the generalized boundary pattern, as visual input was identical during recall and encoding boundary patterns were more similar to recall boundary patterns than to recall non-boundary patterns in DMN areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C145-C147 describe control analyses addressing potential confounds. The logic is sound: since visual input was constant during recall (fixation dot), visual features cannot explain boundary-specific effects. The comparison between encoding boundaries and recall boundaries vs. non-boundaries provides additional evidence against low-level explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Silence during movie title scenes and pauses at recall boundaries did not drive the generalized boundary pattern in PMC (t(14)=1.93, p=0.074), while the auditory cortex showed the expected correlation with silent periods (t(14)=10.31, p<0.001), demonstrating regional specificity of the boundary effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C148-C153 present control analyses for auditory confounds. The dissociation between PMC (no correlation with silence) and auditory cortex (strong correlation with silence) provides compelling evidence that the PMC boundary pattern is not driven by low-level auditory features. The operational definition of silence periods is clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Stereotyped spatial activation patterns were observed in the DMN, especially PMC, following the offset of each recalled movie, consistent across different movie contents and across encoding and recall tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C22-C24 summarize the main empirical findings. These are well-supported by the detailed analyses described in other claim groups (C33-C37, C40-C45, C46-C52), which provide the statistical evidence and control analyses demonstrating the robustness and specificity of these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C73"
+    ],
+    "result": "Between-movie boundary patterns did not resemble within-movie event boundary patterns, manifesting as a distinct type of neural transition rather than merely stronger versions of within-movie boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C25, and C73 state a key conclusion that is directly supported by the negative correlations reported in claims C41-C43. This finding is central to the paper's contribution and is backed by robust statistical evidence and multiple control analyses (C44, C137-C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C26",
+      "C54",
+      "C92"
+    ],
+    "result": "Major transitions between mental contexts elicit neural phenomena shared across internal and external modes and distinct from within-context event boundary detection, potentially reflecting a cognitive state related to the flushing and reconfiguration of situation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10, C26, C54, and C92 present the main interpretation of the findings. While the empirical observations are well-supported, the interpretation that these patterns reflect 'flushing and reconfiguration of situation models' is speculative (as acknowledged by 'potentially' in the claims). The data demonstrate the neural patterns but do not directly test the proposed cognitive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The boundary pattern was most strongly observed in the DMN, consistent with prior findings implicating the DMN in mental context transitions and its role in integrating information across modalities and timescales. The study extends prior work by identifying a transient boundary state that may exist between neural patterns representing different events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 contextualize the findings within the existing literature on DMN function. The citations to prior work (C63-C70) appropriately support the background claims. The extension claim (C71-C72) is justified by the novel finding of transient boundary patterns distinct from persistent event representations, though the interpretation of a 'temporary boundary state' (C72) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The distinction between within- and between-movie boundaries may reflect a hierarchical structure of event boundaries, with the crucial difference being the presence or absence of inter-event connections. Within-movie boundaries require integration across semantically related events, while between-movie boundaries involve complete flushing of the narrative context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C81 present a theoretical interpretation of the within- vs. between-movie boundary distinction. While the empirical finding of distinct patterns is well-supported (C40-C45), the proposed explanation based on inter-event connections (C78-C81) is speculative. The cited neurophysiological study (C74-C75) provides some support for hierarchical boundary processing, but the specific mechanism proposed here requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The between-movie boundary state may represent a temporary 'relay' state involving either off-focus/mind-blanking or recruitment of cognitive control (FPCN activation), triggered by the offset rather than onset of mental contexts. This interpretation is supported by the temporal dynamics showing boundary patterns emerge before movie onsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C91 present two alternative (not mutually exclusive) interpretations of the boundary state. While the temporal dynamics data (C89-C91) support the offset-triggered nature of the effect, the specific cognitive interpretations (off-focus/mind-blanking vs. cognitive control) are speculative. The FPCN activation observation (C86) provides some support for the cognitive control hypothesis, but this was not the primary focus of the analyses and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C93"
+    ],
+    "result": "The findings diverge from dominant perspectives on event segmentation that emphasize prediction error from external input changes. The results are consistent with an alternative framework proposing that boundaries are perceived when the probability distribution of inferred situations changes, which can occur without perceptual changes. The study bridges event segmentation and spontaneous internal thought research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 and C93 contextualize the findings within theoretical frameworks. The characterization of prior work (C56-C59) is appropriately cited. The alignment with the alternative framework (C60-C61) is reasonable given that the study demonstrates boundary responses without external input changes during recall. The claim about bridging fields (C93) is justified by the novel demonstration of stimulus-independent event segmentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Current theory suggests humans segment experiences into events based on prediction error from sensory input, evoking transient neural responses including in the DMN. However, boundaries can also occur at transitions between internal mental states without external input changes, and spontaneous cognition is punctuated by mental context transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C16 present the theoretical background and motivation for the study. These claims are appropriately supported by citations to prior work (C1, C2, C11-C16). Claim C3 presents the key theoretical proposition motivating the study, which is reasonable given the cited literature on spontaneous cognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C21"
+    ],
+    "result": "During recall, transitions between movies constituted major boundaries between internal mental contexts generated purely by subjects' unguided thoughts. The unguided spoken recall paradigm allowed identification of exact moments of context transitions and explicit tracking of thought content shifts, which was not possible in prior silent rest studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20-C21 describe a key methodological advantage of the study design. The interpretation that between-movie transitions represent internally-generated boundaries (C5) is reasonable given the experimental design (no external cues). The comparison with prior silent rest studies (C20-C21) is appropriately cited and highlights a genuine methodological advance in being able to timestamp specific thought transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The study examined whether internally driven boundaries evoke changes in BOLD signals during recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 states a research question that was clearly addressed by the study through the univariate and pattern similarity analyses described in other claim groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Without task demands or external constraints, the mind constantly shifts between different internal contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 presents a general statement about spontaneous cognition that is appropriately supported by citations. This provides context for the study's focus on internally-generated boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study used a 400-parcel cortical atlas for whole-brain analyses and defined specific ROIs including bilateral PMC (precuneus and posterior cingulate cortex in Default Network A), angular gyrus (inferior parietal cortex in Default Networks A, B, C), and auditory cortex (primary and secondary auditory cortices in Somatomotor Network B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 describe the parcellation scheme and ROI definitions. These are clearly specified with appropriate citations (Schaefer et al., 2018) and justified by the data (C119 notes PMC showed the strongest boundary patterns). The ROI definitions are standard and appropriate for the research questions.",
+    "result_type": "MINOR"
+  }
+]

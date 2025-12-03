@@ -1,0 +1,1868 @@
+{
+  "submission": {
+    "id": "d3049149-f634-477f-bca0-eb5b1d775aa0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:54:59.421924Z",
+    "updated_at": "2025-12-03T11:54:59.421924Z"
+  },
+  "content": [
+    {
+      "id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "submission_id": "d3049149-f634-477f-bca0-eb5b1d775aa0",
+      "content_type": "manuscript",
+      "content_text": "# Activity in perirhinal and entorhinal cortex predicts perceived visual similarities among category exemplars with highest precision\n\n## Authors\n\n- Kayla M Ferko<sup>1</sup> ([ORCID: 0000-0003-4362-7295](https://orcid.org/0000-0003-4362-7295))\n- Anna Blumenthal<sup>1</sup> ([ORCID: 0000-0002-8768-0189](https://orcid.org/0000-0002-8768-0189))\n- Chris B Martin<sup>4</sup> ([ORCID: 0000-0002-7014-4371](https://orcid.org/0000-0002-7014-4371))\n- Daria Proklova<sup>1</sup>\n- Alexander N Minos<sup>1</sup>\n- Lisa M Saksida<sup>1</sup>\n- Timothy J Bussey<sup>1</sup>\n- Ali R Khan<sup>1</sup> ([ORCID: 0000-0002-0760-8647](https://orcid.org/0000-0002-0760-8647))\n- Stefan K\u00f6hler<sup>1</sup> ([ORCID: 0000-0003-1905-6453](https://orcid.org/0000-0003-1905-6453)) \u2020\n\n### Affiliations\n\n1. Brain and Mind Institute, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n2. Robarts Research Institute Schulich School of Medicine and Dentistry, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n3. Cervo Brain Research Center, University of Laval Quebec Canada ([ROR:04sjchr03](https://ror.org/04sjchr03))\n4. Department of Psychology, Florida State University Tallahassee United States ([ROR:05g3dte14](https://ror.org/05g3dte14))\n5. Department of Physiology and Pharmacology, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n6. School of Biomedical Engineering, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n7. Department of Medical Biophysics, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n8. Department of Psychology, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nVision neuroscience has made great strides in understanding the hierarchical organization of object representations along the ventral visual stream (VVS). How VVS representations capture fine-grained visual similarities between objects that observers subjectively perceive has received limited examination so far. In the current study, we addressed this question by focussing on perceived visual similarities among subordinate exemplars of real-world categories. We hypothesized that these perceived similarities are reflected with highest fidelity in neural activity patterns downstream from inferotemporal regions, namely in perirhinal (PrC) and anterolateral entorhinal cortex (alErC) in the medial temporal lobe. To address this issue with functional magnetic resonance imaging (fMRI), we administered a modified 1-back task that required discrimination between category exemplars as well as categorization. Further, we obtained observer-specific ratings of perceived visual similarities, which predicted behavioural discrimination performance during scanning. As anticipated, we found that activity patterns in PrC and alErC predicted the structure of perceived visual similarity relationships among category exemplars, including its observer-specific component, with higher precision than any other VVS region. Our findings provide new evidence that subjective aspects of object perception that rely on fine-grained visual differentiation are reflected with highest fidelity in the medial temporal lobe.\n\n## Introduction\n\nThe ability to perceive similarities and differences between objects plays an integral role in cognition and behaviour. Perceived similarities are important, for example, for categorizing a fruit at the grocery store as an apple rather than a pear. The appreciation of more fine-grained similarities between exemplars of a category also shapes behaviour, such as when comparing different apples in order to select one for purchase. Indeed, experimental work in psychology has confirmed that the similarity of objects influences performance in numerous behavioural contexts, including but not limited to categorization, object discrimination, recognition memory, and prediction (see Medin et al., 1993; Goldstone and Son, 2012; Hebart et al., 2020, for review). Yet, despite the well-established links to behaviour, how the brain represents these similarities between objects is only beginning to be understood. A central question that has received limited investigation so far is how fine-grained visual similarities that observers subjectively perceive among subordinate category exemplars map onto neural object representations. Answering this question can provide insight as to what brain regions provide the \u2018read-out\u2019 for such subjective reports. Moreover, this endeavor holds promise for understanding how differences in the way in which observers perceive their visual environment are reflected in variations in functional brain organization (Charest and Kriegeskorte, 2015).\n\nFunctional neuroimaging, combined with pattern analysis techniques, provides a powerful tool for examining the mapping between similarity relationships in visual perception of objects and similarities in corresponding neural representations (Kriegeskorte and Kievit, 2013). A significant body of research addressing this issue has focused on the characterization of category structure and other coarse object distinctions, such as animacy. Findings from this research indicate that activity patterns in a large expanse of the ventral visual stream (VVS), often referred to as inferotemporal (IT) cortex or ventral temporal cortex, capture much of this structure in the environment (Kriegeskorte et al., 2008; Connolly et al., 2012; Mur et al., 2013; Proklova et al., 2016; Cichy et al., 2019). For example, numerous studies have revealed a similarity-based clustering of response patterns for objects in IT that is tied to category membership (e.g., Kriegeskorte et al., 2008; Proklova et al., 2016; see Grill-Spector and Weiner, 2014 for review). In these studies, and in most related work, the primary focus has been on similarity in relation to object distinctions that are defined in objective terms, and on the characterization of neural representations that is shared by observers. As such, they do not address whether activity patterns in IT also capture similarity relationships among objects that characterize subjective aspects of visual perception that may vary across individuals\u2019 reports. When neural activity that corresponds to subjectively perceived visual similarities has been examined, extant research has mostly focussed on specific object features, such as shape or size (Op de Beeck et al., 2008; Haushofer et al., 2008; Schwarzkopf et al., 2011; Moutsiana et al., 2016) rather than on similarities between complex real-world objects that differ from each other on multiple dimensions. A notable exception to this research trend is an fMRI study that focussed on perceived similarities among select real-world objects that are personally meaningful (e.g., images of observers\u2019 own car, their own bicycle; Charest et al., 2014), which demonstrated links between observer-specific perceived similarity and the similarity structure embedded in activity patterns in IT.\n\nIn order to reveal the mapping between fine-grained perceived visual similarities among category exemplars and similarities in neural activity, it may not be sufficient to focus on activity in IT but critical to consider VVS regions situated downstream on the medial surface of the temporal lobe. Perirhinal cortex (PrC), and the primary region to which it projects, that is, lateral entorhinal cortex, are of particular interest when such perceived similarity relationships concern entire objects. The representational\u2013hierarchical model of object processing in the VVS asserts that structures in the medial temporal lobe constitute the apex of its processing hierarchy (Murray and Bussey, 1999; Bussey and Saksida, 2007; Cowell et al., 2010; Kent et al., 2016). It proposes that there is a progressive integration of object features along the VVS that allows for increasing differentiation in the representation of objects from posterior to more anterior regions in the service of perception as well as other cognitive domains (e.g., recognition memory). Visual objects are thought to be represented in PrC in their most highly integrated form based on complex feature conjunctions (Murray and Bussey, 1999; Buckley and Gaffan, 2006; Bussey and Saksida, 2007; Graham et al., 2010; Kent et al., 2016), which support perceptual discrimination of even highly similar exemplars from the same object category (e.g., O\u2019Neil et al., 2013; O\u2019Neil et al., 2009). Lateral entorhinal cortex (or its human homologue anterolateral entorhinal cortex [alErC; Maass et al., 2015; Yeung et al., 2017]) has been suggested to extend this role in visual object discrimination through integration with additional spatial features (Connor and Knierim, 2017; Yeung et al., 2017). Taken together, these properties make PrC and alErC ideally suited for providing the read-out for subjective reports of perceived visual similarity among the subordinate exemplars of object categories. Although more posterior VVS regions may also predict perceived similarity, the representational\u2013hierarchical model asserts that they do not provide the same level of differentiation as regions at the apex in the medial temporal lobe. Moreover, they may also not capture those aspects of perceived similarity structure that are observer specific.\n\nThere is some evidence from human lesion studies suggesting that the integrity of regions in the medial temporal lobe is critical for perceiving the similarity among complex objects when it is high and objects cannot be easily discriminated from each other. This evidence comes from experiments that used variants of the oddity-discrimination task. In this task, participants view multiple objects (a minimum of three) on a computer screen and are asked to report the item that is least similar to the others. A finding documented in multiple reports (Buckley et al., 2001; Barense et al., 2007; Bartko et al., 2007; Inhoff et al., 2019; cf., Stark and Squire, 2000; Levy et al., 2005; Hales and Clark, 2015) is that patients with medial temporal lobe lesions that include PrC and alErC show deficits in oddity-discrimination tasks when complex objects with substantial feature overlap are compared, but not when oddity judgements require comparison of simple visual stimuli that can be distinguished based on a single feature such as colour or luminance. While the results of this lesion research have critically informed theoretical arguments that PrC plays a role in perceptual discrimination of objects (see Bonnen et al., 2021, for a recent computationally focused review), it is important to note that they do not provide a characterization of similarity structure of neural representations in PrC and alErC, nor a characterization of the transformation of representations from more posterior VVS regions to these regions in the medial temporal lobe. Moreover, lesion findings do not speak to whether neural representations in the medial temporal lobe capture the perceived similarity structure that is unique to individual observers.\n\nIn the current fMRI study, we tested the idea that the visual similarity structure among exemplars of real-world categories that observers subjectively perceive is predicted with higher precision by the similarity structure of neural activity in PrC and alErC than in the more posterior VVS regions traditionally considered in neuroscience investigations of visual object perception, including IT. During scanning, we administered a novel experimental task that required visual discrimination between consecutively presented exemplars from real-world categories as well as categorization (see Figure 1). In addition, we obtained ratings of perceived visual similarities among these exemplars from each observer offline (see Figure 2), as well as estimates of similarity derived from an influential computational model that describes objects at their intermediate visual feature level (HMAX, Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; Khaligh-Razavi and Kriegeskorte, 2014). At the behavioural level, we found that discrimination performance was highly sensitive to fine-grained perceived similarity among exemplars, including those aspects that were observer specific. Representational similarity analyses (RSAs) of ultra-high-resolution fMRI data revealed, in line with our hypotheses, that activation patterns in PrC and alErC predict this fine-grained structure within categories with higher precision than any other VVS region, and that they predict even those aspects of similarity structure that are unique to individual observers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig1-v2.jpg)\n\n**Figure 1.:** (A) Task required placement of all exemplars from each category in circular arena, with distances reflecting perceived visual similarity. Arrows indicate the six pairwise distances used to compute representational dissimilarity matrix (RDM). (B) Behaviour-based RDM computed using dissimilarity (1 \u2212 Pearson\u2019s r) and conversion to percentiles for individual observers. Only values below diagonal were included. Six distances (between four exemplars) per category were rank ordered and grouped into three levels of similarity (low, middle, and high; for more detail, Figure 1\u2014figure supplement 1). (C) Intersubject correlations for perceived similarity ratings across all exemplars and categories. Correlations were computed between each participant\u2019s RDM with the mean RDM (excluding the participant). Red horizontal line marks mean intersubject correlation, with variability in perceived visual similarity structure across observers reflected in the range displayed.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Forty images of object stimuli sampled from Migo et al., 2013 and employed in current study. Images of objects are from 10 categories with 4 exemplars in each category. Feature dimensions on which exemplars differ include external shape envelope, texture, and internal spatial configuration of parts. (B) Behavioural results from inverse multidimensional scaling (iMDS) task obtained offline from all 24 participants in the fMRI study (mean in thick red line). Perceived similarity ratings (expressed as dissimilarity percentile) were obtained separately for each category. They are displayed for all pairwise comparisons (with numbers indicating specific exemplars as shown in A) in arbitrary order along x-axis. Ratings reveal some variability across participants in all categories, which is also reflected in intersubject correlations shown in Figure 2c in Main text. (C) Ratings from (B) reordered according to participant\u2019s own rank ordering of perceived similarity. We grouped the two lowest, two middle, and two highest similarities in observer-specific manner. Shown dissimilarity percentiles reflect average values for two pairs of ratings in each grouped ranking. Notably, the range of dissimilarity percentile values was comparable across the three levels (p > 0.5). Displayed rank-ordered data were employed to assess sensitivity of behaviour and fMRI responses to participants\u2019 own perceived similarity structure among category exemplars.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Intrasubject correlations for perceived similarity ratings across all exemplars and categories. Correlations were computed between each participants\u2019 perceived similarity representational dissimilarity matrices (RDMs) from Session 1 and from Session 2. The mean within-subject correlation across the two sessions was 0.84, indicating high stability of participant\u2019s perceived similarity ratings over 1 week. (B) Intersubject correlations for perceived similarity ratings across all exemplars and categories. Correlations were computed between each participant\u2019s RDM Session 1 with the mean RDM (excluding the participant) in Session 2. Mean intersubject correlation was 0.68. Critically, a paired t-test (intrasubject > intersubject correlation) confirmed that intrasubject correlations were significantly higher than intersubject correlations (p < 0.0001). This pattern of results indicates that the perceived similarity structure that is unique to the individual observer is a stable characteristic.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig2-v2.jpg)\n\n**Figure 2.:** (A) Images of objects depicting one of the 4 exemplars from 10 different categories were presented. Participants indicated repetitions on catch trials with two different button presses depending on whether the image was an exact repeat of the one previously presented (same exemplar, same category) or a repeat at the category level (different exemplar, same category). The majority of trials (75%) reflected no repetitions on either level and required no response. Only trials that required no response (noncatch trials) were included in the fMRI analyses. (B) Percentage of errors that reflect incorrect same-exemplar responses on same-category trials as a function of perceived similarity (mean slope indicated with thick red line; for accuracy on all other trial types see Supplementary file 1). Own values reflect behavioural performance as a function of participants\u2019 own visual similarity ratings; Other values reflect performance based on other participants\u2019 ratings (for a total of 22 iterations, which were then averaged). Error rate increased with increasing similarity as reflected in slopes (in black/grey ***p < 0.0001). Error rate was more sensitive to participants\u2019 own ratings as reflected in significantly higher slopes for the Own versus Other ratings (in green ***p < 0.0001). (C) Response times on correct same-category trials as a function of perceived similarity (mean slope indicated with thick red line). Own and Other values calculated as in (B). Response times increased with increasing similarity and were more sensitive to participants\u2019 own than other participants\u2019 ratings. Results in (B, C) show that behavioural performance on 1-back task is most sensitive to perceived similarity as reflected in participants\u2019 own ratings.\n\n## Results\n\n### Perceived visual similarity structure among exemplars varies across observers\n\nWe used inverse multidimensional scaling (iMDS, Kriegeskorte and Mur, 2012) to create participant-specific models of perceived visual similarity for 4 exemplars from 10 different categories (see Figure 1). Specifically, participants were instructed to arrange images of objects in a circular arena by placing those they perceived to be more visually similar closer together, and those they perceived to be less visually similar farther apart. Participants completed these arrangements offline, that is, outside of the scanner, in two phases, with the first phase involving sorting of the full set of 40 objects in a single arrangement (Figure 1\u2014figure supplement 1\u2013 Figure 1A). The second phase required sorting of exemplars within categories in 10 separate arrangements (one per category; Figure 1A). Given our interest in representations that capture fine-grained object similarities within categories, our fMRI analyses relied on the similarity structures computed based on sorting in this second phase. The pairwise distances between all exemplars within each category were used to create a behaviour-based (i.e., subjective-report) representational dissimilarity matrix (RDM; Figure 1B), which included a split of the range of similarities into three levels for sensitivity analyses in behaviour and neural activation patterns (see Methods for further detail). Examination of intersubject correlations of each participant\u2019s RDM and the mean of all other participants\u2019 RDMs (excluding their own) revealed a mean value of r = 0.69 (t-test r > 0: p < 0.001). When we calculated an RDM for ratings averaged across participants, and compared it with an RDM derived from a computational model developed to capture objects at their intermediate visual feature level (HMAX, Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; Khaligh-Razavi and Kriegeskorte, 2014), we also found a significant correlation (r = 0.25, p < 0.001), suggesting that average ratings capture a shared component in the subjective ratings that relate to objective image characteristics. Follow-up analyses that focussed on this relationship in different subranges of similarity among exemplars (low, medium, and high; see Figure 1B) revealed, however, that the estimates derived from the HMAX model were only significantly correlated with average ratings at low and medium levels (low r = 0.45; p < 0.001; medium r = 0.24; p < 0.001; high r = 0.05; p > 0.05). This pattern suggests that at their finest grain, judgements of similarity within categories rely on integrated object representations that (1) are not captured by intermediate feature-level descriptions, and (2) are observer specific. Indeed, the range of intersubject correlations in reported similarity (calculated across exemplars and categories) that was present in our sample of participants provides direct evidence for variability across observers (r = 0.54\u20130.81; see Figure 1C and Figure 1\u2014figure supplement 1 for data on individual categories). There are also hints that this variability is most pronounced at the finest grain of judgements, as reflected in reduced intersubject correlations for high similarity exemplars (high r = 0.64; medium r = 0.65, low r = 0.72; high < low; t(22) = 3.41; p < 0.001). Critically, in a separate behavioural experiment conducted in another sample of participants with multiple assessments, we found that individual differences in perceived visual similarity structure among exemplars are temporally stable observer characteristics (see Figure 1\u2014figure supplement 2). We leveraged this variability across observers in subsequent analyses for assessing the precision of mapping in our fMRI results, examining whether the structure of neural representations in PrC and alErC also predict the perceived similarity structure that is unique to individual observers.\n\n### Behavioural discrimination performance during scanning is sensitive to observers\u2019 perceived visual similarity structure\n\nParticipants underwent ultra-high-resolution fMRI scanning while completing a novel Category-Exemplar 1-Back Task designed to tax fine-grained visual object discrimination (see Figure 2A). This task required responding to two different types of repetition, namely repetition of same exemplars or of different exemplars from the same category, across consecutive trials. Participants were asked to provide a button-press response when they noticed repetitions, with different buttons for each type of repetition. On all other trials, participants were not required to provide a response. Importantly, this task was designed to ensure that participants engaged in categorization, while also discriminating between exemplars within categories. Performance on the Category-Exemplar 1-Back Task was sensitive to perceived visual similarity between exemplars as reflected in observers\u2019 offline ratings and formalized in the behavioural RDMs with 3 different levels of similarity (Figure 2B,C; see also Supplementary file 1). Specifically, response errors on same category trials increased with increasing visual similarity (significant linear slope; t(22) = 18.35, p < 0.0001). Moreover, response times for correct responses on same category trials were positively correlated with perceived visual similarity level (t(22) = 13.47, p < 0.0001). Critically, task performance was also sensitive to the unique perceived similarity structure within categories expressed by observers. When we compared the influence of participant\u2019s own similarity ratings with that of others on behaviour (Figure 2B,C), we found a significantly larger positive slope in error rate (t(22) = 8.30; p < 0.0001) and in response times (t(22) = 9.68; p < 0.0001) for participants\u2019 own ratings. This pattern of behaviour suggests that perceived visual similarity between exemplars influenced participants\u2019 discrimination performance during scanning, and, that it did so in an observer-specific manner.\n\n### Patterns in multiple VVS regions predict perceived visual similarity structure among exemplars\n\nTo investigate whether the similarities between activation patterns in PrC and downstream alErC predict perceived similarities between exemplars in observers\u2019 reports, we employed anatomically defined regions of interest (ROIs) and created participant-specific models of neural similarity among category exemplars on the no-response trials. In order to examine the anatomical specificity of our findings, we also created such models for ROIs in other VVS and medial temporal lobe regions. Specifically, these ROIs included early visual cortex (EVC), lateral occipital cortex (LOC), posteromedial entorhinal cortex (pmErC), parahippocampal cortex (PhC), and temporal pole (TP) for comparison (see Figure 5 for visualization; note that LOC and PhC have typically been included in ROI definitions of IT in prior work; e.g., Charest et al., 2014; for direct comparison of results in IT and LOC, see Figure 7\u2014figure supplement 1). Pairwise dissimilarities of neural patterns were employed to compute the brain-based RDMs (Figure 3A,B); Pearson\u2019s correlations were calculated so as to examine whether these RDM\u2019s predicted participants\u2019 own behaviour-based RDMs that were derived from their offline reports of perceived similarity (Figure 3C). Our analyses revealed that neural activation patterns in PrC and alErC did indeed correlate with participants\u2019 perceived visual similarity RDMs (Bonferroni-corrected p < 0.01). Patterns in other regions of the VVS (EVC, p < 0.003; LOC, p < 0.002) were also significantly correlated with these behaviour-based RDMs. Critically, patterns in regions previously implicated in scene processing, specifically PhC and pmErC (Schultz et al., 2015; Maass et al., 2015; Schr\u00f6der et al., 2015), did not predict the perceived similarity structure for objects (all p > 0.5). Having established that activity patterns in multiple VVS regions predict perceived visual similarities between exemplars, we followed up on this finding by asking whether PrC and alErC capture these similarities with higher fidelity than earlier regions (EVC and LOC). Towards this end, we next examined whether these regions predict similarity structure even when exemplars only differ from each other in subtle ways.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig3-v2.jpg)\n\n**Figure 3.:** (A) In each region of interest (ROI), mean multivoxel activation patterns were calculated for every exemplar using the no-response trials in the Category-Exemplar 1-Back Task. Pairwise pattern dissimilarities were computed as 1 \u2212 Pearson\u2019s r. (B) Pairwise pattern dissimilarity percentiles were used to create participant-specific brain-based RDMs. (C) Brain-based RDMs were correlated with participants\u2019 own behaviour-based similarity RDMs derived from their offline reports (black double arrows = within subject r). (D) Activation patterns in EVC, LOC, PrC, and alErC show significant correlations with participants\u2019 own perceived similarity ratings of objects (brain-based RDM \u00d7 behaviour-based perceived similarity RDM within subjects; *p < 0.05, **p < 0.01 Bonferroni-corrected based on regions; error bars represent SEM). EVC = early visual cortex; LOC = lateral occipital complex; PrC = perirhinal cortex; alErC = anterolateral entorhinal cortex; pmErC = posteromedial entorhinal cortex; PhC = parahippocampal cortex; TP = temporal pole; see Figure 5A for visualization.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Green arrows indicate two participants with tSNR in alErC below 2 SD of the mean. These participants were excluded from fMRI analyses.\n\n### PrC and alErC are the only regions whose patterns predict perceived visual similarity structure among exemplars when similarity is high\n\nIn this set of analyses, we examined the mapping between perceived similarity structure and neural activity patterns at a more fine-grained level within categories. Given prior evidence that PrC allows for the disambiguation of highly similar objects (Murray and Bussey, 1999; Buckley and Gaffan, 2006; Bussey and Saksida, 2007; Graham et al., 2010; Kent et al., 2016), we anticipated that patterns in PrC, and possibly downstream alErC, would represent even the most subtle visual differences that observers perceive among exemplars, whereas earlier VVS regions would not. To address this issue with RSA in our stimulus set, participants\u2019 behaviour RDMs, which were based on six pairwise distances between exemplars in each category, were divided into the three levels of similarity (low, medium, and high; see Figure 1B and Figure 1\u2014figure supplement 1 for range comparison). Recall that our behavioural analyses revealed, as previously described, that discrimination performance on the Category-Exemplar 1-Back Task was highly sensitive to these different levels of similarity. Figure 4 displays the results of our level-specific fMRI analyses, which were conducted for those regions whose activity patterns showed significant correlations with participants\u2019 full perceived visual similarity space between exemplars (as shown in Figure 3D). Correlations between perceived similarity structure and activity patterns in PrC and alErC were significant at all three levels of similarity (Bonferroni-corrected p < 0.01; Figure 4A). In contrast, correlations for activity patterns in posterior VVS regions were significant only at the lowest level of perceived similarity (Bonferroni-corrected p < 0.01). This pattern of results cannot be attributed to differences in stability of activity patterns across levels of similarity for different regions; supplementary analyses revealed that stability was significant for all regions and did not interact with level of similarity (see Figure 4\u2014figure supplement 1). Direct comparison between regions also revealed that correlations in PrC and alErC were higher than in LOC and EVC at medium and high levels of perceived similarity (Bonferroni-corrected p < 0.05; Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig4-v2.jpg)\n\n**Figure 4.:** (A) Correlation of brain-based RDM and participants\u2019 own behaviour-based RDM at low, medium, and high levels of similarity. Only activation patterns perirhinal cortex (PrC) and anterolateral entorhinal cortex (alErC) show significant correlation with ratings at middle and high levels of perceived similarity (**p < 0.01, *p < 0.05, Bonferroni-corrected for regions and levels). Correlations in PrC and alErC were significantly larger than those in early visual cortex (EVC) and lateral occipital cortex (LOC) at the medium and high levels of perceived similarity (horizontal lines indicate p < 0.05). (B) Box and whisker plots for classification accuracy of neural activation patterns at each level of perceived similarity in different ROIs. We adopted a common classification approach using linear support vector classifier and leave-one-run-out cross-validation (Misaki et al., 2010). Results from one tailed t-tests to probe whether classifier performance was above chance indicate that patterns in LOC are distinguishable only at lowest level of perceived similarity within categories. PrC and alErC are only regions in which patterns are distinguishable at medium and high levels of perceived similarity (*p < 0.05, Bonferroni-corrected).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Correlation of brain-based RDMs for even and odd runs at low, medium, and high levels of similarity. Activation patterns in all region of interests (ROIs) show significant correlations at all levels of perceived similarity (***p < 0.001, Bonferroni-corrected for regions and levels).\n\nThe described results suggest that object representations in posterior VVS regions may not have sufficient fidelity to allow for differentiation of exemplars that were perceived to be highly similar by observers, and that were most difficult to discriminate on our Category-Exemplar 1-Back Task. We followed up on this idea with complementary classification analyses of our fMRI data using a linear support vector machine (Mur et al., 2009). These analyses were conducted so as to examine in which VVS regions activity patterns associated with exemplars of high perceived similarity would be sufficiently separable so as to allow for classification as distinct items. They confirmed that activity patterns associated with specific exemplars can indeed be successfully classified in PrC and alErC at higher levels of perceived similarity than in posterior VVS regions (Figure 4B for further detail).\n\nThe analyses presented so far only focused on specific regions of interest. To answer the question of whether PrC and alErC are the only regions whose activity patterns predict perceived visual similarity among exemplars at its highest level, we also conducted whole-volume searchlight-based RSA. As expected based on our ROI analyses, patterns in PrC and alErC, as well as in earlier VVS regions, showed a predictive relationship in these searchlight analyses when the full range of perceived visual similarity values among exemplars was considered; no regions in the scanned brain volume outside of the VVS exhibited this predictive relationship (threshold-free cluster enhancement [TFCE] corrected p < 0.05; Figure 5C,D). Critically, our searchlight analyses revealed that PrC and alErC were indeed the only regions in the entire scanned brain volume whose patterns correlated with observer\u2019s reports when similarity between exemplars was perceived to be high, and objects were most difficult to discriminate on the Category-Exemplar 1-Back Task (TFCE-corrected p < 0.05; Figure 5E,F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig5-v2.jpg)\n\n**Figure 5.:** (A, B) Visual depiction of ROIs. Early visual cortex (EVC = green), lateral occipital complex (LOC = cyan), perirhinal cortex (PrC = pink), parahippocampal cortex (PhC = orange), anterolateral entorhinal cortex (alErC = blue), posteromedial entorhinal cortex (pmErC = yellow), temporal pole (TP = purple). (C, D) Cortical regions revealed with searchlight analysis in which brain-based representational dissimilarity matrices (RDMs) were significantly correlated with behaviour-based perceived similarity RDMs across full range. Significant correlations were observed in PrC, alErC, and more posterior ventral visual stream (VVS) regions. (E, F) Cortical regions revealed with searchlight analysis in which brain-based RDMs were significantly correlated with behavioural RDMs at highest level of perceived similarity. Significant correlations were observed only in PrC and alErC. Maps are displayed with corrected statistical threshold of p < 0.05 at cluster level (using threshold-free cluster enhancement).\n\n### Patterns in posterior VVS regions predict similarity structure that is shared by observers and tied to object characteristics at the intermediate feature level\n\nBecause our behavioural results point to shared as well as observer-specific components in the perceived similarity structure that participants reported, we conducted several additional sets of analyses, aiming to address which VVS regions would show activity patterns that might predict these different components. In this context, we considered that the perceived similarity structure among exemplars that is shared across observers for low and medium levels is tied to objective image characteristics at the intermediate feature level, as reflected in the significant correlation between averaged similarity ratings and estimates derived from the HMAX model in our data (see Behavioural results). Given the assertion of the representational hierarchical model that objects are represented in PrC and alErC based on complex feature conjunctions (rather than intermediate features), we predicted that the shared component of perceived similarity estimates of the HMAX model would predict activity patterns only in VVS regions posterior to PrC and alErC. Indeed, we found a significant predictive relationship of activity patterns in regions EVC and LOC (Bonferroni-corrected p < 0.01) but not in PrC and alErC (all Bonferroni-corrected p > 0.05; see Figure 6A,B) for average perceived similarity. This significant relationship in posterior VVS regions was also only present at low (for EVC and LOC) and medium levels of similarity (for LOC; see Figure 6B). Analyses that directly employed the estimates of similarity between object images obtained from the computational HMAX model (Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; Khaligh-Razavi and Kriegeskorte, 2014) revealed strikingly similar findings (see Figure 6B vs D). Activity patterns in EVC and LOC showed a significant correlation with the HMAX model at low and medium but not at the highest level of similarity; Bonferroni-corrected p < 0.01. Critically, activity patterns in PrC and alErC did not correlate with estimates from the HMAX model nor with average ratings at any level of object similarity (all Bonferroni-corrected p > 0.05; see Figure 6C,D). Together, these results suggest that activity in VVS regions posterior to PrC and alErC capture the components of perceived visual similarity structure among exemplars that is shared by observers and that is closely related to object features at the intermediate feature level. At the same time, these neural representations in posterior VVS regions do not appear to allow for differentiation of exemplars at high levels of perceived similarity that tend to be observer specific.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig6-v2.jpg)\n\n**Figure 6.:** Brain-based RDMs were correlated with (A) the average behaviour-based similarity RDMs and (B) the different levels of average similarity RDMs; and with (C) the entire RDM derived from the HMAX model (D) the RDMs at different levels of similarity derived from the HMAX model. Patterns in EVC and LOC show relationship to average whole perceived similarity ratings **p < 0.01, Bonferroni-corrected based on regions. EVC and LOC also show correlations to the average low, and LOC to the medium level of perceived similarity *p < 0.05, Bonferroni-corrected. EVC = early visual cortex; LOC = lateral occipital complex; PrC = perirhinal cortex; alErC = anterolateral entorhinal cortex; pmErC = posteromedial entorhinal cortex; PhC = parahippocampal cortex; TP = temporal pole.\n\n### Patterns in PrC and alErC predict fine-grained perceived visual similarity structure among exemplars in an observer-specific manner\n\nIn the final set of analyses, we directly focussed on the variability across participants\u2019 reports of similarity in order to address whether activity patterns in PrC and alErC predict even those perceived similarities with high precision that are unique to individual observers. We reasoned that if neural patterns in a region represent the observer\u2019s unique perceived similarity structure, brain\u2013behaviour correlations should be higher when calculated within rather than between participants (Figure 7A, black versus grey arrows; see Supplementary file 2 for similar results revealed with a multiple regression approach). In other words, if there are observer-specific relationships, activity patterns should predict participants\u2019 own perceived similarity structure better than someone else\u2019s. Such analyses would reveal that interindividual differences are not only present in the perceptual reports of observers and in their discrimination performance, as demonstrated in our behavioural analyses, but also in corresponding neural representations in PrC and alErC. Indeed, initial analyses of our fMRI data demonstrated the presence of stable observer-specific activity patterns for the object exemplars probed in our study in all regions of interest (see Figure 7\u2014figure supplement 2). The i-index introduced by Charest et al., 2014, which directly measures differences in correlations for the same (i.e., own) versus other observers, allowed us to examine which of these observer-specific activation patterns predict observer-specific structure in reports of perceived similarities. These analyses confirmed our expectation that the neural activation patterns in PrC and alErC predict observer-specific perceived visual similarity structure (Bonferroni-corrected p[within-participant r > between-participant r] < 0.01). In contrast, activation patterns in posterior VVS regions, EVC and LOC (Bonferroni-corrected p[within-participant r > between-participant r] > 0.05) did not uniquely predict participants\u2019 own perceived similarity structure (Figure 7B). Not surprisingly, regions that did not predict participants\u2019 perceived similarity structure at all (pmErC, PhC, and TP; Figure 3D), also did not have significantly above zero i-indices (Bonferroni-corrected p[within-participant r > between-participant r] > 0.05). Critically, PrC and alErC showed significant brain\u2013behaviour i-indices even when we restricted analyses to fine-grained differentiation, that is, to the subrange of high levels of perceived similarity (Bonferroni-corrected p[within-participant r > between-participant r] < 0.05). Taken together, these results reveal that activity patterns in PrC and alErC even predict perceived similarities that are unique to individual observers, which are most prevalent in fine-grained structure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig7-v2.jpg)\n\n**Figure 7.:** (A) Brain-based RDMs were correlated with (1) participants\u2019 own behaviour-based similarity RDMs (black double arrows = within subject r) and (2) other participants\u2019 behaviour-based similarity RDMs (grey arrows = between subject r) for comparison. (B) Patterns in PrC and alErC show relationship to perceived similarity ratings that are observer specific as reflected in brain\u2013behaviour i-index (i.e., within minus between subject correlation; *p < 0.05, **p < 0.01, Bonferroni-corrected based on regions, with testing against a null distribution created by randomizing subject labels; error bars represent standard error of the mean [SEM] estimated based on randomization). PrC and alErC also show significant higher i-index than other regions as indicated with horizontal lines; *p < 0.05, Bonferroni-corrected. (C) Only patterns in PrC and alErC show relationship observer-specific perceived similarity ratings at the middle and high levels of perceived similarity; (*p < 0.05, Bonferroni-corrected for regions and levels). Correlations in PrC and alErC were significantly larger than those in EVC and LOC at the medium and high levels of perceived similarity (horizontal lines indicate p < 0.05). EVC = early visual cortex; LOC = lateral occipital complex; PrC = perirhinal cortex; alErC = anterolateral entorhinal cortex; pmErC = posteromedial entorhinal cortex; PhC = parahippocampal cortex; TP = temporal pole; see Figure 5a for visualization.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** These four analyses from the main experiment were included here to compare results in IT cortex with those in LOC. IT cortex is a large swath of cortex that extends across occipital and temporal cortex. This region of interest (similar to the one used in Charest et al., 2014) overlaps with regions of interest used in the main experiment including LOC, PhC, and TP. We were specifically interested in LOC \u2013 the object selective portion of larger IT cortex \u2013 because our stimuli were objects. The results across these four sets of analyses were highly similar between the two regions, with the only noticeable exception that LOC activity patterns predict observer-specific perceived similarity at low levels of similarity while IT patterns do not predict any observer-specific similarity.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66884/elife-66884-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Pairwise pattern dissimilarity percentiles were used to create observer-specific brain-based RDMs for even and odd runs. (B) Brain-based RDMs from even runs were correlated with (1) observers\u2019 brain-based RDMs for odd runs (black double arrows = within subject r) and (2) other observers\u2019 brain-based RDMs from odd runs (grey arrows = between subject r) for comparison. (C) Patterns in all region of interests (ROIs) show stable similarity structure as reflected in significant correlations between odd and even run; ***p < 0.001, Bonferroni-corrected based on regions; error bars represent standard error of the mean (SEM). (D) Patterns in all ROIs are unique to each individual as reflected in significant brain\u2013brain i-index (i.e., within minus between subject correlation; ***p < 0.001, Bonferroni-corrected based on regions, with testing against a null distribution created by randomizing subject labels; error bars represent SEM estimated based on randomization). EVC = early visual cortex; LOC = lateral occipital complex; PrC = perirhinal cortex; alErC = anterolateral entorhinal cortex; pmErC = posteromedial entorhinal cortex; PhC = parahippocampal cortex; TP = temporal pole.\n\n## Discussion\n\nVision neuroscience has made great strides in understanding the hierarchical organization of object representations along the VVS. How VVS representations capture fine-grained differences between objects that observers subjectively perceive has received limited examination so far. In the current study, we addressed this question by focussing on perceived similarities among exemplars of real-world categories. Using a novel Category-Exemplar 1-Back Task, we found that visual discrimination performance is highly sensitive to the visual similarity structure that is reflected in observers\u2019 subjective reports. Combining this task with fMRI scanning at ultra-high-resolution allowed us to show, in line with our general hypotheses, that activity patterns in PrC and alErC predict perceived visual similarities among exemplars with higher precision than any other VVS region, including prediction of those aspects of similarity structure that are unique to individual observers.\n\nResearch that has aimed to characterize the nature of object representations in human PrC with fMRI has shown that the degree of feature overlap between objects is captured by activation patterns in this region. Such a relationship has been revealed in multiple task contexts, with images of real-world objects and with words denoting such objects; moreover, it has been observed for feature overlap at the perceptual as well as the semantic level (Clarke and Tyler, 2014; Erez et al., 2016; Bruffaerts et al., 2013; Martin et al., 2018a). These findings, in combination with work from neurophysiology in nonhuman animals and from computational modelling, have been interpreted to suggest that PrC integrates features of objects with complex conjunctive coding into representations of whole objects, and that the resulting conjunctive representations allow for differentiation of objects even when they are highly similar due to a high degree of feature overlap (Bussey et al., 2002; Murray and Bussey, 1999; Cowell et al., 2010). Indeed, it is this type of conjunctive coding that has motivated the central notion of the representational\u2013hierarchical model of VVS organization that PrC, together with alErC (Connor and Knierim, 2017; Yeung et al., 2017), can be considered the pinnacle of the VVS object-processing hierarchy. Using a metric that was rooted in participants\u2019 subjective reports of perceived visual similarity and that showed a direct relationship to behavioural discrimination performance, the current fMRI findings provide new support for this hierarchical model by revealing increased differentiation of subordinate category exemplars in PrC and alErC, as compared to more posterior VVS regions.\n\nFindings from lesion studies conducted with oddity-discrimination tasks support the idea that medial temporal lobe structures downstream from IT play a critical role in processes required for the appreciation of fine-grained visual similarities between complex real-world objects that are expressed in perceptual reports (see Bonnen et al., 2021, for review). Numerous studies conducted in humans and in other species have shown that performance on such tasks relies on the integrity of PrC when objects with high visual feature overlap must be judged (Buckley et al., 2001; Barense et al., 2007; Bartko et al., 2007; Inhoff et al., 2019; cf., Stark and Squire, 2000; Levy et al., 2005; Hales and Clark, 2015). For example, Barense et al., 2007 compared performance on multiple visual oddity tasks between individuals with lesions in the medial temporal lobe that largely spared PrC and ErC, versus individuals with more widespread damage in the medial temporal lobes that included PrC and ErC. Most notably, individuals in the latter but not in the former group showed impairments in identifying the odd-one out item in sets of images of real-world objects that shared a high number of overlapping visual features. While the results of these prior lesion studies are compatible with the conclusions we draw in the current study, they do not allow for characterization of similarity structure of neural representations in PrC and alErC, and their direct comparison with representations in other medial temporal and posterior VVS regions, as provided here.\n\nThe anatomical specificity of our fMRI findings in the medial temporal lobe is striking. While activity patterns that reflected the similarity structure among category exemplars were present in PrC and alErC, they were absent in medial temporal regions that have previously been implicated in visual discrimination of scenes, specifically pmErC and PhC cortex (see Schultz et al., 2015, for review). This specificity is noteworthy in light of documented differences in functional connectivity between these regions that have been linked to object versus scene processing, with PrC being connected to alErC, and PhC being connected to pmErC, respectively (Maass et al., 2015; see Schr\u00f6der et al., 2015 for more broadly distributed differences in functional connectivity between ErC subregions and other cortical structures).\n\nThe higher precision we observed for the representation of perceived similarity relationships in the medial temporal lobe, as compared to more posterior VVS regions, is of particular theoretical interest for the representational\u2013hierarchical model of VVS organization (Murray and Bussey, 1999; Bussey and Saksida, 2007; Cowell et al., 2010; Kent et al., 2016). Most revealing, in this context, is the comparison between PrC and ErC versus LOC, a region that is part of the large swath of cortex that is often referred to as IT in neuroimaging research and that has been linked to processing of object shape in many prior fMRI studies (e.g., Grill-Spector et al., 2001; Kriegeskorte et al., 2008; Connolly et al., 2012; Mur et al., 2013; Proklova et al., 2016; Cichy et al., 2019). While activity patterns in LOC predicted some aspects of similarity structure among subordinate category exemplars in the current work, this relationship was observed at a coarser grain than in PrC and alErC; it only held when perceived visual similarity was low, and when performance in behavioural discrimination revealed that objects were easily distinguishable. Indeed, complementary pattern classification analyses revealed that activity patterns associated with exemplars of high perceived similarity were not sufficiently separable in LOC so as to allow for classification as distinct items. By contrast, this classification could be successfully performed based on activity patterns in PrC and alErC. Indeed, our searchlight analyses showed that these two regions in the medial temporal lobe were the only ones in which activity was related to perceived visual similarity at a fine-grained level.\n\nOur analyses of the relationship between activity patterns and aspects of perceived similarity among exemplars that are tied to objective image characteristics, as estimated by the computational HMAX model, offer support for the central claim of the representational\u2013hierarchical model that the transformation of object representations from IT (specifically, LOC) to medial temporal-lobe structures involves further integration. Notably, the component of perceived similarity structure that was shared by observers showed a statistical relationship to the estimates of the HMAX model, which describes objects at the intermediate feature level and which has been linked to LOC representations in prior work (Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; but see Khaligh-Razavi and Kriegeskorte, 2014, Kubilius et al., 2016 for limitations as compared to deep convolutional neural network models). In the present study, we also found that HMAX estimates of the similarity among the exemplars we employed were correlated with activity patterns in LOC, but only at low and medium levels of similarity. The fine-grained similarity structure among exemplars that led to the largest number of confusion errors in behavioural discrimination on the Category-Exemplar 1-Back Task during scanning was predominantly observer specific, and this fine-grained observer-specific structure was solely predicted by activity patterns in PrC and alErC. The coding of objects in PrC and alErC as fully integrated entities based on complex feature conjunctions arguably affords the flexibility that is required to capture the fine-grained differentiation among exemplars that characterizes the perception of individual observers. .\n\nOur study was not designed to directly address what factors might drive the variability in perceived similarity structure across observers that were present in their subjective reports, their discrimination performance, and in corresponding activity patterns in PrC and alErC. Prior evidence from fMRI research on neural representations in other VVS regions suggests that past experience and object familiarity may play an important role. Charest et al., 2014 revealed observer-specific effects in the similarity structure of activity patterns in IT that were tied to participants' reports for highly familiar real-world objects with unique personal meaning (e.g., images of observers\u2019 own car, their own bicycle). Notably, this observer-specific mapping between similarity in activity patterns and reports was not present for unfamiliar objects. There is also evidence from behavioural training studies indicating that prior experience with categories has an impact on how the similarity among its exemplars is perceived. In a recent study by Collins and Behrmann, 2020, for example, it was shown that just a few days of repeated exposure can lead to increased differentiation among exemplars, and that these changes are most pronounced at the level of fine-grained similarity structure when observers have had some prior experience with the category in question. This change in similarity structure based on training occurred in the absence of any apparent opportunity to gain new sematic knowledge about the exemplars in question, suggesting it could reflect an increase in perceptual expertise. Indeed in recent behavioural research from our laboratory, we have found that the degree of self-reported exposure to real-world object categories, but not corresponding semantic knowledge, predicts observers\u2019 perceived visual similarity structure among exemplars, and that this relationship is most notable at the level of fine-grained similarity structure (Minos et al., 2021). It is possible that the observer specificity in fine-grained differentiation among exemplars that was predicted by activity patterns in PrC and alErC in the current study is tied to similar factors at work; it may reflect interindividual differences in perceptual expertise across observers and categories. Although speculative at present, such an account would be in line with a large body of evidence revealing learning-related plasticity in object representations in these medial temporal lobe structures (see Banks et al., 2014, for review). This account can be directly tested with training paradigms that target specific real-world object categories in future fMRI research. Regardless of the outcome of such future research, the current findings highlight the critical value of probing the subjective appreciation of visual object similarities, and their variability across observers, for a complete understanding of the transformation of neural representations from posterior regions to those at the apex of the VVS.\n\n## Materials and methods\n\n### Participants\n\nA total of 29 participants completed the perceived similarity iMDS arrangement task and fMRI experiment (12 females; age range = 18\u201335 years old; mean age = 24.2 years). All participants were right handed, fluent in English, and had no known history of psychiatric or neurological disorders. Three participants were removed due to excessive head motion above the cutoff of 0.8 mm of framewise displacement, one participant weas removed due to behavioural performance accuracy 2 SD below the average on the fMRI task, and two participants were removed due to poor signal quality in medial temporal-lobe regions, i.e., a temporal signal-to-noise ratio 2 SD below average (see Figure 3\u2014figure supplement 1 Figure 1). Therefore, 23 participants were included in the final analyses. All participants gave informed consent, were debriefed, and received monetary compensation upon completion of the experiment. This study was conducted with Western\u2019s Human Research Ethics Board approval.\n\n### Stimuli\n\nIn order to investigate object representations at the exemplar level, we selected stimuli with varying normative levels of perceived visual similarity from the Migo Normative Database (Migo et al., 2013). We used 40 greyscale images of objects from 10 categories (Figure 1\u2014figure supplement 1). Each category in our set was made up of four exemplars that all shared the same name (e.g., apple, lipstick, and stapler). Based on findings from a pilot study (n = 40), only stimuli with perceived similarity ratings similar to those from the normative database were selected.\n\n### Modelling of perceived visual similarity structure\n\nIn order to obtain observer-specific models of perceived visual similarity structure for our stimuli, participants provided reports of perceived similarity between all stimuli on a computer outside of the scanner prior to scanning. Participants were seated in front of a monitor and completed a modified version of the iMDS task (Kriegeskorte and Mur, 2012). Specifically, participants were asked to drag-and-drop images into a white circle (i.e., arena), and arrange them according to perceived visual similarity (Kriegeskorte and Mur, 2012; see Figure 2A). Objects perceived to be more visually similar were to be placed closer together, and objects perceived to be less visually similar were to be placed further apart. The iMDS task consisted of two phases. In the first phase, participants arranged all 40 stimuli according to perceived visual similarity. In the second phase, participants completed 10 category-specific trials in which they sorted 4 exemplars from the same category according to their perceived visual similarity. They were instructed to use the entire space within the circle, and make sure they compared each stimulus to every other stimulus. Only data from the second phase were considerd in the current analyses. A MATLAB-based toolbox was used to calculate distances between each pair of exemplars, and to convert these distances to dissimilarity percentiles (Kriegeskorte and Mur, 2012). These dissimilarity percentiles were then used to create observer-specific behaviour-based RDMs that represented each observers\u2019 perceived similarity space at the exemplar level. The behaviour-based RDMs for the entire range included 6 dissimilarity percentiles for each of the 10 categories (i.e., 6 \u00d7 10 = 60 dissimilarity percentiles).\n\nThese behaviour-based RDMs, which captured the full range of perceived similarity, were used to create three behaviour-based RDMs to reflect three levels of perceived similarity (low, medium, and high). The six pairwise distances (expressed as dissimilarity percentile) per category were sorted into the two largest, two medium, and two smallest dissimilarities to create behaviour-based RDMs for low, medium, and high perceived visual similarity, respectively. These behaviour-based RDMs for each of the levels included 2 dissimilarity percentiles for each of the 10 categories (i.e., 2 \u00d7 10 = 20 dissimilarity percentiles). In order to ensure that the different levels of perceived similarity were nonoverlapping, any values that did not allow for at least 0.1 dissimilarity percentile between each of the successive levels (i.e., high-middle and middle-low) was excluded. The range of dissimilarity percentiles did not differ significantly between the different levels of perceived similarity (p > 0.05; Figure 1\u2014figure supplement 1C).\n\n### Modelling of objective visual similarity: HMAX model\n\nWe obtained estimates of similarities that were derived from a computational model, HMAX (Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; Khaligh-Razavi and Kriegeskorte, 2014), developed to describe objects at their intermediate visual feature level, including shape. In this biologically inspired model, simple cell layers, akin to V1 cells, detect local orientation using Gabor filters. These orientation signals are pooled in complex cell layers to extract global features. In this way, HMAX is designed as a four-layer hierarchical feed-forward structure similar to that previously described in the VVS. The output layer of HMAX captures an object\u2019s shape over activation patterns and has been shown to correspond to activation patterns in IT cortex and LOC (Khaligh-Razavi and Kriegeskorte, 2014). We used Matlab implementation of HMAX (https://maxlab.neuro.georgetown.edu/hmax.html) to extract the activations from the C2 layer of the model and compute RDM between 4 exemplars from the 10 categories used in the current study.\n\n### Category-Exemplar 1-Back Task\n\nFor the main experiment, participants completed a variation of a 1-back task, coined the \u2018Category-Exemplar 1-Back\u2019 in the 3T scanner. We created this new 1-back task to ensure that participants were attending carefully to each individual object, given our interest in fine-grained object discrimination. As in a classic 1-back task, participants were shown a stream of individual objects and asked to indicate with a button press when the object was an exact repeat of the object previous to it, and no response was required when the object was from a different category as the one previous (Figure 2A). Our novel twist was the addition of a second response option, whereby participants were asked to indicate with a different button when the object was from the same category as the previous one, but a different exemplar. The two response trial types served as catch trials to ensure participants\u2019 attention focussed on differences between objects across consecutive trials, and to assess behavioural performance. These modifications of the classic 1-back task were introduced to ensure that participants considered category membership and engaged in object processing at the exemplar level. Successful identification of the repetition of different exemplars from the same category could not be based on local low-level features, such as changes in luminance, texture, or shape across consecutive trials. Participants used their right index and middle finger to respond, with response assignment counterbalanced across participants. Of the three trial types\u2014same exemplar, same category, different category\u2014only the no-response trials (i.e., different category) were used in the fMRI analysis to avoid motor confounds associated with button presses. By extension, none of the trials considered for assessment of similarity in activation patterns were immediate neighbours.\n\nParticipants completed a total of eight functional runs that each lasted 4 min (stimulus duration = 1.2 s, intertrial interval = 1 s). Run order was counterbalanced across participants. Within each run, each of the 40 exemplars were presented 3 times as no-response trials, and once as a catch trial, for a total of 24 presentations on no-response trials and 8 catch trials (excluded from fMRI analyses) per exemplar across the entire experiment. Prior to scanning, each participant completed a 5-min practice task with images from categories not included in the functional scanning experiment.\n\n### fMRI data acquisition\n\nMRI data were acquired using a 3T MR system (Siemens). A 32-channel head coil was used. Before the fMRI session, a whole head MP-RAGE volume (TE = 2.28 ms, TR = 2400 ms, TI = 1060 ms, resolution = 0.8 \u00d7 0.8 \u00d7 0.8 mm isometric) was acquired. This was followed by four fMRI runs, each with 300 volumes, which consisted of 42 T2*-weighted slices with a resolution of 1.7 \u00d7 1.7 mm (TE = 30 ms, TR = 1000 ms, slice thickness 1.7 mm, FOV 200 mm, parallel imaging with grappa factor 2). T2*-weighted data were collected at this ultra-high resolution so as to optimize differentiation of BOLD signal in anterolateral versus posterior medial entorhinal cortex. The T2* slices were acquired in odd-even interleaved fashion in the anterior to posterior direction. Subsequently, a T2-weighted image (TE = 564 ms, TR = 3200 ms, resolution 0.8 \u00d7 0.8 \u00d7 0.8 mm isometric) was acquired. Finally, participants then completed four more fMRI runs. Total duration of MRI acquisition was approximately 60 min.\n\n### Preprocessing and modelling\n\nMRI data were converted to brain imaging data structure (Gorgolewski et al., 2016) and ran through fmriprep-v1.1.8 (Esteban et al., 2019). This preprocessing included motion correction, slice time correction, susceptibility distortion correction, registration from EPI to T1w image, and confounds estimated (e.g., tCompCor, aCompCor, and framewise displacement). Component based noise correction was performed using anatomical and temporal CompCor, aCompCor, and tCompCor, by adding these confound estimates as regressors in SPM12 during a first-level general linear model (GLM) (Behzadi et al., 2007). Each participant was coregistered to the participant-specific T1w image by fmriprep. First-level analyses were conducted in native space for each participant with no spatial smoothing to preserve ultra-high-resolution patterns of activity for multivariate pattern analyses (MVPA). Exemplar-specific multivoxel activity patterns were estimated in 40 separate general linear models using the mean activity of the no-response trials across runs.\n\n### ROI definitions for fMRI analyses\n\nAnatomical regions of interest were defined using multiple techniques. Automated segmentation was employed to delineate PrC, ErC, and PhC (ASHS; Wisse et al., 2016). We manually segmented each ERC obtained from ASHS into alErC and pmErC following a protocol developed by Yeung et al., 2017, which is derived from a functional connectivity study (Maass et al., 2015). A probabilistic atlas was used to define EVC (Wang et al., 2015) and TP (Fischl, 2012). A functional localizer was used to define LOC as the contiguous voxels located along the lateral extent of the occipital lobe that responded more strongly to intact objects than scrambled objects (p < 0.01, uncorrected; Proklova et al., 2016).\n\nIn the VVS, we focussed on lateral occipital complex and the TP as they have previously been linked to object processing (e.g., Grill-Spector et al., 2001; Martin et al., 2018b), as well as EVC. In the medial temporal lobe (MTL), we included ROIs for the posteromedial ErC and PhC, both of which have been linked to scene processing (e.g., Maass et al., 2015; Schr\u00f6der et al., 2015; Schultz et al., 2015; Epstein and Baker, 2019).\n\n### RSAs of fMRI data\n\nFor each ROI, linear correlation distances (Pearson\u2019s r) were calculated between all pairs of exemplar-specific multivoxel patterns using CoSMoMVPA toolbox in Matlab (Oosterhof et al., 2016) across all voxels. These correlations were used to create participant-specific brain-based RDMs (1 \u2212 Pearson\u2019s r), which capture the unique neural pattern dissimilarities between all exemplars within each category (n = 10), within each region (n = 8).\n\nWhole-volume RSA were conducted using surface-based searchlight analysis (Kriegeskorte et al., 2008; Oosterhof et al., 2016; Martin et al., 2018a). Specifically, we defined a 100-voxel neighbourhood around each surface voxel, and computed a brain-based RDM within this region, analogous to the ROI-based RSA. This searchlight was swept across the entire cortical surface (Kriegeskorte et al., 2008; Oosterhof et al., 2016). First, the entire perceived similarity RDM for all within category ratings was compared to each searchlight. These brain\u2013behaviour correlations were Fisher transformed and mapped to the centre of each searchlight for each participant separately. Participant-specific similarity maps were then standardized and group-level statistical analysis was performed. TFCE was used to correct for multiple comparisons with a cluster threshold of p < 0.05 (Smith and Nichols, 2009).\n",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "7692f4f3-1542-4c87-a2c7-eb559468ed65",
+      "submission_id": "d3049149-f634-477f-bca0-eb5b1d775aa0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lila Davachi, https://ror.org/00hj8s172 Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66884.sa0](https://doi.org/10.7554/eLife.66884.sa0)\n\nYour response has been thorough and thoughtful and we believe this work now represents an important advancement to our understanding of the contributions of anterior temporal lobe regions in visual representations. Your approach affords tremendous specificity in the conclusions one can draw about the relationship between visual similarity and neural similarity along this ventral visual pathway and highlights perirhinal cortex as a potential key region whose neural representational structure relates to subjective behavior.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Lila Davachi, https://ror.org/00hj8s172 Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66884.sa1](https://doi.org/10.7554/eLife.66884.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Activity in perirhinal and entorhinal cortex predicts observer-specific perceived visual similarities between objects\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian B\u00fcchel as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Simon W Davis (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nBoth reviewers agreed that the value of the results was clear, the methods are methodologically sound but that there are some theoretical or analytical ambiguities that need to be addressed.\n\nThe work is an important extension of prior work (particularly Charest et al., 2014), that includes adjacent brain areas, most notably the medial temporal lobe. However, the reviewers and I agreed that the theoretical basis and contributions of the results could use some further highlighting to underscore what new insights are gleaned from this work. In particular, we found the results in Figure 4 to be the most unique and important of this work but did not feel the Introduction set up the paper to appreciate this.\n\nIt was suggested that further analyses be conducted to boost the strength of the paper to resolve ambiguities about the subjective similarity measure to better understand what underlies these idiosyncratic representations (visual information? semantic information? familiarity?), and what these results suggest about the perirhinal cortex. Does this challenge or support any pre-existing notions about the perirhinal cortex, or the nature of visual / memory representations in the brain?\n\nSpecifically, please report representational dissimilarity matrices (RDMs) to identify what portions of the variance are idiosyncratic vs. shared across the group and attempt to relate the brain RDMs to visually-based RDMs of the stimuli. It was recognized that the semantic factor is much more constrained (given the use of a carefully controlled stimulus set) and is a strength of the current manuscript.\n\nOther important potential additions for discussion are outlined in the individual reviewer comments.\n\nReviewer #1 (Recommendations for the authors):\n\nSome of my struggle with the scope of the work may be in how it's framed in the introduction. The intro discusses the open question of how the brain represents similarities in objects, but then that question is never answered. It's also not clear to me what the key novelty is of the study beyond prior work, and how that changes our understanding of the human visual system. I'm also not sure why real-world objects are an interesting set or novelty (versus other types of stimuli we'd expect to have more idiosyncratic representations).\n\nI also have the question of whether the offline object arrangement task could have influenced the similarity structure reflected in the brain.\n\nAlso, most of the analyses looked at correlations between individuals' brain and behavior to look at \"perceived visual similarity\". However, the behavioral measure includes both what we can consider the group-shared visual similarity (the mean, perhaps even capturing the \"objective visual similarity\"), and the individual-specific visual similarity (the variance). I am curious to see what regions still show a correlation with behavior even if you remove the mean -- so, for example, if you calculate an RDM factoring out / partial out the group mean, is it the PRC and alErC that show a correlation with really this individual-specific RDM? That being said, your later analysis showing higher correlations with an individual's behavioral RDM than other participants' RDMs answers this question in a different way. But the method I suggest also isolates the representation specific to the individual.\n\nWith that, I wonder if one can begin to look at the causes of these idiosyncracies. Since the current study is looking at visual similarity, I kept wondering if it would make sense to get an \"objective\" measure of visual similarity, by creating RDMs formed from some sort of computer vision metric (e.g., pixel similarity, or a DNN metric). You could examine the degree to which individuals agree / disagree with objective similarity, and how that relates to patterns in the brain. I wouldn't say this is necessary, but one potential direction that could expand the impact of the current work.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors argue in the Discussion for a modest relationship between perceived and objective measures of similarity (p23), and as such \"the coding of whole objects based on complex feature conjunctions in PrC and alErC could afford the flexibility that is required to capture these differences in perception\". What does \"complex\" mean here? Specifically, it is unclear as to whether the authors are suggesting that \"subjectively perceived aspects\" of stimuli constitute just another set of features (in addition to objective perceptual/semantic features), or something else entirely.\n\nOne inference the paper makes is that all 10 items contribute to the PRC/ERC effects equally. Do the authors have any evidence for this? How similar were the 10 different item categories? More specifically, did they have similar between-exemplar similarity ratings? This could maybe be inferred maybe from SFig1B for 5 of the items.\n\nAbsent from much of the framing in this paper is the characterization of perceptual verses semantic similarity, in favor of a coarse/fine-grained motif. However, some of these elements may be influencing the Supplementary analysis of centroid similarity. For example, in the first stage of the iMDS when all 10 categories of items are on the screen, it's unlikely that raters can do a purely visual decomposition of the visual similarity, despite the instructions. As such, there may be some \"semantic similarity\" in these groupings (and the consequent centroids). Could the authors speak to whether their Supplementary analyses of these relationships (SFig4) address this semantic factor?\n\nDo the authors see any similarities in their LOC result for SFig4B, and the ITC-centered results in Charest et al., 2014? Some mention of this in the Discussion paragraph might help to draw further links between these papers.\n",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "70cf2619-531f-4505-92bc-c226d2320864",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C1",
+      "claim": "Vision neuroscience has made great strides in understanding the hierarchical organization of object representations along the ventral visual stream (VVS).",
+      "claim_type": "EXPLICIT",
+      "source": "Vision neuroscience has made great strides in understanding the hierarchical organization of object representations along the ventral visual stream (VVS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field of vision neuroscience that draws from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "2c9eca9b-162e-4fc7-9f94-89da9cfb8a55",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C2",
+      "claim": "Activity patterns in PrC and alErC predict the structure of perceived visual similarity relationships among category exemplars with higher precision than any other VVS region.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, we found that activity patterns in PrC and alErC predicted the structure of perceived visual similarity relationships among category exemplars, including its observer-specific component, with higher precision than any other VVS region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the fMRI data and representational similarity analyses presented in the study, as shown in Figures 3-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "14d040d1-0c15-403c-b909-d6ee7ce990ad",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C3",
+      "claim": "Perceived visual similarities are important for categorizing a fruit at the grocery store as an apple rather than a pear.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceived similarities are important, for example, for categorizing a fruit at the grocery store as an apple rather than a pear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an illustrative example drawing from common knowledge about everyday perceptual tasks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "1bfb79ab-d89f-468b-9009-33dd9bdbf075",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C4",
+      "claim": "The similarity of objects influences performance in numerous behavioural contexts, including but not limited to categorization, object discrimination, recognition memory, and prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental work in psychology has confirmed that the similarity of objects influences performance in numerous behavioural contexts, including but not limited to categorization, object discrimination, recognition memory, and prediction (see Medin et al., 1993; Goldstone and Son, 2012; Hebart et al., 2020, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research reviews.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "24f51753-48f2-4929-a3b2-f1b409f2a629",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C5",
+      "claim": "Activity patterns in a large expanse of the ventral visual stream capture much of the category structure in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from this research indicate that activity patterns in a large expanse of the ventral visual stream (VVS), often referred to as inferotemporal (IT) cortex or ventral temporal cortex, capture much of this structure in the environment (Kriegeskorte et al., 2008; Connolly et al., 2012; Mur et al., 2013; Proklova et al., 2016; Cichy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "99b080ff-9f1c-4a56-a396-764c4c97f81c",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C6",
+      "claim": "Numerous studies have revealed a similarity-based clustering of response patterns for objects in IT that is tied to category membership.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, numerous studies have revealed a similarity-based clustering of response patterns for objects in IT that is tied to category membership (e.g., Kriegeskorte et al., 2008; Proklova et al., 2016; see Grill-Spector and Weiner, 2014 for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior neuroimaging studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "fb6769f5-47ed-412e-8983-d53cf32f4513",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C7",
+      "claim": "The representational\u2013hierarchical model of object processing in the VVS asserts that structures in the medial temporal lobe constitute the apex of its processing hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "The representational\u2013hierarchical model of object processing in the VVS asserts that structures in the medial temporal lobe constitute the apex of its processing hierarchy (Murray and Bussey, 1999; Bussey and Saksida, 2007; Cowell et al., 2010; Kent et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical papers proposing the representational-hierarchical model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "98cee0e1-5bd1-42e8-b31c-7f7b3ae4cd69",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C8",
+      "claim": "Visual objects are thought to be represented in PrC in their most highly integrated form based on complex feature conjunctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual objects are thought to be represented in PrC in their most highly integrated form based on complex feature conjunctions (Murray and Bussey, 1999; Buckley and Gaffan, 2006; Bussey and Saksida, 2007; Graham et al., 2010; Kent et al., 2016), which support perceptual discrimination of even highly similar exemplars from the same object category (e.g., O'Neil et al., 2013; O'Neil et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to theoretical and empirical papers on PrC function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "ccdef724-b675-4b41-bd25-7a24d993c56e",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C9",
+      "claim": "Lateral entorhinal cortex has been suggested to extend the role of PrC in visual object discrimination through integration with additional spatial features.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral entorhinal cortex (or its human homologue anterolateral entorhinal cortex [alErC; Maass et al., 2015; Yeung et al., 2017]) has been suggested to extend this role in visual object discrimination through integration with additional spatial features (Connor and Knierim, 2017; Yeung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on entorhinal cortex function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "bc4b567a-5f77-450e-bcb9-c1b705deeb5f",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C10",
+      "claim": "Patients with medial temporal lobe lesions that include PrC and alErC show deficits in oddity-discrimination tasks when complex objects with substantial feature overlap are compared.",
+      "claim_type": "EXPLICIT",
+      "source": "A finding documented in multiple reports (Buckley et al., 2001; Barense et al., 2007; Bartko et al., 2007; Inhoff et al., 2019; cf., Stark and Squire, 2000; Levy et al., 2005; Hales and Clark, 2015) is that patients with medial temporal lobe lesions that include PrC and alErC show deficits in oddity-discrimination tasks when complex objects with substantial feature overlap are compared, but not when oddity judgements require comparison of simple visual stimuli that can be distinguished based on a single feature such as colour or luminance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple lesion studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "02854354-eeef-4a83-a8ef-45aec361b241",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C11",
+      "claim": "Discrimination performance during scanning was highly sensitive to perceived visual similarities among exemplars.",
+      "claim_type": "EXPLICIT",
+      "source": "At the behavioural level, we found that discrimination performance was highly sensitive to fine-grained perceived similarity among exemplars, including those aspects that were observer specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from the Category-Exemplar 1-Back Task presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "aab1142c-89c8-4b7e-9c06-8ef62d97c430",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C12",
+      "claim": "Activation patterns in PrC and alErC predict fine-grained structure within categories with higher precision than any other VVS region.",
+      "claim_type": "EXPLICIT",
+      "source": "Representational similarity analyses (RSAs) of ultra-high-resolution fMRI data revealed, in line with our hypotheses, that activation patterns in PrC and alErC predict this fine-grained structure within categories with higher precision than any other VVS region, and that they predict even those aspects of similarity structure that are unique to individual observers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RSA results presented in Figures 3-7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "744355f9-d3c7-466a-9723-a4342dd55de3",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C13",
+      "claim": "The mean intersubject correlation for perceived similarity ratings across all exemplars and categories was r = 0.69.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of intersubject correlations of each participant's RDM and the mean of all other participants' RDMs (excluding their own) revealed a mean value of r = 0.69 (t-test r > 0: p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of behavioral data from the iMDS task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "7b57b62c-ec78-4099-a161-c896a614fac1",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C14",
+      "claim": "Average ratings of perceived similarity correlate with estimates from the HMAX model (r = 0.25, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "When we calculated an RDM for ratings averaged across participants, and compared it with an RDM derived from a computational model developed to capture objects at their intermediate visual feature level (HMAX, Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; Khaligh-Razavi and Kriegeskorte, 2014), we also found a significant correlation (r = 0.25, p < 0.001), suggesting that average ratings capture a shared component in the subjective ratings that relate to objective image characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis between behavioral ratings and HMAX model estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "15d6b954-4bd3-4876-acd6-5314d499cab5",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C15",
+      "claim": "HMAX model estimates were only significantly correlated with average ratings at low and medium levels of similarity, but not at high levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Follow-up analyses that focussed on this relationship in different subranges of similarity among exemplars (low, medium, and high; see Figure 1B) revealed, however, that the estimates derived from the HMAX model were only significantly correlated with average ratings at low and medium levels (low r = 0.45; p < 0.001; medium r = 0.24; p < 0.001; high r = 0.05; p > 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by level-specific correlation analyses between behavioral ratings and HMAX estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3dbb8e6b-3a00-4077-9f42-5622f7875ed9",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C16",
+      "claim": "At their finest grain, judgements of similarity within categories rely on integrated object representations that are not captured by intermediate feature-level descriptions and are observer specific.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern suggests that at their finest grain, judgements of similarity within categories rely on integrated object representations that (1) are not captured by intermediate feature-level descriptions, and (2) are observer specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the pattern of correlations between HMAX estimates and behavioral ratings at different levels of similarity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "cc00203c-ec7f-4b3a-aca2-d675e8b39e59",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C17",
+      "claim": "Individual differences in perceived visual similarity structure among exemplars are temporally stable observer characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, in a separate behavioural experiment conducted in another sample of participants with multiple assessments, we found that individual differences in perceived visual similarity structure among exemplars are temporally stable observer characteristics (see Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by test-retest data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "d4cecd65-1a80-4dc0-b0d1-de84d6381854",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C18",
+      "claim": "Response errors on same category trials increased with increasing visual similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, response errors on same category trials increased with increasing visual similarity (significant linear slope; t(22) = 18.35, p < 0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from the Category-Exemplar 1-Back Task shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "807a8e5c-98c0-496b-8c09-6026e394efd1",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C19",
+      "claim": "Response times for correct responses on same category trials were positively correlated with perceived visual similarity level.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, response times for correct responses on same category trials were positively correlated with perceived visual similarity level (t(22) = 13.47, p < 0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral data from the Category-Exemplar 1-Back Task shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "0724c375-7018-4276-84eb-93841147eb54",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C20",
+      "claim": "Task performance was more sensitive to participants' own similarity ratings than to other participants' ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the influence of participant's own similarity ratings with that of others on behaviour (Figure 2B,C), we found a significantly larger positive slope in error rate (t(22) = 8.30; p < 0.0001) and in response times (t(22) = 9.68; p < 0.0001) for participants' own ratings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of behavioral performance using own versus other participants' ratings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "d6798a27-e996-4794-a57f-996218b67243",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C21",
+      "claim": "Neural activation patterns in PrC and alErC correlated with participants' perceived visual similarity RDMs (Bonferroni-corrected p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses revealed that neural activation patterns in PrC and alErC did indeed correlate with participants' perceived visual similarity RDMs (Bonferroni-corrected p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RSA results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "90f0e83b-1dfd-4bd9-9ddb-51b8e9ebc798",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C22",
+      "claim": "Patterns in EVC and LOC were significantly correlated with behavior-based RDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns in other regions of the VVS (EVC, p < 0.003; LOC, p < 0.002) were also significantly correlated with these behaviour-based RDMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RSA results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "e06de12a-fa27-4f50-be98-623a2dcc6411",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C23",
+      "claim": "Patterns in PhC and pmErC did not predict the perceived similarity structure for objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, patterns in regions previously implicated in scene processing, specifically PhC and pmErC (Schultz et al., 2015; Maass et al., 2015; Schr\u00f6der et al., 2015), did not predict the perceived similarity structure for objects (all p > 0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RSA results shown in Figure 3D and citations to prior research on these regions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "e287865f-b80c-405a-bc46-6bc96bd5ce09",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C24",
+      "claim": "Correlations between perceived similarity structure and activity patterns in PrC and alErC were significant at all three levels of similarity (low, medium, and high).",
+      "claim_type": "EXPLICIT",
+      "source": "Correlations between perceived similarity structure and activity patterns in PrC and alErC were significant at all three levels of similarity (Bonferroni-corrected p < 0.01; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by level-specific RSA results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "ff754619-a3e3-4e0a-b019-7d39dcf56a8d",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C25",
+      "claim": "Correlations for activity patterns in posterior VVS regions (EVC and LOC) were significant only at the lowest level of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, correlations for activity patterns in posterior VVS regions were significant only at the lowest level of perceived similarity (Bonferroni-corrected p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by level-specific RSA results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "f7b80934-47c4-44cd-bbd6-3ea782d351b5",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C26",
+      "claim": "Correlations in PrC and alErC were higher than in LOC and EVC at medium and high levels of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct comparison between regions also revealed that correlations in PrC and alErC were higher than in LOC and EVC at medium and high levels of perceived similarity (Bonferroni-corrected p < 0.05; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by direct statistical comparisons of RSA results across regions shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "ffe64015-8b86-411a-b317-0f3afd5458f6",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C27",
+      "claim": "Activity patterns associated with specific exemplars can be successfully classified in PrC and alErC at higher levels of perceived similarity than in posterior VVS regions.",
+      "claim_type": "EXPLICIT",
+      "source": "They confirmed that activity patterns associated with specific exemplars can indeed be successfully classified in PrC and alErC at higher levels of perceived similarity than in posterior VVS regions (Figure 4B for further detail).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by classification analyses shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "81132524-040a-4365-90b6-bc0830fe7414",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C28",
+      "claim": "PrC and alErC were the only regions in the entire scanned brain volume whose patterns correlated with observer's reports when similarity between exemplars was perceived to be high.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, our searchlight analyses revealed that PrC and alErC were indeed the only regions in the entire scanned brain volume whose patterns correlated with observer's reports when similarity between exemplars was perceived to be high, and objects were most difficult to discriminate on the Category-Exemplar 1-Back Task (TFCE-corrected p < 0.05; Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by whole-brain searchlight RSA results shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c66eb371-8e7a-4942-a231-589d63979658",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C29",
+      "claim": "Activity patterns in EVC and LOC showed a significant correlation with the HMAX model at low and medium but not at the highest level of similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity patterns in EVC and LOC showed a significant correlation with the HMAX model at low and medium but not at the highest level of similarity; Bonferroni-corrected p < 0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RSA results comparing brain patterns to HMAX estimates shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "6eced646-c427-43c7-b91a-76373eb7d437",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C30",
+      "claim": "Activity patterns in PrC and alErC did not correlate with estimates from the HMAX model nor with average ratings at any level of object similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, activity patterns in PrC and alErC did not correlate with estimates from the HMAX model nor with average ratings at any level of object similarity (all Bonferroni-corrected p > 0.05; see Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RSA results shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "b7777869-ef4b-4f22-b863-fe315f4f235f",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C31",
+      "claim": "Activity patterns in VVS regions posterior to PrC and alErC capture the components of perceived visual similarity structure among exemplars that is shared by observers and closely related to object features at the intermediate feature level.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that activity in VVS regions posterior to PrC and alErC capture the components of perceived visual similarity structure among exemplars that is shared by observers and that is closely related to object features at the intermediate feature level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the pattern of correlations between brain activity, average ratings, and HMAX estimates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "23cf3dc4-e4b1-461b-bce8-f93807ab3042",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C32",
+      "claim": "Neural activation patterns in PrC and alErC predict observer-specific perceived visual similarity structure.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses confirmed our expectation that the neural activation patterns in PrC and alErC predict observer-specific perceived visual similarity structure (Bonferroni-corrected p[within-participant r > between-participant r] < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by i-index analyses shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "774df9d8-7cea-4d69-a30b-7e14366441f7",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C33",
+      "claim": "Activation patterns in posterior VVS regions (EVC and LOC) did not uniquely predict participants' own perceived similarity structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activation patterns in posterior VVS regions, EVC and LOC (Bonferroni-corrected p[within-participant r > between-participant r] > 0.05) did not uniquely predict participants' own perceived similarity structure (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by i-index analyses shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "cd396f71-2836-416a-b287-f1ffde0a8bf4",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C34",
+      "claim": "PrC and alErC showed significant brain\u2013behaviour i-indices even when analyses were restricted to high levels of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, PrC and alErC showed significant brain\u2013behaviour i-indices even when we restricted analyses to fine-grained differentiation, that is, to the subrange of high levels of perceived similarity (Bonferroni-corrected p[within-participant r > between-participant r] < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by level-specific i-index analyses shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "d3d0cbbe-28ad-4063-bc40-70aec79759d3",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C35",
+      "claim": "A total of 29 participants completed the perceived similarity iMDS arrangement task and fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 29 participants completed the perceived similarity iMDS arrangement task and fMRI experiment (12 females; age range = 18\u201335 years old; mean age = 24.2 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a0320ab0-f77a-4efb-b6ed-410031b20601",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C36",
+      "claim": "23 participants were included in the final analyses after exclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Three participants were removed due to excessive head motion above the cutoff of 0.8 mm of framewise displacement, one participant weas removed due to behavioural performance accuracy 2 SD below the average on the fMRI task, and two participants were removed due to poor signal quality in medial temporal-lobe regions, i.e., a temporal signal-to-noise ratio 2 SD below average (see Figure 3\u2014figure supplement 1 Figure 1). Therefore, 23 participants were included in the final analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the final sample size after exclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "0118881b-262d-4212-b4f1-1c5ddad75f6a",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C37",
+      "claim": "40 greyscale images of objects from 10 categories were used as stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 40 greyscale images of objects from 10 categories (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the stimulus set, with reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "576e2581-34f1-464c-ba6a-e181eb723da2",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C38",
+      "claim": "Each category was made up of four exemplars that all shared the same name.",
+      "claim_type": "EXPLICIT",
+      "source": "Each category in our set was made up of four exemplars that all shared the same name (e.g., apple, lipstick, and stapler).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the stimulus structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "32b3d2fa-5334-4e84-83cf-187338f578d2",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C39",
+      "claim": "Participants completed eight functional runs that each lasted 4 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants completed a total of eight functional runs that each lasted 4 min (stimulus duration = 1.2 s, intertrial interval = 1 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "97915a59-2247-4068-b771-f7e3e4b3eac5",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C40",
+      "claim": "Each of the 40 exemplars were presented 3 times as no-response trials per run, for a total of 24 presentations on no-response trials across the entire experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each run, each of the 40 exemplars were presented 3 times as no-response trials, and once as a catch trial, for a total of 24 presentations on no-response trials and 8 catch trials (excluded from fMRI analyses) per exemplar across the entire experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "01c87669-4cbb-456c-b1de-2723a267c42a",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C41",
+      "claim": "MRI data were acquired using a 3T MR system with a 32-channel head coil.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI data were acquired using a 3T MR system (Siemens). A 32-channel head coil was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a6385811-f9a7-476a-b365-38dcdbdc1894",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C42",
+      "claim": "T2*-weighted data were collected at ultra-high resolution (1.7 \u00d7 1.7 mm) to optimize differentiation of BOLD signal in anterolateral versus posterior medial entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "T2*-weighted data were collected at this ultra-high resolution so as to optimize differentiation of BOLD signal in anterolateral versus posterior medial entorhinal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the rationale for the imaging resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3c306e64-3ad7-43bb-9cf4-58dcd35a4573",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C43",
+      "claim": "Automated segmentation was employed to delineate PrC, ErC, and PhC using ASHS.",
+      "claim_type": "EXPLICIT",
+      "source": "Automated segmentation was employed to delineate PrC, ErC, and PhC (ASHS; Wisse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the ROI definition method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a693b3e8-cd57-4c43-b63c-b105722f6056",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C44",
+      "claim": "Each ERC was manually segmented into alErC and pmErC following a protocol developed by Yeung et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "We manually segmented each ERC obtained from ASHS into alErC and pmErC following a protocol developed by Yeung et al., 2017, which is derived from a functional connectivity study (Maass et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the ROI definition method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "260ec83d-fd38-4248-a17c-07d2a0411af3",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C45",
+      "claim": "The mean within-subject correlation for perceived similarity ratings across two sessions was 0.84.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean within-subject correlation across the two sessions was 0.84, indicating high stability of participant's perceived similarity ratings over 1 week.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by test-retest data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "eca9ace4-5139-40bf-b94d-852df5122974",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C46",
+      "claim": "Intrasubject correlations were significantly higher than intersubject correlations for perceived similarity ratings.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, a paired t-test (intrasubject > intersubject correlation) confirmed that intrasubject correlations were significantly higher than intersubject correlations (p < 0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a181e5ed-33ec-4bd1-82e4-7a5810223d52",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C47",
+      "claim": "The perceived similarity structure that is unique to the individual observer is a stable characteristic.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of results indicates that the perceived similarity structure that is unique to the individual observer is a stable characteristic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the pattern of intrasubject versus intersubject correlations shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "4562fc38-63ff-4eee-9f17-3fe486ac8a64",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C48",
+      "claim": "Intersubject correlations were reduced for high similarity exemplars compared to low similarity exemplars.",
+      "claim_type": "EXPLICIT",
+      "source": "There are also hints that this variability is most pronounced at the finest grain of judgements, as reflected in reduced intersubject correlations for high similarity exemplars (high r = 0.64; medium r = 0.65, low r = 0.72; high < low; t(22) = 3.41; p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical comparison of intersubject correlations at different levels of similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3f10ab57-6355-4b56-a717-e1ad3219336e",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C49",
+      "claim": "Stability of activity patterns was significant for all regions and did not interact with level of similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern of results cannot be attributed to differences in stability of activity patterns across levels of similarity for different regions; supplementary analyses revealed that stability was significant for all regions and did not interact with level of similarity (see Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by supplementary analyses shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "75104f83-6f14-4ca9-be69-4aebd4e6db92",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C50",
+      "claim": "Patterns in LOC are distinguishable only at lowest level of perceived similarity within categories.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from one tailed t-tests to probe whether classifier performance was above chance indicate that patterns in LOC are distinguishable only at lowest level of perceived similarity within categories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by classification analyses shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "7200d888-c1db-4ab3-9df0-d9e7f695f820",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C51",
+      "claim": "PrC and alErC are only regions in which patterns are distinguishable at medium and high levels of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "PrC and alErC are only regions in which patterns are distinguishable at medium and high levels of perceived similarity (*p < 0.05, Bonferroni-corrected).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by classification analyses shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "1ad7be58-4b1a-43f5-a19c-630018cc3ca0",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C52",
+      "claim": "Patterns in all ROIs show stable similarity structure as reflected in significant correlations between odd and even runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns in all region of interests (ROIs) show stable similarity structure as reflected in significant correlations between odd and even run; ***p < 0.001, Bonferroni-corrected based on regions; error bars represent standard error of the mean (SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by split-half reliability analyses shown in Figure 7\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "cc1abba5-a7dd-4202-9f94-82ccd2a2178f",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C53",
+      "claim": "Patterns in all ROIs are unique to each individual as reflected in significant brain\u2013brain i-index.",
+      "claim_type": "EXPLICIT",
+      "source": "Patterns in all ROIs are unique to each individual as reflected in significant brain\u2013brain i-index (i.e., within minus between subject correlation; ***p < 0.001, Bonferroni-corrected based on regions, with testing against a null distribution created by randomizing subject labels; error bars represent SEM estimated based on randomization).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by brain-brain i-index analyses shown in Figure 7\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "175e54b4-34d5-42b6-8e88-2f836fc1452d",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C54",
+      "claim": "Research that has aimed to characterize the nature of object representations in human PrC with fMRI has shown that the degree of feature overlap between objects is captured by activation patterns in this region.",
+      "claim_type": "EXPLICIT",
+      "source": "Research that has aimed to characterize the nature of object representations in human PrC with fMRI has shown that the degree of feature overlap between objects is captured by activation patterns in this region. Such a relationship has been revealed in multiple task contexts, with images of real-world objects and with words denoting such objects; moreover, it has been observed for feature overlap at the perceptual as well as the semantic level (Clarke and Tyler, 2014; Erez et al., 2016; Bruffaerts et al., 2013; Martin et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior fMRI studies on PrC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "86041c2f-c907-48e2-b78b-c94076bcc983",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C55",
+      "claim": "Findings from lesion studies support the idea that medial temporal lobe structures downstream from IT play a critical role in processes required for the appreciation of fine-grained visual similarities between complex real-world objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings from lesion studies conducted with oddity-discrimination tasks support the idea that medial temporal lobe structures downstream from IT play a critical role in processes required for the appreciation of fine-grained visual similarities between complex real-world objects that are expressed in perceptual reports (see Bonnen et al., 2021, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review of lesion studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c42f9bbe-a8d2-4572-9d84-8c3255486d0f",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C56",
+      "claim": "Barense et al., 2007 found that individuals with medial temporal lobe lesions including PrC and ErC showed impairments in identifying the odd-one out item in sets of images of real-world objects that shared a high number of overlapping visual features.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Barense et al., 2007 compared performance on multiple visual oddity tasks between individuals with lesions in the medial temporal lobe that largely spared PrC and ErC, versus individuals with more widespread damage in the medial temporal lobes that included PrC and ErC. Most notably, individuals in the latter but not in the former group showed impairments in identifying the odd-one out item in sets of images of real-world objects that shared a high number of overlapping visual features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific lesion study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "42495475-139d-4401-a0c4-8dbab4c81dfa",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C57",
+      "claim": "The anatomical specificity of fMRI findings in the medial temporal lobe is striking, with activity patterns reflecting similarity structure present in PrC and alErC but absent in pmErC and PhC.",
+      "claim_type": "EXPLICIT",
+      "source": "The anatomical specificity of our fMRI findings in the medial temporal lobe is striking. While activity patterns that reflected the similarity structure among category exemplars were present in PrC and alErC, they were absent in medial temporal regions that have previously been implicated in visual discrimination of scenes, specifically pmErC and PhC cortex (see Schultz et al., 2015, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the pattern of RSA results across different MTL regions and citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "d6bd8d2c-3636-4dfc-9d24-19240f4e49d1",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C58",
+      "claim": "PrC is connected to alErC, and PhC is connected to pmErC, reflecting differences in functional connectivity related to object versus scene processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This specificity is noteworthy in light of documented differences in functional connectivity between these regions that have been linked to object versus scene processing, with PrC being connected to alErC, and PhC being connected to pmErC, respectively (Maass et al., 2015; see Schr\u00f6der et al., 2015 for more broadly distributed differences in functional connectivity between ErC subregions and other cortical structures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior functional connectivity studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "6456b8e5-5b9c-4296-997f-1e1309a1ed55",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C59",
+      "claim": "The component of perceived similarity structure that was shared by observers showed a statistical relationship to the estimates of the HMAX model.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the component of perceived similarity structure that was shared by observers showed a statistical relationship to the estimates of the HMAX model, which describes objects at the intermediate feature level and which has been linked to LOC representations in prior work (Riesenhuber and Poggio, 1999; Cadieu et al., 2007; Serre et al., 2007; but see Khaligh-Razavi and Kriegeskorte, 2014, Kubilius et al., 2016 for limitations as compared to deep convolutional neural network models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analyses and citations to prior work on HMAX.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "72b5c32e-4050-4eca-b62a-9d99573a8feb",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C60",
+      "claim": "The fine-grained similarity structure among exemplars that led to the largest number of confusion errors in behavioural discrimination was predominantly observer specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The fine-grained similarity structure among exemplars that led to the largest number of confusion errors in behavioural discrimination on the Category-Exemplar 1-Back Task during scanning was predominantly observer specific, and this fine-grained observer-specific structure was solely predicted by activity patterns in PrC and alErC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the pattern of behavioral and fMRI results at high levels of similarity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "638508d9-72f1-4b71-b5fd-5a22b6997bf9",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C61",
+      "claim": "The coding of objects in PrC and alErC as fully integrated entities based on complex feature conjunctions affords the flexibility required to capture fine-grained differentiation among exemplars that characterizes the perception of individual observers.",
+      "claim_type": "EXPLICIT",
+      "source": "The coding of objects in PrC and alErC as fully integrated entities based on complex feature conjunctions arguably affords the flexibility that is required to capture the fine-grained differentiation among exemplars that characterizes the perception of individual observers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings based on the representational-hierarchical model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a7458ed8-1ede-4e55-9689-24eccd5cf459",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C62",
+      "claim": "Charest et al., 2014 revealed observer-specific effects in the similarity structure of activity patterns in IT that were tied to participants' reports for highly familiar real-world objects with unique personal meaning.",
+      "claim_type": "EXPLICIT",
+      "source": "Charest et al., 2014 revealed observer-specific effects in the similarity structure of activity patterns in IT that were tied to participants' reports for highly familiar real-world objects with unique personal meaning (e.g., images of observers' own car, their own bicycle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a prior fMRI study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3bc2d46a-0344-46f8-877a-baf9f3d9a42d",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C63",
+      "claim": "Collins and Behrmann, 2020 showed that just a few days of repeated exposure can lead to increased differentiation among exemplars, with changes most pronounced at the level of fine-grained similarity structure when observers have had some prior experience with the category.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study by Collins and Behrmann, 2020, for example, it was shown that just a few days of repeated exposure can lead to increased differentiation among exemplars, and that these changes are most pronounced at the level of fine-grained similarity structure when observers have had some prior experience with the category in question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a prior behavioral training study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "e477dfe1-7ded-4075-9575-f7521d45bda1",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C64",
+      "claim": "The degree of self-reported exposure to real-world object categories, but not corresponding semantic knowledge, predicts observers' perceived visual similarity structure among exemplars.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed in recent behavioural research from our laboratory, we have found that the degree of self-reported exposure to real-world object categories, but not corresponding semantic knowledge, predicts observers' perceived visual similarity structure among exemplars, and that this relationship is most notable at the level of fine-grained similarity structure (Minos et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent behavioral research from the authors' laboratory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "90c8eaf1-98c1-4056-a829-5bdd487f2c12",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C65",
+      "claim": "The observer specificity in fine-grained differentiation among exemplars predicted by activity patterns in PrC and alErC may reflect interindividual differences in perceptual expertise across observers and categories.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the observer specificity in fine-grained differentiation among exemplars that was predicted by activity patterns in PrC and alErC in the current study is tied to similar factors at work; it may reflect interindividual differences in perceptual expertise across observers and categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "4d4b26e7-5fbf-4d5e-a3a0-603360bcc068",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C66",
+      "claim": "There is a large body of evidence revealing learning-related plasticity in object representations in medial temporal lobe structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although speculative at present, such an account would be in line with a large body of evidence revealing learning-related plasticity in object representations in these medial temporal lobe structures (see Banks et al., 2014, for review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review of learning-related plasticity in MTL.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3f54ea97-8c73-4435-a186-9e5afcdff474",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C67",
+      "claim": "The current findings highlight the critical value of probing the subjective appreciation of visual object similarities and their variability across observers for a complete understanding of the transformation of neural representations from posterior regions to those at the apex of the VVS.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the outcome of such future research, the current findings highlight the critical value of probing the subjective appreciation of visual object similarities, and their variability across observers, for a complete understanding of the transformation of neural representations from posterior regions to those at the apex of the VVS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "da0a880f-7590-45ae-9e34-e251febecf44",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C68",
+      "claim": "All participants were right handed, fluent in English, and had no known history of psychiatric or neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "All participants were right handed, fluent in English, and had no known history of psychiatric or neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about participant inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "26f07ad7-8e10-4ad3-bac2-6bc633530b6d",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C69",
+      "claim": "Stimuli were selected with varying normative levels of perceived visual similarity from the Migo Normative Database.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate object representations at the exemplar level, we selected stimuli with varying normative levels of perceived visual similarity from the Migo Normative Database (Migo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about stimulus selection with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c969e1e6-c7ea-4ff1-a59e-e4aa8013a5cc",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C70",
+      "claim": "Only stimuli with perceived similarity ratings similar to those from the normative database were selected based on findings from a pilot study.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on findings from a pilot study (n = 40), only stimuli with perceived similarity ratings similar to those from the normative database were selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about stimulus validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "0af81ee4-a4c2-45a7-ab9a-0151353f2bf1",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C71",
+      "claim": "Participants were instructed to use the entire space within the circle and make sure they compared each stimulus to every other stimulus during the iMDS task.",
+      "claim_type": "EXPLICIT",
+      "source": "They were instructed to use the entire space within the circle, and make sure they compared each stimulus to every other stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about task instructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "1d1b7b37-5213-47c3-aba3-c93040d9e641",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C72",
+      "claim": "A MATLAB-based toolbox was used to calculate distances between each pair of exemplars and convert these distances to dissimilarity percentiles.",
+      "claim_type": "EXPLICIT",
+      "source": "A MATLAB-based toolbox was used to calculate distances between each pair of exemplars, and to convert these distances to dissimilarity percentiles (Kriegeskorte and Mur, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data analysis methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "dd2bfa07-0b6f-4b1a-ba56-b58e94882f59",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C73",
+      "claim": "Any values that did not allow for at least 0.1 dissimilarity percentile between successive levels were excluded to ensure non-overlapping levels of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to ensure that the different levels of perceived similarity were nonoverlapping, any values that did not allow for at least 0.1 dissimilarity percentile between each of the successive levels (i.e., high-middle and middle-low) was excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about data processing criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "3a3f66ab-6fb0-4e58-a7b6-337ae681abbc",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C74",
+      "claim": "The range of dissimilarity percentiles did not differ significantly between the different levels of perceived similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of dissimilarity percentiles did not differ significantly between the different levels of perceived similarity (p > 0.05; Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical comparison shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c9a885f5-b897-45db-a4fb-5473e484393a",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C75",
+      "claim": "HMAX is designed as a four-layer hierarchical feed-forward structure similar to that previously described in the VVS.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, HMAX is designed as a four-layer hierarchical feed-forward structure similar to that previously described in the VVS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the computational model architecture based on prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "7c441e35-9443-4c9e-8e1a-8283c2c5aade",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C76",
+      "claim": "The output layer of HMAX captures an object's shape over activation patterns and has been shown to correspond to activation patterns in IT cortex and LOC.",
+      "claim_type": "EXPLICIT",
+      "source": "The output layer of HMAX captures an object's shape over activation patterns and has been shown to correspond to activation patterns in IT cortex and LOC (Khaligh-Razavi and Kriegeskorte, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior research on HMAX.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "d2963636-564c-4f4d-8c5a-0433179f8429",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C77",
+      "claim": "Participants used their right index and middle finger to respond, with response assignment counterbalanced across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants used their right index and middle finger to respond, with response assignment counterbalanced across participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "954f013d-4461-4c7b-ae97-55992efbb4ea",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C78",
+      "claim": "Only the no-response trials were used in the fMRI analysis to avoid motor confounds associated with button presses.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the three trial types\u2014same exemplar, same category, different category\u2014only the no-response trials (i.e., different category) were used in the fMRI analysis to avoid motor confounds associated with button presses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "89180cf3-f2fd-44cf-9b43-5d4ee47e8ad6",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C79",
+      "claim": "None of the trials considered for assessment of similarity in activation patterns were immediate neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, none of the trials considered for assessment of similarity in activation patterns were immediate neighbours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental design to avoid temporal confounds.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "89b33c9a-dd0e-45bc-80af-163c4b928077",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C80",
+      "claim": "Prior to scanning, each participant completed a 5-min practice task with images from categories not included in the functional scanning experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to scanning, each participant completed a 5-min practice task with images from categories not included in the functional scanning experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "1c2627f8-9e12-4d9a-a963-0f7ea6e984ad",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C81",
+      "claim": "A whole head MP-RAGE volume was acquired with TE = 2.28 ms, TR = 2400 ms, TI = 1060 ms, resolution = 0.8 \u00d7 0.8 \u00d7 0.8 mm isometric.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the fMRI session, a whole head MP-RAGE volume (TE = 2.28 ms, TR = 2400 ms, TI = 1060 ms, resolution = 0.8 \u00d7 0.8 \u00d7 0.8 mm isometric) was acquired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "24b6ab0e-a410-4484-a405-1fcbf8624dd4",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C82",
+      "claim": "Four fMRI runs were acquired, each with 300 volumes consisting of 42 T2*-weighted slices with a resolution of 1.7 \u00d7 1.7 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "This was followed by four fMRI runs, each with 300 volumes, which consisted of 42 T2*-weighted slices with a resolution of 1.7 \u00d7 1.7 mm (TE = 30 ms, TR = 1000 ms, slice thickness 1.7 mm, FOV 200 mm, parallel imaging with grappa factor 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "5684d755-a73f-434a-8253-2e8550099886",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C83",
+      "claim": "T2*-weighted slices were acquired in odd-even interleaved fashion in the anterior to posterior direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The T2* slices were acquired in odd-even interleaved fashion in the anterior to posterior direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about MRI acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "4047fac7-fc8f-4f28-badf-7b3229593e96",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C84",
+      "claim": "Total duration of MRI acquisition was approximately 60 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Total duration of MRI acquisition was approximately 60 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scanning session duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c285138f-6143-431a-aaf5-07a427ba5c08",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C85",
+      "claim": "MRI data were converted to brain imaging data structure and ran through fmriprep-v1.1.8.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI data were converted to brain imaging data structure (Gorgolewski et al., 2016) and ran through fmriprep-v1.1.8 (Esteban et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about preprocessing methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "39890c55-d276-48d8-a158-5ac7ba6a0473",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C86",
+      "claim": "Preprocessing included motion correction, slice time correction, susceptibility distortion correction, registration from EPI to T1w image, and confounds estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "This preprocessing included motion correction, slice time correction, susceptibility distortion correction, registration from EPI to T1w image, and confounds estimated (e.g., tCompCor, aCompCor, and framewise displacement).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "cc642710-e213-4544-9f5e-d477ad9db8a4",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C87",
+      "claim": "Component based noise correction was performed using anatomical and temporal CompCor by adding these confound estimates as regressors in SPM12 during a first-level GLM.",
+      "claim_type": "EXPLICIT",
+      "source": "Component based noise correction was performed using anatomical and temporal CompCor, aCompCor, and tCompCor, by adding these confound estimates as regressors in SPM12 during a first-level general linear model (GLM) (Behzadi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about preprocessing methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "e6ca915e-3820-4a4e-8ef7-97a5d2476675",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C88",
+      "claim": "First-level analyses were conducted in native space for each participant with no spatial smoothing to preserve ultra-high-resolution patterns of activity for multivariate pattern analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "First-level analyses were conducted in native space for each participant with no spatial smoothing to preserve ultra-high-resolution patterns of activity for multivariate pattern analyses (MVPA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "ff4db2a1-b123-44b3-8cba-f4c4990e945b",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C89",
+      "claim": "Exemplar-specific multivoxel activity patterns were estimated in 40 separate general linear models using the mean activity of the no-response trials across runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Exemplar-specific multivoxel activity patterns were estimated in 40 separate general linear models using the mean activity of the no-response trials across runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "ee74bacb-7cf8-45c7-bee6-e2cd15924bb3",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C90",
+      "claim": "A probabilistic atlas was used to define EVC and TP.",
+      "claim_type": "EXPLICIT",
+      "source": "A probabilistic atlas was used to define EVC (Wang et al., 2015) and TP (Fischl, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ROI definition methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "7b869d2c-4d64-4a58-92ce-5b1a6b54ce28",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C91",
+      "claim": "A functional localizer was used to define LOC as the contiguous voxels located along the lateral extent of the occipital lobe that responded more strongly to intact objects than scrambled objects.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional localizer was used to define LOC as the contiguous voxels located along the lateral extent of the occipital lobe that responded more strongly to intact objects than scrambled objects (p < 0.01, uncorrected; Proklova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about ROI definition methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "48a8b44a-e19e-4ce9-98e8-6b9ab07af05d",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C92",
+      "claim": "Linear correlation distances (Pearson's r) were calculated between all pairs of exemplar-specific multivoxel patterns using CoSMoMVPA toolbox in Matlab.",
+      "claim_type": "EXPLICIT",
+      "source": "For each ROI, linear correlation distances (Pearson's r) were calculated between all pairs of exemplar-specific multivoxel patterns using CoSMoMVPA toolbox in Matlab (Oosterhof et al., 2016) across all voxels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about analysis methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "b76eeec5-ee14-496a-91ec-17155859e2cd",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C93",
+      "claim": "A 100-voxel neighbourhood was defined around each surface voxel for whole-volume searchlight RSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we defined a 100-voxel neighbourhood around each surface voxel, and computed a brain-based RDM within this region, analogous to the ROI-based RSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about searchlight analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "9366aa5a-0634-4a0d-8c5f-d40e59a1f676",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "claim_id": "C94",
+      "claim": "TFCE was used to correct for multiple comparisons with a cluster threshold of p < 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "TFCE was used to correct for multiple comparisons with a cluster threshold of p < 0.05 (Smith and Nichols, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about statistical correction methods with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "131bb7a3-bfe4-47ab-a141-468e21759acb",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Perceived visual similarity among category exemplars shows both shared and observer-specific components. The mean intersubject correlation was r=0.69, and average ratings correlated with HMAX model estimates (r=0.25) only at low and medium similarity levels. Individual differences in perceived similarity are temporally stable (within-subject r=0.84 across sessions), with intrasubject correlations significantly higher than intersubject correlations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17, C45-C48 provide converging behavioral evidence from the iMDS task showing both shared structure (correlation with HMAX) and observer-specific structure (test-retest reliability, intra>inter-subject correlations). The statistical tests are appropriate and the pattern is internally consistent across multiple analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "2a40e173-95f2-40d4-af25-143c1c5b55b6",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral discrimination performance during the Category-Exemplar 1-Back Task was highly sensitive to perceived visual similarity among exemplars. Error rates and response times increased with increasing similarity, and performance was more sensitive to participants' own similarity ratings than to other participants' ratings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C18-C20 demonstrate clear behavioral effects with appropriate statistical tests (t-tests with significant p-values). The finding that own ratings predict performance better than others' ratings (C20) provides strong evidence for observer-specific effects in behavior, supported by Figure 2B,C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "70cac43e-fdc9-401a-a665-a99f2578c541",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Activity patterns in PrC and alErC, as well as EVC and LOC, significantly correlated with participants' perceived visual similarity RDMs. However, patterns in scene-processing regions (PhC and pmErC) did not predict perceived similarity structure for objects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12, C21-C23 are supported by ROI-based RSA results shown in Figure 3D with appropriate Bonferroni correction. The anatomical specificity (significant in object regions, not scene regions) strengthens the interpretation. Statistical thresholds are clearly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "f8905dc9-e66f-44b3-b9ef-0e19edada205",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PrC and alErC activity patterns predicted perceived similarity at all three levels (low, medium, high), while posterior VVS regions (EVC, LOC) only predicted similarity at the lowest level. Classification analyses confirmed that exemplar patterns are distinguishable in PrC/alErC at medium and high similarity levels but only at low levels in LOC. Whole-brain searchlight analyses revealed PrC and alErC as the only regions predicting high-level similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28, C49-C51 provide converging evidence from multiple analysis approaches (level-specific RSA, classification, searchlight) all pointing to superior fine-grained discrimination in PrC/alErC. The control analysis (C49) rules out differential stability as an alternative explanation. Results are supported by Figures 4 and 5 with appropriate corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c6258e2d-b0e1-46e5-8be1-bab5c1be5570",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Activity patterns in posterior VVS regions (EVC, LOC) correlated with HMAX model estimates and average similarity ratings at low and medium levels, but PrC and alErC did not correlate with HMAX or average ratings at any level. This suggests posterior regions capture shared, intermediate-feature-level similarity while PrC/alErC represent more integrated object representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31, C59 are supported by RSA analyses comparing brain patterns to HMAX estimates (Figure 6). The dissociation between posterior regions (correlate with HMAX) and PrC/alErC (do not correlate) is clear and statistically significant with appropriate corrections. The interpretation (C31) follows logically from the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neural activation patterns in PrC and alErC uniquely predict observer-specific perceived visual similarity structure, including at high levels of similarity. Posterior VVS regions (EVC, LOC) did not show this observer-specific mapping. All ROIs showed unique individual patterns (brain-brain i-index), but only PrC/alErC patterns predicted individual behavioral reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34, C53, C60 are supported by i-index analyses (Figure 7) showing within-subject correlations significantly exceed between-subject correlations for PrC/alErC but not posterior regions. The control analysis (C53) confirms individual patterns exist everywhere, but only PrC/alErC patterns map to individual perceptual reports. Statistical tests with appropriate corrections are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "f824511f-e2ec-4fbb-bf65-18d7196113eb",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study included 29 participants initially, with 23 included in final analyses after exclusions for head motion, behavioral performance, and signal quality. All participants were right-handed, fluent in English, with no psychiatric or neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C68 provide clear methodological details about the sample. Exclusion criteria are reasonable and clearly specified (motion >0.8mm, performance >2SD below mean, tSNR >2SD below mean). Final n=23 is adequate for fMRI studies with within-subject designs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "f627405f-d06b-4c02-895e-1dc705ab47a5",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study used 40 greyscale images from 10 categories (4 exemplars per category) selected from the Migo Normative Database with varying levels of perceived visual similarity. Stimuli were validated in a pilot study (n=40) to ensure similarity ratings matched normative values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C69-C70 describe stimulus selection and validation. The use of a normative database and pilot validation strengthens stimulus selection. The structure (10 categories \u00d7 4 exemplars) is appropriate for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Category-Exemplar 1-Back Task involved 8 runs of 4 minutes each, with each exemplar presented 24 times on no-response trials across the experiment. Only no-response trials were analyzed to avoid motor confounds, ensuring no analyzed trials were immediate neighbors. Participants practiced before scanning with different stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C77-C80 describe the experimental design with appropriate detail. The decision to analyze only no-response trials (C78) is methodologically sound to avoid motor confounds. The inference that analyzed trials were not neighbors (C79) follows logically from the design. Practice with different stimuli (C80) is good experimental practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "51952e3a-c039-4c29-a83f-72dda2f4be89",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "fMRI data were acquired at 3T with ultra-high resolution (1.7\u00d71.7mm in-plane) to optimize differentiation of BOLD signal in alErC versus pmErC. Acquisition included MP-RAGE (0.8mm isotropic), T2-weighted imaging, and functional runs with 42 slices acquired in odd-even interleaved fashion. Total scan time was approximately 60 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C81-C84 provide comprehensive MRI acquisition parameters. The rationale for ultra-high resolution (C42) is clearly stated and appropriate for distinguishing MTL subregions. All technical parameters are specified in sufficient detail for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "0d11a0e8-ccd3-47bc-a5e6-7f0a26bcb017",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ROIs were defined using multiple methods: automated segmentation (ASHS) for PrC, ErC, PhC; manual segmentation of ErC into alErC/pmErC following Yeung et al. 2017 protocol; probabilistic atlases for EVC and TP; and functional localizer for LOC (intact>scrambled objects, p<0.01 uncorrected).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C90-C91 describe ROI definition methods with appropriate citations. The combination of automated, manual, atlas-based, and functional approaches is methodologically sound. The manual segmentation protocol for ErC subregions (C44) is based on established methods. The functional localizer threshold for LOC (C91) is standard but uncorrected, which is typical for ROI definition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "95f7ecc3-f384-4049-8d6f-b4078b828873",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Preprocessing used fmriprep-v1.1.8 including motion correction, slice-time correction, distortion correction, and CompCor-based noise correction. First-level analyses were conducted in native space without smoothing to preserve high-resolution patterns. RSA used Pearson correlations between exemplar-specific patterns. Searchlight analysis used 100-voxel neighborhoods with TFCE correction (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89, C92-C94 describe preprocessing and analysis methods with appropriate detail and citations. The use of fmriprep (C85) is standard practice. CompCor noise correction (C87) is appropriate for high-resolution fMRI. No smoothing (C88) is justified for MVPA. TFCE correction (C94) is appropriate for searchlight analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "c6d25cc4-8f6c-40b9-bd0d-581912bf42b4",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Behavioral similarity data were processed using a MATLAB toolbox to calculate pairwise distances and convert to dissimilarity percentiles. Levels were defined to be non-overlapping (\u22650.1 percentile separation), and the range of dissimilarity percentiles did not differ significantly between levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 describe behavioral data processing with appropriate methods. The criterion for non-overlapping levels (C73) is reasonable. The verification that ranges don't differ between levels (C74) is an important control, though the statistical test used is not specified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "48dd8197-ba1c-43e8-9acd-2f7d577cfea7",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Activity patterns in all ROIs showed stable similarity structure as reflected in significant correlations between odd and even runs (p<0.001, Bonferroni-corrected).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 reports split-half reliability across all ROIs with appropriate statistical correction. This is an important control analysis demonstrating data quality. Results are shown in Figure 7\u2014figure supplement 2C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript situates the current work within established knowledge about visual object processing, the representational-hierarchical model, and prior fMRI and lesion studies. This includes general statements about the field, theoretical frameworks, and citations to relevant prior work on PrC/ErC function, HMAX model properties, and learning-related plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3-C10, C54-C58, C62-C64, C66, C75-C76 provide appropriate context through citations to prior work. These are primarily background claims supported by citations rather than new empirical findings. The citations appear appropriate and accurately represent prior work, though detailed verification of each citation is beyond the scope of this review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    },
+    {
+      "id": "537c49b7-fea5-40b7-b2ce-ab99c2e4b263",
+      "content_id": "02f2283b-1b0e-4c86-bfce-bb249a725fef",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors interpret their findings within the representational-hierarchical framework, suggesting that complex feature conjunctions in PrC/alErC afford flexibility to capture observer-specific fine-grained differentiation. They speculate this may reflect individual differences in perceptual expertise and emphasize the value of studying subjective similarity and observer variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61, C65, C67 are interpretive and speculative statements about mechanisms and implications. While these interpretations are reasonable given the data, they go beyond what is directly demonstrated. C61 and C65 are explicitly speculative (\"arguably,\" \"may reflect\"). C67 is a concluding statement about research implications rather than an empirical claim. These are appropriate for a Discussion section but cannot be evaluated as supported or unsupported empirical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:54:59.421924Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "744355f9-d3c7-466a-9723-a4342dd55de3",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "7b57b62c-ec78-4099-a161-c896a614fac1",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "15d6b954-4bd3-4876-acd6-5314d499cab5",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "3dbb8e6b-3a00-4077-9f42-5622f7875ed9",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "cc00203c-ec7f-4b3a-aca2-d675e8b39e59",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "260ec83d-fd38-4248-a17c-07d2a0411af3",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "eca9ace4-5139-40bf-b94d-852df5122974",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "a181e5ed-33ec-4bd1-82e4-7a5810223d52",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "4562fc38-63ff-4eee-9f17-3fe486ac8a64",
+      "result_id": "131bb7a3-bfe4-47ab-a141-468e21759acb"
+    },
+    {
+      "claim_id": "02854354-eeef-4a83-a8ef-45aec361b241",
+      "result_id": "2a40e173-95f2-40d4-af25-143c1c5b55b6"
+    },
+    {
+      "claim_id": "d4cecd65-1a80-4dc0-b0d1-de84d6381854",
+      "result_id": "2a40e173-95f2-40d4-af25-143c1c5b55b6"
+    },
+    {
+      "claim_id": "807a8e5c-98c0-496b-8c09-6026e394efd1",
+      "result_id": "2a40e173-95f2-40d4-af25-143c1c5b55b6"
+    },
+    {
+      "claim_id": "0724c375-7018-4276-84eb-93841147eb54",
+      "result_id": "2a40e173-95f2-40d4-af25-143c1c5b55b6"
+    },
+    {
+      "claim_id": "2c9eca9b-162e-4fc7-9f94-89da9cfb8a55",
+      "result_id": "70cac43e-fdc9-401a-a665-a99f2578c541"
+    },
+    {
+      "claim_id": "aab1142c-89c8-4b7e-9c06-8ef62d97c430",
+      "result_id": "70cac43e-fdc9-401a-a665-a99f2578c541"
+    },
+    {
+      "claim_id": "d6798a27-e996-4794-a57f-996218b67243",
+      "result_id": "70cac43e-fdc9-401a-a665-a99f2578c541"
+    },
+    {
+      "claim_id": "90f0e83b-1dfd-4bd9-9ddb-51b8e9ebc798",
+      "result_id": "70cac43e-fdc9-401a-a665-a99f2578c541"
+    },
+    {
+      "claim_id": "e06de12a-fa27-4f50-be98-623a2dcc6411",
+      "result_id": "70cac43e-fdc9-401a-a665-a99f2578c541"
+    },
+    {
+      "claim_id": "e287865f-b80c-405a-bc46-6bc96bd5ce09",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "ff754619-a3e3-4e0a-b019-7d39dcf56a8d",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "f7b80934-47c4-44cd-bbd6-3ea782d351b5",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "ffe64015-8b86-411a-b317-0f3afd5458f6",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "81132524-040a-4365-90b6-bc0830fe7414",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "3f10ab57-6355-4b56-a717-e1ad3219336e",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "75104f83-6f14-4ca9-be69-4aebd4e6db92",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "7200d888-c1db-4ab3-9df0-d9e7f695f820",
+      "result_id": "f8905dc9-e66f-44b3-b9ef-0e19edada205"
+    },
+    {
+      "claim_id": "c66eb371-8e7a-4942-a231-589d63979658",
+      "result_id": "c6258e2d-b0e1-46e5-8be1-bab5c1be5570"
+    },
+    {
+      "claim_id": "6eced646-c427-43c7-b91a-76373eb7d437",
+      "result_id": "c6258e2d-b0e1-46e5-8be1-bab5c1be5570"
+    },
+    {
+      "claim_id": "b7777869-ef4b-4f22-b863-fe315f4f235f",
+      "result_id": "c6258e2d-b0e1-46e5-8be1-bab5c1be5570"
+    },
+    {
+      "claim_id": "6456b8e5-5b9c-4296-997f-1e1309a1ed55",
+      "result_id": "c6258e2d-b0e1-46e5-8be1-bab5c1be5570"
+    },
+    {
+      "claim_id": "23cf3dc4-e4b1-461b-bce8-f93807ab3042",
+      "result_id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9"
+    },
+    {
+      "claim_id": "774df9d8-7cea-4d69-a30b-7e14366441f7",
+      "result_id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9"
+    },
+    {
+      "claim_id": "cd396f71-2836-416a-b287-f1ffde0a8bf4",
+      "result_id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9"
+    },
+    {
+      "claim_id": "cc1abba5-a7dd-4202-9f94-82ccd2a2178f",
+      "result_id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9"
+    },
+    {
+      "claim_id": "72b5c32e-4050-4eca-b62a-9d99573a8feb",
+      "result_id": "2dad445a-a5a6-49f1-800c-620e7e64ffb9"
+    },
+    {
+      "claim_id": "d3d0cbbe-28ad-4063-bc40-70aec79759d3",
+      "result_id": "f824511f-e2ec-4fbb-bf65-18d7196113eb"
+    },
+    {
+      "claim_id": "a0320ab0-f77a-4efb-b6ed-410031b20601",
+      "result_id": "f824511f-e2ec-4fbb-bf65-18d7196113eb"
+    },
+    {
+      "claim_id": "da0a880f-7590-45ae-9e34-e251febecf44",
+      "result_id": "f824511f-e2ec-4fbb-bf65-18d7196113eb"
+    },
+    {
+      "claim_id": "0118881b-262d-4212-b4f1-1c5ddad75f6a",
+      "result_id": "f627405f-d06b-4c02-895e-1dc705ab47a5"
+    },
+    {
+      "claim_id": "576e2581-34f1-464c-ba6a-e181eb723da2",
+      "result_id": "f627405f-d06b-4c02-895e-1dc705ab47a5"
+    },
+    {
+      "claim_id": "26f07ad7-8e10-4ad3-bac2-6bc633530b6d",
+      "result_id": "f627405f-d06b-4c02-895e-1dc705ab47a5"
+    },
+    {
+      "claim_id": "c969e1e6-c7ea-4ff1-a59e-e4aa8013a5cc",
+      "result_id": "f627405f-d06b-4c02-895e-1dc705ab47a5"
+    },
+    {
+      "claim_id": "32b3d2fa-5334-4e84-83cf-187338f578d2",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "97915a59-2247-4068-b771-f7e3e4b3eac5",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "d2963636-564c-4f4d-8c5a-0433179f8429",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "954f013d-4461-4c7b-ae97-55992efbb4ea",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "89180cf3-f2fd-44cf-9b43-5d4ee47e8ad6",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "89b33c9a-dd0e-45bc-80af-163c4b928077",
+      "result_id": "a456e9fd-eef7-4c16-b4ab-5d595a2bf1b7"
+    },
+    {
+      "claim_id": "01c87669-4cbb-456c-b1de-2723a267c42a",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "a6385811-f9a7-476a-b365-38dcdbdc1894",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "1c2627f8-9e12-4d9a-a963-0f7ea6e984ad",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "24b6ab0e-a410-4484-a405-1fcbf8624dd4",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "5684d755-a73f-434a-8253-2e8550099886",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "4047fac7-fc8f-4f28-badf-7b3229593e96",
+      "result_id": "51952e3a-c039-4c29-a83f-72dda2f4be89"
+    },
+    {
+      "claim_id": "3c306e64-3ad7-43bb-9cf4-58dcd35a4573",
+      "result_id": "0d11a0e8-ccd3-47bc-a5e6-7f0a26bcb017"
+    },
+    {
+      "claim_id": "a693b3e8-cd57-4c43-b63c-b105722f6056",
+      "result_id": "0d11a0e8-ccd3-47bc-a5e6-7f0a26bcb017"
+    },
+    {
+      "claim_id": "ee74bacb-7cf8-45c7-bee6-e2cd15924bb3",
+      "result_id": "0d11a0e8-ccd3-47bc-a5e6-7f0a26bcb017"
+    },
+    {
+      "claim_id": "7b869d2c-4d64-4a58-92ce-5b1a6b54ce28",
+      "result_id": "0d11a0e8-ccd3-47bc-a5e6-7f0a26bcb017"
+    },
+    {
+      "claim_id": "c285138f-6143-431a-aaf5-07a427ba5c08",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "39890c55-d276-48d8-a158-5ac7ba6a0473",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "cc642710-e213-4544-9f5e-d477ad9db8a4",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "e6ca915e-3820-4a4e-8ef7-97a5d2476675",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "ff4db2a1-b123-44b3-8cba-f4c4990e945b",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "48a8b44a-e19e-4ce9-98e8-6b9ab07af05d",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "b76eeec5-ee14-496a-91ec-17155859e2cd",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "9366aa5a-0634-4a0d-8c5f-d40e59a1f676",
+      "result_id": "95f7ecc3-f384-4049-8d6f-b4078b828873"
+    },
+    {
+      "claim_id": "1d1b7b37-5213-47c3-aba3-c93040d9e641",
+      "result_id": "c6d25cc4-8f6c-40b9-bd0d-581912bf42b4"
+    },
+    {
+      "claim_id": "dd2bfa07-0b6f-4b1a-ba56-b58e94882f59",
+      "result_id": "c6d25cc4-8f6c-40b9-bd0d-581912bf42b4"
+    },
+    {
+      "claim_id": "3a3f66ab-6fb0-4e58-a7b6-337ae681abbc",
+      "result_id": "c6d25cc4-8f6c-40b9-bd0d-581912bf42b4"
+    },
+    {
+      "claim_id": "1ad7be58-4b1a-43f5-a19c-630018cc3ca0",
+      "result_id": "48dd8197-ba1c-43e8-9acd-2f7d577cfea7"
+    },
+    {
+      "claim_id": "70cf2619-531f-4505-92bc-c226d2320864",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "14d040d1-0c15-403c-b909-d6ee7ce990ad",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "1bfb79ab-d89f-468b-9009-33dd9bdbf075",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "24f51753-48f2-4929-a3b2-f1b409f2a629",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "99b080ff-9f1c-4a56-a396-764c4c97f81c",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "fb6769f5-47ed-412e-8983-d53cf32f4513",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "98cee0e1-5bd1-42e8-b31c-7f7b3ae4cd69",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "ccdef724-b675-4b41-bd25-7a24d993c56e",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "bc4b567a-5f77-450e-bcb9-c1b705deeb5f",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "175e54b4-34d5-42b6-8e88-2f836fc1452d",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "86041c2f-c907-48e2-b78b-c94076bcc983",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "c42f9bbe-a8d2-4572-9d84-8c3255486d0f",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "42495475-139d-4401-a0c4-8dbab4c81dfa",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "d6bd8d2c-3636-4dfc-9d24-19240f4e49d1",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "a7458ed8-1ede-4e55-9689-24eccd5cf459",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "3bc2d46a-0344-46f8-877a-baf9f3d9a42d",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "e477dfe1-7ded-4075-9575-f7521d45bda1",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "4d4b26e7-5fbf-4d5e-a3a0-603360bcc068",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "c9a885f5-b897-45db-a4fb-5473e484393a",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "7c441e35-9443-4c9e-8e1a-8283c2c5aade",
+      "result_id": "29f4239b-a50b-4693-8f3e-17198f7ba6fb"
+    },
+    {
+      "claim_id": "638508d9-72f1-4b71-b5fd-5a22b6997bf9",
+      "result_id": "537c49b7-fea5-40b7-b2ce-ab99c2e4b263"
+    },
+    {
+      "claim_id": "90c8eaf1-98c1-4056-a829-5bdd487f2c12",
+      "result_id": "537c49b7-fea5-40b7-b2ce-ab99c2e4b263"
+    },
+    {
+      "claim_id": "3f54ea97-8c73-4435-a186-9e5afcdff474",
+      "result_id": "537c49b7-fea5-40b7-b2ce-ab99c2e4b263"
+    }
+  ],
+  "comparisons": []
+}

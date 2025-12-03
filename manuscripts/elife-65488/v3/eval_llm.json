@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C43",
+      "C44"
+    ],
+    "result": "A gene-breaking transposon (GBT) screen generated approximately 1200 zebrafish transgenic lines, including GBT0235 which tags the lrpprc locus. This represents the first revertible zebrafish mutant with a single disruptive insertion in lrpprc to model LSFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C36, and C43 are well-supported by citations to prior published work (Ichino et al., 2020). Claim C44 regarding the novelty of this specific lrpprc model is supported by the experimental characterization presented throughout the manuscript. The molecular characterization in C48-C50 confirms the insertion site and predicted protein truncation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Molecular analysis revealed that GBT0235 contains a single RP2.1 integration in intron 22 of lrpprc on chromosome 13, creating an in-frame fusion that truncates the protein from 1461 to 817 amino acids. Comparison between zebrafish and human Lrpprc revealed complex PPR motifs with varying homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by molecular analysis data presented in Figure 1 and described in the text. The integration site, fusion protein structure, and predicted truncation are clearly documented. The comparative analysis of PPR motifs between species is shown in Figure 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C107",
+      "C108"
+    ],
+    "result": "Using RoseTTAFold AI-based structure prediction, 34 PPR motifs were identified in human LRPPRC and 31 in zebrafish Lrpprc. Many motifs were shorter than the canonical 35 amino acids, but maintained the signature helix-turn-helix conformation. Zebrafish Lrpprc shares 51% homology with human LRPPRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C107-C108 are supported by structural modeling data shown in Figure 2 and supplements. The use of RoseTTAFold is clearly described, and the identification of PPR motifs is documented with structural evidence. The homology percentage is based on sequence comparison analysis. However, the novelty claim in C128 about this being the first such analysis for PPR proteins requires verification against the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C124",
+      "C125",
+      "C126",
+      "C132"
+    ],
+    "result": "FIMO motif search analysis identified several mitochondrial-encoded genes as targets of Lrpprc, including mt-co1, mt-co2 (complex IV), and genes from complexes I and V. The C-terminus half deleted in the GBT mutant contains multiple PPR motifs for RNA binding. Downregulated mtDNA genes in mutants overlapped with FIMO predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C124-C126 are supported by computational analysis using FIMO (Supplementary files 1B-C) and structural data (Figure 2C, supplement 2). Claim C132 is supported by comparison of RNA-seq data with computational predictions. The consensus between zebrafish and human targets (C126) strengthens the conservation argument. However, the validation is primarily computational and correlative rather than direct experimental binding studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C86"
+    ],
+    "result": "lrpprcGBT0235/GBT0235 mutants exhibit ubiquitous RFP expression at 6 dpf with strong expression in liver, gut, and muscles. Endogenous lrpprc transcript levels were negligible in homozygous mutants compared to wild-type, indicating nearly complete knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, and C86 are supported by fluorescence imaging (Figure 3A, 7A) and qRT-PCR data (Figure 3B). The expression pattern is clearly documented, and the transcript knockdown is quantified with statistical significance (p=0.0015). This establishes the mutant as a functional null allele.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110"
+    ],
+    "result": "Spatiotemporal analysis shows Lrpprc-mRFP co-localizes with mitochondrial marker (MLS:EGFP) in caudal fin and myocytes. The truncated fusion protein retains the mitochondrial targeting sequence, maintaining predicted subcellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C109-C110 are supported by confocal microscopy data (Figure 3C-D, supplements). The co-localization with an established mitochondrial marker validates the mitochondrial localization of the fusion protein. The inference that the truncated protein retains the targeting sequence (C110) is reasonable given the N-terminal location of mitochondrial targeting sequences and the intron 22 insertion site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C91",
+      "C93"
+    ],
+    "result": "lrpprcGBT0235/GBT0235 mutants show similar survival to wild-type through 6 dpf, followed by marked mortality leading to 100% lethality by 12 dpf. Heterozygous mutants show survival similar to wild-type. Liver-specific rescued mutants display improved survival beyond 11-12 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by survival assay data (Figure 4A). The genotype-specific lethality is clearly demonstrated. Claims C91 and C93 regarding liver-specific rescue are supported by survival data (Figure 7E, source data). The rescue demonstrates the critical role of liver dysfunction in mortality. Sample sizes and replication are mentioned (N=5 pairs) but individual n values per genotype are not clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C134",
+      "C135"
+    ],
+    "result": "Mitochondrial-encoded gene transcript levels showed significant decreases in lrpprcGBT0235/GBT0235 mutants compared to wild-type, while mtDNA copy number was not significantly decreased. This indicates LRPPRC is a critical post-transcriptional regulator of mitochondrial transcripts, consistent with prior studies showing a role in mitochondrial mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C134-C135 are supported by qRT-PCR data (Figure 4B) showing significant decreases in mt-nd4, mt-cyb, mt-co1, mt-atp6, and mt-atp8 (p<0.05 for all). Claim C71 is supported by mtDNA copy number analysis (Figure 4 supplement 1). The consistency with prior work (C72, C134) is supported by citation to Gohil et al., 2010. The inference that LRPPRC is a post-transcriptional regulator (C135) is well-supported by the combination of decreased transcripts without decreased mtDNA copy number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "GC/MS analysis revealed increased lactate levels in lrpprcGBT0235/GBT0235 mutants compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by GC/MS data (Figure 4C) with statistical significance (p=0.0392). This recapitulates a key clinical biomarker of LSFC. However, the sample size appears small (N appears to be 3-4 per group based on the figure) and normalization method (per larvae) could be better described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Four dpf lrpprcGBT0235/GBT0235 larvae showed decreased integrated density and mean gray value in birefringence assays compared to wild-type, indicating muscle development deficiency. Liver-rescued homozygous mutants showed similar muscle defects, demonstrating tissue-specificity of the rescue and that improved survival/lipid homeostasis is at least partially independent of muscle dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by birefringence assay data (Figure 5, supplement 1) with statistical significance (p<0.0001 for mean gray value, p=0.0001 for integrated density). The lack of muscle rescue in liver-specific rescued animals (C77, C150) is clearly demonstrated (Figure 5 supplement 1, p=0.7623 and p=0.3622 for relevant comparisons). The inferences about tissue-specificity (C151) and independence of survival from muscle dysfunction (C152) are well-supported by the rescue data. Sample sizes are adequate (N=13-28 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Acridine orange staining showed no significant difference in necrotic signal between lrpprcGBT0235/GBT0235 mutants and wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by acridine orange staining data (Figure 5 supplement 2) with statistical analysis (p=0.1797). The blinded analysis strengthens the result. This suggests that neural necrosis is not a prominent feature in this model at the timepoint examined, which differs from some patient presentations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "RNA sequencing (150 bp paired-end, ~70-183 million reads) identified 88 upregulated and 176 downregulated genes in lrpprcGBT0235/GBT0235 mutants. Of these, 12 upregulated and 16 downregulated genes overlapped with human Mitocarta 3.0. Gene set enrichment analysis predicted depletion of oxidative phosphorylation and glycerolipid metabolism pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by RNA-seq data (Figure 6, Supplementary file 2). The methodology is adequately described, including read depth, alignment percentage (~81%), and statistical cutoffs (log2FC \u22651 or \u2264-1, p-adj<0.05). The overlap with Mitocarta (C82-C83) and pathway analysis (C84) are documented. However, the number of biological replicates is not clearly stated in the text, though the heatmap (Figure 6B) suggests N=3 per genotype. The relatively small overlap with Mitocarta (28 of 264 DEGs) suggests the transcriptional changes extend beyond mitochondrial genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C92"
+    ],
+    "result": "lrpprcGBT0235/GBT0235 mutants display a darkened liver phenotype under brightfield microscopy. Oil Red O staining revealed increased lipid accumulation in mutant livers compared to wild-type, which was decreased in liver-rescued conditions. The darkened liver phenotype may be caused by changes in stored lipid density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C92 are supported by brightfield microscopy (Figure 7B) and Oil Red O staining (Figure 7C-D) with statistical significance (p=0.0083 for mutant vs WT, p<0.0001 for rescue). The speculation about lipid density causing the darkened phenotype (C89) is reasonable but not directly tested. Sample sizes are adequate (N=7-13 per group). The rescue of lipid accumulation demonstrates the liver-specific nature of this phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C94",
+      "C184",
+      "C185",
+      "C188"
+    ],
+    "result": "Electron microscopy revealed altered mitochondrial morphology in hepatocytes of lrpprc homozygous mutants. Liver-specific rescue mostly reverted mitochondrial morphology to some extent, though rescue was not completely reversible. Reversion of the mutagenicity cassette in hepatocytes is not sufficient to fully correct cristae alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C94, and C184 are supported by electron microscopy data (Figure 7F). The altered morphology in mutants and partial improvement in rescued animals are visually evident. However, the assessment is qualitative rather than quantitative. Claims C185 and C188 about incomplete rescue are supported by the EM images and discussion, though quantitative morphometric analysis would strengthen these conclusions. The inference about cristae dynamics (C188) is reasonable given the citations to Cogliati et al., 2016 and Kondadi et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "HPLC analysis of fluorescent fatty acid metabolism showed that lrpprcGBT0235/GBT0235 mutants ingested less total lipids but incorporated twice as much dietary fluorescent FA into non-polar lipids compared to wild-type (ratio=2.040, 95% CI=1.122-3.709, p=0.019). Three of four non-polar lipid peaks were significantly elevated. These peaks are likely triglycerides and diglycerides. Fatty acid composition did not differ between groups after normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 and C101 are supported by HPLC data (Figure 8A-C) with appropriate statistical analysis using generalized estimating equations. The use of non-metabolizable TopFluor Cholesterol as a normalizer (C96) is a strength of the experimental design. The statistical significance for total NPL (C98) and individual peaks (C99) is clearly documented. However, claim C100 about peak identities being triglycerides and diglycerides is speculative, as acknowledged in the text. The number of biological replicates (N=4 experiments with 8-13 larvae pooled per group) is adequate but could be larger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Crossing lrpprc mutants to Tg(fabp10:Cre) zebrafish created a liver-rescued line. Liver-specific rescued mutants ingested similar amounts as wild-type (measured by TopFluor Cholesterol) and showed total non-polar lipid levels lowered to wild-type levels (ratio=0.542, 95% CI=0.357-0.823, p=0.004). The Cre genetic background did not contribute to lipid level changes (ratio=0.944, 95% CI=0.640-1.391, p=0.769).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by the genetic cross description and HPLC data (Figure 8A, 8B, 8C, 8D). Claim C103 about fabp10 liver-specificity is supported by citations to Bernard Thisse, 2004 and Wu et al., 2017. The rescue of lipid metabolism (C104-C105) is statistically significant and demonstrates the critical role of liver function. The control for Cre background effects (C106) is an important experimental control. The loss of liver-specific mRFP (Figure 7 supplement 1) validates the Cre-mediated excision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C8",
+      "C45",
+      "C46",
+      "C47",
+      "C180"
+    ],
+    "result": "The zebrafish model recapitulates key components of LSFC, including early lethality, defective muscle development, decreased mitochondrial transcript levels, altered dietary lipid metabolism, and mitochondrial dysmorphology. The model exhibits dysfunctional mitochondrial signatures at both transcriptional and phenotypic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7-C8, and C45-C47 are well-supported by the comprehensive experimental data throughout the manuscript, including survival assays (Figure 4A), muscle birefringence (Figure 5), transcript analysis (Figure 4B), lipid metabolism studies (Figures 7C-D, 8), and electron microscopy (Figure 7F). Claim C180 appropriately summarizes the overall findings. The model successfully recapitulates multiple key features of LSFC, though some aspects (e.g., neural phenotypes) are less prominent than in patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C181",
+      "C182",
+      "C183",
+      "C191"
+    ],
+    "result": "Liver-specific genetic rescue using fabp10:Cre reversed LSFC-associated phenotypes including lethality, lipid accumulation, and mitochondrial morphology defects. This functionally demonstrates a critical role for the liver in LSFC pathophysiology and highlights potential therapeutic applications of liver-targeted gene therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C181-C183 are strongly supported by the rescue experiments showing improved survival (Figure 7E), normalized lipid levels (Figures 7D, 8), and improved mitochondrial morphology (Figure 7F). The inference about the liver's critical role (C10, C182) is well-justified by the rescue data. Claim C191 about therapeutic implications is a reasonable extrapolation from the rescue results, though it remains speculative for human application. The tissue-specificity of the rescue (demonstrated by persistent muscle defects) strengthens the conclusion about liver-specific pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Sequence analysis revealed homology domains (SEC1, RPN7, DUF2517, EAD11) in zebrafish Lrpprc. The C-terminus of human LRPPRC aligns well with zebrafish Lrpprc and is conserved across model organisms. The C-terminus region containing these domains is lost in the GBT mutant, which may contribute to the LSFC-associated phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C119-C120 are supported by sequence analysis and structural alignment (Figure 2 supplement 3). The identification of homology domains is based on database searches. The conservation of the C-terminus (C120) is shown by multiple sequence alignment. The inference that loss of these domains contributes to the phenotype (C121) is reasonable given their known functions (supported by citations C114-C117), though direct functional testing of individual domains was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "RNA-seq revealed downregulation of genes involved in fatty acid metabolism and cytochrome P450 in lrpprc mutants. Pathways for fatty acid degradation were depleted. Specific genes including lipca (hepatic lipase), cyp7a1, elovl2, fads2, and fabp10a were downregulated. These genes are involved in the Farnesoid X receptor pathway and SREBP targets, consistent with impaired lipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C170-C178 are supported by RNA-seq data and gene set enrichment analysis. The downregulation of specific genes is documented with fold changes (e.g., lipca log2FC ~2, fabp10a log2FC ~2.27). The pathway analysis linking these genes to lipid metabolism (C173, C176) is supported by appropriate citations. The consistency between transcriptomic and lipid metabolism phenotypes (C178) strengthens the overall conclusions. However, the functional significance of individual gene changes was not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "lrpprc homozygous mutants exhibited upregulation of chaperone proteins hspa5 and hspd1, possibly indicating mitochondrial unfolded protein response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is supported by RNA-seq data showing upregulation of these chaperones (mpv17l2 upregulated by log2FC 1.74 is mentioned in C179). The speculation about mitochondrial unfolded protein response is reasonable given the known roles of these proteins, but direct evidence of UPR activation (e.g., specific UPR markers, pathway analysis) would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "An overlap was noted between differentially expressed genes and the MitoCarta catalogue, suggesting an altered mitochondrial transcriptome signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is supported by the comparative analysis with MitoCarta 3.0 (Figure 6B, C82-C83). However, the overlap is relatively modest (28 of 264 DEGs, ~11%), suggesting that many transcriptional changes are in non-mitochondrial genes. This could reflect secondary effects or broader cellular responses to mitochondrial dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C186",
+      "C189"
+    ],
+    "result": "Incomplete rescue in liver-specific Cre mutants may be due to factors such as incomplete penetrance or incomplete rescue of the mutant allele. Restoration of mitochondrial morphology may be attributed to restoration of mitochondrial transcript levels and liver functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186 and C189 are speculative explanations for incomplete rescue. While these are reasonable hypotheses, they are not directly tested. The incomplete rescue could also be due to: (1) incomplete Cre-mediated excision efficiency, (2) timing of rescue relative to developmental damage, (3) non-cell-autonomous effects from other tissues, or (4) irreversible structural changes. Additional experiments (e.g., quantifying excision efficiency, earlier rescue timing) would be needed to distinguish among these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Impaired muscle function may not contribute to lethality in rescued animals due to compensatory mitochondrial biogenesis or proliferation in muscle. There might be adaptive OXPHOS compensation in tissues with high metabolic demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 are speculative explanations for the dissociation between muscle phenotype and survival in rescued animals. While C153 is supported by a citation to Cuillerier et al., 2021 showing this occurs in LSFC patients, direct evidence of compensatory mitochondrial biogenesis in the zebrafish muscle was not provided. Measurements of mitochondrial number, OXPHOS capacity, or compensatory gene expression in muscle would be needed to support these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The findings highlight potential therapeutic applications of gene therapy for LSFC patients by rescuing lrpprc expression in the liver. These results may enhance understanding of lrpprc function in hepatic lipid homeostasis and illuminate new therapeutic options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C190-C192 are forward-looking statements about therapeutic potential. While the liver-specific rescue in zebrafish is compelling, translation to human therapy faces significant challenges: (1) delivery of gene therapy specifically to human liver, (2) achieving sufficient expression levels, (3) long-term safety and efficacy, (4) differences between zebrafish and human liver biology, and (5) the fact that patients have systemic disease affecting multiple organs. These claims represent reasonable future directions but should not be interpreted as evidence that such therapies are currently feasible or effective in humans.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study recruited 34 patients with alopecia undergoing DPC treatment, with 29 providing blood samples for TCR sequencing at multiple time points (pre-sensitization and 2, 6, and 24 weeks post-sensitization). Five healthy volunteers served as controls. A total of 24,431,855 distinct TCR sequences were obtained using a quantitative method with unique molecular identifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 and C78-C88 provide comprehensive methodological details about patient recruitment, sample collection, and sequencing approach. The experimental design is clearly described with appropriate controls, sample sizes are reported, and the technical methodology is well-documented with references to established protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Exposure to DPC did not cause global alterations in the TCR repertoire structure. Major T cell subpopulations, TCR repertoire diversity (Shannon index), clonal expansion (Gini coefficient), and the number of abundant TCRs (>1/1000 frequency) remained unchanged after sensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are well-supported by flow cytometry data (Figure 1B-C) and statistical analyses using appropriate non-parametric tests with multiple testing correction. All p-values are reported and exceed the 0.05 threshold, supporting the conclusion of no significant global changes. The analyses are appropriately controlled and the conclusion follows logically from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A subset of TCRs absent before sensitization appeared at high abundance (\u22658 copies) after DPC exposure. The range of expanded TCRs at PT1 was greater in patients than healthy volunteers, and the percentage of PT1 expanded TCRs was significantly larger than pre-sensitization expanded TCRs. The number of expanded TCRs remained constant over time despite repeated antigen exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by visual data (Figure 2A-C) and statistical analyses including Mann-Whitney and Wilcoxon signed-rank tests with reported p-values. The threshold of \u22658 copies is justified by Poisson modeling (C56). The correlation between alpha and beta chains (rho=0.85, p<0.0001) provides internal validation. However, the choice of threshold (8) could benefit from more extensive sensitivity analysis beyond the mentioned thresholds of 4, 16, and 32.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Individual TCR dynamics showed transient expansions with most PT1 expanded TCRs decreasing or returning to baseline at subsequent time points. A distinct set of TCRs expanded at PT2 (6 weeks), which were not expanded at PT1, and these also returned to baseline by PT3 (24 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are well-supported by longitudinal data shown in Figure 3A-B for 10 patients with complete time series. The visual evidence clearly demonstrates the transient nature of TCR expansions. The observation of distinct early and late waves is a novel finding, though the biological mechanism remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C62"
+    ],
+    "result": "DPC induced skin sensitization in almost all individuals with variable magnitude. The maximum response typically occurred at the first patch test and declined thereafter. The number of PT1 expanded TCRs positively correlated with patch test scores at PT1 and PT2, but not with pre-sensitization expanded TCRs or at PT3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 and C62 are supported by clinical data (Figure 4A-D) and correlation analyses with reported Spearman's rho values and p-values. The correlation between TCR expansion and clinical response is a key finding. However, the loss of correlation at PT3 is attributed speculatively to decreased range of patch test scores without rigorous statistical testing. The subsampling analysis mentioned shows threshold-dependent significance, suggesting some sensitivity to analytical choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Expanded TCRs showed preferential V and J gene usage across multiple individuals and formed significantly more clusters of similar sequences compared to control sets. The largest cluster showed high sequence similarity consistent with shared TCR specificities, suggesting enrichment for TCRs responding to limited epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44-C47 are supported by V/J gene usage analysis (Figure 5) using bootstrapping for statistical significance, and clustering analysis (Figure 6) with appropriate controls. The similarity threshold (0.75) is justified. However, the bootstrapping approach for V/J genes acknowledges that under-represented genes are less robust due to small sample sizes. The interpretation that these features indicate antigen-specific responses relies on established knowledge (C7, C58) but lacks direct functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C95",
+      "C96"
+    ],
+    "result": "A dynamic Bayesian network (DBN) successfully classified DPC-expanded TCRs from control sequences with 94% accuracy for full test sets and 77.7% for sets of 10 sequences. Individual sequence classification achieved 54.3% mean accuracy overall, improving to 64.7% and 60.6% for the 5% and 10% most confident assignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C48-C51, C95-C96 describe the DBN methodology and performance. The approach is technically sound with 10-fold cross-validation repeated 10 times. The model incorporates multiple sequence features and provides confidence estimates. However, the modest individual sequence accuracy (54.3% overall, only slightly better than random for low-confidence predictions) suggests limited discriminatory power at the single-sequence level. The high accuracy for full sets may reflect aggregate statistical power rather than strong individual sequence signatures. The biological interpretation of the learned features (Figure 7B) is interesting but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C76",
+      "C77"
+    ],
+    "result": "The study demonstrates that repeated DPC exposure induces highly dynamic, transient, polyclonal T cell expansions. The breadth of response varies between individuals and predicts sensitization magnitude. The observations suggest DPC stimulates expansion of T cells recognizing a small number of dominant antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C9, C52-C54, C59, C76-C77 represent the main conclusions synthesizing multiple lines of evidence. These are well-supported by the data presented in earlier results. However, the interpretation that expanded TCRs recognize 'a small number of dominant antigens' (C9, C59) is inferential and lacks direct evidence of antigen specificity. The study cannot definitively prove these TCRs are DPC-specific without functional validation (e.g., tetramer staining, which the authors acknowledge is unavailable for haptens).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Multiple lines of evidence support that observed TCR changes represent antigen-specific responses rather than sampling artifacts or responses to unknown antigens. Changes from zero to \u22658 copies have Poisson probabilities <0.05, expanded TCRs exceed those in healthy controls, and show established signatures of antigen-driven responses (V/J skewing, CDR3 clustering).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide important arguments supporting the antigen-specificity interpretation. The Poisson modeling (C56) provides statistical justification for the expansion threshold. Comparison with healthy volunteers (C57) strengthens the causal link to DPC exposure. Reference to established signatures (C58) is well-cited. However, these remain indirect evidence; the study lacks direct functional proof of DPC-specificity (acknowledged by authors in C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TCR clustering and V/J enrichment patterns observed across unrelated individuals suggest hapten responses may be less MHC-dependent than conventional peptide responses. Low responders were not boosted by repeated exposure, and responses were maximal at first patch test, suggesting regulatory mechanisms. A second wave of distinct TCRs appeared at PT2 without correlation to PT1 patch test scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C63-C66, C69-C72 present important observations but with significant uncertainty. The speculation about reduced MHC-dependence (C60) is intriguing but highly speculative without HLA typing data. The reasons for inter-individual variation (C63) are acknowledged as unknown. The regulatory mechanism hypothesis (C65, C69) is reasonable but speculative. The second wave of TCRs (C70-C72) is an interesting observation but lacks mechanistic explanation and could represent various phenomena including regulatory responses, different epitope recognition, or technical artifacts. These findings warrant follow-up studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Similar rapid TCR expansion and contraction have been observed in yellow fever vaccine studies, where contraction may reflect rapid antigen disappearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 appropriately cite prior work on yellow fever vaccine responses. The comparison is relevant and well-supported by citations. The speculation about antigen disappearance (C68) in the vaccine context is reasonable and helps contextualize the DPC findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "This is the first in vivo analysis of TCR repertoire changes in response to a chemical allergen. The study acknowledges that all patients had alopecia with autoimmune etiology, which may affect immune responses, but argues DPC is unlikely related to the autoimmune target since other unrelated sensitizers produce similar therapeutic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 appropriately position the study's novelty and acknowledge an important limitation. The argument that DPC is unlikely related to the alopecia autoimmune target (C75) is reasonable but not definitive. The potential confounding effect of underlying autoimmune disease on TCR dynamics remains a limitation that cannot be fully resolved without comparison to DPC-treated individuals without alopecia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C55",
+      "C61"
+    ],
+    "result": "DPC is an organic chemical hapten and potent skin sensitizer that induces allergic contact dermatitis and is used therapeutically for warts, melanoma, and alopecia. It is non-mutagenic and not commonly found in the environment. Previous studies showed the response involves Th1/Th17 infiltration and does not continue to increase with repeated exposure, suggesting regulatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C18, C55, C61 provide background knowledge about DPC that is well-supported by appropriate citations. These establish the rationale for using DPC as a model system and provide context for interpreting the findings. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C58"
+    ],
+    "result": "Preferential V and J gene usage and TCR clustering are well-established characteristic features of antigen-driven T cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C58 state established knowledge that is well-supported by multiple citations to authoritative prior work. This provides the conceptual framework for interpreting the observed V/J skewing and clustering as evidence of antigen-specific responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "T cell subpopulations were defined using standard markers (CD45RA and CD27 for naive, central memory, effector memory, and EMRA). TCR similarity was measured using normalized string kernel based on amino acid triplet sharing, with a similarity threshold of 0.75 for clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe standard methodological approaches. The T cell subset definitions are conventional and appropriately cited. The string kernel approach for TCR similarity is well-established and the threshold selection is justified. These methodological choices are appropriate and well-documented.",
+    "result_type": "MINOR"
+  }
+]

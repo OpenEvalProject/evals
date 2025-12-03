@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Melanoma is a deadly and growing cancer with improved survival due to targeted and immunotherapies, though treatment resistance remains a challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the clinical context for melanoma through citations to prior literature. These background claims about melanoma epidemiology and treatment outcomes are well-supported by the cited references and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "DNA methylation changes occur early in melanoma, are associated with disease progression and poor outcomes, and have potential as early biomarkers for metastatic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 establish the rationale for studying DNA methylation in melanoma through citations to prior work. The claims about CIMP phenotype, methylation associations with progression, and early occurrence are supported by appropriate citations. Claim C12 is an inference but follows logically from C11.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Three pairs of melanoma cell lines were established representing primary vs. metastatic disease from the same patients (WM115/WM266-4, WM983A/WM983B) or experimentally selected for increased metastatic potential in different host species (M4Be/M4BeS2/TW12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C94-C99 describe the cell line models used in the study. The cell line origins and characteristics are clearly stated and supported by appropriate citations. The experimental design of using paired cell lines with common genetic backgrounds but different aggressiveness is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C107"
+    ],
+    "result": "Genome-wide methylation analysis identified 2783, 1645, and 1641 hypermethylated genes in the three aggressive cell line pairs respectively, with 229 genes (comprising 5590 CpG sites) commonly hypermethylated across all three pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C107 report the primary methylation array results. The numbers are clearly stated and the methodology (450K array with 20% methylation difference threshold) is described. The identification of 229 common genes represents a key filtering step in the analysis pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Among the 229 common hypermethylated genes, 1287 (23%) CpGs were hypermethylated in WM266-4 cells, with 61% in promoter regions, 35% in gene bodies, and 4% in 3'UTR regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide genomic location analysis of the hypermethylated CpGs. The percentages and distributions are clearly reported and the focus on promoter regions is methodologically justified for studying gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C36",
+      "C37"
+    ],
+    "result": "Functional pathway analysis identified 116 genes associated with known functions (p<0.05), with 19 genes common to both the genomic clustering approach and pathway analysis, all associated with top functional networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C36, and C37 describe the non-oriented IPA analysis strategy. The integration of two complementary approaches (genomic clustering and pathway analysis) to identify 19 high-confidence candidate genes is methodologically sound and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C108"
+    ],
+    "result": "Bootstrap statistical analysis confirmed non-random chromosomal distribution of hypermethylated genes, identifying nine methylation clusters on chromosomes 5, 6, 10, 15, 16, and 17 containing 74 genes, including multigenic families (PCDHB, MYH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 and C108 describe the oriented genomic clustering strategy. The bootstrap analysis provides statistical validation for non-random clustering. The identification of specific clusters and multigenic families is supported by the figures. The 34-gene selection based on stringent criteria (\u22652 CpGs, >40% methylation difference) is clearly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C109"
+    ],
+    "result": "Eight candidate genes (MYH1, SOCS3, RAC3, HOXB2, PCDHB15, PCDHB16, BCL2L10, MIR155HG) were selected for validation based on clustering, methylation levels, and prior literature linking them to cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 and C109 describe the rationale for selecting eight specific genes for validation. Each gene selection is justified by multiple criteria including genomic location, methylation levels, and literature support. The citations to prior work are appropriate and strengthen the biological rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C77"
+    ],
+    "result": "Pyrosequencing validation confirmed seven of eight genes showed >20% methylation differences in cell lines, with four genes (MYH1, PCDHB16, PCDHB15, BCL2L10) showing differential methylation in patient samples and reversibility with 5-azacytidine treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C77 describe the technical validation of candidate genes. The pyrosequencing validation in cell lines and patient samples provides orthogonal confirmation of the array data. The 5-azacytidine reversibility experiment (C53, C77) demonstrates that the methylation is functionally relevant and modifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In patient samples, median DNA methylation of the four genes was inversely correlated with overall survival, with MYH1 hypomethylated and PCDHB16, PCDHB15, BCL2L10 hypermethylated in short survival patients, confirmed in an extended cohort of 49 primary melanomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe the key patient sample findings. The inverse correlation with survival and the differential methylation patterns between short and long survival groups are clearly reported. The validation in an extended cohort (C58) strengthens the findings, though the initial observation (C54) uses cautious language ('appeared to be').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "Five specific CpGs (one each for MYH1, PCDHB15, PCDHB16, and two for BCL2L10) showed significant differential methylation between short survival (median 6 months) and long survival (median 51 months) patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C78 identify the specific CpGs that distinguish patient outcomes. The statistical significance and the large difference in median survival (6 vs 51 months) support the clinical relevance. However, the manuscript does not provide detailed statistical test results or correction for multiple testing for individual CpGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C79",
+      "C82",
+      "C88",
+      "C110"
+    ],
+    "result": "A methylation score based on the five CpGs (threshold \u22652) significantly predicted patient outcome with log-rank p=0.0008 and hazard ratio of 3.4 (p=0.001, concordance index=0.62), representing an early signature of melanoma progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C79, C82, C88, and C110 describe the main clinical finding. The methylation score shows statistically significant prediction of survival with appropriate statistical tests (log-rank, hazard ratio). The concordance index of 0.62 indicates moderate predictive ability. The p-values are significant and the hazard ratio of 3.4 is clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The methylation score improved prognostic utility beyond Breslow index alone, with the interaction between methylation score and Breslow index increasing the hazard ratio from 3.4 to 6.3 (p<0.001, concordance index=0.63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 compare the methylation signature to the clinical standard (Breslow index). The finding that Breslow index alone did not show statistical significance in this cohort (C67) but the methylation score did, and that combining them increased the hazard ratio to 6.3, suggests added clinical value. However, the small sample size (n=49) and the fact that only one T1 sample was included limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C91",
+      "C92",
+      "C114"
+    ],
+    "result": "The study was based on the hypothesis that aggressive DNA methylation traits emerge early, are independent of physiological context, and cluster in genomic regions, allowing identification of robust signatures despite tumor heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C91, C92, and C114 describe the conceptual framework of the study. The hypothesis is clearly stated and the rationale is supported by citations to prior work on epigenetic plasticity (C71). The experimental design using three different host contexts (human, mouse, rat) directly tests this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C113"
+    ],
+    "result": "Prior to this study, it has been difficult to find prognostic signatures in primary melanoma due to tumor heterogeneity, with only limited prior work reporting methylation differences in primary tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C80, C81, and C113 establish the gap in knowledge that the study addresses. The claims are supported by appropriate citations and accurately represent the state of the field. The comparison to prior work (C80, C81) provides context for the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The observed clustering of hypermethylated genes is reminiscent of parental imprinting mechanisms and consistent with long-range epigenetic silencing (LRES) described in other cancers, where hypermethylated regions extend up to 4 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 provide mechanistic context for the clustering observation by drawing parallels to known epigenetic phenomena. The comparisons to imprinting and LRES are supported by appropriate citations and represent reasonable biological interpretations of the clustering pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Patient samples were from diverse geographic regions (France, Italy, Portugal, USA), and DNA methylation signatures have been successfully used as prognostic biomarkers in other cancers including osteosarcoma, colon, lung, and prostate cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide context for the clinical applicability and precedent for methylation-based diagnostics. The geographic diversity (C83) strengthens generalizability, and the citations to successful methylation biomarkers in other cancers (C84, C85) support the feasibility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The DNA methylation analysis also identified miR199-3p as silenced by promoter hypermethylation promoting metastasis, and PCDHB15 as inhibiting invasion and metastasis when overexpressed (ongoing study).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by a published citation (Desjobert et al., 2019), while C87 is described as an ongoing study. The miR199-3p finding is well-supported, but the PCDHB15 functional data is preliminary and not fully presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C111"
+    ],
+    "result": "The signature is based on methylation of five CpGs in four genes (not gene expression), and the integrated approach combining DNA methylome analysis with chromosomal clustering is potentially applicable to other diseases involving DNA methylation alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 clarify an important distinction that the signature measures DNA methylation directly rather than gene expression, which may be more robust. Claims C93 and C111 about broader applicability are speculative but reasonable given the general nature of the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The study was conducted with appropriate ethical approvals from institutional review boards in France (CRB, AC-2013-1955) and Portugal (CES-IPOP-FG13/2016), following Helsinki Declaration guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 document ethical compliance. The specific protocol numbers and institutional approvals are provided, which is appropriate for human subjects research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The Illumina Infinium Human Methylation 450K BeadChip interrogates >485,000 CpG sites covering 99% of RefSeq genes with an average of 17 CpG sites per gene, and the 20% methylation difference threshold can be detected with 99% confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe technical specifications of the methylation array platform. These are established technical facts about the Illumina 450K array and the threshold justification is appropriate for the platform's detection capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Statistical analysis using Chi-square test confirmed that methylation of the four genes was independent from one another (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 reports an important statistical validation that the four genes in the signature provide independent information. The Chi-square test is appropriate for testing independence, and the p<0.01 threshold is reasonable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "TCR repertoires encode valuable information about antigen exposure but enormous TCR diversity and low publicity of individual clonotypes limit their use as clinical biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the foundational motivation for the study. The claims are well-supported by citations to prior work (C6-C9) and logical reasoning (C10). The characterization of TCR diversity as a challenge is consistent with established immunological knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "TCRdist is a biochemically informed distance metric that varies considerably among TCRs with identical edit distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 describe prior work by the authors and are supported by citation (C11) and Figure 2 (C12). The distinction between TCRdist and edit distance is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C26",
+      "C49",
+      "C89",
+      "C90"
+    ],
+    "result": "The study analyzed MIRA-identified SARS-CoV-2 antigen-associated TCRs from 62 COVID-19 patients and bulk repertoires from 694 COVID-19 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C26, C49, C89, C90 describe the datasets used in the study. These are straightforward descriptions of publicly available data with appropriate citations and sample size information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C50"
+    ],
+    "result": "Antigen-associated TCRs show higher proportions of identical or similar sequences compared to unenriched repertoires, though MIRA-enriched sets show more diversity than tetramer-enriched sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C50 are supported by quantitative data from Figure 3 and comparisons across different enrichment methods. The observations are consistent with the experimental approaches used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C55",
+      "C56"
+    ],
+    "result": "TCR biochemical neighborhood density is highly heterogeneous, with TCRs having sparse neighborhoods tending to have longer CDR3 loops and lower generation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C55-C56 are supported by quantitative data from Figures 4-5 and citations to prior modeling work (C21). The relationship between CDR3 length, pgen, and neighborhood density is well-established and the observations are consistent with prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C3"
+    ],
+    "result": "The study generated 4548 public meta-clonotypes from 91,122 TCR \u03b2-clonotypes, with meta-clonotypes being more abundant and prevalent than exact clonotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C27-C28, C3 present the primary quantitative results of meta-clonotype generation. The data are clearly presented with specific numbers and supported by Figure 6. The increased publicity of meta-clonotypes compared to exact matches is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Meta-clonotype radius optimization balances sensitivity and specificity by selecting the largest radius that includes no more than 1 in 1 million background TCRs, using a two-part synthetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe the methodological approach for radius optimization. The rationale is clearly stated and the two-part background design is well-justified. The threshold of 1 in 1 million is acknowledged as arbitrary but practically motivated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C64",
+      "C65"
+    ],
+    "result": "The optimal radius for meta-clonotype definition depends on background size, with 200,000 sequences providing a balance between computational efficiency and bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C64-C65 are supported by sensitivity analysis data in Figure 7. The recommendation for using 200,000 sequences is based on empirical evaluation showing convergence with larger backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Meta-clonotype motif constraints are defined by conserved CDR3 positions and encoded as regular expressions to enable rapid scanning of bulk repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C107-C109 describe the motif constraint methodology. The approach is clearly explained and the use of regular expressions is appropriate for the application. The method is demonstrated in Figure 10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C5"
+    ],
+    "result": "59.7% of meta-clonotypes using RADIUS+MOTIF showed significant HLA association (FDR<0.01), compared to only 3.7% of exact clonotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C5 present the key validation results. The quantitative comparisons are clearly stated and supported by statistical testing. The dramatic difference between meta-clonotypes and exact matches demonstrates the utility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C4"
+    ],
+    "result": "Meta-clonotypes were more frequently detected in bulk repertoires and showed stronger HLA associations than exact clonotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C4 are supported by data in Figures 8-9. The comparison shows orders of magnitude improvement in statistical significance for meta-clonotypes versus exact matches, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Regression models revealed possible negative associations between TCR abundance and age, and positive associations with sample collection >2 days post-diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C36 describe associations found in regression models (Figure 9A). However, these are stated as 'possible' associations without detailed statistical support or biological interpretation. Additional validation would strengthen these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Significant confirmatory evidence of HLA restriction was found for 64% of MIRA sets and 59% of individual meta-clonotypes, with no meta-clonotypes associated with absence of the restricting allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 summarize the validation results. The quantitative findings are clearly stated and the absence of negative associations (C42) provides important specificity evidence. This validates the biological relevance of the meta-clonotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Both tcrdist3 meta-clonotypes and GLIPH2 groups showed stronger HLA associations than exact clonotypes, with meta-clonotypes subsuming multiple GLIPH2 groups and matching broader sets of antigen-specific CDR3s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 compare the meta-clonotype approach to GLIPH2. The comparison is supported by data in Figures 11-12. The observation that meta-clonotypes subsume multiple GLIPH2 groups suggests broader capture of antigen-specific diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Meta-clonotypes enable detection of HLA-restricted TCRs with both high and low probability of generation, whereas exact matching only reliably detects high-pgen TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by Figure 13, which shows meta-clonotypes detect significant HLA associations across the full range of pgen values. This is a key advantage of the approach over exact matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "HLA genotypes were inferred from TCR repertoires using a classifier with sensitivities of 0.85-1.0 and specificities of 0.97-1.0 for common alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe the HLA inference method and its performance. The classifier performance is validated on an independent dataset (n=550). The high sensitivity and specificity support the reliability of HLA assignments used in the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Beta-binomial regression models were used to test HLA associations, with FDR<0.01 threshold for significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C110-C115 describe the statistical modeling approach. The choice of beta-binomial over negative binomial is justified based on data characteristics. The methods are appropriate for the count data and the FDR correction is properly applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C97",
+      "C98",
+      "C99",
+      "C120"
+    ],
+    "result": "tcrdist3 is an open-source Python3 package that enables flexible TCR repertoire analysis with efficient computation and multiple visualization capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C79-C84, C97-C99, C120 describe the tcrdist3 software. The performance benchmarks are specific and the flexibility features are clearly documented. The open-source availability and documentation support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Supporting packages (pwseqdist, tcrsampler) enable efficient distance computation and background sampling with appropriate stratification and bias correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 describe supporting software packages. The performance metrics are specific (C122) and the stratification features are well-justified. The emphasis on bias correction (C128) is important for valid inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "palmotif enables creation of sequence logos from CDR3s of varying lengths using global alignment to a centroid sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 describe the palmotif package. The novel contribution for handling variable-length CDR3s (C131) is clearly stated and the method is demonstrated in Figure 10.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The increased diversity in MIRA-enriched TCR sets may be explained by multiple factors including presentation by full MHC complement, lower affinity receptors, alpha chain specificity, or bystander activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 propose explanations for observed diversity but are explicitly speculative. These are reasonable hypotheses but lack direct experimental validation. Additional experiments would be needed to distinguish among these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HLA diversity is a major hurdle for biomarker development, requiring combination of meta-clonotypes with diverse HLA restrictions and making HLA genotype information critical for interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 draw conclusions about the implications of HLA diversity. These are well-supported by the data showing HLA-restricted meta-clonotypes and are consistent with immunological principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Future approaches may enable HLA inference from bulk repertoires or use poly-antigenic enrichment strategies and donor-unrestricted T cells for biomarker development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 are explicitly speculative about future work. While the HLA classifier developed here (C76) shows promise, the other suggestions (C77-C78) are proposals without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Meta-clonotypes offer a way to build public features suitable for biomarker development, though overlapping definitions and clonal breadth should be considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 discuss the utility and considerations for using meta-clonotypes as biomarker features. The points about overlap (C85) and clonal breadth (C86) are important caveats. The conclusion about suitability for biomarker development (C88) is supported by the validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Computational methods including NetMHCpan4.0 for HLA binding prediction, IMGT alignment for CDR inference, and OLGA for synthetic TCR generation were used with appropriate parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C100-C106 describe computational methods with appropriate citations and parameter specifications. The methods are standard in the field and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "GLIPH2 was applied to 17 HLA-restricted MIRA sets, generating 812 patterns for comparison with meta-clonotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 describe the GLIPH2 comparison analysis. The methods are clearly described with appropriate citations and the results provide a useful benchmark for the meta-clonotype approach.",
+    "result_type": "MINOR"
+  }
+]

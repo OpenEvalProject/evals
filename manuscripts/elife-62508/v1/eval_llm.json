@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Satellite tracking of 55 blue sharks in the North Atlantic revealed that 10 of 22 sharks tagged adjacent to the ETA OMZ moved south, with 6 utilizing waters above the OMZ. Five of six sharks spent significantly more time above the OMZ than random walk models predicted, and some sharks remained in the OMZ area for extended periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide converging evidence from satellite tracking data and statistical comparison with random walk models. The sample sizes are clearly stated (n=55 total, n=22 tagged adjacent to OMZ), movement patterns are quantified, and statistical significance is demonstrated through comparison with null models (C37, C39). The tracking durations and specific shark behaviors are documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C74",
+      "C75"
+    ],
+    "result": "Blue sharks exhibited vertical habitat compression in the ETA OMZ, with mean maximum dive depth (MDD) 40% shallower (754 m vs 1250 m) and an order of magnitude fewer deep dives (>600 m) compared to adjacent normoxic waters. Sharks spent 91% of time at depths <250 m in the OMZ, though time in the upper 250 m increased only 6% compared to outside the OMZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45, C74-C75 present consistent quantitative evidence from PSAT dive data showing reduced dive depths in the OMZ. The 40% reduction in mean MDD (C43, C74), 10-fold reduction in deep dives (C44), and specific depth distributions (C41, C42, C45) are clearly documented with supporting figures (Figure 2, Table 1). The small increase in upper layer time use (C75) provides important context showing habitat compression primarily affected maximum depths rather than overall depth distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Environmental conditions differed markedly between OMZ and adjacent waters. Sharks experienced lower dissolved oxygen (mean 2.48 vs 4.23 ml O2 l\u207b\u00b9) and warmer sea surface temperatures (23-26\u00b0C) in the OMZ, while temperatures at dive depths were similar between regions. Net primary production was 9 times higher at ~100 m depth in the OMZ compared to adjacent waters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 present quantitative environmental data from modeled oceanographic datasets matched to shark positions. The DO differences are clearly quantified with means and standard deviations (C46), temperature patterns are documented (C47-C48), and NPP differences are substantial and clearly stated (C50). However, a limitation acknowledged by the authors (C103-C104) is that modeled DO values may differ from actual concentrations experienced by sharks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70",
+      "C77"
+    ],
+    "result": "A GAMM analysis identified that blue shark maximum dive depth was best explained by dissolved oxygen at depth, sea surface temperature, and net primary production at depth. MDD decreased below DO concentrations of 3.5 ml O2 l\u207b\u00b9 (identified as the lower habitat boundary), decreased above SST of 24\u00b0C, and increased with decreasing NPP at depth. Temperature at depth did not contribute to the best-fit model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55, C70, C77 describe results from a GAMM model with clear model selection criteria (AIC), statistical significance (Table 2, p<0.001 for all terms), and well-defined relationships shown in Figure 6. The identification of 3.5 ml O2 l\u207b\u00b9 as a threshold (C54, C77) is supported by the model output. The exclusion of temperature at depth from the best model (C52, C70) is explicitly stated. The model explains relatively modest variance (R\u00b2=0.081), which is acknowledged but the relationships are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C6"
+    ],
+    "result": "Analysis of vessel monitoring system data from 322 Spanish and Portuguese longline vessels showed significantly higher fishing effort and intensity above OMZ areas compared to adjacent waters in both North and South Atlantic (Mann-Whitney test, p<0.001). Distinct fishing hotspots occurred along the northern, western, and southern boundaries of the OMZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C6 present fishing effort data from VMS tracking with clear sample sizes (n=322 vessels), quantified metrics (mean fishing days per grid cell), and statistical testing (Mann-Whitney, p<0.001). The spatial patterns are documented in Figure 7 and Table 3. The methodology for identifying fishing locations and calculating fishing intensity is described in detail in the Materials and methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C7"
+    ],
+    "result": "Blue shark catch per unit effort (CPUE) by Spanish longline vessels was higher in the OMZ area, with peak catches occurring along strong DO gradients. CPUE peaked where DO at 100 m was 2.96 ml O2 l\u207b\u00b9 across all transects, with individual transect peaks ranging from 1.65 to 3.49 ml O2 l\u207b\u00b9. The highest CPUE occurred along the northern boundary of the OMZ where DO gradients were strongest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68, C7 present catch data from Spanish longline logbooks with clear spatial patterns (Figure 8) and quantitative analysis including quadratic model fits to estimate peak CPUE at specific DO concentrations (Figure 9, Table 4). The relationship between CPUE and DO gradients is consistently demonstrated across multiple transects. Statistical models are provided with equations and fit statistics (Figure 9 legend).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C69",
+      "C99",
+      "C100"
+    ],
+    "result": "The study demonstrates that multiple factors associated with climate-driven deoxygenation\u2014decreasing dissolved oxygen at depth, high sea surface temperatures, and increased surface-layer net primary production\u2014contributed to vertical habitat compression of blue sharks in the ETA OMZ, supporting the habitat compression hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C69, C99-C100 represent the main conclusions synthesizing results from tracking data (habitat compression), environmental analysis (multiple factors), and statistical modeling (GAMM). These conclusions are well-supported by the convergent evidence from multiple analyses presented in the paper. The causal language is appropriately qualified (\"contributed to\" rather than \"caused\") given the observational nature of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C8",
+      "C101",
+      "C102",
+      "C109",
+      "C110",
+      "C116",
+      "C117",
+      "C123",
+      "C126",
+      "C130",
+      "C131"
+    ],
+    "result": "The study proposes that habitat compression increases blue shark vulnerability to surface fisheries, with sharks potentially aggregating along suitable DO gradients (3.0-3.5 ml O2 l\u207b\u00b9) where fishing effort is concentrated. This vulnerability is predicted to increase as OMZs expand due to ongoing ocean deoxygenation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C8, C101-C102, C109-C110, C116-C117, C123, C126, C130-C131 link habitat compression to increased fishing vulnerability through a proposed aggregation mechanism. While the spatial overlap between compressed shark habitat and fishing hotspots is demonstrated (C110 SUPPORTED), and peak catches occur at DO concentrations matching the modeled habitat boundary (C115-C116), the causal mechanism of aggregation (C8, C117, C123) remains speculative. The study shows correlation but cannot definitively establish that habitat compression causes increased catchability. Future predictions (C130-C131) are reasonable extrapolations but inherently uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C86"
+    ],
+    "result": "The lower DO habitat boundary for blue sharks was estimated at ~3.5 ml O2 l\u207b\u00b9 at ~18\u00b0C, consistent with thresholds reported for tunas and other pelagic sharks. Blue sharks occasionally entered waters with DO <1.5 ml O2 l\u207b\u00b9 (pO2 3.58-4.27 kPa) for short periods, but overall vertical extent was limited by low DO with a general boundary around 3.5 ml O2 l\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81, C86 synthesize findings from the GAMM model (C77) with literature comparisons (C78, C81) and calculated oxygen conditions from dive data (C79). The 3.5 ml O2 l\u207b\u00b9 threshold is consistently identified across multiple lines of evidence (model output, catch data, literature). The acknowledgment that sharks can briefly tolerate lower DO (C80, C85) adds important nuance. Comparisons with other species (C78, C81-C84) strengthen confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "While the combination of water temperature and DO is known to constrain vertical range in pelagic fishes, blue sharks in the ETA OMZ were not solely limited by temperature at depth because encountered temperatures (5-26\u00b0C) were within their normal range. However, high SST (>24\u00b0C) above the OMZ, which lowers oxygen solubility and increases metabolic costs, may have reduced tolerance for deeper dives into low DO waters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 present a nuanced interpretation of temperature effects supported by data showing similar temperatures at MDD depths between OMZ and normoxic areas (C48) and temperatures within the species' known tolerance range (C90). The proposed mechanism linking high SST to reduced dive tolerance (C93) is reasonable given cited physiological principles (C88) and the GAMM result showing decreased MDD above 24\u00b0C SST (C55), though the mechanism remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "High net primary production in the uppermost 150 m layer above the core OMZ, combined with low DO at depth, may enhance shark-prey interactions in surface layers. This is supported by evidence that 63% of tracked sharks (10 of 16) exhibited selection for habitats above the core OMZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C97 propose a mechanism linking high NPP to habitat selection through enhanced foraging opportunities. While NPP was significantly higher in the OMZ (C49-C50, SUPPORTED) and contributed to the GAMM model (C51, SUPPORTED), and some sharks showed habitat selection (C97, based on C37-C39), the causal link to prey interactions (C96) is speculative. The study did not directly measure prey abundance or shark feeding behavior, making this interpretation uncertain despite being plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study acknowledges a key limitation: modeled DO data from oceanographic datasets were matched to shark positions, and actual DO concentrations may differ from interpolated values. The authors recommend future studies use DO sensor tags, which have been developed and successfully deployed on other shark species, to directly measure oxygen conditions encountered by sharks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 transparently acknowledge study limitations (C103-C104) and propose solutions (C105-C108). The limitation is clearly stated and appropriate. The recommendation for DO sensor tags is supported by citations to existing technology (C106-C107) and successful deployments (C107-C108). This represents good scientific practice in acknowledging methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Longline fishing patterns above the ETA OMZ form among the most important fishing hotspots in the eastern Atlantic. Higher fishing intensity indicates vessels spend less time searching and deploy longlines nearly continuously in localized areas, likely because these areas are known from experience to support higher catches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 interpret the fishing effort patterns documented in C56-C59. The characterization of OMZ areas as major fishing hotspots (C111) is supported by the VMS data showing concentrated effort (Figure 7). The interpretation of fishing intensity metrics (C112-C113) follows logically from the definition provided in methods. The inference about fisher knowledge (C114) is reasonable though somewhat speculative, but is supported by citation to prior work (Queiroz et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Blue shark CPUE peaked where modeled DO concentrations at 100 m were 3.0-3.5 ml O2 l\u207b\u00b9, similar to the lower habitat boundary (~3.5 ml O2 l\u207b\u00b9) determined from the GAMM model. This similarity suggests sharks begin being limited in vertical extent by the 3.5 ml l\u207b\u00b9 DO surface (oxycline).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 identify convergent evidence between catch data and the habitat model. The peak CPUE range (C115) is clearly documented in the results (C65-C67, Figure 9), and the similarity to the GAMM-derived threshold (C77) is striking. This convergence between independent lines of evidence (behavioral tracking/modeling vs. catch data) strengthens confidence in the 3.5 ml O2 l\u207b\u00b9 threshold as biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Previous studies on fish and invertebrates near low oxygen environments have reported higher catches or steep increases in catches relative to lower DO values, including aggregation of organisms along hypoxic boundaries and increased vulnerability of tunas to fisheries in OMZs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 summarize prior literature with appropriate citations. These claims provide context for interpreting the blue shark results by showing similar patterns in other taxa. The citations appear appropriate and the characterizations of prior findings are consistent with the cited sources. This represents proper contextualization of results within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Blue sharks above the ETA OMZ undergo habitat compression by avoiding lower DO concentrations and associating with high SST and NPP in the uppermost 100 m layer, and show preference for suitable DO gradients along OMZ margins, potentially due to physiological limits, prey habitat compression, or hypoxia-related visual impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 synthesize the main findings with appropriate citations to supporting mechanisms. The habitat compression is well-documented (C40-C45, SUPPORTED), the environmental associations are demonstrated by the GAMM (C51-C55, SUPPORTED), and preference for OMZ margins is shown by tracking data (C37-C39, SUPPORTED). The proposed mechanisms (physiological limits, prey compression, visual impairment) are appropriately qualified as potential explanations with supporting citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Blue sharks comprise ~90% of total reported pelagic shark catch in the Atlantic and their fins are most commonly traded internationally, yet catch reporting remains poor and stock status is uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 provide important context about the conservation status and fisheries importance of blue sharks, all supported by appropriate citations (Oliver et al., 2015; Fields et al., 2018; Campana, 2016; ICCAT reports). These claims establish the conservation relevance of the study findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C9"
+    ],
+    "result": "The study recommends that management measures specifically designed to mitigate ocean deoxygenation effects on shark catches may be required as oceans warm, including consideration of spatial management such as high-seas large marine protected areas around OMZs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133, C9 present management recommendations based on the study findings. While the recommendations follow logically from the demonstrated increased fishing vulnerability in OMZ areas, they represent policy suggestions rather than tested scientific results. The effectiveness of proposed management measures (spatial closures, catch controls) is not evaluated in this study. These are reasonable recommendations but their efficacy remains uncertain without implementation and evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The introduction establishes the context of ocean deoxygenation, OMZ characteristics and expansion, effects on marine ecosystems, and the status of pelagic shark fisheries. The ETA OMZ is identified as an appropriate study system due to documented expansion and intense DO declines over the last 50 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C34 provide background context from the introduction, all supported by appropriate citations to the scientific literature. These claims establish the scientific rationale for the study by documenting: (1) ocean deoxygenation is occurring (C10, C13), (2) OMZs have specific characteristics and are expanding (C11-C12, C13), (3) DO affects marine ecosystems (C15-C19), (4) habitat compression is predicted but not quantified (C20-C23), (5) pelagic sharks are vulnerable (C24-C30), and (6) the ETA OMZ is an appropriate study system (C31-C34). These are well-established facts from prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Blue sharks are the ocean's widest-ranging shark species, capable of tolerating broad environmental conditions (4-30\u00b0C), and occasionally enter low DO waters (<1.5 ml O2 l\u207b\u00b9). Similar patterns of dive depth limitation in OMZ areas have been documented for white sharks, shortfin mako sharks, and salmon sharks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C76, C82-C85 provide comparative context from the literature about blue shark ecology and other pelagic shark species' responses to OMZs. All claims are supported by appropriate citations. The comparison with other species (C76, C82-C84) strengthens the interpretation that the observed patterns represent a general response of pelagic sharks to hypoxia rather than being unique to blue sharks.",
+    "result_type": "MINOR"
+  }
+]

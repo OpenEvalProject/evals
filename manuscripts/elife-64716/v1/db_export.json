@@ -1,0 +1,1486 @@
+{
+  "submission": {
+    "id": "2ca70d7e-24cc-4777-ace8-62229bed3a5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:10:41.339548Z",
+    "updated_at": "2025-12-03T08:10:41.339548Z"
+  },
+  "content": [
+    {
+      "id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "submission_id": "2ca70d7e-24cc-4777-ace8-62229bed3a5b",
+      "content_type": "manuscript",
+      "content_text": "# Utility of polygenic embryo screening for disease depends on the selection strategy\n\n## Authors\n\n- Todd Lencz<sup>1</sup> ([ORCID: 0000-0001-8586-338X](https://orcid.org/0000-0001-8586-338X)) \u2020\n- Daniel Backenroth<sup>4</sup>\n- Einat Granot-Hershkovitz<sup>4</sup>\n- Adam Green<sup>4</sup>\n- Kyle Gettler<sup>5</sup>\n- Judy H Cho<sup>5</sup> ([ORCID: 0000-0002-7959-0466](https://orcid.org/0000-0002-7959-0466))\n- Omer Weissbrod<sup>8</sup>\n- Or Zuk<sup>9</sup>\n- Shai Carmi<sup>4</sup> ([ORCID: 0000-0002-0188-2610](https://orcid.org/0000-0002-0188-2610)) \u2020\n\n### Affiliations\n\n1. Departments of Psychiatry and Molecular Medicine, Zucker School of Medicine at Hofstra/Northwell Hempstead United States\n2. Department of Psychiatry, Division of Research, The Zucker Hillside Hospital Division of Northwell Health Glen Oaks United States\n3. Institute for Behavioral Science, The Feinstein Institutes for Medical Research Manhasset United States\n4. Braun School of Public Health and Community Medicine, The Hebrew University of Jerusalem Jerusalem Israel\n5. Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai New York United States\n6. The Charles Bronfman Institute for Personalized Medicine, Icahn School of Medicine at Mount Sinai New York United States\n7. Department of Medicine, Icahn School of Medicine at Mount Sinai New York United States\n8. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States\n9. Department of Statistics and Data Science, The Hebrew University of Jerusalem Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nPolygenic risk scores (PRSs) have been offered since 2019 to screen in vitro fertilization embryos for genetic liability to adult diseases, despite a lack of comprehensive modeling of expected outcomes. Here we predict, based on the liability threshold model, the expected reduction in complex disease risk following polygenic embryo screening for a single disease. A strong determinant of the potential utility of such screening is the selection strategy, a factor that has not been previously studied. When only embryos with a very high PRS are excluded, the achieved risk reduction is minimal. In contrast, selecting the embryo with the lowest PRS can lead to substantial relative risk reductions, given a sufficient number of viable embryos. We systematically examine the impact of several factors on the utility of screening, including: variance explained by the PRS, number of embryos, disease prevalence, parental PRSs, and parental disease status. We consider both relative and absolute risk reductions, as well as population-averaged and per-couple risk reductions, and also examine the risk of pleiotropic effects. Finally, we confirm our theoretical predictions by simulating \u2018virtual\u2019 couples and offspring based on real genomes from schizophrenia and Crohn\u2019s disease case-control studies. We discuss the assumptions and limitations of our model, as well as the potential emerging ethical concerns.\n\n## Introduction\n\nPolygenic risk scores (PRSs) have become increasingly well-powered, relying on findings from large-scale genome-wide association studies for numerous diseases (Visscher et al., 2017; Wray et al., 2013). Consequently, a growing body of research has examined the potential clinical utility of applying PRSs in the treatment of adult patients in order to identify those at heightened risk for common late-onset diseases such as coronary artery disease or breast cancer (Britt et al., 2020; Khera et al., 2018; Torkamani et al., 2018). Another potential application of PRSs is preimplantation screening of in vitro fertilization (IVF) embryos, or polygenic embryo screening (PES). Polygenic embryo screening has been offered since 2019 (Treff et al., 2019a), but has been the focus of comparatively little empirical research, despite debate over ethical and social concerns surrounding the practice (Anomaly, 2020; L\u00e1zaro-Mu\u00f1oz et al., 2021; Munday and Savulescu, 2021).\n\nWe have recently demonstrated that screening embryos on the basis of polygenic scores for quantitative traits (such as height or intelligence) has limited utility in most realistic scenarios (Karavani et al., 2019), and that the accuracy of the score is a more significant determinant of PES utility for quantitative traits compared with the number of available embryos. On the other hand, a series of four studies (Lello et al., 2020; Treff et al., 2019a; Treff et al., 2020; Treff et al., 2019b) conducted by a private company providing PES services has suggested that PES for dichotomous disease risk may have significant clinical utility. However, these studies examined a relatively limited range of scenarios, primarily focusing on distinctions between sibling pairs discordant for illness, and did not provide a comprehensive examination of various potential PES settings. Filling this gap is an urgent need, as understanding the statistical properties of PES forms a critical foundation to any ethical consideration (L\u00e1zaro-Mu\u00f1oz et al., 2021).\n\nHere, we use statistical modeling to examine the potential utility of PES for reducing disease risk, with an aim toward informing future ethical deliberations. We focus on screening for a single complex disease, and study a range of realistic scenarios, quantifying the role of parameters such as the variance explained by the score, the number of available embryos, and the disease prevalence. We show that a major determinant of the outcome of PES is the selection strategy, namely the way in which an embryo is selected for implantation given the distribution of PRSs across embryos. We also study the risk reduction conditional on parental PRSs or disease status, and consider the risk of developing diseases not screened. Finally, we validate some of our predictions based on real genomes of cases and controls for two common complex diseases.\n\n## Results\n\n### Model and selection strategies\n\nFor each analysis presented below, we assume that a couple has generated, by IVF, $n$ viable embryos such that each embryo, if implanted, would have led to a live birth. We focus on a single complex disease, and assume that the corresponding PRS has been computed for each embryo. Given the PRSs of the $n$ embryos, a single embryo is selected for implantation based on a selection strategy.\n\nThe first strategy we consider is aimed only at avoiding high-risk embryos, consistent with studies of the potential clinical utility of PRSs in adults (Chatterjee et al., 2016; Dai et al., 2019; Gibson, 2019; Khera et al., 2018; Mars et al., 2020; Mavaddat et al., 2019; Torkamani et al., 2018). For example, the first case report presented on PES described the identification and exclusion of embryos with extremely high (top 2-percentiles) PRS (Treff et al., 2019a). We term this strategy \u2018high-risk exclusion\u2019 (HRE: Figure 1A, upper panel). Under HRE, after high-risk embryos are set aside, an embryo is randomly selected for implantation among the remaining available embryos. (In the case that all embryos are high-risk, we assume a random embryo is selected among them.)\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig1-v1.jpg)\n\n**Figure 1.:** (A) An illustration of the embryo selection strategies considered in this report. In the figure, each embryo is shown as a filled circle, and embryos are sorted based on their predicted risk, that\u00a0is, their polygenic risk scores. Excluded embryos are shown in pink, and embryos that can be implanted in green. The risk reduction (RR) is indicated as the difference in risk between a randomly selected embryo (if no polygenic scoring was performed) and the embryo selected based on one of two strategies. In high-risk exclusion (HRE), the embryo selected for implantation is random, as long as its PRS is under a high-risk cutoff (usually the top few PRS percentiles). If all embryos are high-risk, a random embryo is selected. In lowest-risk prioritization (LRP), the embryo with the lowest PRS is selected for implantation. As we describe below, the LRP strategy yields much larger disease risk reductions. (B) An illustration of the liability threshold model (LTM). Under the LTM, each disease has an underlying (unobserved) liability, and an individual is affected if the total liability is above a threshold. The liability is composed of a genetic component and an environmental component, both assumed to be normally distributed in the population. For a given genetic risk (represented here by the polygenic risk score), the liability is the sum of that risk, plus a normally distributed residual component (environmental + genetic factors not captured by the PRS). For an individual with high genetic risk (bottom curve), even a modestly elevated (and thus, commonly-occurring) liability-increasing environment will lead to disease. For an individual with low genetic risk (top curve), only an extreme environment will push the liability beyond the disease threshold. Thus, disease risk reduction can be achieved with embryo screening by lowering the genetic risk of the implanted embryo. (Note that for the purpose of illustration, panel (B) displays three discrete levels of genetic risk, although in reality, the PRS is continuously distributed).\n\nAn alternative selection strategy is to use the embryo with the lowest PRS. Ranking and prioritizing embryos for implantation based on morphology is common in current IVF practice (Bormann et al., 2020; Montag et al., 2013; Rhenman et al., 2015). If ranking is instead based on a disease PRS, the embryo with the lowest PRS could be selected, without any recourse to high-risk PRS thresholds. Such an approach was suggested by another recent publication from the same company (based on a multi-disease index), but outcomes were only examined in the context of sibling pairs (Treff et al., 2020). We term the implantation of the embryo with the lowest PRS as \u2018lowest-risk-prioritization\u2019 (LRP; Figure 1A, lower panel).\n\nIn the following, we describe the theoretical risk reduction that can be achieved under these selection strategies. Our statistical approach is based on the liability threshold model (LTM; Falconer, 1967). The LTM represents disease risk as a continuous liability, comprising genetic and environmental risk factors, under the assumption that individuals with liability exceeding a threshold are affected. The liability threshold model has been shown to be consistent with data from family-based transmission studies (Wray and Goddard, 2010) and GWAS data (Visscher and Wray, 2015). Consequently, we define the disease risk of a given embryo probabilistically, as the chance that, given its PRS, its liability will cross the threshold at any point after birth (Figure 1B).\n\nWe use the following notation. We define the predictive power of a PRS as the proportion of variance in the liability of the disease explained by the score (Dudbridge, 2013), and denote it as $r_{ps}^{2}$. We quantify the outcome of PES in two ways: the relative risk reduction (RRR) is defined as $RRR=\\frac{K-P(disease)}{K}=1-\\frac{P(disease)}{K}$, where $K$ is the disease prevalence and $P(disease)$ is the probability of the selected embryo to be affected; the absolute risk reduction (ARR) is defined as $K-P(disease)$. For example, if a disease has prevalence of 5% and the selected embryo has a probability of 3% to be affected, the RRR is 40%, and the ARR is 2% points. We computed the RRR and ARR analytically under each selection strategy, and for various values for the disease prevalence, the strength of the PRS, embryo exclusion thresholds, and other parameters. The mathematical basis of the calculations is summarized in Materials and methods, and detailed in the Appendix.\n\n### The risk reduction under the high-risk exclusion strategy\n\nIn Figure 2 (upper row), we show the relative risk reduction achievable under the HRE strategy with $n=5$ embryos. Under the 2-percentile threshold (straight black lines), the reduction in risk is limited: the RRR is <10% in all scenarios where $r_{ps}^{2}\\leq0.1$. Currently, $r_{ps}^{2}\u22480.1$ (on the liability scale) is the upper limit of the predictive power of PRSs for most complex diseases (Lambert et al., 2021), with the exception of a few disorders with large-effect common variants (such as Alzheimer\u2019s disease or type 1 diabetes) (Sharp et al., 2019; Zhang et al., 2020). In the future, more accurate PRSs are expected. However, the common-variant SNP heritability is at most \u224830% even for the most heritable diseases such as schizophrenia and celiac disease (Holland et al., 2020; Zhang et al., 2018), and it was recently suggested that $r_{ps}^{2}=0.3$ is the maximal realistic value for the foreseeable future (Wray et al., 2021). At this value, relative risk reduction would be 20% for $K=0.01$, 9% for $K=0.05$, and 3% for $K=0.2$. These gains achieved with HRE are small because the overwhelming majority of affected individuals do not have extreme scores (Murray et al., 2021; Wald and Old, 2019).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig2-v1.jpg)\n\n**Figure 2.:** The relative risk reduction (RRR) is defined as $K-Pdisease/K$, where $K$ is the disease prevalence, and $Pdisease$ is the probability of the implanted embryo to become affected. The RRR is shown for the high-risk exclusion (HRE) strategy in the upper row (panels (A\u2013C)), and for the lowest-risk prioritization (LRP) in the lower row (panels (D\u2013F)). See Figure 1 for the definitions of the strategies. Results are shown for values of $K=0.01,\u00a00.05$\u00a0and\u00a0$0.2$\u00a0(panels (A\u2013C), respectively), and within each panel, for variance explained by the PRS (on the liability scale) $r_{ps}^{2}=0.05,0.1$, and $0.3$ (legends). Symbols denote the results of Monte-Carlo simulations (Materials and methods), where PRSs of embryos were drawn based on a multivariate normal distribution, assuming PRSs are standardized to have zero mean and variance $r_{ps}^{2}$, and accounting for the genetic similarity between siblings (Equation 4 in the\u00a0Appendix). In each simulated set of $n$ sibling embryos ($n=5$ for all simulations under HRE), one embryo was selected according to the selection strategy. The liability of the selected embryo was computed by adding a residual component (drawn from a normal distribution with zero mean and variance $1\u2212r_{ps}^{2}$) to its polygenic score. The embryo was considered affected if its liability exceeded $z_{K}$, the (upper) $K$-quantile of the standard normal distribution. We repeated the simulations over 106 sets of embryos and computed the disease risk. In each panel, curves correspond to theory: Equation (31) in the\u00a0Appendix for the HRE strategy, and Equation (20) in the\u00a0Appendix for the LRP strategy. Black straight lines correspond to the RRR achieved when excluding embryos at the top 2% of the PRS (for HRE, upper panels) or for selecting the lowest risk embryo out of $n=5$ (for LRP, lower panels).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The relative risk reduction for the high-risk exclusion strategy, with $n=10$ available embryos.All details are exactly as in panels (A\u2013C) in Figure 2 of the main text, except that we simulated $n=10$ embryos.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** All details are similar to those of Figure 2 of the main text, except the following. We used $n=5$ embryos, $r_{ps}^{2}=0.1$, and $K=0.01,\u00a00.05$\u00a0and\u00a0$0.2$\u00a0(panels (A\u2013C), respectively). For both sub-strategies, we first determined whether there were any non-high-risk embryos. If such embryos existed, one of them was randomly selected. If all embryos were high risk, the pink symbols and lines correspond to selecting an embryo at random (symbols: simulations; line: theory; see the\u00a0Appendix). The cyan symbols correspond to selecting the embryo with the lowest PRS (simulations only). The blue dashed horizontal line corresponds to the theoretical relative risk reduction for the lowest-risk prioritization (LRP) strategy. When all embryos are designated as high risk (percentile PRS to exclude is 100%), the random selection sub-strategy reduces to a completely random selection and thus yields no risk reduction, whereas the lowest PRS sub-strategy becomes equivalent to the regular LRP strategy.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** In panel (A), we define a hypothetical individual as 'affected' (or having an intellectual disability) if that individual has IQ<70. Assuming IQ is normally distributed with a mean of 100 and a SD of 15, this implies that the prevalence is $K=2.3%$. We plot the predicted relative risk reduction (computed as in Figure 2) vs the number of embryos $n$ under the LRP strategy (note that here, the embryo with the highest score is selected). We used $r_{ps}^{2}=0.052$ (Savage et al., 2018). In panel (B), we show the predicted RRR under the LRP strategy for a 'high LDL cholesterol' binary trait. Here, we fixed $n=5$ and varied the prevalence of our hypothetical 'high LDL' trait. Given a prevalence $K$, an individual is defined as having 'high LDL' if its LDL value in the top $K$-percentiles. We used $r_{ps}^{2}=0.12$ (Weissbrod et al., 2021).\n\nRisk reduction increases as the threshold for exclusion is expanded to include the top quartile of scores, and then reaches a maximum at \u224825-50% under a range of prevalence and $r_{ps}^{2}$ values. For all these simulations, we set the number of available (testable) embryos to $n=5$ (Dahdouh, 2021; Sunkara et al., 2011), although we acknowledge that the number of viable embryos may be much lower for many couples seeking IVF services for infertility (Smith et al., 2015). Simulations show that these estimates do not change much with increasing the number of embryos (see Figure 2\u2014figure supplement 1). This holds especially at more extreme threshold values, since most batches of $n$ embryos will not contain any embryos with a PRS within, for\u00a0example, the top 2-percentiles.\n\nIt should be noted that the relative risk reduction does not increase monotonically under HRE. Under our definition, whenever all embryos are high risk, an embryo is selected at random. Thus, at the extreme case when all embryos (i.e. top 100%) are designated as high risk, an embryo is selected at random at all times, and the relative risk reduction reduces to zero. We chose this definition of the HRE strategy because it does not involve ranking of the embryos. However, we can also consider an alternative strategy: if all embryos are high risk, the embryo with the lowest PRS is selected. Here, the RRR is expected to increase when increasing the threshold and designating more embryos as high risk, which we confirm in Figure 2\u2014figure supplement 2. When the threshold is at 100% (all embryos are high risk), this alternative strategy (which we do not further consider) reduces to the lowest-risk prioritization strategy, which we study next.\n\n### The risk reduction under the lowest-risk prioritization strategy\n\nThe HRE strategy treats all non-high-risk embryos equally. In practice, we expect most, or even all, embryos to be designated as non-high-risk, given the recent focus on the top PRS percentiles in the literature (e.g. Khera et al., 2018). However, as we have seen, this strategy leads to very little risk reduction. In Figure 2 (lower panels), we show the expected RRR for the lowest-risk prioritization strategy, under which we prioritize for implantation the embryo with the lowest PRS, regardless of any PRS cutoff. Indeed, under the LRP strategy, risk reductions are substantially greater than in HRE. For example, with $n=5$ available embryos, RRR>20% across the entire range of prevalence and $r_{ps}^{2}$ parameters considered, and can reach \u224850% for $K\\leq5%$ and $r_{ps}^{2}=0.1$, and even \u224880% for $K=1%$ and $r_{ps}^{2}=0.3$. While RRR continues to increase as the number of available embryos increases, the gains are quickly diminishing after $n=5$. On the other hand, Figure 2 also demonstrates that RRR drops steeply if the number of embryos falls below $n=5$, although the lower bound for RRR when just two embryos are available (\u224820% for many scenarios) is still comparable to the upper bound of the HRE strategy for a greater number of embryos.\n\n### Effects of PES on dichotomous vs quantitative traits\n\nOur results demonstrate that, contrary to our previous study reporting only small effects of PES for quantitative traits (Karavani et al., 2019), PES can generate substantial relative risk reductions for diseases under the LRP strategy. To understand the relation between continuous and binary traits, consider an example involving IQ. Our estimate for the mean gain in IQ that could be achieved by selecting the embryo with the highest IQ polygenic score is approximately \u22482.5 IQ points (Karavani et al., 2019). Now assume that individuals with IQ<70 (2 SDs below the mean) are considered 'affected' according to a dichotomized trait of 'cognitive impairment'. Among individuals with IQ<70, the proportion of individuals with IQ in the range [67.5,70] is 33.5% (assuming a normal distribution). A gain of 2.5 points would shift such offspring beyond the threshold for 'cognitive impairment', resulting in a corresponding 33.5% reduction in risk of being 'affected'. (Note that the above explanation is intended to provide an intuition and ignores any variability in the gain.) Figure 2\u2014figure supplement 3 utilizes statistical modeling (with $r_{ps}^{2}$ derived from recent GWAS for intelligence [Savage et al., 2018]) to demonstrate that substantial risk reductions can be achieved for a dichotomized trait, including when selecting out of just three embryos (panel (A)). Panel (B) extends these results to data for LDL cholesterol (with $r_{ps}^{2}$ derived from Weissbrod et al., 2021); given $n=5$ embryos and the currently available PRS for LDL-C levels, risk reductions for 'high cholesterol' range from 40\u00a0to\u00a060%, depending on the LDL level used to define the categorical trait. Thus, while implanting the embryo with the most favorable PRS is expected to result in very modest gains in an underlying quantitative trait, it is at the same time effective in avoiding embryos at the unfavorable tail of the trait.\n\n### Effects of parental PRS and disease status\n\nWe next examined the effects of parental PRSs on the achievable risk reduction (Materials and methods, see also the Appendix), given that families with high genetic risk for a given disease may be more likely to seek PES. Figure 3 demonstrates that, as expected, the HRE strategy shows greater relative risk reduction as parental PRS increases, in particular when excluding only very high-scoring embryos. This result follows directly from the fact that, on average, offspring will tend to have PRS scores near the mid-parental PRS value. In contrast, the relative RR (although not the absolute RR; see next section) for the LRP strategy somewhat declines as parental PRSs increase. Nevertheless, the RRR for the LRP strategy remains greater than that for the HRE strategy across all parameters (as expected by the definitions of these strategies).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig3-v1.jpg)\n\n**Figure 3.:** Panels (A)-(D) are for the high-risk exclusion (HRE) strategy, while panels (E)-(H) are for the lowest-risk prioritization (LRP) strategy. All details are as in Figure 2, except the following. First, we fixed the prevalence to $K=5%$. Second, in the simulations, we drew the PRS of each embryo as $s_{i}=x_{i}+c$ ($i=1,\u2026,n$), where $x_{i}$ is an embryo-specific component (independent across embryos) and $c$ is the shared component, also representing the mean parental PRS (Materials and methods). This is so far as in Figure 2; however, here we assumed that $c$ is given, equal to the average PRSs of the two parents. In each panel, we consider a different pair of PRSs for the parents. For example, in panels (A) and (E), both parents ('par. 1' and 'par. 2') have PRS equal to the 50% percentile of the PRS distribution; in panels (B) and (F), one parent has PRS equal to the 98% percentile of the PRS distribution, while the other has PRS equal to the 25% percentile; and so on. Third, in the simulations, we computed the risk reduction (according to either strategy) relative to a baseline, obtained from the same sets of simulations, when we always selected the first embryo. The baseline risk is indicated in each legend as 'bl'. Note that the baseline risk depends on the variance explained by the PRS, because the parental PRSs are determined as percentiles of the population distribution of the score, which has variance $r_{ps}^{2}$. Finally, we computed the theoretical disease risk for the HRE strategy using Equation (29) from the\u00a0Appendix, the disease risk for the LRP strategy using Equation (23), and the relative risk reduction (shown in curves) for both strategies using Equation (36).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Panels (A\u2013C) are for the high-risk exclusion (HRE) strategy, while panels (D\u2013F) are for the lowest-risk prioritization (LRP) strategy. The details are as in Figure 2, except the following. First, we fixed the prevalence to $K=5%$ and the heritability to $h^{2}=0.4$ (note that the heritability was not needed in previous figures). Second, in the simulations, we first drew the parental genetic components: $s_{m}$ and $w_{m}$ for the mother, and $s_{f}$ and $w_{f}$ for the father, where $s_{m}\u223cs_{f}\u223cN(0,r_{ps}^{2})$ are the polygenic scores and $w_{m}\u223cw_{f}\u223cN(0,h^{2}\u2212r_{ps}^{2})$ represent non-score genetic factors (Appendix\u00a0Section\u00a06). We drew the environmental component for each parent as $\u03f5_{m}\u223c\u03f5_{f}\u223cN0,1-h^{2}$ and computed the liability of each parent as $s+w+\u03f5$. If the liability of a parent exceeded $z_{K}$ (the upper $K$-quantile of the standard normal distribution), we designated that parent as affected. We then stratified the risk reduction results based on the number of affected parents: 0 (panels (A) and (D)), 1 (panels (B) and (E)), and 2 (panels (C) and (F)). Note that as expected, the number of families in which both parents are affected is small, and thus, the results in panels (C) and (F) are noisy. For each set of parents, we drew the PRS of each embryo as $s_{i}=s_{m}+s_{f}/2+x_{i}$ ($i=1,\u2026,n$), where $x_{i}\u223cN(0,r_{ps}^{2}/2)$ is an embryo-specific component of the score (independent across embryos). We then selected one embryo from each family based on either selection strategy. We computed the liability of the selected embryo as $s_{i}+w_{m}+w_{f}/2+v_{i}+\u03f5_{i}$, where $v_{i}\u223cN(0,(h^{2}\u2212r_{ps}^{2})/2)$ is the embryo-specific component of the non-score genetic factors, and $\u03f5_{i}\u223cN0,1-h^{2}$ is the environmental component of the embryo (Appendix\u00a0Section\u00a06). The embryo was designated as affected or unaffected as described for the parents. We computed the risk reduction (according to either strategy) relative to a baseline, obtained from the same sets of simulations when we always selected the first embryo. The baseline risk is indicated on top of each panel. We computed the theoretical relative risk reduction for the two strategies as summarized in Appendix Section 6.9.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** All details are the same as in Figure 3, except that the absolute (rather than the relative) risk reduction is shown. The absolute risk reduction is defined as the difference between the baseline disease risk (given the parental PRSs; legends\u00a0('bl')) and the risk following either strategy of embryo selection. It is plotted as percentage points.\n\nIt is also conceivable that families may be more likely to seek PES when one or both prospective parents is affected by a given disease. In Figure 3\u2014figure supplement 1, we plot the RRR under the HRE and LRP strategies given that the parents are both healthy, both affected, or one of each (where we fixed the prevalence $K=5%$ and the heritability to $h^{2}=40%$). The figure illustrates that parental disease status has relatively little impact on the expected RRR (especially in comparison to the changes under HRE when conditioning on the actual parental PRSs). This is because, as long as $r_{ps}^{2}\u226a1,$ parental disease does not necessarily provide much information about parental PRS, and thus does not strongly constrain the number of risk alleles available to each embryo.\n\n### Absolute vs relative risk\n\nThe above results were presented in terms of relative risk reductions. However, Figure 3\u2014figure supplement 1 also shows the baseline risk of an embryo of parents with a given disease status. For example, when one of the parents is affected, selecting the lowest risk embryo out of $n=5$ (for a realistic $r_{ps}^{2}=0.1$) reduces the risk from 10.0% to only 5.8%, thus nearly restoring the risk of the future child to the population prevalence (5%). More generally, we plot the absolute risk reduction (ARR) under the HRE and LRP strategies in Figure 3\u2014figure supplement 2 for a few values of the parental PRSs. Notably, while RRRs under the LRP strategy somewhat decrease with increasing parental PRSs, the ARRs substantially increase, in accordance with an expectation that PES in higher\u00a0risk parents should eliminate more disease cases.\n\nThe clinical interpretation of these absolute risk changes will vary based on the population prevalence of the disorder (or the baseline risk of specific parents), and can offer a very different perspective on the magnitude of the effects (Gordis, 2014; L\u00e1zaro-Mu\u00f1oz et al., 2021; Murray et al., 2021). In particular, for a rare disease, large relative risk reductions may result in very small changes in absolute risk. As an example, schizophrenia is a highly heritable (Sullivan et al., 2003) serious mental illness with prevalence of at most 1% (Per\u00e4l\u00e4 et al., 2007). The most recent large-scale GWAS meta-analysis for schizophrenia (Ripke et al., 2020) has reported that a PRS accounts for approximately 8% of the variance on the liability scale. Our model shows that a 52% RRR is attainable using the LRP strategy with $n=5$ embryos. However, this translates to only \u22480.5 percentage points reduction on the absolute scale: a randomly-selected embryo would have a 99% chance of not developing schizophrenia, compared to a 99.5% chance for an embryo selected according to LRP. In the case of a more common disease such as type 2 diabetes, with a lifetime prevalence in excess of 20% in the United States (Geiss et al., 2014), the RRR with $n=5$ embryos (if the full SNP heritability of 17% [Zhang et al., 2018] were achieved) is 43%, which would correspond to >8 percentage points reduction in absolute risk.\n\n### Variability of the risk reduction across couples\n\nThe results depicted in Figure 2 describe the average risk reduction across the population, whereas the results in Figure 3 demonstrate results for specific combinations of parental risk scores. However, it remains unclear whether the large average risk reductions observed under the LRP strategy are driven by only a small proportion of couples. More generally, we would like to fully characterize the dependence of the risk reduction on parental PRSs, which could be of interest to physicians and couples in real-world settings.\n\nTo address these questions, we define a new risk reduction index, which we term the per-couple relative risk reduction, or pcRRR. Informally, the pcRRR is the relative risk reduction conditional of the PRSs of the couple. Mathematically, $pcRRR(couple)=1-\\frac{P_{s}diseasecouple}{P_{r}diseasecouple}$. Here, $P_{s}(disease|couple)$ is the probability that the (PRS-based) selected embryo is affected given the PRSs of the couple, and $P_{r}(disease|couple)$ is similarly defined for a randomly selected embryo. Conveniently, the pcRRR depends only on the average of the maternal and paternal PRSs, which we denote as $c$. We calculated $pcRRR(c)$ analytically under the LRP strategy (the\u00a0Appendix), as well as computed the distribution of $pcRRR(c)$ across all couples in the population.\n\nWe show the distribution of $pcRRRc$ in Figure 4, panels (A)-(C). The results demonstrate that the pcRRR is relatively narrowly distributed around its mean, for all values of the prevalence ($K$) considered. The distribution becomes somewhat wider (and left-tailed) for the most extreme $r_{ps}^{2}$ (0.3). Thus, the population-averaged RRRs are not driven by a small proportion of the couples. In agreement, the pcRRR depends only weakly on the average parental PRS, as can be seen in panels (D)-(F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig4-v1.jpg)\n\n**Figure 4.:** We considered only the lowest-risk prioritization strategy. In panels (A\u2013C), we computed the theoretical distribution of the per-couple relative risk reduction, as explained in the Appendix Section 5. Briefly, the per-couple RRR is defined as $1\u2212P_{s}(disease|c)/P_{r}(disease|c)$, where $P_{s}disease c$ is the probability of an embryo selected based on its PRS to be affected and $P_{r}(disease|c)$ is the probability of a randomly selected embryo to be affected, both conditional on the given couple. Our modeling suggests that $c$, which is the average of the paternal and maternal PRSs, is the only determinant of the relative risk reduction of a given couple. We computed the distribution of the per-couple RRR based on 104 quantiles of $c$, thus covering all hypothetical couples in the population. The number of embryos was set to $n=5$ in all panels. Panels (A\u2013C) correspond to prevalence of $K=0.01,0.05$, and $0.02$, respectively. In panels (D\u2013F), we plot the theoretical RRR vs the quantile of the average parental PRS $c$ (see Appendix\u00a0Section 5.1).\n\nWe note that the per-couple relative risk reduction is also an average, over all possible batches of $n$ embryos of the couple. One may thus ask what is the distribution of possible RRRs across these batches. We provide a short discussion in the\u00a0Appendix (Section 5.3).\n\n### Pleiotropic effects of selection on genetically negatively correlated diseases\n\nPolygenic risk scores are often correlated across diseases (Watanabe et al., 2019; Zheng et al., 2017). Therefore, selecting based on the PRS of one disease may increase or decrease risk for other diseases. While a full analysis of screening for multiple diseases is left for future work, our simulation framework allows us to investigate the potential harmful effects of prioritizing embryos for one disease, in case that disease is negatively correlated with another disease (see\u00a0the\u00a0Appendix). We considered genetic correlations between diseases taking the values $\u03c1=(-0.05,-0.1,-0.15,-0.2,-0.3)$. [The most negative correlation between two diseases reported in LDHub (https://ldsc.broadinstitute.org/ldhub/) is \u22120.3, occurring between ulcerative colitis and chronic kidney disease (Zheng et al., 2017).] In general, negative correlations between diseases are uncommon, and when they occur, typical correlations are about \u22120.1.\n\nFigure 5 shows the simulated risk reduction for the target disease and the risk increase for the correlated disease, across different values of $\u03c1$ and for three values of the prevalence $K$ (panels (A)-(C); assumed equal for the two diseases), all under the LRP strategy. In all panels, we used $r_{ps}^{2}=0.1$ for both diseases. The relative risk reduction for the target disease is, as expected, always higher in absolute value than the risk increase of the correlated disease. For typical values of $\u03c1=-0.1$ and $n=5$, the relative increase in risk of the correlated disease is relatively small, at \u22486% for $K\\leq0.05$ and \u22483.5% for $K=0.2$. However, for strong negative correlation ($\u03c1=-0.3$) the increase in risk can reach 22%, 16%, or 11% for $K=0.01,\u00a00.05$\u00a0and\u00a0$0.2$, respectively. Thus, care must be taken in the unique setting when the target disease is strongly negatively correlated with another disease.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig5-v1.jpg)\n\n**Figure 5.:** We simulated two diseases that have genetic correlation $\u03c1<0$. We assumed that the prevalence $K$ is equal between the two diseases ($K=0.01,\u00a00.05$\u00a0and\u00a0$0.2$: panels (A)-(C), respectively), and that $r_{ps}^{2}=0.1$ for both diseases. We simulated polygenic scores for the two diseases in $n$ embryos in each of 106 couples. For each couple, we selected the embryo either randomly or based on having the lowest PRS for the target disease. We then computed the risk of the embryo to have each disease as in the main analyses, by drawing the residual component of the liability and designating the embryo as affected if the total liability exceeded a threshold. The relative risk reduction of the target disease is shown as gray squares (and connecting lines) at the top of each plot. The relative risk increase for the correlated disease is shown in colored circles (and connecting lines), with different colors corresponding to different values of $\u03c1$ (see legend). Note that the risk reduction for the target disease is independent of $\u03c1$.\n\n### Simulations based on real genomes from case-control studies\n\nOur analysis so far has been limited to mathematical analysis and simulations based on a statistical model. In principle, it would be desirable to compare our predictions to results based on real data. However, clearly, no real genomic and phenotypic data exist that would correspond to our setting, nor could such data be ethically or practically generated. Thus, we resort to a \u2018hybrid\u2019 approach, in which we simulate the genomes of embryos based on real genomic data from case-control studies. This approach is similar to the one we have previously used for studying polygenic embryo screening for traits (Karavani et al., 2019).\n\nBriefly, our approach is as follows. We consider separately two diseases with somewhat differing genetic architecture: schizophrenia, which is amongst the most polygenic complex diseases, with no common loci of high effect size, and Crohn\u2019s disease, which is estimated to be less polygenic, and has several common loci with much larger effects than those found in schizophrenia (O'Connor et al., 2019). For each disease, we used genomes of unrelated individuals drawn from case-control studies. For schizophrenia, we used \u2248900 cases and \u22481600 controls of Ashkenazi Jewish ancestry, while for Crohn\u2019s, we used \u2248150 cases and \u2248100 controls of European ancestry. We then generated 'virtual couples' by randomly mating pairs of individuals, regardless of sex. For each couple, we simulate the genomes of $n$ hypothetical embryos, based on the laws of Mendelian inheritance and by randomly placing crossovers according to genetic map distances. In parallel, we used the 'parental' genomes to learn a logistic regression model that predicts the disease risk given a PRS computed based on existing summary statistics. We then computed the PRS of each simulated embryo, and predicted the risk that embryo to be affected. Finally, we compared the risk of disease between a population in which one embryo per couple is selected at random, vs. a population in which one embryo is selected based on its PRS. For complete details, see Materials and methods.\n\nIn Figure 6, we plot the results for the relative risk reduction for schizophrenia (panels (A) and (B)) and Crohn\u2019s disease (panels (C) and (D)). For each disease, we consider both the HRE and LRP strategies. The analytical predictions closely match the empirical risk reductions generated in the simulations, except for a slight overestimation of the RRR under the LRP strategy. Nevertheless, for both schizophrenia and Crohn\u2019s disease, we empirically observe that RRRs as high as \u224845% are achievable with $n=5$ embryos. In contrast, under the HRE strategy and when excluding embryos at the top 2% risk percentiles, risk reductions are very small, in agreement with the theoretical predictions. These results thus provide support to the robustness of our statistical model.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig6-v1.jpg)\n\n**Figure 6.:** We used \u2248900 cases and \u22481600 controls for schizophrenia, and \u2248150 cases and \u2248100 controls for Crohn\u2019s. For each disease, we drew 5000 random 'virtual couples', regardless of sex, but correcting for case/control ascertainment. For each such random couple, we simulated the genomes of up to $n=20$ embryos (children) based on Mendelian segregation and published recombination maps. For each embryo, we computed the PRS for the given disease (schizophrenia or Crohn\u2019s) using the most recent summary statistics that exclude our cohort. We computed the risk of each embryo to be affected based on a logistic regression model we learned in the 'parental' cohort. Panels (A) and (B) show results for schizophrenia, while panels (C) and (D) show results for Crohn\u2019s. In panels (A) and (C), we plot the relative risk reduction (RRR) under the high-risk exclusion (HRE) selection strategy, in which an embryo was randomly selected (out of $n=5$ embryos), unless its PRS was above a given percentile. The RRR was computed against a baseline strategy of selection of an embryo at random and is plotted vs the exclusion percentile. In panels (B) and (D), we show the relative risk reduction under the lowest-risk prioritization (LRP) strategy, in which the embryo with the lowest PRS was selected. We plot the RRR vs the number of embryos $n$. In all panels, dots correspond to the results of simulations, and solid lines correspond to the theory. The theory was computed assuming prevalence of 1% for schizophrenia and 0.5% for Crohn\u2019s, and variance explained on the liability scale of $r_{ps}^{2}=0.068$ for schizophrenia $r_{ps}^{2}=0.056$ for Crohn\u2019s (calculated using the method of Lee et al., 2012). Further details are provided in Materials and methods.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64716/elife-64716-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Panels (A) and (B) are for schizophrenia, while panels (C) and (D) are for Crohn\u2019s disease. Panels (A) and (C) show the variance of the PRS across the $n=20$ embryos of each simulated family, vs the quantile of the average parental PRS. The plots show results for 5000 simulated families for each disease. The solid line shows smoothing cubic splines, fitted using a generalized additive model. The horizontal gray lines in (A) and (C) show the variance of the PRS in the parental population. According to the theory, the variance should be independent of the average parental PRS. Indeed, the variance is constant across average parental PRSs for Crohn\u2019s disease. However, the variance is slightly decreasing with the average parental PRSs for schizophrenia, although the deviation is prominent only at the lowest decile. Panels (B) and (D) show the distribution of the variances across the same simulated families. The theoretical distribution is $\u03c7^{2}$ with $n-1=19$ degrees of freedom, scaled by $n-1$ and multiplied by half the variance of the PRS in the 'parental' cohort. The empirical distribution (red) is very close in location and in shape to the expected distribution (cyan), although slightly shifted to lower variances.\n\nTo further investigate the assumptions of our model, we test in Figure 6\u2014figure supplement 1 two intermediate predictions. The first is that the variance of the PRSs of embryos of a given couple should not depend on the average parental PRS. This is indeed the case (panels (A) and (C)), with the only exception of an uptick of the variance at very low parental PRSs for schizophrenia. The second prediction is that the variance across embryos is half of the variance in the parental population. The empirical results again show reasonable agreement with the theoretical prediction (panels (B) and (D)). The empirical variance (averaged across couples) was slightly lower than expected (by \u22484% for schizophrenia and \u224814% for Crohn\u2019s), which may explain our slight overestimation of the expected RRR under the LRP strategy.\n\n## Discussion\n\nIn this paper, we used statistical modeling to evaluate the expected outcomes of screening embryos based on polygenic risk scores for a single disease. We predicted the relative and absolute risk reductions, either at the population level or at the level of individual couples. Our model is flexible, allowing us to provide predictions across various values of, for\u00a0example, the PRS strength, the disease prevalence, the parental PRS or disease status, and the number of available embryos. We presented a comprehensive analysis of the expected outcomes across various settings, including when there is a concern about a second disease negatively correlated with the target disease. We finally validated our modeling assumptions using genomes from case-control studies. Our publicly available code could help researchers and other stakeholders estimate the expected outcomes for settings we did not cover.\n\nOur most notable result was that a crucial determinant of risk reduction is the selection strategy. The use of PRS in adults has focused on those at highest risk (Chatterjee et al., 2016; Dai et al., 2019; Gibson, 2019; Khera et al., 2018; Mars et al., 2020; Mavaddat et al., 2019; Torkamani et al., 2018), for whom there may be maximal clinical benefit of screening and intervention. However, as PRSs have relatively low sensitivity, such a strategy is relatively ineffective in reducing the overall population disease burden (Ala-Korpela and Holmes, 2020; Wald and Old, 2019). Similarly, in the context of PES, exclusion of high-risk embryos will result in relatively modest risk reductions. By contrast, selecting the embryo with the lowest PRS may result in large reductions in relative risk.\n\nWhile our prior work (Karavani et al., 2019)\u00a0demonstrated that PES would have a small effect on quantitative traits, here we show that a small reduction in the liability can lead to a large reduction in the proportion of affected individuals. This is fundamentally a property of a threshold character with an underlying normally distributed continuous liability. For such traits, most of the individuals in the extreme of the liability distribution (i.e. the ones affected) are concentrated very near the threshold. Thus, even slightly reducing their liability can move a large proportion of affected individuals below the disease threshold. However, it should be noted that conventional thresholds for defining presence of disease may contain some degree of arbitrariness if the underlying distribution of pathophysiology is truly continuous. Consequently, the effects on ultimate morbidity may depend on the validity of the threshold itself (Davidson and Kahn, 2016).\n\nWe investigated how the range of potential PES outcomes varies with the PRSs of the parents or with their disease status. Under the HRE strategy, if only excluding embryos at the few topmost risk percentiles, the RRR is very small when the parents have low PRSs, and vice versa (Figure 3, panels (A)-(D)). This is expected, as excluding high PRS embryos will be effective only for couples who are likely to have many such embryos. Under the LRP strategy, the RRR depends only weakly on the parental PRSs (Figure 3, panels (E)-(H), and Figure 4). Under both strategies, the relative risk reduction depends only weakly on the parental disease status, as parental disease status is a weak signal for the underlying PRS. However, the absolute risk reduction increases substantially with increasing parental PRSs (Figure 3\u2014figure supplement 2) and when one or more parents are affected.\n\nOur study has several limitations. First, our results assume an infinitesimal genetic architecture for the disease, which may not be appropriate for oligogenic diseases and is not relevant for monogenic disorders. However, it has been repeatedly demonstrated that common, complex traits and diseases are highly polygenic (Gazal et al., 2017; Holland et al., 2020; O'Connor et al., 2019; Shi et al., 2016; Zeng et al., 2018; Zeng et al., 2021). For example, it was recently estimated that for almost all traits and diseases examined, the number of independently associated loci was at least \u2248350, reaching \u224810,000 or more for cognitive and psychiatric phenotypes (O'Connor et al., 2019). This provides more than sufficient variability for the PRS to attain a normal distribution in the population and for our modeling assumptions to hold. Indeed, our empirical results for schizophrenia and Crohn\u2019s disease, two diseases with somewhat different genetic architectures, agreed reasonably well with the theoretical predictions. However, our models would need to be substantially adjusted in the presence of variants of very large effect, such as inherited or de novo coding variants or copy number variants, for\u00a0example, as in autism (Satterstrom et al., 2020; Takumi and Tamada, 2018).\n\nAdditionally, our model relies on several simplifying statistical assumptions. For example, we did not explicitly model assortative mating, although this seems reasonable given that for genetic disease risk, correlation between parents is weak (Rawlik et al., 2019), and given that our previous study of traits showed no difference in the results between real and random couples (Karavani et al., 2019). This deficiency is also partly ameliorated by our modeling of the risk reduction when explicitly given the parental PRSs or disease status. Another assumption we made is that environmental influences on the child\u2019s phenotype are independent of those that have influenced the parents (when conditioning on the parental disease status). However, this is reasonable given that family-specific environmental effect have been shown to be weak for complex diseases (Wang et al., 2017). For a discussion of additional model assumptions, see Appendix section 10.\n\nPerhaps more importantly, we assumed throughout that $r_{ps}^{2}$ represents the realistic accuracy of the PRS achievable, within-family, in a real-world setting in the target population. However, the realistically achievable $r_{ps}^{2}$ may be lower than reported in the original publications that have generated the scores. For example, the accuracy of PRSs is sub-optimal when applied in non-European populations and across different socio-economic groups (Duncan et al., 2019; Mostafavi et al., 2020). A PRS that was tested on adults may be less accurate in the next generation. Additionally, the variance explained by the score, as estimated in samples of unrelated individuals, is inflated due to population stratification, assortative mating, and indirect parental effects (Kong et al., 2018; Young et al., 2019; Morris et al., 2020; Mostafavi et al., 2020). The latter, also called 'genetic nurture', refers to trait-modifying environmental effects induced by the parents based on their genotypes. These effects do not contribute to prediction accuracy when comparing polygenic scores between siblings (as when screening IVF embryos), and thus, the variance explained by polygenic scores in this setting can be substantially reduced, in particular for cognitive and behavioral traits (Howe et al., 2021; Selzam et al., 2019). Our risk reduction estimates thus represent an upper bound relative to real-world scenarios. On the other hand, recent empirical work on within-family disease risk prediction showed that the reduction in accuracy is at most modest (Lello et al., 2020), and within-siblings-GWAS yielded similar results to unrelated-GWAS for most physiological traits (Howe et al., 2021). Additionally, accuracy in non-European populations is rapidly improving due to the establishment of national biobanks in non-European countries (Koyama et al., 2020; Vujkovic et al., 2020) and improvement in methods for transferring scores into non-European populations (Amariuta et al., 2020; Cai et al., 2021). Either way, the analytical results presented in this paper are formulated generally as a function of the achievable accuracy $r_{ps}^{2}$, and as such, users can substitute values relevant to their specific target population and disease.\n\nAnother major limitation of this work is that we have only considered screening for a single disease. In reality, couples may seek to profile an embryo on the basis of multiple disease PRSs simultaneously, or based a global measure of lifespan or healthspan (Sakaue et al., 2020; Timmers et al., 2020; Zenin et al., 2019). This is likely to reduce the per-disease risk reduction, as we have previously observed for quantitative traits (Karavani et al., 2019), but will also likely be more cost effective (Treff et al., 2020;\u00a0Gwern, 2018). PES for multiple diseases requires the formulation and analysis of new selection strategies and is substantially more mathematically complex; we therefore leave it for future studies.\n\nAs our approach was statistical in nature, it is important to place our results in the context of real-world clinical practice of assisted reproductive technology. The number of embryos utilized in the calculations in the present study refers to viable embryos that could lead to live birth, which can be substantially smaller than the raw number of fertilized oocytes or even the number of implantable embryos at day 5. This consideration is especially important given the steep drop in risk reduction when the number of available embryos drops below 5 (Figure 2). In fact, many IVF cycles do not achieve any live birth. Rates of live birth decline with maternal age, in particular after age 40 (Smith et al., 2015); for women of\u00a0age >42, fewer than 4% of IVF cycles result in live births, making PES impractical. On the other hand, success rates will likely be higher for young prospective parents who seek PES to reduce disease risk but do not suffer from infertility. However, the prospect of elective IVF for the purpose of PES in such couples must be weighed against the potential risks of these invasive procedures to the mother and child (Dayan et al., 2019; Luke, 2017).\n\nA different concern is whether the embryo biopsy (which is required for genotyping) may cause risk to the viability and future health of the embryo. Several recent studies have demonstrated no evidence for potential adverse effects of trophectoderm biopsy on rates of successful implantation, fetal anomalies, and live birth (Awadalla et al., 2021; He et al., 2019; Riestenberg et al., 2021; Tiegs et al., 2021). Moreover, no significant adverse effects have been detected for postnatal child development in a recent meta-analysis (Natsuaki and Dimler, 2018). On the other hand, a number of studies have reported that trophectoderm biopsy was associated with pregnancy complications, including preterm birth, pre-eclampsia, and hypertensive disorders of pregnancy (Li et al., 2021; Zhang et al., 2019; Makhijani et al., 2021). Specific variations in biopsy protocols may account for differences in outcomes across studies (Rubino et al., 2020). Newly developed techniques may allow in the future to genotype an embryo non-invasively based on DNA present in spent culture medium, although the accuracy of these methods is still being debated (Leaver and Wells, 2020). It should also be noted that, throughout this manuscript, we assumed the use of single embryo transfer.\n\nFinally, the results of our study invite a debate regarding ethical and social implications. For example, the differential performance of PES across selection strategies and risk reduction metrics may be difficult to communicate to couples seeking assisted reproductive technologies (Cunningham et al., 2015; Wilkinson et al., 2019). Indeed, in the first PES case report, the couple elected to forego any implantation despite the availability of embryos that were designated as normal risk (Treff et al., 2019a). These difficulties are expected to exacerbate the already profound ethical issues raised by PES (as we have recently reviewed [L\u00e1zaro-Mu\u00f1oz et al., 2021]), which include stigmatization (McCabe and McCabe, 2011), autonomy (including \u2018choice overload\u2019 [Hadar and Sood, 2014]), and equity (Sueoka, 2016). In addition, the ever-present specter of eugenics (Lombardo, 2018) may be especially salient in the context of the LRP strategy. How to juxtapose these difficulties with the potential public health benefits of PES is an open question. We thus call for urgent deliberations amongst key stakeholders (including researchers, clinicians, and patients) to address governance of PES and for the development of policy statements by professional societies. We hope that our statistical framework can provide an empirical foundation for these critical ethical and policy deliberations.\n\n## Materials and methods\n\n### Summary of the modeling results\n\nIn this section, we provide a brief overview of our model and derivations, with complete details appearing in the Appendix.\n\nOur model is follows. We write the polygenic risk scores of a batch of $n$ IVF embryos as $s_{1},\u2026,s_{n}$, and generate the scores as $s_{i}=x_{i}+c$. The $x_{1},\u2026,x_{n}$ are embryo-specific independent random variables with distribution $x_{i}\u223cN(0,r_{ps}^{2}/2)$, $r_{ps}^{2}$ is the proportion of variance in liability explained by the score, and $c$ is a shared component with distribution $c\u223cN(0,r_{ps}^{2}/2)$, also representing the average of the maternal and paternal scores.\n\nIn each batch, an embryo is selected according to the selection strategy. Under high-risk exclusion, we select a random embryo with score $s<z_{q}r_{ps}$, where $z_{q}$ is the $1-q$-quantile of the standard normal distribution. If no such embryo exists, we select a random embryo, but we also studied the strategy\u00a0when in such a case, the lowest scoring embryo is selected. Under lowest-risk prioritization, we select the embryo with the lowest value of $s$. We computed the liability of the selected embryo as $y=s+e$, where $e\u223cN(0,1\u2212r_{ps}^{2})$. We designate the embryo as affected if $y>z_{K}$, where $z_{K}$ is the $(1-K)$ -quantile of the standard normal distribution and $K$ is the disease prevalence. In the simulations, we computed the disease probability (for each parameter setting) as the fraction of batches (out of 106 repeats) in which the selected embryo was affected. We also simulated the score and disease status of a second disease, which is not used for selecting the embryo, but may be negatively correlated with the target disease.\n\nWe computed the disease probability analytically using the following approaches. We first computed the distribution of the score of the selected embryo. For lowest-risk prioritization, we used the theory of order statistics. For high-risk exclusion, we first conditioned on the shared component $c$, and then studied separately the case when all embryos are high-risk (i.e. have score $s>z_{q}r_{ps}$), in which the distribution of the unique component of the selected embryo ($x$) is a normal variable truncated from below at $z_{q}r_{ps}\u2212c$, and the case when at least one embryo has score $s<z_{q}r_{ps}$, in which $x$ is a normal variable truncated from above. We then integrated over the non-score liability components (and over $c$ in some of the settings) in order to obtain the probability of being affected. We solved the integrals in the final expressions numerically in R.\n\nWe computed the risk reduction based on the ratio between the risk of a child of a random couple when the embryo was selected by PRS and the population prevalence. We also provide explicit results for the case when the average parental PRS $c$ is known. These expressions allowed us to compute the distribution of risk reductions per-couple. Finally, when conditioning on the parental disease status, we integrated the disease probability of the selected embryo over the posterior distribution of the parental score and non-score genetic components. For full details and for an additional discussion of previous work and limitations, see the Appendix. R code is available at: https://github.com/scarmi/embryo_selection (copy archived at swh:1:rev:4cdc572582deb9b745e6844d96e0344914f4595e,\u00a0Carmi, 2021)\u00a0and\u00a0https://github.com/dbackenroth/embryo_selection\u00a0(copy archived at\u00a0swh:1:rev:c65bf082fcb28434c271260560c4a4450dad76a3,; Backenroth, 2021).\n\n### Simulations based on genomes from case-control studies\n\nOur main analysis has been limited to mathematical modeling of polygenic scores and their relation to disease risk. For obvious ethical and practical reasons, we could not validate our modeling predictions with actual experiments. Nevertheless, we could perform realistic simulations based on genomes from case-control studies, similarly to our previous work (Karavani et al., 2019). Our approach is as follows. We consider, separately, two diseases: schizophrenia and Crohn\u2019s. For schizophrenia, we use \u2248900 cases and \u22481600 controls of Ashkenazi Jewish ancestry, while for Crohn\u2019s, we use \u2248150 cases and \u2248100 controls from the New York area. For each disease, we use these individuals, who are unrelated, to generate 'virtual couples' by randomly mating pairs of individuals. For each such 'couple', we simulate the genomes of $n$ hypothetical embryos, based on the laws of Mendelian inheritance and by randomly placing crossovers according to genetic map distances. In parallel, we use the same genomes to derive\u00a0a logistic regression model that predicts the risk of disease given a PRS computed from the most recently available summary statistics (based on datasets not including\u00a0the samples in our test cohorts). We then compute the PRS of each simulated embryo, and predict the risk of disease of that embryo. We finally compare the risk of disease between one randomly selected embryo per couple vs one embryo selected based on PRS. In the paragraphs below, we provide additional details.\n\n#### The Ashkenazi schizophrenia cohort\n\nThe samples and the genotyping process were previously described (Lencz et al., 2013). Patients were recruited from hospitalized inpatients at seven medical centres in Israel and\u00a0were\u00a0diagnosed with schizophrenia or schizoaffective disorder. Samples from healthy Ashkenazi individuals were collected from volunteers at the Israeli Blood Bank. All subjects provided written informed consent, and corresponding institutional review boards and the National Genetic Committee of the Israeli Ministry of Health approved the studies. DNA was extracted from whole blood and genotyped for ~1 million genome-wide SNPs using Illumina HumanOmni1-Quad arrays. We performed the following quality control steps. First, we removed samples with (1) genotyping call rate <95%; (2) one of each pair of related individuals (total shared identical-by-descent (IBD) segments >700cM); and (3) sharing of less than 15 cM on average with the rest of the cohort (indicating non-Ashkenazi ancestry). We removed SNPs with (1) call rate <97%; (2) minor allele frequency <1%; (3) significantly different allele frequencies between males and females (p-value threshold = 0.05/#SNPs); (4) differential missingness between males and females (p<10\u22127) based on a \u03c72 test; (5) deviations from Hardy-Weinberg equilibrium in females (p-value threshold = 0.05/#SNPs); (6) SNPs in the HLA region (chr6:24\u201337M); and (7) (after phasing) SNPs having A/T or C/G polymorphism, as we could not unambiguously link them to corresponding effect sizes in the summary statistics. We finally used autosomal SNPs only. The remaining number of individuals was 2526 (897 cases and 1629 controls), and the number of SNPs was 728,505. We phased the genomes using SHAPEIT v2 (Delaneau et al., 2013).\n\n#### The Mt Sinai Crohn\u2019s disease cohort\n\nSamples from subjects with Crohn\u2019s disease were recruited from clinics by Mt Sinai providers. All subjects provided written, informed consent in studies approved by the Mt Sinai Institutional Review Board. Genotyping was performed at the Broad Institute using the Illumina Global Screening Array (GSA) chip, as previously described (Gettler et al., 2021). We phased the genomes using Eagle v2.4.1 (Loh et al., 2016). We then removed SNPs having A/T or C/G polymorphism. The remaining number of individuals was 257 (154 cases and 103 controls) and the number of SNPs was 560,612.\n\n#### Simulating couples and embryos\n\nFor each disease, we generated 5000 unique couples by randomly pairing individuals (regardless of their sex) according to the population prevalence of the disease. For example, for schizophrenia, assuming a prevalence of 1%, a proportion 0.992 of the couples were both controls. Given a pair of parents, we simulated 20 offspring (embryos) by specifying the locations of crossovers in each parent. Recombination was modeled as a Poisson process along the genome, with distances measured in cM using sex-averaged genetic maps (Bh\u00e9rer et al., 2017). Specifically, for each parent and embryo, we drew the number of crossovers in each chromosome from a Poisson distribution with mean equal to the chromosome length in Morgan. We then determined the locations of the crossovers by randomly drawing positions along the chromosome (in Morgan). We mixed the phased paternal and maternal chromosomes of the parent according to the crossover locations, and randomly chose one of the resulting sequences as the chromosome to be transmitted to the embryo. We repeated for the other parent, in order to form the diploid genome of the embryo.\n\n#### Developing a polygenic risk score for schizophrenia\n\nWe used summary statistics from the most recent schizophrenia GWAS of the Psychiatric Genomics Consortium (PGC) (Ripke et al., 2020). Note that we specifically used summary statistics that excluded our Ashkenazi cohort. We used our\u00a0entire cohort (2526 individuals) to estimate linkage disequilibrium (LD) between SNPs, and performed LD-clumping on the summary statistics in PLINK (Chang et al., 2015), with a window size of 250kb, a minimum $r^{2}$ threshold for clumping of 0.1, a minimum minor allele frequency threshold of 1%, and a maximum p-value threshold of 0.05. The p-value threshold was chosen based on results from the PGC study. After clumping, the final score included 23,036 SNPs. To construct the score, we used the effect sizes reported in the GWAS summary statistics, without additional processing.\n\n#### Developing a polygenic risk score for Crohn\u2019s disease\n\nWe used summary statistics derived from European samples available from https://www.ibdgenetics.org/downloads.html (Liu et al., 2015), which did not include our cohort. We estimated LD using the entire Crohn\u2019s disease cohort, and performed LD-clumping and p-value thresholding using the same parameters as for the schizophrenia cohort, as described above. The final score included 9,403 SNPs.\n\n#### Calculating the PRS and the risk of an embryo\n\nFor each disease, we calculated polygenic scores for each parent and simulated embryo in PLINK, using the --score command with default parameters. Using the polygenic scores of the parents, we fitted a logistic regression model for the case/control status as a function of the polygenic scores. We did not adjust for additional covariates: for schizophrenia, genetic ancestry is homogeneous in our Ashkenazi cohort, and age and sex contributed very little to predictive power (increased AUC from 0.695 only to 0.717). For Crohn\u2019s, age was not available, and sex did not contribute to predictive power (increased AUC from to 0.693 to 0.695). We adjusted the intercept of the logistic regression models to account for the case-control sampling (Rose and van der Laan, 2008). We then used the model to predict the probability that a simulated embryo would develop the disease.\n\nTo determine the percentiles of the PRS for each disease, we derived an approximation to the distribution of the PRS in the population by fitting a normal distribution to the scores in our dataset. To take into account the case/control ascertainment, we weighted the case and control samples according to the population prevalence of the disease (1% for schizophrenia [Per\u00e4l\u00e4 et al., 2007] and 0.5% for Crohn\u2019s [GBD 2017 Inflammatory Bowel Disease Collaborators, 2020]). We calculated the weighted mean and variance of the scores using the wtd.mean and wtd.var functions in the HMisc package in R. A normal distribution with the resulting mean and variance was used to calculate percentiles of the scores. The percentiles were then used to select (simulated) embryos under the high-risk exclusion strategy (see below).\n\n#### Calculating the risk reduction\n\nFor each disease, we performed the following simulations. For each selection strategy (either high-risk exclusion or lowest-risk prioritization), we selected one embryo for each couple according to the strategy, and computed the probability of disease for the selected embryo. We then averaged the risk over all couples. We similarly computed the risk under selection of a random embryo for each couple. We computed the relative risk reduction based on the ratio between the risk under PRS-based selection and the risk under random selection. To compare to the theoretical expectations, we estimated the variance explained by the score on the liability scale using the method of Lee et al., 2012. Specifically, we first computed the correlation between the observed case/control status (coded as 1 and 0, respectively) and the PRS, and then used Equation (15) in Lee et al to convert the squared correlation to the variance explained. We obtained $r_{ps}^{2}=6.8%$ for schizophrenia, which is close to the 7.7% reported in the original GWAS paper (Ripke et al., 2020), and $r_{ps}^{2}=5.6%$ for Crohn\u2019s disease. We then substituted this value and prevalence of $K=0.01$ for schizophrenia and $K=0.005$ for Crohn\u2019s in our formulas for the relative risk reduction.\n",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "b12ef038-238b-4cd2-a04c-895b5d4a7550",
+      "submission_id": "2ca70d7e-24cc-4777-ace8-62229bed3a5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Y M Dennis Lo, The Chinese University of Hong Kong Hong Kong\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64716.sa1](https://doi.org/10.7554/eLife.64716.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work represents a thought-provoking and timely exploration of the impact of polygenic embryo screening using a liability threshold model. This work is expected to catalyse further debates in this emerging field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Utility of polygenic embryo screening for disease depends on the selection strategy\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Qiongshi Lu (Reviewer #3).\n\nSummary:\n\nPolygenic embryo screening is a controversial topic. Due to generally low predictive accuracy of current polygenic risk scores (PRS), the entanglement of genetics's and environment's roles in disease etiology, and a lack of empirical studies, our understanding of potential benefits, and importantly, risks of PRS-based human embryo screening is qualitative at best and far from complete. In this study, Lencz et al. provide a statistical framework to assess the effectiveness of various screening strategies to reduce disease risk. Overall, due to some limitations in the study, the current results do not necessarily endorse practicing human embryo screening using PRS. Instead, the major contribution of this study is to layout the quantitative arguments and metrics which future studies may continue to use. These tools are crucial for researchers to understand the risk/benefit trade-off and to design better strategies. This work is thought-provoking and should open up useful debates in the field.\n\nMajor comments:\n\n1. The main conclusions seem to contradict the same group's previous work (Karavani et al., 2019) which argued that screening embryos with PRS has limited utility. The key difference between this paper and the previous study is that here the focus is binary disease outcomes while the previous study focused on quantitative traits. However, the distinction between quantitative traits and their dichotomized counterparts is not always clear (e.g., cholesterol levels and hypercholesterolemia, education years and college attainment), which seems to suggest that the assessment of a screening strategy strongly depends on how the phenotype of interest is defined. Do the conclusions in (Karavani et al., 2019) still hold given the findings of this paper? Would it be fair to say that (i) given all assumptions made in this paper such as a lack of genetic nurture effects and rare variant effects, and (ii) if the interest is to prevent intellectual disability which is a dichotomized version of IQ, a trait extensively studied in Karavani et al. 2019, then polygenic embryo screening may NOT have limited utility as long as the low-risk prioritization approach is used? More extensive discussions are needed to compare the approaches and conclusions between the two closely related papers.\n\n2. It appears to be counter-intuitive that the curves of the \"high-risk exclusion\" strategy would peak instead of being monotone (e.g. the upper-left panel in figure 2). If the exclusion percentile (i.e., x-axis) keeps increasing, shouldn't this approach behave similarly compared to the \"low-risk prioritization\" strategy? One would think that a stringent percentile threshold in \"high-risk exclusion\" (excluding most embryos) would ensure that only embryos with very low risks are planted, which is what the \"low-risk prioritization\" strategy tries to achieve. So why doesn't the purple curve in that upper-left panel keep going up until reaching ~80% which is suggested by the lower-left panel in Figure 2?\n\n3. The authors should comment on the following points. First, partitioning the PRS \"si\" into two orthogonal components: polygenic transmission disequilibrium \"xi\" and parental average score \"c\" seems intuitive. However, shouldn't parental genotypes predict the distribution of xi? Suppose both parents are homozygous at a SNP and c = (2+2)/2 = 2. Then, si would be 2 without any variability, which means xi is always 0. Even in a polygenic setting, a very high value of c would suggest higher homozygosity which should lead to lower variance of xi. However, the setting in this paper leads to a constant variance of xi which isn't affected by c. Is something missing here?\n\n4. The authors state that they have not explored the age dependence on the number of embryos? How significant would this omission be? What is the age distribution of parents who would typically undertake such polygenic embryo selection?\n\n5. For the high risk exclusion strategy, the authors state that if all embryos are of high risk, then a random embryo would be implanted. Would a decision of not implanting any embryo be a reasonable alternative? If this is indeed a reasonable alternative, would this change the authors' conclusion in any way?\n\n6. The authors should clarify the impact of error in the per-embryo estimation of xs (e.g. from errors in imputation of genotypes if that's used or errors in the \u03b2_hat estimates that form the PRS)? I assume in these cases it results in an effective lowering of rps2?7. While the statistical framework in this paper can be used to compare the utility of different strategies, the same analyses can also quantify the potential risks of embryo screening. Although the authors were open about the limitations of the study, no empirical analyses were performed to demonstrate potential risks. This is a missed opportunity. Can the authors expand this somewhat?\n\n8. While it is understandable to make some simplifying assumptions, it is critical to demonstrate the risk which is a main concern of human embryo screening in the field. While it does not appear that the authors have over-stated anything in the original submission, given the sensitivity of this topic, avoiding quantitative discussions on risks may lead to over-optimistic news headlines that only focus on the potential utility and even reckless and potentially harmful practices. With that said, it seems straightforward to generalize the simulation framework in this paper to explore a two-trait setting. Suppose two diseases are genetically correlated (with correlation = -0.1, -0.3, and -0.5, for example). Then, would the \"low-risk prioritization approach\" on one disease lead to drastically increased risks for the second disease? It wouldn't be fair to ask the authors to find a solution to this problem given the scope of the study. But a quantitative demonstration of risks will improve this paper.\n\n9. What is the current success rate if only one embryo is planted? If multiple embryos (out of 5) are planted to ensure a reasonable success rate in current practices, would it be fair to say that only a \"high-risk exclusion\"-type strategy that only excludes embryos with higher risk is realistic? Here, the exclusion criterion isn't necessarily based on a population quantile but could be based on PRS ranking among embryos. Some discussions will be helpful.\n\n10. The authors state that one concern about the generalisability of polygenic embryo selection is the extension to non-European populations. Outside of the European populations, is it true that none of the other ethnic groups have high quality polygenic risk score data?\n\n11. The usage of an extended listing of assumptions deep in the Material and Methods was slightly unorthodox to me and I wonder if it would be more transparent and useful for the average reader's consumptions to include these in the discussion itself. While the presented results are helpful, it's important that stakeholders digesting these numbers understand how many unknowns there are to still understand in this area.\n\n12. Beyond the average risk reduction, would it be helpful to understand the variance in outcomes, e.g., which strategies have high variance in outcome? Can the authors speak to that dimension even qualitatively?\n\n13. Perhaps one set of simulations with a finite and varying number of loci would be useful to guide intuition on when the infinitesimal model is appropriate. From experiences in other examples, the infinitesimal can already provide useful predictions for what might at first seem like small numbers of loci and if that holds in this case it might be useful for readers to understand who might otherwise be too quickly dismissive.\n\n14. For clarity, please use a different variable besides in 'e' in sections where 'e' includes environment plus unmeasured genetic effects. Perhaps 'u' for \"un-measured\" effects?\n\n15. Equation 16, ei* was not explicitly defined, even if it's inferable from context it would be nice to define.\n",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7ffe84d3-478a-427b-beb2-ee4cedd603b4",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C1",
+      "claim": "Polygenic risk scores (PRSs) have been offered since 2019 to screen in vitro fertilization embryos for genetic liability to adult diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic risk scores (PRSs) have been offered since 2019 to screen in vitro fertilization embryos for genetic liability to adult diseases, despite a lack of comprehensive modeling of expected outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about when PES services began being offered, supported by citation to Treff et al., 2019a in the Introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "c00df6a4-b752-4d7e-b360-acbcf5c6fbe5",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C2",
+      "claim": "Polygenic embryo screening has been offered since 2019 despite a lack of comprehensive modeling of expected outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Polygenic risk scores (PRSs) have been offered since 2019 to screen in vitro fertilization embryos for genetic liability to adult diseases, despite a lack of comprehensive modeling of expected outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by the subsequent analysis in the paper.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "3811469d-1e03-4f05-a963-40ec75a0ae30",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C3",
+      "claim": "When only embryos with a very high PRS are excluded, the achieved risk reduction is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "When only embryos with a very high PRS are excluded, the achieved risk reduction is minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data shown in Figure 2 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "7503550f-1f85-4f7f-8d42-d18d9ef7a0e9",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C4",
+      "claim": "Selecting the embryo with the lowest PRS can lead to substantial relative risk reductions, given a sufficient number of viable embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, selecting the embryo with the lowest PRS can lead to substantial relative risk reductions, given a sufficient number of viable embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by theoretical modeling and simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "403e2d9e-26fe-4f88-a4c5-f3a453627670",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C5",
+      "claim": "The selection strategy is a strong determinant of the potential utility of polygenic embryo screening.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong determinant of the potential utility of such screening is the selection strategy, a factor that has not been previously studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a central finding of the study, demonstrated through comparative analysis of HRE and LRP strategies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "0d85d3a3-2849-4477-9f9e-92ccced1599d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C6",
+      "claim": "Screening embryos on the basis of polygenic scores for quantitative traits has limited utility in most realistic scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently demonstrated that screening embryos on the basis of polygenic scores for quantitative traits (such as height or intelligence) has limited utility in most realistic scenarios (Karavani et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "97ea7ba0-2a73-4699-9fdf-369ca2999899",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C7",
+      "claim": "The accuracy of the score is a more significant determinant of PES utility for quantitative traits compared with the number of available embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently demonstrated that screening embryos on the basis of polygenic scores for quantitative traits (such as height or intelligence) has limited utility in most realistic scenarios (Karavani et al., 2019), and that the accuracy of the score is a more significant determinant of PES utility for quantitative traits compared with the number of available embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "32e27e48-9f4e-40c6-ba4b-ef6ac728f8b0",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C8",
+      "claim": "A series of four studies conducted by a private company providing PES services has suggested that PES for dichotomous disease risk may have significant clinical utility.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a series of four studies (Lello et al., 2020; Treff et al., 2019a; Treff et al., 2020; Treff et al., 2019b) conducted by a private company providing PES services has suggested that PES for dichotomous disease risk may have significant clinical utility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "2874cae9-a6a5-4889-bd4c-f3c87526a9f5",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C9",
+      "claim": "Previous studies examining PES examined a relatively limited range of scenarios, primarily focusing on distinctions between sibling pairs discordant for illness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these studies examined a relatively limited range of scenarios, primarily focusing on distinctions between sibling pairs discordant for illness, and did not provide a comprehensive examination of various potential PES settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "41647a6f-a386-4c50-bb40-c9e9b6c7666e",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C12",
+      "claim": "The common-variant SNP heritability is at most \u224830% even for the most heritable diseases such as schizophrenia and celiac disease.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the common-variant SNP heritability is at most \u224830% even for the most heritable diseases such as schizophrenia and celiac disease (Holland et al., 2020; Zhang et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about heritability limits is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "4723d423-c868-40d3-b0ab-059ef63e11c5",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C14",
+      "claim": "The overwhelming majority of affected individuals do not have extreme scores.",
+      "claim_type": "EXPLICIT",
+      "source": "These gains achieved with HRE are small because the overwhelming majority of affected individuals do not have extreme scores (Murray et al., 2021; Wald and Old, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation for limited HRE effectiveness is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "9f2cb8ff-e4af-4ec6-991b-27be714505dc",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C18",
+      "claim": "RRR continues to increase as the number of available embryos increases, but the gains are quickly diminishing after n=5.",
+      "claim_type": "EXPLICIT",
+      "source": "While RRR continues to increase as the number of available embryos increases, the gains are quickly diminishing after n=5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "524f0929-3d48-4178-8b9f-c24e28369722",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C19",
+      "claim": "RRR drops steeply if the number of embryos falls below n=5.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Figure 2 also demonstrates that RRR drops steeply if the number of embryos falls below n=5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "4592f491-0e2c-49aa-8ce0-1edd8477103c",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C20",
+      "claim": "The lower bound for RRR when just two embryos are available (\u224820% for many scenarios) is still comparable to the upper bound of the HRE strategy for a greater number of embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "although the lower bound for RRR when just two embryos are available (\u224820% for many scenarios) is still comparable to the upper bound of the HRE strategy for a greater number of embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is based on data from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "948053ac-c2e8-493c-b666-8797c2e1af06",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C21",
+      "claim": "The mean gain in IQ that could be achieved by selecting the embryo with the highest IQ polygenic score is approximately \u22482.5 IQ points.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimate for the mean gain in IQ that could be achieved by selecting the embryo with the highest IQ polygenic score is approximately \u22482.5 IQ points (Karavani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This estimate is from prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "f926e379-52ea-413b-b553-d770f2efedec",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C22",
+      "claim": "Among individuals with IQ<70, the proportion of individuals with IQ in the range [67.5,70] is 33.5% (assuming a normal distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "Among individuals with IQ<70, the proportion of individuals with IQ in the range [67.5,70] is 33.5% (assuming a normal distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical calculation based on the normal distribution assumption.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "fa09d3b9-2f14-428c-91e0-e2ae85c05c52",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C23",
+      "claim": "The HRE strategy shows greater relative risk reduction as parental PRS increases, in particular when excluding only very high-scoring embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3 demonstrates that, as expected, the HRE strategy shows greater relative risk reduction as parental PRS increases, in particular when excluding only very high-scoring embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is demonstrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ce47221b-3d41-4e81-9858-b2590fae5d86",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C24",
+      "claim": "The relative RR for the LRP strategy somewhat declines as parental PRSs increase.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the relative RR (although not the absolute RR; see next section) for the LRP strategy somewhat declines as parental PRSs increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "248b12ee-8b63-44ae-a6e9-d68f8f540799",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C25",
+      "claim": "The RRR for the LRP strategy remains greater than that for the HRE strategy across all parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the RRR for the LRP strategy remains greater than that for the HRE strategy across all parameters (as expected by the definitions of these strategies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3 and follows from the strategy definitions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "03d33642-4983-42a9-9776-49403314accd",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C26",
+      "claim": "Parental disease status has relatively little impact on the expected RRR.",
+      "claim_type": "EXPLICIT",
+      "source": "The figure illustrates that parental disease status has relatively little impact on the expected RRR (especially in comparison to the changes under HRE when conditioning on the actual parental PRSs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "17ac2af0-8318-4e1c-9697-b6236f36be5c",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C28",
+      "claim": "While RRRs under the LRP strategy somewhat decrease with increasing parental PRSs, the ARRs substantially increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, while RRRs under the LRP strategy somewhat decrease with increasing parental PRSs, the ARRs substantially increase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "6b19f8d2-8c7e-48b5-8184-65dd42834674",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C29",
+      "claim": "Schizophrenia is a highly heritable serious mental illness with prevalence of at most 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, schizophrenia is a highly heritable (Sullivan et al., 2003) serious mental illness with prevalence of at most 1% (Per\u00e4l\u00e4 et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about schizophrenia characteristics is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "714d7894-c3a5-4316-a586-cee925fab3af",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C30",
+      "claim": "The most recent large-scale GWAS meta-analysis for schizophrenia has reported that a PRS accounts for approximately 8% of the variance on the liability scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent large-scale GWAS meta-analysis for schizophrenia (Ripke et al., 2020) has reported that a PRS accounts for approximately 8% of the variance on the liability scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the PGC schizophrenia GWAS.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "9946ba71-896e-4c4d-895c-438abbf13101",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C31",
+      "claim": "For schizophrenia, a 52% RRR is attainable using the LRP strategy with n=5 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that a 52% RRR is attainable using the LRP strategy with n=5 embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model for schizophrenia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "f40d0570-8945-40cf-9604-498226b88d88",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C32",
+      "claim": "For schizophrenia with LRP and n=5 embryos, the 52% RRR translates to only \u22480.5 percentage points reduction on the absolute scale.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this translates to only \u22480.5 percentage points reduction on the absolute scale: a randomly-selected embryo would have a 99% chance of not developing schizophrenia, compared to a 99.5% chance for an embryo selected according to LRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "25465ddf-4a05-4709-bb44-7aec38b8006c",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C33",
+      "claim": "Type 2 diabetes has a lifetime prevalence in excess of 20% in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of a more common disease such as type 2 diabetes, with a lifetime prevalence in excess of 20% in the United States (Geiss et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prevalence estimate is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "6219c9af-51c2-4256-abe2-1f32aa31db41",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C34",
+      "claim": "For type 2 diabetes, the RRR with n=5 embryos (if the full SNP heritability of 17% were achieved) is 43%, which would correspond to >8 percentage points reduction in absolute risk.",
+      "claim_type": "EXPLICIT",
+      "source": "the RRR with n=5 embryos (if the full SNP heritability of 17% [Zhang et al., 2018] were achieved) is 43%, which would correspond to >8 percentage points reduction in absolute risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model prediction for type 2 diabetes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "667f705a-a469-4897-9049-087db9d070f7",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C35",
+      "claim": "The pcRRR is relatively narrowly distributed around its mean, for all values of the prevalence (K) considered.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that the pcRRR is relatively narrowly distributed around its mean, for all values of the prevalence (K) considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4, panels A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "b0f578e6-d660-43d3-b10f-962a376372f8",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C37",
+      "claim": "The population-averaged RRRs are not driven by a small proportion of the couples.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the population-averaged RRRs are not driven by a small proportion of the couples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the narrow distribution of pcRRR shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "637ad356-5284-46ac-a938-6c1a7adba448",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C38",
+      "claim": "The pcRRR depends only weakly on the average parental PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, the pcRRR depends only weakly on the average parental PRS, as can be seen in panels (D)-(F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4, panels D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "08fee7c2-b068-45a5-8c01-3480a2c406b5",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C39",
+      "claim": "The most negative correlation between two diseases reported in LDHub is \u22120.3, occurring between ulcerative colitis and chronic kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The most negative correlation between two diseases reported in LDHub (https://ldsc.broadinstitute.org/ldhub/) is \u22120.3, occurring between ulcerative colitis and chronic kidney disease (Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to LDHub data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ea0a5b27-9091-4562-a608-a6a8aaf6441e",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C40",
+      "claim": "Negative correlations between diseases are uncommon, and when they occur, typical correlations are about \u22120.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, negative correlations between diseases are uncommon, and when they occur, typical correlations are about \u22120.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about disease correlations based on knowledge from LDHub.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "9c92ec45-1510-45e5-b81a-b78a69c46680",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C41",
+      "claim": "For typical values of \u03c1=-0.1 and n=5, the relative increase in risk of the correlated disease is relatively small, at \u22486% for K\u22640.05 and \u22483.5% for K=0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For typical values of \u03c1=-0.1 and n=5, the relative increase in risk of the correlated disease is relatively small, at \u22486% for K\u22640.05 and \u22483.5% for K=0.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "5d156e7a-757e-4f72-9d78-e39406581e9d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C42",
+      "claim": "For strong negative correlation (\u03c1=-0.3), the increase in risk can reach 22%, 16%, or 11% for K=0.01, 0.05 and 0.2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for strong negative correlation (\u03c1=-0.3) the increase in risk can reach 22%, 16%, or 11% for K=0.01, 0.05 and 0.2, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "d0fdad4a-4e92-4583-9fcc-103b7a3232a5",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C43",
+      "claim": "The analytical predictions closely match the empirical risk reductions generated in the simulations for schizophrenia and Crohn's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical predictions closely match the empirical risk reductions generated in the simulations, except for a slight overestimation of the RRR under the LRP strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "59c6066e-8fad-41eb-b661-a2392065f682",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C44",
+      "claim": "For both schizophrenia and Crohn's disease, RRRs as high as \u224845% are achievable with n=5 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, for both schizophrenia and Crohn's disease, we empirically observe that RRRs as high as \u224845% are achievable with n=5 embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "60c267fd-bdc1-42d1-b046-c757e95a7f20",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C45",
+      "claim": "Under the HRE strategy and when excluding embryos at the top 2% risk percentiles, risk reductions are very small, in agreement with the theoretical predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, under the HRE strategy and when excluding embryos at the top 2% risk percentiles, risk reductions are very small, in agreement with the theoretical predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "52fc66d9-ea31-4ec3-a040-003535e23bf7",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C46",
+      "claim": "The liability threshold model has been shown to be consistent with data from family-based transmission studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The liability threshold model has been shown to be consistent with data from family-based transmission studies (Wray and Goddard, 2010) and GWAS data (Visscher and Wray, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the LTM is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "0e0dbd99-18bd-4f65-acc4-4f12c8f19149",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C47",
+      "claim": "The liability threshold model has been shown to be consistent with GWAS data.",
+      "claim_type": "EXPLICIT",
+      "source": "The liability threshold model has been shown to be consistent with data from family-based transmission studies (Wray and Goddard, 2010) and GWAS data (Visscher and Wray, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the LTM is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "c08229e3-490d-46d4-a118-abf94fe945b3",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C48",
+      "claim": "Common, complex traits and diseases are highly polygenic.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has been repeatedly demonstrated that common, complex traits and diseases are highly polygenic (Gazal et al., 2017; Holland et al., 2020; O'Connor et al., 2019; Shi et al., 2016; Zeng et al., 2018; Zeng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "51be51e4-cabe-4552-8bf0-6a93c97f9a3d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C49",
+      "claim": "For almost all traits and diseases examined, the number of independently associated loci was at least \u2248350, reaching \u224810,000 or more for cognitive and psychiatric phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was recently estimated that for almost all traits and diseases examined, the number of independently associated loci was at least \u2248350, reaching \u224810,000 or more for cognitive and psychiatric phenotypes (O'Connor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "aa46c611-bb41-4a7e-a571-0c0c45ee089d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C50",
+      "claim": "For genetic disease risk, correlation between parents is weak.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we did not explicitly model assortative mating, although this seems reasonable given that for genetic disease risk, correlation between parents is weak (Rawlik et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "0eafa71a-b3a3-415b-a6a2-fade2d565759",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C51",
+      "claim": "Family-specific environmental effects have been shown to be weak for complex diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is reasonable given that family-specific environmental effect have been shown to be weak for complex diseases (Wang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "fc9e0c20-aec7-4e0c-93aa-29243cc2b176",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C52",
+      "claim": "The accuracy of PRSs is sub-optimal when applied in non-European populations and across different socio-economic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the accuracy of PRSs is sub-optimal when applied in non-European populations and across different socio-economic groups (Duncan et al., 2019; Mostafavi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "a391904b-f209-4901-971d-5c8118f86073",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C53",
+      "claim": "The variance explained by the score, as estimated in samples of unrelated individuals, is inflated due to population stratification, assortative mating, and indirect parental effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the variance explained by the score, as estimated in samples of unrelated individuals, is inflated due to population stratification, assortative mating, and indirect parental effects (Kong et al., 2018; Young et al., 2019; Morris et al., 2020; Mostafavi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "d8915385-2d74-4b9f-b076-8aadb91e7fb9",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C54",
+      "claim": "Genetic nurture refers to trait-modifying environmental effects induced by the parents based on their genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter, also called 'genetic nurture', refers to trait-modifying environmental effects induced by the parents based on their genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of genetic nurture.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "1fbaff10-9821-4f3b-898c-f25fb8f011d9",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C55",
+      "claim": "Genetic nurture effects do not contribute to prediction accuracy when comparing polygenic scores between siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "These effects do not contribute to prediction accuracy when comparing polygenic scores between siblings (as when screening IVF embryos)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about genetic nurture in the sibling comparison context.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "24dc5c5d-7be7-49ae-98c5-355e8b850137",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C56",
+      "claim": "The variance explained by polygenic scores in the sibling comparison setting can be substantially reduced, in particular for cognitive and behavioral traits.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus, the variance explained by polygenic scores in this setting can be substantially reduced, in particular for cognitive and behavioral traits (Howe et al., 2021; Selzam et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "55b2ee4b-8de8-4304-a4ed-7aba4a5b7810",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C57",
+      "claim": "Recent empirical work on within-family disease risk prediction showed that the reduction in accuracy is at most modest.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, recent empirical work on within-family disease risk prediction showed that the reduction in accuracy is at most modest (Lello et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "3d77511d-c84e-4596-9418-224a19a83d72",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C58",
+      "claim": "Within-siblings-GWAS yielded similar results to unrelated-GWAS for most physiological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "and within-siblings-GWAS yielded similar results to unrelated-GWAS for most physiological traits (Howe et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "4d0e39e8-be13-4eca-9078-81228c2d3ee3",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C59",
+      "claim": "Rates of live birth decline with maternal age, in particular after age 40.",
+      "claim_type": "EXPLICIT",
+      "source": "Rates of live birth decline with maternal age, in particular after age 40 (Smith et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "e536eb33-9b96-495d-91e5-070a292a9635",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C60",
+      "claim": "For women of age >42, fewer than 4% of IVF cycles result in live births.",
+      "claim_type": "EXPLICIT",
+      "source": "for women of age >42, fewer than 4% of IVF cycles result in live births, making PES impractical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on cited data about IVF success rates.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ff3371ee-23d7-401e-923c-fd4465f3cf68",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C61",
+      "claim": "Several recent studies have demonstrated no evidence for potential adverse effects of trophectoderm biopsy on rates of successful implantation, fetal anomalies, and live birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have demonstrated no evidence for potential adverse effects of trophectoderm biopsy on rates of successful implantation, fetal anomalies, and live birth (Awadalla et al., 2021; He et al., 2019; Riestenberg et al., 2021; Tiegs et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "5bd6974a-1752-4b14-8ea6-5ed2d6978028",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C62",
+      "claim": "No significant adverse effects have been detected for postnatal child development in a recent meta-analysis of trophectoderm biopsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no significant adverse effects have been detected for postnatal child development in a recent meta-analysis (Natsuaki and Dimler, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a meta-analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "c4640935-b99e-407c-8851-fd70e11b48be",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C63",
+      "claim": "A number of studies have reported that trophectoderm biopsy was associated with pregnancy complications, including preterm birth, pre-eclampsia, and hypertensive disorders of pregnancy.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, a number of studies have reported that trophectoderm biopsy was associated with pregnancy complications, including preterm birth, pre-eclampsia, and hypertensive disorders of pregnancy (Li et al., 2021; Zhang et al., 2019; Makhijani et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "e472fcfe-172a-4b28-b521-275f8f06dfba",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C64",
+      "claim": "In the first PES case report, the couple elected to forego any implantation despite the availability of embryos that were designated as normal risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the first PES case report, the couple elected to forego any implantation despite the availability of embryos that were designated as normal risk (Treff et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "4ba17b1f-8cdb-4165-a78d-09254a79a82d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C65",
+      "claim": "The study used \u2248900 cases and \u22481600 controls of Ashkenazi Jewish ancestry for schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "For schizophrenia, we used \u2248900 cases and \u22481600 controls of Ashkenazi Jewish ancestry",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "3b1b6698-2b98-432a-8157-473108eab0a2",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C66",
+      "claim": "The study used \u2248150 cases and \u2248100 controls of European ancestry for Crohn's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "while for Crohn's, we used \u2248150 cases and \u2248100 controls of European ancestry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "b8386982-a4f9-47d9-85b5-405566183212",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C69",
+      "claim": "The first case report presented on PES described the identification and exclusion of embryos with extremely high (top 2-percentiles) PRS.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the first case report presented on PES described the identification and exclusion of embryos with extremely high (top 2-percentiles) PRS (Treff et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the case report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ed4b5b0c-ca29-46cc-a04f-b49c1464f0b8",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C70",
+      "claim": "Ranking and prioritizing embryos for implantation based on morphology is common in current IVF practice.",
+      "claim_type": "EXPLICIT",
+      "source": "Ranking and prioritizing embryos for implantation based on morphology is common in current IVF practice (Bormann et al., 2020; Montag et al., 2013; Rhenman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "c98565fa-650c-48d6-85c4-3d7a0b33d7f3",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C71",
+      "claim": "The use of PRS in adults has focused on those at highest risk.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of PRS in adults has focused on those at highest risk (Chatterjee et al., 2016; Dai et al., 2019; Gibson, 2019; Khera et al., 2018; Mars et al., 2020; Mavaddat et al., 2019; Torkamani et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "02d32065-2ccd-4e96-a1cd-db655c9952fe",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C72",
+      "claim": "PRSs have relatively low sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as PRSs have relatively low sensitivity, such a strategy is relatively ineffective in reducing the overall population disease burden (Ala-Korpela and Holmes, 2020; Wald and Old, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "93d73a15-e479-4662-ae69-7744772cb00b",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C73",
+      "claim": "A high-risk exclusion strategy is relatively ineffective in reducing the overall population disease burden.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as PRSs have relatively low sensitivity, such a strategy is relatively ineffective in reducing the overall population disease burden (Ala-Korpela and Holmes, 2020; Wald and Old, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and the study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ed183256-7229-4707-89bb-44fd0bed89c0",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C74",
+      "claim": "Most of the individuals in the extreme of the liability distribution (i.e. the ones affected) are concentrated very near the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "For such traits, most of the individuals in the extreme of the liability distribution (i.e. the ones affected) are concentrated very near the threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the liability threshold model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "d467545c-7b5b-4fbe-81b5-b0796499fb13",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C75",
+      "claim": "Slightly reducing liability can move a large proportion of affected individuals below the disease threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even slightly reducing their liability can move a large proportion of affected individuals below the disease threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the properties of the liability threshold model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "936ce9b1-5783-47f8-b816-ca8b3cf9c9b8",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C77",
+      "claim": "The absolute risk reduction is defined as K-P(disease).",
+      "claim_type": "EXPLICIT",
+      "source": "the absolute risk reduction (ARR) is defined as K-P(disease).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided in the methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "f91d10e2-50c3-4c5c-958a-84c88caf76e9",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C78",
+      "claim": "The per-couple relative risk reduction (pcRRR) is the relative risk reduction conditional on the PRSs of the couple.",
+      "claim_type": "EXPLICIT",
+      "source": "Informally, the pcRRR is the relative risk reduction conditional of the PRSs of the couple.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition introduced in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "ea457485-5d33-40b6-8390-8fdcea343fb6",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "claim_id": "C79",
+      "claim": "The pcRRR depends only on the average of the maternal and paternal PRSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conveniently, the pcRRR depends only on the average of the maternal and paternal PRSs, which we denote as c.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the theoretical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "961ffbe6-ef33-4f94-bb12-8a049dff5f5c",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Polygenic embryo screening (PES) has been commercially available since 2019 despite limited comprehensive modeling of expected outcomes. Prior studies by companies offering PES suggested clinical utility but examined limited scenarios, primarily sibling pairs discordant for illness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8, and C9 are well-supported by citations to prior work (Treff et al., 2019a; Lello et al., 2020). These claims accurately characterize the state of the field and provide appropriate context for the current study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "eede4a27-fc7f-48dc-944c-888faf7b913d",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The high-risk exclusion (HRE) strategy, which excludes only embryos with very high PRS (e.g., top 2%), achieves minimal risk reduction because the overwhelming majority of affected individuals do not have extreme scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, and C45 are supported by theoretical modeling (Figure 2), simulations with real genomes (Figure 6), and citations to prior literature. The theoretical predictions match empirical results for both schizophrenia and Crohn's disease, demonstrating consistency across methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The lowest-risk prioritization (LRP) strategy, which selects the embryo with the lowest PRS, achieves substantial relative risk reductions (up to ~45-50% with n=5 embryos). Risk reduction increases with more embryos but with diminishing returns after n=5, and drops steeply below n=5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18, C19, C20, and C44 are strongly supported by theoretical modeling (Figure 2), Monte Carlo simulations, and validation with real genomes from schizophrenia and Crohn's disease cohorts (Figure 6). The consistency across multiple analytical approaches strengthens these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "96fc2859-7fb6-457c-a629-8ca2007cc994",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Selection strategy is a strong determinant of PES utility, with LRP consistently outperforming HRE across all parameter combinations examined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C25 represent a central finding demonstrated through comprehensive comparative analysis across multiple figures (Figures 2, 3, 6). The superiority of LRP over HRE is both theoretically predicted and empirically validated, making this a robust conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "157d2791-d23a-4d73-8e66-b926b43e4f11",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under HRE, relative risk reduction increases with parental PRS (especially when excluding only high-scoring embryos), while under LRP, relative risk reduction somewhat declines with increasing parental PRS. Parental disease status has relatively little impact on expected RRR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C26 are supported by theoretical analysis and simulations shown in Figure 3 and Figure 3\u2014figure supplement 1. The findings follow logically from the model assumptions and are consistent with the definitions of the strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "287867ca-482e-4b65-a476-725760ac1f5f",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "While relative risk reductions can be substantial, absolute risk reductions depend heavily on disease prevalence. For rare diseases like schizophrenia (K=1%), a 52% RRR translates to only ~0.5 percentage points absolute reduction, whereas for common diseases like type 2 diabetes (K>20%), the absolute reduction exceeds 8 percentage points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C31, C32, and C34 are supported by model predictions and calculations shown in Figure 3\u2014figure supplement 2. The mathematical relationship between relative and absolute risk reduction is correctly applied, and the examples illustrate the clinical importance of considering both metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "e0bc5f2b-07f9-4ae8-98c9-8c477c610c62",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The per-couple relative risk reduction (pcRRR) is relatively narrowly distributed around its mean and depends only weakly on average parental PRS. Population-averaged RRRs are not driven by a small proportion of couples, and pcRRR depends only on the average of maternal and paternal PRSs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C37, C38, and C79 are supported by theoretical analysis and shown in Figure 4. The narrow distribution of pcRRR across couples is demonstrated empirically, and the mathematical derivation showing dependence only on average parental PRS is provided in the Appendix.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "b5448164-e4ba-49d2-af87-85296ed5596e",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "When selecting for one disease, negatively correlated diseases show increased risk. For typical negative correlations (\u03c1=-0.1), risk increases are small (3.5-6%), but for strong negative correlations (\u03c1=-0.3), increases can reach 11-22% depending on prevalence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C40, C41, and C42 are supported by simulations (Figure 5) and citations to LDHub data. The analysis appropriately considers pleiotropic effects, though it is limited to pairwise disease correlations and does not address multi-disease screening comprehensively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "df8b642b-e23f-437f-a3b0-37a89357def8",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Analytical predictions closely match empirical risk reductions from simulations using real genomes from schizophrenia (~900 cases, ~1600 controls) and Crohn's disease (~150 cases, ~100 controls) case-control studies, with slight overestimation of RRR under LRP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C65, and C66 are supported by the validation analysis shown in Figure 6. The close agreement between theory and simulations based on real genomes strengthens confidence in the model, though the slight overestimation under LRP is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "f5f4f545-909e-4280-8866-8acbec1030f9",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A gain of ~2.5 IQ points from selecting the highest-scoring embryo can prevent 33.5% of cases with IQ<70, illustrating how small shifts in quantitative traits can produce large reductions in dichotomous disease risk near thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 are supported by prior work (C21) and mathematical calculation based on normal distribution assumptions (C22). This example effectively illustrates the relationship between quantitative trait changes and dichotomous disease risk, though it relies on the assumption of a sharp threshold at IQ=70.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "6deb7a3c-72e6-40fa-ab76-808fbafcd74b",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The liability threshold model (LTM) is consistent with family-based transmission and GWAS data. Complex diseases are highly polygenic, with at least ~350 independently associated loci for most traits, reaching ~10,000 or more for cognitive and psychiatric phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C47, C48, and C49 are supported by multiple citations to established literature. These claims provide appropriate justification for the modeling approach, though the authors acknowledge the LTM may not apply to oligogenic or monogenic disorders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "e24878bd-312f-4e24-9af9-2a28ced96a6e",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Common-variant SNP heritability is at most ~30% for highly heritable diseases like schizophrenia and celiac disease. Schizophrenia has prevalence \u22641% and current PRS explain ~8% of liability variance. Type 2 diabetes has prevalence >20% in the US.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C29, C30, and C33 are supported by appropriate citations to recent GWAS and epidemiological studies. These parameter values are used throughout the modeling and represent reasonable estimates based on current literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "fb0a3672-a3d9-48cd-9132-75fcdaede322",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PRS accuracy may be reduced in real-world settings due to population stratification, assortative mating, indirect parental effects, and genetic nurture. However, within-family disease risk prediction shows modest accuracy reduction, and within-sibling GWAS yield similar results to unrelated-GWAS for most physiological traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, C55, C56, C57, and C58 are supported by citations to recent literature. The authors appropriately acknowledge limitations of their model while noting that empirical evidence suggests these effects may be modest for disease prediction, though more substantial for cognitive/behavioral traits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IVF success rates decline with maternal age, particularly after age 40, with <4% live birth rates for women >42. Evidence on trophectoderm biopsy safety is mixed: some studies show no adverse effects on implantation or child development, while others report associations with pregnancy complications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C60, C61, C62, and C63 are supported by citations to clinical literature. The authors appropriately present both sides of the evidence on biopsy safety, acknowledging uncertainty in this area. These claims provide important clinical context for interpreting the theoretical results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "6389bf6c-e30f-4395-991d-881edabb5c9b",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work by the authors showed that PES for quantitative traits has limited utility in most realistic scenarios, with score accuracy being more important than embryo number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by citation to the authors' prior work (Karavani et al., 2019). These claims provide appropriate context for the current study's focus on dichotomous disease outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "21b263e0-c55a-48c8-ba2b-067099976d1a",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Model assumptions regarding weak parental correlation for genetic disease risk and weak family-specific environmental effects for complex diseases are justified by prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 are supported by citations. These assumptions are reasonable for the modeling approach, though the authors acknowledge they represent simplifications of reality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Current clinical practice includes ranking embryos by morphology and using PRS to identify high-risk adults. However, PRSs have low sensitivity, making high-risk exclusion strategies relatively ineffective for reducing population disease burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C70, C71, C72, and C73 are supported by multiple citations to clinical and epidemiological literature. These claims provide important context for understanding why HRE strategies show limited effectiveness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "15bfecc6-5c79-490e-a931-698dee14f65a",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Under the liability threshold model, most affected individuals are concentrated near the disease threshold, so even small reductions in liability can move many individuals below the threshold, explaining why LRP is effective for dichotomous traits despite small effects on quantitative traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C75 represent logical inferences from the properties of the liability threshold model, supported by the authors' theoretical framework and consistent with the empirical results. This provides important mechanistic insight into the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "3714a83e-d59f-48b8-b675-dec801919864",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In the first PES case report, the couple chose not to implant any embryo despite availability of normal-risk embryos, illustrating potential communication challenges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citation to the case report (Treff et al., 2019a). This example illustrates practical challenges in implementing PES, though it is based on a single case.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    },
+    {
+      "id": "0c237aa5-3916-41d5-8091-2d2a5b4803f2",
+      "content_id": "0a228f60-ad7c-41b1-8da7-fe4b1da1ce1f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study defines key terms: genetic nurture refers to trait-modifying environmental effects from parental genotypes; absolute risk reduction (ARR) is K-P(disease); per-couple relative risk reduction (pcRRR) is RRR conditional on couple PRSs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C77, and C78 provide definitions that are standard (C54, C77) or newly introduced by the authors (C78). These definitions are clearly stated and consistently applied throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:10:41.339548Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7ffe84d3-478a-427b-beb2-ee4cedd603b4",
+      "result_id": "961ffbe6-ef33-4f94-bb12-8a049dff5f5c"
+    },
+    {
+      "claim_id": "c00df6a4-b752-4d7e-b360-acbcf5c6fbe5",
+      "result_id": "961ffbe6-ef33-4f94-bb12-8a049dff5f5c"
+    },
+    {
+      "claim_id": "32e27e48-9f4e-40c6-ba4b-ef6ac728f8b0",
+      "result_id": "961ffbe6-ef33-4f94-bb12-8a049dff5f5c"
+    },
+    {
+      "claim_id": "2874cae9-a6a5-4889-bd4c-f3c87526a9f5",
+      "result_id": "961ffbe6-ef33-4f94-bb12-8a049dff5f5c"
+    },
+    {
+      "claim_id": "3811469d-1e03-4f05-a963-40ec75a0ae30",
+      "result_id": "eede4a27-fc7f-48dc-944c-888faf7b913d"
+    },
+    {
+      "claim_id": "4723d423-c868-40d3-b0ab-059ef63e11c5",
+      "result_id": "eede4a27-fc7f-48dc-944c-888faf7b913d"
+    },
+    {
+      "claim_id": "60c267fd-bdc1-42d1-b046-c757e95a7f20",
+      "result_id": "eede4a27-fc7f-48dc-944c-888faf7b913d"
+    },
+    {
+      "claim_id": "7503550f-1f85-4f7f-8d42-d18d9ef7a0e9",
+      "result_id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6"
+    },
+    {
+      "claim_id": "9f2cb8ff-e4af-4ec6-991b-27be714505dc",
+      "result_id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6"
+    },
+    {
+      "claim_id": "524f0929-3d48-4178-8b9f-c24e28369722",
+      "result_id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6"
+    },
+    {
+      "claim_id": "4592f491-0e2c-49aa-8ce0-1edd8477103c",
+      "result_id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6"
+    },
+    {
+      "claim_id": "59c6066e-8fad-41eb-b661-a2392065f682",
+      "result_id": "b3650ad5-19f7-41bb-89db-d5d81cb4fde6"
+    },
+    {
+      "claim_id": "403e2d9e-26fe-4f88-a4c5-f3a453627670",
+      "result_id": "96fc2859-7fb6-457c-a629-8ca2007cc994"
+    },
+    {
+      "claim_id": "248b12ee-8b63-44ae-a6e9-d68f8f540799",
+      "result_id": "96fc2859-7fb6-457c-a629-8ca2007cc994"
+    },
+    {
+      "claim_id": "fa09d3b9-2f14-428c-91e0-e2ae85c05c52",
+      "result_id": "157d2791-d23a-4d73-8e66-b926b43e4f11"
+    },
+    {
+      "claim_id": "ce47221b-3d41-4e81-9858-b2590fae5d86",
+      "result_id": "157d2791-d23a-4d73-8e66-b926b43e4f11"
+    },
+    {
+      "claim_id": "03d33642-4983-42a9-9776-49403314accd",
+      "result_id": "157d2791-d23a-4d73-8e66-b926b43e4f11"
+    },
+    {
+      "claim_id": "17ac2af0-8318-4e1c-9697-b6236f36be5c",
+      "result_id": "287867ca-482e-4b65-a476-725760ac1f5f"
+    },
+    {
+      "claim_id": "9946ba71-896e-4c4d-895c-438abbf13101",
+      "result_id": "287867ca-482e-4b65-a476-725760ac1f5f"
+    },
+    {
+      "claim_id": "f40d0570-8945-40cf-9604-498226b88d88",
+      "result_id": "287867ca-482e-4b65-a476-725760ac1f5f"
+    },
+    {
+      "claim_id": "6219c9af-51c2-4256-abe2-1f32aa31db41",
+      "result_id": "287867ca-482e-4b65-a476-725760ac1f5f"
+    },
+    {
+      "claim_id": "667f705a-a469-4897-9049-087db9d070f7",
+      "result_id": "e0bc5f2b-07f9-4ae8-98c9-8c477c610c62"
+    },
+    {
+      "claim_id": "b0f578e6-d660-43d3-b10f-962a376372f8",
+      "result_id": "e0bc5f2b-07f9-4ae8-98c9-8c477c610c62"
+    },
+    {
+      "claim_id": "637ad356-5284-46ac-a938-6c1a7adba448",
+      "result_id": "e0bc5f2b-07f9-4ae8-98c9-8c477c610c62"
+    },
+    {
+      "claim_id": "ea457485-5d33-40b6-8390-8fdcea343fb6",
+      "result_id": "e0bc5f2b-07f9-4ae8-98c9-8c477c610c62"
+    },
+    {
+      "claim_id": "08fee7c2-b068-45a5-8c01-3480a2c406b5",
+      "result_id": "b5448164-e4ba-49d2-af87-85296ed5596e"
+    },
+    {
+      "claim_id": "ea0a5b27-9091-4562-a608-a6a8aaf6441e",
+      "result_id": "b5448164-e4ba-49d2-af87-85296ed5596e"
+    },
+    {
+      "claim_id": "9c92ec45-1510-45e5-b81a-b78a69c46680",
+      "result_id": "b5448164-e4ba-49d2-af87-85296ed5596e"
+    },
+    {
+      "claim_id": "5d156e7a-757e-4f72-9d78-e39406581e9d",
+      "result_id": "b5448164-e4ba-49d2-af87-85296ed5596e"
+    },
+    {
+      "claim_id": "d0fdad4a-4e92-4583-9fcc-103b7a3232a5",
+      "result_id": "df8b642b-e23f-437f-a3b0-37a89357def8"
+    },
+    {
+      "claim_id": "4ba17b1f-8cdb-4165-a78d-09254a79a82d",
+      "result_id": "df8b642b-e23f-437f-a3b0-37a89357def8"
+    },
+    {
+      "claim_id": "3b1b6698-2b98-432a-8157-473108eab0a2",
+      "result_id": "df8b642b-e23f-437f-a3b0-37a89357def8"
+    },
+    {
+      "claim_id": "948053ac-c2e8-493c-b666-8797c2e1af06",
+      "result_id": "f5f4f545-909e-4280-8866-8acbec1030f9"
+    },
+    {
+      "claim_id": "f926e379-52ea-413b-b553-d770f2efedec",
+      "result_id": "f5f4f545-909e-4280-8866-8acbec1030f9"
+    },
+    {
+      "claim_id": "52fc66d9-ea31-4ec3-a040-003535e23bf7",
+      "result_id": "6deb7a3c-72e6-40fa-ab76-808fbafcd74b"
+    },
+    {
+      "claim_id": "0e0dbd99-18bd-4f65-acc4-4f12c8f19149",
+      "result_id": "6deb7a3c-72e6-40fa-ab76-808fbafcd74b"
+    },
+    {
+      "claim_id": "c08229e3-490d-46d4-a118-abf94fe945b3",
+      "result_id": "6deb7a3c-72e6-40fa-ab76-808fbafcd74b"
+    },
+    {
+      "claim_id": "51be51e4-cabe-4552-8bf0-6a93c97f9a3d",
+      "result_id": "6deb7a3c-72e6-40fa-ab76-808fbafcd74b"
+    },
+    {
+      "claim_id": "41647a6f-a386-4c50-bb40-c9e9b6c7666e",
+      "result_id": "e24878bd-312f-4e24-9af9-2a28ced96a6e"
+    },
+    {
+      "claim_id": "6b19f8d2-8c7e-48b5-8184-65dd42834674",
+      "result_id": "e24878bd-312f-4e24-9af9-2a28ced96a6e"
+    },
+    {
+      "claim_id": "714d7894-c3a5-4316-a586-cee925fab3af",
+      "result_id": "e24878bd-312f-4e24-9af9-2a28ced96a6e"
+    },
+    {
+      "claim_id": "25465ddf-4a05-4709-bb44-7aec38b8006c",
+      "result_id": "e24878bd-312f-4e24-9af9-2a28ced96a6e"
+    },
+    {
+      "claim_id": "fc9e0c20-aec7-4e0c-93aa-29243cc2b176",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "a391904b-f209-4901-971d-5c8118f86073",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "1fbaff10-9821-4f3b-898c-f25fb8f011d9",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "24dc5c5d-7be7-49ae-98c5-355e8b850137",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "55b2ee4b-8de8-4304-a4ed-7aba4a5b7810",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "3d77511d-c84e-4596-9418-224a19a83d72",
+      "result_id": "fb0a3672-a3d9-48cd-9132-75fcdaede322"
+    },
+    {
+      "claim_id": "4d0e39e8-be13-4eca-9078-81228c2d3ee3",
+      "result_id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3"
+    },
+    {
+      "claim_id": "e536eb33-9b96-495d-91e5-070a292a9635",
+      "result_id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3"
+    },
+    {
+      "claim_id": "ff3371ee-23d7-401e-923c-fd4465f3cf68",
+      "result_id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3"
+    },
+    {
+      "claim_id": "5bd6974a-1752-4b14-8ea6-5ed2d6978028",
+      "result_id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3"
+    },
+    {
+      "claim_id": "c4640935-b99e-407c-8851-fd70e11b48be",
+      "result_id": "90b4a607-3e63-4a6f-9c2e-08d0e7c725c3"
+    },
+    {
+      "claim_id": "0d85d3a3-2849-4477-9f9e-92ccced1599d",
+      "result_id": "6389bf6c-e30f-4395-991d-881edabb5c9b"
+    },
+    {
+      "claim_id": "97ea7ba0-2a73-4699-9fdf-369ca2999899",
+      "result_id": "6389bf6c-e30f-4395-991d-881edabb5c9b"
+    },
+    {
+      "claim_id": "aa46c611-bb41-4a7e-a571-0c0c45ee089d",
+      "result_id": "21b263e0-c55a-48c8-ba2b-067099976d1a"
+    },
+    {
+      "claim_id": "0eafa71a-b3a3-415b-a6a2-fade2d565759",
+      "result_id": "21b263e0-c55a-48c8-ba2b-067099976d1a"
+    },
+    {
+      "claim_id": "b8386982-a4f9-47d9-85b5-405566183212",
+      "result_id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f"
+    },
+    {
+      "claim_id": "ed4b5b0c-ca29-46cc-a04f-b49c1464f0b8",
+      "result_id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f"
+    },
+    {
+      "claim_id": "c98565fa-650c-48d6-85c4-3d7a0b33d7f3",
+      "result_id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f"
+    },
+    {
+      "claim_id": "02d32065-2ccd-4e96-a1cd-db655c9952fe",
+      "result_id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f"
+    },
+    {
+      "claim_id": "93d73a15-e479-4662-ae69-7744772cb00b",
+      "result_id": "de59a5cd-4de9-4018-bcb0-375c769f8f9f"
+    },
+    {
+      "claim_id": "ed183256-7229-4707-89bb-44fd0bed89c0",
+      "result_id": "15bfecc6-5c79-490e-a931-698dee14f65a"
+    },
+    {
+      "claim_id": "d467545c-7b5b-4fbe-81b5-b0796499fb13",
+      "result_id": "15bfecc6-5c79-490e-a931-698dee14f65a"
+    },
+    {
+      "claim_id": "e472fcfe-172a-4b28-b521-275f8f06dfba",
+      "result_id": "3714a83e-d59f-48b8-b675-dec801919864"
+    },
+    {
+      "claim_id": "d8915385-2d74-4b9f-b076-8aadb91e7fb9",
+      "result_id": "0c237aa5-3916-41d5-8091-2d2a5b4803f2"
+    },
+    {
+      "claim_id": "936ce9b1-5783-47f8-b816-ca8b3cf9c9b8",
+      "result_id": "0c237aa5-3916-41d5-8091-2d2a5b4803f2"
+    },
+    {
+      "claim_id": "f91d10e2-50c3-4c5c-958a-84c88caf76e9",
+      "result_id": "0c237aa5-3916-41d5-8091-2d2a5b4803f2"
+    }
+  ],
+  "comparisons": []
+}

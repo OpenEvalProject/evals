@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C112",
+      "C113"
+    ],
+    "result": "Hh pathway activity is graded along the distal-proximal axis of lamina columns prior to neuronal differentiation. scRNA-seq analysis revealed that Hh signalling targets (ptc, sim, rho, zfh1) are expressed at higher levels in the L1-L4 stream compared to the L5 stream, suggesting L5 precursors experience lower Hh signalling. In vivo validation using ptc-lacZ reporter showed a gradient of expression highest in distal lamina and decreasing proximally in young columns (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C52-57, C112-113 provide converging evidence from both scRNA-seq data analysis and in vivo reporter assays with appropriate statistical testing. The gradient of ptc-lacZ expression in young columns (C56) with statistical significance (p<0.0001) directly supports the conclusion of graded Hh pathway activity (C57). The scRNA-seq data (C52-55) provides molecular evidence consistent with the reporter data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The gradient in Hh pathway activity arises from a gradient of Hh ligand. Live imaging of Hh::GFP (a functional hh allele) in cultured brain explants revealed a distal-to-proximal gradient in the lamina (N=10). The measurements represent total Hh::GFP and do not distinguish between intracellular and extracellular protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-60 establish the presence of an Hh::GFP gradient, but the conclusion that ligand availability is responsible for the activity gradient (C60) is inferential. The measurements do not distinguish between intracellular and extracellular Hh::GFP (C111), which is a critical limitation for establishing that secreted ligand forms the gradient. The correlation between ligand distribution and pathway activity is suggestive but not definitive proof of causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74"
+    ],
+    "result": "Cell-autonomous manipulation of Hh signalling to extreme levels specifies distal or proximal lamina neuron identities. ptc mutant clones (maximal Hh signalling) contained only L2/L3 neurons (17/17 clones, fully penetrant), while smo mutant clones (no Hh signalling) produced no LPCs (15/15 clones, fully penetrant). These data demonstrate that high and low extremes of Hh pathway activity specify the most distal and proximal cell identities, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-68, C74 provide strong genetic evidence from MARCM clone experiments with fully penetrant phenotypes and appropriate sample sizes. The ptc mutant data (C66-67) shows specification of distal identities with maximal Hh, while smo mutant data (C68) confirms the requirement for Hh signalling in LPC formation. The conclusion (C74) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Decreasing Hh signalling cell-autonomously in LPCs is sufficient to induce proximal cell identity (L5s) throughout columns at the expense of other neuronal types. Expressing Cirep led to a 2.8-fold increase in L5s (p<0.001, N=10), with L5s distributed along the entire distal-proximal axis instead of being restricted to the proximal lamina. CiRNAi produced similar results with a 2.4-fold increase in L5s (p<0.0001, N=9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-73 provide consistent evidence from two independent genetic manipulations (Cirep and CiRNAi) with appropriate statistical testing and sample sizes. Both approaches show similar phenotypes (ectopic L5s throughout columns), strengthening the conclusion. The quantitative data with statistical significance supports the interpretation that reduced Hh signalling specifies proximal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Intermediate levels of Hh signalling specify intermediate lamina neuron identities (L1s and L4s). Temperature-controlled expression of Cirep at 29\u00b0C (strong inhibition) led to a 2.2-fold increase in L5s (p<0.0001), while expression at 25\u00b0C (milder inhibition) led to a 2.5-fold increase in L1s (p<0.0001) and 1.9-fold increase in L4s (p<0.01), at the expense of L2s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-78 demonstrate dose-dependent effects of Hh signalling on cell fate specification using temperature to modulate transgene expression. The differential outcomes at two temperatures with appropriate statistical testing support the morphogen model where intermediate signalling levels specify intermediate cell types. The experimental design appropriately tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Progressive reduction of Hh ligand levels results in progressively more proximal identities. Temperature shift experiments with hhts2 mutants showed that as functional Hh was titrated to lower levels, L2-L3 proportions decreased while L5 proportions increased (p<0.05). Importantly, L1 proportions increased only at the 6-hr temperature shift (intermediate Hh reduction), and L1s and L5s were no longer confined to their normal positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-85 provide strong evidence for the morphogen model by directly manipulating Hh ligand levels through temperature shifts. The dose-dependent effects on cell fate specification, particularly the intermediate L1 increase at 6-hr shift (C83-84), support the threshold model of morphogen action. The statistical analysis (p<0.05) and consistency with previous findings strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C86",
+      "C95"
+    ],
+    "result": "Hh acts as a morphogen to pattern the lamina and specify lamina neuron identities. This represents a previously unknown role for Hh in Drosophila nervous system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C86, C95 represent the main conclusion of the study, which is well-supported by the collective evidence from gradient characterization (C7-8), cell-autonomous manipulations (C65-78), and ligand titration experiments (C79-85). The multiple independent lines of evidence converge to support the morphogen model, satisfying the key criteria: graded ligand distribution, graded pathway activity, and concentration-dependent cell fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Photoreceptor-derived Hh patterns lamina neuron identities. hh-lacZ expression is restricted to photoreceptors in the eye disc and absent from optic lobes. Partial knockdown of Hh in photoreceptors using GMR-Gal4 and RNAi led to a 1.2-fold increase in L1 neurons (p<0.001, N=10) that were no longer restricted to their normal positions, consistent with intermediate Hh signalling levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-94 establish that photoreceptors are the source of Hh that patterns the lamina. The hh-lacZ reporter data (C88) confirms photoreceptor-specific expression, and the photoreceptor-specific knockdown experiment (C91-93) produces phenotypes consistent with reduced Hh signalling. The statistical significance (p<0.001) and consistency with cell-autonomous manipulations support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C64",
+      "C99"
+    ],
+    "result": "This is the first report of a morphogen patterning neuronal fates during Drosophila nervous system development, revealing a remarkable similarity with the vertebrate neural tube, which is patterned by Sonic Hh. This highlights the evolutionary conservation of morphogen patterning strategies, which are widespread in vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-14, C64, C99 place the findings in evolutionary context. The claim of novelty in Drosophila (C12) is a knowledge claim that can be verified through literature review. The comparison to vertebrate neural tube patterning by Shh (C13, C64) is well-established in the field and appropriately cited. The conclusion about evolutionary conservation (C14, C99) is a reasonable inference from the parallel mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C96",
+      "C103",
+      "C104"
+    ],
+    "result": "Differentiating neurons (photoreceptors) can regulate the neuronal diversity of their distant target fields through morphogen gradients, revealing another layer of dependence of lamina development on photoreceptor-derived signals. This raises the possibility that neurons in other contexts could also pattern their target fields through morphogen gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C96, C103-104 represent broader implications of the findings. The conclusion that photoreceptors regulate lamina diversity (C15, C96) is directly supported by the experimental data. The speculation about other contexts (C104) is appropriately framed as a possibility rather than a definitive conclusion. The novelty of neurons patterning target fields (C103) is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "scRNA-seq analysis identified additional lamina neuron-type markers: L3 neurons express erm, L4 neurons express ap, L2 neurons express high levels of rdo (with lower sporadic expression in L3), L1 neurons specifically express VGlut, and L5 neurons express high levels of dpr8 (with low levels in L3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-51 report marker identification from scRNA-seq data, with some markers (erm, ap) consistent with previous reports and others (rdo, VGlut, dpr8) newly identified. The validation by in situ HCR (Figure 1\u2014figure supplement 1G\u2013K) supports the scRNA-seq findings. These markers are used throughout the study for cell type identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "UMAP visualization of integrated scRNA-seq data shows that L1-L4 neuronal clusters are closer to each other than to the L5 cluster, with two convergent streams connecting the LPC cluster to differentiated neurons: one leading to L1-L4 clusters and another to the L5 cluster. These streams are thought to represent intermediate differentiation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-45 describe scRNA-seq data visualization and interpretation. The UMAP clustering pattern (C43) is consistent with previous reports (\u00d6zel et al., 2021), and the two-stream architecture (C44) is clearly shown in Figure 1D. The interpretation of streams as intermediate states (C45) is supported by citations to previous work using similar approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "When Hh signalling is activated to maximum physiological levels (ptc mutant clones), a mix of L2 and L3 identities are specified, suggesting that additional signals beyond high Hh levels are required to differentiate L2 from L3 identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-98 identify a limitation of the Hh morphogen model in distinguishing L2 from L3. The observation from ptc mutant clones (C97, Figure 3D) is clearly documented, and the inference about additional signals (C98) is a reasonable interpretation. This represents an important caveat to the morphogen model and suggests additional patterning mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Axonal trafficking of Hh is regulated by an evolutionarily conserved motif in its cleaved C-terminal domain, disruption of which affects neuronal diversity in the lamina. This suggests axonal trafficking may play a role in establishing the Hh gradient, though more work is required to uncover the exact mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-102 discuss potential mechanisms for gradient formation based on previous work (Chu et al., 2006; Daniele et al., 2017). While the citations support the role of the C-terminal domain in trafficking (C100-101), the speculation about gradient formation (C102) is appropriately qualified as requiring more work. No new experimental data is provided to test this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Many vertebrate neuronal types express Shh, but their ability to generate instructive gradients to pattern distant neural fields has not been determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-106 provide context about vertebrate neurobiology. The expression of Shh in vertebrate neurons (C105) is well-documented with multiple citations. The statement about the unknown ability to generate instructive gradients (C106) accurately represents a knowledge gap in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background information on Drosophila visual system development, lamina structure, and known roles of Hh and EGF signalling in lamina development. The lamina contains five neuronal types (L1-L5) positioned stereotypically along the distal-proximal axis of columns. Hh signalling is known to induce LPCs, promote terminal divisions and column assembly, but no role in lamina neuron specification or differentiation had been identified prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C42, C61-C63 provide established background knowledge about the Drosophila visual system, lamina anatomy, and known developmental mechanisms. These claims are appropriately supported by citations to previous work and establish the context and knowledge gap that the study addresses. They represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "R27G05-Gal4 drives expression in Dac-expressing LPCs exiting the posterior lamina furrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 describes the expression pattern of the Gal4 driver used for lamina-specific manipulations. This is documented in Figure 3\u2014figure supplement 1B and is important for interpreting the genetic manipulation experiments.",
+    "result_type": "MINOR"
+  }
+]

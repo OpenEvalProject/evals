@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Mitotic domains 1, 3, and 5 in the dorsal head of Drosophila embryos exhibit oriented cell divisions achieved through dynamic spindle rotation. Spindles initially form with random orientation and then rotate up to 90\u00b0 to achieve final orientations approximately 30\u00b0 from the anterior-posterior axis, with no chirality in rotation direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 and C127-C129 provide comprehensive evidence from live imaging (C32, C40, C41), quantitative measurements (C43, C127-C129), and statistical analysis (C42) demonstrating oriented divisions through spindle rotation. The data includes cell counts, division angles, and rose plot analyses showing consistent orientation patterns across multiple embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C97"
+    ],
+    "result": "Pins exhibits planar cell polarity in mitotic domains 1, 3, 5, and 14, with polarization dependent on cell cycle state. In mitotic cells, Pins localizes in crescents with significantly higher peak-to-trough intensity ratios compared to membrane controls, demonstrating true molecular polarity rather than membrane inhomogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 and C97 are well-supported by both live imaging (C44, C45) and fixed immunostaining (C50, C51) data, with rigorous quantitative analysis showing statistically significant differences in Pins intensity ratios (C47: p=1.7057e-08; C53: p=3.1726e-06) compared to membrane controls. The evidence spans multiple mitotic domains and includes both transgenic and endogenous protein localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C104"
+    ],
+    "result": "Division orientation correlates strongly with Pins polarity (R\u00b2=0.77) but not with interphase cell shape (R\u00b2=0.0002), and Pins polarization precedes spindle rotation temporally. This demonstrates that Pins polarity, rather than cell geometry, determines division orientation in these mitotic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C57, and C104 are supported by time-lapse imaging showing temporal precedence (C54) and correlation analyses with strong statistical support (C55: R\u00b2=0.77 for Pins vs. division angle; C104: R\u00b2=0.0002 for cell shape vs. division angle). The contrasting correlation coefficients provide compelling evidence for the specific role of Pins over cell shape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C98"
+    ],
+    "result": "Disrupting Pins polarity through myristoylated Pins overexpression randomizes division angles in mitotic domains 1, 3, 5, and 14 without affecting other morphogenetic events, demonstrating that Pins polarity is necessary for spindle orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 and C98 are supported by experimental data showing that myr-Pins abolishes Pins polarity (C58) and significantly disrupts division orientation in MD1 (C62: p=0.000103) and MD14 (C63: p=0.0079) while preserving other gastrulation events (C59, C60). The specificity of the phenotype and statistical significance support the necessity of Pins polarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Classical planar cell polarity pathways (Fat-Dachsous, core PCP, PAR) and Toll-like receptors are not responsible for division orientation in mitotic domains 1, 3, and 5, as these components are either not expressed appropriately or their disruption does not fully phenocopy Pins polarity disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by literature citations showing inappropriate expression timing/localization (C65, C66, C69) and experimental data showing that TLR perturbations do not fully disrupt orientation (C67, C68). The logic of ruling out these pathways is sound, though the TLR experiments show partial effects (C68), appropriately leading to the conclusion that TLRs are not solely responsible (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C99"
+    ],
+    "result": "Adherens junctions are required for spindle orientation, as \u03b1-catenin depletion disrupts division angles significantly (p=0.000583), with severity correlating with the degree of adhesion reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 and C99 are supported by RNAi experiments showing statistically significant disruption of division orientation (C76) and dose-dependent effects (C77). However, the incomplete penetrance noted in the text and the inability to fully recapitulate myr-Pins phenotype suggests some uncertainty about whether the effect is solely through force transmission or includes other AJ functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C123",
+      "C124"
+    ],
+    "result": "Canoe depletion does not significantly disrupt division orientation in mitotic domains 1, 3, and 5 (p=0.2698), despite disrupting myosin localization, suggesting Canoe is not required for oriented divisions in these domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C123, and C124 are supported by experimental data showing no significant effect on division orientation despite confirmed molecular disruption (myosin mislocalization). The statistical analysis (p=0.2698) supports the lack of effect, though the authors appropriately note that the RNAi may not fully recapitulate null phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Adherens junctions are required for Pins planar polarization, as \u03b1-catenin depletion abolishes Pins polarity with statistically significant reduction in peak-to-trough ratios (p=1.1887e-08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are strongly supported by imaging and quantitative analysis showing loss of Pins polarity upon \u03b1-catenin depletion with highly significant statistical support. This connects AJ function to Pins localization, though the mechanism (force transmission vs. other AJ functions) remains to be fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cytochalasin D injection disrupts both Pins polarization (p=6.5007e-11) and division orientation (p=0.0043) without affecting the correlation between division timing disruption and orientation, suggesting actomyosin-dependent force transmission is required for Pins polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by drug injection experiments with strong statistical significance. The observation that DMSO-induced timing disruption does not affect orientation (C87) serves as an important control, strengthening the interpretation that the CytoD effect is specific to actomyosin disruption rather than general perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Laser ablation experiments demonstrate that mechanical isolation of mitotic domains disrupts spindle orientation, with directional specificity: AP cuts separating domains from the ventral furrow disrupt orientation (p=0.0286), while DV cuts separating from the cephalic furrow do not (p=1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by systematic laser ablation experiments with appropriate controls (sham ablations, internal controls using mirror-symmetric domains, directional cuts). The statistical significance and directional specificity provide strong evidence for mechanical coupling from the ventral furrow specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101",
+      "C120"
+    ],
+    "result": "Blocking mesoderm invagination through Snail depletion disrupts both division orientation (p=0.0121) and Pins polarity (p=6.7956e-08), demonstrating that forces from ventral furrow formation are critical for spindle orientation in the dorsal head mitotic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96, C101, and C120 are supported by Snail dsRNA experiments showing disruption of both division orientation and Pins polarity with strong statistical significance. The choice of Snail as a perturbation is well-justified by prior literature (C120), and the results are consistent with the laser ablation experiments, providing converging evidence for the role of mesoderm invagination forces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C34",
+      "C100"
+    ],
+    "result": "This work identifies the first in vivo example where mechanical force polarizes Pins/LGN to mediate division orientation, with forces from mesoderm invagination and planar polarized Pins being critical for oriented divisions in Drosophila embryonic mitotic domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10, C34, and C100 represent the main conclusions of the paper, supported by the comprehensive experimental evidence from multiple perturbations (myr-Pins, \u03b1-catenin RNAi, CytoD, laser ablation, Snail depletion) all converging on the same conclusion. The novelty claim (C10) is appropriately qualified ('to our knowledge') and supported by the experimental demonstration of force-dependent Pins polarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105",
+      "C106"
+    ],
+    "result": "The mechanism of division orientation in dorsal head mitotic domains differs from the pupal notum: Mud does not localize to tricellular junctions, and anisotropic myosin-dependent tension is not observed, though isotropic myosin tension is required for cell rounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by direct observation (C103, C106) and appropriate citations to prior work (C102, C105). These negative results appropriately distinguish the mechanism in these mitotic domains from other well-characterized systems, though the observations are descriptive rather than rigorously quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C119"
+    ],
+    "result": "The authors speculate that adherens junctions sense anisotropic force or shear forces to recruit spindle rotation machinery, and that oriented divisions facilitate tissue elongation and compensate for cell loss during gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111 and C119 are explicitly speculative (C111: 'may sense'; C119: 'we speculate') and represent hypotheses rather than demonstrated results. While these speculations are reasonable given the data and prior literature, they lack direct experimental support in this manuscript and would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C71",
+      "C72",
+      "C73",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C126"
+    ],
+    "result": "The manuscript provides extensive background on spindle orientation mechanisms, epithelial biology, Drosophila development, and prior work on force-dependent division orientation, establishing the context for the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C31, C71-C73, C107-C118, and C126 represent background knowledge and literature review, all appropriately supported by citations to prior work. These claims establish the scientific context but do not represent novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C125"
+    ],
+    "result": "Spindles in mitotic domains 1, 3, and 5 are oriented in the direction of eventual tissue movement/elongation, and these divisions occur during gastrulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 infers functional significance from orientation data but lacks direct experimental evidence linking division orientation to tissue movement. Claim C125 about timing is supported by observation, but the functional connection to morphogenesis remains speculative without perturbation experiments specifically testing this relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The choice to use myristoylated Pins rather than Pins null mutants is justified by prior work showing that null mutants cause out-of-plane divisions, and that myristoylated Pins is functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C122 are supported by citations to prior work justifying the experimental design choice. This represents appropriate methodological reasoning rather than a novel result.",
+    "result_type": "MINOR"
+  }
+]

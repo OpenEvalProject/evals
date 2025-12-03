@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C19",
+      "C20"
+    ],
+    "result": "The study addresses a knowledge gap regarding the location of kinetic proofreading computation in T cell signaling. Previous work by the authors established that T cells use kinetic proofreading for antigen discrimination and found significant proofreading at DAG generation, but lacked the ability to determine where upstream proofreading steps originate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C19-C20 establish the background and motivation for the study. These claims are well-supported by citations to prior literature (C1, C19) and the authors' previous work (C3, C4, C5). The knowledge gap (C2, C20) is clearly articulated and provides appropriate context for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C69",
+      "C70"
+    ],
+    "result": "The optogenetic system was improved by replacing antibody-based adhesion with ICAM-1 adhesion, which enhanced the spatiotemporal dynamics of LOV2 binding, Zap70 recruitment, LAT clustering, and DAG generation biosensors. ICAM-1 adhesion resulted in statistically significant improvements in maximum fold-change for all biosensors and produced spatial patterns similar to native receptor ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25-C30, C69-C70 describe methodological improvements that are well-supported by experimental data in Figure 2. The statistical significance of improvements (C30) is demonstrated with p-values, and the comparison to native systems (C70) is supported by citations. This represents a critical technical advance enabling the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C39"
+    ],
+    "result": "Zap70 recruitment exhibits moderate kinetic proofreading with n=4.5 \u00b1 0.4 proofreading steps, correlating with both receptor occupancy (\u03c1=0.42) and ligand-binding half-life (\u03c1=0.49). This suggests the existence of kinetic proofreading steps between ligand binding and Zap70 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C39 are supported by quantitative model fitting to experimental data shown in Figure 4A and correlation analysis in Figure 4\u2014figure supplement 1A. The finding of moderate proofreading at Zap70 recruitment represents a key advance over previous work where no proofreading was detected at this level, enabled by the improved ICAM-1 adhesion method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C38"
+    ],
+    "result": "LAT clustering shows stronger kinetic proofreading with n=7.8 \u00b1 1.1 proofreading steps compared to Zap70 recruitment. LAT clustering showed increased dependency on binding half-life (\u03c1=0.54) and decreased dependence on receptor occupancy (\u03c1=0.21), suggesting additional kinetic proofreading steps exist between Zap70 recruitment and LAT cluster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C38 are supported by quantitative model fitting shown in Figure 4B and correlation analysis in Figure 4\u2014figure supplement 1B. The progressive increase in proofreading strength from Zap70 to LAT provides evidence for distributed proofreading steps throughout the signaling cascade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "DAG generation shows the highest degree of kinetic proofreading with n=11.3 \u00b1 1.5 proofreading steps. DAG generation depended heavily on ligand half-life (\u03c1=0.52) while depending least on occupancy (\u03c1=0.18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by quantitative model fitting shown in Figure 4C and correlation analysis in Figure 4\u2014figure supplement 1C. The highest proofreading strength at DAG generation suggests additional proofreading steps beyond LAT clustering, consistent with the distributed proofreading model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C37"
+    ],
+    "result": "The strength of kinetic proofreading progressively increases from Zap70 recruitment (n=4.5) to LAT clustering (n=7.8) to DAG generation (n=11.3), suggesting proofreading steps exist throughout the cascade up to DAG generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37 synthesize the findings from C31, C33, and C35. The progressive increase in n values is clearly demonstrated in Figure 4D across three biological replicates. This represents the central finding of the paper regarding distributed kinetic proofreading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Reset kinetics differ between signaling events: LOV2 unbinding (3.3s) and Zap70 dissociation (9.3s) fit exponential distributions suggesting one-step reset processes, while LAT cluster dissociation (14.2s) fits a two-step Erlang distribution, indicating LAT clusters reset through a slower multistep process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by lifetime distribution analysis shown in Figure 5C. The different distribution fits (exponential vs. Erlang) and progressively longer mean lifetimes provide quantitative evidence for differential reset rates. The statistical approach of fitting to Poisson-based distributions is appropriate for this type of data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C45"
+    ],
+    "result": "Downstream signaling events have slower reset rates than upstream events, suggesting a distributed kinetic proofreading mechanism with proofreading steps at both the receptor and slower-resetting downstream signaling complexes. LAT clusters could potentially survive momentary ligand unbinding events and integrate multiple binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 are supported by the reset rate data (C40-C44), but C45 is explicitly speculative and awaits experimental verification. While the slower LAT reset rate is well-documented, the functional consequence of signal integration across multiple binding events remains hypothetical. The authors appropriately acknowledge this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "AIC model selection analysis indicates that models with unique N values for all three signaling steps (Zap70, LAT, DAG) best explain the data, though models where LAT and DAG share the same N value have only marginally worse AIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by AIC analysis shown in Figure 4\u2014figure supplement 5. The use of AIC for model selection is appropriate for comparing nested models with different numbers of parameters. The marginal difference for LAT/DAG models is consistent with the flat residual landscapes noted in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Modeling analysis using the Ganti framework suggests that an 11-step system can discriminate ligands at moderate half-life ratios but is insufficient at a ratio of 2. The fit N values may be somewhat inflated due to using average 3D washout measurements rather than 2D single-molecule information, but are more consistent with physiological discrimination requirements than previous measurements of ~3 steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C86 involve theoretical modeling and interpretation. While the Ganti model analysis (Figure 4\u2014figure supplement 4) is appropriately applied, the authors acknowledge significant uncertainty about whether cells detect average half-lives or longer-lived events from the distribution (C81), and potential discrepancies between 3D and 2D measurements (C82, C85). The interpretation is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Discussion integrates findings with existing literature on potential molecular mechanisms underlying kinetic proofreading, including CD45 exclusion, receptor conformational changes, Lck and Zap70 activation, LAT phosphorylation, spatial organization of signaling complexes, and potential cooperativity mechanisms relevant to autoimmunity and immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C68 represent integration of the current findings with established literature. These claims are appropriately supported by citations and represent reasonable interpretations of how the observed distributed proofreading could be mechanistically implemented. The speculative elements (C47, C66) are appropriately identified as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The experimental system exhibits cell-to-cell variability in construct expression due to lentiviral vectors, which is similar to native T cell TCR expression variability. Kinetic proofreading systems behave differently than non-proofreading systems at steady state, with proofreading systems producing different outputs for ligands with different half-lives even at equivalent occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe properties of the experimental system and theoretical foundations. C71-C72 acknowledge a limitation while noting biological relevance (supported by citation). C73-C75 describe fundamental properties of kinetic proofreading systems, demonstrated in Figure 3D and Figure 3\u2014figure supplement 1. These provide important context for interpreting the steady-state measurements.",
+    "result_type": "MINOR"
+  }
+]

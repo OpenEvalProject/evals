@@ -1,0 +1,204 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C60"
+    ],
+    "result": "The manuscript provides background on the mammalian olfactory system and prior characterization of olfactory bulb projection neurons. This includes anatomical organization, physiological heterogeneity, and limited molecular markers available for mitral and tufted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 and C60 are all supported by appropriate citations to prior literature. These claims establish the scientific context and prior knowledge upon which the current study builds. The citations are appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study used retrograde viral labeling, FANS enrichment, and single-nucleus RNA sequencing to identify and characterize olfactory bulb projection neurons. A total of 31,703 nuclei were analyzed, identifying three mitral cell types (M1, M2, M3) and five tufted cell types (T1, ET1, ET2, ET3, ET4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 and C53-C59 describe the experimental approach and primary findings. The methodology is clearly described with appropriate quality control (C56-C57), ethical approval (C59), and histological validation (C53-C55). The identification of 8 distinct projection neuron types from 31,703 nuclei represents a substantial dataset with appropriate technical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Differential expression analysis identified type-specific marker genes for each mitral and tufted cell type, including Kcng1/Lhx5/Sertm1 for M1, Piezo2/Vgll2/Zfp114 for M2, Cadps2/Calca/Fst for M3, and corresponding markers for tufted cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe differential expression results that are directly supported by the data analysis (Figure 3). The identification of type-specific markers is a core finding that enables subsequent validation experiments. The statistical approach using glmGamPoi is appropriate for single-nucleus RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Single-molecule FISH validated the co-localization of type-specific marker genes and their expression in projection neurons labeled by retrograde viral tracing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 and related smFISH validation claims are supported by detailed histological evidence shown in Figure 3 and supplements. The validation demonstrates that computationally-defined cell types correspond to spatially-distinct populations in tissue, with appropriate quantification of co-expression patterns. This orthogonal validation strengthens confidence in the transcriptomic clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Gene regulatory network analysis using SCENIC identified 86 regulons organized into 7 modules, revealing transcription factor networks that define projection neuron subtypes. The network is dominated by three hub genes (Pbx3, Bclaf1, Taf1), and 64% of TFs show possible self-activating regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C61-C66 describe the gene regulatory network analysis. The SCENIC pipeline is well-established and appropriately applied. The identification of regulon modules and network hubs provides mechanistic insight into cell type specification. The analysis reveals that cell subtypes share overlapping regulatory features rather than forming discrete MC vs TC classes, which is a novel finding supported by the data (Figure 4-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C67",
+      "C68"
+    ],
+    "result": "A novel computational approach was developed to simulate single-nucleus expression profiles from bulk RNA-seq data using weighted random sampling of regulons. This analysis predicted that M1 cells preferentially project to anterior targets (AON) while M2 and M3 cells project to posterior targets (PCx).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C67-C68 describe a novel computational method and its predictions. The approach is creative and addresses the challenge of mixed cell populations in bulk RNA-seq. The predictions are clearly stated with quantitative support (73.5% of M1 classified as AON-projecting, 100% of M2/M3 as PCx-projecting). However, the method requires experimental validation to be fully convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Targeted single-nucleus RNA-seq of PCx-projecting neurons validated the computational predictions, showing significant enrichment of M2 cells (44/57) and depletion of M1 cells (6/57) among posterior-projecting mitral cells (binomial tests: p=0.001 and p=5.57e-05, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide experimental validation of the simulation-based predictions. The targeted snRNA-seq experiment is well-designed, and the statistical analysis using binomial tests is appropriate. The significant p-values provide strong evidence that molecular identity correlates with projection target. This validation substantially strengthens the computational predictions in C41-C42.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Differential expression analysis revealed that projection neuron types express distinct sets of genes encoding ion channels (including Kcng1, Kcnd3, Kcnh5, Kcnq3) and cell adhesion/axon guidance molecules (including cadherins and Semaphorin/Neuropilin/Plexin complexes) that may underlie functional differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 describe differential expression of functionally-relevant gene classes. The identification of these genes is supported by the data (Figure 3-supplement 3) and appropriately contextualized with citations to prior functional studies. These findings provide candidate mechanisms for the physiological and connectivity differences between cell types, though functional validation would be required to confirm their roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors propose that subtypes of mitral and tufted cells share important functional properties that may blur traditional MC/TC divisions at the transcriptional level, and that gradients of module activity could provide a mechanism for generating cellular diversity through non-linear regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 represent interpretations and speculations based on the network analysis results. While the observation of overlapping regulatory features between MC and TC subtypes is data-supported, the functional implications and mechanistic proposals are speculative. The analogy to morphogenetic gradients (C70) is interesting but requires experimental validation. These are reasonable hypotheses but remain uncertain without additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors discuss the comprehensiveness of their sampling (7,504 projection neurons vs. 10,000-30,000 estimated total) and propose that the molecular diversity they describe can explain functional heterogeneity in odor responses and provides tools for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide appropriate context for interpreting the results. The comparison to literature estimates (C72) and methodological considerations (C73) are well-supported by citations. Claims C74-C75 represent reasonable inferences about the utility and implications of the findings, though C75 includes speculative elements about explaining functional diversity that would require experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors contextualize their findings within recent literature, noting consistency with MAP-seq studies and proposing that their molecular characterization provides an entry point for understanding olfactory circuit evolution and identifying master regulators of neuronal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 appropriately place the study's findings in broader context. The comparison to Chen et al. 2021 (C76) and Kim et al. 2020 (C77) is well-supported. Claims C78-C80 represent reasonable inferences about future applications and broader significance, though they include speculative elements about master regulators and evolutionary studies that represent proposed future work rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

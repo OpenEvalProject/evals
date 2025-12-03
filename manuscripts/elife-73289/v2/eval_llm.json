@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A Cre/FLEX viral injection strategy successfully achieved selective expression of ArchT in cortico-collicular neurons, with histological confirmation showing restricted expression in layers 5 and 6 of AC and appropriate projection patterns to IC. Optogenetic inactivation produced ~60% reduction in baseline firing and ~45% reduction during tone presentation in putative cortico-collicular units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 provide converging anatomical and functional evidence for selective targeting. Histological data (C42-C46) confirm appropriate laminar and regional expression patterns consistent with known cortico-collicular anatomy. Functional validation (C48-C49) demonstrates significant suppression with statistical support (p=1.9e-06). The combination of anatomical specificity and functional efficacy supports the methodological approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Recording sites were successfully parsed into central and shell IC regions using clustering analysis based on sparseness and tonotopic gradient metrics. Units exhibited response properties characteristic of awake IC, including diverse response types and region-specific tuning characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe a methodologically sound approach to anatomical classification using established functional criteria (C54) validated by prior literature (C51-C53, C56-C57). The observation of characteristic response properties (C55-C58) with appropriate regional differences provides internal validation. Post-hoc dye labeling in a subset of recordings (mentioned in methods) provides additional confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Predictive coding metrics differ significantly between awake and anesthetized states in IC. In central IC, anesthesia increased iMM (p=8.8e-05) and shifted from negative prediction error (awake iPE=-0.13) to modest positive prediction error (anesthetized iPE=0.077, p=0.017). In shell IC, anesthesia increased iMM (p=3.5e-08), decreased prediction error (p=2.6e-05), and shifted from repetition enhancement (awake iRS=-0.056) to repetition suppression (anesthetized iRS=0.25, p=2.5e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74 present statistically significant differences across multiple metrics with appropriate statistical tests and strong p-values. The within-subject design (recording from same units, C62) strengthens the comparison. However, the study used only one mouse for this comparison (stated in Figure 2 legend: n=165 units from one mouse), which limits generalizability despite the large number of units recorded. The findings are internally consistent but would benefit from replication across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C95"
+    ],
+    "result": "Cortico-collicular inactivation significantly decreased prediction error in adapting units in both central (p=0.048) and shell (p=0.034) IC, while repetition suppression remained unaffected. The iMM decreased in central (p=0.00034) and shell (p=0.0023) adapting units, driven specifically by changes in prediction error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 present consistent findings across central and shell IC with appropriate statistical support. The selective effect on prediction error but not repetition suppression (C78-C79, C82-C83) is internally consistent and supported by control experiments (C98-C102). The decomposition of iMM into component metrics (C77, C81) provides mechanistic insight. Sample sizes are adequate (central n=52, shell n=113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Cortico-collicular inactivation differentially affected facilitating units in central versus shell IC. Central facilitating units showed decreased repetition enhancement (p=0.0026) with unchanged negative prediction error, while shell facilitating units showed abolished negative prediction error (p=0.037) with unchanged repetition enhancement. Both showed decreased facilitation overall (central p=0.0036, shell p=0.0016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 demonstrate region-specific effects with statistical support. The opposite patterns in central versus shell IC (C96-C97) are internally consistent with the anatomical differences in cortical input (C51). However, sample sizes are smaller for facilitating units (central n=14, shell n=38), which may limit statistical power. The findings are supported by control experiments showing no effects without ArchT (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Nonadapting units in central IC exhibited increased iMM during inactivation (p=2.7e-06), driven by increased iRS (p=0.0011). This effect was specific to units with negative baseline iRS (showing repetition enhancement, p=0.00012), while shell nonadapting units were unaffected. The findings indicate that central nonadapting units display cortex-dependent repetition enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 identify a previously unrecognized population with cortex-dependent repetition enhancement. The statistical support is strong, and the selective effect on units with negative baseline iRS (C107) demonstrates appropriate subgroup analysis. Control experiments (C108) confirm opsin-mediated effects. The larger sample size for nonadapting units (central n=155, shell n=243) provides adequate power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cortico-collicular inactivation produced bidirectional changes in firing rates to standard and deviant contexts. Adapting units showed increased responses to standards and decreased responses to deviants (central: p=0.0092 and p=0.0054; shell: p=0.035 and p=0.0057), while facilitating units showed the opposite pattern. Nonadapting units showed decreased responses to standards in both regions. These changes resulted in IC units responding more similarly to standard and deviant contexts without cortical input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C124 provide mechanistic insight into how cortical inactivation affects IC responses. The bidirectional modulation (C114, C122) is well-documented with statistical support across multiple unit types. The opposite patterns in adapting versus facilitating units (C119, C141) are internally consistent. The interpretation that AC provides contextual information (C124) is well-supported by the data, though the precise mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "IC units exhibit distinct combinations of repetition suppression/enhancement and prediction error/negative prediction error. Central IC units most commonly showed negative prediction error combined with repetition suppression, while shell IC displayed greater variety including both negative prediction error with repetition suppression and prediction error with repetition enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 describe the diversity of response patterns in IC based on Figure 6A-B. The observations are descriptive and well-supported by the data visualization. The finding of distinct combinations (C129) adds complexity to the understanding of IC processing beyond simple adaptation/facilitation categories. However, the analysis is primarily descriptive without statistical testing of the prevalence of different combinations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Facilitating units in IC exhibit true repetition enhancement, characterized by sequential increases in firing rate across successive standard presentations. The firing rate to the last standard was significantly higher than the first in both central (p=0.0017) and shell (p=9.3e-05) facilitating units, with responses plateauing by the second-to-last standard.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 demonstrate that repetition enhancement reflects genuine sequential increases rather than just a net difference between contexts. The analysis of firing rates across standard positions (C131-C132) with statistical support provides strong evidence for true repetition enhancement. This is an important characterization that distinguishes the phenomenon from other potential explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Control experiments in two mice without ArchT expression showed no significant differences between baseline and laser trials for adapting, facilitating, or nonadapting units in either central or shell IC. The control group exhibited similar baseline iMM distributions and unit type proportions as the experimental group, confirming that observed effects were opsin-mediated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe essential control experiments that validate the specificity of the optogenetic manipulation. The lack of laser effects in controls (C101) with similar baseline characteristics (C99-C100) strongly supports that experimental effects are opsin-mediated rather than due to light artifacts. However, the control group is smaller (n=2 mice) compared to the experimental group (n=4 mice), which limits statistical power for detecting subtle effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C21",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The auditory cortex critically regulates predictive coding in IC through direct cortico-collicular feedback. Inactivation decreased prediction error in adapting units and repetition enhancement in central facilitating/nonadapting units, while repetition suppression remained unaffected. These findings demonstrate that AC provides contextual cues about sound statistics to IC, supporting hierarchical predictive coding in cortico-subcortical networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 and C134-C143 represent the main conclusions synthesizing the experimental findings. The evidence for AC involvement in prediction error (C8, C137, C186) and repetition enhancement (C12-C13, C138) is well-supported by the data. The interpretation that repetition suppression reflects bottom-up fatigue (C10, C187) is reasonable given its insensitivity to cortical inactivation, though alternative explanations cannot be definitively ruled out. The conclusion about hierarchical predictive coding (C135, C143) is supported but represents an interpretive framework rather than direct demonstration of hierarchical processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C147",
+      "C184",
+      "C185"
+    ],
+    "result": "This study provides the first description of facilitating units in IC in the context of predictive coding, demonstrating the existence of repetition enhancement and negative prediction error in these units. This represents a novel finding as previous predictive coding studies in IC focused exclusively on adapting neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C147, C184-C185 highlight the novelty of characterizing facilitating units. The claim of being 'first' (C147, C184) is supported by citation of prior work focusing only on adapting units (C146). The characterization of repetition enhancement (C11, C185) is well-documented in the results. This represents a genuine novel contribution to the field, though the interpretation of these phenomena within predictive coding frameworks remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C155"
+    ],
+    "result": "The iMM values in awake and anesthetized brain reflect different underlying processes, with anesthesia inducing bidirectional changes in metrics of repetition and prediction. Repetition suppression was more prevalent under anesthesia, a state in which auditory cortical responsiveness is compromised.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 and C155 interpret the awake versus anesthetized differences. The interpretation is well-supported by the data showing different metric profiles (Figure 2) and is consistent with known effects of anesthesia on cortical function (C155, citing Brugge and Merzenich, 1973; Katsuki et al., 1959). However, the mechanistic link between reduced cortical responsiveness and increased repetition suppression is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C154",
+      "C158",
+      "C161"
+    ],
+    "result": "The processes underlying repetition suppression in IC do not involve top-down cortical signals, while feedback from AC plays a critical role in prediction error generation. Under hierarchical predictive coding framework, inactivation of top-down inputs interferes with communication of predictions, leading to dysfunction in prediction error responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154, C158, C161 interpret the differential effects on repetition suppression versus prediction error. The lack of effect on repetition suppression (C154) is well-documented experimentally. The interpretation within predictive coding framework (C158) is reasonable and consistent with theory, though the precise mechanism (predictions versus prediction errors being transmitted) remains unclear. The conclusion about AC's role in prediction error (C161) is strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The negative prediction error responses observed in this study are unlikely to simply reflect cross-frequency adaptation to the oddball stimulus, as the stimuli used half-octave frequency separation while cross-frequency adaptation occurs primarily at separations of a third of an octave or less.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 address an alternative explanation for negative prediction error. The argument is well-reasoned, citing appropriate prior work on cross-frequency adaptation bandwidth (C163, Taaseh et al., 2011) and comparing it to the experimental parameters (C164). The conclusion (C165) is justified, though it remains possible that other forms of adaptation or context effects could contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Negative prediction error may reflect neurons encoding predictions rather than prediction errors. In shell IC, negative prediction error was abolished during cortico-collicular inactivation, consistent with cortical feedback carrying predictions. In central IC, negative prediction error remained unperturbed, suggesting predictions may come from another source, potentially shell IC via intracollicular connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C172 present an alternative interpretation of negative prediction error as encoding predictions. The differential effects in shell versus central IC (C168-C169) are well-documented experimentally. However, the interpretation that this reflects predictions rather than prediction errors (C166) is speculative and not definitively tested. The hypothesis about shell IC as a source for central IC (C172) is plausible given anatomical connectivity but lacks direct experimental support. This represents interesting speculation requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The optogenetic inactivation achieved partial (~60% baseline, ~45% during tones) rather than complete suppression of cortico-collicular neurons. Despite this limitation, the reduction produced clear effects on repetition and prediction processing, including severe reduction or complete abolishment of certain metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 acknowledge an important limitation while arguing for the validity of the findings. The quantification of suppression level (C176, citing Figure 1\u2014figure supplement 1D) is appropriate. The argument that partial inactivation still produced clear effects (C176) is supported by the data showing abolished or severely reduced metrics. The caveat about interpretation (C177) is appropriately stated. This represents honest and appropriate discussion of methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178",
+      "C179"
+    ],
+    "result": "Although no differences were observed in iMM distribution between single- and multiunits, the results should be interpreted with the limitation that analyses were performed on pooled single- and multiunit data, as photosuppression-induced changes may not reflect changes in single neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C179 acknowledge another methodological limitation. The observation of no difference between single- and multiunits (C178, Figure 3\u2014figure supplement 3) provides some justification for pooling. However, the caveat (C179) is appropriate as multiunits may reflect population activity rather than single-neuron responses. The limitation is honestly stated and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "While cortico-collicular neurons branch to additional subcortical targets (MGB, dorsal striatum, lateral amygdala), the short-latency effects in IC indicate observed changes are likely due to direct, monosynaptic AC to IC pathways. However, potential contributions from additional downstream targets cannot be definitively ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C182 address the specificity of the manipulation. The argument based on short-latency effects (C181, Figure 3C and F) is reasonable for inferring monosynaptic pathways. The acknowledgment that multisynaptic effects cannot be definitively ruled out (C182) is appropriately cautious. The anatomical information about branching (C180, citing Asokan et al., 2018) is accurate. This represents appropriate consideration of alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background and motivation: Sensory systems modulate responses based on statistical context, which can be understood through hierarchical predictive coding. In the auditory system, SSA is prevalent in AC and weaker in IC/MGB, with prediction error increasing along the hierarchy. However, the role of descending cortico-collicular projections in predictive processing has never been directly assessed, representing a gap in predictive coding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C38 establish the background and rationale for the study. The general principles (C1-C4) and prior findings (C22-C33) are appropriately cited from literature. The identification of the knowledge gap (C7, C35, C37) is accurate and well-motivated. The hypothesis that AC may provide predictive cues to IC (C34) is reasonable based on the cited evidence. This represents appropriate contextualization of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Discussion of repetition enhancement in broader context: Repetition enhancement is common in human fMRI studies and has been proposed to reflect novel network formation and consolidation of sensory representations. In the auditory system, repetition enhancement in MGB is reversed when cortico-thalamic pathways are blocked. Repetition suppression can alternatively be viewed as reflecting synaptic depression rather than predictive processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 place the findings in broader context by citing relevant literature. The citations to human fMRI work (C148-C150) and MGB studies (C151-C152) are appropriate and accurately represented. The alternative hypothesis about repetition suppression (C153) is fairly presented. This represents appropriate discussion of how the findings relate to prior work, though the connections between mouse IC single-unit recordings and human fMRI are necessarily indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Methodological details: Experiments were performed in six adult Cdh23 mice (four males, two females, age 3-8 months), a mouse line with targeted reversion protecting against age-related hearing loss. All procedures were approved by University of Pennsylvania IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C191 provide essential methodological information. The use of Cdh23 mice (C190) is appropriate for auditory studies and properly justified by citation (Johnson et al., 2017). The sample size (n=6 mice) is modest but reasonable for this type of study. Ethical approval (C191) is documented. The information is factual and verifiable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The PSTN contains two nearly distinct subpopulations: PSTNTac1 neurons (85.1% of labeled cells) and PSTNCRH neurons (14.9% of labeled cells), with only 1.9% co-expression. Both populations are glutamatergic (express Slc17a6), and most co-express Calb1 and Calb2, but not Pvalb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 provide quantitative FISH data demonstrating distinct Tac1 and Crh expression patterns with minimal overlap (C39). The glutamatergic identity (C40-C42) and calcium-binding protein expression (C44-C49) are clearly demonstrated in Figure 2. The data are internally consistent and appropriately quantified with sufficient replication (N=4 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Both PSTNTac1 and PSTNCRH neurons increase Fos expression following refeeding after food deprivation. PSTNTac1 neurons show increased calcium activity (measured by fiber photometry) in response to food presentation in hungry mice, with activity persisting for ~60 seconds, but do not respond to water or novel objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate meal-induced Fos expression in both populations using FISH (Figure 3A-D). Claims C54-C61 show food-specific calcium responses in PSTNTac1 neurons using fiber photometry (Figure 3G-L). The specificity controls (novel object, water) strengthen the conclusion. However, fiber photometry data for PSTNCRH neurons were not obtainable, limiting conclusions about this population's acute activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Administration of anorexigenic hormones (amylin, CCK, PYY) increases Fos expression in both PSTNTac1 and PSTNCRH neurons and increases calcium activity in PSTNTac1 neurons as measured by fiber photometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 demonstrate hormone-induced Fos expression in both populations (Figure 4A-E), while C68-C70 show acute calcium responses in PSTNTac1 neurons (Figure 4G-L). The use of intraperitoneal catheters for hormone delivery during photometry is methodologically sound. The convergence of Fos and calcium imaging data strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C124",
+      "C125"
+    ],
+    "result": "Chemogenetic inhibition of PSTNTac1 neurons attenuates (but does not eliminate) the appetite-suppressing effects of amylin, CCK, and PYY by increasing meal frequency without affecting meal size or duration. PSTNTac1 neuron activity is partially necessary for the full anorexigenic effects of these hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate attenuation of hormone effects with hM4Di inhibition (Figure 5E-G), while C78-C81 show the mechanism involves increased meal frequency (Figure 5H-J). The partial rescue (C124-C125) is appropriately interpreted as partial necessity. Controls with mCherry-only transduction and baseline CNO administration (C71) strengthen the conclusions. The meal parameter analysis provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "Chemogenetic inhibition of PSTNCRH neurons does not affect the appetite-suppressing effects of anorexigenic hormones (amylin, CCK, PYY), indicating these neurons are not necessary for hormone-mediated appetite suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 show no differences between hM4Di and mCherry controls in CrhCre mice (Figure 5K-N). This negative result is important for distinguishing the functional roles of the two PSTN subpopulations. The experimental design parallels the PSTNTac1 experiments, making the comparison valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C86",
+      "C88",
+      "C90",
+      "C91",
+      "C111"
+    ],
+    "result": "Optogenetic and chemogenetic stimulation of PSTNTac1 neurons reduces food intake in hungry mice, though consumption is not eliminated entirely. The effect is reversible and does not persist after stimulation ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C88 demonstrate reduced food intake with ChR2 optogenetic stimulation and hM3Dq chemogenetic stimulation respectively (Figure 6D-E, K). The use of both methods provides convergent evidence. Claim C111 notes the partial (not complete) suppression, which is appropriately interpreted. The lack of post-stimulation effects (C116) suggests fast neurotransmission rather than sustained peptidergic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C87",
+      "C89",
+      "C92",
+      "C93"
+    ],
+    "result": "Optogenetic and chemogenetic stimulation of PSTNCRH neurons does not affect food intake in hungry mice, indicating these neurons are not sufficient to suppress appetite under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C89 show no effects of stimulating PSTNCRH neurons with either optogenetic or chemogenetic methods (Figure 6F-G, L). This negative result complements the inhibition experiments and further distinguishes the functional roles of the two populations. Appropriate controls are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PSTNTac1 and PSTNCRH neurons project to distinct and overlapping downstream brain regions. PSTNTac1 neurons uniquely project to PVT, PBN, NTS, and IRT, while PSTNCRH neurons uniquely project to LRN. Both populations project to BNST, CeA, MRN, and TRN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 describe projection patterns revealed by anterograde tracing with mCherry (Figure 7). The systematic survey of brain regions and clear distinction between unique and shared projections is well-documented. The anatomical data are consistent with the functional differences between the two populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Optogenetic stimulation of PSTNTac1 projections to CeA, PVT, PBN, and NTS reduces food consumption during the stimulation period, while stimulation of projections to BNST has no effect. This indicates that PSTNTac1 neurons can suppress food intake through multiple downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C107 show reduced food intake with projection-specific stimulation (Figure 8), while C103 shows no effect for BNST projections. However, the authors acknowledge (C108) that the exact functional role of each target remains undetermined due to potential antidromic activation. Without experiments blocking individual pathways or demonstrating that PSTNTac1 neurons lack collaterals, the circuit-level mechanism remains unclear. Additional experiments are needed to determine whether these projections act independently or cooperatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C122"
+    ],
+    "result": "The PSTN sends monosynaptic projections to PBNCGRP neurons, and these projections originate from PSTNTac1 neurons. Refeeding after food deprivation induces substantial Fos expression in the PSTN region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 demonstrates retrograde labeling of PSTN neurons from PBNCGRP neurons using modified rabies virus (Figure 1G, I). Claim C36 shows meal-induced Fos expression (Figure 1J-K), consistent with prior studies. Claim C122 infers that these projections originate from PSTNTac1 neurons based on subsequent anterograde tracing, which is reasonable given the projection patterns shown in Figure 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Modified rabies virus retrograde tracing from PBNCGRP neurons labels expected input regions including BNST, CeA, Arc, and NTS, validating the tracing approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe retrograde labeling of known PBN input regions (Figure 1C-H), which serves as a positive control for the tracing method. The consistency with prior literature (citations provided) validates the experimental approach used to identify PSTN inputs to the PBN.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C114",
+      "C117"
+    ],
+    "result": "The authors propose a model in which food exposure or anorexigenic hormones cause transient activation of PSTNTac1 neurons, which signal to downstream populations via glutamatergic and potentially peptidergic mechanisms to reduce food intake. PSTNTac1 neurons may primarily signal via fast glutamatergic neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 present a proposed model based on the experimental results, which is reasonable but speculative. Claim C114 infers glutamatergic signaling based on Slc17a6 expression, which is well-supported. However, C117 speculates about the relative contributions of glutamate versus neuropeptides based on the lack of post-stimulation effects (C116), but this interpretation is not definitive. Direct experiments manipulating glutamate or peptide release would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C127"
+    ],
+    "result": "The effects of stimulating PSTNTac1 neurons are comparable to stimulating POMC neurons or PBNCGRP neurons, which also cause partial (not absolute) reductions in feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 compare the current results to prior studies of POMC and PBNCGRP stimulation, noting similar partial suppression of feeding. Claim C127 makes a similar comparison for inhibition experiments. These comparisons are supported by appropriate citations and help contextualize the findings within the broader literature on appetite regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "PSTNCRH neurons may be involved in aspects of food intake not studied here, such as regulating nutrient-specific appetite or conditioned food associations, based on their activation by food stimuli despite lack of effects in gain/loss-of-function experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 speculates about alternative roles for PSTNCRH neurons based on their activation without functional effects on total food intake. Claims C119-C120 cite prior work showing Crh upregulation during amino acid deficiency, suggesting nutrient-specific roles. Claim C121 offers another speculative explanation. These are reasonable hypotheses but require direct experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Glutamatergic projections from the PSTN to the PVT that reduce food consumption (previously reported by Zhang et al. 2017) originate from PSTNTac1 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 integrates prior work (C28) with the current projection mapping (C94) and functional data (C105) to infer the cellular origin of previously described PSTN\u2192PVT projections. This inference is well-supported by the convergent anatomical and functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "A recent study (Sanchez et al. 2022) reported that chemogenetic inhibition of glutamatergic PSTN neurons decreases the appetite-suppressing effects of CCK, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 cites supporting evidence from a concurrent study, which strengthens the conclusions about PSTNTac1 necessity for CCK effects. This cross-validation from an independent laboratory increases confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The sustained increase in food intake following chemogenetic inhibition of PSTNTac1 neurons, despite transient calcium dynamics, may be explained by sustained neuropeptide effects on downstream neurons or by persistent low-level activity not detectable by fiber photometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 notes the temporal mismatch between brief calcium signals and prolonged behavioral effects. Claims C129-C130 offer speculative explanations, while C131 cites precedent from AgRP neuron studies. These are reasonable hypotheses but remain untested. Electrophysiological recordings or neuropeptide receptor manipulations would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Chemogenetic inhibition of PSTNTac1 neurons attenuates hormone effects by increasing meal frequency rather than meal size, which differs from the typical effects of these hormones. This may indicate that PSTNTac1 neurons act indirectly through downstream populations like NTS or PBN to affect inter-meal intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C132 describes the meal parameter findings, while C133 notes that amylin and CCK typically affect meal size. Claims C134-C136 propose a mechanistic model to explain this discrepancy, suggesting indirect effects through downstream populations. This model is plausible given the projection patterns but remains speculative without direct tests of downstream population activity or pathway-specific manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The PSTN is partially necessary for appetite suppression following diverse stimuli including endogenous hormones, exogenous sickness-inducing compounds (LPS, cisplatin), and taste neophobia. These stimuli all activate downstream regions including CeA, NTS, and PBN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 cite prior work (Barbier et al. 2020) showing PSTN involvement in multiple forms of appetite suppression, which is consistent with the current findings. Claim C142 synthesizes these observations into a broader conclusion about PSTN function. Claim C143 notes the common downstream targets, providing a potential mechanistic link. The convergence of evidence from multiple stimuli strengthens the conclusion about PSTN's general role in appetite suppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "PSTN neurons do not express Fos following administration of LiCl or exposure to quinine, indicating specificity in the types of aversive stimuli that activate these neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 cite prior work (Yasoshima et al. 2006) showing lack of PSTN activation by certain aversive stimuli. This provides important context about the specificity of PSTN responses and suggests these neurons are not simply responding to all aversive or appetite-suppressing stimuli.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Substance P (a tachykinin-1 splice product) suppresses feeding when centrally administered. The lack of post-stimulation effects in optogenetic experiments suggests PSTNTac1 neurons may primarily signal via fast glutamatergic neurotransmission rather than sustained peptidergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 cites prior work on substance P's anorexigenic effects, providing context for potential peptidergic signaling. However, the inference in C116 about the relative importance of glutamate versus peptides is speculative. The lack of post-stimulation effects could have alternative explanations, and direct experiments blocking glutamate or peptide signaling would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  }
+]

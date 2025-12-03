@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The manuscript provides background information on LINE-1 (L1) retrotransposons, describing their genomic prevalence (17% of human genome), structure (6 kb full-length elements with two ORFs), and the properties of the encoded proteins ORF1p and ORF2p that are essential for retrotransposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C11-C15, C56-C59) represent well-established background knowledge about L1 biology, supported by appropriate citations to prior literature. The claims are consistent with the scientific consensus and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ORF1p expressed from full-length L1 rapidly forms cytoplasmic punctate condensates in cells that exhibit cis preference, appearing as early as 3 hours post-induction and increasing in number (but not size) over 24 hours. Co-expressed ORF1p from different L1 elements predominantly forms separate puncta with minimal mixing (21% colocalization vs 56% for positive control), and 41% of ORF1 puncta contain detectable L1 RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 are well-supported by live-cell imaging data (Figure 1D-G, Videos 1-2) showing puncta formation kinetics, diffusion properties, and colocalization analyses. The quantitative measurements of colocalization and RNA association are appropriately controlled and statistically analyzed. The cis preference observation is particularly well-demonstrated by the dual-labeling experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Purified ORF1p forms condensed phases in vitro at low micromolar concentrations under physiological conditions, with condensation inhibited above 300 mM KCl, indicating electrostatic interactions drive assembly. RNA is recruited to condensates at 3,000:1 protein:RNA ratio, decreasing protein partition coefficient. Droplet fusion kinetics are slow (3 min to plateau) and further slowed by RNA addition in a non-monotonic manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C32 are supported by systematic in vitro reconstitution experiments (Figure 2A-E) examining protein concentration, salt concentration, and RNA stoichiometry effects on condensation. The salt-dependence data clearly support the role of electrostatic interactions. Fusion kinetics measurements provide quantitative material property characterization, though the non-monotonic RNA effect is complex and could benefit from additional mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "K3A/K4A and R261A mutants of ORF1p show altered condensation properties in vitro, with R261A having more restricted condensation (limited to high protein/low salt) and higher protein partition coefficients. In cells, both mutants show drastically reduced puncta formation compared to WT and have undetectable retrotransposition activity, demonstrating that K3/K4 and R261 residues are necessary for cellular condensation and retrotransposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C72-C81 are well-supported by combined in vitro and cellular data (Figure 3). The mutants are properly characterized (trimeric by SEC), show differential responses to RNA in vitro, and exhibit clear loss-of-function phenotypes in cells. The correlation between condensation defects and loss of retrotransposition is compelling. However, the mechanistic distinction between K3/K4 and R261 contributions could be more clearly delineated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The three-residue stammer motif (M91, E92, L93) in the ORF1p coiled coil is critical for condensation and retrotransposition. Deletion of the stammer (StammerDel) abolishes cellular puncta formation and retrotransposition, while orthogonal reconstitution with synthetic stammers (StammerAAA and StammerAEA) rescues both condensation and retrotransposition activity proportionally (50% and 20% of WT, respectively), demonstrating that coiled-coil flexibility rather than specific residue chemistry is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 and C82-C86 are strongly supported by the elegant stammer deletion/reconstitution experiments (Figure 4A-C). The orthogonal rescue with synthetic stammers provides compelling evidence that conformational dynamics, not specific residue identity, drive function. The quantitative correlation between puncta formation and retrotransposition activity across variants strengthens the conclusion. The conservation data for E92 (C85) adds evolutionary context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "WT and StammerAEA ORF1p exhibit similar non-monotonic changes in inverse capillary velocity in response to increasing RNA concentrations, while K3A/K4A shows no response and R261A shows a delayed response. At nanomolar protein concentrations, WT and stammer mutants show attenuated RNA partitioning compared to R261A. These differential material properties correlate with the ability to form puncta in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C87-C94 are supported by detailed biophysical characterization (Figure 4D-E, supplemental figures). The inverse capillary velocity measurements provide quantitative assessment of material properties, and the correlation with cellular behavior is notable. However, the mechanistic link between these specific in vitro properties and cellular condensation remains somewhat indirect. The non-monotonic behavior is intriguing but incompletely explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C52",
+      "C110"
+    ],
+    "result": "Condensation of ORF1p is critical for L1 retrotransposition, with electrostatic interactions and trimer conformational dynamics tuning assembly properties for efficient RNP formation. Mutations preventing condensation abolish retrotransposition, while restoration of coiled-coil flexibility rescues both. The authors propose that dynamic ORF1p oligomerization on L1 RNA drives formation of an essential L1 RNP condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C52, and C110 represent the central conclusions of the paper. The correlation between condensation and retrotransposition is consistently demonstrated across multiple mutants (K3A/K4A, R261A, StammerDel, StammerAAA, StammerAEA). The rescue experiments provide strong evidence for causality. However, the proposed model (C10) of dynamic oligomerization driving condensate formation, while plausible, remains somewhat speculative and would benefit from direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C102",
+      "C104",
+      "C106"
+    ],
+    "result": "The authors propose that ORF1p condensation occurs cotranslationally, creating viscous condensates with cis L1 mRNA that provide a biophysical mechanism for L1 cis preference. This model suggests that condensation-defective ORF1p may exhibit increased trans mobilization of off-target RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55, C102, C104, and C106 represent proposed mechanistic models rather than directly demonstrated results. While the cis preference data (minimal mixing of co-expressed ORF1p) and material properties support this model, direct evidence for cotranslational assembly is lacking. The prediction about trans mobilization (C55) is supported by cited Alu data but not tested in this study. These are reasonable hypotheses requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors propose a model where the ORF1p RRM participates in protein-protein interactions driving condensation without RNA, while the NTR basic patch modulates condensate physical properties in response to low RNA concentrations. The flexible coiled coil separating these motifs is critical for their roles, allowing ORF1p to undergo rapid, dynamically controlled condensation with cis RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C111-C119 integrate prior work with current findings to propose a mechanistic model. The differential behavior of mutants (K3A/K4A vs R261A) supports distinct roles for NTR and RRM (C113-C117). The stammer data support the importance of coiled-coil flexibility (C118). However, some aspects remain inferential - the precise molecular mechanisms by which these domains contribute to condensation are not fully elucidated. The model is well-supported but represents an interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The engineered L1 system shows appropriate functionality: the tagged WT L1 element undergoes retrotransposition in ~1% of cells (consistent with literature), the ORF1-Halo tag reduces activity to 50% of untagged, and all purified ORF1p variants (WT and mutants) are properly folded trimers as confirmed by size-exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 validate the experimental system. The retrotransposition rate (C62) matches published values, providing confidence in the system. The tag effect (C63) is appropriately characterized. The SEC data (C64-C66) confirm proper protein folding for all variants, ruling out gross misfolding as an explanation for mutant phenotypes. These are important controls that strengthen the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The monodisperse puncta observed at 6 hr induction may be more representative of physiological ORF1p behavior than larger stress-granule-like assemblies at 72 hr. ORF1p assemblies increase slightly in intensity over time, indicating the process is not pure phase separation with fixed saturation concentration. RNA partition coefficient increases with decreasing protein concentration and increasing salt, suggesting protein-RNA and protein-protein interactions compete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide important interpretive context for the experimental observations. The distinction between early puncta and late stress-granule-like structures (C67) is reasonable but somewhat speculative. The observation about intensity increase (C68) is data-driven and appropriately interpreted in the context of phase separation theory. The RNA partitioning observations (C69-C71) are well-supported by data and provide mechanistic insight into competing interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "At nanomolar protein concentrations, all ORF1p variants form punctate sub-micron assemblies that strongly colocalize with RNA, except R261A which shows lower colocalization at higher RNA stoichiometry. The RNA partitioning behaviors parallel the material property trends, suggesting differential fusion properties arise from differences in protein and RNA partitioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 describe experiments at more physiologically relevant protein concentrations (Figure 4\u2014figure supplement 5). The observation that all variants form punctate assemblies at nanomolar concentrations (C95) is important for relating in vitro to cellular behavior. The correlation between RNA partitioning and fusion properties (C98-C99) is inferential but reasonable. These data help bridge the gap between micromolar in vitro experiments and cellular observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors discuss that while ORF1p's major role involves RNP formation, the diversity of loss-of-function mutations suggests additional roles. They acknowledge discrepancies between in vitro and cellular behavior, attributing these to dynamical control mechanisms in cells not captured in reconstitution experiments, along with other cellular factors like crowding and post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 and C103-C109 represent thoughtful discussion of study limitations and context. The acknowledgment of in vitro/cellular discrepancies (C107-C109) is appropriate and honest. The proposed explanations are reasonable though speculative. The discussion of additional ORF1p roles (C100-C101) appropriately contextualizes the findings. These claims demonstrate scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  }
+]

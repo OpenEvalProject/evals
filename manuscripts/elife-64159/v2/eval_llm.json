@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C50",
+      "C61"
+    ],
+    "result": "The study detected 771 unique human proteins in CSF samples, with ABM showing the highest protein content and a specific increase in neutrophil-derived proteins. ABM samples contained 719 proteins versus 544 in controls, with total protein intensities 4.3 times higher than controls. Neutrophil proteins showed significant elevation specifically in ABM compared to all other groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C38-C44, C47-C48, C50, and C61 collectively demonstrate pathogen-specific proteome changes with strong quantitative data from SWATH-MS analysis. The statistical significance (C47, C50) and tissue assignment analysis (C48, C61) provide converging evidence for neutrophil protein elevation being distinctive for ABM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C104",
+      "C128"
+    ],
+    "result": "Both ABM and VM result in significant reduction of brain-enriched proteins in CSF, though the overlap of reduced proteins between ABM and VM is small and the mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51, C104, and C128 are supported by statistical analysis (Figure 2e) showing significant decreases in brain-associated proteins across disease groups. The authors acknowledge the mechanism is not clarified (C104), which is appropriate scientific caution rather than a weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C77"
+    ],
+    "result": "LASSO regression modeling identified an 18-protein panel capable of classifying meningitis types with high performance. ABM and control groups achieved mean AUROC of 0.96 and 0.95 respectively, while TBE achieved AUROC of 0.87. All tested groups had AUROC above 0.80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C65-C70, and C77 are well-supported by the LASSO modeling results with appropriate cross-validation (fourfold, 100 repetitions). The high AUROC values and reproducibility across runs demonstrate robust classification performance. The 18-protein panel was consistently selected (\u226590% of runs), providing strong evidence for the discriminatory capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The 18-protein LASSO panel includes proteins with distinct functional roles: 5 proteins elevated in both ABM and BM (involved in neutrophil degranulation), 9 proteins exclusively elevated in ABM (involved in inflammatory response, fibrin clot formation, LPS binding, complement regulation), and proteins with varying discriminatory weights for BM, VM, and TBE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 provide detailed characterization of the LASSO-selected proteins with functional annotation from established databases (Reactome). The tissue-specific elevation patterns and functional roles are consistent with known biology of bacterial versus viral infections, supporting the validity of the panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Cross-comparison analysis revealed that ABM and VM evoke more similar responses compared to BM. ABM had 49 unique significant proteins, VM had 10, with 16 shared proteins. Only three proteins (CHI3L2, MUCB, PROF1) were elevated in all three disease groups, with substantially higher intensities in ABM. ABM showed increased acute-phase proteins (SAA1, CRP) while VM showed increased C4b-binding protein and CXCL10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by Venn diagram analysis (Figure 3d) and protein intensity measurements (Figure 3e-g). The differential protein patterns between disease groups are well-documented with appropriate citations for prior associations (C60). The disease-specific protein signatures are consistent with known pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Gene ontology enrichment analysis revealed that repressed proteins in ABM are enriched for 'regulation of synapse maturation and assembly,' while induced proteins are enriched for 'regulation of apoptotic signaling pathway,' 'defense response to bacterium,' and 'glial cell development,' suggesting cellular-level changes in neuronal circuits and increased immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by GO enrichment analysis (Figure 2\u2014figure supplement 4c) with appropriate interpretation. The biological interpretation is reasonable and supported by citation for glial cell function (C55). However, the causal link between GO enrichment and actual cellular changes is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Longitudinal analysis of 36 additional CSF samples from ABM (6 patients) and SAH (4 patients) over 10-13 days showed that four LASSO-predicted proteins for ABM remained elevated throughout the 10-day period, brain proteins started increasing around day 5, and protein levels were low or absent in SAH, indicating an ongoing host response process unique to infectious neurological disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by longitudinal data (Figure 5). The temporal dynamics of protein changes are well-documented. The comparison with SAH provides important specificity for infectious versus non-infectious neurological conditions. However, the small sample size (6 ABM, 4 SAH patients) and limited follow-up duration (10-13 days) are acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C92",
+      "C117",
+      "C126",
+      "C127"
+    ],
+    "result": "The study analyzed CSF from 135 patients with suspected meningitis (171 total samples including longitudinal), subdivided into ABM (n=35, 11 bacterial pathogens), BM (n=7), VM (n=21, 7 viral pathogens), and controls (n=49). The most frequent pathogens were S. pneumoniae, enteroviruses, and TBE. Samples were analyzed using 50 \u03bcL CSF with SWATH-MS and interrogated with assay libraries from 28 human organs/cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C92, C117, C126-C127 accurately describe the study cohort and methodology. The sample sizes and pathogen distributions are clearly documented (Figure 1b). The methodology is appropriate for the research question with adequate technical detail provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Several LASSO-selected proteins have been previously associated with bacterial or viral infections in literature: CATD and CFAH are involved in bacterial clearance, A2GL is an inflammatory marker elevated in ABM, A1AT and APOE are higher in ABM, and ANT3 has broad-spectrum antiviral activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are well-supported by appropriate citations to prior literature (Bewley et al. 2011, Haapasalo et al. 2012, Chong et al. 2018, Hoffman et al. 1989, Gutteberg et al. 1986, Wang et al. 2012, Quenelle et al. 2014). This provides external validation for the biological relevance of the LASSO-selected proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C91",
+      "C93",
+      "C94",
+      "C115"
+    ],
+    "result": "SWATH-MS methodology generates fragment ion spectra of all MS-measurable peptides using data-independent acquisition (DIA), followed by protein quantification using established assay libraries. The method has high reproducibility (median CV <20% for technical replicates), allows iterative reanalysis with different libraries, and enables merging of datasets analyzed separately in time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C91, C93-C94, C115 accurately describe SWATH-MS methodology with appropriate citations (Gillet et al. 2012, Teleman et al. 2017, Guo et al. 2015). The technical reproducibility claim (C91) is supported by citation rather than data shown in this study, which is acceptable for established methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Among pathogen groups, LASSO regression generated the highest AUC for TBE (0.87) despite relatively small sample size, and there are currently no biomarkers for detecting and diagnosing TBE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by LASSO modeling results and citation (Bogovic and Strle, 2015). The high performance for TBE classification despite small sample size (n=5) is notable and suggests a distinct host response signature. However, the small sample size is a limitation that should be acknowledged for clinical translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C23",
+      "C24"
+    ],
+    "result": "Current CSF diagnostic parameters (WBC count, glucose, protein concentrations) are relatively non-specific yielding inconclusive diagnostic information, and it was previously unknown if different pathogens can evoke detectable differences in host response proteome. Detection of pathogen-specific patterns requires large sample cohorts, and mRNA profiling is less suitable for body fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C23-C24 establish the rationale for the study with appropriate citations (Garty et al. 1997, Lindquist et al. 1988, Nigrovic et al. 2002). The logical inference about mRNA profiling limitations (C24) is sound given that body fluids lack protein synthesis machinery (C17). This provides strong justification for the proteomics approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Future work could include longer-term protein monitoring to understand neurological sequelae, extension of the compendium for other pathogens, reanalysis with improved assay libraries for new protein patterns, and development of diagnostic/prognostic markers. Complete human proteome assay libraries will enable quantification of additional proteins, PTMs, and processed proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C120-C125 are speculative statements about future research directions and potential applications. While reasonable and well-justified based on the current results, these represent anticipated outcomes rather than demonstrated findings. The speculation is appropriate for a Discussion section but cannot be evaluated as supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C45",
+      "C46",
+      "C55",
+      "C64",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C114",
+      "C116"
+    ],
+    "result": "Background knowledge and literature context about meningitis epidemiology, pathophysiology, current diagnostic approaches, body fluid protein composition, mass spectrometry methods, neutrophil biology, and disease heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14, C17-C22, C25-C28, C45-C46, C55, C64, C95-C108, C114, C116 represent established knowledge or literature-based context supported by appropriate citations. These provide necessary background but are not novel findings of this study. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Several neutrophil-associated proteins were induced \u226564-fold but not statistically significant, indicating large variation associated with these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by the volcano plot data showing high fold-change but non-significant proteins (yellow dots in Figure 2b-d). The interpretation about high variation is reasonable. However, this observation raises questions about whether the statistical threshold is appropriate or whether biological variability is masking real effects in some patients.",
+    "result_type": "MINOR"
+  }
+]

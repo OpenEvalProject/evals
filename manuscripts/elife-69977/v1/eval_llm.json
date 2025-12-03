@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Participants successfully performed the reaching task with low error rates (0-12.5% unsuccessful trials), bell-shaped velocity profiles, and comparable spatial accuracy between left and right arms (mean distance from target center: 0.80 cm for right arm, 0.90 cm for left arm, p=0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide converging behavioral evidence that participants performed the task successfully and comparably with both arms. The statistical test (C23) confirms no significant difference in accuracy between arms, supporting the validity of the experimental paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A substantial proportion of electrodes showed predictive encoding of arm movements (31% for contralateral, 25% for ipsilateral, 24% for both), with similar electrode distributions across premotor, sensorimotor, and parietal regions in both hemispheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 establish that the encoding model successfully predicts neural activity for both contralateral and ipsilateral movements across multiple brain regions. The chi-square test (C27, p=0.99) confirms comparable electrode coverage between hemispheres, addressing potential sampling bias concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The left hemisphere shows stronger bilateral encoding than the right hemisphere, with lower contralateral bias scores (p<0.001) and this bias weakening with distance from primary motor cortex in both hemispheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate a key hemispheric asymmetry through multiple statistical tests. The significant Arm\u00d7Hemisphere interaction (C30) and permutation test results (C31) provide strong evidence for left hemisphere dominance in bilateral encoding. The spatial gradient analysis (C32) adds anatomical specificity to this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Hemispheric asymmetries in bilateral encoding vary by task phase: the left hemisphere shows stronger bilateral encoding during movement execution (contralateral bias disappears, p=0.482), while the right hemisphere shows stronger bilateral encoding during instruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 reveal a complex three-way interaction (C35, p<0.001) between Arm, Hemisphere, and Task Phase. The statistical tests consistently support opposing temporal patterns between hemispheres, with the left hemisphere showing remarkable bilateral symmetry during movement (C37, C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Across-arm generalization is better in the left hemisphere than the right (R\u00b2left=0.04 vs R\u00b2right=0.11, p<0.001), with better generalization during instruction than movement phase in both hemispheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 demonstrate superior across-arm generalization in the left hemisphere through multiple statistical comparisons. The three-way interaction (C43) and simple effects analyses (C46, C47) provide robust evidence for both hemispheric and temporal differences in representational overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Electrodes showing good across-arm generalization are predominantly located in left hemisphere premotor and parietal cortices, while electrodes showing poor generalization cluster bilaterally near the central sulcus (M1), with generalization quality correlating with distance from dorsal central sulcus in the left hemisphere (r=0.46, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 establish a clear anatomical dissociation between electrode types. The chi-square test (C50, p<0.001) confirms left hemisphere predominance for good generalizers, while spatial correlation analyses (C54, C55) link generalization quality to anatomical location. The 61% of poor generalizers meeting encoding criteria (C49) rules out the alternative explanation that poor generalization simply reflects weak ipsilateral encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Electrodes that generalize well across arms show greater tuning similarity (p<0.001), with this similarity being higher during movement for good generalizers but higher during instruction for poor generalizers, while both electrode types show main effects of arm and task phase on modulation depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 demonstrate that representational overlap differs qualitatively between electrode types. The significant interaction and simple effects analyses (C58-C60) reveal opposing temporal dynamics of tuning similarity, suggesting fundamentally different computational roles for these electrode populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Speed and position features dominate the encoding model (68% contralateral, 63% ipsilateral contribution), with electrodes that generalize well showing strongest correspondence to position (200ms lag for contralateral, 150ms for ipsilateral) while poor generalizers correspond most to speed (200ms lag for both arms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 characterize the kinematic features driving neural predictions. The relative contributions (C62, C63) and cross-correlation analyses (C65-C69) are clearly stated with specific lag times. The comparison to primate studies (C64) provides external validation, though this relies on citation rather than direct data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The left hemisphere shows substantially stronger ipsilateral encoding (Cohen's d=1.34) and greater representational overlap between arms, with good generalizers clustering in left premotor/parietal regions and poor generalizers in bilateral M1, where divergence occurs during instruction via ipsilateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 synthesize the main findings with a large effect size (C72) supporting the hemispheric asymmetry. The anatomical clustering patterns (C73, C74) and temporal dynamics (C75) are consistently supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "Target tuning exists for both contralateral and ipsilateral movements, with ipsilateral tuning being shallower overall, but electrodes that generalize well show similar spatial tuning for both arms while poor generalizers (primarily in M1) show disparate tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 and C84 establish differential tuning properties between electrode types. While the statistical tests supporting 'significantly shallower' (C79) are not explicitly provided, the qualitative pattern is clearly described and the inference about directional encoding (C81) follows logically from the similar tuning observation (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The encoding model successfully predicts neural activity during the instruction phase, confirming movement planning, with the left hemisphere showing stronger bilateral encoding overall but with opposing temporal patterns between hemispheres (left: stronger during movement; right: stronger during instruction), and complete disappearance of contralateral bias in the left hemisphere during movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 integrate findings about task phase effects. The ability to predict activity during instruction (C85) validates the delayed-response paradigm. The hemispheric differences (C86-C88) are supported by the statistical analyses presented earlier, though C88's claim of 'complete disappearance' is strong given the p=0.482 result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The observed left hemisphere asymmetry in bilateral encoding aligns with established literature on left hemisphere dominance in praxis, apraxia following left hemisphere lesions affecting both limbs, and functional imaging showing left hemisphere activation during ipsilateral movement, with ipsilateral encoding most prominent in left premotor and parietal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 contextualize the findings within the apraxia and praxis literature. These claims are well-supported by multiple citations (C90-C97) and the anatomical overlap with praxis regions (C98) is directly demonstrated in the data. However, the authors acknowledge (in discussion) that their simple reaching task differs from typical praxis tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Using a kinematic encoding model, the study demonstrates that the left hemisphere more strongly encodes the ipsilateral arm than the right hemisphere during both preparation and movement, with this asymmetry driven by electrodes over premotor and parietal cortices while sensorimotor cortex shows strong contralateral encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 summarize the main conclusion. These are well-supported by the extensive statistical analyses presented throughout the results section (C28-C47, C70-C74). The anatomical specificity (C106, C107) is demonstrated through the spatial analyses and electrode categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study recorded from six epilepsy patients (three per hemisphere) across three hospitals, with 665 electrodes remaining after quality control (82 removed for noise, 5 for epileptic activity), and kinematic reconstruction showed high correlation with Leap motion data (r=0.98 for position, r=0.93 for velocity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 describe the dataset and methods. The sample characteristics are clearly stated (C108, C109), quality control procedures are documented (C110), and kinematic validation is quantified (C111). These provide essential methodological transparency, though the small sample size (n=6, 3 per hemisphere) limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Alternative explanations for ipsilateral encoding include postural control (though evidence suggests right hemisphere specialization and timing mismatch) and bimanual coordination (with left hemisphere showing greater impairments post-stroke and fMRI evidence for maintained ipsilateral representations in premotor/parietal regions during bimanual tasks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 discuss alternative interpretations based on cited literature. While the citations support these possibilities, the current study lacks the experimental manipulations (EMG, postural measurements, bimanual conditions) needed to directly test these alternatives. The authors acknowledge these limitations but cannot definitively rule out these explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes that while motor control is primarily contralateral, ipsilateral hemisphere activity contains movement-relevant information that can be decoded, with evidence for both overlap and independence hypotheses depending on task and region, and known hemispheric asymmetries in praxis favoring the left hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background context through citations. These establish the scientific foundation for the study by reviewing prior work on contralateral organization (C1-C2), bilateral activity (C3-C6), representational overlap/independence (C7-C11), and hemispheric asymmetries (C12-C15). The characterization of HFA (C16-C17) justifies the neural measure used. All claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C82",
+      "C83"
+    ],
+    "result": "The observed ipsilateral inhibition during instruction in poor generalizers is consistent with TMS studies showing reduced corticospinal excitability of the nonselected hand during preparation, and the tuning overlap in good generalizers aligns with prior single-unit and ECoG findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C82-C83 connect the findings to specific prior results. The TMS literature (C76-C77) provides a mechanistic interpretation for the inhibition pattern observed in C75, while the tuning studies (C82-C83) validate the overlap findings. These are appropriately cited and strengthen the interpretation.",
+    "result_type": "MINOR"
+  }
+]

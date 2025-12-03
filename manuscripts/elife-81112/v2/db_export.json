@@ -1,0 +1,1228 @@
+{
+  "submission": {
+    "id": "1dbd04d6-4c5a-4dbd-9928-b6184e77f4ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:49:51.690400Z",
+    "updated_at": "2025-12-03T20:49:51.690400Z"
+  },
+  "content": [
+    {
+      "id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "submission_id": "1dbd04d6-4c5a-4dbd-9928-b6184e77f4ee",
+      "content_type": "manuscript",
+      "content_text": "# Substrate stiffness impacts early biofilm formation by modulating Pseudomonas aeruginosa twitching motility\n\n## Authors\n\n- Sofia Gomez<sup>1</sup>\n- Lionel Bureau<sup>1</sup>\n- Karin John<sup>1</sup> ([ORCID: 0000-0003-1678-6880](https://orcid.org/0000-0003-1678-6880))\n- Elise-No\u00eblle Ch\u00eane<sup>2</sup>\n- Delphine D\u00e9barre<sup>1</sup> ([ORCID: 0000-0002-0513-6172](https://orcid.org/0000-0002-0513-6172)) \u2020\n- Sigolene Lecuyer<sup>1</sup> ([ORCID: 0000-0001-7393-2667](https://orcid.org/0000-0001-7393-2667)) \u2020\n\n### Affiliations\n\n1. Universit\u00e9 Grenoble Alpes, CNRS Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))\n2. Laboratoire de Physique, Universit\u00e9 Lyon, ENS de Lyon, Universit\u00e9 Claude Bernard, CNRS Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSurface-associated lifestyles dominate in the bacterial world. Large multicellular assemblies, called biofilms, are essential to the survival of bacteria in harsh environments and are closely linked to antibiotic resistance in pathogenic strains. Biofilms stem from the surface colonization of a wide variety of substrates encountered by bacteria, from living tissues to inert materials. Here, we demonstrate experimentally that the promiscuous opportunistic pathogen Pseudomonas aeruginosa explores substrates differently based on their rigidity, leading to striking variations in biofilm structure, exopolysaccharides (EPS) distribution, strain mixing during co-colonization and phenotypic expression. Using simple kinetic models, we show that these phenotypes arise through a mechanical interaction between the elasticity of the substrate and the type IV pilus (T4P) machinery, that mediates the surface-based motility called twitching. Together, our findings reveal a new role for substrate softness in the spatial organization of bacteria in complex microenvironments, with far-reaching consequences on efficient biofilm formation.\n\n## Introduction\n\nThe transition of bacteria from a planktonic to a surface-attached state is of paramount importance in biofilm formation. In consequence, the way bacteria sense and respond to the close proximity of a surface has been the subject of intense scrutiny (Dufr\u00eane and Persat, 2020; Laventie and Jenal, 2020). This interaction involves different aspects of bacterial motility: swimming toward the surface, but also swarming, gliding or twitching that are used by attached bacteria to explore the surface collectively or individually (Wadhwa and Berg, 2022; Conrad et al., 2011). Eventually, permanent bacterial adhesion and microcolony structuration may arise, through mechanisms which essential ingredients are known (production of matrix, loss of motility), but in response to cues that remain unclear.\n\nBacteria are ubiquitous and can successfully colonize a wide range of biological tissues and abiotic surfaces (Stoodley et al., 2002; Mann and Wozniak, 2012). Different environments often result in different phenotypes for a given microorganism (D\u00f6tsch et al., 2012; Cornforth et al., 2018). However, although chemical signaling has long been known to impact bacterial gene regulation, it remains unclear how the mechanical properties of the encountered surface might impact bacterial behavior (Persat et al., 2015b). In this paper, we investigate how the rigidity of a substrate modifies bacterial motility, and by doing so impacts microcolony morphogenesis and early biofilm development.\n\nPseudomonas aeruginosa (PA) is an opportunistic rod-shaped pathogen that contaminates a wide range of substrates, from very soft tissues to rigid implants (Moradali et al., 2017; Chang, 2017). A particularly gifted and versatile biofilm-former, it is extremely prone to developing antibiotic resistance (Pang et al., 2019; Boucher et al., 2009). PA has developed an arsenal of techniques to move on surfaces: among them is twitching motility, that allows single bacteria to translocate across surfaces using type IV pili (T4P) (Maier and Wong, 2015). T4P are thin protein filaments on the bacterial surface that can extend and contract by assembly and disassembly of the protein subunit PilA. The tip of T4P acts as a promiscuous hook that can grasp most surfaces. Attachment, contraction, detachment and extension cycles propel bacteria (Merz et al., 2000; Maier and Wong, 2015; Skerker and Berg, 2001; Tal\u00e0 et al., 2019). This surface motility is important for bacteria to efficiently settle on surfaces, but the exact mechanisms at play are unknown (O\u2019Toole and Kolter, 1998; Leighton et al., 2015; Craig et al., 2019). The function of T4P and the fact that it exerts forces on its environment make it an obvious candidate for surface-sensing mechanisms (Merz et al., 2000; Dufr\u00eane, 2015; Sahoo et al., 2016). Recent results have shown that the polar localization of pili in PA could happen in response to surface-sensing (Cowles and Gitai, 2010). Polarly localized pili lead to persistent rather than random displacements, as well as specific effects such as the upstream migration of bacteria submitted to strong flows (Shen et al., 2012). Reversal of twitching bacteria is rapidly induced upon meeting obstacles, suggesting a mechanical feedback from T4P (K\u00fchn et al., 2021). In addition, PA can exert different types of virulence, from acute attacks to chronic infections (Furukawa et al., 2006; Valentini and Filloux, 2016), and specific host-pathogen interactions have traditionally been considered as the key players in the regulation of these virulence pathways (Gellatly and Hancock, 2013). However, surface-sensing in itself has recently appeared as a potential signal that could trigger the upregulation of virulence-associated genes (Islam and Krachler, 2016; Persat et al., 2015a; Siryaporn et al., 2014). Although the global effect of surface rigidity on bacterial adhesion and biofilm formation has sometimes been addressed (Saha et al., 2013; Song and Ren, 2014; Song et al., 2018), so far how the micromechanical environment experienced by individual bacteria impacts their behavior is still unclear, possibly because of the difficulty to design and control microenvironments that allow for a fine tuning of mechanical properties at the bacterial scale, along with negligible changes of the chemical environment.\n\nIn this study, we use a home-designed microfluidic setup to investigate at the single-cell level the influence of substrate rigidity on PA bacteria adhering to an open surface, under controlled flow conditions. We first demonstrate that substrate elasticity strongly impacts early microcolony development. Focusing on single-cell behavior, we then study quantitatively how rigidity modulates bacterial motility and propose a purely mechanistic model to account for our observations. Finally, we demonstrate that this mechanical tuning of the motility explains rigidity-induced changes in early surface colonization: we explore its consequences in terms of microcolony morphology, matrix deposition, strain mixing, and long-term gene expression.\n\n## Results\n\nIn order to explore in situ the effect of substrate rigidity on the behavior of adhering bacteria, we have developed an experimental approach to include mechanically well-defined hydrogel pads in a microfluidic channel providing controlled flow conditions and allowing confocal imaging (Figure 1A). We use the biocompatible hydrogel polyacrylamide (PAA), which has been extensively used to investigate cell-substrate interaction and mechanotransduction in mammalian cells. By varying the amount of bisacrylamide cross-linker during its preparation, PAA can span a biologically-relevant range of rigidities (from \u223c1\u2013100 kPa) while keeping a low viscous dissipation. Several pads, with different\u2019s modulus values ranging from \u223c3 to 100 kPa (see Figure 1\u2014figure supplement 1, and Materials and methods), are used in each single experiment, and bacteria adhering on PAA and glass surfaces are imaged with high-resolution phase-contrast and fluorescence time-lapse imaging, from very low surface coverage up to the formation of microcolonies (1 frame/min over \u223c10 hr).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental setup: bacteria (P. aeruginosa strain PAO1) are imaged in a flow cell under constant flow of minimal medium. (B) After 10 hr, dense, isolated colonies form on soft PAA (2.7 kPa) while bacteria are more evenly distributed on stiff PAA (84 kPa), closer to what is observed on glass. Scale bars, 20 \u03bcm. (C) Bacterial growth is not impacted by substrate rigidity. (D) 3D reconstruction of colonies confirms their hemispherical shape on soft substrates. (E) Surface coverage is lower on soft substrates, but total volume of colonies is conserved, with a higher roughness value. (F) Fraction of area occupied by the bacteria as a function of the distance from the coverslip, showing flatter colonies on rigid substrates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Both techniques yield quantitatively similar results for gels with Young\u2019s moduli $E<20$ kPa. (b) Spatial homogeneity of the gels characterized by indentation measurements. For each position, separated by 1 mm, a 4x4 force spectroscopy map is taken, with a spacing between \u201cpixels\u201d of 3 \u03bcm. (c) comparison of elastic moduli $E$ measured before and after drying/rehydration of the gels.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Phase contrast images of WT PAO1 bacteria on PEG hydrogels 5h after the onset of surface colonization. Scale bars, 20 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Phase contrast images of WT PAO1 bacteria on PAA hydrogels at the bottom of a 6-well plate, after 150 min of incubation at 37\u00b0C without agitation. In red: initial adhering bacteria at t0. (Scale bars, 20 \u03bcm.).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** In the T4P-deficient mutant PAO1 $pilA::Tn5$, substrate rigidity does not significantly impact colony morphology.Colonies imaged after 5 h. Scale bar 20 \u03bcm.\n\n### Substrate elasticity modifies bacterial colonization of PAA in a T4P-dependent manner\n\nWe first focus on the effect of substrate rigidity on early microcolony formation. Straightforward observations with phase-contrast imaging show a striking impact on the shape of microcolonies after a few hours (Figure 1B and Video 1): on the softest hydrogels (<10 kPa), bacteria form well-defined, dense hemispherical colonies; in contrast, on stiff hydrogels, bacteria are distributed in a thin layer covering most of the surface, a morphology closer to what we observe on glass. To rule out any effect due to changes in the bacterial growth rate, we quantified the division time of bacteria (Figure 1C), and the volume occupied by bacterial colonies after a few hours (Figure 1D and E) on different substrates: both were found to be unaffected, suggesting that bacteria develop and colonize substrates at the same rate irrespective of rigidity, but that the processes that drive their self-organization into colonies are modified. In contrast, a change in the morphology of the colonies could be confirmed by quantifying the characteristic roughness of the bacterial layer, which decreases as rigidity increases (Figure 1E), and the distribution of bacteria with the distance from the surface, which spreads further for soft hydrogels (Figure 1F). To control that this is a robust phenomenon driven by substrate elasticity rather than specific chemical interactions, we reproduced this assay using polyethylene glycol (PEG) hydrogels, which are chemically different from PAA but can span a similar range of rigidities. We obtained very similar results regarding the phenotype of colonies, which further confirms a role for the mechanical properties of the substrate in bacterial self-organization (Figure 1\u2014figure supplement 2). Finally, because shear flow can orient polarly-attached bacteria, direct motility, disperse quorum-sensing molecules, and generally impact spatial organization into colonies, we carried out experiments on hydrogels immobilized at the bottom of wells, without any agitation of the above medium. Although long-term observations are rendered difficult in that case by swimming bacteria, we clearly observed the formation of denser colonies on softer PAA (Figure 1\u2014figure supplement 3), which further demonstrates that substrate stiffness modifies bacterial behavior after attachment in a wide variety of environments.\n\n![Video 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-video1.mp4.jpg)\n\n**Video 1.:** The two gels were included in the same microfluidic channel and imaged quasi-simultaneously. Scale bar, 20 m.\n\nSince surface motility is known to be important for initial self-organization of PA, we hypothesize that it could play a role in the different microcolony shapes that we observe. This link was explored by carrying out experiments using a mutant deprived of type IV pili (T4P), and thus unable to twitch on surfaces (mutant PAO1 $p\u2062i\u2062l\u2062A$::Tn5, Figure 1\u2014figure supplement 4). In these assays, the dependence of microcolony morphology on substrate rigidity is abolished and bacteria form dense hemispherical colonies on all PAA substrates. We therefore conclude that T4P-mediated surface motility (\u2018twitching\u2019) plays a key role in the rigidity modulation of microcolony formation by WT PAO1 on soft elastic substrates.\n\n### Substrate elasticity modulates twitching motility\n\n#### Experimental results - global motility\n\nTo quantify the coupling between the elasticity of the substrate and the twitching motility of bacteria, we analyzed time-lapse phase contrast images of adhering bacteria in flow cells. These images allow segmentation of individual bacteria (SI subsection I.A) from the start of the acquisition (with a few isolated bacteria per field of view) until the transition to out-of-plane growth, after which individual bacteria cannot be easily separated anymore. From segmented binary images at early imaging stages (<100 min), we obtain the surface coverage $A\u2062(t)$ as the fraction of occupied pixels, and the cumulative explored area $S\u2062(t)$ as the fraction of pixels that has been explored at time $t$ (Figure 2A). The evolution of $A\u2062(t)$ reflects the exponential growth of initially attached bacteria on the surface, as well as potential attachment and detachment events during the acquisition. However, in our experiments initial surface coverage is extremely low, and at early times the number of bacteria in the clean flowing medium is negligible so that attachment events are rarely observed. We can thus consider that\n\n$$\n\\frac{dA}{dt}=(k_{di}\u2212k_{de})A(t).\n$$\n\nThe bacterial division rate $k_{d\u2062i}$ does not depend on the substrate (Figure 1C), and was measured for each experiment ($k_{d\u2062i}^{-1}$=27.8 \u00b1 1.4 min). Figure 2B shows the experimental time evolution of $A\u2062(t)$ depending on the gel rigidity, which can indeed be well described by a simple exponential (straight line in the semi-log presentation with slope $k_{d\u2062i}-k_{d\u2062e}$). The slope of $A\u2062(t)$ slightly increases with gel rigidity, suggesting a higher detachment rate $k_{d\u2062e}$ on softer hydrogels at early acquisition times.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig2-v2.jpg)\n\n**Figure 2.:** (A) Surface explored (dark blue) and current surface coverage (cyan) after 100 min on soft and stiff PAA surfaces. Scale bar: 20 \u03bcm. (B) Surface coverage A(t) (broken lines) and cumulative explored area S(t) (full lines) for all tested rigidities (the initial surface coverage $\u27e8A\u2062(t=0-10\u2062m\u2062i\u2062n)\u27e9$ was normalized to 0.1%). Shaded areas are standard errors of the mean (84 kPa: 6 data sets from independent experiments, 18.5 kPa: 10 data sets from five independent experiments, 2.7 kPa: 8 data sets from independent experiments).(C) Global bacterial motility $V_{g}$ averaged over the first 100 min, inferred from the difference between A(t) and S(t) (16 different surfaces, 6 independent experiments). The black line is the fit with the kinetic model using equation A11. with values $V_{max}=0.77\\pm0.35\u2062\\mu$ m.min-1 and $E_{0}=84\\pm68$ kPa. (D) Ingredients of the minimal 1D model for bacterial T4P-powered displacement.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Behavior of mutants $PAO1sadC::Tn5$ and $PAO1wspR::Tn5$ on soft (2.7 kPa) and stiff (84 kPa) PAA hydrogels.Left: typical images showing initially attached bacteria (red) and total explored area after 100 minutes (white). Right: Average bacterial velocity Vg calculated using equation 2 of the main text, over the first 100 min of acquisition (1 experiment for each strain, 3 different positions for each gel. Error bars are SEM).\n\nCompared to $A\u2062(t)$, there is a quantitatively much larger dependence of the cumulative surface coverage $S\u2062(t)$ on the substrate rigidity (Figure 2B). We propose that this result directly reflects a change of the global motility $V_{g}$ of bacteria on the surface. Indeed, neglecting bacterial surface attachment, the evolution of $S$ can be written as\n\n$$\n\\frac{dS}{dt}=k_{di}A+V_{g}w_{b}N=(k_{di}+\\frac{V_{g}}{l_{b}})A.\n$$\n\nwhere $N$ denotes the number of bacteria on the surface, and the typical size of a rod-shaped bacterium is $w_{b}\u2062l_{b}$ (width \u00d7 length), so that the occupied area is $A=N\u2062w_{b}\u2062l_{b}$. Here we have assumed that bacteria tend to move along their major axis, neglecting reorientations, based on previous findings about the polar localization of T4P (Cowles and Gitai, 2010; Jin et al., 2011; K\u00fchn et al., 2021) and our own observations. (Considering that bacteria can move in any direction would lower velocity values by a factor $\\sqrt{\\frac{l_{b}}{w_{b}}}\u2248\\sqrt{3}$, and not change significantly the coming discussion.) The average bacterial size was measured in each experiment (lb =2.8 \u00b1 0.13 $\\mu\u2062m$, wb =0.8 \u00b1 0.13 $\\mu\u2062m$). For each monitored position, we determined $d\u2062S/d\u2062t$ and $A\u2062(t)$ experimentally. The global bacterial velocity $V_{g}$ was then estimated using Equation 2, by averaging over the first 100 experimental time points.\n\nDuring the first 100 min under flow, $V_{g}$ exhibits a clear dependence on substrate elasticity (Figure 2C). Motility values are close to zero on very soft substrates (3\u20136 kPa), and progressively increase to reach $\u223c0.5\\pm0.25$ \u03bcm/min on the stiffest hydrogels tested in this study (84 kPa). We wondered whether this dependence of surface motility on substrate elasticity could result from intracellular modifications in response to bacterial surface-sensing. In P. aeruginosa, two main surface-sensing systems have been unveiled so far: the Pil-Chp system that involves T4P retraction-mediated force sensing Webster et al., 2021, and the Wsp system believed to be activated by cell envelop stress O\u2019Neal et al., 2022; both systems have been shown to activate biofilm formation pathways following bacterial adhesion Chang, 2017. Sessility and matrix production are promoted by increasing intracellular c-di-GMP levels, which production is catalyzed by diguanylate cyclases (DGCs). We carried out experiments with wspR and sadC mutants, two DGCs known to be involved in the surface-sensing response. Although impaired in c-di-GMP regulation, both mutants still exhibited a stiffness-dependent twitching motility (Figure 2\u2014figure supplement 1). Even though other DGCs might be involved, these initial results suggests that our observations at early timescales could be mainly governed by the mechanical interaction of bacteria with their substrate, with gene regulation playing a secondary role. This rational motivates the simple kinetic modeling presented next.\n\n#### Minimal kinetic modeling\n\nBecause a difference in twitching velocity is observed almost immediately upon attachment of bacteria onto the surface, a simple hypothesis could be that a modulation of the twitching efficiency arises through mechanical factors \u2013 the interplay between the T4P extension/retraction mechanism and the linear elasticity of the substrate \u2013 without the need for mechanotransduction mechanisms. To test this minimal hypothesis, we have developed a kinetic model, schematically described on Figure 2D.\n\nBriefly (more details can be found in appendix 1), we consider a bacterium adhering onto an elastic substrate with a single effective pilus. The pilus is modelled as a rigid inextensible filament (Beaussart et al., 2014) and attaches to the substrate via its extremity with a typical adhesion size $\\lambda$. This simple choice is motivated by microscopic observations of pilus straightening over its whole length during retraction Tal\u00e0 et al., 2019 and an estimation of the pilus attachment spot size of $\u22481$ nm from traction force microscopy measurements Koch et al., 2022. Note, that multiple attachments of pili over extended regions to the substrate have also been suggested Lu et al., 2015. However, in our simple approach, we do not consider this possibility. The cell actively retracts its pilus until it detaches from the substrate with the force dependent velocity $v_{R}\u2062(F)=v^{0}\u2062(1-\\frac{F}{F_{R}})$(Marathe et al., 2014), where $F$ denotes the tensile load on the pilus, $F_{R}$ the retraction stall force and $v^{0}$ the retraction speed at zero load. Assuming linear elasticity, the tensile load $F$ is related to the substrate displacement $u$ at the pilus adhesion patch by $F=Y\u2062u$, where $Y\u223cE\u2062\\lambda$ and $E$ is the Young\u2019s modulus of the substrate. Since the typical size of the bacterial body lb is much larger than $\\lambda$, we neglect the deformation of the substrate induced by the bacterial body. Instead we assume that the pilus tension leads to a forward sliding of the bacterial body with a linear force-velocity relationship $v_{B}\u2062(F)=v^{0}\u2062\\frac{F}{F_{B}}$ (see SI subsection II.B and Sens, 2013), reducing the substrate deformation and the load in the pilus. Here, the ratio $\u03b7=\\frac{F_{B}}{v_{0}}$ denotes the mobility constant of the cell on the substrate. With this model, the evolution of the pilus tension $F$ is thus given by\n\n$$\n\\frac{dF}{dt}=Y\\frac{du}{dt}=v_{R}(F)\u2212v_{B}(F)\n$$\n\nwhich is solved by\n\n$$\nF(t)=F_{0}(1\u2212e^{\u2212\\frac{Yv^{0}}{F_{0}}t})\n$$\n\nwith the naturally arising force scale\n\n$$\nF_{0}=\\frac{F_{B}F_{R}}{F_{R}+F_{B}}.\n$$\n\nFrom $\\frac{d\u2062x_{B}}{d\u2062t}=v_{B}\u2062(F)$ we obtain the bacterial sliding distance during the pilus retraction\n\n$$\nx_{B}(t)=\\frac{F_{0}}{F_{B}}[v^{0}t+\\frac{F_{0}}{Y}(e^{\u2212\\frac{Yv^{0}}{F_{0}}t}\u22121)].\n$$\n\nWhile retracting the pilus will detach with a rate constant koff from the substrate. Assuming a force-independent off-rate constant $k_{off}=k_{off}^{0}$ (and hence a mean pilus adhesion time $(k_{off}^{0})^{-1}$) and a pilus retraction frequency $k_{p}$, we obtain an effective bacteria velocity:\n\n$$\nv_{eff}=k_{p}\u27e8x_{B}\u27e9=k_{p}k_{off}^{0}\\int_{0}^{\u221e}x_{B}(t)\u00a0e^{\u2212k_{off}^{0}t}dt=V_{max}\\frac{E}{E+E_{0}}.\n$$\n\nHere, $\u27e8x_{B}\u27e9$ denotes the mean bacterial sliding distance per pilus retraction event and $V_{max}$ denotes the maximum effective speed a bacterium can reach on a given substrate at infinite rigidity. It is given by\n\n$$\nV_{max}=v^{0}\\frac{k_{p}}{k_{off}^{0}}\\frac{F_{R}}{F_{B}+F_{R}}.\n$$\n\nE0 denotes the rigidity at half-maximal speed and is given by\n\n$$\nE_{0}=\\frac{F_{B}F_{R}k_{off}^{0}}{(F_{B}+F_{R})v^{0}\\lambda}.\n$$\n\nFitting (A11) against experimentally measured effective bacterial velocities $V_{g}$ provides a quantitative description of the data for $V_{max}=0.77\\pm0.35$ \u03bcm.min-1 and $E_{0}=84\\pm68$ kPa. The error estimates for $V_{max}$ and E0 were calculated directly from the co-variance matrix of the fit function and the variance of residuals (chi-squared sum divided by the number of degrees of freedom) and are reflective of the wide scattering of measured velocities between different experiments. Conversely, we can estimate $V_{max}$ and E0 from values of the parameters used in the model: assuming a typical pilus retraction speed $v^{0}=1$ m.s-1 (Marathe et al., 2014), a stall force of the order $F_{R}=100$ pN (Marathe et al., 2014; Koch et al., 2022), a pilus off-rate constant $k_{off}^{0}=1$ s-1 (Tal\u00e0 et al., 2019), a contact size of $\\lambda=1$ nm (Koch et al., 2021), a high friction surface with $F_{B}=1$ nN and a typical pilus retraction frequency (Here we assume that one single effective pilus is active during a retraction event. Using a typical pilus length of 5 \u03bcm with retraction speed of $v_{0}=1$ \u03bcm.s-1 we obtain a duration of 5 \u2009s per retraction and a retraction frequency of 0.2\u2009s-1) of $k_{p}=0.2$ s-1 we obtain $V_{max}\u223c1$ \u03bcm.min-1 and a substrate rigidity at half maximum speed of $E_{0}=100$ kPa, which are within 30% of the fitted values.\n\nIn addition, our model [Equation 8] shows that two separate effects translate a (fast) load-free microscopic pilus retraction speed $v^{0}$ into a (slow) macroscopic bacterial speed $V_{max}$. First, the bacterium only translocate during a fraction of the pilus cycle of extension and retraction $\\frac{k_{p}}{k_{off}}$ over the substrate. Second, the pilus retraction speed slows down in a load dependent manner $F_{R}/(F_{B}+F_{R})$. Both effects together reduce the local speed by an order of magnitude from $\\mu\u2062m.s^{-1}$ to $\\mu\u2062m.m\u2062i\u2062n^{-1}$.\n\nTogether this demonstrates that our experimental results on bacterial effective motility on elastic substrates can be interpreted as the result of a simple interplay between the pilus retraction mechanism, the deformation of the elastic substrate, and the friction of the bacterial body on this substrate.\n\n#### Analysis of individual trajectories\n\nThe simple approach presented Figure 2 yields a population-averaged value of the bacterial velocity $V_{g}$. Yet, bacterial populations can be heterogeneous, and moreover the model we have used Equation 2 to determine $V_{g}$ relies on a number of strong assumptions, such as neglecting detachment and re-attachment events. To go further in dissecting bacterial motility on PAA substrates, we developed a segmentation and tracking protocol in order to obtain the individual tracks of all the bacterial cells visible over the course of the acquisiton (Figure 3A, Video 2 and Materials and methods for details). This thorough approach allows us to measure the velocity associated with each 1 min displacement step.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-v2.jpg)\n\n**Figure 3.:** Analysis of full tracks (top row) and 1 min displacement steps (bottom row). (A) Individual bacterial tracks on soft (2.7 \u2009kPa), intermediate (18.5 \u2009kPa) and stiff (84 \u2009kPa) PAA during the first 3 hours after bacterial inoculation (total number of tracks is respectively 60, 123, and 175). Scale bar: 10 \u03bcm (B) Mean track velocity distribution for different values of the substrate rigidity. Only full tracks were considered (corresponding to the right peak in Figure 3\u2014figure supplement 1). 84 kPa: 330 tracks from 2 independent experiments, 18.5 kPa: 394 tracks from 3 independent experiments, 2.7 kPa: 83 tracks from 2 independent experiments. (C) Normalized velocity distributions for the whole bacterial population on different PAA surfaces. The exponential decrease yields a characteristic active velocity $V_{C}$ on each substrate. Displacement steps were measured every minute for 100 min, and two positions were acquired on each rigidity. The average of T4P-defective mutant on all surfaces is shown as a reference. (D) Characteristic active velocity values $V_{C}$ obtained by fitting velocity distributions (6 independent experiments, 16 different surfaces). Values measured on different surfaces in a single experiment (same channel) are shown with the same symbols and connected. Black squares(circled stars) are mean values obtained for the WT(pilA mutant), and error bars show the SEM. The black line is the fit of WT values with the kinetic model-derived equation A11, with $V_{max}=0.48\\pm0.12$ \u03bcm.min-1 and $E_{0}=32\\pm30$ kPa. (E) Average velocity values of the top 5% fastest displacement steps for different substrates. Error bars are standard errors.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distribution of the path duration of bacterial tracks measured on different PAA substrates (WT PAO1). One track starts after a division event, and finishes either at the next division, or when the bacterium leaves the surface. Full lines are bimodal gaussian fits, evidencing a sub-population of bacteria that detach from the surface before dividing. (B) Mean track velocity is similar for short tracks (below the cutoff value tc = 16 min) and long tracks, for all tested substrate rigidities. (total number of analyzed tracks: 60 (2.7 kPa), 124 (18.5 kPa), 175 (84 kPa)).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Mean track velocity distribution for different values of the substrate rigidity. Only full tracks were considered (corresponding to the right peak in Figure 3\u2014figure supplement 1). Considering all tracks does not significantly modify the distributions (data not shown). 84 kPa: 330 tracks from 2 independent experiments, 18.5 kPa: 394 tracks from 3 independent experiments, 2.7 kPa: 83 tracks from 2 independent experiments. (B) Standard deviation of the mean velocity for individual tracks, shown for the 2.7 kPa and 84 kPa data sets. Dotted line is a linear fit for the 84 kPa data (y=0.65x).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Left, calculated distributions (dots) of the sum of two uncorrelated random vectors each following a decreasing exponential distribution with characteristic velocities $V_{C}$ and $V_{C,p}$, at an angle following a random distribution. $V_{C,p}=0.044\u2062\\mu\u2062m/m\u2062i\u2062n$ is equal to the experimentally measured value on the $p\u2062i\u2062l\u2062A$ mutant. $V_{C}$ spans a range similar to experimental measurements, (0.05, 0.1, 0.2, 0.3, and 0.4 \u03bcm/min, from dark blue to cyan). Orange lines are exponential functions with the corresponding. $V_{C}$ Right, characteristic velocities extracted by fitting the exponential part of the simulated distributions, as a function V_C, with. $V_{C,p}=0.044\u2062\\mu\u2062m/m\u2062i\u2062n$ The black line corresponds to y=x.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Statistical analysis of $V_{g}$ (A) and $V_{c}$ (B) for various gel rigidities.Indicated are p-values from paired two-sided Mann-Whitney non-parametric tests. n.s. denotes datasets that are not significantly different at a threshold of 0.05.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** $V_{C}$ obtained by fitting the distribution of displacement steps on PAA or PEG hydrogels in a similar range of substrate rigidity. Error bars are SEM. Each point is the average of 2 positions from 1 experiment. (Note that for technical reasons these experiments were carried out with a wall shear stress of 6.4 mPa, about 3x higher than all other experiments on PAA).\n\n![Video 2.](https://cdn.elifesciences.org/articles/81112/elife-81112-video2.mp4.jpg)\n\n**Video 2.:** Glass surface colonization under controlled shear flow followed over 90 min (1 frame/minute) by phase contrast microscopy. Left, the registered phase contrast image is superimposed with the center of mass of the detected cells after segmentation (green dots). Right, tracks of the detected cells (obtained with the simple LAP tracker of the Trackmate ImageJ plugin), color-coded as a function of the track final length. Scale bar, 20 m.\n\nCan a characteristic twitching velocity be defined for all bacteria? or do phenotypically distinct populations of slow and fast bacteria cohabit on the surface? To answer these questions, we labeled each track, defined as the displacement of a bacterium between two successive division events (Figure 3A). We expected track duration to be similar to the characteristic division time shown on Figure 1C. However, we obtained a bimodal distribution, with two peaks centered at times unaffected by the substrate rigidity: one peak indeed centered on the division time (\u223c27 min), and a second one that corresponds to bacteria spending 5\u201310 min on the surface before detaching (Figure 3\u2014figure supplement 1A). The velocity distribution corresponding to each population is similar (Figure 3\u2014figure supplement 1B). This observation is consistent with a phenotypical difference between daughter cells, in agreement with the results of Laventie et al., 2019 Indeed, the duration of the track before detachment tends to be shorter on soft substrates, but the fraction of bacteria that detach from the substrate ($35\\pm2$ %) is independent of the substrate rigidity. We thus assume that at early experimental timepoints, after moving in sync with the first daughter cell, the second one sometimes detaches from the substrate (about 70% of the time). This feature might change at later timepoints - bacterial tracking was interrupted at the onset of 3D spatial organization (\u223c100 min on the softest hydrogels, see next section for a full description).\n\nConsidering only adhering offsprings, for which full tracks were recorded, we normalized tracks with respect to their initial position, yielding Figure 3A. These homogeneous radial distributions confirm that shear does not influence bacterial orientation in our experiments. As expected, track extension becomes larger as substrate rigidity increases. The distribution of the mean velocity of tracks does not allow us to distinguish different bacterial sub-populations: it reaches higher values on stiffer hydrogels, but it is broad, continuous with an exponential decay (reflecting the diversity of behaviors expected in a population of cells; Figure 3B). In addition, for each track the standard deviation of this mean velocity is comparable and proportional to its mean (Figure 3\u2014figure supplement 2), suggesting a stochastic distribution of twitching steps within a given trajectory.\n\nFocusing next on 1 min displacement steps, and pooling all monitored events during the first 100 min of experiments (which provides more data than only analysing full tracks within the same time window), we obtained the typical velocity distributions shown on Figure 3C. These distributions further confirm that bacterial displacements are very heterogeneous, and present an exponentially decreasing tail which fitting yields a characteristic velocity $V_{C}$ for the bacterial population on a given substrate, that is:\n\n$$\nN(V>V_{0})=N_{0}exp\u2061(\u2212\\frac{V\u2212V_{0}}{V_{C}}),\n$$\n\n(V0=0.08 \u03bcm/min denotes a visual cutoff for low velocities).\n\nTo rationalize the meaning of $V_{C}$, we reasoned that displacement steps are the sum of a passive velocity due to bacterial elongation, local reorganizations and experimental noise, and an active velocity powered by T4P. The velocity distribution obtained using a $p\u2062i\u2062l\u2062A$ mutant is purely exponential, and was used to determine the characteristic passive motility, which does not significantly depend on substrate rigidity ($V_{C}(pilA)=V_{C,p}=0.044$ \u03bcm/min, see Figure 3D). In the case of motile strains, assuming that active and passive displacements are incoherent, our numerical calculations (Figure 3\u2014figure supplement 3) show that in the limit $V_{C}$>$V_{C,p}$, the fitted characteristic velocity $V_{C}$ obtained as described above reflects the active twitching motility of the population, and is not significantly affected by passive movements. A detailed justification for our analysis of the probability distributions of displacement steps is given in the Methods section.\n\nThis analysis, which does not rely on any strong assumption, yields active velocity values for the WT strain (Figure 3D) in very good qualitative agreement with the global velocity analysis described earlier ($V_{g}$, Figure 2C, and Figure 3\u2014figure supplement 4). Again, our kinetic model describes the data quantitatively with values very close to the ones fitted and calculated in the previous subsection ($V_{max}=0.48\\pm0.12$ \u03bcm.min-1 and $E_{0}=32\\pm30$ kPa). The large error bars on fitting parameters reflect the dispersion of experimental measurements, despite our efforts to reproduce identical experiments. However, velocity values measured in a given experiment always exhibit a similar dependence on substrate rigidity, that is a clear increase of motility as rigidity increases. In addition, we characterized the velocity of the 5% fastest bacterial displacement steps (Figure 3E) on each type of substrate. This analysis confirms the dependence of twitching velocity on substrate rigidity, but also yields higher velocity values, in good quantitative agreement with those reported in the literature using other experimental approaches (Tal\u00e0 et al., 2019), which might be biased toward more active bacteria. Finally, this approach was used to quantify bacterial motility in experiments on PEG hydrogels (shown Figure 1\u2014figure supplement 1\u2013pp.), which confirms the very similar bacterial behavior on the two kinds of substrates we have used (Figure 3\u2014figure supplement 5).\n\n### Rigidity-modulated bacterial motility governs the spatial characteristics of early surface colonization\n\n#### In-plane to 3D transition of emerging colonies\n\nTo understand the way rigidity-modulated bacterial motility impacts the process of microcolony formation, we studied in details the way colonies transition to out-of-plane growth. Several experimental and theoretical approaches have been developed in the past to decipher this process: for confined colonies, the switch from planar to 3D growth takes place when it becomes energetically too costly to push neighboring cells outwards. In that case, the adhesion forces between the bacteria and their underlying substrate play a key role: strongly adhering bacteria transition to 3D colonies earlier in their development (Duvernoy et al., 2018; Grant et al., 2014). In our experiments, there is no strong vertical or lateral confinement: bacteria can move on the substrate or away from it, so that cells stemming from a given progenitor do not necessarily stay in contact with each other. However, the twitching velocity determines how much cells, on average, move away from one another between two successive division events, thereby creating space to accommodate new offsprings on the surface.\n\nTo investigate the possible link between twitching motility and 2D to 3D transition of growing microcolonies, we sought to determine $N_{c}$, the number of adhered cells in a progeny (i.e. stemming from successive divisions of a given bacterium) when the 2D to 3D transition takes place, as a function of the twitching velocity. For softer substrates, all bacteria can be imaged, and $N_{c}$ is directly measured; we also determined the average number of colonies per unit area. On stiffer substrates, it is impossible to track all bacteria stemming from a mother cell, since they are very motile and sometimes move out of the field of view. We assume that bacteria from other progenies are equally likely to move inside the field of view, so that measuring the number of bacteria on the image at tc (the time at which transition to 3D is first observed), divided by the average microcolony density determined on softer substrates earlier gives a good approximation of $N_{c}$. Figure 4A shows $N_{c}$ as a function of the center-of-mass characteristic velocity $V_{C}$ determined above (Figure 3D), on different substrates and for nine different experiments. $N_{c}$ consistently increases with the twitching velocity, indicating a strong correlation between the twitching efficiency and the shape of early colonies and shedding light on our initial observations of variations in microcolony morphology as a function of the substrate rigidity (Figure 1B and D\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig4-v2.jpg)\n\n**Figure 4.:** (A) Size of microcolony (in number of bacteria $N_{c}$) at the 2D to 3D transition as a function of the center-of-mass characteristic velocity $V_{C}$ defined in Figure 3A. Markers are experimental data from 9 different experiments, each with different substrates including glass (hence leading to higher values that in Figure 3B). Blue dots are data obtained with the pili-deficient mutant pilA:: Tn5. Lines, kinetic model for $\u27e8\\gamma\u27e9$ (solid line) \u00b1 its standard deviation (dotted lines). (B) Distribution of track lengths of full trajectories as a function of the substrate rigidity. (C) Distribution of occupation occurrence on each image pixel as a function of rigidity, showing a much more heterogeneous occupancy on soft substrates. (D) ConA staining (red) of EPS deposition during cell (green) exploration of the surface.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Matrix deposits are more compact on soft substrates with large areas (>60%) devoid of EPS, while stiffer substrates are almost fully decorated (>% covered area). The two colours for the softer surface corresponds to two areas taken 30 min apart after staining, before and after acquisition of the two other datasets on larger rigidities, to rule out any significant time evolution of the staining.\n\nTo decipher the link between $N_{c}$ and $V_{C}$, we have built a simple kinetic model with a single unknown parameter (see appendix 2 for details). Briefly, we assume that the 2D to 3D transition takes place when the area occupied by bacteria reaches a fraction of the equivalent \u2018microcolony size\u2019, defined as the characteristic area explored by bacteria in a progeny. Assuming that bacteria explore the surface through a random walk with persistence (Marathe et al., 2014), the characteristic area accessible to bacteria in a microcolony over time can be written as $a\u2062(t)=a_{0}\u2062(1+\\alpha\u2062V_{C}\u2062t)$ where $a_{0}$ is the area of one bacterium and $\\alpha$ is a parameter related to the properties of the random walk. Our experimental data show that not only the velocity, but also the contour length of the trajectories of bacteria increases with the rigidity since the duration of these trajectories is mostly constant (Figure 4B and Figure 3\u2014figure supplement 1). Area $a\u2062(t)$ is related, but not equal, to the area over which the microcolony spreads. Indeed, bacteria are not evenly distributed within the microcolony area, and we observe strong local density fluctuations. If we now consider an exponential growth of the number of bacteria on the surface due to the balance of cell division and detachment, it follows that the increase in the number of cells, and hence the area required to accommodate these cells on the surface, grows faster than the accessible area, driving a transition to 3D growth. Expressing the number of cells $N_{c}$ in the microcolony at the time when this transition stochastically occurs leads to the following dependence as a function of $V_{C}$:\n\n$$\nN_{c}=1+\\gamma\u2062V_{C}\u2062log\u2061(N_{c})\n$$\n\n$\\gamma$ is an unknown parameter related to the properties of the random walk and the growth rate of bacteria on the surface that can be measured for each experiment. On Figure 4A, we have plotted the corresponding curve using the average of experimental values for $\\gamma$ (solid line) \u00b1 their standard deviation (dotted lines). We observe an excellent agreement between this simple kinetic model and our experimental data over a wide range of velocities, including the T4P deficient mutant and the WT strain adhering on glass. This hints that elasticity is a key factor shaping the organization of early colonies on elastic substrates, and that it is the main determinant of the colony shapes observed in our experiments on chemically identical substrates with varying rigidities (rather than energy minimization whereby bacteria would either favor adhesion to other cells or to the substrate depending on its rigidity).\n\n#### Surface decoration by extracellular matrix\n\nOne consequence of the modulation of twitching efficiency by the substrate elasticity could be a variation in matrix distribution on the surface. Indeed, P. aeruginosa can secrete an extracellular matrix mostly composed of exopolysaccharides (EPS), which was shown to result in the deposition of \u2018trails\u2019 by twitching bacteria on glass substrates. By mediating the attachment of the cell body to the underlying substrate such deposits are inferred to facilitate further colonization by bacteria and to impact microcolony formation (Liu et al., 2007; Zhao et al., 2013). To investigate matrix deposition on hydrogel substrates, we introduced a fluorescent dye (lectin concanavalin A, see Materials and methods) in the nutrient medium infused in our device. The main component of PAO1 matrix, psl (Jackson et al., 2004), is rich in mannose, that conA specifically binds (Ma et al., 2007).\n\nFor high stiffness substrates where bacteria explore the surface efficiently, this staining confirms that trails of matrix decorate a significant fraction of the surface; on the contrary, nearly immobile bacteria on soft substrates accumulate matrix locally, leaving most of the surface unmodified (Figure 4C and D). This difference in matrix distribution is maintained at a later stage of surface colonization (Figure 4\u2014figure supplement 1). While on rigid hydrogels, most of the surface is covered by bacteria-secreted matrix, lectin staining on soft hydrogels is only present on compact colonies separated by regions completely devoid of EPS. While proper quantification of the total amount of matrix produced in each case is difficult (staining efficiency might be impacted by lectin diffusion inside dense colonies), our results confirm that substrate rigidity impacts bacterial propensity to modify hydrogel substrates via matrix deposits.\n\n### Substrate rigidity affects bacterial mixing\n\nReal-life biofilms generally comprise several species: pathogens can compete or help each other (DeLeon et al., 2014; Orazi and O\u2019Toole, 2017), and commensal strains protect organisms from detrimental ones (Aoudia et al., 2016). To further investigate how modulation of surface colonization with rigidity impacts the structure of forming biofilms, we studied the model co-colonization of hydrogels by two PAO1 strains constitutively expressing two different fluorescent proteins. Beside their fluorescence, the two strains exhibit identical properties (motility, division rate, etc.), similar to that of WT PAO1. Through fluorescent confocal imaging, the strains were spectrally separated to study their spatial distribution at different stages of surface colonization. As expected, rigidity-modulated motility impacts the co-colonization of the hydrogels from early stages (Figure 5\u2014figure supplement 1): on rigid substrates, high motility promotes mixing of the offsprings of different cells, resulting in a spatial distribution of the two strains close to random (a residual correlation between the colour of neighboring cells is always found due to the presence of cells that have just divided). Conversely, nearly immobile cells on soft substrates exhibit strong correlations between neighboring cells, which mostly arise from a single progenitor cell. This striking difference in strain mixing during surface co-colonization is maintained at later stages of biofilm formation: on soft substrates, quasi-monoclonal colonies with complete spatial segregation are observed, while biofilms forming on rigid surfaces exhibit a close-to-random distribution of the two strains at the 10-\u03bcm scale (Figure 5A). To quantify this effect, we have used Moran\u2019s I index, a statistical tool designed to quantify the spatial clustering of species. It provides a measure of the local spatial correlations and takes values ranging from 1 (perfectly correlated values) to \u20131 (perfectly anti-correlated values), with 0 corresponding to a spatially random distribution of the variable (see Materials and methods for details). The resulting quantitative analysis (Figure 5B) confirms the decisive impact of rigidity on the structure of mixed biofilms, with potentially far-reaching consequences on the interactions of different strains in multi-species biofilms.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig5-v2.jpg)\n\n**Figure 5.:** (A) Images of surfaces seeded with a 1:1 mixture of constitutively fluorescent bacteria expressing GFP or YFP show mostly monoclonal colonies on soft hydrogels, and mixed bacteria on rigid substrates (3D-rendering obtained by stacking images). Scale bar, 20 \u03bcm.(B) Spatial correlations quantified via Moran\u2019s I index.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Top, images of surfaces seeded with a 1:1 mixture of constitutively fluorescent bacteria expressing GFP or YFP at two different times after the start of surface colonization (bottom : 3D rendering of a volumetric image). Bottom, Spatial autocorrelation quantified via Moran\u2019s I index at the two time points il lustrated above. The values should not be directly compared between the two time points (see SI I-C) but illustrate that the rigidity modulation of mixing is maintained over time from very sparse to large coverage of the surface.\n\n### Surface rigidity impacts gene expression\n\nCell-cell communication, either via exported molecules or by direct contact is crucial during biofilm development (Shrout et al., 2011). Modifications of bacterial distribution as described above could thus likely impact gene regulation in surface-attached bacteria. To start addressing this complex question, we focused on the expression level of cyclic-di-GMP (c-di-GMP), a second messenger that controls the motile-to-sessile transition in P. aeruginosa (Rodesney et al., 2017). We used a post-transcriptional fluorescent reporter build on the promoter of the gene cdrA, which encodes an exported protein involved in matrix cohesion, upregulated during biofilm formation by PAO1 (Reichhardt et al., 2018). The PcdrA-gfp intracellular reporter provides a measure of the integrated production of CdrA with a \u223c40-min delay between expression of the gene and fluorescence detection (Rybtke et al., 2012). Figure 6 shows how crdA expression is modulated by rigidity on 4 substrates included in the same microfluidic device. For this reporter, the degradation rate of gfp occurs over several hours, and its dilution due to growth and division of bacteria occurs at the same rate on all surfaces (see Figure 1C). The increase rate of the fluorescence signal is thus a direct proxy to the expression rate of gene cdrA, and thus to the changes in c-di-GMP level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig6-v2.jpg)\n\n**Figure 6.:** Substrate rigidity influences gene expression levels (A) Colonies grown from a modified PAO1 strain bearing the plasmidic $P_{c\u2062d\u2062r\u2062A}-g\u2062f\u2062p$ reporter imaged in phase contrast (top) and fluorescence (bottom), after 500 min under flow.Scale bars, 20 \u03bcm. (B) Average intracellular gfp fluorescence as a function of time, on different PAA surfaces and on glass. Broken lines are duplicate positions on a given surface. (C) Average cdrA expression level, obtained from a linear fit of (B).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81112/elife-81112-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Fluorescence intensity from a PAO1 strain expressing a $P_{c\u2062d\u2062r\u2062A}-g\u2062f\u2062p$ plasmid over time, showing a plateau of fluorescence expression after \u2248500 min.In our experiments, this change in behavior might be due to a lack of oxygen in the flow upon growth of the biofilm in the microfluidic channel and occurs. Two rigidities are shown and scaled to the same final fluorescence value.\n\nDuring a first phase of surface colonization, fluorescence remains low on all surfaces. The signal subsequently starts increasing linearly, roughly at the same time for all surfaces (within the uncertainty of fluorescence quantification, that is \u224810 min). This second phase ends with the onset of a plateau, again around the same time for all surfaces, at the end of the exponential growth of bacteria adhered on the surface, possibly as a result of oxygen depletion in the flowing medium that would be sensed simultaneously on all surfaces (Figure 6\u2014figure supplement 1). This linear increase in fluorescence directly translates into a constant production rate of CdrA that can be compared for the 4 surfaces (Figure 6C): our analysis shows a marked increase in CdrA expression with the substrate rigidity.\n\n## Discussion\n\nIn this study, we have designed an experimental approach to investigate early microcolony formation by P. aeruginosa on hydrogels with different elastic moduli, under constant flow rate. By continuously imaging surface-attached bacteria in situ, we show that substrate rigidity influences the twitching motility of individual bacteria, therefore strongly impacting the process of microcolony formation. Through two different analyses of the surface motility of the bacterial population, either via the global evolution of the explored area or via the tracking of individual cells, we find that the characteristic twitching velocity increases with substrate stiffness (from 0.02 to 0.4 \u03bcm/min when rigidity goes from \u223c3 to 80 kPa).\n\nThe encounter between bacteria and a substrate generates mechanical stress. Deciphering surface-sensing, that is understanding how the mechanical feedback resulting from this interaction translates into chemical signals that will in turn tune bacterial behavior has been the focus of a lot of recent research. It is now clear, for instance, that T4P contraction acts as a force sensor that transmits signals to the bacterium at the single-cell level (Webster et al., 2021), and triggers a response that involves an increase in c-di-GMP level (Armbruster et al., 2019). Furthermore, recent results suggest that pili can differentiate substrate rigidity, yielding a maximum response for stiffness values \u223c300 kPa Koch et al., 2022.\n\nHowever, in our experiments a difference in bacterial motility can be observed almost immediately upon surface adhesion to soft or rigid PAA, and this behavior is not modified in mutants impaired in c-di-GMP regulation ($w\u2062s\u2062p\u2062R$ or $s\u2062a\u2062d\u2062C$). We thus propose a physical model to account for the modulation of the twitching motility. This 1D model is based on a force balance between (i) a pilus that extends, attaches and retracts with a defined frequency; (ii) the deformation of the underlying substrate at the pilus tip upon retraction; and (iii) the friction force due to adhesion of the bacterial body when it is dragged across the surface at the other end of the pilus. In this balance, the detachment rate of the pilus tip from the substrate is a key parameter in the resulting bacterial velocity. We have assumed a force-independent off-rate constant for the pilus. In a more complex scenario, the contact between the pilus and substrate may act as a slip bond or a catch bond. For completeness we show some numerical results for slip and catch bond behavior in the SI (section I.D), which do not increase however the quality of fit between experimental and theoretical velocity data. In addition, although we have explored the possibility that substrate rigidity, which is directly correlated to the mesh size of the hydrogel network, could impact the frequency of attachment of T4P, this was not necessary to efficiently account for the variation in motility we observe, which we instead solely attribute to the elastic deformation of the substrate.\n\nStrikingly, our minimal mechanistic model thus suggests that a variety of observed phenomena (3D structure of colonies; EPS deposition on the surface; strain mixing during co-colonization) can all derive from a modulation of the efficiency of pili activity by the deformability of soft substrates. This purely mechanical model may be of particular importance for surface colonization, since the adaptation of bacterial behavior to the environment can thus be instantaneous - possibly a key to PA ability to efficiently colonize extremely different microenvironments.\n\nWhile this model is sufficient to account for our observations (twitching velocity, microcolony formation), it certainly does not rule out a regulatory response of the bacteria, which probably takes place in parallel. Such a response can happen on two levels: at the single-cell level, mechanotransduction processes mediated for instance by adhesion and retraction of T4P can influence gene expression at short timescales (\u223c1 hour) Armbruster et al., 2019; Song et al., 2018. At longer timescales, in developing microcolonies, cell-cell interactions could in turn modulate the bacterial transcriptome, which depends on microcolony characteristics (e.g. shape, cell density, matrix content) Livingston et al., 2022. Our attempt at quantifying c-di-GMP expression using a fluorescent intracellular reporter does evidence a difference in bacterial regulatory response depending on substrate stiffness. While the level of expression of the gene is clearly impacted by the substrate rigidity, differences in expression level are detected only 6\u20137 hr after the onset of surface colonization, with a first phase characterized by low c-di-GMP level on all surfaces. This timeframe suggests that the difference in gene expression that we observe is probably not due to a direct sensing of the substrate rigidity by individual bacteria, but rather a consequence of their organization into more or less dense colonies. Of note, when the increase in c-di-GMP takes place bacteria have stopped twitching and immobilized into colonies. We do not observe the early increase in c-di-GMP described in the litterature, possibly because we initially only track a very small number of bacteria on the surface, and the expression signal is stochastic. Further investigating c-di-GMP expression in WT and mutant strains upon adhesion to mechanically different substrates could help reveal which pathways are differently activated on soft substrates.\n\nInterestingly, our results show that microcolony phenotype may not be indicative of a specific c-di-GMP regulation. The dense colonies observed on soft hydrogels correspond to lower c-di-GMP levels than the flat bacteria carpets that grow on rigid substrates, a somehow counter-intuitive result given the paradigm that c-di-GMP production upregulates biofilm-inducing genes, in particular matrix production, while downregulating motility. Here, we describe a case when motility is rendered impossible by the micromechanical properties of the environment rather than by the absence of functional pili, thus resulting in the rapid formation of compact colonies on soft substrates. Further exploring the density and the exact composition of the extracellular matrix in these colonies would be interesting since this parameter could influence the subsequent fate of bacteria on the surface. EPS distribution, composition and concentration may also be significant for the recruitment of new cells on the surface: indeed, previously deposited matrix is thought to strengthen adhesion of $P.a\u2062e\u2062r\u2062u\u2062g\u2062i\u2062n\u2062o\u2062s\u2062a$ bacteria (Zhao et al., 2013), and could also possibly mediate adhesion of other microorganisms.\n\nIn a wider context, the process we observe could also be envisioned as a strategy to optimize bacterial colonization of mechanically heterogenous environments by ensuring accumulation of bacteria into dense colonies located in the softer regions of their environment, for example over cellular tissues. Recently, Cont et al., 2020 have shown that dense colonies were able to deform soft substrates and exert forces that could disrupt an epithelium layer: rigidity-modulated twitching could thus provide Pseudomonas aeruginosa with a convenient means of targeting soft tissues for cooperative disruption and subsequent invasion.\n\nThe phenotypic differences that we report for colonies are likely to impact subsequent interactions of bacteria with their environment: response to changes in nutrient or oxygen availability, and chemical signals in general which will not efficiently penetrate inside dense colonies. This could in particular influence susceptibility to antibiotics, as confirmed by very recent work Cont et al., 2023. This is all the more relevant that PA can invade many different environments, and might have to be treated differently when it settles in the lungs of cystic fibrosis patients, or on the surface of rigid implants.\n\nFinally, our data show that rigidity-modulated twitching has a striking impact on the mixing of different strains upon surface colonization. Understanding the mechanisms governing the formation of mixed-species communities is one of the key challenges of current biofilm research. Since the motility modulation mechanism described here is quite general and should be marginally affected by the particulars of different strains/species moving through elongation/retraction of an appendage, we expect it to provide a relevant framework to study co-colonization in different mechanical micro-environments.\n\n## Materials and methods\n\n### Bacterial strains\n\nStrains used in this study were Pseudomonas aeruginosa wild-type (WT) PAO1, fluorescent strains PAO1 miniCTX-PX2-gfp and PAO1 miniCTX-PX2-eyfp (a kind gift from PBRC group, IBS, Grenoble, unpublished), and PAO1 mutants pilA::Tn5, sadC::Tn5 and wspR::Tn5 obtained from the transposon library at University of Washington (Jacobs et al., 2003). Strain PAO1 pCdrA-gfp was obtained by transforming plasmid pCdrA::gfpc from Rybtke et al., 2012 in our WT strain.\n\nBacteria were inoculated in Luria-Bertani (LB) medium from glycerol stocks, and grown overnight at 37 \u00b0C at 250 \u2009rpm. The next morning, 10 \u03bcL of the stationary phase culture were diluted in 3 \u2009mL of LB medium and placed in a shaking incubator (37 \u00b0C, 250 \u2009rpm) for 3.5 hr, to reach mid-exponential phase (OD600=0.6\u20130.8). Bacteria were then diluted to OD600=0.005 in our working medium, TB:PBS, and inoculated into the channel. TB:PBS is obtained by mixing TB (Tryptone broth, Euromedex, 10 \u2009g.L-1) and PBS (w/o calcium and magnesium) with a volume ratio of 1:2. We found that this minimal medium favors bacterial twitching for a few hours after adhesion.\n\n### Microfluidic device\n\nMicrofluidic channels were cut into 100 \u03bcm-thick double-sided sticky tape (7641 W #25, Teraoka, Japan) with a die-cutter. Typically, a 5 cm-long x 1 mm-wide channel was used to bind together a rectangular glass coverslip bearing the hydrogel patches, and a flat 5 mm-thick slab of polydymethylsiloxane (PDMS, Sylgard prepared by mixing crosslinker and monomer solutions 1:10 and baking at 65 \u00b0C for 1 hr). Two channels were stuck together to obtain a height of 200 \u03bc m, in order for the flow through the channel to not be significantly modified by the 25-\u03bcm-thick PAA hydrogels. These sticky-tape channels were first adhered onto the PDMS piece and then placed onto the dehydrated hydrogels. To ensure proper binding, the whole device was placed under vacuum for 30 min. Next, the channel was rinsed with TB:PBS (1:2) for a minimum of 1 \u2009hr, in order to rehydrate the hydrogels. Medium was placed in a plastic container and withdrawn into the channel with a syringe pump (Harvard Apparatus, USA, 30 \u03bcL/min) to avoid the formation of bubbles.\n\n### Gels and substrates preparation\n\nHydrogels of polyacrylamide (PAA) and polyethyleneglycol (PEG) were prepared following previously established protocols (Tse and Engler, 2010; Beamish et al., 2010). All reagents were obtained from Sigma Aldrich and used as received: Acrylamide solution (AA, 40% in water), N,N\u2019-Methylenebisacrylamide (Bis, 2% in water), Ammonium Persulfate (APS, $\\geq98%$), N,N,N\u2019,N\u2019- Tetramethylethylenediamine (TEMED, $\\geq99%$), Poly(ethylene glycol) diacrylate (PEGDA, $M_{n}\u223c6000$ g.mol-1), 2-Hydroxy-4\u2019-(2-hydroxyethoxy)\u20132-methylpropiophenone (Irgacure 2959, 98%), Bind-silane, Sigmacote.\n\nRectangular glass coverslips (24 \u00d7 60 \u2009mm) were used as substrates for gel casting. They were plasma-cleaned and immersed in a solution of Bind-silane (60 \u03bcL of Bind-silane, 500 \u03bcL of 10% acetic acid, 14.5 \u2009mL of ethanol) for 1 hr before being rinsed with ethanol, water, and blow-dried with nitrogen before use. Round glass coverslips (12 \u2009mm diameter) were used as counter-surfaces for gel casting. After plasma cleaning, they were immersed in Sigmacote for 1 hr before rinsing with acetone, ethanol and water, and blow-dried before use.\n\nBulk solutions of AA/Bis and PEGDA were prepared in phosphate buffer saline (PBS) and stored at 4 \u00b0C until use. The final stiffness of the gels was tuned by adjusting the AA/Bis or PEGDA content according to Table 1. PAA gels were obtained by adding 1 \u03bcL of TEMED and 1 \u03bcL of a freshly made APS solution (10 \u2009w% in water) to a volume of 168 \u03bcL of AA/Bis solution. A 3 \u03bcL droplet of the mixture was immediately placed on the surface of a bindsilane-treated glass coverslip, sandwiched by a Sigmacote-treated round coverslip, and left for curing for 1 hr in a water vapor-saturated atmosphere. After curing, the round coverslip was lifted off using the tip of a scalpel blade, resulting in a circular pad of gel, of thickness $\u223c25\u221230$ \u03bcm, covalently bound to the bottom rectangular coverslip and exposing its free top surface. Circular gel pads were then scrapped with a razor blade in order to adjust their lateral size to the width of the microfluidic channels into which they would eventually be installed. Gel pads were then copiously rinsed with ultrapure water, and left for drying in a laminar flow cabinet. Up to three such pads, with different elastic properties, were prepared simultaneously on the same coverslip, arranged to fit along the length of the microfluidic channel. PEG gels were obtained by adding 5 \u03bcL of a 10 \u2009wt% solution of Irgacure in ethanol to 0.5 mL of PEGDA solution. A 3 \u03bcL droplet of the mixture was placed in between coverslips as described above, and irradiated under UV light (365 \u2009nm, 180 \u2009mW.cm-2) for 15 min for curing. Subsequent steps were as described above for PAA gels.\n\n**Table 1.**\n Hydrogel compositions and associated Young\u2019s moduli.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Acrylamide (wt%)</th>\n      <th>Bis-acryl. (wt%)</th>\n      <th>PEGDA (wt%)</th>\n      <th>Modulus (kPa)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>4</td>\n      <td>0.225</td>\n      <td>0.0</td>\n      <td>2.7 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>0.225</td>\n      <td>0.0</td>\n      <td>6.1 \u00b1 0.2</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>0.264</td>\n      <td>0.0</td>\n      <td>18.5 \u00b1 0.7</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>0.47</td>\n      <td>0.0</td>\n      <td>65 \u00b1 5.6</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>0.65</td>\n      <td>0.0</td>\n      <td>84 \u00b1 1.1</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>0.7</td>\n      <td>0.0</td>\n      <td>103 \u00b1 3.8</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>0</td>\n      <td>5</td>\n      <td>5.7 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>0</td>\n      <td>20</td>\n      <td>102 \u00b1 8.4</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mechanical characterization\n\nThe viscoelastic properties of the various gels were characterized by AFM microrheology, using the \u2018contact force modulation\u2019 technique described recently and validated on hydrogels (Abidine et al., 2015). It allows determining elastic and loss shear moduli, $G^{\u2032}$ and $G^{\u2032\u2032}$, as a function of frequency over the range $1-300$ Hz. The Young moduli reported in Table 1 have been computed as $E=3\u2062G_{0}^{\u2032}$, with $G_{0}^{\u2032}$ the low frequency plateau modulus obtained by microrheology, assuming a Poisson ratio $\u03bd=0.5$ for all gels. All gel samples displayed elastic behavior with $G^{\u2032}\u226bG^{\u2032\u2032}$.\n\nMeasurements were performed on a JPK Nanowizard II AFM, with pyramidal-tipped MLCT probes (Bruker) of spring constant 15 mN/m. Data were analyzed using a home-written software for microrheology. Thirty-\u03bcm-thick gels were prepared, as described above, on round coverslips mounted at the bottom of 35 \u2009mm petri dishes. They were then either characterized immediately or left to dry to mimick the protocol used for inclusion in the flow chamber. Experiments were performed in PBS +1 \u2009% vol. tween 20 (Sigma), with Tween used to prevent adhesion of the AFM tip to the gel. All measurements were carried out at 37 \u00b0C to mimic experimental conditions with bacteria. Results were compared with force-distance indentation curves that gave consistent results at low rigidities ($<20$ kPa) but overestimated the rigidity for higher values (Figure 1\u2014figure supplement 1a).\n\nHomogeneity of the gels was assessed at the \u03bcm and mm scales by multiposition measurements. We found very good repeatability of the measurements and homogeneity of the gels at all scales (Figure 1\u2014figure supplement 1b). Subsequent measurements were hence acquired at three to six different points in the gels and the average and standard error of the mean are provided (Table 1). Rigidity was also measured before and after drying and rehydration of the gel to check for possible damage to the structure. In addition, confocal images of the surface of fluorescently labelled gels were used to track default on the gel surface before and after drying. We found no evidence of damage to the hydrogel upon drying, except for very soft gels of rigidity below 1 \u2009kPa that were not used in this study (Figure 1\u2014figure supplement 1c).\n\n### Microscopy experiments\n\nDiluted bacterial solution was injected into the channel, and kept without flow for 30 \u2009min to allow bacteria to attach. During that time, clean tubing was connected to a syringe and filled with TB-PBS medium supplemented with 3 \u2009mM glucose and connected to the inlet of the device. 30 \u2009min after injecting bacteria into the device, the flow of clean medium was initiated. The flow rate was first set at 25 \u03bcl/min for 3 \u2009min in order to flush out unattached bacteria, and then lowered to 1 \u03bcL/min and maintained constant with a syringe pump (Pico Plus, Harvard Apparatus) throughout the acquisition (yielding a wall shear stress of 2.5 mPa). The set up was immediately placed into the incubation chamber (37 \u00b0C) of a Leica SP8 confocal microscope, and acquisition was started at 1 frame/minute.\n\nFor matrix staining experiments, concanavalin A (Alexa Fluor 647 conjugate, ThermoFisher Scientific) was added to the medium (3 \u03bcl/ml of a 1 mg/ml stock solution) and infused in the flow cell for at least 30 min prior to imaging. Since the tetravalent conA interferes with the structure of the matrix, it was used either for short-term imaging of bacterial twitching at early stages (t<1 h, Figure 4D), or added at the end of an acquisition to assess matrix distribution on and around colonies (t $\u223c8$ h, Figure 4\u2014figure supplement 1).\n\nFor control experiments in wells (Figure 1\u2014figure supplement 3), the protocol was modified as follows: PAA gels were prepared as described above, but at the center of a 35 mm round glass coverslip. The coverslip was then glued (5 min epoxy, Araldite) to the bottom of the well of a six-well plate (Costar, Corning), previously cut-out to open a circular 32 mm hole. One mL of diluted bacteria suspension (OD600=0.005) were deposited on the gel, incubated for 30 min, and then carefully pipetted out, and the well was filled with 3 mL fresh medium (TB-PBS +3 \u2009mM glucose) and kept at 37 \u00b0C. This setup allowed continuous imaging of bacteria on a Zeiss Axio-observer 7 inverted microscope in phase contrast mode (63 x objective) equipped with an Orca-Flash 4.0 LT camera (Hamamatsu).\n\n### Surface coverage analysis and tracking of individual bacteria\n\nAll image processing and analysis, unless otherwise noted, was performed with Fiji using available plugins and home-written macros. In order to quantify the movements of individual bacteria, time series of phase-contrast images were registered using the Fiji plugin \u201cMultiStackReg\" Th\u00e9venaz et al., 1998 and segmented with the plugin \u201cweka trainable segmentation\" Arganda-Carreras et al., 2017. The resulting segmentation was checked and corrected manually.\n\nFor the analysis of the global velocity $V_{g}$, segmented binary images were used to estimate the surface coverage $A\u2062(t)$ and the explored surface area $S\u2062(t)$, using a home-written MATLAB script. Briefly, at each timepoint 2 binary images were generated: one where pixels occupied by bacteria were assigned the value 1, and all others zero (providing $A\u2062(t)$), and another image obtained by adding all binary images up to this timepoint, so that all visited pixels were assigned the value 1 (providing $S\u2062(t)$).\n\nFor the analysis of individual displacement steps, segmented bacteria were fitted with an ellipse, and the \u2018analyze particle\u2019 imageJ function was subsequently used to locate the center of mass of each bacterium. The Fiji plugin \u2018TrackMate\u2019 Tinevez et al., 2017 was used to track all individual bacteria, again followed by manual validation and correction (see Video 2). The function importTrackMateTracks (Tinevez et al., 2017, https://github.com/fiji/TrackMate/blob/master/scripts/importTrackMateTracks.m) was used to import tracking data into MATLAB, and homemade scripts were used to sort data, plot tracks and obtain velocity distributions.\n\nThe analysis of the histograms of displacement steps were performed as follows: we assume that the measured steps are the incoherent sum of two displacement vectors, the active displacement $V\u2192_{a}$ due to T4P activity, and a vector $V\u2192_{p}$ that includes passive effects due to both the noise on measurements, and displacements resulting from bacterial growth and local crowding. First, we considered the experimental distribution obtained with the $p\u2062i\u2062l\u2062A$ mutant, for which $V\u2192_{a}$=$0\u2192:$ this allows extracting the probability distribution for $\u2225V\u2192_{p}\u2225$, which can be well fitted with a decreasing exponential with a characteristic passive velocity $V_{C,p}:p(\u2016V\u2192_{p}\u2016)=exp(\u2212\\frac{\u2016V\u2192_{p}\u2016}{V_{C,p}})$, with  $V_{C,p}$ = 0.044 $\\mu\u2062m/m\u2062i\u2062n$. We then considered the case of twitching bacteria. Here, we observed that the tail of the displacement step distribution also follows a decreasing exponential trend. Based on the reasoning that passive displacements are short-ranged and should not significantly modify the distribution for large displacement values, we deduce that the tail of the probability distribution for $\u2225V\u2192_{a}\u2225$ is a decreasing exponential, $p\u2062(\u2225V\u2192_{a}\u2225)=e\u2062x\u2062p\u2062(-\\frac{\u2225V\u2192_{a}\u2225}{V_{C}})$, with $V_{C}$ the characteristic active twitching velocity of bacteria.\n\nWe confirmed the validity of this hypothesis by calculating the probability distribution functions. We assumed that the distribution of measured displacement steps, $\u2225V\u2192_{t\u2062o\u2062t}\u2225=\u2225V\u2192_{a}+V\u2192_{p}\u2225$ is the sum of two uncorrelated exponential distributions with different scales and a random angle between the two vectors. There is no analytical expression for this sum, hence we performed numerical calculations of the distributions obtained in the general case. In the limit $\u2016V\u2192_{tot}\u2016>>V_{C}>V_{C,p}$ an exponential distribution is retrieved with a characteristic velocity $V_{C}$, unaffected by $V_{C,p}$ (Figure 3\u2014figure supplement 3, left). A fitting of the range $p(\u2016V\u2192_{tot}\u2016)<0.3$ (which excludes the first few points that do not follow an exponential trend) confirms that $V_{C}$ is obtained accurately provided that $V_{C}>V_{C,p}$ (Figure 3\u2014figure supplement 3, right). Below this limit, only $V_{C,p}$ is detected since active displacements are in the range of passive \u2018noisy\u2019 ones.\n\nExperimentally, we have used a lower cutoff of $\u2016V\u2192_{tot}\u2016>$ 0.08 $\\mu\u2062m/m\u2062i\u2062n\u22432\u2062V_{C,p}$ for the fitting range, to restrict it to the exponential part of the distribution. To account for the noise in the measurement, we have also considered that fitted values below $V_{C,p}=0.044\u2062\\mu\u2062m/m\u2062i\u2062n$ were in the range [0;0.044] m/min.\n\n### Quantification of the morphology of colonies\n\nQuantification was performed on confocal fluorescence 3D resolved images. First, signal attenuation with depth was compensated by decreasing exponential fitting of the mean pixel values inside the colony with depth, and normalization by the corresponding function. A 2D 3x3 smoothing operation was then performed on each image of the z-stack, and the colonies were subsequently segmented using a simple thresholding operation: while this procedure does not permit segmentation of individual bacteria, it provides a good estimate of the 3D envelope of the colonies. The topology of the colonies was then quantified by calculating the roughness of this envelope using the widely used arithmetic average roughness $R\u2062a$\n\n$$\nRa=\\frac{1}{N}\\sumi=1N|z_{i}\u2212\u27e8z\u27e9|,\n$$\n\nwhere summation is over all 2D positions $i$ in the 3D image, zi is the height of the highest segmented pixel at position $i$ and $\u27e8\u27e9$ is the averaging operator over all positions. The occupied volume $V$ is calculated as\n\n$$\nV=px^{2}\\sumi=1Nz_{i},\n$$\n\nwith $p\u2062x$ the pixel size. The occupied area as a function from the distance to the coverslip is the histogram of zi values with bin size 0.5 \u03bcm (corresponding to the vertical sampling of the 3D images).\n\n### Quantification of the mixing of two strains co-colonizing the same soft substrate, as a function of the softness\n\nThis quantification is performed both at the low density stage with isolated bacteria, and at a later stage on maturing colonies. To this aim, we used a statistical tool, Moran\u2019s I index, designed to quantify the spatial clustering of species and widely used in the field of ecology and geography Moran, 1950. Moran\u2019s I is a measure of the local spatial correlations that includes a notion of spatial proximity, either in the form of a spatial cut-off for the calculation of the heterogeneity (in other words, a characteristic distance), or a number of neighbors. It takes values ranging from 1 (perfectly correlated values) to \u20131 (perfectly anti-correlated values), with 0 corresponding to a spatially random distribution of the variable.\n\nConsidering a variable $y$ that can take two different values (in our case, green (1) or yellow (\u20131)) with $n$ realisations, Moran\u2019I is expressed as:\n\n$$\nI=\\frac{n}{\\sumi=1n\\sumj=1nw_{ij}}\\frac{\\sumi=1n\\sumj=1nw_{ij}(y_{i}\u2212\u27e8y\u27e9)(y_{j}\u2212\u27e8y\u27e9)}{\\sumi=1n(y_{i}\u2212\u27e8y\u27e9)^{2}},\n$$\n\nwhere $w_{i\u2062j}$ is the matrix of weights that contains the spatial information (with $w_{i\u2062i}=0$). In our experiment, the relevant spatial scale (and hence the matrix of weights) varies greatly over time because of the change in the density of the bacteria on the surface. While at high density (maturing colonies) defining a length scale is a suitable way of testing the presence of local correlations, this is more challenging at earlier times when the distance between neighbors exhibits large stochastic variations, in particular for stiff substrates. Hence, different matrices of weights were chosen for early-stage and later-stage colonization of the surface:\n\nWhile there is some degree of freedom on the choice of the weight matrix, it is important to note that we use the same weight to compare data obtained on three different rigidities, hence minimising the impact of the exact chosen parameters on the comparison. In contrast, values obtained on one surface at the two different time points should not be directly compared as they have not been obtained with the same weight matrix.\n",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "477ef7e3-2f4d-420e-8b67-298baadc4c5d",
+      "submission_id": "1dbd04d6-4c5a-4dbd-9928-b6184e77f4ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, https://ror.org/035xkbk20 CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81112.sa0](https://doi.org/10.7554/eLife.81112.sa0)\n\nThis fundamental research significantly enhances our comprehension of the influence of substrate physical properties during the initial stages of biofilm development. By integrating microfluidics, single-cell motility, and modeling, the study provides compelling proof that mechanical interactions between the substrate and Type-IV pili drive these phenomena. This work is likely to attract a wide range of readers interested in micro-communities, their structure, and ecology.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- T\u00e2m Mignot, https://ror.org/035xkbk20 CNRS-Aix Marseille University France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81112.sa1](https://doi.org/10.7554/eLife.81112.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Substrate stiffness impacts early biofilm formation by modulating Pseudomonas aeruginosa twitching motility\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Tam Mignot as the Reviewing Editor and Arturo Casadevall as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe authors conclude that motility changes are not due to physiological changes resulting from surface sensing, but rather that mechanical properties of the substrate are responsible for modulating motility differences. However, this conclusion is derived partly from the use of a chpA mutant, which the authors' data demonstrate does not exhibit differences in motility compared to WT. These data are very surprising given that several published studies demonstrate a defect in both pilus synthesis and twitching motility in PilChp mutants (including chpA). It is unclear what the differences are between the presented study and the published literature leading to the disparity in these results.\n\nThere are a number of phenotypes linked to the chpA mutant strain: are the authors observing them with the strain they used? What actually is the level of pili in the strain they manipulate? In addition, to confirm this very surprising result, it would be important to repeat it with a pilG mutant (PilG regulation by ChpA phospho-transfer drives much of the PilChp signaling pathway, so this would be a nice way to validate the surprising results shown in figure S6). This is a critical control considering the kinetic modeling and the conclusion that this phenomenon is purely mechanical is based on this result. Should the authors obtain similar results for a pilG mutant, it would be important to incorporate some discussion about what may be leading to the observed differences.\n\nOther revisions:\n\n\u2013 The authors conclude that twitching motility plays a key role in the rigidity modulation of microcolony formation by PA on soft elastic substrates based on data shown in supplemental figure 4. It would be nice to see confirmation that the colony morphology does not change in T4P mutants on the softest substrates (2.7 kPa pads) as a control.\n\n\u2013 The jump in timescale needs to be better explained. Local speeds of roughly 1 um/s turn into effective speeds of um/min when one looks at a frame rate of one per minute. This might be just a reflection of the random nature of the motility but should be better explained in the text and the model. On a general note, one of the difficulties in navigating the paper as it stands is the definition of many parameters in a global manner as fits from derived equations whose assumptions are not always fully validated. For instance, Equation (1) assumes no new addition because of the flushing of the channel with the clean medium. Yet the first peak of residence time on 2.7 kPa gels is around 5 minutes per Figure S7 whereas the calculation of Vg is done over 100 minutes which should leave plenty of time for detachment and reattachment of bacteria upstream of the recording field of view. Similarly, the definition of Vcm is not easy to follow or apprehend. Is it that the general averages of the velocities are too noisy?\n\n\u2013 The subtraction of the average velocity of the pilA mutant directly in Equation 10, could be warranted, but it would also require a little bit more explanation. All in all, a better effort in the explanation of the pros and cons of the data analysis choices will go a long way in making the article readily understandable for all. Presenting other more straightforward ways of extracting the different parameters (direct averages, choice of cut-offs\u2026) will be helpful even in only supplementals. Another instance of assumptions that could also suffer some outliers is the assumption on line 141 that bacteria move along their long axis as it has been shown that in liquid, they can move perpendicular to it (Gibiansky et al. Science 330(6001):197).\n\n\u2013 While the simple kinetic model presented does encapsulate many of the aspects of the data in an understandable way, some of the assumptions should be discussed further. The assumption that pili only binds with its tips is reasonable but it is very strong. While this assumption allows many simplifications in the model, type IV pili can potentially bind throughout their length, and as they can be microns in length, so can the binding region. The Koch et al. 2021b does go over the reasoning but having a small discussion earlier in the paper would be great.\n\n\u2013 The formation of biofilms in a constant flow channel is a well characterized and common technique, yet it would be important to mention that it might be a condition quite remote to conditions found by bacteria in their common environment where the renewal of nutrients and environment might not be controlled. A small discussion around this theme might be nice.\n\n\u2013 It could be interesting to discuss the rather large errors on different estimates of the parameters found (Vmax, E0 particularly).\n\n- In Figure 1 and in a few figures: the 4 stiffnesses used (2.7, 18.5, 65, and 84 kPa) are not always all presented and sometimes in a non-matching set, as in Figure 1. That would be great if this could be corrected.\n\nText:\n\n\u2013 The authors refer to the clusters of single cells measured in this study as colonies; this is a bit confusing since colonies generally refer to macroscopic scale (visible to the naked eye) colonies on plates. I suggest changing instances of \"colony\" to \"microcolony\" for clarity throughout.\n\n\u2013 There is a typo in the figure legend of supplemental figure 4 and main text figure 4; it should read PAO1 pilA::Tn5 (two colons instead of one).\n\n\u2013 The authors have a \"data not shown\" statement in the legend of supplemental figure 8; they should include the data (can be in the same figure, but should be shown instead of just referenced).\n\n\u2013 Dephine instead of Delphine in the authors' names line 5.\n\n\u2013 85 kPa instead of 84 on page 6 of the supplemental in the legend.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 The authors conclude that twitching motility plays a key role in the rigidity modulation of microcolony formation by PA on soft elastic substrates based on data shown in supplemental figure 4. It would be nice to see confirmation that the colony morphology does not change in T4P mutants on the softest substrates (2.7 kPa pads) as a control.\n\n\u2013 The authors demonstrate in supplemental figure 6 that chpA mutants have similar Vg on stiff surfaces compared to WT (figure 2C). This result is very surprising considering PilChp mutants are known to be defective in pilus synthesis and twitching motility (Bertrand et al. 2010), yet pili are presumably driving the motility seen here. To confirm this very surprising result, I would like to see it repeated with a pilG mutant (PilG regulation by ChpA phospho-transfer drives much of the PilChp signaling pathway, so this would be a nice way to validate the surprising results shown in figure S6). This is a critical control considering the kinetic modeling and the conclusion that this phenomenon is purely mechanical is based on this result. Should the authors obtain similar results for a pilG mutant, it would be nice if they incorporate some discussion about what may be leading to the observed differences.\n\n\u2013 The authors use \"typical pilus retraction speed\" of 1 um/min, but this has been measured in PA to be 0.5 um/min (Skerker and Berg 2001). Would this value change result in differences in the authors' model?\n\nReviewer #2 (Recommendations for the authors):\n\nAs a follow-up on the point 1 in the Public Review: The subtraction of the average velocity of the pilA mutant directly in Equation 10, while maybe warranted, would require a little bit more explanation. All in all, a better effort in the explanation of the pros and cons of the data analysis choices will go a long way in making the article readily understandable for all. Even presenting other more straightforward ways of extracting the different parameters (direct averages, choice of cut-offs\u2026) will be helpful even in only supplementals. Another instance of assumptions that could also suffer some outliers is the assumption on line 141 that bacteria move along their long axis as it has been shown that in liquid they can move perpendicular to it (Gibiansky et al. Science 330(6001):197).\n\n\u2013 The formation of biofilms in a constant flow channel is a well characterized and common technique, yet it would be important to mention that it might be a condition quite remote to conditions found by bacteria in their common environment where the renewal of nutrients and environment might not be controlled. A small discussion around this theme might be nice.\n\n\u2013 It could be interesting to discuss the rather large errors on different estimates of the parameters found (Vmax, E0 particularly).\n\n\u2013 In Figure 1 and in a few figures: the 4 stiffnesses used (2.7, 18.5, 65, and 84 kPa) are not always all presented and sometimes in a non-matching set, as in Figure 1. That would be great if this could be corrected.\n",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b3e7430-e5cc-44bb-a73a-20866048b98d",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C1",
+      "claim": "Pseudomonas aeruginosa is an opportunistic rod-shaped pathogen that contaminates a wide range of substrates, from very soft tissues to rigid implants.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudomonas aeruginosa (PA) is an opportunistic rod-shaped pathogen that contaminates a wide range of substrates, from very soft tissues to rigid implants (Moradali et al., 2017; Chang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Moradali et al., 2017; Chang, 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "925bacdc-ca27-460a-b380-1e6ae144cef5",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C2",
+      "claim": "Pseudomonas aeruginosa is extremely prone to developing antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly gifted and versatile biofilm-former, it is extremely prone to developing antibiotic resistance (Pang et al., 2019; Boucher et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pang et al., 2019; Boucher et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "f995e00b-8151-42fb-9803-e3947950c36b",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C3",
+      "claim": "Type IV pili (T4P) are thin protein filaments on the bacterial surface that can extend and contract by assembly and disassembly of the protein subunit PilA.",
+      "claim_type": "EXPLICIT",
+      "source": "T4P are thin protein filaments on the bacterial surface that can extend and contract by assembly and disassembly of the protein subunit PilA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about T4P structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "debec48b-bece-489f-bdcc-f14f914e6c23",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C4",
+      "claim": "The tip of T4P acts as a promiscuous hook that can grasp most surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The tip of T4P acts as a promiscuous hook that can grasp most surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about T4P function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "1add7a03-ab4f-4cb9-9e14-6b1c65247490",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C5",
+      "claim": "Attachment, contraction, detachment and extension cycles of T4P propel bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Attachment, contraction, detachment and extension cycles propel bacteria (Merz et al., 2000; Maier and Wong, 2015; Skerker and Berg, 2001; Tal\u00e0 et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Merz et al., 2000; Maier and Wong, 2015; Skerker and Berg, 2001; Tal\u00e0 et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "eba8c332-c2dc-49cd-8853-677b9c59e0ce",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C6",
+      "claim": "On soft PAA hydrogels (<10 kPa), bacteria form well-defined, dense hemispherical colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "on the softest hydrogels (<10 kPa), bacteria form well-defined, dense hemispherical colonies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "091d6963-83da-4446-bf7a-41d9d9f6fcec",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C7",
+      "claim": "On stiff hydrogels, bacteria are distributed in a thin layer covering most of the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast, on stiff hydrogels, bacteria are distributed in a thin layer covering most of the surface, a morphology closer to what we observe on glass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations described in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "2b685eae-1d4d-4732-9961-536e7d0f0656",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C8",
+      "claim": "Bacterial growth rate is not impacted by substrate rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out any effect due to changes in the bacterial growth rate, we quantified the division time of bacteria (Figure 1C), and the volume occupied by bacterial colonies after a few hours (Figure 1D and E) on different substrates: both were found to be unaffected",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "710e2453-f030-44ae-b58d-67222e90f1d1",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C9",
+      "claim": "The volume occupied by bacterial colonies after a few hours is unaffected by substrate rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out any effect due to changes in the bacterial growth rate, we quantified the division time of bacteria (Figure 1C), and the volume occupied by bacterial colonies after a few hours (Figure 1D and E) on different substrates: both were found to be unaffected",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "1640c84c-dc83-41b0-996f-74bf2299ed86",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C10",
+      "claim": "The characteristic roughness of the bacterial layer decreases as rigidity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a change in the morphology of the colonies could be confirmed by quantifying the characteristic roughness of the bacterial layer, which decreases as rigidity increases (Figure 1E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "5afa335e-f031-4890-9dce-b2af97816604",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C11",
+      "claim": "The distribution of bacteria with the distance from the surface spreads further for soft hydrogels.",
+      "claim_type": "EXPLICIT",
+      "source": "and the distribution of bacteria with the distance from the surface, which spreads further for soft hydrogels (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "cc427002-bc47-4592-979d-432b565c244c",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C12",
+      "claim": "Similar results regarding the phenotype of colonies were obtained on PEG hydrogels, confirming a role for the mechanical properties of the substrate in bacterial self-organization.",
+      "claim_type": "EXPLICIT",
+      "source": "To control that this is a robust phenomenon driven by substrate elasticity rather than specific chemical interactions, we reproduced this assay using polyethylene glycol (PEG) hydrogels, which are chemically different from PAA but can span a similar range of rigidities. We obtained very similar results regarding the phenotype of colonies, which further confirms a role for the mechanical properties of the substrate in bacterial self-organization (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "918ca225-6a35-44c1-b39b-c67333430609",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C13",
+      "claim": "Experiments on hydrogels immobilized at the bottom of wells without agitation showed the formation of denser colonies on softer PAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, because shear flow can orient polarly-attached bacteria, direct motility, disperse quorum-sensing molecules, and generally impact spatial organization into colonies, we carried out experiments on hydrogels immobilized at the bottom of wells, without any agitation of the above medium. Although long-term observations are rendered difficult in that case by swimming bacteria, we clearly observed the formation of denser colonies on softer PAA (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "a765e50e-82a8-43b0-85a5-0c16023d6e6b",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C15",
+      "claim": "T4P-mediated surface motility (twitching) plays a key role in the rigidity modulation of microcolony formation by WT PAO1 on soft elastic substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that T4P-mediated surface motility ('twitching') plays a key role in the rigidity modulation of microcolony formation by WT PAO1 on soft elastic substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation that pilA mutants do not show rigidity-dependent colony morphology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "39fe24d6-2b0e-48cb-9c25-06afbf6f3e30",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C21",
+      "claim": "Both wspR and sadC mutants exhibited a stiffness-dependent twitching motility.",
+      "claim_type": "EXPLICIT",
+      "source": "We carried out experiments with wspR and sadC mutants, two DGCs known to be involved in the surface-sensing response. Although impaired in c-di-GMP regulation, both mutants still exhibited a stiffness-dependent twitching motility (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "b80cdd7a-3779-42ef-adfc-373862e994ea",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C24",
+      "claim": "The experimental results on bacterial effective motility on elastic substrates can be interpreted as the result of a simple interplay between the pilus retraction mechanism, the deformation of the elastic substrate, and the friction of the bacterial body on this substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this demonstrates that our experimental results on bacterial effective motility on elastic substrates can be interpreted as the result of a simple interplay between the pilus retraction mechanism, the deformation of the elastic substrate, and the friction of the bacterial body on this substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the agreement between the kinetic model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "d2b70c52-9e90-444c-989b-78deba9ce0de",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C25",
+      "claim": "Track duration is bimodal, with one peak centered on the division time (~27 min) and a second peak corresponding to bacteria spending 5\u201310 min on the surface before detaching.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected track duration to be similar to the characteristic division time shown on Figure 1C. However, we obtained a bimodal distribution, with two peaks centered at times unaffected by the substrate rigidity: one peak indeed centered on the division time (\u223c27 min), and a second one that corresponds to bacteria spending 5\u201310 min on the surface before detaching (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "895da903-a44e-4e85-a454-6f445e2b631b",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C26",
+      "claim": "The velocity distribution corresponding to each population (short and long tracks) is similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The velocity distribution corresponding to each population is similar (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "a5784ca0-cf93-47f0-8bfa-7d677d2af1e3",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C28",
+      "claim": "The distribution of the mean velocity of tracks is broad, continuous with an exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the mean velocity of tracks does not allow us to distinguish different bacterial sub-populations: it reaches higher values on stiffer hydrogels, but it is broad, continuous with an exponential decay (reflecting the diversity of behaviors expected in a population of cells; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "7ae9fd01-2344-411b-8cbd-16cc48516fb4",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C29",
+      "claim": "For each track, the standard deviation of the mean velocity is comparable and proportional to its mean.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, for each track the standard deviation of this mean velocity is comparable and proportional to its mean (Figure 3\u2014figure supplement 2), suggesting a stochastic distribution of twitching steps within a given trajectory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "42fbc4ad-3904-4bce-a8f1-944c1a0f40f8",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C32",
+      "claim": "Velocity values measured in a given experiment always exhibit a similar dependence on substrate rigidity, showing a clear increase of motility as rigidity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, velocity values measured in a given experiment always exhibit a similar dependence on substrate rigidity, that is a clear increase of motility as rigidity increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "9e882aab-1578-423d-9bfc-a31eeade9c77",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C34",
+      "claim": "Bacterial motility on PEG hydrogels confirms the very similar bacterial behavior on the two kinds of substrates (PAA and PEG).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this approach was used to quantify bacterial motility in experiments on PEG hydrogels (shown Figure 1\u2014figure supplement 1\u2013pp.), which confirms the very similar bacterial behavior on the two kinds of substrates we have used (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "52243864-201d-4b06-8536-ba901f1d66ae",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C37",
+      "claim": "Not only the velocity, but also the contour length of the trajectories of bacteria increases with the rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental data show that not only the velocity, but also the contour length of the trajectories of bacteria increases with the rigidity since the duration of these trajectories is mostly constant (Figure 4B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "116fbab2-8605-42da-80fc-ef1deec1a5f5",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C39",
+      "claim": "For high stiffness substrates where bacteria explore the surface efficiently, trails of matrix decorate a significant fraction of the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "For high stiffness substrates where bacteria explore the surface efficiently, this staining confirms that trails of matrix decorate a significant fraction of the surface; on the contrary, nearly immobile bacteria on soft substrates accumulate matrix locally, leaving most of the surface unmodified (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "60d2d7bf-0864-490d-94db-e333b42b1458",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C40",
+      "claim": "Nearly immobile bacteria on soft substrates accumulate matrix locally, leaving most of the surface unmodified.",
+      "claim_type": "EXPLICIT",
+      "source": "For high stiffness substrates where bacteria explore the surface efficiently, this staining confirms that trails of matrix decorate a significant fraction of the surface; on the contrary, nearly immobile bacteria on soft substrates accumulate matrix locally, leaving most of the surface unmodified (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "6a230efc-4d55-4c6e-a12e-a69eb6bfb0e0",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C41",
+      "claim": "On rigid hydrogels, most of the surface is covered by bacteria-secreted matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "While on rigid hydrogels, most of the surface is covered by bacteria-secreted matrix, lectin staining on soft hydrogels is only present on compact colonies separated by regions completely devoid of EPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "3341d19a-8b29-4896-8f5f-cd38b8ac1c87",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C42",
+      "claim": "Lectin staining on soft hydrogels is only present on compact colonies separated by regions completely devoid of EPS.",
+      "claim_type": "EXPLICIT",
+      "source": "While on rigid hydrogels, most of the surface is covered by bacteria-secreted matrix, lectin staining on soft hydrogels is only present on compact colonies separated by regions completely devoid of EPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "1a3e61dc-757f-4c74-bd91-c0b20ffcd62e",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C43",
+      "claim": "On rigid substrates, high motility promotes mixing of the offsprings of different cells, resulting in a spatial distribution of the two strains close to random.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, rigidity-modulated motility impacts the co-colonization of the hydrogels from early stages (Figure 5\u2014figure supplement 1): on rigid substrates, high motility promotes mixing of the offsprings of different cells, resulting in a spatial distribution of the two strains close to random (a residual correlation between the colour of neighboring cells is always found due to the presence of cells that have just divided).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "a0ae3b47-8678-4fa9-bb93-8d3c00b751e4",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C44",
+      "claim": "Nearly immobile cells on soft substrates exhibit strong correlations between neighboring cells, which mostly arise from a single progenitor cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, nearly immobile cells on soft substrates exhibit strong correlations between neighboring cells, which mostly arise from a single progenitor cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "3f3269a1-1325-417d-8caf-7131124d561e",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C45",
+      "claim": "On soft substrates, quasi-monoclonal colonies with complete spatial segregation are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This striking difference in strain mixing during surface co-colonization is maintained at later stages of biofilm formation: on soft substrates, quasi-monoclonal colonies with complete spatial segregation are observed, while biofilms forming on rigid surfaces exhibit a close-to-random distribution of the two strains at the 10-\u03bcm scale (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "9e1ee89c-c1ad-4c41-997c-343163af7be7",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C46",
+      "claim": "Biofilms forming on rigid surfaces exhibit a close-to-random distribution of the two strains at the 10-\u03bcm scale.",
+      "claim_type": "EXPLICIT",
+      "source": "This striking difference in strain mixing during surface co-colonization is maintained at later stages of biofilm formation: on soft substrates, quasi-monoclonal colonies with complete spatial segregation are observed, while biofilms forming on rigid surfaces exhibit a close-to-random distribution of the two strains at the 10-\u03bcm scale (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "c00048ad-8435-4087-8c07-1586e5cc49e1",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C47",
+      "claim": "Moran's I index quantitative analysis confirms the decisive impact of rigidity on the structure of mixed biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting quantitative analysis (Figure 5B) confirms the decisive impact of rigidity on the structure of mixed biofilms, with potentially far-reaching consequences on the interactions of different strains in multi-species biofilms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "5397061e-7ab0-4b89-a0d7-30cb4d35b8dd",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C48",
+      "claim": "The increase rate of the fluorescence signal is a direct proxy to the expression rate of gene cdrA, and thus to the changes in c-di-GMP level.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reporter, the degradation rate of gfp occurs over several hours, and its dilution due to growth and division of bacteria occurs at the same rate on all surfaces (see Figure 1C). The increase rate of the fluorescence signal is thus a direct proxy to the expression rate of gene cdrA, and thus to the changes in c-di-GMP level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the properties of the fluorescent reporter and the observation that bacterial growth is the same on all surfaces.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "f2fbcf61-ab6b-46bd-9975-9a225abd89a4",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C49",
+      "claim": "During a first phase of surface colonization, fluorescence remains low on all surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "During a first phase of surface colonization, fluorescence remains low on all surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "f018f77b-9c5b-422f-b7b0-3e2d8f0d3237",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C50",
+      "claim": "The fluorescence signal subsequently starts increasing linearly, roughly at the same time for all surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal subsequently starts increasing linearly, roughly at the same time for all surfaces (within the uncertainty of fluorescence quantification, that is \u224810 min).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "9aa0e7ac-1bd7-4337-ac9e-664f12d43197",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C51",
+      "claim": "The linear increase in fluorescence directly translates into a constant production rate of CdrA.",
+      "claim_type": "EXPLICIT",
+      "source": "This linear increase in fluorescence directly translates into a constant production rate of CdrA that can be compared for the 4 surfaces (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the linear increase in fluorescence shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "4fcff810-4461-4f60-9554-3e464a96b31d",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C52",
+      "claim": "There is a marked increase in CdrA expression with the substrate rigidity.",
+      "claim_type": "EXPLICIT",
+      "source": "our analysis shows a marked increase in CdrA expression with the substrate rigidity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "e091b615-0c86-4076-bb82-d20f05832668",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C53",
+      "claim": "Substrate rigidity influences the twitching motility of individual bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "By continuously imaging surface-attached bacteria in situ, we show that substrate rigidity influences the twitching motility of individual bacteria, therefore strongly impacting the process of microcolony formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "b64424e5-a87b-4959-b10f-5978cb3db42d",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C54",
+      "claim": "The characteristic twitching velocity increases with substrate stiffness (from 0.02 to 0.4 \u03bcm/min when rigidity goes from ~3 to 80 kPa).",
+      "claim_type": "EXPLICIT",
+      "source": "Through two different analyses of the surface motility of the bacterial population, either via the global evolution of the explored area or via the tracking of individual cells, we find that the characteristic twitching velocity increases with substrate stiffness (from 0.02 to 0.4 \u03bcm/min when rigidity goes from \u223c3 to 80 kPa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 2C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "0dfe298b-5d41-4b7c-8eef-6def63b34d11",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C57",
+      "claim": "A variety of observed phenomena (3D structure of colonies; EPS deposition on the surface; strain mixing during co-colonization) can all derive from a modulation of the efficiency of pili activity by the deformability of soft substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, our minimal mechanistic model thus suggests that a variety of observed phenomena (3D structure of colonies; EPS deposition on the surface; strain mixing during co-colonization) can all derive from a modulation of the efficiency of pili activity by the deformability of soft substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the agreement between the mechanistic model and multiple experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "e217ddb3-7be7-4673-9580-f7a86f7cc993",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C58",
+      "claim": "The adaptation of bacterial behavior to the environment can be instantaneous through a purely mechanical model.",
+      "claim_type": "EXPLICIT",
+      "source": "This purely mechanical model may be of particular importance for surface colonization, since the adaptation of bacterial behavior to the environment can thus be instantaneous - possibly a key to PA ability to efficiently colonize extremely different microenvironments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the mechanistic model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "9395afeb-873d-4490-ba1f-2850ab705a29",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C59",
+      "claim": "Differences in c-di-GMP expression level are detected only 6\u20137 hr after the onset of surface colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "While the level of expression of the gene is clearly impacted by the substrate rigidity, differences in expression level are detected only 6\u20137 hr after the onset of surface colonization, with a first phase characterized by low c-di-GMP level on all surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "e3408ce2-10da-4e42-b34f-3b605bd9d73d",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C60",
+      "claim": "The difference in gene expression observed is probably not due to a direct sensing of the substrate rigidity by individual bacteria, but rather a consequence of their organization into more or less dense colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "This timeframe suggests that the difference in gene expression that we observe is probably not due to a direct sensing of the substrate rigidity by individual bacteria, but rather a consequence of their organization into more or less dense colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the timing of c-di-GMP expression changes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "82136312-79dd-4210-9f8a-dd23994c19ab",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C61",
+      "claim": "When the increase in c-di-GMP takes place, bacteria have stopped twitching and immobilized into colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, when the increase in c-di-GMP takes place bacteria have stopped twitching and immobilized into colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "10bed5fa-7a61-47dc-97b7-16e815caf58a",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C62",
+      "claim": "The dense colonies observed on soft hydrogels correspond to lower c-di-GMP levels than the flat bacteria carpets that grow on rigid substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The dense colonies observed on soft hydrogels correspond to lower c-di-GMP levels than the flat bacteria carpets that grow on rigid substrates, a somehow counter-intuitive result given the paradigm that c-di-GMP production upregulates biofilm-inducing genes, in particular matrix production, while downregulating motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "eeb1c3ff-7504-4d5c-8b73-14e5c0a6b4b2",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C63",
+      "claim": "Motility is rendered impossible by the micromechanical properties of the environment rather than by the absence of functional pili on soft substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a case when motility is rendered impossible by the micromechanical properties of the environment rather than by the absence of functional pili, thus resulting in the rapid formation of compact colonies on soft substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations that WT bacteria on soft substrates have low motility despite having functional pili.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "7ad384c5-3c73-4442-a86a-9eed17aca87b",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C65",
+      "claim": "Rigidity-modulated twitching could provide Pseudomonas aeruginosa with a convenient means of targeting soft tissues for cooperative disruption and subsequent invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Cont et al., 2020 have shown that dense colonies were able to deform soft substrates and exert forces that could disrupt an epithelium layer: rigidity-modulated twitching could thus provide Pseudomonas aeruginosa with a convenient means of targeting soft tissues for cooperative disruption and subsequent invasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the current findings and previous work (Cont et al., 2020).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "6b0f7400-66e7-416b-bd30-1483cff7b63c",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C66",
+      "claim": "Dense colonies are likely to impact subsequent interactions of bacteria with their environment, including response to changes in nutrient or oxygen availability, and chemical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic differences that we report for colonies are likely to impact subsequent interactions of bacteria with their environment: response to changes in nutrient or oxygen availability, and chemical signals in general which will not efficiently penetrate inside dense colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the observed phenotypic differences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "87dbe762-29e5-4e32-8feb-c89438e2bed5",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C67",
+      "claim": "The motility modulation mechanism described is quite general and should be marginally affected by the particulars of different strains/species moving through elongation/retraction of an appendage.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the motility modulation mechanism described here is quite general and should be marginally affected by the particulars of different strains/species moving through elongation/retraction of an appendage, we expect it to provide a relevant framework to study co-colonization in different mechanical micro-environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "ae76fcb8-6753-4c4a-8527-ac3ddbcf6b12",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C68",
+      "claim": "PAA can span a biologically-relevant range of rigidities (from ~1\u2013100 kPa) while keeping a low viscous dissipation.",
+      "claim_type": "EXPLICIT",
+      "source": "By varying the amount of bisacrylamide cross-linker during its preparation, PAA can span a biologically-relevant range of rigidities (from \u223c1\u2013100 kPa) while keeping a low viscous dissipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about PAA hydrogels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "d57b21d6-1da0-4508-88f9-4aae96455920",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C70",
+      "claim": "The gels are spatially homogeneous at the \u03bcm and mm scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Homogeneity of the gels was assessed at the \u03bcm and mm scales by multiposition measurements. We found very good repeatability of the measurements and homogeneity of the gels at all scales (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "761bc9de-bb8c-4e29-ade2-56901e7cae5f",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "claim_id": "C71",
+      "claim": "There is no evidence of damage to the hydrogel upon drying, except for very soft gels of rigidity below 1 kPa.",
+      "claim_type": "EXPLICIT",
+      "source": "Rigidity was also measured before and after drying and rehydration of the gel to check for possible damage to the structure. In addition, confocal images of the surface of fluorescently labelled gels were used to track default on the gel surface before and after drying. We found no evidence of damage to the hydrogel upon drying, except for very soft gels of rigidity below 1  kPa that were not used in this study (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91d84f77-4a96-446c-8e7b-1399a869f2d4",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Substrate rigidity modulates bacterial colony morphology: on soft PAA hydrogels (<10 kPa), bacteria form dense hemispherical colonies, while on stiff hydrogels they form thin layers covering the surface. This morphological difference is characterized by decreased roughness and reduced vertical distribution on stiffer substrates, while bacterial growth rate and colony volume remain unaffected by rigidity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C11 provide converging evidence from multiple quantitative metrics (roughness, vertical distribution, surface coverage) showing rigidity-dependent colony morphology. Controls (C8, C9) rule out growth rate effects. The data are supported by multiple figures (1B-F) with appropriate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "00189be1-af7c-4a01-8466-19d541921d97",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The rigidity-dependent colony morphology is a robust phenomenon driven by substrate elasticity rather than specific chemical interactions, as demonstrated by similar results on chemically distinct PEG hydrogels and in static (no-flow) conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 provide orthogonal validation using different hydrogel chemistry (PEG vs PAA) and different experimental conditions (static vs flow), both showing consistent rigidity-dependent phenotypes. Claim C34 further confirms similar motility behavior on both substrates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "84528365-1431-4483-8ee0-9be983bb4784",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "T4P-mediated twitching motility plays a key role in rigidity-dependent microcolony formation, as pilA mutants lacking functional pili do not show rigidity-dependent colony morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by genetic evidence showing that pilA mutants abolish the rigidity-dependent phenotype (Figure 1\u2014figure supplement 4), establishing a causal link between T4P function and the observed morphological changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "0af7bb9c-5d75-4768-b35c-757053f32b25",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Substrate rigidity directly influences bacterial twitching motility at the single-cell level, with characteristic velocity increasing from 0.02 to 0.4 \u03bcm/min as rigidity increases from ~3 to 80 kPa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by two independent analytical approaches (global surface exploration and individual cell tracking) that converge on the same conclusion. Claim C32 confirms consistent rigidity-dependence across experiments. Data shown in Figures 2C and 3D with appropriate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "f2efec3f-823d-47ca-91d3-65217ccee6c0",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutants impaired in c-di-GMP regulation (wspR and sadC) still exhibit stiffness-dependent twitching motility, suggesting the mechanical response occurs independently of these known surface-sensing pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by experimental data (Figure 2\u2014figure supplement 1) showing that disruption of two major c-di-GMP-related surface sensing pathways does not abolish rigidity-dependent motility, supporting a mechanical rather than purely regulatory mechanism at early timepoints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "04520a17-1cb8-4931-bcda-7f9089712a6c",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A minimal kinetic model based on pilus retraction mechanics, substrate deformation, and bacterial body friction quantitatively accounts for the observed rigidity-dependent motility without requiring mechanotransduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by quantitative agreement between the theoretical model (Equation A11) and experimental velocity measurements (Figures 2C, 3D). The model parameters are physically reasonable and consistent with literature values. The model successfully predicts velocity dependence on rigidity across the tested range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "51deb361-67fc-4649-9ae9-c6bd6e408fb7",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bacterial track duration is bimodal with peaks at ~27 min (division time) and 5-10 min (early detachment), but velocity distributions are similar for both populations, indicating phenotypic heterogeneity in surface attachment rather than motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by tracking data (Figure 3\u2014figure supplement 1A-B) showing bimodal track duration but similar velocity distributions. This suggests a binary attachment phenotype rather than distinct motility subpopulations, consistent with asymmetric division.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "60c56859-76ec-42d0-8d2b-52da5d869985",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Individual bacterial tracks show broad, continuous velocity distributions with exponential decay, and the standard deviation of velocity within each track is proportional to its mean, suggesting stochastic twitching behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by single-cell tracking data (Figures 3B, 3\u2014figure supplement 2) showing continuous velocity distributions and proportional velocity variance, indicating stochastic rather than deterministic twitching dynamics within individual trajectories.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "65224046-4229-41eb-b748-3559eac608fc",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both velocity and contour length of bacterial trajectories increase with substrate rigidity, while trajectory duration remains constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by data in Figure 4B and Figure 3\u2014figure supplement 1 showing increased trajectory lengths on stiffer substrates with constant duration, consistent with the velocity increase and important for understanding surface exploration efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "cdc2dddd-95ae-4b14-af90-32feeef90ee5",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Substrate rigidity modulates extracellular matrix (EPS) distribution: on stiff substrates, matrix trails cover most of the surface, while on soft substrates, matrix accumulates locally in dense colonies with large areas devoid of EPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by lectin staining experiments (Figures 4C-D, Figure 4\u2014figure supplement 1) showing rigidity-dependent matrix distribution patterns. The differential surface coverage is consistent with the motility differences and provides a mechanistic link to biofilm structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Substrate rigidity dramatically affects strain mixing during co-colonization: soft substrates promote formation of quasi-monoclonal colonies with complete spatial segregation, while rigid substrates result in near-random mixing of two co-inoculated strains, as quantified by Moran's I spatial correlation index.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by two-strain co-colonization experiments with fluorescent labeling (Figure 5A-B, Figure 5\u2014figure supplement 1). Moran's I provides appropriate quantification of spatial clustering. The results are consistent across early and late timepoints and directly follow from the motility differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CdrA expression (a proxy for c-di-GMP levels) increases with substrate rigidity, with fluorescence remaining low initially on all surfaces, then increasing linearly at similar times (~6-7 hr), but with rigidity-dependent production rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by fluorescent reporter data (Figure 6B-C). The linear increase phase allows quantitative comparison of expression rates. The delayed onset (6-7 hr) and similar timing across rigidities suggests secondary rather than primary mechanosensing response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "426fb63b-f1de-4779-979f-032a7c5f0e85",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Differences in c-di-GMP expression appear only 6-7 hours after surface colonization, suggesting gene expression changes result from colony organization rather than direct rigidity sensing. Counter-intuitively, dense colonies on soft substrates show lower c-di-GMP than flat layers on rigid substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by the temporal dynamics of the reporter (Figure 6B) and the observation that bacteria have stopped twitching when c-di-GMP increases. The counter-intuitive relationship between colony density and c-di-GMP challenges simple interpretations but is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "32a0e686-2037-47aa-99db-5ae8f3de952a",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "On soft substrates, motility is rendered impossible by micromechanical properties of the environment rather than absence of functional pili, resulting in rapid formation of compact colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by the observation that WT bacteria on soft substrates have functional pili (as shown by pilA mutant controls) but exhibit minimal motility. This distinguishes mechanical impediment from genetic/regulatory loss of motility function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "bc920bf2-5415-44de-a6f7-15c16cbdd82b",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple observed phenomena (3D colony structure, EPS deposition, strain mixing) can all be explained by mechanical modulation of pili efficiency through substrate deformability, as predicted by the minimal mechanistic model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by the convergence of the mechanical model with multiple independent experimental observations (colony morphology, matrix distribution, co-colonization patterns). The model provides a unifying mechanistic framework without requiring additional regulatory assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "9e2464b9-2e02-4b1b-b0e6-8e178231d16e",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The purely mechanical model allows instantaneous adaptation of bacterial behavior to environmental rigidity, potentially explaining P. aeruginosa's ability to colonize diverse microenvironments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is speculative reasoning about evolutionary/ecological implications. While the mechanical model is well-supported, the claim about its importance for colonization versatility is not directly tested and remains a hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "d1a4a50a-0459-499b-819c-582ba99efcdd",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Rigidity-modulated twitching could provide P. aeruginosa with a means of targeting soft tissues for cooperative disruption and invasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is speculative, extrapolating from the current findings and prior work (Cont et al., 2020) about force generation. While plausible, this pathogenic mechanism is not directly demonstrated and would require additional experiments on tissue models or in vivo systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "edd7539b-b6fd-4c48-a694-0967492709da",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Dense colonies likely impact bacterial interactions with their environment, including responses to nutrients, oxygen, and chemical signals that cannot efficiently penetrate dense structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is reasonable speculation based on physical principles of diffusion, but these effects on nutrient/oxygen/signal penetration are not experimentally demonstrated in this study. Follow-up work measuring these parameters would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "2ac4eb8b-d7fe-4d60-bd6d-b94081e30234",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The motility modulation mechanism is general and should apply to different strains/species using appendage-based motility, providing a framework for studying co-colonization in different mechanical microenvironments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 is speculative about generalizability. While the mechanical principles are likely general, the claim is not tested with other species or strains. The model's applicability to other pilus-based or flagellar systems requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "2e0053ae-7c7b-4949-b1d4-95e25c25742f",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "PAA hydrogels span a biologically-relevant rigidity range (1-100 kPa) with low viscous dissipation, are spatially homogeneous at \u03bcm and mm scales, and show no damage upon drying/rehydration (except below 1 kPa).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 describe methodological validation of the hydrogel substrates. C70-C71 are supported by AFM microrheology data (Figure 1\u2014figure supplement 1b-c). C68 is established knowledge about PAA. These validations are essential for interpreting the biological results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    },
+    {
+      "id": "60ee60f0-0492-4f44-aa60-d0519db44b5c",
+      "content_id": "f545fd22-6e30-464e-8d2c-f7b6f57d46ed",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background information establishing P. aeruginosa as a versatile pathogen prone to antibiotic resistance, and describing T4P structure and function in bacterial motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 provide established background knowledge supported by appropriate citations. These are not novel findings but necessary context for the study. All claims are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:49:51.690400Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eba8c332-c2dc-49cd-8853-677b9c59e0ce",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "091d6963-83da-4446-bf7a-41d9d9f6fcec",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "1640c84c-dc83-41b0-996f-74bf2299ed86",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "5afa335e-f031-4890-9dce-b2af97816604",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "2b685eae-1d4d-4732-9961-536e7d0f0656",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "710e2453-f030-44ae-b58d-67222e90f1d1",
+      "result_id": "91d84f77-4a96-446c-8e7b-1399a869f2d4"
+    },
+    {
+      "claim_id": "cc427002-bc47-4592-979d-432b565c244c",
+      "result_id": "00189be1-af7c-4a01-8466-19d541921d97"
+    },
+    {
+      "claim_id": "918ca225-6a35-44c1-b39b-c67333430609",
+      "result_id": "00189be1-af7c-4a01-8466-19d541921d97"
+    },
+    {
+      "claim_id": "9e882aab-1578-423d-9bfc-a31eeade9c77",
+      "result_id": "00189be1-af7c-4a01-8466-19d541921d97"
+    },
+    {
+      "claim_id": "a765e50e-82a8-43b0-85a5-0c16023d6e6b",
+      "result_id": "84528365-1431-4483-8ee0-9be983bb4784"
+    },
+    {
+      "claim_id": "e091b615-0c86-4076-bb82-d20f05832668",
+      "result_id": "0af7bb9c-5d75-4768-b35c-757053f32b25"
+    },
+    {
+      "claim_id": "b64424e5-a87b-4959-b10f-5978cb3db42d",
+      "result_id": "0af7bb9c-5d75-4768-b35c-757053f32b25"
+    },
+    {
+      "claim_id": "42fbc4ad-3904-4bce-a8f1-944c1a0f40f8",
+      "result_id": "0af7bb9c-5d75-4768-b35c-757053f32b25"
+    },
+    {
+      "claim_id": "39fe24d6-2b0e-48cb-9c25-06afbf6f3e30",
+      "result_id": "f2efec3f-823d-47ca-91d3-65217ccee6c0"
+    },
+    {
+      "claim_id": "b80cdd7a-3779-42ef-adfc-373862e994ea",
+      "result_id": "04520a17-1cb8-4931-bcda-7f9089712a6c"
+    },
+    {
+      "claim_id": "d2b70c52-9e90-444c-989b-78deba9ce0de",
+      "result_id": "51deb361-67fc-4649-9ae9-c6bd6e408fb7"
+    },
+    {
+      "claim_id": "895da903-a44e-4e85-a454-6f445e2b631b",
+      "result_id": "51deb361-67fc-4649-9ae9-c6bd6e408fb7"
+    },
+    {
+      "claim_id": "a5784ca0-cf93-47f0-8bfa-7d677d2af1e3",
+      "result_id": "60c56859-76ec-42d0-8d2b-52da5d869985"
+    },
+    {
+      "claim_id": "7ae9fd01-2344-411b-8cbd-16cc48516fb4",
+      "result_id": "60c56859-76ec-42d0-8d2b-52da5d869985"
+    },
+    {
+      "claim_id": "52243864-201d-4b06-8536-ba901f1d66ae",
+      "result_id": "65224046-4229-41eb-b748-3559eac608fc"
+    },
+    {
+      "claim_id": "116fbab2-8605-42da-80fc-ef1deec1a5f5",
+      "result_id": "cdc2dddd-95ae-4b14-af90-32feeef90ee5"
+    },
+    {
+      "claim_id": "60d2d7bf-0864-490d-94db-e333b42b1458",
+      "result_id": "cdc2dddd-95ae-4b14-af90-32feeef90ee5"
+    },
+    {
+      "claim_id": "6a230efc-4d55-4c6e-a12e-a69eb6bfb0e0",
+      "result_id": "cdc2dddd-95ae-4b14-af90-32feeef90ee5"
+    },
+    {
+      "claim_id": "3341d19a-8b29-4896-8f5f-cd38b8ac1c87",
+      "result_id": "cdc2dddd-95ae-4b14-af90-32feeef90ee5"
+    },
+    {
+      "claim_id": "1a3e61dc-757f-4c74-bd91-c0b20ffcd62e",
+      "result_id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc"
+    },
+    {
+      "claim_id": "a0ae3b47-8678-4fa9-bb93-8d3c00b751e4",
+      "result_id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc"
+    },
+    {
+      "claim_id": "3f3269a1-1325-417d-8caf-7131124d561e",
+      "result_id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc"
+    },
+    {
+      "claim_id": "9e1ee89c-c1ad-4c41-997c-343163af7be7",
+      "result_id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc"
+    },
+    {
+      "claim_id": "c00048ad-8435-4087-8c07-1586e5cc49e1",
+      "result_id": "d33f9f79-ad7e-47d8-a566-bb4dd00146cc"
+    },
+    {
+      "claim_id": "5397061e-7ab0-4b89-a0d7-30cb4d35b8dd",
+      "result_id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303"
+    },
+    {
+      "claim_id": "f2fbcf61-ab6b-46bd-9975-9a225abd89a4",
+      "result_id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303"
+    },
+    {
+      "claim_id": "f018f77b-9c5b-422f-b7b0-3e2d8f0d3237",
+      "result_id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303"
+    },
+    {
+      "claim_id": "9aa0e7ac-1bd7-4337-ac9e-664f12d43197",
+      "result_id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303"
+    },
+    {
+      "claim_id": "4fcff810-4461-4f60-9554-3e464a96b31d",
+      "result_id": "3a6ecea7-b9f7-474d-b489-8ee99c2e4303"
+    },
+    {
+      "claim_id": "9395afeb-873d-4490-ba1f-2850ab705a29",
+      "result_id": "426fb63b-f1de-4779-979f-032a7c5f0e85"
+    },
+    {
+      "claim_id": "e3408ce2-10da-4e42-b34f-3b605bd9d73d",
+      "result_id": "426fb63b-f1de-4779-979f-032a7c5f0e85"
+    },
+    {
+      "claim_id": "82136312-79dd-4210-9f8a-dd23994c19ab",
+      "result_id": "426fb63b-f1de-4779-979f-032a7c5f0e85"
+    },
+    {
+      "claim_id": "10bed5fa-7a61-47dc-97b7-16e815caf58a",
+      "result_id": "426fb63b-f1de-4779-979f-032a7c5f0e85"
+    },
+    {
+      "claim_id": "eeb1c3ff-7504-4d5c-8b73-14e5c0a6b4b2",
+      "result_id": "32a0e686-2037-47aa-99db-5ae8f3de952a"
+    },
+    {
+      "claim_id": "0dfe298b-5d41-4b7c-8eef-6def63b34d11",
+      "result_id": "bc920bf2-5415-44de-a6f7-15c16cbdd82b"
+    },
+    {
+      "claim_id": "e217ddb3-7be7-4673-9580-f7a86f7cc993",
+      "result_id": "9e2464b9-2e02-4b1b-b0e6-8e178231d16e"
+    },
+    {
+      "claim_id": "7ad384c5-3c73-4442-a86a-9eed17aca87b",
+      "result_id": "d1a4a50a-0459-499b-819c-582ba99efcdd"
+    },
+    {
+      "claim_id": "6b0f7400-66e7-416b-bd30-1483cff7b63c",
+      "result_id": "edd7539b-b6fd-4c48-a694-0967492709da"
+    },
+    {
+      "claim_id": "87dbe762-29e5-4e32-8feb-c89438e2bed5",
+      "result_id": "2ac4eb8b-d7fe-4d60-bd6d-b94081e30234"
+    },
+    {
+      "claim_id": "ae76fcb8-6753-4c4a-8527-ac3ddbcf6b12",
+      "result_id": "2e0053ae-7c7b-4949-b1d4-95e25c25742f"
+    },
+    {
+      "claim_id": "d57b21d6-1da0-4508-88f9-4aae96455920",
+      "result_id": "2e0053ae-7c7b-4949-b1d4-95e25c25742f"
+    },
+    {
+      "claim_id": "761bc9de-bb8c-4e29-ade2-56901e7cae5f",
+      "result_id": "2e0053ae-7c7b-4949-b1d4-95e25c25742f"
+    },
+    {
+      "claim_id": "6b3e7430-e5cc-44bb-a73a-20866048b98d",
+      "result_id": "60ee60f0-0492-4f44-aa60-d0519db44b5c"
+    },
+    {
+      "claim_id": "925bacdc-ca27-460a-b380-1e6ae144cef5",
+      "result_id": "60ee60f0-0492-4f44-aa60-d0519db44b5c"
+    },
+    {
+      "claim_id": "f995e00b-8151-42fb-9803-e3947950c36b",
+      "result_id": "60ee60f0-0492-4f44-aa60-d0519db44b5c"
+    },
+    {
+      "claim_id": "debec48b-bece-489f-bdcc-f14f914e6c23",
+      "result_id": "60ee60f0-0492-4f44-aa60-d0519db44b5c"
+    },
+    {
+      "claim_id": "1add7a03-ab4f-4cb9-9e14-6b1c65247490",
+      "result_id": "60ee60f0-0492-4f44-aa60-d0519db44b5c"
+    }
+  ],
+  "comparisons": []
+}

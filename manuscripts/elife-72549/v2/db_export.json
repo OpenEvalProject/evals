@@ -1,0 +1,1211 @@
+{
+  "submission": {
+    "id": "29b1effa-8675-4ddb-a9ba-17f7c3abede5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:42:14.015115Z",
+    "updated_at": "2025-12-03T10:42:14.015115Z"
+  },
+  "content": [
+    {
+      "id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "submission_id": "29b1effa-8675-4ddb-a9ba-17f7c3abede5",
+      "content_type": "manuscript",
+      "content_text": "# Cell-type-specific responses to associative learning in the primary motor cortex\n\n## Authors\n\n- Candice Lee<sup>1</sup> ([ORCID: 0000-0001-7043-9367](https://orcid.org/0000-0001-7043-9367))\n- Emerson F Harkin<sup>1</sup> ([ORCID: 0000-0003-0698-5894](https://orcid.org/0000-0003-0698-5894))\n- Xuming Yin<sup>1</sup>\n- Richard Naud<sup>1</sup> ([ORCID: 0000-0001-7383-3095](https://orcid.org/0000-0001-7383-3095))\n- Simon Chen<sup>1</sup> ([ORCID: 0000-0002-7595-7443](https://orcid.org/0000-0002-7595-7443)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Medicine, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n2. Department of Physics, STEM Complex, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n3. Brain and Mind Research Institute, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n4. Center for Neural Dynamics, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe primary motor cortex (M1) is known to be a critical site for movement initiation and motor learning. Surprisingly, it has also been shown to possess reward-related activity, presumably to facilitate reward-based learning of new movements. However, whether reward-related signals are represented among different cell types in M1, and whether their response properties change after cue\u2013reward conditioning remains unclear. Here, we performed longitudinal in vivo two-photon Ca2+ imaging to monitor the activity of different neuronal cell types in M1 while mice engaged in a classical conditioning task. Our results demonstrate that most of the major neuronal cell types in M1 showed robust but differential responses to both the conditioned cue stimulus (CS) and reward, and their response properties undergo cell-type-specific modifications after associative learning. PV-INs\u2019 responses became more reliable to the CS, while VIP-INs\u2019 responses became more reliable to reward. Pyramidal neurons only showed robust responses to novel reward, and they habituated to it after associative learning. Lastly, SOM-INs\u2019 responses emerged and became more reliable to both the CS and reward after conditioning. These observations suggest that cue- and reward-related signals are preferentially represented among different neuronal cell types in M1, and the distinct modifications they undergo during associative learning could be essential in triggering different aspects of local circuit reorganization in M1 during reward-based motor skill learning.\n\n## Introduction\n\nThe primary motor cortex (M1) is an essential site for movement execution and motor learning. Within M1, neurons encode movement goals and movement kinematics (Georgopoulos et al., 1992; Moran and Schwartz, 1999; Peters et al., 2014). Intriguingly, neurons in M1 have also been reported to show reward-related activity. In vivo recording studies performed in nonhuman primates found neurons in M1 that encode reward anticipation, reward delivery, and mismatches between the two (Marsh et al., 2015; Ramakrishnan et al., 2017; Ramkumar et al., 2016). In human subjects, reward has also been shown to modulate M1 activity, likely through an inhibitory circuit-dependent mechanism (Thabit et al., 2011). However, it remains unclear how reward-related responses are represented in M1, and if the representation changes with associative learning.\n\nIt was recently shown that in well-trained mice performing a skilled reaching task, a subset of layer 2/3 (L2/3) pyramidal neurons (PNs) in M1 specifically report successful, but not failed, reach-and-grasp movements. In contrast, a different subset of PNs report only failed reach-and-grasp movements (Levy et al., 2020). Since the ability to use past experience to learn action\u2013outcome associations is critical to survival, encoding the outcome in M1 may be an important part of motor skill learning. It is widely accepted that associative learning using reinforcement can accelerate and enhance learning (Abe et al., 2011; Nikooyan and Ahmed, 2015). In the case of motor learning, studies have demonstrated that positive feedback (reward) facilitates motor memory retention and negative feedback (punishment) speeds up the learning process (Galea et al., 2015). One hypothesis is that during learning, reward signals in the brain, together with neuromodulators and synaptic plasticity, are involved in potentiating and optimizing the neural circuitry in M1 that underlies the rewarded movement. Implementing such a learning process would necessitate the interplay between different cell types within the local microcircuitry (Richards et al., 2019).\n\nM1, like other cortical areas, is densely packed with PNs and diverse inhibitory interneuron (IN) types and is wired in a delicately balanced and intricate circuit. Different IN subtypes have been shown to have distinct gene expression profiles, electrophysiological properties, and connectivity motifs (Fishell and Rudy, 2011; Markram et al., 2004). Somatostatin-, parvalbumin-, and vasoactive intestinal peptide- expressing inhibitory neurons (SOM-INs, PV-INs, and VIP-INs, respectively) are three major nonoverlapping subtypes of GABAergic neurons that broadly form a common microcircuit motif in the cortex. Some studies have demonstrated that SOM-INs preferentially target distal dendrites of PNs to filter synaptic inputs, fast-spiking PV-INs preferentially target perisomatic regions of PNs enabling strong inhibition of spiking, and VIP-INs regulate local microcircuits by controlling other local INs (Pfeffer et al., 2013). Due to their diverse properties and strategic connectivity motifs, these INs exert fine control over local network activity and provide a potential mechanism for how the brain processes reward signals and ultimately uses this information to optimize neural activity related to learned motor skills.\n\nMultiple studies using in vivo opto-recordings in the primary visual cortex have shown that visual orientation selectivity in PNs is modulated and sharpened by PV- and SOM-INs (Atallah et al., 2012; Lee et al., 2012; Wilson et al., 2012). In the primary auditory cortex, PV- and SOM-INs exert analogous control over PN frequency tuning (Seybold et al., 2015). Moreover, in the auditory cortex, prefrontal cortex, and basolateral amygdala, reinforcement signals such as reward and punishment have been shown to recruit VIP-INs, which in turn, inhibit SOM- and PV-INs (Krabbe et al., 2019; Pi et al., 2013). The subtype-specific roles of these INs have long been elusive, but a complex picture is emerging where INs are not only responsible for maintaining a delicate balance of excitation and inhibition, but are also actively involved in processing activity in the cortex (Lee et al., 2020; Wood et al., 2017).\n\nHere, we employed chronic in vivo two-photon imaging, combined with a head-fixed classical conditioning task, to monitor the activity of the same population of PNs, PV-INs, SOM-INs, or VIP-INs before and after associative learning to investigate whether and how conditioned cue stimulus (CS) and unconditioned reward are represented among different neuronal cell types in M1. Our results demonstrate that all four major cell types in M1 show distinct responses to CS and reward, and their response properties undergo cell-type-specific modifications after associative learning. Notably, PV-INs and VIP-INs exhibited stimulus-specific modifications, in which PV-INs became more reliably responsive to the CS but not to the reward, whereas VIP-INs became more reliable to the reward but not to the CS. PNs initially showed robust responses to novel reward but became habituated to it after associative learning. Lastly, SOM-IN responses emerged with learning and responded more reliably to both the CS and reward. Taken together, these results show that cue- and reward-related signals are preferentially represented among major neuronal cell types in M1, and they undergo cell-type-specific modifications during associative learning, indicating they may have distinct roles in integrating reinforcement signals to promote circuit reorganization in M1 during motor skill learning.\n\n## Results\n\nTo understand how reward-associated signals are represented within the local microcircuitry in M1 before and after associative learning, we established a head-fixed auditory cued reward conditioning task, which allowed us to combine the task with in vivo two-photon Ca2+ imaging to examine the response properties of different neuronal cell-type populations in awake and behaving mice (Figure 1A). In this task, water-restricted mice were exposed to a conditioned stimulus (CS; auditory tone, 1-s duration), followed by a 1.5-s delay and then the delivery of the unconditioned stimulus (US; water reward, ~10 \u00b5l). Mice were trained for ~30\u201335 trials/session (1 session/day for 7 days) with randomly varied intertrial intervals (ITIs) between 60 and 120 s (Figure 1B). Since M1 is known to be involved in movement initiation and motor skill learning, we chose to use a simple classical conditioning task with just an auditory tone paired with reward and omitted any additional training where mice would be required to learn a new movement. The rationale for this is that many neuronal cell types, including PNs, PV-, and SOM-INs, have been shown to undergo modifications when mice acquire new movements (Chen et al., 2015; Cichon and Gan, 2015; Donato et al., 2013; Xu et al., 2009). However, since licking is an innate movement that does not induce plastic changes in adult mice (Chen et al., 2015; Komiyama et al., 2010; Peters et al., 2014), we can reliably attribute changes in neuronal activity over the course of the task to associative learning, rather than motor learning.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of head-fixed classical conditioning task. (B) Trial structure. (C) Mean lick rate per second on days 1 and 7. Binned over 0.5-s intervals. Lick rate following cue stimulus (CS) onset up to reward delivery time is higher on day 7. Two-way analysis of variance (ANOVA), ***p < 1 \u00d7 10\u20133, effect of time: p < 1 \u00d7 10\u22123, effect of day: p < 1 \u00d7 10\u22123. (D) Mean anticipatory lick rate across trials within days 1 and 7 sessions. Mean anticipatory lick rate was calculated from CS onset to end of delay period. Two-way ANOVA, effect of trial number: p = 0.91, effect of day: p < 1 \u00d7 10\u22123. (E) Mean lick rate during the first 2.5 s of intertrial interval (ITI) lick bouts, 2.5 s following CS onset and 2.5 s following reward delivery on day 1. Each point is the mean from an individual mouse. One-way ANOVA with Tukey\u2013Kramer correction for multiple comparisons, ITI vs. CS: p = 0.97, ITI vs. reward: p < 1 \u00d7 10\u22123, CS vs. reward: p < 1 \u00d7 10\u22123. (F) Mean lick rate during the first 2.5 s of ITI lick bouts, 2.5 s following CS onset and 2.5 s following reward delivery on day 7. Each point is the mean from an individual mouse. One-way ANOVA with Tukey\u2013Kramer correction for multiple comparisons. ITI vs. CS: p = 1.08 \u00d7 10\u22123, ITI vs. reward: p < 1 \u00d7 10\u22123. n = 23 mice. **p < 0.01, ***p < 0.001. Error bars show standard error of the mean (SEM).\n\nMice learned to associate the CS with the reward after 7 days, shown by an increase in anticipatory lick rate, a conditioned response, following the cue onset on day 7 compared to day 1 (Figure 1C). On a trial-by-trial basis, anticipatory lick rate did not change significantly within a single session on both days 1 and 7, implying limited within-session improvements (Figure 1D). To ensure the increase in lick rate was specific to the CS, we compared the mean lick rate during the CS and reward period to the lick rate during self-initiated spontaneous lick bouts in the ITI (in the absence of the CS or reward). To be consistent with the 2.5-s analysis window for CS responses, we analyzed the first 2.5 s of ITI lick bouts and 2.5 s following reward delivery. On day 1, the mean lick rate during ITI lick bouts (1.47 \u00b1 0.17/s) and the CS (1.37 \u00b1 0.17/s) were similar, while the lick rate following reward delivery was significantly higher (7.16 \u00b1 0.48/s). In contrast, on day 7 following associative learning, the lick rate during the CS period (3.42 \u00b1 0.37/s) was significantly higher than during ITI lick bouts (1.71 \u00b1 0.2/s), demonstrating that the mice effectively learned the CS\u2013reward association by day 7 (Figure 1E, F).\n\nTo investigate the activity of different neuronal cell types during this task, we used in vivo two-photon Ca2+ imaging of different cell-type populations. To target PNs in M1, we injected an adenoassociated virus (AAV) carrying a Ca2+ indicator (GCaMP6f) driven by the CaMKII promoter (AAV1.CaMKIIa.GCaMP6f) into M1 of wild-type B6129S mice. After 3\u20135 weeks, we recorded the activity of hundreds of L2/3 PNs using two-photon microscopy in awake mice while they underwent the head-fixed conditioning task, and we tracked the same population of neurons on days 1 and 7 (Figure 2A). We identified all the active neurons within a session, irrespective of the behavioral task (see Methods), and sorted neurons by the timing of their peak activity relative to the CS onset. It was apparent that there were subpopulations of neurons more responsive to CS, reward, or both (Figure 2B, C). We also repeated the experiments to examine if the major IN subtypes in M1 also respond to the CS and reward during the conditioning task. To do this, we injected AAV-Syn-Flex-GCaMP6f in PV-Cre, SOM-Cre, or VIP-Cre transgenic mice to selectively express GCaMP6f in PV-INs, SOM-INs, or VIP-INs, respectively, and then performed in vivo two-photon Ca2+ imaging to monitor the response properties of the same population of INs on days 1 and 7 after associating learning (Figure 2\u2014figure supplements 1 and 2). We compared the mean percentage of active cells within the entire session to ensure all cell types had a similar proportion of active cells (irrespective of the behavioral task) on days 1 and 7 (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental timeline (top). In vivo two-photon imaging of L2/3 pyramidal neurons (PNs) expressing GCaMP6f in M1 (bottom left). The same population can be tracked from days 1 to 7 (bottom right). Yellow arrows indicate example tracked neurons across days. (B) Z-Scored fluorescence traces from 13 neurons (top), and the corresponding licking measured with the lick-o-meter (bottom) from the same mouse and same trial on day 1. Gray bar represents the timing of the cue stimulus (CS). Dotted red line indicates the onset of water reward delivery. (C) Z-Scored activity of all the active neurons from an example mouse during one representative trial on days 1 and 7, sorted by timing of maximum activity following the CS onset. Gray bar represents the timing of the CS. White line indicates the onset of water reward delivery. (D) Mean percent of active neurons within a session, irrespective of the behavioral task, for PNs, PV-INs, VIP-INs, and SOM-INs on days 1 and 7. All cell types showed a similar percentage of active neurons. One-way analysis of variance (ANOVA), n.s., nonsignificant, day 1: p = 0.38, day 7: p = 0.22. Error bars show standard error of the mean (SEM). (E\u2013H) Mean percent of responsive neurons to CS (top) and reward (bottom) within 2.5 s of CS/reward onset for each cell type. Violin plots show null distribution of percentage of responsive neurons made by randomly resampling mice and shuffling the session, 1000 times (see Methods). The circle represents the mean percentage of tone- or reward-responsive neurons. Monte-Carlo with Bonferroni correction, n.s., nonsignificant, *p < 0.05, ***p < 1 \u00d7 10\u22123. PN CS day 1: p = 0.582, CS day 7: p = 0.423, Reward day 1: p < 1 \u00d7 10\u22123, Reward day 7: p = 0.015, n = 1029 cells from six mice (E), PV-IN CS day 1: p < 1 \u00d7 10\u22123, CS day 7: p < 1 \u00d7 10\u22123, Reward day 1: p < 1 \u00d7 10\u22123, Reward day 7: p < 1 \u00d7 10\u22123, n = 316 cells from six mice (F), VIP-IN CS day 1: p = 0.039, CS day 7: p < 1 \u00d7 10\u22123, Reward day 1: p < 1 \u00d7 10\u22123, Reward day 7: p < 1 \u00d7 10\u22123, n = 407 cells from four mice (G), SOM-IN CS day 1: p = 0.47 , CS day 7: p < 1 \u00d7 10\u22123, Reward day 1: p = 0.033, Reward day 7: p < 1 \u00d7 10\u22123, n = 189 cells from seven mice (H).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Example calcium traces from five example cells (same mouse) during a representative intertrial interval (ITI) lick bout on day 1 (left), a trial on day 1 (middle) and a trial on day 7 (right). The same cells are tracked from days 1 to 7. Blue dashed line indicates the time of the first lick in the lick bout (left). Gray shading represents time of the cue stimulus (CS) and the red dashed line indicates the time of the water reward delivery (middle, right).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Neurons were not sorted and the order of all cells were maintained for the days 1 and 7 plot. Gray bar represents the timing of the cue stimulus (CS). White line indicates the onset of water reward delivery. Black lines indicate licking.\n\nTo examine task-related activity in each cell type, we first compared the mean percent of active cells during the CS and reward to a null distribution made by randomly sampling the session irrespective of the behavioral task, and then calculating the mean percentage of active neurons during the sampled period. By repeating this 1000 times for each cell type on days 1 and 7, we created a distribution of the percentage of active neurons that were present at baseline levels or by chance. Surprisingly, we found that only PV-IN and VIP-IN cell types had a percent of CS- and reward-responsive cells that were significantly greater than chance level on both days 1 and 7 (PV-IN CS: day 1: 15.26% \u00b1 2.11%, day 7: 24.09% \u00b1 2.98%; PV-IN reward: day 1: 20.17% \u00b1 3.27%, day 7: 27.47% \u00b1 3.66%; VIP-IN CS: day 1: 11.29% \u00b1 3.23%, day 7: 16.59% \u00b1 2.01%, VIP-IN reward: day 1: 18.65% \u00b1 5.91%, day 7: 26.3% \u00b1 6.04%; Figure 2F, G). PN responses to the CS were not different from the null distribution on both days 1 and 7 (day 1: 18.42% \u00b1 1.05%, day 7: 16.41% \u00b1 1.33%; Figure 2E); in contrast, PN responses to the reward were significantly higher on day 1 but significantly lower than the null distribution on day 7 (day 1: 23.95% \u00b1 2.49%, day 7: 12.12% \u00b1 0.95%; Figure 2E). Lastly, SOM-INs showed significant responses to the CS and reward only on day 7 following associative learning, while on day 1, they demonstrated no response to the CS and a modest response to the reward (CS: day 1: 5.53% \u00b1 2.7%, day 7: 13.56% \u00b1 3.17%; Reward: day 1: 9% \u00b1 3.66%, day 7: 12.15% \u00b1 3.93%; Figure 2H). Based on these findings, we decided to only examine the sessions where the percent of active cells were significantly greater than the null distribution in our subsequent analysis, as a nonsignificant percent of active cells during the stimulus period cannot be readily distinguished from nontask-related baseline noise.\n\nWe began our analysis on PV-INs and VIP-INs because they both showed significant responses to both the CS and reward on days 1 and 7. To understand how their representations of reward and reward-associated cues changed over the course of learning, we first analyzed the tuning of individual cells to unbiasedly identify their response properties. By quantifying the tuning of each cell\u2019s average response during the CS and reward response periods (2.5-s window) using the nonparametric Spearman correlation \u03c1 (see Methods), we observed a wide range of tuning coefficients to the CS and reward, with a small proportion that was strongly positively or negatively tuned to the CS or reward stimulus (tuning coefficient near \u20131 or 1; Figure 3A\u2013D), consistent with our earlier analyses demonstrating that neurons in M1 show activity associated with the CS or reward during the conditioning task. We next examined whether the tuning coefficient within each cell type changed after associative learning by calculating the change in tuning coefficients for each cell between days 1 and 7. Again, to validate our findings, we compared these values to a null distribution of \u0394\u03c1 values obtained by randomly sampling the two sessions (see Method details). The PV-IN population did not show any significant changes in either CS or reward tuning between days 1 and 7 ($\u0394\u03c1\u00af_{CS}=-0.049\\pm0.046$, $\u0394\u03c1\u00af_{reward}=0.014\\pm0.054$; Figure 3E, F), indicating that neither CS- nor reward-related tuning became stronger after associative learning. In contrast, VIP-INs\u2019 CS tuning did not change significantly between days 1 and 7 $\u0394\u03c1\u00af_{CS}=-0.065\\pm0.048$, but VIP-INs\u2019 reward tuning significantly increased on day 7 ($\u0394\u03c1\u00af_{reward}=0.161\\pm0.086$; Figure 3G, H), suggesting a strengthening of VIP-IN responsivity to reward following associative learning.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig3-v2.jpg)\n\n**Figure 3.:** Example fluorescence traces, color-coded based on nonparametric Spearman correlation with cue stimulus (CS) (A) or reward (B). Each trace is a trial-averaged response from different neurons on day 7. Trial-averaged fluorescence of all the neurons recorded on day 7 and sorted to the value of the Spearman correlation (\u22121\u22121) to CS (C) or reward (D). Active neurons during the CS- or reward-responsive period showed higher tuning coefficient. Left, distribution of changes in Spearman correlation \u0394\u03c1 with CS (E, G) or reward (F, H) for PV-INs (top) and VIP-INs (bottom). Each curve represents a Gaussian kernel density estimate of the distribution of \u0394\u03c1 in a single mouse. Right, mean change in Spearman correlation $\u0394\u03c1\u00af$ for PV-INs and VIP-INs. Null distributions (gray) were estimated by resampling each mouse and shuffling trials 1000 times (see description of calculation of tuning coefficients in Methods). VIP-IN reward tuning significantly increased with associative learning. Monte-Carlo, ***p < 1 \u00d7 10\u22123, n.s., nonsignificant, PV-IN CS p = 0.12 (E), PV-IN Reward p = 0.61 (F), VIP-IN CS p = 0.082 (G), VIP-IN Reward p < 1 \u00d7 10\u22123 (H) PV-IN: n = 316 cells from six mice. VIP-IN: n = 407 cells from four mice.\n\nAlthough the tuning properties can reveal changes in task-related responsivity, this analysis is limited in identifying changes at the trial-by-trial level. When we assessed population activity following the CS onset (Figure 4A), it was apparent that a group of PV-INs and VIP-INs were responsive to CS on both days 1 and 7 (Figures 4B and 5B). Hence, by identifying and tracking the same neurons from days 1 to 7, we were able to ask if there was (1) an increase in the number of neurons being recruited as CS or reward responsive during associative learning or (2) a change in the trial-by-trial reliability of CS and reward responses. When we compared the mean percent of CS-responsive neurons on days 1 and 7, we found that the average percent of CS-responsive PV-INs during a trial increased significantly by day 7 (day 1: 15.26% \u00b1 2.11%, day 7: 24.09% \u00b1 2.98%; Figure 4C), while the percent of CS-responsive VIP-INs did not change (day 1: 11.29% \u00b1 3.23%, day 7: 16.59% \u00b1 2.01%; Figure 4D), demonstrating that more PV-INs became responsive to the CS after associative learning. We then assessed the reliability of the responses, defined as the percent of trials within a session where a neuron was responsive to the CS. This measure quantifies how consistently a neuron responded to the CS within a session. We first plotted the cumulative distribution function of reliabilities among all PV-INs and VIP-INs. We observed that PV-INs, as a population, were significantly more reliable in their CS responses than VIP-INs on day 1 (Figure 4E). When we sorted neurons based on their day 1 reliability values and followed them to day 7, we observed that many of the PV-INs that initially had Low Reliability to CS became more responsive on day 7 (Figure 4H); therefore, we grouped neurons into \u2018High Reliability\u2019 if they were among the top 50th percentile, while neurons in the lower 50th percentile were deemed \u2018Low Reliability\u2019. We found that PV-INs that began as highly reliable maintained their reliability to the CS (day 1: 29.8% \u00b1 1.51%, day 7: 33.87% \u00b1 4.72%), while PV-INs that began as Low Reliability became significantly more reliable (8.47% \u00b1 0.46%, day 7: 18.99% \u00b1 3.76%; Figure 4F). In contrast, the reliability of both High and Low VIP-INs did not change (High Reliability: day 1: 26.55% \u00b1 2.62%, day 7: 25.93% \u00b1 3.81%; Low Reliability: day 1: 6.32% \u00b1 0.76%, day 7: 14.24% \u00b1 2.6%; Figure 4G). We then followed individual Low Reliability PV-INs and calculated the change in reliability to the CS ($\\Deltareliability_{CS})$ from days 1 to 7. As a control, we randomly sampled the day 7 session irrespective of the behavioral task and calculated a reliability value. We then subtracted that value from the actual day 1 CS reliability to generate a randomized change in reliability ($\\Deltareliability_{random})$ for each Low Reliability neuron (see Methods). When we compared the two distributions, we found that among the Low Reliability PV-INs, $\\Deltareliability_{CS}$ was significantly greater than the $\\Deltareliability_{random}$ control (Figure 4I). Lastly, we examined if the onset of neuronal activity after the CS changed after associative learning, and if any neurons that were previously responsive to the CS became responsive to the reward only. We did not observe a change in the onset of neuronal activity following CS (Figure 4\u2014figure supplement 1A, see Methods). Furthermore, 97% of the CS-responsive PV-INs from day 1 still showed responsivity to CS on day 7 (Figure 4\u2014figure supplement 1C, D). Altogether, these results show that as a population, more PV-INs became responsive to the CS, and this is mainly due to Low Reliability PV-INs that became more reliable following associative learning.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig4-v2.jpg)\n\n**Figure 4.:** (A) Trial structure. Gray shaded bar represents the response period analyzed for CS-responsive activity. (B) Z-Scored activity of all the active PV-INs from an example mouse during one representative trial on days 1 and 7, sorted by timing of maximum activity following the CS onset. Gray bar represents the timing of the CS. White line indicates the onset of water reward delivery. Mean percent of cells that are responsive to the CS for PV-INs (C) and VIP-INs (D). PV-INs showed an increase in the percent of CS-responsive neurons after reinforcement learning, while VIP-INs did not show any change. Paired t-test, *p < 0.05, n.s., nonsignificant, PV-IN: p = 0.031 (C), VIP-IN: p = 0.38 (D). (E) Cumulative probability plots showing the percent of trials that each neuron responded to the CS for PV-INs and VIP-INs on day 1. Neurons from each cell type were pooled across mice. PV-INs showed significantly greater reliability to the CS than VIP-INs. Kolmogorov\u2013Smirnov test, p < 1 \u00d7 10\u22123. Mean reliability index of cells that are responsive to the CS for PV-INs (F) and VIP-INs (G). Each cell type is divided into High or Low Reliability Group based on the 50th percentile from the cumulative probability plots in (E). High Reliability PV-INs maintained their consistency, while the Low Reliability group became more consistent in their responses to CS. (G) VIP-INs did not show a change in either group after learning. Paired t-test, PV-IN High Reliability: p = 0.38, PV-IN Low Reliability: p = 0.044, VIP-IN High Reliability: p = 0.79, VIP-IN Low Reliability: p = 0.060. (H) CS responses from all tracked PV-INs in one example mouse on days 1 and 7. Left, cumulative distribution of CS response reliability among all tracked cells within the example mouse. Right, binary map of each cell\u2019s CS response (active or not) across all trials on days 1 and 7. Cells were sorted by their day 1 reliability shown on the left and the order is maintained on day 7. Cells with low response reliability to CS on day 1 became more reliable on day 7. (I) Cumulative probability plots of the change in reliability from days 1 to 7 ($\\Deltareliability_{CS}$) among PV-INs with Low Reliability group to CS on day 1. Bold red, $\\Deltareliability_{CS}$ of the population of PV-INs. Thin red lines show the $\\Deltareliability_{CS}$ distribution within individual PV-Cre mice. As a control, day 7 session was randomly sampled and a random reliability was calculated. $\\Deltareliability_{random}$ was calculated by subtracting day 1 CS reliability from the day 7 random reliability (gray, $\\Deltareliability_{random}$ from the same population of PV-INs). Kolmogorov\u2013Smirnov test, ***p < 1 \u00d7 10\u22123 PV-IN: n = 316 cells from six mice. VIP-IN: n = 407 cells from four mice. Error bars show standard error of the mean (SEM).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Mean time from the cue stimulus (CS) onset to Ca2+ event onset for all PV-IN CS responses. Each line represents an individual mouse. The mean event onset time did not change from days 1 to 7. Paired t-test, p = 0.058. (B) Mean time from the first lick in response to reward delivery to Ca2+ event onset for all VIP-IN reward responses. Each line represents an individual mouse. The mean event onset time did not change from days 1 to 7. Paired t-test, p = 0.53. (C) Overall proportion of PV-INs that responded to the CS on day 1 did not change on day 7. Light red indicates the proportion of day 7 CS-responsive cells that also responded to the CS on day 1. Each line represents an individual mouse. Paired t-test, p = 0.32. (D) PV-INs that responded to the CS on day 1, tracked to day 7. 97% of the cells that responded to CS on day 1 also responded to the CS on day 7. 3% of the cells that responded to the CS on day 1 became responsive to reward but not to the CS on day 7. Less than 1% responded to neither CS nor reward on day 7. (E) Overall proportion of VIP-INs that responded to the reward stimuli on day 1 did not change on day 7. Light blue indicates the proportion of day 7 reward-responsive cells that also responded to reward on day 1. Each line represents an individual mouse. Paired t-test, p = 0.32. (F) VIP-INs that responded to reward on day 1, tracked to day 7. 95% of the cells that responded to reward on day 1 also responded to reward on day 7. 4% of cells that responded to reward on day 1 became responsive to CS but not reward on day 7. Less than 1% responded to neither cue nor reward on day 7. PV-IN: n = 316 cells from six mice. VIP-IN: n = 407 cells from four mice. Error bars show standard error of the mean (SEM).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Trial structure for the no-reward control task. Gray shaded bar represents the response period analyzed for tone-responsive activity. (B) Mean percent of tone-responsive PV-INs from the no-reward task. Violin plots show null distribution of percentage of responsive neurons made by resampling mice and shuffling the session 1000 times (same as Figure 2). The circle represents the mean percentage of tone-responsive neurons. In the absence of reward, PV-INs did not show significant responses to tone. Bootstrap, day 1: p = 0.11, day 7: p = 0.11. (C) The mean percent of tone-responsive PV-INs during no-reward control do not change between days 1 and 7. Paired t-test, n.s., nonsignificant, p = 0.89. (D) Trial structure for the nonpaired control task. Tone was followed by a randomly varied 40- to 80-s period before reward delivery and then a randomly varied intertrial interval (ITI) between 15 and 25 s. First gray shaded bar shows the response period analyzed for tone-responsive activity (2.5 s from tone onset). Second shaded bar shows the response period analyzed for reward-responsive activity (2.5 s from onset of first lick after reward delivery). (E) Mean lick rate during the tone from the nonpaired task. Mice did not show increased anticipatory licking during the tone on day 7. One-way analysis of variance (ANOVA), p = 0.097. (F) Mean lick rate following the randomized water rewards from the nonpaired task. Mice increased lick rate to consume the reward. The lick response was greater on day 7. One-way ANOVA, p < 1 \u00d7 10\u22123. (G) Mean percent of tone-responsive PV-INs during the nonpaired task. Violin plots show null distribution of percentage of responsive neurons made by resampling mice and shuffling the session 1000 times. The circle represents the mean percentage of tone-responsive neurons. When tone was not paired with reward, PV-INs showed significant responses to tone on day 1 but not day 7. Bootstrap, Bonferroni correction for multiple comparisons, day 1 p = 0.003, day 7 p = 0.069. (H) The mean percent of tone-responsive PV-INs during the nonpaired task did not change between days 1 and 7. Paired t-test, n.s., nonsignificant, p = 0.43. (I) Mean reliability index of PV-INs that were responsive to the tone during the nonpaired task. Cells were divided into High or Low Reliability Group based on the 50th percentile of tone reliability. The reliability of neither High nor Low Reliability PV-INs changed from days 1 to 7. Paired t-test, n.s., nonsignificant, High: p = 0.86, Low: p = 0.19. (J) Mean percent of reward-responsive PV-INs during the nonpaired task. Violin plots show null distribution of percentage of responsive neurons made by re-sampling mice and shuffling the session 1000 times. The circle represents the mean percentage of reward-responsive neurons. PV-INs responded significantly to randomly timed rewards on days 1 and 7. Bootstrap, Bonferroni correction for multiple comparisons, day 1: p < 1 \u00d7 10\u22123,day 7: p < 1 \u00d7 10\u22123. (K) The mean percent of reward-responsive PV-INs during the nonpaired task did not change between days 1 and 7. Paired t-test, n.s., nonsignificant, p = 0.51. (L) Mean reliability index of PV-INs that were responsive to the reward. Cells were divided into High or Low Reliability Group based on the 50th percentile of reward reliability. The reliability of neither High nor Low Reliability PV-INs changed from days 1 to 7. Paired t-test, n.s., nonsignificant, High: p = 0.23, Low: p = 0.24. (M) Mean percent of reward-responsive VIP-INs during the nonpaired task. Violin plots show null distribution of percentage of responsive neurons made by resampling mice and shuffling the session 1000 times. The circle represents the mean percentage of reward-responsive neurons. VIP-INs responded significantly to randomly timed rewards on days 1 and 7. Bootstrap, day 1: p < 1 \u00d7 10\u22123, day 7: p < 1 \u00d7 10\u22123. (N) The mean percent of reward-responsive VIP-INs during the nonpaired control did not change between days 1 and 7. Paired t-test, n.s., nonsignificant, p = 0.57. (O) Mean reliability index of VIP-INs that were responsive to the reward. Cells were divided into High or Low Reliability Group based on the 50th percentile of reward reliability. The reliability of neither High nor Low Reliability PV-INs changed from days 1 to 7. Paired t-test, n.s., nonsignificant, High: p = 0.53, Low: p = 0.22. **p < 0.01, ***p < 0.001.No-water rewards: n = 357 PV-IN cells from three mice. Nonpaired rewards: n = 324 PV-IN cells from five mice; n = 208 VIP-IN cells from three mice. Error bars show standard error of the mean (SEM).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig5-v2.jpg)\n\n**Figure 5.:** (A) Trial structure. Gray shaded bar represents the response period analyzed for reward-responsive activity. (B) Z-Scored activity of all the active VIP-INs from an example mouse during one representative trial on days 1 and 7, sorted by timing of maximum activity following the cue stimulus (CS) onset. Gray bar represents the timing of the CS. White line indicates the onset of water reward delivery. Mean percent of cells that are responsive to the reward for PV-INs (C) and VIP-INs (D). Neither PV- or VIP-INs showed a significant change. Paired t-test, n.s., nonsignificant, PV-IN: p = 0.16 (C), VIP-IN: p = 0.16 (D). (E) Cumulative probability plots showing the percent of trials that each neuron responded to reward for PV-INs and VIP-INs on day 1. Neurons from each cell type were pooled across mice. VIP-INs showed a significantly greater response reliability to the reward than PV-INs. Kolmogorov\u2013Smirnov test, *p < 0.05, p = 5.2 \u00d7 10\u22123. Mean reliability index of cells that are responsive to the reward for PV-INs (F) and VIP-INs (G). Each cell type is divided into High or Low Reliability Group based on the 50th percentile from the cumulative probability plots in (E). High and Low Reliability PV-INs maintained their consistency. (G) High Reliability VIP-INs did not show a change, while Low Reliability VIP-INs significantly increased in reliability following associative learning. Paired t-test, PV-IN High Reliability: p = 0.36, PV-IN Low Reliability: p = 0.058, VIP-IN High Reliability: p = 0.090, VIP-IN Low Reliability: p = 0.045. (H) Reward-responses from all tracked VIP-INs in an example mouse on days 1 and 7. Left, cumulative distribution of reward response reliability among all tracked cells within the example mouse. Right, binary map of each cell\u2019s reward response (active or not) across all trials on days 1 and 7. Cells were sorted by their day 1 reliability shown on the left and the order is maintained on day 7. Cells with low response reliability to reward on day 1 became more reliable on day 7. (I) Cumulative probability plots of the change in reliability from days 1 to 7 ($\\Deltareliability_{reward}$) among VIP-INs with Low Reliability to reward on day 1. Bold blue, $\\Deltareliability_{reward}$ of the population. Thin blue lines show the $\\Deltareliability_{reward}$ distribution within individual VIP-Cre mice. As a control, day 7 session was randomly sampled and a random reliability was calculated. $\\Deltareliability_{random}$ was calculated by subtracting day 1 reward reliability from the day 7 random reliability (Gray, $\\Deltareliability_{random}$ from the same population of VIP-INs). Kolmogorov\u2013Smirnov test, ***p < 1 \u00d7 10\u22123. PV-IN: n = 316 cells from six mice. VIP-IN: n = 4 07 cells from four mice. Error bars show standard error of the mean (SEM).\n\nTo demonstrate that changes in PV-INs\u2019 representation of the CS resulted from associative learning, we conducted additional control experiments to examine their responses to tone when mice received no rewards or nonpaired randomly timed rewards. In the first experiment, water-restricted PV-Cre mice were exposed to the same auditory tone used as the CS (1-s duration) but all water rewards were omitted (randomly varied ITI between 60 and 120 s; ~30 trials/session; 1 session/day for 7 days). We imaged PV-IN activity on both days 1 and 7 and assessed their population responses following the tone onset (Figure 4\u2014figure supplement 2A). We first compared the mean percent of active cells during tone to a null distribution made by randomly sampling the session irrespective of the behavioral task (as in Figure 2). Surprisingly, PV-INs did not show significant tone-responsive cells compared to the chance level on either day 1 or 7 (Figure 4\u2014figure supplement 2B); hence, the average percent of tone-responsive PV-INs per trial also did not increase from days 1 to 7 (Figure 4\u2014figure supplement 2C). Next, in a separate cohort of mice, we exposed water-restricted PV-Cre mice to tone, followed by a \u2018nonpaired\u2019 water reward that was given at randomly varied time intervals (40\u201380 s). Mice were also trained for ~30 trials/session (1 session/day for 7 days) with a randomly varied ITI between 15 and 25 s (Figure 4\u2014figure supplement 2D). We found PV-INs were significantly responsive to the tone stimuli on day 1, similar to what we observed earlier in the CS\u2013reward task (Figure 2F). Interestingly, by day 7, PV-INs no longer responded to the tone stimulus (Figure 4\u2014figure supplement 2G). We next examined if mice that received the tone stimulus with nonpaired water reward learned to associate the two after 7 days. We found the animals did not learn the association, as their conditioned response (tone-evoked anticipatory licking) did not increase at day 7 (Figure 4\u2014figure supplement 2E, F). Unlike the mice that learned the association in the CS\u2013reward task, we did not observe a change in the mean percent of tone-responsive PV-INs from days 1 to 7 in the nonpaired paradigm, and the reliability of Low Reliability PV-INs to tone also did not change (Figure 4\u2014figure supplement 2H, I). Together, these results suggest that PV-INs in M1 do not respond to auditory tone in general, but instead only respond to the tone when the animal actively associates it with reward. Moreover, the changes among PV-INs to the CS tone from days 1 to 7 are specific to associative learning.\n\nWe next assessed reward responses among PV-INs and VIP-INs in the same manner but now looked for responses within 2.5 s of the reward delivery time (Figures 4B and 5A, B). We tracked the same neurons from days 1 to 7 and compared the mean percent of reward-responsive neurons. PV-INs and VIP-INs did not show a significant change in the percent of responsive cells per trial (PV-IN: day 1: 20.17% \u00b1 3.27%, day 7: 27.47% \u00b1 3.66%; VIP-IN: day 1: 18.65% \u00b1 5.91%, day 7: 26.3% \u00b1 6.04%; Figure 5C, D). When we examined the cumulative distribution of reliabilities for reward responses between the two cell types, VIP-INs as a population were significantly more reliable than PV-INs on day 1 (Figure 5E). By dividing the cells into High and Low Reliability groups, we found the High Reliability VIP-INs maintained their reliability (VIP-IN High Reliability: day 1: 38.79% \u00b1 2.71%, day 7: 35.88% \u00b1 4.32%), and the Low Reliability VIP-INs became significantly more reliable on day 7 (VIP-IN Low Reliability: day 1: 10.25% \u00b1 1.67%, day 7: 24.06% \u00b1 4.87%; Figure 5G, H). In contrast, both High and Low Reliability PV-INs maintained their reliability to reward (High Reliability: day 1: 35.59% \u00b1 2.81%, day 7: 41.94% \u00b1 5.7%; Low Reliability: day 1: 10.58% \u00b1 0.74%, day 7: 19.59% \u00b1 3.08%; Figure 5F). We also followed individual Low Reliability VIP-INs and calculated the change in reliability to reward ($\\Deltareliability_{reward}$) from days 1 to 7. As a control, we randomly sampled the day 7 session irrespective of the behavioral task and calculated a random $\\Deltareliability_{random}$ for each neuron as described above. When we compared the two distributions, the $\\Deltareliability_{reward}$ was significantly greater than the $\\Deltareliability_{random}$ , demonstrating that Low Reliability VIP-INs became more reliably responsive to reward (Figure 5I). We also examined if the onset of neuronal activity after reward consumption changed after associative learning, and if neurons that were previously responsive to reward became responsive to the CS only. We did not observe a change in the onset of neuronal activity following reward (Figure 4\u2014figure supplement 1B). Furthermore, 95% of the VIP-INs from day 1 still showed responsivity to reward on day 7 (Figure 4\u2014figure supplement 1E, F). Lastly, to demonstrate that changes in VIP-INs\u2019 representation of reward resulted from associative learning, we examined both PV-IN and VIP-IN responses to reward in mice that were exposed to the nonpaired behavioral paradigm (tone+ randomly timed water rewards; Figure 4\u2014figure supplement 2D\u2013F). Consistent to what we observed in the CS\u2013reward paradigm, both PV-INs and VIP-INs consistently showed higher mean percent of active cells during reward (2.5 s from the first lick after reward delivery) compared to the chance level on both days 1 and 7 (Figure 4\u2014figure supplement 2J\u2013M). However, because these mice did not learn the association between the auditory tone and randomly delivered water reward, we did not see an increase in the reliability of the Low Reliability VIP-INs from days 1 to 7 (Figure 4\u2014figure supplement 2O), or a change in the percent of responsive cells in either PV-INs or VIP-INs (Figure 4\u2014figure supplement 2K\u2013N). Altogether, we found that during associative learning, while the proportion of reward-responsive VIP-INs during a given trial did not change, a subset of VIP-INs that were largely unresponsive to reward on day 1 became more reliably responsive on day 7.\n\nAlthough PV-INs and VIP-INs were the only cell types that were significantly responsive to both CS and reward on both days 1 and 7, PNs and SOM-INs also had significant responses to specific stimuli on certain days. While PNs did not show significant CS responses when compared to baseline, their reward responses on day 1 were significantly above the null distribution, and they became significantly lower than the null distribution on day 7 (Figure 2E). This result is in line with the change in tuning coefficient ($\\Delta\u03c1_{reward}$), which showed a significant decrease in reward tuning between days 1 and 7 ($\u0394\u03c1\u00af_{reward}=-0.141 \\pm0.067$; Figure 6A). Moreover, the cumulative distribution function of PN reliability also shifted significantly to lower reliabilities on day 7 compared to day 1 (Figure 6B). These results indicate that PNs initially responded to novel reward; however, they habituated to the reward following associative learning.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig6-v2.jpg)\n\n**Figure 6.:** (A) Left, distribution of changes in PN Spearman correlation \u0394\u03c1 for reward. Each curve represents a Gaussian kernel density estimate of the distribution of \u0394\u03c1 in a single mouse. Right, mean change in Spearman correlation $\u0394\u03c1\u00af$ . Null distributions (gray) were estimated by resampling each mouse and shuffling trials 1000 times. Reward tuning among PNs decreased after associative learning, Monte-Carlo, ***p < 1 \u00d7 10\u22123. (B) Cumulative probability plots showing the percent of trials that each neuron responded to reward for PNs on days 1 and 7. Neurons were pooled across mice. Day 7 reliability was significantly lower than day 1. Kolmogorov\u2013Smirnov test, ***p < 1 \u00d7 10\u22123. (C) Left, distribution of changes in SOM-IN Spearman correlation \u0394\u03c1 with cue stimulus (CS). Each curve represents a Gaussian kernel density estimate of the distribution of \u0394\u03c1 in a single mouse. Right, mean change in Spearman correlation $\u0394\u03c1\u00af$ . SOM-INs did not show a change in tone tuning. Monte-Carlo, n.s., nonsignificant, p = 0.128. (D) Cumulative probability plots showing the percent of trials that each neuron responded to the CS for SOM-INs on days 1 and 7. Neurons were pooled across mice. Day 7 reliability was significantly greater than day 1. Kolmogorov\u2013Smirnov test, p < 1 \u00d7 10\u22123. (E) Left, distribution of changes in SOM-IN Spearman correlation \u0394\u03c1 with reward. Each curve represents a Gaussian kernel density estimate of the distribution of \u0394\u03c1 in a single mouse. Right, mean change in Spearman correlation $\u0394\u03c1\u00af$ . SOM-INs did not show a change in reward tuning. Monte-Carlo, n.s., nonsignificant, p = 0.598. (F) Cumulative probability plots showing the percent of trials that each neuron responded to the reward for SOM-INs on days 1 and 7. Neurons were pooled across mice. Day 7 reliability was significantly greater than day 1. Kolmogorov\u2013Smirnov test, **p = 0.012.PN: n = 1029 cells from six mice. SOM-INs: n = 189 cells from seven mice.\n\nSOM-INs initially had no response to the CS on day 1, but their responses became significant on day 7 (Figure 2H). The change in CS tuning coefficient ($\\Delta\u03c1_{tone}$) was not significant ($\\Delta\u03c1_{tone}=.059 \\pm 0.031$, Figure 6C), suggesting their responsivity did not change with learning. Interestingly, when we assessed the cumulative distribution of CS response reliability on days 1 and 7, the cumulative distribution function shifted to significantly higher reliability values on day 7 (Figure 6C, D). Notably, by day 7, there was a visible reduction in the number of SOM-INs that had 0% reliability to CS on day 1, indicating they were completely unresponsive to the CS on day 1 but not on day 7. Finally, SOM-INs showed modest but significant responses to reward on days 1 and 7 (Figure 2H). When we assessed the reward tuning among the SOM-IN population, $\\Delta\u03c1_{reward}$ did not show a significant change between days 1 and 7 ($\\Delta\u03c1_{reward}= .$ 0.017 \u00b1 0.040, Figure 6E). However, SOM-IN reliabilities also shifted to higher values on day 7 (Figure 6F). Altogether, these results suggest that in naive mice, SOM-INs were unresponsive to the CS and modestly responsive to the novel reward; however, following associative learning, SOM-INs became more reliably responsive to both the CS and reward.\n\nLastly, reward consumption requires innate tongue movements during licking, and since microstimulation of M1 in mice has been shown to evoke tongue and jaw movements (Komiyama et al., 2010), it is crucial to distinguish whether the observed CS and reward responses resulted from task-related stimuli or if the activity is simply associated with licking movements. We demonstrated earlier that head-fixed mice learned the CS\u2013reward association by displaying the conditioned response (anticipatory licking) following the CS on day 7 (Figure 1). To address this potential confound, we identified all the self-initiated licking bouts during ITIs, when no reward was present (Figure 7A\u2013C; Figure 2\u2014figure supplement 1). We first assessed all the significantly active cells in each cell type (identified in Figure 2D) during the first lick bout of each ITI on days 1 and 7. We observed that in each cell type, the majority of the neurons were nonlick neurons on both days 1 and 7 (Figure 7\u2014figure supplement 1A). We then tracked individual lick and nonlick neurons and examined if they shifted their responses after associative learning. We found that most of the neurons maintained the same responses, and nonlick neurons were still the majority in all cell types (Figure 7\u2014figure supplement 1B). Next, we examined whether the lick neurons also showed mixed responses to CS, reward, or CS+ reward. Indeed, lick neurons exhibited mixed responses to CS, reward, or CS+ reward (Figure 7\u2014figure supplement 1C). We then further divided them into three categories \u2013 \u2018CS cells\u2019, \u2018reward cells\u2019, and \u2018CS+ reward cells\u2019 and compared the percentage of neurons in each category between days 1 and 7; we did not observe a significant difference (Figure 7\u2014figure supplement 1D). Lastly, at the population level, we examined the response reliability index of all the active neurons during all ITI lick bouts and compared them to the response reliability index for the CS and reward. On both day 1 (when there was minimal anticipatory licking during the CS) and day 7 (when mice showed anticipatory licking), all cell types exhibited lower reliability index values for the ITI lick bouts compared to the CS and reward, indicating that the increase in task-related responses following water rewards was specific to the reward stimulus, and not licking movements (Figure 7D\u2013J). Together, these results suggest that the cell-type-specific modifications observed between days 1 and 7 were not caused by licking movements.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig7-v2.jpg)\n\n**Figure 7.:** (A) Schematic of the cued reward conditioning task (top) and the trial structure (bottom). (B) Example licking behavior during the intertrial intervals (ITIs) from one mouse on day 1. Purple shading shows licks that were considered to be an individual lick bout. Gray shaded bar shows the cue stimulus (CS) timing and the red dotted line shows the reward timing. (C) Z-Scored activity of all the active pyramidal neurons (PNs) from an example mouse during one representative ITI lick bout. Left: maximum activity aligned to the lick bout onset. Right: maximum activity aligned to the CS onset. Gray bar represents the timing of the CS. White line indicates the time of water reward delivery. (D\u2013F) Mean reliability index for all cell types with significant CS-related responses during ITI lick bouts with no water reward present, compared to the mean reliability index during the CS and up to but not including the reward delivery time. As shown in Figure 1, mice display anticipatory licking during the CS on day 7, but not day 1. PV-INs, VIP-INs, and SOM-INs were more reliably responsive during the CS than during licking movement alone. Only sessions/cell types with significant CS-related responses were analyzed. Paired t-test, *p < 0.05, ***p < 0.001. PV-INs day 1: p < 1 \u00d7 10\u22123, PV-IN day 7: p = 6.6 \u00d7 10\u22123 (D), VIP-IN day 1: p = 0.0355, VIP-IN day 7: p < 1 \u00d7 10\u22123 (E), SOM-IN day 7: p = 3.9 \u00d7 10\u22123 (F). (G\u2013I) Mean reliability index for all cell types with significant reward-related responses during ITI lick bouts with no water reward present, compared to the mean reliability index following reward timing. All cell types were more reliably responsive during the reward period than during licking movement alone. Only sessions/cell types with significant reward-related responses were analyzed. Paired t-test, PV-INs day 1: p = 1.6 \u00d7 10\u22123, PV-IN day 7: p = 1.6 \u00d7 10\u22123 (G), VIP-IN day 1: p = 0.049, VIP-IN day 7: p = 0.014 (H), PN day 1 p < 1 \u00d7 10\u22123 (I), SOM-IN day 7: p = 0.030 (J).PN: n = 1029 cells from six mice. PV-IN: n = 316 cells from six mice. VIP-IN: n = 407 cells from four mice. SOM-IN: n = 189 cells from seven mice. Error bars show standard error of the mean (SEM).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72549/elife-72549-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The fraction of lick cells (in black) among all active cells tracked from days 1 to 7 for each cell type. Percentages indicate the percentage of cells that were nonlick cells. For all cell types, the majority of cells were nonlick cells. (B) Contingency table showing lick selectivity among all tracked active cells on days 1 and 7. Individual cells were tracked across days to determine if licking-related activity changed across days. For all cell types, most cells were nonlick cells on days 1 and 7. (C) Proportion of mixed selectivity for cue stimulus (CS) and reward among lick cells for all cell types on days 1 and 7. (D) Percentage of lick cells with significant CS but not reward selectivity for all cell types. Each line represents an individual mouse. (E) Percentage of lick cells with significant reward but not CS selectivity for all cell types. Each line represents an individual mouse. (F) Percentage of lick cells with significant CS and reward selectivity for all cell types. Each line represents an individual mouse.PN: n = 1029 cells from six mice. PV-IN: n = 316 cells from six mice. VIP-IN: n = 407 cells from four mice SOM-IN: n = 189 cells from seven mice. Error bars show standard error of the mean (SEM).\n\n## Discussion\n\nM1 is known to be involved in motor initiation, movement kinematics, and motor learning. Recent studies have demonstrated reward-related activity in M1 using in vivo electrophysiological recordings in nonhuman primates (Marsh et al., 2015; Ramakrishnan et al., 2017; Ramkumar et al., 2016) and transcranial magnetic stimulation in human subjects (Thabit et al., 2011). However, whether CS- and reward-associated signals are represented among different neuronal cell types within the microcircuit in M1 is still unclear. Using chronic two-photon Ca2+ imaging, combined with transgenic mouse lines and viral strategies to target different neuronal cell types, we demonstrated that during a conditioning task, all major cell types in M1 responded to either the CS, the reward, or both. Most notably, each cell type underwent distinct modifications after association learning. By tracking the same population of neurons, we revealed that the CS-responding population increased among PV-INs and individual cells responded more reliably to the CS following associative learning. On the contrary, VIP-INs became more reliable in response to reward. When mice underwent control behavioral paradigms where tone was not paired with reward and no associative learning occurred, PV-INs and VIP-INs did not undergo these changes. Additionally, PNs had a drastically reduced response to reward, while SOM-INs became more reliable to both the CS and the reward. Our findings suggest that each cell type has a distinct role in processing information related to the cue\u2013reward association in M1, and they may work together to provide the reinforcement signals in M1 that are important for motor skill learning.\n\nPrevious studies in trained rhesus monkeys performing a joystick center-out task have shown a widespread representation of reward anticipation and reward-related activity among cortical neurons in M1 (Ramakrishnan et al., 2017). Consistent with earlier work, we also observed reward-related activity in all four major cell types in M1, even in naive mice on day 1 when they were first exposed to the CS and reward. It has been reported that in sensory cortices, repeated passive exposure to a sensory stimulus leads to a long-lasting reduction in PN responsivity, but when animals are engaged in learning, PNs maintain their responsivity to the repeated stimulus (Kato et al., 2015; Makino and Komiyama, 2015). However, we found in M1, when water-restricted mice were engaged in a conditioning task to learn the association between the CS and water reward, PNs still showed a drastic habituation to the reward stimulus. A recent study that imaged neuronal activity in expert mice performing a head-fixed pellet reaching task demonstrated that L2/3 PNs in M1 are involved in encoding movement outcome (success vs. failure) but not the appetitive outcome (reward vs. no reward). However, the authors did not image the mice at the naive stage (Levy et al., 2020). Hence, one possibility is that L2/3 PNs in M1 encode reward signals during the naive stage, but after associative learning, they habituate and become unresponsive to the reward stimulus. In addition, in the sensory cortices, the flexibility to either respond to or ignore sensory stimuli is based on the stimulus\u2019 behavioral relevance and is gated by local SOM-INs (Kato et al., 2015; Makino and Komiyama, 2015; Poort et al., 2021). In line with these findings, we found that SOM-INs became more reliably responsive to both the CS and the reward with associative learning. We also observed stimulus-specific increases in the reliability of PV-INs\u2019 response to the CS and VIP-INs\u2019 response to the reward after associative learning, and these changes to tone and reward were not observed in the absence of associative learning. When mice were exposed to tone alone, PV-INs did not show significant responses to tone on either day 1 or 7, while mice exposed to a nonpaired tone and reward task showed significant responses to tone on day 1, but not on day 7. This suggests that in M1, PV-INs only respond to behaviorally relevant cues such as those that predict reward. Finally, while VIP-INs remained responsive to reward in the nonpaired paradigm, VIP-INs did not show changes in reliability in the absence of associative learning. Together, our results suggest that different IN subtypes may have distinct roles in processing CS- and reward-related information in M1 during motivated associative learning.\n\nOne hypothesis is that PV-INs are recruited by the CS to control the behavioral responses (anticipatory licking) during reward anticipation since PV-INs are known to regulate PN firing through both feedforward and feedback inhibition (Fishell and Rudy, 2011; Xu and Callaway, 2009; Xue et al., 2014). Similar observations have been reported in the striatum, in which optogenetic activation or suppression of PV-INs during a similar conditioning task impaired anticipatory licking, demonstrating the importance of PV-INs in the expression of conditioned responses (Lee et al., 2017). Likewise, PV-INs in the basolateral amygdala, are also recruited during the CS and subsequently inhibited during the US in an auditory fear conditioning task. Optogenetic activation of PV-INs during the CS increased conditioned freezing behavior while PV-IN suppression reduced freezing, indicating bidirectional control of the conditioned response (Wolff et al., 2014). Our results demonstrate that in a naive animal, a subset of PV-INs in M1 are responsive to the CS only when rewards are present, and more PV-INs are recruited by the CS if the animal learns that the CS predicts reward. This suggests that in M1, PV-IN responses to the CS are not purely sensory, but rather, they may play an important role in controlling the behavioral responses to the CS.\n\nVIP-INs, on the other hand, were significantly less reliable in responding to the CS compared to PV-INs, and their responses to the CS remained low. However, VIP-INs\u2019 responses to the reward were more reliable than those of PV-INs, and they became more closely tuned and reliably responsive to the reward with learning. Due to the disinhibitory position of VIP-INs in the microcircuit, activation of VIP-INs can lead to widespread increases in local excitability and contribute to regulating cortical gain (Fu et al., 2014; Jackson et al., 2016; Pfeffer et al., 2013). Furthermore, a growing body of evidence suggests a general principle across brain regions, in which VIP-INs receive long-range inputs (Duan et al., 2020; Krabbe et al., 2019; Turi et al., 2019; Zhang et al., 2014; Gasselin et al., 2021), respond to reinforcement signals (Krabbe et al., 2019; Pi et al., 2013), and play an important role in goal-oriented learning (Krabbe et al., 2019; Turi et al., 2019). Taken together, our results suggest that during CS\u2013reward conditioning, PV-INs in M1 encode the CS association, and may regulate local circuit activity related to reward anticipation, whereas VIP-INs act as a context-dependent switch following the reward delivery (Mu\u00f1oz et al., 2017; Turi et al., 2019) to instruct and disinhibit local PNs to enable learning-induced plastic changes critical for the acquisition of new movements. An interesting point to note is that since PV-INs are only responsive to tone when it is paired with reward, and neither PV-INs nor VIP-INs undergo plastic changes in the absence of associative learning, M1 is unlikely to be a primary site for learning reward predictions. We hypothesize that other brain regions are responsible for learning relevant CS\u2013reward associations while filtering out behaviorally irrelevant stimuli, and these regions subsequently send long-range inputs to M1 to instruct motor responses to the CS and the reward. In summary, this study provides insight on how different IN subtypes in M1 integrate incoming inputs from various brain regions and orchestrate local circuit plasticity. Future work will be important to identify the origin of these putative long-range inputs to different cell types in M1.\n\n## Materials and methods\n\n### Mice\n\nExperimental mice were group housed in plastic cages with food and water ad libitum in a room with a reversed light cycle (12\u201312 hr). PV-Cre (008069), SOM-Cre (013044), VIP-Cre (010908), and B6129SF1/J (101043) mouse lines were acquired from Jackson Laboratory (Bar Harbor, ME, USA). All mouse lines were homozygous and in C57BL/6 \u00d7 129S4 background. For all mouse lines, both male and females were used. Mice were between P40 and P60 at the time of surgery.\n\n### Surgery\n\nMice were deeply anesthetized under 1\u20132% isoflurane and given subcutaneous injections of Baytril (10 mg/kg) to prevent infection and buprenorphine (0.05 mg/kg) for analgesia. An incision was performed to remove a piece of the scalp and a custom head-plate was implanted onto the skull using instant glue (Krazy Glue) and dental cement (Lang Dental, Wheeling, IL, USA). A craniotomy of approximately 2 mm in diameter was performed over the right primary motor cortex. Virus (PNs: AAV1.CaMKII.GCaMP6f.WPRE.SV40; PV-IN, VIP-IN, and SOM-IN: AAV1.Syn.Flex.GCaMP6f.WPRE.5v40) was diluted 1:5 in saline and injected at a depth of ~250 \u00b5m from the pia using a glass pipette. All virus was obtained from Addgene (Watertown, MA, USA). Injections were performed at five sites, centered on coordinates 1.5 mm lateral and 0.3 mm anterior to bregma. For PN groups, 20 nl per site was injected. For PV-IN, VIP-IN, and SOM-IN, 40 nl per site was injected. All injections were performed at a rate of 10 nl/min and the pipette was left in place for 4 min following the injection to avoid backflow. A glass imaging window was then implanted over the craniotomy and sealed with dental cement. Following surgery, a subcutaneous injection of dexamethasone (2 mg/kg) and buprenorphine (0.1 mg/kg) was given. Mice were given a minimum of 1 week to recover prior to beginning water restriction.\n\n### Auditory cued reward conditioning behavior\n\nMice were gradually water restricted down to ~1 ml/day and were maintained at ~80% of original body weight over 2 weeks prior to the start of imaging/behavior sessions (Chen et al., 2015; Harvey et al., 2012; Komiyama et al., 2010; O\u2019Connor et al., 2013; Peters et al., 2014). Mice were then head-fixed for simultaneous two-photon imaging and exposed to the conditioned stimulus (a constant 9 kHz auditory tone, 1 s in duration) followed by a 1.5-s delay period and a water reward (~10 \u00b5l). All lick times were measured by an infrared beam lick-o-meter and logged using the data acquisition software WaveSurfer (https://wavesurfer.janelia.org/). The ITI between the previous water reward and subsequent CS onset was randomly varied between 60 and 120 s. Each session was 1 hr in duration with 30\u201335 trials in total. Mice underwent 1 session/day for seven consecutive days. Two-photon calcium image was performed simultaneously on days 1 and 7 of the behavioral task.\n\nTo assess licking behavior, lick rate (number of licks per second, measured as infrared beam breaks) was calculated within 500-ms bins, then averaged across all trials within a session for each mouse. Lick rate was then averaged across mice. Mean anticipatory lick rate was calculated as the mean lick rate from the time of the CS onset to the end of the delay period (2.5 s in duration), not including the reward delivery. Mean ITI lick rate was calculated from the lick rate during the first 2.5 s of self-initiated spontaneous lick bouts. ITI lick bouts were defined as licking events that followed the previous trial by at least 20 s and preceded the subsequent trial by more than 2.5 s. Mean reward lick rate was calculated from the lick rate from the time of reward delivery to 2.5 s after.\n\nAll trials within a session were included in lick rate analysis in Figure 1. To ensure behavioral consistency across trials, only trials with at least three lick responses within 2.5 s of the reward delivery time were included in all analysis of neural responses.\n\nIn the control experiments with water rewards omitted, mice were head-fixed and exposed to a constant 9 kHz auditory tone, 1 s in duration, followed by a randomly varied ITI between 15 and 25 s. In the nonpaired control experiments, mice were exposed to a constant 9 kHz auditory tone, followed by a randomly varied delay period between 40 and 80 s before delivery of a water reward (Krabbe et al., 2019). Water rewards were then followed by a 15- to 25-s ITI. In both tasks, each session was 45 min in duration with an average of 30 trials. Mice underwent 1 session/day for seven consecutive days.\n\n### Calcium imaging and analysis\n\nIn vivo imaging was performed using a commercial two-photon microscope (B-scope, Thorlabs, Newton, NJ, USA) and a \u00d716 water immersion objective (Nikon) with excitation at 925 nm (InSight X3, Spectra-Physics, Milpitas, CA, USA) with a frame rate of 30 Hz. Images were taken at 512 \u00d7 512 pixels covering 755 by 650 \u00b5m.\n\nImages were corrected for movement in the x and y plane using full-frame cross-correlation image alignment (Turboreg Th\u00e9venaz et al., 1998 plug-in ImageJ). The entire session was visually inspected and regions of interests (ROIs) were manually drawn on neurons using a custom MATLAB program, described in Peters et al., 2014. The ROI template from day 1 was loaded onto day 7 and aligned along the x and y plane. Only ROIs that could be tracked from days 1 to 7 were included in the dataset unless otherwise specified.\n\nFluorescence within an ROI was averaged across pixels. \u0394F was calculated by subtracting a time-varying baseline fluorescence estimate (F0) from the raw fluorescence trace. The calculation for baseline fluorescence (F0) was calculated iteratively and based on inactive parts of the fluorescence trace as previously described (Chu et al., 2016; Kato et al., 2012; Peters et al., 2014; Peters et al., 2017).\n\nWe adapted a method by Driscoll et al., 2017 to identify significant activity events for each neuron and then excluded ROIs with no significant activity events within the session, irrespective of the behavior. For each neuron the \u0394F trace was circularly shifted by a random integer 1000 times and compared to the original trace. If the original \u0394F trace was greater than the shifted data for at least five consecutive frames in at least 950 iterations, this was considered an active event. If a neuron did not have at least one active event in the entire session, irrespective of the behavior, it was removed from the dataset. This only accounted for a small proportion of ROIs as most of them are active on both days 1 and 7, as shown in Figure 2D.\n\nFor all subsequent analyses, a modified Z-score, adapted from Kato et al., 2015, was applied to \u0394F. The Z-score was calculated as Z = (f(t) \u2212 \u00b5)/\u03c3, where f(t) is the \u0394F trace for a neuron, \u00b5 is the mean, and \u03c3 is the standard deviation of the neuron\u2019s \u0394F during the baseline period. The baseline period was a concatenation of 2.5 s preceding the CS onset (start of a trial) for all trials within a session.\n\n### Calculation of tuning coefficients\n\nWe quantified the tuning of individual neurons to the CS and reward stimuli delivered in our classical conditioning task using the nonparametric Spearman correlation \u03c1 (scipy.stats.spearmanr) between the trial-averaged fluorescence and the timing of stimulus delivery\n\n$$\n\u03c1_{m,n,s}^{(d)}=corr\\frac{1}{|T_{m}^{(d)}|}\\sumt\\inT_{m}^{(d)}f_{m,n,t-T_{baseline}:t+T_{CS}+T_{delay}+T_{reward}+T_{post}}^{(d)},1_{s},\n$$\n\nwhere t is the start time of a trial (defined as the start of the CS), $T_{m}^{(d)}$ is the set of all trial start times from mouse m on day $d\\in{1,7}$, $f_{m,n,t-T_{baseline}:t+T_{CS}+\u22ef}^{(d)}$ is the fluorescence trace of neuron $n$ from mouse m during a single trial, $1_{s}$ is an indicator function for stimulus $s\\in{CS,reward}$, $|T_{m}^{(d)}|$ is the number of trials, and \u03c1 is the Spearman correlation coefficient. Analysis was carried out with $T_{baseline}=$ 2 s and $T_{post}=$ 6 s. We considered the \u2018CS\u2019 period indicated by $1_{CS}$ to range from the start of the CS at time t to the start of reward delivery at time $t+T_{CS}+T_{delay}$ , and the \u2018reward\u2019 period indicated by $1_{reward}$ to be the first 2.5 s of reward delivery (see schematic in Figures 4A and 5A). We used the change in \u03c1 from days 1 to 7 as a cell-resolved measure of changes in tuning over the course of learning.\n\nTo summarize learning-associated changes in tuning, we calculated the mean change in the Spearman correlation for each cell type and trial component (CS or reward) from days 1 to 7 as follows\n\n$$\n\u0394\u03c1\u00af_{s}=\\frac{1}{|M|}\\summ\\inM\\frac{1}{N_{m}}\\sumn=1N_{m}\u03c1_{m,n,s}^{(7)}-\u03c1_{m,n,s}^{(1)},\n$$\n\nwhere $M$ is the set of mice used in the experiment, $N_{m}$ is the number of neurons in mouse m, and $\u03c1_{m,n,s}^{(d)}$ is the Spearman correlation as defined above.\n\nWe used a nonparametric approach for statistical tests involving the mean change in Spearman correlation by scrambling trial times and bootstrapping mice to construct a null distribution for $\u0394\u03c1\u00af_{s}$ . Specifically, we first drew a random sample of $|M|$ mice from $M$ with replacement, then drew a random sample of $|T_{m}^{(d)}|$ trial start times uniformly distributed between 0 and $T_{session}^{(d)}-(T_{baseline}+T_{CS}+T_{delay}+T_{reward}+T_{post})$ for each day d and randomly selected mouse, and finally used these randomly selected mice and scrambled trial start times to compute the change in tuning $\u0394\u03c1\u00af_{s}$ . This process was repeated 1000 times to approximate the distribution of $\u0394\u03c1\u00af_{s}$ under the null hypothesis that changes in tuning are unrelated to the CS and reward delivery. We considered the observed changes in tuning $\u0394\u03c1\u00af_{s}$ to be statistically significant at the $*$ or $**$ level if they fell into the 5 or 1% tails of this distribution, respectively.\n\n### Activity analysis\n\nTo identify neuron responses to the CS and reward, we applied a set threshold to each neuron. Neurons were defined as CS or reward responsive on a trial-by-trial basis if they exceeded 1 Z-score (excitation threshold used in Kato et al., 2015) for at least five consecutive frames within 2.5 s of the CS onset or 2.5 s of the reward delivery time, respectively. This was assessed for each trial with at least three lick responses within 2.5 s of the reward delivery time. We then took the median of the percent of responsive neurons across all trials in a session from one mouse, and the mean across mice. In the nonpaired experiments, since the reward was not preceded by a CS, the mice required variable amounts of time to notice the water reward. Therefore, in the nonpaired experiments, we calculated reward responses within 2.5 s from the onset of the first lick following the water delivery. In the case that no licks were recorded before the subsequent tone, the trial was not included in the reward analysis.\n\nWe used a Monte-Carlo approach to validate the percent of CS- and reward-responsive neurons. The mean percentage of CS- and reward-responsive neurons observed were compared to a null distribution made for each cell type on each day. We randomly sampled mice with replacement, then sampled the entire session, and then calculated the percentage of active cells (exceeding 1 Z-score for at least five consecutive frames) during a randomly chosen 2.5-s window. For each mouse, the number of samples was equal to the number of included trials (i.e., number of trials with at least three lick responses within 2.5 s of reward delivery). We then took the median across the random samples and then took the mean across mice to obtain a mean percentage of responsive neurons during a randomly chosen time window. This was repeated 1000 times to generate a null distribution of mean percentage of active neurons. To assess whether the observed percentage of CS- and reward-responsive neurons was significantly different from the null distribution, the observed value was compared to the tails of the null distribution. This was done for each cell type on both days 1 and 7. We considered the CS or reward responses to be statistically significant at the $*$ or $**$ level if they fell into the 5 or 1% tails of this distribution, respectively, and *** if there was no overlap with the distribution. Since this approach tests the null hypothesis that the observed neuronal responses are due to chance (in this case, baseline activity/noise), only cell types with a significantly higher percentage of responsive neurons for a given session were analyzed further.\n\nThe CS/reward reliability index was defined as the percentage of trials within a session where the neuron was CS/reward responsive. The reliability cumulative distribution was made by pooling the day 1 index values of all the neurons from a neuronal cell type (across mice). If a neuron\u2019s day 1 index value was lower or equal to the index value at the 50th percentile of the cumulative distribution (excluding nonresponsive neurons with a reliability of 0) for that cell type, it was categorized into the Low Reliability group. If a neuron\u2019s day 1 index value exceeded the 50th percentile value, it was categorized into the High Reliability group. To assess changes in reliability at the population level, we took the mean reliability within each group on days 1 and 7. To assess changes in reliability among individual Low Reliability neurons, we used a $\\Deltareliability$ measure where, $\\Deltareliability_{CS}=(CS reliability_{Day 7}-CS reliability_{Day 1})$ and $\\Deltareliability_{reward}= (reward reliability_{Day 7}-reward reliability_{Day 1})$. As a control, we randomly sampled the day 7 session matching the number of trials, and calculated the reliability to obtain a \u2018random reliability\u2019 for each neuron. We then calculated a $\\Deltareliability_{random}$ where, $\\Deltareliability_{Random}=(reliability_{random}-reliability_{Day 1})$ for CS and reward reliabilities.\n\nThe onset time of neuronal activity following the CS was calculated as the time from the CS onset to the time of the first Ca2+ event (fifth frame above threshold) within the CS response period. For the onset time of reward-related neuronal activity, the time from the first lick (after reward delivery) to the time of the first Ca2+ event (fifth frame above threshold) within the reward response period was used. The latency for each cell was first calculated by taking the mean across all active trials for a single cell, then the median of all cells within a mouse was calculated. Only cells that were tracked between days were included.\n\nTo determine the proportion of PV-INs that responded to the CS on days 1 and 7, we found the overall proportion of cells that responded to the CS out of total active cells on both days 1 and 7. To calculate the percentage of PV-INs that maintained CS responses across days, we found the proportion of day 7 cells that also had CS responses on day 1. We also found the proportion of day 1 cells with CS responses, that either maintained CS responses on day 7, became CS unresponsive but reward responsive, or became unresponsive to both CS and reward. The same analysis was performed on VIP-IN reward responses. Only active cells that were tracked from days 1 to 7 were included.\n\n### Licking-related analysis\n\nITI lick bouts were defined as self-initiated licking events that occurred at least 20 s after the preceding reward delivery time (trial end) and more than 2.5 s prior to the subsequent CS onset (trial start). If individual licks were separated by 3 s or more, they were considered to be a new lick bout. To remain consistent with CS and reward analyses, only the first 2.5 s of a lick bout were analyzed for neural responses. ITI lick bout reliability indices were calculated as described above.\n\nTo determine lick cells, we found the first ITI lick bout in each ITI and calculated the mean Z-scored \u0394F during the first 2.5 s of the lick bout. We then created a matrix of concatenated ITIs from the same session and randomly sampled the concatenated ITIs, and calculated the mean Z-scored \u0394F, matching the duration and number of ITI lick bouts. A paired t-test was used to compare the mean Z-scored \u0394F during ITI lick bouts and during the random samples. Cells with significantly higher \u0394F during lick bouts were considered to be lick cells. We performed this analysis on days 1 and 7 and tracked individual neurons to identify changes in selectivity on a cell-by-cell basis. To determine if cells have mixed selectivity, we performed the same analysis using the CS and reward response periods (2.5 s from onset) and compared this activity to an equal number of random samples using a paired t-test.\n\n### Statistical analysis\n\nStatistical analysis for tuning coefficients was performed in Python and in R. All other statistical analyses were performed in Matlab using the Statistics and Machine Learning Toolbox. Two-way analysis of variance (ANOVA) was used to test for differences in anticipatory lick rate on days 1 and 7. One-way ANOVA was used to test for differences in lick rate during ITI, CS, and reward. One-way ANOVA was used to compare the percent of active cells across cell types on a single day. Monte-Carlo (as described above) was used to test for significant percent of CS- and reward-responsive neurons, and for changes in tuning properties. Paired t-test was used to test for differences in the percentage of responsive cells and reliability index on days 1 and 7, and for differences in neuron reliability between ITI lick bouts, CS, and reward. Paired t-test was used to determine mixed selectivity as described above. The Kolmogorov\u2013Smirnov test was used to compare response reliability cumulative distributions and \u2206reliability distributions. All values were reported as the mean and standard error of the mean unless otherwise specified. Power analysis was not performed to predetermine the sample size, and the experiments were not blinded.\n\n### Data analysis and code availability\n\nTuning coefficient calculation and statistical tests were performed using Python 3.8 with the following libraries: NumPy, Pandas, h5py, and SQLAlchemy. Figures were prepared in Python using matplotlib and seaborn, and in R using ggplot2. Codes to reproduce the analysis for Figures 1, 2,, 4\u20147 are available at https://github.com/clee162/Analysis-of-Cell-type-Specific-Responses-to-Associative-Learning-in-M1 (Lee, 2022; copy archived at swh:1:rev:824cf3c2d3c4345b174227656b15d66cb84ede31). Codes to reproduce the analysis and Figure 3 are available at https://github.com/nauralcodinglab/interneuron-reward (Harkin, 2022; copy archived at swh:1:rev:3c30ebc43f5032c1ccbc09704e3d0bc295eaa778). Data can be found on Dryad at https://doi.org/10.5061/dryad.q573n5tjj.\n",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "23c0e580-f853-4b60-b083-68295bdce08d",
+      "submission_id": "29b1effa-8675-4ddb-a9ba-17f7c3abede5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jun Ding, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72549.sa0](https://doi.org/10.7554/eLife.72549.sa0)\n\nUsing advanced live brain imaging techniques, the authors studied the activities of neurons in the primary motor cortex of mice during a classical conditional task, in which a tone is paired with a water reward. They found that distinct types of neurons respond differently to the auditory cue or the reward, and the responses evolve differentially as learning proceeds. This work reveals an interesting role of the motor cortex beyond its well-recognized function in motor control and suggests distinct functions of pyramidal neurons as well as various interneurons in reinforcement learning.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jun Ding, https://ror.org/00f54p054 Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72549.sa1](https://doi.org/10.7554/eLife.72549.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cell-Type Specific Responses to Associative Learning in the Primary Motor Cortex\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Frank as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jerry L Chen (Reviewer #1); Hyung-Bae Kwon (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nReviewers think that additional control experiments are needed for the revision. In addition, additional data analysis and clarification are needed to strengthen the paper. The following are essential revisions:\n\n1. To address the question of whether changes are specifically associated with learning, a critical control experiment is missing. The behavioral study lacks a non-paired control \u2013 it would be more compelling if there was a CS of the same modality that was not paired with the US so we can be sure that the effects are not cue-specific but specific to conditioning. Then those cues would need to be counterbalanced across animals. This would be important for us to conclude the neural effects reflect associative learning vs some other impact of the cue over time.\n\n2. Please examine the motor-related activity in the data set and address the following questions raised by Reviewer #1 and Reviewer #2, (a) As a control, can you quantify the number of licking-related neurons across cell types and confirm that they do not change with learning? (b) Are there neurons that show mixed responses to cue and licking? Do those responses change at all during learning? (c) Are there neurons show mixed responses to licking and reward? Do those responses change at all during learning?\n\n3. The 2.5s period chosen for analysis covers both tone presentation and delay. Will the conclusions in Figure 2E-H change if the analysis is restricted to the 1s of tone presentation? In addition, it seems better to use the actual duration of reward presentation (see Q2) for analysis. As the statistical analysis is done by random shuffling, there seems no need to match the period for tone and reward analyses.\n\n4. In Activity Analysis and Tuning Coefficients Calculation, the authors performed a resampling of mice with replacement, and the size of the random sample equals that of the original set of mice. Please clarify why this is done this way. Can the authors simply take all mice into analysis?\n\n5. Both Reviewer #2 and Reviewer #3 pointed out the importance of plotting calcium signals over days without resorting. The authors conclude that \"PV-INs that began as highly reliable maintained their reliability to the CS, \u2026, while PV-INs that began as low reliability became significantly more reliable.\" However, Figure 4F only shows how the percentage of neurons in the high- or low-reliability category changes overtraining. To draw this conclusion, the authors need to track individual neurons and compare the same neuron's reliability on d1 and d7.\n\nReviewer #1 (Recommendations for the authors):\n\nI would encourage the authors to examine the motor-related activity in their data set, to help shed light on the following questions. Do the cue and reward related changes really reflect local circuit changes as the authors seem to suggest? Or could they potentially reflect changes outside of M1 that are then inherited and readout by M1 cell type? If local circuit changes are occur, one might expect to see changes in the conjunctive responses of cue, reward, and motor activity within individual cells. Changes in network activity between cue, reward, and motor cells may also be observed. It should be possible and worth examining these relationships to tease apart potential mechanisms and impact of non-motor changes in M1.\n\nReviewer #2 (Recommendations for the authors):\n\n1. It is helpful to provide further details about the genetic background of the transgenic animals. Are they homozygous or heterozygous? What genetic background are they maintained in? Also, it would be helpful to indicate the number of neurons imaged per mouse.\n\n2. A question about the behavioral setup. How long is the water reward presented? How many licks does it take the mouse to consume the 10 ul water reward? It seems from Figure 1B that most licks occur when water is no longer available. Also, the example in Figure 2C suggests that post-cue licking is far fewer on d7 than on d1, suggesting that the mouse has learned to inhibit non-rewarded licking. This seems not to agree with Figure 1C.\n\n3. As imaging is conducted in M1, how is the response of the cells related to licking? Can the authors make a licking-triggered average of Ca traces for comparison?\n\n4. In Figure 2B: is the scale bar 10% or 10, i.e., 1000%? Many transients show a very slow onset, which is not consistent with the rapid rising phase of GCaMP6f signals as shown in many previous publications. Also, previous publications show that PV and SOM interneurons have very synchronized activity in mPFC (Pinto and Dan, 2015 Neuron) and secondary motor cortex (Garcia-Junco-Clemente et al., 2019 Cell Report). Is it true in M1? Can the authors give some examples of Ca traces of each type of the interneurons? If Ca transients in M1 interneurons exhibit different kinetics from those in pyramidal neurons, how would that affect the choice of analysis criteria?\n\n5. The 2.5s period chosen for analysis covers both tone presentation and delay. Will the conclusions in Figure 2E-H change if the analysis is restricted to the 1s of tone presentation? In addition, it seems better to use the actual duration of reward presentation (see Q2) for analysis. As the statistical analysis is done by random shuffling, there seems no need to match the period for tone and reward analyses.\n\n6. In Activity Analysis and Tuning Coefficients Calculation, the authors performed a resampling of mice with replacement, and the size of the random sample equals that of the original set of mice. What is the reason to do this? Can the authors simply take all mice into analysis?\n\n7. Figure 3A-B: a little clarification is needed. (1) Is each trace a single trial or the average over trials? (2) What does it mean that \"each trace is from the same neuron on d7?\" Are the five traces from one neuron, or five neurons? If they are from five neurons, are these the same five neurons in A and B? (3) Why does the color of a single trace change with time?\n\n8. The authors conclude that \"PV-INs that began as highly reliable maintained their reliability to the CS, \u2026, while PV-INs that began as low reliability became significantly more reliable.\" However, Figure 4F only shows how the percentage of neurons in the high- or low-reliability category changes over training. The authors need to track individual neurons and compare the same neuron's reliability on d1 and d7 to draw this conclusion. The same issue applies to the analysis of all cell types.\n\nReviewer #3 (Recommendations for the authors):\n\nFirst of all, the work is great. Analyzing calcium activity from each interneuron cell type is quite difficult, but authors elegantly performed the experiments. I wonder whether you can plot calcium signals over days (day 1 to day 7) without resorting. I understand it is very difficult, but if you have a good imaging quality enough to trace calcium activity from the same cells over several days, it would be nicer to show. Another concern is the lack of control experiments that show no such changes presented in training groups. Otherwise, it is quite good.\n",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31cc266e-517b-4ad9-ba56-fa9914fa0f9f",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C1",
+      "claim": "The primary motor cortex (M1) is known to be a critical site for movement initiation and motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary motor cortex (M1) is known to be a critical site for movement initiation and motor learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "066ff30c-90f5-4b83-b398-c11897620c63",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C2",
+      "claim": "M1 has been shown to possess reward-related activity, presumably to facilitate reward-based learning of new movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, it has also been shown to possess reward-related activity, presumably to facilitate reward-based learning of new movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work showing reward-related activity in M1, cited in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "d9db9407-7d99-4283-8400-852a1eb37e8d",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C3",
+      "claim": "Most of the major neuronal cell types in M1 showed robust but differential responses to both the conditioned cue stimulus (CS) and reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that most of the major neuronal cell types in M1 showed robust but differential responses to both the conditioned cue stimulus (CS) and reward, and their response properties undergo cell-type-specific modifications after associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the imaging data presented in Figures 2-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "0784ba15-333b-45ca-8afe-f4500e758f29",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C4",
+      "claim": "Neuronal response properties in M1 undergo cell-type-specific modifications after associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that most of the major neuronal cell types in M1 showed robust but differential responses to both the conditioned cue stimulus (CS) and reward, and their response properties undergo cell-type-specific modifications after associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by longitudinal imaging data comparing days 1 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "ecb679b5-6f30-4a1a-9576-f31201459292",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C5",
+      "claim": "PV-INs' responses became more reliable to the CS after associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "PV-INs' responses became more reliable to the CS, while VIP-INs' responses became more reliable to reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 4 showing increased reliability of PV-IN responses to CS on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "0d0db0a0-2eca-462d-aa00-a2bc6865ff09",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C6",
+      "claim": "VIP-INs' responses became more reliable to reward after associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "PV-INs' responses became more reliable to the CS, while VIP-INs' responses became more reliable to reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 5 showing increased reliability of VIP-IN responses to reward on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "ce5b48fe-261c-4d5e-8fc4-8b149fc840c6",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C7",
+      "claim": "Pyramidal neurons only showed robust responses to novel reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal neurons only showed robust responses to novel reward, and they habituated to it after associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 2E and Figure 6 showing PN responses to reward on day 1 but not day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "dcb721c3-8654-4a4a-9e74-8858cbd92a3e",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C8",
+      "claim": "Pyramidal neurons habituated to reward after associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyramidal neurons only showed robust responses to novel reward, and they habituated to it after associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing decreased PN responses to reward on day 7 compared to day 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "e58fec5d-48fd-4bc6-a413-854b4f33b86a",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C9",
+      "claim": "SOM-INs' responses emerged and became more reliable to both the CS and reward after conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SOM-INs' responses emerged and became more reliable to both the CS and reward after conditioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 2H and 6 showing increased SOM-IN responses on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "1ad7cca2-2107-4b29-ad39-080fe54ed8bd",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C10",
+      "claim": "Within M1, neurons encode movement goals and movement kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "Within M1, neurons encode movement goals and movement kinematics (Georgopoulos et al., 1992; Moran and Schwartz, 1999; Peters et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "f7cea16a-e766-4c5b-875e-bcecdd4239c5",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C11",
+      "claim": "Neurons in M1 have been reported to show reward-related activity in nonhuman primates.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo recording studies performed in nonhuman primates found neurons in M1 that encode reward anticipation, reward delivery, and mismatches between the two (Marsh et al., 2015; Ramakrishnan et al., 2017; Ramkumar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies in nonhuman primates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "8add7380-febe-459c-a742-8c58e01a064e",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C12",
+      "claim": "Reward has been shown to modulate M1 activity in human subjects, likely through an inhibitory circuit-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In human subjects, reward has also been shown to modulate M1 activity, likely through an inhibitory circuit-dependent mechanism (Thabit et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a prior study in humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "2d75f09c-90c1-4d2c-b36e-57e9d65043e3",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C13",
+      "claim": "In well-trained mice performing a skilled reaching task, a subset of layer 2/3 pyramidal neurons in M1 specifically report successful, but not failed, reach-and-grasp movements.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that in well-trained mice performing a skilled reaching task, a subset of layer 2/3 (L2/3) pyramidal neurons (PNs) in M1 specifically report successful, but not failed, reach-and-grasp movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Levy et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "bb32ed9a-3707-4a0d-922b-ef6a5b40faf1",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C14",
+      "claim": "A different subset of PNs report only failed reach-and-grasp movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a different subset of PNs report only failed reach-and-grasp movements (Levy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Levy et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "f8ceee67-4935-4355-b49a-eb5eeeea4d5a",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C15",
+      "claim": "Associative learning using reinforcement can accelerate and enhance learning.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely accepted that associative learning using reinforcement can accelerate and enhance learning (Abe et al., 2011; Nikooyan and Ahmed, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "09d88b70-72e0-4c9b-9a6e-3d91f6974346",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C16",
+      "claim": "Positive feedback (reward) facilitates motor memory retention.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of motor learning, studies have demonstrated that positive feedback (reward) facilitates motor memory retention and negative feedback (punishment) speeds up the learning process (Galea et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Galea et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "d9ece06b-c1fe-4087-a055-9b269c565b69",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C17",
+      "claim": "Negative feedback (punishment) speeds up the learning process.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of motor learning, studies have demonstrated that positive feedback (reward) facilitates motor memory retention and negative feedback (punishment) speeds up the learning process (Galea et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Galea et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "a45d3185-549e-4f34-aba1-4f1e67aeb92b",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C18",
+      "claim": "Different IN subtypes have been shown to have distinct gene expression profiles, electrophysiological properties, and connectivity motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Different IN subtypes have been shown to have distinct gene expression profiles, electrophysiological properties, and connectivity motifs (Fishell and Rudy, 2011; Markram et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "4865a57f-2ca3-46a3-8218-2a6913548bf0",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C19",
+      "claim": "SOM-INs preferentially target distal dendrites of PNs to filter synaptic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have demonstrated that SOM-INs preferentially target distal dendrites of PNs to filter synaptic inputs, fast-spiking PV-INs preferentially target perisomatic regions of PNs enabling strong inhibition of spiking, and VIP-INs regulate local microcircuits by controlling other local INs (Pfeffer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "64d47a53-306d-40f3-9be5-c5359a61b783",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C20",
+      "claim": "Fast-spiking PV-INs preferentially target perisomatic regions of PNs enabling strong inhibition of spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have demonstrated that SOM-INs preferentially target distal dendrites of PNs to filter synaptic inputs, fast-spiking PV-INs preferentially target perisomatic regions of PNs enabling strong inhibition of spiking, and VIP-INs regulate local microcircuits by controlling other local INs (Pfeffer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "3626c9cb-7b05-4954-a7d7-6872656c8609",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C21",
+      "claim": "VIP-INs regulate local microcircuits by controlling other local INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have demonstrated that SOM-INs preferentially target distal dendrites of PNs to filter synaptic inputs, fast-spiking PV-INs preferentially target perisomatic regions of PNs enabling strong inhibition of spiking, and VIP-INs regulate local microcircuits by controlling other local INs (Pfeffer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "e9fd5858-2656-4b3b-b1cd-a5e734180776",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C22",
+      "claim": "Visual orientation selectivity in PNs is modulated and sharpened by PV- and SOM-INs in the primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies using in vivo opto-recordings in the primary visual cortex have shown that visual orientation selectivity in PNs is modulated and sharpened by PV- and SOM-INs (Atallah et al., 2012; Lee et al., 2012; Wilson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "f0b0c5d0-7f14-460b-9572-ad8abc3c0298",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C23",
+      "claim": "PV- and SOM-INs exert control over PN frequency tuning in the primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primary auditory cortex, PV- and SOM-INs exert analogous control over PN frequency tuning (Seybold et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seybold et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "bf42d029-65c0-472f-8709-5129f7a5df75",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C24",
+      "claim": "In the auditory cortex, prefrontal cortex, and basolateral amygdala, reinforcement signals such as reward and punishment have been shown to recruit VIP-INs, which in turn, inhibit SOM- and PV-INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the auditory cortex, prefrontal cortex, and basolateral amygdala, reinforcement signals such as reward and punishment have been shown to recruit VIP-INs, which in turn, inhibit SOM- and PV-INs (Krabbe et al., 2019; Pi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "197bded7-3023-4010-b937-bde0e0a56ae4",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C25",
+      "claim": "Mice learned to associate the CS with the reward after 7 days, shown by an increase in anticipatory lick rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice learned to associate the CS with the reward after 7 days, shown by an increase in anticipatory lick rate, a conditioned response, following the cue onset on day 7 compared to day 1 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1C comparing lick rates on days 1 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "16638a06-a069-4cda-946d-fb7f772ea72f",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C26",
+      "claim": "On day 1, the mean lick rate during ITI lick bouts (1.47 \u00b1 0.17/s) and the CS (1.37 \u00b1 0.17/s) were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 1, the mean lick rate during ITI lick bouts (1.47 \u00b1 0.17/s) and the CS (1.37 \u00b1 0.17/s) were similar, while the lick rate following reward delivery was significantly higher (7.16 \u00b1 0.48/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral measurements presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "9eb228d0-668b-48a3-bd8a-0967ba1409cb",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C27",
+      "claim": "On day 1, the lick rate following reward delivery was significantly higher (7.16 \u00b1 0.48/s) than during ITI or CS.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 1, the mean lick rate during ITI lick bouts (1.47 \u00b1 0.17/s) and the CS (1.37 \u00b1 0.17/s) were similar, while the lick rate following reward delivery was significantly higher (7.16 \u00b1 0.48/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral measurements and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "cf079be8-dffd-464b-aa3d-64d86ada06d2",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C28",
+      "claim": "On day 7, the lick rate during the CS period (3.42 \u00b1 0.37/s) was significantly higher than during ITI lick bouts (1.71 \u00b1 0.2/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, on day 7 following associative learning, the lick rate during the CS period (3.42 \u00b1 0.37/s) was significantly higher than during ITI lick bouts (1.71 \u00b1 0.2/s), demonstrating that the mice effectively learned the CS\u2013reward association by day 7 (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data and statistical analysis shown in Figure 1E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "b1616089-55dc-4ca2-aaf6-8af0dea9d2cb",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C29",
+      "claim": "All cell types showed a similar proportion of active cells (irrespective of the behavioral task) on days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the mean percentage of active cells within the entire session to ensure all cell types had a similar proportion of active cells (irrespective of the behavioral task) on days 1 and 7 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "92235674-eed5-48a2-a288-886075bb3125",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C30",
+      "claim": "PV-IN and VIP-IN cell types had a percent of CS- and reward-responsive cells that were significantly greater than chance level on both days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that only PV-IN and VIP-IN cell types had a percent of CS- and reward-responsive cells that were significantly greater than chance level on both days 1 and 7 (PV-IN CS: day 1: 15.26% \u00b1 2.11%, day 7: 24.09% \u00b1 2.98%; PV-IN reward: day 1: 20.17% \u00b1 3.27%, day 7: 27.47% \u00b1 3.66%; VIP-IN CS: day 1: 11.29% \u00b1 3.23%, day 7: 16.59% \u00b1 2.01%, VIP-IN reward: day 1: 18.65% \u00b1 5.91%, day 7: 26.3% \u00b1 6.04%; Figure 2F, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis comparing observed responses to null distributions, shown in Figure 2F, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "a09314b4-3dff-4a47-b053-cdb3ba873362",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C31",
+      "claim": "PN responses to the CS were not different from the null distribution on both days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "PN responses to the CS were not different from the null distribution on both days 1 and 7 (day 1: 18.42% \u00b1 1.05%, day 7: 16.41% \u00b1 1.33%; Figure 2E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "9f9c4e0a-ee10-46e4-a545-e099f8faef88",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C32",
+      "claim": "PN responses to the reward were significantly higher on day 1 but significantly lower than the null distribution on day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast, PN responses to the reward were significantly higher on day 1 but significantly lower than the null distribution on day 7 (day 1: 23.95% \u00b1 2.49%, day 7: 12.12% \u00b1 0.95%; Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "3b129a84-255d-4c6a-8c4f-ee6b2c4979e5",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C33",
+      "claim": "SOM-INs showed significant responses to the CS and reward only on day 7 following associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SOM-INs showed significant responses to the CS and reward only on day 7 following associative learning, while on day 1, they demonstrated no response to the CS and a modest response to the reward (CS: day 1: 5.53% \u00b1 2.7%, day 7: 13.56% \u00b1 3.17%; Reward: day 1: 9% \u00b1 3.66%, day 7: 12.15% \u00b1 3.93%; Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "d09aba14-5569-480c-a78e-243d3a7f48ec",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C37",
+      "claim": "The average percent of CS-responsive PV-INs during a trial increased significantly by day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the mean percent of CS-responsive neurons on days 1 and 7, we found that the average percent of CS-responsive PV-INs during a trial increased significantly by day 7 (day 1: 15.26% \u00b1 2.11%, day 7: 24.09% \u00b1 2.98%; Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "55d3d8ac-535f-4eb8-a9aa-a01c077b6a8b",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C38",
+      "claim": "The percent of CS-responsive VIP-INs did not change between days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "while the percent of CS-responsive VIP-INs did not change (day 1: 11.29% \u00b1 3.23%, day 7: 16.59% \u00b1 2.01%; Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "d23b6963-a085-4639-9dcd-8af4843c8c86",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C39",
+      "claim": "PV-INs, as a population, were significantly more reliable in their CS responses than VIP-INs on day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that PV-INs, as a population, were significantly more reliable in their CS responses than VIP-INs on day 1 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cumulative distribution analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "134d17f5-128e-4f68-ac9d-b342bd73fe32",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C40",
+      "claim": "PV-INs that began as highly reliable maintained their reliability to the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PV-INs that began as highly reliable maintained their reliability to the CS (day 1: 29.8% \u00b1 1.51%, day 7: 33.87% \u00b1 4.72%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "e613b48a-a961-4b08-b68a-eb2d00ab5581",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C41",
+      "claim": "PV-INs that began as Low Reliability became significantly more reliable to the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "while PV-INs that began as Low Reliability became significantly more reliable (8.47% \u00b1 0.46%, day 7: 18.99% \u00b1 3.76%; Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "4fbeeae4-1cab-4b12-aad5-920574278afb",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C42",
+      "claim": "The reliability of both High and Low VIP-INs to CS did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the reliability of both High and Low VIP-INs did not change (High Reliability: day 1: 26.55% \u00b1 2.62%, day 7: 25.93% \u00b1 3.81%; Low Reliability: day 1: 6.32% \u00b1 0.76%, day 7: 14.24% \u00b1 2.6%; Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "688b75b5-4940-4063-86f8-2f9e36ace5f1",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C43",
+      "claim": "97% of the CS-responsive PV-INs from day 1 still showed responsivity to CS on day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 97% of the CS-responsive PV-INs from day 1 still showed responsivity to CS on day 7 (Figure 4\u2014figure supplement 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tracking analysis shown in Figure 4\u2014figure supplement 1C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "6d21a64e-f1cc-4e29-ab9f-fb2e6aed6443",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C44",
+      "claim": "In the absence of reward, PV-INs did not show significant responses to tone.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, PV-INs did not show significant tone-responsive cells compared to the chance level on either day 1 or 7 (Figure 4\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by control experiment data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "0b415ca9-3c47-43b6-b821-3466fe9ddc34",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C45",
+      "claim": "When tone was not paired with reward, PV-INs showed significant responses to tone on day 1 but not day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, by day 7, PV-INs no longer responded to the tone stimulus (Figure 4\u2014figure supplement 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nonpaired control experiment data shown in Figure 4\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "0960b744-a631-44f9-a6f8-1181c291db67",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C46",
+      "claim": "PV-INs and VIP-INs did not show a significant change in the percent of responsive cells per trial to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "PV-INs and VIP-INs did not show a significant change in the percent of responsive cells per trial (PV-IN: day 1: 20.17% \u00b1 3.27%, day 7: 27.47% \u00b1 3.66%; VIP-IN: day 1: 18.65% \u00b1 5.91%, day 7: 26.3% \u00b1 6.04%; Figure 5C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "3dc9838a-7de3-4b31-b3d8-6a6255882300",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C47",
+      "claim": "VIP-INs as a population were significantly more reliable than PV-INs to reward on day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the cumulative distribution of reliabilities for reward responses between the two cell types, VIP-INs as a population were significantly more reliable than PV-INs on day 1 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cumulative distribution analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "4636f7b4-f342-4378-bdab-c48ec6343176",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C48",
+      "claim": "High Reliability VIP-INs maintained their reliability to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "we found the High Reliability VIP-INs maintained their reliability (VIP-IN High Reliability: day 1: 38.79% \u00b1 2.71%, day 7: 35.88% \u00b1 4.32%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "1b14b051-05d3-4993-afd3-d211163cbc00",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C49",
+      "claim": "Low Reliability VIP-INs became significantly more reliable to reward on day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Low Reliability VIP-INs became significantly more reliable on day 7 (VIP-IN Low Reliability: day 1: 10.25% \u00b1 1.67%, day 7: 24.06% \u00b1 4.87%; Figure 5G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 5G, H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "af23bf52-76ec-4c13-aca1-f85376b79200",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C50",
+      "claim": "Both High and Low Reliability PV-INs maintained their reliability to reward.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both High and Low Reliability PV-INs maintained their reliability to reward (High Reliability: day 1: 35.59% \u00b1 2.81%, day 7: 41.94% \u00b1 5.7%; Low Reliability: day 1: 10.58% \u00b1 0.74%, day 7: 19.59% \u00b1 3.08%; Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "bffde217-00a5-4703-9e24-e0325e09fa98",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C51",
+      "claim": "95% of the VIP-INs from day 1 still showed responsivity to reward on day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 95% of the VIP-INs from day 1 still showed responsivity to reward on day 7 (Figure 4\u2014figure supplement 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tracking analysis shown in Figure 4\u2014figure supplement 1E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "de9070f7-a54b-4e71-8eb4-49609d696092",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C52",
+      "claim": "PNs initially responded to novel reward; however, they habituated to the reward following associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that PNs initially responded to novel reward; however, they habituated to the reward following associative learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 6A, B showing decreased PN reward responses on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "1da59fda-5d13-41fd-bb7d-0494d4469a8f",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C53",
+      "claim": "SOM-INs were unresponsive to the CS on day 1 but became more reliably responsive to the CS following associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that in naive mice, SOM-INs were unresponsive to the CS and modestly responsive to the novel reward; however, following associative learning, SOM-INs became more reliably responsive to both the CS and reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 6C, D showing increased SOM-IN CS responses on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "6c57be97-4b7e-4a56-b5c5-a77ecbd18d8c",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C54",
+      "claim": "SOM-INs became more reliably responsive to reward following associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results suggest that in naive mice, SOM-INs were unresponsive to the CS and modestly responsive to the novel reward; however, following associative learning, SOM-INs became more reliably responsive to both the CS and reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 6E, F showing increased SOM-IN reward responses on day 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "c8e76ebb-5bd8-4d90-817f-046a563ccb5e",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C55",
+      "claim": "In each cell type, the majority of the neurons were nonlick neurons on both days 1 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in each cell type, the majority of the neurons were nonlick neurons on both days 1 and 7 (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by licking analysis shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "b5782125-30b4-40a7-9b6d-fc8ee68db4cd",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C56",
+      "claim": "All cell types exhibited lower reliability index values for the ITI lick bouts compared to the CS and reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, at the population level, we examined the response reliability index of all the active neurons during all ITI lick bouts and compared them to the response reliability index for the CS and reward. On both day 1 (when there was minimal anticipatory licking during the CS) and day 7 (when mice showed anticipatory licking), all cell types exhibited lower reliability index values for the ITI lick bouts compared to the CS and reward, indicating that the increase in task-related responses following water rewards was specific to the reward stimulus, and not licking movements (Figure 7D\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reliability analysis shown in Figure 7D\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "9b734080-d018-42af-84bf-3c1acf5b948a",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C57",
+      "claim": "Licking is an innate movement that does not induce plastic changes in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since licking is an innate movement that does not induce plastic changes in adult mice (Chen et al., 2015; Komiyama et al., 2010; Peters et al., 2014), we can reliably attribute changes in neuronal activity over the course of the task to associative learning, rather than motor learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "5c0ce9b8-62f4-4cd0-a6c2-3e510de6fc69",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C58",
+      "claim": "PV-INs in M1 only respond to behaviorally relevant cues such as those that predict reward.",
+      "claim_type": "IMPLICIT",
+      "source": "This suggests that in M1, PV-INs only respond to behaviorally relevant cues such as those that predict reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PV-INs respond to tone when paired with reward but not when tone is presented alone or unpaired.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "479c4793-9f6a-4499-9404-bdb7f6378587",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C59",
+      "claim": "M1 is unlikely to be a primary site for learning reward predictions.",
+      "claim_type": "IMPLICIT",
+      "source": "An interesting point to note is that since PV-INs are only responsive to tone when it is paired with reward, and neither PV-INs nor VIP-INs undergo plastic changes in the absence of associative learning, M1 is unlikely to be a primary site for learning reward predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PV-INs and VIP-INs do not show changes in the absence of associative learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "7edba485-7368-49e4-9c8d-9de70df6eb49",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C60",
+      "claim": "Other brain regions are responsible for learning relevant CS\u2013reward associations while filtering out behaviorally irrelevant stimuli, and these regions subsequently send long-range inputs to M1 to instruct motor responses to the CS and the reward.",
+      "claim_type": "IMPLICIT",
+      "source": "We hypothesize that other brain regions are responsible for learning relevant CS\u2013reward associations while filtering out behaviorally irrelevant stimuli, and these regions subsequently send long-range inputs to M1 to instruct motor responses to the CS and the reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the inference that M1 is not the primary site for learning reward predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "fc5cddb7-2944-4e94-b2f0-d5b35558a696",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C61",
+      "claim": "During CS\u2013reward conditioning, PV-INs in M1 encode the CS association, and may regulate local circuit activity related to reward anticipation.",
+      "claim_type": "IMPLICIT",
+      "source": "Taken together, our results suggest that during CS\u2013reward conditioning, PV-INs in M1 encode the CS association, and may regulate local circuit activity related to reward anticipation, whereas VIP-INs act as a context-dependent switch following the reward delivery (Mu\u00f1oz et al., 2017; Turi et al., 2019) to instruct and disinhibit local PNs to enable learning-induced plastic changes critical for the acquisition of new movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PV-INs become more reliable to CS after learning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "757723d1-1cd4-47c7-8046-ebb3773e670c",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "claim_id": "C62",
+      "claim": "VIP-INs act as a context-dependent switch following the reward delivery to instruct and disinhibit local PNs to enable learning-induced plastic changes critical for the acquisition of new movements.",
+      "claim_type": "IMPLICIT",
+      "source": "Taken together, our results suggest that during CS\u2013reward conditioning, PV-INs in M1 encode the CS association, and may regulate local circuit activity related to reward anticipation, whereas VIP-INs act as a context-dependent switch following the reward delivery (Mu\u00f1oz et al., 2017; Turi et al., 2019) to instruct and disinhibit local PNs to enable learning-induced plastic changes critical for the acquisition of new movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that VIP-INs become more reliable to reward after learning, combined with citations to prior work on VIP-IN function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d91a25b9-d6fa-4dfb-8460-8228acc3faf8",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mice successfully learned the CS-reward association after 7 days of training, as demonstrated by increased anticipatory licking during the CS period on day 7 compared to day 1. On day 1, lick rates during ITI and CS periods were similar, while on day 7, CS-evoked licking was significantly elevated above ITI baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 provide converging behavioral evidence from lick rate measurements and statistical comparisons. The data show clear learning-related changes in anticipatory licking behavior with appropriate controls (ITI baseline) and statistical tests (two-way ANOVA, one-way ANOVA with post-hoc corrections). The behavioral paradigm is well-controlled and the measurements are quantitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Different neuronal cell types in M1 showed distinct response patterns to CS and reward stimuli that changed with associative learning. PV-INs and VIP-INs showed significant responses to both CS and reward on days 1 and 7. PNs showed significant reward responses only on day 1 (which decreased by day 7), while SOM-INs showed significant responses only on day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C29-C33 are well-supported by calcium imaging data with appropriate statistical controls. The authors compared observed responses to null distributions generated by random sampling, providing rigorous statistical validation. The cell-type-specific patterns are clearly demonstrated in Figures 2E-H with Monte-Carlo statistical tests. All cell types showed similar proportions of active cells overall (C29), validating that differences in task-related responses are not due to differential baseline activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "53e56b88-1b95-4d0c-a646-64e25070fa0c",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PV-INs became more reliable in their responses to the CS after associative learning. The percentage of CS-responsive PV-INs increased from day 1 to day 7, driven primarily by low-reliability PV-INs becoming more reliable. High-reliability PV-INs maintained their reliability, and 97% of day 1 CS-responsive PV-INs remained CS-responsive on day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C39-C41, and C43 are strongly supported by longitudinal tracking data with appropriate statistical tests (paired t-tests, Kolmogorov-Smirnov tests). The reliability analysis is well-designed, dividing cells into high and low reliability groups based on the 50th percentile. The control analysis comparing actual reliability changes to randomized controls (Figure 4I) strengthens the conclusion. Cell tracking across days validates that changes reflect plasticity in the same neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "bf647a45-3bc0-451b-9bdb-1f2b4eaae4e5",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PV-INs in M1 only respond to behaviorally relevant cues that predict reward. In control experiments without reward, PV-INs did not show significant responses to tone on either day. When tone was presented with non-paired random rewards, PV-INs responded to tone on day 1 but not day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 and C58 are supported by well-designed control experiments (Figure 4\u2014figure supplement 2). The no-reward and non-paired reward paradigms provide critical controls demonstrating that PV-IN responses depend on learned CS-reward associations, not merely auditory stimulation. The statistical approach (comparing to null distributions) is consistent with the main experiments. However, C58 is an inference that goes slightly beyond the data\u2014the claim that PV-INs 'only' respond to behaviorally relevant cues is strong, though well-supported by the presented controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "VIP-INs became more reliable in their responses to reward after associative learning. While the percentage of reward-responsive VIP-INs did not change significantly, low-reliability VIP-INs became significantly more reliable by day 7. VIP-INs were more reliable than PV-INs in reward responses on day 1, and 95% of day 1 reward-responsive VIP-INs remained reward-responsive on day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38, C42, C46-C49, and C51 are well-supported by longitudinal calcium imaging data with appropriate statistical analyses. The reliability analysis parallels that for PV-INs, with proper controls (randomized reliability calculations, Figure 5I). The cumulative distribution analysis (C47) and cell tracking (C51) strengthen the conclusions. Control experiments with non-paired rewards (Figure 4\u2014figure supplement 2M-O) demonstrate that VIP-IN changes require associative learning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "4640840b-1517-4ab4-8343-4f5ddfc2fa5c",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pyramidal neurons showed robust responses to novel reward on day 1 but habituated to reward after associative learning, with significantly reduced responses on day 7. PN responses to CS were not significantly different from baseline on either day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C32, and C52 are supported by calcium imaging data (Figures 2E, 6A-B) with appropriate statistical tests. The tuning coefficient analysis shows significant decrease in reward tuning (Figure 6A), and cumulative distribution analysis confirms reduced reliability (Figure 6B). The habituation pattern is clearly demonstrated. However, the manuscript does not provide control experiments (e.g., non-paired rewards) specifically for PNs to rule out alternative explanations for the habituation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "2eb383d1-e4e0-46a7-9d94-083516480723",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SOM-INs were largely unresponsive to CS and showed only modest responses to reward on day 1, but became significantly more reliable in responding to both CS and reward after associative learning on day 7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C33, C53-C54 are supported by calcium imaging data (Figures 2H, 6C-F) with appropriate statistical comparisons to null distributions. The emergence of responses is clearly demonstrated by comparing days 1 and 7. The cumulative distribution analyses show significant shifts toward higher reliability for both CS and reward. However, the tuning coefficient changes were not significant (Figure 6C, E), which seems somewhat inconsistent with the reliability changes\u2014this discrepancy is not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "6f589b45-66fb-492e-8501-0b0eed2b51b1",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The majority of neurons in each cell type were non-lick neurons on both days 1 and 7. All cell types exhibited lower reliability during ITI lick bouts compared to CS and reward periods, indicating that task-related responses were specific to the stimuli and not merely licking movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by systematic licking control analyses (Figure 7, Figure 7\u2014figure supplement 1). The comparison of reliability indices between ITI lick bouts and task periods is appropriate and shows clear differences across all cell types. The analysis addresses a critical confound (licking movements) with proper controls. Statistical tests (paired t-tests) support the conclusions. The approach of analyzing self-initiated ITI lick bouts as controls is well-designed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "4cbc1992-9585-45cf-bcc3-5c77afc930cb",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "M1 is unlikely to be a primary site for learning reward predictions. The authors hypothesize that other brain regions learn CS-reward associations and send long-range inputs to M1 to instruct motor responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C60 are inferences based on the observation that PV-INs and VIP-INs do not undergo plastic changes in the absence of associative learning (control experiments). While the logic is reasonable, these are speculative claims that go beyond the data. The manuscript does not directly test where learning occurs or identify the source of inputs to M1. C60 is explicitly stated as a hypothesis. Alternative explanations (e.g., M1 receives already-processed signals but still participates in learning) are not fully ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "be2d0817-cc21-4f41-ad02-3a6f5de5c0c6",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During CS-reward conditioning, PV-INs encode the CS association and may regulate local circuit activity related to reward anticipation, while VIP-INs act as a context-dependent switch following reward delivery to enable learning-induced plastic changes in local pyramidal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 are mechanistic interpretations that extend beyond the presented data. While the observations (PV-INs become more reliable to CS, VIP-INs to reward) are well-supported, the proposed functional roles are inferred from these patterns combined with prior literature on circuit connectivity. The manuscript does not directly test these mechanisms (e.g., through perturbation experiments). The claims rely heavily on citations to prior work about VIP-IN function (Mu\u00f1oz et al., 2017; Turi et al., 2019) and known connectivity patterns. These are reasonable hypotheses but remain speculative without direct causal evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    },
+    {
+      "id": "7ff52a05-d951-478f-9706-02f66a9484e2",
+      "content_id": "f6784d09-6a72-41aa-bf1c-8d2239ef9718",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on M1 function, reward-related activity in M1, motor learning principles, and the properties and roles of different inhibitory interneuron subtypes based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C24, and C57 are background knowledge claims supported by appropriate citations to prior work. These establish the context for the current study. The citations appear appropriate and the claims are consistent with established knowledge in the field. C57 (licking as innate movement) is particularly important for the experimental design rationale and is well-supported by multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:42:14.015115Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "197bded7-3023-4010-b937-bde0e0a56ae4",
+      "result_id": "d91a25b9-d6fa-4dfb-8460-8228acc3faf8"
+    },
+    {
+      "claim_id": "16638a06-a069-4cda-946d-fb7f772ea72f",
+      "result_id": "d91a25b9-d6fa-4dfb-8460-8228acc3faf8"
+    },
+    {
+      "claim_id": "9eb228d0-668b-48a3-bd8a-0967ba1409cb",
+      "result_id": "d91a25b9-d6fa-4dfb-8460-8228acc3faf8"
+    },
+    {
+      "claim_id": "cf079be8-dffd-464b-aa3d-64d86ada06d2",
+      "result_id": "d91a25b9-d6fa-4dfb-8460-8228acc3faf8"
+    },
+    {
+      "claim_id": "d9db9407-7d99-4283-8400-852a1eb37e8d",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "0784ba15-333b-45ca-8afe-f4500e758f29",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "b1616089-55dc-4ca2-aaf6-8af0dea9d2cb",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "92235674-eed5-48a2-a288-886075bb3125",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "a09314b4-3dff-4a47-b053-cdb3ba873362",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "9f9c4e0a-ee10-46e4-a545-e099f8faef88",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "3b129a84-255d-4c6a-8c4f-ee6b2c4979e5",
+      "result_id": "d746b36d-b7cf-4dd2-99b8-d49a6addddaf"
+    },
+    {
+      "claim_id": "ecb679b5-6f30-4a1a-9576-f31201459292",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "d09aba14-5569-480c-a78e-243d3a7f48ec",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "d23b6963-a085-4639-9dcd-8af4843c8c86",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "134d17f5-128e-4f68-ac9d-b342bd73fe32",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "e613b48a-a961-4b08-b68a-eb2d00ab5581",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "688b75b5-4940-4063-86f8-2f9e36ace5f1",
+      "result_id": "53e56b88-1b95-4d0c-a646-64e25070fa0c"
+    },
+    {
+      "claim_id": "6d21a64e-f1cc-4e29-ab9f-fb2e6aed6443",
+      "result_id": "bf647a45-3bc0-451b-9bdb-1f2b4eaae4e5"
+    },
+    {
+      "claim_id": "0b415ca9-3c47-43b6-b821-3466fe9ddc34",
+      "result_id": "bf647a45-3bc0-451b-9bdb-1f2b4eaae4e5"
+    },
+    {
+      "claim_id": "5c0ce9b8-62f4-4cd0-a6c2-3e510de6fc69",
+      "result_id": "bf647a45-3bc0-451b-9bdb-1f2b4eaae4e5"
+    },
+    {
+      "claim_id": "0d0db0a0-2eca-462d-aa00-a2bc6865ff09",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "55d3d8ac-535f-4eb8-a9aa-a01c077b6a8b",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "4fbeeae4-1cab-4b12-aad5-920574278afb",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "0960b744-a631-44f9-a6f8-1181c291db67",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "3dc9838a-7de3-4b31-b3d8-6a6255882300",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "4636f7b4-f342-4378-bdab-c48ec6343176",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "1b14b051-05d3-4993-afd3-d211163cbc00",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "bffde217-00a5-4703-9e24-e0325e09fa98",
+      "result_id": "3daecdca-86d7-42c6-a049-1a056ad3e5fa"
+    },
+    {
+      "claim_id": "ce5b48fe-261c-4d5e-8fc4-8b149fc840c6",
+      "result_id": "4640840b-1517-4ab4-8343-4f5ddfc2fa5c"
+    },
+    {
+      "claim_id": "dcb721c3-8654-4a4a-9e74-8858cbd92a3e",
+      "result_id": "4640840b-1517-4ab4-8343-4f5ddfc2fa5c"
+    },
+    {
+      "claim_id": "9f9c4e0a-ee10-46e4-a545-e099f8faef88",
+      "result_id": "4640840b-1517-4ab4-8343-4f5ddfc2fa5c"
+    },
+    {
+      "claim_id": "de9070f7-a54b-4e71-8eb4-49609d696092",
+      "result_id": "4640840b-1517-4ab4-8343-4f5ddfc2fa5c"
+    },
+    {
+      "claim_id": "e58fec5d-48fd-4bc6-a413-854b4f33b86a",
+      "result_id": "2eb383d1-e4e0-46a7-9d94-083516480723"
+    },
+    {
+      "claim_id": "3b129a84-255d-4c6a-8c4f-ee6b2c4979e5",
+      "result_id": "2eb383d1-e4e0-46a7-9d94-083516480723"
+    },
+    {
+      "claim_id": "1da59fda-5d13-41fd-bb7d-0494d4469a8f",
+      "result_id": "2eb383d1-e4e0-46a7-9d94-083516480723"
+    },
+    {
+      "claim_id": "6c57be97-4b7e-4a56-b5c5-a77ecbd18d8c",
+      "result_id": "2eb383d1-e4e0-46a7-9d94-083516480723"
+    },
+    {
+      "claim_id": "c8e76ebb-5bd8-4d90-817f-046a563ccb5e",
+      "result_id": "6f589b45-66fb-492e-8501-0b0eed2b51b1"
+    },
+    {
+      "claim_id": "b5782125-30b4-40a7-9b6d-fc8ee68db4cd",
+      "result_id": "6f589b45-66fb-492e-8501-0b0eed2b51b1"
+    },
+    {
+      "claim_id": "479c4793-9f6a-4499-9404-bdb7f6378587",
+      "result_id": "4cbc1992-9585-45cf-bcc3-5c77afc930cb"
+    },
+    {
+      "claim_id": "7edba485-7368-49e4-9c8d-9de70df6eb49",
+      "result_id": "4cbc1992-9585-45cf-bcc3-5c77afc930cb"
+    },
+    {
+      "claim_id": "fc5cddb7-2944-4e94-b2f0-d5b35558a696",
+      "result_id": "be2d0817-cc21-4f41-ad02-3a6f5de5c0c6"
+    },
+    {
+      "claim_id": "757723d1-1cd4-47c7-8046-ebb3773e670c",
+      "result_id": "be2d0817-cc21-4f41-ad02-3a6f5de5c0c6"
+    },
+    {
+      "claim_id": "31cc266e-517b-4ad9-ba56-fa9914fa0f9f",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "066ff30c-90f5-4b83-b398-c11897620c63",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "1ad7cca2-2107-4b29-ad39-080fe54ed8bd",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "f7cea16a-e766-4c5b-875e-bcecdd4239c5",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "8add7380-febe-459c-a742-8c58e01a064e",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "2d75f09c-90c1-4d2c-b36e-57e9d65043e3",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "bb32ed9a-3707-4a0d-922b-ef6a5b40faf1",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "f8ceee67-4935-4355-b49a-eb5eeeea4d5a",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "09d88b70-72e0-4c9b-9a6e-3d91f6974346",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "d9ece06b-c1fe-4087-a055-9b269c565b69",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "a45d3185-549e-4f34-aba1-4f1e67aeb92b",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "4865a57f-2ca3-46a3-8218-2a6913548bf0",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "64d47a53-306d-40f3-9be5-c5359a61b783",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "3626c9cb-7b05-4954-a7d7-6872656c8609",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "e9fd5858-2656-4b3b-b1cd-a5e734180776",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "f0b0c5d0-7f14-460b-9572-ad8abc3c0298",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "bf42d029-65c0-472f-8709-5129f7a5df75",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    },
+    {
+      "claim_id": "9b734080-d018-42af-84bf-3c1acf5b948a",
+      "result_id": "7ff52a05-d951-478f-9706-02f66a9484e2"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed hamPCR, a two-step PCR protocol that co-amplifies a low-copy host gene (GIGANTEA in A. thaliana) and microbial marker genes (16S rDNA) in a single reaction. The protocol uses a short 2-cycle HM-tagging step followed by exponential PCR, with amplicons designed to differ by ~80 bp for gel-based quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C27-C30, C33, C38-C42 collectively describe the hamPCR method with consistent technical details supported by gel images (Figure 1b, Figure 1\u2014figure supplement 1) and citations to established two-step PCR protocols. The methodological description is coherent and the design rationale (2 cycles to limit bias, size difference for QC) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "hamPCR accurately quantifies microbial load across a synthetic titration panel ranging from 0.25% to 24% bacterial DNA. The method shows high technical reproducibility across four replicates and accurately captures the expected microbe-to-host ratios from 0 to ~16% bacterial DNA, where sequence counts match theoretical expectations based on pipetting volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C56 describe validation using a synthetic titration panel with known bacterial:host DNA ratios. Figure 1b-d shows consistent gel bands and quantitative agreement between observed and expected values (R\u00b2 values and visual consistency). The range tested (0.25-24%) is justified by citation to prior WMS data (C44), and technical replicates demonstrate reproducibility (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C128",
+      "C129"
+    ],
+    "result": "hamPCR has reduced accuracy at the highest microbial loads due to statistical effects when host ASV counts approach zero. The authors define a noise factor threshold (N > 0.22) above which samples should only be classified as 'highly colonized' rather than quantified, though only a minority of samples reached this threshold in their experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C128-C129 acknowledge a clear limitation with mathematical justification (C58: as host counts approach 0, load approaches infinity with increased sampling error). The threshold definition (C59) is conservative and data-driven (Appendix 1\u2014figure 3), and the authors provide empirical evidence that this limitation affects only a minority of samples (C60, C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The inclusion of host amplicons in hamPCR does not introduce taxonomic biases in microbial community composition. Comparing pure 16S rDNA amplification to hamPCR (after rescaling) shows R\u00b2 = 0.99 with no significant difference in ASV distributions (Kolmogorov-Smirnov test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are directly supported by Figure 2b-c showing nearly perfect correlations (R\u00b2 = 0.99) and non-significant K-S tests (p > 0.66-0.86). The comparison is appropriate: pure 16S vs. pure 16S (technical control) and pure 16S vs. rescaled hamPCR (method validation). This addresses a critical concern about whether multiplexing affects community profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "For the primers tested, increasing HM-tagging cycles from 2 to 7-10 did not affect the distribution of host and microbial ASV abundances (K-S test p > 0.47). However, a consistent slight bias favoring host GI (56.5% vs. 43.5% bacteria) was observed in 1:1 synthetic templates, potentially due to primer efficiency differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by Figure 2d-e and Figure 2\u2014figure supplement 2 showing cycle number insensitivity. The observed bias (C65-C66) is acknowledged and explained with supporting data (Appendix 1\u2014figure 4) and citation (Carlson et al., 2013). The authors appropriately note this is primer-specific and adjustable, which is a reasonable caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "hamPCR performance is robust across typical template concentrations (5-100 ng), with no difference in microbe or host ASV abundances. At concentrations \u2265200 ng, the host amplicon is slightly favored, possibly due to limiting 16S rDNA primers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by data in Appendix 1\u2014figure 5. The typical working range (5-100 ng) shows no bias, which is important for practical application. The inference about primer limitation at high concentrations (C68) is reasonable though speculative. The data adequately define the method's operating range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C69",
+      "C70",
+      "C71",
+      "C6"
+    ],
+    "result": "Host and microbial amplicons can be separated by gel electrophoresis, independently quantified, and remixed at desired ratios (e.g., 5-10% host) prior to sequencing. Using reference samples, the original ratios can be accurately reconstructed in silico (R\u00b2 = 0.99, K-S test p > 0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C69-C71, C6 describe the gel-based remixing strategy demonstrated in Figure 3 and Figure 3\u2014figure supplements 1-2. The reconstruction accuracy (R\u00b2 = 0.99) is excellent, and the method is well-documented with bioanalyzer traces. This addresses a major practical concern about sequencing costs when host DNA is overabundant. The approach is validated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "hamPCR load estimates correlate strongly with WMS-derived loads across eight wild A. thaliana samples, with V4 16S rDNA showing the highest correlation. Relative abundance of bacterial families is consistent between methods, with slight deviations attributable to different taxonomic pipelines and known primer biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by Figure 4a-g comparing hamPCR (three primer sets) to WMS. Strong positive correlations are shown (Figure 4e-g), and deviations are reasonably attributed to known technical differences (C73, C76) with appropriate citations. This validation against an independent gold standard (WMS) is critical and well-executed, though the sample size (n=8) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Three-amplicon hamPCR (Hpa actin, 16S rDNA, A. thaliana GI) successfully quantified both oomycete and bacterial loads in an A. thaliana infection experiment. Microbial load analysis revealed differences between Col-0 and eds1-1 genotypes that were invisible in relative abundance data, consistent with known biology and CFU counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 describe a biological validation using known resistant/susceptible genotypes (C78-C79, citations provided). Figure 5a-c shows that load analysis (C85) reveals expected genotype differences (C86, supported by CFU counts and citation) that relative abundance misses (C84). The three-amplicon multiplexing (C77, C88) demonstrates method versatility. One outlier is noted and explained (C85-C86), showing appropriate data interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "hamPCR accurately captured changing bacterial loads in P. pacificus nematode gut microbiomes across a titration panel, replicated three times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by Figure 5e and Figure 5\u2014figure supplement 2 showing consistent patterns across replicates in a nematode titration experiment. This demonstrates hamPCR applicability beyond plants, though the validation is limited to a titration rather than a biological perturbation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "hamPCR was validated in hexaploid wheat (T. aestivum, 16 Gb genome) using the single-copy PolA1 gene as host marker. Expected abundance patterns were recovered for both ITS1 (fungal) and V4 16S rDNA (bacterial) amplicons. Adjusting primer ratios (2:1 ITS1:PolA1) successfully enriched fungal amplicons without sacrificing relative load determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 demonstrate hamPCR in a challenging system (large, polyploid genome). Citations support the biological context (C90-C92). Figure 5f and Figure 5\u2014figure supplements 3-4 show expected patterns, and Figure 5\u2014figure supplement 4 validates that primer ratio adjustment maintains quantitative accuracy (R\u00b2 = 0.93-0.98 between conditions). This is important for demonstrating method flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "In C. annuum infected with Xanthomonas euvesicatoria, hamPCR accurately tracked pathogen growth over time, matching CFU counts and qPCR up to 7 dpi. Importantly, hamPCR revealed that commensal bacterial classes also increased in load during infection (p < 0.001), a biologically significant effect invisible in relative abundance data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 describe a growth curve experiment with multiple validation methods (CFU, qPCR, hamPCR). Figure 6a-c shows strong agreement between methods up to 7 dpi (C102), with appropriate acknowledgment of limitations at later timepoints when host signal becomes too low (C101). The key biological insight about commensal bacteria (C103-C105) is statistically supported (Mann-Whitney U-test, p < 0.001) and demonstrates the value of load vs. relative abundance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In field-grown maize, hamPCR revealed that Sphingomonas (>80% relative abundance in some samples) showed spurious negative correlations with other genera in relative abundance networks but was among the least correlated genera in load-based networks. SparCC partially corrected this artifact but still implicated Sphingomonas more strongly than hamPCR data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 demonstrate a key advantage of load data over compositional data using a real-world example. Figure 6d-f shows the compositional artifact (C109-C110, well-cited) and its correction with load data (C111). The comparison to SparCC (C112), a compositional data analysis method, shows hamPCR provides complementary information. This is a compelling demonstration of the method's value, though the biological interpretation remains uncertain (appropriately acknowledged in Discussion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Standard amplicon sequencing methods cannot directly measure microbial load because they lack a denominator for the amount of habitat sampled, making sparsely and densely colonized samples indistinguishable. Compositional data constraints create misleading interpretations, but experimental determination of microbial load has led to important insights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C13 establish the problem that hamPCR addresses. These are well-established limitations of compositional data, supported by multiple citations (C11-C13) and mathematical reasoning (C11). This provides essential context for the method's development and is appropriately characterized as knowledge/inference rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Existing methods to measure microbial load (qPCR, WMS, CFU counting) add substantial cost and experimental burden. For host-associated samples where physical separation is difficult, the ratio of microbial to host DNA is an intrinsic measure of load, but previous attempts using host rDNA are inefficient due to high copy numbers, and WMS is impractical due to host DNA overrepresentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C26 establish the rationale for hamPCR by describing limitations of existing approaches. These are well-supported by citations and specific examples (e.g., C23: >95% plant DNA in A. thaliana WMS). The logic is sound: the DNA ratio principle (C16-C17) is valid, but previous implementations (C18-C20) and alternatives (C21-C24) have practical limitations. This motivates the method development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The principles underlying hamPCR are well-established: two-step PCR is common in amplicon sequencing, co-amplification of diverse fragments is used in RNA-seq/WMS, and quantitative multiplex PCR has proven reliable. A similar approach was used by Carlson et al. 2013 for immune receptor sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C115-C120 establish that hamPCR builds on established techniques rather than introducing fundamentally new molecular biology. Multiple citations support each component (two-step PCR, co-amplification, multiplex quantification). The Carlson et al. 2013 precedent (C32) is particularly relevant as proof-of-concept. This appropriately positions hamPCR as an innovative application of established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Microbial load measurement is sensitive to relative primer concentrations in the HM-tagging step, consistent with qPCR principles. This sensitivity enables fine-tuning of primer ratios but requires careful preparation of primer master mixes or use of control samples across batches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 identify an important technical consideration supported by data (Appendix 1\u2014figure 4) and citations to qPCR literature. The sensitivity is framed as both a limitation (requiring careful pipetting, C123) and a feature (enabling optimization, C122). The recommendation (C123) is practical and appropriate. This is honest reporting of method constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "hamPCR requires samples with meaningful host DNA content and DNA extraction methods that lyse both host and microbial cells. Strong bead-beating increases extraction completeness but causes DNA fragmentation, which is acceptable for short-read sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 describe fundamental requirements and trade-offs in sample preparation. These are logical constraints (C124-C126) and the bead-beating discussion (C127) is supported by citations. The authors appropriately recommend erring toward harsher lysis for completeness. These are important practical considerations for method implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "If host signal is insufficient at high microbial loads, three adjustments can increase host representation: altering the host:microbe ratio in pooled libraries (demonstrated in Figure 3), choosing a higher-copy host gene, or adjusting host primer concentration in the HM-tagging reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 provide practical solutions to the high-load limitation. C130 is directly demonstrated (Figure 3), C131 is supported by citation and logical reasoning about copy number effects, and C132 is supported by data (Appendix 1\u2014figure 4) and citation. These are reasonable strategies, though C131-C132 are suggestions rather than demonstrated solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "hamPCR is best suited for comparing loads within an experimental system using consistent primers because different primer pairs have different amplification efficiencies. Cross-study comparability could be achieved using standard curves, though this is proposed for future best practices rather than demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 acknowledge an important limitation supported by data (Figure 4 showing different load estimates from different primer sets). The proposed solution (C135, standard curves) is reasonable but speculative. This is appropriate scientific caution about the method's scope and honest acknowledgment that absolute quantification across studies requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "hamPCR is agnostic to taxonomic identities, genome sizes, and amplified regions, as demonstrated across diverse systems. The method can monitor three amplicons simultaneously and could potentially multiplex more with careful design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 is well-supported by the diverse applications shown (A. thaliana, P. pacificus, T. aestivum, Z. mays, C. annuum; bacteria, fungi, oomycetes). Claim C137 is demonstrated (Figure 5). Claim C138 is speculative but reasonable given the three-amplicon success. The breadth of validation is a strength of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors propose that hamPCR could supplant traditional amplicon sequencing in host-associated microbiomes and suggest various applications including host-free environments, plasmid tracking, crop plant studies, cryptic infection detection, and contamination control. They argue hamPCR is more cost-effective than WMS for large-scale studies, especially in organisms with large genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37, C139-C147 are largely speculative about future applications and impact. While some are supported by the demonstrated data (e.g., C141 by wheat results, C142-C144 by cost comparisons), many are proposals rather than demonstrated capabilities (C139-C140, C145-C146). The cost arguments (C142-C144) are logical but lack formal cost-benefit analysis. These represent reasonable extrapolations and discussion points but are not validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "PNAs used to block organellar amplification do not work for all plant hosts and can interfere with analysis of certain bacteria in some environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 acknowledge limitations of PNAs with appropriate citations. This is important practical information for method implementation, showing awareness of technical constraints. The caveat is appropriately placed where PNAs are first mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Overrepresentation of a few abundant organisms is a feature of most ecological communities, including microbial communities, making the compositionality problem broadly relevant to host-associated microbiome studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 provide ecological context for the compositionality problem, supported by citations to general ecology and microbiology literature. This appropriately frames the significance of the hamPCR solution beyond the specific examples shown.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1781 @@
+{
+  "submission": {
+    "id": "4474c210-545b-4abb-aa0b-a38549f22917",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:59:37.385998Z",
+    "updated_at": "2025-12-03T04:59:37.385998Z"
+  },
+  "content": [
+    {
+      "id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "submission_id": "4474c210-545b-4abb-aa0b-a38549f22917",
+      "content_type": "manuscript",
+      "content_text": "# Convalescent plasma use in the USA was inversely correlated with COVID-19 mortality\n\n## Authors\n\n- Arturo Casadevall<sup>1</sup> ([ORCID: 0000-0002-9402-9167](https://orcid.org/0000-0002-9402-9167)) \u2020\n- Quigly Dragotakes<sup>1</sup>\n- Patrick W Johnson<sup>2</sup>\n- Jonathon W Senefeld<sup>3</sup>\n- Stephen A Klassen<sup>3</sup>\n- R Scott Wright<sup>4</sup>\n- Michael J Joyner<sup>3</sup>\n- Nigel Paneth<sup>5</sup>\n- Rickey E Carter<sup>2</sup>\n\n### Affiliations\n\n1. Department of Molecular Microbiology and Immunology, Johns Hopkins School of Public Health Baltimore United States\n2. Department of Quantitative Health Sciences, Mayo Clinic Jacksonville United States\n3. Department of Anesthesiology and Perioperative Medicine, Mayo Clinic Rochester United States\n4. Department of Cardiology, Mayo Clinic Rochester United States\n5. Department of Epidemiology and Biostatistics and Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University East Lansing United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA), leading to use in about 500,000 patients during the first year of the pandemic for the USA.Methods:We tracked the number of CCP units dispensed to hospitals by blood banking organizations and correlated that usage with hospital admission and mortality data.Results:CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients estimated to have received CCP between late September and early November 2020. However, after randomized controlled trials failed to show a reduction in mortality, CCP usage per admission declined steadily to a nadir of less than 10% in March 2021. We found a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission, and this finding was robust to examination of deaths taking place 1, 2, or 3 weeks after admission. Changes in the number of hospital admissions, SARS-CoV-2 variants, and age of patients could not explain these findings. The retreat from CCP usage might have resulted in as many as 29,000 excess deaths from mid-November 2020 to February 2021.Conclusions:A strong inverse correlation between CCP use and mortality per admission in the USA provides population-level evidence consistent with the notion that CCP reduces mortality in COVID-19 and suggests that the recent decline in usage could have resulted in excess deaths.Funding:There was no specific funding for this study. AC was supported in part by RO1 HL059842 and R01 AI1520789; MJJ was supported in part by 5R35HL139854. This project has been funded in whole or in part with Federal funds from the Department of Health and Human Services; Office of the Assistant Secretary for Preparedness and Response; Biomedical Advanced Research and Development Authority under Contract No. 75A50120C00096.\n\n## Introduction\n\nIn the Spring of 2020, the USA embarked on a historic and unprecedented deployment of plasma derived from patients who survived COVID-19 (COVID-19 convalescent plasma [CCP]) for treatment of the disease, and 1\u00a0year into this effort more than 500,000 individuals have been treated. This development was fueled by the lack of effective alternate therapies, a plentiful supply of plasma from an efficient and high-capacity blood banking network, motivated donors, and strong community partners. US Food and Drug Administration\u00a0(FDA) regulatory oversight was provided first by its Expanded Access Program (EAP) in partnership with the Mayo Clinic, with first transfusion on early April 2020\u00a0(Senefeld et al., 2021), and then by its Emergency Use Authorization (EUA) of August 23, 2020, both of which restricted CCP use to hospitalized patients (Anonymous, 2021b).\n\nThe demonstration by the Summer of 2020 that CCP was safe (Joyner et al., 2020a; Joyner et al., 2020b), that antibody concentration in plasma correlated with survival in people treated before mechanical ventilation (Joyner et al., 2021) along with initial suggestions of efficacy (Li et al., 2020; Liu et al., 2020; Salazar et al., 2020), boosted its use. Nonetheless, the use of CCP rose rapidly without the ideal evidence base of efficacy from randomized controlled clinical trials (RCTs), since early RCTs though generally trending positively were inconclusive, mostly due to small size or premature termination as the epidemic abated in the early surge regions (Casadevall et al., 2020). Later in the pandemic, several larger RCTs reported no mortality benefit (Agarwal et al., 2020; Horby et al., 2021; Simonovich et al., 2021), raising doubts as to CCP efficacy. However, these latter trials were undertaken in hospitalized patients treated late in the course of disease and some used plasma with variable antibody levels (Casadevall et al., 2020), and contrasted with a highly successful trial in elderly patients treated within 3 days of illness onset prior to hospitalization (Libster et al., 2021). Despite potential explanations for the negative studies, the results of these studies were sometimes accompanied by editorials that reinforced the message of futility with the British Medical Journal calling CCP \u2018ineffective\u2019 (Pathak, 2020), Nature Biotechnology reported that CCP fell \u2018flat\u2019 (Sheridan, 2020), and JAMA published a meta-analysis of RCT concluding that there was no evidence of benefit from CCP therapy (Janiaud et al., 2021). On February 17, 2021, the Wall Street Journal reported that Mount Sinai Hospital, which had been a leader in deploying CCP and reported early encouraging results (Liu et al., 2020), had stopped using plasma in patients with COVID-19, and the report specifically mentioned that the negative results from CCP RCTs drove this decision (Marcus, 2021).\n\nOn March 13, 2021, the New York Times reported that COVID-19 mortality remained high with nearly 1500 daily deaths despite a drop in the number of new infections since earlier in the year (Leatherby, 2021). Consistent with this report, an analysis of treatment outcomes found that they worsened for the last 2 months of 2020 (Garg et al., 2021). This finding was surprising in light of an apparent reduction in the mortality of hospitalized patients as the epidemic progressed, thought to be from improved management of the disease as clinical experience grew (Ledford, 2020). Analyzing weekly reports from the blood banking industry, we noted that plasma use was on the decline, based on the ratio of units dispensed to hospital relative to hospital admissions. The increase in mortality combined with the reduction in CCP use led us to hypothesize first, that the two phenomena were related, and second, that the decline in CCP use reflected reduced use following the disappointing trial findings. We therefore examined the use of CCP units as a function of time, assessing the relationship of CCP use to COVID-19 mortality, denominating both plasma units and deaths to hospital admissions.\n\n## Materials and methods\n\n### Convalescent plasma usage\n\nCCP usage was inferred from the distribution of plasma units to hospitals in the USA from data obtained from Blood Centers of America,\u00a0Inc (BCA, West Warwick, RI). Data fields included collections, distributions to hospitals, distributions to research, or other use. This file consolidated all the reports from regional blood bank reports and provided a total of collected units and units distributed to hospitals. The data file did not have information on whether a unit was actually transfused but BCA can infer usage from hospital re-ordering information and there has been a strong correlation between the total number of units shipped to a hospital and the units transfused by that hospital. Hence, the CCP units dispensed to hospitals represent a reasonable proxy value for the total number of units being transfused to patients. To validate this assumption, we compared the numbers of plasma units dispensed to those used by the EAP. There was a powerful and significant correlation between the weekly counts of units distributed in the USA and those used to treat patients as part of the EAP between April 6 and August 23, 2020 (Spearman\u2019s rho\u00a0=\u00a00.953, p<0.001) (Figure 1\u2014figure supplement 1). Units transfused in the EAP were reported by providers as part of the official case report forms and each transfusion could comprise one or two units. During both the EAP and EUA epochs of CCP collection and distribution included in this analysis, reimbursement for units collected was provided by the US government. Additionally, most blood products used in the USA including CCP are collected and distributed by a network of regional or national blood banking organizations. In this context, the vast majority (>95%) of all convalescent\u00a0plasma (CP) administered was likely captured in this analysis (Senefeld et al., 2021).\n\n### Admission and mortality data\n\nFor population-level data on COVID-19 admissions and mortality, we relied on publicly available databases. Specifically, we used information from the Our World in Data (OWID) (https://ourworldindata.org/coronavirus) database. Data used for this analysis were downloaded on March 18, 2021, and are available as Supplementary file 3. We confirmed these findings using Centers for Disease Control (CDC, Atlanta, GA) data on admissions and deaths https://covid.cdc.gov/covid-data-tracker/#new-hospital-admissions and https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendsdeaths. CDC data were downloaded on March\u00a031,\u00a02021, and are available together with other data used in this analysis at: https://github.com/eapPlasma/plasma_hesitancy/tree/main/rawdata.\n\n### Statistical analysis\n\nPreliminary descriptive analyses were used to explore the associations of the ratio of number of CCP units dispersed to the number of hospitalizations (CCP utilization ratio) with the ratio of national deaths to national admissions, the latter being a reasonable proxy for the case fatality rate\u00a0(CFR). No individual-level data were available to link the mortality events directly to the individuals hospitalized to permit a calculation of the true CFR. To address this limitation, the mortality counts reported by the CDC were shifted to better align the deaths with the admitted patients. Since the overwhelming majority of COVID-19 deaths occur in hospitals (Chua et al., 2021; Chuzi et al., 2020), since CCP is only authorized for use in hospitals, and since death generally occurs a few days to weeks after admission, mortality was adjusted for the time lag between admission and death. The median time between admission and death has been reported as 9 days in the USA (Horwitz et al., 2021) and 6.7 days in Belgium (Faes et al., 2020). For the analysis, which was based on weekly aggregated data, a 2-week shift was selected to align the mortality with the median and upper quartile estimates in these reports. The Pearson\u2019s correlation coefficient was used to describe the relationship of the CCP utilization ratio with CFR. To further define this relationship, a linear statistical model was used to regress the utilization ratio onto CFR. This statistical model was weighted by the number of hospitalizations per week. The fit of the model was examined using standard residual-based diagnostic plots and the fit was deemed acceptable using only a linear fit of the CCP utilization ratio.\n\nThree in silico scenarios were created to summarize the effect of alterations to the CCP utilization ratio using the fitted model. In scenario 1, the effect of maintenance of plasma usage was considered. To define maintenance of use, a weighted average of the utilization ratio over the months of August through September 2020 was estimated. This value was then used to estimate the number of deaths that would be expected to occur throughout the study period (admissions starting August\u00a03,\u00a02020\u00a0to February\u00a022,\u00a02021). In scenario 2, a constant 50% CCP utilization ratio was set over the entire study period. The utilization rate was approximately the value observed in the early October 2020 period. A final scenario estimated the CFR that may have been observed had CCP not been used at all (i.e., the y-intercept from the model). Model contrasts were used to estimate the change in expected deaths among these scenarios in addition to a fourth condition \u2013 the actual number of events reported by the CDC. Values are summarized based on the observed number of hospitalized patients over the study period along with the same values indexed into expected mortality events per 1000 hospitalizations. Pointwise confidence bands for each scenario were obtained by multiplying the model-predicted CFR and its associated 95% confidence interval by the number of hospitalizations per week. Cumulative summations were used to describe the differences in expected deaths over the entire study period. This analysis was repeated independently a third time using a weighted average of utilization ratio of the months October-November on a separate database (OWID) to investigate stability between reporting bodies. As a final method for estimating the overall effect of the changes in CCP utilization, the CDC data were grouped into two time periods representing relative use. The difference in the CFR was used to estimate the expected value for the changes in the expected number of deaths.\n\nStatistical analyses were conducted using R version 3.6.2\u00a0(R Development Core Team, 2013); 95% confidence intervals and two-sided p-values were used to summarize association and test for significance at the alpha\u00a0=\u00a00.05 level of significance, respectively.\n\n## Results\n\n### CP use\n\nThe FDA first allowed compassionate use of CCP on a case-by-case basis in late March 2020, but very quickly initiated the EAP in early April 2020, which was followed by EUA on August 23, 2020, broadening its use. Distribution of CCP to hospitals rose to 25,000\u201330,000 weekly units by the December 2020 to January 2021 time period, but this rise in plasma distribution largely reflected the great increase in hospital admissions for COVID in those months (Figure 1). When CCP distributions are analyzed as a function of the number of new hospital admissions per week, peak utilization per capita occurred much earlier, in early October 2020 and declined sharply in the following months (Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig1-v2.jpg)\n\n**Figure 1.:** The vertical black line marks August 23, 2020, when the US Food and Drug Administration\u00a0(FDA) announced that Emergency Use Authorization for CCP in the USA. The vertical gray line marks April 4, 2020, as the start of the Emergency Access Program.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Shown is the progressive increase in the number of convalescent plasma units distributed in the USA and convalescent plasma units used in the EAP. Data between April 6 and August 23, 2020, are pooled in weekly intervals and represented as filled circles. The Pearson\u2019s correlation coefficient was used to assess correlation (r\u00a0=\u00a00.946, p<0.001) and a LOESS smoother with a 95% confidence interval (CI) and a reference line were overlayed. Points below the reference line represent weeks where more convalescent plasma was distributed than used within the EAP. Conversely, points above the reference line are indicative of more convalescent plasma being used in the EAP than distributed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig2-v2.jpg)\n\n**Figure 2.:** To account for time between admission to death, deaths from 2 weeks after admission are used to calculate mortality. The vertical line marks August 23, 2020, when the US Food and Drug Administration\u00a0(FDA) announced that Emergency Use Authorization for CCP in the USA.\n\n### Correlation between CCP and mortality\n\nTo explore whether there was a relationship between CCP distribution and mortality, we first compared the doses per patient versus reported COVID-19 deaths per hospital admission from publicly available databases (Figure 2). The comparison of curves showed a trough in deaths per admission coinciding with the peak of CCP usage per admission. A plot of mortality versus doses per hospitalized patient using mortality per admission data from the OWID database revealed a strong negative correlation (Pearson\u2019s correlation coefficient of \u22120.52 with p=0.002) (Figure 3). Similar results were obtained with the CDC database. To account for lags in the reporting of death that vary by state, we also investigated whether this correlation was maintained while adding weeks to the time between admission and death (Figure 3\u2014figure supplement 1). Additionally, if plasma use is divided into quintiles from lowest using weeks to highest using weeks, a graded relationship between use of plasma and mortality is apparent (Figure 3\u2014figure supplement 2). To investigate whether a change in the age demographics of the hospitalized population could account for the observed inverse correlation, we compared the shifted mortality is compared to the percent of hospitalized patients 65+\u00a0each week as reported by the CDC and found no significant correlation between these two variables, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-v2.jpg)\n\n**Figure 3.:** Correlation analysis yields a Pearson\u2019s correlation coefficient of \u22120.518 (p=0.0024). The black line represents a linear model regression with an R squared of 0.268.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** y-Axis values reflect the parameter of each gray box throughout the shifted weeks. Correlations peak at 2\u20133 weeks shifted, suggesting the lag time between admission and reported death is roughly 2 weeks.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Regression analysis for the quintiles revealed R\u00a0=\u00a00.5 and p=0.03.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The shifted mortality is compared to the percent of hospitalized patients 65+\u00a0each week as reported by the Centers for Disease Control\u00a0(CDC). There is no significant correlation between the two variables, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients.\n\n### Estimates of excess deaths\n\nThe linear model using the CCP utilization ratio to predict the CFR fits the data well in that this model explained 25% (R2\u00a0=\u00a00.254) of the variance of CFR using only the CCP utilization ratio. The model estimated that\u00a0the CFR decreased by 1.8 percentage points for every 10\u00a0percentage point increase in the rate of utilization of CCP (p=0.004). The linear regression analysis yielded a mortality in patients not receiving CCP of 25.2% as the y-intercept. A comparison of this number with that from US studies shows reasonable agreement between with the average mortality of 23.5% in patients not receiving CCP (Supplementary file 1). This percentage also closely matches the 24% mortality for COVID-19 patients for the large RECOVERY trial in the UK (Horby et al., 2021) and the 30% mortality of patients receiving late CCP in analysis from the EAP (Joyner et al., 2021). An extrapolation of the linear model to the situation where every patient is treated with CCP yields a mortality of 7.6%, which is lower than the average mortality in US studies, but still within the range reported (Supplementary file 1). However, this extrapolation to maximal use is much less reliable given the absence of points in the y-axis region above an CCP utilization ratio of 0.6 and uncertainty as to whether the relationship is linear in those ranges. Hence, we caution the reader about making any strong inference from this estimate while noting that it is close to the 6.2% mortality reported for COVID-19 patients treated with high titer CCP very early upon hospitalization (Salazar et al., 2021). Nevertheless, it is possible to use these efficacy numbers to estimate what the effect on deaths would have been had the USA continued to use CCP at the height of its usage in early Fall 2020, when more than 40% of all patients received plasma therapy.\n\nWith this model as a framework for estimating the excess number of deaths, the results of three scenarios were obtained (Figure 4). The total observed deaths over the study period was 356,534. Had the rate of CCP utilization observed during August through October 2002 carried over for the remaining months, the expected number of deaths was 327,516 (95% CI: 293,811\u2013361,221), which might result in 29,018 (95% CI: 3535\u201354,501) fewer deaths than observed. This excess death, in comparison, was small relative to the estimate that results from assuming plasma utilization was as high as it was after the EUA was issued. Had 50% utilization of plasma been continued, 62,383 (95% CI: 7599\u2013117,166) fewer deaths may have been observed. Under the most extreme scenario comparing no plasma use to the highest observed use, a difference of 158,409 (95% CI: 19,296\u2013297,523) deaths is estimated. We repeated this analysis independently for each of the databases used (CDC versus OWID) with concordant results (Figure 4; Figure 4\u2014figure supplement 1; Supplementary file 2; Supplementary file 3). The models also estimate that between 94,436 (Figure 4\u2014figure supplement 1; Supplementary file 3) and 95,026 (Figure 4) excess deaths might have occurred in the USA had CP never been deployed using the OWID and CDC databases, respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig4-v2.jpg)\n\n**Figure 4.:** Panel A presents the longitudinal observed (dashed line) and modeled number of deaths under three scenarios for CCP over the study period (August\u00a03,\u00a02020 to February\u00a022,\u00a02021) that included 356,534 deaths in 1,793,502 hospitalized patients. Over the entire study period, the CCP utilization ratio was 29.1%. In the scenario labeled maintenance (Maint.) of plasma, the CCP utilization ratio was set to 39.5%. With the no plasma and 50% plasma usage scenarios, the CCP utilization ratio was set at 0% and 50%, respectively. Panel B provides the pairwise comparisons of these scenarios to estimate the difference in expected number of deaths among the scenarios for the entire hospitalized patients (upper right triangle) and re-indexed to events per 1000 patients (lower left triangle). The rows represent the comparator or reference scenario, columns indicate the altered CCP use scenario. For example, the cell that intersects the observed deaths and the maintenance of plasma column shows that 29,018 fewer deaths would result had plasma use remained at the 39.5% level.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69866/elife-69866-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Maintained plasma transfusion rate from October\u00a0to\u00a0November throughout period, scenario 2 (blue): 50% transfusion rate throughout period, and scenario 3 (red): 0% transfusion rate throughout period. Black dashed line represents observed cumulative deaths per OWID reporting.\n\nAs an alternative method to estimating the excess deaths, which alleviates the need for a model, the data were summarized into two time periods characterized by high and low utilization of CCP (Table 1). In each of the 7 weeks from September 21 to November 8, 2020, the estimated proportion of inpatients transfused with CP exceeded 40% (average 42.6%). We refer to this period as \u2018high utilization\u2019. In the period immediately following \u2013 from November\u00a09,\u00a02021, to the week starting March\u00a022,\u00a02021 \u2013 utilization was lower; transfusion rates declined steadily, averaging 27.4% and we refer to this as the \u2018low utilization\u2019 period. The 2-week lagged mortality ratio for 257,424 patients hospitalized in the high utilization period was 18.16% and rose to 20.08% for the 1,344,463 patients admitted in the 18-week period of low utilization. Table 1 shows that if the mortality rate in the low\u00a0utilizing 18 weeks had been the same as during the high\u00a0transfusion period, 25,871 fewer deaths might have taken place.\n\n**Table 1.**\n Estimated number of excess deaths due to transfusion hesitancy.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Time period</th>\n      <th>Transfusion rate</th>\n      <th>Number of admissions</th>\n      <th>Deaths</th>\n      <th>Mortality rate</th>\n      <th>Expected deaths if mortality had remained at 18.16%</th>\n      <th>Excess deaths in the low transfusion period</th>\n      <th>Excess deaths per 1000 admissions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>High utilization ( September\u00a021,\u00a02021\u00a0to November\u00a08,\u00a02021)</td>\n      <td>42.59%</td>\n      <td>257,424</td>\n      <td>46,747</td>\n      <td>18.16%</td>\n      <td>46,747</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Low Utilization (November\u00a09,\u00a02021 to March\u00a022,\u00a02021)</td>\n      <td>27.43%</td>\n      <td>1,344,463</td>\n      <td>270,019</td>\n      <td>20.08%</td>\n      <td>244,148</td>\n      <td>25,871</td>\n      <td>19.2</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nThe use of CCP in hospitalized patients rose steadily after the FDA EUA of late August 2020, and from mid-September to the end of October, we estimate that CCP was provided to more than 40% of admissions. This rise occurred despite opinion pieces arguing that evidence of efficacy was insufficient for the authorization (Baden et al., 2020; Pau et al., 2021) .\u00a0However, RCTs from India (Agarwal et al., 2020), Argentina (Simonovich et al., 2021), and the UK (Horby et al., 2021) reporting that CCP use did not reduce mortality in hospitalized patients were followed by a substantial decline in use that began in November. The American Association of Blood Banks reported a 50% increase in the number of institutions planning to stop offering CCP between February and March 2021\u00a0(Anonymous, 2021a). By March 2021, no more than 10% of hospitalized patients were receiving CCP.\n\nThe drop in per capita CCP utilization was strongly associated with an increase in mortality among hospitalized COVID-19 patients. It is notable that mortality from COVID-19 among hospitalized patients decreased substantially over most of 2020, consistent with worldwide trends (Ledford, 2020), but then began to rise in late November and early December 2020, a period that coincided with reduction in CCP use. If the association we describe is truly causal, we estimate that reduced use of CCP resulted in 29,000\u201336,000 excess deaths over the past year in the USA.\n\nConcluding that a causal relationship exists between CCP use and mortality requires excluding the contribution of other variables that can affect mortality, a challenging task during an ongoing pandemic when information about the pathophysiology and clinical course of COVID-19 is accruing rapidly. All possible confounders are not available to us to include in this analysis. However, five factors can reasonably be excluded. We excluded that variation in age of hospitalized patients explained the findings since the mean age of the hospitalized population with COVID-19 was actually older during peak use of CCP than later, implying that the association might be even higher if age of admissions was taken into account. Similarly, we considered whether the winter surge in hospital admissions that stretched staff to the utmost could have affected the death rate, but excluded this possibility since the number of hospital admissions per week was not associated with mortality (r\u00a0=\u00a0\u22120.02). A delay in recording of death certificate information could not account for the findings since our findings are robust when deaths are considered from 2\u00a0to 5 weeks after admission. We considered whether the emergence of new variants accounted for our findings but excluded this possibility since this concern would apply largely to the most recent months. Only 76 isolations of the UK B.1.1.7 variant, which is associated with higher contagiousness and perhaps, mortality (Challen et al., 2021), were identified by January, an estimated 0.5% or less of COVID infections at that time (Galloway et al., 2021). Even as late as mid-March 2021, a time beyond the analyses of this paper, the B.1.1.17 variant comprised only 25% of US isolates (Anonymous, 2021c); increased mortality from these infections, if present, would not manifest itself until times later than our analysis included. In addition, limiting the end-time of our analysis to January 2021 did not change the findings. Finally, we note that interventions associated with efficacy against COVID-19 such as corticosteroids, Remdesivir, and prone positioning were introduced into clinical practice before the decline in CP use that began in late fall and that no new effective therapy was introduced or withdrawn during the October 2020 to March 2021 period, except for the decline in CP use documented here.\n\nOur findings should be interpreted with caution but several aspects of the evidentiary landscape point to CPP efficacy in reducing mortality when used appropriately. First, an analysis of several dozen studies associated the administration of CCP with reduced mortality, with an overall effect size of\u00a0~35% (Klassen et al., 2021). These studies include a powerful RCT in elderly outpatients that halved progression to severe disease. In the USA, the two completed RCTs each show a reduction of mortality with CPP usage (Bennett-Guerrero et al., 2021; O'Donnell et al., 2021). Second, CP has proven effective in individuals with defective humoral immunity and B cell defects (Senefeld et al., 2020; Thompson et al., 2021). Third, the active agent in plasma, specific antibody to SARS-CoV-2, is strongly related to mortality in transfused patients (Joyner et al., 2021; Libster et al., 2021; Maor et al., 2020). Fourth, the active agent of CCP, specific antibody to SARS-CoV-2, has powerful antiviral activity and has been shown to reduce the viral load in patients with COVID-19, thus providing a mechanistic explanation for its therapeutic effect (Kim et al., 2020). Fifth, human CP is protective in murine models of COVID-19 (Sun et al., 2020). Sixth, patients treated with CCP manifest reduced inflammatory markers (Bandopadhyay et al., 2021; Tremblay et al., 2020; Wu et al., 2021) that can lead to host damage (Pirofski and Casadevall, 2020). Seventh, research has identified nine places where plasma affects the cascade of inflammation to the benefit of treated patients (Acosta-Ampudia et al., 2021).\n\nThe clinical evidence on CP and mortality is mixed. Three randomized trials have failed to show a reduction in mortality (Agarwal et al., 2020; Horby et al., 2021; Simonovich et al., 2021), another RCT found a 40% reduction in mortality (O'Donnell et al., 2021), as other smaller trials and comparative studies (reviewed in Klassen et al., 2021). Unfortunately, many trials treated patients with advanced disease. For example, while the overall findings of the RECOVERY trial were null (Horby et al., 2021), all four categories of patients treated early in the course of illness (before antibody conversion, in the first 7 days, not receiving steroids, not on oxygen) showed lower mortality in the CPP arm. Late use of plasma, or use in people with advanced illness, is not likely to be effective, because at that time the inflammatory response itself is the major pathophysiologic pathway to severe illness and death, and added antibody is likely powerless to change the course of illness (Casadevall et al., 2021b).\n\nWhile we agree that RCTs are the ideal source of information on treatments, if trials are done in a patient population unlikely to benefit from the intervention because of late disease, they cannot fully contribute to understanding. We argue for taking a more holistic look at the available data on CP, which, as noted above, is consistent with benefit of treatment in early disease and with adequate antibody in the plasma. Our population-level analysis is analogous to the observational studies that linked smoking and lung cancer, a finding universally accepted by the weight of evidence from many sources, in spite of the absence of any RCT demonstrating the finding (Smoking and Health, 1964).\n\nTaking a page from the reluctance of citizens to accept vaccines against SARS-CoV-2, a phenomenon that has been termed \u2018vaccine hesitancy\u2019 (Pullan and Dey, 2021), we call the reduced use of CCP \u2018plasma hesitancy\u2019. Plasma hesitancy may be a result of health care providers overvaluing and overemphasizing negative results from RCT findings while dismissing other evidence that CCP reduces mortality. Physicians have relatively little recent experience with treating infectious diseases with antibody therapies (Casadevall et al., 2021b). Chemical agents, however, are more familiar, and the success of antiviral drugs against human immunodeficiency and hepatitis C viruses is well known.\n\nCCP remains one of few options available for treating COVID-19 early in the disease. It is readily available wherever there are recovered patients, requires no complex manufacturing, is inexpensive, and has an excellent safety profile (Joyner et al., 2020a). Interim guidelines for the American Association of Blood Banks (Cohn et al., 2021) and from Brazil (De Santis et al., 2021) emphasize both of these principles \u2013 early treatment and high antibody content in plasma. We hope that physicians policymakers, regulators, and guideline committees consider the totality of the available evidence, including our findings, when making decisions for CCP use in individual patients (Casadevall et al., 2021a).\n",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "1c3e614f-333e-4b40-8abc-ffb618e3cd99",
+      "submission_id": "4474c210-545b-4abb-aa0b-a38549f22917",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jameel Iqbal, James J Peters Veterans Affairs Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69866.sa1](https://doi.org/10.7554/eLife.69866.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis work is of interest to clinicians, epidemiologists and policy makers as it raises concerns about under-utilization of convalescent plasma (CCP) therapy during the Covid-19 pandemic, which in turn led to an increased number of preventable patient deaths. The authors demonstrate an inverse correlation between CCP use and mortality per admission in the US. They estimate that reduced use of CCP may have resulted in 29,000 to 36,000 excess deaths over the past year in the US.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Convalescent Plasma Use in the United States was inversely correlated with COVID-19 Mortality\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe Reviewing Editor has drafted this to help you prepare a minor revised submission.\n\nEssential revisions:\n\nOverall all three reviewers were enthusiastic for the manuscript and largely felt that it is appropriate for publication. However, two of the reviewers had very minor comments and suggestions, which should be able to be easily corrected and a revised document should be acceptable without further review.\n\nReviewer #2 (Recommendations for the authors):\n\nThis paper provides an important analysis of the correlation between CCP use and patient deaths from Covid-19 and has significant implications for future use of this therapeutic option. The authors are urged to consider the following:\n\n1) The manuscript clearly makes the distinction between correlation and causation in most places; however, the authors should carefully review the manuscript and ensure that this is done consistently. For example, on line 182, please consider \"\u2026use these 'implied' efficacy numbers\u2026'might' (rather than would) have been\u2026\". Similarly, on line 203, please consider replacing \"would have taken place\" with \"might have taken place\" or \"would be predicted by the model\".\n\n2) The statement on line 279 urges physicians to consider these findings when making clinical use decisions. Do the authors also urge policymakers, regulators, and guideline advisory groups to do so as well?\n\n3) The analysis of cofounding variables (starting on line 219) is good, but of course there are other considerations as well. Could you make a comment about the potential impact of the changing use of other therapies (remdesivir, steroids, etc) or clinical interventions (prone position, etc)?\n\n4) Is the graded mortality shown in supplemental figure 3 statistically significant?\n\nReviewer #3 (Recommendations for the authors):\n\nThe definitions of \"high utilization\" and \"low utilization\" need to be explained in the text for Table 1, as those specific terminologies are not defined in the table.\n\nThe text in figure 4 is difficult to read, and recommend re-working the figure to make comprehension easier.\n",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "724c31cc-a49a-4a5b-a7b5-cd85d6ac9732",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C1",
+      "claim": "The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA).",
+      "claim_type": "EXPLICIT",
+      "source": "The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA), leading to use in about 500,000 patients during the first year of the pandemic for the USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and introduction, with references to regulatory documents.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "393cde08-9030-487a-96ae-7d35934aeaf5",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C2",
+      "claim": "About 500,000 patients received CCP during the first year of the pandemic in the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "The US Food and Drug Administration authorized COVID-19 convalescent plasma (CCP) therapy for hospitalized COVID-19 patients via the Expanded Access Program (EAP) and the Emergency Use Authorization (EUA), leading to use in about 500,000 patients during the first year of the pandemic for the USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scale of CCP usage based on the study's data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "506c59a0-b0f6-4d18-9d55-c06273525e0a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C3",
+      "claim": "CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients estimated to have received CCP between late September and early November 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients estimated to have received CCP between late September and early November 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "f9a434c0-18ff-4a03-ac0b-6877a4c74415",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C4",
+      "claim": "After randomized controlled trials failed to show a reduction in mortality, CCP usage per admission declined steadily to a nadir of less than 10% in March 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after randomized controlled trials failed to show a reduction in mortality, CCP usage per admission declined steadily to a nadir of less than 10% in March 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by temporal data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "ecdf20da-6d4d-47e1-99eb-c769811ab1fa",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C5",
+      "claim": "There was a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission, and this finding was robust to examination of deaths taking place 1, 2, or 3 weeks after admission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is explicitly stated in the abstract and shown in Figure 3 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "7b6d1470-cc7c-4306-8a58-8b9e854cf373",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C6",
+      "claim": "The inverse correlation between CCP use and mortality was robust to examination of deaths taking place 1, 2, or 3 weeks after admission.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission, and this finding was robust to examination of deaths taking place 1, 2, or 3 weeks after admission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This robustness is stated in the abstract and demonstrated in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "2dc356f7-ba1d-4f03-ae36-618e5c6b6eeb",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C7",
+      "claim": "Changes in the number of hospital admissions, SARS-CoV-2 variants, and age of patients could not explain the inverse correlation findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in the number of hospital admissions, SARS-CoV-2 variants, and age of patients could not explain these findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and elaborated in the discussion with supporting analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "97b15a31-5f5c-4fea-bfcb-3a2465229cb0",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C8",
+      "claim": "The retreat from CCP usage might have resulted in as many as 29,000 excess deaths from mid-November 2020 to February 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The retreat from CCP usage might have resulted in as many as 29,000 excess deaths from mid-November 2020 to February 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and calculated using the linear model described in the methods and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "47b08565-e214-4e22-8366-ddf01de7a398",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C9",
+      "claim": "The first transfusion under the Expanded Access Program occurred in early April 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "US Food and Drug Administration (FDA) regulatory oversight was provided first by its Expanded Access Program (EAP) in partnership with the Mayo Clinic, with first transfusion on early April 2020 (Senefeld et al., 2021), and then by its Emergency Use Authorization (EUA) of August 23, 2020, both of which restricted CCP use to hospitalized patients (Anonymous, 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Senefeld et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "09c8158f-15f3-4096-a942-2a7a38f66efa",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C10",
+      "claim": "The Emergency Use Authorization for CCP was issued on August 23, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "US Food and Drug Administration (FDA) regulatory oversight was provided first by its Expanded Access Program (EAP) in partnership with the Mayo Clinic, with first transfusion on early April 2020 (Senefeld et al., 2021), and then by its Emergency Use Authorization (EUA) of August 23, 2020, both of which restricted CCP use to hospitalized patients (Anonymous, 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with a citation to Anonymous, 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "6bfd2815-9c9a-4e9a-a50e-da7c7d26405a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C11",
+      "claim": "Both the EAP and EUA restricted CCP use to hospitalized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "US Food and Drug Administration (FDA) regulatory oversight was provided first by its Expanded Access Program (EAP) in partnership with the Mayo Clinic, with first transfusion on early April 2020 (Senefeld et al., 2021), and then by its Emergency Use Authorization (EUA) of August 23, 2020, both of which restricted CCP use to hospitalized patients (Anonymous, 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b0bb760d-16ca-4be7-9f42-ceccdde8a6aa",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C12",
+      "claim": "CCP was demonstrated to be safe by the Summer of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration by the Summer of 2020 that CCP was safe (Joyner et al., 2020a; Joyner et al., 2020b), that antibody concentration in plasma correlated with survival in people treated before mechanical ventilation (Joyner et al., 2021) along with initial suggestions of efficacy (Li et al., 2020; Liu et al., 2020; Salazar et al., 2020), boosted its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Joyner et al., 2020a and 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "c8371eab-6ec3-4f1f-948e-7aa7cdd4be54",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C13",
+      "claim": "Antibody concentration in plasma correlated with survival in people treated before mechanical ventilation.",
+      "claim_type": "EXPLICIT",
+      "source": "The demonstration by the Summer of 2020 that CCP was safe (Joyner et al., 2020a; Joyner et al., 2020b), that antibody concentration in plasma correlated with survival in people treated before mechanical ventilation (Joyner et al., 2021) along with initial suggestions of efficacy (Li et al., 2020; Liu et al., 2020; Salazar et al., 2020), boosted its use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Joyner et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "1c291ed9-1a63-4fef-b076-c477afca6f6b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C14",
+      "claim": "Early RCTs of CCP were generally trending positively but were inconclusive, mostly due to small size or premature termination as the epidemic abated in the early surge regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the use of CCP rose rapidly without the ideal evidence base of efficacy from randomized controlled clinical trials (RCTs), since early RCTs though generally trending positively were inconclusive, mostly due to small size or premature termination as the epidemic abated in the early surge regions (Casadevall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Casadevall et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b3bb8842-29c6-4aea-88d8-a5e5be191167",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C15",
+      "claim": "Several larger RCTs reported no mortality benefit from CCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Later in the pandemic, several larger RCTs reported no mortality benefit (Agarwal et al., 2020; Horby et al., 2021; Simonovich et al., 2021), raising doubts as to CCP efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to three specific RCTs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "6df39024-1c31-4476-9dd7-db2698edc846",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C16",
+      "claim": "The negative RCTs were undertaken in hospitalized patients treated late in the course of disease and some used plasma with variable antibody levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these latter trials were undertaken in hospitalized patients treated late in the course of disease and some used plasma with variable antibody levels (Casadevall et al., 2020), and contrasted with a highly successful trial in elderly patients treated within 3 days of illness onset prior to hospitalization (Libster et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Casadevall et al., 2020 and Libster et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "7166f260-0308-433e-973f-5e2b2f79c4a4",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C17",
+      "claim": "A trial in elderly patients treated within 3 days of illness onset prior to hospitalization was highly successful.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these latter trials were undertaken in hospitalized patients treated late in the course of disease and some used plasma with variable antibody levels (Casadevall et al., 2020), and contrasted with a highly successful trial in elderly patients treated within 3 days of illness onset prior to hospitalization (Libster et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Libster et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "5ebd52db-f443-41a7-8faa-57d0467193d9",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C18",
+      "claim": "The British Medical Journal called CCP 'ineffective'.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite potential explanations for the negative studies, the results of these studies were sometimes accompanied by editorials that reinforced the message of futility with the British Medical Journal calling CCP 'ineffective' (Pathak, 2020), Nature Biotechnology reported that CCP fell 'flat' (Sheridan, 2020), and JAMA published a meta-analysis of RCT concluding that there was no evidence of benefit from CCP therapy (Janiaud et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Pathak, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "8ec48ca6-aabe-4d7d-be96-3d4172c54ccc",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C19",
+      "claim": "Nature Biotechnology reported that CCP fell 'flat'.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite potential explanations for the negative studies, the results of these studies were sometimes accompanied by editorials that reinforced the message of futility with the British Medical Journal calling CCP 'ineffective' (Pathak, 2020), Nature Biotechnology reported that CCP fell 'flat' (Sheridan, 2020), and JAMA published a meta-analysis of RCT concluding that there was no evidence of benefit from CCP therapy (Janiaud et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Sheridan, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "0135e285-858a-47c3-ae66-4c8c17b87670",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C20",
+      "claim": "JAMA published a meta-analysis of RCT concluding that there was no evidence of benefit from CCP therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite potential explanations for the negative studies, the results of these studies were sometimes accompanied by editorials that reinforced the message of futility with the British Medical Journal calling CCP 'ineffective' (Pathak, 2020), Nature Biotechnology reported that CCP fell 'flat' (Sheridan, 2020), and JAMA published a meta-analysis of RCT concluding that there was no evidence of benefit from CCP therapy (Janiaud et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Janiaud et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "734b1d96-7775-4b7b-813e-a80b963f0dc3",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C21",
+      "claim": "Mount Sinai Hospital stopped using plasma in patients with COVID-19, driven by negative results from CCP RCTs.",
+      "claim_type": "EXPLICIT",
+      "source": "On February 17, 2021, the Wall Street Journal reported that Mount Sinai Hospital, which had been a leader in deploying CCP and reported early encouraging results (Liu et al., 2020), had stopped using plasma in patients with COVID-19, and the report specifically mentioned that the negative results from CCP RCTs drove this decision (Marcus, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Liu et al., 2020 and Marcus, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b626e9f6-eed4-488c-84ee-e64436ec4af7",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C22",
+      "claim": "On March 13, 2021, the New York Times reported that COVID-19 mortality remained high with nearly 1500 daily deaths despite a drop in the number of new infections.",
+      "claim_type": "EXPLICIT",
+      "source": "On March 13, 2021, the New York Times reported that COVID-19 mortality remained high with nearly 1500 daily deaths despite a drop in the number of new infections since earlier in the year (Leatherby, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Leatherby, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "73c1ebd9-322f-4019-83b6-28cb6bf5f100",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C23",
+      "claim": "Treatment outcomes for COVID-19 worsened for the last 2 months of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this report, an analysis of treatment outcomes found that they worsened for the last 2 months of 2020 (Garg et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Garg et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "79cbda6a-856b-4312-9b62-ac789167e242",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C24",
+      "claim": "There was a powerful and significant correlation (Spearman's rho = 0.953, p<0.001) between the weekly counts of units distributed in the USA and those used to treat patients as part of the EAP between April 6 and August 23, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a powerful and significant correlation between the weekly counts of units distributed in the USA and those used to treat patients as part of the EAP between April 6 and August 23, 2020 (Spearman's rho = 0.953, p<0.001) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is stated in the methods section and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "0f8d81f9-44b8-4718-a1a5-05fab7e91351",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C25",
+      "claim": "The vast majority (>95%) of all convalescent plasma administered was likely captured in this analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, the vast majority (>95%) of all convalescent plasma (CP) administered was likely captured in this analysis (Senefeld et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section with a citation to Senefeld et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "f4689d49-09f3-4501-87f1-cd983c62e6ae",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C28",
+      "claim": "The overwhelming majority of COVID-19 deaths occur in hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the overwhelming majority of COVID-19 deaths occur in hospitals (Chua et al., 2021; Chuzi et al., 2020), since CCP is only authorized for use in hospitals, and since death generally occurs a few days to weeks after admission, mortality was adjusted for the time lag between admission and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Chua et al., 2021 and Chuzi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "4e3c1858-9da9-4de7-a63c-d86e57455919",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C29",
+      "claim": "Distribution of CCP to hospitals rose to 25,000\u201330,000 weekly units by the December 2020 to January 2021 time period.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of CCP to hospitals rose to 25,000\u201330,000 weekly units by the December 2020 to January 2021 time period, but this rise in plasma distribution largely reflected the great increase in hospital admissions for COVID in those months (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "02793b49-1d07-445f-8fee-400cce4bfc86",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C30",
+      "claim": "Peak CCP utilization per capita occurred in early October 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "When CCP distributions are analyzed as a function of the number of new hospital admissions per week, peak utilization per capita occurred much earlier, in early October 2020 and declined sharply in the following months (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b3624de7-d6ac-452a-b857-592c565ecebb",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C31",
+      "claim": "A plot of mortality versus doses per hospitalized patient using mortality per admission data from the OWID database revealed a strong negative correlation (Pearson's correlation coefficient of \u22120.52 with p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of mortality versus doses per hospitalized patient using mortality per admission data from the OWID database revealed a strong negative correlation (Pearson's correlation coefficient of \u22120.52 with p=0.002) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "04987c63-a25a-4017-897e-20942eb819f5",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C32",
+      "claim": "There is no significant correlation between shifted mortality and the percent of hospitalized patients 65+ each week, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant correlation between the two variables, suggesting changes in mortality are not explainable by an increase in hospitalized high-risk patients.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption for Figure 3\u2014figure supplement 3 and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "5440b824-5523-4a48-8cdf-a40aca9eb40a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C33",
+      "claim": "The linear model using the CCP utilization ratio to predict the CFR explained 25% (R2 = 0.254) of the variance of CFR.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear model using the CCP utilization ratio to predict the CFR fits the data well in that this model explained 25% (R2 = 0.254) of the variance of CFR using only the CCP utilization ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "4f86c260-f087-4431-8b4f-127f0c6b3a72",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C34",
+      "claim": "The model estimated that the CFR decreased by 1.8 percentage points for every 10 percentage point increase in the rate of utilization of CCP (p=0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "The model estimated that the CFR decreased by 1.8 percentage points for every 10 percentage point increase in the rate of utilization of CCP (p=0.004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the linear regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "cee9934c-6406-44d7-ba5c-3978bfa714db",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C35",
+      "claim": "The linear regression analysis yielded a mortality in patients not receiving CCP of 25.2% as the y-intercept.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear regression analysis yielded a mortality in patients not receiving CCP of 25.2% as the y-intercept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the linear regression model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e33b174b-f02b-4f04-9d78-058577ee6ed6",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C36",
+      "claim": "The average mortality in US studies of patients not receiving CCP is 23.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of this number with that from US studies shows reasonable agreement between with the average mortality of 23.5% in patients not receiving CCP (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with reference to Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "d80a4198-bc01-4d56-acb9-cf5ccfd18ba8",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C37",
+      "claim": "The mortality for COVID-19 patients in the large RECOVERY trial in the UK was 24%.",
+      "claim_type": "EXPLICIT",
+      "source": "This percentage also closely matches the 24% mortality for COVID-19 patients for the large RECOVERY trial in the UK (Horby et al., 2021) and the 30% mortality of patients receiving late CCP in analysis from the EAP (Joyner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Horby et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3d2581f7-8e75-4071-af56-7742455e5c32",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C38",
+      "claim": "The mortality of patients receiving late CCP in analysis from the EAP was 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "This percentage also closely matches the 24% mortality for COVID-19 patients for the large RECOVERY trial in the UK (Horby et al., 2021) and the 30% mortality of patients receiving late CCP in analysis from the EAP (Joyner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Joyner et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "c5f9b568-ccce-4379-961d-ff6bfd9c4512",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C39",
+      "claim": "An extrapolation of the linear model to the situation where every patient is treated with CCP yields a mortality of 7.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "An extrapolation of the linear model to the situation where every patient is treated with CCP yields a mortality of 7.6%, which is lower than the average mortality in US studies, but still within the range reported (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on extrapolation of the linear model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "9e6b3709-94eb-42a5-a19f-db502906c7f0",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C40",
+      "claim": "The mortality reported for COVID-19 patients treated with high titer CCP very early upon hospitalization is 6.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we caution the reader about making any strong inference from this estimate while noting that it is close to the 6.2% mortality reported for COVID-19 patients treated with high titer CCP very early upon hospitalization (Salazar et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Salazar et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "cb9f918b-47ad-46cb-852b-6ad7a49f8acf",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C41",
+      "claim": "The total observed deaths over the study period was 356,534.",
+      "claim_type": "EXPLICIT",
+      "source": "The total observed deaths over the study period was 356,534.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3329e6fa-fc64-4dfd-ac32-ad5fb759da95",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C42",
+      "claim": "Had the rate of CCP utilization observed during August through October 2002 carried over for the remaining months, the expected number of deaths was 327,516 (95% CI: 293,811\u2013361,221), which might result in 29,018 (95% CI: 3535\u201354,501) fewer deaths than observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Had the rate of CCP utilization observed during August through October 2002 carried over for the remaining months, the expected number of deaths was 327,516 (95% CI: 293,811\u2013361,221), which might result in 29,018 (95% CI: 3535\u201354,501) fewer deaths than observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "68173c73-b400-4b52-8193-9fc48eb1cc57",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C43",
+      "claim": "Had 50% utilization of plasma been continued, 62,383 (95% CI: 7599\u2013117,166) fewer deaths may have been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Had 50% utilization of plasma been continued, 62,383 (95% CI: 7599\u2013117,166) fewer deaths may have been observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b4af1654-a82b-4f0c-ab38-68d727fb41ad",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C44",
+      "claim": "Under the most extreme scenario comparing no plasma use to the highest observed use, a difference of 158,409 (95% CI: 19,296\u2013297,523) deaths is estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the most extreme scenario comparing no plasma use to the highest observed use, a difference of 158,409 (95% CI: 19,296\u2013297,523) deaths is estimated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "cd6f2cdf-9815-4532-96f4-1dab0ce7450a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C45",
+      "claim": "The models estimate that between 94,436 and 95,026 excess deaths might have occurred in the USA had CP never been deployed.",
+      "claim_type": "EXPLICIT",
+      "source": "The models also estimate that between 94,436 (Figure 4\u2014figure supplement 1; Supplementary file 3) and 95,026 (Figure 4) excess deaths might have occurred in the USA had CP never been deployed using the OWID and CDC databases, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with reference to figures and supplementary files.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "af63a99f-9872-4c62-a746-16aca2105f37",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C46",
+      "claim": "In each of the 7 weeks from September 21 to November 8, 2020, the estimated proportion of inpatients transfused with CP exceeded 40% (average 42.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "In each of the 7 weeks from September 21 to November 8, 2020, the estimated proportion of inpatients transfused with CP exceeded 40% (average 42.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "1f43895a-8a3b-4aee-9c29-70f90ea9e47b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C47",
+      "claim": "From November 9, 2021, to the week starting March 22, 2021, CCP utilization averaged 27.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the period immediately following \u2013 from November 9, 2021, to the week starting March 22, 2021 \u2013 utilization was lower; transfusion rates declined steadily, averaging 27.4% and we refer to this as the 'low utilization' period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "560efe76-b73f-4770-9cdc-d78ad277318e",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C48",
+      "claim": "The 2-week lagged mortality ratio for 257,424 patients hospitalized in the high utilization period was 18.16%.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2-week lagged mortality ratio for 257,424 patients hospitalized in the high utilization period was 18.16% and rose to 20.08% for the 1,344,463 patients admitted in the 18-week period of low utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "1bb5b0d2-75f4-46cb-a761-20991f1dffeb",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C49",
+      "claim": "The 2-week lagged mortality ratio rose to 20.08% for the 1,344,463 patients admitted in the 18-week period of low utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2-week lagged mortality ratio for 257,424 patients hospitalized in the high utilization period was 18.16% and rose to 20.08% for the 1,344,463 patients admitted in the 18-week period of low utilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "af020777-7f21-4173-9354-c573a0c48e73",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C50",
+      "claim": "If the mortality rate in the low utilizing 18 weeks had been the same as during the high transfusion period, 25,871 fewer deaths might have taken place.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 shows that if the mortality rate in the low utilizing 18 weeks had been the same as during the high transfusion period, 25,871 fewer deaths might have taken place.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "438c4e0d-e4da-4d97-ad55-936637c38a00",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C51",
+      "claim": "Mortality from COVID-19 among hospitalized patients decreased substantially over most of 2020, consistent with worldwide trends.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that mortality from COVID-19 among hospitalized patients decreased substantially over most of 2020, consistent with worldwide trends (Ledford, 2020), but then began to rise in late November and early December 2020, a period that coincided with reduction in CCP use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Ledford, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "44f23ba6-6aef-473a-944c-ea3f3d25bf53",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C52",
+      "claim": "Mortality from COVID-19 among hospitalized patients began to rise in late November and early December 2020, a period that coincided with reduction in CCP use.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that mortality from COVID-19 among hospitalized patients decreased substantially over most of 2020, consistent with worldwide trends (Ledford, 2020), but then began to rise in late November and early December 2020, a period that coincided with reduction in CCP use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "c5ba7f39-a0d8-41fc-9638-abf0dbf6612c",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C53",
+      "claim": "The mean age of the hospitalized population with COVID-19 was actually older during peak use of CCP than later.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded that variation in age of hospitalized patients explained the findings since the mean age of the hospitalized population with COVID-19 was actually older during peak use of CCP than later, implying that the association might be even higher if age of admissions was taken into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "2078511b-2596-4b34-853b-844da46b2d9d",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C54",
+      "claim": "The number of hospital admissions per week was not associated with mortality (r = \u22120.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we considered whether the winter surge in hospital admissions that stretched staff to the utmost could have affected the death rate, but excluded this possibility since the number of hospital admissions per week was not associated with mortality (r = \u22120.02).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e6babcf7-bc8f-4b3d-9227-564dab8e4bed",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C55",
+      "claim": "Only 76 isolations of the UK B.1.1.7 variant were identified by January, an estimated 0.5% or less of COVID infections at that time.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 76 isolations of the UK B.1.1.7 variant, which is associated with higher contagiousness and perhaps, mortality (Challen et al., 2021), were identified by January, an estimated 0.5% or less of COVID infections at that time (Galloway et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Challen et al., 2021 and Galloway et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "f2f6ee80-60db-49a6-88ec-3b3b205271ec",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C56",
+      "claim": "As late as mid-March 2021, the B.1.1.17 variant comprised only 25% of US isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Even as late as mid-March 2021, a time beyond the analyses of this paper, the B.1.1.17 variant comprised only 25% of US isolates (Anonymous, 2021c); increased mortality from these infections, if present, would not manifest itself until times later than our analysis included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Anonymous, 2021c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "d1978d31-e535-4fef-8039-f8fb5e63eb7f",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C57",
+      "claim": "Interventions associated with efficacy against COVID-19 such as corticosteroids, Remdesivir, and prone positioning were introduced into clinical practice before the decline in CP use that began in late fall.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that interventions associated with efficacy against COVID-19 such as corticosteroids, Remdesivir, and prone positioning were introduced into clinical practice before the decline in CP use that began in late fall and that no new effective therapy was introduced or withdrawn during the October 2020 to March 2021 period, except for the decline in CP use documented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on knowledge of clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "800d233e-15fc-4102-8d2d-810ab785e4a0",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C58",
+      "claim": "No new effective therapy was introduced or withdrawn during the October 2020 to March 2021 period, except for the decline in CP use.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that interventions associated with efficacy against COVID-19 such as corticosteroids, Remdesivir, and prone positioning were introduced into clinical practice before the decline in CP use that began in late fall and that no new effective therapy was introduced or withdrawn during the October 2020 to March 2021 period, except for the decline in CP use documented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on knowledge of clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "017262f0-965c-46c4-8f02-0ce87abbd328",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C59",
+      "claim": "An analysis of several dozen studies associated the administration of CCP with reduced mortality, with an overall effect size of ~35%.",
+      "claim_type": "EXPLICIT",
+      "source": "First, an analysis of several dozen studies associated the administration of CCP with reduced mortality, with an overall effect size of ~35% (Klassen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Klassen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3d407b96-76d4-45a4-a273-be7d2b85707e",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C60",
+      "claim": "An RCT in elderly outpatients halved progression to severe disease.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies include a powerful RCT in elderly outpatients that halved progression to severe disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion, referring to the Libster et al., 2021 study mentioned earlier.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "d139e8bd-ee1b-4be6-8481-fb5615b7a104",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C61",
+      "claim": "The two completed RCTs in the USA each show a reduction of mortality with CPP usage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the USA, the two completed RCTs each show a reduction of mortality with CPP usage (Bennett-Guerrero et al., 2021; O'Donnell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Bennett-Guerrero et al., 2021 and O'Donnell et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "db5c4c05-e273-4ada-b13a-d4816b7d48bc",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C62",
+      "claim": "CP has proven effective in individuals with defective humoral immunity and B cell defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, CP has proven effective in individuals with defective humoral immunity and B cell defects (Senefeld et al., 2020; Thompson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Senefeld et al., 2020 and Thompson et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e96416aa-a219-49e7-96e4-2ba3b43e0371",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C63",
+      "claim": "The active agent in plasma, specific antibody to SARS-CoV-2, is strongly related to mortality in transfused patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the active agent in plasma, specific antibody to SARS-CoV-2, is strongly related to mortality in transfused patients (Joyner et al., 2021; Libster et al., 2021; Maor et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Joyner et al., 2021, Libster et al., 2021, and Maor et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "d828e126-ab05-41ea-94b2-5bd4aad5f7fd",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C64",
+      "claim": "Specific antibody to SARS-CoV-2 has powerful antiviral activity and has been shown to reduce the viral load in patients with COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, the active agent of CCP, specific antibody to SARS-CoV-2, has powerful antiviral activity and has been shown to reduce the viral load in patients with COVID-19, thus providing a mechanistic explanation for its therapeutic effect (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Kim et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "7b7fef7b-5090-475d-b2b7-0f147b028d85",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C65",
+      "claim": "Human CP is protective in murine models of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifth, human CP is protective in murine models of COVID-19 (Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Sun et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "bcf58baf-bf78-45ef-a64b-7e7aa69f14da",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C66",
+      "claim": "Patients treated with CCP manifest reduced inflammatory markers that can lead to host damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixth, patients treated with CCP manifest reduced inflammatory markers (Bandopadhyay et al., 2021; Tremblay et al., 2020; Wu et al., 2021) that can lead to host damage (Pirofski and Casadevall, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Bandopadhyay et al., 2021, Tremblay et al., 2020, Wu et al., 2021, and Pirofski and Casadevall, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3dcdc38a-8111-4ecf-b9ff-3ce41b753a58",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C67",
+      "claim": "Research has identified nine places where plasma affects the cascade of inflammation to the benefit of treated patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventh, research has identified nine places where plasma affects the cascade of inflammation to the benefit of treated patients (Acosta-Ampudia et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Acosta-Ampudia et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "06090cca-ed1f-4ee6-900a-45b0931b06e5",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C68",
+      "claim": "Three randomized trials have failed to show a reduction in mortality from CCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Three randomized trials have failed to show a reduction in mortality (Agarwal et al., 2020; Horby et al., 2021; Simonovich et al., 2021), another RCT found a 40% reduction in mortality (O'Donnell et al., 2021), as other smaller trials and comparative studies (reviewed in Klassen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to the specific trials.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "7bd6cc0c-51da-44d2-aaf3-af90fcb9f3b8",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C69",
+      "claim": "One RCT found a 40% reduction in mortality from CCP.",
+      "claim_type": "EXPLICIT",
+      "source": "Three randomized trials have failed to show a reduction in mortality (Agarwal et al., 2020; Horby et al., 2021; Simonovich et al., 2021), another RCT found a 40% reduction in mortality (O'Donnell et al., 2021), as other smaller trials and comparative studies (reviewed in Klassen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to O'Donnell et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "6188b8d9-a50b-46a0-a05c-a8aab1169f5c",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C70",
+      "claim": "In the RECOVERY trial, all four categories of patients treated early in the course of illness (before antibody conversion, in the first 7 days, not receiving steroids, not on oxygen) showed lower mortality in the CPP arm.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while the overall findings of the RECOVERY trial were null (Horby et al., 2021), all four categories of patients treated early in the course of illness (before antibody conversion, in the first 7 days, not receiving steroids, not on oxygen) showed lower mortality in the CPP arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Horby et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "18efff37-1f24-480a-9a6b-6cc5244fd6a2",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C71",
+      "claim": "Late use of plasma, or use in people with advanced illness, is not likely to be effective, because at that time the inflammatory response itself is the major pathophysiologic pathway to severe illness and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Late use of plasma, or use in people with advanced illness, is not likely to be effective, because at that time the inflammatory response itself is the major pathophysiologic pathway to severe illness and death, and added antibody is likely powerless to change the course of illness (Casadevall et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Casadevall et al., 2021b.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "4ddceffc-cf5d-499f-8a90-f1799bb6c67d",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C72",
+      "claim": "The American Association of Blood Banks reported a 50% increase in the number of institutions planning to stop offering CCP between February and March 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "The American Association of Blood Banks reported a 50% increase in the number of institutions planning to stop offering CCP between February and March 2021 (Anonymous, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Anonymous, 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "0b9a2694-49a4-434c-8c4b-a52d243ac28a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C73",
+      "claim": "By March 2021, no more than 10% of hospitalized patients were receiving CCP.",
+      "claim_type": "EXPLICIT",
+      "source": "By March 2021, no more than 10% of hospitalized patients were receiving CCP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "a9f044de-2ac7-497f-988a-35a1549aa4f2",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C74",
+      "claim": "CCP remains one of few options available for treating COVID-19 early in the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "CCP remains one of few options available for treating COVID-19 early in the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on knowledge of available treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b200adb6-b4dd-40ef-9ba9-12b343d3d86b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C75",
+      "claim": "CCP is readily available wherever there are recovered patients, requires no complex manufacturing, is inexpensive, and has an excellent safety profile.",
+      "claim_type": "EXPLICIT",
+      "source": "It is readily available wherever there are recovered patients, requires no complex manufacturing, is inexpensive, and has an excellent safety profile (Joyner et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to Joyner et al., 2020a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "8c43cf12-5187-41ee-a0c2-69e5987fd25b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C76",
+      "claim": "Interim guidelines for the American Association of Blood Banks emphasize early treatment and high antibody content in plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interim guidelines for the American Association of Blood Banks (Cohn et al., 2021) and from Brazil (De Santis et al., 2021) emphasize both of these principles \u2013 early treatment and high antibody content in plasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Cohn et al., 2021 and De Santis et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "fadc9560-79f6-4eb3-a8b8-ddf514745c71",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C77",
+      "claim": "Guidelines from Brazil emphasize early treatment and high antibody content in plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interim guidelines for the American Association of Blood Banks (Cohn et al., 2021) and from Brazil (De Santis et al., 2021) emphasize both of these principles \u2013 early treatment and high antibody content in plasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to Cohn et al., 2021 and De Santis et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "253605c0-09c1-4f5c-b52e-364cce79574a",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C78",
+      "claim": "The decline in CCP use was strongly associated with an increase in mortality among hospitalized COVID-19 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The drop in per capita CCP utilization was strongly associated with an increase in mortality among hospitalized COVID-19 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "414b3383-d83c-48ca-96af-e5f549819418",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C79",
+      "claim": "If the association between CCP use and mortality is truly causal, reduced use of CCP resulted in 29,000\u201336,000 excess deaths over the past year in the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "If the association we describe is truly causal, we estimate that reduced use of CCP resulted in 29,000\u201336,000 excess deaths over the past year in the USA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3fa5e256-aed0-4842-ba12-b30ebc4ccebe",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C80",
+      "claim": "Plasma hesitancy may be a result of health care providers overvaluing and overemphasizing negative results from RCT findings while dismissing other evidence that CCP reduces mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma hesitancy may be a result of health care providers overvaluing and overemphasizing negative results from RCT findings while dismissing other evidence that CCP reduces mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the observed decline in CCP use.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b88781fc-ec9b-4142-914f-4153811e4b32",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C81",
+      "claim": "The use of CCP rose rapidly without the ideal evidence base of efficacy from randomized controlled clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the use of CCP rose rapidly without the ideal evidence base of efficacy from randomized controlled clinical trials (RCTs), since early RCTs though generally trending positively were inconclusive, mostly due to small size or premature termination as the epidemic abated in the early surge regions (Casadevall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to Casadevall et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "dcc77169-8618-4db3-b9aa-154c269480c5",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C82",
+      "claim": "The deployment of CCP was fueled by the lack of effective alternate therapies, a plentiful supply of plasma from an efficient and high-capacity blood banking network, motivated donors, and strong community partners.",
+      "claim_type": "EXPLICIT",
+      "source": "This development was fueled by the lack of effective alternate therapies, a plentiful supply of plasma from an efficient and high-capacity blood banking network, motivated donors, and strong community partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as context for the CCP deployment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e5cec7a0-08ee-40ef-95b1-79ad538312de",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C83",
+      "claim": "More than 500,000 individuals have been treated with CCP 1 year into the deployment effort.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Spring of 2020, the USA embarked on a historic and unprecedented deployment of plasma derived from patients who survived COVID-19 (COVID-19 convalescent plasma [CCP]) for treatment of the disease, and 1 year into this effort more than 500,000 individuals have been treated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction based on the study's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "0696ef62-9770-4728-8eb1-c06939ed4bec",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C84",
+      "claim": "CCP usage data was obtained from Blood Centers of America, Inc (BCA, West Warwick, RI).",
+      "claim_type": "EXPLICIT",
+      "source": "CCP usage was inferred from the distribution of plasma units to hospitals in the USA from data obtained from Blood Centers of America, Inc (BCA, West Warwick, RI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "ae78b3d4-3c19-4409-adcf-d391a3cc535d",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C85",
+      "claim": "During both the EAP and EUA epochs of CCP collection and distribution included in this analysis, reimbursement for units collected was provided by the US government.",
+      "claim_type": "EXPLICIT",
+      "source": "During both the EAP and EUA epochs of CCP collection and distribution included in this analysis, reimbursement for units collected was provided by the US government.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section as context for data collection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "7ca04717-1305-4b0f-a618-ca406d982be6",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C86",
+      "claim": "Population-level data on COVID-19 admissions and mortality was obtained from the Our World in Data (OWID) database.",
+      "claim_type": "EXPLICIT",
+      "source": "For population-level data on COVID-19 admissions and mortality, we relied on publicly available databases. Specifically, we used information from the Our World in Data (OWID) (https://ourworldindata.org/coronavirus) database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "ba2cdf24-b8ee-4641-b5bd-3870fb651f29",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C87",
+      "claim": "The findings were confirmed using Centers for Disease Control (CDC, Atlanta, GA) data on admissions and deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these findings using Centers for Disease Control (CDC, Atlanta, GA) data on admissions and deaths https://covid.cdc.gov/covid-data-tracker/#new-hospital-admissions and https://covid.cdc.gov/covid-data-tracker/#trends_dailytrendsdeaths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing data validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "dd83024d-1842-4857-a5c1-fb4cba4f7b98",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C88",
+      "claim": "A 2-week shift was selected to align the mortality with the median and upper quartile estimates of time between admission and death.",
+      "claim_type": "EXPLICIT",
+      "source": "For the analysis, which was based on weekly aggregated data, a 2-week shift was selected to align the mortality with the median and upper quartile estimates in these reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the statistical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "40dab90c-e8af-4138-b3f8-2e087f65409e",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C89",
+      "claim": "The Pearson's correlation coefficient was used to describe the relationship of the CCP utilization ratio with CFR.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pearson's correlation coefficient was used to describe the relationship of the CCP utilization ratio with CFR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e0bd66b7-d900-4c7c-bdd2-ec6a29a4ed72",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C90",
+      "claim": "A linear statistical model was used to regress the utilization ratio onto CFR, weighted by the number of hospitalizations per week.",
+      "claim_type": "EXPLICIT",
+      "source": "To further define this relationship, a linear statistical model was used to regress the utilization ratio onto CFR. This statistical model was weighted by the number of hospitalizations per week.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section describing the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "3feaee62-ba30-493a-8d8e-6addfc7f6f23",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C91",
+      "claim": "Distribution of CCP to hospitals rose steadily after the FDA EUA of late August 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of CCP in hospitalized patients rose steadily after the FDA EUA of late August 2020, and from mid-September to the end of October, we estimate that CCP was provided to more than 40% of admissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "32d379e8-06ba-443b-8b8c-e567f1dcc904",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C92",
+      "claim": "From mid-September to the end of October, CCP was provided to more than 40% of admissions.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of CCP in hospitalized patients rose steadily after the FDA EUA of late August 2020, and from mid-September to the end of October, we estimate that CCP was provided to more than 40% of admissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "e94cdb2e-8a0d-4a34-a838-6ae353dcb78d",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "claim_id": "C94",
+      "claim": "RCTs from India, Argentina, and the UK reporting that CCP use did not reduce mortality in hospitalized patients were followed by a substantial decline in use that began in November.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RCTs from India (Agarwal et al., 2020), Argentina (Simonovich et al., 2021), and the UK (Horby et al., 2021) reporting that CCP use did not reduce mortality in hospitalized patients were followed by a substantial decline in use that began in November.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to the specific RCTs.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20f8846c-78f4-41ff-a344-19728cfa114b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The FDA authorized CCP therapy through the EAP (starting April 2020) and EUA (August 23, 2020), both restricted to hospitalized patients. Approximately 500,000 patients received CCP during the first year of the pandemic in the USA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, C10, C11, and C83 are well-documented regulatory and descriptive facts supported by citations to official sources and the study's own data collection. These provide essential context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CCP usage per admission peaked in Fall 2020, with more than 40% of inpatients receiving CCP between late September and early November 2020. Peak utilization per capita occurred in early October 2020, after which usage declined sharply.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29, C30, C46, C91, and C92 are directly supported by the data presented in Figures 1 and 2, showing temporal patterns of CCP distribution and utilization rates. The findings are internally consistent across multiple claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "6b8e720e-2f07-426a-9c82-368ee1a41efb",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Following publication of RCTs showing no mortality benefit, CCP usage declined substantially beginning in November 2020, reaching less than 10% by March 2021. This decline was documented by institutional reports and blood banking organizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C15, C21, C72, C73, and C94 are supported by temporal data, citations to specific RCTs, and reports from medical institutions and blood banking organizations. The temporal correlation between negative RCT results and declining usage is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "6844aeb8-0690-4c06-bde7-5a6443de96ff",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There was a strong inverse correlation (r = \u22120.52, p=0.002) between CCP usage per hospital admission and deaths occurring 2 weeks after admission. This correlation was robust across different time lags (1-3 weeks).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C31 present the core statistical finding with appropriate correlation coefficients and p-values, shown in Figure 3 and supplementary figures. The robustness analysis across different time lags strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Potential confounders including hospital admission rates, patient age demographics, and SARS-CoV-2 variants (particularly B.1.1.7) could not explain the inverse correlation between CCP use and mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C32, C53, C54, C55, and C56 present analyses excluding major confounders. The data show no correlation between admissions and mortality (r = \u22120.02), no correlation with age demographics (Figure 3\u2014supplement 3), and low prevalence of B.1.1.7 variant during the study period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "b2a630b0-f9bf-43f1-89cc-eb460459370c",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CCP usage data from Blood Centers of America showed strong correlation (Spearman's rho = 0.953, p<0.001) with EAP transfusion data, capturing >95% of all CCP administered. Mortality data were obtained from OWID and CDC databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C84, C85, C86, and C87 describe the data sources and validation methods. The strong correlation between distributed and transfused units (Figure 1\u2014supplement 1) validates the proxy measure, though the >95% capture estimate relies on citation rather than direct verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "602c061f-3ea8-419e-8112-54cac344a20c",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A weighted linear regression model explained 25% of CFR variance using CCP utilization ratio. The model estimated CFR decreased by 1.8 percentage points per 10 percentage point increase in CCP utilization (p=0.004), with a y-intercept of 25.2% mortality without CCP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, C35, C88, C89, and C90 describe the statistical modeling approach and results. The methods are clearly stated, including the 2-week lag adjustment and weighting by hospitalizations. The R\u00b2 of 0.254 indicates modest explanatory power, appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "fb5da26d-0bdd-4224-b141-daebb944ccf2",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model's y-intercept (25.2% mortality without CCP) aligned with US study averages (23.5%), RECOVERY trial data (24%), and EAP late-treatment data (30%). Extrapolation to 100% CCP usage yielded 7.6% mortality, near the 6.2% reported for early high-titer CCP treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C40 compare model estimates to external data sources. While the y-intercept shows reasonable agreement with cited studies, the extrapolation to 100% usage (C39) extends beyond the data range and is appropriately cautioned by the authors. The comparison provides face validity but doesn't constitute independent validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "baf0657f-6c96-41a0-b989-2d82653a6325",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using the linear model, the authors estimated 29,018 (95% CI: 3,535\u201354,501) excess deaths from reduced CCP usage between mid-November 2020 and February 2021. Alternative scenarios estimated 62,383 fewer deaths with 50% utilization and 94,436\u201395,026 excess deaths had CCP never been deployed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C8, C42, C43, C44, C45, C50, and C79 present excess death estimates based on the linear model. However, these estimates assume causality from an observational correlation (R\u00b2=0.254), which explains only 25% of variance. The wide confidence intervals, potential for unmeasured confounding, and ecological fallacy (population-level correlation \u2260 individual-level effect) make these causal estimates insufficiently supported. The authors acknowledge this limitation with conditional language ('might have resulted'), but the estimates remain speculative without RCT-level evidence of causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "c6d01733-bd8d-4990-bf37-0dc54cadfe4c",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mortality rates differed between high CCP utilization period (18.16% for 257,424 patients, Sept 21\u2013Nov 8, 2020) and low utilization period (20.08% for 1,344,463 patients, Nov 9, 2020\u2013Mar 22, 2021).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 present descriptive statistics from Table 1 comparing two time periods. The data are clearly presented, though the difference in mortality could reflect factors beyond CCP usage given the observational design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "8f33deb3-24cf-46c0-b097-408d2aa572a4",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors review prior evidence on CCP, noting early safety data, correlation between antibody levels and survival, mixed RCT results (some showing no benefit, others showing 40% mortality reduction), and mechanistic evidence including antiviral activity, animal model protection, and anti-inflammatory effects. They argue negative RCTs used late treatment in advanced disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20 and C59-C71 summarize prior literature with appropriate citations. The characterization of mixed RCT evidence is accurate, though the authors' interpretation favoring CCP efficacy represents their perspective on weighing conflicting evidence. The mechanistic evidence cited is properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "046866b2-feed-475a-9bfa-05d1ef68db29",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mortality among hospitalized COVID-19 patients decreased through most of 2020 but began rising in late November/early December 2020, coinciding with reduced CCP use. No new effective therapies were introduced or withdrawn during October 2020\u2013March 2021 except declining CCP use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C22, C23, C57, and C58 describe temporal patterns in mortality and treatment availability. The mortality reversal is documented with citations, and the claim about no new therapies is based on knowledge of clinical practice during this period. However, the temporal coincidence doesn't establish causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "46c2f63d-90c1-43a1-9b10-00b7804b694b",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors argue CCP remains a viable early treatment option that is readily available, inexpensive, and safe. They attribute declining usage to 'plasma hesitancy'\u2014overemphasis on negative RCT results while dismissing other evidence\u2014and note guidelines from AABB and Brazil emphasize early treatment with high-antibody plasma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 and C80-C82 present the authors' interpretation and advocacy position. While CCP availability and safety are well-documented (C75), the characterization of 'plasma hesitancy' (C80) is speculative. The guideline citations (C76, C77) are factual, but the overall argument represents the authors' perspective rather than established fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    },
+    {
+      "id": "eac1c428-cbba-473d-923a-3f81021c6f77",
+      "content_id": "dfee1dda-c552-4a4c-ac67-93022aa2dde9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The decline in CCP use was strongly associated with an increase in mortality among hospitalized COVID-19 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 accurately summarizes the correlation finding (r = \u22120.52, p=0.002) as an association. The language appropriately avoids claiming causation, though the authors' broader interpretation suggests causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:59:37.385998Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "724c31cc-a49a-4a5b-a7b5-cd85d6ac9732",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "393cde08-9030-487a-96ae-7d35934aeaf5",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "47b08565-e214-4e22-8366-ddf01de7a398",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "09c8158f-15f3-4096-a942-2a7a38f66efa",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "6bfd2815-9c9a-4e9a-a50e-da7c7d26405a",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "e5cec7a0-08ee-40ef-95b1-79ad538312de",
+      "result_id": "20f8846c-78f4-41ff-a344-19728cfa114b"
+    },
+    {
+      "claim_id": "506c59a0-b0f6-4d18-9d55-c06273525e0a",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "4e3c1858-9da9-4de7-a63c-d86e57455919",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "02793b49-1d07-445f-8fee-400cce4bfc86",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "af63a99f-9872-4c62-a746-16aca2105f37",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "3feaee62-ba30-493a-8d8e-6addfc7f6f23",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "32d379e8-06ba-443b-8b8c-e567f1dcc904",
+      "result_id": "24a0e72d-a4d6-4ecd-9d9f-a5e86875bab7"
+    },
+    {
+      "claim_id": "f9a434c0-18ff-4a03-ac0b-6877a4c74415",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "b3bb8842-29c6-4aea-88d8-a5e5be191167",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "734b1d96-7775-4b7b-813e-a80b963f0dc3",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "4ddceffc-cf5d-499f-8a90-f1799bb6c67d",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "0b9a2694-49a4-434c-8c4b-a52d243ac28a",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "e94cdb2e-8a0d-4a34-a838-6ae353dcb78d",
+      "result_id": "6b8e720e-2f07-426a-9c82-368ee1a41efb"
+    },
+    {
+      "claim_id": "ecdf20da-6d4d-47e1-99eb-c769811ab1fa",
+      "result_id": "6844aeb8-0690-4c06-bde7-5a6443de96ff"
+    },
+    {
+      "claim_id": "7b6d1470-cc7c-4306-8a58-8b9e854cf373",
+      "result_id": "6844aeb8-0690-4c06-bde7-5a6443de96ff"
+    },
+    {
+      "claim_id": "b3624de7-d6ac-452a-b857-592c565ecebb",
+      "result_id": "6844aeb8-0690-4c06-bde7-5a6443de96ff"
+    },
+    {
+      "claim_id": "2dc356f7-ba1d-4f03-ae36-618e5c6b6eeb",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "04987c63-a25a-4017-897e-20942eb819f5",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "c5ba7f39-a0d8-41fc-9638-abf0dbf6612c",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "2078511b-2596-4b34-853b-844da46b2d9d",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "e6babcf7-bc8f-4b3d-9227-564dab8e4bed",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "f2f6ee80-60db-49a6-88ec-3b3b205271ec",
+      "result_id": "0b702650-a830-4ca0-8b23-7d2aebeea5d7"
+    },
+    {
+      "claim_id": "79cbda6a-856b-4312-9b62-ac789167e242",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "0f8d81f9-44b8-4718-a1a5-05fab7e91351",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "0696ef62-9770-4728-8eb1-c06939ed4bec",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "ae78b3d4-3c19-4409-adcf-d391a3cc535d",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "7ca04717-1305-4b0f-a618-ca406d982be6",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "ba2cdf24-b8ee-4641-b5bd-3870fb651f29",
+      "result_id": "b2a630b0-f9bf-43f1-89cc-eb460459370c"
+    },
+    {
+      "claim_id": "5440b824-5523-4a48-8cdf-a40aca9eb40a",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "4f86c260-f087-4431-8b4f-127f0c6b3a72",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "cee9934c-6406-44d7-ba5c-3978bfa714db",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "dd83024d-1842-4857-a5c1-fb4cba4f7b98",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "40dab90c-e8af-4138-b3f8-2e087f65409e",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "e0bd66b7-d900-4c7c-bdd2-ec6a29a4ed72",
+      "result_id": "602c061f-3ea8-419e-8112-54cac344a20c"
+    },
+    {
+      "claim_id": "e33b174b-f02b-4f04-9d78-058577ee6ed6",
+      "result_id": "fb5da26d-0bdd-4224-b141-daebb944ccf2"
+    },
+    {
+      "claim_id": "d80a4198-bc01-4d56-acb9-cf5ccfd18ba8",
+      "result_id": "fb5da26d-0bdd-4224-b141-daebb944ccf2"
+    },
+    {
+      "claim_id": "3d2581f7-8e75-4071-af56-7742455e5c32",
+      "result_id": "fb5da26d-0bdd-4224-b141-daebb944ccf2"
+    },
+    {
+      "claim_id": "c5f9b568-ccce-4379-961d-ff6bfd9c4512",
+      "result_id": "fb5da26d-0bdd-4224-b141-daebb944ccf2"
+    },
+    {
+      "claim_id": "9e6b3709-94eb-42a5-a19f-db502906c7f0",
+      "result_id": "fb5da26d-0bdd-4224-b141-daebb944ccf2"
+    },
+    {
+      "claim_id": "97b15a31-5f5c-4fea-bfcb-3a2465229cb0",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "3329e6fa-fc64-4dfd-ac32-ad5fb759da95",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "68173c73-b400-4b52-8193-9fc48eb1cc57",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "b4af1654-a82b-4f0c-ab38-68d727fb41ad",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "cd6f2cdf-9815-4532-96f4-1dab0ce7450a",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "af020777-7f21-4173-9354-c573a0c48e73",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "414b3383-d83c-48ca-96af-e5f549819418",
+      "result_id": "baf0657f-6c96-41a0-b989-2d82653a6325"
+    },
+    {
+      "claim_id": "560efe76-b73f-4770-9cdc-d78ad277318e",
+      "result_id": "c6d01733-bd8d-4990-bf37-0dc54cadfe4c"
+    },
+    {
+      "claim_id": "1bb5b0d2-75f4-46cb-a761-20991f1dffeb",
+      "result_id": "c6d01733-bd8d-4990-bf37-0dc54cadfe4c"
+    },
+    {
+      "claim_id": "b0bb760d-16ca-4be7-9f42-ceccdde8a6aa",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "c8371eab-6ec3-4f1f-948e-7aa7cdd4be54",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "1c291ed9-1a63-4fef-b076-c477afca6f6b",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "6df39024-1c31-4476-9dd7-db2698edc846",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "7166f260-0308-433e-973f-5e2b2f79c4a4",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "5ebd52db-f443-41a7-8faa-57d0467193d9",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "8ec48ca6-aabe-4d7d-be96-3d4172c54ccc",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "0135e285-858a-47c3-ae66-4c8c17b87670",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "017262f0-965c-46c4-8f02-0ce87abbd328",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "3d407b96-76d4-45a4-a273-be7d2b85707e",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "d139e8bd-ee1b-4be6-8481-fb5615b7a104",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "db5c4c05-e273-4ada-b13a-d4816b7d48bc",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "e96416aa-a219-49e7-96e4-2ba3b43e0371",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "d828e126-ab05-41ea-94b2-5bd4aad5f7fd",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "7b7fef7b-5090-475d-b2b7-0f147b028d85",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "bcf58baf-bf78-45ef-a64b-7e7aa69f14da",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "3dcdc38a-8111-4ecf-b9ff-3ce41b753a58",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "06090cca-ed1f-4ee6-900a-45b0931b06e5",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "7bd6cc0c-51da-44d2-aaf3-af90fcb9f3b8",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "6188b8d9-a50b-46a0-a05c-a8aab1169f5c",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "18efff37-1f24-480a-9a6b-6cc5244fd6a2",
+      "result_id": "8f33deb3-24cf-46c0-b097-408d2aa572a4"
+    },
+    {
+      "claim_id": "438c4e0d-e4da-4d97-ad55-936637c38a00",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "44f23ba6-6aef-473a-944c-ea3f3d25bf53",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "b626e9f6-eed4-488c-84ee-e64436ec4af7",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "73c1ebd9-322f-4019-83b6-28cb6bf5f100",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "d1978d31-e535-4fef-8039-f8fb5e63eb7f",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "800d233e-15fc-4102-8d2d-810ab785e4a0",
+      "result_id": "046866b2-feed-475a-9bfa-05d1ef68db29"
+    },
+    {
+      "claim_id": "a9f044de-2ac7-497f-988a-35a1549aa4f2",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "b200adb6-b4dd-40ef-9ba9-12b343d3d86b",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "8c43cf12-5187-41ee-a0c2-69e5987fd25b",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "fadc9560-79f6-4eb3-a8b8-ddf514745c71",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "3fa5e256-aed0-4842-ba12-b30ebc4ccebe",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "b88781fc-ec9b-4142-914f-4153811e4b32",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "dcc77169-8618-4db3-b9aa-154c269480c5",
+      "result_id": "46c2f63d-90c1-43a1-9b10-00b7804b694b"
+    },
+    {
+      "claim_id": "253605c0-09c1-4f5c-b52e-364cce79574a",
+      "result_id": "eac1c428-cbba-473d-923a-3f81021c6f77"
+    }
+  ],
+  "comparisons": []
+}

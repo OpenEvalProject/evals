@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The R. pumilio SCN exhibits gross neuroanatomy and neuropeptide distribution (AVP, VIP, GRP) broadly similar to other rodent species, with AVP localized dorsomedially, VIP in the ventral core with processes extending dorsally, and GRP in the central SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by immunofluorescence data (Figure 1) and citations to comparative studies. The anatomical characterization provides essential validation that R. pumilio SCN organization is comparable to nocturnal rodents, establishing the foundation for comparative neurophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "R. pumilio SCN neurons exhibit multiple spontaneous excitability states (firing, depolarized-silent/DLAMOs, hyperpolarized-silent) with robust circadian variation in RMP and SFR, showing higher excitation during the day than at night, similar to nocturnal rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 are well-supported by whole-cell recordings from 111 neurons across 8 animals with appropriate statistical analysis (\u03c7\u00b2=21.498, p<0.001). The data demonstrate that fundamental circadian rhythms in electrical excitability are conserved between diurnal and nocturnal species, with RMP strongly determining electrical states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "R. pumilio SCN neurons show no significant day-night variation in input resistance (Rinput) and no correlation between Rinput and RMP, representing a key difference from nocturnal rodent SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by experimental measurements with appropriate statistical tests (F(1,5.984)=0.878, p=0.385; R\u00b2=0.0305, p=0.0695). This finding is properly contextualized against nocturnal species data, though the mechanistic basis requires further investigation (addressed in later modeling claims).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "R. pumilio SCN neurons exhibit diverse responses to depolarizing pulses (non-adapting, adapting-firing, adapting-to-silent) that do not vary across the day-night cycle, suggesting hardwired cell-type differences rather than time-dependent variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental data from 102 neurons with statistical analysis (\u03c7\u00b2=1.621, p=0.4447) and comparison to mouse SCN. The interpretation that these represent cell-type rather than state-dependent properties is reasonable given the lack of circadian variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "33% of R. pumilio SCN neurons (Type-B cells) display a novel delay-to-fire response following hyperpolarizing pulses, characterized by a low-threshold spike and rebound hyperpolarization with delays ranging from 160-1430 ms, not previously reported in SCN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are well-supported by experimental data from 103 neurons with statistical analysis (\u03c7\u00b2=0.6552, p=0.4183). The novelty claim (C37) is substantiated by comprehensive literature review. This represents a major discovery distinguishing diurnal from nocturnal SCN neurophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A data assimilation algorithm successfully reproduced R. pumilio SCN neuron electrical activity, revealing that ionic current profiles, bifurcation types, and circadian regulation mechanisms (via antiphase sodium/potassium leak currents) are similar to mouse SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by detailed modeling results (Figures 4 and supplements). The model accurately reproduces voltage trajectories and demonstrates that fundamental mechanisms of action potential generation and circadian regulation are conserved across species, consistent with the 'bicycle model'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Frequency adaptation in R. pumilio SCN neurons results from progressive sodium channel inactivation, which is caused by weak potassium currents failing to sufficiently repolarize the membrane, rather than intrinsic differences in sodium channel properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by computational modeling showing similar sodium channel kinetics between adapting and non-adapting cells but different potassium channel properties (Figure 5). The mechanistic explanation is internally consistent and aligns with known biophysical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The delay-to-fire response in Type-B neurons is mediated by transient A-type potassium channels (IA) that de-inactivate during hyperpolarization and remain active during the delay period, as confirmed by pharmacological blockade with 4-AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are strongly supported by integrated computational modeling and experimental validation. The 4-AP experiments (F(2,10)=14.09, p=0.0012) directly confirm the model predictions. The model successfully captures the full range of delay latencies by varying IA conductance and inactivation time constants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Modeling reveals that IA currents suppress spontaneous firing rate in R. pumilio SCN neurons, with this suppressive effect retained with synaptic inputs and being stronger at night in hyperpolarized neurons than during the day in depolarized neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by computational simulations incorporating physiological synaptic conductances (Figure 7). The modeling demonstrates differential effects of IA across circadian states, providing mechanistic insight into how IA may contribute to diurnal SCN function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The fundamental daily rhythm in electrical excitability and responses to depolarizing inputs are conserved between diurnal R. pumilio and nocturnal rodent SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 synthesize experimental and modeling findings, demonstrating conservation of core circadian mechanisms. This conclusion is well-supported by the comprehensive dataset and appropriate comparisons with nocturnal species literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A substantial fraction of R. pumilio SCN neurons exhibit a prominent delay-to-fire response following inhibitory pulses, mediated by IA channels, representing a novel property not previously reported in SCN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by experimental data, computational modeling, and comprehensive literature review. The integration of modeling predictions with pharmacological validation (4-AP experiments) provides strong mechanistic evidence for IA as the determinant of this novel response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "IA channels are present in nocturnal rodent SCN but have fast inactivation kinetics (<22 ms), whereas modeling R. pumilio delay-to-fire behavior requires slow inactivation time constants (~140 ms), explaining the species difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by literature citations and modeling requirements. The explanation for why nocturnal species lack delay-to-fire responses despite having IA channels is mechanistically sound and consistent with known biophysical properties of these channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Variation in IA auxiliary proteins (KChIP and DPLP) could explain both the diversity in delay-to-fire latencies and the decoupling of RMP and Rinput observed in R. pumilio SCN neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 are well-supported by literature on IA channel modulation. However, C71 is speculative, proposing a mechanism without direct experimental evidence in R. pumilio. While plausible and consistent with known biology, this hypothesis requires experimental validation (e.g., expression analysis, functional studies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "IA channels can suppress firing rate and may provide a 'brake' mechanism in diurnal SCN, reducing excitatory input effects during the day and compensating for reduced inhibitory inputs at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C72-C73 are supported by modeling and literature. However, C74-C75 are speculative functional interpretations about diurnal adaptation without direct experimental evidence. While the modeling provides mechanistic plausibility, the proposed functional significance requires validation through behavioral or systems-level experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "R. pumilio SCN shows decoupling of RMP and Rinput compared to mouse SCN, which may reflect different conductance profiles and could provide mechanisms to amplify inhibitory signals at night and reduce sensitivity to excitatory inputs during the day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C76-C77 are well-supported by experimental data and literature comparisons. However, C78-C80 are speculative interpretations about functional consequences without direct experimental validation. The proposed mechanisms are plausible but require testing through voltage-clamp studies or computational modeling with varied conductance profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The data assimilation algorithm successfully performed state and parameter estimation from standard current-clamp recordings without voltage-clamp or custom stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the successful model fitting demonstrated throughout the manuscript. The methodological advance is significant, though the claim would be strengthened by quantitative metrics of model performance and validation against held-out data.",
+    "result_type": "MINOR"
+  }
+]

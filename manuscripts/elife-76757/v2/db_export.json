@@ -1,0 +1,901 @@
+{
+  "submission": {
+    "id": "c395a54a-8eb0-44ea-850e-04e640ef66c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:02:35.360815Z",
+    "updated_at": "2025-12-03T11:02:35.360815Z"
+  },
+  "content": [
+    {
+      "id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "submission_id": "c395a54a-8eb0-44ea-850e-04e640ef66c1",
+      "content_type": "manuscript",
+      "content_text": "# Glycan processing in the Golgi as optimal information coding that constrains cisternal number and enzyme specificity\n\n## Authors\n\n- Alkesh Yadav<sup>1</sup> ([ORCID: 0000-0002-4268-8873](https://orcid.org/0000-0002-4268-8873))\n- Quentin Vagne<sup>2</sup>\n- Pierre Sens<sup>2</sup> ([ORCID: 0000-0003-4523-3791](https://orcid.org/0000-0003-4523-3791))\n- Garud Iyengar<sup>3</sup> ([ORCID: 0000-0001-6546-4154](https://orcid.org/0000-0001-6546-4154)) \u2020\n- Madan Rao<sup>4</sup> ([ORCID: 0000-0001-6210-6386](https://orcid.org/0000-0001-6210-6386)) \u2020\n\n### Affiliations\n\n1. Raman Research Institute Bangalore India ([ROR:01qdav448](https://ror.org/01qdav448))\n2. Laboratoire Physico Chimie Curie, Institut Curie, CNRS UMR168 Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))\n3. Industrial Engineering and Operations Research, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n4. Simons Centre for the Study of Living Machines, National Centre for Biological Sciences Bangalore India ([ROR:03gf8rp76](https://ror.org/03gf8rp76))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany proteins that undergo sequential enzymatic modification in the Golgi cisternae are displayed at the plasma membrane as cell identity markers. The modified proteins, called glycans, represent a molecular code. The fidelity of this glycan code is measured by how accurately the glycan synthesis machinery realizes the desired target glycan distribution for a particular cell type and niche. In this article, we construct a simplified chemical synthesis model to quantitatively analyse the trade-offs between the number of cisternae, and the number and specificity of enzymes, required to synthesize a prescribed target glycan distribution of a certain complexity to within a given fidelity. We find that to synthesize complex distributions, such as those observed in real cells, one needs to have multiple cisternae and precise enzyme partitioning in the Golgi. Additionally, for a fixed number of enzymes and cisternae, there is an optimal level of specificity (promiscuity) of enzymes that achieves the target distribution with high fidelity. The geometry of the fidelity landscape in the multidimensional space of the number and specificity of enzymes, inter-cisternal transfer rates, and number of cisternae provides a measure for robustness and identifies stiff and sloppy directions. Our results show how the complexity of the target glycan distribution and number of glycosylation enzymes places functional constraints on the Golgi cisternal number and enzyme specificity.\n\n## Introduction\n\nA majority of the proteins synthesized in the endoplasmic reticulum (ER) are transferred to the Golgi cisternae for further chemical modification by glycosylation (Alberts, 2002), a process that sequentially and covalently attaches sugar moieties to proteins, catalyzed by a set of enzymatic reactions within the ER and the Golgi cisternae. These enzymes, called glycosyltransferases, are localized in the ER and cis-medial and trans-Golgi cisternae in a specific manner (Varki, 2009; Cummings and Pierce, 2014). Glycans, the final products of this glycosylation assembly line, are delivered to the plasma membrane (PM) conjugated with proteins, whereupon they engage in multiple cellular functions, including immune recognition, cell identity markers, cell-cell adhesion, and cell signalling (Varki, 2009; Cummings and Pierce, 2014; Varki, 2017; Drickamer and Taylor, 1998; Gagneux and Varki, 1999). This glycan code (Gabius, 2018; Dwek, 1996), representing information (Winterburn and Phelps, 1972) about the cell, is generated dynamically, following the biochemistry of sequential enzymatic reactions and the biophysics of secretory transport (Varki, 2017; Varki, 1998; Pothukuchi et al., 2019).\n\nIn this article, we will focus on the role of glycans as markers of cell identity. For the glycans to play this role, they must inevitably represent a molecular code (Gabius, 2018; Varki, 2017; Pothukuchi et al., 2019). While the functional consequences of glycan alterations have been well studied, the glycan code has remained an enigma (Gabius, 2018; Pothukuchi et al., 2019; Bard and Chia, 2016; D\u2019Angelo et al., 2013). We study the fidelity of molecular code generation, that is, the precision and reliability with which the glycan distribution is created. While it has been recognized that fidelity of the glycan code is necessary for reliable cellular recognition (Demetriou et al., 2001), a quantitative measure of fidelity of the mechanism and the constraints that fidelity requirements put on cellular structure and organization are lacking.\n\nThere are two aspects of the cell-type-specific glycan code and the code generation mechanism that have an important bearing on quantifying fidelity. The first is that extant glycan distributions have high complexity (section \u2018Complexity of glycan code\u2019), owing to evolutionary pressures arising from (a) reliable cell-type identification amongst a large set of different cell types in a complex organism, the preservation and diversification of \u2018self-recognition\u2019 (Drickamer and Taylor, 1998), (b) pathogen-mediated selection pressures (Varki, 2009; Varki, 2017; Gagneux and Varki, 1999), and (c) herd immunity within a heterogenous population of cells of a community (Wills and Green, 1995) or within a single organism (Drickamer and Taylor, 1998). We interpret this to mean that the target distribution of glycans for a given cell type is complex; in section \u2018Complexity of glycan code\u2019, we define a quantitative measure for complexity and demonstrate its implications. The second is that the cellular machinery for the synthesis of glycans, which involves sequential chemical processing via cisternal resident enzymes and cisternal transport, is subject to variation and noise (Varki, 2017; Varki, 1998; Pothukuchi et al., 2019); the synthesized glycan distribution is, therefore, a function of cellular parameters such as the number and specificity of enzymes, inter-cisternal transfer rates, and number of cisternae. We will discuss an explicit model of the cellular synthesis machinery in section \u2018Synthesis of glycans in the Golgi cisternae\u2019.\n\nHere, we define fidelity as the minimum achievable Kullback-Leibler (KL) divergence (Cover and Thomas, 2012; MacKay, 2003) between the synthesized distribution of glycans and the target glycan distribution as a function of given cellular parameters, such as the number and specificity of enzymes, inter-cisternal transfer rates, and number of cisternae (section \u2018Optimization problem\u2019). Using a simplified chemical synthesis model, we analyse the trade-offs between the number of cisternae and the number and specificity of enzymes in order to achieve a prescribed target glycan distribution with high fidelity (section \u2018Results of optimization\u2019). Our analysis leads to a number of interesting results, a few of which we list here:\n\nThus, our results imply that the pressure to produce the target glycan code for a given cell type with high fidelity places strong constraints on the cisternal number and enzyme specificity (Sengupta and Linstedt, 2011). Taken together, our quantitative analysis of the trade-offs has deep implications for the non-equilibrium self-assembly of Golgi cisternae and suggests that the control of cisternal number must involve a coupling of non-equilibrium self-assembly of cisternae with enzymatic chemical reaction kinetics (Glick and Malhotra, 1998). This combined dynamics of chemical processing with non-equilibrium membrane dynamics involving fission, fusion, and transport (Sachdeva et al., 2016; Sens and Rao, 2013) opens up a new direction for future research.\n\n### Complexity of glycan code\n\nSince each cell type (in a niche) is identified with a distinct glycan profile (Gabius, 2018; Varki, 2017; Pothukuchi et al., 2019), and this glycan profile is noisy because of the stochastic noise associated with the synthesis and transport (Pothukuchi et al., 2019; Bard and Chia, 2016; D\u2019Angelo et al., 2013), a large number of different cell types can be differentiated only if the cells are able to produce a large set of glycan profiles that are distinguishable in the presence of this noise. Our task is to identify a quantitative measure for the complexity of a glycan profile such that a set of more complex glycan profiles is able to support a larger number of well-separated profiles, and therefore, a larger number of cell types, or equivalently, a more complex organism (a rigorous definition of complexity can be given in terms of the KL metric [Cover and Thomas, 2012; MacKay, 2003] between two glycan profiles. We declare that two profiles are distinguishable only if the KL distance between the profiles is more than a given tolerance. This tolerance is an increasing function of the noise. We define the complexity of a set of possible glycan profiles as the size of the largest subset such that the KL distance of any pair of profiles is larger than the tolerance). Furthermore, we would like to be able to estimate the complexity of a glycan profile from molecular structure (MSMS) measurements (Cummings and Crocker, 2020; Subramanian et al., 2018; Sahadevan et al., 2014).\n\nIn order to identify such a quantitative measure of complexity, we first need a consistent way of smoothening or coarse-graining the raw glycan profiles obtained from MSMS measurements to remove measurement and synthesis noise. Here, we denoise the glycan profile by approximating it by a Gaussian mixture model (GMM) with a specified number of components that are supported on a finite set of indices (Bacharoglou, 2010). Since the size of the set of all possible $m$-component Gaussian densities is an increasing function of $m$, we define the complexity of a mixture of Gaussians as the number of components $m$. Figure 1 demonstrates that the value of $m$ at which the $m$-component GMM approximation of the target profile saturates is a good measure of complexity. Using this definition we see that the complexity of the glycan profiles of various organisms correlates well with the number of cell types in an organism (details of the procedure are given in Appendix 1). We will now describe a general model of the cellular machinery that is capable of synthesizing glycans of any complexity. We expect that cells need a more elaborate mechanism to produce profiles from a more complex set.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig1-v2.jpg)\n\n**Figure 1.:** (a) 3-Gaussian mixture model (GMM) and 20-GMM approximation for the relative abundance of glycans taken from mass spectrometry coupled with determination of molecular structure (MSMS) data of planaria Schmidtea mediterranea, Hydra magnipapillata, and human neutrophils. (b) The change in the Kullback\u2013Leibler (KL) divergence $D\u2062(p_{T}\u2225p_{G\u2062M\u2062M}^{(m)})$ as a function of the number of GMM components $m$. The KL divergence for planaria saturates at $m=5$, for hydra at $m=11$, and for human cells at $m=20$. Thus, the number of components required to approximate the glycan profile correlates well with the complexity of the organism. Details are given in Appendix 1.\n\n### Synthesis of glycans in the Golgi cisternae\n\nThe glycan display at the cell surface is a result of proteins that flux through and undergo sequential chemical modification in the secretory pathway, comprising an array of Golgi cisternae situated between the ER and PM, as depicted in Figure 2. Glycan-binding proteins (GBPs) are delivered from the ER to the first cisterna, whereupon they are processed by the resident enzymes in a sequence of steps that constitute the N-glycosylation process (Varki, 2009). A generic enzymatic reaction in the cisterna involves the catalysis of a group transfer reaction in which the monosaccharide moiety of a simple sugar donor substrate, for example, UDP-Gal, is transferred to the acceptor substrate, by a Michaelis\u2013Menten (MM)-type reaction (Varki, 2009)\n\n$$\nAcceptor+glycosyl donor+Enzyme\u21cc\\omega_{b}\\omega_{f}[Acceptor\u22c5glycosyl donor\u22c5Enzyme]\u2192\\omega_{c}glycosylated acceptor+nucleotide+Enzyme\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig2-v2.jpg)\n\n**Figure 2.:** Represented here is the array of Golgi cisternae (blue) indexed by $j=1,\u2026,N_{C}$ situated between the endoplasmic reticulum (ER) and plasma membrane (PM). Glycan-binding proteins $Pc_{1}^{(1)}$ are injected from the ER to cisterna-1 at rate $q$. Superimposed on the Golgi cisternae is the transition network of chemical reactions (column) \u2013 inter-cisternal transfer (rows), the latter with rates $\\mu^{(j)}$. $Pc_{1}^{(1)}$ denotes the acceptor substrate in compartment $j$ and the glycosyl donor $c_{0}$ is chemostated in each cisterna. This results in a distribution (relative abundance) of glycans displayed at the PM (red curve), which is representative of the cell type.\n\nFrom the first cisterna, the proteins with attached sugars are delivered to the second cisterna at a given inter-cisternal transfer rate, where further chemical processing catalyzed by the enzymes resident in the second cisterna occurs. This chemical processing and inter-cisternal transfer continue until the last cisterna, thereupon the fully processed glycans are displayed at the PM (Varki, 2009). The network of chemical processing and inter-cisternal transfer forms the basis of the physical model that we will describe next.\n\nAny physical model of such a network of enzymatic reactions and cisternal transfer needs to be augmented by reaction and transfer rates and chemical abundances. To obtain the range of allowed values for the reaction rates and chemical abundances, we use the elaborate enzymatic reaction models, such as the KB2005 model (Uma\u00f1a and Bailey, 1997; Krambeck et al., 2009; Krambeck and Betenbaugh, 2005) (with a network of 22,871 chemical reactions and 7565 oligosaccharide structures) that predict the N-glycan distribution based on the activities and levels of processing enzymes distributed in the Golgi cisternae of mammalian cells. For the allowed rates of cisternal transfer, we rely on the recent study by Ungar and coworkers (Fisher et al., 2019; Fisher and Ungar, 2016), whose study shows how the overall Golgi transit time and cisternal number can be tuned to engineer a homogeneous glycan distribution.\n\n## Model\n\n### Chemical reaction and transport network in cisternae\n\nWe consider an array of $N_{C}$ Golgi cisternae, labelled by $j=1,\u2026,N_{C}$, between the ER and PM (Figure 2). GBPs, denoted as $Pc_{1}^{(1)}$, are delivered from the ER to cisterna-1 at an injection rate $q$. It is well established that the concentration of the glycosyl donor in the jth cisterna is chemostated (Varki, 2009; Hirschberg et al., 1998; Caffaro and Hirschberg, 2006; Berninsone and Hirschberg, 2000), thus in our model we hold its concentration $c_{0}^{(j)}$ constant in time for the jth cisterna. The acceptor $Pc_{1}^{(1)}$ reacts with $c_{0}^{(1)}$ to form the glycosylated acceptor $Pc_{2}^{(1)}$, following an MM reaction (1) catalyzed by the appropriate enzyme. The acceptor $Pc_{2}^{(1)}$ has the potential of being transformed into $Pc_{3}^{(1)}$, and so on, provided the requisite enzymes are present in that cisterna. This leads to the sequence of enzymatic reactions $Pc_{1}^{(1)}\u2192Pc_{2}^{(1)}\u2192\u2026Pc_{k}^{(1)}\u2192\u2026$, where $k$ enumerates the sequence of glycosylated acceptors using a consistent scheme (such as in Uma\u00f1a and Bailey, 1997). The glycosylated GBPs are transported from cisterna-1 to cisterna-2 at an inter-cisternal transfer rate $\\mu^{(1)}$, whereupon similar enzymatic reactions proceed. The processes of intra-cisternal chemical reactions and inter-cisternal transfer continue to the other cisternae and form a network as depicted in Figure 2. Although, in this article, we focus on a sequence of reactions that form a line graph, the methodology we propose extends to tree-like reaction sequences, and more generally to reaction sequences that form a directed acyclic graph.\n\nLet $N_{s}-1$ denote the maximum number of possible glycosylation reactions in each cisterna $j$, catalyzed by enzymes labelled as $E_{\\alpha}^{(j)}$, with $\\alpha=1,\u2026,N_{E}$, where $N_{E}$ is the total number of enzyme species in each cisterna. Since many substrates can compete for the substrate-binding site on each enzyme, one expects in general that $N_{s}\u226bN_{E}$. The configuration space of the network in Figure 2 is $N_{s}\\timesN_{C}$ . For the N-glycosylation pathway in a typical mammalian cell, $N_{s}=2\\times10^{4}$, $N_{E}$ = 10\u201320, and $N_{C}$ = 4\u20138 (Uma\u00f1a and Bailey, 1997; Krambeck and Betenbaugh, 2005; Krambeck et al., 2009; Fisher and Ungar, 2016). We account for the fact that the enzymes have specific cisternal localization by setting their concentrations to zero in those cisternae where they are not present.\n\nThe action of enzyme $E_{\\alpha}^{(j)}$ on the substrate $Pc_{k}^{(j)}$ in cisterna $j$ is given by\n\n$$\nPc_{k}^{(j)}+E_{\\alpha}^{(j)}\u21cc\\omega_{b}(j,k,\\alpha)\\omega_{f}(j,k,\\alpha)c_{0}^{(j)}[E_{\\alpha}^{(j)}\u2212Pc_{k}^{(j)}\u2212c_{0}^{(j)}]\u2192\\omega_{c}(j,k,\\alpha)Pc_{k+1}^{(j)}+E_{\\alpha}^{(j)}\n$$\n\nwhere $k=1,\u2026\u2062N_{s}-1$. In general, the forward, backward, and catalytic rates $\\omega_{f}$, $\\omega_{b}$, and $\\omega_{c}$, respectively, depend on the cisternal label $j$, the reaction label $k$, and the enzyme label $\\alpha$, which parametrize the MM reactions (Price and Stevens, 1999). For instance, structural studies on glycosyltransferase-mediated synthesis of glycans (Moremen and Haltiwanger, 2019) would suggest that the forward rate $\\omega_{f}$ depends on the binding energy of the enzyme $E_{\\alpha}^{(j)}$ to acceptor substrate $Pc_{k}^{(j)}$ and a physical variable that characterizes the cisternae.\n\nA potential candidate for such a cisternal variable is pH (Kellokumpu, 2019), whose value is maintained homeostatically in each cisterna (Casey et al., 2010); changes in pH can affect the shape of an enzyme (substrate) or its charge properties, and in general the reaction efficiency of an enzyme has a pH optimum (Price and Stevens, 1999). Another possible candidate for a cisternal variable is membrane bilayer thickness (Dmitrieff et al., 2013); indeed, both pH (Llopis et al., 1998) and membrane thickness are known to have a gradient across the Golgi cisternae. We take $\\omega_{f}\u2062(j,k,\\alpha)\u221dP^{(j)}\u2062(k,\\alpha)$, where $P^{(j)}\u2062(k,\\alpha)\\in(0,1)$ is the binding probability of enzyme $E_{\\alpha}^{(j)}$ with substrate $Pc_{k}^{(j)}$, and define the binding probability $P^{(j)}\u2062(k,\\alpha)$ using a biophysical model, similar in spirit to the Monod-Wyman-Changeux model of enzyme kinetics (Monod et al., 1965; Changeux and Edelstein, 2005) that depends on enzyme-substrate-induced fit.\n\nLet $\u2113_{\\alpha}^{(j)}$ and $\u2113_{k}$ denote, respectively, the optimal \u2018shape\u2019 for enzyme $E_{\\alpha}^{(j)}$ and the substrate $Pc_{k}^{(j)}$. We assume that the mismatch (or distortion) energy between the substrate $k$ and enzyme $E_{\\alpha}^{(j)}$ is $\u2225\u2113_{k}-\u2113_{\\alpha}^{(j)}\u2225$, with a binding probability given by\n\n$$\nP^{(j)}\u2062(k,\\alpha)=exp\u2061(-\\sigma_{\\alpha}^{(j)}\u2062\u2225\u2113_{k}-\u2113_{\\alpha}^{(j)}\u2225)\n$$\n\nwhere $\u2225\u22c5\u2225$ is a distance metric defined on the space of $\u2113_{\\alpha}^{(j)}$ (e.g. the square of the $\u2113_{2}$-norm would be related to an elastic distortion model [Savir and Tlusty, 2007]) and the vector $\\sigma\u2261[\\sigma_{\\alpha}^{(j)}]$ parametrizes enzyme specificity. This distortion model captures the above idea that the reaction between the flexible enzyme and fixed substrate is facilitated by an induced fit. A large value of $\\sigma_{\\alpha}^{(j)}$ indicates a highly specific enzyme, a small value of $\\sigma_{\\alpha}^{(j)}$ indicates a promiscuous enzyme. It is recognized that the degree of enzyme specificity or sloppiness is an important determinant of glycan distribution (Varki, 2009; Roseman, 2001; Hossler et al., 2007; Yang et al., 2018).\n\nOur synthesis model is mean field, in that we ignore stochasticity in glycan synthesis that may arise from low copy numbers of substrates and enzymes, multiple substrates competing for the same enzymes, and kinetics of inter-cisternal transfer (Uma\u00f1a and Bailey, 1997; Krambeck et al., 2009; Krambeck and Betenbaugh, 2005). Then the usual MM steady-state conditions for (2), which assumes that the concentration of the intermediate enzyme-substrate complex does not change with time, imply that\n\n$$\n[E_{\\alpha}^{(j)}\u2212Pc_{k}^{(j)}\u2212c_{0}^{(j)}]=\\frac{\\omega_{f}(j,k,\\alpha)c_{0}^{(j)}}{\\omega_{b}(j,k,\\alpha)+\\omega_{c}(j,k,\\alpha)}E_{\\alpha}^{(j)}c_{k}^{(j)}.{}\n$$\n\nwhere $c_{k}^{(j)}$ is the concentration of the acceptor substrate $Pc_{k}^{(j)}$ in compartment $j$.\n\nTogether with the constancy of the total enzyme concentration, $[E_{\\alpha}^{(j)}]_{tot}=E_{\\alpha}^{(j)}+\\sumk=1N_{s}$ $[E_{\\alpha}^{(j)}\u2212Pc_{k}^{(j)}\u2212c_{0}^{(j)}]$, this immediately fixes the kinetics of product formation (not including inter-cisternal transport),\n\n$$\n\\frac{dc_{k+1}^{(j)}}{dt}=\\sum\\alpha=1N_{E}\\frac{V(j,k,\\alpha)P^{(j)}(k,\\alpha)c_{k}^{(j)}}{M(j,k,\\alpha)(1+\\sumk^{\u2032}=1N_{s}\\frac{P^{(j)}(k^{\u2032},\\alpha)c_{k^{\u2032}}^{(j)}}{M(j,k^{\u2032},\\alpha)})}k=1,\u2026,N_{S};j=1,\u2026,N_{C}\n$$\n\nwhere\n\n$$\nM(j,k,\\alpha)=\\frac{\\omega_{b}(j,k,\\alpha)+\\omega_{c}(j,k,\\alpha)}{\\omega_{f}(j,k,\\alpha)c_{0}^{(j)}}P^{(j)}(k,\\alpha)\n$$\n\nand\n\n$$\nV\u2062(j,k,\\alpha)=\\omega_{c}\u2062(j,k,\\alpha)\u2062[E_{\\alpha}^{(j)}]_{t\u2062o\u2062t}.\n$$\n\nThis reparametrization of the reaction rates $\\omega_{f},\\omega_{b},\\omega_{c}$ in terms of $M,V$ is convenient since it relates to experimentally measurable parameters $V_{m\u2062a\u2062x}$ and MM constant $K_{M}$, for each $(j,k,\\alpha)$, which can be easily read out (see Appendix 2). As is the usual case, the maximum velocity $V_{m\u2062a\u2062x}$ is not an intrinsic property of the enzyme because it is dependent on the enzyme concentration $[E_{\\alpha}^{(j)}]_{t\u2062o\u2062t}$; while $K_{M}\u2062(j,k,\\alpha)=M\u2062(j,k,\\alpha)\u2062c_{0}^{(j)}/P^{(j)}\u2062(k,\\alpha)$ is an intrinsic parameter of the enzyme and the enzyme-substrate interaction. The enzyme catalytic efficiency, the so-called \u201c$k_{cat}/K_{M}$\u201d $\u221dP^{(j)}(k,\\alpha)$, is high for perfect enzymes (Bar-Even et al., 2015) with minimum mismatch.\n\nWe now add to this chemical reaction kinetics the rates of injection ($q$) and inter-cisternal transport $\\mu^{(j)}$ from the cisterna $j$ to $j+1$; in Appendix 3, we display the complete set of equations that describe the changes in the substrate concentrations $c_{k}^{(j)}$ with time. These kinetic equations automatically obey the conservation law for the protein concentration ($p$). At steady state, these kinetic equations lead to a set of nonlinear recursion equations (15)-(16) that are displayed in Appendix 3, which can be solved numerically to obtain the steady-state glycan concentrations, $c\u2261c_{k}^{(j)}$, as a function of the independent vectors $M\u2261[M(j,k,\\alpha)]$, $V\u2261[V(j,k,\\alpha)]$, and $L\u2261[P^{(j)}(k,\\alpha)]$, the transport rates $\\mu\u2261[\\mu^{(j)}]$ and specificity, $\\sigma\u2261[\\sigma_{\\alpha}^{(j)}]$.\n\n### Optimization problem\n\nLet $c^{\u2217}$ denote the \u2018target\u2019 concentration distribution, normalized to the distribution so that $\\sum_{k=1}^{N_{s}}c_{k}^{*}=1$, for a particular cell type, that is, the goal of the sequential synthesis mechanism described in the section \u2018Chemical reaction and transport network in cisternae\u2019 is to approximate $c^{\u2217}$. Let $c\u00af$ denote the normalized steady-state glycan concentration distribution displayed on the PM. Then Equation 16 implies that $c\u00af_{k}=\\mu^{(N_{C})}\u2062c_{k}^{(N_{C})}$, $k=1,\u2026,N_{s}$. We measure the fidelity $F(c^{\u2217}\u2016c\u00af)$ between the $c^{\u2217}$ and $c\u00af$ by the ratio of the KL divergence $D(c^{\u2217}\u2016c)$ (Cover and Thomas, 2012; MacKay, 2003) to the entropy\u2009$H(c^{\u2217})$\n\n$$\nF(c^{\u2217}\u2016c\u00af):=\\frac{D(c^{\u2217}\u2016c\u00af)}{H(c^{\u2217})}=\\frac{\\sumk=1N_{s}c_{k}^{\u2217}ln\u2061(\\frac{c_{k}^{\u2217}}{c\u00af_{k}})=\\sumk=1N_{s}c_{k}^{\u2217}ln\u2061(\\frac{c_{k}^{\u2217}}{c_{k}^{(N_{C})}\\mu^{(N_{C})}})}{\\sumk=1N_{s}c_{k}^{\u2217}ln\u2061(1/c_{k}^{\u2217})}\n$$\n\nThe reason why we divide the KL divergence by the entropy of the target distribution is to enable comparison of the fidelity of the mechanism across target distributions of different complexity. Note that high fidelity corresponds to low values of $F(c^{\u2217}\u2016c\u00af)$, vice versa.\n\nThus, the problem of designing a sequential synthesis mechanism that approximates $c^{\u2217}$ for a given enzyme specificity $\\sigma$, transport rate $\\mu$, number of enzymes $N_{E}$, and number of cisternae $N_{C}$ is given by\n\n$$\nOptimization\u00a0A:D\u00af(\\sigma,N_{E},N_{C},c^{\u2217}):=min\\mu,\u00a0M,\u00a0V,\u00a0L\u00a0\\geq0\u00a0F(c^{\u2217}\u2016c\u00af),\n$$\n\nwhere we emphasize that the optimum fidelity $D\u00af(\\sigma,N_{E},N_{C},c^{\u2217})$ is a function of $(\\sigma,N_{E},N_{C},c^{\u2217})$. Note that there is a separation of time scales implicit in Optimization A \u2013 the chemical kinetics of the production of glycans and their display on the PM happens over cellular time scales, while the issues of trade-offs and changes of parameters are related to evolutionary timescales.\n\nOptimization A, though well-defined, is a hard problem since the steady-state concentrations (16) are not explicitly known in terms of the parameters $(\\mu,M,V,L)$. In Appendix 4, we formulate an alternative problem Optimization B in which the steady-state concentrations are defined explicitly in terms of new parameters $\\mu,\u00a0R$, and $L$, and prove that Optimization A and Optimization B are exactly equivalent. This is a crucial insight that allows us to obtain all the results that follow. In Appendix 5, we describe the variant of the sequential quadratic programming (SQP) (Boyd and Vandenberghe, 2004), which we use to numerically solve the optimization problem.\n\n## Results\n\nThe dimension of the optimization search space is extremely large $\u2248O\u2062(N_{s}\\timesN_{E}\\timesN_{C})$. To make the optimization search more manageable, we make the following simplifying assumptions:\n\nThese restrictions significantly reduce the dimension of the optimization search, so much so that in certain limits we can solve the problem analytically (in Appendix 6, we show that Equation 21 can be solved analytically in the limit $N_{s}\u226b1$ since the glycan index $k$ can be approximated by a continuous variable, and the recursion relations for the steady-state glycan concentrations Equations 15\u201316 can be cast as a matrix differential equation. This allows us to obtain an explicit expression for the steady-state concentration in terms of the parameters $(R,L)$). This helps us obtain some useful heuristics (Appendix 6) on how to tune the parameters, for example, $N_{E}$, $N_{C}$, $\\sigma$, and others, in order to generate glycan distributions $c$ of a given complexity. These heuristics inform our more detailed optimization using \u2018realistic\u2019 target distributions.\n\nThe calculations in Appendix 6 imply, as one might expect, that the synthesis model needs to be more elaborate, that is, needs a larger number of cisternae $N_{C}$ or a larger number of enzymes $N_{E}$, in order to produce a more complex glycan distribution. For a real cell type in a niche, the specific elaboration of the synthesis machinery would depend on a variety of control costs associated with increasing $N_{E}$ and $N_{C}$. While an increase in the number of enzymes would involve genetic and transcriptional costs, the costs involved in increasing the number of cisternae could be rather subtle.\n\nNotwithstanding the relative control costs of increasing $N_{E}$ and $N_{C}$, it is clear from the special case that increasing the number of cisternae achieves the goal of obtaining an accurate representation of the target distribution. Suppose the target distribution $c_{k}^{*}=\\delta\u2062(k-M)$ for a fixed $M\u226b1$, that is, $c_{k}^{\u2217}=1$ when $k=M$, and 0 otherwise, and that the $N_{E}$ enzymes that catalyze the reactions are highly specific. In this limit, Optimization A reduces to a simple enumeration exercise (Jaiman and Thattai, 2018): clearly, one needs $N_{E}=M$ enzymes, one for each $k=1,\u2026,M$ reactions, in order to generate $P\u2062c_{M}$. For a single Golgi cisterna with a finite cisternal residence time (finite $\\mu$), the chemical synthesis network will generate a significant steady-state concentration of lower index glycans $P\u2062c_{k}$ with $k<M$, contributing to a low fidelity. To obtain high fidelity, one needs multiple Golgi cisternae with a specific enzyme partitioning $(E_{1},E_{2},\u2026,E_{M})$ with $E_{j}$ enzymes in cisterna $j=1,\u2026,N_{c}$. This argument can be generalized to the case where the target distribution is a finite sum of delta functions. The more general case, where the enzymes are allowed to have variable specificity, needs a more detailed study, to which we turn to next.\n\n### Target distribution from coarse-grained MSMS\n\nAs discussed in the section \u2018Complexity of glycan code\u2019, we obtain the target glycan distribution from glycan profiles for real cells using MSMS measurements (Cummings and Crocker, 2020). The raw MSMS data, however, is not suitable as a target distribution. This is because it is very noisy, with chemical noise in the sample and Poisson noise associated with detecting discrete events being the most relevant (Du et al., 2008). This means that many of the small peaks in the raw data are not part of the signal, and one has to \u2018smoothen\u2019 the distribution to remove the impact of noise.\n\nWe use MSMS data from human T-cells (Cummings and Crocker, 2020) for our analysis. As discussed in the section \u2018Complexity of glycan code\u2019, the GMMs are often used to approximate distributions with a mixed number of modes or peaks (MacKay, 2003), or in our setting, a given fixed complexity. Here, we use a variation of the GMMs (see Appendix 1 for details) to create a hierarchy of increasingly complex distributions to approximate the MSMS raw data. Thus, the 3-GMM and 20-GMM approximations represent the low- and high-complexity benchmarks, respectively. In Appendix 1, we show that the likelihood for the glycan distribution of the human T-cell saturates at 20 peaks. Thus, statistically the human T-cell glycan distribution is accurately approximated by 20 peaks.\n\nThis hierarchy allows us to study the trade-off between the complexity of the target distribution and the complexity of the synthesis model needed to generate the distribution as follows. Let $T^{(i)}$ denote the $i$-component GMM approximation for the human T-cell MSMS data. We sample this target distribution at indices $k=1,\u2026,N_{s}$, that represent the glycan indices, and then renormalize to obtain the discrete distribution ${T_{k}^{(i)},k=1,\u2026,N_{s}}$. To highlight the role of target distribution complexity, we focus on the 3-GMM $T^{(3)}$ (low complexity) and 20-GMM approximation $T^{(20)}$ (high complexity) in describing our results.\n\n### Trade-offs between number of enzymes, number of cisternae, and enzyme specificity to achieve given complexity\n\nWe summarize the main results that follow from an optimization of the parameters of the glycan synthesis machinery to a given target distribution in Figure 3 and Figure 4.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig3-v2.jpg)\n\n**Figure 3.:** Trade-offs amongst the glycan synthesis parameters, enzyme specificity $\\sigma$, cisternal number $N_{C}$, and enzyme number $N_{E}$ to achieve a complex target distribution $c^{\u2217}$.(a, b) Normalised Kullback\u2013Leibler distance $D\u00af\u2062(\\sigma,N_{E},N_{C},c^{\u2217})$ as a function of $\\sigma$ and $N_{C}$ (for fixed $N_{E}=3$), (c, d) $D\u00af\u2062(\\sigma,N_{E},N_{C},c^{\u2217})$ as a function of $\\sigma$ and $N_{E}$ (for fixed $N_{C}=3$), with the target distribution $c^{\u2217}$ set to the 3-Gaussian mixture model (GMM) (less complex) and 20-GMM (more complex) approximations for the human T-cell mass spectrometry coupled with determination of molecular structure (MSMS) data. $D\u00af\u2062(\\sigma,N_{E},N_{C},c^{\u2217})$ is a convex function of $\\sigma$ for each $(N_{E},N_{C},c^{\u2217})$, decreasing in $N_{C},N_{E}$ for each $(\\sigma,c^{\u2217})$, increasing in the complexity of $c^{\u2217}$ for fixed $(\\sigma,N_{E},N_{C})$. The specificity $\\sigma_{min}\u2062(c^{\u2217},N_{E},N_{C})=argmin_{\\sigma}\u2062{D\u00af\u2062(\\sigma,N_{E},N_{C},c^{\u2217})}$ that minimizes the error for given $(N_{E},N_{C},c^{\u2217})$ is an increasing function of $N_{C},N_{E}$ and the complexity of the target distribution $c^{\u2217}$.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig4-v2.jpg)\n\n**Figure 4.:** The target $c^{\u2217}$ is taken from 3-Gaussian mixture model (GMM) (less complex) and 20-GMM (more complex) approximations of the human T-cell mass spectrometry coupled with determination of molecular structure (MSMS) data. (a, b) Optimum fidelity $min_{\\sigma}\u2061{D\u00af\u2062(\\sigma,N_{C},N_{E},c^{\u2217})}$ as a function of $(N_{E},N_{C})$. More complex distributions require either a larger $N_{E}$ or $N_{C}$. The marginal impact of increasing $N_{E}$ and $N_{C}$ on the fidelity $D\u00af$ is approximately equal. (c, d) Enzyme specificity $\\sigma_{min}$ that achieves $min_{\\sigma}\u2061{D\u00af\u2062(\\sigma,N_{C},N_{E},c^{\u2217})}$ as a function of $(N_{E},N_{C})$. $\\sigma_{min}$ increases with increasing $N_{E}$ or $N_{C}$. To synthesize the more complex 20-GMM approximation with high fidelity requires enzymes with higher specificity $\\sigma_{min}$ compared to those needed to synthesize the broader, less complex 3-GMM approximation.\n\nOur results are consistent with those in Fisher et al., 2019. They optimize incoming glycan ratio, transport rate, and effective reaction rates in order to synthesize a narrow target distribution centred around the desired glycan. The ability to produce specific glycans without much heterogeneity is an important goal in the pharmaceutical industry. They define heterogeneity as the total number of glycans synthesized and show that increasing the number of compartments $N_{C}$ decreases heterogeneity and increases the concentration of the specific glycan. They also show that the effect of compartments in reducing heterogeneity cannot be compensated by changing the transport rate. Our results are entirely consistent with theirs \u2013 we have shown that $D\u00af$ decreases as we increase $N_{C}$. Thus, if the target distribution has a single sharp peak, increasing $N_{C}$ will reduce the heterogeneity in the distribution.\n\nWe insert an important cautionary note here. It would seem that the results in Figure 4 imply that there is an approximate $N_{E}-N_{C}$ symmetry in the model, that is, increasing either $N_{E}$ or $N_{C}$ affects the fidelity, optimal enzyme specificity, and the sensitivity in approximately the same way. This would be an erroneous inference, and is a consequence of the distortion model we have used for calculating the binding probabilities of substrates with enzymes. The root cause for this apparent symmetry is that we have allowed for all enzymes to catalyze reactions in all cisternae (albeit with different efficiencies). This symmetry is violated by simply restricting the activity of the enzymes to be dependent on the cisternae. A simple realization of this in terms of the distortion model is given in Appendix 7.\n\n### Optimal partitioning of enzymes in cisternae\n\nHaving studied the optimum $N_{E},N_{C},\\sigma$ to attain a given target distribution with high fidelity, we ask what is the optimal partitioning of the $N_{E}$ enzymes in these $N_{C}$ cisternae? Answering this within the context of our chemical reaction model (section \u2018Chemical reaction and transport network in cisternae\u2019) requires some care since it incorporates the following enzymatic features: (a) enzymes with a finite specificity $\\sigma$ can catalyze several reactions, although with an efficiency that varies with both the substrate index $k$ and cisternal index $j$, and (b) every enzyme appears in each cisternae; however, their reaction efficiencies depend on the enzyme levels, the enzymatic reaction rates, and the enzyme matching function $L$, all of which depend on the cisternal index $j$.\n\nTherefore, instead of focusing on the cisternal partitioning of enzymes, we identify the chemical reactions that occur with high propensity in each cisternae. For this we define an effective reaction rate $R_{e\u2062f\u2062f}\u2062(j,k)$ for $P\u2062c_{k}\u2192P\u2062c_{k+1}$ in the jth cisterna as\n\n$$\nR_{e\u2062f\u2062f}\u2062(j,k)=\\sum\\alpha=1N_{E}R_{\\alpha}^{(j)}\u2062P^{(j)}\u2062(k,\\alpha).\n$$\n\nAccording to our model presented in the section \u2018Chemical reaction and transport network in cisternae\u2019, the list of reactions with high effective reaction rates in each cisterna corresponds to a cisternal partitioning of the perfect enzymes. In a future study, we will consider a Boolean version of a more complex chemical model to address more clearly the optimal enzyme partitioning amongst cisternae.\n\nFigure 5ai shows the heat map of the effective reaction rates in each cisterna for the optimal that minimizes the normalized KL distance to the 20-GMM target distribution $T^{(20)}$ (see Figure 5aii). The optimized glycan profile displayed in Figure 5aiii is very close to the target. An interesting observation from Figure 5ai is that the same reaction can occur in multiple cisternae.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig5-v2.jpg)\n\n**Figure 5.:** (a) Heat map of the effective reaction rates in each cisterna (representing the optimal enzyme partitioning) and the steady-state concentration in the last compartment ($c^{(N_{C})}$) for the 20-Gaussian mixture model (GMM) target distribution. Here, $N_{E}=5$, $N_{C}=7$, normalized $D\u2062(T^{(20)}\u2225c^{(N_{C})})/H\u2062(T^{(20)})=0.11$. (b) Effective reaction rates after swapping the optimal enzymes of the fourth and second cisternae. The displayed glycan profile is considerably altered from the original profile.\n\nKeeping everything else fixed at the optimal value, we ask whether simply repartitioning the optimal enzymes amongst the cisternae alters the displayed glycan distribution. In Figure 5bi, we have exchanged the enzymes of the fourth and second cisterna. The glycan profile after enzyme partitioning (see Figure 5biii) is now completely altered (compare Figure 5bii with Figure 5biii). Thus, one can generate different glycan profiles by repartitioning enzymes amongst the same number of cisternae (Jaiman and Thattai, 2018).\n\n### Geometry of the fidelity landscape\n\nHere we show that the optimum solution is not unique, rather it is highly degenerate, with several equally good optimum solutions. Thus the multidimensional fidelity landscape in $R$, $\\mu$, $L$, and $\\sigma$ is typically rugged. We analyse the geometry of this fitness landscape by doing a local Hessian analysis about the optimal solutions.\n\n### Degeneracies in the synthesis model\n\nThe synthesis model is highly degenerate, in the sense that many combinations of parameters give rise to the same glycan profile. This makes the optimization non-convex as there are many equally good minima. These degeneracies are both discrete and continuous. The continuous degeneracies correspond to regions in reaction rate ($R$)-transport rate ($\\mu$) space moving along which does not change the concentration profile. The discrete degeneracies are disconnected regions in the parameter space which correspond to the same glycan profile. The number of discrete degeneracies increases exponentially with increase in ($N_{E},N_{C}$). We also find that the fraction of initial conditions converging to a solution close to the global minima increases on increasing ($N_{E},N_{C}$). Technical details of these issues are discussed in Appendix 8.\n\n### Stiff and sloppy directions\n\nWe analyse the change in fidelity on small perturbations in $R$, $\\mu$, $L$, and $\\sigma$ around the optimal solution. This allows us to determine where the cell needs to develop a tighter control mechanism (stiff directions) and where it has more leeway around the optimal values (sloppy directions). We do this by analysing the eigenvalues and eigenvectors of the Hessian around the optimal point (details in Appendix 9). We find that small perturbations around the optimal values in $\\sigma$ change the glycan profile a lot more compared to perturbations in the other parameters and this stiffness in $\\sigma$ generally decreases on increasing $N_{E},N_{C}$ (Figure 6a\u2013c). Small perturbations in $\\mu$ and some $L$ directions around the optimum also significantly alter the glycan profile and the stiffness increases on increasing $N_{C},N_{E}$, eventually becoming comparable to $\\sigma$. The glycan profile is robust to perturbations in most $R$ and some $L$ directions (Figure 6b). The total average stiffness of the optimization parameters, defined by the mean of all eigenvalues of the hessian, decreases on increasing $N_{E},N_{C}$ (Figure 6c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig6-v2.jpg)\n\n**Figure 6.:** (a) Eigenvectors of the Hessian matrix $\\frac{\\partial^{2}}{\\partial\u2061X_{i}\u2062\\partial\u2061X_{j}}F|_{X_{min}}$ for $(N_{E},N_{C})=(4,4)$. The x-axis indexes the $N_{C}+2\u2062N_{E}\u2062N_{C}+1=37$ eigenvectors, the y-axis indexes the $N_{C}+2\u2062N_{E}\u2062N_{C}+1$ components of the eigenvectors, and the greyscale denotes the absolute value of the component in the range $[0,1]$. The components are grouped according to ($\\mu,R,L,\\sigma$), and the eigenvectors are ordered according to the most dominant component in the eigenvector ($\\mu$, orange; $R$, blue; $L$, green; $\\sigma$, purple). There is some mixing of the different components ($R$ and $\\mu$ or $\\sigma$ and $\\mu$) but this is usually small. (b) The distribution of eigenvalues $\\lambda_{i}$ of the Hessian matrix $\\frac{\\partial^{2}}{\\partial\u2061X_{i}\u2062\\partial\u2061X_{j}}F|_{X_{min}}$. Each stripe represents an eigenvalue, and the location of the stripe on the x-axis represents whether the dominant component of the associated eigenvector belongs to $\\mu$, $R$, $L$, or $\\sigma$ direction. (c) The average stiffness along $\\mu$, $R$, $L$, or $\\sigma$ directions, defined by the log of the average of eigenvalues corresponding to the eigenvectors in the respective group, as a function of $N_{C}$ for fixed $N_{E}=4$. (d) Total average stiffness $\u27e8\\lambda\u27e9=log\u2061(\\frac{\\sum\\lambda_{i}}{N_{C}+2\u2062N_{E}\u2062N_{C}+1})$ as a function of $N_{E},N_{C}$.\n\n### Implications for robustness to parametric noise\n\nSince the synthesized glycan distribution displayed by the cell marks its identity, it must be robust to noise intrinsic to the synthesis machinery. The degeneracy of solutions and sloppy directions in the fidelity landscape makes the glycan distribution robust to intrinsic noise in the synthesis and cell-to-cell variations in the kinetic parameters. We find that the number of degeneracies increases on increasing ($N_{E},N_{C}$), and the average stiffness of the optimized parameters decreases on increasing ($N_{E},N_{C}$), making the synthesis more robust to parameter fluctuations. Further, while the parameter space is high dimensional, the dimension of controllable parameters (measured by the stiff directions) is low dimensional. We find this dimensional reduction a compelling idea which we will take up later.\n\n### Strategies to achieve high glycan diversity\n\nSo far we have studied how the complexity of the target glycan distribution places constraints on the evolution of Golgi cisternal number and enzyme specificity. We now take up another issue, namely, how the physical properties of the Golgi cisternae, namely, cisternal number and inter-cisternal transport rate, may drive the diversity of glycans (Varki, 2011; Dennis et al., 2009). There is substantial correlative evidence to support the idea that cell types that carry out extensive glycan processing employ larger numbers of Golgi cisternae. For example, the salivary Brunner\u2019s gland cells secrete mucous that contains heavily O-glycosylated mucin as its major component (Van Halbeek et al., 1983). The Golgi complex in these specialized cells contain 9\u201311 cisternae per stack. Additionally, several organisms such as plants and algae secrete a rather diverse repertoire of large, complex glycosylated proteins, for a variety of functions (McFarlane et al., 2014; Koch et al., 2015; O\u2019Neill et al., 2004; Hayashi and Kaida, 2011; Kumar et al., 2011; Gow and Hube, 2012; Atmodjo et al., 2013; Free, 2013; Pauly et al., 2013; Burton and Fincher, 2014). These organisms possess enlarged Golgi complexes with multiple cisternae per stack (Becker and Melkonian, 1996; Mironov et al., 2017; Donohoe et al., 2007; Mogelsvang et al., 2003; Ladinsky et al., 2002).\n\nWe define diversity as the total number of glycan species produced above a specified threshold abundance $c_{t\u2062h}$. This last condition is necessary because very small peaks will not be distinguishable in the presence of noise. In computing the diversity from our chemical synthesis model, we have chosen the threshold to be $c_{t\u2062h}=1/N_{s}$, where $N_{s}$ is the total number of glycan species. We have checked that the qualitative results do not depend on this choice (see Appendix 10\u2014figure 1).\n\nWe use the sigmoid function $(1+e^{-x/\\tau})^{-1}$ as a differentiable approximation to the Heaviside function $\u0398\u2062(x)$ and define the following optimization to maximize diversity for a given set of parameter values, $N_{E},N_{C},\\sigma$:\n\n$$\nDiversity(\\sigma,N_{C},N_{E}):=max\\mu,R,L\\sumi=1N_{s}(1+e^{\u2212N_{s}(c_{i}\u2212c_{th})})^{\u22121}s.t.R_{min}\\leqR_{\\alpha}^{(j)}\\leqR_{max},\\mu_{min}\\leq\\mu^{(j)}\\leq\\mu_{max},\n$$\n\nwhere, as before, $(\\mu_{max},\\mu_{min})=(1,0.01)$/min, and $(R_{max},R_{min})=(20,0.018)$/min, and $c_{t\u2062h}=1/N_{s}$ is the threshold. See Appendix 2 for details on the parameter estimation.\n\nThe results displayed in Figure 7a show that for a fixed specificity $\\sigma$ the diversity at first increases with the number of cisternae $N_{C}$, and then saturates at a value that depends on $\\sigma$. For very-high-specificity enzymes, one can achieve very high diversity by appropriately increasing $N_{C}$. This establishes the link between glycan diversity and cisternal number. However, this link is correlational at best since there are many ways to achieve high glycan diversity \u2013 notably by increasing the number of enzymes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/76757/elife-76757-fig7-v2.jpg)\n\n**Figure 7.:** Diversity versus $N_{C}$ and transport rate $\\mu$ at various values of specificity $\\sigma$ for fixed $N_{E}=3$. (a) Diversity vs. $N_{C}$ at optimal transport rate $\\mu$. Diversity initially increases with $N_{C}$, but eventually levels off. The levelling off starts at a higher $N_{C}$ when $\\sigma$ is increased. These curves are bounded by the $\\sigma=0$ curve. (b) Diversity vs. cisternal residence time ($\\mu^{-1}$) in units of the reaction time ($R_{min}^{-1}$) at various value of $\\sigma$, for fixed $N_{C}=4$ and $N_{E}=10$.\n\nOn the other hand, one of the goals of glycoengineering is to produce a particular glycan profile with low heterogeneity (Fisher et al., 2019; Jaiman and Thattai, 2018). For low-specificity enzymes, the diversity remains unchanged upon increasing the cisternal residence time. For enzymes with high specificity, the diversity typically shows a non-monotonic variation with the cisternal residence time. At small cisternal residence time, the diversity decreases from the peak because of the early exit of incomplete oligomers. At large cisternal residence time, the diversity again decreases as more reactions are taken to completion. Note that the peak is generally very flat, which is consistent with the results in Fisher et al., 2019. To get a sharper peak, as advocated for instance by Jaiman and Thattai, 2018, one might need to increase the number of high-specificity enzymes $N_{E}$ further.\n\n## Discussion\n\nThe precision of the stereochemistry and enzymatic kinetics of these N-glycosylation reactions (Varki, 2009) has inspired a number of mathematical models (Uma\u00f1a and Bailey, 1997; Krambeck et al., 2009; Krambeck and Betenbaugh, 2005) that predict the N-glycan distribution based on the activities and levels of processing enzymes distributed in the Golgi cisternae of mammalian cells and compare these predictions with N-glycan mass spectrum data. Models such as the KB2005 model (Uma\u00f1a and Bailey, 1997; Krambeck and Betenbaugh, 2005; Krambeck et al., 2009) are extremely elaborate (with a network of 22,871 chemical reactions and 7565 oligosaccharide structures) and require many chemical input parameters. These models have an important practical role to play, that of being able to predict the impact of the various chemical parameters on the glycan distribution, and to evaluate appropriate metabolic strategies to recover the original glycoprofile. Additionally, a recent study by Ungar and coworkers (Fisher et al., 2019; Fisher and Ungar, 2016) shows how physical parameters, such as overall Golgi transit time and cisternal number, can be tuned to engineer a homogeneous glycan distribution. Overall, such models can help predict glycosylation patterns and direct glycoengineering projects to optimize glycoform distributions.\n\nOur focus is different. We are interested in the role of glycans as a marker or molecular code of cell identity (Gabius, 2018; Varki, 2017; Pothukuchi et al., 2019), and in particular, understanding enzymatic and transport processes located in the secretory apparatus of the cell that ensure that this code is generated with high fidelity. To do this, we have had to develop a new formal apparatus that allows us to address these questions and discuss trade-offs between competing drives. Since our analysis draws on many diverse fields, we provide a short summary of the assumptions, methods, and results of the article before discussing the implications of our work.\n\nAdmittedly the chemical network that we have considered here is much simpler than the chemical network associated with the possible protein modifications in the secretory pathway. For instance, typical N-glycosylation pathways would involve the glycosylation of a variety of GBPs. Further, apart from N-glycosylation, there are other glycoprotein, proteoglycan, and glycolipid synthesis pathways (Alberts, 2002; Varki, 2009; Pothukuchi et al., 2019). Our task has been to get at a qualitative understanding using quantitative methods and thereby to arrive at general principles. We believe our analysis is generalizable and that the qualitative results we have arrived at would still hold. To conclude, our work establishes the link between the cisternal machinery (chemical and transport) and high-fidelity synthesis of a complex glycan code. We find that the pressure to achieve the target glycan code for a given cell type places strong constraints on the cisternal number and enzyme specificity (Sengupta and Linstedt, 2011). An important implication is that a description of the non-equilibrium self-assembly of a fixed number of Golgi cisternae must combine the dynamics of chemical processing and membrane dynamics involving fission, fusion, and transport (Sengupta and Linstedt, 2011; Sachdeva et al., 2016; Sens and Rao, 2013). We believe that this is a promising direction for future research.\n",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "d37ade63-ca49-4dee-af21-38884afa7f31",
+      "submission_id": "c395a54a-8eb0-44ea-850e-04e640ef66c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Felix Campelo, The Barcelona Institute of Science and Technology Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76757.sa0](https://doi.org/10.7554/eLife.76757.sa0)\n\nThis article contributes to an important and largely unexplored topic in cell biology: the understanding of glycosylation. The authors introduce a mathematical model of glycosylation in the Golgi apparatus and use the model to investigate how the complexity (diversity) and fidelity of the plasma membrane glycan distribution depend on parameters such as the number of Golgi cisternae or enzyme specificity. The article is well written and makes the effort to present a rather complex topic in an accessible way by leaving some of the details in the appendices.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Felix Campelo, The Barcelona Institute of Science and Technology Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76757.sa1](https://doi.org/10.7554/eLife.76757.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Glycan processing in the Golgi \u2013 optimal information coding and constraints on cisternal number and enzyme specificity\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThis manuscript presents a clever approach to study from a theoretical point of view how glycosylation reactions occurring at the Golgi membranes define a cell-specific glycan profile. In particular, by optimizing a metric, the authors find that larger number of enzymes and/or compartments (Golgi cisternae) are required for increasingly complex glycan profiles. In addition, they found that enzymes should not be very specific nor too sloppy. This manuscript touches upon an important topic in cell biology (origin of glycan diversity and link to Golgi complex architecture), which has been relatively unexplored in the past. However, although there are no major concerns about the validity of the model presented in the paper (see separate reviews for more detailed comments), there is a general consensus among the reviewers that there are some key points that this manuscript should resolve before opting for publication at eLife. Since these points will most likely require an extensive revision of the manuscript, we decided to proceed with a rejection at this moment. We encourage you, if you wish, to resubmit a stronger new paper in the future; or to opt for submission elsewhere for its timely publication.\n\nThe main concerns raised by the reviewers are the following:\n\n1) It is not clear what new biology we learn from the results of this paper (see e.g. Rev. 1's report). It's been suggested that the reason for stacking is to give proteins enough time to undergo proper glycosylation and that cisternae number correlates with the complexity of glycans. Since the paper does not include any new experimental evidence on how the complexity of cellular glycans leads to more cisternae in the Golgi stack, it would be very valuable for a biological audience if the authors could present a list of model predictions that could be experimentally tested.\n\n2) For the results of the model to be more robust and probably to also learn a bit more about cell specific glycobiology, a more systematic study of available glycan profiles would very much improve the story (see in particular, Rev. 2, point 2; and also Rev. 3, point 3).\n\n3) The manuscript is very complex for non theorists, since it is presented as a rather technical manuscript. It is well written and organized for specialists. However, it is not clear whether this manuscript, in the current form, will be of interest for a broad biological audience. Along these lines, the conclusions and discussion might need to be toned down, given the large number of simplifications of the model (which is fine for a theoretical audience, but could be over-assumed by a non-specialist biological audience) (see Rev. 3, point 1).\n\nReviewer #1:\n\nThe manuscript by Yadav et al. uses a theoretical model of glycan processing to investigate the constraints placed on the enzymatic modification process in order to achieve the complex final glycan distribution. The authors introduce a multi-compartment, many-species model of chemical modifications and develop an optimization algorithm to minimize the divergence between the resulting glycan distribution and that observed from data on immune cells. The authors find that a minimum number of enzymes and reactions chambers (cisternae) are necessary to recapitulate the complex features of the experimental distribution. They also find that enzymes should have an optimal specificity: they should not be too specific to only one particular substrate, nor should they be too \"sloppy\" by interacting with all substrates with similar rates. Finally, the authors elucidate control parameters of their model that maximize the diversity of glycans.\n\nI am torn about this study because while the approach is elegant and principled and the results sensible and interpretable, the scope is rather technical and therefore I am skeptical as to whether this will have the broad audience and impact that is expected for eLife. The work combines elements from several fields (cell biology, chemical modeling, computational optimization, information theory), which is commendable, well-presented, and appropriate for an interdisciplinary audience. At the same time, however, I found myself wondering what we really learn at the end of the day. That the components must be complex (sufficient number of enzymes and compartments) in order for the result to be complex (many-peaked glycan distribution) seems unavoidable. That the specificity must be moderate also seems expected in order to not be limited by a one-to-one matching between enzyme and glycan product, but also not produce a broad, sloppy distribution. Part of the problem may also be that it is unclear what contribution is made in terms of predictions for new experiments (which is often a necessary criterion for a high-impact theoretical study): apart from using actual data as an optimization target, the study largely recapitulates and rationalizes existing features of the glycan machinery, rather than suggesting perturbations for, or placing quantitative limits on, new experimental investigations. My inclination is therefore to suspect that this work may be more suitable for a more specialized journal, e.g. on cell biology or chemical physics.\n\nReviewer #2:\n\nThe manuscript \"Glycan processing in the Golgi \u2013 optimal information coding and constraints on cisternal number and enzyme specificity\" by Yadav et al. presents a model for glycan production by the Golgi cisternae. Glycans serve various cellular functions, such as markers for cell identity, and it is important that a function-specific profile (distribution) of glycans is obtained at the end of the production process. The authors show how to choose the reaction constants in their model to reach a target profile (distribution) of glycans. They discuss how the adequacy between the target and model profiles depend on the physico-chemical features of the reactants.\n\nWhile the problem studied by the authors is interesting and their analysis reports valuable qualitative results, e.g. on the consequence of enzyme specificity on the profile statistics, I list below various points that I think would require further studies and discussions:\n\n1. The writing of the manuscript is quite technical in some sections, in particular around equation (5) and (6), and involves superfluous notations: what is the added value in introducing V, M, L with respect to the already defined omega, P, \u2026? I would recommend the authors to simplify the writing and really emphasize what is important here. Several definitions or assumptions remain vague and not discussed. For instance, equation (3) define the binding probability between enzyme \u03b1 and substrate k in terms of \"shape\" vectors. On line 250 these shape vectors are defined as scalars, in particular the shape of enzyme k is identified with the index itself. Why is this a good choice (apart from reducing the dimension of the parameter space), and how could one test the validity this apparently quite strong hypothesis?\n\n2. The manuscript is mostly theoretical with limited connections with experimental data and validations. It would be nice to have a systematic study of available glycan profiles and comparison of the corresponding inferred model parameters. In addition, it is necessary to validate the inference/optimization procedure on synthetic profiles generated by stochastic simulations of some prescribed network, to check that the correct network parameters are correctly recovered (or some other solutions giving back the same profile, see point 4 below).\n\n3. While the KL divergence (7) is a reasonable measure of dissimilarity between two distributions the relevance of the ratio (9) on page 10 is not at all clear to me. More precisely, I do not see why the entropy of the target distribution is the relevant quantity here. Rather the KL divergence between the model and target distribution could be compared to the mean value of the KL divergence between any two glycan profiles resulting from the noisy production steps.\n\n4. Since the function of the minimize over, see eq. (8) is non convex, there may exist many local minima. The authors report in Appendix 8 they perform grid-like search. How close are those minima in terms of the objective function? This question is important as the model studied here seems to be overparametrized, in particular when N_c is large. It may also be relevant in terms of evolution. More precisely, how were some glycan profiles and the corresponding biochemical networks selected in the course of evolution? On top of selection pressure to \"orthogonalize\" the profiles is it possible that some distributions are (approximately) realized by more networks than others and were therefore entropically favored?\n\nReviewer #3:\n\nThe paper by Yadav et al. contributes to an important and largely unexplored topic in Life Sciences, namely, to the understanding of glycosylation. The authors introduce a mathematical model of glycosylation in the Golgi apparatus and use the model to investigate how the complexity (diversity) and fidelity of the plasma membrane glycan distribution depends on parameters such as the number of Golgi cisternae or enzyme specificity. The paper is well written and makes the effort to present a rather complex topic in an accessible way by leaving some of the details in the appendices.\n\nAfter defining the quantitative measures for complexity and fidelity of glycan distributions, the paper builds a general model of glycosylation in the Golgi by assuming Michaelis-Menten type reactions and by taking into account parameters such as the number, specificity and distribution of enzymes across cisternae. However, the parameter space becomes so large that, before solving it numerically, the authors need to reduce it by making a number of simplifications (they linearize the distortion energy; assign one enzyme specificity \u03c3 to all reactions \u2026). The authors then ask the question how different parameters influence the outcome and what are the optimal parameters for a given target glycan distribution. Finally, the authors explore the strategies to achieve high glycan diversity.\n\nMy comments are listed below:\n\n1. The authors should be more careful (modest?) with the generalization of their results and conclusions. The results are obtained by a very simplified model and it is not obvious that they can be generalized.\n\nFor example, in the Abstract they state: \"We find that to synthesize complex distributions, such as those observed in real cells, one needs to have multiple cisternae and precise enzyme partitioning in the Golgi.\" However, this is only true within the simplified model. Maybe, complex distributions could be obtained even with a small number of cisternae if one allowed biochemistry that is more complex. The statement above would be more accurate if it was turned around, e.g., \"we show that multiple cisternae and precise enzyme partitioning in the Golgi can lead to complex glycan distributions.\"\n\nThe readers of a mathematical journal would very well understand that the results are not general but should be interpreted within the model proposed. On the other hand, the readers of eLife could be misled by statements which are too general. This is even more true for this paper, which starts with a rather general and complex model and then simplifies it on the go. While the authors do summarize the simplifications in the Discussion, an inexperienced reader could still miss them and take the results too literally. I would suggest that the authors amend the whole paper according to this comment to avoid possible misinterpretations.\n\n2. An interesting result of the modeling is that the role of parameters NE and NC can be rather symmetrical \u2013 the fidelity of glycan distribution can be improved in a similar way by increasing either of these parameters (Figure 4). Why is that? Is this a consequence of a symmetrical role of these parameters in the reduced (simplified) parameter space, or can this symmetry be generalized and can have a biological merit?\n\n3. The paper mentions examples of cells that have a complex Golgi and a complex glycan distribution. Is the opposite also true, e.g., that cells with a simple Golgi do not have complex glycan distributions? Or can a complex Golgi sometimes result in a low glycan complexity?\n\n4. One wonders how robust the glycosylation process is according to the model proposed? Figure 5b neatly shows that large enzyme repartitioning can lead to a completely different glycan distribution. But how do small variations of the optimal reaction distribution affect the outcome? Would it be possible to quantify the robustness and analyze it systematically (not just show a few random examples)? How is robustness affected by the number of cisternae and enzymes? What are biological implications of this result?\n\n5. Figure 5b shows that a complex Golgi can also lead to a simple glycan distribution. This implies that having a large NC and NE is not sufficient for a complex glycan distribution. Could the authors discuss this? What are additional requirements that are needed for a complex glycan distribution?\n\n6. What is \"likelihood,\" which is used in some of the graphs? Is it related to the minimum achievable Kullback-Leibler (KL) divergence according to Kullback-Leibler metric defined in Eq. 7 (and used in Figures 3, 4 and 5)? If so, the authors could use only one measure of likelihood/divergence in all the graphs.\n\n7. Why does the mouse glycan distribution have a lower \"likelihood\" than the human one, even with an increasing number of GMM (Figure 1b)? Is this a coincidence or can this be generalized?\n\n8. The paper would be easier to read if all the parameters were listed in one place, and if one letter was not used to denote different things (e.g., \"k\" denotes complexity, but it is also used as the index for glycosylation reactions).\n\n9. Is the final distribution of glycans on PM presented on the right in Figure 2 conceptually the same as the glycan distributions presented in Figure 1? If so, use the same notation (and axes labels) everywhere.\n",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8ea1f33-a4df-4192-9134-64f1203bf3f6",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C1",
+      "claim": "A majority of the proteins synthesized in the endoplasmic reticulum (ER) are transferred to the Golgi cisternae for further chemical modification by glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of the proteins synthesized in the endoplasmic reticulum (ER) are transferred to the Golgi cisternae for further chemical modification by glycosylation (Alberts, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alberts, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "f306c5fc-2381-48df-9796-6628d73b5315",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C2",
+      "claim": "Glycosylation is a process that sequentially and covalently attaches sugar moieties to proteins, catalyzed by a set of enzymatic reactions within the ER and the Golgi cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "a process that sequentially and covalently attaches sugar moieties to proteins, catalyzed by a set of enzymatic reactions within the ER and the Golgi cisternae",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific consensus about glycosylation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "4c9ab927-9984-4442-a161-3469dced2aa9",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C3",
+      "claim": "Glycosyltransferases are localized in the ER and cis-medial and trans-Golgi cisternae in a specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes, called glycosyltransferases, are localized in the ER and cis-medial and trans-Golgi cisternae in a specific manner (Varki, 2009; Cummings and Pierce, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2009 and Cummings and Pierce, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "2d4805ef-97f0-4595-812c-14e76ae6df3d",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C4",
+      "claim": "Glycans are delivered to the plasma membrane conjugated with proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycans, the final products of this glycosylation assembly line, are delivered to the plasma membrane (PM) conjugated with proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about glycan trafficking",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "4809563a-306c-470e-bb83-f02445f21c06",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C5",
+      "claim": "Glycans engage in multiple cellular functions, including immune recognition, cell identity markers, cell-cell adhesion, and cell signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "whereupon they engage in multiple cellular functions, including immune recognition, cell identity markers, cell-cell adhesion, and cell signalling (Varki, 2009; Cummings and Pierce, 2014; Varki, 2017; Drickamer and Taylor, 1998; Gagneux and Varki, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "367ecced-6499-4238-a956-05ad70c27407",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C6",
+      "claim": "The glycan code represents information about the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This glycan code (Gabius, 2018; Dwek, 1996), representing information (Winterburn and Phelps, 1972) about the cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gabius, 2018; Dwek, 1996; Winterburn and Phelps, 1972",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "4235844e-0463-4fc9-aead-00f21d410487",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C7",
+      "claim": "The glycan code is generated dynamically, following the biochemistry of sequential enzymatic reactions and the biophysics of secretory transport.",
+      "claim_type": "EXPLICIT",
+      "source": "is generated dynamically, following the biochemistry of sequential enzymatic reactions and the biophysics of secretory transport (Varki, 2017; Varki, 1998; Pothukuchi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2017; Varki, 1998; Pothukuchi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "41046119-911c-4d7e-b634-bd9218891183",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C8",
+      "claim": "Fidelity of the glycan code is necessary for reliable cellular recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has been recognized that fidelity of the glycan code is necessary for reliable cellular recognition (Demetriou et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Demetriou et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "a467c7f3-72f2-48dd-a678-8aa1baa082d5",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C9",
+      "claim": "Extant glycan distributions have high complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that extant glycan distributions have high complexity (section 'Complexity of glycan code')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to data and analysis presented in the manuscript section",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "42dd991e-f3f7-44ac-83a1-da81b6b774f6",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C10",
+      "claim": "High complexity of glycan distributions arises from evolutionary pressures including reliable cell-type identification amongst a large set of different cell types in a complex organism.",
+      "claim_type": "EXPLICIT",
+      "source": "owing to evolutionary pressures arising from (a) reliable cell-type identification amongst a large set of different cell types in a complex organism, the preservation and diversification of 'self-recognition' (Drickamer and Taylor, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Drickamer and Taylor, 1998 and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "0ccc2915-7163-48c9-95c9-4e11046bb017",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C11",
+      "claim": "High complexity of glycan distributions arises from pathogen-mediated selection pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) pathogen-mediated selection pressures (Varki, 2009; Varki, 2017; Gagneux and Varki, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2009; Varki, 2017; Gagneux and Varki, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "d40f922a-d65c-4610-be71-7ddba739e6af",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C12",
+      "claim": "High complexity of glycan distributions arises from herd immunity within a heterogenous population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) herd immunity within a heterogenous population of cells of a community (Wills and Green, 1995) or within a single organism (Drickamer and Taylor, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wills and Green, 1995 and Drickamer and Taylor, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "d74dc633-229d-4221-9282-c43e50591536",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C13",
+      "claim": "The cellular machinery for the synthesis of glycans is subject to variation and noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The second is that the cellular machinery for the synthesis of glycans, which involves sequential chemical processing via cisternal resident enzymes and cisternal transport, is subject to variation and noise (Varki, 2017; Varki, 1998; Pothukuchi et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2017; Varki, 1998; Pothukuchi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "3bcfae8f-b3c5-4314-843e-a78fa05ffb5d",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C14",
+      "claim": "The synthesized glycan distribution is a function of cellular parameters such as the number and specificity of enzymes, inter-cisternal transfer rates, and number of cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "the synthesized glycan distribution is, therefore, a function of cellular parameters such as the number and specificity of enzymes, inter-cisternal transfer rates, and number of cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from the model presented in the manuscript",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "bfe88497-6db5-45c2-853d-d384e3581375",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C15",
+      "claim": "The complexity of the glycan profiles of various organisms correlates well with the number of cell types in an organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this definition we see that the complexity of the glycan profiles of various organisms correlates well with the number of cell types in an organism (details of the procedure are given in Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "398db1f1-fcc6-4e9c-9ef1-e4b731d7378a",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C19",
+      "claim": "The number of GMM components required to approximate the glycan profile correlates well with the complexity of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the number of components required to approximate the glycan profile correlates well with the complexity of the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the data analysis presented in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "639ffd45-d08b-48e0-bb12-7ae7f1659020",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C21",
+      "claim": "The concentration of the glycosyl donor in the jth cisterna is chemostated.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the concentration of the glycosyl donor in the jth cisterna is chemostated (Varki, 2009; Hirschberg et al., 1998; Caffaro and Hirschberg, 2006; Berninsone and Hirschberg, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2009; Hirschberg et al., 1998; Caffaro and Hirschberg, 2006; Berninsone and Hirschberg, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "b08461d4-87c6-4e1c-b7f1-3c7401383f06",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C25",
+      "claim": "Changes in pH can affect the shape of an enzyme or its charge properties.",
+      "claim_type": "EXPLICIT",
+      "source": "changes in pH can affect the shape of an enzyme (substrate) or its charge properties",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "6564b149-4218-4ffd-aa2e-19abaff8aa4e",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C26",
+      "claim": "The reaction efficiency of an enzyme has a pH optimum.",
+      "claim_type": "EXPLICIT",
+      "source": "and in general the reaction efficiency of an enzyme has a pH optimum (Price and Stevens, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Price and Stevens, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "3d527fe3-92e8-431f-91cf-bd581f21971c",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C27",
+      "claim": "Both pH and membrane thickness are known to have a gradient across the Golgi cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "indeed, both pH (Llopis et al., 1998) and membrane thickness are known to have a gradient across the Golgi cisternae",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Llopis et al., 1998 and established knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "64823760-df88-43cf-a606-be53c7886b2c",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C28",
+      "claim": "The degree of enzyme specificity or sloppiness is an important determinant of glycan distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is recognized that the degree of enzyme specificity or sloppiness is an important determinant of glycan distribution (Varki, 2009; Roseman, 2001; Hossler et al., 2007; Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Varki, 2009; Roseman, 2001; Hossler et al., 2007; Yang et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "79eb8660-6de9-4582-a952-dc0dd19193ca",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C37",
+      "claim": "The results are consistent with those in Fisher et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with those in Fisher et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "1eb9151f-12f0-4422-bb2b-649f6b5f652b",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C38",
+      "claim": "Fisher et al., 2019 show that increasing the number of compartments NC decreases heterogeneity and increases the concentration of the specific glycan.",
+      "claim_type": "EXPLICIT",
+      "source": "They also show that the effect of compartments in reducing heterogeneity cannot be compensated by changing the transport rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fisher et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "092d50ea-9070-435a-8fef-f4e3a2b7dc09",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C39",
+      "claim": "The same reaction can occur in multiple cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting observation from Figure 5ai is that the same reaction can occur in multiple cisternae.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data shown in Figure 5ai",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "a816f303-b5fd-4cba-9419-75d439509231",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C40",
+      "claim": "One can generate different glycan profiles by repartitioning enzymes amongst the same number of cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, one can generate different glycan profiles by repartitioning enzymes amongst the same number of cisternae (Jaiman and Thattai, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5 and citation to Jaiman and Thattai, 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "7c3a97f0-2e53-4bc7-857c-1181430208fd",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C41",
+      "claim": "The optimum solution is not unique, rather it is highly degenerate, with several equally good optimum solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the optimum solution is not unique, rather it is highly degenerate, with several equally good optimum solutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the optimization landscape",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "06ca6115-f133-4522-91b9-30b626baa2e0",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C43",
+      "claim": "The synthesis model is highly degenerate, in the sense that many combinations of parameters give rise to the same glycan profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthesis model is highly degenerate, in the sense that many combinations of parameters give rise to the same glycan profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the optimization problem",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "48622373-150b-470a-8142-80a9ce5681f7",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C54",
+      "claim": "Cell types that carry out extensive glycan processing employ larger numbers of Golgi cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "There is substantial correlative evidence to support the idea that cell types that carry out extensive glycan processing employ larger numbers of Golgi cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by examples and citations that follow",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "c51bfdf7-973c-470a-af8d-12671eb0eae9",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C55",
+      "claim": "The salivary Brunner's gland cells secrete mucous that contains heavily O-glycosylated mucin as its major component.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the salivary Brunner's gland cells secrete mucous that contains heavily O-glycosylated mucin as its major component (Van Halbeek et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Halbeek et al., 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "aec2d0b8-aad5-4cc1-a086-d9cea00836e4",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C56",
+      "claim": "The Golgi complex in Brunner's gland cells contain 9\u201311 cisternae per stack.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi complex in these specialized cells contain 9\u201311 cisternae per stack.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Brunner's gland cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "4a96066d-ddd1-4b47-b172-2e7aff409588",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C57",
+      "claim": "Several organisms such as plants and algae secrete a rather diverse repertoire of large, complex glycosylated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, several organisms such as plants and algae secrete a rather diverse repertoire of large, complex glycosylated proteins, for a variety of functions (McFarlane et al., 2014; Koch et al., 2015; O'Neill et al., 2004; Hayashi and Kaida, 2011; Kumar et al., 2011; Gow and Hube, 2012; Atmodjo et al., 2013; Free, 2013; Pauly et al., 2013; Burton and Fincher, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "2658dfec-484f-4c6e-8c7b-760802763992",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C58",
+      "claim": "Plants and algae possess enlarged Golgi complexes with multiple cisternae per stack.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms possess enlarged Golgi complexes with multiple cisternae per stack (Becker and Melkonian, 1996; Mironov et al., 2017; Donohoe et al., 2007; Mogelsvang et al., 2003; Ladinsky et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Becker and Melkonian, 1996; Mironov et al., 2017; Donohoe et al., 2007; Mogelsvang et al., 2003; Ladinsky et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "070f00cd-53a2-4ec1-88ef-130ad8c142da",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C61",
+      "claim": "For low-specificity enzymes, the diversity remains unchanged upon increasing the cisternal residence time.",
+      "claim_type": "EXPLICIT",
+      "source": "For low-specificity enzymes, the diversity remains unchanged upon increasing the cisternal residence time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "1ad8e509-4c73-4b38-92a9-fa57d4c8a43f",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C62",
+      "claim": "For enzymes with high specificity, the diversity typically shows a non-monotonic variation with the cisternal residence time.",
+      "claim_type": "EXPLICIT",
+      "source": "For enzymes with high specificity, the diversity typically shows a non-monotonic variation with the cisternal residence time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "19370969-45e9-44bd-9cef-f358ba005f6c",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C63",
+      "claim": "At small cisternal residence time, the diversity decreases from the peak because of the early exit of incomplete oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "At small cisternal residence time, the diversity decreases from the peak because of the early exit of incomplete oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the model and data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "a1834fc5-b6ca-4201-8443-e0bcf5cd972c",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C64",
+      "claim": "At large cisternal residence time, the diversity again decreases as more reactions are taken to completion.",
+      "claim_type": "EXPLICIT",
+      "source": "At large cisternal residence time, the diversity again decreases as more reactions are taken to completion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the model and data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "b52a9239-13d8-411c-9271-988e107095a8",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C65",
+      "claim": "The peak in diversity versus cisternal residence time is generally very flat, which is consistent with the results in Fisher et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the peak is generally very flat, which is consistent with the results in Fisher et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "7edbde9e-3f4d-41f0-9db1-04d898d49d98",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C66",
+      "claim": "The KB2005 model involves a network of 22,871 chemical reactions and 7565 oligosaccharide structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Models such as the KB2005 model (Uma\u00f1a and Bailey, 1997; Krambeck and Betenbaugh, 2005; Krambeck et al., 2009) are extremely elaborate (with a network of 22,871 chemical reactions and 7565 oligosaccharide structures)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Uma\u00f1a and Bailey, 1997; Krambeck and Betenbaugh, 2005; Krambeck et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "36cb2f52-7d7b-416a-bd82-2a6d814dceea",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C67",
+      "claim": "The pressure to produce the target glycan code for a given cell type with high fidelity places strong constraints on the cisternal number and enzyme specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results imply that the pressure to produce the target glycan code for a given cell type with high fidelity places strong constraints on the cisternal number and enzyme specificity (Sengupta and Linstedt, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the results of the optimization analysis and supported by citation to Sengupta and Linstedt, 2011",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "2f16984e-2e08-4661-8f2d-4bf08662b7cb",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C68",
+      "claim": "The control of cisternal number must involve a coupling of non-equilibrium self-assembly of cisternae with enzymatic chemical reaction kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "our quantitative analysis of the trade-offs has deep implications for the non-equilibrium self-assembly of Golgi cisternae and suggests that the control of cisternal number must involve a coupling of non-equilibrium self-assembly of cisternae with enzymatic chemical reaction kinetics (Glick and Malhotra, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the analysis and supported by citation to Glick and Malhotra, 1998",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "488b9820-6ee5-4ada-8449-fdd59774868c",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "claim_id": "C69",
+      "claim": "A description of the non-equilibrium self-assembly of a fixed number of Golgi cisternae must combine the dynamics of chemical processing and membrane dynamics involving fission, fusion, and transport.",
+      "claim_type": "EXPLICIT",
+      "source": "An important implication is that a description of the non-equilibrium self-assembly of a fixed number of Golgi cisternae must combine the dynamics of chemical processing and membrane dynamics involving fission, fusion, and transport (Sengupta and Linstedt, 2011; Sachdeva et al., 2016; Sens and Rao, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the analysis and supported by citations to Sengupta and Linstedt, 2011; Sachdeva et al., 2016; Sens and Rao, 2013",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8dbcd46a-78a2-48b7-a637-5a443d06c007",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context of glycan synthesis in the Golgi apparatus. Proteins from the ER undergo sequential glycosylation by localized glycosyltransferases in Golgi cisternae, producing glycans that are delivered to the plasma membrane where they function in immune recognition, cell identity, adhesion, and signaling. This glycan code represents cellular information generated dynamically through enzymatic reactions and secretory transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-supported by multiple citations to established literature (Alberts 2002, Varki 2009, Cummings and Pierce 2014, and others) and represent accepted knowledge in the field. These background claims provide the necessary biological foundation for the computational modeling work that follows.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "5329a84c-b447-47f5-83c4-3f47d920dbf6",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript identifies two key aspects of glycan code generation: (1) extant glycan distributions have high complexity driven by evolutionary pressures for cell-type identification, pathogen resistance, and herd immunity; and (2) the synthesis machinery is subject to variation and noise, with the glycan distribution depending on enzyme number/specificity, inter-cisternal transfer rates, and cisternal number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C14 are supported by citations and logical inference. The evolutionary pressures (C10-C12) are cited to appropriate literature. The complexity claim (C9) is supported by data analysis presented in the manuscript. The noise and parameter dependence (C13-C14) are cited and form the basis for the modeling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "298267d7-9717-44fa-a259-ff5dec4a3218",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The complexity of glycan profiles, measured by the number of GMM components required to approximate the profile, correlates with organism complexity (number of cell types). Analysis shows that planaria glycan profiles saturate at 5 GMM components, hydra at 11, and human cells at 20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C19 are supported by the data analysis shown in Figure 1, which demonstrates the correlation between GMM component number and organism complexity. The methodology is described in Appendix 1. However, the correlation is based on only three organisms, which is a limited sample size for establishing a general principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "eeb363cd-1e95-4830-bd97-20b0681238d6",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript establishes key biochemical parameters for the model: glycosyl donor concentrations are chemostated in each cisterna, enzyme reaction efficiency has pH optima, pH and membrane thickness gradients exist across Golgi cisternae, and enzyme specificity is an important determinant of glycan distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C25-C28 are well-supported by citations to established biochemical literature (Varki 2009, Hirschberg et al. 1998, Price and Stevens 1999, Llopis et al. 1998, and others). These represent accepted biochemical principles that inform the model construction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "301f9125-7b1d-4337-be2a-30f637df925e",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The manuscript's results are consistent with Fisher et al. 2019, which showed that increasing compartment number decreases heterogeneity and increases specific glycan concentration, and that this effect cannot be compensated by changing transport rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 appropriately compare the current results to prior work by Fisher et al. 2019. The consistency check validates the model against established findings. However, the manuscript should more explicitly show which specific results match Fisher et al.'s findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "c59e378e-a555-48f0-88e5-5f8139f9c704",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The optimization analysis reveals that the same reaction can occur in multiple cisternae, and that different glycan profiles can be generated by repartitioning enzymes among the same number of cisternae, as demonstrated in Figure 5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by the data shown in Figure 5, which demonstrates enzyme partitioning patterns and the effect of enzyme repartitioning on glycan profiles. The observation is also supported by citation to Jaiman and Thattai 2018. The visual evidence clearly shows altered glycan profiles after enzyme swapping.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "bb2ec7cb-903a-4aca-b0fd-5a7e6f4d8485",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The optimization problem exhibits high degeneracy, with many combinations of parameters giving rise to the same glycan profile and multiple equally good optimal solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C43 are supported by the analysis of the optimization landscape presented in the manuscript. The degeneracy is discussed in terms of both discrete and continuous degeneracies in the parameter space. Technical details are provided in Appendix 8, though the appendix is not included in the provided text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell types performing extensive glycan processing employ larger numbers of Golgi cisternae. Examples include Brunner's gland cells (9-11 cisternae) that secrete heavily O-glycosylated mucin, and plants/algae that secrete diverse glycosylated proteins and possess enlarged Golgi complexes with multiple cisternae per stack.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by multiple citations providing correlative evidence (Van Halbeek et al. 1983, Becker and Melkonian 1996, Mironov et al. 2017, and many others). However, the evidence is correlational rather than causal, and the manuscript appropriately acknowledges this limitation by stating there are 'many ways to achieve high glycan diversity.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "02211a79-6ec6-40d8-969c-3f11846f5e91",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Glycan diversity shows different dependencies on cisternal residence time depending on enzyme specificity. For low-specificity enzymes, diversity remains unchanged with residence time. For high-specificity enzymes, diversity shows non-monotonic variation with a generally flat peak, decreasing at short times due to early exit of incomplete oligomers and at long times due to reaction completion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by data shown in Figure 7b and model-based inference. The non-monotonic behavior for high-specificity enzymes is explained mechanistically. The consistency with Fisher et al. 2019 regarding the flat peak provides additional validation. The mechanistic explanations (C63-C64) are logical inferences from the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "d86cfde5-bc75-431f-8ed0-95747abb5173",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The KB2005 model is an elaborate computational model involving a network of 22,871 chemical reactions and 7,565 oligosaccharide structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by citations to Uma\u00f1a and Bailey 1997, Krambeck and Betenbaugh 2005, and Krambeck et al. 2009. This factual claim about prior work is appropriately cited and provides context for the simplified model developed in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    },
+    {
+      "id": "144a648b-f04b-45b7-af15-d1d2e5945933",
+      "content_id": "219837ab-6f3a-4f1f-b499-19c9647a3b53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pressure to produce target glycan codes with high fidelity places strong constraints on cisternal number and enzyme specificity. This implies that cisternal number control must involve coupling of non-equilibrium self-assembly with enzymatic reaction kinetics, and that describing Golgi self-assembly requires combining chemical processing dynamics with membrane dynamics (fission, fusion, transport).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 represent major conclusions drawn from the optimization analysis. C67 is directly supported by the data showing trade-offs between parameters (Figures 3-4). C68 and C69 are logical inferences from the results, appropriately supported by citations (Glick and Malhotra 1998, Sengupta and Linstedt 2011, Sachdeva et al. 2016, Sens and Rao 2013). These represent important theoretical implications of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:02:35.360815Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8ea1f33-a4df-4192-9134-64f1203bf3f6",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "f306c5fc-2381-48df-9796-6628d73b5315",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "4c9ab927-9984-4442-a161-3469dced2aa9",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "2d4805ef-97f0-4595-812c-14e76ae6df3d",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "4809563a-306c-470e-bb83-f02445f21c06",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "367ecced-6499-4238-a956-05ad70c27407",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "4235844e-0463-4fc9-aead-00f21d410487",
+      "result_id": "8dbcd46a-78a2-48b7-a637-5a443d06c007"
+    },
+    {
+      "claim_id": "41046119-911c-4d7e-b634-bd9218891183",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "a467c7f3-72f2-48dd-a678-8aa1baa082d5",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "42dd991e-f3f7-44ac-83a1-da81b6b774f6",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "0ccc2915-7163-48c9-95c9-4e11046bb017",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "d40f922a-d65c-4610-be71-7ddba739e6af",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "d74dc633-229d-4221-9282-c43e50591536",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "3bcfae8f-b3c5-4314-843e-a78fa05ffb5d",
+      "result_id": "5329a84c-b447-47f5-83c4-3f47d920dbf6"
+    },
+    {
+      "claim_id": "bfe88497-6db5-45c2-853d-d384e3581375",
+      "result_id": "298267d7-9717-44fa-a259-ff5dec4a3218"
+    },
+    {
+      "claim_id": "398db1f1-fcc6-4e9c-9ef1-e4b731d7378a",
+      "result_id": "298267d7-9717-44fa-a259-ff5dec4a3218"
+    },
+    {
+      "claim_id": "639ffd45-d08b-48e0-bb12-7ae7f1659020",
+      "result_id": "eeb363cd-1e95-4830-bd97-20b0681238d6"
+    },
+    {
+      "claim_id": "b08461d4-87c6-4e1c-b7f1-3c7401383f06",
+      "result_id": "eeb363cd-1e95-4830-bd97-20b0681238d6"
+    },
+    {
+      "claim_id": "6564b149-4218-4ffd-aa2e-19abaff8aa4e",
+      "result_id": "eeb363cd-1e95-4830-bd97-20b0681238d6"
+    },
+    {
+      "claim_id": "3d527fe3-92e8-431f-91cf-bd581f21971c",
+      "result_id": "eeb363cd-1e95-4830-bd97-20b0681238d6"
+    },
+    {
+      "claim_id": "64823760-df88-43cf-a606-be53c7886b2c",
+      "result_id": "eeb363cd-1e95-4830-bd97-20b0681238d6"
+    },
+    {
+      "claim_id": "79eb8660-6de9-4582-a952-dc0dd19193ca",
+      "result_id": "301f9125-7b1d-4337-be2a-30f637df925e"
+    },
+    {
+      "claim_id": "1eb9151f-12f0-4422-bb2b-649f6b5f652b",
+      "result_id": "301f9125-7b1d-4337-be2a-30f637df925e"
+    },
+    {
+      "claim_id": "092d50ea-9070-435a-8fef-f4e3a2b7dc09",
+      "result_id": "c59e378e-a555-48f0-88e5-5f8139f9c704"
+    },
+    {
+      "claim_id": "a816f303-b5fd-4cba-9419-75d439509231",
+      "result_id": "c59e378e-a555-48f0-88e5-5f8139f9c704"
+    },
+    {
+      "claim_id": "7c3a97f0-2e53-4bc7-857c-1181430208fd",
+      "result_id": "bb2ec7cb-903a-4aca-b0fd-5a7e6f4d8485"
+    },
+    {
+      "claim_id": "06ca6115-f133-4522-91b9-30b626baa2e0",
+      "result_id": "bb2ec7cb-903a-4aca-b0fd-5a7e6f4d8485"
+    },
+    {
+      "claim_id": "48622373-150b-470a-8142-80a9ce5681f7",
+      "result_id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685"
+    },
+    {
+      "claim_id": "c51bfdf7-973c-470a-af8d-12671eb0eae9",
+      "result_id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685"
+    },
+    {
+      "claim_id": "aec2d0b8-aad5-4cc1-a086-d9cea00836e4",
+      "result_id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685"
+    },
+    {
+      "claim_id": "4a96066d-ddd1-4b47-b172-2e7aff409588",
+      "result_id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685"
+    },
+    {
+      "claim_id": "2658dfec-484f-4c6e-8c7b-760802763992",
+      "result_id": "46f493b5-e76c-4d92-b3f9-5e6a0659a685"
+    },
+    {
+      "claim_id": "070f00cd-53a2-4ec1-88ef-130ad8c142da",
+      "result_id": "02211a79-6ec6-40d8-969c-3f11846f5e91"
+    },
+    {
+      "claim_id": "1ad8e509-4c73-4b38-92a9-fa57d4c8a43f",
+      "result_id": "02211a79-6ec6-40d8-969c-3f11846f5e91"
+    },
+    {
+      "claim_id": "19370969-45e9-44bd-9cef-f358ba005f6c",
+      "result_id": "02211a79-6ec6-40d8-969c-3f11846f5e91"
+    },
+    {
+      "claim_id": "a1834fc5-b6ca-4201-8443-e0bcf5cd972c",
+      "result_id": "02211a79-6ec6-40d8-969c-3f11846f5e91"
+    },
+    {
+      "claim_id": "b52a9239-13d8-411c-9271-988e107095a8",
+      "result_id": "02211a79-6ec6-40d8-969c-3f11846f5e91"
+    },
+    {
+      "claim_id": "7edbde9e-3f4d-41f0-9db1-04d898d49d98",
+      "result_id": "d86cfde5-bc75-431f-8ed0-95747abb5173"
+    },
+    {
+      "claim_id": "36cb2f52-7d7b-416a-bd82-2a6d814dceea",
+      "result_id": "144a648b-f04b-45b7-af15-d1d2e5945933"
+    },
+    {
+      "claim_id": "2f16984e-2e08-4661-8f2d-4bf08662b7cb",
+      "result_id": "144a648b-f04b-45b7-af15-d1d2e5945933"
+    },
+    {
+      "claim_id": "488b9820-6ee5-4ada-8449-fdd59774868c",
+      "result_id": "144a648b-f04b-45b7-af15-d1d2e5945933"
+    }
+  ],
+  "comparisons": []
+}

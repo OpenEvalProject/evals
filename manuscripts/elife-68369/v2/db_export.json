@@ -1,0 +1,1838 @@
+{
+  "submission": {
+    "id": "db753806-19ef-49f7-ac76-f74022456df1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:15:41.754357Z",
+    "updated_at": "2025-12-03T08:15:41.754357Z"
+  },
+  "content": [
+    {
+      "id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "submission_id": "db753806-19ef-49f7-ac76-f74022456df1",
+      "content_type": "manuscript",
+      "content_text": "# Markov state models of proton- and pore-dependent activation in a pentameric ligand-gated ion channel\n\n## Authors\n\n- Cathrine Bergh<sup>1</sup> ([ORCID: 0000-0001-7540-5887](https://orcid.org/0000-0001-7540-5887))\n- Stephanie A Heusser<sup>2</sup> ([ORCID: 0000-0003-3224-4547](https://orcid.org/0000-0003-3224-4547))\n- Rebecca Howard<sup>2</sup>\n- Erik Lindahl<sup>1</sup> ([ORCID: 0000-0002-2734-2794](https://orcid.org/0000-0002-2734-2794)) \u2020\n\n### Affiliations\n\n1. Science for Life Laboratory and Swedish e-Science Research Center, Department of Applied Physics, KTH Royal Institute of Technology Solna Sweden\n2. Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Solna Sweden\n\n\u2020 Corresponding author\n\n## Abstract\n\nLigand-gated ion channels conduct currents in response to chemical stimuli, mediating electrochemical signaling in neurons and other excitable cells. For many channels, the details of gating remain unclear, partly due to limited structural data and simulation timescales. Here, we used enhanced sampling to simulate the pH-gated channel GLIC, and construct Markov state models (MSMs) of gating. Consistent with new functional recordings, we report in oocytes, our analysis revealed differential effects of protonation and mutation on free-energy wells. Clustering of closed- versus open-like states enabled estimation of open probabilities and transition rates, while higher-order clustering affirmed conformational trends in gating. Furthermore, our models uncovered state- and protonation-dependent symmetrization. This demonstrates the applicability of MSMs to map energetic and conformational transitions between ion-channel functional states, and how they reproduce shifts upon activation or mutation, with implications for modeling neuronal function and developing state-selective drugs.\n\n## Introduction\n\nThe family of pentameric ligand-gated ion channels (pLGICs), also known as Cys-loop receptors, controls electrochemical signal transduction in numerous tissues and cell types, from bacteria to humans. A rapid cycling between conducting and nonconducting conformations in response to chemical stimuli, such as neurotransmitter binding or changes in pH, is fundamental to their function. These channels are often found in the postsynaptic membrane of neurons and undergo allosteric conformational changes, where the pore in the integral transmembrane domain (TMD) opens for ion conduction upon selective neurotransmitter binding in the extracellular domain (ECD). Prokaryotic homologs, such as the proton-gated channel GLIC from the cyanobacterium Gloeobacter violaceus, share many topological features with eukaryotic pLGICs, and have been proposed to follow similar gating pathways (Figure 1A\u2013C). For any pLGIC, channel function can ultimately be explained by its free energy landscape, where different state populations shift upon activation through agonist binding. Understanding these landscapes and how the free energies either of stable states or barriers change upon ligand-binding or mutation is thus crucial for full understanding of the gating process, with applications including the development of state-dependent drugs for better treatment of diseases related to channel malfunction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig1-v2.jpg)\n\n**Figure 1.:** GLIC in an open conformation shown from (A) the top and (B) the side in a POPC lipid bilayer. (C) Two opposing subunits highlighting the pore of the channel. Light colors represent the open conformation (PDB ID 4HFI) and dark colors the closed one (PDB ID 4NPQ). Arrows indicate important gating motions - the tilting of the M2 helices, beta expansion and ECD spread. Residues I233 and H235 on the pore-lining M2 helices were mutated in both simulations and electrophysiology experiments. (D) Electrophysiology data for wild-type GLIC, the gain-of-function I233T variant and the loss-of-function H235Q variant. (E) Simulation methodology: the eBDIMS method provides (1) coarse-grained seed structures along the transition pathway followed by (2) reconstruction of the atomistic detail. Atomistic structures were then (3) embedded in lipid bilayers and massively parallel unrestrained MD launched. Analysis involves (4) a feature transformation to account for the symmetry of the pentamer, followed by (5) dimensionality reduction with tICA and (6) MSM construction.\n\nRecent advances in structural biology have enabled a steady increase in the number of available pLGIC structures. The GLIC model system is notable in this regard, accounting for over 40% of pLGIC entries in the protein data bank, including apparent closed and open states. However, the conformational diversity of these states is highly limited, leading to crude representations of the free-energy landscapes from experimental structures alone. Computational methods like molecular dynamics (MD) simulations can be used to sample more of the conformational landscape, and several studies have been conducted on GLIC to study short-timescale motions; such as simulations of the transmembrane domain only (Zhu and Hummer, 2010; Zhu and Hummer, 2012a; Zhu and Hummer, 2012b), studies of the ion permeation pathway through potential-of-mean-force calculations (Cheng et al., 2010; Fritsch et al., 2011), and steady-state simulations reaching 100 ns to 1 \u03bcs timescales (Nury et al., 2010; Prevost et al., 2012; Calimet et al., 2013), some also with additional ligands or modulations (Brannigan et al., 2010; Willenbring et al., 2011; LeBard et al., 2012; Murail et al., 2012; Laurent et al., 2016; Heusser et al., 2018; Faulkner and de Leeuw, 2020). Still, due to the large system size and relatively long timescales of the gating transitions, in practice it has not been feasible to sample complete gating transitions, especially if ligand-binding and unbinding events are involved (Chakrapani and Auerbach, 2005; Velisetty and Chakrapani, 2012; Gonzalez-Gutierrez et al., 2012; Laha et al., 2013; Gonzalez-Gutierrez et al., 2013; Velisetty et al., 2012; Menny et al., 2017). To bridge this gap, various enhanced sampling methods can be used, often by the application of biasing forces or presumed reaction coordinates. For instance, application of the string method with swarms of trajectories recently enabled the identification of local rearrangements in channel closure, including contraction of the upper pore, loosening of \u03b2-strand contacts in the lower ECD, and general expansion of the upper ECD (Lev et al., 2017). This provides precious information of structural rearrangements, but the choice of collective variables in combination with the timescales of individual simulations may influence what motions are sampled.\n\nMarkov state models (MSMs) show promise in modeling the thermodynamics and kinetics of biological systems without making prior mechanistic assumptions (D\u00e4mgen and Biggin, 2019; Prinz et al., 2011; Husic and Pande, 2018). By counting transitions, multiple simulations can effectively be stitched together to capture processes on timescales longer than any individual simulation, and probing more biologically relevant dynamics. However, in principle MSMs first require the whole equilibrium distribution to be sampled, which is difficult to achieve by starting simulations from experimental structures alone, since the stability required for crystal packing or cryo-EM data processing results in structures sometimes representing metastable states. Simulations started from these states then usually remain confined to the energy well for long time periods. In contrast, seeding simulations at regions in the free energy landscape that are not necessarily metastable enhance sampling without introducing any biasing forces, and the actual sampling is performed without limiting the system to any particular reaction coordinate.\n\nHere, we have used such enhanced seeding approaches combined with MSMs to sample the GLIC opening-closing transition. Both the wild-type and two different variants with mutations along the pore-lining M2 helices - where we also showed one to yield gain-of-function similar to human homologs (Filatov and White, 1995; Kosolapov et al., 2000) and the other loss of function (Fourati et al., 2018) - were simulated in resting or activating conditions (neutral or low pH). From the resulting trajectories we were able to construct MSMs of the complete ion channel, quantitatively map free-energy landscapes, extract molecular details regarding the gating mechanisms, and show how the gating shift observed in electrophysiology recordings of the wild-type and variants is modeled correctly by the MSMs. Additionally, we present new evidence for the role of symmetry in gating.\n\n## Results\n\n### Enhanced sampling enables MSM construction of GLIC gating\n\nTo shed light on the gating mechanisms, we combined enhanced sampling of MD simulations at resting and activating pH with Markov state modeling. X-ray structures of GLIC crystallized at pH 7 (PDB ID 4NPQ) and pH 4 (PDB ID 4HFI) have been reported to represent closed and open states, respectively (Sauguet et al., 2014; Figure 1C). Because unbiased molecular dynamics simulations started from these states alone were not expected to thoroughly sample the activation process, we seeded simulations along the presumed gating transition which enabled simulations to run in a massively parallel fashion. To achieve this, the starting structures were simplified to C\u03b1 traces, and used to drive elastic network-driven Brownian dynamics (eBDIMS) (Orellana et al., 2016), where the protein, represented as an elastic network, was pushed from closed to open X-ray structures and vice versa to generate two initial pathways (Figure 1E1). Following side-chain reconstruction (Figure 1E2), this approach resulted in a set of 50 initial models interspersed in principal component space between the open and closed X-ray structure clusters, all with standard titration states representing neutral pH (deprotonated) that in experiments should result in a closed channel. In a duplicate set of initial models, a subset of acidic residues was modified to the most probable titration state under activating conditions (protonated), as previously described (Nury et al., 2011). Each resulting model was then subjected to unrestrained simulation in a palmitoyloleoylphosphatidylcholine (POPC) lipid bilayer for over 1 \u03bcs, producing 120 \u03bcs total sampling in the two conditions (Figure 1E3, Figure 2\u2014figure supplement 1). Among simulations performed at each pH, we performed a feature transformation to account for the symmetry of the homopentameric protein (Figure 1E4), followed by dimensionality reduction by time-lagged independent component analysis (tICA) (P\u00e9rez-Hern\u00e1ndez et al., 2013; Schwantes and Pande, 2013), to capture the slowest motions observed in the simulations (Figure 1E5). Further clustering in the resulting tICA space yielded kinetically meaningful states that could be used for MSM construction (Figure 1E6), validated by convergence of the main transition timescale along with other statistical tests of eigenvalues, eigenvectors and sampling (Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3).\n\nTo assess the ability of this computational approach to predict functional properties, we introduced the gain-of-function mutation I233T, located at the midpoint of the GLIC transmembrane pore, as well as the loss-of-function mutation, H235Q, a few residues away facing the intrasubunit helical bundle (Figure 1C). The midpoint position, 9' counting from the intracellular side, has been shown to constitute a hydrophobic gate that critically influences conduction properties in GLIC as in other family members (Gonzalez-Gutierrez et al., 2017), while substitution at the interfacial H235, or 11\u2019 position, enabled crystallization of an intermediate, locally closed conformation (Prevost et al., 2012). Indeed, we confirmed by two-electrode voltage-clamp electrophysiology recordings in Xenopus oocytes that the I233T substitution enhanced proton sensitivity, shifting half-maximal activation by more than one pH unit, and producing moderately conductive channels even at neutral pH. Conversely, the histidine substitution decreased proton sensitivity, resulting in moderately conductive channels at low pH (Figure 1D). Note that maximal conduction in this plot does not necessarily indicate that all channels are open. These I233T and H235Q substitutions were introduced into additional replicate sets of initial simulation models in both deprotonated and protonated states as described above. The resulting mutants were prepared, simulated, transformed, and analyzed in the same way as the wild-type channels, achieving convergence on similar timescales (Figure 2\u2014figure supplement 2A,D). Thus, we were able to produce six independent, statistically validated, MSMs representing distinct combinations of pH and gain- or loss-of-function mutant variations.\n\n### Free-energy landscapes capture effects of protonation and mutation\n\nFree-energy landscapes obtained from the first eigenvector of each MSM clearly distinguished closed- and open-like regions in all six conditions (Figure 2). The tICA coordinates are presumed to represent the two slowest motions, where the largest eigenvector contributions are originating primarily from interactions between helices in the transmembrane domain (Figure 2\u2014figure supplement 4). Along the first tIC \u2013 with the largest eigenvector contributions focused around the M2 helices (Figure 2\u2014figure supplement 4A,C,E) \u2013 the closed X-ray structure consistently projected to the lowest free energy minimum in the landscape, suggesting a predominant population of closed channels under both deprotonated and protonated conditions. Due, in part, to its low conductance in single-channel recordings (Bocquet et al., 2007), the open probability of GLIC is not well established; however, recent cryo-electron microscopy studies support a predominance of nonconducting states even at pH below 4 (Rov\u0161nik et al., 2021). In deprotonated conditions, the I233T substitution created a well-defined second local minimum in free energy along tIC1, centered near the open X-ray structures (Figure 2C), not seen in the wild-type or H235Q variants (Figure 2A,E). Protonated conditions further deepened this secondary minimum for both wild-type and I233T variants (Figure 2B,D), but for the H235Q variant this secondary minimum was notably displaced along tIC2 such that it did not overlap with the open X-ray structures (Figure 2F). Despite topological differences, the distribution of closed versus open X-ray structures was comparable along tIC1 in all six conditions, suggesting a common component for this slowest transition. Several so-called locally closed structures (e.g. PDB ID 3TLS) \u2013 featuring a closed-like TMD but open-like ECD \u2013 projected to a region intermediate along tIC1, but within the broad closed-state free energy well, suggesting this component primarily distinguishes TMD rather than ECD state. Interestingly, a few locally closed structures were separated out along tIC2 into a shallow secondary minimum of the closed state energy well for the deprotonated H235Q variant (Figure 2E). Conversely, a lipid-bound state (PDB ID 5J0Z) - in which the pore is expanded at the outward vestibule, although nonconductive at the hydrophobic gate - clustered with open channels. In contrast to tIC1, tIC2 did not distinguish X-ray structures in a consistent manner; the largest eigenvector contributions were interspersed between multiple transmembrane helices (Figure 2\u2014figure supplement 4B,D,F) and higher values of this component may represent conformations sampled primarily in MD simulations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig2-v2.jpg)\n\n**Figure 2.:** Free-energy landscapes projected onto the first two tICA coordinates for (A) deprotonated wild-type, (B) protonated wild-type, (C) deprotonated I233T mutant, (D) protonated I233T mutant, (E) deprotonated H235Q mutant, and (F) protonated H235Q mutant. Dots indicate experimental structures, with red representing closed X-ray structures at pH 7 (PDB ID 4NPQ), orange locally closed X-ray structures (PDB IDs 3TLS, 5MUO, 4NPP(B)), light blue modulated states (PDB ID 5J0Z) and blue open states (PDB IDs 4HFI, 3EAM, 3P4W, 4IL4, 3UU5, 4NPP(A)). Pink, magenta, and purple dots indicate closed cryo-EM structures at pH 7, 5, and 3 (PDB IDs 6ZGD, GZGJ, GZGK) respectively. Less than 100% of the channels are expected to adopt an open state even under protonated conditions (B, D, F). At protonated conditions the H235Q mutation results in an 'open'-state free-energy minimum distinct from experimental open structures (F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Simulations sample the initial transition pathway broadly. Simulation seeds, experimental structures and overall sampling projected onto principal component space for deprotonated wild-type (A), protonated wild-type (B), deprotonated I233T (C), protonated I233T (D), deprotonated H235Q (E), and protonated H235Q (F). Blue and yellow dots represent initial seeds obtained from an eBDIMS pathway, black dots indicate experimental structures, and the gray surface represent overall sampling from the simulations. A few trajectories with large distances between the starting (red star) and end position (arrowhead) have been highlighted as black arrows. The level of sampling orthogonal to the initial pathway has been quantified as RMSDs compared to the closed conformation of the initial pathway. Principal component one represents blooming motions of particularly the ECD, while Principal component two represent twisting and tilting motions of TMD and ECD.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Assessment of convergence and sampling of the MSMs. The first 10 implied timescales representing the 10 slowest processes of the MSM for (A) deprotonated and (D) protonated system. The vertical dotted line represents the selected MSM lag time, chosen as the smallest lag time where the implied timescales have leveled out. Chapman-Kolmogorov tests of each two-state model (Figure 3) for (B) deprotonated and (E) protonated systems. The level of symmetry of the transition probability matrix (T) for both symmetrized and non-symmetrized models as a function of the amount of sampling, for (C) deprotonated and (F) protonated systems. As the sampling increases the correction needed for to generate the symmetrized model becomes smaller. Since the curves do not reach zero the sampling is not perfectly reversible, but to achieve that orders of magnitude more sampling would likely be needed.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Variational optimization of the slowest timescale enables selection of hyperparameters. Open probabilities for all two-state models as a function of the number of microstate clusters (A). The width of each line represents possible hyperparameter combinations, including tICA lag times up to 25 ns together with commute or kinetic mappings. A total of 300 clusters were selected at the 'elbow' of the plot to avoid overfitting. Open probabilities for all two-state models as a function of tICA lag times (B). The width of each line represents possible hyperparameter combinations, including number of microstate clusters and commute or kinetic mappings. The results are consistent for all four datasets up to tICA lag time of at least 25 ns. The slowest timescale calculated for different combinations of hyperparameters (C) The black line represent the selected final model.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Vector representation of the two tICA coordinates. The 20 largest eigenvector components of the two tICA coordinates projected onto the GLIC transmembrane domain. TIC 1 is overall more focused on interactions around the M2 helices for both wild-type (A), I233T (C) and H235Q (E), while the tIC 2 eigenvectors are more interspersed between all of the transmembrane helices for both wild-type (B), I233T (D) and H235Q (F). Red arrows represent deprotonated datasets and blue protonated datasets for each phenotype. Note that the magnitude of these arrows represent the slowness of the motion, and the direction is parallel to the distance feature used as input for tICA.\n\n### Kinetic clustering distinguishes metastable open and closed states\n\nTo quantify population shifts in the evident closed- and open-like regions of the tIC landscape, we coarse-grained the MSMs into separate metastable states. By clustering according to the first dynamical MSM eigenvector, each free energy landscape could be divided into two macrostates corresponding to closed and open conformations, respectively (Figure 3A). In all but the deprotonated wild-type and H235Q landscapes, an evident free energy barrier indicated these states to be metastable (Figure 2). Based on this clustering, and consistent with the qualitative comparisons above, the fractional population of open-like macrostates moderately increased (6% to 12%) upon I233T substitution under deprotonated conditions, and increased further for both variants upon protonation (to 17% and 20% for wild-type and I233T, respectively). Upon H235Q substitution the open state population instead decreased slightly (6% to 3%) under deprotonated conditions, and reached a lower open probability (15%) compared to wild-type after protonation (Figure 3B). MSM kinetics indicated the I233T mutation accelerated opening transitions, decreasing the closed\u2013open mean first-passage time by over one third (8.9 to 5.8 \u03bcs). Conversely, the H235Q mutation substantially slowed opening transitions by almost doubling the transition times (8.9 to 13.3 \u03bcs and 8.0 to 14.3 \u03bcs). Additionally, protonation appeared to slow closing transitions, increasing open\u2013closed times nearly 3-fold for wild-type and I233T variants (0.5 to 1.4 \u03bcs and 0.6 to 1.7 \u03bcs for wild-type and I233T, respectively), while increasing five-fold for the H235Q mutant (0.4 to 2.1 \u03bcs) (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig3-v2.jpg)\n\n**Figure 3.:** (A) Two metastable states\u00a0separated by the highest free energy barrier, with red representing closed-like states and blue open-like states.\u00a0White dots indicate experimental structures, with labels marking closed (C), locally closed (LC) and open (O)\u00a0clusters. (B) Populations of the closed (red) and open (dark blue) macrostates, with populations of hydrated\u00a0conformations (>20 water molecules in the pore) marked in lighter blue. Protonated conditions consistently\u00a0decreased closed-like and increased open-like populations, albeit to less than 100%. Relative to wild-type, the\u00a0I233T substitution decreased closed-like populations, while H235Q decreased open-like populations, and even\u00a0more so the population of hydrated conformations. Relative changes in open population reflect shifts in\u00a0functional activity in Figure 1. (C) Transition rates (arrows) with numbers representing mean first passage times\u00a0of crossing the highest free energy barrier. Transition rates to the closed state consistently decreased under\u00a0protonated versus deprotonated conditions. In deprotonated conditions, the I233T mutation increased the rate\u00a0of opening, while the H235Q mutation decreased opening rates in both conditions. (D) Hydration of the\u00a0transmembrane pore. Side panels show the population of states with different hydration levels. The pore can\u00a0be seen hydrating or dehydrating when crossing the main free energy barrier (white). The I233T mutation\u00a0resulted in higher levels of hydration in both open and closed states, while the H235Q mutation was less\u00a0hydrated in the open state.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Hydration of all\u00a0100 wild-type simulations, where each row represents one simulation with frames on the x-axis.The simulations have been grouped based on location of the starting seed in the transition, with\u00a0open-like seeds at the bottom and closed-like seeds at the top.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Hydration of\u00a0all 100 I233T simulations, where each row represents one simulation with frames on the x-axis.\u00a0The simulations have been grouped based on location of the starting seed in the transition, with\u00a0open-like seeds at the bottom and closed-like seeds at the top.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Hydration of\u00a0all 100 H235Q simulations, where each row represents one simulation with frames on the x-axis.\u00a0The simulations have been grouped based on location of the starting seed in the transition, with\u00a0open-like seeds at the bottom and closed-like seeds at the top.\n\nTo further validate the functional annotation of closed- and open-like macrostates, we plotted pore hydration across each free-energy landscape (Figure 3D) and extracted populations of hydrated conformations (Figure 3B). Under all conditions, the macrostate barrier corresponded to a dramatic shift in hydration levels along tIC1. All regions of tIC space sampled some dehydrated states, likely corresponding to transient, reversible, obstructions observed in individual trajectories (Figure 3\u2014figure supplement 1; Figure 3\u2014figure supplement 2; Figure 3\u2014figure supplement 3). However, protonation increased hydration for all variants, particularly at larger (open-like) values of tIC1 (Figure 3D). As expected with a polar residue at the hydrophobic gate, the I233T substitution further increased hydration at all values along tIC1, suggesting more closed-like states might achieve ion conduction in this variant. Conversely, in addition to being displaced from experimental structures (Figure 2F), the open-like free-energy well was substantially less hydrated in the context of H235Q, indicating a reduced propensity for ion conduction. Thus, qualitative and quantitative comparisons of tIC landscapes supported reproducible state distinctions, and recapitulated functional effects of both protonation and mutation, supporting our model as a reasonable representation of GLIC gating.\n\n### Higher\u00a0order clustering reveals conformational trends in gating\n\nTo identify conformations along the gating pathway more precisely, we reclustered each dataset according to a larger eigenvector set, obtaining models with four or five states each (Figure 4A). Note that these states are not necessarily metastable, but this clustering enables further studies of the different kinetically similar regions of the energy landscapes. Conformations corresponding to low values of both tIC1 and tIC2 (state I, Figure 4A) consistently comprised the most populated cluster (Figure 4B), with representative samples featuring visibly tilted M2 helices and a contracted pore (doi:10.5281/zenodo.5500174). Accordingly, closed as well as locally closed X-ray structures projected to the state-I cluster in all but the protonated wild-type and deprotonated H235Q systems (Figure 4A). Two more states with contracted pores clustered at low\u2013intermediate values of tIC1, varying somewhat with system conditions; these states were distinguished along tIC2 (high for state II, low for state III; Figure 4A). Representative conformations in state II were visibly similar to state I (doi:10.5281/zenodo.5500174). For the protonated wild-type system, the closed X-ray structure projected in State II, with locally closed structures along the state I\u2013II border. For the deprotonated H235Q variant, locally closed structures (including the experimental structure of this variant) clustered in state II, with closed states near the state I-II border (Figure 4A). State III corresponded visibly to a partly expanded pore and often high degrees of TMD subunit asymmetry (doi:10.5281/zenodo.5500174), not represented by any known X-ray structures (Figure 4A). Open and lipid-modulated X-ray structures projected to a cluster at high tIC1 and low tIC2 (state IV, Figure 4A), substantially populated only upon protonation and/or I233T substitution (Figure 4B); as expected, representative samples featured the most expanded pore relative to other states (doi:10.5281/zenodo.5500174). A final cluster at high values of both tICs (state V, Figure 4A) was the least populated in all conditions, except for the protonated H235Q variant where the secondary free energy minimum had shifted to state V rather than state IV (Figure 4B), again sampling intermediate values of pore expansion. Visual inspection of all macrostates (Figure 4A) and free-energy landscapes (Figure 2) indicated that the most likely transition pathway between closed- (states I/II) to open-like (state IV) would proceed via state III, or state II in the protonated H235Q model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig4-v2.jpg)\n\n**Figure 4.:** (A) Each free-energy landscape can be further clustered into models with four or five macrostates that \u2013 despite not being metastable\u2013 allow for more fine-grained structural analysis of the energy landscape. White dots represent experimental structures marking closed (C), locally closed (LC) and open (O) clusters, respectively. (B) Populations for each macrostate. The different regions will be referred to as: red - State I, orange - State II, green - State III, light blue - State IV, and dark blue - State V. Conformations sampled from these states can be accessed at doi:10.5281/zenodo.5500174.\n\nTo further validate these multi-state spaces in context of past mechanistic models, we compared our clusters on the basis of conformational features implicated in channel gating.\n\nAs previously described, a key distinction between closed- and open-like states was expansion of the upper-TMD pore, quantified here by the radial distance of the upper M2 helix from the pore center-of-mass (M2 spread). On this basis, states I/II and IV/V were respectively contracted and expanded, with state III \u2013 and state V in the protonated H235Q variant \u2013 sampling intermediate values (Figure 5A; Figure 5\u2014figure supplement 3). The expansion around the main hydrophobic gate at the 9\u2019 position was generally expanded in the I233T mutant versus wild-type conditions (Figure 5B; Figure 5\u2014figure supplement 4), as expected upon substitution of threonine for isoleucine. However, the H235Q mutant instead resulted in a more constricted pore with the most populated state V values approaching those of wild-type closed-state. All states were somewhat constricted at 9\u2019 relative to the open X-ray structure (Figure 5B), though our previous measurements confirmed sampling of hydrated conformations (\u226530 water molecules in the channel pore, Figure 3D) in open-like states in both conditions. Interestingly, a proposed secondary gate at the intracellular end of the pore (\u22122' radius, Figure 5\u2014figure supplement 1A; Figure 5\u2014figure supplement 9) implicated in desensitization (Gielen and Corringer, 2018) exhibited a bimodal distribution in radii, with state I largely retaining an expanded \u22655-\u00c5 radius similar to X-ray structures, while other states partially sampled a contracted radius \u223c2 \u00c5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-v2.jpg)\n\n**Figure 5.:** The left-most cartoons illustrate the definition of each variable, while data is presented as probability distributions with means and standard deviations plotted as bars. Colors represent the macrostates in Figure 4, and blue, red and purple horizontal lines represent the experimental structures 4HFI (Sauguet et al., 2013), 4NPQ (Sauguet et al., 2014) and 6ZGK (Rov\u0161nik et al., 2021), respectively. The spread of the pore-lining M2 helices (A, Figure 5\u2014figure supplement 3) is captured by the open and closed macrostates, with intermediate states taking intermediate values. However, the open-state minimum is more contracted for the protonated H235Q variant (state V). The radius from the pore center to the 9\u2019 hydrophobic gate (B, Figure 5\u2014figure supplement 4) captures clear differences between the three variants, where the I233T mutant has a more expanded pore than wild-type while the pore of H235Q is more contracted. The distance between the pore-lining M2 helix and the M1 helix of the neighboring subunit (C, Figure 5\u2014figure supplement 5) is also correctly represented by the open and closed macrostates, with State III taking intermediate values. The beta expansion (D, Figure 5\u2014figure supplement 6) yields distributions with expectation values of closed and open states aligning well with the experimental structures, while the intermediate state produces a bimodal distribution. Interestingly, the probability distributions of the closed-like states of the I233T mutation at deprotonated conditions show increased biomodality as well. The upper spread of the extracellular domain (ECD) (E, Figure 5\u2014figure supplement 7) does not result in a clear separation of the macrostates, but a smaller pH-dependent shift can be observed. The C\u03b1 distance between E35 and T158 (F,\u00a0Figure 5\u2014figure supplement 8) of primary and complementary subunits, respectively, capture large pH-dependent shifts in for all macrostates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Probability distributions of a few variables proposed to be important in GLIC gating. The left-most cartoons illustrate the definition of each variable, while data is presented as four probability distributions with means and standard deviations plotted as bars. Colors represent the different states in 4, and blue, red and purple horizontal lines represent the experimental structures 4HFI (Sauguet et al., 2013), 4NPQ (Sauguet et al., 2014) and 6ZGK (Rov\u0161nik et al., 2021), respectively. The radius between the pore and the \u22122\u2019 gate (A, Figure 5\u2014figure supplement 9) is lower in the open states for all datasets, although the values for the closed and open experimental structures are the same. Kinking of the M1 helix is more pronounced when approaching the closed state (B, Figure 5\u2014figure supplement 10). The twisting of the extracellular domain (C, Figure 5\u2014figure supplement 11) does not result in a clear separation of the different states, but a small pH-dependent shift can be observed.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** ECD spread and twist values show rapid adaption in response to pH. Time series of ECD spread and twist values for wild-type GLIC at protonated and deprotonated conditions. Initial simulation seeds are marked as dots left of the curves and colors indicate staring seed conformation, where red represent open-like conformations and blue closed-like conformations. The solid black line represents the average of the 50 curves, and dashed lines the standard deviations. Dashed horizontal lines represent the closed (4NPQ) and open (4HFI) X-ray structures.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** M2 spread values projected onto the first two tICs. Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** 9\u2019 distances projected onto the first two tICs. Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** M2-M1(-) values projected onto the first two tICs. Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Beta expansion values projected onto the first two tICs. Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp7-v2.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp8-v2.jpg)\n\n**Figure 5\u2014figure supplement 8.:** Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp9-v2.jpg)\n\n**Figure 5\u2014figure supplement 9.:** Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp10-v2.jpg)\n\n**Figure 5\u2014figure supplement 10.:** Line contours represent the macrostates in Figure 4.\n\n![Figure 5\u2014figure supplement 11.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig5-figsupp11-v2.jpg)\n\n**Figure 5\u2014figure supplement 11.:** Line contours represent the macrostates in Figure 4.\n\nIn parallel with expansion of the upper pore, gating transitions have been associated with contraction at TMD subunit interfaces, quantified here by the distance between proximal regions of the principal upper-M2 and complementary upper-M1 helices (M2+-M1\u2212 distance). Subunit interfaces in states I/II and IV/V were expanded and contracted respectively, with state III again sampling intermediate values (Figure 5C; Figure 5\u2014figure supplement 5). Transitions at this interface have also been linked to relief of a helix kink, proximal to a conserved proline residue in M1. Indeed, this helix kink was more acute in states I/II, sampling even smaller angles than closed X-ray structures; conversely, the kink was largely relieved in state IV, with even larger angles than open structures (Figure 5\u2014figure supplement 1B; Figure 5\u2014figure supplement 10). State III again sampled intermediate values. Interestingly, kink angles for state V overlapped states I/II in deprotonated conditions, but shifted toward state IV in protonated conditions.\n\nGating transitions in the TMD are coupled to allosteric rearrangements in the ECD, particularly so-called \u03b2-expansion involving the first and last extracellular \u03b2-strands in each subunit. Proximal to the TMD interface, the cleft between these ECD strands is relatively expanded in closed X-ray structures but contracted in open structures, strengthening a salt bridge between \u03b21-D32 and \u03b210-R192 (Lev et al., 2017). Interestingly, values of \u03b2-expansion exhibited a bimodal distribution, with distinct peaks centered around closed and open structures (Figure 5D; Figure 5\u2014figure supplement 6). In our MSMs, state-I samples were more expanded, while states IV/V were more contracted; distributions in states II/III featured distinct peaks at both closed- and open-like values.\n\nMore global gating motions in the ECD are thought to include blooming and twisting, with channel activation involving contraction and untwisting relative to the TMD. Surprisingly, no consistent state-dependent trends were noted in ECD spread (Figure 5E; Figure 5\u2014figure supplement 7) or twist (Figure 5\u2014figure supplement 1C; Figure 5\u2014figure supplement 11). However, comparing for\u00a0example the predominating state I in each condition revealed an overall pH dependence, with the ECD generally more contracted and twisted in protonated than deprotonated conditions (Figure 5E; Figure 5\u2014figure supplement 1C). Time-series of ECD blooming and twisting motions from all trajectories showed rapid adaptation in response to change in pH regardless of initial seed ECD conformation (Figure 5\u2014figure supplement 2). However, simulations started in an overall closed-like conformation displayed more flexible ECDs and sampled more broadly than simulations started in an open-like conformation, indicating state-dependent differences in ECD flexibility rather than average ECD blooming or twisting values. Interestingly, the ECD rarely contracted to the extent of open X-ray structures, nor twisted to the extent of closed X-ray structures in any condition, suggesting that crystal contacts may favor uncommon conformations in this domain. A recent cryo-EM structure of the closed state at pH 3 (Rov\u0161nik et al., 2021) suggest a more compact ECD compared to the closed-state X-ray structure which align better with the expectation value of our data at low pH (Figure 5E), further supporting the idea that crystal contact might favor compact ECDs in the open state X-ray structure.\n\nFinally, we studied E35, thought to represent the main proton sensor in GLIC (Nemecz et al., 2017; Hu et al., 2018). The probability distributions of the distance between E35 and T158 of the complementary subunit show clear shifts in response to changes in protonation, leading to local backbone rearrangements (Figure 5F;\u00a0Figure 5\u2014figure supplement 8). Indeed, our simulations sampled even tighter contacts between these residues than observed in experimental structures. Thus, our models capture pH-dependent changes around E35, further supporting the role of E35 as an important proton sensor.\n\n### Symmetry analysis reveal protonation- and state-dependent differences\n\nAlthough each GLIC molecule is composed of five identical subunits and exhibits fivefold symmetry in the context of a crystal, it remains unclear how symmetry is retained or broken in the course of channel gating. Previous simulations suggested a role for conformational asymmetry, particularly in the TMD, in facilitating closing transitions (Nury et al., 2010; Mowrey et al., 2013b). To estimate subunit symmetry, we quantified pairwise RMSDs between homologous atoms in neighboring and opposing subunits, and plotted the resulting symmetry value for each simulation frame to its corresponding position in tIC space. In this representation, regions of higher pairwise RMSD correspond to lower symmetry. To enable identification of domain-specific changes, analyses were also performed independently for the TMD and ECD in each condition (Figure 6, top bars). In both protonated datasets, pairwise RMSDs of the open state were significantly lower compared to deprotonated conditions, suggesting that protonation plays a role in the symmetrization of this state. These high symmetry levels could be deduced from both the ECD and TMD (Figure 6B, D and F, top bars). Upon channel closure, the overall symmetry decreases, which is primarily driven by the symmetry loss seen in the ECD. The TMD on the other hand seems to recover some symmetry in the closed state. At deprotonated conditions, pairwise RMSDs were generally higher across the board, and neither ECD or TMD were able to reach the low RMSD levels of the open state at protonated conditions. The ECD symmetry still seemed to decrease upon channel closure, but the differences were diminished compared to protonated conditions (Figure 6A, C and E, top bars).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig6-v2.jpg)\n\n**Figure 6.:** Heatmaps show pairwise RMSDs between all subunits of the channel, measuring the conformational symmetry of the pentamer. The two top bars show pairwise RMSDs of the transmembrane (TMD) and extracellular (ECD) domains separately, represented as stacked histograms along tIC 1. At deprotonated conditions wild-type (A) and the two mutations I233T (C) and H235Q (E) show decreased levels of symmetry in both TMD, ECD and overall. At protonated conditions wild-type (B), the I233T (D), and H235Q mutations (F) display high levels of symmetry in the open state coming from both ECD and TMD. Notably, the symmetry of the ECD is decreasing during channel closure and total closed state symmetry is coming mainly from the TMD.\n\n## Discussion\n\nWe have constructed Markov state models of a pentameric ligand-gated ion channel that enabled quantitative modeling of protonation and mutation effects, identification of intermediate states and characterization of the effect of symmetry in channel gating. Our free-energy landscapes showed deepening of the open state free energy well upon protonation, destabilization of the closed state upon I233T mutation of the hydrophobic gate (Figure 7A), and shifting of the open state toward conformations with more constricted and less hydrated pores upon H235Q mutation (Figure 7B). Our models captured shifts in free energies in agreement with our electrophysiology recordings, although only a fraction of channels would be open even under protonated conditions. In addition to capturing features of the gating mechanism already proposed for pLGICs, our MSMs allowed for further exploration of features that correlate with gating. Here, we focused on the effect of conformational symmetry between subunits and found that the open state displayed higher levels of symmetry, which was particularly enhanced after protonation (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68369/elife-68369-fig7-v2.jpg)\n\n**Figure 7.:** Sketches of the free-energy landscapes for protonated and deprotonated (A) wild-type and I233T variants, and (B) wild-type and H235Q variants. An open-state free energy well is formed when the channel is protonated, but only a small fraction of channels will be open at any point. The I233T mutation destabilizes the closed state (A), while the H235Q mutation results in open channels being trapped in a state with a more constricted pore behind a higher energy barrier (B). (C) Conformational symmetries of GLIC are affected by the protonation state. Upon protonation the open state displays a high level of symmetry, which is reduced to an intermediate level in the closed state. When deprotonated, the open state achieves an intermediate level of symmetry, which is reduces to low levels of symmetry in the closed state. This suggests that protonation is important for symmetrization of the open state.\n\nThermodynamic properties calculated from the present models were largely consistent with functional recordings, showing a shift toward relative stabilization of open versus closed states upon protonation of acidic residues or polar substitution at the 9\u2019 hydrophobic gate (Figure 7A). Interestingly, along with a modest decrease in population, the open-like state itself changed to represent conformations with more constricted and less hydrated pores upon H235Q substitution (Figure 7B). Free energies of the wild-type gating transition have previously been estimated using string method optimization of a few collective variables assumed to be important in the gating transition (Lev et al., 2017). The variable associated with the largest barrier height in the work of Lev et al. is pore hydration, which is an integral part of the gating transition, thus suitable for comparison to the maximal energy barrier height from the MSMs. At low pH the string method hydration yielded a barrier of 1.5 kcal/mol, compared to 1.0\u20131.5 kcal/mol for the protonated MSM. At neutral pH the barrier from string method hydration gave 2.5 kcal/mol, while the MSM resulted in 1.5\u20132.0 kcal/mol height of the energy barrier. This indicated that the wild-type MSMs found transition pathways with comparable free-energy barriers.\n\nTwo-state clustering suggested a value of Popen well below 100% for GLIC, even at activating conditions. Although Popen has not been determined for GLIC, recent cryo-EM structures of closed-state GLIC solved at activating conditions point toward a significant closed population even at activating conditions (Rov\u0161nik et al., 2021; Sauguet et al., 2014). Additionally, recent small-angle neutron scatting (SANS) experiments estimated low-pH Popen to 18% by fitting linear combinations of closed and open X-ray structures to the SANS curve, obtained from the channel population-average in solution and at room temperature (Lycksell et al., 2021). This fits well with our estimate of 17%. Other channels in the pLGIC family have also been shown to attain a range of maximal open probabilities; 10\u201340% for GABAARs (Pierce et al., 2019; Germann et al., 2019), 20\u201380% for 5-HT3s (Lambert et al., 1989; Mott et al., 2001), 0.2\u20133% for nAChRs (Pesti et al., 2014; Williams et al., 2012), and 90\u2013100% for GlyRs (Ivica et al., 2021; Mangin et al., 2003), when saturated with their respective natural agonist. Given the spread in open probability between pLGIC subtypes it seems reasonable that a more distant bacterial homolog like GLIC could have a unique energy landscape. Additionally, since the open probabilities for GLIC are less than 100%, protonation could function like partial rather than full agonism.\n\nHigher\u00a0order clustering enabled more detailed investigation of the different regions of the energy landscapes, including intermediate and alternative open-like and closed-like conformations. In all cases, open and modulated crystal structures projected in state IV, while closed and locally-closed states projected into state I, or on the border between state I and state II for the protonated wild-type and deprotonated H235Q datasets. Locally closed structures, characterized by an open-like ECD and closed-like TMD, projected in the same free energy basin as closed-state 4NPQ but closer to the activation free energy barrier, indicating that the locally closed state could serve as a pre-activating state in the gating pathway. Prevost et al. solved crystal structures of multiple locally closed states trapped by various mutations, and out of these only one was capable of opening in electrophysiology experiments. Additionally, a range of conformations in the M2-M3 region were sampled in the cryo-EM structures (Prevost et al., 2012), indicating that the locally closed conformations might not represent a separate metastable state in wild-type GLIC. Further, the H235Q mutation has been shown to crystallize in a locally closed conformation at pH 4 (Fourati et al., 2018). Surprisingly, our MSMs of protonated H235Q resulted in only a modest deepening of the free energy minimum around the projected locally closed structures, but also in a heightened free-energy barrier between open and closed states, potentially facilitating a single state to be captured in experiments. This, in combination with our other observation that ECD compaction seems to be pH- rather than state-dependent, means that the most probable conformation for the H235Q variant at low pH has a closed-like TMD and more open-like ECD, similarly to the locally closed state.\n\nStructural studies of the open, closed and locally closed crystal structures have revealed several conformational changes associated with GLIC gating (Sauguet et al., 2014). The first steps are thought to occur in the ECD through blooming and twisting motions of the entire domain. Surprisingly, our simulations did not capture state-dependent but rather pH-dependent differences in average ECD spread and twist values (Figure 5E; Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2) although larger fluctuations were observed in closed-like states, suggesting state-dependent differences in ECD flexibility rather than average spread and twist values. The recent closed-state cryo-EM structure solved at pH 3 (Rov\u0161nik et al., 2021) displays intermediate values in ECD spread (Figure 5E), but a more twisted ECD compared to the closed X-ray structure (Figure 5\u2014figure supplement 1C), while otherwise agreeing with values associated with the closed state TMD. While these ECD spread and twist results are somewhat counter-intuitive, the more contracted ECD could hint toward adaptation of the ECD in response to pH regardless of the TMD state. Conversely, we did observe transitions in the loops connecting the inner and outer sides of the ECD \u03b2-sandwich, which have been shown to be important for pLGIC channel function. In particular, crystal structures show breakage of the D32-R192 salt bridge in closed-state GLIC and mutational studies of D32 along with the neighboring sensor-residue E35, reveal loss of function (Bertozzi et al., 2016; Nemecz et al., 2017; Hu et al., 2018). In addition to capturing state-dependent differences in agreement with experimental data, our analysis also showed bimodality of the probability distributions at neutral pH for the closed states (Figure 5D). This effect was further enhanced upon mutation of the 9\u2019 gate, indicating that there could be an allosteric pathway between the center of the transmembrane pore and the D32-R192 salt bridge. This is also supported by previous computational models based solely on the apparent open structure (Mowrey et al., 2013a).\n\nGating motions in the TMD are particularly characterized by the tilting of the pore-lining M2 helices, leading to constriction around the 9\u2019 hydrophobic gate followed by pore dehydration. This process has previously been observed in early simulations of the TMD by Zhu and Hummer, 2010. Our models successfully captured how these M2 helix motions closely correlated with changes in 9\u2019 radius and pore hydration levels (Figure 5\u2014figure supplement 3;\u00a0Figure 5\u2014figure supplement 4;\u00a0Figure 3D). Even though we capture state-dependent differences in the 9\u2019 pore radius, and individual simulations sample pores that are as wide as the open-state structures, the most probable conformations of our open state clusters do not exhibit pores as expanded as in the majority of open crystal structures (Figure 5B). These structure have typically been co-crystallized with a hydrophobic plug of detergent molecules between the 9\u2019 region and the top of M2, associated with a more expanded, funnel-shaped form, which is hardly sampled in simulations after plug removal. However, I233T substitution generally increased both 9\u2019 radius to overlap better with those from the open X-ray structure, while the H235Q mutation led to overall more constriction around 9\u2019 and less hydration, potentially impacting the ability of this variant to conduct ions. Other variables that have been associated with GLIC channel gating, including kinking of the M1 helix (Sauguet et al., 2014) and interactions in the TMD-TMD subunit interface (Fourati et al., 2018), were also captured by our MSMs (Figure 5\u2014figure supplement 1B;\u00a0Figure 5C). Notably, our observations were largely consistent with (Lev et al., 2017), validating the use of these features as collective variables. Interestingly, the protonated alternative open-like state V displayed particular constriction at the \u22122\u2019 gate incompatible with ion conduction (Figure 5\u2014figure supplement 1A). This is a typical feature of desensitized states in the pLGIC family (Gielen and Corringer, 2018), although a desensitized state for GLIC has not yet been resolved. Energetically, open and desensitized states would be expected to be separated by an energy barrier, which is not the case in our models, but it is possible state V represents conformations relevant for pre-desensitization. Since the time constant for GLIC desensitization is assumed to exceed 10 s for pH values over 3.5 (Velisetty and Chakrapani, 2012) and due to the lack of structures covering this state, sampling the desensitization process without applying an enhanced seeding procedure remains a difficult task.\n\nAnalysis of the conformational symmetry of GLIC revealed a particularly symmetric open state at protonated conditions (Figure 6). At deprotonated conditions the symmetry levels were lower overall, indicating that protonation is important for channel open-state symmetrization. In all cases, significantly less symmetric ECDs could be observed in the closed state compared to the open state, although the difference was further enhanced at protonated conditions due to the more symmetric open state. The vast majority of GLIC structures cover the open state and display high levels of ECD symmetry, while the fewer structures covering the closed state are relatively poorly resolved, possibly indicating heterogeneity particularly in the ECD (Sauguet et al., 2014; Rov\u0161nik et al., 2021). These results suggests that ECD symmetry could serve as an entropic driving force, where perturbation to the symmetric structure of the open state ECD facilitates channel closure. At activating conditions the ECD becomes protonated which facilitates high-level symmetrization characteristic for the open state. Furthermore, at protonated conditions the TMD displayed increased levels of symmetry both in the open state and closed state with less symmetric conformations in between. At deprotonated conditions, the symmetry level of the TMD transition was largely consistent with that of the protonated conditions, but the TMDs of the closed-like conformations were less symmetric. So far consensus has not been reached regarding whether homomeric channels transition symmetrically or asymmetrically, but evidence points toward asymmetric transitions being common. Although most structures derived from X-ray crystallography and cryo-EM are symmetric, partly due to the use of symmetric restraints during model building, there are a few examples of pLGICs with asymmetric structures. Recent cryo-EM structures of the 5-HT3A receptor in lipid nanodiscs revealed an asymmetric closed state, whereas a symmetrized open state was stabilized by serotonin molecules bound at all five ECD sites (Zhang et al., 2021). Additionally, a cryo-EM structure of the resting state Torpedo nAChR with toxins bound to two of the five subunits displayed asymmetries in both the ECD and TMD (Rahman et al., 2020), and cryo-EM structures of the GABAA receptor displayed ECD asymmetry in the resting state compared to the desensitized where ligands were bound (Masiulis et al., 2019). When it comes to computational work, long (15\u201320 \u03bcs) simulations of 5-HT3A have shown evidence of asymmetric closure of the TMD pore upon channel pre-activation (Guros et al., 2020). Mowrey et al. also proposed that asymmetric propofol binding could create unbalanced forces such that symmetry breaking would facilitate channel conformational transitions (Mowrey et al., 2013b). In our simulations, ligands (protons) were bound symmetrically across all subunits which further indicates that asymmetric transitions could be important regardless of symmetric or asymmetric ligand-binding. Understanding these asymmetries is nonetheless important for understanding the gating mechanism, but could also bring clarity regarding differences between homomeric and heteromeric pLGICs, as well as effects of different permutations of subunit assembly.\n\nOne limitation of our simulations was that protonation states were fixed throughout the simulations and selected according to consensus from previous studies. Indeed, protonation of some of titratable residues are expected to have a large effect on the results, while others are expected to be less important. Mutational studies of all titratable residues in GLIC identified that mutation of E26, D32, E35, D122, E222, H235, E243, and H277 altered GLIC activation, and out of these E35 was identified as the main proton sensor (Nemecz et al., 2017; Hu et al., 2018). In our simulations, protonation of E35 indeed had a large effect on the local backbone conformation, suggesting importance for proton-sensing (Figure 5F). Previous $p\u2062K_{a}$ calculations generated the following most probably protonation pattern at pH 4.6; E26, E35, E67, E75, E82, D86, D88, E177, E243, and H277 doubly protonated (Nury et al., 2011), which is also the pattern used in this paper. Other simulation studies have used similar patterns with slight modifications to model low pH conditions; E69 protonated (Nury et al., 2010), E69 protonated and three or four among five randomly chosen symmetrical copies of D/E residues protonated (Cheng et al., 2010), H127 doubly protonated (Prevost et al., 2012), E69 protonated and H127 doubly protonated (Calimet et al., 2013), E69 protonated, H127 doubly protonated, and D86 and D88 deprotonated (Lev et al., 2017), and D13, D31, D55, D91, D97, D145, D153, D154, D161, D178, D185, E14, E69, E147, E163, E181, E272, and H127 doubly protonated (Fritsch et al., 2011). Although these simulations were primarily covering the open state, we see no large discrepancies in results and can therefore expect our simulations to be generally insensitive to the permutations in protonated residues mentioned above. Once the method has matured, constant pH simulations will likely solve the combinatorial problem that protonation state selection creates (Chen et al., 2014).\n\nIn summary, our Markov states models are able to predict shifts in free energies upon change in activating stimulus (pH) as well as gain-of-function and loss-of-function mutations. The models predict relatively low values of maximal open probability, with relative differences in agreement with electrophysiology recordings. Our simulations also captured state-dependent differences in previously proposed mechanistic variables as well as state- and pH-dependent differences in channel conformational symmetry. Due to the possibility of direct comparison and validation to electrophysiology, these models are able to predict high-level statistical properties together with the details of channel conformational changes. This enables further exploration of changes that correlate with gating to further the fundamental understanding of pLGIC gating and, potentially, the development of state-selective drugs. We expect this methodology to be transferable to other channels with potential to predict properties from electrophysiology, even in absence of full equilibrium sampling.\n\n## Materials and methods\n\n### Pathway construction using eBDIMS\n\nTo enhance sampling, 50 seeds along the GLIC closed\u2013open gating pathway were obtained along forward and reverse elastic-network driven Brownian dynamics (eBDIMS) simulations (Orellana et al., 2016; Orellana et al., 2019). Here, the channel was represented as an elastic network model using the C\u03b1 representation of apparent closed (PDB ID 4NPQ) (Sauguet et al., 2014) and open (PDB ID 4HFI) (Sauguet et al., 2013) structures, and driving transitions in both directions by progressively minimizing the difference in internal distances between the current and the target states. Langevin dynamics with implicit solvent and harmonic forces was used to model the dynamics, with a 12 \u00c5 intra-subunit and 8 \u00c5 inter-subunit cutoff distance, respectively. The force constant of the elastic network was 10 kcal/(mol\u00b7\u00c52), as previously used in Orellana et al., 2016.\n\n### Model reconstruction\n\nThe atomistic detail of the seeds was reconstructed using Modeller version 9.22 (Sali and Blundell, 1993) in two steps. First, side chain atoms from the template X-ray structure (PDB ID 4HFI) were added to each model, followed by a cycle of refinement with all C\u03b1 atoms restrained. Restraints on C\u03b1 atoms were then substituted with restraints on backbone hydrogen bonds, taken from helix and sheet annotations in the template PDB file, for another cycle of refinement to ensure proper secondary structure.\n\n### Molecular dynamics simulations\n\nThe reconstructed seed models were embedded in a palmitoyloleoylphosphatidylcholine (POPC) lipid bilayer, solvated by water and 0.1 M NaCl. Activating conditions were modeled by protonation of a subset of acidic residues (E26, E35, E67, E75, E82, D86, D88, E177, E243; H277 doubly protonated) to approximate the probable pattern at pH 4.6, as previously described (Nury et al., 2011). All systems were energy minimized with steepest descent for 10,000 steps. NPT equilibration was carried out in four steps, restraining all heavy atoms in the first cycle, then only backbone atoms, then C\u03b1 atoms, and finally the M2 helices, for a total of 76 ns. Equilibration and production runs were performed using the Amber99SB-ILDN force field with Berger lipids, together with the TIP3P water model. Temperature coupling was achieved with velocity rescaling (Bussi et al., 2007) and pressure coupling with the Parrinello-Rahman barostat (Parrinello and Rahman, 1981). The simulations were prepared and run with GROMACS versions 2018.4 and 2019.3 (Abraham et al., 2015) for 1.2 \u00b5s each, allowing for each individual trajectory to substantially deviate from the starting seed conformation and collectively sample space around the transition pathway broadly (Figure 2\u2014figure supplement 1).\n\n### Markov state models\n\nThe ion channel was described with a set of 1585 features, including interatomic distances within and between subunits. Since GLIC is a symmetric homopentamer, we introduced a feature transformation where all distances originating from one subunit were scored as an independent trajectory; thus each trajectory contained information as to how one subunit moved in relation to all others. Dimensionality reduction was achieved using tIC analysis, previously shown to form a good basis for discretization of conformational space into Markov states, as the tIC eigenvetors linearly approximate the MSM eigenvectors (; Schwantes and Pande, 2013). Typically, MSMs are constructed with the assumption of exhaustive sampling of the equilibrium distribution, and inclusion of as much kinetic information as possible. Although suitable for peptide-sized systems, we found it practically unfeasible for the large-scale motions in ion channels since the MSM tends to optimize for slow but undersampled processes that may not be of primary interest. Accordingly, we discretized the state space into a few, but meaningful, tIC dimensions by omitting faster dimensions where the data was represented as a single Gaussian. Hyperparameter optimization is commonly solved by maximizing the variational approach for Markov porcesses (VAMP) (Wu and No\u00e9, 2019) score with cross-validation to avoid overfitting; however, in our case, we found that VAMP favored exploration of slower and undersampled processes rather than convergence of a few timescales of interest, in the absence of of exhaustive equilibrium sampling. Instead, we relied on a simpler elbow approach to select appropriate hyperparameters, by calculating the open probabilities using PCCA+ (R\u00f6blitz and Weber, 2013) for various hyperparameter combinations. Based on the resulting plots (Figure 2\u2014figure supplement 3A), we selected 300 clusters for kMeans clustering from the \u2019elbow\u2019 of the plot to ensure convergence and avoid overfitting. The tIC lag times yielded consistent results within a 5\u201325 ns range for all datasets (Figure 2\u2014figure supplement 3B), so a 20 ns lag time was selected, with kinetic mapping (No\u00e9 and Clementi, 2015). Instead of variationally optimizing all eigenvalues (as in VAMP), we plotted the slowest implied timescale of greatest interest using different hyperparameter combinations (Figure 2\u2014figure supplement 3C). Indeed, our previous selection was optimal for the deprotonated conditions, so we used these parameters for all six datasets for consistency. We also note that the timescales of the selected model and the variationally optimal one were almost within the error margin for the protonated conditions. The MSM lag time was determined to 20 ns from the implied timescales, by selecting the shortest possible Markovian lag time to maximize resolution of the MSM processes (Figure 2\u2014figure supplement 2). Two- and four-or-five-state macrostate models were obtained through PCCA+ clustering of the MSM eigenvectors (R\u00f6blitz and Weber, 2013). For the two-state model, the number of macrostates was selected in accordance to the number of observed energy minima (Figure 2) so that macrostates would represent metastable states. Higher-order clustering was done to enable more fine-grained analysis of conformations at more kinetically different regions of the phase space, and particularly to enable extraction of an intermediate cluster (Figure 4, State III). The choice of number of macrostates for these models were dependent on the structure of the MSM eigenvectors, and optimized to enable comparability between datasets and avoid macrostates with too small populations. One simulation from the protonated wild-type dataset was rejected from analysis due to obstruction of the tIC landscape with a slower but undersampled process, leaving 58.8 \u03bcs total sampling; MSMs of the other three conditions (deprotonated wild-type, deprotonated and protonated I233T, deprotonated and protonated H235Q) contained 60 \u03bcs sampling each. Sampling and convergence of each MSM were assessed through convergence of the slowest implied timescales (Figure 2\u2014figure supplement 2A,D), Chapman-Kolmogorov tests (Prinz et al., 2011; Figure 2\u2014figure supplement 2C,F) and by assessing the level of reversible sampling achieved (Figure 2\u2014figure supplement 2B,E). Markov state modeling was done with PyEMMA version 2.5.7 (Scherer et al., 2015).\n\n### Electrophysiology\n\nTwo-electrode voltage-clamp electrophysiology was performed as previously described (Heusser et al., 2018). Briefly, GLIC cDNA subcloned in vector pMT3 was modified using commercially synthesized primers (Invitrogen, Stockholm, Sweden) and the GeneArt site-directed mutagenesis system (Thermo Fischer, Waltham, MA). Plasmids were amplified using a HiSpeed Plasmid Purfication Midi kit (Qiagen, Hilden, Germany), and verified by cycle sequencing (Eurofins Genomics GmbH, Ebersberg, Germany). Nuclei of isolated stage V\u2013VI Xenopus laevis oocytes (EcoCyte BioScience, Dortmund, DE) were injected with 0.5\u20133.0 ng cDNA and stored in incubation medium (88 mM NaCl, 10 mM HEPES, 2.4 mM NaHCO3, 1 mM KCl, 0.91 mM CaCl2, 0.82 mM MgSO4, 0.33 mM Ca(NO3)2, 2 mM sodium pyruvate, 0.5 mM theophylline, 0.1 mM gentamicin, 17 mM streptomycin, 10,000 u/L penicillin, pH 8.5) for 2\u20137 days. Glass electrodes were pulled and filled with 3 M KCl to reach an initial resistance of 0.1\u20130.5 M\u03a9. Expressing oocytes were clamped at \u221270 mV using an OC-725C voltage clamp (Warner Instruments, Hamden, CT, USA), and perfused with running buffer (123 mM NaCl, 10 mM HEPES, 2 mM KCl, 2 mM MgSO4, 2 mM CaCl2, pH 8.5) at a flow rate of 0.35 mL/min. Activation buffers contained 10 mM MOPS or citrate in place of HEPES, adjusted in 0.5 pH unit increments, and were exchanged for running buffer via a VC3-8 valve controlled pressurized perfusion system (ALA Scientific Instruments, Farmingdale, NY, USA). Currents were digitized at a sampling rate of 5 kHz with an Axon CNS 1440A Digidata system using pCLAMP 10 (Molecular Devices, Sunnyvale, CA, USA). Each pH response was measured as the peak current after 1 min exposure to activation buffer, normalized to the same oocyte's response to the lowest pH tested. Each reported value represents the mean from six to eight oocytes, \u00b1\u00a0standard error of the mean. Proton concentration-dependence curves were fit by nonlinear regression with bottom and top restraints using Prism 8.0 (GraphPad Software, La Jolla, CA). Measurements from variant H235Q, collected by equivalent methods, are reproduced here from our previously published data (Fourati et al., 2018).\n",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "09fcf494-f82e-4547-ad70-992c02467668",
+      "submission_id": "db753806-19ef-49f7-ac76-f74022456df1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Toby W Allen, RMIT University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68369.sa1](https://doi.org/10.7554/eLife.68369.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis article presents state-of-the-art molecular dynamics simulations of the pH-gated pentameric ion channel GLIC, which has been the subject of many structural and functional studies. GLIC can be considered as a model system for pentameric ligand-gated ion channels that are responsible for fast chemical-electrical communication between cells in animals. The findings include the solution of open- and closed-like channel forms, intermediates and a \"pre-desensitised\" state. The approach reproduces modulation by pH and opposing mutations, correctly reproducing loss or gain of function, representing convincing proof of the success of the approach. Overall, the sampling of channel dynamics is significant and the description of state interconversions sheds new light on pLGIC mechanisms. The reviewers were convinced by the substantial changes and additions to the manuscript, as well as the new insight into the roles of pH and mutations in GLIC function. Concerns over convergence, sampling and methods descriptions have been allayed and the manuscript is now suitable for publication.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Markov State Models of Proton-and Gate-Dependent Activation in a Pentameric Ligand-Gated Ion Channel\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Toby Allen as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Fr\u00e9d\u00e9ric Poitevin (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile the reviewers agree on the strengths and importance of the findings, the following changes or additions are required:\n\n1. Analyse one the numerous mutants that are blocked in the so-called locally-closed state, thereby helping the community to understand the nature of this often-encountered phenotype.\n\n2. Demonstrate convergence and sampling, including proof of lack of dependence on the initial path.\n\n3. Better describe of the nature of the observed states (especially the locally closed state) and the tICA gating coordinates.\n\n4. Additional methods description and clarification is needed, with clearer relation to past simulation studies to avoid misapprehensions.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors state that the problem with some past methods is a presumed pathway (which should be distinguished from a presumed finite set of coordinates/collective variables, as in Ref.20). Yet the MSM is not without any assumptions. The seeding of simulations in any MSM, including here, stems from an initial presumed gating transition from some simplified model. See above comments.\n\nIn the beginning of the Results section (page 5) we see a typical representation of free energy within a tICA1/2 space. See above comment. Can the key tICA1 vector be visualised, say with a vector mapping (movements of residues\u2026) on the structure to allow it to be more readily interpreted? Moreover, it is not clear what tIC2 represents by analysis of figure 2 and later figures, and its importance to gating not immediately obvious. Is there a physical interpretation for it? Overall, I find the discussion around figure 2 to be wanting of more physical interpretation.\n\nThe authors find predominantly closed channels, although I233T (which shifts pH50 to allow conduction even at neutral pH in experiments) revealed a second open-like free energy minimum. Protonation revealed a much broader second open minimum (though still by far predominantly closed, even at low pH). This predominant closure was not seen in in past string solutions of Lev et al., and it is not clear how this is consistent with the observed pH50 for wildtype GLIC experimentally. See above comment on this, relating to the preprint in Ref.33, which appears to be the main evidence used by the authors for a low probability of a conducting form.\n\nRegarding other states, I feel the intermediate states (such as those of states I-V with partial TMD/ECD change) have not been well characterised, or their implications explained as well as could be. Also, the authors could better visualise the location of any LC forms on the maps and explain their roles in gating (see above comments). In figure 2 the LC states are said to lump in with closed state structures (page 6). The dots in figure 4 have no colours. I guess some of the left dots are LC? See my comments above about confusion over LC. It is particularly interesting that one state with -2' constriction may relate to the desensitised state (although the authors see no barrier towards it, and so its relation to a desensitised state is not clear). Why the method cannot sample the actual desensitised state is not well explained \u2013 though may suggest a limitation in the analysis based on microsecond trajectories.\n\nAnalysis of states against past variables (as in Lev et al., Ref 20) mostly goes as expected, although the ECD behaviour does not (page 10). Though pH dependence is seen, the MSM does not reveal clear bloom and twist diffs O-C states and the authors suggest it is an artefact of x-ray crystals. While twist was less obvious, ECD spreading did differ between states in the past model based on strings by Lev et al., Is this because the finite space of Lev et al., or becoming trapped near those values? Why did the ECD spread effect disappear in this current model? Was it present after the initial seeding but vanished in subsequent MD libraries, or did this come from the initial seeding procedure?\n\nSymmetry of the ECD decreases in closed state, and at high pH. This is as to be expected based on the higher structural diversity (and symmetry loss) of the ECD seen in Xray of the closed/high pH structure. A lot has been made about the role of asymmetry. Can the authors better explain to the reader why asymmetry in gating really matters?\n\nIn comparison to the previous string method on page 11, the authors write that barriers like 1-1.5 and 1.5-2 are lower than 1.5 and 2.5 kcal/mol, suggesting the current model extracted lower barriers \u2013 presumably being better sampled. However, given the errors I would just say they are consistent.\n\nThe statement on page 4 that Lev et al., only used short picosecond timescale simulations in their string method could be misleading for the readers. The string method used by Lev et al., makes use of large libraries of 5 and 20ps trajectories to sample the directions of change, but are carried out in parallel and repeated for many hundreds of iterations, such that the timescale sampled is much longer than that suggested by the authors here. More critically, the string method is an enhanced sampling approach such that timescales of motions cannot be judged by these values, as they adaptively sense the directions of change, allowing the approach to explore configurational space well beyond the actual simulation times. In fact, one might suggest the MSM approach used here, based on libraries of 1 microsecond free trajectories, may be limited in the states they can explore for processes that occur on much longer timescales. While it is always possible to have more sampling of random trajectories in the string method, I would say the main advantage of the present MSM is the lack of presumption of order parameters, which could be further explored in string methods. I do note, however, that one of the conclusions here (on page 12) is that the variables used by Ref.20 were consistent with the findings here.\n\nRegarding the methods, overall the techniques used could be better explained, both for the MD/MSM expert and the general reader, avoiding jargon and relying on packaged methods, and better justifying the choices made. Things like eBDIMS, TIC etc will not mean much to many readers in the current form. The motivations for the choices and their details are important to this study.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors should take the opportunity of their working methodology to explain to the community the role of the LC state: is it an on-pathway form in which some of the mutants get stuck? or is it something different (off-pathway)?\n\n\u2013 To this effect, an in-depth study of one of the many known LC mutants is needed.\n\n\u2013 p. 2 There is a rather bold and questionable general statement in p. 2 about experimental structures, stating that \"the stability required for crystal packing or cryo-EM data processing results in structures mostly representing metastable states\".\n\nI strongly suggest replacing the word \"mostly\" by \"sometimes\".\n\nReviewer #3 (Recommendations for the authors):\n\nMy main recommendations to the authors are very general and do not require to be answered for acceptance of publication.\n\nRegarding the apparent subjectivity in the clustering choices and the difficulty/impossibility of exhaustive sampling for this kind of system, it would be interesting to motivate the choices made (5 states, PCCA+, \u2026). For example, would the authors recommend their approach for simulations involving other large systems \u2013 can it be transferred \u2013 or was it thought in reaction to the particular sampling obtained here? Elements of answers to this question have the potential to help overcome the problem of robust analysis of undersampled datasets, which could benefit greatly the simulation community.\n\nIt is somewhat unclear to me what the new insights exactly are:\n\n\u2013 The idea that protonation is mainly a driver of compaction, not of the gating is interesting. Unfortunately, there is no discussion of the combinatorial problem that protonation poses or mention of constant pH simulations that would be more realistic than applying fixed protonation that were proposed in the past \u2013 exploring the effect of a few selected protonation state changes would be interesting to see if the results are robust to a few perturbations.\n\n\u2013 Discussion about desensitized state is interesting; it would have been nice to hear more from the authors about their take on the possibility to access this regime with simulations. In principle MSM have the potential to yield kinetic models that could be directly compared to the ones extracted from electrophysiology; what is the authors take on this? Will that ever be possible? When? Would a more experimental approach be desirable, instead of post-hoc comparison?\n",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "07617e85-630c-4ed1-8a60-8d7b2f6e8d39",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C1",
+      "claim": "GLIC is a proton-gated channel from the cyanobacterium Gloeobacter violaceus.",
+      "claim_type": "EXPLICIT",
+      "source": "Prokaryotic homologs, such as the proton-gated channel GLIC from the cyanobacterium Gloeobacter violaceus, share many topological features with eukaryotic pLGICs, and have been proposed to follow similar gating pathways (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction section of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "dfe1a50c-340b-4974-b099-6d35553d5407",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C2",
+      "claim": "GLIC shares many topological features with eukaryotic pLGICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Prokaryotic homologs, such as the proton-gated channel GLIC from the cyanobacterium Gloeobacter violaceus, share many topological features with eukaryotic pLGICs, and have been proposed to follow similar gating pathways (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the introduction supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "a49aa115-206b-434e-a378-8e6dd04f302a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C3",
+      "claim": "GLIC has been proposed to follow similar gating pathways to eukaryotic pLGICs.",
+      "claim_type": "EXPLICIT",
+      "source": "Prokaryotic homologs, such as the proton-gated channel GLIC from the cyanobacterium Gloeobacter violaceus, share many topological features with eukaryotic pLGICs, and have been proposed to follow similar gating pathways (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "1a28df04-3faa-4204-b4ff-e9e892593d07",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C4",
+      "claim": "GLIC accounts for over 40% of pLGIC entries in the protein data bank.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLIC model system is notable in this regard, accounting for over 40% of pLGIC entries in the protein data bank, including apparent closed and open states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct factual statement about the representation of GLIC structures in the PDB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "c0b95650-884c-41d1-8bb6-7d3ca1187a39",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C5",
+      "claim": "The I233T substitution enhanced proton sensitivity in GLIC, shifting half-maximal activation by more than one pH unit.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we confirmed by two-electrode voltage-clamp electrophysiology recordings in Xenopus oocytes that the I233T substitution enhanced proton sensitivity, shifting half-maximal activation by more than one pH unit, and producing moderately conductive channels even at neutral pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data presented in Figure 1D and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "86b55a7a-42fb-4595-86ac-614795ea43f7",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C6",
+      "claim": "The I233T substitution produces moderately conductive channels even at neutral pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we confirmed by two-electrode voltage-clamp electrophysiology recordings in Xenopus oocytes that the I233T substitution enhanced proton sensitivity, shifting half-maximal activation by more than one pH unit, and producing moderately conductive channels even at neutral pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology recordings shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "9562844a-f4e1-444d-951d-43ce00d7746b",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C7",
+      "claim": "The H235Q substitution decreased proton sensitivity in GLIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the histidine substitution decreased proton sensitivity, resulting in moderately conductive channels at low pH (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "d5f4239d-1bca-47dc-9b60-bbc5a965ad24",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C8",
+      "claim": "The H235Q substitution results in moderately conductive channels at low pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the histidine substitution decreased proton sensitivity, resulting in moderately conductive channels at low pH (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "ed39b3fe-443d-4462-b3ac-c31cc2aea90f",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C9",
+      "claim": "Each simulation model was subjected to unrestrained simulation in a POPC lipid bilayer for over 1 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each resulting model was then subjected to unrestrained simulation in a palmitoyloleoylphosphatidylcholine (POPC) lipid bilayer for over 1 \u03bcs, producing 120 \u03bcs total sampling in the two conditions (Figure 1E3, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "767b8d4e-2bba-49c1-85c9-8601249acad7",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C10",
+      "claim": "The simulations produced 120 \u03bcs total sampling in the two conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each resulting model was then subjected to unrestrained simulation in a palmitoyloleoylphosphatidylcholine (POPC) lipid bilayer for over 1 \u03bcs, producing 120 \u03bcs total sampling in the two conditions (Figure 1E3, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the total simulation time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "7e365128-d7ea-4b6d-89d7-6688bad90940",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C11",
+      "claim": "The closed X-ray structure consistently projected to the lowest free energy minimum in the landscape under both deprotonated and protonated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the first tIC \u2013 with the largest eigenvector contributions focused around the M2 helices (Figure 2\u2014figure supplement 4A,C,E) \u2013 the closed X-ray structure consistently projected to the lowest free energy minimum in the landscape, suggesting a predominant population of closed channels under both deprotonated and protonated conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the free-energy landscapes shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "cef9ab0a-4356-4107-b244-e0e985a7c836",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C12",
+      "claim": "Recent cryo-electron microscopy studies support a predominance of nonconducting states even at pH below 4 in GLIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Due, in part, to its low conductance in single-channel recordings (Bocquet et al., 2007), the open probability of GLIC is not well established; however, recent cryo-electron microscopy studies support a predominance of nonconducting states even at pH below 4 (Rov\u0161nik et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent cryo-EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "2976908f-6261-476e-bb92-cf4097f991c6",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C13",
+      "claim": "In deprotonated conditions, the I233T substitution created a well-defined second local minimum in free energy along tIC1, centered near the open X-ray structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In deprotonated conditions, the I233T substitution created a well-defined second local minimum in free energy along tIC1, centered near the open X-ray structures (Figure 2C), not seen in the wild-type or H235Q variants (Figure 2A,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the free-energy landscape shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "46490bfb-e748-4827-8117-fe1c51895e8a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C14",
+      "claim": "Protonated conditions deepened the secondary minimum for both wild-type and I233T variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Protonated conditions further deepened this secondary minimum for both wild-type and I233T variants (Figure 2B,D), but for the H235Q variant this secondary minimum was notably displaced along tIC2 such that it did not overlap with the open X-ray structures (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the free-energy landscapes shown in Figures 2B and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bac7f047-70e1-4217-89f9-c5c7ba983634",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C15",
+      "claim": "For the H235Q variant under protonated conditions, the secondary minimum was notably displaced along tIC2 such that it did not overlap with the open X-ray structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Protonated conditions further deepened this secondary minimum for both wild-type and I233T variants (Figure 2B,D), but for the H235Q variant this secondary minimum was notably displaced along tIC2 such that it did not overlap with the open X-ray structures (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the free-energy landscape shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "4d46473f-7403-467c-a30a-3d726a87ffb9",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C16",
+      "claim": "The fractional population of open-like macrostates moderately increased from 6% to 12% upon I233T substitution under deprotonated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this clustering, and consistent with the qualitative comparisons above, the fractional population of open-like macrostates moderately increased (6% to 12%) upon I233T substitution under deprotonated conditions, and increased further for both variants upon protonation (to 17% and 20% for wild-type and I233T, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the population data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "44a8b80f-b2c7-4070-8ea6-8cd1c472803c",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C17",
+      "claim": "Upon protonation, the open-like macrostate population increased to 17% for wild-type and 20% for I233T.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this clustering, and consistent with the qualitative comparisons above, the fractional population of open-like macrostates moderately increased (6% to 12%) upon I233T substitution under deprotonated conditions, and increased further for both variants upon protonation (to 17% and 20% for wild-type and I233T, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the population data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "80804d01-fdc8-499d-b8bb-8af44e57c435",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C18",
+      "claim": "Upon H235Q substitution, the open state population decreased from 6% to 3% under deprotonated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon H235Q substitution the open state population instead decreased slightly (6% to 3%) under deprotonated conditions, and reached a lower open probability (15%) compared to wild-type after protonation (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the population data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "34ffc903-fbfc-4369-badc-89d6d77ebd48",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C19",
+      "claim": "The H235Q variant reached a lower open probability (15%) compared to wild-type after protonation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon H235Q substitution the open state population instead decreased slightly (6% to 3%) under deprotonated conditions, and reached a lower open probability (15%) compared to wild-type after protonation (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the population data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "ee431e31-8866-42ab-8d7d-6a687f4942af",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C20",
+      "claim": "The I233T mutation accelerated opening transitions, decreasing the closed\u2013open mean first-passage time from 8.9 to 5.8 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "MSM kinetics indicated the I233T mutation accelerated opening transitions, decreasing the closed\u2013open mean first-passage time by over one third (8.9 to 5.8 \u03bcs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the transition rate data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "e7b1be8e-4c91-49a4-bdbf-06683bf42b62",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C21",
+      "claim": "The H235Q mutation substantially slowed opening transitions, increasing the transition times from 8.9 to 13.3 \u03bcs under deprotonated conditions and from 8.0 to 14.3 \u03bcs under protonated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the H235Q mutation substantially slowed opening transitions by almost doubling the transition times (8.9 to 13.3 \u03bcs and 8.0 to 14.3 \u03bcs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the transition rate data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "7f33948e-63c0-4661-b8b7-196083089606",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C22",
+      "claim": "Protonation appeared to slow closing transitions, increasing open\u2013closed times nearly 3-fold for wild-type and I233T variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, protonation appeared to slow closing transitions, increasing open\u2013closed times nearly 3-fold for wild-type and I233T variants (0.5 to 1.4 \u03bcs and 0.6 to 1.7 \u03bcs for wild-type and I233T, respectively), while increasing five-fold for the H235Q mutant (0.4 to 2.1 \u03bcs) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the transition rate data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "aa36f275-efa1-461b-996c-664ddb53086d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C23",
+      "claim": "Protonation increased open\u2013closed times five-fold for the H235Q mutant (0.4 to 2.1 \u03bcs).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, protonation appeared to slow closing transitions, increasing open\u2013closed times nearly 3-fold for wild-type and I233T variants (0.5 to 1.4 \u03bcs and 0.6 to 1.7 \u03bcs for wild-type and I233T, respectively), while increasing five-fold for the H235Q mutant (0.4 to 2.1 \u03bcs) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the transition rate data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "87bd1d94-30d1-4f2a-8956-835fc0200c34",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C24",
+      "claim": "Under all conditions, the macrostate barrier corresponded to a dramatic shift in hydration levels along tIC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all conditions, the macrostate barrier corresponded to a dramatic shift in hydration levels along tIC1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the hydration data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "9163ce22-789a-4a5b-a68e-75992091f7e5",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C25",
+      "claim": "Protonation increased hydration for all variants, particularly at larger (open-like) values of tIC1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, protonation increased hydration for all variants, particularly at larger (open-like) values of tIC1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the hydration data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "4a4cfda6-7e56-4207-b753-f95622d61b79",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C26",
+      "claim": "The I233T substitution increased hydration at all values along tIC1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected with a polar residue at the hydrophobic gate, the I233T substitution further increased hydration at all values along tIC1, suggesting more closed-like states might achieve ion conduction in this variant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the hydration data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "8e2eae8a-2978-4233-8a80-029172a7fc9c",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C27",
+      "claim": "The open-like free-energy well was substantially less hydrated in the context of H235Q, indicating a reduced propensity for ion conduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in addition to being displaced from experimental structures (Figure 2F), the open-like free-energy well was substantially less hydrated in the context of H235Q, indicating a reduced propensity for ion conduction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the hydration data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "95ea845f-aa3a-422d-a3ec-169e6c5152ed",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C28",
+      "claim": "The 9' position constitutes a hydrophobic gate that critically influences conduction properties in GLIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The midpoint position, 9' counting from the intracellular side, has been shown to constitute a hydrophobic gate that critically influences conduction properties in GLIC as in other family members (Gonzalez-Gutierrez et al., 2017), while substitution at the interfacial H235, or 11' position, enabled crystallization of an intermediate, locally closed conformation (Prevost et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "317a24fa-c7aa-49f4-bfaf-bf86c1638f1b",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C29",
+      "claim": "Substitution at the H235 (11') position enabled crystallization of an intermediate, locally closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The midpoint position, 9' counting from the intracellular side, has been shown to constitute a hydrophobic gate that critically influences conduction properties in GLIC as in other family members (Gonzalez-Gutierrez et al., 2017), while substitution at the interfacial H235, or 11' position, enabled crystallization of an intermediate, locally closed conformation (Prevost et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "0102f6cd-e37b-49a8-9a56-2ca3d8b8f63d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C30",
+      "claim": "E35 was identified as the main proton sensor in GLIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational studies of all titratable residues in GLIC identified that mutation of E26, D32, E35, D122, E222, H235, E243, and H277 altered GLIC activation, and out of these E35 was identified as the main proton sensor (Nemecz et al., 2017; Hu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous mutational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "4436c774-d16a-48bc-9375-2df0c275a45e",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C31",
+      "claim": "Protonation of E35 had a large effect on the local backbone conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, protonation of E35 indeed had a large effect on the local backbone conformation, suggesting importance for proton-sensing (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "49b46921-6692-4bce-893d-a95c8f7d0778",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C32",
+      "claim": "Recent small-angle neutron scattering (SANS) experiments estimated low-pH Popen to 18%.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent small-angle neutron scatting (SANS) experiments estimated low-pH Popen to 18% by fitting linear combinations of closed and open X-ray structures to the SANS curve, obtained from the channel population-average in solution and at room temperature (Lycksell et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent SANS experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "44e46b8e-264b-4b04-844a-971108bc4555",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C33",
+      "claim": "The MSM estimate of low-pH Popen (17%) fits well with the SANS estimate of 18%.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent small-angle neutron scatting (SANS) experiments estimated low-pH Popen to 18% by fitting linear combinations of closed and open X-ray structures to the SANS curve, obtained from the channel population-average in solution and at room temperature (Lycksell et al., 2021). This fits well with our estimate of 17%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the MSM result and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "82645975-b77e-43cd-aa37-d41161ddd772",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C34",
+      "claim": "The open probability for GABAARs ranges from 10\u201340% when saturated with their natural agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Other channels in the pLGIC family have also been shown to attain a range of maximal open probabilities; 10\u201340% for GABAARs (Pierce et al., 2019; Germann et al., 2019), 20\u201380% for 5-HT3s (Lambert et al., 1989; Mott et al., 2001), 0.2\u20133% for nAChRs (Pesti et al., 2014; Williams et al., 2012), and 90\u2013100% for GlyRs (Ivica et al., 2021; Mangin et al., 2003), when saturated with their respective natural agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "a256ada2-a6a9-454b-b3a2-63819554a31d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C35",
+      "claim": "The open probability for 5-HT3s ranges from 20\u201380% when saturated with their natural agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Other channels in the pLGIC family have also been shown to attain a range of maximal open probabilities; 10\u201340% for GABAARs (Pierce et al., 2019; Germann et al., 2019), 20\u201380% for 5-HT3s (Lambert et al., 1989; Mott et al., 2001), 0.2\u20133% for nAChRs (Pesti et al., 2014; Williams et al., 2012), and 90\u2013100% for GlyRs (Ivica et al., 2021; Mangin et al., 2003), when saturated with their respective natural agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "1b1cf483-ab88-42c9-9dcd-c097854dbae5",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C36",
+      "claim": "The open probability for nAChRs ranges from 0.2\u20133% when saturated with their natural agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Other channels in the pLGIC family have also been shown to attain a range of maximal open probabilities; 10\u201340% for GABAARs (Pierce et al., 2019; Germann et al., 2019), 20\u201380% for 5-HT3s (Lambert et al., 1989; Mott et al., 2001), 0.2\u20133% for nAChRs (Pesti et al., 2014; Williams et al., 2012), and 90\u2013100% for GlyRs (Ivica et al., 2021; Mangin et al., 2003), when saturated with their respective natural agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "622b0d8a-a27e-4f02-bd4e-1cb4eeb48a58",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C37",
+      "claim": "The open probability for GlyRs ranges from 90\u2013100% when saturated with their natural agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Other channels in the pLGIC family have also been shown to attain a range of maximal open probabilities; 10\u201340% for GABAARs (Pierce et al., 2019; Germann et al., 2019), 20\u201380% for 5-HT3s (Lambert et al., 1989; Mott et al., 2001), 0.2\u20133% for nAChRs (Pesti et al., 2014; Williams et al., 2012), and 90\u2013100% for GlyRs (Ivica et al., 2021; Mangin et al., 2003), when saturated with their respective natural agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "b36f17b8-eb68-4946-b3e5-a187673c3ffd",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C38",
+      "claim": "Locally closed structures are characterized by an open-like ECD and closed-like TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Locally closed structures, characterized by an open-like ECD and closed-like TMD, projected in the same free energy basin as closed-state 4NPQ but closer to the activation free energy barrier, indicating that the locally closed state could serve as a pre-activating state in the gating pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the structural characteristics of locally closed states.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "7b1885cd-4f7d-4478-98a5-0bfe14c5f7e0",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C39",
+      "claim": "The locally closed state could serve as a pre-activating state in the gating pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Locally closed structures, characterized by an open-like ECD and closed-like TMD, projected in the same free energy basin as closed-state 4NPQ but closer to the activation free energy barrier, indicating that the locally closed state could serve as a pre-activating state in the gating pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the position of locally closed structures in the free energy landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "72521e1b-cc60-46d2-9505-12cd578001d2",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C40",
+      "claim": "The H235Q mutation has been shown to crystallize in a locally closed conformation at pH 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the H235Q mutation has been shown to crystallize in a locally closed conformation at pH 4 (Fourati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "43835d0e-11d5-4713-8ec7-422b157b9fce",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C41",
+      "claim": "ECD compaction is pH- rather than state-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in combination with our other observation that ECD compaction seems to be pH- rather than state-dependent, means that the most probable conformation for the H235Q variant at low pH has a closed-like TMD and more open-like ECD, similarly to the locally closed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "57259f1f-2a75-4beb-93f4-9a82230f7e4b",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C42",
+      "claim": "The simulations did not capture state-dependent but rather pH-dependent differences in average ECD spread and twist values.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, our simulations did not capture state-dependent but rather pH-dependent differences in average ECD spread and twist values (Figure 5E; Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2) although larger fluctuations were observed in closed-like states, suggesting state-dependent differences in ECD flexibility rather than average spread and twist values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "6b82d044-65ff-4b00-a593-408bd67c5085",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C43",
+      "claim": "Larger fluctuations in ECD spread and twist were observed in closed-like states.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, our simulations did not capture state-dependent but rather pH-dependent differences in average ECD spread and twist values (Figure 5E; Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2) although larger fluctuations were observed in closed-like states, suggesting state-dependent differences in ECD flexibility rather than average spread and twist values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "8d05cdf5-fbc9-4136-a43c-2ab5ef1ee8ac",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C44",
+      "claim": "A recent cryo-EM structure of the closed state at pH 3 suggests a more compact ECD compared to the closed-state X-ray structure.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent cryo-EM structure of the closed state at pH 3 (Rov\u0161nik et al., 2021) suggest a more compact ECD compared to the closed-state X-ray structure which align better with the expectation value of our data at low pH (Figure 5E), further supporting the idea that crystal contact might favor compact ECDs in the open state X-ray structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to recent cryo-EM work and comparison to simulation data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "80741d6d-fa6e-42ed-afd7-d6352d96719f",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C45",
+      "claim": "Crystal contacts may favor uncommon conformations in the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ECD rarely contracted to the extent of open X-ray structures, nor twisted to the extent of closed X-ray structures in any condition, suggesting that crystal contacts may favor uncommon conformations in this domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between simulation and crystal structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "66a22bd3-5e2a-452e-acf8-60c2133c8d4b",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C46",
+      "claim": "The probability distributions of the distance between E35 and T158 of the complementary subunit show clear shifts in response to changes in protonation.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability distributions of the distance between E35 and T158 of the complementary subunit show clear shifts in response to changes in protonation, leading to local backbone rearrangements (Figure 5F; Figure 5\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bb18bf76-1029-4f27-9496-91b4fa75a6d1",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C47",
+      "claim": "The simulations sampled even tighter contacts between E35 and T158 than observed in experimental structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our simulations sampled even tighter contacts between these residues than observed in experimental structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between simulation and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "242c43b4-33bc-438b-9149-ac5ef3765f00",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C48",
+      "claim": "In both protonated datasets, pairwise RMSDs of the open state were significantly lower compared to deprotonated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In both protonated datasets, pairwise RMSDs of the open state were significantly lower compared to deprotonated conditions, suggesting that protonation plays a role in the symmetrization of this state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the symmetry analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "4cb2638e-6f1a-49a7-86e3-b74d2efcc100",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C49",
+      "claim": "Protonation plays a role in the symmetrization of the open state.",
+      "claim_type": "EXPLICIT",
+      "source": "In both protonated datasets, pairwise RMSDs of the open state were significantly lower compared to deprotonated conditions, suggesting that protonation plays a role in the symmetrization of this state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the symmetry analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "0986cda2-fc4d-4807-a98d-e229bfef1a12",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C50",
+      "claim": "Upon channel closure, the overall symmetry decreases, which is primarily driven by the symmetry loss seen in the ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon channel closure, the overall symmetry decreases, which is primarily driven by the symmetry loss seen in the ECD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the symmetry analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "da3e83d5-8b35-4160-9e06-f58b41a95837",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C51",
+      "claim": "The TMD seems to recover some symmetry in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon channel closure, the overall symmetry decreases, which is primarily driven by the symmetry loss seen in the ECD. The TMD on the other hand seems to recover some symmetry in the closed state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the symmetry analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "38ece243-0e08-46d8-8d2e-ae03b3dfb07a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C52",
+      "claim": "At deprotonated conditions, pairwise RMSDs were generally higher across the board.",
+      "claim_type": "EXPLICIT",
+      "source": "At deprotonated conditions, pairwise RMSDs were generally higher across the board, and neither ECD or TMD were able to reach the low RMSD levels of the open state at protonated conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the symmetry analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "44afc971-f666-4280-b9df-af87b911910c",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C53",
+      "claim": "Recent cryo-EM structures of the 5-HT3A receptor revealed an asymmetric closed state, whereas a symmetrized open state was stabilized by serotonin molecules bound at all five ECD sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cryo-EM structures of the 5-HT3A receptor in lipid nanodiscs revealed an asymmetric closed state, whereas a symmetrized open state was stabilized by serotonin molecules bound at all five ECD sites (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent cryo-EM work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "adcf783b-5ff2-42c5-b554-e37a87e3c9a8",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C54",
+      "claim": "A cryo-EM structure of the resting state Torpedo nAChR with toxins bound to two of the five subunits displayed asymmetries in both the ECD and TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a cryo-EM structure of the resting state Torpedo nAChR with toxins bound to two of the five subunits displayed asymmetries in both the ECD and TMD (Rahman et al., 2020), and cryo-EM structures of the GABAA receptor displayed ECD asymmetry in the resting state compared to the desensitized where ligands were bound (Masiulis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "6dadf20b-26ca-42ac-be1e-a052bc9f8b05",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C55",
+      "claim": "Cryo-EM structures of the GABAA receptor displayed ECD asymmetry in the resting state compared to the desensitized state where ligands were bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a cryo-EM structure of the resting state Torpedo nAChR with toxins bound to two of the five subunits displayed asymmetries in both the ECD and TMD (Rahman et al., 2020), and cryo-EM structures of the GABAA receptor displayed ECD asymmetry in the resting state compared to the desensitized where ligands were bound (Masiulis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "05b6b002-6455-4ba9-83d2-ac2ed219d885",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C56",
+      "claim": "Long (15\u201320 \u03bcs) simulations of 5-HT3A have shown evidence of asymmetric closure of the TMD pore upon channel pre-activation.",
+      "claim_type": "EXPLICIT",
+      "source": "When it comes to computational work, long (15\u201320 \u03bcs) simulations of 5-HT3A have shown evidence of asymmetric closure of the TMD pore upon channel pre-activation (Guros et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bc9edc05-e434-4696-989c-d543d43f84f2",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C57",
+      "claim": "Asymmetric propofol binding could create unbalanced forces such that symmetry breaking would facilitate channel conformational transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Mowrey et al. also proposed that asymmetric propofol binding could create unbalanced forces such that symmetry breaking would facilitate channel conformational transitions (Mowrey et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "75b14ec7-cb73-40b4-b433-7db17e784d9b",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C58",
+      "claim": "In the simulations, ligands (protons) were bound symmetrically across all subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, ligands (protons) were bound symmetrically across all subunits which further indicates that asymmetric transitions could be important regardless of symmetric or asymmetric ligand-binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "84f113b6-9572-4716-a785-c7cdb24f03be",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C59",
+      "claim": "Asymmetric transitions could be important regardless of symmetric or asymmetric ligand-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, ligands (protons) were bound symmetrically across all subunits which further indicates that asymmetric transitions could be important regardless of symmetric or asymmetric ligand-binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "5542bde0-1a11-4f82-a42a-3e3ca69ba66e",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C60",
+      "claim": "Activating conditions were modeled by protonation of a subset of acidic residues (E26, E35, E67, E75, E82, D86, D88, E177, E243; H277 doubly protonated) to approximate the probable pattern at pH 4.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating conditions were modeled by protonation of a subset of acidic residues (E26, E35, E67, E75, E82, D86, D88, E177, E243; H277 doubly protonated) to approximate the probable pattern at pH 4.6, as previously described (Nury et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "ae04f4f7-86bf-48a2-89b6-220f9f9c759a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C61",
+      "claim": "The Amber99SB-ILDN force field with Berger lipids and TIP3P water model was used for equilibration and production runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibration and production runs were performed using the Amber99SB-ILDN force field with Berger lipids, together with the TIP3P water model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "2d53d16d-04cc-42e4-a7df-778407f101ec",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C62",
+      "claim": "Temperature coupling was achieved with velocity rescaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature coupling was achieved with velocity rescaling (Bussi et al., 2007) and pressure coupling with the Parrinello-Rahman barostat (Parrinello and Rahman, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "21b10ae0-50dd-4dd8-bfca-a5f4ce9838a9",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C63",
+      "claim": "Pressure coupling was achieved with the Parrinello-Rahman barostat.",
+      "claim_type": "EXPLICIT",
+      "source": "Temperature coupling was achieved with velocity rescaling (Bussi et al., 2007) and pressure coupling with the Parrinello-Rahman barostat (Parrinello and Rahman, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "7e04373c-caab-4fb8-9604-2f1ec23d68cc",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C64",
+      "claim": "The simulations were prepared and run with GROMACS versions 2018.4 and 2019.3 for 1.2 \u00b5s each.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations were prepared and run with GROMACS versions 2018.4 and 2019.3 (Abraham et al., 2015) for 1.2 \u00b5s each, allowing for each individual trajectory to substantially deviate from the starting seed conformation and collectively sample space around the transition pathway broadly (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the simulation methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "b068a655-9a1a-4feb-a8c4-8552913ee465",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C65",
+      "claim": "A 20 ns lag time was selected for tICA.",
+      "claim_type": "EXPLICIT",
+      "source": "The tIC lag times yielded consistent results within a 5\u201325 ns range for all datasets (Figure 2\u2014figure supplement 3B), so a 20 ns lag time was selected, with kinetic mapping (No\u00e9 and Clementi, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the analysis methodology, supported by data in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "aaaa4011-cad1-4d2b-8566-f2c9d17adb27",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C66",
+      "claim": "300 clusters were selected for kMeans clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the resulting plots (Figure 2\u2014figure supplement 3A), we selected 300 clusters for kMeans clustering from the 'elbow' of the plot to ensure convergence and avoid overfitting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the analysis methodology, supported by data in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "c78354d6-fdc4-4aba-b2c6-3663c1bbf69d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C67",
+      "claim": "The MSM lag time was determined to 20 ns from the implied timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSM lag time was determined to 20 ns from the implied timescales, by selecting the shortest possible Markovian lag time to maximize resolution of the MSM processes (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the analysis methodology, supported by data in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "d8a1d3d1-d5da-4382-be39-d22cfe2bd3a2",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C68",
+      "claim": "One simulation from the protonated wild-type dataset was rejected from analysis due to obstruction of the tIC landscape with a slower but undersampled process.",
+      "claim_type": "EXPLICIT",
+      "source": "One simulation from the protonated wild-type dataset was rejected from analysis due to obstruction of the tIC landscape with a slower but undersampled process, leaving 58.8 \u03bcs total sampling; MSMs of the other three conditions (deprotonated wild-type, deprotonated and protonated I233T, deprotonated and protonated H235Q) contained 60 \u03bcs sampling each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "06e45970-cedb-4031-97d2-9d63f50451a7",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C69",
+      "claim": "Markov state modeling was done with PyEMMA version 2.5.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Markov state modeling was done with PyEMMA version 2.5.7 (Scherer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the software used, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "d12b4158-3169-4224-8cd2-518b91799f77",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C70",
+      "claim": "Two-electrode voltage-clamp electrophysiology was performed in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-electrode voltage-clamp electrophysiology was performed as previously described (Heusser et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "da60fbd0-46cc-4ae9-8e92-bf75a5f078c6",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C71",
+      "claim": "Expressing oocytes were clamped at \u221270 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing oocytes were clamped at \u221270 mV using an OC-725C voltage clamp (Warner Instruments, Hamden, CT, USA), and perfused with running buffer (123 mM NaCl, 10 mM HEPES, 2 mM KCl, 2 mM MgSO4, 2 mM CaCl2, pH 8.5) at a flow rate of 0.35 mL/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "19133251-2688-4cbe-bf81-1563b599ee2d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C72",
+      "claim": "Each reported electrophysiology value represents the mean from six to eight oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Each reported value represents the mean from six to eight oocytes, \u00b1 standard error of the mean.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "6728273c-912c-49f6-b573-c086191ef15e",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C73",
+      "claim": "Measurements from variant H235Q are reproduced from previously published data.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements from variant H235Q, collected by equivalent methods, are reproduced here from our previously published data (Fourati et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the source of the H235Q data, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "4e587292-346f-4337-810c-9bdb481a688a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C74",
+      "claim": "The free-energy landscapes obtained from the first eigenvector of each MSM clearly distinguished closed- and open-like regions in all six conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Free-energy landscapes obtained from the first eigenvector of each MSM clearly distinguished closed- and open-like regions in all six conditions (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the free-energy landscapes shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "0e6a1376-8b29-4c28-b633-e668c6a1ec95",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C75",
+      "claim": "The tICA coordinates are presumed to represent the two slowest motions.",
+      "claim_type": "EXPLICIT",
+      "source": "The tICA coordinates are presumed to represent the two slowest motions, where the largest eigenvector contributions are originating primarily from interactions between helices in the transmembrane domain (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the interpretation of tICA coordinates, supported by data in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "cc97a568-253d-4841-afa5-11ceba6159f7",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C76",
+      "claim": "The largest eigenvector contributions of tIC1 are focused around the M2 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the first tIC \u2013 with the largest eigenvector contributions focused around the M2 helices (Figure 2\u2014figure supplement 4A,C,E) \u2013 the closed X-ray structure consistently projected to the lowest free energy minimum in the landscape, suggesting a predominant population of closed channels under both deprotonated and protonated conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the eigenvector analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "3e55416c-4804-4d2b-a081-9f7d6b00bdaf",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C77",
+      "claim": "tIC1 primarily distinguishes TMD rather than ECD state.",
+      "claim_type": "EXPLICIT",
+      "source": "Several so-called locally closed structures (e.g. PDB ID 3TLS) \u2013 featuring a closed-like TMD but open-like ECD \u2013 projected to a region intermediate along tIC1, but within the broad closed-state free energy well, suggesting this component primarily distinguishes TMD rather than ECD state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the projection of locally closed structures in the tIC landscape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bf7ccc88-5613-4d6b-b79d-581f06c369a3",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C78",
+      "claim": "A lipid-bound state (PDB ID 5J0Z) clustered with open channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a lipid-bound state (PDB ID 5J0Z) - in which the pore is expanded at the outward vestibule, although nonconductive at the hydrophobic gate - clustered with open channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the clustering of a specific structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "ce08baad-d30e-4e5a-bdb2-1a1c2cb9cbc0",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C79",
+      "claim": "tIC2 did not distinguish X-ray structures in a consistent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to tIC1, tIC2 did not distinguish X-ray structures in a consistent manner; the largest eigenvector contributions were interspersed between multiple transmembrane helices (Figure 2\u2014figure supplement 4B,D,F) and higher values of this component may represent conformations sampled primarily in MD simulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the eigenvector analysis shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "0e52bdac-ea26-4b34-8024-91a97703c3eb",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C80",
+      "claim": "The most likely transition pathway between closed- (states I/II) to open-like (state IV) would proceed via state III.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of all macrostates (Figure 4A) and free-energy landscapes (Figure 2) indicated that the most likely transition pathway between closed- (states I/II) to open-like (state IV) would proceed via state III, or state II in the protonated H235Q model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on visual inspection of the free-energy landscapes and macrostate clustering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "ad4cbe42-dfbc-43dc-b45e-e2537442536a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C81",
+      "claim": "State III corresponds to a partly expanded pore and often high degrees of TMD subunit asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "State III corresponded visibly to a partly expanded pore and often high degrees of TMD subunit asymmetry (doi:10.5281/zenodo.5500174), not represented by any known X-ray structures (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual inspection of conformations from state III.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "99507e31-983d-4a68-a9fb-7e6ef80edbf5",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C82",
+      "claim": "State IV representative samples featured the most expanded pore relative to other states.",
+      "claim_type": "EXPLICIT",
+      "source": "Open and lipid-modulated X-ray structures projected to a cluster at high tIC1 and low tIC2 (state IV, Figure 4A), substantially populated only upon protonation and/or I233T substitution (Figure 4B); as expected, representative samples featured the most expanded pore relative to other states (doi:10.5281/zenodo.5500174).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual inspection of conformations from state IV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "3cab0776-2a35-4774-b565-47d17c856b16",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C83",
+      "claim": "A proposed secondary gate at the intracellular end of the pore (\u22122' radius) has been implicated in desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a proposed secondary gate at the intracellular end of the pore (\u22122' radius, Figure 5\u2014figure supplement 1A; Figure 5\u2014figure supplement 9) implicated in desensitization (Gielen and Corringer, 2018) exhibited a bimodal distribution in radii, with state I largely retaining an expanded \u22655-\u00c5 radius similar to X-ray structures, while other states partially sampled a contracted radius \u223c2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and data shown in supplementary figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bfc0d292-2715-4ef7-9056-1ca9cd1cde79",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C84",
+      "claim": "The \u22122' gate exhibited a bimodal distribution in radii.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a proposed secondary gate at the intracellular end of the pore (\u22122' radius, Figure 5\u2014figure supplement 1A; Figure 5\u2014figure supplement 9) implicated in desensitization (Gielen and Corringer, 2018) exhibited a bimodal distribution in radii, with state I largely retaining an expanded \u22655-\u00c5 radius similar to X-ray structures, while other states partially sampled a contracted radius \u223c2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "914db31a-d15c-44db-9f5f-48fa505e3569",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C85",
+      "claim": "State I largely retained an expanded \u22655-\u00c5 radius at the \u22122' gate similar to X-ray structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a proposed secondary gate at the intracellular end of the pore (\u22122' radius, Figure 5\u2014figure supplement 1A; Figure 5\u2014figure supplement 9) implicated in desensitization (Gielen and Corringer, 2018) exhibited a bimodal distribution in radii, with state I largely retaining an expanded \u22655-\u00c5 radius similar to X-ray structures, while other states partially sampled a contracted radius \u223c2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "8cd965f6-5aa0-4f51-8b56-7b14a2ada9d6",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C86",
+      "claim": "Other states partially sampled a contracted radius \u223c2 \u00c5 at the \u22122' gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a proposed secondary gate at the intracellular end of the pore (\u22122' radius, Figure 5\u2014figure supplement 1A; Figure 5\u2014figure supplement 9) implicated in desensitization (Gielen and Corringer, 2018) exhibited a bimodal distribution in radii, with state I largely retaining an expanded \u22655-\u00c5 radius similar to X-ray structures, while other states partially sampled a contracted radius \u223c2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "f6ff58e5-f015-4563-a2d7-0d348e9393d6",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C87",
+      "claim": "The time constant for GLIC desensitization is assumed to exceed 10 s for pH values over 3.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the time constant for GLIC desensitization is assumed to exceed 10 s for pH values over 3.5 (Velisetty and Chakrapani, 2012) and due to the lack of structures covering this state, sampling the desensitization process without applying an enhanced seeding procedure remains a difficult task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "e09ab38f-1376-4fd1-8dd6-4accb3493afc",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C88",
+      "claim": "The MSMs are able to predict shifts in free energies upon change in activating stimulus (pH) as well as gain-of-function and loss-of-function mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our Markov states models are able to predict shifts in free energies upon change in activating stimulus (pH) as well as gain-of-function and loss-of-function mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the capabilities of the MSMs based on the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "0e239bf0-2e49-4950-81e0-955f7cf9bade",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C89",
+      "claim": "The models predict relatively low values of maximal open probability, with relative differences in agreement with electrophysiology recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The models predict relatively low values of maximal open probability, with relative differences in agreement with electrophysiology recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement comparing MSM predictions to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "81557a6d-6bdf-4d0e-b548-719464b0aaa5",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C90",
+      "claim": "The simulations captured state-dependent differences in previously proposed mechanistic variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations also captured state-dependent differences in previously proposed mechanistic variables as well as state- and pH-dependent differences in channel conformational symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "c390fac4-a9b1-4e4f-9a2e-1e9ddcdaf78d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C91",
+      "claim": "The simulations captured state- and pH-dependent differences in channel conformational symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations also captured state-dependent differences in previously proposed mechanistic variables as well as state- and pH-dependent differences in channel conformational symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "2ff7f84e-4047-4b76-a5ec-1814e995488e",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "claim_id": "C92",
+      "claim": "This methodology is expected to be transferable to other channels with potential to predict properties from electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect this methodology to be transferable to other channels with potential to predict properties from electrophysiology, even in absence of full equilibrium sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader applicability of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dfe54ff8-e776-48aa-a2d5-ad2c76a24b01",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GLIC is a prokaryotic proton-gated ion channel that shares topological features with eukaryotic pLGICs and represents over 40% of pLGIC structures in the PDB, making it a valuable model system for studying channel gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the biological context and rationale for studying GLIC. The factual claim about PDB representation (C4) is verifiable, and the structural similarity to eukaryotic channels (C2-C3) is well-established in the literature and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "a04a072f-688f-4ea4-bf47-274dd94c35b0",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Electrophysiology experiments in Xenopus oocytes demonstrate that the I233T mutation is a gain-of-function variant (shifting half-maximal activation by >1 pH unit and producing conductive channels at neutral pH), while H235Q is a loss-of-function variant (decreased proton sensitivity, moderate conductance only at low pH).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 describe functional characterization supported by Figure 1D. The experimental methodology (C70-C72) is clearly described with appropriate sample sizes (6-8 oocytes) and statistical reporting (mean \u00b1 SEM). The functional effects are consistent and provide validation targets for the computational models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations were performed using enhanced sampling with eBDIMS-generated seeds, producing 120 \u03bcs total sampling across six conditions (wild-type, I233T, H235Q at deprotonated and protonated states) in POPC bilayers using the Amber99SB-ILDN force field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C60-C64, and C68 describe the simulation methodology in detail. The approach is well-documented with appropriate force fields, equilibration protocols, and software versions specified. The rejection of one simulation (C68) due to undersampling demonstrates quality control. However, the fixed protonation states are a limitation acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "d1bcdb48-4f90-491c-9fd2-876e08289c68",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MSMs were constructed using tICA with 20 ns lag time and 300 kMeans clusters, with tIC1 primarily representing M2 helix motions that distinguish TMD state, while tIC2 shows less consistent structural interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C69 describe MSM construction with appropriate hyperparameter selection based on convergence analysis (Figure 2\u2014supplement 3). Claims C74-C76, C79 characterize the tIC coordinates, showing that tIC1 captures the slowest, most functionally relevant motions. The eigenvector analysis (Figure 2\u2014supplement 4) supports the structural interpretation of tIC1 focusing on M2 helices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Free-energy landscapes show that closed X-ray structures project to the lowest free-energy minimum under all conditions, with I233T creating a well-defined secondary minimum near open structures that deepens upon protonation, while H235Q shows a displaced secondary minimum that doesn't overlap with open X-ray structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 describe key features of the free-energy landscapes (Figure 2). The predominance of closed states (C11) is consistent with cryo-EM data (C12). The differential effects of mutations (C13-C15) align with the functional data from electrophysiology, providing strong validation. The landscapes clearly show mutation- and pH-dependent shifts in free-energy minima.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "53e35c07-ef80-440d-a155-b9bb6cc71d25",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MSM-derived open probabilities and transition kinetics show that I233T increases open probability (6%\u219212% deprotonated, 20% protonated) and accelerates opening (8.9\u21925.8 \u03bcs), while H235Q decreases open probability (6%\u21923% deprotonated, 15% protonated) and slows opening (8.9\u219213.3 \u03bcs), with the wild-type protonated Popen of 17% matching SANS estimates of 18%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 present quantitative predictions from the MSMs (Figure 3B-C) that correctly capture the relative functional effects observed in electrophysiology (C5-C8). The agreement with independent SANS data (C32-C33) provides strong external validation. The low maximal open probabilities (<20% even at low pH) are consistent with recent cryo-EM studies (C12) and literature on other pLGICs (C34-C37). Claims C88-C89 appropriately summarize these capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "f047ee3f-d298-4918-ac44-adc878cbdbfa",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pore hydration analysis shows that the macrostate barrier corresponds to dramatic shifts in hydration along tIC1, with protonation increasing hydration (especially in open-like states), I233T increasing hydration at all tIC1 values, and H235Q showing reduced hydration in the open-like state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 describe hydration patterns (Figure 3D) that provide mechanistic insight into ion conduction. The correlation between hydration and functional state is expected and well-supported. The I233T effect (C26) is consistent with introducing a polar residue at the hydrophobic gate. The H235Q reduced hydration (C27) explains the reduced conductance despite structural similarity to open states, demonstrating that hydration is a better functional predictor than structure alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "aea3d6be-86d6-43ca-9513-628774f27470",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The 9' position (I233) constitutes a critical hydrophobic gate, the 11' position (H235) enabled crystallization of locally closed conformations, and E35 is the main proton sensor showing large pH-dependent conformational effects in simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 cite established literature on key functional residues. Claim C31 shows that the simulations capture pH-dependent effects at E35 (Figure 5F), validating the protonation model. These claims establish the functional importance of the mutated residues and the proton-sensing mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Higher-order clustering reveals that locally closed structures (open-like ECD, closed-like TMD) project near the closed-state minimum and may serve as pre-activating states, with the most likely transition pathway proceeding through an intermediate state (State III) featuring partial pore expansion and TMD asymmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C77-C78, C80-C82 describe the multi-state clustering analysis (Figure 4). The identification of locally closed structures as intermediate states (C38-C39) is supported by their projection in the free-energy landscape. The proposed transition pathway through State III (C80-C81) is reasonable based on visual inspection and energetics, though direct observation of complete transitions would strengthen this inference. The structural characterization of states is supported by visual analysis of representative conformations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "01f43dc1-ecf0-4ebe-8b1e-09ea2177992c",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simulations show pH-dependent rather than state-dependent differences in average ECD spread and twist, with larger fluctuations in closed-like states, suggesting that crystal contacts may favor uncommon ECD conformations and that ECD flexibility rather than average conformation distinguishes states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 present a surprising finding that challenges conventional models (Figure 5E, supplements). The observation is well-supported by the data and time-series analysis (Figure 5\u2014supplement 2). The comparison to recent cryo-EM structures (C44) supports the interpretation that crystal packing may bias ECD conformations. This represents an important mechanistic insight, though the functional implications of ECD flexibility versus average conformation require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "3c58a99d-3df6-41fc-890d-dbbc7d5c77f0",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The distance between E35 and T158 shows clear pH-dependent shifts leading to local backbone rearrangements, with simulations sampling even tighter contacts than observed in experimental structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 describe pH-dependent changes at the proton sensor E35 (Figure 5F). The observation that simulations sample tighter contacts than crystal structures (C47) could indicate either enhanced sampling or force field artifacts. The pH-dependent shifts support the role of E35 in proton sensing (C30-C31).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Symmetry analysis reveals that protonation promotes symmetrization of the open state (lower pairwise RMSDs), while channel closure decreases overall symmetry primarily through ECD asymmetry, with the TMD recovering some symmetry in the closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 present novel findings on conformational symmetry (Figure 6). The observation that protonation promotes open-state symmetry (C48-C49) is well-supported by the data and consistent with recent structural studies of other pLGICs (C53-C55). The domain-specific analysis showing ECD asymmetry driving overall asymmetry (C50) provides mechanistic insight. The finding that symmetric ligand binding (C58) still produces asymmetric transitions (C59) is important for understanding gating mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent structural and computational studies of other pLGICs show asymmetric closed states and symmetric ligand-bound open states, and the current simulations with symmetric proton binding demonstrate that asymmetric transitions can occur regardless of ligand-binding symmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 cite relevant literature on symmetry in pLGICs. Claims C58-C59 make an important inference that asymmetric transitions can occur even with symmetric ligand binding, which has implications for understanding gating mechanisms across the pLGIC family. This is well-supported by the symmetry analysis (C48-C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "70d21176-10df-400e-9040-e6903713c79a",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A proposed secondary gate at the -2' position shows bimodal distribution in radii, with State I retaining expanded radius (\u22655 \u00c5) while other states sample contracted radius (~2 \u00c5), potentially relevant for desensitization which occurs on >10 s timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C86 describe observations at a proposed desensitization gate (Figure 5\u2014supplement 9). The bimodal distribution (C84) is interesting, though the functional significance is uncertain. Claim C87 appropriately notes that desensitization timescales (>10 s) far exceed the simulation timescales, so direct observation of desensitization is not expected. This represents exploratory analysis of a potentially important feature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "3ba9adfb-100d-4df7-8d55-13d16c63f595",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The simulations captured state-dependent differences in previously proposed mechanistic variables and state/pH-dependent differences in conformational symmetry, with the methodology expected to be transferable to other channels for predicting electrophysiological properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 appropriately summarize the validation of mechanistic variables and symmetry findings. Claim C92 is speculative about transferability but reasonable given the successful validation against multiple experimental observables. The methodology represents a significant advance in modeling ion channel gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    },
+    {
+      "id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd",
+      "content_id": "7811e6c5-aa17-437f-b522-2e217b82e2bd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Literature values show that maximal open probabilities vary widely across pLGIC subtypes (10-40% for GABAARs, 20-80% for 5-HT3s, 0.2-3% for nAChRs, 90-100% for GlyRs), and recent SANS experiments estimated GLIC low-pH Popen at 18%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C34-C37 cite literature values that provide context for interpreting the low GLIC open probabilities predicted by the MSMs. These are appropriately used to argue that low maximal Popen is not unprecedented in the pLGIC family. The SANS estimate (C32) provides important external validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:15:41.754357Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "07617e85-630c-4ed1-8a60-8d7b2f6e8d39",
+      "result_id": "dfe54ff8-e776-48aa-a2d5-ad2c76a24b01"
+    },
+    {
+      "claim_id": "dfe1a50c-340b-4974-b099-6d35553d5407",
+      "result_id": "dfe54ff8-e776-48aa-a2d5-ad2c76a24b01"
+    },
+    {
+      "claim_id": "a49aa115-206b-434e-a378-8e6dd04f302a",
+      "result_id": "dfe54ff8-e776-48aa-a2d5-ad2c76a24b01"
+    },
+    {
+      "claim_id": "1a28df04-3faa-4204-b4ff-e9e892593d07",
+      "result_id": "dfe54ff8-e776-48aa-a2d5-ad2c76a24b01"
+    },
+    {
+      "claim_id": "c0b95650-884c-41d1-8bb6-7d3ca1187a39",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "86b55a7a-42fb-4595-86ac-614795ea43f7",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "9562844a-f4e1-444d-951d-43ce00d7746b",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "d5f4239d-1bca-47dc-9b60-bbc5a965ad24",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "d12b4158-3169-4224-8cd2-518b91799f77",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "da60fbd0-46cc-4ae9-8e92-bf75a5f078c6",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "19133251-2688-4cbe-bf81-1563b599ee2d",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "6728273c-912c-49f6-b573-c086191ef15e",
+      "result_id": "a04a072f-688f-4ea4-bf47-274dd94c35b0"
+    },
+    {
+      "claim_id": "ed39b3fe-443d-4462-b3ac-c31cc2aea90f",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "767b8d4e-2bba-49c1-85c9-8601249acad7",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "5542bde0-1a11-4f82-a42a-3e3ca69ba66e",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "ae04f4f7-86bf-48a2-89b6-220f9f9c759a",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "2d53d16d-04cc-42e4-a7df-778407f101ec",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "21b10ae0-50dd-4dd8-bfca-a5f4ce9838a9",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "7e04373c-caab-4fb8-9604-2f1ec23d68cc",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "d8a1d3d1-d5da-4382-be39-d22cfe2bd3a2",
+      "result_id": "8809789a-f5a9-4a61-9c59-d1b0276c88dd"
+    },
+    {
+      "claim_id": "b068a655-9a1a-4feb-a8c4-8552913ee465",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "aaaa4011-cad1-4d2b-8566-f2c9d17adb27",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "c78354d6-fdc4-4aba-b2c6-3663c1bbf69d",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "06e45970-cedb-4031-97d2-9d63f50451a7",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "4e587292-346f-4337-810c-9bdb481a688a",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "0e6a1376-8b29-4c28-b633-e668c6a1ec95",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "cc97a568-253d-4841-afa5-11ceba6159f7",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "ce08baad-d30e-4e5a-bdb2-1a1c2cb9cbc0",
+      "result_id": "d1bcdb48-4f90-491c-9fd2-876e08289c68"
+    },
+    {
+      "claim_id": "7e365128-d7ea-4b6d-89d7-6688bad90940",
+      "result_id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85"
+    },
+    {
+      "claim_id": "cef9ab0a-4356-4107-b244-e0e985a7c836",
+      "result_id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85"
+    },
+    {
+      "claim_id": "2976908f-6261-476e-bb92-cf4097f991c6",
+      "result_id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85"
+    },
+    {
+      "claim_id": "46490bfb-e748-4827-8117-fe1c51895e8a",
+      "result_id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85"
+    },
+    {
+      "claim_id": "bac7f047-70e1-4217-89f9-c5c7ba983634",
+      "result_id": "1a960ab8-aa1c-4b38-86cc-cd2492479a85"
+    },
+    {
+      "claim_id": "4d46473f-7403-467c-a30a-3d726a87ffb9",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "44a8b80f-b2c7-4070-8ea6-8cd1c472803c",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "80804d01-fdc8-499d-b8bb-8af44e57c435",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "34ffc903-fbfc-4369-badc-89d6d77ebd48",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "ee431e31-8866-42ab-8d7d-6a687f4942af",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "e7b1be8e-4c91-49a4-bdbf-06683bf42b62",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "7f33948e-63c0-4661-b8b7-196083089606",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "aa36f275-efa1-461b-996c-664ddb53086d",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "44e46b8e-264b-4b04-844a-971108bc4555",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "e09ab38f-1376-4fd1-8dd6-4accb3493afc",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "0e239bf0-2e49-4950-81e0-955f7cf9bade",
+      "result_id": "53e35c07-ef80-440d-a155-b9bb6cc71d25"
+    },
+    {
+      "claim_id": "87bd1d94-30d1-4f2a-8956-835fc0200c34",
+      "result_id": "f047ee3f-d298-4918-ac44-adc878cbdbfa"
+    },
+    {
+      "claim_id": "9163ce22-789a-4a5b-a68e-75992091f7e5",
+      "result_id": "f047ee3f-d298-4918-ac44-adc878cbdbfa"
+    },
+    {
+      "claim_id": "4a4cfda6-7e56-4207-b753-f95622d61b79",
+      "result_id": "f047ee3f-d298-4918-ac44-adc878cbdbfa"
+    },
+    {
+      "claim_id": "8e2eae8a-2978-4233-8a80-029172a7fc9c",
+      "result_id": "f047ee3f-d298-4918-ac44-adc878cbdbfa"
+    },
+    {
+      "claim_id": "95ea845f-aa3a-422d-a3ec-169e6c5152ed",
+      "result_id": "aea3d6be-86d6-43ca-9513-628774f27470"
+    },
+    {
+      "claim_id": "317a24fa-c7aa-49f4-bfaf-bf86c1638f1b",
+      "result_id": "aea3d6be-86d6-43ca-9513-628774f27470"
+    },
+    {
+      "claim_id": "0102f6cd-e37b-49a8-9a56-2ca3d8b8f63d",
+      "result_id": "aea3d6be-86d6-43ca-9513-628774f27470"
+    },
+    {
+      "claim_id": "4436c774-d16a-48bc-9375-2df0c275a45e",
+      "result_id": "aea3d6be-86d6-43ca-9513-628774f27470"
+    },
+    {
+      "claim_id": "b36f17b8-eb68-4946-b3e5-a187673c3ffd",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "7b1885cd-4f7d-4478-98a5-0bfe14c5f7e0",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "72521e1b-cc60-46d2-9505-12cd578001d2",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "43835d0e-11d5-4713-8ec7-422b157b9fce",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "3e55416c-4804-4d2b-a081-9f7d6b00bdaf",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "bf7ccc88-5613-4d6b-b79d-581f06c369a3",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "0e52bdac-ea26-4b34-8024-91a97703c3eb",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "ad4cbe42-dfbc-43dc-b45e-e2537442536a",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "99507e31-983d-4a68-a9fb-7e6ef80edbf5",
+      "result_id": "b1c9379d-8c9b-49e8-aa5c-0637f285a705"
+    },
+    {
+      "claim_id": "57259f1f-2a75-4beb-93f4-9a82230f7e4b",
+      "result_id": "01f43dc1-ecf0-4ebe-8b1e-09ea2177992c"
+    },
+    {
+      "claim_id": "6b82d044-65ff-4b00-a593-408bd67c5085",
+      "result_id": "01f43dc1-ecf0-4ebe-8b1e-09ea2177992c"
+    },
+    {
+      "claim_id": "8d05cdf5-fbc9-4136-a43c-2ab5ef1ee8ac",
+      "result_id": "01f43dc1-ecf0-4ebe-8b1e-09ea2177992c"
+    },
+    {
+      "claim_id": "80741d6d-fa6e-42ed-afd7-d6352d96719f",
+      "result_id": "01f43dc1-ecf0-4ebe-8b1e-09ea2177992c"
+    },
+    {
+      "claim_id": "66a22bd3-5e2a-452e-acf8-60c2133c8d4b",
+      "result_id": "3c58a99d-3df6-41fc-890d-dbbc7d5c77f0"
+    },
+    {
+      "claim_id": "bb18bf76-1029-4f27-9496-91b4fa75a6d1",
+      "result_id": "3c58a99d-3df6-41fc-890d-dbbc7d5c77f0"
+    },
+    {
+      "claim_id": "242c43b4-33bc-438b-9149-ac5ef3765f00",
+      "result_id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d"
+    },
+    {
+      "claim_id": "4cb2638e-6f1a-49a7-86e3-b74d2efcc100",
+      "result_id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d"
+    },
+    {
+      "claim_id": "0986cda2-fc4d-4807-a98d-e229bfef1a12",
+      "result_id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d"
+    },
+    {
+      "claim_id": "da3e83d5-8b35-4160-9e06-f58b41a95837",
+      "result_id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d"
+    },
+    {
+      "claim_id": "38ece243-0e08-46d8-8d2e-ae03b3dfb07a",
+      "result_id": "c743698d-9cca-41c9-bf3e-1752f2ccfb7d"
+    },
+    {
+      "claim_id": "44afc971-f666-4280-b9df-af87b911910c",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "adcf783b-5ff2-42c5-b554-e37a87e3c9a8",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "6dadf20b-26ca-42ac-be1e-a052bc9f8b05",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "05b6b002-6455-4ba9-83d2-ac2ed219d885",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "bc9edc05-e434-4696-989c-d543d43f84f2",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "75b14ec7-cb73-40b4-b433-7db17e784d9b",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "84f113b6-9572-4716-a785-c7cdb24f03be",
+      "result_id": "bc3677a6-eaa8-4952-85e9-e8ef5b781d3e"
+    },
+    {
+      "claim_id": "3cab0776-2a35-4774-b565-47d17c856b16",
+      "result_id": "70d21176-10df-400e-9040-e6903713c79a"
+    },
+    {
+      "claim_id": "bfc0d292-2715-4ef7-9056-1ca9cd1cde79",
+      "result_id": "70d21176-10df-400e-9040-e6903713c79a"
+    },
+    {
+      "claim_id": "914db31a-d15c-44db-9f5f-48fa505e3569",
+      "result_id": "70d21176-10df-400e-9040-e6903713c79a"
+    },
+    {
+      "claim_id": "8cd965f6-5aa0-4f51-8b56-7b14a2ada9d6",
+      "result_id": "70d21176-10df-400e-9040-e6903713c79a"
+    },
+    {
+      "claim_id": "f6ff58e5-f015-4563-a2d7-0d348e9393d6",
+      "result_id": "70d21176-10df-400e-9040-e6903713c79a"
+    },
+    {
+      "claim_id": "81557a6d-6bdf-4d0e-b548-719464b0aaa5",
+      "result_id": "3ba9adfb-100d-4df7-8d55-13d16c63f595"
+    },
+    {
+      "claim_id": "c390fac4-a9b1-4e4f-9a2e-1e9ddcdaf78d",
+      "result_id": "3ba9adfb-100d-4df7-8d55-13d16c63f595"
+    },
+    {
+      "claim_id": "2ff7f84e-4047-4b76-a5ec-1814e995488e",
+      "result_id": "3ba9adfb-100d-4df7-8d55-13d16c63f595"
+    },
+    {
+      "claim_id": "49b46921-6692-4bce-893d-a95c8f7d0778",
+      "result_id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd"
+    },
+    {
+      "claim_id": "82645975-b77e-43cd-aa37-d41161ddd772",
+      "result_id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd"
+    },
+    {
+      "claim_id": "a256ada2-a6a9-454b-b3a2-63819554a31d",
+      "result_id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd"
+    },
+    {
+      "claim_id": "1b1cf483-ab88-42c9-9dcd-c097854dbae5",
+      "result_id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd"
+    },
+    {
+      "claim_id": "622b0d8a-a27e-4f02-bd4e-1cb4eeb48a58",
+      "result_id": "6ef5d0e0-a3c0-4444-9e4f-76db25b878dd"
+    }
+  ],
+  "comparisons": []
+}

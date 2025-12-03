@@ -1,0 +1,1737 @@
+{
+  "submission": {
+    "id": "501b520e-b888-40c7-a01d-fc54ae3497ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:31:15.916746Z",
+    "updated_at": "2025-12-03T19:31:15.916746Z"
+  },
+  "content": [
+    {
+      "id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "submission_id": "501b520e-b888-40c7-a01d-fc54ae3497ab",
+      "content_type": "manuscript",
+      "content_text": "# Distinct roles of forward and backward alpha-band waves in spatial visual attention\n\n## Authors\n\n- Andrea Alamia<sup>1</sup> ([ORCID: 0000-0001-9826-2161](https://orcid.org/0000-0001-9826-2161)) \u2020\n- Lucie Terral<sup>1</sup>\n- Malo Renaud D'ambra<sup>1</sup>\n- Rufin VanRullen<sup>1</sup> ([ORCID: 0000-0002-3611-7716](https://orcid.org/0000-0002-3611-7716))\n\n### Affiliations\n\n1. Cerco, CNRS Universit\u00e9 de Toulouse Toulouse France ([ROR:004raaa70](https://ror.org/004raaa70))\n2. Artificial and Natural Intelligence Toulouse Institute Toulouse France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrevious research has associated alpha-band [8\u201312 Hz] oscillations with inhibitory functions: for instance, several studies showed that visual attention increases alpha-band power in the hemisphere ipsilateral to the attended location. However, other studies demonstrated that alpha oscillations positively correlate with visual perception, hinting at different processes underlying their dynamics. Here, using an approach based on traveling waves, we demonstrate that there are two functionally distinct alpha-band oscillations propagating in different directions. We analyzed EEG recordings from three datasets of human participants performing a covert visual attention task (one new dataset with N = 16, two previously published datasets with N = 16 and N = 31). Participants were instructed to detect a brief target by covertly attending to the screen\u2019s left or right side. Our analysis reveals two distinct processes: allocating attention to one hemifield increases top-down alpha-band waves propagating from frontal to occipital regions ipsilateral to the attended location, both with and without visual stimulation. These top-down oscillatory waves correlate positively with alpha-band power in frontal and occipital regions. Yet, different alpha-band waves propagate from occipital to frontal regions and contralateral to the attended location. Crucially, these forward waves were present only during visual stimulation, suggesting a separate mechanism related to visual processing. Together, these results reveal two distinct processes reflected by different propagation directions, demonstrating the importance of considering oscillations as traveling waves when characterizing their functional role.\n\n## Introduction\n\nBrain oscillations are related to several cognitive functions, as they orchestrate neuronal activity at distinct temporal and spatial scales (Buzs\u00e1ki and Draguhn, 2004; Buzs\u00e1ki, 2009). Alpha-band oscillations [8\u201312 Hz] are the most prevailing rhythms in electrophysiological (EEG) recordings, spreading through most cortical regions.\n\nSeveral studies investigated their functional role in various cognitive processes (Palva and Palva, 2007; Palva and Palva, 2011), providing mixed results. On the one hand, some studies showed that alpha-band oscillations might filter sensory information, regulating excitation and inhibition of sensory-specific brain regions (Jensen and Mazaheri, 2010; Mathewson et al., 2011; Klimesch, 2012; Sadaghiani and Kleinschmidt, 2016). Accordingly, researchers interpreted alpha oscillations as a top-down mechanism involved in inhibitory control and timing of cortical processing (Klimesch et al., 2007), as well as modulating cortical excitability (Jensen and Mazaheri, 2010; Mathewson et al., 2011). Experimental studies corroborated this hypothesis, demonstrating how the phase of alpha-band oscillation affects visual perception (Busch et al., 2009; Fakche et al., 2022; but see also Ruzzoli et al., 2019). Another highly replicated result regarding the inhibitory role of alpha oscillations consists in the hemispheric modulation in occipital regions associated with visual attention, having an increase of power ipsilateral to the attended hemifield, and a corresponding decrease contralaterally (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011). On the other hand, other experimental studies have related alpha-band oscillations in occipital and parietal regions to perceptual processing and visual memory (Bonnefond and Jensen, 2012; VanRullen, 2016; Pang et al., 2020; Luo et al., 2021). For example, reverse-correlation techniques reveal that the visual system reverberates sensory information in the alpha-band for as long as 1 s, in what has been dubbed \u2018perceptual echoes\u2019 (VanRullen and Macdonald, 2012). Importantly, these echoes are a clear signature of sensory processing as they reflect the input\u2019s precise time course, are modulated by attention and have been dissociated from inhibitory alpha power modulation (VanRullen and Macdonald, 2012; VanRullen, 2016; Br\u00fcers and VanRullen, 2018; Schwenk et al., 2020).\n\nAltogether, these experimental evidences support distinct and contradictory conclusions about alpha-band oscillation\u2019s functional role(s), which remains an open debate. Here, we address this question from a different perspective that interprets alpha-band oscillations as traveling waves (Muller et al., 2018; Alamia and VanRullen, 2019), thus considering their spatial component, and their propagation direction. Considering the case of visual attention, we tested the hypothesis that two functionally distinct alpha-band oscillations propagate along the frontal\u2013occipital line in opposite directions. This compelling hypothesis about the different functional roles of alpha-band traveling waves derives from our previous studies (Alamia and VanRullen, 2019; Pang et al., 2020), in which we showed how visual perception modulates alpha waves, that is forward waves during visual stimulation, backward waves when the stimulus was off. In addition, this hypothesis is in line with previous studies suggesting that distinct alpha-band oscillations are related to specific cognitive processes (Gulbinaite et al., 2017; Deng et al., 2019; Schuhmann et al., 2019; Sokoliuk et al., 2019; Kasten et al., 2020). In this study, we analyzed three datasets, two publicly available (Foster et al., 2017; Feldmann-W\u00fcstefeld and Vogel, 2019, see below), and one collected specifically for this study. In all datasets, participants attended either to the left or the right hemifield, while keeping central fixation. Our results confirmed the hemispheric modulation of alpha-band oscillations in posterior regions (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011) and revealed two distinct alpha-band traveling waves propagating in opposite directions. First, visual attention increases top-down alpha-band waves propagating from frontal to occipital regions ipsilateral to the attended location, and such waves correlate positively with alpha power in frontal and occipital regions. Moreover, our analysis demonstrates that visual attention also modulates contralateral forward waves, that is, waves propagating from occipital to frontal areas. Importantly, the attentional modulation of forward waves is crucially dependent on sustained sensory processing, as this modulation disappears in the absence of visual stimulation. In contrast, alpha-band top-down waves are present and modulated by visual attention irrespective of the presence or absence of concurrent sensory stimulation. These results demonstrate two distinct alpha-band oscillatory waves propagating in opposite directions, seemingly underlying different cognitive processes. The well-known lateralization effect observed in alpha-band can be interpreted as top-down traveling waves, and it is most likely related to inhibitory processes, in line with previous studies (Jensen and Mazaheri, 2010; H\u00e4ndel et al., 2011). However, different alpha-band oscillations propagate in a forward direction and are directly related to sensory processing, reconciling previous evidence linking alpha-band oscillations with visual processing (VanRullen and Macdonald, 2012; Lozano-Soldevilla and VanRullen, 2019).\n\n## Results\n\n### Traveling waves\u2019 spectral profile\n\nThe goal of the study was to investigate how visual attention modulates alpha-band traveling waves in the hemisphere contra- and ipsilateral to the attended location. To test this, we considered 11 lines of electrodes running from occipital to frontal regions (Figure 1C), 5 for each hemisphere and 1 midline. It is important to note that the spatial resolution of these lines is not critical for our analysis, as we do not expect significant differences within each hemisphere. However, before testing how visual attention modulates traveling waves, we explored the amount of waves propagating forward (FW) and backward (BW) as a function of their temporal frequency (see Figure 5 and methods for a detailed description of the analysis). Figure 1D shows the spectral profile of FW and BW waves in the midline (along the Oz\u2013Fz axis) and the contra- and ipsilateral lines: confirming previous experimental studies (Alamia and VanRullen, 2019; Pang et al., 2020), we found that alpha-band oscillatory waves propagate in both directions during visual stimulation, whereas theta (4\u20137 Hz) and high-beta/gamma (24\u201345 Hz) bands propagate mostly bottom-up from occipital to frontal regions, and low-beta (13\u201323 Hz) waves flow in the top-down direction. Interestingly, this pattern of results confirms previous studies using different methods, in which higher frequency bands (i.e., high-beta/gamma) have been associated with forward processing, whereas low-beta and alpha frequencies have been related to top-down processing (Bastos et al., 2012; Bastos et al., 2015; van Kerkoerle et al., 2014; Michalareas et al., 2016; but see also Schneider et al., 2021b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/85035/elife-85035-fig1-v2.jpg)\n\n**Figure 1.:** (A) Each trial lasted 5 s, in which two flickering stimuli were presented to both hemifield. Participants were instructed to attend either the left or the right hemifield, as indicated by a central cue. In some trials, a target or a distractor appeared for 100 ms as a square either in the attended or unattended location. (B) The target and distractor luminance changed over trials due to the QUEST algorithm, which kept participants\u2019 performance around 80%. (C) We quantified traveling waves along 11 electrodes lines, running along the anterior\u2013posterior axis. These lines were located in the contralateral or the ipsilateral hemisphere to the attended location. (D) The amount of waves in dB computed for forward (in blue) and backward (in red) waves in the midline (central subplots, thinner lines represent standard errors of the mean) and in the ipsi- and contralateral hemisphere (left and right panels, respectively). These waves were computed on trials without target or distractors. Positive (negative) values reflect more (less) waves than the chance level (as quantified by the surrogate distribution), whereas values around 0 indicate no difference between the real and the null distribution. (E) Simulated data providing a schematic representation of forward and backward waves in the time domain in a given line of electrodes (from more frontal E1 to more occipital E7). A positive and a negative phase shift characterized forward and backward waves, respectively.\n\n### Attending to visual stimuli modulates traveling waves\n\nIn this analysis, we investigated how covert visual attention influences the traveling wave pattern. We focused on trials where neither a target nor a distractor was presented. First, we quantified the amount of traveling waves in the contra- and ipsilateral hemispheres to the attentional allocation. As shown in Figure 2 (left column), we found a strong lateralization effect revealing an increase (respectively, decrease) of contralateral (ipsilateral) forward waves in the alpha-band, and the opposite pattern in waves propagating in the opposite direction. These results were confirmed by a Bayesian analysis of variance (ANOVA), considering as factors DIRECTION (FW or BW), LINES (distance from the midline), and LATERALITY (contra vs. ipsi). The results revealed strong evidence in favor of the interaction between DIRECTION and LATERALITY factors (BF10 = 31.230, estimated error ~1%, $\u03b7^{2}$ = 0.08 as estimated from a classical ANOVA), whereas all other factors and their interactions revealed evidence in favor of the absence of an effect (BFs10 < 0.3). We also found no significant effect in the other frequency bands (as shown in Figure 1D, namely theta, low, and high beta), hence we focused the following analyses on alpha-band oscillatory waves. These results demonstrate that the direction of alpha-band oscillatory traveling waves shows a laterality effect during a task involving covert selective attention.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/85035/elife-85035-fig2-v2.jpg)\n\n**Figure 2.:** Each column in the figure represents a different EEG dataset involving experiments with visual stimulation (left and middle columns) and without visual stimulation (right column). In the upper panels, the net amount of forward (blue) and backward (red) waves is represented along different lines of electrodes, normalized to the midline. The left and central panels reveal an increase (decrease) of forward (backward) waves contralateral to the attended location when participants attended to visual stimulation. The right column shows that when participants attended an empty screen (data from Foster et al., 2017), only backward waves were modulated by visual attention, and no effect was observed in the forward waves without visual stimulation. Error bars represent standard errors of the mean. The middle row shows schematic representations of the screen during the tasks: the central panel illustrates the task from Feldmann-W\u00fcstefeld and Vogel, 2019, where D and T stand for Distractor and Target, respectively. In the task from Foster et al., 2017, the screen was empty, as the eight circles were not displayed during the task but here illustrate the stimulus positions (Foster et al., 2017). The lower panels represent the lines of electrodes in all datasets.\n\n### Backward waves correlate with alpha-band power\n\nPrevious studies investigating the role of alpha-band oscillations in visual attention reported a lateralization effect in the spectral power of alpha-band oscillations (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; Jensen and Mazaheri, 2010; H\u00e4ndel et al., 2011). One may then wonder about the relationship between alpha power and traveling waves. To address this question, we investigated whether the oscillatory activity we observe propagating through the cortex relates to the spectral power in either occipital or frontal regions. We computed the averaged alpha-band power in frontal and occipital areas, contra- and ipsilaterally to the target presentation, considering the same electrodes used for quantifying the traveling waves (see Figure 3A). Interestingly, we found a significant positive correlation between alpha-band power in both occipital and frontal regions and backward waves, but not with forward waves (Figure 3A and Table 1). Next, we considered the lateralization effect in the alpha-band, as shown in Figure 3B (topographic plot in the right panel) and well replicated in previous studies (Sauseng et al., 2005; Thut et al., 2006; H\u00e4ndel et al., 2011). We wondered whether we could observe a correlation between such lateralization, defined as the difference between alpha-band power when attention is allocated to one side of the screen and to the other side, and the effect we reported in the traveling waves (Figure 2). As shown in Figure 3B (left panels), our results demonstrate a lack of correlation for both backward and forward waves in both frontal and occipital regions (all |r| < 0.1, BF10~ = 0.3).\n\n**Table 1.**\n Correlation with alpha-band power.The table reports the Pearson\u2019s correlation coefficient and the Bayes Factor (BF10 supporting the alternative hypothesis, that is the presence of a correlation) between frontal and occipital electrodes and forward (FW) and backward (BW) waves, in both contra- and ipsilateral hemispheres. Values in bold reflect Bayes Factors providing strong evidence in favor of the alternative hypothesis. All correlations were computed on trials when neither a target nor a distractor was displayed.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\" colspan=\"2\">Pearsonr (BF\u2081\u2080)</th>\n      <th colspan=\"2\">FW</th>\n      <th colspan=\"2\">BW</th>\n    </tr>\n    <tr>\n      <th>CONTRA</th>\n      <th>IPSI</th>\n      <th>CONTRA</th>\n      <th>IPSI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">OCC.</td>\n      <td>CONTRA</td>\n      <td>\u22120.297 (0.549)</td>\n      <td>\u22120.350 (0.697)</td>\n      <td>0.720 (28.519)</td>\n      <td>0.698 (19.503)</td>\n    </tr>\n    <tr>\n      <td>IPSI</td>\n      <td>\u22120.305 (0.566)</td>\n      <td>\u22120.342 (0.669)</td>\n      <td>0.786 (116.990)</td>\n      <td>0.746 (47.512)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">FRONT.</td>\n      <td>CONTRA</td>\n      <td>\u22120.222 (0.422)</td>\n      <td>\u22120.252 (0.465)</td>\n      <td>0.772 (84.225)</td>\n      <td>0.712 (24.645)</td>\n    </tr>\n    <tr>\n      <td>IPSI</td>\n      <td>\u22120.327 (0.625)</td>\n      <td>\u22120.354 (0.710)</td>\n      <td>0.747 (48.448)</td>\n      <td>0.705 (21.841)</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/85035/elife-85035-fig3-v2.jpg)\n\n**Figure 3.:** (A) Panel A reveals a correlation between backward waves and alpha power (static, standing power, i.e., measured via wavelets transform), in both frontal and occipital areas, in both hemispheres. We did not observe such correlation with forward waves. The plot to the right reveals the topographic distribution of alpha power when participants attended to the right hemifield (we included the \u2018left\u2019 condition by flipping the electrodes symmetrically to the midline). The white dots indicate the electrodes used for the correlation. (B) The plots to the left show the correlation between the laterality effect in the alpha power and in the waves (laterality measured as the mean difference between contra- and ipsilateral hemispheres for both alpha power and the waves \u2013 for the waves we computed the difference using lines of electrodes symmetrical to the midline). We did not observe any correlation in neither forward nor backward waves, with neither frontal nor occipital alpha power. The topography to the right reveals a lateralization effect in the alpha power (attention to the left minus attention to the right), confirming the presence of alpha power lateralization, in line with previous studies (Sauseng et al., 2005; Thut et al., 2006; H\u00e4ndel et al., 2011). (C) Panel C shows the trial-by-trial correlation coefficients averaged across participants for different conditions (as indicated in the x-axis). Confirming the results in panel A, we found a positive correlation across participants between backward waves and alpha power, specifically in the contralateral hemisphere. We also observed a positive global effect of the laterality condition across participants in the forward waves, even though the combined p values for the trial-by-trial correlation did not reach the significant threshold. Error bars represent standard errors of the mean.\n\nTo further investigate the relation between alpha-band traveling waves and alpha power, we performed the same analysis focusing on the correlation within each participant. In particular, we correlated trial-by-trial forward and backward waves with alpha-band power for each subject, obtaining correlation coefficients \u2018r\u2019 and their respective p values. As in the previous analysis, we correlated forward and backward waves with frontal and occipital electrodes in both contro- and ipsilateral hemispheres. We applied the Fisher method (Fisher, 1992, see Methods for details) to combine all subjects\u2019 p values in every conditions. Overall, we found a significant effect of all combined p values (p < 0.0001), except in the lateralization condition (contra- minus ipsilateral hemisphere), similar to our previous analysis. Additionally, we tested for a consistent positive or negative distribution of the correlation coefficients. As shown in Figure 3C, the results support a significant correlation between backward waves and alpha power in the hemisphere contralateral to the attended location (BF10 = 10.7 and BF10 = 7.4 for occipital and frontal regions, respectively; all other BF10 were between 1 and 2, providing inconclusive evidence). Interestingly, this analysis also revealed a small but consistent effect in the correlation between lateralization effects, as we reported a consistently positive correlation in the contra- minus ipsilateral difference between forward waves and alpha power (BF10 ~ 5 for both frontal and occipital electrodes). However, it is important to notice that the combined p values obtained using the Fisher method did not reach the significance threshold in the lateralization condition, reducing the relevance of this specific result.\n\n### Covert attention modulates forward waves only with visual stimuli\n\nTo confirm our previous results, we replicated the same traveling waves analysis on two publicly available EEG datasets in which participants performed similar attentional tasks (experiment 1 of Foster et al., 2017 and experiment 1 of Feldmann-W\u00fcstefeld and Vogel, 2019). In the first experiment from the Feldmann-W\u00fcstefeld and Vogel dataset, participants were instructed to perform a visual working memory task in which, while keeping a central fixation, they had to memorize a set of items while ignoring a group of distracting stimuli. We focused our analysis on those trials in which the visual items to remember were placed either to the right or the left side of the screen, while the distractors were either in the upper or lower part of the screen (we pulled together the trials with either two or four distractors, as this factor was irrelevant for our analysis). The stimuli were shown for 200 ms, and we computed the amount of forward and backward waves in the 500 ms following stimulus onset. As shown in Figure 2 (central column), the analysis confirmed our previous results, demonstrating a strong interaction between the factors DIRECTION and LATERALITY (BF10 = 667, error ~2%; independently, the factors DIRECTION and LATERALITY had BF10 = 0.2 and BF10 = 0.4, respectively). These results confirmed that spatial attention modulates both forward and backward waves in the presence of visual stimulation. Next, we analyzed another publicly available dataset from Foster et al., 2017. In the first experiment of Foster\u2019s study, participants completed a spatial cueing task, requiring them to identify a digit among distractor letters. After a central cue was displayed for 250 ms, participants attended one of eight locations for 1000 ms before the onset of the target and distractors. As in our design, participants allocated attention to different locations to the left or right of the screen while keeping central fixation. However, unlike in our and in Feldmann-W\u00fcstefeld\u2019s study, no stimulus was displayed while participants were attending one of the possible locations. Here, we assessed the amount of waves in the 1000 ms before the onset of the stimulus during attention allocation, when no visual stimuli were shown on the screen. Remarkably, as shown in Figure 2 (right panel), our analysis demonstrated an effect of the lateralization (LATERALITY: BF10 = 3.571, error ~1%), revealing more waves contralateral to the attended location, but inconclusive results regarding the interaction between DIRECTION and LATERALITY (BF10 = 2.056, error ~1%). However, using a classical ANOVA (i.e., without modeling the slope of the random terms), the interaction between DIRECTION and LATERALITY proved significant (F(1,16) = 9.81, p = 0.003, $\u03b7^{2}$ = 0.13). In addition, when testing LATERALITY separately for forward and backward waves, we observed an effect in the backward waves (BF10 = 3.497, error <0.01%) but not in the forward waves (BF10 = 0.231, error <0.01%, supporting evidence in favor of the absence of an effect). In addition, as analyzed in our dataset, we tested the correlation between backward waves and alpha-band power in occipital (electrodes: PO3 and PO4) and frontal (electrodes: F3 and F4) regions. We found moderate evidence of a positive correlation between contra- and ipsilateral backward waves, and occipital (all Pearson\u2019s r~ = 0.4, all BFs10~ = 3) but inconclusive evidence in the frontal areas (all Pearson\u2019s r~ = 0.3, all BFs10~ = 2). These results supported those from our dataset, despite having a smaller amount of electrodes\u2019 lines, and potentially reduced statistical power (see Figure 2, lower panels). All in all, we could confirm our previous conclusion that covert visual attention modulates top-down oscillatory waves, showing this effect even in the absence of visual stimulation. In addition, we surmised that the lateralization effect we reported in the forward waves in our dataset (absent in the Foster dataset) is related to the steady visual stimulation during the attentional allocation, in line with our previous results demonstrating that oscillatory bottom-up waves reflect sensory processing (Alamia and VanRullen, 2019; Pang et al., 2020).\n\n### Both detected targets and distractors elicit FW waves, but not missed targets\n\nIn our previous analysis, based on a subset of trials in which neither a target nor a distractor occurred, we demonstrated that sustained attention to one hemifield generates oscillatory alpha-band waves propagating forward in the contralateral hemisphere and backward in the ipsilateral one. We now assess whether the occurrence of a specific event, such as the onset of a target or a distractor stimulus, could induce the generation of transient oscillatory waves. For this reason, we replicated the same analysis on those trials including either a target or a distractor (on average, each participant performed 146.25 trials in each condition), to quantify the amount of waves locked to the onset of these events.\n\nThe upper panels of Figure 4A reveal the amount of forward and backward waves contralateral to the stimulus. Note that the targets and distractors appeared in the attended and unattended locations, respectively. A Bayesian ANOVA reveals no difference between targets and distractors (EVENT: BF10 = 0.206, error ~1%), or their interaction (DIRECTION \u00d7 EVENT: BF10 = 0.423, error ~5%), as shown in the top-right panel of Figure 4. This result reveals that both target and distractor elicit forward waves propagating contralateral to the hemifield where they occur. Next, we investigated whether the waves in the hemisphere contralateral to the attended hemifield correlate with the participant\u2019s performance in detecting the target (a QUEST algorithm kept the accuracy throughout the experiment around 80%). Remarkably, we found an effect concerning the \u2018hit\u2019 and \u2018miss\u2019 target, as revealed by a significant interaction of the DIRECTION and EVENT factors (DIRECTION \u00d7 EVENT: BF10 = 4.085, error ~2%), as shown in the bottom-right panel of Figure 4A. Interestingly, Figure 4B reveals the amount of waves 400 ms before and after the onset of the stimulus, showing how a missed target is related to a decrease (increase) in forward (backward) waves contralateral (ipsilateral) to the attended location, possibly due to attentional fluctuations during each trial.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/85035/elife-85035-fig4-v2.jpg)\n\n**Figure 4.:** (A) The figure shows the amount of forward (in blue) and backward (in red) contralateral waves around the onset of the target/distractor (left) or hit and missed targets (right panel). Error bars are standard error of the mean. We found an interaction effect when we analyzed the hit versus missed target. (B) The 2D maps represent the amount of waves in the 11 lines of electrodes (x-axis) and around the onset time (y-axis) for forward and backward waves, and for hits and missed targets separately. The opposite pattern for hits versus misses, already visible before the target onset, suggests that missed targets are due to a failure of attentional allocation rather than sensory processing; and consequently, that proper attentional allocation is characterized by contralateral forward waves and ipsilateral backward waves.\n\n## Discussion\n\nPrevious studies demonstrated that selective attention modulates alpha-band oscillations in occipital and parietal regions (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011), supposedly indicating their involvement in top-down, inhibitory functions. Here, we took a novel perspective on these results by interpreting oscillations as traveling waves (Muller et al., 2018), thus considering their spatial component on top of the temporal one. Our results revealed two distinct alpha-band waves propagating in opposite directions: attention modulates oscillations traveling from occipital to frontal regions only in the presence of visual stimulation, thus relating forward waves to visual processing (Lozano-Soldevilla and VanRullen, 2019; Pang et al., 2020); whereas oscillations propagating in the opposite, top-down direction were modulated by attention irrespective of the presence or absence of concurrent visual stimulation; as in standard studies of alpha power lateralization (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011), this attentional modulation involved both an decrease of alpha waves contralateral to the attended location, and an ipsilateral increase.\n\nIn line with previous studies (Gulbinaite et al., 2017; Deng et al., 2019; Schuhmann et al., 2019; Sokoliuk et al., 2019; Kasten et al., 2020), our results support the thesis that distinct alpha-band oscillations are involved in separate cognitive processes. A recent study from Sokoliuk et al., 2019 demonstrated two different sources of alpha-band oscillations during a multisensory task: one, located in visual areas, reflects the \u2018spotlight of attention\u2019 and decreases linearly with increasing attention, whereas another one indicates attentional efforts and occurs in parietal regions. Gulbinaite et al. also demonstrated that parietal, but not occipital alpha-band oscillations are responsible for the oscillatory reverberation causing the \u2018triple-flash\u2019 illusion (Gulbinaite et al., 2017). Similarly, another study (Kasten et al., 2020) disentangled two primary sources of alpha oscillations, revealing a differential effect of tACS stimulation on endogenous but not exogenous attention. The authors interpreted their results as evidence supporting the hypothesis that alpha-band oscillations play a causal role in top-down but not bottom-up attention (Schuhmann et al., 2019; Kasten et al., 2020). Our results are consistent with these findings, including the spatial dimension in analyzing and interpreting alpha-band oscillations. Additionally, we also found a significant correlation between backward waves and occipital and frontal alpha-band power, consistently with Kasten\u2019s study (Kasten et al., 2020) and the inhibitory role of alpha-band oscillations. Our findings support the hypothesis that top-down processes, as reflected by backward waves, drive the well-documented hemispheric asymmetries reported in the literature (H\u00e4ndel et al., 2011; Klimesch, 2012; Waldhauser et al., 2012; Peylo et al., 2021). All in all, previous studies and our results pave the way for a more comprehensive understanding of the role of alpha oscillations in cognition.\n\nOne may wonder whether alpha-band oscillations during attention relate to target enhancement or distractor suppression (Schneider et al., 2021a). In the first case, the desynchronization of alpha activity would favor the sensory processing in the hemisphere contralateral to the target, whereas in the second case, alpha synchronization would suppress the processing of the distractor (Kelly et al., 2006; Noonan et al., 2018; Peylo et al., 2021). Our findings do not address this question directly but provide another element to the picture, suggesting the intriguing hypothesis that target enhancement is not reflected in the alpha power decrease but rather in an increase in the contralateral alpha-band waves processing the target and propagating forward. Our results thus support the hypothesis that alpha waves are involved in both distractor suppression (via ipsilateral top-down inhibitory feedback) and target enhancement (via contralateral bottom-up alpha-band waves). Future studies will precisely characterize the anatomical pathways of the distinct alpha-band oscillations, possibly involving cortical dynamics in the ventral and dorsal streams (Capilla et al., 2014) or corticothalamic connections (Lopes da Silva et al., 1980; Halgren et al., 2019).\n\nConcerning the anatomical pathway of waves\u2019 propagation, our analysis based on EEG recordings prevents us from clearly determining whether the observed waves propagate through the cortex or whether more localized dipoles generate such widespread observations at the sensor level. A previous source-analysis study on different visual-task datasets (Lozano-Soldevilla and VanRullen, 2019) leaves both possibilities open. However, recent simulations on perceptual echo data (related to bottom-up, sensory waves, Zhigalov and Jensen, 2022) suggest that two dipoles in occipital and parietal regions could be responsible for the generation of the waves propagating in the occipital-to-frontal direction. Supposing this conclusion generalizes to raw EEG data and not only perceptual echoes (VanRullen and Macdonald, 2012), one could speculate that visual attention modulates dipoles selectively in each hemisphere. However, one may wonder whether similar dipoles are also responsible for generating top-down waves in frontal regions or whether other mechanisms are involved in generating alpha-band backward waves.\n\nOur previous work proposed an alternative cause for the generation of cortical waves (Alamia and VanRullen, 2019). We demonstrated that a simple multilevel hierarchical model based on Predictive Coding (PC) principles and implementing biologically plausible constraints (temporal delays between brain areas and neural time constants) gives rise to oscillatory traveling waves propagating both forward and backward. This model is also consistent with the two-dipole hypothesis (Zhigalov and Jensen, 2022), considering the interaction between the parietal and occipital areas (i.e., a model of two hierarchical levels). However, dipoles in parietal regions are unlikely to explain the observed pattern of top-down waves, suggesting that more frontal areas may be involved in generating the feedback. This hypothesis is in line with the PC framework, in which top-down connections have an inhibitory function, suppressing the activity predicted by higher-level regions (Huang and Rao, 2011). Interestingly, Spratling proposed a simple reformulation of the terms in the PC equations that could describe it as a model of biased competition in visual attention, thus corroborating the interpretation of our finding within the PC framework (Spratling, 2008; Spratling, 2012).\n\nIn conclusion, our study demonstrated the existence of two functionally distinct alpha-band traveling waves propagating in opposite directions and modulated by visual attention. Top-down waves prevail in the hemisphere ipsilateral to the attended location and are related to inhibitory functions, whereas forward waves reflect ongoing visual processes in the contralateral hemisphere.\n\n## Methods\n\n### Participants\n\nEEG data were recorded from 16 volunteers (aged 20\u201332 years old, four women, three left-handed). All subjects reported normal or corrected-to-normal vision, and they had no history of epileptic seizures or photosensitivity. All participants gave written informed consent before starting the experiment, following the Declaration of Helsinki. This study adheres to the guidelines for research at the \u2018Centre de Recherche Cerveau et Cognition\u2019, and the protocol was approved by the local ethical committee \u2018Comit\u00e9 de protection des Personnes Sud M\u00e9diterran\u00e9e 1\u2019 (ethics approval number 2019-A02641-56). Furthermore, we included EEG recordings from two additional publicly available datasets investigating distinct scientific questions and using different analyses than our study. In the first one, 31 participants performed a visual working memory task involving spatial attention. The data were published in a previous study (Feldmann-W\u00fcstefeld and Vogel, 2019, data available online at https://osf.io/a65xz/). In the second dataset, 16 participants performed a task involving covert spatial attention. These data were published in another study (Foster et al., 2017, data available online at https://osf.io/m64ue). The number of participants in our dataset was estimated based on a power analysis of previous studies investigating traveling waves in vision (Luo et al., 2021) and to match the number of participant in the third dataset (Foster et al., 2017). Our dataset is also available online at https://osf.io/pn784/.\n\n### Experimental procedure\n\nThe following describes the experimental procedure to collect the data never published before. After setting the EEG device and placing the electrodes, participants performed the task in a dim and quiet room. The experiment was composed of 10 blocks of 60 trials each. During each trial (described in Figure 1A), two flickering luminance disks were displayed for 5 s, 9\u00b0 to the left and right from the center of the screen. The flicker had a frequency of 160 Hz, and the intensities were pooled from a uniform distribution. We chose to apply flickering stimulation to keep participants engaged in the task and avoid attentional captures due to sudden target/distractor onset and offset (see below). Before each block, participants were instructed to allocate attention to either the right or the left stimulus while focusing on a central arrow located at the center of the screen. The arrow pointed to the attended location and served as a visual reminder throughout the block. In half of the trials, a target or a distractor flashed 100 ms inside the attended or non-attended stimulus (see Figure 1A). Their onset could occur any time after the first 500 ms of the trial. Both target and distractor were squares whose luminance was a percentage of the disk\u2019s luminance (i.e., when at 100%, targets/distractors were indiscernible from the disk, as they have the same luminance). A QUEST algorithm (Watson and Pelli, 1983) modulated such percentage to keep participants\u2019 performance around 80% throughout the experiment (see Figure 1B). In the other half of the trials, either the target followed the distractor\u2019s onset, or neither the target nor the distractor was presented (in sum, four possible trials occurred with the same frequency: either only a target, or only a distractor, or a target preceded by a distractor, or neither of them). Participants reported whether they saw a target only at each trial\u2019s end to prevent motor activity from confounding the EEG signals. All stimuli were generated in MATLAB using the Psychtoolbox (Brainard, 1997).\n\nWe included two additional datasets in this study. In both studies, participants performed a visual attention task while keeping their fixation in the center of the screen. Regarding the (Feldmann-W\u00fcstefeld and Vogel, 2019) study, participants were asked to memorize the colors of two stimuli while ignoring a set of distractors stimuli. We analyzed uniquely those trials in which the visual stimuli were presented to the left or right side of the screen, while the distractors were placed above or below the fixation cross. After 500 ms of the fixation cross, two colored \u2018target\u2019 stimuli were presented for 200 ms. Participants were asked to memorize these stimuli, and a new \u2018probe\u2019 stimulus was shown after an additional second. Participants reported whether the probe matched the target stimuli or not. We analyzed the traveling waves in the 500 ms following the target stimulus onset.\n\nParticipants performed a spatial attention task in the second dataset from Foster et al., 2017. First, the fixation cross cued participants to covertly attend one of eight possible spatial positions uniformly distributed around the center of the screen. After 1 s, a digit was displayed either in the cued location or in any other one. The remaining locations were filled with letters. Participants were instructed to report the displayed digit. We analyzed the waves the second before the stimuli onset when participants were attending to the locations cued to the left or right side of the screen (we discarded trials in which participants attended locations above or below the fixation cross). For additional details about both experimental procedures, we refer the reader to Foster et al., 2017 and Feldmann-W\u00fcstefeld and Vogel, 2019.\n\n### EEG recording and preprocessing\n\nThroughout the experiment, we recorded EEG signals using a 64-channel active BioSemi EEG system (1024 Hz sampling rate), with three additional ocular electrodes. The preprocessing consisted of down-sampling the data to 256 Hz, followed by a high-pass (>1 Hz) and a notch (47\u201353 Hz) filter. Data were then average-referenced and segmented from 500 ms before trial onset to its end. We performed the preprocessing in EEGlab (Delorme and Makeig, 2004). Importantly, we carefully discarded from all analyses all trials in which the EOG signals revealed eye movements.\n\n### Traveling wave analysis\n\nAs in our previous studies (Alamia et al., 2020; Pang et al., 2020), we quantified traveling waves\u2019 propagation along 11 lines of seven electrodes, running from occipital to frontal regions. As shown in Figure 1C, we considered one midline (Oz, POz, Pz, CPz, Cz, FCz, and Fz) and five lines spreading through the left and right hemispheres, symmetrically to the midline. The electrodes\u2019 choice overlapped and covered a large portion of each hemisphere. For each set of seven electrodes, we created 2D maps by sliding a 500-ms time window over the EEG signals (having a 250-ms overlap) and computing 2D-FFT representations of each map (Figure 5B). Notably, the power in the lower and upper quadrants quantifies the amount of waves propagating forward (FW \u2013 from occipital to frontal electrodes) and backward (BW \u2013 from frontal to occipital), respectively (see Figure 5A). Next, we performed the same procedure after shuffling the electrodes to obtain a baseline with the same spectral power but without information about the amount of FW/BW waves (note in Figure 1D that the surrogate distribution accounts for the typical $\\frac{1}{f}$ power trend, as well as the alpha peak). Lastly, for each frequency in the range [2\u201345 Hz], we extracted the maximum values in the 2D-FFT spectra in both the real (FW and BW) and the shuffled data (FWss and BWss), obtaining the waves\u2019 amount in decibel [dB] as:\n\n$$\nFWwaves[dB]=10\u2217log_{10}(\\frac{FW}{FW_{ss}});BWwaves[dB]=10\u2217log_{10}(\\frac{BW}{BW_{ss}})\n$$\n\n![Figure 5.](https://cdn.elifesciences.org/articles/85035/elife-85035-fig5-v2.jpg)\n\n**Figure 5.:** (A) The 2D-Fast Fourier Trasform (2D-FFT) decomposes an image (e.g., a space-time representation of an EEG signal) into its spectral components. The upper part shows the decomposition of a 2D sinusoid propagating along the vertical or horizontal axis of the image. The corresponding peaks are found on the axis in the spectral domain, and their position depends on the frequency of the oscillations. The lower part of the figure shows how the spectra change when the oscillations propagate with a backward- or forward- like pattern. Importantly, the spectral peaks rotate in two of the four quadrants depending on the direction, providing a reliable measure of forward or backward waves in the image. (B) Schematic of the waves\u2019 quantification method. After defining time windows over each electrode line, we computed 2D Fourier transformation to quantify the amount of forward (in blue) and backward (in red) waves. From the upper and lower quadrants of the 2D-FFT spectra, we consider the maximum value over spatial frequencies, providing a 1D spectrum of forward and backward waves in the temporal frequency domain. The same procedure after shuffling the electrodes\u2019 order provides a surrogate measure, used as a baseline. Notably, such surrogate distribution captures the 1/f trend and the alpha-band peak, accounting for these factors in the final waves\u2019 quantification.\n\nThis value quantifies the total waves compared to the null distribution, thus being informative when contrasted against zero. Importantly, this waves analysis is limited to the surface level, and does not directly inform about the underlying sources. It is also necessary to keep in mind issues related to long-range connections and distortions due to scalp interference (Nunez, 1974; Alexander et al., 2019).\n\n#### Block analysis\n\nThis analysis quantified the amount of traveling waves across all trials when neither a target nor a distractor appeared. Participants paid attention to either one or the other side of the screen, thus defining a controlateral and an ipsilateral hemisphere (see Figure 1C). First, we averaged the forward and backward waves separately (in dB, see above) for each map computed along the 11 lines of electrodes within the 5-s trial (five lines for each hemisphere and the midline). Next, we averaged the results between trials, thus obtaining five contralateral and five ipsilateral spectra per subject for both FW and BW waves. Although our hypothesis focuses on alph-band oscillations, we also assessed the amount of waves in other frequency bands. Accordingly, from each spectrum, we computed the average per frequency band defined as \u03d1 (4\u20137 Hz), \u03b1 (8\u201312 Hz), low \u03b2 (13\u201324 Hz), and high \u03b2/\u03b3 (25\u201345 Hz). Besides following the frequency band definition found in the literature, such division reflects the waves\u2019 profile observed in the midline (Figure 1D). Then, we normalized each pair of symmetric lines (e.g., L1) by subtracting their mean value separately for each frequency band (i.e., $\\frac{L_{i,contra}+L_{i,ipsi}}{2}$). This normalization allows to remove power differences across lines (e.g., L1, L2, etc.) and to compare the effects between hemispheres. Lastly, we tested an ANOVA considering as factors DIRECTION (either FW or BW), LINE (a value from 1 to 5 to define the distance from the midline), LATERALITY (contra- vs. ipsilateral), and all their interactions. We considered SUBJECTS as the random factor in the model. All models in this study relied on Bayesian statistics (see below for details). We performed the same analysis on the EEG recordings from the second dataset (16 participants performing a similar attentional task, see Foster et al., 2017, data available online at https://osf.io/m64ue). However, given the available data, we were able to consider only one electrodes\u2019 line per hemisphere, using the sensors O1-PO3-P3-C3-F3 and O2-PO4-P4-C4-F4 (see Figure 2, lower left panel).\n\n#### Waves and power correlation\n\nThis analysis assessed the correlation between FW and BW waves computed in the block analysis, with occipital and frontal alpha power. First, we estimated the mean alpha power in contra- and ipsilateral electrodes in both frontal and parieto-occipital regions, using the same electrodes involved in the waves\u2019 analysis (see Figure 3B). We computed power spectra using wavelet transform (1\u201345 Hz in log-space frequency steps with 1\u201320 cycles) for all trials when neither a target nor a distractor appeared. We then correlated the mean alpha power in both frontal and posterior regions with alpha-band forward and backward waves between subjects in both contra- and ipsilateral hemispheres. We reported Bayes Factor (BF) and Pearson\u2019s coefficients. Additionally, we computed trial-by-trial correlations between waves and alpha power for all participants. First, we tested the correlation coefficient against zero in all conditions. Then, we obtained a combined p value per condition using the log/lin regress Fisher method (Fisher, 1992), as shown in Zoefel et al., 2019. Specifically, we computed the T value of a chi-square distribution with 2*N degrees of freedom from the pi values of the N participants as:\n\n$$\nT=-2*\\sum_{i=1}^{N}ln\u2061p_{i}\n$$\n\n#### Event analysis\n\nIn this analysis, we first investigated how the onset of a target or a distractor modulates the amount of both forward and backward waves, then whether a missed or correctly identified target elicits different patterns of waves. In both cases, we performed the same procedure as in the block analysis: we computed forward and backward waves separately for each line of electrodes obtaining five contralateral and five ipsilateral spectra per subject. First, we computed the waves 500 ms before and 500 ms after the target or distractor\u2019s onset, and we normalized each pair of symmetric lines as in the block analysis (see above). Then, we tested two separate ANOVAs considering in the first analysis the factor EVENT (either a target or a distractor occurred on the screen), and in the second the factor CORRECT (either a hit or a missed target) in the second analysis. We included DIRECTION (either FW or BW) in both models as a fixed factor and SUBJECTS as the random term.\n\n### Statistical analyses\n\nWe computed BFs in all statistical analyses, measured as the ratio between the models testing the alternative against the null hypothesis. All BFs follow this indication throughout the paper and are denoted as BF10. Conventionally, large BFs provide substantial (BF >~3) or strong (BF >~10) evidence in favor of the alternative hypothesis, whereas low BF (BF <~0.333) suggests a lack of effect (Smith, 2001; Masson, 2011). We performed all analyses in JASP (Love et al., 2015), considering default uniform prior distributions. The code to analyze the traveling waves is freely available at the following link: https://github.com/artipago/Travelling-waves-EEG-2.0 (Alamia, 2023).\n",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "eef28d08-76a2-4713-9fcf-befcfc8976f1",
+      "submission_id": "501b520e-b888-40c7-a01d-fc54ae3497ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, https://ror.org/00t3r8h32 University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85035.sa0](https://doi.org/10.7554/eLife.85035.sa0)\n\nAlamia and colleagues investigate the direction of traveling waves in the \u03b1 frequency band during visual spatial attention. The authors' novel perspective adopted here is important to understand the functional relevance of \u03b1 oscillations for spatial attention. The observed pattern of results is consistent with distinct roles for travelling \u03b1 waves in spatially opposite directions and makes a solid case for considering this new perspective on \u03b1 rhythms in human cognitive function.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Jonas Obleser, https://ror.org/00t3r8h32 University of L\u00fcbeck Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.85035.sa1](https://doi.org/10.7554/eLife.85035.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Distinct roles of forward and backward \u03b1-band waves in spatial visual attention\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Chris Baker as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Christian Keitel (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Although the results are in line with the conclusions drawn, some questions remain. The authors investigate the relationship between traveling \u03b1 waves and the hemispheric lateralization of \u03b1 power, which is a well-established neural signature of spatial attention. Surprisingly, the lateralization of \u03b1 power shown in Figure 3B appears relatively weak in the present dataset (by visual inspection), which raises the question of whether the investigation of a relation between lateralized \u03b1 power and \u03b1 traveling waves is warranted in the first place.\n\n(1b) Furthermore, the authors employ between-subject correlations (with N = 16) to test the relationship between \u03b1 traveling waves and (lateralized) \u03b1 power. However, as inter-individual differences in patterns of travelling waves are not the main focus here, within-subject analyses of the same relations would be able to test the authors' hypotheses much more directly.\n\n2) For any naive reader the concept of travelling waves may be hard to grasp in the way data are currently presented \u2013 only based on the results of the 2D-FFT. Can forward and backward-travelling waves be illustrated in a representative example to make this more intuitive?\n\n3) Findings from both datasets were difficult to discern and more effort should be made to highlight these. Also, a major conclusion \"the directionality effect [effect of attention on forward waves] only occurs for visual stimulation\" only rested on a qualitative comparison between studies. The authors have improved on this here, e.g., by toning down this conclusion. One thing that is still missing is a graphical representation of the data from Foster et al. (the second dataset analysed here) that would support the statistical results and allow the reader a visual comparison between the sets of findings.\n\n4) Given that the Direction x Laterality interaction reported on page 9 was inconclusive (and likely not statistically significant) it is a bit difficult to interpret the apparent presence of an effect for forward waves only. Since the analysis pipeline appears to be very straightforward, it might be an option to support the claims by including one or two additional spatial attention datasets in the analysis.\n\nIn order to better understand the results, it would be helpful to show a temporally resolved plot of the power of forward and backward waves across the trial time course.\n\nReviewer #1 (Recommendations for the authors):\n\n\u2013 Abstract: Mention \"(N=16 each)\" when introducing the studies.\n\n\u2013 One idea to strengthen the \"travelling\" part of the wave would be to present a phase progression analysis of sorts that demonstrates a consistent phase difference in \u03b1 oscillations along the \"lines\" of electrodes, potentially converted to physiologically plausible latencies that correspond to conduction delays. These could be of interest: Nunez et al. (2001) https://doi.org/10.1002/hbm.1030, Burkitt et al. 2000 https://doi.org/10.1016/S1388-2457(99)00194-7\n\n\u2013 The Foster et al. dataset remains underspecified in the paper. I appreciate that this is available elsewhere but it would be great to provide some basic information somewhere in the paper. A separate section in the Methods that gives a few details on how the analysis differed from the 'main' dataset would be appreciated.\n\n\u2013 For some of the analyses, data is broken down in increasingly smaller chunks based on target/distractor presence and behavioural outcome. However, I couldn't find information on how many trials were available per \"condition\" (on avg) for these. This seems important to convince the reader of an acceptable SNR for these analyses.\n\nReviewer #2 (Recommendations for the authors):\n\nThe Introduction is well written but the authors might want to structure the text into a few paragraphs (also applies to other sections of the manuscript).\n\nAt the end of the introduction, the authors state the hypothesis that two functionally distinct \u03b1-band oscillations propagate along the frontal-occipital line in opposite directions. It was a bit unclear where this hypothesis exactly comes from. The authors might want to explain the justification of this hypothesis in more detail or make a more balanced statement with respect to the question of whether this precise pattern was indeed hypothesized a priori.\n\nI appreciate the reporting of Bayes Factors but since the present manuscript reports new findings (which will potentially be tested in new datasets in the future), it would be nice to report effect sizes as well.\n\nIn Figure 1D, it was a bit unclear to me what 0 (on the y-axis) refers to. The authors might want to report this in the caption.\n\nThe authors report between-subject correlation analyses (with N = 16) but as far as I understand, within-subject analyses (which are better powered) would test their claims more directly. Regarding \u03b1 lateralization, it would be important to see whether the absence of a relation between lateralized \u03b1 power and traveling waves' direction holds on a within-subject (single-trial) level. Between-subject correlations instead assume that there are robust and interpretable interindividual differences between subjects, which is at present unclear and possibly not what the authors want to demonstrate here.\n\nThe \u03b1 lateralization in Figure 3B looks rather weak and it was not entirely clear to me what the unit (in colour) exactly is (probably a simple difference between attend-left and attend-right trials). Often, a lateralization index is used in the literature, which is more robust as it normalizes the lateralization for overall power. Also, I did not find a statistical test for this \u03b1 lateralization pattern in the text. It would be important to demonstrate that a robust and statistically significant \u03b1 lateralization is present in this dataset. Otherwise, it would be difficult to interpret the ensuing correlations of \u03b1 lateralization with traveling waves.\n\nGiven that the Direction x Laterality interaction reported on page 9 was inconclusive (and likely not statistically significant) it is a bit difficult to interpret the apparent presence of an effect for forward waves only. Since the analysis pipeline appears to be very straightforward, it might be an option to support the claims by including one or two additional spatial attention datasets in the analysis.\n\nIn order to better understand the results, it would be helpful to show a temporally resolved plot of the power of forward and backward waves across the trial time course.\n\nPage 11: \"as in standard studies of \u03b1 power lateralization (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011), this attentional modulation involved both an increase of \u03b1 waves contralateral to the attended location, and an ipsilateral decrease\". I guess it should be \"decrease of \u03b1 waves contralateral to the attended location, and an ipsilateral increase\".\n",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3befc1a9-dce7-44bf-bf8e-1081bc0f4401",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C1",
+      "claim": "Alpha-band oscillations are in the 8-12 Hz frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has associated alpha-band [8\u201312 Hz] oscillations with inhibitory functions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the definition of alpha-band oscillations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "a6a3d450-4483-47e3-bdc3-def2e3700331",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C2",
+      "claim": "Visual attention increases alpha-band power in the hemisphere ipsilateral to the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "several studies showed that visual attention increases alpha-band power in the hemisphere ipsilateral to the attended location",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7deed406-1a0d-45b3-a3f6-591e24d79b92",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C3",
+      "claim": "Alpha oscillations positively correlate with visual perception.",
+      "claim_type": "EXPLICIT",
+      "source": "other studies demonstrated that alpha oscillations positively correlate with visual perception",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by references to other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d80142a8-e2e3-4147-beb3-9193dc333b3c",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C4",
+      "claim": "There are two functionally distinct alpha-band oscillations propagating in different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "using an approach based on traveling waves, we demonstrate that there are two functionally distinct alpha-band oscillations propagating in different directions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data from three datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "9356b8ea-793d-43d0-864e-4130f4794147",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C5",
+      "claim": "Three datasets of human participants performing a covert visual attention task were analyzed (one new dataset with N = 16, two previously published datasets with N = 16 and N = 31).",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed EEG recordings from three datasets of human participants performing a covert visual attention task (one new dataset with N = 16, two previously published datasets with N = 16 and N = 31).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the datasets used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "37f63945-efac-45da-9f71-5d77abef7ff1",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C6",
+      "claim": "Allocating attention to one hemifield increases top-down alpha-band waves propagating from frontal to occipital regions ipsilateral to the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "allocating attention to one hemifield increases top-down alpha-band waves propagating from frontal to occipital regions ipsilateral to the attended location, both with and without visual stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "92ac2e39-174f-4d1d-b16e-a333f3d0bef9",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C7",
+      "claim": "Top-down alpha-band waves occur both with and without visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "allocating attention to one hemifield increases top-down alpha-band waves propagating from frontal to occipital regions ipsilateral to the attended location, both with and without visual stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d7782bb0-8360-41fe-bfb9-c3ac82609577",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C8",
+      "claim": "Top-down oscillatory waves correlate positively with alpha-band power in frontal and occipital regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These top-down oscillatory waves correlate positively with alpha-band power in frontal and occipital regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "156c8a11-3629-4588-823e-18418b191f84",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C9",
+      "claim": "Different alpha-band waves propagate from occipital to frontal regions and contralateral to the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, different alpha-band waves propagate from occipital to frontal regions and contralateral to the attended location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "eeba1c57-a4f1-4608-8ce6-643af4f14534",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C10",
+      "claim": "Forward waves were present only during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, these forward waves were present only during visual stimulation, suggesting a separate mechanism related to visual processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing conditions with and without visual stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "ebc7e9c7-5dc2-4100-8eee-0710a1f925df",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C11",
+      "claim": "Brain oscillations orchestrate neuronal activity at distinct temporal and spatial scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain oscillations are related to several cognitive functions, as they orchestrate neuronal activity at distinct temporal and spatial scales (Buzs\u00e1ki and Draguhn, 2004; Buzs\u00e1ki, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "e4afc3a8-8ea8-4593-ac54-9ef228f671a9",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C12",
+      "claim": "Alpha-band oscillations are the most prevailing rhythms in electrophysiological (EEG) recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha-band oscillations [8\u201312 Hz] are the most prevailing rhythms in electrophysiological (EEG) recordings, spreading through most cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "2659de64-05d4-4d8c-a196-8f8e5b3e9d47",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C13",
+      "claim": "Alpha-band oscillations spread through most cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Alpha-band oscillations [8\u201312 Hz] are the most prevailing rhythms in electrophysiological (EEG) recordings, spreading through most cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about alpha oscillations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "81225421-b3aa-4d2f-8458-7f89a6539175",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C14",
+      "claim": "Alpha-band oscillations might filter sensory information, regulating excitation and inhibition of sensory-specific brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "some studies showed that alpha-band oscillations might filter sensory information, regulating excitation and inhibition of sensory-specific brain regions (Jensen and Mazaheri, 2010; Mathewson et al., 2011; Klimesch, 2012; Sadaghiani and Kleinschmidt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "519689cb-8330-447b-a623-1a046f9c4cc3",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C15",
+      "claim": "Alpha oscillations are interpreted as a top-down mechanism involved in inhibitory control and timing of cortical processing.",
+      "claim_type": "EXPLICIT",
+      "source": "researchers interpreted alpha oscillations as a top-down mechanism involved in inhibitory control and timing of cortical processing (Klimesch et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "b9e90208-f2bb-4d66-ba0d-8d44539260e4",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C16",
+      "claim": "Alpha oscillations modulate cortical excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as modulating cortical excitability (Jensen and Mazaheri, 2010; Mathewson et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "00c73aea-1704-4039-9cf7-e1587b9da4bc",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C17",
+      "claim": "The phase of alpha-band oscillation affects visual perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies corroborated this hypothesis, demonstrating how the phase of alpha-band oscillation affects visual perception (Busch et al., 2009; Fakche et al., 2022; but see also Ruzzoli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "29a90454-00a3-480c-a806-a607468e2598",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C18",
+      "claim": "Visual attention causes hemispheric modulation in occipital regions with an increase of alpha power ipsilateral to the attended hemifield and a corresponding decrease contralaterally.",
+      "claim_type": "EXPLICIT",
+      "source": "Another highly replicated result regarding the inhibitory role of alpha oscillations consists in the hemispheric modulation in occipital regions associated with visual attention, having an increase of power ipsilateral to the attended hemifield, and a corresponding decrease contralaterally (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "4149173b-efb9-49e6-9c62-9e9ef75a9ba8",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C19",
+      "claim": "Alpha-band oscillations in occipital and parietal regions are related to perceptual processing and visual memory.",
+      "claim_type": "EXPLICIT",
+      "source": "other experimental studies have related alpha-band oscillations in occipital and parietal regions to perceptual processing and visual memory (Bonnefond and Jensen, 2012; VanRullen, 2016; Pang et al., 2020; Luo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d8d37b64-c366-41a2-97d4-a21f8e7188af",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C20",
+      "claim": "The visual system reverberates sensory information in the alpha-band for as long as 1 s in 'perceptual echoes'.",
+      "claim_type": "EXPLICIT",
+      "source": "reverse-correlation techniques reveal that the visual system reverberates sensory information in the alpha-band for as long as 1 s, in what has been dubbed 'perceptual echoes' (VanRullen and Macdonald, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research using reverse-correlation techniques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "149a59a8-989a-41a3-93b0-1fcd64de2dd4",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C21",
+      "claim": "Perceptual echoes reflect the input's precise time course.",
+      "claim_type": "EXPLICIT",
+      "source": "these echoes are a clear signature of sensory processing as they reflect the input's precise time course",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d29246f6-732d-4881-b7a8-913fc16fa78d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C22",
+      "claim": "Perceptual echoes are modulated by attention.",
+      "claim_type": "EXPLICIT",
+      "source": "these echoes are a clear signature of sensory processing as they reflect the input's precise time course, are modulated by attention",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "511b8c6b-6f6e-438f-89de-017815310a9a",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C23",
+      "claim": "Perceptual echoes have been dissociated from inhibitory alpha power modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "have been dissociated from inhibitory alpha power modulation (VanRullen and Macdonald, 2012; VanRullen, 2016; Br\u00fcers and VanRullen, 2018; Schwenk et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "c46c7082-2b6b-4841-b4be-47781bf7ef82",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C24",
+      "claim": "Visual perception modulates alpha waves, with forward waves during visual stimulation and backward waves when the stimulus was off.",
+      "claim_type": "EXPLICIT",
+      "source": "in which we showed how visual perception modulates alpha waves, that is forward waves during visual stimulation, backward waves when the stimulus was off",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3eeff00c-3258-483d-8f2a-f5d8a08ca076",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C25",
+      "claim": "Distinct alpha-band oscillations are related to specific cognitive processes.",
+      "claim_type": "EXPLICIT",
+      "source": "this hypothesis is in line with previous studies suggesting that distinct alpha-band oscillations are related to specific cognitive processes (Gulbinaite et al., 2017; Deng et al., 2019; Schuhmann et al., 2019; Sokoliuk et al., 2019; Kasten et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7a20650b-79e3-4e06-906e-7b16437faa2b",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C26",
+      "claim": "Alpha-band oscillatory waves propagate in both directions during visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "confirming previous experimental studies (Alamia and VanRullen, 2019; Pang et al., 2020), we found that alpha-band oscillatory waves propagate in both directions during visual stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study that confirms previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "f0981071-bd02-40b5-9fda-5ca574e3e683",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C27",
+      "claim": "Theta (4-7 Hz) waves propagate mostly bottom-up from occipital to frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "theta (4\u20137 Hz) and high-beta/gamma (24\u201345 Hz) bands propagate mostly bottom-up from occipital to frontal regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the spectral profile analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "161b060d-5058-49a0-bbd6-ca3acbd6b263",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C28",
+      "claim": "High-beta/gamma (24-45 Hz) waves propagate mostly bottom-up from occipital to frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "theta (4\u20137 Hz) and high-beta/gamma (24\u201345 Hz) bands propagate mostly bottom-up from occipital to frontal regions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the spectral profile analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "39c8221b-be1f-40cd-8c9c-f56c39b9e5ca",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C29",
+      "claim": "Low-beta (13-23 Hz) waves flow in the top-down direction.",
+      "claim_type": "EXPLICIT",
+      "source": "low-beta (13\u201323 Hz) waves flow in the top-down direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the spectral profile analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7cfaead3-dd5e-4ef0-9155-8270dba58b39",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C30",
+      "claim": "Higher frequency bands (high-beta/gamma) have been associated with forward processing.",
+      "claim_type": "EXPLICIT",
+      "source": "this pattern of results confirms previous studies using different methods, in which higher frequency bands (i.e., high-beta/gamma) have been associated with forward processing, whereas low-beta and alpha frequencies have been related to top-down processing (Bastos et al., 2012; Bastos et al., 2015; van Kerkoerle et al., 2014; Michalareas et al., 2016; but see also Schneider et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "0d01f1a4-a42d-42fd-a979-695228f23143",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C31",
+      "claim": "Low-beta and alpha frequencies have been related to top-down processing.",
+      "claim_type": "EXPLICIT",
+      "source": "this pattern of results confirms previous studies using different methods, in which higher frequency bands (i.e., high-beta/gamma) have been associated with forward processing, whereas low-beta and alpha frequencies have been related to top-down processing (Bastos et al., 2012; Bastos et al., 2015; van Kerkoerle et al., 2014; Michalareas et al., 2016; but see also Schneider et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "0cb34ac3-e857-44f0-a3bd-5a56e8aae585",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C32",
+      "claim": "There is a strong lateralization effect revealing an increase of contralateral forward waves in the alpha-band.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a strong lateralization effect revealing an increase (respectively, decrease) of contralateral (ipsilateral) forward waves in the alpha-band",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "60ee33ae-4028-469d-b826-73d09120e0cb",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C33",
+      "claim": "There is a decrease of ipsilateral forward waves in the alpha-band.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a strong lateralization effect revealing an increase (respectively, decrease) of contralateral (ipsilateral) forward waves in the alpha-band",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "0e13a988-caa6-4184-b6ac-1baf08e3a622",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C34",
+      "claim": "There is an opposite pattern in waves propagating in the backward direction compared to forward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a strong lateralization effect revealing an increase (respectively, decrease) of contralateral (ipsilateral) forward waves in the alpha-band, and the opposite pattern in waves propagating in the opposite direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "f8a6b5ad-f158-496a-99a9-13c27167b077",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C36",
+      "claim": "All other factors and their interactions in the ANOVA revealed evidence in favor of the absence of an effect (BFs10 < 0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas all other factors and their interactions revealed evidence in favor of the absence of an effect (BFs10 < 0.3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "077d77c8-3ad0-4561-9051-7d544f805cb4",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C37",
+      "claim": "No significant effect was found in other frequency bands (theta, low, and high beta).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found no significant effect in the other frequency bands (as shown in Figure 1D, namely theta, low, and high beta)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7be10696-6814-452e-993b-53d9602faf8a",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C38",
+      "claim": "There is a significant positive correlation between alpha-band power in occipital regions and backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a significant positive correlation between alpha-band power in both occipital and frontal regions and backward waves",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis in the study, as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "1754b61a-e821-44dc-ab87-7e6fbb840d31",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C39",
+      "claim": "There is a significant positive correlation between alpha-band power in frontal regions and backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a significant positive correlation between alpha-band power in both occipital and frontal regions and backward waves",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis in the study, as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "15d711c2-d80d-4cea-addb-2cbfa00b01ca",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C40",
+      "claim": "There is no significant correlation between alpha-band power and forward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a significant positive correlation between alpha-band power in both occipital and frontal regions and backward waves, but not with forward waves",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis in the study, as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "dc5f823e-d0ad-4462-b584-36956f0defe6",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C41",
+      "claim": "There is a lack of correlation between the lateralization effect in alpha-band power and the effect in traveling waves for both backward and forward waves in both frontal and occipital regions (all |r| < 0.1, BF10~ = 0.3).",
+      "claim_type": "EXPLICIT",
+      "source": "our results demonstrate a lack of correlation for both backward and forward waves in both frontal and occipital regions (all |r| < 0.1, BF10~ = 0.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "c4bb0e17-c770-49f0-ae52-7a1d58cd7e23",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C42",
+      "claim": "Trial-by-trial analysis found a significant correlation between backward waves and alpha power in the hemisphere contralateral to the attended location (BF10 = 10.7 and BF10 = 7.4 for occipital and frontal regions, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "the results support a significant correlation between backward waves and alpha power in the hemisphere contralateral to the attended location (BF10 = 10.7 and BF10 = 7.4 for occipital and frontal regions, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the trial-by-trial correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "9aecd5aa-eb98-48b7-bc38-2518d0878919",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C43",
+      "claim": "Trial-by-trial analysis revealed a small but consistent effect in the correlation between lateralization effects, with a consistently positive correlation in the contra- minus ipsilateral difference between forward waves and alpha power (BF10 ~ 5 for both frontal and occipital electrodes).",
+      "claim_type": "EXPLICIT",
+      "source": "this analysis also revealed a small but consistent effect in the correlation between lateralization effects, as we reported a consistently positive correlation in the contra- minus ipsilateral difference between forward waves and alpha power (BF10 ~ 5 for both frontal and occipital electrodes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the trial-by-trial correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "a05f8575-8221-4473-bec3-c9c63a8f4fd5",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C44",
+      "claim": "The combined p values obtained using the Fisher method did not reach the significance threshold in the lateralization condition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to notice that the combined p values obtained using the Fisher method did not reach the significance threshold in the lateralization condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Fisher method analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d133685c-3fe3-4236-8f03-1a5c49718039",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C45",
+      "claim": "In the Feldmann-W\u00fcstefeld and Vogel dataset, the analysis confirmed a strong interaction between the factors DIRECTION and LATERALITY (BF10 = 667, error ~2%).",
+      "claim_type": "EXPLICIT",
+      "source": "the analysis confirmed our previous results, demonstrating a strong interaction between the factors DIRECTION and LATERALITY (BF10 = 667, error ~2%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the second dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "9c8c4395-991f-4a15-9098-f0f29ea403c2",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C46",
+      "claim": "In the Feldmann-W\u00fcstefeld and Vogel dataset, the factors DIRECTION and LATERALITY independently had BF10 = 0.2 and BF10 = 0.4, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "independently, the factors DIRECTION and LATERALITY had BF10 = 0.2 and BF10 = 0.4, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the second dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "964d8f03-ffcd-4bea-b31b-056b2f5febd7",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C47",
+      "claim": "In the Foster et al. dataset, the analysis demonstrated an effect of lateralization (LATERALITY: BF10 = 3.571, error ~1%).",
+      "claim_type": "EXPLICIT",
+      "source": "our analysis demonstrated an effect of the lateralization (LATERALITY: BF10 = 3.571, error ~1%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the third dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "5ad72cc5-5657-4a94-ba7a-06e3708d5c76",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C48",
+      "claim": "In the Foster et al. dataset, there were inconclusive results regarding the interaction between DIRECTION and LATERALITY (BF10 = 2.056, error ~1%).",
+      "claim_type": "EXPLICIT",
+      "source": "but inconclusive results regarding the interaction between DIRECTION and LATERALITY (BF10 = 2.056, error ~1%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the third dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "90cb756c-d1d6-4c0d-a9d9-2b87f2381bf5",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C50",
+      "claim": "In the Foster et al. dataset, when testing LATERALITY separately, there was an effect in the backward waves (BF10 = 3.497, error <0.01%).",
+      "claim_type": "EXPLICIT",
+      "source": "when testing LATERALITY separately for forward and backward waves, we observed an effect in the backward waves (BF10 = 3.497, error <0.01%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian analysis of the third dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "f12937f4-3259-4419-a4a2-084017c3d5e8",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C51",
+      "claim": "In the Foster et al. dataset, when testing LATERALITY separately, there was no effect in the forward waves (BF10 = 0.231, error <0.01%).",
+      "claim_type": "EXPLICIT",
+      "source": "but not in the forward waves (BF10 = 0.231, error <0.01%, supporting evidence in favor of the absence of an effect)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian analysis of the third dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "33e2249d-c8d7-4968-b2f7-9ec62950b49e",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C53",
+      "claim": "In the Foster et al. dataset, there was inconclusive evidence of correlation between backward waves and frontal alpha power (all Pearson's r~ = 0.3, all BFs10~ = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "but inconclusive evidence in the frontal areas (all Pearson's r~ = 0.3, all BFs10~ = 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis of the third dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "2d689234-3614-4e79-b762-da534c51742d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C54",
+      "claim": "Covert visual attention modulates top-down oscillatory waves even in the absence of visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "we could confirm our previous conclusion that covert visual attention modulates top-down oscillatory waves, showing this effect even in the absence of visual stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the Foster et al. dataset.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "bca07d29-154c-4576-a9d5-118521158c5f",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C55",
+      "claim": "The lateralization effect in forward waves is related to steady visual stimulation during attentional allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "we surmised that the lateralization effect we reported in the forward waves in our dataset (absent in the Foster dataset) is related to the steady visual stimulation during the attentional allocation, in line with our previous results demonstrating that oscillatory bottom-up waves reflect sensory processing (Alamia and VanRullen, 2019; Pang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing results across datasets and previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3d8d178b-3df2-4b44-8202-4259f3117620",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C56",
+      "claim": "Both detected targets and distractors elicit forward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "This result reveals that both target and distractor elicit forward waves propagating contralateral to the hemifield where they occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the event analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "17b58fa6-1c36-4ec9-bfe2-8f92b8516a71",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C57",
+      "claim": "A Bayesian ANOVA reveals no difference between targets and distractors (EVENT: BF10 = 0.206, error ~1%).",
+      "claim_type": "EXPLICIT",
+      "source": "A Bayesian ANOVA reveals no difference between targets and distractors (EVENT: BF10 = 0.206, error ~1%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the event data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "846cd170-8742-4799-b755-012d77a377db",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C58",
+      "claim": "There is no interaction between DIRECTION and EVENT for targets versus distractors (DIRECTION \u00d7 EVENT: BF10 = 0.423, error ~5%).",
+      "claim_type": "EXPLICIT",
+      "source": "or their interaction (DIRECTION \u00d7 EVENT: BF10 = 0.423, error ~5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the event data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "caefbfda-7d80-4037-a2bf-892578686e8d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C59",
+      "claim": "There is a significant interaction of the DIRECTION and EVENT factors for hit versus miss targets (DIRECTION \u00d7 EVENT: BF10 = 4.085, error ~2%).",
+      "claim_type": "EXPLICIT",
+      "source": "we found an effect concerning the 'hit' and 'miss' target, as revealed by a significant interaction of the DIRECTION and EVENT factors (DIRECTION \u00d7 EVENT: BF10 = 4.085, error ~2%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the Bayesian ANOVA analysis of the event data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "52641103-a66a-4467-aca7-64495224d0d2",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C60",
+      "claim": "A missed target is related to a decrease in forward waves contralateral to the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B reveals the amount of waves 400 ms before and after the onset of the stimulus, showing how a missed target is related to a decrease (increase) in forward (backward) waves contralateral (ipsilateral) to the attended location",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the event analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "40ff2862-411d-4df5-958c-3edd9581130f",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C61",
+      "claim": "A missed target is related to an increase in backward waves contralateral to the attended location.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4B reveals the amount of waves 400 ms before and after the onset of the stimulus, showing how a missed target is related to a decrease (increase) in forward (backward) waves contralateral (ipsilateral) to the attended location",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the event analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "fe4ec21a-557a-4fe7-97b1-7c87d41b63ea",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C62",
+      "claim": "Missed targets are due to a failure of attentional allocation rather than sensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite pattern for hits versus misses, already visible before the target onset, suggests that missed targets are due to a failure of attentional allocation rather than sensory processing",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the temporal pattern of waves before target onset.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "56015329-ed92-4352-a9ef-cde1aab6c0c5",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C63",
+      "claim": "Proper attentional allocation is characterized by contralateral forward waves and ipsilateral backward waves.",
+      "claim_type": "EXPLICIT",
+      "source": "and consequently, that proper attentional allocation is characterized by contralateral forward waves and ipsilateral backward waves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the pattern of waves associated with hit versus miss targets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "a12be0cc-0dcc-479a-98c7-3b650bb1841d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C64",
+      "claim": "Selective attention modulates alpha-band oscillations in occipital and parietal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that selective attention modulates alpha-band oscillations in occipital and parietal regions (Worden et al., 2000; Sauseng et al., 2005; Kelly et al., 2006; Thut et al., 2006; H\u00e4ndel et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "e32e1f3e-5c75-44a2-9a8d-60d09e188bc3",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C65",
+      "claim": "Attention modulates oscillations traveling from occipital to frontal regions only in the presence of visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "attention modulates oscillations traveling from occipital to frontal regions only in the presence of visual stimulation, thus relating forward waves to visual processing (Lozano-Soldevilla and VanRullen, 2019; Pang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "4c902996-f229-4785-b0ef-939b98d67516",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C66",
+      "claim": "Oscillations propagating in the top-down direction were modulated by attention irrespective of the presence or absence of concurrent visual stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas oscillations propagating in the opposite, top-down direction were modulated by attention irrespective of the presence or absence of concurrent visual stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study comparing conditions with and without visual stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3b1dccf9-fefd-4f8b-b4b8-2f5b8d296198",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C67",
+      "claim": "Attentional modulation of top-down waves involved both a decrease of alpha waves contralateral to the attended location and an ipsilateral increase.",
+      "claim_type": "EXPLICIT",
+      "source": "this attentional modulation involved both an decrease of alpha waves contralateral to the attended location, and an ipsilateral increase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d1d65aae-6241-433b-a081-04588ea1712b",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C68",
+      "claim": "Two different sources of alpha-band oscillations exist during a multisensory task: one in visual areas reflecting the 'spotlight of attention' that decreases linearly with increasing attention, and another in parietal regions indicating attentional efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study from Sokoliuk et al., 2019 demonstrated two different sources of alpha-band oscillations during a multisensory task: one, located in visual areas, reflects the 'spotlight of attention' and decreases linearly with increasing attention, whereas another one indicates attentional efforts and occurs in parietal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "71c97c4d-1dcc-46b3-8b50-bfc997a2d824",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C69",
+      "claim": "Parietal, but not occipital alpha-band oscillations are responsible for the oscillatory reverberation causing the 'triple-flash' illusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Gulbinaite et al. also demonstrated that parietal, but not occipital alpha-band oscillations are responsible for the oscillatory reverberation causing the 'triple-flash' illusion (Gulbinaite et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "55d185e8-5a53-4ab5-be53-d9e69320a6aa",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C70",
+      "claim": "Alpha-band oscillations play a causal role in top-down but not bottom-up attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors interpreted their results as evidence supporting the hypothesis that alpha-band oscillations play a causal role in top-down but not bottom-up attention (Schuhmann et al., 2019; Kasten et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "dae45565-75bd-48e5-bbf4-eb0aeaff2679",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C71",
+      "claim": "Top-down processes, as reflected by backward waves, drive the well-documented hemispheric asymmetries reported in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings support the hypothesis that top-down processes, as reflected by backward waves, drive the well-documented hemispheric asymmetries reported in the literature (H\u00e4ndel et al., 2011; Klimesch, 2012; Waldhauser et al., 2012; Peylo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings supported by citations to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7a628c17-e0e6-4782-a7b8-d2f50f2b907c",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C72",
+      "claim": "Target enhancement is reflected in an increase in the contralateral alpha-band waves processing the target and propagating forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings do not address this question directly but provide another element to the picture, suggesting the intriguing hypothesis that target enhancement is not reflected in the alpha power decrease but rather in an increase in the contralateral alpha-band waves processing the target and propagating forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "8067c9bb-7e21-4985-a250-d5dee62570c1",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C73",
+      "claim": "Alpha waves are involved in both distractor suppression (via ipsilateral top-down inhibitory feedback) and target enhancement (via contralateral bottom-up alpha-band waves).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus support the hypothesis that alpha waves are involved in both distractor suppression (via ipsilateral top-down inhibitory feedback) and target enhancement (via contralateral bottom-up alpha-band waves).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "88f768b0-fc0a-48fc-bfff-9e8e445efd92",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C74",
+      "claim": "A simple multilevel hierarchical model based on Predictive Coding principles and implementing biologically plausible constraints gives rise to oscillatory traveling waves propagating both forward and backward.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that a simple multilevel hierarchical model based on Predictive Coding (PC) principles and implementing biologically plausible constraints (temporal delays between brain areas and neural time constants) gives rise to oscillatory traveling waves propagating both forward and backward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "e367cd2e-339d-46da-aba9-f961229b66fa",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C75",
+      "claim": "The Predictive Coding model is consistent with the two-dipole hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is also consistent with the two-dipole hypothesis (Zhigalov and Jensen, 2022), considering the interaction between the parietal and occipital areas (i.e., a model of two hierarchical levels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing the PC model with the two-dipole hypothesis.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "0a91368b-8b1d-4026-a5e4-58a6a5a62142",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C76",
+      "claim": "In the Predictive Coding framework, top-down connections have an inhibitory function, suppressing the activity predicted by higher-level regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is in line with the PC framework, in which top-down connections have an inhibitory function, suppressing the activity predicted by higher-level regions (Huang and Rao, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous research on Predictive Coding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "d488d0e4-d6a9-4b72-977f-d4eb7b3d0e50",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C77",
+      "claim": "Predictive Coding can be reformulated as a model of biased competition in visual attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Spratling proposed a simple reformulation of the terms in the PC equations that could describe it as a model of biased competition in visual attention, thus corroborating the interpretation of our finding within the PC framework (Spratling, 2008; Spratling, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "27c68629-15a9-411b-98b8-187395af12e6",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C78",
+      "claim": "Top-down waves prevail in the hemisphere ipsilateral to the attended location and are related to inhibitory functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Top-down waves prevail in the hemisphere ipsilateral to the attended location and are related to inhibitory functions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "0241cdd2-677a-4236-b295-4d5fe4f58e3f",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C79",
+      "claim": "Forward waves reflect ongoing visual processes in the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas forward waves reflect ongoing visual processes in the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "a3f66dcf-6524-49aa-81e0-9bf73ff14140",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C80",
+      "claim": "EEG data were recorded from 16 volunteers (aged 20-32 years old, four women, three left-handed).",
+      "claim_type": "EXPLICIT",
+      "source": "EEG data were recorded from 16 volunteers (aged 20\u201332 years old, four women, three left-handed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participants in the new dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "f405f804-3424-4d5c-b82f-a8b8194c158d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C81",
+      "claim": "All subjects reported normal or corrected-to-normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects reported normal or corrected-to-normal vision",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participants in the new dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "cdc370c2-466f-45f3-9ac2-285235e2b2e5",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C82",
+      "claim": "Participants had no history of epileptic seizures or photosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "and they had no history of epileptic seizures or photosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the participants in the new dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "08cb873c-ef79-442e-ab5c-0ed80017442a",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C83",
+      "claim": "The study protocol was approved by the local ethical committee 'Comit\u00e9 de protection des Personnes Sud M\u00e9diterran\u00e9e 1' (ethics approval number 2019-A02641-56).",
+      "claim_type": "EXPLICIT",
+      "source": "the protocol was approved by the local ethical committee 'Comit\u00e9 de protection des Personnes Sud M\u00e9diterran\u00e9e 1' (ethics approval number 2019-A02641-56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "6079c48c-182f-4c2e-8a42-08babf944ccc",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C84",
+      "claim": "The experiment was composed of 10 blocks of 60 trials each.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment was composed of 10 blocks of 60 trials each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3d97eb21-3265-4f33-b52c-ada6444dfa1c",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C85",
+      "claim": "During each trial, two flickering luminance disks were displayed for 5 s, 9\u00b0 to the left and right from the center of the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "During each trial (described in Figure 1A), two flickering luminance disks were displayed for 5 s, 9\u00b0 to the left and right from the center of the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "f9af6aa6-4923-4c7a-9727-17b444875576",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C86",
+      "claim": "The flicker had a frequency of 160 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The flicker had a frequency of 160 Hz",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "08da639b-5c5d-45ea-8ad7-ff658b5b98e3",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C87",
+      "claim": "A QUEST algorithm modulated the target/distractor luminance percentage to keep participants' performance around 80% throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A QUEST algorithm (Watson and Pelli, 1983) modulated such percentage to keep participants' performance around 80% throughout the experiment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "9aa640ad-ef7d-4cb0-81d7-cf98c69ece2d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C88",
+      "claim": "In half of the trials, a target or a distractor flashed 100 ms inside the attended or non-attended stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In half of the trials, a target or a distractor flashed 100 ms inside the attended or non-attended stimulus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "30aa64a7-15e8-4d58-b9d3-f315395a5ba7",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C89",
+      "claim": "Participants reported whether they saw a target only at each trial's end to prevent motor activity from confounding the EEG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants reported whether they saw a target only at each trial's end to prevent motor activity from confounding the EEG signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "1e0fe5a3-a300-4a0f-a904-d78b20947a53",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C90",
+      "claim": "EEG signals were recorded using a 64-channel active BioSemi EEG system (1024 Hz sampling rate), with three additional ocular electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the experiment, we recorded EEG signals using a 64-channel active BioSemi EEG system (1024 Hz sampling rate), with three additional ocular electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the EEG recording setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "97334490-e954-425f-814b-c3ca19284020",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C91",
+      "claim": "The preprocessing consisted of down-sampling the data to 256 Hz, followed by a high-pass (>1 Hz) and a notch (47-53 Hz) filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The preprocessing consisted of down-sampling the data to 256 Hz, followed by a high-pass (>1 Hz) and a notch (47\u201353 Hz) filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "cb400b4c-5b3d-4ceb-a9fb-1a37a964ec44",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C92",
+      "claim": "All trials in which the EOG signals revealed eye movements were carefully discarded from all analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we carefully discarded from all analyses all trials in which the EOG signals revealed eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality control procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3e794284-a009-4b55-a4f2-6d5a6a0df668",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C93",
+      "claim": "Traveling waves were quantified along 11 lines of seven electrodes, running from occipital to frontal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "we quantified traveling waves' propagation along 11 lines of seven electrodes, running from occipital to frontal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the traveling wave analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "b3308a2d-a4df-48ad-82b7-616b8a25db3b",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C94",
+      "claim": "The power in the lower and upper quadrants of 2D-FFT representations quantifies the amount of waves propagating forward and backward, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "the power in the lower and upper quadrants quantifies the amount of waves propagating forward (FW \u2013 from occipital to frontal electrodes) and backward (BW \u2013 from frontal to occipital), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the traveling wave analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "fbdcf296-43cd-43b3-929c-705664ebfcb7",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C96",
+      "claim": "The waves analysis is limited to the surface level and does not directly inform about the underlying sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this waves analysis is limited to the surface level, and does not directly inform about the underlying sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the analysis method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "2aa83804-8925-4b01-87dc-84b944a9d1fe",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "claim_id": "C97",
+      "claim": "Issues related to long-range connections and distortions due to scalp interference must be kept in mind.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also necessary to keep in mind issues related to long-range connections and distortions due to scalp interference (Nunez, 1974; Alexander et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of EEG analysis supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "661b7f89-840c-4436-9524-14250c46075a",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identifies two functionally distinct alpha-band oscillations propagating in opposite directions during visual attention: top-down (backward) waves from frontal to occipital regions ipsilateral to attended location (present with and without visual stimulation), and forward waves from occipital to frontal regions contralateral to attended location (present only during visual stimulation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6-C10, C32-C34, C65-C67, C78-C79 collectively demonstrate the main finding through converging evidence from three independent datasets (C5, C45-C51). The statistical analyses show strong interaction effects (BF10 = 31.230 for primary dataset, BF10 = 667 for Feldmann-W\u00fcstefeld dataset), and the dissociation between conditions with/without visual stimulation is clearly demonstrated. The lateralization effects are well-documented across multiple analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "780663f1-602a-4bf9-8b76-3c288cce43fb",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Backward (top-down) alpha-band waves correlate positively with alpha-band power in both frontal and occipital regions, while forward waves show no significant correlation with alpha power. However, the lateralization effect in alpha power does not correlate with the lateralization effect in traveling waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 show strong positive correlations between backward waves and alpha power (BF10 values ranging from 19.5 to 117), while C40 demonstrates absence of correlation with forward waves. The trial-by-trial analysis (C42) confirms this pattern. However, C41 and C44 reveal lack of correlation for lateralization effects, which somewhat limits the interpretation but doesn't contradict the main finding about backward waves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "50955098-e9fb-49b6-aac3-62c8f4a69eae",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The spectral profile analysis reveals that alpha-band waves propagate bidirectionally, theta and high-beta/gamma waves propagate predominantly forward (bottom-up), and low-beta waves propagate backward (top-down), with no significant effects in other frequency bands for the attention-related lateralization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 describe the spectral profile findings that are confirmed by the data in Figure 1D. Claims C30-C31 provide supporting evidence from prior literature using different methods. Claim C37 appropriately limits the scope of subsequent analyses to alpha-band. The findings are internally consistent and align with previous research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "e9b3b3b9-c684-4979-a301-e20e676d0915",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Analysis of the Foster et al. dataset (without visual stimulation) demonstrates that covert visual attention modulates top-down oscillatory waves even in the absence of visual stimulation, but forward waves show no lateralization effect without visual stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C50-C51 provide statistical evidence showing lateralization effect for backward waves (BF10 = 3.497) but not forward waves (BF10 = 0.231) in the Foster dataset. Claims C54-C55 correctly interpret this pattern as indicating that forward wave lateralization requires visual stimulation. The interaction effect (C48) shows inconclusive Bayesian evidence (BF10 = 2.056) but significant classical ANOVA results, which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "4a543796-c35b-48dc-a585-34de139110d2",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both targets and distractors elicit contralateral forward waves with no difference between them. However, hit versus miss targets show distinct patterns: missed targets are associated with decreased forward waves and increased backward waves contralateral to attended location, with this pattern visible before target onset, suggesting missed targets result from attentional allocation failure rather than sensory processing failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 demonstrate no difference between targets and distractors (BF10 = 0.206, 0.423). Claims C59-C61 show significant interaction for hits versus misses (BF10 = 4.085) with the pattern visible in Figure 4B. Claims C62-C63 provide a reasonable interpretation that the pre-stimulus pattern indicates attentional rather than sensory failure. The temporal dynamics support this inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "2406617f-8c75-4b00-a26f-a0275c1030af",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replication analysis of the Feldmann-W\u00fcstefeld and Vogel dataset confirms the strong interaction between wave direction and laterality (BF10 = 667), while individual factors show evidence for absence of effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 provide clear statistical evidence from the second dataset replication. The strong interaction effect (BF10 = 667) with weak individual factor effects (BF10 = 0.2 and 0.4) supports the specificity of the directional lateralization finding. This serves as important independent replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The findings support the hypothesis that top-down processes reflected by backward waves drive hemispheric asymmetries in alpha power, and that alpha waves are involved in both distractor suppression (via ipsilateral top-down feedback) and target enhancement (via contralateral bottom-up waves), consistent with prior literature showing distinct alpha-band sources for different cognitive processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71 and C73 provide interpretations well-supported by the data presented in the study. Claims C68-C70 cite relevant prior work that aligns with and supports these interpretations. The mechanistic interpretation is reasonable given the pattern of results, though it remains somewhat speculative. The consistency with multiple prior studies strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "25551c9f-1d80-447f-a243-cfc941a6ad8d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study suggests the hypothesis that target enhancement is reflected in increased contralateral alpha-band forward waves rather than alpha power decrease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is explicitly presented as a speculative hypothesis that the findings do not directly address. While the data on forward waves are consistent with this interpretation, the study lacks direct experimental manipulation or comparison needed to test this specific hypothesis. This represents an interesting direction for future work rather than a supported conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "4c8b8b65-9a0a-439a-a29e-ea02902e1b1d",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that their findings can be explained by a Predictive Coding framework, where a hierarchical model with biologically plausible constraints generates bidirectional traveling waves, with top-down connections having inhibitory functions consistent with the observed backward wave patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 describe a theoretical framework from prior work by the authors and others. While the Predictive Coding model is conceptually consistent with the observed bidirectional waves, the current study does not provide direct evidence testing this specific mechanistic model. The claims appropriately cite prior work but represent theoretical interpretation rather than empirically tested results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study analyzed three datasets (one new with N=16, two published with N=16 and N=31) using a traveling wave analysis method based on 2D-FFT of EEG signals along electrode lines, with appropriate preprocessing and quality control including removal of trials with eye movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C80-C94 provide comprehensive methodological details that are internally consistent and follow standard practices. The sample sizes are appropriate based on power analysis (mentioned in methods), the preprocessing steps are standard, and the quality control (C92) is appropriate. The traveling wave analysis method is clearly described and validated in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "571696f7-deaa-4783-9fa1-8beefeaa0cc0",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge that the traveling wave analysis is limited to surface-level measurements and does not directly inform about underlying sources, with potential issues from long-range connections and scalp interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 appropriately acknowledge important limitations of the EEG-based traveling wave analysis. These are well-known limitations in the field (supported by citations) and the acknowledgment is appropriate and honest about the interpretive constraints of the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "7d4540c8-f102-4d29-b214-e7a8d3544cec",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In the primary dataset ANOVA, all factors and interactions other than DIRECTION \u00d7 LATERALITY showed evidence for absence of effects (BFs10 < 0.3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 reports appropriate null findings from the Bayesian ANOVA, indicating that the effect is specific to the interaction between direction and laterality. This specificity strengthens the main finding by ruling out confounding main effects or other interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    },
+    {
+      "id": "4c32384c-781e-404b-9c24-d9eb3730a39e",
+      "content_id": "f81c3de2-d396-4611-94b9-3125d675051f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In the Foster et al. dataset, correlation between backward waves and frontal alpha power showed inconclusive evidence (BF10 ~ 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 appropriately reports inconclusive Bayesian evidence for this specific correlation in the third dataset. This is a minor negative finding that doesn't contradict the main results but shows some variability across datasets, possibly due to differences in experimental design or reduced statistical power.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:31:15.916746Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d80142a8-e2e3-4147-beb3-9193dc333b3c",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "37f63945-efac-45da-9f71-5d77abef7ff1",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "92ac2e39-174f-4d1d-b16e-a333f3d0bef9",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "156c8a11-3629-4588-823e-18418b191f84",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "eeba1c57-a4f1-4608-8ce6-643af4f14534",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "0cb34ac3-e857-44f0-a3bd-5a56e8aae585",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "60ee33ae-4028-469d-b826-73d09120e0cb",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "0e13a988-caa6-4184-b6ac-1baf08e3a622",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "e32e1f3e-5c75-44a2-9a8d-60d09e188bc3",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "4c902996-f229-4785-b0ef-939b98d67516",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "3b1dccf9-fefd-4f8b-b4b8-2f5b8d296198",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "27c68629-15a9-411b-98b8-187395af12e6",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "0241cdd2-677a-4236-b295-4d5fe4f58e3f",
+      "result_id": "661b7f89-840c-4436-9524-14250c46075a"
+    },
+    {
+      "claim_id": "d7782bb0-8360-41fe-bfb9-c3ac82609577",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "7be10696-6814-452e-993b-53d9602faf8a",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "1754b61a-e821-44dc-ab87-7e6fbb840d31",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "15d711c2-d80d-4cea-addb-2cbfa00b01ca",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "dc5f823e-d0ad-4462-b584-36956f0defe6",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "c4bb0e17-c770-49f0-ae52-7a1d58cd7e23",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "9aecd5aa-eb98-48b7-bc38-2518d0878919",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "a05f8575-8221-4473-bec3-c9c63a8f4fd5",
+      "result_id": "780663f1-602a-4bf9-8b76-3c288cce43fb"
+    },
+    {
+      "claim_id": "7a20650b-79e3-4e06-906e-7b16437faa2b",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "f0981071-bd02-40b5-9fda-5ca574e3e683",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "161b060d-5058-49a0-bbd6-ca3acbd6b263",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "39c8221b-be1f-40cd-8c9c-f56c39b9e5ca",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "7cfaead3-dd5e-4ef0-9155-8270dba58b39",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "0d01f1a4-a42d-42fd-a979-695228f23143",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "077d77c8-3ad0-4561-9051-7d544f805cb4",
+      "result_id": "50955098-e9fb-49b6-aac3-62c8f4a69eae"
+    },
+    {
+      "claim_id": "2d689234-3614-4e79-b762-da534c51742d",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "bca07d29-154c-4576-a9d5-118521158c5f",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "964d8f03-ffcd-4bea-b31b-056b2f5febd7",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "5ad72cc5-5657-4a94-ba7a-06e3708d5c76",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "90cb756c-d1d6-4c0d-a9d9-2b87f2381bf5",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "f12937f4-3259-4419-a4a2-084017c3d5e8",
+      "result_id": "e9b3b3b9-c684-4979-a301-e20e676d0915"
+    },
+    {
+      "claim_id": "3d8d178b-3df2-4b44-8202-4259f3117620",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "17b58fa6-1c36-4ec9-bfe2-8f92b8516a71",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "846cd170-8742-4799-b755-012d77a377db",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "caefbfda-7d80-4037-a2bf-892578686e8d",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "52641103-a66a-4467-aca7-64495224d0d2",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "40ff2862-411d-4df5-958c-3edd9581130f",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "fe4ec21a-557a-4fe7-97b1-7c87d41b63ea",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "56015329-ed92-4352-a9ef-cde1aab6c0c5",
+      "result_id": "4a543796-c35b-48dc-a585-34de139110d2"
+    },
+    {
+      "claim_id": "d133685c-3fe3-4236-8f03-1a5c49718039",
+      "result_id": "2406617f-8c75-4b00-a26f-a0275c1030af"
+    },
+    {
+      "claim_id": "9c8c4395-991f-4a15-9098-f0f29ea403c2",
+      "result_id": "2406617f-8c75-4b00-a26f-a0275c1030af"
+    },
+    {
+      "claim_id": "dae45565-75bd-48e5-bbf4-eb0aeaff2679",
+      "result_id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3"
+    },
+    {
+      "claim_id": "8067c9bb-7e21-4985-a250-d5dee62570c1",
+      "result_id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3"
+    },
+    {
+      "claim_id": "d1d65aae-6241-433b-a081-04588ea1712b",
+      "result_id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3"
+    },
+    {
+      "claim_id": "71c97c4d-1dcc-46b3-8b50-bfc997a2d824",
+      "result_id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3"
+    },
+    {
+      "claim_id": "55d185e8-5a53-4ab5-be53-d9e69320a6aa",
+      "result_id": "8fbed33f-a53c-4077-bba8-d84e24cdc8a3"
+    },
+    {
+      "claim_id": "7a628c17-e0e6-4782-a7b8-d2f50f2b907c",
+      "result_id": "25551c9f-1d80-447f-a243-cfc941a6ad8d"
+    },
+    {
+      "claim_id": "88f768b0-fc0a-48fc-bfff-9e8e445efd92",
+      "result_id": "4c8b8b65-9a0a-439a-a29e-ea02902e1b1d"
+    },
+    {
+      "claim_id": "e367cd2e-339d-46da-aba9-f961229b66fa",
+      "result_id": "4c8b8b65-9a0a-439a-a29e-ea02902e1b1d"
+    },
+    {
+      "claim_id": "0a91368b-8b1d-4026-a5e4-58a6a5a62142",
+      "result_id": "4c8b8b65-9a0a-439a-a29e-ea02902e1b1d"
+    },
+    {
+      "claim_id": "d488d0e4-d6a9-4b72-977f-d4eb7b3d0e50",
+      "result_id": "4c8b8b65-9a0a-439a-a29e-ea02902e1b1d"
+    },
+    {
+      "claim_id": "9356b8ea-793d-43d0-864e-4130f4794147",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "a3f66dcf-6524-49aa-81e0-9bf73ff14140",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "f405f804-3424-4d5c-b82f-a8b8194c158d",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "cdc370c2-466f-45f3-9ac2-285235e2b2e5",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "08cb873c-ef79-442e-ab5c-0ed80017442a",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "6079c48c-182f-4c2e-8a42-08babf944ccc",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "3d97eb21-3265-4f33-b52c-ada6444dfa1c",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "f9af6aa6-4923-4c7a-9727-17b444875576",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "08da639b-5c5d-45ea-8ad7-ff658b5b98e3",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "9aa640ad-ef7d-4cb0-81d7-cf98c69ece2d",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "30aa64a7-15e8-4d58-b9d3-f315395a5ba7",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "1e0fe5a3-a300-4a0f-a904-d78b20947a53",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "97334490-e954-425f-814b-c3ca19284020",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "cb400b4c-5b3d-4ceb-a9fb-1a37a964ec44",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "3e794284-a009-4b55-a4f2-6d5a6a0df668",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "b3308a2d-a4df-48ad-82b7-616b8a25db3b",
+      "result_id": "3e67c100-7b8c-4104-b8b2-1bedf9619c3f"
+    },
+    {
+      "claim_id": "fbdcf296-43cd-43b3-929c-705664ebfcb7",
+      "result_id": "571696f7-deaa-4783-9fa1-8beefeaa0cc0"
+    },
+    {
+      "claim_id": "2aa83804-8925-4b01-87dc-84b944a9d1fe",
+      "result_id": "571696f7-deaa-4783-9fa1-8beefeaa0cc0"
+    },
+    {
+      "claim_id": "f8a6b5ad-f158-496a-99a9-13c27167b077",
+      "result_id": "7d4540c8-f102-4d29-b214-e7a8d3544cec"
+    },
+    {
+      "claim_id": "33e2249d-c8d7-4968-b2f7-9ec62950b49e",
+      "result_id": "4c32384c-781e-404b-9c24-d9eb3730a39e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1607 @@
+{
+  "submission": {
+    "id": "eaf124f4-3d9d-4280-94f8-420fb9a87789",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:27:35.832037Z",
+    "updated_at": "2025-12-03T16:27:35.832037Z"
+  },
+  "content": [
+    {
+      "id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "submission_id": "eaf124f4-3d9d-4280-94f8-420fb9a87789",
+      "content_type": "manuscript",
+      "content_text": "# The centrosomal protein 83 (CEP83) regulates human pluripotent stem cell differentiation toward the kidney lineage\n\n## Authors\n\n- Fatma Mansour<sup>1</sup> ([ORCID: 0000-0003-4808-3514](https://orcid.org/0000-0003-4808-3514))\n- Christian Hinze<sup>1</sup> ([ORCID: 0000-0003-2526-1621](https://orcid.org/0000-0003-2526-1621))\n- Narasimha Swamy Telugu<sup>4</sup>\n- Jelena Kresoja<sup>7</sup>\n- Iman B Shaheed<sup>3</sup>\n- Christian Mosimann<sup>7</sup> ([ORCID: 0000-0002-0749-2576](https://orcid.org/0000-0002-0749-2576))\n- Sebastian Diecke<sup>4</sup>\n- Kai M Schmidt-Ott<sup>1</sup> ([ORCID: 0000-0002-7700-7142](https://orcid.org/0000-0002-7700-7142)) \u2020\n\n### Affiliations\n\n1. Department of Nephrology and Medical Intensive Care, Charit\u00e9-Universit\u00e4tsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n2. Molecular and Translational Kidney Research, Max Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))\n3. Department of Pathology, Faculty of Veterinary Medicine, Cairo University Cairo Egypt ([ROR:03q21mh05](https://ror.org/03q21mh05))\n4. Berlin Institute of Health Berlin Germany ([ROR:0493xsw21](https://ror.org/0493xsw21))\n5. Department of Nephrology and Hypertension, Hannover Medical School Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))\n6. Technology Platform Pluripotent Stem Cells, Max Delbr\u00fcck Center for Molecular Medicine in the Helmholtz Association Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))\n7. Department of Pediatrics, Section of Developmental Biology, University of Colorado School of Medicine, Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring embryonic development, the mesoderm undergoes patterning into diverse lineages including axial, paraxial, and lateral plate mesoderm (LPM). Within the LPM, the so-called intermediate mesoderm (IM) forms kidney and urogenital tract progenitor cells, while the remaining LPM forms cardiovascular, hematopoietic, mesothelial, and additional progenitor cells. The signals that regulate these early lineage decisions are incompletely understood. Here, we found that the centrosomal protein 83 (CEP83), a centriolar component necessary for primary cilia formation and mutated in pediatric kidney disease, influences the differentiation of human-induced pluripotent stem cells (hiPSCs) toward IM. We induced inactivating deletions of CEP83 in hiPSCs and applied a 7-day in vitro protocol of IM kidney progenitor differentiation, based on timed application of WNT and FGF agonists. We characterized induced mesodermal cell populations using single-cell and bulk transcriptomics and tested their ability to form kidney structures in subsequent organoid culture. While hiPSCs with homozygous CEP83 inactivation were normal regarding morphology and transcriptome, their induced differentiation into IM progenitor cells was perturbed. Mesodermal cells induced after 7 days of monolayer culture of CEP83-deficient hiPCS exhibited absent or elongated primary cilia, displayed decreased expression of critical IM genes (PAX8, EYA1, HOXB7), and an aberrant induction of LPM markers (e.g. FOXF1, FOXF2, FENDRR, HAND1, HAND2). Upon subsequent organoid culture, wildtype cells differentiated to form kidney tubules and glomerular-like structures, whereas CEP83-deficient cells failed to generate kidney cell types, instead upregulating cardiomyocyte, vascular, and more general LPM progenitor markers. Our data suggest that CEP83 regulates the balance of IM and LPM formation from human pluripotent stem cells, identifying a potential link between centriolar or ciliary function and mesodermal lineage induction.\n\n## Introduction\n\nDuring mammalian embryonic development, the mesoderm forms axial, paraxial, and lateral plate domains that harbor precursor cells for distinct organ systems. Forming as a major part of the lateral plate mesoderm (LPM), the intermediate mesoderm (IM) harbors progenitor cells of all kidney epithelial cells (Davidson et al., 2019), whereas the remaining LPM contributes progenitors of various cell types, including cells of the cardiovascular system (Prummel et al., 2020). The molecular and cellular mechanisms that drive induction of the IM and distinct LPM domains during embryonic development are not fully understood.\n\nThe centrosomal protein 83 (CEP83) is a component of distal appendages (DAPs) of centrioles. DAPs are involved in the anchoring of the mother centriole to the cell membrane, an early and critical step in ciliogenesis (Lo et al., 2019; Tanos et al., 2013; Yang et al., 2018; Kurtulmus et al., 2018; Wheway et al., 2015; Bowler et al., 2019; Failler et al., 2014; Shao et al., 2020; Mansour et al., 2021). CEP83 recruits other DAP components to the ciliary base, and loss of CEP83 disrupts ciliogenesis (Tanos et al., 2013). In radial glial progenitors, removal of CEP83 disrupts DAP assembly and impairs the anchoring of the centrosome to the apical membrane as well as primary ciliogenesis (Yang et al., 2018; Shao et al., 2020). Mutations of CEP83 in humans have been associated with infantile nephronophthisis (Failler et al., 2014), an early onset kidney disease that results in end-stage renal disease before the age of 3 years (Hildebrandt, 2004; Luo and Tao, 2018) and additional organ anomalies (Failler et al., 2014). To date, how the loss of CEP83 function contributes to aberrant kidney development remains unclear.\n\nHuman-induced pluripotent stem cells (hiPSCs) provide useful tools to study molecular mechanisms of cellular differentiation. Protocols for the induction of kidney organoids from iPSC have been successfully developed (Takahashi et al., 2007; Morizane et al., 2015; Taguchi et al., 2014; Takasato et al., 2015; Freedman et al., 2015; Kumar et al., 2019). The protocol by Takasato et al. uses stepwise exposure of iPSC to WNT and FGF agonists in a monolayer culture system for a 7-day period, which results in the induction of cells with a transcriptional phenotype resembling kidney progenitors in the IM (Takasato et al., 2015). Transfer of these cells to an organoid culture system followed by another series of WNT and FGF signals results in the differentiation of three-dimensional (3D) kidney organoids composed of different kidney cell types, including glomerular and tubular cells. Genome editing studies have previously been used to study the effects of genetic defects associated with kidney diseases on kidney differentiation in human iPSC systems (Freedman et al., 2015; Tan et al., 2018; Boyle et al., 2008; Kobayashi et al., 2008; Howden et al., 2019; Kuraoka et al., 2020). Here, we studied the effect of an induced knockout of CEP83 in human iPSCs on kidney organoid differentiation. We uncovered a novel role of CEP83 in determining the balance of IM versus LPM differentiation, implicating a centrosomal protein in early mesodermal lineage decisions.\n\n## Results\n\n### CEP83 is essential for the differentiation of hiPSCs into kidney cells\n\nTo investigate the effect of CEP83 loss on the differentiation of hiPSCs into IM kidney progenitors, we applied CRISPR-Cas9 technology to induce a null mutation in the CEP83 gene in hiPSCs (Figure 1A). Three hiPSCs clones designated CEP83\u2212/\u2212 (KO1, KO2, and KO3) carried deletions within CEP83 exon 7, each of which led to an induction of a premature stop codon resulting in a predicted truncated protein (Figure 1B\u2013D and Figure 1\u2014figure supplement 1A). These clones exhibited a complete loss of CEP83 protein by immunoblotting (Figure 1E). Three wildtype clones were derived as controls (WT1, WT2, and WT3). All six clones were morphologically indistinguishable (by brightfield microscopy) and had similar overall gene expression profiles (by bulk RNA-seq and qRT-PCR), including pluripotency and lineage marker expression (Figure 1\u2014figure supplement 1B, C, and Figure 1\u2014figure supplement 2A, B). In KO clones, the anticipated altered transcripts of CEP83 were detectable based on bulk RNA-seq (data not shown). Single nucleotide polymorphism - analysis confirmed identical karyotypes of all six clones (Figure 1\u2014figure supplement 2C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental approach to induce a deleting mutation in exon 7 of the CEP83 gene (as described in the methods section). (B) DNA extracted from pooled transfected cells was subjected to PCR, targeting the predicted deletion site in the CEP83 gene. In addition to the 182 bp fragment present in untransfected wildtype (WT) cells, an approximately 120 bp fragment was detected in transfected cells, corresponding to the induced deletion in exon 7. (C) Three clones (CEP83\u2212/\u2212 clones KO1, KO2, KO3) carried 62\u201374 bp deletions within CEP83 exon 7, which led to an induction of premature stop codons or frameshift mutation on both alleles of CEP83. Three wildtype clones (WT1, WT2, and WT3) were used as controls. (D) Quantitative RT-PCR for a fragment corresponding to the deleted region in CEP83 exon 7 produced a detectable signal in RNA extracts from WT clones but not CEP83\u2212/\u2212 clones. (E) Immunoblotting of WT and CEP83\u2212/\u2212 clones using a CEP83 antibody targeting the C-terminal region of the protein (see Methods for details) indicated a complete loss of the 83 KD band corresponding to CEP83 protein in the three KO clones compared with the three WT clones. Data are mean \u00b1 SD.*p<0.05 and **p<0.01 vs. WT. See Figure 1\u2014source data 1 and 2. See also Figure 1\u2014figure supplements 1\u20132.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Alignment of the modified KO clones mRNA and expected amino acid sequences with WT revealed induction of stop codon on both strands of KO1 clone. While KO2 clone shows induction of stop codon on one allele and frameshift mutation within the second allele with 62 bp deletion. KO3 clone sequence shows induction of stop codon on one allele and frameshift mutation with 74 bp deletion in the second allele. (B) Heatmap showing the expression of the top 1000 highly variable genes (see Methods, with a selection of transcripts per million \u226510) within WT (WT1, WT2, and WT3) and CEP83\u2212/\u2212 hiPSCs (KO1, KO2, and KO3) clones. Unbiased hierarchical clustering of clones indicates that gene expression similarity is not driven by WT or KO status. (C) RT-PCR shows no significant differences in the expression of pluripotency markers NANOG, SOX2, and POU5F1 between WT and CEP83\u2212/\u2212 hiPSCs. n=3 hiPSCs clones per group. Data are mean \u00b1 SD. ns, not significant.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) CEP83\u2212/\u2212 hiPSCs clones (KO1, KO2, and KO3) show similar morphology to the WT clones (WT1, WT2, and WT3) under the bright field microscope, scale bar = 200 \u00b5m. (B) Using bulk RNA sequencing data, transcripts per million values for marker genes for pluripotency, ectodermal, mesodermal, and endodermal cells were plotted across the samples (KO1, KO2, KO3, WT1, WT2, and WT3). In addition, gene expression of the six samples was compared to three wildtype hiPSCs (WISCi004-A, also referred to as IMR90-4 iPS derived from female lung fbroblasts) that were previously published (Hariharan et al., 2019). (C) The three WT clones, three KO clones, and the parental population were karyotyped using single nucleotide polymorphism - analysis, demonstrating unaffected integrity of karyotypes. Two aberrations (one gain on Chr3 and one gain on Chr14) present in BIHi005-A were previously reported (https://hpscreg.eu/cell-line/BIHi005-A, Berlin Institute of Health Stem Cell Core Facility).\n\nTogether, these findings confirmed the successful deletion of CEP83 in iPSCs without any overt direct cellular phenotypic consequences. We applied a 7-day monolayer protocol using timed application of WNT and FGF agonists as reported by Takasato et al., 2015 to differentiate WT and KO hiPSCs into IM kidney progenitors (Takahashi et al., 2007; Morizane et al., 2015; Taguchi et al., 2014; Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig2-v2.jpg)\n\n**Figure 2.:** (A) The schematic illustrates the applied differentiation protocol of hiPSCs, as previously described by Takasato et al., 2015. (B\u2013C) WT and CEP83\u2212/\u2212 cells on 7 days of culture (D7) of differentiation did not show overt morphological differences by brighfield microscopy. (D\u2013E) Representative images of WT and CEP83\u2212/\u2212 cells on D7, immunostained for acetylated tubulin (green) and nuclei (DAPI, blue), revealing fewer and elongated cilia in CEP83\u2212/\u2212 cells. (F) Quantitative analysis of the percentage of ciliated cells in WT and CEP83\u2212/\u2212 cells (D7). (G) Quantitative analysis of the ciliary length in WT and CEP83\u2212/\u2212 cells (D7). n=3 clones per group. ****p<0.0001. Bar = 50 \u03bcm. See Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Immunofluorescence staining of wildtype (WT) and CEP83\u2212/\u2212 organoids for acetylated tubulin (green), CEP83 protein (red), and nuclear staining 4',6-diamidino-2-phenylindole dihydrochloride (DAPI). Note CEP83 localization at the base of the cilium in WT organoids. (B) Quantitative analysis of ciliated cells showing downregulation of the number of ciliated cells in CEP83\u2212/\u2212 organoids, associated with longer cilium formation (C). n=3 clones per group. Data are mean \u00b1 SD. ****p<0.0001. Panel A\u2013B: Bar = 50 \u03bcm.\n\nAfter 7 days of culture (D7), WT and KO cells exhibited an indistinguishable morphology by bright field microscopy (Figure 2B and C). Immunostaining for acetylated tubulin, however, indicated abnormal primary cilia formation in CEP83-deficient cells (Figure 2D and E). The number of ciliated cells was reduced from approximately 30% (in WT clones) to less than 10% (in KO clones) (Figure 2F). Among ciliated cells, the length of cilia was increased from 2 to 5 \u00b5m (in WT clones) to 5\u201313 \u00b5m (in KO clones) (Figure 2G). This indicated that CEP83\u2212/\u2212 hiPSCs differentiated toward IM progenitors exhibited ciliary abnormalities. To analyze the induced IM kidney progenitor cells functionally, we collected D7 WT and CEP83\u2212/\u2212 cells and placed them into an organoid culture system again applying timed WNT and FGF agonists to foster differentiation of mature kidney cell types, as previously reported (Takasato et al., 2015; Figure 2A). Organoids harvested from WT clones after a total of 25 days of culture (D25) had formed patterned kidney epithelial-like structures, including NPHS1-positive glomerulus-like structures, Lotus tetragonolobus lectin-positive proximal tubule-like, and E-cadherin (CDH1)-positive distal tubule-like structures (Figure 3A, C and E, and Figure 3\u2014figure supplement 1). In contrast, CEP83\u2212/\u2212 organoids at day 25 were composed of monomorphic cells with a mesenchyme-like appearance, which stained negative for an array of kidney cell markers (Figure 3B, D and F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Brightfield images of organoids after a total of 25 days of culture (D25) indicate the formation of multiple kidney-like structures in WT organoids (A), whereas CEP83\u2212/\u2212 organoids are composed of uniform clusters (B). (C, D) Representative images of hematoxylin-eosin\u2013stained sections of organoids. WT organoids (C) display glomerulus-like (yellow arrows) and tubular (red arrow) components, whereas CEP83\u2212/\u2212 organoids (D) are composed of monomorphic mesenchymal-like cells. (E\u2013F) Whole mounting immunostaining of organoids for NPHS1 (podocyte marker), LTL (proximal tubule marker), and CDH1 (distal tubule marker) indicates segmented nephron-like structures in WT organoids (E), and the absence of such structures in CEP83\u2212/\u2212 organoids (F). (G) Quantitative analysis of brightfield images indicating the estimated percentage of organoid area composed of nephron-like structures, organoids were collected from three different experiments. (H\u2013L) Gene expression (transcripts per million [TPM]) of NPHP1 (H), LRP2 (I), HNF1B (J), PAX2 (K), and PAX8 (L) in WT and CEP83\u2212/\u2212 cells at the indicated time points based on bulk RNA sequencing. n=3 clones per group. Data are mean \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. ns = not significant. Panels A\u2013F: Bar = 50 \u03bcm. See Figure 3\u2014source data 1 and 2. See also Figure 3\u2014figure supplements 1\u20132.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Bar = 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Heatmap displaying the expression of the top 1000 highly variable genes (see Methods, transcripts per million [TPM] \u226510) using bulk RNA within WT (WT1, WT2, WT3) and CEP83\u2212/\u2212 (KO1, KO2, KO3) organoids. Hierarchical clustering of clones indicating that global gene expression is profoundly different in WT and KO organoids. Ontology analysis of the biological processes (BPs) using the top 100 downregulated genes (based on fold change values) in CEP83\u2212/\u2212 organoids (TPM >2, fold change >1.5, p-value calculated on log10 TPM <0.05) using DOSE and cluster profile packages in R2. The analysis shows downregulation of many BPs associated with kidney development in CEP83-mutated organoids, as shown in the dot plot (B). Bulk RNA sequencing shows downregulation of specific renal epithelial cells marker genes at day 25, including (C\u2013E) PODXL, WT1, and PTPRO for podocytes, (F\u2013 H) EPCAM, EMX2, and MAL2 marker genes for the distal nephron precursor cells. RT-PCR confirms that the expression of some nephron markers, including (I) NPHS1 (podocytes), (J) CUBN (proximal tubules), and (K) GATA3 (distal tubules and collecting duct) was significantly downregulated in CEP83\u2212/\u2212 organoids. n=3 clones per group. Data are mean \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. ns = not significant.\n\nKidney epithelial-like structures formed only in WT but not in CEP83\u2212/\u2212 organoids (Figure 3G). Similar to the findings in day 7 cells reported above, primary cilia were found in fewer cells of CEP83\u2212/\u2212 organoids (<5% of cells) and were abnormally elongated (Figure 2\u2014figure supplement 1).\n\nNext, bulk RNA sequencing of WT (WT1, WT2, WT3) and CEP83\u2212/\u2212 (KO1, KO2, KO3) organoids was carried out to evaluate differential gene expression on a genome-wide level, and RT-PCR was used to validate selected genes. Hierarchical clustering of the samples indicated strong gene expression differences between WT and CEP83\u2212/\u2212 samples (Figure 3\u2014figure supplement 2). Several genes associated with kidney development and kidney epithelial differentiation were differentially expressed with high expression in WT organoids but showed comparatively low or absent expression in CEP83\u2212/\u2212 organoids: these genes included kidney-specific lineage genes (PAX2, PAX8), and lineage/differentiation markers of glomerular cells (NPHS1, PODXL, WT1, PTPRO), proximal (HNF1B, LRP2, CUBN), and distal (EMX2, MAL2, EPCAM, GATA3) kidney epithelial cells (Figure 3H\u2013L, Figure 3\u2014figure supplement 2). This indicated that CEP83\u2212/\u2212 IM progenitors failed to differentiate into kidney cells, suggesting that CEP83 function is necessary to complete essential steps in the process of differentiation from pluripotent stem cells to kidney cells.\n\n### CEP83 deficiency associates with molecular defects of nephron progenitor cells\n\nWe next aimed to gain molecular insights into the lineage impact of CEP83 deficiency during the course of kidney epithelial differentiation. Since no global transcriptomic differences were detectable between WT and CEP83\u2212/\u2212 hiPSCs prior to differentiation (see above), we focused on mesodermal cell stages induced at D7, which displayed mild overall gene expression differences between WT- and CEP83-deficient cells as detected by bulk RNA sequencing (Figure 4\u2014figure supplement 1).\n\nA marked upregulation of nephron progenitor marker genes (GATA3, HOXB7, HOXD11, EYA1) (Bilous et al., 1992; Grote et al., 2006; Kress et al., 1990; Srinivas et al., 1999; Wellik et al., 2002; Mugford et al., 2008a; Ruf et al., 2004; Sajithlal et al., 2005) was observed in both WT and CEP83\u2212/\u2212 cells at day 7 (Figure 4\u2014figure supplement 2), suggesting that the differentiation path of pluripotent CEP83\u2212/\u2212 cells to IM nephron progenitors was largely intact. To understand the potential molecular defects at the IM stage in more detail, we performed single-cell RNA (scRNA) sequencing on D7 WT and CEP83\u2212/\u2212 cells (representing two different hiPSC clones for each condition differentiated in two separate experiments). We obtained transcriptomes from 27,328 cells, representing clones WT1 (experiment 1: 3768 cells), WT2 (experiment 2: 5793 cells), KO1 (experiment 1: 8503 cells), and KO2 (experiment 2: 9264 cells). Principal component analysis (PCA) using pseudo-bulk expression data of the top 1000 highly variable genes (HVGs) indicated that the first principal component (dimension 1, explaining 54% of expression variation) was driven by the genotype (WT vs. KO), while the second principal component (dimension 2, explaining 51% of expression variation) was driven by a batch effect of the two experiments (Figure 4A). We combined all cells and generated a uniform manifold approximation and projection plot uncovering 10 different cell states/clusters (0\u20139; Figure 4B). We identified marker genes for each cluster (Figure 4C), indicating that clusters 1, 3, and 4 represented kidney progenitors/nascent nephrons (expressing, e.g., PAX8, EYA1, HOXB7) in different phases of the cell cycle. Other clusters represented as-of-yet uncharacterized cell types, which were consistent with previous single-cell transcriptome analyses from iPSC-derived cells induced by the same induction protocol (Subramanian et al., 2019; Low et al., 2019). Each of the four samples (WT1, WT2, KO1, and KO2) contributed to each cluster (Figure 4D). However, one cluster representing damaged cells (cluster 5) was observed at numerically higher percentages in KO cells compared to WT cells. Cluster 5 cells expressed high levels of mitochondrial RNAs, and staining for active caspase 3 demonstrated an increased percentage of apoptotic cells in KO samples compared to controls (Figure 4\u2014figure supplement 3). We focused on kidney progenitors (clusters 1, 3, and 4) and found that a numerically lower percentage of KO cells (11.9 and 12.5% in KO clones) contributed to cluster 1 when compared with WT cells (25.9 and 36.3% in WT clones) (Figure 5A). In contrast, similar percentages of WT and KO cells were represented in kidney progenitor clusters 3 and 4 (Figure 5B and C). Differential gene expression analysis in these three clusters indicated significantly lower expression of kidney progenitor markers PAX8, EYA1, CITED1, and HOXB7 in KO cells from clusters 1, 3, and 4 when compared to WT cells (Figure 5D, E and F; Figure 5\u2014figure supplements 1\u20132). Interestingly, scRNA sequencing data also showed downregulated expression of genes encoding ciliary proteins, including OFD1, PCM1, and RAB11A (Ferrante et al., 2006; Dammermann and Merdes, 2002; Kn\u00f6dler et al., 2010; Figure 5\u2014figure supplement 3), consistent with the ciliogenesis defects in CEP83 knockout cells. These results indicate that CEP83 deficiency remained permissive with initial kidney progenitor induction, but that these cells exhibited mild molecular defects detectable by differential expression of kidney progenitor genes, which potentially contributed to the failure of CEP83-deficient cells to further differentiate toward mature kidney cell types.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig4-v2.jpg)\n\n**Figure 4.:** (A) Principal component analysis (PCA) of WT (WT1, WT2) and CEP83\u2212/\u2212 (KO1, KO2) cells at day 7 using the average gene expression of the top highly variable 1000 genes in pseudo-bulk scRNA sequencing data. The % variation explained by each PCA axis is indicated in brackets. (B) PCA eigenvalues indicate that the principal components, Dim 1 (54%) and Dim 2 (31.3%), account for 85.3% of the expression differences. Dim 1 separates the WT samples from the KO samples, while Dim 2 separates experiment 1 (WT1, KO1) from experiment 2 (WT2, KO2). (B) Uniform manifold approximation and projection (UMAP) of scRNA-seq profiles from 27,328 cells from two wildtype clones (WT1, WT2) and two CEP83\u2212/\u2212 clones (KO1, KO2) derived from two separate experiments (experiment 1: WT1, KO1; experiment 2: WT2, KO2). Unbiased clustering resulted in 10 clusters, and (C) dot plots show expression of selected marker genes of each cluster. (D) UMAP plots for WT and KO samples show the distribution of all clusters per sample (N=2 per group) in B\u2013D. See Figure 4\u2014figure supplements 1\u20133. Source data is available as described in section (Data availability).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Heat map of bulk RNA-seq data showing the most highly variable 1000 genes (see Methods, maximum transcripts per million \u226510) within wildtype (WT1, WT2, and WT3) and CEP83\u2212/\u2212 (KO1, KO2, and KO3) clones at day 7 of differentiation. Unbiased hierarchical clustering of clones separates CEP83\u2212/\u2212 and WT transcriptomes. (B) Principal component analysis (PCA) of WT (WT1, WT2, WT3) and CEP83\u2212/\u2212 (KO1, KO2, KO3) cells at day 7 using the average gene expression of the top highly variable 1000 genes in bulk RNA sequencing data. The % variation explained by each PCA axis is indicated in brackets. PCA eigenvalues indicate that the principal components, Dim 1 (52%) and Dim 2 (20.8%), account for 85.3% of the expression differences. Dim 1 separates the KO1 sample from the other samples, while Dim 2 separates experiment 1 (WT1, WT2, WT3) and (KO1, KO2, KO3).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) mRNA expression of CEP83 was significantly downregulated in the CEP83\u2212/\u2212 clones on day 7. The expression was investigated in bulk RNA seq data and confirmed by RT-PCR. (B\u2013C) Using bulk RNA sequencing data, the expression of ureteric bud marker genes including GATA3 and HOXB7 shows no significant change between WT and mutated cells at days 0, 7, and 25. While, (C\u2013D) MM marker genes including HOXD11 and EYA1 show no significant difference between WT and CEP83\u2212/\u2212 cells on days 0, 7, and 25 except EYA1 show significant downregulation in the mutated cells on day 25. n=3 clones per group. Data are mean \u00b1 SD. *p<0.05 and **p<0.01. ns = not significant.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Single-cell RNA sequencing data shows that the cell proportion of damaged cells (cluster 5) in the wildtype samples (WT1, WT2) is numerically lower than that in CEP83\u2212/\u2212 cells (KO1, KO2). (B, C) Feature plots of the percentage of mitochondrial RNAs (percent.mt) in WT and CEP83\u2212/\u2212 cells demonstrating an upregulation in cluster 5. (D, E, F) Staining of day 7 cells for active caspase 3 indicates significantly more apoptotic cells in CEP83\u2212/\u2212 compared to WT cells. n=2 clones per group in A\u2013E, and n=3 clones per group in F\u2013H. ****p<0.0001. Panel D\u2013E: Bar = 50 \u03bcm.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig5-v2.jpg)\n\n**Figure 5.:** (A, B, C) Proportions of cells from kidney progenitor clusters 1 (A), 3 (B), and 4 (C) among wildtype (WT1, WT2) and CEP83\u2212/\u2212 (KO1, KO2) cells. (D, E, F) Violin plots of gene expression of kidney progenitor genes PAX8 (D), EYA1 (E), and HOXB7 (F) within kidney progenitor clusters 1, 3, and 4 comparing wildtype (WT) and CEP83\u2212/\u2212 (KO) cells. N=2 per group. *p<0.05 and ****p<0.0001. Figure 5\u2014figure supplements 1\u20132. Source data is available as described in section (Data availability).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Please note downregulated expression of nephron progenitor genes PAX8, EYA1, and HOXB7 in clusters 1, 3, and 4 (marked in red) in CEP83\u2212/\u2212 cells.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** N=2 per group. ****p<0.0001.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The three genes are essential for primary cilium formation, and their loss results in defective ciliogenesis (Mugford et al., 2008b; Mae et al., 2013; Mahlapuu et al., 2001). Data are derived from two biological replicates per group. ****p<0.0001.\n\n### CEP83 deficiency promotes ectopic induction of lateral plate mesoderm-like cells followed by an expansion of cardiac and vascular progenitors\n\nWe next inspected single-cell transcriptomes and bulk RNA sequencing data from D7 cells for genes that were upregulated in CEP83\u2212/\u2212 cells compared to WT cells. From this analysis, we observed a consistent upregulation of genes that are normally expressed in early LPM, including OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, CXCL12, GATA5, and GATA6 (Prummel et al., 2020; Mugford et al., 2008b; Mae et al., 2013; Mahlapuu et al., 2001; Ormestad et al., 2004; Wilm et al., 2004; Wotton et al., 2008; Grote et al., 2013; Schindler et al., 2014; Tsuchihashi et al., 2011; McFadden et al., 2005; Firulli et al., 1998; Risebro et al., 2006; Angelo et al., 2000; Perens et al., 2016; Salcedo and Oppenheim, 2003; Liekens et al., 2010; Loh et al., 2016; Koutsourakis et al., 1999; Holtzinger and Evans, 2007; Reiter et al., 1999; Pikkarainen et al., 2004; Laverriere et al., 1994; Zhao et al., 2008; Prummel et al., 2021; Figure 6A\u2013I). This suggested that CEP83\u2212/\u2212 cells entered an aberrant differentiation path assuming a phenotype indicative of broader LPM instead of more specific IM. To further substantiate this idea, we restricted the analysis to progenitor cells of clusters 1, 3, and 4 and to cells from cluster 0, which exhibited a mesenchymal transcriptome fingerprint (see Figure 4C). Within each cell, we analyzed the expression of LPM markers (FOXF1, HAND1, HAND2, and CXCL12) and of more restricted IM markers (PAX8, EYA1, and HOXB7) (Figure 6\u2014figure supplement 1). This analysis indicated that WT cells of these clusters exhibited an IM-like phenotype, while KO cells were shifted toward an LPM-like phenotype. The common IM/LPM marker OSR1 was expressed at higher level in KO cells comparing to the WT cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013I) Expression of early LPM markers OSR1 (A), FOXF1 (B), FOXF2 (C), FENDRR (D), HAND1 (E), HAND2 (F), CXCL12 (G), GATA5 (H), and GATA6 (I) in wildtype (WT) and CEP83\u2212/\u2212 cells at day 0 (D0), day 7 (D7), and day 25 (D25) according to bulk RNA-sequencing (left panels) and at D7 according to single-cell RNA (scRNA) sequencing (right panels). N=3 clones per group for bulk RNA seq. N=2 clones per group for scRNA-seq. Expression units are mean transcripts per million (TPM) \u00b1 SD. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. ns = not significant. See Figure 6\u2014figure supplements 1\u20133. See also Figure 6\u2014source data 1. Check data availability section for other source data.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The heatmap shows that the log fold change of the average expression (default setting in Seurat package) of LPM and intermediate mesoderm (IM) genes in the WT cells (8123 cells) and the knockout cells (10,431 cells) derived from the mesenchyme cells cluster (cluster 0) and the three nascent nephron clusters (1, 3, and 4). Scoring for cells expression for both LPM including: FOXF1, HAND1, HAND2, and CXCL12, and IM genes including: PAX8, EYA1, and HOXB7 were done in R. Each cell was scored 0\u20134 for LPM genes expression. 0, 1, 2, 3, and 4 mean that cell express no LPM genes, 1 gene, 2 genes, 3 genes, and 4 genes, respectively. Statistical analysis comparing LPM scores for WT and KO cells using wilcoxon rank sum test showed that KO cells significantly upregulate the expression of LPM genes. The same scoring analysis was done for the expression of the IM genes, where the cells got a score from 0 to 3 for IM genes expression. Interestingly, the KO cells showed significant downregulation of the IM genes expression.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The expression of the upregulated genes by CEP83\u2212/\u2212 organoids on day 25 was compared with the top 20 genes per cluster of zebrafish LPM scRNA data (Prummel et al., 2020). The analysis showed significant enrichment (A), with 11 zebrafish genes overlapped with 10 human genes (B). (C, D, and E) show the significant upregulation of three overlapped genes with zebrafish LPM including KCTD12, PIK3R3, and ZBTB2, respectively. n=3 clones per group. Data are mean \u00b1 SD. *p<0.05, and **p<0.01. ns = not significant.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Bulk RNA sequencing data shows significant upregulation of (A) GLI1, and (B) PTCH1, at days 0, 7, and 25. n=3 clones per group. Data are mean \u00b1 SD. *p<0.05, **p<0.01, and ***p<0.001. ns = not significant.\n\nWe then inspected RNA-seq data from WT and KO organoids at day 25 for the expression of LPM genes and markers of LPM derivatives. The expression of several LPM genes (OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, and CXCL12) was strongly upregulated in KO cells compared to WT cells suggesting that an LPM-like cell pool persisted in D25 KO organoids (Figure 6A\u2013I). To further substantiate the potential differentiation of the CEP83-mutant cells into broadly LPM-like cells, we compared genes that were upregulated genes in D25 organoids (in total, 397 genes) with LPM genes that were previously identified by single-cell transcriptomics of sorted post-gastrulation LPM cells from developing zebrafish (Prummel et al., 2021; Prummel et al., 2020; Prummel et al., 2022). Our targeted comparison documented that CEP83\u2212/\u2212 organoids showed significant enrichment for expression of orthologs of early LPM genes (p=0.006) (Figure 6\u2014figure supplement 2), including OSR1, CXCL12, HAND1/2, KCTD12, PIK3R3, and ZBTB2. A subset of LPM genes enriched for expression in CEP83-mutant cells at D25 of differentiation was indicative of cardiac or cardiopharyngeal (ISL1, TBX1) as well as vascular progenitor (SOX7, SOX11, NAP1L3, LMO2, GATA2) differentiation (Morikawa and Cserjesi, 2004; Cai et al., 2003; Kwon et al., 2009; Laugwitz et al., 2005; Moretti et al., 2006; Gao et al., 2019; Stennard and Harvey, 2005; Baldini, 2005; Chen et al., 2009; Figure 7A\u2013G, Figure 6\u2014figure supplement 2). Interestingly, three genes of the upregulated LPM genes, namely OSR1, FOXF1, and FOXF2, are downstream genes of hedgehog signaling (Han et al., 2017; Kugler et al., 2015). In addition, HAND2 is upstream of hedgehog signaling (Anderson et al., 2012), essential for early embryonic development and regulated by primary cilium (Kugler et al., 2015). Furthermore, bulk RNA sequencing data showed significant upregulation of hedgehog signaling components GLI1 and PTCH1 in CEP83\u2212/\u2212 cells (Lee et al., 1997; Villavicencio et al., 2000; Figure 6\u2014figure supplement 3).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013G) Expression of cardiomyocyte markers ISL1 (A), TBX1 (B), and vascular progenitor markers SOX7 (C), SOX11 (D), NAP1L3 (E), LMO2 (F), and GATA2 (G) in wildtype (WT) and CEP83\u2212/\u2212 cells at day 0 (D0), day 7 (D7), and day 25 (D25) according to bulk RNA-sequencing. N=3 clones per group for bulk RNA seq. Expression units are mean transcripts per million (TPM) \u00b1 SD. *p<0.05, and **p<0.01. ns = not significant. See Figure 6\u2014figure supplement 2. See also Figure 7\u2014source data 1. Check the data availability section for other source data.\n\nTaken together, these observations document that hiPSCs deficient in CEP83 respond to an in vitro differentiation program toward kidney progenitors, yet diverge toward a broader LPM progenitor composition without significant IM instead.\n\n## Discussion\n\nThis study indicates a novel contribution of CEP83 in regulating the differentiation path from human pluripotent stem cells to kidney progenitors. We pinpoint a stage at day 7 of IM induction where CEP83 loss of function results in a decreased nephron progenitor pool with downregulation of critical kidney progenitor genes (PAX8, EYA1, HOXB7). At the same stage, genes typical of LPM specification (including FOXF1, FOXF2, FENDRR, HAND1, and HAND2) are upregulated (Figure 8). Functionally, these alterations are associated with an inability of CEP83-deficient cells to form kidney epithelia. Organoids derived from CEP83-deficient cells fail to induce any detectable nephron structures, suggesting a novel role for CEP83 during the specification of functional kidney progenitors in the mesoderm.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/80165/elife-80165-fig8-v2.jpg)\n\n**Figure 8.:** IM, intermediate mesoderm; LPM, lateral plate mesoderm.\n\nOur findings are relevant to understanding the cellular and molecular functions of CEP83 and might be relevant to the pathophysiology of human genetic diseases. To date, 11 patients with biallelic mutations of CEP83 have been reported, 8 of which displayed kidney phenotypes (Failler et al., 2014; Veldman et al., 2021; Haer-Wigman et al., 2017). Available kidney histologies identified microcystic tubular dilatations, tubular atrophy, thickened basement membranes, and interstitial fibrosis.\n\nExtrarenal phenotypes included speech delay, intellectual disability, hydrocephalus, strabismus, retinal degeneration, retinitis pigmentosa, hepatic cytolysis, cholestasis, and portal septal fibrosis with mild thickening of arterial walls and an increase in the number of the biliary canalicules on liver biopsy. Among individuals with CEP83 mutations, all but one carried at least one missense mutation or short in-frame deletion, suggesting that CEP83 function may have been partially preserved. One individual with presumed full loss of CEP83 displayed a more severe phenotype with multiple organ dysfunction. It will be interesting to await future reports of additional CEP83 mutations in humans and whether complete loss of function alleles will result in broader mesoderm defects or renal agenesis. In this regard, it is interesting that mice with a targeted homozygous loss-of-function mutation of their CEP83 ortholog (Cep83tm1.1(KOMP)Vlcg) display midembryonic lethality (at E12.5) with evidence of severe developmental delay as early as E9.5 (https://www.mousephenotype.org/data/genes/MGI:1924298). These phenotypes are potentially consistent with the role of CEP83 in germ layer patterning and mesoderm development, but a more detailed phenotypical characterization of Cep83 knockout embryos would be required to substantiate this possibility.\n\nThe precise molecular and cellular mechanisms underlying our observations remain to be determined. CEP83 is a protein that is necessary for the assembly of DAPs and primary cilia formation in several cell types (Tanos et al., 2013; Yang et al., 2018; Shao et al., 2020; Kumar et al., 2021; Stinchcombe et al., 2015; Joo et al., 2013). A potential involvement of CEP83-mediated primary cilia formation in the findings reported here is suggested by obvious ciliary defects in CEP83-deficient cells at the D7 and the organoid stage (Figure 2D\u2013G, Figure 2\u2014figure supplement 1). These defects include reduced percentages of ciliated cells and elongated primary cilia in those cells that continue to form a primary cilium. In addition, CEP83-deficient cells displayed downregulated expression of several transcripts encoding ciliary components (Figure 5\u2014figure supplement 3) and evidence of an activation of several hedgehog signaling associated genes. The primary cilium is critically involved in hedgehog signaling (Ho and Stearns, 2021). Moreover, Hedgehog signaling is important for mesodermal lineage decisions during gastrulation (Guzzetta et al., 2020). This raises the possibility that CEP83 controls mesodermal cell fate decisions by modulating hedgehog signaling in the mesoderm. Nevertheless, additional studies will be necessary to address this possibility. In addition, it remains unknown whether abnormal cilia formation in CEP83-deficient cells causally contributes to the cell fate phenotype.\n\nWe observed downregulated expression of the key nephron progenitor genes PAX8, EYA1, and HOXB7 in CEP83\u2212/\u2212 cells at day 7, which might explain their failure to differentiate into kidney cells since each of these genes is essential for normal kidney development (Vincent et al., 1997; Pfeffer et al., 1998; Kumar et al., 1998; Bouchard et al., 2002; Xu et al., 1999; Patterson and Potter, 2004; Rojek et al., 2006). Furthermore, inductive signals from HOXB7-positive ureteric bud are known to maintain viability of nephron progenitor cells in the IM (Barasch et al., 1997), which may contribute to increased numbers of apoptotic cells we observed in CEP83\u2212/\u2212 cells. Defects during nephron progenitor differentiation in the IM would be expected to result in severe kidney phenotypes such as renal agenesis or renal hypodysplasia. Defects of centriolar components or cilia have previously been linked to such phenotypes: in mice, centrosome amplification, i.e., the formation of excess centrosomes per cell severely disrupts kidney development, resulting in depletion of renal progenitors and renal hypoplasia (Dionne et al., 2018). In humans, loss of KIF14, a protein necessary for proper DAP assembly and cilium formation, has been associated with kidney malformations, including renal agenesis and renal dysplasia (Filges et al., 2014; Reilly et al., 2019; Pejskova et al., 2020). Furthermore, Kif3a, a ciliary protein involved in intraflagellar transport, is necessary for normal mesoderm formation, and kidney progenitor-specific defects of Kif3a have been associated with reduced nephron numbers (Takeda et al., 1999; Chi et al., 2013). Similarly, mouse genes encoding the ciliary intraflagellar transport proteins IFT25 and IFT27 have been associated with renal agenesis or renal hypoplasia (Desai et al., 2018; Qu\u00e9lin et al., 2018). Together, these studies highlight the importance of molecules involved in ciliogenesis for mesoderm and kidney progenitor development and suggest that CEP83 contributes to such processes by facilitating an early step of ciliogenesis. Nevertheless, the detailed molecular processes that link CEP83 function, cilia formation, and kidney progenitor specification remain to be determined.\n\nThe finding of various upregulated LPM markers in CEP83\u2212/\u2212 cells starting from day 7 suggests that CEP83 function may be involved in fine-tuning the balance of LPM and IM, thereby contributing to lineage decisions during mesoderm formation. Crosstalk of LPM and IM has been reported previously in zebrafish, overexpression of LPM transcription factors Scl/Tal1 and Lmo2 induces ectopic vessel and blood specification while inhibiting IM formation (Gering et al., 2003). Furthermore, the LPM transcription factor Hand2 is critical in determining the size of the IM, while natively expressed in the IM-adjacent LPM progenitors that form mesothelia (Barbosa et al., 2007Perens et al., 2016; Prummel et al., 2022). Loss of Hand2 in zebrafish results in an expanded IM, whereas Hand2 overexpression reduces or abolishes the IM. Interestingly, HAND2 was among the most strongly induced transcripts in our CEP83\u2212/\u2212 cells at day 7; connecting with the developmental role of Hand2 in IM formation, these observations suggest that HAND2 expression in CEP83-deficient cells may have contributed to the reduced numbers of nephron progenitor cells at this stage. Of note, CEP83-deficient cells at D25 expressed increased levels of LPM genes expressed in mesothelial (including OSR1, CXCL12, HAND1/2), cardiopharyngeal (including ISL1, TBX1), and endothelial/hematopoietic (including TAL1, LMO2, GATA2) progenitors (Prummel et al., 2020; Prummel et al., 2022). In sum, we propose a novel role for CEP83 in regulating the development of IM nephron progenitors, which may involve direct effects of CEP83 in the nephron progenitor differentiation program and indirect LPM-mediated effects on the IM. Future studies are warranted to delineate the molecular and cellular mechanisms underlying CEP83 function in LPM and specifically IM patterning.\n\n## Materials and methods\n\n### hiPSCs cell line\n\nWe used the human iPSC cell line BIHi005-A, which was generated by the Berlin Institute of Health (BIH). The hiPSCs were maintained in six-well plates (Corning, 353046) coated with Matrigel (Corning, 354277) and cultured in Essential 8 medium (E8, A1517001, Gibco-Thermo Fisher Scientific) supplemented with 10 \u00b5M Y-27632 (Rocki, Wako, 253\u201300513). Cells were authenticated and tested for the mycoplasma infection.\n\n### CRISPR CAS9 technology to generate CEP83\u2212/\u2212 hiPSCs clones\n\nClustered regularly interspaced short palindromic repeats (CRISPR)-Cas9 technology was used to generate CEP83\u2212/\u2212 hiPSCs clones. We designed two CRISPR RNAs (crRNAs) (5'-GGCTGAAGTAGCGGAATTAA-AGG-3' and 5'-AAGAATACAGGTGCGGCAGT-TGG-3') using CRISPOR software (Concordet and Haeussler, 2018). The two crRNAs were annealed with trans-activating CRISPR RNA (tracrRNA) to form two guide RNAs (gRNA1 and gRNA2) and then formed a ribonucleoprotein (RNP) complex by incubating gRNA1 and gRNA2 separately with Alt-R S.p. Cas9 Nuclease V3 (1 \u03bcM concentration, IDT, 1081058). The hiPSCs were transfected with RNP complexes using Neon transfection system (Thermo Fisher Scientific, MPK5000; Yumlu et al., 2017) and Neon transfection 10 \u03bcl kit (Thermo Fisher Scientific, MPK10025) according to the manufacturer\u2019s instructions. After 48 hr of transfection, we analyzed the editing efficiency in the pool by PCR genotyping.\n\nFor PCR genotyping, we isolated genomic DNA from the pool of transfected cells followed by PCR using Phire Tissue Direct PCR Master Mix (Thermo Scientific, F170S) according to the manufacturer\u2019s instructions (Figure 1B). After confirming the editing efficiency in the pool, we generated single-cell clones by the clonal dilution method. We plated 500 single cells per well of a 6 well plate and picked 24 clones using a picking hood S1 (Max Delbr\u00fcck Centre Stem Cell Core Facility). Then, clones were screened for homozygous deletions of CEP83 by PCR using Phire Tissue Direct PCR Master Mix. Selected knockout clones were further characterized for CEP83 loss of function on the DNA, RNA, and protein level. CEP83\u2212/\u2212 clones (KO1, KO2, and KO3) were registered as (BIHi005-A-71, BIHi005-A-72, and BIHi005-A-73) in the European Human Pluripotent Stem Cell Registry (https://hpscreg.eu).\n\n### Single nucleotide polymorphism - karyotype\n\nTo assess karyotype integrity, copy number variation (CNV) analysis on the human Illumina OMNI-EXPRESS-8v1.6 BeadChip was used. In brief, genomic DNA was isolated from three WT (WT1, WT2, and WT3) and three KO (KO1, KO2, and KO3) clones using the DNeasy blood and tissue kit (Qiagen, Valencia, CA, United States), hybridized to the human Illumina OMNI-EXPRESS-8v1.6 BeadChip (Illumina), stained, and scanned using the Illumina iScan system according to a standard protocol (LaFramboise, 2009; Arsham et al., 2017; Haraksingh et al., 2017). The genotyping was initially investigated using the GenomeStudio 1 genotyping module (Illumina). Following that, KaryoStudio 1.3 (Illumina) was used to perform automatic normalization and identify genomic aberrations in detected regions by generating B-allele frequency and smoothed Log R ratio plots. To detect CNVs, the stringency parameters were set to 75 kb (loss), 100 kb (gain), and CN-LOH (loss of heterozygosity). KaryoStudio generates reports and displays chromosome, length, list of cytobands, and genes in CNV-affected regions.\n\n### Differentiation protocol\n\nWe used the protocol of Takasato to differentiate the hiPSCs into nephron organoids (Takasato et al., 2015). Briefly, hiPSCs were cultured first in APEL2 medium (Stem Cell Technologies, 05270) supplemented with 5% Protein Free Hybridoma Medium II (PFHMII, GIBCO, 12040077), and 8 \u03bcM CHIR99021 (R&D, 4423/10) for 5 days, with medium changes every 2 days. Then, the cells were cultured in APEL2 medium supplemented with 200 ng/ml FGF9 (R&D, 273-F9-025) and 1 \u03bcg/ml heparin (Sigma Aldrich, H4784-250MG) for 2 days. On day 7, the cells were washed with 1\u00d7 Dulbecco\u2019s PBS (DPBS, Thermo Fisher Scientific,14190\u2013250), then trypsinized using trypsin EDTA-0.05% (Thermo Fisher Scientific, 25300\u2013062) at 37\u00b0C for 3 min. The cells were counted and divided to achieve 1\u00d7106 cells per organoid and cultured into 3D organoid culture on 0.4-\u03bcm-pore polyester membrane of Corning 6-well Transwell cell culture plate (Corning-Sigma Aldrich, CLS3450-24EA). Four to five organoids were seeded on one membrane using a P100 wide-bore tip and cultured in APEL2 with 5 \u03bcM CHIR99021 at 37\u00b0C for 1 hr (CHIR99021 pulse). After the CHIR pulse, we changed the medium to APEL2 medium supplemented with 200 ng/ml FGF9 + 1 \u03bcg/ml heparin for 5 days with medium refreshing every 2 days. The organoids were then cultured only in APEL2 medium with 1 \u03bcg/ml heparin for additional 13 days. The total differentiation time is 25 days (7+18).\n\n### DNA isolation and PCR\n\nDNA was isolated from cells using DNeasy Blood & Tissue Kits (Qiagen, 69504). CEP83 primers were designed using Primer3 webtool (Supplementary file 1). PCR was done using Phusion high-fidelity DNA polymerase (Biolabs, New England, M0530) according to the manufacturer\u2019s instructions. PCR results were visualized on 1.5% agarose gel using a BioDoc Analyze dark hood and software system (Biometra).\n\n### RNA isolation, RNA sequencing, and qPCR\n\nTotal RNA was isolated from the cells using RNAasy Mini Kit (QIAGEN, Hilden, Germany, 74104) following the manufacture\u2019s instructions. The concentration, quality, and integrity of the extracted RNA were evaluated using Nanodrop (Thermo Scientific, Waltham, MA; USA), an Agilent 2100 Bioanalyzer, and the Agilent RNA 6000 Nano kit (Agilent Technologies, 5067\u20131511). 0.4 \u03bcg total RNA was used to obtain a poly A\u2013enriched RNA library by Novogene (Cambridge, United Kingdom). Library concentration was performed using a Qubit fluorometer (HS RNA assay kit, Agilent Technologies). Library size was measured by Agilent 2100 bioanalyzer. The libraries were then subjected to 150 bp paired-end next-generation sequencing (Illumina NovaSeq 6000 S4 flow cells). Mutation visualization was performed using the Integrative Genomic Viewer tool (Robinson et al., 2011). Read counts of the sequenced RNA were normalized to transcripts per million (TPM). The TPM values of the variables were used to plot heatmaps and for principle component analysis (PCA) based on Pearson correlation, using self-written scripts in R (R Development Core Team (2011)) (version 4.0.4).\n\nRNA was reverse transcribed using the RevertAid First Strand cDNA Synthesis Kit (Thermo Scientific). qPCR was performed using the FastStart Universal SYBR Green Master (Rox) mix (Hoffmann-La Roche) according to the manufacturer\u2019s instructions. Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) mRNA expression was calculated according to the \u0394\u0394Ct method. All primer pairs were designed using Primer3, purchased at BioTeZ (Berlin, Germany), and sequences are shown in Supplementary file 1.\n\n### Single-cell RNA sequencing (scRNA-seq)\n\n#### Cells isolation and preparation\n\nDifferentiated cells at day 7 were washed twice with 1\u00d7 DPBS, dissociated with Accumax solution, and resuspended in 1\u00d7 DPBS. Then, cells were filtered, counted, and checked for viability.\n\n#### Library preparation and single-cell sequencing\n\nSingle-cell 3\u2019 RNA sequencing was performed using the 10\u00d7 Genomics toolkit version v3.1 (Alles et al., 2017), according to the manufacturer\u2019s instructions aiming for 10,000 cells. Obtained libraries were sequenced on Illumina NextSeq 500 sequencers.\n\n#### Single-cell sequencing data analysis and clustering\n\nAfter sequencing and demultiplexing, fastq files were analyzed using Cellranger version 3.0.2. Gene expression matrices were then imported into R, and Seurat objects were created using the Seurat R package (version 4.0.5) (Stuart et al., 2019). The gene expression matrices were initially filtered by applying lower and upper cut-offs for the number of detected genes (500 and 6000, respectively). The filtered data were then log normalized and scaled according to the number of unique molecular identifiers. The normalized and scaled data derived from the four samples were then merged into one Seurat object. Clustering was performed using the first 20 principal components. We used the Seurat FindAllMarkers function to extract marker gene lists that differentiate between clusters with log fold change threshold \u00b1 0.25 using only positive markers expressed in a minimum of 25% of cells. PCA was done using the first 20 principle components in R using the following libraries factoextra, FactoMineR, and ggplot2.\n\n### Protein extraction and immunoblotting\n\nProteins were extracted from hiPSCs using radioimmunoprecipitation assay (RIPA) buffer (Sigma-Aldrich, R0278) as described in details in supplementary data. 30 \u00b5g protein in RIPA buffer were mixed with 1\u00d7 reducing (10% b-mercaptoethanol) NuPAGE loading buffer (Life Technologies, Carlsbad, CA), loaded on a precast polyacrylamide NuPage 4\u201312% Bis-Tris protein gel (Invitrogen, Carlsbad, CA, USA) and blotted on 0.45 \u00b5m pore size Immobilon-P Polyvinylidene difluoride membrane (EMD Millipore, Billerica, MA; USA). The membrane was blocked in 5% bovine serum albumin for 1 hr at room temperature and incubated overnight at 4\u00b0C with primary antibodies: anti-CEP83 produced in rabbit (1:500, Sigma-Aldrich) and anti-\u03b1-Tubulin produced in mouse (1:500, Sigma-Aldrich, T9026). Then, the membrane was incubated for 1 hr at room temperature with horseradish peroxidase-conjugated secondary antibodies (1:2000, Sigma-Aldrich, Saint Louis, MO, USA). Chemiluminescent reagent (Super Signal\u2013West Pico; Thermo Scientific, Waltham, MA; USA) was used to detect the proteins. The spectra Multicolor Broad Range Protein Ladder (Thermo Fisher Scientific, USA) was used to evaluate the molecular weight of corresponding protein bands.\n\n### Histology and immunofluorescence staining\n\nCells at different time points were checked regularly under a confocal microscope (Leica DMI 6000 CEL) for differentiation progress. Quantitative analysis of nephron-like structure formation within each organoid (D25) was done on tile scanning images of each organoid by estimating the percentage of the organoid area composed of nephron-like structures using 13 WT and 9 KO organoids. Organoids were fixed in BD Cytofix buffer (554655, BD Biosciences) for 1 hr on ice. Then organoids were gradually dehydrated in increasing ethanol concentrations, cleared in xylene, and embedded in paraffin. Organoids were cut into 3.5-\u00b5m thick sections. The sections were deparaffinized, dehydrated, and stained in hematoxylin (Sigma-Aldrich, Saint Louis, MO) for 3 min and in 1% eosin (Sigma-Aldrich) for 2 min. For immunostaining, cells (day 7) and organoids (day 25) were fixed with BD Cytofix, permeabilized with BD Perm/Wash (554723, BD Biosciences), and blocked with blocking solution (1% BSA + 0.3% triton-X-100 in 1\u00d7 DPBS) for 2 hr. Cells and organoids were incubated overnight at 4\u00b0C with primary antibodies (Supplementary file 2), then incubated with fluorescence-labeled secondary antibodies with 1:500 dilution including Cy3, Cy5, Alexa488, and Alexa647 (Jackson ImmunoResearch, Newmarket, UK) and Cy3 Streptavidin (Vector lab, Burlingame, USA) overnight at 4\u00b0C. DAPI was then used for nuclear staining (Cell signaling Technology, Danvers, MA, USA) with 1:300,000 dilution for 1 hr at RT. Finally, cells were mounted with Dako fluorescent mounting medium (Agilent Technologies). Images were taken using a SP8 confocal microscope (Carl Zeiss GmbH, Oberkochen, Germany). Quantitative analyses of acquired images were performed using ImageJ software (1.48 v; National Institutes of Health, Bethesda, MD).\n\n### Comparison to zebrafish LPM\n\nThe upregulated genes in CEP83\u2212/\u2212 cells on day 7 and day 25 were compared with the top 20 orthologous genes identified in subclusters of zebrafish LPM identified by scRNA-seq, as deposited on ArrayExpress (E-MTAB-9727; Prummel et al., 2022).\n\n### Statistical analysis\n\nscRNA-seq was done on two biological replicates representing two different clones of CEP83\u2212/\u2212 and control cells, respectively. All other experiments were performed using three biological replicates representing three independent clones of CEP83\u2212/\u2212 and control cells at different time points. A common excel sheet for the genes present in both bulk RNA and scRNA sequencing was generated in R. The sheet includes a total of 20,894 genes and represents the TPM values of both groups (WT and KO) on day 0, day 7, and day 25 of differentiation. The maximum TPM (TPMmax) and the minimum TPM (TPMmin) were calculated for each gene across all samples. HVGs were calculated based on the ratio of TPMmax and TPMmin. For heatmaps and PCA analysis, the top 1000 HVGs were plotted with a selection of TPMmax >2 for each gene. Deregulated (upregulated and downregulated) genes between WT and KO groups were selected with expression criteria of TPM >2, fold change >1.5, and p-value calculated on log10 TPM <0.05. The unpaired two-tailed t-test was used to compare the two groups. All graphs were generated using GraphPad Prism 7.04 (GraphPad Software, San Diego, CA). Data are presented as mean \u00b1 SD.\n",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "c72b39ea-3ae5-4b53-927d-4dc079c7a7bb",
+      "submission_id": "eaf124f4-3d9d-4280-94f8-420fb9a87789",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Veronika Sander, https://ror.org/03b94tp07 University of Auckland New Zealand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80165.sa0](https://doi.org/10.7554/eLife.80165.sa0)\n\nThis paper describes a novel role of the centrosomal protein CEP83 in mesoderm patterning. Specifically, CEP83 is shown to be required for the formation of the intermediate mesoderm and kidney progenitor tissue derived from it. In a CEP83 knockout situation in human pluripotent stem cells, a shift to lateral plate mesoderm at the expense of intermediate mesoderm occurs, which is convincingly demonstrated. This work, therefore, presents important new insights into the processes involved in mesodermal lineage induction and the fine-tuning of kidney differentiation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Veronika Sander, https://ror.org/03b94tp07 University of Auckland New Zealand\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80165.sa1](https://doi.org/10.7554/eLife.80165.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The centrosomal protein 83 (CEP83) regulates human pluripotent stem cell differentiation towards the kidney lineage\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Veronika Sander as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Add discussion and data (if possible) around the questions raised by Reviewer #2, e.g. trajectories towards LPM fate, statistics to the clusters, and thoughts on whether the phenotype is related to the ciliary function of CEP83.\n\n2) Address several formal issues regarding the presentation of some of the results and the description of the methods.\n\nReviewer #1 (Recommendations for the authors):\n\nListed here are my concerns and comments. If addressed adequately, I recommend this work for publication in eLife.\n\n1. The description of the methods should be restricted to the 'Methods' section. Right now, there is a lot of technical detail in the figure legends for e.g. Figure 1 and 4. Please revise and shorten the Methods and keep them strictly separate from the other sections of the manuscript.\n\n2. The numbering of the supplementary figures does not match the main text. This makes it hard to keep track when reading the manuscript.\n\n3. Some of the supplementary data is described and interpreted exhaustively, e.g. Figure 5\u2014figure supplement 1 (the dot-plot figure). Most of the information in this figure's legend is not relevant. I suggest reducing the figure to the clusters of interest, i.e. 0, 1, 3, 4, and shortening the legend.\n\n4. I wonder if the quantitative measurements in Figure 3, 5, and 6 could be better presented as bar graphs. I find that the dot and violin plots don't show the differences as obviously as bar graphs would do, and no additional information is gained from e.g. the violin plots in Figure 5.\n\n5. The organoid data presented in Figure 3 are impressive but the significance of this set of data could be improved by adding more meaningful and convincing immunostainings, e.g. Vimentin or markers of the LPM (as identified by the RNAseqs) that proposedly would label the cells in the CEP83 sections should be shown. Panel 3E could be replaced with a less broken section and more intact-looking LTL+ tubules. Also, the official gene/protein name of ECAD is CDH1.\n\n6. Out of curiosity, has the spontaneous beating of CEP83-knockout organoids, indicative of cardiomyocyte formation in these structures, been observed?\n\n7. The brightfield images of the whole organoids in Figure 3 should also be replaced with images that more clearly show the differences, e.g. I cannot recognize 'kidney-like' structures (tubules? Podocyte clusters?) in Figure 3A. Panel 3B seems similar to 3A but out of focus are more necrotic. Please replace these panels, maybe include high magnification panels.\n\n8. Figure 4D could be supplementary, and could you instead show a UMAP plot of the clusters of interest, 0, 1, 3, and 4?\n\n9. Could Figure 6 be split into 2 figures for better clarity?\n\n10. Figure 6 J/O, one panel for ISL1 expression is sufficient.\n\n11. I also recommend a general revision of English style and grammar, as well as a check for consistency, e.g. is intermediate mesoderm abbreviated as IM or IMM? Some typos I noticed:\n\n\u2022 P7, line 18, under a confocal microscope\n\n\u2022 P7, line 20, was done\n\n\u2022 P7, line 26, should this read 'rehydrated'?\n\n\u2022 P7, lines 29 and 35, cells? Should this be 'organoids' or 'organoid sections'?\n\n\u2022 P8, line 10, was generated\n\nReviewer #2 (Recommendations for the authors):\n\nI enjoyed reading the manuscript and found it insightful and logically structured. The main limitation I see with this manuscript is that it is rather short on mechanistic insights. It is tempting to speculate that the wealth of data generated may contain some hints as to what signalling events may drive the LPM fate? Could trajectories help in this regard or are there technical limitations that prohibit this? And a major question that remains is if the phenotype is due to a ciliary defect or extraciliary function of CEP83.\n\nIt is interesting that Osr1 is upregulated in the CEP83-/- cells, but what about other more traditional nephron progenitor makers, such as SIX2 or CITED? The percentage of contributing cells to the clusters is interesting, but can this data be boosted by statistics to evaluate if this is literally significant or not? I noticed that cluster 5 (damaged cells) seemed to be larger in the KO condition. What kind of damage does this entail and to what degree might this influence the broader interpretation of the experiment?\n",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19f76848-9968-486e-aa8d-3d94f5c66746",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C1",
+      "claim": "During embryonic development, the mesoderm undergoes patterning into diverse lineages including axial, paraxial, and lateral plate mesoderm (LPM).",
+      "claim_type": "EXPLICIT",
+      "source": "During embryonic development, the mesoderm undergoes patterning into diverse lineages including axial, paraxial, and lateral plate mesoderm (LPM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established developmental biology knowledge presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "8fcbd305-8d44-4cf9-813a-03e838ff3f88",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C2",
+      "claim": "Within the LPM, the intermediate mesoderm (IM) forms kidney and urogenital tract progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the LPM, the so-called intermediate mesoderm (IM) forms kidney and urogenital tract progenitor cells, while the remaining LPM forms cardiovascular, hematopoietic, mesothelial, and additional progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established developmental biology knowledge about mesoderm patterning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "d80d0507-a119-4b2f-ab46-c51372f1506c",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C3",
+      "claim": "The remaining LPM forms cardiovascular, hematopoietic, mesothelial, and additional progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the LPM, the so-called intermediate mesoderm (IM) forms kidney and urogenital tract progenitor cells, while the remaining LPM forms cardiovascular, hematopoietic, mesothelial, and additional progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established developmental biology knowledge about mesoderm patterning.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "cddf1520-b50c-47e4-acaa-8ca15445425a",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C4",
+      "claim": "CEP83 is a centriolar component necessary for primary cilia formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the centrosomal protein 83 (CEP83), a centriolar component necessary for primary cilia formation and mutated in pediatric kidney disease, influences the differentiation of human-induced pluripotent stem cells (hiPSCs) toward IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction and established knowledge about CEP83 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "e0a6e23f-e468-4459-9c98-d0f6779becd7",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C5",
+      "claim": "CEP83 is mutated in pediatric kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the centrosomal protein 83 (CEP83), a centriolar component necessary for primary cilia formation and mutated in pediatric kidney disease, influences the differentiation of human-induced pluripotent stem cells (hiPSCs) toward IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Failler et al., 2014 in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "147d5383-c9b5-46d4-9299-a4426e8124f0",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C6",
+      "claim": "CEP83 influences the differentiation of human-induced pluripotent stem cells (hiPSCs) toward intermediate mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the centrosomal protein 83 (CEP83), a centriolar component necessary for primary cilia formation and mutated in pediatric kidney disease, influences the differentiation of human-induced pluripotent stem cells (hiPSCs) toward IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "73b346ee-9ce3-4f56-92e7-25be16e02e47",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C7",
+      "claim": "hiPSCs with homozygous CEP83 inactivation were normal regarding morphology and transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "While hiPSCs with homozygous CEP83 inactivation were normal regarding morphology and transcriptome, their induced differentiation into IM progenitor cells was perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figure 1 and Figure 1\u2014figure supplements showing morphology and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "13b37dbf-01d0-4815-946f-378668fddea3",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C8",
+      "claim": "Mesodermal cells induced after 7 days of monolayer culture of CEP83-deficient hiPSCs exhibited absent or elongated primary cilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesodermal cells induced after 7 days of monolayer culture of CEP83-deficient hiPCS exhibited absent or elongated primary cilia, displayed decreased expression of critical IM genes (PAX8, EYA1, HOXB7), and an aberrant induction of LPM markers (e.g. FOXF1, FOXF2, FENDRR, HAND1, HAND2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 2D-G showing ciliary abnormalities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a0176dbb-2d2c-427e-a5ea-2d3ae1023b10",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C9",
+      "claim": "CEP83-deficient cells at day 7 displayed decreased expression of critical IM genes (PAX8, EYA1, HOXB7).",
+      "claim_type": "EXPLICIT",
+      "source": "Mesodermal cells induced after 7 days of monolayer culture of CEP83-deficient hiPCS exhibited absent or elongated primary cilia, displayed decreased expression of critical IM genes (PAX8, EYA1, HOXB7), and an aberrant induction of LPM markers (e.g. FOXF1, FOXF2, FENDRR, HAND1, HAND2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-cell RNA-seq data shown in Figure 5D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "139dd526-30f0-4413-ad4a-2f323687c389",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C10",
+      "claim": "CEP83-deficient cells at day 7 showed aberrant induction of LPM markers (e.g. FOXF1, FOXF2, FENDRR, HAND1, HAND2).",
+      "claim_type": "EXPLICIT",
+      "source": "Mesodermal cells induced after 7 days of monolayer culture of CEP83-deficient hiPCS exhibited absent or elongated primary cilia, displayed decreased expression of critical IM genes (PAX8, EYA1, HOXB7), and an aberrant induction of LPM markers (e.g. FOXF1, FOXF2, FENDRR, HAND1, HAND2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bulk and single-cell RNA-seq data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "196bb2c9-9458-48cd-aadf-d8b1b715f080",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C11",
+      "claim": "Wildtype cells differentiated to form kidney tubules and glomerular-like structures upon organoid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon subsequent organoid culture, wildtype cells differentiated to form kidney tubules and glomerular-like structures, whereas CEP83-deficient cells failed to generate kidney cell types, instead upregulating cardiomyocyte, vascular, and more general LPM progenitor markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histology and immunofluorescence data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "8bae1f49-45a8-4e19-861c-3e2a1c8ad0b6",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C12",
+      "claim": "CEP83-deficient cells failed to generate kidney cell types upon organoid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon subsequent organoid culture, wildtype cells differentiated to form kidney tubules and glomerular-like structures, whereas CEP83-deficient cells failed to generate kidney cell types, instead upregulating cardiomyocyte, vascular, and more general LPM progenitor markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histology and immunofluorescence data in Figure 3 showing absence of kidney markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a0a9c801-b373-4bda-9965-71bf184183b2",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C13",
+      "claim": "CEP83-deficient organoids upregulated cardiomyocyte, vascular, and more general LPM progenitor markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon subsequent organoid culture, wildtype cells differentiated to form kidney tubules and glomerular-like structures, whereas CEP83-deficient cells failed to generate kidney cell types, instead upregulating cardiomyocyte, vascular, and more general LPM progenitor markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in Figure 7 showing upregulation of ISL1, TBX1, SOX7, SOX11, etc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "02b1f516-0111-406a-bc3e-245c6b714c56",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C14",
+      "claim": "CEP83 regulates the balance of IM and LPM formation from human pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that CEP83 regulates the balance of IM and LPM formation from human pluripotent stem cells, identifying a potential link between centriolar or ciliary function and mesodermal lineage induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data showing altered IM/LPM marker expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "61b9a647-e9da-4ef6-923d-3e0faeb371fd",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C15",
+      "claim": "CEP83 is a component of distal appendages (DAPs) of centrioles.",
+      "claim_type": "EXPLICIT",
+      "source": "The centrosomal protein 83 (CEP83) is a component of distal appendages (DAPs) of centrioles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Lo et al., 2019; Tanos et al., 2013; Yang et al., 2018; Kurtulmus et al., 2018; Wheway et al., 2015; Bowler et al., 2019; Failler et al., 2014; Shao et al., 2020; Mansour et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "26a5189c-6a77-43f4-93e0-a144238de6a5",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C16",
+      "claim": "DAPs are involved in the anchoring of the mother centriole to the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "DAPs are involved in the anchoring of the mother centriole to the cell membrane, an early and critical step in ciliogenesis (Lo et al., 2019; Tanos et al., 2013; Yang et al., 2018; Kurtulmus et al., 2018; Wheway et al., 2015; Bowler et al., 2019; Failler et al., 2014; Shao et al., 2020; Mansour et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations about DAP function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "24ec28c0-74b1-442b-b188-ae3d33e7f9af",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C17",
+      "claim": "CEP83 recruits other DAP components to the ciliary base.",
+      "claim_type": "EXPLICIT",
+      "source": "CEP83 recruits other DAP components to the ciliary base, and loss of CEP83 disrupts ciliogenesis (Tanos et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tanos et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "75341371-e0bb-4082-9e29-cff3b9c252b0",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C18",
+      "claim": "Loss of CEP83 disrupts ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "CEP83 recruits other DAP components to the ciliary base, and loss of CEP83 disrupts ciliogenesis (Tanos et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tanos et al., 2013 and experimental data in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "dfb0bafe-7549-40ff-b82a-35f6169e73d0",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C19",
+      "claim": "Removal of CEP83 in radial glial progenitors disrupts DAP assembly and impairs the anchoring of the centrosome to the apical membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In radial glial progenitors, removal of CEP83 disrupts DAP assembly and impairs the anchoring of the centrosome to the apical membrane as well as primary ciliogenesis (Yang et al., 2018; Shao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yang et al., 2018 and Shao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "5ead7d76-bb74-4af1-8233-40aa8d554ed8",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C20",
+      "claim": "Mutations of CEP83 in humans have been associated with infantile nephronophthisis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of CEP83 in humans have been associated with infantile nephronophthisis (Failler et al., 2014), an early onset kidney disease that results in end-stage renal disease before the age of 3 years (Hildebrandt, 2004; Luo and Tao, 2018) and additional organ anomalies (Failler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Failler et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "319fa415-1a4e-40ea-9482-e334bd4ab2cd",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C21",
+      "claim": "Infantile nephronophthisis is an early onset kidney disease that results in end-stage renal disease before the age of 3 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of CEP83 in humans have been associated with infantile nephronophthisis (Failler et al., 2014), an early onset kidney disease that results in end-stage renal disease before the age of 3 years (Hildebrandt, 2004; Luo and Tao, 2018) and additional organ anomalies (Failler et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hildebrandt, 2004 and Luo and Tao, 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "3ce23e74-ec11-4594-850a-2cf9322473bf",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C22",
+      "claim": "Three hiPSCs clones designated CEP83\u2212/\u2212 (KO1, KO2, and KO3) carried deletions within CEP83 exon 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Three hiPSCs clones designated CEP83\u2212/\u2212 (KO1, KO2, and KO3) carried deletions within CEP83 exon 7, each of which led to an induction of a premature stop codon resulting in a predicted truncated protein (Figure 1B\u2013D and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by DNA sequencing data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "1d454d8a-3307-4f48-b70a-058f7deefca3",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C23",
+      "claim": "The deletions in CEP83 exon 7 led to induction of a premature stop codon resulting in a predicted truncated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Three hiPSCs clones designated CEP83\u2212/\u2212 (KO1, KO2, and KO3) carried deletions within CEP83 exon 7, each of which led to an induction of a premature stop codon resulting in a predicted truncated protein (Figure 1B\u2013D and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a7025837-62a7-4601-98e9-8667eb88645b",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C24",
+      "claim": "CEP83 knockout clones exhibited a complete loss of CEP83 protein by immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "These clones exhibited a complete loss of CEP83 protein by immunoblotting (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "40c59cac-21ef-426d-887e-d18971f38c5b",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C25",
+      "claim": "All six clones (WT and KO) were morphologically indistinguishable by brightfield microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "All six clones were morphologically indistinguishable (by brightfield microscopy) and had similar overall gene expression profiles (by bulk RNA-seq and qRT-PCR), including pluripotency and lineage marker expression (Figure 1\u2014figure supplement 1B, C, and Figure 1\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by brightfield images in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "626bf87a-8184-4c78-8f59-655f761759b0",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C26",
+      "claim": "WT and KO clones had similar overall gene expression profiles including pluripotency and lineage marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All six clones were morphologically indistinguishable (by brightfield microscopy) and had similar overall gene expression profiles (by bulk RNA-seq and qRT-PCR), including pluripotency and lineage marker expression (Figure 1\u2014figure supplement 1B, C, and Figure 1\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq heatmap in Figure 1\u2014figure supplement 1B and qRT-PCR data in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "16e573e1-6643-4159-85d9-c8a3a4ddc0ac",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C27",
+      "claim": "Single nucleotide polymorphism analysis confirmed identical karyotypes of all six clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Single nucleotide polymorphism - analysis confirmed identical karyotypes of all six clones (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by karyotype analysis shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "fa989653-efc3-4c4b-a8de-e1e8dd8927c2",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C28",
+      "claim": "After 7 days of culture, WT and KO cells exhibited an indistinguishable morphology by bright field microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "After 7 days of culture (D7), WT and KO cells exhibited an indistinguishable morphology by bright field microscopy (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by brightfield images in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "92347657-5cf3-4188-9231-299a2ac48785",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C29",
+      "claim": "CEP83-deficient cells at day 7 exhibited abnormal primary cilia formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining for acetylated tubulin, however, indicated abnormal primary cilia formation in CEP83-deficient cells (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence images in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "eb72b565-6e3f-4155-ab63-c647edcf1341",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C30",
+      "claim": "The number of ciliated cells was reduced from approximately 30% in WT clones to less than 10% in KO clones at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of ciliated cells was reduced from approximately 30% (in WT clones) to less than 10% (in KO clones) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "f31b4c42-b290-4254-b1f0-70bfadbab94d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C31",
+      "claim": "Among ciliated cells at day 7, the length of cilia was increased from 2 to 5 \u00b5m in WT clones to 5\u201313 \u00b5m in KO clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Among ciliated cells, the length of cilia was increased from 2 to 5 \u00b5m (in WT clones) to 5\u201313 \u00b5m (in KO clones) (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "48c53a75-1af8-4d2a-a7ec-0ebde4478ad1",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C32",
+      "claim": "Organoids harvested from WT clones after 25 days of culture had formed patterned kidney epithelial-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Organoids harvested from WT clones after a total of 25 days of culture (D25) had formed patterned kidney epithelial-like structures, including NPHS1-positive glomerulus-like structures, Lotus tetragonolobus lectin-positive proximal tubule-like, and E-cadherin (CDH1)-positive distal tubule-like structures (Figure 3A, C and E, and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histology and immunofluorescence data in Figure 3A, C, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "08778b68-7767-4ae5-811f-e67b387de3b3",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C33",
+      "claim": "CEP83\u2212/\u2212 organoids at day 25 were composed of monomorphic cells with a mesenchyme-like appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CEP83\u2212/\u2212 organoids at day 25 were composed of monomorphic cells with a mesenchyme-like appearance, which stained negative for an array of kidney cell markers (Figure 3B, D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histology and immunofluorescence data in Figure 3B, D, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "5a1cd850-c336-43ef-b79d-bfd5b43cde37",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C34",
+      "claim": "Kidney epithelial-like structures formed only in WT but not in CEP83\u2212/\u2212 organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Kidney epithelial-like structures formed only in WT but not in CEP83\u2212/\u2212 organoids (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "6ffcf9f8-6c76-4b10-b306-59bd9b9737f7",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C35",
+      "claim": "Primary cilia were found in fewer cells of CEP83\u2212/\u2212 organoids (<5% of cells) and were abnormally elongated.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the findings in day 7 cells reported above, primary cilia were found in fewer cells of CEP83\u2212/\u2212 organoids (<5% of cells) and were abnormally elongated (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "6f13e02b-bf64-4be4-a0df-8c37738a616a",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C36",
+      "claim": "Several genes associated with kidney development and kidney epithelial differentiation were differentially expressed with high expression in WT organoids but low or absent expression in CEP83\u2212/\u2212 organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes associated with kidney development and kidney epithelial differentiation were differentially expressed with high expression in WT organoids but showed comparatively low or absent expression in CEP83\u2212/\u2212 organoids: these genes included kidney-specific lineage genes (PAX2, PAX8), and lineage/differentiation markers of glomerular cells (NPHS1, PODXL, WT1, PTPRO), proximal (HNF1B, LRP2, CUBN), and distal (EMX2, MAL2, EPCAM, GATA3) kidney epithelial cells (Figure 3H\u2013L, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk RNA-seq data shown in Figure 3H-L and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "ff5d661a-67f7-4f0b-8335-1a363e04d42d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C37",
+      "claim": "A marked upregulation of nephron progenitor marker genes (GATA3, HOXB7, HOXD11, EYA1) was observed in both WT and CEP83\u2212/\u2212 cells at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "A marked upregulation of nephron progenitor marker genes (GATA3, HOXB7, HOXD11, EYA1) (Bilous et al., 1992; Grote et al., 2006; Kress et al., 1990; Srinivas et al., 1999; Wellik et al., 2002; Mugford et al., 2008a; Ruf et al., 2004; Sajithlal et al., 2005) was observed in both WT and CEP83\u2212/\u2212 cells at day 7 (Figure 4\u2014figure supplement 2), suggesting that the differentiation path of pluripotent CEP83\u2212/\u2212 cells to IM nephron progenitors was largely intact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk RNA-seq data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "4eda6f47-932b-4072-a453-dae4502477fa",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C38",
+      "claim": "The differentiation path of pluripotent CEP83\u2212/\u2212 cells to IM nephron progenitors was largely intact.",
+      "claim_type": "EXPLICIT",
+      "source": "A marked upregulation of nephron progenitor marker genes (GATA3, HOXB7, HOXD11, EYA1) (Bilous et al., 1992; Grote et al., 2006; Kress et al., 1990; Srinivas et al., 1999; Wellik et al., 2002; Mugford et al., 2008a; Ruf et al., 2004; Sajithlal et al., 2005) was observed in both WT and CEP83\u2212/\u2212 cells at day 7 (Figure 4\u2014figure supplement 2), suggesting that the differentiation path of pluripotent CEP83\u2212/\u2212 cells to IM nephron progenitors was largely intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that nephron progenitor markers are upregulated in both WT and KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "74322532-e630-416e-ab3c-fc403db483a4",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C39",
+      "claim": "Single-cell RNA sequencing obtained transcriptomes from 27,328 cells representing WT1, WT2, KO1, and KO2 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained transcriptomes from 27,328 cells, representing clones WT1 (experiment 1: 3768 cells), WT2 (experiment 2: 5793 cells), KO1 (experiment 1: 8503 cells), and KO2 (experiment 2: 9264 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data obtained from single-cell RNA sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "0b929aaf-0f6b-4d3b-a80d-a3172172edeb",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C40",
+      "claim": "The first principal component (dimension 1, explaining 54% of expression variation) was driven by the genotype (WT vs. KO).",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) using pseudo-bulk expression data of the top 1000 highly variable genes (HVGs) indicated that the first principal component (dimension 1, explaining 54% of expression variation) was driven by the genotype (WT vs. KO), while the second principal component (dimension 2, explaining 51% of expression variation) was driven by a batch effect of the two experiments (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCA analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "98a89637-d990-4719-a4dd-5713e9d10f06",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C41",
+      "claim": "The second principal component (dimension 2, explaining 51% of expression variation) was driven by a batch effect of the two experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) using pseudo-bulk expression data of the top 1000 highly variable genes (HVGs) indicated that the first principal component (dimension 1, explaining 54% of expression variation) was driven by the genotype (WT vs. KO), while the second principal component (dimension 2, explaining 51% of expression variation) was driven by a batch effect of the two experiments (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCA analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "0a35346d-a6ef-4907-ad63-63364ec11e8c",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C42",
+      "claim": "Unbiased clustering of single-cell data resulted in 10 different cell states/clusters (0\u20139).",
+      "claim_type": "EXPLICIT",
+      "source": "We combined all cells and generated a uniform manifold approximation and projection plot uncovering 10 different cell states/clusters (0\u20139; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by UMAP plot in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "8bdb86b8-5395-44ad-afb0-5496d5179b22",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C43",
+      "claim": "Clusters 1, 3, and 4 represented kidney progenitors/nascent nephrons in different phases of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified marker genes for each cluster (Figure 4C), indicating that clusters 1, 3, and 4 represented kidney progenitors/nascent nephrons (expressing, e.g., PAX8, EYA1, HOXB7) in different phases of the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by marker gene analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "63003369-f2c1-459c-8db4-d30054cc4f23",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C44",
+      "claim": "Cluster 5 represented damaged cells expressing high levels of mitochondrial RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one cluster representing damaged cells (cluster 5) was observed at numerically higher percentages in KO cells compared to WT cells. Cluster 5 cells expressed high levels of mitochondrial RNAs, and staining for active caspase 3 demonstrated an increased percentage of apoptotic cells in KO samples compared to controls (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mitochondrial RNA analysis and caspase 3 staining in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "48aa9eea-cad3-4ef9-9ac6-46af3a211bbb",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C45",
+      "claim": "Cluster 5 was observed at numerically higher percentages in KO cells compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one cluster representing damaged cells (cluster 5) was observed at numerically higher percentages in KO cells compared to WT cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cluster proportion analysis in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "46101f78-4f9d-4f6a-bfd5-349dfb69fd7f",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C46",
+      "claim": "Staining for active caspase 3 demonstrated an increased percentage of apoptotic cells in KO samples compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 5 cells expressed high levels of mitochondrial RNAs, and staining for active caspase 3 demonstrated an increased percentage of apoptotic cells in KO samples compared to controls (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by caspase 3 immunofluorescence data in Figure 4\u2014figure supplement 3D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a635222b-8273-45f4-b2ce-6b25044f36d4",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C47",
+      "claim": "A numerically lower percentage of KO cells (11.9 and 12.5% in KO clones) contributed to cluster 1 when compared with WT cells (25.9 and 36.3% in WT clones).",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on kidney progenitors (clusters 1, 3, and 4) and found that a numerically lower percentage of KO cells (11.9 and 12.5% in KO clones) contributed to cluster 1 when compared with WT cells (25.9 and 36.3% in WT clones) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cluster proportion analysis in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "baf2c34c-ba5e-4a7c-95b3-424b304e6ad8",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C48",
+      "claim": "Similar percentages of WT and KO cells were represented in kidney progenitor clusters 3 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, similar percentages of WT and KO cells were represented in kidney progenitor clusters 3 and 4 (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cluster proportion analysis in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "34870614-28b9-43c9-b6d6-7059a4daf5bb",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C49",
+      "claim": "Differential gene expression analysis in clusters 1, 3, and 4 indicated significantly lower expression of kidney progenitor markers PAX8, EYA1, CITED1, and HOXB7 in KO cells compared to WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential gene expression analysis in these three clusters indicated significantly lower expression of kidney progenitor markers PAX8, EYA1, CITED1, and HOXB7 in KO cells from clusters 1, 3, and 4 when compared to WT cells (Figure 5D, E and F; Figure 5\u2014figure supplements 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by violin plots in Figure 5D-F and dot plots in Figure 5\u2014figure supplements 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "d61a2616-3b60-47cb-ba49-9545242b631d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C50",
+      "claim": "scRNA sequencing data showed downregulated expression of genes encoding ciliary proteins, including OFD1, PCM1, and RAB11A in CEP83-deficient cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, scRNA sequencing data also showed downregulated expression of genes encoding ciliary proteins, including OFD1, PCM1, and RAB11A (Ferrante et al., 2006; Dammermann and Merdes, 2002; Kn\u00f6dler et al., 2010; Figure 5\u2014figure supplement 3), consistent with the ciliogenesis defects in CEP83 knockout cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by violin plots in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "017a49b8-352e-4594-8265-eab1aa7b3aba",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C51",
+      "claim": "A consistent upregulation of genes normally expressed in early LPM, including OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, CXCL12, GATA5, and GATA6, was observed in CEP83\u2212/\u2212 cells compared to WT cells at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We next inspected single-cell transcriptomes and bulk RNA sequencing data from D7 cells for genes that were upregulated in CEP83\u2212/\u2212 cells compared to WT cells. From this analysis, we observed a consistent upregulation of genes that are normally expressed in early LPM, including OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, CXCL12, GATA5, and GATA6 (Prummel et al., 2020; Mugford et al., 2008b; Mae et al., 2013; Mahlapuu et al., 2001; Ormestad et al., 2004; Wilm et al., 2004; Wotton et al., 2008; Grote et al., 2013; Schindler et al., 2014; Tsuchihashi et al., 2011; McFadden et al., 2005; Firulli et al., 1998; Risebro et al., 2006; Angelo et al., 2000; Perens et al., 2016; Salcedo and Oppenheim, 2003; Liekens et al., 2010; Loh et al., 2016; Koutsourakis et al., 1999; Holtzinger and Evans, 2007; Reiter et al., 1999; Pikkarainen et al., 2004; Laverriere et al., 1994; Zhao et al., 2008; Prummel et al., 2021; Figure 6A\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk and single-cell RNA-seq data in Figure 6A-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "1f543643-00c7-43a7-9aff-5c82fcab0f7d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C52",
+      "claim": "CEP83\u2212/\u2212 cells entered an aberrant differentiation path assuming a phenotype indicative of broader LPM instead of more specific IM.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that CEP83\u2212/\u2212 cells entered an aberrant differentiation path assuming a phenotype indicative of broader LPM instead of more specific IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the upregulation of LPM markers and downregulation of IM markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "4268b920-260d-4e0b-8ff7-9611f08b6b78",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C53",
+      "claim": "WT cells of clusters 0, 1, 3, and 4 exhibited an IM-like phenotype, while KO cells were shifted toward an LPM-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis indicated that WT cells of these clusters exhibited an IM-like phenotype, while KO cells were shifted toward an LPM-like phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scoring analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "109a8f70-c1ba-4f57-a7e4-eb3e48bf9af4",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C54",
+      "claim": "The common IM/LPM marker OSR1 was expressed at higher level in KO cells comparing to the WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The common IM/LPM marker OSR1 was expressed at higher level in KO cells comparing to the WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "3e8728d3-8756-42fc-a085-6f40d450a6aa",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C55",
+      "claim": "The expression of several LPM genes (OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, and CXCL12) was strongly upregulated in KO cells compared to WT cells at day 25.",
+      "claim_type": "EXPLICIT",
+      "source": "We then inspected RNA-seq data from WT and KO organoids at day 25 for the expression of LPM genes and markers of LPM derivatives. The expression of several LPM genes (OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, and CXCL12) was strongly upregulated in KO cells compared to WT cells suggesting that an LPM-like cell pool persisted in D25 KO organoids (Figure 6A\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk RNA-seq data in Figure 6A-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "90c969b9-10dd-4081-8f0e-4dbb79fae5ee",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C56",
+      "claim": "CEP83\u2212/\u2212 organoids showed significant enrichment for expression of orthologs of early LPM genes (p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "Our targeted comparison documented that CEP83\u2212/\u2212 organoids showed significant enrichment for expression of orthologs of early LPM genes (p=0.006) (Figure 6\u2014figure supplement 2), including OSR1, CXCL12, HAND1/2, KCTD12, PIK3R3, and ZBTB2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by enrichment analysis in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "35fbe870-49e4-4b57-8681-89db2d2e3309",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C57",
+      "claim": "A subset of LPM genes enriched for expression in CEP83-mutant cells at D25 was indicative of cardiac or cardiopharyngeal (ISL1, TBX1) as well as vascular progenitor (SOX7, SOX11, NAP1L3, LMO2, GATA2) differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of LPM genes enriched for expression in CEP83-mutant cells at D25 of differentiation was indicative of cardiac or cardiopharyngeal (ISL1, TBX1) as well as vascular progenitor (SOX7, SOX11, NAP1L3, LMO2, GATA2) differentiation (Morikawa and Cserjesi, 2004; Cai et al., 2003; Kwon et al., 2009; Laugwitz et al., 2005; Moretti et al., 2006; Gao et al., 2019; Stennard and Harvey, 2005; Baldini, 2005; Chen et al., 2009; Figure 7A\u2013G, Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk RNA-seq data in Figure 7A-G.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "3c14e3d0-42f5-40b7-924d-db6056cad502",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C58",
+      "claim": "Three genes of the upregulated LPM genes, namely OSR1, FOXF1, and FOXF2, are downstream genes of hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, three genes of the upregulated LPM genes, namely OSR1, FOXF1, and FOXF2, are downstream genes of hedgehog signaling (Han et al., 2017; Kugler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Han et al., 2017 and Kugler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "c806e34a-6c94-4341-b066-6316f7c31608",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C59",
+      "claim": "HAND2 is upstream of hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HAND2 is upstream of hedgehog signaling (Anderson et al., 2012), essential for early embryonic development and regulated by primary cilium (Kugler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Anderson et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "3a8ee2ae-507a-4309-988e-67555011fcff",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C60",
+      "claim": "Bulk RNA sequencing data showed significant upregulation of hedgehog signaling components GLI1 and PTCH1 in CEP83\u2212/\u2212 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, bulk RNA sequencing data showed significant upregulation of hedgehog signaling components GLI1 and PTCH1 in CEP83\u2212/\u2212 cells (Lee et al., 1997; Villavicencio et al., 2000; Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bulk RNA-seq data in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "bc00a3b6-d084-44c9-9c4a-b14c84687ff4",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C61",
+      "claim": "11 patients with biallelic mutations of CEP83 have been reported, 8 of which displayed kidney phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, 11 patients with biallelic mutations of CEP83 have been reported, 8 of which displayed kidney phenotypes (Failler et al., 2014; Veldman et al., 2021; Haer-Wigman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Failler et al., 2014; Veldman et al., 2021; Haer-Wigman et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a5854664-70c8-4e78-8755-2187c85405fd",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C62",
+      "claim": "Available kidney histologies from CEP83 mutation patients identified microcystic tubular dilatations, tubular atrophy, thickened basement membranes, and interstitial fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Available kidney histologies identified microcystic tubular dilatations, tubular atrophy, thickened basement membranes, and interstitial fibrosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reported clinical data from patients with CEP83 mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "7fba9e3e-858c-4e9e-bdb7-8b9a44af3c4b",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C63",
+      "claim": "Extrarenal phenotypes in CEP83 mutation patients included speech delay, intellectual disability, hydrocephalus, strabismus, retinal degeneration, retinitis pigmentosa, hepatic cytolysis, cholestasis, and portal septal fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrarenal phenotypes included speech delay, intellectual disability, hydrocephalus, strabismus, retinal degeneration, retinitis pigmentosa, hepatic cytolysis, cholestasis, and portal septal fibrosis with mild thickening of arterial walls and an increase in the number of the biliary canalicules on liver biopsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reported clinical data from patients with CEP83 mutations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "838e9fd0-9832-4ff9-b744-5b41ed20e0f0",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C64",
+      "claim": "Among individuals with CEP83 mutations, all but one carried at least one missense mutation or short in-frame deletion, suggesting that CEP83 function may have been partially preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Among individuals with CEP83 mutations, all but one carried at least one missense mutation or short in-frame deletion, suggesting that CEP83 function may have been partially preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the types of mutations reported in patients.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "f52d9fef-eaab-4e6f-835a-431a66e96f82",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C65",
+      "claim": "One individual with presumed full loss of CEP83 displayed a more severe phenotype with multiple organ dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "One individual with presumed full loss of CEP83 displayed a more severe phenotype with multiple organ dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reported clinical data from a patient with CEP83 mutation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "b9aa22ac-7ed7-45f0-a1d0-4046f71ae9f4",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C66",
+      "claim": "Mice with a targeted homozygous loss-of-function mutation of Cep83 display midembryonic lethality (at E12.5) with evidence of severe developmental delay as early as E9.5.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is interesting that mice with a targeted homozygous loss-of-function mutation of their CEP83 ortholog (Cep83tm1.1(KOMP)Vlcg) display midembryonic lethality (at E12.5) with evidence of severe developmental delay as early as E9.5 (https://www.mousephenotype.org/data/genes/MGI:1924298).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from the Mouse Phenotype database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "97dec5f8-4cf3-45a8-aaa3-e907b84a8727",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C67",
+      "claim": "The primary cilium is critically involved in hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary cilium is critically involved in hedgehog signaling (Ho and Stearns, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ho and Stearns, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "e24df403-6020-4ba6-8441-92b8388bc9fa",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C68",
+      "claim": "Hedgehog signaling is important for mesodermal lineage decisions during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Hedgehog signaling is important for mesodermal lineage decisions during gastrulation (Guzzetta et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guzzetta et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "040e190c-dd37-447a-8a6c-91d71c410934",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C69",
+      "claim": "PAX8, EYA1, and HOXB7 are essential for normal kidney development.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed downregulated expression of the key nephron progenitor genes PAX8, EYA1, and HOXB7 in CEP83\u2212/\u2212 cells at day 7, which might explain their failure to differentiate into kidney cells since each of these genes is essential for normal kidney development (Vincent et al., 1997; Pfeffer et al., 1998; Kumar et al., 1998; Bouchard et al., 2002; Xu et al., 1999; Patterson and Potter, 2004; Rojek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations about the role of these genes in kidney development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "d1700c97-2e63-4577-9a79-a8b8db91b255",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C70",
+      "claim": "Inductive signals from HOXB7-positive ureteric bud are known to maintain viability of nephron progenitor cells in the IM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inductive signals from HOXB7-positive ureteric bud are known to maintain viability of nephron progenitor cells in the IM (Barasch et al., 1997), which may contribute to increased numbers of apoptotic cells we observed in CEP83\u2212/\u2212 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barasch et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "136c3c24-6d70-4ba7-9f89-1c9900670f69",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C71",
+      "claim": "In mice, centrosome amplification severely disrupts kidney development, resulting in depletion of renal progenitors and renal hypoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects during nephron progenitor differentiation in the IM would be expected to result in severe kidney phenotypes such as renal agenesis or renal hypodysplasia. Defects of centriolar components or cilia have previously been linked to such phenotypes: in mice, centrosome amplification, i.e., the formation of excess centrosomes per cell severely disrupts kidney development, resulting in depletion of renal progenitors and renal hypoplasia (Dionne et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dionne et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "24d4dd07-11c6-4930-8843-245d0fe7cf68",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C72",
+      "claim": "In humans, loss of KIF14 has been associated with kidney malformations, including renal agenesis and renal dysplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, loss of KIF14, a protein necessary for proper DAP assembly and cilium formation, has been associated with kidney malformations, including renal agenesis and renal dysplasia (Filges et al., 2014; Reilly et al., 2019; Pejskova et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Filges et al., 2014; Reilly et al., 2019; Pejskova et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "cd312100-cd6a-4ee3-96be-9875a1d49f95",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C73",
+      "claim": "Kif3a is necessary for normal mesoderm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Kif3a, a ciliary protein involved in intraflagellar transport, is necessary for normal mesoderm formation, and kidney progenitor-specific defects of Kif3a have been associated with reduced nephron numbers (Takeda et al., 1999; Chi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Takeda et al., 1999 and Chi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "445b4875-6492-4a4f-aa40-796f1cce274d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C74",
+      "claim": "Kidney progenitor-specific defects of Kif3a have been associated with reduced nephron numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Kif3a, a ciliary protein involved in intraflagellar transport, is necessary for normal mesoderm formation, and kidney progenitor-specific defects of Kif3a have been associated with reduced nephron numbers (Takeda et al., 1999; Chi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Takeda et al., 1999 and Chi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "9e6b4fb5-9089-48ac-a395-29cd857204bc",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C75",
+      "claim": "Mouse genes encoding the ciliary intraflagellar transport proteins IFT25 and IFT27 have been associated with renal agenesis or renal hypoplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, mouse genes encoding the ciliary intraflagellar transport proteins IFT25 and IFT27 have been associated with renal agenesis or renal hypoplasia (Desai et al., 2018; Qu\u00e9lin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Desai et al., 2018 and Qu\u00e9lin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "2edf71bc-08ef-44c2-8e75-58e0007a839f",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C76",
+      "claim": "Crosstalk of LPM and IM has been reported previously in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding of various upregulated LPM markers in CEP83\u2212/\u2212 cells starting from day 7 suggests that CEP83 function may be involved in fine-tuning the balance of LPM and IM, thereby contributing to lineage decisions during mesoderm formation. Crosstalk of LPM and IM has been reported previously in zebrafish, overexpression of LPM transcription factors Scl/Tal1 and Lmo2 induces ectopic vessel and blood specification while inhibiting IM formation (Gering et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gering et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "1408a2a0-aeb4-4ac4-be4c-cd01a3164272",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C77",
+      "claim": "Overexpression of LPM transcription factors Scl/Tal1 and Lmo2 induces ectopic vessel and blood specification while inhibiting IM formation in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosstalk of LPM and IM has been reported previously in zebrafish, overexpression of LPM transcription factors Scl/Tal1 and Lmo2 induces ectopic vessel and blood specification while inhibiting IM formation (Gering et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gering et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "28a314cc-d0f8-4678-b023-a20338473bfc",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C78",
+      "claim": "The LPM transcription factor Hand2 is critical in determining the size of the IM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the LPM transcription factor Hand2 is critical in determining the size of the IM, while natively expressed in the IM-adjacent LPM progenitors that form mesothelia (Barbosa et al., 2007Perens et al., 2016; Prummel et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Barbosa et al., 2007; Perens et al., 2016; Prummel et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "e628716f-a470-4512-a50d-42f9f925d71b",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C79",
+      "claim": "Loss of Hand2 in zebrafish results in an expanded IM.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Hand2 in zebrafish results in an expanded IM, whereas Hand2 overexpression reduces or abolishes the IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies about Hand2 function in zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "1d87b557-e13d-4320-aac0-0873c379c382",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C80",
+      "claim": "Hand2 overexpression reduces or abolishes the IM in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Hand2 in zebrafish results in an expanded IM, whereas Hand2 overexpression reduces or abolishes the IM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on cited studies about Hand2 function in zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "365d3297-98ef-496c-afee-b20107f5f782",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C81",
+      "claim": "HAND2 was among the most strongly induced transcripts in CEP83\u2212/\u2212 cells at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HAND2 was among the most strongly induced transcripts in our CEP83\u2212/\u2212 cells at day 7; connecting with the developmental role of Hand2 in IM formation, these observations suggest that HAND2 expression in CEP83-deficient cells may have contributed to the reduced numbers of nephron progenitor cells at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "e2130471-e9ba-408f-ae9e-24a5932b0a1b",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C82",
+      "claim": "HAND2 expression in CEP83-deficient cells may have contributed to the reduced numbers of nephron progenitor cells at day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HAND2 was among the most strongly induced transcripts in our CEP83\u2212/\u2212 cells at day 7; connecting with the developmental role of Hand2 in IM formation, these observations suggest that HAND2 expression in CEP83-deficient cells may have contributed to the reduced numbers of nephron progenitor cells at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known role of Hand2 in IM formation and its upregulation in CEP83-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "90c1a7c1-7f79-4639-8596-9da4a7092782",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "claim_id": "C83",
+      "claim": "CEP83-deficient cells at D25 expressed increased levels of LPM genes expressed in mesothelial (including OSR1, CXCL12, HAND1/2), cardiopharyngeal (including ISL1, TBX1), and endothelial/hematopoietic (including TAL1, LMO2, GATA2) progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, CEP83-deficient cells at D25 expressed increased levels of LPM genes expressed in mesothelial (including OSR1, CXCL12, HAND1/2), cardiopharyngeal (including ISL1, TBX1), and endothelial/hematopoietic (including TAL1, LMO2, GATA2) progenitors (Prummel et al., 2020; Prummel et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in Figures 6 and 7 and citations to Prummel et al., 2020 and 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated three CEP83 knockout hiPSC clones (KO1, KO2, KO3) with deletions in exon 7 leading to premature stop codons and complete loss of CEP83 protein. These knockout clones were morphologically and transcriptionally indistinguishable from wildtype clones at baseline, with identical karyotypes confirmed by SNP analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are well-supported by DNA sequencing (Figure 1B-D), Western blot (Figure 1E), RNA-seq heatmaps (Figure 1\u2014figure supplement 1B), qRT-PCR (Figure 1\u2014figure supplement 1C), brightfield microscopy (Figure 1\u2014figure supplement 2A), and karyotype analysis (Figure 1\u2014figure supplement 2C). The molecular characterization is thorough and appropriate controls are included.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At day 7 of differentiation, CEP83-deficient cells exhibited morphologically normal appearance by brightfield microscopy but displayed severe ciliary defects: the percentage of ciliated cells decreased from ~30% in WT to <10% in KO, and remaining cilia were abnormally elongated (2-5 \u03bcm in WT vs 5-13 \u03bcm in KO).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C28-C31 are strongly supported by brightfield images (Figure 2B-C) and immunofluorescence quantification (Figure 2D-G). The ciliary phenotype is consistent with known CEP83 function in ciliogenesis. Statistical analysis shows significant differences (p<0.0001) with appropriate sample sizes (n=3 clones per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Upon organoid culture (day 25), wildtype cells formed patterned kidney structures including glomerular-like and tubular structures with appropriate marker expression (NPHS1, LTL, CDH1), while CEP83-deficient organoids failed to generate kidney cell types, instead forming monomorphic mesenchyme-like cells lacking kidney markers (PAX2, PAX8, NPHS1, LRP2, HNF1B, etc.).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C32-C36 are well-supported by histology (Figure 3C-D), immunofluorescence (Figure 3E-F), quantitative analysis (Figure 3G), and bulk RNA-seq (Figure 3H-L, Figure 3\u2014figure supplement 2). The failure of kidney differentiation is convincingly demonstrated across multiple orthogonal assays. Ciliary defects persist in organoids (C35, Figure 2\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "ab9aa261-526d-43df-a3c7-9a363d016646",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both WT and CEP83-deficient cells showed marked upregulation of nephron progenitor markers (GATA3, HOXB7, HOXD11, EYA1) at day 7, suggesting that the initial differentiation path from pluripotent cells to IM nephron progenitors was largely intact in CEP83-deficient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C37 is supported by bulk RNA-seq (Figure 4\u2014figure supplement 2), but the inference in C38 that the differentiation path is 'largely intact' is problematic. While these markers are upregulated, subsequent single-cell analysis (C47, C49) shows reduced proportions of cells in progenitor cluster 1 and decreased expression of key IM genes in KO cells, contradicting the 'largely intact' interpretation. This represents an internal inconsistency in the manuscript's conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "dd85a67b-0c17-478b-a52d-2b726c9aec88",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of 27,328 cells at day 7 revealed 10 distinct clusters, with genotype (WT vs KO) driving 54% of expression variation (PC1) and batch effects driving 51% (PC2). Clusters 1, 3, and 4 represented kidney progenitors/nascent nephrons in different cell cycle phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by the scRNA-seq data presentation (Figure 4A-C). However, the PCA analysis reveals a substantial batch effect (51% of variation), which is concerning. While the authors acknowledge this, it's unclear whether batch correction was applied before downstream analyses. The cluster assignments appear reasonable based on marker gene expression (Figure 4C).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "32f63476-9bc7-4226-aded-4bb56e366a84",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CEP83-deficient cells showed increased proportions of damaged/apoptotic cells (cluster 5) expressing high mitochondrial RNA levels, with caspase-3 staining confirming significantly more apoptotic cells in KO samples compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by cluster proportion analysis (Figure 4\u2014figure supplement 3A), mitochondrial RNA expression (Figure 4\u2014figure supplement 3B-C), and caspase-3 immunofluorescence (Figure 4\u2014figure supplement 3D-F). The increased apoptosis is consistent with loss of critical kidney progenitor genes and may contribute to the differentiation defect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "c4dc0cd5-c15a-4e3c-9f8a-8f3e9f4332ca",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Within kidney progenitor clusters (1, 3, 4), CEP83-deficient cells showed reduced representation in cluster 1 (11.9-12.5% in KO vs 25.9-36.3% in WT) and significantly decreased expression of key IM markers (PAX8, EYA1, CITED1, HOXB7) as well as ciliary genes (OFD1, PCM1, RAB11A).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are well-supported by cluster proportion analysis (Figure 5A-C), violin plots (Figure 5D-F), and supplementary figures (Figure 5\u2014figure supplements 1-3). The statistical significance is clearly demonstrated (p<0.05 to p<0.0001). This represents a key molecular phenotype linking CEP83 loss to impaired IM specification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "d45b02f1-c6ee-462a-8700-c27f8342be2e",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CEP83-deficient cells at day 7 showed consistent upregulation of early LPM markers (OSR1, FOXF1, FOXF2, FENDRR, HAND1, HAND2, CXCL12, GATA5, GATA6) in both bulk and single-cell RNA-seq, with scoring analysis indicating a shift from IM-like to LPM-like phenotype. This LPM signature persisted at day 25.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by bulk RNA-seq (Figure 6A-I, left panels), scRNA-seq (Figure 6A-I, right panels), and scoring analysis (Figure 6\u2014figure supplement 1). The consistency across multiple genes and both sequencing modalities strengthens the conclusion. However, the mechanistic link between CEP83 loss and LPM marker upregulation remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "a41c6472-c088-4fae-baf2-ea7b5b2d8db3",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CEP83-deficient organoids at day 25 showed significant enrichment for orthologs of zebrafish early LPM genes (p=0.006), including genes indicative of cardiac/cardiopharyngeal (ISL1, TBX1) and vascular progenitor (SOX7, SOX11, NAP1L3, LMO2, GATA2) differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by enrichment analysis (Figure 6\u2014figure supplement 2) and bulk RNA-seq (Figure 7A-G). The cross-species comparison with zebrafish LPM data adds validation. However, the functional significance of these markers in human organoids requires further validation (e.g., protein expression, functional assays for cardiac/vascular cell types).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "9a4573f1-aa3e-49b6-8739-792b7ab223d6",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Several upregulated LPM genes (OSR1, FOXF1, FOXF2) are downstream of hedgehog signaling, HAND2 is upstream of hedgehog signaling, and CEP83-deficient cells showed significant upregulation of hedgehog signaling components GLI1 and PTCH1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are supported by citations (C58-C59) and bulk RNA-seq data (C60, Figure 6\u2014figure supplement 3). This provides a potential mechanistic link between CEP83/cilia function and the observed lineage defect, as primary cilia are critical for hedgehog signaling. However, direct functional evidence for altered hedgehog signaling (e.g., pathway reporter assays, rescue experiments) is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "539245ed-b72b-4da5-a26f-2a12c845ac48",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that CEP83 influences hiPSC differentiation toward intermediate mesoderm and regulates the balance of IM and LPM formation from human pluripotent stem cells, identifying a potential link between centriolar/ciliary function and mesodermal lineage induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C14 represent the main conclusions of the study. These are well-supported by the collective evidence showing: (1) ciliary defects in CEP83-deficient cells, (2) decreased IM marker expression, (3) increased LPM marker expression, and (4) failure to form kidney structures with apparent shift toward LPM-derived lineages. However, the mechanistic link remains correlative rather than causally established. The term 'regulates the balance' implies active control, but the data show loss-of-function phenotypes without rescue experiments or gain-of-function studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "8f8e0479-fc25-44ef-80aa-6e828c07bb98",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss that primary cilia are critically involved in hedgehog signaling, which is important for mesodermal lineage decisions during gastrulation, and that the downregulated IM genes (PAX8, EYA1, HOXB7) are essential for normal kidney development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 are well-supported by appropriate citations and represent established knowledge in the field. These provide important context for interpreting the experimental findings and support the proposed mechanistic framework linking CEP83/cilia to hedgehog signaling and kidney development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "24121346-d2c6-4438-95dd-8e6bb8dd064f",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors discuss that LPM-IM crosstalk has been reported in zebrafish, where the LPM transcription factor Hand2 critically determines IM size. HAND2 was among the most strongly induced transcripts in CEP83-deficient cells at day 7, potentially contributing to reduced nephron progenitor numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 are supported by citations (C76-C80) and RNA-seq data (C81, Figure 6F). The inference in C82 is reasonable given the known role of Hand2 in IM formation, but remains speculative without functional validation (e.g., HAND2 knockdown rescue experiments). This represents an interesting hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "63d9df0c-8e65-42df-a503-fd5556105da8",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss clinical relevance: 11 patients with biallelic CEP83 mutations have been reported (8 with kidney phenotypes), most carrying missense mutations suggesting partial function preservation, while one patient with presumed complete loss showed more severe multi-organ dysfunction. Mouse Cep83 knockout shows midembryonic lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 are supported by appropriate citations to clinical reports and mouse phenotype databases. This discussion appropriately contextualizes the experimental findings within human disease and animal models. However, the connection between the in vitro phenotypes observed and the clinical kidney disease remains indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    },
+    {
+      "id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb",
+      "content_id": "9db3630b-673c-4703-a508-e7aa6e697fa5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors discuss that defects in centriolar components or cilia have been linked to severe kidney phenotypes in mice and humans, including centrosome amplification, KIF14 loss, Kif3a defects, and IFT25/IFT27 mutations, all associated with renal agenesis, hypoplasia, or reduced nephron numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 are well-supported by appropriate citations and provide important context showing that the observed phenotypes are consistent with a broader pattern linking cilia/centrosome function to kidney development. This strengthens the biological plausibility of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:27:35.832037Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ce23e74-ec11-4594-850a-2cf9322473bf",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "1d454d8a-3307-4f48-b70a-058f7deefca3",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "a7025837-62a7-4601-98e9-8667eb88645b",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "40c59cac-21ef-426d-887e-d18971f38c5b",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "626bf87a-8184-4c78-8f59-655f761759b0",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "16e573e1-6643-4159-85d9-c8a3a4ddc0ac",
+      "result_id": "a9c85108-a74b-4650-8dc1-9c6f83c51efe"
+    },
+    {
+      "claim_id": "13b37dbf-01d0-4815-946f-378668fddea3",
+      "result_id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1"
+    },
+    {
+      "claim_id": "fa989653-efc3-4c4b-a8de-e1e8dd8927c2",
+      "result_id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1"
+    },
+    {
+      "claim_id": "92347657-5cf3-4188-9231-299a2ac48785",
+      "result_id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1"
+    },
+    {
+      "claim_id": "eb72b565-6e3f-4155-ab63-c647edcf1341",
+      "result_id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1"
+    },
+    {
+      "claim_id": "f31b4c42-b290-4254-b1f0-70bfadbab94d",
+      "result_id": "c2c529da-40de-47c2-a0f0-ccff9333ddd1"
+    },
+    {
+      "claim_id": "196bb2c9-9458-48cd-aadf-d8b1b715f080",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "8bae1f49-45a8-4e19-861c-3e2a1c8ad0b6",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "a0a9c801-b373-4bda-9965-71bf184183b2",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "48c53a75-1af8-4d2a-a7ec-0ebde4478ad1",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "08778b68-7767-4ae5-811f-e67b387de3b3",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "5a1cd850-c336-43ef-b79d-bfd5b43cde37",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "6ffcf9f8-6c76-4b10-b306-59bd9b9737f7",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "6f13e02b-bf64-4be4-a0df-8c37738a616a",
+      "result_id": "ce29b47f-5ca2-464e-b23e-d23ac43e873d"
+    },
+    {
+      "claim_id": "ff5d661a-67f7-4f0b-8335-1a363e04d42d",
+      "result_id": "ab9aa261-526d-43df-a3c7-9a363d016646"
+    },
+    {
+      "claim_id": "4eda6f47-932b-4072-a453-dae4502477fa",
+      "result_id": "ab9aa261-526d-43df-a3c7-9a363d016646"
+    },
+    {
+      "claim_id": "74322532-e630-416e-ab3c-fc403db483a4",
+      "result_id": "dd85a67b-0c17-478b-a52d-2b726c9aec88"
+    },
+    {
+      "claim_id": "0b929aaf-0f6b-4d3b-a80d-a3172172edeb",
+      "result_id": "dd85a67b-0c17-478b-a52d-2b726c9aec88"
+    },
+    {
+      "claim_id": "98a89637-d990-4719-a4dd-5713e9d10f06",
+      "result_id": "dd85a67b-0c17-478b-a52d-2b726c9aec88"
+    },
+    {
+      "claim_id": "0a35346d-a6ef-4907-ad63-63364ec11e8c",
+      "result_id": "dd85a67b-0c17-478b-a52d-2b726c9aec88"
+    },
+    {
+      "claim_id": "8bdb86b8-5395-44ad-afb0-5496d5179b22",
+      "result_id": "dd85a67b-0c17-478b-a52d-2b726c9aec88"
+    },
+    {
+      "claim_id": "63003369-f2c1-459c-8db4-d30054cc4f23",
+      "result_id": "32f63476-9bc7-4226-aded-4bb56e366a84"
+    },
+    {
+      "claim_id": "48aa9eea-cad3-4ef9-9ac6-46af3a211bbb",
+      "result_id": "32f63476-9bc7-4226-aded-4bb56e366a84"
+    },
+    {
+      "claim_id": "46101f78-4f9d-4f6a-bfd5-349dfb69fd7f",
+      "result_id": "32f63476-9bc7-4226-aded-4bb56e366a84"
+    },
+    {
+      "claim_id": "a635222b-8273-45f4-b2ce-6b25044f36d4",
+      "result_id": "c4dc0cd5-c15a-4e3c-9f8a-8f3e9f4332ca"
+    },
+    {
+      "claim_id": "baf2c34c-ba5e-4a7c-95b3-424b304e6ad8",
+      "result_id": "c4dc0cd5-c15a-4e3c-9f8a-8f3e9f4332ca"
+    },
+    {
+      "claim_id": "34870614-28b9-43c9-b6d6-7059a4daf5bb",
+      "result_id": "c4dc0cd5-c15a-4e3c-9f8a-8f3e9f4332ca"
+    },
+    {
+      "claim_id": "d61a2616-3b60-47cb-ba49-9545242b631d",
+      "result_id": "c4dc0cd5-c15a-4e3c-9f8a-8f3e9f4332ca"
+    },
+    {
+      "claim_id": "017a49b8-352e-4594-8265-eab1aa7b3aba",
+      "result_id": "d45b02f1-c6ee-462a-8700-c27f8342be2e"
+    },
+    {
+      "claim_id": "1f543643-00c7-43a7-9aff-5c82fcab0f7d",
+      "result_id": "d45b02f1-c6ee-462a-8700-c27f8342be2e"
+    },
+    {
+      "claim_id": "4268b920-260d-4e0b-8ff7-9611f08b6b78",
+      "result_id": "d45b02f1-c6ee-462a-8700-c27f8342be2e"
+    },
+    {
+      "claim_id": "109a8f70-c1ba-4f57-a7e4-eb3e48bf9af4",
+      "result_id": "d45b02f1-c6ee-462a-8700-c27f8342be2e"
+    },
+    {
+      "claim_id": "3e8728d3-8756-42fc-a085-6f40d450a6aa",
+      "result_id": "d45b02f1-c6ee-462a-8700-c27f8342be2e"
+    },
+    {
+      "claim_id": "90c969b9-10dd-4081-8f0e-4dbb79fae5ee",
+      "result_id": "a41c6472-c088-4fae-baf2-ea7b5b2d8db3"
+    },
+    {
+      "claim_id": "35fbe870-49e4-4b57-8681-89db2d2e3309",
+      "result_id": "a41c6472-c088-4fae-baf2-ea7b5b2d8db3"
+    },
+    {
+      "claim_id": "3c14e3d0-42f5-40b7-924d-db6056cad502",
+      "result_id": "9a4573f1-aa3e-49b6-8739-792b7ab223d6"
+    },
+    {
+      "claim_id": "c806e34a-6c94-4341-b066-6316f7c31608",
+      "result_id": "9a4573f1-aa3e-49b6-8739-792b7ab223d6"
+    },
+    {
+      "claim_id": "3a8ee2ae-507a-4309-988e-67555011fcff",
+      "result_id": "9a4573f1-aa3e-49b6-8739-792b7ab223d6"
+    },
+    {
+      "claim_id": "147d5383-c9b5-46d4-9299-a4426e8124f0",
+      "result_id": "539245ed-b72b-4da5-a26f-2a12c845ac48"
+    },
+    {
+      "claim_id": "02b1f516-0111-406a-bc3e-245c6b714c56",
+      "result_id": "539245ed-b72b-4da5-a26f-2a12c845ac48"
+    },
+    {
+      "claim_id": "97dec5f8-4cf3-45a8-aaa3-e907b84a8727",
+      "result_id": "8f8e0479-fc25-44ef-80aa-6e828c07bb98"
+    },
+    {
+      "claim_id": "e24df403-6020-4ba6-8441-92b8388bc9fa",
+      "result_id": "8f8e0479-fc25-44ef-80aa-6e828c07bb98"
+    },
+    {
+      "claim_id": "040e190c-dd37-447a-8a6c-91d71c410934",
+      "result_id": "8f8e0479-fc25-44ef-80aa-6e828c07bb98"
+    },
+    {
+      "claim_id": "d1700c97-2e63-4577-9a79-a8b8db91b255",
+      "result_id": "8f8e0479-fc25-44ef-80aa-6e828c07bb98"
+    },
+    {
+      "claim_id": "2edf71bc-08ef-44c2-8e75-58e0007a839f",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "1408a2a0-aeb4-4ac4-be4c-cd01a3164272",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "28a314cc-d0f8-4678-b023-a20338473bfc",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "e628716f-a470-4512-a50d-42f9f925d71b",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "1d87b557-e13d-4320-aac0-0873c379c382",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "365d3297-98ef-496c-afee-b20107f5f782",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "e2130471-e9ba-408f-ae9e-24a5932b0a1b",
+      "result_id": "24121346-d2c6-4438-95dd-8e6bb8dd064f"
+    },
+    {
+      "claim_id": "bc00a3b6-d084-44c9-9c4a-b14c84687ff4",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "a5854664-70c8-4e78-8755-2187c85405fd",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "7fba9e3e-858c-4e9e-bdb7-8b9a44af3c4b",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "838e9fd0-9832-4ff9-b744-5b41ed20e0f0",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "f52d9fef-eaab-4e6f-835a-431a66e96f82",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "b9aa22ac-7ed7-45f0-a1d0-4046f71ae9f4",
+      "result_id": "63d9df0c-8e65-42df-a503-fd5556105da8"
+    },
+    {
+      "claim_id": "136c3c24-6d70-4ba7-9f89-1c9900670f69",
+      "result_id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb"
+    },
+    {
+      "claim_id": "24d4dd07-11c6-4930-8843-245d0fe7cf68",
+      "result_id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb"
+    },
+    {
+      "claim_id": "cd312100-cd6a-4ee3-96be-9875a1d49f95",
+      "result_id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb"
+    },
+    {
+      "claim_id": "445b4875-6492-4a4f-aa40-796f1cce274d",
+      "result_id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb"
+    },
+    {
+      "claim_id": "9e6b4fb5-9089-48ac-a395-29cd857204bc",
+      "result_id": "2a82ceb7-df63-4b42-83ce-07457c82f2eb"
+    }
+  ],
+  "comparisons": []
+}

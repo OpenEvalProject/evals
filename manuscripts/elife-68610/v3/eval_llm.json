@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Age-related diseases are associated with organelle dysfunction, including mitochondrial OXPHOS deficits, lysosomal proteostasis impairment, ER stress, and nuclear disruption, as documented in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C11 collectively establish the background that age-related diseases are accompanied by organelle dysfunction. All claims are supported by appropriate citations to established literature, providing a well-documented foundation for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Age-related diseases show substantial heritability, and mitochondrial function measures are heritable, while recessive mutations in organelle genes cause inherited syndromes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C14 establish the genetic basis for studying organelle-related heritability in age-related diseases. All claims are supported by appropriate citations (Wang et al. 2017, Frazier et al. 2019, Curran et al. 2007, Xing et al. 2008), providing justification for the genetic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "24 age-related traits with heritability Z-score > 4 were selected, showing diverse genetic architectures with genetic correlations generally exceeding phenotypic correlations and a cardiometabolic trait module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the trait selection and correlation analysis. The selection criteria are clearly stated (C21), the observation about genetic vs phenotypic correlations is data-driven with a plausible explanation (C22), and the cardiometabolic module finding is consistent with prior work (C23).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GWAS Catalog analysis revealed no significant enrichment of mitochondrial genes among age-related traits, with six traits showing significant depletion and MitoCarta genes enriched in fewer traits than random protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present consistent findings from the GWAS Catalog analysis showing lack of mitochondrial gene enrichment. The empirical null distribution analysis (C26, p=0.014) strengthens the negative finding by demonstrating it is not due to chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C34",
+      "C35"
+    ],
+    "result": "No enrichment of nucDNA MitoCarta genes was found in UKB using S-LDSC and MAGMA, replicated in independent meta-analyses including well-powered studies of Parkinson's and Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C34-C35 demonstrate robust negative findings across multiple methods (S-LDSC, MAGMA), cohorts (UKB, meta-analyses), and window sizes. The replication across independent cohorts and inclusion of neurological diseases strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Methods validation showed successful replication of known tissue-specific enrichments, and MitoCarta genes have widespread cis-eQTLs, confirming methodological adequacy and genetic regulation of mitochondrial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 provide critical validation that the methods can detect known enrichments and that mitochondrial genes are subject to common genetic regulation. This addresses potential concerns that negative findings might be due to methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "No significant mtDNA associations were found for 21 age-related traits in UKB, but associations were successfully replicated for creatinine and AST, validating the mtDNA-GWAS approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 present negative findings for age-related traits while demonstrating methodological validity through positive control replication. The successful replication of known associations (C33) validates the approach used to generate the negative results (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Among 10 organelles tested, only the nucleus showed heritability enrichment across age-related traits, explaining >50% of disease heritability despite representing ~35% of SNPs, replicated using MAGMA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 present the central positive finding of nuclear enrichment. The finding is supported by multiple methods (S-LDSC, MAGMA), window sizes, and shows substantial effect size (>50% heritability explained). The replication strengthens confidence in this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Within the nucleus, enrichment was found for chromosome-localizing genes, primarily attributable to transcription factors, with replication in several meta-analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 trace the nuclear enrichment signal to transcription factors through systematic partitioning. The finding is statistically significant (q<0.1 for multiple traits) and partially replicated in independent cohorts, though replication was not complete across all meta-analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Non-zinc finger TFs showed enrichment similar to all TFs, while KRAB domain-containing zinc fingers were largely devoid of enrichment, indicating non-KRAB TFs have outsize influence on age-associated disease heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide functional dissection of TF enrichment. The differential enrichment between TF subtypes is data-driven and biologically interpretable, with KRAB ZFs being recently evolved and showing different patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Nuclear enrichment was found for parental lifespan and healthspan, with significant enrichment for TFs and chromosome-localizing proteins in both aging phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 extend the findings to aging traits. While healthspan showed only suggestive enrichment with MAGMA (p=0.058), S-LDSC showed significant enrichment (p=0.0016), and both methods showed significant enrichment for TFs and chromosome proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mitochondrial genes are among the least constrained organelles with high pLoF tolerance, while the nucleus is highly constrained, second only to haploinsufficient genes; even Mendelian mitochondrial disease genes show high pLoF tolerance compared to TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 present constraint analysis using gnomAD data showing differential constraint between organelles. The findings are consistent with the enrichment results and provide mechanistic insight. The comparison to curated haploinsufficient genes provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Highly constrained TF subsets show GWAS enrichment relative to unconstrained subsets, and the fitness cost of heterozygous variation in mitochondrial genes is far lower than among TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 link constraint to enrichment patterns. The inclusion of LOEUF as a covariate reduced but did not eliminate TF enrichment, suggesting constraint partially explains but is not the sole driver of enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Mitochondrial disease genes show recessive inheritance consistent with haplosufficiency, while TFs are haploinsufficient with even regulatory variants causing Mendelian disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 integrate the study's findings with established genetic disease patterns. All claims are supported by appropriate citations and are consistent with the constraint analysis findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "TF enrichment was observed for 10 diseases plus lifespan/healthspan, consistent with pLoF intolerance, suggesting TF variation produces larger effect sizes and represents important genetic levers for disease heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 synthesize the enrichment and constraint findings into a coherent interpretation. The conclusion about larger effect sizes is a reasonable inference from the combined enrichment and constraint data, though direct effect size measurements are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mitochondrial haplosufficiency may arise from metabolic network buffering and vestigial intra-organelle buffering from their microbial origin, with feedback control mechanisms ensuring robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide mechanistic explanations for mitochondrial haplosufficiency. C63-C64, C66-C67 are supported by appropriate citations. C65 is explicitly speculative. The explanations are biologically plausible and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Common variation is the largest source of narrow-sense heritability accounting for most disease heritability, and a previous rare variant analysis in T2D failed to show OXPHOS gene enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 justify the focus on common variants and provide additional support for the negative mitochondrial findings. Both claims are supported by appropriate citations (Golan et al. 2014, Polderman et al. 2015, Fuchsberger et al. 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Mitochondrial dysfunction occurs in infarcts following vessel occlusion in laboratory models, but pharmacological blockade of the mitochondrial permeability transition pore can mitigate injury despite genetic variants not influencing infarct risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 illustrate the distinction between mitochondrial dysfunction as a consequence versus genetic cause of disease. Both claims are supported by appropriate citations and help contextualize the negative genetic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Nuclear enrichment findings build on prior work showing progeroid syndromes result from nuclear defects, telomere length as an aging marker, and enrichment of disease heritability in histone marks and TF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 contextualize the nuclear enrichment findings within established literature. All claims are supported by appropriate citations and demonstrate consistency between the current findings and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study finds no enrichment for mitochondrial genes but identifies nuclear TFs as the primary source of age-related trait heritability, with mitochondrial genes being haplosufficient and TFs haploinsufficient, highlighting gene-regulatory pathways over organelle physiology in disease risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 represent the core conclusions of the manuscript. The negative mitochondrial findings (C15) and positive nuclear/TF findings (C16-C17) are well-supported by extensive analyses. The constraint findings (C18-C19) provide mechanistic insight. The overall conclusion (C20) is a reasonable synthesis of the data.",
+    "result_type": "MAJOR"
+  }
+]

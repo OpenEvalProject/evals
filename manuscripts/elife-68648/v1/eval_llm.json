@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study used a dual approach combining genetic (Rad1 cKO) and pharmacological (ATR inhibitor AZ20) methods to identify ATR-dependent phosphorylation events in mouse testes. After filtering, 14,956 phosphorylation sites were quantified, with 401 sites dependent on both ATR and RAD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C37, C38 provide quantitative results from the phosphoproteomic analysis. Claims C83-C86 describe the experimental strategy and its rationale. The dual approach is well-justified and the filtering criteria are clearly described, providing confidence in the identified phosphorylation events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C74",
+      "C99"
+    ],
+    "result": "Four hours of ATR inhibitor treatment was sufficient to cause robust reduction in \u03b3H2AX localization at the sex body in pachytene cells without causing major changes in testis cellular composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C99 are supported by immunofluorescence data (Figure 1C-D), and C74 is supported by histological analysis (Figure 5\u2014figure supplement 3A-B). This validates the 4-hour timepoint as appropriate for capturing direct ATR signaling effects while minimizing indirect cellular changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Quadrant 2 (Q2) contained approximately twofold more differentially phosphorylated peptides compared to other quadrants and was enriched for gene ontology categories including nucleic acid metabolism, chromosome organization, and cell cycle, consistent with RAD1-dependent ATR activation being the primary mode during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C41 are directly supported by the phosphoproteomic data analysis (Figure 2A-C). Claim C40 is a reasonable inference from the biased distribution, though it remains a model rather than direct proof of mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C87"
+    ],
+    "result": "MDC1, a known ATR target, showed 29 phosphorylation sites including 8 ATR/RAD1-dependent sites in Q2. Phosphorylation at threonine 4 showed significant loss at the sex body upon ATR inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by phosphoproteomic data and immunofluorescence validation (Figure 2F-G). This serves as positive control validating the dataset, as MDC1 is an established ATR target (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Q2 S/T-Q sites were enriched in DNA repair proteins (MDC1, UIMC1, RAD50, NBN) and RNA metabolism/chromatin regulation proteins (SETX, XPO5, RANBP3), with high ATR dependency observed for RNA metabolism proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by phosphoproteomic analysis (Figure 3A-E). The identification of S/T-Q motif sites in these proteins is consistent with direct ATR phosphorylation, though direct kinase-substrate relationships would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Senataxin accumulation at the sex body was significantly reduced in ATRi-treated mice and absent in Rad1 cKO mice, suggesting ATR promotes Senataxin recruitment/retention and that they may act in a feed-forward loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are supported by immunofluorescence data (Figure 4A-D). However, C54 is an inference and C55 is explicitly speculative. While the localization data are convincing, the feed-forward loop model requires additional mechanistic validation and could represent correlation rather than causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RANBP3 phosphorylation at serine 283 was downregulated upon ATR inhibition and RAD1 loss. RANBP3 localizes to the sex body in control cells but this localization is lost upon ATR inhibition and in Rad1 cKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by phosphoproteomic and immunofluorescence data (Figure 4E-H). Claim C59 is a reasonable inference from the data, though the mechanism (recruitment vs. retention) remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Most Q2 phosphorylation sites are not in the S/T-Q motif, with a large fraction containing proline at the +1 position. The proportion of S/T-P sites increased from ~42% at 4 hours to >65% at 2.5-3 days, suggesting indirect regulation through ATR-controlled kinases or phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62, C63 are quantitative observations from the data (Figure 5A). Claims C61 and C64 are reasonable inferences from these observations, with the temporal dynamics supporting indirect regulation, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Motif analysis revealed enrichment of an S/T-P-X-K motif in ATR/RAD1-dependent sites, with >15% of Q2 sites in the 2.5-3 day dataset containing this motif compared to 3% in unregulated sites. This motif matches the canonical preference for CDK1/CDK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by motif analysis (Figure 5B, Figure 5\u2014figure supplement 1). Claim C70 is a reasonable inference, and C71 is based on established knowledge of CDK substrate specificity. The enrichment is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C11"
+    ],
+    "result": "CDK2 localizes to chromosome cores and ends, but autosomal localization is significantly disrupted by ATR inhibition, observable as early as 4 hours after treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C11 are supported by immunofluorescence data (Figure 5C-D). The rapid effect at 4 hours is consistent with direct regulation, though the mechanism linking ATR to CDK2 localization requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Gene ontology analysis of S/T-P-X-K motif proteins showed enrichment for cell cycle regulation genes. Several piRNA biogenesis proteins (TDRD1, TDRD9, TDRD5, MAEL, PIWIL2) showed ATR/RAD1-dependent phosphorylation at S/T-P sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C81-C82 are supported by gene ontology analysis and phosphoproteomic data (Figure 5E-F). However, the authors acknowledge that some changes may reflect protein abundance rather than regulated phosphorylation, introducing some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C92",
+      "C96",
+      "C103"
+    ],
+    "result": "The authors propose that ATR-mediated phosphorylation of RNA processing factors may play central roles in MSCI and meiotic progression, potentially through checkpoint-independent processes, and that ATR may activate CDK2 during prophase I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89, C90, C92, C96, and C103 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While supported by the data presented, these models require substantial additional experimental validation including functional studies and direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C93"
+    ],
+    "result": "The observed dependency of S/T-P-X-K motif phosphorylation on ATR in meiosis is opposite to mitotic cells, where ATR inhibits CDK activity. In meiosis, high ATR activity is required for progression rather than causing arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by prior literature (citation provided). Claims C94-C95 are inferences comparing meiotic and mitotic ATR signaling. The contrast is well-supported by the data and represents an important conceptual advance, though the underlying mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "Phosphorylation of phosphatases (PPM1G, PP1R7) was reduced upon ATR inhibition. The rapid loss of H2AX phosphorylation suggests a constant phosphorylation cycle involving ATR kinase activity and constitutive phosphatase action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is supported by phosphoproteomic data. However, C98 is explicitly speculative, and C100 is an inference. While the rapid dynamics of H2AX dephosphorylation support the phosphorylation cycle model, alternative explanations (e.g., rapid protein turnover) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C101",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The study establishes a comprehensive phosphoproteomic dataset revealing the complexity of ATR signaling in meiosis, which will serve as a framework for future mechanistic studies. Understanding ATR signaling in meiosis has medical implications for fertility effects of ATR inhibitors in cancer treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C101 are reasonable assessments of the work's impact. Claims C102 identifies an important outstanding question. Claims C104-C105 correctly identify medical relevance. These are appropriate contextual statements supported by the comprehensive dataset generated.",
+    "result_type": "MINOR"
+  }
+]

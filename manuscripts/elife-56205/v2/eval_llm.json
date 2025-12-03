@@ -1,0 +1,428 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "NSUN-1 is responsible for m5C methylation at position C2982 on C. elegans 26S rRNA. RNAi-mediated depletion of nsun-1 reduced total 26S rRNA m5C levels by 26-35% in different strains, and COBRA assays confirmed that nsun-1 depletion does not affect the NSUN-5-dependent C2381 methylation site. Both m5C sites are evolutionarily conserved and located near functionally important ribosomal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (HPLC quantification in C53-C54, C56-C57; COBRA assays in C58-C59; double depletion experiments in C57) consistently demonstrate NSUN-1's role in C2982 methylation. The observed ~25-35% reduction is less than the expected 50% for complete loss of one of two m5C sites, which the authors appropriately attribute to incomplete RNAi knockdown. The site-specific COBRA data (C58-C59) definitively shows nsun-1 does not affect C2381. Conservation data (C50-C51) strengthens biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "Depletion of nsun-1 or nsun-5 improves healthspan parameters including thermotolerance and midlife locomotion in C. elegans. Both nsun-1 and nsun-5 RNAi increased heat stress survival and enhanced locomotion at day 8 (nsun-1: +47.8%, p=0.009; nsun-5: +34.7%, p=0.073) and day 12 of adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thermotolerance data (C3, C62) shows clear statistical significance with pooled replicates (n\u2265100, p<0.001). Locomotion improvements (C63-C64) are supported by quantitative tracking data with appropriate sample sizes (n\u226520). The p-value for nsun-5 at day 8 (p=0.073) approaches but does not reach significance, which the authors appropriately describe as a trend. Multiple independent replicates strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C66",
+      "C67"
+    ],
+    "result": "Soma-specific but not germline-specific or whole-body adult-onset depletion of nsun-1 extends lifespan by approximately 10%. Whole-body adult-onset nsun-1 RNAi in N2 wildtype animals did not affect lifespan, while tissue-specific RNAi revealed that somatic depletion increases mean lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tissue-specific lifespan data (C67) is reproducible across two independent experiments with appropriate sample sizes (n=90 per condition) and statistical significance (p<0.01). The lack of effect with whole-body RNAi in N2 (C61) and germline-specific RNAi (C66) provides important negative controls. The authors appropriately discuss that this tissue-specificity may explain discrepancies with prior literature using RNAi-hypersensitive strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C71",
+      "C72"
+    ],
+    "result": "Adult-onset nsun-1 but not nsun-5 depletion significantly impairs fecundity. nsun-1 RNAi reduced brood size by 42% while nsun-5 RNAi had minimal effect (2% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The brood size quantification (C71-C72) shows clear differential effects between nsun-1 and nsun-5 with appropriate statistical testing (one-way ANOVA with Dunnett's post-test, p<0.01) and three independent replicates (n=5 per condition per experiment). The magnitude of the nsun-1 effect (42% reduction) is substantial and biologically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "Soma-specific nsun-1 depletion reduces body size by approximately 20%, while germline-specific depletion has no effect. Soma-specific knockdown decreased body length by 23% on day 1, 11% on day 2, and 12% on day 3 of adulthood, phenocopying whole-body nsun-1 RNAi effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Body size measurements (C74, C81) are quantitative with sufficient sample sizes (n\u226518-41) and appropriate statistical testing (one-way ANOVA, t-tests with p<0.001). The tissue-specific data (C80-C81) clearly demonstrates soma-dependence. The consistency between whole-body and soma-specific effects strengthens the conclusion. nsun-5 serves as an appropriate negative control (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C76",
+      "C79",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "nsun-1 depletion causes severe gonad developmental defects with 100% penetrance, specifically impairing oocyte maturation from the pachytene zone while leaving the mitotic zone intact. This phenotype is observed with soma-specific but not germline-specific nsun-1 knockdown, indicating non-cell-autonomous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gonad morphology defects are extensively documented with multiple imaging approaches (DIC, DAPI staining, GFP reporters in C87-C93) showing consistent phenotypes. The 100% penetrance (C91) with n>50 animals is compelling. The tissue-specific data (C92-C93) definitively demonstrates soma-dependence, supporting non-cell-autonomous signaling. The specificity to the pachytene-to-oocyte transition (C88-C89) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "NSUN-1 is not required for ribosome biogenesis or global protein synthesis. nsun-1 depletion caused only mild accumulation of pre-rRNA intermediates, did not affect mature rRNA levels (26S/18S ratio = 1.0), and showed no changes in puromycin incorporation or polysome profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches consistently show no major effects on global translation: Northern blots for pre-rRNA processing (C94-C95), ethidium bromide staining for mature rRNAs (C96-C98), puromycin incorporation assays (C102), and polysome profiling (C103). Three independent replicates for puromycin assays and appropriate negative controls strengthen these findings. This is a critical negative result that redirects focus to translational specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C46",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "nsun-1 depletion causes selective translational remodeling affecting 52 mRNAs (p-adj<0.05) without affecting global translation. The pattern is highly specific to nsun-1, as nsun-5 knockout does not affect the same mRNAs. Translationally affected mRNAs show distinct 3' UTR characteristics (GC-content, length, folding energy) compared to unaffected mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C107) with appropriate statistical thresholds (adjusted p<0.05, fold-change >2) identifies specific translational changes. The comparison with nsun-5 knockout (C108) is a critical control demonstrating specificity. The 3' UTR analysis (C111-C112) provides mechanistic insight with statistical significance (p<0.05). Three biological replicates and proper normalization support data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C46",
+      "C113",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C126"
+    ],
+    "result": "nsun-1 depletion causes translational repression of collagen mRNAs, leading to reduced collagen deposition. Three collagens (col-35, col-36, col-37) are among the five most repressed genes, GO-term analysis shows enrichment for cuticle-related genes, and histological staining confirms reduced collagen protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: RNA-seq identifies specific collagen mRNAs as highly repressed (C120), GO-term enrichment is statistically significant (C119), and histological staining (Herovici) provides direct protein-level validation (C121-C122). The 3' UTR motif enrichment for GLD-1 binding sites (C113) provides mechanistic connection. Two independent histology experiments strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C123",
+      "C124",
+      "C125",
+      "C130"
+    ],
+    "result": "nsun-1 depletion causes loss of cuticle structural integrity and barrier function. 60% of nsun-1 RNAi animals showed gonad extrusion versus 0% in controls, and 56% showed cuticle permeability versus 10% in controls, likely resulting from reduced collagen expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gonad extrusion (C123-C124) and cuticle permeability (C125) assays provide quantitative phenotypic data with large sample sizes (n=46-220) and statistical significance (p<0.001). The categorical scoring system is clearly defined. The connection to collagen deficiency (C130) is logical given the translational data, though the causal link is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Translationally repressed mRNAs upon nsun-1 depletion are enriched for GLD-1, ASD-2, and RSP-3 binding motifs in their 3' UTRs. GLD-1::GFP localization is altered in nsun-1-depleted animals, restricted to a small portion of the loop region, suggesting nsun-1 is required for proper GLD-1 spatial regulation during gonad development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The motif enrichment analysis (C113) is statistically robust (p<0.001) and biologically relevant given the known roles of these RNA-binding proteins in development (C114-C116). The GLD-1::GFP localization data (C117) provides direct evidence of altered protein distribution. However, the mechanistic connection between nsun-1-mediated ribosome modification and GLD-1 localization (C118) remains inferential and would benefit from additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C133"
+    ],
+    "result": "Loss of nsun-1 has non-cell-autonomous effects, as soma-specific depletion affects germline development and function. This suggests that ribosomal modifications in somatic tissues can influence distinct cell populations through intercellular signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tissue-specific RNAi experiments clearly demonstrate that somatic nsun-1 depletion affects germline phenotypes (gonad morphology, fecundity, body size), while germline-specific depletion does not. This is strong evidence for non-cell-autonomous effects. However, the molecular mechanisms of this intercellular communication remain undefined, and the authors appropriately present this as a hypothesis requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C105",
+      "C106"
+    ],
+    "result": "NSUN-5 depletion, unlike NSUN-1 depletion, severely affects ribosome biogenesis by inhibiting ITS2 processing and reducing ribosomal subunit levels. Co-depletion of nsun-1 partially suppresses these nsun-5 defects, increasing the 26S/18S ratio from 1.0 to 1.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Northern blot data clearly shows ITS2 processing defects and accumulation of 3'-extended 5.8S forms in nsun-5 deletion (C100). The mature rRNA quantification (C105) demonstrates reduced subunit levels. The genetic interaction with nsun-1 depletion (C101) is intriguing and statistically supported, though the mechanism of suppression (C106) is inferential. This contrasts sharply with nsun-1's lack of effect on biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Complete knockout of nsun-1 appears to be lethal, as the tm6081 deletion allele is recessive lethal and no homozygous viable offspring were detected. However, a catalytic mutant lacking only methylation activity remains viable, suggesting NSUN-1 has essential functions beyond its methyltransferase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genotyping data (C52) clearly shows absence of homozygous tm6081 animals with appropriate sample sizes (30 F1 offspring from 3 F0 animals), consistent with lethality. The comparison with catalytic mutants (C140-C141) from other studies suggests pleiotropic functions. However, the tm6081 allele is a 3' UTR deletion, not a complete gene knockout, which complicates interpretation. The lethality could result from effects on mRNA stability or other regulatory functions rather than complete protein loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Both nsun-1 and nsun-5 mRNA levels constantly increase during C. elegans development from eggs through young adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data across five developmental stages shows progressive increase in expression for both genes. However, the statistical analysis (one-sample t-test against expected value of 1) did not reveal significant differences, which seems inconsistent with the claim of constant increase. The data presentation could be clearer about whether the trend is statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Larval-onset RNAi against nsun-1 or nsun-5 does not induce larval arrest, as evidenced by normal expression of the adult-specific marker COL-19::GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The COL-19::GFP reporter provides a clear developmental marker distinguishing larvae from adults. The observation that nsun-1 RNAi animals express this adult marker (C77) despite their small size and gonad defects demonstrates they progress through larval stages. This is an important control ruling out developmental arrest as an explanation for the observed phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Several mRNAs whose translation depends on NSUN-1 are associated with embryogenesis based on GO-term enrichment analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GO-term enrichment analysis identifies embryogenesis-related genes among translationally affected mRNAs. However, this result is not extensively developed in the manuscript, and no direct embryonic phenotypes are characterized. This represents a potential avenue for future investigation but is not a primary focus of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C69"
+    ],
+    "result": "Prior work by the authors and others established that NSUN-5 is responsible for m5C methylation at specific positions on large ribosomal subunit rRNA across species (C2381 in C. elegans, C2278 in yeast, C3782 in humans), and that loss of this methylation extends lifespan and stress resistance while altering ribosome structure and fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior published work with appropriate citations. The references are correctly attributed and provide necessary context for the current study. The 17% lifespan extension by nsun-5 depletion (C69) serves as an important comparison point for the nsun-1 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70"
+    ],
+    "result": "Background on aging theory and protein synthesis: The disposable soma theory posits a tradeoff between reproduction and somatic maintenance, reduced protein synthesis extends lifespan in multiple organisms, and the relationship between ribosome biogenesis and gonadogenesis in multicellular organisms is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established concepts in aging biology with appropriate citations. They provide necessary theoretical framework for interpreting the results. The statement about poor understanding of ribosome-gonad relationships (C21-C22) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on ribosome structure and modifications: Eukaryotic ribosomes contain ~80 proteins and 4 rRNAs with essential translation functions. Historically viewed as homogeneous, emerging evidence suggests ribosome heterogeneity through various modifications. About 2% of rRNA nucleotides are post-transcriptionally modified, with modifications concentrated near functionally important sites and conserved across evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established knowledge about ribosome biology with appropriate citations. They provide essential background for understanding the significance of m5C modifications and the concept of specialized ribosomes. The citations are appropriate and support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C41",
+      "C49"
+    ],
+    "result": "Prior to this study, only two m5C residues were known on C. elegans 26S rRNA, with NSUN-5 responsible for C2381 and the identity of the second methyltransferase unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the state of knowledge prior to the current work and appropriately motivate the investigation of NSUN-1. The citations to Sharma and Lafontaine, 2015 and Trixl and Lusser, 2019 support these statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background on C. elegans gonad anatomy: The hermaphrodite gonad contains two U-shaped arms with germ cells at various differentiation stages, developing sequentially from proliferative cells near the distal tip through the meiotic zone to mature oocytes, with sperm production being the limiting factor for self-fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe established C. elegans reproductive biology with appropriate citations. They provide necessary anatomical context for interpreting the gonad phenotypes observed upon nsun-1 depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors hypothesize that soma-specific nsun-1 depletion in the gonad is required for lifespan extension, and that specialized ribosomes generated by RNA modifications or association with translational regulators like IFE-4 might serve as a general mechanism for controlling cellular processes across tissues through non-cell-autonomous signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly presented as hypotheses and speculation (C132, C138) based on the tissue-specific RNAi results and comparison with published IFE-4 work (C135-C137). While the hypotheses are reasonable given the data, they require direct experimental testing. The authors appropriately present these as speculative interpretations rather than established conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Human NSUN1 is required for mammalian preimplantation development, restricts HIV-1 replication, and shows context-dependent effects on cell proliferation and tumor aggressiveness in leukemia. This suggests NSUN1 may represent antagonistic pleiotropy, being essential for development but potentially promoting tumor aggressiveness later in life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize published work on mammalian NSUN1 with appropriate citations. The antagonistic pleiotropy hypothesis (C148, C150) is appropriately presented as speculation. This discussion provides important translational context for the C. elegans findings, though the connection between worm and human phenotypes remains to be directly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C15",
+      "C43",
+      "C47",
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "Overall conclusions: Loss of NSUN-1, a single rRNA methyltransferase, has profound and highly specific effects on organismal development and physiology through translational remodeling, affecting cell homeostasis (cuticle barrier function) and development (oocyte maturation), with effects mediated by altered expression/localization of developmental regulators like GLD-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims appropriately synthesize the major findings of the study. They are well-supported by the collective evidence from multiple experimental approaches. The conclusions are appropriately cautious about mechanistic details (e.g., 'may explain' in C126, 'associated with' in C131) while clearly stating the main findings. The emphasis on specificity despite affecting a single modification is justified by the data.",
+    "result_type": "MAJOR"
+  }
+]

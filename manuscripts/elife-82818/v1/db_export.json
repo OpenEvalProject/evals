@@ -1,0 +1,1854 @@
+{
+  "submission": {
+    "id": "5ab4fa6a-d842-445e-877c-41980ef9d3e9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:13:31.043989Z",
+    "updated_at": "2025-12-03T20:13:31.043989Z"
+  },
+  "content": [
+    {
+      "id": "6104684e-9575-4175-a3e3-945e95699756",
+      "submission_id": "5ab4fa6a-d842-445e-877c-41980ef9d3e9",
+      "content_type": "manuscript",
+      "content_text": "# A modelled evaluation of the impact of COVID-19 on breast, bowel, and cervical cancer screening programmes in Australia\n\n## Authors\n\n- Carolyn Nickson<sup>1</sup> ([ORCID: 0000-0001-5370-6590](https://orcid.org/0000-0001-5370-6590)) \u2020\n- Megan A Smith<sup>1</sup>\n- Eleonora Feletto<sup>1</sup>\n- Louiza S Velentzis<sup>1</sup> ([ORCID: 0000-0002-9309-0492](https://orcid.org/0000-0002-9309-0492)) \u2020\n- Kate Broun<sup>3</sup>\n- Sabine Deij<sup>1</sup>\n- Paul Grogan<sup>1</sup>\n- Michaela Hall<sup>1</sup>\n- Emily He<sup>1</sup>\n- D James St John<sup>3</sup>\n- Jie-Bin Lew<sup>1</sup> ([ORCID: 0000-0003-2837-3565](https://orcid.org/0000-0003-2837-3565))\n- Pietro Procopio<sup>1</sup>\n- Kate T Simms<sup>1</sup>\n- Joachim Worthington<sup>1</sup> ([ORCID: 0000-0002-8830-0520](https://orcid.org/0000-0002-8830-0520))\n- G Bruce Mann<sup>5</sup>\n- Karen Canfell<sup>1</sup>\n\n### Affiliations\n\n1. Daffodil Centre, The University of Sydney, a Joint Venture with Cancer Council NSW Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))\n2. Melbourne School of Population and Global Health, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))\n3. Prevention Division, Cancer Council Victoria Melbourne Australia ([ROR:023m51b03](https://ror.org/023m51b03))\n4. Department of Medicine, The Royal Melbourne Hospital, University of Melbourne Melbourne Australia ([ROR:005bvs909](https://ror.org/005bvs909))\n5. Breast Service, The Royal Women's and Royal Melbourne Hospital Melbourne Australia\n6. Department of Surgery, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAustralia introduced COVID-19 infection prevention and control measures in early 2020. To help prepare health services, the Australian Government Department of Health commissioned a modelled evaluation of the impact of disruptions to population breast, bowel, and cervical cancer screening programmes on cancer outcomes and cancer services. We used the Policy1 modelling platforms to predict outcomes for potential disruptions to cancer screening participation, covering periods of 3, 6, 9, and 12 mo. We estimated missed screens, clinical outcomes (cancer incidence, tumour staging), and various diagnostic service impacts. We found that a 12-mo screening disruption would reduce breast cancer diagnoses (9.3% population-level reduction over 2020\u20132021) and colorectal cancer (up to 12.1% reduction over 2020\u201321), and increase cervical cancer diagnoses (up to 3.6% over 2020\u20132022), with upstaging expected for these cancer types (2, 1.4, and 6.8% for breast, cervical, and colorectal cancers, respectively). Findings for 6\u201312-mo disruption scenarios illustrate that maintaining screening participation is critical to preventing an increase in the burden of cancer at a population level. We provide programme-specific insights into which outcomes are expected to change, when changes are likely to become apparent, and likely downstream impacts. This evaluation provided evidence to guide decision-making for screening programmes and emphasises the ongoing benefits of maintaining screening in the face of potential future disruptions.\n\n## Introduction\n\nPopulation cancer screening programmes aim to reduce cancer-specific mortality, complications, and side effects associated with the treatment of advanced-stage neoplasms and, in the case of bowel and cervical screening, reduce the incidence, illness, and mortality of cancers through the detection and treatment of precancerous abnormalities (Lauby-Secretan et al., 2015; Bouvard et al., 2021; Lauby-Secretan et al., 2018). Breast, bowel and cervical screening programmes reduce cancer-specific deaths, with mortality benefits outweighing the risks associated with screening (Lauby-Secretan et al., 2015; Bouvard et al., 2021; Lauby-Secretan et al., 2018).\n\nAustralia established national screening programmes for breast and cervical cancer in 1991 and colorectal cancer in 2006 (Australian Institute of Health and Welfare, 2020a; Australian Institute of Health and Welfare, 2021c; Australian Institute of Health and Welfare, 2021a). Following the World Health Organization\u2019s declaration of the COVID-19 pandemic, in March 2020, Australia introduced strict national and state-level infection control measures, including physical and social restrictions affecting health services, as well as business, transport, and public gatherings. These restrictions proved highly effective for short-term national pandemic control, although significant outbreaks followed through returning travellers and hotel quarantine programmes (Victorian Government, 2021), subsequent new COVID variants (Australian Institute of Health and Welfare, 2021b), and ongoing variation in control measures (Sombetzki et al., 2021). It was not known to what extent restrictions would impact cancer screening participation, nor the implications of pauses in delivering screening programmes.\n\nModelled evaluations of COVID-impact scenarios have been undertaken by different countries to support their cancer screening programmes as they respond to the pandemic (Maringe et al., 2020; Burger et al., 2021; de Jonge et al., 2021). In parallel, collaborations within the global modelling community have been established, such as the COVID-19 and Cancer Global Modelling Consortium, to collectively conduct evaluations to support cancer control during and after the COVID-19 pandemic (COVID-19 and Cancer Global Modelling Consortium, 2022). In early 2020, we were commissioned by the Australian Government Department of Health to undertake a rapid-response modelled evaluation of the health impacts of potential widespread disruptions to population breast, bowel, and cervical screening. This was the first time such an analysis across all screening programmes had been performed.\n\nThis article presents a within-country comparison of key findings, at a national level, between three established population cancer screening programmes, using comparable time periods and metrics. Although some of the scenarios explored here have been harnessed in prior cross-country evaluation studies (de Jonge et al., 2021; Smith et al., 2021), modelled scenarios in this article were developed after consultation with the Australian Government Department of Health and input from stakeholders to ensure they were relevant to the local context. We demonstrate what could be estimated by a rapid response evaluation based on information available early in the pandemic and discuss how these estimates relate to subsequent observed disruptions to screening. In future, our modelled predictions can be compared to emergent observed national stage and mortality data.\n\n## Methods\n\nWe used simulation modelling to estimate outcomes for various potential disruptions to cancer screening services. Modelled scenarios were developed after consultation with the Australian Government Department of Health and input from administrators of the national screening programmes and were designed to be within the capabilities of our comprehensive and validated Policy1 modelling platform (https://www.policy1.org/) (Hall et al., 2019; Lew et al., 2017). Scenarios, reported outcomes, and calendar periods varied between screening programmes due to differences in cancer natural histories, existing screening programme protocols, and stakeholder requests and advice.\n\n### Modelling platform\n\nTo simulate scenarios and estimate projected outcomes, we used Policy1 which has evaluated the clinical benefits and harms of a wide range of screening protocols, new technologies, and risk-based approaches aiming to optimise population cancer screening programmes (Canfell, 2023).\n\n### Scenario selection\n\nScenarios were specified according to screening disruption duration (broadly 3, 6, 9, or 12 mo) and degree (complete pauses or reduced throughput) (Table 1).\n\n**Table 1.**\n Scenarios modelled for each of the three screening programmes and key outcomes reported.Each scenario is compared to status quo outcomes, which incorporate various population projections based on pre-COVID observed data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Screening programme</th>\n      <th colspan=\"4\">Disruption scenario by period</th>\n      <th colspan=\"3\">Outcomes</th>\n    </tr>\n    <tr>\n      <th>12 mo</th>\n      <th>9 mo</th>\n      <th>6 mo</th>\n      <th>3 mo</th>\n      <th>Cancer diagnoses</th>\n      <th>Delayed diagnoses/cancer staging</th>\n      <th>Screening episodes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Breast screening (females, 50\u201374 y)*</td>\n      <td>12-mopause assuming gradual recovery over 6 mo, to 50% higher screening capacity than status quo</td>\n      <td>N/A</td>\n      <td>6-mo pause assuming gradual recovery over 6 mo, to status quo screening capacity</td>\n      <td>3-mo pause assuming gradual recovery over 6 mo, to status quo screening capacity</td>\n      <td>Invasive breast cancers(2020\u20132021)</td>\n      <td>Interval cancer rates, tumour size, grade and nodal involvement at diagnosis (2020\u20132021)</td>\n      <td>Screening episodes(1 April 2020 to 31 March 2021)</td>\n    </tr>\n    <tr>\n      <td>Bowel screening(persons, 50\u201374 y)\u2020</td>\n      <td>12-mopause</td>\n      <td>N/A</td>\n      <td>6-mo pause</td>\n      <td>3-mo pause</td>\n      <td>CRC cases(2020\u20132021; 2020\u20132060)</td>\n      <td>Adenomas missed or delayed (2020\u20132021)CRC cases detected at a later stage(2020\u20132060)</td>\n      <td>Number of iFOBT screening kits returned(2020\u20132021)</td>\n    </tr>\n    <tr>\n      <td>Cervical screening(females, 25\u201374 y) \u2021</td>\n      <td>12-modisruption; assuming a 95% reduction in primary screening attendance</td>\n      <td>9-modisruption assuming a 75% reduction in primary screening attendance</td>\n      <td>6-mo disruption assuming a 50% reduction in primary screening attendance</td>\n      <td>N/A</td>\n      <td>Additional cervical cancers (2020\u20132022)</td>\n      <td>Cervical cancers detected at a later stage (2020\u20132022)</td>\n      <td>Number of women screening(2020\u20132022)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Breast screening: status quo: biennial mammography for women 50\u201374 y old; invitation letter sent at age 50 y; 55% participation rate. All scenarios assume no throughput during the pause period then a gradual recovery of screening throughput, with 3- and 6-mo disruption scenarios reach status quo rates by the seventh month after screening resumption, and the 12-mo disruption scenario reaching screening capacity at 50% higher than status quo by the seventh month after screening resumption. Breast screening outcomes are reported for women aged 50\u201374 at any time during the reporting period. Two-year reporting periods align with routine reporting of BreastScreen outcomes due to the programme being mostly biennial. Breast programme recall rates describe mammographic screening episodes referred for further assessment, and false-positive recall rates describe recalled screens with a benign final outcome after assessment. Screening programme sensitivity describes the screen-detected cancers as a proportion of screen-detected cancers and interval cancers.\u2020Bowel screening: status quo: biennial iFOBT screening of men and women 50\u201374 y old; invitation letter with test sent at age 50 y; participation rate 43.5%. No throughput is assumed during the pause period. Bowel screening outcomes are reported for individuals age-eligible (aged 50\u201374 y) for screening in either 2020 or 2021, i.e., individuals born in 1945\u20131971, with reporting periods selected to indicate both the immediate effect and the lifetime effect of the eligible cohort. Outcomes describe the expected number of incident colorectal cancers in the screening cohort only.\u2021Cervical screening: status quo: 5-yearly HPV screening of women 25\u201374 y old; invitation letter sent at age 25 y; participation rate at 46%. Primary screening tests describe women attending for a primary screening test. Scenarios assume women who miss screening in 2020, instead attend over 2021\u20132022, no disruption to surveillance or colposcopy visits, and no changes to rates of women presenting with symptoms. Cervical screening outcomes are reported for women age-eligible (aged 25\u201374 y) for screening at any time during 2020\u20132022, reporting the period 2020\u20132022 because all women who missed screening in 2020 were assumed to re-attend by 2022, and because 2022 aligns with the last year in the first 5-y-round of primary HPV screening.CRC: colorectal cancer; iFOBT: immunochemical faecal occult blood test._\n\n### Breast screening\n\nThe BreastScreen Australia (BSA) programme offers biennial (and some annual) mammographic screening to women from the age of 40 y, targeted to women aged 50\u201374 y (Australian Institute of Health and Welfare, 2020a). The programme is administered by the eight state and territory governments under a national agreement. All abnormal screens are assessed within the programme. Prior to COVID-19, participation by women aged 50\u201374 was approximately 55%, with 51% of national breast cancers detected through BreastScreen, while the proportion of clients who attended screening on schedule ranged from 60% to 84%, depending on the screening round (Australian Institute of Health and Welfare, 2020a). Using the Policy1-Breast model, we evaluated a 3-, 6-, or 12-mo national-level pause (applied as an averaging of annual rates), commencing 1 April 2020. We assumed a gradual restoration of service following pause periods, returning by the seventh month to pre-COVID throughput (screening capacity) for shorter-term pauses (3- and 6 mo) and 150% of pre-COVID throughput for a longer pause (12 mo), on the basis that only a year-long pause would involve expanded recovery strategies. Opportunistic or risk-based screening outside the programme was assumed to be reduced by 50% during programme pause (due to COVID-19 social distancing requirements), reaching 100% on BreastScreen service resumption. For this evaluation, Policy1-Breast was revised to include a prioritisation module (see details in Supplementary file 1A) so that it could be applied to capacity-driven recovery scenarios. Following service resumption, the restart strategy involved the allocation of available screens according to (i) whether clients were newly invited or existing, (ii) their age, (iii) the period in which their appointment fell (i.e. during the pause or during the recovery period), and (iv) the time elapsed since their originally scheduled appointment. Appointments were prioritised for women in the target age range of 50\u201374 y and to clients most overdue for screening. With this revision, individual clients within the simulation could be channelled into available screening appointments prioritised according to different factors, such as age or screening round.\n\nAdditional information on the Policy1-Breast model can be found at https://www.policy1.org/models/breast.\n\n### Bowel screening\n\nThe National Bowel Cancer Screening Program (NBCSP) provides biennial primary screening, using an immunochemical faecal occult blood test (iFOBT), to all Australians aged 50\u201374 y via the national postal service. The screening kit is self-administered at home and, if positive, a follow-up colonoscopy is recommended for diagnostic investigation. Prior to COVID-19, participation was approximately 44%, with 62% of individuals with a positive iFOBT reported as completing a colonoscopy (Australian Institute of Health and Welfare, 2021c). Using the Policy1-Bowel model, we evaluated a 3-, 6-, or 12-mo national-level pause, commencing 1 April 2020 during which time we assumed that no screening invitations or kits were sent or processed and all primary screening and diagnostic or surveillance colonoscopies associated with the NBCSP were halted. For modelling purposes, these periods were assumed to occur in 2020 \u2013 starting from April for 3- or 6-mo pauses, and over the course of 2020 for the 12-mo pause. It was assumed that individuals missing a screen during the pause would be screened at the next screening round, 2 y later. Individuals with undetected polyps or colorectal cancers (CRC) who missed screening due to the pauses would therefore have these detected in a later year, either symptomatically or at a later screening round. These may be detected as more advanced disease.\n\nThe status quo scenario is modelled based on no disruption to the NBCSP using observed participation rates (~40%), with all rates from 2017 onwards extrapolated from the reported data for 2017, unless otherwise noted. Based on the observed data, the model assumes ~70% of individuals with a positive iFOBT complete a diagnostic follow-up colonoscopy. Depending on the follow-up colonoscopy findings, individuals are referred to either return to the NBCSP for iFOBT screening after an interval of 4 y or to repeat colonoscopic assessments (referred to as surveillance colonoscopies) after 1\u20135 y based on the 2011 guidelines recommendations. Combined, both follow-up and surveillance colonoscopies are referred to as NBCSP-related colonoscopies.\n\nOutcomes have been estimated for the affected cohorts only, that is, among people aged 50\u201374 y eligible for screening in 2020 and 2021. This cohort comprises 7.1 million people; 3.5 million men and 3.6 million women.\n\nBased on the GESA recommendations from 24 March 2020, most \u2018elective\u2019 colonoscopies were suspended for most of March and April 2020 unless considered to be \u2018urgent\u2019. Recommendations suggested that colonoscopies for the investigation of a positive iFOBT be considered on a case-by-case basis only if the patient has not had a high-quality colonoscopy within the previous 4 y. The continuation of urgent colonoscopies was not incorporated in these results, nor was rescheduling of elective colonoscopies. We note that recommendations to recommence colonoscopy services were announced at the end of the April 2020 but have not been incorporated into these results.\n\nAdditional information on the Policy1-Bowel model can be found at https://www.policy1.org/models/bowel.\n\n### Cervical screening\n\nThe National Cervical Screening Program (NSCP) is provided to women aged 25\u201374 y and usually involves a visit to primary care. In mid-March 2020, the NCSP was approximately 27 mo into a transition from 2-yearly Pap testing to 5-yearly primary HPV screening, where a woman\u2019s first HPV test was due 2 y after her previous Pap test.\n\nAs part of this evaluation, we updated modelled screening participation to reflect National Cancer Screening Register data (Supplementary file 1B), indicating that 53.6% of women had already attended for their first HPV test, and therefore were not due to attend for routine screening again until at least December 2022. We evaluated 6-, 9-, or 12-mo disruptions to screening participation in 2020, with participation during these periods being 50, 75, and 90% lower, respectively, than would otherwise have been expected. We explored two recovery scenarios, one where women who missed screening in 2020 all attended in 2021 (used with the 9-mo disruption scenario), and another where women who missed screening in 2020 attended gradually over 2021\u20132022 (used with the 6- and 12-mo disruption scenarios).\n\nAll modelled scenarios assume the NCSP transitioned from the pre-renewed NCSP (2-yearly cytology for women aged 18\u201369) to the renewed programme (5-yearly primary HPV screening for women aged 25 to 70\u201374 y) at the beginning of 2018, including clinical management guidelines with women with detected abnormalities (Cancer Council Australia, 2017). The model incorporated recent policy changes that were expected to reduce the impact of COVID-19 disruptions, utilising unpublished NCSR data on the number of women who had received at least one primary HPV screening test and therefore were likely to be unaffected by the disruption (because they are not due for routine screening in 2020 or are already under surveillance). This meant that fewer women were expected to attend for a routine primary HPV test in Australia in 2020 than in 2019 or earlier years, and that women who would have attended in 2020 under the status quo were already overdue for screening (since it had been more than 2 y since their last Pap test), and as a result, a higher risk group.\n\nSimilar re-screening patterns as in the pre-renewed NCSP were assumed to apply until women have attended for their first HPV test in the renewed NCSP (i.e. screening behaviour reflects that women are recommended to attend for their first HPV test 2 y after their last cytology test). These screening patterns for women\u2019s first HPV test differ slightly from assumed adherence to the 2-yearly interval in the pre-renewed NCSP in order to directly reflect NCSR data on observed behaviour from December 2017 onwards (see data sources for Policy1-cervix model at https://www.policy1.org/models/cervix). Re-screening patterns reflecting a recommended 5-yearly interval do not apply to women until after they have attended for their first HPV test. Assumptions for re-screening attendance (routine testing) and follow-up under all modelled scenarios are outlined in Supplementary file 1C.\n\nTo calculate how many cancers were upstaged due to the disruption, we assumed that additional cancers that were diagnosed over 2021\u20132022 were diagnosed at the localised stage, and that any increase in the number of cancers diagnosed at the distant stage was due to cancers being upstaged from regional to distant. Other changes in the numbers of localised or regional cancers were assumed to be a result of upstaging from localised to regional.\n\n### Reported outcomes\n\nOutcomes reported from each modelled evaluation are shown in Table 1. Mortality estimates are not reported; however, estimates for some of the scenarios have since been published separately for cervical and bowel screening (de Jonge et al., 2021; Smith et al., 2021).\n\n## Results\n\n### Missed screens\n\nFor the scenarios modelled, the 3.7 million combined breast, bowel, and cervical screening episodes expected under status quo in the 12 mo starting 1 April 2020 would be reduced by 90% with a 12-mo disruption and by 43% with a 6-mo disruption (Table 2).\n\n**Table 2.**\n Modelled screening episodes (number of screens and as a proportion of status quo screens) provided under each scenario over the period 1 April 2020\u201331 March 2021 for people in the target age range (eligible for screening during the affected period) and sex.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Programme (target sex and age range)</th>\n      <th colspan=\"5\">Disruption scenario by period</th>\n      <th>Observed number of tests as a proportion of status quo, Jan\u2013Sept 2020 (by quarter and for whole period) (Q1, Q2, Q3, Q1\u2013Q3)</th>\n    </tr>\n    <tr>\n      <th>Status quo (comparator)</th>\n      <th>12 mo</th>\n      <th>9 mo</th>\n      <th>6 mo</th>\n      <th>3 mo</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Breast (females, 50\u201374)</td>\n      <td>973,019 (100%)</td>\n      <td>0 (0%)</td>\n      <td>N/A</td>\n      <td>298,113 (31%)</td>\n      <td>518,680 (53%)</td>\n      <td>(98%, 44%, 105%, 82%)*</td>\n    </tr>\n    <tr>\n      <td>Bowel (persons, 50\u201374)</td>\n      <td>1,353,875 (100%)</td>\n      <td>0 (0%)\u2020</td>\n      <td>N/A</td>\n      <td>680,259 (50%)</td>\n      <td>1,016,915 (75%)</td>\n      <td>(54%, 92%, 97%, 81%) \u2021</td>\n    </tr>\n    <tr>\n      <td>Cervical (females, 25\u201374) \u00a7</td>\n      <td>1,413,888 (100%)</td>\n      <td>386,451 (27%)</td>\n      <td>805,537 (57%)</td>\n      <td>1,143,510 (81%)</td>\n      <td>N/A</td>\n      <td>(55%, 34%, 39%, 43%) \u00b6</td>\n    </tr>\n    <tr>\n      <td>Combined \u2013 provided</td>\n      <td>3,740,782 (100%)</td>\n      <td>386,451 (10%)</td>\n      <td>N/A</td>\n      <td>2,121,882 (57%)</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Combined \u2013 missed</td>\n      <td>0 (0%)</td>\n      <td>3,250,432 (90%)</td>\n      <td>N/A</td>\n      <td>1,612,032 (43%)</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Percentages derived from a comparison of screens for 2020 vs, 2018, for women aged 50\u201374 y (AIHW Table 1.2) (Australian Institute of Health and Welfare, 2020b).\u2020No screening provided during the reported period.\u2021Percentages derived from a comparison of the number of kits returned for adults aged 50\u201374 y in 2020 vs. 2019 (AIHW Table 3.2) (Australian Institute of Health and Welfare, 2020b).\u00a7includes women attending for surveillance or other tests, not only routine primary screening tests. For this reason, the percentages do not correspond to the 25\u201395% reductions assumed among women attending for a routine cervical screening test.\u00b6Percentages derived from a comparison of the number of HPV tests conducted through the NCSP for women aged 25\u201374 y, 2020 vs. 2019 (AIHW Table 2.2) (Australian Institute of Health and Welfare, 2020b)._\n\n### Breast cancer screening\n\n#### Population cancer outcomes\n\nFor the 2-y period 2020\u20132021, we estimate that screening pauses of any duration would lead to an overall reduction in population-level invasive breast cancer diagnosis for women aged 50\u201374 y, noting that the estimated reduction in cancer incidence was comparable (~9%) between a 6-mo pause with pre-COVID throughout during recovery and a 12-mo pause with 150% throughput during recovery (Table 3).\n\n**Table 3.**\n Selected estimated outcomes (2020\u20132021) for the evaluation of disruptions to breast, bowel, and cervical cancer screening.Proportional changes compared to status quo are shown in brackets.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Outcome</th>\n      <th colspan=\"5\">Disruption scenario by period</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Breast screening*</td>\n      <td>Status quo</td>\n      <td>12 mo</td>\n      <td>9 mo</td>\n      <td>6 mo</td>\n      <td>3 mo</td>\n    </tr>\n    <tr>\n      <td>Invasive breast cancers per 100,000 women\u2020</td>\n      <td>298</td>\n      <td>270 (\u20139%)</td>\n      <td>NA</td>\n      <td>272 (\u20139%)</td>\n      <td>286 (\u20134%)</td>\n    </tr>\n    <tr>\n      <td>Screen-detected invasive breast cancers per 100,000 women\u2020</td>\n      <td>127</td>\n      <td>97 (\u201324%)</td>\n      <td>NA</td>\n      <td>99 (\u201322%)</td>\n      <td>117 (\u20138%)</td>\n    </tr>\n    <tr>\n      <td>Interval cancers (12 mo) \u2021</td>\n      <td>15</td>\n      <td>8 (\u201347%)</td>\n      <td>NA</td>\n      <td>11 (\u201327%)</td>\n      <td>13 (\u201313%)</td>\n    </tr>\n    <tr>\n      <td>Interval cancers (27 mo) \u2021</td>\n      <td>38</td>\n      <td>33 (\u201313%)</td>\n      <td>NA</td>\n      <td>33 (\u201313%)</td>\n      <td>35 (\u20138%)</td>\n    </tr>\n    <tr>\n      <td>Programme sensitivity \u00a7</td>\n      <td>76.8%</td>\n      <td>74.8% (\u20133%)</td>\n      <td>NA</td>\n      <td>75.2% (\u20132%)</td>\n      <td>77.0% (0%)</td>\n    </tr>\n    <tr>\n      <td>Tumour size (% \u226415 mm diameter)</td>\n      <td>59.7%</td>\n      <td>56.5% (\u20135%)</td>\n      <td>NA</td>\n      <td>58.3% (\u20132%)</td>\n      <td>59.6% (0%)</td>\n    </tr>\n    <tr>\n      <td>Nodal involvement (% involving nodes)</td>\n      <td>24.9%</td>\n      <td>26.4% (6%)</td>\n      <td>NA</td>\n      <td>25.1% (1%)</td>\n      <td>25.0% (0%)</td>\n    </tr>\n    <tr>\n      <td>Grade (% grade 3 versus grade 1/2)</td>\n      <td>46.6%</td>\n      <td>48.4% (2%)</td>\n      <td>NA</td>\n      <td>47.2% (1%)</td>\n      <td>46.7% (0%)</td>\n    </tr>\n    <tr>\n      <td>Recall rate (N) \u00b6</td>\n      <td>5.2%</td>\n      <td>5.6% (8%)</td>\n      <td>NA</td>\n      <td>5.3% (2%)</td>\n      <td>5.3% (2%)</td>\n    </tr>\n    <tr>\n      <td>False-positive recall rate (N)**</td>\n      <td>4.6%</td>\n      <td>4.8% (4%)</td>\n      <td>NA</td>\n      <td>4.6% (0%)</td>\n      <td>4.7% (2%)</td>\n    </tr>\n    <tr>\n      <td>Bowel screening</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Colorectal cancer diagnoses</td>\n      <td>21,068</td>\n      <td>18,518</td>\n      <td>NA</td>\n      <td>19,844</td>\n      <td>20,484</td>\n    </tr>\n    <tr>\n      <td>Change (%) in 2020\u20132021</td>\n      <td>-</td>\n      <td>\u20132549(\u201312.1%)</td>\n      <td>NA</td>\n      <td>\u20131223(\u20135.8%)</td>\n      <td>\u2013583(\u20132.8%)</td>\n    </tr>\n    <tr>\n      <td>Undetected cancers which would advance in stage in 2020\u20132021</td>\n      <td>-</td>\n      <td>891</td>\n      <td>NA</td>\n      <td>529</td>\n      <td>261</td>\n    </tr>\n    <tr>\n      <td>% of cancers detected at stages 3\u20134, 2020/2021</td>\n      <td>33.9%</td>\n      <td>40.7%(7%)</td>\n      <td>NA</td>\n      <td>35.9%(2%)</td>\n      <td>34.6%(1%)</td>\n    </tr>\n    <tr>\n      <td>Colonoscopies in 2020\u20132021</td>\n      <td>194,954</td>\n      <td>118,829</td>\n      <td>NA</td>\n      <td>156,619</td>\n      <td>175,804</td>\n    </tr>\n    <tr>\n      <td>Change (%) in 2020\u20132021</td>\n      <td>-</td>\n      <td>\u201376,125(\u201339.0%)</td>\n      <td>NA</td>\n      <td>\u201338,335(\u201319.7%)</td>\n      <td>\u201319,151(\u20139.8%)</td>\n    </tr>\n    <tr>\n      <td>Cervix screening\u2020\u2020, \u2021 \u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cervical cancer diagnoses</td>\n      <td>1878</td>\n      <td>1947</td>\n      <td>1912</td>\n      <td>1899</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Increase (%)</td>\n      <td></td>\n      <td>69 (3.6%)</td>\n      <td>34 (1.8%)</td>\n      <td>21 (1.1%)</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Upstaged cancers</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Localised \u2192 regional</td>\n      <td></td>\n      <td>18</td>\n      <td>8</td>\n      <td>6</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Regional \u2192 distant</td>\n      <td></td>\n      <td>9</td>\n      <td>4</td>\n      <td>3</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>% cancers upstaged \u00a7 \u00a7</td>\n      <td></td>\n      <td>1.4%</td>\n      <td>0.6%</td>\n      <td>0.5%</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Colposcopies</td>\n      <td>245,620</td>\n      <td>211,445</td>\n      <td>230,383</td>\n      <td>233,463</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Breast screening: for all scenarios, screening is assumed to resume gradually after the pause to services, reaching status quo rates by the seventh month after resumption for the 3 and 6 mo scenarios.\u2020Breast screening: rates are per 100,000 women in the Australian population, including women who do not usually participate in screening.\u2021Breast screening: invasive breast cancers arising within 12 or 27 mo of a negative screening episode. Figures reflect interval cancers diagnosed in 2020, or 2020\u20132021, respectively.\u00a7Breast screening: screen-detected cancers as a proportion of screen-detected + interval cancers (27 mo).\u00b6Breast screening: the proportion of screening episodes recalled for further investigation.** Breast screening: the proportion of screening episodes recalled for further investigation, with a benign final outcome after that investigation.\u2020\u2020Cervical screening: the 12-, 9-, and 6 mo scenarios assume a decrease in attendance of 95, 75, and 50%, respectively, compared to what would otherwise have been expected in 2020.\u2021 \u2021Cervical screening: All values are rounded to whole numbers.\u00a7 \u00a7Number of upstaged cancers (localised to regional or regional to distant) as a percentage of the number of cancer cases predicted under the status quo scenario._\n\nAll scenarios would lead to reduced population-level rates of screen-detected cancers and interval cancers, reduced programme sensitivity, and more advanced tumour stage at diagnosis. Longer-term fluctuations in clinical and programme outcomes are also expected; for example, with a 12-mo pause we estimate a 10% difference in population-level invasive breast cancer diagnoses among women aged 50\u201374 between 2020 and 2021 (270 per 100,000 women) and 2022\u20132023 (296 per 100,000 women) (Supplementary file 1D).\n\n### BreastScreen programme outcomes\n\nWe assumed higher priority for women who missed scheduled screens during the pause and report the estimated distribution of these women compared to other client groups (Supplementary file 1E). Estimated screening intervals ranged from a median of 107 wk for a 3-mo pause through to 130 wk for a 12-mo pause, with a median of 154 wk for women who missed screens during the pause (Supplementary file 1E). Recall rates are predicted to fluctuate over time under various pause scenarios, ranging from 5.3% (3-mo pause) to 5.6% (12-mo pause) (Table 3), most likely due to an increasing proportion of first-round screening during recovery.\n\n### Bowel screening\n\n#### Population cancer outcomes\n\nAll three scenarios illustrated a decrease in cancer diagnoses and cancers being diagnosed at a later stage in the screening cohort compared to the status quo. Across the modelled scenarios, colorectal cancer diagnoses decreased in 2020\u20132021 by 583\u20132549 cases (2.8\u201312.1% decrease). The modelled disruptions resulted in a stage shift, with up to 891 cases which would have been diagnosed but instead progressed to a later stage with lower survival.\n\nDue to the screening disruptions, fewer positive iFOBT would lead to fewer diagnostic follow-up colonoscopies, and additionally no surveillance colonoscopies would be conducted. The NBCSP-related colonoscopies that would not be conducted in 2020 due to the 3-, 6-, and 12-mo disruptions would be 19,151, 38,335, and 76,125 respectively.\n\nThis analysis found that a 12-mo pause to screening would lead to an additional 7140 colorectal cancer cases over 2020\u20132050. This is due to both changes in detection of both cancers and precancerous lesions during the 2020\u20132021 period, as well as the long-term effect on changes to screening participation and behaviours estimated to be attributable to the disruption.\n\nAdditional outcomes for diagnostic assessments and short-term adenoma outcomes are presented in Supplementary file 1F.\n\n### Cervical screening\n\n#### Population cancer outcomes\n\nAll three scenarios resulted in an increase in cancer diagnoses and cancers being diagnosed at a later stage among screening-age women compared to what would have been expected in the absence of any disruption. The increase in cancer cases over 2020\u20132022 ranged from 21 to 69 cases (1.1\u20133.6% increase). Most (57\u201363%) of the additional cancers were diagnosed among women 30\u201349 y. Women aged 30\u201339 y and 40\u201349 y were also the age groups where the percentage increase in cancers was largest (although still relatively small: 1.1\u20134.1% and 1.2\u20134.3% in women aged 30\u201339 and 40\u201349 y, respectively). The model predicted that disruptions to routine primary screening would lead to 6\u201318 cervical cancers being diagnosed at regional stage in 2021\u20132022, rather than as localised cancers in 2020; and 3\u20139 cervical cancers being diagnosed at distant stage in 2021\u20132022, rather than at regional stage in 2020. Considering both additional cervical cancers and those which were diagnosed at a later stage due to disruptions to cervical screening, an estimated 30\u201397 women would be affected by delays in diagnosis due to disruptions to routine screening in 2020. The longer-term impact of these additional and upstaged cancers on cervical cancer deaths is presented in Supplementary file 1G, and the impact of disruptions on the number of women expected to attend a cervical screening test is presented in Supplementary file 1H.\n\n### Colposcopy demand\n\nDisruptions to primary screening in 2020 are estimated to result in 17,680\u201347,868 fewer women attending for a colposcopy in 2020 (17.4\u201347.2% reduction) as a result of their primary screening or triage test. The impact of the disruptions on expected colposcopy utilisation between 2020 and 2022 is presented in Supplementary file 1I.\n\n### Additional results\n\nAdditional results can also be found in the online reports produced as part of this project for the Australian Government, Department of Health (Australian Government, Department of Health, 2020c; Australian Government, Department of Health, 2020d; Australian Government, Department of Health, 2020a; Australian Government, Department of Health, 2020b).\n\n## Discussion\n\nWe present outcomes estimated in 2020 for a range of potential disruptions to national population cancer screening programmes for breast, cervical, and colorectal cancer, including population-level changes in cancer diagnoses and staging. For similar disruption scenarios, we estimate markedly different impacts for each programme. We estimated that a 12-mo screening disruption from early 2020 would in the short term lead to reduced diagnoses of breast cancer (9.3% population-level reduction over 2020\u20132021, 150% screening throughput) and colorectal cancer (up to 12.1% reduction over 2020\u201321) and increased cervical cancer diagnoses (up to 3.6% over 2020\u20132022), with upstaging expected for all three cancer types. For a 6-mo screening disruption we estimated reduced diagnoses of breast cancer (9.4% population-level reduction over 2020\u20132021, with 100% throughput) and colorectal cancer (up to 5.8% reduction over 2020\u201321) and increased cervical cancer diagnoses (up to 1.1% over 2020\u20132022), with less marked upstaging compared to a 12-mo disruption.\n\nFindings were most marked for bowel screening, for which short-term upstaging and reduced cancer incidence was expected to lead to a significant number of additional colorectal cancer cases over the lifetime of the affected cohort. For breast screening, we estimated smaller but important reductions in cancer diagnoses at a population level over 2021 with fluctuating rates in subsequent years and upstaging of cancers at diagnosis (noting that estimated reductions in population-level interval cancer rates are counter-intuitive but an artefact of reduced screening participation, as interval cancers are defined with reference to screening events). For cervical screening, relative and absolute increases in cancer are expected to be less than for breast and colorectal cancer. This is likely due to COVID-19 impacts coinciding with lower participation under status quo because the programme recently transitioned to a longer screening interval, along with the lower burden of disease due to prevention through both screening and widespread uptake of HPV vaccination (80% three-dose coverage among females aged 14\u201315) (Australian Government, Department of Health, 2022a).\n\n### Strengths and limitations\n\nWe used established modelling platforms for breast, colorectal, and HPV/cervical cancer natural history and screening in Australia, which were already well calibrated and validated to the Australian context using high-quality published data, including detailed governmental screening reports. These models describe the Australian national age and sex distribution and the incidence and natural histories of breast, cervical, and colorectal cancer, and can be used to simulate a range of scenarios for cancer screening. Prior investment into these modelling platforms facilitated the rapid response modelling required in the face of a crisis; the evaluations reported highlight the importance of ongoing investment into comprehensive, well-calibrated and validated population predictive models that can be quickly harnessed for critical decision-making as needed for disruptions such as the COVID-19 pandemic and other potential disruptions due to major social, public health, or natural disasters as are increasingly common due to climate change (Bureau of Meteorology, 2020).\n\nThis evaluation included detailed reporting of outcomes for different subgroups where this was requested by key stakeholders (e.g. breast screening outcomes according to whether clients were directly or indirectly impacted by screening disruptions).\n\nEach modelled evaluation drew on the most contemporary data available, employing projections as required. In addition, the cervical screening model incorporated the effects of recent policy changes that were expected to reduce the impact of COVID-19 disruptions, drawing on unpublished data from the NCSR.\n\nScenarios were by necessity defined in simple terms. For example, we modelled single, continuous periods of national disruption but, in practice, screening participation would likely fluctuate by time and place in line with local outbreaks and pandemic control measures. By deliberately focusing on a high-level effect \u2013 a wide range of possible effects on attendance for routine screening \u2013 the analysis was agnostic to the cause, and therefore this could reflect any or many of a wide range of possible factors, including changes in behaviour and access to screening, reduced capacity of services involved in providing screening, or reduced saliency or delivery delays of reminder letters or home-delivered testing kits. These effects will be incorporated in future modelled evaluations, after careful calibration and validation to observed data, with a view to extending the modelled outcomes to mortality estimates.\n\nModelled estimates will likely include some biases. We do not account for changes in diagnostic and treatment services due to COVID-19 which have since been observed (Australian Government, Cancer Australia, 2021). For example, Medicare Benefits Schedule claims data from 2020 indicates a 4% reduction in breast diagnostic services and 6% reduction in breast cancer-related surgical procedures, and for colorectal cancer a 13% reduction in diagnostic services (mostly colonoscopies) and 1% reduced surgical procedures. For cervical cancer screening, estimates of additional and upstaged cervical cancer diagnoses potentially underestimate the overall impact of the pandemic on cervical cancer diagnoses.\n\n### Subsequent observed outcomes\n\nThis modelled evaluation was conceived during the first wave of COVID-19 restrictions, and in the context of needing to provide safe health services including population screening for breast, cervical, and colorectal cancer. At the time of the evaluation, the current analysis provided government with timely background estimates of potential impacts. The Australian cervical and bowel screening programmes continued to operate continuously through 2020 (and since), while BreastScreen services paused nationally from March to late April/early May 2020, resuming thereafter. Monthly screening tests over the period January\u2013September 2020 fluctuated as shown in Figure 1 (and Figure 2), (Australian Institute of Health and Welfare, 2020b) with an overall 34% reduction in screening tests across the three programmes comprising over 1 million (1,035,710) fewer breast, bowel, and cervix tests in age-targeted Australian populations compared to January to September 2019 (Australian Institute of Health and Welfare, 2020b). For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme, with 14% fewer breast screening tests (Australian Institute of Health and Welfare, 2023), an estimated 7% reduction in bowel screening participation (Australian Institute of Health and Welfare, 2023) and for cervical screening, based on reimbursement claims data, a 10% reduction in expected HPV tests (Smith et al., 2016; Australian Government, Services Australia, 2023).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82818/elife-82818-fig1-v1.jpg)\n\n**Figure 1.:** Derived from AIHW 2020 report \u2013 Cancer Screening and COVID19 in Australia. Australian Institute of Health and Welfare, 2020b. Note: cervical screening test volumes were anticipated to be lower in 2020 than in 2019 due to the extension from a 2-y to a 5-y screening interval (Smith et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82818/elife-82818-fig2-v1.jpg)\n\n**Figure 2.:** Derived from AIHW 2020 report \u2013 Cancer Screening and COVID19 in Australia. Australian Institute of Health and Welfare, 2020b. Note: cervical screening test volumes were anticipated to be lower in 2020 than in 2019 due to the extension from a 2-y to a 5-y screening interval (Smith et al., 2016).\n\nObserved screening reductions were driven by a range of factors such as screening service closure followed by reduced throughput capacity for breast screening, reduced primary care visits (cervical screening), as well individuals likely de-prioritising screening in the context of the pandemic (Bittleston et al., 2022). Screening test rates varied markedly between states and territories during the pandemic, (Australian Institute of Health and Welfare, 2020b) consistent with localised, often state-and-territory based controls, including stay-at-home orders, border closures, quarantine programmes, and other physical and social distancing measures. Our evaluation of a range of scenarios indicates the expected nature, scale, and time frame of key outcomes for each screening programme, providing valuable insights relevant to both national and more localised disruptions and highlighting the importance of maintaining screening participation rates.\n\n### Future insights\n\nOur predicted clinical implications of reduced participation cannot be confirmed for some time; however, early signs suggest an observed reduction in cancer diagnosis in 2020 (Victorian Cancer Registry. Cancer in Victoria, 2020). While COVID-19 vaccination coverage is high in Australia (two dose: >95% nationally for people >16 y old; three dose: 71%>16 y) (Australian Government, Department of Health, 2022b) social distancing measures are a continuing requirement and the redeployment of health services may be required in future if new variants of concern with higher transmissibility and/or virulency take over. As observed data on COVID-impacted screening behaviour for specific sub-populations becomes available, further modelling can help estimate the impact of screening disruptions for different population sub-groups, noting that Australian screening data is regularly reported by age group, sex (for bowel cancer screening), and various socio-economic indicators. Each screening programme is subject to detailed monitoring and evaluation, working to a range of performance indicators. These indicators are expected to be impacted by service disruptions, in a variety of ways. For example, breast screening interval cancer rates (a key BreastScreen performance indicator) are predicted to vary; this is logical given that the likelihood of an interval cancer is expected to depend on the time since the screen prior to the interval cancer reference screen, screening round, and age, all of which vary for the scenarios evaluated. These changes would impact usual quality assurance monitoring of the programme and, potentially, community perception of programme performance. Therefore, one of the implications of the current evaluation is to focus future strategies for communication around the importance of screening programmes and the need for ongoing high participation as they play a key role in maintaining community confidence in screening.\n\nWe quantified resource requirements for programmes and related health services in the face of disruption, with requirements for breast cancer screening assessments, colonoscopies, and colposcopies affected to varying degrees. Variations in breast and colorectal cancer incidence are expected to have a significant flow-on effect on the demand for treatment services, compounded by a changing case-mix with shifts to later-stage diagnoses to varying degrees over time.\n\n### Implications\n\nCollectively, these findings from the 6\u201312-mo disruption scenarios illustrate that maintaining screening participation is critical to preventing an increase in the burden of cancer at a population level. We enumerate the extent to which COVID-19 disruptions are likely to impact short- and long-term cancer outcomes, resource requirements, and usual indicators used in programme monitoring and evaluation, providing critical evidence to guide cancer screening programmes as they continue to adapt to the ongoing impacts of the COVID-19 pandemic, and as they prepare for other major disruptions that may arise in the future (Victorian Cancer Registry. Cancer in Victoria, 2020).\n\nThe estimated impacts described here may be reduced if screening programmes sustain or revisit planned improvements that commenced prior to the pandemic, some of which may also directly assist programme recovery. For example, from 1 July 2022, all women now have the option to use self-collection and this could facilitate continuation or recovery of cervical screening programmes (Australian Government, Department of Health Ministers, 2021).\n\nAs programmes work to bring screening participants back on schedule, well-planned reactive risk-based approaches may help direct limited services to those who will benefit the most. For HPV screening, this could mean more refinements to triaging and surveillance of screen-positive women, and optimising screening for women protected by HPV vaccination. For breast screening, this could involve prioritising women at higher risk of breast cancer, such as women usually offered annual screening and women assessed as higher risk using routine risk prediction models incorporating breast density (Harkness et al., 2020). For bowel screening, risk-stratified prioritisation of people could be rapidly implemented by modifying the faecal occult blood threshold and extending the period of time over which people are asked to complete their missed screens (van Wifferen et al., 2022). Future improvements could also consider starting screening at an earlier age for Aboriginal and Torres Strait Islander peoples who are at higher risk of colorectal cancer (Lew et al., 2022). For all screening programmes, individuals who missed screening during the disruption should be encouraged to return to screening as soon as it is safe to do so. For bowel screening, previously published modelling estimated that this \u2018catch-up\u2019 screening could almost ameliorate the impact of a disruption (de Jonge et al., 2021). As such, one implication of the current evaluation is that screening programmes have the potential to continue to improve outcomes and therefore \u2018build back better\u2019 in the future.\n",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "f745f24c-bbb4-440d-b68f-03534668146d",
+      "submission_id": "5ab4fa6a-d842-445e-877c-41980ef9d3e9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82818.sa0](https://doi.org/10.7554/eLife.82818.sa0)\n\nThis study presents important results on predicted impact of cancer screening disruptions in Australia during the COVID-19 pandemic based on rapid-response consultation with public health stakeholders. The evidence presented is solid as simulations were based on several previously validated breast, cervical, and bowel cancer screening decision models. Although the scenarios were based on hypothetical disruptions that do not always match experienced disruptions, the work will be of interest to local policymakers, public health specialists, and cancer epidemiologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Tal\u00eda Malag\u00f3n, https://ror.org/01pxwe438 McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82818.sa1](https://doi.org/10.7554/eLife.82818.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The impact of COVID-19 on population cancer screening programs in Australia: modelled evaluations for breast, bowel and cervical cancer\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n\u2013 Please explain the novelty of this study in relation to previous papers from the same research group.\n\n\u2013 Address all requests for clarifications made by reviewers.\n\n\u2013 Place figures currently in the Discussion in the Appendix.\n\n\u2013 Temper claims regarding the impact of screening disruptions on cancer burden, as the results also suggest that relatively short (~3 month) disruptions would likely not have a large impact on cancer burden.\n\n\u2013 Provide some further explanation on why the authors consider that model-estimated reductions in screening tests in the first year of disruption overlapped with observed rates, as Reviewer #1 is correct that empirical disruptions do not appear to always match hypothetical modelled disruptions.\n\n\u2013 Provide confidence or uncertainty intervals for model predictions, or provide an explanation as to why confidence intervals are unavailable.\n\n\u2013 The definition of interval cancers and findings regarding interval cancers need to be better explained, as the results were confusing and counter-intuitive to reviewers.\n\n\u2013 While I understand there are reasons why the authors did not include cancer mortality outcomes as the models did not include the impacts of treatment disruptions, the lack of mortality outcomes was noted by two reviewers so it is likely that many readers would similarly wonder why cancer death outcomes were not included. The authors may want to consider including screening disruption-related predicted additional deaths if available, specifying that these deaths do not include the impact of treatment disruptions.\n\nReviewer #1 (Recommendations for the authors):\n\nThank you for the nicely written paper. I still have a few comments.\n\nOverall:\n\n1. I recently read two other papers which used the Policy1 modelling platforms to estimate the effect of disruptions in the bowel and cervical screening program on cancer outcomes. I assume that you are familiar with those studies as some of your co-auteurs are also listed on them. I am talking about the following two papers: \"Impact of the COVID-19 pandemic on faecal immunochemical test-based colorectal cancer screening programmes in Australia, Canada, and the Netherlands: a comparative modelling study\" and \"Impact of disruptions and recovery for established cervical screening programs across a range of high-income country program designs, using COVID-19 as an example: A modelled analysis\".\n\nCould you please explain the difference between the current study and the two studies I listed above? Why did the current study need to be performed? As you already had the other two studies, which look rather similar to the current study.\n\n2. Make sure you write percentages the same throughout the article. Sometimes I see 9.3 and then I see 9\u00b73 (dot in the middle instead of on the bottom).\n\nAbstract:\n\n1. I miss some information about upstaging. How many percent of the tumours are expected to be upstaged?\n\n2. I believe that a suspension of the screening program for 3 months will not lead to significant upstaging. The first sentence of the conclusion might be a bit too harsh, as suspension for only three months might be wise in situations with limited resources.\n\nIntroduction:\n\n1. Nicely written introduction. However, I would like you to mention here the significance of this paper, as there are already two modelling studies using the Policy1 modelling platform.\n\nMethods:\n\n1. I miss a description of the restart strategy of the screening program. Did the persons with a suspended screen still received their screening when the program restarted? Did the program tried to catch-up on the missed screens by increasing their capacity? The current article nicely describes different restart strategies: Kregting, L. M., Kaljouw, S., de Jonge, L., Jansen, E. E., Peterse, E. F., Heijnsdijk, E. A., \u2026 and de Kok, I. M. (2021). Effects of cancer screening restart strategies after COVID-19 disruption. British journal of cancer, 124(9), 1516-1523.\n\n2. In line 109 you mention: \"60-84% of clients screened on schedule (first to third and subsequent round)\". What is meant by this?\n\n3. In line 178 you mention a \"cervical screening test (CST)\". Do you mean a HPV-test?\n\nResults:\n\n1. Table 3 shows the reduction in the number of screen-detected invasive cancers per 100,000 women. I am quite surprised to see that the number of screen-detected tumors after a disruption of 12 months only decreased by 24%, when there was no screening for an entire year and the screening program restarted gradually over the next 6 months. Is there a catch-up in those last 6 months when the normal screening program was again in place?\n\n2. Table 3 shows the reduction in the number of interval-detected invasive cancers. Does this concern the interval-detected invasive cancers of women screened in 2020/2021? Or does it concern the number of interval-detected invasive cancers diagnosed in 2020-2021?\n\n3. In line 259-260 you write that an estimated 759-3022 people would be affected by delays in diagnosis for bowel cancer. Where can I find those numbers?\n\nDiscussion:\n\n1. I was quite surprised to see some figures in the Discussion. I would place figure 1 in the Results section. Also it would be very interesting to add an analysis showing the expected effect of what really happened with the screening program. This would also distinguish your paper from the other two papers I mentioned above.\n\n2. I would place figure 2 in the appendix, since you already have Table 2.\n\n3. Could you please explain your reasoning in line 376-378? I am not sure if I agree with the statement that your model-estimated reductions in screening tests in the first year of disruption overlapped with observed rates. Table 2 show that in Q1-Q3 still 82% of the tests were performed for breast cancer, while with a 3 months disruption only 53% of the test will be performed in April 2020-March 2021. I do not think those numbers overlap. The numbers are also not very comparable as the observed numbers are presented for Jan-Sept 2020 and the modelled numbers for April 2020-March 2021. It would be nice if you can take the same periods.\n\n4. In line 413-414 you mention that your findings illustrate that maintaining screening participation is critical to reducing the burden of cancer at a population level. Could you please explain your reasoning? I believe that the numbers show that screening can safely be suspended for a few months if there are limited resources available. Only if you suspended the program for a year, problems may occur.\n\nReviewer #3 (Recommendations for the authors):\n\nWhile the presented results by assessing various disrupted screening schedules (12 months, 9 months, 6 months, and 3 months) through statistical modelling are very helpful for guiding policy-makers to avert long-term impact on cause-specific mortality and cost for example in the post-pandemic COVID-19 era, the manuscript can be substantially improved in the light of the following suggestions.\n\n1. It is very important to report the influences of COVID-19 pandemic on long-term mortality resulting from the disrupted screening schedule although the reported outcomes here have already included the reduction of screen-detected cancers and the assessment of upstaging. The author has already indicated the unfeasibility of reporting mortality estimates because of unavailable information on COVID-19 disruptions to cancer treatment. However, since your modelling has assumed many situations on various delayed screening schedule it would not be difficult to model mortality estimates by setting various circumstances on COVID-19 disruptions to cancer treatment.\n\n2. While modelling screening episodes by various disrupted screening schedules plays an important role in policy analysis it is even important to report the empirical results of the delayed screening schedule until 31 March 2021 instead of only reporting the observed number from January to September 2020. You can still report your simulated results for policy analysis but report which scenario, on average, is close to your empirical estimate. So doing is very helpful for predicting the best-case outcomes after 2021.\n\n3. It is quite unreasonable to have seen reduced interval cancers and the reduced program sensitivity with the disruption scenario from the aspect of screening theory. If disruption to screening happen those cancers would be delayed to have diagnosis. It is therefore inadequate to define interval cancer in this manner in the face of disruption scenario, saying an artefact of reduced screening participation. The reader is very confused with such a kind of results. As interval cancer is often a negative outcome in the theory of screening, the results of reducing interval cancer as a result of disruption to screening would be very misleading. The longer disruption the less likely to have interval cancer. This part should be rectified to have adequate presentation.\n\n4. Instead of reporting absolute number of upstaging with different expressions for various cancers, it is indispensable to report relative risk of having upstaging for various disruption scenarios as opposed to status quo by breast cancer, colorectal cancer, and cervical cancer base on the modelling results. So doing this can be also of assistance to evaluate statistical significance by reporting 95% confidence interval and also P value for hypothesis testing.\n\n5. The results of upstaging are so important for this manuscript particularly when mortality estimates have been not reported. However, the modelling results on upstaging seems to vary with disruption scenarios. This part has to be emphasized in the main conclusions for different cancer. Again, using the relative risk estimates would make the comparisons of the finding across three sites of cancer comparable.\n\n6. The point 2 mentioned above is also important for validating the simulated results of screen-detected cases, upstaging and other outcomes with the scenario in commensuration with the empirical scenario of disruption to screening.\n",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2c0210cd-9c49-4aeb-b7c0-50df3f968b27",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C1",
+      "claim": "Australia introduced COVID-19 infection prevention and control measures in early 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia introduced COVID-19 infection prevention and control measures in early 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the timing of Australia's COVID-19 response measures, which is established knowledge about the pandemic timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "34ba929f-a24f-4f77-ac79-3659080df207",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C2",
+      "claim": "The Australian Government Department of Health commissioned a modelled evaluation of the impact of disruptions to population breast, bowel, and cervical cancer screening programmes on cancer outcomes and cancer services.",
+      "claim_type": "EXPLICIT",
+      "source": "To help prepare health services, the Australian Government Department of Health commissioned a modelled evaluation of the impact of disruptions to population breast, bowel, and cervical cancer screening programmes on cancer outcomes and cancer services.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the commissioning of the study, which is a factual claim about the study's origin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "a7ee12a1-69f1-4bdf-9ced-c2683ee4db5b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C3",
+      "claim": "The Policy1 modelling platforms were used to predict outcomes for potential disruptions to cancer screening participation.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Policy1 modelling platforms to predict outcomes for potential disruptions to cancer screening participation, covering periods of 3, 6, 9, and 12 mo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the tools used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "9596d047-5f9d-4a8c-bfbc-b5ab955125ba",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C4",
+      "claim": "A 12-month screening disruption would reduce breast cancer diagnoses by 9.3% at the population level over 2020-2021.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 12-mo screening disruption would reduce breast cancer diagnoses (9.3% population-level reduction over 2020\u20132021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "0ff3805a-71c3-4263-923c-d4fc65f88dd0",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C5",
+      "claim": "A 12-month screening disruption would reduce colorectal cancer diagnoses by up to 12.1% over 2020-2021.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 12-mo screening disruption would reduce breast cancer diagnoses (9.3% population-level reduction over 2020\u20132021) and colorectal cancer (up to 12.1% reduction over 2020\u201321)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "11d85d62-b9d1-465b-bcc6-e75e1e09a9c6",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C6",
+      "claim": "A 12-month screening disruption would increase cervical cancer diagnoses by up to 3.6% over 2020-2022.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 12-mo screening disruption would reduce breast cancer diagnoses (9.3% population-level reduction over 2020\u20132021) and colorectal cancer (up to 12.1% reduction over 2020\u201321), and increase cervical cancer diagnoses (up to 3.6% over 2020\u20132022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "a57f3d70-370c-4265-b03c-d91c20be804c",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C7",
+      "claim": "Upstaging is expected for breast, cervical, and colorectal cancers with disruptions, at rates of 2%, 6.8%, and 1.4% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "with upstaging expected for these cancer types (2, 1.4, and 6.8% for breast, cervical, and colorectal cancers, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative finding from the modelling study about cancer staging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "4292eea9-e017-465a-9f26-4282de2f69a7",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C8",
+      "claim": "Population cancer screening programmes aim to reduce cancer-specific mortality, complications, and side effects associated with the treatment of advanced-stage neoplasms.",
+      "claim_type": "EXPLICIT",
+      "source": "Population cancer screening programmes aim to reduce cancer-specific mortality, complications, and side effects associated with the treatment of advanced-stage neoplasms and, in the case of bowel and cervical screening, reduce the incidence, illness, and mortality of cancers through the detection and treatment of precancerous abnormalities (Lauby-Secretan et al., 2015; Bouvard et al., 2021; Lauby-Secretan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "91909c03-16e6-48a0-90d0-aa9f9e6da229",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C9",
+      "claim": "Bowel and cervical screening reduce the incidence, illness, and mortality of cancers through the detection and treatment of precancerous abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Population cancer screening programmes aim to reduce cancer-specific mortality, complications, and side effects associated with the treatment of advanced-stage neoplasms and, in the case of bowel and cervical screening, reduce the incidence, illness, and mortality of cancers through the detection and treatment of precancerous abnormalities (Lauby-Secretan et al., 2015; Bouvard et al., 2021; Lauby-Secretan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "542acc03-880a-4985-bdf2-e864f686cab0",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C10",
+      "claim": "Breast, bowel and cervical screening programmes reduce cancer-specific deaths, with mortality benefits outweighing the risks associated with screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Breast, bowel and cervical screening programmes reduce cancer-specific deaths, with mortality benefits outweighing the risks associated with screening (Lauby-Secretan et al., 2015; Bouvard et al., 2021; Lauby-Secretan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "87c0be33-8431-4ca5-87dc-bbd0788737b8",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C11",
+      "claim": "Australia established a national screening programme for breast cancer in 1991.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia established national screening programmes for breast and cervical cancer in 1991 and colorectal cancer in 2006 (Australian Institute of Health and Welfare, 2020a; Australian Institute of Health and Welfare, 2021c; Australian Institute of Health and Welfare, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation to an authoritative source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "856c9583-de5e-4ee3-b345-65c2fe8a4a03",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C12",
+      "claim": "Australia established a national screening programme for cervical cancer in 1991.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia established national screening programmes for breast and cervical cancer in 1991 and colorectal cancer in 2006 (Australian Institute of Health and Welfare, 2020a; Australian Institute of Health and Welfare, 2021c; Australian Institute of Health and Welfare, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation to an authoritative source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "08687f2e-6532-4b5a-abd8-ce088b324ee2",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C13",
+      "claim": "Australia established a national screening programme for colorectal cancer in 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "Australia established national screening programmes for breast and cervical cancer in 1991 and colorectal cancer in 2006 (Australian Institute of Health and Welfare, 2020a; Australian Institute of Health and Welfare, 2021c; Australian Institute of Health and Welfare, 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation to an authoritative source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "a4dbe7d5-963a-4a7a-84f0-699ed598910e",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C14",
+      "claim": "The World Health Organization declared the COVID-19 pandemic in March 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the World Health Organization's declaration of the COVID-19 pandemic, in March 2020, Australia introduced strict national and state-level infection control measures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the WHO's pandemic declaration timing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "740e222e-c115-44cb-bee5-0d1b5f797af3",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C15",
+      "claim": "Australia introduced strict national and state-level infection control measures in March 2020, including physical and social restrictions affecting health services, business, transport, and public gatherings.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the World Health Organization's declaration of the COVID-19 pandemic, in March 2020, Australia introduced strict national and state-level infection control measures, including physical and social restrictions affecting health services, as well as business, transport, and public gatherings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about Australia's pandemic response measures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "9852cce3-4c96-4314-be54-04a574efb161",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C16",
+      "claim": "Australia's COVID-19 restrictions proved highly effective for short-term national pandemic control.",
+      "claim_type": "EXPLICIT",
+      "source": "These restrictions proved highly effective for short-term national pandemic control, although significant outbreaks followed through returning travellers and hotel quarantine programmes (Victorian Government, 2021), subsequent new COVID variants (Australian Institute of Health and Welfare, 2021b), and ongoing variation in control measures (Sombetzki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to government and health reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "e75f0523-5f41-4474-8987-60703983108d",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C17",
+      "claim": "Significant COVID-19 outbreaks followed in Australia through returning travellers and hotel quarantine programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "These restrictions proved highly effective for short-term national pandemic control, although significant outbreaks followed through returning travellers and hotel quarantine programmes (Victorian Government, 2021), subsequent new COVID variants (Australian Institute of Health and Welfare, 2021b), and ongoing variation in control measures (Sombetzki et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a government report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "51c81042-c9a7-4f25-8dd4-338bbca43901",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C18",
+      "claim": "Modelled evaluations of COVID-impact scenarios have been undertaken by different countries to support their cancer screening programmes as they respond to the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelled evaluations of COVID-impact scenarios have been undertaken by different countries to support their cancer screening programmes as they respond to the pandemic (Maringe et al., 2020; Burger et al., 2021; de Jonge et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "8978e878-7ede-4358-8793-57e633738860",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C19",
+      "claim": "The COVID-19 and Cancer Global Modelling Consortium was established to collectively conduct evaluations to support cancer control during and after the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, collaborations within the global modelling community have been established, such as the COVID-19 and Cancer Global Modelling Consortium, to collectively conduct evaluations to support cancer control during and after the COVID-19 pandemic (COVID-19 and Cancer Global Modelling Consortium, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the consortium.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "328be5db-4f40-4101-8ceb-e4e35b837f57",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C20",
+      "claim": "In early 2020, the Australian Government Department of Health commissioned a rapid-response modelled evaluation of the health impacts of potential widespread disruptions to population breast, bowel, and cervical screening.",
+      "claim_type": "EXPLICIT",
+      "source": "In early 2020, we were commissioned by the Australian Government Department of Health to undertake a rapid-response modelled evaluation of the health impacts of potential widespread disruptions to population breast, bowel, and cervical screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the commissioning of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "1b483d5b-18bf-4558-970a-f0334716e7af",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C21",
+      "claim": "This was the first time an analysis across all screening programmes had been performed in Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the first time such an analysis across all screening programmes had been performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "33bc884d-3795-4c15-ae5a-991523a75596",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C22",
+      "claim": "Simulation modelling was used to estimate outcomes for various potential disruptions to cancer screening services.",
+      "claim_type": "EXPLICIT",
+      "source": "We used simulation modelling to estimate outcomes for various potential disruptions to cancer screening services.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the study approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "bffe662c-486b-4222-b242-460352250e3a",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C24",
+      "claim": "The Policy1 modelling platform is comprehensive and validated.",
+      "claim_type": "EXPLICIT",
+      "source": "This evaluation included detailed reporting of outcomes for different subgroups where this was requested by key stakeholders (e.g. breast screening outcomes according to whether clients were directly or indirectly impacted by screening disruptions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the characteristics of the modelling platform used, supported by reference to the platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "37166222-a9fb-47eb-93a9-050567027598",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C25",
+      "claim": "The Policy1 platform has evaluated the clinical benefits and harms of a wide range of screening protocols, new technologies, and risk-based approaches aiming to optimise population cancer screening programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "To simulate scenarios and estimate projected outcomes, we used Policy1 which has evaluated the clinical benefits and harms of a wide range of screening protocols, new technologies, and risk-based approaches aiming to optimise population cancer screening programmes (Canfell, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "c3acb072-9b75-44d5-861b-df074237594d",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C26",
+      "claim": "Scenarios were specified according to screening disruption duration (broadly 3, 6, 9, or 12 months) and degree (complete pauses or reduced throughput).",
+      "claim_type": "EXPLICIT",
+      "source": "Scenarios were specified according to screening disruption duration (broadly 3, 6, 9, or 12 mo) and degree (complete pauses or reduced throughput) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about scenario design, with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "82e77860-2a35-434c-bcaa-cfa53a508405",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C27",
+      "claim": "The BreastScreen Australia programme offers biennial (and some annual) mammographic screening to women from the age of 40 years, targeted to women aged 50-74 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The BreastScreen Australia (BSA) programme offers biennial (and some annual) mammographic screening to women from the age of 40 y, targeted to women aged 50\u201374 y (Australian Institute of Health and Welfare, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the screening programme, supported by citation to an authoritative source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "f4e62797-210f-4c3e-a66e-9df89887ca00",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C28",
+      "claim": "The BreastScreen Australia programme is administered by the eight state and territory governments under a national agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "The programme is administered by the eight state and territory governments under a national agreement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about programme administration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "4452bd36-06b4-4579-acde-08b7bb53c939",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C29",
+      "claim": "All abnormal screens in the BreastScreen Australia programme are assessed within the programme.",
+      "claim_type": "EXPLICIT",
+      "source": "All abnormal screens are assessed within the programme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about programme procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "82cc5a35-1be8-4800-bd44-67d1409a8508",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C30",
+      "claim": "Prior to COVID-19, participation in BreastScreen Australia by women aged 50-74 was approximately 55%.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to COVID-19, participation by women aged 50\u201374 was approximately 55%, with 51% of national breast cancers detected through BreastScreen, while the proportion of clients who attended screening on schedule ranged from 60% to 84%, depending on the screening round (Australian Institute of Health and Welfare, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about pre-COVID participation rates, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "6b76e362-7fa9-460d-9e9c-5a3c9bb987d8",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C31",
+      "claim": "Prior to COVID-19, 51% of national breast cancers were detected through BreastScreen.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to COVID-19, participation by women aged 50\u201374 was approximately 55%, with 51% of national breast cancers detected through BreastScreen, while the proportion of clients who attended screening on schedule ranged from 60% to 84%, depending on the screening round (Australian Institute of Health and Welfare, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about cancer detection rates, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "618c63c0-ec58-4cc1-8dbb-4e87d9184d86",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C32",
+      "claim": "Prior to COVID-19, the proportion of BreastScreen clients who attended screening on schedule ranged from 60% to 84%, depending on the screening round.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to COVID-19, participation by women aged 50\u201374 was approximately 55%, with 51% of national breast cancers detected through BreastScreen, while the proportion of clients who attended screening on schedule ranged from 60% to 84%, depending on the screening round (Australian Institute of Health and Welfare, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about screening adherence, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "fed0a0de-3082-454e-a3fc-280e4863aa21",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C33",
+      "claim": "The Policy1-Breast model was used to evaluate a 3-, 6-, or 12-month national-level pause commencing 1 April 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Policy1-Breast model, we evaluated a 3-, 6-, or 12-mo national-level pause (applied as an averaging of annual rates), commencing 1 April 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the modelling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "7a0be796-4f48-46db-b380-7d95bae508fe",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C34",
+      "claim": "A gradual restoration of breast screening service was assumed following pause periods, returning by the seventh month to pre-COVID throughput for shorter-term pauses (3- and 6-month) and 150% of pre-COVID throughput for a longer pause (12-month).",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed a gradual restoration of service following pause periods, returning by the seventh month to pre-COVID throughput (screening capacity) for shorter-term pauses (3- and 6 mo) and 150% of pre-COVID throughput for a longer pause (12 mo), on the basis that only a year-long pause would involve expanded recovery strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption used in the modelling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "ad75e5df-0790-4d60-b2db-f1f018e2368e",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C35",
+      "claim": "Opportunistic or risk-based breast screening outside the programme was assumed to be reduced by 50% during programme pause, reaching 100% on BreastScreen service resumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Opportunistic or risk-based screening outside the programme was assumed to be reduced by 50% during programme pause (due to COVID-19 social distancing requirements), reaching 100% on BreastScreen service resumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption used in the modelling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "7bb8c96d-18ed-43ef-80b3-4feeaa18d661",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C36",
+      "claim": "Policy1-Breast was revised to include a prioritisation module so that it could be applied to capacity-driven recovery scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "For this evaluation, Policy1-Breast was revised to include a prioritisation module (see details in Supplementary file 1A) so that it could be applied to capacity-driven recovery scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about model modifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "4d76b3a8-daba-4388-ba33-1a01164179ea",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C37",
+      "claim": "Following breast screening service resumption, the restart strategy involved the allocation of available screens according to whether clients were newly invited or existing, their age, the period in which their appointment fell, and the time elapsed since their originally scheduled appointment.",
+      "claim_type": "EXPLICIT",
+      "source": "Following service resumption, the restart strategy involved the allocation of available screens according to (i) whether clients were newly invited or existing, (ii) their age, (iii) the period in which their appointment fell (i.e. during the pause or during the recovery period), and (iv) the time elapsed since their originally scheduled appointment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the prioritisation strategy modelled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "1b2ddb96-d39e-4371-aee0-734c09c2f3bd",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C38",
+      "claim": "Breast screening appointments were prioritised for women in the target age range of 50-74 years and to clients most overdue for screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Appointments were prioritised for women in the target age range of 50\u201374 y and to clients most overdue for screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the prioritisation strategy modelled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "31da2f99-6a99-48ac-9555-0ca132857bf2",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C39",
+      "claim": "The National Bowel Cancer Screening Program provides biennial primary screening using an immunochemical faecal occult blood test to all Australians aged 50-74 years via the national postal service.",
+      "claim_type": "EXPLICIT",
+      "source": "The National Bowel Cancer Screening Program (NBCSP) provides biennial primary screening, using an immunochemical faecal occult blood test (iFOBT), to all Australians aged 50\u201374 y via the national postal service.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the screening programme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "22a5bd42-3df4-4660-9f14-27fe6b691fec",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C40",
+      "claim": "The bowel screening kit is self-administered at home and, if positive, a follow-up colonoscopy is recommended for diagnostic investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "The screening kit is self-administered at home and, if positive, a follow-up colonoscopy is recommended for diagnostic investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the screening procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "93883568-ee71-4b55-8aec-bdc9eb446686",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C41",
+      "claim": "Prior to COVID-19, participation in the National Bowel Cancer Screening Program was approximately 44%.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to COVID-19, participation was approximately 44%, with 62% of individuals with a positive iFOBT reported as completing a colonoscopy (Australian Institute of Health and Welfare, 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about pre-COVID participation rates, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "5647f25a-d31f-45e4-afcf-8d0e3bbb15d9",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C42",
+      "claim": "Prior to COVID-19, 62% of individuals with a positive iFOBT completed a colonoscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to COVID-19, participation was approximately 44%, with 62% of individuals with a positive iFOBT reported as completing a colonoscopy (Australian Institute of Health and Welfare, 2021c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about follow-up rates, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "b254ab6a-6c1c-4028-8b6e-3c99ab3af83f",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C43",
+      "claim": "The Policy1-Bowel model was used to evaluate a 3-, 6-, or 12-month national-level pause commencing 1 April 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Policy1-Bowel model, we evaluated a 3-, 6-, or 12-mo national-level pause, commencing 1 April 2020 during which time we assumed that no screening invitations or kits were sent or processed and all primary screening and diagnostic or surveillance colonoscopies associated with the NBCSP were halted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the modelling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "24c7ed3e-337a-4098-8d7d-c22cc797dafb",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C44",
+      "claim": "During bowel screening pause periods, it was assumed that no screening invitations or kits were sent or processed and all primary screening and diagnostic or surveillance colonoscopies associated with the NBCSP were halted.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Policy1-Bowel model, we evaluated a 3-, 6-, or 12-mo national-level pause, commencing 1 April 2020 during which time we assumed that no screening invitations or kits were sent or processed and all primary screening and diagnostic or surveillance colonoscopies associated with the NBCSP were halted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption used in the modelling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "42ba0802-7d18-449c-8993-14d2f799677b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C45",
+      "claim": "It was assumed that individuals missing a bowel screen during the pause would be screened at the next screening round, 2 years later.",
+      "claim_type": "EXPLICIT",
+      "source": "It was assumed that individuals missing a screen during the pause would be screened at the next screening round, 2 y later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological assumption used in the modelling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "96377608-b31e-407d-8d31-3f8392339475",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C46",
+      "claim": "Bowel screening outcomes have been estimated for people aged 50-74 years eligible for screening in 2020 and 2021, comprising 7.1 million people (3.5 million men and 3.6 million women).",
+      "claim_type": "EXPLICIT",
+      "source": "Outcomes have been estimated for the affected cohorts only, that is, among people aged 50\u201374 y eligible for screening in 2020 and 2021. This cohort comprises 7.1 million people; 3.5 million men and 3.6 million women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the study population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "873a4bfc-d109-4c2f-9f7b-36dbd2e2d690",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C47",
+      "claim": "The National Cervical Screening Program is provided to women aged 25-74 years and usually involves a visit to primary care.",
+      "claim_type": "EXPLICIT",
+      "source": "The National Cervical Screening Program (NSCP) is provided to women aged 25\u201374 y and usually involves a visit to primary care.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the screening programme.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "266dfcbd-1ddd-4e74-a7cd-4b88bf55b023",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C50",
+      "claim": "Modelled cervical screening participation was updated to reflect National Cancer Screening Register data indicating that 53.6% of women had already attended for their first HPV test.",
+      "claim_type": "EXPLICIT",
+      "source": "As part of this evaluation, we updated modelled screening participation to reflect National Cancer Screening Register data (Supplementary file 1B), indicating that 53.6% of women had already attended for their first HPV test, and therefore were not due to attend for routine screening again until at least December 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about data used in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "0781951f-82df-4989-be94-bfb1bdf7959a",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C51",
+      "claim": "6-, 9-, or 12-month disruptions to cervical screening participation in 2020 were evaluated, with participation during these periods being 50%, 75%, and 90% lower, respectively, than would otherwise have been expected.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated 6-, 9-, or 12-mo disruptions to screening participation in 2020, with participation during these periods being 50, 75, and 90% lower, respectively, than would otherwise have been expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the scenarios modelled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "9e627ca8-160e-43b2-b5ef-eb72c78c3816",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C52",
+      "claim": "For the 2-year period 2020-2021, screening pauses of any duration would lead to an overall reduction in population-level invasive breast cancer diagnosis for women aged 50-74 years.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 2-y period 2020\u20132021, we estimate that screening pauses of any duration would lead to an overall reduction in population-level invasive breast cancer diagnosis for women aged 50\u201374 y, noting that the estimated reduction in cancer incidence was comparable (~9%) between a 6-mo pause with pre-COVID throughout during recovery and a 12-mo pause with 150% throughput during recovery (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modelling study, with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "b20e363d-a8d6-49f2-b19c-be0cd31053eb",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C53",
+      "claim": "The estimated reduction in breast cancer incidence was comparable (~9%) between a 6-month pause with pre-COVID throughput during recovery and a 12-month pause with 150% throughput during recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 2-y period 2020\u20132021, we estimate that screening pauses of any duration would lead to an overall reduction in population-level invasive breast cancer diagnosis for women aged 50\u201374 y, noting that the estimated reduction in cancer incidence was comparable (~9%) between a 6-mo pause with pre-COVID throughout during recovery and a 12-mo pause with 150% throughput during recovery (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modelling study, with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "a559da96-443b-4ced-a721-279c28be138e",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C54",
+      "claim": "All breast screening scenarios would lead to reduced population-level rates of screen-detected cancers and interval cancers, reduced programme sensitivity, and more advanced tumour stage at diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "All scenarios would lead to reduced population-level rates of screen-detected cancers and interval cancers, reduced programme sensitivity, and more advanced tumour stage at diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "9de7b847-fb97-4418-bd8f-f95f9b8a55eb",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C55",
+      "claim": "With a 12-month breast screening pause, there is an estimated 10% difference in population-level invasive breast cancer diagnoses among women aged 50-74 between 2020-2021 (270 per 100,000 women) and 2022-2023 (296 per 100,000 women).",
+      "claim_type": "EXPLICIT",
+      "source": "Longer-term fluctuations in clinical and programme outcomes are also expected; for example, with a 12-mo pause we estimate a 10% difference in population-level invasive breast cancer diagnoses among women aged 50\u201374 between 2020 and 2021 (270 per 100,000 women) and 2022\u20132023 (296 per 100,000 women) (Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "1d791b18-b5ce-4b4e-bfc1-027bf74256a8",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C56",
+      "claim": "Estimated breast screening intervals ranged from a median of 107 weeks for a 3-month pause through to 130 weeks for a 12-month pause.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated screening intervals ranged from a median of 107 wk for a 3-mo pause through to 130 wk for a 12-mo pause, with a median of 154 wk for women who missed screens during the pause (Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "f1498b75-47fd-41fc-9e3b-6179d1e80224",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C57",
+      "claim": "Breast screening recall rates are predicted to fluctuate over time under various pause scenarios, ranging from 5.3% (3-month pause) to 5.6% (12-month pause).",
+      "claim_type": "EXPLICIT",
+      "source": "Recall rates are predicted to fluctuate over time under various pause scenarios, ranging from 5.3% (3-mo pause) to 5.6% (12-mo pause) (Table 3), most likely due to an increasing proportion of first-round screening during recovery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modelling study, with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "355dae8b-513f-493b-996e-ce3a207216b1",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C58",
+      "claim": "All three bowel screening scenarios illustrated a decrease in cancer diagnoses and cancers being diagnosed at a later stage in the screening cohort compared to the status quo.",
+      "claim_type": "EXPLICIT",
+      "source": "All three scenarios illustrated a decrease in cancer diagnoses and cancers being diagnosed at a later stage in the screening cohort compared to the status quo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "8afd0404-c982-483d-b695-e886fef9d807",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C59",
+      "claim": "Across the modelled bowel screening scenarios, colorectal cancer diagnoses decreased in 2020-2021 by 583-2549 cases (2.8-12.1% decrease).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the modelled scenarios, colorectal cancer diagnoses decreased in 2020\u20132021 by 583\u20132549 cases (2.8\u201312.1% decrease).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "ca795a56-9013-44cf-a48e-e70805b1de50",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C60",
+      "claim": "The modelled bowel screening disruptions resulted in a stage shift, with up to 891 cases which would have been diagnosed but instead progressed to a later stage with lower survival.",
+      "claim_type": "EXPLICIT",
+      "source": "The modelled disruptions resulted in a stage shift, with up to 891 cases which would have been diagnosed but instead progressed to a later stage with lower survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "5de3e075-80c0-4a84-9472-eeafd76bbcd0",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C61",
+      "claim": "The NBCSP-related colonoscopies that would not be conducted in 2020 due to the 3-, 6-, and 12-month disruptions would be 19,151, 38,335, and 76,125 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The NBCSP-related colonoscopies that would not be conducted in 2020 due to the 3-, 6-, and 12-mo disruptions would be 19,151, 38,335, and 76,125 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "c3c915bb-369e-48ed-abd9-093b2eb0d000",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C62",
+      "claim": "A 12-month pause to bowel screening would lead to an additional 7140 colorectal cancer cases over 2020-2050.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis found that a 12-mo pause to screening would lead to an additional 7140 colorectal cancer cases over 2020\u20132050.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "4815b992-4a58-48f9-b42e-3f675054b4d9",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C63",
+      "claim": "All three cervical screening scenarios resulted in an increase in cancer diagnoses and cancers being diagnosed at a later stage among screening-age women compared to what would have been expected in the absence of any disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "All three scenarios resulted in an increase in cancer diagnoses and cancers being diagnosed at a later stage among screening-age women compared to what would have been expected in the absence of any disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "8f80c555-9ae7-49f8-b597-0d1d45847476",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C64",
+      "claim": "The increase in cervical cancer cases over 2020-2022 ranged from 21 to 69 cases (1.1-3.6% increase).",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in cancer cases over 2020\u20132022 ranged from 21 to 69 cases (1.1\u20133.6% increase).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "2ae322ea-cc78-4dd1-96a2-ec51009fa5b4",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C65",
+      "claim": "Most (57-63%) of the additional cervical cancers were diagnosed among women 30-49 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Most (57\u201363%) of the additional cancers were diagnosed among women 30\u201349 y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "2bc6f782-e054-4ea3-95be-b1082804046b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C66",
+      "claim": "Women aged 30-39 years and 40-49 years were the age groups where the percentage increase in cervical cancers was largest (1.1-4.1% and 1.2-4.3% respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Women aged 30\u201339 y and 40\u201349 y were also the age groups where the percentage increase in cancers was largest (although still relatively small: 1.1\u20134.1% and 1.2\u20134.3% in women aged 30\u201339 and 40\u201349 y, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "33f80854-02eb-450a-9e25-825a592c9c6e",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C67",
+      "claim": "The model predicted that disruptions to routine primary cervical screening would lead to 6-18 cervical cancers being diagnosed at regional stage in 2021-2022, rather than as localised cancers in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that disruptions to routine primary screening would lead to 6\u201318 cervical cancers being diagnosed at regional stage in 2021\u20132022, rather than as localised cancers in 2020; and 3\u20139 cervical cancers being diagnosed at distant stage in 2021\u20132022, rather than at regional stage in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "1d56ee00-817e-47d7-9226-3177c1b6e5fc",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C68",
+      "claim": "The model predicted that disruptions to routine primary cervical screening would lead to 3-9 cervical cancers being diagnosed at distant stage in 2021-2022, rather than at regional stage in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicted that disruptions to routine primary screening would lead to 6\u201318 cervical cancers being diagnosed at regional stage in 2021\u20132022, rather than as localised cancers in 2020; and 3\u20139 cervical cancers being diagnosed at distant stage in 2021\u20132022, rather than at regional stage in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "b00f307e-d776-43a0-8493-c92538e500e4",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C69",
+      "claim": "An estimated 30-97 women would be affected by delays in cervical cancer diagnosis due to disruptions to routine screening in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering both additional cervical cancers and those which were diagnosed at a later stage due to disruptions to cervical screening, an estimated 30\u201397 women would be affected by delays in diagnosis due to disruptions to routine screening in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "c703da9b-93b9-4bc0-ad17-84174946f7a3",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C70",
+      "claim": "Disruptions to primary cervical screening in 2020 are estimated to result in 17,680-47,868 fewer women attending for a colposcopy in 2020 (17.4-47.2% reduction).",
+      "claim_type": "EXPLICIT",
+      "source": "Disruptions to primary screening in 2020 are estimated to result in 17,680\u201347,868 fewer women attending for a colposcopy in 2020 (17.4\u201347.2% reduction) as a result of their primary screening or triage test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "72c9d971-f374-49ed-852e-2aeffbf34739",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C71",
+      "claim": "For similar disruption scenarios, markedly different impacts are estimated for each screening programme.",
+      "claim_type": "EXPLICIT",
+      "source": "We present outcomes estimated in 2020 for a range of potential disruptions to national population cancer screening programmes for breast, cervical, and colorectal cancer, including population-level changes in cancer diagnoses and staging. For similar disruption scenarios, we estimate markedly different impacts for each programme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "03702e34-bd00-4033-ae15-b59e1ef058e3",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C72",
+      "claim": "For a 6-month screening disruption, reduced diagnoses of breast cancer (9.4% population-level reduction over 2020-2021, with 100% throughput) and colorectal cancer (up to 5.8% reduction over 2020-21) and increased cervical cancer diagnoses (up to 1.1% over 2020-2022) were estimated, with less marked upstaging compared to a 12-month disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "For a 6-mo screening disruption we estimated reduced diagnoses of breast cancer (9.4% population-level reduction over 2020\u20132021, with 100% throughput) and colorectal cancer (up to 5.8% reduction over 2020\u201321) and increased cervical cancer diagnoses (up to 1.1% over 2020\u20132022), with less marked upstaging compared to a 12-mo disruption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "f9c43aa2-4322-4228-90b0-8cb0f9428532",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C73",
+      "claim": "Findings were most marked for bowel screening, for which short-term upstaging and reduced cancer incidence was expected to lead to a significant number of additional colorectal cancer cases over the lifetime of the affected cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings were most marked for bowel screening, for which short-term upstaging and reduced cancer incidence was expected to lead to a significant number of additional colorectal cancer cases over the lifetime of the affected cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "32be6659-91e5-4c1e-b303-4356c8efd68b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C74",
+      "claim": "For cervical screening, relative and absolute increases in cancer are expected to be less than for breast and colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For cervical screening, relative and absolute increases in cancer are expected to be less than for breast and colorectal cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the modelling study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "5b7a3789-6767-40f1-9982-df4df19eebaa",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C75",
+      "claim": "The lower impact on cervical cancer is likely due to COVID-19 impacts coinciding with lower participation under status quo because the programme recently transitioned to a longer screening interval, along with the lower burden of disease due to prevention through both screening and widespread uptake of HPV vaccination (80% three-dose coverage among females aged 14-15).",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to COVID-19 impacts coinciding with lower participation under status quo because the programme recently transitioned to a longer screening interval, along with the lower burden of disease due to prevention through both screening and widespread uptake of HPV vaccination (80% three-dose coverage among females aged 14\u201315) (Australian Government, Department of Health, 2022a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of findings, with citation supporting the HPV vaccination coverage statistic.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "80b726eb-430f-406e-bac0-f99df025bb3c",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C76",
+      "claim": "The modelling platforms used are established for breast, colorectal, and HPV/cervical cancer natural history and screening in Australia, and are well calibrated and validated to the Australian context using high-quality published data.",
+      "claim_type": "EXPLICIT",
+      "source": "We used established modelling platforms for breast, colorectal, and HPV/cervical cancer natural history and screening in Australia, which were already well calibrated and validated to the Australian context using high-quality published data, including detailed governmental screening reports.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study methods and their quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "feaaa424-3cec-466a-9ebf-035ad46c0954",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C77",
+      "claim": "Prior investment into these modelling platforms facilitated the rapid response modelling required in the face of a crisis.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior investment into these modelling platforms facilitated the rapid response modelling required in the face of a crisis; the evaluations reported highlight the importance of ongoing investment into comprehensive, well-calibrated and validated population predictive models that can be quickly harnessed for critical decision-making as needed for disruptions such as the COVID-19 pandemic and other potential disruptions due to major social, public health, or natural disasters as are increasingly common due to climate change (Bureau of Meteorology, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the value of the modelling infrastructure, with citation supporting the climate change reference.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "e697c3a9-47e8-43ae-85c6-e781ec151067",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C78",
+      "claim": "Scenarios were defined in simple terms, modeling single, continuous periods of national disruption, though in practice screening participation would likely fluctuate by time and place.",
+      "claim_type": "EXPLICIT",
+      "source": "Scenarios were by necessity defined in simple terms. For example, we modelled single, continuous periods of national disruption but, in practice, screening participation would likely fluctuate by time and place in line with local outbreaks and pandemic control measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about study limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "15eddbc6-874a-4813-aa91-84b443158909",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C79",
+      "claim": "The modelled estimates do not account for changes in diagnostic and treatment services due to COVID-19 which have since been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelled estimates will likely include some biases. We do not account for changes in diagnostic and treatment services due to COVID-19 which have since been observed (Australian Government, Cancer Australia, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about study limitations, with citation to observed data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "c0c9bab5-6184-4701-aaac-982dd84734fe",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C80",
+      "claim": "Medicare Benefits Schedule claims data from 2020 indicates a 4% reduction in breast diagnostic services and 6% reduction in breast cancer-related surgical procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Medicare Benefits Schedule claims data from 2020 indicates a 4% reduction in breast diagnostic services and 6% reduction in breast cancer-related surgical procedures, and for colorectal cancer a 13% reduction in diagnostic services (mostly colonoscopies) and 1% reduced surgical procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "44b8d6f5-c78a-46c8-b050-217b25797f1b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C81",
+      "claim": "Medicare Benefits Schedule claims data from 2020 indicates a 13% reduction in colorectal cancer diagnostic services (mostly colonoscopies) and 1% reduced surgical procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Medicare Benefits Schedule claims data from 2020 indicates a 4% reduction in breast diagnostic services and 6% reduction in breast cancer-related surgical procedures, and for colorectal cancer a 13% reduction in diagnostic services (mostly colonoscopies) and 1% reduced surgical procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "72438543-83d7-4e73-85a8-7a8db15276fd",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C82",
+      "claim": "The Australian cervical and bowel screening programmes continued to operate continuously through 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The Australian cervical and bowel screening programmes continued to operate continuously through 2020 (and since), while BreastScreen services paused nationally from March to late April/early May 2020, resuming thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed programme operations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "744d4588-374c-4667-841d-59ddbce6439b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C83",
+      "claim": "BreastScreen services paused nationally from March to late April/early May 2020, resuming thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "The Australian cervical and bowel screening programmes continued to operate continuously through 2020 (and since), while BreastScreen services paused nationally from March to late April/early May 2020, resuming thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed programme operations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "d701c9c7-264d-4985-aeca-e3a0f653619b",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C84",
+      "claim": "There was an overall 34% reduction in screening tests across the three programmes comprising over 1 million (1,035,710) fewer breast, bowel, and cervix tests in age-targeted Australian populations in January to September 2020 compared to January to September 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Monthly screening tests over the period January\u2013September 2020 fluctuated as shown in Figure 1 (and Figure 2), (Australian Institute of Health and Welfare, 2020b) with an overall 34% reduction in screening tests across the three programmes comprising over 1 million (1,035,710) fewer breast, bowel, and cervix tests in age-targeted Australian populations compared to January to September 2019 (Australian Institute of Health and Welfare, 2020b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a factual statement about observed data, with citation and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "ea6a89a6-44fd-445d-b25c-3213e1086c7c",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C85",
+      "claim": "For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme.",
+      "claim_type": "EXPLICIT",
+      "source": "For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme, with 14% fewer breast screening tests (Australian Institute of Health and Welfare, 2023), an estimated 7% reduction in bowel screening participation (Australian Institute of Health and Welfare, 2023) and for cervical screening, based on reimbursement claims data, a 10% reduction in expected HPV tests (Smith et al., 2016; Australian Government, Services Australia, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of modelled predictions to observed data, with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "d6b70e3c-2477-4a97-ab57-66f0238a6703",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C86",
+      "claim": "In 2020, there were 14% fewer breast screening tests.",
+      "claim_type": "EXPLICIT",
+      "source": "For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme, with 14% fewer breast screening tests (Australian Institute of Health and Welfare, 2023), an estimated 7% reduction in bowel screening participation (Australian Institute of Health and Welfare, 2023) and for cervical screening, based on reimbursement claims data, a 10% reduction in expected HPV tests (Smith et al., 2016; Australian Government, Services Australia, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "af4b222b-37bb-4c30-b657-52310b797588",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C87",
+      "claim": "In 2020, there was an estimated 7% reduction in bowel screening participation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme, with 14% fewer breast screening tests (Australian Institute of Health and Welfare, 2023), an estimated 7% reduction in bowel screening participation (Australian Institute of Health and Welfare, 2023) and for cervical screening, based on reimbursement claims data, a 10% reduction in expected HPV tests (Smith et al., 2016; Australian Government, Services Australia, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "ed95e0c7-c691-4e5f-a2bb-c9cb28035830",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C88",
+      "claim": "In 2020, there was a 10% reduction in expected HPV tests for cervical screening based on reimbursement claims data.",
+      "claim_type": "EXPLICIT",
+      "source": "For the year 2020, observed reductions in participation were lower than the most conservative estimates modelled for each programme, with 14% fewer breast screening tests (Australian Institute of Health and Welfare, 2023), an estimated 7% reduction in bowel screening participation (Australian Institute of Health and Welfare, 2023) and for cervical screening, based on reimbursement claims data, a 10% reduction in expected HPV tests (Smith et al., 2016; Australian Government, Services Australia, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "2433055d-b535-400b-ab42-80db4a0b24ff",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C89",
+      "claim": "Observed screening reductions were driven by a range of factors such as screening service closure followed by reduced throughput capacity for breast screening, reduced primary care visits (cervical screening), as well individuals likely de-prioritising screening in the context of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Observed screening reductions were driven by a range of factors such as screening service closure followed by reduced throughput capacity for breast screening, reduced primary care visits (cervical screening), as well individuals likely de-prioritising screening in the context of the pandemic (Bittleston et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of observed data, with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "80c93389-533d-431f-9e4d-4f88f274bc0a",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C90",
+      "claim": "Screening test rates varied markedly between states and territories during the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening test rates varied markedly between states and territories during the pandemic, (Australian Institute of Health and Welfare, 2020b) consistent with localised, often state-and-territory based controls, including stay-at-home orders, border closures, quarantine programmes, and other physical and social distancing measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about observed data, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "9e11096a-b6f6-4782-92dd-daed49b21d96",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C91",
+      "claim": "Early signs suggest an observed reduction in cancer diagnosis in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Our predicted clinical implications of reduced participation cannot be confirmed for some time; however, early signs suggest an observed reduction in cancer diagnosis in 2020 (Victorian Cancer Registry. Cancer in Victoria, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about observed data, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "3409dcc4-3cd0-4bc3-a265-d40c14a3d3b2",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C92",
+      "claim": "COVID-19 vaccination coverage is high in Australia (two dose: >95% nationally for people >16 years old; three dose: 71% >16 years).",
+      "claim_type": "EXPLICIT",
+      "source": "While COVID-19 vaccination coverage is high in Australia (two dose: >95% nationally for people >16 y old; three dose: 71%>16 y) (Australian Government, Department of Health, 2022b) social distancing measures are a continuing requirement and the redeployment of health services may be required in future if new variants of concern with higher transmissibility and/or virulency take over.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about vaccination coverage, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "ea30e843-7ff1-44aa-a726-1e90e27dd9bf",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C93",
+      "claim": "Maintaining screening participation is critical to preventing an increase in the burden of cancer at a population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings from the 6\u201312-mo disruption scenarios illustrate that maintaining screening participation is critical to preventing an increase in the burden of cancer at a population level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modelling findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "d39fb100-91f3-43eb-8c41-e3aee81e7bcc",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C94",
+      "claim": "From 1 July 2022, all women in Australia now have the option to use self-collection for cervical screening.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, from 1 July 2022, all women now have the option to use self-collection and this could facilitate continuation or recovery of cervical screening programmes (Australian Government, Department of Health Ministers, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about a policy change, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "f718559b-ed79-4777-8233-e361335ca7e2",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C95",
+      "claim": "Self-collection for cervical screening could facilitate continuation or recovery of cervical screening programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, from 1 July 2022, all women now have the option to use self-collection and this could facilitate continuation or recovery of cervical screening programmes (Australian Government, Department of Health Ministers, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential benefits of a policy change.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "23fec466-af3e-4a34-a9ad-924623a50d06",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C96",
+      "claim": "Previously published modelling estimated that 'catch-up' screening for bowel cancer could almost ameliorate the impact of a disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "For bowel screening, previously published modelling estimated that this 'catch-up' screening could almost ameliorate the impact of a disruption (de Jonge et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about findings from other published work, with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "e530eae3-fcd4-49c2-a3c4-a5cd1bfd415e",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "claim_id": "C97",
+      "claim": "The 3.7 million combined breast, bowel, and cervical screening episodes expected under status quo in the 12 months starting 1 April 2020 would be reduced by 90% with a 12-month disruption and by 43% with a 6-month disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "For the scenarios modelled, the 3.7 million combined breast, bowel, and cervical screening episodes expected under status quo in the 12 mo starting 1 April 2020 would be reduced by 90% with a 12-mo disruption and by 43% with a 6-mo disruption (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modelling study, with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de5fe2eb-5f03-4317-96f9-7636cdd15507",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Australian Government Department of Health commissioned a rapid-response modelled evaluation in early 2020 to assess the health impacts of potential disruptions to breast, bowel, and cervical cancer screening programmes. This was the first time such a comprehensive analysis across all three screening programmes had been performed in Australia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20, and C21 consistently describe the commissioning and novelty of this evaluation. The claims are factual statements about the study's origin and scope, supported by the manuscript's explicit statements and context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "bd85ed79-2913-4204-bed0-faa554332190",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Policy1 modelling platform, which is comprehensive, validated, and well-calibrated to the Australian context, was used to simulate various screening disruption scenarios. Scenarios were specified according to disruption duration (3, 6, 9, or 12 months) and degree (complete pauses or reduced throughput).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22, C24, C25, C26, and C76 describe the methodological approach and characteristics of the Policy1 platform. These are supported by citations and explicit statements about the platform's validation and prior use in evaluating screening protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "29fcf080-c240-48d8-9338-66ee99bc9e1c",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A 12-month breast screening disruption would reduce breast cancer diagnoses by 9.3% at the population level over 2020-2021. All screening pause scenarios would lead to reduced screen-detected cancers, interval cancers, programme sensitivity, and more advanced tumour staging. The estimated reduction was comparable (~9%) between a 6-month pause with pre-COVID throughput and a 12-month pause with 150% throughput during recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C52-C57 present specific quantitative findings from the breast screening model with consistent numerical estimates and references to Table 3. The findings are internally consistent and represent direct outputs from the simulation model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "243dd81d-8b68-4c20-a144-ea0c9088e791",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A 12-month bowel screening disruption would reduce colorectal cancer diagnoses by up to 12.1% over 2020-2021, with 583-2549 fewer cases across scenarios. The disruptions resulted in stage shifts affecting up to 891 cases and would lead to an additional 7,140 colorectal cancer cases over 2020-2050 in the affected cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C58-C62 present specific quantitative findings from the bowel screening model. The short-term and long-term projections are clearly stated with numerical ranges. However, the long-term projection (C62) involves substantial extrapolation and assumptions about future screening behavior that introduce uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "bb15c122-c482-455d-a8d8-9240b63aea44",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A 12-month cervical screening disruption would increase cervical cancer diagnoses by up to 3.6% over 2020-2022, with 21-69 additional cases across scenarios. Most additional cancers (57-63%) would be diagnosed in women aged 30-49 years. The model predicted 6-18 cancers would be upstaged from localised to regional and 3-9 from regional to distant stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C63-C70 present specific quantitative findings from the cervical screening model with consistent numerical estimates. The age-specific and staging results are clearly stated, though the relatively small absolute numbers introduce some uncertainty in the precision of estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "5d9691c7-c788-4ab5-9706-78fee20c4c16",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For similar disruption scenarios, markedly different impacts were estimated for each screening programme, with upstaging expected at rates of 2%, 1.4%, and 6.8% for breast, cervical, and colorectal cancers respectively. Findings were most marked for bowel screening, while cervical screening showed smaller relative and absolute increases, likely due to the recent programme transition and high HPV vaccination coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C71-C75 synthesize comparative findings across the three programmes. The upstaging percentages and comparative assessments are supported by the detailed results. The interpretation regarding cervical screening (C75) is reasonable given the cited HPV vaccination coverage data, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "542cef35-a68b-4892-a572-cdd2cce5a134",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The BreastScreen Australia programme offers biennial mammographic screening to women aged 50-74 years, with approximately 55% participation pre-COVID and 51% of national breast cancers detected through the programme. The Policy1-Breast model was revised to include a prioritisation module to simulate capacity-driven recovery scenarios with gradual service restoration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C38 describe the breast screening programme characteristics and modelling approach. The programme details are supported by citations to authoritative sources (AIHW), and the methodological modifications are explicitly described. The prioritisation strategy is clearly articulated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The National Bowel Cancer Screening Program provides biennial iFOBT screening to Australians aged 50-74 years, with approximately 44% participation pre-COVID and 62% of positive iFOBT cases completing colonoscopy. The model evaluated complete pauses to screening and colonoscopy services, assuming individuals missing screens would be screened at the next round 2 years later.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 describe the bowel screening programme and modelling assumptions. The programme characteristics are supported by citations, and the modelling assumptions are clearly stated. The assumption that missed screens would occur 2 years later (C45) is a simplification that may not reflect actual behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "16393d2c-bb40-434f-9185-3456b786caa8",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The National Cervical Screening Program serves women aged 25-74 years through primary care visits. The model incorporated National Cancer Screening Register data showing 53.6% of women had already attended for their first HPV test, and evaluated disruptions with 50%, 75%, and 90% reductions in screening participation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C50, and C51 describe the cervical screening programme and modelling approach. The incorporation of NCSR data (C50) strengthens the model's relevance to the Australian context. The scenario specifications are clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "1c0c36b6-641a-4ebd-bfdf-576f114a1015",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 3.7 million combined screening episodes expected under status quo in the 12 months starting 1 April 2020 would be reduced by 90% with a 12-month disruption and by 43% with a 6-month disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 presents aggregate findings across all three programmes with reference to Table 2. The percentages represent direct model outputs for the combined impact of disruptions on screening volume.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "657230ea-7015-4d39-ad47-cd6b6199384c",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Observed data showed that cervical and bowel screening programmes continued operating through 2020, while BreastScreen paused from March to late April/early May 2020. Overall, there was a 34% reduction in screening tests (over 1 million fewer tests) in January-September 2020 compared to 2019. For the full year 2020, observed reductions (14% breast, 7% bowel, 10% cervical) were lower than the most conservative modelled estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C88 describe observed outcomes with citations to AIHW data and other authoritative sources. The comparison between modelled and observed data (C85) is valuable for validation, showing that actual disruptions were less severe than the conservative scenarios modelled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior investment in the Policy1 modelling platforms facilitated rapid response modelling during the crisis. However, the study has limitations: scenarios were defined in simple terms (single, continuous national disruptions), and the models did not account for observed changes in diagnostic and treatment services (4% reduction in breast diagnostic services, 13% reduction in colorectal diagnostic services).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 acknowledge both strengths and limitations of the modelling approach. The limitations are explicitly stated by the authors, and the observed reductions in diagnostic services (C80-C81) are cited. This transparent acknowledgment of limitations is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Observed screening reductions were driven by multiple factors including service closures, reduced throughput capacity, and individuals de-prioritising screening. Screening rates varied markedly between states and territories. Early signs suggest an observed reduction in cancer diagnoses in 2020, and maintaining screening participation is critical to preventing increased cancer burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 interpret observed data and draw conclusions. The factors driving reductions (C89) and geographic variation (C90) are supported by citations. The conclusion about maintaining participation (C93) follows logically from the modelling findings, though it is somewhat general.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "414be970-974c-4e72-8719-cb599cae6572",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Population cancer screening programmes aim to reduce cancer mortality and detect precancerous abnormalities, with mortality benefits outweighing screening risks. Australia established national screening programmes for breast and cervical cancer in 1991 and colorectal cancer in 2006. Following the WHO's pandemic declaration in March 2020, Australia introduced strict infection control measures that proved effective for short-term pandemic control, though outbreaks followed. Multiple countries have undertaken modelled evaluations of COVID-19 impacts on screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C19 provide background context supported by citations to published literature and authoritative sources. These establish the rationale for screening programmes and the pandemic context. All claims are well-documented with appropriate references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    },
+    {
+      "id": "b2ff88a2-781b-4c57-8659-0261cb6498e7",
+      "content_id": "6104684e-9575-4175-a3e3-945e95699756",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "From 1 July 2022, all women in Australia have the option to use self-collection for cervical screening, which could facilitate programme continuation or recovery. Previously published modelling estimated that 'catch-up' screening for bowel cancer could almost ameliorate disruption impacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C94 is a factual statement about policy with citation support. However, C95 is speculative about potential benefits without supporting evidence. C96 references prior published work but the applicability to the current Australian context is not demonstrated. These represent future possibilities rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:13:31.043989Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "34ba929f-a24f-4f77-ac79-3659080df207",
+      "result_id": "de5fe2eb-5f03-4317-96f9-7636cdd15507"
+    },
+    {
+      "claim_id": "328be5db-4f40-4101-8ceb-e4e35b837f57",
+      "result_id": "de5fe2eb-5f03-4317-96f9-7636cdd15507"
+    },
+    {
+      "claim_id": "1b483d5b-18bf-4558-970a-f0334716e7af",
+      "result_id": "de5fe2eb-5f03-4317-96f9-7636cdd15507"
+    },
+    {
+      "claim_id": "a7ee12a1-69f1-4bdf-9ced-c2683ee4db5b",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "33bc884d-3795-4c15-ae5a-991523a75596",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "bffe662c-486b-4222-b242-460352250e3a",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "37166222-a9fb-47eb-93a9-050567027598",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "c3acb072-9b75-44d5-861b-df074237594d",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "80b726eb-430f-406e-bac0-f99df025bb3c",
+      "result_id": "bd85ed79-2913-4204-bed0-faa554332190"
+    },
+    {
+      "claim_id": "9596d047-5f9d-4a8c-bfbc-b5ab955125ba",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "9e627ca8-160e-43b2-b5ef-eb72c78c3816",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "b20e363d-a8d6-49f2-b19c-be0cd31053eb",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "a559da96-443b-4ced-a721-279c28be138e",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "9de7b847-fb97-4418-bd8f-f95f9b8a55eb",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "1d791b18-b5ce-4b4e-bfc1-027bf74256a8",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "f1498b75-47fd-41fc-9e3b-6179d1e80224",
+      "result_id": "29fcf080-c240-48d8-9338-66ee99bc9e1c"
+    },
+    {
+      "claim_id": "0ff3805a-71c3-4263-923c-d4fc65f88dd0",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "355dae8b-513f-493b-996e-ce3a207216b1",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "8afd0404-c982-483d-b695-e886fef9d807",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "ca795a56-9013-44cf-a48e-e70805b1de50",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "5de3e075-80c0-4a84-9472-eeafd76bbcd0",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "c3c915bb-369e-48ed-abd9-093b2eb0d000",
+      "result_id": "243dd81d-8b68-4c20-a144-ea0c9088e791"
+    },
+    {
+      "claim_id": "11d85d62-b9d1-465b-bcc6-e75e1e09a9c6",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "4815b992-4a58-48f9-b42e-3f675054b4d9",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "8f80c555-9ae7-49f8-b597-0d1d45847476",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "2ae322ea-cc78-4dd1-96a2-ec51009fa5b4",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "2bc6f782-e054-4ea3-95be-b1082804046b",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "33f80854-02eb-450a-9e25-825a592c9c6e",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "1d56ee00-817e-47d7-9226-3177c1b6e5fc",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "b00f307e-d776-43a0-8493-c92538e500e4",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "c703da9b-93b9-4bc0-ad17-84174946f7a3",
+      "result_id": "bb15c122-c482-455d-a8d8-9240b63aea44"
+    },
+    {
+      "claim_id": "a57f3d70-370c-4265-b03c-d91c20be804c",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "72c9d971-f374-49ed-852e-2aeffbf34739",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "03702e34-bd00-4033-ae15-b59e1ef058e3",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "f9c43aa2-4322-4228-90b0-8cb0f9428532",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "32be6659-91e5-4c1e-b303-4356c8efd68b",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "5b7a3789-6767-40f1-9982-df4df19eebaa",
+      "result_id": "5d9691c7-c788-4ab5-9706-78fee20c4c16"
+    },
+    {
+      "claim_id": "82e77860-2a35-434c-bcaa-cfa53a508405",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "f4e62797-210f-4c3e-a66e-9df89887ca00",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "4452bd36-06b4-4579-acde-08b7bb53c939",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "82cc5a35-1be8-4800-bd44-67d1409a8508",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "6b76e362-7fa9-460d-9e9c-5a3c9bb987d8",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "618c63c0-ec58-4cc1-8dbb-4e87d9184d86",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "fed0a0de-3082-454e-a3fc-280e4863aa21",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "7a0be796-4f48-46db-b380-7d95bae508fe",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "ad75e5df-0790-4d60-b2db-f1f018e2368e",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "7bb8c96d-18ed-43ef-80b3-4feeaa18d661",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "4d76b3a8-daba-4388-ba33-1a01164179ea",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "1b2ddb96-d39e-4371-aee0-734c09c2f3bd",
+      "result_id": "542cef35-a68b-4892-a572-cdd2cce5a134"
+    },
+    {
+      "claim_id": "31da2f99-6a99-48ac-9555-0ca132857bf2",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "22a5bd42-3df4-4660-9f14-27fe6b691fec",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "93883568-ee71-4b55-8aec-bdc9eb446686",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "5647f25a-d31f-45e4-afcf-8d0e3bbb15d9",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "b254ab6a-6c1c-4028-8b6e-3c99ab3af83f",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "24c7ed3e-337a-4098-8d7d-c22cc797dafb",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "42ba0802-7d18-449c-8993-14d2f799677b",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "96377608-b31e-407d-8d31-3f8392339475",
+      "result_id": "5b5863ae-7e49-4ea2-a9ec-05391c852cda"
+    },
+    {
+      "claim_id": "873a4bfc-d109-4c2f-9f7b-36dbd2e2d690",
+      "result_id": "16393d2c-bb40-434f-9185-3456b786caa8"
+    },
+    {
+      "claim_id": "266dfcbd-1ddd-4e74-a7cd-4b88bf55b023",
+      "result_id": "16393d2c-bb40-434f-9185-3456b786caa8"
+    },
+    {
+      "claim_id": "0781951f-82df-4989-be94-bfb1bdf7959a",
+      "result_id": "16393d2c-bb40-434f-9185-3456b786caa8"
+    },
+    {
+      "claim_id": "e530eae3-fcd4-49c2-a3c4-a5cd1bfd415e",
+      "result_id": "1c0c36b6-641a-4ebd-bfdf-576f114a1015"
+    },
+    {
+      "claim_id": "72438543-83d7-4e73-85a8-7a8db15276fd",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "744d4588-374c-4667-841d-59ddbce6439b",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "d701c9c7-264d-4985-aeca-e3a0f653619b",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "ea6a89a6-44fd-445d-b25c-3213e1086c7c",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "d6b70e3c-2477-4a97-ab57-66f0238a6703",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "af4b222b-37bb-4c30-b657-52310b797588",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "ed95e0c7-c691-4e5f-a2bb-c9cb28035830",
+      "result_id": "657230ea-7015-4d39-ad47-cd6b6199384c"
+    },
+    {
+      "claim_id": "feaaa424-3cec-466a-9ebf-035ad46c0954",
+      "result_id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d"
+    },
+    {
+      "claim_id": "e697c3a9-47e8-43ae-85c6-e781ec151067",
+      "result_id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d"
+    },
+    {
+      "claim_id": "15eddbc6-874a-4813-aa91-84b443158909",
+      "result_id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d"
+    },
+    {
+      "claim_id": "c0c9bab5-6184-4701-aaac-982dd84734fe",
+      "result_id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d"
+    },
+    {
+      "claim_id": "44b8d6f5-c78a-46c8-b050-217b25797f1b",
+      "result_id": "2a5a74ab-13a3-42d1-969d-44a9e2f87e4d"
+    },
+    {
+      "claim_id": "2433055d-b535-400b-ab42-80db4a0b24ff",
+      "result_id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7"
+    },
+    {
+      "claim_id": "80c93389-533d-431f-9e4d-4f88f274bc0a",
+      "result_id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7"
+    },
+    {
+      "claim_id": "9e11096a-b6f6-4782-92dd-daed49b21d96",
+      "result_id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7"
+    },
+    {
+      "claim_id": "3409dcc4-3cd0-4bc3-a265-d40c14a3d3b2",
+      "result_id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7"
+    },
+    {
+      "claim_id": "ea30e843-7ff1-44aa-a726-1e90e27dd9bf",
+      "result_id": "3c878515-4f6f-4f99-afcc-a2c9c91037a7"
+    },
+    {
+      "claim_id": "4292eea9-e017-465a-9f26-4282de2f69a7",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "91909c03-16e6-48a0-90d0-aa9f9e6da229",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "542acc03-880a-4985-bdf2-e864f686cab0",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "87c0be33-8431-4ca5-87dc-bbd0788737b8",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "856c9583-de5e-4ee3-b345-65c2fe8a4a03",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "08687f2e-6532-4b5a-abd8-ce088b324ee2",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "a4dbe7d5-963a-4a7a-84f0-699ed598910e",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "740e222e-c115-44cb-bee5-0d1b5f797af3",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "9852cce3-4c96-4314-be54-04a574efb161",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "e75f0523-5f41-4474-8987-60703983108d",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "51c81042-c9a7-4f25-8dd4-338bbca43901",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "8978e878-7ede-4358-8793-57e633738860",
+      "result_id": "414be970-974c-4e72-8719-cb599cae6572"
+    },
+    {
+      "claim_id": "d39fb100-91f3-43eb-8c41-e3aee81e7bcc",
+      "result_id": "b2ff88a2-781b-4c57-8659-0261cb6498e7"
+    },
+    {
+      "claim_id": "f718559b-ed79-4777-8233-e361335ca7e2",
+      "result_id": "b2ff88a2-781b-4c57-8659-0261cb6498e7"
+    },
+    {
+      "claim_id": "23fec466-af3e-4a34-a9ad-924623a50d06",
+      "result_id": "b2ff88a2-781b-4c57-8659-0261cb6498e7"
+    }
+  ],
+  "comparisons": []
+}

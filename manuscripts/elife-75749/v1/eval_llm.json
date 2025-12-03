@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Synteny analysis reveals that Nkx3.2 is located in a highly conserved genomic region between Bod1l1 and Rab28 in most jawed vertebrates, but this synteny is disrupted or altered in jawless fishes (hagfish and lamprey).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C25 collectively demonstrate through synteny analysis that Nkx3.2 occupies a conserved position between Bod1l1 and Rab28 across gnathostomes, while jawless vertebrates show disrupted synteny with additional intervening genes or distant gene locations. The data are internally consistent and appropriately documented with genome coordinates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A conserved non-coding element (JRS1) was identified downstream of Nkx3.2 in all examined gnathostome species but is absent from jawless hagfish and lamprey. The core JRS1 sequence contains four conserved motifs, with some motifs absent in elephant shark and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the identification of JRS1 through mVISTA and MEME analyses with appropriate computational methods. The phylogenetic distribution (present in gnathostomes, absent in jawless vertebrates) is clearly documented, and motif variation across species is quantified with statistical significance values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "JRS1 contains predicted binding sites for multiple transcription factors involved in pharyngeal arch development, including Runx3, Esrrb, Nkx3.2, Meis2, Hey1, Twist1, Six1, Tbx1, Runx1, and Twist2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report transcription factor binding site predictions from Tomtom analysis with associated p-values shown in Figure 2C. The predictions are computationally sound and the identified factors are biologically relevant to jaw development, though experimental validation of binding is not provided in these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ChIP-seq analysis of mouse embryonic branchial arches reveals strong Meis enrichment at JRS1 in both BA1 and BA2, with BA2 showing additional Pbx and Hoxa2 enrichment, suggesting differential regulation of Nkx3.2 expression between mandibular and non-mandibular arches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 analyze existing ChIP-seq datasets to validate predicted Meis binding and identify differential transcription factor occupancy between branchial arches. The fold-enrichment values are substantial (95.67-fold in BA1, 42.14-fold in BA2 for Meis), and the inference about differential regulation (C37) is reasonable given the data, though it remains a hypothesis requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "JRS1 is present in most teleost fish but appears to be lost or highly diverged in most members of the Percomorpha clade, with only the cusk-eel retaining a recognizable JRS1 sequence among percomorphs examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 document the phylogenetic distribution of JRS1 across teleosts using mVISTA and BLASTN analyses. The pattern of loss/divergence in Percomorpha is clearly demonstrated with E-values shown in Figure 3, and the exception of cusk-eel is appropriately noted. The methods are appropriate for detecting sequence conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Transgenic zebrafish carrying JRS1:mCherry reporter constructs show mCherry expression in the developing jaw joint region from 40 hpf onwards, with expression patterns matching endogenous nkx3.2 expression in both the jaw joint and early notochord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 describe temporal and spatial expression patterns of the JRS1 reporter in zebrafish, documented with confocal imaging at multiple developmental stages (2-14 dpf). The expression patterns are consistent with known nkx3.2 expression and show appropriate developmental progression from mesenchyme condensation to joint cavity formation. Multiple founders were generated for each construct, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In nkx3.2 knockout mutants with fused jaw joints, JRS1:mCherry-expressing cells are detected lining the outside of the fused cartilage rather than within the joint region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 demonstrate that JRS1 remains active in nkx3.2 mutants but the labeled cells are repositioned to the periphery of the fusion, consistent with altered cell fate or positioning when joint formation fails. This provides evidence that JRS1 activity is independent of Nkx3.2 protein function, supporting the interpretation in C110.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "JRS1 sequences from human, mouse, frog, bichir, and elephant shark all drive mCherry expression in the zebrafish jaw joint, demonstrating functional conservation across gnathostomes. However, non-zebrafish JRS1 sequences do not drive early notochord expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate functional conservation of JRS1 across diverse gnathostome lineages through heterologous reporter assays in zebrafish. The consistent jaw joint activity across ~450 million years of evolution is compelling evidence for conserved function. The absence of notochord expression from non-zebrafish enhancers (C55) suggests this may be a zebrafish-specific regulatory feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CRISPR/Cas9 deletion of JRS1 (445 bp deletion) results in transient jaw joint dysmorphology in homozygous mutants at 5 dpf, including reduced retroarticular process and partial fusion between Meckel's cartilage and palatoquadrate, but the phenotype is rescued by 14-30 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe the generation and phenotypic characterization of JRS1 deletion mutants using skeletal staining at multiple time points. The transient nature of the phenotype is well-documented, with clear dysmorphology at 5 dpf (C59-C60) that resolves by 14 dpf (C61) and is indistinguishable from wild-type by 30 dpf (C62). Sample sizes and penetrance are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "JRS1 deletion causes a significant ~44-47% reduction in nkx3.2 expression in the jaw joint at 48-56 hpf (measured by in situ hybridization), but whole-body qPCR shows no significant differences at 6 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 quantify the effect of JRS1 deletion on nkx3.2 expression using two complementary methods. The in situ hybridization data (C63-C64) show statistically significant reductions (p=0.0038 and p=0.0002) with appropriate pixel intensity measurements. The lack of whole-body differences at 6 dpf (C65) is consistent with either recovery of expression or masking by expression in other tissues, as discussed in C133.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Geometric morphometric analysis confirms that homozygous JRS1 deletion mutants display significantly altered Meckel's cartilage shape at 9 dpf (p=0.0015), with a reduced retroarticular process and less concave joint surface, while wild-type and heterozygous mutants are indistinguishable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 apply appropriate quantitative morphometric methods to characterize the subtle jaw joint phenotype. The statistical analysis (principal components analysis) with adequate sample sizes (N=12, 10, 8) demonstrates significant shape differences. The OPT imaging provides 3D confirmation of the partial fusion observed in 2D skeletal stains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "JRS1 is a gnathostome-specific cis-regulatory element that drives reporter expression matching endogenous nkx3.2 patterns in the jaw joint and notochord, with expression overlapping neural crest-derived cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 synthesize the identification, phylogenetic distribution, and functional characterization of JRS1. The gnathostome-specific distribution is well-established by C26-C27, the expression patterns match endogenous nkx3.2 (supported by citations), and overlap with sox10:egfp confirms neural crest origin of labeled cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "JRS1 deletion produces a milder phenotype than complete nkx3.2 knockout, with subtle jaw joint defects comparable to those seen with ~30% reduction in nkx3.2 expression, consistent with partial rather than complete loss of nkx3.2 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 appropriately contextualize the JRS1 deletion phenotype relative to nkx3.2 null mutants and other partial loss-of-function conditions. The comparison to hspg2 morphants (C129) with similar expression reduction and phenotype strengthens the interpretation. The dose-dependent relationship between nkx3.2 expression levels and phenotype severity is supported by prior work (C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The transient nature of the JRS1 deletion phenotype suggests either recovery of nkx3.2 expression after initial reduction or that early nkx3.2 expression (prior to 6 dpf) is most critical for jaw joint development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 present two alternative interpretations of the phenotypic rescue, but neither is definitively proven. The qPCR data at 6 dpf (C65) cannot distinguish between recovered expression and masking by other tissues (C133). Temporal expression analysis specifically in the jaw joint at later stages would be needed to resolve this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The incomplete loss of nkx3.2 expression following JRS1 deletion suggests that additional, as-yet undiscovered enhancers contribute to nkx3.2 regulation in the jaw joint, consistent with common patterns of enhancer redundancy for developmental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 provide a reasonable interpretation of the incomplete phenotype based on well-established principles of enhancer biology (supported by multiple citations in C134). The inference that other enhancers exist (C135) is logical given the ~50% residual expression and is appropriately presented as a hypothesis rather than proven fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C137",
+      "C138",
+      "C141"
+    ],
+    "result": "JRS1 evolved in the gnathostome stem lineage after divergence from jawless vertebrates and may have contributed to jaw evolution by driving localized Nkx3.2 expression in the primary jaw joint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 and C137-C138, C141 present the evolutionary interpretation of JRS1 origins and function. The inference that JRS1 arose in the gnathostome stem (C112) is well-supported by its presence in all gnathostomes examined and absence in jawless vertebrates. The proposed role in jaw evolution (C113, C138, C141) is appropriately presented as a hypothesis ('may have') based on the functional data, though causality cannot be definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "JRS1 appears functionally conserved in mammals despite the transition of the primary jaw joint to the middle ear, suggesting continued function in driving Nkx3.2 expression in the homologous incudomalleolar joint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 connect the functional conservation of mammalian JRS1 (demonstrated in C54) with the known evolutionary transition of jaw elements to the middle ear (supported by citations to Anthwal et al., 2013 and Luo, 2007). The inference is reasonable given the demonstrated activity of mammalian JRS1 in zebrafish jaw joints, though direct evidence in mammalian middle ear development is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "JRS1 appears to have been lost or degenerated in the common ancestor of beryciforms and percomorphs (PERC+B), possibly related to evolution of novel jaw morphologies in acanthopterygians, though rapid sequence divergence cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 analyze the pattern of JRS1 loss in teleosts. The phylogenetic inference about timing of loss (C120-C121) is supported by the distribution data in Figure 3. The speculation about functional morphology (C122) is appropriately tentative. The sequence alignment analysis (C124) provides evidence against the rapid divergence hypothesis (C123), supporting the deletion/degeneration interpretation (C125).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "JRS1 contains Meis and Hox binding motifs, and ChIP-seq data show differential binding of Meis-Pbx-Hoxa2 complexes in BA2 versus BA1, suggesting a mechanism for arch-specific repression of nkx3.2 in non-mandibular arches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C90 integrate sequence analysis, ChIP-seq data, and prior functional studies to propose a regulatory mechanism. The Meis2 function in jaw development (C80-C81), Hox roles in arch identity (C83-C86), and the inference about Hoxa2 repression (C87) are well-supported by citations. The ChIP-seq validation (C89) and mechanistic proposal (C90) are appropriately presented as hypotheses requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "JRS1 contains binding motifs for numerous transcription factors (Runx, Hey1, Tbx, Twist, Six1, Esrr family) with known roles in chondrogenesis, pharyngeal arch development, and joint formation, suggesting complex regulatory control of Nkx3.2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C110 catalog predicted transcription factor binding sites and their known functions, all supported by appropriate citations. The discussion appropriately distinguishes between established functions (e.g., C91-C93, C97-C98) and inferences about JRS1 regulation (e.g., C94, C100, C104). The potential for Nkx3.2 autoregulation (C109) and its limited significance (C110) are appropriately qualified based on the reporter data in nkx3.2 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The activity of elephant shark JRS1 in zebrafish jaw joints, combined with broader nkx3.2 expression in chondrichthyan pharyngeal arches, suggests either that JRS1 drives expression in all chondrichthyan arches or that differential Hox-mediated activation restricts expression to the mandibular arch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C119 present two alternative hypotheses about JRS1 function in chondrichthyans, but the zebrafish heterologous assay cannot distinguish between them. The broader nkx3.2 expression in elasmobranchs (C116) is established by citation, but whether elephant shark expression matches this pattern is assumed rather than demonstrated. The presence of Hox motifs (C118) supports the differential activation hypothesis but does not prove it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on jaw evolution and Nkx3.2 function: Jaws evolved in gnathostomes by ~423 MYA, with the primary jaw joint articulating Meckel's cartilage and palatoquadrate in the first pharyngeal arch. Nkx3.2 is focally expressed at this joint in gnathostomes and is essential for joint formation, while in mammals the homologous joint has moved to the middle ear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide established background information, all supported by appropriate citations to primary literature. These claims set the context for the study but do not represent novel findings. The information about jaw evolution (C1-C3), Nkx3.2 function (C4-C9), and mammalian middle ear evolution (C10-C13) is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "JRS1 activity in interzone cells and perichondrium suggests roles in both joint cavity formation and regulation of cartilage element shape through inhibition of chondrocyte maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 connect JRS1 expression patterns to known developmental processes. The characterization of zebrafish jaw joints as synovial-like (C72) and interzone cell properties (C73-C74) are supported by citations. The observation of JRS1 activity in cells with interzone morphology (C75) is supported by imaging data. The inference about perichondrium function (C77) is reasonable but appropriately presented as a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The functional conservation of JRS1 across gnathostomes suggests that the transcription factor binding landscape is conserved, implying a highly conserved regulatory role for this element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 synthesize the cross-species functional data (from C54) to infer conservation of regulatory mechanisms. The inference (C79) is reasonable given the consistent activity across diverse species, though it remains a hypothesis since the actual transcription factors binding to JRS1 in different species have not been directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C136",
+      "C139",
+      "C140"
+    ],
+    "result": "Summary and future directions: JRS1 is a novel jaw joint-specific Nkx3.2 enhancer contributing to early expression, with secondary loss in acanthopterygians possibly related to novel jaw morphologies. Further study of JRS1 and other Nkx3.2 enhancers will provide insights into jaw evolution and diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136, C139-C140 provide summary statements and future directions. C136 accurately summarizes the main findings. C139 appropriately presents the acanthopterygian loss as speculative ('may be related'). C140 is a reasonable statement about future research directions that follows logically from the findings.",
+    "result_type": "MINOR"
+  }
+]

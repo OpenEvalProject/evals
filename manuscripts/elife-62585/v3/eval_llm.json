@@ -1,0 +1,464 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C137",
+      "C138"
+    ],
+    "result": "The study measured mRNA and protein levels in approximately 600 genetically diverse DO mice at ages 6, 12, and 18 months, detecting 22,259 genes by RNA-Seq and 6,580 proteins by mass spectrometry, with 6,449 genes having both mRNA and protein data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C17, and C137-C138 collectively describe the experimental design and data collection. The sample sizes, age groups, molecular profiling methods, and numbers of detected genes/proteins are clearly stated and internally consistent. The use of genetically diverse DO mice addresses limitations of single-strain studies mentioned in C12.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Principal component analysis of mRNA data shows that sex is the dominant factor explaining variance (PC1: 22.1%, p<2.2\u00d710\u207b\u00b9\u2076), while age has only weak association (p=0.050), with a batch effect identified in PC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 describe PCA results for mRNA with specific variance percentages and p-values. The conclusion that sex dominates mRNA variation is supported by the statistical evidence. The identification and accounting for batch effects (C22) demonstrates appropriate quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Principal component analysis of protein data reveals age as the dominant factor (PC1: 16.6%, p=5.3\u00d710\u207b\u00b9\u2074), contrasting with mRNA where sex dominates, and shows increased between-animal variation in protein at 18 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe PCA results for protein data with specific statistics. The contrast between protein (age-dominated) and mRNA (sex-dominated) variation is a key finding supported by the data. The observation of increased variance at 18 months (C28) is interesting but would benefit from formal statistical testing of variance heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Differential expression analysis identified 449 transcripts changing with age (adjusted p<0.05), with 95% increasing, including 83 immunoglobulin genes among the 426 increasing transcripts and heat shock proteins among the 23 decreasing transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 report differential expression results with appropriate multiple testing correction. The directional bias toward increasing transcripts (95% at stringent threshold, 65% at FDR<0.1) is notable and biologically interpretable. The identification of specific gene classes (immunoglobulins, heat shock proteins) is consistent with known aging biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Age-related mRNA changes are enriched for immune response genes (adaptive immune response p=1.3\u00d710\u207b\u00b2\u00b3, leukocyte activation p=4.9\u00d710\u207b\u00b2\u2075), with in silico deconvolution confirming increased B cell (p=6.75\u00d710\u207b\u2076) and macrophage (p=0.0155) proportions with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 describe functional enrichment and cell type deconvolution results. The highly significant p-values for immune-related pathways are supported by multiple lines of evidence including enrichment analysis, specific gene identification, and cell type deconvolution. The consistency with prior studies (C40) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Cdkn2a, encoding the senescence marker p16, shows increased expression with age (adjusted p=6.1\u00d710\u207b\u2079) and has been previously associated with age-related kidney pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 report a specific finding about Cdkn2a with statistical support and appropriate citation to prior work. The connection to senescence is well-established (C44), and the association with kidney pathology (C45) provides biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "876 proteins change with age (adjusted p<0.05), with 352 increasing and 524 decreasing, including decreased histones, increased ACTA2 (fibrosis marker), and decreased NCLN and CISD2 (ER and mitochondrial proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 report protein differential expression results with appropriate statistical correction. Unlike mRNA (predominantly increasing), proteins show more balanced directional changes. The specific proteins highlighted (C48-C51) are biologically relevant with appropriate citations supporting their functional roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Functional enrichment of age-changing proteins reveals 186 GO terms (adjusted p<0.01), with general decreases in oxidative phosphorylation, mitochondrial membrane, ER function, and glycosylation, plus increases in actin cytoskeleton and mixed changes in transmembrane transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 describe comprehensive functional enrichment results with highly significant p-values. The patterns of change (decreased mitochondrial/ER function, increased cytoskeletal remodeling) are biologically coherent and consistent with aging biology. The mixed changes in transport proteins (C59-C60) motivate the detailed cell-type specific analysis that follows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Proximal tubule cells show upregulation of apical transporters (SGLT2, SLC7A9, etc.) and downregulation of basolateral transporters (GLUT1, SLC26A1, etc.) with age, along with decreased Na+/K+ ATPase subunits and widespread mitochondrial protein decreases including VDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe coordinated changes in proximal tubule transport machinery. The opposing directional changes at apical vs. basolateral membranes, combined with decreased ATP pump subunits and mitochondrial proteins, suggest functional decline. The interpretation is well-supported by the data and appropriate citations (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Podocyte proteins show age-related actin cytoskeleton remodeling, including decreased dystroglycan (DAG1), increased nephrin (NPHS1), CD2AP, cofilin (CFL1), actinin 4 (ACTN4), MYO1C, MYO1E, and AKT2, with decreased MYH9, suggesting adaptive responses to altered glomerular filtration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 describe coordinated changes in podocyte cytoskeletal proteins with appropriate biological context from citations. The pattern of changes is consistent with actin remodeling, though the interpretation as adaptive (C76) is somewhat speculative. The functional consequences remain uncertain without direct filtration measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "At FDR<0.1, 1,493 mRNAs and 3,871 proteins show age trends, while 5,325 mRNAs and 4,412 proteins show sex differences, indicating age-related changes are more prevalent for proteins than mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 compare the extent of age vs. sex effects across mRNA and protein. The conclusion that age effects are more prominent in protein (C81) is supported by the numbers, though the comparison is complicated by different statistical methods for mRNA (DESeq2) vs. protein (linear mixed models). The sex comparison provides an important control showing the methods can detect mRNA changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The correlation between mRNA and protein age-trends (r=0.235, p<2.2\u00d710\u207b\u00b9\u2076) is significantly weaker than the correlation for sex-specific differences (r=0.626, p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 report correlation statistics comparing age and sex effects. Both correlations are highly significant, but the much weaker correlation for age (r=0.235 vs. 0.626) is a key finding suggesting different regulatory mechanisms. The use of z-scores for comparison is appropriate given different measurement scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Genes show concordant age-related changes (10.3% of genes: 309 increasing, 359 decreasing) and discordant changes (4.7%: 196 mRNA\u2193/protein\u2191, 108 mRNA\u2191/protein\u2193), while sex differences are more concordant (42.7%) with fewer discordant genes (11.7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 categorize genes by concordance/discordance of mRNA-protein changes. The percentages are clearly calculated from the reported numbers. The substantial proportion of discordant age-related changes (4.7%) contrasts with the higher concordance for sex differences, supporting the conclusion that age and sex effects operate through different mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Group A genes (concordant mRNA/protein increases) are enriched for immune response, actin cytoskeleton organization, cell adhesion, and immuno-proteasome complex components (Psmb8, Psmb9, Psmb10, Psme1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe functional enrichment for concordantly increasing genes. The enrichment for immune functions is consistent with the overall mRNA analysis and likely reflects immune cell infiltration. The identification of specific immuno-proteasome components adds mechanistic detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Group D genes (concordant mRNA/protein decreases) are enriched for transmembrane transport, mitochondrial membrane, Golgi transport, junction proteins (cadherins, catenins, claudins), ubiquitin-mediated catabolism, and notably Klotho, an aging-suppressor gene associated with fibrosis and kidney disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C103 describe functional enrichment for concordantly decreasing genes with extensive citation support for Klotho's role (C99-C103). The enrichment patterns are biologically coherent. The speculation about leaky junctions (C96) is appropriately qualified as lacking direct kidney evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Group B genes (mRNA\u2193/protein\u2191) include brush border transporters (Slc26a6, Slc34a3, Slc5a2/SGLT2, Slc3a1, Slc9a3, Lrp2/Megalin) and scaffold protein Pdzk1, which are important for reabsorption of glucose, cysteine, albumin, and other metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 identify a functionally coherent group of proximal tubule brush border proteins showing discordant changes. The specific transporters are well-characterized with appropriate citations (C106-C109). This discordance is particularly interesting given the functional importance of these proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Group C genes (mRNA\u2191/protein\u2193) are enriched for cytosolic ribosome (>20 genes from both subunits) and RNA splicing factors (Srsf3, Srsf5, Srsf6, Snrpa1), with SRSF3 downregulation previously linked to senescence through TP53 alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 describe enrichment for translation and splicing machinery showing opposite directional changes. The enrichment for ribosomal proteins is striking and suggests altered translation. The connection to senescence via SRSF3 (C113) is supported by citation, though the functional consequences of these discordant changes remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Within each age group, mRNA and protein are predominantly positively correlated, but the relative balance between mRNA and protein can change in any direction across age groups, suggesting age-related protein changes are not necessarily due to transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 describe the key observation that within-age correlations don't predict between-age changes. This is illustrated in Figure 6 with specific examples (Slc5a12, Flot1). The conclusion (C116) is a reasonable inference from this pattern, though alternative explanations aren't fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Mediation analysis shows essentially no change in the significance of age effects on protein after accounting for mRNA, indicating age-related protein changes occur independently of mRNA changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 report results from formal mediation analysis shown in Figure 7A. The lack of reduction in significance after adjusting for mRNA provides strong evidence against mRNA-mediated age effects on protein. The analysis is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Sex-specific differences in protein are reduced after accounting for mRNA, consistent with sex differences in protein being a direct response to sex differences in mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 describes mediation analysis for sex effects (Figure 7B), providing an important contrast to age effects. The reduction in significance after adjusting for mRNA supports transcriptional mediation of sex effects, validating the mediation approach and highlighting the distinctiveness of age effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C132"
+    ],
+    "result": "Age-related protein changes are post-translational and may involve changes in translational efficiency or protein turnover, though a recent study found no significant changes in translation rates in aging mouse kidneys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120 and C132 propose post-translational mechanisms but acknowledge conflicting evidence. C120 is speculative (uses \"may involve\") and C132 cites a study finding no translation rate changes. Without direct measurements of translation or turnover in this dataset, the specific mechanisms remain uncertain. The conclusion that changes are post-transcriptional is supported, but the specific mechanisms are not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Pdzk1ip1 protein is most strongly correlated with urinary phosphate (r=0.322, p=7.5\u00d710\u207b\u2075), and after accounting for Pdzk1ip1, age is no longer a significant predictor of urinary phosphate (p=0.22), suggesting Pdzk1ip1 mediates age-related phosphate changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 describe a specific protein-phenotype relationship with appropriate statistical analysis. The mediation analysis (C123-C124) is well-executed, though the causal interpretation should be qualified as the analysis cannot definitively establish causation. The enrichment of correlated proteins for brush border components (C125) provides supporting biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Protein levels of NPT2A (Slc34a1) and NPT2C (Slc34a3), which form the major sodium-phosphate co-transporter, do not correlate with urinary phosphate excretion, confirming regulation occurs through interactions with PDZK1 and PDZK1IP1 rather than transporter protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 reports a negative result (no correlation) that is biologically informative and supported by citation to prior work on PDZK1/PDZK1IP1 regulation. This strengthens the interpretation that PDZK1IP1 is functionally important for phosphate handling rather than just a correlate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Megalin (Lrp2), the albumin reabsorption receptor, shows decreased mRNA (p=2.4\u00d710\u207b\u2075) and increased protein (p=0.0043) with age, and is negatively correlated with urinary albumin (p=0.081), though most animals (157/188) had albumin <1 mg/dL, limiting interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C130 describe Megalin as another Group B gene with potential functional relevance. However, the correlation with albumin is not statistically significant (p=0.081), and the authors appropriately note that low albuminuria in most animals limits interpretation (C129). The biological significance remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "The direction of protein change with age cannot be reliably predicted from mRNA changes, even for genes where mRNA and protein are correlated within age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 synthesizes the key finding with appropriate citation to prior work. This conclusion is well-supported by the PCA results (C18-C29), correlation analysis (C82-C83), concordance analysis (C84-C91), mediation analysis (C117-C118), and specific examples (C114-C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Loss of proteostasis is a hallmark of aging manifesting as protein aggregation, unfolding, oxidative damage, and altered turnover, with prior work showing decreased proteasome subunit correlation in aging DO mouse hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 provide biological context from the literature with appropriate citations. These support the interpretation of the observed mRNA-protein discordance but don't directly test proteostasis mechanisms in the current kidney dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Age-related changes in protein and mRNA are uncoupled despite remaining coupled within age groups, suggesting protein homeostasis changes occur through post-transcriptional processes involving translation efficiency or protein turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 summarize the main conclusions. C135 is well-supported by multiple analyses. C136 is more speculative (\"may involve\") as the specific post-transcriptional mechanisms aren't directly measured, but the conclusion that changes are post-transcriptional is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Changes in both mRNA and protein are associated with increased immune infiltration and decreased mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 state high-level findings supported by multiple specific results: immune infiltration is supported by C36-C42 (enrichment analysis and cell type deconvolution), and mitochondrial decreases are supported by C53-C54, C65, and C94. Both findings are well-documented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Proteins show a greater extent of change compared to mRNA with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by C77-C81 showing more proteins (3,871) than mRNAs (1,493) change with age at FDR<0.1, and by PCA results (C18-C29) showing age explains more variance in protein (PC1: 16.6%) than mRNA (PC1: 22.1% for sex, weak age association).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Functionally important age-related changes in protein occur in the absence of corresponding mRNA changes, indicating mRNA profiling alone provides an incomplete picture of molecular aging in the kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 state the main conclusion, supported by: discordant changes in 4.7% of genes (C84-C89), mediation analysis showing protein changes independent of mRNA (C117-C118), functional importance of Group B genes including transporters (C104-C109), and physiological relevance shown by Pdzk1ip1-phosphate relationship (C121-C125).",
+    "result_type": "MAJOR"
+  }
+]

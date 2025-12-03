@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript establishes the context for the need for new gene expression control tools by describing the current state of CRISPR technology and its limitations. CRISPR/Cas9 has revolutionized gene editing and makes knock-outs/knock-ins straightforward, with ssDNA donors being the most precise method. However, knock-in approaches suffer from low efficiencies especially for homozygosity, fluorescent protein knock-ins have limitations in brightness, and existing conditional loss-of-function methods (FLP-frt, Cre-LoxP) are labor intensive and irreversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18-C28 provide well-established background knowledge about CRISPR technology and its limitations, supported by appropriate citations to the literature. These claims accurately describe the state of the field and provide clear motivation for the development of new tools like DExCon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The auxin-inducible degron (AID) system can be introduced at endogenous loci via CRISPR/Cas9 to provide some level of expression control, but has significant limitations including poor spatial control due to auxin diffusion, significant basal degradation without auxin, and incomplete auxin-induced protein depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 accurately describe the AID system and its known limitations, supported by citations. These limitations provide additional motivation for developing DExCon/DExogron systems that address these shortcomings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The Rab11 family (Rab11a, Rab11b, Rab25) represents an ideal test case for the new tools, as these proteins share high amino acid identity (89% between Rab11a/b), play key roles in membrane transport and recycling endosomes, are implicated in cancer and cell migration, have multiple isoforms, lack specific antibodies, and have been primarily studied using transient overexpression which may cause artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 provide well-supported rationale for choosing the Rab11 family as a model system, with appropriate citations. The high sequence similarity and functional importance make this an excellent test case for demonstrating the utility of the new tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Bioinformatic analysis reveals that Rab11a, Rab11b, and Rab25 are significantly enriched in ovarian cancer, with multiple protein-coding splice variants expressed. Rab11a/b show abundant expression across healthy tissues while Rab25 is more restricted but increased in cancer. All significantly expressed transcripts share an intact N-terminus, but some splice variants lack amino acids important for GTP/GDP binding or membrane attachment, which could alter function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present bioinformatic analysis results with appropriate figure references. The data on expression patterns and splice variants is clearly presented. However, C49 is speculative about functional consequences of missing amino acids, which is appropriately qualified with 'could' rather than stating definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "An optimized CRISPR knock-in protocol was developed combining magnetofection of long ssDNA donors (150-300 bp homologous arms) with HiFi Cas9 RNP complexes. This approach reduces off-target effects to non-detectable levels and achieves successful knock-in in HEK293T cells (10-20% for Rab11a, 2-10% for Rab11b) and A2780 ovarian cancer cells (0.2-1%), with correct localization confirmed by microscopy and western blot. The protocol also works in BRCA-1 mutant COV362 cells. Truncations in the linker region were observed in some cells, indicating the importance of sorting for fluorescence to ensure in-frame knock-ins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 describe the methodological development with appropriate experimental validation including microscopy, western blots, and sequencing. The efficiency rates are clearly stated and the observation about truncations (C58-C59) is consistent with cited literature and leads to the reasonable inference about the importance of fluorescence sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The DExCon system uses the TRE3GS promoter which lacks binding sites for endogenous mammalian transcription factors, is effectively silent without induction, and generates non-sense frameshifts from endogenous promoter-driven transcription. DExCon-modified cells show dox-dependent expression of FP-Rab11 with correct localization and decreased levels of unmodified endogenous protein. The system preserves the natural ratio of Rab11b splice variants (201 ~4\u00d7 more abundant than 202), demonstrating an advantage over cDNA-based rescue approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 describe the core DExCon system design and its validation. The experimental evidence from western blots, microscopy, and qPCR analysis supports the claims about promoter silencing, dox-dependent expression, and preservation of splice variant ratios. The inference in C69 about advantages over cDNA rescue is reasonable based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Double knock-in experiments demonstrate that DExCon-induced and endogenously-driven Rab11a/b show significantly correlated localization at the perinuclear recycling compartment. In contrast, transient transfection produces very bright signals but aberrant large peripheral vesicles. DExCon enables low-light live microscopy with physiological protein distribution, revealing that Rab11b intensity is increased at protrusion tips relative to the pre-tip area in polarized cells. The approach allows enrichment of accurately modified cells even for non-fluorescent genes by encoding functionality at both ends of the donor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 present comparative imaging data showing advantages of DExCon over transfection. The colocalization analysis, live imaging data, and observations about differential localization in 3D environments are well-supported by the figures. The inference about physiological distribution (C73) is reasonable based on the comparison to transfection artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DExCon successfully re-activates the endogenously silenced Rab25 gene in A2780 cells. Dox treatment produces mNeonGreen-Rab25 with correct perinuclear localization in all sorted cells. Expression is tunable: different dox concentrations affect primarily the number of responding cells rather than per-cell expression levels, and there is a positive correlation between Tet-On 3G transactivator and Rab25 expression (R=0.43, p=0.0003). By sorting for different expression levels, Rab25 can be tuned to match endogenous levels in OVCAR-3 cells, and this tunability is stable over months with maximal fluorescence reached at 72 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 demonstrate a key capability of DExCon: re-activating silenced genes. The data from western blots, microscopy, flow cytometry, and time-course experiments provide strong support. The correlation analysis (C80) includes appropriate statistics, and the comparison to endogenous levels in OVCAR-3 cells (C81) validates the physiological relevance of the tuned expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "LUXon (light-responsive DExCon) provides spatiotemporal control of gene expression. Cells expressing PA-Tet-ON2 or PA-Tet-OFF1/2 with DExCon knock-in to Rab25 show correct localization after blue light illumination. Cyclical light/dark exposure enables repeatable silencing and re-activation, with expression levels modulated by timing of blue light exposure. Dox provides an additional layer of control. Longer blue light exposure increases expression in both PA-Tet-OFF/ON systems. Pre-illumination for >6 hr before invasion assays shows a significant dose-dependent effect of Rab25 induction on invasion in 3D matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 demonstrate the LUXon system with appropriate experimental validation including microscopy, time-course imaging, and functional invasion assays. The dose-dependent effect on invasion (C92) is quantified and statistically significant. However, C90 is speculative about the nucleus sterically blocking vesicle movement, which is appropriately qualified as a suggestion rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Triple knock-in cells (mNeonGreen-Rab11a, mCherry-Rab11b, DExCon-mTagBFP2-Rab25) reveal colocalization patterns among Rab11 family members. Activation of Rab25 expression increases Rab11a/b localization at ERC spots, suggesting interconnected networks. While Rab11a/b/25 colocalize with transferrin (TFN), some vesicles are highly enriched for Rab25 but lack TFN, found near the nucleus in ~90% of cells. Quantitative analysis shows no significant difference in TFN colocalization among family members, but Rab11a colocalizes with Rab11b significantly more than with Rab25. Overall, 16.1% of Rab11 vesicles/26.5% of TFN vesicles show colocalization, with differences mainly due to unique Rab25 recruitment to a subset of vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 present sophisticated colocalization analysis from triple knock-in cells using multiple imaging modalities (AiryScan, lattice light sheet). The quantitative analysis tracking ~46,000 vesicles per family member provides robust statistical support. The inference about interconnected networks (C95) is supported by imaging data and consistent with cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "DExCon reveals differential expression kinetics among Rab11 family members. mNeonGreen-Rab11a reaches ~75% maximal expression at 24 hr, significantly faster than mCherry-Rab11b (~50%) and mNeonGreen-Rab25 (~40%). Bioinformatic analysis shows an inverse relationship between Rab25 promoter methylation and expression across cancer types, and ATAC-seq suggests the silenced Rab25 locus has less accessible chromatin. In OVCAR-3 cells where Rab25 is endogenously expressed, there is no delay in Rab25 expression kinetics compared to A2780. Rab11a DExCon consistently produces greater fluorescence intensity than Rab25 DExCon in both cell lines, suggesting additional protein-level control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 present kinetic analysis with appropriate quantification and statistical testing. The bioinformatic analysis (C105-C106) provides mechanistic insight into the slower Rab25 kinetics in A2780 cells. The comparison between A2780 and OVCAR-3 cells (C107) serves as an important control demonstrating that the slow kinetics are due to chromatin accessibility rather than an inherent property of the Rab25 locus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "DExCon enables analysis of protein stability and dynamics. In double DExCon-mCherry/mNeonGreen Rab11b cells, expression kinetics differ between the two fluorophores. After dox removal, mCherry-Rab11b shows remarkably stable fluorescence while mNeonGreen-Rab11b is lost more rapidly. For mNeonGreen-tagged proteins, Rab11a and Rab11b decrease more rapidly than Rab25 after dox removal. Knocksideways experiments reveal differential relocalization dynamics: Rab11a (t1/2=209 s) is significantly faster than Rab11b (t1/2=362 s), which is faster than Rab25 (t1/2=476 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 present protein stability and dynamics data with appropriate quantification. The observation of fluorophore-dependent stability (C109-C110) is important for interpreting results and leads to the reasonable inference (C112) about considering fluorophore choice. The knocksideways experiments (C113) provide quantitative half-times with statistical analysis, revealing previously unknown differences among family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "DExogron combines DExCon with the auxin-inducible degron system. Dox treatment rescues protein expression and simultaneous IAA addition efficiently depletes expression only when the degron tag is present, with degradation half-time kinetics of 1.7\u00b10.1 hr. However, introducing the degron tag alone (without DExCon) leads to decreased fluorescence and reveals drawbacks: a significant proportion of cells don't respond to IAA (likely due to truncation during HDR), and IAA treatment results in only 90-70% removal, which is incomplete. IAA-induced Rab11b depletion is incomplete in the presence of dox and insufficient to mimic the knock-out phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118, C121 describe the DExogron system and identify its limitations when used without DExCon. The kinetic analysis (C115) is quantified with error bars. The inference about truncation causing non-responsiveness (C117) is reasonable based on the observation. The conclusion about incomplete depletion (C121) is supported by functional rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Functional validation shows that Rab11a/b DExCon or DExogron modified cells close wounds significantly later than control cells without dox-induced expression, with the phenotype amplified by knock-out combinations. Knock-out phenotypes are reversed by dox-induced re-activation. Changes in Rab11a/b expression do not alter cell growth. In 3D spheroid invasion assays, reducing Rab11a/b expression decreases invasion into FN-rich collagen, which is rescued by dox treatment. Dox-induced Rab11b re-expression has a dose-dependent dominant-negative effect on invasion, but this is reversed by dox/IAA co-treatment. A toxic effect of IAA (100 \u03bcg/ml) was observed from 10 hr exposure in sparsely seeded cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 provide functional validation of the DExCon/DExogron systems in migration and invasion assays. The quantitative analysis with appropriate statistics supports the conclusions about Rab11 function. The observation of IAA toxicity (C123) is important for interpreting results. The inference about cells being sensitive to Rab11b expression levels (C127) is reasonable based on the dose-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "DExogron improves upon the AID system by enabling complete protein removal. After dox withdrawal, IAA treatment of DExogron cells decreases fluorescence below dox/IAA co-treated levels as early as 1-4 hr, returning to non-detectable levels in 24-48 hr. Degradation still occurs at lower IAA concentrations (0.5-2.5 \u03bcg/ml) though significantly slowed. Dox/IAA co-treatment can tune DExogron-Rab11b to endogenous levels (IAA 0.5 \u03bcg/ml). DExogron-Rab11a shows similar tunable steady-state fluorescence with degradation half-time around 2.5\u00b10.1 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 demonstrate that DExogron addresses the key limitation of incomplete depletion in the AID system. The kinetic analysis with multiple IAA concentrations provides thorough characterization. The ability to tune to endogenous levels (C131) is validated by comparison to conventional knock-ins. The summary inference (C133) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "Although Rab11b and Rab11a may have complementary functions in migration and invasion of A2780 cells, they differ substantially in their post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is a reasonable synthesis of the expression kinetics, protein stability, and functional data presented throughout the manuscript. The complementary function is supported by the rescue experiments, while the differences in post-transcriptional regulation are demonstrated by the kinetics and stability analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "DExCon/DExogron systems enable analysis of Rab11 function in transferrin receptor (TFN-R) recycling. TFN-R recycling is typically biphasic with fast (Rab4-dependent) and slow (Rab11-dependent) routes. DExCon/DExogron modified cells lacking Rab11a/b have little impact on recycling at 30 min, suggesting fast recycling predominates in A2780 cells. Rab25 re-expression does not impact recycling. However, high-level dox-induced Rab11a/b expression decreases recycling at 30 min, perhaps by favoring the slow route. When expression is tuned to endogenous levels, there is no significant effect on recycling, indicating expression level determines the effect. Surprisingly, high Rab11a-slowed recycling is restored by lowering Rab11b with DExogron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C145 present a sophisticated analysis of TFN-R recycling using the tunable expression systems. The flow cytometry-based recycling assays are appropriately quantified. The observation that expression level matters (C141-C142) is well-controlled by comparing different expression levels. The speculation about favoring the slow route (C140) is appropriately qualified. The surprising interaction between Rab11a and Rab11b levels (C144) reveals complexity in the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Time-course analysis of TFN-R recycling after acute changes in Rab11 expression reveals that high-level Rab11a/b expression slows recycling, but tempering expression by withdrawing dox/adding IAA shows that lower Rab11 levels correlate with increased recycling rates. This supports the notion that competition between fast (Rab4-controlled) and slow (Rab11a/b-controlled) recycling underpins the differences in recycling rates. The DExCon/DExogron system affords control over timing and level of gene expression, pointing toward a more complex relationship between fast Rab11-independent and slow Rab11-dependent recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 present additional recycling experiments with acute manipulation of expression levels. The correlation between expression level and recycling rate (C147) is demonstrated with appropriate controls. The inferences about competition between pathways (C148) and complex relationships (C150) are reasonable based on the data, though they suggest areas for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript presents DExCon, DExogron, and LUXon as integrated approaches that combine CRISPR-Cas9-mediated targeted knock-in with inducible promoters to enable reversible control of gene expression. These systems allow blockade of active gene expression with on-demand re-activation, including of silenced genes. Control can be exerted systematically (doxycycline), spatiotemporally (light), or with fine-tuning (auxin). The approaches enable functional knock-out/rescue in the Rab11 family, produce bright signals compatible with low-light microscopy from monoallelic modification, allow simultaneous imaging of different alleles, bypass the need for clones, and enable quantification of previously unforeseen differences in vesicle dynamics, transferrin receptor recycling, expression kinetics, protein stability, and colocalization among Rab11 family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C17 summarize the key capabilities and findings of the manuscript. These summary claims are well-supported by the detailed experimental results presented throughout the paper. The systems are thoroughly validated through multiple complementary approaches including microscopy, western blotting, flow cytometry, functional assays, and quantitative analysis. The novel findings about Rab11 family members represent significant new biological insights enabled by the technology.",
+    "result_type": "MAJOR"
+  }
+]

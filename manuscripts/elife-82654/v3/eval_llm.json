@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A library of 31 cytoplasmic E. coli proteins fused to sfGFP was generated and characterized. After excluding constructs with degradation (ThpR-sfGFP) or non-uniform localization (RihA-sfGFP, NagD-sfGFP), 28 constructs with pI ranging from 5.1-6.2 were used for diffusion measurements. Cells were treated with cephalexin to increase length to ~5 \u03bcm, and most fusion proteins had little effect on E. coli growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide comprehensive characterization of the protein library construction and quality control. The exclusion criteria are clearly stated and supported by supplementary figures (Figure 1\u2014figure supplement 1, 1A, 1\u2014figure supplement 2). The methodological details about cephalexin treatment and cell length are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "FCS measurements revealed that the anomalous diffusion model fit experimental data better than Brownian diffusion. Mean diffusion times differed clearly between constructs, with mobility of more than half decreasing uniformly with molecular mass. The anomalous diffusion exponent \u03b1 ranged from 0.8-0.86 for most constructs, showing no apparent size dependence. Constructs with \u03b1 \u22640.8 also exhibited low mobility for their mass. No significant correlation was observed between 1/\u03c4D or \u03b1 and cell dimensions, and cephalexin treatment had no significant effect on \u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 are well-supported by the FCS data presented in Figures 1C-E and supplementary figures. The statistical analyses are appropriate, and the observation that anomalous diffusion fits better than Brownian diffusion is clearly demonstrated. The lack of correlation with cell dimensions provides important controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ClpS, an adaptor protein for ClpAP protease, showed reduced mobility due to substrate binding. The substrate-binding site consists of residues D35, D36, and H66. Mutation of these residues to alanine in a \u0394clpA strain significantly increased mobility and reduced anomaly, with both 1/\u03c4D and \u03b1 reaching levels similar to other proteins of similar mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate a clear mechanistic link between protein interactions and mobility. The use of characterized mutations from prior literature (C25-C27) combined with new experimental data (C28, Figure 1D-E, supplements 9-10) provides strong evidence that specific interactions reduce protein mobility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Map, a methionine aminopeptidase, interacts with ribosomes through four positively charged lysine residues (K211, 218, 224, 226). Alanine substitution at all four sites significantly increased Map-sfGFP mobility, demonstrating that ribosome binding reduces protein mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide another clear example of interaction-dependent mobility reduction. The mutations are based on established structural knowledge (C29-C31), and the experimental results (C32, Figure 1D-E, supplements 9-10) confirm the predicted effect on mobility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DnaK, a major bacterial chaperone, showed reduced mobility due to substrate binding. The V436F mutation that decreases substrate binding in vitro significantly increased both 1/\u03c4D and \u03b1 of DnaK-sfGFP, though not to levels of other proteins of similar mass, likely due to DnaK's multiple cellular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate that chaperone-substrate interactions reduce mobility. The V436F mutation is well-characterized (C34), and the experimental results (C35) show the expected increase in mobility, though the incomplete restoration is appropriately explained by DnaK's multiple interaction partners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Brownian dynamics simulations showed that confinement in bacterial cell geometry can produce apparent anomalous diffusion with \u03b1~0.8-0.9 when fitting with the anomalous diffusion model. The experimental \u03b1 range of 0.82-0.9 corresponds to ansatz values of 0.95-1.0 (nearly Brownian). A22 treatment increased cell width and significantly increased \u03b1 for sfGFP, with minimal effect on cell density. FCS measurements with smaller confocal volume yielded higher \u03b1 (>0.9) for sfGFP and AcnA-sfGFP, while DnaK-sfGFP remained subdiffusive, confirming its motion is due to protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide compelling evidence that apparent anomaly is largely due to confinement rather than true subdiffusion. The simulations (C36-C37, Figure 2A-B), A22 experiments (C38-C41, Figure 2C-D), and smaller confocal volume measurements (C42-C43, Figure 2\u2014supplement 4) all converge on the same conclusion. The control with DnaK-sfGFP strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The Ornstein-Uhlenbeck (OU) model for confined Brownian diffusion directly estimates the ansatz diffusion coefficient with \u00b15% accuracy for typical cell widths. Using this model, the dependence of D on molecular mass for faster-diffusing constructs scaled as (MM)^-\u03b2 with \u03b2=0.56\u00b10.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are well-supported by the simulation validation (Figure 2\u2014supplement 7) and the experimental fitting (Figure 2F). The OU model provides a more physically appropriate framework for analyzing confined diffusion than the anomalous diffusion model, and the derived \u03b2 value is clearly stated with error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "FRAP and FCS measurements yielded similar diffusion coefficients, with FRAP values 5-30% lower than FCS for most constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by direct comparison experiments (Figure 3C, Table 1). The good correlation between methods with systematic offset is clearly documented. This validates that both techniques measure similar diffusion properties despite different spatial and temporal scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Non-native proteins from other bacteria showed slightly but significantly increased anomaly of diffusion (\u03b1) compared to E. coli proteins, while mobility (1/\u03c4D) was similar to E. coli homologues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by measurements of homologous proteins from multiple bacterial species (Figure 4B, Figure 4\u2014supplement 1B). The statistical significance is demonstrated, and the interpretation regarding weak unspecific interactions is reasonable given the small magnitude of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Osmotic upshift (100 mM NaCl addition) significantly decreased mobility of all tested constructs proportionally, with no effect on anomaly of diffusion. This indicates the effect can be interpreted as a simple increase in cytoplasmic viscosity due to higher molecular crowding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are well-supported by the experimental data (Figure 5A, Figure 5\u2014supplement 2A, 3A). The proportional decrease across different protein sizes and lack of effect on \u03b1 support the interpretation of a simple viscosity change. The sedimentation assay (Figure 2\u2014supplement 3D) confirms increased cell density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Environmental temperature increase from 25\u00b0C to 35\u00b0C increased protein mobility by 20-25%, consistent with temperature-dependent decrease in water viscosity. However, growth temperature had no apparent effect on protein mobility, indicating lack of homeostatic adaptation of cytoplasmic viscosity in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by temperature-dependent measurements (Figure 5B, Figure 5\u2014supplement 2B, 4). The agreement with water viscosity changes is well-documented (citation to Huber, 2009), and the lack of growth temperature effect is clearly demonstrated. This contrasts with yeast and represents an interesting biological finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Chloramphenicol treatment caused minor increase in cell width and decrease in cell density, but protein mobility decreased rather than increased, opposite to expectations based on density reduction alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by cell dimension measurements (Figure 5\u2014supplement 1F), sedimentation assays (Figure 2\u2014supplement 3G), and mobility measurements (Figure 5C, Figure 5\u2014supplement 2C). The counterintuitive result is clearly documented and suggests complex effects of translation inhibition beyond simple density changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Rifampicin treatment (transcription inhibition) led to marked increase in protein mobility, similar for all tested proteins, consistent with reduced macromolecular crowding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are well-supported by experimental data (Figure 5C, Figure 5\u2014supplement 2C). The proportional effect across protein sizes and consistency with previous reports of rifampicin-induced crowding reduction strengthen the interpretation. The sedimentation data (Figure 2\u2014supplement 3F) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Protein mobility was significantly higher in rapidly growing cells (presence of nutrients). This enhanced mobility appears primarily due to active protein production and cell growth, with metabolic activity contributing but to a lesser extent, as demonstrated by chloramphenicol treatment experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by growth condition experiments (Figure 5D, Figure 5\u2014supplement 2D, 6). The dissection of biosynthesis versus metabolic contributions using chloramphenicol is well-designed. However, the interpretation acknowledges that chloramphenicol might indirectly reduce metabolic activity, introducing some uncertainty in quantifying the relative contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "DNP treatment (lowering cellular energy state) did not reduce protein mobility for sfGFP and AcnA-sfGFP, contrary to effects on large cytoplasmic particles. An exception was Adk-sfGFP, whose mobility was reduced by DNP at high temperature, possibly due to its ATP-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by DNP treatment experiments (Figure 5\u2014supplement 7). The lack of effect on most proteins argues against general active stirring, while the Adk-specific effect is appropriately interpreted as potentially related to its enzymatic function. The contrast with large particles is well-documented by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The majority of studied proteins exhibit a uniform relation between molecular mass and cytoplasmic mobility with a clear upper bound. Simulations suggest apparent weak anomaly in FCS data can be largely accounted for by confinement of otherwise Brownian diffusing particles. The authors conclude that diffusion of most proteins shows little if any deviation from Brownian within experimental precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 represent the main conclusions synthesized from multiple lines of evidence (Figures 1D, 2A-B, and supporting experiments). The conclusion is well-supported by the combination of experimental measurements, simulations, and control experiments (A22 treatment, smaller confocal volume). The caveat that residual anomaly cannot be excluded is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "For small proteins, the effective viscosity of bacterial cytoplasm is approximately six times higher than in dilute solution, based on sfGFP diffusion coefficient of ~14 \u03bcm\u00b2/s. This value is substantially larger than early FRAP studies but consistent with other FCS and SPT studies. Differences are due to limitations of early FRAP analyses rather than different spatial/temporal scales, as direct FCS-FRAP comparison yielded similar values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are well-supported by the measured diffusion coefficients (Table 1), comparison with literature values, and direct FCS-FRAP comparison (Figure 3C). The interpretation that early FRAP underestimated mobility is validated by the authors' own comparison showing good correlation between methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Protein-protein interactions may be the main cause of protein subdiffusion in bacterial cytoplasm, based on the observation that disrupting specific interactions (ClpS, Map, DnaK) restored more Brownian-like diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by the three case studies of ClpS, Map, and DnaK (C25-C35), where disrupting known interactions increased mobility and reduced anomaly. The caveat that other explanations might apply to large particles is appropriately noted with citations. This represents a well-supported mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "There is apparently little organism-specific adaptation of freely diffusing proteins to their bacterial host, with possible exception of bacteria with extreme pH or ionic strength, based on similar mobility of non-native proteins compared to E. coli homologues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by the measurements of proteins from multiple bacterial species (Figure 4, C47). The slight increase in anomaly for non-native proteins is acknowledged, but the overall similarity in mobility supports the conclusion. The caveat about extreme conditions is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Temperature dependence of cytoplasmic viscosity was similar to water and consistent with Stokes-Einstein relation, decreasing 20-30% per 10\u00b0C increase. No dependence on growth temperature was observed, contrasting with homeostatic adaptation of membrane fluidity and signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by temperature experiments (Figure 5B, Figure 5\u2014supplement 4) and appropriate citations. The lack of growth temperature adaptation is surprising and well-documented. The contrast with other homeostatic mechanisms is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Perturbations to cytoplasmic protein mobility (osmolarity, temperature, antibiotics, growth) have proportional effects on differently sized proteins. This suggests protein diffusion remains Brownian under all tested conditions, and effects can be accounted for by changes in cytoplasmic viscosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 synthesize observations from multiple perturbation experiments (Figure 5). The proportional effects across protein sizes are consistently demonstrated for osmolarity (C49), temperature (C51), rifampicin (C57), and growth (C58). This represents a major unifying conclusion about the nature of cytoplasmic diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "Detailed experimental methods are provided for strain construction, protein expression, FCS measurements, and simulations. E. coli W3110 was used, proteins were C-terminally fused to sfGFP with GGGGS linker, cultures were grown in M9 minimal medium with supplements, and FCS was performed on LSM 880 microscope with specific parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C87 describe the experimental methodology in detail. These are straightforward methodological descriptions that are well-documented in the Materials and Methods section. The level of detail is appropriate for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C84",
+      "C85",
+      "C86",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors developed a novel microfluidic platform that enables continuous single-cell tracking during an unperturbed yeast life cycle for up to 10 days. The system integrates a 25 ml liquid culture with a microfluidic observation device through a closed recirculation loop, and includes a spiral-shaped filtration device with >99% efficiency that prevents clogging while maintaining population-level environmental dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical development is well-documented with quantitative performance metrics (C27, C105), validation across multiple strains (C28, C30), and successful recapitulation of known yeast life cycle phases (C29). The filtration efficiency, imaging capabilities, and system design are supported by experimental data and figures. This represents a significant methodological advance over prior abrupt starvation approaches (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C38",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C88"
+    ],
+    "result": "At the diauxic shift, a minority of cells (12%, N=466) experience an abrupt fate divergence characterized by a dramatic pH drop to ~5.8, failure to transition to respiratory metabolism, mitochondrial globularization, and limited long-term survival. These respiration-negative (R\u2212) cells do not resume growth during the respiration phase and show reduced viability compared to respiration-positive (R+) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fate divergence is supported by multiple independent measurements: pH dynamics (C38, C43), growth measurements (C47-C49), mitochondrial morphology (C51-C55), and viability assays (C50). The quantification is rigorous with sample sizes reported (N=466) and statistical significance (p<0.05, C55). The phenomenon is validated in multiple strain backgrounds (C44), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C90"
+    ],
+    "result": "The respiratory defect in R\u2212 cells is predominantly induced during the diauxic shift rather than preexisting. Using mitochondrial import markers (Tom70-GFP and preCox4-mCherry), the authors show that 81% of R\u2212 cells transition from \u03c1+ to \u03c1\u2212 during the diauxic shift, while only 19% had preexisting respiratory deficiency. The phenotype shows moderate heritability (inheritance index = 0.52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of mitochondrial import markers provides direct evidence for respiratory competence (C58-C60). The quantitative distinction between induced (81%) and preexisting (19%) defects is clearly demonstrated (C59-C60). The inheritance analysis (C62) adds mechanistic insight. This addresses a key question about whether fate divergence reflects preexisting heterogeneity or is triggered by environmental challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C92"
+    ],
+    "result": "Internal pH undergoes nonmonotonous fluctuations synchronized with metabolic transitions during the yeast life cycle. In respiration-competent (R+) cells, pH declines from ~7.7 during fermentation, plateaus at ~6.9 at the diauxic shift, rises to ~7.2 during respiration, then gradually declines again before a sharp drop to ~5.8 at heterogeneous times during stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pH dynamics are measured using calibrated pHluorin (C35) with quantitative values reported at each phase (C36-C41). The nonmonotonous pattern is clearly documented and represents a novel finding about pH regulation during an unperturbed life cycle (C34, C42, C92). Sample sizes are adequate (N=466) and the measurements are technically sound with proper calibration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C93",
+      "C94"
+    ],
+    "result": "Cellular reorganizations during entry into quiescence are highly coordinated with metabolic phases and pH fluctuations. In R+ cells, Dhh1-GFP and Gln1-GFP foci appear at the diauxic shift (pH ~7), partially dissolve during respiration, and reappear in stationary phase, while actin bodies, PSGs, and Cdc28-GFP foci form only when pH reaches ~6. The authors propose that pH acts as a key controller driving waves of structural changes at well-defined pH thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal coordination is demonstrated through systematic monitoring of multiple markers (C66-C69) with clear correlation to pH dynamics (C71). The proposed pH thresholds (C72-C74) are consistent with the data, though they represent a mechanistic hypothesis. The observation that both R+ and R\u2212 cells show similar pH-dependent reorganizations at different timescales (C71, C82) strengthens the model. However, the causal relationship between pH and structural changes is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C96",
+      "C97"
+    ],
+    "result": "The transition to stationary phase is accompanied by a cytosolic glass transition, measured by loss of mobility of Gln1-GFP foci and lipid droplets. This transition occurs at pH ~6 in both R+ and R\u2212 cells, but happens immediately at the diauxic shift in R\u2212 cells and at highly variable times (stochastically) long after proliferation cessation in R+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glass transition is demonstrated through quantitative mobility measurements (C76-C80) with strong correlation between pH drop and mobility loss (C79, R\u00b2=0.785 in Figure 3D). The pH threshold of ~6 is consistently observed across cell types (C80). The temporal heterogeneity in R+ cells is well-documented (C41, C97, C100). This extends prior observations (C75, C96) to the context of an unperturbed life cycle with single-cell resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C18"
+    ],
+    "result": "Cells establish bona fide quiescence in the experimental system, as demonstrated by the ability of ~80% of cells to reenter the cell cycle within 5 hours after refeeding with fresh medium following 10 days in stationary phase. This confirms that cells experience a respiration phase necessary for true quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The refeeding experiment (C31) provides direct evidence for reversible quiescence with quantitative measurements. The interpretation (C32) is supported by citation to prior work defining bona fide quiescence. This validation is important for distinguishing the experimental system from abrupt starvation approaches that do not allow respiration (C18).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C44"
+    ],
+    "result": "The observed growth patterns and fate divergence phenomena are not specific to the BY strain but are also observed in other yeast strain backgrounds including W303, prototrophic strains (FY, S288c), and various auxotrophic strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cross-strain validation is demonstrated through population growth measurements (C30, Figure 1\u2014figure supplement 2) and pH-based fate divergence observations (C44, Figure 1\u2014figure supplement 3). This addresses potential concerns about strain-specific artifacts, particularly relevant given that BY strains have higher rates of mitochondrial DNA instability (C57).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C89",
+      "C95",
+      "C98"
+    ],
+    "result": "The authors propose a mechanistic model where the inability of R\u2212 cells to activate respiration leads to energy depletion, causing a premature pH drop and precocious glass transition that is detrimental to long-term viability. In contrast, respiration in R+ cells prevents premature glass transition, allowing coordinated cellular reorganizations necessary for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model integrates multiple observations (pH dynamics, respiratory status, glass transition timing, and viability) into a coherent mechanistic framework. The correlation between respiratory failure, pH drop, and reduced survival is well-documented (C50, C89). However, the causal claims about detriment (C98) contain speculative elements, as direct manipulation experiments are not performed. The model is well-supported by correlative evidence but would benefit from perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The synchronous response at the diauxic shift demonstrates deterministic environmental control, while the heterogeneous timing of glass transition in R+ cells during stationary phase reveals stochastic, cell-autonomous developmental progression. This heterogeneity demonstrates that faithful study of quiescence entry requires single-cell tracking in unperturbed conditions rather than imposed environmental changes or population-level measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contrast between synchronous (C99) and heterogeneous (C100) responses is clearly demonstrated in the data (C41, C97). The methodological conclusion (C101) follows logically from the observed heterogeneity. This represents an important conceptual advance about the nature of quiescence entry, though the interpretation of stochasticity versus unmeasured deterministic factors remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C104"
+    ],
+    "result": "The authors speculate that the methodology could be applied to other contexts involving collective cell behavior and environmental feedback, such as metabolic oscillations and cooperative behaviors, and that the filtration device could be adapted for other microorganisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are forward-looking speculations (C87, C104) about potential applications. While the S. pombe validation (C28) provides some support for adaptability, these remain untested hypotheses. The claims are appropriately framed as speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C33",
+      "C34",
+      "C45",
+      "C46",
+      "C64",
+      "C65",
+      "C91"
+    ],
+    "result": "The introduction establishes the biological context and knowledge gaps: microorganisms undergo metabolic transitions during their life cycle, quiescent cells display extensive structural reorganizations, but the detailed sequence of events and coordination between metabolic signals and structural changes during natural life cycles remains unclear. Previous abrupt starvation approaches cannot recapitulate the natural dynamics necessary for bona fide quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish context and are well-supported by citations to prior literature (C7-C10, C12-C13, C16, C18-C19, C33, C45-C46, C64-C65, C91). The identification of knowledge gaps (C2, C11, C14, C34) is reasonable and motivates the study. The critique of prior methods (C17) is logical and supported by mechanistic reasoning about the importance of respiration for true quiescence (C18).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A machine learning-based neural network was developed and validated to automatically detect bladder borders in fluoroscopic images of awake, behaving mice. The network achieved a median Dice similarity index of 0.95, successfully identifying bladders across different postures and filling states, with minimal detection failures during abrupt movements or near-complete emptying (lowest detected volume: 4.1 \u00b1 2.2 \u00b5l).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C23 provide strong quantitative validation of the neural network performance with appropriate metrics (DISI = 0.95). The methodology (C71-C76) describes proper training procedures including iterative retraining, 20% holdout validation set, and image preprocessing. The limitations are transparently reported (C21), and the approach is well-documented with publicly available code and training data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Urethane anesthesia has a dose-dependent effect on voiding function in catheterized mice. While bladder capacity remained unchanged, urethane at doses >0.3 g/kg caused dose-dependent increases in residual volume and decreases in voiding efficiency from ~100% to below 50% at 1.2 g/kg. The effect was attributed to urethane rather than fatigue, as confirmed by single-dose controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 present consistent dose-response data with appropriate controls (C32-C33, C83). Statistical testing is reported (C27), and the findings align with cited literature (C81). The sample size (n=5) meets the stated power analysis requirements (C80). The control experiment comparing stepwise vs. single-dose administration effectively rules out fatigue as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The mechanism of urethane-induced incomplete bladder emptying involves both reduced void duration (t20-80) and decreased urethral flow rate. Analysis revealed that reduced urethral flow resulted from lower urethral flow conductance while intravesical pressure during voiding remained unaffected. Urethane also dose-dependently decreased nonvoiding contractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide mechanistic insights supported by quantitative measurements shown in Figures 3C-F. The combined pressure-flow analysis (C38) appropriately distinguishes between bladder contractility and urethral resistance. The conclusion (C39) logically follows from the data showing unchanged intravesical pressure but reduced flow conductance, indicating impaired urethral relaxation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "Fluoroscopic volumetry, a non-invasive imaging approach using subcutaneous contrast injection, revealed that surgical catheter implantation dramatically reduces bladder capacity by approximately fourfold (364 \u00b1 60 \u00b5l vs. 89 \u00b1 13 \u00b5l in awake mice, p=0.0015). Non-catheterized animals also showed significantly increased maximal urethral flow rate and void duration compared to catheterized animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide statistically significant comparisons with appropriate p-values. The non-invasive method is well-described (C42-C45), though it lacks pressure measurements (C46). The fourfold difference is substantial and consistent across awake and anesthetized conditions. Sample size (n=4) is slightly below the stated power calculation but the large effect size and statistical significance support the conclusion (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The observed fourfold reduction in bladder capacity from catheter implantation cannot be fully explained by physical surface reduction alone (<20% contribution from ~10% affected surface). Alternative mechanisms including inflammation and irritation likely contribute, as literature values from studies with 7-day recovery periods (50-140 \u00b5l) remain substantially lower than non-catheterized values (380 \u00b5l).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide reasonable mechanistic discussion supported by literature comparisons. The quantitative estimate (C55) is appropriately conservative. The comparison with recovery-period studies (C57-C58) strengthens the argument that acute inflammation alone cannot explain the full effect. However, C56 is somewhat speculative, and the filling rate difference (C59) is acknowledged as a potential confounding factor requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Low-dose urethane (0.3 g/kg) produced tranquil but awake behavior with reduced data artifacts and non-significant trends toward improved bladder function parameters compared to non-anesthetized animals. This dose may represent an optimal compromise between experimental ease and physiological conditions, possibly through analgesic reduction of catheter-induced pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 report observations and trends that were explicitly stated as not statistically significant. While the behavioral observations (C84-C85) are valid, the functional improvements (C86) lack statistical support. The mechanistic explanation (C87) is speculative. The recommendation (C88) is reasonable but based on uncertain evidence. This would benefit from a dedicated study with adequate power to detect these effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Videocystometry combines pressure measurements with fluoroscopic imaging to provide quantitative, time-resolved measurements of bladder volume, urethral flow, vesicoureteral reflux, and bladder wall micromotions. However, accurate analysis requires precise bladder delineation, which is challenging in awake animals due to constant positional changes and impractical for manual analysis of large image datasets (>10^5 images).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C15 describe the videocystometry technique with citation support (C14-C15). Claims C16-C19 appropriately identify the technical challenge that motivated the machine learning approach. The limitation of manual analysis (C19) is well-justified given the scale of data (>300,000 images per experiment). This provides essential context for the methodological development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The findings raise important caveats for interpreting videocystometric results and highlight the utility of fluoroscopic volumetry for non-invasive bladder function studies, though this approach cannot provide concomitant pressure measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 appropriately summarize the implications and trade-offs of the methods. The caveat (C60) is well-supported by the fourfold capacity difference findings. The acknowledgment of the pressure measurement limitation (C61) is transparent and important for method selection. These are reasonable conclusions drawn from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Experimental methods included videocystometry in 12-16 week-old female C57BL/6J mice with appropriate surgical procedures, imaging parameters (30 fps fluoroscopy, 50 Hz pressure), data processing (Savitzky-Golay filtering, rolling average), and statistical analysis (Shapiro-Wilk normality testing, power analysis for n=4-5 animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C80 provide comprehensive methodological details. The sample size justification (C80) is appropriate with stated power analysis. Imaging parameters (C69) and data processing steps (C71-C72, C77) are clearly described. Statistical methods (C79) are appropriate. The methods are reproducible and follow established protocols (C66). Ethical considerations are addressed (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context establishes that ~20% of the population suffers from lower urinary tract dysfunction, mice are favored preclinical models, and cystometry is the gold standard technique. However, cystometry and urethral electromyography have limitations including lack of quantitative volume/flow information, invasiveness, and incompletely understood effects on LUT function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 provide appropriate background context with citations where needed (C6, C9). The prevalence estimate (C5) lacks a specific citation but is stated as general knowledge. The limitations of existing methods (C10-C13) are well-established and appropriately motivate the current work. These claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  }
+]

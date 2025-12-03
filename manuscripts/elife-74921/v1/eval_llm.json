@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C26",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed and validated a transfer entropy (TE)-based methodology to infer effective connectivity networks from spike train data. The methodology accounts for synaptic delays, firing rate influences, population bursts, and spurious connections through normalization and Monte Carlo significance testing. Validation on synthetic data yielded an ROC AUC of 0.8548 \u00b1 0.0037.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is well-described with appropriate controls for known confounds in TE analysis (C15, C90-C94). The validation using Izhikevich model networks (C26, C97-C99) provides quantitative performance metrics. The approach builds on established methods (C89, C95-C96) and addresses key limitations of bivariate TE analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C27",
+      "C28"
+    ],
+    "result": "Network connectivity increased during development, with edge density rising until 21 DIV and stabilizing at ~5%. Networks transitioned from fragmented components in early development to a single giant component by 18-24 DIV, indicating a shift from segregated to integrated architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support this developmental progression: edge density measurements (C27), degree distribution shifts (C22), and component analysis (C28). Statistical significance is reported (p<0.05) and data are shown in Figures 1e, 3, and 4a. The temporal pattern is consistent across metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Networks developed small-world architecture after 12 DIV, characterized by high clustering coefficients (significantly higher than random networks, p<0.05) and path lengths similar to random networks. Five specific 3-node motifs (5, 8, 11, 12, 13) were significantly overrepresented. The authors propose this emerges through activation of silent synapses rather than rewiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The small-world finding is well-supported by quantitative comparisons to random networks (C29-C30) and motif analysis (C31). However, the mechanistic interpretation involving silent synapse activation (C64) is speculative and not directly tested. The result itself is solid, but the proposed mechanism (C54-C56, C64) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Networks organized into modular structures with ~5 modules after 12 DIV. Module size followed a Poisson distribution, with smaller modules showing higher global efficiency (rho \u2265 -0.2, p<0.05) and spatial compactness (rho \u2265 0.22, p<0.05 after 9 DIV). Wiring costs were higher inside modules and lower outside modules compared to random networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modular organization is supported by multiple complementary analyses: module detection (C32), size distribution (C33), efficiency-size correlation (C34), spatial organization (C36), and wiring cost analysis (C37-C38). Statistical tests are appropriate and significant. The convergence of spatial, topological, and efficiency measures strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C44",
+      "C45"
+    ],
+    "result": "Highly active neurons (score 4) emerged after 9 DIV and acquired topological importance as network hubs and module integrators. These neurons had significantly higher firing rates than low-scoring neurons (p<0.05 after 12 DIV) and higher participation coefficients, indicating connections across modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The relationship between firing rate and topological importance is well-documented through the scoring system combining degree, strength, betweenness, and closeness centrality (C39, C44-C45). The participation coefficient analysis directly supports the module integration role. However, the scoring system is somewhat arbitrary (top 40% threshold) and the causal relationship between firing rate and hub status cannot be determined from these observational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Firing rate and connection weight distributions followed log-normal distributions across all DIV (p>0.01), while degree distributions showed heavy-tailed characteristics. These distributions are consistent with previous in vivo, in vitro, and in silico studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical testing confirms log-normal fits for firing rates and weights (C18-C19), and the heavy-tailed degree distribution is shown in Figure 1e (C20). Comparison with prior work (C21) provides context. The statistical approach (Lilliefors test, \u03b1=0.01) is appropriate for testing distributional assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The joint probability distribution of connection weights and distances changed until 18 DIV then stabilized. Early networks (6-9 DIV) had predominantly short connections, while longer connections became more probable after 12 DIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial-weight relationship is documented in Figure 2 with statistical testing (p\u22640.05) for specific distance bins (C24). The temporal evolution (C23, C25) is clearly shown. This provides important evidence for the spatial organization of network development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Most network metrics showed significant changes after 12 DIV, coinciding with increased network bursts reported in prior studies. After 30 DIV, networks returned to random-like topology, possibly due to neuronal death in aging cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 12 DIV transition point is supported by multiple converging metrics (C46) and is consistent with prior electrophysiology studies (C47-C48). The late-stage degradation (C51) is supported by decreased neuron counts (C17) and topological changes. However, the mechanistic explanations (C50, C52) are speculative and the inability to track individual neurons (C72) limits interpretation of the late-stage changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Motif 5, a feedforward loop without reciprocal connections, was the most stable pattern, appearing in >85% of networks after 12 DIV and potentially supporting unidirectional activity propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prevalence of motif 5 is clearly documented (C65) with citation support for its functional interpretation. However, without the ability to distinguish excitatory from inhibitory neurons (C73), the functional interpretation remains somewhat limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors conclude that plasticity and homeostatic mechanisms drive network self-organization by reinforcing synchronized spontaneous activity, creating predictive relationships between pre- and post-synaptic neurons. This produces clustering, modular organization, and high firing rate neurons as module integrators, with preference for nearby connections despite spatial independence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are broad interpretive conclusions that synthesize the empirical findings. While the observational data support the described network properties, the mechanistic claims about plasticity and homeostatic mechanisms (C74) are not directly tested. The study is correlational and cannot establish causality. The proposed mechanisms (C53-C58) are drawn from literature but not experimentally validated in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study has several acknowledged limitations: sub-sampling of neurons (only those near 60 electrodes), potential heterogeneous coverage effects, inability to track individual neurons over time, and inability to distinguish excitatory from inhibitory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge these limitations (C68, C72-C73) and cite relevant concerns about coverage effects (C69). The PEI coating approach (C70-C71) partially addresses spatial heterogeneity. These limitations are important for interpreting the results but do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The experimental dataset consisted of 435 recordings from 28 rat embryo hippocampal cultures (6-35 DIV), with ~100 neurons per recording (mean 91, total 39,529), average firing rate 1.9 Hz, recorded on 60-electrode MEAs. Spikes were sorted using wave_Clus with 5 SD threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data description is clear and complete (C78-C85), with appropriate ethical approval (C78) and citation of the spike sorting method (C84). The dataset is publicly available (CRCNS), enhancing reproducibility. Sample sizes are adequate for network analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The number of recorded neurons decreased over DIV, with more pronounced decline after 30 DIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is clearly shown in Figure 1b (C17) and is consistent with known difficulties in maintaining long-term cultures (C52). This observation is important for interpreting the late-stage network changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Module detection used a multi-iterative Louvain algorithm with resolution parameter \u03b3 varied 1,000 times on log scale [10\u207b\u2075, 10\u2075], followed by consensus clustering with threshold \u03c4=0.45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The module detection methodology is well-described (C100-C101) with appropriate citations. The multi-resolution approach and consensus clustering are standard methods for robust module detection. The specific parameter choices (\u03c4=0.45) could benefit from justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes that neural systems are self-organizing, with development involving both activity-dependent and activity-independent factors, and that dissociated cultures show spontaneous activity and dynamic changes during maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations (C7-C14). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C66",
+      "C67"
+    ],
+    "result": "The discussion synthesizes prior work on silent synapses, STDP, GABA receptor function, spatial connectivity preferences, and firing rate heterogeneity to interpret the observed network development patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate summaries of prior work (C53-C60, C66-C67) used to contextualize the findings. The citations appear appropriate, though the authors acknowledge these mechanisms were not directly tested in their system.",
+    "result_type": "MINOR"
+  }
+]

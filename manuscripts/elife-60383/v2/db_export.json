@@ -1,0 +1,1572 @@
+{
+  "submission": {
+    "id": "058956fd-8b47-475e-a4f6-9d7c1170e9f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:39:25.775930Z",
+    "updated_at": "2025-12-03T01:39:25.775930Z"
+  },
+  "content": [
+    {
+      "id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "submission_id": "058956fd-8b47-475e-a4f6-9d7c1170e9f0",
+      "content_type": "manuscript",
+      "content_text": "# Identification of distinct pH- and zeaxanthin-dependent quenching in LHCSR3 from Chlamydomonas reinhardtii\n\n## Authors\n\n- Julianne M Troiano<sup>1</sup>\n- Federico Perozeni<sup>2</sup>\n- Raymundo Moya<sup>1</sup> ([ORCID: 0000-0003-3923-8000](https://orcid.org/0000-0003-3923-8000))\n- Luca Zuliani<sup>2</sup>\n- Kwangyrul Baek<sup>3</sup>\n- EonSeon Jin<sup>3</sup>\n- Stefano Cazzaniga<sup>2</sup> ([ORCID: 0000-0002-2824-7916](https://orcid.org/0000-0002-2824-7916))\n- Matteo Ballottari<sup>2</sup> ([ORCID: 0000-0001-8410-3397](https://orcid.org/0000-0001-8410-3397)) \u2020\n- Gabriela S Schlau-Cohen<sup>1</sup> ([ORCID: 0000-0001-7746-2981](https://orcid.org/0000-0001-7746-2981)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Massachusetts Institute of Technology Cambridge United States\n2. Department of Biotechnology, University of Verona Verona Italy\n3. Department of Life Science, Hanyang University Seoul Republic of Korea\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnder high light, oxygenic photosynthetic organisms avoid photodamage by thermally dissipating absorbed energy, which is called nonphotochemical quenching. In green algae, a chlorophyll and carotenoid-binding protein, light-harvesting complex stress-related (LHCSR3), detects excess energy via a pH drop and serves as a quenching site. Using a combined in vivo and in vitro approach, we investigated quenching within LHCSR3 from Chlamydomonas reinhardtii. In vitro two distinct quenching processes, individually controlled by pH and zeaxanthin, were identified within LHCSR3. The pH-dependent quenching was removed within a mutant LHCSR3 that lacks the residues that are protonated to sense the pH drop. Observation of quenching in zeaxanthin-enriched LHCSR3 even at neutral pH demonstrated zeaxanthin-dependent quenching, which also occurs in other light-harvesting complexes. Either pH- or zeaxanthin-dependent quenching prevented the formation of damaging reactive oxygen species, and thus the two quenching processes may together provide different induction and recovery kinetics for photoprotection in a changing environment.\n\n## Introduction\n\nSunlight is the essential source of energy for most photosynthetic organisms, yet sunlight in excess of the organism\u2019s photosynthetic capacity can generate reactive oxygen species (ROS) that lead to cellular damage. To avoid damage, plants respond to high light (HL)\u00a0by activating photophysical pathways that safely convert excess energy to heat, which is known as nonphotochemical quenching (NPQ) (Rochaix, 2014). While NPQ allows for healthy growth, it also limits the overall photosynthetic efficiency under many conditions. If NPQ were optimized for biomass, yields would improve dramatically, potentially by up to 30% (Kromdijk et al., 2016; Zhu et al., 2010). However, critical information to guide optimization is still lacking, including the molecular origin of NPQ and the mechanism of regulation.\n\nGreen algae is a sustainable alternative for biofuels and livestock feed (Lum et al., 2013; Wijffels and Barbosa, 2010). In Chlamydomonas (C.) reinhardtii, the model organism for green algae, light-harvesting complex stress-related (LHCSR) is the key gene product for NPQ. LHCSR contains chlorophyll (Chl) and carotenoid (Car) held within its protein scaffold. Two isoforms of LHCSR, LHCSR1 and LHCSR3, are active in NPQ, although LHCSR3 is accumulated at higher levels and so has the major role (Dinc et al., 2016; Maruyama et al., 2014; Peers et al., 2009; Tokutsu and Minagawa, 2013). While the photophysical mechanism of quenching in light-harvesting complexes has not been determined, the primary proposals involve Chl-Car interactions (Liao et al., 2010; Ma et al., 2003; Ruban et al., 2007; Son et al., 2020a; Son et al., 2020b; de la Cruz Valbuena et al., 2019).\n\nNPQ is triggered by a proton gradient across the thylakoid membrane that forms through a drop in luminal pH (Horton et al., 1996). Lumen acidification generally occurs when the light available causes an imbalance between the proton generation and the capacity of the photosynthetic apparatus to use protons for ATP production (Joliot and Finazzi, 2010). The C-terminus of LHCSR3 contains a number of luminal residues that are protonated upon the pH drop to trigger quenching (Ballottari et al., 2016; Liguori et al., 2013). The pH drop also activates the enzymatic conversion of the Car violaxanthin (Vio) to zeaxanthin (Zea) (Eskling et al., 1997). Along with LHCSR, other homologous light-harvesting complexes are likely involved in quenching (Nicol et al., 2019). In C. reinhardtii, the CP26 and CP29 subunits, which are minor antenna complexes of Photosystem II (PSII), have been implicated in NPQ (Cazzaniga et al., 2020). In higher plants, Zea has been reported to be involved in NPQ induction by driving light-harvesting complexes into a quenched state and/or by mediating interaction between light-harvesting complexes and PsbS, nonpigment binding subunits essential for NPQ induction in vascular plants (Sacharz et al., 2017; Ahn et al., 2008; Jahns and Holzwarth, 2012). Similarly, Zea binding to LHCSR1 in the moss Physcomitrella patens and LHCX1 (a LHCSR homolog) in the microalga Nannochloropsis oceanica has been shown to be essential for NPQ (Pinnola et al., 2013; Park et al., 2019). Finally, in C. reinhardtii, a reduction of NPQ in the absence of Zea has been reported (Niyogi et al., 1997). In contrast, recent work has shown Zea to be unnecessary for NPQ induction or related to highly specific growth conditions (Bonente et al., 2011; Tian et al., 2019; Vidal-Meireles et al., 2020). Thus, the contribution of Zea to quenching in green algae remains under debate.\n\nBecause of the complexity of NPQ and the large number of homologous light-harvesting complexes, the individual contributions and mechanisms associated with LHCSR3, pH, and Zea have been challenging to disentangle, including whether they activate quenching separately or collectively. With the power of mutagenesis, the contribution of LHCSR3, and the dependence of this contribution on pH and Zea, can be determined. However, in vivo experiments leave the molecular mechanisms of LHCSR3 and its activation obscured. In vitro experiments, and particularly single-molecule fluorescence spectroscopy, are a powerful complement to identify protein conformational states (Gwizdala et al., 2016; Kr\u00fcger et al., 2010; Kondo et al., 2017; Schlau-Cohen et al., 2014; Schlau-Cohen et al., 2015). A recent method to analyze single-molecule data, 2D fluorescence correlation analysis (2D-FLC) (Ishii and Tahara, 2013a; Kondo et al., 2019) quantifies the number of conformational states and their dynamics, including simultaneous, distinct processes. Thus, the conformational changes associated with NPQ can be resolved.\n\nHere, we apply a combined in vivo and in vitro approach to investigate NPQ in C. reinhardtii. We use mutagenesis, NPQ induction experiments, and fluorescence lifetime measurements on whole cells and single LHCSR3 complexes to show that pH and Zea function in parallel and that either parameter can activate full quenching and prevent ROS accumulation. The pH-dependent quenching in LHCSR3 is controlled by the protonation of residues in the C-terminus as shown by mutagenesis to remove these residues. The Zea-dependent quenching is activated even at neutral pH both in vitro and in vivo. Based on the in vitro results, we find two likely quenching sites, that\u00a0is Chl-Car pairs within LHCSR3, one regulated by pH and the other by Zea. The two quenching processes act in combination to provide different time scales of activation and deactivation of photoprotection, allowing survival under variable light conditions.\n\n## Results\n\nRoles of pH and Zea in fluorescence intensity in vivo and in vitro. To disentangle the contributions of LHCSR, pH, and Zea, both in vivo and in vitro measurements were performed on different C. reinhardtii genotypes. Wild-type (WT) strains (4A+ and CC4349), a strain depleted of LHCSR3 and LHCSR1 subunits (npq4 lhcsr1; Figure 1\u2014figure supplements 1 and 2;\u00a0Ballottari et al., 2016), a strain unable to accumulate Zea due to knock out of the enzyme responsible for xanthophyll cycle activation (npq1; Figure 1\u2014figure supplement 3; Li et al., 2016), and a mutant constitutively accumulating Zea due to knock out of the zeaxanthin epoxidase enzyme (zep; Figure 1\u2014figure supplement 3; Baek et al., 2016; Niyogi et al., 1997) were characterized in vivo. A mutant depleted of both LHCSR subunits (npq4 lhcsr1) was chosen rather than a mutant missing only LHCSR3 (npq4) due to the partial ability of LHCSR1 to substitute for LHCSR3 in its absence (Girolomoni et al., 2019).\n\nTo assess the ability of these phenotypes to undergo quenching of Chl fluorescence, the NPQ levels were measured in vivo after cells were acclimated to HL (500 \u03bcmol m\u22122s\u22121) for several generations to induce LHCSR expression (WT, npq1, and zep strains) and then exposed to strong light treatment (1500 \u03bcmol m\u22122s\u22121) for 60 min to induce maximum drop in luminal pH and Zea accumulation (WT, npq1, zep, and npq4 lhcsr1 strains; data for xanthophyll cycle activation shown in Figure 1\u2014figure supplement 3). The NPQ induction kinetics are shown in Figure 1. In the WT strains, the maximum NPQ level was reached after 10 min of illumination and fully recovered in the dark (Figure 1A, black), despite a strong accumulation of Zea (Figure 1\u2014figure supplement 3). The recovery of the NPQ traces to similar levels for all mutants acclimated to HL demonstrated that the photodamage, known as photoinhibition, was limited, if any, for these cells during the 60 min of illumination. Zea-dependent quenching and the reduction in fluorescence emission due photoinhibition have a similar relaxing time. The low level of these two processes observed in our NPQ measurements also suggests that the major component of NPQ in C.reinhardtii is Zea-independent, in agreement with previous results (Bonente et al., 2011). In contrast, in the case of low-light\u00a0(LL) acclimated samples, the NPQ induced by WT and npq1 was much lower compared to the HL acclimated cells, with a significant fraction of NPQ that did not recover in the dark (Figure 1\u2014figure supplement 4). This suggests the possible induction of photoinhibition in LL acclimated cells exposed to strong light treatment for 60 min. In the npq4 lhcsr1 strain, which lacks LHCSR subunits, a null NPQ phenotype was observed in both HL and LL acclimated cells (Figure 1A, purple). These results confirm that LHCSR subunits are responsible for light-dependent NPQ in C. reinhardtii as previously reported (Peers et al., 2009; Ballottari et al., 2016). Consistent with this conclusion, LHCSR accumulation in LL acclimated samples, which exhibit less NPQ, was strongly reduced compared to the corresponding HL samples (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-v2.jpg)\n\n**Figure 1.:** (A) In\u00a0vivo nonphotochemical quenching\u00a0(NPQ) induction kinetics for high-light acclimated samples measured upon 60 min of high light (1500 \u03bcmol m -2 s -1 ) in vivo. The results are reported as the mean of three independent biological replicates (N=3). Error bars are reported as standard\u00a0deviation. Kinetics for low-light acclimated samples are shown in Figure 1\u2014figure supplement 4. In vitro single-molecule fluorescence spectroscopy was performed on LHCSR3 (Figure 1\u2014figure supplement 5). The fluorescence intensities measured from\u00a0~100 single complexes were used to construct the histograms shown for (B) LHCSR3- Vio, (C) stop-LHCSR3-Vio, and (D) LHCSR3-Zea at pH 7.5 (top) and pH 5.0 (bottom). Statistical parameters are provided in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Total protein extracts from low-light (LL) or high-light (HL) acclimated cells were loaded on a chlorophyll basis (\u03bcg of chlorophylls loaded are reported in the figure). Immunoblot analysis was performed using specific antibodies recognizing PsaA, CP43, LHCSR3 (a), and LHCII subunits. The filter used for LHCSR3 detection was then used for LHCSR1 (b) detection using specific antibody. The results reported are representative of two independent experiments with different biological replicates and three technical replicates for each genotype in LL or HL.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Immunoblotting results were analyzed by densitometry. LHCSR3 (A) and LHCSR1 (B) content was then normalized to the amount of CP43 as a reference for PSII. The results obtained were then normalized to the 4A+ low light (LL) case in the case of LHCSR3 and 4A+ high light (HL) case in the case of LHCSR1. The results reported are representative of two independent experiments with different biological replicates and three technical replicates for each genotype in LL or HL. Error bars are reported as standard deviation. The statistical significance of differences compared to WT (4A+ for npq1 and npq1 lhcsr1 mutants, CC4349 for zep mutant) is indicated as * (p<0.05), as determined by unpaired two sample t-test (N\u00a0=\u00a03).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Violaxanthin de-epoxidation kinetics were measured upon 60 min of strong light treatment (red light 1500 \u03bcmol m\u22122s\u22121) of low-light (LL) or high-light (HL) acclimated cells. Panel A, C: de-epoxidation indexes at different time points. Panel B, D: zeaxanthin content per 100 chlorophylls. De-epoxidation index was calculated from the molar concentration of zeaxanthin, anteraxanthin, and violaxanthin as ([zeaxanthin]+ [anteraxanthin]/2)/([zeaxanthin]+ [anteraxanthin]+ [violaxanthin]). The results reported are representative of three independent biological replicates for each genotype in LL or HL. Error bars are reported as standard deviation (N\u00a0=\u00a03).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** NPQ induction kinetics measured upon 60 min of high light (HL;\u00a01500 \u03bcmol m\u22122s\u22121) followed by 20 min of dark recovery. The results reported are representative of three independent biological replicates for each genotype in LL or HL. Error bars are reported as standard deviation (n\u00a0=\u00a03).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The intensity levels determined by the change-point-finding algorithm are shown in black.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Electrochromic shift (ECS) measurements were performed in WT (4A+ and cc4349) and mutant strains (npq4 lhcsr1, npq1 and zep) acclimated to LL (Panels A and B) or HL\u00a0(Panels C, D). Genotypes having the same background are shown in the same Panel. The results reported are representative of three independent biological replicates for each genotype in LL or HL. Error bars are reported as standard deviation. The statistical significance of differences compared to WT (4A+ for npq1 and npq1 lhcsr1 mutants, CC4349 for zep mutant) is indicated as * (p<0.05), as determined by unpaired two sample t-test (N\u00a0=\u00a03).\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp7-v2.jpg)\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** Protein number for LHCSR-like proteins used for alignment are listed below: XP_001696064.1 Chlamydomonas reinhardtii LHCSR3, XP_001696125.1 Chlamydomonas reinhardtii LHCSR1, XP_002948670.1 Volvox carteri f. nagariensis, ADP89594.1 Chlamydomonas sp. ICE-L LHCSR2, XP_001768071.1 Physcomitrella patens LHCSR2, ABD58893.1 Acutodesmus obliquus, ADY38581.1 Ulva linza, ADU04518.1 Ulva prolifera, XP_005848576.1 Chlorella variabilis, XP_002178699.1 Phaeodactylum tricornutum, AHH80644.1 Durinskia baltica, AA05890.1 Bigelowiella natans, CCO66741.1 Bathycoccus prasinos.\n\n![Figure 1\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp9-v2.jpg)\n\n**Figure 1\u2014figure supplement 9.:** (a) Coomassie brilliant blue stained SDS-page of LHCSR3 apo-protein separated on Tris-Glycine 12%.\u00a0LHCSR3 STOP protein shows high mobility conferred by its shorter C-terminal with respect to LHCSR3 WT; (b) Fluorescence spectra of LHCSR3 complexes measured at room temperature at different excitation wavelengths (reported in each panel). The results reported are representative of two independent experiments.\n\n![Figure 1\u2014figure supplement 10.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig1-figsupp10-v2.jpg)\n\n**Figure 1\u2014figure supplement 10.:** (a\u2013c) Absorption spectra of WT (a) or STOP (b) refolded with violaxanthin or zeaxanthin. (d) Fluorescence emission spectra of LHCSR3 WT and STOP mutant upon excitation at 440 nm with both violaxanthin and zeaxanthin pigments composition. The results reported are representative of two independent experiments.\n\nIn the npq1 strain, which lacks Zea, no reduction of the maximum level of NPQ was observed compared to its background, the 4A+ WT strain in HL (Figure 1A, blue, black). The similar level and timescales of onset and recovery for NPQ in these two strains suggest a minor role, if any, for Zea in light-activated quenching. In the zep strain, which constitutively accumulates Zea, a strong reduction of the NPQ level was observed compared to both WT strains (Figure 1A, red). To understand why, first accumulation of the LHCSR subunits was measured (Figure 1\u2014figure supplements 1 and 2). However, similar LHCSR3 content was found in the WT strains, npq1 and zep mutants. In the case of LHCSR1, similar accumulation was observed in the 4A+ WT strain and zep mutant, while no trace of this subunit was detectable in the CC4349 WT strain. Second, the extent of proton motive force as compared to WT was measured through the electrochromic shift (Bailleul et al., 2010). However, although proton transport into the lumen was reduced in the zep strain at low actinic light, it was similar at the higher irradiance used for measurement of NPQ (Figure 1\u2014figure supplement 6). Therefore, neither differences in LHCSR accumulation nor in proton transport are the cause of the reduced NPQ phenotype in the zep mutant. The PSII maximum quantum yield measured though the photosynthetic parameter Fv/Fm was significantly reduced in the zep mutant compared to the WT case (Figure 1\u2014figure supplement 7), suggesting quenching may be occurring even in dark adapted samples.\n\nIn order to investigate the effect of pH and Zea at the level of the LHCSR3 subunit, single-molecule fluorescence spectroscopy was used to measure individual complexes in vitro. As an initial comparison, we determined the fluorescence intensity from single LHCSR3. Each period of constant intensity was identified (representative intensity traces in Figure 1\u2014figure supplement 5) and the average intensity for each period was calculated. The fluorescence intensities for each period were used to construct histograms as shown in Figure 1B\u2013D. Histograms were constructed for LHCSR3 with Vio (LHCSR3-Vio) at high and low pH, which mimic the cellular environment under LL and HL conditions, respectively (statistical parameters in Figure 1\u2014source data 1). The fluorescence intensity decreases, generally along with the fluorescence lifetime, as quenching increases. As shown in Figure 1B, upon a decrease in pH from 7.5 to 5.0, the median fluorescence intensity of LHCSR3-Vio decreased by\u00a0~5 counts/10 ms due to an increase in the quenched population, reflecting additional quenching of the excitation energy absorbed. This is consistent with the conclusion from the in vivo NPQ experiments that quenching can occur without Zea under HL conditions.\n\nActivation of quenching in LHCSR3 was previously suggested to be related to protonation of putative pH-sensing residues present at the C-terminus (Ballottari et al., 2016; Liguori et al., 2013). To assess the role of these pH-sensing residues in pH-dependent quenching, a mutant of LHCSR3 lacking this protein portion (stop-LHCSR3) was produced (Figure 1\u2014figure supplement 8). Stop-LHCSR3 was also measured using single-molecule spectroscopy (Figure 1\u2014figure supplements 9 and 10). Upon the same pH decrease that induced quenching in LHCSR3-Vio, stop-LHCSR3 with Vio (stop-LHCSR3-Vio) exhibited similar fluorescence intensity where the median intensity even increases, primarily due to increased heterogeneity in the fluorescence emission at low pH as seen through the standard deviation of the two distributions (Figure 1C, Figure 1\u2014source data 1). The data show that the mutants have lost the ability to activate quenching channels upon a pH drop, highlighting the sensing role of the residues of the C-terminus of LHCSR3.\n\nSingle-molecule measurements were also performed on LHCSR3 with Zea (LHCSR3-Zea) at high and low pH. Under both conditions, as shown in Figure 1D, LHCSR3-Zea in vitro showed a decrease in median fluorescence intensity by\u00a0~10\u201312 counts/10 ms compared to LHCSR3-Vio. The pH-independence of these histograms is consistent with the in vivo NPQ measurements in the zep mutants where HL, and the associated pH drop in the lumen, does not change quenching levels (Figure 1A). However, the lower intensity points to the existence of a quenching process that requires only Zea, consistent with in vivo fluorescence lifetime measurements discussed below.\n\n### Roles of pH and Zea in fluorescence lifetime in vitro\n\nThe single-molecule fluorescence intensities are time averages, and so we also analyzed the fluorescence emission from single LHCSR3 through a photon-by-photon method, 2D fluorescence lifetime correlation (2D-FLC) analysis. This method uses the associated lifetime data, and is more appropriate to analyze this data as the lifetime decays exhibit complex kinetics (de la Cruz Valbuena et al., 2019). Applying the 2D-FLC analysis to single-molecule data identifies fluorescence lifetime states, which correspond to protein conformations with different extents of quenching, and rates of transitions between states, which correspond to switches between the protein conformations (Kondo et al., 2019).\n\nTo determine the number of lifetime states, the distributions of lifetime values were constructed (Figure 2A\u2013D). In a lifetime distribution, lifetime states appear as peaks with varying profiles. Traditional lifetime fitting requires an a priori assumption of the number of exponential terms required to fit a decay curve. In contrast, construction of a lifetime distribution does not require prior assignment of the number of decay timescales, which is particularly important when there are multiple different lifetimes as is the case for LHCSR3 (de la Cruz Valbuena et al., 2019). The lifetime distribution also allows analysis of multi-exponential lifetimes, even for the low signal-to-background regime of single-molecule data. The initial lifetime distribution for each sample was calculated by first performing an inverse Laplace transform of all the lifetime data (time between excitation and emission), which was recorded on a photon-by-photon basis (Figure 2\u2014figure supplement 1). Photon pairs separated by a series of delay times were identified, and a 2D inverse Laplace transform was performed for the photon pairs associated with each delay time (see Materials\u00a0and\u00a0methods for details). The final lifetime distributions (Figure 2A\u2013D) were determined by fitting the data in order to optimize the lifetime distributions and to generate the correlation functions, which are discussed in more detail below. For each of the LHCSR3 samples, two lifetime states were observed in the distributions, an unquenched state (~2.5 ns) and a quenched state (~0.5 ns).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig2-v2.jpg)\n\n**Figure 2.:** (A-D) Fluorescence lifetime distributions from the global fit in the 2D-FLC analysis for each LHCSR3 sample at pH 7.5 and 5.0 estimated using the maximum entropy method (MEM) to perform an inverse Laplace Transform on the single-molecule emission times. States 1 and 2 are shown in light gray and dark gray, respectively. Free-energy diagrams constructed from the populations and transition rates (Figure 2\u2014source data 1) extracted from the 2D-FLC analysis (E-G and I-K). Structural model with likely quenching sites (H and L) for the effects of pH (top) and Zea (bottom) on protein dynamics.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Lifetime distributions from the single-molecule fluorescence from all LHCSR3 samples determined using a one-dimensional inverse Laplace transform (1D-ILT) of the 1D fluorescence lifetime decay. Lifetime states identified from the 1D distribution were used as initial parameters in the fit to the 2D distributions in the 2D-FLC analysis.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The auto-correlation and cross-correlation functions of the lifetime states were determined from the single-molecule photon emission for each sample. The auto-correlation is shown in blue for the quenched state and in yellow for the unquenched state. The cross-correlation of the two states is shown in red. The black lines shows the global fitting curves calculated using the model function given by the 2D-FLC analysis using Equation 1 and the lifetime distribution as described in the Materials\u00a0and\u00a0methods. The correlation functions are shown for single LHCSR3 complexes with Vio at pH 7.5 (A) and pH 5.0 (B), Zea at pH 7.5 (C) and 5.0 (D), stop-LHCSR3 with Vio at pH 7.5 (E) and pH 5.0 (F) and stop-LHCSR3 with Zea at pH 7.5 (G) and pH 5.0 (H).\n\nThe dynamics of the lifetime states were investigated through the auto- and cross-correlation functions for the lifetime states of each sample (Figure 2\u2014figure supplement 2). The correlation function is a normalized measure of how similar the photon emission time, that\u00a0is, the lifetime, is as time increases (Nitzan, 2006). Therefore, an auto-correlation function for a given lifetime state contains the timescales for transitions out of the state and a cross-correlation function contains the timescales for transitions between the states (anti-correlation) and similar behavior of the states (correlation) due to processes throughout LHCSR3, such as photobleaching. The auto- and cross-correlations were globally fit to estimate the parameters in the correlation model function given by Equation 1 in the Materials\u00a0and\u00a0methods, which includes the number of lifetime states, the brightness of each state, the population of each state, the rates of transitions between states, and the number of separate processes that transition between states, referred to as dynamic components. The parameters extracted from the fits are given in Figure 2\u2014source data 1 for all samples.\n\nThe best fits to the data included three dynamic components, where each component arises from distinct emissive states with separate conformational dynamics within single LHCSR3 (Figure 2\u2014figure supplement 2, Figure 2\u2014source data 1). Correlation-based analysis of the photon fluctuations is a well-established tool to identify the number of independent emissive processes (Schwille and Haustein, 2002; Mets, 2001), and was adapted to determine the number of dynamic components (Kondo et al., 2019). The cross-correlation for all LHCSR3 samples begins above zero (Figure 2\u2014figure supplement 2), which appears in the presence of multiple dynamic components (Kondo et al., 2019). The Chl a have the lowest energy levels, and, due to their significantly lower energy than the Chl b energy levels, primarily give rise to the emissive states. Because three components were observed within single LHCSR3, they indicate multiple Chl a emissive sites within each LHCSR3, consistent with previous models of LHCs (Mascoli et al., 2019; Mascoli et al., 2020; Kr\u00fcger et al., 2010; Kr\u00fcger et al., 2011). Thus, the dynamic components reflect conformational dynamics that switch between unquenched and quenched lifetime states at different places within LHCSR3.\n\nThe rate constants for the transitions between the lifetime states within each component were also extracted from the fit, primarily based on the dynamics of the cross-correlation functions (Figure 2\u2014source data 1). Two of the components exhibit rapid dynamics, which arise from conformational changes that vary the extent of quenching of the Chl a emitters. The timescales of the transitions for one component are tens of microseconds and those for the other are hundreds of microseconds, which are both timescales that would be hidden in traditional single-molecule analyses. The third dynamic component is static at\u00a0<0.01 s. Due to the lack of dynamics, we assigned the component to emitters far from, and thus unaffected by, quenchers for the unquenched state and partially photobleached complexes for the quenched state.\n\nFinally, the relative populations of the lifetime states for each component were also determined within the model. Assuming a Boltzmann distribution (see Materials\u00a0and\u00a0methods), the relative rate constants were used to determine the equilibrium free-energy difference between the states for each component (Figure 2\u2014source data 1). The free-energy barrier for a transition between states is related to the rate of the transition, which was used to approximate the barrier height (Kondo et al., 2019). These free-energy differences and barrier heights were then combined to construct illustrative free-energy landscapes, which are shown in Figure 2 for the two dynamic components.\n\nWe examined the dependence of the two dynamic components on pH, Zea and the C-terminal tail, which contains the pH-sensing residues. Figure 2E and F show the pH-dependence of the free-energy landscapes for the slower (hundreds of microseconds) dynamic component in LHCSR3-Vio and LHCSR3-Zea, respectively. In both cases, a decrease in pH from 7.5 to 5.0 stabilizes the quenched state. In LHCSR3-Vio, the quenched state is stabilized by a decrease in the transition rate from the quenched to the unquenched state, corresponding to a higher barrier in the free-energy landscape. In LHCSR3-Zea, the decrease in the transition rate from the quenched to the unquenched state is also accompanied by an increase in the transition rate from the unquenched to the quenched state, further stabilizing the quenched state relative to the unquenched one. In stop-LHCSR3-Vio, however, no change in the population of the quenched state is observed upon a decrease in pH (Figure 2G), reflecting the expected pH-independence of the sample.\n\nFigure 2I and J show the Zea-dependence of the free-energy landscapes of LHCSR3 for the faster (tens of microseconds) dynamic component at pH 7.5 and pH 5.0, respectively. At both pH levels, conversion from Vio to Zea stabilizes the quenched state via a decrease in the transition rate from the quenched to unquenched state. At pH 5.0, the transition rate to the quenched state increases as illustrated by the lower barrier, which would enable rapid equilibration of population into the quenched state. The Zea-dependent behavior is maintained for stop-LHCSR3 (Figure 2K), where the quenched state is still stabilized in the presence of Zea.\n\n### Roles of pH and Zea in fluorescence lifetime in vivo\n\nQuenching mechanisms were further investigated in vivo by measuring fluorescence emission lifetimes at 77K of whole cells acclimated to LL or HL, as traditional NPQ measurements can be affected by artifacts (Tietz et al., 2017). Under these conditions, the photochemical activity is blocked and by following the emission at 680 nm it is possible to specifically investigate the kinetics of PSII, the main target of NPQ. Cells were either grown in LL or HL, which determines the level of LHCSR protein (Figure 1\u2014figure supplements 1 and 2) and the fluorescence lifetime was recorded before and after exposure to 60 min of HL, which induces \u0394pH and determines the level of Zea. These light conditions, combined with the genotypes generated, enabled studies that partially or fully separated the contributions of the different components of NPQ.\n\nWhole cell fluorescence lifetime traces show that LHCSR is necessary for the primary light-dependent component of NPQ in C. reinhardtii trigged by lumen acidification, in agreement with previous findings (Peers et al., 2009; Ballottari et al., 2016). WT cells and npq1 cells, which lack Zea, acclimated to HL show a faster fluorescence decay, or an increase in quenching, after exposure to 60 min of HL (Figure 3A, gray bars, fluorescence decays and fits to data shown in SI). For npq4 lhcsr1 cells, which lack LHCSR, similar fluorescence decay kinetics were measured regardless of light treatment (Figure 3A, purple), which is comparable to the unquenched kinetics of WT cells. WT and npq1 cells grown in control light (low LHCSR content) remain unquenched, even after exposure to 60 min of HL (Figure 3\u2014figure supplements 1 and 2). These results are consistent with the NPQ measurements shown in Figure 1A. Similar to WT, npq1 cells grown in HL show a faster fluorescence decay after exposure to 60 min of HL (Figure 3A, blue bars). While the results from WT show a role for pH and/or Zea in light-induced quenching in LHCSR3, the results from the npq1 strain show that quenching can occur without Zea, that\u00a0is, induced by the pH drop alone.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-v2.jpg)\n\n**Figure 3.:** (A) Fluorescence lifetimes were measured on high light (HL;\u00a0500 \u03bcmol m -2 s -1 ) acclimated samples. Each genotype was measured at a dark-adapted state (--) or after 60 min of HL treatment (1500 \u03bcmol m -2 s -1 , 60\u2019). WT samples shown here are 4A + strain. Similar results were obtained in the case of CC4349 strain. The npq4 lhcsr1 mutant is indicated here as npq4.1. Fluorescence lifetime values for all genotypes and light conditions are shown in Figure 3\u2014figure supplements 1 and 2. The fluorescence data are provided in Figure 3\u2014source data 1 with fit values in Figure 3\u2014source data 2. (B) Singlet Oxygen Sensor Green (SOSG) fluorescence emission measured for HL acclimated samples relative to WT (4A+ for npq1 and npq4 lhcsr1, CC4349 for zep). Dotted line represents WT level at 1. The results reported are representative of three independent biological replicates for each genotype in low\u00a0light\u00a0(LL) or HL. SOSG kinetics are shown in Figure 3\u2014figure supplement 3. LL acclimated samples are shown in Figure 3\u2014figure supplement 4. SOSG emission data is provided in Figure 3\u2014figure supplement 5\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The results reported are representative of two independent experiments with two independent biologic replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The other WT strain (cc4349) has similar values. Above dotted line at 0.75 ns is referred to as unquenched and below the dotted line is referred to as quenched. The results reported are representative of two independent experiments with two independent biologic replicates.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Singlet oxygen production was measured via the singlet oxygen sensor green (SOSG) fluorescence probe. Low-light (LL) or high-light (HL) acclimated samples were exposed to strong red light (2000 \u03bcmol m\u22122s\u22121) and singlet oxygen production rate was probed at the different time points by following SOSG fluorescence at 530 nm. Genotypes having the same background are shown in the same Panel. The results reported are representative of three independent biological replicates for each genotype in LL or HL. Error bars are reported as standard deviation (N\u00a0=\u00a03). The statistical significance of differences compared to WT (4A+ for npq1 and npq1 lhcsr1 mutants, CC4349 for zep mutant) is indicated as * (p<0.05), as determined by unpaired two sample t-test (N\u00a0=\u00a03).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Singlet oxygen production rate was measured by SOSG as a fluorescence probe.\u00a0Low light (LL), left, or high light (HL), right, acclimated samples were exposed to strong red light (2000 \u03bcmol m\u22122s\u22121), right. SOSG emission relative to WT (4A+ for npq1 and npq4 lhcsr1, cc4349 for zep). The results reported are representative of three independent biological replicates for each genotype in LL or HL. Unnormalized data are reported in Figure 3\u2014figure supplement 3.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) CC4349 cells acclimated to low light (LL) after 60 min of dark adaptation (t0) were exposed for 60 min to high light at 1500 \u03bcmol m\u22122s\u22121 (t60). Thylakoid membranes were purified, solubilized in 0.8% n-dodecyl-\u03b1-D-maltoside and the different pigment binding complexes were separated by ultracentrifugation in 0.1\u20131M sucrose gradient. A similar procedure was conducted in the case of dark-adapted zep cells acclimated to LL. Absorption spectra of fractions corresponding to monomeric (b2) and trimeric (b3) complexes are reported in (B) and (C), respectively. (D) The Zea fraction of total carotenoids (Zea/Car) and the de-epoxidation index (D.I.) where standard deviation is below 15% (n\u00a0=\u00a02).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/60383/elife-60383-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Average fluorescence lifetimes for each sample are reported as an average of two independent experiments.\n\nThe zep mutant, which constitutively accumulates Zea, presented a similar decay among all samples, regardless of HL or LL acclimation or light treatment, that was much faster, or more quenched, compared to the decay of dark-adapted WT (Figure 3A, red, Figure 3\u2014figure supplements 1 and 2). These results indicate quenching upon Zea accumulation alone, consistent with the reduced Fv/Fm observed in this mutant (Figure 1\u2014figure supplement 7). This result is also consistent with the pH-independent quenching observed through the single-molecule fluorescence shown in Figure 1D and Figure 2E and F. However, the quenching observed in the zep mutant was essentially unchanged in LL vs. HL acclimated zep cells suggesting that the Zea-dependent quenching observed in zep mutants is a more general process as opposed to one that occurs solely in LHCSR3 as quenching is observed even in the cells acclimated to LL that lack LHCSR3.\n\nTo investigate the generality of this quenching, monomeric or trimeric light-harvesting complexes were isolated from the zep mutant after exposure to 60 min of HL, which induces maximum Zea accumulation. These complexes had a twofold higher content of Zea compared to the same fraction isolated from WT (CC4349) under the same conditions (Figure 3\u2014figure supplement 5). The light-harvesting complexes isolated from the zep mutant also showed a 10% decrease in the fluorescence lifetime, suggesting that Zea-dependent quenching is at least somewhat shared with other light-harvesting complexes (Figure 3\u2014figure supplement 6, Figure 3\u2014figure supplement 5\u2014source data 1, and Figure 3\u2014source data 3). In contrast, no major differences in quenching properties were found in monomeric and trimeric LHC complexes isolated from WT cells before or after exposure to 60 min of HL, consistent with previous findings from higher plants and other green algae (Xu et al., 2015; Girolomoni et al., 2020).\n\n### Role of Zea and NPQ in photoprotection\n\nThe main function of quenching the Chl singlet excited states is to thermally dissipate the fraction of absorbed excitation energy in excess of the capacity of the photosynthetic apparatus. Unquenched Chl singlet excited states may cause ROS formation and subsequent photoinhibition of their primary target, PSII (Niyogi, 1999). Singlet oxygen is the main ROS species formed at the level of PSII. In order to correlate the NPQ levels and quenching measured with ROS formation, singlet oxygen production was followed in the different genotypes herein investigated by using the fluorescent probe Singlet Oxygen Sensor Green (SOSG) (Flors et al., 2006; Figure 3B, Figure 3\u2014figure supplements 3 and 4). SOSG fluorescence can be used as a probe to follow singlet oxygen formation, although measuring the true production rates would require a different analytic method. Moreover, SOSG has been reported to produce singlet oxygen itself upon prolonged illumination, and thus requires the use of light filters in order to avoid direct excitation of the dye during HL treatment (Kim et al., 2013). As expected from the low level of NPQ induction, npq4 lhcsr1, which lacks LHCSR, demonstrated the highest level of singlet oxygen production, regardless of light treatment. Interestingly, the effect of Zea was almost negligible in HL acclimated samples (with a very high NPQ induction). Notably, the amount of singlet oxygen production was correlated with average lifetime (Figure 3A), that\u00a0is, inversely correlated with quenching, confirming that the quenching of Chl singlet excited states investigated here plays a role in photoprotection.\n\n## Discussion\n\nThis work leverages in vivo and in vitro experimental approaches to investigate NPQ mechanisms in C. reinhardtii and the molecular parameters responsible for their activation. In higher plants, both lumen acidification and Zea accumulation have been long understood to play a role in the induction of NPQ. While lumen acidification was thought to play a similar role in C. reinhardtii, here we characterize the impact of Zea accumulation, which had previously been elusive. We also identify the likely conformational dynamics associated with both pH and Car composition.\n\n### Structural assignment of quenching sites in LHCSR3\n\nTwo dynamic components were identified through the 2D-FLC analysis that suggest two distinct photoprotective processes, one pH-dependent and one Zea-dependent, operating simultaneously within LHCSR3. Each component likely arises from a Chl-Car pair, where the Car can quench the emissive Chl. The two components both have greater population in the quenched state than in the unquenched state (Figure 2\u2014source data 1), consistent with previous work where a quenching component was found to be present in LHCSR3, even at pH 7.5 (de la Cruz Valbuena et al., 2019). By considering the single-molecule results along with previous structural, spectroscopic and theoretical work, we speculate as to the likely sites associated with each component. Although no high-resolution structure of LHCSR3 has been determined, we illustrate possible quenching sites (Figure 2H and L) within a working structural model of LHCSR3 (Bonente et al., 2011). As shown in Figure 2\u2014source data 2, LHCSR3 purified from C. reinhardtii contains eight Chl molecules (7\u20138 Chl a and 0\u20131 Chl b molecules) and two Cars (one lutein [Lut] and one Vio or Zea). Based on sequence comparison with LHCII and CP29, the conserved Chl a binding sites are the following: Chls a 602, 603, 609, 610, 612, and 613, with Chls a604, 608, and 611 proposed as well (Bonente et al., 2011; Liguori et al., 2016). Previous spectroscopic analysis of LHCSR3 from C. reinhardtii has identified the likely binding sites of Lut and Vio/Zea within the structural model (Bonente et al., 2011).\n\nGiven that there are two Cars bound at the internal sites of LHCSR3, it is likely that each Car and its neighboring Chl is the major contributor for one of the two dynamic components. The pH-dependent component (Figure 2E\u2013H) likely involves Lut and the neighboring Chl a 613. Both Chl a 612 (coupled to Chl as 610 and 611) and Chl a 613 have previously been proposed as quenching sites given their physical proximity to the Lut (Liguori et al., 2016; Ruban et al., 2007). The Chl a 610\u2013612 site contains the lowest energy Chl a, which has been shown to be a major energy sink and thus the primary emitter (M\u00fch et al., 2010; Schlau-Cohen et al., 2009; Novoderezhkin et al., 2011). Additionally, computational results have shown that the interaction between the Lut site and Chl a 612 has large fluctuations (Liguori et al., 2015). This agrees with the slower dynamics found for this component. However, recent in vivo and in vitro analyses found that the removal of Chl a 613 results in a reduction in LHCSR specific quenching, while removal of Chl a 612 only affected which Chl was the final emitter of the complex (Perozeni et al., 2019). While either of these sites are potential quenching sites, it is likely that Chl a 613 plays the major role in pH-dependent quenching in LHCSR3 in C. reinhardtii.\n\nWith a decrease in pH from 7.5 to 5.0, the equilibrium free-energy differences for the pH-dependent component, which were calculated using the relative rate constants from the global fit, were shifted toward the quenched state by over 200 cm\u22121 in LHCSR3-Vio and over 500 cm\u22121 in LHCSR3-Zea (Figure 2\u2014source data 1). The specific conformational change upon protonation that leads to this stabilization remains undetermined. However, proposals in the literature include reduced electrostatic repulsion in the lumen-exposed domain causes a change in the distance and/or orientation between the helices (Ballottari et al., 2016) and an increase in protein-protein interactions (de la Cruz Valbuena et al., 2019). These conformational changes could produce a displacement of Lut toward Chl a 613.\n\nAnalysis of stop-LHCSR3, which lacks the pH-sensing residues in the C terminus, showed that the C terminus controls quenching activity by pH-induced stabilization of the quenched conformation of LHCSR3. The negligible (<30 cm\u22121) change in the equilibrium free-energy difference for this mutant (Figure 2G, Figure 2\u2014source data 1) upon a pH drop demonstrates the functional role of the C-terminal tail in the conformational change into the quenched state.\n\nThe Zea-dependent component (Figure 2J\u2013K) likely involves Vio/Zea and the neighboring Chl as 602\u2013603 (Bonente et al., 2011; Di Valentin et al., 2009; Lampoura et al., 2002). With conversion from Vio to Zea, the free-energy landscape changes significantly, and thus is likely to involve the region of LHCSR3 that surrounds Vio/Zea. In addition, MD simulations have shown this Car site to be highly flexible, sampling many configurations (Liguori et al., 2017), which is consistent with the faster dynamics observed here. Upon substitution of Zea for Vio, the equilibrium free-energy difference becomes further biased toward the quenched state by over 550 cm\u22121 at pH 7.5 and over 300 cm\u22121 at pH 5.0, where the difference was calculated from the populations of the lifetime states determined within the model. This result is consistent with a role of Zea in quenching of LHCSR3 that does not require a decrease in pH and therefore is distinct from the major pH-dependent component of NPQ observed in vivo in npq1, which almost completely recovered in the dark (Figure 1A).\n\nIn the stop-LHCSR3, the equilibrium free-energy differences for the Zea-dependent component is similar to the wild type samples (Figure 2K). This is consistent with the Vio/Zea-Chl a 602\u2013603 site as the major contributor for this component. Although qualitatively similar, there is a small decrease (<200 cm\u22121) in the stabilization of the quenched state upon Zea incorporation. Thus, the C-terminal tail affects the states associated with both dynamic components, which arise from different emissive sites within LHCSR3, and so likely has an allosteric effect throughout the protein.\n\nThe static component, which is assigned to emitters far from the quenching site in the unquenched state, has a large contribution to the correlation profiles (Figure 2\u2014source data 1). The large amplitude is consistent with the low number of Cars available to interact with the Chls and thus the presence of several unquenched emissive Chl a. Given the structural arrangement of the Cars and Chls, the unquenched state within the static component is likely due to Chls 604, 608, and 609, which sit far from the Cars. The quenched state within the static component is likely due to partial photobleaching, which can lower the fluorescence intensity (Kondo et al., 2019).\n\n### Zea-dependent quenching\n\nZea-dependent quenching is observed both in vivo and in vitro even at neutral pH. While the mechanism is described at the molecular level in the case of LHCSR3, it is likely shared with other light-harvesting complexes. A strong reduction of fluorescence lifetime was observed in whole cells in the case of zep mutant, even in LL acclimated cells where the amount of LHCSR3 is minimal (Figure 3\u2014figure supplements 1 and 2). This indicated that LHCSR subunits are not the sole quenching site where Zea-dependent quenching occurs, as seen in previous work implicating the minor antenna complexes (Cazzaniga et al., 2020). Consistently, Zea-dependent quenching was measured in other light-harvesting complexes isolated from the zep mutant, but it was not sufficient to fully explain the strong quenching observed in whole cells.\n\nIn the case of the zep mutant, not only does Zea completely substitute Vio (de-epoxidation index is 1, Figure 1\u2014figure supplement 3), but also the Zea/Chl ratio is much higher (~10 fold) compared to the ratio observed in WT or npq4 lhcsr1. This suggests an alternative possibility where the strong quenching observed in the zep mutant could be related to accumulation of Zea in the thylakoid membrane changing the environment where the photosystems and light-harvesting complexes are embedded, inducing the latter to a strong quenched state. Indeed, Zea has been previously reported to influence the assembly and organization of light-harvesting complexes in the thylakoid membranes of higher plants, affecting their quenching properties (Sacharz et al., 2017, Shukla et al., 2020). While both possibilities allow for quenching in the presence of Zea even at neutral pH, it is the pH-independent quenching itself that is potentially the origin of the seemingly conflicting results in the literature, where Zea has been found to both reduce NPQ (Niyogi et al., 1997) and be unnecessary for its induction (Bonente et al., 2011; Baek et al., 2016).\n\n### Quenching processes in vivo and in vitro\n\nOur in vitro results point to pH and Zea controlling separate quenching processes within LHCSR3 and that either parameter can provide efficient induction of LHCSR3 to a quenched state for photoprotection. The 2D-FLC analysis on single LHCSR3 quantified two parallel dynamic components, or distinct quenching processes, one of which is pH-dependent and the other Zea-dependent. Likewise, in vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea, and full quenching even at neutral pH was observed in the zep strain, which is Zea-enriched, suggesting two quenching and induction processes. The 2D-FLC analysis of the stop-LHCSR3 mutant shows that removal of the C-terminal tail removes pH-dependent quenching, while leaving Zea-dependent quenching nearly unaffected. Analogously, the WT LL grown strains, with reduced LHCSR accumulation, also present a significantly lower NPQ induction, supporting the critical role of the protonation of the C terminus residues unique to LHCSR in activating quenching in C. reinhardtii.\n\nTaken together, the in vivo and in vitro results indicated that either pH- or Zea-dependent quenching provides efficient photoprotection. While in vivo measurements suggest that pH-dependent quenching is often dominant over Zea-dependent quenching, and correspondingly more efficient in photoprotection, the conformational states and pigment pairs likely responsible exhibit spectroscopic signatures that suggest both quenching processes have similar conformational dynamics. In vivo measurements can be influenced by multiple variables, which are, in some cases, unpredictable, such as pleiotropic effects and acclimation responses. Thus, pH- and Zea-dependent quenching may both contribute to all quenching in the WT, while being alternatively triggered in the mutants through a compensatory effect. Under natural conditions, these processes combine to protect the system and there is likely interplay between them through compensatory acclimation or changes to the protein organization within the thylakoid. However, the timescales and induction associated with each quenching process are distinct; responsive pH-dependent quenching works in combination with the guaranteed safety valve of Zea-dependent quenching, potentially to protect against a rapid return to HL conditions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21(DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0016</td>\n      <td>Electrocompetent cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>4A+</td>\n      <td>https://www.chlamycollection.org/</td>\n      <td>CC-4051 4A+ mt+</td>\n      <td>Wild type strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>CC4349</td>\n      <td>https://www.chlamycollection.org/</td>\n      <td></td>\n      <td>Cell wall deficient strain</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>npq1</td>\n      <td>Niyogi, K. K., Bjorkman, O. and Grossman, A. R. Chlamydomonas Xanthophyll Cycle Mutants Identified by Video Imaging of Chlorophyll Fluorescence Quenching. Plant Cell 9, 1369\u20131380, doi:10.1105/tpc.9.8.1369 (1997).</td>\n      <td></td>\n      <td>Strain mutated on cvde gene</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>npq4 lhcsr1</td>\n      <td>Ballottari, M. et al. Identification of pH-sensing Sites in the Light Harvesting Complex Stress-related 3 Protein Essential for Triggering Nonphotochemical Quenching in Chlamydomonas reinhardtii. J Biol Chem 291, 7334\u20137346, doi:10.1074/jbc.M115.704601 (2016).</td>\n      <td></td>\n      <td>Strain mutated on lhcr1, lhcsr3.1 and lhcsr3.2 genes</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>\n      <td>zep</td>\n      <td>Baek, K. et al. DNA-free two-gene knockout in Chlamydomonas reinhardtii via CRISPR-Cas9 ribonucleoproteins. Sci Rep 6, 30620, doi:10.1038/srep30620 (2016).</td>\n      <td></td>\n      <td>Strain obtained by CRISPR CAS9 being mutated on zep gene</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1CP43 (Rabbit polyclonal)</td>\n      <td>Agrisera (Sweden)</td>\n      <td>AS11 1787</td>\n      <td>Dilution used (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1PSAA (Rabbit polyclonal)</td>\n      <td>Agrisera (Sweden)</td>\n      <td>AS06 172</td>\n      <td>Dilution used (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1LHCBM5 (Rabbit polyclonal)</td>\n      <td>Agrisera (Sweden)</td>\n      <td>AS09 408</td>\n      <td>Dilution used (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b1LHCSR3 (Rabbit polyclonal)</td>\n      <td>Agrisera (Sweden)</td>\n      <td>AS14 2766</td>\n      <td>Dilution used (1:3000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pETmHis containing LHCSR3 CDS</td>\n      <td>Ballottari, M. et al. Identification of pH-sensing Sites in the Light Harvesting Complex Stress-related 3 Protein Essential for Triggering Nonphotochemical Quenching in Chlamydomonas reinhardtii. J Biol Chem 291, 7334\u20137346, doi:10.1074/jbc.M115.704601 (2016).</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant protein</td>\n      <td>LHCSR3- Vio</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinant protein expressed in E. coli Purified as inclusion bodies and refolded by adding pigments, including violaxanthin but not zeaxanthin</td>\n    </tr>\n    <tr>\n      <td>Recombinant protein</td>\n      <td>LHCSR3- Zea</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinant protein expressed in E. coli Purified as inclusion bodies and refolded by adding pigments, including zeaxanthin but not violaxanthin</td>\n    </tr>\n    <tr>\n      <td>Recombinant protein</td>\n      <td>stop-LHCSR3- Vio</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinant protein expressed in E. coli with the deletion of the last 13 residues at the C-terminus. Purified as inclusion bodies and refolded by adding pigments, including violaxanthin but not zeaxanthin</td>\n    </tr>\n    <tr>\n      <td>Recombinant protein</td>\n      <td>stop-LHCSR3- Zea</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinant protein expressed in E. coli with the deletion of the last 13 residues at the C-terminus. Purified as inclusion bodies and refolded by adding pigments, including zeaxanthin but not violaxanthin</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Agilent QuikChange Lightning Site-Directed Mutagenesis Kit.</td>\n      <td>Agilent</td>\n      <td>210519</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-dodecyl-\u03b1-D-maltoside</td>\n      <td>Anatrace</td>\n      <td>D310HA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Singlet Oxygen Sensor Green (SOSG)</td>\n      <td>Thermo Fisher</td>\n      <td>S36002</td>\n      <td>Fluorescent probe for singlet oxygen</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OriginPro 2018</td>\n      <td>https://www.originlab.com/2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks, Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>2D-FLC</td>\n      <td>https://github.com/PremashisManna/2D-FLC-code;\u00a0Kondo et al., 2020 Kondo, T. et al. Microsecond and millisecond dynamics in the photosynthetic protein LHCSR1 observed by single-molecule correlation spectroscopy. PNAS 116, 11247\u201311252, doi: 10.1073/pnas.1821207116 (2019).</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains and culture conditions\n\nC. reinhardtii WT (4A+and CC4349) and mutant strains npq1 (Niyogi et al., 1997) and npq4 lhcsr1 (Ballottari et al., 2016) in the 4A+background and zep (Baek et al., 2016) in the CC4349 background were grown at 24\u00b0C under continuous illumination with white LED light at 80 \u00b5mol photons m\u22122 s\u22121 (LL) in high salts (HS) medium (Harris, 2008) on a rotary shaker in Erlenmeyer flasks. 4A+ and CC4349 strains were obtained from the Chlamydomonas Resource Center (https://www.chlamycollection.org/) and the npq1 strain (Niyogi et al., 1997) was kindly donated by Prof. Giovanni Finazzi (CEA-Grenoble). HL acclimation was induced by growing cells for 2 weeks at 500 \u00b5mol photons m\u22122 s\u22121 in HS. As acclimation may result in complex single adaptation processes, we do not investigate these processes but instead focus our studies on the effect of acclimation on photoprotective mechanisms.\n\n### SDS-PAGE electrophoresis and immunoblotting\n\nSDS\u2013PAGE analysis was performed using the Tris-Tricine buffer system (Sch\u00e4gger and von Jagow, 1987). Immunoblotting analysis was performed using \u03b1CP43 (AS11 1787), \u03b1PSAA (AS06 172), \u03b1LHCBM5 (AS09 408), and \u03b1LHCSR3 (AS14 2766) antibodies purchased from Agrisera (Sweden). The antibody \u03b1LHCBM5 was previously reported to also recognize LHCBM1-9 subunits and was thus used as \u03b1LHCII antibody (Girolomoni et al., 2017).\n\n### Violaxanthin de-epoxidation kinetics and pigment analysis\n\nViolaxanthin de-epoxidation kinetics were performed by illuminating the different genotypes with red light at 1500 \u00b5mol photons m\u22122 s\u22121 up to 60 min. Pigments were extracted 80% acetone and analysed by HPLC as described in Lagarde et al., 2000.\n\n### NPQ and electrochromic shift measurements\n\nNPQ induction curves were measured on 60 min dark-adapted intact cells with a DUAL-PAM-100 fluorimeter (Heinz-Walz) at room temperature in a 1 \u00d7 1 cm cuvette mixed by magnetic stirring. Dark adaptation was performed in flasks under strong agitation with a shaker in order to avoid the onset of anaerobic conditions. Red saturating light of 4000 \u00b5mol photons m\u22122 s\u22121 and red actinic light of 1500 \u00b5mol photons m\u22122 s\u22121 were used to measure Fm and Fm\u2019,\u00a0respectively, at the different time points. Samples were exposed for 60 min to actinic light followed by 20 min of dark recovery. Fm was measured on dark adapted cells, while Fm\u2019 was measured at 10 min intervals. NPQ was then calculated as Fm/Fm\u2019\u22121. Proton motive force upon exposure to different light intensities was measured by Electrochromic Shift (ECS) with MultispeQ v2.0 (PhotosynQ) according to Kuhlgert, S. et al. MultispeQ Beta: A tool for large-scale plant phenotyping connected to the open photosynQ network (Kuhlgert et al., 2016).\n\n### LHCSR3 WT and stop-LHCSR3 proteins refolding for in vitro analysis\n\npETmHis containing LHCSR3 CDS previously cloned as reported in Perozeni et al., 2019 served as template to produce stop-LHCSR3 using Agilent QuikChange Lightning Site-Directed Mutagenesis Kit. Primer TGGCTCTGCGCTTCTAGAAGGAGGCCATTCT and primer GAATGGCCTCCTTCTAGAAGCGCAGAGCCA were used to insert a premature stop codon to replace residue E231, generating a protein lacking 13 c-terminal residues (stop-LHCSR3). LHCSR3 WT and stop-LHCSR3 protein were overexpressed in BL21 E. coli and refolded in vitro in presence of pigments as previously reported (Bonente et al., 2011). Pigments used for refolding were extracted from spinach thylakoids. Vio or Zea-binding versions of LHCSR3 were obtained using Vio or Zea containing pigment extracts in the refolding procedure. Zea-containing pigments were obtained by in vitro de-epoxidation (de la Cruz Valbuena et al., 2019; Pinnola et al., 2017) Fluorescence emission at 300K with excitation at 440 nm, 475 nm and 500 nm was used to evaluate correct folding as previously reported (Ballottari et al., 2010).\n\n### Isolation of monomeric and trimeric light-harvesting complexes of PSII\n\nMonomeric and trimeric light-harvesting complexes were isolated from solubilized thylakoids by ultracentrifugation in sucrose gradient as described in Tokutsu et al., 2012.\n\n### Singlet oxygen production\n\nSinglet oxygen production were estimated by using the fluorescent probe Singlet Oxygen Sensor Green (SOSG) (Flors et al., 2006). SOSG fluorescence was measured in samples treated with red strong light (2000 \u00b5mol photons m\u22122 s\u22121) as described in Stella et al., 2018. While singlet oxygen estimation by SOSG is widely used, prolonged irradiation can lead to the formation of singlet oxygen by photodegradation of the fluorescent probe (Kim et al., 2013). To prevent this artefact, direct excitation of the probe was prevented by insertion of a red filter (>630 nm).\n\n### Single-molecule fluorescence spectroscopy\n\nSolutions of 12\u00a0\u00b5M\u00a0purified LHCSR3 complexes were stored at \u221280\u00b0C. Immediately prior to experiments, LHCSR3 samples were thawed over ice and diluted to 50 pM using buffer containing 0.05% n-dodecyl-\u03b1-D-maltoside and either 20 mM HEPES-KOH (pH 7.5) or 40 mM MES-NaOH (pH 5.0). The following enzymatic oxygen-scavenging systems were also used: (1) 25 nM protocatechuate-3,4-dioxygenase and 2.5 mM protocatechuic acid for pH 7.5 and (2) 50 nM pyranose oxidase, 100 nM catalase and 5 mM glucose for pH 5.0.(Aitken et al., 2008; Swoboda et al., 2012) Diluted solutions were incubated for 15 min on Ni-NTA-coated coverslips (Ni_01, Microsurfaces) fitted with a Viton spacer to allow LHCSR3 complexes to attach to the surface via their His-tag. The sample was rinsed several times to remove unbound complexes and sealed with another coverslip.\n\nSingle-molecule fluorescence measurements were performed in a home-built confocal microscope. A fiber laser (FemtoFiber pro, Toptica; 130 fs pulse duration, 80 MHz repetition rate) was tuned to 610 nm and set to an excitation power of 350 nW (2560 nJ/cm2 at the sample plane, assuming a Gaussian beam). Sample excitation and fluorescence collection were accomplished by the same oil-immersion objective (UPLSAPO100XO, Olympus, NA 1.4). The fluorescence signal was isolated using two bandpass filters (ET690/120x and ET700/75 m, Chroma). The signal was detected using an avalanche photodiode (SPCM-AQRH-15, Excelitas) and photon arrival times were recorded using a time-correlated single photon counting module (Picoharp 300, Picoquant). The instrument response function was measured from scattered light to be 380 ps (full width at half maximum). Fluorescence intensity was analyzed as described previously using a change-point-finding algorithm (Watkins and Yang, 2005). Fluorescence emission was recorded until photobleaching for the following number of LHCSR3 in each sample: 132 LHCSR3-Vio at pH 7.5 (1.6\u2022107 photons); 173 LHCSR3-Vio at pH 5.5 (1.3\u2022107 photons); 95 LHCSR3-Zea at pH 7.5 (1.4\u2022107 photons); 216 LHCSR3-Zea at pH 5.5 (9.0\u2022106 photons); 125 stop-LHCSR3-Vio at pH 7.5 (2.5\u2022107 photons); 130 stop-LHCSR3-Vio at pH 5.5 (7.9\u2022106 photons); 148 stop-LHCSR3-Zea at pH 7.5 (1.3\u2022107 photons); 116 stop-LHCSR3-Zea at pH 5.5 (9.9\u2022106 photons). Experiments were performed at room temperature. Each data set was collected over two or three days for technical replicates and the distribution generated each day was evaluated for consistency.\n\n### 2D fluorescence lifetime correlation analysis\n\n2D fluorescence lifetime correlation analysis was performed as detailed previously (Kondo et al., 2019). Briefly, we performed the following analysis. First, the total number of states exhibiting distinct fluorescence lifetimes was estimated from the 1D lifetime distribution. The lifetime distribution is determined using the maximum entropy method (MEM) to perform a 1D inverse Laplace transform (1D-ILT) of the 1D fluorescence lifetime decay (Ishii and Tahara, 2013a). Next, a 2D fluorescence decay (2D-FD) matrix was constructed by plotting pairs of photons separated by \u2206T values ranging from 10\u22124 to 10 s. The 2D-FD matrix was transformed from t-space to the 2D fluorescence lifetime correlation (2D-FLC) matrix in \u03c4-space using a 2D-ILT by MEM fitting (Ishii and Tahara, 2012; Ishii and Tahara, 2013a; Ishii and Tahara, 2013b). The 2D-FLC matrix is made up of two functions: the fluorescence lifetime distribution, A, and the correlation function, G. In practice, the initial fluorescence lifetime distribution, A0, was estimated from the 2D-MEM fitting of the 2D-FD at the shortest \u2206T (10\u22124 s). Then the correlation matrix, G0, was estimated at all \u2206T values with A0 as a constant. A0 and G0, along with the state lifetime values determined from the 1D analysis, were used as initial parameters for the global fitting of the 2D-FDs at all \u2206T values. A was treated as a global variable and G was treated as a local variable at each \u2206T (now G(\u2206T)). The resulting fit provides the correlation function, G(\u2206T). The correlation function was normalized with respect to the total photon number in each state. Each set of correlation curves (auto- and cross-correlation for one sample) were globally fit using the following model function:\n\n$$\nG_{ij}^{s}\\DeltaT=q^{2}J^{2}I\u2219\\sumx\\sumy\\neqxE_{y}\u2219\u03a6_{y}\u2219R_{y}\u221e+E_{x}\u2219\u03a6_{y}\u2219R_{x}\u0394T\u2219E_{x}\u2219\u03a6_{x}\u2219C_{x}\n$$\n\nThis equation accounts for multiple, independent emitters within one protein (multiple components). Here, x and y indicate the component number, i and j indicate the state (auto correlation for i=j, cross correlation for i \u2260 j), q accounts for experimental factors such as the detection efficiency, filter transmittance, gain of the detector, etc., J is the laser power, and I is the total photon number proportional to the total measurement time. E, \u03a6, and C are diagonal matrices composed of the optical extinction coefficient, fluorescence quantum yield, and state population, respectively. R is a matrix element that is related to the rate matrix.\n\nThe rate constants determined from the 2D-FLC analysis were used to calculate the free energies for each protein state shown in Figure 2E\u2013F and H\u2013J. The rate constants for transitions between the quenched and unquenched states are related to the free energies associated with both states through the Arrhenius equation:\n\n$$\nk_{Q\u2192U}=Aexp-\\frac{E_{Q\u2192U}^{*}}{k_{B}T}\n$$\n\n\n\n$$\nk_{U\u2192Q}=Aexp-\\frac{E_{U\u2192Q}^{*}}{k_{B}T}\n$$\n\nHere, $k_{Q\u2192U}$ and $E_{Q\u2192U}^{*}$ ($k_{U\u2192Q}$ and $E_{U\u2192Q}^{*}$) are the rate constant and activation energy, respectively, for the transition from the quenched (Q) to the unquenched (U) state. A is a constant, $k_{B}$ is the Boltzmann constant, and T is the temperature. Upon equilibration of the Q and A states, the free-energy difference, $\\DeltaE^{*}$, is given by the following equation:\n\n$$\n\\frac{k_{Q\u2192U}}{k_{U\u2192Q}}=exp-\\frac{\\DeltaE^{*}}{k_{B}T}\n$$\n\nUsing the dynamic rates determined from the fits to the correlation function, we calculated $\\DeltaE^{*}$ at T = 300 K. The free-energy differences between the quenched and unquenched states are shown as the energetic differences between the minima in the energy landscapes shown in Figure 2. The potential barriers were scaled by assuming the constant A in Equations 1 and 2 to be 1000, which was shown previously to be a reasonable estimate for LHCSR1 (Kondo et al., 2019).\n\n### 77K fluorescence\n\nLow-temperature quenching measures were performed according to\u00a0Perozeni et al., 2019. Cells were frozen in liquid nitrogen after being dark adapted or after 60 min of illumination at 1500 \u00b5mol photons m\u22122 s\u22121 of red light. Fluorescence decay kinetics were then recorded by using Chronos BH ISS Photon Counting instrument with picosecond laser excitation at 447 nm operating at 50 MHz. Fluorescence emissions were recorded at 680 nm in with 4 nm bandwidth. Laser power was kept below 0.1\u03bcW.\n",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "4fdb83b5-3037-4bc0-ae30-7946056ba793",
+      "submission_id": "058956fd-8b47-475e-a4f6-9d7c1170e9f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David M Kramer, Michigan State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60383.sa1](https://doi.org/10.7554/eLife.60383.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Identification of parallel pH-and zeaxanthin-dependent quenching of excess energy in LHCSR3 in Chlamydomonas reinhardtii\" for consideration by eLife. Your article has been reviewed by Christian Hardtke as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nAll reviewers thought that the in vitro biophysical work was interesting and could have high impact in the field. Perhaps the most interesting conclusion is that the Zea and the LHSR3 mechanisms are distinct and may be present in the same system. It needs to be pointed out, though, that these mechanisms likely do not operate independently because they are almost certainly present in the same extended antenna system, i.e. a lake-like photosynthetic unit, so that the two processes are somewhat \"additive\". This is probably more an issue with presentation than basic understanding, but it is important to be clear. The in vivo work was seen as somewhat simplistic given the complexities of working on whole organisms. In particular, the conditions used to illuminate the samples for various experiments were not likely to be physiologically relevant, and could lead to two kinds of artifacts. The long-term exposure of samples to high light for \"generations\" is likely to result in \"selection\" for cells that are relatively insensitive to photodamage, and thus it is questionable if the samples generated in this way can be compared to those exposed to short-term high light treatments. Second, such high light typically leads to accumulation of photodamaged or photoinhibited photosystem II centers. Moreover, the extent of photoinhibition would almost certainly be larger in the mutants lacking one or the other quenching mechanisms, thus substantially complicating the interpretation of the in vivo results.\n\nThis phenomenon may not directly impact the in vitro results because it was performed on isolated PSII-free LHC particles. However, it does impact the arguments based on comparisons of in vivo and in vitro effects, and the fact that the paper attempts to draw conclusions from such comparisons was viewed by two of the reviewers as a major concern. In addition, unclear writing made it difficult to understanding the work, leading to lengthy discussions.\n\nEssential revisions:\n\nIdeally, the in vivo experiments would be repeated using more physiologically-relevant conditions, with addition controls and sets of mutants. In this regard, the authors may want to consult, or even mimic, methods explored in the rather large body of literature on these in vivo measurements. Given the current COVID19 situation, it was concluded that the work could be publishable with minimal additional experimental work if the text was thoroughly reworked. This would require reframing the text, including the title and abstract to clarify these issues and to deemphasize the in vivo components, focusing more attention on the implications of having two, distinct mechanisms that can interact at the level of their mutual effects on quenching. The authors are urged to keep in mind that their text should communicate with a broad audience with expertise ranging from biophysics to cell physiology to genetics.\n\nReviewer 1:\n\nThis is an interesting piece of work that aims to distinguish multiple nonphotochemical quenching (NPQ) processes at functional or mechanistic levels. The use of the cross-correlation approach is innovative, and seems to support the hypothesis that two of the best-known NPQ processes (qE (LHCSR3) and Zea) act \"in parallel\". Unfortunately, many of the points in the manuscript are lost in unclear writing. These are not issues of grammar but of clarity. Terms are not well defined, important basic concepts are not well introduced, nomenclature changes from paragraph to paragraph and important citations are missing. These issues may account for the apparent over-interpretation of the results. While there is good evidence from the fluorescence results that the processes are mechanistically distinct, because these data were obtained on isolated LHC complexes at low temperature, one cannot conclude that the processes are \"independent\".\n\nIntroduction: \"NPQ is triggered by a proton gradient across the thylakoid membrane that forms through a drop in luminal pH under excess light.\" First, why no citations? Second, \"excess light\" is misleading. NPQ is activated even when photosynthesis is light limited. This is obvious from plots of quantum efficiency and NPQ against light intensity.\n\nIntroduction. \"The pH-dependent quenching is controlled by protonable residues in the C-terminus of LHCSR3 as shown by mutagenesis to remove these residues. The Zea dependent quenching is constitutive both in vitro and in vivo, reconciling previous conflicting reports.\"\n\nWhat is \"protonable \"? The word constitutive is not appropriate because it the Zea-related NPQ still depends on the presence of Zea, which in turn is modulated by the cell. What conflicting reports?\n\n\"\u2026then exposed to strong light treatment (1500 \u03bcmol m-2s-1) for 60 minutes to induce maximum drop in luminal pH and Zea accumulation (WT, np1, zep, and npq4 lhcsr1 strains; data for xanthophyll cycle activation shown in Figure 1\u2014figure supplement 3).\n\nAfter exposure to 60 minutes high light there is likely to be large PSII photodamage (photoinhibition) leading to increased qI (photoinhibition-related NPQ), cofounding the interpretations in vivo. It is surprising that this is not mentioned. I would not expect qI to be evident in the isolated LHC particles, but it should be present in the cells. One way to test for this would be to repeat experiments in the presence of lincomycin, which should result in accumulation of unrepaired PSII centers, and thus increased qI.\u201d\n\nSubsection \u201cRoles of pH and Zea in fluorescence intensity in vivo and in vitro\u201d. \"In the npq4 lhcsr1 strain, which lacks LHCSR subunits, a null NPQ phenotype was observed (Figure 1A, purple). These results confirm that LHCSR subunits are responsible for NPQ in C. reinhardtii.\"\n\n-as well as-\n\n\"In the zep strain, which constitutively accumulates Zea, a strong reduction of the NPQ level was observed compared to both WT strains CC4349 and 4A+ (Figure 1A, red).\u201d\n\nWhat was Fv/FM in this mutant? Because NPQ is calculated by Fm-Fmp/Fmp, an existing quencher would decrees the apparent extent of NPQ. This argument was correctly used to support the use of fluorescence lifetimes instead of the \"traditional\" NPQ, but it was not discussed further.\n\nThe legend to Figure 1 does not help the reader understand what the figures mean (especially panels b on). Also, the text and legend need to make clear that Figure 1 is comparing two qualitatively different systems, a suspension (or an aggregate) of living cells and isolated particles.\n\n\"12 \u00b5M solutions of purified LHCSR3 531 complexes were stored at -80{degree sign}C. Immediately prior to experiments, LHCSR3 samples 532 were thawed over ice and diluted to 50 pM using buffer containing 0.05% n-dodecyl-\u03b1533 D-maltoside and either 20 mM HEPES-KOH (pH 7.5) or 40 mM MES-NaOH (pH 5.0).\"\n\nActivation of LHCSR3 as a quencher has been suggested previously to be related to protonation of putative pH-sensing residues present at the C-terminus (Figure 1\u2014figure supplement 7).\n\nStrange that no citation given for \"suggested previously\" but instead reference was given to a figure in the manuscript.\n\nThe pH-independence of these histograms is consistent with the NPQ measurements in the zep mutants where high light, and the associated pH drop in the lumen, does not change quenching levels.\n\nWhat NPQ measurements is the text referring to? No statistical basis was provided for stating that the histograms were not different, nor apparently were there statistical analyses of the reported differences in between the histograms in the other panels. By my naked eye, it could be that the pH = 5.0 distributions in panels C and D show broader distributions, and perhaps shifted somewhat to higher intensities.\n\n\"However, these measurements point to the existence of a constitutive quenching process 195 in the presence of Zea, consistent with in vivo fluorescence lifetime measurements discussed below\u2026\"\n\nThis sentence is confusing because \"these measurements\" could refer to the histograms of the elusive NPQ measurements mentioned in the previous sentence\u2026\n\n\"The number of lifetime states was determined through the lifetime distribution (Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2).\u201d\n\nFigure 2 does not show lifetime distributions. The way the supplementary information is presented is very difficult to read, and important statistical information is buried in a labyrinth of subfigures of subfigures. It's a bad idea to torture the reviewers.\n\nWhat are \"dynamical components\"?\n\nSubsection \u201cRoles of pH and Zea in fluorescence lifetime in vitro\u201d. \"The cross-correlation for every LHCSR3 225 sample begins above zero (Figure 2\u2014figure supplement 3), which appears when the dynamic components occur in parallel (Kondo et al., 2019).\"\n\nWhat does it mean that \"the dynamic components occur in parallel\"? You can't expect the reader to search out Kondo et al., 2019 for an answer. Previous and subsequent text refers to \"dynamic components\" and \"dynamical components\". Are these different? I think the paper does itself a disservice by not adequately defining what these mean because it represents the key innovation of the paper. The paper needs to clearly distinguish these from, for example, decay components.\n\n\"The Chl a have the lowest energy levels, which are the emissive states that give rise to each component.\"\n\nWhat's the evidence for this? Is there no emission from Chl b, especially at RT, even though its excited state has a higher energy. What I think is missing here is a clear statement that key measurements were made at 77K but are being compared to RT phenomena. At RT, the energy differences between states will not prevent excitons from visiting higher energy Chl b and being emitted as fluorescence. This needs to be made clear that extrapolating from 77K to RT.\n\n\"The two dynamic components arise from changes in the extent of quenching of the Chl emitters.\"\n\nCould the component also arise from quenching of the non-emitting Chls with which the excitation energy is shared? If not at 77K, how about at RT?\n\n\"The parameters extracted from the global fit include the intensity of and population in each lifetime state.\"\n\nThis is vague. What is mean by \"intensity of\" or \"population in\"? Is this not simply related to the number of LHCs in a particular state and the fluorescence lifetime of these states?\n\n\"The rate constants for the transitions between the states are also determined, primarily from the cross-correlation functions\u2026\"\n\nIt seems to me that all this requires a specific model, in contrast to what was claimed in earlier part of the text, \"Unlike traditional lifetime fitting, the distribution is a model-free analysis of the decay components\u2026\" What I am saying is that the interpretation of the kinetics as resulting from specific states that can interconvert, is in fact a model, and thus the analysis cannot be \"mode-free\". The reader needs to know that, in fact, there is an inherent model underlying the interpretation of the data. Reading between the lines, it appears that the model consists of a series of states that interconvert or relax based on a quasi-equilibrium model, so that the state with the lowest free energy tends to be accumulated. However, this is not made clear in the text. Explaining this carefully could also make the rest of the paper clearer, e.g. as discussed above regarding the definition of \"dynamic states\".\n\n\"We examine the dependence on molecular parameters of the two dynamical components.\"\n\nWhat is meant by \"molecular parameters\"? It seems to suggest that something specific to the molecules in the two dynamical components will be discussed, but it's not clear what these are, and in fact the components are actually states of the LHCs and as far as I can tell, not specific to any \"molecular\" features.\n\n\"The two dynamic components reveal two parallel yet independent photoprotective processes, one pH-dependent and one Zea-dependent, within LHCSR3, demonstrating multifunctionality of the protein structure.\"\n\nFirst, this is much overstated. It may suggest that there are two independent processes, but that is based on a model, so I would not recommend the word \"reveal\". Second, isn't saying \"parallel yet independent\" a tautology? In other words, parallel means independent, so its redundant to say they are both. What's puzzling me is the inclusion of \"yet\". It's like saying \"it's rugged yet not fragile\". This is not nit picking because I spent some time trying figure out how something could be parallel yet independent.\n\n\"\u2026demonstrating multifunctionality of the protein structure\u2026\" Again, this is overstated. It is an inference that the two states are, indeed, functional in the context of the living system, which has not been demonstrated. See below.\n\n\"The two components are both biased towards the quenched state in the LHCSR3 complexes\u2026\" What is meant by \"biased towards\"? The sentence does not refer to any specific data set or figure. I think this might refer to some histogram, but if so which one? And is there some statistical measure of this \"bias\"?\n\n\"With a decrease in pH from 7.5 to 5.0, the equilibrium free energy difference for the pH dependent component is shifted toward the quenched state by over 200 cm-1 in LHCSR3- Vio and over 500 cm-1 in LHCSR3-Zea\"\n\nI would suggest starting this sentence with something like \"Our data and model suggest that\u2026\" Again, the sentence does not refer to any specific data set, so it's not possible to tell what the text refers to.\n\n\"This result is consistent with a role of Zea in quenching of LHCSR3 that does not require a decrease in pH and therefore being unrelated to the light dependent NPQ observed in vivo in the WT that almost completely recovered in the dark (Figure 1A).\"\n\nIf I understand this correctly, one of NPQ processes proposed for the isolated LHCs is likely not related to the observed NPQ processes in vivo. This seems at odds with the previous statement that the conformation changes demonstrate \"multifunctionality\".\n\n\"Although qualitatively similar, there is a small decrease\u2026 This difference suggests that the C-terminal tail has an allosteric effect throughout the protein.\"\n\nThe logic for the suggestion is not clear. Another part of the text states that the Zea is \"directly involved\" in the quenching.\n\n\"The static component\u2026\" Text is unclear. Component of what? Is this the longest-lived excited state component? Earlier, the text states \"The third component is static\u2026which is attributed to unquenched emitters in the active state and partially photobleached complexes in the quenched state.\" Who has made this attribution and on what basis?\n\nBut the text states that \"The static component, which is assigned to unquenched emitters in the active state\u2026\" First, this seems to contradict the earlier statement that it is related to partially photobleached complexes. Second, what is meant by \"the active state\"? Active in what? If this is a static component, as stated, then its always in the active state. Or, is there some other meaning of \"active\"? One clue to the meaning of \"active\" appears in the paragraph, which states \"\u2026the transition rate from the quenched to active state\u2026\" Does this mean that \"active\" state means \"non-quenched\"? If so, why use the confusing term \"active\"? One could also think that quenching is an activity.\n\n\"The parameters extracted from the global fit include the intensity of and population in each lifetime state. The rate constants for the transitions between the states are also determined, primarily from the cross-correlation functions.\" It should be made clear that the rate constants can be estimated, but only in the context of the model.\n\nSubsection \u201cRoles of pH and Zea in fluorescence lifetime in vivo\u201d. The text reads \"quenching mechanisms were further investigated in vivo by measuring fluorescence emission lifetimes of whole cells acclimated to low or high light at 77K, as traditional NPQ measurements can be affected by artifacts (Tietz et al., 2017).\" Perhaps this is just a language problem, but as it is written, it would appear that the cells \"were acclimated to low or high light at 77K\". That cannot be right. Or is it? If so, we have bigger problems.\n\n\"With conversion from Vio to Zea, the free energy landscape changes significantly, and thus is likely to involve Vio/Zea itself.\" Does this mean that the Vio/Zea are directly involved in the photochemistry? Why couldn't Vio/Zea affect the photochemistry by allosteric effects? Such effects could also change the energy landscape \"significantly\", right? Wouldn't that be more consistent with the following sentence, which states \"In addition, MD simulations have shown this Car site to be highly flexible, sampling many configurations (Liguori et al., 2017), which is consistent with the faster dynamics observed here.\"\n\nSubsection \u201cRole of Zea and NPQ in photoprotection\u201d. It would be good to explain what is meant by \"excitation energy pressure\" or use a different term. A similar term is (inaccurately) used by plant physiologists to describe the difference in rates of charge separation and re-oxidation of QA-. Also, it seems appropriate to give citations to this concept.\n\nFigure 3. The statistics are buried in sub-figures. Why not present them in the real figure? The Y-axis of Panel A is truncated whereas that in Panel B is not.\n\nPanel B is described as \"(B) Singlet oxygen production rates for high light acclimated samples relative to WT (4A+ for npq1 and npq4 lhcsr1, CC4349 for zep).\" However, that is not accurate. Instead, it represents a fluorescence intensity in arbitrary units. The true rate of singlet O2 production cannot be obtained using SOSG. The texts related to this figure should point out the caveats of using dyes to estimate ROS.\n\nSome of the figure legends are incomprehensible, especially when those using the \"Figure X figure supplement Y figure\" organization. For example, in the following there are several undefined terms, e.g. \"stop mutants\" (not defined anywhere in the text); Correlation function (perhaps partially defined in subsection \u201c2D Fluorescence lifetime correlation analysis\u201d, but in a way that will not be clear to the average reader, but sometimes referred to as the \"cross-correlation function\").\n\nHere is an example figure legend: \"Figure 2\u2014figure supplement 3. Correlation analysis of LHCSR3 complexes. Correlation function estimated from the 2D-FLC analysis of single LHCSR3 complexes with Vio at pH 7.5 (A) and pH 5.0 (B), Zea at pH 7.5 (C) and 5.0 (D), stop mutants with Vio at pH 7.5 (E) and pH 5.0 (F) and stop mutants with Zea at pH 7.5 (G) and pH 5.0 (H). The correlation curves for auto (1-1 and 2-2) and cross correlations (1-2) are shown in blue, yellow and red, respectively. The black line shows the fitting curve calculated using the model function given by equation described in the Materials and methods.\" This is really asking a lot of the reader to parse out.\n\nSubsection \u201cRoles of pH and Zea in fluorescence lifetime in vivo\u201d: \"Whole cell fluorescence lifetime traces show that LHCSR is necessary for NPQ in C. reinhardtii.\" This is not true. The literature clearly shows that there are other NPQ processes that do not require LHCSR3.\n\nDiscussion. \"We further identify the likely the molecular mechanisms of both pH and Car composition.\" Grammar. Overstatement.\n\n\"Both our in vivo and in vitro results point to pH and Zea controlling separate quenching processes that independently provide photoprotection. Full light-induced quenching upon lumen acidification in the npq1 strain, which lacks Zea, and the full constitutive quenching in the zep strain, which is Zea-enriched, demonstrate two separate quenching and induction processes in vivo.\"\n\nWhy can't the Zea accentuate the lumen pH-dependent process? The fact that they see the same extents of NPQ in the mutants may reflect pleotropic effects and/or subsequent acclimation/compensation responses.\n\nAnother important consideration is that the fluorescence lifetime results are made on isolated LHC complexes at 77K. in vivo, the LHCs are organized in photosynthetic units containing many LHC complexes as well as reaction centers, so even if the mechanisms of the quenching processes are distinct, their effects on the NPQ will not be \"independent\". It is also possible that the organization of the complexes in the photosynthetic units is affected by, for example, binding of Zea, and thus leading to cooperative effects.\n\nWhat the paper actually seems to show is that the specifical physical mechanisms are distinct, and not that they are independent.\n\nIn my PDF copy, all the superscripted values (e.g. s-1) appear to be in subscripts.\n\nReviewer #2:\n\nIn their contribution entitled \u201cIdentification of parallel pH-and zeaxanthin-dependent quenching of excess energy in LHCSR3 in Chlamydomonas reinhardtii\" Troiano et al. present a quite comprehensive in vivo and in vitro study on LHCSR3, a regulating protein in green algae that works similar as PSbS in plants for the up- and down-regulation of light-harvesting as a response to excess light. Among other effects, this regulation works via sensing the transmembrane pH gradient, that increases under high-light conditions. In addition, it is observed that the carotenoid zeaxanthin is accumulated under high light conditions. As in the plants case, the mechanisms of this regulation are not fully understood. However, an understanding of these processes in green algae is of vital importance as they participate in a very large fraction of CO2 conversion on earth. Therefore, the topic of the paper is definitively suitable for a journal like eLife.\n\nTroiano et al. use a mutant of LHCSR3 that lacks the pH-sensing in which is extremely useful to sperate zeaxanthin- from pH-dependent parts in the regulation mechanism. The contribution of these two parts are still intensively debated in the field. Using in vitro single molecule experiments as well as in vivo fluorescence intensity measurements the authors observe that quenching (regulation) is also possible in the absence of pH sensing. In addition, mutants were used that were either accumulated in zeaxanthin or its corresponding low-light carotenoid violaxanthin and experiments were performed at different pH values. Combining the information of all experiments provides convincing evidence that both, pH as well as zeaxanthin, can independently quench and that actually both can regulate photosynthetic light-harvesting in green algae separately.\n\nThe manuscript is written in a quite comprehensive manner, the description of the experiments is convincing and the conclusions are justified.\n\nI recommend publish as is.\n\nReviewer #3:\n\nThe authors claim to have established LHCSR3 in C. reinhardtii has two parallel yet distinct quenching mechanisms based on the results of in vivo and in vitro experiments; One is pH-dependent sensed by the C-terminus of LHCSR3 and the other is dependent on Zea bound to the inside of LHCSR3. Identifying the molecular origin by which energy dissipation is activated/controlled in C. reinhardtii is a critical question in the field. Clarifying the role of Zea is especially important as it has been elusive in this model alga as opposed to the case of plants. Each of the experiments incorporating their unique techniques was carefully performed. However, unfortunately, the overall conclusion seems to be confusing. This paper is thus potentially publishable, but a few problems need to be fixed before further consideration.\n\nThe in vitro study, single-molecule fluorescence of the recombinant LHCSR3, is a complete study on its own to characterize the quenching states of LHCSR3 and could form a minimum publishable unit. However, the authors are trying to combine it with the in vivo mutants work to extend the conclusion so that the pH-dependent and the Zea-dependent quenching occurring in LHCSR3 explains the overall NPQ in Chlamydomonas cells. I am not convinced with this extended conclusion. The zep mutant had a full quenching capability (short fluorescence lifetime) when grown in LL, suggesting LHCSR3 is dispensable for the Zea-dependent quenching assuming that LHCSR3 was not expressed in LL (Figure 3). How can all these in vivo and in vitro results be rationalized? This is actually contradictory to the suggestion from the in vitro study. In this sense, the conclusion in the abstract, \"Constitutive quenching in zeaxanthin-enriched systems demonstrates zeaxanthin-controlled quenching, which may be shared with other light-harvesting complexes\", is not sufficient and misleading. If the authors like to draw a general conclusion like this, an LHCSR3 immunoblot as well as Zea content in each LHC subunit in the zep mutant need to be shown.\n",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "97a8353b-db8b-46ce-8043-2176ba98b3e2",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C1",
+      "claim": "In green algae, a chlorophyll and carotenoid-binding protein, light-harvesting complex stress-related (LHCSR3), detects excess energy via a pH drop and serves as a quenching site.",
+      "claim_type": "EXPLICIT",
+      "source": "In green algae, a chlorophyll and carotenoid-binding protein, light-harvesting complex stress-related (LHCSR3), detects excess energy via a pH drop and serves as a quenching site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract summarizing established understanding about LHCSR3 function, supported by the experimental work in the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "0e370d3f-0dc4-4419-8f87-a3e76698df3e",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C2",
+      "claim": "Two distinct quenching processes, individually controlled by pH and zeaxanthin, were identified within LHCSR3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro two distinct quenching processes, individually controlled by pH and zeaxanthin, were identified within LHCSR3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by single-molecule fluorescence spectroscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "9411ddbf-30cd-49cc-8cbf-70c2683319ad",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C3",
+      "claim": "The pH-dependent quenching was removed within a mutant LHCSR3 that lacks the residues that are protonated to sense the pH drop.",
+      "claim_type": "EXPLICIT",
+      "source": "The pH-dependent quenching was removed within a mutant LHCSR3 that lacks the residues that are protonated to sense the pH drop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by experimental data on stop-LHCSR3 mutant shown in Figure 1C and Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "858e1c68-481d-4164-a62a-b558ed398dd8",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C4",
+      "claim": "Observation of quenching in zeaxanthin-enriched LHCSR3 even at neutral pH demonstrated zeaxanthin-dependent quenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Observation of quenching in zeaxanthin-enriched LHCSR3 even at neutral pH demonstrated zeaxanthin-dependent quenching, which also occurs in other light-harvesting complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by single-molecule data in Figure 1D and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "5387b43c-e294-40d1-a496-ab852c58e109",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C5",
+      "claim": "Either pH- or zeaxanthin-dependent quenching prevented the formation of damaging reactive oxygen species.",
+      "claim_type": "EXPLICIT",
+      "source": "Either pH- or zeaxanthin-dependent quenching prevented the formation of damaging reactive oxygen species, and thus the two quenching processes may together provide different induction and recovery kinetics for photoprotection in a changing environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by SOSG measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "03e91312-bbce-4da6-a427-b53c18171b06",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C6",
+      "claim": "If NPQ were optimized for biomass, yields would improve dramatically, potentially by up to 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "If NPQ were optimized for biomass, yields would improve dramatically, potentially by up to 30% (Kromdijk et al., 2016; Zhu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by Kromdijk et al., 2016 and Zhu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8d07ad1a-cd5d-48fd-8cdc-d25bd463c4f7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C7",
+      "claim": "In Chlamydomonas reinhardtii, LHCSR is the key gene product for NPQ.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas (C.) reinhardtii, the model organism for green algae, light-harvesting complex stress-related (LHCSR) is the key gene product for NPQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established fact about C. reinhardtii supported by scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "3d4e77d3-b97d-489a-860e-e687dbd91c96",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C8",
+      "claim": "Two isoforms of LHCSR, LHCSR1 and LHCSR3, are active in NPQ, although LHCSR3 is accumulated at higher levels and so has the major role.",
+      "claim_type": "EXPLICIT",
+      "source": "Two isoforms of LHCSR, LHCSR1 and LHCSR3, are active in NPQ, although LHCSR3 is accumulated at higher levels and so has the major role (Dinc et al., 2016; Maruyama et al., 2014; Peers et al., 2009; Tokutsu and Minagawa, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "23b6ee84-4626-4bc3-8f4d-63a6d744c748",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C9",
+      "claim": "The primary proposals for the photophysical mechanism of quenching in light-harvesting complexes involve Chl-Car interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the photophysical mechanism of quenching in light-harvesting complexes has not been determined, the primary proposals involve Chl-Car interactions (Liao et al., 2010; Ma et al., 2003; Ruban et al., 2007; Son et al., 2020a; Son et al., 2020b; de la Cruz Valbuena et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b309829a-0c81-4961-a89e-912d3d22c8e7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C10",
+      "claim": "NPQ is triggered by a proton gradient across the thylakoid membrane that forms through a drop in luminal pH.",
+      "claim_type": "EXPLICIT",
+      "source": "NPQ is triggered by a proton gradient across the thylakoid membrane that forms through a drop in luminal pH (Horton et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established mechanism supported by citation to Horton et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "02f6c711-f341-43ec-825d-4a98969231d7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C11",
+      "claim": "Lumen acidification generally occurs when the light available causes an imbalance between the proton generation and the capacity of the photosynthetic apparatus to use protons for ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "Lumen acidification generally occurs when the light available causes an imbalance between the proton generation and the capacity of the photosynthetic apparatus to use protons for ATP production (Joliot and Finazzi, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Joliot and Finazzi, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "1106d7bd-f570-471d-8950-39ac014879b3",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C12",
+      "claim": "The C-terminus of LHCSR3 contains a number of luminal residues that are protonated upon the pH drop to trigger quenching.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus of LHCSR3 contains a number of luminal residues that are protonated upon the pH drop to trigger quenching (Ballottari et al., 2016; Liguori et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work by Ballottari et al., 2016 and Liguori et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "828db371-b81c-4927-8429-1cf0f67768a1",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C13",
+      "claim": "The pH drop activates the enzymatic conversion of the carotenoid violaxanthin to zeaxanthin.",
+      "claim_type": "EXPLICIT",
+      "source": "The pH drop also activates the enzymatic conversion of the Car violaxanthin (Vio) to zeaxanthin (Zea) (Eskling et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Eskling et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "f769b095-7d93-4470-8160-5f9fae80c6e7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C14",
+      "claim": "In C. reinhardtii, the CP26 and CP29 subunits have been implicated in NPQ.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. reinhardtii, the CP26 and CP29 subunits, which are minor antenna complexes of Photosystem II (PSII), have been implicated in NPQ (Cazzaniga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cazzaniga et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "d1f9461e-db33-46b8-acfa-d4fac7859ce2",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C15",
+      "claim": "In higher plants, Zea has been reported to be involved in NPQ induction by driving light-harvesting complexes into a quenched state and/or by mediating interaction between light-harvesting complexes and PsbS.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher plants, Zea has been reported to be involved in NPQ induction by driving light-harvesting complexes into a quenched state and/or by mediating interaction between light-harvesting complexes and PsbS, nonpigment binding subunits essential for NPQ induction in vascular plants (Sacharz et al., 2017; Ahn et al., 2008; Jahns and Holzwarth, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sacharz et al., 2017; Ahn et al., 2008; and Jahns and Holzwarth, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8517ecf9-4f07-4022-9d12-9f05e206f5e2",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C16",
+      "claim": "Zea binding to LHCSR1 in the moss Physcomitrella patens and LHCX1 in the microalga Nannochloropsis oceanica has been shown to be essential for NPQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Zea binding to LHCSR1 in the moss Physcomitrella patens and LHCX1 (a LHCSR homolog) in the microalga Nannochloropsis oceanica has been shown to be essential for NPQ (Pinnola et al., 2013; Park et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pinnola et al., 2013 and Park et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "4159ec5e-8fc0-4de3-971e-dcccdbc08870",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C17",
+      "claim": "In C. reinhardtii, a reduction of NPQ in the absence of Zea has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in C. reinhardtii, a reduction of NPQ in the absence of Zea has been reported (Niyogi et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Niyogi et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "047ae139-25a7-4823-b85d-687a98baba59",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C18",
+      "claim": "Recent work has shown Zea to be unnecessary for NPQ induction or related to highly specific growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, recent work has shown Zea to be unnecessary for NPQ induction or related to highly specific growth conditions (Bonente et al., 2011; Tian et al., 2019; Vidal-Meireles et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bonente et al., 2011; Tian et al., 2019; and Vidal-Meireles et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "d59522a2-dc22-47a0-bcae-eefdc0910fa9",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C19",
+      "claim": "The contribution of Zea to quenching in green algae remains under debate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the contribution of Zea to quenching in green algae remains under debate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the conflicting findings cited in the previous sentences.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b281e9e1-0a49-4367-9f0c-d83b3004bbce",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C20",
+      "claim": "In the WT strains, the maximum NPQ level was reached after 10 min of illumination and fully recovered in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "In the WT strains, the maximum NPQ level was reached after 10 min of illumination and fully recovered in the dark (Figure 1A, black), despite a strong accumulation of Zea (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "295def1f-417d-4c09-9136-2db277a91875",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C21",
+      "claim": "The recovery of the NPQ traces to similar levels for all mutants acclimated to HL demonstrated that the photodamage was limited, if any, for these cells during the 60 min of illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "The recovery of the NPQ traces to similar levels for all mutants acclimated to HL demonstrated that the photodamage, known as photoinhibition, was limited, if any, for these cells during the 60 min of illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NPQ recovery data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "5fc9ac3b-f0e3-4981-845a-afb4ea8cb00f",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C22",
+      "claim": "The major component of NPQ in C. reinhardtii is Zea-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The low level of these two processes observed in our NPQ measurements also suggests that the major component of NPQ in C.reinhardtii is Zea-independent, in agreement with previous results (Bonente et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the NPQ data and citation to Bonente et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "cf749a18-363a-48be-899e-1754939b52f0",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C23",
+      "claim": "In the npq4 lhcsr1 strain, which lacks LHCSR subunits, a null NPQ phenotype was observed in both HL and LL acclimated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the npq4 lhcsr1 strain, which lacks LHCSR subunits, a null NPQ phenotype was observed in both HL and LL acclimated cells (Figure 1A, purple).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b3117813-1356-43b5-8d16-c9a50553cc90",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C24",
+      "claim": "LHCSR subunits are responsible for light-dependent NPQ in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that LHCSR subunits are responsible for light-dependent NPQ in C. reinhardtii as previously reported (Peers et al., 2009; Ballottari et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the NPQ data from the npq4 lhcsr1 mutant and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "a133530d-5436-4823-a4bf-6b3b1f12d91f",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C25",
+      "claim": "Upon a decrease in pH from 7.5 to 5.0, the median fluorescence intensity of LHCSR3-Vio decreased by ~5 counts/10 ms due to an increase in the quenched population.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1B, upon a decrease in pH from 7.5 to 5.0, the median fluorescence intensity of LHCSR3-Vio decreased by ~5 counts/10 ms due to an increase in the quenched population, reflecting additional quenching of the excitation energy absorbed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule fluorescence data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "e3dcf1b8-f464-404f-8a6e-3fc74ed6c5a5",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C26",
+      "claim": "Stop-LHCSR3 with Vio exhibited similar fluorescence intensity at pH 7.5 and pH 5.0, where the median intensity even increases at low pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the same pH decrease that induced quenching in LHCSR3-Vio, stop-LHCSR3 with Vio (stop-LHCSR3-Vio) exhibited similar fluorescence intensity where the median intensity even increases, primarily due to increased heterogeneity in the fluorescence emission at low pH as seen through the standard deviation of the two distributions (Figure 1C, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule fluorescence data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "7e5b5e23-c4b9-4ad7-bdbc-2cc4153cf921",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C27",
+      "claim": "The stop-LHCSR3 mutants have lost the ability to activate quenching channels upon a pH drop.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that the mutants have lost the ability to activate quenching channels upon a pH drop, highlighting the sensing role of the residues of the C-terminus of LHCSR3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the single-molecule data on stop-LHCSR3 shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "d732a433-d594-4320-b64a-deb38ec33b39",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C28",
+      "claim": "LHCSR3-Zea in vitro showed a decrease in median fluorescence intensity by ~10\u201312 counts/10 ms compared to LHCSR3-Vio under both pH 7.5 and pH 5.0 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under both conditions, as shown in Figure 1D, LHCSR3-Zea in vitro showed a decrease in median fluorescence intensity by ~10\u201312 counts/10 ms compared to LHCSR3-Vio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule fluorescence data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "a6c399f8-2175-4a9c-8146-c188f5de1245",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C29",
+      "claim": "The pH-independence of LHCSR3-Zea fluorescence histograms is consistent with the in vivo NPQ measurements in the zep mutants where HL does not change quenching levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The pH-independence of these histograms is consistent with the in vivo NPQ measurements in the zep mutants where HL, and the associated pH drop in the lumen, does not change quenching levels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation connecting in vitro single-molecule data with in vivo NPQ measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "29afed5a-031b-4f95-8019-64b1611955d7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C30",
+      "claim": "Two lifetime states were observed in the distributions for each of the LHCSR3 samples: an unquenched state (~2.5 ns) and a quenched state (~0.5 ns).",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the LHCSR3 samples, two lifetime states were observed in the distributions, an unquenched state (~2.5 ns) and a quenched state (~0.5 ns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis shown in Figure 2A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "c5134244-679f-4fda-88d0-a5b149c6a464",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C31",
+      "claim": "Three dynamic components were identified within single LHCSR3, indicating multiple Chl a emissive sites within each LHCSR3.",
+      "claim_type": "EXPLICIT",
+      "source": "Because three components were observed within single LHCSR3, they indicate multiple Chl a emissive sites within each LHCSR3, consistent with previous models of LHCs (Mascoli et al., 2019; Mascoli et al., 2020; Kr\u00fcger et al., 2010; Kr\u00fcger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis and citations to previous work on LHCs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "6e0b387e-3a94-47ef-ac7b-81f6636f64f4",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C32",
+      "claim": "In LHCSR3-Vio, a decrease in pH from 7.5 to 5.0 stabilizes the quenched state by decreasing the transition rate from the quenched to the unquenched state.",
+      "claim_type": "EXPLICIT",
+      "source": "In LHCSR3-Vio, the quenched state is stabilized by a decrease in the transition rate from the quenched to the unquenched state, corresponding to a higher barrier in the free-energy landscape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2cd572b2-a202-41ef-9a9c-77ffdcf9824b",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C33",
+      "claim": "In stop-LHCSR3-Vio, no change in the population of the quenched state is observed upon a decrease in pH.",
+      "claim_type": "EXPLICIT",
+      "source": "In stop-LHCSR3-Vio, however, no change in the population of the quenched state is observed upon a decrease in pH (Figure 2G), reflecting the expected pH-independence of the sample.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "801086e5-3804-4ed9-ba64-9a145eaec2a1",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C34",
+      "claim": "At both pH 7.5 and pH 5.0, conversion from Vio to Zea stabilizes the quenched state via a decrease in the transition rate from the quenched to unquenched state.",
+      "claim_type": "EXPLICIT",
+      "source": "At both pH levels, conversion from Vio to Zea stabilizes the quenched state via a decrease in the transition rate from the quenched to unquenched state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis shown in Figure 2I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "7f049274-dc1b-41d1-878e-5841ec232817",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C35",
+      "claim": "The Zea-dependent behavior is maintained for stop-LHCSR3, where the quenched state is still stabilized in the presence of Zea.",
+      "claim_type": "EXPLICIT",
+      "source": "The Zea-dependent behavior is maintained for stop-LHCSR3 (Figure 2K), where the quenched state is still stabilized in the presence of Zea.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "45c7113b-9dbe-4c89-906c-0bd16d95708c",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C36",
+      "claim": "WT cells and npq1 cells acclimated to HL show a faster fluorescence decay after exposure to 60 min of HL.",
+      "claim_type": "EXPLICIT",
+      "source": "WT cells and npq1 cells, which lack Zea, acclimated to HL show a faster fluorescence decay, or an increase in quenching, after exposure to 60 min of HL (Figure 3A, gray bars, fluorescence decays and fits to data shown in SI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 77K fluorescence lifetime measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "ea02bea2-71cb-48f4-b620-4546d36baa77",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C37",
+      "claim": "For npq4 lhcsr1 cells, which lack LHCSR, similar fluorescence decay kinetics were measured regardless of light treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "For npq4 lhcsr1 cells, which lack LHCSR, similar fluorescence decay kinetics were measured regardless of light treatment (Figure 3A, purple), which is comparable to the unquenched kinetics of WT cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 77K fluorescence lifetime measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "9fbdddb9-9e33-4889-b610-5574f6b5d47c",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C38",
+      "claim": "The npq1 strain shows that quenching can occur without Zea, that is, induced by the pH drop alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While the results from WT show a role for pH and/or Zea in light-induced quenching in LHCSR3, the results from the npq1 strain show that quenching can occur without Zea, that is, induced by the pH drop alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the 77K fluorescence lifetime data from the npq1 strain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2729030e-034c-4d48-bd8e-9af4efcfb81e",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C39",
+      "claim": "The zep mutant presented a faster fluorescence decay among all samples, regardless of HL or LL acclimation or light treatment, compared to the decay of dark-adapted WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The zep mutant, which constitutively accumulates Zea, presented a similar decay among all samples, regardless of HL or LL acclimation or light treatment, that was much faster, or more quenched, compared to the decay of dark-adapted WT (Figure 3A, red, Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 77K fluorescence lifetime measurements shown in Figure 3A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2ea9d124-82e0-4da4-b3e6-558cf662787b",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C40",
+      "claim": "The quenching observed in the zep mutant is consistent with the pH-independent quenching observed through the single-molecule fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate quenching upon Zea accumulation alone, consistent with the reduced Fv/Fm observed in this mutant (Figure 1\u2014figure supplement 7). This result is also consistent with the pH-independent quenching observed through the single-molecule fluorescence shown in Figure 1D and Figure 2E and F.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation connecting in vivo fluorescence lifetime data with single-molecule data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "40152cc4-7c2c-4f34-b026-769a56efb7de",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C41",
+      "claim": "Light-harvesting complexes isolated from the zep mutant had a twofold higher content of Zea compared to the same fraction isolated from WT under the same conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These complexes had a twofold higher content of Zea compared to the same fraction isolated from WT (CC4349) under the same conditions (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pigment analysis data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "96344f51-a294-4f9b-abb4-ac371f5b56dd",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C42",
+      "claim": "The light-harvesting complexes isolated from the zep mutant showed a 10% decrease in the fluorescence lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "The light-harvesting complexes isolated from the zep mutant also showed a 10% decrease in the fluorescence lifetime, suggesting that Zea-dependent quenching is at least somewhat shared with other light-harvesting complexes (Figure 3\u2014figure supplement 6, Figure 3\u2014figure supplement 5\u2014source data 1, and Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence lifetime measurements on isolated complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "6f09674d-4382-479c-8329-88f03e7cad5a",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C43",
+      "claim": "No major differences in quenching properties were found in monomeric and trimeric LHC complexes isolated from WT cells before or after exposure to 60 min of HL.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no major differences in quenching properties were found in monomeric and trimeric LHC complexes isolated from WT cells before or after exposure to 60 min of HL, consistent with previous findings from higher plants and other green algae (Xu et al., 2015; Girolomoni et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fluorescence lifetime measurements and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "ccc27a23-e55a-4509-96a9-7b244a9da742",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C44",
+      "claim": "The npq4 lhcsr1 strain demonstrated the highest level of singlet oxygen production, regardless of light treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the low level of NPQ induction, npq4 lhcsr1, which lacks LHCSR, demonstrated the highest level of singlet oxygen production, regardless of light treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SOSG measurements shown in Figure 3B and Figure 3\u2014figure supplements 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "1f5597f5-82c5-4de9-8d0a-ef2af792db53",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C45",
+      "claim": "The effect of Zea on singlet oxygen production was almost negligible in HL acclimated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the effect of Zea was almost negligible in HL acclimated samples (with a very high NPQ induction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SOSG measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "e4581de1-51eb-4421-b0d5-f558faf5f011",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C46",
+      "claim": "The amount of singlet oxygen production was correlated with average lifetime, that is, inversely correlated with quenching.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the amount of singlet oxygen production was correlated with average lifetime (Figure 3A), that is, inversely correlated with quenching, confirming that the quenching of Chl singlet excited states investigated here plays a role in photoprotection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the correlation between SOSG and fluorescence lifetime data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "ef7411f1-c2c9-4f9d-8e48-86de08d7c676",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C47",
+      "claim": "Two dynamic components were identified through the 2D-FLC analysis that suggest two distinct photoprotective processes, one pH-dependent and one Zea-dependent, operating simultaneously within LHCSR3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two dynamic components were identified through the 2D-FLC analysis that suggest two distinct photoprotective processes, one pH-dependent and one Zea-dependent, operating simultaneously within LHCSR3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the 2D-FLC analysis results presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "7a0b3f56-443c-480a-b007-a2b948ed67f9",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C48",
+      "claim": "Each dynamic component likely arises from a Chl-Car pair, where the Car can quench the emissive Chl.",
+      "claim_type": "EXPLICIT",
+      "source": "Each component likely arises from a Chl-Car pair, where the Car can quench the emissive Chl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the 2D-FLC analysis results based on structural considerations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "db2d0deb-cbbc-473a-bdeb-cd8f6c1584d2",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C49",
+      "claim": "The pH-dependent component likely involves Lut and the neighboring Chl a 613.",
+      "claim_type": "EXPLICIT",
+      "source": "The pH-dependent component (Figure 2E\u2013H) likely involves Lut and the neighboring Chl a 613.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural assignment based on the 2D-FLC analysis and previous spectroscopic work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "5f11c43e-6ff9-4c3c-b7ec-2b1bcc748fb9",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C50",
+      "claim": "The Zea-dependent component likely involves Vio/Zea and the neighboring Chl as 602\u2013603.",
+      "claim_type": "EXPLICIT",
+      "source": "The Zea-dependent component (Figure 2J\u2013K) likely involves Vio/Zea and the neighboring Chl as 602\u2013603 (Bonente et al., 2011; Di Valentin et al., 2009; Lampoura et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural assignment based on the 2D-FLC analysis and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "26b570d4-9250-4c1f-8c31-338b42e7d2a4",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C51",
+      "claim": "With a decrease in pH from 7.5 to 5.0, the equilibrium free-energy differences for the pH-dependent component were shifted toward the quenched state by over 200 cm\u22121 in LHCSR3-Vio and over 500 cm\u22121 in LHCSR3-Zea.",
+      "claim_type": "EXPLICIT",
+      "source": "With a decrease in pH from 7.5 to 5.0, the equilibrium free-energy differences for the pH-dependent component, which were calculated using the relative rate constants from the global fit, were shifted toward the quenched state by over 200 cm\u22121 in LHCSR3-Vio and over 500 cm\u22121 in LHCSR3-Zea (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis and free-energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "964359f3-6c7c-4df1-aa7f-e8f627bf84d7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C52",
+      "claim": "The negligible change in the equilibrium free-energy difference for stop-LHCSR3 upon a pH drop demonstrates the functional role of the C-terminal tail in the conformational change into the quenched state.",
+      "claim_type": "EXPLICIT",
+      "source": "The negligible (<30 cm\u22121) change in the equilibrium free-energy difference for this mutant (Figure 2G, Figure 2\u2014source data 1) upon a pH drop demonstrates the functional role of the C-terminal tail in the conformational change into the quenched state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the 2D-FLC analysis on stop-LHCSR3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "6a0a2543-485d-42a6-a7b1-23ec14a701ac",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C53",
+      "claim": "Upon substitution of Zea for Vio, the equilibrium free-energy difference becomes further biased toward the quenched state by over 550 cm\u22121 at pH 7.5 and over 300 cm\u22121 at pH 5.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon substitution of Zea for Vio, the equilibrium free-energy difference becomes further biased toward the quenched state by over 550 cm\u22121 at pH 7.5 and over 300 cm\u22121 at pH 5.0, where the difference was calculated from the populations of the lifetime states determined within the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis and free-energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b190958f-6653-4a61-b61f-e05f4088b617",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C54",
+      "claim": "In vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea, and full quenching even at neutral pH was observed in the zep strain, which is Zea-enriched, suggesting two quenching and induction processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo NPQ and fluorescence lifetime measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "3bb0f518-c519-45b2-89fd-a3535176bb2e",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C55",
+      "claim": "Full quenching even at neutral pH was observed in the zep strain, which is Zea-enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea, and full quenching even at neutral pH was observed in the zep strain, which is Zea-enriched, suggesting two quenching and induction processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo NPQ and fluorescence lifetime measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "a34b7f87-c658-4cea-af2d-26ba88b96856",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C56",
+      "claim": "The 2D-FLC analysis of the stop-LHCSR3 mutant shows that removal of the C-terminal tail removes pH-dependent quenching, while leaving Zea-dependent quenching nearly unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2D-FLC analysis of the stop-LHCSR3 mutant shows that removal of the C-terminal tail removes pH-dependent quenching, while leaving Zea-dependent quenching nearly unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the 2D-FLC analysis on stop-LHCSR3 shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "3452a723-9130-430b-8ac9-34f3bec94caf",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C57",
+      "claim": "The in vivo and in vitro results indicated that either pH- or Zea-dependent quenching provides efficient photoprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the in vivo and in vitro results indicated that either pH- or Zea-dependent quenching provides efficient photoprotection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the combined in vivo and in vitro results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b93025c0-e0f9-411d-bde3-d37695a06c5f",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C58",
+      "claim": "pH- and Zea-dependent quenching may both contribute to all quenching in the WT, while being alternatively triggered in the mutants through a compensatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pH- and Zea-dependent quenching may both contribute to all quenching in the WT, while being alternatively triggered in the mutants through a compensatory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results considering potential compensatory mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "727f724a-54fd-4d52-bca2-dc7ddcc3938c",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C59",
+      "claim": "The two quenching processes act in combination to provide different time scales of activation and deactivation of photoprotection, allowing survival under variable light conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The two quenching processes act in combination to provide different time scales of activation and deactivation of photoprotection, allowing survival under variable light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the two distinct quenching processes identified.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2ccfe4c0-a14d-4b93-9aee-4b41de77c12e",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C60",
+      "claim": "LHCSR3 contains eight Chl molecules (7\u20138 Chl a and 0\u20131 Chl b molecules) and two Cars (one lutein and one Vio or Zea).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014source data 2, LHCSR3 purified from C. reinhardtii contains eight Chl molecules (7\u20138 Chl a and 0\u20131 Chl b molecules) and two Cars (one lutein [Lut] and one Vio or Zea).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pigment composition data shown in Figure 2\u2014source data 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "a36650f3-28c2-4855-836e-50cab06e410c",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C61",
+      "claim": "Zea-dependent quenching is observed both in vivo and in vitro even at neutral pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Zea-dependent quenching is observed both in vivo and in vitro even at neutral pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from both in vivo and in vitro experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "5d18782c-ac20-4453-80c9-ccb72d5eb3dd",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C62",
+      "claim": "A strong reduction of fluorescence lifetime was observed in whole cells in the case of zep mutant, even in LL acclimated cells where the amount of LHCSR3 is minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong reduction of fluorescence lifetime was observed in whole cells in the case of zep mutant, even in LL acclimated cells where the amount of LHCSR3 is minimal (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence lifetime measurements shown in Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "28a51041-de8d-447a-af0b-b6cad8631501",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C63",
+      "claim": "LHCSR subunits are not the sole quenching site where Zea-dependent quenching occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that LHCSR subunits are not the sole quenching site where Zea-dependent quenching occurs, as seen in previous work implicating the minor antenna complexes (Cazzaniga et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the zep mutant data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8815556e-a2fe-4308-a8f8-35e20de07698",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C64",
+      "claim": "Zea-dependent quenching was measured in other light-harvesting complexes isolated from the zep mutant, but it was not sufficient to fully explain the strong quenching observed in whole cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Zea-dependent quenching was measured in other light-harvesting complexes isolated from the zep mutant, but it was not sufficient to fully explain the strong quenching observed in whole cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the isolated complex data compared to whole cell measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "bcfe95f6-de68-4edc-8965-aef87cf77fec",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C65",
+      "claim": "In the case of the zep mutant, not only does Zea completely substitute Vio, but also the Zea/Chl ratio is much higher (~10 fold) compared to the ratio observed in WT or npq4 lhcsr1.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the zep mutant, not only does Zea completely substitute Vio (de-epoxidation index is 1, Figure 1\u2014figure supplement 3), but also the Zea/Chl ratio is much higher (~10 fold) compared to the ratio observed in WT or npq4 lhcsr1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pigment analysis data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2aeaf6cf-ccd1-4c7f-b8ab-5a9dd0a6d3bf",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C66",
+      "claim": "The strong quenching observed in the zep mutant could be related to accumulation of Zea in the thylakoid membrane changing the environment where the photosystems and light-harvesting complexes are embedded.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an alternative possibility where the strong quenching observed in the zep mutant could be related to accumulation of Zea in the thylakoid membrane changing the environment where the photosystems and light-harvesting complexes are embedded, inducing the latter to a strong quenched state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the zep mutant phenotype.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "fe03982f-4ec3-4ce8-8f0d-9d8bf4328907",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C67",
+      "claim": "Zea has been previously reported to influence the assembly and organization of light-harvesting complexes in the thylakoid membranes of higher plants, affecting their quenching properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Zea has been previously reported to influence the assembly and organization of light-harvesting complexes in the thylakoid membranes of higher plants, affecting their quenching properties (Sacharz et al., 2017, Shukla et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Sacharz et al., 2017 and Shukla et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "312ca423-8757-4011-bf05-7546be7015d7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C68",
+      "claim": "The pH-independent quenching in the presence of Zea is potentially the origin of the seemingly conflicting results in the literature regarding Zea's role in NPQ.",
+      "claim_type": "EXPLICIT",
+      "source": "While both possibilities allow for quenching in the presence of Zea even at neutral pH, it is the pH-independent quenching itself that is potentially the origin of the seemingly conflicting results in the literature, where Zea has been found to both reduce NPQ (Niyogi et al., 1997) and be unnecessary for its induction (Bonente et al., 2011; Baek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current findings to previous conflicting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "3ae64151-6790-43a8-b3ab-964dfe7385f1",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C69",
+      "claim": "In vivo results point to pH and Zea controlling separate quenching processes within LHCSR3 and that either parameter can provide efficient induction of LHCSR3 to a quenched state for photoprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro results point to pH and Zea controlling separate quenching processes within LHCSR3 and that either parameter can provide efficient induction of LHCSR3 to a quenched state for photoprotection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the in vitro findings from the 2D-FLC analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "f94d9be9-3afa-464e-91c1-422a42bbb78c",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C70",
+      "claim": "The 2D-FLC analysis on single LHCSR3 quantified two parallel dynamic components, or distinct quenching processes, one of which is pH-dependent and the other Zea-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2D-FLC analysis on single LHCSR3 quantified two parallel dynamic components, or distinct quenching processes, one of which is pH-dependent and the other Zea-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the 2D-FLC analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "1b30c6e6-42f9-42c5-bef0-691e1db92950",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C71",
+      "claim": "In vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea, suggesting two quenching and induction processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in vivo full light-induced quenching upon lumen acidification was observed in the npq1 strain, which lacks Zea, and full quenching even at neutral pH was observed in the zep strain, which is Zea-enriched, suggesting two quenching and induction processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the in vivo NPQ and fluorescence lifetime data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "252d85a7-a6f3-4b91-a47c-84fa797e6649",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C72",
+      "claim": "The WT LL grown strains, with reduced LHCSR accumulation, present a significantly lower NPQ induction, supporting the critical role of the protonation of the C terminus residues unique to LHCSR in activating quenching in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, the WT LL grown strains, with reduced LHCSR accumulation, also present a significantly lower NPQ induction, supporting the critical role of the protonation of the C terminus residues unique to LHCSR in activating quenching in C. reinhardtii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NPQ data from LL-grown strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "e4fdb3c1-95da-4c6f-a3a1-5482fd35cb66",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C73",
+      "claim": "While in vivo measurements suggest that pH-dependent quenching is often dominant over Zea-dependent quenching, the conformational states and pigment pairs likely responsible exhibit spectroscopic signatures that suggest both quenching processes have similar conformational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "While in vivo measurements suggest that pH-dependent quenching is often dominant over Zea-dependent quenching, and correspondingly more efficient in photoprotection, the conformational states and pigment pairs likely responsible exhibit spectroscopic signatures that suggest both quenching processes have similar conformational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation comparing in vivo and in vitro results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2ba1a158-69eb-4cf7-a82c-fec3c25a3a04",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C74",
+      "claim": "pH- and Zea-dependent quenching may both contribute to all quenching in the WT, while being alternatively triggered in the mutants through a compensatory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pH- and Zea-dependent quenching may both contribute to all quenching in the WT, while being alternatively triggered in the mutants through a compensatory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation considering potential compensatory mechanisms in mutants.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "0db5bd3c-91c9-42ac-86a2-c7e3da6daa68",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C75",
+      "claim": "Under natural conditions, pH- and Zea-dependent quenching processes combine to protect the system and there is likely interplay between them through compensatory acclimation or changes to the protein organization within the thylakoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Under natural conditions, these processes combine to protect the system and there is likely interplay between them through compensatory acclimation or changes to the protein organization within the thylakoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation about how the two processes work together in nature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "af345de9-9e5b-4e71-81e5-f2ffc7320190",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "claim_id": "C76",
+      "claim": "The timescales and induction associated with each quenching process are distinct; responsive pH-dependent quenching works in combination with the guaranteed safety valve of Zea-dependent quenching, potentially to protect against a rapid return to HL conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the timescales and induction associated with each quenching process are distinct; responsive pH-dependent quenching works in combination with the guaranteed safety valve of Zea-dependent quenching, potentially to protect against a rapid return to HL conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of having two distinct quenching processes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a6c29f98-272f-4902-b648-6f763a17219d",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LHCSR3 is the key protein responsible for NPQ in C. reinhardtii. The npq4 lhcsr1 mutant lacking LHCSR subunits shows null NPQ phenotype, confirming LHCSR's essential role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 provide direct experimental evidence showing null NPQ in the npq4 lhcsr1 mutant (Figure 1A), strongly supporting the essential role of LHCSR. This is consistent with established knowledge (C1, C7, C8) and prior citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "919cc2ed-10aa-4406-864c-4103e9ca179e",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two distinct quenching processes were identified in LHCSR3 in vitro: one controlled by pH and one controlled by zeaxanthin, operating simultaneously.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 2D-FLC analysis (C47, C70) quantified two parallel dynamic components with distinct pH and zeaxanthin dependencies, directly supporting the claim of two separate quenching processes (C2). The single-molecule data provides strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "pH-dependent quenching in LHCSR3 requires the C-terminal residues. The stop-LHCSR3 mutant lacking these residues loses pH-dependent quenching while maintaining zeaxanthin-dependent quenching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Single-molecule data (C25-C27, C33) and 2D-FLC analysis (C52, C56) consistently show that stop-LHCSR3 lacks pH-dependent quenching response. The negligible free-energy change (<30 cm\u207b\u00b9) upon pH drop in the mutant provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Zeaxanthin-dependent quenching occurs in LHCSR3 even at neutral pH, independent of pH changes. This is observed both in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Single-molecule fluorescence data (C28) shows decreased intensity with zeaxanthin at both pH 7.5 and 5.0. The 2D-FLC analysis (C34, C53) quantifies the zeaxanthin-dependent stabilization of the quenched state (>550 cm\u207b\u00b9 at pH 7.5), and this behavior is maintained in stop-LHCSR3 (C35).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vivo experiments show that pH-dependent quenching can occur without zeaxanthin. The npq1 mutant lacking zeaxanthin shows full NPQ induction and quenching upon high light exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "NPQ measurements (C20) and 77K fluorescence lifetime data (C36, C38) demonstrate that the npq1 strain achieves full quenching after HL exposure despite lacking zeaxanthin. This provides strong in vivo evidence for pH-dependent quenching independent of zeaxanthin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "e7f85015-b263-4502-8dae-a3a0c10332c7",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The zep mutant constitutively accumulating zeaxanthin shows strong quenching even at neutral pH and in dark-adapted conditions, independent of light treatment or LHCSR3 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "77K fluorescence lifetime measurements (C39, C62) show consistently faster decay in zep mutant regardless of light conditions. The high Zea/Chl ratio (~10-fold higher, C65) and quenching even in LL-acclimated cells with minimal LHCSR3 support zeaxanthin-dependent quenching.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Either pH- or zeaxanthin-dependent quenching prevents reactive oxygen species formation and provides efficient photoprotection. Singlet oxygen production inversely correlates with quenching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SOSG measurements (C44, C46) show that npq4 lhcsr1 lacking LHCSR has highest ROS production, while both npq1 (pH-dependent only) and zep (zeaxanthin-dependent) show reduced ROS. The inverse correlation between lifetime and ROS production (C46) supports the photoprotective role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "cf4e284e-d5d0-4193-9965-45b4224556bf",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "2D-FLC analysis identified two lifetime states (unquenched ~2.5 ns, quenched ~0.5 ns) and three dynamic components within single LHCSR3, indicating multiple Chl a emissive sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 2D-FLC analysis provides quantitative identification of lifetime states (C30) and dynamic components (C31). The presence of three components is supported by cross-correlation analysis beginning above zero, consistent with multiple emissive sites and previous LHC models (C31).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "76375832-53ee-4416-b1fc-149575660c34",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Structural assignments identify the pH-dependent component as involving lutein and Chl a 613, while the zeaxanthin-dependent component involves Vio/Zea and Chl a 602-603.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the assignments (C49, C50) are based on 2D-FLC data, structural modeling, and previous spectroscopic work, they remain speculative. The authors acknowledge these are 'likely' sites based on indirect evidence. Direct structural confirmation is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "cf7248cf-a165-4e80-a72b-bb884198e820",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "pH decrease from 7.5 to 5.0 stabilizes the quenched state in the pH-dependent component by decreasing the transition rate from quenched to unquenched state, with free-energy shifts of >200 cm\u207b\u00b9 in LHCSR3-Vio and >500 cm\u207b\u00b9 in LHCSR3-Zea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 2D-FLC analysis provides quantitative rate constants and free-energy calculations (C32, C51) showing pH-dependent stabilization of the quenched state. The larger effect in LHCSR3-Zea suggests synergistic effects between pH and zeaxanthin.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "2ea492aa-cac8-4934-8a90-d562b322af2a",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Zeaxanthin-dependent quenching occurs in other light-harvesting complexes beyond LHCSR3, though LHCSR3 is not the sole quenching site. Isolated LHC complexes from zep mutant show increased zeaxanthin content and reduced fluorescence lifetime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Pigment analysis (C41) and fluorescence lifetime measurements (C42) on isolated complexes provide direct evidence. However, the 10% lifetime decrease in isolated complexes doesn't fully explain the strong whole-cell quenching (C64), suggesting additional mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "be68a340-1843-4274-84aa-736e3b7f982b",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The strong quenching in zep mutant may result from zeaxanthin accumulation in thylakoid membranes altering the environment and organization of light-harvesting complexes, potentially explaining conflicting literature on zeaxanthin's role in NPQ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a speculative interpretation (C66) based on the high Zea/Chl ratio and supported by citations to previous work in higher plants (C67). However, direct evidence for membrane-level effects in C. reinhardtii is lacking. The hypothesis is plausible but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "pH- and zeaxanthin-dependent quenching processes work together with distinct timescales to provide photoprotection under variable light conditions, with potential compensatory effects in mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the existence of two distinct processes is well-supported, the claims about their combined function (C59, C76) and compensatory effects (C58, C74, C75) are largely speculative interpretations. The manuscript acknowledges uncertainty about whether both processes contribute in WT or are alternatively triggered in mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "6036e5cd-14b7-4d9a-9cb8-8ca277fccbe5",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Limited photodamage occurred during 60 min illumination in HL-acclimated cells, as evidenced by NPQ recovery to similar levels across mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The recovery of NPQ traces (C21, Figure 1A) provides evidence for limited photoinhibition in HL-acclimated samples. However, LL-acclimated samples showed incomplete recovery (Figure 1\u2014figure supplement 4), suggesting photoinhibition under those conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "283635f4-4ca6-46c4-915d-11b804861155",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "WT strains grown in low light with reduced LHCSR accumulation show significantly lower NPQ induction, supporting the critical role of C-terminus protonation in activating quenching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between LHCSR accumulation (Figure 1\u2014figure supplements 1-2) and NPQ levels (Figure 1\u2014figure supplement 4) in LL vs HL conditions supports this claim. Combined with stop-LHCSR3 data, this provides converging evidence for the C-terminus role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "8d5d1e81-52f9-47ed-8a64-c7a982d8df47",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Optimizing NPQ for biomass could improve yields by up to 30%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by citations to previous modeling studies (Kromdijk et al., 2016; Zhu et al., 2010). However, it represents prior work rather than findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    },
+    {
+      "id": "25472961-4374-4db5-b756-6b47a9a769d5",
+      "content_id": "d50aad84-e216-42ee-8979-14665f955b66",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on NPQ mechanisms: established knowledge about Chl-Car interactions, pH sensing, zeaxanthin conversion, and conflicting reports on zeaxanthin's role in green algae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize established knowledge and prior literature, supported by appropriate citations. They provide context but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:39:25.775930Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "97a8353b-db8b-46ce-8043-2176ba98b3e2",
+      "result_id": "a6c29f98-272f-4902-b648-6f763a17219d"
+    },
+    {
+      "claim_id": "8d07ad1a-cd5d-48fd-8cdc-d25bd463c4f7",
+      "result_id": "a6c29f98-272f-4902-b648-6f763a17219d"
+    },
+    {
+      "claim_id": "3d4e77d3-b97d-489a-860e-e687dbd91c96",
+      "result_id": "a6c29f98-272f-4902-b648-6f763a17219d"
+    },
+    {
+      "claim_id": "cf749a18-363a-48be-899e-1754939b52f0",
+      "result_id": "a6c29f98-272f-4902-b648-6f763a17219d"
+    },
+    {
+      "claim_id": "b3117813-1356-43b5-8d16-c9a50553cc90",
+      "result_id": "a6c29f98-272f-4902-b648-6f763a17219d"
+    },
+    {
+      "claim_id": "0e370d3f-0dc4-4419-8f87-a3e76698df3e",
+      "result_id": "919cc2ed-10aa-4406-864c-4103e9ca179e"
+    },
+    {
+      "claim_id": "ef7411f1-c2c9-4f9d-8e48-86de08d7c676",
+      "result_id": "919cc2ed-10aa-4406-864c-4103e9ca179e"
+    },
+    {
+      "claim_id": "f94d9be9-3afa-464e-91c1-422a42bbb78c",
+      "result_id": "919cc2ed-10aa-4406-864c-4103e9ca179e"
+    },
+    {
+      "claim_id": "9411ddbf-30cd-49cc-8cbf-70c2683319ad",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "a133530d-5436-4823-a4bf-6b3b1f12d91f",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "e3dcf1b8-f464-404f-8a6e-3fc74ed6c5a5",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "7e5b5e23-c4b9-4ad7-bdbc-2cc4153cf921",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "2cd572b2-a202-41ef-9a9c-77ffdcf9824b",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "964359f3-6c7c-4df1-aa7f-e8f627bf84d7",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "a34b7f87-c658-4cea-af2d-26ba88b96856",
+      "result_id": "c7b2039b-936a-404f-9d69-1d1ee5c813a0"
+    },
+    {
+      "claim_id": "858e1c68-481d-4164-a62a-b558ed398dd8",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "d732a433-d594-4320-b64a-deb38ec33b39",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "a6c399f8-2175-4a9c-8146-c188f5de1245",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "801086e5-3804-4ed9-ba64-9a145eaec2a1",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "7f049274-dc1b-41d1-878e-5841ec232817",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "6a0a2543-485d-42a6-a7b1-23ec14a701ac",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "a36650f3-28c2-4855-836e-50cab06e410c",
+      "result_id": "00d7a48c-f503-48cf-8337-e7e548e6d0fd"
+    },
+    {
+      "claim_id": "b281e9e1-0a49-4367-9f0c-d83b3004bbce",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "5fc9ac3b-f0e3-4981-845a-afb4ea8cb00f",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "45c7113b-9dbe-4c89-906c-0bd16d95708c",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "9fbdddb9-9e33-4889-b610-5574f6b5d47c",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "b190958f-6653-4a61-b61f-e05f4088b617",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "1b30c6e6-42f9-42c5-bef0-691e1db92950",
+      "result_id": "8caa83db-cf7b-4d05-819a-698fb44d7bdc"
+    },
+    {
+      "claim_id": "2729030e-034c-4d48-bd8e-9af4efcfb81e",
+      "result_id": "e7f85015-b263-4502-8dae-a3a0c10332c7"
+    },
+    {
+      "claim_id": "2ea9d124-82e0-4da4-b3e6-558cf662787b",
+      "result_id": "e7f85015-b263-4502-8dae-a3a0c10332c7"
+    },
+    {
+      "claim_id": "3bb0f518-c519-45b2-89fd-a3535176bb2e",
+      "result_id": "e7f85015-b263-4502-8dae-a3a0c10332c7"
+    },
+    {
+      "claim_id": "5d18782c-ac20-4453-80c9-ccb72d5eb3dd",
+      "result_id": "e7f85015-b263-4502-8dae-a3a0c10332c7"
+    },
+    {
+      "claim_id": "bcfe95f6-de68-4edc-8965-aef87cf77fec",
+      "result_id": "e7f85015-b263-4502-8dae-a3a0c10332c7"
+    },
+    {
+      "claim_id": "5387b43c-e294-40d1-a496-ab852c58e109",
+      "result_id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37"
+    },
+    {
+      "claim_id": "ccc27a23-e55a-4509-96a9-7b244a9da742",
+      "result_id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37"
+    },
+    {
+      "claim_id": "1f5597f5-82c5-4de9-8d0a-ef2af792db53",
+      "result_id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37"
+    },
+    {
+      "claim_id": "e4581de1-51eb-4421-b0d5-f558faf5f011",
+      "result_id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37"
+    },
+    {
+      "claim_id": "3452a723-9130-430b-8ac9-34f3bec94caf",
+      "result_id": "b1d2f1d6-2b95-4c02-acf3-33c74b0a6c37"
+    },
+    {
+      "claim_id": "29afed5a-031b-4f95-8019-64b1611955d7",
+      "result_id": "cf4e284e-d5d0-4193-9965-45b4224556bf"
+    },
+    {
+      "claim_id": "c5134244-679f-4fda-88d0-a5b149c6a464",
+      "result_id": "cf4e284e-d5d0-4193-9965-45b4224556bf"
+    },
+    {
+      "claim_id": "7a0b3f56-443c-480a-b007-a2b948ed67f9",
+      "result_id": "cf4e284e-d5d0-4193-9965-45b4224556bf"
+    },
+    {
+      "claim_id": "db2d0deb-cbbc-473a-bdeb-cd8f6c1584d2",
+      "result_id": "76375832-53ee-4416-b1fc-149575660c34"
+    },
+    {
+      "claim_id": "5f11c43e-6ff9-4c3c-b7ec-2b1bcc748fb9",
+      "result_id": "76375832-53ee-4416-b1fc-149575660c34"
+    },
+    {
+      "claim_id": "2ccfe4c0-a14d-4b93-9aee-4b41de77c12e",
+      "result_id": "76375832-53ee-4416-b1fc-149575660c34"
+    },
+    {
+      "claim_id": "6e0b387e-3a94-47ef-ac7b-81f6636f64f4",
+      "result_id": "cf7248cf-a165-4e80-a72b-bb884198e820"
+    },
+    {
+      "claim_id": "26b570d4-9250-4c1f-8c31-338b42e7d2a4",
+      "result_id": "cf7248cf-a165-4e80-a72b-bb884198e820"
+    },
+    {
+      "claim_id": "40152cc4-7c2c-4f34-b026-769a56efb7de",
+      "result_id": "2ea492aa-cac8-4934-8a90-d562b322af2a"
+    },
+    {
+      "claim_id": "96344f51-a294-4f9b-abb4-ac371f5b56dd",
+      "result_id": "2ea492aa-cac8-4934-8a90-d562b322af2a"
+    },
+    {
+      "claim_id": "6f09674d-4382-479c-8329-88f03e7cad5a",
+      "result_id": "2ea492aa-cac8-4934-8a90-d562b322af2a"
+    },
+    {
+      "claim_id": "28a51041-de8d-447a-af0b-b6cad8631501",
+      "result_id": "2ea492aa-cac8-4934-8a90-d562b322af2a"
+    },
+    {
+      "claim_id": "8815556e-a2fe-4308-a8f8-35e20de07698",
+      "result_id": "2ea492aa-cac8-4934-8a90-d562b322af2a"
+    },
+    {
+      "claim_id": "2aeaf6cf-ccd1-4c7f-b8ab-5a9dd0a6d3bf",
+      "result_id": "be68a340-1843-4274-84aa-736e3b7f982b"
+    },
+    {
+      "claim_id": "fe03982f-4ec3-4ce8-8f0d-9d8bf4328907",
+      "result_id": "be68a340-1843-4274-84aa-736e3b7f982b"
+    },
+    {
+      "claim_id": "312ca423-8757-4011-bf05-7546be7015d7",
+      "result_id": "be68a340-1843-4274-84aa-736e3b7f982b"
+    },
+    {
+      "claim_id": "b93025c0-e0f9-411d-bde3-d37695a06c5f",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "727f724a-54fd-4d52-bca2-dc7ddcc3938c",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "e4fdb3c1-95da-4c6f-a3a1-5482fd35cb66",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "2ba1a158-69eb-4cf7-a82c-fec3c25a3a04",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "0db5bd3c-91c9-42ac-86a2-c7e3da6daa68",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "af345de9-9e5b-4e71-81e5-f2ffc7320190",
+      "result_id": "af487c6a-10b6-4f89-aa6f-a8e12b1e05ef"
+    },
+    {
+      "claim_id": "295def1f-417d-4c09-9136-2db277a91875",
+      "result_id": "6036e5cd-14b7-4d9a-9cb8-8ca277fccbe5"
+    },
+    {
+      "claim_id": "252d85a7-a6f3-4b91-a47c-84fa797e6649",
+      "result_id": "283635f4-4ca6-46c4-915d-11b804861155"
+    },
+    {
+      "claim_id": "03e91312-bbce-4da6-a427-b53c18171b06",
+      "result_id": "8d5d1e81-52f9-47ed-8a64-c7a982d8df47"
+    },
+    {
+      "claim_id": "23b6ee84-4626-4bc3-8f4d-63a6d744c748",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "b309829a-0c81-4961-a89e-912d3d22c8e7",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "02f6c711-f341-43ec-825d-4a98969231d7",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "1106d7bd-f570-471d-8950-39ac014879b3",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "828db371-b81c-4927-8429-1cf0f67768a1",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "f769b095-7d93-4470-8160-5f9fae80c6e7",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "d1f9461e-db33-46b8-acfa-d4fac7859ce2",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "8517ecf9-4f07-4022-9d12-9f05e206f5e2",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "4159ec5e-8fc0-4de3-971e-dcccdbc08870",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "047ae139-25a7-4823-b85d-687a98baba59",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    },
+    {
+      "claim_id": "d59522a2-dc22-47a0-bcae-eefdc0910fa9",
+      "result_id": "25472961-4374-4db5-b756-6b47a9a769d5"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed an mRNA antisense purification method coupled with mass spectrometry to identify proteins associated with VSG and TUB mRNAs. They achieved >1000-fold purification and identified 664 proteins, with 97 proteins found in all VSG replicates and 43 proteins significantly enriched in the VSG2 mRNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 provide quantitative data from replicated experiments (n=3) showing successful purification and protein identification. The methodology includes appropriate controls (TUB mRNA), technical replicates, and validation against published mRNP proteomes (C49). The enrichment data is presented with statistical criteria (FDR 1%, s0=0.1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68"
+    ],
+    "result": "CFB2 was specifically enriched with VSG mRNA in the mRNP purification and this association was validated by independent pull-down experiments showing CFB2 co-purification depends on both lambda-GFP-SBP and boxB sequences, with 1.8-3.8-fold enrichment of VSG2 mRNA in CFB2 immunoprecipitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C67, and C68 demonstrate CFB2-VSG mRNA association through multiple independent approaches (mRNP purification, boxB-mediated pull-down, and immunoprecipitation). The experiments include appropriate negative controls (absence of boxB or lambda-GFP-SBP) and show reproducibility (4/5 experiments for C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CFB2 contains three functional domains: an F-box that interacts with SKP1 (confirmed by yeast two-hybrid), a conserved central region, and a C-terminal RYRHDPY motif that interacts with MKT1. The MKT1 complex (including PBP1, PABP2, and EIF4E6-EIF4G5) was highly enriched in the VSG mRNP, consistent with CFB2 recruiting this stabilizing complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C83 provide structural analysis (sequence conservation), functional validation (yeast two-hybrid for SKP1 interaction with appropriate controls), and proteomic evidence (MKT1/PBP1 enrichment in VSG mRNP). The model is supported by published literature on MKT1 complex function (C75-C79) and co-purification data (C80-C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RNAi-mediated depletion of CFB2 caused rapid and specific reduction of VSG mRNA within 3 hours, while TUB mRNA and ESAG mRNAs remained unaffected. RNASeq analysis after 9 hours showed only CFB2, VSG2, and one other mRNA were significantly reduced, and the effect was independent of specific VSG coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C96 demonstrate specificity through multiple lines of evidence: RT-PCR time courses (C85-C86), Northern blots, RNASeq with biological replicates (C92), and tests with different VSG genes (C87-C89). The post-transcriptional mechanism is supported by unchanged ESAG and pre-mRNA levels (C94-C96). Statistical analysis (DeSeq2) was applied to RNASeq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C113"
+    ],
+    "result": "CFB2 depletion caused rapid cellular phenotypes similar to VSG RNAi but faster: G2/M arrest within hours, cell death after 24 hours, and by 16 hours, cells exhibited multiple external and internal flagella, enlarged flagellar pockets, and abnormal vesicular structures as observed by electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C113 describe morphological phenotypes documented by electron microscopy with clear images (Figure 6). The rapid kinetics are explained by low CFB2 mRNA abundance and protein instability (C105). The phenotypes are consistent with published VSG depletion effects (C102, C111-C112), providing internal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "CFB2 protein is unstable with a half-life <1 hour and abundance <1000 molecules/cell. Proteasome inhibition (MG132) increased CFB2 levels, and deletion or mutation of the F-box increased fusion protein abundance, implicating the F-box in auto-regulation. The F-box mutant showed enhanced reporter activation compared to wild-type, while the MKT1 interaction motif was essential for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C123 combine published data (C114), Western blot quantification (C115-C117), and functional tethering assays (C120-C123). The auto-regulation model is supported by increased protein levels upon F-box mutation and MG132 treatment. However, the mechanism (auto-ubiquitination) is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "CFB2 action depends on a conserved 16-mer sequence in the VSG 3'-UTR. Reporter assays showed the 16-mer is required for high expression in bloodstream forms and for CFB2-mediated activation in procyclic forms. CFB2 binds specifically to the VSG 3'-UTR (6-fold enrichment vs. actin control) independent of the 8-mer. An 8-mer sequence mediates VSG mRNA degradation in procyclic forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C144 use multiple reporter constructs with systematic mutations of conserved elements, tested in both bloodstream and procyclic forms with biological replicates (3 clones per construct). The 16-mer requirement is demonstrated by loss of CFB2 effect when mutated (C138). Direct binding is confirmed by immunoprecipitation (C140-C143). The 8-mer function is inferred from stage-specific expression patterns (C132-C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C151"
+    ],
+    "result": "The mRNP purification method can successfully target mRNAs comprising \u22651% of total mRNA (threshold inferred from TUB success at ~1.5%). The approach enables purification of multiple different mRNPs from the same extracts by sequential capture, overcoming the major limitation that mRNAs are ~1000-fold less abundant than proteins in lysates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 describe methodological advances validated by successful purification of both VSG and TUB mRNPs from the same extracts. The abundance threshold (C146) is reasonably inferred from the TUB data. The sequential purification strategy (C151) is demonstrated experimentally with alternating order controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C161"
+    ],
+    "result": "CFB2 is the protein responsible for VSG mRNA retention in bloodstream forms, acting through recruitment of a stabilizing complex (MKT1, PBP1, PABP2, EIF4E6/G5) to the conserved 16-mer in the VSG 3'-UTR. The authors propose CFB2 directly recognizes the 16-mer sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 represent the main conclusions integrating multiple lines of evidence: CFB2 enrichment with VSG mRNA (C4), specific loss of VSG upon CFB2 depletion (C85-C96), MKT1 complex enrichment (C81), 16-mer requirement (C144), and CFB2 binding specificity (C142). The direct recognition of the 16-mer (C161) is a reasonable inference but not definitively proven (could involve intermediary factors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Loss of VSG mRNA stability during differentiation results from two processes: disappearance of CFB2 and expression of an unknown protein that binds the 8-mer to cause mRNA degradation. This represents a fail-safe mechanism ensuring rapid VSG mRNA degradation in procyclic forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C164 propose a model for stage-specific regulation based on the 8-mer mutation allowing expression in procyclic forms (C132). However, the existence of an 8-mer binding protein is speculative\u2014no such protein is identified or characterized. The model is plausible but requires validation through identification of the proposed 8-mer binding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The interaction of CFB2 with SKP1 promotes CFB2 degradation, presumably through auto-ubiquitination, which may fine-tune CFB2 abundance to limit VSG synthesis. CFB2 may interact with SKP1 and MKT1 simultaneously, as SKP1 was detected in MKT1 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C170 propose auto-ubiquitination based on F-box function and MG132 effects, but direct evidence of ubiquitination is lacking. The functional significance (fine-tuning VSG synthesis, C168) is speculative. Simultaneous SKP1/MKT1 binding (C170) is possible but not demonstrated. These are reasonable hypotheses requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "CFB2 depletion caused >1.5-fold increase in 13 mRNAs encoding membrane proteins (ESAG5-related, cysteine peptidases, MSPC, ISG65). The authors speculate this reflects increased access to the secretory pathway when VSG mRNAs are lost, potentially facilitating translation and indirectly enhancing mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C101 report a reproducible observation (RNASeq data) but the mechanistic explanation is entirely speculative (C100-C101). The connection to secretory pathway access is not tested experimentally. Alternative explanations (indirect transcriptional effects, compensatory responses) are not excluded. This observation requires follow-up investigation.",
+    "result_type": "MINOR"
+  }
+]

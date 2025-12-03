@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study measured 3D aerodynamic forces and acoustic nearfield in six freely hovering Anna's hummingbirds using a novel aerodynamic force platform and a 2176-microphone array. The aerodynamic force platform measured forces up to 3\u00d7 wingbeat frequency while the microphone arrays measured acoustic pressure up to ~1000\u00d7 wingbeat frequency, with the first ten harmonics analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21-C23, and C95-C105 collectively describe a well-documented experimental setup with detailed technical specifications including sample sizes (N=6 birds), measurement capabilities, sampling rates, filtering parameters, and data processing methods. The methodology is sufficiently detailed for reproducibility and represents a rigorous experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Direct measurements showed that oscillating lift peaks during downstroke at the first harmonic (44.2 \u00b1 1.8 Hz), while drag shows two equivalent peaks during upstroke and downstroke corresponding to the second harmonic. Beak contact forces were negligible (5.2 \u00b1 2.3% bodyweight).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present direct measurement results from the aerodynamic force platform with quantitative values and uncertainties. The measurements are internally consistent and the negligible beak contact force validates that measured forces are primarily aerodynamic. These are fundamental empirical observations supporting the study's main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C32",
+      "C33"
+    ],
+    "result": "An idealized acoustic model integrating aerodynamic forces with wing kinematics shows that the hummingbird's hum timbre arises from oscillating lift and drag forces. Low-frequency aerodynamic forces drive higher-frequency harmonics through nonlinear frequency mixing, with model predictions matching measurements within 0.5-6.0 dB for the first four harmonics, which represent ~99% of simulated and ~67% of measured radiated power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C33, and C51-C54 demonstrate strong agreement between the acoustic model and experimental measurements. The quantitative agreement (0.5-6.0 dB difference) for the first four harmonics is reasonable for an idealized model, and the explanation of nonlinear frequency mixing provides a mechanistic basis for the observations. The power distribution analysis further validates the model's predictive capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C28"
+    ],
+    "result": "The acoustic model treats hummingbird wings as compact acoustic sources, with a median difference of only 0.1 dB between a single point source model and a distributed 10-source model. The effective acoustic radius (R\u2083) agrees with wind turbine acoustics measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C28 validate key modeling assumptions. The 0.1 dB difference between single and distributed source models justifies the simplified approach, and agreement with wind turbine acoustics provides external validation. These claims support the model's theoretical foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C65"
+    ],
+    "result": "Acoustic directivity analysis reveals that odd harmonics exhibit rotational pressure fluctuation modes while even harmonics show vertical modes. The broadband pressure surface is roughly spherical in near and farfield, with the principal axis oriented vertically due to gravity-opposing forces. The first harmonic forms an aft-tilted dipole, the second harmonic forms an upward-pointing dipole, and higher harmonics follow similar patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 and C64-C65 present a comprehensive directivity analysis with consistent patterns across harmonics. The observations are physically interpretable (vertical orientation due to weight support, aft tilt due to asymmetric horizontal forces) and show good agreement between measurements and model predictions within one standard deviation (C39). The systematic characterization of harmonic-dependent directivity patterns is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C66"
+    ],
+    "result": "The acoustic model's agreement with measurements is similar to or better than more detailed aeroacoustic models of drones and wind turbines. The measured dipole structures for the first four harmonics are strikingly similar to those found in CFD simulations of hovering insects, and pressure extrema in holograms correspond to wing stroke reversals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, and C66 provide important validation through comparison with other systems and computational studies. The citations to drone/wind turbine models (C55) and insect CFD simulations (C56, C66) establish that the model's performance is competitive with more complex approaches and that the observed patterns are consistent across different flying animals. This cross-validation strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Comparative analysis across birds and insects shows that the characteristic humming timbre and radiated power originates from higher harmonics in aerodynamic weight support profiles. Flies and mosquitos have the highest harmonic content and radiate the most power when normalized, while parrotlets have the lowest. The higher harmonics in weight support profiles directly determine the perceived timbre quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C68-C73 present a coherent comparative analysis explaining perceived differences in hum characteristics across species. The findings are supported by model simulations (Figure 4C) showing systematic differences in radiated power based on weight support profiles. The explanation for why flies/mosquitos seem loud relative to size (C72) is a logical inference from the data. This represents a major mechanistic insight into bioacoustic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Scaling analysis across 170 species shows that radiated acoustic power scales allometrically with body mass for most groups, with compact flies and moths/butterflies scaling isometrically. The derived scaling law collapses data well (average slope=0.9, ideal=1). Allometric deviation makes larger birds quieter (slope=0.9) and elongated flies louder (slope=1.1) than predicted by isometric scaling, primarily due to allometric scaling of wingbeat frequency with body mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C50, and C77-C84 present a comprehensive scaling analysis with clear quantitative results. The scaling law validation (C50) shows good agreement between model and theory. The identification of allometric deviations for specific groups (C79-C81) with mechanistic explanations (C82) demonstrates that the model captures biologically meaningful patterns across seven orders of magnitude in body mass. The statistical support (slopes, R\u00b2 values) is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Differences between model and measurements (0.5-7.0 dB range) may include contributions from acoustic scattering, wingtip flutter, and turbulent vortex dynamics. The model predicts higher harmonic amplitudes even with lowpass-filtered input forces. Small tonal peaks between harmonics are not explained by the model and must originate from other sources like feather flutter or vortex dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 and C57-C60 acknowledge model limitations and unexplained features in the data. While the speculation about sources of discrepancy (C34, C60) is reasonable and supported by citations, these remain hypotheses without direct experimental validation. The observation that the model doesn't explain all spectral features (C59) is honest but indicates incomplete understanding. These claims appropriately identify areas requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The acoustic model predicts hum harmonics in an intermediate frequency range (40-300 Hz) between wingbeat frequency and feather sonations. The pairing of first and second harmonics in hummingbirds results from substantial weight support during both downstroke and upstroke, a pattern found across hummingbird species. The first four harmonics constitute most of the acoustic radiated power determining the hum timbre.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C61-C63 provide important context for interpreting the results. The frequency range identification (C58) distinguishes wing hum from other acoustic sources. The mechanistic explanation for harmonic pairing (C61) is supported by force measurements (Figure 1B), and generalization across species (C62) is supported by citations. The conclusion about timbre (C63) follows logically from the power distribution analysis. These claims effectively synthesize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Body mass is a strong predictor of radiated acoustic power because heavier animals require proportionally larger aerodynamic forces for hovering flight, and increased force amplitude drives acoustic pressure. Increasing flapping frequency also increases radiated acoustic power by injecting more acoustic energy into the air.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 present fundamental physical principles underlying the scaling relationships. These are well-established concepts in flight mechanics (C74 supported by multiple citations) and acoustics. The logical chain from body mass \u2192 required force \u2192 acoustic pressure (C75) is sound and follows from Equation 1. These provide the theoretical foundation for the scaling analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Deviations from scaling predictions may be partially explained by variation in wing stroke amplitude and high variability in body size and wingspan among insects of the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 offer speculative explanations for observed scatter in the scaling relationships. While the cited sources support that these factors vary (stroke amplitude, body size variability), the causal connection to the observed deviations is not directly tested. These represent reasonable hypotheses for future investigation but lack direct empirical support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model predicts that wing hum perception distance scales with body mass, reaching ~4 meters for rock pigeons. While low-frequency forces radiate high-frequency harmonics, their amplitudes are insignificant compared to harmonics near wingbeat frequency, explaining why some birds use specialized feather sonations for long-distance signaling. Moths respond to bird wingbeat hum in playback experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 extend the findings to ecological and behavioral contexts. The perception distance prediction (C87) is a straightforward model application with cited pigeon parameters. The scaling relationship (C88) follows from Figure 4E. The explanation for feather sonations (C91) is a logical inference supported by multiple citations. The moth response (C92) provides independent behavioral evidence for the ecological relevance of wing hum. These claims effectively connect the biophysics to biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work has established diverse roles for wing-generated sounds in animal behavior, from courtship in Drosophila and mosquitoes to alarm signals in pigeons and territorial defense in hummingbirds. Owls suppress wing sounds for stealth. CFD simulations suggest dipole acoustic fields at wingbeat frequency, and numerical simulations indicate aerodynamic force fluctuation drives mosquito hum. Hummingbirds are ideal subjects due to repeatable kinematics and forces during hover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C20 provide comprehensive background from prior literature, all supported by appropriate citations. These establish the biological context, prior computational approaches, and rationale for studying hummingbirds. While these are not original findings of this study, they accurately represent the state of knowledge and justify the research approach. The assessment of hummingbird suitability (C16) is supported by citations and validated by the study's success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C93",
+      "C94"
+    ],
+    "result": "Body mass and flapping frequency data for comparative analysis were obtained from established sources (Greenewalt 1962, Pennycuick 1990). An analogous acoustic model has been used to simulate mosquito buzz with CFD, and fruit flies likely color their courtship song timbre by reducing stroke amplitude similar to mosquitoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C93-C94 describe data sources and related work. The data sources (C47-C48) are appropriate and well-established references. The comparison to mosquito buzz modeling (C93) provides context for the approach. The inference about fruit fly courtship (C94) is reasonable given the cited behavioral observations and model predictions, though it remains somewhat speculative. These claims appropriately situate the work within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Mosquito dipoles are oriented more horizontally than hummingbird dipoles because mosquito wings generate unusually high drag due to their particularly shallow wingstroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 provides a mechanistic explanation for differences between mosquito and hummingbird acoustic patterns, supported by citations to studies of mosquito flight mechanics and aeroacoustics. This represents a valid comparative insight connecting wing kinematics to acoustic directivity patterns.",
+    "result_type": "MINOR"
+  }
+]

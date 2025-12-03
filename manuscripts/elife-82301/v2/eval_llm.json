@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C33",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C50",
+      "C51"
+    ],
+    "result": "The SFMA model prioritizes experience replay based on three variables: experience strength (modulated by frequency and reward), experience similarity (based on the default representation), and inhibition of return. The model operates in two primary modes (default and reverse) that differ in how they compute similarity between experiences, generating different types of replay sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C33, C40-C43, C47, C50-C51 collectively describe the core architecture and mechanisms of the SFMA model. The mathematical formulation (C33), the choice of default representation (C40), the two replay modes (C41-C43), and initialization schemes (C50-C51) are clearly specified and internally consistent. These are methodological descriptions that define the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C29"
+    ],
+    "result": "SFMA using the reverse mode significantly outperforms random replay and no-replay baselines in spatial learning tasks, achieving performance close to (but slightly below) the state-of-the-art PMA model. Performance critically depends on replay mode, with the reverse mode substantially outperforming the default mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C54-C57, C29 are supported by simulation results shown in Figure 3B across three navigation tasks (linear track, open field, labyrinth). The performance comparisons are quantitative and show consistent patterns across environments. The claim that performance is 'close to' PMA is visually supported by the overlapping learning curves in Figure 3B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C65",
+      "C63"
+    ],
+    "result": "During early learning, SFMA's reverse mode generates sequences that are often optimal according to the PMA criterion, producing more optimal updates than the default mode. The default mode better supports suboptimal (pessimistic) replays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C65, C63 are supported by the optimality analysis in Figure 3C, which shows the number of optimal updates across trials for different replay modes. The reverse mode clearly produces more optimal updates early in learning, while the default mode produces more suboptimal updates, consistent with the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The default and reverse modes generate different replay directionality patterns that match experimental observations. The reverse mode produces predominantly reverse sequences, while the default mode produces forward sequences at trial start and reverse sequences at trial end in familiar environments. A dynamic mode that switches between modes based on TD errors achieves performance similar to the reverse mode while potentially accounting for diverse experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C135-C141, C64-C69 are supported by directionality analysis in Figure 3D and supplementary figures. The patterns match cited experimental observations (Diba and Buzs\u00e1ki, 2007; Foster and Wilson, 2006; Ambrose et al., 2016). The dynamic mode mechanism is clearly defined (C68) and its performance validated (C69, Figure 3B-C). However, the functional interpretation (C64, C67) involves speculation about biological roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "SFMA reproduces random walk replay statistics observed experimentally (Stella et al., 2019) when experience strengths are homogeneous or near-homogeneous. Simulated replays exhibit power-law relationships between distance and time interval with exponent \u03b1\u22480.5, matching theoretical predictions for Brownian diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C75-C78 are supported by extensive analysis in Figure 4 showing visual similarity to random walks (4A), displacement distributions (4B), power-law relationships (4C), and parameter robustness (4D). The \u03b1 values [0.467, 0.574] for homogeneous conditions overlap well with experimental values [0.45, 0.53]. The heterogeneous case (C76) shows deviations at large time intervals but still largely resembles random walks, appropriately qualified in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "SFMA's default mode (but not reverse mode) reproduces shortcut replay sequences observed by Gupta et al. (2010), where replay represents never-experienced trajectories synthesized from stereotypical behavior. Shortcut occurrence depends on stochasticity in prioritization and differences in experience strengths between maze regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 are supported by simulations in Figure 5 showing shortcut replays for different behavioral patterns. The default mode produces shortcuts (C82, C84) while the reverse mode does not, with a mechanistic explanation provided (C83). The dependence on inverse temperature \u03b2M (C86) and experience strength differences (C87, Figure 5\u2014figure supplement 2) is demonstrated. Learning performance results (C88-C89, Figure 5E) show both modes outperform random replay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SFMA successfully adapts replay to changes in environmental structure by using the default representation, which can be efficiently updated when barriers change. Replay conforms to current spatial constraints and avoids invalid transitions, unlike when Euclidean distance is used for similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C92-C95 are supported by simulations in Figure 6 showing reactivation maps that respect barriers (6A) and the absence of invalid transitions (6C) when using DR. The control condition with Euclidean distance shows failure to adapt (6B-C). The advantage of DR over SR for structural changes (C92-C93) is established knowledge appropriately cited. This demonstrates a key capability of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "SFMA accounts for preplay of unvisited locations (\u00d3lafsd\u00f3ttir et al., 2015) through the default representation's ability to represent observable but unexplored space, combined with visual attention modulating experience strength. The model produces preferential preplay of cued arms and subsequent behavioral preference for those arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by simulations in Figure 7. The model produces preferential preplay of the cued arm (C100, Figure 7B) and subsequent choice preference (C102, Figure 7C). The dependence on attention parameters is demonstrated (C101, Figure 7D). However, the modeling of visual attention as increasing experience strength (C99) is an assumption rather than a mechanistic implementation, which is appropriately acknowledged as a modeling choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SFMA accounts for over-representation of rewarded locations in replay through reward modulation of experience strength. The degree of over-representation depends on the balance between experience frequency and reward modulation, with higher reward modulation driving stronger over-representation of goal locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by simulations in Figure 8 showing reactivation maps for different reward modulation values. With equal modulation (reward=1), replay represents the path to reward (C104, Figure 8A-B). With higher modulation (reward=10), the goal location is strongly over-represented (C105, Figure 8C-D). This demonstrates the model can reproduce experimental observations (C103, cited studies) through a simple parameter adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SFMA accounts for replay entering aversive locations (Wu et al., 2017) based on prior experience history. Despite shock in the dark zone, replay preferentially enters this region due to over-represented prior experience, and these replays facilitate learning of avoidance behavior that spreads from the shock zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 are supported by simulations in Figure 9 showing reactivation maps (9A) and learned avoidance policies (9B). The explanation based on prior experience (C111) is mechanistically sound given the model's design. The learned policy shows avoidance (C112) that strengthens and spreads with more replay (C113). This demonstrates the model can account for counterintuitive experimental findings through its experience-based prioritization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C188",
+      "C189"
+    ],
+    "result": "SFMA provides a unified, biologically plausible mechanism that generates diverse replay statistics through stochasticity and experience-dependent differences in prioritization variables, while efficiently driving spatial learning without requiring computationally intensive hypothetical network updates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C30-C31, C188-C189 represent the main conclusions of the paper, supported by the collective evidence from all simulation results (Figures 3-9). The model reproduces diverse replay phenomena (random walks, shortcuts, adaptive replay, preplay, reward over-representation, aversive replay) through a single mechanism. Performance is close to PMA (Figure 3B) without hypothetical updates. These are well-supported summary claims integrating multiple results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The successor representation (SR) has limitations for SFMA's purposes: it depends on the agent's policy and requires complete relearning when environmental structure changes. The default representation (DR) addresses these limitations by using a uniform policy and supporting efficient updates via low-rank matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 accurately describe established properties of SR and DR from the literature (Dayan, 1993; Piray and Daw, 2021). These are well-established theoretical results that justify the model's design choice. The claims are appropriately cited and represent accurate knowledge from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The components of SFMA (experience prioritization, structural modulation, frequency/reward effects) are well-supported by experimental evidence. The model's variables could plausibly be implemented in hippocampal circuits through spatial cell representations, synaptic plasticity, and inhibitory mechanisms, though specific neural implementations remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C134 discuss biological plausibility and neural implementation. The experimental support for prioritization (C115-C117), spatial representations (C118-C121), and frequency/reward effects (C124-C126) is well-cited. However, the proposed neural implementations (C122-C123, C128-C130, C133-C134) are explicitly speculative (appropriately qualified with 'could' and 'propose'). The claims accurately distinguish between established evidence and speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "SFMA does not address when replay events occur or the overall amount of replay, a limitation shared with other models. The model can partially account for changes in replay statistics with familiarity (longer sequences, fewer total sequences) and reward changes (shift to reverse mode), but cannot fully explain differential effects of positive vs. negative reward changes observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C160 accurately identify limitations of the current model. The inability to control replay timing/amount (C150-C151) is explicitly acknowledged. The partial account for familiarity effects (C155-C156, Figure 3\u2014figure supplement 4) and reward changes (C158-C159, Figure 3\u2014figure supplement 3) is demonstrated, but the failure to match differential reward effects (C160, citing Ambrose et al., 2016) is honestly reported. This is appropriate scientific self-criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "SFMA cannot currently account for motivational shifts affecting replay (Carey et al., 2019) or behavioral recency effects (Gillespie et al., 2021), as the model does not differentiate reward types or incorporate recency in prioritization. Potential extensions involving recency are suggested but not implemented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C167 identify additional limitations with appropriate citations. The model's inability to handle multiple reward types (C162) and recency effects (C167) is clearly stated. The experimental findings are accurately described (C163, C165-C166). Speculative extensions (C164) are appropriately qualified. This demonstrates awareness of the model's scope and honest reporting of what it cannot explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "PMA (Mattar and Daw, 2018) prioritizes replay by utility (gain \u00d7 need) but requires computationally intensive hypothetical updates that are biologically implausible. SFMA circumvents this by using behavioral/environmental variables. Additionally, PMA's implementation has artifacts related to minimum gain values that artificially favor longer sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C177 provide critical analysis of the main comparison model. The description of PMA (C169-C171) is accurate. The biological plausibility critique (C172) is reasonable. The implementation issues (C174-C177) are demonstrated in Figure 4\u2014figure supplement 5, showing that correcting the minimum gain application reduces PMA's ability to produce offline sequences. This is legitimate critical analysis of prior work, though the authors should have verified their interpretation with the original authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Other related models (Khamassi and Girard, 2020; McNamee et al., 2021) can account for some replay phenomena but have limitations: Khamassi and Girard's model doesn't address environmental adaptation; McNamee et al.'s model uses handcrafted sequence generators and doesn't differentiate forward/reverse sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C187 accurately describe other related models with appropriate citations. The descriptions of capabilities (C179-C180, C185) and limitations (C182, C186-C187) appear accurate based on the cited papers. These claims provide appropriate context for positioning SFMA relative to alternative approaches. The assessments are fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establish that hippocampal replay is important for learning and memory, can represent both experienced and novel sequences, and has been linked to reinforcement learning. Prior models, particularly PMA, account for replay phenomena but have unclear biological implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C26 provide background context from established literature. All claims are appropriately cited to relevant experimental and theoretical work. These represent accurate summaries of prior knowledge that motivate the current study. The critical assessment of PMA's biological plausibility (C24-C26) is reasonable and sets up the motivation for SFMA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The choice of different initialization schemes for awake vs. sleep replay is justified by experimental observations that awake replay predominantly starts at the current position (Davidson et al., 2009), though non-local sequences also occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 justify a modeling choice with appropriate experimental citations. The distinction between awake and sleep replay initialization is reasonable given the cited evidence. Figure 2\u2014figure supplement 2 explores the consequences of different initialization schemes, showing the model can produce both local and non-local replay depending on parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Pessimistic replay (suboptimal sequences) occurs in humans and may serve important functions. The default mode's generation of suboptimal sequences aligns with this phenomenon, and the dynamic mode's switch from optimal to pessimistic replay corresponds to findings from modeling work (Antonov et al., 2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C143-C145 connect the model's behavior to recent experimental findings on pessimistic replay (Eldar et al., 2020; Antonov et al., 2022). The default mode's production of suboptimal updates (Figure 3C) is consistent with these findings. However, the functional interpretation (C146) is speculative. The claims appropriately distinguish between what is observed and what is speculated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C142",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The reverse mode might be preferentially used when learning is required, potentially triggered by reward prediction error signals. The default mode might support planning functions by generating prospective sequences, while the reverse mode cannot due to producing predominantly reverse sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139, C142, C147-C149 propose functional roles for the different replay modes. While the reverse mode's association with learning is supported by simulations (Figure 3B-C) and experimental citations (C137-C138), the triggering mechanism (C139) and planning function (C147-C149) are speculative. The inference about the default mode breaking sequences (C142) is reasonable but not rigorously quantified. These are plausible hypotheses but lack direct empirical support.",
+    "result_type": "MINOR"
+  }
+]

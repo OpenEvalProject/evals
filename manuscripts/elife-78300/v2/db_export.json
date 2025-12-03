@@ -1,0 +1,2139 @@
+{
+  "submission": {
+    "id": "0a12aa89-db46-4ab6-bd0d-32a9b648e9b1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:02:18.184096Z",
+    "updated_at": "2025-12-03T16:02:18.184096Z"
+  },
+  "content": [
+    {
+      "id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "submission_id": "0a12aa89-db46-4ab6-bd0d-32a9b648e9b1",
+      "content_type": "manuscript",
+      "content_text": "# A dynamic and expandable digital 3D-atlas maker for monitoring the temporal changes in tissue growth during hindbrain morphogenesis\n\n## Authors\n\n- Matthias Blanc<sup>1</sup> ([ORCID: 0000-0002-4892-8161](https://orcid.org/0000-0002-4892-8161))\n- Giovanni Dalmasso<sup>2</sup>\n- Frederic Udina<sup>3</sup> ([ORCID: 0000-0002-7155-4153](https://orcid.org/0000-0002-7155-4153))\n- Cristina Pujades<sup>1</sup> ([ORCID: 0000-0001-6423-7451](https://orcid.org/0000-0001-6423-7451)) \u2020\n\n### Affiliations\n\n1. Department of Medicine and Life Sciences, Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))\n2. European Molecular Biology Laboratory Barcelona Spain ([ROR:03mstc592](https://ror.org/03mstc592))\n3. Department of Economics and Business, Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))\n\n\u2020 Corresponding author\n\n## Abstract\n\nReconstruction of prototypic three-dimensional (3D) atlases at the scale of whole tissues or organs requires specific methods to be developed. We have established a digital 3D-atlas maker (DAMAKER) and built a digital 3D-atlas to monitor the changes in the growth of the neuronal differentiation domain in the zebrafish hindbrain upon time. DAMAKER integrates spatial and temporal data of cell populations, neuronal differentiation and brain morphogenesis, through in vivo imaging techniques paired with image analyses and segmentation tools. First, we generated a 3D-reference from several imaged hindbrains and segmented them using a trainable tool; these were aligned using rigid registration, revealing distribution of neuronal differentiation growth patterns along the axes. Second, we quantified the dynamic growth of the neuronal differentiation domain by in vivo neuronal birthdating experiments. We generated digital neuronal birthdating 3D-maps and revealed that the temporal order of neuronal differentiation prefigured the spatial distribution of neurons in the tissue, with an inner-outer differentiation gradient. Last, we applied it to specific differentiated neuronal populations such as glutamatergic and GABAergic neurons, as proof-of-concept that the digital birthdating 3D-maps could be used as a proxy to infer neuronal birthdate. As this protocol uses open-access tools and algorithms, it can be shared for standardized, accessible, tissue-wide cell population atlas construction.\n\n## Introduction\n\nGenerating a precise temporal cartography of cell populations in the three-dimensional (3D) embryonic brain is essential for understanding how brain morphogenesis impacts the position, and therefore function, of neuronal progenitors and neuronal clusters in normal and pathological conditions. Pioneer work in Drosophila provided 3D-registration atlases and software that can automatically find the corresponding landmarks in a subject brain, and map them to the coordinate system of a target brain (Heckscher et al., 2014; Peng et al., 2011). However, up to now, the incorporation of time \u2014and therefore information of tissue morphogenesis\u2014 in 3D-atlases is still one of the main challenges that needs to be solved.\n\nDigital 3D-atlases enable the exploration of brain structures in the 3D-context and can be updated to incorporate new information, which is essential for the exponential increase of knowledge. Existing gene expression 3D-atlases in larval and adult fish provide valuable tools (Chow et al., 2020; Jaggard et al., 2020; Kenney et al., 2021; Kunst et al., 2019; Ronneberger et al., 2012; Tabor et al., 2019). However, to incorporate the temporal component has been challenging, most probably because whole brain images are particularly hard to register across space and time, even though there are recent efforts aiming to make this more accessible (Dsilva et al., 2015; Fernandez and Moisy, 2020). Temporal digital 3D-atlases are essential to understand how the generation of brain cell diversity occurs concomitantly with brain morphogenesis, which results in a dramatic transformation from a simple tubular structure (e.g. the neural tube) to a highly convoluted structure (e.g. the brain). Thus, our goal was to provide an atlas allowing (i) the incorporation of time to enable morphogenesis studies, (ii) the quantification of 3D-patterns with a standardized method, (iii) the comparison of tissue shapes, and (iv) an easy access to the atlas data with user-friendly upgradability, without the need to send the data to the atlas-makers for processing. Such features of a digital atlas are crucial for studies that rely on 3D-topologies to understand how specific regions develop; moreover, to do this in zebrafish would enhance the use of zebrafish as human avatars in neurodevelopmental disorders by enabling to understand how specific territories respond to injury or gene disruptions.\n\nHere, we developed a new \u2018Digital Atlas-MAKER\u2019 pipeline (DAMAKER) that fulfills the previous requirements and can be used to create an expandable atlas of virtually any tissue in any organism. Further, it is able to perform data analysis and quantification mostly on a single platform, FIJI, which is already established as the standard for image analysis in the field. The expandable zebrafish digital 3D-atlas was created by combining in vivo imaging data from distinct transgenic embryos with the Fijiyama registration tool (Fernandez and Moisy, 2020), which allows multi-modal rigid registration, and the Trainable Weka Segmentation (TWS) (Arganda-Carreras et al., 2017) that leverages a limited number of manual annotations and permits data to be automatically segmented after a short training and to quantify tissue volumes. We applied DAMAKER to the monitoring of the growth of the neuronal differentiation domain in the context of the whole zebrafish hindbrain \u2014the embryonic brainstem\u2014, to study how cell differentiation and morphogenesis might be intertwined. We made use of the hindbrain, which is the most conserved vertebrate brain vesicle (Murakami et al., 2005) and undergoes tissue segmentation along the anteroposterior (AP) axis leading to the formation of seven rhombomeres (Fraser et al., 1990; Jimenez-Guri et al., 2010; Kiecker and Lumsden, 2005; Krumlauf and Wilkinson, 2021; Pujades, 2020). This morphogenetic process is accompanied with the initial neuronal differentiation, which starts prior 24hours post-fertilization (hpf) with a pronounced increase from 30hpf onwards (Voltes et al., 2019). Neuronal differentiation involves changes in cell proliferative capacity and an extraordinary displacement of neurons from their birth site, and occurs while other dramatic changes take place, such as the generation of the brain ventricle (Belzunce et al., 2020; Gutzman et al., 2008; Hevia et al., 2022; Lyons et al., 2003). Although previous work evoked the importance of the temporal order of neuronal differentiation in ascribing final neuronal position within specific circuits (Kinkhabwala et al., 2011; Pujala and Koyama, 2019; Wan et al., 2019), little is known about its impact in the final organization of differentiated neurons within the hindbrain.\n\nHere, we registered experimental whole zebrafish hindbrain images and mapped neuronal differentiation patterns with a unified spatial representation. We build up a digital 3D-hindbrain atlas in which signals corresponding to specific territories and differentiated neurons were merged. With these combinations, we could associate specific neuronal populations with anatomical landmarks and quantify complex volumetric data. Next, we performed a tissue wide neuronal birthdate analysis by using a method based in photoconverted fluorescent protein tracing in vivo (Caron et al., 2008), which permitted to distinguish early-born vs. late-born neuronal territories in live embryos. This allowed us to develop neuronal differentiation maps that revealed the remodeling of the neuronal progenitor and neuronal cluster domains over time. By generating these maps, we unveiled that early-born neurons were always located in the inner part of the differentiation domain and surrounded by younger neurons, generating an inner\u2013outer gradient of older vs. younger neurons. As a proof-of-concept, we demonstrated that this temporal 3D-atlas could be used as a proxy to infer the birthdate of given neuronal populations, as well as to analyze neurogenic defects. We believe that this tool \u2014the digital 3D-atlas maker, DAMAKER\u2014 will allow the integration of the information generated in other laboratories and will help ascribing neuronal birthdate and neuronal differentiation times upon gene disruption in zebrafish avatars for human diseases. This collaborative integration is essential for expanding our overall knowledge about how the brain is functionally organized, and therefore advancing brain research, medicine and brain-inspired information technology.\n\n## Results\n\nOur scientific interest was to monitor the dynamic growth of the neuronal differentiation domain in the context of the whole zebrafish hindbrain with the emphasis in how neuronal differentiation order or birthdate may prefigure cell position within the differentiation domain. For this, we developed a standardized and reliable 3D-imaging processing method \u2014the digital 3D-atlas maker or DAMAKER\u2014 that allowed us to generate digital 3D-models, to quantify volumes and compare tissues shape, and most importantly for us to incorporate time.\n\n### Developing a standardized, reliable 3D-image processing and quantification method\n\nBuilding upon previous work that reconstructed prototype 3D-atlases of whole embryos in Drosophila (Heckscher et al., 2014; Peng et al., 2011) and of larval or adult zebrafish (Chow et al., 2020; Jaggard et al., 2020; Kenney et al., 2021; Kunst et al., 2019; Ronneberger et al., 2012; Tabor et al., 2019), we aimed to create a digital 3D-atlas of the hindbrain neuronal differentiation domain that could incorporate time. To build it up, we designed a pipeline requiring the following steps: (i) registration of in vivo 3D-images displaying specific signals in order to align raw samples from different embryos (Figure 1A), (ii) segmentation of the 3D-images to generate labeling masks, each corresponding to a given marker or cell population (Figure 1B), and (iii) processing these masks to create average digital 3D-models (Figure 1C). In addition, the pipeline should allow to isolate specific signals from z-stack images in a semi-automatic manner in order to (i) quantify them along any body axes (Figure 1D) or calculate signal volumes upon time (Figure E), (ii) generate a digital 3D-atlas by intersection of several reference 3D-models (Figure 1F), and (iii) perform tissue shape comparisons (Figure 1G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig1-v2.jpg)\n\n**Figure 1.:** Schematic depiction of sample processing through the digital 3D-atlas making pipeline. (A) For image registration, acquired dual channel images from embryos are registered using the Fijiyama registration plugin in FIJI, the first channel (HuC:GFP signal in green) is aligned to a previously selected HuC signal which serves as reference orientation. The resulting transform file is then used to align the signal of interest (e.g. gad1b:DsRed displayed in magenta). (B) For image segmentation, Tg[HuC:GFP] embryos are used for supervised training of the Trainable Weka 3D-Segmentation algorithm. Images are provided to users, and each user inputs brush strokes on areas with signal and areas considered as background across the stack, in order to obtain a classifier (e.g. a set of filters and thresholds to be used by the algorithm to isolate the signal). Users\u2019 generated classifiers are compared by quantification of a dozen of HuC-signals from various embryos. User classifiers resulting in more than 10% variability among users (ANOVA test) are considered outliers (e.g. u4, user 4) and are not used for sample segmentation. For each embryo, as many 3D-binary masks as user-generated classifiers are created. (C) For processing, 3D-binary masks of a single embryo are averaged to obtain a users\u2019 average segmentation; this allows to assess the interuser segmentation variability and limits the human bias introduced by the supervised training. Signal similarity threshold between users can then be selected (here, consensus among all users was isolated). Users\u2019 average embryo 3D-models of a given condition (n=5) are then averaged together to obtain the embryo\u2019s averaged label. To select sample consensus threshold, we compare embryos\u2019 averaged labels at different thresholds with their negative imprint onto the neuronal differentiation domain. Signal consensus among at least three embryos seems to recapitulate best the original signal, with marginal overlap between the signal and its imprint. Sample consensus threshold is then applied to the embryos\u2019 averaged label to generate the final 3D-model, ready for the integration into the atlas. Several functions can be performed with DAMAKER such as (D) quantification of the signal ratio along body axes by virtually reslicing embryos\u2019 averaged models along the desired axis, (E) quantification of users\u2019 averaged label volumes and display them as a ratio of signal over the neuronal differentiation domain, (F) intersection of the 3D-model integrated in the atlas to assess overlapping or segregation of signals, and (G) analysis of the tissue shape.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013E) Dorsal average intensity projections (AIP) with anterior to the left, and (A\u2019\u2013E\u2019) transverse views through r5 overlaying different 72hpf embryos of the indicated transgenic lines (n=5 embryos each). Interindividual variability is displayed as a gray scale. Comparison of average signal was done prior to threshold among individuals. (F) Dot-plot displaying the quantification at 72hpf of the volume of the HuC signal (x107, \u03bcm3) in the different transgenic combinations. Tg[Mu4127;HuC:GFP] as Mu4127; Tg[neurog1:DsRed;HuC:GFP] as neurog1; Tg[isl1:GFP;HuC:KaedeRed] as isl1; Tg[vglut2a:DsRed:HuC:GFP] as vlgut2a; and Tg[gad1b:DsRed:HuC:GFP] as gad1b. Each dot corresponds to a different embryo (n=5 embryos each). Note that the HuC volume is comparable among different transgenic lines. Kruskal-Wallis ANOVA test followed by a Dunn\u2019s multiple comparison test; p>0.2. (G) Differences between individual segmented embryos and the resulting HuC volume 3D-models. Results are plotted as the percentage of volume difference from the model. Note that this difference never exceeded 10%. Scale bar, 50\u03bcm.\n\nSince we were interested in neuronal differentiation patterns, to establish a reference tissue signal we made use of Tg[HuC:GFP] embryos at 72hpf, a stage in which most of the cells have undergone neuronal differentiation and GFP is uniformly displayed in the whole neuronal differentiation domain (Hevia et al., 2022). Acquired 3D-images from different Tg[HuC:GFP] embryos (e1\u2013eY; n=5each) were registered to the reference by Fijiyama registration, in which rigid registration was favored, although non-rigid registration could be considered at the cost of sample shape variability. Then, the obtained transformation matrix could be applied to other signals, such as those labeling specific tissue domains, cell populations, etc (Figure 1A). After alignment of 3D-images, tissue segmentation was applied in order to generate binary masks for each labeling/staining (Figure 1B). Here, segmentation settings were at tissue scale, both in an effort to keep computing power low for pipeline accessibility and for our interest in cell populations, although single cell resolution could be achieved with nuclear reporter lines. In order to discern noise vs. signal in the raw data from each embryo, different users (u1\u2013uX; n=5) were invited to employ the Trainable Weka Segmentation (TWS) tool to train classifiers (one per user) (Figure 1B). In the case of low or sparse signals (or specific structures within a signal) specific training of the algorithm with different settings would be better to leverage the structural recognition capabilities of TWS. To reduce the potential impact of the human bias from the trained classifiers, we averaged the resulting segmented images from multiple users\u2019 trained classifiers (Figure 1B). In the case of having an outlier user, this classifier was not considered (as example, see u4 in Figure 1B as an outlier that was discarded). Accordingly, we generated as many binary 3D-masks as users (n=4; Figure 1B). The users\u2019 averaged embryo 3D-masks displayed a gradient, which represented the spatial similarity between users\u2019 segmentations. We selected the signals agreed by at least three users (Figure 1B), although this could be differently thresholded to display signal consensus among users, with the strength of the threshold setting up the diversity. For image processing, these embryo 3D-masks were averaged to merge information from all embryos (e1\u2013eY; n=5) to obtain the \u2018label 3D-model\u2019. As many label 3D-models as desired signals were generated, by reiteration of the whole process (Figure 1C). Each digital label 3D-model displayed a gradient, which represented the spatial similarity between embryos. To establish the most accurate consensus selection, we compared label 3D-models thresholded for different levels of consensus between embryos. We selected the signals displayed by at least 3 embryos, compared the distribution of the labeling between embryos, and built up the digital reference 3D-atlas (Figure 1C). To evaluate the accuracy of the registration, we assessed (i) the interindividual variability of different signals (Figure 1\u2014figure supplement 1A\u2013E,A\u2019\u2013E\u2019), (ii) the size of the neuronal differentiation territory (HuC-domain) in different transgenic backgrounds (Figure 1\u2014figure supplement 1F), and (iii) quantified the interindividual variability between the HuC volume of the individuals and the HuC volume of the generated 3D-model (Figure 1\u2014figure supplement 1G). Thus, this pipeline allowed us to (i) assess signal similarity between segmentations limiting the bias due to the users\u2019 subjectivity, (ii) obtain reliable 3D-tissue quantifications, (iii) produce a representative 3D-model of a label, (iv) estimate interindividual variability, and (v) build up a reference 3D-brain to be further used for spatiotemporal comparisons.\n\n### Building a multilayered digital 3D-atlas\n\nNext, we wanted to add multiple layers to the neuronal differentiation 3D-atlas. For this, we made use of double transgenic embryos displaying a fluorescence reporter in the neuronal differentiation domain that was used as a reference for alignment in one channel, and another fluorescence reporter of the specific cell population or territory of interest (Figure 2). In addition, we made use of the rhombomeres (r) 3 and 5 as anatomical landmarks to have a positional coordinate system on which to align the quantitative representation of the given signal distribution across the tissue. Thus, we imaged Tg[Mu4127;HuC:GFP] embryos, which displayed DsRed in r3 and r5 (Distel et al., 2009), and GFP in the neuronal differentiation domain (Figure 2A\u2013A\u2019). Upon rendering the processed 3D-model of the signal, we could observe the 3D-view of the neuronal differentiation r3 and r5 volumes (Figure 2\u2014video 1A). To monitor differences in the specific signal spatial distribution provided by Mu4127 within the neuronal differentiation territory, we obtained the volumes\u2019 value across body axes by taking sample segmentations, created \u2018virtual slices\u2019 along axes and quantified the signal ratio at each \u2018slice\u2019 (Figure 1D; Figure 2B). Accordingly, the signal distribution was concentrated in r3 and r5 along the anteroposterior (AP) axis, whereas it was similarly distributed along the mediolateral (ML) axis (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig2-v2.jpg)\n\n**Figure 2.:** (A, C, E, G, I) Dorsal maximal intensity projections (MIP) with anterior to the left, and (A\u2019, C\u2019, E\u2019, G\u2019, I\u2019) transverse views through r5 of registered embryos, in the Tg[HuC:GFP] background (72hpf). (A, C, E, G, I) display only the magenta signals such as r3 and r5 (Mu4127), neurog1, isl1, vglut2a and gad1b, whereas (A\u2019, C\u2019, E\u2019, G\u2019, I\u2019) display these signals and the HuC (green). Scale bar, 50\u03bcm. (B, D, F, H, J) Signal ratio distribution along the anteroposterior (AP) and mediolateral (ML) axes of different individual embryos (n=5; colored lines), with the average value displayed as magenta line. Position along the AP and ML body axes is indicated on the top of the graph. Black dashed lines parallel to the Y-axis correspond to r3 and r5 positions assessed by Mu4127 signal. Note in (D, H) the offset in the Y-axis for easier readability of the signal variations. Scale bar, 50\u03bcm.\n\nNext, we investigated the distribution of the differentiated neurons deriving from specific neuronal committed progenitors, according to their proneural gene expression (Guillemot, 2007), in this case neurog1. In Tg[neurog1:DsRed;HuC:GFP] embryos, we observed the striped-pattern distribution of neurog1-derivatives in the neuronal differentiated domain (Figure 2C\u2013C\u2019; Figure 2\u2014video 1B). The automatic quantification of the neurog1-volume displayed differences in the ratio of labeling along the AP axis (Figure 2D), supporting the observation of neuronal differentiated regions with less neurog1-derivatives when compared with more posterior domains (Figure 2C\u2013C\u2019, see white asterisk in the lateral r5). In addition, the more medial distribution of neurog1-derivatives in the hindbrain was observed (Figure 2D) when compared with the spinal cord as it was previously described (Belzunce et al., 2020). Thus, this quantitative analysis allowed to associate signal distribution to specific territories or cell populations. For mapping distinct neuronal differentiation programs, we first analyzed the spatial distribution of motoneurons by using Tg[isl1:GFP;HuC:KaedeRed] embryos and observed their ventral and medial position (Figure 2E\u2013E\u2019; Figure 2\u2014video 2A). Upon quantification, higher signal was observed in discrete patterns along the AP axis with a clear increase in the spinal cord (Figure 2F). We explored the specific neurotransmitter-expressing cell populations, considering the mainly expressed markers of excitatory (glutamatergic neurons) and inhibitory populations (GABAergic neurons) in the zebrafish hindbrain (Higashijima et al., 2004). Using Tg[vglut2a:DsRed;HuC:GFP] and Tg[gad1b:DsRed;HuC:GFP] embryos we observed the main contribution of glutamatergic neurons to the most dorsolateral neuronal differentiation domain (Figure 2G\u2013G\u2019), whereas GABAergic neurons allocated more medially (Figure 2I\u2013I\u2019). We built up the digital 3D-maps (Figure 2\u2014video 2B\u2013C) and quantified the distribution along the axes. We observed a smaller contribution of glutamatergic neurons to the r3-r5 region (Figure 2H), whereas GABAergic signal at this stage was enriched in r2 (Figure 2J) when compared to the rest of the hindbrain. This quantification recapitulated the spatially restricted domains of neurotransmitter expression (Figure 2G\u2019 and I\u2019) previously described (Kinkhabwala et al., 2011; Koyama et al., 2011; Pujala and Koyama, 2019). The overlay of the distinct digital 3D-maps provided information about the segregation of populations (Figure 2\u2014video 2D). Overall, the expression analysis of fluorescent reporter transgenic lines allows the virtual colocalization of signals, and therefore the model intersection in order to study specific subsets of neuronal populations and their spatial relationships.\n\n### Building the digital 3D-atlas of neuronal birthdate\n\nPrevious work demonstrated the importance of neuronal birthdate in ascribing neuronal position and function. The stripe patterning of alx-expressing neurons, which are involved in swimming behavior, is age-related (Kinkhabwala et al., 2011), and the position of the V2a cell body and the order of spinal projections in the hindbrain relies on their neuronal birth (Pujala and Koyama, 2019). Thus, we wanted to explore whether neuronal birthdate was a general rule that dictated the spatial distribution of differentiated neurons within the hindbrain.\n\nTo build birthdating 3D-maps of neuronal differentiation, we performed spatiotemporal analyses of neuron birthdating using Kaede photoconversion experiments as a tool to register temporality (Caron et al., 2008). In this case, KaedeGreen in Tg[HuC:Kaede] embryos was in vivo photoconverted to KaedeRed at different developmental stages (24, 36 or 48hpf), and embryos were imaged either at 48hpf or 72hpf to assess the relative position of neurons born at different times within the differentiation domain (Figure 3; earlier-born neurons KaedeRed-cells vs. older-born as KaedeGreen-cells). To generate the birthdate 3D-map at 48hpf, we first photoconverted the HuC:KaedeGreen at 24hpf and imaged embryos at 48hpf. We observed that the onset of neuronal differentiation was before 24hpf and that the first differentiated neurons located more ventral and medial than late-born cells (Figure 3A\u2013A\u2019; see magenta vs. green cells in 3 A\u2019). When we labeled the neurons born before 36hpf we appreciated that neuronal differentiation dramatically increased between 24hpf and 36hpf, since the magenta territory in this case was larger, and that later differentiated neurons piled up on the top of the previously differentiated ones (Figure 3B\u2013B\u2019; see magenta vs. green cells in 3B\u2019). We further analyzed the remodeling of the neuronal differentiation territory, by generating the reference 3D-models of the early-born (24hpf) and late-born (36hpf) neurons in the context of the whole differentiated neuronal domain at 48hpf (Figure 3\u2014video 1A\u2013B; see in green neurons born between 24 and 36hpf, and in blue those born between 36 and 48hpf). We compared them to determine whether the temporal order of neuronal differentiation prefigured the spatial distribution of neurons in the tissue. We overlapped and color-coded them according to the neuronal birthdate, and observed that neurons born at different stages were precisely organized at 48hpf (Figure 3C\u2014C\u2019; see youngest neurons in blue, neurons differentiated between 24 and 36hpf in green, and the oldest ones in magenta). Many neurons differentiated between 24 and 36hpf (compare Figure 3A\u2019 and B\u2019), and they surrounded the existing differentiated neurons generating an inner-outer differentiation gradient (Figure 3C\u2019). To demonstrate that indeed newly born cells were orderly incorporating into the neuronal differentiation domain, we combined HuC:KaedeGreen photoconversion with an additional age-labeling method such as EdU-incorporation. We photoconverted HuC:KaedeGreen at 24hpf, pulsed embryos at 30hpf with EdU to label proliferating cells, and let them grow until 48hpf (Figure 3D). We observed cells with EdU-incorporation exclusively in the newly differentiated domain, stacking dorsally, with no signal indicating a migration of newly born neurons in the older neuronal domain, therefore confirming the establishment of segregated domains according to neuronal differentiation timings (Figure 3E\u2014E\u2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Dorsal maximal intensity projections (MIP) showing only the HuC:KaedeRed, and (A\u2019\u2013B\u2019) transverse views through r5 displaying both HuC:KaedeGreen and HuC:KaedeRed at 48hpf. HuC:KaedeGreen was photoconverted at the indicated times (PhC). Note that HuC:KaedeRed is displayed in neurons born before the time of photoconversion, and HuC:KaedeGreen in neurons born after. (C\u2013C\u2019) Neuronal birthdate 3D-map at 48hpf resulting from the intersection of photoconversion 3D-models. Neurons produced before 24hpf are depicted in magenta, those produced between 24hpf and 36hpf are in green, and the blue regions display neurons produced between 36hpf and 48hpf (n=5 embryos each). (D) Scheme depicting the photoconversion experiment followed by EdU-treatment. HuC:KaedeGreen was photoconverted at 24hpf, embryos were let to develop, pulsed with EdU for 6hr at 30hpf, and imaged at 48hpf. (E\u2013E\u2019) Tg[HuC:KaedeGreen] embryo displaying EdU (magenta) and HuC (green) in sagittal and transverse views, respectively. Note that EdU-cells are within the most dorsal part of the hindbrain, specifically in the progenitor domain and in the dorsal HuC domain (E\u2019, see white arrow). The contour of the neural tube in (E\u2019) is indicated with a white dashed line. (F\u2013H) Dorsal maximal intensity projections (MIP) showing only the HuC:KaedeRed, and (F\u2019\u2013H\u2019) transverse views through r5 displaying both HuC:KaedeGreen and HuC:KaedeRed at 72hpf. HuC:KaedeGreen was photoconverted at the indicated times (PhC). (I\u2013I\u2019) Neuronal birthdate 3D-map at 72hpf resulting from the intersection of photoconversion 3D-models. Neurons produced before 24hpf are depicted in magenta, those between 24 and 36hpf in green, the ones between 36 and 48hpf in blue, and neurons produced between the last photoconversion (48hpf) and the time of acquisition (72hpf) in yellow (n=5 embryos each). Dorsal and sagittal views display anterior to the left. Scale bar, 50\u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, C) Total HuC volume at 48hpf and 72hpf, respectively, of Tg[HuC:Kaede] embryos in which KaedeGreen was photoconverted at the indicated stages (each dot corresponds to an embryo; n=5 embryos each). Note that there are no significant differences in the HuC volumes between embryos. (A) Welch\u2019s two-tailed t-test, and (C) ordinary one-way ANOVA followed by Tukey\u2019s multiple comparison test; p>0.2. (B, D) Difference between individual segmented embryos at 48hpf and 72hpf and their resulting HuC volume 3D-models. Results are plotted as the percentage of volume difference from the 3D-model. Note that they do not exceed 15% in any of the cases. (E\u2013G) Dorsal average intensity projections (AIP) with anterior to the left and (E\u2019\u2013G\u2019) transverse views through r5, resulting from the overlay of different users\u2019 averaged Tg[HuC:Kaede] embryos at 72hpf, in which KaedeGreen was photoconverted at the indicated stages (n=5 embryos each). Interindividual variability is displayed as a gray scale. (H\u2013J, H\u2019\u2013J\u2019) 3D-models of Tg[HuC:Kaede] embryos acquired at 72hpf showed as dorsal AIP or transverse views, in which HuC:KaedeGreen was photoconverted at 24 and 36hpf (H\u2013H\u2019), at 36 and 48hpf (I\u2013I\u2019) or at 24 and 48hpf (J\u2013J\u2019), and overlaid on each other. Neurons produced before the earliest of the two photoconversions are depicted in black, those produced in between the two times of photoconversion are in magenta, and the neurons produced from the last time of photoconversion and the time of acquisition in white. Scale bar, 50\u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A, C) Quantification of the relative contribution of different birthdated neurons to the neuronal differentiation domain at 48hpf and 72hpf, respectively. The ratio of early-born neurons over the total neuronal differentiation domain was plotted for each individual embryo (n=5 embryos each). (A) Welch\u2019s two-tailed t-test, and (C) ordinary one-way ANOVA followed by Tukey\u2019s multiple comparison test; p<0.002 (**) p<0.001 (***). (B, D) Relative contribution of late-born and early-born neurons along the anteroposterior (AP), dorsoventral (DV) and mediolateral (ML) axes. X-axis displays the number and position of virtual slices along the given body axis. The ratios of early-born neurons over the total neuronal differentiation domain were plotted as mean (dashed line) and non-linear regression (solid line). Color-coded lines correspond to the neurons born at the indicated embryonic stages (magenta, green and blue, born before 24hpf, 36hpf, and 48hpf, respectively). Position along the axes is indicated on the top.\n\nTo seek the impact of morphogenesis in the position of different birthdated neurons, we expanded our study to 72hpf, in which most of the cells have already differentiated. As before, we observed that early differentiated neurons were located more ventrally and medially, and that late-born cells piled up (Figure 3F\u2013H, 3F\u2019\u2013H\u2019; see magenta vs. green cells in 3F\u2019\u2013H\u2019). To monitor possible differences in the spatiotemporal distribution within the neuronal differentiation domain, we generated the neuronal birthdate 3D-map at 72hpf and observed that the differentiation capacity diminished with time (Figure 3I\u2013I\u2019\u2019; see small yellow domain). Indeed, by 48hpf, almost the whole differentiation domain was already occupied by previously differentiated neurons (Figure 3I\u2013I\u2019\u2019; see blue, green and magenta domains). This continuous birth of differentiated neurons could be clearly observed by assessing the relative contribution of early- vs. late-born neurons to the neuronal differentiation domain (Figure 3\u2014video 2A\u2013C; see youngest neurons in yellow, those differentiated between 36hpf and 48hpf in blue, and between 24hpf and 36hpf in green). The intersection of the different neuronal differentiation intervals allowed to better appreciate the inner-outer neuronal differentiation gradient (Figure 3I\u2019).\n\nTo demonstrate that the birthdating 3D-maps displayed low interindividual variability, we verified that photoconversion of the HuC:KaedeGreen at different stages was consistent in all the analyzed embryos. For this, we first checked that the overall HuC-volumes did not dramatically change among embryos that underwent HuC:KaedeGreen photoconversion at different stages (Figure 3\u2014figure supplement 1A, C). Second, we calculated the difference between the HuC volume of the individuals and the generated models and showed that average individuals\u2019 variability from the model did not exceed 15% (Figure 3\u2014figure supplement 1B, D). And third, we overlaid the HuC:KaedeRed domains in 72hpf embryos that were generated at different times, and displayed them as a gray gradient (Figure 3\u2014figure supplement 1E\u2013G,E\u2019\u2013G\u2019). Next, we verified that the HuC:KaedeRed cells labeled in an early conversion were included in the HuC:KaedeRed domain labeled in a late conversion. For this, we overlaid the differentiation domains contributed at each time interval (Figure 3\u2014figure supplement 1H\u2013J,H\u2019\u2013J\u2019). Overall, these observations allowed us to confidently use the generated birthdating 3D-maps to estimate the importance of neuronal birthdate in predicting the neuronal position within the HuC-domain.\n\nNext, we compared the territory occupied by neurons differentiating at distinct embryonic stages by quantifying the volume size of the neuronal differentiation domains. We detected that at 48hpf, of the whole differentiated domain (12.07 [SD \u00b1 1.36]\u00d7106 \u03bcm3), only a small part comprised neurons differentiated before 24hpf (3.42 [SD \u00b1 1.56]\u00d7106 \u03bcm3 early-born neurons vs. 8.64 [SD \u00b1 0.86]\u00d7106 \u03bcm3 late-born neurons), whereas most of the differentiated neurons arose before 36hpf (9.61 [SD \u00b1 0.68]\u00d7106 \u03bcm3) and the rest differentiated between 36 and 48hpf (3.10 [SD \u00b1 0.35]\u00d7106 \u03bcm3). This timely growth in the differentiated neuronal domain could be clearly observed when the relative contribution of early- vs- late-born neurons as compared to the whole neuronal differentiation territory at 48hpf was plotted (Figure 3\u2014figure supplement 2A). When quantifying the signal ratio along the axes, we could observe similar dynamics along the AP and ML axes between 24hpf and 36hpf, and a clear difference along the DV demonstrating that neurons born at 24hpf located more ventrally than neurons born at 36hpf (Figure 3\u2014figure supplement 2B). When volumes were quantified at 72hpf, we observed that only a small part of the differentiation domain came from neurons born before 24hpf (2.77 [SD \u00b1 1.23]\u00d7106 \u03bcm3 for early-born vs. 11.88 [SD \u00b1 1.28]\u00d7106 \u03bcm3 for late-born). Most neurons underwent differentiation between 24hpf and 48hpf, with half of the differentiated neurons arising before 36hpf (6.75 [SD \u00b1 2.19]\u00d7106 \u03bcm3 born before 36hpf vs. 7.58 [SD \u00b1 2.37]\u00d7106 \u03bcm3 after 36hpf) and the rest were differentiated between 36 and 48hpf (11.19 [SD \u00b1 1.09]\u00d7106 \u03bcm3 born before 48hpf vs. 2.99 [SD \u00b1 0.90]\u00d7106 \u03bcm3 after 48hpf). When the ratio of neurons born at different stages over the whole neuronal differentiation domain was assessed, a steady increase of neuronal differentiation domain was observed (Figure 3\u2014figure supplement 2C; 24hpf: 0.21 \u00b1 0.04; 36hpf: 0.47 \u00b1 0.16; 48hpf: 0.79 \u00b1 0.07). Upon quantifying the signal ratio along the axes, the domains corresponding to early- vs. late-born neurons followed the same trend with no main differences along AP and ML axes (Figure 3\u2014figure supplement 2D; e.g., the magenta, green and blue lines did not display major changes in the multiple virtual slices). As expected, when the analysis was performed along the DV axis, differences in cell allocation relying on the neuronal birthdate could be appreciated, with early-born neurons (24-36hpf) displaying a more ventral enrichment (Figure 3\u2014figure supplement 1D, see DV-axis graph).\n\nOverall, the overlaying of birthdating 3D-maps showed that most of the neuronal differentiation events occurred between 24 and 48hpf, and early-born neurons were always located in the inner part of the differentiation domain and surrounded by younger neurons, generating an inner-outer gradient of early-born vs. late-born neurons. This suggested that the position of neurons relied on their neuronal birthdate, and revealed the the importance of morphogenesis for remodeling the differentiation domain.\n\n### The birthdating 3D-atlas as a proxy to infer neuronal differentiation order\n\nOur next goal was to investigate whether position in the neuronal differentiation domain at late embryonic stages could be used as a proxy for neuronal birthdating. As a proof-of-concept, we used the Tg[vglut:DsRed] and Tg[gad1b:DsRed] lines, which display DsRed in the glutamatergic and GABAergic neurons, respectively (Satou et al., 2013). To dissect when glutamatergic neurons were born, we generated the 3D-models of neuronal differentiation of Tg[vglut2a:DsRed] at 48 and 72hpf, and intersected them with the birthdate 3D-maps created in Figure 3, in such a manner that glutamatergic neurons were color-coded according to their birthdate (Figure 4A\u2014A\u2019 and B\u2014B\u2019). Glutamatergic neurons contributed in a big proportion to the differentiation domain, and were born during all the analyzed temporal windows (Figure 4\u2014video 1A\u2013B). They displayed the inner-outer distribution depending on birth-time, with the oldest cells cells in the inner domain (see magenta cells in Figure 4A\u2019\u2013B\u2019; Figure 4\u2014video 1A\u2013B), and the youngest neurons in the most outer position (see blue and yellow domains in Figure 4A\u2019\u2013B\u2019; Figure 4\u2014video 1A\u2013B). In the case of GABAergic neurons, we took the same approach and intersected the 3D-model of Tg[gad1b:DsRed] embryos on the birthdate 3D-map, and color-coded them according to the differentiation time. Some GABAergic neurons in r3 and r5 were born as early as 24 hpf (Figure 4C\u2013C\u2019; Figure 4\u2014video 1C\u2013D). These observations suggested that an important part of glutamatergic and GABAergic neurons was born between 24 and 36hpf, although some were born earlier and later too. Accordingly, when assessing the relative contribution of neurons born at different intervals to the corresponding neuronal populations, we observed that of the total glutamatergic and GABAergic neurons, approximately 20% and 30%, respectively, were contributed by cells born before 24hpf, 60% by cells born between 26 and 36hpf, and only by a small percentage of neurons born between 36 and 48hpf (Figure 4E\u2013F). Comparison of the growth dynamics of both populations at 72hpf showed that they were slightly different, with glutamatergic neurons produced earlier than GABAergic neurons (Figure 4G). Overall, this analysis indicated that position of differentiated neurons at 72hpf could recapitulate neuronal birthdates.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Dorsal average intensity projections (AIP) with anterior to the left, and (A\u2013D\u2019) transverse views through r5, of the glutamatergic (A\u2013B) and GABAergic (C\u2013D) 3D-models intersected with the birthdating 3D-map at 48hpf (A, C) and at 72hpf (B, D). vglut2a or gad1b neurons produced before 24hpf, between 24 and 36hpf, between 36 and 48hpf and between 48 and 72hpf are color-coded as indicated. The differentiated domain is depicted in black. (E\u2013F) Dot-plots showing the relative contribution to the corresponding vglut2a/gad1b-neuronal differentiation domains at 48hpf of neurons born at the indicated time intervals. (G) Interleaved bar-plot showing the relative contribution of glutamatergic and GABAergic neurons generated at different time intervals to the vglut2a/gad1b-neuronal differentiation domains at 72hpf, respectively. (E\u2013F) RM one-way ANOVA with Tukey\u2019s multiple comparison test, and (G) two-way ANOVA with \u0160\u00edd\u00e1k\u2019s multiple comparisons test; p<0.033 (*) p<0.002 (**) p<0.001 (***). (H\u2013H\u2019\u2019) Transverse views of a 24hpf Tg[HuC:GFP] embryo hybridized with vglut2a (green) and gad1b (magenta), and immunostained with HuC (gray). Images are displayed as the overlay of gad1b and HuC (H), vglut2a and HuC (H\u2019), and the merge of the three (H\u2019\u2019). Note that already at 24hpf, there are vglut2a and gad1b cells within the HuC domain. The neural tube contour is depicted with a white dashed line. Scale bar, 50\u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Signal ratio distribution along the dorsoventral (DV) and mediolateral (ML) axes at 48hpf (A, C) and 72hpf (B, D) of glutamatergic (A\u2013B) and GABAergic (C\u2013D) neurons differentiated at distinct time intervals (magenta, before 24hpf; green, between 24 and 36hpf; blue, between 36 and 48hpf; yellow, between 48nd 72hpf), with the average values displayed as dashed lines and non-linear regression as solid lines. Position along the axes is indicated on the top.\n\nTo demonstrate that indeed this could be used as a proxy to infer birthdate, and that there were glutamatergic and GABAergic neurons at 24hpf, we performed in situ hybridizations with vglut2a and gad1b probes at early stages of embryonic development while monitoring the neuronal differentiation domain. Indeed, glutamatergic and GABAergic neurons were already specified at 24hpf and they were located within the HuC territory (Figure 4H\u2013H\u2019\u2019), although in our hands the GABAergic transgenic line did not display the reporter expression at this stage. Thus, these results demonstrate that the neuronal birthdating 3D-map can be used as a proxy to infer neuronal differentiation order, and widens the use of the digital 3D-atlas. To go deeper in the differentiation dynamics of the glutamatergic and GABAergic populations, we quantified the ratio of neurons differentiated in distinct time windows along the axes (Figure 4\u2014figure supplement 1). Analysis at 48hpf showed that the glutamatergic populations born between 24 and 36hpf and between 36 and 48hpf underwent a drastic displacement along the dorsoventral (DV) axis, when compared to the same populations observed at 72hpf. The 24-36hpf neuronal subset, which displayed a relatively homogenous distribution along the DV axis when observed at 48hpf, was medially located at 72hpf (engulfing the 0-24hpf subset). The 36-48hpf subset, mostly dorsal when observed at 48hpf, was distributed both ventrally and dorsally when observed at 72hpf (Figure 4\u2014figure supplement 1A\u2013B). These observations support the idea that newly produced neurons initially located dorsally were displaced towards ventral, resulting in the formation of the inner to outer gradient of neuronal differentiation. In addition, the medio-lateral distribution of the neurons produced at different time intervals recapitulated the different allocations of late born glutamatergic and GABAergic neurons, with the 48-72hpf subset of glutamatergic neurons more laterally located than the GABAergic 48-72hpf subset, which was enriched medially (Figure 4\u2014figure supplement 1B, D).\n\n### Tissue shape analysis reveals defects in neurogenesis and the remodeling of the neuronal differentiation domains\n\nTo take this newly developed pipeline one step further we tested whether it could serve as a proof-of-concept to analyze aberrant neurogenesis. For this, we disturbed embryonic neurogenesis by conditionally inhibiting the Notch-pathway, which has been demonstrated to play an important role during hindbrain neurogenesis (Hevia et al., 2022; Nikolaou et al., 2009). We made use of photoconversion experiments in Tg[HuC:Kaede] embryos to discern early-born vs. late-born neurons, conditionally inhibited Notch-signaling for a short time (only affecting to newly generated neurons), and embryos were then imaged at 72hpf (Figure 5A). When comparing control embryos with those in which Notch-signaling was downregulated, we observed an increase in newly differentiated neurons that dramatically impacted in the early-born neuronal domain, since newer neurons occupied the most dorsal part of the hindbrain displacing the older neurons (Figure 5B\u2013B\u2019 and C\u2013C\u2019) as previously described (Belzunce et al., 2020; Hevia et al., 2022). Accordingly, upon quantification of the neuronal differentiation domain we observed a significant increase of the HuC volume in treated embryos (Figure 5D), and newly produced neurons were mainly localized in the medial domain (Figure 5E). To deepen our knowledge on the impact of the neurogenesis increase and the remodeling of the hindbrain, we developed a protocol for tissue shape comparison. We generated the 3D-models of the control embryos and of those with higher neurogenesis (in which Notch-signaling was inhibited), extracted the mesh from them and measured the signed distance between the two mesh surfaces in more than 400,000 points across the models. Then, the measurements were displayed as a color-coded map on the control model. When we compared the rendered hindbrains of both groups of embryos we observed a consistent difference in the overall tissue shape, mainly in the dorsomedial differentiation domain (Figure 5F\u2013F\u2019; see color-coded legend showing in blue the highest differences; Figure 5\u2014video 1). This result was supported by the previous observation in which the brain ventricle was distorted due to the increase of neurons. The increased differentiated domain volume was visible mainly in the dorsomedial part, which was occupied by new neurons and remodeled the neuronal differentiation domain.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/78300/elife-78300-fig5-v2.jpg)\n\n**Figure 5.:** (A) Scheme with the outline of the experiment. HuC:KaedeGreen was photoconverted at 48hpf, embryos were incubated with the gamma-secretase inhibitor LY411575 during 4h, and imaged at 72hpf. As control, HuC:Kaede photoconverted non-treated embryos were used. (B\u2013C, B\u2019\u2013C\u2019) Transverse views through r3 and r5 of control (B\u2013B\u2019) and LY411575-treated (C\u2013C\u2019) embryos. Note the increase of the HuC:KaedeGreen domain upon conditionally inhibiting Notch-signaling, and the consequently remodeling of the HuC:KaedeRed domain. (D) Dot-plot displaying the neuronal differentiation volume in control and LY411575-treated embryos (n=5 embryos each). Welch\u2019s two-tailed t-test; P<0.002 (**). Note the increase upon Notch-inhibition. (E) Quantification of the HuC:KaedeGreen volume in control and treated embryos along the ML axis. Note the accumulation of neurons in the medial differentiation domain of treated embryos. The average value is displayed as solid line and the non-linear regression as dashed line (n=5 embryos each). (F\u2013F\u2019) Shape comparison analysis of the neuronal differentiation domain between control and LY411575-treated embryos. Overlay of total 3D-neuronal volumes of control and treated embryos in dorsal (F) and ventral (F\u2019) views. Color-coded legend indicates the signed distance between the two conditions. Note that the dorsal part is bluer compared with the ventral part, due to the accumulation of more neurons in this domain (n=5 embryos each). Scale bar, 50\u03bcm.\n\n## Discussion\n\nOne of the main current challenges in biology is the 3D-anatomical reconstruction of the tissues\u2019 growth over time together with the cell lineage histories, which requires to extract meaningful biological information from large imaging datasets. Some of the bottlenecks are the required computing power for the visualization and analysis of the data volumes, and the need of user-friendly tools to be paired with imaging techniques. Here, we developed a digital 3D-atlas maker (DAMAKER), which is a dynamic and expandable 3D-tool for monitoring the temporal changes in growth and shape during tissue morphogenesis. We built a digital representation of the developing vertebrate hindbrain from 3D-imaging data collected at different times, which can be used for further quantitative analysis and multilevel modeling. Our goal is to share an established protocol using open-access tools and algorithms that allow standardized and accessible tissue-wide cell population atlas construction and can be used to create an expandable atlas of any tissue in any organism.\n\nIn this work, our interest was to explore how neuronal differentiation and morphogenesis might be intertwined during hindbrain development. For this, we registered experimental whole hindbrain images and mapped neuronal differentiation patterns with a unified spatial representation, using confocal imaging setup and leveraging cross-platform segmentation and registration tools. To improve comparison of various signals across embryos that requires an alignment/registration, which is often done manually and is very time-consuming, we used the Fijiyama plugin in FIJI (Schindelin et al., 2012). This allowed a multi-modal automatic rigid registration process and a large range of customization, and it permitted the application of a previously computed transform; namely, an alignment can be computed using one channel of an embryo matching the chosen reference and this can be applied to another channel that shares no features with the reference signal. This enables the use of virtually any signal previously added to the atlas, as reference to align others.\n\nThe quantitative evaluation of datasets often involves manual annotation, which is time-consuming, introduces biases and often constitutes the major constraint in an evaluation pipeline. To overcome this problem, we used the Trainable Weka Segmentation 3D (TWS), (Arganda-Carreras et al., 2017), which combines the image processing toolkit FIJI with the state-of-the-art machine learning algorithms provided in the latest version of the data mining and machine learning toolkit Waikato Environment for Knowledge Analysis (WEKA) (Hall et al., 2009). This tool is modular, allows sophisticated data mining processes to be built from the wide collection of base learning algorithms and tools provided, is open-sourced, and can be easily used as a plugin of FIJI. Users\u2019 trained classifiers, which are a set of filters and thresholds determined by the algorithm to best match input from the user, can be used repeatedly to segment each dataset. By keeping our pipeline in the FIJI ecosystem, we aim at providing a user-friendly tool to share data, upgrade methodology and adapt the pipeline to a specific experimental set up (model organism, organ etc), thereby making it accessible to anyone.\n\nThe digital 3D-brain atlases are essential for neurobiology because they allow to address new questions that can not be answered by the use of the available 2D-atlases. The addition of time as a key parameter is an asset, since it will permit to follow cells upon time, and therefore cell displacements and tissue growth. For this, we made use of an in vivo cell birthdating system that allowed us to monitor intervals of neuronal differentiation (Caron et al., 2008). Thus, this temporal registration using data acquired in vivo at different developmental stages provides important advantages, as it allowed us to (i) dissect the final location of distinct birthdated cell populations, and (ii) obtain a whole-cell population coverage by analyzing the whole differentiated territory, while maintaining the in vivo positioning of cells within the structure. Until now, most of the currently used approaches either lack whole population coverage or are limited by expression timing of the gene or transgene; more importantly, although they permit coverage of the whole cell population, they do not allow the user to foreshadow the birthdate of a given cell population at the time of interest. Here, with the combination of photoconversion experiments as a tool to register temporality of neuronal differentiation and DAMAKER, we provide neuronal birthdating 3D-maps and revealed that the order of neuronal differentiation prefigured the spatial distribution of neurons in the hindbrain, with an inner-outer gradient of temporal differentiation.\n\nUsually, expression of the reporter genes in transgenic lines is delayed as compared to the gene expression onset, unless the reporter has been inserted within the given gene locus. Now, we can specifically knock-in genes within a targeted genome site thanks to the CRISPR-Cas technology, but most of the available \u2014and very valuable\u2014transgenic lines were (and still are) generated with random insertion systems that do not always recapitulate the right onset of gene expression. Thus, our tool can be very useful for predicting neuronal birthdates just by analyzing the position of neurons in the differentiation domain as we showed with glutamatergic and GABAergic neurons. Besides that, this developed digital platform will be useful to interrogate phenotypes in neurological diseases, and zebrafish avatars from human neurological disorders could be analyzed in a very simple manner. As a proof-of-concept, we show tissue shape comparisons after modulating neurogenesis using pharmacological treatments. Thus, the combination of several features can provide computational models allowing to merge information from several high-throughput experiments to enlarge our reductionist view, and implement these digital tools for neuronal disorder studies.\n\nIn addition, brain morphogenesis studies could use our digital atlas-maker tool, which maps neuronal differentiation domains in the embryonic brain over time and can be easily shared. In the future, DAMAKER can be further improved by using batch processing algorithms (e.g., to assess the effects of pharmacological treatments or gene disruptions) or by adjusting for more geometrically complex tissues or for tissues with less alignment features (such as heart). Last but not least, this pipeline could be applied to time-lapse videos by repeating the process for each frame. This approach will help us to fill the knowledge gap between gene regulatory networks, cell populations and tissue architecture, as it will allow to follow the dynamic events that pattern the early embryonic organs as they happen within the intact system.\n\n## Materials and methods\n\n### Ethics declarations and approval for animal experiments\n\nAll procedures were approved by the institutional animal care and use ethic committee (Comit\u00e8 Etica en Experimentaci\u00f3 Animal, PRBB) and the Generalitat of Catalonia (Departament de Territori i Sostenibilitat), and implemented according to National and European regulations. Government and University veterinary-inspectors examine the animal facilities and procedures to endure that animal regulations are correctly followed. The PRBB animal house holds the AAALAC International approval B9900073. All the members entering the animal house have to hold the international FELASA accreditation. The Project License covering the proposed work (Ref 10642, GC) pays particular attention to the 3Rs.\n\n### Zebrafish strains\n\nEmbryos were obtained by mating of adult fish using standard methods. All zebrafish strains were maintained individually as inbred lines. M\u00fc4127 transgenic line was used as landmark of rhombomeres 3 and 5; it is an enhancer trap line in which the KalTA4-UAS-mCherry cassette was inserted into the 1.5Kb region downstream of egr2a/krx20 gene (Distel et al., 2009). The Tg[neurog1:DsRed] (Drerup and Nechiporuk, 2013) labels neuronal committed cells and the neurog1-derivatives. Tg[isl1:GFP] line labels motoneurons (Higashijima et al., 2000). Tg[HuC:GFP] (Park et al., 2000) and Tg[HuC:Kaede] (Harrison et al., 2014) lines were used to label the whole neuronal differentiated domain. To label GABAergic and glutamatergic neurons, Tg[gad1b:lox-DsRed-lox-EGFP] and Tg[vglut2a:lox-DsRed-lox-EGFP] transgenic lines (Satou et al., 2013) (denoted Tg[gadb1:DsRed] and Tg[vglut2a:DsRed], respectively) were used.\n\n### Contact for reagent and resource sharing\n\nFurther information and requests for resources and reagents should be directed to Cristina Pujades (cristina.pujades@upf.edu).\n\n### Confocal imaging samples\n\nZebrafish embryos were treated with phenylthiourea (PTU) at 24hpf, prior to being anesthetized with tricaine and mounted dorsally in 0.9% low melting point agarose on glass-bottom Petri dishes (Mattek) at the desired time. Images were acquired with a Leica SP8 system using PMT or HyD3 detectors and a 20\u00d7glycerol immersion objective, HCX PL APO Lambda blue 20\u00d7/0.7 argon laser 30%, Diode 405 nm (DPSS 561; Ready Lasers). z-stacks were recorded with 0.57\u00d70.57 \u00d7 1.19 \u03bcm voxel size. Gain was adjusted to each signal in order to display as little burnt signal as possible.\n\nStained fixed samples were imaged on a Leica SP8 inverted confocal microscope with 20\u00d7glycerol immersion objective and hybrid detectors. For xyz confocal cross-sections, z-stacks were acquired with a 1.194 \u03bcm z distance.\n\n### Photoconversion experiments\n\nHuC:KaedeGreen to HuC:KaedeRed photoconversion was carried out at the indicated embryonic stages with UV light (\u03bb=405 nm) using a 20\u00d7objective in a Leica SP8 system. Upon exposure to UV light, Kaede protein irreversibly shifts emission from green to red fluorescence (\u03bb=516\u2013581 nm). Proper photoconversion was monitored by the appearance of strong KaedeRed signal under excitation with a 543 nm laser, and the disappearance of KaedeGreen. After photoconversion, embryos were either imaged or returned to embryo medium with PTU in a 28.5 \u00b0C incubator to let them grow until the desired stage.\n\n### Whole-mount in situ hybridization\n\nEmbryo whole mount in situ hybridization was adapted from Thisse and Thisse, 2008. The gad1b riboprobe (Zhang et al., 2020) encompassing the nucleotides 1104\u20132334 of accession number AB183390 was used. The gad1b template was generated by PCR amplification by adding the T7 promoter sequence (indicated by capital letters) to the reverse primer (gad1b Fw 5\u2019\u2014 gat ggt tgc gcg gta taa \u20143\u2019; gad1b Rev 5\u2019\u2014 ata tta ata cga ctc act ata gCT TCG TTA AAA GGG TGC \u20143\u2019). The vglut probe was as described in Higashijima et al., 2004. For fluorescent in situ hybridization, the DIG-labeled probe was detected with TSA-Cy3.\n\n### In toto embryo immunostaining\n\nFor immunostaining, 4% PFA-fixed embryos were permeabilized with 10mg/ml proteinase K during different times according to the developmental stage (in this case 24\u201328hpf, 5min), blocked in 2% BSA, 5% goat serum, 0.1% Tween20 in PBS for 3hr at room temperature, and then incubated overnight at 4\u00b0C with the primary antibody. The primary antibody used was mouse anti-HuC (1:400). After extensive washing with PBST, embryos were incubated overnight at 4\u00b0C with secondary antibody conjugated with Alexa Fluor 633 (1:500).\n\n### EdU experiments\n\nTg[HuC:Kaede] sibling embryos were photoconverted at 24hpf, and after 6 hr acclimatation the embryos were placed in embryo medium supplemented with 400 \u03bcM EdU (Click-iT EdU Imaging Kit, ThermoFisher Scientific), 2% DMSO and PTU. The embryos were immediately placed on ice for 30 min, and later incubated at 28.5 \u00b0C for 5 hr 30 min. Then, embryos were rinsed twice in embryo medium with PTU and grown until 48hpf stage. Embryos were fixed in 4%PFA for 4 hr on a shaker, washed, and treated with proteinase K (1:1000 in PBST) for 18 min. After washing them in PBST, they were fixed in 4%PFA for 30 min, washed and revealed with the Click-iT EdU Imaging Kit following manufacturer\u2019s protocol. Finally, to recover protein fluorescence, embryos were washed in PBS with 2%BSA and 40 mM EDTA overnight at 4 \u00b0C on shake (Bourge et al., 2015). The next day they were mounted for imaging.\n\n### Pharmacological treatments\n\nTg[HuC:GFP] embryos were treated with 10\u03bcM of the gamma-secretase inhibitor LY411575 (Sigma-Aldrich) and Tg[HuC:GFP] non-treated were used as control. The treatment was applied into the fish water at 48hpf during 4hr at 28.5\u00b0C. Then, embryo medium was changed and they were let to develop until 72hpf, mounted and in vivo imaged under a Leica SP8 confocal microscope.\n\n### Image processing and analyses\n\n#### Registration algorithm\n\nFijiyama registration FIJI plugin (Fernandez and Moisy, 2020), a registration tool for 3D multimodal time-lapse imaging, was used with four steps of automatic rigid registration for each alignment of raw samples: 2 steps without and 2 steps with subpixel accuracy; oversized images subsampling was left on. HuC-channel of all samples was registered to a selected HuC signal from a Tg[vglut2a:DsRed;HuC:GFP] 72hpf embryo. Computed transform was then applied to the signals of interest using the \u2018apply a computed transform to another image\u2019 option of the Fijiyama plugin.\n\n#### Segmentation algorithm\n\nThe Trainable Weka Segmentation FIJI plugin (Arganda-Carreras et al., 2017), a machine learning tool for microscopy pixel classification, was used for image segmentation. Training features for the algorithm were kept to mean and variance in order to limit computing power usage, ensuring accessibility. First, classifiers from the very same embryo were generated from supervised training of the algorithm by different users. The users\u2019 generated classifiers were used to segment each sample and to obtain the users\u2019 average 3D-model from a single embryo. This process was repeated for each embryo (n=5 embryos per sample). Training took about 4 min per step with 3\u20134 steps to complete, and generation of a mask through a single classifier took about 10 min on a consumer-grade workstation with an 3700 X (8 cores, 16 threads, 3.6 Ghz) AMD processor and RAM 32 GB.\n\n#### Processing\n\nUsers\u2019 and embryos\u2019 averaging, as well as consensus thresholds, were performed in FIJI. Homemade batch-processing macros were used to process the whole datasets at once. Macros for batch processing of each of the steps were kept independent to ensure easy adaptability, such as variation in sample size or selected thresholds. Signal consensus among all users was used for both quantifications and models. Signal consensus among 3 or more embryos was used for the generation of the models. Intersection of 3D-models was performed using the image calculator option in FIJI.\n\n#### Tissue volume quantification\n\nEmbryos\u2019 3D-models were registered together and resliced along different axes. Slices were then quantified using FIJI\u2019s 3D object counter. The slicing and quantification of individual slices was automatized with a simple homemade FIJI macro. Quantification along axes was processed through R. We used ratios of signal of interest vs. total differentiation domain volumes of individual embryos to generate a nonparametric regression curve with local linear kernel estimation method (Fan, 2018). The R (R core team 2020) package npregfast version 1.5.1 (Sestelo et al., 2017) and the Epanechnikov kernel (with bandwidth parameter selected by cross-validation) were used.\n\nQuantification of 3D-volumes after the application of the pipeline were plotted using either GraphPad Prism 9.0 for global quantifications or R for the axes distributions.\n\n#### Tissue shape analysis\n\nModels generated through the pipeline were exported as.OBJ mesh and fed into a python script leveraging the VEDO library (https://zenodo.org/record/6529705#.YtqYZ-xBxgF) to compute the signed distance between the two mesh surfaces. The computed measurements were then displayed as a color-coded map on the reference mesh and histogram of measurement counts was generated.\n\n### Data availability\n\nAll datasets supporting our work are included in the manuscript and supported files. z-stacks resulting from the pipeline, and subsequent intersections can be found in the 3D-model collection (Supporting ZIP document). The codes can be found in GitHub https://github.com/cristinapujades/Blanc-et-al.-2022, (copy archived at swh:1:rev:82c8199b774af1b4ff68d7c0ccd2cb8d4197df56; Blanc, 2022) with a short usuer manual https://github.com/cristinapujades/Blanc-et-al.-2022/wiki. For further information you may contact Matthias Blanc (matthias.blanc@upf.edu) or Cristina Pujades (cristina.pujades@upf.edu).\n",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "77fd297e-d1e5-48e6-a55d-c58d2552701d",
+      "submission_id": "0a12aa89-db46-4ab6-bd0d-32a9b648e9b1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Tessmar-Raible, https://ror.org/03prydq77 University of Vienna Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78300.sa0](https://doi.org/10.7554/eLife.78300.sa0)\n\nThis methodological manuscript is of interest to the fields of neural development, tissue morphogenesis, and image analysis technologies. The authors developed an image registration tool and created a digital atlas to reflect the anatomical distribution of neuronal birthdates in the developing zebrafish hindbrain. The provided resources can be very useful to monitor temporal changes in tissue growth.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Kristin Tessmar-Raible, https://ror.org/03prydq77 University of Vienna Austria\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.78300.sa1](https://doi.org/10.7554/eLife.78300.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The Digital 3D-Atlas MAKER (DAMAKER): a dynamic and expandable digital 3D-tool for monitoring the temporal changes in tissue growth during hindbrain morphogenesis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Richard White as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Venera Weinhardt (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll reviewers agreed that the paper needs to improve significantly on the following three points:\n\n1 \u2013 To improve the temporal content of the method by additional experiments on time-lapse imaging and corresponding controls.\n\n2 \u2013 To show inter-individual variability, which should be possible without additional experiments by incorporation of (most probably) existing data.\n\nThe details on points 1 and 2 are outlined in the constructive recommendations to the authors and public reviews. Please also note that the reviewers consented that while analyses of mutants would be nice to add, they are not required for the publication of this article.\n\n3 \u2013 To deposit software along with explanations/manuals on how to use and extend it further. The two links that are currently provided send to the identical webpage on which neither Macros nor R code can be found.\n\nReviewer #2 (Recommendations for the authors):\n\n1. Much higher 3D magnifications are needed in order to evaluate the morphogenetic changes of particular cell types and domains in a greater resolution.\n\n2. More experimental data is required in order to further convince how the new imaging protocols provide many more detailed answers compared to traditional imaging tools.\n\n3. Validation of the technology's strength should be provided by asking a physiological question about the developing hindbrain. Many relevant mutant lines are available (including in the author's lab) that can serve to demonstrate how the DAMAKER protocol is indeed an innovative and original strategy to study brain development in a manner that was absent in previous studies.\n\n4. As opposed to the numerous notions of the authors regarding the development of a novel code to provide a temporal 3D atlas, the actual data presented to demonstrate this capacity is rather limited. Hence, the text should be more balanced in that aspect.\n\nReviewer #3 (Recommendations for the authors):\n\nThe manuscript is readable but at places is difficult to understand due to a lack of information and broader terms. The following aspects can be improved:\n\n\u2013 It is stated that manual segmentation of masks was performed. Masks of what exactly? The fluorescence imaging is per se is either signal (1) or not (0). Therefore, the whole purpose of masking is therefore unclear.\n\n\u2013 Supplementary figure 1, panels E and F please make sure to clarify what is measured and what is calculated value? As I understand NDD is measured and PD is simply calculated by substruction, thus the same std and inverted look of plots.\n\n\u2013 A supplementary figure with corresponding stages of zebrafish development would be very helpful for those outside of the zebrafish community.\n\n\u2013 I think it is important to show individual variability of the data, which would help to understand the difficulties of the atlas making and justify the development of a pipeline. Please include data on multiple datasets with the same marker.\n\n\u2013 Line 206 \"Once the alignment of the HuC signal was accomplished,\u2026\". How the alignment was verified? Fijiyama to my memory uses an iterative approach, was the number of iterations fixed to 4? Was its success verified and how?\n\n\u2013 Throughout the manuscript when reporting on the quantitative analysis of a tissue, in particular volume, you use \"neurons are born\". That is misleading. The analysis pipeline does not count the number of neurons but rather the volume occupied by a tissue. Please make sure to state it at least in the beginning.\n\n\u2013 In all figures and videos please do not use a red-green colour combination. 20% of readers are colorblind.\n\n\u2013 Please include the AP and LML coordinate system on the figures to ensure that readers with other backgrounds can understand it as well.\n\nFinally, I could not find supporting software on your web page: https://www.upf.edu/web/pujadeslab/open-science. Considering the focus of your manuscript this is essential. Next time, please ensure the availability of your software during the review process.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A dynamic and expandable Digital 3D-Atlas MAKER for monitoring the temporal changes in tissue growth during hindbrain morphogenesis\" for further consideration by eLife. Your revised article has been evaluated by the three original reviewers, as well as by Richard White (Senior Editor) and a Reviewing Editor.\n\nWe much appreciate the work you put into the revised version, and think that it is now almost suitable for publication in eLife. There is still one request on the assessment of the inter-individual variability that will be highly useful to implement, also in the perspective of the future usefulness of your work for others.\n\nThe authors quantified the interindividual variability more carefully in Figure 1-Supplement 1 and Figure 3 \u2013 Supplement 1, with the purpose of demonstrating that \"interindividual variability is low\". However, in all the grayscale representations, variability is clearly visible in that some non-white volume area have at least 2~3 layers of cells, and even the HuC volume of the fish quantified at the same experimental condition could have a variability of 20% (Fig1S1F and Fig3S1A andB). Instead of only claiming the \"low variability\", the authors should have a quantitative measurement of this variability in the manuscript, and provide the confidence level of the birthdate map. This will essentially help the users to make a decision on whether an area of interest should be followed up or is beyond the precision that can be measured by the atlas.\n",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7bf76d1b-cd50-4bea-8ed9-930c740610ef",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C1",
+      "claim": "DAMAKER integrates spatial and temporal data of cell populations, neuronal differentiation and brain morphogenesis, through in vivo imaging techniques paired with image analyses and segmentation tools.",
+      "claim_type": "EXPLICIT",
+      "source": "DAMAKER integrates spatial and temporal data of cell populations, neuronal differentiation and brain morphogenesis, through in vivo imaging techniques paired with image analyses and segmentation tools.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a description of the method developed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "d25b5f53-bd0e-4233-9685-451a408275ef",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C2",
+      "claim": "The temporal order of neuronal differentiation prefigured the spatial distribution of neurons in the tissue, with an inner-outer differentiation gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated digital neuronal birthdating 3D-maps and revealed that the temporal order of neuronal differentiation prefigured the spatial distribution of neurons in the tissue, with an inner-outer differentiation gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "0df5f55b-48ad-41d3-90c4-bb0bded22780",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C3",
+      "claim": "Pioneer work in Drosophila provided 3D-registration atlases and software that can automatically find the corresponding landmarks in a subject brain, and map them to the coordinate system of a target brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneer work in Drosophila provided 3D-registration atlases and software that can automatically find the corresponding landmarks in a subject brain, and map them to the coordinate system of a target brain (Heckscher et al., 2014; Peng et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "67ac255f-3709-4562-afdc-6f8f667ef6bf",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C4",
+      "claim": "The incorporation of time in 3D-atlases is still one of the main challenges that needs to be solved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, up to now, the incorporation of time \u2014and therefore information of tissue morphogenesis\u2014 in 3D-atlases is still one of the main challenges that needs to be solved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in the field based on the authors' assessment of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "09ec6dcf-4096-45b7-948c-f03a9692a963",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C5",
+      "claim": "Existing gene expression 3D-atlases in larval and adult fish provide valuable tools.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing gene expression 3D-atlases in larval and adult fish provide valuable tools (Chow et al., 2020; Jaggard et al., 2020; Kenney et al., 2021; Kunst et al., 2019; Ronneberger et al., 2012; Tabor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to existing work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "cb405446-c398-436f-b177-48a2e6eb44da",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C6",
+      "claim": "Whole brain images are particularly hard to register across space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to incorporate the temporal component has been challenging, most probably because whole brain images are particularly hard to register across space and time, even though there are recent efforts aiming to make this more accessible (Dsilva et al., 2015; Fernandez and Moisy, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "ed25c243-0045-4303-9ab7-e5613900a911",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C7",
+      "claim": "The hindbrain is the most conserved vertebrate brain vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "We made use of the hindbrain, which is the most conserved vertebrate brain vesicle (Murakami et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c21238dd-9f64-4738-a12d-4a9fe7364d34",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C8",
+      "claim": "The hindbrain undergoes tissue segmentation along the anteroposterior (AP) axis leading to the formation of seven rhombomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We made use of the hindbrain, which is the most conserved vertebrate brain vesicle (Murakami et al., 2005) and undergoes tissue segmentation along the anteroposterior (AP) axis leading to the formation of seven rhombomeres (Fraser et al., 1990; Jimenez-Guri et al., 2010; Kiecker and Lumsden, 2005; Krumlauf and Wilkinson, 2021; Pujades, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "45272faf-9df8-4868-ab76-85d22bb24263",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C9",
+      "claim": "Initial neuronal differentiation in the hindbrain starts prior to 24 hours post-fertilization (hpf) with a pronounced increase from 30hpf onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "This morphogenetic process is accompanied with the initial neuronal differentiation, which starts prior 24hours post-fertilization (hpf) with a pronounced increase from 30hpf onwards (Voltes et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "8892b162-0c2c-4bac-bf56-c3d8825cfcc5",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C10",
+      "claim": "Neuronal differentiation involves changes in cell proliferative capacity and an extraordinary displacement of neurons from their birth site.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal differentiation involves changes in cell proliferative capacity and an extraordinary displacement of neurons from their birth site, and occurs while other dramatic changes take place, such as the generation of the brain ventricle (Belzunce et al., 2020; Gutzman et al., 2008; Hevia et al., 2022; Lyons et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "0bc9842a-a0a6-4c02-a2ce-adaf3812a473",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C11",
+      "claim": "Previous work evoked the importance of the temporal order of neuronal differentiation in ascribing final neuronal position within specific circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous work evoked the importance of the temporal order of neuronal differentiation in ascribing final neuronal position within specific circuits (Kinkhabwala et al., 2011; Pujala and Koyama, 2019; Wan et al., 2019), little is known about its impact in the final organization of differentiated neurons within the hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "51643fde-a2b0-46e6-899f-0b36b9143df4",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C12",
+      "claim": "Little is known about the impact of temporal order of neuronal differentiation in the final organization of differentiated neurons within the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous work evoked the importance of the temporal order of neuronal differentiation in ascribing final neuronal position within specific circuits (Kinkhabwala et al., 2011; Pujala and Koyama, 2019; Wan et al., 2019), little is known about its impact in the final organization of differentiated neurons within the hindbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "bb233a08-164a-4ada-8c66-3431ceba44a5",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C13",
+      "claim": "DAMAKER uses Fijiyama registration tool which allows multi-modal rigid registration.",
+      "claim_type": "EXPLICIT",
+      "source": "The expandable zebrafish digital 3D-atlas was created by combining in vivo imaging data from distinct transgenic embryos with the Fijiyama registration tool (Fernandez and Moisy, 2020), which allows multi-modal rigid registration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1e54a5df-bf1a-4a8e-9c51-80b708ba9fac",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C14",
+      "claim": "DAMAKER uses Trainable Weka Segmentation (TWS) that leverages a limited number of manual annotations and permits data to be automatically segmented after a short training.",
+      "claim_type": "EXPLICIT",
+      "source": "The expandable zebrafish digital 3D-atlas was created by combining in vivo imaging data from distinct transgenic embryos with the Fijiyama registration tool (Fernandez and Moisy, 2020), which allows multi-modal rigid registration, and the Trainable Weka Segmentation (TWS) (Arganda-Carreras et al., 2017) that leverages a limited number of manual annotations and permits data to be automatically segmented after a short training and to quantify tissue volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a128a23f-87a2-46fc-b052-8d3eec07354f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C15",
+      "claim": "Early-born neurons were always located in the inner part of the differentiation domain and surrounded by younger neurons, generating an inner-outer gradient of older vs. younger neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By generating these maps, we unveiled that early-born neurons were always located in the inner part of the differentiation domain and surrounded by younger neurons, generating an inner\u2013outer gradient of older vs. younger neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "2af42c01-55c0-4ab4-b6b6-e9a77cdd8902",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C16",
+      "claim": "The digital 3D-atlas maker (DAMAKER) is a dynamic and expandable 3D-tool for monitoring the temporal changes in growth and shape during tissue morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed a digital 3D-atlas maker (DAMAKER), which is a dynamic and expandable 3D-tool for monitoring the temporal changes in growth and shape during tissue morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool developed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "967fd54e-4121-44e7-8638-945e7d651f2c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C17",
+      "claim": "DAMAKER uses open-access tools and algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our goal is to share an established protocol using open-access tools and algorithms that allow standardized and accessible tissue-wide cell population atlas construction and can be used to create an expandable atlas of any tissue in any organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the developed method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "37933958-62b9-4ee1-a77c-5a6e4e1d467f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C18",
+      "claim": "DAMAKER can be used to create an expandable atlas of any tissue in any organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our goal is to share an established protocol using open-access tools and algorithms that allow standardized and accessible tissue-wide cell population atlas construction and can be used to create an expandable atlas of any tissue in any organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "81d104cd-c67f-4e0f-8655-48e584226c33",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C19",
+      "claim": "Fijiyama plugin in FIJI allowed a multi-modal automatic rigid registration process and a large range of customization.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve comparison of various signals across embryos that requires an alignment/registration, which is often done manually and is very time-consuming, we used the Fijiyama plugin in FIJI (Schindelin et al., 2012). This allowed a multi-modal automatic rigid registration process and a large range of customization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b8dfb4d7-477e-4b26-bf53-ef365b6d12e6",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C20",
+      "claim": "Fijiyama permitted the application of a previously computed transform to another channel that shares no features with the reference signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed a multi-modal automatic rigid registration process and a large range of customization, and it permitted the application of a previously computed transform; namely, an alignment can be computed using one channel of an embryo matching the chosen reference and this can be applied to another channel that shares no features with the reference signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the tool's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a61e51c6-f840-42d8-8476-c92049a7ab76",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C21",
+      "claim": "Trainable Weka Segmentation 3D (TWS) combines the image processing toolkit FIJI with machine learning algorithms provided in WEKA.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this problem, we used the Trainable Weka Segmentation 3D (TWS), (Arganda-Carreras et al., 2017), which combines the image processing toolkit FIJI with the state-of-the-art machine learning algorithms provided in the latest version of the data mining and machine learning toolkit Waikato Environment for Knowledge Analysis (WEKA) (Hall et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c6696cf7-8df5-43b3-8b55-0789fb08ce70",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C22",
+      "claim": "TWS is modular, allows sophisticated data mining processes to be built, is open-sourced, and can be easily used as a plugin of FIJI.",
+      "claim_type": "EXPLICIT",
+      "source": "This tool is modular, allows sophisticated data mining processes to be built from the wide collection of base learning algorithms and tools provided, is open-sourced, and can be easily used as a plugin of FIJI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the tool's features.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "e0afa0c8-fa65-4178-aba5-adab7d65abbf",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C23",
+      "claim": "Most of the currently used approaches for cell birthdating either lack whole population coverage or are limited by expression timing of the gene or transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, most of the currently used approaches either lack whole population coverage or are limited by expression timing of the gene or transgene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "d16c9982-7233-4d73-acc3-2c5460d30ea2",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C24",
+      "claim": "The combination of photoconversion experiments and DAMAKER provides neuronal birthdating 3D-maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, with the combination of photoconversion experiments as a tool to register temporality of neuronal differentiation and DAMAKER, we provide neuronal birthdating 3D-maps",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the method and its output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "fdae7f84-7ee4-46cb-8281-5a9cdb1557b0",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C25",
+      "claim": "The order of neuronal differentiation prefigured the spatial distribution of neurons in the hindbrain, with an inner-outer gradient of temporal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, with the combination of photoconversion experiments as a tool to register temporality of neuronal differentiation and DAMAKER, we provide neuronal birthdating 3D-maps and revealed that the order of neuronal differentiation prefigured the spatial distribution of neurons in the hindbrain, with an inner-outer gradient of temporal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "50a38698-c12c-4a0d-b0c8-c7e8a769bd1f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C26",
+      "claim": "Most of the available transgenic lines were generated with random insertion systems that do not always recapitulate the right onset of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Usually, expression of the reporter genes in transgenic lines is delayed as compared to the gene expression onset, unless the reporter has been inserted within the given gene locus. Now, we can specifically knock-in genes within a targeted genome site thanks to the CRISPR-Cas technology, but most of the available \u2014and very valuable\u2014transgenic lines were (and still are) generated with random insertion systems that do not always recapitulate the right onset of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of transgenic lines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "821c079b-d8c1-45dd-b788-1c29330c4856",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C27",
+      "claim": "The digital 3D-atlas can be used for predicting neuronal birthdates by analyzing the position of neurons in the differentiation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our tool can be very useful for predicting neuronal birthdates just by analyzing the position of neurons in the differentiation domain as we showed with glutamatergic and GABAergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated application of the tool.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1f2661da-4117-47ad-af0d-84feba01a104",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C28",
+      "claim": "The developed digital platform will be useful to interrogate phenotypes in neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides that, this developed digital platform will be useful to interrogate phenotypes in neurological diseases, and zebrafish avatars from human neurological disorders could be analyzed in a very simple manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the tool.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1e95ef66-0475-4b3e-bda9-05a9c1bc590f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C29",
+      "claim": "Tissue shape comparisons were performed after modulating neurogenesis using pharmacological treatments as a proof-of-concept.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proof-of-concept, we show tissue shape comparisons after modulating neurogenesis using pharmacological treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental demonstration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "943bd1f7-ac49-41e6-966c-b9b0ebef70e3",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C30",
+      "claim": "DAMAKER can be further improved by using batch processing algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, DAMAKER can be further improved by using batch processing algorithms (e.g., to assess the effects of pharmacological treatments or gene disruptions)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b93b23fd-d595-4425-ad17-f830898650aa",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C31",
+      "claim": "DAMAKER can be adjusted for more geometrically complex tissues or for tissues with less alignment features.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, DAMAKER can be further improved by using batch processing algorithms (e.g., to assess the effects of pharmacological treatments or gene disruptions) or by adjusting for more geometrically complex tissues or for tissues with less alignment features (such as heart).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "cb7ac418-22c1-421a-95fb-953576af1e98",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C32",
+      "claim": "DAMAKER pipeline could be applied to time-lapse videos by repeating the process for each frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Last but not least, this pipeline could be applied to time-lapse videos by repeating the process for each frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5ca818a4-4765-4552-a3fe-36da1b3d613f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C33",
+      "claim": "Tg[HuC:GFP] embryos at 72hpf display GFP uniformly in the whole neuronal differentiation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we were interested in neuronal differentiation patterns, to establish a reference tissue signal we made use of Tg[HuC:GFP] embryos at 72hpf, a stage in which most of the cells have undergone neuronal differentiation and GFP is uniformly displayed in the whole neuronal differentiation domain (Hevia et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the transgenic line used, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "eee49124-6b3e-421e-b98d-e7d95442c509",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C34",
+      "claim": "Rigid registration was favored in the Fijiyama registration process, although non-rigid registration could be considered at the cost of sample shape variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquired 3D-images from different Tg[HuC:GFP] embryos (e1\u2013eY; n=5each) were registered to the reference by Fijiyama registration, in which rigid registration was favored, although non-rigid registration could be considered at the cost of sample shape variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice explained in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4ebd4323-7bdc-4e62-b073-206f13b4d2bc",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C35",
+      "claim": "Segmentation settings were at tissue scale to keep computing power low for pipeline accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "After alignment of 3D-images, tissue segmentation was applied in order to generate binary masks for each labeling/staining (Figure 1B). Here, segmentation settings were at tissue scale, both in an effort to keep computing power low for pipeline accessibility and for our interest in cell populations, although single cell resolution could be achieved with nuclear reporter lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice explained in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c5c163d0-f3cd-4684-a3a9-a4f28511bfe0",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C36",
+      "claim": "Single cell resolution could be achieved with nuclear reporter lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, segmentation settings were at tissue scale, both in an effort to keep computing power low for pipeline accessibility and for our interest in cell populations, although single cell resolution could be achieved with nuclear reporter lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential capability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "0cbebcd5-580f-42b7-be2d-6f1c2b012f8b",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C37",
+      "claim": "Different users were invited to employ the Trainable Weka Segmentation (TWS) tool to train classifiers to reduce the potential impact of human bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to discern noise vs. signal in the raw data from each embryo, different users (u1\u2013uX; n=5) were invited to employ the Trainable Weka Segmentation (TWS) tool to train classifiers (one per user) (Figure 1B). In the case of low or sparse signals (or specific structures within a signal) specific training of the algorithm with different settings would be better to leverage the structural recognition capabilities of TWS. To reduce the potential impact of the human bias from the trained classifiers, we averaged the resulting segmented images from multiple users' trained classifiers (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach to reduce bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "68baa7fb-7f55-4b6c-9f0d-c1b1bbf48885",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C38",
+      "claim": "Signal consensus among at least 3 embryos was used for the generation of the models.",
+      "claim_type": "EXPLICIT",
+      "source": "Signal consensus among 3 or more embryos was used for the generation of the models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological threshold in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4ae99621-47aa-4191-982e-dd6a00791edc",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C39",
+      "claim": "The interindividual variability between the HuC volume of the individuals and the HuC volume of the generated 3D-model never exceeded 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this difference never exceeded 10%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend for Figure 1\u2014figure supplement 1G and shown in the corresponding figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5cc0f6da-9d42-4ff7-a9fc-5e635b87934e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C40",
+      "claim": "Tg[Mu4127;HuC:GFP] embryos display DsRed in r3 and r5.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we imaged Tg[Mu4127;HuC:GFP] embryos, which displayed DsRed in r3 and r5 (Distel et al., 2009), and GFP in the neuronal differentiation domain (Figure 2A\u2013A').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the transgenic line, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a338ba3c-f048-4eda-9820-d6527bf3cd1f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C41",
+      "claim": "The Mu4127 signal distribution was concentrated in r3 and r5 along the anteroposterior (AP) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the signal distribution was concentrated in r3 and r5 along the anteroposterior (AP) axis, whereas it was similarly distributed along the mediolateral (ML) axis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "34254c0e-ce16-4fb0-86a8-559d3794f218",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C42",
+      "claim": "The Mu4127 signal was similarly distributed along the mediolateral (ML) axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the signal distribution was concentrated in r3 and r5 along the anteroposterior (AP) axis, whereas it was similarly distributed along the mediolateral (ML) axis (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "fe481b20-38a5-49cc-91d6-36608d2a3c1b",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C43",
+      "claim": "Tg[neurog1:DsRed;HuC:GFP] embryos show a striped-pattern distribution of neurog1-derivatives in the neuronal differentiated domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In Tg[neurog1:DsRed;HuC:GFP] embryos, we observed the striped-pattern distribution of neurog1-derivatives in the neuronal differentiated domain (Figure 2C\u2013C'; Figure 2\u2014video 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "e2c42b56-e35e-4e91-9f91-7922f7865d81",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C44",
+      "claim": "The automatic quantification of the neurog1-volume displayed differences in the ratio of labeling along the AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The automatic quantification of the neurog1-volume displayed differences in the ratio of labeling along the AP axis (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5a222ce9-328a-4ffe-bc8a-ae408fff2fdd",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C45",
+      "claim": "Neuronal differentiated regions have less neurog1-derivatives when compared with more posterior domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The automatic quantification of the neurog1-volume displayed differences in the ratio of labeling along the AP axis (Figure 2D), supporting the observation of neuronal differentiated regions with less neurog1-derivatives when compared with more posterior domains (Figure 2C\u2013C', see white asterisk in the lateral r5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "0df78bcc-b40c-4b0d-89b7-7e5ed84bfbc8",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C46",
+      "claim": "neurog1-derivatives display a more medial distribution in the hindbrain when compared with the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the more medial distribution of neurog1-derivatives in the hindbrain was observed (Figure 2D) when compared with the spinal cord as it was previously described (Belzunce et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text, shown in Figure 2D, and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4a5b1ae5-1a97-4c82-b3c7-fb516cfd0541",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C47",
+      "claim": "Motoneurons display a ventral and medial position in the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "For mapping distinct neuronal differentiation programs, we first analyzed the spatial distribution of motoneurons by using Tg[isl1:GFP;HuC:KaedeRed] embryos and observed their ventral and medial position (Figure 2E\u2013E'; Figure 2\u2014video 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2E-E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a1726a2d-b07b-434a-8e13-825ad2dae2df",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C48",
+      "claim": "Motoneurons show higher signal in discrete patterns along the AP axis with a clear increase in the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon quantification, higher signal was observed in discrete patterns along the AP axis with a clear increase in the spinal cord (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "fb591db7-a3eb-4ce9-9eef-6f2c45954e3e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C49",
+      "claim": "Glutamatergic neurons contribute mainly to the most dorsolateral neuronal differentiation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Tg[vglut2a:DsRed;HuC:GFP] and Tg[gad1b:DsRed;HuC:GFP] embryos we observed the main contribution of glutamatergic neurons to the most dorsolateral neuronal differentiation domain (Figure 2G\u2013G')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2G-G'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7c09b3f0-89d0-48fa-8fb5-a4197f7d8ce1",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C50",
+      "claim": "GABAergic neurons allocate more medially in the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Tg[vglut2a:DsRed;HuC:GFP] and Tg[gad1b:DsRed;HuC:GFP] embryos we observed the main contribution of glutamatergic neurons to the most dorsolateral neuronal differentiation domain (Figure 2G\u2013G'), whereas GABAergic neurons allocated more medially (Figure 2I\u2013I').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2I-I'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4ed29e70-b034-4954-a36f-ba6bc48ba006",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C51",
+      "claim": "Glutamatergic neurons show a smaller contribution to the r3-r5 region at 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a smaller contribution of glutamatergic neurons to the r3-r5 region (Figure 2H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c497605d-447a-4587-a87d-4e1d7b5f8a9c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C52",
+      "claim": "GABAergic signal at 72hpf is enriched in r2 when compared to the rest of the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas GABAergic signal at this stage was enriched in r2 (Figure 2J) when compared to the rest of the hindbrain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "903c4b30-a285-4a5c-a709-66120b79008d",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C53",
+      "claim": "The quantification of neurotransmitter expression recapitulated the spatially restricted domains previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "This quantification recapitulated the spatially restricted domains of neurotransmitter expression (Figure 2G' and I') previously described (Kinkhabwala et al., 2011; Koyama et al., 2011; Pujala and Koyama, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text, shown in figures, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "3365c1da-74a5-4d7b-9b95-20a5f785dc66",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C54",
+      "claim": "The stripe patterning of alx-expressing neurons, which are involved in swimming behavior, is age-related.",
+      "claim_type": "EXPLICIT",
+      "source": "The stripe patterning of alx-expressing neurons, which are involved in swimming behavior, is age-related (Kinkhabwala et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "2e03ec74-e049-457d-823c-3cb63d155b13",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C55",
+      "claim": "The position of the V2a cell body and the order of spinal projections in the hindbrain relies on their neuronal birth.",
+      "claim_type": "EXPLICIT",
+      "source": "and the position of the V2a cell body and the order of spinal projections in the hindbrain relies on their neuronal birth (Pujala and Koyama, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c7d652ae-6794-447b-bb12-fb5e5daf8a05",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C56",
+      "claim": "The onset of neuronal differentiation was before 24hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the onset of neuronal differentiation was before 24hpf and that the first differentiated neurons located more ventral and medial than late-born cells (Figure 3A\u2013A'; see magenta vs. green cells in 3 A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A-A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7b270606-87f1-4661-8562-8407b71f624a",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C57",
+      "claim": "The first differentiated neurons located more ventral and medial than late-born cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the onset of neuronal differentiation was before 24hpf and that the first differentiated neurons located more ventral and medial than late-born cells (Figure 3A\u2013A'; see magenta vs. green cells in 3 A').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3A-A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4114fd47-495e-4125-b23a-36dcd485376f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C58",
+      "claim": "Neuronal differentiation dramatically increased between 24hpf and 36hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "When we labeled the neurons born before 36hpf we appreciated that neuronal differentiation dramatically increased between 24hpf and 36hpf, since the magenta territory in this case was larger",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3B-B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7caaf514-fcef-4ff4-965f-f2ea23134a5c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C59",
+      "claim": "Later differentiated neurons piled up on the top of the previously differentiated ones.",
+      "claim_type": "EXPLICIT",
+      "source": "When we labeled the neurons born before 36hpf we appreciated that neuronal differentiation dramatically increased between 24hpf and 36hpf, since the magenta territory in this case was larger, and that later differentiated neurons piled up on the top of the previously differentiated ones (Figure 3B\u2013B'; see magenta vs. green cells in 3B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3B-B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7b71288f-4eb8-4b98-9bd4-2620ac157e8f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C60",
+      "claim": "Neurons born at different stages were precisely organized at 48hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We overlapped and color-coded them according to the neuronal birthdate, and observed that neurons born at different stages were precisely organized at 48hpf (Figure 3C\u2014C'; see youngest neurons in blue, neurons differentiated between 24 and 36hpf in green, and the oldest ones in magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "229228bb-f2ca-486d-82cb-f6592e587726",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C61",
+      "claim": "Many neurons differentiated between 24 and 36hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurons differentiated between 24 and 36hpf (compare Figure 3A' and B'), and they surrounded the existing differentiated neurons generating an inner-outer differentiation gradient (Figure 3C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "e65a97ab-bf05-454a-88d5-cbdae48d26fa",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C62",
+      "claim": "Neurons differentiated between 24 and 36hpf surrounded the existing differentiated neurons generating an inner-outer differentiation gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Many neurons differentiated between 24 and 36hpf (compare Figure 3A' and B'), and they surrounded the existing differentiated neurons generating an inner-outer differentiation gradient (Figure 3C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b3a312d4-5000-4754-851a-7bd6115c049e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C63",
+      "claim": "EdU-cells are exclusively in the newly differentiated domain, stacking dorsally, with no signal indicating a migration of newly born neurons in the older neuronal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed cells with EdU-incorporation exclusively in the newly differentiated domain, stacking dorsally, with no signal indicating a migration of newly born neurons in the older neuronal domain, therefore confirming the establishment of segregated domains according to neuronal differentiation timings (Figure 3E\u2014E').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3E-E'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "812f88a0-3874-4104-ac10-bd3bedefa324",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C64",
+      "claim": "Early differentiated neurons at 72hpf were located more ventrally and medially, and late-born cells piled up.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, we observed that early differentiated neurons were located more ventrally and medially, and that late-born cells piled up (Figure 3F\u2013H, 3F'\u2013H'; see magenta vs. green cells in 3F'\u2013H').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "65dda8df-c6cd-4105-a40e-a1e3e77db86b",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C65",
+      "claim": "The differentiation capacity diminished with time.",
+      "claim_type": "EXPLICIT",
+      "source": "To monitor possible differences in the spatiotemporal distribution within the neuronal differentiation domain, we generated the neuronal birthdate 3D-map at 72hpf and observed that the differentiation capacity diminished with time (Figure 3I\u2013I''; see small yellow domain).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3I-I''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c0383213-cbc5-4952-ae14-df62b2cdd001",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C66",
+      "claim": "By 48hpf, almost the whole differentiation domain was already occupied by previously differentiated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by 48hpf, almost the whole differentiation domain was already occupied by previously differentiated neurons (Figure 3I\u2013I''; see blue, green and magenta domains).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3I-I''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c36646bf-e1aa-4a2e-ac2d-81791f701bea",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C67",
+      "claim": "The overall HuC-volumes did not dramatically change among embryos that underwent HuC:KaedeGreen photoconversion at different stages.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we first checked that the overall HuC-volumes did not dramatically change among embryos that underwent HuC:KaedeGreen photoconversion at different stages (Figure 3\u2014figure supplement 1A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1A, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b76fc5e9-6d5f-477e-ab81-46775f65adef",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C68",
+      "claim": "Average individuals' variability from the HuC volume model did not exceed 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we calculated the difference between the HuC volume of the individuals and the generated models and showed that average individuals' variability from the model did not exceed 15% (Figure 3\u2014figure supplement 1B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1d9d5fb8-7e6e-4d0d-9ba1-82bc8ad9be3e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C69",
+      "claim": "HuC:KaedeRed cells labeled in an early conversion were included in the HuC:KaedeRed domain labeled in a late conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we verified that the HuC:KaedeRed cells labeled in an early conversion were included in the HuC:KaedeRed domain labeled in a late conversion. For this, we overlaid the differentiation domains contributed at each time interval (Figure 3\u2014figure supplement 1H\u2013J,H'\u2013J').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "4e1a4584-fd33-4532-a01c-6b2e73bdb078",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C70",
+      "claim": "At 48hpf, of the whole differentiated domain (12.07 [SD \u00b1 1.36]\u00d710^6 \u03bcm^3), only a small part comprised neurons differentiated before 24hpf (3.42 [SD \u00b1 1.56]\u00d710^6 \u03bcm^3 early-born neurons vs. 8.64 [SD \u00b1 0.86]\u00d710^6 \u03bcm^3 late-born neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "We detected that at 48hpf, of the whole differentiated domain (12.07 [SD \u00b1 1.36]\u00d7106 \u03bcm3), only a small part comprised neurons differentiated before 24hpf (3.42 [SD \u00b1 1.56]\u00d7106 \u03bcm3 early-born neurons vs. 8.64 [SD \u00b1 0.86]\u00d7106 \u03bcm3 late-born neurons)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "370baf86-bc91-4b48-87c3-e6895199ffa1",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C71",
+      "claim": "Most of the differentiated neurons at 48hpf arose before 36hpf (9.61 [SD \u00b1 0.68]\u00d710^6 \u03bcm^3) and the rest differentiated between 36 and 48hpf (3.10 [SD \u00b1 0.35]\u00d710^6 \u03bcm^3).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas most of the differentiated neurons arose before 36hpf (9.61 [SD \u00b1 0.68]\u00d7106 \u03bcm3) and the rest differentiated between 36 and 48hpf (3.10 [SD \u00b1 0.35]\u00d7106 \u03bcm3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "55933c94-6569-482e-a914-331ab71560da",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C72",
+      "claim": "Neurons born at 24hpf located more ventrally than neurons born at 36hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "When quantifying the signal ratio along the axes, we could observe similar dynamics along the AP and ML axes between 24hpf and 36hpf, and a clear difference along the DV demonstrating that neurons born at 24hpf located more ventrally than neurons born at 36hpf (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "f779efa4-18a5-4df4-b754-68d4bc5a9125",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C73",
+      "claim": "At 72hpf, only a small part of the differentiation domain came from neurons born before 24hpf (2.77 [SD \u00b1 1.23]\u00d710^6 \u03bcm^3 for early-born vs. 11.88 [SD \u00b1 1.28]\u00d710^6 \u03bcm^3 for late-born).",
+      "claim_type": "EXPLICIT",
+      "source": "When volumes were quantified at 72hpf, we observed that only a small part of the differentiation domain came from neurons born before 24hpf (2.77 [SD \u00b1 1.23]\u00d7106 \u03bcm3 for early-born vs. 11.88 [SD \u00b1 1.28]\u00d7106 \u03bcm3 for late-born).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "779bd7d9-54ff-4e9e-b1df-9426a560699c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C74",
+      "claim": "Most neurons at 72hpf underwent differentiation between 24hpf and 48hpf, with half of the differentiated neurons arising before 36hpf (6.75 [SD \u00b1 2.19]\u00d710^6 \u03bcm^3 born before 36hpf vs. 7.58 [SD \u00b1 2.37]\u00d710^6 \u03bcm^3 after 36hpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Most neurons underwent differentiation between 24hpf and 48hpf, with half of the differentiated neurons arising before 36hpf (6.75 [SD \u00b1 2.19]\u00d7106 \u03bcm3 born before 36hpf vs. 7.58 [SD \u00b1 2.37]\u00d7106 \u03bcm3 after 36hpf)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "6d2cc328-552c-48d0-8b53-8f42ae700fd6",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C75",
+      "claim": "At 72hpf, the rest of neurons were differentiated between 36 and 48hpf (11.19 [SD \u00b1 1.09]\u00d710^6 \u03bcm^3 born before 48hpf vs. 2.99 [SD \u00b1 0.90]\u00d710^6 \u03bcm^3 after 48hpf).",
+      "claim_type": "EXPLICIT",
+      "source": "and the rest were differentiated between 36 and 48hpf (11.19 [SD \u00b1 1.09]\u00d7106 \u03bcm3 born before 48hpf vs. 2.99 [SD \u00b1 0.90]\u00d7106 \u03bcm3 after 48hpf).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "72d4f8a0-8d21-42b3-8305-fb9adb9159b0",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C76",
+      "claim": "A steady increase of neuronal differentiation domain was observed at 72hpf (24hpf: 0.21 \u00b1 0.04; 36hpf: 0.47 \u00b1 0.16; 48hpf: 0.79 \u00b1 0.07).",
+      "claim_type": "EXPLICIT",
+      "source": "When the ratio of neurons born at different stages over the whole neuronal differentiation domain was assessed, a steady increase of neuronal differentiation domain was observed (Figure 3\u2014figure supplement 2C; 24hpf: 0.21 \u00b1 0.04; 36hpf: 0.47 \u00b1 0.16; 48hpf: 0.79 \u00b1 0.07).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result stated in the text and shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "2d8ef1cc-1746-4ce8-b9fc-0a2c7ae2bc55",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C77",
+      "claim": "Early-born neurons (24-36hpf) display a more ventral enrichment along the DV axis at 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when the analysis was performed along the DV axis, differences in cell allocation relying on the neuronal birthdate could be appreciated, with early-born neurons (24-36hpf) displaying a more ventral enrichment (Figure 3\u2014figure supplement 1D, see DV-axis graph).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "88316e3d-803a-4cb9-af13-49dd5c2d81ad",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C78",
+      "claim": "Most of the neuronal differentiation events occurred between 24 and 48hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the overlaying of birthdating 3D-maps showed that most of the neuronal differentiation events occurred between 24 and 48hpf",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b8acab18-af9f-4390-ba68-a6ec33208b82",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C79",
+      "claim": "Glutamatergic neurons contributed in a big proportion to the differentiation domain and were born during all the analyzed temporal windows.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamatergic neurons contributed in a big proportion to the differentiation domain, and were born during all the analyzed temporal windows (Figure 4\u2014video 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014video 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "8ba9cb5e-d1bf-4182-bf17-a4bca32c6363",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C80",
+      "claim": "Glutamatergic neurons displayed the inner-outer distribution depending on birth-time, with the oldest cells in the inner domain.",
+      "claim_type": "EXPLICIT",
+      "source": "They displayed the inner-outer distribution depending on birth-time, with the oldest cells cells in the inner domain (see magenta cells in Figure 4A'\u2013B'; Figure 4\u2014video 1A\u2013B), and the youngest neurons in the most outer position (see blue and yellow domains in Figure 4A'\u2013B'; Figure 4\u2014video 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A'-B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "c37648c2-c5f3-4f8c-a09f-8e8bdaa1a2da",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C81",
+      "claim": "Some GABAergic neurons in r3 and r5 were born as early as 24 hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of GABAergic neurons, we took the same approach and intersected the 3D-model of Tg[gad1b:DsRed] embryos on the birthdate 3D-map, and color-coded them according to the differentiation time. Some GABAergic neurons in r3 and r5 were born as early as 24 hpf (Figure 4C\u2013C'; Figure 4\u2014video 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "159f0ca4-8ec5-4e80-96a9-5aeb71020a2a",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C82",
+      "claim": "An important part of glutamatergic and GABAergic neurons was born between 24 and 36hpf, although some were born earlier and later too.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggested that an important part of glutamatergic and GABAergic neurons was born between 24 and 36hpf, although some were born earlier and later too.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "405e6947-187e-4f04-a20a-2c3beb835415",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C83",
+      "claim": "Of the total glutamatergic neurons, approximately 20% were contributed by cells born before 24hpf, 60% by cells born between 26 and 36hpf, and only a small percentage by neurons born between 36 and 48hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, when assessing the relative contribution of neurons born at different intervals to the corresponding neuronal populations, we observed that of the total glutamatergic and GABAergic neurons, approximately 20% and 30%, respectively, were contributed by cells born before 24hpf, 60% by cells born between 26 and 36hpf, and only by a small percentage of neurons born between 36 and 48hpf (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b6f79c37-41e7-4074-bc8e-57e6271985c5",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C84",
+      "claim": "Of the total GABAergic neurons, approximately 30% were contributed by cells born before 24hpf, 60% by cells born between 26 and 36hpf, and only a small percentage by neurons born between 36 and 48hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, when assessing the relative contribution of neurons born at different intervals to the corresponding neuronal populations, we observed that of the total glutamatergic and GABAergic neurons, approximately 20% and 30%, respectively, were contributed by cells born before 24hpf, 60% by cells born between 26 and 36hpf, and only by a small percentage of neurons born between 36 and 48hpf (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "89a21552-ae6d-4026-9f70-de42cda2b9fe",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C85",
+      "claim": "Glutamatergic neurons were produced earlier than GABAergic neurons at 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the growth dynamics of both populations at 72hpf showed that they were slightly different, with glutamatergic neurons produced earlier than GABAergic neurons (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "661fdb34-f673-4c33-9387-4c13a7605cfb",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C86",
+      "claim": "Position of differentiated neurons at 72hpf could recapitulate neuronal birthdates.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this analysis indicated that position of differentiated neurons at 72hpf could recapitulate neuronal birthdates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "db1d24cd-4292-4de3-b898-1bb36b900827",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C87",
+      "claim": "Glutamatergic and GABAergic neurons were already specified at 24hpf and they were located within the HuC territory.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, glutamatergic and GABAergic neurons were already specified at 24hpf and they were located within the HuC territory (Figure 4H\u2013H'')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4H-H''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a5992acf-a08f-4922-bc11-eccf51d3d2ed",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C88",
+      "claim": "The GABAergic transgenic line did not display the reporter expression at 24hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "although in our hands the GABAergic transgenic line did not display the reporter expression at this stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the transgenic line used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "a5fabfa5-c52d-4260-b0ad-167663e7d9b1",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C89",
+      "claim": "The neuronal birthdating 3D-map can be used as a proxy to infer neuronal differentiation order.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results demonstrate that the neuronal birthdating 3D-map can be used as a proxy to infer neuronal differentiation order, and widens the use of the digital 3D-atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "87fafa98-fc5b-4898-bd93-fbaf9acefc4c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C90",
+      "claim": "The glutamatergic populations born between 24 and 36hpf and between 36 and 48hpf underwent a drastic displacement along the dorsoventral (DV) axis when comparing 48hpf to 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis at 48hpf showed that the glutamatergic populations born between 24 and 36hpf and between 36 and 48hpf underwent a drastic displacement along the dorsoventral (DV) axis, when compared to the same populations observed at 72hpf.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1d54e623-cfce-43ea-b571-a6192ee036aa",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C91",
+      "claim": "The 24-36hpf glutamatergic neuronal subset, which displayed a relatively homogenous distribution along the DV axis when observed at 48hpf, was medially located at 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The 24-36hpf neuronal subset, which displayed a relatively homogenous distribution along the DV axis when observed at 48hpf, was medially located at 72hpf (engulfing the 0-24hpf subset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "20d4298a-9c34-40e3-b2e5-6ec36f8b891c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C92",
+      "claim": "The 36-48hpf glutamatergic subset, mostly dorsal when observed at 48hpf, was distributed both ventrally and dorsally when observed at 72hpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The 36-48hpf subset, mostly dorsal when observed at 48hpf, was distributed both ventrally and dorsally when observed at 72hpf (Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "6d076e61-220a-4ee6-9a1b-afa739867cb2",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C93",
+      "claim": "Newly produced neurons initially located dorsally were displaced towards ventral, resulting in the formation of the inner to outer gradient of neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations support the idea that newly produced neurons initially located dorsally were displaced towards ventral, resulting in the formation of the inner to outer gradient of neuronal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7efe9737-1064-4e40-8583-0ede65f28386",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C94",
+      "claim": "The 48-72hpf subset of glutamatergic neurons is more laterally located than the GABAergic 48-72hpf subset, which was enriched medially.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the medio-lateral distribution of the neurons produced at different time intervals recapitulated the different allocations of late born glutamatergic and GABAergic neurons, with the 48-72hpf subset of glutamatergic neurons more laterally located than the GABAergic 48-72hpf subset, which was enriched medially (Figure 4\u2014figure supplement 1B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4\u2014figure supplement 1B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5d7d8441-a079-4d34-a139-2251ec76d7bd",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C95",
+      "claim": "Notch-pathway plays an important role during hindbrain neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we disturbed embryonic neurogenesis by conditionally inhibiting the Notch-pathway, which has been demonstrated to play an important role during hindbrain neurogenesis (Hevia et al., 2022; Nikolaou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "48f781c8-517d-4004-b7ca-ed0f24e55856",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C96",
+      "claim": "When Notch-signaling was downregulated, there was an increase in newly differentiated neurons that dramatically impacted the early-born neuronal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing control embryos with those in which Notch-signaling was downregulated, we observed an increase in newly differentiated neurons that dramatically impacted in the early-born neuronal domain, since newer neurons occupied the most dorsal part of the hindbrain displacing the older neurons (Figure 5B\u2013B' and C\u2013C') as previously described (Belzunce et al., 2020; Hevia et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text, shown in Figure 5B-C', and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "7e056271-bb85-4024-92cd-bf5807361423",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C97",
+      "claim": "Upon Notch-signaling inhibition, newer neurons occupied the most dorsal part of the hindbrain displacing the older neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing control embryos with those in which Notch-signaling was downregulated, we observed an increase in newly differentiated neurons that dramatically impacted in the early-born neuronal domain, since newer neurons occupied the most dorsal part of the hindbrain displacing the older neurons (Figure 5B\u2013B' and C\u2013C') as previously described (Belzunce et al., 2020; Hevia et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text, shown in Figure 5B-C', and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "00eb390c-9535-438a-814a-de1ded3d7216",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C98",
+      "claim": "There was a significant increase of the HuC volume in Notch-inhibited embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, upon quantification of the neuronal differentiation domain we observed a significant increase of the HuC volume in treated embryos (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "08597b9f-1788-417d-89dc-a5604f25d5e9",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C99",
+      "claim": "Newly produced neurons upon Notch-inhibition were mainly localized in the medial domain.",
+      "claim_type": "EXPLICIT",
+      "source": "and newly produced neurons were mainly localized in the medial domain (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1762c477-0dc1-4e21-915f-2557c302b743",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C100",
+      "claim": "There was a consistent difference in the overall tissue shape between control and Notch-inhibited embryos, mainly in the dorsomedial differentiation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the rendered hindbrains of both groups of embryos we observed a consistent difference in the overall tissue shape, mainly in the dorsomedial differentiation domain (Figure 5F\u2013F'; see color-coded legend showing in blue the highest differences; Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5F-F'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "823c50ea-49ae-4466-a22d-541b3d84317a",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C101",
+      "claim": "The brain ventricle was distorted due to the increase of neurons upon Notch-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was supported by the previous observation in which the brain ventricle was distorted due to the increase of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a supporting observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5af2fef2-7fd8-4c34-86f7-2fddf65afbf9",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C102",
+      "claim": "The increased differentiated domain volume upon Notch-inhibition was visible mainly in the dorsomedial part, which was occupied by new neurons and remodeled the neuronal differentiation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased differentiated domain volume was visible mainly in the dorsomedial part, which was occupied by new neurons and remodeled the neuronal differentiation domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "6865524a-7164-42e0-914c-547670a5fbf0",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C103",
+      "claim": "All procedures were approved by the institutional animal care and use ethic committee (Comit\u00e8 Etica en Experimentaci\u00f3 Animal, PRBB) and the Generalitat of Catalonia (Departament de Territori i Sostenibilitat).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the institutional animal care and use ethic committee (Comit\u00e8 Etica en Experimentaci\u00f3 Animal, PRBB) and the Generalitat of Catalonia (Departament de Territori i Sostenibilitat), and implemented according to National and European regulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the ethics declarations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b424c2d7-1e5c-4e8f-ae7d-322c96fca857",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C104",
+      "claim": "The PRBB animal house holds the AAALAC International approval B9900073.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRBB animal house holds the AAALAC International approval B9900073.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the ethics declarations section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "5324c08f-c625-4520-b53f-a27174e3756b",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C105",
+      "claim": "M\u00fc4127 transgenic line is an enhancer trap line in which the KalTA4-UAS-mCherry cassette was inserted into the 1.5Kb region downstream of egr2a/krx20 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "M\u00fc4127 transgenic line was used as landmark of rhombomeres 3 and 5; it is an enhancer trap line in which the KalTA4-UAS-mCherry cassette was inserted into the 1.5Kb region downstream of egr2a/krx20 gene (Distel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the transgenic line supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "fbb269fd-d5cf-43c3-987f-a990f1ad72ed",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C106",
+      "claim": "Tg[neurog1:DsRed] labels neuronal committed cells and the neurog1-derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tg[neurog1:DsRed] (Drerup and Nechiporuk, 2013) labels neuronal committed cells and the neurog1-derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the transgenic line supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "04770a5c-280a-43a0-8b2b-6bdca9e675dd",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C107",
+      "claim": "Tg[isl1:GFP] line labels motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Tg[isl1:GFP] line labels motoneurons (Higashijima et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the transgenic line supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "083b16d7-9a5b-42ab-96bf-3678442618c8",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C108",
+      "claim": "Tg[HuC:GFP] and Tg[HuC:Kaede] lines were used to label the whole neuronal differentiated domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Tg[HuC:GFP] (Park et al., 2000) and Tg[HuC:Kaede] (Harrison et al., 2014) lines were used to label the whole neuronal differentiated domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the transgenic lines supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1145f439-e0fe-446e-ac0d-a2874febc66f",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C109",
+      "claim": "Images were acquired with a Leica SP8 system using PMT or HyD3 detectors and a 20\u00d7glycerol immersion objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were acquired with a Leica SP8 system using PMT or HyD3 detectors and a 20\u00d7glycerol immersion objective, HCX PL APO Lambda blue 20\u00d7/0.7 argon laser 30%, Diode 405 nm (DPSS 561; Ready Lasers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "104f7809-6321-4ed9-947e-731478a0a687",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C110",
+      "claim": "z-stacks were recorded with 0.57\u00d70.57 \u00d7 1.19 \u03bcm voxel size.",
+      "claim_type": "EXPLICIT",
+      "source": "z-stacks were recorded with 0.57\u00d70.57 \u00d7 1.19 \u03bcm voxel size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "292061c7-ea8a-48f8-a2e1-b4dbb9ff42e3",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C111",
+      "claim": "Upon exposure to UV light, Kaede protein irreversibly shifts emission from green to red fluorescence (\u03bb=516\u2013581 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to UV light, Kaede protein irreversibly shifts emission from green to red fluorescence (\u03bb=516\u2013581 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Kaede protein property.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "65221796-a0a5-4c48-9b73-d8cf72195373",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C112",
+      "claim": "Training took about 4 min per step with 3\u20134 steps to complete, and generation of a mask through a single classifier took about 10 min on a consumer-grade workstation with an 3700 X (8 cores, 16 threads, 3.6 Ghz) AMD processor and RAM 32 GB.",
+      "claim_type": "EXPLICIT",
+      "source": "Training took about 4 min per step with 3\u20134 steps to complete, and generation of a mask through a single classifier took about 10 min on a consumer-grade workstation with an 3700 X (8 cores, 16 threads, 3.6 Ghz) AMD processor and RAM 32 GB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about computational requirements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "8ac318d4-4d13-4151-b006-b7459898236e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "claim_id": "C113",
+      "claim": "Signal consensus among all users was used for both quantifications and models.",
+      "claim_type": "EXPLICIT",
+      "source": "Signal consensus among all users was used for both quantifications and models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological choice in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "48c127a0-4760-454e-bf11-8414d86f632b",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed DAMAKER, a digital 3D-atlas maker that integrates spatial and temporal data using open-access tools including Fijiyama for registration and Trainable Weka Segmentation for automated segmentation. The pipeline uses rigid registration, tissue-scale segmentation, and multi-user consensus approaches to reduce bias and maintain computational accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13-C14, C16-C17, C19-C22, C34-C35, C37-C38, C112-C113 collectively describe the methodological development of DAMAKER with appropriate technical details, computational requirements, and design choices. The methods are well-documented with citations to the underlying tools (Fijiyama, TWS) and include validation steps to assess inter-user and inter-individual variability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "31174052-8d6f-4bf4-80b3-03d73692320e",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The interindividual variability in the DAMAKER pipeline was quantified and shown to be acceptable, with HuC volume differences between individuals and generated 3D-models not exceeding 10% at 72hpf and 15% at 48hpf and 72hpf for photoconverted embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C67-C68 provide quantitative validation of the pipeline's reproducibility with specific percentage thresholds supported by data shown in supplementary figures. These validation metrics are essential for establishing the reliability of the atlas-making approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "432325d6-b65b-4e22-8709-aa817e76eb47",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The digital 3D-atlas successfully mapped specific neuronal populations and anatomical landmarks, including rhombomeres 3 and 5 (Mu4127), neurog1-derivatives showing striped patterns with regional differences, and demonstrated quantitative differences in signal distribution along body axes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 describe the application of DAMAKER to map specific transgenic reporter patterns with quantitative analysis along AP and ML axes. The results are supported by imaging data (Figure 2) and recapitulate known patterns, providing validation of the method's ability to capture spatial distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "e929610f-bc6e-47b6-a1c9-611df5d489f6",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DAMAKER mapped the spatial distribution of distinct neuronal subtypes including motoneurons (ventral/medial), glutamatergic neurons (dorsolateral), and GABAergic neurons (medial), with quantification recapitulating previously described spatially restricted domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 demonstrate the application of DAMAKER to multiple neuronal populations with spatial quantification along body axes. The results are supported by imaging data (Figure 2) and citations to prior work (C53), showing consistency with established knowledge while providing new quantitative detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "cdcd9ff3-6b58-4111-a620-909001df3e89",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using photoconversion-based neuronal birthdating combined with DAMAKER, the authors revealed that the temporal order of neuronal differentiation prefigures spatial distribution with an inner-outer gradient, where early-born neurons (before 24hpf) locate ventral/medial and later-born neurons progressively pile up dorsally, with most differentiation occurring between 24-48hpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15, C24-C25, C56-C66, C78 collectively describe the major biological finding using the Kaede photoconversion system. The inner-outer gradient is demonstrated through multiple time points (48hpf and 72hpf) with both imaging data (Figure 3) and independent validation using EdU incorporation (C63), providing converging evidence for the spatial organization principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "81d79664-8b47-48a7-b209-ebed57ad2717",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Quantitative volumetric analysis of birthdated neurons showed that at 48hpf, most neurons (9.61\u00d710^6 \u03bcm\u00b3) arose before 36hpf with only 3.42\u00d710^6 \u03bcm\u00b3 before 24hpf, and at 72hpf the pattern continued with steady increase in differentiation domain (ratios: 24hpf: 0.21\u00b10.04; 36hpf: 0.47\u00b10.16; 48hpf: 0.79\u00b10.07), with early-born neurons showing ventral enrichment along the DV axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C77 provide detailed quantitative measurements of neuronal differentiation dynamics with specific volume measurements and ratios. The data include appropriate sample sizes (n=5) and statistical measures (SD), with validation that early photoconversion domains are included in later ones (C69), supporting the temporal progression model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "b8bb25c6-696e-4337-b6f6-bac700d4be88",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The birthdating 3D-atlas was used as a proxy to infer neuronal differentiation order for specific populations, showing that glutamatergic and GABAergic neurons display inner-outer distributions based on birthdate, with approximately 60% of both populations born between 24-36hpf, and glutamatergic neurons produced slightly earlier than GABAergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C87, C89 demonstrate the application of the birthdating atlas to predict differentiation timing of specific neuronal subtypes. The approach is validated by in situ hybridization showing vglut2a and gad1b expression at 24hpf within the HuC domain (C87), confirming that position can predict birthdate. The quantitative contributions (C83-C84) are supported by Figure 4E-F.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison of glutamatergic neuronal positions between 48hpf and 72hpf revealed drastic displacement along the dorsoventral axis, with initially dorsal neurons moving ventrally over time, supporting the formation of the inner-outer gradient and showing differential mediolateral distributions between glutamatergic (lateral) and GABAergic (medial) late-born neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C94 describe temporal dynamics of neuronal repositioning with quantitative analysis along body axes (Figure 4\u2014figure supplement 1). The interpretation (C93) that dorsal neurons move ventrally is a reasonable inference from the positional data at two time points, though direct tracking would provide stronger evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "As proof-of-concept for analyzing aberrant neurogenesis, pharmacological Notch-pathway inhibition resulted in increased neuronal differentiation with significant HuC volume increase, with newly produced neurons occupying the dorsomedial hindbrain and displacing older neurons, causing consistent tissue shape differences detectable by the shape comparison analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C95-C102 demonstrate DAMAKER's utility for analyzing perturbations in neurogenesis. The Notch inhibition experiment shows significant volume increase (C98, Figure 5D with p<0.002) and spatial redistribution (C99-C100), with results consistent with prior work (citations in C96-C97). The shape comparison analysis (C100, Figure 5F-F') provides a novel quantitative readout of tissue remodeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that DAMAKER can be extended to other tissues and organisms, used to predict neuronal birthdates from position, applied to neurological disease models, improved with batch processing, adapted for complex tissues, and applied to time-lapse videos, with potential for single-cell resolution using nuclear reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18, C27-C28, C30-C32, C36 describe potential future applications and extensions of DAMAKER. While C27 is demonstrated with glutamatergic/GABAergic neurons as proof-of-concept, the broader claims about applicability to any tissue/organism (C18), disease models (C28), and other extensions (C30-C32, C36) remain speculative without experimental validation. These are reasonable projections but not yet demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contextualize their work within existing literature on 3D-atlases, hindbrain development, and neuronal birthdating, noting that incorporation of time in 3D-atlases remains challenging, existing birthdating approaches have limitations, and previous work has shown importance of temporal order in specific circuits but with limited knowledge about hindbrain-wide organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C12, C23, C26, C54-C55 provide literature context supported by appropriate citations. The assessment of field limitations (C4, C6, C12, C23, C26) appears accurate based on the cited work and establishes the rationale for developing DAMAKER. These are primarily knowledge claims about prior work rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    },
+    {
+      "id": "1567f2fd-0539-4f51-80d5-a8c536cadd59",
+      "content_id": "407025fd-0be9-41c7-9fa3-d95c81695007",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used appropriate transgenic zebrafish lines with characterized expression patterns, standard confocal imaging parameters, and Kaede photoconversion properties, with all procedures approved by institutional ethics committees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C88, C103-C111 describe methodological details, transgenic line characteristics (supported by citations), imaging parameters, and ethics approvals. These are standard methodological descriptions that are appropriately documented. C88 notes a discrepancy in GABAergic reporter expression timing, which is an honest reporting of a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:02:18.184096Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7bf76d1b-cd50-4bea-8ed9-930c740610ef",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "bb233a08-164a-4ada-8c66-3431ceba44a5",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "1e54a5df-bf1a-4a8e-9c51-80b708ba9fac",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "2af42c01-55c0-4ab4-b6b6-e9a77cdd8902",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "967fd54e-4121-44e7-8638-945e7d651f2c",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "81d104cd-c67f-4e0f-8655-48e584226c33",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "b8dfb4d7-477e-4b26-bf53-ef365b6d12e6",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "a61e51c6-f840-42d8-8476-c92049a7ab76",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "c6696cf7-8df5-43b3-8b55-0789fb08ce70",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "eee49124-6b3e-421e-b98d-e7d95442c509",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "4ebd4323-7bdc-4e62-b073-206f13b4d2bc",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "0cbebcd5-580f-42b7-be2d-6f1c2b012f8b",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "68baa7fb-7f55-4b6c-9f0d-c1b1bbf48885",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "65221796-a0a5-4c48-9b73-d8cf72195373",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "8ac318d4-4d13-4151-b006-b7459898236e",
+      "result_id": "48c127a0-4760-454e-bf11-8414d86f632b"
+    },
+    {
+      "claim_id": "4ae99621-47aa-4191-982e-dd6a00791edc",
+      "result_id": "31174052-8d6f-4bf4-80b3-03d73692320e"
+    },
+    {
+      "claim_id": "c36646bf-e1aa-4a2e-ac2d-81791f701bea",
+      "result_id": "31174052-8d6f-4bf4-80b3-03d73692320e"
+    },
+    {
+      "claim_id": "b76fc5e9-6d5f-477e-ab81-46775f65adef",
+      "result_id": "31174052-8d6f-4bf4-80b3-03d73692320e"
+    },
+    {
+      "claim_id": "5cc0f6da-9d42-4ff7-a9fc-5e635b87934e",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "a338ba3c-f048-4eda-9820-d6527bf3cd1f",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "34254c0e-ce16-4fb0-86a8-559d3794f218",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "fe481b20-38a5-49cc-91d6-36608d2a3c1b",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "e2c42b56-e35e-4e91-9f91-7922f7865d81",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "5a222ce9-328a-4ffe-bc8a-ae408fff2fdd",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "0df78bcc-b40c-4b0d-89b7-7e5ed84bfbc8",
+      "result_id": "432325d6-b65b-4e22-8709-aa817e76eb47"
+    },
+    {
+      "claim_id": "4a5b1ae5-1a97-4c82-b3c7-fb516cfd0541",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "a1726a2d-b07b-434a-8e13-825ad2dae2df",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "fb591db7-a3eb-4ce9-9eef-6f2c45954e3e",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "7c09b3f0-89d0-48fa-8fb5-a4197f7d8ce1",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "4ed29e70-b034-4954-a36f-ba6bc48ba006",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "c497605d-447a-4587-a87d-4e1d7b5f8a9c",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "903c4b30-a285-4a5c-a709-66120b79008d",
+      "result_id": "e929610f-bc6e-47b6-a1c9-611df5d489f6"
+    },
+    {
+      "claim_id": "d25b5f53-bd0e-4233-9685-451a408275ef",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "a128a23f-87a2-46fc-b052-8d3eec07354f",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "d16c9982-7233-4d73-acc3-2c5460d30ea2",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "fdae7f84-7ee4-46cb-8281-5a9cdb1557b0",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "c7d652ae-6794-447b-bb12-fb5e5daf8a05",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "7b270606-87f1-4661-8562-8407b71f624a",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "4114fd47-495e-4125-b23a-36dcd485376f",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "7caaf514-fcef-4ff4-965f-f2ea23134a5c",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "7b71288f-4eb8-4b98-9bd4-2620ac157e8f",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "229228bb-f2ca-486d-82cb-f6592e587726",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "e65a97ab-bf05-454a-88d5-cbdae48d26fa",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "b3a312d4-5000-4754-851a-7bd6115c049e",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "812f88a0-3874-4104-ac10-bd3bedefa324",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "65dda8df-c6cd-4105-a40e-a1e3e77db86b",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "c0383213-cbc5-4952-ae14-df62b2cdd001",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "88316e3d-803a-4cb9-af13-49dd5c2d81ad",
+      "result_id": "cdcd9ff3-6b58-4111-a620-909001df3e89"
+    },
+    {
+      "claim_id": "1d9d5fb8-7e6e-4d0d-9ba1-82bc8ad9be3e",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "4e1a4584-fd33-4532-a01c-6b2e73bdb078",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "370baf86-bc91-4b48-87c3-e6895199ffa1",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "55933c94-6569-482e-a914-331ab71560da",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "f779efa4-18a5-4df4-b754-68d4bc5a9125",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "779bd7d9-54ff-4e9e-b1df-9426a560699c",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "6d2cc328-552c-48d0-8b53-8f42ae700fd6",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "72d4f8a0-8d21-42b3-8305-fb9adb9159b0",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "2d8ef1cc-1746-4ce8-b9fc-0a2c7ae2bc55",
+      "result_id": "81d79664-8b47-48a7-b209-ebed57ad2717"
+    },
+    {
+      "claim_id": "b8acab18-af9f-4390-ba68-a6ec33208b82",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "8ba9cb5e-d1bf-4182-bf17-a4bca32c6363",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "c37648c2-c5f3-4f8c-a09f-8e8bdaa1a2da",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "159f0ca4-8ec5-4e80-96a9-5aeb71020a2a",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "405e6947-187e-4f04-a20a-2c3beb835415",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "b6f79c37-41e7-4074-bc8e-57e6271985c5",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "89a21552-ae6d-4026-9f70-de42cda2b9fe",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "661fdb34-f673-4c33-9387-4c13a7605cfb",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "db1d24cd-4292-4de3-b898-1bb36b900827",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "a5fabfa5-c52d-4260-b0ad-167663e7d9b1",
+      "result_id": "b8bb25c6-696e-4337-b6f6-bac700d4be88"
+    },
+    {
+      "claim_id": "87fafa98-fc5b-4898-bd93-fbaf9acefc4c",
+      "result_id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c"
+    },
+    {
+      "claim_id": "1d54e623-cfce-43ea-b571-a6192ee036aa",
+      "result_id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c"
+    },
+    {
+      "claim_id": "20d4298a-9c34-40e3-b2e5-6ec36f8b891c",
+      "result_id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c"
+    },
+    {
+      "claim_id": "6d076e61-220a-4ee6-9a1b-afa739867cb2",
+      "result_id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c"
+    },
+    {
+      "claim_id": "7efe9737-1064-4e40-8583-0ede65f28386",
+      "result_id": "1bfafcef-6d2d-4d4c-97c5-4f9c8220d98c"
+    },
+    {
+      "claim_id": "1e95ef66-0475-4b3e-bda9-05a9c1bc590f",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "5d7d8441-a079-4d34-a139-2251ec76d7bd",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "48f781c8-517d-4004-b7ca-ed0f24e55856",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "7e056271-bb85-4024-92cd-bf5807361423",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "00eb390c-9535-438a-814a-de1ded3d7216",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "08597b9f-1788-417d-89dc-a5604f25d5e9",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "1762c477-0dc1-4e21-915f-2557c302b743",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "823c50ea-49ae-4466-a22d-541b3d84317a",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "5af2fef2-7fd8-4c34-86f7-2fddf65afbf9",
+      "result_id": "f17f7d66-fb10-4bae-b2ed-1a13c4ba530c"
+    },
+    {
+      "claim_id": "37933958-62b9-4ee1-a77c-5a6e4e1d467f",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "821c079b-d8c1-45dd-b788-1c29330c4856",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "1f2661da-4117-47ad-af0d-84feba01a104",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "943bd1f7-ac49-41e6-966c-b9b0ebef70e3",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "b93b23fd-d595-4425-ad17-f830898650aa",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "cb7ac418-22c1-421a-95fb-953576af1e98",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "c5c163d0-f3cd-4684-a3a9-a4f28511bfe0",
+      "result_id": "d310af69-1d71-4e0b-a8fc-4c1c57325eef"
+    },
+    {
+      "claim_id": "0df5f55b-48ad-41d3-90c4-bb0bded22780",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "67ac255f-3709-4562-afdc-6f8f667ef6bf",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "09ec6dcf-4096-45b7-948c-f03a9692a963",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "cb405446-c398-436f-b177-48a2e6eb44da",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "ed25c243-0045-4303-9ab7-e5613900a911",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "c21238dd-9f64-4738-a12d-4a9fe7364d34",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "45272faf-9df8-4868-ab76-85d22bb24263",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "8892b162-0c2c-4bac-bf56-c3d8825cfcc5",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "0bc9842a-a0a6-4c02-a2ce-adaf3812a473",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "51643fde-a2b0-46e6-899f-0b36b9143df4",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "e0afa0c8-fa65-4178-aba5-adab7d65abbf",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "50a38698-c12c-4a0d-b0c8-c7e8a769bd1f",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "3365c1da-74a5-4d7b-9b95-20a5f785dc66",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "2e03ec74-e049-457d-823c-3cb63d155b13",
+      "result_id": "2d443582-cb6b-4a12-97f8-c1a7d35ea895"
+    },
+    {
+      "claim_id": "5ca818a4-4765-4552-a3fe-36da1b3d613f",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "a5992acf-a08f-4922-bc11-eccf51d3d2ed",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "6865524a-7164-42e0-914c-547670a5fbf0",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "b424c2d7-1e5c-4e8f-ae7d-322c96fca857",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "5324c08f-c625-4520-b53f-a27174e3756b",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "fbb269fd-d5cf-43c3-987f-a990f1ad72ed",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "04770a5c-280a-43a0-8b2b-6bdca9e675dd",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "083b16d7-9a5b-42ab-96bf-3678442618c8",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "1145f439-e0fe-446e-ac0d-a2874febc66f",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "104f7809-6321-4ed9-947e-731478a0a687",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    },
+    {
+      "claim_id": "292061c7-ea8a-48f8-a2e1-b4dbb9ff42e3",
+      "result_id": "1567f2fd-0539-4f51-80d5-a8c536cadd59"
+    }
+  ],
+  "comparisons": []
+}

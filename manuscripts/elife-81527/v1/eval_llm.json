@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C73",
+      "C74"
+    ],
+    "result": "The majority (~60%) of recorded DNs encode walking, while fewer DNs encode head grooming (~15%) and resting. No DNs were found to encode front leg rubbing or posterior movements as their primary behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C28-C31, C73-C74 consistently report the distribution of DN encoding across behaviors, supported by regression analysis and variance explained metrics in Figure 2. The quantitative findings are replicated across multiple animals (n=5) with clear statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DNs encoding walking also show activity during posterior movements, and DNs encoding head grooming also show activity during front leg rubbing. However, DNs predominantly encode walking over posterior movements and head grooming over front leg rubbing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 address potential confounds from sequential behaviors and slow calcium indicator dynamics. The authors performed additional analyses using equal amounts of data and calculating unique explained variance, confirming the predominant encoding (Figure 2\u2014figure supplement 1a,b). This demonstrates appropriate methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Joint angles provide only marginal improvement in predicting neural activity beyond behavior regressors, suggesting DNs encode high-level behaviors rather than low-level kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by regression analysis comparing behavior vs. joint angle predictive power (Figure 2\u2014figure supplement 3). The interpretation that DNs delegate kinematic control to downstream VNC circuits is reasonable given the data, though C37 represents an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Walk-encoding DNs are distributed throughout the dorsal connective, while head groom-encoding DNs are predominantly located in the ventral connective. Two prominent pairs of ventral DNs explain the largest variance in head grooming. Rest-encoding DNs are located medially near giant fibers and in lateral extremities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe spatial organization of DN encoding supported by kernel density estimates and behavior-triggered averaging (Figure 2e-i, Figure 2\u2014figure supplement 2). The spatial segregation is consistently observed across animals, providing strong topological evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The first two principal components explain up to 60% of variance in DN population activity during walking. 2D trajectories of DN activity move primarily along two directions, and DNs with the largest PC loadings are spatially segregated on opposite sides of the connective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by PCA analysis on neural activity derivatives (Figure 2j-l, Figure 2\u2014figure supplement 4). The spatial segregation of high-loading neurons provides convergent evidence for functional organization, though the biological interpretation of the two directions requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Among walk-encoding DNs, a large fraction strongly encode turning (~60% unique explained variance), while far fewer weakly encode walking speed (~30% unique explained variance). Specific DNs strongly explain right or left turning, whereas speed encoding is more distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C45-C50 are supported by ridge regression analysis of turning and speed variance (Figure 3a-f). The authors appropriately controlled for trivial explanations by analyzing only walking epochs. The quantitative differences between turning and speed encoding are consistent across animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Turn-encoding DNs show ipsilateral enrichment in the cervical connective, with many having high PC loadings, indicating turning contributes heavily to DN population dynamics variance. Speed-encoding DNs are more homogeneously distributed without clear spatial enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by spatial analysis and kernel density estimates (Figure 3g-j, Figure 3\u2014figure supplement 2c-f). The ipsilateral enrichment for turning and lack of spatial organization for speed encoding are consistent with the functional findings. C53 is an inference but well-supported by C52.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Odor context (ACV vs MSC vs humidified air) does not determine which behavior-encoding DNs are recruited. The same DNs predict walking and head grooming irrespective of olfactory context, with only a very small fraction differentially recruited during odor presentation. However, ACV modulates behavioral statistics by decreasing resting, increasing walking and speed, and reducing turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C60 are supported by regression analysis comparing DN recruitment across odor conditions (Figure 4\u2014figure supplement 1-2). The statistical testing (Mann-Whitney U-test) appropriately identifies the few differentially recruited DNs. The behavioral modulation by odors is well-documented, but DN recruitment remains largely context-independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C86"
+    ],
+    "result": "A few DNs encode odors (MSC and ACV) rather than behaviors, with distinct DNs encoding each odor. MSC-encoding neurons are located dorsally on lateral sides of giant fibers, while ACV-encoding neurons are more broadly dispersed. There is no overlap between MSC and ACV encoding DNs within individual animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C62-C67, C86 are supported by unique explained variance analysis using neural residuals after controlling for behavior (Figure 4a-f). The spatial segregation and lack of overlap between odor-encoding DNs are clearly demonstrated. The use of neural residuals appropriately controls for behavioral confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A pair of large ventral DNs exhibit asymmetric activity during asymmetric antennal contact during grooming. These neurons, identified as putative DNx01s through morphological analysis, encode antennal deflection (sensory signals) rather than behavior, as demonstrated by responses to CO2 puff stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by kinematic replay analysis, puff stimulation experiments, and morphological comparison (Figure 5). The identification of DNx01s is strengthened by convergent evidence from spatial location, functional properties, MCFO imaging, and EM reconstruction. C72 includes appropriate speculation about cell body location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C94"
+    ],
+    "result": "The encoding of walking by large numbers of DNs supports the notion that the brain tightly regulates locomotion through distributed DN populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C94 represent interpretations of the data showing ~60% of DNs encode walking. While these are inferences rather than direct observations, they are well-supported by the extensive data on DN population encoding and are consistent with the observed functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C95"
+    ],
+    "result": "Head grooming is encoded by far fewer neurons than walking, possibly because grooming movements are more stereotyped and may rely more heavily on VNC controllers, as supported by the ability of headless flies to perform spontaneous grooming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78 and C95 are supported by the data (Figure 2). However, C79 is speculative, and the authors acknowledge that their driver line lacks SEZ expression, which houses DNs known to drive grooming (C22-C24). The interpretation may change with more complete DN coverage. C80 is a citation to prior work supporting the speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11"
+    ],
+    "result": "Drosophila melanogaster has approximately 1100 descending neurons, making up about 1% of brain neurons, with estimates ranging from ~350 to ~500 pairs of DNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C10, and C11 cite prior work but present conflicting numbers. C1 states ~1100 DNs total, while C11 states ~350-500 pairs (700-1000 total). This discrepancy is not addressed. These are background claims from literature rather than findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The genetic driver line used restricts expression to the supraesophageal zone and lacks expression in the SEZ, which houses at least 41 DNs including some that can drive grooming (DNg11, DNg12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe methodological limitations supported by confocal imaging (Figure 1f-g, Figure 1\u2014figure supplement 1c) and citations. The authors appropriately acknowledge this limitation and its potential impact on grooming-related findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C92",
+      "C93"
+    ],
+    "result": "Prior work has established that activating small numbers of DNs can drive complex behaviors, that DNs impinge on CPGs, that DN firing rates correlate with locomotor features, and that some DNs respond to sensory stimuli. The SEZ is a center for action selection housing numerous DNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9, C12-C20, C26-C27, C81-C85, C89, C92-C93 are background claims citing prior literature. These are appropriately referenced and provide context for the current study. They are not findings of this manuscript but establish the scientific foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "DNx01s may have roles beyond feedback control during grooming, potentially responding to strong gusts of wind to initiate stance stabilization reflexes, similar to other large-axon DNs involved in fast reflexive movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are speculative interpretations based on the large axon size of DNx01s and comparisons to giant fiber neurons (C89). While the speculation is reasonable and appropriately presented as such, there is no direct experimental evidence for these proposed functions.",
+    "result_type": "MINOR"
+  }
+]

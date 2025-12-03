@@ -1,0 +1,2237 @@
+{
+  "submission": {
+    "id": "89d96d43-17aa-4bd2-b72c-92d48020aaf8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:04:23.261267Z",
+    "updated_at": "2025-12-03T08:04:23.261267Z"
+  },
+  "content": [
+    {
+      "id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "submission_id": "89d96d43-17aa-4bd2-b72c-92d48020aaf8",
+      "content_type": "manuscript",
+      "content_text": "# Visualizing formation of the active site in the mitochondrial ribosome\n\n## Authors\n\n- Viswanathan Chandrasekaran<sup>1</sup> ([ORCID: 0000-0002-0871-4740](https://orcid.org/0000-0002-0871-4740))\n- Nirupa Desai<sup>1</sup> ([ORCID: 0000-0001-6046-653X](https://orcid.org/0000-0001-6046-653X))\n- Nicholas O Burton<sup>2</sup> ([ORCID: 0000-0002-5495-3988](https://orcid.org/0000-0002-5495-3988))\n- Hanting Yang<sup>1</sup> ([ORCID: 0000-0002-3383-2204](https://orcid.org/0000-0002-3383-2204))\n- Jon Price<sup>3</sup> ([ORCID: 0000-0001-6554-5667](https://orcid.org/0000-0001-6554-5667))\n- Eric A Miska<sup>3</sup> ([ORCID: 0000-0002-4450-576X](https://orcid.org/0000-0002-4450-576X)) \u2020\n- V Ramakrishnan<sup>1</sup> ([ORCID: 0000-0002-4699-2194](https://orcid.org/0000-0002-4699-2194)) \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n2. Centre for Trophoblast Research, Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom\n3. Gurdon Institute, University of Cambridge Cambridge United Kingdom\n4. Department of Genetics, University of Cambridge Cambridge United Kingdom\n5. Wellcome Sanger Institute, Wellcome Genome Campus Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nRibosome assembly is an essential and conserved process that is regulated at each step by specific factors. Using cryo-electron microscopy (cryo-EM), we visualize the formation of the conserved peptidyl transferase center (PTC) of the human mitochondrial ribosome. The conserved GTPase GTPBP7 regulates the correct folding of 16S ribosomal RNA (rRNA) helices and ensures 2\u02b9-O-methylation of the PTC base U3039. GTPBP7 binds the RNA methyltransferase NSUN4 and MTERF4, which sequester H68-71 of the 16S rRNA and allow biogenesis factors to access the maturing PTC. Mutations that disrupt binding of their Caenorhabditis elegans orthologs to the large subunit potently activate mitochondrial stress and cause viability, development, and sterility defects. Next-generation RNA sequencing reveals widespread gene expression changes in these mutant animals that are indicative of mitochondrial stress response activation. We also answer the long-standing question of why NSUN4, but not its enzymatic activity, is indispensable for mitochondrial protein synthesis.\n\n## Introduction\n\nMitochondrial ribosomes (mitoribosomes) are essential for the production and maintenance of the electron transport chain machinery. As with all other ribosomes, the biogenesis of mitoribosomes involves a complex series of coordinated steps during which the ribosomal RNA (rRNA)\u00a0folds, proteins are incorporated and the active site is formed. The process is facilitated by specific biogenesis factors, including GTPases, rRNA modifying enzymes, RNA helicases, ribonucleases, chaperones, and other scaffolding and adaptor proteins (De Silva et al., 2015). Studying this process in molecular detail is clinically important because defective mitoribosome assembly can lead to encephalomyopathy, optic neuropathy, cardiomyopathy, and hereditary spastic paraplegia, among other disorders.\n\nThe general principles of ribosome assembly are well-conserved across species, but mitoribosome assembly has diverged in notable ways from, and involves different factors than bacterial 70S ribosomes. Analogous to bacterial and eukaryotic cytosolic ribosomes, mitoribosome assembly also proceeds via a series of quality-control checkpoints and GTP hydrolysis serves as the commitment step to drive the reaction forward (Britton, 2009; Karbstein, 2007). Four GTPases, GTPBP5, 6, 7, and 10 (and perhaps GTPBP8; Maiti et al., 2021) directly bind the 16S rRNA of the 39S mitoribosomal large subunit (mtLSU) to facilitate its maturation (Kotani et al., 2013), but their mechanistic roles and order of action remain poorly understood. Here, we present the cryo-electron microscopy\u00a0(cryo-EM) structure of the human mtLSU in complex with GTPBP7, an RNA methyltransferase NSUN4 and an RNA scaffolding protein MTERF4, establish the importance of this complex during mitoribosome biogenesis in vivo and decipher the mechanism by which NSUN4\u00b7MTERF4\u00b7GTPBP7 ensure maturation of the peptidyl transferase center (PTC)\u00a0of the mitochondrial ribosome.\n\n## Results\n\nTo trap GTPBP7 and other GTPases that participate in human mitochondrial translation, we included the non-hydrolyzable GTP analog \u03b2,\u03b3-methyleneguanosine 5\u2032-triphosphate (GMPPCP) during mitoribosome purification. Single-particle cryo-EM (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Table 1) of these and other mitoribosome-bound complexes (Desai et al., 2020) also yielded a 5% subset of mtLSU intermediates bound to GTPBP7\u00b7GMPPCP in a pre-hydrolysis state and arrested at an assembly state equivalent to the 45S (RI50) to 50S transition of the bacterial LSU (Achila et al., 2012; Fahnestock et al., 1973; Seffouh et al., 2019). In this state, the PTC is not completely disordered as it is in PDB 5OOM, an earlier late assembly state (Brown et al., 2017), but key helices in the vicinity are held in an unfolded state.\n\n**Table 1.**\n Data collection, processing, refinement, and model statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.04</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>Falcon III</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u22121.1 to \u22123.2</td>\n    </tr>\n    <tr>\n      <td>Defocus mean (\u03bcm)</td>\n      <td>\u22122.1</td>\n    </tr>\n    <tr>\n      <td>Electron dose (e\u2212\u00a0frame\u22121 \u212b\u22122)</td>\n      <td>1.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Data processing</td>\n    </tr>\n    <tr>\n      <td>Independent data collections</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Useable micrographs</td>\n      <td>43,950</td>\n    </tr>\n    <tr>\n      <td>Particles picked</td>\n      <td>3,374,367</td>\n    </tr>\n    <tr>\n      <td>Final particles</td>\n      <td>66,340</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B-factor (\u212b2)</td>\n      <td>\u221210</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u212b)</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>EMPIAR accession code</td>\n      <td>EMPIAR-10809</td>\n    </tr>\n    <tr>\n      <td>EMDB accession code</td>\n      <td>EMD-13329</td>\n    </tr>\n    <tr>\n      <td>PDB accession code</td>\n      <td>7PD3</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Model composition</td>\n    </tr>\n    <tr>\n      <td>Chains</td>\n      <td>70</td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>108,053</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>9276</td>\n    </tr>\n    <tr>\n      <td>RNA bases</td>\n      <td>1522</td>\n    </tr>\n    <tr>\n      <td>Metals (Mg2+/Zn2+)</td>\n      <td>91/2</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>GCP (1), SAM (1)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u212b)</td>\n      <td>3.4</td>\n    </tr>\n    <tr>\n      <td>CC (mask)</td>\n      <td>0.70</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">R.M.S deviations</td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u212b)</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.068</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation</td>\n    </tr>\n    <tr>\n      <td>Molprobity score</td>\n      <td>1.66</td>\n    </tr>\n    <tr>\n      <td>Clashscore, all atoms</td>\n      <td>4.97</td>\n    </tr>\n    <tr>\n      <td>Rotamers outliers (%)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>C\u03b2 outliers (%)</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran plot</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>94.17</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>5.69</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.14</td>\n    </tr>\n  </tbody>\n</table>\n\nSurprisingly, GTPBP7 was bound to a heterodimer of the 5-methyl cytosine (m5C) modifying enzyme, NOP2/Sun RNA methyltransferase 4 (NSUN4) and its binding partner, mitochondrial transcription termination factor 4 (MTERF4) (C\u00e1mara et al., 2011; Figure 1). NSUN4, MTERF4, and GTPBP7 bind the inter-subunit interface of the mtLSU in a radial arrangement centered about the peptidyl site (P site) and <30 \u00c5 from the PTC (Sp\u00e5hr et al., 2012). Additionally, the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP are also present on these particles to prevent premature SSU joining (Brown et al., 2017; Desai et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-v1.jpg)\n\n**Figure 1.:** (A) The inter-subunit interface faces the reader and a cartoon of an elongating mitoribosome is shown in the red box (bottom) to aid orientation.\u00a0NSUN4 (pink) bound to S-adenosyl methionine (SAM, left inset), GTPBP7 (green) bound to the non-hydrolyzable GTP analog, GMPPCP (top inset) and MTERF4 (orange) interact with the subunit interface of the mtLSU assembly intermediate. The domain IV rRNA helices H68-71 (teal) are unfolded, rendering the aminoacyl, peptidyl, and exit sites incomplete. Also pictured are the anti-association factors MALSU1 (yellow), L0R8F8 (blue), and mt-ACP (red). (B) Map-to-model fits for NSUN4, MTERF4, GTPBP7, and the unfolded rRNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** * indicates that the particles were re-extracted to 1.04 \u00c5/pixel.\u00a0cryo-EM, cryo-electron microscopy.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig1-figsupp2-v1.jpg)\n\nThe NSUN4 active site contains weak density for the methyl donor S-adenosyl\u00a0methionine (SAM). Moreover, the cryo-EM density suggests that there is no m5C methylation of 16S rRNA located within ~20 \u00c5 of the NSUN4 active site indicating that methyltransferase activity is not involved at the mtLSU assembly checkpoint. Bisulfite sequencing studies across many species have also not revealed any m5C targets on the 16S rRNA, making this an unlikely site of NSUN4 methyltransferase activity (Metodiev et al., 2014).\n\nOur structure represents an intermediate in which the proteins uL16m, bL27m, and bL36m have already bound, but before complete folding of rRNA domain IV helices 68\u201371 and dissociation of NSUN4, MTERF4, and GTPBP7 by GTP hydrolysis, and subsequent small subunit (mtSSU) joining. The 16S rRNA domain IV helices 68\u201371 (nucleotides 2542\u20132637) typically span the A, P, and E sites and pack against the D-loop, and anticodon arms of the P-site tRNA (Figure 2). Here, they are instead held in a partially unfolded state by MTERF4 at a location that would permit biogenesis factors to\u00a0access to their binding sites, but clash with an incoming SSU (Figure 2C). Subsequent GTP hydrolysis by GTPBP7 would result in dissociation of the GTPase and MTERF4\u00b7NSUN4, allowing H68\u201371 to fold (compare Figure 2C,D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-v1.jpg)\n\n**Figure 2.:** (A) Incorporation of uL16m (olive), bL27m (wheat) precedes NSUN4 (magenta) binding and before bL36m (brown).\u00a0NSUN4 is shown translucent for clarity. (B) His34 of helix 1 of GTPBP7 verifies that 2\u2032-O-methylation of A-loop base U3039 by MRM2 has occurred. Immature (C) and mature (D) conformations of domain IV rRNA helices H68\u201371 (rainbow). H69 would pack against a canonical P-site tRNA when present, and together this region forms the back wall of the A, P, and E sites of the mature 39S. MTERF4 (translucent orange) holds H68\u201371 in an unfolded conformation to permit assembly factors to access the core of the mtLSU.\u00a0mtLSU, mitoribosomal large subunit;\u00a0rRNA, ribosomal RNA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The inter-subunit interface is oriented toward the reader.\u00a0GTPBP7 (top) or RbgA (bottom) bound to the non-hydrolyzable GTP analogs, GMPPCP (top) or GMPPNP (bottom) interact at equivalent locations on the human mtLSU and bacterial 45S, respectively.\u00a0mtLSU, mitoribosomal large subunit.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The tips of the A and P loops move toward GTPBP7 and NSUN4 relative to their positions in the mature mitoribosomes (overlaid in translucent colors).\u00a0rRNA, ribosomal RNA.\n\nRbgA, the bacterial homolog of GTPBP7, facilitates the incorporation of the mitoribosomal protein bL36m into the mtLSU\u00a0(Britton, 2009; Kotani et al., 2013; Figure 2\u2014figure supplement 1). On the other hand, two other ribosomal proteins uL16m and bL27m, whose incorporation in bacteria is also attributed to RbgA, are already present in an earlier assembly intermediate (PDB 5OOM). We suspect that this difference is likely because only two GTPases (ObgE being the other) regulate bacterial 50S assembly while at least four are implicated in ribosome\u00a0assembly in human mitochondria (Maiti et al., 2021). Remarkably, GTPBP7 binds in the vicinity of 2\u2032-O-methylated bases in the A and P loops of the PTC, which are critical rRNA elements that bind the aminoacyl and peptidyl tRNAs, respectively. Our structure reveals that the A and P loops move toward GTPBP7 and NSUN4, respectively, relative to their positions in the mature 55S (Figure 2\u2014figure supplement 2) and His 34 of helix 1 of GTPBP7 directly contacts the highly conserved U3039 to verify 2\u2032-O-methylation by mitochondrial methyltransferase 2 (MRM2) (Figure 2B; Lee and Bogenhagen, 2014). Given the universal importance of 2\u2032-O-methylation of specific nucleotides in the PTC for translation (Pintard et al., 2002; Rorbach et al., 2014), it is striking that GTPBP7 directly contacts Um3039. In principle, slight rearrangements of helix 1 of GTPBP7 could also ensure G3040 methylation by MRM3. Similarly, G2815 (in the P loop), which is 2\u2032-O-methylated by MRM1 (Lee and Bogenhagen, 2014; Rorbach et al., 2014) is in the vicinity of NSUN4 and GTPBP7 in our structure (Figure 2\u2014figure supplement 2). We propose that GTPBP7 ensures 2\u2032-O-methylation of these residues by coupling GTP hydrolysis and subsequent GTPBP7 egress from the 39S to its interaction with the methylated bases.\n\nGTPBP7, MTERF4, and NSUN4 are highly conserved and their counterparts in Caenorhabditis elegans are MTG-1 (33% identical), MTER-4 (21%), and NSUN-4 (34%), respectively. In C. elegans, the methyltransferase activity of NSUN4 for mitochondrial protein synthesis was shown to be dispensable (Navarro et al., 2021), suggesting that its importance may instead lie in its interaction with the conserved core of the mtLSU. To test the importance of complex formation of the three protein factors with the mtLSU during assembly in vivo, we used C. elegans as a model organism and introduced mutations at locations in the three factors that we predicted would disrupt binding to the mtLSU without affecting expression, mitochondrial targeting or protein folding (Figure 3A, Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative images of hsp-6::GFP expression in wild-type, mter-4R178E,K262E,K263E, mtg-1R171E,K178E,K180E, nsun-4M225A,K226A, catalytic dead nsun-4C90A,\u00a0and nsun-4M225A,K226A,L286Y,A287Y mutant animals. The matched wild-type control for nsun-4M225A,K226A,L286Y,A287Y resembles the shown wild-type, and is omitted for simplicity. White arrows in mtg-1 mutants represent homozygous mutant animals based on the\u00a0absence of umnIs21 reporter expression from balancer chromosome. All animals express the zcIs13 [hsp-6::GFP] reporter which is specifically expressed in response to mitochondrial stress. Animals were grown for 72 hr at 22.5\u00b0C. Scale bars=200 \u00b5m. (B) Top five GO-terms based on p-value from g:Profiler analysis of genes upregulated greater than 0.5 (log2) in mter-4R178E,K262E,K263E mutants when compared to wild-type animals. (C) Venn diagram comparison of genes upregulated in mter-4R178E,K262E,K263E, isp-1(qmv150), and nuo-6(qm200) mutants. isp-1 and nuo-6 gene expression data from Yee et al., 2014. (D) Fraction of wild-type and mter-4R178E,K262E,K263E mutants sterile at 22.5\u00b0C. n=100 animals. (E) Fraction of wild-type and mter-4R178E,K262E,K263E mutants at different developmental stages after 48 hr at 22.5\u00b0C. n=200 animals.\u00a0GO,\u00a0gene ontology.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Residues that are important for mitoribosome binding and that were mutated in this study are highlighted in red.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Cryo-EM structure of the human complex (top) and C. elegans AlphaFold 2 models of wild-type (middle) and mutant (bottom) MTERF4 (orange), NSUN4 (magenta) and GTPBP7 (green) illustrate the high degree of structural conservation from human to worm. The introduced mutations in the mitoribosome binding interfaces of the C. elegans proteins do not affect the overall fold of the proteins as predicted by AlphaFold 2. Mutated sidechains are depicted as spheres and coloured by type (positive - blue, negative - red, hydrophobic \u2013 yellow, polar - cyan). Note that worm strains generated in this study did not carry mutations on all three proteins simultaneously as depicted here.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Total protein levels of MTG-1, NSUN-4, and MTER-4 as well as the cytosolic ribosomal protein eL13 and the mitoribosomal protein mL53 are comparable to those in wild-type worms.\u00a0Each value is an average of two biological replicates. (bottom) NSUN-4 and MTER-4 are significantly depleted in the ribosomal fraction (which includes cytosolic and mitochondrial ribosomes) in the mter-4R178E,K262E,R263E strain and to a lesser extent in the nsun-4M225A,K226A strain.\u00a0TMT-MS, Tandem mass\u00a0tag-mass spectrometry.\n\nMutations that disrupt mitoribosome binding to MTER-4 (MTER-4R178E,K262E,R263E) and MTG-1 (MTG-1R171E,K178E,K180E; the C. elegans orthologs of MTERF4 and GTPBP7, respectively), led to a substantial increase in the\u00a0expression of the mitochondrial heat-shock protein HSP-6, consistent with activation of the mitochondrial unfolded protein response (Figure 3A). These findings are similar to the effects observed when mitochondrial ribosomal proteins are knocked down by RNAi (Houtkooper et al., 2013). By contrast, we found that mutations that disrupt the catalytic activity of NSUN-4 did not substantially activate hsp-6 expression (Figure 3A, NSUN-4 cd), nor did mutations that disrupt a weak contact between NSUN-4 and the mitoribosomal protein bL33m, NSUN-4M225A,K226A. These results are consistent with the catalytic activity of NSUN-4 being dispensable for mitochondrial protein synthesis. However, NSUN-4 makes multiple contacts with the mitoribosome and the chosen M225A and K226A substitutions in NSUN-4 were likely insufficient to disrupt its interaction with the mitoribosome. We therefore introduced the additional mutations L286Y and A287Y, resulting in a dramatic mitochondrial stress response (Figure 3A, compare nsun-4M225A,K226A and nsun-4M225A,K226A,L286Y,A287Y). Therefore, disrupting NSUN-4, MTER-4, or MTG-1 binding to the conserved core of the mitoribosome potently activates mitochondrial stress, underscoring their importance during mitoribosome biogenesis.\n\nTo test whether these mutations weaken 39S binding and to rule out the possibility that the observed mitochondrial stress phenotypes result from off-pathway consequences such as gene silencing, protein misfolding, or mistargeting, we sought to quantify the total- and ribosome-bound NSUN-4, MTER-4, and MTG-1 levels in mutant strains relative to wild-type worms. Given the absence of antibodies against these proteins, we had to resort to a suitable alternative method of quantification. Tandem mass\u00a0tag-mass spectrometry (TMT-MS) permits accurate quantification of changes in global protein levels between multiple strains in parallel (Zhang and Elias, 2017). Total protein extracts as well as total ribosomes (cytosolic and mitochondrial) from wild-type, nsun-4M225A,K226A or mter-4R178E,K262E,R263E worms were extracted and labeled in duplicate (yielding a total of 12 samples) using isobaric tags and analyzed by TMT-MS (Figure 3\u2014figure supplement 3, Supplementary file 3).\n\nThe data\u00a0sets were normalized between samples on cytosolic ribosomal protein levels following the reasonable assumption that manipulations to mitochondrial ribosome assembly/recycling factors do not affect cytosolic ribosomal protein levels. The results show that the levels of MTG-1, NSUN-4, and MTER-4, as well as the ribosomal proteins eL13 and mL53, are comparable to wild-type worms (1.05- to 1.57-fold; Supplementary file 3) in both nsun-4M225A,K226A and mter-4R178E,K262E,R263E worms (Figure 3\u2014figure supplement 3, top), arguing against gene silencing, misfolding, or mistargeting of the designed mutants. This conclusion is also supported by the well-folded structures predicted by AlphaFold 2 (Figure 3\u2014figure supplement 2; Jumper et al., 2021).\n\nMutating the mitoribosome binding surfaces of NSUN-4 or MTER-4 also significantly reduced their levels in the total ribosome fraction (63% and 86%, respectively) in mter-4R178E,K262E,R263E worms. As expected, the reductions were more modest (84% and 98%, respectively) in nsun-4M225A,K226A worms, which harbor more conservative mutations (Figure 3\u2014figure supplement 3, bottom) and therefore also exhibit subtler stress responses (Figure 3A). More dramatic reductions would require all three proteins to be mutated simultaneously in the same strain, which was not done because these individual mutants already cause severe developmental defects, sterility, and poor viability. Taken together, the TMT-MS results confirm that the mitochondrial stress phenotypes are a direct consequence of disrupting the NSUN-4\u00b7MTER-4\u00b7MTG-1 complex and that these proteins play a crucial checkpoint role during mitoribosome biogenesis.\n\nAt the organismal level, destabilizing 39S binding by MTG-1 and MTER-4 resulted in delayed animal development and sterility (Figure 3B,C). Specifically, we found that mter-4 mutants exhibited delayed development and 14% of mutants were sterile (Figure 3B,C). Similarly, we observed a more severe phenotype in mtg-1 mutants and found that 100% of homozygous mtg-1 mutants were sterile (Figure 3B). The severity of the phenotypes of the nsun-4, mter-4, and mtg-1 mtLSU binding mutants underscores the importance of the role of NSUN4/NSUN-4, MTERF4/MTER-4, and GTPBP7/MTG-1 in the mitochondrion. In addition, our results suggest that the effects of disrupting GTPBP7/MTG-1 and MTERF4/MTER-4 interactions with the mitoribosome can be overcome in somatic tissues, potentially by activating the mitochondrial unfolded protein response, as mutant animals can indeed develop to adulthood. Germ cells, however, were particularly sensitive to these mutations, and disruption of mtLSU binding caused sterility. Notably, mutations in mitochondrial translational components, including mitochondrial tRNAs, are known to cause sterility in humans (Demain et al., 2017). We suggest that germ cell sensitivity to disruptions in mitochondrial translation is a conserved phenomenon throughout metazoans and establish a new model to study these effects.\n\nTo further confirm the effects of disrupting the interaction of these proteins with the mitoribosome, we performed next-generation RNA sequencing on the viable mter-4 mutants. We identified 3174 differentially expressed genes (DEGs)\u00a0in mter-4 mutants when compared to wild-type animals (Supplementary file 1). Furthermore, we found that the genes upregulated in mter-4 mutants are enriched for genes associated with mitochondrial dysfunction and substantially overlap with genes that are upregulated in electron transport chain mutants (Yee et al., 2014; Figure 3D,E). These results support our structural data and further suggest that disrupting the interaction of these proteins with the mitoribosome activates the mitochondrial unfolded protein response and disrupts normal mitochondrial function.\n\n## Discussion\n\nWe have previously reported the cryo-EM structures of two human late-stage mitoribosomal assembly intermediates (Brown et al., 2017). One intermediate (PDB 5OOM) lacks bL36m, contains the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP, and awaits folding of ~20% of the 16S rRNA, including the entire PTC. The second intermediate (PDB 5OOL) comprises fully matured 16S rRNA and all ribosomal proteins, but is incompetent for subunit joining because the anti-association factors are still present. Several events must therefore occur around these intermediates, and the order of events can be inferred from the reasonable assumption that assembly proceeds outwards from the core of the mtLSU to the inter-subunit interface (Video 1). (a) bL36m must bind the mtLSU and pack against the folded domain V helices H89\u201393; (b) the only remaining domain II helices H34\u201335 must fold; (c) H65\u201367 of domain IV can also then fold; and finally, (d) H68\u201371 of domain IV can fold to yield a mature PTC. PTC maturation also includes the universally conserved and essential modifications to incorporate pseudouridine \u03a83067 by RNA pseudouridine synthase (RPUSD4) and 2\u2032-O-methylation at Gm2815, Um3039, and Gm3040 by mitochondrial methyltransferases1-3 (MRM1-3), respectively. These modifications likely happen in concert with the above steps.\n\n![Video 1.](https://cdn.elifesciences.org/articles/68806/elife-68806-video1.mp4.jpg)\n\nA comprehensive review of GTPases in human mitoribosomal assembly (Maiti et al., 2021) and four studies describing cryo-EM structures of mtLSU late assembly intermediates distinct from ours and from each other (Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021;\u00a0Lenar\u010di\u010d et al., 2021), appeared during manuscript preparation. All five studies, including ours, have trapped MALSU1\u00b7L0R8F8\u00b7mt-ACP and NSUN4\u00b7MTERF4 at the same location on the mtLSU. The studies, however, differ notably in the precise step during assembly, the biogenesis factors recruited, and finally, the GTPase in control. The deleterious consequences of manipulating NSUN4 or MTERF4 binding to the mitoribosome in vivo illustrate the importance of these proteins in mediating not only the exact step during PTC maturation that we have trapped, but also the prior and subsequent steps described in Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021.\n\nWhen taken together, these cryo-EM structures permit piecing together the order of events during the\u00a0late-stage maturation of the mtLSU (Figure 4). The anti-association factors MALSU1, L0R8F8, and mt-ACP engage the mtLSU during early assembly of the mtLSU (Brown et al., 2017; Cheng et al., 2021). At this stage, ribosomal proteins bL27m and uL16m have already been incorporated (state I). GTPBP10, MRM3, and DDX28 hold the PTC helices H89\u201393 and the central protuberance H80\u201388 in an immature state (Figure 4, state II) (Cheng et al., 2021). Following dissociation of these factors, the central protuberance matures and bL33m and bL35m are incorporated to result in state III (Brown et al., 2017; Cheng et al., 2021).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68806/elife-68806-fig4-v1.jpg)\n\n**Figure 4.:** States I\u2013VIII along the human mtLSU late-stage maturation pathway, including recently reported states II (Cheng et al., 2021), III (Brown et al., 2017), IV (Cipullo et al., 2021; Hillen et al., 2021), V (Hillen et al., 2021), VI (this study), and\u00a0VIII (Amunts et al., 2015). Note that state V was seen only to contain GTPBP6 and GTPBP7 is therefore depicted hollow.\u00a0mtLSU, mitoribosomal large subunit.\n\nMTERF4 binds to and holds open H68\u201371 in an unfolded state and recruits NSUN4 to the mtLSU (C\u00e1mara et al., 2011). The ribosomal protein bL36m is incorporated, and MRM2 and GTPBP5 also then bind to 2\u2032-O-methylate U3039 in the A loop and assist with H89\u201393 maturation (state IV) (Cipullo et al., 2021). Curiously, GTPBP7 is also present in state IV, but at a different location than in our structure. The close proximity of helices H34\u201335 and H65\u201367 to this location leads us to propose that GTPBP7 binds here to ensure that these helices have folded. GTPBP6, whose binding to the mtLSU is incompatible with the presence of NSUN4 (Hillen et al., 2021), displaces NSUN4 and GTPBP5 and helps to further mature the PTC (state V).\n\nNext, GTPBP7, which was not actually seen in state V (Hillen et al., 2021), dissociates and repositions to the location on the PTC seen in our study (state VI). It then re-recruits NSUN4\u2022MTERF4 and together NSUN4\u00b7MTERF4\u00b7GTPBP7 unfold H68\u201371 and check U3039 methylation and proper maturation of the PTC by the actions in the prior states III\u2013V. This hypothesis if correct, would be consistent with (i) the dual roles of GTPBP6 during mitoribosome biogenesis and recycling (Hillen et al., 2021; Lavdovskaia et al., 2020), and (ii) the intriguing idea that not only GTPBP6 (Hillen et al., 2021) and MALSU1\u00b7L0R8F8\u00b7mt-ACP (Desai et al., 2020), but also NSUN4\u00b7MTERF4\u00b7GTPBP7 may have dual roles during mitoribosome recycling after termination and perhaps rescue.\n\nThis idea is supported by the facts that (i) we trapped our intermediate from Pde12 knockout (KO)\u00a0cells which are a model for ribosome stalling (and subsequent recycling) (Desai et al., 2020; Pearce et al., 2017), (ii) during mitoribosome recycling, GTPBP6 rearranges the PTC of the 39S to a slightly immature state that could require subsequent checking by GTPBP7 (Hillen et al., 2021; Lavdovskaia et al., 2020), (iii) GTPBP7 is also involved in 39S\u201328S subunit joining (Kim and Barrientos, 2018; Maiti et al., 2021).\n\nGiven that we trapped GTPBP7 using the non-hydrolyzable GMPPCP, GTPBP7 may then dissociate upon GTP hydrolysis, eject NSUN4\u00b7MTERF4, thus allowing H68\u201371 to refold into the PTC and mediate subunit joining to result in a mature 55S (state VIII) (Amunts et al., 2015). How the anti-association factors dissociate prior to subunit joining is not yet known (Kim and Barrientos, 2018; Maiti et al., 2021).\n\nThe pathological significance of GTPBP7, MTERF4, and NSUN4 is demonstrated by their association with cardiomyopathy, which is a common feature of mitochondrial diseases. Cardiomyocyte-specific MTERF4 KO mouse models develop mitochondrial cardiomyopathy, and global KO mice are embryonically lethal (C\u00e1mara et al., 2011). Variant alleles of MTERF4 have also been documented in a pediatric patient with hypertrophic cardiomyopathy (Maribel et al., 2018). Similarly, GTPBP7 and NSUN4 silencing in human cardiomyocytes (Kim and Barrientos, 2018) and conditional KO mice have been shown to lead to impaired cardiac physiology and progressive cardiomyopathy (Metodiev et al., 2014), respectively.\n\nOur observations of severe mitochondrial defects and activation of the mitochondrial unfolded protein response in mter-4 mutants, but not nsun-4 catalytic dead mutants, suggest that the major function of these proteins is as a checkpoint in mitochondrial ribosome assembly and not in RNA methylation. Consistent with this idea, MTERF4 does not participate during NSUN4-mediated methylation of the decoding center of the mtSSU (C\u00e1mara et al., 2011). We have thus shown, using structure-directed mutagenesis in vivo, that while the methyltransferase activity of NSUN4 on the small subunit can be dispensed with without resulting in a strong phenotype, the protein has a more important non-enzymatic function as a biogenesis factor in the final stages of the formation of the PTC and the tRNA binding sites in the large subunit.\n\nThe proper folding of the PTC, the universally conserved active site of the ribosome, along with the tRNA binding sites, is one of the crucial steps in the assembly of the large subunit. We conclude that this assembly occurs in multiple steps, moving from one in which the elements of the PTC are in a highly disordered state to one where they are ordered but not yet finally folded into their final structure in the large subunit. This assembly requires several protein factors to act together to yield the mature ribosomal subunit. By coupling cryo-EM analysis of human mitoribosome assembly intermediates with in vitro and in vivo studies in C. elegans, we have identified the physiological importance of three factors in an essential, conserved late-stage mtLSU maturation checkpoint. Although our studies were specifically on mitoribosomes, given the universally conserved nature of the PTC and its importance to the ribosome, we expect that other domains of life will have a similarly complex and orchestrated process requiring multiple factors to facilitate the formation of the active sites of the large ribosomal subunit.\n\n## Materials and methods\n\n### Cell line\n\nPDE12\u2212/\u2212\u00a0HEK293T cells that were used have previously been published (Pearce et al., 2017). Initially, cell growth was adherently at 37\u00b0C, 5% CO2, in 10% fetal bovine serum (FBS) supplemented with\u00a0Dulbecco\u2019s modified Eagle\u2019s medium (DMEM). Subsequently, the cells were adapted to grow in suspension in 1% FBS supplemented Freestyle media at 37\u00b0C, 8% CO2.\n\n### Purification of native mitoribosomal complexes\n\nHuman mitochondria, and from them native mitoribosomal complexes, were purified from PDE12\u2212/\u2212\u00a0HEK293T cells as previously described (Desai et al., 2020). Briefly, purified cells were harvested at 106 cells/ml and washed in cold phosphate-buffered saline (PBS). The weighed pellet of cells was resuspended in 6 ml of MIB buffer (50 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, Proteinase Inhibitor; PI, 1 tablet per 50 ml) per gram and SM4 buffer (281 mM sucrose, 844 mM mannitol in MIB buffer) to yield 70 mM sucrose and 210 mM mannitol. The cells were subjected to nitrogen cavitation for 20 min at 500 psi to disrupt the cell membranes and the collected sample was centrifuged\u00a0two\u00a0times at 800\u00d7g for 15 min and the supernatant was\u00a0collected. Two additional centrifugation steps at 10,000\u00d7g for 15 min were performed and each time, the pellet was resuspended in 0.5\u00a0ml of MIBSM buffer (3:1 MIB:SM4) per 1 g of originally weighed pellet. Per 1 g of the original pellet 10U of RNase-free DNase was added and rotated on a roller at 4\u00b0C for 20 min. The solution was then pelleted at 10,000\u00d7g for 15 min, resuspended in SEM buffer (250 mM sucrose, 20 mM HEPES\u22c5KOH pH 7.45, and\u00a01 mM EDTA), dounce-homogenized, and layered onto a sucrose step gradient of 60%, 32%, 23%, and\u00a015% sucrose for centrifugation at 99,004\u00d7g for 1 hr at 4\u00b0C. The collected mitochondrial layer was flash-frozen in liquid nitrogen for storage at \u221280\u00b0C.\n\nTo isolate mitoribosomes from the collected mitochondrial fraction, 2 volumes of lysis buffer (25 mM HEPES\u00b7KOH pH 7.4, 100 mM KCl, 25 mM Mg(OAc)2, 1.5% \u03b2-DDM, 0.15 mg/ml TOCL, 0.5 mM GMPPCP (Sigma-Aldrich), 1 tablet per 50 ml PI, and\u00a02 mM DTT) were added and briefly dounce-homogenized and stirred for 30 min in the cold room. Supernatant was collected after centrifugation at 30,000\u00d7g for 30 min and loaded at a ratio of 2.5:1 onto a 1\u00a0M sucrose cushion (20 mM HEPES\u00b7KOH, pH 7.4, 100 mM KCl, 20 mM Mg(OAc)2, 0.6% \u03b2-DDM, 0.06 mg/ml TOCL, 0.25 mM GMPPCP, and\u00a02 mM DTT) and centrifuged at 231,550\u00d7g for 60 min at 4\u00b0C. The pellet was resuspended (20 mM HEPES\u00b7KOH, pH 7.4, 100 mM KCl, 5 mM Mg(OAc)2, 0.3% \u03b2-DDM, 0.03 mg/ml TOCL, 0.25 mM GMPPCP, and\u00a02 mM DTT) and the crude mitoribosome fraction was layered onto a 15\u201330% sucrose gradient and subjected to centrifugation at 4\u00b0C for 90 min at 213,626\u00d7g. Following sucrose gradient fractionation, the mitoribosomal fractions were pooled and concentrated into final buffer (20 mM HEPES\u00b7KOH, pH 7.4, 100 mM KCl, 5 mM Mg(OAc)2, 0.05% \u03b2-DDM, 0.005 mg/ml TOCL, 0.25 mM GMPPCP, and\u00a02 mM DTT) before the mitoribosomes were vitrified for cryo-EM.\n\n### Grid preparation and data collection\n\nQuantifoil R2/2 holey carbon grids, covered with homemade amorphous carbon (~50 \u00c5 thick) was used with prior glow discharging. Using the Vitrobot Mk IV, 3 \u03bcl of our sample was applied to the grids, blotted for 4\u20136 s, vitrified by plunging into liquid ethane, and stored in liquid nitrogen. Data was collected over seven separate sessions in integrating mode at a magnification of 75,000, pixel size 1.04 \u00c5 on the FEI Titan Krios 300 kV electron microscope using the FEI Falcon III detector and EPU software. A total of 46,109 movies were collected using a defocus range from \u22121.1 to \u22123.2 at a dose of 1.5 e\u2212 per frame per \u00c52 at 1 s exposure (39 frames).\n\n### Image processing\n\nRELION-3.0 and 3.1 (Zivanov et al., 2018) were used to process cryo-EM data as described before (Desai et al., 2020). Resolutions are reported according to the Fourier shell correlation=0.143 criterion (Rosenthal and Henderson, 2003). Movie motion correction was performed using MotionCorr2 (Zheng et al., 2017) and the contrast transfer function was estimated using CTFFIND-4.1 (Rohou and Grigorieff, 2015). 3,374,367 particles were picked from 43,950 micrographs that contained data to better than 6 \u00c5 resolution using a 2D reference (Figure 1\u2014figure supplement 1). Micrographs with a\u00a0CTF figure of merit >0.3 and a maximum resolution better than 5 \u00c5 were selected for further processing. Following particle extraction (128-pixel box; 5.0375 \u00c5/pixel) and 2D classification, 3,247,481 particles were retained. The first 3D refinement yielded a 10.2 \u00c5 map at Nyquist resolution, using a 60 \u00c5 lowpass-filtered reference mitoribosome (EMD-2876) (Amunts et al., 2015). The reported 3D refinements are based on gold-standard estimates. A general 3D classification without alignments separated out mtLSU subclasses consisting of 1,283,454 particles. Following refinement and further 3D classification without alignment, a class of 1,100,599 particles was obtained that had previously unmodeled cryo-EM density at the subunit interface. This class was re-extracted to a pixel size of 1.04 \u00c5 and refined to 3.1 \u00c5. Two subsequent rounds of focussed classification with signal subtraction were performed using generous soft masks (with 11-pixel extensions and 7-pixel cosine soft edges) that spanned the P and E sites and L1 stalk and A, P, and E sites, respectively. Following 3D refinement, CTF refinement and Bayesian polishing, the LSU assembly intermediate class was refined to 3.4 \u00c5 and post-processed in RELION and also using the highRes training model in deepEMhancer (Sanchez-Garcia et al., 2020).\n\n### Model building, refinement, and validation\n\nPDB 7A5F (Desai et al., 2020) was used as a starting model for model building in Coot v.0.9.3 (Casa\u00f1al et al., 2020). Real-space refinement and validation were performed using phenix.real_space_refine (Afonine et al., 2018) and the Phenix suite (Adams et al., 2010), respectively. Homology models for MTERF4, NSUN4, and GTPBP7 were generated using trRosetta (Yang et al., 2020) and corrected using AlphaFold 2 (Jumper et al., 2021). The unfolded rRNA helices 68\u201371 were modeled using RNAcomposer (Biesiada et al., 2016) using secondary structure predictions from RNAfold (Lorenz et al., 2011). Only the backbone coordinates but not the bases were retained for the unstructured regions of H68\u201371. Comparisons were made with PDB 5OOL and 5OOM (Brown et al., 2017).\n\n### Caenorhabditis elegans alleles and strain maintenance\n\nAll strains were grown and maintained at 20\u00b0C on NGM agar plates seeded with Escherichia coli HB101 unless otherwise stated. Individual point mutations in mter-4(syb3662, syb3403), mtg-1(syb3641), and nsun-4(syb3514) were generated by SunyBiotech (Fuzhou, China). nsun-4(syb3514) results in an M225A and K226A substitution in NSUN-4, whereas nsun-4(syb3514, syb4263) additionally carries the mutations L286Y and A287Y. mtg-1(syb3641) results in R171E, K178E, and K180E substitutions in MTG-1. mter-4(syb3403) results in an R178E substitution in MTER-4. mter-4(syb3662) results in an K262E and R263E substitution in MTER-4. nsun-4(mj457) results in a C390A catalytic dead conversion in NSUN-4 and was reported previously (Navarro et al., 2021). All mutants were crossed with SJ4100\u2014zcIs13[hsp-6::GFP]\u2014to generate hsp-6 reporter strains. CGC32 - [sC1(s2023) [dpy-1(s2170) umnIs21] III] - was used to balance mtg-1(syb3641) which resulted in sterility.\n\n### Caenorhabditis elegans imaging\n\nAnimals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 22.5\u00b0C. Adult animals were collected and immobilized in tetramisole and imaged using a Leica DM6 B and a Leica DFC9000 GT camera.\n\n### RNA-seq\n\nAnimals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 20\u00b0C. Young adults were collected and washed three times in M9 buffer and snap-frozen in liquid nitrogen. Pellets of animal tissue were frozen and thawed five times and then refrozen at \u221270\u00b0C. RNA extraction and sequencing were performed by BGI Genomics (Hong Kong, China). Briefly, RNA was extracted by phenol-chloroform extraction. mRNA molecules were purified from total RNA using oligo(dT)-attached magnetic beads. cDNA was generated using random hexamer-primed reverse transcription. Libraries for paired-end 100 bp DNBSeq were generated and validated on the Agilent Technologies 2100 bioanalyzer.\n\n### RNA-seq data analysis\n\nRaw reads were trimmed for adaptors, low-quality sequences, and short reads with Trimmomatic (version 0.39, parameters: ILLUMINACLIP:TruSeq3-SE.fa:2:30:10 SLIDINGWINDOW:4:20 MINLEN:20) (Bolger et al., 2014). From the trimmed reads, the remaining rRNA was removed with sortmeRNA (version 2.1, default parameters) (Kopylova et al., 2012). Clean reads were then mapped to the C. elegans reference genome (WBCEL235) with HISAT2 (Kim et al., 2019) (version 2.1.0, default parameters) and raw counts for each were produced with HTSeq-count (Anders et al., 2015). Other quality control metrics were obtained with fastQC, Picard Tools, and multiQC (Ewels et al., 2016). Counts were imported into R and differential gene expression analysis was performed with DESeq2 (FDR<0.01, LFC>| 0.5 |) (Love et al., 2014). Gene ontology analysis of DEGs was performed with gProfiler (Raudvere et al., 2019).\n\n### Developmental rate and sterility assays\n\nAnimals were collected as embryos and grown on NGM agar plates seeded with E. coli HB101 at 22.5\u00b0C. To assay developmental rate 200 animals were scored for their developmental stage at 48 hr. To assay for sterility 100 L4 stage animals were each individually transferred to a new plate. Animals with progeny after 4 days were scored as fertile. Animals with no progeny after 4 days were scored as sterile.\n\n### Tandem mass tag-mass spectrometry\n\n#### Sample preparation\n\n500 \u03bcl of packed wild-type, mter-4(syb3662) and nsun-4(syb3514) adult worms that were grown at 20\u00b0C were collected and stored at \u221280\u00b0C. Frozen pellets were thawed in 250 \u03bcl of either RNC buffer (50 mM HEPES pH 7.4, 100 mM KOAc, 5 mM Mg(OAc)2, and\u00a01\u00d7 RNASIN RNAse inhibitor) or denaturing buffer (100 mM HEPES pH 7.6, 8 M urea) for total ribosome and total protein harvesting, respectively. 0.8 g of 0.7 mm diameter zirconia beads were added and the samples lysed in a QIAGEN TissueLyser (30 Hz, 2.5 min) at 4\u00b0C. The lysate was clarified by centrifugation at 16,100\u00d7g for 30 min at 4\u00b0C and the supernatant was either quantified and directly used for TMT-MS (in denaturing buffer) or total ribosomes were isolated by centrifugation at 100,000 rpm at 4\u00b0C for 1 hr in a TLA 100.3 rotor through a 20% sucrose cushion in RNC buffer and the ribosome pellet resuspended in denaturing buffer. All samples were analyzed in biological duplicates.\n\n#### Enzymatic digestion\n\nProtein samples in denaturing buffer were reduced with DTT and alkylated with iodoacetamide. Samples were then diluted to 4 M urea and digested with Lys-C (Promega). After 4 hr, the samples were further diluted to 1.6 M urea and digested overnight with trypsin (Promega) at 30\u00b0C. Digestion was stopped by the addition of formic acid (FA) to a final concentration of 0.5% and the resulting samples were desalted using homemade C18 stage tips (3M Empore) filled with poros R3 (Applied Biosystems) resin. Bound peptides were eluted with 30\u201380% MeCN/0.5% FA and lyophilized.\n\n#### Tandem mass tag labeling\n\nDried peptide mixtures from each condition were re-suspended in 200 mM Hepes, pH\u00a08.5. TMT 10-plex reagent (Thermo Fisher Scientific), reconstituted according to manufacturer\u2019s instructions, and incubated at 23\u00b0C for an hour. The labeling reaction was then terminated by incubation with 5% hydroxylamine for \u00bd hr. The labeled peptides were pooled into a single sample and acetonitrile was removed by Speed Vac (Savant). Each set of TMT samples was desalted and pH 8\u00a0fractionated using the same stage tips method as above. Bound peptides were eluted with a 7.5\u201360% MeCN gradient in 0.1% triethylamine and fractionated into eight fractions. Eluted fractions were acidified, partially dried down in Speed Vac, and ready for LC-MS/MS.\n\n#### Mass spectrometry analysis\n\nThe fractionated peptides were analyzed by LC-MS/MS using a fully automated Ultimate 3000 RSLC nano System (Thermo Fisher Scientific) fitted with a 100 \u03bcm\u00d72 cm PepMap100 C18 nano trap column and a 75 \u03bcm\u00d725 cm, nanoEase M/Z HSS C18 T3 column (Waters). Peptides were separated using a binary gradient consisting of buffer A (2% MeCN, 0.1% formic acid) and buffer B (80% MeCN, 0.1% formic acid). Eluted peptides were introduced directly via a nanospray ion source into an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific). The mass spectrometer was operated data-dependent mode, performed MS1 scan (m/z=400\u20131600, resolution 120k) followed by MS2 acquisitions with a resolution of 50k, NCE of 38, and an isolation window set at 0.4 Th. Dynamic exclusion was set for 60 s.\n\n#### Proteome discoverer\n\nThe acquired MSMS raw files were processed using Proteome Discoverer (version 2.4, Thermo Fisher\u00a0Scientific). MSMS spectra were searched against C.\u00a0elegans proteome, UniProt Fasta database (downloaded in 2020), using Sequest search engine. Carbamidomethylation of cysteines, TMT610plex (N-term) and TMT10plex (K) were set as fixed modifications, while methionine oxidation and N-terminal acetylation (protein) were selected as variable modifications. The abundance values of TMT reporter ions were normalized to a set of mitoribosomal or alternatively, cytosolic ribosomal proteins. The output file from Proteome Discoverer, the proteins table was filtered for proteins with FDR of 1% and exported as excel files.\n\n### Figure preparation\n\nAdobe Illustrator 2021, UCSF Chimera (Pettersen et al., 2004), Pymol (Schr\u00f6dinger, LLC), and Geneious 10.2.6 (https://www.geneious.com) were used for figure preparations.\n\n### Statistics and reproducibility\n\nSample sizes for experiments involving C. elegans were selected based on similar studies from the literature and all animals from each genotype were selected and analyzed randomly. All replicate numbers listed in figure legends represent biological replicates of independent animals cultured separately, collected separately, and analyzed separately. Fisher\u2019s exact test was used to calculate p-values for Figure 3b and c.\n\nSource data for all graphs can be found in the Statistics Source Data Table (Supplementary file 2).\n",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1257fb94-c2d4-49a5-aba5-f977aa5cab00",
+      "submission_id": "89d96d43-17aa-4bd2-b72c-92d48020aaf8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nikolaus Grigorieff, University of Massachusetts Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68806.sa1](https://doi.org/10.7554/eLife.68806.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nRibosomes are among the most complex molecular machines a cell makes. The work by Chandrasekaran et al., contributes to our understanding of the molecular details of mitochondrial ribosome assembly, and how disruptions to this pathway may cause human disease. Using cryo-EM, the authors identified a subpopulation of immature human mitochondrial large ribosomal subunits that interact with assembly factors NSUN4, MTERF4 and GTPBP7. Based on this structure, they introduce mutations in C. elegans orthologs of these assembly factors that are expected to disrupt binding to the large subunit, and they show that these mutants cause sterility and disrupt mitochondrial proteostasis in the mutant animals. They directly correlate the effect of mutating the mitoribosome binding surfaces on the C. elegans orthologs of NSUN-4 and MTER-4 with reduced co-migration with mitoribosomes. The magnitude of reduction in binding correlates well with the mutations and their ability to activate mitochondrial stress.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Visualising formation of the ribosomal active site in mitochondria\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Nikolaus Grigorieff as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Cynthia Wolberger as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bronwyn A Lucas (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors found that mutations in the C. elegans orthologs of MTERF4 and GTPBP7 predicted from their model to interrupt the interaction with 16S rRNA cause sterility, mitochondrial proteotoxic stress and, for MTERF4, developmental delays. However, the authors did not confirm that these mutants interrupt the interaction with the LSU and that the mutant proteins were expressed at or above the level of their wild type counterparts. This makes it difficult to determine whether the observed physiological effects were due to loss of this interaction or down-regulation of the proteins. The authors should show that these mutations disrupt binding of MTERF4 and GTPBP7, and that the mutant proteins are produced at or above wild type levels.\n\n2) The loss of mitochondrial proteostasis observed by the authors could have been caused by the mutant proteins themselves being misfolded, mistargeted or aggregated, as has been described for other ribosome binding proteins. These issues should be addressed in the text.\n\n3) The authors should include a figure showing the H. sapiens interaction interfaces from their model indicating the resides that are or are not conserved in the C. elegans orthologs to support their argument of high conservation of these interfaces.\n\nReviewer #1 (Recommendations for the authors):\n\nDiscussion\n\n1. The authors could strengthen their conclusions by discussion the possible artifacts introduced by the purification protocol and using GMPPCP to trap assembly intermediates. Since only about 2% of the collected data ended up in the final reconstruction, it may also be worth briefly discussing what the other 98% of the data represent, and how the authors decided that the selected 2% of the data represent the functional state they were seeking to investigate.\n\nGrid preparation and Data collection\n\n2. Please clarify that data collection was done using the Falcon detector in integrating mode.\n\nImage Processing\n\n3. Please cite Rosenthal and Henderson (2003), instead of Chen et al., (2013), for the FSC = 0.143 resolution threshold.\n\n4. Please provide a reference for MotionCorr2.\n\n5. Please describe how the 43,950 micrographs were selected from the 46,109 collected movies.\n\n6. Please provide a reference for the lowpass-filtered reference mitoribosome used as an initial reference.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors would benefit from more a more cautious interpretation of their findings and a clearer delineation between description of results and speculation about implications.\n\nSpecific recommendations:\n\n1. The authors should consider a more specific and descriptive title and avoid implying that the structure was determined in mitochondria.\n\n2. It is well documented that RBP-RNA interactions can form post-lysis. The authors should include more discussion of the technical limitations of their approach in the interpretation of this structure.\n\n3. Line 123: The authors should show that these mutations disrupt binding.\n\n4. The authors should show that the mutant proteins are produced at or above wt levels.\n\n5. In Figure 2 it is difficult to determine whether U3039 is 2' O methylated from the map as shown.\n\n6. The authors do not show that 2' O methylation of U3039 is necessary for binding of GTPBP7.\n\n7. U3039 and G3040 are listed as XX in the model. The authors note that G3040 was flexible and unable to be modeled. The authors should state why U3039 absent.\n\n8. On lines 102-103 the authors' state that A loop \"moves towards GTPBP7\". The authors should state what this movement is relative to (an earlier structure? The mature mito-LSU?) and show this in Figure 2\u2014figure supplement 2.\n\n9. Line 114: define highly conserved, comment on the conservation of the interaction interface.\n\n10. The two paragraphs on lines 162-179 should be moved to the discussion.\n\n11. Are the labels for U3039 and G3040 in Figure 2\u2014figure supplement 2 switched? The label \"U3039\" indicates a purine.\n\n12. The authors should discuss how the interface that contacts the 16S rRNA compares in the related structures from Hillen et al., and Cipullo et al.,. Would the C. elegans Mtg-1 mutants be expected to disrupt this complex too?\n\n13. Figure 3:B and C legends are reversed.\n\n14. Developmental stage of Mtg-1 mutants is not displayed in Figure 3C. If not possible a justification should be provided.\n\n15. The Mtg-1 mutant R178E is inconsistent with the protein sequence given. Are the author's referring to R179? Or K178?\n\n16. The terms \"GTPBP7\" and \"MTG1\" are used interchangeably. E.g.: in Figure 2\u2014figure supplement 1, both terms are used.\n\n17. Figure 4: Add the word \"proposed\" to the figure legend title.\n\n18. Navarro et al., 2020 is listed twice in the references.\n\nReviewer #3 (Recommendations for the authors):\n\nIn the recent past, several high-resolution cryo-EM structures of mitochondrial ribosomes (mitoribosomes) from different species have become available. The process by which these macromolecular complexes of eukaryotic ribosomes, in particular their mitoribosomes, assemble is poorly understood. However, high-resolution structures of maturation intermediates of these protein-rich mitoribosomes have just begun to emerge. The manuscript by Chandrasekaran and coworkers reports cryo-EM structures of human mitochondrial large (39S) ribosomal subunit in late assembly stages, in which the complexes were trapped using a non-hydrolysable analog of GTP. A variety of mitoribosomal complexes were isolated using extensive classification of the very large cryo-EM dataset. The major functional findings derived from the analyses of the 55S monosomal population from the same dataset was published last year by this group. As is usually the case, the mammalian mitoribosomal preparations carry a large pool of dissociated 39S subunit, a detailed analysis of 39S fraction is presented as part of this study. Authors identify six proteins that play specific roles in the 39S assembly process, three of which are positioned near the PTC of the 39S subunit, and apparently are involved in proper late-stage folding of the PTC's component rRNA, essential for the peptidyl transferase activity. In addition, authors correlate their structural findings with genetic and biochemical studies using C. elegans as a model organism. The study will be of interest to researcher working in the fields of translation, mitoribosome assembly, and in understanding the molecular mechanism of diseases associated with defects in mitoribosomal assembly. However, there is a major point that should be addressed, before the manuscript could be accepted for publication.\n\nThe comparison of structural work with human 39S subunit assembly intermediates with results of point mutations in C.elegans orthologs of the assembly factors provide a general biological link but lack direct structural correlation or comparison. A figure visualizing the locations (contact sites) of mutated C. elegans amino acids in the corresponding mammalian factors will help in a better understanding of the structural and functional correlations derived in the paper. For example, it could explain how the NSUN4 mutants described in line 133-134 could still be associated with the 39S subunit.\n",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8c832af7-60ce-401a-b20e-e28ff47ca750",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C1",
+      "claim": "Cryo-EM was used to visualize the formation of the conserved peptidyl transferase center (PTC) of the human mitochondrial ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cryo-electron microscopy (cryo-EM), we visualize the formation of the conserved peptidyl transferase center (PTC) of the human mitochondrial ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that cryo-EM was used to visualize PTC formation, and the manuscript describes the cryo-EM structure determination process in detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2c9f4402-dd2b-4212-b1a1-e7422287788e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C2",
+      "claim": "The conserved GTPase GTPBP7 regulates the correct folding of 16S ribosomal RNA (rRNA) helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved GTPase GTPBP7 regulates the correct folding of 16S ribosomal RNA (rRNA) helices and ensures 2\u02b9-O-methylation of the PTC base U3039.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and the manuscript provides structural evidence showing GTPBP7's interaction with rRNA helices and U3039.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "fcb64beb-96e2-4194-9f44-def40f7b73e7",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C3",
+      "claim": "GTPBP7 ensures 2\u02b9-O-methylation of the PTC base U3039.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved GTPase GTPBP7 regulates the correct folding of 16S ribosomal RNA (rRNA) helices and ensures 2\u02b9-O-methylation of the PTC base U3039.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and structural data shows His34 of GTPBP7 directly contacts U3039 to verify methylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "6e655aa9-1034-489b-9d00-447fd723c335",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C4",
+      "claim": "GTPBP7 binds the RNA methyltransferase NSUN4 and MTERF4.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP7 binds the RNA methyltransferase NSUN4 and MTERF4, which sequester H68-71 of the 16S rRNA and allow biogenesis factors to access the maturing PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and the cryo-EM structure shows GTPBP7 bound to NSUN4 and MTERF4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1da42327-9738-4127-a7bc-297b211abc63",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C5",
+      "claim": "NSUN4 and MTERF4 sequester H68-71 of the 16S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP7 binds the RNA methyltransferase NSUN4 and MTERF4, which sequester H68-71 of the 16S rRNA and allow biogenesis factors to access the maturing PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and the structure shows MTERF4 holding H68-71 in an unfolded state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "6c1b2300-1c3c-45af-8ae7-e4676beead39",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C6",
+      "claim": "Sequestration of H68-71 by NSUN4 and MTERF4 allows biogenesis factors to access the maturing PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP7 binds the RNA methyltransferase NSUN4 and MTERF4, which sequester H68-71 of the 16S rRNA and allow biogenesis factors to access the maturing PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and structural analysis shows that the unfolded H68-71 would permit biogenesis factor access.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1091632b-7100-458a-9305-b63e1a597899",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C7",
+      "claim": "Mutations that disrupt binding of C. elegans orthologs to the large subunit potently activate mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt binding of their Caenorhabditis elegans orthologs to the large subunit potently activate mitochondrial stress and cause viability, development, and sterility defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and experimental data shows increased hsp-6::GFP expression in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "9a210567-711d-45df-aa6c-efa30e594578",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C8",
+      "claim": "Mutations that disrupt binding of C. elegans orthologs to the large subunit cause viability, development, and sterility defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt binding of their Caenorhabditis elegans orthologs to the large subunit potently activate mitochondrial stress and cause viability, development, and sterility defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and experimental data shows developmental delays and sterility in mutant animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "cd330938-0362-46b0-bc6e-85d549dba88e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C9",
+      "claim": "Next-generation RNA sequencing reveals widespread gene expression changes in mutant animals that are indicative of mitochondrial stress response activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Next-generation RNA sequencing reveals widespread gene expression changes in these mutant animals that are indicative of mitochondrial stress response activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and RNA-seq data shows 3174 differentially expressed genes in mter-4 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "48d83efd-ec48-4a13-b577-4cb3d655a09d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C10",
+      "claim": "NSUN4 is indispensable for mitochondrial protein synthesis, but its enzymatic activity is not.",
+      "claim_type": "EXPLICIT",
+      "source": "We also answer the long-standing question of why NSUN4, but not its enzymatic activity, is indispensable for mitochondrial protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this claim, and experimental data shows that catalytic dead NSUN4 mutants do not substantially activate mitochondrial stress.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7315010d-bf1b-438f-87c1-b3e8131a4fe0",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C11",
+      "claim": "Defective mitoribosome assembly can lead to encephalomyopathy, optic neuropathy, cardiomyopathy, and hereditary spastic paraplegia.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying this process in molecular detail is clinically important because defective mitoribosome assembly can lead to encephalomyopathy, optic neuropathy, cardiomyopathy, and hereditary spastic paraplegia, among other disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites this as established knowledge about the clinical importance of mitoribosome assembly.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "adc96e2d-1143-4932-9eae-f4e121edd135",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C12",
+      "claim": "Mitoribosome assembly has diverged in notable ways from bacterial 70S ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The general principles of ribosome assembly are well-conserved across species, but mitoribosome assembly has diverged in notable ways from, and involves different factors than bacterial 70S ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction states this as established knowledge about mitoribosome assembly.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "0e25c450-97ce-4ca1-b078-dca52f4840fc",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C13",
+      "claim": "Four GTPases, GTPBP5, 6, 7, and 10 directly bind the 16S rRNA of the 39S mitoribosomal large subunit to facilitate its maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Four GTPases, GTPBP5, 6, 7, and 10 (and perhaps GTPBP8; Maiti et al., 2021) directly bind the 16S rRNA of the 39S mitoribosomal large subunit (mtLSU) to facilitate its maturation (Kotani et al., 2013), but their mechanistic roles and order of action remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction cites this claim from Kotani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1da8aa5a-5915-4f2e-a653-84910f0a2ee0",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C14",
+      "claim": "The mechanistic roles and order of action of GTPBP5, 6, 7, and 10 remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Four GTPases, GTPBP5, 6, 7, and 10 (and perhaps GTPBP8; Maiti et al., 2021) directly bind the 16S rRNA of the 39S mitoribosomal large subunit (mtLSU) to facilitate its maturation (Kotani et al., 2013), but their mechanistic roles and order of action remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction explicitly states this knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "bd241389-1efc-4ac1-97ab-c9ae7507022a",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C15",
+      "claim": "The cryo-EM structure was obtained at 3.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Resolution (\u00c5)\t3.4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Table 1 reports the resolution of the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "61596583-b597-4784-b985-87032257237b",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C16",
+      "claim": "GTPBP7 was trapped in a pre-hydrolysis state bound to GMPPCP.",
+      "claim_type": "EXPLICIT",
+      "source": "To trap GTPBP7 and other GTPases that participate in human mitochondrial translation, we included the non-hydrolyzable GTP analog \u03b2,\u03b3-methyleneguanosine 5\u2032-triphosphate (GMPPCP) during mitoribosome purification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the experimental approach and the structure shows GTPBP7 bound to GMPPCP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "42683cb3-74be-4475-b911-adf4ca7a3b74",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C17",
+      "claim": "The trapped assembly state is equivalent to the 45S (RI50) to 50S transition of the bacterial LSU.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-particle cryo-EM (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Table 1) of these and other mitoribosome-bound complexes (Desai et al., 2020) also yielded a 5% subset of mtLSU intermediates bound to GTPBP7\u00b7GMPPCP in a pre-hydrolysis state and arrested at an assembly state equivalent to the 45S (RI50) to 50S transition of the bacterial LSU (Achila et al., 2012; Fahnestock et al., 1973; Seffouh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states this comparison with bacterial ribosome assembly, citing relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3a708a8f-e789-47e5-bcdc-a98b652ae4f6",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C18",
+      "claim": "GTPBP7 was bound to a heterodimer of NSUN4 and MTERF4.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, GTPBP7 was bound to a heterodimer of the 5-methyl cytosine (m5C) modifying enzyme, NOP2/Sun RNA methyltransferase 4 (NSUN4) and its binding partner, mitochondrial transcription termination factor 4 (MTERF4) (C\u00e1mara et al., 2011; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this finding from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "4f2f8650-e957-407d-a482-db82a269f5f6",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C19",
+      "claim": "NSUN4, MTERF4, and GTPBP7 bind the inter-subunit interface of the mtLSU in a radial arrangement centered about the peptidyl site (P site) and <30 \u00c5 from the PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "NSUN4, MTERF4, and GTPBP7 bind the inter-subunit interface of the mtLSU in a radial arrangement centered about the peptidyl site (P site) and <30 \u00c5 from the PTC (Sp\u00e5hr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the spatial arrangement observed in the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "eaf26886-2a09-4875-998d-37cd72f5d6f7",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C20",
+      "claim": "The anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP are present on these particles to prevent premature SSU joining.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP are also present on these particles to prevent premature SSU joining (Brown et al., 2017; Desai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the presence of these factors, citing previous work on their function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2f8d57d4-e23e-44f8-a1d8-32942446345b",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C21",
+      "claim": "The NSUN4 active site contains weak density for the methyl donor S-adenosyl methionine (SAM).",
+      "claim_type": "EXPLICIT",
+      "source": "The NSUN4 active site contains weak density for the methyl donor S-adenosyl methionine (SAM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this observation from the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "5a2f7265-d2ef-4040-808a-906f33e05036",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C22",
+      "claim": "There is no m5C methylation of 16S rRNA located within ~20 \u00c5 of the NSUN4 active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cryo-EM density suggests that there is no m5C methylation of 16S rRNA located within ~20 \u00c5 of the NSUN4 active site indicating that methyltransferase activity is not involved at the mtLSU assembly checkpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this observation from the cryo-EM density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "52644030-f2a1-4430-8c4f-62867475cc36",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C23",
+      "claim": "Methyltransferase activity is not involved at the mtLSU assembly checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cryo-EM density suggests that there is no m5C methylation of 16S rRNA located within ~20 \u00c5 of the NSUN4 active site indicating that methyltransferase activity is not involved at the mtLSU assembly checkpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section infers this from the lack of methylation observed in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1bf0cafb-cf84-494a-816d-6cc40bbe0e59",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C24",
+      "claim": "Bisulfite sequencing studies across many species have not revealed any m5C targets on the 16S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Bisulfite sequencing studies across many species have also not revealed any m5C targets on the 16S rRNA, making this an unlikely site of NSUN4 methyltransferase activity (Metodiev et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this finding from Metodiev et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "09b6e251-e8e8-4a2f-acfe-d1981ea7bb39",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C25",
+      "claim": "The proteins uL16m, bL27m, and bL36m have already bound in the trapped intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure represents an intermediate in which the proteins uL16m, bL27m, and bL36m have already bound, but before complete folding of rRNA domain IV helices 68\u201371 and dissociation of NSUN4, MTERF4, and GTPBP7 by GTP hydrolysis, and subsequent small subunit (mtSSU) joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the composition of the trapped intermediate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "6458c189-90f7-431b-8b0c-3919d6a875f3",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C26",
+      "claim": "The trapped intermediate exists before complete folding of rRNA domain IV helices 68\u201371.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure represents an intermediate in which the proteins uL16m, bL27m, and bL36m have already bound, but before complete folding of rRNA domain IV helices 68\u201371 and dissociation of NSUN4, MTERF4, and GTPBP7 by GTP hydrolysis, and subsequent small subunit (mtSSU) joining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the state of rRNA folding in the trapped intermediate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "60c57d9b-247d-43eb-9072-92cf5a764d4b",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C27",
+      "claim": "The 16S rRNA domain IV helices 68\u201371 typically span the A, P, and E sites and pack against the D-loop, and anticodon arms of the P-site tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 16S rRNA domain IV helices 68\u201371 (nucleotides 2542\u20132637) typically span the A, P, and E sites and pack against the D-loop, and anticodon arms of the P-site tRNA (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the typical location and function of these helices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "76639a2f-40e2-414d-abb5-716d856df02e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C28",
+      "claim": "H68-71 are held in a partially unfolded state by MTERF4 at a location that would permit biogenesis factors to access to their binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, they are instead held in a partially unfolded state by MTERF4 at a location that would permit biogenesis factors to access to their binding sites, but clash with an incoming SSU (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes the state of H68-71 in the trapped intermediate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "72457685-ea67-4903-910f-d094d283731f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C29",
+      "claim": "The unfolded H68-71 would clash with an incoming SSU.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, they are instead held in a partially unfolded state by MTERF4 at a location that would permit biogenesis factors to access to their binding sites, but clash with an incoming SSU (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section infers this from the structural position of H68-71.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "249e9f66-c588-4363-aa7a-0fcfd4c7c597",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C30",
+      "claim": "GTP hydrolysis by GTPBP7 would result in dissociation of the GTPase and MTERF4\u00b7NSUN4, allowing H68\u201371 to fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent GTP hydrolysis by GTPBP7 would result in dissociation of the GTPase and MTERF4\u00b7NSUN4, allowing H68\u201371 to fold (compare Figure 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this mechanism based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "dcca9267-9cfc-424c-be41-b70b225438f4",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C31",
+      "claim": "RbgA is the bacterial homolog of GTPBP7.",
+      "claim_type": "EXPLICIT",
+      "source": "RbgA, the bacterial homolog of GTPBP7, facilitates the incorporation of the mitoribosomal protein bL36m into the mtLSU (Britton, 2009; Kotani et al., 2013; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states this relationship, citing relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "c3821858-eae6-4980-9d8c-ad127fdc5925",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C32",
+      "claim": "RbgA facilitates the incorporation of bL36m into the mtLSU.",
+      "claim_type": "EXPLICIT",
+      "source": "RbgA, the bacterial homolog of GTPBP7, facilitates the incorporation of the mitoribosomal protein bL36m into the mtLSU (Britton, 2009; Kotani et al., 2013; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this function from Britton, 2009 and Kotani et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2766c7d9-2d9b-4437-a214-c0ff73688dd0",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C33",
+      "claim": "uL16m and bL27m are already present in an earlier assembly intermediate (PDB 5OOM).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, two other ribosomal proteins uL16m and bL27m, whose incorporation in bacteria is also attributed to RbgA, are already present in an earlier assembly intermediate (PDB 5OOM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section compares the current structure with a previously published structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "02afb829-ae6a-4985-aa5c-94487d891bba",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C34",
+      "claim": "Only two GTPases (ObgE and RbgA) regulate bacterial 50S assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that this difference is likely because only two GTPases (ObgE being the other) regulate bacterial 50S assembly while at least four are implicated in ribosome assembly in human mitochondria (Maiti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "8665c90e-f55c-44d6-b184-d381e2e7864e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C35",
+      "claim": "At least four GTPases are implicated in ribosome assembly in human mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that this difference is likely because only two GTPases (ObgE being the other) regulate bacterial 50S assembly while at least four are implicated in ribosome assembly in human mitochondria (Maiti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this from Maiti et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3bf167a1-fc13-4300-be62-b0d2d151c79f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C36",
+      "claim": "GTPBP7 binds in the vicinity of 2\u2032-O-methylated bases in the A and P loops of the PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, GTPBP7 binds in the vicinity of 2\u2032-O-methylated bases in the A and P loops of the PTC, which are critical rRNA elements that bind the aminoacyl and peptidyl tRNAs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this observation from the cryo-EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "da246e1e-b607-4ebc-8547-dc05e021b562",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C37",
+      "claim": "The A and P loops are critical rRNA elements that bind the aminoacyl and peptidyl tRNAs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, GTPBP7 binds in the vicinity of 2\u2032-O-methylated bases in the A and P loops of the PTC, which are critical rRNA elements that bind the aminoacyl and peptidyl tRNAs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states this as established knowledge about ribosome function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "5bcec15e-3e5f-415f-b017-14e0e9ca828e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C38",
+      "claim": "The A and P loops move toward GTPBP7 and NSUN4, respectively, relative to their positions in the mature 55S.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure reveals that the A and P loops move toward GTPBP7 and NSUN4, respectively, relative to their positions in the mature 55S (Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this observation, referencing Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1b6f9594-bc67-43eb-84e8-0f4598ef402c",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C39",
+      "claim": "His 34 of helix 1 of GTPBP7 directly contacts the highly conserved U3039 to verify 2\u2032-O-methylation by mitochondrial methyltransferase 2 (MRM2).",
+      "claim_type": "EXPLICIT",
+      "source": "His 34 of helix 1 of GTPBP7 directly contacts the highly conserved U3039 to verify 2\u2032-O-methylation by mitochondrial methyltransferase 2 (MRM2) (Figure 2B; Lee and Bogenhagen, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this observation from the structure, referencing Figure 2B and citing Lee and Bogenhagen, 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "962ff930-3385-4ba2-8400-4c47930f610e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C40",
+      "claim": "2\u2032-O-methylation of specific nucleotides in the PTC is universally important for translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the universal importance of 2\u2032-O-methylation of specific nucleotides in the PTC for translation (Pintard et al., 2002; Rorbach et al., 2014), it is striking that GTPBP7 directly contacts Um3039.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this as established knowledge from Pintard et al., 2002 and Rorbach et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "73d8022d-095a-4a81-8c67-318b8635b720",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C41",
+      "claim": "Slight rearrangements of helix 1 of GTPBP7 could ensure G3040 methylation by MRM3.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, slight rearrangements of helix 1 of GTPBP7 could also ensure G3040 methylation by MRM3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this possibility based on the structural arrangement.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "8c2219e3-6cc4-49ac-a9cb-7922cb98f17b",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C42",
+      "claim": "G2815 (in the P loop) is 2\u2032-O-methylated by MRM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, G2815 (in the P loop), which is 2\u2032-O-methylated by MRM1 (Lee and Bogenhagen, 2014; Rorbach et al., 2014) is in the vicinity of NSUN4 and GTPBP7 in our structure (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this from Lee and Bogenhagen, 2014 and Rorbach et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2992c861-caee-41e6-b6b7-6291f2ec4f70",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C43",
+      "claim": "GTPBP7 ensures 2\u2032-O-methylation of specific residues by coupling GTP hydrolysis and subsequent GTPBP7 egress from the 39S to its interaction with the methylated bases.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that GTPBP7 ensures 2\u2032-O-methylation of these residues by coupling GTP hydrolysis and subsequent GTPBP7 egress from the 39S to its interaction with the methylated bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this mechanism based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "d96e4bae-4b44-4398-8179-1c3028c39100",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C44",
+      "claim": "GTPBP7, MTERF4, and NSUN4 are highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP7, MTERF4, and NSUN4 are highly conserved and their counterparts in Caenorhabditis elegans are MTG-1 (33% identical), MTER-4 (21%), and NSUN-4 (34%), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states this conservation with specific sequence identity percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "9475187b-1eb1-4f95-8f41-120f85803a49",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C45",
+      "claim": "The C. elegans counterparts of GTPBP7, MTERF4, and NSUN4 are MTG-1, MTER-4, and NSUN-4, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP7, MTERF4, and NSUN4 are highly conserved and their counterparts in Caenorhabditis elegans are MTG-1 (33% identical), MTER-4 (21%), and NSUN-4 (34%), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section identifies these orthologs with sequence identity percentages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a6b51c9b-47ed-444c-aa41-16e3070f56b5",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C46",
+      "claim": "The methyltransferase activity of NSUN4 for mitochondrial protein synthesis was shown to be dispensable in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the methyltransferase activity of NSUN4 for mitochondrial protein synthesis was shown to be dispensable (Navarro et al., 2021), suggesting that its importance may instead lie in its interaction with the conserved core of the mtLSU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this finding from Navarro et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f547a91f-1b62-43b0-bd4d-1e8a5dba1184",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C47",
+      "claim": "Mutations that disrupt MTER-4 binding to the mtLSU led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt mitoribosome binding to MTER-4 (MTER-4R178E,K262E,R263E) and MTG-1 (MTG-1R171E,K178E,K180E; the C. elegans orthologs of MTERF4 and GTPBP7, respectively), led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6, consistent with activation of the mitochondrial unfolded protein response (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "bb87589a-c0b8-4f63-bf5e-41e3adae1dbe",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C48",
+      "claim": "Mutations that disrupt MTG-1 binding to the mtLSU led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt mitoribosome binding to MTER-4 (MTER-4R178E,K262E,R263E) and MTG-1 (MTG-1R171E,K178E,K180E; the C. elegans orthologs of MTERF4 and GTPBP7, respectively), led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6, consistent with activation of the mitochondrial unfolded protein response (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3a731519-096a-4107-b56f-70bc8ce52454",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C49",
+      "claim": "Increased HSP-6 expression is consistent with activation of the mitochondrial unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt mitoribosome binding to MTER-4 (MTER-4R178E,K262E,R263E) and MTG-1 (MTG-1R171E,K178E,K180E; the C. elegans orthologs of MTERF4 and GTPBP7, respectively), led to a substantial increase in the expression of the mitochondrial heat-shock protein HSP-6, consistent with activation of the mitochondrial unfolded protein response (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section interprets the HSP-6 expression data as indicating mitochondrial stress response activation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "1dd59c3a-7c91-459b-a20f-6ccc4a5d5b86",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C50",
+      "claim": "Mutations that disrupt the catalytic activity of NSUN-4 did not substantially activate hsp-6 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we found that mutations that disrupt the catalytic activity of NSUN-4 did not substantially activate hsp-6 expression (Figure 3A, NSUN-4 cd)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e79bbfbd-3a1f-4d36-967f-cf7ba4ff6cbd",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C51",
+      "claim": "Mutations that disrupt a weak contact between NSUN-4 and the mitoribosomal protein bL33m (NSUN-4M225A,K226A) did not substantially activate hsp-6 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we found that mutations that disrupt the catalytic activity of NSUN-4 did not substantially activate hsp-6 expression (Figure 3A, NSUN-4 cd), nor did mutations that disrupt a weak contact between NSUN-4 and the mitoribosomal protein bL33m, NSUN-4M225A,K226A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "38080e77-17a4-4d69-aae1-0c49a49a8b0d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C52",
+      "claim": "The catalytic activity of NSUN-4 is dispensable for mitochondrial protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the catalytic activity of NSUN-4 being dispensable for mitochondrial protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section infers this from the lack of stress response in catalytic dead mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a414714e-b1f0-4e2d-a5f1-ef026366f053",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C53",
+      "claim": "NSUN-4 makes multiple contacts with the mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NSUN-4 makes multiple contacts with the mitoribosome and the chosen M225A and K226A substitutions in NSUN-4 were likely insufficient to disrupt its interaction with the mitoribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section infers this from the structural data and the weak phenotype of the M225A,K226A mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f3adf633-6bba-4e88-8c2d-f8f82adf768e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C54",
+      "claim": "The additional mutations L286Y and A287Y in NSUN-4 resulted in a dramatic mitochondrial stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore introduced the additional mutations L286Y and A287Y, resulting in a dramatic mitochondrial stress response (Figure 3A, compare nsun-4M225A,K226A and nsun-4M225A,K226A,L286Y,A287Y).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "518ed7f1-3ee8-4c64-b6b8-8302bb2c7050",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C55",
+      "claim": "Disrupting NSUN-4, MTER-4, or MTG-1 binding to the conserved core of the mitoribosome potently activates mitochondrial stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, disrupting NSUN-4, MTER-4, or MTG-1 binding to the conserved core of the mitoribosome potently activates mitochondrial stress, underscoring their importance during mitoribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section concludes this from the experimental data on mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "032cfed8-f915-498b-b1a4-bcdd32aa451f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C56",
+      "claim": "TMT-MS permits accurate quantification of changes in global protein levels between multiple strains in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Tandem mass tag-mass spectrometry (TMT-MS) permits accurate quantification of changes in global protein levels between multiple strains in parallel (Zhang and Elias, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this as an established method from Zhang and Elias, 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "dbf49378-11cd-4cf6-8d3c-6a6af2d08d22",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C57",
+      "claim": "The levels of MTG-1, NSUN-4, and MTER-4 are comparable to wild-type worms in both nsun-4M225A,K226A and mter-4R178E,K262E,R263E worms.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that the levels of MTG-1, NSUN-4, and MTER-4, as well as the ribosomal proteins eL13 and mL53, are comparable to wild-type worms (1.05- to 1.57-fold; Supplementary file 3) in both nsun-4M225A,K226A and mter-4R178E,K262E,R263E worms (Figure 3\u2014figure supplement 3, top), arguing against gene silencing, misfolding, or mistargeting of the designed mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this TMT-MS finding, referencing Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "605cf840-c377-4930-b3a2-932b2fe2efeb",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C58",
+      "claim": "Mutating the mitoribosome binding surfaces of NSUN-4 or MTER-4 significantly reduced their levels in the total ribosome fraction in mter-4R178E,K262E,R263E worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the mitoribosome binding surfaces of NSUN-4 or MTER-4 also significantly reduced their levels in the total ribosome fraction (63% and 86%, respectively) in mter-4R178E,K262E,R263E worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section describes this TMT-MS finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "c0d6c701-ad91-421f-bdec-70211cf1b974",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C59",
+      "claim": "The reductions in ribosome-bound NSUN-4 and MTER-4 were more modest in nsun-4M225A,K226A worms.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the reductions were more modest (84% and 98%, respectively) in nsun-4M225A,K226A worms, which harbor more conservative mutations (Figure 3\u2014figure supplement 3, bottom) and therefore also exhibit subtler stress responses (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this TMT-MS finding, referencing Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7d67d90a-b7ec-407c-a7c0-5923479188a3",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C60",
+      "claim": "The mitochondrial stress phenotypes are a direct consequence of disrupting the NSUN-4\u00b7MTER-4\u00b7MTG-1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the TMT-MS results confirm that the mitochondrial stress phenotypes are a direct consequence of disrupting the NSUN-4\u00b7MTER-4\u00b7MTG-1 complex and that these proteins play a crucial checkpoint role during mitoribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section concludes this from the TMT-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "b80a3f50-0c8e-4afe-9319-d0c402c6673f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C61",
+      "claim": "NSUN-4, MTER-4, and MTG-1 play a crucial checkpoint role during mitoribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the TMT-MS results confirm that the mitochondrial stress phenotypes are a direct consequence of disrupting the NSUN-4\u00b7MTER-4\u00b7MTG-1 complex and that these proteins play a crucial checkpoint role during mitoribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section concludes this from the combined experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e3852252-680e-4651-b490-76e29f99db27",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C62",
+      "claim": "Destabilizing 39S binding by MTG-1 and MTER-4 resulted in delayed animal development and sterility.",
+      "claim_type": "EXPLICIT",
+      "source": "At the organismal level, destabilizing 39S binding by MTG-1 and MTER-4 resulted in delayed animal development and sterility (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this experimental finding, referencing Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f02e8084-afdf-4f87-bf17-6cb3e1e4fae8",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C63",
+      "claim": "14% of mter-4 mutants were sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that mter-4 mutants exhibited delayed development and 14% of mutants were sterile (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports this quantitative finding, referencing Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "437ad7c7-0063-4315-b363-94614608d703",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C64",
+      "claim": "100% of homozygous mtg-1 mutants were sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed a more severe phenotype in mtg-1 mutants and found that 100% of homozygous mtg-1 mutants were sterile (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section reports this quantitative finding, referencing Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "83ca7134-a240-4edd-b0b5-556ec9beb6db",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C65",
+      "claim": "The effects of disrupting GTPBP7/MTG-1 and MTERF4/MTER-4 interactions with the mitoribosome can be overcome in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our results suggest that the effects of disrupting GTPBP7/MTG-1 and MTERF4/MTER-4 interactions with the mitoribosome can be overcome in somatic tissues, potentially by activating the mitochondrial unfolded protein response, as mutant animals can indeed develop to adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section infers this from the observation that mutant animals can develop to adulthood.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3cb42ab6-11bc-4001-acc5-1e0ce31bceeb",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C66",
+      "claim": "Germ cells were particularly sensitive to mutations that disrupt mtLSU binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Germ cells, however, were particularly sensitive to these mutations, and disruption of mtLSU binding caused sterility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section concludes this from the sterility phenotypes observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "96f96a39-1f83-4670-87cc-6a6333e38f54",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C67",
+      "claim": "Mutations in mitochondrial translational components, including mitochondrial tRNAs, are known to cause sterility in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, mutations in mitochondrial translational components, including mitochondrial tRNAs, are known to cause sterility in humans (Demain et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section cites this as established knowledge from Demain et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a1357f06-7cb2-48d4-b669-d55557a026a1",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C68",
+      "claim": "Germ cell sensitivity to disruptions in mitochondrial translation is a conserved phenomenon throughout metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that germ cell sensitivity to disruptions in mitochondrial translation is a conserved phenomenon throughout metazoans and establish a new model to study these effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section proposes this based on the C. elegans data and human literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f85dde61-4914-4b6b-b858-ad4aa6982fec",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C69",
+      "claim": "3174 differentially expressed genes were identified in mter-4 mutants when compared to wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 3174 differentially expressed genes (DEGs) in mter-4 mutants when compared to wild-type animals (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section reports this RNA-seq finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f73a5973-334c-41e4-9561-adac0d0be328",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C70",
+      "claim": "The genes upregulated in mter-4 mutants are enriched for genes associated with mitochondrial dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the genes upregulated in mter-4 mutants are enriched for genes associated with mitochondrial dysfunction and substantially overlap with genes that are upregulated in electron transport chain mutants (Yee et al., 2014; Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this RNA-seq analysis finding, referencing Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "23b66ca6-0eee-4de9-a09d-0eddb41f5e8c",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C71",
+      "claim": "The genes upregulated in mter-4 mutants substantially overlap with genes that are upregulated in electron transport chain mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the genes upregulated in mter-4 mutants are enriched for genes associated with mitochondrial dysfunction and substantially overlap with genes that are upregulated in electron transport chain mutants (Yee et al., 2014; Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes this RNA-seq analysis finding, referencing Figure 3D, 3E, and citing Yee et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f4dce347-d14d-450a-aacc-1c33a23319c9",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C72",
+      "claim": "Disrupting the interaction of NSUN4, MTERF4, and GTPBP7 with the mitoribosome activates the mitochondrial unfolded protein response and disrupts normal mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our structural data and further suggest that disrupting the interaction of these proteins with the mitoribosome activates the mitochondrial unfolded protein response and disrupts normal mitochondrial function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section concludes this from the RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7c42b0e0-6520-482b-b65e-27387042c3d0",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C73",
+      "claim": "An earlier intermediate (PDB 5OOM) lacks bL36m and contains the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP.",
+      "claim_type": "EXPLICIT",
+      "source": "One intermediate (PDB 5OOM) lacks bL36m, contains the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP, and awaits folding of ~20% of the 16S rRNA, including the entire PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section describes this previously published intermediate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "d3821051-a3f2-409d-82f7-0d9a9e81ee8f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C74",
+      "claim": "An earlier intermediate (PDB 5OOM) awaits folding of ~20% of the 16S rRNA, including the entire PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "One intermediate (PDB 5OOM) lacks bL36m, contains the anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP, and awaits folding of ~20% of the 16S rRNA, including the entire PTC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section describes this previously published intermediate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "8e353fb2-9af6-42c6-afe8-d7f25de89dd9",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C75",
+      "claim": "A second intermediate (PDB 5OOL) comprises fully matured 16S rRNA and all ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The second intermediate (PDB 5OOL) comprises fully matured 16S rRNA and all ribosomal proteins, but is incompetent for subunit joining because the anti-association factors are still present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section describes this previously published intermediate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "b981de66-f0bc-42c5-bda6-18970b3216c1",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C76",
+      "claim": "The second intermediate (PDB 5OOL) is incompetent for subunit joining because the anti-association factors are still present.",
+      "claim_type": "EXPLICIT",
+      "source": "The second intermediate (PDB 5OOL) comprises fully matured 16S rRNA and all ribosomal proteins, but is incompetent for subunit joining because the anti-association factors are still present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section describes this previously published intermediate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7a26050f-6a84-4414-8cb7-12a9ffcc13d1",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C77",
+      "claim": "Assembly proceeds outwards from the core of the mtLSU to the inter-subunit interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Several events must therefore occur around these intermediates, and the order of events can be inferred from the reasonable assumption that assembly proceeds outwards from the core of the mtLSU to the inter-subunit interface (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The discussion section states this as a reasonable assumption about ribosome assembly.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3e09b9bb-87ce-4cf7-8927-45a82c02fb01",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C78",
+      "claim": "PTC maturation includes the incorporation of pseudouridine \u03a83067 by RNA pseudouridine synthase (RPUSD4).",
+      "claim_type": "EXPLICIT",
+      "source": "PTC maturation also includes the universally conserved and essential modifications to incorporate pseudouridine \u03a83067 by RNA pseudouridine synthase (RPUSD4) and 2\u2032-O-methylation at Gm2815, Um3039, and Gm3040 by mitochondrial methyltransferases1-3 (MRM1-3), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section states this as part of PTC maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2a9cf9ab-5a31-4b80-b963-04de833ae7fd",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C79",
+      "claim": "PTC maturation includes 2\u2032-O-methylation at Gm2815, Um3039, and Gm3040 by mitochondrial methyltransferases1-3 (MRM1-3).",
+      "claim_type": "EXPLICIT",
+      "source": "PTC maturation also includes the universally conserved and essential modifications to incorporate pseudouridine \u03a83067 by RNA pseudouridine synthase (RPUSD4) and 2\u2032-O-methylation at Gm2815, Um3039, and Gm3040 by mitochondrial methyltransferases1-3 (MRM1-3), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section states this as part of PTC maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "fd7eede5-3358-4230-8bcb-f2f298719ce8",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C80",
+      "claim": "Four studies describing cryo-EM structures of mtLSU late assembly intermediates distinct from the current study appeared during manuscript preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive review of GTPases in human mitoribosomal assembly (Maiti et al., 2021) and four studies describing cryo-EM structures of mtLSU late assembly intermediates distinct from ours and from each other (Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021; Lenar\u010di\u010d et al., 2021), appeared during manuscript preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites these concurrent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "83a78d65-9d78-40d2-94e0-dce173799de7",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C81",
+      "claim": "All five studies have trapped MALSU1\u00b7L0R8F8\u00b7mt-ACP and NSUN4\u00b7MTERF4 at the same location on the mtLSU.",
+      "claim_type": "EXPLICIT",
+      "source": "All five studies, including ours, have trapped MALSU1\u00b7L0R8F8\u00b7mt-ACP and NSUN4\u00b7MTERF4 at the same location on the mtLSU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section compares the current study with concurrent studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "25df1d1e-f4c8-4fa0-b883-7f610ce68ee1",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C82",
+      "claim": "The studies differ notably in the precise step during assembly, the biogenesis factors recruited, and the GTPase in control.",
+      "claim_type": "EXPLICIT",
+      "source": "The studies, however, differ notably in the precise step during assembly, the biogenesis factors recruited, and finally, the GTPase in control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section compares the current study with concurrent studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a81392d3-52c7-4ed1-96e2-7a68e7ae9dd2",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C83",
+      "claim": "The deleterious consequences of manipulating NSUN4 or MTERF4 binding to the mitoribosome in vivo illustrate the importance of these proteins in mediating multiple steps during PTC maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The deleterious consequences of manipulating NSUN4 or MTERF4 binding to the mitoribosome in vivo illustrate the importance of these proteins in mediating not only the exact step during PTC maturation that we have trapped, but also the prior and subsequent steps described in Cheng et al., 2021; Cipullo et al., 2021; Hillen et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section interprets the in vivo data in the context of multiple assembly steps.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "d000b3b7-cf8e-419c-88a8-cc1e2265a782",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C84",
+      "claim": "The anti-association factors MALSU1, L0R8F8, and mt-ACP engage the mtLSU during early assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-association factors MALSU1, L0R8F8, and mt-ACP engage the mtLSU during early assembly of the mtLSU (Brown et al., 2017; Cheng et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Brown et al., 2017 and Cheng et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7a784786-9989-4ad4-8b1d-8a0f1e75932d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C85",
+      "claim": "GTPBP10, MRM3, and DDX28 hold the PTC helices H89\u201393 and the central protuberance H80\u201388 in an immature state.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP10, MRM3, and DDX28 hold the PTC helices H89\u201393 and the central protuberance H80\u201388 in an immature state (Figure 4, state II) (Cheng et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The discussion section cites this from Cheng et al., 2021, referencing Figure 4.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a35b3ce3-c675-47b7-9c41-c4e41b80dfab",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C86",
+      "claim": "MTERF4 binds to and holds open H68\u201371 in an unfolded state and recruits NSUN4 to the mtLSU.",
+      "claim_type": "EXPLICIT",
+      "source": "MTERF4 binds to and holds open H68\u201371 in an unfolded state and recruits NSUN4 to the mtLSU (C\u00e1mara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from C\u00e1mara et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "39bb8ea8-0aac-4779-8eba-583883492e68",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C87",
+      "claim": "MRM2 and GTPBP5 bind to 2\u2032-O-methylate U3039 in the A loop and assist with H89\u201393 maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ribosomal protein bL36m is incorporated, and MRM2 and GTPBP5 also then bind to 2\u2032-O-methylate U3039 in the A loop and assist with H89\u201393 maturation (state IV) (Cipullo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Cipullo et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "55ae1fd1-d05d-43d7-b055-5ec9811b0b2e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C88",
+      "claim": "GTPBP7 is present in state IV at a different location than in the current structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, GTPBP7 is also present in state IV, but at a different location than in our structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section compares the current structure with state IV from Cipullo et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "ffc5afb2-7f71-4d97-acce-3a799fc8b369",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C89",
+      "claim": "GTPBP7 binds in state IV to ensure that helices H34\u201335 and H65\u201367 have folded.",
+      "claim_type": "EXPLICIT",
+      "source": "The close proximity of helices H34\u201335 and H65\u201367 to this location leads us to propose that GTPBP7 binds here to ensure that these helices have folded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this mechanism based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "575ecf5f-6ed5-40b1-a5a7-dd38f3016866",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C90",
+      "claim": "GTPBP6 displaces NSUN4 and GTPBP5 and helps to further mature the PTC.",
+      "claim_type": "EXPLICIT",
+      "source": "GTPBP6, whose binding to the mtLSU is incompatible with the presence of NSUN4 (Hillen et al., 2021), displaces NSUN4 and GTPBP5 and helps to further mature the PTC (state V).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Hillen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "343239a5-45c8-4af0-a08d-31d828128a1c",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C91",
+      "claim": "GTPBP7 dissociates and repositions to the location seen in the current study after state V.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, GTPBP7, which was not actually seen in state V (Hillen et al., 2021), dissociates and repositions to the location on the PTC seen in our study (state VI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this sequence of events based on the current structure and Hillen et al., 2021.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "28c2a093-8456-46dc-aecf-eee98fa1f34d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C92",
+      "claim": "GTPBP7 re-recruits NSUN4\u2022MTERF4 in state VI.",
+      "claim_type": "EXPLICIT",
+      "source": "It then re-recruits NSUN4\u2022MTERF4 and together NSUN4\u00b7MTERF4\u00b7GTPBP7 unfold H68\u201371 and check U3039 methylation and proper maturation of the PTC by the actions in the prior states III\u2013V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this mechanism based on the current structure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "9ff5ab1f-ae99-4468-8a84-ede6d81499f9",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C93",
+      "claim": "NSUN4\u00b7MTERF4\u00b7GTPBP7 unfold H68\u201371 and check U3039 methylation and proper maturation of the PTC in state VI.",
+      "claim_type": "EXPLICIT",
+      "source": "It then re-recruits NSUN4\u2022MTERF4 and together NSUN4\u00b7MTERF4\u00b7GTPBP7 unfold H68\u201371 and check U3039 methylation and proper maturation of the PTC by the actions in the prior states III\u2013V.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this mechanism based on the current structure.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "ce8dd69f-222c-4580-aac7-09c83c1a2457",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C94",
+      "claim": "GTPBP6 has dual roles during mitoribosome biogenesis and recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis if correct, would be consistent with (i) the dual roles of GTPBP6 during mitoribosome biogenesis and recycling (Hillen et al., 2021; Lavdovskaia et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Hillen et al., 2021 and Lavdovskaia et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "897768fb-5146-41f7-a3be-51ab55b4b081",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C95",
+      "claim": "NSUN4\u00b7MTERF4\u00b7GTPBP7 may have dual roles during mitoribosome recycling after termination and rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis if correct, would be consistent with (i) the dual roles of GTPBP6 during mitoribosome biogenesis and recycling (Hillen et al., 2021; Lavdovskaia et al., 2020), and (ii) the intriguing idea that not only GTPBP6 (Hillen et al., 2021) and MALSU1\u00b7L0R8F8\u00b7mt-ACP (Desai et al., 2020), but also NSUN4\u00b7MTERF4\u00b7GTPBP7 may have dual roles during mitoribosome recycling after termination and perhaps rescue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this hypothesis based on the current structure and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "4fa9bb36-ed67-49fc-a331-26a4b9c9006f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C96",
+      "claim": "The intermediate was trapped from Pde12 knockout cells which are a model for ribosome stalling and subsequent recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is supported by the facts that (i) we trapped our intermediate from Pde12 knockout (KO) cells which are a model for ribosome stalling (and subsequent recycling) (Desai et al., 2020; Pearce et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Desai et al., 2020 and Pearce et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2df94ac6-68da-4c92-9217-b15e4b18b1ec",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C97",
+      "claim": "During mitoribosome recycling, GTPBP6 rearranges the PTC of the 39S to a slightly immature state that could require subsequent checking by GTPBP7.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) during mitoribosome recycling, GTPBP6 rearranges the PTC of the 39S to a slightly immature state that could require subsequent checking by GTPBP7 (Hillen et al., 2021; Lavdovskaia et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this based on Hillen et al., 2021 and Lavdovskaia et al., 2020.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "cf0a5815-ea35-45a0-86c4-227da67e3eeb",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C98",
+      "claim": "GTPBP7 is involved in 39S\u201328S subunit joining.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) GTPBP7 is also involved in 39S\u201328S subunit joining (Kim and Barrientos, 2018; Maiti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Kim and Barrientos, 2018 and Maiti et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "b183a637-09c2-440d-9b26-089df2c817db",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C99",
+      "claim": "GTPBP7 may dissociate upon GTP hydrolysis, eject NSUN4\u00b7MTERF4, allowing H68\u201371 to refold into the PTC and mediate subunit joining.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we trapped GTPBP7 using the non-hydrolyzable GMPPCP, GTPBP7 may then dissociate upon GTP hydrolysis, eject NSUN4\u00b7MTERF4, thus allowing H68\u201371 to refold into the PTC and mediate subunit joining to result in a mature 55S (state VIII) (Amunts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this mechanism based on the current structure and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "6b653b34-7c37-4a8d-afff-289653640747",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C100",
+      "claim": "How the anti-association factors dissociate prior to subunit joining is not yet known.",
+      "claim_type": "EXPLICIT",
+      "source": "How the anti-association factors dissociate prior to subunit joining is not yet known (Kim and Barrientos, 2018; Maiti et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section states this as an open question, citing Kim and Barrientos, 2018 and Maiti et al., 2021.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7cfd18a3-22a6-4c33-920d-3360bebb2c27",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C101",
+      "claim": "The pathological significance of GTPBP7, MTERF4, and NSUN4 is demonstrated by their association with cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathological significance of GTPBP7, MTERF4, and NSUN4 is demonstrated by their association with cardiomyopathy, which is a common feature of mitochondrial diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section states this as established knowledge about the clinical relevance of these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "81c78c29-a212-48f5-a7b6-cd8038e8b280",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C102",
+      "claim": "Cardiomyocyte-specific MTERF4 KO mouse models develop mitochondrial cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocyte-specific MTERF4 KO mouse models develop mitochondrial cardiomyopathy, and global KO mice are embryonically lethal (C\u00e1mara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from C\u00e1mara et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "73793bd4-7cae-48ee-90ab-9c818956691a",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C103",
+      "claim": "Global MTERF4 KO mice are embryonically lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocyte-specific MTERF4 KO mouse models develop mitochondrial cardiomyopathy, and global KO mice are embryonically lethal (C\u00e1mara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from C\u00e1mara et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "9dff9f74-bcc6-4887-90f6-5f1833596b5b",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C104",
+      "claim": "Variant alleles of MTERF4 have been documented in a pediatric patient with hypertrophic cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant alleles of MTERF4 have also been documented in a pediatric patient with hypertrophic cardiomyopathy (Maribel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Maribel et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "47dfbaaa-a2ef-430f-adab-49a1fd689a76",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C105",
+      "claim": "GTPBP7 and NSUN4 silencing in human cardiomyocytes leads to impaired cardiac physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GTPBP7 and NSUN4 silencing in human cardiomyocytes (Kim and Barrientos, 2018) and conditional KO mice have been shown to lead to impaired cardiac physiology and progressive cardiomyopathy (Metodiev et al., 2014), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Kim and Barrientos, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "7fc132fb-2d67-41a4-9e60-75db58fe93e7",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C106",
+      "claim": "NSUN4 conditional KO mice develop progressive cardiomyopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GTPBP7 and NSUN4 silencing in human cardiomyocytes (Kim and Barrientos, 2018) and conditional KO mice have been shown to lead to impaired cardiac physiology and progressive cardiomyopathy (Metodiev et al., 2014), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from Metodiev et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e21f13d0-6fa5-4db1-bccc-5c297edcacdc",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C107",
+      "claim": "The major function of NSUN4 and MTERF4 is as a checkpoint in mitochondrial ribosome assembly and not in RNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations of severe mitochondrial defects and activation of the mitochondrial unfolded protein response in mter-4 mutants, but not nsun-4 catalytic dead mutants, suggest that the major function of these proteins is as a checkpoint in mitochondrial ribosome assembly and not in RNA methylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section concludes this from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "ecff7090-9cbc-429f-a212-2a37238072ba",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C108",
+      "claim": "MTERF4 does not participate during NSUN4-mediated methylation of the decoding center of the mtSSU.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, MTERF4 does not participate during NSUN4-mediated methylation of the decoding center of the mtSSU (C\u00e1mara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section cites this from C\u00e1mara et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "ba7c3bea-5153-4810-bd8e-401315f77a3e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C109",
+      "claim": "While the methyltransferase activity of NSUN4 on the small subunit can be dispensed with without resulting in a strong phenotype, the protein has a more important non-enzymatic function as a biogenesis factor in the final stages of the formation of the PTC and the tRNA binding sites in the large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We have thus shown, using structure-directed mutagenesis in vivo, that while the methyltransferase activity of NSUN4 on the small subunit can be dispensed with without resulting in a strong phenotype, the protein has a more important non-enzymatic function as a biogenesis factor in the final stages of the formation of the PTC and the tRNA binding sites in the large subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section concludes this from the combined structural and in vivo data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "fa518834-d373-48cc-b9a6-17ee184ea34f",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C110",
+      "claim": "The proper folding of the PTC is one of the crucial steps in the assembly of the large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The proper folding of the PTC, the universally conserved active site of the ribosome, along with the tRNA binding sites, is one of the crucial steps in the assembly of the large subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section states this as established knowledge about ribosome assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "f24e48a5-e3a4-485a-a183-8f63539e30a5",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C111",
+      "claim": "PTC assembly occurs in multiple steps, moving from one in which the elements of the PTC are in a highly disordered state to one where they are ordered but not yet finally folded into their final structure in the large subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that this assembly occurs in multiple steps, moving from one in which the elements of the PTC are in a highly disordered state to one where they are ordered but not yet finally folded into their final structure in the large subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section concludes this from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "3e339648-60cd-40ac-a9fb-76bc0e61d6d5",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C112",
+      "claim": "PTC assembly requires several protein factors to act together to yield the mature ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "This assembly requires several protein factors to act together to yield the mature ribosomal subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section concludes this from the structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "56fa3a35-1428-4cb6-b8fd-09315c1c13bc",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "claim_id": "C113",
+      "claim": "Other domains of life will have a similarly complex and orchestrated process requiring multiple factors to facilitate the formation of the active sites of the large ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our studies were specifically on mitoribosomes, given the universally conserved nature of the PTC and its importance to the ribosome, we expect that other domains of life will have a similarly complex and orchestrated process requiring multiple factors to facilitate the formation of the active sites of the large ribosomal subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The discussion section proposes this generalization based on the universal conservation of the PTC.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a028a52-8deb-4371-b194-a7d80bba34aa",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A cryo-EM structure at 3.4 \u00c5 resolution captures a human mitochondrial large ribosomal subunit (mtLSU) assembly intermediate with GTPBP7 bound to GMPPCP in a pre-hydrolysis state, along with NSUN4, MTERF4, and anti-association factors MALSU1\u00b7L0R8F8\u00b7mt-ACP. This intermediate represents a state equivalent to the bacterial 45S to 50S transition, where ribosomal proteins uL16m, bL27m, and bL36m have bound but rRNA domain IV helices 68-71 remain unfolded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C20, C25-C26 collectively describe the cryo-EM structure determination and characterization of the assembly intermediate. The 3.4 \u00c5 resolution (C15), use of GMPPCP to trap GTPBP7 (C16), identification of bound factors (C18-C20), and characterization of the assembly state (C17, C25-C26) are all directly supported by the structural data presented in Table 1, Figure 1, and the Results section. The comparison to bacterial ribosome assembly (C17) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GTPBP7 regulates correct folding of 16S rRNA helices and ensures 2\u2032-O-methylation of PTC base U3039 by directly contacting the methylated base via His34 and positioning near other methylated bases in the A and P loops. The authors propose that GTPBP7 couples GTP hydrolysis and its egress from the 39S to verification of proper methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C36, C38-C39, C43 describe GTPBP7's role in verifying rRNA methylation. The structural data clearly shows His34 of GTPBP7 contacting U3039 (C39, Figure 2B), GTPBP7's proximity to methylated bases (C36, C38), and movement of A and P loops toward GTPBP7 and NSUN4 (C38). The proposed mechanism coupling GTP hydrolysis to methylation verification (C43) is a reasonable inference from the structural data, though it remains a mechanistic proposal. The universal importance of PTC methylation (C40) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "04a49897-7ac4-4749-bc85-6eda526160c4",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GTPBP7 binds NSUN4 and MTERF4, which sequester rRNA helices H68-71 in a partially unfolded state. This sequestration allows biogenesis factors to access the maturing PTC but would clash with an incoming small subunit. GTP hydrolysis by GTPBP7 is proposed to trigger dissociation of the complex and allow H68-71 to fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C27-C30 describe the structural arrangement and proposed function of the GTPBP7\u00b7NSUN4\u00b7MTERF4 complex. The cryo-EM structure directly shows GTPBP7 bound to NSUN4 and MTERF4 (C4), MTERF4 holding H68-71 unfolded (C5, C28, Figure 2C), and the spatial arrangement that would permit factor access but clash with the small subunit (C6, C29). The proposed mechanism of GTP hydrolysis triggering dissociation and folding (C30) is a reasonable inference from the pre-hydrolysis state captured in the structure, though it remains mechanistic speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "af82d8c6-f9fa-487f-8865-37ccec90cb11",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutations disrupting binding of C. elegans orthologs MTER-4 and MTG-1 to the mitoribosome potently activate mitochondrial stress, as evidenced by substantial increases in HSP-6 expression consistent with activation of the mitochondrial unfolded protein response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C47-C49, C55 describe the in vivo validation experiments in C. elegans. The experimental data clearly shows increased hsp-6::GFP expression in mter-4 and mtg-1 mutants (C47-C48, Figure 3A), which is appropriately interpreted as mitochondrial stress response activation (C49). The conclusion that disrupting these interactions potently activates mitochondrial stress (C7, C55) is well-supported by the fluorescence imaging data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "774c9127-c5cd-4011-817d-3a2c94caa8fc",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NSUN4 is indispensable for mitochondrial protein synthesis, but its enzymatic activity is not. Mutations disrupting NSUN4's catalytic activity did not substantially activate mitochondrial stress, while mutations disrupting its mitoribosome binding did, demonstrating that NSUN4's major function is as a checkpoint in mitoribosome assembly rather than in RNA methylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C46, C50-C52, C54, C107, C109 address the long-standing question about NSUN4's function. The experimental data clearly shows that catalytic dead NSUN4 mutants (C50) and weak binding mutants (C51) do not activate stress responses, while stronger binding mutants do (C54, Figure 3A). This is consistent with prior C. elegans work (C46) and supports the conclusion that NSUN4's non-enzymatic scaffolding function is more important than its methyltransferase activity (C52, C107, C109). The logic is sound and the data support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Destabilizing mtLSU binding by MTG-1 and MTER-4 causes delayed development and sterility in C. elegans, with 14% of mter-4 mutants and 100% of homozygous mtg-1 mutants being sterile. Germ cells are particularly sensitive to these mutations, while somatic tissues can potentially overcome the effects by activating the mitochondrial unfolded protein response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 describe the organismal phenotypes of the C. elegans mutants. The quantitative data on sterility (C63-C64, Figure 3B-C) and developmental delays (C62) are directly reported from the experiments. The inference that germ cells are particularly sensitive (C66) is well-supported by the sterility phenotypes, and the suggestion that somatic tissues can overcome the defects (C65) is a reasonable interpretation of the observation that mutant animals can develop to adulthood despite the stress response activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "4a653354-3b57-4942-8135-be6e88bdab70",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA sequencing of mter-4 mutants reveals 3,174 differentially expressed genes enriched for mitochondrial dysfunction and substantially overlapping with genes upregulated in electron transport chain mutants, confirming that disrupting the NSUN4\u00b7MTERF4\u00b7GTPBP7 complex activates the mitochondrial unfolded protein response and disrupts normal mitochondrial function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C69-C72 describe the RNA-seq validation experiments. The identification of 3,174 DEGs (C69) is directly reported from the analysis. The enrichment for mitochondrial dysfunction genes (C70) and overlap with ETC mutants (C71, Figure 3D-E) provide strong supporting evidence for the conclusion that disrupting these factors activates mitochondrial stress responses (C72). The RNA-seq data complement and validate the HSP-6 reporter experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TMT-MS analysis confirms that total protein levels of MTG-1, NSUN-4, and MTER-4 are comparable to wild-type, but their levels in the ribosome fraction are significantly reduced in mutants (63-86% reduction in mter-4 mutants, 84-98% in nsun-4 mutants), confirming that mitochondrial stress phenotypes result directly from disrupting the NSUN-4\u00b7MTER-4\u00b7MTG-1 complex and that these proteins play a crucial checkpoint role during mitoribosome biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 describe the TMT-MS validation experiments. The data showing comparable total protein levels (C57) but reduced ribosome-bound levels (C58-C59, Figure 3\u2014figure supplement 3) effectively rule out off-target effects like gene silencing or protein misfolding. The quantitative measurements support the conclusion that the phenotypes result from disrupting the complex (C60) and that these proteins have a crucial checkpoint function (C61). The experimental design and interpretation are sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "5ab1ced8-b678-4711-a029-f863af1286d5",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The NSUN4 active site contains weak density for SAM, and there is no m5C methylation of 16S rRNA within ~20 \u00c5 of the NSUN4 active site, indicating that methyltransferase activity is not involved at this mtLSU assembly checkpoint. This is consistent with bisulfite sequencing studies showing no m5C targets on 16S rRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe structural observations about NSUN4's methyltransferase activity. The weak SAM density (C21) and absence of m5C methylation near the active site (C22) are direct observations from the cryo-EM density. The inference that methyltransferase activity is not involved at this checkpoint (C23) is reasonable given the structural data and is supported by prior bisulfite sequencing studies (C24). The logic connecting structure to function is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "869dc9de-3b74-439b-88a7-c321441236f8",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RbgA, the bacterial homolog of GTPBP7, facilitates incorporation of bL36m into the bacterial LSU, but differs from GTPBP7 in that uL16m and bL27m are already present in earlier human mtLSU intermediates. This difference likely reflects that only two GTPases regulate bacterial 50S assembly while at least four are implicated in human mitochondrial ribosome assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 compare the human and bacterial systems. The identification of RbgA as the bacterial homolog (C31) and its function (C32) are appropriately cited. The observation that uL16m and bL27m are already present in earlier intermediates (C33) is supported by comparison with PDB 5OOM. The proposed explanation for the difference (C34-C35) is a reasonable inference based on the different numbers of GTPases involved in the two systems, though it remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "2db8b4cb-e0df-4e26-bf4c-2dcc70ddc198",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "GTPBP7, MTERF4, and NSUN4 are highly conserved, with C. elegans orthologs MTG-1 (33% identical), MTER-4 (21%), and NSUN-4 (34%). Germ cell sensitivity to disruptions in mitochondrial translation is proposed to be a conserved phenomenon throughout metazoans, as mutations in mitochondrial translational components cause sterility in both C. elegans and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C67-C68 describe the evolutionary conservation and propose a conserved phenomenon. The sequence identities (C44-C45) are directly calculated from sequence alignments. The observation of germ cell sensitivity in C. elegans combined with the citation of human sterility associated with mitochondrial translation defects (C67) provides reasonable support for the proposal that this is a conserved phenomenon (C68), though additional species would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a57ab934-2550-4cef-8655-d6ce2fd9652d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Slight rearrangements of helix 1 of GTPBP7 could potentially ensure G3040 methylation by MRM3, as G2815 in the P loop, which is 2\u2032-O-methylated by MRM1, is in the vicinity of NSUN4 and GTPBP7.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 propose a potential additional function for GTPBP7. While G2815 methylation by MRM1 is established (C42), the proposal that GTPBP7 could ensure G3040 methylation (C41) is purely speculative based on structural proximity. No experimental evidence is provided to test this hypothesis, and the authors appropriately frame it as a possibility ('could'). This remains an untested hypothesis requiring further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e60c05ec-a501-43b2-b276-bdd89774f9e9",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors integrate their structure with four concurrent studies to propose a detailed pathway for late-stage mtLSU maturation, proceeding through states I-VIII involving sequential actions of GTPBP10, MRM3, DDX28, MTERF4, NSUN4, GTPBP5, MRM2, GTPBP6, and GTPBP7, with the current study capturing state VI where GTPBP7 re-recruits NSUN4\u00b7MTERF4 to check U3039 methylation and PTC maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C93 describe a comprehensive model integrating multiple studies. While the individual structures from concurrent studies are appropriately cited (C80-C82, C84-C87, C90), the proposed ordering and transitions between states (C88-C93) involve substantial speculation. The model is internally consistent and represents a reasonable synthesis of available data, but many of the proposed transitions (e.g., C91-C93) lack direct experimental validation. The authors appropriately acknowledge that GTPBP7 'was not actually seen' in state V (C91), highlighting the speculative nature of some transitions. This represents a working model requiring further validation rather than established fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "045cb376-923a-4627-9e7f-daec5edb2de3",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that NSUN4\u00b7MTERF4\u00b7GTPBP7 may have dual roles during both mitoribosome biogenesis and recycling after termination/rescue, supported by the use of Pde12 KO cells (a ribosome stalling model), GTPBP6's dual roles, GTPBP6 rearranging the PTC to an immature state during recycling, and GTPBP7's involvement in subunit joining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C99 propose a dual role hypothesis for the complex. While the supporting evidence is cited (C94, C96-C98), the proposal that NSUN4\u00b7MTERF4\u00b7GTPBP7 functions in both biogenesis and recycling (C95) remains speculative. The use of Pde12 KO cells (C96) provides some support, but the authors appropriately frame this as a hypothesis ('may have dual roles'). The proposed mechanism of GTP hydrolysis triggering factor dissociation and H68-71 refolding (C99) is a reasonable inference but lacks direct experimental validation. This represents an interesting hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The pathological significance of GTPBP7, MTERF4, and NSUN4 is demonstrated by their association with cardiomyopathy. Mouse models and human patients with mutations in these genes develop mitochondrial cardiomyopathy, with global MTERF4 KO being embryonically lethal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C106 describe the clinical relevance of these factors. All claims are appropriately cited from the literature (C102-C106), establishing the pathological significance of these proteins in mouse models and human patients. This provides important context for the biological importance of the assembly checkpoint characterized in this study, though it represents prior knowledge rather than new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "e0a01b30-3fc1-481e-8fda-647769360212",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that PTC assembly occurs in multiple steps from a disordered state to an ordered but not yet finally folded state, requiring several protein factors acting together. They propose that other domains of life will have similarly complex processes for forming the active sites of the large ribosomal subunit, given the universal conservation of the PTC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C113 present the authors' conclusions about ribosome assembly. The conclusion that PTC assembly occurs in multiple steps (C111) and requires multiple factors (C112) is well-supported by the structural and functional data presented. The proposal that other domains of life will have similar complexity (C113) is a reasonable extrapolation based on the universal conservation of the PTC (C110), though it remains a prediction requiring validation in other systems. The logic is sound and appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "ac133968-995a-459f-ba46-b0a3e1390af4",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Defective mitoribosome assembly can lead to various diseases including encephalomyopathy, optic neuropathy, cardiomyopathy, and hereditary spastic paraplegia. While mitoribosome assembly has diverged from bacterial ribosomes, four GTPases (GTPBP5, 6, 7, 10) bind the 16S rRNA to facilitate mtLSU maturation, though their mechanistic roles and order of action remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 provide background context from the introduction. The clinical importance (C11) and divergence from bacterial systems (C12) represent established knowledge appropriately cited. The identification of four GTPases (C13) is cited from prior work, and the statement that their mechanistic roles remain poorly understood (C14) accurately describes the knowledge gap that this study addresses. These claims establish the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "a5656f54-d1f9-4f89-9013-3f27d4c5819d",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "NSUN-4 makes multiple contacts with the mitoribosome, and TMT-MS permits accurate quantification of protein level changes between multiple strains in parallel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C56 describe methodological details. The observation that NSUN-4 makes multiple contacts (C53) is supported by the structural data and explains why weak mutations were insufficient to disrupt binding. The description of TMT-MS capabilities (C56) is appropriately cited and accurately describes the method used for validation experiments. These are straightforward methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    },
+    {
+      "id": "59ef72cf-a51e-49da-86de-f3b43c9f5382",
+      "content_id": "4f19126c-44b8-4774-b16d-f1e1bc0c6f39",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The A and P loops are critical rRNA elements that bind aminoacyl and peptidyl tRNAs. How anti-association factors dissociate prior to subunit joining is not yet known, and MTERF4 does not participate during NSUN4-mediated methylation of the mtSSU decoding center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C100, C108 describe established knowledge and knowledge gaps. The function of A and P loops (C37) is well-established ribosome biology. The statement that anti-association factor dissociation is not understood (C100) accurately describes a knowledge gap. The observation that MTERF4 doesn't participate in mtSSU methylation (C108) is appropriately cited and supports the conclusion about NSUN4's dual functions. These are accurate statements of knowledge and gaps.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:04:23.261267Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8c832af7-60ce-401a-b20e-e28ff47ca750",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "bd241389-1efc-4ac1-97ab-c9ae7507022a",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "61596583-b597-4784-b985-87032257237b",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "42683cb3-74be-4475-b911-adf4ca7a3b74",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "3a708a8f-e789-47e5-bcdc-a98b652ae4f6",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "4f2f8650-e957-407d-a482-db82a269f5f6",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "eaf26886-2a09-4875-998d-37cd72f5d6f7",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "09b6e251-e8e8-4a2f-acfe-d1981ea7bb39",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "6458c189-90f7-431b-8b0c-3919d6a875f3",
+      "result_id": "1a028a52-8deb-4371-b194-a7d80bba34aa"
+    },
+    {
+      "claim_id": "2c9f4402-dd2b-4212-b1a1-e7422287788e",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "fcb64beb-96e2-4194-9f44-def40f7b73e7",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "3bf167a1-fc13-4300-be62-b0d2d151c79f",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "5bcec15e-3e5f-415f-b017-14e0e9ca828e",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "1b6f9594-bc67-43eb-84e8-0f4598ef402c",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "962ff930-3385-4ba2-8400-4c47930f610e",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "2992c861-caee-41e6-b6b7-6291f2ec4f70",
+      "result_id": "251e2e2d-07fb-47a6-9a17-67332fb6b0e5"
+    },
+    {
+      "claim_id": "6e655aa9-1034-489b-9d00-447fd723c335",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "1da42327-9738-4127-a7bc-297b211abc63",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "6c1b2300-1c3c-45af-8ae7-e4676beead39",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "60c57d9b-247d-43eb-9072-92cf5a764d4b",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "76639a2f-40e2-414d-abb5-716d856df02e",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "72457685-ea67-4903-910f-d094d283731f",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "249e9f66-c588-4363-aa7a-0fcfd4c7c597",
+      "result_id": "04a49897-7ac4-4749-bc85-6eda526160c4"
+    },
+    {
+      "claim_id": "1091632b-7100-458a-9305-b63e1a597899",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "9a210567-711d-45df-aa6c-efa30e594578",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "f547a91f-1b62-43b0-bd4d-1e8a5dba1184",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "bb87589a-c0b8-4f63-bf5e-41e3adae1dbe",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "3a731519-096a-4107-b56f-70bc8ce52454",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "518ed7f1-3ee8-4c64-b6b8-8302bb2c7050",
+      "result_id": "af82d8c6-f9fa-487f-8865-37ccec90cb11"
+    },
+    {
+      "claim_id": "48d83efd-ec48-4a13-b577-4cb3d655a09d",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "a6b51c9b-47ed-444c-aa41-16e3070f56b5",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "1dd59c3a-7c91-459b-a20f-6ccc4a5d5b86",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "e79bbfbd-3a1f-4d36-967f-cf7ba4ff6cbd",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "38080e77-17a4-4d69-aae1-0c49a49a8b0d",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "f3adf633-6bba-4e88-8c2d-f8f82adf768e",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "e21f13d0-6fa5-4db1-bccc-5c297edcacdc",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "ba7c3bea-5153-4810-bd8e-401315f77a3e",
+      "result_id": "774c9127-c5cd-4011-817d-3a2c94caa8fc"
+    },
+    {
+      "claim_id": "e3852252-680e-4651-b490-76e29f99db27",
+      "result_id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37"
+    },
+    {
+      "claim_id": "f02e8084-afdf-4f87-bf17-6cb3e1e4fae8",
+      "result_id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37"
+    },
+    {
+      "claim_id": "437ad7c7-0063-4315-b363-94614608d703",
+      "result_id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37"
+    },
+    {
+      "claim_id": "83ca7134-a240-4edd-b0b5-556ec9beb6db",
+      "result_id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37"
+    },
+    {
+      "claim_id": "3cb42ab6-11bc-4001-acc5-1e0ce31bceeb",
+      "result_id": "c3a7a73e-e22f-4f04-b7cd-4e9ba05bde37"
+    },
+    {
+      "claim_id": "cd330938-0362-46b0-bc6e-85d549dba88e",
+      "result_id": "4a653354-3b57-4942-8135-be6e88bdab70"
+    },
+    {
+      "claim_id": "f85dde61-4914-4b6b-b858-ad4aa6982fec",
+      "result_id": "4a653354-3b57-4942-8135-be6e88bdab70"
+    },
+    {
+      "claim_id": "f73a5973-334c-41e4-9561-adac0d0be328",
+      "result_id": "4a653354-3b57-4942-8135-be6e88bdab70"
+    },
+    {
+      "claim_id": "23b66ca6-0eee-4de9-a09d-0eddb41f5e8c",
+      "result_id": "4a653354-3b57-4942-8135-be6e88bdab70"
+    },
+    {
+      "claim_id": "f4dce347-d14d-450a-aacc-1c33a23319c9",
+      "result_id": "4a653354-3b57-4942-8135-be6e88bdab70"
+    },
+    {
+      "claim_id": "dbf49378-11cd-4cf6-8d3c-6a6af2d08d22",
+      "result_id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e"
+    },
+    {
+      "claim_id": "605cf840-c377-4930-b3a2-932b2fe2efeb",
+      "result_id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e"
+    },
+    {
+      "claim_id": "c0d6c701-ad91-421f-bdec-70211cf1b974",
+      "result_id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e"
+    },
+    {
+      "claim_id": "7d67d90a-b7ec-407c-a7c0-5923479188a3",
+      "result_id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e"
+    },
+    {
+      "claim_id": "b80a3f50-0c8e-4afe-9319-d0c402c6673f",
+      "result_id": "e67b4be0-3cfd-464a-88dd-078cec3f6d0e"
+    },
+    {
+      "claim_id": "2f8d57d4-e23e-44f8-a1d8-32942446345b",
+      "result_id": "5ab1ced8-b678-4711-a029-f863af1286d5"
+    },
+    {
+      "claim_id": "5a2f7265-d2ef-4040-808a-906f33e05036",
+      "result_id": "5ab1ced8-b678-4711-a029-f863af1286d5"
+    },
+    {
+      "claim_id": "52644030-f2a1-4430-8c4f-62867475cc36",
+      "result_id": "5ab1ced8-b678-4711-a029-f863af1286d5"
+    },
+    {
+      "claim_id": "1bf0cafb-cf84-494a-816d-6cc40bbe0e59",
+      "result_id": "5ab1ced8-b678-4711-a029-f863af1286d5"
+    },
+    {
+      "claim_id": "dcca9267-9cfc-424c-be41-b70b225438f4",
+      "result_id": "869dc9de-3b74-439b-88a7-c321441236f8"
+    },
+    {
+      "claim_id": "c3821858-eae6-4980-9d8c-ad127fdc5925",
+      "result_id": "869dc9de-3b74-439b-88a7-c321441236f8"
+    },
+    {
+      "claim_id": "2766c7d9-2d9b-4437-a214-c0ff73688dd0",
+      "result_id": "869dc9de-3b74-439b-88a7-c321441236f8"
+    },
+    {
+      "claim_id": "02afb829-ae6a-4985-aa5c-94487d891bba",
+      "result_id": "869dc9de-3b74-439b-88a7-c321441236f8"
+    },
+    {
+      "claim_id": "8665c90e-f55c-44d6-b184-d381e2e7864e",
+      "result_id": "869dc9de-3b74-439b-88a7-c321441236f8"
+    },
+    {
+      "claim_id": "d96e4bae-4b44-4398-8179-1c3028c39100",
+      "result_id": "2db8b4cb-e0df-4e26-bf4c-2dcc70ddc198"
+    },
+    {
+      "claim_id": "9475187b-1eb1-4f95-8f41-120f85803a49",
+      "result_id": "2db8b4cb-e0df-4e26-bf4c-2dcc70ddc198"
+    },
+    {
+      "claim_id": "96f96a39-1f83-4670-87cc-6a6333e38f54",
+      "result_id": "2db8b4cb-e0df-4e26-bf4c-2dcc70ddc198"
+    },
+    {
+      "claim_id": "a1357f06-7cb2-48d4-b669-d55557a026a1",
+      "result_id": "2db8b4cb-e0df-4e26-bf4c-2dcc70ddc198"
+    },
+    {
+      "claim_id": "73d8022d-095a-4a81-8c67-318b8635b720",
+      "result_id": "a57ab934-2550-4cef-8655-d6ce2fd9652d"
+    },
+    {
+      "claim_id": "8c2219e3-6cc4-49ac-a9cb-7922cb98f17b",
+      "result_id": "a57ab934-2550-4cef-8655-d6ce2fd9652d"
+    },
+    {
+      "claim_id": "7c42b0e0-6520-482b-b65e-27387042c3d0",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "d3821051-a3f2-409d-82f7-0d9a9e81ee8f",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "8e353fb2-9af6-42c6-afe8-d7f25de89dd9",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "b981de66-f0bc-42c5-bda6-18970b3216c1",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "7a26050f-6a84-4414-8cb7-12a9ffcc13d1",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "3e09b9bb-87ce-4cf7-8927-45a82c02fb01",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "2a9cf9ab-5a31-4b80-b963-04de833ae7fd",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "fd7eede5-3358-4230-8bcb-f2f298719ce8",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "83a78d65-9d78-40d2-94e0-dce173799de7",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "25df1d1e-f4c8-4fa0-b883-7f610ce68ee1",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "a81392d3-52c7-4ed1-96e2-7a68e7ae9dd2",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "d000b3b7-cf8e-419c-88a8-cc1e2265a782",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "7a784786-9989-4ad4-8b1d-8a0f1e75932d",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "a35b3ce3-c675-47b7-9c41-c4e41b80dfab",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "39bb8ea8-0aac-4779-8eba-583883492e68",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "55ae1fd1-d05d-43d7-b055-5ec9811b0b2e",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "ffc5afb2-7f71-4d97-acce-3a799fc8b369",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "575ecf5f-6ed5-40b1-a5a7-dd38f3016866",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "343239a5-45c8-4af0-a08d-31d828128a1c",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "28c2a093-8456-46dc-aecf-eee98fa1f34d",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "9ff5ab1f-ae99-4468-8a84-ede6d81499f9",
+      "result_id": "e60c05ec-a501-43b2-b276-bdd89774f9e9"
+    },
+    {
+      "claim_id": "ce8dd69f-222c-4580-aac7-09c83c1a2457",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "897768fb-5146-41f7-a3be-51ab55b4b081",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "4fa9bb36-ed67-49fc-a331-26a4b9c9006f",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "2df94ac6-68da-4c92-9217-b15e4b18b1ec",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "cf0a5815-ea35-45a0-86c4-227da67e3eeb",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "b183a637-09c2-440d-9b26-089df2c817db",
+      "result_id": "045cb376-923a-4627-9e7f-daec5edb2de3"
+    },
+    {
+      "claim_id": "7cfd18a3-22a6-4c33-920d-3360bebb2c27",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "81c78c29-a212-48f5-a7b6-cd8038e8b280",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "73793bd4-7cae-48ee-90ab-9c818956691a",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "9dff9f74-bcc6-4887-90f6-5f1833596b5b",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "47dfbaaa-a2ef-430f-adab-49a1fd689a76",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "7fc132fb-2d67-41a4-9e60-75db58fe93e7",
+      "result_id": "65f0eb55-6b7e-4fd2-a714-e427c1d53cba"
+    },
+    {
+      "claim_id": "fa518834-d373-48cc-b9a6-17ee184ea34f",
+      "result_id": "e0a01b30-3fc1-481e-8fda-647769360212"
+    },
+    {
+      "claim_id": "f24e48a5-e3a4-485a-a183-8f63539e30a5",
+      "result_id": "e0a01b30-3fc1-481e-8fda-647769360212"
+    },
+    {
+      "claim_id": "3e339648-60cd-40ac-a9fb-76bc0e61d6d5",
+      "result_id": "e0a01b30-3fc1-481e-8fda-647769360212"
+    },
+    {
+      "claim_id": "56fa3a35-1428-4cb6-b8fd-09315c1c13bc",
+      "result_id": "e0a01b30-3fc1-481e-8fda-647769360212"
+    },
+    {
+      "claim_id": "7315010d-bf1b-438f-87c1-b3e8131a4fe0",
+      "result_id": "ac133968-995a-459f-ba46-b0a3e1390af4"
+    },
+    {
+      "claim_id": "adc96e2d-1143-4932-9eae-f4e121edd135",
+      "result_id": "ac133968-995a-459f-ba46-b0a3e1390af4"
+    },
+    {
+      "claim_id": "0e25c450-97ce-4ca1-b078-dca52f4840fc",
+      "result_id": "ac133968-995a-459f-ba46-b0a3e1390af4"
+    },
+    {
+      "claim_id": "1da8aa5a-5915-4f2e-a653-84910f0a2ee0",
+      "result_id": "ac133968-995a-459f-ba46-b0a3e1390af4"
+    },
+    {
+      "claim_id": "a414714e-b1f0-4e2d-a5f1-ef026366f053",
+      "result_id": "a5656f54-d1f9-4f89-9013-3f27d4c5819d"
+    },
+    {
+      "claim_id": "032cfed8-f915-498b-b1a4-bcdd32aa451f",
+      "result_id": "a5656f54-d1f9-4f89-9013-3f27d4c5819d"
+    },
+    {
+      "claim_id": "da246e1e-b607-4ebc-8547-dc05e021b562",
+      "result_id": "59ef72cf-a51e-49da-86de-f3b43c9f5382"
+    },
+    {
+      "claim_id": "6b653b34-7c37-4a8d-afff-289653640747",
+      "result_id": "59ef72cf-a51e-49da-86de-f3b43c9f5382"
+    },
+    {
+      "claim_id": "ecff7090-9cbc-429f-a212-2a37238072ba",
+      "result_id": "59ef72cf-a51e-49da-86de-f3b43c9f5382"
+    }
+  ],
+  "comparisons": []
+}

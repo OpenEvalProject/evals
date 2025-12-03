@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C79"
+    ],
+    "result": "The manuscript characterizes two coupled oscillatory circuits in the crab stomatogastric ganglion: the fast pyloric rhythm (~1 Hz) driven by AB and PD neurons, and the slow gastric mill rhythm (~0.1 Hz) produced by a half-center oscillator between LG and Int1. At 11\u00b0C, these rhythms exhibit integer coupling where there is an integer number of pyloric cycles per gastric mill cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C12, C18-C19, and C79 provide consistent descriptions of the two oscillatory circuits and their baseline properties. The frequency values, cellular mechanisms, and integer coupling at 11\u00b0C are well-established from prior work and clearly stated. This foundational characterization is essential context for the temperature experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Spontaneous gastric mill rhythms were observed at temperatures between 11\u00b0C and 30\u00b0C in nine preparations, showing relatively regular activity at lower temperatures but becoming less regular at higher temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe observations from extracellular recordings across temperature ramps. The data are clearly presented in Figure 2 and Figure 2\u2014figure supplement 1, showing spontaneous rhythms across a wide temperature range. The authors appropriately note the irregularity at higher temperatures, which motivated their subsequent evoked rhythm experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Gastric mill rhythms were successfully evoked across temperatures from 7\u00b0C to 21\u00b0C in 9 of 10 preparations by bilateral stimulation of the dorsal posterior esophageal nerves (dpons), which activate VCN neurons that in turn activate MCN1 and CPN2. The evoked rhythms lasted for tens of minutes within the readily evoked temperature range but were difficult to generate consistently above 23\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C67-C70, C73-C74 describe the experimental protocol and success rate for evoking gastric mill rhythms. The methodology is clearly described with appropriate citations to prior work establishing this stimulation paradigm. The temperature limitations are transparently reported, providing important context for the experimental constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27"
+    ],
+    "result": "Both the pyloric and gastric mill oscillators showed similar temperature-dependent increases in cycle frequency from 7\u00b0C to 23\u00b0C, with most preparations (8 of 10) exhibiting a cycle period Q10 of approximately 2 for both rhythms. The Q10s were not significantly different between the two rhythms (paired t-test, p=0.235, N=10, t=1.27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C27 present the core finding that both rhythms speed up similarly with temperature. Figure 4 clearly shows the coordinated decrease in cycle periods, and the statistical comparison of Q10s is appropriate. The paired t-test is correctly applied since each preparation contributes data for both rhythms. The lack of significant difference supports the conclusion of similar temperature sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "When the pyloric pacemaker was hyperpolarized to inactivate it, gastric mill rhythms could still be evoked at 11\u00b0C and 15\u00b0C in all nine preparations tested, but at 19\u00b0C and 21\u00b0C only a subset of preparations produced gastric mill rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe experiments testing whether the gastric mill can function independently at different temperatures. The data in Figure 4\u2014figure supplement 2 support these claims, showing that the gastric mill oscillator becomes less robust at higher temperatures when pyloric input is removed. This demonstrates temperature-dependent changes in the gastric mill's intrinsic oscillatory capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Integer coupling between the pyloric and gastric mill circuits is conserved across temperatures from 7\u00b0C to 21\u00b0C. LG and PD were significantly integer-coupled at all temperatures tested (p < 10\u207b\u2075, D > 0.24, Kolmogorov-Smirnoff test), while DG and PD were not significantly coupled at any temperature (p > 0.02, D < 0.16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C34 present the major finding of temperature-invariant integer coupling. Figure 5 provides compelling visual and quantitative evidence using significand analysis of period ratios. The statistical approach using Kolmogorov-Smirnoff tests with shuffled controls is appropriate, and the correction for multiple comparisons is properly applied. The contrast between LG (coupled) and DG (not coupled) serves as an important internal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LG bursts consistently started at a phase of approximately 0.5 in the PD cycle across the temperature range from 7\u00b0C to 21\u00b0C, with no significant trend in phase offset across temperatures (p = 0.46, \u03c1 = -0.31, Spearman test). LG burst start probabilities were sharply peaked and significantly different from a uniform distribution (p < 4\u00d710\u207b\u2074, 7.5 < z < 45, Rayleigh test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 demonstrate temperature-invariant phase locking between LG and PD. Figure 6b shows clear phase preference, and the statistical tests (Spearman for trend, Rayleigh for non-uniformity) are appropriate for circular data. The consistent phase offset across temperatures mechanistically explains how integer coupling is maintained despite changing frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DG burst starts were not always significantly non-uniformly distributed in PD phase (p \u2208 [0.001, 0.85], 0.15 < z < 13, Rayleigh test), and DG spike probability did not show a noticeable decrease close to PD burst termination. In contrast, LG showed a pronounced decrease in spike probability at higher temperatures close to PD burst termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide important negative controls showing that DG, which is not directly coupled to the pyloric oscillator, does not exhibit the same phase relationships as LG. Figure 6d-f clearly illustrates these differences. The contrast between LG and DG strengthens the interpretation that the observed phase locking in LG is specific and functionally meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "Spike classification using a neural network with active learning achieved accuracy always exceeding 98%. Bursts were defined using inter-spike intervals longer than 1 second. A total of n = 3816 LG burst starts and n = 3228 DG burst starts across nine temperature points and 10 preparations were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C78 describe the data analysis methodology. The spike sorting approach using machine learning with active learning is appropriate and the reported accuracy is high. The burst detection criteria are clearly defined. However, the manuscript does not provide sufficient detail about validation of the spike sorting (e.g., manual verification of a subset), and the choice of 1 second ISI threshold is not justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors propose that temperature robustness in the pyloric rhythm arises from the AB neuron maintaining constant duty cycle, while temperature robustness in the gastric mill rhythm arises from different interdependent processes including projection neuron input, half-center oscillator coordination, and feedback from LG to MCN1. The similarity in Q10s between the two rhythms was unexpected given the different underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 present mechanistic interpretations. While C47 is supported by prior work (Tang et al., 2010; Rinberg et al., 2013), C48 is largely speculative as the current study does not directly test the contributions of these different processes to temperature robustness. The claim that similar Q10s are unexpected (C49) is an interpretation rather than a demonstrated result. Additional experiments would be needed to validate the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript contextualizes the work within broader neuroscience by noting that coupled oscillatory circuits are ubiquitous in nervous systems, coordination between circuits is often necessary for proper function, and improper coupling may lead to disease states. Examples include theta-gamma coupling in sensory processing and phase coupling in hippocampal memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide appropriate background context supported by extensive citations to prior work. These claims establish the broader significance of studying coupled oscillators and temperature robustness. The speculative language ('may rely', 'may lead') is appropriate for these general statements about other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the ecological relevance of the temperature range studied by noting that C. borealis experiences intertidal temperatures from 3-24\u00b0C seasonally, and that ion channel kinetics can change 2-20 fold across 10\u00b0C. Prior work showed that pyloric neuron phase relationships are stable between 7\u00b0C and 23\u00b0C, with the pacemaker kernel maintaining constant duty cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide important context from prior work justifying the temperature range studied and establishing what was previously known about temperature compensation in the pyloric circuit. The citations are appropriate and the claims accurately represent the cited work. This context motivates the current study's focus on the gastric mill and inter-circuit coupling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The discussion contextualizes temperature as a global perturbation affecting all ion channels and synapses, notes that the cardiac ganglion also shows Q10 ~2, and argues that coupling between gastric mill and pyloric circuits is likely functionally important for coordinating chewing and filtering of food in the intact animal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide appropriate discussion context. C42-C43 are well-supported by citations. C44 uses appropriate speculative language ('likely to be important'). C45-C46 describe the functional anatomy and cite prior work on the behavioral significance of circuit coupling. These claims appropriately place the findings in physiological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The discussion notes that there are at least 10 known processes generating gastric mill rhythms producing distinct motor patterns, one variant is easily disrupted by temperature changes, neuromodulatory substances can extend the temperature range of function, and provides examples from C. elegans and crayfish of temperature compensation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 provide important discussion context about the diversity of gastric mill rhythm generation mechanisms and temperature compensation strategies in other systems. All claims are appropriately supported by citations to prior work. This context helps interpret why the specific VCN-gastric mill rhythm studied here might show different temperature sensitivity than other variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The discussion reviews prior work showing that input resistance decreases modestly with temperature in LP and LG neurons, IPSP amplitude in LP is temperature-invariant (Q10 ~1) while IPSC amplitude increases (Q10 ~2.5), and IA and Ih currents show temperature-dependent increases in activation rate and peak current (Q10s ~2-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 accurately summarize prior work on temperature effects on cellular and synaptic properties, all appropriately cited to Tang et al., 2010 and St\u00e4dele et al., 2015. This provides important mechanistic context for understanding how temperature compensation might be achieved at the cellular level, though the current study does not directly test these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The discussion speculates that nervous systems of small homeotherms (birds, rodents, human infants) likely face similar challenges from temperature fluctuations, and notes that the pyloric oscillator is robust to other global perturbations including pH changes and extracellular potassium fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 appropriately extend the findings to broader contexts. C60 uses appropriate speculative language ('likely face') when discussing homeotherms. C61-C62 are supported by citations to recent work. These claims appropriately discuss the generality of robustness mechanisms without overstating the direct applicability to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The manuscript describes the animal sources and experimental timeline: crabs were kept at 11\u00b0C for ~1 week before use, spontaneous rhythm preparations (N=9) were from July 2013, evoked rhythm preparations (N=10) were from July, September, and December 2017, and pacemaker inhibition preparations (N=9) were from August and September 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide essential methodological details about animal sources and experimental timeline. The information is clearly stated and allows assessment of potential seasonal or source-related variability. The different time periods for different experimental series could potentially introduce confounds, though this is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "The manuscript describes the circuit connectivity: MCN1 excites all STG neurons including the pyloric pacemaker and gastric mill half-center neurons, CPN2 drives the gastric mill via electrical synapses onto LG and GM, both circuits provide feedback to projection neurons, rhythmic AB inhibition of Int1 results in LG disinhibition, and DG is not directly coupled to the pyloric oscillator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86, C88 describe established circuit connectivity from prior work, appropriately cited. These claims provide essential background for understanding the mechanisms of integer coupling. The connectivity diagram in Figure 1 clearly illustrates these relationships. C88 makes a logical inference about the relationship between phase locking and integer coupling that is supported by prior work (Nadim et al., 1998).",
+    "result_type": "MINOR"
+  }
+]

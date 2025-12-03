@@ -1,0 +1,1433 @@
+{
+  "submission": {
+    "id": "1a4f57a0-ce9b-4cce-bc41-b6091e11a4db",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:03:35.697199Z",
+    "updated_at": "2025-12-03T12:03:35.697199Z"
+  },
+  "content": [
+    {
+      "id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "submission_id": "1a4f57a0-ce9b-4cce-bc41-b6091e11a4db",
+      "content_type": "manuscript",
+      "content_text": "# Inhibiting host-protein deposition on urinary catheters reduces associated urinary tract infections\n\n## Authors\n\n- Marissa Jeme Andersen<sup>1</sup>\n- ChunKi Fong<sup>2</sup>\n- Alyssa Ann La Bella<sup>1</sup>\n- Jonathan Jesus Molina<sup>1</sup>\n- Alex Molesan<sup>1</sup>\n- Matthew M Champion<sup>4</sup>\n- Caitlin Howell<sup>2</sup> ([ORCID: 0000-0002-9345-6642](https://orcid.org/0000-0002-9345-6642)) \u2020\n- Ana L Flores-Mireles<sup>1</sup> ([ORCID: 0000-0003-4610-4246](https://orcid.org/0000-0003-4610-4246)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, College of Science, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))\n2. Department of Chemical and Biomedical Engineering, College of Engineering, University of Maine Orono United States ([ROR:01adr0w49](https://ror.org/01adr0w49))\n3. Graduate School of Biomedical Science and Engineering, University of Maine Orono United States ([ROR:01adr0w49](https://ror.org/01adr0w49))\n4. Department of Chemistry and Biochemistry, College of Science, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrobial adhesion to medical devices is common for hospital-acquired infections, particularly for urinary catheters. If not properly treated these infections cause complications and exacerbate antimicrobial resistance. Catheter use elicits bladder inflammation, releasing host serum proteins, including fibrinogen (Fg), into the bladder, which deposit on the urinary catheter. Enterococcus faecalis uses Fg as a scaffold to bind and persist in the bladder despite antibiotic treatments. Inhibition of Fg\u2013pathogen interaction significantly reduces infection. Here, we show deposited Fg is advantageous for uropathogens E. faecalis, Escherichia coli, Pseudomonas aeruginosa, K. pneumoniae, A. baumannii, and C. albicans, suggesting that targeting catheter protein deposition may reduce colonization creating an effective intervention for catheter-associated urinary tract infections (CAUTIs). In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo. Furthermore, proteomics revealed a significant decrease in deposition of host-secreted proteins on liquid-infused catheter surfaces. Our findings suggest targeting microbial-binding scaffolds may be an effective antibiotic-sparing intervention for use against CAUTIs and other medical device infections.\n\n## Introduction\n\nUrinary catheters drain patient\u2019s bladders during surgical sedation and recovery in addition to being used in treatment for a variety of chronic conditions, making it an exceedingly common procedure in healthcare facilities. Despite the benefits urinary catheters provide for patients, catheterization causes adverse effects including infections and bladder stones (Andersen and Flores-Mireles, 2019; Feneley et al., 2015). The most common complication is catheter-associated urinary tract infection (CAUTI), which accounts for 40% of all hospital-acquired infections (Andersen and Flores-Mireles, 2019; Feneley et al., 2015). Unfortunately, CAUTIs often lead to bloodstream infections and systemic dissemination with a 30% mortality rate, causing significant financial burdens for hospitals and patients (Andersen and Flores-Mireles, 2019; Feneley et al., 2015).\n\nNew and current management guidelines for CAUTIs have resulted in moderate reductions in incidences (Assadi, 2018; Meddings et al., 2014). The standard treatment for patients with symptomatic CAUTI is catheter removal and replacement and an antibiotic regiment (Assadi, 2018; Flores-Mireles et al., 2019). However, this approach is not effective because biofilms on the catheter surface and bladder wall protect microbes against antibiotics and the immune system and creates the potential development of antimicrobial resistance (Flores-Mireles et al., 2019; Trautner and Darouiche, 2004). Many ongoing efforts to prevent biofilms on catheters are focused on developing surface modifications (Andersen and Flores-Mireles, 2019; Faustino et al., 2020; Singha et al., 2017). Catheters impregnated with antimicrobials, such as metal ions and antibiotics, have become popular and are now commercialized due to promising in vitro work but, in clinical trials these catheters have shown, at best, mixed results (Andersen and Flores-Mireles, 2019; Singha et al., 2017). Importantly, there is concern that this approach may not be a long-term solution given that the presence of antimicrobial compounds may drive development of resistance (Singha et al., 2017; Westfall et al., 2019). Especially when considering the host factors that coat urinary catheters, which could potentially inhibit or decrease pathogen interaction with antimicrobials.\n\nRecent findings in mouse and human urinary catheterization have unveiled the importance of the host clotting factor 1, fibrinogen (Fg), for surface adhesion and subsequent establishment of biofilms and persistence of CAUTIs in Enterococcus faecalis and Staphylococcus aureus infections (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b; Gaston et al., 2020; Klein and Hultgren, 2020). Fg is continuously released into the bladder lumen in response to mechanical damage to the urothelial lining caused by catheterization (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Klein and Hultgren, 2020). Once in the lumen, Fg is deposited on the catheter, providing a scaffold for these incoming uropathogens to bind and establish infection in human and mouse CAUTI. When blocking the interaction between Fg and E. faecalis using antibodies, the pathogen is not able to effectively colonize the bladder (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Gaston et al., 2020; Walker et al., 2017).\n\nThus, we hypothesized that reducing availability of binding scaffolds, in this case Fg, would decrease microbial colonization in a catheterized bladder. To test our hypothesis, we used a mouse model of CAUTI and a diverse panel of uropathogens, including E. faecalis, C. albicans, uropathogenic Escherichia coli, Pseudomonas aeruginosa, A. baumannii, and Klebsiella pneumonia, which we found all bind more extensively to catheters with Fg present. To resolve the deposition of Fg, we focus on antifouling modifications, specifically, liquid-infused silicone (LIS). LIS is more simple to make, more stable, and more cost effective than other antifouling polymer modifications (Andersen and Flores-Mireles, 2019; Campoccia et al., 2013; Homeyer et al., 2019; Howell et al., 2018; Chamy, 2013; Singha et al., 2017; Sotiri et al., 2018; Villegas et al., 2019). Additionally, LIS has shown to reduce clotting in central lines and infection in skin implants (Chen et al., 2017; Leslie et al., 2014). We show that our LIS-catheters reduced Fg deposition and microbial binding not only in vitro but also in vivo. Furthermore, LIS-catheters significantly decrease host-protein deposition when compared to unmodified (UM)-catheters as well as reducing catheter-induced inflammation. These findings suggest that targeting host-protein deposition on catheter surfaces and the use of LIS-catheters are plausible strategies for reducing instances of CAUTI.\n\n## Results\n\n### Uropathogens interact with Fg during CAUTI\n\nDue to the understood interaction between Fg and some uropathogens and Fg accumulation on catheters over time in human and mice, we assessed potential interaction of E. faecalis OG1RF (positive control) uropathogenic E. coli UTI89, P. aeruginosa PAO1, K. pneumoniae TOP52, A. baumannii UPAB1, and C. albicans SC5314 with Fg in vivo, using a CAUTI mouse model, which recapitulates human CAUTI pathophysiology (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b). Mice catheterized and infected with the respective uropathogen were sacrificed at 24 hours post infection (hpi). Catheters and bladders were harvested, stained, and imaged. Visual and quantitative analysis of the catheters showed all uropathogens colocalizing strongly with Fg deposits exhibiting preference for Fg (Figure 1A, B) and robust Fg deposition on catheters, validating previous studies on human catheters (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b). Importantly, immunofluorescence (IF) analysis of bladder sections showed that all uropathogens interact with Fg on the bladder urothelium or in the lumen during CAUTI (Figure 1C and montages in Figure 1\u2014figure supplement 1). Although we show interaction between the pathogens and Fg, further studies are needed to characterize each pathogen\u2013Fg interaction mechanism, as previously done with E. faecalis and S. aureus (Flores-Mireles et al., 2014; Flores-Mireles et al., 2016b; Walker et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig1-v2.jpg)\n\n**Figure 1.:** (A) Urinary catheters stained with immunofluorescence (IF) for Fg deposition (Fg; green) and microbe binding (respective pathogen; red). Unimplanted catheters were used as controls for autofluorescence, n = 3\u20134. (B) Quantification of uropathogen\u2013Fg colocalization on catheters from panel A. (C) Representative images from a single bladder illustrating the interaction of uropathogens (red), Fg (green), and nuclei (blue) on the bladder urothelium (U) and in the lumen (L). Scale bar, 50 nm. Montages can be found in Figure 1\u2014figure supplement 1. For all graphs error bars show the standard error of the mean (SEM). Between 3 and 5 replicates of n = 4\u201312 each were performed for each pathogen and condition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Mice were implanted and infected with 1 \u00d7 106 CFU of the respective uropathogens. At 24 hpi, bladder tissues were harvested, fixed, and parafilm embedded. Bladder were subjected to immunofluorescence (IF) analysis, antibody staining was used to detect fibrinogen (anti-Fg; green), uropathogens (red), and DAPI (blue) for cell nuclei. Scale bar, 50 \u00b5m. Magnification \u00d7100.\n\n### Fg on urinary catheter material enhances microbial binding\n\nBased on our in vivo findings, we assessed whether Fg could promote initial binding of the uropathogens to silicone catheters as previously seen for E. faecalis (Flores-Mireles et al., 2014). In addition to Fg, bovine serum albumin (BSA) was tested since serum albumin is one of the most abundant proteins on human and mouse urinary catheters (Molina et al., in preparation; Supplementary file 2). We compared uropathogen binding to Fg-, BSA-, and uncoated silicone, finding that Fg significantly enhanced the binding to the catheter for all uropathogens when compared with uncoated and BSA-coated silicone catheters (Figure 2). Interestingly, P. aeruginosa and A. baumannii binding to BSA-coated silicone was ~14% and ~10% higher than uncoated controls, respectively (Figure 2C, E), alluding to a role for other host-secreted proteins during infection. However, these values were still significantly lower than the increase in binding observed on Fg-coated silicone (Figure 2C, E). Taken together, these data suggest that uropathogen interaction with host proteins deposited on silicone surfaces, particularly Fg, increases the ability of uropathogens to colonize urinary catheters.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013F) Uropathogens were tested for their ability to bind to protein coated and uncoated (UC) silicone catheters. For all graphs, error bars show the standard error of the mean (SEM). Between 3 and 5 replicates of n = 4\u201312 each were performed for each pathogen and condition. (G) Kinetics of silicone oil infusion on silicone and Tygon tubes, as well as (H) mouse silicone catheters. Differences between groups were tested for significance using the Mann-Whitney U test. *, P < 0.05; **, P < 0.005; and ****, P < 0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Weight of silicone tubes were measured in designated time points before and during silicone oil infusion, the mean ( \u00b1 standard error of the mean [SEM]) of n = 5 silicone tubes over infusion time was shown in this figure. (B) Weight of Tygon tubes were measured in designated time points before and during silicone oil infusion, the mean ( \u00b1 SEM) of n = 5 silicone tubes over infusion time was shown in this figure. (C) Weight of mouse catheters were measured in designated time points before and during silicone oil infusion, the mean ( \u00b1 SEM) of n = 5 mouse catheter over infusion time was shown in this figure. The length, outer diameter, and inner diameter of (D) silicone catheters (n = 5) or (E) mouse catheters (n = 5\u201310) were measured before and after infusion and the percentage change was calculated.\n\n### Characterization of liquid-infused catheters to prevent host-protein deposition\n\nBased on the exploitative interaction of uropathogens with deposited Fg, we hypothesized that development of a material to prevent protein deposition would also reduce microbial colonization. Recent work with liquid-infused surfaces have demonstrated resistance to protein and bacterial fouling (Goudie et al., 2017; Howell et al., 2018; Leslie et al., 2014; Sotiri et al., 2018). This prompted us to develop a LIS material by modifying medical-grade silicone using inert trimethyl-terminated polydimethylsiloxane fluid (silicone oil) (Goudie et al., 2017). Infusion was completed by submerging silicone into medical-grade silicone oil, the oil was then naturally taken up by the silicone tube creating a fully infused silicone tube with a slippery surface. Analysis of the oil\u2019s infusion rate showed a significant increase in silicone weight during the first 3 days of infusion then a gradual decrease in infusion until a plateau was reached after ~50 hr (raw weight in Figure 2G and Figure 2\u2014figure supplement 1A). Plastic Tygon tubes (nonsilicone) were used as negative controls (Figure 2\u2014figure supplement 1B). Full infusion of mouse silicone catheters was achieved by 10 min of infusion (Figure 2H and Figure 2\u2014figure supplement 1C). Investigation of silicone tube dimensions showed an increase in length, outer diameter, and inner diameter of ~41.3%, ~ 103.1%, and ~27.6%, respectively (Figure 2\u2014figure supplement 1D) and mouse catheters showed an increase of ~30.7%, ~28.7%, and ~39.8%, respectively (Figure 2\u2014figure supplement 1E). Based on these results, to ensure full infusion for further assays, silicone tubing was submerged in silicone oil for a minimum of 5 days and for mouse catheters for a minimum of 30 min.\n\n### LIS modification reduces Fg deposition and microbial-binding in vitro\n\nThe ability of the LIS-catheters to reduce Fg deposition in vitro was tested for infused medical-grade silicone material and two commercially available urinary catheters, Dover and Bardex with UM versions of each used as controls. The UM- and LIS-catheters were incubated with Fg overnight and assessment of Fg deposition by IF. We found that Fg deposition was reduced in all LIS-catheters, showing ~90% decrease on Dover and ~100% on the Bardex and medical-grade silicone tubing when compared with the corresponding UM controls (Figure 3A, B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig3-v2.jpg)\n\n**Figure 3.:** (A) Visualization and (B) quantification of Fg (green) deposition on unmodified (UM)-catheter material (black bars) and LIS-catheter materials (white bars) by immunofluorescence (IF) staining. Three replicates with n = 2\u20133 each. (C) Microbial binding on UM and LIS. For all graphs, error bars show the standard error of the mean (SEM) and each condition had 3 replicates with n = 3 each. Differences between groups were tested for significance using the Mann-Whitney U test. ***, P < 0.0005; and ****, P < 0.0001*.\n\nBased on previous reports of the biofouling ability of liquid-infused surfaces and our LIS\u2019s success in reducing Fg deposition, we tested its ability to prevent microbial surface binding (Howell et al., 2018). Our six uropathogens were grown in urine supplemented with BSA at 37\u00b0C (Supplementary file 1), cultures were normalized in urine, added to UM control and LIS-catheters, incubated under static conditions and quantified via IF. Binding analysis by each of the uropathogens showed that all were able to bind in significantly higher densities to the UM-catheters than to the LIS-catheters (Figure 3C). These results further demonstrate the capability of silicone LIS-catheters to reduce not only protein deposition but to also impede microbial colonization.\n\n### Fg deposition and microbial biofilms on catheters was reduced by LIS\n\nMice were catheterized with either an UM- or LIS-catheter and infected with one of six uropathogens for 24 hr. Bladders and catheters were harvested and assessed for microbial burden by CFU enumeration or fixed for staining. Kidneys, spleens, and hearts were collected to determine microbial burden. We found that mice with LIS-catheters significantly reduced microbial colonization in the bladder and on catheters when compared with UM-catheterized mice regardless of the infecting uropathogen (Figure 4). Additionally, colonization was significantly lower in LIS-catheterized mouse kidneys for P. aeruginosa, A. baumannii, and E. coli infections (Figure 4C, E, G) and LIS-catheterized mice infected with E. coli or C. albicans showed significantly less colonization of the spleen (Figure 4G, K). K. pneumoniae kidney and spleen colonization difference was not statistically significant, however they showed a trend of less colonization and there was significantly less colonization of the heart (Figure 4I).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig4-v2.jpg)\n\n**Figure 4.:** Mice were catheterized and infected with one of six uropathogens. (A, C, E, G, I, K) Organ and catheter CFUs from mice with either an unmodified (UM)-catheter (closed circles) or liquid-infused silicone (LIS)-catheter (open circles) show the dissemination profile of the pathogen. (B, D, F, H,J,L) Imaging of catheters for Fg (green), respective uropathogen (red), and a merged image compare deposition on UM-catheters (left) with LIS-catheters (right); nonimplanted catheters as controls. Quantification of microbial colonization and colocalization on the catheters can be found in Figure 4\u2014figure supplement 1. All animal studies for CFUs, catheter and bladder imaging had at least 10 animals per strain and catheter type. Differences between groups were tested for significance using the Mann-Whitney U test. *, P < 0.05; **, P < 0.005; ***, P < 0.0005; and ****, P < 0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Quantification of uropathogen\u2013Fg colocalization on unmodified (UM)- and liquid-infused silicone (LIS)-catheters from mice catheterized and infected with (A) E. faecalis, (B) E. coli, (C) P. aeruginosa, (D) K. pneumoniae, (E) A. baumannii, and (F) C. albicans. Quantification was done using pixel color counter from Fiji where colocalization (yellow) of Fg (green) and pathogen (red) were quantified and compared to the total pathogen colonization of the catheter.\n\nFurthermore, IF imaging and quantification of catheters confirmed decreased Fg deposition and microbial biofilms on LIS-catheters compared to UM (Figure 4B, D, F, H, J, I and Figure 4\u2014figure supplement 1). These data demonstrate pathogens preferentially bind to Fg, and that the LIS modification successfully reduced Fg deposition (the microbes\u2019 binding platform), disrupts uropathogen biofilm formation on catheters, and colonization of the bladder in vivo. Importantly, hematoxylin and eosin (H&E) analysis shows the LI-catheter does not exacerbate bladder inflammation regardless of the presence of infection or not (Figure 5A\u2013G), an important factor to account for when developing a new medical device. In fact, for some pathogens, the LI-catheter results in less inflammation than bladders catheterized with an UM-catheter (Figure 5B, C, G). Furthermore, we examine Fg presence, uropathogen colonization, and neutrophil recruitment in UM- and LIS-catheterized and infected bladders by IF microscopy. This analysis revealed a reduction of microbial colonization as well as decreased neutrophil recruitment (Figure 5H\u2013M).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig5-v2.jpg)\n\n**Figure 5.:** Mice were catheterized and inoculated one of six strains. (A) Naive or bladders catheterized with an unmodified (UM)- or LIS-catheter were uninfected controls. (B\u2013G) Bladder sections were stained with hematoxylin and eosin (H&E) to compare inflammation from UM-catheters (left) and LIS-catheters (right). (C\u2013M) \u00d720 images of immunofluorescence (IF) stained bladders catheterized with an UM-catheter (left panels) or a LIS-catheter (right panels). Bladders stained for nuclei (blue), fibrinogen (Fg; green), respective uropathogens (red), and neutrophils (white). The urothelial/lumen boundaries are outlined in white dotted lines and labeled U (urothelium) and L (lumen) and all scale bars are 500 \u00b5m. Montages can be found in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Mice were implanted with either an unmodified catheter or a liquid-infused catheter and infected with 1 \u00d7 106 CFU of the respective uropathogens. At 24 hpi, bladders tissues were harvested, fixed, and parafilm embedded. Bladder were subjected to immunofluorescence (IF) analysis, antibody staining was used to detect Fg (anti-Fg; green), uropathogens (red), neutrophils (anti-Ly6G; white), and DAPI (4',6-diamidino-2-phenylindole) (blue) for cell nuclei. Scale bars, 500 \u00b5m. Images are stitched 2 \u00d7 2 tiles at \u00d720 magnification.\n\n### LIS modification reduces protein deposition on catheters in CAUTI mouse model of E. faecalis\n\nA quantitative-proteomics comparison was performed to identify proteins deposited on UM- and LIS-catheters retrieved 24 hpi with E. faecalis. Harvested catheters were prepared and protease digested with trypsin as in Zougman et al., 2014. nLC\u2013MS/MS was performed in technical duplicate and label-free-proteomics (LFQ) processed as in Cox and Mann, 865 proteins were identified at a 1% False Discovery Rate (FDR) (Cox and Mann, 2008). Total abundance of protein was significantly reduced in LIS- vs UM-catheters (Figure 6A and Supplementary file 2). Additionally, abundance of Fg and over 130 other proteins significantly decreased while only three proteins showed a significant increase (UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5) (Figure 6B and Supplementary file 2). These data further demonstrate that the LIS modification not only reduced Fg deposition but also a wide variety of host proteins, which could play a role in microbial colonization and biofilm formation as demonstrated earlier with BSA (Figure 2C, E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig6-v2.jpg)\n\n**Figure 6.:** A subset of unmodified (UM)- and LIS-catheters taken from mice 24 hpi with E. faecalis were assessed for protein deposition via mass spectrometry four UM-catheters and five LIS-catheters were used. (A) Intensities of the 95% most abundant proteins were summed in a total proteome approach and compared between the UM- and LIS-catheter groups. (B) A volcano plot for a subset of proteins. Negative mean rank difference indicates less protein on the LIS-catheter then on the UM-catheter and a significant difference is a \u2212log10(p value) over 1.3. The fibrinogen (Fg) chains (\u03b1, \u03b2, and \u03b3) are highlighted in green, serum albumin in orange, UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5 in yellow. Differences between groups were tested for significance using the Mann-Whitney U test. ***, P < 0.0005.\n\n## Discussion\n\nThis is the first study to show a diverse set of uropathogens including gram-negative, gram-positive, and fungal species interact with Fg to more effectively bind to silicone urinary catheter surfaces. Furthermore, we found that by disrupting Fg deposition with LIS-catheters we reduced the ability of uropathogens to bind and colonize the catheter surface and bladder in an in vivo CAUTI mouse model. Moreover, LIS also reduced dissemination of E. coli, P. aeruginosa, and A. baumannii into the kidneys and other organs. Furthermore, LIS-catheters did not increase inflammation and for half of the pathogens inflammation was reduced. Finally, the deposition of other host-secreted proteins on LIS-catheters was around 6.5-fold less then UM-catheters. Together, these findings indicate that catheters made using LIS are a promising new antibiotic sparring approach for reducing or even preventing CAUTIs by interfering with protein deposition (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig7-v2.jpg)\n\n**Figure 7.:** Urinary catheter-induced inflammation promotes the release of fibrinogen (Fg) into the bladder to heal physical damage. Consequently, this Fg is deposited onto the catheter creating a scaffold for incoming pathogens to bind, establish infection, and promote systemic dissemination. However, catheterization with a LIS-catheter reduces Fg deposition onto its surface; thus, reducing the availability of a binding scaffolds for incoming pathogens. Consequently, overall bladder colonization and systemic dissemination are reduced making LIS-catheters a strong candidate for CAUTI prevention.\n\nPathogen\u2013Fg interaction has been shown to be important for both E. faecalis and S. aureus during human and mouse CAUTI (Flores-Mireles et al., 2016b; Walker et al., 2017). Binding to Fg is critical for efficient bladder colonization and biofilm formation on the catheter via protein\u2013protein interaction using EbpA and ClfB adhesins, respectively, and their disruption hinders colonization (Flores-Mireles et al., 2014; Walker et al., 2017). Gram-negative pathogens, A. baumannii and P. mirabilis, have shown colocalization with Fg during urinary catheterization (Gaston et al., 2020); however, the bacterial factors and any mode of interaction have not been described. While interaction of E. coli and K. pneumoniae with Fg during CAUTI has not been described previously, pathogenesis during urinary tract infection (UTI) (no catheterization) has been extensively studied. These studies show that type 1 pili, a chaperone\u2013usher pathway (CUP) pili, allows them to colonize the bladder urothelium by binding to mannosylated receptors on the urothelial surface through the tip adhesin FimH (Klein and Hultgren, 2020). Furthermore, other CUP pili including the P pili, important for pyelonephritis, and the Fml pilus, important for colonizing inflamed bladder urothelium, bind specifically to sugar residues Gal\u03b11\u20134Gal in glycolipids and Gal(\u03b21\u20133)GalNAc in glycoproteins, respectively (Campoccia et al., 2013). Interestingly, Fg is highly glycosylated, containing a wide variety of sugar residues including mannose, N-acetyl glucosamine, fucose, galactose, and N\u2010acetylneuraminic acid (Adamczyk et al., 2013). Therefore, the glycosylation in Fg may be recognized by CUP pili, allowing pathogens expressing CPU adhesins to become established and colonize the bladder. Furthermore, A. baumannii CUP1 and CUP2 pili are essential for CAUTI, this together with A. baumannii interactions with Fg in vivo, suggests that these pili may play a role in Fg interaction (Di Venanzio et al., 2019). Similarly, P. aeruginosa also encodes CUP pili, CupA, CupB, CupC, and CupD, which have shown to be important for biofilm formation (Mikkelsen et al., 2013); however, their contribution during CAUTI has yet to be investigated. Furthermore, C. albicans has several adhesins, ALS1, ALS3, and ALS9, which have a conserved peptide-binding cavity shown to bind to Fg \u03b3-chain (Hoyer and Cota, 2016).\n\nInhibition of initial uropathogen binding is crucial to reduce colonization and biofilm formation on urinary catheter surfaces and prevent subsequent CAUTI (Flores-Mireles et al., 2014; Flores-Mireles et al., 2016b). To prevent surface binding, a variety of modified surfaces impregnated with antimicrobial or bacteriostatic compounds have been generated, and have proven to reduce microbial-binding in vitro but not in vivo (Andersen and Flores-Mireles, 2019; Singha et al., 2017). It is possible that in vitro studies do not efficiently mimic the complexities of the in vivo environment, for example; (1) Growth media: the majority of in vitro studies use laboratory rich or defined culture media, and it has been shown that laboratory media do not recapitulate the catheterized bladder environment that pathogens encounter (Colomer-Winter et al., 2019; Xu et al., 2017). Specifically, urine culture conditions have shown to activate different bacterial transcriptional profiles than when cultures are grown in defined media (Conover et al., 2016; Xu et al., 2017), which may affect microbial persistence and survival. (2) Host factors: host-secreted proteins are released into the bladder due to catheter-induced physical damage and subsequent inflammation. These proteins are deposited on the catheter surface and may hinder the release of antimicrobials or block interaction of antimicrobials with the pathogen if the antimicrobials are tethered to the surface. As has been observed with Fg deposition on human and mouse catheters, that host-protein deposition is not uniform, which may lead to antimicrobial release or pathogen\u2013antimicrobial agent interaction at a subinhibitory concentrations (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Walker et al., 2017). Consequently, these interactions can contribute to the development of multidrug resistance among uropathogens (\u2018Antibiotic resistance threats in the Antibiotic resistance threats in the United States, 2019', 2019).\n\nBased on the role of deposited host proteins in promoting microbial colonization and presence in human CAUTI (Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b; Walker et al., 2017), antifouling catheter coatings present a better approach to decreasing CAUTI prevalence rather than using biocidal or biostatic compounds, such as antibiotics, that promote resistance (Campoccia et al., 2013; Singha et al., 2017). Antifouling coatings made from polymers have shown resistance to protein deposition He et al., 2016; however, these coatings can become unstable over time and be difficult to produce requiring extensive wet chemistry (Singha et al., 2017). Most reports on the use of purely antifouling coatings to combat CAUTI have shown a successful reduction in bacterial colonization in vitro yet have not been successfully tested in vivo (Andersen and Flores-Mireles, 2019). This may be partly explained by the fact that many of the antifouling coatings are optimized to target bacterial adhesion, as it is understood that the first stage of biofilm development is bacterial attachment to a surface (Faustino et al., 2020). However, in a complex environment such as the in vivo bladder, the first change to the catheter surface is the adhesion of a complex set of host-generated proteins and biological molecules, generally referred to as a conditioning film, which can mask the surface (Faustino et al., 2020; Gaston et al., 2020; Scotland et al., 2020). Yet studies on catheter coatings to-date have rarely focused on the role of the host in infection establishment; namely, the host-secreted proteins. The data we present here suggest that this missing element may at least partly explain the differing results seen for most antifouling catheter treatments in vitro vs in vivo.\n\nThis study used clinically relevant silicone oil to create a simple to make LIS that was not only microbial resistant but also protein resistant, filling in the missing link between in vitro and in vivo work, the conditioning film. Interestingly, despite the increased weight, length, inner diameter, and outer diameterof the LIS mouse catheter by full silicone infusion, the LIS-catheters did not exacerbated the inflammation response. This findings are consistent with previous a in vivo work showing reduced fibrous capsule formation in implants coated with a liquid layer, suggesting that the use of a liquid surface may convey additional anti-inflammatory benefits (Chen et al., 2017).\n\nOur mouse model of CAUTI has shown to faithfully recapitulate the pathophysiology of human CAUTI, showing urinary catheterization induces inflammation and contribution of Fg to biofilm formation on catheters recovered from humans suffering of CAUTI (Delnay et al., 1999; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b; Glahn et al., 1988; Peychl and Zalud, 2008; Walker et al., 2017). This suggests that our findings have the potential to be translated for prevention and management of human CAUTI. However, for successful translation of this technology into humans, we need to further understand the effects of silicone oil on the immune response to infection as well as bladder tissue and better understand the impact the swelling of the material will have on manufacturing these catheters.\n\nA deeper understanding of the pathogenesis of CAUTI is critical to moving beyond current developmental roadblocks and create more efficient intervention strategies. Here, we have shown that that infusion of silicone with an immiscible liquid coating significantly decreases Fg deposition and microbial binding by using in vitro conditions that more thoroughly recapitulate the catheterized bladder environment. Importantly, our in vitro results were confirmed in vivo using our established mouse model of CAUTI. Our data showed that LIS-catheters are refractory to bacterial colonization without targeting microbial survival, which often leads to antimicrobial resistance. This study has found that protein deposition on urinary catheters is the Achilles heel of CAUTI pathogens, disrupting pathogen\u2013Fg interaction represent a vulnerability that could be exploited. Thus, LIS-catheters hold tremendous potential for the development of lasting and effective CAUTI treatments. These types of technologies are desperately needed to achieve better public health by decreasing healthcare-associated infections and promoting long-term wellness.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Enterococcus faecalis)</td>\n      <td>OG1RF</td>\n      <td>ATCC</td>\n      <td>47,077</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>UTI89</td>\n      <td>Obtained from Dr, Scott Hultgren lab</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Pseudomonas aeruginosa)</td>\n      <td>PA01</td>\n      <td>ATCC</td>\n      <td>BAA-47</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Klebsiella pneumoniae)</td>\n      <td>TOP52 1721</td>\n      <td>Obtained from Dr. Scott Hultgren lab</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Acetobacter baumannii)</td>\n      <td>UPAB1 + CUP1,2</td>\n      <td>Obtained from Dr Mario Feldman lab Di Venanzio et al., 2019</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Candida albicans)</td>\n      <td>SC5314</td>\n      <td>ATCC</td>\n      <td>MYA-2876</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homosapian female)</td>\n      <td>Urine</td>\n      <td>This study</td>\n      <td></td>\n      <td>IRB #19-04-5273</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Goat polyclonal) antifibrinogen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# F8512, RRID:AB_259765</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-strep group d</td>\n      <td>From Dr. Scott Hultgren lab Flores-Mireles et al., 2014</td>\n      <td></td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-E. coli serotype O/K</td>\n      <td>Invitrogen</td>\n      <td>Cat# PA1-25636 RRID:AB_780488</td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti P. aeruginosa</td>\n      <td>Invitrogen</td>\n      <td>Cat# PA173117 RRID:AB_1018279</td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti-K. pneumoniae polyclonal</td>\n      <td>Thermo Scientific</td>\n      <td>Cat# PA17226 RRID:AB_559816</td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti A. baumannii</td>\n      <td>Di Venanzio et al., 2019</td>\n      <td></td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rabbit polyclonal) anti C. albicans</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# PA1-27158 RRID:AB_779500</td>\n      <td>1:1000 (in vitro)1:500 (IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Rat polyclonal) anti-Ly6G</td>\n      <td>BioLegend</td>\n      <td>Cat# 127602 RRID:AB_1089180</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Donkey polyclonal) anti-goat 800CW</td>\n      <td>LI-COR Biosciences</td>\n      <td>Cat# 926-32214, RRID:AB_621846</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Donkey polyclonal) anti-rabbit 680RD</td>\n      <td>LI-COR Biosciences</td>\n      <td>Cat# 926-68073, RRID:AB_10954442</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Donkey polyclonal) anti-rat 680</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# A-21472, RRID:AB_2535875</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Donkey polyclonal) anti-goat 488</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# A11055 RRID:AB_2534102</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>(Donkey polyclonal) anti-rabbit 550</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# A31572 RRID:AB_162543</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fibrinogen</td>\n      <td>Enzyme Research Laboratories</td>\n      <td>Cat# FIB 3</td>\n      <td>Adjusted to 150 \u00b5g/ml in PBS</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zeiss pro Software</td>\n      <td>Carl Zeiss Microscopy</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Image studio software</td>\n      <td>Licor Biosciences</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Silicone oil</td>\n      <td>Gelest</td>\n      <td>63148-62-9</td>\n      <td>20 cst</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse infection models\n\nMice used in this study were ~6-week-old female wild-type C57BL/6 mice purchased from Jackson Laboratory and The National Institute of Cancer Research. Mice were subjected to transurethral implantation and inoculated as previously described (Conover et al., 2015). Briefly, mice were anesthetized by inhalation of isoflurane and implanted with a 6-mm-long UM-silicone or LIS-catheter. Mice were infected immediately following catheter implantation with 50 \u03bcl of ~2 \u00d7 107 CFU/ml in phosphate-buffered saline (PBS) introduced into the bladder lumen by transurethral inoculation (unless otherwise noted [Supplementary file 1]). For all mouse experiments microbes were grown in their corresponding media (Supplementary file 1). To harvest the catheters and organs, mice were sacrificed at 24 hpi by cervical dislocation after anesthesia inhalation; the silicone catheter, bladder, kidneys, heart, and spleen were aseptically harvested. Catheters were either subjected to sonication (Branson, Ultrasonic Bath) for CFU enumeration analysis, fixed for imaging via standard IF described below, or sent for proteomic analysis as described below using nonimplanted catheters as controls for all assays. Bladders for IF and histology were fixed and processed as described below. Kidneys, spleens, and hearts were all used for CFU analysis. The University of Notre Dame Institutional Animal Care and Use Committee approved all mouse infections and procedures as part of protocol number 18-08-4792MD. All animal care was consistent with the Guide for the Care and Use of Laboratory Animals from the National Research Council.\n\n### Bladder Immunohistochemistry (IHC) and H&E staining of mouse bladders\n\nMouse bladders were fixed in 10% neutralized formalin (Leica) overnight, before being processed and sectioned by ND CORE. Staining was done as previously described (Walker et al., 2017). Briefly, bladder sections were deparaffinized, rehydrated, and rinsed with water. Antigen retrieval was accomplished by boiling the samples in Na-citrate, washing in water, and then incubating in PBS three times. Sections were then blocked (1\u00d7 PBS, 1.5% BSA, 0.1% sodium azide), washed in PBS, and incubated with appropriate primary antibodies overnight at 4\u00b0C. Next, sections were washed with PBS, incubated with secondary antibodies for 2 hr at RT, and washed once more in PBS prior to Hoechst dye staining. H&E stain for light microscopy was done by the CORE facilities at the University of Notre Dame (ND CORE). All imaging was done using a Zeiss inverted light microscope (Carl Zeiss, Axio Observer). Zen Pro (Carl Zeiss, Thornwood, NY) and ImageJ software were used to analyze the images.\n\n### Quantifying catheter colonization and Fg deposition\n\nAs previously described (Colomer-Winter et al., 2019). Briefly, catheters were fixed with 10% neutralized formalin, blocked, and stained using Goat anti-Fg primary antibody (Sigma) (1:1000) and Rabbit anti-pathogen (Supplementary file 1) followed by Donkey anti-Goat IRD800 antibody (Invitrogen) (1:5000) and Donkey anti-Rabbit IRD680 antibody (Invitrogen) (1:5000) secondary. Catheters were then dried over night at 4\u00b0C and imaged on an Odyssey Imaging System (LI-COR Biosciences) to examine the infrared signal. Images of the signals (Fg in green and pathogens in red) were analyzed in ImageJ using Pixel color counter (Gaston et al., 2020).\n\n### Human urine collection\n\nHuman urine was collected and pooled from at least two healthy female donors between 20 and 40 years of age. Donors had no history of kidney disease, diabetes, or recent antibiotic treatment. Urine was sterilized using a 0.22 \u03bcm filter (Sigma-Aldrich) and pH adjusted to 6.0\u20136.5. When supplemented with BSA (VWR Lifesciences), urine was filter sterilized again following BSA addition. All participants signed an informed consent form and protocols were approved by the local Internal Review Board at the University of Notre Dame under study #19-04-5273.\n\n### Microbial growth conditions in supplemented urine\n\nE. faecalis and C. albicans were grown static for ~5 hr in 5 ml of respective media (Supplementary file 1) followed by static overnight culture in human urine supplemented with 20 mg/ml BSA (urine BSA20). E. coli, K. pneumoniae, P. mirabilis, A. baumanii, and P. aeruginosa were grown 5 hr shaking at 37\u00b0C in LB then static in fresh urine BSA for 24 hr then, supplemented into fresh urine BSA for an additional 24 hr static (2 \u00d7 24 hr) in urine BSA20. All cultures were washed in PBS (Sigma) three times and resuspended in assay appropriate media.\n\n### Silicone disk preparation\n\nDisks of UM-silicone (Nalgene 50 silicone tubing, Brand Products) or LIS were cut using an 8 mm leather hole punch. UM disks were washed three times in PBS and air dried. LIS disks were stored in filter sterilized silicone oil at RT. Disks were skewered onto needles (BD) to hold them in place and put in 5 ml glass tubes (Thermo Scientific) or placed on the bottom of 96-well plate wells (Fisher Scientific) (UM-silicone only). Plates and glass tubes were UV sterilized for >30 min prior to use.\n\n### Protein-binding assays\n\nHuman Fg free from plasminogen and von Willebrand factor (Enzyme Research Laboratory #FB3) was diluted to 150 \u00b5g/ml in PBS. 500 \u00b5L of 150 \u00b5g/ml Fg was added to each disk in glass tubes, sealed, and left over night at 4\u00b0C. Disks were then processed according to standard IF procedure as described above (Colomer-Winter et al., 2019). Briefly, disks were washed three times in PBS, fixed with 10% neutralized formalin (Leica), blocked, and stained using Goat anti-Fg primary antibody (Sigma) (1:1000) and Donkey anti-Goat IRD800 secondary antibody (Invitrogen) (1:5000). Disks were then dried over night at 4\u00b0C and imaged on an Odyssey Imaging System (LI-COR Biosciences) to examine the infrared signal. Intensities for each catheter piece were normalized against a negative control and then made relative to the pieces coated with Fg which was assigned to 100%. Images were processed using Image Studio Software (LI-COR, Lincoln, NE) Microsoft Excel and graphed on GraphPad Prism (GraphPad Software, San Diego, CA).\n\n### Microbial-binding assays\n\nFor assessing the effect of protein deposition on microbial binding, 100 \u00b5l of 150 \u00b5g/ml Human Fg, 100 \u00b5l of 150 \u00b5g/ml BSA, or 100 \u00b5l of PBS were incubated on UM-silicone disks in 96-well plates overnight at 4\u00b0C. The following day disks were washed three times with PBS followed by a 2-hr RT incubation in 100 \u00b5l of urine containing microbes at a concentration of ~108 CFU/ml.\n\nFor assessing microbial binding to UM-silicone vs LIS, 500 \u00b5l of microbe containing media was added to prepared disks in glass tubes. Standard IF procedure was then followed as described above using goat anti-Fg and rabbit anti-microbe primary antibodies (1:1000) (see Supplementary file 1 for details). Secondary antibodies used were Donkey anti-Goat IRD800 and Donkey anti-Rabbit IRD680 (1:5000). Quantification of binding was done using ImageStudio Software (LI-COR). Intensities for each catheter piece were normalized against a negative control and then made relative to the pieces coated with Fg which was assigned to 100%.\n\n### Silicone and Tygon tube infusion\n\nFive samples of 20-cm Tygon tube (14-171-219, Saint-Gobain Tygon S3 TM 3603 Flexible Tubings, Fisher Scientific, USA) or silicone tube (8060-0030, NalgeneTM 50 Platinum-cured Silicone Tubing, Thermo Scientific, USA) was utilized in weight measurement. Weight of the tubes prior to infusion were measured with an analytical balance (AL204, Analytical Balance, Mettler Toledo, Germany). After the measurement of the initial weights, the tubes were submerged in silicone oil (DMS-T15, polydimethylsiloxane, trimethylsiloxy, 50 cSt, GelestSInc, USA) and weighed at designated time points. For each time point, tubes were removed from the oil with forceps and held vertically for 30 s for the excess silicone oil to flow out of the tube. The bottoms of the tubes were then gently dabbed with Kimwipes (Kimwipe, Kimberly-Clark Corp., USA). After measurement, the tubes were again submerged in silicone oil until the next time point. Tubes were measured every 3 hr for the first 2 days; every 6 hr from days 3 to 6; and every 24 hr from day 6 and onwards. Measurements were taken until data showed no significant increase, and that the plateau trendline consist of at least three data points. Based on these data, for all the protein- and microbial-binding assays, silicone catheters were submerged in silicone oil for 5 days prior to use to ensure full infusion.\n\n### Mouse catheter infusion\n\nFive samples of 20-cm mouse catheter (SIL 025, RenaSil Silicone Rubber Tubing, Braintree Scientific, Inc, USA) were utilized in weight measurement. Weight of the tubes prior to infusion were measured with an analytical balance. After the measurement of the initial weights, the tubes were submerged in silicone oil for different time points. For each time point, catheters were removed from the oil with forceps and a Kimwipes was immediately pressed against the bottom of the catheters to remove the excess silicone oil via capillary action. After the excess oil was drained, catheters were weighed and placed back into silicone oil to continue with the infusion until the next time point. Catheters were measured every 1 min for the first 5 min of the experiment; every 2 min from 5 to 15 min; and every 5 min from 15 min and onwards. Measurements were taken until weight showed no significant increase, and that the plateau trendline consist of at least three data points. Silicone catheters modified and used in mouse infections were submerged in silicone oil for at least 30 min prior to use.\n\n### Parameter measurement of silicone tube before and after infusion\n\nThe length, inner diameter, and outer diameter of silicone tubes were measured before silicone oil infusion and following complete infusion (after incubating with silicone oil for >5 days). All parameters were measured using a digital caliper (06-664-16, Fisherbrand Traceable Digital Calipers, Fisher Scientific, USA). For mouse catheters, length was measured using a digital caliper. For inner and outer diameter measurement, photos of the tube openings of the catheters and a scale of known length were taken and estimated using ImageJ. Percentage weight change of Tygon tube, silicone tube, and mouse catheters were calculated based on the formula below:\n\n$$\n\\frac{Weight\u00a0of\u00a0the\u00a0tube\u2212Initial\u00a0weight\u00a0of\u00a0the\u00a0tube}{Initial\u00a0weight\u00a0of\u00a0the\u00a0tube}\u2217100%\n$$\n\n### Proteomic analysis of mouse catheters\n\nFive mice catheterized with a LIS-catheter and four mice were catheterized with an UM-catheter were sacrificed after 24 hr of infection with E. faecalis OG1RF. Catheters were harvested and put into 100 \u00b5l of sodium dodecyl sulfate (SDS buffer (100 mM Tris\u2013HCl, pH 8.8, 10 mM Dithiothreitol (DTT), and 2% SDS)), then vortexed for 30 s, heated for 5 min at 90\u00b0C, sonicated for 30 min and the process repeated once more. Samples were sent to the Mass Spectrometry and Proteomics Facility at Notre Dame (MSPF) for proteomic analysis. Proteins were further reduced in DTT, alkylated and digested with trypsin using Suspension Trap and protocols (Zougman et al., 2014). nLC\u2013MS\u2013MS/MS was performed essentially as described in Sanchez et al., 2020 on a Q-Exactive instrument (Thermo). Proteins were identified and quantified using MaxLFQ (Label Free Quantification) within MaxQuant and cutoff at a 1% FDR (Cox and Mann, 2008). This generated a total of eight data records from UM-catheters and 10 from LIS-catheters. Data reduction was performed by removing contaminants proteins. Protein abundance for each catheter type was then calculated by summing the LFQ intensity of proteins which comprised 95% of the total abundance on the catheters. Strict filtering criteria of at least two replicates with technical duplication from the UM-catheters and three replicates with technical duplication from the LIS-catheters were required to keep an identification. Abundance of the reduced proteins was plotted using GraphPad Prism. Statistical significance was tested using Mann\u2013Whitney U. A volcano plot was created using the ranked mean difference for each protein and \u2212log of calculated p values with alpha = 0.05.\n\n### Statistical analysis\n\nUnless otherwise stated, data from at least three experiments were pooled for each assay. Significance of experimental results was assessed by Mann\u2013Whitney U test using GraphPad Prism, version 7.03 (GraphPad Software, San Diego, CA). Significance values on graphs are *p \u2264 0.05, **p \u2264 0.01, ***p \u2264 0.0001, and ****p \u2264 .00001.\n",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "7a545d5f-b068-4e34-9244-2418b14a5b06",
+      "submission_id": "1a4f57a0-ce9b-4cce-bc41-b6091e11a4db",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc J Bonten, https://ror.org/0575yy874 University Medical Center Utrecht Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75798.sa0](https://doi.org/10.7554/eLife.75798.sa0)\n\nWe assessed your work and were impressed by the number of different experiments and the coherence between them, clearly demonstrating the potential of your work for future prevention of catheter-associated urinary tract infections.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Marc J Bonten, https://ror.org/0575yy874 University Medical Center Utrecht Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75798.sa1](https://doi.org/10.7554/eLife.75798.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Inhibiting Host Protein Deposition on Urinary Catheters Reduces Urinary Tract Infections\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Marc J Bonten as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions (for the authors):\n\nPlease address the comments made by both reviewers.\n\nReviewer #1 (Recommendations for the authors):\n\nFurther fine tuning of the discussion would improve the manuscript.\n\nReviewer #2 (Recommendations for the authors):\n\nFirst, may I congratulate you on this excellent article. I learned a lot from it and I am very curious to where this will lead. I have some general issues and some textual issues.\n\nGeneral issues:\n\nI think the readability and comprehension can be improved by adding something of a graphical abstract illustrating the steps of your research. Especially for the fast reader, this offers the possibility to understand the study results and implications in a short time.\n\nRegarding the third step: it is insufficiently clear how the LIS catheter that was used for the mice experiments is manufactured exactly. Is this catheter drained in silicone oil before insertion and for how long? And why is the gain in weight over time so important to register? What can you deduce from this? And speaking of the change of dimensions; what could be the impact of this on the development of CA-UTIs? I think it is important to discuss the implications of these findings.\n\nI think the discussion should focus on what the next steps are in research/development of the LIS catheter, towards its use in clinical practice\n\nTextual issues:\n\nResults:\n\nDo you mean 24 hours?\n\n\" Mice catheterized and infected with the respective uropathogen were sacrificed at 24 post infection (hpi).\"\n\nMaybe rephrase?\n\n\"Analysis found the LIS-catheters showed significantly reduced binding of all uropathogens when compared to \u03bcm controls\"\n\nDiscussion:\n\nYou indicate that these pili in vivo interact with Fg and therefore they play a role with Fg interaction? \"Furthermore, A. baumannii CUP1 and CUP2 pili are essential for CAUTI, this together with its interactions with Fg in vivo, suggests that these pili may play a role in Fg interaction (Di Venanzio et al., 2019).\"\n",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "47887331-2b3e-4125-8ca3-0d5b76b47d62",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C1",
+      "claim": "Catheter-associated urinary tract infections (CAUTIs) account for 40% of all hospital-acquired infections.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common complication is catheter-associated urinary tract infection (CAUTI), which accounts for 40% of all hospital-acquired infections (Andersen and Flores-Mireles, 2019; Feneley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Andersen and Flores-Mireles, 2019; Feneley et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c3c1b456-9fc6-493e-b8e9-cf798c4f6285",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C2",
+      "claim": "CAUTIs often lead to bloodstream infections and systemic dissemination with a 30% mortality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, CAUTIs often lead to bloodstream infections and systemic dissemination with a 30% mortality rate, causing significant financial burdens for hospitals and patients (Andersen and Flores-Mireles, 2019; Feneley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Andersen and Flores-Mireles, 2019; Feneley et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "1a9da7ce-c55e-4d03-8183-c51fb28b3e39",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C3",
+      "claim": "Catheter use elicits bladder inflammation, releasing host serum proteins, including fibrinogen (Fg), into the bladder.",
+      "claim_type": "EXPLICIT",
+      "source": "Catheter use elicits bladder inflammation, releasing host serum proteins, including fibrinogen (Fg), into the bladder, which deposit on the urinary catheter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about catheter-induced inflammation and is referenced in the context of the study's findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "33203e72-afef-4832-a1ba-e11daffbc871",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C4",
+      "claim": "Enterococcus faecalis uses fibrinogen as a scaffold to bind and persist in the bladder despite antibiotic treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Enterococcus faecalis uses Fg as a scaffold to bind and persist in the bladder despite antibiotic treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by prior research findings cited throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "7b80ff7e-7b43-4595-8834-5175daf2e553",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C5",
+      "claim": "Inhibition of fibrinogen-pathogen interaction significantly reduces infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of Fg\u2013pathogen interaction significantly reduces infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by prior research findings and is a key premise of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "ebff03fc-7d66-40f3-b711-1a20d233d2b3",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C6",
+      "claim": "Deposited fibrinogen is advantageous for uropathogens E. faecalis, Escherichia coli, Pseudomonas aeruginosa, K. pneumoniae, A. baumannii, and C. albicans.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show deposited Fg is advantageous for uropathogens E. faecalis, Escherichia coli, Pseudomonas aeruginosa, K. pneumoniae, A. baumannii, and C. albicans, suggesting that targeting catheter protein deposition may reduce colonization creating an effective intervention for catheter-associated urinary tract infections (CAUTIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript showing pathogen-fibrinogen interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "8f136f1a-7f0b-49a6-b773-0ffd9c78ffb8",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C7",
+      "claim": "Liquid-infused silicone catheters reduce host-protein deposition in a mouse model of CAUTI.",
+      "claim_type": "EXPLICIT",
+      "source": "In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the mouse CAUTI model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "9ef43de6-0d14-4e69-aad7-68338c5ccb6c",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C8",
+      "claim": "Liquid-infused silicone catheters result in decreased colonization on catheters and in bladders in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the mouse CAUTI model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "22a25eb8-cf9a-4094-85c4-504dc9c3f4a9",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C9",
+      "claim": "Liquid-infused silicone catheters reduce dissemination of pathogens in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the mouse CAUTI model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "073e4464-1fbd-4b8f-b00e-b9733a405ef8",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C10",
+      "claim": "Proteomics revealed a significant decrease in deposition of host-secreted proteins on liquid-infused catheter surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, proteomics revealed a significant decrease in deposition of host-secreted proteins on liquid-infused catheter surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "bf9b3c5c-8c9f-49f9-b1f7-e6745ae39cb0",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C11",
+      "claim": "All tested uropathogens colocalize strongly with fibrinogen deposits on catheters in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual and quantitative analysis of the catheters showed all uropathogens colocalizing strongly with Fg deposits exhibiting preference for Fg (Figure 1A, B) and robust Fg deposition on catheters, validating previous studies on human catheters (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence imaging and quantification data shown in Figure 1A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "46e95361-16f5-4589-8847-9c3334b0b15b",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C12",
+      "claim": "All tested uropathogens interact with fibrinogen on the bladder urothelium or in the lumen during CAUTI.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, immunofluorescence (IF) analysis of bladder sections showed that all uropathogens interact with Fg on the bladder urothelium or in the lumen during CAUTI (Figure 1C and montages in Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence analysis of bladder sections shown in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "2de001a7-5756-48c3-8abe-bf6cdb666155",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C13",
+      "claim": "Fibrinogen significantly enhances uropathogen binding to silicone catheters compared with uncoated and BSA-coated silicone catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared uropathogen binding to Fg-, BSA-, and uncoated silicone, finding that Fg significantly enhanced the binding to the catheter for all uropathogens when compared with uncoated and BSA-coated silicone catheters (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro binding assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "4df10b80-aced-4406-87c8-1652090575d7",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C14",
+      "claim": "P. aeruginosa binding to BSA-coated silicone was ~14% higher than uncoated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, P. aeruginosa and A. baumannii binding to BSA-coated silicone was ~14% and ~10% higher than uncoated controls, respectively (Figure 2C, E), alluding to a role for other host-secreted proteins during infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative binding assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "9949e8e8-0ec8-423a-8700-e43f9b494449",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C15",
+      "claim": "A. baumannii binding to BSA-coated silicone was ~10% higher than uncoated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, P. aeruginosa and A. baumannii binding to BSA-coated silicone was ~14% and ~10% higher than uncoated controls, respectively (Figure 2C, E), alluding to a role for other host-secreted proteins during infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative binding assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "db1e9ad3-37bc-4852-a15b-805d9ea36380",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C16",
+      "claim": "Fibrinogen is continuously released into the bladder lumen in response to mechanical damage to the urothelial lining caused by catheterization.",
+      "claim_type": "EXPLICIT",
+      "source": "Fg is continuously released into the bladder lumen in response to mechanical damage to the urothelial lining caused by catheterization (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Klein and Hultgren, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Klein and Hultgren, 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "d25684f9-429d-4c96-bca3-02f6e36da4bb",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C17",
+      "claim": "When blocking the interaction between fibrinogen and E. faecalis using antibodies, the pathogen is not able to effectively colonize the bladder.",
+      "claim_type": "EXPLICIT",
+      "source": "When blocking the interaction between Fg and E. faecalis using antibodies, the pathogen is not able to effectively colonize the bladder (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Gaston et al., 2020; Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Gaston et al., 2020; Walker et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "45b8d60a-a052-429a-85ea-8a93d064b182",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C18",
+      "claim": "Liquid-infused silicone (LIS) is more simple to make, more stable, and more cost effective than other antifouling polymer modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "LIS is more simple to make, more stable, and more cost effective than other antifouling polymer modifications (Andersen and Flores-Mireles, 2019; Campoccia et al., 2013; Homeyer et al., 2019; Howell et al., 2018; Chamy, 2013; Singha et al., 2017; Sotiri et al., 2018; Villegas et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature comparing different antifouling modifications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "d090ce4d-3d80-4714-9c29-170cd5eb8b01",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C19",
+      "claim": "LIS has shown to reduce clotting in central lines and infection in skin implants.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, LIS has shown to reduce clotting in central lines and infection in skin implants (Chen et al., 2017; Leslie et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Chen et al., 2017; Leslie et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "e9f3b248-5840-4a04-8fb8-22e0f4015770",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C20",
+      "claim": "LIS-catheters reduced fibrinogen deposition and microbial binding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that our LIS-catheters reduced Fg deposition and microbial binding not only in vitro but also in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "9d902f7a-5ffc-472d-8739-01359a47603a",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C21",
+      "claim": "LIS-catheters reduced fibrinogen deposition and microbial binding in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that our LIS-catheters reduced Fg deposition and microbial binding not only in vitro but also in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vivo experimental data from the mouse CAUTI model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "53bfe6f9-632f-4d0c-9dc0-886cf72e732b",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C22",
+      "claim": "LIS-catheters significantly decrease host-protein deposition when compared to unmodified catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, LIS-catheters significantly decrease host-protein deposition when compared to unmodified (UM)-catheters as well as reducing catheter-induced inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "e975ca96-ff00-42a2-b4f9-18830522b582",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C23",
+      "claim": "LIS-catheters reduce catheter-induced inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, LIS-catheters significantly decrease host-protein deposition when compared to unmodified (UM)-catheters as well as reducing catheter-induced inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "4ea31617-97a8-40cf-ac66-18300b301fd2",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C24",
+      "claim": "Catheters impregnated with antimicrobials have shown, at best, mixed results in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Catheters impregnated with antimicrobials, such as metal ions and antibiotics, have become popular and are now commercialized due to promising in vitro work but, in clinical trials these catheters have shown, at best, mixed results (Andersen and Flores-Mireles, 2019; Singha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Andersen and Flores-Mireles, 2019; Singha et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "1741c09c-3145-4af3-a0d4-36727e6f8ec9",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C25",
+      "claim": "The presence of antimicrobial compounds on catheters may drive development of resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there is concern that this approach may not be a long-term solution given that the presence of antimicrobial compounds may drive development of resistance (Singha et al., 2017; Westfall et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Singha et al., 2017; Westfall et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "b645926b-1a94-47d9-8b74-4db61f1545de",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C26",
+      "claim": "Fibrinogen deposition was reduced by ~90% on Dover LIS-catheters compared to unmodified controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Fg deposition was reduced in all LIS-catheters, showing ~90% decrease on Dover and ~100% on the Bardex and medical-grade silicone tubing when compared with the corresponding UM controls (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence quantification data shown in Figure 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "e6da9828-fc7a-4cfa-8622-77a51593b2df",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C27",
+      "claim": "Fibrinogen deposition was reduced by ~100% on Bardex LIS-catheters compared to unmodified controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Fg deposition was reduced in all LIS-catheters, showing ~90% decrease on Dover and ~100% on the Bardex and medical-grade silicone tubing when compared with the corresponding UM controls (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence quantification data shown in Figure 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "3aa4e960-118e-4e46-bf59-0e867382750f",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C28",
+      "claim": "Fibrinogen deposition was reduced by ~100% on medical-grade silicone LIS-tubing compared to unmodified controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Fg deposition was reduced in all LIS-catheters, showing ~90% decrease on Dover and ~100% on the Bardex and medical-grade silicone tubing when compared with the corresponding UM controls (Figure 3A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence quantification data shown in Figure 3A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "9e00bfdc-6ce3-43cb-a024-1a6935033303",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C29",
+      "claim": "All tested uropathogens bound in significantly higher densities to unmodified catheters than to LIS-catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding analysis by each of the uropathogens showed that all were able to bind in significantly higher densities to the UM-catheters than to the LIS-catheters (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in vitro binding assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "b77a9b31-8afd-4383-817b-dff0f640bfd3",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C30",
+      "claim": "Mice with LIS-catheters had significantly reduced microbial colonization in the bladder compared with UM-catheterized mice regardless of the infecting uropathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mice with LIS-catheters significantly reduced microbial colonization in the bladder and on catheters when compared with UM-catheterized mice regardless of the infecting uropathogen (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU enumeration data from the mouse CAUTI model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "3990fdf9-5acf-4209-b9df-3ef422c50870",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C31",
+      "claim": "Mice with LIS-catheters had significantly reduced microbial colonization on catheters compared with UM-catheterized mice regardless of the infecting uropathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mice with LIS-catheters significantly reduced microbial colonization in the bladder and on catheters when compared with UM-catheterized mice regardless of the infecting uropathogen (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU enumeration data from the mouse CAUTI model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c1f4e4d0-814e-41ac-8130-17a1fd26eb83",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C32",
+      "claim": "Colonization was significantly lower in LIS-catheterized mouse kidneys for P. aeruginosa, A. baumannii, and E. coli infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, colonization was significantly lower in LIS-catheterized mouse kidneys for P. aeruginosa, A. baumannii, and E. coli infections (Figure 4C, E, G) and LIS-catheterized mice infected with E. coli or C. albicans showed significantly less colonization of the spleen (Figure 4G, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU enumeration data from kidneys shown in Figure 4C, E, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c4a4ac49-6606-4774-b770-5e84292b0651",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C33",
+      "claim": "LIS-catheterized mice infected with E. coli or C. albicans showed significantly less colonization of the spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, colonization was significantly lower in LIS-catheterized mouse kidneys for P. aeruginosa, A. baumannii, and E. coli infections (Figure 4C, E, G) and LIS-catheterized mice infected with E. coli or C. albicans showed significantly less colonization of the spleen (Figure 4G, K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU enumeration data from spleens shown in Figure 4G, K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "69f8e333-c882-474c-98d3-b61bcb1bf787",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C34",
+      "claim": "K. pneumoniae-infected mice with LIS-catheters showed significantly less colonization of the heart.",
+      "claim_type": "EXPLICIT",
+      "source": "K. pneumoniae kidney and spleen colonization difference was not statistically significant, however they showed a trend of less colonization and there was significantly less colonization of the heart (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU enumeration data from hearts shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "526668e6-4509-472a-9631-f3be715ca2b2",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C35",
+      "claim": "The LIS-catheter does not exacerbate bladder inflammation regardless of the presence of infection or not.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, hematoxylin and eosin (H&E) analysis shows the LI-catheter does not exacerbate bladder inflammation regardless of the presence of infection or not (Figure 5A\u2013G), an important factor to account for when developing a new medical device.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by H&E histological analysis shown in Figure 5A\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "18f3dc04-24de-47c2-8433-30ba91a94b29",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C36",
+      "claim": "For some pathogens, the LIS-catheter results in less inflammation than bladders catheterized with an unmodified catheter.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, for some pathogens, the LI-catheter results in less inflammation than bladders catheterized with an UM-catheter (Figure 5B, C, G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by H&E histological analysis shown in Figure 5B, C, G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "2fcbcfcb-2313-4ea6-b619-ecd4f24be069",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C37",
+      "claim": "LIS-catheterized and infected bladders show a reduction of microbial colonization and decreased neutrophil recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we examine Fg presence, uropathogen colonization, and neutrophil recruitment in UM- and LIS-catheterized and infected bladders by IF microscopy. This analysis revealed a reduction of microbial colonization as well as decreased neutrophil recruitment (Figure 5H\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data shown in Figure 5H\u2013M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "6aa3ea34-57ff-4941-8309-986a0f96bb69",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C38",
+      "claim": "Total abundance of protein was significantly reduced in LIS- vs UM-catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "Total abundance of protein was significantly reduced in LIS- vs UM-catheters (Figure 6A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative proteomics data shown in Figure 6A and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "bce95493-2acb-4aaf-8bf0-c9a817b6b711",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C39",
+      "claim": "Abundance of fibrinogen and over 130 other proteins significantly decreased on LIS-catheters compared to UM-catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, abundance of Fg and over 130 other proteins significantly decreased while only three proteins showed a significant increase (UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5) (Figure 6B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative proteomics data shown in Figure 6B and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "10d81b8d-e545-4886-a52f-729941675707",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C40",
+      "claim": "Only three proteins showed a significant increase on LIS-catheters: UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, abundance of Fg and over 130 other proteins significantly decreased while only three proteins showed a significant increase (UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5) (Figure 6B and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative proteomics data shown in Figure 6B and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "d4be57bb-2c8b-4790-ada7-c3d5c494785d",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C41",
+      "claim": "865 proteins were identified at a 1% False Discovery Rate (FDR) in the proteomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "nLC\u2013MS/MS was performed in technical duplicate and label-free-proteomics (LFQ) processed as in Cox and Mann, 865 proteins were identified at a 1% False Discovery Rate (FDR) (Cox and Mann, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mass spectrometry data analysis described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "6db210cc-5b15-4609-95cd-6e007edd363c",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C42",
+      "claim": "Silicone weight increased significantly during the first 3 days of infusion then gradually decreased until a plateau was reached after ~50 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the oil's infusion rate showed a significant increase in silicone weight during the first 3 days of infusion then a gradual decrease in infusion until a plateau was reached after ~50 hr (raw weight in Figure 2G and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by weight measurement data shown in Figure 2G and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "edc6ea85-f20b-4e59-b8d0-d8f31a3f22f2",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C43",
+      "claim": "Full infusion of mouse silicone catheters was achieved by 10 min of infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Full infusion of mouse silicone catheters was achieved by 10 min of infusion (Figure 2H and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by weight measurement data shown in Figure 2H and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c1b63f11-e2b5-408e-80be-9fa510ff95b7",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C44",
+      "claim": "Silicone tube dimensions showed an increase in length by ~41.3%, outer diameter by ~103.1%, and inner diameter by ~27.6% after infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation of silicone tube dimensions showed an increase in length, outer diameter, and inner diameter of ~41.3%, ~ 103.1%, and ~27.6%, respectively (Figure 2\u2014figure supplement 1D) and mouse catheters showed an increase of ~30.7%, ~28.7%, and ~39.8%, respectively (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dimensional measurement data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "502429b8-2e88-48b3-9956-fdb22e91a299",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C45",
+      "claim": "Mouse catheters showed an increase in length by ~30.7%, outer diameter by ~28.7%, and inner diameter by ~39.8% after infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation of silicone tube dimensions showed an increase in length, outer diameter, and inner diameter of ~41.3%, ~ 103.1%, and ~27.6%, respectively (Figure 2\u2014figure supplement 1D) and mouse catheters showed an increase of ~30.7%, ~28.7%, and ~39.8%, respectively (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dimensional measurement data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "4ed8e037-bb79-4c63-a5ac-94594601584e",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C46",
+      "claim": "The mouse model of CAUTI faithfully recapitulates the pathophysiology of human CAUTI.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mouse model of CAUTI has shown to faithfully recapitulate the pathophysiology of human CAUTI, showing urinary catheterization induces inflammation and contribution of Fg to biofilm formation on catheters recovered from humans suffering of CAUTI (Delnay et al., 1999; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b; Glahn et al., 1988; Peychl and Zalud, 2008; Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature comparing mouse and human CAUTI pathophysiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "650c098b-6cd0-4e91-b102-d05f50a74f59",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C47",
+      "claim": "Fibrinogen is highly glycosylated, containing a wide variety of sugar residues including mannose, N-acetyl glucosamine, fucose, galactose, and N\u2010acetylneuraminic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Fg is highly glycosylated, containing a wide variety of sugar residues including mannose, N-acetyl glucosamine, fucose, galactose, and N\u2010acetylneuraminic acid (Adamczyk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Adamczyk et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "784c4c93-7600-4787-bb35-dc47151b8bf2",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C48",
+      "claim": "The glycosylation in fibrinogen may be recognized by CUP pili, allowing pathogens expressing CUP adhesins to become established and colonize the bladder.",
+      "claim_type": "IMPLICIT",
+      "source": "Interestingly, Fg is highly glycosylated, containing a wide variety of sugar residues including mannose, N-acetyl glucosamine, fucose, galactose, and N\u2010acetylneuraminic acid (Adamczyk et al., 2013). Therefore, the glycosylation in Fg may be recognized by CUP pili, allowing pathogens expressing CPU adhesins to become established and colonize the bladder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the glycosylation of fibrinogen and known CUP pili binding specificities.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "6e14caef-98da-4b48-918a-e630267e1850",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C49",
+      "claim": "A. baumannii CUP1 and CUP2 pili are essential for CAUTI.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, A. baumannii CUP1 and CUP2 pili are essential for CAUTI, this together with A. baumannii interactions with Fg in vivo, suggests that these pili may play a role in Fg interaction (Di Venanzio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Di Venanzio et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "717ecd14-e3c5-48c3-863c-6a13b7e09046",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C50",
+      "claim": "A. baumannii CUP1 and CUP2 pili may play a role in fibrinogen interaction.",
+      "claim_type": "IMPLICIT",
+      "source": "Furthermore, A. baumannii CUP1 and CUP2 pili are essential for CAUTI, this together with A. baumannii interactions with Fg in vivo, suggests that these pili may play a role in Fg interaction (Di Venanzio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the essentiality of CUP pili for CAUTI and observed Fg interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "66df9335-129b-4c5a-be6b-5c7dc32ccbda",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C51",
+      "claim": "C. albicans has several adhesins, ALS1, ALS3, and ALS9, which have a conserved peptide-binding cavity shown to bind to fibrinogen \u03b3-chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, C. albicans has several adhesins, ALS1, ALS3, and ALS9, which have a conserved peptide-binding cavity shown to bind to Fg \u03b3-chain (Hoyer and Cota, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Hoyer and Cota, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "6d3a48d5-7062-4575-9ef1-caa6879a762e",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C52",
+      "claim": "In vitro studies do not efficiently mimic the complexities of the in vivo environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that in vitro studies do not efficiently mimic the complexities of the in vivo environment, for example; (1) Growth media: the majority of in vitro studies use laboratory rich or defined culture media, and it has been shown that laboratory media do not recapitulate the catheterized bladder environment that pathogens encounter (Colomer-Winter et al., 2019; Xu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Colomer-Winter et al., 2019; Xu et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "08b380f7-54dd-4425-8a11-bd6ce374aaf3",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C53",
+      "claim": "Laboratory media do not recapitulate the catheterized bladder environment that pathogens encounter.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that in vitro studies do not efficiently mimic the complexities of the in vivo environment, for example; (1) Growth media: the majority of in vitro studies use laboratory rich or defined culture media, and it has been shown that laboratory media do not recapitulate the catheterized bladder environment that pathogens encounter (Colomer-Winter et al., 2019; Xu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Colomer-Winter et al., 2019; Xu et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "fe0146ae-b010-48d7-8022-236340431c44",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C54",
+      "claim": "Urine culture conditions activate different bacterial transcriptional profiles than when cultures are grown in defined media.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, urine culture conditions have shown to activate different bacterial transcriptional profiles than when cultures are grown in defined media (Conover et al., 2016; Xu et al., 2017), which may affect microbial persistence and survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Conover et al., 2016; Xu et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "559ec383-094f-4cb1-8535-0c4f16a7e624",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C55",
+      "claim": "Host-protein deposition on catheters is not uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been observed with Fg deposition on human and mouse catheters, that host-protein deposition is not uniform, which may lead to antimicrobial release or pathogen\u2013antimicrobial agent interaction at a subinhibitory concentrations (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Walker et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "ef450e90-272c-43fe-8566-55103f9f970e",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C56",
+      "claim": "Non-uniform host-protein deposition may lead to antimicrobial release or pathogen-antimicrobial agent interaction at subinhibitory concentrations.",
+      "claim_type": "IMPLICIT",
+      "source": "As has been observed with Fg deposition on human and mouse catheters, that host-protein deposition is not uniform, which may lead to antimicrobial release or pathogen\u2013antimicrobial agent interaction at a subinhibitory concentrations (Di Venanzio et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Walker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from non-uniform protein deposition and its potential effects on antimicrobial efficacy.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "fa739f65-f904-484c-b1a0-0604a2ff35aa",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C57",
+      "claim": "Subinhibitory concentrations of antimicrobials can contribute to the development of multidrug resistance among uropathogens.",
+      "claim_type": "IMPLICIT",
+      "source": "Consequently, these interactions can contribute to the development of multidrug resistance among uropathogens ('Antibiotic resistance threats in the Antibiotic resistance threats in the United States, 2019', 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and supported by a citation to a report on antibiotic resistance threats.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "4e3f2e40-82d8-4971-9fa3-d0103c593001",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C58",
+      "claim": "Antifouling catheter coatings present a better approach to decreasing CAUTI prevalence than using biocidal or biostatic compounds that promote resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the role of deposited host proteins in promoting microbial colonization and presence in human CAUTI (Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b; Walker et al., 2017), antifouling catheter coatings present a better approach to decreasing CAUTI prevalence rather than using biocidal or biostatic compounds, such as antibiotics, that promote resistance (Campoccia et al., 2013; Singha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the role of host proteins and is supported by citations to published literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "0e9e8931-6c92-4ae1-8ebb-8a4d87acdfe4",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C59",
+      "claim": "Antifouling coatings made from polymers have shown resistance to protein deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Antifouling coatings made from polymers have shown resistance to protein deposition He et al., 2016; however, these coatings can become unstable over time and be difficult to produce requiring extensive wet chemistry (Singha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (He et al., 2016; Singha et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "1d8b1d25-df46-4806-a29e-c3da266627ed",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C60",
+      "claim": "Polymer antifouling coatings can become unstable over time and be difficult to produce requiring extensive wet chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Antifouling coatings made from polymers have shown resistance to protein deposition He et al., 2016; however, these coatings can become unstable over time and be difficult to produce requiring extensive wet chemistry (Singha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Singha et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "918d029b-6a80-4e22-8499-6ca959025392",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C61",
+      "claim": "Most reports on the use of purely antifouling coatings to combat CAUTI have shown a successful reduction in bacterial colonization in vitro yet have not been successfully tested in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Most reports on the use of purely antifouling coatings to combat CAUTI have shown a successful reduction in bacterial colonization in vitro yet have not been successfully tested in vivo (Andersen and Flores-Mireles, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Andersen and Flores-Mireles, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c467116d-7519-4393-86a5-afd66e124b47",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C62",
+      "claim": "Many antifouling coatings are optimized to target bacterial adhesion as the first stage of biofilm development.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be partly explained by the fact that many of the antifouling coatings are optimized to target bacterial adhesion, as it is understood that the first stage of biofilm development is bacterial attachment to a surface (Faustino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Faustino et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "a21fdafd-a93a-4621-af5d-36ec44eaaf3f",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C63",
+      "claim": "In the in vivo bladder environment, the first change to the catheter surface is the adhesion of a complex set of host-generated proteins and biological molecules (conditioning film).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a complex environment such as the in vivo bladder, the first change to the catheter surface is the adhesion of a complex set of host-generated proteins and biological molecules, generally referred to as a conditioning film, which can mask the surface (Faustino et al., 2020; Gaston et al., 2020; Scotland et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Faustino et al., 2020; Gaston et al., 2020; Scotland et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "d7ba36de-e1d0-443f-a6e4-2f1ad494b61d",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C64",
+      "claim": "Studies on catheter coatings to-date have rarely focused on the role of host-secreted proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet studies on catheter coatings to-date have rarely focused on the role of the host in infection establishment; namely, the host-secreted proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a review of the literature and represents a gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "3d4b291c-aeba-4698-89d8-95ec6a871b6e",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C65",
+      "claim": "The missing element of host-secreted proteins may partly explain the differing results seen for most antifouling catheter treatments in vitro vs in vivo.",
+      "claim_type": "IMPLICIT",
+      "source": "The data we present here suggest that this missing element may at least partly explain the differing results seen for most antifouling catheter treatments in vitro vs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the study's findings about the importance of host proteins.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "8279bf8b-7a12-46fb-956b-e5e67e809d9f",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C66",
+      "claim": "The use of a liquid surface may convey additional anti-inflammatory benefits.",
+      "claim_type": "EXPLICIT",
+      "source": "This findings are consistent with previous a in vivo work showing reduced fibrous capsule formation in implants coated with a liquid layer, suggesting that the use of a liquid surface may convey additional anti-inflammatory benefits (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from prior work and is supported by a citation (Chen et al., 2017).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "67ce86fd-86a7-4b59-8f19-83fc55ed01cf",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C67",
+      "claim": "The deposition of host-secreted proteins on LIS-catheters was around 6.5-fold less than UM-catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the deposition of other host-secreted proteins on LIS-catheters was around 6.5-fold less then UM-catheters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by proteomic analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "9262fccf-ad7a-41ca-b4a5-f83579941d66",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C68",
+      "claim": "LIS-catheters are a promising new antibiotic-sparing approach for reducing or preventing CAUTIs by interfering with protein deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that catheters made using LIS are a promising new antibiotic sparring approach for reducing or even preventing CAUTIs by interfering with protein deposition (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the cumulative findings of the study and represents the main conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "83152607-7c4b-49a7-bc6e-2d408c6e17e3",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "claim_id": "C69",
+      "claim": "Serum albumin is one of the most abundant proteins on human and mouse urinary catheters.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to Fg, bovine serum albumin (BSA) was tested since serum albumin is one of the most abundant proteins on human and mouse urinary catheters (Molina et al., in preparation; Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from an in-preparation manuscript and supplementary data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ce519fea-a837-466d-ada2-fc78501d782d",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CAUTIs represent a major healthcare burden, accounting for 40% of hospital-acquired infections and leading to bloodstream infections with 30% mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 establish the clinical significance of CAUTIs through citations to published literature. These are well-established epidemiological facts that provide context for the study's importance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "d245b637-1ae6-4532-94e5-78b21b68649b",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Catheterization induces bladder inflammation that releases fibrinogen into the bladder, which E. faecalis exploits as a binding scaffold to establish persistent infection despite antibiotic treatment, and blocking this interaction reduces colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C16-C17 collectively describe established prior knowledge about the role of fibrinogen in E. faecalis CAUTI pathogenesis, supported by multiple citations to published work. This provides the mechanistic foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Multiple uropathogens (E. faecalis, E. coli, P. aeruginosa, K. pneumoniae, A. baumannii, and C. albicans) interact with and preferentially bind to fibrinogen-coated catheters both in vitro and in vivo during CAUTI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C11-C15 are supported by comprehensive in vitro binding assays (Figure 2) and in vivo immunofluorescence data (Figure 1) showing colocalization and enhanced binding to fibrinogen for all tested pathogens. The data demonstrate statistical significance and include appropriate controls (BSA, uncoated surfaces).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "1c2dd85f-8b43-492d-b563-b950a060a450",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Silicone oil infusion into silicone catheters follows predictable kinetics, reaching plateau after ~50 hours for tubes and 10 minutes for mouse catheters, with dimensional changes of 30-103% depending on catheter type and parameter measured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by systematic weight and dimensional measurements (Figure 2G-H, Figure 2\u2014figure supplement 1). The characterization is thorough with n=5 replicates and appropriate controls (Tygon tubes as negative control). However, the substantial dimensional changes (especially 103% outer diameter increase) raise questions about clinical applicability not addressed in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "6e35302b-57f1-4b67-a08a-b56075ccf911",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LIS modification reduces fibrinogen deposition by 90-100% and significantly decreases microbial binding for all tested uropathogens in vitro across multiple catheter types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by immunofluorescence quantification (Figure 3A-C) showing dramatic reduction in both protein deposition and microbial binding. The experiments tested multiple commercial catheter types (Dover, Bardex) and medical-grade silicone, with statistical significance demonstrated. Appropriate controls (unmodified catheters) were included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "8603287f-f636-47d4-b4f7-982a95d4e5bd",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LIS-catheters significantly reduce microbial colonization in bladders, on catheters, and dissemination to kidneys, spleens, and hearts in a mouse CAUTI model across all six tested uropathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C30-C34 are supported by comprehensive in vivo CFU enumeration data (Figure 4) showing statistically significant reductions in colonization across multiple anatomical sites. The study used appropriate sample sizes (n\u226510 per group) and statistical tests (Mann-Whitney U). However, some results show trends without statistical significance (e.g., K. pneumoniae kidney/spleen), which is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "e41cc680-7f9a-4137-bc71-f12cb04843c4",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LIS-catheters do not exacerbate bladder inflammation and in some cases reduce inflammation compared to unmodified catheters, with decreased neutrophil recruitment observed by immunofluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C35-C37 are supported by H&E histological analysis (Figure 5A-G) and immunofluorescence microscopy (Figure 5H-M). The data show that LIS-catheters are biocompatible and may provide anti-inflammatory benefits. However, quantitative inflammation scoring would strengthen these conclusions, as the current assessment appears primarily qualitative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "aa8a0130-0d45-49d6-a079-6309fa7162af",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Proteomic analysis reveals that LIS-catheters reduce total protein deposition by ~6.5-fold, with significant decreases in fibrinogen and over 130 other proteins, while only three proteins showed increased abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C22, C38-C41, C67 are supported by quantitative mass spectrometry data (Figure 6, Supplementary file 2) identifying 865 proteins at 1% FDR. The proteomics was performed with technical duplicates and appropriate statistical analysis. However, the sample size is modest (n=4-5 catheters per group) and biological replicates are not clearly distinguished from technical replicates. The functional significance of the three increased proteins is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "31b7f27f-c9f5-4459-bff7-449b5345a895",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LIS technology is simpler, more stable, and more cost-effective than polymer-based antifouling modifications, has shown efficacy in other medical devices, and reduces fibrinogen deposition and microbial binding both in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 combine literature citations about LIS advantages with experimental data from the current study. The comparative advantages (C18-C19) are supported by citations, while the efficacy claims (C20-C21) are supported by the experimental data described in other result groups. This represents an appropriate synthesis of prior work and current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Current antimicrobial-impregnated catheters show mixed clinical results and may promote resistance, while most antifouling coatings fail in vivo because they target bacterial adhesion rather than the conditioning film of host proteins that forms first in the bladder environment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C52-C65 synthesize literature to explain why previous catheter modifications have failed and position the current work. The arguments are well-supported by citations and logical reasoning. However, some claims (C56-C57, C65) involve speculation about mechanisms that, while plausible, are not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "fbd92a5f-e370-4b28-8aeb-5db5438b6db4",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mouse CAUTI model faithfully recapitulates human CAUTI pathophysiology, including catheter-induced inflammation and fibrinogen contribution to biofilm formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by multiple citations comparing mouse and human CAUTI. This validation of the model is important for translational relevance, though the claim relies on prior published work rather than new data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Fibrinogen is highly glycosylated with various sugar residues that may be recognized by CUP pili and other adhesins expressed by uropathogens, potentially explaining the broad pathogen-fibrinogen interactions observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 about fibrinogen glycosylation is supported by citation, but claims C48 and C50 about CUP pili recognition are explicitly speculative (\"may be recognized,\" \"suggests\"). While C49 and C51 cite specific adhesin-fibrinogen interactions from literature, the mechanistic connection to the current study's observations remains hypothetical and untested. Further experimental validation would be needed to support these proposed mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "0468a85a-bba5-409a-af96-f2da9bf8b003",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The use of liquid surfaces may convey additional anti-inflammatory benefits beyond preventing protein deposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is based on inference from prior work on implant coatings and the inflammation data in this study. While the reduced inflammation observed with LIS-catheters is consistent with this hypothesis, the claim is speculative and the mechanism is not directly tested. The anti-inflammatory effect could be secondary to reduced infection rather than a direct property of the liquid surface.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "c492cf7a-0133-48be-ac10-3ef740cecd5f",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "LIS-catheters represent a promising antibiotic-sparing approach for reducing or preventing CAUTIs by interfering with protein deposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 represents the main conclusion synthesizing all experimental findings. It is well-supported by the comprehensive in vitro and in vivo data showing reduced protein deposition, microbial colonization, and dissemination. However, the term \"preventing\" may be overstated as the study shows reduction rather than complete prevention, and clinical translation remains to be demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    },
+    {
+      "id": "0ee33d70-ff00-4d56-b2d9-2e5607879cbe",
+      "content_id": "1bf7d0db-3948-498e-8826-0fd271d5f71d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Serum albumin is one of the most abundant proteins on human and mouse urinary catheters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by reference to an in-preparation manuscript and supplementary proteomic data from the current study. The proteomic data (Supplementary file 2) provides direct evidence for this claim in the mouse model, though the human catheter data relies on unpublished work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:03:35.697199Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47887331-2b3e-4125-8ca3-0d5b76b47d62",
+      "result_id": "ce519fea-a837-466d-ada2-fc78501d782d"
+    },
+    {
+      "claim_id": "c3c1b456-9fc6-493e-b8e9-cf798c4f6285",
+      "result_id": "ce519fea-a837-466d-ada2-fc78501d782d"
+    },
+    {
+      "claim_id": "1a9da7ce-c55e-4d03-8183-c51fb28b3e39",
+      "result_id": "d245b637-1ae6-4532-94e5-78b21b68649b"
+    },
+    {
+      "claim_id": "33203e72-afef-4832-a1ba-e11daffbc871",
+      "result_id": "d245b637-1ae6-4532-94e5-78b21b68649b"
+    },
+    {
+      "claim_id": "7b80ff7e-7b43-4595-8834-5175daf2e553",
+      "result_id": "d245b637-1ae6-4532-94e5-78b21b68649b"
+    },
+    {
+      "claim_id": "db1e9ad3-37bc-4852-a15b-805d9ea36380",
+      "result_id": "d245b637-1ae6-4532-94e5-78b21b68649b"
+    },
+    {
+      "claim_id": "d25684f9-429d-4c96-bca3-02f6e36da4bb",
+      "result_id": "d245b637-1ae6-4532-94e5-78b21b68649b"
+    },
+    {
+      "claim_id": "ebff03fc-7d66-40f3-b711-1a20d233d2b3",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "bf9b3c5c-8c9f-49f9-b1f7-e6745ae39cb0",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "46e95361-16f5-4589-8847-9c3334b0b15b",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "2de001a7-5756-48c3-8abe-bf6cdb666155",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "4df10b80-aced-4406-87c8-1652090575d7",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "9949e8e8-0ec8-423a-8700-e43f9b494449",
+      "result_id": "8bf7edd2-8f82-4a95-8357-cd9707eaf34e"
+    },
+    {
+      "claim_id": "6db210cc-5b15-4609-95cd-6e007edd363c",
+      "result_id": "1c2dd85f-8b43-492d-b563-b950a060a450"
+    },
+    {
+      "claim_id": "edc6ea85-f20b-4e59-b8d0-d8f31a3f22f2",
+      "result_id": "1c2dd85f-8b43-492d-b563-b950a060a450"
+    },
+    {
+      "claim_id": "c1b63f11-e2b5-408e-80be-9fa510ff95b7",
+      "result_id": "1c2dd85f-8b43-492d-b563-b950a060a450"
+    },
+    {
+      "claim_id": "502429b8-2e88-48b3-9956-fdb22e91a299",
+      "result_id": "1c2dd85f-8b43-492d-b563-b950a060a450"
+    },
+    {
+      "claim_id": "b645926b-1a94-47d9-8b74-4db61f1545de",
+      "result_id": "6e35302b-57f1-4b67-a08a-b56075ccf911"
+    },
+    {
+      "claim_id": "e6da9828-fc7a-4cfa-8622-77a51593b2df",
+      "result_id": "6e35302b-57f1-4b67-a08a-b56075ccf911"
+    },
+    {
+      "claim_id": "3aa4e960-118e-4e46-bf59-0e867382750f",
+      "result_id": "6e35302b-57f1-4b67-a08a-b56075ccf911"
+    },
+    {
+      "claim_id": "9e00bfdc-6ce3-43cb-a024-1a6935033303",
+      "result_id": "6e35302b-57f1-4b67-a08a-b56075ccf911"
+    },
+    {
+      "claim_id": "8f136f1a-7f0b-49a6-b773-0ffd9c78ffb8",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "9ef43de6-0d14-4e69-aad7-68338c5ccb6c",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "22a25eb8-cf9a-4094-85c4-504dc9c3f4a9",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "b77a9b31-8afd-4383-817b-dff0f640bfd3",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "3990fdf9-5acf-4209-b9df-3ef422c50870",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "c1f4e4d0-814e-41ac-8130-17a1fd26eb83",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "c4a4ac49-6606-4774-b770-5e84292b0651",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "69f8e333-c882-474c-98d3-b61bcb1bf787",
+      "result_id": "8603287f-f636-47d4-b4f7-982a95d4e5bd"
+    },
+    {
+      "claim_id": "e975ca96-ff00-42a2-b4f9-18830522b582",
+      "result_id": "e41cc680-7f9a-4137-bc71-f12cb04843c4"
+    },
+    {
+      "claim_id": "526668e6-4509-472a-9631-f3be715ca2b2",
+      "result_id": "e41cc680-7f9a-4137-bc71-f12cb04843c4"
+    },
+    {
+      "claim_id": "18f3dc04-24de-47c2-8433-30ba91a94b29",
+      "result_id": "e41cc680-7f9a-4137-bc71-f12cb04843c4"
+    },
+    {
+      "claim_id": "2fcbcfcb-2313-4ea6-b619-ecd4f24be069",
+      "result_id": "e41cc680-7f9a-4137-bc71-f12cb04843c4"
+    },
+    {
+      "claim_id": "073e4464-1fbd-4b8f-b00e-b9733a405ef8",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "53bfe6f9-632f-4d0c-9dc0-886cf72e732b",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "6aa3ea34-57ff-4941-8309-986a0f96bb69",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "bce95493-2acb-4aaf-8bf0-c9a817b6b711",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "10d81b8d-e545-4886-a52f-729941675707",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "d4be57bb-2c8b-4790-ada7-c3d5c494785d",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "67ce86fd-86a7-4b59-8f19-83fc55ed01cf",
+      "result_id": "aa8a0130-0d45-49d6-a079-6309fa7162af"
+    },
+    {
+      "claim_id": "45b8d60a-a052-429a-85ea-8a93d064b182",
+      "result_id": "31b7f27f-c9f5-4459-bff7-449b5345a895"
+    },
+    {
+      "claim_id": "d090ce4d-3d80-4714-9c29-170cd5eb8b01",
+      "result_id": "31b7f27f-c9f5-4459-bff7-449b5345a895"
+    },
+    {
+      "claim_id": "e9f3b248-5840-4a04-8fb8-22e0f4015770",
+      "result_id": "31b7f27f-c9f5-4459-bff7-449b5345a895"
+    },
+    {
+      "claim_id": "9d902f7a-5ffc-472d-8739-01359a47603a",
+      "result_id": "31b7f27f-c9f5-4459-bff7-449b5345a895"
+    },
+    {
+      "claim_id": "4ea31617-97a8-40cf-ac66-18300b301fd2",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "1741c09c-3145-4af3-a0d4-36727e6f8ec9",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "6d3a48d5-7062-4575-9ef1-caa6879a762e",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "08b380f7-54dd-4425-8a11-bd6ce374aaf3",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "fe0146ae-b010-48d7-8022-236340431c44",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "559ec383-094f-4cb1-8535-0c4f16a7e624",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "ef450e90-272c-43fe-8566-55103f9f970e",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "fa739f65-f904-484c-b1a0-0604a2ff35aa",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "4e3f2e40-82d8-4971-9fa3-d0103c593001",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "0e9e8931-6c92-4ae1-8ebb-8a4d87acdfe4",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "1d8b1d25-df46-4806-a29e-c3da266627ed",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "918d029b-6a80-4e22-8499-6ca959025392",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "c467116d-7519-4393-86a5-afd66e124b47",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "a21fdafd-a93a-4621-af5d-36ec44eaaf3f",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "d7ba36de-e1d0-443f-a6e4-2f1ad494b61d",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "3d4b291c-aeba-4698-89d8-95ec6a871b6e",
+      "result_id": "799ca16a-5bf3-43e9-b6d9-ce8fc610fede"
+    },
+    {
+      "claim_id": "4ed8e037-bb79-4c63-a5ac-94594601584e",
+      "result_id": "fbd92a5f-e370-4b28-8aeb-5db5438b6db4"
+    },
+    {
+      "claim_id": "650c098b-6cd0-4e91-b102-d05f50a74f59",
+      "result_id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482"
+    },
+    {
+      "claim_id": "784c4c93-7600-4787-bb35-dc47151b8bf2",
+      "result_id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482"
+    },
+    {
+      "claim_id": "6e14caef-98da-4b48-918a-e630267e1850",
+      "result_id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482"
+    },
+    {
+      "claim_id": "717ecd14-e3c5-48c3-863c-6a13b7e09046",
+      "result_id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482"
+    },
+    {
+      "claim_id": "66df9335-129b-4c5a-be6b-5c7dc32ccbda",
+      "result_id": "cf1cea13-2d26-4f8e-ad8b-3491a95b3482"
+    },
+    {
+      "claim_id": "8279bf8b-7a12-46fb-956b-e5e67e809d9f",
+      "result_id": "0468a85a-bba5-409a-af96-f2da9bf8b003"
+    },
+    {
+      "claim_id": "9262fccf-ad7a-41ca-b4a5-f83579941d66",
+      "result_id": "c492cf7a-0133-48be-ac10-3ef740cecd5f"
+    },
+    {
+      "claim_id": "83152607-7c4b-49a7-bc6e-2d408c6e17e3",
+      "result_id": "0ee33d70-ff00-4d56-b2d9-2e5607879cbe"
+    }
+  ],
+  "comparisons": []
+}

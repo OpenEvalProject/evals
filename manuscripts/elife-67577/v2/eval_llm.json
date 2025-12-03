@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study assembled 73 D. melanogaster samples from 23 localities across North America and Europe, with 15 localities sampled in spring and fall over 1-6 years. Pooled sequencing identified ~1.75M SNPs, filtered to ~775,000 common polymorphisms. The Core20 dataset consists of 20 paired spring/fall samples from 15 localities, and a Clinal dataset includes 4 East Coast populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C56-C57, C62-C64 provide comprehensive methodological details that are internally consistent and well-documented. The sample sizes (average 75 flies per pool, 94\u00d7 coverage) are appropriate for pooled sequencing approaches. The filtering strategy is clearly described and justified, though the second filtering step that requires polymorphism in all populations introduces ascertainment bias toward higher frequency variants (acknowledged in Figure 1\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C78"
+    ],
+    "result": "Principal component analysis reveals that samples cluster by locality and geography rather than season. PC2 separates eastern North American samples by latitude (p=3\u00d710\u207b\u00b9\u2075, R\u00b2=0.84), while no PC associates with season after multiple testing correction. This spatial structure persists year after year, indicating stable population structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C78 are well-supported by Figure 1C and statistical tests. The strong latitudinal signal (R\u00b2=0.84) and absence of seasonal clustering in PCA is important context for subsequent analyses. However, the lack of seasonal signal in PCA doesn't preclude seasonal adaptation at individual loci\u2014it indicates that spatial differentiation dominates genome-wide patterns. The multiple testing correction for seasonal association is appropriate but the specific method is not described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "D. simulans contamination was minimal (<1% on average) and did not differ between spring and fall samples (t-test p=0.90). Competitive mapping accurately estimates contamination rates (Pearson's r=0.9999, p=1.6\u00d710\u207b\u00b2\u2074) but underestimates by ~2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 demonstrate appropriate quality control for species contamination. The in silico validation (C60-C61) strengthens confidence in the competitive mapping approach. The lack of seasonal bias in contamination (C59) is important for ruling out this technical artifact as a driver of seasonal signals. The systematic 2% underestimation is minor and unlikely to affect conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C82"
+    ],
+    "result": "Three independent statistical methods (GLM, Bayenv, and RFM) detect excess seasonal SNPs compared to permutations. At the top 1% threshold, observed data exceed 96.8% of permutations (GLM), 94% (Bayenv), and 98% (RFM). The GLM and Bayenv analyses show 20% overlap at top 1%, versus 1% expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C82 provide strong convergent evidence for seasonal signals using three distinct statistical frameworks. The permutation approach appropriately controls for population structure and sampling variance. The 20-fold enrichment in overlap between methods (C82) indicates robust signal. However, the manuscript acknowledges that the corrected binomial variance (Nc) may be anticonservative, potentially inflating significance. The RFM method was specifically designed to address this concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Top seasonal SNPs show 4-8% frequency shifts between seasons, corresponding to effective selection coefficients of ~10-30% per season (~1-3% per generation). These estimates likely underestimate true selection at causal sites because partially linked loci show smaller fluctuations. Seasonal SNPs show slight enrichment with those identified by Bergland et al. 2014 (log2 OR=0.59\u00b10.37, pperm=0.0512).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C65-C67 present effect size estimates with appropriate caveats. The 4-8% frequency shifts (C11) are substantial and the selection coefficient calculations (C12) are reasonable given stated assumptions (10 generations/season). The acknowledgment that these are underestimates due to linkage (C65-C66) is scientifically sound. The marginal enrichment with Bergland et al. 2014 (C10, pperm=0.0512) provides weak validation but the p-value is not significant at conventional thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Seasonal SNP enrichment varies significantly across chromosomes (ANOVA p<10\u207b\u00b9\u2075). Chromosomes 2L and 3R show greatest enrichment (30% and 18%, pperm=0.06 and 0.08), while 2R and 3L show minimal enrichment (-2% and 4%, pperm=0.54 and 0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 demonstrate chromosome-specific patterns with appropriate statistical testing. The ANOVA (C15) provides strong evidence for heterogeneity. However, none of the individual chromosome enrichments reach conventional significance thresholds (all pperm>0.05), though 2L and 3R are nominally enriched. This suggests the signal is real but modest at the chromosome level, with stronger effects localized to specific regions (inversions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C41"
+    ],
+    "result": "Regions near inversion breakpoints on 2L (In(2L)t: 85% enrichment, pperm=0.03) and 3L (In(3L)Payne: 30%, pperm=0.01) and within inversions on 3R (In(3R)Mo/K/Payne: 26%, pperm=0.05) show strong seasonal enrichment. No enrichment was found for In(2R)NS. Outside inversions, seasonal signal is weaker (2.5% enrichment, pperm=0.31), indicating inversions are important but not sole drivers of seasonal adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C41 demonstrate inversion-associated seasonal signals with appropriate statistical support. The enrichments near 2L and 3L breakpoints reach significance (pperm<0.05), while 3R inversions are marginally significant. The lack of In(2R)NS enrichment (C19) contrasts with Kapun et al. 2016, which could reflect methodological differences or population-specific effects. The weak but positive signal outside inversions (C20) is important for establishing that seasonal adaptation is not solely inversion-driven, though this result is not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C81"
+    ],
+    "result": "Seasonal and latitudinal allele frequency changes show significant parallelism. Among top 1% SNPs in both analyses, 74% show parallel change across all populations, 70% in California, and 63% in Europe (all exceeding matched controls). Parallelism is highest near inversion breakpoints (81%, CI95: 77-84%) and inside inversions (70%, CI95: 67-73%), but also significant outside inversions (57%, CI95: 53-62%), indicating inversions are not the sole drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 and C81 provide strong evidence for parallel seasonal and spatial adaptation using matched control comparisons. The concordance rates substantially exceed 50% expectation and matched controls across all genomic regions and geographic comparisons. The confidence intervals (C24-C28) are appropriately calculated. The geographic replication (California and Europe vs. East Coast) strengthens causal inference by reducing confounding from shared migration. The significant parallelism outside inversions (C28: 57%, CI95: 53-62%) is particularly important for establishing genome-wide seasonal adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Leave-one-out analysis reveals that most populations (16/20) show positive predictability scores, with concordance reaching 60-70% at stringent thresholds (top 0.1%). However, four populations (Benton Harbor MI 2014, Lancaster MA 2012, Topeka KS 2014, Esparto CA 2012) show negative predictability scores, indicating reversed seasonal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe population-level heterogeneity in seasonal patterns using a novel predictability metric. The majority showing positive scores (C29-C30) supports generality of seasonal adaptation, while the four outliers (C31) are intriguing exceptions that motivate subsequent environmental analyses. The leave-one-out approach is appropriate for assessing generalizability. However, the predictability score methodology is complex and could benefit from more detailed validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43"
+    ],
+    "result": "Variation in predictability scores is not explained by technical factors (collection method, substrate, D. simulans contamination) or simple geography (latitude, longitude). Instead, the best-fit thermal limit model explains 82.2% of variance and beats >99.5% of permutations (FDR=17%). This model identifies critical thermal thresholds: >~32\u00b0C maximum in spring and <~5\u00b0C minimum in fall during the 2 weeks prior to sampling, corresponding to known thermal limits for flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C38 and C43 present an innovative environmental model linking temperature extremes to seasonal predictability. The high R\u00b2 (82.2%, C35) and permutation test (C36) are impressive, but the 17% FDR indicates moderate uncertainty. The thermal thresholds (~32\u00b0C and ~5\u00b0C, C37-C38) are biologically plausible and match literature values. However, several concerns arise: (1) only 15/20 populations had weather data, reducing power; (2) the model tests many temperature variables, raising multiple testing concerns despite permutation controls; (3) the 2-week window is post-hoc; (4) correlation doesn't establish causation\u2014temperature may covary with other selective factors. The model is compelling but requires independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C79",
+      "C80"
+    ],
+    "result": "Seasonal adaptation is a general phenomenon across temperate D. melanogaster populations in North America and Europe, driven by a consistent set of loci. This cannot result from wholesale population replacement via migration because spatial structure persists year-to-year. Environmental selective pressures must shift seasonally within locations and vary spatially across latitudes. Some populations may have experienced atypical seasonal selection prior to sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C42 represent major conclusions well-supported by the parallel seasonal signals across continents and the persistent spatial structure. The inference that migration doesn't drive seasonal patterns (C42) is logical given stable population structure (Figure 1C) and cited clinal persistence. Claims C79-C80 provide reasonable interpretations of the parallelism and predictability results, though C80 is explicitly presented as a hypothesis. The conclusions appropriately acknowledge limitations in identifying specific causal loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C53"
+    ],
+    "result": "The observation of seasonal adaptation at common SNPs suggests these polymorphisms are maintained by balancing selection. This is consistent with recent theoretical work (Wittmann et al. 2017) showing seasonally varying selection can maintain variation if dominance shifts between seasons, and with evidence that mutation-selection balance cannot explain observed quantitative genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C53 present a reasonable evolutionary interpretation supported by appropriate theoretical citations. The maintenance of common polymorphisms despite strong seasonal selection (C69) does suggest balancing selection. The connection to Wittmann et al. 2017 model (C53) and broader population genetic theory (C70) is appropriate. However, alternative explanations (e.g., polygenic adaptation with redundancy, soft sweeps, migration-selection balance) are not fully explored. The inference is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Seasonal selection forces could rival genetic draft from selective sweeps and exceed genetic drift in large populations. Natural selection may be heterogeneous within growing seasons rather than consistently directional. Evolution and ecology operate on similar timescales in this system, and evolutionary adaptation cannot be ignored in demographic/ecological studies even on short timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C71-C73 present broad evolutionary implications with appropriate citations. The comparison to drift and draft (C68) is reasonable given the strong selection coefficients (10-30% per season). The suggestion of within-season heterogeneity (C71) is supported by the thermal limit model showing sub-seasonal selection. The eco-evolutionary dynamics conclusions (C72-C73) are well-supported by the rapid timescales observed. These represent important conceptual advances in understanding rapid evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Detected seasonal SNPs are likely linked to causal variants rather than causal themselves. Power to detect parallel evolution should be stronger in low-recombination regions. Fine-mapping causal variants will require broader sampling, and future work should obtain genomic data capable of identifying structural variation including inversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide appropriate caveats and future directions. The acknowledgment that detected SNPs are likely linked rather than causal (C74) is scientifically sound. The expectation of stronger signal in low-recombination regions (C75) is theoretically justified. The recommendations for future work (C76-C77) are reasonable and acknowledge current limitations. These represent honest assessment of what can and cannot be concluded from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "Prior work has established seasonal phenotypic variation in D. melanogaster (stress tolerance, dormancy, immunity, cuticular hydrocarbons) and genetic variation (genome-wide and candidate gene approaches). Historical studies documented seasonal inversion frequency changes in Drosophila. Classical theory predicted plastic genotypes would dominate in fluctuating environments and seasonally favored alleles would be lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 and C54-C55 accurately summarize prior literature with appropriate citations. These provide essential context for the current study. The citations appear accurate and the characterizations of prior work are fair. This background establishes that seasonal adaptation in Drosophila has historical precedent but required genome-wide confirmation across populations, which the current study provides.",
+    "result_type": "MINOR"
+  }
+]

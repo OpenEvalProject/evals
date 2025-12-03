@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C32",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C209",
+      "C225"
+    ],
+    "result": "The model consists of a modular, spiking neural network with a microcolumn-based architecture where each module contains Timer and Messenger excitatory cell populations plus inhibitory cells. Timer cells learn strong recurrent connections to represent stimulus duration, while Messenger cells fire at the end of Timer activity to signal transitions between sequence elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C38-C47, C63-C66 describe the core architecture and are directly demonstrated in Figures 2a and 3a. The emergence of Timer and Messenger cell types with appropriate temporal profiles is shown in Figure 2a, and the modular columnar organization is illustrated in Figure 3a. The mathematical formulations in the Materials and methods section provide the mechanistic basis for these dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C230",
+      "C231",
+      "C232",
+      "C254",
+      "C255"
+    ],
+    "result": "Learning is performed via a biophysically realistic two-trace eligibility learning rule (TTL) where LTP and LTD traces are activated by Hebbian activity at different rates and converted to synaptic weight changes upon neuromodulator release triggered by stimulus transitions. This rule solves the temporal credit assignment problem and reaches fixed points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 describe the TTL rule, which is mathematically defined in Equations 8-18 and demonstrated to reach fixed points in Figure 3\u2014figure supplement 2c and Figure 4\u2014figure supplements 1-2. The biological plausibility is supported by citations to experimental evidence for eligibility traces (C54, C55). The rule's ability to solve temporal credit assignment is demonstrated through successful sequence learning in Figures 3-5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C28",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Before training, the network contains no memory of sequences and only produces transient responses to individual stimuli. After training on a sequence (e.g., 500, 1000, 700, 1800 ms elements), presentation of only the first element triggers recall of the entire learned sequence without temporal compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C75-C78, C86-C97 describe the learning and recall process demonstrated in Figure 3b-e and Figure 4a-c. Before learning (Figure 3b, 4a), only transient responses occur. During learning (Figure 3c-d, 4b), weights evolve toward fixed points as shown in Figure 3\u2014figure supplement 2c. After learning (Figure 3e, 4c), the first stimulus triggers complete sequence recall with correct timing, demonstrating no compression (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C34",
+      "C35",
+      "C69",
+      "C70",
+      "C98",
+      "C99",
+      "C100",
+      "C207",
+      "C237"
+    ],
+    "result": "The model's chain-like modular structure enables learning of sequence order via feed-forward connections between Messenger and Timer cells across modules, while recurrent connections within Timer populations enable learning of element duration. Both reach mathematically defined fixed points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C34-C35, C69-C70, C98-C100 describe the dual learning mechanism. Figure 4 demonstrates how feed-forward connections learn order while recurrent connections learn duration. The fixed points are mathematically derived in Equations 17-18 and empirically demonstrated in Figure 4\u2014figure supplements 1-2. This separation of order and duration learning is a key architectural feature enabling the model's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C107",
+      "C177"
+    ],
+    "result": "The network can learn sequences with individual elements ranging from ~300 to ~1800 ms in duration, with recalled times generally matching input times to within 10%. The model can learn sequences of up to at least eight elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C107, C177 specify the model's operational range. Figure 3\u2014figure supplement 2 demonstrates the 10% accuracy claim. Figure 3\u2014figure supplement 5 shows successful learning of an 8-element sequence. The duration range (300-1800 ms) is stated to agree with experimental observations in V1 (citations to Gavornik and Bear, 2014; Shuler and Bear, 2006), providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C116"
+    ],
+    "result": "The model exhibits robustness to parameter variations, successfully recalling learned sequences when fixed CNA connections are modified by \u00b120%, when learning parameters are randomly varied, and when excitatory time constants are reduced from 80 to 20 ms (though shorter time constants limit learnable durations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112, C116 describe robustness properties demonstrated in Figure 5 and Figure 5\u2014figure supplements 1-2. Figure 5 shows successful recall with \u00b120% variations in fixed connections. Figure 5\u2014figure supplement 1 demonstrates preserved mean reported times with randomized learning parameters. Figure 5\u2014figure supplement 2 shows the network functions with 20 ms time constants for 500 ms elements but fails for 1000 ms elements, supporting the limitation claim in C116.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C152",
+      "C153",
+      "C154",
+      "C178"
+    ],
+    "result": "An extended three-stage model incorporating a fixed recurrent reservoir network and a sparse pattern network can learn and recall non-Markovian sequences with repeated elements (e.g., BGBRBO) where transitions depend on history, not just the current state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C124, C127-C132, C134-C139, C152-C154, C178 describe the extended model architecture and its capabilities. Figure 6 illustrates the three-stage architecture. Figure 7 demonstrates successful learning and recall of the non-Markovian sequence BGBRBO, where blue transitions to three different elements depending on history. The necessity of all three components (modular network, reservoir, sparse network) is argued in C153-C154 based on their interdependent functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The three-stage model can simultaneously learn two sequences with a shared element (BRO and GRP) and correctly recall each sequence based on the initial stimulus, making appropriate history-dependent transitions from the shared element (red). Recall is robust to perturbations in the reservoir's initial state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 describe simultaneous learning of multiple non-Markovian sequences. Figure 8a-b demonstrates that stimulation with blue correctly recalls BRO while stimulation with green correctly recalls GRP, with red transitioning appropriately in each case. Figure 8\u2014figure supplement 1 demonstrates robustness to reservoir perturbations. This shows the model can handle multiple overlapping sequences, a more complex non-Markovian scenario.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C81"
+    ],
+    "result": "Using the TTL rule and CNA architecture, the network naturally generates Timer cells that learn to be active for stimulus duration and Messenger cells that activate toward the end of stimulus duration. These results are consistent with experimental observations in V1 circuits and replicate previous modeling results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C81 describe the emergence of cell types and comparison to experimental data. Figure 2a demonstrates the emergence of Timer and Messenger cells with appropriate temporal profiles. Figure 2b shows schematic experimental data from V1 for comparison. The consistency with experimental observations (C61) is supported by citations to Shuler and Bear, 2006; Liu et al., 2015; Chubykin et al., 2013. Replication of previous results (C62) is supported by citations to Huertas et al., 2015 and Gavornik et al., 2009.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C204",
+      "C206",
+      "C208",
+      "C259"
+    ],
+    "result": "The model's ability to internally learn and recall both duration and order using local, biophysically realistic learning rules differs from most historical and contemporary sequence learning models (chain models and RNNs). The modular architecture with heterogeneous cell types implicitly performs credit assignment by decomposing the complex task into simpler subtasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C33, C179-C182, C204, C206, C208, C259 compare the model to existing approaches. The comparison to chain models (C12-C15, C30-C31) and RNNs (C16-C20) is supported by citations and logical arguments about their limitations. The novelty claim (C180) is supported by comparison to cited prior work showing they either lack biological realism, don't learn both duration and order, or are highly parameter-sensitive (C181-C182). The credit assignment argument (C206) is a theoretical interpretation of how the architecture enables local learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "The network shows realistic spiking statistics with interspike interval coefficients of variation near 1. Temporal accuracy of recall depends on multiple factors due to network stochasticity, with effects washing out over many trials. The model shows no intrinsic bias toward over- or under-predicting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C104-C106, C108 describe statistical properties of the spiking network. Figure 3\u2014figure supplement 4 demonstrates ISI coefficients of variation of 1.01 for Timers and 0.75 for Messengers, supporting C80. The discussion of stochastic effects (C104-C106) is supported by the variability shown in Figure 3\u2014figure supplement 2a-b. The lack of systematic bias (C108) is an empirical observation from the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Similar results are obtained with a low-dimensional rate-based model where each population is represented by a single dynamical variable. The rate-based approximation produces results similar to the full spiking model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C161-C164 describe the rate-based approximation. Figure 3\u2014figure supplement 6 directly demonstrates that the rate-based model produces similar results to the spiking model for the Markovian case. This is used to justify the use of rate-based models for the computationally expensive non-Markovian simulations (C161, C163). The similarity provides evidence that the key results are not artifacts of spiking dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "The model makes several testable predictions: (1) Timer and Messenger cell types will be present during visual sequence learning in V1, (2) distinct populations will be sensitive to distinct stimuli, (3) Messenger cells will more strongly connect to subsequent Timer cells after learning, (4) learning long/short sequences will increase/decrease Timer lateral connections, and (5) inhibitory cells will have Timer-like but faster-decaying profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C203 describe experimental predictions. These are logical consequences of the model architecture and learning dynamics. C197-C199 cite experimental support (Gavornik and Bear, 2014) showing Timer-like responses in layer V and Messenger-like responses in layer II/III, which is consistent with the model's predictions. The other predictions (C200-C203) follow from the model's learning rules and architecture as demonstrated in Figures 2-4, though they await experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C21",
+      "C22",
+      "C37",
+      "C43",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C113",
+      "C114",
+      "C115",
+      "C191",
+      "C193",
+      "C222",
+      "C223",
+      "C227",
+      "C228",
+      "C229"
+    ],
+    "result": "The model's construction is based on experimental observations in visual cortex, including observed cell types, laminar structure, and eligibility traces. Various model components and parameter choices are supported by experimental evidence and prior theoretical work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C21-C22, C37, C43, C48, C53-C55, C113-C115, C191, C193, C222-C223, C227-C229 cite experimental and theoretical support for model components. These claims are supported by extensive citations to experimental studies (e.g., Gavornik and Bear, 2014; Shuler and Bear, 2006; Liu et al., 2015; He et al., 2015; Yagishita et al., 2014) and prior modeling work (e.g., Huertas et al., 2015; Gavornik and Shouval, 2011). The citations provide external validation for the biological plausibility of model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The non-Markovian model has limitations: repeated elements have the same duration due to single attractor per population (C140), sparse patterns show some overlap causing slight activation of incorrect transitions (C148-C150), and parameters were empirically chosen rather than optimized (C151). The implementation uses rate-based dynamics for computational efficiency, though spiking implementations are likely feasible (C165-C168).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141, C148-C151, C165-C169 acknowledge limitations and implementation choices. C140 correctly identifies that the TTL rule supports only one attractor per population, explaining why repeated elements (blue in BGBRBO) have the same duration in Figure 7d. C148 notes the slight activation of incorrect transitions visible in Figure 8, which is explained by incomplete separation of sparse patterns (C149-C150). The use of rate-based dynamics (C161, C165) is justified by computational efficiency, with speculation about spiking implementations (C166-C168).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In simulations, the network has learned sequences of up to eight elements. The upper limit has not been fully explored due to computational time. Sequences of four elements were chosen to match experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 describe practical limitations and design choices. C82 is demonstrated in Figure 3\u2014figure supplement 5. C83 honestly acknowledges that the upper limit is unknown due to computational constraints. C84 explains the choice of four-element sequences with citation to experimental work (Gavornik and Bear, 2014), showing the model was designed to match experimental paradigms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C256",
+      "C257",
+      "C258"
+    ],
+    "result": "While the results shown use the two-trace learning (TTL) rule, the network can also be trained with a single-trace learning rule with similar results. TTL was chosen for biological realism, but the novel capabilities primarily result from the network architecture combined with a history-dependent learning rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118, C256-C258 discuss alternative learning rules. C118 and C256 state that single-trace rules can replicate results, supported by citations to Gavornik et al., 2009 and Gavornik and Shouval, 2011. C257 speculates that any rule solving temporal credit assignment would work. C258-C259 correctly attribute the model's capabilities primarily to architecture rather than the specific learning rule, which is consistent with the emphasis on modular structure throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C29",
+      "C30",
+      "C31",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C173",
+      "C174",
+      "C205"
+    ],
+    "result": "Multiple brain regions can learn temporal sequences (C1). Chain models can encode order but not duration (C12-C15, C29-C31), while RNNs can encode both but use biologically unrealistic learning rules (C16-C20). Markovian models cannot handle sequences with repeated elements followed by different elements (C119-C121). Non-Markovian sequence learning is behaviorally ubiquitous (C122-C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C20, C29-C31, C119-C123, C173-C174, C205 provide background knowledge and motivation. These are general statements about the field supported by citations to relevant literature. C1 is supported by citations to experimental studies (Gavornik and Bear, 2014; Xu et al., 2012; etc.). The characterizations of chain models (C12-C15) and RNNs (C16-C20) are supported by citations and represent established knowledge. The Markovian limitation (C119-C121) is a formal property. The ubiquity of non-Markovian learning (C122-C123) is supported by citation to Cohen et al., 2020.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C224"
+    ],
+    "result": "The model includes soft winner-take-all (WTA) inhibition between columns to prevent spurious excitation in the noisy spiking network. This can be implemented as long-range excitatory connections to local inhibition. Timer cells learn only within-column connections, while Messenger cells learn only to Timer cells outside their column.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C217-C221, C224 describe architectural constraints. The WTA inhibition (C67, C217) is described as necessary for the spiking network (C219) and is illustrated in Figures 9a-b showing two equivalent implementations (C218). The learning restrictions (C220-C221) are design choices justified by simplifying computation while maintaining functionality (C224). These restrictions are supported by citation to previous work showing all connections are learnable (C222).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "In the three-stage model, the reservoir receives input from the modular network, not the environment. If the modular network doesn't learn, reservoir inputs won't be generated appropriately. During learning, the entire sequence is presented, but for recall, only the first element is needed. This differs from typical reservoir computing where input changes would change output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160, C185-C189 explain the interdependence of model components and differences from standard reservoir computing. C155-C156 correctly note that the reservoir depends on the modular network's learned representations. C157-C158 describe the training/recall protocol demonstrated in Figures 7-8. C159-C160 correctly distinguish this from typical reservoir computing. C186 emphasizes the modular network's crucial role. C188 describes the disambiguation requirement for recall. These are logical inferences about the model's operation supported by the architecture and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C175"
+    ],
+    "result": "The viability of the three-stage architecture demonstrates that the columnar network can be used as a building block in more complicated tasks and that even complex tasks like non-Markovian sequence learning don't require non-local learning rules. The model combines highly recurrent networks in a larger architecture to maintain local learning rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172, C175 draw conclusions about the three-stage model's implications. C170-C171 are supported by the successful demonstration of non-Markovian learning in Figures 7-8 using only local learning rules. C172 speculates about alternative architectures, which is reasonable given the conceptual nature of the demonstration. C175 summarizes the model's approach of combining recurrent networks with architectural constraints, which is demonstrated throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C183",
+      "C184"
+    ],
+    "result": "Another recently proposed model based on a periodic timing network uses biologically plausible learning rules for non-Markovian sequences but cannot learn arbitrarily long self-terminating sequences or learn and separately replay multiple sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-C184 compare to another model (Maes et al., 2020). C183 is supported by citation. C184 claims limitations of that model based on comparison to Figures 7-8, but this comparison may not be entirely fair without detailed analysis of that model's capabilities. The claim that it \"cannot\" do these things is strong and would require more thorough comparison. However, the authors' model does demonstrate these capabilities, so the comparison serves to highlight their model's strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C190",
+      "C192",
+      "C196"
+    ],
+    "result": "The reservoir and sparse network components could arise from projections from other cortical or subcortical areas, or could be part of the same cortical network with functional segregation. The functional modularity could be physically compartmentalized in columns and layers, though this is not strictly required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C190, C192, C196 speculate about biological implementation. These are reasonable speculations given the model's functional properties, but they are explicitly presented as possibilities rather than predictions. C191 cites functionally similar networks in dentate gyrus and cerebellum, providing some support, but the specific mapping of model components to brain regions remains speculative. These claims appropriately acknowledge uncertainty about biological implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Ideally, the network should be able to learn sequences which are in themselves non-Markovian (ABACAD) as well as simultaneous combinations of sequences which are non-Markovian when learned together (ACE and BCD). For the network to learn and recall non-Markovian sequences, it must keep track of its history and use this history to inform transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 describe goals and requirements for non-Markovian learning. C125 states what the network \"should\" be able to do, presenting ABACAD as an example. However, the demonstrated results (Figures 7-8) show BGBRBO and BRO/GRP, not ABACAD. While the model handles non-Markovian sequences, the specific capability for ABACAD-type sequences is not demonstrated. C126 correctly identifies the logical requirement for history-dependence, which is addressed by the reservoir and sparse network.",
+    "result_type": "MINOR"
+  }
+]

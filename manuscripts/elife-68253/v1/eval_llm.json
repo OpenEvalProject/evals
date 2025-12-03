@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "A systematic screen of 75 nanobodies from the PDB revealed that 42 out of 75 (56%) exhibited intracellular instability characterized by aggregation and/or degradation, while 33 out of 75 (44%) were stable and soluble when expressed as fluorescent protein fusions in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 provide clear experimental evidence from live-cell imaging in both 293T and HeLa cells. The quantitative results are well-documented with representative images (Figure 1A), and the classification into stable vs. unstable groups is based on observable phenotypes (diffuse signal vs. aggregation/low signal). The methodology is straightforward and the results are replicated across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "All 17 nanobodies containing a CDR3 cysteine that normally forms a disulfide bond were classified as intracellularly unstable, suggesting that the inability to form disulfide bonds in the reducing cytoplasmic environment represents a structural liability for intracellular expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 establish a perfect correlation between the presence of CDR3 cysteines (which form disulfide bonds extracellularly) and instability. The 17/17 association is striking and the mechanistic explanation based on the reducing cytoplasmic environment (C15) is well-established knowledge. Figure 2 supports this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Statistical analysis identified 12 framework positions with residues significantly enriched in either stable or unstable groups, with key instability drivers including 52Gly (19/23 in unstable), 55Cys (9/9 in unstable), and 54Ser (13/14 in unstable), where position 54 points into the hydrophobic core and hydrophilic substitutions likely destabilize the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 present a comprehensive statistical analysis using Fisher's exact test with clear quantitative results shown in Figure 1B. The structural interpretation for position 54 (C23-C24) is supported by established nanobody structural knowledge. The finding that each unstable nanobody had at least one of seven enriched residues (C25) provides additional validation. The statistical approach is appropriate and the results are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A partial consensus mutagenesis approach based on \u226580% positional conservation across stable nanobodies successfully stabilized 26 out of 42 (62%) previously unstable nanobodies, with 6 additional showing partial improvement, while 10 showed no improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe a rational mutagenesis strategy with clear success metrics. The approach is well-defined (\u226580% conservation threshold), and the quantitative outcomes are documented with fluorescence imaging (Figure 7A, C). The average mutational load of 5.7 changes per nanobody is reasonable. The 62% success rate demonstrates the effectiveness of the approach while acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A second round of mutagenesis targeting 52Gly (and X90Gln) in nanobodies not stabilized by the first approach rescued 11 out of 13 additional nanobodies, bringing the total success rate to 37 out of 42 (88%) previously unstable nanobodies rendered stable and soluble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate iterative optimization of the mutagenesis strategy. The strong correlation between 52Gly and failure to stabilize (13/16) is compelling and led to a rational second intervention. The final 88% success rate (37/42) is impressive and well-documented in Figure 7C. The sequential approach is logical and the results are quantitatively clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Systematic testing of mutation subsets identified minimal necessary mutations for stabilization, with single mutations sufficient for some nanobodies: Ser54Ala alone stabilized 3K74, Ser53Val stabilized 1KXT, and 68Tyr alone stabilized 4WEN and 1KXQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide important mechanistic insights by identifying key driver mutations. The systematic approach of testing mutation subsets is rigorous, and the identification of single sufficient mutations (particularly for positions 54, 53, and 68) validates the importance of these residues. Results are shown in Figure 7D, E. This demonstrates that not all mutations in the consensus approach are necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Six mutationally stabilized nanobodies tested for target binding all retained binding function with partial consensus mutagenesis, while full-consensus mutagenesis reduced binding in 5 out of 6 cases, demonstrating that the partial consensus approach preserves variable framework positions important for target interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 address a critical concern about whether stabilization compromises function. The experimental design using NLS-tagged targets and nuclear localization as a readout is appropriate. The finding that partial consensus preserves binding (6/6) while full consensus often impairs it (5/6) validates the strategy. Quantitative data in Figure 8 and Figure 8\u2014figure supplement 1 support the conclusions. The structural analysis (C39) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Mutationally stabilized nanobody 3V0A-TagBFP showed strong expression in multiple retinal cell types (rod photoreceptors, bipolar cells, Mueller glia) following in vivo electroporation in mouse retina, while wild-type showed little to no signal, demonstrating that stabilization extends to in vivo contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide important validation that the stabilization approach works in vivo, not just in cell culture. The retinal electroporation experiments are well-controlled with dsRed as a transfection marker. The observation across multiple specialized cell types (C44) strengthens the generalizability. Figure 9 provides clear visual evidence of the difference between wild-type and mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The GFAP-binding nanobody NBE9 with a single S54A mutation showed rescued expression and enhanced colocalization with endogenous GFAP in Mueller glia of the rd1 retinal degeneration model, demonstrating that mutationally stabilized nanobodies can bind endogenous targets in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide a compelling demonstration of endogenous target binding in vivo. The rd1 model is appropriate as GFAP is upregulated (C46-C47, supported by citations). The comparison between wild-type (minimal signal, C48) and S54A mutant (rescued expression and enhanced GFAP colocalization, C49) is clear in Figure 10. The interpretation (C50) appropriately notes differences in expression level and aggregation propensity between variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "All five wild-type nanobodies tested in E. coli showed instability (4/5 with inclusion bodies), while all five mutationally stabilized variants showed marked increases in fluorescence, with three showing complete elimination of aggregation, demonstrating that stabilization extends to bacterial expression systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 extend the validation to bacterial systems, which is important for both production and therapeutic applications. The experimental design using mCherry fusions and fluorescence microscopy is appropriate. The quantitative results (5/5 wild-type unstable, 5/5 mutants improved, 3/5 with complete elimination of aggregation) are clear and supported by Figure 11. This demonstrates broad applicability of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C39"
+    ],
+    "result": "Analysis of crystal structure data revealed that positional sequence variability across nanobody frameworks correlates with target interface formation, with the majority of interacting framework residues located in highly variable positions that were excluded from the partial consensus mutagenesis approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, and C39 provide important structural rationale for why the partial consensus approach preserves binding. The analysis of PDB crystal structures and interface data from PDBe PISA is appropriate. Figure 8\u2014figure supplement 1A shows the correlation between variability and interaction. This explains why avoiding highly variable positions in the consensus filter helps maintain binding function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Nanobody 5IVN was stabilized for cellular expression but failed to bind its \u03b2-catenin epitope intracellularly, likely due to loss of a crucial disulfide bond required for its conformationally precise paratope, suggesting that certain conformational paratopes may not be amenable for intracellular recapitulation despite stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 document an important limitation of the approach. The experimental observation that 5IVN was stabilized but lost binding (C62) is clearly stated. The mechanistic explanation (C63) is appropriately presented as speculation ('we suspect') but is supported by prior work showing the disulfide is required for binding (C64, Braun et al., 2016). The broader conclusion (C65-C66) appropriately qualifies the success of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C41"
+    ],
+    "result": "Some unstable nanobodies (including 3K74 and 4I13 targeting DHFR) were able to bind their targets despite instability in the absence of target, and 4 out of 6 wild-type unstable nanobodies showed increased signal when coexpressed with target, suggesting target-dependent stabilization for a subset of nanobodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C41 describe an interesting phenomenon of target-dependent stability. The experimental observations are clear from the target binding experiments (Figure 8\u2014figure supplement 1B). The inference that target presence has a stabilizing effect (C74) is reasonable given the robust binding observed for wild-type 3K74 and 4I13. This is contextualized with prior work from the same lab (C75).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing that nanobodies are single-domain antibody fragments with advantages for various applications including intracellular expression, though conventional antibodies are not amenable to intracellular expression due to the reducing cytoplasmic environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide well-established background information about nanobodies, supported by appropriate citations. These are not novel findings from this study but rather context-setting claims that are accurately presented. All claims are supported by either established knowledge or appropriate citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C55",
+      "C60",
+      "C67",
+      "C68"
+    ],
+    "result": "Background structural and functional information about nanobodies, including their composition (CDRs and framework regions), binding modes (often involving framework engagement), and differences from conventional antibodies in paratope diversity and framework contribution to binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C55, C60, C67, and C68 present established structural and functional knowledge about nanobodies and conventional antibodies. These are accurately stated and supported by appropriate citations (e.g., Mitchell and Colwell, 2018 for C68). This background information provides important context for understanding the mutagenesis strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C69"
+    ],
+    "result": "Prior work on consensus-based stabilization of antibody fragments is reviewed, including work by Pluckthun and colleagues on immunoglobulin variable domains and by Steipe and Wirtz on intracellular FV fragments, with the current partial consensus approach likely minimizing impact on target binding compared to full framework grafting strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 accurately cite and describe prior work on consensus-based stabilization (supported by citations to Knappik et al., 2000; Ewert et al., 2003; Ohage et al., 1999; Wirtz and Steipe, 1999). Claim C69 makes a reasonable inference about the advantages of the partial consensus approach compared to loop grafting, supported by the structural analysis and target binding data. This contextualizes the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C58"
+    ],
+    "result": "Structural details about specific nanobodies tested for target binding: 3K1K and 3K74 engage targets along a concave framework interface with FR2 residues forming direct contacts, while 3G9A has a large CDR3 loop normally anchored by a disulfide bond to FR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide specific structural information about nanobodies used in the target binding experiments. C59 is supported by crystal structure data shown in Figure 8B, C. C58 combines structural knowledge with inference about cytoplasmic conditions. These details provide important context for interpreting the target binding results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors' laboratory has previously described nanobody conditional stability in an engineered context, and it is expected that a subset of nanobodies naturally exhibit target-dependent stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 reference prior work from the same laboratory (Tang et al., 2016) and make a reasonable inference based on that work. This contextualizes the observation of target-dependent stability for some nanobodies in the current study. The inference in C76 is appropriately qualified as an expectation rather than a proven fact.",
+    "result_type": "MINOR"
+  }
+]

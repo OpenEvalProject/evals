@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "OFF responses in auditory cortex correspond to transiently amplified population trajectories that robustly encode stimulus features. The distance from baseline during ON and OFF responses was larger than at the end of stimulus presentation, and classification accuracy was highest during these transient phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C34, C35, and C36 are directly supported by data analysis shown in Figure 1B-C. The measurements of population distance from baseline and decoding accuracy provide quantitative evidence for transient amplification and robust stimulus encoding during OFF responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "OFF responses to individual stimuli explore low-dimensional subspaces of approximately 5 dimensions. PCA analysis showed that 80% of variance was explained by the first 5 principal components, and trajectories exhibited circular rotational patterns in the first two PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C37, C38, and C39 are well-supported by PCA analysis presented in Figure 2A-B with cross-validated controls in supplementary figures. The dimensionality estimate is robust and the rotational patterns are clearly visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "OFF responses to different stimuli lie in largely orthogonal low-dimensional subspaces, creating high-dimensional structure across stimuli. While individual stimulus responses span ~5 dimensions, responses to all 16 stimuli together require ~60 dimensions, with stimuli of different frequency content evoking non-overlapping responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C40-C44 are supported by subspace overlap analysis in Figure 2C-D with statistical controls in Figure 2\u2014supplement 2. The orthogonality structure is quantified and the relationship between individual and joint dimensionality is mathematically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Initial population activity states at stimulus offset predict the structure of subsequent OFF response dynamics across stimuli, suggesting that initial states contribute to determining OFF response trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by correlation analysis in Figure 2E showing matched structure between initial states and OFF dynamics even after subtracting the initial state component. This provides evidence for the contribution of initial conditions to dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C48",
+      "C52",
+      "C81"
+    ],
+    "result": "A linear single-cell model captures average responses to individual stimuli well but fails to account for structure across multiple stimuli and trials. The model's limitation stems from assuming identical temporal response shapes across stimuli for each neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C48, C52, and C81 are supported by model fitting results in Figure 3B-E showing high goodness of fit (R\u00b2=0.75) for single stimuli but poor fit (R\u00b2=0.1) when fitting multiple stimuli simultaneously. The mechanistic explanation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C53",
+      "C56",
+      "C57",
+      "C82"
+    ],
+    "result": "A linear recurrent network model accounts for all three key features of OFF responses: transient amplification, low-dimensional trajectories for individual stimuli, and orthogonal structure across stimuli. The model maintains consistent goodness of fit (R\u00b2=0.52) across increasing numbers of stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C53, C56-C57, and C82 are supported by comprehensive model fitting in Figure 3G-I showing the network model reproduces all data features with stable performance across stimuli, unlike the single-cell model. The comparison is quantitative and systematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The fitted connectivity matrix exhibits eigenvalues with real parts less than one (indicating stability) and large imaginary parts, while its symmetric part has many eigenvalues greater than one (enabling amplification).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are directly supported by eigenvalue analysis in Figure 4A-B. The spectral properties are consistent with theoretical predictions for networks generating stable amplified dynamics, providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Correlations between initial states and peak states during OFF responses are lower than chance for almost all stimuli, consistent with network model predictions but conflicting with single-cell model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 are supported by correlation analysis in Figure 5D-E with statistical controls in Figure 5\u2014supplement 3. This provides a testable prediction that distinguishes between the two models and is confirmed in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Connectivity overlaps between transient channels fitted to individual stimuli closely match subspace overlaps of OFF responses, with stimulus pairs showing high subspace overlap corresponding to high connectivity overlap and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by analysis in Figure 7A-B showing strong correspondence between connectivity structure and response structure. This validates the decomposition of the full network into independent coding channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The network model better accounts for trial-to-trial variability structure than the single-cell model. Both models reproduce amplification along the amplified direction, but only the network model correctly predicts that shuffling trial labels eliminates this amplification, due to noise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by single-trial analysis in Figure 8 with mathematical derivations in Methods. The network model correctly predicts both features of variability while the single-cell model fails on the shuffling test, providing strong discriminatory evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "In the network model, temporal OFF-responses of single cells can differ across stimuli, similar to auditory cortex data, unlike the single-cell model where response shapes are fixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by comparison of model properties with data in Figures 3E and 6A,D. This explains why the network model can capture cross-stimulus structure while the single-cell model cannot.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "ON and OFF trajectories for the same stimulus are orthogonal in state-space, as shown in previous work and confirmed in this dataset. Linear network models cannot account for this orthogonality as they necessarily produce correlated ON and OFF responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by data in Figure 2\u2014supplement 3 and theoretical analysis. This identifies a limitation of the linear network model and suggests additional mechanisms are needed for ON responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Autonomous dynamics (without external input after stimulus offset) are sufficient to reproduce key features of OFF responses, as evidenced by the predictive relationship between initial state structure and dynamics structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C91 are supported by the correlation analysis in Figure 2D-E and successful model fits assuming no external input. However, this does not exclude potential contributions from upstream inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The study reconciles observations of low-dimensional activity during simple tasks with high-dimensional responses to many stimuli: individual stimulus responses are low-dimensional but lie in orthogonal spaces, so dimensionality increases with stimulus number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 is supported by the dimensional analysis showing ~5 dimensions per stimulus but ~60 dimensions for all stimuli. This provides a coherent framework for understanding apparently contradictory findings in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The eigenvalue spectrum of the fitted connectivity matrix is qualitatively similar to network models with strong recurrent excitation balanced by fine-tuned inhibition, suggesting a common mechanism with motor cortex dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by eigenvalue analysis in Figure 4 and comparison with previous motor cortex models. The qualitative similarity is clear, though quantitative comparison and mechanistic validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context establishing that sensory responses are transient, OFF responses are prevalent in auditory cortex, their mechanisms remain unclear, and population approaches have proven valuable in other systems, motivating the current study's hypothesis about recurrent network mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 provide literature context supported by appropriate citations. These establish the scientific background and motivation but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Experimental setup and basic observations: 2343 neurons were recorded from awake mice listening to 16 auditory stimuli, showing heterogeneous responses with stimulus-selective ON and OFF responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe the experimental design and basic observations illustrated in Figure 1A. These are well-documented methodological details and preliminary observations supporting subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The results argue for a potential role of network interactions in shaping OFF responses in auditory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a reasonable conclusion from the collective evidence showing the network model outperforms the single-cell model. However, the word 'potential' appropriately acknowledges that alternative explanations and additional validation are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C88",
+      "C93",
+      "C96",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "Speculative extensions suggesting ON responses might use similar mechanisms, nonlinearities may be important, upstream inputs could contribute, and the framework might explain sequence encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85, C88, C93, C96, C109, C111-C112 are explicitly speculative and not tested in this study. They represent reasonable hypotheses for future work but lack empirical support in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion of model assumptions and predictions: the models assume no external input after stimulus offset, though upstream inputs exist anatomically; the network model predicts inactivation of recurrent excitation should weaken OFF responses, though recurrency exists at multiple levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C92, C94-C95 accurately describe model assumptions and make testable predictions. The discussion appropriately acknowledges limitations and alternative interpretations while proposing experimental tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "Additional literature context on dimensionality in neural populations, motor cortex dynamics, and functional roles of OFF responses in sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C100-C103, C105-C108, C110 provide relevant literature context supported by citations. These situate the findings within broader neuroscience but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Statement of the study's central hypothesis that transient OFF responses are generated by recurrent network mechanisms analogous to motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 clearly states the hypothesis being tested. This is appropriately presented as a hypothesis to be evaluated rather than an established fact.",
+    "result_type": "MAJOR"
+  }
+]

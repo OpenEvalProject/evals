@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Male environment increases hermaphrodite NMJ excitatory/inhibitory (E/I) ratio through secreted metabolites. Hermaphrodites from crossing or male-conditioned medium show increased aldicarb sensitivity compared to self-fertilized hermaphrodites or those in hermaphrodite-conditioned medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 provide converging evidence from multiple experimental approaches (crossing experiments, conditioned medium assays) demonstrating that male-secreted metabolites increase NMJ E/I ratio. The conditioned medium experiment (C6-C7) effectively rules out direct contact and parental inheritance effects. Statistical significance is reported (p<0.0001) with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Male-conditioned medium increases muscle excitability at the NMJ. Baseline GCaMP3 fluorescence and optogenetically-evoked calcium responses are elevated in hermaphrodites from male-conditioned medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 use calcium imaging to independently validate increased muscle excitability. The optogenetic approach (C9) provides controlled stimulation of cholinergic neurons, strengthening the conclusion. However, the baseline fluorescence increase (C8) is modest and could reflect technical variability in expression levels rather than purely physiological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Male environment specifically increases cholinergic transmission frequency without affecting GABAergic transmission. mEPSC frequency increases significantly while mEPSC amplitude and all mIPSC parameters remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide direct electrophysiological evidence for the mechanism. The selective increase in mEPSC frequency (not amplitude) suggests presynaptic modulation. The lack of mIPSC changes rules out general excitability changes. Sample sizes appear adequate and statistical tests appropriate (p=0.0268 for frequency).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "L3-L4 developmental stage is a critical window for male pheromone effects on NMJ synaptic transmission. Exposure during egg, L1, or L2-L3 stages produces effects, but mid-L4 exposure does not. Effects persist after removal from male environment in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 systematically map the developmental window using stage-specific transfers. The experimental design is rigorous with appropriate controls. The persistence after removal (C18-C19) demonstrates long-term programming rather than acute effects. Statistical significance is reported for multiple stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Male pheromone effects are conserved across some C. elegans strains (CB4856, AB3) but not others (TR389). TR389 males appear unable to secrete the modulator ascarosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 test strain specificity. The reciprocal experiments (N2 hermaphrodites with TR389 male medium vs. TR389 hermaphrodites with N2 male medium) effectively demonstrate that TR389 males lack the secreted factor rather than TR389 hermaphrodites lacking the response machinery. This is a well-designed control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Male pheromones decrease hermaphrodite locomotion velocity and increase mating efficiency without affecting brood size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 examine behavioral consequences. The decreased velocity (C25) is consistent with altered NMJ function. The increased mating efficiency (C27) provides adaptive context. However, the locomotion analysis lacks detailed kinematic characterization beyond velocity, and the mating assay definition (>3 male progeny) is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "DAF-22-dependent ascarosides mediate male pheromone effects on hermaphrodite NMJ. daf-22 mutant male-conditioned medium fails to increase hermaphrodite aldicarb sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 use genetic disruption of ascaroside biosynthesis to test mechanism. The loss of effect in daf-22 male-conditioned medium (C33) strongly implicates ascarosides. However, DAF-22 affects multiple ascaroside classes, so this doesn't identify the specific active molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Male pheromones show sexual dimorphism - they modulate hermaphrodite but not male NMJ synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 demonstrate sex-specific effects. Testing both wild-type and daf-22 males (C36) controls for the possibility that males are simply saturated with their own pheromones. The sexual dimorphism is clearly established, though the mechanism underlying this specificity is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Medium-chain \u03b2-hydroxylated ascarosides (C13, C14, C15) are enriched in N2 males compared to hermaphrodites and TR389 males, identifying them as candidate modulator pheromones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 use UPLC-MS to identify candidate molecules. The comparison across three conditions (N2 hermaphrodites, N2 males, TR389 males) is well-designed. However, the identification is correlative - these molecules are enriched in conditions that produce the effect, but direct testing of purified compounds is not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Genetic analysis of ascaroside biosynthesis mutants supports \u03b2-hydroxylated medium-chain ascarosides as modulators. dhs-28 mutants (which accumulate these ascarosides) show increased aldicarb sensitivity and cannot be further modulated by male pheromones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide genetic validation. The dhs-28 phenotype (increased baseline sensitivity, no response to male medium) is consistent with the hypothesis. Testing multiple biosynthesis mutants (maoc-1, acox-1.1) strengthens the conclusion by showing specificity. This is strong genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "AWB chemosensory neurons are necessary for male pheromone effects on hermaphrodite NMJ. Genetic ablation of AWB blocks increased aldicarb sensitivity and locomotion changes, while ablation of other chemosensory neurons does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 use systematic genetic ablation to identify the sensory neurons. The screen of 11 chemosensory neuron types is comprehensive. The specificity for AWB is clear. However, the miniSOG ablation efficiency is incomplete (47.8-80% depending on duration), which could affect interpretation if partial ablation is sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Optogenetic activation of AWB neurons is sufficient to increase hermaphrodite aldicarb sensitivity, mimicking male pheromone effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 demonstrate sufficiency through optogenetic activation. The use of ATR controls is appropriate. However, the effect size appears smaller than with actual pheromones, and activation of other neurons (ASJ/ASI, AWA, AWC) was not uniformly tested or showed opposite effects, raising questions about specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AWB neurons directly respond to male excretomes with calcium transients but not to hermaphrodite excretomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 use calcium imaging to demonstrate AWB responsiveness. The differential response to male vs. hermaphrodite excretomes is clear. However, 'excretomes' are complex mixtures, so this doesn't prove direct sensing of the specific \u03b2-hydroxylated ascarosides identified earlier. Testing purified compounds would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "cGMP signaling pathway in AWB neurons (TAX-2 and ODR-3) is required for male pheromone effects. tax-2 and odr-3 mutants fail to respond to male-conditioned medium, and cell-specific rescue in AWB restores the response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 identify the signaling pathway through mutant analysis and cell-specific rescue. The rescue experiments (C54-C55) are critical for demonstrating cell autonomy. Testing rescue in non-AWB neurons (ASI/ASJ) as a negative control strengthens the conclusion. This is rigorous genetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Synaptic structure (presynaptic RAB-3 puncta) is unaltered by male pheromones at both excitatory and inhibitory synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 use fluorescent markers to assess structural changes. The lack of change in RAB-3 puncta intensity or density suggests functional rather than structural modulation. However, RAB-3 is just one marker, and subtle structural changes might not be detected. The conclusion is appropriately limited to the markers examined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Male pheromones increase postsynaptic nicotinic acetylcholine receptor (nAchR) intensity at excitatory synapses without affecting GABA receptor intensity or receptor densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 examine postsynaptic receptors using fluorescent fusion proteins. The selective increase in nAchR intensity (not density) at excitatory synapses is consistent with the electrophysiology. However, the effect is described as 'slight but significant,' and the biological significance of intensity changes without density changes is unclear. This could reflect receptor clustering or expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "CaV2-splitGFP correctly localizes to presynaptic elements and presynaptic structure (UNC-57/endophilin) is unaltered by male pheromones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 validate the CaV2 visualization tool and confirm no gross structural changes. The colocalization analysis (Pearson coefficient ~0.78) demonstrates proper localization. This provides important validation for subsequent CaV2 localization experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Male pheromones specifically increase presynaptic CaV2 calcium channel intensity and density at cholinergic synapses but not at GABAergic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 identify a key presynaptic mechanism. The synapse-type specificity (cholinergic but not GABAergic) is consistent with the electrophysiology showing selective mEPSC frequency increase. The split-GFP approach allows visualization of endogenous protein. This is strong evidence for a presynaptic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "unc-2 (CaV2) mutation blocks male pheromone effects on mEPSC frequency and locomotion, confirming CaV2 as the critical target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 provide genetic validation that CaV2 is required for pheromone effects. The loss of pheromone response in unc-2 mutants (C73-C74) is strong evidence. However, unc-2 mutants have baseline defects (C72), so it's possible the lack of response reflects a floor effect rather than specific requirement. Testing partial loss-of-function alleles would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background on C. elegans reproduction and ascaroside pheromones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C28-C30 provide established background knowledge about C. elegans biology and pheromone systems, appropriately cited. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Summary of main findings: male pheromones modulate hermaphrodite NMJ through developmental stage-specific effects, AWB neuron sensing via cGMP signaling, and increased CaV2 and nAchR localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are summary statements that accurately reflect the collective findings. These integrate the individual results into a coherent model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "C. elegans NMJ is a valid model for studying synaptic transmission with relevance to mammalian systems and neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 discuss the model system's validity with appropriate citations to conservation of synaptic mechanisms and autism-linked proteins. C84 is appropriately speculative ('may provide insights'). This contextualizes the work's broader significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "AWB neurons regulate NMJ transmission in a sexually dimorphic manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 summarize the circuit and sexual dimorphism findings. These are supported by the experimental data discussed in earlier result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ascr#10 and IC-ascarosides are unlikely to be the modulator pheromones based on strain distribution and sensory neuron requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 use logical exclusion based on UPLC-MS data and neuron ablation experiments. The reasoning is sound: ascr#10 is present in TR389 males (which don't produce the effect) and requires ASI/ASK neurons (which are dispensable). This narrows the candidate molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The developmental timing of pheromone effects on NMJ differs from previously reported effects on longevity, suggesting distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 compare current findings to prior work on pheromone effects on lifespan. The different developmental windows (L3-L4 for NMJ vs. day 1 or day 4 for longevity) suggest distinct mechanisms. This is appropriate contextualization with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Speculation that endocrine signaling pathways (DAF-7/TGF-\u03b2, DAF-2/insulin) may mediate long-term pheromone effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 are explicitly speculative ('we suspect,' 'may be mediated'). While the speculation is reasonable given the persistent effects and prior work on insulin signaling in pheromone responses (C94), no direct evidence is provided. This is appropriate discussion but not a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "CaV2 calcium channels are targets for environmental modulation with potential relevance to autism spectrum disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 summarize the CaV2 findings. C97 cites established links between calcium channels and neuropsychiatric disease. C98 is appropriately speculative ('could be impactful') about ASD relevance. The connection to human disease is reasonable but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Speculation about mechanisms of CaV2 synaptic recruitment involving protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 speculate about molecular mechanisms without providing direct evidence. C100 cites general knowledge about calcium channel localization. This is reasonable discussion of future directions but not a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Males have higher body curvature and locomotor velocity than hermaphrodites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 reports a sex difference in locomotion with citation to prior work. This is a control observation confirming expected sex differences in the locomotion assay.",
+    "result_type": "MINOR"
+  }
+]

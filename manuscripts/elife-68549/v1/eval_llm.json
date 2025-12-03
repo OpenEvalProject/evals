@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "CRISPR knockout experiments demonstrate that cortex is a major determinant of scale cell identity in Heliconius butterflies, controlling the switch between Type I (yellow/white) and Type II/III (black/red) scales. Knockouts produce ectopic yellow and white scales across the entire wing surface in multiple species, accompanied by ultrastructural transformations consistent with partial homeosis. This function is conserved across the Heliconius radiation and in other nymphalids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, C28-C30, C33, C48-C54, and C56 collectively provide strong experimental evidence from CRISPR knockouts in multiple species (H. erato, H. melpomene, H. charithonia, H. hecale, D. plexippus) showing consistent transformation of Type II/III scales to Type I scales. The phenotypes are supported by both pigmentation changes and SEM data showing ultrastructural shifts. The broad spatial distribution of mutant clones and conservation across species strongly support the conclusion that cortex is a key scale cell specification gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "cortex shows differential expression between colour pattern morphs in fifth-instar larvae, with opposite expression patterns in H. melpomene and H. erato. However, Cortex protein localizes broadly across the wing epithelium during pupal development without restriction to specific pattern elements, appearing inconsistent with the spatially restricted mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C22 demonstrate differential expression supported by RNA-seq and RT-qPCR data. However, the broad nuclear localization of Cortex protein across the entire wing surface (C35-C38) contradicts the expectation that expression would be restricted to specific pattern elements. The authors acknowledge this puzzling discrepancy and suggest it may reflect temporal dynamics, concentration thresholds, or isoform-specific expression that their methods cannot detect. This inconsistency between expression patterns and functional outcomes requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C55",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C92"
+    ],
+    "result": "Modular cis-regulatory elements (CREs) control spatially restricted cortex expression driving the yellow bar phenotype. ATAC-seq and Twisst analysis identified distinct CREs in H. melpomene (~8 kb downstream) and H. erato (~10 kb downstream), and CRISPR knockout of these CREs in black hindwing morphs recreated yellow bars restricted to the appropriate wing region. Hi-C data confirm CRE-promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C8, C39-C43, C55, C60-C63, and C92 provide converging evidence from multiple approaches: ATAC-seq identifies accessible chromatin, Twisst analysis shows genetic association with phenotype, CRISPR CRE knockouts produce spatially restricted yellow bar phenotypes in both species, and Hi-C data confirm physical interactions between CREs and the cortex promoter. The independent evolution of different CREs in the two species controlling the same phenotype is particularly compelling evidence for modular enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In H. melpomene and H. timareta yellow-barred morphs, the candidate CRE is interrupted by transposable element insertions (a 690 bp BovB-like TE and a Helitron-like TE). These TE insertions are shared across geographically isolated yellow-barred populations, suggesting adaptive introgression of structural variants underlies the yellow bar phenotype in these lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44-C46, C64-C66 provide consistent evidence from whole-genome sequencing showing characteristic coverage drops at the CRE in yellow-barred morphs, Sanger sequencing confirming TE insertions in H. m. rosina, and the same TE signatures found in three other geographically isolated yellow-barred populations (H. m. bellula, H. m. amaryllis, H. t. tristero). The shared TE signatures across populations and species, combined with previous evidence of adaptive introgression at other loci in this system, strongly support the conclusion that structural variation via TE insertion drives CRE evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C23",
+      "C24",
+      "C97"
+    ],
+    "result": "Phylogenetic analysis demonstrates that cortex is an insect-specific member of the cdc20/fizzy family, with no clear homologs outside Neoptera. The lepidopteran orthologue displays rapid sequence evolution despite conserved APC/C binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C23-C24, and C97 are supported by phylogenetic analysis showing strong monophyletic support for cortex within Neoptera, TBLASTN searches failing to recover homologs outside this lineage, and branch length analysis indicating rapid evolution. The conservation of functional motifs (C-Box, IR tail) alongside rapid sequence evolution is well-documented in the phylogenetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10"
+    ],
+    "result": "The cortex locus has been repeatedly associated with colour pattern evolution across divergent Lepidoptera, including Heliconius, peppered moths, silkmoths, and other butterflies, representing a hotspot for adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C10 are supported by multiple citations to previous mapping and association studies in diverse lepidopteran species. This represents well-established prior work that provides context for the current functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Heliconius wing pattern diversity is created by three major scale cell types with characteristic pigments and ultrastructures: Type I (yellow/white with 3-OHK or structural color, lamina, microribs), Type II (black with melanin, larger crossribs, no lamina), and Type III (red with ommochromes, larger spacing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe the established classification of Heliconius scale types, supported by citations to previous studies and SEM data presented in Figure 9. This provides essential background for interpreting the cortex knockout phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C82"
+    ],
+    "result": "cortex knockouts show positional effects on pigmentation, with ectopic scales in forewing and anterior hindwing shifting to yellow, while posterior hindwing scales become white. This positional dependence likely reflects differential aristaless1 expression across wing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C82 describe consistent positional effects observed in CRISPR knockout experiments, particularly evident in H. erato cyrbia and H. m. cythera morphs. The interpretation linking this to aristaless1 expression (C83) is speculative but reasonable given previous work on this gene's role in yellow/white pigmentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C95",
+      "C96"
+    ],
+    "result": "cortex is likely developmentally lethal, as evidenced by high mortality rates (hatched to adult ratios of 8.1-29.8%) and low knockout efficiency (0.3-4.8% phenotype to hatched eggs) in CRISPR experiments, with high mosaicism in survivors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C95-C96 are supported by quantitative data on CRISPR injection outcomes showing consistently high mortality and low efficiency across experiments. The inference of developmental lethality is reasonable given these observations and the known cell cycle functions of cortex homologs in other insects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Cortex protein localizes to the nucleus in pupal wings, suggesting possible interaction with the APC/C. Given that ploidy levels correlate with pigmentation in Lepidoptera scale cells, cortex may modulate ploidy by inducing endoreplication cycles, though this mechanism remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is well-supported by immunofluorescence data showing nuclear localization. However, claims C58-C59 regarding the mechanism are speculative. While C58 cites previous studies showing ploidy-pigmentation correlations, C59's proposal that cortex modulates ploidy through endoreplication is based on analogy to Drosophila functions without direct evidence in Heliconius. This hypothesis requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "cortex and WntA are proposed as master regulators of scale cell identity with distinct but interacting functions. WntA acts as a spatial patterning signal for specific wing elements, while cortex acts as a broader 'on-off' switch. Evidence suggests either cortex is required for WntA signaling or two independent melanization pathways exist, with genetic evidence for epistasis between the loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C75 integrate current cortex data with previous WntA studies to propose a model of gene interactions. While C67-C72 are reasonably supported by comparing knockout phenotypes, claims C73-C74 present alternative mechanistic hypotheses without sufficient data to distinguish between them. C75 cites genetic crossing data supporting epistasis, but the precise molecular relationship remains unclear. This represents an important conceptual framework but requires additional functional experiments to resolve the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "A developmental model is proposed where cortex acts as an early regulator switching between Type I and Type II/III scale fates, with subsequent differentiation depending on optix (for Type III) and aristaless1 (for yellow vs. white Type I). The switch is proposed to depend on protein threshold or expression timing rather than simple presence/absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C84 present a comprehensive developmental model integrating cortex, optix, and aristaless1 functions. While the model is consistent with the knockout phenotypes and previous studies (particularly C77, C80-C81 citing prior work), several aspects remain speculative (C78, C83-C84). The model provides a useful framework but key predictions\u2014such as threshold effects, temporal dynamics, and the precise relationship between cortex and optix in Type III development\u2014require direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNA-seq data suggest other linked genes, particularly dome/wash (differentially expressed as a bi-cistronic transcript), may also play roles in pattern switches. In H. numata, both cortex and dome/wash are differentially expressed and controlled by inversions, raising the possibility that multiple linked genes cooperate and have become locked into a supergene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C86 are supported by RNA-seq data showing differential expression of dome/wash. However, claims C87 and C89 are speculative\u2014no functional experiments on dome/wash are presented in this study. C88 cites previous work on H. numata showing both genes are differentially expressed and within inversion regions, but the functional significance and cooperative interactions remain hypothetical. This represents an interesting direction for future work but is not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The cortex locus in Lepidoptera features large intergenic regions that may act as modular cis-regulatory switches. Unlike canonical input-output loci, cortex expression is not restricted to specific pattern elements yet produces switch-like outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by citations to previous studies and the current ATAC-seq data showing extensive intergenic regions with regulatory activity. Claim C91 is well-supported by the combination of expression data (showing broad expression) and knockout data (showing switch-like Type I vs. Type II/III outputs). This unusual combination distinguishes cortex from typical developmental patterning genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C98",
+      "C99"
+    ],
+    "result": "Genomic analysis reveals that dome duplicated in the ancestor of H. erato and H. melpomene, producing a full-length copy and a truncated copy (dome-trunc) that appears to be undergoing pseudogenization. dome and wash are transcribed as a single bi-cistronic gene with a shared promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 and C98-C99 are supported by phylogenetic analysis, protein alignments showing C-terminal truncations, transcriptomic data, and ATAC-seq data showing peaks upstream of dome but not wash. This represents solid characterization of the genomic organization at this locus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C62"
+    ],
+    "result": "In H. erato, no similar coverage drop signature was observed at the homologous CRE position, and targeting the homologous peak produced no phenotype. An independently evolved CRE at a different position (~10 kb 3') drives the yellow bar phenotype in H. erato, suggesting sequence divergence rather than structural variation underlies CRE evolution in this species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C62 are supported by whole-genome sequencing coverage analysis showing no structural variation in H. erato at the position corresponding to the H. melpomene CRE, and CRISPR experiments showing no phenotype when targeting the homologous position but a yellow bar phenotype when targeting an adjacent, non-homologous peak. This demonstrates independent evolution of CREs controlling the same phenotype in the two species.",
+    "result_type": "MAJOR"
+  }
+]

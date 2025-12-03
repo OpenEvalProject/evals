@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors characterize Seipin protein structure and glycosylation status. Seipin is an ER membrane protein with two transmembrane domains encoded by the BSCL2 gene. It exists in short (398 aa) and long (462 aa) splice variants. HCT116 cells express only the short form (SeipinS), while SH-SY5Y cells express both short and long forms (SeipinL). Both forms are sensitive to endoglycosidase H digestion. When expressed in HCT116 cells, N-terminally Myc-tagged wild-type SeipinL is sensitive to Endo H digestion, while the N152S/S154L mutant (ngSeipinL) is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C21, C26-C28, C32-C33 provide consistent characterization of Seipin structure and glycosylation. The experimental data (immunoblotting with Endo H treatment, Figure 1A-B) directly support the structural claims and differential glycosylation between wild-type and mutant forms. The cell-type-specific expression patterns are documented by both immunoblotting and RT-PCR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors establish the genetic and molecular basis of Seipinopathy. Gain-of-function mutations N152S and S154L in Seipin dominantly cause distal hereditary motor neuropathy (dHMN), characterized by degeneration of motor nerve fibers in distal limbs. These mutations disrupt the N-glycosylation consensus sequence (Asn-X-Ser/Thr), preventing glycosylation and producing aggregation-prone mutants that were previously shown to induce ER stress and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16-C20 accurately describe prior knowledge about Seipinopathy genetics and pathology. The N-glycosylation consensus sequence disruption (C18-C19) is well-established biochemistry. The connection between non-glycosylated mutants and disease (C20) is appropriately attributed to prior literature (Windpassinger et al., 2004), providing context for the current mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C42",
+      "C43",
+      "C44",
+      "C54",
+      "C58"
+    ],
+    "result": "The authors demonstrate that non-glycosylated Seipin (ngSeipin) dominantly inactivates SERCA2b and decreases ER calcium concentration. ngSeipinL binds to SERCA2b more extensively than wtSeipinL (immunoprecipitation, Figure 1C). Expression of ngSeipinL in HCT116 and SH-SY5Y cells markedly decreased [Ca2+] in the ER compared to wtSeipinL (G-CEPIA1er fluorescence, Figures 1E-F). The total calcium released upon thapsigargin treatment was markedly decreased in cells expressing ngSeipinL (GCaMP6f monitoring, Figure 2A). CDN1163 (SERCA2 activator) increased [Ca2+] in cells expressing wtSeipinL but not ngSeipinL, suggesting selective SERCA2b inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C42-C44, C54, C58 are strongly supported by multiple complementary experimental approaches. The immunoprecipitation data (C42) demonstrate enhanced binding of ngSeipinL to SERCA2b. The calcium imaging experiments using two different reporters (G-CEPIA1er for ER calcium, GCaMP6f for cytosolic calcium) in two cell lines provide robust evidence for decreased ER calcium (C43-C44, C54). The pharmacological validation with CDN1163 (C56-C58) strengthens the conclusion of SERCA2b inactivation. The dose-dependent effects and consistency across multiple assays support the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors demonstrate that ngSeipinL dominantly decreases ER calcium concentration. Expression of ngSeipinL at 5.20 and 10.4 ng/cm\u00b2 decreased [Ca2+] in the ER in a dose-dependent manner, while wtSeipinL expression at the same levels did not (Figure 2B). Co-expression of wtSeipinL and ngSeipinL at varying ratios (totaling 10.4 ng/cm\u00b2) decreased [Ca2+] in the ER. CDN1163 treatment did not significantly increase [Ca2+] in cells co-expressing wtSeipinL and ngSeipinL, demonstrating dominant inactivation of SERCA2b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide strong evidence for dominant-negative behavior. The dose-response experiments (C59-C60) establish specificity for ngSeipinL. The co-expression experiments (C61) directly test dominant-negative activity, showing that ngSeipinL can override wtSeipinL function. The CDN1163 resistance in co-expressing cells (C62) confirms functional SERCA2b inactivation. This is critical for understanding the autosomal dominant inheritance pattern of Seipinopathy. The experimental design appropriately tests the dominant hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors characterize Seipin knockout cells and establish dose-dependent effects of Seipin expression. [Ca2+] in the ER was decreased by 20-30% in Seipin-KO cells compared to WT cells (Figure 3A), consistent with ~30% decrease in SERCA activity in Seipin mutant flies and supporting the proposal that Seipin aids calcium homeostasis by binding to SERCA. Expression of both wtSeipinL and ngSeipinL at low levels (0.52 ng/cm\u00b2) restored [Ca2+] in Seipin-KO cells. However, higher expression of ngSeipinL (>2.60 ng/cm\u00b2) decreased [Ca2+] more robustly than wtSeipinL in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 establish important baseline effects and dose-dependency. The Seipin-KO phenotype (C64) validates the knockout and shows Seipin's role in calcium homeostasis. The rescue at low expression levels (C67) demonstrates that non-glycosylated Seipin retains some function, while the dose-dependent toxicity at higher levels (C68) reveals the pathological mechanism. The consistency with fly data (C65) provides cross-species validation. However, the comparison to fly SERCA activity (C65) is indirect\u2014the authors measure ER calcium, not SERCA activity directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors demonstrate that higher expression of ngSeipinL induces ER stress and apoptosis through the PERK pathway. Higher expression of ngSeipinL (>2.60 ng/cm\u00b2) induced ER stress more extensively than wtSeipinL, as evidenced by increased BiP mRNA (ATF6 pathway target), XBP1(S) mRNA (IRE1 pathway target), and CHOP mRNA (PERK pathway target) (Figure 3B). Higher ngSeipinL expression also induced more extensive apoptosis, shown by increased cleaved Caspase-3 detection (Figure 3C). The clear-cut difference between low (0.52 ng/cm\u00b2) and high (>2.60 ng/cm\u00b2) ngSeipin expression is best reflected in CHOP induction, suggesting the importance of the PERK pathway in ER stress-induced apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 demonstrate the pathological consequences of ngSeipinL expression. The qRT-PCR data for UPR markers (C69-C72) show activation of all three UPR branches, with appropriate pathway attribution. The immunofluorescence for cleaved Caspase-3 (C73) provides direct evidence of apoptosis. The correlation between CHOP induction and apoptosis (C74) suggests PERK pathway importance, though this is correlative rather than mechanistic. The conclusion that decreased ER calcium is key to Seipinopathy (C75) is reasonable but somewhat overstated\u2014the authors show correlation between calcium decrease, ER stress, and apoptosis, but haven't definitively proven causality at this point in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors investigate the role of Seipin oligomerization in SERCA2b inactivation. Human Seipin exists as a wheel-like undecamer, while fly Seipin (non-glycosylated) exists as a dodecamer. N-glycan wedges the interface between protomers in human Seipin. The authors hypothesize that non-glycosylated human Seipin expressed at higher levels cannot maintain the undecamer structure, leading to aggregation. They simultaneously mutated six amino acids (H131R, Y134A, Y215A, L220D, L233D, Q239A) critical for oligomerization to create Seipin(M6) and ngSeipin(M6), which remained sensitive and insensitive to Endo H, respectively. Proximity ligation assay (PLA) showed markedly strong signals when Myc-tagged and Flag-tagged ngSeipinL were co-expressed at >1.30 ng/cm\u00b2 each compared to wtSeipinL. This signal was diminished when ngSeipinL(M6) mutants were co-expressed, supporting oligomer-dependent aggregation at higher expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C83-C87 provide strong mechanistic insight into aggregation. The structural information (C76-C78) from prior work provides the rationale for the oligomerization hypothesis. The M6 mutant design (C83) is well-justified based on structural data. The PLA experiments (C85-C86) provide direct evidence for aggregation propensity, showing dose-dependent aggregation of ngSeipinL that is abolished by preventing oligomerization. The conclusion about oligomer-dependent aggregation (C87) is well-supported. However, the hypothesis that non-glycosylated Seipin forms dodecamers rather than undecamers (C79) remains speculative and is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors demonstrate that oligomerization is required for ngSeipinL to inactivate SERCA2b and induce pathology. Although ngSeipinL(M6) associates with SERCA2b by immunoprecipitation (Figure 5A), it did not decrease [Ca2+] in the ER (Figure 5B), induce ER stress (Figure 5C), or induce apoptosis (Figure 5D) when expressed in Seipin-KO cells at 10.4 ng/cm\u00b2, in marked contrast to ngSeipinL. These results suggest that SERCA2b is incorporated into aggregates of oligomerized ngSeipinL to be inactivated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 provide critical mechanistic evidence. The dissociation between SERCA2b binding (C88, retained in M6 mutant) and functional inactivation (C89-C91, lost in M6 mutant) demonstrates that oligomerization-dependent aggregation is required for pathology. This is a key control showing that simple binding to SERCA2b is insufficient\u2014the aggregation state matters. The conclusion that SERCA2b is incorporated into aggregates (C92) is a reasonable inference from the data, though direct visualization of SERCA2b in aggregates would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors map the SERCA2b-interacting region of Seipin to the C-terminus. Immunoprecipitation experiments showed that only SeipinL(\u0394C) and ngSeipinL(\u0394C) were hardly co-immunoprecipitated with SERCA2b (Figure 6C), while a construct expressing only the C-terminal region (Seipin(Cterm)) was efficiently co-immunoprecipitated. These findings indicate that the cytosolic C-terminal region is necessary and sufficient for SERCA2b interaction. Functionally, ngSeipinL(\u0394C) lost the ability to decrease [Ca2+] in the ER (Figure 6D), indicating that direct interaction with SERCA2b is critical. However, SeipinL(\u0394LD) and Seipin(Cterm), despite binding SERCA2b, did not decrease [Ca2+] in the ER, indicating that both luminal and C-terminal regions are required for SERCA2b inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide clear domain mapping through systematic deletion analysis. The immunoprecipitation experiments (C94-C95) definitively identify the C-terminus as the SERCA2b-binding region. The functional validation (C97-C98) shows that C-terminal deletion abolishes the pathological effect. The observation that C-terminus alone is insufficient (C99) leads to the important conclusion that both oligomerization (luminal domain) and SERCA2b binding (C-terminus) are required (C100). This two-hit mechanism is well-supported by the data and explains why simple binding is not enough for inactivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors demonstrate that both oligomerization-mediated aggregation and direct SERCA2b interaction are prerequisites for ngSeipinL pathology. PLA showed that Myc-tagged and Flag-tagged ngSeipinL(\u0394C) existed in closer proximity than SeipinL(\u0394C) when co-expressed at 10.4 ng/cm\u00b2 (Figure 7A), indicating aggregation propensity. Nonetheless, ngSeipinL(\u0394C) did not decrease [Ca2+] in the ER (Figure 6D), induce ER stress (Figure 7B), or induce apoptosis (Figure 7C). The authors conclude that oligomerization-mediated aggregation propensity and direct SERCA2b interaction are prerequisites for ngSeipinL to inactivate SERCA2b and induce ER stress and apoptosis (Figure 7D).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 synthesize the mechanistic findings. The PLA data (C101) show that ngSeipinL(\u0394C) retains aggregation propensity, while the functional data (C102) show it lacks pathological effects. This dissociation between aggregation and pathology, combined with the earlier M6 mutant data (which showed the opposite dissociation), strongly supports the two-prerequisite model (C103). The conclusion is well-justified by the systematic mutant analysis. Figure 7D appropriately summarizes the phenotypes of different mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C122"
+    ],
+    "result": "The authors demonstrate that ngSeipinL expression distorts ER morphology and creates double-negative regions. Immunofluorescence showed endogenous Seipin and SERCA2b colocalized in the ER (Figure 7E). wtSeipinL expressed in Seipin-KO cells showed typical ER pattern and colocalized with SERCA2b (Figure 8A). In contrast, ngSeipinL expressed at 2.60-10.4 ng/cm\u00b2 showed abnormal distribution in enlarged cells, with SERCA2b also showing abnormal distribution. Cells expressing ngSeipinL contained strongly double-positive regions, SERCA2b-positive-only regions surrounding the nucleus, and multiple double-negative regions (Figure 8A-B). The percentage of cells with double-negative regions increased dose-dependently. Strong PLA signals were observed around double-negative regions. Such regions were hardly observed in cells expressing SeipinL(M6) or ngSeipinL(M6) but were observed with ngSeipinL(\u0394C). The authors conclude that oligomerization-dependent aggregates of ngSeipinL distorted ER shape, incorporated SERCA2b, and produced double-negative regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C106-C114, C122 provide detailed morphological characterization of ngSeipinL-induced ER distortion. The immunofluorescence data clearly show abnormal ER morphology with ngSeipinL expression. The double-negative regions are well-documented and correlate with aggregation propensity (present with ngSeipinL and ngSeipinL(\u0394C), absent with M6 mutants). The PLA signals around these regions (C111) support the aggregation interpretation. The dose-dependency (C110) strengthens the causal relationship. However, the interpretation that SERCA2b is \"incorporated\" into aggregates (C122) is somewhat inferential\u2014the data show colocalization and functional inactivation, but direct biochemical evidence of SERCA2b in aggregates would be stronger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors demonstrate that SERCA2b overexpression rescues ngSeipinL-induced pathology. Lowered [Ca2+] in Seipin-KO cells and Seipin-KO cells expressing wtSeipinL was significantly increased by SERCA2b introduction in a dose-dependent manner. In Seipin-KO cells expressing ngSeipinL, [Ca2+] was only slightly increased by high-level SERCA2b expression (20.8 ng/cm\u00b2), indicating severe SERCA2b inactivation (Figure 9\u2014figure supplement 1B). SERCA2b introduction had no effect on ngSeipinL aggregation (PLA, Figure 9A) or ER morphology distortion (immunofluorescence, Figure 9B). However, SERCA2b introduction significantly mitigated ER stress (Figure 9C), rescued slowed growth rate (Figure 9D), and greatly reduced apoptosis (Figure 9E) in cells expressing ngSeipinL. The authors conclude that ngSeipin induces ER stress and apoptosis through SERCA2b inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 provide strong evidence for the causal role of SERCA2b inactivation in pathology. The rescue experiments are well-designed: SERCA2b overexpression rescues pathology (ER stress, growth defects, apoptosis) without affecting aggregation or ER morphology distortion. This dissociation is critical\u2014it shows that the aggregation itself is not directly toxic, but rather the functional consequence (SERCA2b inactivation) drives pathology. The dose-response showing that much more SERCA2b is needed to rescue ngSeipinL-expressing cells (C125) quantitatively demonstrates the severity of inactivation. The conclusion (C131) is well-supported, though \"through\" implies causality that is strongly suggested but not definitively proven (e.g., by showing that SERCA2b-independent calcium restoration also rescues).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors demonstrate that ngSeipin expression at endogenous levels induces pathology in neuroblastoma cells. In SH-SY5Y Seipin-KO cells, the ratio of SeipinL to SeipinS was estimated as 4:9. Given ~15% transfection efficiency, ngSeipinL and ngSeipinS expressed by transfection (0.62 and 1.40 ng/cm\u00b2) would be comparable to endogenous levels. [Ca2+] in the ER was significantly decreased in Seipin-KO cells compared to WT (Figure 10A). This was rescued by wtSeipinL/wtSeipinS expression but further decreased by ngSeipinL/ngSeipinS expression or co-expression of wt and ng forms. Distorted ER morphology, ER stress (ERSE, UPRE, ATF4 reporters), and apoptosis were observed in Seipin-KO cells expressing ngSeipinL/ngSeipinS or co-expressing wt and ng forms (Figures 10B-D). A much higher frequency of apoptotic cells was observed in SH-SY5Y cells than HCT116 cells, suggesting greater vulnerability to ER stress. The authors conclude that ngSeipin expression at endogenous levels induces ER stress and apoptosis by decreasing ER calcium in a dominant manner in SH-SY5Y cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C142 provide critical validation in a disease-relevant cell type. The careful estimation of endogenous expression levels (C132-C133) and adjustment of transfection amounts strengthens the physiological relevance. The key finding is that pathology occurs at endogenous expression levels in neuroblastoma cells (C137-C139), unlike HCT116 cells which required higher expression. The greater vulnerability of SH-SY5Y cells (C140-C141) is important for understanding tissue-specific pathology in motor neuron disease. However, the transfection efficiency calculation (C133) involves assumptions that introduce uncertainty. The conclusion (C142) is well-supported for the cell culture model, though extrapolation to in vivo motor neurons requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors propose an evolutionary model for Seipin oligomerization. Yeast Sei1 and fly dSeipin lack N-glycosylation sites, and dSeipin functions as a dodecamer. Vertebrate Seipin gained an N-glycosylation site (Asn152Val153Ser154) in the luminal region, with the N-glycan interacting with Arg199 and Gly200 in the same molecule. The N-glycan at the protomer interface likely prevents dodecamer formation and induces undecamer formation. Non-glycosylated vertebrate Seipin is speculated to function as a dodecamer. Indeed, ngSeipin expressed at endogenous levels in Seipin-KO cells rescued [Ca2+] in the ER (Figure 3A), suggesting the putative dodecamer of non-glycosylated human Seipin is functional. The authors conclude that non-glycosylation of human Seipin itself is not detrimental to the cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C151 present an evolutionary and structural model. The comparative information about yeast and fly Seipin (C143-C144) is from prior literature. The structural information about vertebrate Seipin glycosylation (C145-C146) is well-documented. The inference about undecamer vs. dodecamer formation (C147) is reasonable based on structural considerations. The speculation about non-glycosylated vertebrate Seipin forming dodecamers (C148) is logical but not directly tested. The functional rescue at low expression levels (C149-C150) supports the idea that non-glycosylated Seipin can function normally. The conclusion that non-glycosylation per se is not detrimental (C151) is supported, with the important caveat that this applies only at low expression levels\u2014at high levels, non-glycosylation leads to pathological aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors synthesize the pathological mechanism of ngSeipin. At higher expression levels (>2.60 ng/cm\u00b2), ngSeipin causes more profound decrease in [Ca2+] in the ER than equivalent wtSeipin (Figure 3A). This decrease induces ER stress and UPR activation, leading to apoptosis (Figures 3B-C), as ER-localized molecular chaperones require Ca\u00b2\u207a for function and Ca\u00b2\u207a depletion destabilizes BiP-substrate complexes. The decrease in ER calcium also likely detrimentally affects intracellular signaling and synaptic transmission in the nervous system. The authors unraveled the mechanism: ngSeipin expressed at higher levels decreases ER calcium by inactivating SERCA2b, requiring both oligomerization-dependent aggregation and C-terminal region-dependent direct association with SERCA2b (Figure 7D). ngSeipin cannot maintain the putative dodecamer structure, aggregates and distorts ER morphology, then incorporates SERCA2b into aggregates via direct C-terminal interaction, resulting in SERCA2b inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C158 synthesize the complete pathological mechanism. The dose-dependent toxicity (C152) is well-documented. The connection between ER calcium depletion and ER stress (C153-C155) is supported by both the authors' data and cited literature on calcium-dependent chaperone function. The speculation about effects on signaling and synaptic transmission (C156) is reasonable but not directly tested. The mechanistic summary (C157-C158) accurately reflects the experimental findings: the two-hit model (oligomerization + C-terminal binding) leading to SERCA2b inactivation, ER calcium depletion, ER stress, and apoptosis. This represents a complete mechanistic explanation for how the disease-causing mutations lead to motor neuron pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The authors discuss therapeutic implications. SH-SY5Y cells are more vulnerable to ngSeipin expression than HCT116 cells, with endogenous-level expression sufficient to cause ER calcium decrease, ER morphology distortion, ER stress, and apoptosis in a dominant manner (Figures 10A-D). Importantly, increasing SERCA2b levels mitigated ngSeipin-mediated ER stress and apoptosis even though ngSeipin remained severely aggregated (Figures 9A-E). This raises the possibility that a potent SERCA2b activator could be used as a therapeutic for Seipinopathy and other ER stress-associated neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 discuss therapeutic implications. The differential vulnerability of SH-SY5Y cells (C159) is well-documented and important for understanding tissue specificity. The rescue by SERCA2b overexpression despite persistent aggregation (C160) is a key finding that separates the aggregation from the functional consequence. The therapeutic speculation (C161) is reasonable and appropriately cautious (\"raises the possibility\"). However, this is based on overexpression rescue in cell culture; translation to therapy would require demonstrating that pharmacological SERCA2b activation (rather than overexpression) is effective, and that this approach works in vivo. The authors appropriately cite related work on ER stress mitigation in ALS (C162-C164) to support the broader therapeutic concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors characterize SERCA and Seipin expression patterns. SH-SY5Y cells expressed Seipin mRNA five times more abundantly than HCT116 cells (Figure 1B(b)). In humans, Seipin mRNA is highly expressed in the nervous system compared to other tissues except testis, while SERCA2 mRNA is relatively ubiquitously expressed (Figure 1\u2014figure supplement 1). SERCA2 expression dominated SERCA1 and SERCA3 in both cell lines (Figure 1\u2014figure supplement 2A). SERCA2b is ubiquitously expressed, while SERCA2a and SERCA2c are expressed mainly in myocardium and skeletal muscle. SERCA2b expression dominated SERCA2a and SERCA2c in both cell lines (Figure 1\u2014figure supplement 2B). SERCA2b mRNA and protein levels in SH-SY5Y cells were comparable to HCT116 cells (Figures 1B(c-d)).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C36-C41 provide important expression profiling that justifies the experimental focus on SERCA2b. The qRT-PCR data (C29, C40) and database analysis (C30-C31) establish expression patterns. The demonstration that SERCA2b is the dominant isoform in both cell lines (C36, C39) validates the focus on this isoform. The comparable SERCA2b levels between cell lines (C40-C41) is important for interpreting the differential vulnerability observed later. This is solid characterization work that supports the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors characterize additional aspects of calcium handling. Small amounts (~20%) of wtSeipinS and ngSeipinS were produced from transfected plasmid (Figure 1E(c)), likely translated from the second methionine M65 based on Kozak consensus sequence similarity. HCT116 cells express mRNA encoding RyR1, IP3R1, IP3R2, and IP3R3 (Figure 1\u2014figure supplement 2C). RyR and IP3R channels remain active in HCT116 cells expressing ngSeipinL, as [Ca2+] in the ER was further decreased upon treatment with 4CmC, bradykinin, or both (Figure 1\u2014figure supplement 2D). Thapsigargin treatment rapidly increases cytosolic [Ca2+] by inhibiting SERCA1/2/3 without affecting RyR or IP3R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C51-C53 provide technical details about the experimental system. The observation of short form production (C45) and the Kozak sequence analysis (C46) explain an unexpected finding. The characterization of calcium channel expression (C51) and function (C52) demonstrates that the ER calcium decrease is specifically due to SERCA2b inactivation, not general calcium channel dysfunction. The thapsigargin mechanism (C53) is established knowledge that justifies its use as a tool. These are appropriate controls and characterizations that strengthen the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors use CDN1163, a SERCA2 activator, to validate SERCA2b inactivation. Treatment with CDN1163 increased [Ca2+] in the ER of HCT116 cells expressing wtSeipinL but did not increase [Ca2+] in cells expressing ngSeipinL (Figure 2\u2014figure supplement 1A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide pharmacological validation of SERCA2b inactivation. The differential response to CDN1163 (increases calcium with wtSeipinL but not ngSeipinL) supports the conclusion that ngSeipinL specifically inactivates SERCA2b. This is an important control that rules out alternative explanations such as general ER dysfunction or calcium leak. The experiment is well-designed and the interpretation is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The authors justify their focus on SERCA2 based on prior literature showing that Seipin physically associates with SERCA in fly and with SERCA2 in HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 appropriately cite prior work (Bi et al., 2014) that motivated the focus on SERCA2. This provides important context for the experimental design. The prior association data justified investigating whether this interaction is functionally relevant in the disease context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors provide background on BSCL genes and Seipin biology. The BSCL1 gene encodes AGPAT2, present in the ER membrane and involved in phospholipid biosynthesis. The BSCL2 gene encodes Seipin. Loss-of-function mutations of BSCL2 produce more severe symptoms than BSCL1. Seipin is involved in lipid droplet morphology in yeast. Both short and long forms of Seipin are translatable from 1.8 kb and 2.2 kb mRNA, with the long form more abundantly produced. Only the short form is translated from 1.6 kb mRNA. 1.8 kb mRNA is predominantly expressed in human brain, so human brain expresses mainly the long form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C14-C15, C22-C25 provide appropriate background from prior literature. These claims establish the genetic and biological context for the study. The information is accurately cited and provides necessary context for understanding why Seipinopathy is an interesting disease model for studying ER stress. This is standard background material that is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors describe the structural basis of Seipin oligomerization from prior work. The luminal region of each Seipin monomer consists of 8 \u03b2-strands (\u03b2-sandwich domain) and 3 \u03b1-helices. An ER membrane-anchored core ring is formed when the 3 \u03b1-helices of 11 monomers are gathered via multiple hydrophobic interactions between neighboring protomers, including between L226 and L220 and between L233 and V227. The core ring is surrounded by 11 \u03b2-sandwich domains tightly associated via hydrogen bonds (between S181 and Y215, Q239 and S217, H131 and R209) and hydrophobic interactions (between Y134 and M189).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 accurately describe structural information from prior work (Yan et al., 2018) that provides the rationale for the oligomerization mutants. This structural information is essential for understanding why the M6 mutations were chosen and why they should disrupt oligomerization. The description is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors characterize the nature of double-negative regions. Double-negative regions were not stained with anti-GAPDH antibody (Figure 8B). Seipin-KO cells expressing SeipinL(\u0394N), SeipinL(TM1), and SeipinL(TM2) contained double-negative regions similarly to cells expressing ngSeipinL (Figure 8\u2014figure supplement 1A), likely because truncation of the N-terminal region or swapping of the transmembrane domain adversely affected Seipin structural maintenance, making these mutants aggregation-prone. Double-negative regions were observed in cells simultaneously expressing mCherry-SERCA2b and mEGFP-ngSeipinL in a dose-dependent manner (Figure 8\u2014figure supplement 2A). Such regions contained ER-tagBFP but not LAMP1-mCherry (Figure 8\u2014figure supplement 2A-B), and may be identical to organized smooth ER whorl structures observed in cells overexpressing oligomeric fluorescent proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 provide detailed characterization of the double-negative regions. The exclusion of GAPDH (C115) shows these are not simply areas of low protein concentration. The observation with other aggregation-prone mutants (C116-C117) supports the connection to aggregation. The presence of ER markers but not lysosomal markers (C119-C120) indicates these are ER-derived structures, not degradative compartments. The speculation about similarity to ER whorls (C121) is appropriately cautious and provides a potential structural interpretation. This characterization strengthens the morphological analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The authors demonstrate the dominant nature of ngSeipinL aggregation. Flag-tagged ngSeipinL formed aggregates with Myc-tagged wtSeipin more extensively than Flag-tagged ngSeipinL(M6) when analyzed by PLA (Figure 4E), indicative of its dominant nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 provides evidence for the dominant-negative mechanism at the molecular level. The PLA data showing that ngSeipinL can recruit wtSeipin into aggregates more effectively than the non-oligomerizing M6 mutant supports the idea that ngSeipinL can poison wtSeipin function through co-aggregation. This is important for understanding the autosomal dominant inheritance pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors discuss broader implications for neurodegenerative disease. High levels of ER stress markers were observed in motor neurons from ALS patients with SOD1 A4V mutation. Oral administration of sodium phenylbutyrate and taurursodiol (chemical chaperones that mitigate ER stress) significantly slowed functional decline in ALS patients. These findings highlight the increasing importance of ER stress in understanding certain neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 appropriately cite related work on ER stress in ALS to provide broader context for the therapeutic implications. The citations are accurate and relevant. The conclusion about the importance of ER stress in neurodegeneration (C165) is a reasonable synthesis of the current work and cited literature. This discussion appropriately places the findings in a broader context.",
+    "result_type": "MINOR"
+  }
+]

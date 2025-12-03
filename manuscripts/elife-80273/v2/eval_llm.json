@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Tns3 is a direct transcriptional target of Olig2, Chd7, and Chd8 in oligodendroglia. ChIP-seq analysis shows that these three transcriptional regulators commonly bind to three putative promoters of Tns3 with active transcription marks (H3K27ac/H3K4me3), and acute deletion of Chd7 or Chd8 in postnatal OPCs/iOLs leads to downregulation of Tns3 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C9 provide converging evidence from ChIP-seq showing direct binding of all three factors to Tns3 promoters with active histone marks, and functional validation through transcriptome analysis showing Tns3 downregulation upon deletion of Chd7 or Chd8. The combination of binding data and functional consequences strongly supports direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C50",
+      "C51"
+    ],
+    "result": "Tns3 is transiently and specifically expressed in immature oligodendrocytes during differentiation. Tns3 shows the highest expression in iOLs relative to other brain cell types, with protein localized to cytoplasm and cell processes of CC1+ iOLs, peaking in iOL1s and early iOL2s, then decreasing as cells mature into myelinating oligodendrocytes. This expression pattern is conserved between mouse and human oligodendrogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C17, C50-C51 collectively demonstrate Tns3 as an iOL marker through multiple complementary approaches: scRNA-seq showing high transcript levels in iOL clusters, immunofluorescence showing protein localization, Western blot confirming isoform expression at specific developmental stages, and cross-species validation in human cells. The temporal and spatial specificity is well-documented across multiple datasets and techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53"
+    ],
+    "result": "Constitutive Tns3 loss of function leads to reduced viability in both mouse and humans. Analysis of Tns3 knockout mice shows developmental lethality, and gnomAD database analysis reveals that heterozygous loss-of-function variants of TNS3 cause approximately 80% developmental mortality in humans (LOEUF = 0.19), indicating high intolerance for TNS3 inactivation similar to key neurodevelopmental genes SOX10, CHD7, and CHD8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52, and C53 are supported by mouse genetic data showing lethality and human population genetics data from gnomAD showing strong selection against TNS3 loss-of-function variants. The LOEUF score of 0.19 provides quantitative evidence of intolerance to inactivation. However, the manuscript notes that surviving knockout mice still express Tns3 in oligodendroglia, suggesting genetic compensation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Acute CRISPR-mediated deletion of Tns3 in postnatal neural stem cells leads to a twofold reduction in oligodendrocyte numbers without affecting OPC generation or proliferation. The reduction in OLs is accompanied by a proportional increase in astrocytes (1.5-fold) without changes in absolute astrocyte numbers, and deletion of both Tns3 isoforms has similar effects as deletion of only full-length Tns3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20-C24 demonstrate a specific effect on OL differentiation using in vivo CRISPR electroporation with appropriate controls. The data show no changes in OPC proportion or proliferation at P11 and P22, while OL numbers are reduced by ~50%. The astrocyte increase appears to be a proportional artifact rather than a true increase in absolute numbers. The similar phenotype with deletion of both isoforms versus full-length only suggests the full-length isoform is the functional form.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Tamoxifen-induced Tns3 deletion in OPCs leads to 38-51% reduction in oligodendrocyte density across multiple brain regions (corpus callosum, cortex, fimbria, striatum) without affecting OPC density or proliferation. Stage-specific analysis shows that iOL1 density is unchanged, while early iOL2s are reduced by 30% and later OL stages by 50%, indicating Tns3 is required for progression through iOL stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-C33 provide comprehensive regional and stage-specific analysis using conditional knockout approach. The consistent ~40-50% reduction across multiple brain regions with unchanged OPC density and proliferation strongly supports a specific role in OL differentiation. The stage-specific analysis (C30-C32) provides mechanistic insight showing the requirement begins after the iOL1 stage. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Tns3 deletion leads to increased apoptosis of differentiating oligodendroglia mediated by p53 upregulation. TUNEL assays show a fivefold increase in apoptotic cells in Tns3-iKO brains, live-imaging shows fourfold increased cell death probability in culture, and immunofluorescence reveals tenfold increase in p53+ OPCs and fourfold increase in p53+ iOLs in Tns3-iKO compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34-C37 provide converging evidence from multiple assays (TUNEL, live-imaging, p53 immunofluorescence) demonstrating increased apoptosis and p53 upregulation in Tns3-deleted cells. The quantitative increases are substantial (4-10 fold) and consistent across methods. However, the claim that Tns3 'prevents' p53 upregulation is correlative; the mechanism by which Tns3 regulates p53 is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Tns3-iKO oligodendroglia show widespread transcriptional dysregulation with 2,082 differentially expressed genes. Downregulated processes include oligodendrocyte differentiation, gliogenesis, and lipid metabolism, while upregulated processes include cellular stress, p53 pathway, cell cycle regulation, and integrin signaling. Notably, Fyn is downregulated 1.4-fold while multiple integrin family members are upregulated, suggesting compensatory responses to impaired integrin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by RNA-seq analysis with appropriate statistical methods (edgeR, p<0.05) and GO enrichment analysis. The transcriptional changes are consistent with the observed phenotypes (reduced differentiation, increased apoptosis, p53 upregulation). The interpretation of integrin upregulation as compensatory is reasonable but speculative. Sample composition validation (C7\u2014figure supplement 1d-f) confirms similar OPC/iOL ratios between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C68"
+    ],
+    "result": "Tns3 likely mediates integrin-\u03b21 survival signaling to the actin cytoskeleton during oligodendrocyte differentiation. Tns3 and integrin-\u03b21 co-localize in CNP+ differentiating oligodendrocytes in culture, and Tns3 expression pattern closely matches that of Itgb1, Fyn, Bcar1/p130Cas, and Ptk2/Fak in both mouse and human oligodendroglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43, C44, and C68 provide correlative evidence (co-expression, co-localization) but lack direct functional demonstration that Tns3 mediates integrin-\u03b21 signaling. The co-localization data (C43) and expression pattern similarity (C44) are supportive, but the mechanistic claim (C68) is explicitly stated as 'likely' and inferred from phenotypic similarities to integrin-\u03b21 deletion. Direct biochemical or genetic evidence of Tns3-integrin interaction in oligodendrocytes is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Tns3 is expressed in newly formed oligodendrocytes during remyelination following lysolecithin-induced demyelination. Many Tns3+ iOLs are detected in remyelinating areas around lesion borders, while non-lesioned adult brain regions contain only sparse Tns3+ iOLs. Tns3 expression is also detected in some microglia/macrophages within the lesion area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by immunofluorescence data in a well-established demyelination model. The increased Tns3+ iOLs around lesions compared to unlesioned areas is quantified (Figure 2\u2014figure supplement 4d). The detection in microglia/macrophages (C19) is a secondary observation that may warrant further investigation but does not detract from the main finding about iOLs during remyelination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Olig2 binds 16,578 chromatin sites corresponding to 8,672 genes in O4+ oligodendroglial cells, including key regulators of OL differentiation (Ascl1, Sox10, Myrf, Chd8, Smarca4/Brg1). Olig2 binds both promoters (60%) and enhancers (40%) with active or poised/repressive states. Integration with Chd7 and Chd8 binding profiles reveals 1,774 commonly bound chromatin sites, with 832 peaks corresponding to active promoters of 654 protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe the ChIP-seq methodology and results that led to identification of Tns3 as a target. The data are from two replicates with appropriate peak calling and quality control. The integration strategy combining Olig2, Chd7, and Chd8 datasets is clearly described. The binding to known OL differentiation regulators validates the approach. This provides the foundation for identifying Tns3 as a target gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior published work has established that integrin-\u03b21 signaling is involved in survival of differentiating oligodendroglia, that integrin \u03b16\u03b21 association with Fyn kinase amplifies PDGF survival signaling, and that in fibroblasts Tns3 binds integrin-\u03b21 through its phosphotyrosine-binding domain and FAK through its SH2 domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 accurately cite prior published work (Benninger et al., 2006; Colognato et al., 2004; Cui et al., 2004; Liao et al., 2007; Georgiadou et al., 2017; Liao and Lo, 2021) to establish the biological context for interpreting Tns3 function. These are literature-based claims that provide rationale for the hypothesis that Tns3 mediates integrin signaling in oligodendrocytes. The citations appear appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background claims establishing the biological importance of oligodendrocytes and oligodendrocyte precursor cells in CNS development, myelination, remyelination, learning and memory, and various diseases including MS, glioma, developmental, neurodegenerative, and psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 are introductory/background claims citing established literature to provide context for the study. The citations appear appropriate for the claims made (Ffrench-Constant and Raff, 1986; Suzuki and Goldman, 2003; Chang et al., 2002; Compston and Coles, 2002; Neumann et al., 2019; Mount and Monje, 2017; Yang et al., 2020; McKenzie et al., 2014; Xiao et al., 2016; Steadman et al., 2019; Pan et al., 2020; Wang et al., 2020; Xin and Chan, 2020; Liu et al., 2011; Castelijns et al., 2020; Phan et al., 2020; Grubman et al., 2019; Bryois et al., 2020; Nott et al., 2019; F\u00fcnfschilling et al., 2012; Lee et al., 2012; Meyer et al., 2018). These provide important context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

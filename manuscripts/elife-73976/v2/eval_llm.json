@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "BMAL1 determines nuclear localization of CLOCK through heterodimerization. BMAL1 is strongly nuclear when expressed alone, while CLOCK is predominantly cytoplasmic. Co-expression of BMAL1 and CLOCK causes CLOCK to relocalize to the nucleus, and this relocalization occurs with both wild-type and L95E DNA-binding mutant BMAL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide converging evidence from confocal microscopy showing BMAL1's nuclear localization, CLOCK's cytoplasmic localization when alone, and CLOCK's nuclear relocalization upon BMAL1 co-expression. The L95E mutant control (C31) demonstrates this is independent of DNA binding, supporting the heterodimerization mechanism. The observations are consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The DNA residence time of CLOCK:BMAL1 complex is approximately 4.13 seconds, and this residence time is increased by CLOCK co-expression and reduced by the L95E DNA-binding mutation. FRAP experiments show that BMAL1 recovery is insensitive to bleach region diameter, indicating binding rather than diffusion dominates recovery. The L95E mutant shows reduced residence time (2.83 s) and reduced transcriptional output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide consistent FRAP-based measurements with appropriate controls (bleach region size, DNA-binding mutant) and statistical significance (p<0.0001 for C33, p=0.0002 for C35). The correlation between residence time and transcriptional output (C36, from prior literature) strengthens the functional relevance. The measurements are consistent with values for similar transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C47",
+      "C48"
+    ],
+    "result": "FCS measurements reveal that the L95E DNA-binding mutant diffuses more rapidly than wild-type BMAL1, consistent with fewer DNA interactions. Co-expressed BMAL1 and CLOCK exhibit a 2:1 nuclear concentration ratio. The L95E mutant shows no difference in CLOCK interaction affinity compared to wild-type, demonstrating that BMAL1 is a critical determinant of CLOCK's nuclear localization, mobility, and concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 use FCS to quantify diffusion and concentration ratios, with the L95E mutant serving as an appropriate control to separate DNA binding from protein-protein interaction effects. The 2:1 ratio (C42) is measured directly, and the conclusion (C48) is well-supported by the experimental observations showing BMAL1's effects on CLOCK properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C63"
+    ],
+    "result": "FCCS measurements show that the interaction between BMAL1 and CRY1 is more than 2-fold stronger than the interaction between BMAL1 and CLOCK. The V435R mutation in BMAL1's PAS-B domain reduces dimerization with CLOCK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides direct FCCS measurements comparing interaction strengths with reference to a figure. Claim C45 cites prior work on the V435R mutation. The measurements are internally consistent and the V435R mutant serves as a validation control for the FCCS approach. However, the manuscript notes that in vitro SPR measurements show stronger binding than live-cell FCCS, suggesting some quantitative uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Quantification of endogenous circadian proteins reveals approximately 16,000 BMAL1 and 8,000 CRY1 proteins per nucleus in lung fibroblasts, with BMAL1 copy numbers varying from 1,000 to 10,000 between individual cells. Significant cell-type variation exists, with fibroblasts showing >2-fold higher BMAL1 concentration than chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C83, C84, and C86 provide direct FCS-based measurements of protein abundance in endogenously labeled mice. The measurements are consistent with prior PER2 measurements (C83-C84 reference Smyllie et al., 2016). The cell-to-cell and cell-type variation (C49, C86) is documented with appropriate references to figures. The measurements provide critical quantitative parameters for modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "The CRY1::mRuby3 knock-in mouse exhibits normal circadian rhythms with a period of 23.9 hr in SCN slices and 23.3 hr in lung fibroblasts. BMAL1 and CRY1 protein concentrations show appropriate phase separation of approximately 8 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide validation that the fluorescent fusion proteins do not disrupt circadian function, with periods close to 24 hours and sustained rhythms. Claim C54 shows the expected phase relationship between BMAL1 and CRY1, supported by citation. These validations are essential for interpreting subsequent measurements from these mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "FCS measurements of PER2 and CRY1 interactions show that PER2 has the slowest diffusion coefficient among all measured circadian proteins. PER2 mobility is not altered by CRY1 co-expression, while CRY1 exhibits reduced mobility in the presence of PER2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide FCS measurements with appropriate controls (solo vs. co-expression). The asymmetric effect on mobility (PER2 unchanged, CRY1 reduced) is consistent with PER2 being the larger, slower-diffusing partner. The observations support the formation of PER2:CRY1 complexes and are referenced to a figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A quantitative model demonstrates how a finite pool of BMAL1 regulates thousands of target sites through multiple mechanisms: nuclear BMAL1 concentration determines CLOCK levels via heterodimerization, repression occurs through rhythmic BMAL1:CRY1 association and high-affinity PER2:CRY1 interactions that displace CLOCK:BMAL1 from DNA, and PER2:CRY1 has a dual role in both removing BMAL1:CLOCK from genes and enhancing movement to new target sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 describe the integrated model combining experimental measurements with ODE and stochastic modeling. The model is constrained by measured dissociation constants, protein concentrations, and residence times. The dual role of PER2:CRY1 (C7) emerges from stochastic modeling and is supported by sensitivity analyses. The model successfully fits FRAP data (Chi2=7.46) and predicts site occupancy consistent with ChIP-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ODE modeling predicts that CLOCK:BMAL1 binds 194-526 DNA sites at any time (consistent with ~2-fold ChIP enrichment), with CLOCK:BMAL1:CRY1 occupying 32-69 sites (11% of bound sites). Sensitivity analysis shows target site occupancy is relatively insensitive to site number (16.2% to 13.6% for 1,000-10,000 sites) but sensitive to unbinding rate (21.5% change across physiological range), positioning the system optimally for PER:CRY-mediated regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present model predictions and sensitivity analyses. The predicted site occupancy (C69) matches ChIP-seq data from multiple studies. The sensitivity analysis (C71-C72) is systematic and identifies the unbinding rate as a key regulatory parameter. The conclusion (C73) that the system is optimally positioned is supported by the analysis showing the physiological range falls in the sensitive part of the response curve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Stochastic modeling reveals that at peak BMAL1 (T40), 95% of 3,436 target sites are visited within one minute, with ~3.2 visits per minute per promoter. CLOCK:BMAL1:CRY1 accounts for ~15% of visits. BMAL1 concentration accounts for most variation in visitation frequency (1.3 to 2.7 visits/min), while PER2:CRY1 contributes 15% of visits even at its nadir. In the absence of PER2, mobility is severely reduced (<3 sites/min), demonstrating PER2's dual role as both repressor and facilitator of CLOCK:BMAL1 mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 present results from stochastic Gillespie simulations using parameters from the ODE model. The simulations reveal dynamics masked in the ODE model (visit frequencies, heterogeneity). The dual role of PER2 (C81) is demonstrated by comparing WT and PER2 KO conditions (C79-C80), showing opposite effects on occupancy vs. visitation rate. The modeling is rigorous and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "High-affinity interactions between circadian protein complexes offset low protein abundances, positioning the system optimally to regulate E-box binding. PER2 serves a dual role as both a negative feedback component and a facilitator of CLOCK:BMAL1 redistribution to new target sites. The stoichiometric balance of PER:CRY with CLOCK:BMAL1 is critical for the full circadian repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 present the main conceptual conclusions integrating experimental and modeling results. The high-affinity interactions (C23) are measured by FCCS, the optimal positioning (C24) is demonstrated by sensitivity analysis, the dual role of PER2 (C25) is shown by stochastic modeling, and the importance of stoichiometry (C26) follows from the combined results. These conclusions are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Only 10% of BMAL1 is bound in complex with CLOCK, which limits DNA binding potential but allows other interactions with factors like HIF and AhR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 provides a direct measurement from the study. Claim C88 interprets this finding in the context of crosstalk with other pathways, supported by citations. The low CLOCK:BMAL1 complex fraction is consistent with the measured 2:1 ratio and provides a mechanistic explanation for pathway crosstalk. The interpretation is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The BMAL1:CRY1 interaction is rhythmic and remarkably strong (higher affinity than other measured pairings). Without PER2, CRY1 exhibits near-persistent repression over 24 hours. The circadian clock relies on oscillations in the ability of key proteins to heterodimerize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by FCCS measurements showing CRY1 has >2-fold stronger binding to BMAL1 than CLOCK. Claim C90 is supported by modeling (removal of cycling components, Figure 5 supplement 1F). Claim C91 is a conclusion supported by the rhythmic changes in KD measured in Figure 3F. The evidence converges to support rhythmic affinity as a regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CLOCK:BMAL1 has an average residence time of 3 seconds, similar to other transcription factors. Different genes likely have different residence times, with robustly detected ChIP-seq peaks representing genes with slower unbinding rates. BMAL1 remains at ~10,000 molecules per nucleus even at its nadir, resulting in many non-productive DNA interactions that may contribute to pioneer factor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by FRAP measurements and comparison to literature values. Claim C93 is a reasonable inference supported by citation to prior work showing longer residence time at DBP. Claim C94 is supported by the protein quantification data and provides a functional interpretation consistent with cited literature on pioneer factors and phase-specific gene activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The BMAL1::EGFP transgene is expressed at >10-fold excess over native protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by smFISH measurements with reference to Figure 1 supplement 1B. This is an important validation showing that the ectopic expression system has substantial overexpression, which is relevant for interpreting the lentiviral transduction experiments but does not invalidate the measurements of relative effects and interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on circadian clock biology: Cell-autonomous clocks operate in virtually all mammalian cells, coordinating metabolism, immunity, and cell cycle. The clocks are characterized by transcription-translation feedback loops. CLOCK:BMAL1 binds E-box sites to induce hundreds of output genes including PER and CRY, which form repressive complexes. Prior work showed PER2 cycles with 12,000 copies per cell without circadian gating of nuclear localization, and CRY1 remains nuclear at all phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 provide established background knowledge supported by appropriate citations to prior literature. These claims set the context for the current work and are well-documented in the circadian biology field. The citations are appropriate and the statements accurately represent current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C85"
+    ],
+    "result": "Prior modeling work shows that low molecular abundances lead to desynchrony, which may be compensated by strict control of stoichiometries. A prior study found an eight-fold difference between CRY1 and PER2 in U2OS cancer cells, highlighting cell-type variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 cites prior modeling work (Gonze and Goldbeter, 2006) establishing the importance of stoichiometry at low abundances. Claim C85 cites Gabriel et al., 2021 showing different stoichiometry in cancer cells. Both claims accurately represent cited work and provide important context for interpreting the current measurements in primary cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Prior work and current modeling show that PER2 removes CLOCK:BMAL1 from DNA via CRY-dependent CK1 recruitment and CLOCK phosphorylation. Reducing residence time increases transcription factor mobility to new sites, reducing cell-to-cell variation. Some genes show maximal CLOCK:BMAL1 binding outside the global peak. CLOCK:BMAL1 may behave as a 'kamikaze' transcription factor, most potent when phosphorylated. PER:CRY displacement contributes 15% of visitations at peak CLOCK:BMAL1 concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97, and C98 cite prior literature establishing mechanisms and observations. Claims C96 and C99 integrate prior knowledge with current modeling results. The logic connecting reduced residence time to increased mobility (C96) is sound. The 15% contribution (C99) comes from stochastic modeling. The claims are mutually consistent and well-supported.",
+    "result_type": "MAJOR"
+  }
+]

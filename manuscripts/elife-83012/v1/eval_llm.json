@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "During EPM exploration, rats exhibited anxiety-related behavior by spending significantly more time in closed arms than open arms (C15). Recording 98 vH neurons (C16), the authors observed preferential firing in different EPM regions (C17), with peak firing activities spanning the entire maze despite minimal open arm exploration (C18). Peak firing density was concentrated around the center when shuttling between closed arms (C19), suggesting open areas are relevant for vH neuronal activity (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide converging evidence from behavioral data (C15) and neuronal recordings (C16-C19) that vH neurons respond to anxiogenic locations in the EPM. The statistical analysis (C15, C19) and density plots support the conclusion (C20), though the authors acknowledge limited statistical power due to minimal open arm exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors developed a novel ELM paradigm where removal of sidewalls induced anxiety behavior. Rats spent significantly more time in the non-changing (closed) arm compared to the changing (open) arm during CO configuration (C22), and more time in the center area during CO compared to CC or CT configurations (C23). A total of 133 neurons were recorded from six rats across 14 sessions (C24, C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate that the ELM successfully induces anxiety-related behavior with appropriate statistical support (C22: p=1.45e-05; C23: p=2e-05 and p=0.034). The methodological details (C59-C61) provide adequate experimental context. The behavioral readouts are consistent with anxiety responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C78"
+    ],
+    "result": "vH neurons exhibited remapping of activity that overrepresented anxiogenic locations. During CO exploration, peak firing activity was skewed toward the open area (C25), with a higher proportion of neurons showing peak activity in the open arm compared to CC (C26, p=0.0121). A larger proportion of neurons changed their peak firing from closed to open arms upon sidewall removal (C27, p=0.0066). No such differences were found during CT configuration (C28), suggesting remapping is contingent on anxiety rather than novelty or environmental enrichment (C29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C29, and C78 provide strong evidence for anxiety-specific remapping through statistical comparisons between CO and CT configurations. The control experiment (CT configuration, C28) effectively rules out novelty as an explanation. The chi-square tests provide appropriate statistical support, though the authors acknowledge in supplementary data that expected ranges affect significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Using GLM analysis, the authors found that 36.84% of neurons were significantly modulated by running speed during CC exploration (C30), increasing to 54.14% during CO exploration (C31). Even after correcting for speed influence using GLM residuals, a significant proportion of neurons still changed peak firing location from closed to open areas (C32), suggesting a prominent influence of anxiogenic location independent of running speed (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate appropriate control for a major confound (running speed). The GLM approach is methodologically sound, and the persistence of remapping effects after speed correction (C32) supports the interpretation that anxiety, not just speed changes, drives the observed neuronal dynamics (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Neurons were classified as putative pyramidal cells (60.15%, n=80) or putative interneurons (18.05%, n=24) based on spike shape and firing rate (C34, C35). Similar tendencies in open arm-associated activity were observed for both cell types (C36), and these tendencies were maintained after removing SWR-associated spikes (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate that the main findings are not driven by a specific cell type or by SWR-related activity. The classification criteria (trough-to-peak latency and firing rate) are standard in the field. The consistency across cell types and after SWR removal strengthens the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C79"
+    ],
+    "result": "Spatial properties of vH neurons were affected by anxiogenic areas. Both PiO and PiC neurons showed diminished spatial information (C38), increased sparsity (C39), and increased coherence (C40) when transitioning from CC to CO configuration. PiO neurons had more diminished spatial properties compared to PiC neurons (C41). Neurons that remapped to the open arm already showed lower spatial information and higher sparsity in the CC configuration (C42). The CC2-CT remapping score was significantly higher than CC-CO (C43, p=0.0358).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 and C79 provide comprehensive analysis of spatial properties with appropriate statistical tests (Wilcoxon signed-rank and rank-sum tests). The finding that remapping neurons already had different properties in CC (C42) is particularly interesting. The comparison of remapping scores (C43) supports the distinction between anxiety-related and novelty-related remapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C80"
+    ],
+    "result": "Direction-dependent firing of vH neurons was homogenized by anxiogenic experience. Neurons exhibited direction-dependent firing during CC exploration (C44), but this became homogenized during CO exploration (C45). The PFS index was significantly different between CC and CO configurations (C46, p=7.53e-09), but not between CC2 and CT configurations (C47). All PFS values during CC, CC2, and CT were significantly lower than during CO (C48).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C48, and C80 demonstrate a novel finding about direction-dependent firing with strong statistical support. The control comparison with CT configuration (C47) effectively rules out novelty as an explanation. The PFS metric appropriately quantifies directional similarity, and the results are consistent across multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C81"
+    ],
+    "result": "The activity of vH neurons predicted the extent of exploration of anxiogenic locations. Using SVM classification on neuronal pairs, the authors achieved above-chance prediction (95th percentile) in 9 out of 12 sessions (C49). Animal speed before entering the open arm was not different between proximal and distal explorations except in one session (C50). Successful prediction was maintained after controlling for speed and SWR activity, and when restricting to specific cell types (C51). Neuronal activity in the closed arm was sufficient to predict whether rats would perform proximal or distal explorations of the open arm (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C53, and C81 provide strong evidence for predictive coding in vH neurons. The SVM approach is appropriate, with proper cross-validation and shuffling controls. The control analyses (C50, C51) address potential confounds. However, the success rate (9/12 sessions) suggests some variability, and the wrapper-like method for selecting optimal neuronal pairs could potentially lead to overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C54"
+    ],
+    "result": "Anxiety-related firing does not solely depend on exploration of anxiogenic environments, but also on intentions to explore them. The finding that neuronal activity in closed arms predicts future exploration of open arms suggests that anxiety-related activity reflects both direct experience and anticipation of anxiety-inducing situations (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C54 represent an important interpretive conclusion supported by the predictive coding results (C49-C53). The inference is logical: if neuronal activity in safe (closed) areas predicts future anxiogenic exploration, this suggests anticipatory processing. However, this remains an inference rather than a directly demonstrated mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Spike shape stability was confirmed across recordings. 100% of neurons showed correlation >0.98 between spike shapes from the first and last third of recordings (C62), and >90% showed amplitude changes between -0.5% and 0.5% (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 provide important quality control data demonstrating stable single-unit recordings throughout sessions. This supports the validity of comparing neuronal activity across different maze configurations within the same session.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Nine male Long Evans rats (250-600g) were used with appropriate ethical approval (C55, C56). Recordings were performed using 12 independently movable tetrodes implanted in vH (C57). The EPM consisted of two closed and two open arms (9\u00d750 cm), elevated 70 cm above the floor (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide standard methodological details that are clearly stated and appropriate for the experiments. Ethical approval is documented (C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C77",
+      "C82"
+    ],
+    "result": "The ventral hippocampus plays a crucial role in anxiety-related behavior (C1), with vH neurons increasing firing in anxiogenic environments (C2). The authors conclude that neuronal dynamics within vH are subjected to anxiety experience (C77), expanding understanding of vH function by highlighting dynamic and predictive computations during anxiety (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C77, and C82 represent the overarching conclusions of the study. C1 and C2 are supported by both the current data and extensive prior literature. C77 and C82 are well-supported summary statements that accurately reflect the experimental findings, though C82 represents an interpretive claim about the significance of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The introduction provides extensive background on anxiety disorders, hippocampal function, and prior research on vH and anxiety. Claims include prevalence of anxiety disorders (C7, C8), effects of vH lesions (C9), prior observations of anxiety-related firing in vH (C10), circuit-level mechanisms (C11-C14), and comparisons with dorsal hippocampus function (C64-C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 and C64-C76 are all supported by appropriate citations to prior literature. These provide necessary context for the current study. The citations appear accurate and relevant, though the actual content of cited papers was not verified in this review.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews prior literature on TIGAR's biochemical functions and tissue-specific roles. TIGAR is described as a p53-inducible phosphatase with activity against F2,6P and other metabolites, generally suppressing glycolysis, though its effects are context-dependent across different tissues and disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by citations to prior literature and represent established background knowledge. These claims accurately summarize the known biochemical activities of TIGAR and its diverse roles in different tissues and pathological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Whole-body TIGAR knockout (TKO) mice display marked resistance to acute cold-induced hypothermia, with less than 1\u00b0C decline in core body temperature during 1 hour at 4\u00b0C, compared to 4-5\u00b0C decline in control mice. This protection is mediated by enhanced acetylcholine levels and increased cholinergic signaling at the neuromuscular junction driving skeletal muscle shivering thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 represent the central finding of the manuscript and are well-supported by experimental data shown in Figure 1A-B. The temperature measurements are clear and statistically significant (p<0.0001), with appropriate sample sizes (n=6-10). The mechanistic explanation (C10) is supported by subsequent experiments throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Brown and beige adipose tissue thermogenic markers (UCP1) are not significantly different or are reduced in TKO mice compared to controls, both at room temperature and following cold exposure, indicating that thermogenic adipose tissue does not account for the cold resistance phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by experimental data in Figure 1\u2014figure supplement 1A-C. The UCP1 measurements in brown and inguinal adipose tissue show no increase (and in some cases a decrease) in TKO mice, effectively ruling out enhanced brown/beige adipose thermogenesis as the mechanism. This is important negative data that helps narrow the mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "TKO mice show no significant differences from controls in body composition (fat/lean mass), skeletal muscle morphology, food intake, locomotor activity, or energy expenditure at room temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by experimental data in Figure 1\u2014figure supplement 1D-H. These measurements establish that the cold resistance phenotype is not due to baseline differences in body composition, metabolism, or activity. This is important control data, though the measurements were conducted at room temperature (21-22\u00b0C) rather than thermoneutrality (29-31\u00b0C), which may mask subtle metabolic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Adipocyte-specific TIGAR deletion does not confer cold resistance, and UCP1/TIGAR double knockout mice retain the cold-resistant phenotype of TKO mice, demonstrating that thermogenic adipose tissue is not responsible for the protection against hypothermia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by experimental data in Figure 1D-F. The tissue-specific knockout approach provides strong evidence that adipose tissue is not the relevant cell type. The UTKO experiment is particularly elegant, showing that cold resistance persists even when UCP1-dependent thermogenesis is eliminated. This effectively rules out brown/beige adipose tissue as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Skeletal muscle-specific TIGAR deletion does not confer cold resistance, and there are no significant changes in skeletal muscle expression of SERCA isoforms, myoregulin, or sarcolipin, indicating the cold resistance phenotype is not due to cell-autonomous effects in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by experimental data in Figure 1H and Figure 1\u2014figure supplement 2A-D. The skeletal muscle-specific knockout experiment, combined with the lack of changes in calcium handling proteins, effectively rules out intrinsic skeletal muscle alterations as the mechanism. This narrows the search to non-cell-autonomous mechanisms, likely involving neural control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Treatment with the SERCA inhibitor cyclopiazonic acid (CPA) causes paralysis and hypothermia equally in both control and TKO mice, indicating that SERCA functions downstream of TIGAR and that skeletal muscle contraction is essential for thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by experimental data in Figure 2A-B. The CPA experiment demonstrates that blocking skeletal muscle calcium handling eliminates the cold resistance phenotype in TKO mice, placing SERCA downstream of TIGAR function. However, the inference that this proves TIGAR acts upstream of muscle contraction (C37) assumes no alternative pathways exist, which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TKO mice display resistance to the paralytic and hypothermic effects of tubocurare (a nicotinic acetylcholine receptor antagonist) at both room temperature and 4\u00b0C, with TKO mice maintaining higher body temperature and locomotor activity compared to controls. This resistance is observed in both male and female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by experimental data in Figure 2C-E and associated videos. The tubocurare resistance is dramatic and clearly demonstrates enhanced cholinergic signaling in TKO mice. The observation that TKO mice remain mobile at 4\u00b0C despite tubocurare treatment (C42) is particularly striking. The sex-specific dosing (C43-C44) shows appropriate experimental design accounting for known sex differences in drug sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "TKO mice have a higher tubocurare LD50 (0.55 mg/kg) compared to control mice (0.44 mg/kg), with delayed onset of paralysis and extended survival time following lethal dose administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by experimental data in Figure 2F-H. The LD50 determination and survival curves provide quantitative evidence of tubocurare resistance. However, the LD50 difference is modest (~25% increase), and the confidence intervals are not provided. The survival data (C48) is more dramatic, showing a >2-fold difference in time to death, which strongly supports enhanced cholinergic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The tubocurare resistance in TKO mice is not due to changes in nicotinic acetylcholine receptor subunit expression, suggesting the protection against hypothermia results from increased cholinergic signaling to skeletal muscle rather than altered receptor composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data in Figure 2\u2014figure supplement 1A-E. The receptor subunit expression analysis rules out receptor upregulation as the mechanism for tubocurare resistance. The small reduction in \u03b4 and \u03b5 subunits (C50) would be expected to increase sensitivity to tubocurare, not decrease it, further supporting the conclusion that increased acetylcholine levels drive the phenotype (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TKO mice show increased skeletal muscle energetic demand during cold exposure, evidenced by decreased ATP levels, increased ADP/AMP, enhanced 18O-phosphate incorporation into adenine nucleotides, elevated plasma creatine, and activation of pentose phosphate pathway, purine nucleotide cycle, and amino acid utilization pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by experimental data in Figure 3A-D and Figure 3\u2014figure supplement 1A-B. The 18O-labeling experiment (C54) is particularly elegant, providing direct evidence of increased ATP turnover. The metabolomics pathway analysis (C57) identifies specific metabolic adaptations supporting increased energy demand. However, the claim that ADP/AMP are 'apparently increased' (C53) is qualified, suggesting statistical significance may be marginal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Skeletal muscle mitochondrial respiratory kinetics, ATP production efficiency, and contractile properties are not altered in TKO mice, indicating that enhanced thermogenesis results from increased signaling driving muscle contraction rather than intrinsic changes in muscle mitochondrial or contractile function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by experimental data in Figure 3\u2014figure supplement 2A-G. The comprehensive assessment of mitochondrial function and muscle contractility effectively rules out intrinsic muscle alterations. This is critical negative data that redirects the mechanism toward neural control. The conclusion (C62) is a logical inference from the data, though it assumes no other unmeasured muscle properties are altered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cholinergic neuron-specific TIGAR deletion (chTKO mice) recapitulates the cold resistance phenotype of whole-body TKO mice, with confirmed loss of TIGAR protein in cholinergic neurons of the superior cervical ganglion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by experimental data in Figure 4A-C. The immunofluorescence and Western blot data (C64) confirm specific deletion in cholinergic neurons. The cold resistance phenotype in chTKO mice (C65) is as dramatic as in whole-body TKO mice, providing strong evidence that cholinergic neurons are the relevant cell type. This is a key result that localizes the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "chTKO mice show resistance to both CPA and tubocurare similar to whole-body TKO mice, with maintained body temperature and locomotor activity during cold exposure despite drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by experimental data in Figure 4D-G and associated video. The pharmacological characterization of chTKO mice parallels the whole-body TKO results, confirming that cholinergic neuron TIGAR deletion is sufficient to confer the entire phenotype. The video evidence (C69) provides compelling visual documentation of tubocurare resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cold exposure increases c-Fos protein levels in the superior cervical ganglion of chTKO mice more than controls, without changes in acetylcholine transporter expression, consistent with increased cholinergic neuron activation and enhanced cholinergic tone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by experimental data in Figure 4H. The c-Fos upregulation (C70) provides evidence of increased neuronal activation. The lack of changes in VAChT and ChT (C71) indicates the mechanism is not simply increased transporter expression. The conclusions (C72-C73) are reasonable inferences from the data, though c-Fos is a general marker of neuronal activation and doesn't specifically indicate cholinergic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Skeletal muscle metabolomics in chTKO mice identifies the same three key pathways activated during cold exposure as in whole-body TKO mice (pentose phosphate pathway, purine nucleotide cycle, and amino acid utilization), consistent with increased cholinergic signaling driving skeletal muscle thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by experimental data in Figure 5. The metabolomics analysis demonstrates that cholinergic neuron-specific TIGAR deletion produces the same skeletal muscle metabolic signature as whole-body deletion, providing strong evidence that the mechanism flows from cholinergic neurons to skeletal muscle. The conclusion (C75) is a reasonable inference, though it assumes no other pathways contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "TKO and chTKO mice show increased numbers of acetylcholine receptor clusters at neuromuscular junctions and elevated total acetylcholine levels in skeletal muscle at both room temperature and after cold exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by experimental data in Figure 6A-D. The \u03b1-bungarotoxin labeling (C76) provides direct visualization of increased synaptic density, though the authors note 'large heterogeneity' in the data. The acetylcholine measurements (C77-C78) provide biochemical confirmation of increased cholinergic signaling. These results establish a structural and biochemical basis for enhanced neuromuscular transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TIGAR-deficient SH-SY5Y neuroblastoma cells secrete more acetylcholine and show increased incorporation of glucose-derived carbon into acetylcholine via pyruvate dehydrogenase (PDH), with threefold increased m1-glutamate enrichment indicating enhanced glycolytic flux to acetyl-CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by experimental data in Figure 6F-I. The stable isotope tracing experiments (C80-C82) provide elegant mechanistic evidence that TIGAR deletion increases glycolysis and acetyl-CoA production via PDH. The m1-glutamate enrichment (C82) specifically implicates PDH rather than pyruvate carboxylase. This cell culture work provides direct mechanistic support for the in vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "TIGAR-deficient SH-SY5Y cells show increased acetyl-CoA (~1.5-fold), acetyl-carnitine (~2.5-fold), and oxygen consumption rates, consistent with increased glycolysis driving PDH flux into the TCA cycle and enhanced mitochondrial oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by experimental data in Figure 6\u2014figure supplement 1C-E. The acetyl-CoA and acetyl-carnitine measurements (C83-C84) provide direct biochemical evidence linking glycolysis to acetylcholine synthesis. The Seahorse OCR data (C85) confirms increased mitochondrial activity. The conclusions (C86-C87) are reasonable inferences, though the causal chain assumes no alternative pathways contribute to the observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Telemetry measurements in chTKO mice confirm cold resistance and reveal differential cardiovascular responses: no difference in blood pressure or heart rate at room temperature, but during cold exposure, chTKO mice show decreased blood pressure (25 mmHg lower) and attenuated heart rate increase compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by experimental data in Figure 7A-C. The telemetry approach provides continuous, high-quality physiological measurements. The cardiovascular findings (C90-C91) are consistent with increased parasympathetic (cholinergic) tone during cold exposure. However, the blood pressure difference (25 mmHg) is substantial and raises questions about whether this could compromise perfusion or contribute to the phenotype in unexpected ways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Electromyography reveals that skeletal muscle contraction activity is similar between chTKO and control mice at room temperature and during the first 10 minutes of cold exposure, but subsequently increases to nearly twice the control level in chTKO mice while control mice plateau.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by experimental data in Figure 7D-E. The EMG measurements provide direct evidence of enhanced shivering thermogenesis in chTKO mice. The temporal pattern (similar initially, then diverging) suggests that chTKO mice can sustain higher levels of shivering, possibly due to enhanced cholinergic drive. This is compelling evidence linking cholinergic signaling to skeletal muscle thermogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "AMPK activation (T172 phosphorylation) is similar between chTKO and control mice at room temperature but is further increased in chTKO mice after 1 hour at 4\u00b0C, consistent with enhanced skeletal muscle energy demand from increased shivering. These changes in blood pressure, heart rate, shivering, and AMPK activation collectively indicate generalized increased cholinergic signaling during cold exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by experimental data in Figure 7F. The AMPK phosphorylation data (C94-C95) provides molecular evidence of increased energy demand in skeletal muscle. The integrative conclusion (C96) is a reasonable synthesis of the cardiovascular, EMG, and biochemical data, though it assumes all changes are directly attributable to cholinergic signaling rather than secondary adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript reviews literature on thermogenesis in humans and rodents, noting controversies about the role of brown/beige adipose tissue in humans, the dominance of skeletal muscle in basal metabolism and exercise, and the relative contributions of non-shivering versus shivering thermogenesis to heat production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C107 are all supported by citations to prior literature and represent accurate summaries of the field. These claims provide important context for interpreting the significance of the findings, particularly the emphasis on skeletal muscle as a major contributor to thermogenesis (C100, C103-C106) and the statement that shivering is a dominant form of heat production during acute cold exposure (C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study demonstrates that cholinergic neuron TIGAR deficiency enhances cold-induced skeletal muscle shivering thermogenesis, likely mediated by increased acetylcholine signaling at the NMJ. Despite increased synaptic density and acetylcholine levels at room temperature, the phenotype only manifests during high cholinergic demand (cold exposure), suggesting increased cholinergic signaling reserve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 represent the main conclusions of the study. C108 and C111 are well-supported by the experimental data throughout the manuscript. C109 is a reasonable inference from the tubocurare resistance and acetylcholine measurements. C110 and C112 are thoughtful interpretations of why the phenotype is cold-specific, though they are somewhat speculative. The 'signaling reserve' concept (C112) is an interesting hypothesis but lacks direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript discusses that cholinergic and sympathetic signaling can affect vascular blood flow and behavior contributing to thermoregulation, but notes that tail heat loss accounts for only 5-8% of whole-body heat loss in mice, making vasoconstriction unlikely to play a significant role in the observed phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by citations to prior literature. These claims acknowledge alternative mechanisms while arguing they are unlikely to be major contributors. However, the dismissal of vascular contributions (C114) may be premature given the substantial blood pressure differences observed in chTKO mice (C90), which could affect heat distribution and conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The manuscript discusses the mechanism by which TIGAR deletion increases acetylcholine synthesis, arguing that increased glycolysis and acetyl-CoA production is more likely than altered protein-protein interactions, given that acetyl-CoA levels are normally below the Km for choline acetyltransferase and metabolic analyses demonstrate increased glucose-derived acetyl-CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 represent mechanistic discussion and interpretation. C115 is supported by prior literature citations. C116 is speculation but reasonable given the data. C117-C119 cite prior literature on acetyl-CoA availability and choline uptake. C120-C121 synthesize the experimental findings into a coherent mechanistic model. While the proposed mechanism is plausible and supported by the isotope tracing data, alternative mechanisms are not rigorously excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The manuscript discusses potential therapeutic implications, noting that myasthenia gravis and Alzheimer's disease involve cholinergic dysfunction, that current therapies have limitations, and that TIGAR inhibition might provide a novel approach to enhance cholinergic signaling and improve skeletal muscle function, memory, and dementia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C126 are supported by citations to prior literature and accurately describe the diseases and current treatments. However, C127 is highly speculative and represents a therapeutic hypothesis rather than a demonstrated result. While the logic is reasonable (TIGAR deletion increases cholinergic signaling, which could benefit cholinergic-deficient conditions), no experiments in disease models are presented, and potential adverse effects of systemic TIGAR inhibition are not discussed.",
+    "result_type": "MINOR"
+  }
+]

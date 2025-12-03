@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C85"
+    ],
+    "result": "The authors developed 5-Bn-2-e-NAD+ as an improved orthogonal NAD+ analog for chemical genetic studies. This analog is a much better substrate for engineered PARP-7 (IG-PARP-7) and PARP-12 (IG-PARP-12) compared to the previously used 5-Bn-6-a-NAD+, while remaining orthogonal to wild-type PARPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C85 are well-supported by experimental data shown in Figure 1d and Figure 1\u2014figure supplement 1b. The chemical design rationale based on the PARP1-BAD crystal structure is sound, and the orthogonality to wild-type PARP-7 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Using the chemical genetic approach with 5-Bn-2-e-NAD+ and IG-PARP-7, the authors identified 250 direct PARP-7 targets, many of which are RNA binding and regulatory proteins. Using BioID proximity labeling, they identified 189 PARP-7 interacting proteins, with a subset overlapping between the two approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by LC-MS/MS data from both chemical genetic and BioID approaches. The overlap between methods (Figure 2a) provides orthogonal validation. However, the criteria for defining 'valid' targets (2-fold enrichment) could be more stringent, and false discovery rates are not explicitly stated for the proteomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Gene ontology analysis of PARP-7 targets reveals significant enrichment of terms related to viral processes, RNA regulation, and innate immune response, consistent with PARP-7's known role in regulating innate immunity during viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by the GO analysis shown in Figure 2b. The enrichment is statistically significant (p<0.05) and aligns with prior literature (C7-C9). However, the analysis is descriptive and does not provide mechanistic insight into how PARP-7 regulates these processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PARP-13 is identified as a major target of PARP-7, with both PARP-13.1 and PARP-13.2 isoforms being MARylated by PARP-7 in cells. PARP-13.1 is the major endogenous isoform interacting with PARP-7 in HEK 293T cells, and MARylation is PARP-7-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C26 are well-supported by multiple lines of evidence including BioID (Figure 3a), co-expression experiments (Figure 3b), and chemical genetic data. The identification of PARP-13 as a top target is consistent across different experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors characterize Phthal01 as a PARP-7 inhibitor with IC50 of 14 nM in vitro and EC50 of ~60 nM in cells. Phthal01 is at least 13-fold selective for PARP-7 over other PARP family members (except PARP-1/2) and completely inhibits PARP-7 catalytic activity at 1 \u03bcM, demonstrating that PARP-7 catalytic activity is required for PARP-13.2 MARylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by in vitro profiling data and cellular inhibition experiments (Figures 3\u2014figure supplement 2, 4\u2014figure supplement 1f). However, the selectivity against PARP-1 and PARP-2 is limited (IC50 21 nM and 28 nM respectively), which could complicate interpretation of cellular experiments. The conclusion about PARP-7 catalytic requirement (C31) is valid but relies on inhibitor specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In vitro reconstitution experiments demonstrate that GST-PARP-7 directly trans-MARylates His6-SUMO-PARP-13.2 in a time-dependent manner, while PARP-10 poorly trans-MARylates PARP-13.2 despite strong auto-MARylation. The PARP-7/PARP-13.2 interaction is independent of PARP-7 catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by in vitro biochemical data (Figure 3\u2014figure supplement 1b,c). The experiments use physiological NAD+ concentrations (100 \u03bcM) and appropriate controls. The demonstration that interaction is independent of catalytic activity (C34) is important for understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Chemical stability studies using HgCl2 and NH2OH demonstrate that PARP-7 MARylates PARP-13.2 predominantly on cysteine residues (~90% HgCl2-sensitive), while PARP-10 auto-MARylates predominantly on Glu/Asp residues (~90% NH2OH-sensitive). PARP-7 auto-MARylation appears to occur on both cysteine and acidic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are well-supported by chemical stability experiments (Figure 4b). The differential sensitivity to HgCl2 vs NH2OH provides strong evidence for distinct amino acid acceptors. The conclusion about PARP-13.2 as a selective PARP-7 target (C43) is supported by the lack of PARP-10-mediated trans-MARylation (C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The Glu/Asp-selective ADPr hydrolase MacroD2 efficiently reverses PARP-10 auto-MARylation but only partially reverses PARP-7 auto-MARylation and PARP-7-mediated PARP-13.2 trans-MARylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by enzymatic removal experiments (Figure 4c). The differential efficiency of MacroD2 provides orthogonal evidence for distinct amino acid acceptors, consistent with the chemical stability studies. However, the partial reversal of PARP-7 modifications could also reflect incomplete enzyme activity or steric constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The half-life of ADPr in PARP-13.2 (189 min) is significantly longer than in PARP-10 (15 min) in HEK 293T cells. Both Cys-ADPr and Glu/Asp-ADPr bonds are chemically stable in denatured lysates, indicating that the differential stability in cells is due to enzymatic rather than chemical differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by time course experiments (Figure 4d-f) with appropriate replicates. The denaturation control (C49, Figure 4\u2014figure supplement 2a) is critical for distinguishing chemical vs enzymatic stability. However, the conclusion assumes that denaturation completely inactivates all enzymes, which may not be absolute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Inhibition of PARP-7 catalytic activity by Phthal01 increases endogenous PARP-7 protein levels but does not affect endogenous PARP-13.1 levels under basal conditions, suggesting that PARP-7 levels are regulated by its catalytic activity while PARP-13.1 levels are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by experimental data in both overexpression (Figure 4) and endogenous systems (Figure 4\u2014figure supplement 2c). The observation is consistent with prior literature (C109). However, the mechanism of this regulation is not explored, and the lack of effect on PARP-13.1 may be context-dependent (basal vs stimulated conditions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Using EThcD mass spectrometry, the authors identified 1712 ADPr sites across all conditions. In GFP-PARP-7 overexpressing cells, endogenous PARP-13 is MARylated exclusively on cysteine residues, with seven Cys-ADPr sites identified. Six of these sites are in the N-terminal zinc finger domains (five being Zn-coordinating cysteines), and one (Cys721) is in the catalytic domain. All ZnF Cys-ADPr sites are conserved between human, mouse, and rat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are strongly supported by high-quality EThcD MS data with >90% localization probability (Figure 5a-c, supplementary figures). The identification of specific sites with structural context (ZnF domains, Zn-coordinating residues) and evolutionary conservation provides compelling evidence. The MS methodology is state-of-the-art for site-specific ADPr analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Co-expression of PARP-7 and PARP-13.2 reveals additional Cys-ADPr sites in PARP-13 ZnF domains. While other amino acid-ADPr sites (Arg, Tyr) are detected, their intensities are at least an order of magnitude lower than Cys-ADPr. Cys MARylation in PARP-13.2 is PARP-7-dependent, as only Ser-ADPr and Arg-ADPr are detected in PARP-13.2 alone condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by comparative EThcD MS analysis across conditions (Figure 5a, supplementary figures). The PARP-7 dependence of Cys-ADPr (C66) is clearly demonstrated by the absence of Cys-ADPr in PARP-13.2 alone condition. The quantitative comparison of intensities (C65) strengthens the conclusion about Cys as the major acceptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GFP-PARP-7 is auto-MARylated predominantly on cysteine residues, including Cys39 (previously identified), Cys543, and Cys552 in the catalytic domain. Lower intensity Tyr-ADPr, His-ADPr, and Arg-ADPr sites are also detected, but cysteine residues are clearly the major auto-MARylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by EThcD MS data (Figure 5\u2014figure supplement 6). The identification of Cys39 is consistent with prior work (C69), providing validation. The conclusion that Cys is the major acceptor (C72) is well-supported by the intensity data, though the lower intensity sites could represent either auto-MARylation or trans-MARylation by other PARPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mutagenesis studies demonstrate that mutation of all ZnF cysteine residues to alanine substantially reduces PARP-13.2 MARylation, while mutation of ZnF 1-2 or 3-4 cysteines modestly reduces MARylation. The reduction is not due to loss of PARP-7/PARP-13 interaction, supporting that ZnF cysteine residues are the primary MARylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by mutagenesis experiments (Figure 5d) and co-IP controls (Figure 5\u2014figure supplement 8). The mutagenesis validates the MS site identification. However, the 'substantial' vs 'modest' reduction is qualitative rather than quantitative, and residual MARylation in the CtoA ZnF all mutant suggests additional sites exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Proteome-wide analysis identified 939 unique ADPr sites on 490 proteins as putative PARP-7 targets, with the majority (471 sites on 374 proteins) on cysteine residues. 48 proteins overlap between Cys-ADPr modified proteins and chemical genetic targets, with PARP-13 as a top target. Most proteins are MARylated on a single cysteine, while PARP-13 uniquely has 11 Cys-ADPr sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by proteome-wide EThcD MS analysis (Figure 6a-d). The criteria for defining PARP-7 targets (unique or \u22655-fold enriched in PARP-7 condition) is reasonable but somewhat arbitrary. The overlap with chemical genetic data (C79) provides validation. PARP-13's exceptional number of sites (C82) is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "IceLogo analysis of Cys-ADPr sites reveals a preference for proline (followed by arginine) at the +2 position relative to the modified cysteine, but no strong preference at the -1 position. This suggests that proximal sequence is not a strong determinant for PARP-7 MARylation targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by IceLogo analysis (Figure 6c). The weak sequence preference is an important finding, suggesting that PARP-7 targeting may depend more on protein-protein interactions or structural context than linear sequence motifs. However, the analysis only examines \u00b18 positions and may miss longer-range determinants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "PARP-7 is a critical regulator of innate immune response, with knockout enhancing IFN-\u03b2 expression and reducing viral titers. The protein targets of PARP-7 MARylation are largely unknown, and most PARP family members catalyze MARylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6-C9 establish the biological context and knowledge gap. These are well-supported by citations to prior literature and represent established knowledge in the field. This provides the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Historically, glutamate, aspartate, and arginine were considered major ADPr acceptor residues based on chemical stability studies. More recent mass spectrometry studies have revealed that serine, tyrosine, histidine, and cysteine can also act as ADPr acceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 accurately summarize the historical evolution of understanding about ADPr acceptor residues, supported by appropriate citations. This provides important context for the significance of identifying cysteine as a major PARP-7 target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "PARP-13 exists as two major isoforms (PARP-13.1/ZAPL and PARP-13.2/ZAPS), with PARP-13.1 being catalytically inactive despite having the catalytic domain. PARP-13.2 is induced by interferons and viral infection, while PARP-13.1 is constitutively expressed and is the major isoform in HEK 293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 accurately describe established knowledge about PARP-13 isoforms, supported by appropriate citations. This provides essential background for interpreting the MARylation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PARP-13.1 and PARP-13.2 have distinct roles in antiviral immunity, with PARP-13.2 negatively regulating interferon response by degrading host mRNAs and PARP-13.1 targeting viral RNA. The ZnF domains are required for RNA binding, and MARylation of ZnF cysteines may alter RNA binding or disrupt PARP-13.2/RIG-I interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 are supported by citations to prior work. However, claims C90 and C94 are speculative hypotheses about the functional consequences of MARylation that are not tested experimentally. While plausible based on the structural role of ZnF cysteines, these remain to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "PARP-13 is modified by multiple PARP family members at different amino acid acceptors: PARP14 MARylates Glu/Asp residues, PARP-13 can be PARylated (possibly by PARP1/2 on serines), and PARP-7 MARylates cysteines. This suggests PARP-13 is an integrator of PARP signaling, with different modifications potentially eliciting different effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by citations to prior work and the current MS data showing Ser-ADPr in PARP-13.2 alone condition. Claims C98-C99 are reasonable inferences but remain speculative without functional validation. The integration hypothesis is compelling but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Cysteine MARylation was originally described for bacterial Pertussis toxin and endogenous Cys MARylation was observed 30 years ago, but the responsible enzymes were unknown. This study provides strong evidence that PARP-7 catalyzes Cys MARylation, consistent with previous identification of Cys39 as a PARP-7 auto-MARylation site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 accurately place the current findings in historical context with appropriate citations. The claim that this study provides 'strong evidence' for PARP-7 as a Cys MARylation enzyme (C103) is well-supported by the comprehensive data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "HPF1 acts as an auxiliary factor influencing PARP1/2 amino acid target preference, switching PARP1 from Glu/Asp to Ser PARylation. PARP-7 may similarly have auxiliary factors influencing its amino acid target preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 accurately describe the HPF1-PARP1/2 system based on cited literature. However, claim C108 is purely speculative without any experimental evidence for PARP-7 auxiliary factors. While this is a reasonable hypothesis for future investigation, it remains unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "A catalytically inactive PARP-7 mutant is expressed at higher levels than WT-PARP-7. RBN-2397, the first PARP-7 inhibitor, is currently in Phase I clinical trials for solid tumor cancers, representing the first clinical trial for a MARylating PARP inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by citation to prior work (C109) and clinical trial information (C110-C111). This provides important context for the therapeutic relevance of understanding PARP-7 targets and mechanisms.",
+    "result_type": "MINOR"
+  }
+]

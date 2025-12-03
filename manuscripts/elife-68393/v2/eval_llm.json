@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C91",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The authors developed an optical-genetic toolkit for simultaneous reading and writing of neural responses in behaving macaques. This involved viral co-expression of GCaMP6f and C1V1 in excitatory V1 neurons, and a widefield imaging system with negligible cross-talk between optical read and write components. Expression was stable for >2 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, C14-C23, C70-C73, C91, and C147-C151 collectively demonstrate successful development and validation of the toolkit. The viral injection methods, imaging system specifications, expression timelines, and long-term stability are well-documented with appropriate technical details and supporting figures. The negligible cross-talk is validated by spatial specificity of responses (C26-C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C76"
+    ],
+    "result": "Low-power optostimulation (<1 mW/mm\u00b2) in macaque V1 causes large behavioral masking effects, significantly elevating detection thresholds for visual targets. Both monkeys showed significant threshold increases (35-64% in Monkey L, significant even at 0.3 mW/mm\u00b2 in Monkey T), with animals unable to compensate despite being rewarded only for visual target detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C50 provide converging behavioral evidence across two animals at multiple power densities. The experimental design (C34-C39, C76) appropriately tests perceptual substitution by rewarding only visual target detection, not optostim. Statistical significance is demonstrated with appropriate controls and replication. The criterion shifts (C44-C45, C48-C49) provide additional evidence of perceptual impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Sublinear interactions between visual and optogenetic-evoked responses in V1 can account for the behavioral masking effects. Optostim caused 50-100% reduction in visual-evoked GCaMP responses, with the magnitude of neural suppression correlating with behavioral threshold increases. Pilot electrophysiology confirms sublinearity at the spiking level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C55-C65, C102-C104 demonstrate clear neural correlates of behavioral masking. The sublinear interaction is well-documented across experiments (C57-C62) with appropriate quantification (C59, C64-C65). The inference that GCaMP signals reflect spiking activity is supported by prior work (C55-C56), and pilot electrophysiology (C104) provides convergent evidence, though full electrophysiological data are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C67",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "The neural and behavioral masking effects of optostimulation are spatially selective. Optostim had much smaller effects when the visual target was presented at the GCaMP-only site compared to the C1V1 site, despite overlapping receptive fields and uniform illumination of both sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53-C54, C67-C69, C82 demonstrate spatial specificity through direct comparison of effects at C1V1 versus GCaMP-only sites. The control experiment is well-designed, with appropriate consideration of receptive field overlap (C161-C162). The weak optostim response at the GCaMP-only site (C67-C68) is acknowledged and discussed, strengthening the interpretation of spatial selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C176",
+      "C177"
+    ],
+    "result": "Very low effective optical power densities (time-averaged <0.25 mW/mm\u00b2) are sufficient to elicit reliable neural responses and behavioral effects. The reported peak power densities overestimate effective power due to 22% duty cycle and suboptimal wavelength for C1V1 excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101, C176-C177 establish that effective power is much lower than reported peak values. The duty cycle correction is straightforward (C98), and pilot data (C99, C176) support proportionality to time-averaged power. The wavelength consideration (C100-C101) is appropriate. This is important for translational applications, though the exact effective power remains somewhat uncertain without direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Widefield GCaMP imaging does not capture all visual signals available for detection in V1. Optostim can reduce visual-evoked GCaMP responses by 100%, yet monkeys still perform detection with elevated thresholds, suggesting additional signals from lateral spread, deeper layers, or single-neuron information lost in pooling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 document a clear discrepancy between complete neural suppression measured by GCaMP and residual behavioral performance. The proposed explanations (C137-C139) are reasonable speculations about limitations of widefield imaging. This is an important observation about the method's limitations, though the specific mechanisms remain uncertain and would require additional experiments to resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C89"
+    ],
+    "result": "Optostim-evoked responses are largely inseparable perceptually from visual-evoked responses, demonstrating perceptual substitution. Monkeys show large masking effects even when motivated to ignore optostim, do not learn to compensate over time, and the effect is similar to visual masking where mask and target need not be identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C83, C89 provide strong evidence for perceptual substitution. The key experimental design feature (rewarding only visual detection, C76) distinguishes this from prior work. The inability to learn compensation (C83) and similarity to visual masking (C89) strengthen the interpretation. This represents a conceptual advance in understanding optogenetic perturbations as perceptual substitutes rather than mere distractors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The cortical area responding to the visual target (~4 mm\u00b2 at half-max) was approximately twice the size of the optostimulation-evoked response area (~2 mm\u00b2), and the two stimuli likely elicited responses with different spatial profiles even in overlapping regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide appropriate spatial analysis of the stimuli. The calculations are based on established receptive field sizes (C84) and cortical magnification (C85), with direct measurements of optostim spread (C24, C86). The inference about different spatial profiles (C88) is reasonable. This contextualizes the masking effect and addresses potential concerns about spatial matching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The results are consistent with significant V1 contribution to gain control/normalization, extending prior findings by Nassi et al. at much lower power densities (1-2 orders of magnitude lower), avoiding concerns about tissue heating. However, saturation of V1 neurons cannot be ruled out as contributing to observed sublinearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 appropriately contextualize findings relative to prior work. The comparison to Nassi et al. (C110-C113) is fair, and the advantage of lower power (C111-C112) is well-argued. The acknowledgment that saturation cannot be ruled out (C109) is appropriately cautious. This represents an important confirmation and extension of prior findings with improved methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The current results contrast with Andrei et al., who found no interaction between average visual and optogenetic responses but instead reduced noise correlations. This difference is attributed to examining interactions under very different regimes of cortical activity (bright background vs. dark background, >2 orders of magnitude difference in luminance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 provide appropriate comparison to contrasting prior work. The explanation for different results (C119) based on different activity regimes is reasonable and well-articulated. This demonstrates awareness of boundary conditions for the observed effects and appropriately contextualizes the findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Low-power optostim can elicit GCaMP population responses exceeding those to Gaussian targets, but this does not necessarily mean optostim exceeds all possible visual responses. Gaussian targets may be surprisingly effective at driving pooled V1 responses despite being suboptimal for individual neurons, as they activate a large fraction of neurons at the retinotopic location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C132 provide nuanced discussion of response magnitudes. The observation that optostim exceeds Gaussian target responses (C120) is documented, but the interpretation is appropriately cautious (C121-C124). The reasoning about population responses to Gaussian stimuli (C126-C131) is well-developed and supported by behavioral threshold comparisons (C132). This demonstrates sophisticated understanding of population coding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Optostim had weak and variable effects on reaction times and no clear effect on saccade endpoints, contrasting with the large effects on detection performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report negative/weak findings for reaction time and saccade endpoints, supported by supplementary figures. These are appropriate control analyses that help characterize the specificity of the masking effect. The contrast with strong detection effects (C40-C50) is notable and suggests the effect is primarily on detection sensitivity rather than motor execution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Optostimulation tends to increase response variability, but this effect is not present in all experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 reports a trend toward increased variability with optostim, but notes inconsistency across experiments. The supporting figure (Figure 6\u2014figure supplement 1) is referenced but the claim is stated cautiously. Without seeing the full data and statistical analysis, it's difficult to assess whether this represents a real but weak effect or simply noise. Additional analysis would be needed to determine significance and consistency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Blue GCaMP excitation light can affect detection performance due to C1V1's broad excitation spectrum, but minimizing blue light to 0.01-0.05 mW/mm\u00b2 resulted in behavioral thresholds comparable to training without blue light, establishing negligible cross-talk between read and write components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 document an important technical issue and its resolution. The pilot data (C30) identified the problem, the solution (C31) is clearly described, and validation (C32-C33) confirms negligible impact. This is critical for interpreting the main results, as it rules out blue light as a confound. The power levels used are an order of magnitude lower than optostim (noted in methods), further supporting negligible impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The eYFP tag attached to C1V1 creates fluorescent baseline that reduces functional GCaMP signal (\u0394F/F), though \u0394F remains comparable. Future use of red fluorescent tags would address this limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 acknowledge a technical limitation with supporting data (C22-C23 show elevated baseline but comparable \u0394F). The proposed solution (C75) is reasonable speculation. This is an honest assessment of a methodological limitation that does not fundamentally compromise the results, as \u0394F (the actual signal) remains comparable between sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study demonstrates the importance of combining optogenetic stimulation with optical imaging to calibrate stimulation in biologically-relevant regimes. Future directions include real-time closed-loop feedback and patterned optostim using projectors to generate arbitrary spatiotemporal patterns mimicking visual responses at relevant topographic scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 provide appropriate discussion of methodological contributions and future directions. The importance of calibration (C141) is well-demonstrated by the current work. The proposed future directions (C142, C144-C146) are reasonable extensions, though they remain speculative. This represents thoughtful consideration of how the approach could be extended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Visual masking is an established phenomenon where detection of a dim target is significantly reduced by a co-localized medium-brightness mask, reflecting nonlinear responses in visual cortex where response to 100% contrast is much less than twice the response to 50% contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10-C13 establish background knowledge about visual masking and cortical nonlinearities, supported by appropriate citations (Cornsweet and Pinsker 1965, Albrecht and Hamilton 1982). This provides the conceptual framework for the study. The claims are well-established in the literature and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C77",
+      "C78",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior optogenetic work in NHPs typically required high power (10s-100s mW/mm\u00b2) and rewarded animals for reporting optostim itself, not testing perceptual substitution. High power raises concerns about tissue damage and power requirements for implantable devices. Effective low-power optostim is important for future optical brain-computer interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C77-C78, C90, C92-C95 appropriately contextualize the work relative to prior NHP optogenetics studies. The citations support the characterization of prior work (C6-C7, C93), and the concerns about high power (C94-C95) are legitimate. The distinction in experimental design (C77-C78) is important for interpreting perceptual substitution. This establishes the significance of achieving effects at low power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Neural responses to visual stimuli are highly nonlinear and consistent with luminance and contrast gain control, but some nonlinearities are likely inherited from ascending inputs, making it unclear how much gain control is implemented in V1 itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide appropriate background on gain control mechanisms with citations to prior work. The acknowledgment of uncertainty about V1's specific contribution (C107) is appropriately cautious. This contextualizes the significance of the findings for understanding V1 circuit mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Multiple factors could contribute to different sensitivity to optostim across studies, including differences in opsin expression levels, size of neural populations stimulated/monitored, and visual stimulus properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 provides reasonable speculation about sources of variability across studies. These are plausible factors that could affect optostim sensitivity. While speculative, this represents appropriate consideration of methodological factors that could explain differences in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "The study used two animals with multiple recordings per animal, with each condition repeated at least three times on separate days. Sample sizes were based on previous experience rather than statistical power calculations. Trials were excluded based on task compliance, EKG quality, and motion artifacts. Bootstrap resampling (1000 iterations) was used for statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C192 transparently describe the experimental design and statistical approach. The use of two animals with multiple sessions provides reasonable replication. The lack of a priori power calculations (C188) is a limitation but is honestly reported. The exclusion criteria (C191) are appropriate. Bootstrap methods (C192) are suitable for the data. The transparency about sample size determination is commendable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,848 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "A total of 12,828 bacterial growth curves of Escherichia coli BW25113 were acquired in 966 different medium combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "In brief, a total of 12,828 growth curves of Escherichia coli BW25113 grown in 966 different medium combinations were acquired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of growth curves and medium combinations used in the study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The medium combinations were composed of 44 pure chemical compounds.",
+    "claim_type": "EXPLICIT",
+    "source": "A large dataset constituting a total of 12,828 bacterial growth curves with 966 medium combinations, which were composed of 44 pure chemical compounds, was acquired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states the number of chemical compounds used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The 44 chemical substances are ionized in solution, resulting in 41 components.",
+    "claim_type": "EXPLICIT",
+    "source": "As the chemical substances are ionized in solution, these medium combinations finally comprised 41 components (e.g. metal ions, amino acids [AAs], etc.) whose concentrations varied broadly on a logarithmic scale (Figure 1B).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states that ionization of 44 substances results in 41 components.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Three growth parameters (lag time \u03c4, maximal growth rate r, and saturated population density K) were calculated from the growth curves.",
+    "claim_type": "EXPLICIT",
+    "source": "Three parameters, the lag time (\u03c4), maximal growth rate (r), and saturated population density (K), were subsequently calculated according to the growth curves, which represented the quantitative features in the lag, exponential, and stationary growth phases, respectively (Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 2A explicitly describe the three parameters calculated.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "After averaging biological replications and removing unreliable measurements, 961, 961, and 937 values of \u03c4, r, and K were obtained, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "The averaging of the biological replications and the removal of the unreliable measurements finally resulted in 961, 961, and 937 values of \u03c4, r, and K, respectively (Figure 2B, Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states the final number of values for each parameter after data processing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The three growth parameters all presented multimodal distributions in response to environmental variation.",
+    "claim_type": "EXPLICIT",
+    "source": "The three parameters all presented multimodal distributions in response to environmental variation, which agreed well with the rugged fitness landscapes proposed for adaptive evolution (Neidhart et al., 2014) and the immune response (Kauffman and Weinberger, 1989).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly describes the distribution pattern and cites supporting literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The 966 medium combinations could be divided into four main clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "The 966 medium combinations could be mainly divided into four clusters (Figure 2C), roughly with respect to the multimodality of the distributions (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 2C explicitly show the clustering result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The three growth parameters were all correlated with the two main principal components.",
+    "claim_type": "EXPLICIT",
+    "source": "The three parameters were all correlated with the two main PCs (Figure 2D), suggesting that bacterial growth was determined by certain common components comprising medium combinations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 2D explicitly show correlations between parameters and principal components.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "The prediction accuracy was approximately equivalent among six ML models tested.",
+    "claim_type": "EXPLICIT",
+    "source": "The results showed that the prediction accuracy was approximately equivalent among the six ML models (Figure 3B), independent of the evaluation metrics (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and figures explicitly compare ML model performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Simple ML models are suitable for predicting bacterial growth according to medium composition.",
+    "claim_type": "EXPLICIT",
+    "source": "It indicated that the simple ML models were available to tackle the large dataset generated by the throughput growth assay and appropriate for the prediction of bacterial growth according to the environmental details, e.g., medium composition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states the suitability of simple ML models for this application.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The growth parameters were largely determined by a single component out of 41 components comprising the medium.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, repeated GBDT prediction showed that the growth parameters were largely determined by a single component out of 41 components comprising the medium (Figure 4A, Figure 4\u2014source data 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 4A explicitly state this finding from GBDT analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The components of highest priority in governing the three parameters were serine for lag time, sulfate for growth rate, and glucose for saturated population size.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the components of the highest priority in governing the three parameters were highly differentiated, i.e., serine, sulfate, and glucose for \u03c4, r, and K, respectively (Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 4A explicitly identify the top components for each parameter.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Growth decisions are highly constrained by a few components and are largely distinguished in response to the growth phase.",
+    "claim_type": "EXPLICIT",
+    "source": "It suggested that growth decisions were highly constrained by a few components and were largely distinguished in response to the growth phase.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states this conclusion based on the ML analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Isoleucine (Ile) was the most sensitive component with the largest global sensitivity (Sg).",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, Ile was the most sensitive component, as it presented the largest Sg, i.e., the largest changes in bacterial growth responding to the concentration gradient of Ile in different combinations of other chemicals (i.e. patterns shown in Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text explicitly identifies Ile as having the largest global sensitivity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The components with the largest sensitivity values were Ile, K, and phosphate.",
+    "claim_type": "EXPLICIT",
+    "source": "The components with the largest S values, i.e., Ile, K, and phosphate (Figure 5D), overlapped among the three parameters, suggesting that these components were highly sensitive to the fluctuation of other components for all growth phases.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 5D explicitly identify these components as having the largest sensitivity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Cysteine (Cys) had the largest variance (Vs) in sensitivity, indicating biased sensitivity for the three growth phases.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, analysing the variance (Vs) of the S\u03c4, Sr, and SK values showed that the largest Vs values was in Cys (Figure 5F, Figure 5\u2014figure supplement 5), indicating biased sensitivity for the three growth phases.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and figures explicitly identify Cys as having the largest variance in sensitivity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Ile had the smallest variance (Vs), suggesting equivalent sensitivity across all growth phases.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the smallest Vs was detected in Ile, suggesting equivalent sensitivity all growth phases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states that Ile has the smallest variance in sensitivity.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Ile and/or branched-chain amino acids (BCAAs) participate commonly in all growth phases and are probably global coordinators for bacterial growth.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, Ile and/or branched-chain AAs (BCAAs) participate commonly in all growth phases and are probably global coordinators for bacterial growth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states this conclusion based on sensitivity analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "FBA simulation showed that a decreased growth rate was associated with an increased rate of sulfate uptake.",
+    "claim_type": "EXPLICIT",
+    "source": "The result showed that a decreased growth rate was associated with an increased rate of sulfate uptake (Figure 6B), supporting the determinative contribution of S to the growth rate.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 6B explicitly describe the FBA simulation result.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Theoretical simulations showed that a three-component set of decision makers led to a higher probability of survival than a single decision maker, particularly when raising the extinction threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "The results showed that a three-component set of decision makers led to a higher probability of survival, particularly when raising the extinction threshold (Figure 6C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 6C explicitly describe the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The differentiation in fate decision makers prevented the bacterial population from undergoing extinction more competently than a single decision maker.",
+    "claim_type": "EXPLICIT",
+    "source": "It suggested that the differentiation in fate decision makers prevented the bacterial population from undergoing extinction more competently than the single decision maker did.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states this conclusion from the simulation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The three growth parameters remained significantly correlated despite differentiation in decision-making components.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the three parameters remained significantly correlated (Figure 7A), which indicated that the risk diversification strategy did not disturb the trade-off or coordination, e.g., K/r selection (Cavalier-Smith, 1980).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 7A explicitly show significant correlations among parameters.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Simulations considering correlation coefficients showed that three decision makers facilitated a larger population size than a single decision maker.",
+    "claim_type": "EXPLICIT",
+    "source": "The results showed that the three decision makers facilitated the larger population size than the single decision maker did (Figure 7B), revealing that the differentiation in decision-making chemicals benefited the bacteria in maintain the final population size.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 7B explicitly describe the simulation results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The relative abundances of intracellular Ile and BCAAs were significantly higher than their theoretical ratios.",
+    "claim_type": "EXPLICIT",
+    "source": "The results showed that the relative abundances of intracellular Ile and BCAAs were significantly higher than their theoretical ratios, i.e., 1 or 3 out of 20 AAs, 5 or 15%, respectively (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and Figure 8C explicitly show the relative abundance comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The protein building blocks required more BCAAs than other AAs, except Ala and Gly.",
+    "claim_type": "EXPLICIT",
+    "source": "The results revealed that the protein building blocks required more BCAAs than other AAs, except Ala and Gly (Figure 8\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The text and figure explicitly state this finding about amino acid requirements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The correlated changes of the growth parameters might be due to the global participation of Ile and/or BCAAs as decision makers and common sensors.",
+    "claim_type": "EXPLICIT",
+    "source": "The correlated changes of the growth parameters might be due to the global participation of Ile and/or BCAAs, as the decision makers and common sensors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly proposes this mechanism for parameter correlation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The lag time has been reported to be crucial for bacterial growth under environmental stress.",
+    "claim_type": "EXPLICIT",
+    "source": "The lag time has been reported to be crucial for bacterial growth under environmental stress (Zhou et al., 2011; Guillier et al., 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites literature supporting the importance of lag time under stress.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The growth rate has been associated with proteome allocation, ribosome function, and gene expression.",
+    "claim_type": "EXPLICIT",
+    "source": "The growth rate has been associated with proteome allocation (Scott et al., 2010; Zhu and Dai, 2019), ribosome function (Gourse et al., 1996; Dai and Zhu, 2020), and gene expression (Nilsson et al., 1984; Klumpp et al., 2009); thus, it represents the adaptiveness (fitness) of the microbial population (Towbin et al., 2017; Saether and Engen, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites multiple studies linking growth rate to various cellular processes.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Previous studies have observed trade-offs between the growth rate and either the population size or the lag time within identical species.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous studies have observed trade-offs between the growth rate and either the population size (Novak et al., 2006; Engen and Saether, 2006) or the lag time (Basan et al., 2020) within identical species, as well as correlated changes in the growth rate and saturated population size among genetically diversified strains (Liu et al., 2006; Nishimura et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites literature documenting trade-offs between growth parameters.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Machine learning techniques have been widely applied to studies on genetic diversity, metabolic engineering, and population dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, machine learning (ML) techniques have been widely applied to studies on genetic diversity (Schrider and Kern, 2018; Libbrecht and Noble, 2015), metabolic engineering (Kim et al., 2020), and population dynamics (Campos et al., 2018; Hiura et al., 2021; Ashino et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites literature showing ML applications in various biological fields.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The multimodal distributions of the three parameters agreed well with rugged fitness landscapes proposed for adaptive evolution and immune response.",
+    "claim_type": "EXPLICIT",
+    "source": "The three parameters all presented multimodal distributions in response to environmental variation, which agreed well with the rugged fitness landscapes proposed for adaptive evolution (Neidhart et al., 2014) and the immune response (Kauffman and Weinberger, 1989).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly connects the observed distributions to theoretical concepts from cited literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The four distributions of sensitivity values (S\u03c4, Sr, SK, and Sg) were all likely to follow the power law.",
+    "claim_type": "EXPLICIT",
+    "source": "The four distributions were all likely to follow the power law (Evans et al., 2021; Furusawa and Kaneko, 2006), which agreed well with the ML-predicted conclusion that only a few components determined the growth.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states the distributions follow power law and cites supporting literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The decision-making components for bacterial growth were present among the 41 components, regardless of complex interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "This finding strongly suggested that the decision-making components for bacterial growth were present among the 41 components, regardless of the complex interactions among these components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly states this conclusion based on the power law distribution.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The differentiation in decision makers agrees with the Y-A-S strategy of microorganisms in nature (high yield, resource acquisition, and stress tolerance).",
+    "claim_type": "EXPLICIT",
+    "source": "It must be beneficial for the bacteria growing in a fluctuating environment, as it agreed well with the prospected Y-A-S strategy of the microorganisms in nature, i.e., the growth strategy for high yield, resource acquisition, and stress tolerance, respectively (Malik et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text explicitly connects the findings to the Y-A-S strategy from cited literature.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Previous studies observed trophic and functional redundancy in ecosystems and genetic redundancy in living cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The previous studies observed the trophic (Sanders et al., 2018) and functional (Li et al., 2021) redundancy in ecosystems and the genetic redundancy in living cells (El-Brolosy and Stainier, 2017), which demonstrated that the survivability was secured by the participation of multiple factors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites literature documenting various types of redundancy in biological systems.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Sulfate (SO42-) is a major constituent of the earth and a major element in organisms.",
+    "claim_type": "EXPLICIT",
+    "source": "The determinative role of S (SO42-) in the growth rate might be related to its function as a material because it is not only a major constituent of the earth but also the major element in organisms (Morgan and Anders, 1980; Heldal et al., 1985; Novoselov et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites literature supporting the importance of sulfate as a constituent element.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Exposure to SO42- increased reactive oxygen species levels in bacteria.",
+    "claim_type": "EXPLICIT",
+    "source": "Since S (SO42-) was a highly reactive chemical, e.g., exposure to SO42- increased reactive oxygen species levels in bacteria (Chen et al., 2016), its determinative role in growth rates was probably mediated by the stress response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The text cites a study showing the effect of sulfate on reactive oxygen species.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The wild-type E. coli strain BW25113 was used in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "The wild-type E. coli strain BW25113 was used, which was provided by the National BioResource Project (National Institute of Genetics, Shizuoka, Japan).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states the bacterial strain used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Common stocks of exponentially growing E. coli cell culture were prepared and stored at -80\u00b0C.",
+    "claim_type": "EXPLICIT",
+    "source": "To reduce the experimental errors of the repeated growth assay on different days, common stocks of the exponentially growing E. coli cell culture were prepared beforehand, as described previously (Kurokawa and Ying, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the stock preparation procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "A total of 44 pure chemical substances were used to prepare medium combinations.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 44 pure chemical substances, determined according to the literature (Oberhardt et al., 2015; Neidhardt et al., 1974), were all commercially available (Wako or Sigma).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states the number and source of chemicals.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The concentrations of the substrates were varied on a logarithmic scale.",
+    "claim_type": "EXPLICIT",
+    "source": "The concentrations of the substrates were varied on a logarithmic scale, and only a single substrate was altered for each assay.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the concentration variation approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "A total of 966 medium combinations were tested in the growth assay.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 966 combinations were tested in the growth assay (Figure 2\u2014source data 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states the number of combinations tested.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The 96-well plates were incubated at 37\u00b0C with a rotation rate of 567 rpm.",
+    "claim_type": "EXPLICIT",
+    "source": "The 96-well plates were incubated in a plate reader (Epoch2, BioTek) with a rotation rate of 567 rpm at 37\u00b0C.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the incubation conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Temporal growth was detected at an absorbance of 600 nm with readings obtained at 30 min intervals for 24-48 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "The temporal growth of the E. coli cells was detected at an absorbance of 600 nm, and the readings were obtained at 30 min intervals for 24\u201348 hr.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the measurement protocol.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "A total of 12,828 reliable growth curves were acquired.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 12,828 reliable growth curves were acquired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states the number of reliable growth curves.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "A fivefold nested cross validation was performed to evaluate the ML models.",
+    "claim_type": "EXPLICIT",
+    "source": "A fivefold nested cross validation was performed to evaluate the ML models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the validation approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "FBA simulation was performed using the open software COBRAme with the iJL1678b-ME model.",
+    "claim_type": "EXPLICIT",
+    "source": "FBA simulation was performed using the open software COBRAme (Lloyd et al., 2018) iJL1678b-ME and qMINOS, which were available in the Docker images (Lloyd et al., 2018), were used as the model and the solver, respectively, where 'mumax' and 'precision' were set as 2 and 1E-6, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the FBA simulation setup.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Four components (VB9, VB2, borate, and PABA) were excluded in the FBA simulation as they were absent in the ME model.",
+    "claim_type": "EXPLICIT",
+    "source": "4 out of 41 components, i.e., VB9, VB2, borate, and PABA, were excluded in the simulation, as they were absent in the ME model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states which components were excluded and why.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The genome and transcriptome datasets of E. coli BW25113 and MG1655 strains were obtained from GenBank and GEO.",
+    "claim_type": "EXPLICIT",
+    "source": "The genome and transcriptome datasets of the E. coli BW25113 and MG1655 strains were obtained from GenBank (CP009273 and NC_000913) and GEO (GSE33212 and GSE136101), respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly states the sources of genomic data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Gaussian kernel density estimation was used to determine the boundaries of the multimodal distributions for data separation.",
+    "claim_type": "EXPLICIT",
+    "source": "Gaussian kernel density estimation was used to determine the boundaries of the multimodal distributions, which were considered as bimodal, for data separation of the growth parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Materials and methods section explicitly describes the method for data separation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The study focused on the contribution of chemical conditions to bacterial growth under laboratory conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "First, the study focused on the contribution of chemical conditions to bacterial growth, which was also affected by other environmental conditions, such as temperature and oxygen (Ratkowsky et al., 1982; Baig and Hopton, 1969; McDaniel and Bailey, 1969).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly states the scope and limitations of the study.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The concentration gradients of the components were prepared as broadly as possible to achieve maximal solubility.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, the concentration gradients of the components were prepared as broadly as possible to achieve the maximal solubility available for medium combinations, some of which were largely different from those used in the laboratory and/or found in nature (Heldal et al., 1985; Novoselov et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly describes the approach to concentration gradient design.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "All 12,828 growth assays used the identical cell population cultured in minimal medium.",
+    "claim_type": "EXPLICIT",
+    "source": "A total of 12,828 growth assays used the identical cell population cultured in the minimal medium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly states that all assays used the same initial cell population.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Repeated transfer caused continuous growth improvement, as commonly reported in experimental evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "The experimental tests verified that the repeated transfer caused the continuous growth improvement (Figure 2\u2014figure supplement 3), as commonly reported in the experimental evolution (Kurokawa et al., 2022; Barrick et al., 2009).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The Discussion section cites experimental evidence and literature supporting this observation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "A sufficiently large dataset is essentially required to achieve robust ML prediction for biological experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "An increase in the abundance of the training data decreased the variance of the model accuracy (Figure 3\u2014figure supplement 3), demonstrating that a sufficiently large dataset was essentially required to achieve robust ML prediction for the biological experiments, as discussed in the different ML-associated microbial studies (Top\u00e7uo\u011flu et al., 2020).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The Discussion section explicitly states this conclusion based on data analysis and cites supporting literature.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Training data with large variance resulted in high accuracy of ML compared to those with small variance.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly, the training data with large variance, i.e., a large experimental error caused by biological replication, resulted in the high accuracy of ML in comparison to those with small variance, which led to the decreased accuracy of ML (Figure 3\u2014figure supplement 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The Discussion section explicitly describes this counterintuitive finding.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The most abundant variation of concentration was for the chlorine ion (Cl), which was a low-priority contributor to growth.",
+    "claim_type": "EXPLICIT",
+    "source": "The most abundant variation of concentration was that for the chlorine ion (Cl), which was a low-priority contributor to growth, whereas the decision-making components showed either high or low variation of concentrations, such as for sulfate or glucose, respectively (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The Discussion section explicitly describes the concentration variation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The diversity of experimental conditions can influence ML prediction.",
+    "claim_type": "EXPLICIT",
+    "source": "This result indicated that the diversity of experimental conditions, i.e., the abundance of training data, could influence the ML prediction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly states this conclusion about ML prediction.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Using a simple ML model to evaluate three growth parameters was sufficient to capture bacterial population dynamics in well-controlled conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a simple ML model to evaluate three growth parameters was likely sufficient to capture the bacterial population dynamics in well-controlled conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly summarizes this finding.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The differentiation in decision-making components for the lag, exponential, and stationary phases protected the bacterial population against extinction.",
+    "claim_type": "EXPLICIT",
+    "source": "The differentiation in decision-making components for the lag, exponential, and stationary phases protected the bacterial population against extinction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly states this conclusion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "This finding revealed a common and simple strategy of risk diversification for bacterial growth in conditions of excessive resources or starvation.",
+    "claim_type": "EXPLICIT",
+    "source": "This finding revealed a common and simple strategy of risk diversification for bacterial growth in conditions of excessive resources or starvation, which is a reasonable approach in evolution and ecology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly states this interpretation of the findings.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The ML-assisted approach remains an emerging technology and requires improvement in biological reliability and accessibility.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, the ML-assisted approach remains as an emerging technology and is required to improve its biological reliability and accessibility for common applications in the studies of life science, microbiology, and ecology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The Discussion section explicitly acknowledges limitations and future needs.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

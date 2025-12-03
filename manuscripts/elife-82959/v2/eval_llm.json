@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study cohort of 221 T1 CRC patients (143 LNM-negative, 78 LNM-positive) showed that LNM is significantly associated with established clinicopathological risk factors including submucosal invasion depth (p=0.014), lymphatic/vascular invasion (p<0.001), poor differentiation (p=0.004), and left-sided tumor location (p=0.036). MSI-H patients showed lower LNM rates (16.7%) compared to MSS patients (39.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide consistent evidence from chi-square tests with appropriate p-values for clinicopathological associations with LNM. The cohort composition is clearly defined, sample sizes are adequate for statistical testing, and the findings align with established knowledge about T1 CRC risk factors. The MSI status data (C15-C16) includes appropriate comparison to published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "High-quality proteomic analysis identified >13,000 protein groups with 1% FDR. Comparison with published CRC LNM markers revealed that only 3 of 44 reported markers (CTSD, GSTM3, MX1) were differentially expressed in this T1 CRC cohort. Additionally, 2577 proteins were detected specifically in T1 CRC compared to all-stage CRC studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 demonstrate rigorous proteomic methodology with appropriate quality control (1% FDR) and adequate protein identification (>4000 per sample). The comparison with published markers (C18) and other cohorts (C19) is methodologically sound, though the low overlap with published markers raises questions about whether this reflects true biological differences or technical/analytical variations between studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Differential proteomic analysis identified 82 proteins overexpressed in LNM-negative and 84 proteins in LNM-positive T1 CRC patients (log2FC>1 or <-1, p<0.05). Among LNM-positive proteins, 19 FDA-approved drug targets and 34 potential drug targets were identified, including ATAD2, CEACAM6, and YAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 use appropriate statistical methods (Wilcoxon rank-sum test) with clearly defined thresholds. The identification of druggable targets is supported by reference to the Drug Gene Interaction Database. However, the clinical relevance of these targets for T1 CRC specifically requires further validation, as druggability in other contexts does not guarantee therapeutic utility in this disease stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "EMT pathway was significantly enriched in LNM-positive T1 CRC (adjusted p<0.05), with six EMT-related proteins showing significant upregulation (log2FC>1) including CAP2, PLOD1, and SERPINE2. Importantly, EMT markers SERPINE2 and LRP1 were specifically upregulated in early-stage (T1/T2) CRC but not in all-stage CRC cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 provide strong evidence through GSEA analysis with appropriate multiple testing correction and validation in external cohorts. The stage-specific nature of EMT enrichment (C26) is particularly compelling, as it demonstrates that these findings are specific to early-stage disease rather than general CRC biology. Statistical methods are appropriate and consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Cytoskeletal remodeling proteins including ABI1, SPTA1, SPTB, ANK1, MRPL46, and ITGA2B were significantly down-regulated in LNM-positive patients (log2FC<-1, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by appropriate statistical testing (Wilcoxon rank-sum test) with clear effect size and significance thresholds. The biological interpretation linking cytoskeletal remodeling to EMT is reasonable, though the manuscript could benefit from more mechanistic validation of these connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Metabolic pathway analysis revealed that amino acid metabolism pathways (valine/leucine/isoleucine degradation, glycine/serine/threonine metabolism) were enriched in LNM-negative patients (adjusted p\u22640.05), while lipid metabolism pathways (arachidonic acid metabolism, steroid biosynthesis) and coagulation cascades were enriched in LNM-positive patients. Twelve coagulation cascade proteins were elevated in LNM-positive patients (log2FC>1, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate comprehensive pathway analysis using ssGSEA with appropriate statistical methods (limma approach, adjusted p-values). The metabolic differences are biologically plausible and the coagulation cascade enrichment is supported by citation to relevant literature. However, the functional significance of these metabolic differences for LNM requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Histological subtype analysis showed that poorly differentiated (48.6% LNM) and mucinous adenocarcinoma (55% LNM) had significantly higher LNM rates than well-moderately differentiated adenocarcinoma (28.8% LNM) (p=0.004). Each subtype showed distinct proteomic profiles: 140 proteins in well-moderately differentiated (enriched in oxidative phosphorylation/TCA cycle), 178 in poorly differentiated (GTPase/Wnt signaling), and 326 in mucinous adenocarcinoma (ECM organization/cell migration/vesicle transport).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide comprehensive characterization of histological subtypes with appropriate statistical testing (chi-square, Kruskal-Wallis). The proteomic profiles are distinct and biologically coherent. However, the sample sizes for some subgroups (particularly poorly differentiated, N=32) are relatively small, which may limit the generalizability of the specific protein signatures identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mucinous adenocarcinoma showed overexpression of six integrins (ITGA1, ITGAV, ITGA11, ITGA9, ITGB3, ITGB5) and 11 extracellular vesicle markers. The stromal score was significantly higher in mucinous adenocarcinoma (p<0.05), with enrichment of endothelial cells and depletion of pericytes. IHC validation confirmed significantly higher D2-40 (lymphatic endothelial marker) expression in mucinous adenocarcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide convergent evidence from proteomics, tumor microenvironment analysis (xCell), and IHC validation. The hypothesis that mucinous adenocarcinoma promotes LNM through increased intratumoral lymphatic vessel density is well-supported. The IHC validation (C41) strengthens the proteomic findings, though the number of samples used for IHC validation is not clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A 55-protein classifier achieved perfect discrimination in the training cohort (AUC=1.00, 100% sensitivity/specificity) through 10-fold cross-validation, and maintained high performance in validation cohorts (VC1: AUC=0.96, 100% sensitivity/94.3% specificity; VC2: AUC=0.93, 88.9% sensitivity/84.2% specificity). The classifier reduced overtreatment from 63% (NCCN guidelines) to 27.1% while maintaining 100% sensitivity in the low-risk group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C47 show impressive performance metrics, but several concerns arise: (1) Perfect AUC of 1.00 in training with 10-fold CV is suspicious and may indicate overfitting despite cross-validation; (2) The dramatic performance difference between training (AUC=1.00) and validation cohorts (0.93-0.96) suggests model instability; (3) Sample sizes in validation cohorts are relatively small (VC1: N=42, VC2: N=47); (4) The claim of 100% sensitivity in low-risk groups across all cohorts needs careful interpretation given small numbers of LNM+ cases in some cohorts; (5) No information on how the 0.420 cutoff was determined or whether it was pre-specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A simplified 9-protein classifier achieved AUC=0.824 (95% CI: 0.767-0.881) with 1000 bootstrap resamples and showed 100% sensitivity with 70% specificity in the mCRC cohort (N=16, T1/2 patients) and 100% sensitivity with 73% specificity in the CPTAC cohort (N=16, T1/2 patients).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 show reasonable performance for the simplified model, but external validation is severely limited by small sample sizes (N=16 each) and very few LNM+ cases (mCRC: 3 LNM+; CPTAC: 1 LNM+). With only 1-3 positive cases, sensitivity estimates of 100% are not meaningful and confidence intervals would be extremely wide. The batch correction approach (ComBat) is appropriate, but combining T1 and T2 cases for validation may not reflect the intended T1-specific application. These external validations are insufficient to establish generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IHC validation of proteomic findings in 47 patients confirmed that ABI1 (p=0.007) and RHOT2 (p=0.011) showed increased expression in LNM-negative patients, while ATAD2 (p=0.034) and ISLR (p=0.044) showed increased expression in LNM-positive patients. A 5-protein IHC classifier achieved AUC=0.825.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide appropriate orthogonal validation of proteomic findings using IHC with adequate statistical testing (Student's t-test). The concordance between proteomics and IHC strengthens confidence in the protein markers. The 5-protein IHC classifier performance (AUC=0.825) is reasonable and more realistic than the 55-protein model. However, the IHC cohort size (N=47) is relatively small for developing a clinical classifier, and independent validation of the IHC model is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RHOT2 was significantly down-regulated in LNM-positive patients (Log2FC=-1.35, p=0.003) and low RHOT2 expression correlated with poor overall survival in colon cancer (TCGA data, p<0.05). RHOT2 showed significant correlations with 1508 proteins (1354 positive, 154 negative, p<0.05). Functional validation showed that RHOT2 silencing significantly enhanced migration and invasion of colon cancer cells (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide multi-level evidence for RHOT2's role in LNM: proteomic data (C56), survival analysis (C57), correlation network (C58), and functional validation (C59). The functional experiments using siRNA knockdown and transwell assays provide mechanistic support for the proteomic observations. However, the manuscript lacks details on experimental replicates for the cell-based assays, and the specific mechanism by which RHOT2 affects migration remains unclear. The correlation with survival (C57) strengthens clinical relevance.",
+    "result_type": "MAJOR"
+  }
+]

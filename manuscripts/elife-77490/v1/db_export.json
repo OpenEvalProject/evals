@@ -1,0 +1,1836 @@
+{
+  "submission": {
+    "id": "9e590f09-8a6f-4e34-b6d0-1ccccee1f010",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:53:23.353600Z",
+    "updated_at": "2025-12-03T13:53:23.353600Z"
+  },
+  "content": [
+    {
+      "id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "submission_id": "9e590f09-8a6f-4e34-b6d0-1ccccee1f010",
+      "content_type": "manuscript",
+      "content_text": "# Tongue immune compartment analysis reveals spatial macrophage heterogeneity\n\n## Authors\n\n- Ekaterini Maria Lyras<sup>1</sup> ([ORCID: 0000-0003-3269-0854](https://orcid.org/0000-0003-3269-0854))\n- Karin Zimmermann<sup>1</sup>\n- Lisa Katharina Wagner<sup>1</sup>\n- Dorothea D\u00f6rr<sup>1</sup>\n- Christoph SN Klose<sup>3</sup>\n- Cornelius Fischer<sup>1</sup>\n- Steffen Jung<sup>4</sup> ([ORCID: 0000-0003-4290-5716](https://orcid.org/0000-0003-4290-5716))\n- Simon Yona<sup>5</sup> ([ORCID: 0000-0002-3984-2008](https://orcid.org/0000-0002-3984-2008))\n- Avi-Hai Hovav<sup>5</sup>\n- Werner Stenzel<sup>6</sup>\n- Steffen Dommerich<sup>7</sup>\n- Thomas Conrad<sup>1</sup>\n- Achim Leutz<sup>1</sup>\n- Alexander Mildner<sup>1</sup> ([ORCID: 0000-0002-2019-8427](https://orcid.org/0000-0002-2019-8427)) \u2020\n\n### Affiliations\n\n1. Max-Delbr\u00fcck-Center for Molecular Medicine Berlin Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))\n2. Institute of Biology, Humboldt University of Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))\n3. Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Department of Microbiology, Infectious Diseases and Immunology, Charit\u00e9 Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n4. Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))\n5. Institute of Dental Sciences, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n6. Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Department of Neuropathology, Charit\u00e9 Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n7. Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin and Humboldt-Universit\u00e4t zu Berlin, Department of Otorhinolaryngology, Charit\u00e9 Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))\n8. InFLAMES Research Flagship Center, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))\n9. Institute of Biomedicine, Medicity, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe tongue is a unique muscular organ situated in the oral cavity where it is involved in taste sensation, mastication, and articulation. As a barrier organ, which is constantly exposed to environmental pathogens, the tongue is expected to host an immune cell network ensuring local immune defence. However, the composition and the transcriptional landscape of the tongue immune system are currently not completely defined. Here, we characterised the tissue-resident immune compartment of the murine tongue during development, health and disease, combining single-cell RNA-sequencing with in situ immunophenotyping. We identified distinct local immune cell populations and described two specific subsets of tongue-resident macrophages occupying discrete anatomical niches. Cx3cr1+ macrophages were located specifically in the highly innervated lamina propria beneath the tongue epidermis and at times in close proximity to fungiform papillae. Folr2+ macrophages were detected in deeper muscular tissue. In silico analysis indicated that the two macrophage subsets originate from a common proliferative precursor during early postnatal development and responded differently to systemic LPS in vivo. Our description of the under-investigated tongue immune system sets a starting point to facilitate research on tongue immune-physiology and pathology including cancer and taste disorders.\n\n## Introduction\n\nThe tongue is a highly innervated muscular organ with functions in articulation, mastication, and taste perception. Located at the entrance of the gastrointestinal tract, the tongue is constantly exposed to dietary and airborne antigens and therefore acts as a first-line immune organ (Wu, 2021). Moreover, taste sensation plays a critical role in avoidance of spoiled food and beverages. Accordingly, a tongue-resident immune network would be expected with roles in immune defense, tissue remodeling and tongue homeostasis. However, in the immunological context, the tongue is an understudied organ and the composition of tongue immune cells and their transcriptional status is largely unknown. Here, we define the immune cell landscape of the tongue with a specific focus on mononuclear phagocytes, for example, tissue-resident macrophages (TRM).\n\nUntil now, the characterization of the mononuclear phagocyte compartment of the tongue mainly focused on Langerhans cells that were first described in the mouse epithelium 40 years ago (Burkhardt et al., 1979) and are identified in humans by their exclusive CD1a immunoreactivity (Darling et al., 2017; Cruchley et al., 1989). The characterization of sub-epithelial macrophage subsets is much more enigmatic and so far depended on the histological examination of a few membrane markers (Agarbati et al., 2021; Shigeoka et al., 2021). For example, human CD163+ macrophages can be found in subepithelial areas of the tongue (Shigeoka et al., 2021), a localization that they share with CD11c+ \u2018dendritic\u2019 cells (Feng et al., 2009). Relying on single markers such as CD11c to identify cells of the \u2018dendritic\u2019 cell lineage is problematic since various additional cell types, including monocytes, macrophages, and lymphocytes, can express CD11c (Merad et al., 2013). Besides histological examinations of mononuclear phagocytes in the healthy tongue, the macrophage involvement in various pathological settings has also been studied. Tongue Langerhans cells were for instance shown to be critically involved in IL17-dependent antifungal immunity in the oral mucosa (Sparber et al., 2018), play an important role in T cell priming during squamous cell carcinoma development (Saba et al., 2022) and are depleted in patients with advanced-stage acquired immune deficiency syndrome (Gondak et al., 2012). Furthermore, an increase of activated ED1+ tongue macrophages was observed in systemic inflammation in rats (Cavallin and McCluskey, 2005). The recent COVID-19 pandemic has also suggested a potential link of viral infections with tongue immunity, with loss of taste being one of the hallmark symptoms (Agyeman et al., 2020). However, the lack of knowledge of the tongue immune cell compartment in physiology, hampers our understanding of tongue immune responses following pathogen challenge. Therefore, an unbiased characterization of the tongue immune cells is critical to classify and evaluate tissue-resident cell subsets, for example, macrophage dynamics during tongue development and pathologies.\n\nTo this end, we profiled the tongue-resident CD45+ hematopoietic cell compartment by single cell RNA-sequencing (scRNA-seq). Amongst tongue innate lymphoid cells (ILC), for example, ILC2, and the specific presence of mast cells in early postnatal tongues, we further identified two main Irf8-independent macrophage populations, which were characterized by Cx3cr1 and Folr2 expression, respectively. Cx3cr1-expressing macrophages were specifically enriched in the lamina propria of the tongue and were detected in fungiform papillae, which harbor taste buds, but were absent from the epidermis. Folr2-expressing tongue macrophages localized in muscular tissue and in the lamina propria. These anatomical niches were colonized during embryonic and early postnatal development from a Cx3cr1-expressing precursor of high proliferation capacity. Both macrophage populations showed a robust inflammatory response after in vivo lipopolysaccharide (LPS) administration, including shared and unique pathways.\n\nIn summary, our data provide a detailed atlas of the immune cells of the tongue that will facilitate future research of this under-investigated barrier organ.\n\n## Results\n\n### Characterization of murine tongue hematopoietic cells\n\nTo examine the tissue-resident immune compartment of the tongue in an unbiased manner, we performed scRNA-seq of FACS-purified CD45+ hematopoietic tongue cells isolated from PBS-perfused adult wild-type C57BL/6 mice. Two biologically and technically independent 10X Chromium experiments were performed that yielded highly reproducible results (Figure 1\u2014figure supplement 1a+b).\n\nWe sequenced a total of 6773 cells that clustered into 20 transcriptionally distinct subsets (Figure 1a) and used singleR (Aran et al., 2019) for cell lineage recognition (Figure 1\u2014figure supplement 1c). A full list of marker genes and average expression values per cluster can be found in Figure 1\u2014source data 1+2. We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17). We also detected tongue-resident lymphocytes (clusters 4, 9, 14), which could be further separated into various subsets including different innate lymphoid cell (ILC) populations (ILC1 (Cd160, Itga1, Klrk1), nILC2 (Arg1, Il1rl1, Gata3) and iILC2/ILC3 (Cysltr1, Gata3, Kit)), \u03b3\u03b4 T cells (Tcrg-C1, Trdc, Cd3g), proliferating T cells (cluster 1; Top2a, Tuba1b), tissue resident \u03b1\u03b2 T cells (clusters 2 and 3; Trac, Lat, Trbc2), regulatory T cells (cluster 4; Foxp3, Ctla4, Tnfrsf4), central \u03b1\u03b2 T cells (cluster 6; Lef1, Sell, Ccr7) and NK cells (cluster 7; Prf1, Ncr1, Eomes) (Figure 1b). Also a small cluster of plasmacytoid dendritic cells (pDC) could be identified (cluster 6; Ifi203, Ifi209, Bst2). However, the majority of cells (65%; Figure 1a) fell into the broad category of mononuclear phagocytes and included Langerhans cells (defined by Epcam and Cd9 expression; cluster 10), different classical dendritic cell (cDC) subsets (cluster 3, 15, 18 and 6), monocytes (characterized by Ly6c2, Cebpb, Nr4a1 expression; cluster 7), proliferating myeloid precursor cells (cluster 2) and three subsets of Cd68-expressing macrophages (clusters 0, 1 and 5) (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig1-v1.jpg)\n\n**Figure 1.:** (a) UMAP representation of 6773 sequenced tongue leukocytes from adult, female Bl6 mice (pool of n=8 mice). Data from a biologically and technically independent experiment is shown in Figure 1\u2014figure supplement 1a+b. Cluster annotation was performed with SingleR (Figure 1\u2014figure supplement 1c). See Figure 1\u2014source data 1+2 for complete gene lists and marker genes for all clusters. Abbreviations: ILCs (innate lymphoid cells); NK cells (natural killer cells); int. MF (intermediate macrophages); tFOLR2-MFs (tongue Folr2 +macrophages); cDCs (classical dendritic cells); tCX3CR1-MF (tongue Cx3cr1+macrophages); Fn1+ cells (Fn1-expressing mononuclear phagocytes); LC (Langerhans cells); preDC (pre-dendritic cells). (b) Separate UMAP representation of cells within cluster 4, 9, and 14. Additional abbreviations: pDC (plasmacytoid dendritic cells); nILC (natural ILC); iILC (induced ILC). (c) Gene Set Variation Analysis (GSVA) analysis was used for the discrimination of macrophages and dendritic cells. One signature gene list for macrophages (derived from Gautier et al., 2012) and one for cDC (derived from Schlitzer et al., 2015) were used to evaluate the enrichment score of each list in the 20 identified clusters. See also Figure 1\u2014figure supplement 1d for cDC1 and cDC2 gene signatures and Figure 1\u2014source data 3 for full gene lists. Cells with the highest similarity to each respective signature are labeled red. (d) Heatmap of top marker genes for the main mononuclear phagocyte clusters. See Figure 1\u2014figure supplement 1b for a heatmap of marker genes for all clusters. (e) Expression pattern of example genes laid over the UMAP from a for dimension reduction. (f) Differentially expressed genes in tCX3CR1-MF vs. tFOLR2-MF (left) and tCX3CR1-MF vs. tongue Langerhans cells (right). Indicated genes show an increased expression of >1.5 with an adjusted p-value <0.05. (g) Gene ontology analysis of the differentially expressed genes of the main mononuclear phagocyte clusters. Only GO annotations involved in biological processes are shown and redundant pathways were excluded from this representation. See Figure 1\u2014source data 4 for full list of GO terms per cluster.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Biological and technical replication (experiment 2, right graph) of the scRNA-seq experiment depicted in Figure 1 (experiment 1, left graph). For experiment 2, CD45+ tongue leukocytes were isolated from female mouse tongues (pool of n=10) and 8151 cells were sequenced using the Chromium Single Cell 3\u2019 Reagent Kits v2. Experiment 2 data was integrated with the existing adult data of experiment 1 to allow population comparison. (b) Heatmap representing the top 10 marker genes for all detected clusters. Data is derived from experiment 1 shown in Figure 1. (c) SingleR results for the annotation of cell clusters. Note that cluster 6 cells showed similarities to CD11b+ DCs from Immgen (http://immgen.org/). (d) GSVA analysis of the cDC1 and cDC2 signature genes as defined in Schlitzer et al., 2015. Red indicates cells with higher enrichment scores for the signature genes compared to blue. (e) Heatmap of genes involved in axon guidance. Shown are the normalized read counts in tFOLR2-MF (cluster 0) and tCX3CR1-MF (cluster 5).\n\nAs mononuclear phagocytes would be the first responders in tongue immunity, we focused our subset analysis on this major cell compartment. First, we separated mononuclear phagocytes into macrophages and dendritic cells (DC). For this, we performed a gene set variation analysis (GSVA) (H\u00e4nzelmann et al., 2013) by taking advantage of published cDC and macrophage gene signatures (Gautier et al., 2012; Schlitzer et al., 2015; Figure 1\u2014source data 3). The transcriptional signature of clusters 3, 15, and 18 correlated with the cDC gene signature (Figure 1c) and they could further be separated into cDC1 (cluster 3; defined by Cd209a, Cd24a and Irf8) and DC precursors (clusters 15 and 18; characterized by Hmgb2, Asf1b, Atad2). While singleR annotated the Fn1, Lpl, Ear2 expressing cells with MHCII-related gene expression in cluster 6 as CD11b+ DCs (Figure 1\u2014figure supplement 1c), these cells had neither a strong DC nor a strong macrophage signature (Figure 1c). As the specific cDC2 gene signature (Schlitzer et al., 2015) was also absent in this cluster (Figure 1\u2014figure supplement 1d), the precise ontogeny of these cells will need further investigation.\n\nThe GSVA analysis revealed three clusters of cells with macrophage identity, of which clusters 0 and 5 are likely end-stage differentiated macrophage subsets (Figure 1c). Cells in the third macrophage cluster (cluster 1) seem to be macrophages of intermediate differentiation, as their transcriptomic signature shares features with both cluster 0 and 5 (Figure 1d+e). Of the two terminally differentiated macrophage clusters, cluster 0 (hereafter referred to as tFOLR2-MF) expressed high levels of Folr2, Lyve1, Pf4 and Timd4, while cluster 5 (hereafter referred to as tCX3CR1-MF) expressed high levels of Cx3cr1, Hexb, Ms4a7, Itgax, and Pmepa1 (Figure 1d+e). A pairwise comparison of tFOLR2-MF and tCX3CR1-MF transcriptomes revealed 602 differentially expressed genes (DEGs), indicating major differences between the two tongue macrophage populations (abs(FC)>1.5and adjusted p-value <0.05) (Figure 1f). Importantly, tCX3CR1-MF were transcriptionally distinct from tongue Langerhans cells (tLCs; Figure 1f), which rather showed a cDC signature (Figure 1c).\n\nWe performed gene ontology (GO) enrichment analysis for the different mononuclear phagocyte clusters to gather information on possible distinct functions of these transcriptionally defined cell subtypes. Marker genes of intermediate clusters 1, 3, and 6 were not particularly enriched for any GO biological processes, which potentially reflects their intermediate gene expression signature (Figure 1f; the full list of GO annotation is listed in Figure 1\u2014source data 4). tFOLR2-MF on the other hand were enriched for gene sets associated with blood vessel biology (\u2018regulation of sprouting angiogenesis\u2019) and macrophage function (\u2018cytosolic transport\u2019, \u2018macrophage differentiation\u2019, and \u2018positive regulation of nitric oxide biosynthesis\u2019); tCX3CR1-MF showed gene enrichment for broad immune biological processes such as \u2018positive regulation of ERK1/2 cascade\u2019 or \u2018TLR3 signalling pathway\u2019 and exhibited similarities to CNS-resident microglia with gene enrichment in the biological process \u2018microglial cell proliferation\u2019 (Figure 1g).\n\nRecent studies have indicated potential interactions of Cx3cr1-expressing macrophages with neurons (Kolter et al., 2019; Chakarov et al., 2019; Wolf et al., 2017). However, unlike these CX3CR1+ brown adipose tissue and skin nerve-associated macrophages (Kolter et al., 2019; Chakarov et al., 2019; Wolf et al., 2017), we did not detect a specific and significant enrichment for genes involved in axon guidance, such as Plxn4 in tCX3CR1-MF (Figure 1\u2014figure supplement 1e).\n\nAltogether, our scRNA-seq data show that the tongue harbours a wide range of tissue-resident immune cells, of which the majority belong to the mononuclear phagocyte system. We identified two terminally differentiated macrophage subsets: tCX3CR1-MF that have a transcriptomic signature associated with innate immune signaling and tFOLR2-MF that seem to function in blood vessel biology and phagocytosis.\n\n### Tongue macrophages belong to the family of interstitial macrophages\n\nWe next established a protocol for the identification and isolation of tCX3CR1-MF and tFOLR2-MF by flow cytometry in Cx3cr1Gfp/+ reporter mice (Jung et al., 2000). After DNase/Collagenase IV/Hyaluronidase digestion of the tongue (Figure 2\u2014figure supplement 1a), we were able to detect CD64+ cells that could further be separated into cells expressing high levels of Cx3cr1-GFP (tCX3CR1-MF) and cells that stained positive for FOLR2 (tFOLR2-MF; Figure 2a). tCX3CR1-MF also expressed the surface receptors CX3CR1, MHCII and CD11c, while tFOLR2-MF were additionally characterized by LYVE1 and TIMD4 expression (Figure 2b). These surface characteristics could also be used to identify the tCX3CR1-MF and tFOLR2-MF in WT Bl6 animals. Of note, a different digestion protocol was necessary to isolate Epcam+ tLCs from the epithelial layer of the tongue (see Materials and method section; Figure 2\u2014figure supplement 1b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig2-v1.jpg)\n\n**Figure 2.:** (a) Exemplary flow cytometry analysis and gating for tCX3CR1-MF and tFOLR2-MF in Cx3cr1Gfp/+ mice. See Figure 2\u2014figure supplement 1 for isolation tissue procedure. (b) Shown are histogram expression patterns for Cx3cr1-GFP, CX3CR1, TIMD4, LYVE1, F4/80, MHCII and CD11c on tFOLR2-MF (violet) and tCX3CR1-MF (green). Either isotype controls or wild-type Bl6 mice were used to control for antibody stain or GFP signal, respectively. (c) Tissue resident macrophage populations were isolated from different tissues by FACS (see Figure 2\u2014figure supplement 2 for gating strategy; n=2-7) and analyzed by bulk RNA sequencing. Normalized read counts of important macrophage genes are shown across subsets. See also Figure 2\u2014source data 1 for normalized read counts. (d) Sample-wise expression correlation analysis of the different macrophage subsets is shown. Color code as indicated in c. (e) Heatmap of upregulated genes across macrophage populations. The top 10 upregulated genes per population compared to all other populations are depicted. See also Figure 2\u2014source data 2 for full list of upregulated genes. (f) Shown are GO annotations of biological processes that are enriched in specific macrophage subsets. Note that tLC showed no specific enrichment and are therefore not represented in the graph. Furthermore, MHCII- and MHCII+ heart macrophages were not separated for this analysis. Abbreviations: LC (Langerhans cells), MF (macrophages), RPM (red pulp macrophages), AM (alveolar macrophages).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Digestion of tongues from PBS perfused mice with Collagenase IV, Hyaluronidase and DNase. Shown are examples for Bl6 mice (left) and Cx3cr1Gfp/+ mice (right). Note the almost complete absence of CD11b+ Epcam+ Langerhans cells under this digestion regime. (b) Cx3cr1Gfp/+ tongues were first digested with Dispase, the epithelial layer was peeled off and subsequently digested with Collagenase IV, Hyaluronidase and DNase. With this preparation protocol, CD11b+ Epcam+ Langerhans cells could be detected in the epithelial layer (left), but not in the muscle layer (right).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Shown are the gating strategies that allow the identification of (a) Langerhans cells from the skin, (b) splenic macrophages, (c) Cx3cr1+ colonic macrophages, (d) MHCII+ and MHCII- Cx3cr1+ heart macrophages, (e) alveolar macrophages, and (f) microglia from the brain.\n\nTo identify tongue-specific signatures of tCX3CR1-MF and tFOLR2-MF and to place them in the context of macrophage biology, we compared the transcriptional profiles of FACS-purified tongue macrophages with macrophages isolated from other tissues. We FACS-isolated embryo-derived macrophages like microglia from the brain, alveolar macrophages from the lung (lung AM), F4/80+ splenic red pulp macrophages (spleen RPM) and skin as well as tongue Langerhans cells (sLC and tLC, respectively). We additionally isolated heart MHCII+ and MHCII- Cx3cr1-GFP+ macrophages and MHCII+ intestinal macrophages (colon MF), which are likely of monocyte origin (Bain et al., 2014; Dick et al., 2018; Varol et al., 2007; see Figure 2\u2014figure supplement 2 for gating strategy and Figure 2\u2014source data 1 for full read count table).\n\nTo validate the population purity, we compared expression of common macrophage-related genes in the different macrophage populations (Figure 2c). All cells except Langerhans cells expressed the macrophage genes Cd68 and Cd64. Furthermore, Csf1r expression was detected in almost all macrophage subsets with particularly high levels in microglia, but not in alveolar macrophages (Gautier et al., 2012). Cx3cr1, Lyve1 or MHCII-related genes such as Cd74 were also expressed according to the expected pattern (Figure 2c), which confirmed the accuracy of our gating and sorting strategy.\n\nCorrelation analysis of all macrophage populations revealed that, in line with published data (Aran et al., 2019; Bain et al., 2014), classical TRM populations such as microglia, splenic macrophages, Langerhans cells and alveolar macrophages each had a very distinct expression profile, indicating the robust tissue imprinting of these cells (Figure 2d). Tongue macrophages on the other hand were more related to heart and intestinal macrophages, regardless of their tissue of residence. Morover, even within this group of TRM, MHCII expressing cells like heart MHCII+ macrophages, tCX3CR1-MF and colon macrophages showed a higher correlation to each other and were distinct from MHCII- cell populations, including tFOLR2-MF and heart MHCII+ macrophages (Figure 2d). Thus, tCX3CR1-MF and tFOLR2-MF share similarities with the two main interstitial macrophage populations that have been previously identified across various tissues (Chakarov et al., 2019; Dick et al., 2022).\n\nWe focused our analysis on up-regulated genes (FC >2; adjusted p-value <0.001) to identify a tissue-specific signature of each macrophage subset and were able to annotate previously described marker genes to macrophage populations isolated from the lung, heart, skin, brain and spleen (Gautier et al., 2012; Summers et al., 2020). tCX3CR1-MF expressed significantly higher levels of Il2ra, Il12b and Mmp12 compared to all other tested TRM subsets, while tFOLR2-MF were characterized by the transcription of Cd209 gene family members (Cd209b/d/f), Retnla, Clec10a and Fxyd2. The top genes for each macrophage subset are shown as a heatmap in Figure 2e and a full list of these up-regulated genes can be found in Figure 2\u2014source data 2.\n\nWe next performed a GO enrichment analysis on these DEGs and found in agreement with previously published work (Lavin et al., 2014) an enrichment of GO terms that facilitate the tissue-specific function of each TRM subset (Figure 2f). In comparison, tCX3CR1-MF showed a strong enrichment for genes involved in inflammatory pathways, such \u2018positive regulation of TNF production\u2019 or \u2018cytokine-mediated signaling pathway\u2019, which is in line with our scRNA-seq data presented in Figure 1. tFOLR2-MF were characterized by weak but significant enrichment for \u2018cellular hyperosmotic salinity response\u2019 and \u2018response to toxic substances\u2019.\n\nTaken together, these data demonstrate that tCX3CR1-MF and tFOLR2-MF tongue macrophages belong to the family of interstitial macrophages. They fall into the two broad categories of Cx3cr1- and Lyve1/Folr2/Timd4-expressing cells (Chakarov et al., 2019; Dick et al., 2022), but also show unique transcriptomic signatures that probably reflect the requirements of their local tissue niche.\n\n### Distinct localizations of tCX3CR1- and tFOLR2-macrophages in the adult tongue\n\nThe unique transcriptomic signatures of tCX3CR1-MF and tFOLR2-MF could indicate that these populations inhabit different microanatomical niches within the tongue. To test this hypothesis, we performed immunohistochemistry on adult mouse tongues. Cx3cr1Gfp/+ animals were perfused and fixed tongue sections were stained with antibodies against GFP and LYVE1. Of note, we have used LYVE1 and FOLR2 markers interchangeably for the identification of tFOLR2-MF. Indeed, GFP+ cells were concentrated in the lamina propria, while LYVE1 staining was evident on cells throughout the tongue tissue with the exception of the epidermis (Figure 3a+b). Since lymphatic vessels also stain positive for LYVE1 (Prevo et al., 2001), the tissue was counterstained with antibody against CD68, a common pan-macrophage marker. Thus, we could identify tCX3CR1-MF as double-positive CD68+Cx3cr1-GFP+ cells in the lamina propria, but not in the tongue epidermis or muscle (Figure 3c) and tFOLR2-MF as double-positive CD68+LYVE1+ cells in the lamina propria and the underlying muscle (Figure 3d). Of note, tFOLR2-MF were morphologically distinct from LYVE1+Podoplanin+ lymphatics (Figure 3e). EPCAM+ Langerhans cells with a ramified morphology localized exclusively in the epidermis of the tongue (Figure 3f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig3-v1.jpg)\n\n**Figure 3.:** (a) Panoramic image of a tongue sagittal section from a perfused Cx3cr1Gfp/+ mouse. The tongue was stained for anti-GFP (CX3CR1; green) and anti-LYVE1 (violet). (b) Magnification of the area depicted in (a) that includes a fungiform papilla with annotation of different tissue layers. EPI = epidermis, LP = lamina propria, MUS = muscle. (c) Co-staining of anti-GFP (green) and anti-LYVE1 (violet) with anti-CD68 (white). The dashed white line indicates the border between the epidermis and the lamina propria. Green arrows indicate Cx3cr1-GFP+CD68+ macrophages, while violet arrows highlight LYVE1+CD68+ macrophages. (d) High magnification of LYVE1+ cells (violet) stained with anti-CD68 (white) and DAPI (blue). (e) Discrimination of podoplanin+ (white) lymphatics from LYVE1+ (violet) podoplanin- macrophages. (f) Anti-Epcam (violet) staining identifies Langerhans cells in the epidermis of the tongue. Sections were stained with anti-Lyve1 (white) and DAPI (blue). (g) Quantification of tFOLR2-MF and tCX3CR1-MF in lamina propria (LP) and muscle layer (MUS) in adult female mouse tongues. Each dot represents one animal. See also Figure 3\u2014figure supplement 1 for definition of layers. (h) Proximity of LYVE1+ (yellow) cells to CD31+ (red) blood vessels. (i) Cx3cr1-GFP+ (green) cell clusters could also be detected in innervated Tuj1+ (violet) areas in posterior regions of the tongue. (j) 3D reconstruction of Cx3cr1Gfp/+ tongue tissue sections stained for anti-CD31 (red), anti-Tuj1 (white), anti-GFP (Cx3cr1; green) and DAPI (blue) using Imaris. (k) Localization of tCX3CR1-MF in fungiform (left) and at the base of filiform (right) papillae. Sections were stained for anti-CD31 (violet), anti-Tuj1 (white), anti-GFP (Cx3cr1; green) and DAPI (blue). Shown in this figure are representative images from n=6 experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Panoramic image of an adult tongue counterstained with DAPI (white). The insets represent different areas of the tongue that were quantified. (b) Imaris-based mask for the identification of epithelium, lamina propria and muscle. Analysis of cell density was performed within these areas. (c) Macrophage subset cell counts in the respective regions of the tongue as represented in (a). Shown is the density of cells / mm3 in the lamina propria (left) and in the muscle (right). Each dot represents one independent animal from an experiment with n=6.\n\nTo better characterize the tissue localisation of tCX3CR1-MF and tFOLR2-MF, we quantified their distribution in different layers of the tongue. CD68+LYVE1+ double-positive tFOLR2-MF localized in the muscular layer as well as in the lamina propria (Figure 3g+h and Figure 3\u2014figure supplement 1), while CD68+Cx3cr1-GFP+ double-positive tCX3CR1-MF were only detected in the lamina propria and were virtually absent in muscular tissue (Figure 3g). However, clusters of Cx3cr1-GFP+ cells could be detected in the posterior part of the tongue, along TUJ1+ nerves that possibly cater to circumvallate and foliate papillae (Figure 3i) and in innervated areas of the deep muscle, along the chorda tympani branch of the facial nerve. tCX3CR1-MF were present at the base of both filiform and fungiform papillae (which harbour taste buds) and within the lamina propria, which is densely innervated by sensory fibres (Figure 3j+k).\n\nThus, we show here that tongue tCX3CR1-MF and tFOLR2-MF inhabit distinct anatomical regions of the tongue. tCX3CR1-MF localized in the highly innervated lamina propria at the base of filiform papillae and within fungiform papillae, while tFOLR2-MF can additionally be found in deeper layers, often in proximity to blood vessels.\n\n### Response of tongue macrophages to systemic inflammation\n\nRegardless of their tissue-specific roles in homeostasis, macrophages usually also function as first-line responders to pathogens, especially in barrier organs. The observed differences in the homeostatic inflammatory signature between tCX3CR1-MF and tFOLR2-MF (Figure 2f) led us to hypothesize that these cells might respond differently in inflammation. It has already been shown that a systemic inflammatory stimulus, such as the intraperitoneal (i.p.) injection of bacterial endotoxin lipopolysaccharide (LPS), can lead to increased expression of TNFa in type II taste cells and thereby attenuates taste bud cell homeostasis (Feng et al., 2012; Cohn et al., 2010). We therefore tested the inflammatory response of tongue immune cells to systemic LPS. Mice were challenged i.p. with LPS and, 6 hr after injection, we observed reduction of LYVE1 surface expression on tongue CD11b+ CD64+ immune cells (Figure 4a), which reflects the susceptiblity of LYVE1 to inflammatory shedding and degradation (Johnson et al., 2007; Kim et al., 2021). We proceeded to investigate potential cell responses at a higher resolution with scRNA-Seq. In total, we sequenced 8165 hematopoietic cells from a pool of 6 mice 6 hr after LPS (i.p.). Integration of the LPS data with the data from steady state mice indicated that all cell populations were present 6 hr after LPS injection (Figure 4b). In general, LPS injection led to an increase of inflammatory gene expression such as Oasl1 and Ifi204 across all cells of the tongue immune system (Figure 4c), which indicates a widespread response to systemic LPS as suggested previously (Feng et al., 2012; Cohn et al., 2010).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig4-v1.jpg)\n\n**Figure 4.:** (a) Female Bl6 mice were intraperitonally injected with 1 mg/kg LPS and analyzed 6 hr after injection by flow cytometry. Note the absence of LYVE1 surface expression in CD11b+ CD64+ tongue macrophages after LPS treatment. The experiment was performed twice with n=3\u20136 animals. (b) Tongue CD45+ leukocytes were FACS purified 6 hours after injection of LPS and subjected to scRNA-seq (pool of 6 mice). In total, 8165 LPS-exposed tongue leukocytes were sequenced and the data was integrated into the untreated adult analysis shown in Figure 1 for population comparison. Shown are UMAPs for untreated adult cells (top) and LPS-treated cells (bottom). (c) Gene expression pattern of Oasl1 and Ifi204 in untreated and LPS-treated tongue leukocytes. (d) Violin blots showing marker gene expression patterns in untreated (red) and LPS treated (green) tFOLR2-MF and tCX3CR1-MF. (e) Number of up- and down-regulated genes in tFOLR2-MF (violet) and tCX3CR1-MF (green) after LPS injection. The full list of DEGs can be found in Figure 4\u2014source data 1. (f) GO enrichment analysis of the DEGs. Only GO annotations involved in biological processes are shown.\n\nWe focused on tongue-resident macrophages of cluster 0 (tFOLR2-MF) and cluster 5 (tCX3CR1-MF) and examined DEGs between the steady state and LPS conditions in these two populations. 211 DEGs were identified in tFOLR2-MF (the full list of DEGs can be found in Figure 4\u2014source data 1), of which 125 genes were upregulated (e.g. Il1b, Relb and Slfn4) and 86 genes downregulated after LPS injection (e.g. Folr2, Lyve1, and Klf4; Figure 4d+e). Interestingly, many of the tFOLR2-MF signature genes (i.e. Folr2 and Lyve1) were downregulated after LPS exposure (Figure 4c). In tCX3CR1-MF we detected 127 DEGs between the physiological and the pathological state of which 84 were upregulated (e.g. Ifit2, Lgals3, and Usp18) and 43 were downregulated (e.g. Lyz2, Ccr2, and Cd9). LPS induced upregulation of 45 common genes (e.g. Cxcl10, Ccl5, Il1rn, and Gbp2) and downregulation of 17 common genes in both tongue macrophage subsets (e.g. Fcrls, S100a10, Lyz1, and Retnla; Figure 4d+e).\n\nGO enrichment analysis was used to explore potential signaling differences of tFOLR2-MF and tCX3CR1-MF in response to systemic LPS. Shared upregulated genes in the two subsets were involved in \u2018defense response\u2019, \u2018response to cytokine\u2019, and \u2018response to bacterium\u2019. Genes that were only upregulated in tCX3CR1-MF macrophages were particularly enriched for GO terms associated with type I interferon signaling (Figure 4f). On the other hand, tCX3CR1-MF showed downregulation of genes involved in \u2018mononuclear cell migration\u2019 and \u2018cell population proliferation\u2019 after LPS exposure (Figure 4f). tFOLR2-MF showed the specific upregulation of genes involved in \u201aimmune system process\u2019 and \u201aNfkb signaling\u2019, while they downregulated in response to LPS the \u2018response to stress\u2019, \u201alocalisation of cell\u2019 apoptotic processes.\n\nThus, both tFOLR2-MF and tCX3CR1-MF were activated by systemic administration of bacterial components (LPS). However, they responded differently, with strong type I interferon signaling response characterizing tCX3CR1-MF and a more \u2018classical\u2019 Nfkb-mediated macrophage response seen in tFOLR2-MF.\n\n### Distribution and subset analysis of tongue macrophages during development\n\nWe next investigated the spatiotemporal distribution of tongue macrophages over development in an effort to shed light on the origin and timeline of establishment of tFOLR2-MF and tCX3CR1-MF populations. First, we isolated leukocytes from Cx3cr1Gfp/+ reporter mice at different ages and performed flow cytometry to detect CD11b+CD64+ macrophages that we could further separate according to Cx3cr1-GFP expression and FOLR2 immunoreactivity. We used FOLR2 as a marker since macrophages at this developmental stage do not show LYVE1 surface expression. At embryonic day 17.5 (E17.5), all tongue macrophages were characterized by high Cx3cr1-GFP expression (Figure 5a). Of these Cx3cr1-GFP+ cells, two-thirds additionally expressed FOLR2 (G2 in Figure 5a). Similar proportions of macrophage subsets were observed in the mouse tongue at postnatal day 3 (p3). At this time-point, an intermediate Cx3cr1-GFPint FOLR2+ subset was also present (G3 in Figure 5a+b). In subsequent developmental stages (p11 and p28), the proportion of double-positive Cx3cr1-GFP+FOLR2+ cells progressively decreased and two main Cx3cr1-GFP+FOLR2- and Cx3cr1-GFPintFOLR2+ macrophage populations (corresponding to tCX3CR1-MF and tFOLR2-MF, respectively) were established by 8 weeks of age (Figure 5b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig5-v1.jpg)\n\n**Figure 5.:** (a) Representative flow cytometry analysis of tongue leukocytes isolated from Cx3cr1Gfp/+ mice at different embryonic (E) and postnatal (p) days of development and 8 week-old adults. Cells were pre-gated for CD45+ Epcam- Gr1-. (b) Proportions of Cx3cr1-GFP+ FOLR2- (G1) Cx3cr1-GFP+ FOLR2+ (G2) and Cx3cr1-GFP- FOLR2+ (G3) cells out of CD64+ cells. Five to 7 animals per time point were used. (c) 3D reconstructions of whole tongue sagittal sections (left) and magnifications (right) stained with anti-GFP (green), anti-CD31 (blood vessels; red) and anti-TUJ1 (neurons; white) from E14, p0, p3, and p11 Cx3cr1Gfp/+ reporter mouse tongues. White dashed line in magnifications (right) represents the barrier between the epithelium layer and the muscle. The experiment was repeated at least 3 times.\n\nTo correlate the flow cytometry data to spatial localization, we performed immunohistochemical analysis of tongue sections from Cx3cr1Gfp/+ mice during early developmental stages. As mentioned above, tongue macrophages did not express Lyve1 during development and the FOLR2 antibody used for FACS did not work for immunohistochemical staining of the tissue. We thus relied on Cx3cr1-GFP as a marker of macrophages. Tissue sections were counterstained with antibodies against CD31 to identify blood vessels, and, since various nerves (e.g. VIIth, IXth and Xth cranial nerve ganglia) innervate the tongue tissue during embryogenesis, we also stained tissue sections for anti-beta Tubulin III (TUJ1) to visualize neurons. At E14.5 Cx3cr1-GFP+ macrophages could be detected throughout the whole tongue tissue with no specific localization pattern (Figure 5c). This continued through postnatal day p0 and until p11, whereby Cx3cr1-GFP+ macrophages were still dispersed throughout the tongue but started to align along the lamina propria. At these stages, taste bud maturation is observed (El-Sharaby et al., 2001; Harada et al., 2000) and we detected the first Cx3cr1-GFP+ macrophages in proximity to fungiform papillae (Figure 5c).\n\nThese data demonstrate the progression of a dynamic tongue macrophage compartment during mouse tongue development and that the specific localization of tongue macrophages in distinct anatomical niches is only established during postnatal stages.\n\n### Molecular characterization of tongue macrophages during development\n\nThe histological analysis reveals the unordered distribution of Cx3cr1-GFP+ macrophages during early developmental stages towards distinct localization at adulthood. However, it is not clear from our histological data whether this reflects a sequential developmental maturation of macrophages or rather a progressive exchange of embryonic populations with adult, bone marrow-derived monocytes.\n\nTo gain further insight into this question, we investigated the tongue immune compartment from mice at post-natal day 3 (p3) with scRNA-seq. We chose p3 since it is the stage at which we could first identify Cx3cr1-GFPintFOLR2+ macrophages by flow cytometry (Figure 5b). We sequenced 13,898 cells (from a pool of n=7 mice) and overlaid the data on the scRNA-seq data derived from adult mice (Figure 6a). All adult tongue immune cell populations were also present at p3, however, we noticed major differences in the frequency of several populations. Notably, p3 tongues harbored more mast cells (clusters 11 & 13) and fewer Fn1+ myeloid cells (cluster 6) than adult tongues (Figure 6b). We also detected a newly appearing cluster of cells in p3 tongues (cluster 2), which was almost absent in adult mice (Figure 6b). These cluster 2 cells expressed high levels of proliferation-related genes, including Top2a, Ccnb2, Mki67, and further showed expression of typical macrophage lineage genes such as Cx3cr1, Tlr4, Pf4, and Lyve1, which suggests they represent proliferating macrophage precursor cells (Figure 6c). Indeed, when the UMAP is projected in 3D, cluster 2 cells seemed to incorporate into tFOLR2-MF (Figure 6d; Figure 6\u2014source data 1). To investigate the connection of cluster 2 precursors with tongue macrophages we used Slingshot, which models developmental trajectories in scRNA-seq data (Street et al., 2018). Slingshot analysis revealed a possible bifurcation of the precursor cells at the cluster 1 level at which trajectories either split into cluster 0 or cluster 5 cells (Figure 6e), which might indicate that both tFOLR2-MF and tCX3CR1-MF populations derive from a common precursor. To better understand the differences of tFOLR2-MF and tCX3CR1-MF cells at the p3 and adult state, we compared their expression profiles and performed GO enrichment analysis of the DEGs (Figure 6\u2014figure supplement 1). Both tongue macrophage subsets showed in general an increased proliferative gene program at early postnatal stages, while functional biological processes such as \u2018positive regulation of angiogenesis\u2019 and \u2018cellular response to growth factor stimulus\u2019 increased in adult tFOLR2-MF (Figure 6\u2014figure supplement 1b). tCX3CR1-MF on the other hand established a gene program that comprises \u2018antigen processing\u2019 and \u2018defense response to virus\u2019 during adulthood (Figure 6\u2014figure supplement 1d), which indicates that the functional adaption to the niche likely takes place late during development. When we used latent time analysis to reconstruct the possible maturation of tongue macrophages, we detected a general down-regulation of MHC-related genes as tFOLR2-MF mature, which was accompanied by an increased expression of genes with STAT3 binding motif, while no clear maturation program could be detected in tCX3CR1-MF (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig6-v1.jpg)\n\n**Figure 6.:** (a) CD45+ tongue leukocytes were isolated by FACS from newborn p3 mice. The purified cells were subjected to scRNA-seq and a total of 13,898 cells were sequenced. The early postnatal data was integrated with the adult scRNA-seq dataset shown in Figure 1 for population comparison. Shown are UMAPs for adult (left) and newborn cells (right). (b) Cell frequencies for each cell cluster in adult and newborn mice. Note that the adult analysis included enrichment for LC using a different cell isolation protocol that was not done for the p3 pup analysis (see Materials and method section) and cluster 10 LC are therefore probably underrepresented in p3 tongues. (c) Expression levels of example genes in newborn cells shown in the UMAP. (d) 3D UMAP visualization reveals the merging of proliferating cluster 2 cells with cluster 0 cells. The 3D html file is provided in Figure 6\u2014source data 1. (e) Slingshot analysis was used to model the developmental trajectories of tongue macrophages. See also Figure 6\u2014figure supplement 1+2 for gene differences between newborn and adult tongue macrophages. (f) In vivo EdU proliferation assay of adult and newborn tongue leukocytes. EdU was injected and tongue cells were isolated 24 hr after injection. Representative FACS gating strategy for macrophages at each age shown above and quantification of EdU+ cell fraction shown below. Each dot in the quantification represents one independent animal (n=5). This experiment was performed once. (g) CD45.2/2 animals were lethally irradiated (9.5 Gy) and reconstituted with CD45.1 expressing bone marrow cells. Five weeks and 10 weeks after transfer, tongue cells were isolated and analysed by flow cytometry for the distribution of CD45.1+ cells within the macrophage subsets. Each dot represents one independent animal. This experiment was performed once.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Differentially expressed genes between p3 and adult tFOLR2-MF. Shown are all significantly changed genes that passed variance analysis. No fold-change filter was applied to the analysis. (b) GO enrichment analysis of biological processes that differ between p3 and adult tFOLR2-MF. Redundant terms are excluded. (c) Differentially expressed genes between p3 and adult tCX3CR1-MF. Shown are all significantly changed genes that passed variance analysis. No fold-change filter was applied to the analysis. (d) GO enrichment analysis of biological processes that differ between p3 and adult tCX3CR1-MF. Redundant terms are excluded.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Latent time analysis reveals distinct gene expression patterns in adult tFOLR2-MF. Note the gradual down-regulation of MHC-related genes (for example, H2\u2013Ab1, H2\u2013Aa, Cd74), proliferation-associated genes (for example, Cdk1, Cenpp) and genes that are highly expressed in tCX3CR1-MF (e.g. Cx3cr1, Hexb, Axl). Early (blue) and late (red) expressed genes that were used in (b) are marked with a rectangle. (b) We used Lisa Cistrome (Qin et al., 2020) (http://lisa.cistrome.org/) to investigate public chromatin profile data from a comprehensive database of mouse H3K27ac ChIP-seq profiles to determine transcription factors that are possibly responsible for the regulation of early and late expressed tFOLR2-MF genes. Note that early expressed tFOLR2-MF genes (blue genes in (a)) show preferential binding motifs of IRF and CEBP proteins similar to tCX3CR1-MF, while genes that are expressed in more mature tFOLR2-MF are enriched for STAT3 and OGT motifs. (c) Latent time analysis of adult tCX3CR1-MF. No clear maturation pattern could be extracted. Intermediate (blue) and late (red) expressed genes that were used in (d) are marked with a rectangle. (d) Lisa analysis of intermediate and late expressed tCX3CR1-MF gene sets as shown in (c). Both intermediate and late gene data sets showed a significant enrichment for IRF, RELA, JUNB, and BATF motifs. While intermediate genes showed binding motifs for RUNX1, BCL6, and NR3C1, the late gene set was only weakly enriched for SPI1 motifs.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77490/elife-77490-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (a) Exemplary flow cytometry analysis of Irf8-deficient tongue leukocytes and their respective controls. The cells were pre-gated as CD11b+ CD64+. (b) Ratio analysis of Ly6C- monocytes / Ly6C+ monocytes, splenic cDC2 /cDC1 cells and tFOLR2-MF / tCX3CR1-MF isolated from WT and Irf8-deficient mice (n=4). Each dot represents one animal. The experiment was repeated three times with similar results. Unpaired Student\u2019s T-Test was used to determine significance. * indicates p<0.05. (c) Histological analysis of an adult Cx3cr1Gfp/+ Irf8-/- tongue reveals the presence of Cx3cr1-GFP+ tCX3CR1-MF in the lamina propria. Sections were stained with anti-GFP (green) and anti-LYVE1 (violet) antibodies. The experiment was repeated three times. (d) 9047 CD45+ cells were profiled from adult Irf8-deficient mice (pool of n=5 mice) by scRNA-seq. Shown are UMAP dimension reductions of WT (left) and Irf8-deficient CD45+ tongue cells (right). Note that the Irf8-deficient data was separately integrated with WT cells and therefore reveals different clustering results than those shown in main Figures 1, 4 and 5 and Figure 1\u2014figure supplement 1. (e) Gene expression examples in wt and Irf8-deficient cells. Note that Irf8 transcripts can be detected on mRNA level in Irf8-deficient mice since only exon 2 of the Irf8 gene is deleted in the Jackson strain 018298. (f) Heatmap of marker gene expression for clusters 0, 1, 2, and 9 in wildtype and Irf8-deficient cells.\n\nWe confirmed the proliferation activity of macrophage precursor cells at p3 by EdU in vivo labelling. One day after injection, EdU incorporation could be readily observed in about 30\u201340% of CD64+FOLR2+ cells, while both adult tongue macrophage subsets showed no or weak signs of homeostatic proliferation (Figure 6f).\n\nWe then investigated whether peripheral cells like monocytes could adapt to the tongue macrophage niches in an immune compromised condition, for example, after whole body irradiation. We performed bone marrow (BM) chimeric experiments, in which CD45.1 BM cells were transferred into irradiated CD45.2 recipients. We analyzed the composition of donor versus host tongue macrophages 5 and 10 weeks after transfer. While tCX3CR1-MF were already replaced by monocyte-derived cells 5 weeks after transfer, the tFOLR2-MF still comprised 53% (+/-6% SD) donor cells and accordingly, showed a slower replacement (Figure 6g). At 10 weeks after irradiation, both tongue macrophage subsets were exclusively of hematopoietic stem cell (HSC) origin. These data indicate that both tongue macrophage niches can be repopulated by myeloid precursors during adulthood.\n\nTo further explore the monocyte-dependency of tCX3CR1-MF and tFOLR2-MF under homeostatic conditions, we analyzed the tongue-resident immune compartment of Irf8-deficient mice, which lack cDC1, Ly6C+ monocytes and show reduced numbers of Ly6C- monocytes (Kolter et al., 2019; Kurotaki et al., 2013; Figure 6\u2014figure supplement 3a+b). We detected a slight decrease in the frequency of tCX3CR1-MF, but this population was clearly still present in the lamina propria of Irf8-deficient mice (Figure 6\u2014figure supplement 3b+c). We also profiled the transcriptome of 9047 CD45+ cells from adult Irf8-deficient mice (pool of n=5 mice) by scRNA-seq (Figure 6\u2014figure supplement 3d-f). All tongue-resident hematopoietic cell populations that were present in WT animals could also be identified in Irf8-/- mice including dendritic cells, tCX3CR1-MF and tFOLR2-MF. In addition to the unchanged mononuclear phagocyte subset composition in Irf8-/- mice, the transcriptome of tCX3CR1-MF and tFOLR2-MF was also largely unaffected by the absence of the transcription factor IRF8 (9 DEGs for Cx3cr1+ and 9 DEGs for Folr2+ macrophages; Figure 6\u2014figure supplement 3d-f).\n\nTaken together, these experiments indicated that macrophage precursor cells proliferate locally and give rise to both tongue macrophage subsets. However, during adulthood and under immune compromised conditions, tCX3CR1-MF and tFOLR2-MF can be replaced by HSC-derived cells.\n\n## Discussion\n\nDespite the significance of the tongue as a site of interaction between microbes and the host, its cellular immune composition is not well investigated, especially not on the transcriptomic level. In light of the emerging role of different immune cells such as ILCs, regulatory T cells or macrophages in tissue remodeling, nerve surveillance and homeostatic tissue organization (Kolter et al., 2019; Wolf et al., 2017; Wang et al., 2020; Monticelli et al., 2011), we characterized the mouse tongue-resident immune cell compartment under physiological conditions. We confirmed the existence of tLCs, cDCs, and Ly6C+ monocytes in the tongue (Sparber et al., 2018; Park et al., 2017; Tanaka et al., 2016) and additionally identified two new subsets of tongue-resident macrophages, one of which was characterized by Folr2 and Lyve1 expression, while the other subset expressed high levels of Cx3cr1, MHCII-related genes and Itgax (encoding CD11c). The phenotype of these two tongue macrophage populations is reminiscent of the two recently defined interstitial macrophage populations which are present across various organs (Chakarov et al., 2019; Dick et al., 2022). In agreement with this, our bulk RNA-seq analysis revealed greater transcriptional similarities of tongue macrophages with interstitial heart macrophages, for example, than with TRMs such as Langerhans cells or microglia.\n\nChakarov et al., further described an association of Lyve1+ macrophages with blood vessels and Cx3cr1+ macrophages with nerve fibers (Chakarov et al., 2019). In the adult tongue, tFOLR2-MF were distributed across both the lamina propria and the deep muscle of the tongue, but were absent from the epithelium. We could also observe the association of tFOLR2-MF to CD31+ blood vessels. On the other hand, tCX3CR1-MF are largely restricted to the highly innervated lamina propria and along the fibers of the chorda tympani branch of the facial nerve. In addition, rare clusters of Cx3cr1+ macrophages could also be detected in innervated posterioir areas of the tongue. It is therefore quite likely that the previously characterized CD11c+ \u2018dendritic cells\u2019 in the lamina propria of the human and mouse tongues (Feng et al., 2009; Mascarell et al., 2009) correspond to the cells described here as tCX3CR1-MF. Our observation that tCX3CR1-MF acquire their disctinct localization post-natally and gradually might suggest that changes in the oral microbiota contribute to the development and alignment of tCX3CR1-MF in the lamina propria, which coincidences with lactation and weaning. Indeed, it was previously shown that local microbiota has a major impact on the development of mucosal LC (Capucha et al., 2018) and this might also be the case for tongue resident macrophage populations.\n\nThe proximity of tCX3CR1-MF to nerves raises the question of whether they perform specific nerve-associated functions. In the skin, large, peripheral nerve-associated Cx3cr1+ macrophages were recently described (Kolter et al., 2019) that were involved in the maintenance of myelin sheath integrity and axon sprouting after injury and had a transcriptional signature related to nervous system functions. This particular signature was absent from tCX3CR1-MF, although tCX3CR1-MF did express some genes that are enriched in microglia (for example, Hexb, Apoe) that also reside in close proximity to neurons. Various cranial nerve ganglia innervate the tongue tissue during embryogenesis and axons are guided by multiple chemoattractive factors to the tongue epithelium such as brain derived neurotrophic factor (BDNF; Ma et al., 2009). It is known that microglia-derived BDNF plays an important role in synapse formation and plasticity in the adult brain (Parkhurst et al., 2013). It is therefore possible that the subsequent postnatal maturation of taste receptor cells and the synaptic interconnectivity with neurons might be influenced by tCX3CR1-MF. The interesting topic of whether and how macrophages interact with nerves in the tongue needs further investigation.\n\nIt is also possible that tongue macrophages contribute directly or indirectly to instances of taste dysfunction. Various infections including Covid-19 or middle ear infections (Mahmoud et al., 2021; Gautier and Ravussin, 2020; Michael and Raut, 2007), different medical treatment regimens (Wickham et al., 1999) and aging (Ogawa et al., 2017) have all been associated with taste disruption. Taste bud maintenance relies on a continuous renewal of differentiated taste receptor cells (Roper and Chaudhari, 2017) and it has been shown that systemic inflammation like peripheral LPS injection increases TNF\u03b1 and IL10 production by taste cells (Feng et al., 2012; Feng et al., 2014), inhibits taste progenitor cell proliferation and interferes with taste cell renewal (Cohn et al., 2010). Such a mechanism might explain taste disorders associated with infections in general. We showed that systemic inflammation also causes a direct response from tongue-resident macrophages. We did not investigate the precise contribution of inflammation to taste sensation, yet consider the possibility that tongue macrophages may release cytokines and potentially neurotoxic products that could cause nerve damage. The reverse has also been shown, that tissue macrophages can also mediate neuronal protection and therefore limit neuronal damage upon infection (Matheis et al., 2020). Whether and how the various tongue mononuclear phagocytes are involved in taste perception remains to be explored and could be of clinical relevance in conditions such as anorexia or cancer, where appetite- and weight-loss is often aggravated by taste-dysfunctions.\n\nThe question remains of the role of tongue immunity in cases where tongue homeostasis is disrupted. It was recently shown that tongue CD163+ macrophages infiltrate tumor tissue in squamous cell carcinoma at a high frequency (Agarbati et al., 2021). CD163+ macrophages were interpreted to be \u2018M2 macrophages\u2019, and increased infiltration correlated with worse outcomes compared to patients with a high infiltration of CD11c+ \u2018M1\u2019 macrophages (Agarbati et al., 2021). Regardless of whether the \u2018M1/M2\u2019 classification really applies to in vivo situations (Nahrendorf and Swirski, 2016), our data corroborate the notion of the existence of distinct subsets of tongue macrophages, which might respond differently to tumor-specific environmental cues.\n\nIn summary, we present a comprehensive catalog of immune cells in the murine tongue in physiological conditions and upon LPS-induced systemic inflammation. We identified two novel macrophage subsets in the tongue, namely tCX3CR1-MF and tFOLR2-MF, and place these findings in the context of mammalian macrophage biology. We hope that these data will encourage and support further investigations of the tongue as barrier and as an underrated immunological organ.\n\n## Materials and methods\n\n### Ethics statement, experimental reporting, and study design\n\nThis study was performed in strict accordance with national and international guidelines for the care and use of laboratory animals (Tierschutzgesetz der Bundesrepublik Deutschland, European directive 2010/63/EU, as well as GV-SOLAS and FELASA guidelines and recommendations for laboratory animal welfare). The animal experiment permission was obtained from the Landesamt f\u00fcr Gesundheit und Soziales (LAGeSo, Berlin). Most of the mice that were used in this study were also part of other experiments, in order to reduce animal experiments and suffering.\n\n### Mice\n\nWe used the following mouse strains: C57BL/6 N wildytpe mice, B6(Cg)-Irf8tm1.2Hm/J (Irf8-/-; Jackson laboratory, stock number: 018298), B6.SJL-Ptprca Pepcb/BoyJ (CD45.1/1; Jackson laboratory, stock number: 002014) and B6.129P2(Cg)-Cx3cr1tm1Litt/J (Cx3cr1Gfp; Jung et al., 2000). For BM chimeras, 8\u201312 weeks old recipient animals (CD45.2/2) were lethally irradiated (950 rad) and reconstituted with 106 BM cells isolated from CD45.1 expressing mice. The animals received Ciproxin in their drinking water for 10 days after irradiation. BM chimeras were analyzed 5 and 10 weeks after transfer. Mice were bred and housed at specific pathogen-free (SPF) animal facilities of the Max-Delbru\u0308ck-Center for Molecular Medicine in Berlin, Germany or at the Weizmann Institute of Science in Rehovot, Israel. Mice were kept in standard conditions (22\u00b0C \u00b1 1\u00b0C) under a 12 hr light cycle with experiments carried out during the \u2018lights-on\u2019 phase. Mice had access to a chow diet ad libitum and cages were lined with chip bedding and enriched with a mouse tunnel/igloo.\n\n### Cell suspensions for fluorescence-activated cell sorting\n\nAdult mice were anesthetized by intraperitoneal injection of 150 mg/kg body weight pentobarbital sodium (WDT) and intracardially perfused with PBS.\n\n#### Brain\n\nBrains were dissected, and the olfactory bulb and cerebellum were removed. The remaining brain was minced and filtered through a 70-\u03bcm cell strainer in ice-cold high-glucose DMEM (Sigma). The cell suspension was centrifuged at 1200 rpm at 4 \u00b0C for 6 min and the pellet was resuspended in 5 ml of 40% Percoll (GE Healthcare) in PBS and transferred to a 15-ml tube. Tubes were centrifuged at 2000 rpm for 25 min at 14 \u00b0C with no acceleration nor break. Pellet was resuspended in 10 ml sorting buffer and centrifuged for 6 min at 1200 rpm and 4 \u00b0C. Leukocyte-containing cell pellets were further processed.\n\n#### Colon\n\nCells from Cx3cr1Gfp/+ mice were isolated as previously described (Aychek et al., 2015). In brief, the intestine was removed and feces were flushed with cold PBS without calcium and magnesium. The intestine was longitudinally opened and cut into 0.5 cm pieces. Intestinal epithelial cells were removed by incubation with the HBSS containing 1 mM DTT, 2 mM EDTA, and 5% of fetal calf serum. The cell suspension was incubated on a shaker at 37 \u00b0C, 125 rpm for 40 min. The cell suspension was shortly vortexed and passed through a 100-\u03bcm mesh. The intestinal tissue pieces were transferred to a 50-ml Falcon tube containing 5 ml PBS with 5% FBS, 1 mg/ml of Collagenase VIII (Sigma) and 0.1 mg/ml DNase I. Samples were incubated on a shaker at 37 \u00b0C, 250 rpm for 40 min. Digested colon tissue was vortexed for 40 s, passed through a 70-\u03bcm mesh and cells were collected by centrifugation at 1200rpm for 10min at 4\u00b0C. Cells were stained after CD16/32 block with antibodies against CD45, CD11b, lineage (Ly6C, Ly6G, B220), and MHCII.\n\n#### Heart\n\nThe heart of Cx3cr1Gfp/+ mouse was removed, the organ was chopped into small pieces and digested for 30 min at 37 \u00b0C in RPMI medium without fetal calf serum supplemented with 1 mg /ml Collagenase IV and 1 mg/ml DNase I. The digestion was stopped by addition of staining buffer (2 mM EDTA, 1% FCS in PBS) and the cell suspension was minced through a 100-\u03bcm cell strainer. After centrifugation at 1200 rpm, 4 \u00b0C for 6 min, supernatant was discarded and cells were blocked with anti-CD16/32 antibodies for 10 min, before anti-F4/80-biotin antibodies were added for 25 min on ice. After washing, the cell pellet was incubated with anti-biotin beads (Miltenyi) for 15 min on ice. Cells were washed again (1200 rpm, 4 \u00b0C for 6 min) and MACS was performed with LS columns (Miltenyi). After elution and washing of cells, lung cells were stained for CD45, streptavidin, dump (Ly6C, Ly6G), CD11b, MerTK, CD64, and MHCII.\n\n#### Lung\n\nThe lung was removed and cut into small pieces. Tissue was collected in RPMI medium without fetal calf serum supplemented with 1 mg/ml Collagenase A and 1 mg/ml DNase I. Tissue was digested for 30 min at 37 \u00b0C. The suspension was minced and filtered through a 100\u03bcm cell strainer. The cell suspension was centrifuged at 1200 rpm, 4 \u00b0C for 6 min. The supernatant was removed and cells were blocked with anti-CD16/32 antibodies for 10 min, before anti-CD45-biotin antibodies were added for 25 min on ice. Afterwards, cells were washed with staining buffer (2 mM EDTA, 1% FCS in PBS) at 1200 rpm, 4 \u00b0C for 6 min, supernatant was discarded and anti-biotin beads (Miltenyi) were added for 15 min. Cells were washed again (1200 rpm, 4 \u00b0C for 6 min) and MACS was performed with LS columns (Miltenyi). After elution and washing of cells, lung cells were stained for lineage (Ly6C, Ly6G), streptavidin, CD11b, CD64, CD11c, and SiglecF.\n\n#### Spleen\n\nThe spleens were removed from Bl6 mice and minced through a 100-\u03bcm cell strainer. After washing with staining buffer (2 mM EDTA, 1% FCS in PBS) at 1200 rpm, 4 \u00b0C for 6 min, supernatant was discarded and cells were blocked with anti-CD16/32 antibodies for 10 min, before anti-F4/80-biotin antibodies were added for 25 min on ice. After washing, the cell pellet was incubated with anti-biotin beads (Miltenyi) for 15 min on ice. Cells were washed again (1,200 rpm, 4 \u00b0C for 6 min) and MACS was performed with LS columns (Miltenyi). After elution and washing of cells, lung cells were stained for CD45, streptavidin, lineage (Ly6C, Ly6G, B220), CD11b, CD11c, and MHCII.\n\n#### Skin Langerhans cells\n\nEars were dissected and placed over 0.05% Trypsin with EDTA in PBS for 1.5\u20132 hr at 37 \u00b0C, until the epidermis could be peeled off using forceps. The epidermis was minced and the crude tissue suspension in sorting buffer was passed through a 100-\u03bcm cell strainer and centrifuged for 6 min at 1200 rpm and 4 \u00b0C. Cells were stained after CD16/32 block with antibodies against CD45, Gr1, CD11c and EpCam.\n\n#### Tongue leukocytes\n\nTongues were extracted, minced in 500 \u03bcL of PBS with 0.2 mg of DNAse I (Roche), 2.4 mg Collagenase IV (Gibco) and 0.15 mg (60 U) Hyaluronidase I (Sigma) and incubated for 45 min at 37 \u00b0C. Ten ml sorting buffer were added to the crude tissue suspension as it was passed through a 100-\u03bcm cell strainer and centrifuged for 6 min at 1200 rpm and 14 \u00b0C. Pellet was resuspended in 3 ml PBS, layered over 3 ml of Ficoll-Paque and centrifuged for 17 min at 2000 rpm and 14 \u00b0C with no acceleration nor break. The interface containing leukocytes was collected, 5 ml sorting buffer were added centrifuged for 6 min at 1200 rpm and 4 \u00b0C. Leukocyte-containing cell pellets were further processed. All tongue preparations were performed according to this protocol, if not otherwise stated.\n\n#### Tongue Langerhans cells\n\nTo separate the epithelium from the rest of the tongue and to dislodge Langerhans cells, extracted tongues were injected with 5 U/ml of Dispase II (Sigma) in HEPES buffered saline until completely distended. They were then incubated for 15 min at 37 \u00b0C and the epithelium layer was peeled off using forceps. The epithelium was minced in 500 \u03bcL of PBS with 0.2 mg of DNAse I (Roche), 4.8 mg Collagenase IV (Gibco) and 0.15 mg (60 U) Hyaluronidase I (Sigma) and incubated for 15 min at 37 \u00b0C. Ten ml sorting buffer were added to the crude tissue suspension as it was passed through a 100-\u03bcm cell strainer and centrifuged for 6 min at 1200 rpm and 4 \u00b0C. The pellet (enriched for tongue Langerhans cells) was then further processed accordingly.\n\n### Flow cytometry and cell sorting\n\nCell suspensions were kept on ice. They were blocked with anti-CD16/32 (2.4G2) antibodies for 10 min and then stained for 20\u201325 min with antibodies against mouse CD45 (30-F11), CD45.2 (104), CD45.1 (A20), CD11b (M1/70), CD11c (N418), CD64 (X54-5/7.1), CX3CR1 (SA011F11), F4/80 (BM8), FOLR2 (10/FR2), EpCam (G8.8), Gr1 (RB6-8C5), IA/IE (M5/114.15.2), B220 (Ra3-6B2), Ly6C (HK1.4), Ly6G (1A8), LYVE1 (ALY7), MerTK (2B10C42), Siglec-F (E50-2440) and TIMD4 (RMT4-54). Antibodies were purchased from BioLegend or eBioscience. The gating strategy for all macrophage populations is presented in Figure 2\u2014figure supplement 2. Samples were washed in 2 ml sorting buffer and centrifuged for 6 min at 1200 rpm and 4 \u00b0C. Pellet was resuspended in sorting buffer and flow sorted using AriaI, AriaII or AriaIII (BD Biosciences, BD Diva Software) cell sorters. Flow cytometry analysis was performed on Fortessa or LSRII (BD Biosciences, BD Diva Software) and analyzed with FlowJo software v.10.7.1 (BD).\n\n### scRNA-seq\n\n#### Experiment 1 (Figure 1)\n\nTongues were prepared as described in the Materials and methods section. Eight adult, female Bl6 mice were used for the isolation of interstitial cells with Collagenase IV / Hyaluronidase / DNase I digestion. Four additional adult, female Bl6 mice were used to isolate tongue Langerhans cells with Dispase digestion. Both preparations were pooled and CD45+ cells were FACS sorted and analyzed with the Chromium Single Cell 3\u2019 Reagent Kits v3.1.\n\n#### Experiment 2 (Figure 1\u2014figure supplement 1a)\n\nscRNA-seq was performed on CD45+ tongue hematopoietic cells isolated from 10 Bl6 female mice. Tongues were extracted, minced in 500 \u03bcL of PBS and digested with 0.2 mg of DNAse I (Roche) and 1 mg/ml Collagenase IV (Gibco) and no enrichment for Langerhans cells was performed. 10 ml sorting buffer were added and tissue suspension was passed through a 100-\u03bcm cell strainer and centrifuged for 6 min at 1,200 rpm and 14 \u00b0C. FACS-purified CD45+ cells were used for scRNA-seq. scRNA-seq was performed with the Chromium Single Cell 3\u2019 Reagent Kits v2.\n\n#### Experiment 3 (Figure 4)\n\nCell isolation of LPS-injected female Bl6 mice was performed as mentioned for experiment 1. Six mice were used for interstitial cell isolation (Collagenase IV / Hyaluronidase / DNase I digestion) and 4 mice for Langerhans cell extraction (Dispase digestion). Both samples were pooled and CD45+DAPI- cells were analyzed with Chromium Single Cell 3\u2019 Reagent Kits v3.1.\n\n#### Experiment 4 (Figure 5)\n\nSeven mice were used for interstitial cell isolation by Collagenase IV / Hyaluronidase / DNase I digestion and no enrichment for Langerhans cells was performed. CD45+DAPI- FACS-sorted cells were analyzed with Chromium Single Cell 3\u2019 Reagent Kits v3.1.\n\n#### Experiment 5 (Figure 6\u2014figure supplement 3)\n\nCell isolation of Irf8-/- female Bl6 mice was performed as mentioned above (Collagenase IV / Hyaluronidase / DNase I). Five mice were used for interstitial cell isolation. No additional Langerhans cell extraction was performed for this experiment. CD45+DAPI- cells were analyzed with Chromium Single Cell 3\u2019 Reagent Kits v3.1.\n\n### RNA isolation and cDNA synthesis for bulk RNA-Seq\n\n500\u201320,000 sorted cells were lysed with 100 \u00b5l of lysis/binding buffer (Life Technologies), snap-frozen on dry ice and stored at \u201380 \u00b0C until further use. mRNA purification was performed with the Dynabeads mRNA DIRECT Purification Kit (Life Technologies) according to the manufacturer\u2019s guidelines. MARS-seq barcoded RT primers were used for reverse transcription with the Affinity Script cDNA Synthesis Kit (Agilent) in a 10 \u00b5l reaction volume.\n\n#### Bulk RNA-sequencing\n\nThe MARS-seq protocol was used for bulk RNA sequencing (Jaitin et al., 2014). After reverse transcription, samples were analyzed by qPCR and samples with similar Ct values were pooled. Samples were treated with Exonuclease I (New England BioLabs (NEB)) for 30 min at 37 \u00b0C and for 10 min at 80 \u00b0C followed by a 1.2 X AMPure XP beads (Beckman Coulter) cleanup. The second strand synthesis kit (NEB) at 16 \u00b0C for 2 hours was used for cDNA synthesis followed by a 1.4 X AMPure XP bead cleanup. In vitro transcription (IVT) was performed at 37 \u00b0C for 13\u201316 h with the HiScribe T7 RNA Polymerase kit (NEB). The remaining DNA was digested by Turbo DNase I (Life Technologies) treatment at 37 \u00b0C for 15 min followed by a 1.2 X AMPure XP bead cleanup. RNA fragmentation (Invitrogen) was performed at 70 \u00b0C and the reaction was stopped after 3 min with Stop buffer (Invitrogen) followed by a 2 X AMPure XP bead cleanup. Ligation of the fragmented RNA to the MARS-seq adapter was performed at 22 \u00b0C for 2 h with T4 RNA ligase (NEB) followed by a 1.5 X AMPure XP bead cleanup. A second reverse transcription reaction was performed with MARS-seq RT2 primer and the Affinity Script cDNA Synthesis Kit (Agilent Technologies) followed by 1.5 X AMPure XP bead cleanup. Finally, the library was amplified using P5_Rd1 and P7_Rd2 primers and the Kapa HiFi Hotstart ready mix (Kapa Biosystems) followed by a 0.7 X AMPure XP bead cleanup. Fragment size was measured using a TapeStation (Agilent Technologies) and library concentrations were measured with a Qubit fluorometer (Life Technologies). The samples were sequenced using a NextSeq 500 system (Illumina).\n\n### Microscopy\n\n#### Tissue preparation\n\nMice were deeply anesthetized with a combination of 150 mg/kg body weight pentobarbital sodium (WDT) and perfused transcardially for 3 min with ice-cold 0.9% NaCl solution and for 5 min with 4% paraformaldehyde (PFA) in 0.1 M phosphate buffer (PB). Tongues were post-fixed overnight in 4% PFA in 0.1 M PB. They were then cryoprotected by 3 x overnight incubations in 30 % w/v sucrose in 0.1 M PB, cryosectioned with a cryostat (35 \u03bcm sagittal) and mounted directly to slides for staining.\n\n#### Immunohistochemistry\n\n35 \u03bcm sagittal tongue sections from the tongue midline were washed for 5 min at RT in TBS (42 mM Tris HCl, 8 mM Tris Base, 154 mM NaCl; pH 7.4). Sections were blocked in 20% normal donkey serum (NDS) in TBS-T for 1 hr at RT and incubated overnight at 4 \u00b0C in primary antibody diluted in TBS-T +2% NDS/NGS. Primary antibodies against CD31 (Millipore MAB13982; 1:200), CD68 (Biolegend 137002; 1:100), GFP (AbCam; ab13970; 1:200), LYVE1 (ReliaTech 103-PA50AG; 1:500), Podoplanin (Biolegend 156202; 1:50), TUJ1 (AbCam ab18207; 1:200) were used. Sections were then washed 3 \u00d7 30 min in TBS-T and incubated overnight at 4 \u00b0C with appropriate secondary antibodies raised in goat and conjugated to Alexa Fluor dyes (Invitrogen) were diluted 1:500 or 1:1,000 in TBS-T +2% NDS/NGS. Sections were washed 3 \u00d7 30 min in TBS-T and nuclei were stained with 0.5 mg/ml DAPI in TBS. After washing, sections were mounted with FluorSave reagent (Calbiochem).\n\n#### Imaging and quantification\n\nImaging was performed using a Leica SP5 TCE. Four regions (R1-R4; Figure 3\u2014figure supplement 1) from three consecutive sagittal 35 \u03bcm slices at the tongue midline were imaged at 775.76 \u00d7 734.76 \u03bcm dimensions and over a depth of 30 \u03bcm with 1.5 \u03bcm z-stack intervals. All image processing was done with Fiji (Schindelin et al., 2012) and quantifications were performed with Imaris Microscopy Image Analysis Software (Bitplane). Regions of interest (ROI: muscle or lamina propria) were manually drawn onto each z-stack image and the software\u2019s built-in surface module extrapolated the volume of the respective ROI. Then, the built-in surface detection algorithm was used to identify cells (LYVE1+ or Cx3cr1-GFP+) in each ROI, so that we could calculate number of cells and mean cell volumes per ROI volume.\n\n#### Lipopolysaccharide induced systemic inflammation\n\nMice were injected intraperitoneally with 1 mg/kg LPS (E. coli 0111:B4) in 200 \u03bcl PBS 6 hr prior to sacrifice.\n\n#### Cell proliferation assay (EdU)\n\nThe EdU Click 488 Kit from BaseClick was used. In brief, 0.5 mg/g of EDU in PBS was injected intraperitoneally to adult mice or subcutaneously to pups 15 hr before to sacrifice. Single cell suspensions were obtained from tongues (see relevant section) and cells were processed according to the manufacturer\u2019s instructions.\n\n### Sequencing data analysis\n\n#### Bulk sequencing data analysis\n\nUsing the fastq files, the reads were deduplicated based on their UMIs. Subsequently, STAR (version 2.5.3 a) was applied for the alignment of reads to the mouse genome (mm9). Quantification of reads by htseq-count (version 1.0) yielded the input expression matrix for DESeq2 (version 1.26.0), used to identify differentially expressed genes for each group. More specifically, each group was compared against all other groups to obtain DE marker genes.\n\n### Single-cell sequencing data analysis\n\n#### Preprocessing and integration\n\nThe data was sequenced with 10 x Genomics (version v3.1). For alignment to mm10 and quantification Cell Ranger Single Cell Software was used. For additional preprocessing and downstream analysis Seurat (v4) was applied. First, based on the UMI counts, cells were filtered based on the number of detected genes and the proportion of mitochondrial gene counts. All cells with more than 10% mitochondrial gene count were removed. For the number of detected genes, a sample specific filtering value was applied, for experiment 2 (10x Chromium v2) the accepted range was between 300 and 2000, for the remaining samples (10 x Chromium v3) a minimum of 500 was required while the maximum cutoff ranged from 5000 (experiment 1) over 5500 (experiment 3)\u20136000 (experiment 4). The data was normalized and the 4000 most valiable genes were selected. Subsequently, the data was analyzed together by applying Seurats integration function (FindIntegrationAnchors) and making use of the pre-computed anchors (FindIntegrationAnchors), that is genes used to map the cells from different samples. Analogously, experiment 5 (Irf8-deficient cells) and experiment 1 were integrated. For the IRF8 sample, the range of detected genes for included cells was set to 500\u20135500 and cells with more than 10% mitochondrial gene count were removed.\n\n#### Dimension Reduction, unsupervised clustering and marker detection\n\nA principal component analysis provided the basis for the computation of a UMAP and an unsupervised clustering of the cells. The resolution parameter for FindClusters was set to 0.42 (0.25 for experiment 5). Conserved cluster markers for all samples were computed using FindConservedMarkers with the detection method set to 'MAST'. Genes differentially expressed between clusters of different samples were detected analogously using FindClusters.\n\n#### Cell cluster annotation, trajectory inference, and signature enrichment\n\nTo assign cell types to the clusters identified, we applied SingleR (version 1.6.1; Aran et al., 2019), using the ImmGen database as annotation resource. Slingshot (version 2.0.0; Street et al., 2018) was applied for trajectory inference. To this end, we provided slingshot with the newborn-specific cluster as starting point. To shed more light on the macrophagic versus dendritic nature of the cells in the central clusters, we computed the enrichment of macrophage-specific as well as dendritic gene sets by use of GSVA (version 1.40.1; H\u00e4nzelmann et al., 2013).\n",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "93bdc327-081b-4716-810c-c80fd72f4af0",
+      "submission_id": "9e590f09-8a6f-4e34-b6d0-1ccccee1f010",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, https://ror.org/036wvzt09 Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77490.sa0](https://doi.org/10.7554/eLife.77490.sa0)\n\nHere, the authors map the cellular landscape in the tongue, an understudied immunological organ, with a main focus on tissue-resident myeloid cells under homeostatic and inflammatory conditions. They identify two major subsets of macrophages, which occupy distinct anatomical niches and develop from local precursors, while under immune compromised conditions they can also be replenished from circulating hematopoietic precursors. These findings provide an important basis for future investigations of the tongue immune function in the context of infection, inflammation, and neoplastic diseases.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Florent Ginhoux, https://ror.org/036wvzt09 Agency for Science Technology and Research Singapore\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77490.sa1](https://doi.org/10.7554/eLife.77490.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tongue immune compartment analysis reveals spatial macrophage heterogeneity\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The systemic LPS challenge should be better justified and explain why choosing an ip model of LPS administration with minor impact on studied populations. Flow cytometry of blood and tongue will strengthen the study as well as expand on the putative differential role of the two macrophage subsets in antimicrobial defence.\n\n2) Provide fluorescence microscopy images around P10 will complement the study to follow the transition of CX3CR1+ cells.\n\nReviewer #2 (Recommendations for the authors):\n\nI have only a few recommendations:\n\nFigure 2 (in connection with Figure 5): Cells of the FOLR2+ macrophage subset express various levels of CX3CR1 (monitored with the GFP reporter). As shown in Figure 5, the levels of CX3CR1 decrease over time. Do CX3CR1(hi) and CX3CR1(lo) FOLR2+ macrophages differ in expression of any of the markers tested by FACS and/or transcriptomics? Can any additional information be gained about the differentiation process of the cellular subset?\n\nFigure 4: The authors assessed the response of the two macrophage subsets to systemic LPS challenge. Given the constant exposure of the tongue to commensal and pathogenic microbes (and viruses) in the oral cavity, it seems of higher importance to probe the reactivity of the studied macrophage subsets to oral microbes. While such experiments might go beyond the scope of the current study, the authors should at least consider expanding their discussion on the putative differential role of the two macrophage subsets in antimicrobial defence.\n\nFigure 5c: fluorescence microscopy images are shown for E14, p0 and p3 (not for p10 as indicated in the text). Showing data for later time points (around p10 when CX3CR1+FOLR2+ cells start to lose CX3CR1 expression) would be of interest to follow how the transition of CX3CR1+ cells becoming restricted to the LP.\n\nFigure 6e: The authors conclude from the developmental trajectory analysis that both terminally differentiated macrophage subsets (cluster 0 and 5) derive from a common precursor. However, the CX3CR1+ FOLR2- subset appears as early as E17.5 as a separate subset. Do the CX3CR1+ FOLR2- cells differ by any means between E17.5, p3 and adulthood (e.g. parameters analyzed by flow cytometry or genes analyzed by RNAseq)? Which factors drive the developmental process? Is the microbiota involved?\n\nAmong the lymphoid populations, the authors detected Tregs, ILC2 and Rora+ T cells. Did they also find other T cells? Of special interest are Th17 cells, which are found in high numbers in the gingiva of normal mice (doi: 10.1016/j.immuni.2016.12.010). To what extent do these to oral tissue compartments differ or compare, at least with respect to selected cell populations?\n",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2a68a1be-e1a4-4d7b-9a02-e77bbfedac12",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C1",
+      "claim": "The tongue is a unique muscular organ situated in the oral cavity where it is involved in taste sensation, mastication, and articulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The tongue is a unique muscular organ situated in the oral cavity where it is involved in taste sensation, mastication, and articulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established anatomical and physiological knowledge about the tongue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "1d3c4dd4-a8d2-4dd6-a6a3-19d31fb7d297",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C2",
+      "claim": "As a barrier organ constantly exposed to environmental pathogens, the tongue is expected to host an immune cell network ensuring local immune defence.",
+      "claim_type": "EXPLICIT",
+      "source": "As a barrier organ, which is constantly exposed to environmental pathogens, the tongue is expected to host an immune cell network ensuring local immune defence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general immunological knowledge about barrier organs and logical inference about the tongue's function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7018c8c7-8fe9-4d56-aa28-5dc778dde6cd",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C3",
+      "claim": "The composition and transcriptional landscape of the tongue immune system are currently not completely defined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the composition and the transcriptional landscape of the tongue immune system are currently not completely defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of scientific knowledge and serves as justification for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "a29d1ccb-472e-4b90-bfaa-bfa00bad9b56",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C4",
+      "claim": "Two specific subsets of tongue-resident macrophages occupy discrete anatomical niches.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified distinct local immune cell populations and described two specific subsets of tongue-resident macrophages occupying discrete anatomical niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "4830d9ea-0c41-4c24-a0f5-73fe441acd9d",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C5",
+      "claim": "Cx3cr1+ macrophages are located specifically in the highly innervated lamina propria beneath the tongue epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx3cr1+ macrophages were located specifically in the highly innervated lamina propria beneath the tongue epidermis and at times in close proximity to fungiform papillae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical data and flow cytometry analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "abc24255-5a7b-4b13-b7cf-b745d1bf475e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C6",
+      "claim": "Cx3cr1+ macrophages are at times in close proximity to fungiform papillae.",
+      "claim_type": "EXPLICIT",
+      "source": "Cx3cr1+ macrophages were located specifically in the highly innervated lamina propria beneath the tongue epidermis and at times in close proximity to fungiform papillae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical observations shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "94989056-07e6-4c16-b954-1b2937d88fbc",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C7",
+      "claim": "Folr2+ macrophages are detected in deeper muscular tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Folr2+ macrophages were detected in deeper muscular tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemical data and quantification presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d7ee0c68-7876-44b2-9a3f-8bd8331ac856",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C8",
+      "claim": "The two macrophage subsets originate from a common proliferative precursor during early postnatal development.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico analysis indicated that the two macrophage subsets originate from a common proliferative precursor during early postnatal development and responded differently to systemic LPS in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational trajectory analysis (Slingshot) of scRNA-seq data from postnatal day 3 mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "0b791d33-edf5-4ad1-8cd0-a8d9548ca568",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C9",
+      "claim": "The two macrophage subsets respond differently to systemic LPS in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico analysis indicated that the two macrophage subsets originate from a common proliferative precursor during early postnatal development and responded differently to systemic LPS in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by scRNA-seq data comparing untreated and LPS-treated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "ed925504-1527-4598-a885-832cf5084d7c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C10",
+      "claim": "The tongue is constantly exposed to dietary and airborne antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Located at the entrance of the gastrointestinal tract, the tongue is constantly exposed to dietary and airborne antigens and therefore acts as a first-line immune organ (Wu, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wu, 2021 and general anatomical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "6a6c433c-2f90-4deb-a78c-c5a98815525d",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C11",
+      "claim": "The tongue acts as a first-line immune organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Located at the entrance of the gastrointestinal tract, the tongue is constantly exposed to dietary and airborne antigens and therefore acts as a first-line immune organ (Wu, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and logical inference from the tongue's anatomical position.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "66f48bbe-6bc7-4462-a266-e5e143effc58",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C12",
+      "claim": "Taste sensation plays a critical role in avoidance of spoiled food and beverages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, taste sensation plays a critical role in avoidance of spoiled food and beverages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the function of taste perception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "472b37a4-a128-4af1-a8cb-8ea6d0b1215c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C13",
+      "claim": "In the immunological context, the tongue is an understudied organ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the immunological context, the tongue is an understudied organ and the composition of tongue immune cells and their transcriptional status is largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the current state of the scientific literature and justifies the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "01d3916e-b7ac-4980-bfc8-dd71a8f5d0a0",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C14",
+      "claim": "Langerhans cells were first described in the mouse epithelium 40 years ago (Burkhardt et al., 1979).",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, the characterization of the mononuclear phagocyte compartment of the tongue mainly focused on Langerhans cells that were first described in the mouse epithelium 40 years ago (Burkhardt et al., 1979) and are identified in humans by their exclusive CD1a immunoreactivity (Darling et al., 2017; Cruchley et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Burkhardt et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "73bebdc2-062f-4e9d-aee4-8f2a18571999",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C15",
+      "claim": "Langerhans cells are identified in humans by their exclusive CD1a immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, the characterization of the mononuclear phagocyte compartment of the tongue mainly focused on Langerhans cells that were first described in the mouse epithelium 40 years ago (Burkhardt et al., 1979) and are identified in humans by their exclusive CD1a immunoreactivity (Darling et al., 2017; Cruchley et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Darling et al., 2017 and Cruchley et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "b84dfd60-594f-42ac-b48d-8d826554af40",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C16",
+      "claim": "Human CD163+ macrophages can be found in subepithelial areas of the tongue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human CD163+ macrophages can be found in subepithelial areas of the tongue (Shigeoka et al., 2021), a localization that they share with CD11c+ 'dendritic' cells (Feng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shigeoka et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "f4a8cfdb-052d-45d2-a2ef-42c2f89414cb",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C17",
+      "claim": "CD163+ macrophages share their subepithelial localization with CD11c+ 'dendritic' cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human CD163+ macrophages can be found in subepithelial areas of the tongue (Shigeoka et al., 2021), a localization that they share with CD11c+ 'dendritic' cells (Feng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shigeoka et al., 2021 and Feng et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5a33daa6-1d1a-4a5b-a78f-f486f91ba227",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C18",
+      "claim": "Relying on single markers such as CD11c to identify cells of the 'dendritic' cell lineage is problematic since various additional cell types can express CD11c.",
+      "claim_type": "EXPLICIT",
+      "source": "Relying on single markers such as CD11c to identify cells of the 'dendritic' cell lineage is problematic since various additional cell types, including monocytes, macrophages, and lymphocytes, can express CD11c (Merad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Merad et al., 2013 and reflects established immunological knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "de278ce1-2745-4d52-ad70-8a270b2e7930",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C19",
+      "claim": "Tongue Langerhans cells are critically involved in IL17-dependent antifungal immunity in the oral mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Tongue Langerhans cells were for instance shown to be critically involved in IL17-dependent antifungal immunity in the oral mucosa (Sparber et al., 2018), play an important role in T cell priming during squamous cell carcinoma development (Saba et al., 2022) and are depleted in patients with advanced-stage acquired immune deficiency syndrome (Gondak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sparber et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "57c8cdb2-c342-459c-b876-3216fbb18c1b",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C20",
+      "claim": "Tongue Langerhans cells play an important role in T cell priming during squamous cell carcinoma development.",
+      "claim_type": "EXPLICIT",
+      "source": "Tongue Langerhans cells were for instance shown to be critically involved in IL17-dependent antifungal immunity in the oral mucosa (Sparber et al., 2018), play an important role in T cell priming during squamous cell carcinoma development (Saba et al., 2022) and are depleted in patients with advanced-stage acquired immune deficiency syndrome (Gondak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Saba et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d0f3d778-1157-4f59-9c61-7c421da4a8f7",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C21",
+      "claim": "Tongue Langerhans cells are depleted in patients with advanced-stage acquired immune deficiency syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Tongue Langerhans cells were for instance shown to be critically involved in IL17-dependent antifungal immunity in the oral mucosa (Sparber et al., 2018), play an important role in T cell priming during squamous cell carcinoma development (Saba et al., 2022) and are depleted in patients with advanced-stage acquired immune deficiency syndrome (Gondak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gondak et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "b9639df6-6e1a-45eb-92fe-a476ac7ff3e4",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C22",
+      "claim": "An increase of activated ED1+ tongue macrophages was observed in systemic inflammation in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an increase of activated ED1+ tongue macrophages was observed in systemic inflammation in rats (Cavallin and McCluskey, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cavallin and McCluskey, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "26cc0b98-f9be-43f2-8a3a-23844f2951b6",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C23",
+      "claim": "Loss of taste is one of the hallmark symptoms of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent COVID-19 pandemic has also suggested a potential link of viral infections with tongue immunity, with loss of taste being one of the hallmark symptoms (Agyeman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Agyeman et al., 2020 and reflects widely known clinical observations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "bf48786e-1175-42f7-b0c0-e25a5442fe6d",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C24",
+      "claim": "A total of 6773 CD45+ tongue cells were sequenced from adult wild-type C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced a total of 6773 cells that clustered into 20 transcriptionally distinct subsets (Figure 1a) and used singleR (Aran et al., 2019) for cell lineage recognition (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data from the scRNA-seq experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "999848e7-9cec-4449-8a57-ef4d67317bf1",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C25",
+      "claim": "The sequenced tongue cells clustered into 20 transcriptionally distinct subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced a total of 6773 cells that clustered into 20 transcriptionally distinct subsets (Figure 1a) and used singleR (Aran et al., 2019) for cell lineage recognition (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the scRNA-seq data analysis and visualization in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "f0812f07-4ac0-41cb-90b9-dfffce116cdd",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C26",
+      "claim": "B cells in the tongue are characterized by Cd79a and Cd19 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "1a922e75-fee0-4f61-b824-bb20686bcac3",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C27",
+      "claim": "Mast cells in the tongue are defined by Kit and Ms4a2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "65670405-365e-42b3-8961-0ed643892989",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C28",
+      "claim": "Neutrophils in the tongue are defined by S100a9 and Retnlg expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "ef375b34-69bf-4ec6-8929-9e5caa621212",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C29",
+      "claim": "Endothelial cells in the tongue are defined by Aqp1, Col4a1 and Pecam1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "61d74d2b-1e90-4910-8037-568f4feaf612",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C30",
+      "claim": "Fibroblasts in the tongue are defined by Dcn, Peg3, and Cald1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected B cells (cluster 12; characterized by Cd79a and Cd19), mast cells (clusters 11 and 13; defined by Kit and Ms4a2), neutrophils (cluster 8; defined by S100a9 and Retnlg), a few endothelial cells (cluster 16, which is mainly present in subsequent scRNA-seq analysis of Figure 3; defined by Aqp1, Col4a1 and Pecam1), fibroblasts (cluster 19; defined by Dcn, Peg3, Cald1), and some cells that could not attributed to a specific cell subset (clusters 17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7af78962-b483-4821-ab52-7a9dfbe794bd",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C31",
+      "claim": "The tongue contains various innate lymphoid cell populations including ILC1, nILC2, and iILC2/ILC3.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected tongue-resident lymphocytes (clusters 4, 9, 14), which could be further separated into various subsets including different innate lymphoid cell (ILC) populations (ILC1 (Cd160, Itga1, Klrk1), nILC2 (Arg1, Il1rl1, Gata3) and iILC2/ILC3 (Cysltr1, Gata3, Kit)), \u03b3\u03b4 T cells (Tcrg-C1, Trdc, Cd3g), proliferating T cells (cluster 1; Top2a, Tuba1b), tissue resident \u03b1\u03b2 T cells (clusters 2 and 3; Trac, Lat, Trbc2), regulatory T cells (cluster 4; Foxp3, Ctla4, Tnfrsf4), central \u03b1\u03b2 T cells (cluster 6; Lef1, Sell, Ccr7) and NK cells (cluster 7; Prf1, Ncr1, Eomes) (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data and shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "00b4470c-351b-4733-8e9b-4f3172767670",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C32",
+      "claim": "The majority of tongue immune cells (65%) belong to the category of mononuclear phagocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of cells (65%; Figure 1a) fell into the broad category of mononuclear phagocytes and included Langerhans cells (defined by Epcam and Cd9 expression; cluster 10), different classical dendritic cell (cDC) subsets (cluster 3, 15, 18 and 6), monocytes (characterized by Ly6c2, Cebpb, Nr4a1 expression; cluster 7), proliferating myeloid precursor cells (cluster 2) and three subsets of Cd68-expressing macrophages (clusters 0, 1 and 5) (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of scRNA-seq data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "e28b205f-7835-4edb-b3d8-ef717a198242",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C33",
+      "claim": "Tongue Langerhans cells are defined by Epcam and Cd9 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of cells (65%; Figure 1a) fell into the broad category of mononuclear phagocytes and included Langerhans cells (defined by Epcam and Cd9 expression; cluster 10), different classical dendritic cell (cDC) subsets (cluster 3, 15, 18 and 6), monocytes (characterized by Ly6c2, Cebpb, Nr4a1 expression; cluster 7), proliferating myeloid precursor cells (cluster 2) and three subsets of Cd68-expressing macrophages (clusters 0, 1 and 5) (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "0afa46ac-2db0-41e5-960c-7d04e5b5253e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C34",
+      "claim": "Tongue monocytes are characterized by Ly6c2, Cebpb, and Nr4a1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of cells (65%; Figure 1a) fell into the broad category of mononuclear phagocytes and included Langerhans cells (defined by Epcam and Cd9 expression; cluster 10), different classical dendritic cell (cDC) subsets (cluster 3, 15, 18 and 6), monocytes (characterized by Ly6c2, Cebpb, Nr4a1 expression; cluster 7), proliferating myeloid precursor cells (cluster 2) and three subsets of Cd68-expressing macrophages (clusters 0, 1 and 5) (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "a0adf49e-725a-4047-8cb8-33d083364ff7",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C35",
+      "claim": "tFOLR2-MF express high levels of Folr2, Lyve1, Pf4 and Timd4.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two terminally differentiated macrophage clusters, cluster 0 (hereafter referred to as tFOLR2-MF) expressed high levels of Folr2, Lyve1, Pf4 and Timd4, while cluster 5 (hereafter referred to as tCX3CR1-MF) expressed high levels of Cx3cr1, Hexb, Ms4a7, Itgax, and Pmepa1 (Figure 1d+e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq gene expression data shown in Figure 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d63764df-a233-455b-a7af-747a176181fd",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C36",
+      "claim": "tCX3CR1-MF express high levels of Cx3cr1, Hexb, Ms4a7, Itgax, and Pmepa1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two terminally differentiated macrophage clusters, cluster 0 (hereafter referred to as tFOLR2-MF) expressed high levels of Folr2, Lyve1, Pf4 and Timd4, while cluster 5 (hereafter referred to as tCX3CR1-MF) expressed high levels of Cx3cr1, Hexb, Ms4a7, Itgax, and Pmepa1 (Figure 1d+e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq gene expression data shown in Figure 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "242256c0-774b-47ef-86ed-25864f67e3bc",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C37",
+      "claim": "602 differentially expressed genes were identified between tFOLR2-MF and tCX3CR1-MF.",
+      "claim_type": "EXPLICIT",
+      "source": "A pairwise comparison of tFOLR2-MF and tCX3CR1-MF transcriptomes revealed 602 differentially expressed genes (DEGs), indicating major differences between the two tongue macrophage populations (abs(FC)>1.5and adjusted p-value <0.05) (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis of scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "84d4153c-7c96-418c-867d-985edb3a1305",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C38",
+      "claim": "tCX3CR1-MF are transcriptionally distinct from tongue Langerhans cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, tCX3CR1-MF were transcriptionally distinct from tongue Langerhans cells (tLCs; Figure 1f), which rather showed a cDC signature (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis and GSVA analysis shown in Figures 1c and 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "600a513f-0254-4b65-864f-9481dfebba04",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C39",
+      "claim": "Tongue Langerhans cells show a cDC signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, tCX3CR1-MF were transcriptionally distinct from tongue Langerhans cells (tLCs; Figure 1f), which rather showed a cDC signature (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GSVA analysis shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "4884f7b1-aed4-4ecc-b999-5eb6fc964506",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C40",
+      "claim": "tFOLR2-MF are enriched for genes associated with blood vessel biology.",
+      "claim_type": "EXPLICIT",
+      "source": "tFOLR2-MF on the other hand were enriched for gene sets associated with blood vessel biology ('regulation of sprouting angiogenesis') and macrophage function ('cytosolic transport', 'macrophage differentiation', and 'positive regulation of nitric oxide biosynthesis'); tCX3CR1-MF showed gene enrichment for broad immune biological processes such as 'positive regulation of ERK1/2 cascade' or 'TLR3 signalling pathway' and exhibited similarities to CNS-resident microglia with gene enrichment in the biological process 'microglial cell proliferation' (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis of differentially expressed genes shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "cf128d56-67d2-427f-90fc-5c8cdaa8f854",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C41",
+      "claim": "tCX3CR1-MF show gene enrichment for immune biological processes such as 'positive regulation of ERK1/2 cascade' and 'TLR3 signalling pathway'.",
+      "claim_type": "EXPLICIT",
+      "source": "tFOLR2-MF on the other hand were enriched for gene sets associated with blood vessel biology ('regulation of sprouting angiogenesis') and macrophage function ('cytosolic transport', 'macrophage differentiation', and 'positive regulation of nitric oxide biosynthesis'); tCX3CR1-MF showed gene enrichment for broad immune biological processes such as 'positive regulation of ERK1/2 cascade' or 'TLR3 signalling pathway' and exhibited similarities to CNS-resident microglia with gene enrichment in the biological process 'microglial cell proliferation' (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8a8af671-5a6e-46e6-83e8-a063eac673d7",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C42",
+      "claim": "tCX3CR1-MF exhibit similarities to CNS-resident microglia with gene enrichment in 'microglial cell proliferation'.",
+      "claim_type": "EXPLICIT",
+      "source": "tFOLR2-MF on the other hand were enriched for gene sets associated with blood vessel biology ('regulation of sprouting angiogenesis') and macrophage function ('cytosolic transport', 'macrophage differentiation', and 'positive regulation of nitric oxide biosynthesis'); tCX3CR1-MF showed gene enrichment for broad immune biological processes such as 'positive regulation of ERK1/2 cascade' or 'TLR3 signalling pathway' and exhibited similarities to CNS-resident microglia with gene enrichment in the biological process 'microglial cell proliferation' (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "833415f8-39f1-4fa6-8c67-260c879f0907",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C43",
+      "claim": "tCX3CR1-MF express CX3CR1, MHCII and CD11c surface receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "tCX3CR1-MF also expressed the surface receptors CX3CR1, MHCII and CD11c, while tFOLR2-MF were additionally characterized by LYVE1 and TIMD4 expression (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7d010fc3-d16d-4a66-b3db-8e79328bbf7a",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C44",
+      "claim": "tFOLR2-MF are characterized by LYVE1 and TIMD4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "tCX3CR1-MF also expressed the surface receptors CX3CR1, MHCII and CD11c, while tFOLR2-MF were additionally characterized by LYVE1 and TIMD4 expression (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "658c2d96-dee3-4ea0-9ed3-767cdc826746",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C45",
+      "claim": "Tongue macrophages belong to the family of interstitial macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that tCX3CR1-MF and tFOLR2-MF tongue macrophages belong to the family of interstitial macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on correlation analysis and comparison with macrophages from other tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "94950744-4dcc-46be-8b40-3a0de7f57e77",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C46",
+      "claim": "Tongue macrophages fall into two broad categories of Cx3cr1- and Lyve1/Folr2/Timd4-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "They fall into the two broad categories of Cx3cr1- and Lyve1/Folr2/Timd4-expressing cells (Chakarov et al., 2019; Dick et al., 2022), but also show unique transcriptomic signatures that probably reflect the requirements of their local tissue niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis and comparison with published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "30ebc74e-49d3-4baa-933e-a5668e3f1a9e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C47",
+      "claim": "tCX3CR1-MF are concentrated in the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GFP+ cells were concentrated in the lamina propria, while LYVE1 staining was evident on cells throughout the tongue tissue with the exception of the epidermis (Figure 3a+b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3a and 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "c2228d54-5901-4249-a09f-7c2e6aceac6f",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C48",
+      "claim": "LYVE1+ cells are present throughout the tongue tissue with the exception of the epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, GFP+ cells were concentrated in the lamina propria, while LYVE1 staining was evident on cells throughout the tongue tissue with the exception of the epidermis (Figure 3a+b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3a and 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "c87eb23e-3631-4745-9040-cb71540c76e2",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C49",
+      "claim": "tCX3CR1-MF are identified as double-positive CD68+Cx3cr1-GFP+ cells in the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we could identify tCX3CR1-MF as double-positive CD68+Cx3cr1-GFP+ cells in the lamina propria, but not in the tongue epidermis or muscle (Figure 3c) and tFOLR2-MF as double-positive CD68+LYVE1+ cells in the lamina propria and the underlying muscle (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical co-staining shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "54cd4d8c-f4e3-4736-a8b8-07d312a6f4a8",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C50",
+      "claim": "tFOLR2-MF are identified as double-positive CD68+LYVE1+ cells in the lamina propria and the underlying muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we could identify tCX3CR1-MF as double-positive CD68+Cx3cr1-GFP+ cells in the lamina propria, but not in the tongue epidermis or muscle (Figure 3c) and tFOLR2-MF as double-positive CD68+LYVE1+ cells in the lamina propria and the underlying muscle (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical co-staining shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "77907a6a-5b7d-4df4-8a33-45de4e628655",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C51",
+      "claim": "tFOLR2-MF are morphologically distinct from LYVE1+Podoplanin+ lymphatics.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, tFOLR2-MF were morphologically distinct from LYVE1+Podoplanin+ lymphatics (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d82cbb70-58de-4b27-a988-f6d51616518c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C52",
+      "claim": "EPCAM+ Langerhans cells with ramified morphology localize exclusively in the epidermis of the tongue.",
+      "claim_type": "EXPLICIT",
+      "source": "EPCAM+ Langerhans cells with a ramified morphology localized exclusively in the epidermis of the tongue (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5c9b7e14-3bf6-4c07-b292-436b58a6b5bf",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C53",
+      "claim": "tCX3CR1-MF are virtually absent in muscular tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "CD68+LYVE1+ double-positive tFOLR2-MF localized in the muscular layer as well as in the lamina propria (Figure 3g+h and Figure 3\u2014figure supplement 1), while CD68+Cx3cr1-GFP+ double-positive tCX3CR1-MF were only detected in the lamina propria and were virtually absent in muscular tissue (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of immunohistochemical data shown in Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "060e8699-dc7c-432c-bea2-bcf94d16f348",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C54",
+      "claim": "Clusters of Cx3cr1-GFP+ cells can be detected in the posterior part of the tongue along TUJ1+ nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clusters of Cx3cr1-GFP+ cells could be detected in the posterior part of the tongue, along TUJ1+ nerves that possibly cater to circumvallate and foliate papillae (Figure 3i) and in innervated areas of the deep muscle, along the chorda tympani branch of the facial nerve.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8d80f002-99bf-4e69-b2cf-45e926744257",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C55",
+      "claim": "tCX3CR1-MF are present at the base of both filiform and fungiform papillae.",
+      "claim_type": "EXPLICIT",
+      "source": "tCX3CR1-MF were present at the base of both filiform and fungiform papillae (which harbour taste buds) and within the lamina propria, which is densely innervated by sensory fibres (Figure 3j+k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 3j and 3k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "c79b5e5b-9167-4126-bd8a-db756c0a5313",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C56",
+      "claim": "Systemic LPS injection leads to reduction of LYVE1 surface expression on tongue CD11b+ CD64+ immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were challenged i.p. with LPS and, 6 hr after injection, we observed reduction of LYVE1 surface expression on tongue CD11b+ CD64+ immune cells (Figure 4a), which reflects the susceptiblity of LYVE1 to inflammatory shedding and degradation (Johnson et al., 2007; Kim et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry data shown in Figure 4a and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "b231b80a-37cb-466c-9a36-ee6b56a0424d",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C57",
+      "claim": "LYVE1 is susceptible to inflammatory shedding and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were challenged i.p. with LPS and, 6 hr after injection, we observed reduction of LYVE1 surface expression on tongue CD11b+ CD64+ immune cells (Figure 4a), which reflects the susceptiblity of LYVE1 to inflammatory shedding and degradation (Johnson et al., 2007; Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Johnson et al., 2007 and Kim et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "3d6ddabb-8dbf-424e-afd8-b3e92d171ce2",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C58",
+      "claim": "LPS injection leads to increased expression of inflammatory genes such as Oasl1 and Ifi204 across all tongue immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, LPS injection led to an increase of inflammatory gene expression such as Oasl1 and Ifi204 across all cells of the tongue immune system (Figure 4c), which indicates a widespread response to systemic LPS as suggested previously (Feng et al., 2012; Cohn et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq data shown in Figure 4c and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "6a61f536-16b2-4d8b-9646-119b7c742c82",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C59",
+      "claim": "211 differentially expressed genes were identified in tFOLR2-MF between steady state and LPS conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "211 DEGs were identified in tFOLR2-MF (the full list of DEGs can be found in Figure 4\u2014source data 1), of which 125 genes were upregulated (e.g. Il1b, Relb and Slfn4) and 86 genes downregulated after LPS injection (e.g. Folr2, Lyve1, and Klf4; Figure 4d+e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis of scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "2af389f7-e431-4c8e-b60a-aeba4c93828b",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C60",
+      "claim": "Many tFOLR2-MF signature genes including Folr2 and Lyve1 were downregulated after LPS exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many of the tFOLR2-MF signature genes (i.e. Folr2 and Lyve1) were downregulated after LPS exposure (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq data analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "e502b017-b1b0-4ed0-b932-ed655a5fa07f",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C61",
+      "claim": "127 differentially expressed genes were detected in tCX3CR1-MF between steady state and LPS conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In tCX3CR1-MF we detected 127 DEGs between the physiological and the pathological state of which 84 were upregulated (e.g. Ifit2, Lgals3, and Usp18) and 43 were downregulated (e.g. Lyz2, Ccr2, and Cd9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on differential gene expression analysis of scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8afaec97-e5c0-453c-8619-dd152b6ddc56",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C62",
+      "claim": "LPS induced upregulation of 45 common genes in both tongue macrophage subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS induced upregulation of 45 common genes (e.g. Cxcl10, Ccl5, Il1rn, and Gbp2) and downregulation of 17 common genes in both tongue macrophage subsets (e.g. Fcrls, S100a10, Lyz1, and Retnla; Figure 4d+e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential gene expression analysis shown in Figure 4d and 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "c44bc4cd-cfe5-49a6-927d-07a160aff9e3",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C63",
+      "claim": "Genes upregulated only in tCX3CR1-MF are enriched for GO terms associated with type I interferon signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that were only upregulated in tCX3CR1-MF macrophages were particularly enriched for GO terms associated with type I interferon signaling (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO enrichment analysis shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "a2fe694c-09a2-438a-ac7b-9eb62a076d14",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C64",
+      "claim": "At embryonic day 17.5, all tongue macrophages are characterized by high Cx3cr1-GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "At embryonic day 17.5 (E17.5), all tongue macrophages were characterized by high Cx3cr1-GFP expression (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "3f1fc901-3bfb-4f4c-a9c0-e9557c7430d8",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C65",
+      "claim": "At E17.5, two-thirds of Cx3cr1-GFP+ tongue macrophages additionally express FOLR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these Cx3cr1-GFP+ cells, two-thirds additionally expressed FOLR2 (G2 in Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "e1a452b0-c5a6-4d0b-a5de-74a7b2fd6343",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C66",
+      "claim": "At postnatal day 3, an intermediate Cx3cr1-GFPint FOLR2+ subset is present.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time-point, an intermediate Cx3cr1-GFPint FOLR2+ subset was also present (G3 in Figure 5a+b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis shown in Figure 5a and 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "203fa85e-1501-4fb4-83e5-2e4acccd6d4b",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C67",
+      "claim": "Two main Cx3cr1-GFP+FOLR2- and Cx3cr1-GFPintFOLR2+ macrophage populations are established by 8 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "In subsequent developmental stages (p11 and p28), the proportion of double-positive Cx3cr1-GFP+FOLR2+ cells progressively decreased and two main Cx3cr1-GFP+FOLR2- and Cx3cr1-GFPintFOLR2+ macrophage populations (corresponding to tCX3CR1-MF and tFOLR2-MF, respectively) were established by 8 weeks of age (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry analysis across developmental stages shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "66166396-a071-4637-a755-2024351cce50",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C68",
+      "claim": "At E14.5, Cx3cr1-GFP+ macrophages are detected throughout the whole tongue tissue with no specific localization pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "At E14.5 Cx3cr1-GFP+ macrophages could be detected throughout the whole tongue tissue with no specific localization pattern (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "0d56e087-4fc2-427a-8b67-58fb7003f7f9",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C69",
+      "claim": "By p11, Cx3cr1-GFP+ macrophages start to align along the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "This continued through postnatal day p0 and until p11, whereby Cx3cr1-GFP+ macrophages were still dispersed throughout the tongue but started to align along the lamina propria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7f26e69b-134f-4e95-820d-a8ee56568a84",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C70",
+      "claim": "The first Cx3cr1-GFP+ macrophages in proximity to fungiform papillae are detected around p11.",
+      "claim_type": "EXPLICIT",
+      "source": "At these stages, taste bud maturation is observed (El-Sharaby et al., 2001; Harada et al., 2000) and we detected the first Cx3cr1-GFP+ macrophages in proximity to fungiform papillae (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunohistochemical analysis shown in Figure 5c and supported by citations about taste bud maturation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7d969eed-cd4c-4ba9-9381-f9be3a508394",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C71",
+      "claim": "A cluster of proliferating macrophage precursor cells (cluster 2) is present in p3 tongues but almost absent in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected a newly appearing cluster of cells in p3 tongues (cluster 2), which was almost absent in adult mice (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq analysis comparing p3 and adult tongues shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "2272d09c-1fd5-492c-a16c-4cca126d827c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C72",
+      "claim": "Cluster 2 cells express high levels of proliferation-related genes including Top2a, Ccnb2, and Mki67.",
+      "claim_type": "EXPLICIT",
+      "source": "These cluster 2 cells expressed high levels of proliferation-related genes, including Top2a, Ccnb2, Mki67, and further showed expression of typical macrophage lineage genes such as Cx3cr1, Tlr4, Pf4, and Lyve1, which suggests they represent proliferating macrophage precursor cells (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq gene expression analysis shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "92643318-3111-49a6-a37e-2aae1ba3ff3e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C73",
+      "claim": "Slingshot analysis reveals a possible bifurcation of precursor cells into either tFOLR2-MF or tCX3CR1-MF.",
+      "claim_type": "EXPLICIT",
+      "source": "Slingshot analysis revealed a possible bifurcation of the precursor cells at the cluster 1 level at which trajectories either split into cluster 0 or cluster 5 cells (Figure 6e), which might indicate that both tFOLR2-MF and tCX3CR1-MF populations derive from a common precursor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on trajectory inference analysis shown in Figure 6e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "45ad899a-b91a-4220-8b86-7a41166c8cca",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C74",
+      "claim": "About 30-40% of CD64+FOLR2+ cells show EdU incorporation one day after injection at p3.",
+      "claim_type": "EXPLICIT",
+      "source": "One day after injection, EdU incorporation could be readily observed in about 30\u201340% of CD64+FOLR2+ cells, while both adult tongue macrophage subsets showed no or weak signs of homeostatic proliferation (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU proliferation assay data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "461afea9-143a-40fc-b453-7e88d53dd57a",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C75",
+      "claim": "Adult tongue macrophage subsets show no or weak signs of homeostatic proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "One day after injection, EdU incorporation could be readily observed in about 30\u201340% of CD64+FOLR2+ cells, while both adult tongue macrophage subsets showed no or weak signs of homeostatic proliferation (Figure 6f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on EdU proliferation assay data shown in Figure 6f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5e71ad98-5a86-4f1c-a81d-8b41376bd7f0",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C76",
+      "claim": "tCX3CR1-MF are replaced by monocyte-derived cells 5 weeks after bone marrow transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "While tCX3CR1-MF were already replaced by monocyte-derived cells 5 weeks after transfer, the tFOLR2-MF still comprised 53% (+/-6% SD) donor cells and accordingly, showed a slower replacement (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bone marrow chimera experiments shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "757d3d5c-2924-4106-a022-93676c53264d",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C77",
+      "claim": "tFOLR2-MF show slower replacement than tCX3CR1-MF after bone marrow transfer, with 53% donor cells remaining at 5 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "While tCX3CR1-MF were already replaced by monocyte-derived cells 5 weeks after transfer, the tFOLR2-MF still comprised 53% (+/-6% SD) donor cells and accordingly, showed a slower replacement (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on bone marrow chimera experiments shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "13066876-0775-4b51-9154-195d94ee2a2e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C78",
+      "claim": "At 10 weeks after irradiation, both tongue macrophage subsets are exclusively of hematopoietic stem cell origin.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 weeks after irradiation, both tongue macrophage subsets were exclusively of hematopoietic stem cell (HSC) origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bone marrow chimera experiments shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d0669e58-6a93-4af3-b172-4bf4c1b04c1e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C79",
+      "claim": "tCX3CR1-MF are present in the lamina propria of Irf8-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected a slight decrease in the frequency of tCX3CR1-MF, but this population was clearly still present in the lamina propria of Irf8-deficient mice (Figure 6\u2014figure supplement 3b+c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on flow cytometry and immunohistochemical analysis of Irf8-deficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "d6ed4f58-8d12-4c2d-80a4-97e272f5e08b",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C80",
+      "claim": "All tongue-resident hematopoietic cell populations present in WT animals can also be identified in Irf8-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "All tongue-resident hematopoietic cell populations that were present in WT animals could also be identified in Irf8-/- mice including dendritic cells, tCX3CR1-MF and tFOLR2-MF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq analysis of Irf8-deficient mice shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "aff77a6d-a2a2-406a-9ead-7478776bc4cf",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C81",
+      "claim": "The transcriptome of tCX3CR1-MF and tFOLR2-MF is largely unaffected by the absence of IRF8.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the unchanged mononuclear phagocyte subset composition in Irf8-/- mice, the transcriptome of tCX3CR1-MF and tFOLR2-MF was also largely unaffected by the absence of the transcription factor IRF8 (9 DEGs for Cx3cr1+ and 9 DEGs for Folr2+ macrophages; Figure 6\u2014figure supplement 3d-f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on scRNA-seq analysis comparing WT and Irf8-deficient mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "b3aabaa5-6ae9-4783-a658-8cb4f9650271",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C82",
+      "claim": "During adulthood and under immune compromised conditions, tCX3CR1-MF and tFOLR2-MF can be replaced by HSC-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments indicated that macrophage precursor cells proliferate locally and give rise to both tongue macrophage subsets. However, during adulthood and under immune compromised conditions, tCX3CR1-MF and tFOLR2-MF can be replaced by HSC-derived cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bone marrow chimera experiments and represents a synthesis of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "220abf3e-19a3-4583-b81e-66302f18858f",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C83",
+      "claim": "The previously characterized CD11c+ 'dendritic cells' in the lamina propria likely correspond to tCX3CR1-MF.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore quite likely that the previously characterized CD11c+ 'dendritic cells' in the lamina propria of the human and mouse tongues (Feng et al., 2009; Mascarell et al., 2009) correspond to the cells described here as tCX3CR1-MF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the localization and marker expression of tCX3CR1-MF and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "a490ec5b-696d-4e37-b699-bc45908cb1a4",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C84",
+      "claim": "Changes in the oral microbiota might contribute to the development and alignment of tCX3CR1-MF in the lamina propria.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observation that tCX3CR1-MF acquire their disctinct localization post-natally and gradually might suggest that changes in the oral microbiota contribute to the development and alignment of tCX3CR1-MF in the lamina propria, which coincidences with lactation and weaning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the developmental timing and supported by analogy to other systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "a6d71b64-ba56-470e-97db-d8deafb2585b",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C85",
+      "claim": "Local microbiota has a major impact on the development of mucosal Langerhans cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was previously shown that local microbiota has a major impact on the development of mucosal LC (Capucha et al., 2018) and this might also be the case for tongue resident macrophage populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Capucha et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "2288d440-d17b-473f-bf17-b757ec6a8f35",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C86",
+      "claim": "Microglia-derived BDNF plays an important role in synapse formation and plasticity in the adult brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that microglia-derived BDNF plays an important role in synapse formation and plasticity in the adult brain (Parkhurst et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Parkhurst et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "b60ed18d-9ef0-4f86-b18c-ecf75cb2b560",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C87",
+      "claim": "Systemic inflammation like peripheral LPS injection increases TNF\u03b1 and IL10 production by taste cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taste bud maintenance relies on a continuous renewal of differentiated taste receptor cells (Roper and Chaudhari, 2017) and it has been shown that systemic inflammation like peripheral LPS injection increases TNF\u03b1 and IL10 production by taste cells (Feng et al., 2012; Feng et al., 2014), inhibits taste progenitor cell proliferation and interferes with taste cell renewal (Cohn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Feng et al., 2012 and Feng et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "51b6d59e-5b19-4e13-a3c4-e71da8753e86",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C88",
+      "claim": "Systemic inflammation inhibits taste progenitor cell proliferation and interferes with taste cell renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Taste bud maintenance relies on a continuous renewal of differentiated taste receptor cells (Roper and Chaudhari, 2017) and it has been shown that systemic inflammation like peripheral LPS injection increases TNF\u03b1 and IL10 production by taste cells (Feng et al., 2012; Feng et al., 2014), inhibits taste progenitor cell proliferation and interferes with taste cell renewal (Cohn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cohn et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "445aa408-173c-403e-85e3-2f7fd85b958e",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C89",
+      "claim": "Tongue CD163+ macrophages infiltrate tumor tissue in squamous cell carcinoma at a high frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently shown that tongue CD163+ macrophages infiltrate tumor tissue in squamous cell carcinoma at a high frequency (Agarbati et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Agarbati et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "66b3caa8-5df9-4053-9080-5b52c0ad7eca",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "claim_id": "C90",
+      "claim": "Increased infiltration of CD163+ macrophages correlates with worse outcomes compared to patients with high infiltration of CD11c+ macrophages in tongue squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "CD163+ macrophages were interpreted to be 'M2 macrophages', and increased infiltration correlated with worse outcomes compared to patients with a high infiltration of CD11c+ 'M1' macrophages (Agarbati et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Agarbati et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The tongue is a barrier organ with immune functions that is currently understudied in the immunological context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C13 establish the anatomical, physiological, and immunological context for the study. These claims are based on established knowledge and appropriately cited literature, providing valid justification for investigating the tongue immune system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5288faed-1cb7-497a-90ce-00e95be6dfd5",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work on tongue immune cells has focused primarily on Langerhans cells and used problematic single-marker approaches to identify other mononuclear phagocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 accurately summarize prior literature on tongue immunity with appropriate citations. The critique of single-marker approaches (C18) is well-supported by citation to Merad et al., 2013, establishing the need for more comprehensive characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of 6,773 CD45+ tongue cells identified 20 transcriptionally distinct subsets, with 65% belonging to mononuclear phagocytes including various immune cell types characterized by specific marker genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C34 report primary scRNA-seq data with appropriate technical details and marker gene identification. The clustering and cell type annotation are supported by Figure 1 and supplementary data. The methodology appears sound with biological replication (Figure 1\u2014figure supplement 1a+b).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two terminally differentiated tongue macrophage populations were identified: tFOLR2-MF expressing Folr2, Lyve1, Pf4, and Timd4, and tCX3CR1-MF expressing Cx3cr1, Hexb, Ms4a7, Itgax, and Pmepa1, with 602 differentially expressed genes between them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 describe the two main macrophage populations with specific molecular signatures supported by scRNA-seq data in Figure 1d-f. The differential expression analysis with stated thresholds (FC>1.5, adjusted p<0.05) and the distinction from Langerhans cells are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "9c5c448b-229d-4453-b25a-9331e04cb9ce",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gene ontology analysis reveals distinct functional signatures: tFOLR2-MF are enriched for blood vessel biology and macrophage functions, while tCX3CR1-MF show enrichment for immune processes and microglial-like characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 report GO enrichment analysis results shown in Figure 1g. The functional annotations are appropriate for the identified gene sets and provide biological context for the transcriptional differences between the two macrophage populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "7f5b6dc2-d577-4f47-b66b-f27cba113c16",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Flow cytometry validation confirms that tCX3CR1-MF express CX3CR1, MHCII, and CD11c, while tFOLR2-MF additionally express LYVE1 and TIMD4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by flow cytometry data in Figure 2b, providing protein-level validation of the transcriptional signatures identified by scRNA-seq. The surface marker expression patterns are consistent with the RNA expression data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "49d4a57b-5c50-4d0f-b602-c6fc365c32d0",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tongue macrophages belong to the family of interstitial macrophages and fall into two broad categories of Cx3cr1- and Lyve1/Folr2/Timd4-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by bulk RNA-seq correlation analysis (Figure 2d) comparing tongue macrophages with macrophages from other tissues, and appropriately cite recent literature (Chakarov et al., 2019; Dick et al., 2022) establishing the interstitial macrophage classification framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "424b5758-bec1-42f1-aad4-c613d7d41888",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Immunohistochemistry reveals distinct spatial localization: tCX3CR1-MF are concentrated in the lamina propria and at papillae bases, while tFOLR2-MF are present in both lamina propria and muscle tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 are well-supported by extensive immunohistochemical data in Figure 3, including co-staining with CD68, quantification of cell distribution (Figure 3g), and 3D reconstruction. The spatial segregation of the two macrophage populations is clearly demonstrated with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "1918f8b6-586d-4931-9034-e70c6572613c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Systemic LPS injection leads to reduction of LYVE1 surface expression and increased inflammatory gene expression across all tongue immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by flow cytometry (Figure 4a) and scRNA-seq data (Figure 4c) from LPS-treated mice. The LYVE1 downregulation is appropriately explained by citations to Johnson et al., 2007 and Kim et al., 2021 regarding inflammatory shedding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "50b692ca-d256-402a-8417-521919a258a9",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LPS treatment induces differential gene expression responses in tongue macrophages: 211 DEGs in tFOLR2-MF and 127 DEGs in tCX3CR1-MF, with 45 commonly upregulated genes and subset-specific enrichment for type I interferon signaling in tCX3CR1-MF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 report differential expression analysis from LPS-treated samples with specific gene counts and examples. The GO enrichment analysis (Figure 4f) supports the distinct inflammatory responses, with tCX3CR1-MF showing type I interferon signaling enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Developmental analysis shows that at E17.5 all tongue macrophages express high Cx3cr1-GFP, with progressive differentiation into distinct tCX3CR1-MF and tFOLR2-MF populations by 8 weeks, accompanied by spatial reorganization from dispersed distribution to specific anatomical niches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 are supported by flow cytometry across developmental stages (Figure 5a-b) and immunohistochemistry (Figure 5c). The temporal progression from a common Cx3cr1+ precursor to distinct populations is well-documented, though the mechanistic basis remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "9cd4ad37-52f9-4d12-b89c-33898396e94a",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "scRNA-seq of postnatal day 3 tongues identifies a proliferating macrophage precursor cluster (cluster 2) expressing proliferation genes and macrophage markers, with Slingshot trajectory analysis suggesting bifurcation into both tFOLR2-MF and tCX3CR1-MF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by scRNA-seq data from p3 mice (Figure 6b-e). The identification of proliferating precursors is based on gene expression (Top2a, Ccnb2, Mki67) and trajectory inference. However, the bifurcation is presented as 'possible' and 'might indicate,' appropriately acknowledging the inferential nature of trajectory analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "0896ccc1-4a6e-4a73-b390-16fbe5d025fe",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "EdU proliferation assays show that 30-40% of CD64+FOLR2+ cells incorporate EdU at p3, while adult tongue macrophages show minimal homeostatic proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by EdU incorporation data in Figure 6f. The quantification clearly demonstrates high proliferation in early postnatal stages versus minimal proliferation in adults, validating the developmental expansion model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5c7950cf-51e7-4f8a-96be-bfa5cf3dfc6c",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Bone marrow chimera experiments show differential replacement kinetics: tCX3CR1-MF are fully replaced by 5 weeks while tFOLR2-MF show slower replacement (53% donor cells at 5 weeks), with both populations exclusively HSC-derived by 10 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by bone marrow transfer experiments (Figure 6g). The differential replacement kinetics are clearly quantified, though the experiment appears to have been performed once (n values not clearly stated for each timepoint), which could affect reproducibility assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "5711de6b-4d3a-439e-8f50-aef14c7b793f",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Analysis of Irf8-deficient mice shows that both tCX3CR1-MF and tFOLR2-MF populations are present with largely unchanged transcriptomes (9 DEGs each), indicating IRF8-independent development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by flow cytometry, immunohistochemistry, and scRNA-seq data from Irf8-/- mice (Figure 6\u2014figure supplement 3). The minimal transcriptional changes (9 DEGs) support IRF8 independence, though the slight decrease in tCX3CR1-MF frequency suggests some role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "6fd8e951-6012-4aed-95cd-7c4a636b2c90",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Tongue macrophage precursors proliferate locally during development, but both tCX3CR1-MF and tFOLR2-MF can be replaced by HSC-derived cells during adulthood under immune-compromised conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 synthesizes findings from EdU proliferation (C74), developmental analysis (C64-C70), and bone marrow chimera experiments (C76-C78). This integrative conclusion is well-supported by the combined experimental evidence, appropriately distinguishing developmental versus adult replacement mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "026f1060-29de-432e-97bc-79c50f77b1d8",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previously characterized CD11c+ 'dendritic cells' in the lamina propria likely correspond to tCX3CR1-MF based on localization and marker expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is a reasonable inference based on the demonstrated CD11c expression by tCX3CR1-MF (C43), their lamina propria localization (C47-C55), and appropriate citations to prior work (Feng et al., 2009; Mascarell et al., 2009). The claim is appropriately qualified as 'quite likely.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "99fa4312-cf7f-4aa5-ae23-a33a1484d3cd",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Changes in oral microbiota during lactation and weaning might contribute to the postnatal development and spatial alignment of tCX3CR1-MF in the lamina propria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C84 is speculative, appropriately qualified with 'might suggest,' and supported by analogy to Langerhans cell development (C85, citing Capucha et al., 2018). However, no direct experimental evidence for microbiota involvement is provided. This represents a reasonable hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "8d0e19f5-a586-45c4-b9cb-9c744f822fd0",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Prior work has shown that microglia-derived BDNF affects synapse formation and that systemic inflammation affects taste cell function and renewal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 accurately summarize prior literature with appropriate citations (Parkhurst et al., 2013; Feng et al., 2012, 2014; Cohn et al., 2010). These provide context for potential functional roles of tongue macrophages but do not represent findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    },
+    {
+      "id": "6ef6a477-4c1b-4b75-93a4-064d9dc84935",
+      "content_id": "d14ae6e2-2a36-41b9-8873-caeee5ee169a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior work shows that CD163+ macrophage infiltration in tongue squamous cell carcinoma correlates with worse outcomes compared to CD11c+ macrophage infiltration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 accurately cite prior work (Agarbati et al., 2021) on macrophages in tongue cancer. This provides clinical context for the identified macrophage populations but represents prior work rather than findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:53:23.353600Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a68a1be-e1a4-4d7b-9a02-e77bbfedac12",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "1d3c4dd4-a8d2-4dd6-a6a3-19d31fb7d297",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "7018c8c7-8fe9-4d56-aa28-5dc778dde6cd",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "ed925504-1527-4598-a885-832cf5084d7c",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "6a6c433c-2f90-4deb-a78c-c5a98815525d",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "66f48bbe-6bc7-4462-a266-e5e143effc58",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "472b37a4-a128-4af1-a8cb-8ea6d0b1215c",
+      "result_id": "fef8ed24-d73d-47cb-9e76-7a9f540be36f"
+    },
+    {
+      "claim_id": "01d3916e-b7ac-4980-bfc8-dd71a8f5d0a0",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "73bebdc2-062f-4e9d-aee4-8f2a18571999",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "b84dfd60-594f-42ac-b48d-8d826554af40",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "f4a8cfdb-052d-45d2-a2ef-42c2f89414cb",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "5a33daa6-1d1a-4a5b-a78f-f486f91ba227",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "de278ce1-2745-4d52-ad70-8a270b2e7930",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "57c8cdb2-c342-459c-b876-3216fbb18c1b",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "d0f3d778-1157-4f59-9c61-7c421da4a8f7",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "b9639df6-6e1a-45eb-92fe-a476ac7ff3e4",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "26cc0b98-f9be-43f2-8a3a-23844f2951b6",
+      "result_id": "5288faed-1cb7-497a-90ce-00e95be6dfd5"
+    },
+    {
+      "claim_id": "bf48786e-1175-42f7-b0c0-e25a5442fe6d",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "999848e7-9cec-4449-8a57-ef4d67317bf1",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "f0812f07-4ac0-41cb-90b9-dfffce116cdd",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "1a922e75-fee0-4f61-b824-bb20686bcac3",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "65670405-365e-42b3-8961-0ed643892989",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "ef375b34-69bf-4ec6-8929-9e5caa621212",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "61d74d2b-1e90-4910-8037-568f4feaf612",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "7af78962-b483-4821-ab52-7a9dfbe794bd",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "00b4470c-351b-4733-8e9b-4f3172767670",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "e28b205f-7835-4edb-b3d8-ef717a198242",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "0afa46ac-2db0-41e5-960c-7d04e5b5253e",
+      "result_id": "5a2e3e1f-2ea7-4191-989b-d7114f7890e9"
+    },
+    {
+      "claim_id": "a0adf49e-725a-4047-8cb8-33d083364ff7",
+      "result_id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c"
+    },
+    {
+      "claim_id": "d63764df-a233-455b-a7af-747a176181fd",
+      "result_id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c"
+    },
+    {
+      "claim_id": "242256c0-774b-47ef-86ed-25864f67e3bc",
+      "result_id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c"
+    },
+    {
+      "claim_id": "84d4153c-7c96-418c-867d-985edb3a1305",
+      "result_id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c"
+    },
+    {
+      "claim_id": "600a513f-0254-4b65-864f-9481dfebba04",
+      "result_id": "95ab5bd7-3bd7-4b25-b5b1-abc63294946c"
+    },
+    {
+      "claim_id": "4884f7b1-aed4-4ecc-b999-5eb6fc964506",
+      "result_id": "9c5c448b-229d-4453-b25a-9331e04cb9ce"
+    },
+    {
+      "claim_id": "cf128d56-67d2-427f-90fc-5c8cdaa8f854",
+      "result_id": "9c5c448b-229d-4453-b25a-9331e04cb9ce"
+    },
+    {
+      "claim_id": "8a8af671-5a6e-46e6-83e8-a063eac673d7",
+      "result_id": "9c5c448b-229d-4453-b25a-9331e04cb9ce"
+    },
+    {
+      "claim_id": "833415f8-39f1-4fa6-8c67-260c879f0907",
+      "result_id": "7f5b6dc2-d577-4f47-b66b-f27cba113c16"
+    },
+    {
+      "claim_id": "7d010fc3-d16d-4a66-b3db-8e79328bbf7a",
+      "result_id": "7f5b6dc2-d577-4f47-b66b-f27cba113c16"
+    },
+    {
+      "claim_id": "658c2d96-dee3-4ea0-9ed3-767cdc826746",
+      "result_id": "49d4a57b-5c50-4d0f-b602-c6fc365c32d0"
+    },
+    {
+      "claim_id": "94950744-4dcc-46be-8b40-3a0de7f57e77",
+      "result_id": "49d4a57b-5c50-4d0f-b602-c6fc365c32d0"
+    },
+    {
+      "claim_id": "30ebc74e-49d3-4baa-933e-a5668e3f1a9e",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "c2228d54-5901-4249-a09f-7c2e6aceac6f",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "c87eb23e-3631-4745-9040-cb71540c76e2",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "54cd4d8c-f4e3-4736-a8b8-07d312a6f4a8",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "77907a6a-5b7d-4df4-8a33-45de4e628655",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "d82cbb70-58de-4b27-a988-f6d51616518c",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "5c9b7e14-3bf6-4c07-b292-436b58a6b5bf",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "060e8699-dc7c-432c-bea2-bcf94d16f348",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "8d80f002-99bf-4e69-b2cf-45e926744257",
+      "result_id": "424b5758-bec1-42f1-aad4-c613d7d41888"
+    },
+    {
+      "claim_id": "c79b5e5b-9167-4126-bd8a-db756c0a5313",
+      "result_id": "1918f8b6-586d-4931-9034-e70c6572613c"
+    },
+    {
+      "claim_id": "b231b80a-37cb-466c-9a36-ee6b56a0424d",
+      "result_id": "1918f8b6-586d-4931-9034-e70c6572613c"
+    },
+    {
+      "claim_id": "3d6ddabb-8dbf-424e-afd8-b3e92d171ce2",
+      "result_id": "1918f8b6-586d-4931-9034-e70c6572613c"
+    },
+    {
+      "claim_id": "6a61f536-16b2-4d8b-9646-119b7c742c82",
+      "result_id": "50b692ca-d256-402a-8417-521919a258a9"
+    },
+    {
+      "claim_id": "2af389f7-e431-4c8e-b60a-aeba4c93828b",
+      "result_id": "50b692ca-d256-402a-8417-521919a258a9"
+    },
+    {
+      "claim_id": "e502b017-b1b0-4ed0-b932-ed655a5fa07f",
+      "result_id": "50b692ca-d256-402a-8417-521919a258a9"
+    },
+    {
+      "claim_id": "8afaec97-e5c0-453c-8619-dd152b6ddc56",
+      "result_id": "50b692ca-d256-402a-8417-521919a258a9"
+    },
+    {
+      "claim_id": "c44bc4cd-cfe5-49a6-927d-07a160aff9e3",
+      "result_id": "50b692ca-d256-402a-8417-521919a258a9"
+    },
+    {
+      "claim_id": "a2fe694c-09a2-438a-ac7b-9eb62a076d14",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "3f1fc901-3bfb-4f4c-a9c0-e9557c7430d8",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "e1a452b0-c5a6-4d0b-a5de-74a7b2fd6343",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "203fa85e-1501-4fb4-83e5-2e4acccd6d4b",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "66166396-a071-4637-a755-2024351cce50",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "0d56e087-4fc2-427a-8b67-58fb7003f7f9",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "7f26e69b-134f-4e95-820d-a8ee56568a84",
+      "result_id": "8794ecf7-7312-403d-a85d-3d9dc3fc7ef7"
+    },
+    {
+      "claim_id": "7d969eed-cd4c-4ba9-9381-f9be3a508394",
+      "result_id": "9cd4ad37-52f9-4d12-b89c-33898396e94a"
+    },
+    {
+      "claim_id": "2272d09c-1fd5-492c-a16c-4cca126d827c",
+      "result_id": "9cd4ad37-52f9-4d12-b89c-33898396e94a"
+    },
+    {
+      "claim_id": "92643318-3111-49a6-a37e-2aae1ba3ff3e",
+      "result_id": "9cd4ad37-52f9-4d12-b89c-33898396e94a"
+    },
+    {
+      "claim_id": "45ad899a-b91a-4220-8b86-7a41166c8cca",
+      "result_id": "0896ccc1-4a6e-4a73-b390-16fbe5d025fe"
+    },
+    {
+      "claim_id": "461afea9-143a-40fc-b453-7e88d53dd57a",
+      "result_id": "0896ccc1-4a6e-4a73-b390-16fbe5d025fe"
+    },
+    {
+      "claim_id": "5e71ad98-5a86-4f1c-a81d-8b41376bd7f0",
+      "result_id": "5c7950cf-51e7-4f8a-96be-bfa5cf3dfc6c"
+    },
+    {
+      "claim_id": "757d3d5c-2924-4106-a022-93676c53264d",
+      "result_id": "5c7950cf-51e7-4f8a-96be-bfa5cf3dfc6c"
+    },
+    {
+      "claim_id": "13066876-0775-4b51-9154-195d94ee2a2e",
+      "result_id": "5c7950cf-51e7-4f8a-96be-bfa5cf3dfc6c"
+    },
+    {
+      "claim_id": "d0669e58-6a93-4af3-b172-4bf4c1b04c1e",
+      "result_id": "5711de6b-4d3a-439e-8f50-aef14c7b793f"
+    },
+    {
+      "claim_id": "d6ed4f58-8d12-4c2d-80a4-97e272f5e08b",
+      "result_id": "5711de6b-4d3a-439e-8f50-aef14c7b793f"
+    },
+    {
+      "claim_id": "aff77a6d-a2a2-406a-9ead-7478776bc4cf",
+      "result_id": "5711de6b-4d3a-439e-8f50-aef14c7b793f"
+    },
+    {
+      "claim_id": "b3aabaa5-6ae9-4783-a658-8cb4f9650271",
+      "result_id": "6fd8e951-6012-4aed-95cd-7c4a636b2c90"
+    },
+    {
+      "claim_id": "220abf3e-19a3-4583-b81e-66302f18858f",
+      "result_id": "026f1060-29de-432e-97bc-79c50f77b1d8"
+    },
+    {
+      "claim_id": "a490ec5b-696d-4e37-b699-bc45908cb1a4",
+      "result_id": "99fa4312-cf7f-4aa5-ae23-a33a1484d3cd"
+    },
+    {
+      "claim_id": "a6d71b64-ba56-470e-97db-d8deafb2585b",
+      "result_id": "99fa4312-cf7f-4aa5-ae23-a33a1484d3cd"
+    },
+    {
+      "claim_id": "2288d440-d17b-473f-bf17-b757ec6a8f35",
+      "result_id": "8d0e19f5-a586-45c4-b9cb-9c744f822fd0"
+    },
+    {
+      "claim_id": "b60ed18d-9ef0-4f86-b18c-ecf75cb2b560",
+      "result_id": "8d0e19f5-a586-45c4-b9cb-9c744f822fd0"
+    },
+    {
+      "claim_id": "51b6d59e-5b19-4e13-a3c4-e71da8753e86",
+      "result_id": "8d0e19f5-a586-45c4-b9cb-9c744f822fd0"
+    },
+    {
+      "claim_id": "445aa408-173c-403e-85e3-2f7fd85b958e",
+      "result_id": "6ef6a477-4c1b-4b75-93a4-064d9dc84935"
+    },
+    {
+      "claim_id": "66b3caa8-5df9-4053-9080-5b52c0ad7eca",
+      "result_id": "6ef6a477-4c1b-4b75-93a4-064d9dc84935"
+    }
+  ],
+  "comparisons": []
+}

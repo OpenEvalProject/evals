@@ -1,0 +1,1493 @@
+{
+  "submission": {
+    "id": "db13e569-9ca3-4d34-bc34-7579af610af6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:29:11.991677Z",
+    "updated_at": "2025-12-03T08:29:11.991677Z"
+  },
+  "content": [
+    {
+      "id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "submission_id": "db13e569-9ca3-4d34-bc34-7579af610af6",
+      "content_type": "manuscript",
+      "content_text": "# RNF43 inhibits WNT5A-driven signaling and suppresses melanoma invasion and resistance to the targeted therapy\n\n## Authors\n\n- Tomasz Radaszkiewicz<sup>1</sup> ([ORCID: 0000-0003-4850-9933](https://orcid.org/0000-0003-4850-9933))\n- Michaela Noskov\u00e1<sup>1</sup>\n- Krist\u00edna G\u00f6m\u00f6ryov\u00e1<sup>1</sup>\n- Olga Vond\u00e1lov\u00e1 Blan\u00e1\u0159ov\u00e1<sup>1</sup> ([ORCID: 0000-0002-5998-5348](https://orcid.org/0000-0002-5998-5348))\n- Katarzyna Anna Radaszkiewicz<sup>1</sup> ([ORCID: 0000-0001-9604-3950](https://orcid.org/0000-0001-9604-3950))\n- Mark\u00e9ta Pickov\u00e1<sup>1</sup>\n- R\u00e1chel V\u00edchov\u00e1<sup>2</sup>\n- Tom\u00e1\u0161 Gybe\u013e<sup>1</sup>\n- Karol Kaiser<sup>1</sup> ([ORCID: 0000-0003-4705-2003](https://orcid.org/0000-0003-4705-2003))\n- Lucia Demkov\u00e1<sup>4</sup>\n- Lucia Ku\u010derov\u00e1<sup>4</sup>\n- Tom\u00e1\u0161 B\u00e1rta<sup>1</sup>\n- David Pot\u011b\u0161il<sup>6</sup>\n- Zbyn\u011bk Zdr\u00e1hal<sup>6</sup>\n- Karel Sou\u010dek<sup>1</sup>\n- V\u00edt\u011bzslav Bryja<sup>1</sup> ([ORCID: 0000-0002-9136-5085](https://orcid.org/0000-0002-9136-5085)) \u2020\n\n### Affiliations\n\n1. Department of Experimental Biology, Faculty of Science, Masaryk University Brno Czech Republic\n2. Department of Cytokinetics, Institute of Biophysics CAS Brno Czech Republic\n3. International Clinical Research Center FNUSA-ICRC Brno Czech Republic\n4. Laboratory of Molecular Oncology, Cancer Research Institute, Biomedical Research Center of the Slovak Academy of Sciences Bratislava Slovakia\n5. Department of Histology and Embryology, Faculty of Medicine, Masaryk University Brno Czech Republic\n6. Central European Institute of Technology, Masaryk University Brno Czech Republic\n\n\u2020 Corresponding author\n\n## Abstract\n\nRNF43 is an E3 ubiquitin ligase and known negative regulator of WNT/\u03b2-catenin signaling. We demonstrate that RNF43 is also a regulator of noncanonical WNT5A-induced signaling in human cells. Analysis of the RNF43 interactome using BioID and immunoprecipitation showed that RNF43 can interact with the core receptor complex components dedicated to the noncanonical Wnt pathway such as ROR1, ROR2, VANGL1, and VANGL2. RNF43 triggers VANGL2 ubiquitination and proteasomal degradation and clathrin-dependent internalization of ROR1 receptor and inhibits ROR2 activation. These activities of RNF43 are physiologically relevant and block pro-metastatic WNT5A signaling in melanoma. RNF43 inhibits responses to WNT5A, which results in the suppression of invasive properties of melanoma cells. Furthermore, RNF43 prevented WNT5A-assisted development of resistance to BRAF V600E and MEK inhibitors. Next, RNF43 acted as melanoma suppressor and improved response to targeted therapies in vivo. In line with these findings, RNF43 expression decreases during melanoma progression and RNF43-low patients have a worse prognosis. We conclude that RNF43 is a newly discovered negative regulator of WNT5A-mediated biological responses that desensitizes cells to WNT5A.\n\n## Introduction\n\nUbiquitination is a post-translational modification (PTM) based on the addition of the evolutionary conserved protein ubiquitin (Ub) to the lysine residue(s) of the modified protein (Hershko and Ciechanover, 1998). Ubiquitination controls the turnover, activation state, cellular localization, and interactions of target proteins. Undoubtedly, it is a process that has a direct impact on various aspects of cell biology (Rape, 2018). Ubiquitination requires sequential activation of ubiquitin, its transfer to the carrier protein, and subsequent linkage reaction with the substrate lysine residues. This last step, mediated by the E3 ubiquitin protein ligases (E3s), determines target specificity.\n\nRing Finger protein 43 (RNF43) is a E3 ubiquitin ligase with a single transmembrane domain from the PA-TM-RING family. RNF43 and its close homolog Zinc and Ring Finger 3 (ZNRF3) act as negative regulators of the Wnt/\u03b2-catenin signaling pathway (Koo et al., 2012; Hao et al., 2012). Wnt/\u03b2-catenin signaling is an evolutionary conserved pathway and a crucial regulator of embryonal development and tissue homeostasis. RNF43 and ZNRF3 control via regulation of Wnt/\u03b2-catenin multiple processes including liver zonation (Planas-Paz et al., 2016), limb specification (Szenker-Ravi et al., 2018), and mammalian sex determination (Harris et al., 2018). Mechanistically, RNF43 and ZNRF3 ubiquitinate plasma membrane Wnt receptors called Frizzleds (FZDs) and a co-receptor low-density lipoprotein receptor-related protein 6 (LRP6), which results in their internalization and degradation (Hao et al., 2012; Koo et al., 2012). Therefore, cells become less sensitive or insensitive to Wnt ligands. Activity of RNF43/ZNRF43 is regulated by secreted proteins from R-spondin (RSPO) family (Kazanskaya et al., 2004; Kim et al., 2008; Kim et al., 2006; Kim et al., 2005; Nam et al., 2007; Nam et al., 2006; Peng et al., 2013; Xie et al., 2013) that trigger internationalization of RNF43/ZNRF3 and function as physiologically relevant activators of Wnt/\u03b2-catenin pathway (Binnerts et al., 2007; Carmon et al., 2011; de Lau et al., 2011; Hao et al., 2016; Hao et al., 2012; Jiang et al., 2015; Koo et al., 2012; Zebisch et al., 2013; Zebisch and Jones, 2015).\n\nBecause deregulation of Wnt/\u03b2-catenin pathway promotes tumor formation (Lim and Nusse, 2013; van Kappel and Maurice, 2017; Wiese and Nusse, 2018), RNF43/ZNRF3 can act as tumor suppressors. Indeed, mutation or inactivation of RNF43/ZNRF3 leads to the oncogenic activation of Wnt signaling and associates with colorectal, liver, gastric, endometrial, ovarian, and pancreatic cancers (Bond et al., 2016; Eto et al., 2018; Giannakis et al., 2014; Jiang et al., 2013; Jo et al., 2015; Niu et al., 2015; Planas-Paz et al., 2016; Ryland et al., 2013; Spit et al., 2020; Tsukiyama et al., 2020).\n\nSome members of the Wnt family \u2013 such as WNT5A and WNT11 \u2013 preferentially activate downstream signaling that is distinct from Wnt/\u03b2-catenin pathway and is referred to as \u03b2-catenin-independent or noncanonical Wnt pathway (Pandur et al., 2002; Humphries and Mlodzik, 2018; VanderVorst et al., 2019; Andre et al., 2015). Noncanonical Wnt pathway shares some features with the Wnt/\u03b2-catenin pathway \u2013 such as the requirement for FZD receptors, dishevelled (DVL) phosphoprotein and casein kinase 1 (CK1) \u2013 but clearly differs in others. In the mammalian noncanonical pathway, receptor tyrosine kinase-like orphan receptor 1 (ROR1) and ROR2 act as primary (co-)receptors (in contrast to LRP5/6 that have this role in the Wnt/\u03b2-catenin pathway) and four-transmembrane Vang-like protein 1 (VANGL1) and VANGL2 participate in the signal transduction (Asem et al., 2016; VanderVorst et al., 2019). This signaling axis is also referred to as planar cell polarity pathway (PCP), and its activation leads to changes in actin cytoskeleton dynamics, facilitating, that is, polarized cell migration (Andre et al., 2015; Janovsk\u00e1 and Bryja, 2017; Kauck\u00e1 et al., 2015; Weeraratna et al., 2002).\n\nFZD receptors, the best-defined targets of RNF43/ZNRF3, are shared among all Wnt pathways and their endocytosis and/or degradation have the potential, at least in theory, to prevent signaling by any Wnt ligands. So far, there is only one study that suggests the role of RNF43/ZNRF3 in noncanonical Wnt signaling in mammals (Tsukiyama et al., 2015). In addition, secreted inhibitor of RNF43/ZNRF3 called r-spondin 3 (RSPO3) potentiated noncanonical PCP pathway in Xenopus in a Wnt5a and dishevelled-dependent manner (Glinka et al., 2011; Ohkawara et al., 2011). In mouse embryos, Znrf3 knockout caused open neural tube defects, which is a common consequence of the Wnt/PCP signaling disruption (Hao et al., 2012). Other report showed a similar phenotype in Xenopus embryos after Rnf43 mRNA injection (Tsukiyama et al., 2015). And finally, in Caenorhabditis elegans, the homolog of RNF43 and ZNRF3 called plr-1 was shown to control not only the surface localization of frizzled, but also proteins related to mammalian noncanonical Wnt co-receptors ROR1/2 and RYK (Moffat et al., 2014). However, it is worth underlining that RSPO family homologs are absent in C. elegans (Lebensohn and Rohatgi, 2018), so the mode of action of RNF43/ZNRF3 in the worm might be different than in mammalian cells.\n\nIn this study, we have directly addressed the role of RNF43 in the WNT5A-induced signaling. We demonstrate that RNF43 controls the noncanonical Wnt pathway similarly to Wnt/\u03b2-catenin pathway. Further, we show that RNF43 is a relevant inhibitor of pro-metastatic WNT5A signaling in melanoma where it prevents both WNT5A-induced invasive behavior and WNT5A-assisted development of resistance to B-RAF and MEK inhibitors.\n\n## Results\n\n### RNF43 inhibits WNT5A-driven noncanonical Wnt signaling pathway\n\nIn order to test whether or not RNF43/ZNRF3 controls noncanonical Wnt signaling, we have decided to study T-REx 293 cells. T-REx 293 cells secrete endogenous WNT5A that constitutively activates the noncanonical Wnt pathway \u2013 this can be demonstrated by the CRISPR/Cas9-mediated knockout of WNT5A (Kaiser et al., 2020). Removal of endogenous WNT5A in T-REx 293 cells is sufficient to eliminate the activation of readouts of WNT5A signaling such as phosphorylation of ROR1, DVL2, and DVL3 that can be monitored by western blotting as the decrease in the phosphorylation-mediated electrophoretic mobility shifts (Figure 1A; Bryja et al., 2007b; Kotrbov\u00e1 et al., 2020; Radaszkiewicz and Bryja, 2020). Autocrine WNT5A signaling was promoted by the inhibition of endogenous RNF43/ZNRF3 by RSPO1 treatment (Figure 1B, compare lanes 1 and 2) and inhibited by RNF43 overexpression under the tetracycline (Tet)-controlled promoter (TetON) or by block of WNT secretion using Porcupine inhibitor Wnt-C59 (Figure 1B). To confirm that the effects are indeed caused by the block of WNT5A signaling, T-REx 293 cells pretreated with Wnt-C59 and as such unable to produce Wnt ligands were stimulated with increasing doses of recombinant WNT5A. As shown in Figure 1C, overexpression of RNF43 completely blocked signaling induced by recombinant WNT5A. Altogether, this demonstrates that RNF43 has the potential to block WNT5A signaling in mammalian cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig1-v1.jpg)\n\n**Figure 1.:** (A) Western blot analysis of T-REx 293 wild type (WT) and WNT5A KO cells. Phosphorylation-dependent shifts of endogenous ROR1, DVL2, and DVL3 were suppressed upon WNT5A loss (TCL: total cell lysate; CM: conditioned medium). Signal of \u03b2-actin serves as a loading control. Empty arrowhead marks phosphorylation-dependent shift; black arrowhead indicates unphosphorylated protein. (B) Western blot showing activation of the noncanonical Wnt pathway components: ROR1, DVL2, and DVL3 upon rhRSPO1 overnight treatment (arrowheads as in A). Tetracycline-forced RNF43 overexpression (as visualized by HA tag-specific antibody) suppressed this effect. Inhibition of Wnt ligands secretion by the Porcupine inhibitor Wnt-C59 shows dependency of the rhRSPO1-mediated effect on endogenous Wnt ligands; representative blots from N = 3. (C) Western blot analysis of cellular responses to the increasing doses of rhWNT5A. ROR1 shift and phosphorylation of DVL2 and DVL3 (empty arrowhead) were inhibited upon tetracycline-induced RNF43-HA-BirA* overexpression. All samples were treated with Wnt-C59 Porcupine inhibitor to ascertain assay specificity to the exogenous rhWNT5A, N = 3. (D) Volcano plot of the RNF43 interactome identified by BioID and subsequent mass spectrometric detection (see Materials and methods for details). Significantly enriched proteins annotated as the components of the noncanonical Wnt signaling pathway are highlighted and their log fold change and adjusted p values are presented (D\u2032). A full list of BioID-based identified interactors of RNF43 is presented in Figure 1\u2014source data 1 and GO terms enrichment analysis in Figure 1\u2014source data 2.\n\n### RNF43 physically interacts with key proteins from the noncanonical Wnt pathway\n\nTo address the molecular mechanism of RNF43 action in the noncanonical Wnt pathway, we decided to describe RNF43 interactome by the proximity-dependent biotin identification (BioID; Roux et al., 2012), which was already successfully applied in the challenging identification of E3s substrates (Coyaud et al., 2015; Deshar et al., 2016). We have exploited our recently published dataset (Spit et al., 2020) based on T-REx 293 TetON cells that inducibly expressed RNF43 fused C-terminally (intracellularly) with BirA* biotin ligase. Several core proteins of the noncanonical Wnt signaling pathway \u2013 namely, ROR1, ROR2, VANGL1, VANGL2, SEC24B, and all three isoforms of DVL \u2013 were strongly and specifically biotinylated by RNF43-BirA* (Figure 1D and D\u2032, Figure 1\u2014source data 1). Furthermore, the noncanonical Wnt pathway was significantly enriched also in the gene ontology (GO) terms (Figure 1\u2014source data 2). Altogether, it suggests that RNF43 can at least transiently interact with multiple proteins involved in the Wnt/PCP pathway, including essential receptor complex components from the ROR, DVL, and VANGL protein families.\n\nTo validate the protein-protein interactions identified by BioID, we performed a series of co-immunoprecipitation (co-IP) and co-localization experiments (Figure 2, Figure 2\u2014figure supplement 1). We have focused on the interactions of RNF43 with ROR1/ROR2 and with VANGL1/VANGL2 mainly because these interactions are novel and at the same time highly relevant for the noncanonical Wnt pathway. RNF43 co-immunoprecipitated with both VANGL2 (Figure 2A) and VANGL1 (Figure 2\u2014figure supplement 1A). More detailed analysis of VANGL2 showed co-localization of VANGL2 and RNF43 in the cell membrane (Figure 2B and B\u2032). RNF43 also efficiently pulled down ROR1 (Figure 2C) and ROR2 (Figure 2\u2014figure supplement 1B). Deletion of the cysteine-rich domain (CRD) (ROR2, Figure 2\u2014figure supplement 1B) had no impact on the amount of co-immunoprecipitated RNF43, which suggests that RNF43 primarily interacts with RORs intracellularly. Both ROR1/ROR2 co-localized with RNF43 at the level of the plasma membrane (Figure 2D and D\u2032 and Figure 2\u2014figure supplement 1C and C\u2032). It was described that RORs and VANGLs also bind DVL (Gao et al., 2011; Mentink et al., 2018; Seo et al., 2017; Witte et al., 2010; Yang et al., 2017) and at the same time DVL proteins mediate ubiquitination of FZD receptors by RNF43 in the Wnt/\u03b2-catenin pathway (Jiang et al., 2015). To address whether DVL also acts as a physical link between RNF43 and the analyzed PCP proteins, we performed the co-IP experiments with VANGL2 and ROR1 in the T-REx 293 cells lacking all free DVL isoforms (DVL triple knockout cells) (Pacl\u00edkov\u00e1 et al., 2017). As shown in Figure 2\u2014figure supplement 1D and E, RNF43 was able to bind both VANGL2 and ROR1 as efficiently as in the wild-type cells (compare with Figure 2A and D). In summary, our results indicate that RNF43 interacts, in a DVL-independent way, with PCP proteins from VANGL and ROR families.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig2-v1.jpg)\n\n**Figure 2.:** (A) RNF43 interacts with VANGL2, but not with its mutants lacking N- or C-termini. VANGL2-EGFP and its variants (schematized) were overexpressed with RNF43-HA in Hek293 T-REx cells, immunoprecipitated by anti-HA and anti-GFP antibodies and analyzed by western blotting. Representative experiment from N = 3. Scheme illustrates secondary structure of the wild-type VANGL2 protein and its shortened variants used in this study. (B, B\u2032) RNF43 (anti-HA, red) co-localized with transiently expressed VANGL2 (GFP, green). Co-localization was analyzed utilizing histograms of red, green, and blue channels signals along selection (yellow line) (B\u2032). TO-PRO-3 Iodide was used to stain nuclei (blue). Scale bar: 25 \u03bcm. (C) RNF43 binds to the ROR1 and deletion of the intracellular part of ROR1 disrupts this interaction. RNF43-HA was detected in the ROR1 pull down prepared from lysates of Hek293 T-REx cells overexpressing RNF43-HA and ROR1-V5, N = 3. ROR1 wild-type and truncated mutants are represented in the scheme. (D, D\u2032) RNF43 (anti-HA, red) co-localized with transiently expressed ROR1-V5 (anti-V5, green). Signals along selection (yellow line) were analyzed (D\u2032). TO-PRO-3 was employed nuclei staining (blue). Scale bar: 25 \u03bcm. RNF43 interactions with VANGL1 and ROR2 are studied in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A. RNF43 interacts with VANGL1. VANGL1-Myc was co-immunoprecipitated in the HA pull-down, prepared from lysate of Hek293 T-REx cells transiently overexpressing RNF43-HA and VANGL1-Myc, but not from the lysate containing only VANGL1-Myc overexpressed transgene, N=3. B. RNF43 interacts with the ROR2 in the CRD domain dispensable manner. Wild type ROR2 and \u0394CRD-ROR2 mutant were detected in HA and FLAG pull downs, prepared from lysates of the Hek293 T-REx cells transiently overexpressing RNF43-HA and ROR2-FLAG or \u0394CRD-ROR2, N=3. C., C\u2019 Exogenous ROR2 (anti-FLAG, green) colocalizes with the RNF43-BirA*-HA (anti-HA, red) in the TetON Hek293 T-Rex cells. DNA was visualized by TO-PRO-3 Iodide. Scale bar represents 25 \u03bcm. Co-localization of ROR2 and RNF43 was analyzed utilizing histograms (C\u2019) of red, green and blue channels along selection (yellow line). Data is present in the Figure 2\u2014figure supplement 1\u2014source data 1. D. RNF43 interacts with the VANGL2 in the absence of all three Disheveled isoforms. RNF43 binding to VANGL2 in the DVL1/2/3 deficient cells was confirmed in the two-directional co-IP assay, N=3. E. Interaction between ROR1-V5 and RNF43-HA is preserved in the DVL1-3 null cells. ROR1 was detected in the HA pull-down and RNF43 in the V5 immunoprecipitation. T-REx DVL1/2/3 tKO cells were transfected with highlighted plasmids, N=3.\n\n### RNF43 ubiquitinates VANGL2 and triggers its degradation\n\nSince RNF43 is an E3 ubiquitin ligase, we next tested whether it can ubiquitinate its binding partners from the noncanonical Wnt pathway. Enzymatically inactive RNF43 Mut1 variant (Koo et al., 2012) served here as a negative control. Using His-ubiquitin pulldown assay, we were able to show that VANGL2 (Figure 3A), as well as DVL1 and DVL2 (Figure 3\u2014figure supplement 1A), was ubiquitinated when co-expressed with RNF43 but not with RNF43 Mut1. However, we were unable to detect RNF43-induced ubiquitination of ROR1 or ROR2 (negative data, not shown).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig3-v1.jpg)\n\n**Figure 3.:** (A) Hek293 T-REx cells were transfected with plasmid encoding His-tagged ubiquitin, VANGL2-GFP and HA-tagged wild-type or Mut1 RNF43 constructs. Ubiquitinated proteins were enriched by His pull down and analyzed by western blotting. VANGL2 is ubiquitinylated by the E3 ubiquitin ligase RNF43, but not by its enzymatically inactive variant (RNF43Mut1). Representative experiment from N = 3. RNF43-mediated ubiquitination of DVL1 and DVL2 together in Figure 3\u2014figure supplement 1. (B) Tetracycline-induced overexpression of the wt RNF43 (HA), but not enzymatically inactive RNF43Mut1 (HA), decreased VANGL2 protein level and suppressed phosphorylation of ROR1 and DVL3 (empty arrowhead; full arrowhead indicates unphosphorylated protein). CRISPR/Cas9-derived RNF43/ZNRF3 (R/Z) dKO cell lines #1 and #2 display phenotype reversed to the RNF43 overexpression. Quantified in Figure 3\u2014figure supplement 1B, N = 3. (C) Inhibition of the proteasomal degradation pathway by MG132 (but not by lysosomal inhibitor chloroquine) blocked the RNF43 effects on ROR1, DVL2, DVL3 (empty arrowhead: phosphorylated; full arrowhead indicates unphosphorylated) and VANGL2 as shown by the western blotting analysis, N = 3. (D) Flow cytometric analysis of surface ROR1 in wild-type (WT) and RNF43/ZNRF3 (R/Z) dKO cells; unpaired two-tailed t-test: p=0.0298, N = 4. ROR1 was stained using ROR1-APC conjugate on the nonpermeabilized cells. Validation of the a-ROR1-APC antibody is shown in Figure 3\u2014figure supplement 1D. (E, E\u2032\u2019) Surface ROR1 levels upon 3 hr and overnight (ON) induction of RNF43 in RNF43 TetON RNF43/ZNRF3 dKO cells; unpaired t-test p<0.0001, N = 6. Representative histogram of ROR1-APC signal in the analyzed conditions is shown (E\u2032). (F) Dansylcadaverine, inhibitor of clathrin-mediated endocytosis, blocked the effect of RNF43 overexpression on surface ROR1, performed as in (E); unpaired t-test p=0.0037 3 hr Tet. vs 3 hr Tet.+ dansylcadaverine; N = 5 and 6 (3 hr Tet. condition). (G) Immunofluorescence imaging showed enhanced ROR1 (anti-V5, magenta) co-localization with the marker of early endosomes RAB5 (GFP, green) after 3 hr tetracycline treatment in RNF43 TetON RNF43/ZNRF3 dKO cells. RAB11-positive (GFP, green) recycling endosomes were recruited to the ROR1 (anti-V5, magenta) at the plasma membrane after overnight tetracycline treatment. Cells were transfected, treated, fixed, and stained. DNA was visualized by Hoechst 33342 (blue). Other tetracycline time points are shown in Figure 3\u2014figure supplement 3A. Similar results were obtained for T-REx RNF43 TetON cell line (Figure 3\u2014figure supplement 1E). Raw data used in (D\u2013F) are given in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) DVL1 and DVL2 are ubiquitinylated by the E3 ubiquitin ligase RNF43, but not by its enzymatically inactive mutant (RNF43Mut1). Hek293 T-REx cells were transfected with plasmid encoding His-tagged ubiquitin, DVL1-FLAG or DVL2-FLAG, and wild-type or Mut1 RNF43 constructs and subjected to His-tag pull down and subsequent western blotting. N = 3. (B) Quantification of western blots from Figure 3B. Unpaired two-tailed t-test, *p<0.05, **p<0.01, ***p<0.001, N = 3. (C) Western blotting showing the lack of ROR1 protein in the T-REx 293 ROR1 KO cell lines. (D) T-REx ROR1 KO line was used for validation of the ROR1-APC antibody used for the flow cytometric determination of the ROR1 cell surface level. (E) Immunofluorescence imaging of enhanced ROR1 (anti-V5, magenta) co-localization with marker of early endosomes RAB5 (GFP, green) after 3 hr of tetracycline treatment in the T-REx RNF43 TetON cell line. RAB11 (GFP, green) was recruited to the ROR1 at plasma membrane upon overnight tetracycline exposition. DNA was visualized by Hoechst 33342 (blue). Scale bars represent 10 \u00b5m. Cells were treated 24 hr post-transfection for indicated time points. Images representing RAB5 control and ON tetracycline treatment together with RAB11 control and 3 hr tetracycline conditions are presented in Figure 3\u2014figure supplement 3B. Data presented in (B) is presented in Figure 3\u2014figure supplement 1\u2014source data 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Tetracycline-induced RNF43 (anti-HA, green) co-localized with transiently expressed lysosomal marker (Lamp1-mCherry, red). TO-PRO-3 Iodide was used to stain nuclei (blue). Scale bar: 25 \u03bcm. (B) Transiently overexpressed VANGL2 (GFP, green) and lysosomal marker (Lamp1-mCherry, red) in the presence and absence of tetracycline-induced RNF43 (anti-HA, magenta). Hoechst 33342 was used to stain nuclei (blue). Scale bar: 10 \u03bcm. (C) Tetracycline-forced expression of RNF43 (anti-HA, magenta) caused retention of VANGL2 (GFP, green) in Golgi complex (anti-endogenous Golgin-97, red). DAPI was used to stain nuclei (blue). Scale bar: 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A, B) Confocal imaging of the inducible T-REx RNF43/ZNRF3 dKO (A) and T-REx WT RNF43 TetON (B) and transfected with plasmids encoding ROR1-V5 (anti-V5, magenta) and RAB11-GFP-HA (GFP, green). 24 hr post-transfection, cells were treated with tetracycline for indicated time and then paraformaldehyde fixed, permeabilized, and stained for ROR1 (anti-V5) and nuclei detection (DAPI, blue). Scale bars represent 10 \u03bcm. Other tetracycline time points are presented in Figure 3 and Figure 3\u2014figure supplement 1.\n\nFurther analysis showed that overexpression of RNF43, but not its E3 ligase dead variant, decreased VANGL2 protein level (Figure 3B, quantified in Figure 3\u2014figure supplement 1B). Decrease in VANGL2 caused by RNF43 was accompanied by impeded phosphorylation of ROR1 (Figure 3B) and DVL3 (Figure 3B, Figure 3\u2014figure supplement 1B). On the other side, two independent clones of cells deficient in both RNF43 and ZNRF3 (RNF43/ZNRF3 dKO; R/Z dKO) showed higher VANGL2 levels and higher DVL phosphorylation (Figure 3B, Figure 3\u2014figure supplement 1B). These confirm that also endogenous RNF43/ZNRF3 module affects the noncanonical Wnt signaling. Interestingly, treatment with the proteasome inhibitor MG132 but not with autophagosome-lysosome inhibitor chloroquine blocked these effects of RNF43 (Figure 3C). This suggests that RNF43 action in the noncanonical Wnt pathway depends on the proteasomal degradation pathway, which differs from the Wnt/\u03b2-catenin pathway, where RNF43 triggers FZD degradation via the lysosomal pathway (Koo et al., 2012). This is in accordance with immunofluorescence analysis, which did not show an increased co-localization of VANGL2 and RNF43 in lysosomes (Figure 3\u2014figure supplement 2B). However, RNF43 overexpression led to the retention of VANGL2 in the Golgin-97-positive area (Figure 3\u2014figure supplement 2C). This suggests that RNF43 can act via similar mechanism that was described for WNT5A-induced regulation of VANGL2 plasma membrane localization during planar cell polarity maintenance (Feng et al., 2021; Guo et al., 2013; Tower-Gilchrist et al., 2019; Yang et al., 2017).\n\n### RNF43 induces ROR1 endocytosis by a clathrin-dependent pathway\n\nROR1 and ROR2 are the key receptors for WNT5A that we found to interact with RNF43 (Figures 1 and 2). We thus speculated that RNF43 can regulate ROR1/ROR2 surface levels. T-REx cells express dominantly ROR1, and indeed flow cytometric analysis demonstrated that cell lacking endogenous RNF43 and ZNRF3 have more ROR1 receptor on the surface than parental T-REx cells (Figure 3D). The staining is specific as demonstrated by the validation of the ROR1-APC antibody in ROR1 KO T-REx 293 cells (Figure 3\u2014figure supplement 1C and D). When we introduced inducible RNF43 into RNF43/ZNRF3 dKO T-REx cell line, we were able to rescue this phenotype, and after 3 hr of tetracycline treatment, we detected decreased surface ROR1 and the overnight exposition to tetracycline had no significant effect (Figure 3E and E\u2032).\n\nIn our analysis of RNF43 interactors (Figure 1D), we identified also multiple proteins involved in endosomal transport. It included proteins involved in the clathrin endocytic pathway \u2013 STAM1, HRS, ZFYVE16, PICALM, NUMB, RAB11-FIP2, and subunits of the associated adaptor protein complexes AP-3 and AP-4 (Supplementary file 1; Bache et al., 2003; Cullis et al., 2002; Hirst et al., 2013; Raiborg et al., 2001; Santolini et al., 2000; Seet and Hong, 2005; Tebar et al., 1999). Based on the BioID results analysis, we speculated that RNF43 may promote clathrin-mediated endocytosis of ROR1. Thus, we applied dansylcadaverine to block this pathway (Blitzer and Nusse, 2006). In agreement with our hypothesis, treatment with this inhibitor prevented RNF43-mediated effect on the ROR1 surface expression in T-REx 293 RNF43/ZNRF3 dKO RNF43 TetON cells (Figure 3F).\n\nTo get a better insight into the mechanism of RNF43-induced internalization of ROR1, we analyzed the co-localization of ROR1 and RAB5 (marker of early endosomes) and RAB11 (marker of recycling endosomes) in T-REx 293 R/Z dKO RNF43 TetON (Figure 3G and Figure 3\u2014figure supplement 3A) and T-REx 293 RNF43 TetON cells (Figure 3\u2014figure supplement 1E and Figure 3\u2014figure supplement 3B). Hyperactivation of Rab5 by overexpression of wild-type Rab5 leads to the formation of giant early endosomes (Bucci et al., 1992) where we observed ROR1/RAB5 co-localization after 3 hr of tetracycline treatment. The co-localization decreased after overnight exposition to tetracycline. RAB11+ endosomes were recruited to the ROR1 as well as after RNF43 induction and RAB11 co-localized strongly with ROR1 even after ON treatment. We conclude that surface ROR1 is controlled by RNF43 via interference with RAB5- and RAB11-mediated endocytosis and RNF43-mediated effect is not persistent due to the activity of recycling RAB11 recycling pathway (Ullrich et al., 1996).\n\n### RNF43 expression is decreased in human melanoma\n\nOur data shown in Figures 1\u20143 demonstrate that RNF43 can inhibit WNT5A-induced noncanonical signaling via downregulation of the receptor complexes. But is RNF43 capable of blocking WNT5A-induced biological processes? WNT5A signaling plays a crucial role in melanoma, one of the most malignant tumor types. High expression of WNT5A in this cancer is a negative overall survival and positive metastasis formation factor (Da Forno et al., 2008; Luo et al., 2020; Weeraratna et al., 2002). Signaling cascade activated by WNT5A in melanoma drives epithelial\u2013mesenchymal transition-like program (EMT), resulting in increased metastatic properties of melanoma cells in vitro and in vivo (Dissanayake et al., 2008; Dissanayake et al., 2007; Sadeghi et al., 2018). In melanoma, WNT5A acts through FZD and ROR1/ROR2 (O\u2019Connell et al., 2010; Tiwary and Xu, 2016; Weeraratna et al., 2002). The importance of WNT5A-driven signaling in melanoma is thus well recognized, and melanoma represents probably the most characterized (and most clinically relevant) pathophysiological condition where noncanonical WNT5A signaling drives cell invasion and disease progression (Arozarena and Wellbrock, 2017b; Da Forno et al., 2008; Dissanayake et al., 2007; Lai et al., 2012; Liu et al., 2018; O\u2019Connell et al., 2010; O\u2019Connell et al., 2008; Weeraratna et al., 2002).\n\nInterestingly, the in silico analysis of gene expression (Talantov et al., 2005; Xu et al., 2008) showed that RNF43 expression dramatically decreases between benign melanocytic skin nevus and cutaneous melanoma (Figure 4A; Talantov et al., 2005) and further between primary site and metastasis (Xu et al., 2008; Figure 4B). Importantly, analysis of other datasets (Anaya, 2016) showed that RNF43 low melanoma patients have shorter overall survival (OS; Figure 4C). ZNRF3 expression had no prognostic value (Figure 4\u2014figure supplement 1A). Interestingly, the expression of two genes encoding direct targets ubiquitinated by RNF43, namely, DVL3 and VANGL1, increased during melanoma progression (Figure 4\u2014figure supplement 1B and C) and high expression in both cases correlates with bad prognosis and shorter overall survival (Figure 4D, Figure 4\u2014figure supplement 1D). All these findings are in line with the hypothesis that RNF43 acts in melanoma as a tumor suppressor that restricts WNT5A-induced biological processes and gets silenced during melanoma progression.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig4-v1.jpg)\n\n**Figure 4.:** (A, B) RNF43 expression is lower in melanoma when compared with the skin and benign melanocytic skin nevus (A) and in the case of distant metastasis compared to the primary tumors (B), unpaired two-tailed t-test: ****p<0.0001. (C, D) RNF43 expression is a negative prognostic factor in melanoma. RNF43 low patients have shorter overall survival (logrank p-value=0.0311). Contrary, patients with low-expression VANGL1 (D) had longer survival (logrank test, p-value=0.00518). Expression of DVL3, VANGL1,and ZNRF3 is analyzed in Figure 4\u2014figure supplement 1A\u2013D. (E, E\u2032, E\u2032\u2032) Culture media from melanoma A375, A375 IV, and A2058 cell lines were collected after 48 hr and analyzed by western blotting for the presence of WNT5A (E\u2032) and WNT11 (E\u2032\u2032). Densitometric analysis has been done using the ImageJ software. Graphs represent ratio of corresponding WNT (medium) and \u03b2-actin (lysate) signals. Unpaired two-tailed t-test: p=0.0092 (E\u2032); 0.0320 and 0.0001 (E\u2032\u2032); N = 3. (F) Schematic representation of the melanoma cell lines and their genetically modified variants used in this study. (G) Effects of the stable RNF43 overexpression and RNF43/ZNRF3 knockout in A375 and in its invasive derivate A375 IV. Exogenous RNF43 expression blocked DVL2 and DVL3 activation (arrowheads showing phosphorylation-dependent change of the electrophoretic mobility). Removal of endogenous RNF43 and ZNRF3 proteins had an opposite effect, N = 6. Quantification is given in Figure 4\u2014figure supplement 1E,F. Expression of WNT5A, RNF43, ZNRF3, ROR1, DVL2, and DVL3 in tested cell lines was checked and shown in Figure 4\u2014figure supplement 2. (H\u2013J) Western blot showing inhibitory effect of RNF43 on A375 (H), A375 IV (I), and A2058 RNF43 TetON (J) cell lines in response to the 40 and 80 ng/ml 3 hr-long rhWNT5A treatments. RNF43/ZNRF3 dKO A375 (H), A375 IV (I) cell lines had stronger response to rhWNT5A than parental line. \u03b2-actin served as a loading control. Empty arrowhead: phosphorylated; full arrowhead: unphosphorylated protein. Porcupine inhibitor LGK-974 was used to block endogenous Wnt ligands secretion and RNF43 was probed by HA antibody, N = 3 and N = 4 (A2058). Quantification of DVL2 and DVL3 activation status and their protein levels in A2058 cells is given in Figure 4\u2014figure supplement 1G and H. Figure 4\u2014figure supplement 3 presents rhWNT5A treatment and consequences of RNF43-induced expression in RAS-mutant melanoma cell line MelJuso (A) and A375 (B) together with isogenic control (C). Figure 4\u2014source data 1 contains raw data.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) ZNRF3 gene expression has no impact on melanoma patients\u2019 survival (logrank p-value=0.897). (B) DVL3 expression level is elevated in human melanoma, unpaired two-tailed t-test, *p=0,0159, ****p<0.0001. (C) VANGL1 is more expressed in the metastasis than in primary melanoma, unpaired two-tailed t-test, p=0.0241. (D) High expression of DVL3 is a negative prognostic factor (50% lower and 50% upper percentiles). Logrank p-value=0.0269. (E, F) Quantification of western blots presented in Figure 4G. Exogenous RNF43 expression blocked in both tested cell lines DVL2 (E) DVL3 (F) phosphorylation-dependent shifts. CRISPR/Cas9-mediated knockout of RNF43/ZNRF3 resulted in the more activated DVL2 and DVL3 isoforms in case A375 IV cell line. Data were normalized to 1 for the parental cell lines values, unpaired two-tailed t-test: *p<0.05, **p<0.01, ***p<0.01, ****p<0.0001, N = 6 (F \u2013 A375 IV R/Z dKO N = 5). Total DVL2 and DVL3 protein levels accompanied by WNT5A, RNF43, ZNRF3, ROR1, DVL2, and DVL3 genes expression analysis are presented in Figure 4\u2014figure supplement 2. (G, H) Phosphorylation and total protein levels of DVL2 (G) and DVL3 (H) in A2058 cells inducibly overexpressing RNF43, unpaired two-tailed t-test: ****p<0.0001, N = 4. Western blots are presented in Figure 4J. Figure 4\u2014figure supplement 1\u2014source data 1 contains raw results.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013D) RT-qPCR results \u2013 expression of the WNT5A (A), RNF43 (B), ZNRF3 (C), and ROR1 (D) genes was analyzed in the tested melanoma cells and presented as 2\u2212\u0394\u0394Ct \u00b1 SD, two-tailed t-test: *p<0.05, **p<0.01, ***p<0.001; N = 3 (A375 N = 2 for A and B). Relative expression level was normalized to the B2M and GAPDH genes expression. (E, F) Western blot quantification results (Figure 4G) showing total levels of DVL2 (E) and DVL3 (F) not affected by RNF43 overexpression, nor by RNF43/ZNRF3 knockout. DVL3 protein level decreased only in the case of A375 R/Z dKO cells (F), unpaired two-tailed t-test: ***p<0.001, N = 3. Results were normalized to the A375 values. (G, H). RT-qPCR analysis of DVL2 (G) and DVL3 (H) genes expression in A375, A375 IV cell lines and their derivates. Relative expression level was normalized to the B2M and GAPDH genes expression values and presented as 2\u2212\u0394\u0394Ct \u00b1 SD. Data used in (A\u2013G) is presented in Figure 4\u2014figure supplement 2\u2014source data 1. (I\u2013M) Expression analysis of WNT5A (I), RNF43 (J), ZNRF3 (K), ROR1 (L), and ROR2 (M) genes in A2058 cells. Relative expression levels are presented as 2\u2212\u0394\u0394Ct \u00b1 SD and normalized to the levels of B2M and GAPDH genes.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A-A\u2019\u2019, B-B\u2019\u2019) Effects of the inducible RNF43 overexpression in RAS-mutant MelJuso (A) and BRAF V600E A375 (B) cells. Exogenous RNF43 expression blocked response to the 40 and 80 ng/ml 3 hr-long rhWNT5A treatments. Porcupine inhibitor LGK-974 was used to block endogenous Wnt ligands secretion and RNF43 was probed by HA antibody. \u03b2-actin is shown as a loading control. Phosphorylation status and total protein level of DVL2 (A\u2019 B\u2019) and DVL3 (A\u2019\u2019, B\u2019\u2019) were quantified, unpaired t-test *p<0.05, **p<0.01, ***p<0.001, N = 3. Results were normalized to 1, for the \u2018DOX-\u2019 condition. (C) Western blot analysis of control to A375 RNF43 TetON cell line. Cells were treated with doxycycline and Porcupine inhibitor LGK-974 for cells validation. Figure 4\u2014figure supplement 3\u2014source data 1 file presents raw data. Empty arrowhead: phosphorylated; full arrowhead: unphosphorylated protein.\n\n### RNF43 inhibits invasive properties of melanoma cells in vitro\n\nA375 and A2058 are human melanoma cell lines carrying BRAF V600E mutations that are broadly used to study WNT5A role in melanoma (Anastas et al., 2014; Connacher et al., 2017; Da Forno et al., 2008; Ekstr\u00f6m et al., 2014; Linnskog et al., 2016; Liu et al., 2018). For the purpose of our study, we chose A375 wild-type (A375) cells and their derivate with the increased metastatic potential referred to as A375 IV (Kucerova et al., 2014). Both A375 variants and A2058 express WNT5A, RNF43, and ZNRF3 (Figure 4\u2014figure supplement 2A\u2013C, I\u2013K). A375 and A375 IV secrete WNT5A and WNT11 to the culture medium, whereas A2058 produces only WNT11 (Figure 4E). WNT5A protein levels are higher and WNT11 levels lower in case of A375 IV metastatic derivate in comparison to parental A375 cell line (Figure 4E\u2032 and E\u2032\u2032). Interestingly, RNF43 expression in the A375 IV cells was significantly lower than that in the A375 parental cells (Figure 4\u2014figure supplement 2B). Expression of ZNRF3 did not differ and it was not affected by RNF43 overexpression (Figure 4\u2014figure supplement 2C). Further, A375 line has lower expression of ROR1 than IV derivate (Figure 4\u2014figure supplement 2D). A2058 cells are ROR1 and ROR2 positive with ROR1 level being higher (Figure 4\u2014figure supplement 2L and M).\n\nTo study the RNF43 function, we generated A375 cells lacking RNF43/ZNRF3 (R/Z dKO) by CRISPR/Cas9 method (sequencing results are presented in Supplementary file 1), cells stably overexpressing RNF43 (RNF43 OE) as well as A375, A2058, and additionally NRASQ61L/WT HRASG13D/G13D MelJuso -based doxycycline-inducible RNF43 TetON lines (Figure 4F). The initial characterization of A375 derivatives essentially confirmed the findings from T-REx 293 (see Figure 1), where RNF43 loss- and gain of function correlated strongly with the level of Wnt pathway activation assessed as DVL phosphorylation (Figure 4G, quantified in Figure 4\u2014figure supplement 1E and F). Total protein levels of DVL2, DVL3, as well as expression of their genes remained unaffected by the RNF43 manipulation (Figure 4\u2014figure supplement 2E\u2013H). Similarly to T-REx 293 cells, in A375 (Figure 4H), A375 IV (Figure 4I), and A2058 (Figure 4J and quantified effect of RNF43 OE on the endogenous WNT pathway activity in Figure 4\u2014figure supplement 1G and H) melanoma cells RNF43 overexpression efficiently blocked WNT5A-induced signaling. To extend the importance of our studies further, we tested the RNF43-mediated effect also in the RAS-mutant MelJuso cells. Here we also confirmed the suppression of ROR1, DVL2, and DVL3 shifts by forced RNF43 expression (Figure 4\u2014figure supplement 3A). Inducible model of A375 RNF43 TetON cells drew a similar picture (Figure 4\u2014figure supplement 3B), compared to the control cells that underwent the same procedures (Figure 4\u2014figure supplement 3C).\n\nWNT5A signaling has been related to numerous biological features that support the invasive properties of melanoma (Arozarena and Wellbrock, 2017b; O\u2019Connell and Weeraratna, 2009; Prasad et al., 2015; Weeraratna et al., 2002). To address if RNF43 affects any of these WNT5A-controlled properties, we have compared parental and RNF43-derivative melanoma cells in a panel of functional assays that included (1) wound healing assay, (2) collagen I hydrogel 3D chemotaxis assay, (3) Matrigel invasion assay, (4) invadopodia formation assay, and (5) gelatin degradation assay. Firstly, all A375, A375 IV, and A2078 cells overexpressing RNF43 showed suppressed 2D collective migration in the wound healing assay (Figure 5A\u2013E). Next, we analyzed the impact of RNF43 expression on directional invasion through the collagen I hydrogel in response to chemokines. This assay mimics the taxis of melanoma cells in body: CCL21 drives lymph nodes metastasis and CXCL12 promotes lung invasion (Figure 5F; Jacquelot et al., 2018; McArdle et al., 2016). A375 IV and A2058 cell lines showed significant response to these treatments and RNF43 blocked completely these invasion events (Figure 5G and H). Importantly, the response of A375 cells in this assay was negligible (Figure 5\u2014figure supplement 1B), confirming their decreased metastatic capacity compared to the A375 IV. In line, invasion of individual cells through the extracellular matrix (ECM) mimicking Matrigel was higher in A375 IV in comparison to A375 but in both cases reduced by RNF43 OE (Figure 5\u2014figure supplement 1D). The same is true for the number of invadopodia-specialized structures mediating adhesion and remodeling of the surrounding ECM (Eddy et al., 2017; Masi et al., 2020). A375 IV cells formed more invadopodia than A375 parental cells (Figure 5I) and cells overexpressing RNF43 formed less of them (Figure 5I). In agreement, we also observed reduced gelatin degradation activity in A375 and A375 IV cells overexpressing RNF43 (Figure 5J). Furthermore, treatment with WNT5A enhanced the gelatin degradation capacity of A375 cells, but not their RNF43-overexpressing derivate (Figure 5J). Representative images from the conducted assays are shown in Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, Figure 5\u2014figure supplement 3, Figure 5\u2014figure supplement 4. All these assays strongly support the conclusion that RNF43 acts as a strong molecular inhibitor of WNT5A-triggered proinvasive features of melanoma. Interestingly, RNF43/ZNFR3 removal did not lead to significant potentiation in these functional assays, which suggests that the noncanonical Wnt pathway-controlled pro-metastatic features of these cells are already close to its maximum. In agreement, treatment with WNT5A showed the effect only in case A375 cells in the gelatin degradation assay (Figure 5J).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013E) RNF43 reduced migration of A375 (B), A375 RNF43 TetON (C), A375 IV (D), and A2058 RNF43 TetON (E) in the wound healing assay. Wound was photographed 48 hr after scratch and presented as % of cell-free surface at the end of the experiment. Cells proliferation was suppressed by serum starvation, unpaired two-tailed t-test: *p<0.05, **p<0.01, ***p<0.001, N = 3 (B, D) or 4 (C, E). Representative photos at the end of the experiment are shown in (A) and in Figure 5\u2014figure supplement 1A. (F\u2013H) RNF43 blocked collagen I hydrogel 3D invasion in response to CCL21 (100 ng/ml) and CXCL12 (100 ng/ml) of A375 IV (G) and A2058 (H) cell lines. Cells were serum starved, collagen I (1.5 mg/ml) was overlaid and polymerized. Doxycycline was applied for RNF43 induction during starvation. After 24 hr, cells were fixed and stained for DNA (Hoechst 33342, blue) and F-actin (phalloidin, red) and imaged by confocal microscopy. Invasion index was calculated as the ratio of invaded cells at specified height to the number of noninvasive cells at the glass level, unpaired two-tailed t-test: **p<0.01, ****p<0.0001, N = 3 (G) or N = 4 (H). A375 cells did not invaded collagen I hydrogel (Figure 5\u2014figure supplement 1B). Representative photos are presented in Figure 5\u2014figure supplement 1C and C\u2032. (I) RNF43 overexpression in A375 and A375 IV decreased number of invadopodia. Quantification of the invadopodia formed by melanoma cells, based on the analysis of confocal images. Number of cortactin/F-actin double-positive puncta in the individual cells was calculated in the ImageJ software, unpaired two-tailed t-test: ***p<0.001, ****p<0.0001. Examples of confocal imaging are shown: green, phalloidin; red, cortactin; blue, DNA. See Figure 5\u2014figure supplement 2 for images from all experimental conditions. (J) Gelatin degradation assay; both A375 and A375 IV RNF43-overexpressing cell lines showed decreased capacity to locally degrade the extracellular matrix. rhWNT5A treatment induced gelatin degradation by A375 cells. Serum-starved cells were plated onto gelatin-Oregon Green-coated coverslips and incubated for 24 hr. Images obtained by Leica SP8 confocal microscope were analyzed for the presence of gelatin degradation by individual cells using ImageJ software, unpaired two-tailed t-test: *p<0.05, **p<0.01, N = 3. Example of gelatin degradation is shown; more pictures are presented in Figure 5\u2014figure supplement 3 and Figure 5\u2014figure supplement 4. Numerical data are given in Figure 5\u2014source data 1 file.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Wound healing experiment \u2013 representative photos at the experimental end point (data Figure 5B\u2013E). (B) Collagen I hydrogel chemotaxis assay A375 cell line results. After 24 hr, cells did not significantly respond to the treatments, unpaired two-tailed t-test: p>0.05, N = 3. (C, C\u2032) Representative confocal photos of collagen I hydrogel chemotaxis assay for A375 IV (C) and A2058 (C\u2032) cells (data presented in Figure 5G and H). (D, D\u2032) Matrigel invasion assay \u2013 stable RNF43 overexpression-inhibited invasive properties of the A375 and A375 IV. Serum-starved cells were plated onto Matrigel-coated porous membrane. Medium containing 20% of serum was used as chemoattractant. After 18 hr of incubation, cells were fixed in methanol, noninvaded ones were removed from the upper part of transwell insert by cotton swab. Results were normalized to 1 for the number of invaded A375 cells, unpaired two-tailed t-test: *p<0.05, N = 4. (D\u2032) Representative photos assay after crystal violet staining. Figure 5\u2014figure supplement 1\u2014source data 1 contains raw data.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Confocal imaging of A375, A375 IV, and RNF43 overexpressing and RNF43/ZNRF3 double knockout cell lines modifications. Cells were paraformaldehyde fixed, Triton X-100 permeabilized and stained for cortactin by antibody (secondary antibody Alexa 568, red) and F-actin using fluorescent phalloidin conjugate (Alexa 488, green) and TO-PRO-3 Iodide for DNA visualization (blue). Number of double-positive puncta in single cells was quantified using ImageJ software. Scale bars represent 100 \u03bcm. Results are presented in Figure 5I.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Confocal imaging of gelatin degradation assay without (Figure 5\u2014figure supplement 3) and after (Figure 5\u2014figure supplement 4) rhWNT5A treatment. Serum-starved cells were plated onto gelatin-Oregon Green (green)-coated coverslips and incubated for 24 hr. Fixed cells were stained with phalloidin-Alexa 594 for F-actin visualization (red) and TO-PRO-3 Iodide for nuclei (blue). Foci showing gelatin degradation are marked. Scale bars represent 50 \u03bcm. Experiment was repeated three times. Results are presented in Figure 5J.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Confocal imaging of gelatin degradation assay after rhWNT5A treatment. Serum-starved cells were plated onto gelatin-Oregon Green (green)-coated coverslips and incubated for 24 hr. Fixed cells were stained with phalloidin-Alexa 594 for F-actin visualization (red) and TO-PRO-3 Iodide for nuclei (blue). Foci showing gelatin degradation are marked. Scale bars represent 50 \u03bcm. Experiment was repeated three times. Results are presented in Figure 5J.\n\n### RNF43 prevents acquisition of resistance to BRAF V600E targeted therapy\n\nThe mitogen-activated protein kinase (MAPK) pathway is hyperactivated in melanoma (Davies et al., 2002) as a result of UV-induced mutations triggering constitutive activation of this signaling axis. The most common genetic aberration \u2013 BRAF V600E is a target of anti-melanoma therapy (Akbani et al., 2015; Birkeland et al., 2018; Chapman et al., 2011; Flaherty et al., 2010; Hodis et al., 2012; Shain et al., 2015). Drugs targeting mutated BRAF (e.g., vemurafenib/PLX4032) in melanoma have improved patients\u2019 survival (Chapman et al., 2011; Flaherty et al., 2010; Joseph et al., 2010). Unfortunately, patients receiving BRAF inhibitors (BRAFi) relapse after several months of monotherapy because of the acquired resistance (Nazarian et al., 2010). WNT5A was shown to play a crucial role in the process leading to the vemurafenib resistance (Anastas et al., 2014; Arozarena and Wellbrock, 2019; Mohapatra et al., 2019; O\u2019Connell et al., 2013; Prasad et al., 2015; Webster et al., 2015). Therefore, we were interested in checking whether RNF43 inhibits, via its effects on WNT5A signaling, cellular plasticity in response to vemurafenib (PLX4032), a clinically used BRAF V600E inhibitor.\n\nThe process of vemurafenib resistance acquisition can be modeled in vitro. We applied an experimental scheme optimized for A375 (Anastas et al., 2014). This model (Figure 6A) allows to study both acute responses to vemurafenib (24 hr treatment) as well as the gradual adaptation of long-term cell culture to increasing vemurafenib doses. Vemurafenib-resistant (VR) cells can be obtained after approximately 2 months. As shown in Figure 6B, treatment with vemurafenib resulted in rapid and complete inhibition of ERK1/2 phosphorylation, the readout of MAPK activation (compare lanes 1 and 2). In contrast, A375 VR cells showed constitutive ERK1/2 phosphorylation in the presence of 2 \u03bcM vemurafenib (compare lanes 2 and 3). Interestingly, transient exposition to vemurafenib resulted in the impeded phosphorylation of ROR1, DVL2, and DVL3 and increased ROR2 protein level without change in its mRNA (Figure 6B\u2013D, Figure 6\u2014figure supplement 1A and B). On the other side, VR cells displayed elevated ROR1 levels (both protein and mRNA) and increased phosphorylation of DVL2 and DVL3 (Figure 6B\u2013D, Figure 6\u2014figure supplement 1A and B). Strikingly, the expression of WNT5A was also higher in the resistant VR cells (Figure 6E). This suggests that activation of noncanonical WNT5A-induced signaling and ROR1 and ROR2 changes is indeed a part of the melanoma adaptation mechanism to vemurafenib. Therefore, we challenged A375 and its RNF43-expressing derivatives with vemurafenib. As shown in Figure 6F, exogenous RNF43 decreased colony formation and proliferation of cells seeded in low density and vemurafenib further enhanced this effect. Importantly, both A375 and A375 IV-overexpressing RNF43 completely failed to develop resistance to vemurafenib and died off during selection at 1 \u03bcM vemurafenib concentration (Figure 6G). Both A375 and A375 IV RNF43/ZNRF3 double KO cells survived selection with BRAFi but showed decreased proliferation rate. Lower proliferation of RNF43/ZNRF3 dKO cells can be caused by senescence because these cells have elevated WNT5A pathway activity (i.e., Figures 3B and 4I, Figure 4\u2014figure supplement 1E and F) and WNT5A at the same time causes a senescence-like phenotype of melanoma after exposition to vemurafenib (Webster et al., 2015). Alternatively, RNF43/ZNRF3 KO could affect also canonical Wnt/\u03b2-catenin pathway that was shown to drive distinct features of melanoma cells than the ones related to the WNT5A-specific events (Arozarena et al., 2011; Arozarena and Wellbrock, 2019; Uka et al., 2020; Webster and Weeraratna, 2013).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig6-v1.jpg)\n\n**Figure 6.:** (A) Scheme showing the experimental model used for the analysis of vemurafenib resistance (VR) acquisition. Melanoma cells are exposed to the increasing doses of the BRAF V600E inhibitor vemurafenib and following initial decrease in cell numbers recover and obtain capacity to grow in the presence of vemurafenib. (B\u2013D) Western blot analysis of the cellular responses to the acute vemurafenib treatment (0.5 \u00b5M, 24 hr) in comparison to the signaling in VR cells growing in the presence of 2 \u00b5M vemurafenib. Transient treatment resulted in decreased DVL2 and DVL3 phosphorylation and increased ROR2 signal. In VR cells, ERK1/2 is constitutively phosphorylated in the vemurafenib presence. \u03b2-actin served as a loading control. A375 VR cells showed increased activation of DVL2 and DVL3 (empty arrowheads; quantifications in C and D) and higher expression of ROR1. Unpaired two-tailed t-test: *p<0.05, **p<0.01, N = 3. Figure 6\u2014figure supplement 1A and B presents changes in ROR1 and ROR2 genes expression and quantification of ROR1 and ROR2 proteins signals. (E) Expression of WNT5A gene is elevated in the VR A375 cells in comparison to the parental line, unpaired two-tailed t-test: **p=0.0013, N = 3. Data presented are normalized to 1. Relative expression was normalized to the HSPCB and RPS13 genes (2\u2212\u0394\u0394Ct). (F) Melanoma cell lines A375 and A375 IV overexpressing RNF43 showed decreased ability to grow and form colonies when seeded in the low density. After 7 days, colonies were fixed and stained with crystal violet. Paired (vemurafenib \u2013 vs+) and unpaired (A375 vs. IV) two-tailed t-tests: *p<0.05, ****p<0.0001, N \u2265 5. (G) RNF43-overexpressing A375 and A375 IV did not develop resistance to the BRAF V600E inhibition by vemurafenib treatment. Cells were cultured for approximately 2 months in the presence of increasing doses of the inhibitor. Photos show crystal violet-stained cultures at the end of the selection process. (H) A2058 cells (marked as \u2018ctrl\u2019) were exposed to the 24 hr-long treatments with vemurafenib (2.5 \u03bcM), cobimetinib (0.1 \u03bcM), or their combination. These short treatments were compared with cells cultured for approximately 2 months in the presence of vemurafenib (5 \u03bcM; VR), cobimetinib (0.5 \u03bcM; Cob. R) or their combination (V + C R). Experiment is schematized in Figure 6\u2014figure supplement 1C\u2019. Selected proteins were analyzed by western blot. Cells chronically exposed to inhibitors showed shifts of VANGL1 and VANGL2 bands (empty arrowhead) and changes in the MITF signal. Signal of pERK1/2 was used as treatments control. \u03b2-actin signal served as a loading control, N = 3. Figure 6\u2014figure supplement 1C presents DVL2, DVL3 and total ERK1/2 signals. (I\u2013K) Expression analysis of MITF (I), RNF43 (J), and WNT5A (K) genes. MITF is significantly upregulated in cells resistant to 5 \u03bcM Vemurafenib and downregulated in cells derived from the long-term culture in the presence of 0.5 \u03bcM cobimetinib alone and in combination with vemurafenib. (I\u2032) VR A2058 show higher pigmentation. RNF43 expression decreased in the derived cells, while WNT5A increased. Relative expression levels are presented as 2\u2212\u0394\u0394Ct \u00b1 SD and normalized to the levels of B2M and GAPDH genes, unpaired two-tailed t-tests: *p<0.05, **p<0.01, N = 3. Figure 6\u2014figure supplement 1D\u2013F shows expression analysis of ZNRF3, ROR1, and ROR2. (L) RNF43-overexpressing A2058 cells did not develop resistance to the cobimetinib and its combination with vemurafenib. Cells were cultured for approximately 2 months in the presence of increasing doses of the inhibitors (up to 5 \u03bcM for vemurafenib and 0.5 \u03bcM for cobimetinib), schematized in Figure 6\u2014figure supplement 1C\u2019. Figure 6\u2014source data 1 presents raw data.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) Protein levels of ROR1 (A) and ROR2 (B) (western blot shown in Figure 6B) were quantified using ImageJ software, two-tailed t-test: *p<0.05, **p<0.01; N = 3. Expression ROR1 (A\u2032) and ROR2 (B\u2032) genes in parental, cells transiently treated with BRAFi and vermurafenib-resistant A375 cells and presented as 2\u2212\u0394\u0394Ct \u00b1 SD. Relative expression level was normalized to the HSPCB and RPS13. (C, C\u2032) Western blot analysis of 24 hr and chronic response to vemurafenib, cobimetinib, and their combination in A2058 cells, continuation of Figure 6H. Empty arrowhead represents phosphorylation-dependent shift; full arrowhead indicates unphosphorylated status. Scheme of the experiment is presented in (C\u2032). (D\u2013F) Expression of ZNRF3 (D), ROR1 (E), and ROR2 (F) genes in A2058 control cells, resistant to vemurafenib (VR), cobimetinib (Cob. R), and double treatment (V + C R). ZNRF3 expression is decreased in the all-derived cells, while ROR1 in the cobimetinib and cobimetinib + vemurafenib-resistant lines. ROR2 did not change significantly. Relative expression levels are presented as 2\u2212\u0394\u0394Ct \u00b1 SD and normalized to the levels of B2M and GAPDH genes, unpaired two-tailed t-tests: *p<0.05, **p<0.01, ***p<0.001, N = 3. Figure 6\u2014figure supplement 1\u2014source data 1 contains raw data.\n\nTo strengthen our results, we exposed A375 and A2058 parental and RNF43-expressing cells temporarily and chronically to vemurafenib, MEK inhibitor \u2013 cobimetinib and to the FDA-approved combination of these drugs (Ascierto et al., 2016; Signorelli and Shah Gandhi, 2017; experimental scheme in Figure 6\u2014figure supplement 1C\u2019). We failed to obtain A375-resistant line, but A2058 acquired resistance to cobimetinib alone and its combination with vemurafenib (Figure 6H and L). Treatments and resistance were validated by pERK1/2 levels (Figure 6H). A2058 enriched with ectopically expressed RNF43 did not survive cobimetinib monotherapy and cobimetinib with vemurafenib combination, whereas vemurafenib-only treatment did not fully eliminate those cells (Figure 6L). Thus, we aimed to detect the differences in mechanisms behind targeted therapies resistance acquisition to characterize better the function of RNF43 in melanoma. Firstly, we noticed the shift of VANGL1 in all delivered resistance models, while VANGL2 was shifted only in cells being in the long-term culture with cobimetinib and with cobimetinib and vemurafenib (Figure 6H). This corresponds with decreased RNF43 and ZNRF3 expression (Figure 6J, Figure 6\u2014figure supplement 1D) and increased WNT5A mRNA level (Figure 6K). Interestingly, both MITF protein level and MITF gene expression increased in VR cells and decreased in all cobimetinib-insensitive lines (Figure 6H and I). Moreover, MITF upregulation was accompanied by clear pigmentation of resistant cells (Figure 6I\u2032), suggesting cell phenotype change (Arozarena and Wellbrock, 2019; Ji et al., 2015; M\u00fcller et al., 2014). Expression of ROR1 decreased in case of MEKi resistance, while ROR2 remained unaffected (Figure 6\u2014figure supplement 1E and F). Contrary to A375, ROR1 did not significantly increase in VR-resistant cells and we did not detect the increased DVL2 and DVL3 phosphorylation (Figure 6\u2014figure supplement 1C).\n\nAltogether, these data confirm earlier findings on the importance of WNT5A signaling in the acquisition of resistance to targeted therapies and demonstrate that RNF43 can block this process. Moreover, we show that RNF43 could be a negative regulator of melanoma phenotype plasticity by targeting MITF-low/WNT5A-high melanoma cells (Hoek et al., 2006; Kim et al., 2017; Sensi et al., 2011; Tirosh et al., 2016).\n\n### RNF43 as onco-suppressor in vivo: impact on tumors and resistance to vemurafenib\n\nNext, we aimed to confirm our results also in the in vivo model. We decided to use cell lines with the same origin but varying in the RNF43 expression. For this purpose, A375 RNF43 TetON cells and A375 control lines (Figure 4\u2014figure supplement 3B and C) were tested by qPCR. A375 control line had the lowest expression (referred to as \u2018RNF43 low\u2019) of RNF43, and doxycycline-untreated A375 RNF43 TetON showed intermediate expression due to TetON leakage (\u2018RNF43 mid\u2019) that could be further enhanced by the doxycycline treatment (\u2018RNF43 high\u2019) (Figure 7A). Next, we prepared and tested a novel vemurafenib formulation in 25% Kolliphor-water solution ensuring the solubility of this BRAFi and which could be administrated by oral gavage in the previously published dose 25 mg/kg (Figure 7\u2014figure supplement 1A; Wang et al., 2019). Cells were injected intradermally into the NOD-Rag1null IL2rgnull mice. Animals were divided into treatment cohorts once tumors became prominent in size (Figure 7B, Figure 7\u2014figure supplement 1B). Cohort I (RNF43 low) had significantly shorter survival and formed macroscopic tumors earlier than RNF43 mid and high cohorts (Figure 7C, Figure 7\u2014figure supplement 1C). Moreover, tumors originating from cells with the lowest RNF43 expression were significantly bigger than RNF43 mid ones (Figure 7D). To validate RNF43 expression induction and impact on its targets, protein lysates from tumors were analyzed by western blotting (Figure 7\u2014figure supplement 1D). We found out that the level of RNF43-specific signal in cohorts I\u2013III was significantly and inversely correlated with ROR1 and VANGL2 protein levels and similar trend was also noticed for DVL2 phosphorylation (Figure 7E, Figure 7\u2014figure supplement 1D and E), recapitulating the described above in vitro effect also in the in vivo experiment. Importantly, we observed the RNF43 leakage (HA signal in Figure 7\u2014figure supplement 1D), meaning that TetON system did not efficiently suppress the ectopic expression of RNF43 even in the absence of doxycycline, which also provides explanation for different RNF43 levels in studied here cell lines (Figure 7A). In conclusion, the dose-dependent effect mediated by RNF43 showed the features of the onco-suppression in melanoma in vivo model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig7-v1.jpg)\n\n**Figure 7.:** (A) RT-qPCR results \u2013 expression of the RNF43 gene in control (RNF43 low) and A375 RNF43 TetON cells in the absence (RNF43 mid) and presence of doxycycline (RNF43 high). Results are presented as 2\u2212\u0394\u0394Ct \u00b1 SD, two-tailed t-test: **p<0.01, ****p<0.0001, N = 3. Relative expression level was normalized to the B2M and GAPDH genes expression. (B) Schematic representation of the in vivo experiment based in the immunodeficient NOD-Rag1null IL2rgnull mouse strain. A375 and its variants were injected intradermally (50,000 cells in PBS/mouse). Animals were divided into five cohorts once palpable tumors were formed. Ectopic RNF43 expression was induced by doxycycline presence in the drinking water. Vemurafenib was delivered daily by oral gavage as 25% Kolliphor in water formulation (see Figure 7\u2014figure supplement 1A). Tumors sizes and animal weight were checked weekly. Mice were sacrificed when tumors reached approximately 1000 mm3. (C) Survival within cohorts I\u2013III. Injection with cells having the lowest RNF43 expression led to the shortest mean survival (28 days). Experiment in cohorts II (56 days) and III (62 days) was significantly longer, Mantel\u2013Cox test: *p<0.05, **p<0.01. (D) Cells expressing RNF43 higher than the endogenous level have impaired ability to proliferation in vivo. Tumor sizes at end point for the RNF43 low cohort (N = 5) with RNF43 mid (N = 3), two-tailed t-test: *p=0.0297. (E) RNF43 negatively regulates its targets also in vivo. Correlation analysis of RNF43 western blot signals with ROR1, VANGL2 protein levels, and phosphorylation status of DVL2 (shown in Figure 7\u2014figure supplement 1D). Results for cohorts I\u2013III were analyzed (N = 12), one-tailed Spearman correlation test, p and r values are shown in the graph. (F) Survival analysis showing vemurafenib treatment efficacy. Doxycycline treatment for RNF43 induction did not increase further vemurafenib effect. Mean survival: RNF43 mid: 56 days; RNF43 mid + vemurafenib: 84 days; RNF43 high: 62 days; RNF43 high + vemurafenib: 76 days, Mantel\u2013Cox test: *p<0.05, **p<0.01. (G) RNF43 delays acquisition of vemurafenib resistance in vivo. Cohort V (N = 4) receiving doxycycline for RNF43 overexpression induction and vemurafenib (RNF43 high + vemurafenib) had significantly smaller tumors at days 49\u201362 than cohort IV (RNF43 mid + vemurafenib), tumors were not different at the treatments starting point (day 28) two-tailed t-test: *p<0.05, **p<0.01. (H) Tumor growth curve \u2013 caliper measurements of tumors sizes within experimental groups II\u2013V. Treatment starting points are marked and presented in Figure 7\u2014figure supplement 1B. All used data are presented in Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Vemurafenib formulations test for the in vivo application. Vemurafenib 2.5 mg/ml was prepared in aqueous solutions of 1% carboxymethyl cellulose (CMC), 10, 20, and 25% Kolliphor. DMSO was used as reference. Vemurafenib was added to solutions from DMSO-based saturated stock. Formulation in 25% Kolliphor was selected for further tests. (A\u2032) A375 cells were treated overnight with 1 \u03bcM vemurafenib in DMSO and in 25% Kolliphor formulation, lysed and phosphorylated ERK1/2 signal was used as readout for vemurafenib inhibitory properties. (B) Tumors sizes formed by A375 RNF43 TetON cells (RNF43 mid/high after following doxycycline supplementation) in cohorts II\u2013V at the beginning of treatments. (C) Tumor growth curve \u2013 caliper measurements of tumors sizes within experimental groups I\u2013III. (D) Western blot analysis of primary tumors at the experimental end points. Tissues were homogenized, lysed in the 1% SDS lysis buffer, sonicated and clarified by centrifugation, followed by addition of Laemmli buffer and thermal denaturation. Each sample contains 25 \u00b5g of total protein. RNF43 was probed by HA tag-specific antibody. Empty arrowhead represents phosphorylation-dependent shift; black arrowhead indicates unphosphorylated status. (E) Quantifications of tumor samples western blots. Tumors formed by RNF43 low cells had scientifically higher ROR1 (E) and VANGL2 levels (E\u2032) and higher phosphorylation of DVL2 (E\u2032\u2032) than RNF43 mid-derived tumors. RNF43 high vemurafenib-resistant cells had higher ROR1 protein level than in the RNF43 mid cohort (E). Vemurafenib treatment led to the increased WNT5A protein level in tumors at the end of the experiment (E\u2032\u2032\u2032). RNF43 low N = 5; RNF43 mid N = 3; RNF43 high N = 4; RNF43 mid + vemurafenib N = 5; RNF43 high + vemurafenib N = 4, unpaired two-tailed t-test *p<0.05, **p<0.01. All used data are presented in Figure 7\u2014figure supplement 1\u2014source data 1.\n\nFurther, we also investigated the synergistic effect of RNF43 and vemurafenib in vivo. RNF43 mid and RNF43 high cohorts received vemurafenib, and this treatment significantly prolonged the survival (Figure 7F), validating our formulation and dosing efficacy. Importantly, doxycycline supplementation (RNF43 high) in addition to vemurafenib resulted in the more efficient suppression of tumor growth, suggesting the delayed the BRAFi resistance acquisition (Figure 7G). Nevertheless, there was no difference at the experimental end point (Figure 7F and H), possibly due to the loss of transgene expression observed in cells during this long-term experiment (HA signal in Figure 7\u2014figure supplement 1D). Moreover, the protein level of WNT5A was significantly increased in tumors treated with vemurafenib, which could help to bypass the RNF43-related effect as well (Figure 7\u2014figure supplement 1E\u2032\u2032\u2032). Our main findings are summarized as a graphical abstract (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/65759/elife-65759-fig8-v1.jpg)\n\n**Figure 8.:** Graphical summary. RNF43 is an inhibitor of the noncanonical WNT5A-induced pathway. RNF43 interacts with receptor complexes of the Wnt/PCP signaling and its enzymatic activity results in the reduced cells sensitivity to WNT5A (A). In melanoma, WNT5A promotes invasion and metastasis (B) as well as resistance to targeted therapies, including treatments with vemurafenib \u2013 inhibitor of commonly mutated BRAF kinase and cobimetinib-targeting activity of the MEK enzyme (C). RNF43 blocks melanoma-invasive properties via interference with the nonconical Wnt pathway, leading to the increased sensitivity to treatment (D).\n\n## Discussion\n\nOur study identified RNF43 as an inhibitor of noncanonical WNT5A-induced signaling. RNF43 physically interacted with multiple receptor components of the Wnt/PCP pathway such as ROR1/2, VANGL1/2, or DVL1/2/3 and triggered degradation of VANGL2 and membrane clearance of ROR1, ultimately resulting in the reduced cell sensitivity to WNT5A. The newly discovered RNF43 action in WNT5A-mediated signaling seems to be mechanistically different than the well-known function in the Wnt/\u03b2-catenin pathway. For example, we observed ROR1 and VANGL2 interaction with RNF43 in the absence of DVL. In contrast, DVL seems to be essential for the activity of RNF43 in the Wnt/\u03b2-catenin pathway (Jiang et al., 2015). Further, the inhibitory action of RNF43 in WNT5A signaling could not be blocked by inhibition of lysosomal pathway, in contrast to the earlier observations in WNT/\u03b2-catenin pathway (Koo et al., 2012). On the other side, WNT5A signaling can be, similarly to Wnt/\u03b2-catenin, promoted by RNF43 inhibitors from R-SPO family. Also, in line with the earlier findings that RNF43 leads to the packing of ubiquitinated FZD to the RAB5+ endosomes (Koo et al., 2012), ROR1 is as well internalized via a clathrin-dependent mechanism into RAB5+ and RAB11+ endosomes. Interestingly, ROR1 internalization is transient. We can speculate that it represents the first step in the silencing of the noncanonical Wnt pathway, which further translates into stable inhibition, for example, via VANGL2 sequestration. It remains to be studied how RNF43 in a coordinated manner controls both WNT/\u03b2-catenin and noncanonical WNT pathways.\n\nWe demonstrate that the newly characterized RNF43-WNT5A regulatory module controls WNT5A signaling and biology in melanoma. WNT5A-induced signaling plays a crucial role in this cancer type. Up to date, 5-year survival of metastatic melanoma patients rates between 5 and 19%, depending on the location and the number of metastases (Sandru et al., 2014). Elevated expression of WNT5A associates with negative overall survival in melanoma (Da Forno et al., 2008; Luo et al., 2020; Weeraratna et al., 2002); we have observed an inverse correlation for RNF43, which was a positive prognostic factor in melanoma and got silenced as melanoma progressed. WNT5A promotes multiple proinvasive features of melanoma cells such as EMT-like process, invasion, metastasis, cell proliferation, and ECM remodeling by melanoma cells (Dissanayake et al., 2008; Dissanayake et al., 2007; Fern\u00e1ndez et al., 2016; Lai et al., 2012). Moreover, WNT5A ligand co-receptors \u2013 ROR1 and ROR2 \u2013 have been already described in melanoma as key factors driving invasion in vitro and in vivo (Fern\u00e1ndez et al., 2016; Lai et al., 2012; O\u2019Connell et al., 2013; O\u2019Connell et al., 2010). Ultimately, RNF43 overexpression here efficiently suppressed all tested pro-metastatic properties of melanoma cells associated with WNT5A and its (co)receptors. Among those, the clinically most relevant is the acquisition of resistance to BRAF inhibitor vemurafenib (Chapman et al., 2011; Flaherty et al., 2010).\n\nBRAF V600E mutation appears in up to 50% of melanoma cases, which results in the oncogenic activation of MAPK pathway (Akbani et al., 2015; Wan et al., 2004). Vemurafenib (PLX4032), a compound selectively inhibiting BRAF V600E, showed positive clinical effects in melanoma (Bollag et al., 2012; Joseph et al., 2010). Unfortunately, most of the patients develop resistance to vemurafenib treatment and progress (Chapman et al., 2011). Multiple mechanisms underlying acquisition of resistance were described (Arozarena and Wellbrock, 2019; Arozarena and Wellbrock, 2017a; Johnson et al., 2015; Luebker and Koepsell, 2019; Schmitt et al., 2019; Su et al., 2020; Su et al., 2017; Talebi et al., 2018; Tirosh et al., 2016). Among those mechanisms, WNT5A signaling has a prominent role \u2013 WNT5A expression was shown to positively correlate with vemurafenib resistance (Anastas et al., 2014; Prasad et al., 2015; Webster et al., 2015) and WNT5A treatment decreased melanoma cells\u2019 response to the vemurafenib (Anastas et al., 2014; O\u2019Connell et al., 2013). Our finding that RNF43-controlled regulatory axis could completely block the development of resistance to BRAF and also MEK inhibition further highlights the importance of WNT5A signaling in this process and uncovers a mechanism that can be explored therapeutically.\n\nPrevious studies showed that melanoma displays remarkable phenotypic plasticity upon targeted therapy (Hoek et al., 2006; Hoek and Goding, 2010; Kemper et al., 2014; Rambow et al., 2018). This is also well demonstrated in our A2058 model where vemurafenib-resistant cells become melanotic (MITFhigh), whereas cobimetinib- and especially vemurafenib/cobimetinib-double-resistant cells have MITFlow/WNT5Ahigh phenotype that is characteristic for highly invasive melanoma with the dedifferentiated phenotype (Ahn et al., 2017; Anastas et al., 2014; Arozarena and Wellbrock, 2019; Massi et al., 2020; Webster et al., 2015). Inhibition of the WNT5A pathway by RNF43 could block one of the trajectories of resistance acquisition by Darwinian selection of preexisting subpopulation (Chisholm et al., 2015), thereby promoting less metastatic phenotype (Bai et al., 2019). This is supported by our observation that vemurafenib-treated A2058 cells can partially overcome RNF43 OE by phenotypic switch to MITFhigh phenotype, which is not the case in cobimetinib-treated cells. From the other angle, the low RNF43 expression might be explored as a marker of resistant melanoma phenotype. RNF43 is a \u03b2-catenin target gene (Takahashi et al., 2014), which could be a reason for the low RNF43 levels in metastatic melanomas where Wnt/\u03b2-catenin signaling is inhibited (Arozarena et al., 2011; Kageshita et al., 2001; Uka et al., 2020). Altogether, we provide evidence that RNF43 can act as a tumor suppressor and a negative regulator of the acquisition of the resistance to the targeted therapy.\n\nThe relevance of our findings is likely not limited to melanoma. Signaling cascade RSPO\u2013LGR4/5\u2013RNRF43/ZNRF3 has been shown to regulate a variety of biological processes. In light of our results, it is tempting to speculate that WNT5A-RNF43 axis regulates other developmental, physiological, and pathophysiological conditions. For example, WNT5A is overexpressed in gastric cancer where it positively correlates with the presence of lymph node metastasis, tumor depth, EMT induction, and poor prognosis (Astudillo, 2020; Hanaki et al., 2012; Kanzawa et al., 2013; Kurayoshi et al., 2006; Nam et al., 2017; Saitoh et al., 2002). Notably, reduced RNF43 function is a negative prognosis factor in gastric cancer patients (Gao et al., 2017; Neumeyer et al., 2019a; Niu et al., 2015) and RNF43 loss-of-function type of mutation exacerbated Helicobacter pylori-induced gastric tumor carcinogenesis associated with the upregulation of WNT5A mRNA level (Katoh, 2007; Li et al., 2014; Neumeyer et al., 2019b; Peek and Crabtree, 2006). Further, in colorectal cancer, RNF43 mutations were found to associate with BRAF V600E mutation (Matsumoto et al., 2020; Yan et al., 2017). These results suggest the existence of a more universal functional WNT5A-RNF43 axis where RNF43 acts as a gatekeeper guarding the abnormal pro-cancerogenic noncanonical Wnt pathway activation.\n\nFurther exciting avenues relate to the importance of RSPO-RNF43/ZNRF3 module in the regulation of multiple developmental processes dependent on WNT5A. There are literature hints that suggest that indeed WNT5A signaling is fine-tuned by RNF43/ZNRF3 during convergent extension movements. The regulation of Rspo3 has been proven in Xenopus embryogenesis, where it regulates gastrulation movements and head cartilage morphogenesis in a manner involving Wnt5a and Syndecan-4 binding by R-spondin. Strikingly, Rspo3 antisense morpholino caused a phenotype characteristic for the noncanonical Wnt signaling pathway \u2013 spina bifida (Ohkawara et al., 2011). Similarly, overexpression of Znrf3 in zebrafish embryos caused shortened body axis and abnormal shape of somites, phenotypes also recognized as typical for Wnt/PCP pathway perturbances (Hao et al., 2012). And, finally in mammals, a fraction of Znrf3 KO mice showed an open neural tube phenotype (Hao et al., 2012), again reminiscent of defective Wnt/PCP signaling. Altogether, these observations, together with our data, suggest that RSPO-RNF43/ZNRF3 signaling represents an evolutionary conserved and widely used mechanism used to control the activation of noncanonical WNT signaling.\n\n## Materials and methods\n\n### 1. Cell lines and treatments\n\nT-REx-293 (R71007, Thermo Fisher Scientific), GFP labeled human melanoma A375 wild-type (A375) and its metastatic derivates A375 IV (Kucerova et al., 2014), A2058 (ECACC 91100402), and MelJuso (\u0160t\u011btkov\u00e1 et al., 2020) (kindly gifted by Stjepan Uldrijan) cell lines were propagated in the Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, 41966-029, Gibco, Life Technologies) supplemented with the 10% fetal bovine serum (FBS, 10270-106, Gibco, Life Technologies), 2 mM L-glutamine (25030024, Life Technologies), 1% penicillin-streptomycin (XC-A4122/100, Biosera) under 5% (vol/vol) CO2 controlled atmosphere at 37\u00b0C. Routine checks for mycoplasma contamination were performed. For inhibition of endogenous Wnt ligands, cells were treated with the 0.5 \u03bcM Porcupine inhibitors C-59 (ab142216, Abcam) or 1 \u03bcM LGK-974 (1241454, PeproTech). The time points and doses have been chosen based on the purpose of the experiment. Changes in the phosphorylation of the WNT5A-downstream proteins in the noncanonical Wnt pathway transduction have been analyzed after 3 hr with the recombinant human WNT5A (645-WN, R&D Systems) in doses 40\u2013100 ng/ml as given in the figure legends. Longer stimulation (overnight and longer) has been used in the functional experiments. For canonical Wnt signaling activation, the recombinant human WNT3A (5036-WN, R&D Systems) was used overnight in 40 ng/ml, 60 ng/ml, or 80 ng/ml concentrations. Co-treatment with the recombinant human R-Sponidin-1 (120-38, PeproTech) in 50 ng/ml dose was applied where indicated. Dansylcadaverine (D4008, Sigma-Aldrich) 50 \u00b5M treatment along with 3 hr tetracycline was applied to block clathrin-dependent endocytosis pathway (Blitzer and Nusse, 2006).\n\nFor preparation of stable cell lines, antibiotic selection after plasmid DNA transfection was performed using 5 \u03bcg/ml blasticidin S (3513-03-9, Santa Cruz Biotechnology) or 200 \u03bcg/ml of hygromycin B (31282-04-9, Santa Cruz Biotechnology) for T-REx-293 cells and accordingly 400 \u03bcg/ml and 5 \u03bcg/ml in case of A375 melanoma cell line. As a result, tetracycline-inducible T-REx-293 RNF43 and RNF43 Mut1 TetON, T-REx-293 RNF43/ZNRF3 dKO RNF43 TetON, A375+ RNF43, and A375 IV + RNF43 were obtained. A2058 RNF43 TetON, MelJuso RNF43 TetON A375 RNF43 TetON, and A375 TetON ctrl (not expressing exogenous RNF43) cells were obtained by lentiviral transduction of doxycycline-inducible pCW57-RNF43 (blast) plasmid encoding HA- and FLAG- tagged RNF43, using published protocol (Barta et al., 2016), followed by 5 \u03bcg/ml blasticidin S selection and limiting dilution.\n\nT-REx-293 DVL1/2/3 tKO cells were described previously (Pacl\u00edkov\u00e1 et al., 2017). For transgene expression induction (TetON), T-REx-293 cells were treated with 1 \u03bcg/ml of tetracycline (60-54-8, Santa Cruz Biotechnology) for the indicated time (3 hr to overnight) and melanoma cells were induced overnight by 1 \u03bcg/ml doxycycline (HY-N0565B, MedChem Express). Lysosomal degradation pathway was blocked by the 10 \u03bcM chloroquine (C662, Sigma) treatment, whereas 10 \u03bcM MG-132 (C2211, Sigma) was used for the proteasome inhibition. Generation of the melanoma cells resistant to vemurafenib (HY-12057, MedChem Express) and cobimetinib (HY-13064, MedChem Express) was performed according to the published protocols (Anastas et al., 2014). Resistant cells were cultured in the presence of 2 \u03bcM (A375) and 5 \u03bcM (A2058) of vemurafenib and 0.5 \u03bcM cobimetinib or their combination (A2058). For transient treatments (24 hr) of melanoma cell lines, 0.5 \u03bcM vemurafenib has been used (A375) or 2.5 \u03bcM of vemurafenib and 0.5 \u03bcM of cobimetinib (A2058).\n\n### 2. Plasmids/cloning\n\nBackbone of the plasmid pcDNA4-TO-RNF43-2xHA-2xFLAG (kindly gifted by Bon-Kyoung Koo together with pcDNA4-TO-RNF43Mut1-2xHA-2xFLAG; Koo et al., 2012) was used for further cloning. Briefly, for generation of the BioID-inducible pcDNA4-TO-RNF43-BirA*-HA plasmid, cDNA encoding RNF43 without stop codon was amplified by the PCR and cloned into the pcDNA3.1 MCS-BirA(R118G)-HA (Addgene plasmid #36047; RRID:Addgene_36047) using HpaI (ER1031, Thermo Fisher Scientific) and EcoRI (ER0271, Thermo Fisher Scientific) restriction enzymes to fuse it in frame with the BirA*-HA sequence. Then, RNF43-BirA*-HA cDNA was amplified and cloned by the In-Fusion cloning method (639690, Takara Bio) into linearized by HindIII (ER0501, Thermo Fisher Scientific) and XbaI (ER0681, Thermo Fisher Scientific) pcDNA4-TO plasmid. To eliminate BirA* enzyme-mediated potential false-positive results, pcDNA3-RNF43-HA was prepared by subcloning RNF43 PCR product containing HA encoding sequence in the reverse primer to the pcDNA3 backbone (Invitrogen). pCW57-RNF43 (blast) plasmid was obtained by RNF43-HA-FLAG cDNA cloning into the EcoRI site of the pCW57-MCS1-P2A-MCS2 (Blast) backbone (Addgene #80921; RRID:Addgene_80921) by the In-Fusion cloning method. All obtained plasmids were verified by the Sanger sequencing method.\n\nOther plasmids used were described previously and included myc-Vangl1, GFP-Vangl2, GFP-Vangl2\u0394N, GFP-Vangl2\u0394C, GFP-Vangl2\u0394N\u0394C (Belotti et al., 2012), pLAMP1-mCherry (Addgene #45147), pEGFP-C1-Rab5a (Chen et al., 2009), GFP-rab11 WT (Addgene #12674), His-ubiquitin (Tauriello et al., 2010), pcDNA3-Flag-mDvl1 (Tauriello et al., 2010), pCMV5-3xFlag Dvl2 (Addgene #24802), pCDNA3.1-Flag-hDvl3 (Angers et al., 2006), pcDNA3.1-hROR1-V5-His (gifted by Kate\u0159ina Tm\u011bjov\u00e1), pcDNA3-Ror2-Flag and pcDNA3-Ror2-dCRD-FLAG (Sammar et al., 2004), pRRL2_ROR1\u0394CYTO and pRRL2_ROR1\u0394Tail (Gentile et al., 2011), hCas9 (Addgene #41815), gRNA_GFP-T1 (Addgene #41819), and PiggyBack-Hygro and Transposase coding plasmids (gifted by Bon-Kyoung Koo). Sequences of primers used for cloning are presented in Table 1.\n\n**Table 1.**\n Cloning and mutagenesis primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer</th>\n      <th>Sequence</th>\n      <th>Purpose</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RNF43 BirA*F</td>\n      <td>ATGCAGTTAACATGAGTGGTGGCCACCAGCTG</td>\n      <td rowspan=\"2\">RNF43 cDNA cloning into pcDNA3.1 MCS-BirA(R118G)-HA</td>\n    </tr>\n    <tr>\n      <td>RNF43 BirA*R</td>\n      <td>ATGCAGAATTCCACAGCCTGTTCACACAGCTCCT</td>\n    </tr>\n    <tr>\n      <td>RNF43 InFusion F</td>\n      <td>GTTTAAACTTAAGCTTATGAGTGGTGGCCACCAG</td>\n      <td rowspan=\"2\">RNF43-BirA(R118G)-HA into pcDNA4</td>\n    </tr>\n    <tr>\n      <td>RNF43 InFusion R</td>\n      <td>AAACGGGCCCTCTAGACTATGCGTAATCCGGTACA</td>\n    </tr>\n    <tr>\n      <td>RNF43-HA F</td>\n      <td>TTAAAGCTTATGAGTGGTGGCCACCAG</td>\n      <td rowspan=\"2\">RNF43-HA cloning into pcDNA3</td>\n    </tr>\n    <tr>\n      <td>RNF43-HA R</td>\n      <td>ATCGATATCTCAAGCGTAATCTGGAACATCGTATGGGTACACAGCCTGTTCACACAGCT</td>\n    </tr>\n    <tr>\n      <td>pCW57-RNF43 InFusion F</td>\n      <td>ATTGGCTAGCGAATTATGAGTGGTGGCCACCAGC</td>\n      <td rowspan=\"2\">pCW57-RNF43 generation</td>\n    </tr>\n    <tr>\n      <td>pCW57-RNF43 InFusion R</td>\n      <td>CGGTGTCGACGAATTTCAGGCGTAGTCGGGCACG</td>\n    </tr>\n  </tbody>\n</table>\n\n### 3. CRISPR/Cas9\n\nFor targeting RNF43 and ZNRF3 in the T-Rex-293, gRNAs TGAGTTCCATCGTAACTGTGTGG (PAM) and AGACCCGCTCAAGAGGCCGGTGG were cloned into gRNA_GFP-T1 backbone and transfected together with PiggyBack-Hygro and Transposase coding plasmids using polyethylenimine (PEI) in a way described below. For ROR1 and WNT5A knockout cell lines generation, gRNA CCATCTATGGCTCTCGGCTGCGG (ROR1) and AGTATCAATTCCGACATCGAAGG (WNT5A) were used. Transfected cells were hygromycine B selected and seeded as single cells. Genomic DNA isolation was performed using DirectPCR Lysis Reagent (Cell) (Viagen Biotech), Proteinase K (EO0491, Thermo Fisher Scientific), and DreamTaq DNA Polymerase (EP0701, Thermo Fisher Scientific) according to the manufacturer\u2019s instructions. PCR products were analyzed by restriction digestion using Taal (ER1361, Thermo Fisher Scientific) in case of RNF43, HpaII (ER0511, Thermo Fisher Scientific) \u2013 ZNRF3, TaqI (ER0671, Thermo Fisher Scientific) \u2013 WNT5A and TseI (R0591S, New England BioLabs) \u2013 ROR1 for detection of Cas9-mediated disruptions in the recognition sites.\n\nFor targeting RNF43/ZNRF3 in the A375 and in the A375 IV melanoma lines, gRNAs AGTTACGATGGAACTCATGG (RNF43) and CTCCAGACAGATGGCACAGTCGG (ZNRF3) were accordingly cloned by described protocol into the pU6-(BbsI)CBh-Cas9-T2A-mCherry (Addgene #64324) and pSpCas9(BB)-2A-GFP (PX458) (Addgene #48138) backbones, transfected and sorted as single, GFP, and mCherry double-positive cells. These were then analyzed by restriction enzymes Hin1II (ER1831, Thermo Fisher Scientific) and Taal as described above. Finally, PCR products were sequenced using the Illumina platform and compared with the reference sequence (Malcikova et al., 2015). Sequencing results are presented in Supplementary file 1.\n\n### 4. RNF43 BioID analysis\n\nData are available via ProteomeXchange (Deutsch et al., 2020) with identifier PXD020478 in the PRIDE database (Perez-Riverol et al., 2019). The analysis of the mass spectrometric RAW data files was carried out using the MaxQuant software (version 1.6.2.10) using default settings unless otherwise noted. MS/MS ion searches were done against modified cRAP database (based on http://www.thegpm.org/crap) containing protein contaminants like keratin, trypsin, etc., and UniProtKB protein database for Homo sapiens (ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640_9606.fasta.gz; downloaded 19.8.2018, version 2018/08, number of protein sequences 21,053). Oxidation of methionine and proline, deamidation (N, Q) and acetylation (protein N-terminus) as optional modification, carbamidomethylation (C) as fixed modification, and trypsin/P enzyme with two allowed miss cleavages was set. Peptides and proteins with FDR threshold <0.01 and proteins having at least one unique or razor peptide were considered only. Match between runs was set among all analyzed samples. Protein abundance was assessed using protein intensities calculated by MaxQuant. Protein intensities reported in proteinGroups.txt file (output of MaxQuant) were further processed using the software container environment (https://github.com/OmicsWorkflows, Kristina, 2021), version 3.7.2 a. Processing workflow is available upon request. Briefly, it covered (1) removal of decoy hits and contaminant protein groups, (2) protein group intensities log2 transformation, (3) LoessF normalization, (4) imputation by the global minimum, and (5) differential expression using LIMMA statistical test. Prior to volcano plot plotting, suspected BirA* binders were filtered out (proteins identified by at least two peptides in both technical replicates of particular BirA* sample, and present in more than three samples). Volcano plot was created in R using ggplot2 and ggrepel R packages by R version 3.6.1. Proteins with an adjusted p-value < 0.05 and log fold change >1 were further subjected to gene ontology tools, considering only the first ID of majority protein IDs: g:Profiler online tool (https://biit.cs.ut.ee/gprofiler/gost, version e98_eg45_p14_ce5b097; Raudvere et al., 2019) was used and selected GO terms were highlighted. RNF43 interactors from BioID assay are listed in Figure 1\u2014source data 1, and the results obtained by g:Profiler are presented in Figure 1\u2014source data 2.\n\n### 5. Transfection\n\nT-REx-293 cells were transected using 1 \u03bcg/ml, pH 7.4 PEI, and plasmid DNA in a 4:1 ratio (Pacl\u00edkov\u00e1 et al., 2017). Plasmid DNA were in amount of 3 \u00b5g for 6 cm culture dish (ubiquitination assay) and 6 \u00b5g for 10 cm dish (co-immunoprecipitation or stable cell lines preparation). Approximately 1 \u00d7 106 of A375 and A375 IV cells were electroporated with 6 \u03bcg of plasmid DNA utilizing Neon Transfection System (Thermo Fisher Scientific) 1200 V, 40 ms, 1 pulse. Culture media were changed 6 hr post-transfection.\n\n### 6. His-ubiquitin pulldown assay\n\nCells were transfected with the plasmid encoding polyhistidine-tagged ubiquitin, RNF43-HA, or enzymatically inactive RNF43, protein of interest, and cultured overnight. Next, cells were treated with 0.2 \u00b5M epoxomicin (E3652, Sigma) for 4 hr and lysed in the buffer containing 6 M guanidine hydrochloride (G3272, Sigma), 0.1 M NaxHxPO4 pH 8.0, and 10 mM imidazole (I5513, Sigma), sonicated, and boiled. Insoluble fraction was removed by the centrifugation (16,000 g, room temperature [RT], 10 min). For the pull down of tagged proteins, 10 \u00b5l of equilibrated in lysis buffer His Mag Sepharose beads Ni (GE28-9799-17, GE Healthcare) was added to each sample and kept on a roller overnight. Then, the beads were washed three times in the buffer containing 8 M urea (U5378, Sigma), 0.1 M NaxHxPO4 pH 6.3, 0.01 M Tris, and 15 mM imidazole, resuspended in 100 \u03bcl of western blot sample buffer, boiled for 5 min, and loaded onto SDS-PAGE gel. Approximately 10% of cellular lysate was used as a transfection control after ethanol precipitation and resuspension in the western blot sample buffer.\n\n### 7. Western blotting and antibodies\n\nWestern blot analysis was performed as described before using samples with the same protein amount, measured by the DC Protein Assay (5000111, Bio-Rad), or lysed directly in the sample buffer (2% SDS, 10% glycerol, 5% \u03b2-mercaptoethanol, 0.002% bromophenol blue, and 0.06 M Tris HCl, pH 6.8) and protease inhibitor cocktail (11836145001, Roche) after PBS wash (Mentink et al., 2018). Protein extraction from mouse tissues was done by homogenizing in the 1% SDS, 100 mM NaCl, 100 mM Tris, pH 7.4 buffer, sonication, clarification by centrifugation (16,000 g, 4\u00b0C, 15 min), and protein concentration measurement. Next, volumes of samples containing the same protein amounts were mixed with western blot sampling buffer and loaded onto SDS-PAGE gels. Briefly, after electrophoretic separation, proteins were transferred onto Immobilon-P PVDF Membrane (IPVH00010, Millipore) and detected using primary and corresponding HRP-conjugated secondary antibodies on Fusion SL imaging system (Vibler) using Immobilon Western Chemiluminescent HRP Substrate (Merck, WBKLS0500). Molecular size of the bands is marked in each panel (kDa). A list of used antibodies is presented in Appendix 1\u2014key resources table. Shifts of ROR1, ROR2, DVL2, DVL3, VANGL1, and VANGL2 are marked by arrowheads. Empty arrowhead marks phosphorylation-dependent shift. Densitometric analysis of western blot signals was performed using ImageJ software. Activation level of DVL2 and DVL3 (Bryja et al., 2007a) is presented as the ratio of intensities of upper band; representing active \u2013 phosphorylated protein fraction and lower band (black arrowhead; unphosphorylated). Total DVL2 and DVL3 levels were quantified as the sum of two bands intensities.\n\n### 8. Immunofluorescence and confocal microscopy\n\nCells growing on the glass were fixed in 4% paraformaldehyde (PFA) in PBS. Fixed cells were permeabilized by 0.1% Triton X-100 in PBS and blocked in 1% solution of bovine serum albumin (BSA) in PBS. Then, samples were incubated overnight at 4\u00b0C with primary antibodies diluted in 1% BSA in PBS and washed. Corresponding Alexa Fluor secondary antibodies (Invitrogen) were incubated with samples for 1 hr at RT, along with 1 \u00b5g/ml Hoechst 33342 (H1399, Thermo Fisher Scientific) for nuclei staining. After PBS washes, the samples were mounted in the DAKO mounting medium (S3023, DAKO). Images were taken on the confocal laser scanning microscopy platform Leica TCS SP8 (Leica). For co-localization analysis, histograms for each channel were prepared in LAS X Life Science (Leica) software and plotted in GraphPad Prism 8. Co-localization is marked by arrowheads.\n\n### 9. Immunoprecipitation\n\nT-REx-293 cells were transfected with the proper plasmid DNA and cultured for 24 hr. Then, cells were washed two times with PBS and lysed for 15 min in the buffer containing 50 mM Tris pH7.6, 200 mM NaCl, 1 mM EDTA, 0.5% NP40, fresh 0.1 mM DTT (E3876, Sigma) and protease inhibitor cocktail (04693159001, Roche). Insoluble fraction was removed by centrifugation (16,000 g, RT, 15 min), 10% of total cell lysate was kept as western blot control. Lysates were incubated with 1 \u03bcg of antibody for 16 hr at 4\u00b0C on the head-over-tail rotator. Next, 20 \u03bcl of protein G-Sepharose beads (17-0618-05; GE Healthcare) equilibrated in complete lysis buffer were added to each sample and incubated for 4 hr at 4\u00b0C, following six washes using lysis buffer and resuspension in 100 \u03bcl of western blot sample buffer. Immunoprecipitation experiments were analyzed by the western blot.\n\n### 10. Flow cytometric determination of ROR1 surface expression\n\nDetermination of the ROR1 surface expression of T-REx-293 and its derivates was done using anti-ROR1-APC (#130-119-860, Miltenyi Biotec) and Accuri C6 (BD Biosciences) (RNF43/ZNRF3 dKO cells) or using BD FACSVerse Flow Cytometer (BD Biosciences) (TetON cells). Cells were harvested in 0.5 mM EDTA/PBS, washed in PBS, and incubated in 2% FBS in PBS with anti-ROR1-APC antibody (1:25, #130-119-860, Miltenyi Biotec) on ice for 30 min. The cells were washed and resuspended in PBS, and incubated with propidium iodide (10 ng/ml, #81845, Sigma-Aldrich) for 5 min to exclude dead cells from analysis. For the detection of ROR1 surface expression in HA-positive cells, ROR1-APC-stained cells were washed in PBS, fixed in 4% PFA at RT for 15 min, permeabilized in 0.02% Triton X-100 at RT for 15 min, and incubated with anti-HA antibody (1:1000, #9110, Abcam) in staining buffer at RT for 30 min. After two washes, cells were incubated with secondary antibody ALEXA Fluor 488 Donkey anti-Rabbit (#A21206, Invitrogen) at RT for 20 min, washed, and measured using FACS Verse (BD Biosciences). Data were analyzed using NovoExpress Software (ACEA Biosciences).\n\n### 11. Quantitative polymerase chain reaction (qPCR)\n\nMessenger RNA was isolated using the RNeasy Mini Kit (74106; Qiagen) according to the manufacturer\u2019s instructions. 1 \u03bcg of mRNA was transcribed to cDNA by the RevertAid Reverse Transcriptase (EP0442, Thermo Fisher Scientific) and analyzed by use of LightCycler 480 SYBR Green I Master (04887352001, Roche) and LightCycler LC480 (Roche). Results are presented as 2\u2212\u0394\u0394CT and compared by unpaired Student\u2019s t-test. Mean expression of B2M and GAPDH or HSPCB and RPS13 (A375 VR cells) was used as reference. Primers are listed in Appendix 1\u2014key resources table.\n\n### 12. Databases\n\nRNF43, VANGL1, and DVL3 gene expression in different melanoma stages was analyzed through Oncomine (RRID:SCR_007834; Rhodes et al., 2004) database in the different datasets (Talantov et al., 2005, Xu et al., 2008, Haqq et al., 2005). OncoLnc (Anaya, 2016) database was employed to elucidate whether the expression of the RNF43, ZNRF3, VANGL1, and DVL3 gene expression has a significant impact on the melanoma patients\u2019 overall survival. RNF43 BioID data are available via ProteomeXchange (RRID:SCR_004055; Deutsch et al., 2020) in the PRIDE database (PXD020478) (RRID:SCR_003411; Perez-Riverol et al., 2019).\n\n### 13. Wound healing assay, Matrigel invasion assay, fluorescent gelatin degradation assay, invadopodia formation assay, and collagen I hydrogel 3D invasion assay\n\nFor the determination of cellular motility and invasive properties in vitro wound healing (O\u2019Connell et al., 2008), Matrigel invasion towards 20% FBS as chemoattractant followed by crystal violet staining of invaded cells, fluorescent gelatin degradation in the presence of 5% FBS after overnight starvation, and invadopodia formation assays were prepared according to the established protocols (Makowiecka et al., 2016). The wound gap was photographed using the Olympus ix51 inverted fluorescence microscope after 48 hr from scratch. Percentage of the cell-free surface was measured by ImageJ software. For the fluorescent gelatin degradation assay purpose, 80 ng/ml of rhWNT5A was used during 16 hr of cells\u2019 incubation on the coverslips coated with gelatin-Oregon Green conjugate (G13186, Thermo Fisher Scientific). Alexa Fluor 594 phalloidin (A12381, Thermo Fisher Scientific) and TO-PRO-3 Iodide (642/661) were employed for the cells\u2019 visualization on confocal microscopy platform Leica TCS SP8. For the invadopodia formation assay, an immunofluorescence imaging protocol employing phalloidin and anti-cortactin antibody was performed. Invadopodia \u2013 as structures double positive for F-actin and cortactin staining \u2013 was quantified for tested cell lines and conditions and presented as the number of invadopodia per one cell. Two independent repetitions were performed.\n\nCollagen I hydrogel 3D invasion assay is a modification of the inverted vertical invasion assay (McArdle et al., 2016). Cells were plated on the \u00b5-Slide 8 Well glass bottom coverslips (80827, Ibidi). At 80% confluence, the full medium was replaced with one containing 0.5% FBS for proliferation suppression. Doxycycline for RNF43 induction was applied at this step when needed. Next day, a solution of rat tail collagen type I in final concentration 1.5 mg/ml prepared accordingly to the manufacturer\u2019s protocol was overlaid over the cells and left for polymerization for 30 min at 37\u00b0C, 5% CO2. Then medium with final FBS concentration 10% and 100 ng/ml CXCL12 (350-NS, R&D Systems) or 100 ng/ml CCL21 (366-6C, R&D Systems) was added to the wells. After 24 hr, cells were PFA fixed, permeabilized, and stained with Hoechst 33342 (H1399, Thermo Fisher Scientific) and Alexa Fluor 594 phalloidin. Corresponding photos at the coverslip level and at 50 \u03bcm (A375 and A2058) or 70 \u03bcm (A375 IV) were taken using a confocal laser scanning microscopy platform Leica TCS SP8 (Leica). Invasion index was calculated as the ratio of invaded cells at a specified height to the number of noninvasive ones.\n\n### 14. Colony formation assay\n\nTo assess the ability of colony formation in the presence of 0.3 \u03bcM vemurafenib, 300 of the melanoma cells were plated onto 24-well plate and were subsequently cultured for 7 days. After that time, the medium was removed and colonies were washed in PBS, fixed in the ice-cold methanol for 30 min, and stained with 0.5% crystal violet in 25% methanol. After washing and drying, bound crystal violate was eluted with 10% acetic acid and absorbance at 590 nm was measured on Tecan Sunrise plate reader. Results were normalized to the nontreated A375 wild-type results.\n\n### 15. Animal studies\n\nAnimal experiments were approved by the Academy of Sciences of the Czech Republic (AVCR 85/2018), supervised by the local ethical committee, and performed by certified individuals (Karel Sou\u010dek, Mark\u00e9ta P\u00edckov\u00e1, R\u00e1chel V\u00edchov\u00e1).\n\nA375 ctrl and A375 RNF43 TetON cells were implanted as a suspension of 50,000 cells in 50 \u03bcl saline intradermally into 9-week-old males of NOD-Rag1null IL2rgnull strain, obtained from Jackson Laboratory. Animals were checked daily, and weight and tumors sizes were measured weekly along perpendicular axes using an external caliper. Tumor volumes were calculated using the equation volume = \u00bd (length \u00d7 width2). Upon tumor establishment, animals were divided into five cohorts based on administered cells and treatment: (I) A375 ctrl + vemurafenib (N = 5); (II) A375 RNF43 TetON Dox - (N = 3); (III) A375 RNF43 TetON Dox + (N = 4); (IV) A375 RNF43 TetON VEMURAFENIB Dox - (N = 5); and (V) A375 RNF43 TetON VEMURAFENIB Dox + (N = 4). Doxycycline supplemented for RNF43 expression induction was administrated in drinking water, 0.2 mg/ml in 0.1% weight:volume sucrose. Control cohort obtained drinking water with 0.1% sucrose. Vemurafenib was supplemented daily by oral gavage in concentration of 25 mg/kg/day as freshly prepared formulation in 25% Kolliphor ELP (61791-12-6, Sigma-Aldrich) with 2.5% DMSO. Animals not treated with vemurafenib received the same formulation without inhibitor. Mice were sacrificed when tumors reached approximately 1000 mm3. Tumor samples were analyzed by western blot, and the times to reach the experimental end point was compared.\n\n### 16. Software and statistics\n\nStatistical significance was confirmed by two-tailed paired or unpaired Student\u2019s t-tests. Survival was analyzed by Mantel\u2013Cox test. Correlation between RNF43(HA) protein level and its targets in the in vivo experiments was tested by one-tailed Spearman correlation test. Statistical significance levels were defined as *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All statistical details including the number of biological or technical replicates can be found in each figure legend. Statistical analysis and data visualization were performed in GraphPad Prism 8.0 software. Graphs are presented with error bars as \u00b1 SD if not stated differently in the figure legends.\n",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8a41abc8-aa83-4200-97ac-ebea443397f8",
+      "submission_id": "db13e569-9ca3-4d34-bc34-7579af610af6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65759.sa1](https://doi.org/10.7554/eLife.65759.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nThis study will be of interest to scientists studying pathways involved in cancer metastasis, as it reveals a novel regulatory mechanism involved in cancer cell invasion. Here, the authors have shown that RNF43, a ubiquitin ligase, can regulate non-canonical Wnt signaling through influencing turnover of ROR1 and ROR2, co-receptors found on the surface of cells involved in Wnt signaling. Expression of RNF43 in melanoma cell lines blocks their invasive properties, prevents resistance to BRAF and MEK inhibitors, and improves response to targeted therapies in vivo. Therefore, RNF43 is a newly discovered negative regulator of WNT5A-mediated biological responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"RNF43 inhibits WNT5A driven signaling and suppresses melanoma invasion\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Erica Golemis as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nThe reviewers have discussed with each other and have agreed that some major issues that would need to be addressed before publication in eLife.\n\nMajor Points:\n\n1. in vivo experiments would be needed to show the effect of RNF43 in the context of resistance to vemurafenib. If these cannot be performed, amend the title of the paper to better reflect the experiments performed, as at the moment it refers to melanoma invasion.\n\n2. The number of cell lines used is not sufficient. All reviewers noted that, in order to rule out cell-line specific effects, the effects of RNF43 on the WNT5A pathway and their functional relevance should be tested in at least one additional melanoma cell line. One reviewer noted that \"The findings in melanoma are weakened by the fact that only 1 pair of isogenic cell lines is used. An additional distinct cell line would greatly strengthen the paper findings and impact.\" It is essential to perform these experiments in additional melanoma cell models.\n\n3. Mechanistic function of RNF43. Please provide data to clarify the following points:\n\n\u2013 The authors mention that RNF43 ubiquitination of VANGL2 leads to downregulation of ROR1. Does it also lead to a downregulation of ROR2, in melanoma cells?\n\n\u2013 What happens to WNT5A expression in the RNF43-KO cell lines (A375 WT and A375 WT VR)?\n\n\u2013 What causes a loss of expression of RNF43 during melanoma progression?\n\n4. Figure 5A. How do the authors address the lack of effect, on migration, in A375 IV overexpressing RNF43? Also, what statistical test was used to compare the graphs? There is one line comparing 48 h in A375 WT +/- RNF43 showing a difference, but it is difficult to tell if there is a difference between A375 IV without and with overexpression of RNF43.\n\n\u2013 Figure 5B and 5C. What is the explanation for the lack of effect of RNF43 KO?\n\n\u2013 Figure 6F. How do the authors explain the increase in sensitivity to vemurafenib following RNF43 KO?\n\n5. Due to the clinical relevance of combined treatment, it would be more appropriate to test the effects of RNF43 in the context of BRAF and MEK inhibition, rather than BRAF inhibition alone. Please add these experiments.\n",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4b0ea5ce-19d3-4bd0-b7e1-a02076c72f09",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C1",
+      "claim": "RNF43 is an E3 ubiquitin ligase and known negative regulator of WNT/\u03b2-catenin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 is an E3 ubiquitin ligase and known negative regulator of WNT/\u03b2-catenin signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ccf21318-0b41-4e07-8706-6c0c687b54a6",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C2",
+      "claim": "RNF43 is a regulator of noncanonical WNT5A-induced signaling in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that RNF43 is also a regulator of noncanonical WNT5A-induced signaling in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated through multiple experiments in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "4210d231-0e1c-4d48-830c-c87863c9a990",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C3",
+      "claim": "RNF43 can interact with ROR1, ROR2, VANGL1, and VANGL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the RNF43 interactome using BioID and immunoprecipitation showed that RNF43 can interact with the core receptor complex components dedicated to the noncanonical Wnt pathway such as ROR1, ROR2, VANGL1, and VANGL2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BioID mass spectrometry data (Figure 1D) and co-immunoprecipitation experiments (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "eb853e9d-5567-4aa3-a5d6-2a74295e8e47",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C4",
+      "claim": "RNF43 triggers VANGL2 ubiquitination and proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 triggers VANGL2 ubiquitination and proteasomal degradation and clathrin-dependent internalization of ROR1 receptor and inhibits ROR2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by His-ubiquitin pulldown assays (Figure 3A) and proteasome inhibitor experiments (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "2978f1ac-8b65-4293-8b40-5bd4dabe0816",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C5",
+      "claim": "RNF43 triggers clathrin-dependent internalization of ROR1 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 triggers VANGL2 ubiquitination and proteasomal degradation and clathrin-dependent internalization of ROR1 receptor and inhibits ROR2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by flow cytometry (Figure 3E-F) and dansylcadaverine inhibition experiments (Figure 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "56e90800-2758-4aa6-a75e-7b3d79056022",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C6",
+      "claim": "RNF43 inhibits ROR2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 triggers VANGL2 ubiquitination and proteasomal degradation and clathrin-dependent internalization of ROR1 receptor and inhibits ROR2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis showing changes in ROR2 protein levels (Figure 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "185a2234-8d7f-421c-b940-0ef8254b4be1",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C7",
+      "claim": "RNF43 blocks pro-metastatic WNT5A signaling in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "These activities of RNF43 are physiologically relevant and block pro-metastatic WNT5A signaling in melanoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional assays including wound healing, invasion, and invadopodia formation assays (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "c26ead1a-cfd0-42c7-8cd6-61a48f3bda37",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C8",
+      "claim": "RNF43 inhibits responses to WNT5A, which results in the suppression of invasive properties of melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 inhibits responses to WNT5A, which results in the suppression of invasive properties of melanoma cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by multiple functional assays in melanoma cell lines (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "7405bcc8-96ec-43a7-ac48-6eb4fd5d3b65",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C9",
+      "claim": "RNF43 prevented WNT5A-assisted development of resistance to BRAF V600E and MEK inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RNF43 prevented WNT5A-assisted development of resistance to BRAF V600E and MEK inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by resistance acquisition experiments (Figure 6G, 6L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "21c874a7-8c3d-483b-82fc-f08b8ef1e872",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C10",
+      "claim": "RNF43 acted as melanoma suppressor and improved response to targeted therapies in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, RNF43 acted as melanoma suppressor and improved response to targeted therapies in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by mouse xenograft experiments (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "175343f3-851e-4468-8883-e23c5a24d5ef",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C11",
+      "claim": "RNF43 expression decreases during melanoma progression.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these findings, RNF43 expression decreases during melanoma progression and RNF43-low patients have a worse prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by analysis of gene expression datasets (Figure 4A, 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "25d8bf76-da18-48d1-9886-1edba3c251d2",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C12",
+      "claim": "RNF43-low patients have a worse prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these findings, RNF43 expression decreases during melanoma progression and RNF43-low patients have a worse prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by survival analysis (Figure 4C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "97e8d3ec-2c79-4ec2-a9f2-0a350d410b88",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C13",
+      "claim": "RNF43 is a newly discovered negative regulator of WNT5A-mediated biological responses that desensitizes cells to WNT5A.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that RNF43 is a newly discovered negative regulator of WNT5A-mediated biological responses that desensitizes cells to WNT5A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "c8b3e314-b06b-4414-bf19-9b693c17c911",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C14",
+      "claim": "Removal of endogenous WNT5A in T-REx 293 cells is sufficient to eliminate the activation of readouts of WNT5A signaling such as phosphorylation of ROR1, DVL2, and DVL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of endogenous WNT5A in T-REx 293 cells is sufficient to eliminate the activation of readouts of WNT5A signaling such as phosphorylation of ROR1, DVL2, and DVL3 that can be monitored by western blotting as the decrease in the phosphorylation-mediated electrophoretic mobility shifts (Figure 1A; Bryja et al., 2007b; Kotrbov\u00e1 et al., 2020; Radaszkiewicz and Bryja, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by western blot analysis comparing wild-type and WNT5A KO cells (Figure 1A).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "aba6261f-5651-4d64-b846-166005b9a73a",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C15",
+      "claim": "Autocrine WNT5A signaling was promoted by the inhibition of endogenous RNF43/ZNRF3 by RSPO1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocrine WNT5A signaling was promoted by the inhibition of endogenous RNF43/ZNRF3 by RSPO1 treatment (Figure 1B, compare lanes 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis (Figure 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "e88e8fdf-f127-4fc8-bc38-b6bb946f9f88",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C16",
+      "claim": "Autocrine WNT5A signaling was inhibited by RNF43 overexpression under the tetracycline (Tet)-controlled promoter (TetON) or by block of WNT secretion using Porcupine inhibitor Wnt-C59.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocrine WNT5A signaling was promoted by the inhibition of endogenous RNF43/ZNRF3 by RSPO1 treatment (Figure 1B, compare lanes 1 and 2) and inhibited by RNF43 overexpression under the tetracycline (Tet)-controlled promoter (TetON) or by block of WNT secretion using Porcupine inhibitor Wnt-C59 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis (Figure 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "833c5498-af92-48ce-ae91-f1999e13d820",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C17",
+      "claim": "Overexpression of RNF43 completely blocked signaling induced by recombinant WNT5A.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, overexpression of RNF43 completely blocked signaling induced by recombinant WNT5A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis of cells treated with increasing doses of rhWNT5A (Figure 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "d1e09552-11a1-47e3-84b3-048f650f289a",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C18",
+      "claim": "Several core proteins of the noncanonical Wnt signaling pathway \u2013 namely, ROR1, ROR2, VANGL1, VANGL2, SEC24B, and all three isoforms of DVL \u2013 were strongly and specifically biotinylated by RNF43-BirA*.",
+      "claim_type": "EXPLICIT",
+      "source": "Several core proteins of the noncanonical Wnt signaling pathway \u2013 namely, ROR1, ROR2, VANGL1, VANGL2, SEC24B, and all three isoforms of DVL \u2013 were strongly and specifically biotinylated by RNF43-BirA* (Figure 1D and D\u2032, Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by BioID mass spectrometry analysis (Figure 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "3173e430-735d-427d-83e1-016e85227fef",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C19",
+      "claim": "RNF43 co-immunoprecipitated with both VANGL2 and VANGL1.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 co-immunoprecipitated with both VANGL2 (Figure 2A) and VANGL1 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation experiments (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ba943471-7e1b-471f-a869-118aeec41b98",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C20",
+      "claim": "VANGL2 and RNF43 co-localize in the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "More detailed analysis of VANGL2 showed co-localization of VANGL2 and RNF43 in the cell membrane (Figure 2B and B\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunofluorescence microscopy (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "72fbc72c-6074-4cb9-abbc-4d6c476f30e2",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C21",
+      "claim": "RNF43 efficiently pulled down ROR1 and ROR2.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 also efficiently pulled down ROR1 (Figure 2C) and ROR2 (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by co-immunoprecipitation experiments (Figure 2C, Figure 2\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "e9e303c2-2e31-4529-b8ed-64e0712c7df2",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C22",
+      "claim": "Deletion of the cysteine-rich domain (CRD) of ROR2 had no impact on the amount of co-immunoprecipitated RNF43, which suggests that RNF43 primarily interacts with RORs intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the cysteine-rich domain (CRD) (ROR2, Figure 2\u2014figure supplement 1B) had no impact on the amount of co-immunoprecipitated RNF43, which suggests that RNF43 primarily interacts with RORs intracellularly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation with ROR2 deletion mutants (Figure 2\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "798cdbea-1b99-45fe-aaad-ad47dab58554",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C23",
+      "claim": "Both ROR1/ROR2 co-localized with RNF43 at the level of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ROR1/ROR2 co-localized with RNF43 at the level of the plasma membrane (Figure 2D and D\u2032 and Figure 2\u2014figure supplement 1C and C\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence microscopy (Figure 2D, Figure 2\u2014figure supplement 1C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "e3537ad4-0917-46b0-adce-65636799cf80",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C24",
+      "claim": "RNF43 was able to bind both VANGL2 and ROR1 as efficiently in DVL triple knockout cells as in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 1D and E, RNF43 was able to bind both VANGL2 and ROR1 as efficiently as in the wild-type cells (compare with Figure 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by co-immunoprecipitation experiments in DVL triple knockout cells (Figure 2\u2014figure supplement 1D and E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "c94e3f8a-d96d-45ff-9743-afddc2199abc",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C25",
+      "claim": "RNF43 interacts with PCP proteins from VANGL and ROR families in a DVL-independent way.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results indicate that RNF43 interacts, in a DVL-independent way, with PCP proteins from VANGL and ROR families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from co-immunoprecipitation experiments in DVL triple knockout cells (Figure 2\u2014figure supplement 1D and E).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ab98ad02-dec3-4081-9616-10abbd083584",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C26",
+      "claim": "VANGL2 was ubiquitinated when co-expressed with RNF43 but not with RNF43 Mut1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using His-ubiquitin pulldown assay, we were able to show that VANGL2 (Figure 3A), as well as DVL1 and DVL2 (Figure 3\u2014figure supplement 1A), was ubiquitinated when co-expressed with RNF43 but not with RNF43 Mut1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by His-ubiquitin pulldown assay (Figure 3A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ea09842f-2c8f-457a-bc10-249b7a08a08f",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C27",
+      "claim": "DVL1 and DVL2 were ubiquitinated when co-expressed with RNF43 but not with RNF43 Mut1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using His-ubiquitin pulldown assay, we were able to show that VANGL2 (Figure 3A), as well as DVL1 and DVL2 (Figure 3\u2014figure supplement 1A), was ubiquitinated when co-expressed with RNF43 but not with RNF43 Mut1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by His-ubiquitin pulldown assay (Figure 3\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "34d584a9-8b77-4ee7-a3b1-d58ad442250b",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C28",
+      "claim": "RNF43-induced ubiquitination of ROR1 or ROR2 was not detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were unable to detect RNF43-induced ubiquitination of ROR1 or ROR2 (negative data, not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "0fc13d65-f5c9-40cb-8335-c0133a45ca00",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C29",
+      "claim": "Overexpression of RNF43, but not its E3 ligase dead variant, decreased VANGL2 protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis showed that overexpression of RNF43, but not its E3 ligase dead variant, decreased VANGL2 protein level (Figure 3B, quantified in Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "5e315bba-bc77-4e7a-8426-b45368b598b0",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C30",
+      "claim": "Decrease in VANGL2 caused by RNF43 was accompanied by impeded phosphorylation of ROR1 and DVL3.",
+      "claim_type": "EXPLICIT",
+      "source": "Decrease in VANGL2 caused by RNF43 was accompanied by impeded phosphorylation of ROR1 (Figure 3B) and DVL3 (Figure 3B, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "dc7ecc49-0ed1-476c-b522-8a4e5cf28ec9",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C31",
+      "claim": "Two independent clones of cells deficient in both RNF43 and ZNRF3 showed higher VANGL2 levels and higher DVL phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, two independent clones of cells deficient in both RNF43 and ZNRF3 (RNF43/ZNRF3 dKO; R/Z dKO) showed higher VANGL2 levels and higher DVL phosphorylation (Figure 3B, Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis (Figure 3B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8c096f9f-e1be-411f-9db4-74a6ad0a8657",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C32",
+      "claim": "Treatment with the proteasome inhibitor MG132 but not with autophagosome-lysosome inhibitor chloroquine blocked the effects of RNF43 on VANGL2 and DVL phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, treatment with the proteasome inhibitor MG132 but not with autophagosome-lysosome inhibitor chloroquine blocked these effects of RNF43 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis with proteasome and lysosome inhibitors (Figure 3C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "0da60416-af60-4b0c-bef8-86af4c793256",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C33",
+      "claim": "RNF43 action in the noncanonical Wnt pathway depends on the proteasomal degradation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that RNF43 action in the noncanonical Wnt pathway depends on the proteasomal degradation pathway, which differs from the Wnt/\u03b2-catenin pathway, where RNF43 triggers FZD degradation via the lysosomal pathway (Koo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of proteasome vs. lysosome inhibitors (Figure 3C) and comparison with published data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "7d2bf2fb-071c-4a29-9777-4a7a8cf144b1",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C34",
+      "claim": "RNF43 overexpression led to the retention of VANGL2 in the Golgin-97-positive area.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNF43 overexpression led to the retention of VANGL2 in the Golgin-97-positive area (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence microscopy (Figure 3\u2014figure supplement 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "3732d921-1c86-4de1-824b-6865e90afe3c",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C35",
+      "claim": "Cells lacking endogenous RNF43 and ZNRF3 have more ROR1 receptor on the surface than parental T-REx cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T-REx cells express dominantly ROR1, and indeed flow cytometric analysis demonstrated that cell lacking endogenous RNF43 and ZNRF3 have more ROR1 receptor on the surface than parental T-REx cells (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry (Figure 3D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "350b783b-2cbf-4f22-ad18-4140597da9fc",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C36",
+      "claim": "After 3 hr of tetracycline treatment, decreased surface ROR1 was detected in RNF43/ZNRF3 dKO cells with inducible RNF43.",
+      "claim_type": "EXPLICIT",
+      "source": "When we introduced inducible RNF43 into RNF43/ZNRF3 dKO T-REx cell line, we were able to rescue this phenotype, and after 3 hr of tetracycline treatment, we detected decreased surface ROR1 and the overnight exposition to tetracycline had no significant effect (Figure 3E and E\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by flow cytometry (Figure 3E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "74bd1937-ba4e-4322-b4b9-663e3bec9d93",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C37",
+      "claim": "Treatment with dansylcadaverine prevented RNF43-mediated effect on the ROR1 surface expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our hypothesis, treatment with this inhibitor prevented RNF43-mediated effect on the ROR1 surface expression in T-REx 293 RNF43/ZNRF3 dKO RNF43 TetON cells (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry with dansylcadaverine treatment (Figure 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "06756056-8acb-4457-9455-f680dae8cd41",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C38",
+      "claim": "ROR1/RAB5 co-localization was observed after 3 hr of tetracycline treatment and decreased after overnight exposition to tetracycline.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyperactivation of Rab5 by overexpression of wild-type Rab5 leads to the formation of giant early endosomes (Bucci et al., 1992) where we observed ROR1/RAB5 co-localization after 3 hr of tetracycline treatment. The co-localization decreased after overnight exposition to tetracycline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence microscopy (Figure 3G).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "744891a1-cf69-4384-8372-04bc34ff322c",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C39",
+      "claim": "RAB11+ endosomes were recruited to the ROR1 after RNF43 induction and RAB11 co-localized strongly with ROR1 even after overnight treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "RAB11+ endosomes were recruited to the ROR1 as well as after RNF43 induction and RAB11 co-localized strongly with ROR1 even after ON treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by immunofluorescence microscopy (Figure 3G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "bac7f4f0-c59a-4fae-89df-a31685f88f01",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C40",
+      "claim": "Surface ROR1 is controlled by RNF43 via interference with RAB5- and RAB11-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that surface ROR1 is controlled by RNF43 via interference with RAB5- and RAB11-mediated endocytosis and RNF43-mediated effect is not persistent due to the activity of recycling RAB11 recycling pathway (Ullrich et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from immunofluorescence data showing ROR1 co-localization with RAB5 and RAB11 (Figure 3G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "f578fd30-c65e-4db4-926b-2e652fc9ab30",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C41",
+      "claim": "High expression of WNT5A in melanoma is a negative overall survival and positive metastasis formation factor.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of WNT5A in this cancer is a negative overall survival and positive metastasis formation factor (Da Forno et al., 2008; Luo et al., 2020; Weeraratna et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "2a54e483-5764-4700-a9fe-7733eaa988cb",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C42",
+      "claim": "Signaling cascade activated by WNT5A in melanoma drives epithelial\u2013mesenchymal transition-like program (EMT), resulting in increased metastatic properties of melanoma cells in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling cascade activated by WNT5A in melanoma drives epithelial\u2013mesenchymal transition-like program (EMT), resulting in increased metastatic properties of melanoma cells in vitro and in vivo (Dissanayake et al., 2008; Dissanayake et al., 2007; Sadeghi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "e8ee5732-7b9f-44ef-8907-72fe4b159242",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C43",
+      "claim": "In melanoma, WNT5A acts through FZD and ROR1/ROR2.",
+      "claim_type": "EXPLICIT",
+      "source": "In melanoma, WNT5A acts through FZD and ROR1/ROR2 (O'Connell et al., 2010; Tiwary and Xu, 2016; Weeraratna et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "bcafc54b-22da-453b-bb33-a968e4abc3ed",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C44",
+      "claim": "RNF43 expression dramatically decreases between benign melanocytic skin nevus and cutaneous melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the in silico analysis of gene expression (Talantov et al., 2005; Xu et al., 2008) showed that RNF43 expression dramatically decreases between benign melanocytic skin nevus and cutaneous melanoma (Figure 4A; Talantov et al., 2005)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis of published gene expression datasets (Figure 4A).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "dfd4ddee-147c-4859-b1aa-bf17aae043f6",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C45",
+      "claim": "RNF43 expression decreases between primary melanoma site and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 expression dramatically decreases between benign melanocytic skin nevus and cutaneous melanoma (Figure 4A; Talantov et al., 2005) and further between primary site and metastasis (Xu et al., 2008; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by analysis of published gene expression datasets (Figure 4B).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "4b4bab24-d2be-4417-a82f-2e6902ecd025",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C46",
+      "claim": "RNF43 low melanoma patients have shorter overall survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, analysis of other datasets (Anaya, 2016) showed that RNF43 low melanoma patients have shorter overall survival (OS; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by survival analysis (Figure 4C).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "15129254-a168-47ed-98c9-b8c7f4ce3551",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C47",
+      "claim": "ZNRF3 expression had no prognostic value in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "ZNRF3 expression had no prognostic value (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by survival analysis (Figure 4\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "42a00d9a-bb53-4433-b5c5-199ea4ef715c",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C48",
+      "claim": "The expression of DVL3 and VANGL1 increased during melanoma progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the expression of two genes encoding direct targets ubiquitinated by RNF43, namely, DVL3 and VANGL1, increased during melanoma progression (Figure 4\u2014figure supplement 1B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by gene expression analysis (Figure 4\u2014figure supplement 1B and C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "73cea3d1-c55b-4734-bd39-4e9dc2a626ad",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C49",
+      "claim": "High expression of DVL3 and VANGL1 correlates with bad prognosis and shorter overall survival in melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "the expression of two genes encoding direct targets ubiquitinated by RNF43, namely, DVL3 and VANGL1, increased during melanoma progression (Figure 4\u2014figure supplement 1B and C) and high expression in both cases correlates with bad prognosis and shorter overall survival (Figure 4D, Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by survival analysis (Figure 4D, Figure 4\u2014figure supplement 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8c19ba48-f669-4a7d-bc38-c34b1b8a99eb",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C50",
+      "claim": "A375 IV cells secrete higher WNT5A protein levels than parental A375 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT5A protein levels are higher and WNT11 levels lower in case of A375 IV metastatic derivate in comparison to parental A375 cell line (Figure 4E\u2032 and E\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis of conditioned media (Figure 4E\u2032).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "59b650c6-8e85-4268-8231-abf7797a6583",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C51",
+      "claim": "RNF43 expression in the A375 IV cells was significantly lower than that in the A375 parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNF43 expression in the A375 IV cells was significantly lower than that in the A375 parental cells (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR analysis (Figure 4\u2014figure supplement 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ee8b78ba-6953-4ff3-b021-613b82e38ad0",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C52",
+      "claim": "RNF43 loss- and gain of function correlated strongly with the level of Wnt pathway activation assessed as DVL phosphorylation in A375 derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial characterization of A375 derivatives essentially confirmed the findings from T-REx 293 (see Figure 1), where RNF43 loss- and gain of function correlated strongly with the level of Wnt pathway activation assessed as DVL phosphorylation (Figure 4G, quantified in Figure 4\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis (Figure 4G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "d3f8b7a5-d57c-4acb-bf91-df6c38254754",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C53",
+      "claim": "In A375, A375 IV, and A2058 melanoma cells RNF43 overexpression efficiently blocked WNT5A-induced signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to T-REx 293 cells, in A375 (Figure 4H), A375 IV (Figure 4I), and A2058 (Figure 4J and quantified effect of RNF43 OE on the endogenous WNT pathway activity in Figure 4\u2014figure supplement 1G and H) melanoma cells RNF43 overexpression efficiently blocked WNT5A-induced signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis (Figure 4H, 4I, 4J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "165fa860-68cc-43f0-9711-2085c7485df5",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C54",
+      "claim": "All A375, A375 IV, and A2078 cells overexpressing RNF43 showed suppressed 2D collective migration in the wound healing assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, all A375, A375 IV, and A2078 cells overexpressing RNF43 showed suppressed 2D collective migration in the wound healing assay (Figure 5A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by wound healing assays (Figure 5A-E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "6b6c178e-a197-4364-b905-08e11311c515",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C55",
+      "claim": "A375 IV and A2058 cell lines showed significant response to CCL21 and CXCL12 in collagen I hydrogel invasion assay and RNF43 blocked completely these invasion events.",
+      "claim_type": "EXPLICIT",
+      "source": "A375 IV and A2058 cell lines showed significant response to these treatments and RNF43 blocked completely these invasion events (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by collagen I hydrogel 3D invasion assay (Figure 5G and H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "a40e2a33-3c54-4a85-97bb-502604287a2a",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C56",
+      "claim": "The response of A375 cells in collagen I hydrogel invasion assay was negligible, confirming their decreased metastatic capacity compared to the A375 IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the response of A375 cells in this assay was negligible (Figure 5\u2014figure supplement 1B), confirming their decreased metastatic capacity compared to the A375 IV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by collagen I hydrogel invasion assay (Figure 5\u2014figure supplement 1B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "f4de48cf-6113-4eee-8a8e-a0d41eaa8111",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C57",
+      "claim": "Invasion of individual cells through Matrigel was higher in A375 IV in comparison to A375 but in both cases reduced by RNF43 OE.",
+      "claim_type": "EXPLICIT",
+      "source": "In line, invasion of individual cells through the extracellular matrix (ECM) mimicking Matrigel was higher in A375 IV in comparison to A375 but in both cases reduced by RNF43 OE (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Matrigel invasion assay (Figure 5\u2014figure supplement 1D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "d7fab75e-9cc3-4545-b68c-0c4fd2c40d51",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C58",
+      "claim": "A375 IV cells formed more invadopodia than A375 parental cells and cells overexpressing RNF43 formed less of them.",
+      "claim_type": "EXPLICIT",
+      "source": "A375 IV cells formed more invadopodia than A375 parental cells (Figure 5I) and cells overexpressing RNF43 formed less of them (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by invadopodia formation assay (Figure 5I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "96609bce-3d93-4a07-8947-adb8e85427e7",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C59",
+      "claim": "Reduced gelatin degradation activity was observed in A375 and A375 IV cells overexpressing RNF43.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, we also observed reduced gelatin degradation activity in A375 and A375 IV cells overexpressing RNF43 (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by gelatin degradation assay (Figure 5J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "9b8f1867-258e-42b0-b8b8-1701e5421729",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C60",
+      "claim": "Treatment with WNT5A enhanced the gelatin degradation capacity of A375 cells, but not their RNF43-overexpressing derivate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment with WNT5A enhanced the gelatin degradation capacity of A375 cells, but not their RNF43-overexpressing derivate (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by gelatin degradation assay with WNT5A treatment (Figure 5J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "6e6bd0af-3049-48aa-8247-5fb2664dbbdd",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C61",
+      "claim": "Transient exposition to vemurafenib resulted in the impeded phosphorylation of ROR1, DVL2, and DVL3 and increased ROR2 protein level without change in its mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transient exposition to vemurafenib resulted in the impeded phosphorylation of ROR1, DVL2, and DVL3 and increased ROR2 protein level without change in its mRNA (Figure 6B\u2013D, Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot and RT-qPCR analysis (Figure 6B-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "23c85540-e46d-4160-892d-667caa35dfcd",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C62",
+      "claim": "Vemurafenib-resistant cells displayed elevated ROR1 levels (both protein and mRNA) and increased phosphorylation of DVL2 and DVL3.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side, VR cells displayed elevated ROR1 levels (both protein and mRNA) and increased phosphorylation of DVL2 and DVL3 (Figure 6B\u2013D, Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot and RT-qPCR analysis (Figure 6B-D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "32e3de2a-3b2d-41f2-b8e4-f01d898e8df7",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C63",
+      "claim": "The expression of WNT5A was higher in the resistant VR cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the expression of WNT5A was also higher in the resistant VR cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by RT-qPCR analysis (Figure 6E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "6538846f-d5a0-4996-9bff-97ed28037dfc",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C64",
+      "claim": "Exogenous RNF43 decreased colony formation and proliferation of cells seeded in low density and vemurafenib further enhanced this effect.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6F, exogenous RNF43 decreased colony formation and proliferation of cells seeded in low density and vemurafenib further enhanced this effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by colony formation assay (Figure 6F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "964a8d93-05c8-418c-985d-82135d830f61",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C65",
+      "claim": "Both A375 and A375 IV-overexpressing RNF43 completely failed to develop resistance to vemurafenib and died off during selection at 1 \u03bcM vemurafenib concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both A375 and A375 IV-overexpressing RNF43 completely failed to develop resistance to vemurafenib and died off during selection at 1 \u03bcM vemurafenib concentration (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by long-term vemurafenib resistance acquisition experiments (Figure 6G).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "4d7e6738-eb25-47d3-bbe1-0fd6fdaff38f",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C66",
+      "claim": "A2058 enriched with ectopically expressed RNF43 did not survive cobimetinib monotherapy and cobimetinib with vemurafenib combination.",
+      "claim_type": "EXPLICIT",
+      "source": "A2058 enriched with ectopically expressed RNF43 did not survive cobimetinib monotherapy and cobimetinib with vemurafenib combination, whereas vemurafenib-only treatment did not fully eliminate those cells (Figure 6L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by resistance acquisition experiments (Figure 6L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "1c53d8a3-57cb-4134-8964-32fae5f28360",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C67",
+      "claim": "VANGL1 showed a shift in all delivered resistance models, while VANGL2 was shifted only in cells being in the long-term culture with cobimetinib and with cobimetinib and vemurafenib.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we noticed the shift of VANGL1 in all delivered resistance models, while VANGL2 was shifted only in cells being in the long-term culture with cobimetinib and with cobimetinib and vemurafenib (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis (Figure 6H).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8fa2340c-984f-49c4-acce-a809ba806c74",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C68",
+      "claim": "Both MITF protein level and MITF gene expression increased in VR cells and decreased in all cobimetinib-insensitive lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both MITF protein level and MITF gene expression increased in VR cells and decreased in all cobimetinib-insensitive lines (Figure 6H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot and RT-qPCR analysis (Figure 6H and I).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "cd7b478a-2912-486a-818d-66cbab3a30ad",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C69",
+      "claim": "MITF upregulation was accompanied by clear pigmentation of resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MITF upregulation was accompanied by clear pigmentation of resistant cells (Figure 6I\u2032), suggesting cell phenotype change (Arozarena and Wellbrock, 2019; Ji et al., 2015; M\u00fcller et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by visual observation of cell pellets (Figure 6I\u2032).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "2e9bb7ec-850b-4313-9b97-4b6074a54a5a",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C70",
+      "claim": "Cohort I (RNF43 low) had significantly shorter survival and formed macroscopic tumors earlier than RNF43 mid and high cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort I (RNF43 low) had significantly shorter survival and formed macroscopic tumors earlier than RNF43 mid and high cohorts (Figure 7C, Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vivo mouse experiments (Figure 7C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "98ae4b17-d24a-4529-a893-20e4f5ef2db6",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C71",
+      "claim": "Tumors originating from cells with the lowest RNF43 expression were significantly bigger than RNF43 mid ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, tumors originating from cells with the lowest RNF43 expression were significantly bigger than RNF43 mid ones (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by tumor size measurements (Figure 7D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "c1295dd6-88e9-4405-bed7-aea709bf1c33",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C72",
+      "claim": "The level of RNF43-specific signal in cohorts I\u2013III was significantly and inversely correlated with ROR1 and VANGL2 protein levels and similar trend was also noticed for DVL2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found out that the level of RNF43-specific signal in cohorts I\u2013III was significantly and inversely correlated with ROR1 and VANGL2 protein levels and similar trend was also noticed for DVL2 phosphorylation (Figure 7E, Figure 7\u2014figure supplement 1D and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis of tumor lysates and correlation analysis (Figure 7E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "323b66bc-4877-42df-8529-ba42519a7ea4",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C73",
+      "claim": "Vemurafenib treatment significantly prolonged the survival in RNF43 mid and RNF43 high cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "RNF43 mid and RNF43 high cohorts received vemurafenib, and this treatment significantly prolonged the survival (Figure 7F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by survival analysis (Figure 7F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "8af32eb1-101b-4d96-bf4c-d0249a78e97c",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C74",
+      "claim": "Doxycycline supplementation (RNF43 high) in addition to vemurafenib resulted in the more efficient suppression of tumor growth, suggesting the delayed the BRAFi resistance acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, doxycycline supplementation (RNF43 high) in addition to vemurafenib resulted in the more efficient suppression of tumor growth, suggesting the delayed the BRAFi resistance acquisition (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by tumor growth measurements (Figure 7G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "56c295ac-a4c8-47a4-8179-f2eb861c5d64",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "claim_id": "C75",
+      "claim": "The protein level of WNT5A was significantly increased in tumors treated with vemurafenib.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the protein level of WNT5A was significantly increased in tumors treated with vemurafenib, which could help to bypass the RNF43-related effect as well (Figure 7\u2014figure supplement 1E\u2032\u2032\u2032).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by western blot analysis of tumor lysates (Figure 7\u2014figure supplement 1E\u2032\u2032\u2032).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNF43 negatively regulates WNT5A-induced noncanonical signaling in T-REx 293 cells, as demonstrated by loss-of-function (WNT5A KO) and gain-of-function (RNF43 overexpression) experiments showing modulation of ROR1, DVL2, and DVL3 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 provide converging evidence from multiple experimental conditions (WNT5A KO, RSPO1 treatment, RNF43 overexpression, Porcupine inhibition) all showing consistent effects on pathway readouts. The use of appropriate controls and dose-response experiments (C17) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNF43 physically interacts with core noncanonical WNT pathway components including ROR1, ROR2, VANGL1, and VANGL2 in a DVL-independent manner, as shown by BioID proximity labeling and co-immunoprecipitation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The interaction claims are supported by two independent methods (BioID mass spectrometry in C18 and co-IP in C19-C23). The DVL-independence (C24-C25) is demonstrated using DVL triple knockout cells, providing strong evidence for direct or DVL-independent interactions. Co-localization data (C20, C23) provides additional spatial validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ead72de9-29e7-426c-b2e6-d517b52e08b7",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNF43 ubiquitinates VANGL2, DVL1, and DVL2 (but not ROR1/ROR2) and triggers proteasome-dependent degradation of VANGL2, leading to decreased phosphorylation of downstream effectors ROR1 and DVL3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Ubiquitination is directly demonstrated by His-ubiquitin pulldown (C26-C27), and the requirement for E3 ligase activity is shown using catalytically inactive RNF43 Mut1. The proteasome-dependence (C32) is established by differential effects of MG132 vs chloroquine. The negative result for ROR1/ROR2 ubiquitination (C28) is appropriately reported and suggests alternative mechanisms for these receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "c78877e8-1e9f-48b3-84e4-5a01868acee3",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNF43 induces clathrin-dependent internalization of ROR1 through RAB5+ early endosomes with subsequent RAB11-mediated recycling, resulting in transient reduction of surface ROR1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Surface ROR1 levels are quantified by flow cytometry (C35-C36), clathrin-dependence is shown by dansylcadaverine inhibition (C37), and the endosomal trafficking route is demonstrated by co-localization with RAB5 and RAB11 markers (C38-C39). The transient nature of the effect is consistent with RAB11-mediated recycling, though longer-term fate of internalized receptors could be better characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "843e8bf1-169f-402f-8edc-0ae251a96c7f",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNF43 expression decreases during melanoma progression (from benign nevi to primary melanoma to metastasis), and low RNF43 expression correlates with worse patient prognosis, while its targets DVL3 and VANGL1 show inverse patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The expression patterns are demonstrated across multiple independent datasets (Talantov et al., Xu et al., Anaya) with appropriate statistical analysis. The inverse correlation with RNF43 targets (C48-C49) provides biological coherence. However, these are correlative analyses from public databases and causality cannot be inferred from these data alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "0da98648-cd73-496f-8e19-9e3de56f0f06",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In melanoma cell lines (A375, A375 IV, A2058), RNF43 expression levels inversely correlate with WNT5A secretion and pathway activation, and RNF43 overexpression blocks WNT5A-induced signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization of melanoma cell lines (C50-C51) establishes the model system, and the functional effects of RNF43 manipulation (C52-C53) are demonstrated by western blot analysis of DVL phosphorylation. This extends the T-REx 293 findings to a disease-relevant context, though the number of cell lines tested is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ca1fd728-22d2-473d-a916-c64e1d6095d1",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNF43 suppresses multiple pro-metastatic properties of melanoma cells including 2D migration, 3D invasion, invadopodia formation, and ECM degradation, with effects being most pronounced in the more metastatic A375 IV cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anti-invasive effects are demonstrated across multiple complementary functional assays (wound healing, collagen invasion, Matrigel invasion, invadopodia formation, gelatin degradation). The differential effects between A375 and A375 IV cells (C56) provide internal validation. The WNT5A-dependence is shown in C60, though this is tested in only one assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "ff7b0bf1-e740-4ea9-b641-053482210df0",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNF43 prevents acquisition of resistance to BRAF and MEK inhibitors in melanoma cells, and vemurafenib-resistant cells show elevated WNT5A expression and noncanonical pathway activation with distinct phenotypic changes (MITF upregulation and pigmentation in vemurafenib-resistant vs MITF downregulation in cobimetinib-resistant cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The resistance prevention is demonstrated by long-term selection experiments (C65-C66) showing complete failure of RNF43-overexpressing cells to develop resistance. The molecular characterization of resistant cells (C61-C63, C67-C69) provides mechanistic insight. However, the in vitro resistance model may not fully recapitulate clinical resistance mechanisms, and the differential MITF responses suggest multiple resistance pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "a529c475-000a-4912-842e-c08e521b2c7b",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo, RNF43 acts as a melanoma tumor suppressor with dose-dependent effects on tumor growth and survival, and enhances response to vemurafenib treatment by delaying resistance acquisition, though this effect is partially overcome by increased WNT5A expression in treated tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo tumor suppressor function is demonstrated by dose-dependent effects on survival and tumor size (C70-C71), with molecular validation showing inverse correlation with pathway targets (C72). The therapeutic benefit is shown by improved survival with vemurafenib treatment (C73-C74). However, the authors note transgene expression loss during long-term experiments and compensatory WNT5A upregulation (C75), which limits interpretation of the resistance delay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "3eaeb056-b1dd-4de6-8aae-500352df81d4",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNF43 is a newly discovered negative regulator of WNT5A-mediated biological responses that desensitizes cells to WNT5A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion is supported by the totality of evidence from mechanistic studies (interactions, ubiquitination, receptor internalization), functional studies (invasion, migration), and in vivo validation. The term 'newly discovered' is appropriate as this represents the first comprehensive demonstration of RNF43's role in noncanonical WNT signaling in mammalian cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "08040a86-cb66-4199-865a-caf366633580",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNF43 inhibits ROR2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C6 claims ROR2 inhibition based on Figure 6B, the evidence is limited to changes in ROR2 protein levels in the context of vemurafenib resistance. No direct demonstration of ROR2 'activation' status (e.g., phosphorylation) is provided, and C28 indicates no ROR2 ubiquitination was detected. The mechanism of ROR2 regulation by RNF43 remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    },
+    {
+      "id": "28bde211-3768-479f-9ad3-be1991a6b4ec",
+      "content_id": "23ddfead-4879-42a5-aeb6-76b8e4087996",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "WNT5A plays a crucial role in melanoma through FZD and ROR1/ROR2 receptors, promoting EMT, invasion, and metastasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C41-C43) are well-established in the literature and are appropriately cited. They provide important context for the study but represent prior knowledge rather than new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:29:11.991677Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4b0ea5ce-19d3-4bd0-b7e1-a02076c72f09",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "ccf21318-0b41-4e07-8706-6c0c687b54a6",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "c8b3e314-b06b-4414-bf19-9b693c17c911",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "aba6261f-5651-4d64-b846-166005b9a73a",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "e88e8fdf-f127-4fc8-bc38-b6bb946f9f88",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "833c5498-af92-48ce-ae91-f1999e13d820",
+      "result_id": "fdb2eb9f-694f-4e74-b6c7-8ddd74550151"
+    },
+    {
+      "claim_id": "4210d231-0e1c-4d48-830c-c87863c9a990",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "d1e09552-11a1-47e3-84b3-048f650f289a",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "3173e430-735d-427d-83e1-016e85227fef",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "ba943471-7e1b-471f-a869-118aeec41b98",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "72fbc72c-6074-4cb9-abbc-4d6c476f30e2",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "e9e303c2-2e31-4529-b8ed-64e0712c7df2",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "798cdbea-1b99-45fe-aaad-ad47dab58554",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "e3537ad4-0917-46b0-adce-65636799cf80",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "c94e3f8a-d96d-45ff-9743-afddc2199abc",
+      "result_id": "da6b850a-b94f-4a7c-b7c1-a0b35ba4052b"
+    },
+    {
+      "claim_id": "eb853e9d-5567-4aa3-a5d6-2a74295e8e47",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "ab98ad02-dec3-4081-9616-10abbd083584",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "ea09842f-2c8f-457a-bc10-249b7a08a08f",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "34d584a9-8b77-4ee7-a3b1-d58ad442250b",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "0fc13d65-f5c9-40cb-8335-c0133a45ca00",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "5e315bba-bc77-4e7a-8426-b45368b598b0",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "dc7ecc49-0ed1-476c-b522-8a4e5cf28ec9",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "8c096f9f-e1be-411f-9db4-74a6ad0a8657",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "0da60416-af60-4b0c-bef8-86af4c793256",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "7d2bf2fb-071c-4a29-9777-4a7a8cf144b1",
+      "result_id": "ead72de9-29e7-426c-b2e6-d517b52e08b7"
+    },
+    {
+      "claim_id": "2978f1ac-8b65-4293-8b40-5bd4dabe0816",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "3732d921-1c86-4de1-824b-6865e90afe3c",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "350b783b-2cbf-4f22-ad18-4140597da9fc",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "74bd1937-ba4e-4322-b4b9-663e3bec9d93",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "06756056-8acb-4457-9455-f680dae8cd41",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "744891a1-cf69-4384-8372-04bc34ff322c",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "bac7f4f0-c59a-4fae-89df-a31685f88f01",
+      "result_id": "c78877e8-1e9f-48b3-84e4-5a01868acee3"
+    },
+    {
+      "claim_id": "175343f3-851e-4468-8883-e23c5a24d5ef",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "25d8bf76-da18-48d1-9886-1edba3c251d2",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "bcafc54b-22da-453b-bb33-a968e4abc3ed",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "dfd4ddee-147c-4859-b1aa-bf17aae043f6",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "4b4bab24-d2be-4417-a82f-2e6902ecd025",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "15129254-a168-47ed-98c9-b8c7f4ce3551",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "42a00d9a-bb53-4433-b5c5-199ea4ef715c",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "73cea3d1-c55b-4734-bd39-4e9dc2a626ad",
+      "result_id": "843e8bf1-169f-402f-8edc-0ae251a96c7f"
+    },
+    {
+      "claim_id": "8c19ba48-f669-4a7d-bc38-c34b1b8a99eb",
+      "result_id": "0da98648-cd73-496f-8e19-9e3de56f0f06"
+    },
+    {
+      "claim_id": "59b650c6-8e85-4268-8231-abf7797a6583",
+      "result_id": "0da98648-cd73-496f-8e19-9e3de56f0f06"
+    },
+    {
+      "claim_id": "ee8b78ba-6953-4ff3-b021-613b82e38ad0",
+      "result_id": "0da98648-cd73-496f-8e19-9e3de56f0f06"
+    },
+    {
+      "claim_id": "d3f8b7a5-d57c-4acb-bf91-df6c38254754",
+      "result_id": "0da98648-cd73-496f-8e19-9e3de56f0f06"
+    },
+    {
+      "claim_id": "185a2234-8d7f-421c-b940-0ef8254b4be1",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "c26ead1a-cfd0-42c7-8cd6-61a48f3bda37",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "165fa860-68cc-43f0-9711-2085c7485df5",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "6b6c178e-a197-4364-b905-08e11311c515",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "a40e2a33-3c54-4a85-97bb-502604287a2a",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "f4de48cf-6113-4eee-8a8e-a0d41eaa8111",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "d7fab75e-9cc3-4545-b68c-0c4fd2c40d51",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "96609bce-3d93-4a07-8947-adb8e85427e7",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "9b8f1867-258e-42b0-b8b8-1701e5421729",
+      "result_id": "ca1fd728-22d2-473d-a916-c64e1d6095d1"
+    },
+    {
+      "claim_id": "7405bcc8-96ec-43a7-ac48-6eb4fd5d3b65",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "6e6bd0af-3049-48aa-8247-5fb2664dbbdd",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "23c85540-e46d-4160-892d-667caa35dfcd",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "32e3de2a-3b2d-41f2-b8e4-f01d898e8df7",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "6538846f-d5a0-4996-9bff-97ed28037dfc",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "964a8d93-05c8-418c-985d-82135d830f61",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "4d7e6738-eb25-47d3-bbe1-0fd6fdaff38f",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "1c53d8a3-57cb-4134-8964-32fae5f28360",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "8fa2340c-984f-49c4-acce-a809ba806c74",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "cd7b478a-2912-486a-818d-66cbab3a30ad",
+      "result_id": "ff7b0bf1-e740-4ea9-b641-053482210df0"
+    },
+    {
+      "claim_id": "21c874a7-8c3d-483b-82fc-f08b8ef1e872",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "2e9bb7ec-850b-4313-9b97-4b6074a54a5a",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "98ae4b17-d24a-4529-a893-20e4f5ef2db6",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "c1295dd6-88e9-4405-bed7-aea709bf1c33",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "323b66bc-4877-42df-8529-ba42519a7ea4",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "8af32eb1-101b-4d96-bf4c-d0249a78e97c",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "56c295ac-a4c8-47a4-8179-f2eb861c5d64",
+      "result_id": "a529c475-000a-4912-842e-c08e521b2c7b"
+    },
+    {
+      "claim_id": "97e8d3ec-2c79-4ec2-a9f2-0a350d410b88",
+      "result_id": "3eaeb056-b1dd-4de6-8aae-500352df81d4"
+    },
+    {
+      "claim_id": "56e90800-2758-4aa6-a75e-7b3d79056022",
+      "result_id": "08040a86-cb66-4199-865a-caf366633580"
+    },
+    {
+      "claim_id": "f578fd30-c65e-4db4-926b-2e652fc9ab30",
+      "result_id": "28bde211-3768-479f-9ad3-be1991a6b4ec"
+    },
+    {
+      "claim_id": "2a54e483-5764-4700-a9fe-7733eaa988cb",
+      "result_id": "28bde211-3768-479f-9ad3-be1991a6b4ec"
+    },
+    {
+      "claim_id": "e8ee5732-7b9f-44ef-8907-72fe4b159242",
+      "result_id": "28bde211-3768-479f-9ad3-be1991a6b4ec"
+    }
+  ],
+  "comparisons": []
+}

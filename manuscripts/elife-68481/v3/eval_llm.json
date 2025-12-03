@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background context on TNBC, stating it constitutes 15-20% of breast cancers with highest mortality, lacks targeted therapy with chemotherapy as standard care, though some FDA-approved therapies exist. EMT progression is critical for TNBC aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by citations to published literature and represent established background knowledge about TNBC epidemiology, treatment landscape, and the role of EMT. These are appropriately cited contextual claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "TLN1 is upregulated in TNBC patient samples and associated with poor prognosis. In a cohort of 171 TNBC patients, TLN1 was highly expressed in 43.9% of cases, with high expression significantly associated with shorter disease-free survival (HR=3.19, p<0.001), advanced T-stage, lymph node metastasis, high Ki67 index, and presence in metastatic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 are well-supported by immunohistochemistry, western blot, and survival analysis data from the patient cohort (n=171). The statistical associations are clearly stated with p-values, and the survival analysis includes hazard ratio. The data consistently demonstrate TLN1 upregulation correlates with poor clinical outcomes in TNBC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Analysis of TCGA database showed no correlation between integrin family members and breast cancer subtypes, but TLN1 correlates with integrin family in TNBC. TLN2, which shares 76% sequence identity with TLN1, showed lower expression in breast cancer versus normal tissue with no survival differences between subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C32-C35 are supported by TCGA database analysis presented in figures. The negative findings for integrins and TLN2 appropriately justify the focus on TLN1. However, the claim that TLN1 'may play an important role' (C22) is somewhat speculative based solely on correlation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "TLN1 is highly expressed in TNBC cell lines compared to other breast cancer subtypes. Silencing TLN1 in MDA-MB-231 cells inhibited proliferation, increased apoptosis, and reduced tumor growth in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by western blot, EdU assay, flow cytometry, electron microscopy, and xenograft data. Multiple complementary assays demonstrate consistent effects of TLN1 silencing on cell growth and survival both in vitro and in vivo (n=8 mice per group). The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Silencing TLN1 inhibited adhesion, migration, and invasion of TNBC cells (MDA-MB-231 and BT549), altered EMT markers (increased E-cadherin/CK18, decreased N-cadherin/vimentin), suppressed lung metastasis in vivo, and these effects were rescued by integrin \u03b21 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are well-supported by adhesion assays, transwell assays, western blots, lung metastasis data, and rescue experiments. The rescue experiment with integrin \u03b21 overexpression (C48) provides important mechanistic validation. The EMT marker changes are consistent with reduced metastatic potential. Sample sizes appear adequate (n=3 for in vitro, n=5-8 for in vivo).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "TMT proteomics identified 156 differentially expressed proteins between control and TLN1-silenced cells, with GO analysis showing involvement in tissue development, cell migration, microtubule organization, cell differentiation, and protein-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by TMT proteomics data with appropriate GO enrichment analysis. The proteomics provides unbiased support for TLN1's role in migration and adhesion. However, the manuscript does not provide details on statistical thresholds, FDR correction, or validation of key DEPs by orthogonal methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "TLN1 specifically interacts with integrin \u03b21 (but not \u03b23) in MDA-MB-231 cells, co-localizing in focal adhesions. Silencing TLN1 reduced focal adhesion formation, altered cell morphology, thickened actin cortex, and decreased integrin \u03b21 levels and phosphorylation of AKT and FAK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by immunoprecipitation, immunofluorescence, confocal microscopy, and western blot data. The specificity for integrin \u03b21 over \u03b23 is clearly demonstrated. The authors acknowledge a non-specific band in the \u03b23 IP. The morphological and signaling changes are consistent with impaired focal adhesion dynamics. Quantification of FA parameters strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A small molecule C67399 was identified through computational screening that binds TLN1's F3 domain, blocks TLN1-integrin \u03b21 interaction, and inhibits TNBC cell viability, adhesion, migration, and invasion in vitro with an IC50 of 2.0 \u03bcM, while reducing integrin \u03b21 and downstream signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by computational docking, molecular dynamics simulations, dose-response curves, functional assays, western blots, and immunoprecipitation. The computational predictions are validated experimentally. The specificity for integrin \u03b21 over \u03b23 (C71) is demonstrated. However, the manuscript lacks information on C67399 selectivity against other proteins and potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "C67399 treatment (1.75 mg/kg IV twice weekly) reduced tumor volume, lung metastasis, and Ki67 proliferation index in xenograft models without causing organ toxicity or changes in liver enzymes, intestinal histology, or blood cell counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by xenograft tumor measurements, lung metastasis quantification, immunohistochemistry, H&E staining, and serum biochemistry (n=5 mice per group). The toxicity assessment is reasonably comprehensive for a preclinical study. However, longer-term toxicity studies and pharmacokinetic data would strengthen the therapeutic potential claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "C67399 represents a novel small-molecule inhibitor identified through a computational screening approach (CSTPPI) that targets the dynamic protein-protein binding interface between TLN1 and integrin \u03b21, representing the first study of its kind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 and C121 describe the novelty of the computational approach and compound. While the computational methodology is described and the compound is validated experimentally, the claim of being 'first of its kind' (C118, C121) is difficult to verify without comprehensive literature review. The approach appears novel but the absolute priority claim may be overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript concludes that TLN1 binds and activates integrin \u03b21 in TNBC cells, regulating focal adhesion dynamics and inducing EMT to promote metastasis while inhibiting apoptosis to facilitate tumor growth. C67399 blocks this interaction and inhibits TNBC malignancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 represent summary conclusions that are well-supported by the comprehensive experimental data presented throughout the manuscript, including protein interactions, functional assays, signaling pathway analysis, and in vivo efficacy studies. The mechanistic model is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Silencing TLN1 reduces focal adhesion formation, integrin \u03b21 levels, phosphorylated FAK, and AKT phosphorylation in MDA-MB-231 cells. The reduction in integrin may result from TLN1 silencing-mediated degradation. TLN1 is crucial for FA dynamics, adhesion, invasion, tumor growth and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 are supported by microscopy and western blot data. However, C105 regarding integrin degradation is speculative and only supported by a citation rather than direct experimental evidence in this study. The claim would be strengthened by proteasome inhibitor experiments or protein stability assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Silencing TLN1 induces thickening of the actin cortex in TNBC cells, which may initiate contractile tension and cell deformations. Loss of TLN1 leads to actin redistribution and membrane dynamics changes that may interfere with FA assembly/turnover required for migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C114 are partially supported by confocal microscopy showing actin cortex thickening (C110). However, C111, C113 are speculative ('may initiate', 'may interfere') and rely on citations rather than direct experimental evidence. The mechanistic links between actin cortex thickening and the proposed functional consequences are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work showing TLN1 regulates chemosensitivity, and concludes that TLN1 has carcinogenic effects independent of chemosensitivity, promotes TNBC malignancy, could serve as a prognostic factor, and represents a potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 appropriately contextualize the current findings with prior literature (C87-C88 cite Singel et al., 2013) and draw reasonable conclusions from the presented data. The prognostic potential (C93) is supported by survival analysis, though the authors appropriately note further validation is needed. The therapeutic target claim (C94) is supported by both genetic and pharmacological intervention data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C52",
+      "C53",
+      "C61",
+      "C62",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C108",
+      "C109"
+    ],
+    "result": "The manuscript provides extensive background on TLN biology, including its role in ECM adhesion, integrin activation, FA dynamics, tissue-specific expression patterns, and involvement in cancer metastasis across multiple cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19, C52-C53, C61-C62, C98-C102, C108-C109 are all appropriately cited background claims drawing on established literature. These provide necessary context for the study but do not represent novel findings. All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The manuscript's summary conclusions state that TLN1 is upregulated in TNBC correlating with metastasis and poor prognosis, interacts with integrin \u03b21 to activate FAK-AKT pathways facilitating FA formation and EMT-mediated malignancy, and that both genetic downregulation and pharmacological blockade with C67399 inhibit TNBC aggressiveness and metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C135 represent summary statements that accurately reflect the comprehensive experimental evidence presented throughout the manuscript. The conclusions are appropriately supported by clinical correlations, mechanistic studies, and therapeutic intervention data both in vitro and in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TLN1 expression is much higher in TNBC cells than other breast cancer subtypes, and silencing TLN1 attenuates malignancy, reduces tumor growth and lung metastasis. TLN1-related signaling is crucial for TNBC malignancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by western blot comparisons across cell lines and comprehensive functional data. The conclusions are consistent with prior literature (C97 cites Thapa et al., 2017) and the current experimental findings.",
+    "result_type": "MAJOR"
+  }
+]

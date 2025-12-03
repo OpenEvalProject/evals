@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Information flow in developing neural cultures undergoes dramatic increases during development. Mean transfer entropy (TE) between electrode pairs increases monotonically with days in vitro (DIV), with all four main cultures showing zero significant TE values on the first recording day but over 1000 significant source-target pairs by the final recording day, representing emergence from an unconnected to highly connected state (~30% density).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C34-C38 are strongly supported by quantitative data in Table 1 (showing monotonic TE increases), Table 2 (showing orders of magnitude increases in network density), and Figure 1 (visualizing TE distributions). Statistical testing confirmed all increases were significant at p<0.01 with Bonferroni correction. The progression from 0 to >1000 significant connections is well-documented across multiple cultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The spatial structure of information flows exhibits early lock-in during development. Significant positive Spearman correlations were found between TE values on edges across recording days (all or all-but-one pairs significant for final recordings or post-day 15), with similar correlations for outgoing TE from nodes. No significant negative correlations were observed, indicating properties established early tend to persist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C56, C62-C65 are well-supported by correlation analyses in Figures 3-4 and statistical summaries in Table 3. The data show consistent positive correlations (e.g., \u03c1=0.62-0.71 for some culture pairs) with very low probability of arising by chance. The lock-in phenomenon is demonstrated across multiple measures (edge TE, outgoing TE) and multiple cultures, with appropriate statistical corrections applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "During population bursts, nodes undertake specialized computational roles aligned with burst position. Late-bursting nodes show high incoming burst-local TE (positive correlation with burst position, majority of recordings significant), early-bursting nodes show high outgoing TE (negative correlation), and middle-bursting nodes exhibit balanced information transfer, acting as mediators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C77-C89 are strongly supported by burst-local TE analysis in Figure 5 and Table 4. Statistical testing shows clear majorities of recordings (post-day 15 or final recordings) exhibit significant correlations between burst position and directional information flow, with very low probability of chance occurrence. The visual pattern in Figure 5c clearly demonstrates the three computational roles, though the interpretation relies on correlational rather than causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Computational roles during bursts lock-in early in development. The ratio of outgoing to total burst-local TE shows significant positive correlations between early and late recording days (clear majority of pairs significant for final recordings or post-day 15), indicating nodes that are information transmitters or receivers early tend to maintain these roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C90-C93 are supported by correlation analysis in Figure 6 and Table 3. The data show significant positive correlations in the computational role ratio across developmental time points, with statistical significance unlikely to arise by chance. However, the strength of this lock-in appears somewhat weaker than for the overall information flow structure, and the mechanistic basis remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C97",
+      "C98",
+      "C102",
+      "C117",
+      "C130",
+      "C131"
+    ],
+    "result": "An STDP-based model network of Izhikevich neurons developing toward population bursts exhibits similar developmental patterns as biological cultures. The model shows monotonic TE increases, lock-in of information flow structure (significant correlations in edge TE and outgoing TE between developmental stages), suggesting broader generality of these phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C97-C98, C102, C117, C130-C131 are supported by model simulation results in Figures 7-8. The model replicates key qualitative features observed in biological data: dramatic TE increases, spatial lock-in of information flows, and (partially) computational role specialization. However, only a single simulation was run, limiting assessment of variability. The model also shows some quantitative differences from biological data (stronger lock-in, different TE magnitudes), which are acknowledged but not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "The STDP model shows computational role specialization based on burst position during mid-development, with late bursters as receivers (\u03c1=0.81, p<0.01) and early bursters as transmitters (though not significant after correction). Later in development, roles shift with earliest bursters showing anomalous behavior, possibly due to spiking far ahead of the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105, C107, C110-C111 are partially supported by Figure 8 data. While the incoming TE correlation is very strong (\u03c1=0.81), the outgoing TE relationship is not significant after Bonferroni correction in the mid window and shows anomalous patterns in the late window. The explanation for earliest bursters (C109) is speculative based on visual inspection. The departure from biological patterns in late development (C111) suggests the model may not fully capture all aspects of the biological phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C100"
+    ],
+    "result": "Lock-in of incoming information flow to nodes is weaker than for outgoing flow. Only three cases of significant correlations in average inward TE between early and late days were observed in biological cultures, and model simulations showed positive but non-significant correlations for incoming TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C100 are supported by data in Appendix 2-figure 1, Table 3, and Figure 7d. The weaker effect for incoming TE compared to outgoing TE is consistently observed across both biological and model systems, though still statistically significant overall (Table 3). This asymmetry is interesting but the manuscript does not provide a mechanistic explanation for why incoming flows would be less stable than outgoing flows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The nonzero estimated TE values in individual recordings were not well described by a log-normal distribution, contrary to previous studies on organotypic (rather than dissociated) cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by quantitative analysis of TE distributions (referenced in text, detailed in Appendix 1). The authors appropriately note the difference in culture type (organotypic vs. dissociated) as a potential explanation. However, the manuscript does not provide detailed statistical tests or goodness-of-fit measures in the main text, and the biological significance of this distributional difference is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mature information flow networks show heterogeneous structure with information spread somewhat evenly but clear hubs standing out. The strongest hubs are information sinks with high incoming and low outgoing flow. Specific nodes in specific cultures are identified as notable examples of transmitting or receiving hubs, with some nodes maintaining hub status across all recording days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 are supported by visual inspection of functional networks in Figure 2. The identification of specific hub nodes (e.g., nodes 55, 50, 39 in culture 2-2) is based on consistent patterns across recording days. However, the analysis is primarily qualitative/visual rather than quantitative. No formal hub detection algorithm or statistical threshold for hub designation is described, and the specific node examples are cherry-picked rather than systematically identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C142",
+      "C143",
+      "C147",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The continuous-time TE estimator used in this study captures effects on multiple scales, avoids time binning, is data efficient, consistent (converges to true TE with infinite data), and has superior bias and convergence properties compared to the discrete-time estimator. It operates on interspike intervals and enables application of nearest-neighbor estimators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C142-C143, C147, C198-C202 are supported by citation to prior work (Shorten et al., 2021) where these properties were demonstrated. The current manuscript applies this previously validated method but does not independently verify these properties. The advantages are well-articulated with concrete examples (e.g., C148-C151 showing the impracticality of discrete-time estimation for their data), making this a methodological contribution through application rather than development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C144",
+      "C145",
+      "C146",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215"
+    ],
+    "result": "Previous studies of information flows in neural cell cultures used the discrete-time TE estimator with only a single previous bin, which is problematic because it cannot simultaneously achieve high time precision and capture long-timescale dependencies. The curse of dimensionality limits the number of bins that can be used, forcing a trade-off between temporal precision and temporal extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C144-C146, C206-C215 are supported by comprehensive literature review (multiple citations) and logical analysis of the discrete-time estimator's limitations. The assessment that all prior cell culture studies used single-bin embeddings (C145, C207) is stated as 'to the best of the authors' knowledge,' appropriately acknowledging potential incompleteness. The technical analysis of the time precision vs. temporal extent trade-off is sound and well-illustrated with specific examples from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "This work studies multi-unit activity (MUA) rather than spike-sorted data because longitudinal analysis prevented matching units across recordings separated by days/weeks. Prior work found an average of four neurons per electrode in similar setups, situating this work at a spatial scale slightly larger than spike-sorted data but much finer than fMRI/EEG/MEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C155 are supported by clear methodological reasoning (C152) and citation to prior characterization of the recording setup (C154). The spatial scale characterization (C155) is appropriate. However, the impact of analyzing MUA rather than single units on the results is not thoroughly explored. The stronger correlations observed in the model (which uses individual neurons) compared to biological data (C138) suggests MUA may weaken some effects, but this is only briefly discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "The model shows substantially higher TE values than biological data (median ~40 vs <0.2 nats/s) due to higher spike rates implying different timescales. However, burst-local TE (measured in nats per spike) shows similar magnitudes between model and biological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C115-C116 are supported by comparative observations between Figures 7 and 1 (for overall TE) and Figures 8 and 5 (for burst-local TE). The explanation based on different spike rates and timescales (C115) is reasonable but somewhat superficial - a more detailed analysis of how spike rate affects TE estimation would strengthen this. The similar burst-local TE magnitudes (C116) provide reassuring validation that the model captures relevant dynamics despite operating at different timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C119",
+      "C121"
+    ],
+    "result": "There is a distinct lack of work characterizing the emergence of information flow during neural development, driven largely by lack of effective estimators for spiking data. Previous studies examined only single developmental time points, leaving open questions about how information flow structures are formed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C22, C119, C121 are supported by literature review and identification of a research gap. The assessment is reasonable given the citations provided, though the claim of 'distinct lack' (C2) is somewhat strong - the authors acknowledge some prior work exists but note it focused on mature networks or single time points. The attribution of this gap primarily to methodological limitations (C3) is plausible but somewhat speculative, as other factors (difficulty of longitudinal recordings, etc.) may also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C132",
+      "C133"
+    ],
+    "result": "The model shows more regular population bursts than biological data, very consistent dynamics across independent runs, and stronger lock-in effects for outward TE and edge TE than biological data. The difference in lock-in strength might be due to the multi-unit nature of biological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C132-C133 are supported by comparative observations between model and biological results. However, C96 (consistency across runs) is stated without supporting data - only a single simulation is presented. The explanation for stronger lock-in (C133) is speculative ('might be due to') and acknowledged as requiring further investigation. These differences between model and biology are important caveats that somewhat limit the generalizability claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Early lock-in provides a mechanism for emergence of heterogeneity in information flow hubs. Small differences between networks on early DIV are magnified on subsequent days, leading to high inter-network heterogeneity. This is similar to symmetry breaking observed with STDP, where small early fluctuations set trajectories with strong history dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 present a mechanistic interpretation of the lock-in phenomenon. C127-C128 are reasonable inferences from the lock-in data, though they remain interpretations rather than directly demonstrated mechanisms. C129 is supported by citations to prior STDP work showing similar phenomena. The connection between the observed lock-in and STDP-based symmetry breaking is plausible and supported by the model results, but the manuscript does not definitively prove STDP is the mechanism in the biological cultures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C160"
+    ],
+    "result": "This work provides novel supporting evidence for the conjecture that middle-bursting neurons act as 'brokers of neuronal communication' by identifying directed information flows. The same specialization occurred in an STDP model, suggesting broader generality. The 'leader' nodes identified in prior work correspond to the information transmitters observed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137, C160 appropriately position the work's contribution relative to prior hypotheses (Schroeter et al., 2015). The evidence for middle bursters as mediators (balanced in/out flow) is strong from Figure 5c. The observation of similar patterns in the STDP model (C136) supports broader generality, though with caveats about model-biology differences. The connection to prior 'leader' node findings (C160) is a reasonable interpretation linking different analytical approaches.",
+    "result_type": "MINOR"
+  }
+]

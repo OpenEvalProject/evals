@@ -1,0 +1,403 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The discovery cohort consists of 398 individuals with paired SNP array and TCR\u03b2-immunosequencing data, averaging 235,054 unique TCR\u03b2-chain sequences per individual, with approximately 18% classified as non-productive. Non-productive sequences do not participate in thymic selection and should reflect only the V(D)J recombination generation process occurring before selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide explicit data descriptions that are internally consistent and verifiable from the manuscript. Claims C4-C5 are supported by cited prior work (Robins et al., 2010; Murugan et al., 2012) establishing that non-productive sequences reflect pre-selection recombination. This is a standard assumption in the field and forms the methodological basis for distinguishing generation from selection effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13"
+    ],
+    "result": "9,152 significant associations were identified between V-, D-, and J-gene frequency and SNP genotypes genome-wide, with 7,096 located within the TCRB locus. The TCRB locus encodes 60 V-genes, 2 D-genes, and 14 J-genes, and many of these genes show associations with TCRB locus variation. The largest median effect sizes were observed for TRBD1, TRBD2, and TRBV28 expression in productive TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims report specific numbers of associations and effect sizes that are directly stated in the manuscript and supported by Figure 1 and supplementary figures. The statistical threshold (5.09\u00d710^-11) is appropriately conservative (Bonferroni-corrected). The findings are consistent with the known biology of the TCRB locus encoding these gene segments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "1,242 significant SNP associations were identified within the MHC locus, with 12.1% of V-genes for productive TCRs associated with MHC variation. The associations are specific to productive TCRs and V-gene usage, not non-productive TCRs or D-/J-genes. The most significant associations were in HLA-DRB1 with TRBV10-3 expression. These results refine and extend previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MHC associations are well-documented with specific numbers and effect sizes. The distinction between productive and non-productive TCRs (C22-C23) is critical and biologically meaningful, as MHC proteins present peptides to TCRs during thymic selection. The lack of associations with non-productive TCRs and D-/J-genes supports the interpretation that these are selection-related effects. The claim of refining previous work (C24) is supported by citations to Sharon et al., 2016 and Gao et al., 2019.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "138 significant SNP associations were observed near the ZNF443 and ZNF709 loci on chromosome 19 for TRBV24-1 expression, with stronger associations in non-productive TCRs (76) than productive TCRs (62). This suggests the variation influences TCR generation rather than selection, potentially through differential transcriptional repression affecting TRBV24 recombination potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The numerical data (C27-C28) are explicitly stated and the stronger association with non-productive TCRs supports the inference about generation vs. selection (C30). The mechanistic speculation (C31, C33) is appropriately qualified and based on established knowledge that ZNF443/ZNF709 contain KRAB domains (C26, cited to Witzgall et al., 1994) and that transcription influences recombination potential (C32, cited to Oltz, 2001). Previous work (Sharon et al., 2016) found similar associations (C29).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C44"
+    ],
+    "result": "317 significant SNP associations were identified with nucleotide trimming, including 66 highly significant associations between V- and J-gene trimming and SNPs within the DCLRE1C locus. Effect magnitudes were greater for non-productive TCRs. The DCLRE1C gene encodes the Artemis protein, an endonuclease involved in V(D)J recombination. A conditional analysis revealed a second independent signal (rs35441642) for J-gene trimming of non-productive TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical findings are explicitly reported with appropriate thresholds (9.68\u00d710^-10). The stronger effects in non-productive TCRs (C38) support a generation-related mechanism. The biological context (C39) is well-established. The conditional analysis (C43) appropriately tests for independent signals. The gene-conditioned model methodology addresses the known variation in trimming by gene choice (C34-C35, supported by citations and Figure 3\u2014figure supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Associations between 5' end D-gene trimming and TCRB locus SNPs appear to result from correlations with TRBD2 allele genotype. When correcting for TRBD2 allele genotype or restricting analysis to TRBJ1-containing TCRs, these associations disappear, and new associations with DCLRE1C emerge for D-gene trimming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The manuscript demonstrates appropriate statistical control by showing that associations disappear when accounting for TRBD2 genotype (C46) or using topological constraints (C48). The emergence of DCLRE1C associations when D-gene assignment ambiguity is reduced (C49) strengthens confidence in those findings. The speculation about confounding (C47) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The gene-conditioned model formulation is important for avoiding spurious associations. Without conditioning on gene choice, additional associations arise between MHC/TCRB locus SNPs and trimming of productive TCRs, which are likely artefactual given that these loci affect gene usage and different genes have different trimming distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical methodological point. The manuscript demonstrates that the 'simple model' produces additional associations (C51) that are explained by the known relationships between locus variation and gene usage (from earlier results) combined with gene-specific trimming patterns (C52). This validates the gene-conditioned model approach and shows appropriate attention to confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "No strong associations were identified between DCLRE1C locus SNPs and P-nucleotide presence or number, despite the known role of Artemis in creating P-nucleotides through hairpin cutting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is clearly stated and appropriately qualified as 'no strong associations' rather than claiming absence. The manuscript acknowledges this is unexpected given Artemis's known role (cited to established literature) and offers reasonable speculation about why associations might not be detected (restriction to non-gene-trimmed subset, insufficient power). This is honest reporting of a null result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Two SNPs within the DNTT locus (rs2273892 and rs12569756) were associated with N-insertion numbers. When restricting to the extended DNTT locus, 232 significant associations emerged. Effect magnitudes were greater for non-productive TCRs. The DNTT gene encodes TdT, which adds N-nucleotides during V(D)J recombination. The two SNPs are tightly linked and likely represent the same primary signal, with no secondary independent signals detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings are well-documented with specific SNPs identified and appropriate statistical methods. The biological context (C58) is established. The use of a 'simple model' is justified because N-insertion doesn't vary substantially with gene choice (C55, supported by citation and Figure 5\u2014figure supplement 1). The conditional analysis (C63-C65) appropriately tests for independent signals. The stronger effects in non-productive TCRs (C61) suggest a generation-related mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Correcting for population substructure was especially important for N-insertion analyses, revealing that the 'Asian'-associated PCA cluster had significantly fewer N-insertions for productive TCRs compared to the population mean (dominated by the 'Caucasian'-associated cluster). This finding may relate to broad heritable factors biasing N-insertion extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The importance of population structure correction is demonstrated by the observation of many spurious associations without it (C67). The ancestry-specific difference (C123) is statistically significant (P=0.006 without correction, P=0.036 with Bonferroni correction) and is supported by Figure 7. The speculation about heritable factors (C124) is appropriately qualified. This represents a novel finding about ancestry-related variation in TCR repertoire features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In an independent validation cohort of 94 individuals with TCR\u03b1 and TCR\u03b2 sequencing, a DCLRE1C SNP (rs12768894) was validated for associations with V- and J-gene trimming in both TCR chains. The most significant DNTT SNPs could not be validated due to lack of SNP overlap, though a weakly associated SNP (rs3762093) showed consistent direction of effect and was significant for V-J N-insertions in productive TCR\u03b1 chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation cohort provides independent replication for the DCLRE1C findings (C74, C76), strengthening confidence in those results. The validation extends to TCR\u03b1 chains, which were not available in the discovery cohort. The inability to validate the strongest DNTT associations (C78) is honestly reported and explained by lack of SNP overlap\u2014a limitation of the study design. The consistent direction of effect for rs3762093 (C82) despite lack of significance provides some support, and the stronger associations in TCR\u03b1 (C83) are interesting. The speculation about larger sample size (C84) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study demonstrates that genetic variation in V(D)J recombination genes shapes TCR repertoires through biasing gene choice, nucleotide trimming, and N-insertion. Key contributions include: (1) confirming and extending previous work on V-gene usage determinants, (2) discovering associations between DCLRE1C/DNTT variants and junctional features, (3) developing a gene-conditioned model to avoid confounding, and (4) revealing ancestry-related differences in N-insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately captures the main findings of the study. Each numbered contribution is supported by the detailed results: (1) MHC and TCRB associations extend Sharon et al., 2016 and Gao et al., 2019; (2) DCLRE1C and DNTT associations are novel findings for junctional features; (3) the gene-conditioned model is methodologically important; (4) ancestry differences are a novel observation. These represent the core scientific contributions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TCRB locus variation is associated with V(D)J gene usage biases in both productive and non-productive TCRs, extending previous work by quantifying effects in non-productive TCRs. This highlights that locus variation affects TCR generation (not just selection), likely through local gene regulation and/or recombination efficiency effects. For example, rs17213 in TRBV28's recombination signal sequence could directly affect recombination efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension beyond previous work (C91-C92) is substantiated by the analysis of non-productive TCRs. The inference about generation vs. selection (C93) is logical given the presence of associations in non-productive TCRs. The mechanistic speculation (C94-C96) is appropriately qualified and supported by the example of rs17213 (C95) and citation to work on B-cell receptors (C97, Mikocziova et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "MHC locus variation is associated with V-gene usage in productive but not non-productive TCRs, likely because V-genes encode the TCR regions (CDR1 and CDR2) that directly contact MHC during peptide presentation. While previous studies found similar associations, the specific variants and V-genes differ between studies, likely due to population composition and/or exposure history differences. The distinction between productive and non-productive TCRs supports the hypothesis that thymic selection is biased by germline-encoded TCR-MHC compatibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The productive vs. non-productive distinction (C98) is a key finding that supports a selection-based mechanism. The biological explanation (C99) is well-founded in TCR-MHC interaction biology (cited to Murphy and Weaver, 2016). The acknowledgment of differences from previous studies (C100-C102) is appropriate, and the speculation about causes is reasonable. The support for the germline compatibility hypothesis (C103-C104) is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "For the first time, specific genetic variants associated with modifying N-insertion and nucleotide trimming have been identified. DCLRE1C variation is associated with V- and J-gene trimming, with stronger effects in non-productive TCRs suggesting a generation-related bias. While Artemis's role in hairpin cutting is established, its direct involvement in trimming is unconfirmed. Artemis possesses 5' to 3' exonuclease activity and may be positioned to trim nucleotides. A non-synonymous DCLRE1C SNP (rs12768894) was validated in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of novelty (C105) is supported by the literature review (C106-C107). The DCLRE1C associations (C108-C109) are well-documented. The discussion of Artemis's known and potential roles (C110-C113) appropriately distinguishes established facts from speculation, citing relevant literature. The validation of rs12768894 (C114) strengthens the findings. The speculation about mechanism (C115) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "No strong associations were observed between DCLRE1C variation and P-nucleotides, despite the established relationship between P-addition and trimming. This absence could result from restricting analyses to the non-gene-trimmed subset, and associations might emerge with a larger dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This negative result is honestly reported with appropriate caveats. The manuscript cites established literature on the P-addition/trimming relationship (Gauss and Lieber, 1996; Srivastava and Robins, 2012; Murphy and Weaver, 2016) to contextualize why this is unexpected. The speculation about causes (C117-C118) is reasonable and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Associations were identified between DNTT variation and N-insertion numbers for both productive and non-productive TCRs. Given TdT's established direct role in N-insertion, DNTT locus variations could be influencing TdT protein function. Associations were slightly stronger for non-productive TCRs, suggesting thymic selection may limit the mechanistic effects of locus variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The associations are well-documented in the results. The speculation about mechanism (C120) is reasonable given TdT's established role. The observation about stronger effects in non-productive TCRs (C121) is consistent with the pattern seen for DCLRE1C and supports the interpretation of generation-related effects that are partially masked by selection in productive TCRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The significant SNPs could be eQTLs, but experimental work is required to determine whether they modify DCLRE1C and DNTT expression. More work is needed to elucidate the mechanistic relationship between DCLRE1C variation and trimming. Future work can focus on identifying correlations between TCR repertoires and immune exposures while accounting for genetically determined biases, continuing to disentangle genetic and environmental determinants of TCR repertoire diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately identify limitations and future directions. The speculation about eQTLs (C125) is reasonable but correctly notes the need for experimental validation (C126). The call for mechanistic studies (C127) is appropriate. The proposed future directions (C128-C129) logically build on the current findings and represent important next steps for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Key limitations include: (1) lack of SNP overlap between discovery and validation cohorts limited direct validation of strongest inferences; (2) SNP array data may not capture all causal variation, with significantly associated SNPs potentially in linkage disequilibrium with untested causal SNPs; (3) SNP coverage of the TCR\u03b2 locus is particularly sparse, with much actual TCR\u03b2 variation likely not captured by the 7,304 SNPs in the TRB locus region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are honestly and appropriately reported. The lack of validation SNP overlap (C130) is a real constraint acknowledged in the validation results. The concerns about incomplete SNP coverage (C131-C135) are supported by citations to previous work (Watson and Breden, 2012; Omer et al., 2022) showing that immune receptor loci are poorly captured by standard SNP arrays. This is an important caveat for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Non-productive rearrangements were used to study V(D)J recombination generation in the absence of selection, though this may be an imperfect proxy for pre-selection repertoire. While within-cell correlation between productive and non-productive rearrangements could imprint selection effects, there is no known evidence for such correlation. The study assumes independence between productive and non-productive events, consistent with common practice in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important methodological assumption that is appropriately discussed. The manuscript acknowledges the potential limitation (C137-C138) while noting the lack of evidence for the proposed mechanism (C139). The assumption of independence (C140) is supported by multiple citations to previous work using the same approach (Robins et al., 2010; Murugan et al., 2012; Zvyagin et al., 2014; Rubelt et al., 2016; Pogorelyy et al., 2018), indicating this is standard practice in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Inferring V(D)J rearrangements from sequences is challenging due to poor characterization of TCRA and TCRB loci, which are difficult to map with short-read sequencing. Many undocumented TRBV alleles likely remain undiscovered, limiting correct allele inference. Short-read sequencing captures only partial V-gene sequences, making unambiguous V-gene assignment difficult. D-gene assignment is also challenging due to short TRBD allele length (12-16 nucleotides). Controlling for D-gene assignment ambiguity yields similar significant associations, and biases seem mostly restricted to cis associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are important technical limitations that are honestly reported. The challenges are well-documented in the literature (cited to Omer et al., 2022 for incomplete TRBV characterization). The manuscript demonstrates awareness of these issues and shows that controlling for D-gene ambiguity produces similar results (C148), suggesting the main findings are robust. The conclusion that biases are mostly restricted to cis associations (C149) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "In summary, TCRB gene usage is associated with MHC and TCRB loci variation, N-insertion number is associated with DNTT variation, and nucleotide trimming extent is associated with DCLRE1C variation. The results clearly demonstrate how variation in V(D)J recombination-related genes can bias TCR repertoire combinatorial and junctional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately captures the three main findings of the study, each of which is well-supported by the detailed results. The conclusion (C153) appropriately synthesizes the findings and is supported by the totality of the evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "In B cells, genetically determined V(D)J gene usage biases have been linked to functional consequences for immune responses and disease susceptibility. The genetic TCR repertoire biases identified here lay groundwork for exploring diversity in immune responses and disease susceptibilities between individuals, enhancing understanding of how diverse TCR repertoires support robust immune responses. The findings provide a step toward understanding and predicting individual TCR repertoire composition, critical for personalized therapeutic interventions and rational vaccine design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The B-cell context (C154) is appropriately cited (Mikocziova et al., 2021) to provide precedent for the potential implications. The proposed implications (C155-C157) are reasonable extensions of the findings, though appropriately speculative. These represent important potential applications of the work, though they require future research to realize.",
+    "result_type": "MINOR"
+  }
+]

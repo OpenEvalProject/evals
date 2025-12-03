@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C76",
+      "C118"
+    ],
+    "result": "Drug resistance was more likely to evolve in low transmission settings due to lower immunity and reduced within-host competition between genotypes. The model shows that establishment probability was higher at low EIR, and selection coefficients for resistant parasites were higher in low transmission and seasonal settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C47-53, C60-63, C76, and C118 collectively demonstrate through model simulations (Figure 4, Figure 3 supplements 6-7) that low transmission settings favor resistance evolution. The mechanistic explanations (lower immunity, reduced co-infection, less within-host competition) are well-supported by the model structure and results. The probability of establishment data (Figure 4) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C82",
+      "C83"
+    ],
+    "result": "Spread of parasites resistant to long-acting partner drugs depended on the selection window\u2014the period of low drug concentration during which only resistant parasites can multiply. The selection window strongly depends on drug half-life, with longer half-lives creating extended selection windows that promote resistance spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-41, C54-56, C66, C82-83 are well-supported by model results shown in Figure 3 and supplements. The mechanistic explanation of selection windows is clearly demonstrated through pharmacokinetic modeling (Figure 1A). The relationship between half-life and resistance spread is consistently shown across different resistance degrees and settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Spread of partial artemisinin resistance was slowed when parasites were exposed to artemisinin derivatives for longer periods, achieved through longer drug half-lives or better treatment adherence. This occurs because partially resistant parasites remain susceptible to artemisinin during non-ring stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-37, C92-94 are supported by model results in Figure 3 and supplements showing that longer half-lives and higher adherence reduce selection coefficients for artemisinin-resistant parasites. The mechanistic basis (partial resistance, stage-specific effects) is supported by citations to experimental studies (C19, C93) and model parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C44",
+      "C45",
+      "C46",
+      "C65",
+      "C68",
+      "C69",
+      "C72",
+      "C119"
+    ],
+    "result": "Spread of partial artemisinin resistance was accelerated when parasites were also resistant to the partner drug. Resistance to partner drugs was the most critical factor enhancing artemisinin resistance spread, and evolution of ACT resistance begins with partner drug resistance followed by artemisinin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-29, C44-46, C65, C68-69, C72, C119 are strongly supported by model results in Figure 2A-B showing that partner drug resistance is the dominant driver of artemisinin resistance spread. The sequential evolution pathway is supported by both model results and molecular data citations (C70-71). The mechanistic explanation (partner drug failure allows artemisinin-resistant parasites to survive) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Under monotherapy, access to treatment and degree of resistance were the main drivers of resistance spread. At low treatment access, fitness cost had the largest influence, while at high access, drug properties became critical. Higher access and higher degrees of resistance promoted faster spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-24, C30-32 are supported by global sensitivity analysis results in Figure 2A and Figure 3 supplements 3-5. The first-order indices clearly show the relative importance of different factors. The transition from fitness cost dominance at low access to drug property dominance at high access is demonstrated across multiple settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "For parasites with high resistance to long-acting drugs, the Cmax/EC50 ratio had important influence on spread rate. Low Cmax/EC50 ratios resulted in insufficient drug killing duration, favoring spread of highly resistant parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-43 are supported by model results in Figure 3 supplement 4 showing the importance of Cmax/EC50 ratio for highly resistant parasites. The mechanistic explanation (insufficient killing duration when Cmax/EC50 is low) is consistent with pharmacodynamic principles and model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The probability of establishment depends on selection coefficient and heterogeneity in parasite reproductive success. The model estimated that for selection coefficients <0.2, establishment probability equals 0.87 times the selection coefficient, lower than the 2\u00d7 predicted by Poisson models, suggesting greater heterogeneity in P. falciparum transmission than standard models assume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-59, C97-99 are supported by model results in Figure 4 and population genetics theory citations. The quantitative estimate (0.87\u00d7 vs 2\u00d7) is derived from model simulations with appropriate methodology. The inference about greater heterogeneity is logically sound given the deviation from Poisson assumptions, though the model may not capture all sources of heterogeneity (C100-101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Molecular data from the Greater Mekong Subregion shows partner drug resistance preceded artemisinin resistance, and artemisinin resistance spread accelerated when linked to partner drug resistance. In Africa, low partner drug resistance has likely limited artemisinin resistance establishment. Low transmission in GMS may have favored resistance evolution compared to higher transmission in Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-71, C73-75 are supported by citations to molecular studies and WHO reports. These claims provide empirical validation of the model predictions about the importance of partner drug resistance and transmission intensity. However, these are observational data interpretations rather than results generated by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C120",
+      "C121"
+    ],
+    "result": "Key strategies to mitigate artemisinin resistance evolution include ensuring partner drugs efficiently kill partially resistant parasites, implementing molecular surveillance to detect partner drug resistance, switching ACTs when resistance is detected, and promoting treatment adherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-80, C120-121 are recommendations based on model results but include speculative elements about implementation (SPECULATION evidence type). While the model supports the underlying principles (partner drug importance, adherence effects), the practical effectiveness of these strategies requires empirical validation. These are policy recommendations rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C123",
+      "C124"
+    ],
+    "result": "Future antimalarial therapies should shorten selection windows by reducing partner drug half-lives or using triple ACTs (TACTs) with matched half-lives. For TACTs, the two long-acting drugs should have matching half-lives and the parasite population should lack resistance to either partner drug.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-90, C123-124 are recommendations based on model results but are largely speculative (SPECULATION evidence type). While the model demonstrates the importance of selection windows and partner drug resistance, the specific recommendations for TACTs involve untested assumptions about drug interactions, toxicity, and practical implementation (C88 notes difficulty in practice). These require additional modeling and empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C95",
+      "C96"
+    ],
+    "result": "Another approach to delay artemisinin resistance evolution is extending parasite exposure to artemisinin derivatives by using longer half-life derivatives or increasing treatment duration. However, this requires adequate adherence, which may be challenging in practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C95-96 are recommendations based on model results (C92-94) but include practical caveats (C96) and speculative elements. While the model supports the principle that longer exposure reduces spread, the practical implementation challenges (adherence, partner drug toxicity with extended regimens) are acknowledged but not modeled. Requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The model has several limitations: it does not capture stage-specific drug killing effects or artemisinin resistance impact on gametocytes (which may accelerate resistance spread), and it does not model recombination in mosquitoes (which may slow resistance spread in high transmission settings, especially for multi-locus resistance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-113 accurately describe model limitations acknowledged by the authors. The potential impacts of these limitations are reasonably assessed based on prior literature (citations provided). The authors appropriately qualify their results in light of these limitations, though some impacts (C105, C111-113) are speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model investigated establishment through importation of resistant parasites, representing either imported mutations or mutations emerging in mosquitoes. Mutations emerging during blood-stage may have lower establishment probability due to competition with sensitive parasites, though the estimated probabilities are consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-117 accurately describe the modeling approach and its implications. The limitation regarding blood-stage mutations (C116) is appropriately acknowledged as speculation. The consistency with previous studies (C117, citing Hastings 2004) provides external validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background context on ACTs, artemisinin resistance, and drug resistance evolution. ACTs combine short-acting artemisinin derivatives with long-acting partner drugs to delay resistance evolution. Partial artemisinin resistance has emerged despite ACT use. Drug resistance evolution follows a three-step process of mutation, establishment, and spread, with establishment being highly stochastic and influenced by heterogeneity in parasite reproductive success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-20 provide background context supported by citations to WHO guidelines and published literature. These are established facts in the field rather than novel results from this study. C18 notes the novelty of this study's systematic approach to assessing multiple factors jointly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C100",
+      "C101",
+      "C122"
+    ],
+    "result": "Host immunity influences parasite reproductive success by reducing parasite growth. Additional heterogeneity factors not captured by the model may further decrease establishment probability. Drug properties play an essential role in resistance evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C100-101, C122 are either established knowledge (C64) or appropriate caveats about model limitations (C100-101) supported by citations. C122 is a summary statement supported by the overall model results.",
+    "result_type": "MINOR"
+  }
+]

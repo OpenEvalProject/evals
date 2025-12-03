@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "H3pT11 upon low glucose stress is dependent on Snf1 signaling but not on Snf1 complex \u03b2/\u03b3 subunits, H3pS10, or downstream transcription factors. Snf1 pT210 and H3pT11 show parallel increases upon glucose depletion. The snf1\u0394 mutant shows reduced H3pT11 levels and impaired H3pT11 increase upon glucose depletion, while deletion of Snf1 target transcription factors, Rim15, or \u03b2/\u03b3 subunits does not affect H3pT11. H3pT11 and H3pS10 are independently regulated under low glucose stress. CK2 and Snf1 act in the same genetic pathway for H3pT11 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C55 are well-supported by western blot data (Figures 1A-F) showing temporal correlation between Snf1 activation and H3pT11, genetic requirements for Snf1 but not its regulatory subunits or downstream targets, and independence from H3pS10. The genetic epistasis data (C47) demonstrating non-additive effects of cka1\u0394 and snf1\u0394 deletions provides strong evidence for pathway convergence. The observation that gal83\u0394 (which lacks nuclear Snf1) does not reduce H3pT11 (C54) appropriately leads to the inference that Snf1 may not be the direct H3pT11 kinase (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CK2 is not a direct kinase for H3pT11 in vitro. While TAP-purified CK2 can phosphorylate H3 at T11, recombinant CK2 cannot. CK2 phosphorylates H3 at S10 but not T11 when using GTP as phosphate donor, and CK2-specific inhibitor CX-4945 blocks H3pS10 but not H3pT11 activity. These results indicate an unknown CK2-interacting kinase is responsible for H3pT11 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by multiple in vitro kinase assays (Figures 2B-E) using recombinant proteins, different phosphate donors, and specific inhibitors. The differential behavior between TAP-purified and recombinant CK2, combined with the lack of inhibition by CK2-specific inhibitor, provides strong evidence for the inference that a CK2-interacting kinase rather than CK2 itself is responsible for H3pT11 activity (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Tda1 is responsible for H3pT11 upon low glucose stress in vivo. The tda1\u0394 mutant shows significantly reduced H3pT11 levels, more severe than snf1\u0394, without affecting H3pS10. Tda1 protein levels increase in both cytoplasm and nucleus upon glucose depletion. The tda1\u0394 mutant shows impaired H3pT11 increase upon media shift to low glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are well-supported by western blot data (Figures 3A-D) demonstrating genetic requirement for Tda1 in H3pT11 regulation and increased Tda1 protein levels upon glucose depletion. The observation that tda1\u0394 has a more severe H3pT11 defect than snf1\u0394 (C62) is consistent with Tda1 being the direct kinase while Snf1 acts upstream. The specificity for H3pT11 without affecting H3pS10 (C63) supports independent regulation of these modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Tda1 directly phosphorylates H3 at T11 in vitro. The surrounding sequence of Hxk2 S15 (known Tda1 substrate) is similar to H3 T11. Both TAP-purified and recombinant Tda1 phosphorylate H3 at T11 but not S10. Domain mapping reveals the Tda1 catalytic domain resides in amino acids 1-380, with a potential inhibitory region in amino acids 381-426.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by sequence comparison (Figure 4A), in vitro kinase assays with purified proteins (Figures 4C-D), and domain mapping experiments (Figures 4E-F). The demonstration that both TAP-purified and recombinant Tda1 can phosphorylate H3 at T11 provides strong evidence for direct kinase activity. The domain mapping data showing differential activity of Tda1 fragments provides clear evidence for the catalytic domain location (C73) and the inference about an inhibitory region (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Snf1 directly phosphorylates Tda1. Tda1 shows multiple phosphorylated species on PAGE gels, with slowly migrating species dominant in WT under low glucose stress but faster migrating species dominant in snf1\u0394. Lambda phosphatase treatment confirms Tda1 is phosphorylated. Tda1 co-immunoprecipitates with both Snf1 and Cka1. In vitro kinase assays demonstrate that Snf1 directly phosphorylates the Tda1 C-terminal region (aa 354-586).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 are supported by western blot analysis of Tda1 migration patterns (Figure 5A), phosphatase treatment (Figure 5B), comparison across genetic backgrounds (Figure 5C), co-immunoprecipitation data (Figure 5\u2014figure supplement 1B,C), and in vitro kinase assays (Figures 5E-F). The convergence of multiple experimental approaches\u2014gel shift analysis, phosphatase treatment, genetic analysis, physical interaction, and direct biochemical assay\u2014provides strong evidence that Snf1 directly phosphorylates Tda1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Snf1 phosphorylates multiple sites on Tda1, with S483/T484 phosphorylation critical for Tda1 activity and H3pT11 regulation. Mass spectrometry identified multiple Snf1 phosphorylation sites on Tda1C, with S483/T484 showing highest modification. Among phosphorylation site mutants tested, only Tda1 S483A/T484A showed significantly reduced H3pT11 levels and impaired H3pT11 increase upon glucose depletion. The Tda1 S483A/T484A mutant shows normal nuclear localization but significantly reduced kinase activity against H3 T11 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 are supported by mass spectrometry data (Figure 6A, Supplementary file 1), western blot analysis of phosphorylation site mutants (Figures 6B-C), subcellular fractionation (Figure 6\u2014figure supplement 1A,B), and in vitro kinase assays (Figure 6D). The systematic mutagenesis approach identifying S483/T484 as the critical sites, combined with demonstration that this mutant has reduced kinase activity but normal localization, provides strong evidence that Snf1 regulates Tda1 activity through phosphorylation at these specific residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Tda1 S483/T484 phosphorylation is required for transcription of H3pT11 target genes. H3pT11 target genes (HSP26, GRE1, GND2, SOL4) show increased expression upon glucose depletion that is impaired in H3T11A mutant. The Tda1 S483A/T484A mutant cannot restore transcription of H3pT11 target genes and shows similar transcription levels to tda1\u0394, while non-target genes show similar expression across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by RNA-Seq data (Figure 6\u2014figure supplement 2A-B) and Q-RT-PCR analysis (Figure 6\u2014figure supplement 2C-D). The demonstration that Tda1 S483A/T484A mutant phenocopies tda1\u0394 for target gene expression but not non-target genes provides strong evidence linking Snf1-mediated Tda1 phosphorylation to transcriptional regulation through H3pT11. This connects the biochemical findings to functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "CK2 regulates H3pT11 by controlling Tda1 nuclear localization rather than Tda1 activity. CK2 does not affect global Tda1 phosphorylation levels or Tda1 kinase activity in vitro. However, Tda1 nuclear localization is significantly decreased in cka1\u0394 mutants. NLS-tagged Tda1 can restore H3pT11 in cka1\u0394 but not in snf1\u0394 mutants, demonstrating that Snf1 regulates Tda1 activity while CK2 regulates Tda1 nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 are supported by western blot analysis (Figure 5C), in vitro kinase assays (Figure 7\u2014figure supplement 1), subcellular fractionation (Figure 7A), and genetic rescue experiments with NLS-tagged Tda1 (Figures 7B-C). The differential rescue by NLS-tagged Tda1 in cka1\u0394 versus snf1\u0394 backgrounds provides particularly strong evidence for distinct mechanisms of regulation. This elegantly demonstrates how two pathways converge on Tda1 through different mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The mechanism by which Tda1 S483/T484 phosphorylation regulates activity remains unclear. These residues are located outside the catalytic domain (aa 1-380). The authors speculate that phosphorylation may relieve an inhibition mechanism or enable interaction with activating factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C114 include one supported observation (C112, based on domain mapping) and two speculative mechanistic proposals (C113-C114). While the location of S483/T484 outside the catalytic domain is established, the proposed mechanisms are explicitly speculative and lack experimental support. The authors appropriately present these as hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The mechanism by which CK2 regulates Tda1 nuclear localization is unclear. Mutation of the putative CK2 phosphorylation site S578 does not affect H3pT11. Tda1 lacks conventional phosphorylation-dependent NLS sequences. The authors infer that CK2 regulates Tda1-importin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is supported by western blot data (Figure 6B), and C117 is supported by sequence analysis. However, C116 is an inference based on the NLS rescue experiment rather than direct demonstration of importin interactions. The mechanism remains incompletely understood and requires identification of Tda1-specific importins and the molecular basis of CK2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study provides insight into how constitutively active CK2 participates in regulated processes. Although CK2 is constitutively active, H3pT11 requires active Snf1. The authors' previous work showed Sch9 is also required for H3pT11 and genetically interacts with CK2. The authors speculate that Sch9 may also regulate Tda1 nuclear localization and that Tda1 may serve as a signaling platform integrating Snf1, CK2, and Sch9 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 are supported by established knowledge (C118-C119) and the current data (C120). Claims C121-C122 are supported by citation to prior work. However, C123-C124 are speculative proposals about Sch9's role and Tda1 as a signaling platform. While these are reasonable hypotheses based on the genetic interactions, they lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Calcium/calmodulin-dependent kinases may phosphorylate H3pT11 in other contexts. Tda1 contains a calcium/calmodulin-dependent kinase domain. In yeast, there are 12 kinases with this domain, including Mek1 which phosphorylates H3 at T11 during meiosis. The H3T11 sequence fits the recognition motif of Cmk1 and Cmk2. The authors speculate these kinases could regulate H3pT11 in other situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by established knowledge from cited literature about yeast kinase families, Mek1 function, and substrate motif analysis. Claim C129 is a reasonable speculation based on these observations. While speculative, it is appropriately presented as a hypothesis and is grounded in the structural and functional similarities among these kinases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The findings may be conserved in higher eukaryotes through Nuak1, the human ortholog of Tda1. Nuak1 (ARK5) has 47% sequence homology to AMPK \u03b11 and is involved in cell survival upon nutrient starvation. Nuak1 predominantly localizes to the nucleus but its distribution changes upon stress in an importin \u03b2-dependent manner, suggesting conservation of the regulatory mechanisms identified for Tda1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by citations to established literature about Nuak1 orthology, nomenclature, sequence similarity, function, and localization. Claim C134 is an inference about functional conservation that is reasonable given the similarities in nutrient stress responses. The discussion appropriately frames these as suggesting conservation while acknowledging that direct experimental validation in mammalian systems would be needed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1400 @@
+{
+  "submission": {
+    "id": "0a21e419-0a23-40a9-8e90-dceb66a4266d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:02:41.204295Z",
+    "updated_at": "2025-12-03T06:02:41.204295Z"
+  },
+  "content": [
+    {
+      "id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "submission_id": "0a21e419-0a23-40a9-8e90-dceb66a4266d",
+      "content_type": "manuscript",
+      "content_text": "# Distinct skeletal stem cell types orchestrate long bone skeletogenesis\n\n## Authors\n\n- Thomas H Ambrosi<sup>1</sup> ([ORCID: 0000-0002-7149-041X](https://orcid.org/0000-0002-7149-041X))\n- Rahul Sinha<sup>1</sup>\n- Holly M Steininger<sup>1</sup>\n- Malachia Y Hoover<sup>1</sup>\n- Matthew P Murphy<sup>1</sup>\n- Lauren S Koepke<sup>1</sup>\n- Yuting Wang<sup>1</sup>\n- Wan-Jin Lu<sup>1</sup>\n- Maurizio Morri<sup>2</sup>\n- Norma F Neff<sup>2</sup>\n- Irving L Weissman<sup>1</sup>\n- Michael T Longaker<sup>1</sup>\n- Charles KF Chan<sup>1</sup> ([ORCID: 0000-0001-6570-7574](https://orcid.org/0000-0001-6570-7574)) \u2020\n\n### Affiliations\n\n1. Institute for Stem Cell Biology and Regenerative Medicine, Stanford University School of Medicine Stanford United States\n2. Chan Zuckerberg BioHub San Francisco United States\n3. Ludwig Center for Cancer Stem Cell Biology and Medicine at Stanford University Stanford United States\n4. Department of Surgery, Stanford University School of Medicine Stanford United States\n5. Hagey Laboratory for Pediatric Regenerative Medicine, Stanford University School of Medicine, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSkeletal stem and progenitor cell populations are crucial for bone physiology. Characterization of these cell types remains restricted to heterogenous bulk populations with limited information on whether they are unique or overlap with previously characterized cell types. Here we show, through comprehensive functional and single-cell transcriptomic analyses, that postnatal long bones of mice contain at least two types of bone progenitors with bona fide skeletal stem cell (SSC) characteristics. An early osteochondral SSC (ocSSC) facilitates long bone growth and repair, while a second type, a perivascular SSC (pvSSC), co-emerges with long bone marrow and contributes to shape the hematopoietic stem cell niche and regenerative demand. We establish that pvSSCs, but not ocSSCs, are the origin of bone marrow adipose tissue. Lastly, we also provide insight into residual SSC heterogeneity as well as potential crosstalk between the two spatially distinct cell populations. These findings comprehensively address previously unappreciated shortcomings of SSC research.\n\n## Introduction\n\nHarnessing the regenerative potential of skeletal stem cells (SSCs), as the therapeutic answer to osteoporosis, osteoarthritis, or fracture nonunions, is a long sought-after goal. Despite advances in identifying various bone marrow resident stromal cell subpopulations, translational progress has been hampered by low-resolution and inexact methodology and characterization, leading to heterogeneous and unspecific readouts (Bianco and Robey, 2015; Ambrosi et al., 2019). To date, bone marrow stromal cells (BMSCs) with stem cell-like characteristics are mainly enriched either by plastic\u00a0adherence or single fluorescence labeling in reporter mouse lines (Kfoury and Scadden, 2015). BMSCs have been improperly considered stem cells if they undergo osteogenic, chondrogenic, and adipogenic differentiation in vitro and express a specific set of surface markers when expanded in cultures while omitting tests for single-cell self-renewal and multipotency (Dominici et al., 2006). Lineage tracing mouse models have allowed spatial allocation and fate mapping of SSC-enriched populations in genetically labeled mice either constitutively through development and adulthood, or conditionally after timepoint-specific\u00a0induction (M\u00e9ndez-Ferrer et al., 2010; Mizoguchi et al., 2014; Zhou et al., 2014;\u00a0Debnath et al., 2018; Mizuhashi et al., 2018). However, each of these reporter models also marks more differentiated cell types in addition to non-skeletal lineages, thus limiting their utility as true tracers of in situ SSC activity. Recent progress in single-cell RNA\u00a0sequencing (scRNAseq) has provided a more comprehensive view of the heterogeneity within the bone marrow microenvironment and the diversity of cell types in subpopulations of cells previously considered stem cells (Baryawno et al., 2019; Tikhonova et al., 2019; Wolock et al., 2019; Baccin et al., 2020). While those studies give a snapshot of bone marrow mesenchymal cell diversity, they only infer in vivo functions by certain gene expression patterns known from previously described cell populations. Leptin receptor (LepR)-labeled cells, for example, have long been called SSCs, but they also label more mature cell types such as endothelial cells, pre-osteoblasts, osteoblasts, and chondrocytes of long bones (Zhou et al., 2014; Tikhonova et al., 2019). Therefore, we and others have relied on fluorescence-activated cell sorting (FACS) to prospectively isolate cells with unique surface marker profiles drawn from the selective expression of a broad panel of surface proteins in freshly isolated single-cell suspensions from enzymatically dissociated skeletal tissue (Sacchetti et al., 2007;\u00a0Tormin et al., 2011;\u00a0Chan et al., 2015; Ambrosi et al., 2017; Chan et al., 2018). Using this approach, we have identified a mouse and human SSC with a defined lineage hierarchy of downstream progenitor cell populations and their translational value that revealed novel targets for bone and cartilage repair (Murphy et al., 2020; Ambrosi et al., 2019; Tevlin et al., 2017). These osteochondrogenic SSCs (ocSSCs) are restricted to bone, cartilage, and stromal lineage output but do not give rise to bone marrow adipose tissue (BMAT) (Ambrosi and Schulz, 2017). Strikingly, using a different set of surface markers, a perivascular SSC (pvSSC) with tri-lineage potential has been shown to be the main source of bone marrow adipocytes, implying the existence of multiple stem cell-like populations (Ambrosi et al., 2017). In support of this possibility, a\u00a0recent scRNAseq analysis on bone marrow mesenchyme also inferred that at least two origins for osteogenic cell fates in the bone marrow exist (Baryawno et al., 2019).\n\nHere, we investigated ocSSCs and pvSSCs in mice to confirm their bona fide stem cell properties and show that they are unique SSC types that are molecularly and functionally distinct.\n\n## Results\n\n### Postnatal long bones harbor SSC subtypes with exclusive adipogenic potential\n\nUsing FACS, we have previously identified an osteochondral SSC (CD45-Ter119-Tie2-CD51+Thy1-6C3-CD105-) that gives rise to a bone cartilage and stromal progenitor (BCSP) that in turn generates more lineage-restricted osteochondrogenic and stromal lineages (Chan et al., 2015). Additionally, a pvSSC (CD45-CD31-Pdgfr\u03b1+Sca1+CD24+) has been described using a different set of markers to be the source of committed adipogenic progenitor cell\u00a0(APC) types and eventually all BMAT (Figure 1A,B; Ambrosi et al., 2017). To functionally compare their respective SSC properties, we freshly FACS purified equal numbers of ocSSCs and pvSSCs from newborn Actin-CreERt Rainbow mice (Rainbow mice) and transplanted each population under the renal capsule of immunodeficient NSG mice. We allowed cells to engraft and pulsed Rainbow mice with two doses of tamoxifen 3 and 4\u00a0days post-transplant. While all transplanted cells from Rainbow mice are initially green fluorescent protein (GFP)-positive, tamoxifen-induced recombination activates additional color fluorescent protein expression (GFP, mCerulean, mOrange, mCherry) to enable unique genetic colorimetric labeling of single cells, which could then be assessed to track their clonal activity and lineage potential in the subsequent 2-week interval. We observed high clonal activity in transplants with ocSSCs and pvSSCs, which is a hallmark of stem cell activity (Figure 1C), as well as clonally derived osteochondrogenic and osteochondroadipogenic cell types in ocSSC and pvSSC\u00a0grafts, respectively (Figure 1\u2014figure supplement 1A). We next transplanted freshly FACS-purified GFP-labeled ocSSCs and pvSSCs from newborn mice under the renal capsule of NSG mice to assess heterotopic bone formation in vivo. 4-week grafts of both cell populations formed ossicles with bone and cartilage capable of generating an ectopic hematopoietic niche through recruitment of host-derived blood and immune cells (Figure 1D,E and Figure 1\u2014figure supplement 1B). As expected, only pvSSC-derived grafts contained adipocytes. To confirm the\u00a0long-term self-renewal of SSCs, we dissociated 4-week grafts for FACS analysis and found, in line with in vitro expanded cells, that phenotypic ocSSCs and pvSSCs remained present (Figure 1\u2014figure supplement 1C). Fibroblast colony-forming unit (CFU-F) and tri-lineage differentiation assays on freshly bulk-isolated ocSSCs and pvSSCs also showed high clonogenic and osteochondrogenic differentiation potential in vitro (Figure 1\u2014figure supplement 1D,E). Strikingly, in comparison to pvSSCs, ocSSCs did not acquire adipogenic potential even under strong adipogenic stimuli and when isolated from BMAT-rich long bones of 2-year-old mice (Figure 1\u2014figure supplement 1F). This difference in lineage potential was also observed in single-clone CFUs derived from individual sorted ocSSCs and pvSSCs (Figure 1F). Finally, we traced the lineage output of ocSSCs and pvSSCs in their endogenous environments in vivo. We sublethally irradiated NSG mice to enhance engraftment and injected freshly sorted GFP-labeled SSC populations into the intramedullary space of the tibia. 2 weeks later, tibia bones were sectioned and immunohistologically stained for osteogenic (osteocalcin), chondrogenic (collagen 2), and adipogenic (perilipin) fates. Again, osteochondrogenic lineage output was observed in both cell types, and only pvSSCs generated perilipin-positive bone marrow adipocytes (Figure 1G and Figure 1\u2014figure supplement 1G\u2013I). Taken together, ocSSCs and pvSSCs display bona fide stem cell characteristics including high clonogenicity, long-term self-renewal, and multi-differentiation capacity in vitro and in vivo but show disparate adipogenic potential.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig1-v1.jpg)\n\n**Figure 1.:** (A) Diagram showing two previously described skeletal stem cell (SSC) populations and the downstream populations they generate, which were defined by the specific expression patterns of cell surface proteins. Top: SSC lineage tree of the osteochondral SSC (ocSSC) that gives rise to bone, cartilage, and stromal populations. Bottom: the lineage tree of the perivascular SSC (pvSSC) able to give rise\u00a0to bone, cartilage, adipose tissue, and stromal\u00a0populations. BCSP: bone cartilage stroma progenitor; CP: cartilage\u00a0progenitor; APC: adipogenic\u00a0progenitor\u00a0cell; Pre-Ad.: pre-adipocyte; OPC: osteochondrogenic\u00a0progenitor\u00a0cell. (B) Representative flow cytometric gating strategy for the isolation of ocSSCs (top) and pvSSCs (bottom). (C) Representative confocal microscopy images of in vivo derived single-color clonal colonies of renal\u00a0capsule-transplanted purified ocSSCs (left) and pvSSCs (right) derived from Actin-CreERt\u00a0Rainbow mice. Three independent transplants per cell type under renal capsules were performed. (D) Renal capsule transplant-derived ossicles of purified GFP-labeled ocSSCs (top) and pvSSCs (bottom). Images show the\u00a0photograph of the\u00a0kidney with transplant (top left) and GFP signal of graft tissue (bottom left) as well as Movat pentachrome cross-section staining (right). (E) Quantification of ocSSC (top) and pvSSC (bottom) graft composition. Results of three separate experiments with n\u00a0=\u00a03 per SSC type. All data are shown as mean \u00b1 SEM. (F) Representative images of staining of clonally derived cultures that underwent tri-lineage differentiation assays in vitro. Alcian blue (chondrogenesis), Alizarin red S (osteogenesis), and oil red O (adipogenesis) stainings are shown along with the\u00a0number of clones that stained positive for each differentiation type (ocSSC n\u00a0=\u00a07; pvSSC n\u00a0=\u00a08 clones). (G) Representative immunohistochemistry images for GFP (green) and perilipin (red) of tissue derived from intratibially transplanted purified GFP-labeled ocSSCs (top) and pvSSCs (bottom) 2 weeks after injection. White arrowheads: GFP+Perilipin+ cells.\u00a0TB:\u00a0trabecular\u00a0bone. Three separate experiments with ocSSC\u00a0n\u00a0=\u00a03 and\u00a0pvSSC\u00a0n\u00a0=\u00a04. Scale bars, 30 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Clonally derived osteochondrogenic (OC) and adipogenic (Ad) cell types of transplanted purified osteochondrogenic skeletal stem cells\u00a0(ocSSCs) (top) and perivascular SSCs\u00a0(pvSSCs) (bottom) isolated from \u2018Rainbow\u2019 mice detected in derived renal grafts. Left, Movat pentachrome staining of graft tissue and right, adjacent section with immunofluorescence of a green and a red clone. (B) Flow cytometric profile of GFP-labeled ocSSC (top)\u00a0or pvSSC (bottom)-derived graft tissue of renal transplants for expression of CD45 and GFP. (C) Representative flow cytometric profiles of in vitro (left) derived primary cultures of purified ocSSCs (top) and pvSSCs (bottom) as well as in vivo generated grafts (right). (D) Fibroblast colony-forming unit (CFU-F) assay results of purified ocSSCs and pvSSCs from long bones of E17.5 embryos and 8-week-old mice (n\u00a0=\u00a03 per age\u00a0group). Representative colonies derived from ocSSCs and pvSSCs stained for crystal violet are shown above respective data columns. (E) Tri-lineage differentiation outcome of bulk-sorted ocSSCs (left) and pvSSCs (right) from E17.5- or 8-week-old-mouse-derived long bones. Alcian blue (chondrogenesis), Alizarin red S (osteogenesis), and oil red O (adipogenesis) stainings are shown. APCs (adipogenic progenitor cells) that underwent chondrogenesis are shown as control. (F) Oil red O stainings of ocSSC and pvSSC derived from long bones of 24-month-old mice (24-mo) that underwent adipogenic differentiation are shown. (G) Immunohistochemistry fluorescence image of GFP-labeled ocSSC (top)- and pvSSC (bottom)-derived cells 2 weeks after intratibial injection. GP\u00a0=\u00a0growth plate. (H) Co-staining of ocSSC (top)- and pvSSC (bottom)-derived cells (green) with the osteogenic label osteocalcin (OCN) and (I) the chondrogenic label COL2. Scale bars, 30 \u00b5m. All data are shown as mean + SEM. Significance between groups assessed by unpaired, two-tailed Student\u2019s t-test and corrected with Welch\u2019s test for unequal distribution if needed.\n\n### Osteochondral and perivascular SSCs are distinct skeletal stem cell populations\n\nSSCs have been shown to occupy specific microenvironments. In agreement with the original reports, we found that ocSSCs/BCSPs are enriched in micro-dissected non-marrow fractions of femurs while pvSSCs and the committed APCs are more evenly distributed but accumulate at the ends of long bones where coincidentally BMAT first appears (Figure 2A and Figure 2\u2014figure supplement 1A; Chan et al., 2015; Scheller et al., 2015; Ambrosi et al., 2017). Of note, both SSC types were found on the periosteum, a site described to harbor a distinct stem cell for bone regeneration (Debnath et al., 2018; Duchamp de Lageneste et al., 2018). Flow cytometric analysis of long bones at different timepoints during skeletal maturation further revealed that ocSSCs are present in high abundance at the early stages of limb development (E13.5), linking them to bone formation. Contrastingly, pvSSCs are first detectable around E15.5, similar to hematopoietic stem cell (HSC) detection in mouse bone marrow, and peak perinatally (Figure 2B; Rowe et al., 2016). To explore the temporal\u00a0connection between pvSSC and adipocyte\u00a0emergence, we tested whether the absence of pvSSCs precludes appearance of BMAT formation. To that end, we isolated long bones from ubiquitously GFP-expressing mice at E12-E13.5, during which they are enriched with ocSSCs, as well as from postnatal day (P) 1\u201310 at which stage pvSSCs become more prominent. We then transplanted dissected bones from these different timepoints under the renal capsule of young NSG mice for 4 weeks. Interestingly, transplanted \u2264E13.5 tibias failed to develop GFP-labeled\u00a0diaphyseal\u00a0bone marrow adipocytes whereas \u2265P1 tibia bones strongly accumulated adipocytes below the growth plate in this experimental setting (Figure 2C and Figure 2\u2014figure supplement 1B\u2013D), corresponding to the difference in the frequency of ocSSCs vs pvSSCs between these stages. To further rule out that ocSSCs and pvSSCs are overlapping cell populations, we included Sca1, one of the positive markers used to purify pvSSCs, to our ocSSCs/BCSPs surface marker profile for flow cytometric analysis. We found that Sca1 expression was virtually absent in newborn and 8-week-old uninjured long bone as well as post-fracture day-5 and -15 ocSSCs/BCSPs (Figure 2D). Analysis of the ocSSC lineage tree revealed that the majority of Sca1-positive\u00a0cells were contained in the Tie2-positive fraction, in agreement with our earlier work showing adipogenic potential of that population (Figure 2\u2014figure supplement 1E,F; Chan et al., 2013). Importantly, ocSSCs from E13.5 and newborn mice did not give rise to pvSSCs/APCs in 4-week renal grafts, and pvSSC-derived grafts did not generate ocSSCs/BCSPs (Figure 2E and Figure 2\u2014figure supplement 1G). Altogether, these results indicate that two distinct SSC types with specific developmental occurrence and anatomical distribution exist in postnatal mouse long bones.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig2-v1.jpg)\n\n**Figure 2.:** (A) Flow cytometric quantification of micro-dissected long bone regions of 8-week-old mice for the prevalence of osteochondrogenic\u00a0skeletal stem cells (ocSSCs), bone cartilage and stromal progenitors (BCSPs), perivascular SSCs\u00a0(pvSSCs), and adipogenic progenitor cells\u00a0(APCs). EP: epiphysis, MP: metaphysis, DP: diaphysis, PE: periosteum (n\u00a0=\u00a03 mice). (B) Frequency of ocSSCs, BCSPs (top) and pvSSCs, APCs (bottom) in the long bones of mouse embryos developing\u00a0into postnatal life assessed by flow cytometry (n\u00a0=\u00a03 mice per age group). (C) Dissected limb bones of GFP-expressing embryos between E12-E13.5 (\u2264E13.5) and postnatal day 1\u201310 (\u2265P1) were transplanted under the renal capsule of NSG mice. 4 weeks after transplantation, bones were dissected out and sectioned for hematoxylin and eosin staining (left) and immunohistological staining for GFP (green) and perilipin (red) quantified as the\u00a0percentage of GFP+Perilipin+ (right) cells (n\u00a0=\u00a04 bones per age group) below the distal growth plate. (D) Representative flow cytometric plots showing Sca1 expression in cells gated for CD45-Ter119-Tie2-CD51+6C3-Thy1- (ocSSC/BCSP) in long bones at postnatal day 1 and at 8 weeks of age (uninjured) as well as during regeneration at days post fracture (dpf) 5 and 15. (E) Flow cytometric analysis of lineage output in ocSSC (n\u00a0=\u00a04)- and pvSSC (n\u00a0=\u00a05)-derived renal grafts displayed as the\u00a0percentage of all donor-derived cells from at least two independent experiments. All data are shown as mean + SEM. Scale bars, 30 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative flow cytometric plots of single-cell suspensions from 8-week-old long bones dissected into metaphysis/GP (growth plate) and flushed bone marrow stained for osteochondrogenic\u00a0skeletal stem cells\u00a0(ocSSCs) (top) and perivascular SSCs (pvSSCs) (bottom). (B) Image of GFP-labeled tibia and thoracic spine transplanted under the renal capsule (left). Image of GFP-labeled postnatal day 1 (P1) and E13.5 tibia bones dissected from the renal capsule of NSG mice 4 weeks after transplantation (right). (C) Flow cytometric analysis of transplanted and dissected out tibia\u00a0bones for GFP+ocSSCs and bone cartilage and stromal progenitors (BCSPs). (D) Flow cytometric analysis of transplanted and dissected out tibia\u00a0bones for GFP+Sca1+ cells. (E) Representative flow cytometric plot showing gating for ocSSC lineage tree from CD45-Ter119-Sca1+ cells. (F) Quantification of flow cytometric data of ocSSC lineage tree cell populations as percentage of CD45-Ter119-Sca1+ cells (n\u00a0=\u00a03 mice). (G) Renal transplants of GFP-labeled E13.5 long bone-derived ocSSCs showing flow cytometric plot (left) and quantification of derived phenotypic pvSSC/APC (right) (n\u00a0=\u00a03). All data shown as mean + SEM.\n\n### SSC diversity serves distinct niche functions\n\nHaving established the existence of the two SSC populations, we next asked how they were molecularly and functionally diverse. We conducted SmartSeq2 scRNAseq analysis on a dataset filtered for high-quality ocSSCs (143 cells) and pvSSCs (169 cells) from young adult mice (Figure 3\u2014figure supplement 1A\u2013C; Picelli et al., 2014). Strikingly, ocSSC and pvSSC clustered separately with Ly6a/Sca1 expression pattern, confirming cell-type specificity (Figure 3A and Figure 3\u2014figure supplement 1D). Gene ontology\u00a0(GO) analysis of differentially expressed genes between both cell types through GO Biological Processes demonstrated a strong association of ocSSCs with skeletal development and formation, while pvSSC genes were linked to extracellular matrix organization and regulation of hematopoietic cell types (Figure 3B,C). The ocSSC population also expressed much higher levels of commonly known osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1), whereas pvSSCs exhibited elevated gene counts for fibroblast markers (Pdgfra, Postn, Dpt) and factors related to hematopoietic interactions (Cxcl12, Igf1, Rarres2) (Figure 3D). Collectively, these findings suggested that ocSSCs are a major source of bone-forming cells while pvSSCs might contribute to specific\u00a0niche environments in long bones. To test this functionally, we sublethally irradiated mice to compromise hematopoietic niches and assessed cell frequencies in long bones via flow cytometry 2 weeks later. pvSSCs and their downstream APCs were strongly increased compared to non-irradiated mice in line with their potential role in supporting hematopoietic recovery and the increase in BMAT seen upon radiation (Naveiras et al., 2009), while irradiation-sensitive ocSSC/BCSPs showed\u00a0a\u00a0decline in numbers (Figure 3E and Figure 3\u2014figure supplement 1E). In contrast, when we assessed the prevalence of SSC types during bi-cortical fracture regeneration, we found ocSSCs to accumulate significantly more in callus tissue compared to pvSSCs as expected from their pivotal role in skeletal repair (Figure 3F and Figure 3\u2014figure supplement 1F; Marecic et al., 2015). Since aging is known to drive bone loss and BMAT accumulation in mouse bones, we compared pvSSC and ocSSC cell frequencies in 2- and 30-month-old mice. While bone anabolic ocSSCs were significantly reduced with age, bone marrow adipocytes forming pvSSCs/APCs were increased (Figure 3G). Finally, co-transplantation of equal numbers of purified, uniquely labeled SSC types under the renal capsule of NSG mice generated ossicles with ocSSCs as a key contributor to osteochondrogenic tissue and reticular cells, whereas pvSSC-derived\u00a0cells were more prevalent in areas anatomically close to host-derived hematopoietic tissue (Figure 3H). In sum, these findings suggest different functional roles between osteochondral and pvSSCs and that changes in their abundance correspond to disturbances in skeletal homeostasis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig3-v1.jpg)\n\n**Figure 3.:** (A) Single-cell RNA-sequencing analysis results of 143 osteochondrogenic skeletal stem cells\u00a0(ocSSCs) and 169 perivascular SSCs\u00a0(pvSSCs) shown as clustering by\u00a0Uniform Manifold Approximation and Projection (UMAP). (B) Top Gene\u00a0Ontology\u00a0(GO) Biological Processes by all differentially expressed genes between ocSSCs and pvSSCs as determined through EnrichR. (C) Track plots of top 10 differentially expressed genes in ocSSCs and pvSSCs showing individual peaks per cell as the\u00a0degree of their expression. (D) Dot plots showing expression of selected genes in ocSSCs and pvSSCs previously reported to characterize specific cell types. (E) Flow cytometric quantification of ocSSCs and pvSSCs 2 weeks after whole-body sublethal irradiation of 8-week-old mice (n\u00a0=\u00a06 control; n\u00a0=\u00a07 5Gy, from two independent experiments). (F) Flow cytometric quantification of ocSSCs and pvSSCs at various days after stabilized bi-cortical femoral fractures of 8-week-old mice shown as fold change of uninjured (n\u00a0=\u00a03 per timepoint from two independent experiments). (G) Flow cytometric quantification of ocSSCs, bone cartilage and stromal progenitors (BCSPs), pvSSCs, and\u00a0adipogenic progenitor cells\u00a0(APCs) in long bones of young (8 weeks; n\u00a0=\u00a03) and aged (30 months; n\u00a0=\u00a03) mice\u00a0shown as fold change of young. (H) Renal capsule-derived grafts of co-transplants of equal numbers of ocSSCs and pvSSCs showing Movat pentachrome-stained cross-section (left) and the\u00a0corresponding immunohistological staining (right) for GFP (ocSSC-derived cells) and red fluorescent protein (RFP) (pvSSC-derived cells). Light blue arrowhead: cartilage (Ca); yellow arrowhead: bone (Bo); brown arrowhead: marrow (Ma) lining cells. All data are shown as mean + SEM. Significance between groups was\u00a0assessed by unpaired, two-tailed Student\u2019s t-test and corrected with Welch\u2019s test for unequal distribution if needed. Scale bars, 30 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Total read counts (top) and uniquely mapped reads (bottom) of quality-filtered osteochondrogenic\u00a0skeletal stem cells (ocSSCs) (143 cells) and perivascular SSCs (pvSSCs) (169 cells). (B) ERCC (External\u00a0RNA Controls\u00a0Consortium)\u00a0fraction of all read counts (top) and gene count (bottom) of quality-filtered ocSSCs (143 cells) and pvSSCs (169 cells). (C) Plots showing ribosomal (top) and mitochondrial (bottom) genes as percentage of total gene expression in filtered datasets. (D) Expression of Ly6a/Sca1 in single-cell RNA-sequencing data from ocSSCs and pvSSCs. (E) Flow cytometric quantification of bone cartilage and stromal progenitors\u00a0(BCSPs) and adipogenic progenitor cells\u00a0(APCs) 2 weeks after whole-body sublethal irradiation of 8-week-old mice (n\u00a0=\u00a06 control; n\u00a0=\u00a07 5Gy, from two independent experiments). (F) Flow cytometric quantification of BCSPs and APCs at various days after stabilized bi-cortical femoral fractures of 8-week-old mice shown as fold change of uninjured (n\u00a0=\u00a03 per timepoint from two independent experiments). Statistical testing was\u00a0performed\u00a0by unpaired, two-tailed Student\u2019s t-test between groups. All data are shown as mean + SEM.\n\n### Commonly used single gene cell labels do not faithfully mark pure skeletal stem cells\n\nReporter mouse models are a crucial tool for the study of bones, including stem cell-based skeletal processes. However, available lineage tracers merely enrich for SSC populations (Ambrosi et al., 2019; Tikhonova et al., 2019) and, therefore, conclusions drawn need to be carefully put into perspective (Figure 4A). scRNAseq data suggested that genes reported to describe SSC populations, for\u00a0example, Pthrp, Ctsk, Cxcl12, and\u00a0Osx, show variable expression within and between ocSSCs and pvSSCs (Figure 4B; Greenbaum et al., 2013; Mizoguchi et al., 2014; Mizuhashi et al., 2018; Debnath et al., 2018). Similarly, reporter strains for labeling more mature cell types such as chondrocytes (Col2a1, Acan) and osteoblasts (Col1a1, Spp1) also show expression in stem cell-like populations (Figure 4B). Recently, LepR expression has been shown to strongly enrich for bone CFU-F although bulk-sequencing and scRNAseq strongly suggest that LepR-expressing populations are highly heterogeneous (Zhou et al., 2014; Tikhonova et al., 2019; Figure 4A,B). When we analyzed LepR expression on ocSSC/pvSSC lineage populations by FACS, we found LepR expression in both cell types (Figure 4C). Separating ocSSCs or pvSSCs into LepR-positive and -negative fractions did not alter CFU-F capacity (Figure 4D) and potential to give rise to osteocalcin-expressing osteoblasts in vitro (Figure 4E\u2013F). These results highlight the greater ability of flow cytometry to resolve functionally distinct SSC variants by simultaneously tracking expression of a panel of surface proteins over reporter mouse models that rely on the\u00a0selective expression of a single gene.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig4-v1.jpg)\n\n**Figure 4.:** (A) Microarray data of freshly purified bulk cell populations of the previously defined osteochondrogenic skeletal stem cell (ocSSC) and perivascular SSC\u00a0(pvSSC) lineage trees from 8-week-old mice showing gene expression of markers commonly known to trace and/or label cell populations enriched for SSCs. Expression is shown as normalized activity as processed by GEXC (Gene Expression Commons). Each cell-type represents\u00a0a\u00a0pool of cells derived from three to four mice. (B) Single-cell heatmaps of gene expression of markers commonly used to trace and/or label cell populations enriched for SSCs as observed in single-cell RNA-sequencing (scRNAseq) results of ocSSCs and pvSSCs. (C) Flow cytometric analysis of antibody labeling for leptin receptor\u00a0(LepR) in different populations of the ocSSC and pvSSC lineage trees in differently aged mice (n\u00a0=\u00a03). (D) Fibroblast\u00a0colony-forming unit (CFU-F) assay of freshly isolated ocSSCs and pvSSCs separated by their expression of LepR (ocSSC n\u00a0=\u00a09; pvSSC n\u00a0=\u00a06, from two independent experiments). (E) Expression of osteocalcin (OCN, green) in in vitro osteogenically differentiated ocSSCs and pvSSCs in LepR-positive and -negative fractions. (F) Quantification of percentage of cells expressing OCN as determined by antibody labeling at 2 weeks of osteogenic differentiation (n\u00a0=\u00a05). Significance between groups was\u00a0assessed by unpaired, two-tailed Student\u2019s t-test. All data are shown as mean + SEM. Scale bars, 30 \u00b5m.\n\n### Stem cell crosstalk by distinct SSC subpopulations facilitates niche interactions\n\nTo assess the\u00a0diversity within ocSSC and pvSSC variants, we conducted Leiden clustering on our scRNAseq dataset. This yielded three subclusters for ocSSCs while pvSSCs were homogeneous in their overall gene signature (Figure 5A). Looking at the top differentially expressed genes between the four clusters, we found that clusters 3 and 4 were enriched for marker genes of chondrogenic and osteogenic fates, respectively (Figure 5B,C). Further, cluster 1 (pvSSCs) and cluster 2 were enriched for stem cell-associated genes (Figure 5C and Figure 5\u2014figure supplement 1A), whereas clusters 3 and 4 showed pathway enrichment related to active bone formation processes (Figure 5\u2014figure supplement 1B). Cell cycle status and CytoTrace analysis additionally inferred that osteochondrogenic SSC-enriched clusters were more active (Figure 5\u2014figure supplement 1C,D), altogether suggesting that ocSSCs contained a larger fraction of cells pre-primed to commit to specific fates, potentially reflecting their primary role in constantly maintaining and remodeling bones. As we observed that both SSC types can form ectopic bone, complete with hematopoietic marrow, and that co-transplantation seems to result in a defined, coordinated lineage output (Figures 1D and 3H), we next looked for possible signaling interactions between ocSSCs and pvSSCs. Leiden clusters revealed patterns in expression of combinations of ligands and cognate receptors that are highly suggestive of crosstalk between ocSSCs and pvSSCs (Figure 5D and Figure 5\u2014figure supplement 1E). For example, cells of cluster 1 (pvSSCs) expressed Tgfb2/Tgfb3 and Wnt\u00a0ligand\u00a0genes, well-known pro-chondrogenic and -osteogenic signals, which might support the\u00a0specific fate commitment of ocSSCs enriched in clusters 2\u20134 that expressed respective receptors (Figure 5D). Reversely, Bmp, Tgfa, and Egf ligands from cells of primed clusters 3 and 4 might also signal back to pvSSCs, which express the canonical cognate receptor\u00a0genes to these pathways, implying feedback regulation across SSC types (Figure 5D). Finally, previous studies have mapped ocSSCs to the growth plate and pvSSCs to\u00a0perivascular bone marrow regions using in situ localization (Chan et al., 2015; Ambrosi et al., 2017). Taking advantage of our scRNAseq dataset, we identified cadherin-13 (Cdh13), the receptor for the adipogenic factor adiponectin (Hug et al., 2004), and Wnt\u00a0inhibitory\u00a0factor-1 (Wif1), previously identified to be expressed in a small subset of BMSCs (Tikhonova et al., 2019), as new marker genes for the most stem cell-like clusters 1 (pvSSC) and 2 (ocSSC), respectively (Figure 5E,F). In situ hybridization by RNAscope confirmed a restricted expression of Wif1 in the resting and proliferative zones of the growth plate, while Cdh13 was absent and found in cells located in the bone marrow close to endomucin-expressing vasculature (Figure 5G,H). As observed via flow cytometric analysis, Wif1- and Cdh13-expressing cells were also found among periosteal cells (Figure 5\u2014figure supplement 1F,G). In summary, these results confirm the\u00a0distinct and overlapping anatomical localization of SSC variants in long bones and provide a glimpse into the complex crosstalk between them.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig5-v1.jpg)\n\n**Figure 5.:** (A) Single-cell RNA-sequencing analysis results of osteochondrogenic\u00a0skeletal stem cells (ocSSCs) and perivascular SSCs\u00a0(pvSSCs) shown as Leiden clustering to reveal heterogeneity within cell populations (top). Composition of clusters by SSC type (bottom). Cluster 1: 155 cells; cluster 2: 57 cells; cluster 3: 70 cells; cluster 4: 30 cells. (B) Heatmap of top 40 differentially expressed genes for each of the four Leiden clusters. (C) Violin plots of selected marker genes for each of the four Leiden clusters. (D) Expression of selected ligands and their receptors in Leiden clusters of SSC populations. Connected ligand-receptor genes in pairs have scaled z-score expression >0.5. (E) Expression of cluster 2-specific marker Wif1 in UMAP plot. (F) Expression of cluster 1-specific marker Cdh13 in UMAP plot. (G) Representative in situ RNAscope images showing detection of the Wif1 RNA transcripts in the growth plate (left) and their\u00a0absence in diaphyseal bone marrow (right). (H) Representative in situ RNAscope images showing detection of the Cdh13 RNA transcripts in diaphyseal bone marrow (right) and their\u00a0absence in the growth plate (left). Red arrowheads: RNA transcript-expressing cells. RZ: resting zone; PZ: proliferative zone; HZ: hypertrophic zone. Scale bars, 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66063/elife-66063-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Expression of genes previously associated with stem cell-like populations and their expression in the four Leiden clusters. (B) Pathway enrichment analysis of top 100 genes expressed in Leiden clusters as determined by BioPlanet 2019 through EnrichR. (C) Cell cycle analysis of single-cell RNA-sequencing (scRNAseq) data with cell cycle status distribution in different Leiden clusters. (D) CytoTrace scores for cells of each cluster. Data are\u00a0shown as box plots with min to max distribution (cluster\u00a01: 155 cells; cluster\u00a02: 57 cells; cluster\u00a03: 70 cells; cluster\u00a04: 30 cells). (E) Gene expression of receptors reported to be involved in skeletal regulation in the four Leiden clusters. (F) Representative in situ RNAscope images showing detection of the Wif1 (top) and Cdh13 (bottom) RNA transcripts in periosteal cells. (G) Schematic summary of the\u00a0presented work. Single-cell suspension of mechanically and enzymatically digested bone tissue with subsequent selection by plastic adherence has long been used as a gold standard to enrich for skeletal stem and progenitor cells. Going beyond single-gene label selection for skeletal stem cell\u00a0(SSC) populations, this work prospectively isolated SSC subtypes using a combination of surface markers. Functional in vitro and in vivo studies combined with SmartSeq2 scRNAseq revealed the existence of two distinct bona fide SSC types, an osteochondral and a perivascular SSC, with differences with respect to their anatomical localization, developmental appearance, differentiation capacity, and function. Scale bars, 10 \u00b5m.\n\n## Discussion\n\nThe current knowledge of stem cell-dependent processes for maintaining skeletal function and regeneration is based on imprecise approaches. Using a rigorous procedure to establish SSC identities and properties, our presented work here provides a new perspective into the complexity of bone tissue and how its integrity is facilitated at the stem cell level. The description of two SSC types with distinct differentiation potentials challenges the general assumption of bifurcation choices for osteogenesis versus adipogenesis of so-called \u2018mesenchymal stem cells\u2019 (MSCs) (Figure 5\u2014figure supplement 1H).\n\nThe osteochondral SSC, closely associated with marrow-free spaces such as the growth plate or periosteum, was highly prevalent in early limb development, remained present in low numbers throughout adulthood, and could be activated to accumulate upon injury. We also showed that ocSSCs never gave rise to BMAT and may be the main source of osteochondrogenic tissue in long bones. Therefore, ocSSCs might be the SSC type exclusively targeted by the Osx-Cre reporter line that has been previously described to label cells that form bone and transient stromal cells in the fetal skeleton, while being restricted to osteolineages during adulthood (Mizoguchi et al., 2014). Follow-up studies will have to more closely examine the\u00a0molecular as well as functional overlap and differences of ocSSCs inhabiting various long bone niches, such as the growth plate, periosteum, and\u00a0articular surface (Duchamp de Lageneste et al., 2018; Newton et al., 2019; Murphy et al., 2020). Based on recent reports, ocSSCs are included as subpopulations of Pthrp-expressing growth plate and Ctsk-expressing periosteal stem and progenitor cell types (Debnath et al., 2018; Mizuhashi et al., 2018). Our in situ mapping of ocSSCs confirms the presence within the resting and proliferative growth plate zones where they might give rise to downstream lineages through hypertrophic chondrocyte intermediates. More sophisticated single-cell in vivo tracing will be needed to assess to what extent ocSSCs include or generate these hypertrophic chondrocytes that have been suggested to be a source of osteogenic and stromal marrow cell types (Yang et al., 2014a; Yang et al., 2014b; Tan et al., 2020).\n\npvSSCs, demonstrated to be essential for BMAT development, occurred at a later embryonic stage in sync with the homing of HSCs to bone marrow niches (Figure 2B\u2013C; Rowe et al., 2016). A critical role for mesenchymal cell types to maintain HSC quiescence has long been established (Ding et al., 2012). When intratibially injected, pvSSCs also seemed to distribute more evenly throughout the marrow, potentially to HSC niches, whereas ocSSC-derived cells mainly aggregated in a more confined space (Figure 1\u2014figure supplement 1G\u2013I). In line with our scRNAseq expression data on pvSSCs, recent scRNAseq studies have found abundant adipo-primed cell populations in the bone marrow that were implied to be a major reservoir of pro-hematopoietic, pro-vascular, and anti-osteogenic factors (Zhong et al., 2020;\u00a0Tikhonova et al., 2019). Finally, in contrast to ocSSCs, pvSSCs and their downstream APCs were increased in frequency in older mice (Figure 3G) and thus correlate with the observation of higher HSC abundance during aging (Pang et al., 2011). Future work will have to provide functional evidence for the interconnection of the pvSSC and HSC lineages as well as the\u00a0potential roles of pvSSCs/APCs in age-related myeloid skewing of HSCs.\n\nPrevious work has established a non-hematopoietic, non-endothelial, Prrx-1 mesenchymal origin of pvSSCs (Ambrosi et al., 2017). It remains unclear, however, whether pvSSCs arise as a subpopulation of a bone-resident cell population or whether they immigrate through the circulation or from surrounding tissues. One possibility is that pvSSCs originated from osteo-plastic perivascular mural cell and pericyte populations that had ingressed into the bone marrow space during endochondral ossification in limb formation (Pearson et al., 1986;\u00a0Crisan et al., 2008; James et al., 2010; Corselli et al., 2012). Although these perivascular lineages may not possess inherent skeletogenic activity prior to their invasion of bone tissues, their\u00a0subsequent development in the bone marrow space in close association with cells that express skeletogenic morphogens such as Bone Morphogenetic Protein (BMP) and hedgehog may have primed them toward skeletal fates (Urist, 1970;\u00a0Regard et al., 2013; Chan et al., 2015;\u00a0Salazar et al., 2016). Although we cannot exclude the\u00a0plasticity between ocSSCs and pvSSCs, our experiments conducted here do not suggest the\u00a0interconversion between the two cell types. Yet, specific stimuli such as high levels of Bmp2 or Wnt might be able to convert pvSSCs into ocSSC-like cells (Chan et al., 2015; Matsushita et al., 2020). Available mouse strains, for\u00a0example the LepR-Cre reporter line, are not able to answer these open questions as we observed that the expression of tracer genes did not functionally separate SSC types. One obvious reason is that loxP-site excision-directed fluorescence reporters permanently stay on, not necessarily reflecting the current expression of the gene driving Cre-recombinase. Marker expression is dependent on the developmental stage of a given cell and is not restricted to the stem cell state as it also labels derivative downstream cell populations. In contrast, targeting SSCs by prospectively isolating them with a combination of surface markers gives a more faithful snapshot of a given cell population, however, at the expense of not being able to fate map rare cells in situ or directly test key molecular functions. While our approach provides a significant advance toward highly homogeneous SSC populations, scRNAseq analysis also indicated a remaining degree of cellular heterogeneity that will have to be further functionally resolved in future studies (Figure 5A). Nonetheless, the new results on SSC subtypes that we now present offer a vantage point to identify more explicit markers for novel SSC reporter mouse models that will mitigate current shortcomings.\n\nIn conclusion, these findings comprehensively describe the existence of two distinct SSC populations in postnatal long bones of mice that might regulate each other through cellular crosstalk. Excitingly, these findings may be readily translatable to the human setting through existing reports of SSC populations that have comparable characteristics (Sacchetti et al., 2007; Chan et al., 2018).\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain</td>\n      <td>Mouse: B6 (C57BL/Ka-Thy1.1-CD45.1)</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX: 000406</td>\n      <td>RRID:IMSR_JAX:000406</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>Mouse: NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ)</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX: 005557</td>\n      <td>RRID:IMSR_JAX:005557</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>Mouse: GFP (C57BL/6-Tg(CAG-EGFP)1Osb/J)</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX: 003291</td>\n      <td>RRID:IMSR_JAX:003291</td>\n    </tr>\n    <tr>\n      <td>Strain</td>\n      <td>Mouse: Actin-CreERt Rosa26-Rainbow (homozygous)</td>\n      <td>In-house</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse Ly-6A/E (Sca-1) APC (clone: D7)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17\u20135981</td>\n      <td>FACS 1:200 (RRID:AB_469487)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse Ly-6A/E (Sca-1) Alexa Fluor 700 (clone: D7)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 56\u20135981</td>\n      <td>FACS 1:200 (RRID:AB_657837)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse Ly-6A/E (Sca-1) PE/Cy7 (clone: D7)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 25\u20135981</td>\n      <td>FACS 1:200 (RRID:AB_469669)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD45 FITC (clone: 30-F11)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 11\u20130451</td>\n      <td>FACS 1:200 (RRID:AB_465050)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD45 APC (clone: 30-F11)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17\u20130451</td>\n      <td>FACS 1:200 (RRID:AB_469393)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD45 PE/Cy5 (clone: 30-F11)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 15\u20130451</td>\n      <td>FACS 1:200 (RRID:AB_468751)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD31 (PECAM-1) FITC (clone: 390)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 11\u20130311</td>\n      <td>FACS 1:200 (RRID:AB_465011)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD31 (PECAM-1) APC (clone: 390)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17\u20130311</td>\n      <td>FACS 1:200 (RRID:AB_657735)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse TER-119 PE/Cy5 (clone: TER-119)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 15\u20135921</td>\n      <td>FACS 1:200 (RRID:AB_468811)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD140a (PDGFRA) APC (clone: APA5)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17\u20131401</td>\n      <td>FACS 1:100 (RRID:AB_529482)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD24 APC-eFluor 780 (clone: M1/69)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 47\u20130242</td>\n      <td>FACS 1:200 (RRID:AB_10853172)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD51 PE (clone: RMV7)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 12\u20130512</td>\n      <td>FACS 1:100 (RRID:AB_465703)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD90.1 APC-eFluor 780 (clone: HIS51)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 47\u20130900</td>\n      <td>FACS 1:100 (RRID:AB_1272256)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD90.2 APC-eFluor 780 (clone: 53\u20132.1)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 47\u20130902</td>\n      <td>FACS 1:100 (RRID:AB_1272187)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse BP1 APC (clone: 6C3)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17\u20135891</td>\n      <td>FACS 1:100 (RRID:AB_2762697)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse CD105 (Endoglin) Biotin (clone: MJ7/18)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 13\u20131051</td>\n      <td>FACS 1:100 (RRID:AB_466555)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse Tie2 (clone: Tek4)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 14\u20135987</td>\n      <td>FACS 1:20 (RRID:AB_467792)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Mouse Leptin R Biotinylated Antibody (goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: BAF497</td>\n      <td>FACS 1:50 (RRID:AB_2296953)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-GFP (polyclonal)</td>\n      <td>NovusBiologicals</td>\n      <td>Cat#: NB100-1770</td>\n      <td>IF 1:200 (RRID:AB_10128178)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Perilipin (polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: PA5-72921</td>\n      <td>IF 1:200 (RRID:AB_2718775)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Osteocalcin (polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab93876</td>\n      <td>IF 1:200 (RRID:AB_10675660)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Collagen II (polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab34712</td>\n      <td>IF 1:200 (RRID:AB_731688)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat anti-Endomucin (Clone: V.7C7)</td>\n      <td>ThermoFisher</td>\n      <td>Car#: 14-5851-82</td>\n      <td>IF 1:400 (RRID:AB_891527)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488 donkey anti-goat (polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: A32814</td>\n      <td>IF 1:500 (RRID:AB_2762838)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 594 donkey anti-rabbit (polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: A21207</td>\n      <td>IF 1:500 (RRID:AB_141637)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 700 goat anti-rabbit (polyclonal)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: A21038</td>\n      <td>IF 1:500 (RRID:AB_2535709)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Flour 488 goat anti-rat (polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab150157</td>\n      <td>IF 1:500 (RRID:AB_2722511)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Oligo-dT30VN</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>(5\u2019-AAGCAGTGGTATCAACGCA GAGTACT30VN-3\u2019)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Template-switching oligonucleotide (TSO)</td>\n      <td>Exiqon</td>\n      <td>N/A</td>\n      <td>(5\u2019-AAGCAGTGGTATCAACGCAGAGTACATrGrG+G-3\u2019)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ISPCR primers</td>\n      <td>IDT</td>\n      <td>N/A</td>\n      <td>(5\u2019-AAGCAGTGGTATCAACGCAGAGT-3\u2019)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>dNTP Set (100 mM)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 10297-018A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>ERCC (External RNA Controls Consortium) ExFold RNA Spike-In Mixes</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 4456740</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>SMARTScribe reverse transcriptase</td>\n      <td>Clontech</td>\n      <td>Cat#: 639538</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptavidin PE-Cyanine7 Conjugate</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 25-4317-82</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Epidermal growth factor</td>\n      <td>PeproTech</td>\n      <td>Cat#: 315\u201309</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Platelet-derived growth factor BB</td>\n      <td>PeproTech</td>\n      <td>Cat#: 315\u201318</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Basic fibroblast growth factor</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: F0291</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Transforming growth factor \u03b21</td>\n      <td>PeproTech</td>\n      <td>Cat#: 100\u201321</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KAPA HiFi HotStart ReadyMix</td>\n      <td>Kapa Biosystems</td>\n      <td>Cat#: KK2602</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>HS NGS Fragment Kit (1\u20136000 bp), 1000</td>\n      <td>Agilent</td>\n      <td>Cat#: DNF-474\u20131000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nextera XT DNA Library Preparation kit</td>\n      <td>Illumina</td>\n      <td>Cat#: FC-131\u20131096</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Micro Kit</td>\n      <td>Qiagen</td>\n      <td>Cat#: 74004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNAScope Multiplex Fluorescent V2 Assay</td>\n      <td>Acdbio</td>\n      <td>Cat#: 323100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>EDTA</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 15573\u2013038</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Fluoromount-G</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 00-4958-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Paraformaldehyde (PFA)</td>\n      <td>Electron Microscopy Sciences</td>\n      <td>Cat#: 15710</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Matrigel</td>\n      <td>Corning</td>\n      <td>Cat#: CB40234A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Bovine serumalbumine (BSA)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A9647</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Triton X-100 (10%)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 85111</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Recombinant RNase inhibitor</td>\n      <td>Clontech</td>\n      <td>Cat#: 2313B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Saffron</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: S8381-5G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Acid Fuchsin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: F8129-25G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Acid Red 73</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: 49823\u201325 MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Phosphotungstic Acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: P4006</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Hematoxylin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: MHS32-1L</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Shandon Eosin Y</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 6766009</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Type II collagenase</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: C6885</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>100 U/ml DNase I</td>\n      <td>Worthington</td>\n      <td>Cat#: NC9199796</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Fetal bovine serum (FBS)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 16000\u2013069</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Optimal Cutting Temperature compound (OCT)</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 23-730-571</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Penicillin-Streptomycin Solution</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 15140\u2013122</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Media 199 (M199)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: C6885</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Agencourt AMPure XP beads</td>\n      <td>Beckman Coulter</td>\n      <td>Cat#: A63882</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>UltraPure DNase/RNase-Free Distilled Water</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 10977023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>TRIzol LS</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 10296028</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Oil Red O</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: O0625</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Alizarin Red S</td>\n      <td>Carl Roth</td>\n      <td>Cat#: A5533-25G</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Alcian Blue 8GX</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A3157</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Crystal Violet</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: C0775</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>MCDB201 Media</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: M6770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Dexamethasone</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: D-4902</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>L-Ascorbic acid 2-phosphate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A8960</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Insulin-transferrin-selenium (ITS) mix</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: I3146</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Linoleic acid-Albumin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: L9530</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Indomethacin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: I7378</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Human Insulin</td>\n      <td>Roche</td>\n      <td>Cat#: 11376497001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Isobutylmethylxanthine</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: I5879</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>3,3\u2032,5-triiodo-L-thyronine (T3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: T6397</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>\u03b2-glycerophosphate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: G9891</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>L-thyroxine</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: T0397</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Betaine</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: B0300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>DTT (DL-dithiothreitol) 100 mM</td>\n      <td>Promega</td>\n      <td>Cat#: P1171</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>http://wsr.imagej.net/distros/osx/ij152-osx-java8.zip</td>\n      <td>RRID:SCR_003070</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>FlowJo</td>\n      <td>FLOWJ LLC</td>\n      <td>https://www.flowjo.com/</td>\n      <td>RRID:SCR_008520</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>BD FACSAria II</td>\n      <td>BD Biosciences</td>\n      <td>http://www.bdbiosciences.com/cn/home</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Gene Expression Commons (GEXC) database</td>\n      <td>Seita et al., 2012</td>\n      <td>https://gexc.riken.jp</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>bcl2fastq2 2.18</td>\n      <td>Illumina</td>\n      <td>https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html</td>\n      <td>RRID:SCR_015058</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Skewer</td>\n      <td>Jiang et al., 2014</td>\n      <td>https://sourceforge.net/projects/skewer</td>\n      <td>RRID:SCR_001151</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>STAR 2.4</td>\n      <td>Dobin et al., 2013</td>\n      <td>https://github.com/alexdobin/STAR</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>RSEM 1.2.21</td>\n      <td>Li and Dewey, 2011</td>\n      <td>https://deweylab.github.io/RSEM/</td>\n      <td>RRID:SCR_013027</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Scanpy 1.8.</td>\n      <td>Wolf et al., 2018</td>\n      <td>https://github.com/theislab/scanpy</td>\n      <td>RRID:SCR_018139</td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GraphPad Prism 9.02</td>\n      <td>GraphPad Software</td>\n      <td>http://www.graphpad.com/scientificsoftware/prism</td>\n      <td>RRID:SCR_002798</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNAscope Probe-Mm-Cdh13-C3</td>\n      <td>Acdbio</td>\n      <td>Cat#: 443251</td>\n      <td>RNAscope 1:1500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RNAscope Probe-Mm-Wif1-C3</td>\n      <td>Acdbio</td>\n      <td>Cat#: 412361-C3</td>\n      <td>RNAscope 1:1500</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>4\u2032 , 6-diamidino-2-phenylindole (DAPI)</td>\n      <td>Biolegend</td>\n      <td>Cat#: 422801</td>\n      <td>1 ug/ml</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Propidium iodide (PI)</td>\n      <td>Biolegend</td>\n      <td>Cat#: 421301</td>\n      <td>1 ug/ml</td>\n    </tr>\n  </tbody>\n</table>\n\n### Lead contact and material availability\n\nFurther information and reasonable requests for resources and reagents may be directed to and will be fulfilled by the lead contact Charles KF Chan (chazchan@stanford.edu).\n\n### Animals\n\nMice were maintained in the Stanford University Laboratory Animal Facility in accordance with Stanford Animal Care and Use Committee and National Institutes of Health guidelines. Mice were housed in sterile micro-insulators and given water and rodent chow ad libitum. B6 mice (C57BL/Ka-Thy1.1-CD45.1; JAX:000406), purchased from the Jackson Laboratories, were used for cell isolation and\u00a0gene expression/sequencing experiments. Immunodeficient NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ; JAX:005557) mice were used as transplantation recipients for either intratibial or renal capsule transplantation of prospective stem cell populations. GFP\u00a0mice (C57BL/6-Tg(CAG-EGFP)1Osb/J; JAX:003291) and Rainbow mice (Actin-CreERt Rosa26-Rainbow) were used for transplantation of bones and FACS-purified cell populations into NSG hosts. Male mice were used at ages stated in experiments in the 'Results' section.\n\n### Flow cytometry and cell sorting\n\nFlow cytometry and cell sorting were performed on a FACS Aria II cell sorter (BD Biosciences) and analyzed using FlowJo software. Long bones or renal grafts were dissected and freed from the\u00a0surrounding soft tissue, which was then followed by dissociation with mechanical and enzymatic steps. Specifically, the tissue was placed in collagenase digestion buffer supplemented with DNase and incubated at 37\u00b0C for 60 min under constant agitation. After collagenase digestion and neutralization, undigested materials were gently triturated by repeated pipetting. Total dissociated cells were filtered through a\u00a070-m nylon mesh and pelleted at 200 \u00d7g at 4\u00b0C for 5 min. Cells were resuspended in ACK (ammonium-chloride-potassium) lysing buffer to eliminate red blood cells and centrifuged again at 200 \u00d7g at 4\u00b0C for 5 min. The pellet was re-suspended in 100 \u00b5l staining media (2% FBS/phosphate-buffered saline [PBS]) and stained with antibodies for at least 30 min at 4\u00b0C. The applied FACS antibodies can be found in the 'Key Resources' table. Living cells were gated for a\u00a0lack of PI (propidium iodide; 1:1000 diluted stock solution: 1 \u03bcg/ml in water) fluorescence. Compensation, fluorescence-minus-one control-based gating, and FACS\u00a0isolation were conducted prior to analysis or sorting using the antibody combinations as indicated in the respective figures and legends.\n\n### Cell culture\n\nFreshly sorted primary murine cells were used throughout this study and isolated by FACS and cultured as described before (Chan et al., 2015; Ambrosi et al., 2017). Cells were cultured in minimum essential medium\u00a0alpha\u00a0(MEM-\u03b1) with 10% FBS and 1% penicillin-streptomycin (ThermoFisher; Cat#: 15140\u2013122) and maintained in an incubator at 37\u00b0C with 5% CO2. For adipogenic differentiation, cells were expanded in a complex medium for 72 hr, induced for 48 hr, followed by a differentiation period of 5 days. For the expansion phase, a complex medium of 60% Dulbecco's modified Eagle medium\u00a0(DMEM)-low glucose (Invitrogen) and 40% MCDB201 (Sigma) was supplemented with 100 U/ml penicillin and 1000 U/ml streptomycin (Invitrogen), 2% FBS, 1\u00d7 insulin-transferrin-selenium (ITS) mix, 1\u00d7 linoleic acid conjugated to BSA, 1 nM dexamethasone, and 0.1 mM L-ascorbic acid 2-phosphate (all from Sigma) and\u00a0added. Before use, growth factors were added to the medium:\u00a010 ng/ml epidermal growth factor (PeproTech), 10 ng/ml platelet-derived growth factor BB (PeproTech), and 5 ng/ml basic fibroblast growth factor (bFGF; Sigma-Aldrich). For adipogenic differentiation, an\u00a0induction medium (growth medium without growth factors) containing 5 \u03bcg/ml human insulin (Roche), 50 \u03bcM indomethacin, 1 \u03bcM dexamethasone, 0.5 \u03bcM isobutylmethylxanthine, and\u00a01 nM 3,3\u2032,5-triiodo-L-thyronine (T3) (all from Sigma-Aldrich) was added for 48 hr, followed by further differentiation in the\u00a0growth medium without growth factors and the addition of T3 and insulin only. Oil red O staining was performed by fixing cells with 4% PFA for 15 min at room temperature. For the preparation of oil red O working solution, a 0.5% stock solution in isopropanol was diluted with distilled water at a ratio of 3:2. The working solution was filtered and applied to fixed cells for at least 1 hour at room temperature. Cells were washed four times with tap water before evaluation. To induce osteogenic differentiation, pre-confluent cells were supplemented with osteogenic medium (alphaMEM-low glucose (Invitrogen)) with 2% FBS, 100 nM dexamethasone, 0.2 mM L-ascorbic acid 2-phosphate, and 10 mM \u03b2-glycerophosphate for 14 days. Cells were then formalin-fixed and stained with 2% Alizarin red S (Roth) in distilled water. Wells were washed twice with PBS and once with distilled water. A micromass culture was used for the chondrogenesis assay. To this end, a 5 \u00b5l droplet of cell suspension (approximately 1.5 x 107 cells/ml) was pipetted into the center of a well (48-well plate). After cultivating the micromass culture for 2 hr in the incubator, warm chondrogenic media (DMEMhigh [Invitrogen]) with 10% FBS, 100 nM dexamethasone, 1 \u00b5M L-ascorbic acid-2-phosphate, and 10 ng/ml transforming growth factor \u03b21 were added. Cell medium was changed every other day. After 21 days, cells were fixed and stained with 1% Alcian\u00a0blue staining (Sigma) for 30 min at room temperature. Cells were rinsed three times with 0.1 M HCl. To neutralize acidity, a washing step with dH2O was conducted before microscopic analysis. CFU-F assays were conducted by freshly sorting a defined number of cells of desired cell populations into separate culture dishes containing expansion media. The\u00a0medium was changed twice a week. At day 10, cells were fixed and stained with crystal violet (Sigma).\n\n### Single-cell clonal assay\n\nFor single-cell clonal analysis, ocSSCs or pvSSCs were freshly derived from long bones of 8-week-old B6 mice by FACS\u00a0purification as explained above. Cell populations were directly sorted into 10 cm dishes at clonal density. After 10 days, clones giving rise to colonies were harvested with a cloning cylinder and re-seeded in a 96-well plate and expanded to\u00a080\u201390% confluency. Each clone was then plated for tri-differentiation assays. At the end of differentiation, oil red O staining was conducted for adipogenesis, Alizarin red S staining for osteogenesis, and Alcian blue staining for chondrogenesis.\n\n### Histology\n\nDissected, soft-tissue free specimens were fixed in 2% PFA at 4\u00b0C overnight. Samples were decalcified in 400 mM ethylenediaminetetraacetic acid (EDTA) in PBS (pH 7.2) at 4\u00b0C for 2 weeks with a change of EDTA twice every week. The specimens were then dehydrated in 30% sucrose at 4\u00b0C overnight. Specimens were embedded in optimal cutting temperature (OCT) compound\u00a0and sectioned at 5 mm. Representative sections were stained with freshly prepared hematoxylin and eosin or Movat pentachrome.\n\n### Immunohistochemistry\n\nImmunofluorescence on cryopreserved,\u00a0sectioned long bone and ectopic bone specimens were incubated with 3% BSA in Tris-buffered saline (TBS) for 1 hr. Then, samples were probed with primary antibody, diluted in 1% BSA/PBS, and incubated in a humidified chamber at 4\u00b0C overnight. Specimens were washed with PBS three times. Secondary antibody was applied for 15 min at room temperature in the dark. Specimens were also incubated with 1 ug/ml of DAPI for 10 min and then washed twice. The specimens were then mounted with a coverslip using Fluoromount-G and imaged with a Leica DMI6000B inverted microscope system.\n\n### Intratibial cell injection\n\nSorted cell populations from GFP\u00a0mice (C57BL/6-Tg(CAG-EGFP)1Osb/J) were pelleted at 5 x 103 cells and resuspended in 2 \u00b5l matrigel suspension and injected into the bone marrow cavity through the proximal articular surface of the tibia of sublethally (5 Gy) irradiated NSG mice. 4 weeks after transplantation, bones were excised, fixed, and analyzed histologically or by FACS.\n\n### Renal capsule transplantation\n\nSSCs were purified using FACS as described above and resuspended in 2 \u00b5l of matrigel. Cell suspension was then transplanted underneath the renal capsule of 8-\u00a0to\u00a012-week-old immunodeficient NSG mice. Injected cells developed into a graft after 4 weeks. The grafts were surgically removed for analysis via FACS and histology. For transplants of whole bones, developmentally staged embryos or pups were harvested and femurs/tibias were micro-dissected for transplantation. Bones were incubated for 4 weeks prior to surgical excision and analysis of graft.\n\n### In vivo clonal assay\n\nNSG mice with renal transplants of SSC populations derived from Rainbow mice were given intraperitoneal injections of 200 mg/kg of tamoxifen (Sigma-Aldrich) dissolved in corn oil 3 and 4 days after transplantation. 2-week grafts were dissected out and histologically analyzed.\n\n### Fracture model\n\nFor the stabilized bicortical fracture model, a needle was inserted into the medullary cavity of the femur for stabilization. The fracture was induced 5 mm distal from the knee. At the indicated timepoint after fracture induction, femur bones were harvested for FACS analyses.\n\n### Sublethal irradiation\n\nTo investigate the\u00a0effects of irradiation on skeletal cell populations, mice were sublethally irradiated with one dose of 5 Gy. Mice were sacrificed 2 weeks later, and bones were dissected and processed for FACS analysis.\n\n### Transcriptional expression profiling by microarray\n\nMicroarray analysis was performed on highly purified, double-sorted skeletal cell populations. Each cell population represents a population of cells derived from three to four separate mice pooled together. Total RNA isolation was conducted using standard column-based RNA\u00a0isolation with RNeasy Micro Kit (Qiagen). RNA was twice amplified with a RiboAmp RNA amplification kit (Arcturus Engineering, Mountain View, CA, USA). Amplified complementary RNA\u00a0(cRNA) was streptavidin-labeled, fragmented, and hybridized to Affymetrix 430\u20132.0 arrays as recommended by the manufacturer (Affymetrix, Santa Clara, CA, USA). Raw microarray data were submitted to Gene Expression Commons\u00a0(GEXC) (https://gexc.riken.jp) (Seita et al., 2012), where data normalization was computed against the Common Reference, which is a large collection (>11,939) of mouse array experiments deposited to the National Institutes of Health Gene Expression Omnibus (NIH GEO) database. GEXC assigns a threshold value to each probeset using the StepMiner algorithm (Sahoo et al., 2007) and calculates a percentile value between \u2212100% and +100% for each available gene, allowing the comparison of mouse gene expression on a normalized, continuous scale. Meta-analysis of the Common Reference also provides the dynamic range of each probe set on the array, and, in situations where there are multiple probe sets for the same gene, the probe set with the widest dynamic range was used for analysis. The Affymetrix Mouse Genome 430 2.0 Array includes 45,101 probe sets, of which 17,872 annotated genes are measurable. Microarray data are publicly accessible under https://gexc.riken.jp/models/2350.\n\n### Smart-Seq2 single-cell RNA\u00a0sequencing\n\nSingle cells were isolated via FACS as described above from freshly processed long bones pooled from four 8-\u00a0to\u00a010-week-old B6 mice. Single cells were captured in separate wells of a 96-well plate containing 4 \u00b5l lysis buffer (1 U/\u03bcl RNase inhibitor [Clontech, Cat#: 2313B]), 0.1% Triton (Thermo Fisher Scientific, Cat#: 85111), 2.5 mM dNTP (Invitrogen, Cat#: 10297\u2013018), 2.5 \u03bcM oligo dT30VN (IDT, custom: 5\u2032\u2013AAGCAGTGGTATCAACGCAGAGTACT30VN-3\u2032), and 1:600,000 External RNA Controls Consortium ExFold RNA Spike-In Mix 2 (ERCC; Invitrogen, Cat#: 4456739) in nuclease-free water (Thermo Fisher Scientific, Cat#: 10977023) according to the SmartSeq2 protocol by Picelli et al., 2014. Two 96-well plates per SSC population with a single cell per well were sorted and processed. Cells were spun down and plates kept at \u221280\u00b0C until complementary\u00a0DNA\u00a0(cDNA) synthesis, which was conducted using oligo-dT-primed reverse transcription with SMARTScribe reverse transcriptase (Clontech, Cat#: 639538) and a locked\u00a0nucleic acid containing template-switching oligonucleotide (TSO; Exiqon, custom: 5\u2032-AAGCAGTGGTATCAACGCAGAGTACATrGrG+G-3\u2032). PCR amplification was conducted using KAPA HiFi HotStart ReadyMix (Kapa Biosystems, Cat#: KK2602) with In Situ Polymerase Chain Reaction (ISPCR) primers (IDT, custom: 5\u2032-AAGCAGTGGTATCAACGCAGAGT-3\u2032). Amplified cDNA was then purified with Agencourt AMPure XP beads (Beckman Coulter, Cat#: A63882). After quantification, cDNA from each well was normalized to the desired concentration range (0.05\u20130.16 ng/\u03bcl) by dilution and consolidated into a 384-well plate. Subsequently, this new plate was used for library preparation (Nextera XT kit; Illumina, Cat#: FC-131\u20131096) using a semi-automated pipeline. The barcoded libraries of each well were pooled, cleaned-up, and size-selected using two rounds (0.35x and 0.75x) of Agencourt AMPure XP beads (Beckman Coulter), as recommended by the Nextera XT protocol (Illumina). A high-sensitivity fragment analyzer run was used to assess fragment distribution and concentrations. Pooled libraries were sequenced on NovaSeq6000 (Illumina) to obtain 2x101 bp paired-end reads.\n\n### Single-cell RNA-sequencing data processing\n\nSequenced data were demultiplexed using bcl2fastq2 2.18 (Illumina). Raw reads were further processed using skewer for 3\u2032 quality\u00a0trimming, 3\u2032 adaptor\u00a0trimming, and removal of degenerate reads\u00a0(Jiang et al., 2014). Trimmed reads were then mapped to the mouse genome vM20 using STAR 2.4\u00a0(Dobin et al., 2013), and counts for gene and transcript reads were calculated using RSEM 1.2.21\u00a0(with an average of >75% of uniquely mapped reads) (Li and Dewey, 2011). Data were explored and plots were generated using Scanpy 1.8 (Wolf et al., 2018). To select for high-quality cells only, we excluded cells with fewer than 250 genes and 2500 counts, and genes detected in less than three cells were excluded. Cells with the\u00a0mitochondrial gene content higher than 10% of all expressed genes were excluded from downstream analysis as were cells with the\u00a0ribosomal gene content above 5%. Additionally, if the ERCC fraction of a cell was higher than 30%, this cell was also excluded. A total of 143 ocSSCs and 169 pvSSCs passed these stringent filter criteria and were used for analysis. Raw counts per million (CPM) values were mean- and log-normalized, and\u00a0then data were scaled. Principal component (PC) \u2018elbow\u2019 heuristics were used to determine the\u00a0number of PCs for clustering analysis with UMAP (v. 0.4.6.) and leidenalg (v. 0.8.2.). Differential gene expression between ocSSCs and pvSSCs as well as Leiden clusters was calculated by Wilcoxon-Rank-Sum test. Cell cycle status was assessed using the \u2018score_genes_cell_cycle\u2019 function with the updated gene list provided by Nestorowa et al., 2016. EnrichR (Chen et al., 2013) was used to explore enrichment for pathways (via BioPlanet 2019) and ontologies (via GO Biological Processes 2018) of differentially expressed genes in ocSSCs and pvSSCs.\u00a0All raw data and a gene\u00a0table are publicly available at GEO under sample accession number GSE161477.\n\n### RNA in situ hybridization\n\nFresh mouse long bone specimens (10\u201312 weeks) were fixed overnight before decalcification using 400 mM EDTA (Invitrogen, Cat#:\u00a015573\u2013038) in PBS (pH 7.2) at 4\u00b0C for 3 weeks. Specimens were then paraffin-embedded and sectioned at 10 microns. Sections were processed for RNA in situ hybridization using RNAscope Multiplex Fluorescent Reagent Kit v2 according to manufacturer\u2019s protocol (Advanced Cell Diagnostics, Cat#:\u00a0323100). Cdh13 (ACD, Cat#:\u00a0443251-C3) and Wif1 (ACD, Cat#: 412361-C3) RNA probes were used. Additional immunofluorescence was added by staining with rat anti-mouse endomucin antibody (ThermoFisher, Cat#: 14-5851-82) with secondary goat anti-rat AF488 (Abcam, Cat#:\u00a0ab150157) as well as counterstaining with DAPI.\n\n### Quantification and statistical analyses\n\nStatistical testing was performed on results with no animals or raw data points excluded. Sample sizes were not pre-determined. Data were tested for equal variances as well as normality by Shapiro-Wilk test and corrected for, if necessary, as indicated in the figure legends. Statistical analyses were performed using unpaired, two-tailed Student\u2019s t-test for comparison of experimental groups (GraphPad Prism; version 9). Statistical significance was defined as p<0.05. All data points refer to biological replicates and are presented as mean + standard error of the mean (SEM) unless otherwise stated in figure legends.\n",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "e785245d-2e91-4692-8a6b-acaa4eb005ed",
+      "submission_id": "0a21e419-0a23-40a9-8e90-dceb66a4266d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cheryl Ackert-Bicknell, University of Colorado United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66063.sa1](https://doi.org/10.7554/eLife.66063.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe manuscript explores the differences between two subpopulations of skeletal stem cells (SSC) that these authors previously identified: osteochondral SSC (ocSSC) and perivascular SSC (pvSSC). Intriguingly, the data presented counter the current dogma that a single parent mesenchymal skeletal stem cell (SSC) gives rise to both bone- and fat-forming cells in bone. These results have large implications in the study of human bone physiology and osteoporosis, as we do not as of yet completely understand the midlife shift in the skeleton towards bone loss and fat gain that is associated with fracture in later life.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Skeletal stem cell diversity orchestrates long bone skeletogenesis\" for consideration by eLife. Your article has been reviewed by a Reviewing Editor, 3 reviewers and Kathryn Cheah as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Vanessa Sherk (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1. The samples sizes are very small. Although cost may have been a barrier here, please provide references to justify the sample sizes and number of replicates to lines 463-464. Were there any outcomes on which a power analysis was performed?\n\n2. For clarity and transparency it is strongly suggested that for all bar graphs (2A, 2E, 3E, 3G, 4C, 4D, 4F, Supp 1D, S2F, S3E), please overlay them with plots of individual data points.\n\n3. In Methods on p 23, cell culture is described. It is not clear why such a media composition was used for expansion. ITS promotes growth but insulin in it can push cells towards adipogenesis. Dexamethasone and ascorbate can push cells towards osteogenic differentiation and away from adipogenic lineage thus artificially eliminating adipogenic cells. Added growth factors likely induced expansion but they may also affect cell fate decisions. MSC/SSC are known to grow in simple DMEM or aMEM media with heat-inactivated serum, thus not depending on added growth factors or insulin.\n\n4. For intratibial cell injections, mice were first irradiated. Irradiation is usually used when hematopoietic cell grafting is done to give preference to donor cells. Why radiation was used here is not clear. It mostly kills host hematopoietic cells but not as many host mesenchymal progenitors. It may give advantage to donor cells to expand but it also affects the niche which is critical for cell fate decisions.\n\n5. The nomenclature of oc vs pv SSC is based on previous studies that looked at fetal, postnatal, and adult cells. Adult ocSSC are isolated from crushed bone, however it does not exclude the possibility that these ocSSC are also perivascular b/c it is unlikely that all the stroma and vessels were removed from bone before digestion. Thus it is possible that these are two subpopulations from the same compartment in the adult animal. Although it does not put the difference between these populations under question, it does raise a concern about the right nomenclature. This may also misguide future studies as they may be using perivascular location to define only one tri-lineage population and disregard oc population.\n\n6. Documenting the perivascular origin of the pvSSC remains the key to unlocking the true significance of the findings. First and foremost is the need to show that the pvSSC derived from bone can be stained in situ in the perivascular niche inside the endochondral/marrow compartment with the same antibodies used to identify pvSSC by FACS (e.g., anti-Sca1, -Pdgfr \u03b1, CD24, etc.). In situ staining of the pvSCC for the unique FACS markers would go a long way in cinching their hypothesis for this reviewer.\n\n7. In conjunction with the comment above, in lines 126-127 of the Results the authors should reference the use of Sca1 as a unique marker of pvSSC. This would go a long way in justifying the seemingly arbitrary decision to include, not exclude, a small fraction of Sca1-expressing pvSSC (see panel D of Figure 2). As a consequence, the statement in the Results, lines 136-137, may not be warranted. In this regard, there are a few pieces of evidence to suggest that ocSSCs and pvSSCs may be more heterogeneous than the authors suggest. Specifically, there seems to be a small population of ocSSCs that have adipogenic lineage potential, as evidenced by Figure 1e (ocSSC does still have 0.8% adipocytes) and Figure 2e (there is a small population of ocSSCs that do in fact give rise to pvSCCs/APCs in 4-week renal grafts).\n\n8. The authors must provide some quality control data such as total reads, percent mapped, etc of the Smart-Seq2 single-cell RNA-sequencing as these quality control data are needed to confirm the reliability of the downstream bioinformatic analysis.\n\n9. The Discussion could be strengthened by addition of comments by the authors as to whether they consider there to be plasticity between the ocSSC and pvSSC population before final commitment to a specific BSPC or APC fate.\n\n10. The Discussion could also be strengthened by referencing a figure(s) in the statements found in lines 248-249, 251-252, 256-258 and 283-285.\n\n11. The alternative splicing analysis was interesting, but the graphs and accompanying explanations need more detail (Figure 5G, supplemental Figure 4e.f.g.h) to help the reader understand what they are showing and why it is significant. There are other concerns in for this topic as well. Specifically, attention is needed in the Results (lines 215-226) where alternative splicing is addressed in addition to differential gene expression as a means of characterizing distinct isoforms of translatable mRNA that are specific to pvSCC and not ocSCC. Rather than relying on an unbiased mode of identifying alternatively spliced isoforms in the pvSCC and ocSSC populations, the authors have taken a candidate gene approach, showing differential gene expression of candidate genes traditionally associated with osteo- or adipo-genesis, characterizing them as \"active\" or \"inactive\", presumably based on gene tracks shared or not shared by pvSCC and ocSSC. Taking the Pth1r as an example, one does not know from the tracks if the shorter, pvSSC isoform excludes the Pth/Pthrp ligand or CAMP binding domain of the receptor required for osteogenesis; this should be reported in the text of the Results and reviewed in the Discussion.\n\n12. The final Results section on alternative splicing may not be well developed enough to be included in this otherwise carefully constructed manuscript and its exclusion might actually strengthen the paper.\n\n13. It looks like the authors show tracks of various mRNA variants and in some cases those variants are more abundant in either the ocSSC or the pvSSC. These data need to be interpreted with the overall expression of those genes in mind; if they can show that the total gene expression is similar then differentials in variants becomes significant. They should do this kind of analysis on all the other candidates they cite in Figure 5 and in the Supplemental Figure 4.\n\n14. It is strongly advised that the authors refer to some key papers which show by lineage that hypertrophic chondrocytes can become not only osteoblasts, a small proportion can become adipocytes in wild-type mice (PMID: 25092332 ;PMID: 25145361; PMID: 32662900). Discussion of these papers is relevant for placing this work into context with the prior literature. The reviewers wished to point out that the ocSSC population described herein well may likely be a subset of various stem-like cells and evidence for and against this idea must be described in the discussion/conclusions. It is for this reason that clarity regarding what type of media and why that media was used (including a consideration of all the growth factors etc) be spelled out in this paper. There is a chance that the authors were selecting for osteochondral lineage using the media that they did.\n\nReviewer #1:\n\nThis paper demonstrated the presence of two types of bone progenitors with stem cell characteristics: early osteochondral and perivascular SSCs. This paper also demonstrated the differentiation potential and differing functions of these two cell populations. The strengths are the intuitive methods and approach to demonstrating the existence and function of the cell populations. The conclusions are largely supported by the data. The paper is well-written. The largest weakness relates to small sample size in some of the experiments with a weak justification for the small sample sizes (based on other papers, but no references are provided), and the lack of data transparency at times (i.e., bar graphs with SEM bars, rather than individual data or box and whisker plots). Thus, the reproducibility of the data would need to be better demonstrated.\n\nReviewer #2:\n\nThe manuscript by Ambrosi et al., explores the differences between two subpopulations of skeletal stem cells (SSC) that they previously identified, osteochondral SSC (ocSSC) and perivascular SSC (pvSSC). These populations differ in presentation of surface markers and behavior. While ocSSC give rise to osteoblasts and chondrocytes, pvSSC have tri-lineage potential and can also become adipocytes. The Authors perform elegant studies of clonogenicity of these cells in vivo as well as lineage tracing. They confirm that only pvSSC give rise to adipocytes in addition to cartilage and bone. These populations appear at different times during embryogenesis and behave differently. While ocSSC contribute to bone formation and repair, pvSSC contribute to niche formation and regeneration after irradiation. They also examined transcriptome in these populations and found differences in gene expression and in pathways while also detecting a cross-talk between these two populations. As for the weaknesses, the nomenclature of oc vs pv SSC needs to be better justified and the use of mouse irradiation for cell grafting and complex media for in vitro expansion needs to be addressed. Overall, this is a timely and important study which is elegantly done and logically written.\n\nReviewer #3:The authors are trying to prove, by way of detailed FACS analysis of mesenchymal skeletal stem cells (SSC) isolated for the prenatal, postnatal and aging mouse skeleton, that there exists not one but two primitive SSCs in mouse modeling and remodeling long bones; one of which, derived from the osteochondral niche can give rise to bone and cartilage skeletal elements and another, from a perivascular niche in and around the bone marrow, that can give rise to adipocytes in addition to bone- and cartilage-forming cells. The latter is shown to be radiosensitive, as if it arose alongside hematopoietic stem cells in the marrow, while the former is radioresistant. The presence of two functionally distinct mesenchymal progenitors in bone challenges the dogma that there is a single progenitor that can give rise to bone, cartilage and fat in bone. If the two progenitor hypothesis is true, then it is suggested that perivascular (pv) SSC and osteochondral (oc) SSC are functionally distinct. For example, the ocSSC is active during fracture healing and the pvSSC predominant in the aging mouse skeleton. The strengths of the paper are many, especially in the very detailed study with strong cell biology methods and effective use of single cell differential gene expression analysis. However, there are weaknesses in this paper. First is the need to show that the pvSSC derived from bone can be stained in situ in the perivascular niche. Second, the authors should reference the use of Sca1 as a unique marker of pvSSC. This would be very helpful for the reader to understand the logical flow of methods and reasoning used by the authors when interpreting the results. In addition, there needs to be an expanded discussion of the characterization of distinct isoforms of translatable mRNA that are specific to pvSCC and not ocSCC. If confirmed as suggested, the careful cell specific surface phenotype for the pvSCC described here will clearly advance the field. An age related, coincident decrease in bone mass and increase in fat mass is considered to be an underlying cause of skeletal fragility in humans. Knowing that this does not represent a binary event in a single mesenchymal progenitor choosing a bone or fat fate, but rather is a collaboration between a distinct pvSSC and ocSSC could change our approach from targeting a single progenitor to targeting two distinct populations of progenitors in preventing and treating age-related bone loss.\n",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34c64ea6-214f-40a6-b534-de85c2f939c9",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C1",
+      "claim": "Postnatal long bones of mice contain at least two types of bone progenitors with bona fide skeletal stem cell (SSC) characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show, through comprehensive functional and single-cell transcriptomic analyses, that postnatal long bones of mice contain at least two types of bone progenitors with bona fide skeletal stem cell (SSC) characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional assays and single-cell RNA sequencing data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "fa1ffd29-b532-44aa-938e-78ab37e18976",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C2",
+      "claim": "An early osteochondral SSC (ocSSC) facilitates long bone growth and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "An early osteochondral SSC (ocSSC) facilitates long bone growth and repair, while a second type, a perivascular SSC (pvSSC), co-emerges with long bone marrow and contributes to shape the hematopoietic stem cell niche and regenerative demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional data showing ocSSC accumulation during fracture regeneration and their presence in early limb development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "f62ed45c-3c7c-4235-952f-399a38df64ca",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C3",
+      "claim": "A perivascular SSC (pvSSC) co-emerges with long bone marrow and contributes to shape the hematopoietic stem cell niche and regenerative demand.",
+      "claim_type": "EXPLICIT",
+      "source": "An early osteochondral SSC (ocSSC) facilitates long bone growth and repair, while a second type, a perivascular SSC (pvSSC), co-emerges with long bone marrow and contributes to shape the hematopoietic stem cell niche and regenerative demand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing pvSSC emergence timing coinciding with HSC detection and their increase after irradiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "5dbd89af-4c7c-468f-8c44-00254c5209fc",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C4",
+      "claim": "pvSSCs, but not ocSSCs, are the origin of bone marrow adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We establish that pvSSCs, but not ocSSCs, are the origin of bone marrow adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vitro and in vivo differentiation assays showing adipogenic potential only in pvSSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "634271ee-47f8-4a34-9b8e-eff24ab45ffe",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C5",
+      "claim": "Bone marrow stromal cells (BMSCs) with stem cell-like characteristics are mainly enriched either by plastic adherence or single fluorescence labeling in reporter mouse lines.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, bone marrow stromal cells (BMSCs) with stem cell-like characteristics are mainly enriched either by plastic adherence or single fluorescence labeling in reporter mouse lines (Kfoury and Scadden, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "161af251-2950-4d97-a790-40f40985c79c",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C6",
+      "claim": "BMSCs have been improperly considered stem cells if they undergo osteogenic, chondrogenic, and adipogenic differentiation in vitro and express a specific set of surface markers when expanded in cultures while omitting tests for single-cell self-renewal and multipotency.",
+      "claim_type": "EXPLICIT",
+      "source": "BMSCs have been improperly considered stem cells if they undergo osteogenic, chondrogenic, and adipogenic differentiation in vitro and express a specific set of surface markers when expanded in cultures while omitting tests for single-cell self-renewal and multipotency (Dominici et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work and represents a critique of existing methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "9b346fb0-34f1-48a0-aef6-bf0b17bbca04",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C7",
+      "claim": "Leptin receptor (LepR)-labeled cells mark SSCs but also label more mature cell types such as endothelial cells, pre-osteoblasts, osteoblasts, and chondrocytes of long bones.",
+      "claim_type": "EXPLICIT",
+      "source": "Leptin receptor (LepR)-labeled cells, for example, have long been called SSCs, but they also label more mature cell types such as endothelial cells, pre-osteoblasts, osteoblasts, and chondrocytes of long bones (Zhou et al., 2014; Tikhonova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "d39c95d7-5543-4c82-937a-30a663e5b7cb",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C8",
+      "claim": "Osteochondrogenic SSCs (ocSSCs) are restricted to bone, cartilage, and stromal lineage output but do not give rise to bone marrow adipose tissue (BMAT).",
+      "claim_type": "EXPLICIT",
+      "source": "These osteochondrogenic SSCs (ocSSCs) are restricted to bone, cartilage, and stromal lineage output but do not give rise to bone marrow adipose tissue (BMAT) (Ambrosi and Schulz, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work and data in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "f2c0085a-2ff5-43e2-86b1-d42d3e080120",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C9",
+      "claim": "A perivascular SSC (pvSSC) with tri-lineage potential has been shown to be the main source of bone marrow adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, using a different set of surface markers, a perivascular SSC (pvSSC) with tri-lineage potential has been shown to be the main source of bone marrow adipocytes, implying the existence of multiple stem cell-like populations (Ambrosi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "3de1bcf4-bd37-4f96-8c56-8ce4c021e1d6",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C10",
+      "claim": "A recent scRNAseq analysis on bone marrow mesenchyme inferred that at least two origins for osteogenic cell fates in the bone marrow exist.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this possibility, a recent scRNAseq analysis on bone marrow mesenchyme also inferred that at least two origins for osteogenic cell fates in the bone marrow exist (Baryawno et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "c252d681-4e67-4391-b004-fd31fcc7d99a",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C11",
+      "claim": "ocSSCs and pvSSCs display high clonogenic activity in renal capsule transplants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed high clonal activity in transplants with ocSSCs and pvSSCs, which is a hallmark of stem cell activity (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clonal analysis data shown in Figure 1C using Rainbow mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "de75e027-2b34-4c58-a860-d857d50c092a",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C12",
+      "claim": "ocSSC and pvSSC grafts form ossicles with bone and cartilage capable of generating an ectopic hematopoietic niche through recruitment of host-derived blood and immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "4-week grafts of both cell populations formed ossicles with bone and cartilage capable of generating an ectopic hematopoietic niche through recruitment of host-derived blood and immune cells (Figure 1D,E and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological analysis and flow cytometry data from renal capsule transplants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "be61d56d-b949-41df-abd4-3a9d0d06c7fa",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C13",
+      "claim": "Only pvSSC-derived grafts contained adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, only pvSSC-derived grafts contained adipocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by histological analysis of renal capsule transplants shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1eae1384-a603-4945-82e9-7f22429e5283",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C14",
+      "claim": "Phenotypic ocSSCs and pvSSCs remained present in 4-week grafts after dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the long-term self-renewal of SSCs, we dissociated 4-week grafts for FACS analysis and found, in line with in vitro expanded cells, that phenotypic ocSSCs and pvSSCs remained present (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data demonstrating self-renewal capacity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "0cb799ae-3ec5-4781-9410-82ce10159cb4",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C15",
+      "claim": "Freshly bulk-isolated ocSSCs and pvSSCs showed high clonogenic and osteochondrogenic differentiation potential in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblast colony-forming unit (CFU-F) and tri-lineage differentiation assays on freshly bulk-isolated ocSSCs and pvSSCs also showed high clonogenic and osteochondrogenic differentiation potential in vitro (Figure 1\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU-F and differentiation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "221eea71-e5b0-47c2-894c-e5db4a44965f",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C16",
+      "claim": "ocSSCs did not acquire adipogenic potential even under strong adipogenic stimuli and when isolated from BMAT-rich long bones of 2-year-old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in comparison to pvSSCs, ocSSCs did not acquire adipogenic potential even under strong adipogenic stimuli and when isolated from BMAT-rich long bones of 2-year-old mice (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by adipogenic differentiation assay data from aged mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "4ea484eb-3563-4970-a2b7-5ca1fd383101",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C17",
+      "claim": "Single-clone CFUs derived from individual sorted ocSSCs and pvSSCs showed differences in lineage potential.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in lineage potential was also observed in single-clone CFUs derived from individual sorted ocSSCs and pvSSCs (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by single-cell clonal differentiation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "121d607f-21d8-4726-b431-88b082300b68",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C18",
+      "claim": "Osteochondrogenic lineage output was observed in both ocSSC and pvSSC intratibial transplants, and only pvSSCs generated perilipin-positive bone marrow adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, osteochondrogenic lineage output was observed in both cell types, and only pvSSCs generated perilipin-positive bone marrow adipocytes (Figure 1G and Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistological staining data from intratibial transplants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "78b19e27-2622-45f6-b87c-9526bd18f574",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C19",
+      "claim": "ocSSCs/BCSPs are enriched in micro-dissected non-marrow fractions of femurs.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the original reports, we found that ocSSCs/BCSPs are enriched in micro-dissected non-marrow fractions of femurs while pvSSCs and the committed APCs are more evenly distributed but accumulate at the ends of long bones where coincidentally BMAT first appears (Figure 2A and Figure 2\u2014figure supplement 1A; Chan et al., 2015; Scheller et al., 2015; Ambrosi et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis of micro-dissected bone regions and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "23ebe3eb-d11c-46f5-9636-6c2cd56be9f3",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C20",
+      "claim": "pvSSCs and committed APCs are more evenly distributed but accumulate at the ends of long bones where BMAT first appears.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the original reports, we found that ocSSCs/BCSPs are enriched in micro-dissected non-marrow fractions of femurs while pvSSCs and the committed APCs are more evenly distributed but accumulate at the ends of long bones where coincidentally BMAT first appears (Figure 2A and Figure 2\u2014figure supplement 1A; Chan et al., 2015; Scheller et al., 2015; Ambrosi et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis of micro-dissected bone regions and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "9f918987-2b1b-45b4-9081-17b0d37f035e",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C21",
+      "claim": "Both ocSSC and pvSSC types were found on the periosteum.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, both SSC types were found on the periosteum, a site described to harbor a distinct stem cell for bone regeneration (Debnath et al., 2018; Duchamp de Lageneste et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FACS analysis data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1ddd5b58-94f9-47a4-a43e-f8d63699c428",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C22",
+      "claim": "ocSSCs are present in high abundance at the early stages of limb development (E13.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometric analysis of long bones at different timepoints during skeletal maturation further revealed that ocSSCs are present in high abundance at the early stages of limb development (E13.5), linking them to bone formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by FACS analysis data across developmental timepoints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "ca59eb53-6cbd-49ca-a27a-f64f735db1b3",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C23",
+      "claim": "pvSSCs are first detectable around E15.5, similar to hematopoietic stem cell (HSC) detection in mouse bone marrow, and peak perinatally.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, pvSSCs are first detectable around E15.5, similar to hematopoietic stem cell (HSC) detection in mouse bone marrow, and peak perinatally (Figure 2B; Rowe et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data across developmental timepoints and a citation to previous work on HSC detection.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "407a0d4d-c21d-4664-b580-48c3fb2326d3",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C24",
+      "claim": "Transplanted \u2264E13.5 tibias failed to develop GFP-labeled diaphyseal bone marrow adipocytes whereas \u2265P1 tibia bones strongly accumulated adipocytes below the growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transplanted \u2264E13.5 tibias failed to develop GFP-labeled diaphyseal bone marrow adipocytes whereas \u2265P1 tibia bones strongly accumulated adipocytes below the growth plate in this experimental setting (Figure 2C and Figure 2\u2014figure supplement 1B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by renal capsule transplant data of whole bones from different developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "500fbafc-abe7-46a8-b1e0-36ebd16bb1ab",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C25",
+      "claim": "Sca1 expression was virtually absent in newborn and 8-week-old uninjured long bone as well as post-fracture day-5 and -15 ocSSCs/BCSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sca1 expression was virtually absent in newborn and 8-week-old uninjured long bone as well as post-fracture day-5 and -15 ocSSCs/BCSPs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data showing Sca1 expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "db49f437-1675-4f4b-9cf7-2f007116d363",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C26",
+      "claim": "The majority of Sca1-positive cells in the ocSSC lineage tree were contained in the Tie2-positive fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the ocSSC lineage tree revealed that the majority of Sca1-positive cells were contained in the Tie2-positive fraction, in agreement with our earlier work showing adipogenic potential of that population (Figure 2\u2014figure supplement 1E,F; Chan et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "10073d83-d184-4ad6-806d-ff7169b0bf03",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C27",
+      "claim": "ocSSCs from E13.5 and newborn mice did not give rise to pvSSCs/APCs in 4-week renal grafts, and pvSSC-derived grafts did not generate ocSSCs/BCSPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ocSSCs from E13.5 and newborn mice did not give rise to pvSSCs/APCs in 4-week renal grafts, and pvSSC-derived grafts did not generate ocSSCs/BCSPs (Figure 2E and Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis of renal graft-derived cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "19ea7276-c8bf-46bf-823e-f6ed7172cfb0",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C28",
+      "claim": "ocSSC and pvSSC clustered separately in single-cell RNA sequencing analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, ocSSC and pvSSC clustered separately with Ly6a/Sca1 expression pattern, confirming cell-type specificity (Figure 3A and Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "5101684a-f6ea-4adb-b238-522fda6f8fe8",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C29",
+      "claim": "Gene ontology analysis demonstrated a strong association of ocSSCs with skeletal development and formation, while pvSSC genes were linked to extracellular matrix organization and regulation of hematopoietic cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis of differentially expressed genes between both cell types through GO Biological Processes demonstrated a strong association of ocSSCs with skeletal development and formation, while pvSSC genes were linked to extracellular matrix organization and regulation of hematopoietic cell types (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "716b7a9d-c613-4ece-a812-a425b47f07e3",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C30",
+      "claim": "The ocSSC population expressed much higher levels of commonly known osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1).",
+      "claim_type": "EXPLICIT",
+      "source": "The ocSSC population also expressed much higher levels of commonly known osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1), whereas pvSSCs exhibited elevated gene counts for fibroblast markers (Pdgfra, Postn, Dpt) and factors related to hematopoietic interactions (Cxcl12, Igf1, Rarres2) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "a4da3f12-93d8-4cb0-ad2d-60e88cb18653",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C31",
+      "claim": "pvSSCs exhibited elevated gene counts for fibroblast markers (Pdgfra, Postn, Dpt) and factors related to hematopoietic interactions (Cxcl12, Igf1, Rarres2).",
+      "claim_type": "EXPLICIT",
+      "source": "The ocSSC population also expressed much higher levels of commonly known osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1), whereas pvSSCs exhibited elevated gene counts for fibroblast markers (Pdgfra, Postn, Dpt) and factors related to hematopoietic interactions (Cxcl12, Igf1, Rarres2) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "71b7abb0-713e-4dfe-ae75-138168841c54",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C32",
+      "claim": "pvSSCs and their downstream APCs were strongly increased compared to non-irradiated mice 2 weeks after sublethal irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "pvSSCs and their downstream APCs were strongly increased compared to non-irradiated mice in line with their potential role in supporting hematopoietic recovery and the increase in BMAT seen upon radiation (Naveiras et al., 2009), while irradiation-sensitive ocSSC/BCSPs showed a decline in numbers (Figure 3E and Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data after irradiation and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "9c72bf38-48e3-445d-a13f-fd8be422bfe4",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C33",
+      "claim": "Irradiation-sensitive ocSSC/BCSPs showed a decline in numbers after sublethal irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "pvSSCs and their downstream APCs were strongly increased compared to non-irradiated mice in line with their potential role in supporting hematopoietic recovery and the increase in BMAT seen upon radiation (Naveiras et al., 2009), while irradiation-sensitive ocSSC/BCSPs showed a decline in numbers (Figure 3E and Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data after irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "c23c6f68-e6b7-49d9-b5d1-14dbc8e1bd16",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C34",
+      "claim": "ocSSCs accumulate significantly more in callus tissue compared to pvSSCs during bi-cortical fracture regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we assessed the prevalence of SSC types during bi-cortical fracture regeneration, we found ocSSCs to accumulate significantly more in callus tissue compared to pvSSCs as expected from their pivotal role in skeletal repair (Figure 3F and Figure 3\u2014figure supplement 1F; Marecic et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data during fracture healing and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "d2bf5a8f-17bd-4d52-b20f-539289601952",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C35",
+      "claim": "Bone anabolic ocSSCs were significantly reduced with age in 30-month-old mice compared to 2-month-old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While bone anabolic ocSSCs were significantly reduced with age, bone marrow adipocytes forming pvSSCs/APCs were increased (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data comparing young and aged mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "f05cb797-f0e8-4fd3-bb2d-29dacf69c048",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C36",
+      "claim": "Bone marrow adipocyte-forming pvSSCs/APCs were increased with age in 30-month-old mice compared to 2-month-old mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While bone anabolic ocSSCs were significantly reduced with age, bone marrow adipocytes forming pvSSCs/APCs were increased (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data comparing young and aged mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "4213265f-3d11-44e1-9d4a-38d7b977fa52",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C37",
+      "claim": "In co-transplantation experiments, ocSSCs were a key contributor to osteochondrogenic tissue and reticular cells, whereas pvSSC-derived cells were more prevalent in areas anatomically close to host-derived hematopoietic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, co-transplantation of equal numbers of purified, uniquely labeled SSC types under the renal capsule of NSG mice generated ossicles with ocSSCs as a key contributor to osteochondrogenic tissue and reticular cells, whereas pvSSC-derived cells were more prevalent in areas anatomically close to host-derived hematopoietic tissue (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological analysis of co-transplantation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "ce025ad7-93ff-4cdc-a042-9994683e16dd",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C38",
+      "claim": "Genes reported to describe SSC populations, for example, Pthrp, Ctsk, Cxcl12, and Osx, show variable expression within and between ocSSCs and pvSSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "scRNAseq data suggested that genes reported to describe SSC populations, for example, Pthrp, Ctsk, Cxcl12, and Osx, show variable expression within and between ocSSCs and pvSSCs (Figure 4B; Greenbaum et al., 2013; Mizoguchi et al., 2014; Mizuhashi et al., 2018; Debnath et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "fdb3d99d-202e-4fe7-a816-3aae50baf061",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C39",
+      "claim": "Reporter strains for labeling chondrocytes (Col2a1, Acan) and osteoblasts (Col1a1, Spp1) show expression in stem cell-like populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, reporter strains for labeling more mature cell types such as chondrocytes (Col2a1, Acan) and osteoblasts (Col1a1, Spp1) also show expression in stem cell-like populations (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "fb8a6a85-f698-4aa0-8010-acc60b4f5c61",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C40",
+      "claim": "LepR expression was found in both ocSSC and pvSSC cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyzed LepR expression on ocSSC/pvSSC lineage populations by FACS, we found LepR expression in both cell types (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "67c42c7e-8b70-492d-ae3b-d553e446cc1e",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C41",
+      "claim": "Separating ocSSCs or pvSSCs into LepR-positive and -negative fractions did not alter CFU-F capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating ocSSCs or pvSSCs into LepR-positive and -negative fractions did not alter CFU-F capacity (Figure 4D) and potential to give rise to osteocalcin-expressing osteoblasts in vitro (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CFU-F assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "5d1b4c47-bf42-4392-81c3-6ac711269cce",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C42",
+      "claim": "Separating ocSSCs or pvSSCs into LepR-positive and -negative fractions did not alter potential to give rise to osteocalcin-expressing osteoblasts in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating ocSSCs or pvSSCs into LepR-positive and -negative fractions did not alter CFU-F capacity (Figure 4D) and potential to give rise to osteocalcin-expressing osteoblasts in vitro (Figure 4E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by osteogenic differentiation assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "077a61ef-74db-4aa4-881d-7dcbc94ef386",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C43",
+      "claim": "Leiden clustering yielded three subclusters for ocSSCs while pvSSCs were homogeneous in their overall gene signature.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the diversity within ocSSC and pvSSC variants, we conducted Leiden clustering on our scRNAseq dataset. This yielded three subclusters for ocSSCs while pvSSCs were homogeneous in their overall gene signature (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Leiden clustering analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "5f047174-0a58-4312-b1f1-32a8c96d19cb",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C44",
+      "claim": "Clusters 3 and 4 were enriched for marker genes of chondrogenic and osteogenic fates, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at the top differentially expressed genes between the four clusters, we found that clusters 3 and 4 were enriched for marker genes of chondrogenic and osteogenic fates, respectively (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by differential gene expression analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1ad5c792-5549-4ea5-ae14-fe4df23186cc",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C45",
+      "claim": "Cluster 1 (pvSSCs) and cluster 2 were enriched for stem cell-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, cluster 1 (pvSSCs) and cluster 2 were enriched for stem cell-associated genes (Figure 5C and Figure 5\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "5f6f2793-bcac-4f9f-9508-817ab9279c5e",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C46",
+      "claim": "Clusters 3 and 4 showed pathway enrichment related to active bone formation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas clusters 3 and 4 showed pathway enrichment related to active bone formation processes (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pathway enrichment analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "13e0dce3-03d7-4ba4-aead-f30a126f14eb",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C47",
+      "claim": "Cell cycle status and CytoTrace analysis inferred that osteochondrogenic SSC-enriched clusters were more active.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle status and CytoTrace analysis additionally inferred that osteochondrogenic SSC-enriched clusters were more active (Figure 5\u2014figure supplement 1C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell cycle and CytoTrace analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "96c3db41-e611-4771-a4c8-4a773f2bdc53",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C48",
+      "claim": "Leiden clusters revealed patterns in expression of combinations of ligands and cognate receptors that are highly suggestive of crosstalk between ocSSCs and pvSSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Leiden clusters revealed patterns in expression of combinations of ligands and cognate receptors that are highly suggestive of crosstalk between ocSSCs and pvSSCs (Figure 5D and Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ligand-receptor expression analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "a88873bc-5f8c-4260-b475-8da70cbb9ae8",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C49",
+      "claim": "Cells of cluster 1 (pvSSCs) expressed Tgfb2/Tgfb3 and Wnt ligand genes, which might support the specific fate commitment of ocSSCs enriched in clusters 2\u20134 that expressed respective receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cells of cluster 1 (pvSSCs) expressed Tgfb2/Tgfb3 and Wnt ligand genes, well-known pro-chondrogenic and -osteogenic signals, which might support the specific fate commitment of ocSSCs enriched in clusters 2\u20134 that expressed respective receptors (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ligand-receptor expression analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "bab11dd9-a9b0-45dc-8d18-f7c0a407e0fe",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C50",
+      "claim": "Bmp, Tgfa, and Egf ligands from cells of primed clusters 3 and 4 might signal back to pvSSCs, which express the canonical cognate receptor genes to these pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversely, Bmp, Tgfa, and Egf ligands from cells of primed clusters 3 and 4 might also signal back to pvSSCs, which express the canonical cognate receptor genes to these pathways, implying feedback regulation across SSC types (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ligand-receptor expression analysis of scRNAseq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "fbb7870e-eeb6-4bf9-92e0-490e4da7d810",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C51",
+      "claim": "Cadherin-13 (Cdh13) is a new marker gene for the most stem cell-like cluster 1 (pvSSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of our scRNAseq dataset, we identified cadherin-13 (Cdh13), the receptor for the adipogenic factor adiponectin (Hug et al., 2004), and Wnt inhibitory factor-1 (Wif1), previously identified to be expressed in a small subset of BMSCs (Tikhonova et al., 2019), as new marker genes for the most stem cell-like clusters 1 (pvSSC) and 2 (ocSSC), respectively (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "32bec6fe-b01b-4df8-80eb-40cacd092f9c",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C52",
+      "claim": "Wnt inhibitory factor-1 (Wif1) is a new marker gene for the most stem cell-like cluster 2 (ocSSC).",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of our scRNAseq dataset, we identified cadherin-13 (Cdh13), the receptor for the adipogenic factor adiponectin (Hug et al., 2004), and Wnt inhibitory factor-1 (Wif1), previously identified to be expressed in a small subset of BMSCs (Tikhonova et al., 2019), as new marker genes for the most stem cell-like clusters 1 (pvSSC) and 2 (ocSSC), respectively (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNAseq gene expression data and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "3a3f59a3-c6a8-4697-b40f-896a616e2579",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C53",
+      "claim": "In situ hybridization confirmed a restricted expression of Wif1 in the resting and proliferative zones of the growth plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization by RNAscope confirmed a restricted expression of Wif1 in the resting and proliferative zones of the growth plate, while Cdh13 was absent and found in cells located in the bone marrow close to endomucin-expressing vasculature (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1c1bad6e-fefb-4379-9d9a-52ed6a970801",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C54",
+      "claim": "Cdh13 was absent in the growth plate and found in cells located in the bone marrow close to endomucin-expressing vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization by RNAscope confirmed a restricted expression of Wif1 in the resting and proliferative zones of the growth plate, while Cdh13 was absent and found in cells located in the bone marrow close to endomucin-expressing vasculature (Figure 5G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "b3c2bfbd-b249-4ab2-a1af-21ccf1e36d18",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C55",
+      "claim": "Wif1- and Cdh13-expressing cells were found among periosteal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed via flow cytometric analysis, Wif1- and Cdh13-expressing cells were also found among periosteal cells (Figure 5\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAscope in situ hybridization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "f47ac22e-9996-4145-8467-c803f110e5c9",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C56",
+      "claim": "The osteochondral SSC is closely associated with marrow-free spaces such as the growth plate or periosteum.",
+      "claim_type": "EXPLICIT",
+      "source": "The osteochondral SSC, closely associated with marrow-free spaces such as the growth plate or periosteum, was highly prevalent in early limb development, remained present in low numbers throughout adulthood, and could be activated to accumulate upon injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by anatomical localization data and developmental timepoint analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "d0ea59e1-6193-4872-86d4-8cdfca205c73",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C57",
+      "claim": "ocSSCs never gave rise to BMAT and may be the main source of osteochondrogenic tissue in long bones.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that ocSSCs never gave rise to BMAT and may be the main source of osteochondrogenic tissue in long bones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by differentiation assay data and transplantation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1c74dea7-7181-401d-9bbe-e4851be04f3e",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C58",
+      "claim": "ocSSCs might be the SSC type exclusively targeted by the Osx-Cre reporter line that has been previously described to label cells that form bone and transient stromal cells in the fetal skeleton, while being restricted to osteolineages during adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, ocSSCs might be the SSC type exclusively targeted by the Osx-Cre reporter line that has been previously described to label cells that form bone and transient stromal cells in the fetal skeleton, while being restricted to osteolineages during adulthood (Mizoguchi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and based on inference from the data and a citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "2bc14261-0e05-4dc0-bd4e-eb24d4c5fcfa",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C59",
+      "claim": "ocSSCs are included as subpopulations of Pthrp-expressing growth plate and Ctsk-expressing periosteal stem and progenitor cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on recent reports, ocSSCs are included as subpopulations of Pthrp-expressing growth plate and Ctsk-expressing periosteal stem and progenitor cell types (Debnath et al., 2018; Mizuhashi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work and gene expression data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "2e63f153-6069-4ba1-9835-0e2d751e9b89",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C60",
+      "claim": "pvSSCs occurred at a later embryonic stage in sync with the homing of HSCs to bone marrow niches.",
+      "claim_type": "EXPLICIT",
+      "source": "pvSSCs, demonstrated to be essential for BMAT development, occurred at a later embryonic stage in sync with the homing of HSCs to bone marrow niches (Figure 2B\u2013C; Rowe et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by developmental timepoint analysis and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "18cb6444-ecd9-4337-8342-91c3a310a206",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C61",
+      "claim": "A critical role for mesenchymal cell types to maintain HSC quiescence has long been established.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical role for mesenchymal cell types to maintain HSC quiescence has long been established (Ding et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "0a20f5b8-5171-46af-94ab-bb1fb8d38b05",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C62",
+      "claim": "When intratibially injected, pvSSCs seemed to distribute more evenly throughout the marrow, potentially to HSC niches, whereas ocSSC-derived cells mainly aggregated in a more confined space.",
+      "claim_type": "EXPLICIT",
+      "source": "When intratibially injected, pvSSCs also seemed to distribute more evenly throughout the marrow, potentially to HSC niches, whereas ocSSC-derived cells mainly aggregated in a more confined space (Figure 1\u2014figure supplement 1G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological analysis of intratibial transplants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "9ddb271d-c333-40b8-abfb-db879cf5f369",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C63",
+      "claim": "Recent scRNAseq studies have found abundant adipo-primed cell populations in the bone marrow that were implied to be a major reservoir of pro-hematopoietic, pro-vascular, and anti-osteogenic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our scRNAseq expression data on pvSSCs, recent scRNAseq studies have found abundant adipo-primed cell populations in the bone marrow that were implied to be a major reservoir of pro-hematopoietic, pro-vascular, and anti-osteogenic factors (Zhong et al., 2020; Tikhonova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "3ffdebaa-5b82-4e82-bc89-2ae0b4df82af",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C64",
+      "claim": "pvSSCs and their downstream APCs were increased in frequency in older mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in contrast to ocSSCs, pvSSCs and their downstream APCs were increased in frequency in older mice (Figure 3G) and thus correlate with the observation of higher HSC abundance during aging (Pang et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FACS analysis data from aged mice and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "dc3f57d7-6569-4611-a34c-442de05c4109",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C65",
+      "claim": "Previous work has established a non-hematopoietic, non-endothelial, Prrx-1 mesenchymal origin of pvSSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has established a non-hematopoietic, non-endothelial, Prrx-1 mesenchymal origin of pvSSCs (Ambrosi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "8ba9c624-99bb-4df1-bf4c-c83f70a51b7f",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C66",
+      "claim": "One possibility is that pvSSCs originated from osteo-plastic perivascular mural cell and pericyte populations that had ingressed into the bone marrow space during endochondral ossification in limb formation.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that pvSSCs originated from osteo-plastic perivascular mural cell and pericyte populations that had ingressed into the bone marrow space during endochondral ossification in limb formation (Pearson et al., 1986; Crisan et al., 2008; James et al., 2010; Corselli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "91be597a-5269-43d5-ba1c-b4a0db4935e3",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C67",
+      "claim": "Specific stimuli such as high levels of Bmp2 or Wnt might be able to convert pvSSCs into ocSSC-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, specific stimuli such as high levels of Bmp2 or Wnt might be able to convert pvSSCs into ocSSC-like cells (Chan et al., 2015; Matsushita et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to previous work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "cb9c3140-f995-41ec-8768-af8be3aaf0bf",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C68",
+      "claim": "Available mouse strains, for example the LepR-Cre reporter line, are not able to answer open questions about SSC origins because loxP-site excision-directed fluorescence reporters permanently stay on, not necessarily reflecting the current expression of the gene driving Cre-recombinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Available mouse strains, for example the LepR-Cre reporter line, are not able to answer these open questions as we observed that the expression of tracer genes did not functionally separate SSC types. One obvious reason is that loxP-site excision-directed fluorescence reporters permanently stay on, not necessarily reflecting the current expression of the gene driving Cre-recombinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data and knowledge of reporter mouse limitations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "64a1e627-8184-4a4b-9ce7-bb40f69a2f1c",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C69",
+      "claim": "Marker expression is dependent on the developmental stage of a given cell and is not restricted to the stem cell state as it also labels derivative downstream cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker expression is dependent on the developmental stage of a given cell and is not restricted to the stem cell state as it also labels derivative downstream cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of cell marker expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "aa20b97b-e9f1-4bde-b9db-ea971c09d121",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C70",
+      "claim": "Targeting SSCs by prospectively isolating them with a combination of surface markers gives a more faithful snapshot of a given cell population, however, at the expense of not being able to fate map rare cells in situ or directly test key molecular functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, targeting SSCs by prospectively isolating them with a combination of surface markers gives a more faithful snapshot of a given cell population, however, at the expense of not being able to fate map rare cells in situ or directly test key molecular functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference about the advantages and limitations of different methodological approaches.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "1fc4b1c2-54bd-4daf-9c63-f575f2ee4974",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C71",
+      "claim": "scRNAseq analysis indicated a remaining degree of cellular heterogeneity within ocSSCs and pvSSCs that will have to be further functionally resolved in future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While our approach provides a significant advance toward highly homogeneous SSC populations, scRNAseq analysis also indicated a remaining degree of cellular heterogeneity that will have to be further functionally resolved in future studies (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Leiden clustering analysis showing subclusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "d002f80e-c34d-4a4e-a96a-19bdde7cbde9",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "claim_id": "C72",
+      "claim": "These findings may be readily translatable to the human setting through existing reports of SSC populations that have comparable characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitingly, these findings may be readily translatable to the human setting through existing reports of SSC populations that have comparable characteristics (Sacchetti et al., 2007; Chan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative and supported by citations to previous work on human SSCs.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3926cd86-0529-4ec8-8c9c-c7c782012d24",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Postnatal mouse long bones contain two distinct skeletal stem cell (SSC) types: an osteochondral SSC (ocSSC) that facilitates bone growth and repair, and a perivascular SSC (pvSSC) that contributes to the hematopoietic niche. Only pvSSCs give rise to bone marrow adipose tissue (BMAT), while ocSSCs are restricted to osteochondrogenic lineages. Both SSC types demonstrate bona fide stem cell properties including high clonogenicity, long-term self-renewal, and multipotency in vitro and in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 collectively provide strong converging evidence from multiple experimental approaches. The functional characterization includes clonal analysis (C11), renal capsule transplants (C12-C14), CFU-F assays (C15), single-cell differentiation assays (C17), and intratibial transplants (C18). The exclusive adipogenic potential of pvSSCs is demonstrated across multiple assays and age groups (C13, C16, C18), while both cell types show osteochondrogenic capacity. The data are internally consistent and supported by appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "d9441349-2b25-407d-9f2c-37065d4e391a",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ocSSCs and pvSSCs occupy distinct anatomical niches and emerge at different developmental timepoints. ocSSCs are enriched in non-marrow fractions and growth plate regions, appear early in limb development (E13.5), and are associated with marrow-free spaces. pvSSCs are more evenly distributed, accumulate at bone ends where BMAT appears, emerge later (E15.5) coinciding with HSC detection, and localize perivascularly. Both cell types are found in the periosteum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 and C53-C56 are supported by complementary spatial and temporal analyses including FACS quantification of micro-dissected bone regions (C19-C20), developmental timepoint analysis (C22-C23), whole bone transplantation experiments (C24), lineage conversion assays (C27), and in situ hybridization with new markers Wif1 and Cdh13 (C53-C55). The temporal correlation between pvSSC emergence and HSC detection (C23) is supported by citation to prior work. The data consistently demonstrate spatial and temporal separation of the two SSC types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "a4e2a032-17a1-4d62-a441-ac26f8834c63",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing reveals that ocSSCs and pvSSCs are molecularly distinct populations. The two cell types cluster separately and show differential gene expression patterns: ocSSCs express higher levels of osteochondrogenic genes (Acan, Col2a1, Pthr1, Spp1) and are associated with skeletal development, while pvSSCs express fibroblast markers (Pdgfra, Postn, Dpt) and hematopoietic interaction factors (Cxcl12, Igf1, Rarres2) and are linked to extracellular matrix organization and hematopoietic regulation. Sca1 expression is virtually absent in ocSSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 are supported by comprehensive scRNAseq analysis (143 ocSSCs, 169 pvSSCs) with appropriate quality filtering. The separate clustering (C28), differential gene expression (C30-C31), and gene ontology analysis (C29) provide converging molecular evidence for distinct cell identities. The Sca1 expression data (C25-C26) is supported by both FACS and scRNAseq, confirming that this pvSSC marker is not expressed in ocSSCs. The molecular distinctions align with the functional differences observed in other results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ocSSCs and pvSSCs respond differentially to physiological challenges and show distinct functional roles. pvSSCs increase after irradiation and with aging, while ocSSCs decline, consistent with pvSSC roles in hematopoietic niche support. ocSSCs accumulate during fracture repair, reflecting their role in skeletal regeneration. In co-transplantation experiments, ocSSCs contribute primarily to osteochondrogenic tissue while pvSSCs localize near hematopoietic tissue. pvSSCs emerge synchronously with HSC homing to bone marrow.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37, C60, C62, and C64 are supported by FACS quantification in multiple experimental contexts: irradiation (C32-C33), fracture healing (C34), aging (C35-C36, C64), and co-transplantation (C37). The temporal correlation between pvSSC emergence and HSC detection (C60) is supported by developmental analysis and citation. The differential responses to physiological perturbations are statistically significant and consistent with the proposed functional roles. However, the mechanistic connection to HSC regulation remains correlative rather than causally demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "cc7070b7-f552-4622-a395-a81c6534076d",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Commonly used single-gene reporter lines (LepR, Pthrp, Ctsk, Cxcl12, Osx, Col2a1, Acan, Col1a1, Spp1) show variable expression within and between ocSSCs and pvSSCs and also label more differentiated cell types. LepR expression is found in both SSC types and does not functionally separate them. Reporter mouse lines have limitations because fluorescent reporters permanently stay on after Cre-mediated recombination, not reflecting current gene expression. Multi-marker FACS provides more faithful cell population snapshots but cannot fate map cells in situ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 and C68-C70 are supported by scRNAseq gene expression data (C38-C39), FACS analysis of LepR expression (C40), and functional assays showing no difference in CFU-F capacity or osteogenic potential between LepR+ and LepR- fractions (C41-C42). The critique of reporter mouse limitations (C68-C70) is based on sound understanding of Cre-lox technology and is supported by the data showing LepR expression in both SSC types. This represents an important methodological contribution highlighting the advantages of multi-marker FACS over single-gene reporters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Leiden clustering reveals heterogeneity within SSC populations, with ocSSCs containing three subclusters while pvSSCs are more homogeneous. Clusters 3 and 4 are enriched for chondrogenic and osteogenic fate markers respectively, while clusters 1 (pvSSCs) and 2 show stem cell-associated genes. Ligand-receptor expression patterns suggest crosstalk between SSC types, with pvSSCs expressing Tgfb2/Tgfb3 and Wnt ligands that may support ocSSC fate commitment, and ocSSCs expressing Bmp, Tgfa, and Egf ligands that may signal back to pvSSCs. New markers Wif1 (ocSSC) and Cdh13 (pvSSC) were identified for the most stem-like clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 and C71 are supported by Leiden clustering analysis of the scRNAseq dataset. The identification of subclusters (C43), their characterization by differential gene expression (C44-C46), cell cycle analysis (C47), and ligand-receptor expression patterns (C48-C50) are all data-driven. However, the proposed crosstalk mechanisms (C49-C50) are speculative and based on expression patterns rather than functional validation. The identification of new markers Wif1 and Cdh13 (C51-C52) is validated by in situ hybridization. The acknowledgment of remaining heterogeneity (C71) is appropriate and honest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior work on bone marrow stromal cells (BMSCs) and skeletal stem cells has methodological limitations. BMSCs have been improperly characterized as stem cells based solely on tri-lineage differentiation and surface marker expression without testing single-cell self-renewal and multipotency. Single-gene reporter lines like LepR label heterogeneous populations including mature cell types. Previous work has identified ocSSCs restricted to osteochondrogenic lineages and pvSSCs with tri-lineage potential as the source of bone marrow adipocytes, and recent scRNAseq studies inferred multiple origins for osteogenic fates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 accurately summarize prior work through appropriate citations. The critique of BMSC characterization (C6) is supported by citation to consensus criteria (Dominici et al., 2006) and represents a valid methodological concern. The limitations of LepR labeling (C7) are supported by citations and confirmed by data in this manuscript. The prior identification of ocSSCs (C8) and pvSSCs (C9) by the authors' previous work is appropriately cited. The reference to recent scRNAseq studies (C10) provides context for the current work. These claims establish the rationale and context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "210dfda4-856b-47d4-85d3-f41d963f7f2f",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study's findings relate to previously described cell populations and established biological principles. ocSSCs may be the SSC type targeted by Osx-Cre reporter lines and are included in Pthrp-expressing growth plate and Ctsk-expressing periosteal stem cell populations. Mesenchymal cell types have established roles in maintaining HSC quiescence. Recent scRNAseq studies found adipo-primed populations as reservoirs of pro-hematopoietic factors. pvSSCs have a non-hematopoietic, non-endothelial, Prrx-1 mesenchymal origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59, C61, C63, and C65 appropriately contextualize the findings within existing literature through citations. The connection to Osx-Cre (C58) is speculative but reasonable based on the data. The relationship to Pthrp and Ctsk populations (C59) is supported by citations and gene expression data. The established role of mesenchymal cells in HSC regulation (C61) and the characterization of adipo-primed populations (C63) provide important context. The Prrx-1 origin of pvSSCs (C65) is supported by prior work. These claims appropriately integrate the current findings with existing knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    },
+    {
+      "id": "0103011f-dcf0-4feb-85b1-07d409d624ee",
+      "content_id": "342df37a-4eaf-43dd-be06-33c426c916de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript proposes speculative hypotheses about SSC origins and plasticity. pvSSCs may have originated from perivascular mural cells and pericytes that ingressed during endochondral ossification. High levels of Bmp2 or Wnt might convert pvSSCs into ocSSC-like cells. The findings may be translatable to humans through comparable SSC populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66, C67, and C72 are explicitly speculative and acknowledged as such in the text. The proposed origin of pvSSCs from perivascular cells (C66) is supported by citations but not tested experimentally. The potential for pvSSC-to-ocSSC conversion (C67) is based on citations to prior work but not demonstrated here. The translatability to humans (C72) is supported by citations to human SSC studies but requires validation. These are reasonable hypotheses for future work but are not supported by data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:02:41.204295Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "34c64ea6-214f-40a6-b534-de85c2f939c9",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "fa1ffd29-b532-44aa-938e-78ab37e18976",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "f62ed45c-3c7c-4235-952f-399a38df64ca",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "5dbd89af-4c7c-468f-8c44-00254c5209fc",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "c252d681-4e67-4391-b004-fd31fcc7d99a",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "de75e027-2b34-4c58-a860-d857d50c092a",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "be61d56d-b949-41df-abd4-3a9d0d06c7fa",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "1eae1384-a603-4945-82e9-7f22429e5283",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "0cb799ae-3ec5-4781-9410-82ce10159cb4",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "221eea71-e5b0-47c2-894c-e5db4a44965f",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "4ea484eb-3563-4970-a2b7-5ca1fd383101",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "121d607f-21d8-4726-b431-88b082300b68",
+      "result_id": "3926cd86-0529-4ec8-8c9c-c7c782012d24"
+    },
+    {
+      "claim_id": "78b19e27-2622-45f6-b87c-9526bd18f574",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "23ebe3eb-d11c-46f5-9636-6c2cd56be9f3",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "9f918987-2b1b-45b4-9081-17b0d37f035e",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "1ddd5b58-94f9-47a4-a43e-f8d63699c428",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "ca59eb53-6cbd-49ca-a27a-f64f735db1b3",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "407a0d4d-c21d-4664-b580-48c3fb2326d3",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "10073d83-d184-4ad6-806d-ff7169b0bf03",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "3a3f59a3-c6a8-4697-b40f-896a616e2579",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "1c1bad6e-fefb-4379-9d9a-52ed6a970801",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "b3c2bfbd-b249-4ab2-a1af-21ccf1e36d18",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "f47ac22e-9996-4145-8467-c803f110e5c9",
+      "result_id": "d9441349-2b25-407d-9f2c-37065d4e391a"
+    },
+    {
+      "claim_id": "500fbafc-abe7-46a8-b1e0-36ebd16bb1ab",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "db49f437-1675-4f4b-9cf7-2f007116d363",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "19ea7276-c8bf-46bf-823e-f6ed7172cfb0",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "5101684a-f6ea-4adb-b238-522fda6f8fe8",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "716b7a9d-c613-4ece-a812-a425b47f07e3",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "a4da3f12-93d8-4cb0-ad2d-60e88cb18653",
+      "result_id": "a4e2a032-17a1-4d62-a441-ac26f8834c63"
+    },
+    {
+      "claim_id": "71b7abb0-713e-4dfe-ae75-138168841c54",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "9c72bf38-48e3-445d-a13f-fd8be422bfe4",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "c23c6f68-e6b7-49d9-b5d1-14dbc8e1bd16",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "d2bf5a8f-17bd-4d52-b20f-539289601952",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "f05cb797-f0e8-4fd3-bb2d-29dacf69c048",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "4213265f-3d11-44e1-9d4a-38d7b977fa52",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "2e63f153-6069-4ba1-9835-0e2d751e9b89",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "0a20f5b8-5171-46af-94ab-bb1fb8d38b05",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "3ffdebaa-5b82-4e82-bc89-2ae0b4df82af",
+      "result_id": "b94603fd-1faf-4abd-b634-b3de6bc3ebbb"
+    },
+    {
+      "claim_id": "ce025ad7-93ff-4cdc-a042-9994683e16dd",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "fdb3d99d-202e-4fe7-a816-3aae50baf061",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "fb8a6a85-f698-4aa0-8010-acc60b4f5c61",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "67c42c7e-8b70-492d-ae3b-d553e446cc1e",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "5d1b4c47-bf42-4392-81c3-6ac711269cce",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "cb9c3140-f995-41ec-8768-af8be3aaf0bf",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "64a1e627-8184-4a4b-9ce7-bb40f69a2f1c",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "aa20b97b-e9f1-4bde-b9db-ea971c09d121",
+      "result_id": "cc7070b7-f552-4622-a395-a81c6534076d"
+    },
+    {
+      "claim_id": "077a61ef-74db-4aa4-881d-7dcbc94ef386",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "5f047174-0a58-4312-b1f1-32a8c96d19cb",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "1ad5c792-5549-4ea5-ae14-fe4df23186cc",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "5f6f2793-bcac-4f9f-9508-817ab9279c5e",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "13e0dce3-03d7-4ba4-aead-f30a126f14eb",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "96c3db41-e611-4771-a4c8-4a773f2bdc53",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "a88873bc-5f8c-4260-b475-8da70cbb9ae8",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "bab11dd9-a9b0-45dc-8d18-f7c0a407e0fe",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "fbb7870e-eeb6-4bf9-92e0-490e4da7d810",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "32bec6fe-b01b-4df8-80eb-40cacd092f9c",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "1fc4b1c2-54bd-4daf-9c63-f575f2ee4974",
+      "result_id": "53382f54-ed7e-4a10-90c4-e90c2edfd8a0"
+    },
+    {
+      "claim_id": "634271ee-47f8-4a34-9b8e-eff24ab45ffe",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "161af251-2950-4d97-a790-40f40985c79c",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "9b346fb0-34f1-48a0-aef6-bf0b17bbca04",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "d39c95d7-5543-4c82-937a-30a663e5b7cb",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "f2c0085a-2ff5-43e2-86b1-d42d3e080120",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "3de1bcf4-bd37-4f96-8c56-8ce4c021e1d6",
+      "result_id": "f547f520-cc51-42a9-9d2e-7517ad08dfe0"
+    },
+    {
+      "claim_id": "d0ea59e1-6193-4872-86d4-8cdfca205c73",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "1c74dea7-7181-401d-9bbe-e4851be04f3e",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "2bc14261-0e05-4dc0-bd4e-eb24d4c5fcfa",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "18cb6444-ecd9-4337-8342-91c3a310a206",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "9ddb271d-c333-40b8-abfb-db879cf5f369",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "dc3f57d7-6569-4611-a34c-442de05c4109",
+      "result_id": "210dfda4-856b-47d4-85d3-f41d963f7f2f"
+    },
+    {
+      "claim_id": "8ba9c624-99bb-4df1-bf4c-c83f70a51b7f",
+      "result_id": "0103011f-dcf0-4feb-85b1-07d409d624ee"
+    },
+    {
+      "claim_id": "91be597a-5269-43d5-ba1c-b4a0db4935e3",
+      "result_id": "0103011f-dcf0-4feb-85b1-07d409d624ee"
+    },
+    {
+      "claim_id": "d002f80e-c34d-4a4e-a96a-19bdde7cbde9",
+      "result_id": "0103011f-dcf0-4feb-85b1-07d409d624ee"
+    }
+  ],
+  "comparisons": []
+}

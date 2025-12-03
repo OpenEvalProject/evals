@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C24",
+      "C25"
+    ],
+    "result": "SOX9+ epithelial progenitor cells (EPCs) are multipotent early in development (prior to E13.5), generating both airway and alveolar epithelium, but become selective progenitors of alveolar epithelial cells later in development. These cells are marked by SOX9 and ID2 expression and are located at the tips of developing lung buds. Key transcription factors including Id2, Etv5, Foxp1/2, and Mycn play critical roles in SOX9+ EPC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C13, C24-C25 are well-supported by established literature citations (Rawlins et al., 2009; Morrisey and Hogan, 2010; Laresgoiti et al., 2016; Nichane et al., 2017; Nikoli\u0107 et al., 2017) and imaging data shown in Figure 1. The temporal restriction of multipotency and the role of key transcription factors are established findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Pseudotime analysis of RNA-Seq data from E11.5 to E16.5 mouse lung epithelium reveals two distinct differentiation branches arising from SOX9+ progenitors, terminating in airway and distal lung epithelial cells at E16.5. Monocle analysis identified 26 unique gene modules, including module 8 containing genes highly expressed at E11.5 (Sox9, Wnt7b, Bmp4, Hmga2) that are preserved in the distal differentiation branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by computational analysis of RNA-Seq data using Monocle, with results shown in Figure 1J-M and Figure 1\u2014figure supplement 1. The identification of known developmental genes (Sox9, Wnt7b, Bmp4, Hmga2) in module 8 validates the pseudotime analysis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ATAC-Seq analysis identified widespread changes in chromatin accessibility between E11.5 and E16.5 in SOX9+ EPCs, with over 34,000 regions of open chromatin at each timepoint. Nearly a quarter of accessible regions were unique to each developmental timepoint, with 18,582 regions more accessible at E11.5 (E11.5-DARs), 11,980 regions more accessible at E16.5 (E16.5-DARs), and 35,312 common regions. Changes occurred particularly at distal cis-regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C29-C30, C37-C40 are supported by ATAC-Seq data with appropriate biological replicates (n=2 pooled from 8-12 embryos) shown in Figure 2 and supplementary figures. Peak calling was performed using MACS2 with replication statistics provided (Jaccard scores 0.62-0.69), and only replicated peaks were included for analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C98",
+      "C99"
+    ],
+    "result": "Accessible chromatin regions identified by ATAC-Seq in SOX9+ cells are highly correlated with lung-specific histone post-translational modifications (H3K4me3, H3K4me1, H3K27ac) found on validated cis-regulatory elements. The presence of ATAC-Seq peaks positively correlated with expression of the nearest gene, with the strongest correlation for peaks within promoter regions. Dynamic changes in accessible chromatin regions were correlated with gene expression changes during SOX9+ lung epithelial cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C31-C36, C98-C99 are supported by comparison with ENCODE ChIP-Seq data for histone marks and correlation analysis between ATAC-Seq and RNA-Seq data shown in Figure 2C-J. The hierarchical clustering identified distinct patterns for promoters (H3K4me3 enrichment) and enhancers (H3K4me1/H3K27ac enrichment), validating that ATAC-Seq peaks represent active cis-regulatory elements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C100"
+    ],
+    "result": "Differentially accessible regions (DARs) were significantly more likely to be found within intronic and intergenic regions compared to promoters, indicating that developmental changes in chromatin accessibility were preferentially located at distal cis-regulatory elements (e.g., enhancers). DARs exhibited peak H3K4me1 read density at their centers, while common regions showed enrichment for the promoter mark H3K4me3. Changes in chromatin accessibility were significantly correlated with differential gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49, C100 are supported by genomic location analysis, ChIP-Seq read density analysis, and correlation analysis between ATAC-Seq and RNA-Seq data shown in Figure 2G-J. The preferential location of DARs at intronic/intergenic regions and their enrichment for H3K4me1 (enhancer mark) versus H3K4me3 (promoter mark) for common regions provides strong evidence for enhancer-focused chromatin remodeling during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C101"
+    ],
+    "result": "Gene regulatory network inference using the PECA computational model identified PI3K signaling as a key regulator of SOX9+ EPC development. Well-studied transcription factors (Id2, Irx factors, Foxp factors, Etv5, Foxa2) appear as central nodes in the network, with several key nodes (Sox4, Hbp1, Grhl2) previously shown to interface with PI3K signaling. GSEA of ATAC-Seq data identified PI3K-mTOR signaling pathways that were less apparent by RNA-Seq analysis alone. Genes nearest to E16.5-DARs and common accessible regions were most strongly enriched in phosphatidylinositol and PI3K signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22, C51-C53, C61-C66, C101 are supported by PECA computational modeling using paired ATAC-Seq and RNA-Seq data, GSEA analysis shown in Figure 4A-C, and KEGG pathway analysis. The identification of PI3K signaling is strengthened by convergent evidence from multiple analytical approaches (PECA, GSEA, pathway enrichment) and literature support for connections between key transcription factors and PI3K signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Expression of many core PI3K pathway components did not change between E11.5 and E16.5, while expression of potential upstream receptor/ligands (Igfr, Fgf1) and downstream targets of PI3K signaling (Lama3, Col4a3) increased, including major components of the epithelial basement membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by RNA-Seq expression data shown in Figure 4D-F with statistical analysis (p<0.001). The differential expression patterns suggest developmental regulation of PI3K pathway activity through upstream and downstream components rather than core pathway changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C102"
+    ],
+    "result": "PI3K pathway activation, measured by pAKT immunostaining, was highest in the proximal lung epithelium as early as E12.5 and persisted through adulthood. Early in development (E12.5), pAKT showed a bimodal distribution pattern with high expression in proximal epithelium and a second peak at distal branch tips. Much lower levels were observed in the mesenchyme and distal lung epithelium at later stages, suggesting a proximal-to-distal gradient of PI3K signaling may be required for lung epithelial differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C102 are supported by immunofluorescence microscopy for pAKT shown in Figure 5 across multiple developmental timepoints (E12.5, E18.5, adult). The spatial distribution patterns are clearly documented, though the functional interpretation of the gradient (C74) is appropriately stated as speculative ('may be required').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C23",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C93"
+    ],
+    "result": "Conditional ablation of PI3K signaling in the developing lung epithelium using Shh-Cre x Pik3ca^f/f mice resulted in expansion of the SOX9+ EPC population at E18.5 and remarkably mispatterned lungs with abnormal cysts and simplified alveolar structures. The increase in SOX9+ cells was only observed at E18.5, not at earlier timepoints (E12.5, E14.5), and no significant differences in proliferation were observed, suggesting persistence rather than proliferative expansion of SOX9+ progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C23, C75-C81, C93 are supported by in vivo genetic experiments using Pik3ca cKO mice with appropriate littermate controls, shown in Figures 6-7. Quantification of SOX9+ cells and Ki67+ proliferating cells at multiple timepoints (E12.5, E14.5, E16.5, E18.5) with n=2-3 embryos per genotype provides adequate statistical power for the observed phenotype. The loss of pAKT staining in cKO embryos at E12.5 (Figure 6\u2014figure supplement 1) confirms successful pathway ablation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C104"
+    ],
+    "result": "Conditional ablation of PI3K signaling resulted in marked reduction in differentiated secretory (SCGB1A1+) and ciliated (TUB1A1+) airway epithelial cells, with dramatic decreases in mRNA levels of secretory markers (Scgb1a1, Scgb3a2) and ciliated markers (Foxj1). The impact on SOX2+ airway epithelial cells was less dramatic, with Sox2 mRNA decreased by ~30% (not statistically significant). There was also a decrease in airway branches from E12.5-E16.5 consistent with impaired branching morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C82-C91, C94, C104 are supported by immunofluorescence microscopy and qPCR data shown in Figure 8 with appropriate sample sizes (n=5 Pik3ca cKO, n=6 wild-type for cell counts; n=3 biological replicates for qPCR) and statistical analysis (p<0.05, p<0.01, p<0.001). The differential impact on secretory/ciliated cells versus SOX2+ cells is well-documented, though the lack of statistical significance for Sox2 mRNA changes is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C92",
+      "C95",
+      "C103",
+      "C105",
+      "C106"
+    ],
+    "result": "PI3K signaling is required for proper proximal/distal patterning of the lung during development. Loss of PI3K signaling results in mispatterning of both airway and alveolar structures, with a paucity of airways and extensive distal cysts and simplified alveoli. An intact gradient of PI3K signaling during development is needed for proper differentiation of the proximal and distal portions of the lung.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C92, C95, C103, C105-C106 are supported by the comprehensive phenotypic analysis of Pik3ca cKO mice shown in Figures 6-8. The mispatterning phenotype is clearly documented through histological analysis, and the conclusion that PI3K signaling is required for epithelial patterning is well-supported by the genetic ablation experiments and phenotypic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Careful comparative analysis using both chromatin accessibility and gene expression data provides higher sensitivity to identify novel regulators of development that may be unrecognized from expression data alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by the identification of PI3K signaling through combined ATAC-Seq and RNA-Seq analysis, where PI3K pathway enrichment was more apparent in ATAC-Seq data than RNA-Seq alone (C62-C63). The subsequent validation through genetic experiments confirms the utility of this combinatorial approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The role of PI3K signaling in directing branching morphogenesis remains incompletely defined. Conditional deletion of Pik3ca in the developing lung epithelium appears to lead to impaired branching morphogenesis, while lung explant models with pharmacologic PI3K inhibitors and mesenchymal Pik3ca deletion show increased branching. The phenotypes observed in epithelial Pik3ca cKO animals cannot be explained by downstream effects of FGF7/10-FGFR1/2 signaling, as FGF pathway abrogation causes apoptosis rather than SOX9+ progenitor expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 appropriately acknowledge gaps in knowledge and apparent contradictions in the literature. The observation of impaired branching in epithelial Pik3ca cKO (C108) is supported by histological analysis (Figure 6, C89), while the contrasting results from other studies (C109-C110) are appropriately cited. The distinction from FGF signaling phenotypes (C111-C113) is based on established knowledge and logical inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Several key transcription factors in the SOX9+ progenitor gene regulatory network have established connections to PI3K signaling. Sox4 has been implicated in NSCLC pathogenesis and PATS, and both regulates and is regulated by PI3K signaling. Hbp1 is a repressor of beta-catenin transactivation and is negatively regulated by PI3K signaling. Grhl2 promotes airway differentiation, and its loss leads to SOX9+ EPC expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by appropriate literature citations (Ramezani-Rad et al., 2013; Wang et al., 2019; Bilir et al., 2016; Mehta et al., 2017; Kobayashi et al., 2020; Coomans de Brach\u00e8ne et al., 2014; Bollaert et al., 2018; Kersbergen et al., 2018). These claims establish the biological plausibility of PI3K signaling's role in the SOX9+ progenitor network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors speculate that EGF, other FGFs, and IGF are potential regulators of PI3K signaling in lung development to be explored. They propose that the PI3K pathway may regulate chromatin state during lung development, potentially serving as a central 'switch-board' integrating signals from diverse receptor-ligand pairs and directly modulating chromatin accessibility through pAKT interactions with chromatin regulatory complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C116, C118-C119 are explicitly speculative and represent proposed models for future investigation. While the speculation is reasonable given the correlation between PI3K signaling and chromatin accessibility changes, and the citation of cancer studies showing pAKT-chromatin regulatory complex interactions (C117), these hypotheses require direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C97",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Background claims establishing general knowledge about lung development, chromatin biology, and epigenetic regulation. These include: lung morphogenesis begins as an outpouching from the embryonic foregut; chromatin state integrates developmental stimuli into cellular programs; epigenetic programs are maintained through cell division; chromatin accessibility changes dynamically during development; accessible chromatin regions represent 2-3% of the genome but account for high proportions of transcription factor binding sites; and the mature mammalian lung contains dozens of specialized cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14-C19, C97, C120-C122 represent established knowledge in developmental biology, epigenetics, and chromatin biology, supported by appropriate literature citations. These provide necessary context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C50"
+    ],
+    "result": "Transcription factors including Sox9, Etv5, Irx, Mycn, and Foxp1/2 interact in complex gene regulatory networks to control proliferation and differentiation of SOX9+ progenitors. Chromatin accessibility at distal CREs such as enhancers likely plays a key and incompletely explored role in directing lung epithelial development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported as established knowledge in the field. Claim C50 is appropriately stated as an inference from the preferential location of DARs at distal elements (C49, C100), highlighting a gap in current understanding that this study begins to address.",
+    "result_type": "MINOR"
+  }
+]

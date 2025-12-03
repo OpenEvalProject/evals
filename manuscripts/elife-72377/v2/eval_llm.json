@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C43",
+      "C44"
+    ],
+    "result": "ECT2 and ECT3 bind to largely overlapping target sets. More than 94% of ECT3 HT-targets overlapped with ECT2 HT-targets in both aerial and root tissues, with a clear correlation between editing proportions at common sites, though ECT2-FLAG-ADAR showed higher overall editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C43, and C44 are strongly supported by HyperTRIBE data presented in Figures 1 and 2. The quantitative overlap (>94%) and correlation analysis provide robust evidence for extensive target overlap between ECT2 and ECT3, with appropriate statistical analysis and biological replicates (n=5 independent lines per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HyperTRIBE in different mutant backgrounds reveals redundant target interactions between ECT2 and ECT3. Widespread increases in editing proportions for ECT3 targets occurred upon removal of ECT2/4, while increases for ECT2 targets upon removal of ECT3/4 were sporadic. The net increase in editing was higher in roots for both proteins, consistent with ECT2 dominance in aerial tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C52 are supported by comparative HyperTRIBE analysis in single versus triple mutant backgrounds (Figure 3A-C). The experimental design appropriately controls for transgene expression differences and provides direct evidence for redundant target interactions. The tissue-specific differences are consistent with known expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Small sets of ECT2- and ECT3-specific targets were identified. In aerial tissues, 2414 ECT2-specific and 93 ECT3-specific targets were found; in roots, 1738 ECT2-specific and 197 ECT3-specific targets were identified. Four tubulin subunit mRNAs were among ECT2-specific targets in roots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 report specific target numbers from HyperTRIBE data (Figure 3D-E). However, the authors acknowledge that ECT2-specific targets may simply be below detection limits of the less-expressed ECT3-FLAG-ADAR. The biological significance of these 'specific' targets requires additional validation beyond differential detection in HyperTRIBE, making the functional specificity uncertain despite clear quantitative differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ECT2/3 target sets were defined and functionally characterized. The permissive set (6528 genes) and stringent set (1992 genes) were enriched in housekeeping genes related to basic metabolism and protein synthesis, consistent with prior m6A studies and suggesting regulation of metabolism and growth as the main biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by integration of multiple datasets (ECT2-HT, ECT3-HT, ECT2-iCLIP) and gene ontology enrichment analysis (Figure 4). The functional enrichment is consistent with prior literature and single-cell expression analysis in roots. The inference about biological function (C64) is reasonable given the convergent evidence from multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ECT2 does not accumulate in the nucleus. Super-resolution microscopy showed ECT2-mCherry signal was excluded from GFP-WIP1-delimited nuclei, contradicting previous reports. The authors conclude ECT2 resides in the cytoplasm, with any nuclear presence too transient to detect by fluorescence microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75-C77 are strongly supported by super-resolution Airyscan microscopy data (Figure 6B) using a nuclear envelope marker (GFP-WIP1). This provides higher resolution evidence than prior studies and directly addresses potential artifacts from fixation. Claim C78 (transient nuclear presence) is appropriately qualified as speculative. The conclusion contradicts prior work but is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C103"
+    ],
+    "result": "ECT2/3/4 do not influence alternative polyadenylation of target mRNAs. Analysis of 14,667 polyadenylation site clusters showed that ECT2/3 targets were significantly less likely than non-targets to have different dominant PACs upon loss of ECT2/3/4 function, and the most common polyadenylation sites did not change by more than 10 bp in the majority of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C74, C103 are supported by comprehensive polyadenylation site analysis from Smart-seq2 data (Figure 5). The analysis used appropriate statistical tests (Fisher's exact test with significant p-values) and controlled for expression differences. The experimental design using FACS-sorted ECT2-expressing cells from comparable genetic backgrounds strengthens the conclusions. This directly refutes prior claims about ECT2 function in alternative polyadenylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C113",
+      "C118"
+    ],
+    "result": "Loss of ECT2/3/4 leads to decreased abundance of target mRNAs. Stringent targets showed clear downregulation upon loss of ECT2/3/4 function, with nearly all significantly differentially expressed stringent targets being downregulated. ECT2/3 targets accounted for more than half of all downregulated genes but only ~15% of upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79-C85, C113, C118 are supported by differential expression analysis from FACS-sorted ECT2-expressing root protoplasts (Figure 7). The experimental design appropriately controls for cell-type composition and developmental stage differences between wild-type and mutant plants. The use of three biological replicates with clear PCA separation and validation in intact root tips strengthens the conclusions. Statistical analysis is appropriate (DESeq2, FDR<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Downregulated ECT2/3 targets were enriched in genes related to ribosome biogenesis and translation, while upregulated non-targets were enriched in abiotic stress responses with transcription factor molecular function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by gene ontology enrichment analysis of differentially expressed genes (Figure 7F-G). The functional enrichment is consistent with the housekeeping nature of ECT2/3 targets and provides mechanistic insight into the mutant phenotype. The analysis uses appropriate statistical methods (gprofiler2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Stress response activation occurs in ect2/ect3/ect4 mutants, likely via indirect effects. mRNA and miRNA expression profiles showed upregulation of stress-related transcription factors and changes in miRNA families (miR169defg downregulated, miR167 and miR845a upregulated). No evidence for direct ECT2/3 binding to pri-miRNAs was found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C88-C94 are supported by mRNA-seq and small RNA-seq data from root tips (Figures 7-8). The inference of indirect effects (C9, C94) is appropriately qualified and supported by the lack of ECT2/3 binding to pri-miRNAs in iCLIP/HyperTRIBE data and the cytoplasmic localization of ECT2. The coherent changes in miRNA and transcription factor expression support the stress response interpretation. However, only two biological replicates were used for small RNA-seq, which is minimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C35",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Previous suggestions of ECT2 control of alternative polyadenylation are not supported, and the mammalian m6A-YTHDF conceptual framework extends to plants. While m6A affects 3'-end formation in plants via nuclear CPSF30 (YTHDC-containing), ECT2/3 (YTHDF proteins) act in the cytoplasm and do not influence alternative polyadenylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C31, C35, C104-C110, C112 synthesize the localization and polyadenylation data with prior literature. The refutation of prior claims (C10, C31) is well-supported by the presented data. The distinction between CPSF30-mediated nuclear effects and ECT2/3 cytoplasmic function (C109) appropriately reconciles conflicting observations. The conclusion that the mammalian framework extends to plants (C110) is a reasonable inference from the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "ECT2 and ECT3 exhibit genuine redundant function sensu stricto. Many target mRNAs can bind to either ECT2 or ECT3 with similar consequences, not just the ability to replace function in the absence of the other protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 synthesize multiple lines of evidence including overlapping expression patterns, genetic redundancy, overlapping target sets, and HyperTRIBE signatures in different mutant backgrounds. The conclusion of genuine redundancy (not just compensatory) is well-supported by the direct observation of increased ECT3 editing in the absence of ECT2/4, demonstrating that both proteins can access the same targets in wild-type conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "ECT3-FLAG-ADAR complements the te234 mutant phenotype and identifies 2448 targets in aerial tissues and 3493 in roots. Target genes largely overlapped between shoot and root apices with strong correlation in editing proportions, and tissue-specific targets were explained by expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe the ECT3-HyperTRIBE experimental validation and primary results (Figure 1). The complementation data (C37) validates the functional fusion protein. The target identification used appropriate bioinformatics pipelines (HyperTRIBER) with five biological replicates. The correlation between tissues and expression-based explanation for tissue-specificity are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "HyperTRIBE efficiently identifies ECT2 targets with little expression bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 references findings from the accompanying paper (Arribas-Hern\u00e1ndez et al., 2021) and is used to justify the methodological choice. While not directly demonstrated in this manuscript, the reference to the companion paper and the successful application here support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ECT2 and ECT3 proteins target their own and each other's transcripts, suggesting autoregulatory feedback may contribute to controlling their expression. ECT2 and ECT3 mRNAs contain m6A sites in seedlings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by published m6A-seq data and the study's own HyperTRIBE/iCLIP data (Figure 2\u2014figure supplement 2). The observation of self- and cross-targeting is clear, though the inference of autoregulatory feedback (C47) is appropriately qualified as speculative ('may contribute'). The authors note these are transgene-derived transcripts, which is an important caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The experimental system using ECT2-mCherry and ECT2W464A-mCherry in different genetic backgrounds provides comparable ECT2-expressing cell populations with or without ECT2/3/4 function. Wild-type and mutant fluorescent proteins have the same expression level, pattern, and intracellular localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe the experimental design for FACS sorting and differential expression analysis. The validation data (Figure 5B-C) support the comparability of the two systems. This is critical for the differential expression conclusions and is appropriately validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The mechanism by which ECT2/3/4 affect target mRNA abundance remains unclear. Possible mechanisms include direct post-transcriptional effects (mRNA stabilization by protection from endonucleolysis or translational repression) or indirect effects via transcriptional repression through stress response activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C122 are appropriately presented as speculation about mechanisms. The study does not directly measure mRNA synthesis or degradation rates, nor does it assess translation. While the authors cite relevant literature (Anderson et al., 2018; Worpenberg et al., 2021), the actual mechanism remains unresolved and requires future studies with conditional inactivation systems as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "ECT4 may act redundantly with ECT2/3 on the same targets, with reduced impact possibly due to lower expression levels, lower binding affinity, reduced activity, or a combination of these properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are appropriately presented as speculation based on genetic enhancement data and overlapping expression patterns from prior work. The study does not directly test ECT4 function or binding, making these inferences uncertain. The multiple possible explanations for reduced ECT4 impact are not distinguished.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "At least some YTHDFs are expressed in different tissues (e.g., ECT10 in pollen), and functional specialization may include different target-binding specificity and effector function conferred by different IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are supported by RNA-seq data from prior work showing tissue-specific expression. However, claim C102 about functional specialization is appropriately presented as speculation ('is also possible'). The study does not test other ECT family members beyond ECT2/3/4, making broader conclusions about the family uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Constitutive stress response activation is consistent with the stunted phenotype of mta and te234 mutants and was noted in the earliest report of m6A-deficient organisms. Disentangling direct effects of m6A-ECT2/3/4 on growth from indirect effects via stress response activation will be important for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 appropriately contextualize the stress response findings with prior literature and identify an important future research direction. The consistency with prior observations (C124) and the stunted phenotype (C123) support the biological relevance of the stress response. The call for future work (C125) is reasonable given the current limitations.",
+    "result_type": "MINOR"
+  }
+]

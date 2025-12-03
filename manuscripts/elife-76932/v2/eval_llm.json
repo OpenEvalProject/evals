@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C110"
+    ],
+    "result": "Prior studies have established that hypertrophic chondrocytes contribute to osteoblasts during skeletal development, but the precise mechanism (transdifferentiation vs. dedifferentiation through an intermediate state) has been debated. Previous lineage tracing studies using Col2a1Cre, AcanCreERT2, and Col10a1Cre models provided evidence for direct transdifferentiation, though complications existed with some models labeling non-chondrocytic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 and C110 accurately summarize the state of prior knowledge and existing hypotheses from the literature. These are appropriately cited background claims that establish the scientific context and knowledge gap the current study addresses. The authors correctly identify both the established contribution of hypertrophic chondrocytes to osteoblasts and the uncertainty about the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C111",
+      "C112"
+    ],
+    "result": "The study's central finding is that hypertrophic chondrocytes undergo dedifferentiation to generate marrow-associated SSPCs that serve as a primary source of osteoblasts during skeletal development, rather than directly transdifferentiating into osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C111, and C112 represent the main conclusions of the study. These are well-supported by multiple lines of converging evidence including lineage tracing at multiple timepoints (C32-C46), scRNA-seq showing intermediate SSPC populations (C47-C84), immunofluorescence validation (C58-C60, C68-C72), and functional assays (C99-C109). The trajectory analysis (C57, C83) specifically supports the dedifferentiation model over direct transdifferentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Lineage tracing experiments using Col10a1CreERT2 and Col10a1Cre reporter mice demonstrate that hypertrophic chondrocytes give rise to both OCN+ osteoblasts and OCN- marrow-associated cells at embryonic (E16.5) and postnatal timepoints (P6, 2 months, 4 months). At 2 months, 83.3% \u00b1 9.7% of OCN+ osteoblasts and 69.4% \u00b1 14.8% of osteocytes were tdTOMATO+, with some tdTOMATO+ cells localized to vessel-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 are supported by immunofluorescence imaging data shown in Figures 1 and supplementary figures. The temporal progression from hypertrophic chondrocytes (12 hr) to marrow cells (24 hr to 2 weeks) is well-documented. Quantification is provided with appropriate error bars (SD). The presence of both OCN+ and OCN- tdTOMATO+ cells supports the existence of intermediate cell types beyond just osteoblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Single-cell RNA-sequencing of E16.5 tdTOMATO+ cells identified 8 distinct clusters representing a continuum from hypertrophic chondrocytes (clusters 1-5, expressing Col10a1, Ihh, Sox9, Aggrecan, Mmp13) to osteoblasts (clusters 7-8, expressing Sp7, Clec11a, Col1a1, Bglap, Runx2, Spp1, Alpl, Ibsp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by scRNA-seq data shown in Figure 2 and supplementary figures. The UMAP clustering, differential gene expression analysis, and violin plots provide clear evidence for the identified cell populations. The presence of both Cre/Col10a1-expressing cells and descendants (C48) validates the lineage tracing approach. Quality control metrics are provided (2,273 cells analyzed, 4,868 median genes per cell).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "At E16.5, an intermediate SSPC-like population (cluster 6) expressing Pdgfra, Ly6a, Lepr, and Cxcl12 was identified between hypertrophic chondrocytes and osteoblasts. Pseudotime analysis indicated a singular trajectory from hypertrophic chondrocytes through this SSPC population to osteoblasts. This was validated by identifying tdTOMATO+/PDGFRaH2B-GFP+ double-positive cells in vivo, some OCN+ and some OCN-.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by scRNA-seq gene expression data (Figure 3a-e), Monocle trajectory analysis (Figure 3f), and immunofluorescence validation (Figure 3g-h). The convergence of computational trajectory analysis with in vivo validation using a dual reporter system (Col10a1CreERT2; Rosa26fs-tdTomato; PDGFRaH2B-GFP) provides strong evidence for the intermediate SSPC state. The absence of Adipoq expression (C56) is also documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Immunofluorescence and flow cytometry validation at postnatal timepoints confirmed that hypertrophic chondrocyte-derived cells express SSPC markers. At 2 months, 74.21% \u00b1 13.92% of tdTOMATO+ cells were LEPR+, 73.6% \u00b1 2.83% were PDGFRa-GFP+, and 64.33% \u00b1 3.48% were PDGFRB+. Conversely, 37.4% \u00b1 6.2% of total LEPR+ cells and 26.93% \u00b1 3.79% of PDGFRaH2B-GFP+ cells were tdTOMATO+, indicating that hypertrophic chondrocyte-derived SSPCs constitute 25-45% of all marrow SSPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C68-C74 are supported by quantitative immunofluorescence and flow cytometry data shown in Figure 3\u2014figure supplement 1 and Figure 5\u2014figure supplement 1. Sample sizes (N=3-4 biological replicates) and standard deviations are provided. The bidirectional quantification (percentage of tdTOMATO+ cells that are SSPC marker+ AND percentage of SSPC marker+ cells that are tdTOMATO+) strengthens the conclusion about the proportion of SSPCs derived from hypertrophic chondrocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Single-cell RNA-sequencing of 2-month-old marrow-derived tdTOMATO+ cells identified 5 clusters, with clusters 1-2 representing osteoblasts/osteocytes (expressing Mepe, Dmp1, Fam20c, Bglap, Col1a1) and clusters 3-5 representing non-osteoblastic cells. Neither Cre nor Col10a1 was detected, confirming these are descendants of hypertrophic chondrocytes. Sp7 was expressed in clusters 1-2 and limitedly in clusters 3-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by scRNA-seq data shown in Figure 4. Quality control metrics are provided (1,066 cells analyzed, 2,820 median genes per cell). The absence of Cre and Col10a1 expression (C62) is important validation that these are descendants rather than current hypertrophic chondrocytes. The differential gene expression patterns clearly distinguish osteoblast clusters from other populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "At 2 months, clusters 3-5 expressed SSPC markers including Lepr, Grem1, Pdgfra, Cxcl12, Pdgfrb, Itgav, Cd200, and Eng (CD105), but not Ly6a (SCA1). Analysis identified 128 of 953 SSPCs as Itgav+/Cd200+/Cd105-, representing the most primitive SSC population, distributed across clusters 3-5. This suggests hypertrophic chondrocytes dedifferentiate to generate even the most primitive SSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C75-C80 are supported by scRNA-seq gene expression data shown in Figure 5. The identification of cells expressing markers of the most primitive SSC population (Itgav+/Cd200+/Cd105-) within hypertrophic chondrocyte-derived cells is significant. However, the inference that hypertrophic chondrocytes dedifferentiate to the most primitive state (C80) is somewhat speculative, as the cells could represent a specific subset rather than a fully dedifferentiated state. The heterogeneity within clusters 3-5 is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Hypertrophic chondrocyte-derived SSPCs (clusters 3-5) localize adjacent to EMCN+ endothelial cells but do not express pericyte or vascular smooth muscle markers (Acta2, Nes, Kcnj8, Rgs5, Cspg4, Mcam). Pseudotime analysis indicated a continuous trajectory from clusters 4-5 through cluster 3 to osteoblast clusters 2 and 1, confirming these are SSPCs capable of becoming osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by immunofluorescence data (Figure 4\u2014figure supplement 3a), scRNA-seq gene expression analysis (Figure 4\u2014figure supplement 3b-g), and Monocle trajectory analysis (Figure 5j). The exclusion of pericyte identity is important for defining the cell type. The trajectory analysis provides computational support for the differentiation hierarchy, though this is an inference from cross-sectional data rather than direct observation of individual cells differentiating over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Hypertrophic chondrocyte-derived SSPCs at 2 months express both osteogenic (Runx2) and adipogenic (Pparg, Adipoq) priming factors, but not mature adipocyte markers (Perilipin/Plin1). However, immunofluorescence showed tdTOMATO+/PERILIPIN+ adipocytes at 2 and 13 months, with approximately 25% of adipocytes being tdTOMATO+ at 13 months, indicating these SSPCs contribute to the adipogenic lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by scRNA-seq gene expression data (Figure 6a-d) and immunofluorescence validation (Figure 6e-f). The dual priming for osteogenic and adipogenic fates is consistent with SSPC multipotency. The absence of Plin1 in scRNA-seq (C88) is explained by technical limitations in capturing mature adipocytes (acknowledged in C91). The quantification at 13 months (C90) provides temporal evidence for adipogenic contribution, though the percentage is lower than osteoblast contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Hypertrophic chondrocyte-derived SSPCs commit to a CXCL12-abundant reticular (CAR) cell phenotype and demonstrate unique abilities to recruit vasculature, promote bone marrow establishment, and contribute to adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by Cxcl12 expression in scRNA-seq data (Figures 3, 5), gene ontology analysis showing enrichment for 'regulation of vascular development' (C102, Figure 7e), kidney capsule transplantation showing marrow formation and vascular invasion (C107-C109, Figure 8), and adipocyte lineage tracing (C89-C91, Figure 6). The convergence of transcriptomic, functional, and in vivo evidence supports these unique properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Comparison of Col10a1Cre, LeprCre, and AdipoqCre lineage tracing revealed temporal differences in osteoblast contribution. Col10a1Cre descendants showed OCN+ osteoblasts at P0 and earlier, with mature osteoblasts generated within 1 day to 2 weeks. In contrast, LeprCre and AdipoqCre lineages showed marrow cells at P0 but OCN+ osteoblasts only by 2 months, suggesting functional differences between SSPC subpopulations based on origin and/or niche.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by comparative immunofluorescence data shown in Figure 4\u2014figure supplement 4 and Figure 1. The temporal differences in osteoblast contribution are clearly documented. However, the interpretation of 'functional differences' (C98) is somewhat speculative, as alternative explanations exist (discussed in C123-C124). The rapid kinetics of Col10a1Cre contribution is well-established, but whether this reflects true functional differences vs. technical aspects of Cre expression timing requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "CFU-F assays showed that 50-60% of colonies from Col10a1Cre mice were tdTOMATO+. Bulk RNA-seq of tdTOMATO+ vs. tdTOMATO- CFU-Fs identified only 363 differentially expressed genes, with both expressing SSPC markers (Lepr, Grem1, Pdgfra, Adipoq, Pparg, Itgav, Cd200, Cxcl12). Gene ontology analysis identified enrichment for 'cell population proliferation' and 'regulation of vascular development' in tdTOMATO+ CFU-Fs. EdU incorporation and colony size analysis confirmed greater proliferation in tdTOMATO+ CFU-Fs, consistent with cell cycle analysis of scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 are supported by CFU-F imaging (Figure 7a-c), bulk RNA-seq (Figure 7d), gene ontology analysis (Figure 7e), EdU incorporation assays (Figure 7f), and scRNA-seq cell cycle analysis (Figure 7g). The striking transcriptomic similarity (only 363 DEGs out of ~12,000) between hypertrophic chondrocyte-derived and other SSPCs is notable. The proliferative advantage is consistently demonstrated across multiple assays. Sample sizes appear adequate (N=3 biological replicates for RNA-seq, multiple colonies for EdU), though statistical significance is only reported for one comparison (p=0.044 for EdU).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In vitro differentiation assays showed tdTOMATO+ and tdTOMATO- CFU-Fs differentiated similarly into osteoblasts and adipocytes. However, kidney capsule transplantation revealed functional differences: tdTOMATO+ cells generated complete ossicles with bone marrow, vessels, and adipocytes, while tdTOMATO- cells generated only bone without vascular invasion or adipocytes, suggesting hypertrophic chondrocyte-derived SSPCs are more supportive of vascular invasion and marrow formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by CFU-Ob/CFU-Ad data (Figure 8\u2014figure supplement 1) and kidney capsule transplantation data (Figure 8a-b). The contrast between in vitro similarity and in vivo functional differences is striking and biologically significant. However, the transplantation experiment lacks quantification and statistical analysis (no N provided, appears to be 2-3 transplants per group based on methods). The interpretation that hypertrophic chondrocyte-derived SSPCs are 'more supportive' of vascular invasion (C109) is reasonable but could benefit from additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "At E16.5, hypertrophic chondrocyte-derived SSPCs expressed Pdgfra, Ly6a, Lepr, and Cxcl12, resembling P\u03b1S cells (lineage-negative, CXCL12-, PDGFR\u03b1+, SCA1+ SSPCs previously identified as quiescent, vessel-associated, multipotent progenitors). The presence of Ly6a+ cells at E16.5 but not 2 months suggests these may be a transient population, while Cxcl12+/Ly6a- CAR cells persist at 2 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 are supported by scRNA-seq data showing differential Ly6a expression at E16.5 vs. 2 months (Figures 3, 5). The comparison to P\u03b1S cells (C114-C115) is appropriately cited from prior literature. However, the interpretation that Ly6a+ cells are 'transient' (C116) is speculative, as the study only examined two timepoints. Alternative explanations (finite initial number, developmental stage-specific expression) are acknowledged. The persistence of CAR cells (C117) is better supported by the continued Cxcl12 expression at 2 months.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Hypertrophic chondrocyte-derived SSPCs/CAR cells showed similar proliferative capacity to osteoblasts in scRNA-seq cell cycle analysis, contrasting with the quiescent phenotype of most primitive SSPCs in other studies. This is consistent with recent findings in Col2a1Cre lineage. The rapid contribution of Col10a1Cre lineage to osteoblasts (embryonically) vs. slower contribution of LeprCre/AdipoqCre lineages (postnatally) may reflect rapid transit through the SSPC phase, with LeprCre/AdipoqCre efficiently labeling only less transient SSPC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are supported by cell cycle analysis (Figure 7g) and comparison with cited literature (C119-C121). The discussion appropriately contextualizes findings within prior work. However, the explanation for differential Cre labeling kinetics (C123-C124) is speculative, as acknowledged by the use of 'may' and 'might.' Alternative explanations (Cre expression levels, recombination efficiency, cell death) are not fully explored. The speculation is reasonable but would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The study discusses potential mechanisms (WNT/\u03b2-catenin, Sox9, Runx2) regulating hypertrophic chondrocyte fate transitions based on prior literature. Genetic deletion of Runx2 in hypertrophic chondrocytes initially reduces but eventually recovers bone formation by 3-6 weeks, which could reflect either alternate osteoblast sources or delayed SSPC differentiation. The Col10a1CreERT2 model demonstrates continued contribution to osteoblasts through at least 4-5 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 represent discussion points rather than primary findings. C125-C127 appropriately cite prior literature. C128 presents alternative interpretations of published Runx2 deletion data, which is reasonable speculation for the discussion. C129 is supported by lineage tracing data at multiple ages (Figure 1\u2014figure supplement 1). These claims appropriately acknowledge limitations and future directions while being grounded in the presented data and literature.",
+    "result_type": "MINOR"
+  }
+]

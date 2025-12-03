@@ -1,0 +1,1766 @@
+{
+  "submission": {
+    "id": "08a35fb2-c067-446b-aaa4-fa74caa9010e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:07:23.464754Z",
+    "updated_at": "2025-12-03T16:07:23.464754Z"
+  },
+  "content": [
+    {
+      "id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "submission_id": "08a35fb2-c067-446b-aaa4-fa74caa9010e",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of cell size control is canalized towards adders or sizers by cell cycle structure and selective pressures\n\n## Authors\n\n- Felix Proulx-Giraldeau<sup>1</sup> ([ORCID: 0000-0003-0238-5410](https://orcid.org/0000-0003-0238-5410))\n- Jan M Skotheim<sup>2</sup>\n- Paul Fran\u00e7ois<sup>1</sup> ([ORCID: 0000-0002-2223-839X](https://orcid.org/0000-0002-2223-839X)) \u2020\n\n### Affiliations\n\n1. Department of Physics, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))\n2. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Chan Zuckerberg Biohub, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell size is controlled to be within a specific range to support physiological function. To control their size, cells use diverse mechanisms ranging from \u2018sizers\u2019, in which differences in cell size are compensated for in a single cell division cycle, to \u2018adders\u2019, in which a constant amount of cell growth occurs in each cell cycle. This diversity raises the question why a particular cell would implement one rather than another mechanism? To address this question, we performed a series of simulations evolving cell size control networks. The size control mechanism that evolved was influenced by both cell cycle structure and specific selection pressures. Moreover, evolved networks recapitulated known size control properties of naturally occurring networks. If the mechanism is based on a G1 size control and an S/G2/M timer, as found for budding yeast and some human cells, adders likely evolve. But, if the G1 phase is significantly longer than the S/G2/M phase, as is often the case in mammalian cells in vivo, sizers become more likely. Sizers also evolve when the cell cycle structure is inverted so that G1 is a timer, while S/G2/M performs size control, as is the case for the fission yeast S. pombe. For some size control networks, cell size consistently decreases in each cycle until a burst of cell cycle inhibitor drives an extended G1 phase much like the cell division cycle of the green algae Chlamydomonas. That these size control networks evolved such self-organized criticality shows how the evolution of complex systems can drive the emergence of critical processes.\n\n## Introduction\n\nCell size is fundamental to cell physiology and function because it sets the scale of subcellular compartments, cellular biosynthetic capacity, metabolism, mechanical properties, surface-to-volume ratios, and molecular transport (Chan and Marshall, 2010; Ginzberg et al., 2015; Neurohr et al., 2019; Zatulovskiy and Skotheim, 2020). While different types of cells vary enormously in size to perform their functions, cells within a particular type are generally uniform in size indicating that cell growth may be accurately coupled to division and differentiation processes. On a phenomenological level, there are many commonalities in how cells regulate their size even though the molecules controlling cell division vary across the tree of life with the most striking differences separating eukaryotes and bacteria. This extreme molecular diversity in the regulatory proteins raises the question as to what are the common features of the control systems that evolved to implement size control.\n\nMost generally, cell size control can be viewed as a return map where the division size is a function of the cell size at birth. The examination of proliferating cells in laboratory conditions has revealed a variety of size control phenomena that can be characterized quantitatively by plotting the size of a cell at birth against the amount of mass added before it divides (Amir, 2014; Facchetti et al., 2017; Jun and Taheri-Araghi, 2015). A \u2018sizer\u2019 has a slope of \u20131 so that all variation in cell mass at birth is compensated for in one cell cycle, whereas an \u2018adder\u2019 has a slope of 0 so that each cell adds the same amount of mass during the cell cycle regardless of initial size. In the case of an adder, control is weaker so that multiple cell cycles are required for a particularly large or small cell to return to the average cell size. Importantly, the slope relating size at birth with the amount of growth in the cell cycle is a metric that quantifies the amount of size control occurring in a particular condition.\n\nStudies of cell size control have revealed a diverse set of phenomena. Fission yeast and mouse epidermal stem cells exhibit \u2018sizers\u2019, and most bacteria, archaea, and cultured human cell lines exhibit behavior closer to adders (Cadart et al., 2018; Eun et al., 2018; Jun et al., 2018; Sveiczer et al., 1996; Westfall and Levin, 2017; Willis and Huang, 2017; Xie and Skotheim, 2020). Thus, while diverse size control behaviors have been observed, adders have been observed more often than sizers. This raises the question of why adders are more frequently observed if sizers, by definition, are more effective at controlling cell size (Barber et al., 2017; Willis et al., 2020).\n\nTo address the question of why adders are the most often observed form of cell size control, we used evolutionary algorithms (Holland, 1992) to identify commonalities between networks evolved to control cell size. Evolutionary algorithms are a class of machine learning techniques aiming at mimicking evolutionary processes (Crombach, 2021; Fran\u00e7ois, 2014; Fran\u00e7ois and Hakim, 2004; Xiong et al., 2019). Because of the nature of evolution, results of evolutionary computations are often more efficient and more creative than expected (Lehman et al., 2020). Furthermore, solutions found by evolutionary algorithms are constrained by their evolutionary paths followed and present similar characteristics to biologically evolved systems (Schaerli et al., 2018). Cell size is regulated through the cell cycle control network that governs transitions from one phase of the cell cycle to the next. The division cycle can be broken up into distinct phases that are characterized by different molecular activities (Morgan, 2007). While it is typically considered that there are 4 phases of the cell cycle (G1, S, G2, and M), we here consider a two phase model based on a G1 phase and a composite S/G2/M phase. This is because size control in general has been associated with either the G1/S transition or mitosis at the end of the cell cycle.\n\nWe start with a simple model of the cell cycle with a timer for an S/G2/M phase (Figure 1) that we evolve to optimize homeostatic cell size control (Figure 1B). We discovered that different control mechanisms could perform cell size control based on protein quantity or concentration. Simulations in which size control takes place in G1 phase converge toward an adder mechanism for the entire cell cycle and identified an active quantity sensing mechanism similar to dilution-based mechanisms previously identified experimentally (Chen et al., 2020; Qu et al., 2019; Schmoller et al., 2015). The relative durations of G1 and S/G2/M were important in determining size control properties. A relatively shorter S/G2/M phase favors sizer mechanisms, while longer S/G2/M phases favor adders. Moreover, inverting the model so that cell size controls S/G2/M and G1 is a timer, like in fission yeast, results in more sizer-like control. Thus, we anticipate adders arise when cell size is controlled at a point intermediate in the cell cycle, like the G1/S transition, while sizers will appear when cell size regulates a point later in the cell cycle, as is the case when G1 is proportionally longer, or control takes place at the transition to mitosis. We finally identify a self-organized mechanism based on fluctuation sensing where size control occurs on average over multiple cycles. While there is no one-to-one correspondence between a specific size control mechanism and a given evolutionary pressure, our work identifies clear evolutionary principles that shed light on the diverse cell size control phenomena previously observed experimentally.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the coupling between cell size and cell cycle progression. The transition between G1 (red) and S phases of the cell cycle at the G1/S transition (orange) can evolve to depend on cell size, while the duration of the S/G2/M (blue) phase is independent of size. Cell division takes place instantaneously following mitosis (purple). (B) Schematic representation of the \u03c6-evo algorithm implementation. The network generating tool takes an initial network topology as its starting point for evolution as well as a user-defined fitness function. \u03c6-evo then goes through successive epochs of mutation and selection to extract a final optimized network. At each selection step, the fittest half of the networks are retained and duplicated for evolution in the subsequent epoch. Interactions permitted to be mutated by \u03c6-evo include transcriptional activation (green arrow), transcriptional repression (red arrow) and protein-protein interactions responsible for complex formation (black arrow). (C) Schematic of our seed network topology implementing a simplified relaxation oscillator. Cell cycle state (G1 or S/G2/M) is encoded via a binary switch called \u2018S/G2/M Switch\u2019 that is 0 in G1 and 1 in S/G2/M. Transition between G1 and S is controlled by the quantity of an inhibitor of the G1/S transition that we call $I$. The lower the quantity $I$, the higher the chance of progression through the G1/S transition. This interaction is represented as the grey arrow in the network topology and cannot be mutated by \u03c6-evo. After progressing through G1/S, cells enter S/G2/M which we model as a pure timer of fixed duration with some uniform noise. Cell volume grows exponentially and is divided symmetrically following mitosis. We then follow one of the daughter cells and disregard the other one. (D) Phase-space representation of the initial relaxation oscillator. The X-coordinate shows the S/G2/M Switch variable, and the Y-coordinate shows the concentration of $[I]$. The oscillator runs counterclockwise with the left branch (x=0) corresponding to G1 and the right branch (x=1) corresponding to S/G2/M. The G1/S transition and division events are instantaneous in our simulations but are smoothly represented here for visualization purposes. From these transitions, we can extract the approximate shape of the $[I]$ nullcline that we plot under the oscillator with a dashed line. We note that the position of the G1/S transition in phase-space will vary as a function of the volume of the cell as it depends on the quantity of $I$ rather than its concentration $[I]$.\n\n## Results\n\n### Initial cell-cycle model\n\nIn general, there are two classes of mechanisms that cells use to control their size that can be separated in terms of whether cell division or cell growth per se is regulated by cell size. Note that in this work, we will use mass, size, and volume interchangeably. In the first class, it is crucial that the growth rate per unit mass of a cell depends on cell size so that cells that are significantly larger than the optimum cell size grow slower (Cadart et al., 2019; Ginzberg et al., 2018; Miettinen and Bj\u00f6rklund, 2016; Nordholt et al., 2020; Tzur et al., 2009). Such slower growing cells are then outcompeted by cells closer to the optimum size even when divisions occur purely by chance (Conlon and Raff, 2003). While size-dependent growth mechanisms exist and do support size homeostasis, such mechanisms rely on inefficient growth in all the cells away from the optimum size (Ginzberg et al., 2018; Miettinen and Bj\u00f6rklund, 2016; Nordholt et al., 2020). To avoid such inefficient growth, many types of cells use active size control mechanisms to accelerate progression through the cell cycle in larger cells (Zatulovskiy and Skotheim, 2020). In our simulations, we keep cell growth rates constant over a physiological range of cell sizes. This allows us to focus on the common features of the molecular networks in which increasing cell size drives changes in molecular activities to trigger cell division. We assume that cell volume $V$ grows at a rate $\\lambda(V)\\timesV$, so that growth is exponential when $\\lambda$ is a constant. Volume is divided by 2 at each division after which we follow one of the two daughter cells. The growth rate sets the time scale for the system dynamics as it defines the doubling time $\\tau=ln(2)/\\lambda$. Any interdivision time shorter than $\\tau$ will see the cell volume shrink at the next generation while any interdivision time larger than $\\tau$ will see the cell volume grow. We also use the chemistry square bracket convention such that any protein X\u2019s concentration is denoted by $[X]$ . Correspondingly, its quantity is denoted by $X$ only and is defined as $X=[X]\\timesV$.\n\nWe initialize our network evolution simulations with a very simplified model of the cell-cycle (Figure 1A). We model two independent phases of a symmetrically dividing cell, G1 and S/G2/M, separated by a commitment point at the end of G1 and division at the end of S/G2/M (Figure 1A, Chandler-Brown et al., 2017). We encode this cell cycle state information via a binary switch variable we call \u2018S/G2/M Switch\u2019 that is 0 in G1 and 1 in S/G2/M. In all simulations, we follow an inhibitor model (Heldt et al., 2018; Schmoller et al., 2015; Zatulovskiy et al., 2020) and assume that the probability of passing the G1/S transition is controlled by the quantity of a transcription regulator $I$. One way the quantity rather than the concentration of a molecule could be sensed is through its titration against a fixed cellular quantity such as the genome, which is part of a general class of titration-based cell size sensing mechanisms (Amodeo et al., 2015; Heldt et al., 2018; Si et al., 2019; Wang et al., 2009). A lower quantity of this inhibitor $I$ means a higher probability of a G1/S transition at the current time step of the simulation (Appendix 1\u2014figure 2). Like all other proteins, the quantity $I$ is produced with a rate proportional to volume, degraded at a constant rate, diluted by cell growth, and equally partitioned between mother and daughter cells at division (see Materials and Methods). We found that due to the volume scaling assumption, $[I]$\u2019s concentration alone was largely independent of volume and could not trigger a size-dependent G1/S transition, which is why we opted for the quantity of $I$ instead (Appendix 1\u2014figure 3). Upon passing the G1/S transition, we assume cells are committed to division and there is a fixed time delay before they divide thus modeling S/G2/M as a timer (Chandler-Brown et al., 2017; Doncic et al., 2015). We initially fixed the timer duration to be roughly equal to 50% of the doubling time $\\tau$ with some uniform noise such that G1 and S/G2/M durations would be the same at equilibrium. Regulation of the quantity $I$ during the cell cycle thus controls the precise timing of the G1/S transition, but it is not always perfect since the transition is probabilistic. This, along with the noise in S/G2/M timer duration, creates natural cell to cell variability in volume that needs to be compensated for by the evolved mechanism. We note that we initialized most of our simulations with one added interaction in which production of $[I]$ is activated by the S/G2/M Switch variable to reset its concentration to a higher level before the next generation. We initially ran simulations without this specific interaction but found that it systematically appears in the initial stages of evolution simulations. We therefore included it in the initial network to speed up our simulations. We refer the reader to the Appendix 1 for more details. The models used in this study are publicly available (Proulx-Giraldeau and Fran\u00e7ois, 2022).\n\nTypical dynamics of this simple cell-cycle model are represented in Figure 1. These dynamics are similar to models of cell cycles based on relaxation oscillators (Cross, 2003; Tsai et al., 2008). The left and right slow branches correspond to G1 and S/G2/M, respectively, and the fast horizontal branches represent G1/S and division. An intermediate fictitious nullcline is shown as a line that connects the average concentration $[I]$ at G1/S and at division. Starting with cell birth, the system goes down the left-G1 branch because of degradation, then jumps to the right-S/G2/M branch below the threshold for the G1/S transition, stays there while moving up due to production by the S/G2/M Switch, until it jumps back to the left branch at the end of the timer phase. We note that there is no explicit volume control in this initial model since the only control comes from the quantity of $I$ which does not initially depend in any way on the volume. This initial quantity sensing oscillator does not perform size control and instead results in unstable growth where size deviations are amplified at each generation instead of being corrected (Appendix 1\u2014figure 3) as had been previously described for a size scaling inhibitor dilution model (Barber et al., 2017; Willis et al., 2020). Thus, the network needs to evolve some other interactions and/or parameters to go beyond a simple G1 inhibitor driven by production in S/G2/M to create a viable cell lineage.\n\n### Evolution of quantity-based size control mechanisms\n\nTo examine how networks controlling cell size could evolve, we ran evolutionary simulations that optimize both the number of divisions $N_{Div}$ and the coefficient of variation of the size distribution at birth $CV_{Birth}$ (see Materials and Methods for algorithm details). Figure 2A illustrates the behavior and results of a typical evolutionary run, with axes defined by both fitnesses used. Simulations successfully evolving size control mechanisms typically follow the same pattern. Networks initially cluster in two regions: region [ii] where cells have low $CV_{Birth}$ but grow too small and die after a few divisions, and region [i] where cells grow too big and reach our cut-off for fitness 2 (y-axis). Notice that our Pareto evolutionary algorithm maximizes network diversity, so that those two clusters are at first maintained during evolution (rank 1 Pareto networks Warmflash et al., 2012). As the number of epochs increases, networks in cluster [ii] have more and more divisions, but still grow too big, so that those cells are therefore penalized (see details in Appendix 1). At some point in evolution (around epoch 700 for this particular simulation), some weak control mechanism suddenly evolves, preventing cells from becoming too big without imposing a tight control on the average volume (see also Figure 5 for an explicit example of how this is done). Thus, fitness 2 collapses and the number of divisions is optimized simultaneously. Cells later optimize the control to give a lower $CV_{Birth}$ . The optimal networks, at the right most end of this line, both maximize $N_{Div}$ and minimize $CV_{Birth}$ .\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig2-v2.jpg)\n\n**Figure 2.:** (A) Typical 2D fitness trajectory for an evolutionary run. Individual networks are dots color coded by their epoch within the evolutionary trajectory. Fitness function of the number of divisions of a cell lineage during a time interval of fixed length ($F_{1}(N_{Div})$, X-coordinate) and fitness function of the coefficient of variation of the volume distribution at birth ($F_{2}(CV_{Birth})$, Y-coordinate). Optimal model behavior is located in the bottom right corner of the figure where networks produce cell lineages with many offspring and strong size control. First, there are several epochs without any size control; networks cluster in two regions of the Pareto front corresponding to volume going to the maximum allowed value (cluster [i]) or to the minimum value (cluster [ii]). Both cases are highly penalized in their fitness score. Evolution goes back and forth between the [i] and [ii] clusters with a slow increase in the number of divisions (X-coordinate). Eventually, some volume control evolves and networks transition in the [iii] cluster where their $CV_{Birth}$ is slowly optimized further until the end of the run. (B) Core network topology of the evolved Model A1 network that employs a feedback-based mechanism described in detail in panels C-F. (C) Concentration of $[I]$ at the G1/S transition (Y-coordinate, left axis, orange) and average concentration of the repressor protein $[R]$ in S/G2/M (Y-coordinate, right axis, light blue) as a function of the volume of the cell at G1/S (X-coordinate), that is, the beginning of S phase. We see here that $[R]$ acts as a direct size sensor of the volume at G1/S. (D) Quantity of inhibitor $I$ at birth as a function of volume of the cell at birth, which is independent of size due to titration by $[R]$ during S/G2/M. (E) Trajectories of quantity of inhibitor $I$ in G1 as a function of time. Trajectories are color coded as a function of the volume at G1/S during the previous generation\u2019s cell cycle. For visualization purposes, trajectories are offset vertically to all begin at the average quantity of $I$ at birth (t=0) shown to be on average independent of volume in panel D. Larger cell volumes lead to greater titration of $[I]$ in G1 by $[R]$. In turn, this ensures that G1 duration of the daughter cell cycle is shorter, which underpins the size control mechanism. (F) Characteristic dynamics of Model A1. Circles indicate volume at G1/S. Extrinsic perturbations are applied to the model by temporarily changing the division ratios which kicks the system out of equilibrium at the subsequent cycle such that $V_{NextG1/S}^{}=(1\\pm0.5)\u27e8V_{G1/S}\u27e9$. The volume relaxation back to its homeostatic value takes ~2\u20133 generations, almost insensitive to the fact that the perturbation is applied towards higher or lower volumes. (G) Amount of volume added $\u0394V$ in G1 (red), S/G2/M (dark blue), and over the whole cycle (purple) as a function of their initial volume at the beginning of these phases, that is, birth for G1 and cycle, and G1/S for S/G2/M, with the slope of linear fits indicated in legend. Slope of 1 corresponds to a Timer, slope of \u20131 to a Sizer and slope of 0 to an Adder. (H) Network topology of Model A2, a second evolved network that is similar to Model A1 albeit with different kinetic parameters and 2 additional interactions (see text). (I) Characteristic dynamics of Model A2. Extrinsic perturbations are applied like in (F). The volume relaxation back to its homeostatic value takes ~3\u20134 generations when applied towards the higher volumes but only 1 generation when applied towards the lower volumes. (J) Amount of volume added for different periods of the cell cycle for Model A2.\n\nEvolution simulations are in part reproducible and most often lead to similar network topologies. The evolution trajectory leading to Model A1 is a typical example (Figure 2B, see also variations of this network in Model A2 in Figure 2H and models A3-6 in Appendix 1\u2014figures 8\u201311). The minimal network common to all those models is very simple. One gene, $R$, is added to the seed network and is both repressed and titrated by $I$ forming the network motif known as a Mixed Feedback Loop (Fran\u00e7ois and Hakim, 2005). Size control can then be understood intuitively as follows.$[I]$ represses $[R]$, which is thus only produced in the narrow window of the cycle when $[I]$ is low, i.e., when the cell is close to the G1/S transition and in early S/G2/M. But, since the quantity $I=[I]\\timesV$ is fixed at G1/S by design, the concentration $[I]$ is inversely proportional to the volume of the cell at the G1/S transition (VG1/S) as shown in our simulations (Figure 2C). Because of this, the $[I]$ dependent synthesis rate of $[R]$ and therefore its subsequent concentration are (linear) functions of the volume of VG1/S (Figure 2C), allowing for the cell to keep a memory of its volume at G1/S via the $[R]$ variable (this holds even once $[R]$ is constantly degraded for the remainder of the cycle). This has two effects. First, during S/G2/M, $I$ synthesis rate is proportional to volume by hypothesis (and thus to VG1/S), and $I$ is titrated by $[R]$, also proportional to VG1/S. Both effects even out so that cells are born with a fixed quantity of inhibitor $I$ that is independent of volume (Figure 2D). Second, after division, production of $I$ is 0 by hypothesis, but $I$ still is titrated in G1 by the remaining $[R]$ (still proportional to VG1/S). Because $I$ quantity at the beginning of G1 is size independent, this ensures that daughter cells reach the $I$ quantity threshold of G1/S earlier if they were born larger, thus ensuring size control. To confirm this, we examine the change in quantity of $I$ as a function of time spent in G1 and of VG1/S, and we see the slope of these two quantities is volume-dependent (Figure 2E). We notice that this evolved size mechanism likely is the simplest possible allowed by our formalism: on the one hand, it entirely captures the volume dependency in a single variable $[R]$, and on the other hand, it ensures proper scaling of $I$ both at birth and at G1/S for size control with the help of a single titration. Notice that such simple control also explains the sudden evolutionary \u201cjump\u201d of Pareto front around epoch 700 on Figure 2A, which corresponds to when the Mixed Feedback Loop motif first appears.\n\nThese evolved size control networks, while relying on quantity sensing, are conceptually similar to the budding yeast network relying on concentration sensing of the cell cycle inhibitor Whi5 since there is a constant quantity of $I$ present right after division (just like Whi5). In budding yeast, the Whi5 protein is passively diluted in G1 to increase the stochastic rate of progression through the G1/S transition. The time spent in G1 depends on the initial concentration of Whi5 at birth, which scales as $\\frac{1}{V}$ , to promote a sizer mechanism. Here, the concentration of $[I]$ at birth scales as $\\frac{1}{V}$ , but so does the threshold concentration of $[I]$ regulating the G1/S transition. This is precisely why an active titration mechanism is required to obtain G1 size control in our setup. Such homeostatic control ensures cell size returns to its steady state distribution following an artificial perturbation as soon as a volume deviation is detected at G1/S (Figure 2F). When we plot the amount of volume added $\u0394V$ for different phases of the cell cycle as a function of the initial volume at the beginning of these phases, we find an approximate adder over the whole cycle that results from weak sizer in G1 followed by a timer in S/G2/M as has been found in budding yeast (Chandler-Brown et al., 2017; Di Talia et al., 2007; Soifer et al., 2016, Figure 2G).\n\nWhile we chose one simple model to illustrate the control mechanism common to our set of evolved networks (Model A1 shown in Figure 2B), other evolved networks were more elaborate but illustrated a similar principle. For example, Model A2 contains extra interactions for the volume sensing gene $[R]$, where $[R]$ is repressed by the S/G2/M Switch (meaning its production is completely shut down in S/G2/M leading to sawtooth-like dynamics). Furthermore, $[R]$ represses the synthesis of $[I]$, adding another layer of repression to promote size control beyond the previously described titration by $[R]$ (Figure 2H). If we perturb cell size to examine the dynamics of the return to steady state and look at the added volume during the cell cycle, we again see overall a weak adder behavior similar to that found in Model A1 (Figure 2I\u2013J). We give additional examples of similarly evolved networks in Appendix 1\u2014figures 8\u201311 where we can see the sensing and the feedback mechanism being implemented in slightly different ways. Yet, despite these mechanistic differences in feedback regulation the resulting function of the evolved networks were similar as indicated by their $CV_{Birth}$ (Appendix 1\u2014table 1).\n\n### Quantifying size control\n\nTo study the mechanisms implicated in cell size control, we modify the control at G1/S and introduce the control volume $V_{C}$ . This control variable is independent from the biochemical network and is maintained fixed allowing us to disconnect the actual cell volume $V$ from the biochemical network and by forcing the G1/S transition to be triggered once $I_{C}=[I]\\timesV_{C}$ is low enough. We then numerically integrate the differential equations of the model and measure the period $T(V_{C})$ of the simulated cell-cycle for this control volume. Use of the control volume allows us to break the size feedback system and distinguish its input, $V_{C}$ , from its output, the induced cycle period T (Angeli et al., 2004). We compute $T(V_{C})$ for Models A1 and A2 and compare their responses with the analytical curves of the archetypical timer, adder, and sizer (Figure 3A and C). Those curves intersect at the point where the induced period is exactly equal to the population doubling time ($\\tau=ln(2)/\\lambda$), which defines the equilibrium volume achieved by our cell size control network corresponding to $\u27e8V_{G1/S}\u27e9$. Examination of the size control in different cell cycle phases indicates the contributions of G1 and S/G2/M to the overall system behavior (Figure 3B and D). We note that we later examine statistics of ensembles of evolved models but that Models A1 and A2 are both typical examples of evolved feedback-based models.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig3-v2.jpg)\n\n**Figure 3.:** (A) Average period $T(V_{C})$ of the oscillator of Model A1 as a function of the control volume $V_{C}$ at the G1/S transition. Period is normalized by $\\tau$ the doubling time of the cell, and volume is rescaled by $\u27e8V_{G1/S}\u27e9$, which corresponds to $T(\u27e8V_{G1/S}\u27e9)=\\tau$. Normalized periods larger than 1 indicate cell lineages that grow over time whereas normalized periods smaller than 1 indicate lineages that shrink over time. Periods for the sizer (red), adder (orange) and timer (dark blue) are shown for comparison. The S/G2/M timer period is incompressible and prevents a perfect sizer from existing in the large volume range as indicated by the red dotted line. Model A1 follows approximately the adder archetype over a large range of control volumes. (B) Added volumes $\u0394V$ for different phases of the cell cycles for simulations of Model A1. Individual dots correspond to different cell cycles for a simulation at steady-state. The full line corresponds to the extrapolation from the $T(V_{C})$ curve shown in A for a restricted range of $V_{C}$ relevant to the scatter. The black cross, star and square indicate the average added volumes corresponding to when the system senses a volume corresponding to $\u27e8V_{G1/S}\u27e9$ at the G1/S transition. We see that the model is predicted to follow an adder over a large range of volumes. (C) Average period $T(V_{C})$ of the oscillator of Model A2, with similar conventions as for panel A. We note that the $T(V_{C})$ curve of this model is closer to the sizer at lower volumes and closer to a weak adder/timer at higher volumes relative to $\u27e8V_{G1/S}\u27e9$. (D) Added volumes $\u0394V$ for different phases of the cell cycles for simulations of Model A2, with similar conventions as for panel B. Here we see the predicted sizer behavior at lower volumes and the weak adder/timer behavior at higher volumes.\n\nQuantifying precisely how the cell cycle period depends on the control volume at G1/S allows us to see that the $T(V_{C})$ for Model A1 overlaps with the theoretical adder curve over a broad range of volumes. In contrast, Model A2 behaves as a sizer for volumes smaller than the equilibrium volume. However, at higher volumes it behaves more like an adder/timer similar to Model A1. Model A2\u2019s equilibrium is thus \u2018tuned\u2019 by evolution to be in a regime corresponding to the minimum of the $\u0394V_{Cycle}$ curve extrapolated from the $T(V_{C})$ as shown in Figure 3D, precisely when the system transits from a sizer at small volumes to an adder-like behavior at higher volumes. Similar behavior was observed experimentally in budding yeast (Chandler-Brown et al., 2017; Delarue et al., 2017). Thus, both Models A1 and A2 approximate an adder near the equilibrium size, but their behavior differs further from equilibrium where for smaller volumes, Model A1 is still an adder while Model A2 is a sizer.\n\n### Modulating cell cycle structural constraints selects for adders or sizers\n\nSo far, our evolutionary algorithm selects networks that implement adders rather than sizers near the equilibrium size. This is surprising because sizers are in principle better than adders at controlling cell size and reducing the CV of the size distribution at birth, which is one of our fitness functions. That adders are more frequently observed in nature than sizers (Cadart et al., 2018; Eun et al., 2018; Jun et al., 2018; Westfall and Levin, 2017; Willis and Huang, 2017; Zatulovskiy and Skotheim, 2020), is consistent with our evolution simulations, but adds to the mystery as to why this takes place.\n\nTo gain insight into the underlying reason for the prevalence of adders, we considered what might be exceptional in the cases where sizers occur. The best studied, and highly accurate sizer, is found in the fission yeast S. pombe (Fantes, 1977; Sveiczer et al., 1996). In contrast to budding yeast and human cells, where the size control takes place largely in G1 phase, fission yeast exerts size control later in the cell cycle at the G2/M transition. That size control took place later in the cell cycle in fission yeast suggested that this structural feature of its cell cycle might be responsible for its stronger size control. To test this, we inverted our seed network so that the G1 phase was a timer, while cell size control could evolve in S/G2/M (see Materials and Methods). We compare these results to the evolutionary simulations starting with the \u2018control\u2019 seed network with G1 size control and an S/G2/M timer (Figure 2). We note that S. pombe growth rates have been reported to deviate from exponential (Wood and Nurse, 2015). While slower than exponential growth would aid cell size control, our analysis here is restricted to exponential growth.\n\nTo determine how the seed network structure influences the subsequent evolution of cell size control, we performed 120 independent evolutionary simulations for the two network structures initialized with the Model A1 topology and parameters (Figure 4). Sixty simulations were performed using Pareto optimization and another 60 simulations were performed using individual fitness optimization based on the number of cell divisions $N_{Div}$ . For each simulation\u2019s most fit model after 500 epochs, we calculate the CV of the volume distribution at birth, $CV_{Birth}$ , and the slope of the linear fit of the volume added in the entire cell cycle as a function of the cell size at birth, Slope $\u0394V_{Cycle}$ (we remind the reader that a slope of \u20131 corresponds to a sizer, 0 to an adder, and 1 to a timer). We chose to use 500 epochs in our simulations because in our previous experience this was sufficient for networks to evolve to be near the optimum, but not so much that they were forced to extensively explore the effects of neutral mutations near the optimum. Model A1\u2019s initial and Slope before evolution are indicated by the dashed black line. In the control experiment where G1 is a sizer and S/G2/M is a timer, most evolutionary simulations with two fitness functions (Pareto) yield models close to the adder regime with a low $CV_{Birth}$ . However, when only the number of divisions ($N_{Div}$) is used as a fitness, the evolutionary simulations are closer to the sizer regime, albeit with a slightly higher $CV_{Birth}$ (Figure 4A, Welch\u2019s t-test p<10\u20134). When the cell cycle structure is inverted so that G1 is a timer and S/G2/M is a sizer like it is in the fission yeast S. pombe, we found that more sizer-like networks evolve than in the control experiment (Figure 4B, Welch\u2019s t-test on agglomerated data p=0.03). This shows that having a network structure like the fission yeast S. pombe promotes sizers, while having the size control portion of the cell cycle earlier, as in the budding yeast S. cerevisiae, promotes adders. Thus, performing simulations using cell cycle network structures of these two yeasts results in the evolution of size control mechanisms that reflect those that are naturally occurring.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig4-v2.jpg)\n\n**Figure 4.:** Summary statistics for evolutionary simulations each having 500 epochs. Model A1 shown in Figure 2A-G was used as the initial seed network. 60 simulations were performed using Pareto optimization of the number of divisions ($N_{Div}$) and the CV of cell size at birth ($CV_{Birth}$), are labeled Pareto and are shown in full colors. 60 more simulations were performed using only the number of divisions as the fitness function, are labeled NDiv and are shown in colored outlines only. Scatter plots show the coefficient of variation of the size distribution at birth ($CV_{Birth}$, Y-coordinate) as a function of the fitted added volume slope over the whole cycle as a function of volume at birth (Slope $\u0394V_{Cycle}$ , X-coordinate) for the most fit models evolved during each of the 120 independent simulations. Horizontal box plots above the scatter plots display the distributions of the added volume slopes for the Pareto and NDiv simulations. Timer (dark blue), adder (orange) and sizer (red) slopes are shown respectively at 1, 0, and \u20131 for comparison. Vertical box plots on the right of the scatter plots show the distributions of $CV_{Birth}$ for the Pareto and NDiv simulations. Asterisks represent p-values for the Welch\u2019s t-Test between the distributions. For reference, $NS$ indicates $p>0.05$, * indicates $p<0.05$, ** indicates $p<10^{\u22122}$ , *** indicates $p<10^{\u22123}$ and **** indicates $p<10^{\u22124}$ . The values of $CV_{Birth}$ and Slope $\u0394V_{Cycle}$ for the initial seed Model A1 are shown as a black square in the scatter plot or as a dashed black line in the box plots. Each panel explores different cell cycle structures which are summarized by the pie charts. Cycles begin on the left of the pie charts and rotate clockwise, indicating the order of the sizer (red) and timer (dark blue) phases. The labels indicate each phase\u2019s duration at equilibrium as a percentage of the doubling time $\\tau$. (A) Identical evolutionary parameters as for Model A1 evolution shown in Figure 2A\u2013G. G1 performs size control and has a duration $0.46\\tau$ at equilibrium and S/G2/M is a timer of duration $0.54\\tau$. (B) Evolution results for a cell cycle structure where the sizer and the timer phases of the cell cycle are inverted akin to S. pombe. G1 is a timer of duration $0.54\\tau$ and S/G2/M performs size control and has duration $0.46\\tau$ at equilibrium. (C) Evolution results for a G1 size control of average duration $0.64\\tau$ at equilibrium where S/G2/M is a timer of duration $0.36\\tau$. (D) Evolution results for a G1 size control of average duration $0.28\\tau$ at equilibrium where S/G2/M is a timer of duration $0.72\\tau$.\n\nThe general notion that having cell size control in G1 results in adder-like mechanisms, while control later in the cell cycle results in more sizer-like mechanisms fits most observations of human cell lines grown in culture, budding yeast, and fission yeast. However, a recent study examining mouse epidermal stem cells growing and dividing in the skin found both a strong sizer and that this sizer was largely due to the size-dependent regulation of G1 (Mesa et al., 2018; Xie and Skotheim, 2020). This raised the question as to how a network performing size control in G1 could result in a sizer for the entire cell cycle. One important difference between mammalian cells grown in culture and the mouse epidermal stem cells growing in an animal (in vivo) is the change in the relative durations of the G1 and S/G2/M phases of the cell cycle. While the S/G2/M phase of the cell cycle is similar in duration in cultured cells and the epidermal stem cells in vivo at ~12 hr, the G1 phase extends ~fivefold from ~10 hr in culture to ~50 hr in vivo (Cadart et al., 2018; Xie and Skotheim, 2020). This suggests the hypothesis that the overall size control behavior can be dominated by the relatively longer cell cycle phase, as is likely the case for the G1 phase of epidermal stem cells. To test this hypothesis, we performed evolutionary simulations with size control in G1 and a timer in S/G2/M but where we changed the duration of the S/G2/M timer phases of the cell cycle to be significantly shorter or longer than the G1 phase at equilibrium. When a timer in S/G2/M is relatively shorter compared to G1, we generally see more sizer-like behavior can evolve (Figure 4C, Welch\u2019s t-test on agglomerated data p=4 x 10\u20133), while when it is relatively longer, we see more adder-like or even timer-like behavior (Figure 4D, Welch\u2019s t-test on agglomerated data p<10\u20134).\n\nWe next considered the effect of changing the amount of noise in the timer phase of the cell cycle. To do this, we examined the evolution of networks performing size control in G1 and where the S/G2/M phase with an increasing amount of noise. Increasing the noise in the timer progressively reduced the amount of size control done by the network (Appendix 1\u2014figure 5). This is likely because the fixed duration of S/G2/M allows the system to accurately reset protein concentrations for the subsequent cell cycle to promote accurate G1 control (Willis et al., 2020). We also examined the effects of adding noise to the cellular growth rate and to volume partitioning at division and found similar results (Appendix 1\u2014figures 6\u20137).\n\nTaken together, our simulations show how the structural features of the cell cycle are important for determining what type of size control ultimately evolves. G1 control is more conducive to the evolution of adders, while S/G2/M control is more conducive to sizers. Moreover, size control can be dominated by the cell cycle phase of longest duration and is modulated by the specific selection criteria.\n\n### A two-step evolutionary pathway for cell size control\n\nFrom our series of evolution simulations, we found a somewhat paradoxical inverse correlation between the added volume slope quantifying the degree of size control (sizer vs. adder) and the $CV_{Birth}$ (Figure 4B\u2013C). This was surprising because it means that there is a broader distribution of volumes in the sizer regime where control should be more effective in theory. To better understand this inverted correlation between Slope $\u0394V_{Cycle}$ and $CV_{Birth}$ , we revisited our evolutionary simulations to examine the evolutionary pathways through which the networks progressed through the simulated epochs.\n\nA typical evolutionary pathway for a Pareto simulation of the S. pombe-like network structure presented in Figure 4B is shown in detail in Figure 5. Here, Model A1 topology is conserved throughout evolution although individual parameter values change. In the early stages of the evolution (epoch 650), we typically see dynamics where small cell size triggers an overshoot to a large cell size, which is then reduced through a series of rapid divisions (Figure 5A). Because of this small-size-triggered overshoot, the system behaves more like a sizer when the average behavior is analyzed (Figure 5B). However, the high degree of variability in the cell cycles also leads to a broad distribution of volumes (Figure 5C). The variability in volume is attenuated in later epochs where there are fewer and smaller volume overshoots triggered by small cell size (Figure 5D\u2013I). Since small cell size no longer triggers a dramatic amount of cell growth, the slope of $\u0394V_{Cycle}$ is increased and the system converges towards a weak adder in which the distribution of volume at birth is more Gaussian and the $CV_{Birth}$ is lower (Figure 5H\u2013I). Taken together, these analyses suggest a two-step evolutionary pathway, consistent with the evolutionary dynamics first seen in Figure 2A. First, a strong but imprecise sizer mechanism evolves where, because of noise in the system, small variations in volume lead to a dramatic overcorrection and overshoot of the target volume. The variability in volume produced by this overshoot is then reduced by attenuating the strength of the size control response. Indeed, the overall weaker size control allows the system to respond more mildly to size deviations, thus yielding a lower $CV_{Birth}$ overall which we select for. Thus, selecting for a smaller $CV_{Birth}$ , i.e. better size control, can end up selecting for adders rather than sizers. This paradoxical result is consistent with the fact that when we select only for the number of cell divisions ($N_{Div}$), one sees that more sizer-like behavior can evolve (Figure 4A\u2013C). The typical behavior before optimization of $CV_{Birth}$ is a strong sizer as illustrated in Figure 5A.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig5-v2.jpg)\n\n**Figure 5.:** Snapshots of an evolutionary simulation of 2500 epochs initialized with the Model A1 network topology along with an S. pombe-like cell cycle structure with a timer in G1 followed by a sizer in S/G2/M (see Figure 4B). Pareto fitness optimization was performed using $N_{Div}$ and $CV_{Birth}$ as fitness functions. Rows indicate simulation results for the fittest networks from evolutionary epochs 650 (Panels A-C), 1000 (Panels D-F), and 2500 (Panels G-I). Network topology remains the same throughout the evolutionary simulation and is shown on the right. Evolutionary dynamics continually reduce the selected for $CV_{Birth}$ and proceed through a noisy sizer to a less noisy adder. (A) Typical dynamics of the most fit model from epoch 650. (B) Added volumes $\u0394V$ for different phases of the cell cycle for the most fit model from epoch 650. Fitted slopes are indicated in the legend. Fits for the S/G2/M and Cycle added volumes were split in two separate the size control for small and large cells. (C) Size distributions at birth (red), G1/S (orange), and division (purple) for the most fit model from epoch 650. The coefficient of variation of the volume distribution at birth $CV_{Birth}=0.279$. (D) Typical dynamics of the most fit model from epoch 1000. (E) Added volumes $\u0394V$ for different phases of the cell cycle for the most fit model from epoch 1000. Fitted slopes are indicated in the legend. (F) Size distributions at birth (red), G1/S (orange), and division (purple) for the most fit model from epoch 1000. The coefficient of variation of the volume distribution at birth $CV_{Birth}=0.090$. (G) Typical dynamics of the most fit model from epoch 2500. (H) Added volumes $\u0394V$ for different phases of the cell cycle for the most fit model from epoch 2500. Fitted slopes are indicated in the legend. (I) Size distributions at birth (red), G1/S (orange), and division (purple) for the most fit model from epoch 2500. We see here that the sizer behavior from epoch 1000 was abandoned for a weaker adder overall yielding lower $CV_{Birth}=0.063$.\n\n### Fluctuation sensing and the evolution of self-organized criticality\n\nOne of the main features of smaller cells is that they have fewer proteins and mRNA. If some aspects of protein synthesis and degradation are subject to Poisson fluctuations, we expect such fluctuations to produce larger concentration fluctuations in smaller cells. For example, let us assume that the balance of synthesis and degradation of a generic protein results into a Poisson distribution with parameter $\\frac{\u03c1V}{\\delta}$ , where $\u03c1$ is the synthesis rate in number of proteins per unit of time for a reference volume of 1, $V$ is the volume, and $\\delta$ is the degradation rate. The average concentration of this protein in an exponentially growing cell will be $\\frac{\u03c1}{\\delta}$ , which is independent of the cell volume $V$ as expected from the production rate scaling. However, following the Bienaym\u00e9 formula, the variance in the concentration is $\\frac{\u03c1V}{\\delta}\\times\\frac{1}{V^{2}}=\\frac{\u03c1}{\\deltaV}$ (Figure 6A), which decreases with volume. This result makes intuitive sense because bigger cells have to produce more proteins to keep concentrations constant, so that the fluctuations in the relative number of proteins (and thus concentration) are smaller (see Jia et al., 2021 for a complete analytical study of how in general variance scales differently from mean when volume varies). Thus, if the cell could sense the size of concentration fluctuations in some way, it would be able to harness the cell size-dependence of such stochastic fluctuations to regulate cell division and control cell size.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79919/elife-79919-fig6-v2.jpg)\n\n**Figure 6.:** (A) Size-dependent molecular noise arises due to Poissonian fluctuations in molecule number. Consider a protein production-degradation scheme for protein quantity X with production rate $\u03c1$ and degradation rate $\\delta$ contained in a volume V. At equilibrium, the concentration of $[X]$ will be given by a distribution with mean $\\frac{\u03c1}{\\delta}$ and variance $\u221d\\frac{1}{V}$ . The effect of V on the molecular noise is shown on the time trajectories for simulations in a constant volume of V=1 (light blue), V=5 (medium blue), and V=50 (dark blue). Corresponding concentration distributions are shown on the right-hand side of the panel. (B) Network topology of Model B which evolved to sense fluctuations. Here, the G1/S transition is controlled by the concentration of $[I]$ and not its quantity. (C) Characteristic cell cycle dynamics of Model B. Trajectories of $[I]$, $[A]$, and S/G2/M Switch are rescaled with arbitrary units (AU) for visualization purposes. Below, we zoom-in on three cycles to show how a low-volume induced burst in $[A]$ leads to a massive production of $[I]$ inducing a temporarily prolonged G1 phase. Subsequently, cells become bigger and display lower molecular noise inducing a comparatively shorter G1 phase. (D) Volume distributions at birth (red), G1/S (orange), and division (purple) for Model B. The coefficient of variation of the volume distribution at birth $CV_{Birth}=0.235$. (E) Amount of volume added $\u0394V$ in G1 (red), S/G2/M (dark blue), and over the whole cycle (purple) as a function of their initial volume at the beginning of these phases, i.e., birth for G1 and cycle, and G1/S for S/G2/M, with the slope of linear fits indicated in legend. (F) Complementary cumulative distribution functions of the cycle duration (CCDF; probability that the cell cycle duration is larger than the value on the X-axis) for three models discussed in the main text: Model A1 (light blue), Model A2 (dashed dark blue), and Model B (red). The light grey line indicates the doubling time $\\tau$. We see that Model B exhibits a long tail past the doubling time, which is consistent with a power-law scaling of the cycle duration probability. We find a criticality indicative scaling exponent of \u20133.05 for the CCDF after fitting the tail of the distributions of 5 independent realizations of the dynamics of Model B. (G) Box plots of the cycle length distributions as a function of control volume $V_{C}$ at birth. Cycle lengths are normalized by the doubling time $\\tau$. Here, $V_{C}$ sets the molecular noise level to be equivalent to that of an exponentially growing cell born at $V_{C}$ but whose volume is reset to $V_{C}$ at each division. Note the very long tail of the distributions at small $V_{C}$ . (H) Position of the G1 attractor for inhibitor $[I]$ as a function of activator $[A]$. The black dashed line corresponds to the level of $[A]$ which triggers a transition between two modes of growth and division as shown by the position of the G1 attractor for $[I]$ becoming equal to the concentration required to induce the G1/S transition. The two modes of growth are labeled [i] and [ii] and are also indicated in panels I-K. (I) Activator protein $[A]$ is synthesized in bursts whose amplitude and duration are a function of volume. We define the burst duration as the total time during which  $[A]$ >0 for a cycle. The burst amplitude corresponds to the average level of $[A]$ during each G1 phase. Each burst is then color-coded as a function of the birth volume of the cell that induced it. We use a divergent colormap whose center value (light yellow) corresponds to the average volume of the cells at birth and is indicated by a notch on the colorbar. Here, [i] corresponds to the deterministic regime when volume is high and [ii] corresponds to the noisy regime when volume is low. Note that the average volume of the cells at birth is positioned close to the black dashed line. (J) Phase-space representation of the relaxation oscillator in the deterministic regime [i]. The X-coordinate shows the S/G2/M Switch variable, and the Y-coordinate shows the concentration of $[I]$. Here, when volume is high, the position of the G1 attractor is below the $[I]$ concentration at which the G1/S transition happens. Thus, G1/S takes place and cells are in the cell cycle with a period of ~0.85. (K) Phase-space representation of the noisy regime [ii]. Here, when volume is low, the position of the G1 attractor becomes greater than the $[I]$ concentration at which the G1/S transition happens, and cells remain temporarily stuck in a prolonged G1 state and are unable to trigger the G1/S transition.\n\nTo test if we can evolve networks that control cell size through sensing Poissonian fluctuations, we first initialized our simulation with a network similar to that shown in Figure 1C, but with an added self-activating gene $A$ that can activate the production of the $I$ inhibitor. We then ran evolutionary simulations using the cell cycle structure of a sizer controlling G1 and timer in S/G2/M, but where the G1/S transition is regulated by the concentration $[I]$ instead of its quantity. We also used Pareto fitness optimization of $N_{Div}$ and of $CV_{Birth}$ . Importantly, we use the stochastic version of our equations with the molecular noise modeled using a Langevin noise term with a variance inversely proportional to the volume as explained above. We then extracted the most fit network and optimized it further using Pareto optimization of $N_{Div}$ and of the $\u0394V_{Cycle}$ slope to push the models towards the sizer regime. The most fit network of those combined evolutionary simulations is presented in Figure 6B and demonstrates that we can indeed evolve fluctuation-based cell size control (Model B).\n\nThe mechanism for size control that evolved based on size-dependent fluctuation sensing is remarkably similar to what we observed for models without size-dependent fluctuations (Figure 5A). For large volumes, the cycle has a constant period which corresponds to approximately 85% of the doubling time $\\tau$. This ensures that in the high-volume regime, the system shrinks over time. When the volume is small however, fluctuations allow the concentration $[A]$ to cross the threshold of the highly non-linear transcriptional activation of $[I]$ by $[A]$. This results in a massive increase of $[I]$ that needs to be degraded to progress further into the cell cycle. Thus, the low volume regime occasionally leads to a considerable increase in G1 length and a correspondingly very large cell at division. These very large cells then reliably and deterministically re-enter multiple, rapid cell cycles with short G1 until the cell is small again and the concentration fluctuations again become large enough to trigger the activation of $[I]$ by $[A]$. This mechanism thus appears very similar to the early sizer mechanism observed in other quantity sensing simulations shown in Figure 5. However, here the mechanism is based only on size-dependent fluctuations in protein concentration and the overall behavior is closer to an adder (Figure 6E).\n\nThe system dynamics that evolved to perform fluctuation-based cell size control produce volume distributions that are long-tailed due to the stochastic occurrence of occasional exceptionally long G1 phases. Interestingly, the probability distribution of cell cycle durations follows a power law (Figure 6F), which is due to the very broad distributions of G1 duration at lower cell volumes. A more controlled analysis specifying the initial conditions showed that cell cycles get increasingly long, and their distributions widen with decreasing control volume $V_{C}$ (Figure 6G). Such non-Gaussianity is the hallmark of critical behavior, suggesting that the evolution of fluctuation-based cell size control is based on self-organized criticality (SOC). SOC is defined as a system where an order parameter feeds back on a control parameter (Sornette et al., 1995; Vidiella et al., 2021). The canonical example of SOC is the sandpile to which grains of sand are added on top. As the sand accumulates, the slope steepens, and the angle of the pile (control parameter) increases. Eventually, this triggers avalanches (order parameter) that feedback to dramatically reduce the angle of the pile. This ensures that the system dynamically tunes itself at the critical value of the angle of the pile where avalanches can occur.\n\nWe conclude that our evolved size control network exhibits SOC based on several observations. Starting from a high volume, multiple divisions at a rate faster than it takes to double the biomass reduce cell volume $V$ just like the addition of grains of sand gradually increases the slope of the pile. Then, for small enough volumes, bursts of $[A]$ drive an extended G1 that greatly increases cell size, which, like the sandpile avalanches, resets the system\u2019s control parameter (volume of the cell or angle of the sandpile). Interestingly, evolution tuned the system to be near a bifurcation (Figure 6I). If we consider the deterministic regime, in which the fluctuations in $[A]$ are small, the cycle is unperturbed and oscillates with a period roughly equal to 85% of the doubling time (Figure 6J). In contrast, if we consider the noisy regime, in which the fluctuations in $[A]$ are large, the cycle disappears, and the system stays locked in a prolonged G1 state with a high value of $[I]$ which is akin to a bifurcation destroying the cycle (Figure 6K). This bifurcation takes place because the position of the G1 attractor for $[I]$ becomes larger with increasing $[A]$ and eventually overcomes the concentration required to induce the stochastic G1/S transition (Figure 6H). Then, the system remains stuck in a state where G1/S cannot be triggered, and cells effectively exit the cycle. As growth occurs, noise dies down and so does the position of the G1 attractor, eventually becoming smaller than the $[I]$ concentration required to induce the G1/S transition which allows cells to re-enter the cell cycle. Thus, the system is critical from a dynamical systems standpoint and also fits the general observation that SOC systems tune themselves to be right at the point where the order parameter is non zero, but infinitesimal (Sornette et al., 1995). In our case, the bifurcation corresponds exactly to the point where $[A]$ can sufficiently activate the production of $[I]$ to prevent the G1/S transition.\n\n## Discussion\n\nThe last decade saw an explosion of time lapse microscopy studies measuring how cells control their size. These studies revealed diverse phenomena that are characterized by the correlation between cell size at birth and cell size at division. Size control ranged from sizers, where the size at division is uncorrelated from the size at birth, to adders, which add a constant volume in each cell division cycle, to timers, whose cell cycle duration is size-independent (Cadart et al., 2018; Eun et al., 2018; Jun et al., 2018; Willis and Huang, 2017; Wood and Nurse, 2015; Zatulovskiy and Skotheim, 2020). The presence of these diverse phenomena raises the question as to why the underlying control networks evolve one rather than another type of cell size control?\n\nTo explore the evolution of cell size control networks subject to distinct selection pressures, we used computational evolution simulations. We initially examined the evolution of a seed cell cycle model consisting of G1 and S/G2/M phases of similar duration, where the G1 phase was free to evolve size-dependence, but the S/G2/M phase was constrained as a timer. Our simulations reliably evolved a control mechanism based on a Mixed Feedback Loop (Fran\u00e7ois and Hakim, 2005, Figure 2). This network is centered on a cell cycle regulator ($I$) that inhibits the G1/S transition in proportion to its quantity. $[I]$ is titrated away into an inactive complex by an increasing amount of another protein $[R]$ that is synthesized in proportion to cell size. This results in a size-dependent decrease in the effective cell cycle inhibitor (free $[I]$). Thus, our evolved network implements an effective dilution of a cell cycle inhibitor that is conceptually similar to the well-described inhibitor dilution models of budding yeast, human cells, and Arabidopsis plants (D\u2019Ario et al., 2021; Schmoller et al., 2015; Xie and Skotheim, 2020; Zatulovskiy et al., 2020). We note that we did not allow the synthesis of our proteins, such as $[I]$, to be size-independent as has been found for budding yeast (Chen et al., 2020; Schmoller et al., 2015; Swaffer et al., 2021) as this could result in a one-step implementation of cell size control through the pure dilution of a cell cycle inhibitor. It is therefore interesting that given the constraint that all proteins be made in proportion to cell size, the network still evolved an effective \u2018dilution\u2019 of the active form of the cell cycle inhibitor molecule $[I]$ .\n\nOur evolution simulations gave insight into factors that bias evolution towards sizer or adder type control mechanisms (Figure 4). First, it is worth noting that our evolution simulations were not deterministic. There was no one-to-one correspondence between a given evolutionary pressure and any one specific cell size control mechanism. Rather, our claims represent an average behavior observed over the course of many simulations. Size control, as measured by the CV at a particular point in the cell cycle, has contribution both from the slope of the correlation between cell size and the amount of cell growth, and from the amount of noise characterizing the differences between cells that are initially the same size (Di Talia et al., 2007). It is therefore possible that a low noise adder can produce a lower CV than a higher noise sizer. This is reflected in the evolutionary paths of some of our simulations, which traverse from a noisy sizer to a less noisy adder (Figure 5). However, we anticipate even noisy sizers will be better than adders at controlling cell size in response to large deviations away from the steady state distribution. This is because sizers will always return the cell size to be within the steady state distribution within a cell cycle. We note that these generic results of how sizers and adders can govern cell size homeostasis can be derived from more traditional analytical methods (Barber et al., 2017; Willis et al., 2020). However, our evolution simulations are particularly useful because the molecular networks that evolved give non-trivial insights into how the observed size homeostasis dynamics can be regulated (e.g. via a Mixed Feedback Loop or using a system close to criticality). They are also suggestive of evolutionary pathways: despite different evolutionary modalities and control types, a natural step in many of our simulated evolutions is a system with strong sizers at very small volume only (Figures 5 and 6). This is practically reflected in a strongly negative slope on the very left side of the $\u0394V_{Cycle}$ plots, and a positive slope at higher volume corresponding to timers (Figures 5B and 6E). Similar non-monotonicity of $\u0394V_{Cycle}$ has been identified in models of various realism and complexity (Chandler-Brown et al., 2017; Delarue et al., 2017) and we provide here an evolutionary explanation for such an effect. We thus predict that this will be observed in systems where CV at birth does not need to be tightly controlled.\n\nIn the selection of a size controlling G1 network followed by a timer in S/G2/M, we observed a prevalence of adders that is consistent with the prevalence of adders reported in the literature. While fewer in number, sizers have also been observed. That the most accurate sizers have been observed in the fission yeast S. pombe (Fantes, 1977; Sveiczer et al., 1996; Wood and Nurse, 2015), and that this organism performs cell size control at G2/M rather than at G1/S led us to explore the effect of cell cycle structure on the evolution of cell size control. We found that controlling cell size later in the cycle in S/G2/M biases evolution away from adders and towards sizers. In retrospect, this result can be rationalized since any size deviations incurred earlier during the timer period can be compensated for by the end of the cycle with the sizer. However, when the order is inverted, any size deviations escaping a G1 control mechanism would only be amplified by exponential volume growth during the S/G2/M timer period. A second recent case exhibiting sizer control was found in mouse epidermal stem cells, which exhibit a greatly elongated G1 phase and a relatively short S/G2/M phase (Mesa et al., 2018; Xie and Skotheim, 2020). We found that if we increased the relative duration of G1 in our simulations by shortening the S/G2/M timer, we also see a bias towards sizer control. In essence, by extending G1 to a larger and larger fraction of the cell cycle the control system is gradually approaching a size control taking place at the end of the cell cycle, that is, an S/G2/M size control. Taken together, these simulations suggest the principle that having size-dependent transitions later in the cell cycle selects for sizers, while having such transitions earlier selects for adders.\n\nIn addition to identifying cell cycle structural features that canalize evolution towards sizers and adders as described above, we also observed an intriguing mechanism relying on molecular fluctuations. In this case, small cells would trigger an abnormally long G1 that would result in very large cells that decrease in size through a series of rapid cell divisions. This type of size control is reminiscent of that found in the green algae Chlamydomonas where a series of rapid, size-reducing cell divisions cease when cells go below a target size (Heldt et al., 2020). In our case, small size results in larger concentration fluctuations due to Poisson noise in the number of molecules. These concentration fluctuations, when large enough, are then able to trigger a burst of G1/S inhibitor that leads to an extended G1 phase and massive cell size growth before another series of rapid cell divisions is initiated (Figure 6). Interestingly, the system thus performs statistical size control over many generations. Intriguingly, this size control mechanism exhibits hallmarks of self-organized criticality (SOC). Just like adding grains of sand to a pile eventually triggers avalanches, the consistent decrease of cell size in the rapid division cycles eventually triggers a greatly extended G1 phase. To our knowledge, this is the first example where self-organized criticality is obtained in artificially evolved models of gene networks performing a well-defined function and is consistent with the idea that evolution of complex systems can favor the emergence of critical processes.\n\n## Materials and methods\n\n### Mathematical formalism\n\nTo model gene networks, we follow a standard ODE based formalism, where we simulate dynamics of the concentrations of proteins. We use Hill functions for transcriptional interactions, and standard mass action kinetics for protein-protein interactions. We also assume that all proteins are degraded at a constant rate. For most of the simulations presented in the paper, we use deterministic ODEs for simplicity. Importantly, cell-to-cell variability arises from the precise timing of cell cycle progression events. This allows for a natural way to generate noise on cell volume that should then be compensated for by the evolved network. In the last part of the paper, we explicitly include Langevin noise for biochemical reactions that are modeled using a classical tau-leaping formalism (Gillespie, 2007). Thus, each biochemical reaction takes place with a rate that corresponds to the deterministic rate, to which we add one white Gaussian noise with a variance equal to that rate. For example, given a deterministic biochemical rate $k$ and a time interval of size $\u0394t$, we consider a tau-leaping change of $k\u0394t+N(0,k\u0394t)$ where $N(0,k\u0394t)$ is a random gaussian variable of mean 0 and variance $k\u0394t$.\n\nVolume influences protein dynamics in three ways. First, protein production rates are generally proportional to cell volume so that proteins reach and maintain a constant concentration that is independent of the cell volume (Chen et al., 2020; Elliott and McLaughlin, 1978; Newman et al., 2006; Swaffer et al., 2021). We note that we are not allowing the cell to employ proteins such as Whi5 in budding yeast whose production is independent of cell size so that its concentration is a direct readout of cell size (Schmoller et al., 2015; Swaffer et al., 2021). We chose to do this because we want to explore how cell size control can be done by a network with multiple feedbacks rather than just the concentration of a single protein with a special dedicated synthesis mechanism. Thus, the only deterministic influence of volume on concentration dynamics is on the dilution rate, which is proportional to the cell growth rate $\\lambda(V)$ (see details in Appendix 1). At cell division, we also assume that proteins are equally partitioned between the daughter cells, that is, the concentration is the same before and after division. Note that we scale all our variables so that a concentration of one arbitrary unit corresponds roughly to 1000 proteins in a 100fL cell (Milo et al., 2010). Additionally, we scale the time variable so that 1 arbitrary time unit corresponds roughly to 30 min (Di Talia et al., 2007).\n\nIn this study, we chose a hierarchical way of introducing noise in the system, starting with the biggest contributing factor and incrementally adding additional sources of noise in subsequent analyses. All simulations presented include noise (stochastic control of G1/S transition and timing of S/G2/M, see below) in the cell cycle phases, whose CV has been found to be as high as 50% (Di Talia et al., 2007). Then, we introduced protein production noise via Langevin noise because the CV of regulatory protein concentrations is typically 20\u201330% (Newman et al., 2006). Importantly, the cell volume also contributes to stochastic effects, which are larger in smaller cells with fewer molecules. Thus, for stochastic simulations, we include a multiplicative $\\frac{1}{\\sqrt{V}}$ contribution to the added Gaussian noise term (see more complete description in the Appendix 1).\n\nWe also checked that our results are largely invariant when adding other sources of noise (see Appendix 1\u2014figures 5\u20137). In these simulations, we also included noise in cell growth rate (CV ~15%; e.g. Di Talia et al., 2007), and in mass partitioning at cytokinesis (CV ~10%; e.g. Zatulovskiy et al., 2020).\n\n### Evolutionary procedure\n\nTo evolve networks regulating cell size, we use the $\\phi$-evo software (Henry et al., 2018) with a modified numerical integrator accounting for volume dynamics and volume dependencies as described above (Figure 1B). $\\phi$-evo simulates the Darwinian evolution of a population of gene networks. A network is encoded with the help of a bipartite graph connecting biochemical species (typically proteins) and interactions between them (we use a custom-made Python library). Networks are converted into an ensemble of stochastic differential equations using a Python to C interpreter. This code is then compiled and integrated on the fly to compute the behavior of the networks.\n\nEach selection step in the algorithm is referred to as an epoch rather than the more commonly used term generation because we use the term generation to refer to cell divisions in the simulations. At each epoch of the algorithm, each gene network is simulated, and its fitness computed. Based on the fitness function(s) (see below), half of the networks are selected and duplicated, while the other half is discarded to maintain a constant population size. The duplicated networks are then randomly mutated. From the most to least probable, mutations consist in random changes of parameters of the network, random removal of interactions, and random additions of interactions or new proteins. Absolute mutation rates are adjusted as a function of the number of evolutionary epochs so that all networks in a population are mutated on average once per epoch. This implements a numerical equivalent of the biological Drake\u2019s rule that mutation rates adjust with genome size (Lynch, 2007). Practically, this prevents the known phenomenon of code-bloating in evolutionary simulations (Foster, 2001) and also means that the total number of epochs is a good proxy of the number of mutations (in random directions) needed to evolve the best networks. All of this is easily made with our customized Python library encoding networks. For more details on technical aspects and implementations of the $\\phi$-evo software, we refer the reader to Henry et al., 2018.\n\nRealistic evolutionary processes select for multiple phenotypes in parallel. While trade-offs between those phenotypes are non-trivial, it has been observed that phenotypes typically define an evolutionarily Pareto front (Shoval et al., 2012; Warmflash et al., 2012). We thus perform network selection using a Pareto mode (Warmflash et al., 2012), in which two distinct fitness functions are computed. During the selection step, networks are first Pareto ranked. For example, consider two networks A and B and two fitness functions f1 and f2. f1A refers to the fitness of network A calculated with function f1. Assuming fitness functions are to be maximized, we say network A Pareto-dominates network B if both f1A > f1B and f2A \u2265 f2B. Rank 1 networks are networks which are not dominated by any other networks, Rank 2 networks are networks dominated only by Rank 1 networks, and Rank 3 networks are only dominated by Rank 1 and Rank 2 networks and so on. The algorithm then selects half of the population of Rank 1 networks using a fitness sharing algorithm to maximize population diversity (see details in Warmflash et al., 2012). One advantage of Pareto selection is the increased flexibility of the evolutionary process. Multiple fitness functions can provide different optimization paths in parameter space, which prevents the selection process from getting stuck in a local optimum of a single fitness function. We also perform a few simulations with only one fitness function, in which case networks are simply ranked based on their fitness.\n\nWe impose two evolutionary selection pressures in the form of two fitness functions. The first fitness function is simply the number of cell divisions during a long period, which we call $N_{Div}$ . This is consistent with the classical definition of fitness as optimizing the number of offspring and is to be maximized by the algorithm. The second fitness function is the coefficient of variation of the volume distribution at birth for those $N_{Div}$ generations, which we call $CV_{Birth}$ and is to be minimized by the algorithm. This penalizes broad distributions of volume at birth, which are detrimental to cell size homeostasis, which is what we aim to examine here. We further imposed fitness penalties to prevent way too small or too big cells, see Appendix 1. There, we also study alternative fitness functions, such as least-square residual function to minimize volume variation about a target size, and the fitted slope of the amount of volume added at each cycle to be minimized to drive models toward being a sizer.\n\n### Varying cell cycle structure\n\nWe also ran evolutionary simulations with different cell cycle structures. For evolutionary simulations where the G1/S transition was controlled by the concentration of $[I]$ , we simply change the probability to pass the G1/S transition to depend on concentration $[I]$ instead of its quantity $I$. For evolutionary simulations with a cell cycle structure similar to that found in the fission yeast S. pombe, we invert the cell cycle network structure. In this case, $I$ quantity controls division and the Switch is turned on for a fixed amount of time in G1. In terms of the relaxation oscillator, this means that the left branch is now S/G2/M and the right branch is G1.\n",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "2a920af2-410f-4199-af13-36aaa8777e33",
+      "submission_id": "08a35fb2-c067-446b-aaa4-fa74caa9010e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, https://ror.org/03gf8rp76 National Centre for Biological Sciences\u00ad\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79919.sa0](https://doi.org/10.7554/eLife.79919.sa0)\n\nThis paper develops evolutionary simulations to identify the type of molecular networks that can give rise to size control. The authors propose an evolutionary framework to find which factors select for particular mechanisms in cell size control. They show that the evolution of a specific cell size control mechanism is dependent on the cell cycle structure.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, https://ror.org/03gf8rp76 National Centre for Biological Sciences\u00ad\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79919.sa1](https://doi.org/10.7554/eLife.79919.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evolution of cell size control is canalized towards adders or sizers by cell cycle structure and selective pressures\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Kabir Husain (Reviewer #1); Shiladitya Banerjee (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers liked many aspects of the manuscript but have suggested a number of revisions, which include showing the robustness of the results, a better justification of the assumptions/methods, a comparison with existing data and mathematical approaches, including clarification of how the evolutionary approach differs from other approaches, and a more careful rewording of the conclusions. Please address all of the reviewer comments (see below).\n\nReviewer #1 (Recommendations for the authors):\n\nFigures and text:\n\nI think the paper would be greatly strengthened by less dense Figures. As it stands, I found it difficult to figure out what the main points are. As an example: the main point of Figure 5, as I understand it, might be best served by a time-series plot of Slope \\\u0394-V_{cycle}, or some other summary statistic that shows the transient evolution of a sizer. Otherwise, this point is buried in the legend of panels B, E, and H.\n\nOn feedback control mechanisms:\n\nThere are no statistical summaries of the simulations described in Figures 2 and 3 of the main text -- Only Figure 4 (whose simulations are initialised with the evolved Model A1) contains statistics on evolved networks. If I understand the text, all the simulations resulted in topologically similar networks -- is this the case. What is the range of CV_births, and does the achieved CV_birth depend on the molecular implementation of the feedback control (PPI, dimerisation, transcriptional control), or do these molecular details affect the \\\u0394-V_{slope}?\n\nOn adders vs sizers (Figures4, 5, and lines 557 to 561 in the discussion):\n\nFigure 4, 5, and the text around it, suggest that the CV_{birth} for adders is lower than that of sizers, in contrast to the common view that sizers are better at controlling cell size. I wonder if the distinction is between the *steady-state CV_{birth}* and the time taken to return to equilibrium from a large 'perturbation' of the cell size?\n\nIf it is true that adders are better at the former, but sizers are better at the latter, then would this also explain why cell size control late in the cycle tends to favour sizers? The intuition perhaps being that size control later in the cycle needs to deal with perturbations that occurred earlier in the cell cycle (as suggested by Lines 557 to 561)?\n\nReviewer #2 (Recommendations for the authors):\n\nWe have the following specific comments and recommendations for the authors.\n\n1. Lines 74-77: This is the one piece of the introduction where readers unfamiliar with the eukaryotic cell cycle would be confused. Including background information about G1/S and S/G2/M phases would help expand the target audience of the paper since the techniques discussed therein are widely applicable.\n\n2. Lines 101-106: The \"poisson rate that corresponds to the deterministic rate\" is unclear. These two sentences could be elaborated on further since significant prior knowledge of the reader is currently assumed.\n\n3. Line 115: \"While size-dependent growth mechanisms exist and do support size homeostasis\" \u2013 This assertion should be backed up with relevant citations.\n\n4. Lines 209-210: \"Upon passing the G1/S transition, we assume cells are committed to division and there is a fixed time delay before they divide thus modeling S/G2/M as a timer.\" \u2013 What motivates this assumption? A citation or further discussion is warranted.\n\n5. Line 285: This would be a good place for a citation to direct readers to sources discussing concentration vs quantity sensing. Note that in the bacterial size control literature, quantity sensing of division initiators has been shown to regulate adder behavior (Si et al., Curr Biol 2019).\n\n6. Figure 1B: The dashed grey line is defined afterwards in 1C. It would be good to include it in the defined interactions here instead. In addition, the clarity of this schematic would be better with a line showing how the final network becomes the initial network in the next epoch.\n\n7. Lines 301-302: \"\u2026 its production is completely shut down in S/G2/M\" does not come through clearly in the associated figure. You should clearly describe the chosen dynamics for the inhibitor protein in different phases of the cell cycle, and justify why the choices are different from known inhibitors such as Whi5.\n\n8. Figure 2A: The message of this figure is not presented clearly. There is clustering with high CV volume and low N, another with negligible CV volume and widespread N division, and then the circled optimum. However, the trajectory of how a network evolves is not clear in this picture. Do all of them converge to the optimum eventually? Do they move to low CV before high N division or at the same time? How many epochs does it take to cross the large gap between the clustered networks and the optimum? Recommend somehow indicating sample evolutionary trajectories in addition to the aforementioned clarifications to remedy this issue. Additionally, why are there no numerical values in the axes? This makes it very difficult to assess the degree to which original values have changed.\n\n9. Lines 309-322: This paragraph is somewhat confusing, in particular lines 314-316. The motivation for the control volume is unclear, especially in the physical sense of why a cell would use a non-physical volume to control a transition. While the idea makes sense later in the supplementary material, it needs to be clear from the very start that the goal here is that the control volume is a tool to examine how size at G1/S affects the cycle time.\n\n10. Figures 3A,3C: While intuitive, specifying the role of the dashed red line would improve clarity.\n\n11. Figure 3D: The predictions for the cell cycle scatter appear much stronger than the scatter itself. Can you comment on this?\n\n12. Figure 3B, D: Compare how the model predictions compare with binned means for the scatter.\n\n13. Lines 357-361: The numbers of 120 simulations and 500 epochs appear to be chosen arbitrarily. Why did you choose these initial conditions, and are the results of your paper robust with respect to higher/lower values? If so, including that point here would strengthen the argument, especially with a brief discussion on the lower limit. In addition, roughly how long in time is an epoch? The speed at which evolution is occurring would be of interest to many readers.\n\n14. Figure 4: 4B is created to resemble S. pombe. Do the other panels have real-life analogies or are they arbitrarily chosen for qualitative representations of the discussed effects in the main text?\n\n15. Figures 2F, 2I, 5A, 5D, 5G, 6C: The second zoomed-in panel of 6C is essential to understand the inner-generational dynamics of your modeling. The first many-generation panel shows stability in V but fails to address the other variables and the multi-phase dynamics. The other figures (2F, 2I, 5A, 5D, 5G) would benefit greatly from either a similar treatment or just fewer generations. The stability can be shown with significantly fewer divisions than are currently used.\n\n16. Figure 5B: The \u0394V scatters for S/G2/M and the whole cycle could be grouped into two \u2013 a positive correlation and a negative correlation. A best fit to the entire scatter is misleading therefore and does not describe the correlation trend.\n\n17. Lines 539-542: Why is a one-step implementation of size control discarded? Surely a simpler control mechanism could be preferred naturally despite being a lesser theoretical interest in evolution simulations.\n\n18. Lines 793-794: In this paper, you consider parallels to organisms that divide asymmetrically, such as budding yeast. Have you run simulations considering asymmetric division? Surely that would impact cell size distribution and variability.\n\n19. Lines 794-795: Wouldn't disregarding one of the two daughter cells add a bias against faster dividing cells? I.e. if the number of divisions is one of your fitness functions, doesn't this method eliminate the natural advantage of a relatively larger population size for multi-cell level exponential growth? Also an issue at S130-132.\n\n20. Lines 801-802: How is the extraction of the nullcline performed?\n\n21. 829: Recommend providing the conversion from the arbitrary units used to physical values, here and all other figures.\n\n22. 838-839: Model A2 does not receive an explanation comparable to A1 in this figure; either move to supplemental materials or explain it clearly as well.\n\n23. Figures 6H, 6I, 6J: These subfigures are not very clear, together with captions for 6I and 6J that do not sufficiently explain to the reader how they are read. Why is the Burst Amplitude axis extended so far beyond the heatmap?\n\n24. S120-S121: How do these theta and n theta values come to be? Currently, it seems like they are chosen with no supporting reasoning or explanation.\n\n25. S239: V target missing a capital T.\n\n26. S328-S329: Need to use a left apostrophe rather than two right apostrophes for epoch and generation.\n\n27. Eq. (S18): Why do you minimize m+1 rather than just m?\n\n28. S406-S408: Why do you choose these interactions to include? How much of all biochemical interactions do they encompass together? Are there others that you are aware of that you are choosing to neglect, and why? Can you provide citations and/or an argument to motivate this choice? This is another crucial ansatz for your modeling that needs to be discussed more carefully.\n\n29. Supplementary Section 4: Translating the arbitrary units into physical values (when possible) would be immensely useful/helpful here.\n\n30. Figure S6E: Why does cut off just below 1 (here, and not in any other plots)?\n\n31. Since the model is generally applicable to any organism, comparisons to size control in bacterial cells (even qualitative) would be useful to widen the appeal. For example, could you predict why almost all bacterial cells (even evolutionary divergent ones) behave as adders? It has been shown that adder is regulated by threshold accumulation of an initiator protein that is produced at a rate proportional to cell volume, which your model could perhaps capture. Furthermore, many bacterial cells also exhibit biphasic size regulation during the cell cycle. It has been shown that Bacillus subtilis behave as sizers during the first phase, followed by a timer phase till division (DOI:10.1016/j.cub.2020.04.030). By contrast, Caulobacter crescentus cells implement a timer first, followed by an adder phase of size control (DOI:10.1038/nmicrobiol.2017.116). Both these organisms behave as approximate adders overall.\n",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5be4f97c-07ca-4ea2-9f07-a1f6decc7b9a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C1",
+      "claim": "Cell size is controlled to be within a specific range to support physiological function.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size is controlled to be within a specific range to support physiological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cell size control supported by established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "88394225-4d9b-415a-9403-0daedd1335df",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C2",
+      "claim": "Cells use diverse mechanisms ranging from 'sizers' to 'adders' to control their size.",
+      "claim_type": "EXPLICIT",
+      "source": "To control their size, cells use diverse mechanisms ranging from 'sizers', in which differences in cell size are compensated for in a single cell division cycle, to 'adders', in which a constant amount of cell growth occurs in each cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to known cell size control mechanisms in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "3bc50cfe-92e5-439e-9f84-c722f7466d00",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C3",
+      "claim": "In sizers, differences in cell size are compensated for in a single cell division cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "To control their size, cells use diverse mechanisms ranging from 'sizers', in which differences in cell size are compensated for in a single cell division cycle, to 'adders', in which a constant amount of cell growth occurs in each cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of sizer mechanisms based on established terminology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "1fc9f48a-767a-4902-8d98-a29b11a03c13",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C4",
+      "claim": "In adders, a constant amount of cell growth occurs in each cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "To control their size, cells use diverse mechanisms ranging from 'sizers', in which differences in cell size are compensated for in a single cell division cycle, to 'adders', in which a constant amount of cell growth occurs in each cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of adder mechanisms based on established terminology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "95fbe516-ad02-403e-a714-3a240b11c012",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C5",
+      "claim": "If the mechanism is based on a G1 size control and an S/G2/M timer, as found for budding yeast and some human cells, adders likely evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "If the mechanism is based on a G1 size control and an S/G2/M timer, as found for budding yeast and some human cells, adders likely evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the evolutionary simulations performed in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "edc3ad31-5003-44ef-82d3-1aded438a58b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C6",
+      "claim": "If the G1 phase is significantly longer than the S/G2/M phase, as is often the case in mammalian cells in vivo, sizers become more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "But, if the G1 phase is significantly longer than the S/G2/M phase, as is often the case in mammalian cells in vivo, sizers become more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the evolutionary simulations and observations about mammalian cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "9e392065-1491-4874-82d9-a1a7dd76562b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C7",
+      "claim": "Sizers evolve when the cell cycle structure is inverted so that G1 is a timer, while S/G2/M performs size control, as is the case for the fission yeast S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "Sizers also evolve when the cell cycle structure is inverted so that G1 is a timer, while S/G2/M performs size control, as is the case for the fission yeast S. pombe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by evolutionary simulations mimicking S. pombe cell cycle structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "3016137d-1dcd-4179-b917-acbe916d9235",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C8",
+      "claim": "For some size control networks, cell size consistently decreases in each cycle until a burst of cell cycle inhibitor drives an extended G1 phase much like the cell division cycle of the green algae Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "For some size control networks, cell size consistently decreases in each cycle until a burst of cell cycle inhibitor drives an extended G1 phase much like the cell division cycle of the green algae Chlamydomonas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the evolved networks showing this behavior in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "6eda2977-6506-4e5c-b4d5-8c46130c12e4",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C9",
+      "claim": "These size control networks evolved self-organized criticality.",
+      "claim_type": "EXPLICIT",
+      "source": "That these size control networks evolved such self-organized criticality shows how the evolution of complex systems can drive the emergence of critical processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of the evolved networks showing power-law distributions and critical behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "4e2456f0-45bd-4bfe-b09d-6e235cf7dd1a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C10",
+      "claim": "Cell size sets the scale of subcellular compartments, cellular biosynthetic capacity, metabolism, mechanical properties, surface-to-volume ratios, and molecular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size is fundamental to cell physiology and function because it sets the scale of subcellular compartments, cellular biosynthetic capacity, metabolism, mechanical properties, surface-to-volume ratios, and molecular transport (Chan and Marshall, 2010; Ginzberg et al., 2015; Neurohr et al., 2019; Zatulovskiy and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "6c978313-e110-49e7-87d3-cc965b2fda64",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C11",
+      "claim": "Cells within a particular type are generally uniform in size.",
+      "claim_type": "EXPLICIT",
+      "source": "While different types of cells vary enormously in size to perform their functions, cells within a particular type are generally uniform in size indicating that cell growth may be accurately coupled to division and differentiation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general observations in cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "24573797-75c9-4e50-814a-14f55237490a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C12",
+      "claim": "Cell growth is accurately coupled to division and differentiation processes.",
+      "claim_type": "EXPLICIT",
+      "source": "While different types of cells vary enormously in size to perform their functions, cells within a particular type are generally uniform in size indicating that cell growth may be accurately coupled to division and differentiation processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that cells within a type are uniform in size.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "1982346a-e303-4fd3-a0fe-8cca51b0d9f0",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C13",
+      "claim": "The molecules controlling cell division vary across the tree of life with the most striking differences separating eukaryotes and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "On a phenomenological level, there are many commonalities in how cells regulate their size even though the molecules controlling cell division vary across the tree of life with the most striking differences separating eukaryotes and bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of molecular differences across domains of life.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "97487c53-6266-4a82-8bf2-6d27368629b0",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C14",
+      "claim": "A 'sizer' has a slope of \u20131 so that all variation in cell mass at birth is compensated for in one cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "A 'sizer' has a slope of \u20131 so that all variation in cell mass at birth is compensated for in one cell cycle, whereas an 'adder' has a slope of 0 so that each cell adds the same amount of mass during the cell cycle regardless of initial size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on quantitative characterization of size control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b7aa047d-3d07-48f5-ac33-37c4b420ecdc",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C15",
+      "claim": "An 'adder' has a slope of 0 so that each cell adds the same amount of mass during the cell cycle regardless of initial size.",
+      "claim_type": "EXPLICIT",
+      "source": "A 'sizer' has a slope of \u20131 so that all variation in cell mass at birth is compensated for in one cell cycle, whereas an 'adder' has a slope of 0 so that each cell adds the same amount of mass during the cell cycle regardless of initial size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition based on quantitative characterization of size control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "fbade22f-40c6-4793-8aae-f2e00933621e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C16",
+      "claim": "In the case of an adder, control is weaker so that multiple cell cycles are required for a particularly large or small cell to return to the average cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of an adder, control is weaker so that multiple cell cycles are required for a particularly large or small cell to return to the average cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the definition and mathematical properties of adders.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "45d4b319-88f8-4ca4-a14c-f956ca3d7113",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C17",
+      "claim": "Fission yeast and mouse epidermal stem cells exhibit 'sizers'.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast and mouse epidermal stem cells exhibit 'sizers', and most bacteria, archaea, and cultured human cell lines exhibit behavior closer to adders (Cadart et al., 2018; Eun et al., 2018; Jun et al., 2018; Sveiczer et al., 1996; Westfall and Levin, 2017; Willis and Huang, 2017; Xie and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "f51bb474-b7c1-476d-b4cd-3e4e5bc9ccf2",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C18",
+      "claim": "Most bacteria, archaea, and cultured human cell lines exhibit behavior closer to adders.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast and mouse epidermal stem cells exhibit 'sizers', and most bacteria, archaea, and cultured human cell lines exhibit behavior closer to adders (Cadart et al., 2018; Eun et al., 2018; Jun et al., 2018; Sveiczer et al., 1996; Westfall and Levin, 2017; Willis and Huang, 2017; Xie and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "7dd73b22-2571-4a4a-9f9b-c9505450d0c9",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C19",
+      "claim": "Adders have been observed more often than sizers.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while diverse size control behaviors have been observed, adders have been observed more often than sizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "5901d312-cb7e-424b-b988-ecfcdd11219b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C20",
+      "claim": "Evolutionary algorithms are a class of machine learning techniques aiming at mimicking evolutionary processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary algorithms are a class of machine learning techniques aiming at mimicking evolutionary processes (Crombach, 2021; Fran\u00e7ois, 2014; Fran\u00e7ois and Hakim, 2004; Xiong et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "249d0e64-a6a2-4818-9619-089556f2bd7b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C21",
+      "claim": "Solutions found by evolutionary algorithms are constrained by their evolutionary paths followed and present similar characteristics to biologically evolved systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, solutions found by evolutionary algorithms are constrained by their evolutionary paths followed and present similar characteristics to biologically evolved systems (Schaerli et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "6798087e-db8a-4928-a070-b17adc82628b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C22",
+      "claim": "Cell size is regulated through the cell cycle control network that governs transitions from one phase of the cell cycle to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size is regulated through the cell cycle control network that governs transitions from one phase of the cell cycle to the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of cell cycle regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c997baad-9042-4fb0-ae88-88f3bd2a15ed",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C23",
+      "claim": "The division cycle can be broken up into distinct phases that are characterized by different molecular activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The division cycle can be broken up into distinct phases that are characterized by different molecular activities (Morgan, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a cell cycle textbook.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "f1bb62b2-7069-4799-8ffc-1b3f5fb2bd8f",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C24",
+      "claim": "Size control in general has been associated with either the G1/S transition or mitosis at the end of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because size control in general has been associated with either the G1/S transition or mitosis at the end of the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from cell cycle studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "d70642aa-b5f5-4f76-b3ae-a9e6f9f29919",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C25",
+      "claim": "Simulations in which size control takes place in G1 phase converge toward an adder mechanism for the entire cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations in which size control takes place in G1 phase converge toward an adder mechanism for the entire cell cycle and identified an active quantity sensing mechanism similar to dilution-based mechanisms previously identified experimentally (Chen et al., 2020; Qu et al., 2019; Schmoller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "062a7963-600a-4511-a473-cf1d81851a1e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C26",
+      "claim": "The evolved networks identified an active quantity sensing mechanism similar to dilution-based mechanisms previously identified experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations in which size control takes place in G1 phase converge toward an adder mechanism for the entire cell cycle and identified an active quantity sensing mechanism similar to dilution-based mechanisms previously identified experimentally (Chen et al., 2020; Qu et al., 2019; Schmoller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data and citations to experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "33c1e889-a8d4-4055-ab1c-00692aa69b88",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C27",
+      "claim": "A relatively shorter S/G2/M phase favors sizer mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A relatively shorter S/G2/M phase favors sizer mechanisms, while longer S/G2/M phases favor adders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "12bd366e-2c7d-4452-9344-ea1f794246b0",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C28",
+      "claim": "Longer S/G2/M phases favor adders.",
+      "claim_type": "EXPLICIT",
+      "source": "A relatively shorter S/G2/M phase favors sizer mechanisms, while longer S/G2/M phases favor adders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "4662843d-890a-40b4-b990-4b1e070e1be1",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C29",
+      "claim": "Inverting the model so that cell size controls S/G2/M and G1 is a timer, like in fission yeast, results in more sizer-like control.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inverting the model so that cell size controls S/G2/M and G1 is a timer, like in fission yeast, results in more sizer-like control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b97643c7-b231-4124-a82e-bef5c2768b3d",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C30",
+      "claim": "Adders arise when cell size is controlled at a point intermediate in the cell cycle, like the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we anticipate adders arise when cell size is controlled at a point intermediate in the cell cycle, like the G1/S transition, while sizers will appear when cell size regulates a point later in the cell cycle, as is the case when G1 is proportionally longer, or control takes place at the transition to mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "ae56ced6-7eca-416e-bb56-c1eec0c9d235",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C31",
+      "claim": "Sizers will appear when cell size regulates a point later in the cell cycle, as is the case when G1 is proportionally longer, or control takes place at the transition to mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we anticipate adders arise when cell size is controlled at a point intermediate in the cell cycle, like the G1/S transition, while sizers will appear when cell size regulates a point later in the cell cycle, as is the case when G1 is proportionally longer, or control takes place at the transition to mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "9c66e1d7-2d81-4a3c-aa1a-ac5a85a65126",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C32",
+      "claim": "The evolved network implements a simplified relaxation oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "Schematic of our seed network topology implementing a simplified relaxation oscillator.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "f0dd0fd2-3e35-4a9e-a6cc-3364999373b8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C33",
+      "claim": "Cell cycle state is encoded via a binary switch called 'S/G2/M Switch' that is 0 in G1 and 1 in S/G2/M.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle state (G1 or S/G2/M) is encoded via a binary switch called 'S/G2/M Switch' that is 0 in G1 and 1 in S/G2/M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "89cb819d-4d2c-4a41-8a8b-d382fc6b4d62",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C36",
+      "claim": "S/G2/M is modeled as a pure timer of fixed duration with some uniform noise.",
+      "claim_type": "EXPLICIT",
+      "source": "After progressing through G1/S, cells enter S/G2/M which we model as a pure timer of fixed duration with some uniform noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c3fb9d5b-d34f-4d7f-bd52-f647a973afef",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C37",
+      "claim": "Cell volume grows exponentially and is divided symmetrically following mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell volume grows exponentially and is divided symmetrically following mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "37f71273-69ad-4b71-b718-5024106e757e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C38",
+      "claim": "The initial quantity sensing oscillator does not perform size control and instead results in unstable growth where size deviations are amplified at each generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the network needs to evolve some other interactions and/or parameters to go beyond a simple G1 inhibitor driven by production in S/G2/M to create a viable cell lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results shown in Appendix 1\u2014figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "e28f17a3-8256-4657-aba5-49b01a3737bb",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C40",
+      "claim": "At some point in evolution (around epoch 700 for this particular simulation), some weak control mechanism suddenly evolves, preventing cells from becoming too big without imposing a tight control on the average volume.",
+      "claim_type": "EXPLICIT",
+      "source": "At some point in evolution (around epoch 700 for this particular simulation), some weak control mechanism suddenly evolves, preventing cells from becoming too big without imposing a tight control on the average volume (see also Figure 5 for an explicit example of how this is done).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the evolutionary trajectory shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "fdfb2adf-e4ef-402a-825b-4096c2ee2cd3",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C47",
+      "claim": "In budding yeast, the Whi5 protein is passively diluted in G1 to increase the stochastic rate of progression through the G1/S transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, the Whi5 protein is passively diluted in G1 to increase the stochastic rate of progression through the G1/S transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of budding yeast cell cycle control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b3ef3630-93a6-4d65-8b65-291b34fa5d41",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C48",
+      "claim": "An active titration mechanism is required to obtain G1 size control in the evolved network setup.",
+      "claim_type": "EXPLICIT",
+      "source": "This is precisely why an active titration mechanism is required to obtain G1 size control in our setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "7ffbe35d-8b0f-44e9-af8d-b4d661bd2ea1",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C51",
+      "claim": "Model A2 exhibits overall a weak adder behavior similar to that found in Model A1.",
+      "claim_type": "EXPLICIT",
+      "source": "If we perturb cell size to examine the dynamics of the return to steady state and look at the added volume during the cell cycle, we again see overall a weak adder behavior similar to that found in Model A1 (Figure 2I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation data in Figure 2I-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "e8759e21-07fa-40ce-997c-21aca3b8edb8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C53",
+      "claim": "Model A2 behaves as a sizer for volumes smaller than the equilibrium volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Model A2 behaves as a sizer for volumes smaller than the equilibrium volume.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "70793263-2e96-4a12-8bb1-6b39e5ee46b8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C54",
+      "claim": "At higher volumes Model A2 behaves more like an adder/timer similar to Model A1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at higher volumes it behaves more like an adder/timer similar to Model A1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "50c50faf-cd00-497f-aaae-862768f4d167",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C56",
+      "claim": "Similar behavior was observed experimentally in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar behavior was observed experimentally in budding yeast (Chandler-Brown et al., 2017; Delarue et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "8c67a30c-f28e-4114-b645-e9c2bc60659e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C57",
+      "claim": "Both Models A1 and A2 approximate an adder near the equilibrium size, but their behavior differs further from equilibrium where for smaller volumes, Model A1 is still an adder while Model A2 is a sizer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both Models A1 and A2 approximate an adder near the equilibrium size, but their behavior differs further from equilibrium where for smaller volumes, Model A1 is still an adder while Model A2 is a sizer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "d323f304-2c6c-4bed-abb8-b5fabf22b88c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C58",
+      "claim": "The evolutionary algorithm selects networks that implement adders rather than sizers near the equilibrium size.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, our evolutionary algorithm selects networks that implement adders rather than sizers near the equilibrium size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed across multiple evolutionary simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "81f3b7f8-6926-437f-903f-c515d618f931",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C59",
+      "claim": "This is surprising because sizers are in principle better than adders at controlling cell size and reducing the CV of the size distribution at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "This is surprising because sizers are in principle better than adders at controlling cell size and reducing the CV of the size distribution at birth, which is one of our fitness functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the theoretical properties of sizers versus adders.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "7d9de10c-732b-417f-bd5e-b53b78c3341c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C60",
+      "claim": "The best studied, and highly accurate sizer, is found in the fission yeast S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "The best studied, and highly accurate sizer, is found in the fission yeast S. pombe (Fantes, 1977; Sveiczer et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "fc9c1f52-16bf-451a-9d05-bf6a294ba301",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C61",
+      "claim": "In contrast to budding yeast and human cells, where the size control takes place largely in G1 phase, fission yeast exerts size control later in the cell cycle at the G2/M transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to budding yeast and human cells, where the size control takes place largely in G1 phase, fission yeast exerts size control later in the cell cycle at the G2/M transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of cell cycle control in different organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "0fbb0d9a-8182-41eb-b7ac-ad754e9e4a19",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C62",
+      "claim": "When the cell cycle structure is inverted so that G1 is a timer and S/G2/M is a sizer like in S. pombe, more sizer-like networks evolve than in the control experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "When the cell cycle structure is inverted so that G1 is a timer and S/G2/M is a sizer like it is in the fission yeast S. pombe, we found that more sizer-like networks evolve than in the control experiment (Figure 4B, Welch's t-test on agglomerated data p=0.03).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 4B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "297c4bcd-39d5-4179-8548-82650c357112",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C63",
+      "claim": "Having a network structure like the fission yeast S. pombe promotes sizers, while having the size control portion of the cell cycle earlier, as in the budding yeast S. cerevisiae, promotes adders.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that having a network structure like the fission yeast S. pombe promotes sizers, while having the size control portion of the cell cycle earlier, as in the budding yeast S. cerevisiae, promotes adders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results comparing different cell cycle structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "bb82b27c-36c4-4b7f-b730-754e60bc5fab",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C64",
+      "claim": "Performing simulations using cell cycle network structures of budding and fission yeast results in the evolution of size control mechanisms that reflect those that are naturally occurring.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, performing simulations using cell cycle network structures of these two yeasts results in the evolution of size control mechanisms that reflect those that are naturally occurring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of simulation results with experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "2dba2796-e390-4e39-b108-31274cf2dfc2",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C65",
+      "claim": "A recent study examining mouse epidermal stem cells growing and dividing in the skin found both a strong sizer and that this sizer was largely due to the size-dependent regulation of G1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent study examining mouse epidermal stem cells growing and dividing in the skin found both a strong sizer and that this sizer was largely due to the size-dependent regulation of G1 (Mesa et al., 2018; Xie and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "58af44de-5a8d-4fef-9c9d-446531c5e1c5",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C66",
+      "claim": "The S/G2/M phase of the cell cycle is similar in duration in cultured cells and the epidermal stem cells in vivo at ~12 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "While the S/G2/M phase of the cell cycle is similar in duration in cultured cells and the epidermal stem cells in vivo at ~12 hr, the G1 phase extends ~fivefold from ~10 hr in culture to ~50 hr in vivo (Cadart et al., 2018; Xie and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "0bba1579-ed26-4df2-b498-956028dd9ef0",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C67",
+      "claim": "The G1 phase extends ~fivefold from ~10 hr in culture to ~50 hr in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While the S/G2/M phase of the cell cycle is similar in duration in cultured cells and the epidermal stem cells in vivo at ~12 hr, the G1 phase extends ~fivefold from ~10 hr in culture to ~50 hr in vivo (Cadart et al., 2018; Xie and Skotheim, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "eadd63d0-2a4d-4e23-a7f7-69d56ee6fd86",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C68",
+      "claim": "The overall size control behavior can be dominated by the relatively longer cell cycle phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the hypothesis that the overall size control behavior can be dominated by the relatively longer cell cycle phase, as is likely the case for the G1 phase of epidermal stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observations about epidermal stem cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c0cdada9-8669-4fe3-bab9-8a752dd8e28a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C69",
+      "claim": "When a timer in S/G2/M is relatively shorter compared to G1, more sizer-like behavior can evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "When a timer in S/G2/M is relatively shorter compared to G1, we generally see more sizer-like behavior can evolve (Figure 4C, Welch's t-test on agglomerated data p=4 x 10\u20133), while when it is relatively longer, we see more adder-like or even timer-like behavior (Figure 4D, Welch's t-test on agglomerated data p<10\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 4C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "316cc09d-a05b-4458-987d-175dd492080a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C70",
+      "claim": "When the S/G2/M timer is relatively longer compared to G1, more adder-like or even timer-like behavior evolves.",
+      "claim_type": "EXPLICIT",
+      "source": "When a timer in S/G2/M is relatively shorter compared to G1, we generally see more sizer-like behavior can evolve (Figure 4C, Welch's t-test on agglomerated data p=4 x 10\u20133), while when it is relatively longer, we see more adder-like or even timer-like behavior (Figure 4D, Welch's t-test on agglomerated data p<10\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the simulation results in Figure 4D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c8ea8a56-c04c-4df7-a1b8-87bcdabe553b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C71",
+      "claim": "Increasing the noise in the timer progressively reduced the amount of size control done by the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the noise in the timer progressively reduced the amount of size control done by the network (Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in simulation results in Appendix 1\u2014figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "6cad8bcb-5399-49f3-98ee-2ddd0cbd0035",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C72",
+      "claim": "The fixed duration of S/G2/M allows the system to accurately reset protein concentrations for the subsequent cell cycle to promote accurate G1 control.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because the fixed duration of S/G2/M allows the system to accurately reset protein concentrations for the subsequent cell cycle to promote accurate G1 control (Willis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b046102f-a416-4158-b71c-d36cd7fc8bc7",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C73",
+      "claim": "The structural features of the cell cycle are important for determining what type of size control ultimately evolves.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our simulations show how the structural features of the cell cycle are important for determining what type of size control ultimately evolves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "0a9f2642-9c21-423c-bb67-7705cfe30a4b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C74",
+      "claim": "G1 control is more conducive to the evolution of adders, while S/G2/M control is more conducive to sizers.",
+      "claim_type": "EXPLICIT",
+      "source": "G1 control is more conducive to the evolution of adders, while S/G2/M control is more conducive to sizers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "e4edbba3-26ea-4ca8-9fee-248f1faa5905",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C75",
+      "claim": "Size control can be dominated by the cell cycle phase of longest duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, size control can be dominated by the cell cycle phase of longest duration and is modulated by the specific selection criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "858bd279-1641-4b50-9a31-46506d960db8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C77",
+      "claim": "In the early stages of evolution, small cell size triggers an overshoot to a large cell size, which is then reduced through a series of rapid divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the early stages of the evolution (epoch 650), we typically see dynamics where small cell size triggers an overshoot to a large cell size, which is then reduced through a series of rapid divisions (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the evolutionary trajectory in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "fd9cb8a3-144d-4bf8-ae28-8d5635f00475",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C78",
+      "claim": "Because of the small-size-triggered overshoot, the system behaves more like a sizer when the average behavior is analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this small-size-triggered overshoot, the system behaves more like a sizer when the average behavior is analyzed (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "673fdcf7-fc14-41e4-ac01-220e8735d13a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C79",
+      "claim": "The high degree of variability in the cell cycles leads to a broad distribution of volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the high degree of variability in the cell cycles also leads to a broad distribution of volumes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "1e2a93f8-1280-4d16-9e81-09a5e23f2d36",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C80",
+      "claim": "The variability in volume is attenuated in later epochs where there are fewer and smaller volume overshoots triggered by small cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability in volume is attenuated in later epochs where there are fewer and smaller volume overshoots triggered by small cell size (Figure 5D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "18cb98e1-1b94-4980-84b7-a6d0f58f2b5c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C82",
+      "claim": "A two-step evolutionary pathway exists: first, a strong but imprecise sizer mechanism evolves, then the variability is reduced by attenuating the strength of the size control response.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these analyses suggest a two-step evolutionary pathway, consistent with the evolutionary dynamics first seen in Figure 2A. First, a strong but imprecise sizer mechanism evolves where, because of noise in the system, small variations in volume lead to a dramatic overcorrection and overshoot of the target volume. The variability in volume produced by this overshoot is then reduced by attenuating the strength of the size control response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the evolutionary trajectories shown in Figures 2A and 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "7e1bd9c6-db1d-4fa1-b659-bc1830dd3141",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C85",
+      "claim": "If some aspects of protein synthesis and degradation are subject to Poisson fluctuations, such fluctuations produce larger concentration fluctuations in smaller cells.",
+      "claim_type": "EXPLICIT",
+      "source": "If some aspects of protein synthesis and degradation are subject to Poisson fluctuations, we expect such fluctuations to produce larger concentration fluctuations in smaller cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical principles of Poisson processes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "37c3188b-2842-4249-8a68-3d04476fe913",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C87",
+      "claim": "If the cell could sense the size of concentration fluctuations, it would be able to harness the cell size-dependence of such stochastic fluctuations to regulate cell division and control cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, if the cell could sense the size of concentration fluctuations in some way, it would be able to harness the cell size-dependence of such stochastic fluctuations to regulate cell division and control cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the size-dependence of molecular noise.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "8346eab4-b923-4ee5-b889-36044d0529ef",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C91",
+      "claim": "The low volume regime occasionally leads to a considerable increase in G1 length and a correspondingly very large cell at division.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the low volume regime occasionally leads to a considerable increase in G1 length and a correspondingly very large cell at division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the dynamics of Model B shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "d6ef4ff3-5d6d-4b4e-abc2-6a92e069251c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C92",
+      "claim": "The probability distribution of cell cycle durations follows a power law.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the probability distribution of cell cycle durations follows a power law (Figure 6F), which is due to the very broad distributions of G1 duration at lower cell volumes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6F with a fitted scaling exponent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c99552e1-3a59-41bb-8ace-ebde4ea48d75",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C93",
+      "claim": "The evolved size control network exhibits self-organized criticality (SOC).",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that our evolved size control network exhibits SOC based on several observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the power-law distributions and the feedback between order and control parameters.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "16b86c0f-ca11-44e7-8ef3-1deddbe78f79",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C94",
+      "claim": "SOC is defined as a system where an order parameter feeds back on a control parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "SOC is defined as a system where an order parameter feeds back on a control parameter (Sornette et al., 1995; Vidiella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "c3281b9a-7b4a-4ef4-86e1-37c242de7e09",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C95",
+      "claim": "Evolution tuned the system to be near a bifurcation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, evolution tuned the system to be near a bifurcation (Figure 6I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6I and inferred from the dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "1a0db7ab-0067-4b49-bce4-b2bb315dfd7e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C98",
+      "claim": "The last decade saw an explosion of time lapse microscopy studies measuring how cells control their size.",
+      "claim_type": "EXPLICIT",
+      "source": "The last decade saw an explosion of time lapse microscopy studies measuring how cells control their size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by the citations throughout the paper.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "ba598f29-87fc-4358-a316-c8296913949b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C99",
+      "claim": "These studies revealed diverse phenomena that are characterized by the correlation between cell size at birth and cell size at division.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed diverse phenomena that are characterized by the correlation between cell size at birth and cell size at division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the literature cited throughout the paper.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "69cf0e0d-5556-40b5-9007-89bcef8c2da7",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C100",
+      "claim": "The evolved network implements an effective dilution of a cell cycle inhibitor that is conceptually similar to the well-described inhibitor dilution models of budding yeast, human cells, and Arabidopsis plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our evolved network implements an effective dilution of a cell cycle inhibitor that is conceptually similar to the well-described inhibitor dilution models of budding yeast, human cells, and Arabidopsis plants (D'Ario et al., 2021; Schmoller et al., 2015; Xie and Skotheim, 2020; Zatulovskiy et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison drawn by the authors and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "4e60838f-5db4-4425-9df9-7ca545aa622b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C103",
+      "claim": "Evolution simulations were not deterministic and there was no one-to-one correspondence between a given evolutionary pressure and any one specific cell size control mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is worth noting that our evolution simulations were not deterministic. There was no one-to-one correspondence between a given evolutionary pressure and any one specific cell size control mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed across the multiple evolutionary simulations performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "df5422aa-61a6-47d6-b0c6-e4f3b2decf44",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C104",
+      "claim": "A low noise adder can produce a lower CV than a higher noise sizer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that a low noise adder can produce a lower CV than a higher noise sizer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the properties of size control mechanisms and noise.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "afa11d26-419c-4484-9e9f-6f5cd26d910c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C105",
+      "claim": "Sizers will always return the cell size to be within the steady state distribution within a cell cycle in response to large deviations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we anticipate even noisy sizers will be better than adders at controlling cell size in response to large deviations away from the steady state distribution. This is because sizers will always return the cell size to be within the steady state distribution within a cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the definition and properties of sizers.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "dd22cd58-632b-4fff-8912-b253d1a717b8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C106",
+      "claim": "A natural step in many simulated evolutions is a system with strong sizers at very small volume only.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also suggestive of evolutionary pathways: despite different evolutionary modalities and control types, a natural step in many of our simulated evolutions is a system with strong sizers at very small volume only (Figures 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the evolutionary trajectories shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "39a9506e-d983-4140-a185-6c7d0384eb8e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C108",
+      "claim": "Having size-dependent transitions later in the cell cycle selects for sizers, while having such transitions earlier selects for adders.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these simulations suggest the principle that having size-dependent transitions later in the cell cycle selects for sizers, while having such transitions earlier selects for adders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a principle inferred from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "fe195982-4d49-4bec-9c1f-e3246c793db6",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C109",
+      "claim": "This is the first example where self-organized criticality is obtained in artificially evolved models of gene networks performing a well-defined function.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first example where self-organized criticality is obtained in artificially evolved models of gene networks performing a well-defined function and is consistent with the idea that evolution of complex systems can favor the emergence of critical processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "428da202-0a89-450e-86b6-c82b24f77a2f",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C111",
+      "claim": "Volume is divided by 2 at each division after which one of the two daughter cells is followed.",
+      "claim_type": "EXPLICIT",
+      "source": "Volume is divided by 2 at each division after which we follow one of the two daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "01c81b98-1a75-426c-abf2-b94db11ae51c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C119",
+      "claim": "Upon passing the G1/S transition, cells are committed to division and there is a fixed time delay before they divide thus modeling S/G2/M as a timer.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon passing the G1/S transition, we assume cells are committed to division and there is a fixed time delay before they divide thus modeling S/G2/M as a timer (Chandler-Brown et al., 2017; Doncic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b392ce66-3a7d-40a4-a83e-cd92cc86ff62",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C122",
+      "claim": "The noise in the G1/S transition timing and S/G2/M timer duration creates natural cell to cell variability in volume that needs to be compensated for by the evolved mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This, along with the noise in S/G2/M timer duration, creates natural cell to cell variability in volume that needs to be compensated for by the evolved mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "3fe475ed-a3de-4603-8807-bfa2e650868b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C124",
+      "claim": "This interaction systematically appears in the initial stages of evolution simulations when not included initially.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially ran simulations without this specific interaction but found that it systematically appears in the initial stages of evolution simulations. We therefore included it in the initial network to speed up our simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in preliminary simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "8c580cde-ba11-457f-a644-b7f9a48cdc14",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "claim_id": "C125",
+      "claim": "The dynamics of the simple cell-cycle model are similar to models of cell cycles based on relaxation oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical dynamics of this simple cell-cycle model are represented in Figure 1. These dynamics are similar to models of cell cycles based on relaxation oscillators (Cross, 2003; Tsai et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "79854dc2-f946-4c3b-96e6-0888a9824e7c",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context for cell size control, defining key mechanisms (sizers and adders) and their theoretical properties. These claims describe established knowledge about cell size regulation, the diversity of control mechanisms across organisms, and the molecular basis of cell cycle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16, C22-C24 provide well-established background knowledge supported by appropriate citations and general understanding in the field. These definitional and contextual claims are consistently supported by the cited literature and represent accepted knowledge about cell size control mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reports that adders are more commonly observed than sizers in nature, with specific examples including bacteria, archaea, and cultured human cells exhibiting adder behavior, while fission yeast and mouse epidermal stem cells exhibit sizer behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19, C60-C61 are well-supported by multiple experimental citations. The prevalence of adders over sizers and the specific examples in different organisms are documented in the cited literature, providing a solid empirical foundation for the evolutionary simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "8f277b7c-913b-4d83-a78d-f6c86b8f1bc6",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript justifies the use of evolutionary algorithms as a computational approach, stating they mimic evolutionary processes and produce solutions constrained by evolutionary paths that resemble biologically evolved systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by appropriate citations to the evolutionary algorithm literature. The justification for using this computational approach is reasonable and consistent with established practices in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript describes the initial seed network model structure, including a binary S/G2/M switch, exponential volume growth, symmetric division, a G1 phase with size-dependent control, and an S/G2/M timer phase with noise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37, C111, C119, C122, C124-C125 describe the computational model structure and are internally consistent. The model design is clearly documented with appropriate citations to support specific assumptions (e.g., S/G2/M as a timer). The observation that certain interactions systematically appear (C124) provides empirical justification for including them in the seed network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "839f108a-1d49-4adc-995e-0f09dc2d6dcf",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The initial quantity-sensing oscillator without evolved interactions does not perform size control and results in unstable growth. During evolution (around epoch 700), a weak control mechanism suddenly evolves that prevents excessive cell growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C40 are supported by simulation data shown in Appendix 1\u2014figure 3 and Figure 2A. The evolutionary trajectory clearly shows the transition from unstable growth to controlled growth, validating the need for network evolution beyond the initial seed structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulations with G1 size control converge toward adder mechanisms and identify an active quantity-sensing mechanism involving titration, conceptually similar to experimentally observed dilution-based mechanisms in budding yeast, human cells, and plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26, C47-C48, C100 are supported by simulation data and appropriate comparisons to experimental literature. The evolved mechanism's similarity to known biological systems (particularly Whi5 dilution in budding yeast) strengthens the biological relevance of the computational findings. The distinction between passive dilution and active titration is clearly explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "5d879f5a-1f32-4088-801b-7df931598a2b",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Model A2 exhibits weak adder behavior overall but behaves as a sizer at volumes below equilibrium and as an adder/timer at higher volumes. This non-monotonic behavior is similar to that observed experimentally in budding yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C53-C54, C56-C57 are supported by simulation data in Figures 2I-J and 3C-D, with appropriate citations to experimental observations in budding yeast. The comparison between computational and experimental results strengthens the validity of the evolved networks.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "b79d51cb-6e07-46bd-b87a-01707041ab0a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The evolutionary simulations preferentially select for adder mechanisms near equilibrium when G1 performs size control with an S/G2/M timer. This is surprising because sizers theoretically provide better size control, yet adders evolve more frequently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C27-C28, C30-C31, C58-C59, C74 are supported by extensive simulation data across multiple evolutionary runs. The paradoxical preference for adders despite sizers' theoretical superiority is a key finding that motivates further investigation into cell cycle structural constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When the cell cycle structure is inverted (G1 timer, S/G2/M sizer) to mimic fission yeast S. pombe, more sizer-like networks evolve compared to the control. This demonstrates that cell cycle structure influences the type of size control that evolves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C29, C62-C64 are supported by simulation data in Figure 4B with statistical analysis (Welch's t-test, p=0.03). The recapitulation of naturally occurring size control mechanisms (adders in budding yeast, sizers in fission yeast) through appropriate cell cycle structures validates the evolutionary approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The relative durations of G1 and S/G2/M phases influence size control evolution. Shorter S/G2/M phases (longer G1) favor sizers, while longer S/G2/M phases favor adders. This explains the sizer behavior observed in mouse epidermal stem cells with extended G1 phases in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C65-C70, C75 are supported by simulation data in Figures 4C-D with statistical analysis (p=4\u00d710\u207b\u00b3 and p<10\u207b\u2074) and appropriate citations to experimental observations in mouse epidermal stem cells. The hypothesis that the longer cell cycle phase dominates size control is well-tested through systematic variation of phase durations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "69609875-08f4-46cf-bbcc-c6dc2d18a572",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Increasing noise in the S/G2/M timer progressively reduces size control effectiveness. The fixed timer duration allows accurate resetting of protein concentrations between cycles, which is important for G1 control. Cell cycle structural features are critical determinants of evolved size control mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 are supported by simulation data in Appendix 1\u2014figure 5 and by inference from the overall simulation results. The mechanistic explanation for why timer noise affects control (C72) is supported by citation and is consistent with the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A two-step evolutionary pathway is identified: first, a strong but imprecise sizer mechanism evolves where small cells trigger overshoots to large sizes, then variability is reduced by attenuating the size control response, resulting in a transition from noisy sizers to less noisy adders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80, C82, C106 are supported by detailed evolutionary trajectory data in Figures 2A and 5. The observation that this pathway occurs across multiple simulations with different structures strengthens the generality of this finding. This explains the paradoxical inverse correlation between sizer behavior and CV.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "d263b99a-f7bc-4593-b67e-b9a7bd76507e",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Evolution simulations are not deterministic\u2014there is no one-to-one correspondence between evolutionary pressure and specific size control mechanisms. A low-noise adder can produce lower CV than a high-noise sizer, but sizers are better at responding to large deviations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 are supported by the variability observed across multiple evolutionary runs and by theoretical considerations about noise and control. The nuanced discussion of when adders versus sizers are advantageous is well-reasoned and consistent with the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "22c7005b-9388-4a0d-b10b-4db2dd84b510",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A general principle emerges: having size-dependent transitions later in the cell cycle selects for sizers, while having such transitions earlier selects for adders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C108 synthesizes results from multiple simulation conditions (Figures 4A-D) into a unifying principle. This principle is well-supported by the systematic variation of cell cycle structure and is consistent with the rationalization that later control can compensate for earlier deviations, while earlier control followed by exponential growth amplifies deviations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "15cb611a-4156-4e7a-ad1c-55c06d69137a",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A fluctuation-sensing mechanism evolves where small cells with larger molecular noise trigger extended G1 phases, followed by rapid divisions. This mechanism exhibits self-organized criticality (SOC) with power-law distributions of cell cycle durations and operates near a bifurcation point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C85, C87, C91-C95, C109 are supported by simulation data in Figure 6, including power-law fitting (exponent -3.05) and phase-space analysis showing the system near a bifurcation. The identification of SOC is based on appropriate criteria (order parameter feeding back on control parameter, power-law distributions). However, the claim that this is the \"first example\" (C109) of SOC in evolved gene networks is difficult to verify without comprehensive literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    },
+    {
+      "id": "875d691f-25cd-4f69-a137-82ece6f23ad8",
+      "content_id": "60b889ce-16c0-46f2-b66a-3bcf645d0394",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent time-lapse microscopy studies have revealed diverse cell size control phenomena characterized by correlations between cell size at birth and division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 provide general context about the field and are supported by the extensive citations throughout the manuscript. These are appropriate framing statements for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:07:23.464754Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5be4f97c-07ca-4ea2-9f07-a1f6decc7b9a",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "88394225-4d9b-415a-9403-0daedd1335df",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "3bc50cfe-92e5-439e-9f84-c722f7466d00",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "1fc9f48a-767a-4902-8d98-a29b11a03c13",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "4e2456f0-45bd-4bfe-b09d-6e235cf7dd1a",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "6c978313-e110-49e7-87d3-cc965b2fda64",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "24573797-75c9-4e50-814a-14f55237490a",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "1982346a-e303-4fd3-a0fe-8cca51b0d9f0",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "97487c53-6266-4a82-8bf2-6d27368629b0",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "b7aa047d-3d07-48f5-ac33-37c4b420ecdc",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "fbade22f-40c6-4793-8aae-f2e00933621e",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "6798087e-db8a-4928-a070-b17adc82628b",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "c997baad-9042-4fb0-ae88-88f3bd2a15ed",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "f1bb62b2-7069-4799-8ffc-1b3f5fb2bd8f",
+      "result_id": "79854dc2-f946-4c3b-96e6-0888a9824e7c"
+    },
+    {
+      "claim_id": "45d4b319-88f8-4ca4-a14c-f956ca3d7113",
+      "result_id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92"
+    },
+    {
+      "claim_id": "f51bb474-b7c1-476d-b4cd-3e4e5bc9ccf2",
+      "result_id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92"
+    },
+    {
+      "claim_id": "7dd73b22-2571-4a4a-9f9b-c9505450d0c9",
+      "result_id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92"
+    },
+    {
+      "claim_id": "7d9de10c-732b-417f-bd5e-b53b78c3341c",
+      "result_id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92"
+    },
+    {
+      "claim_id": "fc9c1f52-16bf-451a-9d05-bf6a294ba301",
+      "result_id": "1b0a34d5-ef2b-4489-91ed-5cb4a558ec92"
+    },
+    {
+      "claim_id": "5901d312-cb7e-424b-b988-ecfcdd11219b",
+      "result_id": "8f277b7c-913b-4d83-a78d-f6c86b8f1bc6"
+    },
+    {
+      "claim_id": "249d0e64-a6a2-4818-9619-089556f2bd7b",
+      "result_id": "8f277b7c-913b-4d83-a78d-f6c86b8f1bc6"
+    },
+    {
+      "claim_id": "9c66e1d7-2d81-4a3c-aa1a-ac5a85a65126",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "f0dd0fd2-3e35-4a9e-a6cc-3364999373b8",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "89cb819d-4d2c-4a41-8a8b-d382fc6b4d62",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "c3fb9d5b-d34f-4d7f-bd52-f647a973afef",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "428da202-0a89-450e-86b6-c82b24f77a2f",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "01c81b98-1a75-426c-abf2-b94db11ae51c",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "b392ce66-3a7d-40a4-a83e-cd92cc86ff62",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "3fe475ed-a3de-4603-8807-bfa2e650868b",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "8c580cde-ba11-457f-a644-b7f9a48cdc14",
+      "result_id": "baaa5bac-d8e0-46ab-ba14-dff4e4d0f47d"
+    },
+    {
+      "claim_id": "37f71273-69ad-4b71-b718-5024106e757e",
+      "result_id": "839f108a-1d49-4adc-995e-0f09dc2d6dcf"
+    },
+    {
+      "claim_id": "e28f17a3-8256-4657-aba5-49b01a3737bb",
+      "result_id": "839f108a-1d49-4adc-995e-0f09dc2d6dcf"
+    },
+    {
+      "claim_id": "d70642aa-b5f5-4f76-b3ae-a9e6f9f29919",
+      "result_id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528"
+    },
+    {
+      "claim_id": "062a7963-600a-4511-a473-cf1d81851a1e",
+      "result_id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528"
+    },
+    {
+      "claim_id": "fdfb2adf-e4ef-402a-825b-4096c2ee2cd3",
+      "result_id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528"
+    },
+    {
+      "claim_id": "b3ef3630-93a6-4d65-8b65-291b34fa5d41",
+      "result_id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528"
+    },
+    {
+      "claim_id": "69cf0e0d-5556-40b5-9007-89bcef8c2da7",
+      "result_id": "293e3fd4-9d93-44ba-9ef7-2edd33a83528"
+    },
+    {
+      "claim_id": "7ffbe35d-8b0f-44e9-af8d-b4d661bd2ea1",
+      "result_id": "5d879f5a-1f32-4088-801b-7df931598a2b"
+    },
+    {
+      "claim_id": "e8759e21-07fa-40ce-997c-21aca3b8edb8",
+      "result_id": "5d879f5a-1f32-4088-801b-7df931598a2b"
+    },
+    {
+      "claim_id": "70793263-2e96-4a12-8bb1-6b39e5ee46b8",
+      "result_id": "5d879f5a-1f32-4088-801b-7df931598a2b"
+    },
+    {
+      "claim_id": "50c50faf-cd00-497f-aaae-862768f4d167",
+      "result_id": "5d879f5a-1f32-4088-801b-7df931598a2b"
+    },
+    {
+      "claim_id": "8c67a30c-f28e-4114-b645-e9c2bc60659e",
+      "result_id": "5d879f5a-1f32-4088-801b-7df931598a2b"
+    },
+    {
+      "claim_id": "95fbe516-ad02-403e-a714-3a240b11c012",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "33c1e889-a8d4-4055-ab1c-00692aa69b88",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "12bd366e-2c7d-4452-9344-ea1f794246b0",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "b97643c7-b231-4124-a82e-bef5c2768b3d",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "ae56ced6-7eca-416e-bb56-c1eec0c9d235",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "d323f304-2c6c-4bed-abb8-b5fabf22b88c",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "81f3b7f8-6926-437f-903f-c515d618f931",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "0a9f2642-9c21-423c-bb67-7705cfe30a4b",
+      "result_id": "b79d51cb-6e07-46bd-b87a-01707041ab0a"
+    },
+    {
+      "claim_id": "9e392065-1491-4874-82d9-a1a7dd76562b",
+      "result_id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc"
+    },
+    {
+      "claim_id": "4662843d-890a-40b4-b990-4b1e070e1be1",
+      "result_id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc"
+    },
+    {
+      "claim_id": "0fbb0d9a-8182-41eb-b7ac-ad754e9e4a19",
+      "result_id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc"
+    },
+    {
+      "claim_id": "297c4bcd-39d5-4179-8548-82650c357112",
+      "result_id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc"
+    },
+    {
+      "claim_id": "bb82b27c-36c4-4b7f-b730-754e60bc5fab",
+      "result_id": "0eaeade0-f402-4fde-a8bf-412f8f4646dc"
+    },
+    {
+      "claim_id": "edc3ad31-5003-44ef-82d3-1aded438a58b",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "2dba2796-e390-4e39-b108-31274cf2dfc2",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "58af44de-5a8d-4fef-9c9d-446531c5e1c5",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "0bba1579-ed26-4df2-b498-956028dd9ef0",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "eadd63d0-2a4d-4e23-a7f7-69d56ee6fd86",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "c0cdada9-8669-4fe3-bab9-8a752dd8e28a",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "316cc09d-a05b-4458-987d-175dd492080a",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "e4edbba3-26ea-4ca8-9fee-248f1faa5905",
+      "result_id": "a2d017a1-85d5-4215-8dcc-5a998240b4d4"
+    },
+    {
+      "claim_id": "c8ea8a56-c04c-4df7-a1b8-87bcdabe553b",
+      "result_id": "69609875-08f4-46cf-bbcc-c6dc2d18a572"
+    },
+    {
+      "claim_id": "6cad8bcb-5399-49f3-98ee-2ddd0cbd0035",
+      "result_id": "69609875-08f4-46cf-bbcc-c6dc2d18a572"
+    },
+    {
+      "claim_id": "b046102f-a416-4158-b71c-d36cd7fc8bc7",
+      "result_id": "69609875-08f4-46cf-bbcc-c6dc2d18a572"
+    },
+    {
+      "claim_id": "858bd279-1641-4b50-9a31-46506d960db8",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "fd9cb8a3-144d-4bf8-ae28-8d5635f00475",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "673fdcf7-fc14-41e4-ac01-220e8735d13a",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "1e2a93f8-1280-4d16-9e81-09a5e23f2d36",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "18cb98e1-1b94-4980-84b7-a6d0f58f2b5c",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "dd22cd58-632b-4fff-8912-b253d1a717b8",
+      "result_id": "ab683dc4-0006-46da-9faf-c1f2a4a4641e"
+    },
+    {
+      "claim_id": "4e60838f-5db4-4425-9df9-7ca545aa622b",
+      "result_id": "d263b99a-f7bc-4593-b67e-b9a7bd76507e"
+    },
+    {
+      "claim_id": "df5422aa-61a6-47d6-b0c6-e4f3b2decf44",
+      "result_id": "d263b99a-f7bc-4593-b67e-b9a7bd76507e"
+    },
+    {
+      "claim_id": "afa11d26-419c-4484-9e9f-6f5cd26d910c",
+      "result_id": "d263b99a-f7bc-4593-b67e-b9a7bd76507e"
+    },
+    {
+      "claim_id": "39a9506e-d983-4140-a185-6c7d0384eb8e",
+      "result_id": "22c7005b-9388-4a0d-b10b-4db2dd84b510"
+    },
+    {
+      "claim_id": "3016137d-1dcd-4179-b917-acbe916d9235",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "7e1bd9c6-db1d-4fa1-b659-bc1830dd3141",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "37c3188b-2842-4249-8a68-3d04476fe913",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "8346eab4-b923-4ee5-b889-36044d0529ef",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "d6ef4ff3-5d6d-4b4e-abc2-6a92e069251c",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "c99552e1-3a59-41bb-8ace-ebde4ea48d75",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "16b86c0f-ca11-44e7-8ef3-1deddbe78f79",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "c3281b9a-7b4a-4ef4-86e1-37c242de7e09",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "fe195982-4d49-4bec-9c1f-e3246c793db6",
+      "result_id": "15cb611a-4156-4e7a-ad1c-55c06d69137a"
+    },
+    {
+      "claim_id": "1a0db7ab-0067-4b49-bce4-b2bb315dfd7e",
+      "result_id": "875d691f-25cd-4f69-a137-82ece6f23ad8"
+    },
+    {
+      "claim_id": "ba598f29-87fc-4358-a316-c8296913949b",
+      "result_id": "875d691f-25cd-4f69-a137-82ece6f23ad8"
+    }
+  ],
+  "comparisons": []
+}

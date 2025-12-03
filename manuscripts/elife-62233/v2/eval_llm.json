@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Rapamycin treatment extends lifespan in Drosophila and specifically increases histone H3 and H4 protein expression in the intestine but not in brain, muscle, or fat tissues. The intestine has much lower basal histone expression than other tissues, and rapamycin increases histone expression by 2 days after treatment initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from lifespan assays (C1), western blots (C2-C6), and statistical analyses (two-way ANOVA) showing tissue-specific effects of rapamycin on histone expression. The data demonstrate appropriate sample sizes (n=4 biological replicates), statistical rigor, and consistent findings across multiple time points and tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Rapamycin's effect on histone protein levels is post-transcriptional in young flies but attenuates age-related increases in histone transcripts in older flies. In young flies (1-5 days), rapamycin does not affect H3/H4 transcript levels, but in older flies (30-50 days), it reduces the age-associated increase in histone transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by qRT-PCR data with appropriate statistical analysis (two-way ANOVA) and biological replicates (n=3-4). The findings demonstrate age-dependent effects and support the conclusion that rapamycin acts post-transcriptionally in young flies but has transcriptional effects in aged flies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Dietary restriction (DR) does not influence histone H3 and H4 expression in the intestine, distinguishing the rapamycin effect from general caloric restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by western blot data and two-way ANOVA showing no effect of DR (1\u00d7 vs. 2\u00d7 SYA food) on histone expression. This control experiment strengthens the specificity of the rapamycin effect, though only one DR condition was tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Rapamycin treatment does not alter intestinal cell type composition or enterocyte polyploidy, indicating that increased histone expression is not due to changes in cellular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are supported by immunofluorescence quantification and two-way ANOVA with adequate sample sizes (n=5-6 intestines). These control experiments rule out alternative explanations for increased histone protein levels, though C10 notes a reduction in ISC mitosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Rapamycin increases histone expression through eIF3-mediated translation rather than through canonical eIF4-dependent translation. Cycloheximide blocks the rapamycin-induced histone increase, and knockdown of eIF3d or eIF3g abolishes it, while eIF4e knockdown mimics rapamycin's effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide mechanistic evidence through pharmacological (cycloheximide) and genetic (RNAi) approaches with appropriate controls and statistics (two-way ANOVA, n=4 replicates). The findings are internally consistent and align with prior literature on non-canonical translation mechanisms for histones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Autophagy (Atg5 knockdown) and proteasome inhibition (bortezomib) do not affect rapamycin-induced histone expression, indicating that protein turnover does not mediate this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by western blot data and two-way ANOVA showing no interaction effects. These negative controls help establish that rapamycin acts through translation rather than protein degradation pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Rapamycin treatment increases nucleosome occupancy in the intestine without disturbing histone incorporation into chromatin. Overexpression of H3/H4 in enterocytes recapitulates this effect with no additional increase from rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by subcellular fractionation and MNase digestion assays. The data demonstrate that increased histones lead to increased nucleosomes, though quantification details for the MNase assay are limited in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Rapamycin induces chromatin rearrangement with accumulation at the nuclear envelope in enterocytes, an effect that requires increased histone expression. H3/H4 overexpression alone is sufficient to recapitulate this chromatin reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by immunofluorescence imaging and quantification with appropriate statistical analysis (linear mixed model). The genetic epistasis experiments (knockdown and overexpression) provide strong evidence for histone-mediated chromatin reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Rapamycin alters HP1 distribution by expanding it across the nucleus without changing total HP1 levels. This redistribution requires increased histone expression and can be recapitulated by H3/H4 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by immunofluorescence data showing HP1 redistribution. The genetic experiments demonstrate that histone expression mediates this effect, providing evidence for heterochromatin reorganization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Increased histone expression in enterocytes is required for rapamycin-induced lifespan extension and reduction of ISC proliferation. Knockdown of H3 or H4 in adult enterocytes completely blocks rapamycin's effects on lifespan and partially blocks effects on ISC proliferation and intestinal dysplasia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by lifespan assays with log-rank tests and ISC proliferation quantification with two-way ANOVA. The genetic requirement experiments provide strong evidence that histones mediate rapamycin's longevity effects, though the partial effect on dysplasia (C29) suggests additional mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Overexpression of H3/H4 in adult enterocytes is sufficient to extend lifespan, reduce ISC proliferation, and decrease intestinal dysplasia, with no additional benefit from rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by lifespan data (log-rank test), ISC proliferation quantification, and dysplasia measurements with appropriate statistics (two-way ANOVA). The lack of additive effects with rapamycin suggests histones act in the same pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Rapamycin has a substantial, age-dependent impact on the intestinal transcriptome, with modest changes at day 10 and substantial changes at days 30 and 50. Autophagy-related genes including Bchs, DOR, Stat92E, Atg4a, and Atg8a are affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by RNA-seq data with adequate sequencing depth (\u226537.5 million reads per sample, n=3 replicates). The PCA and differential expression analyses are appropriate, though the lack of significant GO enrichment (mentioned in C34) suggests the transcriptional changes may be modest or dispersed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Increased histone expression mediates transcriptional regulation of autophagy genes Bchs and DOR (but not Stat92E) through altered enrichment of histone modifications (H3K4me3, H3K9me3, H3K27me3) and HP1 at their transcriptional start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by qRT-PCR and ChIP-qPCR data with appropriate sample sizes (n=3-4 replicates) and statistical analyses (two-way ANOVA). The mechanistic link between histone levels and epigenetic regulation of specific autophagy genes is well-established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "H3/H4 overexpression does not affect mTORC1 activity (phospho-S6K levels) or Atg1 hyperphosphorylation, indicating that histones act downstream of mTORC1 and independently of the canonical mTORC1-Atg1 autophagy initiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by western blot data showing differential effects of rapamycin versus H3/H4 overexpression on S6K and Atg1 phosphorylation. These negative results are important controls that help establish the mechanism of action, though sample sizes are not explicitly stated for all experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "H3/H4 overexpression activates autophagy as measured by decreased Atg8a-II and Ref(2)P levels and increased LysoTracker-stained puncta, without affecting Cyto-ID staining. This effect requires H3 expression and mimics rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by western blots and immunofluorescence with appropriate quantification and statistics (linear mixed model, n\u22656 intestines). The use of both LysoTracker and Cyto-ID provides evidence that autophagic flux is not impaired, strengthening the conclusion of autophagy activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Increased histone expression improves intestinal barrier function by maintaining the junctional protein coracle and reducing the proportion of Smurf flies. H3 knockdown abolishes rapamycin's effects, while H3/H4 overexpression recapitulates them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by immunofluorescence quantification of coracle and Smurf assays with appropriate statistics (linear mixed model, two-way ANOVA, n=9-12 intestines or 10 replicates of 15-20 flies). The genetic epistasis experiments provide strong evidence for histone-mediated barrier function maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Autophagy genes Atg5 and Atg1 are required for the beneficial effects of H3/H4 overexpression on autophagy activation, lifespan extension, and intestinal health. Knockdown of either gene abolishes these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by immunofluorescence, lifespan assays, and intestinal health measurements with appropriate controls and statistics. The genetic requirement experiments establish that canonical autophagy machinery is necessary downstream of histones, though the specific roles of Atg1 and Atg5 differ (C53-C54 vs C50-C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The selective autophagy cargo adaptor Bchs is both necessary and sufficient for histone-mediated effects on autophagy, lifespan, and intestinal health. Bchs knockdown abolishes these effects, while Bchs overexpression recapitulates them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by comprehensive genetic experiments including immunofluorescence, lifespan assays, and intestinal health measurements with appropriate statistics. The necessity and sufficiency experiments provide strong evidence that Bchs is a key mediator of the histone-autophagy axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Bchs manipulation does not affect mTORC1-mediated Atg1 phosphorylation, indicating that Bchs acts independently of the canonical mTORC1-Atg1 autophagy initiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by western blot data showing no effect of Bchs knockdown or overexpression on Atg1 phosphorylation. This negative result is important for establishing the mechanism of action, though sample sizes are not explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In mice, rapamycin treatment increases expression of all core histones (H2A, H2B, H3, H4) in the small intestine, induces chromatin rearrangement in intestinal epithelial cells, increases nucleosome occupancy, and increases Wdfy3 (mammalian Bchs homolog) transcript expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by western blots, immunofluorescence, MNase assays, and qRT-PCR in mice at 12 and 22 months of age with appropriate statistics (two-way ANOVA, linear mixed model, n=3 per group). The conservation of effects across species strengthens the translational relevance, though sample sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study establishes an mTORC1-histone-autophagy axis where rapamycin increases histone expression via eIF3-mediated translation in enterocytes, leading to chromatin reorganization, transcriptional activation of autophagy genes (particularly Bchs), and improved intestinal health and longevity. This axis is at least partially conserved in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 represent the integrated conclusions of the study, supported by the collective evidence from multiple experimental approaches in both flies and mice. The mechanistic pathway is well-established through genetic, pharmacological, and molecular experiments, though C98's claim about therapeutic potential is somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

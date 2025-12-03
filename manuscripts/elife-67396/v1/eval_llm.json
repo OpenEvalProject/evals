@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study successfully recruited and characterized patients with uveitis and endophthalmitis, including 4 B27+ AAU patients, 2 B27-AU patients, and 1 endophthalmitis control from 4980 screened patients (0.18% recruitment rate). Patient groups were appropriately matched for age and clinical characteristics, with all B27+ AAU patients having associated spondyloarthropathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 provide comprehensive methodological details about patient recruitment and characterization. The statistical comparisons (C41, C44) and clinical characteristics (C42, C43) are clearly reported with appropriate tests. The low recruitment rate (C37) reflects the rarity and strict inclusion criteria of the disease, which is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Single-cell RNA-sequencing successfully captured 13,550 total cells (average 1936 cells/patient, 830 genes/cell) and identified 13 distinct hematopoietic cell clusters, broadly classified as 40% myeloid and 60% lymphoid origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe the technical success of scRNA-seq on aqueous humor samples. The cell recovery rate (C48) is validated by citation to the expected 50% recovery for the technique used. The identification of only hematopoietic cells (C50) is consistent with previous literature. The data quality metrics and cluster identification are clearly presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The dendritic cell sub-clusters identified in aqueous humor showed distinct marker gene expression patterns that did not fully overlap with previously described cDC type 1/2 markers from cerebrospinal fluid or peripheral blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 appropriately compare the current findings to established DC classifications from other tissues. The authors acknowledge this discrepancy and intentionally use the nomenclature cDCa/b to avoid misclassification, demonstrating scientific rigor in cell type annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Cellular infiltrates differed substantially between disease entities: endophthalmitis showed predominantly myeloid cells with granulocytes, while both uveitis subtypes showed primarily lymphoid infiltrates. B27+ AAU specifically featured increased pDC and cDCa clusters compared to B27-AU, with high inter-patient variability. Flow cytometry validated these findings with positive correlation to scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 describe the core compositional findings supported by Figure 2. The endophthalmitis control (C54) appropriately shows an innate immune response. The comparison between uveitis subtypes (C55-C59) identifies key differences despite high variability (C56). The orthogonal validation by flow cytometry (C60) strengthens the findings, and the discrepancy in granulocyte detection (C61) is appropriately explained by technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Differential gene expression analysis revealed that B27+ AAU samples showed reduced expression of MHC class I/II genes, CXCR4, cytotoxicity markers (GZMK, GZMH, LTA), and interferon-regulated genes (IFITM), while showing increased MIF expression in the B-cell lineage cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 describe transcriptional differences between B27+ AAU and B27-AU supported by Figure 3B-F. The differential expression analysis uses appropriate statistical methods (Wilcoxon rank sum test) with defined thresholds. The findings are internally consistent and suggest distinct immune activation states between disease subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "B27+ AAU showed elevated expression of genes associated with spondyloarthropathies and inflammatory pathways, including CTNN1 (WNT/catenin pathway), Lyz/CALR (myeloid activation), B4GALT1 (DC migration), C1ORF56 (activated lymphocytes), PFDN5 (SpA marker), and CDC42/CDC42SE1 (autoinflammatory diseases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 identify specific genes elevated in B27+ AAU with appropriate citations linking them to known pathways and diseases. However, many of these are interpretations (C68, C69, C70) rather than direct experimental validations. The findings are consistent with the disease association but would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "GWAS risk genes for spondyloarthropathies and anterior uveitis were preferentially expressed in specific cell clusters in B27+ AAU, particularly in the mergeDC cluster (AU-related: EYS, HLA-DRB5, ERAP1, IL18R1) and BcLin cluster (SpA-related: CLEC16A, IFNLR1), while pathogen detection genes (CARD9, TLR4) showed lower expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 link genetic risk factors to specific cell populations, shown in Figure 3G. This analysis appropriately integrates GWAS data with scRNA-seq expression patterns. The interpretation that this indicates DC relevance (C84) is reasonable but somewhat speculative. The lower expression of pathogen detection genes (C82) is an interesting finding that challenges the bacterial trigger hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Cell-cell interaction analysis using CellPhoneDB revealed that myeloid lineage clusters had the highest predicted interaction capacity. B27-AU showed many T/NK interactions with myeloid and DC clusters, while B27+ AAU featured widespread interactions centered on the cDCa cluster, suggesting its involvement in intraocular inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C91 describe predicted cell-cell interactions from computational analysis. While the methodology (CellPhoneDB) is appropriate, these are computational predictions rather than experimentally validated interactions. The exclusion of pDC and plasma clusters (C85) due to small sample size is a significant limitation. The interpretation that cDCa is involved in B27+ AAU inflammation (C91) is speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C94"
+    ],
+    "result": "Predicted interactions of the cDCa cluster in B27+ AAU included MHC class II molecules with immunomodulatory surface molecules (MIF, KLRC1) and immunosuppressive interaction pairs (LAIR-LILRB4, AXL-GAS6) with pDC clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92 and C94 describe specific predicted ligand-receptor interactions shown in Figure 4B. While the computational predictions are based on established databases and the cited functions of these molecules are supported, these remain predictions that have not been experimentally validated in this system. The biological significance of these interactions in uveitis pathogenesis is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "Cytokine analysis revealed pronounced IL-6 and IL-1RA in all aqueous humor samples, with endophthalmitis characterized by innate cytokines (IL-6, TNF-\u03b1, IL-1\u03b2). B27+ AAU showed significantly elevated IL-2, IL-6, IL-18, IL-22, IL-1\u03b2, and IFN-\u03b3 compared to B27-AU, though inter-individual heterogeneity was high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 describe protein-level cytokine measurements shown in Figure 4C-D. The findings are supported by appropriate statistical tests (Mann-Whitney U-test) and are consistent with the disease pathophysiology. The high inter-individual variability (C101) is acknowledged. The discrepancy between some cytokine mRNA and protein levels is appropriately discussed in relation to technical limitations of scRNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Serum analysis showed significantly elevated IL-1RA and IFN-\u03b3 levels in B27+ AAU compared to B27-AU patients, indicating a potential role of IFN-\u03b3 in both intraocular and systemic immune response during active uveitis in spondyloarthropathies patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe serum cytokine findings from a separate cohort shown in Figure 4\u2014figure supplement 2. The statistical significance is demonstrated, and the interpretation (C106) reasonably connects local and systemic immune responses. However, the serum samples are from a different study/cohort, which could introduce confounding variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Intraocular leukocytes in uveitis are transcriptionally and compositionally distinct from leukocytes in blood, synovial fluid in rheumatoid arthritis, and cerebrospinal fluid in multiple sclerosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 make comparative statements supported by citations to previous scRNA-seq studies of other tissues. While direct side-by-side comparisons are not performed in this study, the comparison to published datasets is appropriate and highlights the tissue-specific nature of immune responses. This contextualizes the novelty of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "T cells showed greater activation in B27-AU than B27+ AAU, consistent with poor response to T-cell inhibition in B27+ AAU. Cell-cell network analysis revealed BAFF involvement connecting B cells to cDCa, with naive B cells expressing CLEC16A and plasma cells expressing SpA risk genes preferentially enriched in B27+ AAU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 integrate transcriptional findings with clinical observations and network analysis. The T-cell activation finding (C110) is supported by differential expression data and clinical literature (C22). The BAFF network finding (C111) and B-cell enrichment (C113-C114) are supported by the data, though the functional implications remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The study identified four distinct intraocular DC clusters including a novel mature DC (matDC) cluster expressing activation markers (FSCN1, CD83, LAMP3) and DC5 cells characterized by high AXL and SIGLEC6 expression within cDCa, matDC, and pDC clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 describe novel DC populations identified in aqueous humor. The matDC cluster (C121) is well-characterized by marker genes shown in Figure 1C. The identification of DC5 cells (C123) is supported by comparison to published markers. These findings represent genuine discoveries about DC heterogeneity in ocular inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Expression of immune regulatory molecules MIF and AXL in cDCa cells and their multiple predicted interactions with other immune cells suggest an immune regulatory and/or phagocytosing role during acute anterior uveitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C124 is an interpretation combining expression data with predicted interactions. While the expression of MIF and AXL is demonstrated, and the predicted interactions are computationally derived, the actual functional role (immune regulatory/phagocytosing) is speculative and not experimentally validated in this study. This represents a reasonable hypothesis requiring future functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Lower expression of innate immunity genes (CARD9, NOD2, TLR4) in DC populations of B27+ AAU patients questions the role of bacterial and fungal pathogens in intraocular immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is an interpretation of the differential expression data (C82) that challenges the bacterial trigger hypothesis. This is a reasonable inference from the data, though it does not definitively rule out pathogen involvement. The lower expression could reflect the disease stage sampled or other factors. The interpretation is appropriately cautious ('questions' rather than 'disproves').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Expression levels of S100A8/A9 did not differ between myeloid lineage clusters of B27-AU and B27+ AAU samples, despite elevated serum levels in HLA-B27-associated uveitis patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 reports a negative finding that contrasts with serum biomarker data (C128). This discrepancy between local tissue and systemic expression is appropriately noted and suggests that serum S100A8/A9 may not reflect local intraocular myeloid cell activation. This is an important observation that highlights tissue-specific immune responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133",
+      "C134"
+    ],
+    "result": "The study confirmed previous observations of elevated IL-18 and IFN-\u03b3 in aqueous humor and elevated serum IFN-\u03b3 in B27+ AAU during active uveitis. Elevated IFN-\u03b3-related transcripts matched observations in spondyloarthropathies joint biopsies, indicating an IFN-\u03b3-driven immune response during active uveitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 validate previous findings with new data and extend them with transcriptional evidence. The confirmation of prior observations (C130-C131) strengthens confidence in the results. The connection to SpA joint biopsies (C133) and interpretation of IFN-\u03b3-driven response (C134) are well-supported by the integrated protein and transcriptional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "The main limitation of the study is its small sample size combined with high inter-patient variability influenced by multiple potential confounders including age, sex, disease duration, medication, and comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 appropriately acknowledges the study's primary limitation. With only 4 B27+ AAU and 2 B27-AU patients analyzed by scRNA-seq, statistical power is limited and inter-patient variability is evident throughout the results (e.g., C56, C101). The authors appropriately recognize this limitation while noting the rarity of the disease and invasiveness of sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study demonstrates proof-of-concept feasibility of scRNA-seq on aqueous humor inflammation, provides the first high-resolution characterization of intraocular leukocytes in HLA-B27-positive and -negative anterior uveitis, and offers insights into differences in cellular infiltrates and local immune-mediated mechanisms between uveitis entities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C136-C138 summarize the overall achievements of the study. The technical feasibility (C136) is clearly demonstrated by the successful generation of high-quality scRNA-seq data from limited aqueous humor samples. The characterization (C4, C137) represents a genuine advance in the field, and the mechanistic insights (C138) are supported by the integrated multi-modal analysis, despite limitations in sample size and functional validation.",
+    "result_type": "MAJOR"
+  }
+]

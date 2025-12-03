@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Coronary blood vessels develop from two progenitor sources\u2014the endocardium (Endo) and sinus venosus (SV)\u2014which localize to complementary regions in adults and are guided by different signaling factors during initial angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C62-C67 establish the developmental origins of coronary vessels based on extensive prior literature citations. These claims provide the foundational context for the study and are well-supported by the cited work, though they represent prior knowledge rather than novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "At e12, capillary ECs segregate into two transcriptional states (Cap1 and Cap2) that retain progenitor-specific gene expression patterns, with Cap2 exclusively from SV-enriched samples and Cap1 containing mostly Endo-enriched cells plus some SV-enriched cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C9-C11 are directly supported by scRNAseq data shown in Figures 1C-E and 2B. The lineage-specific clustering at e12 and gene overlap analysis provide strong evidence for retention of progenitor signatures. The quantitative overlap percentages (40% Cap1/Endo, 47% Cap2/SV) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "At e17.5, capillary ECs still segregate into Cap1 and Cap2, but neither cluster is lineage-exclusive, and there is minimal overlap between Cap1/Cap2 differential genes and progenitor-specific genes, indicating that lineage is no longer the primary driver of heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C12-C16 are supported by data in Figures 1G-H, 2A, 2C, 2H, and Table 2. The observation that 202 DEGs exist between Cap1 and Cap2 but only 24 between Endo- and SV-enriched capillaries, combined with the greater log-fold changes in cluster comparisons versus lineage comparisons, provides strong evidence that lineage is not the primary determinant of e17.5 heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "At e17.5, Cap1 and Cap2 heterogeneity is driven by spatial localization rather than lineage, with Cap1 localizing to the septum and ventral wall (expressing hypoxia and tip-cell markers) and Cap2 localizing to the remaining ventricular walls (expressing flow-induced genes including Car4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 are supported by gene expression data (Figures 3A-B), immunofluorescence localization of Car4 (Figures 3D-F), and in situ hybridization for Kcne3 (Figure 3G). The spatial restriction of Car4 to non-septal regions and the observation that Endo-lineage cells outside the septum express Car4 (23% vs 4% in septum) provide strong evidence for location-based rather than lineage-based heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C28",
+      "C29"
+    ],
+    "result": "In adult hearts, capillary ECs from both lineages show similar distribution across clusters and no appreciable gene expression differences, with Car4 becoming broadly expressed including in septum ECs, indicating convergence of lineage-based transcriptional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C28-C29 are supported by scRNAseq data (Figures 1I-K, 3H) and immunofluorescence (Figure 3I, Table 3). The similar distribution of lineages across adult capillary clusters and the acquisition of Car4 expression by septal ECs provide strong evidence for transcriptional convergence in adults.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C70"
+    ],
+    "result": "Following IR injury in adult hearts, there is no difference in EC proliferation between Endo- and SV-enriched lineages, but the outer wall shows consistently higher proliferation than the inner wall, indicating that local environment rather than lineage regulates injury responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C70 are supported by EdU incorporation data shown in Figures 4E-F. The lack of lineage-based differences combined with location-based differences provides evidence for environmental regulation of injury responses. However, the outer wall difference is noted as non-significant, and the study is limited to proliferation at one timepoint (day 5), so broader functional equivalence cannot be definitively concluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Following IR injury, approximately 69% of large arteries in injured regions contained at least one EdU-positive EC, with significantly higher rates of EdU-positive arterial ECs in injured versus uninjured hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are directly supported by quantification data in Figure 4H showing statistically significant differences between injured and uninjured hearts. This represents a novel observation about arterial EC proliferation following injury, though the authors note uncertainty about whether this reflects proliferating capillary cells transitioning to arteries or artery ECs re-entering the cell cycle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C69"
+    ],
+    "result": "Human fetal coronary ECs show close concordance with mouse, with human Cap1 and Cap2 mapping predominantly to their mouse counterparts and displaying similar gene expression patterns indicative of low flow/hypoxia (Cap1) versus normal flow (Cap2), though CA4 is not differentially expressed between human capillary clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 and C69 are supported by reference mapping data (Figures 5F-G) and gene expression analysis (Figure 5H). The cross-species comparison provides evidence for conserved developmental principles. However, the reference mapping has acknowledged limitations including different sequencing methods (Smart-seq2 vs 10\u00d7), different sequencing depths, and restriction to 1:1 homologs, which may affect mapping accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In human fetal hearts, TINAGL1 expression shows statistically significant spatial differences with dramatically lower expression in the septum compared to ventricular walls (especially the right ventricle), and a higher percentage of human Cap1 cells map to putative mouse septal ECs compared to Cap2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by in situ hybridization quantification (Figures 5J-K) and reference mapping data (Figure 5\u2014figure supplement 1E). The spatial pattern of TINAGL1 in human parallels Car4 in mouse (septum vs walls) but differs in the ventral/dorsal comparison, suggesting both conservation and species-specific differences in spatial patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C73"
+    ],
+    "result": "Human hearts contain three artery clusters (Art1, Art2, Art3) with Art3 representing an immature developmental state that transitions to Art2 and then Art1, as evidenced by trajectory analysis and the absence of Art3 in adult hearts. The authors propose a model where two capillary subtypes at different locations produce two artery subtypes, one maturing into the other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C47 are supported by reference mapping (Figure 6A), trajectory analysis (Figure 6B), and adult mapping (Figure 6C). However, claim C73 represents a proposed model based on trajectory inference, which has inherent limitations. RNA velocity and trajectory methods make assumptions about developmental relationships that may not reflect actual lineage progression. The model is plausible but would require lineage tracing or time-course experiments for definitive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Trajectory analysis suggests connections between Cap1 and Art3 and between Cap2 and Art2, with directionality from capillaries to arteries, supported by specific co-expression of genes in Cap1/Art3 (CXCR7, MCAM, TNFAIP8L1, PGF) and Cap2/Art2 (TINAGL1, SLC9A3R2, SGK1, THBD, LIMS2, CALCRL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by trajectory analysis (Figure 6B) and gene expression data (Figure 6D). The co-expression patterns provide supporting evidence for the proposed trajectories. However, trajectory inference has limitations as noted above, and the directionality inferred from RNA velocity should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In adult human hearts, there is a notable reduction in Cap1 cells (28% fetal vs 6% adult), and the small percentage of adult cells mapping to fetal Cap1 indicates convergence of developmental states related to flow and oxygenation in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by reference mapping data (Figure 6C). The reduction in Cap1 cells in adults parallels the mouse findings and supports the convergence model. However, the comparison uses a publicly available adult dataset (Litvi\u0148ukov\u00e1 et al., 2020) rather than data generated in this study, which may introduce batch effects or technical differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SCENIC analysis identified transcription factor regulons enriched in developing artery ECs, including SOX17 (consistent with prior reports), novel candidates PRDM16 and GATA2, and IRF6 specific to the most mature artery population, with all regulons similarly enriched in mouse artery cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by SCENIC analysis data (Figures 7B-C). The identification of SOX17 validates the approach against known biology, while PRDM16, GATA2, and IRF6 represent novel candidates. The cross-species conservation strengthens these findings. However, SCENIC identifies correlations between transcription factors and gene expression, not causal relationships, so functional validation would be needed to confirm roles in artery development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Human developing coronary arteries express neurotransmitter receptors GABBR2 (enriched in Art2) and GRIA2 (enriched in Art1), with GABBR2-expressing cells co-expressing the transporter SLC6A6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by gene expression data (Figure 7D) and citation to prior work on SLC6A6 function. These represent novel findings about human-specific gene expression in developing coronary arteries. The functional significance is unclear, but the co-expression of receptor and transporter suggests potential functional relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C74",
+      "C75"
+    ],
+    "result": "In human fetal hearts, GJA5-positive ECs (Art1) localize to a small number of large arteries always covered with smooth muscle, while GJA5-negative/GJA4-positive ECs (Art2 and Art3) are numerous and sometimes lack smooth muscle coverage, indicating that Art1 represents larger proximal branches and Art2/Art3 represent smaller arterioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C74-C75 are supported by in situ hybridization data (Figures 7E-F). The spatial localization and smooth muscle coverage patterns provide strong evidence for the proposed arterial hierarchy. This represents a clear characterization of human coronary artery development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "BmxCreER specifically labels a high percentage of the Endo (94.44% at e12.5) but does not mark the SV (3.61% at e12.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by citation to prior work (D'Amato et al., 2021) characterizing the BmxCreER line. This represents a methodological validation that is critical for interpreting the lineage-tracing results throughout the study. The high specificity and efficiency of labeling support the validity of the lineage assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Over the course of development, transcriptional heterogeneity in coronary ECs is first influenced by lineage (e12), then by location (e17.5), until both lineage- and location-based heterogeneity disappear in the adult heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 represents the main conclusion integrating all findings from the study. It is well-supported by the collective evidence from scRNAseq, immunofluorescence, and in situ hybridization across developmental stages. The progression from lineage-based to location-based to homogeneous states is clearly demonstrated. However, the statement that heterogeneity 'disappears' in adults may be overstated, as adult hearts still show three capillary clusters (Cap1, Cap2, Cap3), though these are not lineage-based.",
+    "result_type": "MAJOR"
+  }
+]

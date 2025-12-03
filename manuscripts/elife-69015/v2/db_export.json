@@ -1,0 +1,1699 @@
+{
+  "submission": {
+    "id": "7ba4936c-5fe0-4b7a-a98d-dc8ebd10baa0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:58:24.887248Z",
+    "updated_at": "2025-12-03T08:58:24.887248Z"
+  },
+  "content": [
+    {
+      "id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "submission_id": "7ba4936c-5fe0-4b7a-a98d-dc8ebd10baa0",
+      "content_type": "manuscript",
+      "content_text": "# mTOR-dependent translation drives tumor infiltrating CD8+ effector and CD4+ Treg cells expansion\n\n## Authors\n\n- Benedetta De Ponte Conti<sup>1</sup>\n- Annarita Miluzio<sup>3</sup>\n- Fabio Grassi<sup>1</sup>\n- Sergio Abrignani<sup>3</sup>\n- Stefano Biffo<sup>3</sup> ([ORCID: 0000-0002-3780-1050](https://orcid.org/0000-0002-3780-1050)) \u2020\n- Sara Ricciardi<sup>3</sup> ([ORCID: 0000-0001-8124-432X](https://orcid.org/0000-0001-8124-432X)) \u2020\n\n### Affiliations\n\n1. Institute for Research in Biomedicine, Universit\u00e0 della Svizzera Italiana (USI) Bellinzona Switzerland ([ROR:03c4atk17](https://ror.org/03c4atk17))\n2. Graduate School of Cellular and Molecular Sciences, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))\n3. Istituto Nazionale Genetica Molecolare \"Romeo ed Enrica Invernizzi\" Milan Italy\n4. Department of Medical Biotechnology and Translational Medicine, Universita` degli Studi di Milano Milan Italy\n5. Department of Clinical Sciences and Community Health, Universit\u00e0 degli Studi di Milano Milan Italy\n6. Bioscience Department, Universit\u00e0 degli Studi di Milano Milan Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe performed a systematic analysis of the translation rate of tumor-infiltrating lymphocytes (TILs) and the microenvironment inputs affecting it, both in humans and in mice. Measurement of puromycin incorporation, a proxy of protein synthesis, revealed an increase of translating CD4+ and CD8+ cells in tumors, compared to normal tissues. High translation levels are associated with phospho-S6 labeling downstream of mTORC1 activation, whereas low levels correlate with hypoxic areas, in agreement with data showing that T cell receptor stimulation and hypoxia act as translation stimulators and inhibitors, respectively. Additional analyses revealed the specific phenotype of translating TILs. CD8+ translating cells have enriched expression of IFN-\u03b3 and CD-39, and reduced SLAMF6, pointing to a cytotoxic phenotype. CD4+ translating cells are mostly regulatory T cells (Tregs) with enriched levels of CTLA-4 and Ki67, suggesting an expanding immunosuppressive phenotype. In conclusion, the majority of translationally active TILs is represented by cytotoxic CD8+ and suppressive CD4+ Tregs, implying that other subsets may be largely composed by inactive bystanders.\n\n## Introduction\n\nCancer immunoediting is the dynamic process whereby cancer cells modify the immune microenvironment to their advantage. In a typical cancer scenario, altered protein products caused by genetic mutations function as neoantigens, eliciting an immune response against cancer cells (Schumacher and Schreiber, 2015). In parallel, the inflammatory, hypoxic, and often necrotic microenvironment of tumors modifies the immune response (Kalluri, 2016). Tumor-infiltrating T lymphocytes (TILs) are the major players in the immune response (Quail and Joyce, 2013). Conventional classification of T lymphocytes divides them in CD8+ cytotoxic T cells, and various subtypes of CD4+ cells, each with a precise range of action. In general, CD8+ cytotoxic T cells, CD4+ T-helper 1 cells producing interferon-\u03b3, and natural killer cells are associated with favorable anti-tumor immune responses (Tosolini et al., 2011). In contrast, myeloid-derived suppressor cells, and CD4+ FOXP3+ regulatory T (Treg) cells producing IL-10 and TGF-\u03b2 have immunosuppressive and protumoral effects (Shang et al., 2015). Other T cell subsets, present at lower frequency, have been linked to patient survival in specific tumors, such as CD4+ Tr1 (Bonnal et al., 2021), or CD4- CD8- unconventional \u03b1\u03b2 T cells (Ponzetta et al., 2019). Recently, single-cell RNAseq studies have extended the phenotypic description of TILs (De Simone et al., 2016; Guo et al., 2018; Miller et al., 2019; Stuart and Satija, 2019; Yao et al., 2019; Zheng et al., 2017) showing distinct patterns of immune activation and exhaustion, and increasing the number of T cell subtypes. Although many of these subtypes are present across different tumor types, not all cancer types with similar TIL landscapes respond similarly to immunotherapy (Paijens et al., 2021). These observations highlight the complexity of the tumor-immune interactions and suggest the presence of environmental modifiers of the T cell transcriptional repertoire. Notably, in spite of the elevated number of T cell players found in the tumor microenvironment, the most consistent survival predictors are (i) the number of TILs and (ii) the ratio between CD8+ cytotoxic T cells and CD4+ FOXP3+ Tregs (Gooden et al., 2011).\n\nThe high complexity of the T cell transcriptional repertoire is only one side of the coin. Several studies show that the presence of a messenger RNA (mRNA) may not reflect the active synthesis of the encoded protein (Schwanh\u00e4usser et al., 2011). It is known that some mRNAs are translated poorly and only in response to specific stimuli (Pelletier and Sonenberg, 2019). Regulation of protein synthesis, called translational control, occurs both at the global and at the specific mRNAs level. Protein synthesis is one of the most energy-consuming pathways in cell metabolism (Buttgereit and Brand, 1995), and microenvironment conditions and nutrients are major controllers of the global rate of synthesis (Biffo et al., 2018). For instance, hypoxia leads to the downregulation of high-energy processes, including protein synthesis (Horman et al., 2002; Liu et al., 2006). Local conditions of amino acid concentration affect translation, and global translation decreases in response to amino acid deprivation. Both hypoxia and amino acid deprivation activate also specific translation. When an essential amino acid is limiting, the concentration(s) of the non-aminoacylated (\u2018uncharged\u2019) tRNA increase(s). Uncharged tRNAs bind to the regulatory domain of GCN2 kinase causing its activation, the phosphorylation of eIF2\u03b1, a shutdown of global protein synthesis, and the specific derepression of the translation of uORF-controlled mRNAs (Wek, 2018). Four kinases (eIF2AK1\u20134) are able to phosphorylate eIF2\u03b1 (Loreni et al., 2014) and are all expressed in T cells (Mitchell et al., 2015). Hypoxia is a stimulator of eIF2AK3 known also as PERK (Koumenis et al., 2002). Consequently, the hypoxic tumor microenvironment may inhibit protein synthesis through specific cascades, leading to a mismatch between the presence of mRNAs and their encoded proteins. It is therefore evident that translational inhibition may be particularly relevant for T cells that respond to the conditions of the microenvironment (Biffo et al., 2018).\n\nStimulation of protein synthesis is one of the hallmarks of T cell exit from quiescence, beginning of growth and proliferation and is associated with both quantitative (Garcia-Sanz et al., 1998) and qualitative changes (Mikulits et al., 2000) in translation. Stimulation of protein synthesis occurs through the nutrient growth factor receptor cascades that converge on initiation factors eIF4E, through PI3K-mTORC1, ERK-MNK, and eIF6 (Loreni et al., 2014; Bhat et al., 2015). Activation of the T cell receptor leads to a robust activation of the growth factor cascade. In particular, stimulation of the mTORC1-S6K branch is of outmost importance for T cell function. mTORC1 is a major controller of both translation and T cell biology (Bjur et al., 2013; Piccirillo et al., 2014). Inhibition of mTORC1 by rapamycin has profound effects on T cell response and polarization (Powell and Delgoffe, 2010). The relevance of the translational branch in driving mTORC1 responses is demonstrated by the fact that ablation of 4EBP1 and 4EBP2, which are translational modulators phosphorylated by mTORC1, rescues the inhibitory action on proliferation of raptor depletion (Dowling et al., 2010). Several mRNAs are rapidly engaged following T cell stimulation, promoting an immediate translational and glycolytic switch to ramp up the T cell activation program (Wolf et al., 2020). Recently, we found that stimulation of fatty acid synthesis in T cells requires the translational activation of the rate-limiting enzyme ACC1. Intriguingly, ACC1 mRNA was expressed but not translated also in quiescent T cells (Ricciardi et al., 2018). Translational regulation of glycolytic enzymes was seen also in activated CD4+ cells (Manfrini et al., 2020b), in line with other experimental models. Another translation factor, eIF5A, promotes the expression of a subset of mitochondrial proteins involved in the TCA cycle and oxidative phosphorylation (Puleston et al., 2019). In short, in vitro, T cells rapidly respond to T cell receptor stimulation by increasing protein synthesis.\n\nThe presence of a large layer of translational control in T cells raises the question whether TILs are efficiently translating in vivo, which environmental stimuli regulate their translation, and whether active translation affects their developmental pathway. In this study we demonstrate that, in vivo, suppressive CD4+ Tregs and cytotoxic CD8+ T cells are the major populations of translating lymphocytes. Hypoxia and mTOR signaling are major modulators of lymphocyte translation, and translating lymphocytes are phenotypically different from translationally inactive lymphocytes. We hypothesize that the predictive value on survival of suppressive CD4+ Tregs and cytotoxic CD8+ T cells is due to their capability to be translationally active amid a large percentage of not translating lymphocytes.\n\n## Results\n\n### Translational efficiency is increased by TCR signaling and inhibited by hypoxia\n\nPuromycin, by entering the acceptor site of ribosomes and incorporating into nascent polypeptide chains, represents a valid tool to quantify protein synthesis within cells in vivo. We used puromycin measurement in combination with quantitative immunoblotting to capture global protein synthesis rate in human primary lymphocytes (Figure 1A). We have previously shown that na\u00efve T cells have a poised translational machinery, with pre-accumulated mRNAs that are efficiently translated only after T cell receptor stimulation (Ricciardi et al., 2018). This prompted us to further evaluate the relationship between T cell receptor stimulation and translation. T cell receptor stimulation leads to a progressive, temporal, steady increase of protein synthesis (Figure 1B). Next, we checked whether the strength of T cell receptor stimulation affected the global output of proteins. To this end, primary lymphocytes were briefly cultivated in the presence of two different amounts of anti-CD3/CD28, and protein synthesis was measured by puromycin incorporation (Figure 1C). We saw higher puromycin incorporation in cells stimulated with the higher concentration of anti-CD3/CD28 (Figure 1C). Phosphorylation of ribosomal protein rpS6 occurs in serine 235/236 by S6K1-2 downstream of mTORC1 and by RSKs kinases downstream of ERK, as well as in serine 240/244 by S6K1-2 kinases (Meyuhas, 2015). All these pathways are activated by TCR stimulation (Piccirillo et al., 2014). Consistently, rpS6 phosphorylation increased from undetectable to strong levels after anti-CD3/CD28 stimulation (Figure 1C). rpS6 itself was detectable before TCR stimulation and increased upon stimulation, in line with previous data (Wolf et al., 2020; Araki et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram for the experiment. (B) Immunoblot of puromycin incorporation in CD4+ T cells following stimulation by anti-CD3/CD28 at the indicated time points shows that T cell receptor stimulation leads to a progressive increase of puromycin in cultured lymphocytes. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. Densitometry normalized to vinculin. (C) The strength of T cell receptor stimulation correlates with puromycin incorporation. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. (D) mTOR inhibition reduces rpS6 phosphorylation and translation. Stimulated CD4+ T cells were treated for 30 min with either 2 \u03bcM PP242 or 3 \u03bcM MNK inhibitor before collecting extracts. Puromycin incorporation and phosphorylation of rpS6 were measured by Western blotting. The immunoblot is representative of the pool of two replicates with cells isolated from one healthy donor per experiment. (E and F) Hypoxic environment sharply reduces translation. Stimulated CD4+ T cells were transferred from 20% O2 to 1% O2 for the indicated times (E), and translation was measured by flow cytometry (F). Data are mean \u00b1 s.d. p Values are determined by ANOVA with Dunnett\u2019s post hoc test. ****p < 0.0001. (G) Hypoxia induces phosphorylation of eIF2\u03b1. Stimulated CD4+ T cells were incubated for 4 hr under normoxia or hypoxia and the phosphorylation of eIF2\u03b1 was determined by ELISA assay as described in Materials and methods using an anti-phospho-eIF2\u03b1-specific antibody. The data represents the pool of three independent experiments. Data are mean \u00b1 s.d. p Values are determined by two-tailed Student\u2019s t-tests. ****p < 0.001.\n\nActivation of protein synthesis correlates with rpS6 phosphorylation (Figure 1C). Inhibition of mTOR pathway by the mTOR inhibitor PP242 leads to both the reduction of rpS6 phosphorylation and a conspicuous inhibition of puromycin incorporation, that is, protein synthesis (Figure 1D). The ERK pathway converges on Mnk1/2 that phosphorylate Ser209 of eIF4E (Roux and Topisirovic, 2018). In vitro, Mnk inhibition did not consistently reduce puromycin incorporation, indicating that this pathway is not massively involved in global translation of T cells (Figure 1D).\n\nSince infiltrating lymphocytes may encounter an environment rich in hypoxic areas, we wondered if hypoxia was able to rapidly modify the capability of lymphocytes to translate in response to T cell receptor stimulation. We therefore quantitated the rate of puromycin incorporation in the presence of hypoxic environment (Figure 1E). Hypoxia resulted in a rapid reduction of the translation rate of primary lymphocytes (Figure 1F, Figure 1\u2014source data 3). Several translation pathways are modulated by hypoxia, including the one driven by PERK. PERK phosphorylates Ser51 of eIF2\u03b1 (Koumenis et al., 2002). We did not detect eIF2\u03b1 phosphorylation by Western blotting, likely due to the limited number of human cells. We used a modified ELISA procedure and found that hypoxia induced eIF2\u03b1 phosphorylation (Figure 1G, Figure 1\u2014source data 4). On the basis of these data, we hypothesize that, in vivo, the combination of T cell receptor stimulation and hypoxic conditions is a major determinant of the translational capability of lymphocytes.\n\n### Only a minority of TILs actively translates and is characterized by an mTORC1 activated phenotype\n\nNext, we addressed the question of whether, in vivo, we could observe heterogeneity in the translational efficiency of TILs. To answer this question, we engrafted subcutaneously C57BL/6 mice with B16F10 melanoma cells (Figure 2A). We administered a single injection of puromycin (50 mg/kg body mass) and after 1 hr, mice were sacrificed and T cells isolated for analysis in flow cytometry (Figure 2A). Then, the amount of protein synthesized was quantified on the basis of puromycin incorporation by FACS. The same gating strategy was applied for spleen lymphocytes and TILs (Figure 2\u2014figure supplement 1). Intriguingly, we found that at the single-cell level, in vivo, the translational efficiency of both CD4+ and CD8+ TILs was highly variable (Figure 2B and C, Figure 2\u2014source data 1), namely some TILs had no puromycin incorporation, others were highly positive for puromycin. On the basis of the gating shown in Figure 2B and C, we defined two categories of infiltrating T cells, high puromycin (Puro+) and low puromycin (Puro-) T cells, reflecting translating T cells and translationally silent T cells, respectively. This simple analysis unveiled that CD4+ TILs translated more than spleen-resident CD4+ T cells (Figure 2B). The number of highly translating CD4+ TILs in different animals ranged between 20% and 60% (Figure 2B). Similar to CD4+ TILs, the number of highly translating CD8+ TILs was more than twofold higher than in the spleen (Figure 2C). Within individual tumors, Puro+ CD8+ TILs ranged between 20% and 90% (Figure 2C). Taken together these data demonstrate the presence of a strong layer of translational control, driven by the microenvironment, that affects the biological activity of individual lymphocytes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimental outline. Tumor cells were injected in recipient mice. Puromycin was injected intraperitoneally, and T cells were collected 1 hr later for the analysis. (B and C) The amount of incorporated puromycin was determined by FACS analysis in CD4+ (B) or CD8+ lymphocytes (C). Representative plots and statistical analysis (mean \u00b1 SEM) show that the number of Puro+ TILs is always higher in tumors versus spleen and that only parts of TILs are translationally active. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 5\u20138 mice per experiment) *p < 0.05; ***p < 0.001; ****p < 0.0001. (D) Immunohistochemical analysis of puromycin in CD4+ TILs. Puro+ cells (pink) are concentrated in some tumor areas, where clusters of highly translating CD4+ cells (brown) are found. Scale bars, 10 \u03bcm. (E) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for pS6(S235/236) within Puro+ and Puro- CD4+ and CD8+ TILs shows that, in vivo, most translating TILs have the mTORC1-S6K pathway active. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) ****p < 0.0001. (G) Experimental outline. Tumor cells were injected in recipient mice that were given intraperitoneal injections of 5 mg/kg everolimus for 2 consecutive days. Puromycin was injected 1 hr before sacrificing mice and collecting TILs cells for subsequent flow cytometry analysis. (H) Representative flow cytometry plots and statistical analysis (mean \u00b1 SEM) for puromycin within CD4+ and CD8+ TILs showing that the mTOR inhibitor everolimus reduces translation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 10 mice per experiment) **p < 0.01; ***p < 0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Gating scheme used for assessing puromycin incorporation in CD4+ and CD8+ cells in the spleen in Figure 2. (B) Gating scheme used for assessing puromycin incorporation in CD4+ and CD8+ tumor-infiltrating lymphocytes (TILs) in Figure 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Immunohistochemical analysis of puromycin in CD4+ tumor-infiltrating lymphocytes (TILs) in MC38 tumor microenvironment (TME) shows that only a fraction of lymphocytes is translationally active.Scale bars, 20 \u03bcm. (B and C) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for pS6(S240/244) within Puro- and Puro+ CD4+ (B) and CD8+ (C) TILs proving that, in vivo, the mTORC1-S6K pathway is active in most of translating TILs. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 10) ****p < 0.0001. (D) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for p-eIF4E(S09) within Puro- and Puro+ CD4+ TILs showing that a small pool of translating TILs is positive for p-eIF4E. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7) **p < 0.01. (E) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for pS6(S235/236) within TCR\u03b2+ TILs in untreated and everolimus-treated B16 mice proving that mTOR inhibition reduces rpS6 phosphorylation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7) *p < 0.05.\n\nIHC on paraffin-embedded B16 tumor sections also confirmed that (i) the levels of incorporated puromycin were heterogenous inside the tumor, with areas having high expression mixed with areas devoid of expression (Figure 2D), and that (ii) scattered lymphocytes show a robust puromycin immunoreactivity (Figure 2D). To substantiate these results within a different tumor microenvironment, we engrafted C57BL/6 mice with MC38 colon adenocarcinoma cells. Similar to what was obtained for B16 TILs, we found that TILs have significant higher levels of puromycin signal over spleen-resident T cells, and that, in vivo, within the tumor, only a fraction of lymphocytes is translationally active (Figure 2\u2014figure supplement 2A).\n\nWe then addressed whether puromycin incorporation, in vivo, was associated with mTORC1 signaling. TCR stimulation causes an increase of mTORC1 activity that can be detected by the analysis of rpS6 phosphorylation (Ricciardi et al., 2018). Notably, both CD4+ (Figure 2E, Figure 2\u2014source data 1) and CD8+ (Figure 2F, Figure 2\u2014source data 1) cells containing high levels of puromycin were consistently positive for rpS6 phosphorylation. We found that phosphorylation of rpS6 in the puromycin-positive cells was significantly higher both at Ser235/236 (Figure 2E\u2013F) and at Ser240/244 (Figure 2\u2014figure supplement 2B-C, Figure 2\u2014figure supplement 2\u2014source data 1). In order to verify that also in vivo, as in vitro (Figure 1), inhibition of the mTORC1 pathway affected the translation of TILs, we treated mice with mTOR inhibitor everolimus (Figure 2G). In short, treatment of mice with everolimus caused a decrease in the percentage of puromycin-positive TILs (Figure 2H, Figure 2\u2014source data 1), and a slight but significant decrease in rpS6 phosphorylation (Figure 2\u2014figure supplement 2D, Figure 2\u2014figure supplement 2\u2014source data 1).\n\nMnk inhibition in vitro did not result in significant changes in puromycin incorporation (Figure 1). However, in vivo, a very small pool of TILs was positive for p-eIF4E, and clearly segregated with high puromycin incorporation (Figure 2\u2014figure supplement 2E, (Figure 2\u2014figure supplement 2\u2014source data 1)). In conclusion, the activation of specific signaling pathways, at the single-cell level, explains high puromycin incorporation. Among them, the mTORC1 pathway affects the global translation rate of a substantial percentage of TILs.\n\n### Hypoxic niches reduce puromycin incorporation\n\nNext, the relationship between puromycin incorporation and hypoxia, in vivo, was analyzed. We injected mice with pimonidazole (PMO), a chemical probe that forms protein adducts in viable hypoxic cells (Rademakers et al., 2011) and puromycin (Figure 3A) and performed stainings on tissue sections for the endothelial marker CD31. It was found that the amount of tumor areas that were not vascularized was limited, the maximal distances between vessels being in the range of 150\u2013200 \u00b5m (Figure 3B). Subsequently, we purified both CD4+ (Figure 3C) and CD8+ (Figure 3D) TILs and analyzed by FACS analysis the relationship between PMO and puromycin incorporation. In spite of the relative absence of highly hypoxic tumor areas, the data show that, in vivo, an inverse relationship between PMO staining and puromycin exists (Figure 3C and D, Figure 3\u2014source data 1). Next, we performed immunofluorescence analysis. We clearly detected cells triple-stained for PMO, CD4+ and p-eIF2\u03b1\u2212like immunoreactivity in hypoxic areas (Figure 3E), but not in non-hypoxic areas (Figure 3\u2014figure supplement 1). We suggest that hypoxia acts as a repressor of translation also in vivo, in TILs. These data raise the question whether the phenotype of TIL is specific.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig3-v2.jpg)\n\n**Figure 3.:** (A) Experimental outline. Tumor cells were injected in recipient mice. Puromycin was injected intraperitoneally together with the hypoxia marker pimonidazole (PMO). T cells were collected 1 hr later for the analysis. (B) CD31 staining in tumor specimens shows ample vascularization with limited areas far from blood vessels suggesting the absence of truly hypoxic areas and limited hypoxic gradients. Scale bars, 15 \u03bcm. (C and D) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for PMO+ within Puro+ and Puro- CD4+ and CD8+ TILs show, in vivo, the inverse correlation between hypoxia and translational efficiency. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7\u20138 mice per experiment) **p < 0.01. (E) Representative immunofluorescence images showing that in tumor specimens the majority of PMO+ CD4+ TILs are p-eIF2\u03b1(S51)+. Scale bars, 10 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative immunofluorescence images proving the absence of hypoxic areas (PMO, in red) and PMO+ p-eIF2\u03b1(S51)+ CD4+ cells in the spleen specimens, taken as control. Scale bars, 10 \u03bcm.\n\n### High translation rate in CD8+ cells correlates with IFN-\u03b3 production and CD-44 expression\n\nWe verified the existence of a relationship between high translation and the CD8+ phenotype by measuring through flow cytometry the expression of markers of memory and effector T cell differentiation, activation, as well as of relevant costimulatory and coinhibitory molecules. The experimental design is shown in Figure 4A. First of all, we observed a maximum of puromycin incorporation in CD44+ CD8+ T cells, indicating that Puro+ CD8+ TILs largely retain an activated-like phenotype (Figure 4B, Figure 4\u2014source data 1). We co-stained freshly isolated CD8+ TILs for puromycin and the following sets of markers: (i) PD-1, TIM3, CTLA-4, and TIGIT that characterize CD8 T cell exhaustion within the tumor microenvironment (Anderson et al., 2016); (ii) the T cell receptor costimulatory proteins CD28, ICOS, SLAMF6, and CD27, pro-inflammatory IFN-\u03b3 and TNF-\u03b1 cytokines, Granzyme B; (iii) tissue-resident T cells markers CD103, CD69, and CCR5 (Golubovskaya and Wu, 2016); (iv) ectonucleoside triphosphate diphosphohydrolase-1 CD39 (Takenaka et al., 2019). We decided to apply a statistical design in which we pooled the number of events observed in all animals, rather than a direct comparison of Puro+ versus Puro-, in a single animal. By this approach, we may underestimate statistical significance, but we obtain relationships that may have a general significance. First, we found a strong positive relationship between puromycin incorporation and Ki67 staining, suggesting clonal amplification (proliferation) of actively translating cells (Figure 4C, Figure 4\u2014source data 1). Notably, we did not detect statistical differences in the expression of PD-1, TIGIT, CTLA-4, CD28, CD69, CCR5, CD103, and TNF-\u03b1 between high and low puromycin incorporating cells (Figure 4D, Figure 4\u2014source data 1). Conversely, we found a positive relationship between puromycin incorporation and the expression of TIM3, SLAMF6, CD39, Granzyme B, CD27, and IFN-\u03b3. In turn, ICOS expression was selectively decreased in highly translating CD8+ cells (Figure 4D). Next, we analyzed co-marker expression. We found that highly translating cells were characterized by having high TIM3-low SLAMF6, high TIM3-high PD-1 (Figure 4E\u2013F, Figure 4\u2014source data 1). Consistently, high PD1 and high TIM3 expression associated with Ki67+ cells (Figure 4\u2014figure supplement 1A-B, Figure 4\u2014figure supplement 1\u2014source data 1). Altogether, these data show that translationally active CD8+ T cells are confined in non-hypoxic areas, characterized by the activation of the mTORC1 pathway and can be defined by a specific immunophenotype. Taken together the data suggest the existence of clonally expanding CD8+ cells, highly translating, and moving versus the exhaustion status.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic diagram for the experiment. (B) Representative plots (left) and statistical analysis (mean \u00b1 SEM) of gated CD44+ CD8+ TILs analyzed for puromycin incorporation. Quantitation shows an enrichment for the expression of CD44. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 6 mice per experiment) **p < 0.01. (C) Representative plots (left) and statistical analysis (mean \u00b1 SEM) of Ki67+ within Puro+ and Puro- CD8+ TILs. Quantitation shows a positive correlation between translation rate and proliferation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) **p < 0.01. (D) Statistical analysis (mean \u00b1 SEM) for the indicated markers within Puro+ and Puro- CD8+ TILs shows that Puro+ translating CD8+ TILs are enriched for TIM3, SLAMF6, CD39, CD27, ICOS, and IFN-\u03b3 expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) **p < 0.01; ****p < 0.0001. (E) Representative plots and statistical analysis (mean \u00b1 SEM) for SLAMF6 and TIM3 within Puro+ and Puro- CD8+ TILs shows that Puro+ translating CD8+ TILs are enriched for TIM3 expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05. (F) Representative plots and statistical analysis (mean \u00b1 SEM) for PD1 and TIM3 within Puro+ and Puro- CD8+ TILs show that Puro+ translating CD8+ TILs are enriched for TIM3 and PD1 expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Quantitation shows that Ki67+ CD8+ TILs express significantly more PD1 and TIM3 than Ki67- CD8+ TILs. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) ****p < 0.0001.\n\n### Efficiently translating CD4+ TILs are enriched for CTLA-4 expression and suppressor Tregs\n\nWe asked whether translating Puro+ CD4+ T cells had specific phenotypes. Next, we measured by flow cytometry the expression of markers of memory and effector T cell differentiation, activation, as well as of relevant costimulatory and coinhibitory molecules (Figure 5A). Herein, we summarize the main findings. We observed an increase in puromycin incorporation in CD44+ cells (Figure 5B, Figure 5\u2014source data 1). Next, we analyzed the expression of costimulatory and coinhibitory proteins, that is, PD-1, TIGIT, TIM3, CTLA-4, SLAMF6, CD39, CD27, ICOS, CD28, CD69, CCR5, and CD103 (Figure 5C, Figure 5\u2014source data 1). Some of these markers clustered with puromycin incorporation as shown in Figure 5C. Ki-67 labeling was robustly enriched in cells incorporating higher levels of puromycin (Figure 5\u2014figure supplement 1A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic diagram for the experiment. (B) Representative plots (left) and statistical analysis (mean \u00b1 SEM) of gated CD44+ CD4+ tumor-infiltrating lymphocytes (TILs) analyzed for puromycin incorporation. Quantitation shows an enrichment for the expression of CD44. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 6 mice per experiment) **p < 0.01. (C) Statistical analysis (mean \u00b1 SEM) for the indicated markers within Puro+ and Puro- CD4+ TILs shows that Puro+ translating CD4+ TILs are enriched for CTLA4, CD39, CD27, ICOS, CCR5, and CD103 expression. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05; **p < 0.01; ****p < 0.0001. (D) Representative plots (left) and statistical analysis (mean \u00b1 SEM) of gated CD25+ Foxp3+ CD4+ lymphocytes show that the number of Puro+ Tregs is higher in tumors versus spleen. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 4\u20135 mice per experiment) ***p < 0.001. (E) Immunohistochemical analysis of puromycin in Foxp3+ TILs shows that clusters of highly translating Foxp3+ cells are found. Scale bar, 20 \u03bcm. (F) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for pS6(S235/236) within Puro+ and Puro- Tregs showing that, in vivo, most of translating Tregs have the mTORC1-S6K pathway active. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 7) ***p < 0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig5-figsupp1-v2.jpg)\n\nTregs can be identified by CD25-FoxP3. We analyzed the difference in translation between tumor infiltrating Tregs and spleen-resident Tregs. Notably, only 4\u20136% Tregs of the spleen incorporated puromycin (Figure 5D, Figure 5\u2014source data 1), whereas approximately 40% of tumor-infiltrating Tregs incorporated high levels of puromycin (Figure 5D, Figure 5\u2014source data 1). In keeping with these findings, IHC on paraffin-embedded tumor sections showed that puromycin signals overlap with FoxP3 staining (Figure 5E). Measurement of intracellular levels of phosphorylated S6 ribosomal protein (pS6) in gated Puro+ and Puro- Tregs showed, in line with previous observations, that pS6 labeling partitioned with high levels of puromycin, both for rpS6 S235/S236 (Figure 5F, Figure 5\u2014source data 1) and for rpS6 Ser240/244 (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 1\u2014source data 1).\n\nCTLA-4 and TGF-\u03b2 are Treg markers that correlate with the suppression activity of Tregs (Sakaguchi et al., 2020). We therefore gated Tregs and analyzed the correlation between puromycin incorporation, CTLA-4 and TGF-\u03b2. Puro+ Tregs showed the selective upregulation of CTLA-4 with respect to the Puro- counterpart (Figure 6A, Figure 6\u2014source data 1). Intracellular staining for TGF-\u03b2 revealed enhanced secretion by Puro+ Tregs (Figure 6\u2014source data 1, ). Puro+ Tregs had also higher levels of Ki67 staining (Figure 6C, Figure 6\u2014source data 1). Overall, our data confirm the hypothesis that, within tumors, the main translating and expanding CD4+ subset is represented by suppressive Tregs with mTORC1 activation. If the hypothesis is true, then the expression of Ki67 should be higher in Puro+ Tregs, compared to Puro+ Tconv. Indeed, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv cells (Figure 6D, Figure 6\u2014source data 1), confirming that the tumor microenvironment preferentially fosters cell cycling of immunosuppressive cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for CTLA-4+ (B), TGF-\u03b2+ (C), Ki67+ (C), within Puro+ and Puro- Tregs shows that, in vivo, Puro+ translating Tregs are more proliferative but also exhibit a more activated phenotype than Puro- Tregs. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6\u20139) *p < 0.05; **p < 0.01. (D) Representative plots (left) and statistical analysis (mean \u00b1 SEM) for Ki67+ within Puro+ Tregs and Puro+ Tconv shows that, in vivo, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv (C), indicating that the former are more proliferative than the latter. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6) **p < 0.01.\n\n## Discussion\n\nTILs have been characterized by several transcriptomic studies leading to their extensive multi-lineage phenotypic classification (Paijens et al., 2021). In this study, we found that the translational activity of TILs is not uniformly distributed, being more intense in CD8+ T cells and CD4+ Tregs. A stratification of the translational capability of T cells associated with phenotypic markers shows that highly translating T cells are characterized by the presence of cytotoxic markers for CD8+ and suppressive markers for CD4+. Finally, highly translating T cells are characterized by markers for active cycling. The relevance of our observations is consistent with clinical evidence indicating that CD8+/Treg ratio is, in general, a strong predictive parameter for survival in cancer (Gooden et al., 2011). We will discuss some issues derived from our data.\n\nTranslation is strongly regulated by microenvironmental cues and its impairment acts as a limiting factor in tumorigenesis and tumor growth (Barna et al., 2008; Miluzio et al., 2011). Consequently, tumor genetic lesions converge on the translational machinery, leading to its constitutive activation, and rendering translation relatively independent of the signals posed by the microenvironment (Loreni et al., 2014; Robichaud et al., 2019). The relevance of the translational machinery in the cell autonomous growth of tumors is demonstrated by evidence indicating that genetic depletion of translation factors greatly reduces tumorigenesis and tumor growth (Barna et al., 2008; Miluzio et al., 2011; Truitt et al., 2015). In the tumor microenvironment, tumor cells are therefore taking full advantage of the restrictive nutrient conditions, thanks to the activation of oncogenic mutations. In sharp contrast, TILs lack mutations that alter their capability to synthesize proteins in conditions of high stress, and as such, are bound to permissive conditions in order to translate their transcriptional repertoire. In this context, one important question is whether the unfavorable conditions of the tumor microenvironment are affecting the action of some TILs classes, and whether they lead to specific developmental trajectories.\n\nHypoxia, far from being surprising, seems to act as a general inhibitor of translation of TILs. It is known since long that hypoxia inhibits translation acting on AMPK (Horman et al., 2002) and eIF2\u03b1(Koumenis et al., 2002). Phosphorylation of eIF2\u03b1 occurs through four distinct kinases, PERK, GCN2, PKR, and HRI, that, together, are part of the integrated stress response, a complex set of events that drives, among others, the shut-off of general translation and the activation of specific mRNA translation (Rios-Fuller et al., 2020). Importantly, all four kinases are expressed in T cells at the mRNA level (Critchley-Thorne et al., 2007). PERK is considered a major regulator of translational control of hypoxia (van den Beucken et al., 2006). Unfortunately, we were not able to efficiently detect the specific activity of single eIF2\u03b1 kinases in TILs, therefore it remains unresolved whether also in our conditions, PERK is the major regulator of translational shut-off and of eIF2\u03b1 phosphorylation. It is possible that other pathways can contribute to the translational shut-off, given the sequel of adapting responses, especially in chronic conditions (Schito and Semenza, 2016), and considering that amino acid limitations affect TCR signaling (Ron-Harel et al., 2019). Oxygen sensing in the immune microenvironment shapes immunological responses, very often with confounding reports. In the past, it has been proposed that hypoxia leads to the preferential differentiation of peripheral, intratumor Tregs (Dang et al., 2011). In light of what we observe, it is unlikely that Treg in hypoxic environment can contribute to immune suppression, unless a sequel of phenomena occurs: first, the hypoxic environment causes conversion of conventional T cells in Tregs, which then persist for some time; second, the hypoxic environment induces angiogenesis, thus reviving the suppression and translation capability of converted Tregs. It is obviously possible that a slow adaptation and phenotypic change can occur in human tumors, where the equilibrium between the immune system and tumor growth may last years. Summarizing, we think that our data are more consistent with a model in which the expansion of suppressive, intratumoral Tregs requires active translation and simultaneous increased rate of fatty acid synthesis (Pacella et al., 2018) and, in general, is associated with high glycolytic capability (Procaccini et al., 2016). In contrast, hypoxia may acutely impair the suppressive capability of Tregs.\n\nThe pathways that connect to translation are several, and their description is beyond the limits of this paper (Roux and Topisirovic, 2018). Our data indicate that the mTORC1 pathway is a major controller of TIL translation. In addition, we found that the Mnk/eIF4E pathway even if it was not massively detectable in most T cells, led to a subset of p-eIF4E positive cells correlating with high puromycin incorporation. From this perspective, it will be interesting to characterize subset of highly translating cells, in relationship to the activated pathways. This effort may require the establishment of new technologies to combine the detection of p-eIF4E with sequencing strategies, but it will be important in order to understand the impact of Mnk inhibition on cancer growth (Bramham et al., 2016). We were unable to effectively characterize the eIF6 pathway in TILs, due to the absence of antibodies detecting its phosphorylation (Ceci et al., 2003). Overall, each lymphocyte can differentially regulate its transcriptional repertoire depending on the specific pathways that are activated.\n\nThe observation of a different phenotype between T cells incorporating high levels of puromycin and T cells incorporating low levels has far-reaching implications. The correlation between translation and Ki-67 expression is logically linked to the fact that cell cycle progression requires de novo protein synthesis to sustain cell growth. Several studies at the single-cell level, combining mRNAseq and TCR sequencing, have unveiled the clonal expansion of subset of T cells. Interestingly, one major expanding subset is the CD4+ Tregs. TCR sequencing of breast cancer-associated Tregs revealed that Tregs have little TCR sharing with conventional T cells, confirming that Tregs in tumors are mainly generated through local expansion (Plitas et al., 2016). Local expansion of Tregs is supported by our data according to which translating T cells are Ki-67 positive. In general, we did not find differences between the analysis of the B16 mouse model and the MC38 one. We speculate that the local expansion of a translating phenotype is a general phenomenon and it occurs in areas that are not hypoxic.\n\nThe phenotypic identity of translating cells extends beyond the co-expression of Ki-67 and puromycin incorporation. CD8+ cells with prolonged exposure to antigens enter a state of exhaustion characterized by the elevated expression of inhibitory receptors (e.g., PD-1, CTLA-4, TIM-3, TIGIT, and LAG3). TILs expressing markers of exhaustion (PD-1, LAG3, and TIM3) are more likely to express IFN-\u03b3 (Gros et al., 2014). While exhausted CD8+ T cells have reduced function as compared to those elicited by an acute infection, several data suggest that are the exhausted CD8+ T cells that are exerting residual control over tumor growth (Li et al., 2019). Exhausted CD8+ T cells still play a critical role in cancer. Indeed, it is still confused how exhaustion is related to various properties, such as cell proliferation and effector functions. According to the operational definition given above, exhaustion is clearly not associated with the loss of translational activity, which results, for instance, in the enrichment of Ki-67 and TIM3 expression in Puro+ cells. The higher expression of CTLA-4 and TGF-\u03b2 (Sakaguchi et al., 2020) in CD4+ translating cells fully correlates with suppressive properties.\n\nIn conclusion, the tumor microenvironment has been shown, in decades of studies, to provide a full range of stimuli (Maman and Witz, 2018) that may regulate translation, like hypoxia or nutrients. We suggest that two T cells that have an identical \u2018transcriptome\u2019 and protein repertoire infiltrate a tissue in two different microenvironment niches and are subject to rapid and differential translational regulation. If translational regulation persists, these two cells will have different developmental trajectories, as clearly shown by our study in which high puromycin incorporation goes hand in hand with the expression of specific markers. Last, our data suggest that T cell receptor stimulation and hypoxia are two main microenvironment clues that regulate the T cell trajectory. This further layer of complexity, however, rather than increasing the number of players in the process of tumor immunoediting enlightens the opposing role of CD8+ cytotoxic lymphocytes and CD4+ Tregs. Further characterization of translational control in these cells is required.\n\nLimitations of our study: Quantitative puromycin incorporation was used to arbitrarily discriminate two T cell populations, highly translating and lowly translating. It is evident that this rough subdivision may not completely describe the tumor microenvironment. It is also evident that time may change the translational profile of a T cell, and a highly translating cell may shift to a lowly translating one if the environmental conditions change: accordingly, we have currently no clues on whether the highly translating phenotype is stable.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>B16F10</td>\n      <td>PMID:32699136</td>\n      <td></td>\n      <td>Cells were obtained from Dr Matteo Bellone, HSR Scientific Institute, Milan, Italy</td>\n    </tr>\n    <tr>\n      <td>Cell line (Mus musculus)</td>\n      <td>MC38</td>\n      <td>PMID:32699136</td>\n      <td></td>\n      <td>Cells were obtained from Dr Maria Rescigno, Humanitas University, Rozzano (MI), Italy</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Puromycin, clone 12D10</td>\n      <td>Millipore</td>\n      <td>Cat#: MABE343, RRID:AB_2566826</td>\n      <td>WB (1:10000), IHC (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Vinculin, clone V284</td>\n      <td>Millipore</td>\n      <td>Cat#: 05\u2013386, RRID:AB_11212640</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal anti-Actin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: A4700, RRID:AB_476730</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti phospho-rpS6 Ser235/236</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 2211, RRID:AB_331679</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti phospho-rpS6 Ser240/244</td>\n      <td>Cell Signaling</td>\n      <td>Cell Signaling Technology Cat#: 2215, RRID:AB_331682</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit polyclonal anti-phospho-eIF2\u03b1 Ser51</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 3597, RRID:AB_390740</td>\n      <td>IF (1:400), ELISA (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-FoxP3</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 98377, RRID:AB_2747370</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-CD4</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 25229, RRID:AB_2798898</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rat monoclonal anti-CD4</td>\n      <td>BioLegend</td>\n      <td>BioLegend Cat#: 100401, RRID:AB_312686</td>\n      <td>IF (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit monoclonal anti-CD31</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 77699, RRID:AB_2722705</td>\n      <td>IHC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC conjugated anti-CD62L</td>\n      <td>eBioscience</td>\n      <td>Clone: MEL-14, Cat#: 17-0621-83</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-CCR5</td>\n      <td>eBioscience</td>\n      <td>Clone: 7A4, Cat#: 12-1951-82</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal FITC conjugated anti-ICOS</td>\n      <td>eBioscience</td>\n      <td>Clone: C398.4A, Cat#: 11-9949-82</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD39</td>\n      <td>eBioscience</td>\n      <td>Clone: 24DMS1, Cat#: 25-0391-30</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PerCP/EF710 conjugated anti-CD3</td>\n      <td>eBioscience</td>\n      <td>Clone: 17A2, Cat#: 46-0032-80</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-phospho-S6</td>\n      <td>eBioscience</td>\n      <td>Clone: cupk43k, Cat#: 12-9007-41</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal FITC conjugated anti-CD44</td>\n      <td>BioLegend</td>\n      <td>Clone: IM7, Cat#: 103008</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD25</td>\n      <td>BioLegend</td>\n      <td>Clone: PC61, Cat# 102016</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC/Cy7 conjugated anti-CD4</td>\n      <td>BioLegend</td>\n      <td>Clone: RM4-5, Cat#: 100526</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD4</td>\n      <td>BioLegend</td>\n      <td>Clone GK1.5, Cat#: 100422</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD3</td>\n      <td>BioLegend</td>\n      <td>Clone: 145\u20132C11, Cat#: 100320</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal Pacific Blue conjugated anti-CD8\u03b1</td>\n      <td>BioLegend</td>\n      <td>Clone: 53\u20136.7, Cat#: 100725</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-CTLA-4</td>\n      <td>BioLegend</td>\n      <td>Clone: UC10-4B9, Cat#: 106305</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC conjugated anti-Tim3</td>\n      <td>BioLegend</td>\n      <td>Clone: B8.2C12, Cat#: 134007</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PerCP/Cy5.5 conjugated anti-PD1</td>\n      <td>BioLegend</td>\n      <td>Clone: RMPI-30, Cat#: 109120</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PerCP/Cy5.5 anti-CD27</td>\n      <td>BioLegend</td>\n      <td>Clone: LG.3A10, Cat#: 124214</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal FITC conjugated anti-CD28</td>\n      <td>BioLegend</td>\n      <td>Clone: E18, Cat#: 122007</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-CD103</td>\n      <td>BioLegend</td>\n      <td>Clone: 2E7, Cat#: 121406</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD69</td>\n      <td>BioLegend</td>\n      <td>Clone: H1.2F3, Cat#:104526</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE/Cy7 conjugated anti-TIGIT</td>\n      <td>BioLegend</td>\n      <td>Clone: 1G9, Cat#:142107</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-SLAMF6</td>\n      <td>BioLegend</td>\n      <td>Clone: 330-AJ, Cat#:134605</td>\n      <td>FC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC conjugated anti- FoxP3</td>\n      <td>eBioscience</td>\n      <td>Clone: FJK-16s, Cat#: 17-5773-82</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-Ki67</td>\n      <td>eBioscience</td>\n      <td>Clone: SolA15, Cat#: 12-5698-80</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal RedMab 549 conjugated anti-PMO</td>\n      <td>Hypoxiprobe</td>\n      <td>Cat#: 5914</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC of FITC conjugated anti-Puromycin</td>\n      <td>Millipore</td>\n      <td>Clone: 12D10</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal PE conjugated anti-IFN-\u03b3</td>\n      <td>BioLegend</td>\n      <td>Clone: XMG1.2 Cat#: 505808</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC conjugated anti- TNF-\u03b1</td>\n      <td>eBioscience</td>\n      <td>Clone: MP6-XT22, Cat#: 506308</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal APC conjugated anti-Granzyme B</td>\n      <td>BioLegend</td>\n      <td>Clone: GB11, Cat#: 515303</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse monoclonal BV421 conjugated anti-TGF-\u03b2</td>\n      <td>Biolegend</td>\n      <td>Clone: TW7-16B4, Cat#: 141407</td>\n      <td>FC (1:100)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BD Fixation Permeabilization Kit</td>\n      <td>eBioscience</td>\n      <td>Cat#: 554714</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>eBioscience FoxP3 staining buffer set</td>\n      <td>eBioscience</td>\n      <td>Cat#:: 00-5523-00</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CD4+ T Cell Isolation Kit</td>\n      <td>Miltenyi Biotec</td>\n      <td>130-091-155</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Human T-Activator CD3/CD28</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>11131D</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Puromycin</td>\n      <td>Sigma-Aldrich</td>\n      <td>P8833</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PMO</td>\n      <td>Hydroxyprobe</td>\n      <td>Cat#: HP1-XXX</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Everolimus</td>\n      <td>Sigma-Aldrich</td>\n      <td>SML2282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PPP242</td>\n      <td>Sigma-Aldrich</td>\n      <td>P0037</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MNK inhibitor</td>\n      <td>Sigma-Aldrich</td>\n      <td>454861</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Human samples and mice\n\nHuman blood samples from healthy male or female donors were collected with written informed consent, and collection was performed according to protocols approved by Ethics Committee of Fondazione Istituto di Ricovero e Cura a Carattere Scientifico Ca\u2019Granda Ospedale Maggiore Policlinico. All animal experiments were performed in accordance with the Swiss Federal Veterinary Office guidelines and approved by the Ethical Committee of the Cantonal Veterinary with authorization number TI 37/2016. C57BL/6J mice were bred in specific pathogen-free facility at the Institute for Research in Biomedicine (Bellinzona, Switzerland). Mice were housed, five per cage, in ventilated cages under standardized conditions (20\u00b0C \u00b1 2\u00b0 C, 55% \u00b1 8% relative humidity, and 12 hr light/dark cycle). Food and water were available ad libitum, and mice were examined daily.\n\n### Cell isolation and culture from human blood\n\nPBMCs were isolated from blood samples by Ficoll-Hypaque density-gradient centrifugation. CD4+ T cells were enriched from PBMCs by magnetic separation (AutoMACS, Miltenyi Biotec) using human CD4+ T Cell Isolation Kit (Miltenyi Biotec) according to the manufacturer\u2019s instructions before flow sorting on a FACSAria II (BD Biosciences).\n\nCD4+ T cells were activated with anti-CD3/CD28-coated beads (Life Technologies Dynabeads T-Activator) and IL-2 (20 IU/mL) and cultured in RPMI 1640 medium (Life Technologies) supplemented with 1% penicillin-streptomycin (Life Technologies), 2 mM GlutaMAX (Life Technologies), 1 mM sodium pyruvate (STEMCELL Technologies) for the indicated time intervals.\n\nTypical cell culture conditions (37\u00b0C, 5% CO2, and environmental [21%] oxygen) were used and the conditions referred to as normoxia. Hypoxia was generated with an oxygen/CO2 controller incubator (Galaxy 48R; Eppendorf). It was set at 1% oxygen and 5% CO2.\n\n### Cell isolation from mice specimens\n\nT cells were obtained from cell suspensions of spleen. For TILs isolation, tumors were cut in small pieces and resuspended in RPMI1640 with 1.5 mg/mL Type I Collagenase (Sigma), 100 mg/mL DNase I (Roche), and 5% FBS, digested for 45 min at 37\u00b0C under gentle agitation. The digestion product was then passed through a 70 \u03bcm cell strainer to obtain a single-cell suspension. Lymphocytes were then enriched by Percoll density gradient following the manufacturer\u2019s protocol.\n\n### Murine tumor cell lines\n\nB16F10 and MC38 cells were cultured in RPMI1640 supplemented with 10% heat-inactivate FBS, 100 U/mL penicillin/streptomycin, and 100 U/mL kanamycin. Cells were tested for the absence of Mycoplasma and maintained in 5% CO2 at 37\u00b0C. Frozen aliquots were thawed for each in vivo experiment and passaged in vitro for the minimum time required. Tumor cells at 70\u201380% confluency were harvested by diluting them 1:5 in 0.25% trypsin.\n\n### In vitro measurement of protein synthesis\n\nFor in vitro measurements of protein synthesis, CD4+ T cells stimulated in vitro for the indicated time intervals were treated with 5 \u03bcg/mL puromycin for 10 min. Puromycin incorporation was then determined by flow cytometry or Western blotting as described later.\n\n### In vivo measurement of protein synthesis\n\nTo measure protein synthesis in vivo, mice were intraperitoneal injected with puromycin at a concentration of 50 mg/kg dissolved in PBS at pH 6.4\u20136.6; 1 hr later, mice were sacrificed, and mice specimens rapidly collected. Spleen or cutaneous tumors were further processed for flow cytometry or histology analysis as described later. The sample size was estimated according to the following parameters: power 80%, alpha 0.05, average means of Puro+ cells 60% \u00b1 20% for the tumor group and 30% for the non-tumor sample. Consequently, the minimal number was fixed to N = 5/group.\n\nFor the analysis of the effect of everolimus on translation rate and mTORC1 signaling, B16 mice were given intraperitoneal injections of 5 \u2009mg/kg everolimus (Sigma-Aldrich) dissolved in PBS for 2 consecutive days. Puromycin was injected 1 hr before sacrificing mice and collecting TILs for subsequent flow cytometry analysis.\n\n### In vitro stimulation of lymphocytes and hypoxia\n\nCD4+ T cells stimulated in vitro for 36 hr were transferred from 20% O2 to 1% O2 for the indicated times. Translation and eIF2\u03b1 phosphorylation were measured by flow cytometry and ELISA, respectively, as described later.\n\n### In vivo detection of tissue hypoxia\n\nPMO (Hydroxyprobe) was injected intraperitoneally at a concentration of 60 mg/kg dissolved in PBS at pH 6.4\u20136.6. After 1 hr, mice were killed and processed further for flow cytometry or fluorescence microscopy analysis, as described later.\n\n### In vitro eIF2\u03b1 phosphorylation detection with ELISA assay\n\nPhosphorylation of eIF2\u03b1 was measured by ELISA assay. For the assay, each well of a 96-well microtiter plate was coated overnight at 4\u00b0C in a humidified chamber with 20 \u03bcg of protein extracts of stimulated CD4+ T cells\u00ec either incubated for 4 hr under normoxia or hypoxia. Plate was then probed with either rabbit anti-total-eIF2\u03b1 antibody (1:500, Cell Signaling) or anti-phospho-specific eIF2\u03b1(S51) antibody (1:500, Cell Signaling), for 1 hr at room temperature, followed by incubation with HRP-conjugate secondary antibody for 30 min at room temperature and addition of ELISA colorimetric TMB reagent as a soluble substrate for the detection of peroxidase activity. The absorption intensity was obtained using the Model 680 Microplate Reader (Bio-Rad).\n\n### Histology, tissue stainings, antibodies, and imaging\n\nSpleen or tumor samples were either embedded in OCT and frozen or fixed overnight with 4% paraformaldehyde, transferred to 70% EtOH and embedded in paraffin as previously described (Rosso et al., 2004). Samples were then cut at 4 \u03bcm (paraffin) or 10 \u03bcm (frozen) and stained with hematoxylin and eosin (Sigma-Aldrich) for morphological analysis. Immunohistochemical and immunofluorescence analyses were performed as described previously (Manfrini et al., 2020a).\n\nPrimary antibodies were used at the following dilutions: mouse monoclonal to Puromycin 12D10 (1:500, Millipore), rabbit polyclonal to phospho-eIF2\u03b1(S51) (1:400, Cell Signaling), rabbit monoclonal to FoxP3 D2W8ETM (1:100, Cell Signaling), rabbit monoclonal to CD31 D8V9E (1:100, Cell Signaling), rabbit monoclonal to CD4 D7D2Z (1:100, Cell Signaling), rat monoclonal to CD4 GK1.5 (1:400, BioLegend). Secondary Alexa Fluor conjugated goat anti-mouse, donkey anti-rat, and donkey anti-rabbit antibodies were used at the 1:500 dilution (Thermo Fisher Scientific).\n\nSlides were mounted in glycerol supplemented with Mowiol 4\u201388 mounting medium (Sigma-Aldrich). White field images were acquired using a Leica DM1600 microscope. Fluorescence images were acquired using a confocal microscope (Leica TCS SP5) at 1024 \u00c5, ~1,024 dpi resolution. All the images were further processed with Photoshop CS6 (Adobe, Berkeley, CA) software.\n\n### Western blotting\n\nSDS-PAGE was performed on protein extracts obtained from human CD4+ T cell activated in vitro as previously described. Western blotting was performed as previously described (Ricciardi et al., 2018). The following antibodies were used for Western blotting: rabbit polyclonal to phospho-rpS6 Ser235/236 (1:1000, Cell Signaling), rabbit polyclonal to phospho-rpS6 Ser240/244 (1:1000, Cell Signaling), mouse monoclonal anti-Vinculin (1:1000, Millipore), mouse monoclonal anti-Actin (1:1000, Sigma), mouse monoclonal anti-Puromycin (1:10000, Millipore). Chemiluminescent signals were detected using Amersham ECL Prime (GE Healthcare Life Sciences) and images were acquired using the iBright CL750 Imaging System (Thermo Fisher Scientific).\n\nWhere indicated, cells were treated with either 2 \u03bcM PP242 (Sigma-Aldrich) or 3 \u03bcM MNK inhibitor (Sigma-Aldrich) for 30 \u2009min after 48 hr of Dynabeads stimulation.\n\n### Flow cytometry\n\nFor assessment of puromycin incorporation on human blood-derived samples, CD4+ T cells stimulated in vitro for the indicated times were fixed and permeabilized with Cytofix and Perm Buffer III buffers (both BD Biosciences) according to the manufacturer\u2019s protocol, and stained with FITC conjugated anti-Puromycin antibody (Millipore). Finally, cells were analyzed by flow cytometry, and the relative amount of protein synthesized quantified with FlowJo software.\n\nThe following anti-mouse mAbs were purchased from eBioscience: APC conjugated anti-CD62L (clone: MEL-14, Cat#: 17-0621-83), PE conjugated anti-CCR5 (clone: 7A4, Cat#: 12-1951-82), FITC conjugated anti-ICOS (clone: C398.4A, Cat#: 11-9949-82), PE/Cy7 conjugated anti-CD39 (clone: 24DMS1, Cat#: 25-0391-30) PerCP/EF710 conjugated anti-CD3 (clone: 17A2, Cat#: 46-0032-80), PE conjugated anti-phospho-S6 (clone: cupk43k, Cat#: 12-9007-41).\n\nThe following mAbs were purchased from BioLegend: FITC conjugated anti-CD44 (clone: IM7, Cat#: 103008), PE/Cy7 conjugated anti-CD25 (clone: PC61, Cat# 102016), APC/Cy7 conjugated anti-CD4 (clone: RM4-5, Cat#: 100526), PE/Cy7 conjugated anti-CD4 (clone GK1.5, Cat#: 100422) PE/Cy7 conjugated anti-CD3 (clone: 145\u20132 C11, Cat#: 100320), Pacific Blue conjugated anti-CD8\u03b1 (clone: 53\u20136.7, Cat#: 100725) PE conjugated anti-CTLA-4 (clone: UC10-4B9, Cat#: 106305), APC conjugated anti-Tim3 (clone: B8.2C12, Cat#: 134007), PerCP/Cy5.5 conjugated anti-PD1 (clone: RMPI-30, Cat#: 109120), PerCP/Cy5.5 anti-CD27 (clone: LG.3A10, Cat#: 124214), FITC conjugated anti-CD28 (clone: E18, Cat#: 122007), PE conjugated anti-CD103 (clone: 2E7, Cat#: 121406), PE/Cy7 conjugated anti-CD69 (clone:H1.2F3, Cat#: 104526), PE/Cy7 conjugated anti-TIGIT (clone: 1G9, Cat#:142107), PE conjugated anti-SLAMF (clone: 330-AJ, Cat#: 134605).\n\nIntracellular staining was performed using the BD Cytofix/Cytoperm and Perm/Wash buffers or, for intracellular FoxP3 (APC, clone: FJK-16s, eBioscience, Cat#: 17-5773-82), Ki-67 (PE, clone: SolA15, eBioscience, Cat#: 12-5698-80), PMO (Hypoxiprobe Red Mab 549, Cat#5914), and Puromycin (APC or FITC, clone#12D10, Millipore) staining, the eBioscience FoxP3 staining buffer set. For intracellular staining of IFN-\u03b3 (PE, clone: XMG1.2, Biolegend, Cat#: 505808), TNF-\u03b1 (APC, clone: MP6-XT22, eBioscience, Cat#: 506308), Granzyme B (APC, clone: GB11, Biolegend, Cat#: 515303), and TGF-\u03b2 (BV421-labeled, clone:TW7-16B4, Biolegend, Cat#:141407) T cells were incubated for 4 hr at 37\u00b0C in ionomycin (Sigma-Aldrich,750 ng/mL) and PMA (Sigma-Aldrich, 20 ng/mL). For the last 3 hr, Brefeldin (eBioscience, 1000\u00d7 Solution) was added to the cultures.\n\n### Statistical analysis\n\nThe data are expressed as mean \u00b1 SEM. Student\u2019t t test was used to compare pairs of data. In mice experiments, the statistical analysis was performed with the Prism Software (GraphPad). Comparisons of two groups were calculated using nonparametric Mann-Whitney test or ANOVA with Dunnett\u2019s post hoc test. Error bars, p values, and statistical tests are reported in the corresponding figure legends. All experiments were based on biological replicates, that is, different groups of mice or T cells from different donors. No samples were excluded from the analysis.\n\n### Source data\n\nExcel files are provided for FACS and ELISA analysis. Raw gels as Figure 1\u2014source data 1. Gels with cropped images as Figure 1\u2014source data 2.\n",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "c8717d4e-e85a-4d5b-a0cc-e4b2312c0a2b",
+      "submission_id": "7ba4936c-5fe0-4b7a-a98d-dc8ebd10baa0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Topisirovic, https://ror.org/056jjra10 Jewish General Hospital Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69015.sa0](https://doi.org/10.7554/eLife.69015.sa0)\n\nBy employing melanoma and colon cancer allograft mouse models, the authors show that tumor-infiltrating T-cells exhibit heterogeneity in levels of protein synthesis that correlates with their immunophenotypes. Moreover, some evidence is provided that the observed heterogeneity in protein synthesis rates in tumor-infiltrating T-cells levels is driven by distinct conditions in different parts of tumor microenvironment. Overall, these findings further corroborate the importance of mRNA translation in immune cell plasticity and suggest that relying on monitoring steady-state mRNA levels may not provide the full picture of immunophenotypes in tumor niche.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ivan Topisirovic, https://ror.org/056jjra10 Jewish General Hospital Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69015.sa1](https://doi.org/10.7554/eLife.69015.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"mTOR-dependent translation drives tumor infiltrating CD8+ Effector and CD4+ Treg cells expansion\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Ivan Topisirovic as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Carla Rothlin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ola Larsson (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) It was thought that the focus on mTOR signaling is too narrow and that other relevant pathways impinging on translation apparatus should be considered. These include integrated stress response and MNK/eIF4E axis, as these pathways have been implicated in adaptation to hypoxia and/or immune responses in neoplasia.\n\n2) In some parts of the manuscript methodology/analysis should be improved. Specifically, anti-phospho-S240/244 ribosomal protein S6 antibody should be used instead of the antibody recognizing phosphorylated S235/236, as the latter phosphoacceptor sites are not exclusively phosphorylated in a mTOR-dependent manner. In addition, it was found that the statistical tests used were in some cases inappropriate, as illustrated in reviews below.\n\n3) Assessing co-expression of the markers presented in figures 4D and 5D and relating their levels to protein synthesis activity was thought to be warranted in order to grasp full heterogeneity of tumor-infiltrating T cells.\n\n4) Finally, it was thought that the manuscript may benefit from additional editing.\n\nReviewer #1:\n\nIn this study, mouse models are employed to systematically establish protein synthesis activity of tumor-infiltrating CD4+ and CD8+ T lymphocytes in vivo. The effects of stimuli emanating from tumor niche on translational activity of CD4+ and CD8+ T lymphocytes were also studied. Using ex vivo experiments, the evidence is provided that T cell receptor stimulation induces protein synthesis and mTOR signaling in tumor-infiltrating T cells, whereas hypoxia exerts the opposite effect. Next, the authors used mouse melanoma and colorectal cancer models to confirm these findings. Using the same models, the authors show that tumor-infiltrating CD4+ and CD8+ T lymphocytes translate more than their counterparts in the spleen. Importantly, it was also observed that tumor-infiltrating lymphocytes also exhibit significant intercellular heterogeneity in translational activity. This was followed by establishing the correlations between levels of protein synthesis and T cell phenotypes using flow cytometry, which revealed strong correlation between levels of protein synthesis and immunophenotypes. Collectively, these findings support the tenet that translation plays a major role in establishing tumor-infiltrating T cell phenotypes, and demonstrate that there is pronounced intracellular heterogeneity in their protein synthesis activity. This heterogeneity in the levels of mRNA translation between tumor-infiltrating T cells may at least in part be explained by the difference in stimuli that these cells are exposed in distinct parts of tumor microenvironment. In long-term, this study may inspire single-cell proteomics and/or similar approaches that do not rely on steady-state mRNA levels to monitor the plasticity of tumor-infiltrating lymphocytes and thus provide molecular bases for more efficient immunotherapies.\n\nStrengths: Presented findings further support the critical role of the protein synthesis apparatus in establishing lymphocyte phenotypes, and emphasize the importance of considering alterations that occur downstream of changes in mRNA levels when determining the lymphocyte subtypes in the tumors. This is of particular interest considering recent increase in the number of single cell sequencing studies aiming to address composition of tumor-infiltrating lymphocytes, wherein correlations with phenotypes are driven based on steady-state mRNA composition of the cell. Methodologically, the clear advantage of this study, is that the most of the work was done in vivo, and is therefore of high physiological relevance. In addition, both melanoma and colon cancer models were employed, thereby suggesting that reported observations are likely to be generally applicable, and not cancer type-specific. In addition, the authors monitored the effects of cancer-relevant perturbations on protein synthesis, including T cell receptor stimulation and hypoxia. Overall, this study provides solid evidence that translation plays a major role in establishment of immunophenotypes of the tumor-infiltrating lymphocytes, and that interaction between tumor microenvironment and translational machinery may be responsible for intercellular heterogeneity of T cells in tumor niche.\n\nWeaknesses: The major drawback of this study is that it relies on correlation and lacks experiments aiming to decipher mechanisms underlying the interactions between tumor niche and translational machinery of tumor infiltrating lymphocytes. Moreover, it was thought that the focus on mTOR may be too narrow and that other signaling mechanisms known to modulate translation rates in response to environmental cues should also be investigated. Finally, it remains unclear whether the changes in protein synthesis rates affect all the mRNAs uniformly or induce selective perturbations in translational activity of specific subsets of mRNAs.\n\nNotwithstanding these weaknesses, it was thought that with appropriate revision, provided evidence is sufficient to support the major conclusion of the manuscript which is that the interactions between tumor microenvironment and translational machinery play a major role in determining immunophenotypes of tumor-infiltrating lymphocytes and that relying on steady-state mRNA levels may not be sufficient to grasp full plasticity of tumor-infiltrating T cells.\n\n\u2013 Sole focus of the study is on mTOR signaling. This is somewhat surprising as other mechanisms have been also shown to play a central role in translational reprogramming under hypoxia and T cell receptor stimulation (e.g. ISR, MNK-dependent phosphorylation of eIF4E, etc). Based on this, it was thought that more comprehensive assessment of alterations in signaling pathways that impinge on translational machinery is warranted to pinpoint signaling pathways that mediate the observed effects of tumor microenvironment on T lymphocytes.\n\n\u2013 Conclusions on alterations in mTOR signaling are based solely on monitoring phospho-rpS6 levels. Importantly, the antibody that the authors used recognizes S235/236 on rpS6 which are phosphorylated in cells lacking S6K1 and 2 (PMID: 15060135) and are phosphorylated by other AGC kinases (e.g. RSKs). The phoposho-acceptor site on rpS6 that is exclusively sensitive to alterations in the mTORC1/S6K signaling axis is S240/244 (PMID: 15060135) and thus, antibody recognizing S240/244 should be employed. To strengthen their conclusions, the authors should also add appropriate total antibody controls and monitor other mTORC1 targets (e.g. 4E-BPs, eEF2K).\n\n\u2013 Considering the general lack of mechanistic data to explain heterogeneity in translational activity of tumor-infiltrating T cells, it was thought that monitoring the impact of mTOR inhibitors as well as compounds targeting other signaling mechanisms that adjust protein synthesis in accordance to changes in cellular environment (e.g. ISRIB, MNK inhibitors) on T-cell immunophenotypes and heterogeneity in vivo would be informative.\n\n\u2013 It is well-established that in addition to changes in global protein synthesis levels, stressors such as hypoxia selectively affect translation of different mRNA subsets, whereby the latter changes are likely to significantly contribute to observed immunophenotypes. I understand that translatome-wide translational profiling is out of the scope of this short report and also technically very challenging, but perhaps authors should monitor mRNA and protein levels of selected number of factors that are known to be translationally regulated under these conditions and/or implicated in T cell biology in their system.\n\n\u2013 The article may benefit from some careful editing.\n\nReviewer #2:\n\nThe tumor microenvironment includes the extracellular matrix (ECM) and a multitude of cells including immune cells. During cancer progression, the tumor associated ECM and cell composition/activity is altered. For example, the activity of immune cells towards tumor cells is commonly reduced which facilitates e.g. tumor growth and metastasis. It is well established that, in vitro, activation of T lymphocytes leads to a dramatic upregulation of protein synthesis and increased proliferation. Yet, to what extent this is true in vivo is not yet characterized. In this manuscript, Benedetta De Ponte Conti et. al address this using a FACS-based approach whereby global protein synthesis (quantified by puromycin incorporation) is related to expression of established activation markers for CD4+ and CD8+ T cells in tumors from the B16/F10 melanoma model. The conclusions are largely in agreement with studies of in vitro models as activation of CD4 or CD8 cells induces proliferate and bolsters protein synthesis. This study thereby pinpoints the close relationship between protein synthesis and immune cell activity also in vivo. One particularly interesting finding is the links between protein synthesis and Treg phenotype. In aggregate, the claims are well supported and important. This study will likely fuel many additional studies trying to in greater detail understand how protein synthesis in immune cells relate to their function within the tumor microenvironment.\n\nThere are some parts I think could be more developed:\n\n1. There is a close link between protein synthesis and proliferation following activation of CD4 and CD8 T cells. This raises the question of how close puromycin incorporation associates with proliferation. In figure 5 S1, Ki67 vs protein synthesis is assessed in CD4+ T cells. This suggests a very close relationship. IS there a corresponding relationship for CD8+ T cells? Are there any aspects of the protein synthesis profile which do not associate with proliferation? What would the phenotype of such cells be?\n\n2. All analyses are performed on populations of cells but there are no cross-comparisons between marker expression. I.e. is there one subset of T cells with high protein synthesis which express most of these markers (Figure 4D) or are there subsets of high protein synthesis cells which express subsets of markers? I am not sure if it is technical possible, but it would be interesting to assess co-expression of the identified markers in figure 4D and 5D and how their expression relates to protein synthesis.\n\n3. Analysis is largely qualitative when assessing expression of makers and protein synthesis. Perhaps it would be informative to also perform a quantitative analysis within single tumors?\n\n4. It is unclear to me what the relationship between T cell exhaustion and protein synthesis (and also proliferation) is based on the presented data. It seems logical to expect reduced protein synthesis in exhausted T cells, but this may not be the case.\n\nReviewer #3:\n\nOverall the figures and the text were clear and concise and the data well described. The data shown support the claims made, but the authors have not examined the other major pathway for regulation of translation. My main issues relate to the first three figures.\n\n1. The authors focus on the regulation of protein synthesis through mTOR, however translation initiation is also regulated by eIF2. Moreover, the PERK-eIF2-ATF4 axis has been shown to be important for tumour cell adaptation to stress \u2013 therefore, as all four eIF2 kinases are expressed in these models, it is important to determine any effect from eIF2 on translation activation/inhibition:\n\n\u2013 What are the levels of eIF2\u03b1 phosphorylation in the -/+puromycin cell populations (Figure 1 and 2)?\n\n\u2013 As hypoxia is known to regulate eIF2 kinases what is the activation status of the four kinases in these model systems during hypoxia (Figure 1 \u2013 3)?\n\n\u2013 It is known that mTOR signalling can crosstalk to eIF2 signalling, and vice-versa, so how do the levels of eIF2\u03b1 phosphorylation (and activity of eIF2 kinases) correlate with mTOR activity in these models during hypoxia (Figure 1 \u2013 3)?\n\n\u2013 To support the author's conclusions it would be necessary to show that the regulation of translation in this model is independent of eIF2 signalling.\n\n2. The author's state at various points that the data shows mTOR activity is increased in the puromycin positive proportion of cells, however they do not directly show this:\n\n\u2013 The antibody used for phospho-RPS6 recognises residues (Ser235/236), which can be phosphorylated in the absence of S6K1 and S6K2, therefore, could this regulation be independent of mTOR? Although RPS6 is downstream of mTOR signalling it is not a direct substrate of mTOR, therefore, to fully support these conclusions, blots for direct substrates of mTOR (p-S6K1, p-4EBP1), with corresponding blot for all total proteins, should be shown.\n\n3. Figure 1C \u2013 Puromycin incorporation demonstrates that protein synthesis is increased yet only the phospho-RPS6 blot is included. A total RPS6 blot must be included to demonstrate that the increase in phospho-RPS6 signal is not simply increased synthesis of total RPS6. This is especially important as the abundance of vinculin (used as the loading control) varies across samples in Figure 1B and 1C.\n\n4. Figure 1F \u2013 statistical analysis \u2013 multiple comparisons have been made to the 0 hr time point. Running multiple t-tests in this manner increases the chance of error, therefore, statistical analysis should take these multiple comparisons into account by using ANOVA with Dunnett's post hoc test.\n",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "167606d6-2c03-48a1-8748-9a24d7665b20",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C1",
+      "claim": "Puromycin incorporation represents a valid tool to quantify protein synthesis within cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Puromycin, by entering the acceptor site of ribosomes and incorporating into nascent polypeptide chains, represents a valid tool to quantify protein synthesis within cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about puromycin's mechanism and application in measuring protein synthesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "2816a8af-f850-482f-8395-52817daffe6b",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C2",
+      "claim": "T cell receptor stimulation leads to a progressive, temporal, steady increase of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "T cell receptor stimulation leads to a progressive, temporal, steady increase of protein synthesis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B demonstrating puromycin incorporation over time following TCR stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "368eb62b-ac30-4bc5-b2c8-e5d558a240f8",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C3",
+      "claim": "Higher concentration of anti-CD3/CD28 stimulation results in higher puromycin incorporation in primary lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw higher puromycin incorporation in cells stimulated with the higher concentration of anti-CD3/CD28 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from Figure 1C showing dose-dependent response to TCR stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "cda6b184-a652-4ac6-803c-06148ea733b9",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C4",
+      "claim": "Phosphorylation of ribosomal protein rpS6 occurs in serine 235/236 by S6K1-2 downstream of mTORC1 and by RSKs kinases downstream of ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation of ribosomal protein rpS6 occurs in serine 235/236 by S6K1-2 downstream of mTORC1 and by RSKs kinases downstream of ERK, as well as in serine 240/244 by S6K1-2 kinases (Meyuhas, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meyuhas, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "249b131f-d1f7-4f95-aa6c-db536d615a59",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C5",
+      "claim": "rpS6 phosphorylation increased from undetectable to strong levels after anti-CD3/CD28 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, rpS6 phosphorylation increased from undetectable to strong levels after anti-CD3/CD28 stimulation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 1C demonstrating rpS6 phosphorylation changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "16d9aee2-be22-4f98-897b-0dd99e77945f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C6",
+      "claim": "mTOR inhibition by PP242 reduces rpS6 phosphorylation and puromycin incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of mTOR pathway by the mTOR inhibitor PP242 leads to both the reduction of rpS6 phosphorylation and a conspicuous inhibition of puromycin incorporation, that is, protein synthesis (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from Figure 1D showing effects of PP242 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "694c3146-3c43-4270-bdb3-4d797af6d989",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C7",
+      "claim": "Mnk inhibition did not consistently reduce puromycin incorporation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, Mnk inhibition did not consistently reduce puromycin incorporation, indicating that this pathway is not massively involved in global translation of T cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from Figure 1D and interpretation of results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "8de2e475-0f13-43f5-925d-622661df65f9",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C8",
+      "claim": "Hypoxia results in a rapid reduction of the translation rate of primary lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypoxia resulted in a rapid reduction of the translation rate of primary lymphocytes (Figure 1F, Figure 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from Figure 1F showing puromycin incorporation under hypoxic conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "fe18692d-beeb-4c70-85d7-977ecd6ec54f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C9",
+      "claim": "Hypoxia induces eIF2\u03b1 phosphorylation in stimulated CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a modified ELISA procedure and found that hypoxia induced eIF2\u03b1 phosphorylation (Figure 1G, Figure 1\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from ELISA assay shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "1aa15afd-d6f2-4e5a-b5ae-7b7081fa8f62",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C10",
+      "claim": "The combination of T cell receptor stimulation and hypoxic conditions is a major determinant of the translational capability of lymphocytes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these data, we hypothesize that, in vivo, the combination of T cell receptor stimulation and hypoxic conditions is a major determinant of the translational capability of lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on experimental observations of TCR stimulation and hypoxia effects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "7c285b10-5ea8-4a23-90ff-454a844b69b5",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C11",
+      "claim": "At the single-cell level, in vivo, the translational efficiency of both CD4+ and CD8+ TILs is highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found that at the single-cell level, in vivo, the translational efficiency of both CD4+ and CD8+ TILs was highly variable (Figure 2B and C, Figure 2\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 2B and C showing heterogeneous puromycin incorporation in TILs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "60ca77f1-8d5c-4216-9345-ea26598a4371",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C12",
+      "claim": "CD4+ TILs translate more than spleen-resident CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found a strong positive relationship between puromycin incorporation and Ki67 staining, suggesting clonal amplification (proliferation) of actively translating cells (Figure 4C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data comparing TILs and spleen T cells shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "cdcc2536-6010-4d91-ae21-aed96d4e196d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C13",
+      "claim": "The number of highly translating CD4+ TILs in different animals ranged between 20% and 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of highly translating CD4+ TILs in different animals ranged between 20% and 60% (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from flow cytometry analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "62a2a633-11dc-48db-8ca6-c1155e9c14f3",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C14",
+      "claim": "The number of highly translating CD8+ TILs was more than twofold higher than in the spleen.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to CD4+ TILs, the number of highly translating CD8+ TILs was more than twofold higher than in the spleen (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative flow cytometry data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "2f0fa0b1-bf60-4806-80c4-a0d6e911f058",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C15",
+      "claim": "Within individual tumors, Puro+ CD8+ TILs ranged between 20% and 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "Within individual tumors, Puro+ CD8+ TILs ranged between 20% and 90% (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from flow cytometry shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "33c8f618-55bc-4c3a-b6d3-204472a2c41d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C16",
+      "claim": "Both CD4+ and CD8+ cells containing high levels of puromycin are consistently positive for rpS6 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both CD4+ (Figure 2E, Figure 2\u2014source data 1) and CD8+ (Figure 2F, Figure 2\u2014source data 1) cells containing high levels of puromycin were consistently positive for rpS6 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figures 2E and 2F showing correlation between puromycin and rpS6 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "6b5fe6fc-2210-4d87-9665-66f64acd0f04",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C17",
+      "claim": "Treatment of mice with everolimus causes a decrease in the percentage of puromycin-positive TILs.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, treatment of mice with everolimus caused a decrease in the percentage of puromycin-positive TILs (Figure 2H, Figure 2\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from everolimus treatment shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "4fd92b55-f6e3-4d3d-95c0-96c79d22a8ac",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C19",
+      "claim": "Cells triple-stained for PMO, CD4+ and p-eIF2\u03b1-like immunoreactivity are detected in hypoxic areas.",
+      "claim_type": "EXPLICIT",
+      "source": "We clearly detected cells triple-stained for PMO, CD4+ and p-eIF2\u03b1\u2212like immunoreactivity in hypoxic areas (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "1b83632c-4ede-45f7-8113-9f2a818219d4",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C20",
+      "claim": "Puro+ CD8+ TILs largely retain an activated-like phenotype as indicated by CD44 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, we observed a maximum of puromycin incorporation in CD44+ CD8+ T cells, indicating that Puro+ CD8+ TILs largely retain an activated-like phenotype (Figure 4B, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 4B showing correlation between puromycin and CD44.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "5888c83e-7d78-47ec-b91b-fa15fb271bb1",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C21",
+      "claim": "There is a strong positive relationship between puromycin incorporation and Ki67 staining in CD8+ TILs, suggesting clonal amplification of actively translating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found a strong positive relationship between puromycin incorporation and Ki67 staining, suggesting clonal amplification (proliferation) of actively translating cells (Figure 4C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 4C showing correlation between puromycin and Ki67.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "b4424d23-20a4-42d4-81e5-53a91ffca2d0",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C22",
+      "claim": "No statistical differences were detected in the expression of PD-1, TIGIT, CTLA-4, CD28, CD69, CCR5, CD103, and TNF-\u03b1 between high and low puromycin incorporating CD8+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we did not detect statistical differences in the expression of PD-1, TIGIT, CTLA-4, CD28, CD69, CCR5, CD103, and TNF-\u03b1 between high and low puromycin incorporating cells (Figure 4D, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of flow cytometry data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "5e1c73f8-cf3c-479e-8864-50f310f9fda7",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C23",
+      "claim": "A positive relationship exists between puromycin incorporation and the expression of TIM3, SLAMF6, CD39, Granzyme B, CD27, and IFN-\u03b3 in CD8+ TILs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we found a positive relationship between puromycin incorporation and the expression of TIM3, SLAMF6, CD39, Granzyme B, CD27, and IFN-\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Flow cytometry data analysis from Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "6920c725-e9fd-49c3-93eb-2c030b3202fb",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C24",
+      "claim": "ICOS expression is selectively decreased in highly translating CD8+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, ICOS expression was selectively decreased in highly translating CD8+ cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "640b18a0-b08d-4afd-9958-547bfbdd7e4e",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C25",
+      "claim": "Highly translating CD8+ cells are characterized by high TIM3-low SLAMF6 and high TIM3-high PD-1 phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that highly translating cells were characterized by having high TIM3-low SLAMF6, high TIM3-high PD-1 (Figure 4E\u2013F, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figures 4E and 4F showing co-marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "07d672a1-52e3-4484-8c0e-6c791583ddfa",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C26",
+      "claim": "High PD1 and high TIM3 expression associate with Ki67+ CD8+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, high PD1 and high TIM3 expression associated with Ki67+ cells (Figure 4\u2014figure supplement 1A-B, Figure 4\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "d588b0b4-c6e9-4b1e-b200-8ca1df474f75",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C27",
+      "claim": "Puromycin incorporation is enriched in CD44+ CD4+ TILs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in puromycin incorporation in CD44+ cells (Figure 5B, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "67a98921-9bca-46e8-8857-722700294f48",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C28",
+      "claim": "Ki-67 labeling is robustly enriched in CD4+ cells incorporating higher levels of puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Ki-67 labeling was robustly enriched in cells incorporating higher levels of puromycin (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "b29656b5-4e58-409d-92f3-14ba1d5aaa0a",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C29",
+      "claim": "Only 4\u20136% of spleen Tregs incorporate puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only 4\u20136% Tregs of the spleen incorporated puromycin (Figure 5D, Figure 5\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "ae629da8-de8a-43ea-bc4a-c519c78c8392",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C30",
+      "claim": "Approximately 40% of tumor-infiltrating Tregs incorporate high levels of puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas approximately 40% of tumor-infiltrating Tregs incorporated high levels of puromycin (Figure 5D, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "84658605-fee6-4b25-b794-5782e4712bce",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C31",
+      "claim": "pS6 labeling partitions with high levels of puromycin in Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of intracellular levels of phosphorylated S6 ribosomal protein (pS6) in gated Puro+ and Puro- Tregs showed, in line with previous observations, that pS6 labeling partitioned with high levels of puromycin, both for rpS6 S235/S236 (Figure 5F, Figure 5\u2014source data 1) and for rpS6 Ser240/244 (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 5F and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "e21d09e7-2867-415a-b318-9a3351f7270f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C32",
+      "claim": "Puro+ Tregs show selective upregulation of CTLA-4 compared to Puro- Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Puro+ Tregs showed the selective upregulation of CTLA-4 with respect to the Puro- counterpart (Figure 6A, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "9bea7181-5daa-47d9-b320-bb97c266f8b8",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C33",
+      "claim": "Puro+ Tregs have enhanced TGF-\u03b2 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Intracellular staining for TGF-\u03b2 revealed enhanced secretion by Puro+ Tregs (Figure 6\u2014source data 1, ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Flow cytometry data for intracellular TGF-\u03b2 staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "405725f5-21e6-4df7-addc-a5e3ebf91a93",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C34",
+      "claim": "Puro+ Tregs have higher levels of Ki67 staining than Puro- Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Puro+ Tregs had also higher levels of Ki67 staining (Figure 6C, Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "e07849e8-591a-4e4f-92ab-9b129f2e82d9",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C35",
+      "claim": "Puro+ Tregs express significantly more Ki67 than Puro+ Tconv cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv cells (Figure 6D, Figure 6\u2014source data 1), confirming that the tumor microenvironment preferentially fosters cell cycling of immunosuppressive cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data from Figure 6D comparing Tregs and conventional T cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "9e9bdd90-1789-4cc6-857e-c6110e26fba5",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C36",
+      "claim": "The majority of translationally active TILs is represented by cytotoxic CD8+ and suppressive CD4+ Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the majority of translationally active TILs is represented by cytotoxic CD8+ and suppressive CD4+ Tregs, implying that other subsets may be largely composed by inactive bystanders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "bc466899-a455-4f0c-b3aa-2decf56b9ff7",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C37",
+      "claim": "CD8+/Treg ratio is a strong predictive parameter for survival in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of our observations is consistent with clinical evidence indicating that CD8+/Treg ratio is, in general, a strong predictive parameter for survival in cancer (Gooden et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gooden et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "9c523c13-9554-4b77-a976-257663eb9299",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C38",
+      "claim": "Translation is strongly regulated by microenvironmental cues and its impairment acts as a limiting factor in tumorigenesis and tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation is strongly regulated by microenvironmental cues and its impairment acts as a limiting factor in tumorigenesis and tumor growth (Barna et al., 2008; Miluzio et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barna et al., 2008 and Miluzio et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "4e4a0315-de90-448e-a4e5-4a25f853bb0f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C39",
+      "claim": "Tumor genetic lesions converge on the translational machinery, leading to its constitutive activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, tumor genetic lesions converge on the translational machinery, leading to its constitutive activation, and rendering translation relatively independent of the signals posed by the microenvironment (Loreni et al., 2014; Robichaud et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Loreni et al., 2014 and Robichaud et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "e04b6f36-11fe-4197-ba57-e8d113ed619c",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C40",
+      "claim": "Hypoxia inhibits translation acting on AMPK and eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known since long that hypoxia inhibits translation acting on AMPK (Horman et al., 2002) and eIF2\u03b1(Koumenis et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Horman et al., 2002 and Koumenis et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "24cf523b-4011-412f-af96-744da476bf56",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C41",
+      "claim": "All four eIF2\u03b1 kinases (PERK, GCN2, PKR, and HRI) are expressed in T cells at the mRNA level.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all four kinases are expressed in T cells at the mRNA level (Critchley-Thorne et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Critchley-Thorne et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "7ac92672-e209-491a-b3b3-f24c7a703f32",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C42",
+      "claim": "PERK is considered a major regulator of translational control of hypoxia.",
+      "claim_type": "EXPLICIT",
+      "source": "PERK is considered a major regulator of translational control of hypoxia (van den Beucken et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van den Beucken et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "4a845a12-fc57-4d16-967a-cbe7926a8030",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C43",
+      "claim": "The expansion of suppressive, intratumoral Tregs requires active translation and simultaneous increased rate of fatty acid synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Summarizing, we think that our data are more consistent with a model in which the expansion of suppressive, intratumoral Tregs requires active translation and simultaneous increased rate of fatty acid synthesis (Pacella et al., 2018) and, in general, is associated with high glycolytic capability (Procaccini et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from current data combined with citations to Pacella et al., 2018 and Procaccini et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "947415f9-9020-41f2-837f-fe272babaa55",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C44",
+      "claim": "TCR sequencing of breast cancer-associated Tregs revealed that Tregs have little TCR sharing with conventional T cells, confirming that Tregs in tumors are mainly generated through local expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR sequencing of breast cancer-associated Tregs revealed that Tregs have little TCR sharing with conventional T cells, confirming that Tregs in tumors are mainly generated through local expansion (Plitas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plitas et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "a6cc80a9-f45e-4189-ac88-afb7ac132c3e",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C45",
+      "claim": "TILs expressing markers of exhaustion (PD-1, LAG3, and TIM3) are more likely to express IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "TILs expressing markers of exhaustion (PD-1, LAG3, and TIM3) are more likely to express IFN-\u03b3 (Gros et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gros et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "d5040c2c-31f1-4c5c-8ceb-b2c83cae0788",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C46",
+      "claim": "Exhausted CD8+ T cells still play a critical role in cancer by exerting residual control over tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "While exhausted CD8+ T cells have reduced function as compared to those elicited by an acute infection, several data suggest that are the exhausted CD8+ T cells that are exerting residual control over tumor growth (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "54cc0c1c-10a7-4e07-9b95-64c1a9daedfc",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C47",
+      "claim": "The higher expression of CTLA-4 and TGF-\u03b2 in CD4+ translating cells fully correlates with suppressive properties.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher expression of CTLA-4 and TGF-\u03b2 (Sakaguchi et al., 2020) in CD4+ translating cells fully correlates with suppressive properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data combined with citation to Sakaguchi et al., 2020.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "5215cbf0-1dbb-4685-b1db-2a9a46129f79",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C48",
+      "claim": "The tumor microenvironment provides a full range of stimuli that may regulate translation, like hypoxia or nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the tumor microenvironment has been shown, in decades of studies, to provide a full range of stimuli (Maman and Witz, 2018) that may regulate translation, like hypoxia or nutrients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maman and Witz, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "65665bb8-1906-4262-bf3d-d1be575573bc",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C49",
+      "claim": "Altered protein products caused by genetic mutations function as neoantigens, eliciting an immune response against cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In a typical cancer scenario, altered protein products caused by genetic mutations function as neoantigens, eliciting an immune response against cancer cells (Schumacher and Schreiber, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schumacher and Schreiber, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "76a7419f-8bd2-4337-a2c0-5ad80b807f57",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C50",
+      "claim": "The inflammatory, hypoxic, and often necrotic microenvironment of tumors modifies the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the inflammatory, hypoxic, and often necrotic microenvironment of tumors modifies the immune response (Kalluri, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kalluri, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "db4b4e24-9eb7-461c-ac5e-aac00813def3",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C51",
+      "claim": "Tumor-infiltrating T lymphocytes (TILs) are the major players in the immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor-infiltrating T lymphocytes (TILs) are the major players in the immune response (Quail and Joyce, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Quail and Joyce, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "0b2cb7c6-4b5e-4285-bac2-7407a955227f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C52",
+      "claim": "CD8+ cytotoxic T cells, CD4+ T-helper 1 cells producing interferon-\u03b3, and natural killer cells are associated with favorable anti-tumor immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, CD8+ cytotoxic T cells, CD4+ T-helper 1 cells producing interferon-\u03b3, and natural killer cells are associated with favorable anti-tumor immune responses (Tosolini et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tosolini et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "729e4961-1ef2-4c0a-a048-8f1fd90fe78c",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C53",
+      "claim": "Myeloid-derived suppressor cells and CD4+ FOXP3+ regulatory T (Treg) cells producing IL-10 and TGF-\u03b2 have immunosuppressive and protumoral effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, myeloid-derived suppressor cells, and CD4+ FOXP3+ regulatory T (Treg) cells producing IL-10 and TGF-\u03b2 have immunosuppressive and protumoral effects (Shang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "57423e55-c612-4800-9e79-ecc2a8c2c848",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C54",
+      "claim": "The most consistent survival predictors are the number of TILs and the ratio between CD8+ cytotoxic T cells and CD4+ FOXP3+ Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in spite of the elevated number of T cell players found in the tumor microenvironment, the most consistent survival predictors are (i) the number of TILs and (ii) the ratio between CD8+ cytotoxic T cells and CD4+ FOXP3+ Tregs (Gooden et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gooden et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "80451a31-c1f1-4c4b-8147-72f534f9fd0d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C55",
+      "claim": "The presence of a messenger RNA (mRNA) may not reflect the active synthesis of the encoded protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies show that the presence of a messenger RNA (mRNA) may not reflect the active synthesis of the encoded protein (Schwanh\u00e4usser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schwanh\u00e4usser et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "4d9f8872-85a5-4e3d-a046-0afb6d4177bb",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C56",
+      "claim": "Some mRNAs are translated poorly and only in response to specific stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that some mRNAs are translated poorly and only in response to specific stimuli (Pelletier and Sonenberg, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pelletier and Sonenberg, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "ff8b3ef3-431d-4b02-afbf-b6f535e458b0",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C57",
+      "claim": "Protein synthesis is one of the most energy-consuming pathways in cell metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein synthesis is one of the most energy-consuming pathways in cell metabolism (Buttgereit and Brand, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buttgereit and Brand, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "345006f6-8238-473b-a1d9-0ebb7a3b01c1",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C58",
+      "claim": "Microenvironment conditions and nutrients are major controllers of the global rate of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein synthesis is one of the most energy-consuming pathways in cell metabolism (Buttgereit and Brand, 1995), and microenvironment conditions and nutrients are major controllers of the global rate of synthesis (Biffo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Biffo et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "d49a655b-669c-49cb-ba83-39670c77b6d5",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C59",
+      "claim": "Hypoxia leads to the downregulation of high-energy processes, including protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, hypoxia leads to the downregulation of high-energy processes, including protein synthesis (Horman et al., 2002; Liu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Horman et al., 2002 and Liu et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "6b6caf4d-4af0-4fca-9f24-7af061e9a9d3",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C60",
+      "claim": "Uncharged tRNAs bind to the regulatory domain of GCN2 kinase causing its activation, the phosphorylation of eIF2\u03b1, a shutdown of global protein synthesis, and the specific derepression of the translation of uORF-controlled mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Uncharged tRNAs bind to the regulatory domain of GCN2 kinase causing its activation, the phosphorylation of eIF2\u03b1, a shutdown of global protein synthesis, and the specific derepression of the translation of uORF-controlled mRNAs (Wek, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wek, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "1d8f6b80-9617-4e19-b60e-fbfda06e541a",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C61",
+      "claim": "Four kinases (eIF2AK1\u20134) are able to phosphorylate eIF2\u03b1 and are all expressed in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Four kinases (eIF2AK1\u20134) are able to phosphorylate eIF2\u03b1 (Loreni et al., 2014) and are all expressed in T cells (Mitchell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Loreni et al., 2014 and Mitchell et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "7326c790-ffbe-48bf-881b-7d2caeec1864",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C62",
+      "claim": "Stimulation of protein synthesis is one of the hallmarks of T cell exit from quiescence, beginning of growth and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of protein synthesis is one of the hallmarks of T cell exit from quiescence, beginning of growth and proliferation and is associated with both quantitative (Garcia-Sanz et al., 1998) and qualitative changes (Mikulits et al., 2000) in translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garcia-Sanz et al., 1998 and Mikulits et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "5e0fac8f-597e-4056-b673-4468228c671a",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C63",
+      "claim": "mTORC1 is a major controller of both translation and T cell biology.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 is a major controller of both translation and T cell biology (Bjur et al., 2013; Piccirillo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bjur et al., 2013 and Piccirillo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "6341fd9c-24c3-4763-9708-42e56fb4c3f8",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C64",
+      "claim": "Inhibition of mTORC1 by rapamycin has profound effects on T cell response and polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of mTORC1 by rapamycin has profound effects on T cell response and polarization (Powell and Delgoffe, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Powell and Delgoffe, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "fe18c76e-e0b5-40ff-b792-18e1f258085f",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C65",
+      "claim": "Ablation of 4EBP1 and 4EBP2 rescues the inhibitory action on proliferation of raptor depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of the translational branch in driving mTORC1 responses is demonstrated by the fact that ablation of 4EBP1 and 4EBP2, which are translational modulators phosphorylated by mTORC1, rescues the inhibitory action on proliferation of raptor depletion (Dowling et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dowling et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "b95d7a91-ebdb-4357-9c4b-ff003355b2e7",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C66",
+      "claim": "Several mRNAs are rapidly engaged following T cell stimulation, promoting an immediate translational and glycolytic switch to ramp up the T cell activation program.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mRNAs are rapidly engaged following T cell stimulation, promoting an immediate translational and glycolytic switch to ramp up the T cell activation program (Wolf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wolf et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "2ccfd90e-6c27-4173-b8cc-fc682eee4290",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C67",
+      "claim": "Stimulation of fatty acid synthesis in T cells requires the translational activation of the rate-limiting enzyme ACC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we found that stimulation of fatty acid synthesis in T cells requires the translational activation of the rate-limiting enzyme ACC1. Intriguingly, ACC1 mRNA was expressed but not translated also in quiescent T cells (Ricciardi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ricciardi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "d5adcd7c-df59-4a37-bc29-e1355c468e23",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C68",
+      "claim": "eIF5A promotes the expression of a subset of mitochondrial proteins involved in the TCA cycle and oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another translation factor, eIF5A, promotes the expression of a subset of mitochondrial proteins involved in the TCA cycle and oxidative phosphorylation (Puleston et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Puleston et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "602aba0f-c617-4f4b-bbf9-f374ab04c051",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C69",
+      "claim": "The predictive value on survival of suppressive CD4+ Tregs and cytotoxic CD8+ T cells is due to their capability to be translationally active amid a large percentage of not translating lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the predictive value on survival of suppressive CD4+ Tregs and cytotoxic CD8+ T cells is due to their capability to be translationally active amid a large percentage of not translating lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "ff3ecf98-608d-4c6e-a9ee-5b3691925f02",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C70",
+      "claim": "Na\u00efve T cells have a poised translational machinery, with pre-accumulated mRNAs that are efficiently translated only after T cell receptor stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that na\u00efve T cells have a poised translational machinery, with pre-accumulated mRNAs that are efficiently translated only after T cell receptor stimulation (Ricciardi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ricciardi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "41086981-779c-402c-8420-965a90eb164e",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C71",
+      "claim": "rpS6 itself was detectable before TCR stimulation and increased upon stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "rpS6 itself was detectable before TCR stimulation and increased upon stimulation, in line with previous data (Wolf et al., 2020; Araki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wolf et al., 2020 and Araki et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "4ea49e7d-8281-4e4f-86e5-c3b5f95e3834",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C72",
+      "claim": "The amount of tumor areas that were not vascularized was limited, with maximal distances between vessels being in the range of 150\u2013200 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that the amount of tumor areas that were not vascularized was limited, the maximal distances between vessels being in the range of 150\u2013200 \u00b5m (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Histological analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "bb863d63-34e3-4a8d-ba9e-ae0232ac9864",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C73",
+      "claim": "Translationally active CD8+ T cells are confined in non-hypoxic areas and characterized by the activation of the mTORC1 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data show that translationally active CD8+ T cells are confined in non-hypoxic areas, characterized by the activation of the mTORC1 pathway and can be defined by a specific immunophenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of multiple experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "41253cb8-403d-4910-b2fc-6eaae7cb153e",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C74",
+      "claim": "The data suggest the existence of clonally expanding CD8+ cells, highly translating, and moving versus the exhaustion status.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together the data suggest the existence of clonally expanding CD8+ cells, highly translating, and moving versus the exhaustion status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "cc566125-1d9d-4b6a-9533-d1917fd4552c",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C75",
+      "claim": "Within tumors, the main translating and expanding CD4+ subset is represented by suppressive Tregs with mTORC1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data confirm the hypothesis that, within tumors, the main translating and expanding CD4+ subset is represented by suppressive Tregs with mTORC1 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "2c1dac0d-999d-480e-a890-6e136599f441",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C76",
+      "claim": "The tumor microenvironment preferentially fosters cell cycling of immunosuppressive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv cells (Figure 6D, Figure 6\u2014source data 1), confirming that the tumor microenvironment preferentially fosters cell cycling of immunosuppressive cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "e7bc0aa1-402d-4328-99ab-510cdec0c60e",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C77",
+      "claim": "Highly translating T cells are phenotypically different from translationally inactive lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypoxia and mTOR signaling are major modulators of lymphocyte translation, and translating lymphocytes are phenotypically different from translationally inactive lymphocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from phenotypic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "eb2ae7b6-b6b1-45d4-b4c4-d9127eaa769b",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C78",
+      "claim": "Genetic depletion of translation factors greatly reduces tumorigenesis and tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of the translational machinery in the cell autonomous growth of tumors is demonstrated by evidence indicating that genetic depletion of translation factors greatly reduces tumorigenesis and tumor growth (Barna et al., 2008; Miluzio et al., 2011; Truitt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barna et al., 2008, Miluzio et al., 2011, and Truitt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "d5ad52a7-6ba1-4813-a054-cd894c9c159d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C79",
+      "claim": "TILs lack mutations that alter their capability to synthesize proteins in conditions of high stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, TILs lack mutations that alter their capability to synthesize proteins in conditions of high stress, and as such, are bound to permissive conditions in order to translate their transcriptional repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison with tumor cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "755900a5-7712-49b7-bf71-281966ba06cb",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C80",
+      "claim": "Hypoxia may acutely impair the suppressive capability of Tregs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, hypoxia may acutely impair the suppressive capability of Tregs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "bdd8a54b-22b8-4bed-b1a8-04d696c99fab",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C81",
+      "claim": "The mTORC1 pathway is a major controller of TIL translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the mTORC1 pathway is a major controller of TIL translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings on mTOR inhibition and rpS6 phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "7deb12be-9374-463a-9a15-b84917116705",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C82",
+      "claim": "Exhaustion is not associated with the loss of translational activity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the operational definition given above, exhaustion is clearly not associated with the loss of translational activity, which results, for instance, in the enrichment of Ki-67 and TIM3 expression in Puro+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental data on exhaustion markers and puromycin incorporation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "77e7ab96-9237-4c81-b3ee-aa3da5c87334",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C83",
+      "claim": "Two T cells with identical transcriptome and protein repertoire infiltrating tissue in different microenvironment niches are subject to rapid and differential translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that two T cells that have an identical 'transcriptome' and protein repertoire infiltrate a tissue in two different microenvironment niches and are subject to rapid and differential translational regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on study findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "bb50623e-9f44-42df-9ebd-03aae6e3e11a",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "claim_id": "C84",
+      "claim": "T cell receptor stimulation and hypoxia are two main microenvironment clues that regulate the T cell trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, our data suggest that T cell receptor stimulation and hypoxia are two main microenvironment clues that regulate the T cell trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "831646d3-7477-466c-bba6-02790c6ecae9",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TCR stimulation induces dose-dependent and time-dependent increases in protein synthesis in primary human CD4+ T cells, as measured by puromycin incorporation. This is accompanied by increased rpS6 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C5 are supported by Western blot data (Figure 1B-C) showing progressive puromycin incorporation over time and dose-dependent responses to anti-CD3/CD28 stimulation. The puromycin method is well-established (C1), and rpS6 phosphorylation correlates with translation (C5). The experimental design is appropriate with biological replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "f45bce98-a82b-45f5-adb7-f5ce93b5c06d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mTOR inhibition by PP242 reduces both rpS6 phosphorylation and protein synthesis in stimulated T cells, while Mnk inhibition does not consistently affect global translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by Western blot data (Figure 1D) showing clear reduction in puromycin incorporation and rpS6 phosphorylation with PP242 treatment, but inconsistent effects with Mnk inhibitor. The data directly demonstrate pathway-specific effects on translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "14822d13-81f4-47fe-858d-b83702212619",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Hypoxia rapidly reduces translation in primary lymphocytes and induces eIF2\u03b1 phosphorylation. The authors hypothesize that TCR stimulation and hypoxia are major determinants of lymphocyte translational capability in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 are supported by flow cytometry (Figure 1F) and ELISA data (Figure 1G) showing rapid translation reduction and eIF2\u03b1 phosphorylation under hypoxia. However, C10 is a hypothesis requiring further in vivo validation. The in vitro data support the mechanistic basis but do not fully validate the in vivo claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "350c3499-c310-4d06-8767-b1a253c2b4ae",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TILs show highly variable translational efficiency at the single-cell level in vivo, with both CD4+ and CD8+ TILs having significantly higher percentages of actively translating cells compared to spleen T cells. The proportion of highly translating TILs varies substantially between individual tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 are well-supported by flow cytometry data (Figures 2B-C) showing heterogeneous puromycin incorporation in TILs with quantitative measurements. The data include appropriate sample sizes (n=5-8 mice) and statistical analysis. The variability between animals (20-90% for CD8+) is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "95ce3133-05ca-4710-a316-68a9b5b0a7e2",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Highly translating TILs are characterized by mTORC1 pathway activation, as evidenced by rpS6 phosphorylation. Treatment with the mTOR inhibitor everolimus reduces the percentage of puromycin-positive TILs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, and C81 are supported by flow cytometry data (Figures 2E-F, 2H) showing strong correlation between puromycin incorporation and rpS6 phosphorylation in both CD4+ and CD8+ TILs. Everolimus treatment reduces translation, confirming mTORC1's role. Statistical significance is demonstrated with appropriate replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "b0dfe7ee-5893-4775-bf1d-2a45db3abe90",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In vivo, an inverse relationship exists between hypoxia (PMO staining) and puromycin incorporation in TILs. Translationally active CD8+ T cells are confined to non-hypoxic areas with mTORC1 activation. Tumor vascularization is relatively extensive with limited truly hypoxic areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C72, and C73 are supported by flow cytometry (Figures 3C-D) and immunofluorescence data (Figure 3E) showing inverse correlation between PMO and puromycin. Histological analysis (Figure 3B) documents vessel distribution. The data demonstrate spatial regulation of translation by hypoxia, though the limited hypoxic areas may affect generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "9f055106-afda-4de7-ab1d-748949a3f637",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Highly translating CD8+ TILs retain an activated phenotype (CD44+), show strong correlation with Ki67 (proliferation), and are enriched for TIM3, SLAMF6, CD39, Granzyme B, CD27, and IFN-\u03b3 expression. They show high TIM3-low SLAMF6 and high TIM3-high PD-1 phenotypes, suggesting clonally expanding cells moving toward exhaustion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 and C74 are supported by comprehensive flow cytometry phenotyping (Figures 4B-F) with appropriate statistical analysis pooling multiple animals. The data show clear phenotypic differences between Puro+ and Puro- cells. However, the interpretation of 'moving toward exhaustion' (C74) is inferential and would benefit from longitudinal or functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Puromycin incorporation is enriched in CD44+ CD4+ TILs and correlates with Ki67. Tumor-infiltrating Tregs show dramatically higher translation rates (~40% Puro+) compared to spleen Tregs (4-6% Puro+). Treg translation correlates with rpS6 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by flow cytometry data (Figures 5B, 5D, 5F) and immunohistochemistry (Figure 5E) showing clear differences between tumor and spleen Tregs. The dramatic difference in translation rates is statistically significant with appropriate replicates. The correlation with mTORC1 signaling is consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Puro+ Tregs show selective upregulation of suppressive markers (CTLA-4, TGF-\u03b2) and higher Ki67 expression compared to Puro- Tregs. Puro+ Tregs express significantly more Ki67 than Puro+ conventional T cells, indicating that the tumor microenvironment preferentially fosters cycling of immunosuppressive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C75, and C76 are supported by flow cytometry data (Figures 6A-D) showing phenotypic differences between Puro+ and Puro- Tregs and between Puro+ Tregs and Tconv. The data demonstrate both suppressive phenotype and preferential proliferation of Tregs. Statistical significance is shown with appropriate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "fd56696d-b154-42cd-aeba-2de653475da8",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The majority of translationally active TILs consists of cytotoxic CD8+ and suppressive CD4+ Tregs. The authors hypothesize that the predictive value of CD8+/Treg ratio for survival is due to their capability to remain translationally active. Highly translating T cells are phenotypically distinct from translationally inactive lymphocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C69, and C77 represent summary conclusions supported by the cumulative experimental data. The phenotypic characterization clearly demonstrates differences between Puro+ and Puro- cells. However, C69 is a hypothesis connecting these findings to clinical outcomes without direct survival data in this study. The conclusion is reasonable but requires validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on translational control mechanisms: rpS6 phosphorylation occurs via mTORC1-S6K and ERK-RSK pathways. Hypoxia inhibits translation through AMPK and eIF2\u03b1 phosphorylation. Four eIF2\u03b1 kinases are expressed in T cells, with PERK being a major regulator of hypoxic translational control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C40-C42, C60-C61 are background knowledge supported by appropriate citations to established literature. These provide mechanistic context for the experimental findings. The citations are to peer-reviewed publications in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "6aae49b8-9ddc-4638-a660-03a3872b64d2",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on tumor immunology: TILs are major players in immune response. CD8+ T cells and CD4+ Th1 cells are associated with favorable responses, while Tregs and MDSCs have immunosuppressive effects. CD8+/Treg ratio and TIL number are strong survival predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C49-C54 provide established background on tumor immunology supported by appropriate citations. These contextualize the study's findings within the broader field. The citations are to relevant peer-reviewed literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "ce511726-3e8b-4ea7-b424-23bb235062c7",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on T cell translation: mRNA presence doesn't always reflect protein synthesis. Protein synthesis is energy-intensive and regulated by microenvironment. mTORC1 is a major controller of T cell translation and biology. TCR stimulation induces rapid translational changes. Na\u00efve T cells have poised translational machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C68, C70-C71 provide background on translational control in T cells, supported by appropriate citations including the authors' prior work. These establish the rationale for the current study. The citations are to peer-reviewed publications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "017c62ed-142b-408b-9c87-d32888cc29fb",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Translation is regulated by microenvironmental cues and its impairment limits tumorigenesis. Tumor cells have constitutively activated translation machinery due to genetic lesions, while TILs lack such mutations and depend on permissive conditions for translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C78 are supported by citations to relevant literature. Claim C79 is an inference comparing tumor cells to TILs based on established knowledge. The logic is sound but C79 lacks direct experimental validation in this study that TILs specifically lack translation-activating mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "30429460-5dc2-4266-bd27-52958dd0a230",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose that intratumoral Treg expansion requires active translation and fatty acid synthesis. Tregs in tumors are mainly generated through local expansion. Hypoxia may acutely impair Treg suppressive capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C43 combines current data with cited literature to propose a model, but lacks direct experimental validation of the fatty acid synthesis requirement in this study. Claim C44 is supported by citation. Claim C80 is speculative inference from the hypoxia-translation data without direct functional validation of Treg suppressive capability under hypoxia.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "bbf95086-14a3-46ec-8876-a7b5b3fed482",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Exhausted CD8+ T cells expressing PD-1, LAG3, and TIM3 are more likely to express IFN-\u03b3 and still play critical roles in tumor control. Exhaustion is not associated with loss of translational activity. Higher CTLA-4 and TGF-\u03b2 in translating CD4+ cells correlates with suppressive properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by citations to relevant literature. Claims C47 and C82 are inferences from the current data showing that Puro+ cells express exhaustion markers and remain proliferative. The interpretation is reasonable but 'exhaustion' is defined operationally by marker expression rather than functional assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    },
+    {
+      "id": "ec0c4ab0-b18a-4825-ab5d-a45a6a097f86",
+      "content_id": "3df01e2f-8235-43e9-97a3-15f32e4bf9df",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The tumor microenvironment provides diverse stimuli regulating translation. The authors suggest that T cells with identical transcriptomes can undergo differential translational regulation in different microenvironmental niches. TCR stimulation and hypoxia are two main microenvironmental cues regulating T cell trajectory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by citation. Claims C83-C84 are reasonable inferences from the cumulative data showing spatial heterogeneity in translation and its regulation by TCR signaling and hypoxia. However, these are interpretive conclusions rather than directly demonstrated findings. The model is plausible but would benefit from direct tracking of individual cells over time.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:58:24.887248Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "167606d6-2c03-48a1-8748-9a24d7665b20",
+      "result_id": "831646d3-7477-466c-bba6-02790c6ecae9"
+    },
+    {
+      "claim_id": "2816a8af-f850-482f-8395-52817daffe6b",
+      "result_id": "831646d3-7477-466c-bba6-02790c6ecae9"
+    },
+    {
+      "claim_id": "368eb62b-ac30-4bc5-b2c8-e5d558a240f8",
+      "result_id": "831646d3-7477-466c-bba6-02790c6ecae9"
+    },
+    {
+      "claim_id": "249b131f-d1f7-4f95-aa6c-db536d615a59",
+      "result_id": "831646d3-7477-466c-bba6-02790c6ecae9"
+    },
+    {
+      "claim_id": "16d9aee2-be22-4f98-897b-0dd99e77945f",
+      "result_id": "f45bce98-a82b-45f5-adb7-f5ce93b5c06d"
+    },
+    {
+      "claim_id": "694c3146-3c43-4270-bdb3-4d797af6d989",
+      "result_id": "f45bce98-a82b-45f5-adb7-f5ce93b5c06d"
+    },
+    {
+      "claim_id": "8de2e475-0f13-43f5-925d-622661df65f9",
+      "result_id": "14822d13-81f4-47fe-858d-b83702212619"
+    },
+    {
+      "claim_id": "fe18692d-beeb-4c70-85d7-977ecd6ec54f",
+      "result_id": "14822d13-81f4-47fe-858d-b83702212619"
+    },
+    {
+      "claim_id": "1aa15afd-d6f2-4e5a-b5ae-7b7081fa8f62",
+      "result_id": "14822d13-81f4-47fe-858d-b83702212619"
+    },
+    {
+      "claim_id": "7c285b10-5ea8-4a23-90ff-454a844b69b5",
+      "result_id": "350c3499-c310-4d06-8767-b1a253c2b4ae"
+    },
+    {
+      "claim_id": "60ca77f1-8d5c-4216-9345-ea26598a4371",
+      "result_id": "350c3499-c310-4d06-8767-b1a253c2b4ae"
+    },
+    {
+      "claim_id": "cdcc2536-6010-4d91-ae21-aed96d4e196d",
+      "result_id": "350c3499-c310-4d06-8767-b1a253c2b4ae"
+    },
+    {
+      "claim_id": "62a2a633-11dc-48db-8ca6-c1155e9c14f3",
+      "result_id": "350c3499-c310-4d06-8767-b1a253c2b4ae"
+    },
+    {
+      "claim_id": "2f0fa0b1-bf60-4806-80c4-a0d6e911f058",
+      "result_id": "350c3499-c310-4d06-8767-b1a253c2b4ae"
+    },
+    {
+      "claim_id": "33c8f618-55bc-4c3a-b6d3-204472a2c41d",
+      "result_id": "95ce3133-05ca-4710-a316-68a9b5b0a7e2"
+    },
+    {
+      "claim_id": "6b5fe6fc-2210-4d87-9665-66f64acd0f04",
+      "result_id": "95ce3133-05ca-4710-a316-68a9b5b0a7e2"
+    },
+    {
+      "claim_id": "bdd8a54b-22b8-4bed-b1a8-04d696c99fab",
+      "result_id": "95ce3133-05ca-4710-a316-68a9b5b0a7e2"
+    },
+    {
+      "claim_id": "4fd92b55-f6e3-4d3d-95c0-96c79d22a8ac",
+      "result_id": "b0dfe7ee-5893-4775-bf1d-2a45db3abe90"
+    },
+    {
+      "claim_id": "4ea49e7d-8281-4e4f-86e5-c3b5f95e3834",
+      "result_id": "b0dfe7ee-5893-4775-bf1d-2a45db3abe90"
+    },
+    {
+      "claim_id": "bb863d63-34e3-4a8d-ba9e-ae0232ac9864",
+      "result_id": "b0dfe7ee-5893-4775-bf1d-2a45db3abe90"
+    },
+    {
+      "claim_id": "1b83632c-4ede-45f7-8113-9f2a818219d4",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "5888c83e-7d78-47ec-b91b-fa15fb271bb1",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "b4424d23-20a4-42d4-81e5-53a91ffca2d0",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "5e1c73f8-cf3c-479e-8864-50f310f9fda7",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "6920c725-e9fd-49c3-93eb-2c030b3202fb",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "640b18a0-b08d-4afd-9958-547bfbdd7e4e",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "07d672a1-52e3-4484-8c0e-6c791583ddfa",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "41253cb8-403d-4910-b2fc-6eaae7cb153e",
+      "result_id": "9f055106-afda-4de7-ab1d-748949a3f637"
+    },
+    {
+      "claim_id": "d588b0b4-c6e9-4b1e-b200-8ca1df474f75",
+      "result_id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25"
+    },
+    {
+      "claim_id": "67a98921-9bca-46e8-8857-722700294f48",
+      "result_id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25"
+    },
+    {
+      "claim_id": "b29656b5-4e58-409d-92f3-14ba1d5aaa0a",
+      "result_id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25"
+    },
+    {
+      "claim_id": "ae629da8-de8a-43ea-bc4a-c519c78c8392",
+      "result_id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25"
+    },
+    {
+      "claim_id": "84658605-fee6-4b25-b794-5782e4712bce",
+      "result_id": "f5dcd0a1-1c99-4210-b336-c8c2e5815e25"
+    },
+    {
+      "claim_id": "e21d09e7-2867-415a-b318-9a3351f7270f",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "9bea7181-5daa-47d9-b320-bb97c266f8b8",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "405725f5-21e6-4df7-addc-a5e3ebf91a93",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "e07849e8-591a-4e4f-92ab-9b129f2e82d9",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "cc566125-1d9d-4b6a-9533-d1917fd4552c",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "2c1dac0d-999d-480e-a890-6e136599f441",
+      "result_id": "5bc0fb2b-3cfa-4a9b-8059-442e35047c9d"
+    },
+    {
+      "claim_id": "9e9bdd90-1789-4cc6-857e-c6110e26fba5",
+      "result_id": "fd56696d-b154-42cd-aeba-2de653475da8"
+    },
+    {
+      "claim_id": "602aba0f-c617-4f4b-bbf9-f374ab04c051",
+      "result_id": "fd56696d-b154-42cd-aeba-2de653475da8"
+    },
+    {
+      "claim_id": "e7bc0aa1-402d-4328-99ab-510cdec0c60e",
+      "result_id": "fd56696d-b154-42cd-aeba-2de653475da8"
+    },
+    {
+      "claim_id": "cda6b184-a652-4ac6-803c-06148ea733b9",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "e04b6f36-11fe-4197-ba57-e8d113ed619c",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "24cf523b-4011-412f-af96-744da476bf56",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "7ac92672-e209-491a-b3b3-f24c7a703f32",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "6b6caf4d-4af0-4fca-9f24-7af061e9a9d3",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "1d8f6b80-9617-4e19-b60e-fbfda06e541a",
+      "result_id": "f47630d9-4c19-481e-b10b-89c97ba3f1d8"
+    },
+    {
+      "claim_id": "bc466899-a455-4f0c-b3aa-2decf56b9ff7",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "65665bb8-1906-4262-bf3d-d1be575573bc",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "76a7419f-8bd2-4337-a2c0-5ad80b807f57",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "db4b4e24-9eb7-461c-ac5e-aac00813def3",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "0b2cb7c6-4b5e-4285-bac2-7407a955227f",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "729e4961-1ef2-4c0a-a048-8f1fd90fe78c",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "57423e55-c612-4800-9e79-ecc2a8c2c848",
+      "result_id": "6aae49b8-9ddc-4638-a660-03a3872b64d2"
+    },
+    {
+      "claim_id": "80451a31-c1f1-4c4b-8147-72f534f9fd0d",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "4d9f8872-85a5-4e3d-a046-0afb6d4177bb",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "ff8b3ef3-431d-4b02-afbf-b6f535e458b0",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "345006f6-8238-473b-a1d9-0ebb7a3b01c1",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "d49a655b-669c-49cb-ba83-39670c77b6d5",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "7326c790-ffbe-48bf-881b-7d2caeec1864",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "5e0fac8f-597e-4056-b673-4468228c671a",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "6341fd9c-24c3-4763-9708-42e56fb4c3f8",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "fe18c76e-e0b5-40ff-b792-18e1f258085f",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "b95d7a91-ebdb-4357-9c4b-ff003355b2e7",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "2ccfd90e-6c27-4173-b8cc-fc682eee4290",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "d5adcd7c-df59-4a37-bc29-e1355c468e23",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "ff3ecf98-608d-4c6e-a9ee-5b3691925f02",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "41086981-779c-402c-8420-965a90eb164e",
+      "result_id": "ce511726-3e8b-4ea7-b424-23bb235062c7"
+    },
+    {
+      "claim_id": "9c523c13-9554-4b77-a976-257663eb9299",
+      "result_id": "017c62ed-142b-408b-9c87-d32888cc29fb"
+    },
+    {
+      "claim_id": "4e4a0315-de90-448e-a4e5-4a25f853bb0f",
+      "result_id": "017c62ed-142b-408b-9c87-d32888cc29fb"
+    },
+    {
+      "claim_id": "eb2ae7b6-b6b1-45d4-b4c4-d9127eaa769b",
+      "result_id": "017c62ed-142b-408b-9c87-d32888cc29fb"
+    },
+    {
+      "claim_id": "d5ad52a7-6ba1-4813-a054-cd894c9c159d",
+      "result_id": "017c62ed-142b-408b-9c87-d32888cc29fb"
+    },
+    {
+      "claim_id": "4a845a12-fc57-4d16-967a-cbe7926a8030",
+      "result_id": "30429460-5dc2-4266-bd27-52958dd0a230"
+    },
+    {
+      "claim_id": "947415f9-9020-41f2-837f-fe272babaa55",
+      "result_id": "30429460-5dc2-4266-bd27-52958dd0a230"
+    },
+    {
+      "claim_id": "755900a5-7712-49b7-bf71-281966ba06cb",
+      "result_id": "30429460-5dc2-4266-bd27-52958dd0a230"
+    },
+    {
+      "claim_id": "a6cc80a9-f45e-4189-ac88-afb7ac132c3e",
+      "result_id": "bbf95086-14a3-46ec-8876-a7b5b3fed482"
+    },
+    {
+      "claim_id": "d5040c2c-31f1-4c5c-8ceb-b2c83cae0788",
+      "result_id": "bbf95086-14a3-46ec-8876-a7b5b3fed482"
+    },
+    {
+      "claim_id": "54cc0c1c-10a7-4e07-9b95-64c1a9daedfc",
+      "result_id": "bbf95086-14a3-46ec-8876-a7b5b3fed482"
+    },
+    {
+      "claim_id": "7deb12be-9374-463a-9a15-b84917116705",
+      "result_id": "bbf95086-14a3-46ec-8876-a7b5b3fed482"
+    },
+    {
+      "claim_id": "5215cbf0-1dbb-4685-b1db-2a9a46129f79",
+      "result_id": "ec0c4ab0-b18a-4825-ab5d-a45a6a097f86"
+    },
+    {
+      "claim_id": "77e7ab96-9237-4c81-b3ee-aa3da5c87334",
+      "result_id": "ec0c4ab0-b18a-4825-ab5d-a45a6a097f86"
+    },
+    {
+      "claim_id": "bb50623e-9f44-42df-9ebd-03aae6e3e11a",
+      "result_id": "ec0c4ab0-b18a-4825-ab5d-a45a6a097f86"
+    }
+  ],
+  "comparisons": []
+}

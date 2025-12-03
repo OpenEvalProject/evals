@@ -1,0 +1,2477 @@
+{
+  "submission": {
+    "id": "dd62d763-7c33-4a37-9388-90ba8c09c70b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:30:52.892870Z",
+    "updated_at": "2025-12-03T05:30:52.892870Z"
+  },
+  "content": [
+    {
+      "id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "submission_id": "dd62d763-7c33-4a37-9388-90ba8c09c70b",
+      "content_type": "manuscript",
+      "content_text": "# High-speed, three-dimensional imaging reveals chemotactic behaviour specific to human-infective Leishmania parasites\n\n## Authors\n\n- Rachel C Findlay<sup>1</sup> ([ORCID: 0000-0003-3235-130X](https://orcid.org/0000-0003-3235-130X))\n- Mohamed Osman<sup>3</sup>\n- Kirstin A Spence<sup>1</sup> ([ORCID: 0000-0002-1220-4698](https://orcid.org/0000-0002-1220-4698))\n- Paul M Kaye<sup>3</sup> ([ORCID: 0000-0002-8796-4755](https://orcid.org/0000-0002-8796-4755))\n- Pegine B Walrad<sup>1</sup> ([ORCID: 0000-0002-2302-0720](https://orcid.org/0000-0002-2302-0720)) \u2020\n- Laurence G Wilson<sup>2</sup> ([ORCID: 0000-0001-6659-6001](https://orcid.org/0000-0001-6659-6001)) \u2020\n\n### Affiliations\n\n1. York Biomedical Research Institute, Department of Biology, University of York York United Kingdom\n2. Department of Physics, University of York York United Kingdom\n3. York Biomedical Research Institute, Hull York Medical School, University of York York United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCellular motility is an ancient eukaryotic trait, ubiquitous across phyla with roles in predator avoidance, resource access, and competition. Flagellar motility is seen in various parasitic protozoans, and morphological changes in flagella during the parasite life cycle have been observed. We studied the impact of these changes on motility across life cycle stages, and how such changes might serve to facilitate human infection. We used holographic microscopy to image swimming cells of different Leishmania mexicana life cycle stages in three dimensions. We find that the human-infective (metacyclic promastigote) forms display \u2018run and tumble\u2019 behaviour in the absence of stimulus, reminiscent of bacterial motion, and that they specifically modify swimming direction and speed to target host immune cells in response to a macrophage-derived stimulus. Non-infective (procyclic promastigote) cells swim more slowly, along meandering helical paths. These findings demonstrate adaptation of swimming phenotype and chemotaxis towards human cells.\n\n## Introduction\n\nFlagellar-dependent motility (Bray, 2001; Beneke et al., 2019) is key for transmission of unicellular Leishmania parasites, causative agents of the leishmaniases. These infections represent the world\u2019s ninth largest infectious disease burden with an expanding territory endemic to 98 countries that threatens 350 million people globally (Alvar et al., 2012). Like many vector-borne parasites, life\u00a0cycle stage-specific differentiation is observed, affecting both Leishmania body shape and flagellar morphology (Pulvertaft and Hoyle, 1960; Bates and Rogers, 2004; Ambit et al., 2011). Notably, flagellar length changes dramatically in Leishmania parasites relative to other flagellated microorganisms. Procyclic promastigotes\u2019 (PCF) cell bodies are 10\u201312 \u03bcm long, with a flagellum of approximately the same length, while human-infective metacyclic promastigotes\u2019 (META) cell bodies are 8\u201310 \u03bcm in length, with a flagellum 20 \u03bcm long (Sacks and Perkins, 1984; Video 1). We summarise the key stages in the Leishmania mexicana life cycle in Figure 1\u2014figure supplement 1.\n\n![Video 1.](https://cdn.elifesciences.org/articles/65051/elife-65051-video1.mp4.jpg)\n\n**Video 1.:** The cells were attached to the chamber surface by pre-treating the glass slide with polylysine. The scale bar represents 25 \u03bcm.\n\nStudying the three-dimensional swimming patterns of motile flagellates gives insight into regulation of the flagellar beat and details of the cells\u2019 navigation strategy. The physics of microorganism swimming and navigation has been considered extensively in the context of bacterial motility, where biased random walks are used to counter the randomisation of Brownian motion (Berg and Brown, 1972; Taktikos et al., 2013; Son et al., 2016). Leishmania cells are an order of magnitude larger in each dimension than typical model bacteria, and rotational diffusivity scales inversely\u00a0with the cell\u2019s volume (Berg, 1993). In a medium with viscosity close to that of water, it takes a few seconds to randomise the orientation of an Escherichia coli cell, but over 200 s to randomise the orientation of Leishmania. The physical constraints that shape the response of these two micoorganisms are therefore fundamentally different. From a fluid dynamics perspective, both operate at low Reynolds number, but Brownian motion dominates life for the bacterial system, while it is negligible for Leishmania. Nevertheless, there are intriguing signs that the run-tumble locomotion characteristic of bacteria like E. coli has analogues in motile single-cell eukaryotes: Chlamydomonas reinhardtii algae exhibit run and tumble behaviour (Polin et al., 2009), and sperm from the sea urchin Arbacia punctulata exhibit sharp reorientation events amidst periods of helical swimming about a straight \u2018run\u2019 axis (Jikeli et al., 2015).\n\nChemotaxis has been observed in trypanosomatids, although the results have often been somewhat nuanced. In an early study of chemotaxis in L. mexicana, Leishmania major, and Leishmania donovani (Bray, 1983), it was found that promastigote cells move up gradients of sugars, serum, and some serum components. This work also found some evidence that peritoneal macrophages from mice were attracted by serum that had been \u2018activated\u2019 by exposure to L. mexicana. The hypothesis that the host and motile parasites interact by diffusing messengers is supported by a study that shows that Leishmania promastigotes are repelled by ATP, possibly allowing them to evade neutrophils and adapt for phagocytosis (Detke and Elsabrouty, 2008). Other authors have found evidence that promastigotes of Leishmania spp. chemotax towards sugars (Oliveira et al., 2000), though another contemporary study suggested that the directional behaviour is more appositely ascribed to osmotaxis, and is therefore chemically non-specific (Leslie et al., 2002). Intriguingly, the latter study speculates that chemotactic or osmotactic stimulus could play an important role in providing an orientational stimulus for the parasites that prevents them being excreted and allows them to navigate within the sandfly host. Barros et al., 2006 performed experiments in which they timed the duration between reorientation events in swimming cells, showing that Leishmania amazonensis promastigote cells respond to both osmo- and chemotaxis, and find that chemotaxis dominates the response for all but the highest stimulant concentrations. More recently, it was shown that Leishmania braziliensis and L. amazonensis show chemotactic responses towards stimulants including a repurposed cancer drug (methotrexate) (D\u00edaz et al., 2013) and amino acids (Diaz et al., 2015). Optical tweezers studies on L. amazonensis (de Thomaz et al., 2011; Pozzo et al., 2009) showed that individual cells are attracted to higher glucose concentrations, and in the related trypanosomatids Trypanosoma cruzi and Trypanosoma rangeli, cells orient themselves towards tissue extracted from tsetse flies (their insect host) . Most recently, there have been exciting developments in the area of \u2018social motility\u2019 (collective motion) in Trypanosomes (Oberholzer et al., 2010; Schuster et al., 2017; Shaw et al., 2019), where it was shown that chemotactic behaviour is not just a single-cell phenomenon, but one that is exhibited in collective cell behaviour as well (DeMarco et al., 2020). Millimetre-scale groups of Trypanosoma brucei cells displaying social motility can change their swimming direction to avoid other colonies of their own species, but are attracted by chemicals diffusing from neighbouring colonies of E. coli.\n\nHolographic microscopy has proven to be a versatile and powerful tool for investigating the dynamics of swimming microorganisms at high speed and diffraction-limited resolution (Katz and Sheng, 2010; Romero et al., 2012; Wei\u00dfe et al., 2020; Heddergott et al., 2012; Wilson et al., 2013; Molaei et al., 2014; Jikeli et al., 2015; Zhang et al., 2018; Thornton et al., 2020). Three-dimensional tracking, using holographic microscopy or other techniques, unambiguously resolves chirality in the shape of objects and in the geometry of swimming paths. A long-standing question in the biological physics of the organelle at the heart of the flagellum focuses on the breaking of symmetry. The axoneme has a chiral structure in which dynein molecules on each doublet can attach to their clockwise neighbour, as viewed from the basal end of the axoneme (Afzelius et al., 1995). Several groups have examined whether this structural chirality of the axoneme results in chiral flagellar waveforms. Rodr\u00edguez et al., 2009 showed that the flagellum of T. brucei could produce waves of either left- or right-handed chirality, in both procyclic-form and bloodstream-form cells. Bargul et al., 2016 examined several species and strains of Trypanosoma and demonstrated that the chirality of the flagellar attachment can vary, even between strains of the same species, but the direction of the flagellum\u2019s rotation is independent of these morphological features. This has also been seen in the absence of an accompanying cell body attached to a flagellum; the male microgamete of Plasmodium shows both right-\u00a0and left-handed chiralities (Wilson et al., 2013).\n\nHere, we compare and quantitatively define the swimming dynamics and parameters of two key L. mexicana life\u00a0cycle stages and find evidence of unbiased chirality in swimming behaviour. We further demonstrate a macrophage-driven chemotactic strategy involving novel run and tumble behaviour in Leishmania, where the parasites change direction, speed, and tumbling behaviour in the presence of human blood-derived macrophages.\n\n## Results and discussion\n\nTo characterise motile L.\u00a0mexicana, we harvested PCF and META stages using molecularly\u00a0verified culture techniques and verified each population pool via morphological distinctions and expression of stage-specific markers, Histone H4 and SHERP (de Pablos et al., 2019; Knuepfer et al., 2001; Figure 1A). We then used holographic microscopy to analyse the three-dimensional motility of suspensions of PCF and META. Subsets of this data are presented as composite renderings of 500 cell tracks in a sample volume $\u223c1.5\\times1.5\\times1.2$ mm3 (Figure 1B,C,\u00a0Video 2,\u00a0Video 3). In liquid culture, observed swimming speeds vary both within and between these two groups. We find the mean swimming speed of PCF cells (Figure 1D) to be 18.3\u00a0\u00b1\u00a00.2 \u03bcm/s (SEM), significantly lower than that of META cells (Figure 1E), which have a mean speed of 29.5\u00a0\u00b1\u00a00.2 \u03bcm/s (SEM). Although the mean swimming speeds are significantly different, the distributions of swimming speeds are broad and overlap: the standard deviations in swimming speed are 8.0 \u03bcm/s (PCF) and 10.4 \u03bcm/s (META). Such overlap may result from enriched, but not wholly distinct, PCF and META populations being characterised (per gene marker expression) (Figure 1A,D,E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig1-v1.jpg)\n\n**Figure 1.:** (A) qPCRs of H4 (PCF molecular marker) and SHERP (META molecular marker) levels relative to N-myristyltransferase (nmt) (constant transcript control) demonstrate that enriched, but not wholly distinct populations of cells were isolated and characterised. (B) Three-dimensional swimming trajectories from 500 PCF cells of L. mexicana, showing stereotypical meandering helical paths (Video 2). (C) Trajectories of 500 META cells of L. mexicana. These show a marked transition to a \u2018run and tumble\u2019 phenotype of rapid, straight trajectories interspersed by sharp reorientations (Video 3). (D,E) Distribution of instantaneous swimming speeds in PCF (n\u00a0=\u00a03231) and META (n\u00a0=\u00a02202) cells, respectively. (F) Individual tracks of PCF and META cells at a smaller scale, illustrating the different swimming phenotypes (Video 4). (G) Cartoon illustrating the dominant swimming phenotype for PCF (top) and META (bottom). (H) The x-component of cell body motion as a function of time for a PCF cell. The black line represents the raw data, and the blue line is the motion reconstituted using the principal frequency components only. (I) The\u00a0x-component of motion for a META cell, both raw data (black) and principal frequencies only (red). The flagellar beat frequency is more pronounced in META cells compared to PCF cells because the cell bodies of the former are significantly smaller, and their flagella are longer. (J) Averaged power spectra of PCF (blue, n\u00a0=\u00a03231) and META (red, n\u00a0=\u00a02202) motion, when the lowest frequencies have been removed (see text). The peaks at around 0.6 Hz correspond to the rotation of the flagellar beat plane and the peaks at around 20 Hz to the flagellar beat in both cell types. The peak values and estimated uncertainties are indicated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** This cartoon shows the key stages of the Leishmania life cycle within the sandfly. Female sandflies ingest Leishmania amastigote-stage parasites (AMA; red) during bloodmeals from infected mammals. Within 24\u201348 hr of exposure to the midgut environment, AMA differentiate into procyclic-stage promastigotes (PCF; green). PCF in turn differentiate into human-infective metacyclic-stage promastigotes (META; purple) within 2 weeks. Subsequent bloodmeals can then transmit META parasites into new mammalian hosts. In our study we compare the swimming phenotype of the motile life cycle stages: PCF (green) and META (purple). We find that parasite differentiation is accompanied by distinct changes in swimming behaviour.\n\n![Video 2.](https://cdn.elifesciences.org/articles/65051/elife-65051-video2.mp4.jpg)\n\n**Video 2.:** The squares on the ground represent 300 \u03bcm on a side, and the tracks are between 20\u00a0and\u00a060 s in duration.\n\n![Video 3.](https://cdn.elifesciences.org/articles/65051/elife-65051-video3.mp4.jpg)\n\n**Video 3.:** The squares on the ground represent 300 \u03bcm on a side, and the tracks are between 20\u00a0and\u00a060 s in duration.\n\nOur results indicate PCF cells swim with a characteristic slow, corkscrew-like motion around a gently curving axis, a similar pattern to that of sea urchin sperm cells (Jikeli et al., 2015). In contrast, culture-derived META cells display a distinct swimming phenotype with straight path segments punctuated by sharp turning events, a \u2018run and tumble\u2019 motif reminiscent of enteric bacteria such as E. coli (Figure 1C). The \u2018tumble\u2019 events were marked by a decrease in the processive speed of the cells, consistent with a reversal of the flagellar beat and similar to pauses in motion observed in trypanosomes (Heddergott et al., 2012).\n\nThe chirality of swimming motion can be challenging to access experimentally (Rodr\u00edguez et al., 2009; Heddergott et al., 2012; Wheeler, 2017; Schuster et al., 2017), especially in cells with a complicated morphology. We assess the chirality of the tracks by using three-dimensional tracking to measure the helicity $H$\u00a0(Wilson et al., 2013) as illustrated in Figure 2A ($H=0$ implies an achiral line, identical to its mirror image). Importantly, neither PCF (Figure 2B) nor META (Figure 2C) cell tracks display a systematic chirality on the population level. Individual tracks display a right- or left-handed character, and we do not observe any switches from left- to right-handed chirality (or vice\u00a0versa) in any of our tracks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cartoon depicting left- and right-handed tracks, corresponding to negative and positive helicity, respectively ($H=0$ is an achiral line). (B) Normalised probability density of instantaneous helicity in a population of PCF (n\u00a0=\u00a01.1\u00a0\u00d7\u00a0105). (C) Normalised probability density of helicity among META (n\u00a0=\u00a07.9\u00a0\u00d7\u00a0104). (D) An example META trajectory in which the colour code shows instantaneous speed. The cell was imaged at 50 Hz, with every 30th point plotted for clarity and five changes in direction (\u2018tumbles\u2019), as indicated. (E) The normalised probability density of tumble angles among META. The mean tumble angle is 72\u00b0\u00a0\u00b1\u00a00.5\u00b0 (SEM) and the mode is 21\u00b0. (F) The distribution of run durations among META, showing two distinct exponential regimes, at short and long times as indicated by the piecewise straight-line fits (black lines). The inset shows the complete range of run durations. (G) Correlation between the duration of a run and the tumble angle following it among META (n\u00a0=\u00a05027 runs). Shorter runs (population 1) are followed by a wider range of angles than longer runs (population 2) indicative of two characteristic run phenotypes.\n\nTo analyse the characteristic run and tumble nature of META tracks in more detail, we separate the tracks into \u2018runs\u2019 of duration $\\tau_{n}=t_{n}-t_{n-1}$ punctuated by \u2018tumbles\u2019 through an angle \u03b8 (Figure 2D). Tumble angles appear biased towards small angles (Figure 2E), so several tumbles would typically be required to completely randomise a cell\u2019s swimming direction. In contrast to commonly studied bacterial species that display a heuristically similar swimming pattern, the distribution of Leishmania META run durations is not a simple exponential. We observe at least two distinct run behavioural \u2018regimes\u2019, as shown in Figure 2F. Runs of $\\tau<$\u00a01.5 s are the most common, though the distribution has a long exponential tail. Data on the longest run durations are noisy owing to the finite size of the sample volume, which limits the longest runs that may be captured. The two distinct run regimes are denoted by exponential lines of best fit (non-linear least squares regressions over the domain as indicated) in the main panel of Figure 2F, while the inset shows all data down to very low event frequencies at run durations up to 25 s. Figure 2G shows the relationship between run duration (\u03c4) and subsequent tumble angle (\u03b8). We note two distinct populations of events, implying two distinct processes: population 1 represents larger reorientations following shorter runs, and population 2 represents slight \u2018course corrections\u2019 during longer runs. This implies that sharper turns are suppressed during longer runs.\n\nIn bacterial systems (Berg, 1993; Turner et al., 2016), an exponential distribution of runs is the hallmark of an underlying Poisson process with a constant probability of tumbling per unit time. Fine-tuning of this tumble probability in response to a biological sensing mechanism enables cells to navigate towards or away from an external stimulus. To determine whether the behaviour of META cells was fixed or could be regulated in conditions that might favour intracellular infection, we repeated our analysis using META cells exposed to J774.2 immortalised mouse macrophages (mM\u03c6) and human monocyte-derived macrophages (hM\u03c6), as well as medium alone (the latter as a negative control), with results shown in Figure 3. We compare the number of cells found close to the chemotactic bait (\u2018Tip\u2019) to the number found in a region 2 cm from the bait (\u2018Away\u2019), as well as their respective swimming behaviour, in Figure 3A. Cells were significantly drawn toward the pipette tip in the presence of primary human blood-derived macrophages, but not to murine macrophages (p\u00a0<\u00a00.05). Unlike META cells, PCF cells showed a general attraction towards the unrefined agar in the pipette tip even in the absence of a particular stimulus (data shown in Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig3-v1.jpg)\n\n**Figure 3.:** (A) Fractions of tracks from META cells observed in a bulk suspension of cells 1 cm away from (\u2018Away\u2019, solid bars) and immediately adjacent to a loaded pipette tip that had been immersed in the sample medium (\u2018Tip\u2019, filled bars) for 30 min. The negative controls, in which tips were filled with DMEM agar, show negligible differences in the number of tracks proximal to the tip, versus the distal bulk. Pipette tips filled with either cultured J774.2 immortalised, mouse stomach-derived macrophages (mM\u03c6) or fresh human blood-derived macrophages (hM\u03c6) showed accumulations of cells around the pipette tips (error bars\u00a0=\u00a095% CI). (B) The number of \u2018tumble\u2019 events for cells in control (DMEM) and test (hM\u03c6) conditions. Exposure to hM\u03c6 reduces the number of tumble events considerably, consistent with a more persistent swimming direction. This effect impacts not only the cells that are in the immediate proximity of the human-derived macrophages (hM\u03c6, Tip) but also those in the rest of the sample chamber. As the cells are free to explore the whole sample volume, any \u2018activation\u2019 of cells exposed to a macrophage stimulus may persist even when the cells themselves have left the immediate environment of the pipette tip. (C) The\u00a0x-y projection of a section of a META track, showing tumble times ($t_{1},t_{2}$), reorientation angles ($\\theta_{1},\\theta_{2}$), and intervening run duration ($\\tau_{2}$). (D) The distribution of tumble angles remains unchanged in the presence of macrophage stimulus, suggesting an unbiased stochastic reorientation process. (E) Distribution of run durations. Contrary to what would be expected in the equivalent situation in chemotaxis in model bacterial systems, there is no increase in run duration in the presence of stimulus (hM\u03c6 \u2018Tip\u2019), compared to controls (hM\u03c6 \u2018Away\u2019, DMEM \u2018Tip\u2019, DMEM \u2018Away\u2019); the distribution of run durations is almost identical in all cases. (F) The mean displacement per run, showing an increase in the run displacement as a consequence of the faster run speed near the macrophage-loaded pipette tip (error bars\u00a0=\u00a0error bars=95% CI). (G\u2013L) Normalised instantaneous cell speed distributions for cells distal versus proximal to stimulus. Control samples (DMEM; G,J) show minimal difference, but the presence of mouse- or human-derived macrophages causes a decrease or increase in swimming speed, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Fluorescein-infused agar was used to model the diffusion of a molecular substance into our sample chambers. A 10 \u03bcl pipette tip was loaded with agar and sealed into the chamber. The sample chamber was placed horizontally on the microscope and fluorescence images were acquired at intervals of 15 min after loading (panel (A)). To quantify the extent of the chemical plume emitted from the pipette tip, line profiles of intensity were measured in each image. The positions of the line profiles are illustrated in the first panel only (0 min), along with the outlines of the pipette tip walls where they lie in the focal plane. The fluorescein plume extends towards the bottom of the image over the course of the experiment. Example line profile data is shown in (B), for the case of a line profile extending normal to the surface of the agar in the pipette tip. These data were fitted with an error function, shown as a black solid line. Profiles in the same position in the other images in the sequence are shown in (C). Panels (D) and (E) show example line profile data and fits from the transect parallel to agar surface normal. A quadratic fit was used to fit the data in this case. These data show that the plume is relatively stable against any convection currents in the sample, and extend throughout the field of view of our chemotaxis experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65051/elife-65051-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Control experiments show that PCF cells are attracted to the gel matrix contained within the pipette tip even in the absence of macrophages. This is consistent with previous studies in which samples of \u2018promastigotes\u2019 (i.e. samples in which the metacyclic fraction has not been enriched) are attracted to various small carbohydrate molecules. These molecules are associated with unrefined agar. In light of this \u2018false positive\u2019 result \u2013 unlike the case for metacyclic promastigotes\u2019\u00a0(META) cells \u2013 further experiments with PCF were not pursued. (Error bars represent 95% CI.)\n\nThe number of tumbles exhibited by META cells decreases threefold in the presence of hM\u03c6 (Figure 3B), independent of the number of tracks observed or track length. A more detailed examination of the geometry of the tracks (quantities recapitulated in Figure 3C) yields unaltered distributions of tumble angles (Figure 3D) and run durations (Figure 3E) between control and hM\u03c6 response. This apparently contradictory observation \u2013 number of tumbles decreases, but run duration is unaffected \u2013 is explained by a sub-population retaining the unstimulated behaviour, while the majority of cells suppress tumbles almost entirely. As described in the Materials\u00a0and\u00a0methods section, at least two tumbles per track are required to establish tumble frequency. Therefore, if a cell performs one or zero tumbles, it will not contribute to the run duration statistics. The average displacement per run is enhanced in both \u2018Tip\u2019 and \u2018Away\u2019 cases in the presence of hM\u03c6 (Figure 3F). Importantly, this indicates the presence of a biologically\u00a0relevant chemotactic stimulus from hM\u03c6 that causes META cells to swim faster and straighter.\n\nSpeed distributions for each experimental condition are shown in Figure 3G\u2013L. There is no distinction between the \u2018Tip\u2019 and \u2018Away\u2019 speed in the presence of DMEM alone. In contrast, the presence of mM\u03c6 somewhat enriches the fraction of cells swimming at low speeds (<10 \u03bcm/s), while in the presence of hM\u03c6 the average speed is increased by 30%. These distinct phenotypic responses highlight the specificity of the parasite response, and suggest the presence of a soluble, macrophage-derived stimulus to which human-infective META are highly sensitive.\n\n### Summary and conclusions\n\nLeishmania cells must survive changing environmental conditions throughout their life\u00a0cycle, and thus motile stages vary significantly in morphology and behaviour. Pre-adaptation to the next host environment in parasitic protozoans has been well documented in trypanosomes (Hill, 2003; Rico et al., 2013). For Leishmania, this has been described in terms of changes in metabolism, gene expression (De Pablos et al., 2016), and the acquisition of a complement-resistant lipophosphoglycan coat (McConville et al., 1992; Dost\u00e1lov\u00e1 and Volf, 2012). We have shown that META have a distinct swimming phenotype and chemotactic response compared to the precursor PCF forms.\n\nIn terms of the swimming phenotype, the similarity between L. mexicana swimming patterns and those of bacteria is superficial. Bacterial runs and tumbles are a strategy to enable navigation in an environment that randomises their swimming direction through rotational Brownian motion. Leishmania cells are at least five\u00a0to\u00a0eight times the (linear) size of E. coli bacteria, and rotational diffusivity is inversely\u00a0proportional to particle volume, therefore Leishmania will have their orientation randomised by Brownian motion around 100 times more slowly than E. coli (Berg, 1993). It follows that Brownian motion is negligible when considering Leishmania cell orientation, and that the run and tumble behaviour observed here originates from a different imperative, serving a distinct function specific to Leishmania. More broadly, we note that foraging strategies among larger animals also follow superficially similar movement patterns (Viswanathan et al., 1999).\n\nWe find no bias in the chirality of swimming tracks in large populations. This leads us to conclude that helical swimming patterns resulting from small lateral asymmetries or irregularities in cell body shape that are sufficient to cause a rotation through asymmetric fluid drag on the cell body. This natural variation in the shape of cells can be seen in Video 1, in which a collection of META cells with beating flagella have been affixed to a glass surface using polylysine. The helical character of the tracks is more obvious in the case of PCF than in META, as seen in Figure 1F,\u00a0Video 4. This is borne out in the broader histogram seen in Figure 2B compared to that in Figure 2C, and is likely a reflection of the larger cell body size relative to flagellar length, compared to META.\n\n![Video 4.](https://cdn.elifesciences.org/articles/65051/elife-65051-video4.mp4.jpg)\n\n**Video 4.:** The squares on the ground represent 250 \u03bcm on a side. The procyclic promastigote track displays the stereotypical meandering helical trajectory, while the metacyclic cell shows longer, straight runs interspersed with tumble events.\n\nThe attraction of META to hM\u03c6 is perhaps unsurprising given the biological relevance of macrophage infection in the life cycle of this parasite. Both hM\u03c6 (the definitive host cells) and neutrophils are drawn to sites of infection during inflammation, while resident dermal macrophages may act as host cells facilitating persistence (Lee et al., 2020). Chemical gradients are known to occur and persist in cutaneous infections, as damage to tissue, sandfly saliva and Leishmania-derived molecules have been shown to recruit immune cells by this mechanism (Dey et al., 2018; Giraud et al., 2018; Alcoforado Diniz et al., 2021). META cells have also been observed to move within the skin, away from their site of introduction (Peters et al., 2008). Under our assay conditions, we did not see a significant attraction to the murine macrophage line J774.2. Previous studies by others have shown that transcriptional responses to pathogens may differ significantly between primary cells and immortalised cells, for\u00a0example, in the response to Mycobacterium (Andreu et al., 2017). In addition, the human macrophages used here are relatively quiescent compared to the rapidly cycling J774.2 cells, with likely altered production of metabolites that may affect chemotaxis. Further studies aimed at defining the nature of the chemotactic stimuli involved may help to clarify the observed difference in response.\n\nThe control experiments showing an attraction between PCF and DMEM-infused agar are consistent with previous studies on promastigote cultures that had not been subject to META sub-population enrichment (Oliveira et al., 2000; Leslie et al., 2002; Barros et al., 2006). We speculate that this attraction is due to the presence of small carbohydrates associated with the unrefined agar, but note that any subsequent experiments in which PCF might be exposed to hM\u03c6 would be biologically irrelevant. PCF do not naturally encounter and cannot infect hM\u03c6, and attraction towards sugars or other inert matrix components would be difficult to decouple from attraction to cells.\n\nIt is of obvious interest to examine how more biologically\u00a0relevant viscosities might impact these swimming patterns (Heddergott et al., 2012). Our in vitro analyses provide a framework to examine Leishmania spp. life\u00a0cycle-dependent motility distinctions in medium, but these parasites encounter dynamic in vivo environments including sandfly bloodmeals, midgut and proboscis and mammalian dermis, bloodstream, and potentially lymph (Moll et al., 1993). In addition, T.\u00a0brucei are known to sense each other\u2019s presence and this directs movement as evidenced by in vitro social motility studies (Lopez et al., 2015; Imhof et al., 2015). While the in vivo tsetse fly environment is far more compartmentalised for T.\u00a0brucei life\u00a0cycle stages than that of the sandfly for Leishmania, investigating whether Leishmania parasites also display the capacity to sense each other would be an exciting and pertinent tangent.\n\nOur studies show that flagellar motility is modified in cells adapted for infection of the human host. We show that run\u00a0and\u00a0tumble behaviour is a phenotypic marker of human-infective META stage parasites, and that this behaviour is suppressed in the presence of a chemotactic stimulus, causing cells to swim faster and straighter towards their target. We speculate that this provides an evolutionary advantage which promotes successful phagocytic uptake of non-replicative META cells, fundamental to human infection and parasite life\u00a0cycle progression. Through optimised flagellar motility and an as-yet uncharacterised sensing mechanism, Leishmania proactively drive their uptake by human immune cells.\n\n## Materials and methods\n\n### L. mexicana cell culture\n\nPromastigote parasites of L.\u00a0mexicana (strain M379) were cultured in M199 and Grace\u2019s media at 26\u00b0C as described previously (de Pablos et al., 2019). All cells were maintained within low passage numbers (<5) to ensure biological relevance to differentiation and infectivity was not compromised (for a summary of the Leishmania life cycle, see supplementary data to Figure 1). PCF were harvested mid-logarithmic phase at concentration 3\u20136\u00d7106 cells/ml. This stock sample was diluted by a factor of 100 into fresh M199 medium to 5\u00d7104 cells/ml for holographic tracking. To generate META, PCF culture was passaged into Grace\u2019s medium and cultured for 7 days at 26\u00b0C (de Pablos et al., 2019; Rogers et al., 2009). For META populations, cells were centrifuged in a 10% Ficoll gradient (Sp\u00e4th and Beverley, 2001) to enrich for META cells as defined by morphology, molecular markers, and macrophage infectivity. Purified META were transferred into fresh M199 medium and diluted to 5\u00d7104 cells/ml for holographic tracking.\n\n### Molecular validation of L.\u00a0mexicana promastigote stages via qRTPCR\n\nRNA was isolated from PCF and META populations concurrent to image capture, purified, reverse transcribed, and analysed for Histone H4 and SHERP mRNA levels relative to constitutive nmt levels as described previously (de Pablos et al., 2019).\n\n### Macrophage cell culture\n\nImmortalised mouse stomach macrophages (J774.2) and human blood-derived macrophages from resident donors were isolated and cultured in vitro for 7 days in Dulbecco\u2019s modified eagle medium (DMEM) at 37\u00b0C prior to centrifugation. Approximately 1\u00d7104 cells were resuspended in 10 \u03bcl DMEM:1% agar for each chemotactic assay sample. Macrophage viability was confirmed via alamar blue staining 2\u00a0hr after sample preparation.\n\n### Sample chambers\n\nTo compare life cycle stages, glass sample chambers were constructed from slides and UV-curing glue, giving a final sample volume measuring approximately 20\u00a0\u00d7\u00a015\u00a0\u00d7\u00a01.2 mm3. These were loaded with L. mexicana in M199 and sealed with petroleum jelly before observation.\n\n### Chemotaxis assay\n\nThe stability of the chemotactic apparatus and resultant gradient was verified via a fluorescein-infused agar gradient establishment test (see supplementary data to Figure 3). The fluorescein\u00a0agar was then replaced in the 10 \u03bcl pipette tip by different \u2018chemotactic bait\u2019: DMEM 1% agar alone, DMEM 1% agar with immortalised mouse macrophages or with human blood-derived macrophages. Chemotaxis sample chambers were constructed as above with the addition of the 10 \u03bcl pipette tip sealed into the sample chamber with petroleum jelly. The assembly was then placed on a temperature-controlled microscope stage at 34\u00b0C in a room set at 34\u00b0C to equilibrate for 30 min, allowing transient convection currents to dissipate and a chemical gradient to become established. Cells were imaged immediately adjacent to the pipette tip, but with the tip itself approximately 50 \u03bcm outside the field of view to prevent imaging artifacts (\u2018Tip\u2019), and at a distance of approximately 1 cm from the tip (\u2018Away\u2019). Five movies were acquired in each location (\u2018Tip\u2019 and \u2018Away\u2019), alternating between the two locations between individual movie acquisitions.\n\n### Holographic video microscopy\n\nThe holographic microscopy setup was similar to that used previously (Singh et al., 2018; K\u00fchn et al., 2018; Thornton et al., 2020), with a few modifications. The samples were imaged on a Nikon Eclipse E600 upright microscope. The illumination source was a single-mode fibre-coupled laser diode with peak emission at 642 nm. The end of the fibre was mounted below the specimen stage using a custom adaptor and delivered a total of 15 mW of optical power to the sample. A Mikrotron MC-1362 monochrome camera was used to acquire videos of 3000 frames, at a frame rate of 50 Hz and with an exposure time of 100 \u03bcs. A 10\u00d7\u00a0magnification bright-field lens with numerical aperture of 0.3 was used to acquire data at a video resolution of 1024\u00a0\u00d7\u00a01024 pixels2, corresponding to a field of view measuring 1.44\u00a0\u00d7\u00a01.44 mm2. The raw videos were saved as uncompressed, 8-bit AVI files. Three biological replicates of each condition were prepared, with five technical replicates from each of these.\n\n### Holographic data reconstruction\n\nFrom each individual video frame, we calculated a stack of 130 images, spaced at 10 \u03bcm along the optical axis, sampling the optical field within a volume of 1.44\u00a0\u00d7\u00a01.44\u00a0\u00d7\u00a01.3 mm3. These sequences of images were calculated using the Rayleigh-Sommerfeld back-propagation scheme (Lee and Grier, 2007). We localised the cells using a method based on the Gouy phase anomaly, as described in more detail elsewhere (Wilson and Zhang, 2012; Farthing et al., 2017; Gibson et al., 2021). This method segments features based on axial optical intensity gradients within a sample, allowing us to extract three-dimensional coordinates for individual cells in each frame. Lateral position uncertainties are approximately 0.5 \u03bcm, while the axial performance is slightly worse at approximately 1.5 \u03bcm. The latter is limited by the angular resolution of the microscope objective and the scattering properties of the anisotropic cell bodies. A separate software routine was used to compare the putative cell coordinates extracted in each frame and associate those most likely to constitute cell tracks. The tracks were smoothed using piecewise cubic splines in order to remove noise in the cell coordinates and provide better estimates of cell velocity as described in previous work (K\u00fchn et al., 2018). Examining the mean-squared displacement of the cells\u2019 smoothed trajectories allowed us to discriminate between swimming and diffusing cells, and to discard the latter. The smoothing process also allowed for linear interpolation of missing data points, up to five consecutive points (equivalent to 0.1 s). Tracks with a duration shorter than 3\u00a0s were discarded. To give a more intuitive sense of the swimming trajectories, we have provided an \u2018artist\u2019s impression\u2019 rendering of the swimming cells, in Video 5, and in a red-cyan anaglyph version in Video 6.\n\n![Video 5.](https://cdn.elifesciences.org/articles/65051/elife-65051-video5.mp4.jpg)\n\n**Video 5.:** The cells are rendered with the cell bodies in proportion to the flagella, and the cells\u2019 swimming trajectories are those obtained from tracking data.\n\n![Video 6.](https://cdn.elifesciences.org/articles/65051/elife-65051-video6.mp4.jpg)\n\n**Video 6.:** The cells are rendered with the cell bodies in proportion to the flagella, and the cells\u2019 swimming trajectories are those obtained from tracking data.\n\n### Frequency-domain analysis\n\nTo extract the flagellar beat and body roll frequencies, the smoothed trajectories were subtracted from the raw values, and the power spectrum of the residuals was calculated. The power spectra from all cells in the sample were summed to give the data in Figure 1J. To illustrate the dominance of the two main frequency components, the track residuals were filtered in the frequency domain using a filter with two Gaussian pass bands with mean (standard deviation) frequencies of 1 Hz (1 Hz) and 20 Hz (2 Hz). The resulting signal contains the body roll and flagellar beat, removing extraneous noise, as shown in Figure 1H,I.\n\n### Track chirality analysis\n\nThe PCF and META cell tracks were analysed to extract their chirality (handedness). This was done according to a scheme similar to that previously used for determining the chirality of flagellar waveforms (Wilson et al., 2013). We first constructed an array of displacement vectors $\ud835\udc13_{j}$ from a cell\u2019s coordinates $\ud835\udc2b_{j}\u2062(t)$ by calculating $\ud835\udc13_{j}=\ud835\udc2b_{j}-\ud835\udc2b_{j-1}$, and obtained the local track handedness as the angle formed between vector $\ud835\udc13_{j}$ and the plane formed by the two previous segments (defined by $\ud835\udc13_{j-2}\u2227\ud835\udc13_{j-2}$), divided by the total contour length $|\ud835\udc13_{j-2}|+|\ud835\udc13_{j-1}|+|\ud835\udc13_{j}|$. We used this instead of (e.g.) the more conventional Frenet-Serret apparatus because the handedness ($H$) is mathematically well\u00a0behaved for straight trajectories.\n\n### Run-tumble analysis\n\nTumbles were identified as large changes in swimming direction coupled with a drop in swimming speed. Quantitatively, we calculated\n\n$$\n\u039e=1-\\frac{(v_{j}+v_{j-1})}{2\u2062\u27e8v\u27e9_{j}}\u2062arccos\u2062(\\frac{\ud835\udc13_{j}\u22c5\ud835\udc13_{j-1}}{|\ud835\udc13_{j}|\u2062|\ud835\udc13_{j-1}|}),\n$$\n\nwhere we denote the local speed during segment $\ud835\udc13_{j}$ as vj and the average speed of track $j$ as $\u27e8v\u27e9_{j}$. This quantity shows clear peaks when the cells change direction (\u2018tumbles\u2019), as identified in Figure 2D. Run duration \u03c4 was then defined as the time elapsed between two subsequent tumble events. The tumble events take a finite time, during which the cell is essentially stationary. We therefore define the tumble angle as the change in the cell\u2019s swimming direction between two time points 1\u00a0s apart, with the tumble event halfway in between.\n",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6898762b-fc13-48aa-8456-ca96109644a1",
+      "submission_id": "dd62d763-7c33-4a37-9388-90ba8c09c70b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Malcolm J McConville, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65051.sa1](https://doi.org/10.7554/eLife.65051.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study utilizes 3D holographic microscopy to identify differences in the swimming behaviour of different flagellated stages of Leishmania parasites. Infectious metacyclic promastigotes swim faster and have different trajectories compared to non-infectious stages. These stages also alter their trajectories in the presence of macrophages host cells, suggesting that flagellar function and swimming behaviour is influenced by extracellular signals which could potentially increase interactions with target host cells.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"High speed, 3D imaging reveals chemotactic behavior specific to human-infective Leishmania parasites\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Malcolm J McConville as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Dominique Soldati-Favre as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Markus Engstler (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe three reviews recognized the innovative use of holographic microscopy to investigate Leishmania flagellar function and swimming behavior. However, all reviewers had some concerns about the speculative nature of some of the discussion, particularly statements suggesting that flagellar-dependent chemotaxis might be a unique characteristic of metacyclic promastigotes (rather than a feature of all stages) and the biological relevance of this swimming behavior in more complex tissue environments. The following specific concerns should be addressed:\n\n1. The manuscript should be modified to clearly separate speculative comments on the biological significance of the work from the definitive finding.\n\n2. Please provide additional evidence that only META and not procyclic promastigotes exhibit 'chemotaxis' or remove speculation that chemotaxis may reflect a pre-adaptive response to life in the mammalian host.\n\n3. Please reference additional literature on use of holographic microscopy and flagellar motility in trypanosomatids.\n\n4. Please incorporate additional discussion on chemotaxis in kinetoplastids.\n\n5. Please add further discussion of different META motility response to different macrophage cell types (murine/human).\n\n6. Provide a more critical discussion of the physiological relevance of these findings in vivo (specifically, whether chemotaxis is likely to be relevant when host cells are already being actively recruited to tissue sites in natural sandfly infections, and major host cells that are infected during this period are neutrophils, not macrophages).\n\nReviewer #1:\n\nThe authors analyzed the swimming speeds and trajectories of ~500 procyclic (PCF) and purified metacyclic (META) promastigotes using 3D holographic microscopy. This approach allows measurement of speed, trajectories and chirality. Although the META fraction comprised a mixed population of promastigotes, they exhibit a distinctive run and tumble phenotype. The authors then developed an in vitro assay to assess the impact of a potential chemotactic signal, growing host cells, had on META swimming behaviour. They show that META exhibited significant affinity for human primary macrophages (and to a lesser extent J774 murine M\u00f8) compared to medium alone. This was associated with a decrease in tumbling and increase in run duration, allowing directed swimming to the attractant. The use of holographic microscopy to map promastigote swimming trajectories under different conditions is innovative and the finding highlight a novel virulence trait for these protists.\n\nReviewer #2:\n\nUsing high-speed holographic methodology, the swimming trajectories of two Leishmania life cycle stages are measured. Significant differences between the life stages become apparent. In addition, the authors show in a chemotaxis experiment that the infectious metacyclics respond chemotactically to the presence of macrophages.\n\nThe physics part of the study is flawless, and the holography is very impressive, especially in view of the comparatively simple setup. The analysis and presentation of the data is also flawless.\n\nWhat is not so clear is the biological interpretation of the data. Chemotactic behavior has been repeatedly postulated for Leishmania, trypanosomes, and other parasites. However, there have been no experiments to date that allow conclusions to be drawn about in vivo relevance. Unfortunately, this does not really change with this study.\n\nIt has been shown in trypanosomes that the swimming behavior of different species and life stages are influenced by the mechanical conditions of their microenvironments. Viscosity, obstacles, and hydrodynamics can all play a critical role in determining motility. These factors are ignored in the study. Cell culture medium with the viscosity of water cannot image the situation in the vector or body fluids such as blood or lymph. A chemotactic gradient such as the one generated here by rather simple means cannot arise at all in vivo, simply because everything is in flux and parasites and macrophages move continuously. Moreover, one may wonder why Leishmania should actively move chemotactically toward macrophages when they come into contact with target cells much more rapidly by chance due to self-stirring properties of body fluids. I am not questioning the finding at all. I am merely questioning its biological relevance. Perhaps it would be better to describe this aspect of the paper more cautiously and to discuss it quite openly critically. Otherwise, the result might enter our knowledge as evidence for biologically relevant chemotaxis, and that would be problematic.\n\nThe fact that the results are repeatedly mixed with discussion does not make reading the paper any easier either, especially since some of the citations here are suggestive. Important citations are missing and some citations simply do not fit into the context. Here a revision would be appropriate.\n\nL53: Here, for example, doi: 10.1371/journal.pone.0037296 be cited, that to my knowledge was the first holographic study in parasites.\n\nL73: Significant variance in swimming behavior of cells of the same stage is reported. However, the numbers suggest surprisingly little variance.\n\nL79: 'run and tumble': could a stochastic 'beat reversal' of the flagellum be observed?\n\nL82-84: to what extent is Brownian motion a relevant factor at all in the natural environments of Leishmania?\n\nL93 and Figure 2B: How can trajectories be H=O?\n\nFigure 3: The run durations are unchanged. Does this mean that the sole response to the signal is an increase in the frequency of the flagellar beat? This should continue to increase in the gradient. Is this so?\n\nReviewer #3:\n\nThe authors describe a clever and powerful assay to show chemotactic behavior in metacyclic Leishmania, which is an important result. The data seem mostly solid, but some results are confusing (perhaps partly an issue with presentation?) and overall conclusions seem like they need to be toned down a little. It is expected that this work will have long-lasting impact on the research community, and the new methods developed will be widely utilized.\n\n\u2022 \"Pre-Adaptation\", e.g. lines 149-150: A major message of the work is to suggest that motility behavior and chemotaxis is a \"pre-adaptation\". However, I don't agree that the current studies show that \"\u2026flagellar motility is a.\u2026preadaptation to infection of human hosts.\" What are the data to support this? The authors do a very good job of defining motility features of PCF and META forms, including quantitative analysis of motility features in 3D. They find that motility differs in PCF vs META forms. They also demonstrate chemotaxis in META forms. But, I don't see how these combined results demonstrate a \"pre-adaptation\" to infection of human hosts. As such, the \"pre-adaptation\" statement should be moved to speculation. Notably, I did not see tests for chemotaxis in PCF. Thus, it is even not formally demonstrated whether or not chemotaxis itself is an \"adaptation\" specific to META forma, or rather (and quite likely) is a fundamental property of all life cycle stages.\n\n\u2013 To test if chemotaxis is an 'adaptation', the authors would need to provide an analysis of PCFs. To be an adaptation, one would expect to find either that PCFs do not exhibit chemotaxis, or that they do not chemotax toward macrophages in the assay used. Without this, the authors cannot say whether chemotaxis is a stage-specific behavior, much less a \"pre\"-adaptation.\n\n\u2013 Note, I think the work would not be negatively affected if the whole concept of \"adaptation\" were omitted and the work was framed around the very important results of developing a new and powerful approach to investigate Leishmania motility in 3D; quantitative definition of motility parameters; demonstration of chemotaxis in META forms.\n\n\u2022 Chemotaxis: The work would benefit from some commentary on chemotaxis in kinetoplastids. A 'suggestion' for a potential advantage provided by chemotaxis (lines153-155) is not unwarranted, but that should be kept to speculation at this point, and implication that this is an 'adaptation' is not supported by the current data. With report of chemotaxis being a major message, the paper would benefit from a brief discussion on what's been demonstrated regarding chemotaxis in trypanosomatids, as this is an important, yet under-represented area of research on these organisms. Without this, the novelty and significance of the author's rigorous, novel and very interesting work are not brought out.\n\n\u2022 Lines 125 \u2013 129: How is it that tumble frequency decreases, but run duration is unaffected? I would think that less frequent tumbles would lead to longer runs? This warrants more comment.\n\n\u2022 Figure 3 and Lines 135-139: How does one reconcile the finding that murine macrophages and human macrophages both induce taxis toward the pipet tip (3A), but there is opposite impact on speed profiles, with murine macrophages causing slower speeds, and human macrophages causing faster speeds (3H,K vs 3I,L)? Perhaps analysis done for human macrophages must also be done for murine macrophages. Some more commentary, and analysis needs to be provided on this point.\n\n\u2022 Regarding replicates: While the number of cells tracked are clearly indicated, I did not see a description of how many different chambers were imaged for each condition, or how many different fields per chamber.\n",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ff30450-1b05-4ae1-8f53-ec963662cf0a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C1",
+      "claim": "Leishmania infections represent the world's ninth largest infectious disease burden.",
+      "claim_type": "EXPLICIT",
+      "source": "These infections represent the world's ninth largest infectious disease burden with an expanding territory endemic to 98 countries that threatens 350 million people globally (Alvar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alvar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "2b4d3871-d932-41e1-94f8-a4e8dd1c3522",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C2",
+      "claim": "Leishmania infections are endemic to 98 countries.",
+      "claim_type": "EXPLICIT",
+      "source": "These infections represent the world's ninth largest infectious disease burden with an expanding territory endemic to 98 countries that threatens 350 million people globally (Alvar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alvar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "7aa0ea39-e97b-46f7-9e2a-ec642d55f303",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C3",
+      "claim": "Leishmania infections threaten 350 million people globally.",
+      "claim_type": "EXPLICIT",
+      "source": "These infections represent the world's ninth largest infectious disease burden with an expanding territory endemic to 98 countries that threatens 350 million people globally (Alvar et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alvar et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "9e1219f0-c96b-40e4-803d-5219a132fc0b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C4",
+      "claim": "Life cycle stage-specific differentiation is observed in Leishmania, affecting both body shape and flagellar morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Like many vector-borne parasites, life cycle stage-specific differentiation is observed, affecting both Leishmania body shape and flagellar morphology (Pulvertaft and Hoyle, 1960; Bates and Rogers, 2004; Ambit et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pulvertaft and Hoyle, 1960; Bates and Rogers, 2004; Ambit et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "aee5ee8f-2259-4217-9883-e305e2c925c6",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C5",
+      "claim": "Flagellar length changes dramatically in Leishmania parasites relative to other flagellated microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, flagellar length changes dramatically in Leishmania parasites relative to other flagellated microorganisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a notable observation in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "161e0ce3-25cc-41f8-ad3b-6f2390edee08",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C6",
+      "claim": "Procyclic promastigotes' cell bodies are 10\u201312 \u03bcm long, with a flagellum of approximately the same length.",
+      "claim_type": "EXPLICIT",
+      "source": "Procyclic promastigotes' (PCF) cell bodies are 10\u201312 \u03bcm long, with a flagellum of approximately the same length, while human-infective metacyclic promastigotes' (META) cell bodies are 8\u201310 \u03bcm in length, with a flagellum 20 \u03bcm long (Sacks and Perkins, 1984; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sacks and Perkins, 1984 and Video 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "dd3ff191-bbff-473c-8805-40e7b2706afd",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C7",
+      "claim": "Human-infective metacyclic promastigotes' cell bodies are 8\u201310 \u03bcm in length, with a flagellum 20 \u03bcm long.",
+      "claim_type": "EXPLICIT",
+      "source": "Procyclic promastigotes' (PCF) cell bodies are 10\u201312 \u03bcm long, with a flagellum of approximately the same length, while human-infective metacyclic promastigotes' (META) cell bodies are 8\u201310 \u03bcm in length, with a flagellum 20 \u03bcm long (Sacks and Perkins, 1984; Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sacks and Perkins, 1984 and Video 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "cfc8969d-10ce-4203-a6ca-f6aa087bbedb",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C8",
+      "claim": "Rotational diffusivity scales inversely with the cell's volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Leishmania cells are an order of magnitude larger in each dimension than typical model bacteria, and rotational diffusivity scales inversely with the cell's volume (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berg, 1993",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "452797e3-d6a2-47f1-997c-1e05e9f4a734",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C9",
+      "claim": "It takes a few seconds to randomise the orientation of an Escherichia coli cell in a medium with viscosity close to that of water.",
+      "claim_type": "EXPLICIT",
+      "source": "In a medium with viscosity close to that of water, it takes a few seconds to randomise the orientation of an Escherichia coli cell, but over 200 s to randomise the orientation of Leishmania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical principles and calculations described in the text",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "56acb8dd-7334-4132-a6a5-58b70dbae205",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C10",
+      "claim": "It takes over 200 s to randomise the orientation of Leishmania in a medium with viscosity close to that of water.",
+      "claim_type": "EXPLICIT",
+      "source": "In a medium with viscosity close to that of water, it takes a few seconds to randomise the orientation of an Escherichia coli cell, but over 200 s to randomise the orientation of Leishmania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical principles and calculations described in the text",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "e8c97f85-09fe-4b1f-81c6-c197ba59c720",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C11",
+      "claim": "Brownian motion dominates life for bacterial systems like E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "From a fluid dynamics perspective, both operate at low Reynolds number, but Brownian motion dominates life for the bacterial system, while it is negligible for Leishmania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical principles discussed in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ead73ab1-c807-4250-a872-4660f388bfc0",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C12",
+      "claim": "Brownian motion is negligible for Leishmania.",
+      "claim_type": "EXPLICIT",
+      "source": "From a fluid dynamics perspective, both operate at low Reynolds number, but Brownian motion dominates life for the bacterial system, while it is negligible for Leishmania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on physical principles discussed in the text",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "61a16fcc-5b40-4b3d-a1c3-0572c9d7156a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C13",
+      "claim": "Chlamydomonas reinhardtii algae exhibit run and tumble behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "Chlamydomonas reinhardtii algae exhibit run and tumble behaviour (Polin et al., 2009), and sperm from the sea urchin Arbacia punctulata exhibit sharp reorientation events amidst periods of helical swimming about a straight 'run' axis (Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Polin et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "11c1af58-cff3-44cc-996e-10f9a327430f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C14",
+      "claim": "Sperm from the sea urchin Arbacia punctulata exhibit sharp reorientation events amidst periods of helical swimming about a straight 'run' axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Chlamydomonas reinhardtii algae exhibit run and tumble behaviour (Polin et al., 2009), and sperm from the sea urchin Arbacia punctulata exhibit sharp reorientation events amidst periods of helical swimming about a straight 'run' axis (Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jikeli et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "5ea98c65-b5ea-4b61-94d8-2bddca921a36",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C15",
+      "claim": "Promastigote cells of L. mexicana, L. major, and L. donovani move up gradients of sugars, serum, and some serum components.",
+      "claim_type": "EXPLICIT",
+      "source": "In an early study of chemotaxis in L. mexicana, Leishmania major, and Leishmania donovani (Bray, 1983), it was found that promastigote cells move up gradients of sugars, serum, and some serum components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bray, 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "3eb89ebd-a103-4c51-b2f7-5d74bf1ca837",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C16",
+      "claim": "Peritoneal macrophages from mice were attracted by serum that had been 'activated' by exposure to L. mexicana.",
+      "claim_type": "EXPLICIT",
+      "source": "This work also found some evidence that peritoneal macrophages from mice were attracted by serum that had been 'activated' by exposure to L. mexicana.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to findings from Bray, 1983 study mentioned in previous sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "445b9b7b-bf9a-4fc8-81d0-b80d2a6bf495",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C17",
+      "claim": "Leishmania promastigotes are repelled by ATP, possibly allowing them to evade neutrophils and adapt for phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis that the host and motile parasites interact by diffusing messengers is supported by a study that shows that Leishmania promastigotes are repelled by ATP, possibly allowing them to evade neutrophils and adapt for phagocytosis (Detke and Elsabrouty, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Detke and Elsabrouty, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "b5bbbab2-b3f5-4bc8-8f81-21fd33d3e86d",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C18",
+      "claim": "Promastigotes of Leishmania spp. chemotax towards sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "Other authors have found evidence that promastigotes of Leishmania spp. chemotax towards sugars (Oliveira et al., 2000), though another contemporary study suggested that the directional behaviour is more appositely ascribed to osmotaxis, and is therefore chemically non-specific (Leslie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oliveira et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "395cd9ee-91c9-42c9-bd43-79a4d6979599",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C19",
+      "claim": "The directional behaviour of Leishmania promastigotes is more appositely ascribed to osmotaxis, and is therefore chemically non-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Other authors have found evidence that promastigotes of Leishmania spp. chemotax towards sugars (Oliveira et al., 2000), though another contemporary study suggested that the directional behaviour is more appositely ascribed to osmotaxis, and is therefore chemically non-specific (Leslie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leslie et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "86153c45-c69f-4c07-84eb-c0f46e0fab49",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C20",
+      "claim": "Leishmania amazonensis promastigote cells respond to both osmo- and chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Barros et al., 2006 performed experiments in which they timed the duration between reorientation events in swimming cells, showing that Leishmania amazonensis promastigote cells respond to both osmo- and chemotaxis, and find that chemotaxis dominates the response for all but the highest stimulant concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barros et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "a48d2fe3-7aad-4c5a-96d1-2907d4b96b07",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C21",
+      "claim": "Chemotaxis dominates the response in L. amazonensis for all but the highest stimulant concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Barros et al., 2006 performed experiments in which they timed the duration between reorientation events in swimming cells, showing that Leishmania amazonensis promastigote cells respond to both osmo- and chemotaxis, and find that chemotaxis dominates the response for all but the highest stimulant concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barros et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "8a88f07c-9ee5-4c28-adc7-90a35d1226fb",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C22",
+      "claim": "Leishmania braziliensis and L. amazonensis show chemotactic responses towards methotrexate.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it was shown that Leishmania braziliensis and L. amazonensis show chemotactic responses towards stimulants including a repurposed cancer drug (methotrexate) (D\u00edaz et al., 2013) and amino acids (Diaz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to D\u00edaz et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "cc5864e0-675a-421e-b875-1f9b33bf7680",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C23",
+      "claim": "Leishmania braziliensis and L. amazonensis show chemotactic responses towards amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it was shown that Leishmania braziliensis and L. amazonensis show chemotactic responses towards stimulants including a repurposed cancer drug (methotrexate) (D\u00edaz et al., 2013) and amino acids (Diaz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diaz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "2736e5c0-bfa1-48d0-8d8d-56c9b2f0eb2c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C26",
+      "claim": "Millimetre-scale groups of Trypanosoma brucei cells displaying social motility can change their swimming direction to avoid other colonies of their own species.",
+      "claim_type": "EXPLICIT",
+      "source": "Millimetre-scale groups of Trypanosoma brucei cells displaying social motility can change their swimming direction to avoid other colonies of their own species, but are attracted by chemicals diffusing from neighbouring colonies of E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to findings from DeMarco et al., 2020 mentioned in previous sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "bf7e38b0-d3a8-484f-8a4c-9cfc611302a5",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C27",
+      "claim": "Millimetre-scale groups of Trypanosoma brucei cells are attracted by chemicals diffusing from neighbouring colonies of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Millimetre-scale groups of Trypanosoma brucei cells displaying social motility can change their swimming direction to avoid other colonies of their own species, but are attracted by chemicals diffusing from neighbouring colonies of E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to findings from DeMarco et al., 2020 mentioned in previous sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "42e6fd4b-0981-46e2-ad47-b976439440a5",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C28",
+      "claim": "The flagellum of T. brucei can produce waves of either left- or right-handed chirality in both procyclic-form and bloodstream-form cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodr\u00edguez et al., 2009 showed that the flagellum of T. brucei could produce waves of either left- or right-handed chirality, in both procyclic-form and bloodstream-form cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rodr\u00edguez et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "57ec2459-bb4c-4de2-a5d1-e65a3754c1ca",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C29",
+      "claim": "The chirality of the flagellar attachment can vary in Trypanosoma, even between strains of the same species.",
+      "claim_type": "EXPLICIT",
+      "source": "Bargul et al., 2016 examined several species and strains of Trypanosoma and demonstrated that the chirality of the flagellar attachment can vary, even between strains of the same species, but the direction of the flagellum's rotation is independent of these morphological features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bargul et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6985a0e6-ebe6-4ab3-9482-78f7450a8366",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C30",
+      "claim": "The direction of the flagellum's rotation is independent of morphological features in Trypanosoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Bargul et al., 2016 examined several species and strains of Trypanosoma and demonstrated that the chirality of the flagellar attachment can vary, even between strains of the same species, but the direction of the flagellum's rotation is independent of these morphological features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bargul et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "66fe132e-336e-4c28-88d7-dc331e1677bf",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C31",
+      "claim": "The male microgamete of Plasmodium shows both right- and left-handed chiralities.",
+      "claim_type": "EXPLICIT",
+      "source": "This has also been seen in the absence of an accompanying cell body attached to a flagellum; the male microgamete of Plasmodium shows both right- and left-handed chiralities (Wilson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wilson et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "0c681ae0-2368-4a9e-bb42-803382f9065f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C32",
+      "claim": "The mean swimming speed of PCF cells is 18.3 \u00b1 0.2 \u03bcm/s (SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "We find the mean swimming speed of PCF cells (Figure 1D) to be 18.3 \u00b1 0.2 \u03bcm/s (SEM), significantly lower than that of META cells (Figure 1E), which have a mean speed of 29.5 \u00b1 0.2 \u03bcm/s (SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "62bf6695-da10-4c65-9207-14c9150ab5d4",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C33",
+      "claim": "The mean swimming speed of META cells is 29.5 \u00b1 0.2 \u03bcm/s (SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "We find the mean swimming speed of PCF cells (Figure 1D) to be 18.3 \u00b1 0.2 \u03bcm/s (SEM), significantly lower than that of META cells (Figure 1E), which have a mean speed of 29.5 \u00b1 0.2 \u03bcm/s (SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "624b4ad5-76df-4fff-a60d-4ae0d5be5a2c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C34",
+      "claim": "The mean swimming speed of PCF cells is significantly lower than that of META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find the mean swimming speed of PCF cells (Figure 1D) to be 18.3 \u00b1 0.2 \u03bcm/s (SEM), significantly lower than that of META cells (Figure 1E), which have a mean speed of 29.5 \u00b1 0.2 \u03bcm/s (SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison of measured data from Figures 1D and 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "bca0b5b9-905a-44d7-bed5-fb3eb4346fc4",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C35",
+      "claim": "The standard deviation in swimming speed is 8.0 \u03bcm/s for PCF cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mean swimming speeds are significantly different, the distributions of swimming speeds are broad and overlap: the standard deviations in swimming speed are 8.0 \u03bcm/s (PCF) and 10.4 \u03bcm/s (META).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "7fb3b96f-a82c-4695-99c4-e8b937cb8a6a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C36",
+      "claim": "The standard deviation in swimming speed is 10.4 \u03bcm/s for META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mean swimming speeds are significantly different, the distributions of swimming speeds are broad and overlap: the standard deviations in swimming speed are 8.0 \u03bcm/s (PCF) and 10.4 \u03bcm/s (META).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c45bed5b-8373-41f6-bf4c-5025e0cc423c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C37",
+      "claim": "PCF cells swim with a characteristic slow, corkscrew-like motion around a gently curving axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate PCF cells swim with a characteristic slow, corkscrew-like motion around a gently curving axis, a similar pattern to that of sea urchin sperm cells (Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "4f4b6600-e401-437d-9747-3944e60ae954",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C38",
+      "claim": "PCF swimming pattern is similar to that of sea urchin sperm cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate PCF cells swim with a characteristic slow, corkscrew-like motion around a gently curving axis, a similar pattern to that of sea urchin sperm cells (Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to published data from Jikeli et al., 2015",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "cad612e3-96da-4d9d-8fef-592223be3c94",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C39",
+      "claim": "Culture-derived META cells display a distinct swimming phenotype with straight path segments punctuated by sharp turning events, a 'run and tumble' motif reminiscent of enteric bacteria such as E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, culture-derived META cells display a distinct swimming phenotype with straight path segments punctuated by sharp turning events, a 'run and tumble' motif reminiscent of enteric bacteria such as E. coli (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from experimental tracking data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "cbf28ca4-f87a-4987-b8d6-9a2ad7db3dae",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C40",
+      "claim": "The 'tumble' events in META cells were marked by a decrease in the processive speed of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'tumble' events were marked by a decrease in the processive speed of the cells, consistent with a reversal of the flagellar beat and similar to pauses in motion observed in trypanosomes (Heddergott et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "a95fec76-cfe0-4945-a68c-5992404e7b5f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C41",
+      "claim": "The tumble events in META cells are consistent with a reversal of the flagellar beat.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'tumble' events were marked by a decrease in the processive speed of the cells, consistent with a reversal of the flagellar beat and similar to pauses in motion observed in trypanosomes (Heddergott et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observed speed decrease and comparison to published data",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "adbd612d-c5fb-45c1-b7af-79190adaf201",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C42",
+      "claim": "Neither PCF nor META cell tracks display a systematic chirality on the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither PCF (Figure 2B) nor META (Figure 2C) cell tracks display a systematic chirality on the population level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from helicity measurements shown in Figures 2B and 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "bdd243f3-9bb6-465f-aad0-8cc444558176",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C43",
+      "claim": "Individual Leishmania tracks display a right- or left-handed character.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual tracks display a right- or left-handed character, and we do not observe any switches from left- to right-handed chirality (or vice versa) in any of our tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "5f619727-5f06-4e08-b68a-707d9ca68428",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C44",
+      "claim": "No switches from left- to right-handed chirality (or vice versa) were observed in any Leishmania tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual tracks display a right- or left-handed character, and we do not observe any switches from left- to right-handed chirality (or vice versa) in any of our tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from experimental tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "db13b764-2afc-470f-9c2e-ea581bd9794e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C45",
+      "claim": "Tumble angles in META cells appear biased towards small angles.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumble angles appear biased towards small angles (Figure 2E), so several tumbles would typically be required to completely randomise a cell's swimming direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from distribution shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "fff1f530-b4d2-464c-8f61-12c6cfaca13c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C46",
+      "claim": "Several tumbles would typically be required to completely randomise a META cell's swimming direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumble angles appear biased towards small angles (Figure 2E), so several tumbles would typically be required to completely randomise a cell's swimming direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed bias towards small tumble angles",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "e5ae04b4-b28e-4b74-831b-c881989fd3a6",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C47",
+      "claim": "The distribution of Leishmania META run durations is not a simple exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to commonly studied bacterial species that display a heuristically similar swimming pattern, the distribution of Leishmania META run durations is not a simple exponential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from analysis of run duration data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "75d77788-aa69-4312-80b7-bce86e793d90",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C48",
+      "claim": "At least two distinct run behavioural 'regimes' are observed in META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe at least two distinct run behavioural 'regimes', as shown in Figure 2F.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "bd10c454-cb6a-4e2b-a5af-e7c01e254bad",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C49",
+      "claim": "Runs of \u03c4 < 1.5 s are the most common in META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Runs of \u03c4< 1.5 s are the most common, though the distribution has a long exponential tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from run duration distribution data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "eebbc946-a345-409f-8ddb-0dc0a58a3151",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C50",
+      "claim": "Two distinct populations of tumble events are observed in META cells: population 1 represents larger reorientations following shorter runs, and population 2 represents slight 'course corrections' during longer runs.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2G shows the relationship between run duration (\u03c4) and subsequent tumble angle (\u03b8). We note two distinct populations of events, implying two distinct processes: population 1 represents larger reorientations following shorter runs, and population 2 represents slight 'course corrections' during longer runs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from correlation plot in Figure 2G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "85c87330-c3f7-4909-b71d-2627fba6ce23",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C51",
+      "claim": "Sharper turns are suppressed during longer runs in META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that sharper turns are suppressed during longer runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the two distinct populations observed in Figure 2G",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6c1b1b6a-0d11-4260-9914-29e089c4c054",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C52",
+      "claim": "In bacterial systems, an exponential distribution of runs is the hallmark of an underlying Poisson process with a constant probability of tumbling per unit time.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacterial systems (Berg, 1993; Turner et al., 2016), an exponential distribution of runs is the hallmark of an underlying Poisson process with a constant probability of tumbling per unit time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berg, 1993 and Turner et al., 2016",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "61d820c8-5c97-48f4-99f2-6f4f921cae18",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C53",
+      "claim": "META cells were significantly drawn toward the pipette tip in the presence of primary human blood-derived macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were significantly drawn toward the pipette tip in the presence of primary human blood-derived macrophages, but not to murine macrophages (p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "1e187184-c0be-41e1-9d30-ba663f59ea2d",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C54",
+      "claim": "META cells were not significantly drawn toward the pipette tip in the presence of murine macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were significantly drawn toward the pipette tip in the presence of primary human blood-derived macrophages, but not to murine macrophages (p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "b724b186-0431-472b-8217-dcf32b820b24",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C55",
+      "claim": "PCF cells showed a general attraction towards the unrefined agar in the pipette tip even in the absence of a particular stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike META cells, PCF cells showed a general attraction towards the unrefined agar in the pipette tip even in the absence of a particular stimulus (data shown in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "aafcccfe-80c4-48a3-b229-30d7ecf1ad5d",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C56",
+      "claim": "Exposure to human macrophages reduces the number of tumble events in META cells considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of 'tumble' events for cells in control (DMEM) and test (hM\u03c6) conditions. Exposure to hM\u03c6 reduces the number of tumble events considerably, consistent with a more persistent swimming direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "4d49e3c8-21c3-4c92-9c9e-9f7aa47f6649",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C57",
+      "claim": "The distribution of tumble angles remains unchanged in META cells in the presence of macrophage stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of tumble angles remains unchanged in the presence of macrophage stimulus, suggesting an unbiased stochastic reorientation process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "1c2801fb-d168-4770-a76c-dff33f7499bd",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C58",
+      "claim": "The distribution of run durations in META cells is almost identical in the presence and absence of human macrophage stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Distribution of run durations. Contrary to what would be expected in the equivalent situation in chemotaxis in model bacterial systems, there is no increase in run duration in the presence of stimulus (hM\u03c6 'Tip'), compared to controls (hM\u03c6 'Away', DMEM 'Tip', DMEM 'Away'); the distribution of run durations is almost identical in all cases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "3650c3a6-14e4-41c3-a940-546347318ccd",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C59",
+      "claim": "The average displacement per run is enhanced in META cells in both 'Tip' and 'Away' cases in the presence of human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean displacement per run, showing an increase in the run displacement as a consequence of the faster run speed near the macrophage-loaded pipette tip (error bars = error bars=95% CI).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "1bb87fd0-cd83-492b-9746-c2fd5b7c5e4e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C60",
+      "claim": "The presence of a biologically relevant chemotactic stimulus from human macrophages causes META cells to swim faster and straighter.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this indicates the presence of a biologically relevant chemotactic stimulus from hM\u03c6 that causes META cells to swim faster and straighter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed increase in displacement per run and changes in swimming behavior",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "a699dd7e-256f-4044-b6e7-4da724af8ad2",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C61",
+      "claim": "There is no distinction between the 'Tip' and 'Away' speed in META cells in the presence of DMEM alone.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no distinction between the 'Tip' and 'Away' speed in the presence of DMEM alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from speed distribution data in Figure 3G,J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "69c17837-6449-4792-8d1f-6e8d6db458fc",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C62",
+      "claim": "The presence of murine macrophages enriches the fraction of META cells swimming at low speeds (<10 \u03bcm/s).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of mM\u03c6 somewhat enriches the fraction of cells swimming at low speeds (<10 \u03bcm/s), while in the presence of hM\u03c6 the average speed is increased by 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from speed distribution data in Figure 3H,K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "3e61cbc4-3d83-499c-9fc7-1b52ca6e97b2",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C63",
+      "claim": "In the presence of human macrophages, the average speed of META cells is increased by 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the presence of mM\u03c6 somewhat enriches the fraction of cells swimming at low speeds (<10 \u03bcm/s), while in the presence of hM\u03c6 the average speed is increased by 30%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from speed distribution data in Figure 3I,L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c25ccd1a-4d37-4071-88d5-b9d4ba09c46b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C64",
+      "claim": "The distinct phenotypic responses of META cells to murine versus human macrophages highlight the specificity of the parasite response.",
+      "claim_type": "EXPLICIT",
+      "source": "These distinct phenotypic responses highlight the specificity of the parasite response, and suggest the presence of a soluble, macrophage-derived stimulus to which human-infective META are highly sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the different responses to mM\u03c6 and hM\u03c6",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c0db9f56-990d-43bd-9a9f-a0652821d40e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C65",
+      "claim": "There is a soluble, macrophage-derived stimulus to which human-infective META are highly sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "These distinct phenotypic responses highlight the specificity of the parasite response, and suggest the presence of a soluble, macrophage-derived stimulus to which human-infective META are highly sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed chemotactic behavior and speed changes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "4cc72c85-0ff6-4f58-be4f-900f5ed890fb",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C66",
+      "claim": "Pre-adaptation to the next host environment in parasitic protozoans has been well documented in trypanosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-adaptation to the next host environment in parasitic protozoans has been well documented in trypanosomes (Hill, 2003; Rico et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hill, 2003 and Rico et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "40e9e4bb-cf17-4bca-8d2b-5e561ab1f339",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C67",
+      "claim": "Pre-adaptation in Leishmania has been described in terms of changes in metabolism, gene expression, and the acquisition of a complement-resistant lipophosphoglycan coat.",
+      "claim_type": "EXPLICIT",
+      "source": "For Leishmania, this has been described in terms of changes in metabolism, gene expression (De Pablos et al., 2016), and the acquisition of a complement-resistant lipophosphoglycan coat (McConville et al., 1992; Dost\u00e1lov\u00e1 and Volf, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Pablos et al., 2016; McConville et al., 1992; Dost\u00e1lov\u00e1 and Volf, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "21bb5898-39ee-4af9-aa89-858737a0ac61",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C68",
+      "claim": "META have a distinct swimming phenotype compared to the precursor PCF forms.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that META have a distinct swimming phenotype and chemotactic response compared to the precursor PCF forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "d1d48f71-938e-4f64-994b-0b4f5b6f40a1",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C69",
+      "claim": "META have a distinct chemotactic response compared to the precursor PCF forms.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that META have a distinct swimming phenotype and chemotactic response compared to the precursor PCF forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "50af70a7-e80f-4c24-8409-3891fb1f5918",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C70",
+      "claim": "Bacterial runs and tumbles are a strategy to enable navigation in an environment that randomises their swimming direction through rotational Brownian motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial runs and tumbles are a strategy to enable navigation in an environment that randomises their swimming direction through rotational Brownian motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of bacterial motility",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "5ac14c23-7346-4bb2-abb4-84006564312b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C71",
+      "claim": "Leishmania cells are at least five to eight times the (linear) size of E. coli bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Leishmania cells are at least five to eight times the (linear) size of E. coli bacteria, and rotational diffusivity is inversely proportional to particle volume, therefore Leishmania will have their orientation randomised by Brownian motion around 100 times more slowly than E. coli (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on size measurements and physical principles",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "165c1648-39b4-4ddb-9af8-4157e958ff99",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C72",
+      "claim": "Leishmania will have their orientation randomised by Brownian motion around 100 times more slowly than E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Leishmania cells are at least five to eight times the (linear) size of E. coli bacteria, and rotational diffusivity is inversely proportional to particle volume, therefore Leishmania will have their orientation randomised by Brownian motion around 100 times more slowly than E. coli (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from size differences and physical principles, supported by Berg, 1993",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "66e86ce9-dcc2-4675-b04d-8f45727828ed",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C73",
+      "claim": "The run and tumble behaviour observed in Leishmania originates from a different imperative than in bacteria, serving a distinct function specific to Leishmania.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that Brownian motion is negligible when considering Leishmania cell orientation, and that the run and tumble behaviour observed here originates from a different imperative, serving a distinct function specific to Leishmania.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the negligible effect of Brownian motion on Leishmania",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "4669134c-65f8-4e08-a0fb-31ced3706739",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C74",
+      "claim": "Foraging strategies among larger animals also follow superficially similar movement patterns to run and tumble.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, we note that foraging strategies among larger animals also follow superficially similar movement patterns (Viswanathan et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Viswanathan et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "893945a3-79a1-46fa-99aa-ed10ea95c6c9",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C75",
+      "claim": "Helical swimming patterns in Leishmania result from small lateral asymmetries or irregularities in cell body shape that are sufficient to cause a rotation through asymmetric fluid drag on the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads us to conclude that helical swimming patterns resulting from small lateral asymmetries or irregularities in cell body shape that are sufficient to cause a rotation through asymmetric fluid drag on the cell body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the lack of systematic chirality and observation of natural variation",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "8f817b68-e11d-42ac-abea-13dfc67bf578",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C76",
+      "claim": "The helical character of the tracks is more obvious in the case of PCF than in META.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical character of the tracks is more obvious in the case of PCF than in META, as seen in Figure 1F, Video 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed from visual comparison in Figure 1F and Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "28aac353-9403-45f4-a345-0b1228ab19db",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C77",
+      "claim": "The broader histogram of helicity in PCF compared to META is likely a reflection of the larger cell body size relative to flagellar length in PCF.",
+      "claim_type": "EXPLICIT",
+      "source": "This is borne out in the broader histogram seen in Figure 2B compared to that in Figure 2C, and is likely a reflection of the larger cell body size relative to flagellar length, compared to META.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from comparison of helicity distributions and known morphological differences",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c72c5edf-18c5-4696-8881-e63639308454",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C78",
+      "claim": "Both human macrophages and neutrophils are drawn to sites of Leishmania infection during inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both hM\u03c6 (the definitive host cells) and neutrophils are drawn to sites of infection during inflammation, while resident dermal macrophages may act as host cells facilitating persistence (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "893ee372-2a9f-476a-8160-7fa7786deafe",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C79",
+      "claim": "Resident dermal macrophages may act as host cells facilitating Leishmania persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Both hM\u03c6 (the definitive host cells) and neutrophils are drawn to sites of infection during inflammation, while resident dermal macrophages may act as host cells facilitating persistence (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "60b24065-442f-42f8-b1a5-d653226f1fec",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C80",
+      "claim": "Chemical gradients are known to occur and persist in cutaneous Leishmania infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical gradients are known to occur and persist in cutaneous infections, as damage to tissue, sandfly saliva and Leishmania-derived molecules have been shown to recruit immune cells by this mechanism (Dey et al., 2018; Giraud et al., 2018; Alcoforado Diniz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dey et al., 2018; Giraud et al., 2018; Alcoforado Diniz et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "f865fc2d-f746-4061-b513-4e2167e57997",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C81",
+      "claim": "Damage to tissue, sandfly saliva and Leishmania-derived molecules have been shown to recruit immune cells by chemical gradient mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical gradients are known to occur and persist in cutaneous infections, as damage to tissue, sandfly saliva and Leishmania-derived molecules have been shown to recruit immune cells by this mechanism (Dey et al., 2018; Giraud et al., 2018; Alcoforado Diniz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dey et al., 2018; Giraud et al., 2018; Alcoforado Diniz et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "50420955-5628-4b07-8146-9701526553db",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C82",
+      "claim": "META cells have been observed to move within the skin, away from their site of introduction.",
+      "claim_type": "EXPLICIT",
+      "source": "META cells have also been observed to move within the skin, away from their site of introduction (Peters et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peters et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6bbaa2c9-f42b-4f13-a9ec-4e9e35916fca",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C83",
+      "claim": "Transcriptional responses to pathogens may differ significantly between primary cells and immortalised cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies by others have shown that transcriptional responses to pathogens may differ significantly between primary cells and immortalised cells, for example, in the response to Mycobacterium (Andreu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Andreu et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "0f7fbd09-3fc9-4d3f-82ac-dfee352305c8",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C84",
+      "claim": "The human macrophages used in this study are relatively quiescent compared to the rapidly cycling J774.2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the human macrophages used here are relatively quiescent compared to the rapidly cycling J774.2 cells, with likely altered production of metabolites that may affect chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on known characteristics of primary versus immortalized cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "04585fb1-da86-4ab9-8d75-2be00c4f3d3f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C85",
+      "claim": "The attraction between PCF and DMEM-infused agar is consistent with previous studies on promastigote cultures that had not been subject to META sub-population enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "The control experiments showing an attraction between PCF and DMEM-infused agar are consistent with previous studies on promastigote cultures that had not been subject to META sub-population enrichment (Oliveira et al., 2000; Leslie et al., 2002; Barros et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Oliveira et al., 2000; Leslie et al., 2002; Barros et al., 2006",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "0f464cd4-c41e-4b68-879c-6e0bd9a060f5",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C86",
+      "claim": "The attraction of PCF to agar is speculated to be due to the presence of small carbohydrates associated with the unrefined agar.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this attraction is due to the presence of small carbohydrates associated with the unrefined agar, but note that any subsequent experiments in which PCF might be exposed to hM\u03c6 would be biologically irrelevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on previous studies showing attraction to carbohydrates",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c72f40dc-cd67-4a70-959f-056e2166a3a7",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C87",
+      "claim": "PCF do not naturally encounter and cannot infect human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "PCF do not naturally encounter and cannot infect hM\u03c6, and attraction towards sugars or other inert matrix components would be difficult to decouple from attraction to cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Leishmania life cycle",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "db633897-8c6d-4eb8-bddd-8793bf767c9f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C88",
+      "claim": "Leishmania parasites encounter dynamic in vivo environments including sandfly bloodmeals, midgut and proboscis and mammalian dermis, bloodstream, and potentially lymph.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro analyses provide a framework to examine Leishmania spp. life cycle-dependent motility distinctions in medium, but these parasites encounter dynamic in vivo environments including sandfly bloodmeals, midgut and proboscis and mammalian dermis, bloodstream, and potentially lymph (Moll et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of Leishmania life cycle and citation to Moll et al., 1993",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "517d364b-f2ab-4402-9fa3-63c570b17674",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C89",
+      "claim": "T. brucei are known to sense each other's presence and this directs movement as evidenced by in vitro social motility studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, T. brucei are known to sense each other's presence and this directs movement as evidenced by in vitro social motility studies (Lopez et al., 2015; Imhof et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lopez et al., 2015 and Imhof et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "555dd7bc-15db-4363-ab53-d2cadd371c1f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C90",
+      "claim": "The in vivo tsetse fly environment is far more compartmentalised for T. brucei life cycle stages than that of the sandfly for Leishmania.",
+      "claim_type": "EXPLICIT",
+      "source": "While the in vivo tsetse fly environment is far more compartmentalised for T. brucei life cycle stages than that of the sandfly for Leishmania, investigating whether Leishmania parasites also display the capacity to sense each other would be an exciting and pertinent tangent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative knowledge of parasite life cycles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "aeb9e51d-5c82-4706-8566-e5584ba3b81c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C91",
+      "claim": "Flagellar motility is modified in Leishmania cells adapted for infection of the human host.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies show that flagellar motility is modified in cells adapted for infection of the human host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ba9ab74c-b325-4665-8765-08dbdf4ea6a2",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C92",
+      "claim": "Run and tumble behaviour is a phenotypic marker of human-infective META stage parasites.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that run and tumble behaviour is a phenotypic marker of human-infective META stage parasites, and that this behaviour is suppressed in the presence of a chemotactic stimulus, causing cells to swim faster and straighter towards their target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "0b9aa2f0-0743-46cc-9a03-db81886de6a9",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C93",
+      "claim": "Run and tumble behaviour in META is suppressed in the presence of a chemotactic stimulus, causing cells to swim faster and straighter towards their target.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that run and tumble behaviour is a phenotypic marker of human-infective META stage parasites, and that this behaviour is suppressed in the presence of a chemotactic stimulus, causing cells to swim faster and straighter towards their target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through experimental data in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "fb2b93d9-cfba-4293-89ea-159236e0ff27",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C94",
+      "claim": "Optimised flagellar motility provides an evolutionary advantage which promotes successful phagocytic uptake of non-replicative META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this provides an evolutionary advantage which promotes successful phagocytic uptake of non-replicative META cells, fundamental to human infection and parasite life cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on observed motility changes and biological context",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "5ae24cd4-6aeb-4938-bb84-4aa83a813b94",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C95",
+      "claim": "Leishmania proactively drive their uptake by human immune cells through optimised flagellar motility and an as-yet uncharacterised sensing mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Through optimised flagellar motility and an as-yet uncharacterised sensing mechanism, Leishmania proactively drive their uptake by human immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations and inference",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "aaaa0c57-afc4-4927-b766-f90998c7a51f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C96",
+      "claim": "Promastigote parasites of L. mexicana (strain M379) were cultured in M199 and Grace's media at 26\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Promastigote parasites of L. mexicana (strain M379) were cultured in M199 and Grace's media at 26\u00b0C as described previously (de Pablos et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "2c7e33fe-cd61-4b05-8b27-5d1cbe60de6b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C97",
+      "claim": "PCF were harvested mid-logarithmic phase at concentration 3\u20136\u00d710^6 cells/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "PCF were harvested mid-logarithmic phase at concentration 3\u20136\u00d7106 cells/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "a27e9afb-10a7-4dad-89e3-9888e85cfc55",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C98",
+      "claim": "To generate META, PCF culture was passaged into Grace's medium and cultured for 7 days at 26\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate META, PCF culture was passaged into Grace's medium and cultured for 7 days at 26\u00b0C (de Pablos et al., 2019; Rogers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "2c511c55-4447-4414-a1e9-67573e5de7b2",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C99",
+      "claim": "META cells were centrifuged in a 10% Ficoll gradient to enrich for META cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For META populations, cells were centrifuged in a 10% Ficoll gradient (Sp\u00e4th and Beverley, 2001) to enrich for META cells as defined by morphology, molecular markers, and macrophage infectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods, supported by citation to Sp\u00e4th and Beverley, 2001",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c5cc6759-cdb2-4f57-8761-3975b2cb2d56",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C100",
+      "claim": "Human blood-derived macrophages were isolated and cultured in vitro for 7 days in DMEM at 37\u00b0C prior to centrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "Immortalised mouse stomach macrophages (J774.2) and human blood-derived macrophages from resident donors were isolated and cultured in vitro for 7 days in Dulbecco's modified eagle medium (DMEM) at 37\u00b0C prior to centrifugation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "f8e525f6-b93f-4d77-a089-07be4a7ea317",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C101",
+      "claim": "Macrophage viability was confirmed via alamar blue staining 2 hr after sample preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophage viability was confirmed via alamar blue staining 2 hr after sample preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "9332b42d-b869-4694-990a-14484e039d74",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C102",
+      "claim": "The chemotaxis sample chambers were equilibrated for 30 min at 34\u00b0C, allowing transient convection currents to dissipate and a chemical gradient to become established.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly was then placed on a temperature-controlled microscope stage at 34\u00b0C in a room set at 34\u00b0C to equilibrate for 30 min, allowing transient convection currents to dissipate and a chemical gradient to become established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "7a97cb64-86af-448b-9240-7c52e0d07faa",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C103",
+      "claim": "A single-mode fibre-coupled laser diode with peak emission at 642 nm was used as the illumination source for holographic microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The illumination source was a single-mode fibre-coupled laser diode with peak emission at 642 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c6fdd069-105c-45df-b9dc-16524cfa544b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C104",
+      "claim": "Videos of 3000 frames were acquired at a frame rate of 50 Hz with an exposure time of 100 \u03bcs.",
+      "claim_type": "EXPLICIT",
+      "source": "A Mikrotron MC-1362 monochrome camera was used to acquire videos of 3000 frames, at a frame rate of 50 Hz and with an exposure time of 100 \u03bcs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "543263e9-751f-477e-a3b8-e36a32fbcc0c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C105",
+      "claim": "A 10\u00d7 magnification bright-field lens with numerical aperture of 0.3 was used to acquire data at a video resolution of 1024 \u00d7 1024 pixels^2, corresponding to a field of view measuring 1.44 \u00d7 1.44 mm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "A 10\u00d7 magnification bright-field lens with numerical aperture of 0.3 was used to acquire data at a video resolution of 1024 \u00d7 1024 pixels2, corresponding to a field of view measuring 1.44 \u00d7 1.44 mm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "3e912f84-91c2-470c-aa17-7ff6515ea9d4",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C106",
+      "claim": "From each individual video frame, a stack of 130 images was calculated, spaced at 10 \u03bcm along the optical axis, sampling the optical field within a volume of 1.44 \u00d7 1.44 \u00d7 1.3 mm^3.",
+      "claim_type": "EXPLICIT",
+      "source": "From each individual video frame, we calculated a stack of 130 images, spaced at 10 \u03bcm along the optical axis, sampling the optical field within a volume of 1.44 \u00d7 1.44 \u00d7 1.3 mm3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing method described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "7a6d41bc-e745-4284-8353-f6b6bc194179",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C107",
+      "claim": "The Rayleigh-Sommerfeld back-propagation scheme was used to calculate image sequences from holographic data.",
+      "claim_type": "EXPLICIT",
+      "source": "These sequences of images were calculated using the Rayleigh-Sommerfeld back-propagation scheme (Lee and Grier, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing method described in Materials and methods, supported by citation to Lee and Grier, 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "8c5abc7d-5b8c-4ac4-8983-f86097df7015",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C108",
+      "claim": "Cells were localised using a method based on the Gouy phase anomaly.",
+      "claim_type": "EXPLICIT",
+      "source": "We localised the cells using a method based on the Gouy phase anomaly, as described in more detail elsewhere (Wilson and Zhang, 2012; Farthing et al., 2017; Gibson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing method described in Materials and methods, supported by citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "9137f5b4-d4c2-4dc6-b25e-ea34bc560e5d",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C109",
+      "claim": "Lateral position uncertainties in cell tracking are approximately 0.5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral position uncertainties are approximately 0.5 \u03bcm, while the axial performance is slightly worse at approximately 1.5 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical specification of the tracking method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "724349e2-8562-4121-9949-f21f80a6bb0a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C110",
+      "claim": "Axial position uncertainties in cell tracking are approximately 1.5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral position uncertainties are approximately 0.5 \u03bcm, while the axial performance is slightly worse at approximately 1.5 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical specification of the tracking method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "e02c5e59-e808-4bc8-b591-c8ce8e5064ad",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C111",
+      "claim": "The tracks were smoothed using piecewise cubic splines to remove noise in the cell coordinates and provide better estimates of cell velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "The tracks were smoothed using piecewise cubic splines in order to remove noise in the cell coordinates and provide better estimates of cell velocity as described in previous work (K\u00fchn et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing method described in Materials and methods, supported by citation to K\u00fchn et al., 2018",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6c2b4e7c-3aa0-4893-966f-a2733e6334fe",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C112",
+      "claim": "Tracks with a duration shorter than 3 s were discarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracks with a duration shorter than 3 s were discarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data processing criterion described in Materials and methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ba1c8d7f-d23b-4c02-8a39-8aeda2903804",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C113",
+      "claim": "The mean tumble angle in META cells is 72\u00b0 \u00b1 0.5\u00b0 (SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "The normalised probability density of tumble angles among META. The mean tumble angle is 72\u00b0 \u00b1 0.5\u00b0 (SEM) and the mode is 21\u00b0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "42c2e9a8-16d3-44b6-874f-c17148f52a6a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C114",
+      "claim": "The mode of tumble angles in META cells is 21\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalised probability density of tumble angles among META. The mean tumble angle is 72\u00b0 \u00b1 0.5\u00b0 (SEM) and the mode is 21\u00b0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ce7afc8a-dcae-4882-873b-d7f8f14237b3",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C115",
+      "claim": "The flagellar beat frequency is more pronounced in META cells compared to PCF cells because the cell bodies of the former are significantly smaller, and their flagella are longer.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar beat frequency is more pronounced in META cells compared to PCF cells because the cell bodies of the former are significantly smaller, and their flagella are longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from morphological differences and frequency analysis shown in Figure 1H,I",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6249b422-f7b9-4d66-a932-6cc5b39ab972",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C116",
+      "claim": "The peaks at around 0.6 Hz in the power spectra correspond to the rotation of the flagellar beat plane in both PCF and META cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The peaks at around 0.6 Hz correspond to the rotation of the flagellar beat plane and the peaks at around 20 Hz to the flagellar beat in both cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from power spectra shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ac80fd82-5e92-47ea-ae3f-dde078c41b52",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C117",
+      "claim": "The peaks at around 20 Hz in the power spectra correspond to the flagellar beat in both PCF and META cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The peaks at around 0.6 Hz correspond to the rotation of the flagellar beat plane and the peaks at around 20 Hz to the flagellar beat in both cell types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analyzed from power spectra shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c864aa7f-2e17-4cba-955a-b3fdde5a999a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C118",
+      "claim": "Female sandflies ingest Leishmania amastigote-stage parasites during bloodmeals from infected mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Female sandflies ingest Leishmania amastigote-stage parasites (AMA; red) during bloodmeals from infected mammals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in Figure 1\u2014figure supplement 1 caption",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "9fa74bf6-e912-4690-a20c-08910f8afbdb",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C119",
+      "claim": "Within 24\u201348 hr of exposure to the midgut environment, amastigotes differentiate into procyclic-stage promastigotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 24\u201348 hr of exposure to the midgut environment, AMA differentiate into procyclic-stage promastigotes (PCF; green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in Figure 1\u2014figure supplement 1 caption",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "fd5aeeec-ad2d-4067-98a4-8427e6c78021",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C120",
+      "claim": "PCF differentiate into human-infective metacyclic-stage promastigotes within 2 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "PCF in turn differentiate into human-infective metacyclic-stage promastigotes (META; purple) within 2 weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in Figure 1\u2014figure supplement 1 caption",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "0e67e7fc-1027-4b71-85fe-9707a3cd1737",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C121",
+      "claim": "Parasite differentiation is accompanied by distinct changes in swimming behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that parasite differentiation is accompanied by distinct changes in swimming behaviour.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion stated in Figure 1\u2014figure supplement 1 caption, supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "fdd316c6-d000-4d46-95f3-e7e5d40d4a15",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C122",
+      "claim": "The number of tumbles exhibited by META cells decreases threefold in the presence of human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of tumbles exhibited by META cells decreases threefold in the presence of hM\u03c6 (Figure 3B), independent of the number of tracks observed or track length.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "360b42fd-7ae4-495f-89f6-3d6f47a9a10e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C123",
+      "claim": "At least two tumbles per track are required to establish tumble frequency in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As described in the Materials and methods section, at least two tumbles per track are required to establish tumble frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological criterion described in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "a95f38f1-0330-47c0-b05f-865933369e0c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C124",
+      "claim": "If a META cell performs one or zero tumbles, it will not contribute to the run duration statistics.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if a cell performs one or zero tumbles, it will not contribute to the run duration statistics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical consequence of the methodological criterion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "eba11c41-dc8a-4439-8384-91073fb3c078",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "claim_id": "C125",
+      "claim": "A sub-population of META cells retains the unstimulated behaviour, while the majority of cells suppress tumbles almost entirely in the presence of human macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "This apparently contradictory observation \u2013 number of tumbles decreases, but run duration is unaffected \u2013 is explained by a sub-population retaining the unstimulated behaviour, while the majority of cells suppress tumbles almost entirely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observed patterns in tumble frequency and run duration data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cb137329-aacd-4694-8ea7-f9c9a3d06a95",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Leishmania infections represent a major global health burden, ranking as the world's ninth largest infectious disease, endemic to 98 countries and threatening 350 million people globally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are all supported by a single citation (Alvar et al., 2012) and represent established epidemiological knowledge about Leishmania. These are background claims that provide context for the study but are not original findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "9d4af234-6d75-4d49-9e3d-24fa66552393",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Leishmania parasites undergo life cycle stage-specific differentiation affecting body shape and flagellar morphology, with dramatic changes in flagellar length between PCF (10-12 \u03bcm body, ~10-12 \u03bcm flagellum) and META stages (8-10 \u03bcm body, 20 \u03bcm flagellum).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are well-supported by multiple citations and Video 1 data. The morphological measurements are consistent with prior literature (Sacks and Perkins, 1984) and provide essential background for understanding the experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "249fbc23-4335-4846-9ada-e57af45b292f",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Leishmania cells are significantly larger than bacteria (5-8 times the linear size of E. coli), resulting in negligible Brownian motion effects on their orientation. Rotational diffusivity scales inversely with volume, causing Leishmania orientation to randomize ~100 times more slowly than E. coli (~200s vs. a few seconds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C71-C72 present a coherent physical argument supported by established biophysical principles (Berg, 1993). The calculation that Leishmania randomize ~100 times more slowly follows logically from the size difference and inverse volume scaling of rotational diffusivity. This is a key theoretical framework for interpreting the biological significance of the observed motility patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "73796e8b-949a-468c-9982-e8185633082a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PCF cells swim significantly slower (mean 18.3 \u00b1 0.2 \u03bcm/s, SD 8.0 \u03bcm/s) than META cells (mean 29.5 \u00b1 0.2 \u03bcm/s, SD 10.4 \u03bcm/s), though the distributions overlap considerably.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are directly supported by experimental data shown in Figures 1D and 1E with appropriate statistical measures (SEM reported). The statement of significant difference is supported by the data, though no p-value is explicitly provided. Sample sizes are large (n=3231 PCF, n=2202 META).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "da534e91-c31a-473e-85e6-dfdae1d9688d",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PCF cells exhibit slow, corkscrew-like helical swimming similar to sea urchin sperm, while META cells display a distinct 'run and tumble' phenotype with straight runs punctuated by sharp turns marked by speed decreases consistent with flagellar beat reversal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 describe the core swimming phenotypes observed in the study. The observations are supported by tracking data (Figure 1B,C, Videos 2-4) and comparison to published work. The inference about flagellar beat reversal (C41) is reasonable based on the speed decrease during tumbles and comparison to trypanosome behavior (Heddergott et al., 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6c4011be-768b-4a69-8064-741f931349c9",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neither PCF nor META populations display systematic chirality, though individual tracks show consistent right- or left-handed character without switching. Helical swimming patterns likely result from small lateral asymmetries in cell body shape causing rotation through asymmetric fluid drag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44, C75-C77 are supported by helicity analysis (Figures 2B,C) showing symmetric distributions around zero. The mechanistic explanation (C75) is a reasonable inference from the lack of population-level bias and observation of natural cell shape variation (Video 1). The observation that PCF show more pronounced helicity than META is consistent with their larger body-to-flagellum ratio.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "META tumble angles are biased toward small angles (mode 21\u00b0, mean 72\u00b0 \u00b1 0.5\u00b0), requiring multiple tumbles to randomize direction. Run durations show two distinct behavioral regimes rather than simple exponential distribution, with shorter runs (<1.5s most common) followed by larger reorientations and longer runs followed by smaller course corrections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51, C113-C114 are well-supported by quantitative analysis shown in Figures 2E-G. The identification of two distinct populations (C50) is clearly visible in Figure 2G. The non-exponential run duration distribution (C47-C48) distinguishes Leishmania from bacterial systems and is a key finding. Statistical measures are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "59e42727-a14d-4726-9905-be36ff23d192",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "META cells are significantly attracted to pipette tips containing primary human blood-derived macrophages (p<0.05) but not murine macrophages, while PCF cells show general attraction to unrefined agar even without specific stimulus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by chemotaxis assay data (Figure 3A, Figure 3-supplement 1). Statistical significance is reported for the human macrophage attraction. The PCF control result (C55) is consistent with prior literature on sugar attraction and appropriately noted as potentially confounding for PCF-macrophage experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In the presence of human macrophages, META cells reduce tumble frequency threefold while maintaining unchanged tumble angle distributions and run durations. However, displacement per run increases in both 'Tip' and 'Away' conditions, indicating cells swim faster and straighter toward the chemotactic stimulus. This apparent contradiction is explained by a bimodal response where most cells suppress tumbles almost entirely while a subpopulation retains unstimulated behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60, C122, C125 describe a complex chemotactic response supported by multiple lines of evidence (Figures 3B-F). The explanation for the apparent contradiction between reduced tumble frequency but unchanged run duration distribution (C125) is logical given the methodological requirement of \u22652 tumbles per track (C123-C124). The inference of a bimodal population response is reasonable but could benefit from additional analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Speed distributions show no difference between 'Tip' and 'Away' in DMEM alone, but murine macrophages enrich low-speed swimming (<10 \u03bcm/s) while human macrophages increase average speed by 30%. These distinct responses highlight parasite specificity and suggest a soluble, macrophage-derived stimulus to which human-infective META are highly sensitive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 are supported by speed distribution data (Figures 3G-L). The 30% speed increase with human macrophages is quantitatively supported. The inference of a soluble stimulus (C65) is reasonable but remains speculative as the chemical identity is not determined. The species-specific response is a key finding supporting the biological relevance of the chemotaxis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "63d024d1-af75-4af7-83c7-ade7bc35655a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "META parasites have distinct swimming phenotype and chemotactic response compared to PCF forms. Run and tumble behavior is a phenotypic marker of human-infective META stage, and this behavior is suppressed in the presence of chemotactic stimulus, causing cells to swim faster and straighter toward their target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C91-C93, C121 represent the main conclusions of the study, synthesizing the swimming phenotype characterization and chemotaxis experiments. These are well-supported by the comprehensive experimental data presented throughout the manuscript, including molecular validation (Figure 1A), motility tracking, and chemotaxis assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "76121d5e-5629-404b-b90c-1c7afcc364e5",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The run and tumble behavior in Leishmania originates from a different imperative than in bacteria, serving a distinct function specific to Leishmania rather than countering Brownian motion. This superficially similar pattern is also seen in foraging strategies of larger animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C73-C74 present an important conceptual distinction between bacterial and Leishmania motility. The argument is well-supported by the biophysical analysis showing negligible Brownian motion effects on Leishmania (C12, C72). The comparison to animal foraging (C74) is appropriately cited (Viswanathan et al., 1999) and adds broader context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "cafb74a5-5313-4f52-b5b1-a03d14cbe79e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Optimized flagellar motility provides an evolutionary advantage promoting successful phagocytic uptake of non-replicative META cells. Through this motility and an uncharacterized sensing mechanism, Leishmania proactively drive their uptake by human immune cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C95 are explicitly speculative (\"we speculate\") and represent interpretations of the evolutionary significance of the observed behaviors. While the speculation is reasonable given the data, no direct evidence of evolutionary advantage or fitness benefit is provided. The sensing mechanism remains uncharacterized, and the claim that parasites \"proactively drive their uptake\" is an inference rather than a demonstrated mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies have shown that Leishmania and related trypanosomatids exhibit chemotactic responses to various stimuli including sugars, serum, ATP (repulsion), methotrexate, and amino acids, with some debate about whether responses are chemotaxis versus osmotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23, C26-C27 summarize prior literature on trypanosomatid chemotaxis. All claims are appropriately cited and provide important context for the current study. The authors appropriately note conflicting interpretations in the literature (e.g., C18 vs C19 regarding chemotaxis vs osmotaxis).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "376a6217-fef7-40d0-a8fd-61754034be5b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies on flagellar chirality in trypanosomatids show that flagella can produce waves of either chirality, that chirality of flagellar attachment can vary between strains, but that rotation direction is independent of morphological features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 accurately summarize prior work on flagellar chirality in related organisms (T. brucei, Plasmodium). All claims are appropriately cited and provide context for the chirality analysis performed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Pre-adaptation to the next host environment is well-documented in trypanosomatids, including metabolic, gene expression, and surface coat changes in Leishmania. Chemical gradients occur in cutaneous infections, recruiting immune cells, and META cells can move within skin away from introduction sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67, C78-C82 provide biological context from prior literature, all appropriately cited. These establish the biological relevance of the chemotaxis experiments and support the interpretation that the observed behaviors may be adaptations for host infection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "01eb0e00-4be3-48bb-af01-dd707452615a",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The differential response to human versus murine macrophages may reflect differences between primary and immortalized cells in transcriptional responses and metabolite production. PCF attraction to agar is consistent with prior studies and likely due to carbohydrates, but PCF-macrophage experiments would be biologically irrelevant as PCF cannot infect human macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 provide reasonable discussion of experimental limitations and controls. The explanation for species-specific responses (C83-C84) is appropriately cautious. The decision not to pursue PCF-macrophage experiments (C87) is well-justified based on biological irrelevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "f347718a-7cf8-4512-87ec-2fb878ad1d95",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study employed established culture methods for L. mexicana PCF and META stages, with Ficoll gradient enrichment for META. Holographic microscopy with 642nm laser illumination captured 3D swimming trajectories at 50 Hz. Data processing used Rayleigh-Sommerfeld back-propagation and Gouy phase anomaly-based localization with ~0.5 \u03bcm lateral and ~1.5 \u03bcm axial precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C112 describe the experimental methods in detail. The culture methods are appropriately cited (de Pablos et al., 2019; Sp\u00e4th and Beverley, 2001). The holographic microscopy setup and analysis pipeline are well-described with appropriate citations for established methods. The reported precision values (C109-C110) are reasonable for this technique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "4bd53bc0-8c9e-495b-90e7-0df929ed51b2",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Frequency analysis reveals peaks at ~0.6 Hz corresponding to flagellar beat plane rotation and ~20 Hz corresponding to flagellar beat in both cell types. The flagellar beat frequency is more pronounced in META due to smaller cell bodies and longer flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C115-C117 are supported by power spectral analysis (Figure 1J) and time-series data (Figures 1H,I). The interpretation of the two frequency peaks is reasonable. The explanation for more pronounced beat frequency in META (C115) logically follows from the morphological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "c0cfc694-b89d-41fd-9cb4-eca495c03eba",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The Leishmania life cycle involves sandfly ingestion of amastigotes from infected mammals, differentiation to PCF within 24-48 hours, and further differentiation to META within 2 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C118-C120 describe established knowledge of the Leishmania life cycle as illustrated in Figure 1-supplement 1. These provide essential background context for understanding the biological significance of the two life stages studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "edd5ac97-3d87-45e3-8a0f-59f6e066f84c",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "In bacterial systems, exponential distribution of runs indicates an underlying Poisson process with constant tumbling probability per unit time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 accurately describes established principles of bacterial chemotaxis, appropriately cited (Berg, 1993; Turner et al., 2016). This provides important context for interpreting the non-exponential run distribution observed in Leishmania META.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "bbc80503-d47b-4daa-9e68-506e6ed8ea01",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Other eukaryotic microorganisms show run-tumble-like behaviors: Chlamydomonas reinhardtii algae exhibit run and tumble, and sea urchin sperm show sharp reorientations during helical swimming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 are appropriately cited (Polin et al., 2009; Jikeli et al., 2015) and provide important context that run-tumble behavior is not unique to bacteria, supporting the biological plausibility of similar behavior in Leishmania.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "ef321f15-ac68-4310-bd73-88621b4a8e4b",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Leishmania encounter diverse in vivo environments, and future work should examine motility in more biologically relevant conditions. T. brucei display social motility and sense each other's presence, suggesting similar investigations in Leishmania would be valuable despite different vector compartmentalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 appropriately acknowledge limitations of in vitro studies and suggest future directions. The comparison to T. brucei social motility (C89) is appropriately cited (Lopez et al., 2015; Imhof et al., 2015) and represents a reasonable avenue for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    },
+    {
+      "id": "14013065-3238-4a58-9df6-a460f5d0210e",
+      "content_id": "1a18eca7-a618-43a4-a592-430f03ef6e30",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The analysis methodology requires at least two tumbles per track to establish tumble frequency, meaning cells with one or zero tumbles do not contribute to run duration statistics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C123-C124 describe an important methodological detail that explains the apparent contradiction between reduced tumble frequency and unchanged run duration distributions. This is a logical consequence of the analysis approach and is important for correct interpretation of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:30:52.892870Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4ff30450-1b05-4ae1-8f53-ec963662cf0a",
+      "result_id": "cb137329-aacd-4694-8ea7-f9c9a3d06a95"
+    },
+    {
+      "claim_id": "2b4d3871-d932-41e1-94f8-a4e8dd1c3522",
+      "result_id": "cb137329-aacd-4694-8ea7-f9c9a3d06a95"
+    },
+    {
+      "claim_id": "7aa0ea39-e97b-46f7-9e2a-ec642d55f303",
+      "result_id": "cb137329-aacd-4694-8ea7-f9c9a3d06a95"
+    },
+    {
+      "claim_id": "9e1219f0-c96b-40e4-803d-5219a132fc0b",
+      "result_id": "9d4af234-6d75-4d49-9e3d-24fa66552393"
+    },
+    {
+      "claim_id": "aee5ee8f-2259-4217-9883-e305e2c925c6",
+      "result_id": "9d4af234-6d75-4d49-9e3d-24fa66552393"
+    },
+    {
+      "claim_id": "161e0ce3-25cc-41f8-ad3b-6f2390edee08",
+      "result_id": "9d4af234-6d75-4d49-9e3d-24fa66552393"
+    },
+    {
+      "claim_id": "dd3ff191-bbff-473c-8805-40e7b2706afd",
+      "result_id": "9d4af234-6d75-4d49-9e3d-24fa66552393"
+    },
+    {
+      "claim_id": "cfc8969d-10ce-4203-a6ca-f6aa087bbedb",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "452797e3-d6a2-47f1-997c-1e05e9f4a734",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "56acb8dd-7334-4132-a6a5-58b70dbae205",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "e8c97f85-09fe-4b1f-81c6-c197ba59c720",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "ead73ab1-c807-4250-a872-4660f388bfc0",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "5ac14c23-7346-4bb2-abb4-84006564312b",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "165c1648-39b4-4ddb-9af8-4157e958ff99",
+      "result_id": "249fbc23-4335-4846-9ada-e57af45b292f"
+    },
+    {
+      "claim_id": "0c681ae0-2368-4a9e-bb42-803382f9065f",
+      "result_id": "73796e8b-949a-468c-9982-e8185633082a"
+    },
+    {
+      "claim_id": "62bf6695-da10-4c65-9207-14c9150ab5d4",
+      "result_id": "73796e8b-949a-468c-9982-e8185633082a"
+    },
+    {
+      "claim_id": "624b4ad5-76df-4fff-a60d-4ae0d5be5a2c",
+      "result_id": "73796e8b-949a-468c-9982-e8185633082a"
+    },
+    {
+      "claim_id": "bca0b5b9-905a-44d7-bed5-fb3eb4346fc4",
+      "result_id": "73796e8b-949a-468c-9982-e8185633082a"
+    },
+    {
+      "claim_id": "7fb3b96f-a82c-4695-99c4-e8b937cb8a6a",
+      "result_id": "73796e8b-949a-468c-9982-e8185633082a"
+    },
+    {
+      "claim_id": "c45bed5b-8373-41f6-bf4c-5025e0cc423c",
+      "result_id": "da534e91-c31a-473e-85e6-dfdae1d9688d"
+    },
+    {
+      "claim_id": "4f4b6600-e401-437d-9747-3944e60ae954",
+      "result_id": "da534e91-c31a-473e-85e6-dfdae1d9688d"
+    },
+    {
+      "claim_id": "cad612e3-96da-4d9d-8fef-592223be3c94",
+      "result_id": "da534e91-c31a-473e-85e6-dfdae1d9688d"
+    },
+    {
+      "claim_id": "cbf28ca4-f87a-4987-b8d6-9a2ad7db3dae",
+      "result_id": "da534e91-c31a-473e-85e6-dfdae1d9688d"
+    },
+    {
+      "claim_id": "a95fec76-cfe0-4945-a68c-5992404e7b5f",
+      "result_id": "da534e91-c31a-473e-85e6-dfdae1d9688d"
+    },
+    {
+      "claim_id": "adbd612d-c5fb-45c1-b7af-79190adaf201",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "bdd243f3-9bb6-465f-aad0-8cc444558176",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "5f619727-5f06-4e08-b68a-707d9ca68428",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "893945a3-79a1-46fa-99aa-ed10ea95c6c9",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "8f817b68-e11d-42ac-abea-13dfc67bf578",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "28aac353-9403-45f4-a345-0b1228ab19db",
+      "result_id": "6c4011be-768b-4a69-8064-741f931349c9"
+    },
+    {
+      "claim_id": "db13b764-2afc-470f-9c2e-ea581bd9794e",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "fff1f530-b4d2-464c-8f61-12c6cfaca13c",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "e5ae04b4-b28e-4b74-831b-c881989fd3a6",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "75d77788-aa69-4312-80b7-bce86e793d90",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "bd10c454-cb6a-4e2b-a5af-e7c01e254bad",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "eebbc946-a345-409f-8ddb-0dc0a58a3151",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "85c87330-c3f7-4909-b71d-2627fba6ce23",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "ba1c8d7f-d23b-4c02-8a39-8aeda2903804",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "42c2e9a8-16d3-44b6-874f-c17148f52a6a",
+      "result_id": "19dd2ba4-29cf-4958-9b71-3c8f3abe5fb6"
+    },
+    {
+      "claim_id": "61d820c8-5c97-48f4-99f2-6f4f921cae18",
+      "result_id": "59e42727-a14d-4726-9905-be36ff23d192"
+    },
+    {
+      "claim_id": "1e187184-c0be-41e1-9d30-ba663f59ea2d",
+      "result_id": "59e42727-a14d-4726-9905-be36ff23d192"
+    },
+    {
+      "claim_id": "b724b186-0431-472b-8217-dcf32b820b24",
+      "result_id": "59e42727-a14d-4726-9905-be36ff23d192"
+    },
+    {
+      "claim_id": "aafcccfe-80c4-48a3-b229-30d7ecf1ad5d",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "4d49e3c8-21c3-4c92-9c9e-9f7aa47f6649",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "1c2801fb-d168-4770-a76c-dff33f7499bd",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "3650c3a6-14e4-41c3-a940-546347318ccd",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "1bb87fd0-cd83-492b-9746-c2fd5b7c5e4e",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "fdd316c6-d000-4d46-95f3-e7e5d40d4a15",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "eba11c41-dc8a-4439-8384-91073fb3c078",
+      "result_id": "5aff512a-c92b-43ba-a4e8-b3a1b8006239"
+    },
+    {
+      "claim_id": "a699dd7e-256f-4044-b6e7-4da724af8ad2",
+      "result_id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68"
+    },
+    {
+      "claim_id": "69c17837-6449-4792-8d1f-6e8d6db458fc",
+      "result_id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68"
+    },
+    {
+      "claim_id": "3e61cbc4-3d83-499c-9fc7-1b52ca6e97b2",
+      "result_id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68"
+    },
+    {
+      "claim_id": "c25ccd1a-4d37-4071-88d5-b9d4ba09c46b",
+      "result_id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68"
+    },
+    {
+      "claim_id": "c0db9f56-990d-43bd-9a9f-a0652821d40e",
+      "result_id": "ffc4b74f-3f93-424c-a54c-b99c1298dc68"
+    },
+    {
+      "claim_id": "21bb5898-39ee-4af9-aa89-858737a0ac61",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "d1d48f71-938e-4f64-994b-0b4f5b6f40a1",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "aeb9e51d-5c82-4706-8566-e5584ba3b81c",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "ba9ab74c-b325-4665-8765-08dbdf4ea6a2",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "0b9aa2f0-0743-46cc-9a03-db81886de6a9",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "0e67e7fc-1027-4b71-85fe-9707a3cd1737",
+      "result_id": "63d024d1-af75-4af7-83c7-ade7bc35655a"
+    },
+    {
+      "claim_id": "50af70a7-e80f-4c24-8409-3891fb1f5918",
+      "result_id": "76121d5e-5629-404b-b90c-1c7afcc364e5"
+    },
+    {
+      "claim_id": "66e86ce9-dcc2-4675-b04d-8f45727828ed",
+      "result_id": "76121d5e-5629-404b-b90c-1c7afcc364e5"
+    },
+    {
+      "claim_id": "4669134c-65f8-4e08-a0fb-31ced3706739",
+      "result_id": "76121d5e-5629-404b-b90c-1c7afcc364e5"
+    },
+    {
+      "claim_id": "fb2b93d9-cfba-4293-89ea-159236e0ff27",
+      "result_id": "cafb74a5-5313-4f52-b5b1-a03d14cbe79e"
+    },
+    {
+      "claim_id": "5ae24cd4-6aeb-4938-bb84-4aa83a813b94",
+      "result_id": "cafb74a5-5313-4f52-b5b1-a03d14cbe79e"
+    },
+    {
+      "claim_id": "5ea98c65-b5ea-4b61-94d8-2bddca921a36",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "3eb89ebd-a103-4c51-b2f7-5d74bf1ca837",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "445b9b7b-bf9a-4fc8-81d0-b80d2a6bf495",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "b5bbbab2-b3f5-4bc8-8f81-21fd33d3e86d",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "395cd9ee-91c9-42c9-bd43-79a4d6979599",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "86153c45-c69f-4c07-84eb-c0f46e0fab49",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "a48d2fe3-7aad-4c5a-96d1-2907d4b96b07",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "8a88f07c-9ee5-4c28-adc7-90a35d1226fb",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "cc5864e0-675a-421e-b875-1f9b33bf7680",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "2736e5c0-bfa1-48d0-8d8d-56c9b2f0eb2c",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "bf7e38b0-d3a8-484f-8a4c-9cfc611302a5",
+      "result_id": "e7a3a74f-12af-475a-b064-c5cf2c43bbb9"
+    },
+    {
+      "claim_id": "42e6fd4b-0981-46e2-ad47-b976439440a5",
+      "result_id": "376a6217-fef7-40d0-a8fd-61754034be5b"
+    },
+    {
+      "claim_id": "57ec2459-bb4c-4de2-a5d1-e65a3754c1ca",
+      "result_id": "376a6217-fef7-40d0-a8fd-61754034be5b"
+    },
+    {
+      "claim_id": "6985a0e6-ebe6-4ab3-9482-78f7450a8366",
+      "result_id": "376a6217-fef7-40d0-a8fd-61754034be5b"
+    },
+    {
+      "claim_id": "66fe132e-336e-4c28-88d7-dc331e1677bf",
+      "result_id": "376a6217-fef7-40d0-a8fd-61754034be5b"
+    },
+    {
+      "claim_id": "4cc72c85-0ff6-4f58-be4f-900f5ed890fb",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "40e9e4bb-cf17-4bca-8d2b-5e561ab1f339",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "c72c5edf-18c5-4696-8881-e63639308454",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "893ee372-2a9f-476a-8160-7fa7786deafe",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "60b24065-442f-42f8-b1a5-d653226f1fec",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "f865fc2d-f746-4061-b513-4e2167e57997",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "50420955-5628-4b07-8146-9701526553db",
+      "result_id": "6ca715a2-f86f-4f32-8ed1-a26a1ea81f3a"
+    },
+    {
+      "claim_id": "6bbaa2c9-f42b-4f13-a9ec-4e9e35916fca",
+      "result_id": "01eb0e00-4be3-48bb-af01-dd707452615a"
+    },
+    {
+      "claim_id": "0f7fbd09-3fc9-4d3f-82ac-dfee352305c8",
+      "result_id": "01eb0e00-4be3-48bb-af01-dd707452615a"
+    },
+    {
+      "claim_id": "04585fb1-da86-4ab9-8d75-2be00c4f3d3f",
+      "result_id": "01eb0e00-4be3-48bb-af01-dd707452615a"
+    },
+    {
+      "claim_id": "0f464cd4-c41e-4b68-879c-6e0bd9a060f5",
+      "result_id": "01eb0e00-4be3-48bb-af01-dd707452615a"
+    },
+    {
+      "claim_id": "c72f40dc-cd67-4a70-959f-056e2166a3a7",
+      "result_id": "01eb0e00-4be3-48bb-af01-dd707452615a"
+    },
+    {
+      "claim_id": "aaaa0c57-afc4-4927-b766-f90998c7a51f",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "2c7e33fe-cd61-4b05-8b27-5d1cbe60de6b",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "a27e9afb-10a7-4dad-89e3-9888e85cfc55",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "2c511c55-4447-4414-a1e9-67573e5de7b2",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "c5cc6759-cdb2-4f57-8761-3975b2cb2d56",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "f8e525f6-b93f-4d77-a089-07be4a7ea317",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "9332b42d-b869-4694-990a-14484e039d74",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "7a97cb64-86af-448b-9240-7c52e0d07faa",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "c6fdd069-105c-45df-b9dc-16524cfa544b",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "543263e9-751f-477e-a3b8-e36a32fbcc0c",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "3e912f84-91c2-470c-aa17-7ff6515ea9d4",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "7a6d41bc-e745-4284-8353-f6b6bc194179",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "8c5abc7d-5b8c-4ac4-8983-f86097df7015",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "9137f5b4-d4c2-4dc6-b25e-ea34bc560e5d",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "724349e2-8562-4121-9949-f21f80a6bb0a",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "e02c5e59-e808-4bc8-b591-c8ce8e5064ad",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "6c2b4e7c-3aa0-4893-966f-a2733e6334fe",
+      "result_id": "f347718a-7cf8-4512-87ec-2fb878ad1d95"
+    },
+    {
+      "claim_id": "ce7afc8a-dcae-4882-873b-d7f8f14237b3",
+      "result_id": "4bd53bc0-8c9e-495b-90e7-0df929ed51b2"
+    },
+    {
+      "claim_id": "6249b422-f7b9-4d66-a932-6cc5b39ab972",
+      "result_id": "4bd53bc0-8c9e-495b-90e7-0df929ed51b2"
+    },
+    {
+      "claim_id": "ac80fd82-5e92-47ea-ae3f-dde078c41b52",
+      "result_id": "4bd53bc0-8c9e-495b-90e7-0df929ed51b2"
+    },
+    {
+      "claim_id": "c864aa7f-2e17-4cba-955a-b3fdde5a999a",
+      "result_id": "c0cfc694-b89d-41fd-9cb4-eca495c03eba"
+    },
+    {
+      "claim_id": "9fa74bf6-e912-4690-a20c-08910f8afbdb",
+      "result_id": "c0cfc694-b89d-41fd-9cb4-eca495c03eba"
+    },
+    {
+      "claim_id": "fd5aeeec-ad2d-4067-98a4-8427e6c78021",
+      "result_id": "c0cfc694-b89d-41fd-9cb4-eca495c03eba"
+    },
+    {
+      "claim_id": "6c1b1b6a-0d11-4260-9914-29e089c4c054",
+      "result_id": "edd5ac97-3d87-45e3-8a0f-59f6e066f84c"
+    },
+    {
+      "claim_id": "61a16fcc-5b40-4b3d-a1c3-0572c9d7156a",
+      "result_id": "bbc80503-d47b-4daa-9e68-506e6ed8ea01"
+    },
+    {
+      "claim_id": "11c1af58-cff3-44cc-996e-10f9a327430f",
+      "result_id": "bbc80503-d47b-4daa-9e68-506e6ed8ea01"
+    },
+    {
+      "claim_id": "db633897-8c6d-4eb8-bddd-8793bf767c9f",
+      "result_id": "ef321f15-ac68-4310-bd73-88621b4a8e4b"
+    },
+    {
+      "claim_id": "517d364b-f2ab-4402-9fa3-63c570b17674",
+      "result_id": "ef321f15-ac68-4310-bd73-88621b4a8e4b"
+    },
+    {
+      "claim_id": "555dd7bc-15db-4363-ab53-d2cadd371c1f",
+      "result_id": "ef321f15-ac68-4310-bd73-88621b4a8e4b"
+    },
+    {
+      "claim_id": "360b42fd-7ae4-495f-89f6-3d6f47a9a10e",
+      "result_id": "14013065-3238-4a58-9df6-a460f5d0210e"
+    },
+    {
+      "claim_id": "a95f38f1-0330-47c0-b05f-865933369e0c",
+      "result_id": "14013065-3238-4a58-9df6-a460f5d0210e"
+    }
+  ],
+  "comparisons": []
+}

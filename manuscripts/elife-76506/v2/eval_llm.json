@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C3",
+      "C5"
+    ],
+    "result": "Self-initiated lever pulls in mice are preceded by stereotyped neural activity changes beginning approximately 5 seconds prior to movement, with motor cortex showing inhibition starting at ~5s before lever pulls. This pattern was consistently observed across all sessions and animals but not in random neural activity segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C3, and C5 collectively demonstrate stereotyped pre-movement neural dynamics with specific timing. The evidence includes widefield calcium imaging data (Figure 1e, Figure 1\u2014figure supplement 3) showing consistent patterns across animals and sessions, with appropriate controls using random neural segments. The inhibitory motor cortex dynamics at ~5s are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Upcoming lever pulls and spontaneous limb movements can be decoded from neural activity 3-5 seconds (or more) prior to movement initiation, with decoding accuracy improving closer to movement time. Pooling trials across sessions (concatenated analysis) significantly improved earliest decoding times (EDTs) compared to single-session analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C23, and C24 are supported by systematic SVM decoding analysis shown in Figures 1h-j and Figure 2. The statistical comparisons between single-session and concatenated analyses (p<0.01 for all animals, Figure 2f) provide strong evidence. However, the dependence of EDT on trial number suggests results may improve with additional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C44",
+      "C45"
+    ],
+    "result": "Implementing a 15-second lockout period (excluding trials preceded by recent lever pulls) shortened EDTs in most mice, but low-pass filtering at 0.3 Hz restored EDTs to values similar to non-lockout conditions (approximately -3 to -7 seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C44, and C45 address the critical confound of sequential lever pulls. The lockout analysis (Figure 2g, Figure 6g) and filtering approach (Figure 2h-i, Figure 6i-j) are methodologically sound. The restoration of longer EDTs with filtering suggests that slow oscillations (<0.3 Hz) contain predictive information about upcoming actions, though this also raises questions about the independence of sequential pulls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C9"
+    ],
+    "result": "Pre-movement neural code is widely distributed across cortex, with somatosensory-limb cortex being most informative (lowest EDTs), followed by motor cortex. Decoding using all cortical regions yielded significantly lower EDTs than using any single region alone (p<1e-16 for all mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C9 demonstrate distributed cortical representation through systematic comparison of single-area versus multi-area decoding. The statistical evidence (KS tests, p<1e-16) is compelling. This finding extends human fMRI studies and suggests voluntary action preparation involves coordinated activity across multiple cortical areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Mice show strong phase bias in initiating lever pulls, with actions occurring during narrowly distributed phases (<90\u00b0 window) of slow cortical oscillations. Some mice showed >50% probability of initiating action during the crest phase, while others preferred the rising phase. This bias was significantly different from random neural activity (Rayleigh test p<<1e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30-C33 demonstrate phase-locking of voluntary actions to neural oscillations (Figure 3). The statistical evidence (Rayleigh tests) is strong, and appropriate controls (random segments) were included. The finding that mice show even stronger phase bias than humans (>50% vs ~30%) is notable, though the biological significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C8"
+    ],
+    "result": "Longitudinal analysis revealed that three mice (M2, M3, M6) increased rewarded lever pulls over time, while EDTs shortened in two mice (M1, M6) over weeks/months of recording. The pre-movement neural code changed over time in some but not all mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, and C8 document longitudinal changes with appropriate statistical tests (Pearson correlations, Figure 4a, 4c). However, the heterogeneity across animals (only 2-3 of 6 mice showing significant trends) and the interpretation of EDT shortening as reflecting automaticity or cortical-to-subcortical transfer requires additional evidence. The result is supported but the mechanistic interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Convex hull analysis showed that in two mice (M1, M6) with decreasing EDTs over time, lever-pull neural dynamics became increasingly similar to random neural states (increased AUC). The overlap between right paw and lever-pull neural dynamics decreased over time in two mice (M4, M6) but increased in one mouse (M1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C39 present convex hull analysis results (Figure 4), but the findings are statistically significant in only 2 of 6 mice, with mixed results across animals. The interpretation that neural dynamics return to pre-learning patterns due to automaticity is plausible but not definitively supported. The heterogeneity suggests individual differences that are not well understood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C3"
+    ],
+    "result": "Neural variance decreased significantly in movement-related areas (motor, somatosensory, retrosplenial cortex) beginning approximately 3 seconds or earlier before lever pulls in most mice, but less so in visual cortex. This variance change was stereotyped across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C3 demonstrate variance changes preceding self-initiated actions (Figure 5). The finding parallels stimulus-driven decision-making studies showing variance reduction. However, the authors acknowledge the measurements were noisy, and EVDT detection was not possible with lockout trials due to increased variance from pooling across sessions. The result is supported but with acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Rewarded lever pulls constituted only 3-7% of all spontaneous movements tracked (including paw movements and licking). EDT distributions were not statistically different when locking out preceding licking events (0-3 seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 quantify the proportion of rewarded actions among all movements (Figure 6b-c) and test for licking confounds (Figure 6f). The analysis appropriately addresses potential confounds, though the authors acknowledge that many body movements were not tracked, so the true proportion may be even lower.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pre-movement neural oscillations had peak power between 0.2-0.6 Hz across mice. Longitudinal analysis showed that three mice (M1, M4, M5) had increases in peak frequency over time, while one mouse (M2) showed decreases. Peak power changes were less consistent across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 characterize oscillatory dynamics (Figure 7). The frequency range (0.2-0.6 Hz) is consistent with slow cortical potentials. The longitudinal trends show animal-specific patterns, suggesting individual differences in learning or task performance. The statistical evidence is adequate, though the biological significance of these changes requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Isolated left paw movements (not associated with lever pulls) showed motor cortex activation beginning ~2 seconds prior to movement, contrasting with the ~5 second inhibition preceding water-rewarded lever pulls. This difference suggests distinct neural dynamics for goal-directed versus spontaneous movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C53 compare neural dynamics for different movement types (Figure 8). The finding that motor cortex shows activation (~2s) before spontaneous movements but inhibition (~5s) before rewarded lever pulls is compelling and suggests different preparatory mechanisms. However, the analysis was limited by small numbers of isolated movements (96-557 per mouse) and inability to decode these movements above chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Four of six mice learned the 3-second lever lockout period and four mice learned to pull more frequently toward the end of sessions. Mice decreased body movements prior to lever pulls, and no evidence of stereotyped behavioral sequences was found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 characterize behavioral learning and movement patterns (Figure 1\u2014figure supplements 2, 4, 5). The evidence for learning is clear from inter-pull interval distributions and within-session pull rates. The absence of stereotyped sequences was assessed using PCA on Boolean movement vectors, though this negative result should be interpreted cautiously as the method may not detect all types of sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Upcoming body movements could be predicted above chance a few seconds prior to movement in the vast majority of sessions, and in some cases more than 10 seconds prior to movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 reports decoding of body movements (Figure 2l), but the authors acknowledge strong correlations between body movements and lever pulls, making these not fully independent measures. The lack of separation between body movements coinciding with versus isolated from lever pulls limits interpretation. The result requires additional analysis to determine if body movements independent of lever pulls are truly decodable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Inter-area phase correlations varied across mice, with some showing highly correlated phases across cortical areas and others showing mostly low correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes inter-area phase relationships (Figure 3j). The finding of individual differences in phase coordination is supported by the data, though the functional significance is unclear. This heterogeneity may reflect different strategies or neural mechanisms across animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Between 13,757 and 124,397 left paw movements were identified per mouse across all sessions. After applying strict isolation criteria (5s no preceding movements, no lever pulls within 15s before or 5s after), 96-557 isolated left paw movements remained per mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 quantify movement tracking results. The large reduction from total to isolated movements (>99% reduction in most cases) highlights the challenge of finding truly isolated spontaneous movements in this paradigm. This is a methodological finding that contextualizes the difficulty of comparing spontaneous versus goal-directed movements.",
+    "result_type": "MINOR"
+  }
+]

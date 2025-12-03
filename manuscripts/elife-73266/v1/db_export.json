@@ -1,0 +1,1467 @@
+{
+  "submission": {
+    "id": "2e5ddfa8-8409-4659-bcec-399b0cc9dfce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:56:39.412038Z",
+    "updated_at": "2025-12-03T10:56:39.412038Z"
+  },
+  "content": [
+    {
+      "id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "submission_id": "2e5ddfa8-8409-4659-bcec-399b0cc9dfce",
+      "content_type": "manuscript",
+      "content_text": "# Three-dimensional multi-site random access photostimulation (3D-MAP)\n\n## Authors\n\n- Yi Xue<sup>1</sup> ([ORCID: 0000-0003-2622-083X](https://orcid.org/0000-0003-2622-083X))\n- Laura Waller<sup>1</sup> ([ORCID: 0000-0003-1243-2356](https://orcid.org/0000-0003-1243-2356))\n- Hillel Adesnik<sup>2</sup> ([ORCID: 0000-0002-3796-8643](https://orcid.org/0000-0002-3796-8643)) \u2020\n- Nicolas P\u00e9gard<sup>4</sup> ([ORCID: 0000-0003-2868-7118](https://orcid.org/0000-0003-2868-7118)) \u2020\n\n### Affiliations\n\n1. Department of Electrical Engineering & Computer Sciences, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Department of Molecular & Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n3. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n4. Department of Applied Physical Sciences, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n5. Department of Biomedical Engineering, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n6. UNC Neuroscience Center, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOptical control of neural ensemble activity is crucial for understanding brain function and disease, yet no technology can achieve optogenetic control of very large numbers of neurons at an extremely fast rate over a large volume. State-of-the-art multiphoton holographic optogenetics requires high-power illumination that only addresses relatively small populations of neurons in parallel. Conversely, one-photon holographic techniques can stimulate more neurons with two to three orders lower power, but with limited resolution or addressable volume. Perhaps most problematically, two-photon holographic optogenetic systems are extremely expensive and sophisticated which has precluded their broader adoption in the neuroscience community. To address this technical gap, we introduce a new one-photon light sculpting technique, three-dimensional multi-site random access photostimulation (3D-MAP), that overcomes these limitations by modulating light dynamically, both in the spatial and in the angular domain at multi-kHz rates. We use 3D-MAP to interrogate neural circuits in 3D and demonstrate simultaneous photostimulation and imaging of dozens of user-selected neurons in the intact mouse brain in vivo with high spatio-temporal resolution. 3D-MAP can be broadly adopted for high-throughput all-optical interrogation of brain circuits owing to its powerful combination of scale, speed, simplicity, and cost.\n\n## Introduction\n\nOptogenetics enables rapid and reversible control of neural activity (Deisseroth, 2011; Zhang et al., 2007). By focusing light on neurons (Ronzitti et al., 2017) with either one-photon (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013; Dhawale et al., 2010; Leifer et al., 2011; Adam et al., 2019; Werley et al., 2017; Sakai et al., 2013) or two-photon photostimulation (Carrillo-Reid et al., 2019; Naka et al., 2019; Daie et al., 2021; Sridharan, 2021; Nikolenko et al., 2008; Papagiakoumou et al., 2010; P\u00e9gard et al., 2017; Gill et al., 2020; Marshel et al., 2019; Robinson et al., 2020; Forli et al., 2021; Mardinly et al., 2018), one can elicit or suppress the activity of custom neural ensembles in order to map neural circuits (Dhawale et al., 2010; Leifer et al., 2011; Naka et al., 2019; Daie et al., 2021; Sridharan, 2021) and draw links between specific patterns of neural activity and behavior (Szabo et al., 2014; Reutsky-Gefen et al., 2013; Adam et al., 2019; Carrillo-Reid et al., 2019; Gill et al., 2020; Marshel et al., 2019; Robinson et al., 2020). Two-photon photostimulation has the advantages of high spatial resolution for precise neural activity control and relative immunity to tissue light scattering, enabling stimulation of deep brain circuits. However, two-photon holographic optogenetic photostimulation can only stimulate relatively small ensembles of neurons at a time, limited by the very high-power pulsed illumination required to achieve non-linear multiphoton absorption. High photon density heats brain tissue, and can disturb brain activity and cause thermal damage (Mardinly et al., 2018; Podgorski and Ranganathan, 2016). The accessible volume for holographic two-photon photostimulation is also limited by the coherence length of laser being used, since holographic diffraction of femtosecond pulses to a large angle introduces severe pulse dispersion (\u2018chirp\u2019), substantially reducing pulse peak power (Sun et al., 2019). Mechanically scanning a single focus or a holographic pattern can access a larger volume but is not suitable for studies that require simultaneous illumination (Yang et al., 2015) to understand the network. Perhaps the two most significant barriers to the broader adoption of multiphoton optogenetic systems is that they are extremely expensive and sophisticated to operate and to maintain. Thus, despite more than a decade since their introduction, multiphoton optogenetics has only been adopted by a small handful of groups, typically with much prior optical expertise.\n\nIn contrast, one-photon photostimulation systems require two to three orders of magnitude less laser power to activate neurons. They are much simpler to implement with far less expensive hardware, and they can still achieve high-resolution photostimulation under limited light scattering conditions. There are three main strategies to generate multiple foci with one-photon photostimulation, yet none is capable of simultaneously stimulating custom ensembles of multiple neurons over a large 3D volume with high spatial resolution. The first approach, scanning-based one-photon photostimulation, stimulates neurons sequentially by rapidly scanning a single focus across small neural clusters with scanning mirrors (Petreanu et al., 2009) or acousto-optic deflectors (AODs) (Losavio et al., 2010; Wang et al., 2011). This method cannot photostimulate distributed ensembles simultaneously. The second approach is to directly project 2D illumination patterns onto samples with a digital micromirror device (DMD) (Dhawale et al., 2010; Leifer et al., 2011; Adam et al., 2019; Werley et al., 2017; Sakai et al., 2013). This widefield illumination scheme has a large field-of-view (FOV) and moderate lateral resolution but only modulates light in 2D. There is no axial sectioning ability and unwanted photostimulation may occur both above and below the focal plane. The third approach, computer generated holography (CGH), generates 3D distributed foci by phase modulation of coherent light in Fourier space using a spatial light modulator (SLM) (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013). One-photon CGH has high lateral resolution and moderate axial resolution but has several critical drawbacks that constrain its ability to execute sophisticated optogenetics experiments. First, the throughput of CGH that determines the number of accessible voxels is fundamentally limited by the number of degrees-of-freedom (DoF), which is determined by the number of pixels and the bit depth of the SLM, regardless of magnification and numerical aperture. This generally results in a small FOV when high spatial resolution is required. Second, the refresh rate (tens to hundreds Hz) of SLMs limits the speed of CGH. Third, CGH requires computing a 2D phase mask at the Fourier plane for a 3D hologram pattern, which is an ill-posed problem that requires iterative optimization, with computation time on the order of minutes (Zhang et al., 2017; Gerchberg, 1972; Leseberg, 1992; Xue et al., 2019) when shaping light across multiple z-planes. Although recent work successfully reduces the CGH computation time to milliseconds using a pre-trained deep neural network (Hossein Eybposh et al., 2020), this will be insufficient when the number of z-planes increases. The extra computational requirements for generating holographic patterns in the Fourier domain (rather than directly projecting patterns on the conjugate image plane) can become limiting when thousands of different patterns are required (as in high-throughput mapping experiments), or when fast online synthesis of custom patterns is needed for closed-loop experiments. The fourth drawback of one-photon CGH is that holograms composed of many illumination spots will suffer spatial cross-talk as out-of-focus light from each focused spot interacts, accidentally stimulating non-targeted neurons. Taken together, despite the power of these previous one-photon techniques, none are suitable for large-scale high-resolution optogenetic activation of 3D distributed ensembles of neurons.\n\nTo overcome this challenge, we developed 3D multi-site random access photostimulation (3D-MAP), a new approach to generate 3D illumination patterns by modulating light both in the angular domain, $(k_{x}, k_{y})$, with scanning mirrors, and in the spatial domain, $(x, y)$, with a DMD. For 3D optogenetic photostimulation, illumination patterns are optimized to target an opsin expressed in the neuronal soma (~10 \u00b5m). The set of light rays needed to generate each spherical target can be described with a 4D light field, $(x,y,k_{x},k_{y})$, in the spatio-angular domain. 3D-MAP generates these rays by rapidly sweeping through the appropriate angles of illumination with scanning mirrors while using the DMD to project the corresponding amplitude masks to pattern each angle\u2019s spatial information. 3D-MAP uses one spatial pattern on the DMD for each unique illumination angle set by the scanning mirrors. The total number of DoF is hence determined by the product of the number of angles of the scanning mirror and the number of pixels of the DMD (as opposed to the sum), resulting in a much larger DoF than existing one-photon optogenetic stimulation techniques (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013; Dhawale et al., 2010; Leifer et al., 2011; Adam et al., 2019; Werley et al., 2017; Sakai et al., 2013). Thus, 3D-MAP achieves both high spatial resolution and a large accessible volume. Compared to one-photon CGH, 3D-MAP is able to reduce spatial cross-talk by prioritizing illumination angles that minimize the stimulation of non-targeted areas due to its high DoF. Compared to 2D widefield patterning methods, 3D-MAP retains the advantages of high-throughput and computational efficiency, while extending the addressable space from 2D to 3D. Thanks to the use of a DMD instead of an SLM, we can pattern the entire addressable volume at multi-kHz rate (the volumetric pattern refresh rate), which exceeds the bandwidth of most neural circuits and is one order of magnitude faster than 3D CGH. A comparison between strengths and weaknesses of 3D-MAP versus existing photostimulation approaches is shown in (Appendix 1\u2014table 1).\n\nWe present the experimental setup and computational methods for all-optical interrogation of neural circuits in 3D and demonstrate that 3D-MAP achieves high-resolution, high-speed, and high-throughput in brain slices and in vivo recorded by electrophysiology and optical detectors, respectively. We then use 3D-MAP to interrogate neural circuits with both single-spot photostimulation and multi-spot photostimulation in 3D. These experiments validate 3D-MAP as a one-photon technique to manipulate neural circuits on-demand with high spatio-temporal resolution in the intact brain. Our technique can be flexibly used to map neural connectivity at both small and large scales. Its relative simplicity, small hardware footprint, and lower cost should make it broadly adoptable across the neuroscience community.\n\n## Results\n\n### Optical design of 3D-MAP\n\nThe experimental setup for 3D-MAP is shown in Figure 1. A DMD modulates amplitude in real space, $(x, y)$, while scanning mirrors control the angles of illumination, $(k_{x}, k_{y})$. Both devices are placed at conjugate image planes and time-synchronized (see Materials and methods for details). We first compute the desired intensity of the light field ($x, y, k_{x}, k_{y}$), and then sequentially display the amplitude mask pattern on the DMD as the scanning mirrors sweep through the relevant angles (Figure 1B). For example, in the simplest case of patterning a single focus spot at the native focal plane (z = 0), we simply turn on the pixels corresponding to the desired position, keeping the pattern constant for all illumination angles. To create a focused spot at an off-focus plane, a small aperture on the DMD rotates in a circle as the scanning mirrors sweep through a cone of projection angles (Figure 1B). The center of the aperture\u2019s revolving circle is the lateral position of the target spot, and the circle\u2019s diameter, D, determines the spot\u2019s axial position (a larger diameter concentrates light further away from the native image plane at a given illumination angle). To activate multiple neurons simultaneously, we superimpose the patterns corresponding to each target (Figure 1D). In addition, we can adjust the laser power in each focused spot flexibly and individually by adjusting the aperture size on the DMD, the number of apertures aimed at a given target, or by adjusting the laser power if needed. The amount of light on any given target is quadratically proportional to the radius of the aperture. For example, changing the aperture radius from 10 pixels to 14 pixels will increase the stimulation power on the target by a factor 2 times.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig1-v1.jpg)\n\n**Figure 1.:** (A) A collimated laser beam illuminates the surface of a digital micromirror device (DMD) with a custom illumination angle set by scanning mirrors. The DMD is synchronized with the scanning mirrors to match the 2D mask of the spatial aperture to the illumination angle. (B) Detailed view of the overlapping amplitude masks and illumination angles at the conjugate image plane (green) showing how synchronized illumination angles and amplitude masks can generate a focused spot away from the native focal plane (red). Circular patterns labeled by different colors are spatial apertures projected at different times. The position illuminated by all beams while sweeping through each illumination angle forms a focus at the shifted focal plane at z=\u0394z. D is the diameter of the sweeping trace. $\\theta$ is the illumination angle. (C) A focus generated by computer generated holography (CGH) stimulates the targeted area (blue) in focus but also stimulates non-targeted areas (red) out of focus. 3D-MAP can stimulate only the targeted areas and avoid non-targeted areas by closing the amplitude apertures along propagation directions that project to non-targeted areas (dashed red line). (D) Multiple foci can be generated simultaneously at various depths by superposition of their perspective projection along each illumination angle. (E) Simulated maximum intensity profile along the z-axis for an increasing number of overlapping beams shows how axial resolution increases with the number of superimposed projection directions. (F) Full-width-half-maximums (FWHMs) of the illumination patterns in (E). The data for a single beam is excluded because it has no axial sectioning ability.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** All simulations aim to generate a 10-\u00b5m-diameter spot in-focus to match the size of a neuron in order to maximize photostimulation efficiency. The light fields are calculated with 635 nm red light illumination and 20\u00d7, NA = 1.0 objective lens. The pixel size of the digital micromirror device (DMD) is 7.5 \u00b5m. The number of pixels of the spatial light modulator (SLM) for computer generated holography (CGH) is 1152 \u00d7 1152 pixels. (A, B) The lateral cross-section (A) and axial cross-section (B) of CGH at NA = 1.0 (overfill the back aperture). The field-of-view (FOV) under high NA illumination is 319 \u00d7 319 \u00b5m2, which is much smaller than the FOV of 3D-MAP. (C, D) The lateral cross-section (C) and axial cross-section (D) of CGH at effective NA = 0.55 (under-fill the back aperture) to match the FOV of 3D-MAP (800 \u00d7 800 \u00b5m2). (E, F) The lateral cross-section (E) and axial cross-section (F) of spiral scan with a single focus. The total intensity is an incoherent sum of the intensity of each scanning point. (G, H) The lateral cross-section (G) and axial cross-section (H) of 2D DMD projection. (I, J) The lateral cross-section (I) and axial cross-section (J) of 3D-MAP (10 overlapping beams). (K, L) A comparison of intensity profile of all these methods along the x-axis (K) and z-axis (L). 3D-MAP achieves the highest 3D spatial resolution among all the methods. Figure (A\u2013J) are in the same size of 100 \u00d7 100 \u00b5m2. Scale bar, 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013C) The case without non-targeted areas. (D\u2013F) The case with a non-targeted area near the center. (A, D) Overlapping all digital micromirror device (DMD) patterns corresponding to 10 illumination angles. Apertures in the same color are turned on together. Notice that only one yellow aperture is turned on in (D) to generate the small spot, and the other yellow aperture for the big spot (A) is closed due to the non-targeted area. (B, E) Top view of the two spots. (C, F) Side view of the two spots.\n\nAnother way to describe the pattern design is that the amplitude masks are computed by tracing the perspective views of the target back to the objective\u2019s native focal plane along parallel ray directions set by the scanning mirrors. Hence, even complicated 3D target designs can be computed quickly and easily. In contrast, conventional CGH systems synthesize a 3D hologram by modulating a coherent laser beam with a 2D static phase mask at the conjugate Fourier plane, which is an ill-posed problem where the 3D pattern is an approximate solution. CGH uses coherent light that introduces speckle in the hologram pattern (Figure 1C, Figure 1\u2014figure supplement 1A-D), and out-of-focus light above and below each targeted area generates cross-talk that may unintentionally activate non-targeted neurons. Conversely, 3D-MAP modulates light incoherently in time which eliminates speckle. The cross-talk can be reduced by not selecting certain illumination angles to avoid stimulating non-targeted areas, further enhancing the stimulation accuracy and efficiency (Figure 1C). Our algorithm can automatically remove rays in the non-targeted areas and generate the corresponding DMD amplitude patterns (an example is shown in Figure 1\u2014figure supplement 2). More strategies to reduce cross-talk are discussed in the Discussion section.\n\nThe axial resolution of 3D-MAP depends on the angle and number of beams that are sequentially projected to generate the targeted 3D intensity pattern (Figure 1E\u2013F). Because the fastest frame refresh rate of the DMD (13 kHz, or 77 \u03bcs per frame) is about 52-fold shorter than the stimulation time (4 ms, see later sections for details), we can use up to 52 angles without sacrificing speed. However, the DMD has limited on-chip memory, so we choose to minimize the number of amplitude masks required. In all our experiments, we use 10 illumination angles for each 3D target; additional illumination angles only introduce minor improvements (Figure 1E\u2013F). The maximum refresh rate of the DMD is 13 kHz, and each 3D volumetric pattern is generated by 10 masks on the DMD, so the maximum volumetric pattern rate is 1.3 kHz, which is more than an order of magnitude faster than conventional CGH with commercial SLMs. Since the characteristic response time of the microbial opsin is much longer than the duration of individual projection masks, the relevant light sculpting pattern seen by the opsin is the time-averaged sum of the intensity of several mutually incoherent masks. In addition, the DMD masks for 3D-MAP are based on ray tracing and can be calculated much faster than phase holograms in CGH (Zhang et al., 2017; Gerchberg, 1972; Leseberg, 1992; Xue et al., 2019), enabling real-time or closed-loop applications such as mapping neural circuits (see below).\n\n### Optical characterization of 3D-MAP\n\nTo quantify the optical resolution of 3D-MAP, we first measured the 3D optical point spread function (PSF). We turned on a 1-pixel aperture on the DMD (acting as a point source) and scanned through angles by scanning mirrors to generate a focus, which is imaged by a sub-stage camera with a thin fluorescent film on a microscope slide at many depth planes (Figure 2A\u2013C). The full-width-half-maximums (FWHMs) of the resulting 3D optical PSF indicate a spatial resolution of 5 \u00d7 5 \u00d7 18 \u03bcm3 with a 473 nm excitation wavelength. This PSF is measured in the center of the FOV and represents the best optical resolution of 3D-MAP, while the resolution will degrade when the focus is not paraxial. We also demonstrated the ability to simultaneously generate 25 foci at custom (x, y, z) locations in a 744 \u00d7 744 \u00d7 400 \u03bcm3 volume (Figure 2D). Additional examples of simultaneous 3D multi-spot generation are shown in Figure 2\u2014figure supplement 1A-B. The foci on the edge of the accessible volume are slightly larger than the foci in the center generated by the same size aperture (63% larger along the x-axis and 38% larger along the z-axis on average for foci that are 300 \u00b5m away from the center, Figure 2\u2014figure supplement 1C-J). Together, these data show that 3D-MAP achieves high spatial resolution for multi-site stimulation over a large volume.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimentally measured 3D optical point spread function (PSF) (1-pixel aperture on DMD) built from focus-stacked 2D images of a thin, uniform fluorescent calibration slide recorded at different depths using a sub-stage camera. (B) The PSF\u2019s lateral cross-section (x-axis) has a full-width-half-maximum (FWHM) of 5.3 \u03bcm. (C) The PSF axial cross-section (z-axis) has an FWHM of 18 \u03bcm. (D) Left: we simultaneously generated 25 foci within a 744 \u00d7 744 \u00d7 400 \u03bcm3 volume. Right, experimental measurement of the corresponding 3D fluorescence distribution. (E) Schematic diagram of the sub-stage microscope assembly for 3D pattern measurement. (F) XZ cross-section of the PSF, measured with blue (473 nm) and red (635 nm) light stimulation without scattering, and through brain tissue slices of increasing thickness: 50, 100, and 150 \u03bcm. (G) Under blue light illumination, the FWHM along the x-axis for increasing amounts of scattering is 11.7, 12.2, 19.7, and 29.0 \u03bcm, and (H) the FWHM along the z-axis is respectively 42, 46, 76, and 122 \u03bcm. (I) With red light illumination, the FWHM along the x-axis for increased amounts of scattering is 10.4, 19.3, 26.7, and 29.6 \u03bcm, and (J) the FWHM along the z-axis is respectively 50.7, 75.4, 79.7, and 73.1 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Five foci are located right on top of each other along the z-axis. Left: XZ cross-section. Right: XY cross-section corresponding to the z depths marked with green dash lines. (B) Nine foci with evenly distributed depths form a tilted plane across the 3D volume. For both (A) and (B), the target location is indicated in the 3D diagram on the left, and the corresponding experimental 3D fluorescence measurements are on the right. The foci are recorded in 3D by capturing a stack of 2D fluorescence images at various depths of the 3D illumination pattern intercepting a thin, uniform, fluorescent calibration slide with a sub-stage objective coupled to a camera. Scale bar, 100 \u03bcm. (C\u2013H) Simulation results show spatial resolution degrades near the edge of the field-of-view. (C) The digital micromirror device (DMD) pattern to generate a focus in the center of the field-of-view. (D) A focus generated by the 10 beams in C in the center of the accessible volume. (E) The DMD pattern to generate a focus on the edge of the field-of-view. (F) The focus generated by the five beams in E, which is distorted like a coma aberration. (G) The DMD pattern to generate a focus in the corner of the field-of-view. (H) The focus generated by the two beams in G, which is severely distorted and barely has any z-sectioning ability. (I\u2013J) The (I) lateral and (J) axial resolution of the 25 foci showing in Figure 2D versus their distance to the center of the volume. The blue circles mark the full width at half maximum (FWHM) of the foci, and the red line is a linear fitting result. On average, the FWHM of the foci 300 \u03bcm away from the center is worse than the one in the center, with (I) 63% worse along the x-axis and (J) 38% worse along the z-axis.\n\nWe next quantified the effects of optical scattering in mouse brain tissue on focusing capabilities with 3D-MAP by measuring the size of a target after propagating through acute brain slices (brain slices that are kept vital in vitro for hours) of increasing thickness placed just above the thin fluorescent film (Figure 2E). We generated a focused target by turning on a 10-pixel radius aperture on the DMD (8 \u00b5m in diameter at the native focal plane) to produce an illumination volume matching the typical dimensions of a neuronal soma in the cortex. We note that this target size is larger than the spatial resolution limit of 3D-MAP, but that it represents a practical choice of 3D pattern that matches the size of neurons and our application. The aperture size for all experiments is listed in (Appendix 1\u2014table 3) (\u2018Summary of experiment details\u2019). We compared scattering for both blue (473 nm) and red (635 nm) excitation wavelengths. Without the brain slice, the size of the focus was 11.7 \u00d7 11.7 \u00d7 42 \u03bcm3 (473 nm blue) and 10.4 \u00d7 10.4 \u00d7 50.7 \u03bcm3 (635 nm red). When generating the focus through 50, 100, and 150 \u03bcm thick brain slices, the size of the focus spot with blue light increased by 8%, 75%, and 269%, and the size of the focus spot with red light increased by 67%, 107%, and 114%, respectively (averaged values measured along the x-axis and the z-axis). Compared to other one-photon photostimulation techniques (Szabo et al., 2014; Sakai et al., 2013), 3D-MAP achieves high optical resolution especially when the scattering is weak (in brain slices or in superficial layers in vivo), and the resolution can be improved in the future by using red stimulation light combined with red-shifted opsins such as Chrimson or ChRmine (see Discussion).\n\n### 3D-MAP photostimulation in brain tissue\n\nWe next quantified the physiological spatial resolution as measured by the physiological point spread function (PPSF) of 3D-MAP by stimulating neurons in acute mouse brain slices and in vivo. We performed whole-cell patch clamp recordings from L2/3 excitatory neurons expressing a soma-targeted version of the potent optogenetic protein ChroME (Mardinly et al., 2018) (see Materials and methods). The PPSF measures the photocurrent response as a function of the radial and axial displacements between the targeted focus and the patched cell (P\u00e9gard et al., 2017). The physiological spatial resolution is not only related to the optical PSF but also to the laser power needed to drive a neuron to spike (Li et al., 2016). Since patterns for 3D-MAP can be calculated significantly faster than with CGH (Zhang et al., 2017; Gerchberg, 1972; Leseberg, 1992; Xue et al., 2019), we measured the volumetric PPSF by recording the photocurrent response from 2541 targeted locations (a 11 \u00d7 11 \u00d7 21 pixels grid) in 2\u20135 min, limited only by opsin kinetics. We chose a 4 ms stimulation time (also known as \u2018dwell time\u2019) in all experiments to ensure full activation of opsins (Figure 3\u2014figure supplement 1), followed by 8\u201340 ms inter-stimulation time (time between two stimulation pulses in successive targets, depending on the opsin type) to avoid photocurrent accumulation and minimize short-term plasticity of the synapses under study. Note that this is a specific choice for our experiments rather than the speed limit of 3D-MAP. The PPSF measurements show that 3D-MAP provides high-resolution photostimulation in vitro (lateral FWHM, 29 \u00b1 0.8 \u03bcm; axial FWHM, 44 \u00b1 1.6 \u03bcm, 9 cells, Figure 3A\u2013D). Under these conditions, we found that the spatial specificity of 3D-MAP is only approximately two-fold worse when compared to our previous results using multiphoton optogenetics in comparable conditions (P\u00e9gard et al., 2017; Mardinly et al., 2018). However, the PPSF of photocurrents for 3D-MAP should degrade more steeply as a function of tissue depth compared to multiphoton optogenetics due to scatter (see details in Discussion).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig3-v1.jpg)\n\n**Figure 3.:** (A) Example 3D representation of a physiological point spread function (PPSF) photocurrent measurement in vitro. (B, C) Photocurrent resolution (full-width-half-maximum [FWHM]) is 29 \u00b1 0.8 \u03bcm laterally and 44 \u00b1 1.6 \u03bcm axially (n = 9 neurons). (D) Representative traces of direct photocurrent from 11 positions along the x-axis without averaging. (E, F) 3D-MAP evoked spiking resolution in brain slices is 16 \u00b1 2.4 \u03bcm laterally and 44 \u00b1 8.9 \u03bcm axially (n = 5 neurons). (G) Representative traces of spike probability of 1 for in vitro measurements. (H, I) 3D-MAP evoked spiking resolution measured in vivo is 19 \u00b1 3.7 \u03bcm laterally and 45 \u00b1 6.1 \u03bcm axially (n = 8 neurons). (J) Representative traces of spike probability of 1 for in vivo measurements. The data shows the mean \u00b1 s.e.m. (standard error of the mean) for plots B\u2013C, D\u2013F, and H\u2013I.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, E) Photocurrent measured under various stimulation times (i.e., dwell time) ranging from 5 to 5 ms. We used an acousto-optic deflector (AOD) as a fast shutter to control the stimulation time. Insert plot: the zoom-in view of the photocurrent from 0.045 to 0.06 s (dash box). (B, F) The maximum photocurrent at each stimulation time. (C, G) Photocurrent measured at various short stimulation times ranging from 5 to 500 \u03bcs. Insert plot: the zoom-in view of the photocurrent from 0.045 to 0.06 s (dash box). (D, H) The maximum photocurrent at each short stimulation time. The result shows the photocurrent of opsins linearly increases with the increase of stimulation time, and gradually saturates at longer stimulation time. The saturation stimulation time is about 0.2 ms for ChroME and about 2 ms for ChRmine. ChroME also has a faster response than ChRmine. Therefore, over kHz patterning speed like what 3D-MAP achieves could reduce the stimulation time so that it becomes possible to photostimulate much more sites in the same experimental time.\n\nTo quantify the physiological resolution of 3D-MAP for supra-threshold neuronal activation, we also measured the spiking probability of neurons in acute brain slices and in vivo along the lateral and axial dimensions. We targeted opsin-expressing neurons in the upper 100 \u00b5m of the brain for the in vivo PPSF measurements. While patching the neuron, we digitally displaced the target generated by 3D-MAP along the x-axis and z-axis and recorded the number of spikes. Experimental results show that 3D-MAP enables high spatial specificity under all these conditions (Figure 3E\u2013G shows in vitro results [5 cells], with lateral FWHM, 16 \u00b1 2.4 \u03bcm; and axial FWHM, 44 \u00b1 8.9 \u03bcm. Figure 3H\u2013J shows in vivo results (8 cells), with lateral FWHM, 19 \u00b1 3.7 \u03bcm; and axial FWHM, 45 \u00b1 6.1 \u03bcm). This PPSF is to show the best measurement in vivo, which is expected to degrade as going deeper inside of the tissue.\n\n### Synaptic connectivity mapping over large volumes by a single focus\n\nIn addition to high spatio-temporal resolution and fast computational speed, 3D-MAP operates at low stimulation powers far below photodamage thresholds and is hence easily scalable to address large neural ensembles in distributed volumes of brain tissue. To demonstrate these advantages, we first used 3D-MAP to probe synaptic connectivity in 3D by randomly scanning a single focus point (Figure 4). We expressed soma-targeted ChroME in excitatory neurons of the cortex (see Materials and methods, Appendix 1\u2014table 3Table S3) and performed whole-cell voltage clamp recordings from inhibitory interneurons that do not express ChroME under these conditions, to avoid the confounding effect of direct photocurrents in the patched neuron (Figure 4A). The widefield fluorescent image (Figure 4B) shows the excitatory neurons (in red) and the patched inhibitory interneuron (in green). We first mapped an 800 \u00d7 800 \u00b5m2 FOV at low spatial sampling (40 \u03bcm grid) to identify the sub-regions that contained most of the presynaptic neurons (Figure 4C). We then re-mapped these sub-regions at fine resolution (20 \u00b5m/pixel, Figure 4D) and again at even higher resolution (9 \u00b5m/pixel, Figure 4E). Due to variable opsin protein expression levels across neurons, as well as variable intrinsic neural excitability, neurons are differentially sensitive to light. By mapping the same sub-region at different power levels, we were able to take advantage of this variability of photosensitivities to help identify putative individual (i.e., \u2018unitary\u2019) sources of presynaptic input (Figure 4D). We generated excitatory postsynaptic currents (EPSCs) by sequential photostimulation of the entire volume and observed that most connectivity maps exhibited spatial clusters (Figure 4D\u2013E) as typically observed when mapping synaptic input in space (Naka et al., 2019). The size of each cluster is about 30 \u00b5m, which reaches the limit of spatial resolution measured in Figure 3A\u2013B. Therefore, we cannot distinguish whether the cluster contains a single presynaptic neuron or not. However, within each cluster, most of the postsynaptic responses had similar amplitudes and time courses, suggesting they primarily arose from just one or a small number of presynaptic neurons (Figure 4F\u2013G). We also performed synaptic connectivity mapping in vivo (Figure 4\u2014figure supplement 1). These results demonstrate that 3D-MAP is easily scalable and suitable for obtaining high-resolution and large-scale connectivity maps of neural circuits in 3D.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic diagram of the experiment. A single focus randomly scans the volume adjacent to the patched interneuron that does not express opsin, and the readout map reveals the synaptic connections between photo-activated pyramidal neurons and the patched interneuron. (B) An example of widefield image of opsin-expressing pyramidal neurons (red) and the patched interneuron (green). (C) A coarse 2D map in an 800\u00d7800 \u03bcm 2FOV at 40 \u03bcm resolution identifies the sub-regions of the brain slice with presynaptic neurons. (D) Mapping the selected region at higher resolution (green box in C). Each row uses the same stimulation laser power 100% power: 145 \u03bcW across multiple axial planes, and each column is a map of the same axial plane at different powers. Representative excitatory postsynaptic currents EPSCs traces right show how synaptic currents at the same photostimulation pixel change as the stimulation power increases, presumably due to recruitment of additional presynaptic neurons. Data are averaged over 5 repetitions. (E) Super-fine resolution mapping of the region of interest (ROI) (green box in D) in 3D at P=90 \u03bcW. The green circle in c-e labels the location of the patched interneuron. (F) Traces from ROIs 1-5 labeled in E, averaged over 5 repetitions. (G) Representative traces of single trials without averaging from corresponding ROIs in the same color, measured across three different repetitions. The blue bar on top of traces in F-G indicates the 4ms stimulation time.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We patched a pyramidal neuron without opsin at [0, 0, 0] and photostimulated the volume around it pixel-by-pixel, and the parvalbumin neurons connect to this patched cell via synapses expressed opsin. The current readout reveals the inhibitory synaptic connections from all parvalbumin neurons to this pyramidal neuron. The mapping process is repeated four times. (A) Each row of the images is measured under the same stimulation laser power (100% power is 419 \u03bcW), and each column of the images is at the same axial plane. Scale bar: 100 \u00b5m. (B) Representative traces of postsynaptic currents under each stimulation power (measured from the pixel pointed by white arrow). These traces elucidate the synaptic connection is binary: once the neuron is photostimulated, the synaptic current remains the same, even if the stimulation power is increased. The unique photosensitivity of each neuron helps us to identify different neural ensembles by changing the stimulation power.\n\nOne of the major advantages of 3D-MAP over conventional single point scanning approaches (Petreanu et al., 2009; Losavio et al., 2010; Wang et al., 2011) is that it has the capacity to simultaneously stimulate multiple neurons distributed anywhere in the addressable volume. Multi-site photostimulation is crucial for perturbing or mapping brain circuits because only the activation of neural populations in parallel can drive the sophisticated activity patterns needed to understand network dynamics or behavior (Li et al., 2016). Thus, we next demonstrated that 3D-MAP is able to simultaneously stimulate multiple user-defined targets (Figure 5) that we selected according to the connection map in Figure 4e. While patching the same inhibitory interneuron as described above (Figure 4), we first stimulated the five presynaptic ROIs (Figure 4E\u2013F) one-by-one, and then stimulated subsets of them simultaneously, and finally stimulated all the ROIs together (Figure 5C). We compared the photocurrents measured by multi-site simultaneous stimulation to the linear sum of individual responses by single stimulation (Figure 5D) and observed the multi-site stimulation generates greater net input (Figure 5E, p = 0.0488 for 2\u20135 sites stimulation, two-way analysis of variance [ANOVA)]. This example shows that 3D-MAP is able to simultaneously and flexibly stimulate multiple targets and also can rapidly adjust the 3D patterns in milliseconds, which is critical for online interrogation of neural circuits. Although 3D-MAP could readily co-stimulate many more targets at a time (see the section of all-optical interrogation below), here we were limited by the number of presynaptically identified neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic diagram of the experiment. The stimulation ROIs are known to have synaptic connections with the patched interneuron from the widefield mapping as described in Figure 4. (B) The positions of the five ROIs are identified in Figure 4E. (C) Representative photocurrent traces for simultaneous stimulation of subsets of the five ROIs. Traces are averaged over four repetitions. The number(s) above each trace indicate the ROIs that were stimulated to generate the response. (D) Comparison of the actual synaptic response by simultaneous stimulation of ROIs 1\u20135 (blue) to the response calculated by linearly summing the traces when stimulating ROIs 1\u20135 individually (red). The individual response from each ROI is shown in the first row of C. (E) Comparison of the integral of the synaptic currents from simultaneous stimulation of multiple connected presynaptic neurons (blue) to the linear sum of the individual stimulation responses (red). The mean and standard deviation of data is calculated from all the k-combinations (number of foci) from the given set of five targets. The sample size is $C5,k, k=1, 2, 3, 4, 5$.\n\n### Reconstructing synaptic networks by multi-site stimulation via gradient descent\n\nPhysiological brain mapping approaches must overcome the challenge of temporal throughput to map ever larger regions of brain tissue. We reasoned that mapping neural circuits with multiple foci, rather than a single focus, could scale up the temporal throughput of the system dramatically, since the overall connectivity matrix is remarkably sparse. Instead of randomly shifting a single focus to measure the one-to-one synaptic connections (Figure 4), we used 3D-MAP to stimulate multiple random voxels simultaneously and reconstructed the spatial map of presynaptic networks via gradient descent. In our experiment, the positions of the simultaneously stimulated voxels were randomly distributed in the 3D volume and the neural connections are unknown to begin with, unlike co-stimulating known presynaptic ROIs in Figure 5. In acute brain slices we expressed Chrimson in excitatory neurons of the cortex (see Materials and methods, Appendix 1\u2014table 3) and again patched a GABAergic interneuron under voltage-clamp mode and recorded both EPSCs, and subsequently, inhibitory postsynaptic currents (IPSCs). We projected random sets of foci (five at a time in our experiment but other numbers should work as well, see next paragraph) and repeated this process until all voxels in 3D were stimulated several times (typically 5\u201310). Treating the recorded photocurrents as a combination of responses from multiple sites, we then reconstructed the map of the synaptic network using an optimization algorithm based on gradient descent (Figure 6A\u2013B, see Materials and methods).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig6-v1.jpg)\n\n**Figure 6.:** (A) The forward model for multi-site random simultaneous stimulation. V, the number of voxels in the 3D volume. P, the number of patterns, which are orthogonal to each other. y, peak value of the measured synaptic currents. A is a matrix, where each row represents an illumination pattern, including five foci here (blue, N = 5). x is a vector of the unknown synaptic networks to be reconstructed. (B) Inverse problem formulation. The optimal map, x, minimizes the difference between the peak of measured currents (y) and those expected via the forward model, with a regularizer $\\lambdaR(x)$. (C) Excitatory synaptic connection map of a GABAergic interneuron located at [0, 0, 0]. (D) Inhibitory synaptic connection map from the same cell. (E) Overlap of the excitatory map (red) and inhibitory map (green) to show their spatial relationship. Figures in (C\u2013E) are recorded in an 800 \u00d7 800 \u00d7 200 \u00b5m3 volume at 40 \u00b5m/pixel with three different stimulation powers (100% stimulation power is 890 \u03bcW in total out of the objective lens). The number of simultaneous stimulation foci (N) is 5 in both cases and the results are average over five repetitions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** M: number of repeat measurements (see Computational reconstruction framework in Materials and methods). The data is recorded from five simultaneously stimulated foci. The optimization problem is underdetermined for values of M < 5. Assuming the five foci stimulate sites which are sparsely distributed in space, it is possible to reconstruct the synaptic connectivity map with fewer measurements (M = 1\u20134) using compressive sensing. Scale bar, 100 \u03bcm.\n\nResults in Figure 5C\u2013E show the excitatory synaptic network map and inhibitory synaptic network map of the same GABAergic interneuron in an 800 \u00d7 800 \u00d7 200 \u00b5m3 volume at three different stimulation powers. Multi-site simultaneous stimulation has two key advantages. First, multi-site stimulation engages the activity of spatially distributed ensembles of neurons (rather than single neurons or small local clusters), which may facilitate polysynaptic network activity and engages network level properties of the circuit. Second, since our approach is compatible with compressed sensing, it becomes possible to reconstruct the same mapping results with fewer measurements compared to single-target stimulation, assuming that the multiple stimulation sites are sparse, and that the readout signal is a linear combination of the inputs from these sites. The assumption is valid when the multiple voxels for concurrent stimulation are randomly drawn from the volume and the number of these voxels is much smaller than the total voxels in the volume (five voxels are randomly drawn from 1600 voxels in our experiment). Since multiple voxels are stimulated at the same time (say N voxels), each voxel needs to be measured N times with different patterns to estimate the contribution of each voxel to the photocurrent without compressive sensing. Under the assumption of sparsity and linearity, we can reconstruct the map of neural networks using compressive sensing and with less than N repetitions (Figure 6\u2014figure supplement 1, N = 5). This feature of 3D-MAP is critical to speed up the mapping of networks in large volumes where single-target stimulation of every voxel would be prohibitively time-consuming.\n\n### All-optical parallel interrogation of a large number of neurons in vivo\n\nAll-optical interrogation of neural circuits permits the functional dissection of neuronal dynamics in vivo and can causally relate specific patterns of neural activity to behavior. So far, this has only been possible in the living mammalian brain with two-photon holographic optogenetics (Carrillo-Reid et al., 2019; Naka et al., 2019; Daie et al., 2021; Sridharan, 2021; Gill et al., 2020; Marshel et al., 2019; Robinson et al., 2020). Here, we tested whether we can use 3D-MAP for all-optical interrogation of a large number of neurons in vivo, and use visible light but maintain high spatial precision. To achieve this, we added an optical detection path to 3D-MAP for fluorescence imaging (Figure 7A). First, we recorded a widefield image stack by mechanically scanning the objective to identify the location of labeled neurons in 3D. Then, we simultaneously photostimulated all the identified neurons in the volume with 3D-MAP (a pulse train of 10 pulses at 20 Hz, and each pulse is 4 ms consisting of 10 projection angles and masks), and recorded calcium activity at 10 Hz of all these neurons by widefield imaging with ROI projection using the same DMD (Figure 7A insert plots). Since one-photon widefield imaging has no z-sectioning ability, we took advantage of this feature to capture fluorescence signals from neurons that are above and below the focal plane (dash plane in Figure 7A). To improve the image contrast as well as reduce photo-bleaching, we used 2D patterns computed from the maximum z projection of the widefield image stack to selectively illuminate only the neurons (Adam et al., 2019) rather than the whole field when recording calcium activity. We co-expressed the blue light sensitive opsin soma-targeted stCoChR-p2A-H2B-GFP and the red calcium sensor jRCaMP1a sparsely (Adesnik and Scanziani, 2010) in L2/3 neurons in the mouse brain (Forli et al., 2021) via in utero electroporation (Figure 7C). The co-expression level is about 50% (sample size: 114 neurons expressing CoChR, 99 neurons expressing RcaMP1a, 54 neurons expressing both). Even though jRCaMP1a is a red fluorescent calcium indicator, it still can be excited by blue light causing a rise of fluorescence intensity. To avoid this artifact, we started imaging after stimulation of the opsin (inset plot in Figure 7A). The start time (t = 0) in all the z-scored images refers to the start time of imaging, not the start time of stimulation. We then implemented all-optical 3D-MAP to simultaneously stimulate and image, and selectively interrogate tens of neurons in the mouse brain.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig7-v1.jpg)\n\n**Figure 7.:** (A) Experimental setup. The three-dimensional multi-site random access photostimulation (3D-MAP) setup as in Figure 1A is combined with an imaging path using a dichroic mirror, relay lenses, and a camera. Zoom-in view: neurons (blue circles) are stimulated in 3D with 3D-MAP, and calcium activity is recorded from widefield imaging with selective fluorescence excitation (yellow light) by the digital micromirror device (DMD). The dashed plane indicates the imaging focal plane. Top left: a timing plot shows that fluorescence imaging begins at t = 0, immediately after photostimulation. (B) Control experiment with brain slices. Top: calcium activity recorded from 28 neurons. Bottom: same neurons after applying TTX, when no calcium activity is detected. (C) Fluorescent in vivo image of an L2/3 neuron that co-expresses stCoChR-p2A-H2B-GFP (green) and jRCaMP1a (red). (D) Power test of a representative neuron, averaged across 10 repetitions. The blue box indicates the period when stimulation laser is on, and the imaging acquisition is off. (E) In vivo all-optical 3D physiological point spread function (PPSF). The lateral resolution is about 49 \u00b1 21 \u00b5m and the axial resolution is about 53 \u00b1 28 \u00b5m (n = 10 L2/3 neurons). (F) Maximum z projection of an in vivo widefield image stack (600 \u00d7 600 \u00d7 40 \u00b5m3) of L2/3 neurons (green, stCoChR-p2A-H2B-GFP; red, jRCaMP1a). (G) Calcium activity of 80 neurons as in F recorded during simultaneous photostimulation and imaging. (H) Calcium activity of 32 neurons that are addressed with four distinct photostimulation patterns (labeled with different colors, also see Figure 7\u2014figure supplement 1H) while fluorescence imaging data is acquired. (I) Peak z-score of each calcium trace recorded in H versus the corresponding stimulation patterns. The dashed colored rectangles highlight the neurons that are stimulated in each of the four patterns. (J) Calcium transients of 32 neurons that are stimulated with four distinct patterns, which is the line graph of the same data in (H).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Maximum z projection of the brain slice used in the control experiment (Figure 7B\u2013C). (B) Histogram of the depth of 55 neurons relative to the surface of the mouse brain. The expression is in L2/3. (C) An example of calcium traces at 11 lateral locations (y-axis) in the experiment of in vivo all-optical physiological point spread function (PPSF) measurement. The traces are averaged across 10 repetitions of a represented neuron at x = 0. (D) The image mask on the digital micromirror device (DMD) for the 80 neurons in the volume shown in Figure 7F. Green, the image mask generated by image segmentation. Gray scale image, maximum z projection of the widefield image stack of the somata. (E) Histogram of neuron separation in D. The mean separation of the 80 neurons is 49 \u00b1 26 \u00b5m. (F) Histogram of neuron separation in G\u2013H. The mean separation of the 32 neurons is 67 \u00b1 37 \u00b5m. (G) Maximum z projection of the in vivo widefield image stack of the neurons in Figure 7H\u2013J. (H) The four different image masks for ensemble stimulation in Figure 7H\u2013J. (I) Line graph of calcium transients in (C). Neurons labeled by the same color are photostimulated simultaneously. The masks are generated by Poisson disc sampling.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The three PSFs evaluate the response to a point source under different systems. PSFo shows the spatial resolution of the optical system (Figure 2); PPSF measured by electrophysiology (Figure 3) is not only related to the optical system but also to opsin (opsin conductance, the total opsin expression levels, and the intrinsic excitability of the neuron); PPSFo (Figure 7) evaluates the system consisting of optical excitation path, opsin, calcium indicators, and optical detection path. PPSFo in Figure 7E may be similar to the electrophysiology PPSF in Figure 3H\u2013J, despite being 50\u2013100 \u00b5m deeper, because jRCaMP1a probably cannot detect very low spike rates. Therefore, each of these various PSFs depends on the specific experiment, which are not expected to be equal.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Maximum z projection of the in vivo widefield image stack of the neurons. (B) Six distinct patterns for ensemble stimulation and imaging. (C) Calcium activity of 30 neurons that are addressed with the six patterns in B. (D) Peak z-score of each calcium trace recorded in C versus the corresponding stimulation patterns. The dashed colored rectangles highlight the neurons that are stimulated in each of the six patterns.\n\nWe first performed a control experiment with acute brain slices to show that the observed changes in fluorescence intensity are indeed due to calcium activity (Figure 7B). We photostimulated and imaged 28 neurons simultaneously in vitro (see Figure 7\u2014figure supplement 1A for the widefield image of the neurons) and we recorded calcium activity from these neurons before and after applying tetrodotoxin (TTX) to block action potentials. Importantly, TTX completely blocked the light-induced calcium transients demonstrating that they are due to calcium influx following light-evoked spiking. The results show obvious changes of fluorescence intensity before applying TTX and no changes after applying TTX (Figure 7B). Therefore, the changes of fluorescence intensity are caused by calcium activity rather than system artifacts.\n\nAll subsequent experiments were then performed in vivo in L2/3 neurons that are 200\u2013300 \u00b5m deep (Figure 7\u2014figure supplement 1B) in the intact mouse brain. We first performed a power test to determine the optimal photostimulation power needed to elicit detectable calcium activity in each neuron (Figure 7D). Then, we measured an in vivo all-optical 3D PPSF (a measure of calcium fluorescence change as a function of radial and axial displacements of the excitation target) with L2/3 neurons at the optimized power. The all-optical PPSF reflects the spatial specificity of all-optical 3D-MAP, incorporating the optical PSF, opsin sensitivity, and calcium indicator sensitivity, which is yet another system characterization that differs both from the optical PSF and from electrophysiology PPSF (see Figure 7\u2014figure supplement 2 for the relation between optical PSF, PPSF, and all-optical PPSF). Averaged measurements of all-optical PPSF across 10 neurons indicate a lateral resolution of 49 \u00b1 21 \u00b5m and an axial resolution of 53 \u00b1 28 \u00b5m (Figure 7E). An example of calcium traces from 11 positions along the x-axis in the all-optical PPSF measurement is shown in Figure 7\u2014figure supplement 1C. The result demonstrates that all-optical 3D-MAP achieves high spatial resolution in vivo under the conditions used.\n\nNext, we tested whether 3D-MAP could photo-activate a large number of neurons in vivo in 3D while maintaining spatial specificity. We photostimulated and imaged 80 user-selected L2/3 neurons in vivo simultaneously with a total power of 480 \u00b5W out of the objective lens (Figure 7F\u2013G). Figure 7F shows the maximum z projection of a 600 \u00d7 600 \u00d7 40 \u00b5m3 volume, and Figure 7G shows the calcium activity recorded simultaneously from every jRCaMP1-expressing neuron in the volume. The stimulation pattern is shown in Figure 7\u2014figure supplement 1D and the average separation between neurons is about 49 \u00b1 26 \u00b5m (Figure 7\u2014figure supplement 1E). The number of neurons stimulated was limited here by the size of FOV and the density of expressing neurons, and potentially could be over 100 neurons with a larger FOV (see Discussion). These results demonstrate that all-optical 3D-MAP achieves high-throughput photostimulation and imaging of neurons.\n\nFinally, we tested whether all-optical 3D-MAP can stimulate and image ensembles of spatially intermixed neurons as has been shown with two-photon holographic optogenetics (Carrillo-Reid et al., 2019; Marshel et al., 2019; Mardinly et al., 2018). The relatively sparse expression of the opsin and calcium sensor here facilitated targeting specificity (mean distance between neurons in the FOV was 67 \u00b1 37 \u00b5m which was larger than the all-optical PPSF, Figure 7\u2014figure supplement 1F). Instead of photostimulating all neurons in the volume simultaneously, we randomly assigned 32 neurons to four ensembles (eight neurons per ensemble) by Poisson disc sampling and we photostimulated each of the four ensembles sequentially while simultaneously imaging all neurons in the four ensembles with patterned illumination (Figure 7H\u2013J). The widefield image of the neurons and the four stimulation patterns are shown in Figure 7\u2014figure supplement 1G-H. Figures 7H and 6J show the calcium activity of all neurons under different photostimulation patterns, and Figure 7I shows the peak z-score of each neuron versus the stimulated neuron. We observe that neurons exhibit strong calcium activity primarily when they are stimulated, and minimal calcium activity when the adjacent neurons are stimulated. Another example with 30 neurons in six ensembles is shown in Figure 7\u2014figure supplement 3. These results demonstrate minimal cross-talk between photostimulated ensembles and non-targeted ensembles within the imaging volume even when stimulating and imaging L2/3 neurons in vivo. Thus, under relatively sparse opsin expression conditions, 3D-MAP can be used to photo-activate user-defined spatially intermixed ensembles in the superficial layers of the mouse brain. For densely labeled populations, 3D-MAP could still be used to photo-activate small spatial clusters of neurons which, depending on the goals of the experiments, could still be informative (Dhawale et al., 2010; Adam et al., 2019).\n\n## Discussion\n\nIn this study we demonstrated and validated 3D-MAP, a one-photon technique that enables 3D multi-site random access illumination for high precision optogenetic photostimulation and imaging. 3D-MAP combines novel computational and optical advances to offer powerful and versatile optical brain manipulation capabilities. Unlike prior one-photon approaches that have low spatial resolution (DMD-based 2D projection) (Dhawale et al., 2010; Leifer et al., 2011; Adam et al., 2019; Werley et al., 2017; Sakai et al., 2013) or small FOV (SLM-based 3D CGH) (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013), 3D-MAP achieves high spatial precision at high speeds and in large 3D volumes, successfully addressing the superficial layers of neurons in the intact brain. 3D-MAP is the first system to achieve 3D multi-site illumination with previously unattainable DoF by simultaneously sculpting the light field in both intensity and angular domains. Therefore, 3D-MAP is able to generate high-resolution 3D patterns over large volumes that CGH cannot synthesize. 3D-MAP is also able to project 3D patterns at much faster speeds than CGH, not only because the current refresh rate of DMDs is an order of magnitude faster than that of SLMs, but also because calculating the light field parameters with ray tracing in 3D-MAP is much faster than calculating phase masks in 3D CGH. Perhaps most importantly for the broader neuroscience community, one can build a 3D-MAP system for a small fraction of the cost of two-photon holographic optogenetic systems (see Appendix 1\u2014table 2). At the expense of lower spatial resolution and depth penetration, 3D-MAP is far simpler to operate and maintain and can readily address just as many neurons with far lower laser power. Since many types of circuit investigation experiments do not require the absolute spatial specificity of two-photon approaches (Dhawale et al., 2010; Adam et al., 2019), many groups that would not otherwise leverage patterned illumination approaches could adopt 3D-MAP for their optogenetics research applications.\n\n3D-MAP is the first demonstration that uses 4D light field patterning for in vivo optogenetic photostimulation. Even though two-photon photostimulation techniques have combined SLMs with scanning mirrors previously (Marshel et al., 2019; Packer et al., 2015; Yang et al., 2018), 3D-MAP is fundamentally different from these techniques because it modulates the 4D light field $(x, y, k_{x}, k_{y})$, so the DoF of the system is the product of the DMD\u2019s and the scanning mirrors\u2019 DoF. In previous work, the SLM and scanning mirrors both modulate 2D phase at the same plane $k_{x}, k_{y}$ , so the DoF of the previous systems (Marshel et al., 2019; Packer et al., 2015; Yang et al., 2018) is the sum of the SLM\u2019s and the scanning mirrors\u2019 DoF. Hence, 3D-MAP achieves orders of magnitude more DoF without extra hardware. A further advantage of 3D-MAP over previous work is that it synthesizes a custom 3D intensity pattern in 3D $(x,y,z)$ with 4D light field control, which is a well-posed problem, whereas controlling 3D intensity with 2D phase control is an ill-posed problem. Note that previous work (Levoy et al., 2009) on 4D light field display also used a DMD, along with a microlens array (MLA), but is fundamentally different from 3D-MAP. First, the DoF of 3D-MAP is orders of magnitude higher since scanning mirrors have much more DoF than a fixed MLA. Second, the MLA has a built-in tradeoff between spatial and angular resolution whereas 3D-MAP does not. Therefore, the maximum defocus range of 3D-MAP is 720 \u00b5m (Figure 2\u2014figure supplement 1A) whereas the MLA-based method only achieves 40 \u00b5m range in microscopy applications. Third, we demonstrated 3D-MAP with acute brain slices and in vivo mouse brain where tissue scattering distorts the light field and limits the resolution, whereas the previous work is not used for optogenetics under scattering.\n\nAs a proof-of-principle experiment, we demonstrated all-optical 3D-MAP in a relatively thin 3D volume (600 \u00d7 600 \u00d7 40 \u00b5m3) where two opsin-expressing neurons right on top of each other along the z-axis is very rare under the conditions of relatively sparse labeling (Adesnik and Scanziani, 2010). Also, because we used a patterned widefield imaging system to detect the fluorescence emitted from calcium indicators, the signal-to-noise ratio of the fluorescence images will be lower than the readout noise of the camera if the neuron is too far away from the focal plane. To enable 3D detection over a larger axial range, one could apply pupil encoding (Xue et al., 2019), light field detection (Prevedel et al., 2014; P\u00e9gard et al., 2016), or remote focusing (Botcherby et al., 2008) to the imaging path of 3D-MAP.\n\nBoth one-photon and two-photon multi-site photostimulation are subject to spatial cross-talk, as out-of-focus light from one target may accidentally stimulate neurons that are at other focal planes, especially when the density of foci is high or when out-of-focus neurons are more photosensitive than the desired targets. In Figure 7, we demonstrated that the cross-talk in our experiment is minimal under conditions of relatively sparse opsin expression as obtained with conventional in utero electroporation (Adesnik and Scanziani, 2010). However, when the separation between two adjacent neurons is closer than the all-optical PPSF, off-target effects are likely, even under sparse expression conditions. Therefore, in addition to expression sparsity, we can also control the stimulation pattern\u2019s sparsity to mitigate spatial cross-talk. When the desired density of foci is high and cross-talk is expected, 3D-MAP could potentially leverage its multi-kHz patterning speed to exploit the temporal domain by multiplexing patterns and targeting smaller subsets of neurons at a time in order to increase pattern sparsity.\n\nThe maximum number of neurons that can be co-stimulated without cross-talk in one-photon or two-photon photostimulation depends on the available laser power, the limits of brain heating, the spatial resolution of the system, the FOV, and the spacing of opsin-expressing neurons. Compared to two-photon photostimulation, 3D-MAP trades on spatial resolution (by a factor of 2\u20133 in superficial layers) to use two to three orders lower laser power. For example, two-photon photostimulation techniques typically restrict the instantaneous power under the objective below 4 W to avoid photodamage (Sridharan, 2021; Mardinly et al., 2018). At full power, two-photon photostimulation techniques can simultaneously activate tens to over a hundred neurons (Sridharan, 2021; Marshel et al., 2019; Mardinly et al., 2018; Dalgleish et al., 2020). In contrast, 3D-MAP is able to photostimulate dozens of neurons simultaneously with only 480 \u00b5W out of the objective (Figure 7F\u2013G). 3D-MAP requires sparser expression than for two-photon stimulation to achieve comparable effective specificity, but since total needed power is nearly 100-fold less for comparable stimulation patterns, brain heating is much less of a concern, and the technique can be scaled up to address more neurons in a larger brain area. Many experiments do not need full optical control over all neurons in a volume \u2013 for example, when targeting a specific transcriptional subtype, and many other experiments do not absolutely require single-cell specificity. Thus, for many applications 3D-MAP should be preferable to two-photon applications, with the specific exceptions of experiments that demand photostimulation of precise ensembles within a small volume of densely labeled tissue, or when the neural targets are located at brain depths only accessible to infrared light. The simplicity and scalability of 3D-MAP thus provides new experimental capabilities that two-photon photostimulation techniques cannot easily achieve.\n\nLike any other one-photon photostimulation technique, the effective resolution of 3D-MAP in brain tissue is limited by scattering. As we show in Figures 2 and 6, illumination with red shifted sources can reduce Rayleigh scattering and mitigate resolution loss through brain tissue, but the accessible depth remains fundamentally limited to the first few hundreds of microns below the surface of the mouse brain and the scattering effect is more severe the deeper the stimulation is. To photostimulate neurons deeper inside the mammalian brain with 3D-MAP, the cortex can be surgically removed (Adam et al., 2019; Dombeck et al., 2010; Marshel et al., 2012) or implemented with a miniaturized microscope (Szabo et al., 2014; Stamatakis et al., 2018) as it is routinely performed to image deep structures such as the hippocampus or the thalamus. Taken together, 3D-MAP is a new volumetric optogenetic projection system that offers advantages over existing one-photon and two-photon optogenetic technologies and should facilitate a wide range of neural perturbation experiments to map the structure and function of brain circuits.\n\n## Materials and methods\n\n### 3D-MAP optical setup\n\nThe laser sources for optogenetic stimulation are diode pumped solid state (DPSS) laser diodes. One is at 473 nm wavelength (MBL-N-473A-1W, Ultralasers, Inc, Canada) and the other at 635 nm wavelength (SDL-635-LM-5000T, Shanghai Dream Lasers Technology Co., Ltd., China) for different opsins. The results shown in Figure 5 and Figure 3\u2014figure supplement 1E-H are measured under red stimulation, and all the others are stimulated by blue light. The laser source for in vivo PPSF (Figure 3H\u2013J), the widefield imaging (Figure 4B), and calcium imaging (Figure 7, Figure 7\u2014figure supplements 1 and 3) is a DPSS laser at 589 nm wavelength (MGL-W-589\u20131W, Ultralasers, Inc, Canada). Current supplies are externally driven by an analog modulation voltage. The laser beams are scanned by a pair of galvo-mirrors (GVS202, Thorlabs, Newton, N.J.,U.S.), and then the beam size is expanded to fill the DMD (DLP9000X and the controller V4390, ViALUX, Germany) by a 4f system (f1 = 45 mm, f2 = 150 mm). The DMD is mounted on a rotation base in order to maximize the output laser power from \u2018ON\u2019 pixels and minimize the diffraction pattern from DMD pitches. Then the patterned beam passes through a tube lens (f = 180 mm) and the objective lens (XLUMPlanFL N, 20\u00d7, NA 1.0, Olympus) to generate multiple foci. The objective lens is mounted on a motorized z-stage (FG-BOBZ-M, Sutter Instrument, Novato, C.A., U.S.). A custom dichroic mirror (zt473/589/635rpc-UF2, Chroma, Bellows Falls, V.T., U.S.) is placed before the objective lens to reflect the stimulation laser beams while transmitting fluorescence photons emitted from the sample. The fluorescence passes through a tube lens (f = 180 mm) and a 4f system (f1 = 100 mm, f2 = 150 mm), and then is imaged by a camera (Prime95B, Teledyne Photometrix, Tucson, A.Z., U.S., Figures 4B and 7). Brain samples (acute brain slices and anesthetized mice) are placed on a motorized x-y stage (X040528 and the controller MP-285, Sutter Instrument, Novato, C.A., U.S.). The 3D PSF and patterns (Figure 2 and Figure 2\u2014figure supplement 1) are measured by capturing the fluorescence excitation in a thin fluorescent film on a microscope slide, with a sub-stage objective (XLUMPlanFL N, 20\u00d7, NA 1.0, Olympus) coupled to a camera (DCC1545M, Thorlabs, Newton, N.J., U.S.). Tomographic renderings of the 3D-MAP illumination patterns are obtained by mechanically scanning the illumination objective along the optical (z) axis and recording the 2D fluorescence image stacks at linearly spaced depths with the sub-stage camera. For Figures 3A\u2013D ,\u20134D\u2013E, the targeted positions in the 3D pattern are stimulated in a random order: two sequential stimulations are separated by a minimum distance calculated by Poisson disc sampling in order to avoid photocurrent accumulation caused by repeat stimulations. An NI-DAQ (National Instruments, NI PCIe-6363) synthesizes custom analog signals to synchronously modulate the lasers, the galvo-mirrors, the digital triggers to flip frames on the DMD, the trigger signals to the camera as well as the z-stage. An analog input channel enabling synchronous measurements of neural photocurrents and spikes in direct response to the custom 3D light sculpting sequence. A custom MATLAB (MathWorks, Natick, M.A., U.S.) graphic user interface is used to control the NI DAQ boards, calibrate and align the photostimulation and imaging modalities, and for data acquisition and processing.\n\n### Synchronized control of 3D-MAP\n\nThe key mechanism to generate a focus on the shifted focal plane by 3D-MAP is to synchronize the scanning mirrors that control the angle of light $(\u03d5_{SM}, \\theta)$ (Figure 8A) and the DMD that controls the amplitude apertures. Figure 8A shows an example of synthesizing a focus below the native focal plane with 10 beams in 4 ms. The color of circular apertures and lines indicates the time stamp of the DMD apertures and corresponding projection angles. To better show the 3D view in Figure 8A, we plot the positions of DMD apertures and the projection angles in a 2D view (Figure 8B\u2013C). The first aperture is located at $\u03d5_{DMD}=0$ (dark blue circle, Figure 8A\u2013B), and the corresponding projection angle is $\u03d5_{SM}=\\pi$ (dark blue lines, Figure 8A and C). To project the angle $\u03d5_{SM}=\\pi$, we apply \u20132 V voltage to the x-axis scanning mirror and 0 V to the y-axis scanning mirror (Figure 8C\u2013D). Similarly, we can easily compute the other projection angles and the aperture positions by evenly dividing $2\\pi$ by the number of beams. The voltage outputs to control the laser intensity, trigger DMD projection, and projection angles of the scanning mirrors are shown in Figure 8D. DMD projects the 10 apertures sequentially (Figure 8E) controlled by the TTL trigger signal (purple line, Figure 8D), while the scanning mirrors project the corresponding angles controlled by the sinusoidal signal (red line, voltage of x-axis scanning mirror; yellow line, voltage of the y-axis scanning mirror). Strictly, the scanning mirrors voltage should not change during the projection of one beam. However, because the time is very short (0.3 ms in Figure 8D), the change of projection angle during this time is negligible. Therefore, synchronizing the DMD and the scanning mirrors is straightforward and only involves calculating the voltage outputs and the DMD patterns as shown in Figure 8D\u2013E.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig8-v1.jpg)\n\n**Figure 8.:** (A) A focus spot is generated by 10 beams in 4 ms in total. The DMD is located at the relayed image plane projecting 10 apertures sequentially. Scanning mirrors control the corresponding projection angles $(\u03d5_{SM}, \\theta)$ for each beam. $\\theta$ is the same for all beams and $\u03d5_{SM}$ varies. The color of the apertures and the projection angles shows their respective time stamp. (B) 2D view of the image plane in A, showing all 10 apertures on the DMD that are used to generate the focus. The first aperture (dark blue circle) is at $\u03d5_{DMD}=0$ and the 10 apertures are evenly distributed in the range of $\u03d5_{DMD}=(0, 2\\pi)$. (C) Projection angles by scanning mirrors. The first projection angle to generate the focus in A with the first aperture in B is located at $\u03d5_{SM}=\\pi$. The scanning mirrors evenly scan along a circular trace in the 4 ms stimulation time. (D) The voltage outputs control the hardware. The scanning trace in C is generated by applying sinusoidal signals (red, yellow) to the scanning mirrors. The maximum voltage of the sinusoidal signal decides $\\theta$ and the phase of the sinusoidal signal decides $\u03d5_{SM}$ . The DMD projection is controlled by the TTL signal (purple), which has 10 rising edges in the 4 ms stimulation time to project 10 patterns sequentially. The laser intensity is controlled by an analog signal (blue) that is synchronized with the DMD. (E) The 10 patterns to be projected by the DMD to synthesize the focused spot.\n\nSimulation results for typical misaligned examples and correct examples are shown in Figure 9. When the phase of DMD and the phase of the scanning mirrors are misaligned (Figure 9A), 3D-MAP cannot generate a tight focus at the shifted focal plane. Instead, the shape at the shifted focal plane looks like a ring (a paraboloid in 3D). To correct the phase mismatch, we can simply adjust $\u03d5_{DMD}$ or $\u03d5_{SM}$ to change the relative phase between the DMD patterns and the projection angles and correct for any system misalignment. For example, we can change $\u03d5_{SM}$ from $\\frac{4\\pi}{5}$ to $\\pi$, as a result, the shape at the shifted focal plane will change from a ring to a spot (Figure 9C). Another misalignment may happen when the scanning mirrors have asymmetric response (Figure 9B), which generates an elliptical scanning trace rather than a circular trace. This type of misalignment degrades the focus of 3D-MAP exactly like optical astigmatism. To correct the asymmetric response of the scanning mirrors, we can adjust the amplitude of the voltage output to the scanning mirrors until we obtain a tight focus as in Figure 9C. In addition, adding a $\\pi$-phase shift to the DMD patterns or the projection angles can generate a focus below (Figure 9C) or above (Figure 9D) the native focal plane.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/73266/elife-73266-fig9-v1.jpg)\n\n**Figure 9.:** The first column shows the sum of 10 digital micromirror device (DMD) patterns to generate the focus. The second column shows the projection angles by the scanning mirrors (SM). The color labels the timestamp of the projection as in Figure 7. The third column shows the angle of the scanning mirror in the x-axis (red) and the angle of the scanning mirror in the y-axis (yellow) for the sequential 10 projections, respectively. The fourth column shows the 3D view of the focus (distorted or tightly focused). The fifth column shows the 2D XY-view at the in-focus plane. To show the focus better, the images are zoomed in compared to the images in the fourth column. (A) Misaligned example of phase mismatching. The 10 beams cannot overlap to generate a tight focus, instead, a ring is generated at the shifted focal plane. (B) Misaligned example of asymmetric response of the scanning mirrors. The beams in the tangential direction and in the sagittal direction overlap at different locations along the z-axis like astigmatism, generating a distorted focus. (C) Correct aligned example generates a focus below the native focal plane (same as Figure 7). (D) Correct aligned example generates a focus above the native focal plane by adding a $\\pi$-phase shift to the DMD patterns.\n\n### Computational reconstruction framework\n\n3D-MAP projects N foci simultaneously in a 3D volume (V voxels), which is defined as a stimulation pattern ($i$th pattern $A_{i}$). The positions of the N foci are randomly selected from the V voxels. The electrophysiology readout (EPSCs or IPSCs) under this pattern is recorded and the maximum absolute value of the EPSCs or IPSCs is the measurement $y_{i}$ under the illumination of $i$th pattern. Thus, the forward model of multi-site random simultaneous illumination is (Figure 5A):\n\n$$\ny_{i}=\\sumj=1VA_{i,j}x_{j},i=1,\u00a02,\u00a0...,\u00a0P.\n$$\n\nP is the number of patterns, and all patterns are orthogonal to each other. To solve the synaptic connection map at the $j$th voxel ($x_{j}$), the number P should be equal to V. The reconstruction framework can be formulated as a $l_{1}$-regularized optimization problem that seeks to estimate $x$ by minimizing the difference between the measured currents ($y$) and those expected via the forward model (Figure 5B):\n\n$$\nargminx\\geq0(\u2016Ax\u2212y\u2016_{2}^{2}\u2212\\lambdaR(x)),\n$$\n\nwhere $R(x)$ describes total-variation (TV) regularization defined as:\n\n$$\nR(x)=\\sum_{j=1}^{V}x_{j+1}-x_{j}\n$$\n\nThis optimization problem is solved using fast iterative shrinkage-thresholding algorithm (FISTA), which is a first-order gradient descent algorithm. FISTA is able to reconstruct the result (Figure 6C\u2013D, Figure 6\u2014figure supplement 1) in real time during the experiments. The algorithm is summarized in Algorithm 1.\n\nAlgorithm 1. Three-dimensional multi-site random access photostimulation (3D-MAP) algorithm.\n\nIf every voxel is illuminated M times (the number of repetitions) using P patterns and each pattern illuminates N voxels, we can draw the relation between these parameters:\n\n$$\nP=MV/N.\n$$\n\nTo solve $x$, P should be equal to V, that is, the number of repetitions (M) should equal to the number of foci (N) in each pattern. However, the number of repetitions could be smaller than M if the multiple illumination foci satisfy these two assumptions: first, the foci are distributed sparsely in the volume; second, the readout postsynaptic current is a linear combination of the response from presynaptic neurons stimulated by these foci. As shown in Figure 6\u2014figure supplement 1, where the number of foci is five (N = 5), it is possible to reconstruct the synaptic connection map coarsely with less than five repetitions (M = 1\u20134) with compressive sensing algorithms.\n\n### Animal preparation and electrophysiology\n\nNeonatal mice age P3\u2013P4 (wild type, Emx1-IRES-Cre [JAX stock#005628], or Emx1-Cre;Gad1-GFP [MGI:3590301]) were cryoanesthetized on ice and mounted in a head mold. AAVs driving Cre-dependent expression of either soma-targeted ChroME (Figure 4), Chrimson (Figure 6), ChRmine (Figure 3\u2014figure supplement 1), or soma-targeted CoChR (Figure 7 and Figure 7\u2014figure supplements 1\u20132) were injected via a Nanoject3 (Drummond) into the visual cortex (~1\u20132 mm lateral to lambda, 3 sites, 22 nL/ site), ~100\u2013300 \u00b5m below the brain surface. In wild type mice we injected AAV-mDlx-ChroME to drive opsin expression in cortical interneurons. All expression vectors co-expressed nuclear-targeted mRuby3 except those in the all-optical interrogation experiments (Figure 7 and Figure 7\u2014figure supplements 1\u20132). Mice were used for brain slice or in vivo recordings at P28\u2013P56. Brain slices were prepared as previously described (Pluta et al., 2015). Slices were transferred to a chamber and perfused with ACSF (no receptor blockers) warmed to ~33\u00b0C. First the microscope objective was centered over the area of V1 with the highest expression density of the opsin, as indicated by the density of mRuby3-expressing cells. ACSF contained in mM: NaCl 119, KCl 2.5, MgSO4 1.3, NaH2PO41.3, glucose 20, NaHCO3 26, CaCl2 2.5. Internal solutions contained CsMeSO4 (for voltage clamp) or KGluconate (for current clamp) 135 mM and NaCl 8 mM, HEPES 10 mM, Na3GTP 0.3 mM, MgATP 4 mM, EGTA 0.3 mM, QX-314-Cl 5 mM (voltage clamp only), TEA-Cl 5 mM (voltage clamp only). For loose-patch experiments pipettes were filled with ACSF. The resistance of the patch electrodes ranged from 3 to 5 M\u03a9. For direct recording of photocurrents or light-induced spiking, we patched neurons (either in loose patch or whole-cell patch clamp) that expressed mRuby3. For recording light-driven synaptic inputs we patched from unlabeled putative interneurons (that did not have pyramidal morphology), or from GFP-expressing neurons in GAD67-GFP mice.\n\nFor optogenetic mapping we generated light spots ~10 \u00b5m wide (apertures of 10\u201320 pixels in radius on DMD). The total stimulation duration was 3\u20136 ms. For ChroME-expressing (Figures 3A\u2013E\u20134) and CoChR-expressing (Figure 7 and Figure 7\u2014figure supplements 1 and 3) animals, we used 473 nm light, and for Chrimson and ChRmine we used 635 nm light (Figure 5, Figure 3\u2014figure supplement 1). All mapping used fully randomized sequences. For measurement of PPSFs and multi-spot synaptic maps, we used the system in full 3D mode (Figures 3 and 5, Figure 4\u2014figure supplement 1). For single spot synaptic maps all photostimuli were at the native focal plane, and the microscope was moved mechanically under software control to obtain input maps at different axial planes (Figure 4 and Figure 4\u2014figure supplement 1). Mapping at the native focal plane requires only one DMD mask per light stimulus as compared to 10 for a full 3D pattern, allowing for many more masks to be stored in the DMD RAM and rapidly displayed. Scanning mirrors scan continuously in $2\\pi$ to enable z-section when mapping at the native focal plane, which is different from direct 2D projection. At the beginning of each mapping experiment, we first took a 10-point laser power dose response curve of the photocurrent or light-induced synaptic current and used this data to choose the power range for photocurrent or synaptic mapping. For spiking PPSFs, the lowest light level that reliably generated spikes when directly targeting the soma was used. For single spot mapping we updated the DMD pattern at 40\u201380 Hz. For multi-spot mapping we updated the DMD pattern at 10\u201320 Hz, which minimized network adaptation.\n\nFor in vivo electrophysiology recording and all-optical interrogation, mice were sedated with chlorprothixene (0.075 mg) and anesthetized with isoflurane (1.5\u20132%). A small stainless steel plate was attached to the skull with Metabond. The skull was protected with cyanoacrylate glue and dental cement (Orthojet). A 2.5 mm craniotomy was made over V1 with a circular biopsy punch. The dura was removed with fine forceps and the craniotomy was covered with 1.2% agarose in ACSF and additional ACSF (electrophysiology) or covered with a cranial window (all-optical interrogation). The mouse was then injected with urethane for prolonged anesthesia (0.04 g), and supplemented with 0.5\u20131.5% isoflurane at the recording rig. Body temperature was maintained at 35\u201337\u00b0C with a warming blanket. Neurons were recorded under visualization either with epifluorescence (to target opsin-expressing neurons in the upper 100 \u00b5m of the brain for PPSF measurements) or in L2/3 via oblique infrared contrast imaging via an optic fiber (200 \u00b5m diameter) placed at a ~ 25 degree angle from horizontal located as close as possible to the brain surface underneath the objective. The same procedure for optogenetic mapping used in vitro was used in vivo. All data analysis was performed in MATLAB.\n",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "52036827-12e8-460f-a6a8-b4572171d627",
+      "submission_id": "2e5ddfa8-8409-4659-bcec-399b0cc9dfce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Denise Cai, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73266.sa0](https://doi.org/10.7554/eLife.73266.sa0)\n\nThis paper is of interest to neuroscientists working on all-optical interrogation of neural circuits and optogenetics. It provides a new, inexpensive, one-photon approach for high-speed 3D photostimulation with sparse targeting. This new method has been well characterized and demonstrated in both in vitro and in vivo experiments on mouse brain tissue.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Denise Cai, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73266.sa1](https://doi.org/10.7554/eLife.73266.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Three-dimensional Multi-site Random Access Photostimulation (3D-MAP)\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and John Huguenard as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Luis Alberto Carrillo Reid (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another and are unanimous in recommending submitting a revised version of the manuscript. The Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll 3 reviewers were enthusiastic about the manuscript and found your approach of an all optical 1P method for stimulating neurons to be of interest to and impactful for the neuroscience field. In general, the reviewers found the manuscript to be comprehensive and well-written. However, there were several points of clarification/ more detailed explanations the reviewers have requested that will be need to addressed prior to recommending publication in eLife. Please see the detailed points of clarification requested by reviewers below.\n\nReviewer #1:\n\nThe authors nicely quantify the optical point spread function both on a fluorescent slide and, importantly, in brain slices and in vivo, and they do so for blue and red light \u2013 wavelengths that are suited for single photon optogenetics. The authors demonstrate the utility of this technique, particularly in cases where neurons expressing a given optogenetic protein are sparsely labeled or, as may be the case for inhibitory neurons, naturally sparse. Notably, as cell type specific promoters in layer 2/3 are more fully characterized, it is likely that naturally sparse excitatory networks will be evident as well.\n\nThe authors demonstrate the use of this approach for optogenetic circuit mapping, and for in vivo read-write experiments.\n\nWeaknesses:\n\nIn Figure 4E, it seems like excitatory inputs to PV cells are clustered. Is this the correct message from this figure, or do those spots (particularly near dZ=40um) represent single excitatory neurons rather than groups of excitatory neurons?\n\nI didn't understand the approach in Figure 6. CoChR is a blue-light opsin while jRCaMP1a is a red light calcium indicator. Why the need to start imaging the jRCaMP1a responses only after the CoChR stimulation? Is there a great deal of cross talk in the excitation wavelengths?\n\nWhile the authors are very up front about the fact that this stimulation approach works best for very sparsely labeled neurons, this does limit the potential utility of the application.\n\nOverall, this is a well written paper that presents a full accounting of a new and potentially quite useful 3D stimulation approach. The authors are candid about the shortcomings, which is refreshing. They provide well done quantitative measures and they do so across a range of preparations. They validate their approach with electrophysiological measures. There is little here to dislike.\n\nI have no specific recommendations. I found the paper to be well written and I imagine that it will be of some real interest to the field.\n\nReviewer #2:\n\nXue et al., introduced a new high-speed 3D photostimulation method, 3D-MAP, based on single photon light sculpting. Compared with typical single photon approaches, this new technique is improved in 3D spatial resolution, simultaneous targeting numbers and pattern refresh rate, offering a simple and inexpensive alternative to two-photon optogenetics. Although this technique requires a certain level of expression sparsity especially in a scattering sample, its overall 3D stimulating throughput still makes it valuable in various applications.\n\nXue et al., also demonstrated the application of 3D-MAP in in vivo 3D optogenetic photostimulation and all-optical parallel interrogation of mouse brain with impressive results. The 3D-MAP technique can be potentially used as an add-on module for existing imaging system, such as for single objective light-sheet microscopy. Its application can be expanded to other animal models with a less scattering brain, such as zebrafish, to mitigate spatial crosstalk.\n\nThis paper has provided sufficient technical details for readers to understand the 3D-MAP method, with carefully designed and conducted experiments to demonstrate the potential applications in high-throughput interrogation of neural circuits. Yet there are some aspects of the system characterizations and experiment details that need to be further clarified.\n\nOverall, this manuscript described the 3D-MAP technique clearly and demonstrated its application with promising data. I do have a few suggestions that I think would enhance the clarity and strength of this paper.\n\n1. The authors mentioned that they could unselect certain illumination angels of specific stimulated focus to avoid stimulating non-targeted areas. Is it calculated automatically with the current algorithm? When multiple rays for different foci make a cross section in the 3D space, do they get removed or not?\n\n2. The authors compared different foci across the large FOV in Figure 2\u2014figure supplement 1 based on the 25 foci located on an oblique plane (Figure 2D). It would be more reliable if the PSF is averaged from multiple measurements taken from randomly distributed foci across the entire FOV.\n\n3. Is the same 10-pixel radius aperture on the DMD used for all the experiment with mouse brain tissue later? Is the PSF improved in scattering tissue when using a smaller radius?\n\n4. The authors performed the all-optical interrogation experiment in vivo in L2/3 neurons that are 200\u03bcm-300\u03bcm deep in the intact mouse brain, yet they only measured the optical PSF under the brain slice up to 150\u03bcm. Similarly, the PPSF measurement in Figure 3 only shows the results \"in the upper 100\u03bcm of the brain\". Since the resolution in Z degraded dramatically with blue light stimulation, it would be better to add the measurement of thicker brain tissue to mimic the in vivo experiment condition in L2/3. Besides, the all optical 3D PPSF under 200\u03bcm (Figure 6E) shows a similar axial FWHM compared with the electrophysiology PPSF in the upper 100\u03bcm brain (Figure 3I) as well as the optical PSF in under 100\u03bcm brain slice (Figure 2H). This is a bit confusing and could be a bit misleading. Please explain further taking the optical PSF, the nonlinear effect of opsin and calcium indicator sensitivity and the imaging system performance into consideration.\n\nReviewer #3:\n\nThis paper proposes a low-cost approach to perform simultaneous calcium imaging recordings and photostimulation of neuronal ensembles. The study of the causal relation between the activity of identified groups of neurons and their behavioral output is a topic of broad interest for the neuroscience community. Recently it has been shown in different brain areas that the identification and further manipulation of neuronal ensembles related to a behavioral task could be achieved using two-photon microscopy. This paper proposes a one photon tool to eventually facilitate the use of all-optical interrogation of neuronal circuits and behavior. However, the main limitations of the system showed in this paper are the necessity of sparse expression of opsins and the spatial resolution that comprises volumes bigger than the somatic region of individual neurons.\n\nThe authors suggest that the proposed 1P system could be used instead of 2P systems but according to the experimental results, this is only valid for a very narrow set of experiments that involve the sparse expression of opsins.\n\n1. To clearly show the ability of the system to perform simultaneous calcium imaging and photostimulation the authors should show raw calcium transients of photostimulated and non-photostimulated neurons at different trials, as well as a plot showing calcium transients of non-stimulated neurons that express the opsin as a function of the distance between photostimulated neurons.\n\n2. The manuscript mentioned the cost of budget and high performance realizations of the 1P system but a clear statement of the disadvantages of a budget system is lacking. It would be helpful to include a paragraph indicating what is missing in a budget 1P system compared to a high performance 1P system.\n\n3. One of the main issues with all-optical interrogation of neural circuits and behavior is the lack of co-expression of opsins and calcium indicators. This is a crucial step since usually the targeted neurons are the ones that have activity in the behavioral task. However, the manuscript mentions that the system proposed is ideal for sparse expression of opsins, but the authors didn't mention the level of co-expression in their experiments. If the level of co-expression in a sparse labeling is low, then the system will not be ideal for the all-optical interrogation of neural circuits and behavior.\n\n4. The main strength of the paper is the demonstration that the system could be used to map the influence of sparse neurons over a large volume onto a postsynaptic target. So, focusing the rationale, results and conclusions on those experiments could be a better strategy until the 1P system is refined to reach similar performance of a 2P system for broad expression of opsins.\n",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "894875b4-8ada-4663-9ded-c183e897de2f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C1",
+      "claim": "Optical control of neural ensemble activity is crucial for understanding brain function and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical control of neural ensemble activity is crucial for understanding brain function and disease, yet no technology can achieve optogenetic control of very large numbers of neurons at an extremely fast rate over a large volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of optical control in neuroscience research, representing established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "83c30c39-4a27-4b65-bcb5-8a2ae4c07878",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C2",
+      "claim": "No existing technology can achieve optogenetic control of very large numbers of neurons at an extremely fast rate over a large volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical control of neural ensemble activity is crucial for understanding brain function and disease, yet no technology can achieve optogenetic control of very large numbers of neurons at an extremely fast rate over a large volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in existing technology, based on the authors' assessment of the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "e32f6d61-09b5-44d8-923b-272abeb43a28",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C3",
+      "claim": "State-of-the-art multiphoton holographic optogenetics requires high-power illumination that only addresses relatively small populations of neurons in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "State-of-the-art multiphoton holographic optogenetics requires high-power illumination that only addresses relatively small populations of neurons in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of existing multiphoton holographic optogenetics technology based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "cfd20d69-72f6-4845-bcd8-a14c4fe8aefd",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C4",
+      "claim": "One-photon holographic techniques can stimulate more neurons with two to three orders lower power than multiphoton techniques, but with limited resolution or addressable volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, one-photon holographic techniques can stimulate more neurons with two to three orders lower power, but with limited resolution or addressable volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares one-photon and multiphoton techniques based on established knowledge of their characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "539c09ad-1b50-42b5-b6f5-a6f89bc8ac84",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C5",
+      "claim": "Two-photon holographic optogenetic systems are extremely expensive and sophisticated, which has precluded their broader adoption in the neuroscience community.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most problematically, two-photon holographic optogenetic systems are extremely expensive and sophisticated which has precluded their broader adoption in the neuroscience community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of the field and the barriers to adoption of two-photon systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "35426905-8b80-439f-970a-634fa89cda96",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C6",
+      "claim": "3D-MAP is a new one-photon light sculpting technique that modulates light dynamically in both the spatial and angular domain at multi-kHz rates.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this technical gap, we introduce a new one-photon light sculpting technique, three-dimensional multi-site random access photostimulation (3D-MAP), that overcomes these limitations by modulating light dynamically, both in the spatial and in the angular domain at multi-kHz rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the novel technique introduced in this manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "daf428c2-cbb2-423c-8493-b7ff64b2e7c3",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C7",
+      "claim": "3D-MAP enables simultaneous photostimulation and imaging of dozens of user-selected neurons in the intact mouse brain in vivo with high spatio-temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We use 3D-MAP to interrogate neural circuits in 3D and demonstrate simultaneous photostimulation and imaging of dozens of user-selected neurons in the intact mouse brain in vivo with high spatio-temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes experimental results demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b86982c6-aa75-42a3-ad37-47025966a79b",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C8",
+      "claim": "3D-MAP can be broadly adopted for high-throughput all-optical interrogation of brain circuits owing to its powerful combination of scale, speed, simplicity, and cost.",
+      "claim_type": "EXPLICIT",
+      "source": "3D-MAP can be broadly adopted for high-throughput all-optical interrogation of brain circuits owing to its powerful combination of scale, speed, simplicity, and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking claim about the potential adoption of the technique based on its demonstrated characteristics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "6ec1a9d8-6443-4a42-84e2-2475786f47df",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C9",
+      "claim": "Optogenetics enables rapid and reversible control of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetics enables rapid and reversible control of neural activity (Deisseroth, 2011; Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing optogenetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "9823e3c7-9fe4-48a2-b489-ffd117d73854",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C10",
+      "claim": "Two-photon photostimulation has the advantages of high spatial resolution for precise neural activity control and relative immunity to tissue light scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon photostimulation has the advantages of high spatial resolution for precise neural activity control and relative immunity to tissue light scattering, enabling stimulation of deep brain circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes established advantages of two-photon photostimulation based on knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b587830c-da78-4026-878c-1f0d5ae8381f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C11",
+      "claim": "Two-photon holographic optogenetic photostimulation can only stimulate relatively small ensembles of neurons at a time, limited by the very high-power pulsed illumination required to achieve non-linear multiphoton absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "However, two-photon holographic optogenetic photostimulation can only stimulate relatively small ensembles of neurons at a time, limited by the very high-power pulsed illumination required to achieve non-linear multiphoton absorption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a limitation of two-photon holographic optogenetics based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "a5e60252-531b-4811-ab68-ab6272f500e9",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C12",
+      "claim": "High photon density heats brain tissue and can disturb brain activity and cause thermal damage.",
+      "claim_type": "EXPLICIT",
+      "source": "High photon density heats brain tissue, and can disturb brain activity and cause thermal damage (Mardinly et al., 2018; Podgorski and Ranganathan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work on the effects of high photon density.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "0628b9e4-638c-4b2b-a562-a614669893bf",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C13",
+      "claim": "The accessible volume for holographic two-photon photostimulation is limited by the coherence length of the laser being used.",
+      "claim_type": "EXPLICIT",
+      "source": "The accessible volume for holographic two-photon photostimulation is also limited by the coherence length of laser being used, since holographic diffraction of femtosecond pulses to a large angle introduces severe pulse dispersion ('chirp'), substantially reducing pulse peak power (Sun et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work on pulse dispersion in holographic two-photon photostimulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "7b8d3e2c-3e0e-4e15-9784-f6f38fbcb167",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C14",
+      "claim": "Multiphoton optogenetics has only been adopted by a small handful of groups, typically with much prior optical expertise, despite more than a decade since their introduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, despite more than a decade since their introduction, multiphoton optogenetics has only been adopted by a small handful of groups, typically with much prior optical expertise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observational claim about the adoption of multiphoton optogenetics in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "12e3ed4f-53c1-4c2b-9f40-cddbde621f9c",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C15",
+      "claim": "One-photon photostimulation systems require two to three orders of magnitude less laser power to activate neurons compared to two-photon systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, one-photon photostimulation systems require two to three orders of magnitude less laser power to activate neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares power requirements between one-photon and two-photon systems based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "9c00e466-a5f5-45dd-8106-a6526baf8169",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C16",
+      "claim": "One-photon photostimulation systems are much simpler to implement with far less expensive hardware than two-photon systems.",
+      "claim_type": "EXPLICIT",
+      "source": "They are much simpler to implement with far less expensive hardware, and they can still achieve high-resolution photostimulation under limited light scattering conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the complexity and cost of one-photon versus two-photon systems based on knowledge of the technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "4fd27212-86d9-46e6-9118-ba7bc834cf4a",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C17",
+      "claim": "Scanning-based one-photon photostimulation stimulates neurons sequentially by rapidly scanning a single focus across small neural clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The first approach, scanning-based one-photon photostimulation, stimulates neurons sequentially by rapidly scanning a single focus across small neural clusters with scanning mirrors (Petreanu et al., 2009) or acousto-optic deflectors (AODs) (Losavio et al., 2010; Wang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes an existing approach to one-photon photostimulation, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "5a8c4787-e037-4da5-906a-ff8bbe83f7cc",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C18",
+      "claim": "Scanning-based one-photon photostimulation cannot photostimulate distributed ensembles simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "This method cannot photostimulate distributed ensembles simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of scanning-based approaches based on their sequential nature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "751471c8-b72e-4104-80f3-4b51c92aa912",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C19",
+      "claim": "DMD-based widefield illumination has a large field-of-view and moderate lateral resolution but only modulates light in 2D.",
+      "claim_type": "EXPLICIT",
+      "source": "This widefield illumination scheme has a large field-of-view (FOV) and moderate lateral resolution but only modulates light in 2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes characteristics of DMD-based widefield illumination based on knowledge of the technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "170ad622-ac3f-467f-a7f6-fc75acfdc65c",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C20",
+      "claim": "DMD-based widefield illumination has no axial sectioning ability and unwanted photostimulation may occur both above and below the focal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no axial sectioning ability and unwanted photostimulation may occur both above and below the focal plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of 2D widefield illumination based on knowledge of the technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "fb69096d-4fe5-47cc-8d51-1b484056449a",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C21",
+      "claim": "One-photon CGH generates 3D distributed foci by phase modulation of coherent light in Fourier space using a spatial light modulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The third approach, computer generated holography (CGH), generates 3D distributed foci by phase modulation of coherent light in Fourier space using a spatial light modulator (SLM) (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the CGH approach with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "acc6c88e-7557-4a51-bcc6-ba1bbc1fa782",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C22",
+      "claim": "The throughput of CGH is fundamentally limited by the number of degrees-of-freedom, which is determined by the number of pixels and the bit depth of the SLM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the throughput of CGH that determines the number of accessible voxels is fundamentally limited by the number of degrees-of-freedom (DoF), which is determined by the number of pixels and the bit depth of the SLM, regardless of magnification and numerical aperture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental limitation of CGH based on the physics of the approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "e9b9e143-21df-44f2-a24f-43a66ce502b7",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C23",
+      "claim": "The refresh rate of SLMs (tens to hundreds Hz) limits the speed of CGH.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the refresh rate (tens to hundreds Hz) of SLMs limits the speed of CGH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of CGH based on the hardware characteristics of SLMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "2a4b1616-3b45-4c02-8d23-f07f662ac972",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C24",
+      "claim": "CGH requires computing a 2D phase mask at the Fourier plane for a 3D hologram pattern, which is an ill-posed problem that requires iterative optimization with computation time on the order of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, CGH requires computing a 2D phase mask at the Fourier plane for a 3D hologram pattern, which is an ill-posed problem that requires iterative optimization, with computation time on the order of minutes (Zhang et al., 2017; Gerchberg, 1972; Leseberg, 1992; Xue et al., 2019) when shaping light across multiple z-planes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational limitation of CGH, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "823ba566-2498-4dad-bb79-f12cc8cdcf7b",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C25",
+      "claim": "One-photon CGH holograms composed of many illumination spots will suffer spatial cross-talk as out-of-focus light from each focused spot interacts, accidentally stimulating non-targeted neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth drawback of one-photon CGH is that holograms composed of many illumination spots will suffer spatial cross-talk as out-of-focus light from each focused spot interacts, accidentally stimulating non-targeted neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of one-photon CGH based on the physics of holographic illumination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "d67b5a3d-bbdb-4383-ab42-01e509c3ac88",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C28",
+      "claim": "The total number of degrees of freedom in 3D-MAP is determined by the product of the number of angles of the scanning mirror and the number of pixels of the DMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of DoF is hence determined by the product of the number of angles of the scanning mirror and the number of pixels of the DMD (as opposed to the sum), resulting in a much larger DoF than existing one-photon optogenetic stimulation techniques (Lutz et al., 2008; Anselmi et al., 2011; Szabo et al., 2014; Reutsky-Gefen et al., 2013; Dhawale et al., 2010; Leifer et al., 2011; Adam et al., 2019; Werley et al., 2017; Sakai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of 3D-MAP in terms of degrees of freedom, with citations to prior techniques.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "25030676-7747-4789-b8ce-89b8304be482",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C29",
+      "claim": "3D-MAP achieves both high spatial resolution and a large accessible volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, 3D-MAP achieves both high spatial resolution and a large accessible volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the capabilities of 3D-MAP based on its design principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "93208d5e-9cc8-4fbd-8cdf-08211e247fad",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C30",
+      "claim": "3D-MAP is able to reduce spatial cross-talk by prioritizing illumination angles that minimize the stimulation of non-targeted areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to one-photon CGH, 3D-MAP is able to reduce spatial cross-talk by prioritizing illumination angles that minimize the stimulation of non-targeted areas due to its high DoF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of 3D-MAP over CGH based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "72cacff6-c781-4d4b-a680-c3af41684e51",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C31",
+      "claim": "3D-MAP can pattern the entire addressable volume at multi-kHz rate, which exceeds the bandwidth of most neural circuits and is one order of magnitude faster than 3D CGH.",
+      "claim_type": "EXPLICIT",
+      "source": "Thanks to the use of a DMD instead of an SLM, we can pattern the entire addressable volume at multi-kHz rate (the volumetric pattern refresh rate), which exceeds the bandwidth of most neural circuits and is one order of magnitude faster than 3D CGH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a speed advantage of 3D-MAP based on the use of a DMD.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "11728779-f021-4066-8716-d223e72c8d18",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C33",
+      "claim": "In 3D-MAP, the DMD and scanning mirrors are placed at conjugate image planes and time-synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "Both devices are placed at conjugate image planes and time-synchronized (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key aspect of the 3D-MAP setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "e295b24c-2dac-4177-b3c8-0c885da75a57",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C34",
+      "claim": "To create a focused spot at an off-focus plane in 3D-MAP, a small aperture on the DMD rotates in a circle as the scanning mirrors sweep through a cone of projection angles.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a focused spot at an off-focus plane, a small aperture on the DMD rotates in a circle as the scanning mirrors sweep through a cone of projection angles (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism for creating off-focus spots in 3D-MAP, illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "c02f8fd4-cb03-41b4-82cb-4d15f4a59524",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C35",
+      "claim": "In 3D-MAP, the amount of light on any given target is quadratically proportional to the radius of the aperture.",
+      "claim_type": "EXPLICIT",
+      "source": "The amount of light on any given target is quadratically proportional to the radius of the aperture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a relationship between aperture size and light intensity in 3D-MAP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "f7a02114-455e-4aa3-913d-450967dedf04",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C36",
+      "claim": "In 3D-MAP experiments, 10 illumination angles are used for each 3D target.",
+      "claim_type": "EXPLICIT",
+      "source": "In all our experiments, we use 10 illumination angles for each 3D target; additional illumination angles only introduce minor improvements (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental parameter choice, with data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "5f68e2e1-ee11-426d-a1d1-386449983e68",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C37",
+      "claim": "The maximum refresh rate of the DMD is 13 kHz, and each 3D volumetric pattern is generated by 10 masks on the DMD, so the maximum volumetric pattern rate is 1.3 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum refresh rate of the DMD is 13 kHz, and each 3D volumetric pattern is generated by 10 masks on the DMD, so the maximum volumetric pattern rate is 1.3 kHz, which is more than an order of magnitude faster than conventional CGH with commercial SLMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the speed capabilities of 3D-MAP based on hardware specifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "2bf7f508-6f03-4cb7-ac71-c82c80999f85",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C38",
+      "claim": "The DMD masks for 3D-MAP are based on ray tracing and can be calculated much faster than phase holograms in CGH.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the DMD masks for 3D-MAP are based on ray tracing and can be calculated much faster than phase holograms in CGH (Zhang et al., 2017; Gerchberg, 1972; Leseberg, 1992; Xue et al., 2019), enabling real-time or closed-loop applications such as mapping neural circuits (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational advantage of 3D-MAP, with citations to CGH computation methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "1b2138d4-1879-4333-8480-5cae6a718055",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C39",
+      "claim": "The 3D optical PSF of 3D-MAP indicates a spatial resolution of 5 \u00d7 5 \u00d7 18 \u03bcm\u00b3 with a 473 nm excitation wavelength.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-width-half-maximums (FWHMs) of the resulting 3D optical PSF indicate a spatial resolution of 5 \u00d7 5 \u00d7 18 \u03bcm3 with a 473 nm excitation wavelength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the optical resolution of 3D-MAP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "16917212-4aeb-4441-8aca-7e697b4a6840",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C40",
+      "claim": "3D-MAP can simultaneously generate 25 foci at custom (x, y, z) locations in a 744 \u00d7 744 \u00d7 400 \u03bcm\u00b3 volume.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrated the ability to simultaneously generate 25 foci at custom (x, y, z) locations in a 744 \u00d7 744 \u00d7 400 \u03bcm3 volume (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the multi-site capability of 3D-MAP, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "8a184870-0a6c-4730-a6d9-a738f640a4ef",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C41",
+      "claim": "The foci on the edge of the accessible volume are slightly larger than the foci in the center generated by the same size aperture (63% larger along the x-axis and 38% larger along the z-axis on average for foci that are 300 \u00b5m away from the center).",
+      "claim_type": "EXPLICIT",
+      "source": "The foci on the edge of the accessible volume are slightly larger than the foci in the center generated by the same size aperture (63% larger along the x-axis and 38% larger along the z-axis on average for foci that are 300 \u00b5m away from the center, Figure 2\u2014figure supplement 1C-J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a spatial variation in resolution across the field of view, with data in Figure 2\u2014figure supplement 1C-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "92558290-f971-490a-8eb8-e861edd1ab5e",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C42",
+      "claim": "Without the brain slice, the size of the focus was 11.7 \u00d7 11.7 \u00d7 42 \u03bcm\u00b3 (473 nm blue) and 10.4 \u00d7 10.4 \u00d7 50.7 \u03bcm\u00b3 (635 nm red).",
+      "claim_type": "EXPLICIT",
+      "source": "Without the brain slice, the size of the focus was 11.7 \u00d7 11.7 \u00d7 42 \u03bcm3 (473 nm blue) and 10.4 \u00d7 10.4 \u00d7 50.7 \u03bcm3 (635 nm red).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of focus size without scattering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "2655cc1e-88d1-4d30-a552-d2fc93a13c55",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C43",
+      "claim": "When generating the focus through 50, 100, and 150 \u03bcm thick brain slices, the size of the focus spot with blue light increased by 8%, 75%, and 269%, and the size of the focus spot with red light increased by 67%, 107%, and 114%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When generating the focus through 50, 100, and 150 \u03bcm thick brain slices, the size of the focus spot with blue light increased by 8%, 75%, and 269%, and the size of the focus spot with red light increased by 67%, 107%, and 114%, respectively (averaged values measured along the x-axis and the z-axis).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the effect of tissue scattering on focus size for different wavelengths and tissue thicknesses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "6cc6454f-31dc-4513-abb6-0f094cf7f324",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C44",
+      "claim": "The PPSF measurements show that 3D-MAP provides high-resolution photostimulation in vitro (lateral FWHM, 29 \u00b1 0.8 \u03bcm; axial FWHM, 44 \u00b1 1.6 \u03bcm, 9 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "The PPSF measurements show that 3D-MAP provides high-resolution photostimulation in vitro (lateral FWHM, 29 \u00b1 0.8 \u03bcm; axial FWHM, 44 \u00b1 1.6 \u03bcm, 9 cells, Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of physiological spatial resolution in brain slices, shown in Figure 3A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "216d842b-5839-493b-afc2-6211db7b46a6",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C45",
+      "claim": "The spatial specificity of 3D-MAP is only approximately two-fold worse when compared to previous results using multiphoton optogenetics in comparable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we found that the spatial specificity of 3D-MAP is only approximately two-fold worse when compared to our previous results using multiphoton optogenetics in comparable conditions (P\u00e9gard et al., 2017; Mardinly et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the spatial specificity of 3D-MAP to prior multiphoton work, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "61780836-fa74-45b8-ad63-615dd60d34c6",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C46",
+      "claim": "3D-MAP evoked spiking resolution in brain slices is 16 \u00b1 2.4 \u03bcm laterally and 44 \u00b1 8.9 \u03bcm axially (n = 5 neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental results show that 3D-MAP enables high spatial specificity under all these conditions (Figure 3E\u2013G shows in vitro results [5 cells], with lateral FWHM, 16 \u00b1 2.4 \u03bcm; and axial FWHM, 44 \u00b1 8.9 \u03bcm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of spiking resolution in brain slices, shown in Figure 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "3066b696-12e3-406e-8cc2-f4979d6bf797",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C47",
+      "claim": "3D-MAP evoked spiking resolution measured in vivo is 19 \u00b1 3.7 \u03bcm laterally and 45 \u00b1 6.1 \u03bcm axially (n = 8 neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3H\u2013J shows in vivo results (8 cells), with lateral FWHM, 19 \u00b1 3.7 \u03bcm; and axial FWHM, 45 \u00b1 6.1 \u03bcm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of spiking resolution in vivo, shown in Figure 3H-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "fb394d4b-afdd-4ab8-9f8f-88dac84d8b74",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C48",
+      "claim": "3D-MAP operates at low stimulation powers far below photodamage thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to high spatio-temporal resolution and fast computational speed, 3D-MAP operates at low stimulation powers far below photodamage thresholds and is hence easily scalable to address large neural ensembles in distributed volumes of brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a safety advantage of 3D-MAP based on its low power requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "f1912d98-fa20-4abb-bcfb-f8ec3c657ab8",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C49",
+      "claim": "Most connectivity maps exhibited spatial clusters when mapping synaptic input in space with 3D-MAP.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated excitatory postsynaptic currents (EPSCs) by sequential photostimulation of the entire volume and observed that most connectivity maps exhibited spatial clusters (Figure 4D\u2013E) as typically observed when mapping synaptic input in space (Naka et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from connectivity mapping experiments, with a citation to prior work showing similar results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "21b788f3-508d-4cc3-9503-ce3ecd887dec",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C50",
+      "claim": "The size of each cluster in connectivity maps is about 30 \u00b5m, which reaches the limit of spatial resolution measured in Figure 3A\u2013B.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of each cluster is about 30 \u00b5m, which reaches the limit of spatial resolution measured in Figure 3A\u2013B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relates the observed cluster size to the measured spatial resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b6ca891f-b2aa-410b-be30-6f0eac1e92d5",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C51",
+      "claim": "Multi-site stimulation generates greater net input compared to the linear sum of individual responses by single stimulation (p = 0.0488 for 2\u20135 sites stimulation, two-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the photocurrents measured by multi-site simultaneous stimulation to the linear sum of individual responses by single stimulation (Figure 5D) and observed the multi-site stimulation generates greater net input (Figure 5E, p = 0.0488 for 2\u20135 sites stimulation, two-way analysis of variance [ANOVA)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of multi-site versus single-site stimulation responses, shown in Figure 5D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "f48c31c2-a930-4b6d-949b-e45b35471668",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C52",
+      "claim": "Multi-site simultaneous stimulation engages the activity of spatially distributed ensembles of neurons, which may facilitate polysynaptic network activity and engages network level properties of the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "First, multi-site stimulation engages the activity of spatially distributed ensembles of neurons (rather than single neurons or small local clusters), which may facilitate polysynaptic network activity and engages network level properties of the circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the advantages of multi-site stimulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "6ba1abf6-c051-4f63-87b0-19520fceccf8",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C54",
+      "claim": "The co-expression level of stCoChR-p2A-H2B-GFP and jRCaMP1a is about 50% (sample size: 114 neurons expressing CoChR, 99 neurons expressing RcaMP1a, 54 neurons expressing both).",
+      "claim_type": "EXPLICIT",
+      "source": "The co-expression level is about 50% (sample size: 114 neurons expressing CoChR, 99 neurons expressing RcaMP1a, 54 neurons expressing both).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of co-expression levels in the all-optical experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "bce14cab-4d66-4232-bdf2-2d3946080823",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C55",
+      "claim": "TTX completely blocked the light-induced calcium transients, demonstrating that they are due to calcium influx following light-evoked spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, TTX completely blocked the light-induced calcium transients demonstrating that they are due to calcium influx following light-evoked spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating that observed calcium signals are due to neural activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "30767056-bbb5-4318-9503-86877a5b0fa2",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C56",
+      "claim": "All-optical PPSF measurements across 10 neurons indicate a lateral resolution of 49 \u00b1 21 \u00b5m and an axial resolution of 53 \u00b1 28 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged measurements of all-optical PPSF across 10 neurons indicate a lateral resolution of 49 \u00b1 21 \u00b5m and an axial resolution of 53 \u00b1 28 \u00b5m (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of all-optical spatial resolution in vivo, shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "4102d718-d6da-4be6-8348-7178ab1a997a",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C57",
+      "claim": "3D-MAP photostimulated and imaged 80 user-selected L2/3 neurons in vivo simultaneously with a total power of 480 \u00b5W out of the objective lens.",
+      "claim_type": "EXPLICIT",
+      "source": "We photostimulated and imaged 80 user-selected L2/3 neurons in vivo simultaneously with a total power of 480 \u00b5W out of the objective lens (Figure 7F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates high-throughput all-optical interrogation, shown in Figure 7F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b9f47917-3f71-42e7-8455-c88cba66ef1f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C58",
+      "claim": "The average separation between neurons in the 80-neuron experiment is about 49 \u00b1 26 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The stimulation pattern is shown in Figure 7\u2014figure supplement 1D and the average separation between neurons is about 49 \u00b1 26 \u00b5m (Figure 7\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement of neuron spacing in the experiment, shown in Figure 7\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "98b5d0cd-172f-40d2-aae0-8a7247f9d03e",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C59",
+      "claim": "Neurons exhibit strong calcium activity primarily when they are stimulated, and minimal calcium activity when the adjacent neurons are stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that neurons exhibit strong calcium activity primarily when they are stimulated, and minimal calcium activity when the adjacent neurons are stimulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the ensemble stimulation experiments demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "bee432f5-f84d-4fe6-b30b-34ad6fddb431",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C60",
+      "claim": "Under relatively sparse opsin expression conditions, 3D-MAP can be used to photo-activate user-defined spatially intermixed ensembles in the superficial layers of the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, under relatively sparse opsin expression conditions, 3D-MAP can be used to photo-activate user-defined spatially intermixed ensembles in the superficial layers of the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the capabilities of 3D-MAP based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "de731c0b-dc53-4523-a4d9-8cdd038a721a",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C61",
+      "claim": "3D-MAP is the first system to achieve 3D multi-site illumination with previously unattainable DoF by simultaneously sculpting the light field in both intensity and angular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "3D-MAP is the first system to achieve 3D multi-site illumination with previously unattainable DoF by simultaneously sculpting the light field in both intensity and angular domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of 3D-MAP compared to prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "22f09f04-f0e5-4bb1-9b87-ee4924f8b89f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C62",
+      "claim": "One can build a 3D-MAP system for a small fraction of the cost of two-photon holographic optogenetic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most importantly for the broader neuroscience community, one can build a 3D-MAP system for a small fraction of the cost of two-photon holographic optogenetic systems (see Appendix 1\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the cost advantage of 3D-MAP, with reference to a cost comparison table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "1ef52faf-7b41-474a-ba3f-98137928d62c",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C63",
+      "claim": "3D-MAP is the first demonstration that uses 4D light field patterning for in vivo optogenetic photostimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "3D-MAP is the first demonstration that uses 4D light field patterning for in vivo optogenetic photostimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of 3D-MAP in the context of in vivo optogenetics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "4004e8fb-a441-45b5-9cd3-05bcb4ac0224",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C65",
+      "claim": "3D-MAP achieves orders of magnitude more DoF than previous systems without extra hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, 3D-MAP achieves orders of magnitude more DoF without extra hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantage of 3D-MAP in terms of degrees of freedom.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "d798d58b-326f-4fb5-921b-17af2ca1141f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C67",
+      "claim": "The maximum defocus range of 3D-MAP is 720 \u00b5m whereas the MLA-based method only achieves 40 \u00b5m range in microscopy applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the maximum defocus range of 3D-MAP is 720 \u00b5m (Figure 2\u2014figure supplement 1A) whereas the MLA-based method only achieves 40 \u00b5m range in microscopy applications.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares the axial range of 3D-MAP to a microlens array-based approach, with data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b03f00c8-367e-40c8-b59c-c624a3d7c9e7",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C68",
+      "claim": "Both one-photon and two-photon multi-site photostimulation are subject to spatial cross-talk, as out-of-focus light from one target may accidentally stimulate neurons that are at other focal planes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both one-photon and two-photon multi-site photostimulation are subject to spatial cross-talk, as out-of-focus light from one target may accidentally stimulate neurons that are at other focal planes, especially when the density of foci is high or when out-of-focus neurons are more photosensitive than the desired targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a general limitation of multi-site photostimulation approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "8601e809-8268-4f8a-87bf-4a8529ac8dac",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C69",
+      "claim": "The cross-talk in the all-optical experiments is minimal under conditions of relatively sparse opsin expression as obtained with conventional in utero electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7, we demonstrated that the cross-talk in our experiment is minimal under conditions of relatively sparse opsin expression as obtained with conventional in utero electroporation (Adesnik and Scanziani, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the minimal cross-talk observed in the experiments, with a citation to the expression method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "2a8ceb28-8c16-40b5-9a9c-5c7231aeccfb",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C70",
+      "claim": "When the separation between two adjacent neurons is closer than the all-optical PPSF, off-target effects are likely, even under sparse expression conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the separation between two adjacent neurons is closer than the all-optical PPSF, off-target effects are likely, even under sparse expression conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of 3D-MAP when neurons are too close together.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "f847a907-2938-45a4-be38-d3d7c45e3c45",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C71",
+      "claim": "3D-MAP could potentially leverage its multi-kHz patterning speed to exploit the temporal domain by multiplexing patterns and targeting smaller subsets of neurons at a time in order to increase pattern sparsity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in addition to expression sparsity, we can also control the stimulation pattern's sparsity to mitigate spatial cross-talk. When the desired density of foci is high and cross-talk is expected, 3D-MAP could potentially leverage its multi-kHz patterning speed to exploit the temporal domain by multiplexing patterns and targeting smaller subsets of neurons at a time in order to increase pattern sparsity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about a potential strategy to reduce cross-talk.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "801727f4-5a87-4b19-af84-810da3cea4d7",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C72",
+      "claim": "Two-photon photostimulation techniques typically restrict the instantaneous power under the objective below 4 W to avoid photodamage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two-photon photostimulation techniques typically restrict the instantaneous power under the objective below 4 W to avoid photodamage (Sridharan, 2021; Mardinly et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a power limitation of two-photon techniques, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "c49c4878-7691-424c-a2ce-16160eb4ef8b",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C73",
+      "claim": "At full power, two-photon photostimulation techniques can simultaneously activate tens to over a hundred neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "At full power, two-photon photostimulation techniques can simultaneously activate tens to over a hundred neurons (Sridharan, 2021; Marshel et al., 2019; Mardinly et al., 2018; Dalgleish et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capacity of two-photon techniques, with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "919ff41e-9cd0-45c5-9d16-cc9bee3d0f50",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C74",
+      "claim": "3D-MAP is able to photostimulate dozens of neurons simultaneously with only 480 \u00b5W out of the objective.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 3D-MAP is able to photostimulate dozens of neurons simultaneously with only 480 \u00b5W out of the objective (Figure 7F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares the power requirements of 3D-MAP to two-photon techniques, with data in Figure 7F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "5552f58c-e878-489f-bb89-7180814fa842",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C75",
+      "claim": "The effective resolution of 3D-MAP in brain tissue is limited by scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "Like any other one-photon photostimulation technique, the effective resolution of 3D-MAP in brain tissue is limited by scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a fundamental limitation of one-photon techniques including 3D-MAP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "35a6ed3f-b9ca-45da-9a4a-22e24293e3f7",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C76",
+      "claim": "Illumination with red shifted sources can reduce Rayleigh scattering and mitigate resolution loss through brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show in Figures 2 and 6, illumination with red shifted sources can reduce Rayleigh scattering and mitigate resolution loss through brain tissue, but the accessible depth remains fundamentally limited to the first few hundreds of microns below the surface of the mouse brain and the scattering effect is more severe the deeper the stimulation is.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a strategy to reduce scattering effects, with reference to data in Figures 2 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "2f670f6d-97c9-4ade-9e82-ec5bc78b1201",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "claim_id": "C77",
+      "claim": "To photostimulate neurons deeper inside the mammalian brain with 3D-MAP, the cortex can be surgically removed or implemented with a miniaturized microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "To photostimulate neurons deeper inside the mammalian brain with 3D-MAP, the cortex can be surgically removed (Adam et al., 2019; Dombeck et al., 2010; Marshel et al., 2012) or implemented with a miniaturized microscope (Szabo et al., 2014; Stamatakis et al., 2018) as it is routinely performed to image deep structures such as the hippocampus or the thalamus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes potential strategies for accessing deeper brain regions, with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b00690b4-16c3-4d43-8799-b2cac288910f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify a technological gap in optogenetics: existing multiphoton techniques require high power and address small neuron populations, while one-photon techniques have limited resolution or volume. Two-photon systems are expensive and have limited adoption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the motivation for the work by characterizing limitations of existing optogenetic technologies. These are well-supported by citations and represent accurate assessments of the field based on established knowledge (C3, C4, C10, C11) and observational evidence (C5, C14).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "682f4486-0bc4-49e9-9543-d6f30b670951",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "3D-MAP is a novel one-photon light sculpting technique that modulates light in both spatial and angular domains at multi-kHz rates, achieving high degrees of freedom through the product of DMD pixels and scanning mirror angles, enabling high spatial resolution over large volumes with fast computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28-C38 describe the core technical innovation of 3D-MAP. The design principles are clearly explained with supporting data (C36, C37) and theoretical justification (C28, C29). The synchronization mechanism (C33, C34) and computational advantages (C38) are well-documented. The multi-kHz speed claim (C31, C37) is supported by hardware specifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "23770522-5454-4440-988c-80610ddb5cc7",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "3D-MAP achieves optical resolution of 5\u00d75\u00d718 \u03bcm\u00b3 (473 nm) in the center of the field of view and can simultaneously generate 25 foci in a 744\u00d7744\u00d7400 \u03bcm\u00b3 volume. Resolution degrades with distance from center and with tissue scattering, with red light showing better performance through tissue than blue light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 present optical characterization data with specific measurements. The optical PSF measurements (C39) and multi-site capability (C40) are directly demonstrated. The spatial variation in resolution (C41) and scattering effects (C42, C43) are quantified with appropriate controls. All measurements are supported by figures and represent direct experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "6e7eb23e-c9b9-4b96-8eda-f784c0229330",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "3D-MAP provides high-resolution photostimulation with physiological spatial resolution of 29\u00b10.8 \u03bcm laterally and 44\u00b11.6 \u03bcm axially in vitro, and spiking resolution of 16\u00b12.4 \u03bcm laterally and 44\u00b18.9 \u03bcm axially in brain slices, and 19\u00b13.7 \u03bcm laterally and 45\u00b16.1 \u03bcm axially in vivo. This is approximately two-fold worse than multiphoton optogenetics under comparable conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 present physiological characterization with appropriate sample sizes (9 cells for PPSF, 5 cells in vitro, 8 cells in vivo). The comparison to multiphoton techniques (C45) provides important context. The measurements are consistent across conditions and represent direct electrophysiological recordings with clear error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "004368a1-a89c-4eb6-9de4-2f62161f164f",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Connectivity mapping with 3D-MAP reveals spatial clusters of approximately 30 \u03bcm in size, consistent with the spatial resolution limit and typical observations when mapping synaptic input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 describe connectivity mapping results with appropriate citation to prior work (C49). The cluster size (C50) is consistent with the measured spatial resolution (C44), providing internal validation. The observation is supported by Figure 4D-E.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "10586d6c-2482-47c6-9c50-0e1f9dc3cb66",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multi-site simultaneous stimulation generates greater net synaptic input compared to the linear sum of individual responses (p=0.0488, two-way ANOVA), potentially due to engagement of polysynaptic network activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C51 presents a statistically significant result with appropriate statistical test and p-value. The data is shown in Figure 5D-E. However, C52 is speculative about the mechanism. The result is supported but the mechanistic interpretation remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "c8823273-35ad-4fba-befc-75d1de82d9df",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "All-optical 3D-MAP can simultaneously photostimulate and image 80 user-selected L2/3 neurons in vivo with 480 \u03bcW total power, achieving all-optical spatial resolution of 49\u00b121 \u03bcm laterally and 53\u00b128 \u03bcm axially. Under sparse expression conditions, neurons show strong calcium activity when stimulated and minimal activity when adjacent neurons are stimulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 demonstrate all-optical interrogation capabilities. The TTX control (C55) validates that calcium signals reflect neural activity. The all-optical PPSF measurements (C56) have appropriate sample size (n=10). The 80-neuron experiment (C57-C58) demonstrates scalability with low power. The specificity observation (C59) is supported by the data, though limited to sparse expression conditions (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "314083ae-4ffa-4e51-a18c-ecf740a130d3",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "3D-MAP is the first system to achieve 3D multi-site illumination with high degrees of freedom by simultaneously sculpting the 4D light field, achieving orders of magnitude more DoF than previous systems at a fraction of the cost of two-photon systems, with a maximum defocus range of 720 \u03bcm compared to 40 \u03bcm for microlens array-based methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63, C65 assert novelty and priority, which are supported by the technical distinctions explained in the manuscript. The cost advantage (C62) is referenced to a comparison table. The defocus range comparison (C67) is supported by data in Figure 2\u2014figure supplement 1A. These claims represent valid comparisons to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "c9616b55-0c34-40b7-8ece-479e6b2c9b4b",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both one-photon and two-photon multi-site photostimulation are subject to spatial cross-talk. Under sparse opsin expression conditions, 3D-MAP shows minimal cross-talk, but off-target effects are likely when neuron separation is closer than the all-optical PPSF. Temporal multiplexing could potentially mitigate cross-talk at high densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 accurately describe limitations and conditions under which 3D-MAP performs well. C68 is general knowledge, C69 is supported by experimental data (Figure 7), and C70 is a logical inference from the resolution measurements. C71 is speculative about future strategies but appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "d1c0ac73-8b1f-4132-bd33-83976b192f46",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Two-photon photostimulation techniques typically restrict power below 4 W and can activate tens to over a hundred neurons at full power, while 3D-MAP can photostimulate dozens of neurons simultaneously with only 480 \u03bcW.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 characterize two-photon techniques with appropriate citations. C74 presents experimental data from Figure 7F-G demonstrating the low power requirements of 3D-MAP. This represents a valid comparison showing the power efficiency advantage of the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "b566d0e9-bb5e-4498-bdcd-53f1b41f2838",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Like all one-photon techniques, 3D-MAP's effective resolution in brain tissue is limited by scattering. Red-shifted illumination can reduce scattering but accessible depth remains limited to the first few hundred microns. Deeper stimulation would require surgical removal of cortex or miniaturized microscopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 accurately describe fundamental limitations of one-photon techniques with supporting data in Figures 2 and 6. C77 suggests potential strategies with appropriate citations to prior work. These represent honest assessments of the technique's limitations and potential solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "f90f4259-91f6-4809-a4ab-5111a092c59a",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Existing one-photon photostimulation approaches have significant limitations: scanning-based methods cannot stimulate distributed ensembles simultaneously; DMD-based widefield illumination lacks axial sectioning; and CGH has limited throughput, slow refresh rates, computationally intensive pattern generation, and suffers from spatial cross-talk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C25 characterize limitations of existing one-photon approaches with appropriate citations. These represent accurate assessments of prior technologies based on established knowledge and cited literature, providing context for the advantages of 3D-MAP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "0fe3953c-746e-4398-9f18-54ccee5f76f3",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Optogenetics enables rapid and reversible neural control. Two-photon photostimulation offers high spatial resolution and immunity to scattering but can only stimulate small ensembles due to high power requirements that cause tissue heating and damage. One-photon systems require 100-1000\u00d7 less power and are simpler and cheaper to implement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 provide background on optogenetic technologies with appropriate citations. These represent accurate characterizations of the field based on established knowledge and cited literature, providing essential context for understanding the motivation and contribution of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "59ae684f-a87c-464a-b77f-11cc34eb25ae",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "3D-MAP operates at low stimulation powers far below photodamage thresholds and is easily scalable to address large neural ensembles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by the low power measurements throughout the manuscript (e.g., C57, C74) and the demonstration of multi-site stimulation. The scalability is demonstrated by the 80-neuron experiment. This represents a valid inference from the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    },
+    {
+      "id": "19093364-4fea-4d1a-8991-5fda3bb07608",
+      "content_id": "51ad074c-2c4d-4d63-af46-a7f21a8cf7db",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "3D-MAP can be broadly adopted for high-throughput all-optical interrogation of brain circuits owing to its powerful combination of scale, speed, simplicity, and cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C8 is a forward-looking prediction about adoption that cannot be fully evaluated from the current manuscript. While the technical advantages (scale, speed, simplicity, cost) are demonstrated, actual broad adoption depends on factors beyond the scope of this work. This represents speculation about future impact rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:56:39.412038Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "894875b4-8ada-4663-9ded-c183e897de2f",
+      "result_id": "b00690b4-16c3-4d43-8799-b2cac288910f"
+    },
+    {
+      "claim_id": "83c30c39-4a27-4b65-bcb5-8a2ae4c07878",
+      "result_id": "b00690b4-16c3-4d43-8799-b2cac288910f"
+    },
+    {
+      "claim_id": "e32f6d61-09b5-44d8-923b-272abeb43a28",
+      "result_id": "b00690b4-16c3-4d43-8799-b2cac288910f"
+    },
+    {
+      "claim_id": "cfd20d69-72f6-4845-bcd8-a14c4fe8aefd",
+      "result_id": "b00690b4-16c3-4d43-8799-b2cac288910f"
+    },
+    {
+      "claim_id": "539c09ad-1b50-42b5-b6f5-a6f89bc8ac84",
+      "result_id": "b00690b4-16c3-4d43-8799-b2cac288910f"
+    },
+    {
+      "claim_id": "35426905-8b80-439f-970a-634fa89cda96",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "daf428c2-cbb2-423c-8493-b7ff64b2e7c3",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "d67b5a3d-bbdb-4383-ab42-01e509c3ac88",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "25030676-7747-4789-b8ce-89b8304be482",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "93208d5e-9cc8-4fbd-8cdf-08211e247fad",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "72cacff6-c781-4d4b-a680-c3af41684e51",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "11728779-f021-4066-8716-d223e72c8d18",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "e295b24c-2dac-4177-b3c8-0c885da75a57",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "c02f8fd4-cb03-41b4-82cb-4d15f4a59524",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "f7a02114-455e-4aa3-913d-450967dedf04",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "5f68e2e1-ee11-426d-a1d1-386449983e68",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "2bf7f508-6f03-4cb7-ac71-c82c80999f85",
+      "result_id": "682f4486-0bc4-49e9-9543-d6f30b670951"
+    },
+    {
+      "claim_id": "1b2138d4-1879-4333-8480-5cae6a718055",
+      "result_id": "23770522-5454-4440-988c-80610ddb5cc7"
+    },
+    {
+      "claim_id": "16917212-4aeb-4441-8aca-7e697b4a6840",
+      "result_id": "23770522-5454-4440-988c-80610ddb5cc7"
+    },
+    {
+      "claim_id": "8a184870-0a6c-4730-a6d9-a738f640a4ef",
+      "result_id": "23770522-5454-4440-988c-80610ddb5cc7"
+    },
+    {
+      "claim_id": "92558290-f971-490a-8eb8-e861edd1ab5e",
+      "result_id": "23770522-5454-4440-988c-80610ddb5cc7"
+    },
+    {
+      "claim_id": "2655cc1e-88d1-4d30-a552-d2fc93a13c55",
+      "result_id": "23770522-5454-4440-988c-80610ddb5cc7"
+    },
+    {
+      "claim_id": "6cc6454f-31dc-4513-abb6-0f094cf7f324",
+      "result_id": "6e7eb23e-c9b9-4b96-8eda-f784c0229330"
+    },
+    {
+      "claim_id": "216d842b-5839-493b-afc2-6211db7b46a6",
+      "result_id": "6e7eb23e-c9b9-4b96-8eda-f784c0229330"
+    },
+    {
+      "claim_id": "61780836-fa74-45b8-ad63-615dd60d34c6",
+      "result_id": "6e7eb23e-c9b9-4b96-8eda-f784c0229330"
+    },
+    {
+      "claim_id": "3066b696-12e3-406e-8cc2-f4979d6bf797",
+      "result_id": "6e7eb23e-c9b9-4b96-8eda-f784c0229330"
+    },
+    {
+      "claim_id": "f1912d98-fa20-4abb-bcfb-f8ec3c657ab8",
+      "result_id": "004368a1-a89c-4eb6-9de4-2f62161f164f"
+    },
+    {
+      "claim_id": "21b788f3-508d-4cc3-9503-ce3ecd887dec",
+      "result_id": "004368a1-a89c-4eb6-9de4-2f62161f164f"
+    },
+    {
+      "claim_id": "b6ca891f-b2aa-410b-be30-6f0eac1e92d5",
+      "result_id": "10586d6c-2482-47c6-9c50-0e1f9dc3cb66"
+    },
+    {
+      "claim_id": "f48c31c2-a930-4b6d-949b-e45b35471668",
+      "result_id": "10586d6c-2482-47c6-9c50-0e1f9dc3cb66"
+    },
+    {
+      "claim_id": "6ba1abf6-c051-4f63-87b0-19520fceccf8",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "bce14cab-4d66-4232-bdf2-2d3946080823",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "30767056-bbb5-4318-9503-86877a5b0fa2",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "4102d718-d6da-4be6-8348-7178ab1a997a",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "b9f47917-3f71-42e7-8455-c88cba66ef1f",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "98b5d0cd-172f-40d2-aae0-8a7247f9d03e",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "bee432f5-f84d-4fe6-b30b-34ad6fddb431",
+      "result_id": "c8823273-35ad-4fba-befc-75d1de82d9df"
+    },
+    {
+      "claim_id": "de731c0b-dc53-4523-a4d9-8cdd038a721a",
+      "result_id": "314083ae-4ffa-4e51-a18c-ecf740a130d3"
+    },
+    {
+      "claim_id": "22f09f04-f0e5-4bb1-9b87-ee4924f8b89f",
+      "result_id": "314083ae-4ffa-4e51-a18c-ecf740a130d3"
+    },
+    {
+      "claim_id": "1ef52faf-7b41-474a-ba3f-98137928d62c",
+      "result_id": "314083ae-4ffa-4e51-a18c-ecf740a130d3"
+    },
+    {
+      "claim_id": "4004e8fb-a441-45b5-9cd3-05bcb4ac0224",
+      "result_id": "314083ae-4ffa-4e51-a18c-ecf740a130d3"
+    },
+    {
+      "claim_id": "d798d58b-326f-4fb5-921b-17af2ca1141f",
+      "result_id": "314083ae-4ffa-4e51-a18c-ecf740a130d3"
+    },
+    {
+      "claim_id": "b03f00c8-367e-40c8-b59c-c624a3d7c9e7",
+      "result_id": "c9616b55-0c34-40b7-8ece-479e6b2c9b4b"
+    },
+    {
+      "claim_id": "8601e809-8268-4f8a-87bf-4a8529ac8dac",
+      "result_id": "c9616b55-0c34-40b7-8ece-479e6b2c9b4b"
+    },
+    {
+      "claim_id": "2a8ceb28-8c16-40b5-9a9c-5c7231aeccfb",
+      "result_id": "c9616b55-0c34-40b7-8ece-479e6b2c9b4b"
+    },
+    {
+      "claim_id": "f847a907-2938-45a4-be38-d3d7c45e3c45",
+      "result_id": "c9616b55-0c34-40b7-8ece-479e6b2c9b4b"
+    },
+    {
+      "claim_id": "801727f4-5a87-4b19-af84-810da3cea4d7",
+      "result_id": "d1c0ac73-8b1f-4132-bd33-83976b192f46"
+    },
+    {
+      "claim_id": "c49c4878-7691-424c-a2ce-16160eb4ef8b",
+      "result_id": "d1c0ac73-8b1f-4132-bd33-83976b192f46"
+    },
+    {
+      "claim_id": "919ff41e-9cd0-45c5-9d16-cc9bee3d0f50",
+      "result_id": "d1c0ac73-8b1f-4132-bd33-83976b192f46"
+    },
+    {
+      "claim_id": "5552f58c-e878-489f-bb89-7180814fa842",
+      "result_id": "b566d0e9-bb5e-4498-bdcd-53f1b41f2838"
+    },
+    {
+      "claim_id": "35a6ed3f-b9ca-45da-9a4a-22e24293e3f7",
+      "result_id": "b566d0e9-bb5e-4498-bdcd-53f1b41f2838"
+    },
+    {
+      "claim_id": "2f670f6d-97c9-4ade-9e82-ec5bc78b1201",
+      "result_id": "b566d0e9-bb5e-4498-bdcd-53f1b41f2838"
+    },
+    {
+      "claim_id": "4fd27212-86d9-46e6-9118-ba7bc834cf4a",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "5a8c4787-e037-4da5-906a-ff8bbe83f7cc",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "751471c8-b72e-4104-80f3-4b51c92aa912",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "170ad622-ac3f-467f-a7f6-fc75acfdc65c",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "fb69096d-4fe5-47cc-8d51-1b484056449a",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "acc6c88e-7557-4a51-bcc6-ba1bbc1fa782",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "e9b9e143-21df-44f2-a24f-43a66ce502b7",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "2a4b1616-3b45-4c02-8d23-f07f662ac972",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "823ba566-2498-4dad-bb79-f12cc8cdcf7b",
+      "result_id": "f90f4259-91f6-4809-a4ab-5111a092c59a"
+    },
+    {
+      "claim_id": "6ec1a9d8-6443-4a42-84e2-2475786f47df",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "9823e3c7-9fe4-48a2-b489-ffd117d73854",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "b587830c-da78-4026-878c-1f0d5ae8381f",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "a5e60252-531b-4811-ab68-ab6272f500e9",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "0628b9e4-638c-4b2b-a562-a614669893bf",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "7b8d3e2c-3e0e-4e15-9784-f6f38fbcb167",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "12e3ed4f-53c1-4c2b-9f40-cddbde621f9c",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "9c00e466-a5f5-45dd-8106-a6526baf8169",
+      "result_id": "0fe3953c-746e-4398-9f18-54ccee5f76f3"
+    },
+    {
+      "claim_id": "fb394d4b-afdd-4ab8-9f8f-88dac84d8b74",
+      "result_id": "59ae684f-a87c-464a-b77f-11cc34eb25ae"
+    },
+    {
+      "claim_id": "b86982c6-aa75-42a3-ad37-47025966a79b",
+      "result_id": "19093364-4fea-4d1a-8991-5fda3bb07608"
+    }
+  ],
+  "comparisons": []
+}

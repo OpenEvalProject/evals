@@ -1,0 +1,1680 @@
+{
+  "submission": {
+    "id": "84ffdd55-b784-48f6-8679-324a0f15a006",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:18:55.273087Z",
+    "updated_at": "2025-12-03T13:18:55.273087Z"
+  },
+  "content": [
+    {
+      "id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "submission_id": "84ffdd55-b784-48f6-8679-324a0f15a006",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptional regulation of cyclophilin D by BMP/Smad signaling and its role in osteogenic differentiation\n\n## Authors\n\n- Rubens Sautchuk<sup>1</sup> ([ORCID: 0000-0002-0302-7562](https://orcid.org/0000-0002-0302-7562))\n- Brianna H Kalicharan<sup>1</sup>\n- Katherine Escalera-Rivera<sup>1</sup>\n- Jennifer H Jonason<sup>1</sup>\n- George A Porter<sup>3</sup>\n- Hani A Awad<sup>1</sup> ([ORCID: 0000-0003-2197-2610](https://orcid.org/0000-0003-2197-2610))\n- Roman A Eliseev<sup>1</sup> ([ORCID: 0000-0002-6783-7388](https://orcid.org/0000-0002-6783-7388)) \u2020\n\n### Affiliations\n\n1. Center for Musculoskeletal Research, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n2. Department of Pathology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n3. Department of Pediatrics, Division of Cardiology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n4. Department of Biomedical Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n5. Department of Pharmacology & Physiology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCyclophilin D (CypD) promotes opening of the mitochondrial permeability transition pore (MPTP) which plays a key role in both cell physiology and pathology. It is, therefore, beneficial for cells to tightly regulate CypD and MPTP but little is known about such regulation. We have reported before that CypD is downregulated and MPTP deactivated during differentiation in various tissues. Herein, we identify BMP/Smad signaling, a major driver of differentiation, as a transcriptional regulator of the CypD gene, Ppif. Using osteogenic induction of mesenchymal lineage cells as a BMP/Smad activation-dependent differentiation model, we show that CypD is in fact transcriptionally repressed during this process. The importance of such CypD downregulation is evidenced by the negative effect of CypD \u2018rescue\u2019 via gain-of-function on osteogenesis both in vitro and in a mouse model. In sum, we characterized BMP/Smad signaling as a regulator of CypD expression and elucidated the role of CypD downregulation during cell differentiation.\n\n## Introduction\n\nThe mitochondrial permeability transition pore (MPTP) is a non-selective high-conductance channel within the inner mitochondrial membrane (IMM). MPTP opening leads to the increased permeability of the IMM and entry of solutes up to 1.5 kDa of molecular mass, that is, mitochondrial permeability transition (Bernardi et al., 2015). Although the MPTP molecular identity remains debatable, the ATP synthase converges as a potential locus. The consequences of MPTP opening span from physiological events such as regulation of synthasome assembly, oxidative phosphorylation (OxPhos), membrane potential (\u0394\u03c8m), ROS-induced ROS release, Ca2+ homeostasis, and epigenetic regulation (Feissner et al., 2009; Bernardi and von Stockum, 2012; Beutner et al., 2017; Boyman et al., 2019) to pathophysiological processes associated with sustained pore opening, including mitochondrial dysfunction, mtDNA release, inflammation, and cell death. Such pathophysiological processes are observed in cancer, aging, injury, and degenerative diseases (Du and Yan, 2010; Giang et al., 2013; Alavian et al., 2014; Bernardi et al., 2015; Warne et al., 2016; Rottenberg and Hoek, 2017). Among some important physiological events under MPTP control is OxPhos since MPTP opening leads to IMM depolarization, proton motive force dissipation, and ATP production decrease. For differentiating cells switching from a glycolytic pathway to higher OxPhos activity, MPTP opening can be particularly detrimental by impairing lineage commitment, differentiation, and functioning of differentiated cells (Eliseev et al., 2007; Hom et al., 2011; Lingan et al., 2017). Currently, several MPTP opening effectors have been described, but the mitochondrial matrix protein cyclophilin D (CypD) remains the only genetically proven opener of the MPTP (Briston et al., 2019).\n\nEncoded by the nuclear gene PPIF, CypD is a chaperone protein \u2013 peptidyl-prolyl cis-trans isomerase F \u2013 thought to be involved in protein folding. However, very few reports demonstrate such an activity of CypD (Porter and Beutner, 2018). Regarded as the master regulator of MPTP, CypD is imported into mitochondria where it can actively bind to the mitochondrial ATP synthase, decreasing the threshold for pore opening and increasing opening probability. The exact molecular mechanism by which CypD regulates the MPTP and mitochondrial function remains unclear. A range of post-translation modifications, such as acetylation and phosphorylation, is known to exert regulatory properties on CypD activity, and consequently on MPTP opening (Guti\u00e9rrez-Aguilar and Baines, 2015; Porter and Beutner, 2018; Amanakis and Murphy, 2020). Additionally, it has been shown that CypD also functions as a scaffold protein, being able to cluster various structural and signaling molecules together to modify mitochondrial physiology and bioenergetic response (Eliseev et al., 2009; Porter and Beutner, 2018). Although several aspects affecting CypD physiological regulation and its interplay with mitochondrial activity have been elucidated, how the CypD gene is transcriptionally regulated has yet to be described.\n\nCypD expression and activity are cell-specific (Laker et al., 2016) and can be regulated during differentiation. As cells become more active and increase their oxygen consumption, higher ROS levels are produced partially due to an increase in the electron flow within the respiratory chain (Turrens, 1997; Barja, 1999; Dr\u00f6se and Brandt, 2012; Suski et al., 2018). Higher ROS levels due to OxPhos activation can lead to deleterious effects including opening of the MPTP and consequently blunting of mitochondrial function (Carraro and Bernardi, 2016). To inhibit MPTP opening, it is beneficial for differentiating cells moving toward a higher OxPhos usage, to downregulate CypD expression and/or activity to be better protected against oxidative stress and support OxPhos. Such an inhibition due to downregulation of CypD has been reported during neuronal and cardiomyocyte differentiation (Eliseev et al., 2007; Hom et al., 2011; Lingan et al., 2017). Conversely, induced pluripotent stem cell reprograming is accompanied by a metabolic shift from OxPhos to glycolysis and not surprisingly, by transient MPTP opening and CypD expression upregulation (Ying et al., 2018).\n\nThe bone morphogenic protein (BMP) signaling pathway is an important driver of cell differentiation and maturation. BMPs are shown to regulate early processes from embryogenesis and development to adult tissue homeostasis. BMPs are not bone exclusive, the ubiquitous expression of BMP underscores its importance for organogenesis and maintenance in several tissues, such as neurological, ophthalmic, cardiovascular, pulmonary, gastrointestinal, urinary, and musculoskeletal systems (Wang et al., 2014; Nickel and Mueller, 2019). Upon BMP receptor activation and trans-phosphorylation, receptor regulated Smads (R-Smads) such as Smad1/5/8 are recruited and phosphorylated. Phospho-Smad1/5/8 binds to Smad4 forming a heterodimeric complex which is subsequently translocated into the nucleus to activate or repress the expression of its target genes. Osteogenesis and osteoblast (OB) differentiation are controlled at least in part via BMP/Smad canonical signaling. During osteogenic differentiation, activation of the transcription factor Runx2 is mediated by the BMP/Smad signaling pathway initiating a cascade of downstream osteogenic marker genes expression (Bianco and Robey, 2015). Our lab and others have demonstrated that bone marrow stromal (a.k.a. mesenchymal stem) cells (BMSCs) shift their bioenergetic profile toward OxPhos during OB differentiation (Shum et al., 2016a; Feigenson et al., 2017; Colaianni et al., 2018; Shares et al., 2018; Yu et al., 2019; Smith and Eliseev, 2021). Since OB function involves bone matrix deposition, an energy-consuming process highly dependent on mitochondrial bioenergetics and OxPhos activity, we hypothesized that MPTP inhibition via CypD transcriptional downregulation is mediated by BMP/Smad signaling and required to sustain OxPhos function and support osteogenic differentiation.\n\n## Results\n\n### BMP/Smad signaling is a transcriptional repressor of Ppif gene\n\nTo determine potential mechanisms involved in CypD regulation on a transcriptional level, we performed an in silico analysis of the CypD gene, Ppif, promoter for transcription factor (TF)-binding sites using PROMO online platform (Messeguer et al., 2002). We found multiple BMP-dependent Smad-binding elements (SBEs) in the 1.1 kb 5\u2019 upstream region of both human PPIF and mouse Ppif genes (Figure 1A). BMP/Smad signaling pathway is an important driver of differentiation in various lineages including osteogenic lineage. Therefore, to test if BMP/Smad signaling regulates CypD gene transcription, we transfected mouse osteogenic bone marrow-derived and mesodermal origin ST2 cells, or calvaria-derived and neural crest-origin MC3T3-e1 cells with pCMV-Smad1 expression vector. The efficiency of Smad1 transfection was confirmed by real-time RT-qPCR. We observed that CypD mRNA was downregulated after Smad1 overexpression, whereas osteogenic marker Runx2, a readout of BMP/Smad activity, was upregulated (Figure 1B\u2013C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig1-v2.jpg)\n\n**Figure 1.:** (A) Several SBEs were found on both human (PPIF) and mouse (Ppif) CypD gene promoter. ST2 or MC3T3e1 cells were transfected with pCMV-Smad1 vector or empty vector (EV) control. (B) and (C) Real-time RT-PCR data demonstrating the efficiency of Smad1 transfection and that Smad1 overexpression upregulated Runx2 and downregulated Ppif mRNA expression. Plot shows the actual data points (biological replicates), calculated means and p value vs. EV controls determined by an unpaired t-test.\n\nTo confirm interaction of BMP-dependent Smad1 with the Ppif promoter, we performed chromatin immunoprecipitation (ChIP) DNA-binding assay using nuclear fractions from ST2 cells supplemented with BMP2 or vehicle control for 24 hr. PCR analysis of the reversed cross-linked protein-DNA immunoprecipitate complexes was done (Figure 2A) using primers to amplify the distal region within the Ppif promoter containing multiple SBEs (Figure 2B). Smad1-Ppif interaction was found to be present at low levels in the vehicle-treated control cells. This finding is consistent with the fact that intrinsic levels of BMP activity are present even in undifferentiated osteogenic cells. Importantly, BMP2 treatment significantly induced Smad1-Ppif interaction. Band density quantification revealed 2.5-fold increase of Smad1-Ppif interaction in the BMP2-treated samples (Figure 2C). These results demonstrate that Smad1 binds the CypD gene (Ppif) promoter in BMP-dependent manner.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig2-v2.jpg)\n\n**Figure 2.:** Chromatin immunoprecipitation (ChIP) assay of nuclear fractions from ST2 cells incubated either in the presence of 50 ng/ml BMP2 for 24 hr, or vehicle. (A) PCR analysis of the ChIP assay was performed using primers to amplify the distal Smad-binding elements (SBE)-containing region within the Ppif promoter (B) .Positive control histone H3 signal showing that proper DNA fragmentation was achieved (A). (C) Band density quantification for Smad1 immunoprecipitation in both conditions was adjusted by background subtraction and normalized to total DNA input. Unspecific signal from IgG band was also subtracted from Smad1-specific signal. Plot shows the actual data points representing the mean of two technical replicates from three independent experiments, calculated means and p value determined by an unpaired t-test.\n\nTo characterize the functionality of the SBEs found within the Ppif promoter, we subcloned the 1.1 kb mouse Ppif promoter into the pGL4.10 luciferase reporter construct (Figure 3A). We then co-transfected ST2 cells with the above promoter-reporter construct and either pCMV-Smad1 or pCMV empty vector (EV) and analyzed the luciferase signal. Figure 3C shows that Smad1 significantly decreased the luciferase signal from the 1.1 kb Ppif-luc promoter-reporter. Furthermore, a promoter bashing approach was used and five other various length promoter constructs were generated (Figure 3\u2014figure supplement 1A): \u20130.37 to \u20130.1 kb, or \u20130.62 to \u20130.45 kb, or \u20131.1 to \u20130.95 kb, or \u20130.62 to \u20130.1 kb, or \u20131.1 to \u20130.45 kb deletion mutants that correspond to a cluster of the two most proximal (P), three middle (M), five most distal (D), five middle + proximal (M+P), and eight distal + middle (D+M) SBEs, respectively. We co-transfected ST2 cells with the above promoter-reporter constructs and either pCMV-Smad1 or pCMV-EV and analyzed the luciferase signal for all our constructs. Middle and distal regions did not show any luciferase signal difference when compared to EV-transfected cells, whereas proximal, M+P, and D+M rescued Ppif activity (Figure 3\u2014figure supplement 1B). Thus, only the full-length 1.1 kb Ppif-luc reporter showed Ppif activity repression upon Smad1 transfection (Figure 3C). Knowing that the full-length Ppif promoter is the actual region controlling the gene activity and that Smads work by forming oligomeric structures binding various regions of the promoter (Massagu\u00e9 et al., 2005; Wang et al., 2014), we considered the data using the 1.1 kb Ppif-luc reporter as the most relevant. Of note, in all these experiments, activation of Smad1 signaling following transfection was confirmed by the increase in the activity of 12xSBE, a BMP/Smad signaling luciferase reporter (Figure 3B). In sum, our data indicate that BMP/Smad signaling is a transcriptional repressor of CypD.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig3-v2.jpg)\n\n**Figure 3.:** Dual luciferase reporter assay was performed on either ST2 or MC3T3e1 cells 48 hr after luciferase (Luc) reporter transfection. (A) Diagram: 1.1 kb full-length Ppif promoter region containing several Smad-binding elements (SBEs) was cloned into the pGL4.10 vector. (B) and (F) pCMV-Smad1 co-transfection highly activated the BMP/Smad signaling reporter 12xSBE. (C) pCMV-Smad1 co-transfected with the 1.1 kb Ppif full-length luc reporter downregulated the luciferase signal. Inhibitory Smad7 rescued Ppif promoter activity. (D) and (H) pCMV-Smad1 co-transfected with the 1.1 kb SBE-mutated Ppif full-length luc reporter rescued luciferase signal. (E) Osteogenic media or 50 ng/ml BMP2 was used to activate BMP/Smad signaling. The BMP inhibitor, Noggin, rescued Ppif promoter activity. (G) MC3T3e1 cells showed similar effects on Ppif promoter activity after BMP/Smad signaling activation. Plot shows the actual data points (biological replicates), calculated means and p value vs. EV controls determined by an unpaired t-test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Dual luciferase reporter assay was performed on ST2 and C2C12 cells. (A) Diagram: distinct Ppif promoter mutant constructs containing several Smad-binding elements (SBEs) were cloned into the pGL4.10 vector. (B) pCMV-Smad1 was co-transfected with the proximal (P), distal (D), middle (M), M+P, or D+M Ppif luc reporter. (C) BMP-dependent Smad1-binding inhibition rescued Ppif promoter activity using the 1.1 kb Ppif full-length uc reporter. Mutated SBEs in the Ppif promoter showed no affinity to Smad1 rescuing Ppif promoter activity. (D) Dose-response effect of BMP2 treatment in ST2 cells transfected with 1.1 kb Ppif full-length luc reporter. (E) pCMV-Smad1 co-transfection highly activated the BMP/Smad signaling reporter 12xSBE in C2C12 myogenic cells. (F) pCMV-Smad1 co-transfected with the 1.1 kb Ppif full-length luc reporter upregulated the luciferase signal in C2C12 myogenic cells. Inhibitory Smad7 decreased Ppif promoter activity. Plot shows the actual data points (biological replicates), calculated means and p value vs. EV or vehicle controls determined by an unpaired t-test.\n\nTo further delineate the role of BMP/Smad signaling in Ppif repression, we used the inhibitory Smad7 which rescued Ppif promoter activity in Smad1-transfected cells (Figure 3C). Smad7 competitively inhibits the interaction of R-Smads to the cytoplasmic domain of their respective cell receptors, therefore preventing R-Smad recruitment and phosphorylation, and consequently nuclear translocation. Binding specificity was confirmed using a 1.1 kb Ppif-luc reporter designed to introduce point mutations in the SBEs and therefore, prevent R-Smads binding. The 1.1 kb mutated Ppif-luc reporter co-transfected with pCMV-Smad1 rescued Ppif promoter activity (Figure 3D). This result was similar to the conditions meant to inhibit BMP/Smad signaling (Figure 3\u2014figure supplement 1C), confirming the specificity of SBEs in the Ppif promoter. Additionally, cells transfected with the 1.1 kb Ppif-luc reporter were either treated with BMP2 with or without the BMP inhibitor Noggin or induced in osteogenic media and assayed for luciferase signal. A dose-response assay revealed that BMP2 at 50 ng induced the highest suppression level of Ppif activity (Figure 3\u2014figure supplement 1D). BMP2 and osteogenic media downregulated the luciferase signal, whereas Noggin rescued Ppif activity (Figure 3E). These results were also confirmed in MC3T3e1 cells (Figure 3F\u2013H). However, the mouse myogenic C2C12 cell line showed opposite effects under BMP-dependent Smad activation (Figure 3\u2014figure supplement 1F). These findings show that PPIF activity is also regulated by Smad-dependent signaling in myogenic cells but suggest that the direction of PPIF regulation is tissue specific. Taken together, these data support our hypothesis that BMP/Smad signaling transcriptionally represses Ppif promoter activity in osteogenic cells regardless of their embryonic origin and consequently downregulates CypD expression during osteogenic differentiation.\n\n### Decreased CypD expression and MPTP activity during osteogenic differentiation\n\nBMP/Smad signaling is a major driver of differentiation. It is particularly important for osteogenic lineage. During osteogenic differentiation, cell energy metabolism shifts toward OxPhos as was shown by us and others (Shum et al., 2016a; Feigenson et al., 2017; Colaianni et al., 2018; Shares et al., 2018; Yu et al., 2019; Smith and Eliseev, 2021). Since a higher OxPhos activity, as seen in differentiated OBs, is described to produce more ROS (Barja, 1999; Dr\u00f6se and Brandt, 2012; Suski et al., 2018; Turrens, 1997; Figure 4\u2014figure supplement 1A), potentially leading to oxidative stress and higher probability of the MPTP opening, it is beneficial for actively respiring cells such as OBs to decrease MPTP activity, for example, by downregulating CypD. We therefore measured CypD expression and MPTP activity in several osteogenic cell types. Figure 4 shows that primary BMSCs isolated from mouse long bones, mouse bone marrow-derived osteogenic cell line ST2, and mouse calvaria-derived osteogenic cell line MC3T3-e1 underwent OB differentiation confirmed by alkaline phosphate and alizarin red staining (Figure 4A\u2013B) and upregulation of osteogenic markers Alp and Bglap.(Figure 4C\u2013E). In accordance with our hypothesis, osteogenic differentiation was accompanied by downregulation of CypD gene, Ppif, mRNA expression in all these cell types (Figure 4C\u2013E). To confirm that this effect is not species-specific, we analyzed human BMSC RNAseq dataset from our previous publication (Shum et al., 2016a) and observed downregulation of CypD gene, PPIF, mRNA expression in osteoinduced cells when compared to undifferentiated cells (Figure 4\u2014figure supplement 1B). Protein content of CypD correspondingly decreased during OB differentiation as measured with western blot (Figure 4\u2014figure supplement 2). We then measured MPTP activity using calcein-cobalt assay and flow cytometry (Figure 4F). In this assay, cells are incubated with calcein-AM in the presence of CoCl2 which quenches cytosolic but not mitochondrial calcein unless mitochondria are permeabilized due to MPTP opening. The increase in the calcein signal indicates higher resistance to MPTP opening and decreased pore activity (Petronilli et al., 1999). The assay showed that calcein signal increased at day 14 of OB differentiation when compared to day 0 indicating lower MPTP activity (Figure 4F). No changes were detected in the total mitochondrial mass during OB differentiation as labeled by nonyl acridine orange (Figure 4G), therefore confirming that calcein signal increase is in fact caused by a lower pore activity and not by an increased mitochondrial compartment. This is consistent with our previous report showing that mitochondrial mass and mtDNA do not increase during OB differentiation (Shum et al., 2016a; Shares et al., 2018). Altogether, these data indicate that CypD expression is downregulated and MPTP activity is decreased during osteogenic differentiation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig4-v2.jpg)\n\n**Figure 4.:** ST2 stromal cells, MC3T3e1, or mouse bone marrow stromal cells (BMSCs) were cultured in osteogenic media; RNA collected, and staining done at day 0, day 7, and day 14. (A) Staining representative image at day 14 for crystal violet (CV) a proxy of total cell content, alkaline phosphatase (Alk P), and alizarin red (AR). (B) Staining quantification confirming osteogenic commitment. (C), (D), and (E) Real-time RT-PCR data: osteogenic markers (Alp and Bglap) are upregulated, whereas Ppif mRNA expression is downregulated. (F) BMSCs subjected to calcein-cobalt assay showed decreased MPTP activity upon osteogenic differentiation. (G) BMSCs stained with nonyl acridine orange (NAO) show no difference in mitochondrial mass. Plot shows the actual data points (biological replicates), calculated means, and p value vs. D0 determined by an unpaired t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Human BMSCs were cultured in osteogenic media. RNAseq was performed and MitoSox mitochondrial ROS staining done at day 0 and 14. (A) D14 differentiated osteoblasts (OBs) show increased ROS production compared to D0 undifferentiated BMSCs. (B) RNAseq data shows downregulation of cyclophilin D (CypD) gene PPIF relative expression in osteoinduced human BMSCs, confirmed by ALP, and BGLAP osteogenic markers, when compared to undifferentiated cells. Plot shows the actual data points from three independent samples/experiments, calculated means, and p value determined by an unpaired t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Mouse BMSCs were cultured in osteogenic media and protein lysates collected at day 0 and day 14. Shown is the western blot (representative of 3) and band density quantification demonstrating decreased CypD protein level for osteoinduced vs. undifferentiated BMSCs. Plot shows the actual data points, calculated means, and p value determined by an unpaired t-test.\n\n### Smad-mediated regulatory effect on CypD is independent from osteogenic signaling downstream of Smad1\n\nOsteogenic differentiation is a complex process that involves coordination and crosstalk of several signaling pathways. BMP/Smad signaling is a potent driver of osteogenic differentiation in BMSCs. Once the BMP response is activated, other signaling molecules can influence Smad activity and osteogenic differentiation. For instance, after Smad1-Smad4 complex nuclear translocation, its dephosphorylation is accompanied by the dissociation of the complex and export to the cytoplasm. Smad4 is then believed to interact with \u03b2-catenin and TCF/LEF1 forming a TF activation complex, now under the control of Wnt signaling. Additionally, we found TCF/LEF1 regulatory elements in the 1.1 kb Ppif promoter region (Figure 5\u2014figure supplement 1A). To determine the role of Wnt signaling in Ppif regulation, we transfected the 1.1 kb Ppif-luc reporter in ST2 cells and performed a dose-response assay using recombinant Wnt3a. Even Wnt3a concentrations of 25 ng and above, previously reported to activate OB differentiation and mitochondrial function in osteogenic cells (Smith and Eliseev, 2021), showed no effect on Ppif activity (Figure 5\u2014figure supplement 1B). We also investigated the role of BMP/Smad signaling in CypD gene, Ppif, repression in a cell line where osteogenic signaling downstream of BMP/Smad is arrested. We previously reported that the human osteosarcoma (OS) cell line 143b cannot undergo osteogenic differentiation due to Runx2 proteasomal degradation (Shapovalov et al., 2010). Even though Runx2 mRNA expression is upregulated in osteoinduced 143b-OS cells, the osteogenic pathway cascade is blocked by this post-translational regulation. We confirmed the 143b-OS cells\u2019 inability to fully differentiate upon BMP2 osteogenic induction by comparing their mRNA expression of osteoblastic differentiation markers to that of human non-cancerous osteoblastic cell line, hFOB (Figure 5A). While hFOB cells upregulate ALP, IBSP, and BGLAP, 143b cells fail to upregulate these osteogenic markers. As seen in the ST2 and MC3T3e1 cell lines, pCMV-Smad1 transfection led to downregulation of CypD mRNA expression in 143b-OS cells (Figure 5B) and decreased Ppif promoter activity when co-transfected with the full-length 1.1 kb Ppif-luc reporter (Figure 5C). Altogether, our data strongly indicate that BMP/Smad signaling exerts inhibitory effect on the Ppif gene as a direct transcriptional repressor and not as an indirect result of osteogenic differentiation (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig5-v2.jpg)\n\n**Figure 5.:** Immortalized human osteoblastic cells (hFOB) or osteosarcoma cells (143b) were treated with 50 ng BMP2 for 5 days to induce osteogenic differentiation. BMP2 induced early (RUNX2) but not late (IBSP, BGLAP) OB markers in 143b-OS cells, reflecting differentiation-arrested phenotype. (B) Real-time RT-PCR data demonstrating the efficiency of Smad1 transfection and that Smad1 overexpression downregulated Ppif mRNA expression in 143b cells. (C) pCMV-Smad1 co-transfected with the \u20131.1 kb Ppif full-length luc reporter downregulated the luciferase signal. (D) Schematic representation of our summary of results. To maintain bone marrow stromal cell (BMSC) commitment to the osteogenic lineage, closure of the mitochondrial permeability transition pore (MPTP) is required, which is achieved by CypD downregulation through Smad1 transcriptional repression of Ppif gene. Plots show the actual data points (biological replicates), calculated means, and p value vs. D0 (A) or empty vector (EV) controls (B) determined by an unpaired t-test. BMP, bone morphogenic protein; CypD, cyclophilin D.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Diagram: 1.1 kb full-length Ppif promoter region containing TCF/Lef1 (Wnt) binding element. (B) Dose-response treatment using Wnt3a in ST2 cells transfected with 1.1 kb Ppif full-length luc reporter showed no effect on Ppif activity. Plot shows the actual data points (biological replicates), calculated means, and p value vs. vehicle control determined by an unpaired t-test.\n\n### Downregulation of CypD is important for osteogenic differentiation\n\nWe previously reported that CypD knock-out (KO) mice, a loss-of-function (LOF) model of the MPTP, present with higher BMSC OxPhos function and osteogenic potential (Shum et al., 2016b). Moreover, RNAseq transcriptome analysis showed that CypD KO BMSCs present pro-osteogenic gene signatures (Shares et al., 2020). However, it has not yet been established that CypD downregulation is absolutely necessary for OB differentiation. To address this question, we studied the effect of CypD re-expression and CypD/MPTP gain-of-function (GOF) on OB differentiation. It is known that acetylation of CypD at K166 increases CypD activity and MPTP opening and can be mimicked by K166Q mutation (Alkalaeva et al., 2009; Porter and Beutner, 2018). We therefore used the pCMV6-caPpif vector that expresses constitutively active CypD (caCypD) K166Q mutant tagged with c-Myc and DDK-Flag peptides to stably transfect MC3T3e1 cells. Expression of caCypD mutant was confirmed by western blot (Figure 6A). Cells expressing caCypD showed impaired osteogenic differentiation as evidenced by lower expression of OB marker genes, Runx2, Alp, and Bglap, at both days 7 and 14 in osteogenic media (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig6-v2.jpg)\n\n**Figure 6.:** MC3T3e1 were stably transfected cells with pCMV6-caPpif vector to express constitutively active CypD K166Q mutant and thus achieve CypD gain-of-function (GOF). Bone marrow stromal cells (BMSCs) from either osteoblast (OB)-specific, inducible 2.3 kb Col1CreERt2;R26caPpif/+ mice or R26caPpif/+ mice were cultured in osteogenic media for 11\u201314 days. (A) Representative western blot of stably transfected MC3T3e1 cells (EV: pCMV6-empty vector; KQ: pCMV6- caPpif vector; VDAC1: loading control; caCypD: mutant CypD; CypD: endogenous CypD). (B) and (F) Real-time RT-PCR data of osteogenic markers: CypD GOF MC3T3 cells and OB-specific, inducible 2.3 kb Col1CreERt2;R26caPpif/+ BMSCs were incapable to complete OB differentiation. (C) Diagram showing the caPpif mouse transgene construct. Images show eGFP signal in cell culture confirming recombination induced in vitro. (D) Representative western blot of BMSCs from 2.3 kb Col1CreERt2;R26caPpif/+ mice. (E) Staining representative image at day 14 for crystal violet, alkaline phosphatase, and alizarin red: CypD GOF (tamoxifen-induced Cre+) BMSCs showed decreased OB activity and mineralization capacity. (G) Representative images from R26caPpif/+ BMSCs infected with adeno-Cre virus, culture in osteogenic media during 11 days. (H) and (J) Osteoinduced R26caPpif/+ BMSCs infected with adeno-Cre collected at day 0 or day 11 showed decreased TMRE \u0394F signal for infected (Cre+) cells compared to non-infected (Cre-) cells. (I) and (K) Osteoinduced R26caPpif/+ BMSCs infected with adeno-eGFP collected at day 0 or day 11 showed no difference in TMRE \u0394F signal between infected (Cre+) and non-infected (Cre-) cells. Plot shows the actual data points (biological replicates), calculated means, and p value vs. D0 (B, F) or Cre- (H\u2013K) controls determined by an unpaired t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** F1 generation for osteoblast (OB)-specific inducible 2.3 kb Col1CreERt2;R26caPpif/+ mice were genotyped to confirm the presence of caCypD (K166Q mutant) insert. Cre primer was used to allocate control and experimental groups. Electrophoresed gel shows DNA target amplified from three independent mice per group: Cre- control and Cre+ experimental mice.\n\nAs mentioned above, CypD LOF mouse models were created before and in our hands demonstrated the beneficial effects of CypD deletion on bone (Shum et al., 2016b; Shares et al., 2020; Laura et al., 2020). However, CypD GOF mouse model was not previously created except for one model that is no longer available (Baines et al., 2005). We therefore designed a tissue-specific knock-in mouse model of CypD GOF that expresses the above caCypD mutant in the presence of Cre recombinase. Briefly, caPpif cDNA encoding CypD K166Q mutant preceded by the floxed \u2018Stop\u2019 codon and followed by an IRES sequence and eGFP cDNA was inserted into the Rosa26 locus (C57Bl/6 background). This new mouse line was named R26caPpif. The presence of this transgene was confirmed with genotyping (Figure 6\u2014figure supplement 1). To achieve OB-specific caCypD expression, we crossed these mice with tamoxifen-inducible 2.3 kb Col1CreERt2 mice (final cross is Col1CreERt2/+; R26caPpif/+). BMSCs were isolated from these skeletally mature 3-month-old male mice, expanded and induced to differentiate in osteogenic media. Addition of 4\u2019-OH-tamoxifen to osteoinduced BMSCs prompted recombination at day 11 (Figure 6C), coinciding with Col1a1 expression time-point during the course of OB differentiation induced in vitro (Safadi et al., 2009). Translation of caCypD mutant was confirmed by western blot (Figure 6D). Cells were harvested at day 14 of osteoinduction and analyzed. Osteoinduced caCypD-expressing cells presented with decreased osteogenic differentiation and OB markers when compared to control cells (Figure 6E and F). To evaluate the mitochondrial function in the CypD GOF model, we collected BMSCs from R26caPpif mice and induced recombination through adeno-Cre viral infection. Adeno-eGFP infection was used as negative control for caCypD expression. Transduced BMSCs were induced in osteogenic media for 11 days, stained with the nuclear stain, Hoechst, and the \u0394\u03c8m-dependent stain, TMRE. FCCP, a protonophore, was used as a negative control for TMRE staining (Figure 6G). CypD overexpression clearly decreased TMRE signal, and therefore mitochondrial function and OxPhos capacity in infected, eGFP-expressing Cre+, cells compared to non-infected, Cre-, cells in both BMSCs at day 0 and OBs at day 11 (Figure 6H and J). Adeno-eGFP showed no important effects on TMRE signal demonstrating that virus infection itself is not the driver of mitochondrial function change (Figure 6I and K). Altogether, our results indicate that CypD GOF disrupts mitochondrial function and impairs OB differentiation and thus, downregulation of CypD is an important part of osteogenic program.\n\n### CypD re-expression and GOF reverse the beneficial effects of CypD deletion on bone phenotype in aged mice\n\nTo determine the physiological relevance of PPIF downregulation driven by BMP/Smad signaling during osteogenesis, we analyzed publicly available RNAseq datasets on bone aging (Ambrosi et al., 2021) and on fracture (Coates et al., 2019) and found inverse correlation between BMP signaling and Ppif expression (Figure 7\u2014figure supplement 1A). In particular, downregulation of markers of BMP/Smad signaling was accompanied by significant upregulation of CypD gene, Ppif, in aged mouse bones (top left table). On the other hand, upregulation of BMP/Smad signaling during active phase of bone formation (day 14 post-fracture) in mouse fracture callus was accompanied by significant downregulation of Ppif (top right table). We also found that in conditions leading to pathological calcification such as osteoarthritis and osteophyte formation (Dunn et al., 2016) and cardiac valve calcification (Huang et al., 2019) and associated with upregulated BMP/Smad signaling, PPIF expression is decreased (bottom tables).\n\nTo further prove the relationship between BMP/Smad signaling and CypD expression, we analyzed bone samples from 3- and 18-month-old mice. These samples were collected before for our previously published work on bone aging (Shum et al., 2016a). BMP/Smad signaling is known to be downregulated in aged bone. Using immunofluorescence (IF), we indeed detected decreased levels of BMP2 in bones of aged mice when compared to young mice. Consistent with our hypothesis, levels of CypD correspondingly increased (Figure 7\u2014figure supplement 1B, C). In addition, we used bone fracture samples from our previously published work (Shares et al., 2020) and performed IF for BMP2 and CypD. Consistent with the published RNAseq dataset described above (Figure 7\u2014figure supplement 1A, top right table), BMP2 signal was significantly increased in the callus at day 14 post-fracture when compared to the unfractured bone. This increase likely reflects active bone forming and callus ossification stage. The observed increase in BMP2 signal was accompanied by significant decrease in CypD signal (Figure 7\u2014figure supplement 1D, E). Therefore, previously published transcriptomic data and our own studies indicate inverse correlation between BMP signaling and CypD expression.\n\nHigher MPTP activity and CypD expression are shown to be present in aging (Sun et al., 2016; Rottenberg and Hoek, 2017; Farr and Almeida, 2018). Additionally, CypD/MPTP upregulation is involved in several pathophysiological conditions, including premature aging and degenerative diseases (Bernardi et al., 2015). Conversely, CypD deletion produces protective effects against several degenerative processes, including bone loss in aged mice (Shum et al., 2016a). To confirm our in vitro results and obtain further insight into the CypD/MPTP regulation of bone cell function, we investigated the effects of CypD re-expression and GOF in vivo. For this, we used a viral delivery of the above caCypD K166Q mutant (caPpif) in a mouse model where CypD was initially deleted. In our experimental design, OB-specific CypD deletion (2.3 kb Col1CreERt2;Ppiff/f) was induced beginning at 2 months of age. These mice were aged to 22 months while maintaining CypD deletion with bimonthly tamoxifen boosts (Figure 7A). Cre- mice (Ppiff/f) were also injected with tamoxifen and used as controls. To rescue CypD expression and achieve CypD GOF, we designed a CRE-DIO (Saunders et al., 2012) viral system carrying caPpif and eGFP cDNA. The CRE-DIO system allows expression of the gene of interest only in Cre+ cells in the animal, therefore providing specificity. The AAV2-CRE-DIO-caPpif -eGFP vector (AAV-DIO, Figure 7B) was introduced via intra-bone marrow injection in the tibiae of the above mice. Contralateral tibiae were injected with sterile phosphate buffered saline (PBS) solution as an intra-mouse control. Two months after the viral infection and recombination, eGFP signal confirming a successful CypD re-expression was present in the AAV-DIO-injected tibiae of Cre+ but not Cre- mice (Figure 7C and Figure 7\u2014figure supplement 2A). CypD re-expression and GOF also led to decreased OB function in vivo as confirmed by decreased osteocalcin IF (Figure 7D), recapitulating the results we have observed in vitro (Figure 6E and F). Since OB function is described to partially regulate osteoclast formation, recruitment and maturation, we analyzed osteoclast activity by tartrate-resistant acid phosphatase (TRAP) staining (Figure 7E) and found no differences between the AAV-DIO-injected tibiae of Cre+ and Cre- mice. An important observation in this experimental design is that OB-specific CypD deletion is in fact protecting against bone loss in aging, corroborating our previous results when we investigated the effects of CypD global deletion in mice (Shum et al., 2016b). For instance, biomechanical testing showed increased torsional rigidity in control tibiae of Cre+ (Ppif-/-) mice when compared to Cre- (Ppif+/+) mice (Figure 7H), indicative of an increased bone strength. Bone volume fraction measured with micro-computed tomography (\u03bcCT), a strong predictor of bone strength (Nazarian et al., 2008), provided further evidence that OB-specific CypD deletion effectively protects against bone degeneration in aging (Figure 7G). Although bones with AAV-DIO-delivered CypD re-expression showed decreased cortical thickness and torsional rigidity when compared to their respective contralateral PBS-injected tibiae (Figure 7F and H), we further analyzed our data using data normalization. In both Cre- and Cre+ mice, AAV-DIO-injected tibiae were normalized to the contralateral PBS-injected limb to account for unspecific differences in bone phenotype between animals, differences caused by CypD deletion among experimental and control mice, and unforeseen effects of virus infection. Normalized data showed a significant decrease in cortical thickness in the virus-infected Cre+ mice (Figure 7I) and a decrease in tibial bone volume fraction in these mice which did not reach statistical significance (Figure 7J). These changes were sufficient to decrease tibial biomechanical properties and increase bone fragility in virus-injected bones from Cre+ mice when compared to Cre- mice (Figure 7K\u2013M). Since bone homeostasis is achieved by the interplay of distinct tissues and cell populations such as BMSCs, OBs, osteoclasts, myeloid, lymphoid, endothelial, sensory, and myogenic cells, as expected, some bone morphological parameters are not affected by CypD/MPTP manipulation targeted in OBs (Figure 7\u2014figure supplement 2B-S). Nonetheless, our aggregated data present strong evidence that OB-specific CypD re-expression and GOF detrimentally affect OB function and it is sufficient to impair bone phenotype in aging.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig7-v2.jpg)\n\n**Figure 7.:** (A) Experimental design: CypD deletion was induced in 2-month-old OB-specific inducible (2.3 kb Col1CreERt2;Ppiff/f) CypD loss-of-function (LOF) mice. Virus intra-bone marrow injection performed in the right tibia at 22 months. (B) Diagram showing the AAV2-Cre-DIO-caPpif-eGFP construct. The gene of interest is inserted in the vector in antisense orientation and is flanked by double floxed sites. In cells expressing Cre recombinase, the gene of interest and eGFP reporter are flipped and \u2018turned-on\u2019. (C) eGFP signal captured by IVIS in vivo confirming the successful viral infection and recombination in the tibia of Cre+ mice 2 months after intra-bone marrow injection; CypD re-expression decreased osteocalcin immunofluorescence signal (D) but it did not change osteoclast activity measured by tartrate-resistant acid phosphatase (TRAP) staining (E) (BM: bone marrow). Bone volumes and biomechanical properties of CypD deletion and CypD re-expressing bones were measured by micro-computed tomography (\u03bcCT) and a torsion test, respectively. CypD conditional deletion did not affect cortical thickness (F) however, it showed protective effect against trabecular bone volume loss in aging (G) and improved torsional rigidity (H) (PBS: Ppif+/+ X Ppif-/-). For analysis of bones with AAV-DIO-delivered CypD re-expression, data was normalized to the contralateral PBS-injected limb to account for differences in bone phenotype between animals. Cre+ mice showed decreased bone volumetric parameters and mechanical properties when compared to Cre- mice. (I) Cortical thickness (Ct Th). (J) Bone over total volume (BV/TV). (K) Torsional rigidity. (L) Yield torque. (M) Maximum torque. Plots show the actual data points from six independent mice per group, calculated means, and p value determined by an unpaired t-test. Paired t-test was used when left and right tibia from the same mouse were compared. Specimens' genotype guide: PBS_Ppif+/+: wild type; PBS_Ppif-/-: CypD conditional KO; AAV-DIO_Ppif+/+: wild type caCypD rescue; AAV-DIO_Ppif-/-: CypD conditional KO caCypD rescue.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Tables presenting unmodified RNAseq data from four different studies. Physiological and pathological conditions related to osteogenesis or mineralization outcomes show inverse correlation between BMP signaling and PPIF expression (Frx: fractured, UnFrx: unfractured, d1: day 1 post-fracture). (B) and (C) Secondary immunofluorescence comparing bones from aged (18-month-old) vs. young (3-month-old) mice; or (D) and (E) post-fracture callus at day 14 vs. unfractured tibiae confirming the inverse correlation between BMP2 and cyclophilin D (CypD) levels in vivo (BM: bone marrow, MC: mineralized callus, UM: unmineralized matrix). Note the higher CypD levels in undifferentiated cells (white arrows) compared to osteoblasts (OBs) in the mineralized matrix (green arrows) in the callus, confirming our in vitro results described in Figure 4. Plot shows the actual data points from five independent mice, calculated means, and p value determined by an unpaired t-test. Paired t-test was used when left (UnFrx) and right (Frx) tibia from the same mouse were compared. BMP, bone morphogenic protein.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Immunofluorescence eGFP signal confirming the successful viral infection and recombination in the tibia of Cre+ mice 2 months after intra-bone marrow injection (BM: bone marrow). Bone volumetric and biomechanical properties of 2.3 kb Col1CreERt2;Ppiff/f mice with or without CypD re-expression were measured by micro-computed tomography (\u03bcCT) and a torsion test, respectively. No differences on the following bone morphological and biomechanical parameters were found between groups \u2013 non-normalized data: (B) cortical area; (C) bone marrow area; (D) cortical cross-sectional area; (E) trabecular bone mineralization density; (F) trabecular number; (G) trabecular thickness; (H) trabecular space; (I) polar moment of inertia; (J) yield torque; (K) maximum torque. For analysis of bones with AAV-DIO-delivered CypD re-expression, data was normalized to the contralateral PBS-injected limb to account for differences in bone phenotype between animals. No differences on the following bone morphological parameters were found between Cre- and Cre+ mice \u2013 normalized data: (L) cortical area; (M) bone marrow area; (N) cortical cross-sectional area; (O) trabecular bone mineralization density; (P) trabecular number; (Q) trabecular thickness; (R) trabecular space; (S) polar moment of inertia. Plot shows the actual data points, calculated means, and p value determined by an unpaired t-test. Paired t-test was used when left and right tibia from the same mouse were compared. Specimens' genotype guide: PBS_Ppif+/+: wild type; PBS_ Ppif-/-: CypD conditional KO; AAV-DIO_ Ppif+/+: wild type caCypD rescue; AAV-DIO_ Ppif-/-: CypD conditional KO caCypD rescue.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/75023/elife-75023-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** KO: knock-out, NIM811: CypD inhibitor, cKO: conditional knock-out, GOF: gain-of-function model of CypD, Frx: fracture.\n\n## Discussion\n\nCellular differentiation usually challenges cells with significantly increased energetic demands when compared to the undifferentiated state. Fully differentiated cardiomyocytes and neuronal cells are characterized by a higher demand of energy and therefore an elevated mitochondrial activity when compared to their undifferentiated pairs. Such energetic shift requires OxPhos activation which relies on a higher \u0394\u03c8m and proton motive force, fueled by increased electron flow in the electron transport chain. There is mounting evidence that an important part of the above-mentioned bioenergetic switch is a closure of the MPTP. As cells become more active, OxPhos activation leads to increases in ROS, byproducts of active respiration. ROS can then trigger MPTP opening, leading to loss of integrity of the IMM and of OxPhos function and ultimately prompting mitochondrial dysfunction, inflammation, and catabolic pathways (Fayaz et al., 2015; Carraro and Bernardi, 2016). Although the energetic state of mitochondria can be regulated through several pathways, CypD is an important indirect regulator of OxPhos and the key opener of MPTP (Alavian et al., 2014; Beutner et al., 2017; Porter and Beutner, 2018). MPTP closure is beneficial for OxPhos activity, desensitizing mitochondria to higher ROS levels, and preserving mitochondrial membrane integrity.\n\nCypD is regarded as the master regulator of MPTP, and a range of post-translation modifications have been described to exert regulatory properties on CypD activity and, consequently, on MPTP opening. However, how CypD expression is transcriptionally regulated has never been described. We found through an in silico analysis that PPIF promoter has multiple SBEs in the 1.1 kb 5\u2019 upstream region of both human PPIF and mouse Ppif gene. Smads are TFs downstream of the BMP signaling pathway and since OB differentiation is controlled at least in part via BMP/Smad signaling, we hypothesized that in the case of Ppif, Smads are inhibitory TFs. BMPs are a group of cytokines belonging to the transforming growth factor-\u03b2 superfamily of proteins, which among other functions, induce stem cell differentiation. The BMP canonical pathway is Smad dependent, which upon phosphorylation and Smad4 binding, forms a heterodimeric complex. The complex translocates into the nucleus and activates or represses expression of a variety of genes (Wang et al., 2014; Nickel and Mueller, 2019). As expected, our DNA-protein binding ChIP analysis revealed stronger Smad1-Ppif interaction when ST2 cells were supplemented with BMP2 for 24 hr compared to vehicle control-treated cells. Although Smad1-Ppif interaction was found to be present at lower levels in the non-BMP-treated ST2 cells, this finding is consistent with the fact that intrinsic levels of BMP activity are present in undifferentiated osteogenic cells. Since we have shown that pCMV-Smad1 transfection in ST2 and MC3T3e1 cells downregulated CypD mRNA expression, our results demonstrate that increased Smad1 interaction with CypD gene (Ppif) promoter leads to Ppif transcriptional repression. The specificity and functionality of BMP/Smad signaling in Ppif transcriptional repression was further confirmed using a Ppif-luc reporter with point mutations in the SBEs and delineated using the functional 1.1 kb Ppif-luc reporter with or without BMP/Smad inhibitors. However, the crosstalk between BMP and Wnt signaling could indirectly repress Ppif activity by other means than just Smad1-Ppif binding. Our in silico analysis revealed a potential TCF/LEF1 binding site within the Ppif promoter which was shown to have no effect on Ppif regulation. However, Runx2 is a downstream target of BMP/Smad signaling known to regulate several genes responsible for growth control and differentiation. Other TFs downstream Runx2 activation could also directly/indirectly exert regulatory function on Ppif transcription. Therefore, we investigated the role of BMP/Smad signaling in CypD downregulation and Ppif repression in 143b-OS cells, where osteogenic signaling downstream of BMP/Smad is arrested. Confirmatory results for 143b-OS cells strongly indicate that BMP/Smad signaling is in fact a direct transcriptional repressor of PPIF and is sufficient to repress PPIF without any additional downstream differentiation signals.\n\nTo our knowledge, this is the first evidence for TF-mediated regulation of PPIF transcription. Although our main focus was on osteogenic cells, our findings can be potentially extrapolated and studied in other cell types. 143b-OS cells\u2019 results indicate that Smad-mediated CypD downregulation/Ppif repression is not exclusive to osteogenic differentiation. As previously discussed, BMP is ubiquitously expressed and described to induce cellular differentiation and maturation in various tissues. Accordingly, some cells induced by BMP/Smad signaling reprogram their metabolic profile to a higher energetic state during differentiation and are shown to decrease CypD mRNA expression and/or activity, such as cardiomyocytes and neuronal cells. We previously reported that BMP2 induction stimulates mitochondrial OxPhos during OB differentiation and that such activation is at least partially driven by a metabolic signaling (Smith and Eliseev, 2021). Myocardial differentiation from cardiac progenitors is regulated by BMP/Smad signaling. BMP2/4 conditional KO impairs myocardial differentiation by drastically reducing sarcomeric myosin (Wang et al., 2014). In neuronal cells, BMP signaling is pivotal for cellular fate specification in both neurogenesis and astrogliogenesis by regulating transcriptional activity (Bond et al., 2012). Several BMP ligands, including BMP2, are described to regulate central nervous system development and patterning. Therefore, it is logical to suggest that CypD downregulation mediated by BMP-dependent, R-Smad (Smad1, -5, -8) transcriptional repression of Ppif gene can be present in other tissues during development and maintenance. However, we found that mouse myogenic C2C12 cells upregulate Ppif activity when Smad-dependent BMP signaling is activated, suggesting that the effect direction of Smads on PPIF regulation is tissue-specific. This bi-directional effect of Smads on gene regulation is well described. Smads can either act as promoter repressors or activators in a gene-specific manner (Massagu\u00e9 et al., 2005). The tissue-specific effect of Smad1 on Ppif can be explained, for instance, by the fact that cell/tissue specification is driven by selective methylation of promoter regions which changes chromatin accessibility (Atlasi and Stunnenberg, 2017). Such modification can either completely repress promoter activity or alter its regulatory mechanism. We showed that Ppif promoter bashing using different promoter regions (P, M+P, or D+M) led to promoter activation instead of repression in osteogenic ST2 cells overexpressing Smad1. This effect is similar to the effect observed in myogenic C2C12 cells using the full-length Ppif reporter. It remains to be determined which SBE combinations are accessible in C2C12 cells and how it would impact the recruitment of Smads and co-factors. The role of CypD expression is not well studied in myogenic program but RNAseq studies revealed no changes in CypD expression during myoblast differentiation (Zeng et al., 2016). Interestingly, BMP signaling is suppressed during myogenic differentiation showing marked upregulation of Noggin expression (Ono et al., 2011). In fact, Noggin or Wnt3a administration stimulates myogenic differentiation presenting synergic effect when combined (Shang et al., 2007; Terada et al., 2013). Conversely, addition of BMP ligands to C2C12 cells is shown to suppress myogenic differentiation but BMPs are necessary for muscle hypertrophy (Borok et al., 2020). Clearly, a fine-tuning of BMP regulation is required in muscle tissue. Since Smad1 transfection increased Ppif activity in myogenic cells, we can speculate that constitutive activation of R-Smads is more associated with inflammatory and catabolic pathways in muscle tissue. Not surprisingly, BMP hyperactivation is described to be associated with impaired muscle regeneration (Borok et al., 2020).\n\nThe effects of CypD on cell functioning have been studied for over 35 years. First, CypD was exclusively attributed to regulate cell death, however later studies provided further understanding of CypD function within mitochondria and its importance for cell physiology and bioenergetic response. The CypD KO mouse model has been vastly applied to study the effect of MPTP downregulation in vivo. CypD deletion is shown to present a protective phenotype against aging in several tissue-specific mouse models. Additionally, CypD ablation in mice also resulted in diminished disease progression for some pathologies, such as reperfusion injury of the heart and brain, axonopathy, and other neurodegenerative and demyelinating diseases (Baines et al., 2005; Schinzel et al., 2005; Giorgio et al., 2010; Halestrap and Richardson, 2015; Ahier et al., 2018; Gauba et al., 2019). In contrast, CypD overexpression or overactivation is related to the onset and progression of several pathological states, either during development or in aging. Cardiomyocytes unable of downregulating CypD during embryonic development can cause congenital heart defects, secondary to defects in MPTP activity and myocyte differentiation (Hom et al., 2011; Lingan et al., 2017). The progression of Alzheimer\u2019s disease is accelerated by higher CypD levels and MPTP activity, leading to further mitochondrial stress and neuronal exhaustion (Alavian et al., 2014; Gauba et al., 2019). Collagen VI myopathies are well described and established pathologies where CypD overexpression plays a major role, and as expected, treatment with CypD inhibitors can reverse the disease (Giorgio et al., 2010; Zulian et al., 2014).\n\nIn bone tissue, we have shown that BMSCs from CypD KO mice have higher osteogenic potential and OxPhos activity. Moreover, mice with CypD ablation presented with less osteoporosis burden, stronger bones in aging, and improved fracture healing (Shum et al., 2016b; Shares et al., 2020). OB function involves bone matrix deposition, an energy-consuming process, which according to our and others\u2019 data, is highly dependent on mitochondrial bioenergetics. In fact, our lab and others have demonstrated that BMSCs shift their bioenergetic profile toward OxPhos during OB differentiation (Shum et al., 2016a; Feigenson et al., 2017; Colaianni et al., 2018; Shares et al., 2018; Yu et al., 2019; Smith and Eliseev, 2021). Not surprisingly, we recently reported that higher OxPhos in BMSCs correlates with better spinal fusion outcomes in both human patients and in a mouse model (Laura et al., 2020). Taken together, the evidence collected in other groups\u2019 studies, our previous studies, and the present study points that OxPhos is activated while MPTP is inhibited via CypD downregulation during OB differentiation. Our data corroborate reports of CypD downregulation and MPTP closure during neuronal differentiation in developing rat brains, as well as during cardiomyocyte differentiation in developing mouse hearts (Eliseev et al., 2007; Hom et al., 2011; Lingan et al., 2017). However, the importance of CypD/MPTP downregulation for OB differentiation and bone maintenance was not totally clear. In this study, we used a CypD/MPTP GOF model that stably expressed caCypD K166Q mutant (caPpif) in either MC3T3-e1 cell line or in primary cells from a novel OB-specific CypD GOF mouse model. Acetylation of CypD at K166 position increases CypD activity and MPTP opening and can be mimicked by K166Q mutation (Alkalaeva et al., 2009; Porter and Beutner, 2018). The development of this mouse model allowed us to investigate the importance of CypD downregulation during osteogenic differentiation in primary mouse cells. Both MC3T3e1 cells and BMSCs showed decreased osteogenic markers, impaired OB differentiation and function at the time caCypD was expressed (from D0 in caCypD-transfected MC3T3e1 cells, and from D11 in osteoinduced BMSCs from CypD GOF mouse). In our in vivo model, CypD re-expression and GOF reversed the beneficial effects of CypD deletion on bone phenotype in aged mice. We have shown that CypD KO mice are protected against bone loss in aging, and present stronger bones when compared to wild type control littermate mice (Shum et al., 2016b). Additionally, we found that bones from aged mice present higher CypD levels when compared to young mice. CypD re-insertion in OBs in mice with OB-specific CypD deletion by tibial intra-bone marrow viral infection, delivering the caPpif transgene, rescued bone mechanical properties observed in aging. Our data suggests that OB-specific CypD/MPTP overactivation in vivo is related to a weaker bone phenotype as seen in advanced bone loss and osteoporosis. This result goes along with studies showing that CypD/MPTP upregulation is present in several tissues during aging and as discussed, such upregulation plays a role in the onset and progression of several degenerative pathologies. However, a limitation in our in vivo model is the fact that we have not analyzed vertebral bones, which are more relevant in the context of osteoporosis.\n\nDuring de novo bone formation in fracture repair, we observed CypD downregulation coincident with upregulation in BMP2. This finding may provide explanation for our previously published report where we found no effects of CypD conditional deletion in Prx1-expressing osteoprogenitors. Since in young mice with functional BMP signaling, CypD is downregulated during fracture repair, the effect of any additional bone-specific CypD downregulation may be blunted. Delayed fracture repair is associated with aging when BMP signaling is low. Therefore, we can interconnect our previous and current data on PPIF regulation summarized in Figure 7\u2014figure supplement 3 and conclude that such regulation process is crucial for bone homeostasis and repair.\n\nOverall, our findings establish BMP/Smad signaling as a transcriptional regulator of PPIF expression playing an important role in bone physiology and pathology. We provided evidence that CypD downregulation led by BMP signaling is important during osteogenic differentiation and that the increase in CypD expression in OBs during aging can be detrimental to bone phenotype and strength. Even though aged skeleton is characterized by a very low turnover rate, CypD overexpression for a total period of only 2 months was sufficient to decrease bone mechanical properties. These results highlight the importance of CypD regulation for a proper bone maintenance and positions CypD as a potential target for bone health. Additionally, RNAseq data from pathological ossification/calcification conditions, such as osteoarthritis and osteophyte formation (Dunn et al., 2016) and cardiac valve calcification (Huang et al., 2019), suggested the inverse correlation between BMP signaling and CypD expression in these pathologies. Therefore, the BMP/Smad-Ppif axis is also relevant for these pathological conditions and can be aimed as a potential therapeutic target as well. In fact, there are plenty of evidence showing that CypD can be therapeutically targeted to treat some pathological conditions. Studies in the heart and brain have shown that CypD inhibitors can protect against injury after reperfusion in animal models (Halestrap and Richardson, 2015; Warne et al., 2016). However, the lack of target validation and better understanding of CypD regulatory pathway has contributed to failed Phase III clinical trials (Nighoghossian et al., 2015; Ong et al., 2017; Briston et al., 2019). Therefore, our findings can be applied to develop new strategies to regulate CypD expression, and the similar strategy can be used to other fields of mitochondrial-mediated human pathologies characterized by CypD/MPTP deregulated activity.\n\n## Materials and methods\n\n### Mouse strains\n\nR26caPpif with C57Bl/6 genetic background, CypD GOF, mice were generated by the combined effort of our lab and Dr George Porter\u2019s lab in the University of Rochester Gene Targeting and Transgenic Core Facility. We used the CTV vector (CAG-STOP-eGFP-ROSA targeting vector, Addgene) described by Dr Changchun Xiao (a modification from the original vector in the Klaus Rajewsky lab) to knock in the transgene caPpif construct encoding constitutively active CypD K166Q mutant, in embryonic stem (ES) cells. In brief, caPpif cDNA containing Myc-DDT(Flag) tag on its N-terminal was cloned into the CTV vector containing NeoSTOP cassette flanked by loxP sites. This vector also contains IRES-eGFP for easy detection of a transgene expression. This vector was designed for CypD GOF while inserted at Rosa26 locus. Transformed ES cells were injected into the blastocysts to produce chimeric mice followed by breeding the chimeras to germline transmitted offspring containing the knock-in caPpif gene. After the creation of first transgenic hemizygous mouse littermates R26caPpif/+, the colony was expanded and later bred in house with OB-specific tamoxifen-inducible Col1CreERt2 mice, 2.3 kb variant (final cross is Col1CreERt2/+;R26caPpif/+). 2.3 kb Col1CreERt2 mice were a kind gift from Dr Ackert-Bicknell (formerly of University of Rochester, originated in the Karsenty Lab at Columbia University Department of Genetics). Ppif floxed (Ppiff/f) mice were acquired from Jackson Laboratories (originated in the Korsmeyer lab at Dana Farber Cancer Institute, RRID: IMSR_JAX:005737) and bred in house with 2.3 kb Col1CreERt2 mice to allow OB-specific CypD deletion. C57BL/6J mouse strain was obtained from the Jackson Laboratory (RRID: IMSR_JAX:000664) and bred in house. All mice were housed at 23\u00b0C on a 12 hr light/dark cycle with free access to water and PicoLab Rodent Diet 20 (LabDiet #5053, St Louis, MO). Mice were in group housing when applicable based on weaning. Testing na\u00efve mice with an average weight of 28 g were used for experiments. The assessments of animal studies were performed in a blinded and coded manner.\n\n### Isolation of BMSCs\n\nPrimary bone marrow cells were harvested from femurs and tibiae bone marrow from Col1CreERt2/+;R26caPpif/+ and Cre-negative control littermates or from C57BL/6J mice. Cells were plated at a density of 20 \u00d7 106 per 10 cm dish in physiological \u2018low\u2019 glucose (5 mM) DMEM (LG-DMEM) supplemented with 1 mM L-glutamine, 10% fetal bovine serum (FBS), 1% penicillin-streptomycin, and incubated at 37\u00b0C, 5% CO2, and physiologically relevant at 5% O2. BMSCs were selected by plastic adherence, and detached from plates using 0.25% trypsin/1 mM EDTA treatment, as previously described (Shum et al., 2016a).\n\n### Mouse cell lines\n\nMouse long bone-derived ST2 cells were a gift from Dr Clifford Rosen (Maine Medical Center). C2C12 mouse myogenic cells were from ATCC and provided by Dr Calvin Cole (University of Rochester). Mouse calvarial bone-derived MC3T3-E1 cells were acquired from ATCC. Cells were expanded in sterile conditions and maintained in a 37\u00b0C incubator at 5% CO2 in low glucose \u03b1MEM media (Gibco A10490-01) containing 1 mM L-glutamine, ribonucleosides (0.01 g/L each), deoxyribonucleosides (0.01 g/L each), no ascorbic acid, 10% FBS (Gibco 10437-028) heat inactivated for 30 min at 55\u00b0C, and 1% pennicillin/streptomycin (Gibco 15140-122). Cells were maintained at passage numbers <20 as recommended by the supplier and from previous handling experience. Cells have been authenticated by their osteogenic (ST2 and MC3T3-E1) or myogenic (C2C12) differentiation potential. They are mycoplasma-free.\n\n### Human osteoblastic cell line\n\nhFOB cells were purchased from ATCC and expanded in DMEM supplemented with 1 mM L-glutamine, 10% FBS, 1% penicillin-streptomycin, and incubated at 37\u00b0C and 5% CO2. We used passage number between 3 and 7 for our experiments (Shapovalov et al., 2010; Giang et al., 2013).\n\n### Human OS cells\n\n143b human OS cells were acquired from ATCC (Manassas, VA). Cells were expanded in sterile conditions and maintained in a 37\u00b0C incubator at 5% CO2 in DMEM supplemented with 1 mM L-glutamine, 10% FBS, and 1% penicillin-streptomycin.\n\n### Osteoinduction\n\nCells were osteoinduced at confluency in their appropriate media either supplemented with 50 \u03bcg/mL ascorbate (TCI A2521) and 2.5 mM \u03b2-glycerolphosphate (USB Corp Cleveland, OH) for 7 and 14 days, or 50 ng/mL BMP2 (R&D Systems 355-BM-050/CF) for 5 days. OB differentiation was assessed by alkaline phosphatase (Thermo NBT/BCIP 1-step 34042) and alizarin red staining. Crystal violet stain (Sigma C3886) was used at 0.5% to determine total cell count as previously described (Shares et al., 2018).\n\n### Real-time RT-qPCR\n\nTotal RNA was isolated using the RNeasy kit (Qiagen 74106) and reverse transcribed into cDNA using the qScript cDNA synthesis kit (Quanta 95048-500). cDNA was subjected to real-time RT-PCR. The primer pairs used for genes of interest are outlined in Key resources table. Real-time RT-PCR was performed in the RotorGene system (Qiagen) using SYBR Green (Quanta 95072-012). Alp and Bglap gene expression was used to confirm osteogenic differentiation.\n\n### MPTP opening calcein-cobalt assay\n\nTo assess the MPTP activity, mitochondrial membrane integrity was measured using a method of calcein quenching by cobalt as described by Petronilli et al. in 1999. The assay is based on the fact that calcein accumulated in the cytosol is quenched after co-loading with cobalt, whereas calcein accumulated in mitochondria is not accessible to cobalt and therefore not quenched unless mitochondrial membranes are permeabilized. Cells were incubated with 1 \u03bcM calcein-AM (acetoxymethyl ester) in the presence of 1 mM cobalt chloride for 30 min at 37\u00b0C, washed, lifted from plates using a cell lifter, resuspended in PBS solution, and assayed using the BD Biosciences LSRII flow cytometer. Ionomycin at 1 \u03bcM was used as negative control in a set of calcein/cobalt-loaded cells to dissipate calcein signal.\n\n### Mitochondrial mass assay\n\nCells were stained with nonyl acridine orange (NAO) (Invitrogen A1372) at 100 nM, a fluorescent probe that labels cardiolipin present primarily in mitochondrial membranes (Beutner et al., 2014), for 15 min at 37\u00b0C. Stained cells were then lifted from plates with cell lifter, washed, and resuspended in PBS. NAO signal was detected in BD Biosciences LSRII flow cytometer.\n\n### Mitochondrial functional assay\n\n7 \u00d7 104 BMSCs from R26caPpif/+ (CypD GOF) mice were plated on laminin-coated 25 mm round glass coverslips and infected with Ad5-CMV-Cre or Ad5-CMV-eGFP virus at 500 MOI. Forty-eight hrs after infection, BMSCs were induced in osteogenic media. At day 0 or day 11 of osteoinduction, cells were stained with the nuclear staining Hoechst 33343 (Molecular Probes H 1339) at 0.5 \u03bcM, and the \u0394\u03c8m-dependent dye TMRE (Invitrogen T669) at 20 nM. FCCP (Abcam ab120081) at 0.5 \u03bcM was used as a negative control. Cells were imaged using inverted fluorescence microscope (Axioscope) and TMRE fluorescence signal was quantified using ImageJ. \u0394F signal is given by the difference of TMRE signal measured immediately before and 30 s after FCCP addition.\n\n### Western blot\n\nCells were lysed in a lysis buffer containing protease inhibitors and subjected to 4\u201312% sodium dodecyl sulfate polyacrylamide gel electrophoresis followed by transfer to polyvinylidene difluoride membranes and blocking in 5% dry milk reconstituted in PBST (PBS supplemented with Tween 20 at 0.05%), as previously described (Shum et al., 2016a). All antibodies were diluted in 2.5% dry milk in PBST. For CypD detection, blots were probed with monoclonal CypD antibody (RRID: AB_478283) diluted 1:1000 and HRP-conjugated goat anti-mouse antibody diluted 1:3000. To verify equal loading, blots were re-probed with either \u03b2-actin (RRID: AB_476697) or VDAC1 (RRID: AB_632587) antibody diluted 1:2000 and HRP-conjugated goat anti-mouse antibody diluted 1:5000. CypD and \u03b2-actin signals were developed with West Pico Substrate. Band densitometry was measured with Image Lab Software. CypD signal was normalized to \u03b2-actin.\n\n### Tibial intra-bone marrow AAV2(serotype 2)-Cre-DIO-caPpif -eGFP infection\n\nTransgene caPpif construct was cloned into the Double-floxed Inverted Orientation (DIO) Cre-On vector pAAV-Ef1a-DIO-eGFP-WPRE-pA (Addgene plasmid # 37084; http://www.addgene.org/37084/; RRID:Addgene_37084 \u2013 gift from Bernardo Sabatini \u2013 Saunders et al., 2012). DIO vector was cloned using the AscI and NheI restriction site, and transgene introduced through transgene-specific primers and PCR amplification. The AscI site was N-Terminal and the NheI site C-Terminal with respect to the transgene. Cloning and sequence confirmation was performed. Cloned vectors were amplified with recombination deficient bacteria (OneShot Stbl3, Invitrogen) and tested functionally for Cre-On expression by calcium phosphate transfection (Invitrogen) into HEK 293 cells constitutively expressing Cre. The AAV particles (AAV2-Cre-DIO-caPpif-eGFP) were produced at the University of North Carolina Viral Core Facility.\n\nCol1CreERt2/+;Ppiff/f and Cre-negative Ppiff/f littermate mice were anesthetized using 100 mg/kg ketamine and 10 mg/kg xylazine IP at a rate of 0.1 mL per 10 g of body weight. Hair was shaved around the joint area and 70% alcohol and iodine were used to clean the area. A 1 mL syringe with a 26 G (3/8 length) needle was inserted into the intra-bone marrow tibial space by gentle twisting and pressuring at the top of the tibiae (proximal epiphyses) in the knee joint. The hole created by the 26 G needle was expanded by lateral and whirling movements. The 26 G needle was removed and a Hamilton syringe with a 22 S needle gauge (Z15364-8, 100 \u03bcL Hamilton, Gastight 1800, needle Gauge 22S) was inserted into the expanded hole created by the 26 G needle. Ten microliters of viral solution (1.8 \u00d7 1013 viral particles/mL AAV2-Cre-DIO-caPpif -eGFP) was slowly injected by free hand into the marrow space of the tibiae (injection technique and viral load adapted from [Selenica et al., 2016]). Contralateral tibiae were injected with 10 \u03bcL of sterile PBS solution as an intra-mouse control. Immediately after the viral injection, 100 \u03bcL of 3 mg/mL tamoxifen was intra-peritoneally injected 5 days in a row to induce Cre activation. eGFP signal confirming viral infection and subsequently OB recombination was captured by in vivo image system IVIS 30 and 60 days post-infection.\n\n### In Vivo Imaging System\n\nUnder isoflurane anesthesia, lower limbs from virus-infected mice were shaved and imaged for eGFP signal using In Vivo Imaging System (IVIS) Spectrum (Caliper Life Sciences). A negative control mouse, which received only PBS intra-bone marrow injection on both tibiae, was used to subtract non-specific eGFP signal arising from bone autofluorescence.\n\nBone \u03bcCT following euthanasia, virus and PBS-injected tibiae were isolated and cleaned of excess soft tissue. Tibiae were stored at \u221280\u00b0C prior to \u03bcCT. Bones were imaged using high-resolution acquisition (10.5 \u03bcm voxel size) with the VivaCT 40 tomograph (Scanco Medical). Scanco analysis software was utilized for volume quantification.\n\nBiomechanical torsion testing immediately following \u03bcCT scanning, tibiae were subjected to biomechanical testing. The ends of the tibiae were cemented (Bosworth Company) in aluminum tube holders and tested using an EnduraTec TestBench system (Bose Corporation, Eden Prairie, MN). The tibiae were tested in torsion until failure at a rate of 1\u00b0/s. The torque data were plotted against rotational deformation to determine maximum torque and torsional rigidity. Data from virus-injected tibiae were normalized to the contralateral PBS-injected (intra-mouse control) tibiae data.\n\n### Histology\n\nAfter biomechanical testing, tibiae bones were NBF-fixed and processed for histology via decalcification in Webb-Jee 14% EDTA solution for 1 week followed by paraffin embedding. Sections were cut to 5 \u03bcm in three levels of each sample, and then stained with either TRAP or IF.\n\n### Immunofluorescence\n\nNBF-fixed tibiae were processed as above. IF was carried out using a primary anti-osteocalcin antibody (RRID:AB_10540992) diluted 1:400 or anti-GFP antibody (RRID:AB_303395) diluted 1:500, followed by incubation with anti-rabbit IgG secondary antibody conjugated with Alexa Fluor647 (RRID:AB_2722623) diluted 1:2000 or with anti-rabbit IgG secondary antibody conjugated with Alexa Fluor488 (RRID:AB_2630356), respectively. Anti-BMP2 antibody (RRID:AB_2243574) and anti-CypD antibody (RRID:AB_10864110), both diluted 1:500, were incubated simultaneously, followed by incubation with anti-rabbit IgG secondary antibody conjugated with Alexa Fluor647 (RRID:AB_2722623) and anti-mouse IgG secondary antibody conjugated with Alexa Fluor488 (RRID:AB_2576208), both diluted 1:2000. The primary antibody solution was composed of PBS, 0.1% Tween-20%, and 5% Goat Serum. Prior incubation at 65\u00b0C in 10 mM sodium citrate (pH 6.0) for 3 hr was performed for antigen retrieval. Fluoroshield Mounting Medium with DAPI (ab104139) was used to counterstain and coverslip IF-slides.\n\n### Histomorphometry\n\nTRAP or IF-stained slides were scanned in an Olympus VSL20 whole slide imager at 40\u00d7 magnification and evaluated with VisioPharm automated histomorphometry software. TRAP-stained slides were analyzed to measure the TRAP-positive area relative to total bone area in the tibiae shaft. IF-stained slides probed for osteocalcin were analyzed to measure the fluorescence signal intensity relative to total bone area of tibiae shaft. Three different levels were counted per mouse and averaged.\n\n### ChIP assay\n\nChIP assay was performed using SimpleChIP Enzymatic Chromatin IP Kit \u2013 Magnetic Beads (Cell Signaling Technology, Inc, Danvers, MA) according to the manufacturer\u2019s instructions. Briefly, cells were fixed, and DNA cross-linked with formaldehyde and homogenized. Nuclei were pelleted and chromatin was digested enzymatically, sonicated and immunoprecipitated with either anti-Smad1 antibody (RRID:AB_628261), or negative control immunoglobulin G, or positive control histone H3 antibody using protein G magnetic beads. Chromatin was eluted from immunoprecipitate complexes and cross-links reversed with NaCl and proteinase K. After purification, DNA was amplified by a PCR using primers to amplify the distal SBE region (\u22121107\u2013\u2013947) within the Ppif promoter. Band density quantification for Smad1 immunoprecipitation in both conditions was adjusted by background subtraction and normalized to total DNA input. Unspecific signal from IgG band was also subtracted from Smad1-specific signal.\n\n### Cloning of Ppif promoter into luciferase reporter and reporter activity assay\n\nMouse Ppif promoter fragments containing the \u20131.1 to \u20130.1 kb, or \u20130.37 to \u20130.1 kb, or \u20130.62 to \u20130.45 kb, or \u20131.1 to \u20130.95 kb, or \u20130.62 to \u20130.1 kb, or \u20131.1 to \u20130.45 kb region were PCR amplified from purified C3H/HeJ mouse DNA. Primers were designed to introduce CTCGAG XhoI 5\u2032 and AAGCTT HindIII 3\u2032 flanking sequences. For Ppif promoter mutagenesis, point mutations for each SBE found in the 1.1 kb Ppif promoter region were designed to substitute either a cytosine or guanine for an adenosine nucleotide in the sense strand, and therefore a complementary thymine base in the antisense strand. CTCGAG XhoI 5\u2032 and AAGCTT HindIII 3\u2032 flanking sequences were also introduced in the 1.1 kb mutated Ppif promoter, and a synthetic sequence fragment was ordered from IDT (IDT, gBlocks Gene Fragments). The fragments were then subcloned into the XhoI 3\u2019/HindIII 5' site of the promoterless pGL4.10 luciferase reporter vector. The correct insert orientation of the resulting promoter reporters was verified by sequencing. To evaluate promoter activities, the constructed Ppif-Luc reporters were transfected into ST2, MC3T3e1, C2C12, or 143b-OS cells at 0.8 \u03bcg per well in 12-well plates. The promotorless renilla luciferase vector pRL (Promega, Madison, WI) was co-transfected at 50 ng per well as a reference. Smad1 activity was further activated with either 0.8 \u03bcg/mL pCMV-Smad1 co-transfection, 50 ng/mL BMP2, or osteogenic media induction. The role of BMP/Smad was delineated by co-transfecting inhibitory Smad7 using 0.8 \u03bcg/mL pCMV-Smad7 vector, or using BMP inhibitor, Noggin (R&D systems 1967-NG-025/CF) at 0.1 \u00b5g/mL. Wnt signaling role in Ppif promoter activity was assessed using Wnt3a (R&D systems 5036-WN-010) addition in the media. Firefly and renilla luciferase activities were measured using an Optocomp 1 luminometer and a Dual Luciferase Reporter Assay System (Promega) according to the manufacturer\u2019s protocol. The firefly luciferase signal was normalized to renilla luciferase signal and expressed as relative luminescence units fold change to pCMV empty vector control.\n\n### Statistics\n\nA power analysis on normalized biomechanical data was performed since it showed the highest variance. It was determined that some quantitative outcomes would require six mice per group. We set the significance level at 5% (\u03b1=0.05) and Type II error (\u03b2) to \u226420%. For statistical analysis, we compared the difference of two simple groups independently, therefore an unpaired t-test was used when the frequency distribution of the differences between the two groups fitted a normal distribution. When left and right tibiae from the same animal was compared, we used a paired t-test. Although we analyzed independent variables and therefore independent hypothesis in the multi-group graphs (Ppiff/f: Cre+ or Cre- \u00d7 AAV-DIO or PBS), we performed ordinary one-way ANOVA using Dunnett\u2019s multiple comparisons test with a single pooled variance to further validate our statistical findings significance. Since no differences in significance were found, we maintained our t-test results.\n",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d45dbc21-e465-477f-bf0d-1ce522300f5a",
+      "submission_id": "84ffdd55-b784-48f6-8679-324a0f15a006",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yousef Abu-Amer, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75023.sa0](https://doi.org/10.7554/eLife.75023.sa0)\n\nThis study provides evidence of cyclophilin-D transcriptional regulation of osteoblast differentiation and offers new insights into the underlying mechanisms identifying BMP/Smad signaling as a major mediator. The study has significant relevance and implication to bone health and offers a strong foundation for future work to decipher its unique role in different cells of the mesenchymal lineage and relevance to various bone-related diseases.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Yousef Abu-Amer, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75023.sa1](https://doi.org/10.7554/eLife.75023.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Transcriptional regulation of cyclophilin D by BMP/SMAD signaling and its role in osteogenic differentiation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Narayan Avadhani (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Other pathways are important regulators of bone formation. It would be interesting to know if cyclophilin D is regulated by Wnt signaling, or if the regulation is BMP exclusive. Additionally, do the Ppif knock down or use of Smad inhibitor affect only the osteoblastic pathway or other skeletal-muscular pathways?\n\n2) Previous published work by the authors demonstrated that loss of cyclophilin D on Prx1+ cells did not have an effect on bone cell function and on bone mass in the limb skeleton while global deletion of cyclophilin D had strong negative consequences on bone mass and fracture healing. These findings are not easily compatible with the authors contention that BMP signaling in bone forming cells regulates mitochondrial activity, as most if not all bone forming cells arise from Prx1+ progenitors. It would be helpful if the authors could provide a stronger explanation for these disparities.\n\n3) Figure 2: rigor and presentation of data are marginal. Specificity of the binding should be tested using SBE-mutant vectors. Data should be normalized to input in both vehicle and BMP2 treated conditions.\n\n4) Figure 3: Although the Luc reporter assay is important to demonstrate functionality, an appropriate negative control (mutant) derived from the 1.1 kb Ppif construct (does not bind Ppif) is needed.\n\n5) Figure 4: The data describing Mt integrity are not very informative and should be supplemented with mitochondrial function assays.\n\nReviewer #1 (Recommendations for the authors):\n\nGeneral Comments:\n\n1. The study focuses on BMP signaling and dismisses other osteogenic pathways such as WNT and \u03b2-catenin signaling. It would be very informative and would significantly enhance the study if the authors determine if the CypD mechanism is BMP-specific or not.\n\n2. Osteogenesis and mitochondrial activity vastly change during bone diseases linked to obesity, aging, etc. It would be very exciting to determine the role of CypD in a disease/aging setting to highlight the relevance of the proposed mechanism and its potential utility as a therapeutic tool. This would constitute a major advance.\n\nSpecific comments:\n\n3. Introduction: there are several redundant statements that hinder flow and should be streamlined.\n\n4. The hypothesis is scantily articulated. All cells undergo OxPhos bioenergetic shift to facilitate differentiation. In fact, a generic argument can be made for other pathways that regulate OB differentiation. Nevertheless, the study does very little to address the hypothesis that \"MTPTP inhibition via CypD transcriptional downregulation is required to sustain OxPhos function\". The concept requires revision and better articulation\n\nResults:\n\n5. Figure 2: rigor and presentation of data are marginal. Specificity of the binding should be tested using SBE-mutant vectors. Data should be normalized to input in both vehicle and BMP2 treated conditions.\n\n6. Figure 3: Although the Luc reporter assay is important to demonstrate functionality, an appropriate negative control (mutant) derived from the 1.1 kb Ppif construct (does not bind Ppif) is needed.\n\n7. Figure 4: The data describing Mt integrity are not very informative and should be supplemented with mitochondrial function assays.\n\n8. Figure 6: the CypD GOF experiments (caCypD) corroborate previous findings in terms of osteogenesis and as such offer marginal information. At minimum, OxPhos and other Mt functional properties should be characterized in the GOF model. Furthermore, cyclosporin A is a well-known CypD inhibitor which can be used to validate this system. Despite these confirmatory findings, it remains unclear how this information advances current knowledge, which is judged as incremental (please refer to general comments).\n\nIn sum, the study requires major revision including additional experiments avoiding confirmatory data. The general role of CypD in osteogenesis is already known, yet its utility in pathologic bone loss and additional insights in its transcriptional regulation if developed further, to address novel aspects, would fill important knowledge gaps and elevate significance of this research.\n\nReviewer #2 (Recommendations for the authors):\n\nGeneral comments: The authors propose a novel hypothesis about the regulation of cell function by BMP signaling and here use bone cells as a model system to test this hypothesis. While data obtained from individual experiments are convincing, overall, several conclusions require additional data or clarification and there are some missed opportunities to strengthen the manuscript.\n\nSpecific comments:\n\n1. Previous published work by the authors demonstrated that loss of cyclophilin D on Prx1+ cells did not have an effect on bone cell function and on bone mass in the limb skeleton while global deletion of cyclophilin D had strong negative consequences on bone mass and fracture healing. These findings are not easily compatible with the authors contention that BMP signaling in bone forming cells regulates mitochondrial activity, as most if not all bone forming cells arise from Prx1+ progenitors. It would be helpful if the authors could provide a stronger explanation for these disparities.\n\n2. BMP activity in bone is known to decline with age, consistent with the idea that reduced BMP signaling may be a cause of age-related bone loss. The authors have an opportunity to directly examine BMP signaling in the aging skeleton and determine if reduced signaling correlated with mitochondrial pore opening and loss of bone cell function.\n\n3. The disease FOP is a gain of function of BMP signaling. The authors might consider examining the mouse model of FOP to see if there is a change in the mitochondrial physiology/pore opening in this disease.\n\n4. Other pathways are important regulators of bone formation. It would be interesting to know if cyclophilin D is regulated by Wnt signaling, or if the regulation is BMP exclusive.\n\nReviewer #3 (Recommendations for the authors):\n\nThis is a relatively well done study which uses promoter analysis for transcription factor (Smad) binding using mutational analysis of promoter-reporter constructs and ChIP analysis. They use mouse ST2 and MC3T3-e1 cells for in vitro studies and confirm most of these in vitro findings using CypD null mice. In general, this manuscript should be acceptable for publication in eLife.\n\nThe main concern is that the studies may not address the wide enormity of this pathway with multiple BMPs and Smads affecting an array of physiological process. For example, do the Ppif knock down or use of Smad inhibitor affect only the osteoblastic pathway or other skeletal-muscular pathways? The second point is that the transcription pathway is active in a basal level suggesting that there may be some dose-effect in the modulation of different physiological pathway. The authors do not address this issue.\n\nMost of the reagents are commercially available and this is not an issue.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Transcriptional regulation of cyclophilin D by BMP/SMAD signaling and its role in osteogenic differentiation\" for further consideration by eLife. Your revised article has been evaluated by Mone Zaidi (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been modestly improved but there are some important remaining issues that need to be addressed, as outlined below. These concerns must be addressed experimentally before the manuscript can be considered further.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have not satisfactorily addressed my major concerns, reiterated below:\n\nPrior publications by the authors reported that global deletion of cypD resulted in no obvious skeletal phenotype until mice began to age when wt mice lost bone mass and cypD null mice did not undergo age related bone loss. Next they reported that global loss of cypD enhanced fracture repair in older mice. They later published that loss of cypD in Prx1+ cells did not positively affect bone function stating \"lineage deletion of cypD is not sufficient to improve fracture repair,\" and that it was the systemic loss of cypD that affected the skelton. These data raise 3 issues:\n\na) In mice, Prx1+ cells make up the majority of cells forming the fracture callus and new bone, making it difficult to understand what osteolineage-specific effects are regulated by cypD.\n\nb) Fracture repair cannot occur in the absence of BMP signaling in Prx1+ cells; if BMP signaling is an important physiological regulator of cypD in osteolineage cells, there should be a relationship between the loss of BMP signaling and loss of cypD in this population.\n\nc) Without addressing the in vivo models suggested (FOP, aging,) and demonstrating that changes in BMP signaling in vivo in a physiologically relevant model result in changes in cypD in osteolineage cells, the study does not reach a level of physiological significance.\n\nSince the authors have utilized a variety of mouse models and have not reported the complete phenotype of any, I suggest including a table that clearly delineates and compares the specific skeletal manifestations of cypD genetic deletion, cypD pharmacological deletion, and lineage-specific cypD deletion. Bone mass, bone strength and ability to repair fractures should be included as well as levels of BMP signaling in the skeletal tissues that demonstrate a phenotype.\n",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca32c351-2d87-481c-abf8-0b35ed1e7a84",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C1",
+      "claim": "Multiple BMP-dependent Smad-binding elements (SBEs) are present in the 1.1 kb 5' upstream region of both human PPIF and mouse Ppif genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found multiple BMP-dependent Smad-binding elements (SBEs) in the 1.1 kb 5' upstream region of both human PPIF and mouse Ppif genes (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on in silico analysis using PROMO online platform and shown in Figure 1A diagram.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "aea531a7-753d-413a-90b9-31ef41a96bdd",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C2",
+      "claim": "Smad1 overexpression downregulates CypD mRNA expression in ST2 and MC3T3-e1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that CypD mRNA was downregulated after Smad1 overexpression, whereas osteogenic marker Runx2, a readout of BMP/Smad activity, was upregulated (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-qPCR data from transfection experiments shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "74daf6d8-5945-411f-8d60-f4b8acee0248",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C3",
+      "claim": "BMP2 treatment significantly induces Smad1-Ppif promoter interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, BMP2 treatment significantly induced Smad1-Ppif interaction. Band density quantification revealed 2.5-fold increase of Smad1-Ppif interaction in the BMP2-treated samples (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP assay data with PCR analysis and band density quantification shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "a2f3a3d6-98b8-42c3-921e-1fac9a2fd9ac",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C4",
+      "claim": "Smad1 binds the CypD gene (Ppif) promoter in BMP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Smad1 binds the CypD gene (Ppif) promoter in BMP-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from ChIP assay results showing increased Smad1-Ppif interaction with BMP2 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "271deedd-b717-4275-bbda-5c5a2fc2a741",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C5",
+      "claim": "Smad1 significantly decreases the luciferase signal from the 1.1 kb Ppif-luc promoter-reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3C shows that Smad1 significantly decreased the luciferase signal from the 1.1 kb Ppif-luc promoter-reporter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Dual luciferase reporter assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "2aa3817a-49cf-490c-87d5-b6d89efa788f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C6",
+      "claim": "Only the full-length 1.1 kb Ppif-luc reporter showed Ppif activity repression upon Smad1 transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, only the full-length 1.1 kb Ppif-luc reporter showed Ppif activity repression upon Smad1 transfection (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of luciferase reporter assays with different promoter constructs shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7e43c8cc-7ccb-4a1a-89c2-a52d099820ac",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C7",
+      "claim": "BMP/Smad signaling is a transcriptional repressor of CypD.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our data indicate that BMP/Smad signaling is a transcriptional repressor of CypD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple experimental approaches including transfection, ChIP, and luciferase reporter assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "14862dfd-b94d-4148-93cd-643ba4161ce3",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C8",
+      "claim": "Inhibitory Smad7 rescues Ppif promoter activity in Smad1-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To further delineate the role of BMP/Smad signaling in Ppif repression, we used the inhibitory Smad7 which rescued Ppif promoter activity in Smad1-transfected cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data with Smad7 co-transfection shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d7c48d43-b77c-430c-8cbb-a6868d16f091",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C9",
+      "claim": "The 1.1 kb mutated Ppif-luc reporter co-transfected with pCMV-Smad1 rescued Ppif promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1.1 kb mutated Ppif-luc reporter co-transfected with pCMV-Smad1 rescued Ppif promoter activity (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay with SBE-mutated promoter construct shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "015f2449-f8f0-4cad-979a-ab87b2878a84",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C10",
+      "claim": "BMP2 and osteogenic media downregulate the luciferase signal from the Ppif promoter reporter, whereas Noggin rescues Ppif activity.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP2 and osteogenic media downregulated the luciferase signal, whereas Noggin rescued Ppif activity (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data with BMP2 treatment and Noggin inhibition shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "6fa86415-c907-498a-a6e2-039e7d5b674e",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C11",
+      "claim": "Mouse myogenic C2C12 cell line showed opposite effects on Ppif promoter activity under BMP-dependent Smad activation compared to osteogenic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mouse myogenic C2C12 cell line showed opposite effects under BMP-dependent Smad activation (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data in C2C12 cells shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "df9e6b12-21a4-477b-aef8-745d0eb7d74f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C12",
+      "claim": "PPIF activity is regulated by Smad-dependent signaling in myogenic cells but the direction of PPIF regulation is tissue specific.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that PPIF activity is also regulated by Smad-dependent signaling in myogenic cells but suggest that the direction of PPIF regulation is tissue specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of osteogenic and myogenic cell responses to Smad1 activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "21d4afe7-e389-4dc0-8824-b1accb1a99f0",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C13",
+      "claim": "BMP/Smad signaling transcriptionally represses Ppif promoter activity in osteogenic cells regardless of their embryonic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data support our hypothesis that BMP/Smad signaling transcriptionally represses Ppif promoter activity in osteogenic cells regardless of their embryonic origin and consequently downregulates CypD expression during osteogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on experiments in both mesodermal (ST2) and neural crest-derived (MC3T3-e1) osteogenic cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "db768423-10a1-43fb-8015-c0b6e4136f95",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C14",
+      "claim": "Primary BMSCs, ST2 cells, and MC3T3-e1 cells undergo osteoblast differentiation confirmed by alkaline phosphate and alizarin red staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 shows that primary BMSCs isolated from mouse long bones, mouse bone marrow-derived osteogenic cell line ST2, and mouse calvaria-derived osteogenic cell line MC3T3-e1 underwent OB differentiation confirmed by alkaline phosphate and alizarin red staining (Figure 4A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Histological staining data shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "6b86b23a-e74c-48e7-ad5d-1df4dbf4bd0c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C15",
+      "claim": "Osteogenic differentiation is accompanied by upregulation of osteogenic markers Alp and Bglap in BMSCs, ST2, and MC3T3-e1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 shows that primary BMSCs isolated from mouse long bones, mouse bone marrow-derived osteogenic cell line ST2, and mouse calvaria-derived osteogenic cell line MC3T3-e1 underwent OB differentiation confirmed by alkaline phosphate and alizarin red staining (Figure 4A\u2013B) and upregulation of osteogenic markers Alp and Bglap.(Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-PCR data shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f51010e1-2589-4a88-8e82-9d8992d56c98",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C16",
+      "claim": "Osteogenic differentiation is accompanied by downregulation of CypD gene (Ppif) mRNA expression in BMSCs, ST2, and MC3T3-e1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our hypothesis, osteogenic differentiation was accompanied by downregulation of CypD gene, Ppif, mRNA expression in all these cell types (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-PCR data shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7a170358-957d-47b7-9fd1-24ffee30c5bd",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C17",
+      "claim": "Human BMSCs show downregulation of CypD gene (PPIF) mRNA expression during osteogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that this effect is not species-specific, we analyzed human BMSC RNAseq dataset from our previous publication (Shum et al., 2016a) and observed downregulation of CypD gene, PPIF, mRNA expression in osteoinduced cells when compared to undifferentiated cells (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNAseq data analysis from previous publication shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "32a8ca48-6c06-45c3-8615-7707fa405113",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C18",
+      "claim": "CypD protein content decreases during osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein content of CypD correspondingly decreased during OB differentiation as measured with western blot (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Western blot data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "650369c9-71ff-49d1-8078-6d513676707e",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C19",
+      "claim": "MPTP activity decreases during osteoblast differentiation as measured by calcein-cobalt assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The assay showed that calcein signal increased at day 14 of OB differentiation when compared to day 0 indicating lower MPTP activity (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calcein-cobalt assay data measured by flow cytometry shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d343ca92-f930-4dbb-92d1-edadbfc96af3",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C20",
+      "claim": "Mitochondrial mass does not change during osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "No changes were detected in the total mitochondrial mass during OB differentiation as labeled by nonyl acridine orange (Figure 4G), therefore confirming that calcein signal increase is in fact caused by a lower pore activity and not by an increased mitochondrial compartment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "NAO staining data measured by flow cytometry shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "a8e4d418-d692-4b10-afef-e94580c9951b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C21",
+      "claim": "CypD expression is downregulated and MPTP activity is decreased during osteogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data indicate that CypD expression is downregulated and MPTP activity is decreased during osteogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on mRNA, protein, and functional MPTP assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f06cfd4f-1821-4110-afd6-1bb1ea98e517",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C22",
+      "claim": "Wnt3a at concentrations of 25 ng and above showed no effect on Ppif promoter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even Wnt3a concentrations of 25 ng and above, previously reported to activate OB differentiation and mitochondrial function in osteogenic cells (Smith and Eliseev, 2021), showed no effect on Ppif activity (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Dose-response luciferase reporter assay data with Wnt3a treatment shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "640cb37e-68bc-4b97-8951-b659c4ac3e99",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C23",
+      "claim": "143b osteosarcoma cells cannot undergo osteogenic differentiation due to Runx2 proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that the human osteosarcoma (OS) cell line 143b cannot undergo osteogenic differentiation due to Runx2 proteasomal degradation (Shapovalov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "dfab6cd2-0822-44d4-918f-e878e7595a0b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C24",
+      "claim": "143b osteosarcoma cells fail to upregulate late osteogenic markers (IBSP, BGLAP) upon BMP2 treatment despite upregulating early marker RUNX2.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the 143b-OS cells' inability to fully differentiate upon BMP2 osteogenic induction by comparing their mRNA expression of osteoblastic differentiation markers to that of human non-cancerous osteoblastic cell line, hFOB (Figure 5A). While hFOB cells upregulate ALP, IBSP, and BGLAP, 143b cells fail to upregulate these osteogenic markers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-PCR data comparing hFOB and 143b cells shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "04662de6-1457-4bad-8771-856c75cf2b4e",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C25",
+      "claim": "Smad1 transfection leads to downregulation of CypD mRNA expression in 143b osteosarcoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in the ST2 and MC3T3e1 cell lines, pCMV-Smad1 transfection led to downregulation of CypD mRNA expression in 143b-OS cells (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-PCR data from 143b cells shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "343512e6-3622-49f1-9b9a-e4fc518742e8",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C26",
+      "claim": "Smad1 decreases Ppif promoter activity when co-transfected with the full-length 1.1 kb Ppif-luc reporter in 143b osteosarcoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in the ST2 and MC3T3e1 cell lines, pCMV-Smad1 transfection led to downregulation of CypD mRNA expression in 143b-OS cells (Figure 5B) and decreased Ppif promoter activity when co-transfected with the full-length 1.1 kb Ppif-luc reporter (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Luciferase reporter assay data from 143b cells shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "656110be-ff1c-44cb-bba0-6c9126521a1c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C27",
+      "claim": "BMP/Smad signaling exerts inhibitory effect on the Ppif gene as a direct transcriptional repressor and not as an indirect result of osteogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our data strongly indicate that BMP/Smad signaling exerts inhibitory effect on the Ppif gene as a direct transcriptional repressor and not as an indirect result of osteogenic differentiation (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion based on experiments in differentiation-arrested 143b cells showing Ppif repression by Smad1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "5c4a3d1a-5381-4a47-b2a2-da14bb05ac09",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C28",
+      "claim": "CypD knock-out mice present with higher BMSC OxPhos function and osteogenic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that CypD knock-out (KO) mice, a loss-of-function (LOF) model of the MPTP, present with higher BMSC OxPhos function and osteogenic potential (Shum et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "23e6d6e3-2f8c-46e9-865d-d66e61da8724",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C29",
+      "claim": "CypD KO BMSCs present pro-osteogenic gene signatures based on RNAseq transcriptome analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNAseq transcriptome analysis showed that CypD KO BMSCs present pro-osteogenic gene signatures (Shares et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "6acaab30-b126-4838-b9a4-d1d15a6e4952",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C30",
+      "claim": "MC3T3e1 cells expressing constitutively active CypD (caCypD) K166Q mutant show impaired osteogenic differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressing caCypD showed impaired osteogenic differentiation as evidenced by lower expression of OB marker genes, Runx2, Alp, and Bglap, at both days 7 and 14 in osteogenic media (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Real-time RT-PCR data from caCypD-expressing MC3T3e1 cells shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8468862a-2a3d-4486-95ba-f1831f42a36c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C31",
+      "claim": "Osteoblast-specific, inducible 2.3 kb Col1CreERt2;R26caPpif/+ BMSCs are incapable of completing osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteoinduced caCypD-expressing cells presented with decreased osteogenic differentiation and OB markers when compared to control cells (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Histological staining and RT-PCR data from BMSCs of Col1CreERt2;R26caPpif/+ mice shown in Figure 6E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "e1eb333b-601d-45be-996b-922ab13f741b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C32",
+      "claim": "CypD overexpression decreases TMRE signal and mitochondrial function in BMSCs and osteoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "CypD overexpression clearly decreased TMRE signal, and therefore mitochondrial function and OxPhos capacity in infected, eGFP-expressing Cre+, cells compared to non-infected, Cre-, cells in both BMSCs at day 0 and OBs at day 11 (Figure 6H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TMRE fluorescence microscopy data from adeno-Cre infected R26caPpif/+ BMSCs shown in Figure 6H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "b3cfdec9-9cd3-4536-8ec8-ec82fe12e1cd",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C33",
+      "claim": "Downregulation of CypD is an important part of osteogenic program.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our results indicate that CypD GOF disrupts mitochondrial function and impairs OB differentiation and thus, downregulation of CypD is an important part of osteogenic program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on gain-of-function experiments in vitro and in vivo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "b85e025e-0d6f-4a84-be19-bf0d9c048405",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C34",
+      "claim": "Downregulation of BMP/Smad signaling markers is accompanied by significant upregulation of CypD gene (Ppif) in aged mouse bones.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, downregulation of markers of BMP/Smad signaling was accompanied by significant upregulation of CypD gene, Ppif, in aged mouse bones (top left table).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of publicly available RNAseq dataset on bone aging shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7b432501-0b34-41ea-a09e-8afd069ce2f9",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C35",
+      "claim": "Upregulation of BMP/Smad signaling during active phase of bone formation (day 14 post-fracture) in mouse fracture callus is accompanied by significant downregulation of Ppif.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, upregulation of BMP/Smad signaling during active phase of bone formation (day 14 post-fracture) in mouse fracture callus was accompanied by significant downregulation of Ppif (top right table).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of publicly available RNAseq dataset on fracture shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "1d2da481-fd79-401e-bacb-10ae8c896338",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C36",
+      "claim": "In conditions leading to pathological calcification such as osteoarthritis and cardiac valve calcification, PPIF expression is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that in conditions leading to pathological calcification such as osteoarthritis and osteophyte formation (Dunn et al., 2016) and cardiac valve calcification (Huang et al., 2019) and associated with upregulated BMP/Smad signaling, PPIF expression is decreased (bottom tables).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of publicly available datasets on pathological calcification shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "0e2bf379-ec09-486c-90c7-c55f353fde5e",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C37",
+      "claim": "BMP2 levels are decreased in bones of aged mice compared to young mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunofluorescence (IF), we indeed detected decreased levels of BMP2 in bones of aged mice when compared to young mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data from bone samples of 3- and 18-month-old mice shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "91d1ba30-9599-46cf-bd8d-d2f009aa2209",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C38",
+      "claim": "CypD levels are increased in bones of aged mice compared to young mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, levels of CypD correspondingly increased (Figure 7\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data from bone samples of 3- and 18-month-old mice shown in Figure 7\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c0453bb0-3286-417a-8c5a-10c46aae4d10",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C39",
+      "claim": "BMP2 signal is significantly increased in the fracture callus at day 14 post-fracture compared to unfractured bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the published RNAseq dataset described above (Figure 7\u2014figure supplement 1A, top right table), BMP2 signal was significantly increased in the callus at day 14 post-fracture when compared to the unfractured bone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data from fracture samples shown in Figure 7\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "20f5bcf3-1b01-4c06-b3bb-d30bdea32b31",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C40",
+      "claim": "The increase in BMP2 signal in fracture callus at day 14 is accompanied by significant decrease in CypD signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed increase in BMP2 signal was accompanied by significant decrease in CypD signal (Figure 7\u2014figure supplement 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data from fracture samples shown in Figure 7\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "0d408893-5c72-4c80-96b4-c18daec808af",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C41",
+      "claim": "Previously published transcriptomic data and the authors' own studies indicate inverse correlation between BMP signaling and CypD expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, previously published transcriptomic data and our own studies indicate inverse correlation between BMP signaling and CypD expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of multiple datasets and immunofluorescence experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d7760c59-7c43-4dd8-9b02-51f3bd0b800b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C42",
+      "claim": "CypD deletion produces protective effects against bone loss in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CypD deletion produces protective effects against several degenerative processes, including bone loss in aged mice (Shum et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to previous publication by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "2862872a-6e79-4cee-aacc-edf6813b653c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C43",
+      "claim": "Osteoblast-specific CypD deletion protects against bone loss in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "An important observation in this experimental design is that OB-specific CypD deletion is in fact protecting against bone loss in aging, corroborating our previous results when we investigated the effects of CypD global deletion in mice (Shum et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of current conditional knockout data with previous global knockout data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c3ebe306-c3a5-4782-a59a-4146383031fb",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C44",
+      "claim": "Osteoblast-specific CypD deletion increases torsional rigidity in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, biomechanical testing showed increased torsional rigidity in control tibiae of Cre+ (Ppif-/-) mice when compared to Cre- (Ppif+/+) mice (Figure 7H), indicative of an increased bone strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Biomechanical torsion testing data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "436d82f8-bac7-4fe2-824b-628e8d12f652",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C45",
+      "claim": "Osteoblast-specific CypD deletion increases bone volume fraction in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bone volume fraction measured with micro-computed tomography (\u03bcCT), a strong predictor of bone strength (Nazarian et al., 2008), provided further evidence that OB-specific CypD deletion effectively protects against bone degeneration in aging (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Micro-CT data shown in Figure 7G with reference to bone strength prediction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8abceea7-fae7-4c92-bbee-c2b0ba2ec7b5",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C46",
+      "claim": "AAV-DIO-delivered CypD re-expression decreases cortical thickness compared to contralateral PBS-injected tibiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Although bones with AAV-DIO-delivered CypD re-expression showed decreased cortical thickness and torsional rigidity when compared to their respective contralateral PBS-injected tibiae (Figure 7F and H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Micro-CT and biomechanical testing data shown in Figure 7F and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8eca5e99-a3cc-43be-b94d-983ed9cc4c8c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C47",
+      "claim": "CypD re-expression in Cre+ mice significantly decreases normalized cortical thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalized data showed a significant decrease in cortical thickness in the virus-infected Cre+ mice (Figure 7I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Normalized micro-CT data shown in Figure 7I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c4544c50-773d-4e64-bc3e-1f61b5beeb27",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C48",
+      "claim": "CypD re-expression decreases tibial biomechanical properties and increases bone fragility in virus-injected bones from Cre+ mice compared to Cre- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes were sufficient to decrease tibial biomechanical properties and increase bone fragility in virus-injected bones from Cre+ mice when compared to Cre- mice (Figure 7K\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Normalized biomechanical testing data shown in Figure 7K-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "18f2915c-81c8-48f4-8a7c-59894a60df88",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C49",
+      "claim": "CypD re-expression decreases osteocalcin immunofluorescence signal in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "CypD re-expression and GOF also led to decreased OB function in vivo as confirmed by decreased osteocalcin IF (Figure 7D), recapitulating the results we have observed in vitro (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence data from bone sections shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "92c70917-dd16-4f38-a2ab-b0097e2ef3bb",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C50",
+      "claim": "CypD re-expression does not change osteoclast activity measured by TRAP staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Since OB function is described to partially regulate osteoclast formation, recruitment and maturation, we analyzed osteoclast activity by tartrate-resistant acid phosphatase (TRAP) staining (Figure 7E) and found no differences between the AAV-DIO-injected tibiae of Cre+ and Cre- mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "TRAP staining data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "46dda2bb-94c9-4b9d-ba2f-02ab6f49c56a",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C51",
+      "claim": "Osteoblast-specific CypD re-expression and gain-of-function detrimentally affect osteoblast function and impair bone phenotype in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our aggregated data present strong evidence that OB-specific CypD re-expression and GOF detrimentally affect OB function and it is sufficient to impair bone phenotype in aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on multiple in vivo measurements including micro-CT, biomechanics, and histology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "db9b6a82-443a-45f9-8ba3-a5a59f9f2960",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C52",
+      "claim": "The mitochondrial permeability transition pore (MPTP) is a non-selective high-conductance channel within the inner mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial permeability transition pore (MPTP) is a non-selective high-conductance channel within the inner mitochondrial membrane (IMM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about MPTP structure and location.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c43244fd-ab35-4106-bb5a-b3411fd26a93",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C53",
+      "claim": "MPTP opening leads to increased permeability of the inner mitochondrial membrane and entry of solutes up to 1.5 kDa of molecular mass.",
+      "claim_type": "EXPLICIT",
+      "source": "MPTP opening leads to the increased permeability of the IMM and entry of solutes up to 1.5 kDa of molecular mass, that is, mitochondrial permeability transition (Bernardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on MPTP function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "240df62c-0d26-43c8-bdd3-63f1a733fbd1",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C54",
+      "claim": "CypD is the only genetically proven opener of the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, several MPTP opening effectors have been described, but the mitochondrial matrix protein cyclophilin D (CypD) remains the only genetically proven opener of the MPTP (Briston et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on CypD's role in MPTP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "2cd05532-6fa0-401e-b766-4dfe8db24e4b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C55",
+      "claim": "CypD is encoded by the nuclear gene PPIF.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by the nuclear gene PPIF, CypD is a chaperone protein \u2013 peptidyl-prolyl cis-trans isomerase F \u2013 thought to be involved in protein folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about CypD gene and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "0c07e7a4-0d7f-4d0c-bf86-88e8c19b140b",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C56",
+      "claim": "CypD is imported into mitochondria where it can actively bind to the mitochondrial ATP synthase, decreasing the threshold for pore opening and increasing opening probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarded as the master regulator of MPTP, CypD is imported into mitochondria where it can actively bind to the mitochondrial ATP synthase, decreasing the threshold for pore opening and increasing opening probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about CypD mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "68a7395f-6358-4e20-b190-8ce1b610307f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C57",
+      "claim": "Post-translational modifications such as acetylation and phosphorylation exert regulatory properties on CypD activity and MPTP opening.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of post-translation modifications, such as acetylation and phosphorylation, is known to exert regulatory properties on CypD activity, and consequently on MPTP opening (Guti\u00e9rrez-Aguilar and Baines, 2015; Porter and Beutner, 2018; Amanakis and Murphy, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published literature on CypD post-translational regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "37a10148-21e6-4e1e-9f8d-c9384ce77422",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C58",
+      "claim": "CypD expression and activity are cell-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "CypD expression and activity are cell-specific (Laker et al., 2016) and can be regulated during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on cell-specific CypD expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8eb33e02-a552-4527-b659-2e2db41abe87",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C59",
+      "claim": "Higher ROS levels due to OxPhos activation can lead to MPTP opening and mitochondrial dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher ROS levels due to OxPhos activation can lead to deleterious effects including opening of the MPTP and consequently blunting of mitochondrial function (Carraro and Bernardi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on ROS-induced MPTP opening.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "5e802f44-a2fc-47f6-8e6a-47e688ea68b3",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C60",
+      "claim": "CypD downregulation has been reported during neuronal and cardiomyocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an inhibition due to downregulation of CypD has been reported during neuronal and cardiomyocyte differentiation (Eliseev et al., 2007; Hom et al., 2011; Lingan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published literature on CypD downregulation during differentiation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "5b3e0645-43d8-4ca3-b69e-4bb7ee85d43e",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C61",
+      "claim": "Induced pluripotent stem cell reprogramming is accompanied by transient MPTP opening and CypD expression upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, induced pluripotent stem cell reprograming is accompanied by a metabolic shift from OxPhos to glycolysis and not surprisingly, by transient MPTP opening and CypD expression upregulation (Ying et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on CypD during iPSC reprogramming.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "23fd439e-6c5d-4c1f-8d18-f70ac46c656c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C62",
+      "claim": "BMP signaling pathway is an important driver of cell differentiation and maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The bone morphogenic protein (BMP) signaling pathway is an important driver of cell differentiation and maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about BMP signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f9ef75e6-4aa6-4300-97be-e440efe285a0",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C63",
+      "claim": "BMPs regulate processes from embryogenesis and development to adult tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "BMPs are shown to regulate early processes from embryogenesis and development to adult tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about BMP function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "36df1e6d-59fc-4816-ad79-6f7e764b1aea",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C64",
+      "claim": "Osteogenesis and osteoblast differentiation are controlled at least in part via BMP/Smad canonical signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteogenesis and osteoblast (OB) differentiation are controlled at least in part via BMP/Smad canonical signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about osteogenic differentiation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "969678e7-b3bd-4265-bc31-57f09e8df8dd",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C65",
+      "claim": "During osteogenic differentiation, activation of the transcription factor Runx2 is mediated by the BMP/Smad signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "During osteogenic differentiation, activation of the transcription factor Runx2 is mediated by the BMP/Smad signaling pathway initiating a cascade of downstream osteogenic marker genes expression (Bianco and Robey, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on Runx2 activation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f4374107-9cdf-45a9-b7af-a4429074a2d8",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C66",
+      "claim": "Bone marrow stromal cells shift their bioenergetic profile toward OxPhos during osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our lab and others have demonstrated that bone marrow stromal (a.k.a. mesenchymal stem) cells (BMSCs) shift their bioenergetic profile toward OxPhos during OB differentiation (Shum et al., 2016a; Feigenson et al., 2017; Colaianni et al., 2018; Shares et al., 2018; Yu et al., 2019; Smith and Eliseev, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to multiple published studies including authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "38919b2d-5d62-4770-8f14-aec90ecec44c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C67",
+      "claim": "Osteoblast function involves bone matrix deposition, an energy-consuming process highly dependent on mitochondrial bioenergetics and OxPhos activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since OB function involves bone matrix deposition, an energy-consuming process highly dependent on mitochondrial bioenergetics and OxPhos activity, we hypothesized that MPTP inhibition via CypD transcriptional downregulation is mediated by BMP/Smad signaling and required to sustain OxPhos function and support osteogenic differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about osteoblast function combined with hypothesis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7d77eb79-e893-453b-acd5-256fbc0d2a69",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C68",
+      "claim": "Differentiated osteoblasts produce more ROS due to higher OxPhos activity.",
+      "claim_type": "IMPLICIT",
+      "source": "Since a higher OxPhos activity, as seen in differentiated OBs, is described to produce more ROS (Barja, 1999; Dr\u00f6se and Brandt, 2012; Suski et al., 2018; Turrens, 1997; Figure 4\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "References to published literature and MitoSox data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "4956cfb8-728e-4558-8436-4633f5c91dbb",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C69",
+      "claim": "Acetylation of CypD at K166 increases CypD activity and MPTP opening and can be mimicked by K166Q mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that acetylation of CypD at K166 increases CypD activity and MPTP opening and can be mimicked by K166Q mutation (Alkalaeva et al., 2009; Porter and Beutner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published literature on CypD K166 acetylation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d841aa69-5081-4981-8217-92dd429aeaee",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C70",
+      "claim": "Smad7 competitively inhibits the interaction of R-Smads to the cytoplasmic domain of their respective cell receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Smad7 competitively inhibits the interaction of R-Smads to the cytoplasmic domain of their respective cell receptors, therefore preventing R-Smad recruitment and phosphorylation, and consequently nuclear translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about Smad7 mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "4e40f255-7676-435e-922c-1a0820e88d02",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C71",
+      "claim": "Smads can act as either promoter repressors or activators in a gene-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This bi-directional effect of Smads on gene regulation is well described. Smads can either act as promoter repressors or activators in a gene-specific manner (Massagu\u00e9 et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on Smad bidirectional regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f80790ae-3529-4c37-9805-d603725eb81a",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C72",
+      "claim": "Cell/tissue specification is driven by selective methylation of promoter regions which changes chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue-specific effect of Smad1 on Ppif can be explained, for instance, by the fact that cell/tissue specification is driven by selective methylation of promoter regions which changes chromatin accessibility (Atlasi and Stunnenberg, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on epigenetic regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "44ce4f27-6b5d-4a03-a32d-705c74f336cc",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C73",
+      "claim": "BMP signaling is suppressed during myogenic differentiation showing marked upregulation of Noggin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, BMP signaling is suppressed during myogenic differentiation showing marked upregulation of Noggin expression (Ono et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to published literature on BMP signaling in myogenesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c7dc479b-09ea-478c-ab64-3d516666df03",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C74",
+      "claim": "CypD deletion is shown to present a protective phenotype against aging in several tissue-specific mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "CypD deletion is shown to present a protective phenotype against aging in several tissue-specific mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement based on multiple published studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7a6cf50d-dff6-417b-b406-e80f5d3586ff",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C75",
+      "claim": "CypD ablation in mice resulted in diminished disease progression for reperfusion injury of the heart and brain, axonopathy, and other neurodegenerative and demyelinating diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CypD ablation in mice also resulted in diminished disease progression for some pathologies, such as reperfusion injury of the heart and brain, axonopathy, and other neurodegenerative and demyelinating diseases (Baines et al., 2005; Schinzel et al., 2005; Giorgio et al., 2010; Halestrap and Richardson, 2015; Ahier et al., 2018; Gauba et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to multiple published studies on CypD deletion effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "0eb72209-ca43-4da8-b267-59ba69459ac5",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C76",
+      "claim": "Cardiomyocytes unable to downregulate CypD during embryonic development can cause congenital heart defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiomyocytes unable of downregulating CypD during embryonic development can cause congenital heart defects, secondary to defects in MPTP activity and myocyte differentiation (Hom et al., 2011; Lingan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published studies on CypD in cardiac development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "c8b37cda-28d4-438c-80cc-c6c95d3642c0",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C77",
+      "claim": "The progression of Alzheimer's disease is accelerated by higher CypD levels and MPTP activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The progression of Alzheimer's disease is accelerated by higher CypD levels and MPTP activity, leading to further mitochondrial stress and neuronal exhaustion (Alavian et al., 2014; Gauba et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published studies on CypD in Alzheimer's disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "b834fe82-574c-464e-ab20-45f565db5c9f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C78",
+      "claim": "Treatment with CypD inhibitors can reverse collagen VI myopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Collagen VI myopathies are well described and established pathologies where CypD overexpression plays a major role, and as expected, treatment with CypD inhibitors can reverse the disease (Giorgio et al., 2010; Zulian et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published studies on CypD inhibitors in myopathies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "ba13fb0e-75ca-4dcd-b438-ad1303fa8ba7",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C79",
+      "claim": "Higher OxPhos in BMSCs correlates with better spinal fusion outcomes in both human patients and in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, we recently reported that higher OxPhos in BMSCs correlates with better spinal fusion outcomes in both human patients and in a mouse model (Laura et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to authors' previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "fbc6582c-1a4c-4347-ac45-5f584cdc95b5",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C80",
+      "claim": "OxPhos is activated while MPTP is inhibited via CypD downregulation during osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the evidence collected in other groups' studies, our previous studies, and the present study points that OxPhos is activated while MPTP is inhibited via CypD downregulation during OB differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion integrating current and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "062b7927-f825-43aa-bf37-209faa52e48a",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C81",
+      "claim": "Bones from aged mice present higher CypD levels when compared to young mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that bones from aged mice present higher CypD levels when compared to young mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Immunofluorescence data from aged vs young mouse bones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "8f042499-565f-41a6-85cb-f53d7dfc2084",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C82",
+      "claim": "CypD/MPTP upregulation is present in several tissues during aging and plays a role in the onset and progression of several degenerative pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "This result goes along with studies showing that CypD/MPTP upregulation is present in several tissues during aging and as discussed, such upregulation plays a role in the onset and progression of several degenerative pathologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement based on literature review and current findings.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "5a920d5a-5dd5-4c89-ba3a-09caeacba5ef",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C83",
+      "claim": "CypD overexpression for a period of 2 months was sufficient to decrease bone mechanical properties in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though aged skeleton is characterized by a very low turnover rate, CypD overexpression for a total period of only 2 months was sufficient to decrease bone mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Biomechanical testing data from in vivo CypD re-expression experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "123aadda-6f6c-4751-83da-3f48528865a9",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C84",
+      "claim": "The BMP/Smad-Ppif axis is relevant for pathological ossification/calcification conditions such as osteoarthritis and cardiac valve calcification.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, RNAseq data from pathological ossification/calcification conditions, such as osteoarthritis and osteophyte formation (Dunn et al., 2016) and cardiac valve calcification (Huang et al., 2019), suggested the inverse correlation between BMP signaling and CypD expression in these pathologies. Therefore, the BMP/Smad-Ppif axis is also relevant for these pathological conditions and can be aimed as a potential therapeutic target as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of published RNAseq datasets on pathological calcification.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "e1713382-5ce5-4564-83cc-fdb5f3a0c4e9",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C85",
+      "claim": "CypD inhibitors can protect against injury after reperfusion in heart and brain in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in the heart and brain have shown that CypD inhibitors can protect against injury after reperfusion in animal models (Halestrap and Richardson, 2015; Warne et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published studies on CypD inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "d94e2e41-86c7-4941-8eda-f573bc44c8f4",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "claim_id": "C86",
+      "claim": "Lack of target validation and understanding of CypD regulatory pathway has contributed to failed Phase III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the lack of target validation and better understanding of CypD regulatory pathway has contributed to failed Phase III clinical trials (Nighoghossian et al., 2015; Ong et al., 2017; Briston et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to published clinical trial reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a26c74a1-0f40-4930-a70c-8f046be2649a",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "BMP/Smad signaling transcriptionally represses the CypD gene (Ppif) in osteogenic cells. Multiple Smad-binding elements (SBEs) are present in the Ppif promoter, Smad1 binds to this promoter in a BMP-dependent manner, and Smad1 overexpression or BMP2 treatment decreases Ppif promoter activity and CypD mRNA expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 and C13 provide converging evidence from in silico analysis (C1), transfection experiments (C2), ChIP assays (C3-C4), luciferase reporter assays (C5-C6, C9-C10), and rescue experiments with Smad7 and mutated promoters (C8-C9). The data consistently demonstrate that BMP/Smad signaling directly represses Ppif transcription in osteogenic cells from different embryonic origins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "ddcb1bf4-af7d-4f0f-805d-d4c55f8f0b3c",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ppif regulation by Smad signaling is tissue-specific, with opposite effects observed in myogenic C2C12 cells compared to osteogenic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 demonstrate that while Smad1 represses Ppif in osteogenic cells, it activates Ppif in myogenic C2C12 cells (C11), supporting the conclusion that Smad-mediated Ppif regulation is tissue-specific (C12). This is consistent with known bidirectional effects of Smads on gene regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "ebd21278-d092-4e04-93f3-fde5da44677d",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CypD expression and MPTP activity decrease during osteoblast differentiation in multiple cell types and species. During osteogenic differentiation, Ppif mRNA and CypD protein levels decrease while MPTP activity is reduced, despite increased ROS production from elevated OxPhos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 provide comprehensive evidence from multiple osteogenic cell types (BMSCs, ST2, MC3T3-e1) and species (mouse and human) showing coordinated downregulation of CypD at mRNA (C16-C17) and protein (C18) levels, along with decreased MPTP activity (C19) during differentiation. Controls for mitochondrial mass (C20) strengthen the interpretation. Claim C68 provides context for why this regulation is important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "2a889cad-b78d-4a1e-b79f-4ef26087b2db",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wnt3a treatment does not affect Ppif promoter activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 demonstrates through dose-response luciferase reporter assays that Wnt3a, even at concentrations that activate osteogenic differentiation, has no effect on Ppif promoter activity. This helps rule out Wnt signaling as a regulator of Ppif.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "BMP/Smad signaling directly represses Ppif independent of downstream osteogenic differentiation, as demonstrated in differentiation-arrested 143b osteosarcoma cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 use 143b cells, which cannot complete osteogenic differentiation due to Runx2 degradation (C23-C24), to demonstrate that Smad1 still represses CypD expression (C25) and Ppif promoter activity (C26) in these cells. This provides strong evidence that Ppif repression is a direct effect of BMP/Smad signaling rather than an indirect consequence of differentiation (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "f8179608-fd06-48fe-b124-0823a1d00d4f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CypD gain-of-function impairs osteoblast differentiation and mitochondrial function in vitro. Expression of constitutively active CypD (K166Q mutant) decreases osteogenic markers, impairs differentiation, and reduces mitochondrial membrane potential in both cell lines and primary cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 demonstrate through multiple experimental systems (MC3T3e1 cells with stable transfection, primary BMSCs from transgenic mice) that CypD gain-of-function consistently impairs osteogenic differentiation (C30-C31) and mitochondrial function (C32). This is supported by prior loss-of-function data (C28-C29) and leads to the conclusion that CypD downregulation is necessary for osteogenesis (C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "33077344-4999-4c7b-9962-fc969545f97f",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "An inverse correlation exists between BMP signaling and CypD expression in physiological and pathological bone conditions. Analysis of published datasets and immunofluorescence studies show that decreased BMP signaling correlates with increased CypD in aging, while increased BMP signaling correlates with decreased CypD during fracture repair and pathological calcification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 provide converging evidence from multiple independent datasets (aging, fracture repair, osteoarthritis, cardiac valve calcification) and the authors' own immunofluorescence studies showing consistent inverse correlation between BMP signaling and CypD expression. The combination of transcriptomic data (C34-C36) and protein-level validation (C37-C40) strengthens this conclusion (C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "7db6b00a-9a32-4e34-8b39-b079164632d8",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Osteoblast-specific CypD deletion protects against bone loss in aging. Conditional deletion of CypD in osteoblasts increases bone volume fraction and torsional rigidity in aged mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 demonstrate through conditional knockout experiments that osteoblast-specific CypD deletion protects against age-related bone loss, as evidenced by increased bone volume fraction (C45) and improved biomechanical properties (C44). This corroborates previous global knockout data (C42-C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Osteoblast-specific CypD re-expression and gain-of-function impair bone phenotype in aged mice. Viral delivery of constitutively active CypD to osteoblasts in aged mice with conditional CypD deletion decreases cortical thickness, bone mechanical properties, and osteoblast function without affecting osteoclast activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 demonstrate through a sophisticated rescue experiment that re-expressing constitutively active CypD in osteoblasts of aged mice reverses the protective effects of CypD deletion. The data show decreased cortical thickness (C46-C47), impaired biomechanical properties (C48), reduced osteoblast function (C49), and no change in osteoclast activity (C50), supporting the conclusion that osteoblast-specific CypD affects bone phenotype (C51). The use of contralateral controls and normalization strengthens the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "51e9fb99-4379-43bb-9e3f-c91fd386d5ab",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The BMP/Smad-Ppif regulatory axis is relevant for bone homeostasis and pathological calcification conditions. CypD downregulation via BMP/Smad signaling during osteoblast differentiation is sufficient to affect bone phenotype even over short time periods in aged mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C83, and C84 synthesize the findings to demonstrate the physiological and pathological relevance of the BMP/Smad-Ppif axis. The observation that only 2 months of CypD overexpression is sufficient to impair bone mechanical properties in aged mice (C83) highlights the importance of this regulatory mechanism. The relevance to pathological calcification conditions (C84) extends the significance beyond normal bone homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context for MPTP, CypD, BMP signaling, and their roles in differentiation and disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C86 provide established scientific knowledge and literature citations that contextualize the study. These claims are appropriately cited and represent accepted knowledge in the field, providing necessary background for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    },
+    {
+      "id": "755e9734-14cf-472a-b80e-5d218c1e065d",
+      "content_id": "bbaf08e2-dd26-494c-b54a-462c5b1cddbf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Aged mouse bones have higher CypD levels compared to young mouse bones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by immunofluorescence data comparing 3-month-old and 18-month-old mice, demonstrating increased CypD protein levels in aged bones. This finding is consistent with the inverse correlation between BMP signaling and CypD expression observed in aging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:18:55.273087Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ca32c351-2d87-481c-abf8-0b35ed1e7a84",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "aea531a7-753d-413a-90b9-31ef41a96bdd",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "74daf6d8-5945-411f-8d60-f4b8acee0248",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "a2f3a3d6-98b8-42c3-921e-1fac9a2fd9ac",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "271deedd-b717-4275-bbda-5c5a2fc2a741",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "2aa3817a-49cf-490c-87d5-b6d89efa788f",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "7e43c8cc-7ccb-4a1a-89c2-a52d099820ac",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "14862dfd-b94d-4148-93cd-643ba4161ce3",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "d7c48d43-b77c-430c-8cbb-a6868d16f091",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "015f2449-f8f0-4cad-979a-ab87b2878a84",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "21d4afe7-e389-4dc0-8824-b1accb1a99f0",
+      "result_id": "a26c74a1-0f40-4930-a70c-8f046be2649a"
+    },
+    {
+      "claim_id": "6fa86415-c907-498a-a6e2-039e7d5b674e",
+      "result_id": "ddcb1bf4-af7d-4f0f-805d-d4c55f8f0b3c"
+    },
+    {
+      "claim_id": "df9e6b12-21a4-477b-aef8-745d0eb7d74f",
+      "result_id": "ddcb1bf4-af7d-4f0f-805d-d4c55f8f0b3c"
+    },
+    {
+      "claim_id": "db768423-10a1-43fb-8015-c0b6e4136f95",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "6b86b23a-e74c-48e7-ad5d-1df4dbf4bd0c",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "f51010e1-2589-4a88-8e82-9d8992d56c98",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "7a170358-957d-47b7-9fd1-24ffee30c5bd",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "32a8ca48-6c06-45c3-8615-7707fa405113",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "650369c9-71ff-49d1-8078-6d513676707e",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "d343ca92-f930-4dbb-92d1-edadbfc96af3",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "a8e4d418-d692-4b10-afef-e94580c9951b",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "7d77eb79-e893-453b-acd5-256fbc0d2a69",
+      "result_id": "ebd21278-d092-4e04-93f3-fde5da44677d"
+    },
+    {
+      "claim_id": "f06cfd4f-1821-4110-afd6-1bb1ea98e517",
+      "result_id": "2a889cad-b78d-4a1e-b79f-4ef26087b2db"
+    },
+    {
+      "claim_id": "640cb37e-68bc-4b97-8951-b659c4ac3e99",
+      "result_id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb"
+    },
+    {
+      "claim_id": "dfab6cd2-0822-44d4-918f-e878e7595a0b",
+      "result_id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb"
+    },
+    {
+      "claim_id": "04662de6-1457-4bad-8771-856c75cf2b4e",
+      "result_id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb"
+    },
+    {
+      "claim_id": "343512e6-3622-49f1-9b9a-e4fc518742e8",
+      "result_id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb"
+    },
+    {
+      "claim_id": "656110be-ff1c-44cb-bba0-6c9126521a1c",
+      "result_id": "72dc97c2-b80e-47f6-bf57-a7c6f654cafb"
+    },
+    {
+      "claim_id": "5c4a3d1a-5381-4a47-b2a2-da14bb05ac09",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "23e6d6e3-2f8c-46e9-865d-d66e61da8724",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "6acaab30-b126-4838-b9a4-d1d15a6e4952",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "8468862a-2a3d-4486-95ba-f1831f42a36c",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "e1eb333b-601d-45be-996b-922ab13f741b",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "b3cfdec9-9cd3-4536-8ec8-ec82fe12e1cd",
+      "result_id": "f8179608-fd06-48fe-b124-0823a1d00d4f"
+    },
+    {
+      "claim_id": "b85e025e-0d6f-4a84-be19-bf0d9c048405",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "7b432501-0b34-41ea-a09e-8afd069ce2f9",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "1d2da481-fd79-401e-bacb-10ae8c896338",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "0e2bf379-ec09-486c-90c7-c55f353fde5e",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "91d1ba30-9599-46cf-bd8d-d2f009aa2209",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "c0453bb0-3286-417a-8c5a-10c46aae4d10",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "20f5bcf3-1b01-4c06-b3bb-d30bdea32b31",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "0d408893-5c72-4c80-96b4-c18daec808af",
+      "result_id": "33077344-4999-4c7b-9962-fc969545f97f"
+    },
+    {
+      "claim_id": "d7760c59-7c43-4dd8-9b02-51f3bd0b800b",
+      "result_id": "7db6b00a-9a32-4e34-8b39-b079164632d8"
+    },
+    {
+      "claim_id": "2862872a-6e79-4cee-aacc-edf6813b653c",
+      "result_id": "7db6b00a-9a32-4e34-8b39-b079164632d8"
+    },
+    {
+      "claim_id": "c3ebe306-c3a5-4782-a59a-4146383031fb",
+      "result_id": "7db6b00a-9a32-4e34-8b39-b079164632d8"
+    },
+    {
+      "claim_id": "436d82f8-bac7-4fe2-824b-628e8d12f652",
+      "result_id": "7db6b00a-9a32-4e34-8b39-b079164632d8"
+    },
+    {
+      "claim_id": "8abceea7-fae7-4c92-bbee-c2b0ba2ec7b5",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "8eca5e99-a3cc-43be-b94d-983ed9cc4c8c",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "c4544c50-773d-4e64-bc3e-1f61b5beeb27",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "18f2915c-81c8-48f4-8a7c-59894a60df88",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "92c70917-dd16-4f38-a2ab-b0097e2ef3bb",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "46dda2bb-94c9-4b9d-ba2f-02ab6f49c56a",
+      "result_id": "4a393e66-b1d0-4dc9-91b8-a33c5b416ae7"
+    },
+    {
+      "claim_id": "fbc6582c-1a4c-4347-ac45-5f584cdc95b5",
+      "result_id": "51e9fb99-4379-43bb-9e3f-c91fd386d5ab"
+    },
+    {
+      "claim_id": "5a920d5a-5dd5-4c89-ba3a-09caeacba5ef",
+      "result_id": "51e9fb99-4379-43bb-9e3f-c91fd386d5ab"
+    },
+    {
+      "claim_id": "123aadda-6f6c-4751-83da-3f48528865a9",
+      "result_id": "51e9fb99-4379-43bb-9e3f-c91fd386d5ab"
+    },
+    {
+      "claim_id": "db9b6a82-443a-45f9-8ba3-a5a59f9f2960",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "c43244fd-ab35-4106-bb5a-b3411fd26a93",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "240df62c-0d26-43c8-bdd3-63f1a733fbd1",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "2cd05532-6fa0-401e-b766-4dfe8db24e4b",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "0c07e7a4-0d7f-4d0c-bf86-88e8c19b140b",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "68a7395f-6358-4e20-b190-8ce1b610307f",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "37a10148-21e6-4e1e-9f8d-c9384ce77422",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "8eb33e02-a552-4527-b659-2e2db41abe87",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "5e802f44-a2fc-47f6-8e6a-47e688ea68b3",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "5b3e0645-43d8-4ca3-b69e-4bb7ee85d43e",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "23fd439e-6c5d-4c1f-8d18-f70ac46c656c",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "f9ef75e6-4aa6-4300-97be-e440efe285a0",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "36df1e6d-59fc-4816-ad79-6f7e764b1aea",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "969678e7-b3bd-4265-bc31-57f09e8df8dd",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "f4374107-9cdf-45a9-b7af-a4429074a2d8",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "38919b2d-5d62-4770-8f14-aec90ecec44c",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "4956cfb8-728e-4558-8436-4633f5c91dbb",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "d841aa69-5081-4981-8217-92dd429aeaee",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "4e40f255-7676-435e-922c-1a0820e88d02",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "f80790ae-3529-4c37-9805-d603725eb81a",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "44ce4f27-6b5d-4a03-a32d-705c74f336cc",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "c7dc479b-09ea-478c-ab64-3d516666df03",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "7a6cf50d-dff6-417b-b406-e80f5d3586ff",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "0eb72209-ca43-4da8-b267-59ba69459ac5",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "c8b37cda-28d4-438c-80cc-c6c95d3642c0",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "b834fe82-574c-464e-ab20-45f565db5c9f",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "ba13fb0e-75ca-4dcd-b438-ad1303fa8ba7",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "8f042499-565f-41a6-85cb-f53d7dfc2084",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "e1713382-5ce5-4564-83cc-fdb5f3a0c4e9",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "d94e2e41-86c7-4941-8eda-f573bc44c8f4",
+      "result_id": "aeccd89a-bbf4-4be0-83b4-dd108cefaddf"
+    },
+    {
+      "claim_id": "062b7927-f825-43aa-bf37-209faa52e48a",
+      "result_id": "755e9734-14cf-472a-b80e-5d218c1e065d"
+    }
+  ],
+  "comparisons": []
+}

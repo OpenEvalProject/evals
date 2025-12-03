@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Mcm2-2A mutation impairs mouse ESC differentiation. The Mcm2-2A mutation, which disrupts histone binding, causes defects in both silencing of pluripotent genes (Pou5f1) and induction of lineage-specific genes during embryoid body (EB) formation. Double mutants (Mcm2-2A with Pole3 KO or Pole4 KO) show more severe defects than single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C34-C39 collectively demonstrate that Mcm2-2A mutation impairs differentiation through multiple assays (EB formation, RT-PCR, morphology). The data show consistent defects in pluripotent gene silencing and lineage-specific gene induction, with genetic interactions supporting the phenotype. The evidence is robust with multiple replicates and statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Mcm2-2A mutation does not alter ESC plasticity. Mcm2-2A mutant and WT cells show similar low frequencies of 2C-like cells, indicating that ESC plasticity is not affected by the mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by immunofluorescence data showing no significant difference in 2C-like cell frequency between WT and Mcm2-2A cells. This distinguishes the Mcm2-2A phenotype from CAF-1 depletion effects and supports the specificity of the differentiation defect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Mcm2-2A mutation compromises neural differentiation. During neural differentiation, Mcm2-2A cells show defects in silencing pluripotency genes (Pou5f1, Nanog) and inducing neural lineage genes (Sox21, Pax6), with ~30% of Mcm2-2A cells retaining GFP expression at day 9 compared to WT. Mcm2-2A cells fail to exhibit proper neural cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by multiple complementary assays (RT-PCR, FACS, Western blot, morphology) showing consistent defects in neural differentiation. The GFP reporter data provides quantitative evidence, and protein-level validation strengthens the findings. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Exogenous expression of WT Mcm2 partially rescues differentiation defects in Mcm2-2A cells. Expression of WT Mcm2 restores Pou5f1 silencing to WT levels and partially rescues lineage-specific gene expression defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by rescue experiments showing that exogenous Mcm2 expression can restore some aspects of differentiation. The partial rescue of lineage-specific genes suggests additional complexity, but the data support that the Mcm2-2A mutation is causative for the observed defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mcm2 and Asf1a function in the same pathway for induction of lineage-specific genes but have distinct roles in pluripotent gene silencing. Mcm2-2A Asf1a KO double mutants show no additional defects in lineage-specific gene induction compared to single mutants, indicating epistasis. However, Mcm2-2A, but not Asf1a KO, shows defects in Pou5f1 silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are supported by genetic epistasis experiments showing that Mcm2-2A and Asf1a KO do not have additive effects on lineage-specific gene induction, consistent with functioning in the same pathway. The differential effects on pluripotent gene silencing support distinct roles. The data are consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mcm2-2A mutation causes greater transcriptome changes in NPCs than ESCs. RNA-seq analysis reveals 54 DEGs in ESCs versus 609 DEGs in NPCs. Down-regulated genes in Mcm2-2A NPCs are enriched for neurodevelopment functions, while up-regulated genes relate to stem cell maintenance. 62% of down-regulated genes in Mcm2-2A NPCs overlap with Asf1a KO NPCs, and most are bivalent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR<0.01, |log2FC|>1). GO analysis and overlap with Asf1a KO data strengthen the interpretation. The enrichment of bivalent genes among overlapping down-regulated genes supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Mcm2-2A mutation disrupts the epigenetic landscape during differentiation. H3K27me3 levels are modestly reduced in Mcm2-2A NPCs compared to WT NPCs, while H3K4me3 levels are unchanged. CUT&RUN analysis shows that H3K4me3 and H3K27me3 changes at gene promoters correlate with gene expression changes in Mcm2-2A NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by Western blot and CUT&RUN data showing histone modification changes that correlate with gene expression. The data demonstrate that down-regulated genes have lower H3K4me3 and higher H3K27me3, while up-regulated genes show opposite patterns. Statistical significance is demonstrated using Wilcoxon signed-rank test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Mcm2 localizes at transcription start sites of actively transcribed genes. CUT&RUN identified 13,742 Mcm2 peaks in WT ESCs and 2,686 in NPCs. The majority of Mcm2 peaks co-localize with H3K4me3 and ATAC-seq peaks. Over 26% of bivalent domains have Mcm2 peaks nearby in ESCs. Mcm2 is enriched at TSS of highly transcribed genes in both ESCs and NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C75 are supported by CUT&RUN data, but the authors acknowledge relatively low signal-to-noise ratios and caution in interpretation. The correlation with active transcription is consistent, but the dynamic nature of CMG helicase binding during the cell cycle complicates interpretation. Control experiments (IgG, untagged cells) show some background, raising concerns about specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mcm2 binding at gene promoters is disrupted in Mcm2-2A cells. Far more reduced than increased Mcm2 peaks are observed in Mcm2-2A ESCs and NPCs. Reduced peaks occur at active promoters and bivalent chromatin regions. Mcm2 density at TSS of down-regulated genes is significantly lower in Mcm2-2A cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by CUT&RUN data showing consistent reduction of Mcm2 binding in Mcm2-2A cells. The correlation between reduced Mcm2 binding and gene expression changes supports a functional role. However, the low signal-to-noise ratio noted by the authors warrants caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mcm2-2A mutation reduces chromatin accessibility at bivalent domains during differentiation. ATAC-seq shows minimal changes in ESCs but dramatic alterations in NPCs. ATAC-seq signals at down-regulated genes are significantly lower in Mcm2-2A NPCs. Reduced Mcm2 binding at bivalent domains in ESCs correlates with decreased chromatin accessibility at these sites in NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by ATAC-seq data showing that chromatin accessibility changes correlate with Mcm2 binding and gene expression. The specific reduction at bivalent domains (Group 1 peaks) supports the proposed mechanism. Statistical significance is demonstrated, and the correlation between ESC Mcm2 binding and NPC chromatin accessibility is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C90"
+    ],
+    "result": "Mcm2 regulates differentiation through multiple mechanisms, including resolution of bivalent chromatin domains via interaction with Asf1a. The defects in lineage-specific gene induction are at least partially due to reduced Mcm2-Asf1a interaction, which is bridged by H3-H4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C90 summarize the main mechanistic conclusion supported by genetic epistasis (C50-C57), transcriptome overlap (C61-C62), and chromatin accessibility data (C80-C85). The model is consistent with the data, though the authors acknowledge that Mcm2 likely has additional roles beyond Asf1a interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C87"
+    ],
+    "result": "Mouse ESCs with Mcm2-2A, Pole3 KO, or Pole4 KO mutations grow normally and maintain stemness. These mutants do not show defects in proliferation or stemness markers in undifferentiated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C87 are supported by the observation that these mutants can be maintained as ESC lines and show minimal transcriptome changes in ESCs (C58). This distinguishes the differentiation defects from general growth or viability issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Defects in differentiation in Mcm2-2A cells are unlikely to be primarily due to impaired firing of dormant origins. Unlike MCM depletion studies, Mcm2-2A mutation has little impact on replication stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by prior literature showing that Mcm2-2A does not affect replication stress response, distinguishing it from MCM depletion phenotypes. This helps rule out an alternative mechanism and supports the histone-binding-dependent role in differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C86"
+    ],
+    "result": "Background and context claims about Mcm2, histone chaperones, and ESC differentiation. These claims establish the biological context and prior knowledge supporting the study, including the roles of Mcm2, Asf1a, CAF-1, HIRA, Pole3, and Pole4 in histone dynamics and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C8, C12-C32, and C86 are background claims supported by citations to prior literature. These establish the context for the current study and are appropriately referenced. They are not novel findings but provide necessary background.",
+    "result_type": "MINOR"
+  }
+]

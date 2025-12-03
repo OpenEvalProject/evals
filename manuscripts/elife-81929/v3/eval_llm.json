@@ -1,0 +1,159 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The discovery cohort comprised 107 consecutive patients with Gleason Score 7 organ-confined prostate cancer who underwent radical prostatectomy between 2001 and 2013. The cohort had a mean age of 63 years, was predominantly non-Hispanic white (85%), and 17.8% experienced biochemical recurrence during follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 provide comprehensive descriptive statistics for the discovery cohort. These are straightforward demographic and clinical characteristics that are well-documented and internally consistent, representing standard cohort characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "In the discovery cohort, PCA3 expression was significantly higher in prostatic adenocarcinoma (mean: 2.46; SD: 1.28) compared to normal prostate (\u22121.99; 2.63, p<0.001), while PRUNE2 expression was significantly lower in tumor (mean: \u22121.48; SD: 0.92) compared to normal prostate (\u22120.78; 0.4, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 report statistically significant differential expression with p<0.001 for both genes, supported by qRT-PCR data shown in Figure 1A. The reciprocal expression pattern (PCA3 up, PRUNE2 down) is consistent with the proposed regulatory axis. Sample sizes are adequate (n=107 tumors, n=24 normal for PRUNE2, n=21 normal for PCA3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In the discovery cohort, neither PCA3 nor PRUNE2 expression levels were significantly associated with biochemical recurrence. No significant differences were found in mean expression values between patients who recurred versus those who did not (PRUNE2: p=0.68; PCA3: p=0.16), in Kaplan-Meier survival analysis (PRUNE2: p=0.24; PCA3: p=0.22), or in Cox proportional hazards modeling (PRUNE2 HR: 0.97, p=0.91; PCA3 HR: 1.21, p=0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 consistently demonstrate lack of association between gene expression and recurrence using multiple statistical approaches (t-tests, Kaplan-Meier, Cox regression). The analyses are appropriate and the negative findings are internally consistent across methods. However, the relatively low recurrence rate (17.8%, n=19) limits statistical power to detect associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The validation cohort from TCGA comprised 497 men with prostate cancer, with gene expression data from nonneoplastic prostatic tissue available in 52 cases (10.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 provide straightforward descriptive statistics for the TCGA validation cohort. These are verifiable from the publicly available TCGA dataset and represent standard cohort characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "In the TCGA validation cohort, PCA3 had significantly increased expression in carcinoma (median: 12.4; IQR: 10.3\u201313.7) compared to normal prostate (median: 6.9; IQR: 5.2\u20139.6, p<0.001), while PRUNE2 showed lower expression in carcinoma (median: 11.4; IQR: 10.7\u201312.0) versus normal prostate (median: 12.2; IQR: 11.8\u201312.6, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 replicate the findings from the discovery cohort in an independent, larger validation cohort (n=497 tumors, n=52 normal). The reciprocal expression pattern is consistent with C32-C33, and statistical significance (p<0.001) is maintained. This provides strong validation using a different measurement platform (RNA-Seq vs qRT-PCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In the TCGA cohort, PCA3 expression was significantly lower in tumors with Gleason Score >7 compared to Gleason Score 7 (p<0.001) or <7 (p=0.01). PRUNE2 showed small but significant decreases in expression in tumors with Gleason Score >7 compared to Gleason Score 7 (p=0.014) or <7 (p=0.049).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate statistically significant associations between gene expression and tumor grade, supported by Figure 3B. The finding that PCA3 decreases with higher grade is paradoxical but consistent with prior literature (Alshalalfa et al., 2017). The effect sizes for PRUNE2 are described as 'small,' which is appropriate given the modest p-values and overlapping IQRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "In the TCGA cohort, PCA3 expression was higher in pT2 tumors compared to pT3 tumors (p=0.01), while PRUNE2 expression showed no significant differences between tumor stages (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report stage-stratified expression analysis supported by Figure 3C. The finding that PCA3 decreases with higher stage parallels the grade findings and is internally consistent. The lack of stage association for PRUNE2 is clearly stated with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "In the TCGA cohort, despite differences in gene expression among tumor grades and stages, the median expression of PCA3 was significantly higher in all tumor grades and stages compared to normal prostate, while PRUNE2 expression in all tumor grades and stages was significantly lower than in normal prostate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide an important summary statement reconciling the within-tumor heterogeneity (C44-C49) with the overall tumor-normal differences (C42-C43). This is a valid interpretation supported by the data showing that even the lowest PCA3-expressing tumors have higher expression than normal tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the TCGA cohort, patients with biochemical recurrence had significantly lower tumor PCA3 expression than non-recurrent patients (p<0.01) in univariate analysis, but this association was not significant in multivariable Cox modeling adjusting for grade, stage, and age (HR: 0.96, p=0.36). PRUNE2 expression showed no significant association with recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate appropriate statistical analysis with both univariate and multivariable approaches. The loss of significance in multivariable analysis (C53) is consistent with PCA3 being associated with grade/stage (C44-C48), which are themselves prognostic factors. This represents proper statistical methodology and interpretation. The finding differs from the discovery cohort (C35, C37), but this is explained by the broader range of grades/stages in TCGA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors conclude that upregulation of PCA3 and downregulation of PRUNE2 in prostate cancer are early (rather than late) molecular events in tumorigenesis and are not associated with biochemical recurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 represent the main conclusions of the study. The 'early event' interpretation is supported by: (1) consistent dysregulation across all tumor grades/stages (C50-C51), (2) lack of association with recurrence in both cohorts (C34-C39, C53-C54), and (3) paradoxical decrease in PCA3 with higher grade/stage (C44-C48). However, the 'early vs. late' distinction is inferential rather than directly demonstrated, as the study lacks longitudinal or precursor lesion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The authors propose that the PCA3/PRUNE2 regulatory axis is an attractive early molecular target candidate for intervention in prostate cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is a forward-looking therapeutic proposal based on the demonstrated dysregulation of the PCA3/PRUNE2 axis. While the dysregulation is well-supported (C32-C33, C42-C43, C50-C51), the leap to therapeutic targeting is speculative. The lack of prognostic value (C55-C56) and the decrease in PCA3 with more aggressive disease (C44-C48) raise questions about whether targeting this axis would be beneficial in advanced disease. No therapeutic validation data are presented.",
+    "result_type": "MINOR"
+  }
+]

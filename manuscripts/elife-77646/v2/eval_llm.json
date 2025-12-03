@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C20",
+      "C21"
+    ],
+    "result": "MRS mutations specifically affect INO1 reactivation but not activation. Using the Anchor Away system to remove Opi1, the authors demonstrate that reactivation is faster than activation in wild-type cells, and this effect requires the MRS and Nup100, confirming that INO1 transcriptional memory enhances the rate of transcriptional reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 establish that MRS mutations selectively impair reactivation, and C20-C21 confirm this using the Anchor Away system. The data in Figure 1B and 1D provide converging evidence that memory specifically enhances reactivation rate. The experimental design appropriately controls for potential confounders related to inositol sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Inositol memory provides a Nup100-dependent competitive fitness advantage during inositol starvation. Using a novel sequencing-based competition assay, cells with memory outcompete naive cells during the initial 3 hours of inositol starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by the competition assay data in Figure 1G. The sequencing-based quantification method is validated in Figure 1E-F, showing it is accurate across a wide dynamic range. The fitness benefit is clearly Nup100-dependent, linking memory to organismal fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CHO1, another inositol-regulated gene, exhibits all hallmarks of transcriptional memory including Nup100-dependent peripheral localization, H3K4me2, RNAPII binding, and faster reactivation. This suggests that inositol memory affects multiple genes coordinately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 demonstrate that memory is not unique to INO1. The data in Figure 1\u2014figure supplement 1 show that CHO1 exhibits peripheral localization (C26), chromatin modifications (C27), and faster reactivation (C28). This supports the broader conclusion (C30) that fitness benefits reflect coordinated memory across multiple genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Transcription is not required to establish INO1 memory. As little as 10 minutes of inositol starvation induces memory, and inactivating RNAPII or mutating the TATA box does not prevent peripheral localization during memory, suggesting that cis-acting molecular changes associated with early activation events induce memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide multiple lines of evidence that transcription is dispensable for memory establishment. The rpb1-1 temperature-sensitive experiment (C32) and TATA box mutation (C33-C34) both show that peripheral localization persists without transcription. The 10-minute induction (C31) occurs before significant transcription. The conclusion (C36) is appropriately cautious, noting this is suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The duration of INO1 memory is regulated by cell divisions rather than time. Treatment with nocodazole to arrest cell division extends memory beyond 18 hours, suggesting that memory duration relates to limits on inheritance following DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by the nocodazole experiment in Figure 1\u2014figure supplement 2E. Arresting cell division extends memory well beyond its normal ~6-8 hour duration, supporting the model that replication fidelity limits memory duration. This is consistent with the epigenetic inheritance model proposed later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "H3K4me2 is essential for INO1 memory. Loss of Set1 (the H3K4 methyltransferase) specifically slows reactivation without affecting activation, confirming the requirement for H3K4me2 in the Anchor Away system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by data in Figure 2A showing that set1\u0394 specifically affects reactivation. This validates that the Anchor Away system recapitulates memory-dependent effects and confirms the essential role of H3K4me2 established in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The NPC interaction stimulates both H3K4me2 and H2A.Z incorporation during memory through a hierarchical pathway. H3K4me2 is observed during both activation and memory, while H2A.Z is memory-specific. Loss of Nup100 or Sfl1 causes rapid loss of H3K4me2 during memory. H2A.Z incorporation requires Sfl1/Nup100 and H3K4me2, but H3K4me2 does not require H2A.Z.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 establish a hierarchical relationship between chromatin modifications during memory. The ChIP data in Figures 2C-E support the temporal and dependency relationships. The genetic epistasis experiments (C47-C49) clearly establish that H2A.Z is downstream of H3K4me2. The model in Figure 2F appropriately summarizes these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "INO1 memory involves positive feedback between Sfl1-dependent NPC interaction and NPC-dependent chromatin modifications. Sfl1 binding requires Nup100, Set3, Swr1, and H3K4me2, while these factors also require Sfl1, establishing mutual dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 demonstrate reciprocal dependencies through ChIP experiments in Figures 2G-H. The Anchor Away of COMPASS (C53) provides temporal evidence that H3K4me2 is required for Sfl1 binding. The positive feedback model (C55) is well-supported by the genetic and biochemical data showing mutual requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Hms2, a second Heat Shock Factor-related transcription factor, is specifically required for INO1 memory. Hms2 binds the INO1 promoter during both activation and memory but is only required for memory-specific functions. Loss of Hms2 causes Sfl1 to bind during activation instead of memory, suggesting Hms2 prevents premature Sfl1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 identify Hms2 as a memory-specific factor through systematic screening (Figure 3\u2014figure supplement 1) and functional characterization (Figures 3A-E). The ChIP data (C58-C60, C63) show that Hms2 binds under both conditions but only affects memory. The model (C65) that Hms2 regulates Sfl1 binding timing is supported by the genetic data, though the heterodimer speculation is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Poised RNAPII is important for increasing the rate of reactivation and the fitness benefit of memory. Inhibition of Ssn3 (Cdk8) specifically disrupts RNAPII binding during memory without affecting activation, slows reactivation, and eliminates the fitness benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 use the analog-sensitive Ssn3 alloy to demonstrate that Cdk8 kinase activity is required for poised RNAPII. The data in Figures 4A-C show specific effects on memory without affecting activation. The fitness competition (C69) directly links poised RNAPII to organismal fitness, strengthening the biological significance of memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNAPII recruitment is not essential for H3K4 dimethylation during memory. While Anchor Away of Spt15 eliminates H3K4me2 during activation, neither Spt15 depletion nor Ssn3 inhibition affects H3K4me2 during memory. TATA box mutation also does not affect H3K4me2 during memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 establish a key mechanistic distinction between activation and memory. The data in Figures 4D-E show that manipulations that block RNAPII recruitment during activation (C71) do not affect H3K4me2 during memory (C72, C74). This supports the conclusion (C75) that memory-associated H3K4me2 is RNAPII-independent, a central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "H3K4me2 is necessary for recruitment of poised RNAPII during memory. Inhibiting Ssn3 causes reversible loss of RNAPII, which can return after removing the inhibitor. However, if H3K4me2 is also removed (by degrading Set3), RNAPII cannot return, demonstrating that H3K4me2 is required for RNAPII recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 use a clever reversibility experiment (Figure 4G-H) to establish the dependency of RNAPII on H3K4me2. The ability of RNAPII to return after Ssn3 inhibition (C77-C78) but not when H3K4me2 is also removed (C79) provides strong evidence for the conclusion (C80). This establishes H3K4me2 as upstream of RNAPII recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Paf1C subunit Leo1 plays a memory-specific role in promoting H3K4me2. While loss of Ctr9, Paf1, or Rtf1 blocks all H3K4 methylation, Leo1 deletion shows normal H3K4 methylation during activation but no methylation during memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 identify Leo1 as having a unique, memory-specific function within Paf1C. The ChIP data in Figure 5A and Figure 5\u2014figure supplement 1 clearly show that leo1\u0394 has normal H3K4me2/me3 during activation but loses H3K4me2 during memory. This distinguishes Leo1 from other Paf1C subunits and supports a memory-specific mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of Leo1 disrupts all functional outputs of INO1 memory including peripheral localization, RNAPII binding, rate of reactivation, and fitness benefit, confirming its essential and specific role in memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 demonstrate that Leo1 is required for all aspects of memory through multiple assays (Figures 5B-D, Figure 5\u2014figure supplement 1B). The comprehensive phenotypic characterization strengthens the conclusion that Leo1 plays a central role in memory, consistent with its requirement for H3K4me2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Leo1 is not required to establish memory but is required to sustain or inherit it. In leo1\u0394, INO1 remains at the periphery for ~60 minutes before rapidly repositioning, unlike nup100\u0394 where localization is immediately lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 use kinetic analysis (Figure 5E) to distinguish Leo1's role from Nup100. The delayed loss of peripheral localization in leo1\u0394 (C90) versus immediate loss in nup100\u0394 (C91) supports the conclusion (C92) that Leo1 functions in maintenance/inheritance rather than establishment. This temporal distinction is important for understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Once memory is established, H3K4me2 can persist for up to 2 hours in the absence of Sfl1. Degrading Sfl1 before establishing memory prevents H3K4me2, but degrading Sfl1 after establishment allows H3K4me2 to persist, demonstrating that Sfl1 is required for establishment but not short-term maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 use auxin-inducible degradation (Figure 6A-C) to temporally separate Sfl1's roles in establishment versus maintenance. The differential effects of pre- versus post-establishment degradation (C95-C96) clearly demonstrate that H3K4me2 can persist without Sfl1 once established (C97). This is a key finding for understanding inheritance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "RNAPII-dependent H3K4 dimethylation is neither stable nor heritable. In the mrs mutant, H3K4me2 is rapidly lost upon repression, much faster than would be expected from simple dilution through DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 establish a baseline for comparing memory-associated H3K4me2 stability. The data in Figure 6\u2014figure supplement 1A show rapid loss in the mrs mutant, supporting the conclusion that RNAPII-dependent H3K4me2 is actively removed. This provides an important contrast to the heritable H3K4me2 observed during memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Sfl1 is not required for inheritance of H3K4me2 during memory. Following Sfl1 degradation after establishment, H3K4me2 persists for 5-8 hours (3-4 generations), and the rate of loss is unaffected by Sfl1 removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 demonstrate long-term persistence of H3K4me2 after Sfl1 removal (Figure 6D). The persistence for multiple generations (C100) and the unchanged rate of loss (C101) support the conclusion (C102) that Sfl1 is not required for inheritance. This is a critical finding for the epigenetic inheritance model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Once established, Sfl1-/Nup100-dependent H3K4me2 is actively reincorporated and efficiently inherited after DNA replication, and this requires Set3. Degrading both Sfl1 and Set3 causes rapid loss of H3K4me2, unlike degrading Sfl1 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 identify Set3 as essential for H3K4me2 inheritance. The double degradation experiment (Figure 6D) shows that Set3 is required for the persistence observed when only Sfl1 is degraded. This supports the model (C104) that Set3 actively maintains H3K4me2 through replication, consistent with its role as a reader of this mark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "RNAPII-independent H3K4 dimethylation is actively reincorporated to allow mitotic inheritance. At the URA3:MRS locus, H3K4me2 is maintained for \u22658 hours (~4 generations) after Sfl1 degradation, and this requires Set3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 use the URA3:MRS system to study inheritance without the complications of transcription. The persistence for 4 generations (C106) far exceeds simple dilution expectations, and the Set3 requirement (C107) supports the conclusion (C108) of active reincorporation. This provides strong evidence for epigenetic inheritance of H3K4me2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The reader and writer of H3K4 dimethylation physically interact, and this interaction is stimulated by Leo1. Set3 (reader) co-immunoprecipitates with Swd1 (COMPASS subunit, writer), and this interaction is reduced in leo1\u0394. The interaction is not observed with Spp1, consistent with memory-specific Spp1-minus COMPASS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 provide a molecular mechanism for H3K4me2 inheritance through reader-writer interaction. The co-IP data (Figure 6F) show Set3-COMPASS interaction that is Leo1-dependent (C109) and Spp1-independent (C110). This supports the model (C111) that Leo1 facilitates the interaction required for inheritance, consistent with its role in sustaining memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "H3K4 dimethylation can be either unstable or heritable depending on the mechanism of deposition. During transcription, H3K4me2 requires RNAPII and is rapidly lost. During memory, H3K4me2 is RNAPII-independent, requires SET3C/Leo1/Sfl1/Nup100, and is inherited for ~4 cell divisions, providing an example of heritable histone modification associated with transcriptional poising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 synthesize the major findings into a coherent model distinguishing two mechanisms of H3K4me2. The contrast between RNAPII-dependent (C113) and RNAPII-independent (C114) pathways is well-supported by the data throughout the manuscript. The inheritance for ~4 divisions (C115) and the conclusion about epigenetic inheritance (C116) are justified by the Sfl1 degradation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "The duration of memory relates to limits on inheritance following each round of DNA replication, based on the observation that memory persists for a limited number of cell divisions and can be extended by arresting cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is supported by the nocodazole experiment (C37) and the observation that memory lasts ~4 divisions. However, this is somewhat speculative as the manuscript does not directly test the fidelity of inheritance mechanisms. The conclusion is reasonable given the data but could benefit from additional experiments examining inheritance efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Transcriptional memory mechanisms are conserved across species. Nup100/Nup98-dependent NPC interaction is associated with memory in yeast, flies, and mammals, and memory leads to H3K4me2, RNAPII binding, and Cdk8 association in yeast and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are supported by citations to prior work rather than new data in this manuscript. These claims establish the broader context and significance of the INO1 memory system as a model for conserved mechanisms. The claims are appropriately referenced and provide important background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on INO1 gene regulation and memory. INO1 encodes an essential enzyme for inositol biosynthesis. The gene repositions to the nuclear periphery upon activation through Put3/Cbf1 and GRS elements. Upon repression, INO1 acquires memory-specific features including H3K4me2, H2A.Z, poised RNAPII, and Sfl1/Nup100-dependent NPC interaction, which persist for ~4 cell divisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 summarize established background from prior work, appropriately cited. These provide essential context for the current study. C1 contains a minor error: INO1 catalyzes conversion of glucose-6-phosphate to inositol-1-phosphate, not glucose to myo-inositol directly, but this does not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on INO1 regulation by inositol. Poised RNAPII is associated with the recently repressed INO1 promoter. INO1 is repressed by Opi1 and Ume6 in the presence of inositol. Inositol depletion leads to phosphatidic acid accumulation, which inhibits Opi1, causing its nuclear export and INO1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide background on INO1 regulation from prior work. These are appropriately cited and establish the rationale for using the Anchor Away system to bypass potential complications from inositol sensing. C15 notes a paradox that motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Cis-acting molecular changes associated with early transcriptional activation induce INO1 memory, inferred from the observation that transcription is not required but early activation events are sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 is speculative and marked as such in the evidence. While the data show that transcription is not required (C32-C35) and 10 minutes is sufficient (C31), the specific molecular changes responsible are not identified. The claim is appropriately tentative but represents an inference rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Hms2 prevents Sfl1 binding to the active INO1 promoter but is required for Sfl1 binding during memory, perhaps as a heterodimer, based on the observation that loss of Hms2 causes Sfl1 to bind during activation instead of memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 proposes a model for Hms2 function based on genetic data (C63-C64). While the data show that Hms2 regulates Sfl1 binding timing, the heterodimer model is speculative. The manuscript appropriately marks this as speculation ('perhaps'), but direct evidence for physical interaction or heterodimer formation is not provided.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C36",
+      "C59",
+      "C60",
+      "C61",
+      "C83",
+      "C84"
+    ],
+    "result": "PomX consists of two functionally distinct domains: the N-terminal domain (PomXN) harbors ATPase activating protein (AAP) activity for PomZ, while the C-terminal domain (PomXC) mediates self-interaction, interaction with PomY, and serves as a scaffold for PomX/Y/Z complex formation. Both domains are essential for PomX function in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C36, C59-C61, C83-C84 are supported by multiple complementary experimental approaches including BACTH assays (C39-C43), TEM (C45-C49), pull-down experiments (C50-C52), ATPase assays (C54-C56), and in vivo localization studies (C27-C38). The data consistently demonstrate that PomXN interacts with PomZ and has AAP activity, while PomXC mediates self-interaction and PomY interaction. The conclusion that both domains are essential is supported by complementation experiments showing truncated variants cannot rescue the \u0394pomX phenotype (C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C76",
+      "C88"
+    ],
+    "result": "Within the N-terminal domain, a conserved 22-residue peptide (PomXNPEP, residues 1-22) enriched in positively charged amino acids is necessary and sufficient for PomZ AAP activity. Two positively charged residues, Lys13 and Arg15, are essential for this activity and for proper positioning of the PomX/Y/Z cluster at midcell, but not for cluster formation or division stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C65-C66, C72, C76, C88 are well-supported by sequence analysis (C62), mutagenesis studies showing K13A and R15A substitutions cause mislocalization but retain partial function (C63-C65), BACTH assays demonstrating loss of PomX-PomZ interaction (C71), and ATPase assays showing that PomXNPEP peptide alone stimulates PomZ activity while K13AR15A substitutions abolish this activity (C73-C76). The data converge to support the specific role of these residues in AAP activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C113",
+      "C114"
+    ],
+    "result": "The PomX/PomZ interaction is important for fission of the PomX/Y/Z complex during cell division, while PomZ ATPase activity is not required for fission. Cell division itself is essential for cluster fission, whereas chromosome segregation is not sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77-C81, C85, C113-C114 are supported by time-lapse microscopy experiments showing that PomXK13AR15A (with impaired PomX-PomZ interaction) exhibits reduced cluster fission (~20% vs ~80% for WT), while PomZD90A (ATP-locked, no ATPase activity) supports normal fission frequency (~80%). The conclusion that cell division is essential is supported by cited cephalexin experiments (C113-C114). The data consistently demonstrate that the protein-protein interaction, not enzymatic activity, is critical for fission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C94"
+    ],
+    "result": "PomX filament formation is not essential for AAP activity, and PomXN domains in a PomX filament act independently to stimulate PomZ ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C94 are supported by the observation that PomXN, which does not form filaments (C47), stimulates PomZ ATPase activity as efficiently as full-length PomXWT, which does form filaments (C55). This demonstrates that filament formation is dispensable for AAP activity and that individual PomXN domains function independently. The logic is sound and the experimental evidence is direct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ParA/MinD ATPase activating proteins (AAPs) are highly modular and use a conserved mechanism involving a short N-terminal extension enriched in positively charged residues to activate their cognate ATPases. PomX represents the fourth type of ParA/MinD AAP displaying this characteristic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C105-C107 are supported by comparison of PomX with other characterized AAPs (ParB homologs, MinE, ParG) showing similar N-terminal positively charged regions (Figure 7) and by experimental demonstration that positively charged residues are functionally important in PomX (C88). The conclusion is strengthened by literature citations and the convergence of findings across multiple AAP systems. The modularity claim is supported by the observation that diverse AAPs share this common mechanism despite architectural differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "PomZ ATPase activity, stimulated by PomX and likely PomY, is essential for PomX/Y/Z cluster translocation to midcell but not for stimulation of Z-ring formation. PomX AAP mutants retain partial function, forming clusters and stimulating division but failing to position clusters at midcell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 are supported by phenotypic analysis of PomX AAP mutants showing mislocalized clusters that still stimulate division (C65, C99-C100), comparison with \u0394pomX mutants that lack clusters and have reduced division (C101-C103), and previous work on PomZ variants (C96). The distinction between translocation and Z-ring stimulation functions is well-supported by the observation that AAP mutants have normal constriction frequency but abnormal positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PomX homologs share overall architectural similarity with high conservation in C-terminal regions, while N-terminal regions vary in length and similarity. M. xanthus PomX contains an Ala/Pro-rich region (residues 27-182) and a coiled-coil domain (residues 222-401).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by sequence analysis and domain prediction shown in Figure 1B. The bioinformatic analysis is straightforward and the domain architecture is consistent with the functional dissection showing distinct N- and C-terminal domains. The data are descriptive and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Full-length mCh-PomXWT complements the \u0394pomX division defect and forms properly localized clusters, while truncated variants (mCh-PomXN and mCh-PomXC) do not complement the defect. mCh-PomXC can integrate into PomX/Y/Z clusters in pomX+ cells via interaction with endogenous PomX, while mCh-PomXN cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35, C37-C38 are supported by complementation assays (C27-C28), fluorescence microscopy showing cluster formation and localization patterns (C29-C33), and experiments demonstrating PomXC integration is independent of PomY and PomZ (C34). The data consistently show that PomXC can be recruited to clusters through PomX-PomX interactions while PomXN cannot, supporting the scaffolding role of PomXC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "BACTH analysis reveals that PomXWT and PomXC self-interact and interact with PomY, while PomXN does not. PomXWT and PomXN interact with PomZ variants, while PomXC does not. PomZD90A (ATP-locked) interacts more strongly with PomXN than PomZWT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by BACTH data shown in Figure 2A. The interaction patterns are consistent with the functional domain assignments and are corroborated by other methods (TEM, pull-downs, ATPase assays). The stronger interaction of PomZD90A with PomXN is consistent with this variant being locked in the ATP-bound dimeric form that preferentially interacts with AAPs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In vitro, PomXWT-His6 forms filaments that are bundled by PomY-His6, while PomY-His6 alone does not form higher-order structures. PomXN-His6 does not form filaments, while PomXC-His6 spontaneously forms filaments that are bundled by PomY-His6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by TEM images (Figure 2B) and high-speed centrifugation experiments (Figure 2\u2014figure supplement 1). The data are consistent with the domain assignments and demonstrate that the polymerization activity resides in PomXC. The observations are reproducible and consistent across multiple experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pull-down experiments confirm that PomXWT-His6 and PomY-His6 interact with PomXC-Strep but not with PomXN-Strep, and PomXC-His6 does not interact with PomXN-Strep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by pull-down data shown in Figures 2C-D and supplementary figures. The results are consistent with BACTH and other interaction data, providing orthogonal validation of the domain-specific interactions. The experimental approach is appropriate and the data are clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DNA stimulates His6-PomZ ATPase activity approximately twofold. PomXWT-His6 and PomXN-His6 stimulate His6-PomZ ATPase activity with equal efficiency in the presence of DNA, while PomXC-His6 does not stimulate activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by ATPase assay data shown in Figures 2F-I. The quantitative measurements are consistent and demonstrate that AAP activity resides in PomXN. The requirement for DNA is clearly shown and the equal efficiency of PomXWT and PomXN is important for demonstrating that filament formation is not required for AAP activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "PomZ in its ATP-bound dimeric form can be recruited independently by PomX and PomY to the PomX/Y complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by localization experiments with PomZD90A showing that it forms clusters in the presence of PomXK13AR15A (which has impaired PomX-PomZ interaction) only when PomY is present (Figure 4B). This demonstrates independent recruitment pathways. The logic is sound and the experimental design appropriately tests the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PomXK13AR15A and PomX\u03942-21 retain self-interaction and interaction with PomY but show dramatically reduced interaction with PomZ variants in BACTH assays. PomXK13AR15A-His6 forms filaments bundled by PomY-His6 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by BACTH data (Figure 5A), TEM (Figure 5B), and sedimentation assays (Figure 5C). The data demonstrate that PomXNPEP mutations specifically disrupt PomZ interaction without affecting other PomX functions, supporting the modular nature of PomX domains. The results are consistent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "PomXK13AR15A and PomXN_K13AR15A variants do not stimulate PomZ ATPase activity. A synthetic PomXNPEP peptide stimulates His6-PomZ ATPase activity, while a peptide with K13AR15A substitutions does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by ATPase assay data shown in Figures 5D-E. The peptide experiments provide strong evidence that PomXNPEP is sufficient for AAP activity and that K13 and R15 are essential. The use of synthetic peptides is a rigorous approach to test sufficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "PomXN is Ala/Pro-rich and likely unstructured. A 22-residue PomXNPEP peptide is sufficient to activate PomZ ATPase activity, though with lower activity than full-length PomXN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C89 are supported by sequence composition analysis (C25), ATPase assays comparing PomXN and PomXNPEP (Figures 2H, 5E), and the observation that PomXN migrates aberrantly in SDS-PAGE and SEC. The lower activity of the peptide compared to PomXN suggests additional context may be important, which is appropriately noted in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "PomXWT serves as a scaffold protein for cluster formation in vivo, with PomXC playing a key role through self-interaction and PomY interaction. The authors propose a model where PomXWT monomers interact via their coiled-coil domain to form a polymeric structure that recruits PomY, and speculate this ensures formation of a single PomX/Y/Z complex per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93, C95 represent a model synthesizing multiple experimental observations. The scaffolding role (C90-C91) is well-supported by data showing PomXWT alone forms clusters and is essential for PomX/Y/Z formation (C13, C27-C28). The proposed mechanism (C92-C93) is a reasonable inference from the domain interaction data, though speculative elements are appropriately identified. The speculation about ensuring single complex formation (C95) is plausible but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "DNA binding by PomZ is important for both intrinsic and PomX-stimulated ATPase activity, similar to other DNA-binding ParA ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by ATPase assays showing DNA-dependent stimulation (C53-C54) and comparison with literature on other ParA ATPases. The observation is consistent with the broader understanding of ParA/MinD ATPase regulation, though the molecular mechanism remains unknown as appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "PomY does not have an N-terminus enriched in positively charged residues, suggesting its mode of action as an AAP may differ from previously described AAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is based on sequence analysis and is presented as speculation in the discussion. While the observation about PomY's sequence is likely accurate, the functional implications are uncertain without experimental characterization of PomY's AAP mechanism. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Systems incorporating DNA-binding ParA ATPases and AAPs share similarities in translocation mechanisms, with AAPs integrated into large cargo structures. The authors speculate this integration ensures spatially restricted ATPase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by comparison with well-characterized systems (ParABS, chemoreceptor clusters, carboxysomes) cited in the discussion. The similarities in translocation mechanisms are documented in the literature. Claim C112 is appropriately identified as speculation and represents a reasonable hypothesis based on the comparative analysis, though it lacks direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The splitting of plasmid clusters and PomX/Y/Z cluster fission may occur by different mechanisms, as SopB-stimulated ATPase activity is important for plasmid cluster splitting but PomZ ATPase activity is not required for PomX/Y/Z fission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by the contrast between the PomX/Y/Z system (where PomZ ATPase activity is not required for fission, C81) and the cited SopB/SopA system (where ATPase activity is important for splitting). The comparison is appropriate and the conclusion that mechanisms may differ is reasonable, though presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on the PomX/Y/Z system from prior work, describing complex size, localization dynamics, protein interactions, and role in Z-ring formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C23 are all cited from previous work (Schumacher et al., 2017) and provide essential background context. These are not new results from the current study but established findings that frame the current investigation. The citations are appropriate and the information is accurately represented.",
+    "result_type": "MINOR"
+  }
+]

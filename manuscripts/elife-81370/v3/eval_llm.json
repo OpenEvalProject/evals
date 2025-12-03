@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Transition from in vivo (cord) to in vitro (culture) conditions results in massive transcriptional changes affecting over 43% of the transcriptome, with cord versus culture being the dominant factor (PC1 = 47.4% variance) and approximately half of expressed genes differentially expressed between conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C17 provide converging quantitative evidence from PCA and differential expression analyses showing that the in vitro environment is the dominant factor driving transcriptional changes. The consistency between multiple analytical approaches (PCA variance, differential gene counts) and the large sample size (n=7 matched pairs) support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Culture conditions induce specific transcriptional signatures including loss of flow-responsive genes (KLF4, KLF2), extracellular matrix genes, cytokines, and early response genes, while gaining proliferation-related genes (CCNB2, CCNA2, CDCA2) and pro-angiogenic/survival genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 describe specific gene expression changes supported by RNA-seq data. The findings are consistent with expected biological responses to culture conditions (loss of flow response, gain of proliferation) and are validated at the protein level (C28-C33). The identification of specific gene families provides mechanistic insight into culture-induced changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Proteomics analysis validates transcriptomic findings, showing clear separation between cord and culture conditions with significant correlation (r=0.4, p=1\u00d710\u207b\u2077) between RNA and protein signatures, including differential expression of ~160 cord-specific and ~411 culture-specific proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide orthogonal validation of transcriptomic findings using proteomics on n=7 matched samples. The moderate correlation (r=0.4) between RNA and protein is reasonable given known post-transcriptional regulation. The PCA separation and identification of condition-specific proteins support the transcriptomic conclusions, though the authors acknowledge lower statistical power in proteomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C45"
+    ],
+    "result": "Long-term shear stress (8-48 hours) partially rescues the in vivo transcriptional signature, recovering approximately 17% of genes with progressive correlation to cord transcriptome (r=0.34 at 48h, p=8.0\u00d710\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C39, C45 demonstrate time-dependent rescue of in vivo signature by flow using n=4 matched samples. The progressive increase in correlation with flow duration and quantitative recovery percentage (17%) are well-supported by PCA and correlation analyses. The finding is biologically plausible given known mechanosensing responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Flow-rescued genes include specific pathways: blood vessel development (EDN1, BMP2, BMP4), cellular protein localization (ITGA3, RACK1), and laminar shear stress response (KLF2, KLF4), with particular recovery of BMP and NOTCH signaling pathways and their downstream targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C70-C75 identify specific pathways rescued by flow, supported by GO enrichment analysis and WGCNA. The findings are consistent with prior literature on flow-responsive pathways (C72, C74 cite supporting work). The identification of both expected (KLF2/4) and unexpected (cellular localization) signatures adds novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "WGCNA identified 36 co-expression modules including a 'blue module' (2185 genes, r=0.71) enriched in cord and flow conditions associated with blood vessel development, and a 'brown module' (1408 genes, r=-0.9) associated with cell cycle that is suppressed in both cord and flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe WGCNA results with specific quantitative parameters (module sizes, correlation coefficients, p-values). The identification of modules with concordant behavior in cord and flow conditions provides systems-level validation of the rescue effect. The statistical significance and biological coherence of module functions support the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64"
+    ],
+    "result": "Co-culture with smooth muscle cells normalizes approximately 9% of the in vivo signature, inducing TGF\u03b2 downstream targets (SERPINE1, IGFBP7, SOX4, TIMP1) while reducing NOTCH target genes (FABP4, GJA4, FABP5, HEY), with TGF\u03b2 and VEGF pathways showing significant activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52-C56, C64 demonstrate heterotypic cell interaction effects using single-cell RNA-seq. The quantitative recovery (9%), specific pathway changes (TGF\u03b2, VEGF, NOTCH), and module score analyses provide strong evidence. The biological plausibility of SMC-derived factors affecting endothelial cells supports the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63"
+    ],
+    "result": "Co-culture induces specific changes in vesicle trafficking (increased clathrin genes AAK1, AP2B1, CLTB; decreased caveolin genes CAV1, CAV2) and rescues junctional proteins (TJP1) and calcium homeostasis regulators (TMEM165, TMEM203) without affecting endothelial identity markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C62-C63 identify specific molecular changes in co-culture supported by scRNA-seq data. The clathrin/caveolin switch is novel and the finding that these pathways are part of the in vivo signature (C62) validates their biological relevance. Preservation of identity markers (C59) confirms endothelial cell integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Co-culture shifts endothelial transcriptome toward cord signature, recovering genes related to NOTCH signaling (HES1, FABP4), TGF\u03b2 (ENG), junctional proteins, cytoskeletal architecture, extracellular matrix proteins (COL1A1, FN1, TIMP1, SERPINE1), and integrins (ITGB1, ITGA1, ITGA5), while reducing proliferative signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C76-C79 describe comprehensive rescue effects in co-culture supported by UMAP analysis and specific gene expression data. The findings are biologically coherent (SMC-derived TGF\u03b2 affecting ECM and integrins) and supported by citations to prior work (C79). The reduction in proliferation is consistent with differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Endothelial cell identity markers (CDH5, PECAM1, ERG, Claudins, Sox genes) are not significantly affected by culture conditions, indicating preservation of cellular identity despite extensive transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 demonstrate that core identity genes remain stable across conditions, supported by expression data and prior literature on ERG function (C84). This is an important control showing that observed changes reflect environmental adaptation rather than loss of cell type identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Despite rescue efforts, 26% of transcriptional alterations (out of 43% total) could not be recovered by either shear stress (17% rescue) or SMC co-culture (9% rescue), leaving 17% of drifts unrecovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide quantitative summary of rescue limitations. The arithmetic is internally consistent (43% - 17% - 9% = 17% unrecovered, with some overlap). This honest assessment of incomplete rescue is important for interpreting the study's scope and identifying areas for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Cell cycle, mitosis, and DNA repair transcripts remain elevated at confluency and represent the most significant alteration in culture, along with artificially elevated cytoskeletal dynamics and focal adhesions compared to ex vivo conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 identify persistent culture artifacts even at confluency, supported by differential expression data. This finding challenges assumptions about confluent cultures approximating quiescent in vivo states and has important implications for interpreting culture-based experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Environmental cues including physical forces and heterotypic interactions are critical for endothelial cell function, but in vitro culture removes contextual information, creating uncertainty about what is lost or artificially gained during the transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C13 establish the study rationale through general knowledge (C5-C9, C11) and logical inference (C10, C12-C13). While these are primarily background claims, they are well-supported by citations and provide essential context for the experimental design. The study design directly addresses the uncertainty identified in C13.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C80",
+      "C81",
+      "C87"
+    ],
+    "result": "Endothelial cells possess both identity genes and environment-responsive genes; culture conditions profoundly influence cellular properties, and loss of architecture may induce loss of acute phase transcripts as seen in vascular injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C69, C80-C81, C87 provide conceptual framework and discussion points supported by general knowledge (C65-C66) and citations (C80-C81, C87). Claim C80 is speculative but appropriately qualified. These claims contextualize findings but are not primary results.",
+    "result_type": "MINOR"
+  }
+]

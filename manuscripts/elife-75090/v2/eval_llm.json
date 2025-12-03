@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C35",
+      "C36",
+      "C46",
+      "C47"
+    ],
+    "result": "A linear dereverberation model was trained to recover anechoic sounds from reverberant versions in simulated rooms of different sizes, achieving 26% mean squared error reduction for the small room and 20% for the large room on held-out test data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33, C35, C36 describe the model training methodology, while C46 and C47 provide quantitative performance metrics on held-out test data. The model's performance is clearly documented with specific error reduction percentages, supporting the claim that the model successfully performs dereverberation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C38",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C115"
+    ],
+    "result": "The dereverberation model predicts that neurons should extend inhibitory receptive field components in more reverberant conditions in a frequency-dependent manner, while excitatory components remain unchanged. Model kernels showed frequency tuning and temporally asymmetric structure with early excitation followed by delayed inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C37, C38 state the model predictions, while C48-C52 describe the model kernel properties that support these predictions. C115 explicitly states these as novel predictions. The model results are clearly documented with visual evidence (Figure 2) and are consistent with known properties of auditory cortical neurons (C50), providing strong support for the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C73",
+      "C74",
+      "C116"
+    ],
+    "result": "Electrophysiological recordings from 696 responsive auditory cortical units in ferrets confirmed the model predictions, showing that inhibitory receptive field components are delayed in larger, more reverberant rooms while excitatory components remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 document the experimental data collection (2244 units recorded, 696 responsive units analyzed). Claims C7, C39, C73, C116 describe the experimental validation of model predictions. Claims C55-C56 confirm similarity between model and neural data. C74 interprets this as consistent with dereverberation. The convergence of model predictions and experimental observations across multiple metrics provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C105",
+      "C106",
+      "C110"
+    ],
+    "result": "Analysis of 266 cortical units from 2 ferrets across three room sizes (small, medium, large) revealed that inhibitory receptive field delays scale with room size and show frequency-dependent effects, with inhibition occurring later for lower frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 documents the additional experimental dataset. Claims C105, C106, C110 describe the frequency-dependent effects observed in both model and neural data, with statistical support (correlation coefficients and p-values provided in C106). The systematic relationship between frequency tuning and inhibitory timing is demonstrated across multiple room sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C87",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "Control analyses using non-adaptive simulated neurons (LNP and NRFP models) demonstrated that differences in stimulus statistics alone cannot account for the magnitude of inhibitory receptive field shifts observed in neural data, indicating genuine neural adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 identify the potential confound of stimulus statistics. Claims C78, C80 describe the LNP control model methodology. Claims C87-C88 conclude that stimulus properties alone cannot explain the neural effects. Claims C90-C91 show that even with increased non-linearity (NRFP model), the effects cannot be fully explained. The systematic comparison between simulated and real data with quantitative metrics provides strong evidence for adaptive processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Responses to anechoic noise probes embedded in reverberant stimuli showed similar initial excitation but slower return to baseline in the large room condition, consistent with delayed inhibition in more reverberant environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe the noise probe experimental results, showing differential responses between room conditions. C95 interprets this as further evidence for reverberation adaptation. The noise probe provides an independent test of the adaptation hypothesis using a different stimulus paradigm, strengthening the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C101"
+    ],
+    "result": "Switching stimulus experiments with 310 cortical units across 4 ferrets demonstrated dynamic adaptation of receptive fields to changing reverberant conditions within 8-second blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 documents the experimental dataset. C101 concludes that receptive fields genuinely adapt dynamically. The switching stimulus design provides temporal evidence for adaptation by showing that receptive field properties change as a function of time within reverberant blocks, ruling out static explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis of 430 cortical units from 5 ferrets showed that real neural responses had significantly larger correlation coefficients between reverberation conditions compared to non-adaptive simulated neurons (p<0.0001 for all three room pairs), indicating that adaptation produces more reverberation-invariant representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 document the experimental dataset and statistical results. C104 interprets this as evidence that adaptation promotes dereverberation. The comparison between real and simulated neurons across multiple room pairs with highly significant p-values provides strong quantitative support for the functional role of adaptation in achieving reverberation invariance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C114",
+      "C117",
+      "C118",
+      "C173",
+      "C174"
+    ],
+    "result": "Auditory cortical neurons adapt to reverberation by temporally extending the inhibitory component of their spectrotemporal receptive fields in a frequency-dependent manner, consistent with a computational goal of dereverberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusion of the study, synthesizing results from the computational model (C114), experimental validation (C117), and multiple control analyses (C40, C117). Claims C8, C41, C118, C173, C174 all state variations of this central finding. The convergence of evidence from modeling, electrophysiology, and multiple control experiments provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C129"
+    ],
+    "result": "The findings are consistent with previous studies showing robust auditory processing in reverberation and extend prior work by identifying the specific neural mechanism (delayed inhibition) underlying cortical adaptation to reverberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C122, C123, C124, C125 cite previous studies showing reverberation robustness in humans and ferrets. Claims C120-C121 state that the current results are consistent with these findings. C129 explicitly states that the findings build on and explain previous work. The consistency with multiple prior studies across species and methods strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study extends previous work by Mesgarani et al., 2014 by using more diverse stimuli, more realistic reverberation models, and testing multiple reverberant conditions, revealing that more reverberant environments require more temporally delayed inhibitory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 describe methodological improvements over previous work. Claims C132-C135 summarize the previous study's findings and limitations. C136 states the novel finding that addresses the gap identified in previous work. The explicit comparison to prior work and identification of methodological advances provides clear context for the contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The frequency-dependent delay in inhibition may relate to time constants of mean-sound-level adaptation and could reflect general mechanisms for removing both reverberation and mean sound level, potentially inherited from subcortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C141 are speculative interpretations about the relationship between the observed effects and other known phenomena. While supported by citations to relevant prior work (C138, C139), these are hypotheses about mechanisms rather than demonstrated findings. The use of terms like \"likely relates\" and \"may\" indicates uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Plausible mechanisms for altering the inhibitory field include synaptic depression, intrinsic membrane channel dynamics, hyperpolarizing inputs from inhibitory neurons, or adaptation inherited from subcortical regions, but further studies are required to discriminate among these mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C145 list possible mechanisms supported by citations to relevant literature. Claims C146-C147 explicitly state that further studies are needed to determine which mechanisms are responsible. These are speculative hypotheses about underlying mechanisms rather than demonstrated findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Previous subcortical studies show partial compensation for reverberation, and adaptation to sound statistics increases from auditory nerve to midbrain to cortex, suggesting reverberation adaptation may also become more complete along the auditory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148, C150, C151, C152 cite previous studies about subcortical processing. C149 notes a limitation of previous work. C153 speculates about reverberation adaptation along the auditory pathway. While grounded in prior literature, this is speculation about the anatomical origin of effects rather than a finding from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Recordings were performed under anesthesia to control for attention effects. The observed adaptation is consistent with previous findings in awake animals and is likely driven by stimulus statistics rather than top-down processes, as similar forms of adaptation are unaffected by anesthesia in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 describes the methodological choice. Claims C155-C157 relate findings to previous work in awake animals. Claims C158-C160 cite evidence that similar forms of adaptation are not affected by anesthesia. The convergence of evidence from the current study and prior work on anesthesia effects provides reasonable support for the interpretation, though direct comparison in awake vs. anesthetized animals would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The study used a simple linear model for interpretability, which has relations to engineering approaches but also limitations. More complex models, including blind dereverberation models, could provide additional insights in future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C164 describes the modeling choice. Claims C165-C166 relate the model to engineering approaches and note limitations. Claims C167-C172 discuss potential future modeling directions. These are appropriate acknowledgments of methodological limitations and suggestions for future work, clearly distinguished from the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Dereverberated representations would likely be more invariant across acoustic conditions and easier to process, which is valuable for survival. Understanding these adaptive phenomena may help address challenges faced by hearing-impaired individuals and speech recognition technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C177 speculate about the functional significance and potential applications of the findings. While C176 correctly notes that reverberation is ubiquitous and challenging, C175 and C177 are speculative statements about potential benefits and applications rather than demonstrated outcomes. These represent reasonable hypotheses but lack direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes that reverberation is ubiquitous in natural environments, can impair various auditory functions especially for hearing-impaired individuals and speech recognition systems, but healthy listeners cope well with mild-to-moderate reverberation. Previous work suggests cortical adaptation to noise, but mechanisms for reverberation adaptation remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background context supported by extensive citations to prior literature (C9-C30). Claims C1-C3 define the problem. Claims C11-C22 describe effects of reverberation on perception. Claims C23-C30 summarize prior work. Claims C31-C32 identify knowledge gaps. This background is well-supported by citations and establishes the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C178",
+      "C179"
+    ],
+    "result": "Seven ferrets (3 female, 4 male, mean age 8.4 months) were used in electrophysiology experiments approved by the University of Oxford ethical review committee and UK Home Office.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C179 provide basic methodological information about experimental subjects and ethical approval. This information is clearly stated and represents standard reporting of experimental procedures.",
+    "result_type": "MINOR"
+  }
+]

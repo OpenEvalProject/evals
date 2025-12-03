@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C29"
+    ],
+    "result": "Reducing MSA depth through stochastic subsampling enables AF2 to generate accurate models in multiple conformations for proteins absent from the training set. Default AF2 pipeline produces conformationally homogeneous models, but using shallow MSAs (as few as 16 sequences) with reduced recycles generates diverse conformations with high accuracy (TM score \u22650.9) for all eight benchmark proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C18, C19, C20, C21, C23, and C29 collectively demonstrate the core methodological finding with quantitative support from Figure 1B. The approach is systematically tested across eight proteins with consistent results, and the TM scores provide objective accuracy metrics. The methodology is clearly described and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "Generated conformations span the range between experimental structures, with models at extreme PC1 positions being most accurate. PCA analysis shows PC1 captures 64.9% \u00b1 16.1% of structural variation, experimental structures occupy extreme positions, and models with extreme PC1 values achieve average TM scores of 0.94 with Pearson correlation >0.8 between PC1 and TM scores for all transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C35-C41, and C44 are well-supported by quantitative PCA data in Figure 3B and statistical metrics. The correlation between PC1 extremes and accuracy provides a clear selection criterion. The consistency across all transporters strengthens the finding, though the exception of PTH1R (C42-C43) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Predicted structural flexibility correlates with conformational dynamics inferred from experimental structures. RMSF among AF2 models correlates with C\u03b1 distances between experimental structures, with notable correlation (R\u00b2 \u2265 0.75) for ASCT2, LAT1, CGRPR, and MCT1 with templates, but flexibility does not correlate with pLDDT confidence scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by quantitative correlation analysis shown in Figure 2. The R\u00b2 values provide objective measures of correlation strength. The lack of correlation with pLDDT (C34) is interesting and contrasts with prior work, though this comparison relies on appropriate statistical testing which is not fully detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C53"
+    ],
+    "result": "MCT1 requires manual template curation in addition to shallow MSAs to model alternative conformations. Without templates, AF2 exclusively models MCT1 in IF or occluded conformations (>99% of models TM score \u22650.9 to IF, <0.9 to OF). Accurate OF models were obtained only with OF templates and MSAs of 16-32 sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C53 demonstrate a protein-specific limitation requiring methodological adaptation. The quantitative data (>99% bias) is compelling. However, the need for templates represents a departure from the general approach and suggests the method's limitations. The finding is well-documented but indicates the approach is not universally applicable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C56"
+    ],
+    "result": "The approach shows limited success for proteins with structures in the AF2 training set. Models of CCR5, SERT, PfMATE, and MurJ were biased toward training set conformations with far more limited conformational diversity than proteins absent from the training set, and none of the MurJ or PfMATE models adopted alternative conformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 and C56 are supported by comparative data in Figure 1\u2014figure supplements 2 and 4. The bias toward training set conformations is clearly demonstrated. This represents an important limitation of the approach, though the explanation invoking training set composition (C50) is speculative. The finding is honest about methodological limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C25",
+      "C30"
+    ],
+    "result": "Optimal MSA depth varies by protein and requires empirical exploration. Deep MSAs (hundreds-thousands of sequences) produce tight conformational clustering, while shallow MSAs promote diversity but also generate misfolded models that can be identified and excluded through clustering analysis. No general pattern for ideal MSA depth was apparent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24, C25, and C30 describe important practical considerations supported by data across multiple proteins. The ability to identify and exclude misfolded models (C25, Figure 1\u2014figure supplement 1) is methodologically important. The lack of a universal optimal depth (C30) is a limitation but honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The benchmark set comprises eight membrane proteins absent from AF2 training set with experimentally determined structures in two conformations. Five transporters representing diverse mechanisms (rocking-bundle, rocker-switch, elevator) and three GPCRs from classes A, B1, and F were selected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe the study design with appropriate citations. The selection criteria (structures absent before April 30, 2018, determined in multiple conformations afterward) is clearly justified. The diversity of mechanisms and protein classes strengthens the benchmark, though the sample size is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Application to GPR114/ADGRG5 demonstrates the proposed workflow. Shallow MSAs (\u226464 sequences) yielded three conformational clusters, with one cluster showing TM6/TM7 orientation that occludes the orthosteric site and partially blocks the G protein binding pocket, though physiological relevance requires experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60 present a prospective application to an uncharacterized protein. While the structural predictions are generated (C58-C59, Figure 3\u2014figure supplement 2), the authors appropriately acknowledge that physiological relevance requires validation (C60). The inference about active conformation (C57) is speculative. This represents hypothesis generation rather than validated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C55",
+      "C61",
+      "C62"
+    ],
+    "result": "AF2 can be manipulated to model alternative conformations through shallow MSAs and exhaustive sampling with PCA-based selection. The approach represents a methodological 'hack' rather than an explicit algorithmic capability, but can provide models to guide biophysical studies of conformationally heterogeneous membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C55, C61, and C62 synthesize the main conclusions. The characterization as a 'hack' (C62) is honest about the approach's nature. The conclusions are appropriately qualified and supported by the benchmark data, though the utility for guiding studies (C61) remains to be demonstrated in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AF2 likely does not learn energy landscapes or account for lipid environment effects. The conformational exploration is a byproduct of low sequence information rather than learned flexibility, highlighting the need for next-generation AI methods capable of learning intrinsic conformational flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide important context about AF2's limitations supported by citations (C63, C65) and the study's observations (C66). The interpretation that conformational sampling is a byproduct (C66) is reasonable given the methodology. The call for future development (C67) is appropriate but speculative about what's needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The modified AF2 pipeline uses MMSeqs2 for MSAs, disables template search (except when specified), sets recycles to one, skips refinement, and uses all 5 neural networks with 10 predictions each. MSA subsampling is random with controlled depth parameters, and analysis uses TM-align and CPPTRAJ with loop residues omitted from PCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 describe methodological details with appropriate tool citations. The modifications to the default pipeline are clearly specified and justified. The random subsampling without manual curation (C74-C75) is important for reproducibility. Methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on membrane protein conformational dynamics and historical prediction challenges. Membrane proteins undergo conformational changes for function (transporters alternate between IF/OF states, GPCRs undergo intracellular rearrangements), and traditional prediction methods struggled with these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C12 provide established background knowledge supported by appropriate citations. These contextual claims accurately represent the field and motivate the study. No novel findings are presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C14"
+    ],
+    "result": "AF2's CASP14 success with LmrP motivated this study. AF2 modeled the multidrug transporter LmrP in multiple conformations during CASP14, with two conformations consistent with experimental data, despite being designed to predict static structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C13, and C14 accurately describe prior work (CASP14 results) with appropriate citations. The observation about LmrP's multiple conformations is the key motivation for the current study. These are factual claims about published results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "PTH1R represents an exception where experimental structures are in partially inactive and active conformations, suggesting models extending beyond the partially inactive state along PC1 may represent the fully inactive conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is factual with citation support, but C43 is speculative inference. The suggestion that models beyond the partially inactive state represent fully inactive conformation lacks experimental validation. This is hypothesis generation based on PCA positioning but requires verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C54"
+    ],
+    "result": "Training set composition may explain differential performance, with many active GPCRs but no IF MATEs in the training set. The DeepMind team reportedly required templates for LmrP OF conformation, though this study found templates usually unnecessary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is speculative inference about training set effects, though supported by citation about composition. Claim C54 references DeepMind's reported approach with citation, but the comparison is limited without detailed methodology from the original work. The divergence is noted but not fully explained.",
+    "result_type": "MINOR"
+  }
+]

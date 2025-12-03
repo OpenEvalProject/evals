@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C60",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study presents the first direct observation of solution structures of large archaeasomes (>90 bp DNA) using cryoEM, revealing two distinct structural classes with DNA wrapping pathways deflected 90\u00b0 out-of-plane. Class I contains the full Arc207 complex with Arc120 and Arc90 subunits arranged perpendicular to each other, while Class II shows a compact Arc150 structure. These structures are validated by agreement between cryoEM densities, MD simulations, and SV-AUC hydrodynamic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryoEM structures at 9.5 \u00c5 and 11.5 \u00c5 resolution (C68) directly demonstrate the 90\u00b0 deflection architecture (C6, C30, C34, C67, C73, C80), which is independently supported by SV-AUC frictional ratios (C75, C76) and MD simulations showing correlation coefficient of 0.85 with empirical density (C70). The multi-method convergence provides strong evidence for these novel structural states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MD simulations reveal that archaeasomes exhibit 'clamshell' dynamics where terminal regions fluctuate between open and closed states while maintaining histone-histone four-helix bundle interfaces and histone-DNA interactions. The Arc90 system shows the highest dynamics (RMSD ~6 \u00c5), while L1-L1 interactions in Arc120 and Arc180 systems dampen this motion. The G17D mutation increases dynamics and accessibility without causing histone dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation data (C37-C52) provides comprehensive quantitative evidence including RMSD, RMSF, DNA separation distances, and MM-GBSA binding energies across multiple systems and replicates (C99). The maintained four-helix bundle interfaces (C41, C47) and DNA binding energies (C48, C50, C51) despite large-scale dynamics (C38, C40) directly support the conclusion that accessibility increases without dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C83"
+    ],
+    "result": "SV-AUC analysis demonstrates that Arc207 complexes are fully saturated with seven histone dimers but adopt extended conformations in solution, as evidenced by slower sedimentation (10.6 s vs 11.2 s for Nuc147) despite higher mass, and increased frictional ratio (1.94 vs 1.55 for Nuc147). These hydrodynamic properties agree with MD simulation models of extended Arc90-based structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SV-AUC data (C55-C58) combined with GA-MC analysis (C57, C58) provides direct experimental evidence for extended archaeasome conformations. The agreement between experimental frictional ratios and those calculated from MD-derived models (C83) validates both the experimental measurements and computational predictions. The comparison with Nuc147 controls strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C88",
+      "C89"
+    ],
+    "result": "Mg2+ concentration influences archaeasome compaction without promoting aggregation. Arc207 shows progressive compaction from 0-5 mM Mg2+ (measured by increased sedimentation and decreased frictional ratio) with no further change at higher concentrations, while Nuc147 aggregates above 2 mM Mg2+. This demonstrates that divalent cations compact individual archaeasomes without promoting inter-particle interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SV-AUC data across multiple Mg2+ concentrations (C61, C62) directly demonstrates differential behavior between Arc207 and Nuc147. The maintained OD260 values for Arc207 versus loss for Nuc147 at high Mg2+ provides clear evidence against aggregation (C88). The frictional ratio changes confirm compaction of individual particles (C5, C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C32",
+      "C43",
+      "C45",
+      "C46",
+      "C53"
+    ],
+    "result": "L1-L1 stacking interactions between histone dimers regulate archaeasome dynamics and accessibility. The G17D mutation, which disrupts L1-L1 interactions, increases dynamics, DNA separation, and solvent-accessible surface area by >1000 \u00c5\u00b2 compared to wild-type, explaining the loss of MNase digestion patterns observed in vivo without requiring histone dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulation data comparing wild-type and G17D systems (C43-C46) provides quantitative evidence for the regulatory role of L1-L1 interactions. The statistically significant increase in surface area (C46, p<0.001) and maintained four-helix bundles (C47) support the mechanism. The reinterpretation of previous MNase data (C53) is a logical inference from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C87"
+    ],
+    "result": "The 90\u00b0 deflection architecture of archaeasome subunits exposes the major groove of connecting DNA to nuclear factors, providing a structural explanation for the ~30 bp MNase digestion ladder observed in native archaeal chromatin and suggesting a mechanism for DNA accessibility without complete archaeasome displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations from cryoEM (C80) combined with the 90\u00b0 arrangement (C73, C77) provide a clear structural basis for the inference about major groove accessibility (C81). The connection to MNase digestion patterns (C82) is a reasonable interpretation linking structure to previous experimental observations, though it remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Archaea may leverage inherent archaeasome dynamics to balance chromatin packing and accessibility without ATP-dependent remodelers. This contrasts with eukaryotic nucleosomes, which are compact and stable and require elaborate machinery for chromatin regulation. The intrinsic dynamics may allow sporadic DNA access through appearance of extended substates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural and dynamic data (C29-C34, C78-C80) clearly demonstrate inherent archaeasome flexibility, the functional interpretation (C7, C96) remains speculative. The absence of known remodelers in archaea (C95) and evidence that transcription through archaeasomes is slowed but not stopped (C93) are consistent with this model, but direct functional validation is lacking. This represents a reasonable hypothesis requiring future experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C90"
+    ],
+    "result": "The ability of archaeasomes to compact without aggregating at high Mg2+ concentrations may reflect evolutionary adaptation to high-salt environments, as T. kodakarensis cells contain ~120 mM Mg2+ (much higher than mammalian nuclei at 16-18 mM). Archaeal histones provide weaker electrostatic screening than eukaryotic histones due to lower isoelectric points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The cited Mg2+ concentrations (C64, C65) and histone pI differences (C66) are factual, but the evolutionary interpretation (C90) is speculative. While the non-aggregating behavior at high Mg2+ is experimentally demonstrated (C88, C89), the mechanistic connection to evolutionary adaptation versus other biochemical factors remains unproven. The hypothesis is plausible but requires additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Archaeal and eukaryotic histones share fundamental features including the histone fold motif, dimerization, and DNA wrapping, but differ in key aspects: archaeal histones lack N-terminal tails and histone fold extensions, form variable-length archaeasomes (60-500 bp) rather than defined octamers, and are found in archaea but not bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established knowledge in the field, supported by appropriate citations (C1, C9, C11, C14-C18). The comparisons between archaeal and eukaryotic systems are accurate and provide essential context for understanding the novelty of the current work. These are background claims rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous crystal structure work on HMfB histone bound to ~90 bp DNA revealed nucleosome-like features including superhelical DNA wrapping and four-helix bundle interactions, but also showed extended superhelical winding with more than four histone dimers, consistent with in vivo footprinting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe prior work by the authors (C21, C26) and establish the foundation for the current study. The structural features described (C24, C25) are from published crystal structures and provide essential context. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Previous work showed that 'capstone' histone variants in Methanosphaera stadtmanae disrupt the tetramer interface and limit archaeasome size. The current EM structures suggest this may increase DNA accessibility through major groove exposure without complete subunit displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The capstone work (C86) is appropriately cited to Stevens et al., 2020. The connection to the current structural findings (C87) is a reasonable inference that integrates prior work with new data, though it remains interpretive rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C97"
+    ],
+    "result": "Archaeal histones can be expressed in E. coli and coat bacterial DNA with minimal growth perturbations, and SMC-like coalescin proteins were recently identified in histone-less Sulfolobus archaea, suggesting diverse chromatin organization strategies across archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited to published work (C91, C92 to Rojec et al., 2019; C97 to Takemata and Bell, 2021) and provide relevant context for understanding archaeal chromatin biology. They are background information rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study used HTkA histones from Thermococcus kodakarensis (59% identical, 81% similar to HMfB) for reconstitution experiments, conducted three independent 300 ns MD simulations for each system, and deposited cryoEM structures to EMDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological details are clearly stated and appropriate. The similarity between HTkA and HMfB (C98) justifies the experimental design. The simulation protocol (C99) and data deposition (C100) meet standard practices for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Arc120 and Arc180 simulations may have been artificially biased toward closed configurations because starting structures had intact L1-L1 interactions, and separation of these contacts may require longer than several hundred nanoseconds of sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge potential limitations of their MD simulations (C84, C85). This self-critical assessment strengthens rather than weakens the overall work by identifying areas where longer simulations or alternative starting structures might provide additional insights.",
+    "result_type": "MINOR"
+  }
+]

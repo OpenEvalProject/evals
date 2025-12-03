@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors identified a novel pDC-specific long non-coding RNA (lncIrf8) transcribed from the +32 kb enhancer downstream of Irf8. lncIrf8 comprises two exons, one intron, and a polyA tail, and is not conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C31, C43-C45 collectively demonstrate the discovery and characterization of lncIrf8 through de novo transcript assembly of RNA-seq data (C29), RACE PCR validation (C44), and expression analysis in multiple DC subsets (C30). The data in Figures 1A and 2A provide strong visual evidence for lncIrf8 expression and genomic location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The lncIrf8 locus shows differential epigenetic signatures and chromatin interactions in pDC versus cDC1. The Irf8 promoter interacts with upstream sequences more strongly in pDC and with downstream sequences more strongly in cDC1, suggesting differential regulation of Irf8 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C32-C42 are well-supported by comprehensive epigenetic profiling including ATAC-seq, ChIP-seq (H3K27ac, H3K4me3, IRF8), and Capture-C data shown in Figures 1 and 2. The differential chromatin interactions (C36-C37) and epigenetic marks (C33-C34, C41-C42) provide converging evidence for cell-type-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Deletion of the lncIrf8 promoter element severely compromises Irf8 expression and abolishes pDC and cDC1 development both in vitro and in vivo, while cDC2 remain unaffected. Similar effects are observed with deletion of the cDC1-specific +32 kb enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C46-C56 are strongly supported by CRISPR/Cas9 knockout experiments in HoxB8 MPP cells (Figures 2 and 3) and transplantation studies. The RT-qPCR data (C46-C47), flow cytometry analysis (C48, C50, C54-C55), and in vivo validation (C54-C55) provide robust evidence. The comparison with cDC1 +32 kb enhancer KO (C51-C53) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C95",
+      "C120"
+    ],
+    "result": "lncIrf8 itself has no activity in DC differentiation, as demonstrated by overexpression and rescue experiments. Instead, lncIrf8 serves as an indicator for the activation state of the Irf8 +32 kb enhancer, while a sequence element within the lncIrf8 promoter is crucial for pDC and cDC1 development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C95, and C120 are supported by well-designed gain-of-function experiments (Figure 4). The lack of effect from lncIrf8 overexpression (C57-C58) and failed rescue (C59) provide strong negative evidence, while the promoter KO effects (C6, C46-C56) demonstrate the importance of the promoter element itself rather than the transcript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CRISPR activation experiments reveal that activation of the lncIrf8 promoter increases both lncIrf8 and Irf8 expression initially, but lncIrf8 expression subsequently decreases while Irf8 remains elevated, suggesting a negative feedback loop. Activation of either the lncIrf8 or Irf8 promoter increases cDC1 frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 are supported by dCas9-VP64 CRISPR activation experiments (Figure 5). The temporal dynamics of gene expression (C62-C63, C65) measured by RT-qPCR and the flow cytometry data showing increased cDC1 frequencies (C69-C71) provide strong evidence for the proposed negative feedback mechanism (C66-C67, C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CRISPR interference experiments demonstrate that repression of the Irf8 promoter decreases Irf8 but massively increases lncIrf8 expression, consistent with negative feedback. Repression of the lncIrf8 promoter decreases both Irf8 and lncIrf8 expression and compromises pDC and cDC1 development, similar to the promoter KO phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by dCas9-KRAB CRISPR interference experiments (Figure 6). The reciprocal effects on gene expression (C73-C75) measured by RT-qPCR and the flow cytometry data showing compromised DC development (C76-C77) provide strong evidence. The similarity to the KO phenotype (C78) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C97",
+      "C98",
+      "C122"
+    ],
+    "result": "The authors propose a two-step model of Irf8 regulation: first, Irf8 autoactivation is initiated by flanking enhancers including the +32 kb enhancer; second, Irf8 expression is limited by negative feedback inhibition through the lncIrf8 promoter element within the same +32 kb enhancer. This feedback inhibition differs between pDC and cDC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C79, C84-C90, C93, C97-C98, and C122 represent the main mechanistic model supported by the collective evidence from knockout (C46-C56), overexpression (C57-C61), CRISPR activation (C62-C72), and CRISPR interference (C73-C78) experiments. The model is visualized in Figure 7 and integrates multiple lines of experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C110",
+      "C111"
+    ],
+    "result": "Irf8 expression increases from CDP to pDC and cDC1, with particularly high expression in pDC. This increase correlates with differential Irf8 promoter-enhancer interactions: stronger upstream interactions in pDC and stronger downstream interactions in cDC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 and C110-C111 are supported by RNA-seq data (C80) and Capture-C data (C35-C37, C81-C83) shown in Figures 1 and 7. The correlation between expression levels and chromatin interactions provides mechanistic insight, though the causal relationship is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors propose that IRF8 itself mediates the feedback inhibition through formation of a repressor complex that binds to the +32 kb enhancer in cDC but not in pDC. Potential partners for this repressor complex include ETV6 or IRF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 represent a mechanistic hypothesis based on known IRF8 biology (C102-C104) and ChIP-seq data showing differential IRF8 binding (C107). However, the identity of the repressor complex (C105-C106) is speculative and not directly tested. The model is plausible but requires experimental validation of the proposed protein-protein interactions and their functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "CRISPR activation and interference experiments recapitulate the proposed regulatory mechanisms: activation of the Irf8 promoter mimics Irf8 upregulation and increases pDC and cDC1, while interference at the lncIrf8 promoter mimics repressor binding and inhibits Irf8 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 summarize the functional validation experiments shown in Figures 5 and 6. The dCas9-VP64 and dCas9-KRAB experiments provide strong support for the proposed regulatory mechanisms by demonstrating that artificial manipulation of these regulatory elements produces the predicted effects on gene expression and cell differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The lncIrf8 promoter element has overlapping but distinct functions compared to the previously described cDC1-specific +32 kb enhancer. While both affect cDC1 development, the lncIrf8 promoter element additionally impacts pDC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 are supported by comparison of the lncIrf8 promoter KO (Figures 2-3) with the cDC1 +32 kb enhancer KO (Figure 2\u2014figure supplement 4) and with published in vivo data (C114). The differential effects on pDC versus cDC1 (C116-C117) suggest functional specialization of these closely located regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "Background claims establish that IRF8 is a master regulator of DC development that is upregulated by autoactivation and regulated by multiple flanking enhancers. IRF8 can act as both transcriptional activator and repressor depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C28, C91-C92, and C94 represent established knowledge from the literature, supported by numerous citations. These background claims provide the scientific context for the current study and are well-documented in the field. The authors accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C121",
+      "C123"
+    ],
+    "result": "The authors discuss general principles of enhancer RNA function and speculate about potential additional functions of lncIrf8 and broader applicability of the feedback inhibition mechanism to other transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 represent general knowledge about enhancer RNAs supported by citations. Claims C121 and C123 are speculative statements about future directions and broader implications. While plausible, these claims are not tested in the current study and represent hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C112"
+    ],
+    "result": "The feedback inhibition mechanism differs between pDC and cDC1, with less feedback inhibition in pDC leading to higher Irf8 expression. This is consistent with previous studies showing that Irf8 flanking enhancers are required to maintain high Irf8 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 and C112 integrate the current findings with published literature. The differential feedback inhibition (C99, C101) is supported by the ChIP-seq data showing differential IRF8 binding (C42, C107) and the expression data (C80). The consistency with prior enhancer studies (C112) strengthens the overall model.",
+    "result_type": "MINOR"
+  }
+]

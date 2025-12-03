@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "25059945-fb39-413b-a1ef-2c419e93e74d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:11:47.572051Z",
+    "updated_at": "2025-12-03T03:11:47.572051Z"
+  },
+  "content": [
+    {
+      "id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "submission_id": "25059945-fb39-413b-a1ef-2c419e93e74d",
+      "content_type": "manuscript",
+      "content_text": "# Whole-organism eQTL mapping at cellular resolution with single-cell sequencing\n\n## Authors\n\n- Eyal Ben-David<sup>1</sup> ([ORCID: 0000-0003-0514-0400](https://orcid.org/0000-0003-0514-0400)) \u2020\n- James Boocock<sup>1</sup>\n- Longhua Guo<sup>1</sup>\n- Stefan Zdraljevic<sup>1</sup>\n- Joshua S Bloom<sup>1</sup> ([ORCID: 0000-0002-7241-1648](https://orcid.org/0000-0002-7241-1648)) \u2020\n- Leonid Kruglyak<sup>1</sup> ([ORCID: 0000-0002-8065-3057](https://orcid.org/0000-0002-8065-3057)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics, Department of Biological Chemistry, and Howard Hughes Medical Institute, University of California, Los Angeles Los Angeles United States\n2. Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, The Hebrew University School of Medicine Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic regulation of gene expression underlies variation in disease risk and other complex traits. The effect of expression quantitative trait loci (eQTLs) varies across cell types; however, the complexity of mammalian tissues makes studying cell-type eQTLs highly challenging. We developed a novel approach in the model nematode Caenorhabditis elegans that uses single-cell RNA sequencing to map eQTLs at cellular resolution in a single one-pot experiment. We mapped eQTLs across cell types in an extremely large population of genetically distinct C. elegans individuals. We found cell-type-specific trans eQTL hotspots that affect the expression of core pathways in the relevant cell types. Finally, we found single-cell-specific eQTL effects in the nervous system, including an eQTL with opposite effects in two individual neurons. Our results show that eQTL effects can be specific down to the level of single cells.\n\n## Introduction\n\nGene expression differences have a strong genetic basis, and genome-wide studies have identified thousands of regions affecting gene expression, termed expression quantitative trait loci (eQTLs) (Albert and Kruglyak, 2015). eQTLs have been found to underlie genetic associations with complex traits and diseases (Albert and Kruglyak, 2015; Gusev et al., 2014; Hormozdiari et al., 2018), and genome-wide eQTL mapping holds great promise for uncovering the molecular underpinnings of phenotypic variation.\n\nStudies in purified blood cell populations (Raj et al., 2014; Fairfax et al., 2012; Ishigaki et al., 2017) and computational analyses in human tissues (Donovan et al., 2020; Kim-Hellmuth et al., 2020) indicate that many eQTLs are cell-type specific. Studying eQTLs in relevant tissues and cell types is thus important for understanding their role in trait variation (Yao et al., 2020). However, major challenges remain for cell-type-specific eQTL mapping. First, studying multiple tissues or cell types is laborious and expensive, and has mostly been limited to large consortia (GTEx Consortium, 2020). Additionally, diseases can be associated with specific subsets of cells that may not be readily separable from the rest of the tissue, limiting the insight that can be gleaned from studying bulk tissue samples (van der Wijst et al., 2020).\n\nThe recently developed technology of single-cell RNA sequencing (scRNA-seq) has the potential to significantly mitigate both of the above issues. In scRNA-seq, gene expression is profiled at the level of individual cells, and different cell populations are identified based on their gene expression profiles. This approach allows simultaneous measurement of expression in multiple tissues and cell types in a \u2018one-pot\u2019 experiment, reducing the number of samples that need to be processed and profiled separately. Furthermore, distinct cell types can be interrogated directly, facilitating eQTL mapping in disease-relevant but rare cell types.\n\nThe size and complexity of mammalian tissues has so far limited the ability to use scRNA-seq for eQTL mapping, and studies have focused on purified cell populations and cell lines (Cuomo et al., 2020; van der Wijst et al., 2018). To pilot a whole-organism approach, we therefore turned to the model nematode Caenorhabditis elegans. One of the mainstays of modern genetic research, C. elegans has an invariant cell lineage that leads to each individual having the same number and identity of cells (Sulston and Horvitz, 1977). Decades of research have uncovered the functions of many of those cells, as well as expression markers that uniquely identify them (Hall and Altun, 2007; Hobert et al., 2016). These features and resources make C. elegans exceptionally well-suited for using scRNA-seq to map eQTLs across cell types in the natural physiological context of a whole animal, down to cellular resolution.\n\n## Results\n\n### Cell-type-specific eQTL mapping in a single one-pot experiment\n\nGenome-wide eQTL mapping involves acquiring genotypes and gene expression profiles for a genetically diverse cohort. We recently developed a method, C. elegans extreme quantitative trait locus (ceX-QTL) mapping, for genetic analysis of complex traits in extremely large populations of segregants (Burga et al., 2019). The method takes advantage of a mutation in the gene fog-2 that forces the normally hermaphroditic C. elegans to reproduce via obligate outcrossing, allowing us to propagate a large crossing experiment for multiple generations.\n\nHere, we build on ceX-QTL by combining it with scRNA-seq to carry out eQTL mapping at cellular resolution in a single one-pot experiment (Figure 1A). In this approach, a large heterogeneous pool of cells from thousands of genetically distinct individuals is profiled using scRNA-seq, cell types are inferred by clustering scRNA-seq profiles and studying known cell-type markers, and genotype information is reconstructed using expressed genetic variants, enabling eQTL mapping in multiple cell types simultaneously.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig1-v2.jpg)\n\n**Figure 1.:** (A) A large population of segregants is dissociated to single cells.\u00a0Each cell in the suspension has an unknown genotype and cell-type identity. The suspension is profiled using scRNA-seq. Cell-type identity is inferred by clustering cells and comparing the expression of known marker genes. Genotypes are reconstructed from expressed single-nucleotide variants. (B) The Uniform Manifold Approximation and Projection of 55,508 scRNA-seq expression profiles from approximately 200,000 C. elegans F4 segregants collected at the L2 larval stage is shown. Cells are colored based on the inferred cell type.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The expected number of cells was calculated by manually curating the cellular lineage information available at https://www.wormatlas.org/ for the L2 stage.\n\nWe propagated a cross between the laboratory strain N2 and a highly divergent isolate from Hawaii, CB4856, for four generations, generating a pool of 200,000 genetically distinct F4 segregants. We dissociated the segregant pool to single cells at the L2 larval stage and profiled the cells with scRNA-seq. We identified clusters in a Uniform Manifold Approximation and Projection (UMAP) of the dataset\u00a0(McInnes et al., 2018; Traag et al., 2019; Trapnell et al., 2014) and determined their cell-type identities using known markers (Cao et al., 2017; Packer et al., 2019). Our final dataset comprises 55,508 cells classified into 19 different cell types (Figure 1B;\u00a0Supplementary file 1\u2014Table S1). The observed number of cells of each type was strongly correlated with the known cell-type abundance in L2 larvae (Spearman\u2019s \u03c1=0.87, p=2.2\u00d710\u22126, Figure 1\u2014figure supplement 1).\n\n### De novo genotyping of scRNA-seq profiles using a hidden Markov model (HMM)\n\nMost of the cells in our sample were expected to carry unique genotypes (Materials and methods, Supplementary file 1\u2014Table S1). This design is advantageous for eQTL mapping because it maximizes the sample size (Mandric et al., 2020), but it requires de novo genotype calling because the genotype of each cell is unknown beforehand. Previous studies have shown that in addition to providing a readout of global gene expression, transcriptomic data can also be used for genotyping by leveraging variants in transcribed sequences (Ronald et al., 2005; West et al., 2006; Kang et al., 2018). To that end, we built a HMM for genotyping cells based on scRNA-seq data. The model calculates the posterior probability of the underlying genotypes for each individual based on three components: (1) prior probabilities for each of the possible genotypes, (2) emission probabilities for observing variant-informative reads given each of the possible genotypes, and (3) transition probabilities for recombination events occurring or not occurring between adjacent genotype-informative sites. Emission probabilities were calculated as previously described for low-coverage sequencing data under the assumption that the observed counts of reads for each possible allele at a genotype-informative site arise from a random binomial sampling of the alleles present and that sequencing errors occur independently (Dodds et al., 2015; Bilton et al., 2018). Transition probabilities at each variant position were derived from the genetic map we previously published for the N2 \u00d7 CB4856 cross (Rockman and Kruglyak, 2009). Posterior probabilities of each genotype for each individual were calculated using the forward-backward algorithm (Figure 2; see Materials and methods for a full mathematical description of the model). To minimize loss of power due to genotyping errors, we used the posterior probabilities directly to map eQTLs in a negative binomial modeling framework instead of assigning deterministic genotype calls (Materials and methods).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig2-v2.jpg)\n\n**Figure 2.:** A cell with the median (69) number of unique genotype-informative single-nucleotide variant\u00a0(SNV) unique molecular identifier (UMI) counts is shown for illustration. The trace is a summation of the probability of a CB4856 homozygous genotype and half the probability of CB4856 heterozygous genotype at each position. Each vertical line is a count for an SNV, and colors correspond to the count depth. Vertical lines pointing upwards denote counts supporting the CB4856 variant, while lines pointing downwards are counts supporting the N2 variant.\n\n### eQTL mapping in multiple cell types\n\nWe mapped 1718 cis eQTLs in 1294 genes and 451 trans eQTLs in 390 genes at a false discovery rate (FDR) of 10% across the different cell types (Figure 3A,\u00a0B, Supplementary file 1\u2014Table S2). The number of eQTLs detected in each cell type was strongly correlated with the number of cells of that type (Spearman\u2019s \u03c1=0.91, p<2.2\u00d710\u221216). In cell types with\u00a0>1000 cells, we mapped between 52 and 415 eQTLs (Supplementary file 1\u2014Table S1). For 1071 of the 1294 genes with a cis eQTL (83%), the eQTL was detected in only one cell type. For 208 of the remaining 223 genes (93%), the direction of the eQTL effect was the same in all cell types in which it was detected.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig3-v2.jpg)\n\n**Figure 3.:** (A) A genome-wide map of eQTLs across all cell types is shown. The position of the eQTLs is shown on the x-axis, while the y-axis shows the position of the associated transcripts. Points along the diagonal are cis eQTLs (those mapping to nearby genes). (B) The number of cis and trans eQTLs mapped in each cell type. (C) The overlap between a previous study that mapped eQTLs in whole worms in a panel of recombinant inbred lines and our dataset. (Left) The proportion of genes with a cis eQTL in at least one dataset out of all genes tested. (Middle) Of the 1688 significant cis\u00a0eQTL genes, 355 had a cis eQTL in both datasets, representing a highly significant enrichment. (Right) Hits mapped in more than one cell type were more likely to also be found in the whole-worm (\u2018bulk\u2019) dataset. (D) Quantitative comparison between normalized effect sizes in our dataset and in the whole-worm dataset.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Comparison between cis eQTLs mapped across all cell types and gene expression differences in a dataset of 6721 N2 and 3104 CB4856 cells. For cis eQTLs mapped in multiple cell\u00a0types, effect sizes were combined using Stouffer\u2019s weighted-Z method (Whitlock, 2005). Differential gene expression between N2 and CB4856 was calculated using R package DEsingle.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The data corresponds to Figure 3\u2014figure supplement 1, split out by each cell type separately.\n\nWe studied to what degree our cis eQTL results were concordant with gene expression differences between the parents. We generated a scRNA-seq dataset from 6721 N2 and 3104 CB4856 cells and used a classifier trained on the segregant dataset to identify cell types in the parental scRNA-seq dataset. We then carried out a differential expression analysis in each cell type. We found 870 differentially expressed genes (at a greater than twofold change and FDR of 10%), of which 201 (23%) had a cis eQTL in the same tissue (odds\u00a0ratio\u00a0[OR]\u00a0=\u00a018.8, p<2.2\u00d710\u221216, Fisher\u2019s exact test). In\u00a0total,\u00a0191 of these cis eQTL (95%) showed the same direction of effect as the parental difference. Further, the effect sizes of the significant cis eQTLs were strongly correlated with the sizes of the parental differences (Spearman\u2019s \u03c1=0.66, p<2.2\u00d710\u221216) (Figure 3\u2014figure supplements 1 and 2). These results provide independent support for our cis\u00a0eQTL mapping and show that for a sizable fraction of the genes those cis eQTLs are a major cause of differential gene expression between the strains.\n\n### Comparison between bulk and single-cell cis\u00a0eQTL mapping\n\nTo investigate the relationship between single-cell and bulk eQTL mapping, we compared our single-cell eQTLs to those previously identified in a panel of 200 recombinant inbred lines (RILs) generated from crossing N2 and CB4856 (Rockman et al., 2010). In the bulk study, a large population of whole worms from each RIL was recovered at a late larval stage, L4, and profiled on expression microarrays. We reanalyzed data for 11,535 genes expressed in both datasets and identified 981 cis eQTLs in the bulk dataset (at an FDR cutoff of 10%). Despite major differences in experimental design, including the developmental stage of the worms, the overlap with the single-cell cis eQTLs was highly significant, with 335 cis eQTLs shared between the studies (OR\u00a0=\u00a07.2, p<2.2\u00d710\u221216, Fisher\u2019s exact test) (Figure 3C). These shared loci represented 34% of the bulk cis eQTLs and 32% of the single-cell cis eQTLs. Furthermore, the bulk and single-cell eQTL effect sizes were highly correlated (Spearman\u2019s \u03c1=0.64, p<2.2\u00d710\u221216) (Figure 3D). Lastly, single-cell eQTLs detected in multiple cell types were more likely to also be seen in the bulk study: 50% of the genes with cis eQTLs detected in multiple cell types were also identified in bulk compared to 28% of the eQTLs detected in only one cell type (OR\u00a0=\u00a02.58, p=2.1\u00d710\u22128) (Figure 3C). This observation suggests that the single-cell eQTL mapping approach improves the power to detect cell-type-specific effects.\n\n### Shared and cell-type-specific trans\u00a0eQTL hotspots\n\nWe observed that 90 of the 451 trans eQTLs clustered at five hotspots, each containing 12\u201331 eQTLs (Figure 4, Supplementary file 1\u2014Table S3). A hotspot on Chr. I was identified independently in both neurons and seam cells; the top associated variant (Chr. I:10890182) was the same for both cell types (Figure 4A,\u00a0B). The other hotspots were identified in the body wall muscle (on Chr. I) (Figure 4C), the intestine (on Chr. V) (Figure 4D), and neurons (two distinct hotspots on Chr. III) (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig4-v2.jpg)\n\n**Figure 4.:** A genome-wide map of eQTLs in seam cells (A), neurons (B), body-wall muscle cells (C), and intestinal cells (D) is shown. The position of the eQTLs is shown on the x-axis, while the y-axis shows the position of the associated transcripts. The dotted line marks the peak position of the hotspot, while targets of each hotspot are colored.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Size of circles corresponds to the percentage of cells expressing each gene in each cell\u00a0type, and the color corresponds to average expression. Of the four troponin genes strongly expressed in the body wall muscle, three are affected by a trans\u00a0expression quantitative trait loci hotspot on Chr. I.\n\nTo test whether the target genes of these five hotspots are involved in coherent biological processes, we relaxed the FDR threshold to 20%, which increased the number of genes linked to each hotspot to 21\u201342, and performed Gene Ontology (GO) enrichment analysis (Supplementary file 1\u2014Table S4). For three of the hotspots, we found significant enrichments that were consistent with the cell-type specificity of the hotspot. The targets of the hotspot detected in intestinal cells were weakly enriched for genes involved in the innate immune response (FDR-corrected p=0.042), a major role of that tissue (Pukkila-Worley and Ausubel, 2012). The targets of the hotspot detected in the body wall muscle were enriched for genes associated with the term myofilament (FDR corrected p=6.4\u00d710\u22128), actin cytoskeleton (FDR-corrected p=4.2\u00d710\u22126), and related terms. The enrichment was driven by the genes mup-2, tni-1, tnt-2, mlc-2, mlc-3, lev-11, and act-4. mlc-2 and mlc-3 encode a myosin light chain, and act-4 encodes an actin protein. lev-11 encodes a tropomyosin, and mup-2, tni-1, and tnt-2 encode three of the four proteins in C. elegans that are expressed in the body-wall muscle and form troponin complexes, highly conserved regulators of muscle contraction (Ono and Ono, 2004;\u00a0Figure 4\u2014figure supplement 1).\n\nThe targets of the neuronal hotspot on the right arm of Chr. III were enriched for genes involved in vesicle localization (FDR-corrected p=7.5\u00d710\u22123), as well as for BMP receptor binding genes (FDR-corrected p=2.8\u00d710\u22123). The latter enrichment was driven by dbl-1 and tig-2, orthologs of human bone morphogenetic protein (BMP) genes BMP5 and BMP8 and ligands of the transforming growth factor beta (TGF-\u03b2) pathway (Gumienny, 2013). Notably, dbl-1 was discovered as a gene that regulates body size in C. elegans (Suzuki et al., 1999), the hotspot peak marker is located\u00a0<300 kb from the peak of a QTL we previously identified for body size (Andersen et al., 2015), and the corresponding confidence intervals overlap (Supplementary file 1\u2014Table S3), suggesting that differential regulation of the TGF-\u03b2 pathway is involved in variation in body size between N2 and CB4856.\n\n### Cell-specific eQTL effects in the C. elegans nervous system\n\nC. elegans is a premier model for studying neurobiology at the cellular level, which is aided by its invariant cell lineage and the diverse functions associated with specific individual neurons. Importantly, many of the neurons are highly variable in their gene expression and express specific gene markers (Hobert et al., 2016). To identify specific subtypes of neuronal cells, we separately clustered the 12,467 cells identified as neurons and compared the clusters to previous C. elegans scRNA-seq datasets, including the recently published C. elegans Neuronal Gene Expression Map and Network (CeNGEN) (Cao et al., 2017; Packer et al., 2019; Hammarlund et al., 2018; Taylor, 2019;\u00a0Supplementary file 1\u2014Table S5). The neurons fell into 81 distinct clusters, ranging from 17 to 872 cells. We mapped these clusters onto 100 (83%) of the 120 neuronal clusters identified in CeNGEN (Figure 5\u2014figure supplement 1). We also identified CEM neurons, which are male specific and absent from CeNGEN, based on the expression of the marker cwp-1 (Portman and Emmons, 2004).\n\nWe mapped cis eQTLs in each of the single neuronal subtypes (sn-eQTLs) and identified a total of 163 sn-eQTLs in 132 genes at an FDR of 10% (Figure 5A, Supplementary file 1\u2014Table S6). Of these, 117 (88%) were identified in only a single neuronal subtype. Functional annotation of sn-eQTLs identified 25 genes involved in signaling (FDR-corrected p=0.047), including 12 genes involved in G-protein coupled receptor signaling (FDR-corrected p=0.047) and eight genes involved in neuropeptide signaling (FDR-corrected p=9.9\u00d710\u22123).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig5-v2.jpg)\n\n**Figure 5.:** (A) cis\u00a0eQTLs mapped in single neuronal subtypes (sn-eQTLs) are shown. The top three rows indicate whether the eQTL was mapped pan-neuronally at a 10% false discovery rate\u00a0(FDR) threshold (row 1), at a 50% FDR threshold (row 2), and whether the sign of the effect estimate (\u2018effect direction\u2019) was the same in the pan-neuronal and single-cell mapping (row 3). (B) Comparing the effect direction between the sn-eQTL mapping and mapping in a set of neurons excluding the sn-eQTL neuron shows evidence for subtype-specific effects. The number of genes showing the same (\u2018purple\u2019) or opposite (\u2018turquoise\u2019) effect directions is shown for genes with pan-neuronal FDR\u00a0>\u00a050% (top) and\u00a0<50% (bottom). (C,\u00a0D) An eQTL with antagonistic effects in two neurons. Higher expression of the gene nlp-21 in the RIM neuron is associated with the N2 allele (C), while higher expression in the RIC neuron is associated with the CB4856 allele (D). In (C) and (D), a linear fit is shown for illustration. All p-values are FDR-corrected. Read counts were normalized to the number of UMIs in each cell and log-transformed. (E) Expression of nlp-21 in the parental dataset. The direction of effect is concordant between the left panel and (C) (RIM neuron) and between the middle panel and (D) (RIC neuron). Horizontal lines are averages.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/65857/elife-65857-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Each cluster is labeled based on the neuronal identity. Clusters represent either single neurons or few neurons with shared function.\n\nWe compared the sn-eQTLs to those identified when all neurons were analyzed jointly (\u2018pan-neuronal mapping\u2019) and found that a sizable fraction of the sn-eQTLs did not have evidence for a pan-neuronal signal: 92 were not identified pan-neuronally at an FDR of 10% and 69 were not identified even at a highly permissive FDR of 50%, suggesting that they exert their effects only in specific neuronal subtypes (Figure 5A). Regardless of statistical significance, pan-neuronal eQTLs should have consistent effect directions across neuronal subtypes, while subtype-specific eQTLs should not. We therefore compared the direction of effect of each sn-eQTL in the subtype in which it was detected with its direction of effect in the set of all neurons excluding that subtype. Among the 69 sn-eQTLs with no signal in the pan-neuronal mapping even at the permissive FDR, the direction of the effect was concordant for 33 and discordant for 36, not significantly different from chance (p>0.5; binomial test), as would be expected if these effects are truly subtype-specific (Figure 5B). In contrast, among the 94 that had a pan-neuronal signal at an FDR of 50%, the direction of the effect was concordant for 88 and discordant for only 6 (p<0.000001; binomial test), consistent with differences in detection arising from limited statistical power.\n\nIn a striking case, we observed an sn-eQTL in the neuropeptide gene nlp-21 that showed significant and opposing effects in two neurons (Figure 5C,\u00a0D). In the RIC neuron, higher nlp-21 expression was associated with the CB4856 allele (\u03b2\u00a0=\u00a04.4, FDR-corrected p=0.03), while in the RIM neuron, higher nlp-21 expression was associated with the N2 allele (\u03b2\u00a0=\u00a0\u22125.4, FDR-corrected p=9.8\u00d710\u22127). In the pan-neuronal mapping, no significant effect is observed for this gene. We identified the RIC and RIM neurons in the parental dataset, and although the small number of cells in each group (35 and 27, respectively, with only 9 and 5 of them from CB4856) was insufficient for statistical testing, the directions of the differences agreed with the eQTL effects (Figure 5E). These results provide direct evidence that eQTLs can be specific down to the cellular level.\n\n## Discussion\n\nWe used scRNA-seq to map eQTLs in C. elegans across cell types in a single one-pot experiment. Earlier scRNA-seq eQTL mapping studies were limited in sample size to at most\u00a0~100 individuals, but nevertheless highlighted the potential of this approach to identify cell-type (van der Wijst et al., 2018) and developmental (Cuomo et al., 2020) eQTLs, as well as loci affecting expression variance (Sarkar et al., 2019). Our novel approach allowed us to map eQTLs in tens of thousands of genotypically distinct individuals and enabled detection of both cis and trans eQTLs, as well as resolution of their effects down to the level of specific cells.\n\nOne of the major factors affecting gene expression studies is variation resulting from uncontrolled environmental differences between individuals that are grown or processed separately. By using scRNA-seq, we were able to process all individuals jointly. After the initial parental cross, all subsequent steps carried out over the course of five C. elegans life\u00a0cycles (3 weeks) were performed in bulk, limiting any confounding environmental factors. To minimize the influence of genotype on development, we synchronized the worms at the first larval stage, L1, and collected samples at the L2 stage, limiting the time for differences to accumulate post\u00a0synchronization. Even careful synchronization is not expected to completely remove the effects of genetic variation on developmental timing, and such variation can be combined with gene expression time-course data collected during development to increase the power of eQTL mapping and study the developmental dynamics of eQTLs (Francesconi and Lehner, 2014). This raises the possibility that future scRNA-seq studies of C. elegans across developmental stages would open the door to a similar analysis of our single-cell eQTL dataset.\n\nPrevious work suggested the existence of cell-type-specific eQTL hotspots in C. elegans based on the expression patterns of hotspot targets (Francesconi and Lehner, 2014). We discovered three hotspots that are cell-type specific, with targets that are involved in core functions performed by these cell types. Recently, eQTL hotspots have been identified in human blood cells (Yao et al., 2017; Kolberg et al., 2020), as well as in cell lines (Brynedal et al., 2017). These results suggest that\u00a0hotspot and trans eQTL discovery is facilitated by expression studies that can distinguish cell types and point to a larger role of hotspots in the genetics of gene expression in animals.\n\nThe extent to which eQTL hotspots play a role in determining biological phenotypes is unknown, although several examples have been described in animals and plants (Albert and Kruglyak, 2015; Brynedal et al., 2017; Pang et al., 2019; Andersen et al., 2014; Orozco et al., 2012). One of the neuronal hotspots we identified in this study affects the expression of members of the TGF-\u03b2 pathway, which has been linked to the control of body size in C. elegans (Gumienny, 2013). Remarkably, our previous study mapped a QTL for body size in a cross between N2 and CB4856 to the same region (Andersen et al., 2015). Ultimately, resolving the physiological impact of eQTL hotspots, including the ones in this study, will require fine-mapping to identify the underlying causal variants. A systematic approach for fine-mapping eQTL hotspots has recently been developed in yeast (Lutz et al., 2019);\u00a0future advances may enable this to be carried out in animals as well.\n\nA comparison of the single-cell cis eQTLs to those mapped in a previous whole-worm eQTL study from our laboratory showed a highly significant overlap despite major differences in experimental design. These results join accumulating evidence that a sizable fraction of cis eQTLs have robust, consistent effects (GTEx Consortium, 2020; Smith and Kruglyak, 2008) and show that many of the effects are conserved across worm development. The strong overlap of cis eQTLs mapped by scRNA-seq and whole-worm analysis also suggests that the effect of many cis eQTLs is conserved across cell types. This observation suggests that modeling strategies that borrow power among cell types could increase the power to detect eQTLs. In addition, our approach for cis\u00a0eQTL discovery could be supplemented with tests for allele-specific expression (ASE). Looking forward, our method enables scaling up the number of studied individuals, and hence increasing statistical power, simply by sequencing a larger number of cells. Thus, the increasing throughput of single-cell technologies and sequencing platforms will enable future work to study cell-type specificity of cis and trans eQTLs in greater detail.\n\nLastly, we discovered cis eQTLs that act in single subtypes of C. elegans neurons, including many that were not found when all neurons were analyzed jointly. Importantly, we also discovered an eQTL that influences expression of the gene nlp-21 in opposing directions in two different neurons. Such antagonism could result from context-dependent effects of the same variant or from different variants acting in each cell. Our study joins a growing body of work that identified eQTLs that are specific to cell types (Fairfax et al., 2012; Ishigaki et al., 2017; Donovan et al., 2020; Kim-Hellmuth et al., 2020; van der Wijst et al., 2018; Zhang et al., 2018; Westra et al., 2015), as well as developmental (Cuomo et al., 2020; Francesconi and Lehner, 2014) and environmental (Orozco et al., 2012; Fairfax and Knight, 2014; Kim-Hellmuth et al., 2017) contexts. Distinct genetic effects are found across cell types and conditions, and large-scale study of such effects is therefore crucial for gaining a comprehensive understanding of regulatory variation.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>N2 fog-2(q71) V; hsp-90p::GFP II</td>\n      <td>Burga et al., 2019</td>\n      <td>QX2314</td>\n      <td>A C. elegans strain carrying a fog-2 and a daf-21p::GFP reporter in the N2 genetic background</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Caenorhabditis elegans)</td>\n      <td>CB4856 fog-2(kah89)</td>\n      <td>Burga et al., 2019</td>\n      <td>PTM299</td>\n      <td>A C. elegans strain carrying a fog-2 mutation in the PTM299 genetic background</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell 3' v3</td>\n      <td>10x Genomics</td>\n      <td>CG000201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Monocle3</td>\n      <td>Cao et al., 2019</td>\n      <td></td>\n      <td>Available at: https://cole-trapnell-lab.github.io/monocle3/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>eQTL mapping code</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available at: https://github.com/joshsbloom/single_cell_eQTL; copy archived at swh:1:rev:321e29c20cecab726426053bc5a6160b66284691; Ben-David, 2021a</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Code to reconstruct figures and calculate all numbers in the manuscript</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Available at: https://github.com/eyalbenda/worm_sceQTL; copy archived at; swh:1:rev:e30eb7d2a393459b2367dfe22c07966e44364f20; Ben-David, 2021b</td>\n    </tr>\n  </tbody>\n</table>\n\n### C. elegans culturing\n\nC. elegans strains were cultured at 20\u00b0C using standard conditions with the exception that the agar in the nematode growth media (NGM) was replaced with a 4:6 mixture of agarose and agar (NGM+agarose) to prevent burrowing of the CB4856 strain. Parental strains used were QX2314 (N2 fog-2(q71) V; hsp-90p::GFP II) and PTM299 (CB4856 fog-2(kah89)). Large segregant panels were generated as before (Burga et al., 2019). Briefly, 500 L4 males from PTM299 and 500 L4 hermaphrodites from QX2314 were seeded on a plate for 30 hr, and gravid worms and eggs were collected and bleached. Eggs were synchronized to L1 larvae for 24 hr and seeded on 10 cm NGM+agarose plates. In each generation, gravid worms were bleached, their progeny synchronized for 24 hr, and seeded. The entire process was repeated up to F4, with 3\u20134 days per generation.\n\n### Cell extraction and sequencing\n\nIn\u00a0total,\u00a0192,000\u00a0F4 were seeded on four 10 cm NGM+agarose plates seeded with OP50. L2 were recovered after 24 hr, and staging was validated under a stereomicroscope. L2 cell dissociation was carried out as previously described (Zhang et al., 2011), implementing modifications from a later study (Kaletsky et al., 2016), as well as our own. Worms were recovered off the plates and washed three times in M9. Lysis was then done with an SDS-DTT solution (200 mM DTT, 0.25% SDS, 20 mM HEPES, pH 8.0, 3% sucrose) in a hula mixer set on low speed to prevent worms from settling. The lysate was observed under the stereoscope every 2\u00a0min, and lysis was stopped when a blunted head shape appeared in the majority of worms (Kaletsky et al., 2016), after\u00a0~4 min. Worms were then washed quickly three times in 1 ml of M9, and two additional times in 1 ml of egg buffer (118 mM NaCl, 48 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 25 mM HEPES, pH 7.3, osmolarity adjusted to 340 mOsm with sucrose). Worms were then resuspended in 0.5 ml of 20 mg/ml Pronase E that was freshly prepared in L15 media supplanted with 2% fetal bovine serum (L15-FBS) and adjusted to 340 mOsm with sucrose. Worm dissociation was done by continuous pipetting on the side of the tube and monitored every 2\u20133 min on a microscope equipped with a \u00d740 phase contrast objective lens. Dissociation was stopped when few intact worms remained and a high density of cells was visible. Then,\u00a00.5 ml of L15-FBS was added to stop the reaction, and the lysate was spun for 6 min at 500 g at 4\u00b0C. The cell pellet was resuspended in PBS (PBS was adjusted to 340 mOsm with sucrose). Cell suspension was spun for 1 min in 100 g at 4\u00b0C to remove remaining undigested worms, counted, and diluted to 1 M cells/ml in osmolarity-adjusted PBS, and loaded directly onto five lanes of 3\u2032 Chromium single-cell RNA-sequencing flow cells (10x Genomics), targeting 10,000 cells on each lane. Library prep was carried out according to manufacturer's protocol. Prepared libraries were sequenced together on an S4 lane of Novaseq 6000. A paired-end 2 \u00d7 150 run was done to maximize the recovery of single-nucleotide variants\u00a0(SNVs). In all downstream processing, each of the five 3\u2032 Chromium lanes processed concurrently was treated as a separate \u2018batch\u2019, and lane identity corresponds to the \u2018batch\u2019 identity for the rest of the methods.\n\n### Single-cell RNA-sequencing data processing\n\nRaw sequencing reads were analyzed using CellRanger (version 3.0.2). We used a gene transfer format file that was corrected for misannotation of 3\u2032 untranslated regions that was generated in a previous study (Packer et al., 2019). C. elegans cell\u00a0types differ widely in the number of UMIs that are recovered using scRNA-seq. Therefore, a simple UMI cutoff, as is commonly used, may be biased for cell\u00a0types with more UMIs. We therefore implemented an iterative pipeline to recover clusters of bona fide cells and remove cell doublets as well as degraded cells. We took 20,000 cells with the most UMIs in each cluster (twice the targeted number of cells, 100,000 overall), and processed them in Monocle (version 3) (Qiu et al., 2017). Default parameters were used, with the exception that 100 dimensions were used for reduction, and batch was added as a covariate. Leiden clustering identified a total of 154 clusters, and we used the top_markers function in Monocle to identify the genes upregulated in each. We then removed clusters whose top genes included any ribosomal genes or the mitochondrial genes ndfl-4, nduo-6, atp-6, ctc-2, ctc-3, ctc-1, which we noticed were usually found together as the most upregulated genes in clusters that did not specifically express any known markers for C. elegans cell\u00a0types. This removed a total of 30,980 cells (31%). For the remaining 69,020 cells, raw counts were processed using the R package SoupX to reduce ambient RNA contamination (Young and Behjati, 2020). We then normalized, reduced dimensions, and clustered the background-corrected cell profiles in Monocle using the same parameters as above.\n\nTo annotate cell\u00a0types, we used the markers described in a previous study (Table S12 in Packer et al., 2019) that reanalyzed a previous L2 single-cell dataset (Cao et al., 2017). Our cell-type annotation corresponds to the \u2018UMAP\u2019 column in that table, with the following exceptions: (1) we separated hypodermis from seam cells, somatic gonad from sex muscle cells, and glia from excretory cells since those groups were not clustering together in our data. (2) Cells identified as \u2018Miscellaneous\u2019 in that table were annotated as individual cell-type identifications in our data, with the exception of the sphincter and anal muscles, which were not differentiated from each other in our data. Finally, we re-evaluated our cell-type identifications and filtered cell doublets as well as dead cell or debris that may still contaminate bona fide cell-type clusters. We trained a classifier using our manually curated cell-type classifications with a L2-penalized multinomial logistic regression framework, as implemented in the Scikit-learn Python package (v0.22) (Pedregosa, 2011). We read the raw gene expression matrices into Python using scanpy (v1.4.2). We removed 2582 genes that were expressed in less than 10 cells. The gene expression levels of each cell were corrected so that the total gene expression counts added up to 10,000. Per gene, these corrected counts were normalized using a log(1+x) transformation. To speed up the computation of the multinomial logistic regression, we only used the 2037 genes with a mean expression between 0.0125 and 3, and a minimum dispersion of 0.5. We scaled the gene expression matrix so that the expression level of each gene across cells had a mean of 0 and a variance of 1, after scaling expression values over 20 were set to 20. We fit a multinomial logistic regression model using the scaled gene expression values for the 2037 highly variable genes from the complete set of 69,020 cells to obtain an estimate for the inverse regularization strength (C). Using the estimated C of 7.74 \u00d7 10\u221204, we performed fivefold cross-validation to estimate the probability that each cell belongs to one of the manually curated cell-type classifications. Any cell with a probability higher than 0.2 of belonging to two or more cell types (9198) was classified as a doublet. Any cell that did not belong to a cell\u00a0type with probability\u00a0\u22650.4 (5547) was classified as low quality. In total, we removed 11,398 cells that were classified as a doublet or low quality. We removed an additional 2114 cells classified as Neurons as described in the section \u2018Neuronal cell-type classification\u2019. For the remaining final list of 55,508 cells, we used the output of the classifier as the final cell-type classification. The final classification is shown in Figure 1. For display purposes, the plot in Figure 1 was generated by rerunning umap on the finalized dataset with euclidean distance metric and umap.min_dist\u00a0=\u00a00.5, resulting in a more compressed visualization of the dataset.\n\n### Estimating the number of unique genotypes\n\nWe estimated the number of unique genotypes in two approaches. First, we noted that calculating the number of expected unique genotypes is akin to the well-known \u2018Birthday problem\u2019 in statistics. Given C cells sampled from I individuals, the expected number of cells with a unique genotype is C(1\u20131/I)C-1. Assuming 50\u201390% of worms were successfully dissociated (a conservative range), we expect 31,134\u201340,257 unique genotypes.\n\nWe also calculated an empirical measurement for collisions. We calculated the genotype correlation matrix of the cells and counted the cells with a maximal correlation with another cell is higher than 0.9. This is presented for each cell type in Supplementary file 1\u2014Table S1.\n\n### Single-nucleotide variant counting\n\nWe used a list of SNVs we previously curated for CB4856 compared to the N2 reference (Burga et al., 2019). We derived genotype informative UMI counts for N2 and CB4856 variants using Vartrix version 1.0 (https://github.com/10XGenomics/vartrix) directly on the output of CellRanger. To reduce SNV counts that result from SNVs in the ambient RNA background, we only kept SNVs that resided in genes with positive counts in the background-corrected matrix.\n\n### Genotype inference using a HMM\n\nWe set up a HMM to infer the genotypes of the recombinant progeny (Broman, 2005; Arends et al., 2010). The HMM is used to calculate the probability of underlying genotypes for each individual and requires three components: (1) prior probabilities for each of the possible genotypes, (2) emission probabilities for observing variant-informative reads given each of the possible genotypes, (3) and transition probabilities \u2013 the probabilities of recombination occurring between adjacent genotype-informative sites.\n\nFor the autosomal chromosomes, we defined prior genotype probabilities as 0.25 for homozygote N2, 0.5 for heterozygote CB4856/N2, and 0.25 for homozygote CB4856. For the sex chromosome, we defined prior genotype probabilities as 0.44 for homozygotes N2, 0.44 for the heterozygote CB4856/N2, and 0.11 for homozygote CB4856. These values were chosen because to generate the segregant population N2 hermaphrodites were crossed to CB4856 males and thus contributed twice as many X chromosomes to the progeny as CB4856.\n\nEmission probabilities were calculated as previously described for low-coverage sequencing data (Dodds et al., 2015; Bilton et al., 2018) under the assumption that the observed counts of reads for both possible variants (Y) at a genotype-informative site (g) arise from a random binomial sampling of the alleles present at that site and that sequencing errors (e) occur independently between reads at a rate of 0.002:\n\n$$\np(Y|g=NN)=(Dr)(1\u2212e)^{r}(1\u2212(1\u2212e))^{D\u2212r}\n$$\n\n\n\n$$\np(Y|g=NC)=(Dr)\\frac{1}{2}^{D}\n$$\n\n\n\n$$\np(Y|g=CC)=(Dr)(e)^{r}(1\u2212e)^{D\u2212r}\n$$\n\nwhere (D) is the total read depth at a genotype-informative site for a given individual, (r) is the total read depth for the N2 variant at that site, and N represents the N2 variant and C represents the CB4856 variant.\n\nTransition probabilities were derived from an existing N2 \u00d7 CB4856 genetic map (Rockman and Kruglyak, 2009). We linearly interpolated genetic map distances from the existing map to all genotype-informative sites in our cross progeny. We scaled these genetic map distances, multiplying them by a factor of 0.4, to account for the fact that the previous genetic map was built using 10\u00a0generations of intercrossing, whereas progeny from our cross are derived from four generations of intercrossing (Rockman and Kruglyak, 2008).\n\nFor QTL mapping, we used an additive coding, summing the probability that the genotype was homozygote CB4856 with one half the probability that the genotype was heterozygote N2/CB4856.\n\n### eQTL mapping\n\nGenotype probabilities were standardized, and markers in very high LD (r\u00a0>\u00a00.9999) were pruned. This LD pruning is approximately equivalent to using markers spaced 5 centimorgans (cm) apart. For each transcript, we counted the number of cells for which at least one UMI count was detected in each cell type. Transcripts with non-zero counts in at least 20 cells in a cell type were considered expressed in that cell type and used for downstream analyses.\n\nAs has been previously described for droplet scRNA-seq, counts of UMIs can be adequately parameterized by a gamma-Poisson distribution, which is also known as the negative binomial distribution (Svensson, 2020). Thus we used a negative binomial regression framework for eQTL mapping here. We also note that simpler approaches using log(counts+1) with ordinary least squares behave pathologically, especially in regard to behavior with multiple partially correlated covariates, and simulations (not shown) showed such models lead to inflated false-positive rates.\n\nFor each expressed transcript in each cell type, we first fit the negative binomial generalized linear model:\n\n$$\nE[Y]=\\mu\n$$\n\n\n\n$$\nVar(Y)=\\mu+\\frac{1}{\\theta}\\mu^{2}\n$$\n\n\n\n$$\n\\mu=exp(\\beta_{i}+X_{t}\\beta_{t}+X_{b}\\beta_{b}+X_{c}\\beta_{c})\n$$\n\nwhich has the following log-likelihood:\n\n$$\nl(\\beta,\\theta)=\u2212\\sumn=1N[(y_{n}+\\theta)log(\\mu_{n}+\\theta)\u2212y_{n}log(\\mu_{n})+log(|\u0393(y_{n}+1)|)\u2212\\thetalog(\\theta)+log(|\u0393(\\theta)|)\u2212log(|\u0393(\\theta+y_{n})|)]\n$$\n\nwhere Y is a vector of UMI counts per cell, Xt is a vector of the log(total UMIs per cell) and controls for compositional effects, Xb is an indicator matrix assigning cells to batches, and Xc is the vector of standardized genotype probabilities across cells for the closest genotypic marker to each transcript from the pruned marker set. In addition, \u03b2 is a vector of estimated coefficients from the model, \u00b5n is the expected value of Y for a given cell n, N is the total number of cells in the given cell type, and \u03b8 is a negative binomial overdispersion parameter. Model parameters were estimated using iteratively\u00a0reweighted least squares as implemented in the negbin.reg function in the Rfast2 R package. If the model did not converge, model parameters were estimated with the gam function in the mgcv package (Wood, 2017), which opts for certainty of convergence over speed. We note that due to the computational burden of fitting so many generalized linear models (GLMs )\u00a0in the context of sc-eQTL mapping, we chose to estimate \u03b8 once for each transcript in each cell type for this model and use that estimate of \u03b8 in the additional models for that transcript within the cell type, as described below. This approach is conservative as the effects of unmodeled factors (e.g., trans eQTLs) will be absorbed into the estimate of overdispersion, resulting in larger estimated overdispersion $(\\frac{1}{\\theta})$ and lower model likelihoods. Computational approaches that re-estimate \u03b8 for each model, jointly model all additive genetic effects, or regularize \u03b8 across models and transcripts (McCarthy et al., 2012) may further increase statistical power to identify linkages.\n\nTo evaluate the statistical significance of cis eQTLs, a likelihood ratio statistic, -2(lnc-lfc), was calculated comparing the log-likelihood of this model described above (lfc) to the log-likelihood of the model, where \u03b2 is re-estimated while leaving out the covariate Xc for the cis eQTL marker (lnc). A p-value was derived under the assumption that this statistic is X2 distributed with one degree of freedom. This p-value was used for the evaluation of significance of cis eQTLs for the neuronal subtypes. Within each neuronal subtype, FDR-adjusted p-values were calculated using the method of Benjamini and Hochberg, 1995. For the other cell types (with typically much larger cell numbers) and the genome-wide scans for eQTLs, a permutation procedure was used to calculate FDR-adjusted p-values and is described further below.\n\nFor each expressed transcript in each cell type, we also scanned the entire genome for eQTLs, enabling detection of trans eQTLs. A similar procedure was used as for cis eQTL except that Equation (3) was replaced with\n\n$$\n\\mu=exp(\\beta_{i}+X_{t}\\beta_{t}+X_{b}\\beta_{b}+X_{g}\\beta_{g})\n$$\n\nwhere Xg is a vector of the scaled genotype probabilities at the gth genotypic marker, and the model is fit separately, one at a time, for each marker across the genome for each transcript. A likelihood ratio statistic for each transcript, within each cell type, for each genotypic marker is calculated by comparing this model to the model where \u03b2 is re-estimated while leaving out the covariate Xg. The likelihood ratio statistic was transformed into a logarithm of the odds (LOD) score by dividing it by 2loge(10). We also used functions in the fastglm R package for this scan, again re-using estimates of \u03b8 obtained as described above for each transcript for each cell type. For each transcript and each chromosome, QTL peak markers were identified as the marker with the highest LOD score. The 1.5 LOD-drop procedure was used to define approximate 95% confidence intervals for QTL peaks (Dupuis and Siegmund, 1999).\n\nFDR-adjusted p-values were calculated for QTL peaks. They were calculated as the ratio of the number of transcripts expected by chance to show a maximum LOD score greater than a particular LOD threshold vs. the number of transcripts observed in the real data with a maximum LOD score greater than that threshold, for a series of LOD thresholds ranging from 0.1 to 0.1+the maximum observed LOD for all transcripts within a cell type, with equal-sized steps of 0.01. Per chromosome, the number of transcripts expected by chance at a given threshold was calculated by permuting the assignments of segregant identity within each batch relative to segregant genotypes, calculating LOD scores for all transcripts across the chromosome as described above, and recording the maximum LOD score for each transcript. In each permutation instance, the permutation ordering was the same across all transcripts. We repeated this permutation procedure 10 times. Then, for each of the LOD thresholds, we calculated the average number of transcripts with maximum LOD greater than the given threshold across the 10 permutations. We used the approxfun function in R to interpolate the mapping between LOD thresholds and FDR and estimate an FDR-adjusted p-value for each QTL peak (Albert et al., 2018).\n\nThe same procedure was performed for cis eQTL analysis, with the difference being that the expected and observed number of transcripts at a given LOD threshold were calculated only at the marker closest to the transcript. We note that, as expected, Benjamini and Hochberg-adjusted p-values and FDR-adjusted p-values from this permutation procedure for cis eQTLs were nearly identical.\n\n### scRNA-seq in the parental strains\n\nThe parental QX2314 and PTM299 strains were grown separately for four generations on 10 cm plates, with recurrent cycles of bleaching and synchronization as was done for the segregant population. For single-cell preparation, synchronized L1 from both strains were seeded together in equal numbers on 10 cm plates, and they were processed together from that point onwards, to limit any environmental effects. We believe that differences in efficiency of the cell preparation procedure between N2 and CB4856 could explain the imbalanced representation in the final dataset (6721 N2 and 3104 CB4856 cells). We took advantage of the different parental genotypes when processing the cells and called cells as those with at least 50 SNV counts supporting one genotype and less than 50 supporting the other. Cell-type identification was automated by using the logistic regression model trained on the segregants that\u00a0is discussed above. Differential expression analysis was carried out using the DEsingle R package in each cell type, as well as globally in all cells combined (Miao et al., 2018).\n\nTo compare differential expression results with our cis eQTL results, we first normalized the effect size of each cis eQTL by its standard error. Those were used directly in comparisons done within each cell type. To compare with global differential expression, those standardized effects were combined across all cell types in which an eQTL was identified using Stouffer\u2019s weighted-Z method (Whitlock, 2005).\n\n### Processing whole-worm eQTL data\n\nMicroarray genotype and gene expression data for our published expression QTL data were acquired from the gene expression omnibus (Rockman et al., 2010). Probe sequences were realigned to the WBcel235 transcriptome using BWA, and uniquely mapping probes were used. Expression probes that were present in less than 2/3 of the sample were removed. The genotype and expression matrices were standardized. To map eQTLs, we calculated the Pearson correlation between each probe and every genotype. Correlation coefficients were transformed to LOD scores using $\u2212n\u22c5\\frac{ln(1\u2212R^{2})}{2ln(10)}$. To assess significance and account for multiple testing, we permuted the sample identities 100 times and calculated the average number of transcripts with an identified eQTL at different LOD scores. We compared these results to the unpermuted LOD scores to estimate the FDR and selected a cutoff corresponding to a rate of 10% (LOD\u00a0=\u00a04.2), equivalent to the single-cell mapping. cis eQTLs were derived by calculating the Pearson correlation between transcript expression and the normalized genotypes in the variant nearest to a given transcript, transforming to LOD score and comparing against the global threshold.\n\n### Hotspot analysis\n\nTo discover hotspots, we split the genome into 130 bins of 5 cm each. We then counted the number of eQTLs in each bin identified in each cell type (applying a 10% FDR significance threshold), after removing all cis linkages. Cis linkages were defined here as those where the transcribed gene falls within the 95% eQTL confidence\u00a0interval range extended by 1 MB on both sides. A bin was considered to have an excess of linkages if the number of linkages exceeded the number expected by chance from a Poisson distribution, given the average number of linkages per bin for that cell type and a Bonferroni correction for the total number of bins (p<3.8e-4) (Smith and Kruglyak, 2008). The findpeaks function in the pracma R package was used to identify peak hotspot bins and prevent identifying sets of adjacent bins as hotspots.\n\nFor\u00a0GO analysis, we identified hotspot targets using the same procedure above, but relaxed the significance threshold to 20% FDR. We then used the R package topGO to identify enriched terms, with the genes expressed in the cell type used as background.\n\n### Neuronal cell-type classification\n\nNeuronal classification was carried out using a combination of available C. elegans scRNA-seq datasets, including a published L2 dataset (Cao et al., 2017; Packer et al., 2019), and the CeNGEN project (Taylor, 2019). Neuronal cells were processed separately using monocle3 with default parameters, with the exception that 100 dimensions were specified for the preprocess_cds step. The analysis was carried out in two passes. In the first pass, we processed all cells identified by our classifier as neurons. Following Leiden clustering, we removed 2114 cells that were in clusters whose top genes were mostly mitochondrial and ribosomal genes, similar to the analysis described above for the global dataset. We then processed the pruned dataset in monocle3 as described above. To annotate the final neuronal clusters, we first used the list of marker genes from two previous publications (Packer et al., 2019; Hammarlund et al., 2018) to derive candidate clusters that uniquely express marker genes. We next used the top_markers function in monocle3 to identify upregulated genes in each cluster compared to the rest. These were compared with the data available in the online SCeNGEN Shiny application (https://cengen.shinyapps.io/SCeNGEA) for the candidate cluster. The full list of genes used for classification is found in Supplementary file 1\u2014Table S5. In the final dataset, clusters Unknown_1 - Unknown_4 are of unknown identity and do not correspond to the clusters of the same name in CeNGEN, while the clusters Unknown_touch and Unknown_glut_2 do correspond to cell clusters of the same names in CeNGEN.\n\nsn-eQTL analysis sn-eQTL mapping is described above (section \u2018eQTL mapping\u2019). GO annotation of genes with sn-eQTL was done in topGO, with the genes expressed in neurons (determined using the criteria for inclusion in eQTL mapping) used as background. A heatmap was plotted using the ComplexHeatmap package (Gu et al., 2016). To determine the consistency in effect direction between the sn-eQTL neuron and the rest of the neurons, we repeated the eQTL mapping, aggregating cells from all neuronal cell\u00a0types but omitting the neuron with the sn-eQTL. The RIC and RIM neurons in the parental datasets were identified using the same gene markers used in the segregant eQTL dataset, as described in Supplementary file 1\u2014Table S5.\n",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0389ef0a-06f1-412d-9d6c-16936b2733cf",
+      "submission_id": "25059945-fb39-413b-a1ef-2c419e93e74d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel J Kliebenstein, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.65857.sa1](https://doi.org/10.7554/eLife.65857.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nGenetic variation and cell type specific regulation can intersect to influence quantitative traits. However, finding these cell type specific eQTLs is complicated by the factorial nature of these experiments. In this work, the authors use a pooled transcriptome/genotyping approach with single cell sequencing to begin obtaining a broad overview of the genetic architecture of genotype x cell type interactions.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Whole-organism eQTL mapping at cellular resolution with single-cell sequencing\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ewan Birney (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential Revisions:\n\n1) Clarify and explain the genotyping information/approach that is largely in the supplement. Each reviewer has a comment along these lines.\n\n2) Temper some claims in the Introduction and Discussion per the reviewers suggestions.\n\nReviewer #1 (Recommendations for the authors):\n\nThe concept of using transcriptomes to simultaneously genotype and phenotype samples is actually a somewhat old concept first established in plants in the era of microarrays. I'm not sure if it is appropriate to not cite the original literature establishing this concept. Some acknowledgment of past developments should be provided.\n\nIntroduction \u2013 Is it really valid to say that eQTLs have been proposed to underly genetic associations? Seems like there is a ton of validation studies in Yeast, C. elegans, Drosophila, Maize and Arabidopsis that move this beyond the \"proposed\" stage.\n\nResults \u2013 the authors report that the # of eQTLs is correlated with the number of cells of that type in the sequencing data. This suggests that what is actually happening is the # of cells is correlated with the number of independent individuals represented. It would help if the authors could use the genotyping information to estimate the number of individuals contributing to each cell type. This should be obtainable from the genotyping information.\n\nReviewer #2 (Recommendations for the authors):\n\nMy only 3 issues I would like addressed is that I would prefer Supplementary Figure 2, where they use an HHM to impute the genotypes for each cell, to be adapted to be a main figure along with some text to explain exactly how they do this since it is pretty important for the conclusions. I'd also like some discussion about the ultimate biology that the eQTLS underlie \u2013 there are differences in the biology of N2 and CB4956 and it would be nice if they would comment on whether any of this can be explained by eQTLS and the genes affected (even if the answer is negative, totally fine with that). Finally, I note that while eQTLS were previously reported to often show transgressive segregation, this appears not to be the case for the ones found here if I understand correctly and I'd be curious to know the reason\u2013 It's a great paper, the writing is clear, the conclusions are strong and the approach is important.\n\nReviewer #3 (Recommendations for the authors):\n\nThis paper is great.\n\nMy major recommendation is lifting a bit more of the methods into the main text. Naively when I was reading this I was wondering why the authors had not used a more joint model that could borrow power between cell lines; once I had read into Equations 3 and 4 in eQTL mapping I decided that this was a harder problem than I thought. You might want to hint in the Discussion about taking Equations 3 and 4 into a world where you borrow power between cell types, but it would seem inappropriate to suggest you did this in this paper.\n\nOverall I think you should bring this out in the main text more, and have paragraph on this (maybe Equations 3 and 4 in the main text?).\n\nSpecifically I was curious about the Xt. Bt term, which seemed to suggest to me that without this term \"bad things happened\" (fair enough) but if so I think you should expand more (at least in the supplement) why this term is there.\n\nI am somewhat surprised that the probabilistic genotyping does not go closer to 1 for the homozygous calls (at least in the example shown) and I would.\u2026 prefer to see some discussion / exploration of this; surely the homozygous segments must be pretty obvious in the data. If one had some elementary error about homozygous calls from the highly expressed genes\u2026what would happen? Is the issue predominantly about the expression levels to \"rule out\" het calls? Perhaps the average recombination size and the sparsity of the highly expressed genes make this hard? (And please let us know whether choosing F4 over F2 was in hindsight a good choice.) It feels cute but that there is something here which looks wrong. I don't think this invalidates anything, I am curious about your recommendation for future designs. If you think a future design would be better at the F2 level, I would state that.\n\nIn theory you should be able to do ASE. Of course, full ASE will just get mis called (goes homozygous) but partial levels should be \"callable\" (and goes to the question above \u2013 to what extend is a F4 too many switches to model). I would comment on it, even if you don't do it.\n",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "da6a21a5-2935-45d9-a93e-20a84941d9ff",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C1",
+      "claim": "The authors developed a novel approach in C. elegans that uses single-cell RNA sequencing to map eQTLs at cellular resolution in a single one-pot experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a novel approach in the model nematode Caenorhabditis elegans that uses single-cell RNA sequencing to map eQTLs at cellular resolution in a single one-pot experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this as a methodological development of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "76ba9175-5ef4-4425-b810-fc9984265bad",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C2",
+      "claim": "The authors mapped eQTLs across cell types in an extremely large population of genetically distinct C. elegans individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped eQTLs across cell types in an extremely large population of genetically distinct C. elegans individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a key finding, supported by the experimental design described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "1b2db8e6-fcc8-48f9-b897-5a597bb29315",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C3",
+      "claim": "Cell-type-specific trans eQTL hotspots affect the expression of core pathways in the relevant cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We found cell-type-specific trans eQTL hotspots that affect the expression of core pathways in the relevant cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by data presented in Figure 4 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "df0132a3-20bc-4980-b830-12e5c848395f",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C4",
+      "claim": "The authors found single-cell-specific eQTL effects in the nervous system, including an eQTL with opposite effects in two individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found single-cell-specific eQTL effects in the nervous system, including an eQTL with opposite effects in two individual neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by data in Figure 5C and 5D showing opposing effects in RIM and RIC neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a672b4d8-5ac3-4b2a-a8ad-d9e1f7bbed33",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C5",
+      "claim": "eQTL effects can be specific down to the level of single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that eQTL effects can be specific down to the level of single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract and supported by the single-neuron eQTL data presented in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "bed67f14-e4c4-4277-a33b-3a3c5c1680e6",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C6",
+      "claim": "Thousands of regions affecting gene expression, termed expression quantitative trait loci (eQTLs), have been identified through genome-wide studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression differences have a strong genetic basis, and genome-wide studies have identified thousands of regions affecting gene expression, termed expression quantitative trait loci (eQTLs) (Albert and Kruglyak, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "42237291-9e47-4d7a-8c90-9e1708acf55d",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C7",
+      "claim": "eQTLs have been found to underlie genetic associations with complex traits and diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "eQTLs have been found to underlie genetic associations with complex traits and diseases (Albert and Kruglyak, 2015; Gusev et al., 2014; Hormozdiari et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "90a1a2ba-bb7b-4629-95e2-95987761f645",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C8",
+      "claim": "Many eQTLs are cell-type specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in purified blood cell populations (Raj et al., 2014; Fairfax et al., 2012; Ishigaki et al., 2017) and computational analyses in human tissues (Donovan et al., 2020; Kim-Hellmuth et al., 2020) indicate that many eQTLs are cell-type specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "8b2c43ed-005b-40b3-a213-09b40eaa2c87",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C9",
+      "claim": "Studying eQTLs in relevant tissues and cell types is important for understanding their role in trait variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying eQTLs in relevant tissues and cell types is thus important for understanding their role in trait variation (Yao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a489cf50-73d6-4b72-9bde-7b91da00923b",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C10",
+      "claim": "Studying multiple tissues or cell types is laborious and expensive, and has mostly been limited to large consortia.",
+      "claim_type": "EXPLICIT",
+      "source": "First, studying multiple tissues or cell types is laborious and expensive, and has mostly been limited to large consortia (GTEx Consortium, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "56f458e2-baa6-41e7-859b-8ab744d0e953",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C11",
+      "claim": "Diseases can be associated with specific subsets of cells that may not be readily separable from the rest of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, diseases can be associated with specific subsets of cells that may not be readily separable from the rest of the tissue, limiting the insight that can be gleaned from studying bulk tissue samples (van der Wijst et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "b9ce6048-7002-4eff-a0d4-9f7b3278f9e7",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C12",
+      "claim": "Single-cell RNA sequencing has the potential to significantly mitigate challenges in cell-type-specific eQTL mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently developed technology of single-cell RNA sequencing (scRNA-seq) has the potential to significantly mitigate both of the above issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the capabilities of scRNA-seq technology described in the text.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "93df52db-4e0f-404a-9aef-1c5fa9ce70de",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C13",
+      "claim": "In scRNA-seq, gene expression is profiled at the level of individual cells, and different cell populations are identified based on their gene expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "In scRNA-seq, gene expression is profiled at the level of individual cells, and different cell populations are identified based on their gene expression profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the basic principle of scRNA-seq technology, which is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "dfcfa8f9-c4d8-4dac-987b-c86828947492",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C14",
+      "claim": "scRNA-seq allows simultaneous measurement of expression in multiple tissues and cell types in a 'one-pot' experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allows simultaneous measurement of expression in multiple tissues and cell types in a 'one-pot' experiment, reducing the number of samples that need to be processed and profiled separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the scRNA-seq approach as applied in this study.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "7f47ef64-faac-460b-8763-974dc6837486",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C15",
+      "claim": "The size and complexity of mammalian tissues has limited the ability to use scRNA-seq for eQTL mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "The size and complexity of mammalian tissues has so far limited the ability to use scRNA-seq for eQTL mapping, and studies have focused on purified cell populations and cell lines (Cuomo et al., 2020; van der Wijst et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and describes the state of the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "8044f61e-d776-4d71-aaba-c553a31b58b6",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C16",
+      "claim": "C. elegans has an invariant cell lineage that leads to each individual having the same number and identity of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the mainstays of modern genetic research, C. elegans has an invariant cell lineage that leads to each individual having the same number and identity of cells (Sulston and Horvitz, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about C. elegans biology, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0c24e37b-8a61-499e-959b-22a4c58b605c",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C17",
+      "claim": "Decades of research have uncovered the functions of many C. elegans cells, as well as expression markers that uniquely identify them.",
+      "claim_type": "EXPLICIT",
+      "source": "Decades of research have uncovered the functions of many of those cells, as well as expression markers that uniquely identify them (Hall and Altun, 2007; Hobert et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "562f2cf6-e1c9-41ac-a2a6-da4c9b552815",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C18",
+      "claim": "C. elegans is exceptionally well-suited for using scRNA-seq to map eQTLs across cell types in the natural physiological context of a whole animal, down to cellular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These features and resources make C. elegans exceptionally well-suited for using scRNA-seq to map eQTLs across cell types in the natural physiological context of a whole animal, down to cellular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the described features of C. elegans and the capabilities of scRNA-seq.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a7c521f8-ed5b-430a-92bd-577eeaf90274",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C19",
+      "claim": "The authors recently developed a method called C. elegans extreme quantitative trait locus (ceX-QTL) mapping for genetic analysis of complex traits in extremely large populations of segregants.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently developed a method, C. elegans extreme quantitative trait locus (ceX-QTL) mapping, for genetic analysis of complex traits in extremely large populations of segregants (Burga et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "d4bf87c7-3369-48a6-a640-45fdd2e0bc38",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C20",
+      "claim": "The ceX-QTL method takes advantage of a mutation in the gene fog-2 that forces the normally hermaphroditic C. elegans to reproduce via obligate outcrossing.",
+      "claim_type": "EXPLICIT",
+      "source": "The method takes advantage of a mutation in the gene fog-2 that forces the normally hermaphroditic C. elegans to reproduce via obligate outcrossing, allowing us to propagate a large crossing experiment for multiple generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the ceX-QTL method, supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f2d3ffb3-3844-4b6c-86cf-10c6158af1e5",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C21",
+      "claim": "The authors propagated a cross between the laboratory strain N2 and a highly divergent isolate from Hawaii, CB4856, for four generations, generating a pool of 200,000 genetically distinct F4 segregants.",
+      "claim_type": "EXPLICIT",
+      "source": "We propagated a cross between the laboratory strain N2 and a highly divergent isolate from Hawaii, CB4856, for four generations, generating a pool of 200,000 genetically distinct F4 segregants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and is supported by the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "cdb9df1c-bc95-44d4-9096-e0b8944ac073",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C22",
+      "claim": "The authors dissociated the segregant pool to single cells at the L2 larval stage and profiled the cells with scRNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "We dissociated the segregant pool to single cells at the L2 larval stage and profiled the cells with scRNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ceae3210-d850-43bb-8a83-ba68c93e7778",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C23",
+      "claim": "The final dataset comprises 55,508 cells classified into 19 different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our final dataset comprises 55,508 cells classified into 19 different cell types (Figure 1B; Supplementary file 1\u2014Table S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the dataset composition, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0eafbc26-3b90-4085-9719-8d45dce89f3e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C24",
+      "claim": "The observed number of cells of each type was strongly correlated with the known cell-type abundance in L2 larvae (Spearman's \u03c1=0.87, p=2.2\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "The observed number of cells of each type was strongly correlated with the known cell-type abundance in L2 larvae (Spearman's \u03c1=0.87, p=2.2\u00d710\u22126, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "babbcf03-172b-4ce5-bceb-4bfca92526a8",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C25",
+      "claim": "Most of the cells in the sample were expected to carry unique genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the cells in our sample were expected to carry unique genotypes (Materials and methods, Supplementary file 1\u2014Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by calculations in the methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "338bf85d-eab8-4a27-a502-ecd3cfb0a2cf",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C26",
+      "claim": "The design of having unique genotypes is advantageous for eQTL mapping because it maximizes the sample size.",
+      "claim_type": "EXPLICIT",
+      "source": "This design is advantageous for eQTL mapping because it maximizes the sample size (Mandric et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e5adf4a5-3987-4c4c-a95d-a8be63b05b71",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C27",
+      "claim": "Transcriptomic data can be used for genotyping by leveraging variants in transcribed sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that in addition to providing a readout of global gene expression, transcriptomic data can also be used for genotyping by leveraging variants in transcribed sequences (Ronald et al., 2005; West et al., 2006; Kang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "4e35ec2c-fb30-4de6-9788-c263f07d657a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C28",
+      "claim": "The authors built a hidden Markov model (HMM) for genotyping cells based on scRNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "To that end, we built a HMM for genotyping cells based on scRNA-seq data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological development of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "7145ea37-0859-4823-9473-9215d04c2940",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C29",
+      "claim": "The HMM calculates the posterior probability of the underlying genotypes for each individual based on three components: prior probabilities, emission probabilities, and transition probabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The model calculates the posterior probability of the underlying genotypes for each individual based on three components: (1) prior probabilities for each of the possible genotypes, (2) emission probabilities for observing variant-informative reads given each of the possible genotypes, and (3) transition probabilities for recombination events occurring or not occurring between adjacent genotype-informative sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the HMM model developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "1da31850-28f3-4de2-b60d-91a71d01882f",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C30",
+      "claim": "The authors mapped 1718 cis eQTLs in 1294 genes and 451 trans eQTLs in 390 genes at a false discovery rate (FDR) of 10% across the different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped 1718 cis eQTLs in 1294 genes and 451 trans eQTLs in 390 genes at a false discovery rate (FDR) of 10% across the different cell types (Figure 3A, B, Supplementary file 1\u2014Table S2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding of the study, supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ad5bde55-df77-4e97-bcbc-434d420f48ac",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C31",
+      "claim": "The number of eQTLs detected in each cell type was strongly correlated with the number of cells of that type (Spearman's \u03c1=0.91, p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of eQTLs detected in each cell type was strongly correlated with the number of cells of that type (Spearman's \u03c1=0.91, p<2.2\u00d710\u221216).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistical result is stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "eedf0727-4839-4ff6-820d-9dca07240df8",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C32",
+      "claim": "In cell types with >1000 cells, the authors mapped between 52 and 415 eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "In cell types with >1000 cells, we mapped between 52 and 415 eQTLs (Supplementary file 1\u2014Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "350633e0-f651-495e-8e65-b597159da590",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C33",
+      "claim": "For 1071 of the 1294 genes with a cis eQTL (83%), the eQTL was detected in only one cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "For 1071 of the 1294 genes with a cis eQTL (83%), the eQTL was detected in only one cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "26d5e15b-d3b9-4c4c-ab1c-c2ffe0ced5d3",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C34",
+      "claim": "For 208 of the remaining 223 genes (93%), the direction of the eQTL effect was the same in all cell types in which it was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "For 208 of the remaining 223 genes (93%), the direction of the eQTL effect was the same in all cell types in which it was detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "d907f88a-814d-49ca-9f74-e0be93a45531",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C35",
+      "claim": "The overlap between single-cell cis eQTLs and those previously identified in a panel of 200 recombinant inbred lines was highly significant, with 335 cis eQTLs shared between the studies (OR = 7.2, p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite major differences in experimental design, including the developmental stage of the worms, the overlap with the single-cell cis eQTLs was highly significant, with 335 cis eQTLs shared between the studies (OR = 7.2, p<2.2\u00d710\u221216, Fisher's exact test) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is stated in the text and supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ef7d736e-b477-452c-be71-37590ec21514",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C36",
+      "claim": "The bulk and single-cell eQTL effect sizes were highly correlated (Spearman's \u03c1=0.64, p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the bulk and single-cell eQTL effect sizes were highly correlated (Spearman's \u03c1=0.64, p<2.2\u00d710\u221216) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is stated in the text and supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "8821df48-fad1-42dc-8876-dec9cf62788f",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C37",
+      "claim": "Single-cell eQTLs detected in multiple cell types were more likely to also be seen in the bulk study: 50% of the genes with cis eQTLs detected in multiple cell types were also identified in bulk compared to 28% of the eQTLs detected in only one cell type (OR = 2.58, p=2.1\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, single-cell eQTLs detected in multiple cell types were more likely to also be seen in the bulk study: 50% of the genes with cis eQTLs detected in multiple cell types were also identified in bulk compared to 28% of the eQTLs detected in only one cell type (OR = 2.58, p=2.1\u00d710\u22128) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is stated in the text and supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "67e7328a-b0aa-4fe5-b476-0a663c200b27",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C38",
+      "claim": "The single-cell eQTL mapping approach improves the power to detect cell-type-specific effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that the single-cell eQTL mapping approach improves the power to detect cell-type-specific effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that multi-cell-type eQTLs are more likely to be detected in bulk studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "7ad43fbd-82b1-45a3-ba9b-4d02b159a281",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C39",
+      "claim": "90 of the 451 trans eQTLs clustered at five hotspots, each containing 12\u201331 eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 90 of the 451 trans eQTLs clustered at five hotspots, each containing 12\u201331 eQTLs (Figure 4, Supplementary file 1\u2014Table S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results, supported by Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e9bde829-cd9a-45ab-ac78-2a0980237101",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C40",
+      "claim": "A hotspot on Chr. I was identified independently in both neurons and seam cells, with the top associated variant (Chr. I:10890182) being the same for both cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "A hotspot on Chr. I was identified independently in both neurons and seam cells; the top associated variant (Chr. I:10890182) was the same for both cell types (Figure 4A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results, supported by Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f3b7196f-f86f-4bbf-a24c-8fa2cf7a7533",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C41",
+      "claim": "The targets of the hotspot detected in intestinal cells were weakly enriched for genes involved in the innate immune response (FDR-corrected p=0.042).",
+      "claim_type": "EXPLICIT",
+      "source": "The targets of the hotspot detected in intestinal cells were weakly enriched for genes involved in the innate immune response (FDR-corrected p=0.042), a major role of that tissue (Pukkila-Worley and Ausubel, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "d7acf2af-e72b-4b6b-9fcb-1b23a3070dbb",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C42",
+      "claim": "The innate immune response is a major role of the intestinal tissue in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The targets of the hotspot detected in intestinal cells were weakly enriched for genes involved in the innate immune response (FDR-corrected p=0.042), a major role of that tissue (Pukkila-Worley and Ausubel, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "16dc8811-b14c-4ed7-a997-b4c7b870776a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C43",
+      "claim": "The targets of the hotspot detected in the body wall muscle were enriched for genes associated with myofilament (FDR corrected p=6.4\u00d710\u22128), actin cytoskeleton (FDR-corrected p=4.2\u00d710\u22126), and related terms.",
+      "claim_type": "EXPLICIT",
+      "source": "The targets of the hotspot detected in the body wall muscle were enriched for genes associated with the term myofilament (FDR corrected p=6.4\u00d710\u22128), actin cytoskeleton (FDR-corrected p=4.2\u00d710\u22126), and related terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a9bb1392-441d-45a5-ac6c-6ce43f4c5bfe",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C44",
+      "claim": "The enrichment in body wall muscle hotspot targets was driven by the genes mup-2, tni-1, tnt-2, mlc-2, mlc-3, lev-11, and act-4.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment was driven by the genes mup-2, tni-1, tnt-2, mlc-2, mlc-3, lev-11, and act-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of which genes contributed to the enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "00f58662-7d7a-44dd-8451-36666c310590",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C45",
+      "claim": "mlc-2 and mlc-3 encode a myosin light chain, and act-4 encodes an actin protein.",
+      "claim_type": "EXPLICIT",
+      "source": "mlc-2 and mlc-3 encode a myosin light chain, and act-4 encodes an actin protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known functions of these genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "7f4f0aaa-4637-4ddc-8f5e-c0cc4e7286bb",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C46",
+      "claim": "lev-11 encodes a tropomyosin, and mup-2, tni-1, and tnt-2 encode three of the four proteins in C. elegans that are expressed in the body-wall muscle and form troponin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "lev-11 encodes a tropomyosin, and mup-2, tni-1, and tnt-2 encode three of the four proteins in C. elegans that are expressed in the body-wall muscle and form troponin complexes, highly conserved regulators of muscle contraction (Ono and Ono, 2004; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the known functions of these genes, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "2f3a7254-75f4-4a5b-98cc-655bbc376f3a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C47",
+      "claim": "Troponin complexes are highly conserved regulators of muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "lev-11 encodes a tropomyosin, and mup-2, tni-1, and tnt-2 encode three of the four proteins in C. elegans that are expressed in the body-wall muscle and form troponin complexes, highly conserved regulators of muscle contraction (Ono and Ono, 2004; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "714326e4-e9fa-44d4-9bca-667a91f9d402",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C48",
+      "claim": "The targets of the neuronal hotspot on the right arm of Chr. III were enriched for genes involved in vesicle localization (FDR-corrected p=7.5\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "The targets of the neuronal hotspot on the right arm of Chr. III were enriched for genes involved in vesicle localization (FDR-corrected p=7.5\u00d710\u22123), as well as for BMP receptor binding genes (FDR-corrected p=2.8\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "6015fe11-a4d0-4134-88ee-b6c52a199ed7",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C49",
+      "claim": "The targets of the neuronal hotspot on the right arm of Chr. III were enriched for BMP receptor binding genes (FDR-corrected p=2.8\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "The targets of the neuronal hotspot on the right arm of Chr. III were enriched for genes involved in vesicle localization (FDR-corrected p=7.5\u00d710\u22123), as well as for BMP receptor binding genes (FDR-corrected p=2.8\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "3780e091-fd66-45cf-8f64-2f79313f3281",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C50",
+      "claim": "The BMP receptor binding enrichment was driven by dbl-1 and tig-2, orthologs of human bone morphogenetic protein (BMP) genes BMP5 and BMP8 and ligands of the transforming growth factor beta (TGF-\u03b2) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter enrichment was driven by dbl-1 and tig-2, orthologs of human bone morphogenetic protein (BMP) genes BMP5 and BMP8 and ligands of the transforming growth factor beta (TGF-\u03b2) pathway (Gumienny, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genes contributing to the enrichment and their known functions, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "bc09724b-7ba9-4128-b682-6848740dbdd4",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C51",
+      "claim": "dbl-1 was discovered as a gene that regulates body size in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, dbl-1 was discovered as a gene that regulates body size in C. elegans (Suzuki et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e2cce5fb-1018-43e3-b00d-d0d8e8133fc8",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C52",
+      "claim": "The hotspot peak marker is located <300 kb from the peak of a QTL previously identified for body size, and the corresponding confidence intervals overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "the hotspot peak marker is located <300 kb from the peak of a QTL we previously identified for body size (Andersen et al., 2015), and the corresponding confidence intervals overlap (Supplementary file 1\u2014Table S3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement comparing the current results to previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "612b5a1f-a75d-4286-a98b-b5d13dcac735",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C53",
+      "claim": "Differential regulation of the TGF-\u03b2 pathway is involved in variation in body size between N2 and CB4856.",
+      "claim_type": "EXPLICIT",
+      "source": "the hotspot peak marker is located <300 kb from the peak of a QTL we previously identified for body size (Andersen et al., 2015), and the corresponding confidence intervals overlap (Supplementary file 1\u2014Table S3), suggesting that differential regulation of the TGF-\u03b2 pathway is involved in variation in body size between N2 and CB4856.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the overlap of the hotspot with a body size QTL and the enrichment of TGF-\u03b2 pathway genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "9604c43a-a8b2-4210-9587-9b66b75975ed",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C54",
+      "claim": "The neurons fell into 81 distinct clusters, ranging from 17 to 872 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The neurons fell into 81 distinct clusters, ranging from 17 to 872 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "73415d1f-5582-46fc-b17c-687b766cf4a1",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C55",
+      "claim": "The authors mapped these neuronal clusters onto 100 (83%) of the 120 neuronal clusters identified in CeNGEN.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped these clusters onto 100 (83%) of the 120 neuronal clusters identified in CeNGEN (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the mapping results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "713d4527-eeb1-4815-9857-e3d838c6f28e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C56",
+      "claim": "The authors identified CEM neurons, which are male specific and absent from CeNGEN, based on the expression of the marker cwp-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified CEM neurons, which are male specific and absent from CeNGEN, based on the expression of the marker cwp-1 (Portman and Emmons, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the identification method, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e96449ca-d4fc-425b-b4bf-4251f0489931",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C57",
+      "claim": "The authors mapped a total of 163 sn-eQTLs in 132 genes at an FDR of 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "We mapped cis eQTLs in each of the single neuronal subtypes (sn-eQTLs) and identified a total of 163 sn-eQTLs in 132 genes at an FDR of 10% (Figure 5A, Supplementary file 1\u2014Table S6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "992e3600-d72c-4224-ad85-cd40fdfd020a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C58",
+      "claim": "Of the 163 sn-eQTLs, 117 (88%) were identified in only a single neuronal subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 117 (88%) were identified in only a single neuronal subtype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e3f2098d-9949-418d-a62b-18ab0f5acff7",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C59",
+      "claim": "Functional annotation of sn-eQTLs identified 25 genes involved in signaling (FDR-corrected p=0.047).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of sn-eQTLs identified 25 genes involved in signaling (FDR-corrected p=0.047), including 12 genes involved in G-protein coupled receptor signaling (FDR-corrected p=0.047) and eight genes involved in neuropeptide signaling (FDR-corrected p=9.9\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "22b7d8ee-7e48-4b7a-800d-bebef8a3170d",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C60",
+      "claim": "12 genes involved in G-protein coupled receptor signaling were identified among sn-eQTLs (FDR-corrected p=0.047).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of sn-eQTLs identified 25 genes involved in signaling (FDR-corrected p=0.047), including 12 genes involved in G-protein coupled receptor signaling (FDR-corrected p=0.047) and eight genes involved in neuropeptide signaling (FDR-corrected p=9.9\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "64744ce0-20c8-45db-b5ec-c15c8ca84743",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C61",
+      "claim": "Eight genes involved in neuropeptide signaling were identified among sn-eQTLs (FDR-corrected p=9.9\u00d710\u22123).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of sn-eQTLs identified 25 genes involved in signaling (FDR-corrected p=0.047), including 12 genes involved in G-protein coupled receptor signaling (FDR-corrected p=0.047) and eight genes involved in neuropeptide signaling (FDR-corrected p=9.9\u00d710\u22123).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the GO enrichment analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "46773071-e33a-42a6-985d-d45ac3a11047",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C62",
+      "claim": "92 sn-eQTLs were not identified pan-neuronally at an FDR of 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the sn-eQTLs to those identified when all neurons were analyzed jointly ('pan-neuronal mapping') and found that a sizable fraction of the sn-eQTLs did not have evidence for a pan-neuronal signal: 92 were not identified pan-neuronally at an FDR of 10% and 69 were not identified even at a highly permissive FDR of 50%, suggesting that they exert their effects only in specific neuronal subtypes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "05126be8-075e-4d41-a7e7-552aa295d6c2",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C63",
+      "claim": "69 sn-eQTLs were not identified pan-neuronally even at a highly permissive FDR of 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the sn-eQTLs to those identified when all neurons were analyzed jointly ('pan-neuronal mapping') and found that a sizable fraction of the sn-eQTLs did not have evidence for a pan-neuronal signal: 92 were not identified pan-neuronally at an FDR of 10% and 69 were not identified even at a highly permissive FDR of 50%, suggesting that they exert their effects only in specific neuronal subtypes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "b6cc6074-56b9-4ec1-8a7e-67304b76bdb1",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C64",
+      "claim": "Among the 69 sn-eQTLs with no signal in the pan-neuronal mapping even at the permissive FDR, the direction of the effect was concordant for 33 and discordant for 36, not significantly different from chance (p>0.5; binomial test).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 69 sn-eQTLs with no signal in the pan-neuronal mapping even at the permissive FDR, the direction of the effect was concordant for 33 and discordant for 36, not significantly different from chance (p>0.5; binomial test), as would be expected if these effects are truly subtype-specific (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f342e385-3a71-4d9e-8dc4-a3deb60c65e5",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C65",
+      "claim": "Among the 94 sn-eQTLs that had a pan-neuronal signal at an FDR of 50%, the direction of the effect was concordant for 88 and discordant for only 6 (p<0.000001; binomial test).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, among the 94 that had a pan-neuronal signal at an FDR of 50%, the direction of the effect was concordant for 88 and discordant for only 6 (p<0.000001; binomial test), consistent with differences in detection arising from limited statistical power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "d88a86bd-2e12-428b-a1e0-f10b99518488",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C66",
+      "claim": "An sn-eQTL in the neuropeptide gene nlp-21 showed significant and opposing effects in two neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In a striking case, we observed an sn-eQTL in the neuropeptide gene nlp-21 that showed significant and opposing effects in two neurons (Figure 5C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results, supported by Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0f1ab78d-85ab-4631-829a-7babfe1db44c",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C67",
+      "claim": "In the RIC neuron, higher nlp-21 expression was associated with the CB4856 allele (\u03b2 = 4.4, FDR-corrected p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "In the RIC neuron, higher nlp-21 expression was associated with the CB4856 allele (\u03b2 = 4.4, FDR-corrected p=0.03)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ef353f99-1f2f-4d14-bb5c-83ac045d262e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C68",
+      "claim": "In the RIM neuron, higher nlp-21 expression was associated with the N2 allele (\u03b2 = \u22125.4, FDR-corrected p=9.8\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "while in the RIM neuron, higher nlp-21 expression was associated with the N2 allele (\u03b2 = \u22125.4, FDR-corrected p=9.8\u00d710\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a37883d8-85c0-4505-8c47-7b9ab0c72e09",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C69",
+      "claim": "In the pan-neuronal mapping, no significant effect is observed for nlp-21.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pan-neuronal mapping, no significant effect is observed for this gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "08493aca-01e0-435a-b608-d238d2e0ad3e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C70",
+      "claim": "The directions of the nlp-21 expression differences in RIC and RIM neurons in the parental dataset agreed with the eQTL effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the RIC and RIM neurons in the parental dataset, and although the small number of cells in each group (35 and 27, respectively, with only 9 and 5 of them from CB4856) was insufficient for statistical testing, the directions of the differences agreed with the eQTL effects (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement of the results, supported by Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0d2c9085-cf71-4d69-b00f-558890949356",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C71",
+      "claim": "Earlier scRNA-seq eQTL mapping studies were limited in sample size to at most ~100 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier scRNA-seq eQTL mapping studies were limited in sample size to at most ~100 individuals, but nevertheless highlighted the potential of this approach to identify cell-type (van der Wijst et al., 2018) and developmental (Cuomo et al., 2020) eQTLs, as well as loci affecting expression variance (Sarkar et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the state of the field based on citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "bfc86a20-b822-49c9-98b8-296f3a5406e9",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C72",
+      "claim": "The novel approach allowed the authors to map eQTLs in tens of thousands of genotypically distinct individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel approach allowed us to map eQTLs in tens of thousands of genotypically distinct individuals and enabled detection of both cis and trans eQTLs, as well as resolution of their effects down to the level of specific cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the capabilities of the approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f8206e3f-0820-4749-8487-3f21a86d2582",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C73",
+      "claim": "By using scRNA-seq, the authors were able to process all individuals jointly.",
+      "claim_type": "EXPLICIT",
+      "source": "By using scRNA-seq, we were able to process all individuals jointly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key advantage of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "9f1004d1-0fc7-4bcf-8982-ca38958972b4",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C74",
+      "claim": "After the initial parental cross, all subsequent steps carried out over the course of five C. elegans life cycles (3 weeks) were performed in bulk.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial parental cross, all subsequent steps carried out over the course of five C. elegans life cycles (3 weeks) were performed in bulk, limiting any confounding environmental factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "b6e55f1c-e3df-4b7b-a4de-b5c9e4b1afd2",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C75",
+      "claim": "The authors synchronized the worms at the first larval stage, L1, and collected samples at the L2 stage to minimize the influence of genotype on development.",
+      "claim_type": "EXPLICIT",
+      "source": "To minimize the influence of genotype on development, we synchronized the worms at the first larval stage, L1, and collected samples at the L2 stage, limiting the time for differences to accumulate post synchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a848ba3a-a98a-48f7-a358-819e168d0cc4",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C76",
+      "claim": "Previous work suggested the existence of cell-type-specific eQTL hotspots in C. elegans based on the expression patterns of hotspot targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work suggested the existence of cell-type-specific eQTL hotspots in C. elegans based on the expression patterns of hotspot targets (Francesconi and Lehner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "952a4316-e28a-46b4-beb0-7ffb1f78f42d",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C77",
+      "claim": "The authors discovered three hotspots that are cell-type specific, with targets that are involved in core functions performed by these cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered three hotspots that are cell-type specific, with targets that are involved in core functions performed by these cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "410547e4-7703-49fc-bf9e-183740ba21ef",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C78",
+      "claim": "eQTL hotspots have been identified in human blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, eQTL hotspots have been identified in human blood cells (Yao et al., 2017; Kolberg et al., 2020), as well as in cell lines (Brynedal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "4f6025b9-de8f-459a-aad6-4fa52ffab09a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C79",
+      "claim": "Hotspot and trans eQTL discovery is facilitated by expression studies that can distinguish cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that hotspot and trans eQTL discovery is facilitated by expression studies that can distinguish cell types and point to a larger role of hotspots in the genetics of gene expression in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the results of the study and comparison to previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "edb84a4e-8d8b-451f-b29b-bd3410c2f48c",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C80",
+      "claim": "The extent to which eQTL hotspots play a role in determining biological phenotypes is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent to which eQTL hotspots play a role in determining biological phenotypes is unknown, although several examples have been described in animals and plants (Albert and Kruglyak, 2015; Brynedal et al., 2017; Pang et al., 2019; Andersen et al., 2014; Orozco et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "eeef6c42-8d57-4048-a86e-b8ed3e78bb69",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C81",
+      "claim": "One of the neuronal hotspots identified in this study affects the expression of members of the TGF-\u03b2 pathway, which has been linked to the control of body size in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the neuronal hotspots we identified in this study affects the expression of members of the TGF-\u03b2 pathway, which has been linked to the control of body size in C. elegans (Gumienny, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "bc6cb2b7-dd15-4a84-b447-7de259714b25",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C82",
+      "claim": "A previous study mapped a QTL for body size in a cross between N2 and CB4856 to the same region as the neuronal hotspot.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our previous study mapped a QTL for body size in a cross between N2 and CB4856 to the same region (Andersen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "37276a24-a64c-470e-aee6-e7342d7da835",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C83",
+      "claim": "Resolving the physiological impact of eQTL hotspots will require fine-mapping to identify the underlying causal variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, resolving the physiological impact of eQTL hotspots, including the ones in this study, will require fine-mapping to identify the underlying causal variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research needs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "dad717bb-1d4b-4770-9e74-5976aa06f1ea",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C84",
+      "claim": "A systematic approach for fine-mapping eQTL hotspots has recently been developed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic approach for fine-mapping eQTL hotspots has recently been developed in yeast (Lutz et al., 2019); future advances may enable this to be carried out in animals as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "48cd199d-1092-4881-a5f7-685233636067",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C85",
+      "claim": "A comparison of the single-cell cis eQTLs to those mapped in a previous whole-worm eQTL study showed a highly significant overlap despite major differences in experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the single-cell cis eQTLs to those mapped in a previous whole-worm eQTL study from our laboratory showed a highly significant overlap despite major differences in experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "3d3dddad-f328-4dab-a692-5090099c5e3f",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C86",
+      "claim": "A sizable fraction of cis eQTLs have robust, consistent effects.",
+      "claim_type": "EXPLICIT",
+      "source": "These results join accumulating evidence that a sizable fraction of cis eQTLs have robust, consistent effects (GTEx Consortium, 2020; Smith and Kruglyak, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f5e7d333-3444-4edf-8e10-10a2381cb415",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C87",
+      "claim": "Many of the cis eQTL effects are conserved across worm development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results join accumulating evidence that a sizable fraction of cis eQTLs have robust, consistent effects (GTEx Consortium, 2020; Smith and Kruglyak, 2008) and show that many of the effects are conserved across worm development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between L2 and L4 stage data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "29fcf2dc-1fc9-4a97-8340-9f9d72505b1d",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C88",
+      "claim": "The strong overlap of cis eQTLs mapped by scRNA-seq and whole-worm analysis suggests that the effect of many cis eQTLs is conserved across cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong overlap of cis eQTLs mapped by scRNA-seq and whole-worm analysis also suggests that the effect of many cis eQTLs is conserved across cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between single-cell and bulk data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "7812973c-317a-462c-9312-9273a85d2ccf",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C89",
+      "claim": "Modeling strategies that borrow power among cell types could increase the power to detect eQTLs.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that modeling strategies that borrow power among cell types could increase the power to detect eQTLs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future methodological improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "8f748459-1a31-45d5-8d9a-d9307d85fda3",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C90",
+      "claim": "The approach for cis eQTL discovery could be supplemented with tests for allele-specific expression (ASE).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our approach for cis eQTL discovery could be supplemented with tests for allele-specific expression (ASE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future methodological improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "60bb96db-5f46-44f3-a969-40f7db4fd9ba",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C91",
+      "claim": "The increasing throughput of single-cell technologies and sequencing platforms will enable future work to study cell-type specificity of cis and trans eQTLs in greater detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the increasing throughput of single-cell technologies and sequencing platforms will enable future work to study cell-type specificity of cis and trans eQTLs in greater detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future research possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f2817fe0-4892-4afc-a170-3495fda52492",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C92",
+      "claim": "The authors discovered cis eQTLs that act in single subtypes of C. elegans neurons, including many that were not found when all neurons were analyzed jointly.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we discovered cis eQTLs that act in single subtypes of C. elegans neurons, including many that were not found when all neurons were analyzed jointly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0adcf992-5123-4203-9640-477ce595ec9a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C93",
+      "claim": "The authors discovered an eQTL that influences expression of the gene nlp-21 in opposing directions in two different neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also discovered an eQTL that influences expression of the gene nlp-21 in opposing directions in two different neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "359b3038-7428-4e29-98ed-b3e69e2601a0",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C94",
+      "claim": "Antagonistic eQTL effects could result from context-dependent effects of the same variant or from different variants acting in each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Such antagonism could result from context-dependent effects of the same variant or from different variants acting in each cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanisms underlying the observed antagonistic effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "764fec67-bf53-405b-accf-1b343bc93615",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C95",
+      "claim": "A growing body of work has identified eQTLs that are specific to cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study joins a growing body of work that identified eQTLs that are specific to cell types (Fairfax et al., 2012; Ishigaki et al., 2017; Donovan et al., 2020; Kim-Hellmuth et al., 2020; van der Wijst et al., 2018; Zhang et al., 2018; Westra et al., 2015), as well as developmental (Cuomo et al., 2020; Francesconi and Lehner, 2014) and environmental (Orozco et al., 2012; Fairfax and Knight, 2014; Kim-Hellmuth et al., 2017) contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "dabc0abe-a622-4ebc-9c10-81ccbc4ddacf",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C96",
+      "claim": "Distinct genetic effects are found across cell types and conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct genetic effects are found across cell types and conditions, and large-scale study of such effects is therefore crucial for gaining a comprehensive understanding of regulatory variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion based on the study's findings and previous work.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "e37d7efc-bdbf-4e5a-a261-904cf88c0fa8",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C97",
+      "claim": "Large-scale study of context-specific genetic effects is crucial for gaining a comprehensive understanding of regulatory variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct genetic effects are found across cell types and conditions, and large-scale study of such effects is therefore crucial for gaining a comprehensive understanding of regulatory variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ddcd6a2e-e92c-4a56-8d96-af41c45a3cd4",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C98",
+      "claim": "The authors found 870 differentially expressed genes between N2 and CB4856 (at a greater than twofold change and FDR of 10%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found 870 differentially expressed genes (at a greater than twofold change and FDR of 10%), of which 201 (23%) had a cis eQTL in the same tissue (odds ratio [OR] = 18.8, p<2.2\u00d710\u221216, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the differential expression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "3c7ac5c8-cf10-45d8-a64a-909c12fb5d6e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C99",
+      "claim": "201 (23%) of the 870 differentially expressed genes had a cis eQTL in the same tissue (OR = 18.8, p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "We found 870 differentially expressed genes (at a greater than twofold change and FDR of 10%), of which 201 (23%) had a cis eQTL in the same tissue (odds ratio [OR] = 18.8, p<2.2\u00d710\u221216, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "b3861961-794a-435e-ae4d-191ff4d634a2",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C100",
+      "claim": "191 of the 201 cis eQTLs (95%) showed the same direction of effect as the parental difference.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 191 of these cis eQTL (95%) showed the same direction of effect as the parental difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0aa48db7-a8d6-43d5-8754-f4727385ea33",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C101",
+      "claim": "The effect sizes of the significant cis eQTLs were strongly correlated with the sizes of the parental differences (Spearman's \u03c1=0.66, p<2.2\u00d710\u221216).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the effect sizes of the significant cis eQTLs were strongly correlated with the sizes of the parental differences (Spearman's \u03c1=0.66, p<2.2\u00d710\u221216) (Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is stated in the text and supported by Figure 3\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "b6f26024-ef37-4eea-b199-e0dcb79c02ec",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "claim_id": "C102",
+      "claim": "For a sizable fraction of the genes with cis eQTLs, those cis eQTLs are a major cause of differential gene expression between the strains.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide independent support for our cis eQTL mapping and show that for a sizable fraction of the genes those cis eQTLs are a major cause of differential gene expression between the strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concordance between cis eQTLs and parental differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel single-cell eQTL mapping approach in C. elegans that combines scRNA-seq with a large-scale genetic cross (200,000 F4 segregants) processed in a single 'one-pot' experiment. The approach uses a hidden Markov model to infer genotypes from expressed SNVs and successfully profiled 55,508 cells across 19 cell types, with cell-type abundances strongly correlated with known L2 larval composition (\u03c1=0.87, p=2.2\u00d710\u207b\u2076).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C19-C26, C28-C29, C72-C75 collectively describe a well-validated methodological approach. The experimental design is clearly described, the HMM genotyping method is mathematically specified (C29), and the resulting dataset shows expected biological properties (C24). The 'one-pot' processing minimizes environmental confounders (C73-C75), and the unique genotype design maximizes statistical power (C25-C26).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors mapped 1718 cis eQTLs in 1294 genes and 451 trans eQTLs in 390 genes at 10% FDR across cell types. The number of eQTLs detected per cell type strongly correlated with cell number (\u03c1=0.91, p<2.2\u00d710\u207b\u00b9\u2076), and 83% of cis eQTLs were detected in only one cell type, with 93% showing consistent effect directions across cell types when detected in multiple types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 present the primary eQTL mapping results with appropriate statistical thresholds (10% FDR) and clear quantification. The strong correlation between cell number and eQTL detection (C31) validates statistical power expectations. The high proportion of cell-type-specific eQTLs (C33) and consistent effect directions (C34) are well-supported by the data presented in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell cis eQTLs showed highly significant overlap with bulk eQTL mapping from a previous RIL study (335 shared, OR=7.2, p<2.2\u00d710\u207b\u00b9\u2076), with strongly correlated effect sizes (\u03c1=0.64, p<2.2\u00d710\u207b\u00b9\u2076). Multi-cell-type eQTLs were more likely to be detected in bulk studies (50% vs 28%, OR=2.58, p=2.1\u00d710\u207b\u2078), suggesting many cis eQTLs have robust effects conserved across cell types and developmental stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C85-C88 demonstrate strong concordance between single-cell and bulk approaches despite major experimental differences (L2 vs L4 stage, scRNA-seq vs microarray). The statistical evidence is robust with highly significant p-values and appropriate effect size measures. The observation that multi-cell-type eQTLs are more detectable in bulk (C37) logically supports the inference about cell-type conservation (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "5605cbc3-b601-456b-b93f-a07d053083c3",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Differential expression analysis between parental strains identified 870 genes, of which 201 (23%) had cis eQTLs in the same tissue (OR=18.8, p<2.2\u00d710\u207b\u00b9\u2076). Among these, 95% showed concordant effect directions, and effect sizes were strongly correlated with parental differences (\u03c1=0.66, p<2.2\u00d710\u207b\u00b9\u2076), indicating cis eQTLs are major drivers of strain-specific expression differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C102 provide independent validation of cis eQTL mapping through parental strain comparison. The high enrichment (OR=18.8), strong directional concordance (95%), and correlated effect sizes (\u03c1=0.66) all support the conclusion that mapped cis eQTLs explain substantial parental expression differences. The statistical evidence is robust across multiple complementary analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "abaec920-2157-4c47-82fe-f55c7191bf9d",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors identified five trans eQTL hotspots containing 90 of 451 trans eQTLs, with three showing cell-type specificity. The body wall muscle hotspot targets were enriched for myofilament genes (p=6.4\u00d710\u207b\u2078) including troponin complex components (mup-2, tni-1, tnt-2), while the intestinal hotspot showed weak enrichment for innate immune response genes (p=0.042).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47, C77 describe trans eQTL hotspots with appropriate statistical evidence. The body wall muscle enrichment is highly significant (p=6.4\u00d710\u207b\u2078) and biologically coherent, targeting core muscle contraction machinery. The intestinal enrichment is weaker (p=0.042) but consistent with known tissue function (C42). The identification of cell-type-specific hotspots affecting relevant pathways is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A neuronal hotspot on Chr. III showed enrichment for TGF-\u03b2 pathway genes including dbl-1 and tig-2 (BMP receptor binding, p=2.8\u00d710\u207b\u00b3). This hotspot colocalizes (<300 kb) with a previously mapped body size QTL, suggesting differential TGF-\u03b2 pathway regulation contributes to body size variation between N2 and CB4856.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53, C81-C82 connect the neuronal hotspot to a known body size QTL through multiple lines of evidence: significant GO enrichment (p=2.8\u00d710\u207b\u00b3), involvement of dbl-1 (known body size regulator, C51), and physical colocalization with previous QTL mapping (C52, C82). The inference about TGF-\u03b2 pathway involvement (C53) is reasonable but remains correlative without functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "623afa41-9698-4a1b-a0d9-b581bc4e2131",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neuronal subclustering identified 81 clusters mapping to 100 of 120 CeNGEN clusters (83%). Single-neuron eQTL mapping identified 163 sn-eQTLs in 132 genes at 10% FDR, with 88% detected in only one neuronal subtype. These sn-eQTLs were enriched for signaling genes including neuropeptide signaling (8 genes, p=9.9\u00d710\u207b\u00b3) and GPCR signaling (12 genes, p=0.047).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C61, C92 demonstrate successful neuronal subtype resolution and eQTL mapping at single-cell resolution. The high concordance with CeNGEN (83%, C55) validates cell-type assignments. The enrichment for signaling genes (C59-C61) is biologically appropriate for neurons and statistically significant. The high proportion of subtype-specific eQTLs (88%, C58) supports cellular-level genetic regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Among sn-eQTLs, 69 showed no pan-neuronal signal even at 50% FDR, with effect directions not different from chance (33 concordant, 36 discordant, p>0.5), indicating true subtype specificity. Notably, nlp-21 showed opposing effects in RIM (\u03b2=-5.4, p=9.8\u00d710\u207b\u2077 for N2) and RIC neurons (\u03b2=4.4, p=0.03 for CB4856), with no pan-neuronal signal and concordant parental expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70, C93 provide strong evidence for single-cell-specific eQTLs through multiple analyses. The binomial test showing random effect directions for non-significant pan-neuronal eQTLs (C64) vs. highly concordant directions for significant ones (C65, p<0.000001) validates subtype specificity. The nlp-21 antagonistic effect (C66-C68) is statistically robust and independently supported by parental data (C70), though sample sizes are small for the latter.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "a3f14a02-072b-4bb1-93db-79b989e0c6e4",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that eQTL effects can be specific down to the level of single cells, with the single-cell approach improving power to detect cell-type-specific effects compared to bulk tissue analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C38 represent the main conclusions of the study, directly supported by the nlp-21 antagonistic effect data (C66-C70) and the observation that multi-cell-type eQTLs are more detectable in bulk studies (C37). The inference about improved power (C38) is well-supported by the comparison showing cell-type-specific eQTLs are missed in bulk analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "bd2bc032-096e-4f41-b9de-f7bec69b005e",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction establishes that eQTLs are often cell-type specific, studying them in relevant cell types is important but challenging in mammals, and C. elegans with its invariant cell lineage and characterized cell markers is well-suited for single-cell eQTL mapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C18 provide appropriate background context, all supported by citations to prior work. The rationale for using C. elegans (C16-C18) is well-justified based on established biological features. These claims accurately represent the state of the field and provide logical motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion contextualizes results within prior work, noting that previous scRNA-seq eQTL studies were limited to ~100 individuals, cell-type-specific hotspots were previously suggested in C. elegans, and similar findings have been reported in human blood cells and other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C71, C76, C78, C80, C84, C95 accurately cite and contextualize prior work. These claims appropriately position the current study's advances relative to the field and are well-supported by the provided citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    },
+    {
+      "id": "d8d1db29-57c6-44aa-8627-f070d94ef15a",
+      "content_id": "a0e4d401-568a-4667-bc0b-28e7e1aaba6e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors infer that cell-type-resolved expression studies facilitate hotspot discovery, suggest future directions including fine-mapping causal variants and methodological improvements (cross-cell-type modeling, ASE testing), and conclude that large-scale study of context-specific effects is crucial for understanding regulatory variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C83, C89-C91, C94, C96-C97 represent reasonable inferences and future directions based on the study's findings. The inference about facilitated hotspot discovery (C79) is supported by the identification of cell-type-specific hotspots. The suggested future work (C83, C89-C91) is appropriate, and the general conclusions (C96-C97) are well-justified by the demonstrated cell-type specificity of eQTLs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:11:47.572051Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "da6a21a5-2935-45d9-a93e-20a84941d9ff",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "76ba9175-5ef4-4425-b810-fc9984265bad",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "a7c521f8-ed5b-430a-92bd-577eeaf90274",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "d4bf87c7-3369-48a6-a640-45fdd2e0bc38",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "f2d3ffb3-3844-4b6c-86cf-10c6158af1e5",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "cdb9df1c-bc95-44d4-9096-e0b8944ac073",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "ceae3210-d850-43bb-8a83-ba68c93e7778",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "0eafbc26-3b90-4085-9719-8d45dce89f3e",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "babbcf03-172b-4ce5-bceb-4bfca92526a8",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "338bf85d-eab8-4a27-a502-ecd3cfb0a2cf",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "4e35ec2c-fb30-4de6-9788-c263f07d657a",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "7145ea37-0859-4823-9473-9215d04c2940",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "bfc86a20-b822-49c9-98b8-296f3a5406e9",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "f8206e3f-0820-4749-8487-3f21a86d2582",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "9f1004d1-0fc7-4bcf-8982-ca38958972b4",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "b6e55f1c-e3df-4b7b-a4de-b5c9e4b1afd2",
+      "result_id": "cfe2cd47-59b1-4849-8dc3-f4389de8b29a"
+    },
+    {
+      "claim_id": "1da31850-28f3-4de2-b60d-91a71d01882f",
+      "result_id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a"
+    },
+    {
+      "claim_id": "ad5bde55-df77-4e97-bcbc-434d420f48ac",
+      "result_id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a"
+    },
+    {
+      "claim_id": "eedf0727-4839-4ff6-820d-9dca07240df8",
+      "result_id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a"
+    },
+    {
+      "claim_id": "350633e0-f651-495e-8e65-b597159da590",
+      "result_id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a"
+    },
+    {
+      "claim_id": "26d5e15b-d3b9-4c4c-ab1c-c2ffe0ced5d3",
+      "result_id": "2ddf508f-d991-4e47-8f7b-34cf699d2c4a"
+    },
+    {
+      "claim_id": "d907f88a-814d-49ca-9f74-e0be93a45531",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "ef7d736e-b477-452c-be71-37590ec21514",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "8821df48-fad1-42dc-8876-dec9cf62788f",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "48cd199d-1092-4881-a5f7-685233636067",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "3d3dddad-f328-4dab-a692-5090099c5e3f",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "f5e7d333-3444-4edf-8e10-10a2381cb415",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "29fcf2dc-1fc9-4a97-8340-9f9d72505b1d",
+      "result_id": "9505a8c6-16c7-406e-9d6f-3c50e31aee41"
+    },
+    {
+      "claim_id": "ddcd6a2e-e92c-4a56-8d96-af41c45a3cd4",
+      "result_id": "5605cbc3-b601-456b-b93f-a07d053083c3"
+    },
+    {
+      "claim_id": "3c7ac5c8-cf10-45d8-a64a-909c12fb5d6e",
+      "result_id": "5605cbc3-b601-456b-b93f-a07d053083c3"
+    },
+    {
+      "claim_id": "b3861961-794a-435e-ae4d-191ff4d634a2",
+      "result_id": "5605cbc3-b601-456b-b93f-a07d053083c3"
+    },
+    {
+      "claim_id": "0aa48db7-a8d6-43d5-8754-f4727385ea33",
+      "result_id": "5605cbc3-b601-456b-b93f-a07d053083c3"
+    },
+    {
+      "claim_id": "b6f26024-ef37-4eea-b199-e0dcb79c02ec",
+      "result_id": "5605cbc3-b601-456b-b93f-a07d053083c3"
+    },
+    {
+      "claim_id": "7ad43fbd-82b1-45a3-ba9b-4d02b159a281",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "e9bde829-cd9a-45ab-ac78-2a0980237101",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "f3b7196f-f86f-4bbf-a24c-8fa2cf7a7533",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "d7acf2af-e72b-4b6b-9fcb-1b23a3070dbb",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "16dc8811-b14c-4ed7-a997-b4c7b870776a",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "a9bb1392-441d-45a5-ac6c-6ce43f4c5bfe",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "00f58662-7d7a-44dd-8451-36666c310590",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "7f4f0aaa-4637-4ddc-8f5e-c0cc4e7286bb",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "2f3a7254-75f4-4a5b-98cc-655bbc376f3a",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "952a4316-e28a-46b4-beb0-7ffb1f78f42d",
+      "result_id": "abaec920-2157-4c47-82fe-f55c7191bf9d"
+    },
+    {
+      "claim_id": "714326e4-e9fa-44d4-9bca-667a91f9d402",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "6015fe11-a4d0-4134-88ee-b6c52a199ed7",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "3780e091-fd66-45cf-8f64-2f79313f3281",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "bc09724b-7ba9-4128-b682-6848740dbdd4",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "e2cce5fb-1018-43e3-b00d-d0d8e8133fc8",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "612b5a1f-a75d-4286-a98b-b5d13dcac735",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "eeef6c42-8d57-4048-a86e-b8ed3e78bb69",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "bc6cb2b7-dd15-4a84-b447-7de259714b25",
+      "result_id": "f7356b17-4dc6-4788-b4b6-ee99c8eca465"
+    },
+    {
+      "claim_id": "9604c43a-a8b2-4210-9587-9b66b75975ed",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "73415d1f-5582-46fc-b17c-687b766cf4a1",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "713d4527-eeb1-4815-9857-e3d838c6f28e",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "e96449ca-d4fc-425b-b4bf-4251f0489931",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "992e3600-d72c-4224-ad85-cd40fdfd020a",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "e3f2098d-9949-418d-a62b-18ab0f5acff7",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "22b7d8ee-7e48-4b7a-800d-bebef8a3170d",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "64744ce0-20c8-45db-b5ec-c15c8ca84743",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "f2817fe0-4892-4afc-a170-3495fda52492",
+      "result_id": "623afa41-9698-4a1b-a0d9-b581bc4e2131"
+    },
+    {
+      "claim_id": "46773071-e33a-42a6-985d-d45ac3a11047",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "05126be8-075e-4d41-a7e7-552aa295d6c2",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "b6cc6074-56b9-4ec1-8a7e-67304b76bdb1",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "f342e385-3a71-4d9e-8dc4-a3deb60c65e5",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "d88a86bd-2e12-428b-a1e0-f10b99518488",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "0f1ab78d-85ab-4631-829a-7babfe1db44c",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "ef353f99-1f2f-4d14-bb5c-83ac045d262e",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "a37883d8-85c0-4505-8c47-7b9ab0c72e09",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "08493aca-01e0-435a-b608-d238d2e0ad3e",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "0adcf992-5123-4203-9640-477ce595ec9a",
+      "result_id": "0f964eb8-7139-46b2-86c4-6f7b0e8ad1f0"
+    },
+    {
+      "claim_id": "df0132a3-20bc-4980-b830-12e5c848395f",
+      "result_id": "a3f14a02-072b-4bb1-93db-79b989e0c6e4"
+    },
+    {
+      "claim_id": "a672b4d8-5ac3-4b2a-a8ad-d9e1f7bbed33",
+      "result_id": "a3f14a02-072b-4bb1-93db-79b989e0c6e4"
+    },
+    {
+      "claim_id": "67e7328a-b0aa-4fe5-b476-0a663c200b27",
+      "result_id": "a3f14a02-072b-4bb1-93db-79b989e0c6e4"
+    },
+    {
+      "claim_id": "bed67f14-e4c4-4277-a33b-3a3c5c1680e6",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "42237291-9e47-4d7a-8c90-9e1708acf55d",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "90a1a2ba-bb7b-4629-95e2-95987761f645",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "8b2c43ed-005b-40b3-a213-09b40eaa2c87",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "a489cf50-73d6-4b72-9bde-7b91da00923b",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "56f458e2-baa6-41e7-859b-8ab744d0e953",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "b9ce6048-7002-4eff-a0d4-9f7b3278f9e7",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "93df52db-4e0f-404a-9aef-1c5fa9ce70de",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "dfcfa8f9-c4d8-4dac-987b-c86828947492",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "7f47ef64-faac-460b-8763-974dc6837486",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "8044f61e-d776-4d71-aaba-c553a31b58b6",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "0c24e37b-8a61-499e-959b-22a4c58b605c",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "562f2cf6-e1c9-41ac-a2a6-da4c9b552815",
+      "result_id": "bd2bc032-096e-4f41-b9de-f7bec69b005e"
+    },
+    {
+      "claim_id": "e5adf4a5-3987-4c4c-a95d-a8be63b05b71",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "0d2c9085-cf71-4d69-b00f-558890949356",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "a848ba3a-a98a-48f7-a358-819e168d0cc4",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "410547e4-7703-49fc-bf9e-183740ba21ef",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "edb84a4e-8d8b-451f-b29b-bd3410c2f48c",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "dad717bb-1d4b-4770-9e74-5976aa06f1ea",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "764fec67-bf53-405b-accf-1b343bc93615",
+      "result_id": "ccb25224-060c-4f48-a6c9-d8ad8183cd08"
+    },
+    {
+      "claim_id": "4f6025b9-de8f-459a-aad6-4fa52ffab09a",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "37276a24-a64c-470e-aee6-e7342d7da835",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "7812973c-317a-462c-9312-9273a85d2ccf",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "8f748459-1a31-45d5-8d9a-d9307d85fda3",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "60bb96db-5f46-44f3-a969-40f7db4fd9ba",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "359b3038-7428-4e29-98ed-b3e69e2601a0",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "dabc0abe-a622-4ebc-9c10-81ccbc4ddacf",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    },
+    {
+      "claim_id": "e37d7efc-bdbf-4e5a-a261-904cf88c0fa8",
+      "result_id": "d8d1db29-57c6-44aa-8627-f070d94ef15a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1643 @@
+{
+  "submission": {
+    "id": "4754c30c-f49b-4e51-a01e-2f2098a49ae5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:27:55.180167Z",
+    "updated_at": "2025-12-03T11:27:55.180167Z"
+  },
+  "content": [
+    {
+      "id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "submission_id": "4754c30c-f49b-4e51-a01e-2f2098a49ae5",
+      "content_type": "manuscript",
+      "content_text": "# Detection of malignant peripheral nerve sheath tumors in patients with neurofibromatosis using aneuploidy and mutation identification in plasma\n\n## Authors\n\n- Austin K Mattox<sup>1</sup> ([ORCID: 0000-0002-7567-5542](https://orcid.org/0000-0002-7567-5542))\n- Christopher Douville<sup>1</sup> ([ORCID: 0000-0002-2510-4151](https://orcid.org/0000-0002-2510-4151))\n- Natalie Silliman<sup>1</sup>\n- Janine Ptak<sup>1</sup>\n- Lisa Dobbyn<sup>1</sup>\n- Joy Schaefer<sup>1</sup>\n- Maria Popoli<sup>1</sup>\n- Cherie Blair<sup>1</sup>\n- Kathy Judge<sup>1</sup>\n- Kai Pollard<sup>2</sup>\n- Christine Pratilas<sup>2</sup>\n- Jaishri Blakeley<sup>4</sup>\n- Fausto Rodriguez<sup>5</sup>\n- Nickolas Papadopoulos<sup>1</sup>\n- Allan Belzberg<sup>6</sup> ([ORCID: 0000-0003-1158-2117](https://orcid.org/0000-0003-1158-2117)) \u2020\n- Chetan Bettegowda<sup>1</sup> ([ORCID: 0000-0001-9991-7123](https://orcid.org/0000-0001-9991-7123)) \u2020\n\n### Affiliations\n\n1. Ludwig Center for Cancer Genetics and Therapeutics, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))\n2. Department of Pediatrics, Johns Hopkins University School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))\n3. Department of Oncology, Sidney Kimmel Comprehensive Cancer, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n4. Department of Neurology, Johns Hopkins University School of Medicine, MD School of Medicine Baltimore United States\n5. Department of Pathology, Johns Hopkins University School of Medicine Baltimore United States\n6. Department of Neurosurgery, Johns Hopkins University School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMalignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with neurofibromatosis and account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year. Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes. PN develop in nearly 30\u201350% of patients with neurofibromatosis type 1 (NF1) and most often grow rapidly in the first decade of life. One of the most important aspects of clinical care for NF1 patients is monitoring PN for signs of malignant transformation to MPNST that occurs in 10\u201315% of patients. We perform aneuploidy analysis on ctDNA from 883 ostensibly healthy individuals and 28 patients with neurofibromas, including 7 patients with benign neurofibroma, 9 patients with PN and 12 patients with MPNST. Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%, and analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity to 50% while retaining a high specificity of 97%. In addition, we performed mutation analysis on plasma cfDNA for a subset of patients and identified mutations in NF1, NF2, RB1, TP53BP2, and GOLGA2. Given the high throughput and relatively low sequencing coverage required by our assay, liquid biopsy represents a promising technology to identify incipient MPNST.\n\n## Introduction\n\nNeurofibromatosis type 1 (NF1) is caused by inherited or de novo mutations in the NF1 gene that codes for the cytoplasmic protein neurofibromin (DeClue et al., 1992). Neurofibromin is a GTPase-activating protein (GAP) for the RAS family of proto-oncogenes, and mutations in NF1 lead to persistent RAS signaling and uncontrolled cellular growth through downstream RAF, MEK, and ERK signaling (DeClue et al., 1992; Carroll, 2012). Activated RAS resulting from the loss of GTPase activity of NF1 also leads to downstream activation of the PI3K/AKT/mTOR pathway, further contributing to increased proliferation (Carroll, 2012).\n\nMalignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with NF1 and account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year (Rasmussen et al., 2001). Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes (De Raedt et al., 2003). PN develop in nearly 30\u201350% of patients with NF1 and most often grow rapidly in the first decade of life. One of the most important aspects of clinical care for NF1 patients is monitoring PN for signs of malignant transformation to MPNST that occurs in 10\u201315% of patients.\n\nBi-allelic loss of NF1 is not sufficient for malignant transformation of PN to MPNST (Zheng et al., 2008; Yang et al., 2008; Zhu et al., 2002). Additional mutations or copy number alterations of genes such as TP53, SUZ12, EGFR, CDKN2A, and TERT that are often not present in benign PN suggest that these alterations represent advanced progression to atypical neurofibroma (AN) and MPNST (Cichowski et al., 1999; De Raedt et al., 2014; Legius et al., 1994; Perry et al., 2002; Zhang et al., 2014).\n\nData from National Cancer Institute (NCI) NF1 Natural History Study suggest that nearly 50% of patients with PN develop well-demarcated nodular areas within the PN that are larger than 3 cm in size, lack the central dot sign characteristic of PN, and typically show more rapid growth (Mautner et al., 2008). These distinct nodular lesions (DNL) correlate with pain, and biopsy/resection of DNL leads to a confirmed diagnosis of AN in 70% of cases (Higham et al., 2016). Of all confirmed AN cases in the study, all were DNL by MRI and were associated with a modest FDG update of [SUV] = 2.7.\n\nDespite these preliminary results, MRI is unable to reliably differentiate between benign and malignant tumors (Derlin et al., 2013). Additional studies have suggested FDG-PET has sensitivities of nearly 90% in symptomatic patients, but only when using an SUV cutoff of 3.5 and a non-standard clinical protocol of delayed imaging at 4 hr (Ferner et al., 2008). Using similar criteria, FDG-PET may have similar sensitivities for monitoring asymptomatic patients for malignant transformation, but only at 49.5% specificity (Azizi et al., 2018). Pathologically, there are no standardized pathognomonic genetic alterations or immunohistochemical stains to differentiate MPNST from other sarcomas. While gross specimens that clearly arise from nerves lend credence to a diagnosis of MPNST, negative staining for cytokeratins and melanoma markers like Melan-A, MITF, and HMB45 can be useful in distinguishing MPNST from carcinoma and melanoma (Reinert et al., 2019; Pekmezci et al., 2015; Fletcher, 2014). S100 expression is also decreased or completely lost in MPNST (Pekmezci et al., 2015). Genomic loss of NF1 and CDKN2A are thought to be lost early in disease progression but testing for these mutations is also not clinically standardized.\n\nGiven the lack of specific imaging and pathologic diagnostic criteria to diagnose MPNST, more accurate and cost-effective biomarkers are needed. Liquid biopsies that assay for mutations or aneuploidy in circulating tumor DNA (ctDNA) represent an attractive, minimally invasive option that could be performed at each longitudinal patient visit. Mutations in polycomb repressive complex 2 (PRC2) subunits such as SUZ12 and EED are found in nearly 70% of MPNST (De Raedt et al., 2014; Zhang et al., 2014). Mutations in \u03b2-III-spectrin have also been found in up to 90% of MPNST (Hirbe et al., 2018). Additional Ras pathway activating mutations in genes such as PIK3CA, KIT, PDGFRA, PTPN11, FGFR1, and RASSF9, and cell-cycle gene mutations in genes such as RB1 and CHEK2 have also been described (Brohl et al., 2017).\n\nLiquid biopsies also have the advantage over traditional biopsies of capturing tumor heterogeneity. This is important because within a single tumor, there may be areas of PN, AN, low grade MPNST, and high grade MPNST, and traditional single-site biopsy may not capture the most malignant site.\n\nIn the present study, we perform aneuploidy analysis on 883 ostensibly healthy individuals and 28 patients with neurofibromas, including 7 patients with benign neurofibroma, 9 patients with PN, and 12 patients with MPNST. While overall sensitivity for detecting NF using genome wide aneuploidy measurements was limited, analysis of sub-chromosomal changes may be promising for detecting MPNST. In addition, we performed mutation analysis on plasma cfDNA for a subset of patients and identified mutations in NF1, NF2, RB1, TP53BP2, and GOLGA2.\n\n## Results\n\n### Patient characteristics\n\nThe primary objective of this pilot study was to differentiate MPNST from PN using genome wide and focal aneuploidy analysis of cfDNA isolated from plasma. To quantify the rate of genome wide copy number alterations (CNAs) detected in plasma cfDNA of healthy persons, we analyzed 883 samples from a previously published study (Douville et al., 2020) using a revised RealSeqS algorithm and a median of 10,223,275 UIDs per sample (Supplementary file 1). Our patient cohort included 28 patients with NF, including 7 patients with neurofibromas, 9 patients with PN, and 12 patients with MPNST, analyzed in the same manner as healthy controls with a median of 11,240,762 UIDs per sample (Supplementary file 2). All samples had matched leukocyte analysis to exclude germline CNAs. For patients with biopsy-confirmed MPNST, 58% (7/12) had positive PET scans, 17% (2/12) had prior chemotherapy, 17% (2/12) had prior chemotherapy and radiation, 8% (1/12) had prior radiation only, 17% (2/12) had prior surgery only, and 8% (1/12) had prior surgery, chemotherapy, and radiation. Median length of follow up was 523 days.\n\n### Analysis of genome wide aneuploidy\n\nNinety-six percent (27/28) of patients enrolled onto our study met the criteria for NF1 diagnosis. RealSeqS, which amplifies approximately 750,000 loci across 39 chromosome arms, was used to calculate a genome wide aneuploidy score (GAS) to call plasma samples positive or negative at 97% specificity as determined by the 883 healthy controls. The inclusion of the large number of healthy controls is especially important because it allows for a realistic estimation of specificity and a comparison between healthy persons, patients with neurofibromas, as those with MPNST, as would be done in a real-world setting. The median GAS score in healthy controls was 0.008 \u00b1 0.102, and 0.005 \u00b1 0.249 and 0.018 \u00b1 0.652 in benign/plexiform neurofibromas and MPNST, respectively (Figure 1). At 97% specificity in healthy controls, at the time of blood draw, the false positive rate among benign/plexiform neurofibromas was 6.3% (1/16, p = 0.42 compared to healthy controls), while the sensitivity for detecting MPNST was 33% (4/12, p < 0.001 compared to healthy controls). GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74238/elife-74238-fig1-v2.jpg)\n\n**Figure 1.:** **p < 0.01, ***p < 0.001.\n\nInterestingly, the one patient with the plexiform neurofibroma deemed to be a false positive at the time of blood draw (INDIA 1283, Supplementary file 3) had a GAS score of 0.997. Biopsy at the time of blood draw confirmed diffuse and atypical changes in the PN. Upon later review, this patient progressed to MPNST 25 months after blood draw, suggesting that aneuploidy analysis significantly pre-dated clinical progression.\n\n### Analysis of focal copy number alterations\n\nIn addition to assessing genome wide aneuploidy, RealSeqS can detect focal amplifications and deletions across 39 chromosome arms. We profiled sub-chromosomal changes across 13 chromosome arms commonly altered in MPNST (Figure 2), including 4q (PDGFRA), 5p (TERT), 6q (TBX1), 7p (EGFR), 7q (BRAF), 8q (EXT1), 9p (CDKN2A and CDKN2B), 10q (PTEN), 11p (EXT2), 11q (EED), 15q (IDH2), 17p (TP53), and 17q (NF1 and SUZ12) (Supplementary file 4). In benign/plexiform NF, only one patient had a focal deletion across all loci assayed. Interestingly, this patient (INDIA 1283) had a deletion in TERT and was the same patient that had a GAS score of 0.997 that later progressed to MPNST. Among the 12 patients with MPNST, 17% (2/12) had losses in TERT, 8% (1/12) had a loss at TP53, and 50% (6/12) had losses on 17q at SUZ12 (Figure 2\u2014figure supplement 1). These data suggest that focal changes may be useful biomarkers of progression to MPNST.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74238/elife-74238-fig2-v2.jpg)\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74238/elife-74238-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each dot represents a sub-chromosomal locus covered by RealSeqS.\n\n### ctDNA mutation analysis\n\nEnough banked plasma was available from six patients, two with benign neurofibromas and four with MPNST, to assay ctDNA for mutations using ddPCR (Supplementary files 1 and 5). Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.\n\n## Discussion\n\nOne of the major clinical challenges in caring for individuals with NF1 is to be able to identify an incipient MPNST. Currently, only anatomic and PET imaging has been shown to be effective (Ferner and Gutmann, 2002; Akshintala et al., 2020; Canavese and Krajbich, 2011). Use of PET imaging to track recurrence additionally requires that the primary benign neurofibroma is PET positive before treatment and necessitates the use of radionuclides (Ferner and Gutmann, 2002; Reilly et al., 2017). Thus, alternative methods to monitor disease progression to MPNST, like liquid biopsy, are greatly needed.\n\nTo our knowledge, this is the first published study to differentiate MPNST from pre-malignant neurofibromas using PCR amplicon-based aneuploidy and mutation analysis of ctDNA. During final preparation of our manuscript, Szymanski et al., 2021 published results using different but orthogonal approaches to ours \u2014 fragment size analysis and ultra-low-pass whole genome sequencing \u2014 that demonstrated promise for differentiating MPNST from benign precursor lesions. While our study suggests that genome wide aneuploidy scoring alone may not have high sensitivity for detecting the progression from PN to MPNST, the combination of GAS and detection of sub-chromosomal changes in genes such as TERT, TP53, and SUZ12 or mutations in ctDNA may lead to a sensitivity of ~50% at a high specificity of 97%. Our sensitivity is likely impacted by low genome wide sequencing coverage, which may be improved by a focused panel that covers the most common CNAs in MPNST (Zhang et al., 2014; Brohl et al., 2017).\n\nMalignant transformation of a plexiform neurofibroma to MPSNT can occur over years, and given the mean follow up is 17 months, we cannot definitively identify all cases that may have progressed. In our study, the one patient with PN who had an overwhelmingly positive GAS score of 0.997 and a focal deletion of SUZ12 at the time of initial blood draw was diagnosed with an MPNST 25 months later.\n\nMain limitations of our study include the relatively small number of patients, the lack of ctDNA data for all patients, and lack of follow up blood draws at fixed intervals. A key strength of our study is the relatively low sequencing coverage needed to detect both genome wide and sub-chromosomal CNAs. The ability to multiplex samples lends high throughput, as each sample only requires ~10 M reads to identify relevant CNAs. This is important for real world implementation as most aneuploidy studies typically utilize 6\u201310 x the amount of sequencing, greatly increasing the cost and limiting feasibility. While our data allow us to make some inferences about CNAs and disease progression from PN to MPNST, it will be important for future prospective studies to collect additional blood samples over a longer period to determine whether GAS, focal CNAs, or ctDNA positivity predicts progression and overall survival.\n\n## Materials and methods\n\n### Patients\n\nAll individuals participating in the study provided written informed consent after approval by the institutional review board at The Johns Hopkins IRB00075499. The study complied with the Health Insurance Portability and Accountability Act and the Deceleration of Helsinki.\n\n### Library construction and whole exome sequencing buffer and PCR conditions\n\nTumor and matched lymphocytic normal DNA library preparation was performed as previously described (Bettegowda et al., 2013). Genomic DNA from tumor and normal samples were fragmented and used for Illumina TruSeq library construction (Illumina, San Diego, CA) according to the manufacturer\u2019s instructions. DNA was purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0\u20130.9 of PCR product to beads. Purified, fragmented DNA was mixed with 36 \u00b5l of H2O, 10 \u00b5l of End Repair Reaction Buffer, 5 \u00b5l of End Repair Enzyme Mix (cat# E6050, NEB, Ipswich, MA). The 100 \u00b5l end-repair mixture was incubated at 20\u00b0C for 30 min, and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0\u20131.25 of PCR product to beads. 42 \u00b5l of end-repaired DNA was mixed with 5 \u00b5l of 10 X dA Tailing Reaction Buffer and 3 \u00b5l of Klenow (exo-)(cat# E6053, NEB, Ipswich, MA). The 50 \u00b5l mixture was incubated at 37\u00b0C for 30 min and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0\u20131.0 of PCR product to beads. 25 \u00b5l of A-tailed DNA was mixed with 6.7 \u00b5l of H2O, 3.3 \u00b5l of PE-adaptor (Illumina), 10 \u00b5l of 5 X Ligation buffer and 5 \u00b5l of Quick T4 DNA ligase (cat# E6056, NEB, Ipswich, MA). The ligation mixture was incubated at 20\u00b0C for 15 min and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0\u20130.95 and 1.0 of PCR product to beads.\n\nTo obtain an amplified library, twelve PCRs of 25 \u00b5l each were set up, each including 15.5 \u00b5l of H2O, 5 \u00b5l of 5 x Phusion HF buffer, 0.5 \u00b5l of a dNTP mix containing 10 mM of each dNTP, 1.25 \u00b5l of DMSO, 0.25 \u00b5l of Illumina PE primer #1, 0.25 \u00b5l of Illumina PE primer #2, 0.25 \u00b5l of Hotstart Phusion polymerase, and 2 \u00b5l of the DNA. The PCR program used was: 98\u00b0C for 2 min; 12 cycles of 98\u00b0C for 15 s, 65\u00b0C for 30 s, 72\u00b0C for 30 s; and 72\u00b0C for 5 min. DNA was purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0\u20131.0 of PCR product to beads. Exonic regions were captured in solution using the Agilent SureSelect v.4 kit (Agilent, Santa Clara, CA). The captured library was then purified with a Qiagen MinElute column purification kit and eluted in 17 \u00b5l of 70\u00b0C EB to obtain 15 \u00b5l of captured DNA library. To amplify the captured DNA library, eight 30 \u00b5L PCR reactions containing 19 \u00b5l of H2O, 6 \u00b5l of 5 x Phusion HF buffer, 0.6 \u00b5l of 10 mM dNTP, 1.5 \u00b5l of DMSO, 0.30 \u00b5l of Illumina PE primer #1, 0.30 \u00b5l of Illumina PE primer #2, 0.30 \u00b5l of Hotstart Phusion polymerase, and 2 \u00b5l of captured exome library were set up. The PCR program used was: 98\u00b0C for 30 s; 14 cycles of 98\u00b0C for 10 s, 65\u00b0C for 30 s, 72\u00b0C for 30 s; and 72\u00b0C for 5 min. To purify PCR products, a NucleoSpin Extract II purification kit (Macherey-Nagel, PA) was used. Paired-end sequencing resulting in 100 bases from each end of the fragments was performed using Illumina HiSeq 2,500 (Illumina, San Diego, CA).\n\nPlasma preparation: Peripheral blood was collected in K2-EDTA tubes after informed consent was obtained, and plasma was isolated as previously described (Diehl et al., 2008). cfDNA from each of the plasma samples was purified using a BioChain cfDNA Extraction Kit (BioChain, cat #K5011610) using the manufacturer\u2019s recommended protocol.\n\n### Processing of next generation sequencing data\n\nSomatic mutations were identified using VariantDx custom software for identifying mutations in matched tumor and normal samples from whole exome sequencing (WES). Prior to mutation calling, primary processing of sequence data for both tumor and normal samples were performed using Illumina CASAVA software (v1.8), including masking of adapter sequences. Sequence reads were aligned against the human reference genome (version hg19) using ELAND software. Candidate somatic mutations, consisting of point mutations, insertions, and deletions were then identified using VariantDx. In brief, an alignment filter was applied to exclude quality failed reads, unpaired reads, and poorly mapped reads in the tumor. A base quality filter was applied to limit inclusion of bases with reported phred quality score >30 for the tumor and >20 for the normal. A mutation in the tumor was identified as a candidate somatic mutation only when (i) distinct paired reads contained the mutation in the tumor; (ii) the number of distinct paired reads containing a particular mutation in the tumor was at least 10% of the total distinct read pairs; (iii) the mismatched base was not present in >1% of the reads in the matched normal sample as well as not present in a custom database of common germline variants derived from dbSNP; and (iv) the position was covered in both the tumor and normal. Mutations arising from misplaced genome alignments, including paralogous sequences, were identified and excluded by searching the reference genome.\n\nCandidate somatic mutations were further filtered based on gene annotation to identify those occurring in protein coding regions. Functional consequences were predicted using snpEff and a custom database of CCDS, RefSeq and Ensembl annotations using the latest transcript versions available on hg19 from UCSC (https://genome.ucsc.edu/). Predictions were ordered to prefer transcripts with canonical start and stop codons and CCDS or Refseq transcripts over Ensembl when available. Finally, mutations were filtered to exclude intronic and silent changes, while retaining mutations resulting in missense mutations, nonsense mutations, frameshifts, or splice site alterations. A manual visual inspection step was used to further remove artifactual changes.\n\n### ddPCR\n\nCell-free DNA was extracted using the QIAGEN circulating nucleic acid kit (Catalog# 55114). Extracted cell-free DNA was analyzed with custom designed droplet digital PrimePCR assays using the BioRad QX200 droplet digital PCR system to determine the number of wild-type and mutant genomic equivalents following the manufacturer\u2019s recommendations. A mutation was selected for each tumor based on the results of the WES results. ddPCR was then performed in triplicate on DNA derived from the plasma and ctDNA levels were quantified. These data were used to calculate the overall MAF for each somatic mutation, defined as the number of mutant counts divided by the total number of counts for a given amplicon.\n\n### RealSeqS\n\nRealSeqS uses a single primer pair to amplify about 750,000 loci scattered throughout the genome (Douville et al., 2020). After massively parallel sequencing, gains or losses of each of the 39 chromosome arms covered by the assay were determined using a bespoke statistical learning method (Douville et al., 2018). A support vector machine (SVM) was used to discriminate between aneuploid and euploid samples. The SVM was trained using 2,651 aneuploid samples and 1,348 euploid plasma samples. Samples were scored as positive when the genome wide aneuploidy score was >0.28. Code is available at https://zenodo.org/record/3656943#.YaZZCdDMKUk.32 (Douville, 2020).\n\n### Statistical analysis methods\n\nComparison of GAS at 97% specificity was conducted with a one-way ANOVA with post-hoc Tukey\u2019s correction. Clinicopathological data were compared using a (add symbol) test or linear regression with Spearman\u2019s correlation. A p \u2264 0.05 was considered significant.\n",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "cfef20b7-7092-4c97-8e17-808108d24519",
+      "submission_id": "4754c30c-f49b-4e51-a01e-2f2098a49ae5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wafik S El-Deiry, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74238.sa0](https://doi.org/10.7554/eLife.74238.sa0)\n\nThe manuscript explores the use of liquid biopsy to detect MPNST, which is a rare malignant peripheral nerve sheath tumor. The current manuscript presents clinical relevant data of interest to the field and should be published without further delay.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Wafik S El-Deiry, https://ror.org/05gq02987 Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74238.sa1](https://doi.org/10.7554/eLife.74238.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \u201cDetection of malignant peripheral nerve sheath tumors in patients with neurofibromatosis type I using aneuploidy and mutation identification in plasma\u201d for consideration by eLife. Your article has been reviewed by Wafik El-Deiry and two external experts.\n\nThe authors worked to develop a test to detect a deadly rare tumor, malignant peripheral nerve sheath tumor (MPNST), that can arise from plexiform neurofibromas that occur in 30-50% of patients with neurofibromatosis. The transformation requires more that biallelic NF1 loss and involves other gene mutations or copy number alterations in various genes including TP53, CDKN2A, EGFR, SUZ12 and TERT, among others, which are usually not in the plexiform neurofibromas. The authors wanted to improve upon clinical features, FDG-PET and MRI in detecting MPNST. They developed a liquid biopsy ctDNA test and evaluated it in 883 healthy individuals and 28 patients with neurofibromas including 12 patients with MPNST. Use of genome-wide aneuploidy scoring detected about one third of MPNST and sensitivity was improved to 50% by adding copy number alterations, in addition to mutated genes typically found in MPNST. The work addresses a clinical challenge and the progress made by the authors is clinically relevant in going beyond the limitations of currently available methods. A limitation of the current study is the number of patients with neurofibromas and MPNST who were tested and the retrospective analysis.\n\nPlease note: You have neglected to cite a recent publication that is quite similar. Here is a link to the other publication: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003734\n\nYou can note from the abstracts that the sample sizes, methods, and results are quite similar in both cases. The NF and MPNST community is a rather small group, and the published data was presented as a plenary at the NF Conference in June.\n",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b4743b52-468e-4a4b-8099-096a5651b19b",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C1",
+      "claim": "Malignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with neurofibromatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with neurofibromatosis and account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract and introduction without specific citation, drawing on general medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "54cfad77-ca3e-493f-8e2c-e7cf5d37e99a",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C3",
+      "claim": "MPNST are comprised of neoplastic Schwann cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the cellular composition of MPNST.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "2db6508b-6956-4e02-b890-6263c8190a44",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C4",
+      "claim": "Primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes (De Raedt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to De Raedt et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "0b4ba043-c1f3-46c0-8bcc-8a956baba91b",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C5",
+      "claim": "PN develop in nearly 30\u201350% of patients with neurofibromatosis type 1 (NF1).",
+      "claim_type": "EXPLICIT",
+      "source": "PN develop in nearly 30\u201350% of patients with neurofibromatosis type 1 (NF1) and most often grow rapidly in the first decade of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established epidemiological fact about NF1 patients.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "ddaf1198-c9cb-40f6-871c-b904a0c061a9",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C6",
+      "claim": "PN most often grow rapidly in the first decade of life.",
+      "claim_type": "EXPLICIT",
+      "source": "PN develop in nearly 30\u201350% of patients with neurofibromatosis type 1 (NF1) and most often grow rapidly in the first decade of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established clinical observation about PN growth patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "4bfe6ae8-cdbe-4813-870e-8608e8cb6118",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C7",
+      "claim": "Malignant transformation from PN to MPNST occurs in 10\u201315% of NF1 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most important aspects of clinical care for NF1 patients is monitoring PN for signs of malignant transformation to MPNST that occurs in 10\u201315% of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established epidemiological fact about malignant transformation rates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "664f951f-6a58-4d3e-b2bc-e120611e31b0",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C8",
+      "claim": "Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%, and analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity to 50% while retaining a high specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experimental data on aneuploidy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "885d84b7-9166-44bc-91f0-57a5840066f3",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C9",
+      "claim": "Analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity for detecting MPNST to 50% while retaining a high specificity of 97%.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%, and analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity to 50% while retaining a high specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's experimental data combining aneuploidy and CNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "e3f0f0cc-f417-48c2-8fa3-f813ca56bb5f",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C10",
+      "claim": "Mutation analysis on plasma cfDNA identified mutations in NF1, NF2, RB1, TP53BP2, and GOLGA2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we performed mutation analysis on plasma cfDNA for a subset of patients and identified mutations in NF1, NF2, RB1, TP53BP2, and GOLGA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's mutation analysis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "230ae457-a75c-46bc-8e9b-3d63918777e8",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C11",
+      "claim": "Neurofibromatosis type 1 (NF1) is caused by inherited or de novo mutations in the NF1 gene that codes for the cytoplasmic protein neurofibromin.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurofibromatosis type 1 (NF1) is caused by inherited or de novo mutations in the NF1 gene that codes for the cytoplasmic protein neurofibromin (DeClue et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DeClue et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "02905aeb-c186-49e9-8493-3a68d35d9897",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C12",
+      "claim": "Neurofibromin is a GTPase-activating protein (GAP) for the RAS family of proto-oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurofibromin is a GTPase-activating protein (GAP) for the RAS family of proto-oncogenes, and mutations in NF1 lead to persistent RAS signaling and uncontrolled cellular growth through downstream RAF, MEK, and ERK signaling (DeClue et al., 1992; Carroll, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DeClue et al., 1992 and Carroll, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "deb6738b-2d32-448c-97cb-4ecfdc1cb136",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C13",
+      "claim": "Mutations in NF1 lead to persistent RAS signaling and uncontrolled cellular growth through downstream RAF, MEK, and ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurofibromin is a GTPase-activating protein (GAP) for the RAS family of proto-oncogenes, and mutations in NF1 lead to persistent RAS signaling and uncontrolled cellular growth through downstream RAF, MEK, and ERK signaling (DeClue et al., 1992; Carroll, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to DeClue et al., 1992 and Carroll, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "64b5ba48-9845-4991-9a14-fd1fcfded62f",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C14",
+      "claim": "Activated RAS resulting from the loss of GTPase activity of NF1 leads to downstream activation of the PI3K/AKT/mTOR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Activated RAS resulting from the loss of GTPase activity of NF1 also leads to downstream activation of the PI3K/AKT/mTOR pathway, further contributing to increased proliferation (Carroll, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Carroll, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "7ca3b21b-10bf-4543-b705-9af69b576e57",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C15",
+      "claim": "Bi-allelic loss of NF1 is not sufficient for malignant transformation of PN to MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Bi-allelic loss of NF1 is not sufficient for malignant transformation of PN to MPNST (Zheng et al., 2008; Yang et al., 2008; Zhu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zheng et al., 2008; Yang et al., 2008; Zhu et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "460f446f-d41c-409e-b9e7-00d6203839e0",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C16",
+      "claim": "Additional mutations or copy number alterations of genes such as TP53, SUZ12, EGFR, CDKN2A, and TERT that are often not present in benign PN suggest that these alterations represent advanced progression to atypical neurofibroma (AN) and MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional mutations or copy number alterations of genes such as TP53, SUZ12, EGFR, CDKN2A, and TERT that are often not present in benign PN suggest that these alterations represent advanced progression to atypical neurofibroma (AN) and MPNST (Cichowski et al., 1999; De Raedt et al., 2014; Legius et al., 1994; Perry et al., 2002; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cichowski et al., 1999; De Raedt et al., 2014; Legius et al., 1994; Perry et al., 2002; Zhang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "c2296600-7eb4-47c6-9594-279ade1721bb",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C17",
+      "claim": "Nearly 50% of patients with PN develop well-demarcated nodular areas within the PN that are larger than 3 cm in size, lack the central dot sign characteristic of PN, and typically show more rapid growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from National Cancer Institute (NCI) NF1 Natural History Study suggest that nearly 50% of patients with PN develop well-demarcated nodular areas within the PN that are larger than 3 cm in size, lack the central dot sign characteristic of PN, and typically show more rapid growth (Mautner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mautner et al., 2008 from the NCI NF1 Natural History Study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "79ae13b0-b2ec-45af-91cc-0033dd21a6dd",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C18",
+      "claim": "Distinct nodular lesions (DNL) correlate with pain.",
+      "claim_type": "EXPLICIT",
+      "source": "These distinct nodular lesions (DNL) correlate with pain, and biopsy/resection of DNL leads to a confirmed diagnosis of AN in 70% of cases (Higham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Higham et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "f72c8263-fa61-43e0-b544-c76171024344",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C19",
+      "claim": "Biopsy/resection of DNL leads to a confirmed diagnosis of AN in 70% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "These distinct nodular lesions (DNL) correlate with pain, and biopsy/resection of DNL leads to a confirmed diagnosis of AN in 70% of cases (Higham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Higham et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "4667eaf5-e235-4732-b5f5-175dda8adc6d",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C20",
+      "claim": "All confirmed AN cases in the NCI study were DNL by MRI and were associated with a modest FDG uptake of [SUV] = 2.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all confirmed AN cases in the study, all were DNL by MRI and were associated with a modest FDG update of [SUV] = 2.7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the NCI study referenced in the previous sentence (Higham et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "987a429a-b01a-4518-a80d-7fb6a5e65e09",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C21",
+      "claim": "MRI is unable to reliably differentiate between benign and malignant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these preliminary results, MRI is unable to reliably differentiate between benign and malignant tumors (Derlin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Derlin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "945353d0-2b53-4815-851d-cd809e2d4766",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C22",
+      "claim": "FDG-PET has sensitivities of nearly 90% in symptomatic patients when using an SUV cutoff of 3.5 and a non-standard clinical protocol of delayed imaging at 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies have suggested FDG-PET has sensitivities of nearly 90% in symptomatic patients, but only when using an SUV cutoff of 3.5 and a non-standard clinical protocol of delayed imaging at 4 hr (Ferner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ferner et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "d2c3dccc-d503-4208-904a-45858745bb19",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C23",
+      "claim": "FDG-PET may have similar sensitivities for monitoring asymptomatic patients for malignant transformation, but only at 49.5% specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using similar criteria, FDG-PET may have similar sensitivities for monitoring asymptomatic patients for malignant transformation, but only at 49.5% specificity (Azizi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Azizi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "94b46534-a432-4708-92bb-a56dfc8fa605",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C24",
+      "claim": "There are no standardized pathognomonic genetic alterations or immunohistochemical stains to differentiate MPNST from other sarcomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathologically, there are no standardized pathognomonic genetic alterations or immunohistochemical stains to differentiate MPNST from other sarcomas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established limitation in pathological diagnosis of MPNST.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "43dd76e0-5d71-4eee-a973-bf8bd4e2f917",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C25",
+      "claim": "Negative staining for cytokeratins and melanoma markers like Melan-A, MITF, and HMB45 can be useful in distinguishing MPNST from carcinoma and melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "While gross specimens that clearly arise from nerves lend credence to a diagnosis of MPNST, negative staining for cytokeratins and melanoma markers like Melan-A, MITF, and HMB45 can be useful in distinguishing MPNST from carcinoma and melanoma (Reinert et al., 2019; Pekmezci et al., 2015; Fletcher, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reinert et al., 2019; Pekmezci et al., 2015; Fletcher, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "5dea726d-0e91-4d9a-8df7-c839f735508d",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C26",
+      "claim": "S100 expression is decreased or completely lost in MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "S100 expression is also decreased or completely lost in MPNST (Pekmezci et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pekmezci et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "dd3f5a2d-875f-4470-ac32-d029d3858a7f",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C27",
+      "claim": "Genomic loss of NF1 and CDKN2A are thought to be lost early in disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic loss of NF1 and CDKN2A are thought to be lost early in disease progression but testing for these mutations is also not clinically standardized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current understanding in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "1bb34797-2f27-4665-b1fb-e0e01b75284e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C28",
+      "claim": "Testing for NF1 and CDKN2A mutations is not clinically standardized.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic loss of NF1 and CDKN2A are thought to be lost early in disease progression but testing for these mutations is also not clinically standardized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a current limitation in clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "cdd00a08-16e1-4a0b-8bd0-19c0727ff3f2",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C29",
+      "claim": "Mutations in polycomb repressive complex 2 (PRC2) subunits such as SUZ12 and EED are found in nearly 70% of MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in polycomb repressive complex 2 (PRC2) subunits such as SUZ12 and EED are found in nearly 70% of MPNST (De Raedt et al., 2014; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Raedt et al., 2014; Zhang et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "0e2ac682-79c7-473a-b5f8-5d5f61726970",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C30",
+      "claim": "Mutations in \u03b2-III-spectrin have been found in up to 90% of MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in \u03b2-III-spectrin have also been found in up to 90% of MPNST (Hirbe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hirbe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "b346e3e3-8bf0-4c3f-97ef-9ac284cf86c9",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C31",
+      "claim": "Ras pathway activating mutations in genes such as PIK3CA, KIT, PDGFRA, PTPN11, FGFR1, and RASSF9, and cell-cycle gene mutations in genes such as RB1 and CHEK2 have been described in MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional Ras pathway activating mutations in genes such as PIK3CA, KIT, PDGFRA, PTPN11, FGFR1, and RASSF9, and cell-cycle gene mutations in genes such as RB1 and CHEK2 have also been described (Brohl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brohl et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "1aed3bef-0672-476f-89ef-f20998c9e52f",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C32",
+      "claim": "Liquid biopsies have the advantage over traditional biopsies of capturing tumor heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid biopsies also have the advantage over traditional biopsies of capturing tumor heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established advantage of liquid biopsy technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "78baebf8-f46c-4163-bd96-7ce3e4974295",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C33",
+      "claim": "Within a single tumor, there may be areas of PN, AN, low grade MPNST, and high grade MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "This is important because within a single tumor, there may be areas of PN, AN, low grade MPNST, and high grade MPNST, and traditional single-site biopsy may not capture the most malignant site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established characteristic of tumor heterogeneity in neurofibromas.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "2e5b7e69-3c46-447e-b21a-574bd79d2081",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C34",
+      "claim": "Traditional single-site biopsy may not capture the most malignant site in heterogeneous tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This is important because within a single tumor, there may be areas of PN, AN, low grade MPNST, and high grade MPNST, and traditional single-site biopsy may not capture the most malignant site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the heterogeneity of tumors and the limitations of single-site sampling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "3b85452d-0817-4798-87d1-19e5250dab29",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C35",
+      "claim": "The study analyzed 883 samples from ostensibly healthy individuals using a revised RealSeqS algorithm with a median of 10,223,275 UIDs per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the rate of genome wide copy number alterations (CNAs) detected in plasma cfDNA of healthy persons, we analyzed 883 samples from a previously published study (Douville et al., 2020) using a revised RealSeqS algorithm and a median of 10,223,275 UIDs per sample (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology and sample size used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "d73759d1-1d93-4a61-a6e5-86bfab5e39ef",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C36",
+      "claim": "The patient cohort included 28 patients with NF, including 7 patients with neurofibromas, 9 patients with PN, and 12 patients with MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Our patient cohort included 28 patients with NF, including 7 patients with neurofibromas, 9 patients with PN, and 12 patients with MPNST, analyzed in the same manner as healthy controls with a median of 11,240,762 UIDs per sample (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the patient cohort composition in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "5c3bcff2-6d55-4591-af51-fba5c4bf14b2",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C37",
+      "claim": "Patient samples were analyzed with a median of 11,240,762 UIDs per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Our patient cohort included 28 patients with NF, including 7 patients with neurofibromas, 9 patients with PN, and 12 patients with MPNST, analyzed in the same manner as healthy controls with a median of 11,240,762 UIDs per sample (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing depth used for patient samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "a08ed492-1fd1-4e2d-9593-f0c2f00423cf",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C38",
+      "claim": "All samples had matched leukocyte analysis to exclude germline CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "All samples had matched leukocyte analysis to exclude germline CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological control used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "fa53e1cc-8708-47ed-9c69-6902ab353ac2",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C39",
+      "claim": "For patients with biopsy-confirmed MPNST, 58% (7/12) had positive PET scans.",
+      "claim_type": "EXPLICIT",
+      "source": "For patients with biopsy-confirmed MPNST, 58% (7/12) had positive PET scans, 17% (2/12) had prior chemotherapy, 17% (2/12) had prior chemotherapy and radiation, 8% (1/12) had prior radiation only, 17% (2/12) had prior surgery only, and 8% (1/12) had prior surgery, chemotherapy, and radiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical characteristics of the MPNST patient cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "e60e58de-d031-4387-8788-180adccdc70e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C40",
+      "claim": "Median length of follow up was 523 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Median length of follow up was 523 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the follow-up duration for the patient cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "c7c9bab5-b29c-4b1a-9ea8-95a51cd1866c",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C41",
+      "claim": "Ninety-six percent (27/28) of patients enrolled onto the study met the criteria for NF1 diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety-six percent (27/28) of patients enrolled onto our study met the criteria for NF1 diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the diagnostic characteristics of the patient cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "e1749ca8-a0c4-429b-b315-a478ba8056dd",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C42",
+      "claim": "The median GAS score in healthy controls was 0.008 \u00b1 0.102.",
+      "claim_type": "EXPLICIT",
+      "source": "The median GAS score in healthy controls was 0.008 \u00b1 0.102, and 0.005 \u00b1 0.249 and 0.018 \u00b1 0.652 in benign/plexiform neurofibromas and MPNST, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the aneuploidy analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "b9be84de-8592-4a8c-a665-4098b398a775",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C43",
+      "claim": "The median GAS score in benign/plexiform neurofibromas was 0.005 \u00b1 0.249.",
+      "claim_type": "EXPLICIT",
+      "source": "The median GAS score in healthy controls was 0.008 \u00b1 0.102, and 0.005 \u00b1 0.249 and 0.018 \u00b1 0.652 in benign/plexiform neurofibromas and MPNST, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the aneuploidy analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "5f46ad1a-c1d6-4786-a239-fc97bc73f9da",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C44",
+      "claim": "The median GAS score in MPNST was 0.018 \u00b1 0.652.",
+      "claim_type": "EXPLICIT",
+      "source": "The median GAS score in healthy controls was 0.008 \u00b1 0.102, and 0.005 \u00b1 0.249 and 0.018 \u00b1 0.652 in benign/plexiform neurofibromas and MPNST, respectively (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the aneuploidy analysis, also shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "9e2f0940-e819-4b09-a51e-4d75b6e5541b",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C45",
+      "claim": "At 97% specificity in healthy controls, the false positive rate among benign/plexiform neurofibromas was 6.3% (1/16, p = 0.42 compared to healthy controls).",
+      "claim_type": "EXPLICIT",
+      "source": "At 97% specificity in healthy controls, at the time of blood draw, the false positive rate among benign/plexiform neurofibromas was 6.3% (1/16, p = 0.42 compared to healthy controls), while the sensitivity for detecting MPNST was 33% (4/12, p < 0.001 compared to healthy controls).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the aneuploidy analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "fcc6f324-60b3-45c6-be58-218d9df110d4",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C46",
+      "claim": "At 97% specificity in healthy controls, the sensitivity for detecting MPNST was 33% (4/12, p < 0.001 compared to healthy controls).",
+      "claim_type": "EXPLICIT",
+      "source": "At 97% specificity in healthy controls, at the time of blood draw, the false positive rate among benign/plexiform neurofibromas was 6.3% (1/16, p = 0.42 compared to healthy controls), while the sensitivity for detecting MPNST was 33% (4/12, p < 0.001 compared to healthy controls).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the aneuploidy analysis with statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "1dc1d644-6010-4a8d-aa56-6c8592db50b0",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C47",
+      "claim": "GAS score did not correlate with tumor volume (R2 = 0.09).",
+      "claim_type": "EXPLICIT",
+      "source": "GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis of GAS scores with clinical variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "fd843834-1d7d-43f7-8229-fe2080010171",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C48",
+      "claim": "GAS score did not correlate with history of prior adjuvant therapy (p = 0.64).",
+      "claim_type": "EXPLICIT",
+      "source": "GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis of GAS scores with clinical variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "28bb76e8-69ba-4efe-8f3f-f992d353c537",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C49",
+      "claim": "GAS score did not correlate with PET positivity (p = 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis of GAS scores with clinical variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "a912e917-4306-4eef-978b-a6b4db930f90",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C50",
+      "claim": "Patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).",
+      "claim_type": "EXPLICIT",
+      "source": "GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from correlation analysis of GAS scores with survival status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "8b0f90d2-b038-44be-8e8f-862255f34ef5",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C51",
+      "claim": "Patient INDIA 1283 with plexiform neurofibroma had a GAS score of 0.997 at the time of blood draw.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the one patient with the plexiform neurofibroma deemed to be a false positive at the time of blood draw (INDIA 1283, Supplementary file 3) had a GAS score of 0.997.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific case finding from the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "c834ae52-3674-412f-a88b-22fc7d43e2e0",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C52",
+      "claim": "Patient INDIA 1283 had diffuse and atypical changes in the PN confirmed by biopsy at the time of blood draw.",
+      "claim_type": "EXPLICIT",
+      "source": "Biopsy at the time of blood draw confirmed diffuse and atypical changes in the PN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific case finding from pathology results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "41d81383-bbb4-4c7b-8454-ac62f342a40c",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C53",
+      "claim": "Patient INDIA 1283 progressed to MPNST 25 months after blood draw.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon later review, this patient progressed to MPNST 25 months after blood draw, suggesting that aneuploidy analysis significantly pre-dated clinical progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific case finding from follow-up clinical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "c03f8650-c044-4b17-8904-e21ae45330bf",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C54",
+      "claim": "Aneuploidy analysis significantly pre-dated clinical progression to MPNST in patient INDIA 1283.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon later review, this patient progressed to MPNST 25 months after blood draw, suggesting that aneuploidy analysis significantly pre-dated clinical progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the case finding, suggesting predictive value of the assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "4fa3bbf6-18fc-42b8-a850-81abc831316e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C55",
+      "claim": "In benign/plexiform NF, only one patient had a focal deletion across all loci assayed.",
+      "claim_type": "EXPLICIT",
+      "source": "In benign/plexiform NF, only one patient had a focal deletion across all loci assayed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the focal CNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "8df70e97-efb7-4a8f-88cb-e10733d3e2e5",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C56",
+      "claim": "Patient INDIA 1283 had a deletion in TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this patient (INDIA 1283) had a deletion in TERT and was the same patient that had a GAS score of 0.997 that later progressed to MPNST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the focal CNA analysis for this patient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "e3376829-5524-4577-a087-e022106db630",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C57",
+      "claim": "Among the 12 patients with MPNST, 17% (2/12) had losses in TERT.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 patients with MPNST, 17% (2/12) had losses in TERT, 8% (1/12) had a loss at TP53, and 50% (6/12) had losses on 17q at SUZ12 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the focal CNA analysis, also shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "497884cb-020d-444b-806f-14c2363c855d",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C58",
+      "claim": "Among the 12 patients with MPNST, 8% (1/12) had a loss at TP53.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 patients with MPNST, 17% (2/12) had losses in TERT, 8% (1/12) had a loss at TP53, and 50% (6/12) had losses on 17q at SUZ12 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the focal CNA analysis, also shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "6b839e3a-30ff-4cdd-9ae5-16ba7f78d8ed",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C59",
+      "claim": "Among the 12 patients with MPNST, 50% (6/12) had losses on 17q at SUZ12.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 patients with MPNST, 17% (2/12) had losses in TERT, 8% (1/12) had a loss at TP53, and 50% (6/12) had losses on 17q at SUZ12 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the focal CNA analysis, also shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "2bd0a1e4-5c18-4f61-953e-9f3095b71f10",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C60",
+      "claim": "Focal changes may be useful biomarkers of progression to MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that focal changes may be useful biomarkers of progression to MPNST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the focal CNA findings, suggesting potential clinical utility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "b310007a-a35c-4793-a7e4-38f7ee17b59c",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C61",
+      "claim": "Enough banked plasma was available from six patients to assay ctDNA for mutations using ddPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Enough banked plasma was available from six patients, two with benign neurofibromas and four with MPNST, to assay ctDNA for mutations using ddPCR (Supplementary files 1 and 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample availability for mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "45d1373a-a34e-4ae8-a03f-03c2420bb2f8",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C62",
+      "claim": "Three patients had positive ctDNA results.",
+      "claim_type": "EXPLICIT",
+      "source": "Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the ctDNA mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "02703636-cca9-4d8f-a8a9-60d90cee07ef",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C63",
+      "claim": "Patient INDIA 1280 with a benign neurofibroma of the right femoral nerve had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%.",
+      "claim_type": "EXPLICIT",
+      "source": "Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the ctDNA mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "a508a700-c70c-45e7-bf06-e3986956594e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C64",
+      "claim": "MPNST patient INDIA 1244 had a RB1 R787Qfs*23 mutation at 2.55% MAF.",
+      "claim_type": "EXPLICIT",
+      "source": "Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the ctDNA mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "d97f1825-30a1-424e-90b9-f111f5144e52",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C65",
+      "claim": "MPNST patient INDIA 1281 had a TP53BP2 A324V mutation at 0.04% MAF.",
+      "claim_type": "EXPLICIT",
+      "source": "Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the ctDNA mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "3f934332-2655-4d55-a82b-742899da204d",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C66",
+      "claim": "This is the first published study to differentiate MPNST from pre-malignant neurofibromas using PCR amplicon-based aneuploidy and mutation analysis of ctDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first published study to differentiate MPNST from pre-malignant neurofibromas using PCR amplicon-based aneuploidy and mutation analysis of ctDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "2bf3a9cc-b218-41a2-90a5-d504baa3b317",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C67",
+      "claim": "Szymanski et al., 2021 published results using fragment size analysis and ultra-low-pass whole genome sequencing that demonstrated promise for differentiating MPNST from benign precursor lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "During final preparation of our manuscript, Szymanski et al., 2021 published results using different but orthogonal approaches to ours \u2014 fragment size analysis and ultra-low-pass whole genome sequencing \u2014 that demonstrated promise for differentiating MPNST from benign precursor lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a concurrent publication with related findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "2b824112-11ee-4335-819b-8a082e93bf1e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C68",
+      "claim": "The combination of GAS and detection of sub-chromosomal changes in genes such as TERT, TP53, and SUZ12 or mutations in ctDNA may lead to a sensitivity of ~50% at a high specificity of 97%.",
+      "claim_type": "EXPLICIT",
+      "source": "While our study suggests that genome wide aneuploidy scoring alone may not have high sensitivity for detecting the progression from PN to MPNST, the combination of GAS and detection of sub-chromosomal changes in genes such as TERT, TP53, and SUZ12 or mutations in ctDNA may lead to a sensitivity of ~50% at a high specificity of 97%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and summary of the combined findings from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "7da93809-9af2-41bf-aa62-664bdd38f064",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C69",
+      "claim": "Sensitivity may be improved by a focused panel that covers the most common CNAs in MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sensitivity is likely impacted by low genome wide sequencing coverage, which may be improved by a focused panel that covers the most common CNAs in MPNST (Zhang et al., 2014; Brohl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how to improve the assay based on the current findings and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "c9538696-8985-4f59-af7f-6c2639e353ce",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C70",
+      "claim": "Malignant transformation of a plexiform neurofibroma to MPSNT can occur over years.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant transformation of a plexiform neurofibroma to MPSNT can occur over years, and given the mean follow up is 17 months, we cannot definitively identify all cases that may have progressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the natural history of disease progression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "dd0643fb-f100-47d6-9688-7ae47210f58e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C71",
+      "claim": "Given the mean follow up is 17 months, the study cannot definitively identify all cases that may have progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Malignant transformation of a plexiform neurofibroma to MPSNT can occur over years, and given the mean follow up is 17 months, we cannot definitively identify all cases that may have progressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a study limitation based on the follow-up duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "201878e4-9d93-4988-bef1-6a730a10c7bb",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C72",
+      "claim": "The relatively low sequencing coverage needed to detect both genome wide and sub-chromosomal CNAs is a key strength of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "A key strength of our study is the relatively low sequencing coverage needed to detect both genome wide and sub-chromosomal CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' assessment of a methodological advantage of their approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "95c7fa9b-a368-47b2-b805-f7b39fb3f3ea",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C73",
+      "claim": "The ability to multiplex samples lends high throughput, as each sample only requires ~10 M reads to identify relevant CNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to multiplex samples lends high throughput, as each sample only requires ~10 M reads to identify relevant CNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical advantages of the methodology used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "3802f984-8f50-4f4b-bd4c-ef47b05294ab",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C74",
+      "claim": "Most aneuploidy studies typically utilize 6\u201310 x the amount of sequencing compared to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "This is important for real world implementation as most aneuploidy studies typically utilize 6\u201310 x the amount of sequencing, greatly increasing the cost and limiting feasibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other studies in the field based on the authors' knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "9335694a-c043-4115-961a-3daaa5492249",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C75",
+      "claim": "RealSeqS amplifies approximately 750,000 loci across 39 chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "RealSeqS, which amplifies approximately 750,000 loci across 39 chromosome arms, was used to calculate a genome wide aneuploidy score (GAS) to call plasma samples positive or negative at 97% specificity as determined by the 883 healthy controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical specifications of the RealSeqS method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "22fc6b8c-94aa-4691-9ceb-2d8a92448eb2",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C76",
+      "claim": "RealSeqS can detect focal amplifications and deletions across 39 chromosome arms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to assessing genome wide aneuploidy, RealSeqS can detect focal amplifications and deletions across 39 chromosome arms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the capabilities of the RealSeqS method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "68a1dd15-b22a-4101-9bac-fa2194a990c4",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C77",
+      "claim": "The study profiled sub-chromosomal changes across 13 chromosome arms commonly altered in MPNST.",
+      "claim_type": "EXPLICIT",
+      "source": "We profiled sub-chromosomal changes across 13 chromosome arms commonly altered in MPNST (Figure 2), including 4q (PDGFRA), 5p (TERT), 6q (TBX1), 7p (EGFR), 7q (BRAF), 8q (EXT1), 9p (CDKN2A and CDKN2B), 10q (PTEN), 11p (EXT2), 11q (EED), 15q (IDH2), 17p (TP53), and 17q (NF1 and SUZ12) (Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the specific genomic regions analyzed in the study, also shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "f38340f3-a8fc-4980-b902-ae7705999df9",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C85",
+      "claim": "Future prospective studies should collect additional blood samples over a longer period to determine whether GAS, focal CNAs, or ctDNA positivity predicts progression and overall survival.",
+      "claim_type": "EXPLICIT",
+      "source": "While our data allow us to make some inferences about CNAs and disease progression from PN to MPNST, it will be important for future prospective studies to collect additional blood samples over a longer period to determine whether GAS, focal CNAs, or ctDNA positivity predicts progression and overall survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the current study's limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "ceed71b5-b786-4c95-ae43-91ca83b0e2a3",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C86",
+      "claim": "All individuals participating in the study provided written informed consent after approval by the institutional review board at The Johns Hopkins IRB00075499.",
+      "claim_type": "EXPLICIT",
+      "source": "All individuals participating in the study provided written informed consent after approval by the institutional review board at The Johns Hopkins IRB00075499.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval and consent process for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "abe00701-568b-4840-9eff-4e8e8c6c1654",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C87",
+      "claim": "The study complied with the Health Insurance Portability and Accountability Act and the Deceleration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "The study complied with the Health Insurance Portability and Accountability Act and the Deceleration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the regulatory compliance of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "492eb0c3-b506-4e84-ba9b-4459f96863de",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C88",
+      "claim": "RealSeqS uses a single primer pair to amplify about 750,000 loci scattered throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "RealSeqS uses a single primer pair to amplify about 750,000 loci scattered throughout the genome (Douville et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach of RealSeqS, supported by citation to Douville et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "77f3f728-98e4-4602-93fb-40e4bf5a2a0c",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C89",
+      "claim": "A support vector machine (SVM) was used to discriminate between aneuploid and euploid samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A support vector machine (SVM) was used to discriminate between aneuploid and euploid samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "e0613000-8c4c-4c68-8dd6-9c864a2b576e",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C90",
+      "claim": "The SVM was trained using 2,651 aneuploid samples and 1,348 euploid plasma samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The SVM was trained using 2,651 aneuploid samples and 1,348 euploid plasma samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training dataset for the machine learning model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "074b6323-97d2-4600-9bfc-e93357b8db6c",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "claim_id": "C91",
+      "claim": "Samples were scored as positive when the genome wide aneuploidy score was >0.28.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were scored as positive when the genome wide aneuploidy score was >0.28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the threshold used for calling samples positive.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "23a74415-770b-4ab3-a57f-0407b5a894ef",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed plasma cfDNA from 883 healthy controls and 28 NF patients (7 with neurofibromas, 9 with PN, 12 with MPNST) using RealSeqS with ~10-11 million UIDs per sample. All samples had matched leukocyte analysis to exclude germline CNAs, with median follow-up of 523 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 describe the study cohort and methodology. The sample sizes, sequencing depth, controls, and follow-up duration are clearly stated and provide adequate context for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genome-wide aneuploidy scoring (GAS) detected MPNST with 33% sensitivity and 97% specificity. Median GAS scores were 0.008\u00b10.102 in healthy controls, 0.005\u00b10.249 in benign/plexiform neurofibromas, and 0.018\u00b10.652 in MPNST, with significant difference between MPNST and controls (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42-C46 present the primary GAS analysis results with appropriate statistical testing. The sensitivity of 33% is modest but statistically significant compared to controls, and the 97% specificity is well-established by the large control cohort.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "3305b4e7-67c8-4552-8eeb-f46ca360c911",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GAS scores did not correlate with tumor volume (R\u00b2=0.09), prior adjuvant therapy (p=0.64), or PET positivity (p=0.25), but patients alive at last follow-up had lower GAS scores (p=0.045).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 report correlation analyses between GAS and clinical variables. The statistical tests are appropriate, though the association with survival (p=0.045) is marginally significant and should be interpreted cautiously given the small sample size and multiple comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "4af56a45-59fe-4f91-86d2-a0e083d20374",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Patient INDIA 1283, initially classified with plexiform neurofibroma, had a GAS score of 0.997 and atypical changes on biopsy, then progressed to MPNST 25 months later, suggesting the assay can predict malignant transformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C54 describe a single case where high GAS preceded clinical MPNST diagnosis by 25 months. While suggestive of predictive value, this is an n=1 observation and the claim of 'significantly pre-dating' progression (C54) requires validation in larger prospective cohorts with longer follow-up.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of sub-chromosomal CNAs across 13 chromosome arms improved MPNST detection sensitivity to 50% at 97% specificity. In MPNST patients, 50% (6/12) had SUZ12 losses, 17% (2/12) had TERT losses, and 8% (1/12) had TP53 losses. Only one benign/PN patient had focal deletions (TERT in patient INDIA 1283 who later progressed).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C55-C60, C77 describe focal CNA analysis results. The improved sensitivity to 50% by combining GAS with focal CNAs is supported by the data, though the small sample size (n=12 MPNST) limits precision. The high frequency of SUZ12 losses aligns with prior literature (C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mutation analysis by ddPCR on 6 patients detected ctDNA mutations in 3 patients: GOLGA2 (0.19% MAF) in one benign neurofibroma patient, and RB1 (2.55% MAF) and TP53BP2 (0.04% MAF) in two MPNST patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C61-C65 report mutation detection results. The mutations are clearly identified with specific MAFs, though the limited sample size (n=6) and lack of validation or functional significance for some mutations (particularly GOLGA2 and TP53BP2) limit interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "54cc5ae4-aab8-4115-bc60-5a885a69cd09",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Combining GAS with sub-chromosomal CNA detection (TERT, TP53, SUZ12) or ctDNA mutations may achieve ~50% sensitivity at 97% specificity for detecting MPNST.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 summarizes the combined diagnostic performance. While the individual components are supported, the exact combined sensitivity of '~50%' is not directly demonstrated through formal integration of all modalities. The claim appears to be based primarily on the focal CNA analysis (C9) rather than a true multimodal combination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "4ca2c515-05ae-47df-83d4-ca12504e95b9",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Study limitations include low genome-wide sequencing coverage and insufficient follow-up duration (mean 17 months) to definitively identify all cases that may progress to MPNST, as transformation can occur over years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C71 acknowledge important study limitations. The short follow-up relative to the natural history of malignant transformation is a significant constraint that could lead to underestimation of false positives and misclassification of early-stage MPNST as benign lesions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The RealSeqS method amplifies ~750,000 loci across 39 chromosome arms using a single primer pair, requiring only ~10M reads per sample (6-10\u00d7 less than typical aneuploidy studies). An SVM trained on 2,651 aneuploid and 1,348 euploid samples classifies samples using a GAS threshold of >0.28.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76, C88-C91 describe the RealSeqS methodology and its advantages. The technical specifications are clearly stated, and the comparison to other methods (C74) provides context for the efficiency claims. The SVM training dataset is substantial.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establish that MPNST is the deadliest NF1-associated cancer, arising from neoplastic Schwann cells with risk factors including PN (present in 30-50% of NF1 patients), prior radiotherapy, and germline NF1 mutations. Malignant transformation occurs in 10-15% of patients and requires additional alterations beyond bi-allelic NF1 loss, including mutations in TP53, SUZ12, CDKN2A, and TERT. Current diagnostic methods (MRI, FDG-PET, pathology) have significant limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C34 provide background context supported by appropriate citations. These establish the clinical need for improved MPNST detection methods and the molecular basis for the study's focus on specific genes and CNAs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "ef74ed16-c1e7-4b19-8c36-919cfae8d2dc",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This is claimed to be the first published study using PCR amplicon-based aneuploidy and mutation analysis of ctDNA to differentiate MPNST from pre-malignant neurofibromas, though a concurrent publication (Szymanski et al., 2021) used orthogonal approaches with similar goals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 address novelty. The authors appropriately acknowledge concurrent work while distinguishing their methodological approach. The claim of being 'first' is qualified by the specific technical methods used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "d67835c5-6840-4956-af39-1f56be7b267f",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Future prospective studies with longer follow-up and serial blood sampling are needed to determine whether GAS, focal CNAs, or ctDNA positivity predict progression and overall survival, as malignant transformation can occur over years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70, C85 appropriately identify the need for longitudinal validation studies. This is a reasonable recommendation given the study's limitations and the preliminary nature of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    },
+    {
+      "id": "b3eed86d-9876-47ea-b442-c5353f46ebab",
+      "content_id": "18992448-180f-4de0-bf43-5ef899e6e2ae",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study received IRB approval (Johns Hopkins IRB00075499) and complied with HIPAA and Declaration of Helsinki, with written informed consent from all participants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 document ethical compliance. These are standard regulatory statements that are appropriately included.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:27:55.180167Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b85452d-0817-4798-87d1-19e5250dab29",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "d73759d1-1d93-4a61-a6e5-86bfab5e39ef",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "5c3bcff2-6d55-4591-af51-fba5c4bf14b2",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "a08ed492-1fd1-4e2d-9593-f0c2f00423cf",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "fa53e1cc-8708-47ed-9c69-6902ab353ac2",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "e60e58de-d031-4387-8788-180adccdc70e",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "c7c9bab5-b29c-4b1a-9ea8-95a51cd1866c",
+      "result_id": "23a74415-770b-4ab3-a57f-0407b5a894ef"
+    },
+    {
+      "claim_id": "664f951f-6a58-4d3e-b2bc-e120611e31b0",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "e1749ca8-a0c4-429b-b315-a478ba8056dd",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "b9be84de-8592-4a8c-a665-4098b398a775",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "5f46ad1a-c1d6-4786-a239-fc97bc73f9da",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "9e2f0940-e819-4b09-a51e-4d75b6e5541b",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "fcc6f324-60b3-45c6-be58-218d9df110d4",
+      "result_id": "0eeaa6df-cbe6-4b72-b4d1-8174cf75b4b6"
+    },
+    {
+      "claim_id": "1dc1d644-6010-4a8d-aa56-6c8592db50b0",
+      "result_id": "3305b4e7-67c8-4552-8eeb-f46ca360c911"
+    },
+    {
+      "claim_id": "fd843834-1d7d-43f7-8229-fe2080010171",
+      "result_id": "3305b4e7-67c8-4552-8eeb-f46ca360c911"
+    },
+    {
+      "claim_id": "28bb76e8-69ba-4efe-8f3f-f992d353c537",
+      "result_id": "3305b4e7-67c8-4552-8eeb-f46ca360c911"
+    },
+    {
+      "claim_id": "a912e917-4306-4eef-978b-a6b4db930f90",
+      "result_id": "3305b4e7-67c8-4552-8eeb-f46ca360c911"
+    },
+    {
+      "claim_id": "8b0f90d2-b038-44be-8e8f-862255f34ef5",
+      "result_id": "4af56a45-59fe-4f91-86d2-a0e083d20374"
+    },
+    {
+      "claim_id": "c834ae52-3674-412f-a88b-22fc7d43e2e0",
+      "result_id": "4af56a45-59fe-4f91-86d2-a0e083d20374"
+    },
+    {
+      "claim_id": "41d81383-bbb4-4c7b-8454-ac62f342a40c",
+      "result_id": "4af56a45-59fe-4f91-86d2-a0e083d20374"
+    },
+    {
+      "claim_id": "c03f8650-c044-4b17-8904-e21ae45330bf",
+      "result_id": "4af56a45-59fe-4f91-86d2-a0e083d20374"
+    },
+    {
+      "claim_id": "885d84b7-9166-44bc-91f0-57a5840066f3",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "4fa3bbf6-18fc-42b8-a850-81abc831316e",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "8df70e97-efb7-4a8f-88cb-e10733d3e2e5",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "e3376829-5524-4577-a087-e022106db630",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "497884cb-020d-444b-806f-14c2363c855d",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "6b839e3a-30ff-4cdd-9ae5-16ba7f78d8ed",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "2bd0a1e4-5c18-4f61-953e-9f3095b71f10",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "68a1dd15-b22a-4101-9bac-fa2194a990c4",
+      "result_id": "dc9d62da-7e99-4a3c-bd39-82686bf9c926"
+    },
+    {
+      "claim_id": "e3f0f0cc-f417-48c2-8fa3-f813ca56bb5f",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "b310007a-a35c-4793-a7e4-38f7ee17b59c",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "45d1373a-a34e-4ae8-a03f-03c2420bb2f8",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "02703636-cca9-4d8f-a8a9-60d90cee07ef",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "a508a700-c70c-45e7-bf06-e3986956594e",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "d97f1825-30a1-424e-90b9-f111f5144e52",
+      "result_id": "643a536b-e8c7-4f45-95ed-483fe9fbb8b6"
+    },
+    {
+      "claim_id": "2b824112-11ee-4335-819b-8a082e93bf1e",
+      "result_id": "54cc5ae4-aab8-4115-bc60-5a885a69cd09"
+    },
+    {
+      "claim_id": "7da93809-9af2-41bf-aa62-664bdd38f064",
+      "result_id": "4ca2c515-05ae-47df-83d4-ca12504e95b9"
+    },
+    {
+      "claim_id": "dd0643fb-f100-47d6-9688-7ae47210f58e",
+      "result_id": "4ca2c515-05ae-47df-83d4-ca12504e95b9"
+    },
+    {
+      "claim_id": "201878e4-9d93-4988-bef1-6a730a10c7bb",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "95c7fa9b-a368-47b2-b805-f7b39fb3f3ea",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "3802f984-8f50-4f4b-bd4c-ef47b05294ab",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "9335694a-c043-4115-961a-3daaa5492249",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "22fc6b8c-94aa-4691-9ceb-2d8a92448eb2",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "492eb0c3-b506-4e84-ba9b-4459f96863de",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "77f3f728-98e4-4602-93fb-40e4bf5a2a0c",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "e0613000-8c4c-4c68-8dd6-9c864a2b576e",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "074b6323-97d2-4600-9bfc-e93357b8db6c",
+      "result_id": "bd5e33b3-31d7-4ee6-8dc2-f06c97faa154"
+    },
+    {
+      "claim_id": "b4743b52-468e-4a4b-8099-096a5651b19b",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "54cfad77-ca3e-493f-8e2c-e7cf5d37e99a",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "2db6508b-6956-4e02-b890-6263c8190a44",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "0b4ba043-c1f3-46c0-8bcc-8a956baba91b",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "ddaf1198-c9cb-40f6-871c-b904a0c061a9",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "4bfe6ae8-cdbe-4813-870e-8608e8cb6118",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "230ae457-a75c-46bc-8e9b-3d63918777e8",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "02905aeb-c186-49e9-8493-3a68d35d9897",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "deb6738b-2d32-448c-97cb-4ecfdc1cb136",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "64b5ba48-9845-4991-9a14-fd1fcfded62f",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "7ca3b21b-10bf-4543-b705-9af69b576e57",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "460f446f-d41c-409e-b9e7-00d6203839e0",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "c2296600-7eb4-47c6-9594-279ade1721bb",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "79ae13b0-b2ec-45af-91cc-0033dd21a6dd",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "f72c8263-fa61-43e0-b544-c76171024344",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "4667eaf5-e235-4732-b5f5-175dda8adc6d",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "987a429a-b01a-4518-a80d-7fb6a5e65e09",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "945353d0-2b53-4815-851d-cd809e2d4766",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "d2c3dccc-d503-4208-904a-45858745bb19",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "94b46534-a432-4708-92bb-a56dfc8fa605",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "43dd76e0-5d71-4eee-a973-bf8bd4e2f917",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "5dea726d-0e91-4d9a-8df7-c839f735508d",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "dd3f5a2d-875f-4470-ac32-d029d3858a7f",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "1bb34797-2f27-4665-b1fb-e0e01b75284e",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "cdd00a08-16e1-4a0b-8bd0-19c0727ff3f2",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "0e2ac682-79c7-473a-b5f8-5d5f61726970",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "b346e3e3-8bf0-4c3f-97ef-9ac284cf86c9",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "1aed3bef-0672-476f-89ef-f20998c9e52f",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "78baebf8-f46c-4163-bd96-7ce3e4974295",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "2e5b7e69-3c46-447e-b21a-574bd79d2081",
+      "result_id": "11b31c82-05f5-43c3-b2a9-2ef81bce81f6"
+    },
+    {
+      "claim_id": "3f934332-2655-4d55-a82b-742899da204d",
+      "result_id": "ef74ed16-c1e7-4b19-8c36-919cfae8d2dc"
+    },
+    {
+      "claim_id": "2bf3a9cc-b218-41a2-90a5-d504baa3b317",
+      "result_id": "ef74ed16-c1e7-4b19-8c36-919cfae8d2dc"
+    },
+    {
+      "claim_id": "c9538696-8985-4f59-af7f-6c2639e353ce",
+      "result_id": "d67835c5-6840-4956-af39-1f56be7b267f"
+    },
+    {
+      "claim_id": "f38340f3-a8fc-4980-b902-ae7705999df9",
+      "result_id": "d67835c5-6840-4956-af39-1f56be7b267f"
+    },
+    {
+      "claim_id": "ceed71b5-b786-4c95-ae43-91ca83b0e2a3",
+      "result_id": "b3eed86d-9876-47ea-b442-c5353f46ebab"
+    },
+    {
+      "claim_id": "abe00701-568b-4840-9eff-4e8e8c6c1654",
+      "result_id": "b3eed86d-9876-47ea-b442-c5353f46ebab"
+    }
+  ],
+  "comparisons": []
+}

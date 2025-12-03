@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C46",
+      "C47"
+    ],
+    "result": "The method accurately estimates Re on simulated data with good coverage, low RMSE, and correct inference of whether Re is above or below 1. The smoothing step slightly misestimates Re during steep changes but greatly improves performance across different noise scenarios. The block-bootstrap method improves coverage compared to EpiEstim alone, and the method outperforms fixed-delay approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide comprehensive simulation evidence showing accurate Re estimation with proper uncertainty quantification. The trade-offs (C18, C46) are acknowledged and justified (C19). The validation includes multiple metrics (coverage, RMSE) and sensitivity analyses for delay misspecification and time-varying distributions, all supporting the method's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The improved confidence intervals substantially outperform EpiEstim-only intervals during high incidence periods. The last few Re estimates can lie outside stabilized confidence intervals when Re is increasing, highlighting a trade-off between timeliness and accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by empirical analysis on Swiss data (Figure 2) and simulation studies (Appendix 4). The comparison clearly demonstrates improved stability of the combined bootstrap and credible interval approach, particularly during high case incidence when EpiEstim intervals are too narrow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52"
+    ],
+    "result": "In early 2020, for 15 out of 19 European countries with lockdowns, Re was significantly above 1 prior to lockdown implementation. Denmark and Germany were exceptions. For countries with very short delays between lockdown and Re<1, the true Re may have been below 1 before lockdown due to smoothing in the pipeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C40, C52 are supported by systematic analysis of 20 European countries with documented lockdown dates (Table 1). The authors appropriately acknowledge limitations for countries with short delays (C40) where smoothing may affect conclusions. The finding is consistent across different observation types (Appendix 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C55"
+    ],
+    "result": "In Europe, implementation of NPIs was broadly associated with reductions in Re, with larger stringency increases associated with larger Re decreases 7-14 days later. However, the association between decreasing stringency and changes in Re was heterogeneous globally, suggesting that reversing NPIs had different effects than implementing them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C44, C55 are supported by analysis shown in Figure 5A examining changes in stringency index and Re across continents. The asymmetry between implementing and lifting NPIs is clearly demonstrated through data, though the authors appropriately note this is associational rather than causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Globally, relaxing NPIs had varied effects on Re. Differences between continents could reflect variations in implementation speed, de facto stringency, socio-cultural factors, weather effects, or that many African countries implemented early strict responses. The asymmetry between implementing and lifting NPIs may be due to increased public awareness and ongoing measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C53-C57 present speculative explanations for observed heterogeneity. While C4 is supported by data (Figure 5A), claims C53-C57 are explicitly speculative (marked as SPECULATION in evidence_type) and lack direct empirical validation. These represent plausible hypotheses rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "In Europe, increased residential mobility and decreased workplace/grocery mobility were associated with decreases in Re.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by analysis of Google mobility data shown in Figure 5B for Europe. The associations are clearly demonstrated, though the authors appropriately present these as correlations rather than causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C76"
+    ],
+    "result": "For Switzerland, Germany, and Hong Kong, time-varying empirical delay distributions were estimated from line list data. For Switzerland, Re estimates were corrected for imported cases, though this represents a lower bound as exports cannot be accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C76 describe methodological refinements for countries with detailed data. The approach is clearly described and the limitation regarding exports (C32) is appropriately acknowledged. This represents a transparent handling of data availability and methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The authors' method produces estimates qualitatively similar to EpiNow2 but is the only method that can account for time-varying delay distributions and combine symptom onset with case data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is supported by comparison in Figure 3, but C34's claim of uniqueness is based on the authors' knowledge rather than systematic comparison. The statement 'to the best of our knowledge' indicates uncertainty. A comprehensive comparison of all available methods' capabilities is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors developed an online dashboard with daily-updated Re estimates for 170 countries using multiple observation sources. The method's unique advantage is parallel use of different data types, and it is applicable to various incidence data including wastewater. Code and results are openly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C48-C51, C79-C81 describe the implementation and availability of the method. These are factual statements about the dashboard, data sources, and code availability that can be verified. The methodological advantages (C48-C50) are logical consequences of the design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The framework is used as the official source of Re estimates for SARS-CoV-2 in Switzerland.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a factual statement about the method's official use in Switzerland, stated in both the abstract and introduction. This represents real-world validation and policy relevance of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C77"
+    ],
+    "result": "The pipeline uses LOESS smoothing with 21-day windows, extended Richardson-Lucy deconvolution for time-varying delays, EpiEstim for Re estimation with 3-day sliding windows, and overlapping block bootstrap (block size 10) combined with credible intervals for uncertainty quantification. Delay distributions are parametrized from literature or empirical line lists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C71, C77 provide detailed methodological specifications. These are clearly described in the Materials and Methods section with appropriate citations. The choices are justified through simulation studies (e.g., C67 for block size, C59 for smoothing parameter).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Re is a key epidemiological indicator quantifying average secondary infections with a threshold at 1. It changes due to various factors including interventions. Infection incidence methods are preferred for monitoring as they rely on fewer assumptions, though infection events cannot be observed directly and methods can introduce biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13 establish foundational epidemiological concepts and methodological rationale. These are well-established principles supported by multiple citations to epidemiological literature and represent accurate characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The most recent Re estimate lies further in the past than the most recent observed incidence data due to the delay between infection and case observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is a logical consequence of the deconvolution approach that accounts for observation delays. This is an inherent characteristic of the method that ensures Re estimates correspond to infection times rather than observation times.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,389 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "High-quality, reproducible multi-omics data was generated from purified Purkinje cells at P0, P7, and adult timepoints, including RNASeq, OxBSSeq, ATACSeq, and ChIPSeq with high Pearson correlation coefficients (>0.9) between replicates and appropriate bisulfite conversion/oxidation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 demonstrate technical quality of the datasets through correlation analysis and quality control metrics shown in supplementary figures. The high reproducibility across biological replicates and appropriate conversion rates validate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C49",
+      "C50"
+    ],
+    "result": "During Purkinje cell differentiation from P0 to adult, there is a global decrease in 5mCG and increase in 5hmCG, with 922 genes becoming developmentally repressed (enriched in cell signaling and axon guidance) and 432 genes becoming activated (enriched in calcium signaling, inositol triphosphate pathways, and RNA splicing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C49-C50 are supported by differential expression analysis with appropriate statistical thresholds (p<0.01, log2FC>2) and GO analysis. The global trends in DNA modifications and gene expression changes are consistent with neuronal maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Approximately half of genes in the mouse genome remain silent in Purkinje cells and are heavily methylated and inaccessible, while a second class of silent genes (enriched in early embryonic transcription factors like Hox clusters) are demethylated and repressed by polycomb repressive complexes marked by H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe two distinct mechanisms of gene silencing supported by epigenetic profiling data and consistent with prior literature (Mo et al., 2015; Li et al., 2018). The observations align with established principles of epigenetic regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Developmentally repressed genes lose promoter accessibility during PC differentiation, but these changes are not correlated with DNA methylation or H3K27me3 changes. Furthermore, 5hmCG accumulated early in development remains stable or increases in repressed genes, suggesting 5hmCG presence alone is insufficient to maintain transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by ATACSeq and OxBSSeq data showing lack of correlation between accessibility loss and methylation changes. The inference that 5hmCG is insufficient for transcription maintenance (C41) is reasonable given the data, though it represents a negative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Developmentally repressed genes exhibit two distinct epigenetic patterns: 'highCHmod' genes accumulate 5mCH and 5hmCH with lower promoter accessibility and enhanced H3K27me3 (consistent with polycomb and MeCP2-mediated repression), while 'lowCHmod' genes lack CH modifications and are enriched for cell morphogenesis and axonal projection functions, though their repression mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 identify two classes of repressed genes with distinct epigenetic signatures supported by clustering analysis and GO enrichment. The mechanistic interpretation for highCHmod genes is well-supported by prior literature, while the explicit acknowledgment that lowCHmod mechanisms are unknown (C48) is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Genes whose expression increases during PC differentiation have chromatin landscapes similar to constitutively transcribed genes, characterized by highly accessible promoters, high H3K4me3 levels, low 5mCG with elevated 5hmCG in gene bodies, and absence of 5mCH/5hmCH accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe the epigenetic signature of activated genes supported by multiple orthogonal datasets (ATACSeq, ChIPSeq, OxBSSeq). The consistency across multiple epigenetic marks strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A subset of highly expressed, PC-specific genes (e.g., Itpr1, Mtss1, Gpr63) undergo profound loss of both 5mCG and 5hmCG during postmitotic differentiation, forming unusually large DNA methylation valleys (>15kb) that are associated with genes involved in inositol triphosphate/calcium signaling and linked to ataxia and autism. These genes are actively transcribed, highly accessible, enriched for H3K4me3, and do not accumulate CH modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C70 describe a novel class of genes undergoing active demethylation in postmitotic neurons, supported by comprehensive epigenetic profiling showing coordinated loss of both 5mC and 5hmC. The identification of large DMVs with detailed characterization of their epigenetic features and functional enrichment provides strong evidence for this phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Mass spectrometry failed to detect 5fC or 5caC in differentiating Purkinje cells, though their involvement as transient intermediates cannot be ruled out due to the small genomic fraction undergoing demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 appropriately report negative mass spectrometry results while acknowledging technical limitations. The reasoning that low abundance could preclude detection is sound and supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ATAC peaks that gain accessibility during PC differentiation lose both 5hmC and 5mC, while sites losing accessibility show no methylation changes. These accessibility changes occur without cell division in postmitotic neurons, and different classes of ATAC sites contain distinct transcription factor motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 demonstrate demethylation at regulatory sites in postmitotic cells, supported by integrated ATACSeq and OxBSSeq analysis. The observation that this occurs without cell division (C78) is a key inference supported by the postmitotic state of PCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PC-specific Tet1/Tet2/Tet3 triple knockout mice (Pcp2TetTKO) were generated using a Pcp2-Cre BAC with recombination beginning at P7 (>2 weeks post-mitotic). The mice showed normal survival, no gross motor phenotype on rotarod, PC-specific recombination, and maintained Itpr1 expression for cell purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 describe the generation and characterization of the Pcp2TetTKO mouse model with appropriate validation including PCR genotyping, RNASeq confirmation of deletion, behavioral testing, and temporal characterization of Cre activity. The model is well-characterized for the experimental goals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Loss of Tet function in postmitotic Pcp2TetTKO PCs resulted in altered expression of 1,269 genes (721 increased, 548 decreased). Upregulated genes are enriched for terminal developmental functions including synaptic transmission, neuron differentiation, and ion channels, while downregulated genes are involved in homeostasis and metabolic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 report transcriptional consequences of Tet loss with appropriate statistical thresholds (p<0.05, log2FC>0.5) and GO analysis. The magnitude of changes is compared to MeCP2 loss (C87), providing context. The functional enrichment patterns are biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Regulatory sites that gain accessibility during normal PC differentiation lose both 5mCG and 5hmCG between P7 and adult, but in Pcp2TetTKO PCs these sites retain elevated 5mCG and 5hmCG, demonstrating that demethylation at these sites requires continued Tet oxidase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 provide direct evidence that Tet activity is required for demethylation at regulatory sites by comparing WT and TKO. The increased methylation in TKO relative to WT is clear evidence of Tet-dependent demethylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Large DMVs acquired before P7 (e.g., Hox clusters, Calb1) are unaffected in Pcp2TetTKO, while DMVs forming after P7 (e.g., Gpr63, Grid2) fail to develop properly in the absence of Tet activity. For genes like Gpr63 and Grid2, DMV formation is preceded by 5hmC accumulation and proceeds from 5' to 3', with variable DMV lengths in TKO reflecting complex relationships between transcription timing, rate, and Tet activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 demonstrate temporal requirement for Tet activity in DMV formation through comparison of early vs. late DMVs in TKO. The detailed analysis of specific genes (Gpr63, Grid2) with genome browser tracks provides strong visual evidence. The interpretation of variable DMV lengths (C105) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Loss of DNA methylation occurs over specific regulatory sites and transcription units in postmitotic Purkinje neurons and requires continued production of 5hmC by Tet1/2/3. The simplest interpretation is that Tet-mediated active demethylation occurs through continued oxidation of 5hmC to 5fC and 5caC, followed by removal via the BER pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 synthesize the key findings demonstrating Tet-dependent demethylation in postmitotic neurons. The mechanistic interpretation (C108) is appropriately qualified as 'simplest interpretation' and is consistent with established biochemical pathways, though direct detection of intermediates was not achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Continued Tet activity and 5hmC accumulation during PC differentiation is necessary for acquisition of refined transcriptional and epigenetic properties, with phenotypes evident despite late (P7) loss of Tet function. This suggests a continual requirement for 5hmC in epigenetic remodeling of differentiating postmitotic neurons, particularly for large projection neurons with complex morphological development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 synthesize the functional importance of continued Tet activity. C109-C110 are directly supported by the TKO data, while C111-C112 represent reasonable extrapolations qualified as 'seems likely' and 'may be particularly important.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Tet-mediated active DNA demethylation occurs in postmitotic neurons, providing critical in vivo evidence supporting the active demethylation pathway defined in vitro. For genes like Gpr63 and Grid2, conversion of 5mCG to 5hmCG is evident between P0-P7, and continued Tet activity is required to remove residual modifications to achieve complete demethylation in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 establish active demethylation in vivo through the TKO experiments. The progression of demethylation in specific genes (C115-C116) is well-documented in the genome browser tracks and provides mechanistic insight into the temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "Future studies should include genetic disruption of TDG-BER pathway components in postmitotic PC-specific knockouts to identify additional demethylation pathway components. Other large neurons with complex postmitotic differentiation likely share this requirement, and additional studies could elucidate 5hmC functions in neuronal plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119, C121 appropriately outline future research directions based on the current findings. These are speculative but well-justified suggestions for follow-up work, appropriately distinguished from the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The high-resolution data highlights unexplored features including two distinct relationships between non-CG methylation/hydroxymethylation and transcriptional repression, and the mechanism for selecting specific genes for active demethylation. Disruption of 5hmC formation in Pcp2TetTKO leads to altered transcription of late-expressed genes including ion channels that may refine electrophysiological properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 summarize key findings and identify areas requiring further investigation. C122-C123 appropriately identify unresolved questions, while C124 summarizes a major finding with appropriate qualification ('may be responsible') regarding functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "5hmCG is substantially enriched in active transcription units in PCs relative to genome-wide levels, suggesting targeted Tet activity. While 5mCH/5hmCH can accumulate within repressed genes with clear boundaries, many regions of CH modification partially overlap genes or occur in intergenic regions, with 5hmCH levels directly reflecting 5mCH patterns, suggesting localization reflects de novo methylation patterns rather than targeted Tet activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 describe differential targeting of Tet activity in CG vs. CH contexts. The inference that 5hmCG enrichment suggests targeted Tet activity (C125) and that 5hmCH reflects de novo methylation patterns (C128) are reasonable interpretations of the correlation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Based on studies in other cell types, 5hmC is likely required for accessibility at regulatory sites as neuronal progenitors exit the cell cycle. The lack of methylation at P0 over early-expressed transcription factors (Lhx5, Lhx1, Ldb) suggests this may result from passive demethylation in dividing progenitors, supported by observations in frontal cortex showing some loci retain methylation in Tet2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 appropriately extrapolate from established mechanisms in other cell types and integrate observations from the current data with prior literature (Lister et al., 2013). The inferences are qualified as 'probable' and 'suggests' appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "A previously described function of 5hmC in mature neurons is 'functional demethylation' where stable 5hmCG accumulation in active genes reverses MeCP2 repressive effects. The current finding that elevated 5hmC remains in genes repressed during PC differentiation demonstrates that functional demethylation is not sufficient to maintain gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 integrate prior work on functional demethylation (Mell\u00e9n et al., 2017) with new observations showing its limitations. The data showing 5hmC persistence in repressed genes (Figure 2C) directly supports the conclusion that 5hmC alone is insufficient for maintaining expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Tet-mediated active DNA demethylation is required for proper expression of highly expressed PC-specific genes, representing a third important function for 5hmC in the nervous system (alongside passive demethylation and functional demethylation). Recent studies link Tet mutations to neurodegenerative disease, highlighting the importance of further exploration of 5hmC functions in development, aging, and degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 synthesize the major contribution of the work in context of prior knowledge. C134 is directly supported by the TKO data, C135 appropriately cites recent literature linking Tet to disease, and C136 provides appropriate forward-looking perspective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C58",
+      "C73"
+    ],
+    "result": "The introduction establishes the biological context through extensive citation of prior work on 5hmC biology, including its high levels in neurons, production by Tet enzymes, distribution patterns, interactions with MeCP2, roles in passive and active demethylation pathways, and evidence from various experimental systems. This background supports the rationale for studying 5hmC in postmitotic Purkinje cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27, C30-C31, C58, C73 represent background knowledge appropriately cited from prior literature. These establish the scientific context and rationale for the current study. All claims are supported by appropriate citations to published work.",
+    "result_type": "MINOR"
+  }
+]

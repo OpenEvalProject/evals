@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The adult mammalian heart is composed primarily of post-mitotic cardiomyocytes and lacks resident stem cells, rendering it unable to replace lost cardiomyocytes following myocardial infarction, leading instead to fibroblast-mediated scarring and functional decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe established background knowledge about cardiac biology and are supported by appropriate citations (Bergmann et al., 2009; Mollova et al., 2013; van Berlo et al., 2014). These claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior studies have shown that various mitogenic pathways including Cyclin D2 overexpression, CDK combinations, constitutively active Yap, Erbb2 activation, and Wnt stimulation can promote cardiomyocyte proliferation in different species and experimental contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 summarize prior work from the literature with appropriate citations. These are background claims establishing the rationale for the comparative study, not novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In hiPSC-CMs, lentiviral expression of caCtnnb1, Ccnd2, carErbb2, or cahErbb2 (but not caYap8SA) significantly increased EdU incorporation and H3P expression without increasing apoptosis or altering ploidy, indicating successful cardiomyocyte proliferation. cahErbb2 showed the most robust effects, which persisted even in maturation medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 are well-supported by experimental data from flow cytometry (Figures 1B-F, Figure 1\u2014figure supplement 3). The use of EdU incorporation, H3P expression, ploidy analysis, and apoptosis markers provides converging evidence for proliferation. The comparison to CHIR99021 (C20) serves as a positive control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "caYap8SA-transduced hiPSC-CMs showed increased gene expression of Yap and its targets but decreased total and active Yap protein levels with unchanged nuclear abundance, suggesting activation of a negative feedback loop that may explain the attenuated mitogenic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by gene expression (Figure 1G), Western blot (Figure 1H), and immunostaining data (Figure 1I-J). The inference of negative feedback (C24) is reasonable given the data, though the mechanism remains speculative. This explains why caYap8SA did not induce proliferation despite prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "caCtnnb1-transduced hiPSC-CMs showed increased gene expression of Ctnnb1, Lef1, and Axin2, but no change in Ctnnb1 protein levels, potentially indicating Wnt pathway-mediated negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by gene expression (Figure 1K) and Western blot data (Figure 1L). The inference of negative feedback (C26) is reasonable and supported by citations (Bernkopf et al., 2014; Lustig et al., 2002), though the mechanism is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Ccnd2-transduced hiPSC-CMs showed increased Ccnd2 gene expression but not total protein levels; however, nuclear abundance of Ccnd2 protein was increased, which likely contributed to increased cardiomyocyte cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by gene expression (Figure 1M), Western blot (Figure 1N), and immunostaining data (Figure 1O-P). The inference that nuclear localization contributes to cycling (C30) is reasonable and supported by citation to Zhu et al., 2018.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In NRVMs, cahErbb2 expression uniquely increased EdU incorporation, while both Ccnd2 and cahErbb2 increased H3P expression. However, mitogen-induced cycling in NRVMs led to polyploidization rather than cytokinesis, contrasting with hiPSC-CM results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by flow cytometry data (Figures 2B-E). The key finding that NRVMs undergo polyploidization rather than cytokinesis (C34, C37) is well-supported and represents an important species/maturation-dependent difference. The inference is based on ploidy analysis of total and EdU+ cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "cahErbb2 expression uniquely induced sarcomere disassembly in both NRVMs and hiPSC-CMs without altering sarcomeric gene expression or non-myocyte abundance, suggesting protein-level regulatory changes. Increased Runx1 expression implied association with cardiomyocyte dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by immunostaining (Figure 2F), gene expression (Figure 2G), and flow cytometry data (Figure 2\u2014figure supplement 1). The inference that protein-level changes are responsible (C41) is reasonable. The association with dedifferentiation (C42) is supported by Runx1 expression and citations (D'Uva et al., 2015; Kubin et al., 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In 3D NRVM cardiobundles, cahErbb2 showed the strongest proliferative effect and uniquely increased tissue size, F-actin+ area, and fibroblast abundance, leading to necrotic core formation likely due to limited oxygen/nutrient diffusion. Sarcomere structure was lost despite maintained cell alignment, and cardiomyocyte size was unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are supported by immunostaining and morphometric analysis (Figures 3B-G, Figure 2\u2014figure supplement 1D-E). The inference about necrotic core formation due to diffusion limitations (C47) is reasonable and supported by citation (Laschke and Menger, 2016). The 3D cardiobundle system provides a more mature model to assess mitogen effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "cahErbb2-transduced cardiobundles exhibited reduced maximum twitch amplitude, slower twitch kinetics, and increased passive tension indicating tissue stiffening. These functional deficits were observed in both mechanically loaded and unloaded conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by force measurement data (Figures 3H-I, Figure 3\u2014figure supplement 2). The functional deficits represent a critical finding showing that persistent cahErbb2 expression impairs contractile function despite promoting proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Control experiments showed that increased tissue size alone does not cause increased passive tension. Collagen I abundance was unchanged, ruling out ECM accumulation as the cause of stiffness. Instead, upregulation of intermediate filaments (nestin and vimentin) suggested that cahErbb2-induced cell stiffening was at least partly responsible for increased tissue stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by morphometric analysis and immunostaining (Figure 3\u2014figure supplement 3). The control experiments with 1.4\u00d7 volume tissues (C57-C58) strengthen the conclusion. The inference about cell stiffening (C62) is reasonable and supported by citations (Calderone, 2018; Ward and Iskratsch, 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Among tested mitogens, cahErbb2 induced the most potent pro-proliferative effects in both rat and human cardiomyocytes, involving sarcomere loss characteristic of dedifferentiation. In 3D cardiobundles, cahErbb2 effects were uniquely associated with increased tissue size, loss of contractile force, increased intermediate filament expression, and tissue stiffening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 represent summary conclusions supported by the collective experimental data across multiple systems (hiPSC-CMs, NRVMs, cardiobundles). These are major findings of the comparative study showing cahErbb2 as the most potent mitogen but with associated functional deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Human cahErbb2, but not rat carErbb2, activated Erk signaling in hiPSC-CMs, as evidenced by increased pErk/Erk abundance, Erk target gene expression, and nuclear Erk localization. Akt signaling was not upregulated. cahErbb2 also increased pS6 abundance likely through an mTOR-independent, Erk-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 are supported by Western blot (Figures 4A, 4F), gene expression (Figures 4B, 4D), and immunostaining data (Figures 4C, 4E, 4G). This is a critical mechanistic finding explaining the species-specific differences in mitogen efficacy. The inference about mTOR-independent pS6 phosphorylation (C74) is reasonable given the data and supported by citation (Roux et al., 2007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In hiPSC-CMs, Mek or Erk inhibitor treatment resulted in dose-dependent decreases in EdU incorporation and increases in apoptosis. Increased Erk activity in cahErbb2-transduced cells appeared to protect against inhibitor-induced apoptosis and necessitate higher inhibitor doses to block EdU incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by flow cytometry data (Figure 5\u2014figure supplement 1). The dose-response experiments provide evidence for Erk pathway involvement in both baseline and cahErbb2-induced proliferation. The inference about protection from apoptosis (C77) is reasonable based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In NRVM cardiobundles, Erk/Mek inhibitors reduced cardiomyocyte EdU incorporation in both control and cahErbb2-transduced tissues, attenuated cahErbb2-induced morphological deficits (tissue size, sarcomere structure), and improved functional parameters (active force, passive tension, twitch kinetics). These results indicate that baseline cardiomyocyte cycling is Erk-dependent and that Erk pathway is a major effector of cahErbb2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 are supported by immunostaining, morphometric analysis, and force measurements (Figures 5B-H, Figure 5\u2014figure supplement 2). The rescue experiments with Erk/Mek inhibitors provide strong evidence for the mechanistic role of Erk signaling. The partial rescue suggests that temporal control of cahErbb2 expression could be therapeutically beneficial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors discuss that rat caErbb2 has been shown to drive cardiomyocyte dedifferentiation, proliferation, and hypertrophy in transgenic mice. In their study, persistent cahErbb2 expression induced structural and functional deficits resembling pathologic cardiac remodeling. They propose that temporally controlled cahErbb2 expression could be a strategy for inducing transient cardiomyocyte hyperplasia and enhanced function, and suggest that caErbb2 effects may be species or maturation level-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are discussion points supported by citations (C88: Aharonov et al., 2020; D'Uva et al., 2015; C89: Gallo et al., 2019) and the experimental data from the study. The proposals (C90, C91) are speculative but reasonable interpretations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors discuss mechanistic context including negative feedback in the Hippo pathway, diffusion limitations in avascular tissues, and the nature of Erbb2 activating mutations. They explain that continuous cahErbb2 expression produces persistent proliferative effects and chronic Erk over-activation leading to sarcomere disorganization and stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are discussion points supported by citations (C92: Kim et al., 2020; Moroishi et al., 2015; Park et al., 2016; C93: Bursac et al., 1999; Laschke and Menger, 2016; C96: Ou et al., 2017) and the experimental data. These provide important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors summarize that persistent cahErbb2 expression and Erk activation induced cardiomyocyte cycling, sarcomere disassembly, fibroblast accumulation, reduced contractile force, and increased stiffness. While Runx1 expression was increased, a sustained dedifferentiation gene expression pattern was not observed as Myh6, Myh7, and Tnnt2 levels remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are summary statements supported by the experimental data throughout the manuscript. The observation that sustained dedifferentiation markers were not present (C99) is an important nuance to the dedifferentiation claim.",
+    "result_type": "MAJOR"
+  }
+]

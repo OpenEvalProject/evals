@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C56",
+      "C57",
+      "C58",
+      "C66",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "D2 receptor blockade with amisulpride strengthened the impact of reward magnitude differences on evidence accumulation (drift rate), such that only relatively large delayed rewards were considered worth the waiting cost, while small delayed rewards were perceived as less valuable. This effect was interpreted as implementing a stricter 'cost control' mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30 provide converging evidence from drift diffusion modeling showing that amisulpride increased sensitivity to reward magnitude during evidence accumulation (Drug\u00d7Magnitudediff: HDI95% = [0.04; 1.71]). The interpretation as stricter cost control (C56-C58, C80-C81) is consistent with the data pattern shown in Figure 2C, where amisulpride enhanced drift toward LL for large reward differences but toward SS for small differences. The effect is statistically significant and robust across model specifications (C39-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C59",
+      "C60",
+      "C67",
+      "C82",
+      "C83"
+    ],
+    "result": "D2 receptor blockade with amisulpride attenuated the impact of delay differences on the starting bias of the evidence accumulation process, providing first evidence that tonic dopamine moderates proximity effects on cost-benefit decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C33 demonstrate that amisulpride reduced the impact of delay on starting bias (Drug\u00d7Delaydiff: HDI95% = [0.001; 0.04]) while also shifting the baseline bias toward SS (main effect: HDI95% = [-0.08; -0.001]). This pattern (C31, C59, C82-C83) supports the proximity account of dopamine. The effect is statistically significant, robust across alternative models (C41), and represents a novel finding (C60) consistent with theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C62"
+    ],
+    "result": "D1 receptor stimulation with PF-06412562 showed no significant effects on any drift diffusion parameters or intertemporal choices, providing evidence for receptor specificity of dopamine's role in intertemporal decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 consistently show null effects across all DDM parameters and model-free analyses in the D1 agonist study (all HDI95% included zero). While the authors appropriately caveat this interpretation due to task differences between studies (C62), the absence of effects across multiple doses (6, 15, 30 mg) and analytical approaches provides reasonable evidence for D1R non-involvement, contrasting with the D2R effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The drug effects on drift rate and starting bias were independent of each other, showing no correlation (r=0.07, p=0.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 provides direct statistical evidence (r=0.07, p=0.60) that the two amisulpride effects did not correlate across individuals. This supports the interpretation (C35) that these represent dissociable subprocesses. The lack of correlation is important for the theoretical model proposing independent dopaminergic influences on different decision components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C18",
+      "C73"
+    ],
+    "result": "Model-free analyses showed that amisulpride reduced the impact of delays on choices (HDI95% = [0.02; 1.67]) without affecting hyperbolic discounting parameters or choice consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 show no drug effects on standard discounting measures (log-k) or inverse temperature. However, C18 demonstrates a significant Drug\u00d7Delay interaction in the model-free MGLM analysis. This pattern is consistent with the DDM findings (C73) but highlights limitations of standard analyses that the authors discuss (C74-C75). The statistical evidence is clear with appropriate Bayesian credible intervals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C104"
+    ],
+    "result": "DDM-1 with attribute-wise comparison and proximity-dependent starting bias provided the best fit to the data compared to alternative model specifications, and the key dopaminergic effects were robust across model variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Model comparison using DIC (C38, C44, C46, C52) consistently favors DDM-1. The key drug effects on drift rate and starting bias replicate across alternative specifications (C39-C41), supporting robustness (C42). Posterior predictive checks (C49) and the superiority over option-wise comparison models (C44-C45) provide additional validation. The use of sigmoidal link function (C104) is also justified by model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Sanity checks confirmed that the drift diffusion model captured expected relationships: larger reward magnitude differences biased evidence toward LL options, larger delay differences biased toward SS options, and individual weights correlated with delay discounting (r=-0.61, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 show expected main effects of reward and delay on drift rate with appropriate statistical support. The correlation between DDM weights and hyperbolic discounting (C26-C27) replicates prior findings and validates that the model parameters capture meaningful individual differences in patience. These sanity checks are essential for establishing model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C22"
+    ],
+    "result": "Amisulpride showed no significant effects on non-decision times, decision thresholds, or overall decision times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 show null effects on non-decision time and decision threshold parameters with credible intervals including zero. Claim C22 shows no drug effects on decision times in model-free analysis. These null findings are important controls indicating that amisulpride specifically affected decision-relevant processes rather than general motor or perceptual functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Individual drug effects did not correlate with body weight or working memory performance (proxy for baseline dopamine), suggesting effects were not moderated by effective dose or baseline dopaminergic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report null correlations (all r<0.22, p>0.10 for body weight; all r<0.17, p>0.22 for digit span) between drug effects and potential moderators. While null results, these are important controls addressing whether individual differences in effective dose or baseline dopamine influenced the observed effects. The lack of moderation supports generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Parameter recovery analysis showed that all group-level parameters except non-decision time could be reliably recovered, suggesting the model tends to overestimate the duration of decision-unrelated processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 reports that all parameters except \u03c4 were within 95% HDI of original estimates in simulated data. The inference (C51) that the model overestimates non-decision time is reasonable given this pattern. This is an important validation check, though the limitation regarding \u03c4 should be noted. Critically, parameters determining choices (drift rate, bias, threshold) were well-recovered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Model-free analyses revealed expected main effects of reward magnitude and delay on choices, a learning effect over trials unaffected by drug, and faster decisions for higher total reward values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 show expected main effects with strong statistical support (HDI95% excluding zero). The trial number effect (C19) and its independence from drug (C20) are clearly demonstrated. The reward sum effect on RT (C21) is also well-supported. These are standard behavioral patterns that validate the task and provide context for the drug effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that dopamine's impact on decision making depends on the specific combination of reward magnitudes and waiting costs, with process models providing advantages over standard single-parameter measures of patience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 present predictions about how dopamine effects vary with task parameters, but these are largely speculative extrapolations (C69-C71 marked as SPECULATION) beyond the current data. The caveat about inverted-U curves (C72) further limits predictability. Claims C74-C76 about advantages of process models are reasonable inferences but represent methodological arguments rather than empirical findings. These claims require additional empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors argue that the observed effects are more consistent with postsynaptic rather than presynaptic mechanisms of amisulpride, though presynaptic effects cannot be entirely excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic interpretation involves complex reasoning across multiple claims. While C77 correctly cites dose-dependent mechanisms, the interpretation of C79-C83 regarding pre- vs. postsynaptic effects involves considerable inference. The authors acknowledge uncertainty (C84: 'more likely' but 'cannot be entirely excluded'). The lack of clear RT effects that could distinguish mechanisms (mentioned in text) further limits certainty. This represents reasonable speculation but not definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Amisulpride affects serotonergic 5-HT7 receptors in addition to D2/D3 receptors, which might contribute to the observed effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 correctly cites pharmacological properties of amisulpride. Claim C86 appropriately notes this as a caveat (marked as SPECULATION) that should be considered when interpreting results. This is an important limitation to acknowledge, though it doesn't undermine the main findings. The authors appropriately present this as a possibility rather than a definitive alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The proximity effects on starting bias are conceptually consistent with dual process models of intertemporal choice that assume automatic biases toward immediate rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 connect the empirical findings to existing theoretical frameworks through appropriate citations. The interpretation that starting bias reflects automatic processes occurring before controlled evidence accumulation is consistent with both the DDM framework and dual process theories. This represents valid theoretical integration of the findings, though it remains an interpretation rather than direct evidence for dual processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The studies employed appropriate experimental designs, ethical approvals, and methodological procedures including within-subject design for D2 antagonist study (N=56) and between-subject design for D1 agonist study (N=120), with proper data preprocessing and model convergence checks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C103 describe methodological details that are clearly documented. The within-subject design for amisulpride (C93) and between-subject design for D1 agonist (C95) are appropriate. Ethical approvals (C94, C96) and registration (C97) are documented. Data preprocessing (C102) follows cited procedures. Model convergence (C103: R-hat < 1.01) meets standard criteria. These methodological details support the validity of the analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The introduction establishes theoretical context including disagreements about dopamine's role in intertemporal choice, the cost control hypothesis, proximity accounts, and differential functions of D1 and D2 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 accurately summarize existing theoretical accounts and empirical findings from cited literature. These provide appropriate context for the current study. The characterization of theoretical disagreements (C1, C6) and receptor-specific functions (C10-C11) is well-supported by citations. Previous null findings (C12) motivate the current reanalysis approach. This represents accurate literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss potential generalization to other cost domains and clinical applications, noting mixed prior results in psychiatric disorders and proposing their model may explain inconsistencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 about generalization to other cost types are speculative (marked as SPECULATION). The discussion of opportunity costs (C89-C90) appropriately notes a limitation of the current paradigm. Claims about clinical applications (C91-C92) are reasonable but speculative extensions. While these represent important future directions, they go beyond what the current data can support and require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C23",
+      "C43"
+    ],
+    "result": "The drift diffusion modeling framework assumes evidence accumulation until a decision boundary is reached, with DDM-1's temporal proximity-dependent bias showing better fit than models with variable non-decision times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 accurately describes the DDM framework (established knowledge). Claim C43 reports model comparison results favoring proximity-dependent bias over variable non-decision times, supporting the theoretical interpretation. This validates the modeling approach and the specific implementation of proximity effects in the starting bias rather than as differential processing times.",
+    "result_type": "MINOR"
+  }
+]

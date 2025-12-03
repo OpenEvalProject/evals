@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Current methods for determining neuronal responsiveness have significant limitations. Simple methods like comparing average spike rates require arbitrary parameter choices (e.g., binning size) that can change results and reduce replicability. Model-based methods require hyperparameter tuning specific to cell types. Manual curation cannot provide statistically unbiased samples and is unsuitable for large-scale recordings. These limitations create a need for improved methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 establish the motivation for the study by documenting well-known limitations of existing methods. These claims are supported by citations to established literature (C8, C11-C13, C16, C17) and represent accepted knowledge in the field (C1-C3, C15, C23-C24). The logical inferences about limitations (C9, C10, C14, C18, C25) follow directly from the cited properties of these methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C72",
+      "C73",
+      "C92",
+      "C97",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "The ZETA-test is a parameter-free, binning-free statistical test that outperforms t-tests, ANOVAs, and renewal-process-based methods for detecting neuronal responsiveness. At \u03b1=0.05, ZETA detected 79% of cells as responsive compared to 64% for t-tests (p=2.8\u00d710\u207b\u2077, n=12 datasets), with a higher AUC (0.914 vs 0.843, p=4.9\u00d710\u207b\u2076). ZETA detected 93.3% of V1 neurons as visually responsive, with cells detected by t-tests being almost exclusively a subset of ZETA-detected cells. The false-positive rate was consistent with \u03b1=0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C20, C27-C36, C45 present the core benchmarking results showing ZETA's superior performance, supported by statistical tests across 12 datasets from multiple brain regions and recording techniques (Figures 1-5). The false-positive rate validation (C33) using jittered onsets confirms the test maintains proper Type I error control. Claims C72-C73, C92, C97, C100, C103-C104 describe ZETA's key properties (parameter-free, binning-free, no a priori assumptions) that are demonstrated through the method's design and performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The ZETA-test outperformed ANOVA with optimal bin width. ANOVA showed 71% inclusion rate versus 79% for ZETA (p=0.0014, n=12 datasets). ROC analysis showed ZETA had superior sensitivity (AUC=0.914) compared to ANOVA (AUC=0.880, p=7.7\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate ZETA's superiority over ANOVA using optimal bin widths calculated by the Shimazaki & Shinomoto method. The comparison is rigorous because it uses the best possible binning approach, yet ZETA still outperforms it. Statistical significance is properly established with paired t-tests across 12 datasets (Figures 1G, 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The ZETA-test consistently included more cells than the t-test regardless of the number of trials used in the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 addresses a potential limitation by showing ZETA's advantage persists across different trial numbers through subsampling analysis (Figure 3\u2014figure supplement 4A). This demonstrates the method's robustness is not dependent on having large numbers of trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C75",
+      "C101"
+    ],
+    "result": "The ZETA-test performs slightly worse than t-tests for purely Poisson-distributed spike counts with constant firing rates (Tr=1.0), but outperforms t-tests in all other cases tested, including bursting cells (ZETA AUC=0.941 vs t-test AUC=0.902).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C75, C101 identify a specific theoretical limitation through simulations (Figure 4), while C48 shows ZETA still excels for bursting cells. This honest assessment of limitations strengthens the overall evaluation. The simulations are well-designed to test edge cases, and the results show ZETA's robustness across realistic spiking patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "For natural movie responses, the ZETA-test performed equivalently to an aggregate set of ANOVAs at multiple timescales (ZETA AUC=0.792\u00b10.011, ANOVAs AUC=0.798\u00b10.010, z-test p=0.554).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 show that when stimuli have complex temporal structure (natural movies), ZETA performs as well as using multiple ANOVAs across 18 different bin sizes (Figure 5). This demonstrates ZETA's versatility, though it doesn't outperform the aggregate approach in this specific case. The lack of significant difference is properly established with appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C82"
+    ],
+    "result": "The ZETA-test works across brain regions and recording techniques. In V1, 93.3% of neurons showed visual responsiveness to drifting gratings (95% CI lower bound: 89.7%), which is higher than typically reported in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C40, C82 demonstrate ZETA's broad applicability across multiple brain regions (V1, AM, PM, LGN, SC, LP, NOT, APN) and techniques (Neuropixels, Neuronexus, GCaMP6, pMEA) as shown in Figures 3 and 5. The high V1 responsiveness finding (C38-C40) is well-supported by proper confidence interval calculation and comparison to cited literature (C40), representing a substantive scientific finding enabled by the improved method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C105",
+      "C106"
+    ],
+    "result": "The instantaneous firing rate (IFR) method provides binning-free visualization of spiking rates with temporal resolution limited only by spike density. It can estimate peak-activity latencies with sub-millisecond accuracy, outperforming PSTH-based approaches without requiring bin size tuning. The IFR is orders of magnitude faster than MIMI model-based methods and requires no fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C51-C61, C105-C106 present the IFR method and its validation. The method's properties (C51-C52, C55-C56) are demonstrated through benchmarking against PSTH and MIMI methods (Figure 6). Simulations (C58-C60) show robust performance across background rates and peak widths. The comparison to MIMI (C53) is supported by Figure 3\u2014figure supplement 2. The IFR showed strongest agreement with 1-10ms PSTH bins (C57) and consistently matched or exceeded optimal bin-width accuracy (C60-C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "In mouse visual cortex, visuomotor-mismatch and spatial location are encoded by different neuronal subpopulations. Location and mismatch modulation were negatively correlated (r=-0.22, p=0.04), and fewer neurons jointly encoded both features than expected by chance (p=2.0\u00d710\u207b\u2075). This suggests functional specialization at the microanatomical level within single recording planes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62-C68, C88-C89, C91 present a novel neuroscience finding using the ZETA-test on calcium imaging data from virtual corridor experiments (Figure 7). The statistical analysis is rigorous, using both Pearson correlations (C62-C64) and kernel-density estimation to test for joint encoding (C65-C67). The negative correlation and below-chance joint encoding (C67) provide converging evidence for functional specialization (C68, C89, C91). This extends previous laminar-level findings (C90) to the microanatomical scale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C87"
+    ],
+    "result": "Optogenetic stimulation of VIP cells in mouse visual cortex leads to early inhibition (median latency 16.5ms) and subsequent disinhibition (median latency 23.6ms). Inhibited cells showed significantly shorter latencies than activated cells (Mann-Whitney U-test, p=5.1\u00d710\u207b\u2077), demonstrating VIP-mediated disinhibition operates in vivo in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C71, C87 present findings from analysis of Allen Brain Institute Neuropixels data (Figure 8). The analysis pipeline is clearly described: selecting quality clusters (N=1707), using ZETA to identify modulated cells (N=1144), discarding artifacts, and classifying cells by IFR latencies. The statistical comparison of latencies (C69-C70) is appropriate and highly significant. The conclusion about VIP-mediated disinhibition (C71) is supported by the data and consistent with cited slice studies and other brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The high V1 responsiveness (>93%) calls into question the idea that V1 cells are narrowly tuned. The V1 neural code may be more 'dense' than proposed by sparse coding theories, though only a small group of neurons is strongly driven by any one stimulus, suggesting sparse coding operates on top of a dense but weak code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 present interpretations and speculations about V1 coding based on the high responsiveness finding. While C83-C84 are reasonable inferences from the data, C85 is explicitly speculative (evidence_type: SPECULATION). C86 attempts to reconcile the findings with sparse coding theories but lacks direct evidence about response strength distributions. These claims require additional experiments specifically designed to test sparse vs. dense coding hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The ZETA-test may often be the preferred choice as it requires no fitting or hyperparameter tuning and shows superior statistical sensitivity to model-based approaches in all cases tested. However, it might not perform as well as models manually fitted to describe a particular cell's response. The test shows great merit as an unbiased parameter-free inclusion criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76-C78 provide balanced discussion of ZETA's advantages and limitations. C74 and C76 are supported by the comprehensive benchmarking data. C77 is an appropriate acknowledgment of theoretical limitations (speculation). C78 is supported by citation to Mesa et al., 2021 regarding the importance of standardized inclusion criteria for replicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The ZETA-test only compares point-events (spike times) to other point-events (stimulus onsets), making it powerful for electrophysiological techniques like Neuropixels but not directly applicable to calcium imaging dF/F0 traces. However, ZETA performs well when applied to putative spiking events extracted from calcium imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 clearly describe a limitation of the method's scope (C79-C80) while demonstrating a practical solution (C81). The application to calcium imaging spike extraction is demonstrated in Figure 7, showing the method's utility extends beyond pure electrophysiology when appropriate preprocessing is applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Functional segregation of bottom-up and top-down processing has previously been shown based on macroanatomical (laminar) analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 accurately represents prior work through appropriate citations (Kok et al., 2016; Markov et al., 2014; Poort et al., 2012; Self et al., 2019). This provides proper context for the microanatomical finding in C91.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Statistically underpowered studies are common in neuroscience, making development of sensitive tools important. Increased statistical sensitivity can reduce required experimental animals when power analyses are used to determine sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 discuss broader implications. C93 is supported by citation to Button et al., 2013. C94 is a logical inference about the relationship between statistical power and sample size requirements, representing a valid potential benefit of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C102"
+    ],
+    "result": "The ZETA-test bears similarities to a mean-subtracted Kolmogorov-Smirnov test applied to a renewal process model but gains robustness to violations of renewal process assumptions. Various components were chosen to relax assumptions and gain relative invariance to spike train specifics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C102 describe the mathematical foundations and design principles of ZETA. These are supported by the methods section derivations and Figure 3\u2014figure supplement 3, which shows how different design choices affect performance. The theoretical framework provides important context for understanding why ZETA outperforms other methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The ZETA-test is considerably faster than MIMI model-based methods (557\u00d7 faster) and is not subject to overfitting since it does not involve model fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by computational benchmarking in Figure 3\u2014figure supplement 2. The speed advantage (C98) is directly measured, and the lack of overfitting (C99) is a logical consequence of the method not involving parameter fitting. These are important practical advantages for large-scale data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The ZETA-test represents whether a neuron's spike train could be observed by chance if it were not responding to an experimenter's event of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 accurately describes the statistical interpretation of the ZETA-test. This is a correct characterization of the null hypothesis testing framework used by the method, as detailed in the methods section.",
+    "result_type": "MINOR"
+  }
+]

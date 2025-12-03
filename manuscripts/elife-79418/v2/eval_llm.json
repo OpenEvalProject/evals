@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C11",
+      "C50",
+      "C51"
+    ],
+    "result": "Homologous gene expression patterns capture broad neuroanatomical similarities between mouse and human brains at the level of major subdivisions (isocortex, cerebellum, brainstem), but resolution at finer scales such as individual cortical areas is limited using simple correlation measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C7 provide direct evidence from similarity matrix analysis showing broad positive correlations between coarse regions. Claims C11, C50, C51 appropriately interpret these findings, acknowledging both the success at coarse scales and limitations at finer scales. The gene enrichment analysis (C4) validates the biological relevance of the homologous gene set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A multi-layer perceptron neural network with 3 hidden layers and 200 neurons per layer was optimized to classify mouse brain regions from homologous gene expression, achieving training accuracy of 0.936 but validation accuracy of only 0.597, with the training process repeated 500 times to generate latent space representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The neural network architecture and training procedures are well-documented (C12-C14, C74-C77). However, the large gap between training (0.936) and validation (0.597) accuracy suggests potential overfitting. While the authors use this for transformation rather than prediction, the validation performance raises questions about generalizability. The repeated sampling (500 times) helps assess stability but doesn't address the fundamental overfitting concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C22",
+      "C27"
+    ],
+    "result": "The supervised learning approach improved neuroanatomical correspondence resolution for the majority of brain regions, with olfactory areas, claustrum, piriform area, and primary sensorimotor areas showing improvement across all latent spaces, though subcortical regions showed less benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C22, C27 are supported by comprehensive statistical analysis using logistic regression (Bernoulli probability pB=0.78, p=8.64\u00d710\u207b\u2077). The region-specific analyses show 69% of regions with pB\u22650.95, and specific regions are identified with consistent improvement. The statistical approach is appropriate and the results are clearly quantified with confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Sensorimotor isocortical regions exhibit significantly greater transcriptomic similarity between mouse and human compared to supramodal regions, with hierarchical clustering revealing segregation of mouse isocortex into sensorimotor and supramodal clusters, though correspondences are not at the level of individual cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C88 are supported by statistical analysis (linear mixed-effects regression: \u03b2=-0.042, t\u2084\u2089\u2089=-49.9, p<2\u00d710\u207b\u00b9\u2076). The hierarchical clustering analysis (C33-C35, C90) provides clear visual and quantitative evidence. Claim C89 appropriately acknowledges the limitation that correspondences are not at individual area resolution. The findings align with evolutionary expectations about conservation of primary versus association cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C97"
+    ],
+    "result": "The mouse caudoputamen shows strong and homogeneous transcriptomic similarity to both human caudate and putamen, with median correlations of 0.93 and correlations >0.85 across all latent spaces, though subtle spatial patterns of specificity emerge with 77% of voxels maximally similar to caudate or putamen in \u226595% of latent spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 establish the strong overall similarity with clear quantitative metrics. Claims C40-C44 provide detailed voxel-wise analysis showing homogeneous patterns. Claims C47 and C97 appropriately interpret these findings, noting that while subtle specificity exists, the high similarity to both regions suggests equal correspondence. The statistical evidence is robust with specific percentages and correlation values provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The nucleus accumbens shows conservation across species, with 84% of mouse accumbens voxels and 75% of olfactory tubercle voxels matching human accumbens in \u226580% of latent spaces, though the human accumbens exhibits broader similarity patterns including to mouse caudoputamen, fundus of striatum, and olfactory tubercle without sharp regional distinctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C48 establish conservation with specific quantitative evidence. Claims C100-C102 reveal complexity beyond simple one-to-one matching, showing the human accumbens has similar correlation values to multiple mouse striatal regions. This is appropriately characterized as conservation with additional complexity rather than simple homology. The voxel-wise analysis provides detailed spatial information supporting these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Comparison with prior connectivity-based work (Balsters et al., 2020) reveals that transcriptomic similarity and connectivity-based similarity can yield different patterns, with the current study finding homogeneous transcriptomic similarity in the caudoputamen while prior work found distinct connectivity patterns, suggesting that similar transcriptomic signatures can coexist with distinct connectivity to species-specific cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C91-C95 accurately cite prior findings from Balsters et al., 2020. Claim C56 provides a reasonable evolutionary interpretation of how transcriptomic and connectivity patterns can diverge. Claim C96 appropriately notes that connectivity differences need not imply molecular differences. This comparison strengthens the manuscript by contextualizing findings within different modalities of brain organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Integrated gradients analysis identified region-specific influential genes for classification, with Prrg2 and Cd4 most important for caudoputamen and Rfx4 and Glra3 for primary motor area, though the network learns from entire gene expression signatures rather than individual gene spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 report specific genes identified through integrated gradients analysis averaged over 200 training runs. Claim C80 provides appropriate interpretation that the network uses holistic signatures. The use of integrated gradients is a standard attribution method. However, the biological significance of these specific genes is not validated beyond their computational importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Hierarchical clustering in the latent space shows smaller Euclidean distances within and between clusters compared to the original gene space, confirming that the perceptron approach improves segregation of brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by comparison of clustering results shown in Figure 5D. The observation that cluster annotations are similar but distances differ provides evidence that the latent space enhances separation while maintaining biological structure. This serves as validation that the transformation improves signal rather than introducing artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The approach has limitations including that transcriptomic data acquisition is labor-intensive and invasive, with the Allen mouse dataset sampling each gene only once, though new spatial transcriptomic technologies are improving accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 states general knowledge about transcriptomic data acquisition. Claim C104 identifies a specific limitation of the dataset used (single sampling per gene). Claim C105 acknowledges emerging technologies with appropriate citations. These limitations are important for interpreting the robustness of findings and are honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The findings align with evolutionary principles: major brain subdivisions present in ancestral vertebrates show conserved transcriptomic signatures, while finer-scale correspondences are limited because areas within coarse structures have similar profiles and single areas in one brain may not have single correspondents in another brain, reflecting evolutionary history where conserved areas show greater similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 appropriately cite prior work (Myers, 2017) showing similar limitations. Claims C108-C110 connect findings to evolutionary conservation with appropriate citations (Striedter and Northcutt, 2020). Claims C111-C114 provide reasonable evolutionary interpretations of why fine-scale matching is difficult, invoking one-to-many or many-to-many mappings. The evolutionary framework provides coherent explanation for the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study demonstrates that spatial transcriptomic patterns of homologous genes enable quantitative cross-species brain comparisons, with the approach generalizable to other aspects of brain organization and useful for both fundamental neuroscience (translating non-human data to humans) and translational neuroscience (establishing limits and validating model species), ultimately contributing to building transforms between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C115-C117 summarize the main contributions with appropriate scope. Claims C120-C123 discuss implications with supporting citations (Barron et al., 2021; Liu et al., 2021; Mandino et al., 2021). The conclusions are appropriately qualified and acknowledge both strengths and limitations. The vision for future applications is reasonable given the demonstrated proof-of-concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C118"
+    ],
+    "result": "The manuscript contextualizes the work within established knowledge about mouse-human evolutionary divergence (~80 million years ago), the prominence of mouse models, high failure rates of neuropsychiatric drugs in clinical trials, and evolutionary conservation of brain organization, noting that while common organizational blueprints exist across mammals, substantial differences exist particularly in association cortex which expanded dramatically in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish background context with appropriate citations throughout (Kaas 2011a, 2012; Krubitzer 2007; Hay et al., 2014; Preuss 1995; Chaplin et al., 2013; Mars et al., 2016b, 2018b; Rudebeck and Izquierdo, 2022). The citations appear accurate and the background appropriately frames the motivation for the study. This contextual information is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript reviews prior approaches to cross-species comparison including connectivity fingerprinting and transcriptomic mapping, noting that while connectivity-based approaches have been successful for some comparisons (e.g., Balsters et al., 2020 for striatum), the lack of established cortical homologues in mice limits this approach, and while direct registration works for closely related species (mouse-vole), it is not feasible for mouse-human comparisons due to morphological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 review prior work with appropriate citations (Mars et al., 2018a; Passingham et al., 2002; Balsters et al., 2020; Ortiz et al., 2020; Burt et al., 2018; Fulcher et al., 2019; Englund et al., 2021). The assessment of limitations (C62, C67, C68) represents reasonable inference about methodological constraints. This literature review appropriately motivates the chosen approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The study used Allen Mouse Brain Atlas and Allen Human Brain Atlas data, filtering for 2835 mouse-human homologous genes from NCBI HomoloGene, with final atlases containing 67 mouse gray matter regions and 88 human brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 describe the data sources and processing with appropriate citations (Hawrylycz et al., 2012; Lein et al., 2007; NCBI Resource Coordinators, 2018). These are factual descriptions of publicly available datasets and standard processing steps. The methods are clearly documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The authors suggest that future work could train separate models for different sub-trees in the neuroanatomical hierarchy rather than classifying all regions simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is explicitly presented as a suggestion for future research with reference to supplementary figures. This is appropriately framed as speculation about potential methodological improvements rather than a validated finding. The suggestion is reasonable given the hierarchical nature of brain organization.",
+    "result_type": "MINOR"
+  }
+]

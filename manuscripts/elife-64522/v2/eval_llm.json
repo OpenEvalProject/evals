@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Both Boolean (Ising model) and RACIPE (continuous ODE) simulations of the 33-node, 357-edge SCLC regulatory network converge on identifying four predominant steady states (X1-X4) with similar frequency distributions, demonstrating that network topology plays a crucial role in determining phenotypic outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C42 collectively demonstrate convergence between two independent modeling approaches (Boolean and RACIPE) on the same four predominant steady states. The Boolean model identified 10 states with 4 dominant ones at ~24-25% frequency each (C30-C32), while RACIPE's top 20 states were within 2 nodes of the Boolean states and contributed 54% total frequency (C40-C41). This consistency across parameter-independent and parameter-agnostic methods strongly supports the conclusion that network topology determines these outcomes (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The SCLC network topology is highly specific and resilient: randomized networks produce vastly different steady-state distributions (10^4-10^6 states vs. 10 for WT) with no overlap, while most single-edge perturbations (678/714) have negligible effects on network dynamics, with NEUROD1 incoming edges being particularly important for maintaining robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 demonstrate topology specificity through randomization experiments showing no overlap between WT and random network states. Claims C43-C47 establish network resilience through systematic single-edge perturbation analysis (JSD < 0.01 for 678/714 perturbations), with specific identification of NEUROD1 as a key node (24/36 disruptive perturbations were NEUROD1 incoming edges). The convergence of these independent analyses provides strong support for both specificity and resilience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The SCLC network exhibits a 'two-team' topological signature where 32 of 33 nodes form two mutually antagonistic groups (Group A: neuroendocrine markers including ASCL1; Group B: non-NE/mesenchymal markers including REST, SMAD3, ZEB1) that are internally positively correlated but negatively correlated across groups, quantified by a J metric that distinguishes WT (J=496 Boolean, J=373 RACIPE) from random networks (J~11-14) and validated in experimental datasets (CCLE, GSE73160).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 establish the two-team structure through correlation analysis. Claims C51-C54 introduce and validate the J metric showing dramatic differences between WT and random networks (496 vs 11 for Boolean). Claims C55-C58 confirm this pattern in RACIPE simulations and experimental data with statistical significance (p<0.01). The consistency across Boolean simulations, RACIPE simulations, and two independent experimental datasets (C57-C59) provides strong convergent evidence for this topological signature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "An 'influence matrix' that accounts for multi-step regulatory paths (up to length 10) better captures network topology than the direct interaction matrix, showing high correlation with RACIPE steady-state patterns (R1, R2 > 0.85) and experimental data, with this property being unique to the WT network topology. Reduced models derived from the influence matrix better recapitulate WT steady-state distributions than those from interaction matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 establish that the influence matrix correlates well with both simulation and experimental correlation patterns (R>0.85). Claims C65-C66 demonstrate uniqueness through comparison with 1000 random networks. Claims C68-C70 validate the influence matrix approach by showing reduced models derived from it better match WT behavior than interaction matrix-based models. The convergence of correlation analysis, uniqueness testing, and functional validation through reduced models provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The four predominant steady states from simulations map onto four experimentally observed SCLC phenotypes defined by ASCL1 and NEUROD1 expression levels (A+N+, A+N-, A-N+, A-N-), with hierarchical and K-means clustering of experimental data (CCLE, GSE73160) independently identifying K=4 as optimal, and the ASCL1-NEUROD1 pair ranking in the top 1% (top 5 of 528) of gene pairs for characterizing SCLC heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C77 establish the mapping between simulated states and biological phenotypes. Claims C78-C80 demonstrate that multiple independent clustering methods on experimental data converge on four clusters matching the A+N+/A+N-/A-N+/A-N- classification. Claims C83-C84 provide unbiased validation showing ASCL1-NEUROD1 is among the top gene pairs for classification. The convergence of simulation predictions, multiple clustering approaches, and unbiased gene pair analysis provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C102",
+      "C103"
+    ],
+    "result": "The ASCL1low/NEUROD1low (A-N-) phenotype can be subdivided into two distinct subtypes based on YAP1 and POU2F3 expression (YAP1high/POU2F3low and YAP1low/POU2F3high), which are largely mutually exclusive. Hierarchical clustering, K-means clustering (K=4 and K=5), and UMAP analysis all independently identify five total SCLC phenotypes when considering these four genes, with the A+N+ phenotype potentially representing an intermediate state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 establish the subdivision of A-N- into two YAP1/POU2F3-defined subtypes through hierarchical clustering. Claims C88-C91 show K-means clustering results for K=4 and K=5 that consistently identify these subtypes and suggest A+N+ as intermediate. Claims C92-C93 provide independent validation through UMAP (which doesn't require pre-specified cluster numbers). Claims C102-C103 confirm YAP1/POU2F3 mutual exclusivity with literature support. The convergence of multiple independent clustering methods provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C109"
+    ],
+    "result": "The multistability observed in the SCLC network, previously reported from Boolean simulations, is confirmed by RACIPE to persist across many parameter combinations, and emerges from a specific topological signature of two mutually inhibitory, self-activatory teams that constrains the complex 33-node, 357-edge network to produce only four biologically relevant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 establishes prior Boolean evidence for multistability. Claim C96 extends this with RACIPE showing parameter-independence. Claim C109 synthesizes the topological mechanism. The combination of prior work, new RACIPE validation, and mechanistic explanation through the two-team topology provides strong support. However, the claim about 'only four' phenotypes is somewhat overstated given that RACIPE identified many more states (though the top 20 were close to the four Boolean states).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Phenotypic heterogeneity in SCLC, a highly aggressive cancer with no targeted therapy and poor prognosis, cannot be explained by mutational status alone (nearly all cases have TP53/RB1 inactivation), motivating investigation of non-genetic mechanisms underlying the observed phenotypic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the general importance of phenotypic heterogeneity. Claims C4, C18-C20 describe SCLC's clinical characteristics. Claims C21-C22 establish the genetic uniformity (TP53/RB1 inactivation) that makes phenotypic heterogeneity particularly puzzling. These claims are well-supported by citations and represent established knowledge in the field, providing appropriate motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Phenotypic heterogeneity is a widespread biological phenomenon with functional consequences (bet-hedging, division of labor, evolvability) that can arise through stochastic gene expression or multistability. In cancer, increasing evidence shows phenotype is not solely genotype-driven, with non-genetic mechanisms contributing to metastasis and therapy resistance, though no unique mutational signature for metastasis has been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 establish the general principles of phenotypic heterogeneity with appropriate citations. Claims C14-C17 describe the evolving understanding of cancer biology from purely genetic to incorporating non-genetic mechanisms. All claims are well-supported by citations to established literature and represent accurate summaries of the field's current understanding. This provides appropriate background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "SCLC has been historically classified based on morphology and molecular markers (particularly ASCL1 and NEUROD1), with recent work identifying four phenotypes including a 'double positive' state. ASCL1 and NEUROD1 regulate distinct gene sets with different chromatin landscapes, and phenotypic heterogeneity in SCLC has functional consequences for metastasis and drug resistance, with intra-tumor heterogeneity having a transcriptional rather than genomic basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 accurately summarize the historical classification of SCLC with appropriate citations. Claims C97-C101 describe functional consequences and recent findings about heterogeneity. Claims C104-C106 provide additional molecular details. All claims are well-supported by citations to relevant literature and provide important biological context for interpreting the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "SCLC currently has no targeted therapy, and the lack of correlation between mutational profiles and SCLC subtypes argues for non-genetic causes of heterogeneity. Network topology can hold substantial information about steady-state and dynamical behaviors, suggesting that targeting topological features (e.g., via CRISPR) could be a novel therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 accurately describes the current therapeutic landscape for SCLC with appropriate citations. Claim C108 synthesizes findings about the lack of mutational signatures. Claim C110 is well-supported by citations and provides conceptual framing for the therapeutic implications. However, the suggestion about 'attacking' network topology via CRISPR is speculative and not experimentally validated in this work.",
+    "result_type": "MINOR"
+  }
+]

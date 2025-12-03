@@ -1,0 +1,141 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study selected 19 cat, 9 rat, and 4 mouse studies measuring MN properties in adult mammals in vivo, excluding neonatal, non-mammalian, and in vitro studies to optimize inter-study consistency. The selected cat studies used similar experimental protocols including HRP tracer injection and manual morphometric measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 describe the study selection criteria and methodological approaches. The exclusion criteria are well-justified by citations to prior work showing age-related variance (C22, C23), inter-species differences (C24, C25), and protocol-related variance (C26, C27). The description of experimental methods (C33, C34) is consistent with standard practices from the cited time period (1966-2001).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C58",
+      "C65",
+      "C102",
+      "C103"
+    ],
+    "result": "The study derived and validated mathematical power relationships between MN properties from 19 cat studies. These relationships are consistent with prior review papers and Rall's cable theory, providing the first quantitative description of this extensive dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C58, C102, and C103 describe the core methodological contribution. The relationships were derived from normalized global datasets (Figure 3), validated through fivefold cross-validation (Figure 6), and shown to be consistent with both empirical literature (C65) and theoretical predictions from Rall's cable theory (C103). The validation metrics (r\u00b2, p-values, nRMSE) support the adequacy of the power law models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C16",
+      "C17"
+    ],
+    "result": "Significant correlations exist between MN morphological and electrophysiological properties in mammalian MN pools. These empirical associations support Henneman's size principle and are consistent with Rall's cable theory, indicating that all properties in Table 1 are associated with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C7 are supported by extensive citations to prior review papers. Claims C16 and C17 are supported by the derived mathematical relationships (Table 4) and their consistency with theoretical predictions. The study successfully demonstrates quantitative relationships between properties that were previously known qualitatively, with statistically significant correlations (p < 0.01, r\u00b2 ranging 0.17-0.72 in Table 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The normalized cat relationships apply to other mammals including rats and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C20 is partially supported by Figure 7 and Appendix 1\u2014table 5, which show that normalized relationships predict rat and mouse data with similar r\u00b2 values. However, the validation is limited to only 3 property pairs (I_th;R, \u03c4;R, C;R) from a small number of studies (5 rat, 4 mouse), and substantial species-specific offsets exist for \u03c4;R and C;R in mice (high nRMSE values). The claim of general applicability to other mammals requires more comprehensive validation across additional property pairs and species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Experimental measurements of MN properties are subject to membrane leak conductance from imperfect electrode seals and nonlinearities from voltage-activated conductances near threshold. These artifacts are not of major significance in cells with large spike amplitudes and do not affect relationships between parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are well-supported by citations to prior experimental work. The authors acknowledge these sources of measurement error but provide evidence from the literature (C43, C44) that these artifacts do not substantially affect the derived relationships. This is an appropriate assessment of experimental limitations, though the magnitude of systematic errors remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The framework advances understanding of MN neurophysiology by inferring quantitative relationships for pairs of MN properties never concurrently measured in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by Figure 2B showing predicted relationships between property pairs not directly measured together, and by the mathematical derivation approach combining multiple relationships. The fivefold cross-validation (Figure 6) provides evidence that these inferred relationships are reliable. This represents a genuine advance in synthesizing disparate experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The mathematical relationships provide a framework for modelers to tune computational MN models and for experimenters to complete datasets by deriving unmeasured MN properties. Models tuned with these relationships better replicate MN discharging behavior than models with generic values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C19, C106, and C108 describe potential applications but are largely speculative (marked as SPECULATION in evidence_type). Only C107 provides empirical support through citation to Caillet et al., 2022. While the applications are plausible given the validated relationships, the claims about improved model performance and utility for completing datasets require more direct demonstration within this study or more extensive validation in the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C118",
+      "C119"
+    ],
+    "result": "Statistically significant positive power relationships exist between MN and mU size indices across species. This supports Henneman's size principle, which relies on MN membrane resistance, and establishes equivalence between 'small MU', 'low-force MU', and 'low-threshold MU' terminologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C118, C119 are supported by Table 5 showing positive correlations (c \u2208 [2.4, 6.6]) between MN and mU size indices across 14 studies in cats, rats, and mice. The positive relationships between S_MU and S_MN, combined with the I_th-S_MN relationship from Table 4, logically support the equivalence of MU terminologies (C118) and the mechanistic basis of Henneman's principle in membrane resistance (C119, supported by review citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Measuring multiple MN morphometric properties in vitro and electrophysiological properties in vivo for a large sample of MNs is challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by the general knowledge of experimental constraints and is consistent with the limited number of studies identified (19 cat, 9 rat, 4 mouse) and the fact that most studies measured only 2-3 property pairs concurrently. This experimental limitation motivates the study's approach of synthesizing data across multiple studies.",
+    "result_type": "MINOR"
+  }
+]

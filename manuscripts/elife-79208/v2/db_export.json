@@ -1,0 +1,1539 @@
+{
+  "submission": {
+    "id": "84cbcca2-2753-4057-bfd4-dc92b135025d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:30:35.669345Z",
+    "updated_at": "2025-12-03T15:30:35.669345Z"
+  },
+  "content": [
+    {
+      "id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "submission_id": "84cbcca2-2753-4057-bfd4-dc92b135025d",
+      "content_type": "manuscript",
+      "content_text": "# Highly efficient generation of isogenic pluripotent stem cell models using prime editing\n\n## Authors\n\n- Hanqin Li<sup>1</sup> ([ORCID: 0000-0001-7995-1084](https://orcid.org/0000-0001-7995-1084))\n- Oriol Busquets<sup>3</sup> ([ORCID: 0000-0002-1372-9699](https://orcid.org/0000-0002-1372-9699))\n- Yogendra Verma<sup>1</sup>\n- Khaja Mohieddin Syed<sup>1</sup>\n- Nitzan Kutnowski<sup>1</sup> ([ORCID: 0000-0002-3012-4616](https://orcid.org/0000-0002-3012-4616))\n- Gabriella R Pangilinan<sup>1</sup>\n- Luke A Gilbert<sup>3</sup>\n- Helen S Bateup<sup>1</sup> ([ORCID: 0000-0002-0135-0972](https://orcid.org/0000-0002-0135-0972))\n- Donald C Rio<sup>1</sup> ([ORCID: 0000-0002-4775-3515](https://orcid.org/0000-0002-4775-3515)) \u2020\n- Dirk Hockemeyer<sup>1</sup> ([ORCID: 0000-0002-5598-5092](https://orcid.org/0000-0002-5598-5092)) \u2020\n- Frank Soldner<sup>3</sup> ([ORCID: 0000-0002-7102-8655](https://orcid.org/0000-0002-7102-8655)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n2. Innovative Genomics Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n3. Aligning Science Across Parkinson\u2019s (ASAP) Collaborative Research Network Chevy Chase United States ([ROR:05a3y1m41](https://ror.org/05a3y1m41))\n4. Dominick P. Purpura Department of Neuroscience, Albert Einstein College of Medicine The Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))\n5. Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n6. Department of Urology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n7. Arc Institute Palo Alto United States\n8. Chan Zuckerberg Biohub San Francisco United States\n9. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n10. Department of Genetics, Albert Einstein College of Medicine The Bronx United States\n11. Ruth L. and David S. Gottesman Institute for Stem Cell and Regenerative Medicine Research, Albert Einstein College of Medicine The Bronx United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe recent development of prime editing (PE) genome engineering technologies has the potential to significantly simplify the generation of human pluripotent stem cell (hPSC)-based disease models. PE is a multicomponent editing system that uses a Cas9-nickase fused to a reverse transcriptase (nCas9-RT) and an extended PE guide RNA (pegRNA). Once reverse transcribed, the pegRNA extension functions as a repair template to introduce precise designer mutations at the target site. Here, we systematically compared the editing efficiencies of PE to conventional gene editing methods in hPSCs. This analysis revealed that PE is overall more efficient and precise than homology-directed repair of site-specific nuclease-induced double-strand breaks. Specifically, PE is more effective in generating heterozygous editing events to create autosomal dominant disease-associated mutations. By stably integrating the nCas9-RT into hPSCs we achieved editing efficiencies equal to those reported for cancer cells, suggesting that the expression of the PE components, rather than cell-intrinsic features, limit PE in hPSCs. To improve the efficiency of PE in hPSCs, we optimized the delivery modalities for the PE components. Delivery of the nCas9-RT as mRNA combined with synthetically generated, chemically-modified pegRNAs and nicking guide RNAs improved editing efficiencies up to 13-fold compared with transfecting the PE components as plasmids or ribonucleoprotein particles. Finally, we demonstrated that this mRNA-based delivery approach can be used repeatedly to yield editing efficiencies exceeding 60% and to correct or introduce familial mutations causing Parkinson\u2019s disease in hPSCs.\n\n## Introduction\n\nOne of the current challenges of using human pluripotent stem cells (hPSCs) to model human diseases is to precisely and efficiently engineer the genome to introduce designer mutations (Hockemeyer and Jaenisch, 2016; Soldner and Jaenisch, 2018). Currently, the predominant approach in hPSCs is to induce targeted DNA double-strand breaks (DSBs) using highly active site-specific nucleases, such as the clustered regularly interspaced short palindromic repeats (CRISPR)/Cas9 system (Cong et al., 2013; Ding et al., 2013; Jinek et al., 2012; Jinek et al., 2013; Mali et al., 2013) or protein engineering platforms including zinc finger nucleases (Hockemeyer et al., 2009; Soldner et al., 2011; Zou et al., 2009) and transcription activator-like effector nucleases (TALEN) (Boch et al., 2009; Cermak et al., 2011; Hockemeyer et al., 2011). Such targeted DSBs have been shown to substantially increase genome editing efficiency over conventional homologous recombination. However, since nuclease-induced DSBs are in most contexts preferentially repaired by non-homologous end joining compared with homology-directed repair (HDR) mechanisms, DSB-mediated genome editing frequently generates undesirable compound heterozygous editing outcomes with one correctly targeted allele and insertion or deletion (indel) on the second allele, causing the disruption of the protein-coding sequence (Cox et al., 2015). Therefore, it has been challenging to generate disease-associated dominant mutations in a heterozygous setting. By contrast, PE has been shown to overcome this limitation in a wide variety of cell types, as it does not require a DSB but directly repairs a nicked DNA strand (Anzalone et al., 2019). PE is a multicomponent editing system composed of a Cas9-nickase fused to a reverse transcriptase (nCas9-RT) and an extended prime editing (PE) guide RNA (pegRNA) that is reverse transcribed and functions as a repair template at the target site (Anzalone et al., 2019). While successful PE has been previously demonstrated in hPSCs (Chemello et al., 2021; Chen et al., 2021; S\u00fcr\u00fcn et al., 2020), it remains unclear whether this approach has the potential to facilitate the generation of hPSC-based disease models. Here, we systematically compare different genome editing methods and show that PE is overall more efficient and precise to introduce heterozygous point mutations into hPSCs. Furthermore, by optimizing the delivery modality of the PE components, we were able to establish a highly efficient genome editing platform for hPSCs. By comparing plasmid, ribonucleoprotein (RNP), and in vitro transcribed mRNA delivery, we found that nucleofecting nCas9-RT as mRNA combined with synthetically generated and chemically modified pegRNAs yielded editing efficiencies exceeding 60%, which is comparable to efficiencies observed in tumor cell lines (Anzalone et al., 2019; Nelson et al., 2021). Together, these data indicate that PE has the potential to become the preferred method for genome editing of hPSCs.\n\n## Results\n\nTo evaluate the potential use of PE to genetically modify hPSCs, we directly compared editing outcomes of PE to established CRISPR/Cas9 and TALEN targeting approaches with the goal of introducing disease-relevant point mutations. Initially, we chose to target the leucine rich repeat kinase 2 (LRRK2) gene to introduce the G2019S (G6055A) mutation (Gilks et al., 2005), which is one of the most frequent pathogenic substitutions linked to Parkinson\u2019s disease (PD). This mutation is found in approximately 4% of dominantly inherited familial PD cases, in both heterozygous and homozygous forms, and around 1% of sporadic PD cases (Healy et al., 2008). To introduce the G2019S (G6055A) mutation into hPSCs, we generated plasmid-based CRISPR/Cas9, TALEN and PE reagents (without [PE2] or with secondary nicking guide RNAs [ngRNA; PE3]) using previously established optimized design and targeting procedures (Figure 1A; Anzalone et al., 2019; Hockemeyer et al., 2011; Hsu et al., 2021; Soldner et al., 2011; Soldner et al., 2016). Briefly, we co-electroporated the human embryonic stem cell (hESC) line WIBR3 with the respective genome engineering components and an enhanced green fluorescent protein (EGFP)-expressing plasmid to allow for the enrichment of transfected cells by fluorescence activated cell sorting (FACS). Genome editing outcomes were evaluated in the transfected bulk cell population (EGFP-positive) 72 hr after electroporation and in single cell-derived subclones. Next generation sequencing (NGS) of amplicons spanning the G2019S (G6055A) region indicated that 2\u20134% of alleles carried the correct G2019S (G6055A) substitution (Figure 1B and Figure 1\u2014figure supplement 1A). While we observed roughly comparable editing efficiencies using CRISPR/Cas9, TALEN, and PE (with secondary ngRNA [PE3]) gene targeting, all HDR-based approaches generated a significantly higher number of undesired editing outcomes with 19.6 and 3.3% indels for CRISPR/Cas9 and TALEN, respectively, compared with less than 0.5% for PE (Figure 1B and Figure 1\u2014figure supplement 1A). Genotyping of expanded single cell-derived clones showed higher efficiency in generating heterozygous correctly targeted cell lines using PE primarily due to a substantially higher number of compound heterozygous editing outcomes for CRISPR/Cas9 and TALEN targeting with the correctly inserted G6055A sequence variant on one allele and indels on the second allele (Figure 1C, as identified by restriction fragment length polymorphism [RFLP] and Sanger sequencing analysis). Together, these data indicate that PE is overall more efficient and substantially more precise in generating heterozygous mutations in hPSCs, as compared with traditional DSB-based genome engineering approaches.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depicting genome editing strategies to generate the leucine rich repeat kinase 2 (LRRK2; G2019S[G6055A]) mutation. Exon, gray shade; prospacers for CRISPR/Cas9 and PE, pink boxes; protospacer adjacent motif (PAM) sequences, purple boxes; representative PE guide RNA (pegRNA) extension, green arrow; TALEN recognition sites, blue boxes; single-stranded oligodeoxyribonucleotide (ssODN) homology-directed repair (HDR) template for CRISPR/Cas9 targeting, yellow box; the nucleotide to mutate, black open square; intended mutation, red filled square. (B) Comparison of bulk genome editing outcomes between CRISPR/Cas9, TALEN, and PE to insert the LRRK2 (G2019S) mutation (aggregated analysis using four different pegRNA designs and two TALEN pairs), N=2 for CRISPR/Cas9, N=3 for TALEN, N=2 for PE2, and N=6 for PE3. For individual analysis see Figure 1\u2014figure supplement 1. (C) A summary of clonal genotyping comparing different genome editing strategies indicating the number and editing efficiency of single cell-derived clones carrying the correct heterozygous (HET) or homozygous (HOMO) G2019S substitution as identified by restriction fragment length polymorphism analysis (RLFP) followed by Sanger sequencing to excluded additional insertions or deletions (indels). (D) Generating \u03b1-Synuclein (SNCA) familiar Parkinson\u2019s disease (PD) mutations, A30P, and A53T, using PE. pure prime editing (PPE), precise PE; IPE, impure PE; by-product, other indels. A30P, N=3; A53T, N=2. (E) Comparison of bulk PE outcomes on HEK3 (CTT-insertion) edits between hESCs and HEK293T cells. Color scheme, same as (D). N=3. (Error bars indicate the SD, N=number of biological replicates).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Comparison of bulk genome editing outcomes between CRISPR, two transcription activator-like effector nucleases (TALEN) pairs, and four PE designs on LRRK2 (G2019S). Individual analysis of aggregated data is displayed in Figure 1B. CRISPR, N=2; TALEN pair#1, N=2; TALEN pair#2, N=1; PE2-peg1, N=1; PE2-peg4, N=1; PE3-peg1, N=2; PE3-peg2, N=1; PE3-peg3, N=1; PE3-peg4, N=2. (N=number of biological replicates). (B) Schematic of PE strategy for SNCA (A30P) mutation. Exon, gray shade; protospacers in PE, pink boxes; protospacer adjacent motif (PAM) sequences, purple boxes; PE guide RNA (pegRNA) extension, green arrow. (C) Schematic of PE strategy for SNCA (A53T) mutation. Color scheme, same as in B.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Nucleofected hPSCs are directly seeded into 96-well plates by limiting dilution. Upon colonies growing up, plates are duplicated to allocate one plate for cell maintenance and one plate for NGS genotyping. Clones with the desired genotype are expanded to establish genome-edited hPSCs line.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Next generation sequencing (NGS) genotyping of the established hESCs lines harboring leucine rich repeat kinase 2 (LRRK2; G2019S) and \u03b1-Synuclein (SNCA; A30P) mutations, introduced by prime editing (PE) with plasmid-based delivery. The mutated nucleotides are highlighted in red. (B) Pluripotent marker staining of the edited hESCs lines shown in A for POU class 5 homeobox 1 (OCT4), stage-specific embryonic antigen-4 (SSEA4), and alkaline phosphatase (AP). Scale bar = 100 \u00b5m.\n\nTo scale the PE-based genome editing approach and streamline the derivation of correctly modified single cell clones, we applied a recently established genome editing platform, which employs multiplex low cell number nucleofection, limited dilution, and NGS-dependent genotyping instead of the time-consuming and laborious FACS sorting and manual single cell expansion steps to isolate correctly edited hPSC lines (see Figure 1\u2014figure supplement 2 and Experimental procedures for details). While this approach results in slightly lower overall bulk editing efficiencies (as determined by NGS), most likely due to the lack of FACS-based enrichment of transfected cells, the substantially reduced number of cells required and the streamlined workflow allows for highly efficient, multiplexed generation of genome-edited hPSC lines in parallel in less than 4 weeks (Figure 1\u2014figure supplement 2). Importantly for this work, the omission of FACS enrichment allowed us to systematically and simultaneously compare a larger number of delivery modalities, as described below.\n\nTo confirm the feasibility of using PE to introduce point mutations efficiently and robustly into hPSCs, we tested PE at additional genomic loci. We were able to introduce mutations into the previously published and commonly targeted HEK site 3 (HEK3) locus (CTT-sequence insertion) (Anzalone et al., 2019), as well as two additional PD-associated mutations into the \u03b1-Synuclein (SNCA) locus (A30P [G88C]; Kr\u00fcger et al., 1998; and A53T [G209A] Polymeropoulos et al., 1997; Figure 1\u2014figure supplement 1B, C) with editing efficiencies comparable to the LRRK2 locus (Figure 1D and E; quantified as pure prime editing efficiencies [PPE] as defined in Petri et al., 2021). As described for LRRK2, the analysis of single cell-expanded clones revealed the efficient generation of heterozygous and homozygous hPSC lines carrying the dominant A30P mutation in the SNCA gene (Figure 1\u2014figure supplement 3A, B). Importantly, representative cytogenetic analysis of single cell-expanded LRRK2 (G2019S) and SNCA (A30P) clones showed normal karyotypes for seven out of seven tested cell lines. Together, these experiments demonstrate that PE can be used to robustly and efficiently introduce disease-associated mutations into hPSCs to generate isogenic disease models.\n\nDuring these experiments, we noted that editing outcomes for both the PE2 and PE3 approaches appeared considerably lower than what was previously reported for a variety of human tumor cell lines (Anzalone et al., 2019; Nelson et al., 2021). Indeed, we found that plasmid-based targeting of the HEK3 (CTT insertion) locus resulted in only ~4.3% PPE in WIBR3 hESCs compared with ~12.7% PPE in HEK293T tumor cells using the PE3 strategy (Figure 1E). Similar differences in gene editing efficiencies between hPSCs, primary cells, and tumor cell lines have been commonly observed for other genome engineering approaches including CRISPR/Cas9 targeting (Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018). It remains unclear if this difference is the result of cell-intrinsic factors that restrict genome editing specifically in hPSCs or whether the low efficiency is a consequence of insufficient delivery of the PE components.\n\nTo estimate to which extend PE efficiencies could be increased in WIBR3 hESCs by optimized delivery of the prime editor, we used a recently described approach (Bharucha et al., 2021; Habib et al., 2022) and expressed the nCas9-RT protein (PE2 version of the prime editor protein as described in Anzalone et al., 2019) followed by a 2A-EGFP fluorescent reporter from the AAVS1 safe harbor locus (DeKelver et al., 2010; Hockemeyer et al., 2009; Figure 2A). We established an hPSC clone that uniformly expressed GFP and maintained pluripotency (Figure 2B and Figure 2\u2014figure supplement 1). Nucleofection of these cells with a plasmid encoding the HEK3 (CTT insertion) pegRNA (without [PE2] or with [PE3] secondary ngRNA) or with a chemically-modified synthetic pegRNA (without [PE2] or with [PE3] secondary ngRNA) resulted in substantially increased editing efficiencies of up to 22% of correctly inserted modifications (Figure 2C). Similarly, targeting the LRRK2 (G2019S) and SNCA (A30P) loci with chemically-modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA) resulted in editing efficiencies up to 12% and 27%, respectively (Figure 2D). While these data do not exclude fundamental biological differences in the PE process between hPSCs and other cell types, these experiments demonstrate that the method of delivery of the PE components has a significant role in dictating the genome editing efficiency in hPSCs, which can be comparable to the efficiencies observed in tumor cell lines and primary cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the genome editing strategy to knock-in nCas9-RT-2A-GFP (PE2 version of the prime editor protein as described in Anzalone et al., 2019) into the AAVS1 locus. (B) Expression of green fluorescent protein (GFP) and immunostaining of OCT4 on hESCs with nCas9-RT-2A-GFP knock-in. Scale bar = 100 \u00b5m. (C) Comparison of bulk PE outcomes between plasmid-expressed PE guide RNAs (pegRNAs)/nicking guide RNAs (ngRNAs) and synthetic pegRNAs/ngRNAs on HEK3 (CTT-insertion) edits in hESCs with nCas9-RT-2A-GFP knock-in. N=3. (D) Bulk PE outcomes on leucine rich repeat kinase 2 (LRRK2; G2019S) and \u03b1-Synuclein (SNCA; A30P) edits using synthetic pegRNAs/ngRNAs in hESCs with nCas9-RT-2A-GFP knock-in. N=3. (E) Bulk PE outcomes from RNP delivery on HEK3 (CTT-insertion), LRRK2 (G2019S), and SNCA (A30P) edits in human pluripotent stem cells (hPSCs). N=6. (Error bars indicate the SD, N=number of biological replicates).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Green fluorescent protein (GFP) expression, SSEA4 immunostaining and alkaline phosphatase staining on hESCs with nCas9-RT-2A-GFP knock-in. Scale bar = 100 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Coomassie blue staining at each step during the Cas9-nickase fused to a reverse transcriptase (nCas9-RT) protein purification (PE2 version of the prime editor protein as described in Anzalone et al., 2019). (B) Bulk PE outcomes of RNP-based delivery on three mutations in human embryonic stem cells (hESCs) with indicated batch 1 of synthetic PE guide RNA (pegRNA)/nicking guide RNAs (ngRNAs). A subset of the data shown in Figure 2E is analyzed in this panel. N=3. (C) Bulk PE outcomes of RNP-based delivery on three mutations in hESCs with indicated batch 2 of synthetic pegRNA/ngRNAs. A subset of the data shown in Figure 2E is analyzed in this panel. (D) Comparison of bulk PE outcomes between two batches of purified proteins on HEK3 (CTT insertion) edits in hESCs. N=3. (E) Comparison of bulk PE outcomes between two doses of RNP on HEK3 (CTT insertion) edits in hESCs. N=3. (Error bars indicate the SD, N=number of biological replicates).\n\nTo improve PE efficiencies using transient delivery of the PE components, we set out to optimize PE delivery conditions. Initially, we focused on delivering the PE components as RNPs, a highly efficient approach described for CRISPR/Cas9-mediated genome editing (Zuris et al., 2015), which was recently successfully adapted for PE in zebrafish and human primary T cells (Petri et al., 2021). Using recombinant nCas9-RT protein (PE2 version of the prime editor protein as described in Anzalone et al., 2019 purified from bacteria; Figure 2\u2014figure supplement 2A) and the previously established protocols for RNP-based CRISPR/Cas9 editing (Petri et al., 2021; Zuris et al., 2015), we nucleofected pre-assembled RNPs containing the recombinant nCas9-RT protein and chemically modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA) targeting the HEK3 (CTT insertion), LRRK2 (G2019S), and SNCA (A30P) loci. Consistent with previous reports on other cell types, we observed RNP-mediated editing outcomes in hPSCs with locus-dependent efficiencies between 1 and 6% (Figure 2E and Figure 2\u2014figure supplement 2B and Figure 2\u2014figure supplement 2C). While these data clearly indicate the feasibility of RNP-based PE in hPSCs, the observed efficiencies are comparable to the plasmid-based approach and far below the efficiencies observed with stable expression of nCas9-RT from the AAVS1 locus. To exclude that RNP-based PE efficiencies were concentration- or batch-dependent, we repeated some of these experiments with protein from independently purified nCas9-RT batches (Figure 2\u2014figure supplement 2D) and used higher protein concentrations (Figure 2\u2014figure supplement 2E). However, none of these conditions resulted in substantially improved RNP-based editing efficiencies in hPSCs.\n\nAn alternative approach, allowing highly efficient delivery of Cas9 for CRISPR/Cas9-based genome editing (Chang et al., 2013; Hwang et al., 2013; Wang et al., 2013), is to deliver the prime editor using in vitro transcribed mRNA (Chen et al., 2021; S\u00fcr\u00fcn et al., 2020). To systematically compare plasmid-, RNP-, and mRNA-based PE at the above-established HEK3 (CTT insertion), LRRK2 (G2019S), and SNCA (A30P) loci, we nucleofected either: (i) plasmid-based nCas9-RT together with plasmid-based pegRNAs (without [PE2] or with [PE3] secondary ngRNA), (ii) preassembled RNPs containing nCas9-RT protein and chemically modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA), or (iii) in vitro transcribed nCas9-RT mRNA together with chemically modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA). Bulk NGS revealed that the combination of in vitro transcribed mRNA-based delivery of the nCas9-RT with chemically modified synthetic pegRNAs and ngRNAs consistently increased editing efficiencies across all three tested loci up to 13-fold compared with plasmid- and 8-fold compared with RNP-delivery (Figure 3A). Using this optimized in vitro transcribed mRNA-based delivery approach allowed us to achieve editing efficiencies up to 26.7% (for the SNCA locus). When combined with secondary nicking of the non-edited strand (PE3), these editing efficiencies are similar to using the stably nCas9-RT expressing cell lines and comparable to efficiencies commonly observed in human tumor cell lines (Anzalone et al., 2019; Nelson et al., 2021). While mRNA-based editing efficiencies seem to depend on the approach used to in vitro transcribe the nCas9-RT mRNA (Figure 3\u2014figure supplement 1A), we found that mRNA-based editing efficiencies are highly consistent across different nCas9-RT mRNA batches when using the best in vitro transcription conditions (Figure 3\u2014figure supplement 1B). Furthermore, we observed that using single-stranded mRNA compared with either RNPs or double-stranded plasmid DNAs resulted in improved overall health and increased survival of single cells as indicated by increased clonal survival following nucleofection (Figure 3B). To test if the high efficiency of mRNA-based PE is a unique feature of the WIBR3 hESCs, we repeated some key experiments in a second human-induced pluripotent stem cell (hiPSC) line 8858 (Pa\u015fca et al., 2015) by targeting the LRRK2 (G2019S) and SNCA (A30P) loci and found comparable editing efficiencies (Figure 3C). Importantly, we were able to establish single cell-derived clones carrying the correct SNCA (A30P) and LRRK2 (G2019S) mutations with high efficiency (Figure 3D). Considering that potential therapeutic applications would require precise genome editing of hPSCs in xeno-free conditions, we were able to show efficient and robust PE of the LRRK2 (G2019S) locus in WIBR3 hESCs using several commonly used feeder-free culture systems with comparably high PE efficiencies (Figure 3\u2014figure supplement 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparison of bulk PE outcomes between plasmid, RNP, and mRNA-based delivery on indicated modifications in hESCs. Plasmid, mRNA groups, N=3; RNP data shown in Figure 2E was included in this analysis for direct comparison, N=6. (B) Representative images and quantification of alkaline phosphatase staining comparing clonogenicity of hESCs after nucleofection between plasmid, RNP, and mRNA-based delivery. N=2. (C) Bulk PE outcomes on leucine rich repeat kinase 2 (LRRK2; G2019S) and \u03b1-Synuclein (SNCA; A30P) edits in a human-induced pluripotent stem cells (hiPSCs) line using mRNA-based delivery. N=2. (D) A summary of clonal genotyping from LRRK2 (G2019S) and SNCA (A30P) PE in hiPSCs indicating the number and editing efficiency of single cell-derived clones carrying the correct heterozygous (HET) or homozygous (HOMO) substitution. (N=number of biological replicates, Error bars indicate the SD for samples N>2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Comparison of bulk PE outcomes between three mRNA in vitro transcription methods on HEK3 (CTT insertion) edits in hESCs. N=3. (B) Comparison of bulk PE outcomes between three batches of in vitro transcribed mRNA on HEK3 (CTT insertion) edits in hESCs (HiScribe mRNA in vitro transcription). N=3. (C) Bulk PE outcomes on leucine rich repeat kinase 2 (LRRK2; G2019S) in hESCs cultured in feeder-free conditions. N=3. (Error bars indicate the SD, N=number of biological replicates).\n\nA major limitation of classical CRISPR/Cas9 targeting remains the high number and complexity of undesirable editing outcomes (indels). These alleles are resistant to targeting with the same reagents and thus limit the overall HR editing efficiencies in the context of continued editing or retargeting. Given the much reduced occurrence of indel-containing alleles in mRNA-based PE, we hypothesized that this approach might allow efficient retargeting of the same locus. Indeed, we find for all tested loci (HEK3, LRRK2, and SNCA) that additional rounds of mRNA-based PE of the same cell population could substantially increase overall editing efficiencies (Figure 4A). This indicates that multiple rounds of mRNA-based PE could result in precise and nearly complete editing of a bulk hPSC population without any type of selection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79208/elife-79208-fig4-v2.jpg)\n\n**Figure 4.:** (A) Comparison of bulk PE outcomes in a multi-dosing strategy using mRNA-based delivery on the three indicated mutations in hESCs. N=3. (B) Bulk next generation sequencing (NGS) analysis indicating allele spectrum before (unedited) and after mRNA-based PE (PE3, single dosing) to correct the heterozygous SNCA (A30P) mutation in hESCs. N=3. The dashed line indicates the 50% allele frequency. The portion of the wild-type (WT) allele converted from the mutant allele is hatched. (C) Heatmap and summary of clonal genotyping from an SNCA (A30P) heterozygous mutation correction experiment in a 96-well format. The wells with edited clones containing more than 5% insertion or deletion (indel) reads were labeled as Indel. NA indicates wells without hESCs. (D) Bulk NGS analysis indicating allele spectrum before (unedited) and after mRNA-based PE (PE3, single dosing) to correct the homozygous SNCA (A30P) mutation in hESCs. N=3. (E) Heatmap and summary of clonal genotyping from an SNCA (A30P) homozygous mutation correction experiment in a 96-well format. The wells with edited clones containing more than 5% indel reads were labeled as Indel. NA indicates wells without hESCs. (Error bars indicate the SD, N=number of biological replicates).\n\nThe data presented thus far describes the insertion of disease-associated mutations into a wild-type genetic background. To test whether mRNA-based PE can be used to correct disease-causing mutations, we designed pegRNAs to specifically target only the mutated SNCA (A30P) allele to revert this mutation back to wild type in hPSCs. When targeting heterozygous (Figure 4B and C) or homozygous (Figure 4D and E) SNCA (A30P) hESC lines, bulk NGS indicated the correction of 31.0 (Figure 4B) and 30.1% (Figure 4D) of the mutated A30P alleles, respectively. Subsequent genotyping of single-cell derived clones indicated 26.2 (Figure 4C) and 48% (Figure 4D; combined heterozygous and homozygous) precisely corrected clones without additional undesired modifications (indels) of the wild-type allele. Taken together, our data indicate that in vitro transcribed mRNA-based PE is a highly efficient gene editing approach in hPSCs that has the potential to greatly facilitate the generation of disease-specific hPSC models.\n\n## Discussion\n\nThe experiments performed here provide a detailed experimental road map for how to implement PE towards genome engineering of hPSCs. We show that mRNA transfection of the prime editor component (nCas9-RT) paired with the transfection of chemically modified guide RNAs is well tolerated and highly effective for introducing precise designer mutations in hiPSCs and hESCs. This work focuses on PE, which is highly versatile to introduce not only a wide range of disease-associated single nucleotide sequence variants but also more complex genetic alterations such as insertions and deletions. However, there are additional non-DSB-based genome editing approaches (e.g. based editors) which, dependent on the specific context, have been shown to efficiently introduce genetic modifications in hPSCs (we refer to recent reviews for a detailed discussion of the advantages and disadvantages of such approaches Anzalone et al., 2020; Molla et al., 2021; Zeballos C and Gaj, 2021). Although not tested, we believe that the here described RNA transfection-based delivery modalities could be adapted to increase genome editing efficiencies for genome editing approaches other than PE. Considering that mRNA-based PE does not require specialized molecular or biochemical skills and consistently achieves high editing efficiency in hESC and hiPSC lines, we predict that this approach has the potential to greatly facilitate the generation of disease-specific hPSC models and will be widely adopted by researchers.\n\nDuring the process of establishing this workflow, we made several key observations. We find that PE can be as efficient in hPSCs as has been reported for cancer cells (Anzalone et al., 2019; Nelson et al., 2021). We demonstrate that this approach efficiently allows for the introduction or correction of heterozygous disease-related mutations in hPSCs with base-pair precision and without introducing undesired additional modifications on the second allele. The resulting cells showed a normal karyotype, consistent with low genotoxicity of PE due to the lack of DSBs (Anzalone et al., 2019).\n\nA recent study reported comparable high PE efficiencies in a doxycycline-inducible PE2-expressing hESC line (Habib et al., 2022). The authors observe that PE3-mediated PE is generally accompanied by the generation of indels around the target site caused by the combinatory activity of the RT and pegRNA. While we also find a certain degree of indels (impure PE [IPE] and by-products) at the target site using the PE3 approach, the frequency is usually low compared with the intended sequence modifications which is consistent with previous data in other cell types (Anzalone et al., 2019; Chen et al., 2021; Nelson et al., 2021). While it has been shown that the frequency of undesired edits varies widely across genomic loci and is pegRNA dependent, it is possible that indel frequency is also affected by the different delivery modalities (e.g. different mRNA transfection of the PE component paired with the transfection of chemically modified guide RNAs has different kinetics and expression levels compared with other approaches). Due to the unique property of hPSCs to allow for the expansion of clonal cell lines, we do not believe that such on-target indels limit the use of PE for disease modeling approaches because undesired modifications can be easily excluded through targeted sequencing during quality control of individual clones.\n\nIn the past, generating such isogenic cell lines that differ exclusively at individual disease-causing sequence variants was highly laborious and an experimental bottleneck. Here we overcome this challenge by deploying PE via optimized delivery methods. We demonstrate that hPSCs can be subjected to several rounds of PE, eventually yielding up to 60% correctly targeted alleles. Importantly, PE efficiencies might be further increased by including mRNAs coding for DNA mismatch repair inhibiting proteins, a novel approach that has been recently shown to significantly improve the PE platform (Chen et al., 2021). These very high editing efficiencies without the need for selection of enrichment of targeted clones provide an intriguing platform to develop more robust in vitro disease models and potential therapeutic applications of PE in hPSCs or differentiated cell types. In our study, we successfully introduced three out of three familial PD point mutations into hPSCs using previously established algorithms to design pegRNAs (Hsu et al., 2021). In each case, a classical protospacer adjacent motif (PAM) was present close to the intended amino acid substitution and we did not explore more complex or challenging genetic modifications. As is the case for all genome editing approaches, PE efficiencies vary widely depending on the specific genomic context and pegRNA design, and certain genetic modifications will require more extensive pegRNA testing and validation. However, we expect systematic approaches that establish optimized design parameters for PE, as recently described for cancer cells (Kim et al., 2020b; Nelson et al., 2021) and the development of Cas9 variants with non-classical PAMs (Chatterjee et al., 2020; Kleinstiver et al., 2015; Miller et al., 2020) will overcome these limitations and combined with the optimized protocols reported here will allow PE to become a general method of choice for genome editing in hPSCs.\n\nThe focus of this work was to establish a highly efficient platform for PE in hPSCs and although all generated prime edited cell lines showed a normal karyotype consistent with low genotoxicity of PE due to the lack of DSBs (Anzalone et al., 2019), it is important to point out that we refrained from a detailed off-target analysis. We believe that there are already available substantial datasets in a variety of cell types indicating that PE is highly specific and shows much lower guide RNA-dependent or independent off-target effects compared with DSB-based CRISPR/Cas9 or base editing approaches (Gao et al., 2021; Geurts et al., 2021; Habib et al., 2022; Jin et al., 2021; Kim et al., 2020a; Schene et al., 2020). Genome-wide off-target analyses of in vitro generated cell lines including whole genome sequencing-based approaches remain challenging even for conventional CRISPR/Cas9-based cutting approaches due to the substantial number of genetic alterations which occur during regular cell culture (Kuijk et al., 2020). Thus, a key future step toward the development of clinical PE approaches will require the development of sophisticated off-target analyses tools that account for nCas9 single strand break-mediated and transient reverse transcriptase expression-mediated genetic alterations.\n\n## Methods\n\n### hPSCs culture\n\nAll hESC and hiPSC lines were routinely maintained on irradiated or mitomycin C-inactivated mouse embryonic fibroblast (MEF) feeder layers as described previously (Soldner et al., 2016). Detailed protocols for culturing of MEFs and hPSCs can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4msqu6e; https://doi.org/10.17504/protocols.io.b4pbqvin). The hiPSC 8858 line (Sergiu Pasca lab, Stanford; Pa\u015fca et al., 2015) and hESC line WIBR3 (NIH Registration Number: 0079; RRID:CVCL_9767; Whitehead Institute Center for Human Stem Cell Research, Cambridge, MA; Lengner et al., 2010) were maintained on MEFs in hESC media (Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 (DMEM/F12) [Thermo Fisher Scientific]) supplemented with 15% fetal bovine serum (Hyclone), 5% KnockOut Serum Replacement (Thermo Fisher Scientific), 1 \u2009mM glutamine (Invitrogen), 1% nonessential amino acids (Thermo Fisher Scientific), 0.1 \u2009mM \u03b2-mercaptoethanol (Sigma) and 4 \u2009ng/mL fibroblast growth factor 2 (FGF2) (Thermo Fisher Scientific/Peprotech), 1\u00d7 Penicillin-Streptomycin (Thermo Fisher Scientific). All cell lines have been routinely tested to be free of mycoplasma contaminations using a PCR-based mycoplasma detection test. Cultures were passaged every 5\u20137 days with collagenase type IV (Invitrogen; 1 \u2009mg/mL). The identities of all parental hESC and hiPSC lines were confirmed by DNA fingerprinting . If required (as indicated for the methods for the respective experiments), hiPSCs were adapted to feeder-free conditions on Vitronectin (VTN-N, Thermo Fisher Scientific) coated plates in mTeSR-plus (StemCell Technologies) or StemFlex (Thermo Fisher Scientific) media. Detailed protocols for feeder-free culturing of hPSCs can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4mcqu2w).\n\n### Culturing and transfection of HEK293T cells\n\nHEK293T cells (RRID:CVCL_0063) were maintained in HEK293T media (DMEM [Thermo Fisher Scientific], 15% FB Essence [Avantor], 2 mM glutamine [Thermo Fisher Scientific], 1 mM nonessential amino acids [Thermo Fisher Scientific], 1\u00d7 Penicillin-Streptomycin [Thermo Fisher Scientific]), and passaged every other day with 0.25% Trypsin with Ethylenediaminetetraacetic acid (EDTA) (Thermo Fisher Scientific). For transfection, cells were seeded into 0.2% gelatin-coated 12-well plates at 1 \u00d7 104 cell/cm2. One day later, cells in each well were transfected with 500 ng pCMV-PE2 (pCMV-PE2 plasmid was a gift from David Liu. Addgene#132775; http://n2t.net/addgene:132775; RRID:Addgene_132775; Anzalone et al., 2019), 330 ng pU6-pegRNA and 170 ng pBPK1520-ngRNA for PE3 strategy or 500 ng pCMV-PE2, 500 ng pU6-pegRNA for PE2 strategy using 1 \u00b5L lipofectamine 2000 (Thermo Fisher Scientific) in opti-MEM (Thermo Fisher Scientific). Cells were collected for genomic DNA extraction and NGS-based allele quantification 3 days post-transfection. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.eq2lynkzpvx9/v1).\n\n### Molecular cloning\n\nAll standard molecular cloning procedures are performed following published protocols (Green and Sambrook, 2012). PegRNAs-expressing plasmids (pU6-pegRNA) were cloned by ligating annealed oligo pairs (Supplementary file 2) with BsaI-digested pU6-peg-GG-acceptor (pU6-pegRNA-GG-acceptor was a gift from David Liu. Addgene #132777; http://n2t.net/addgene:132777; RRID:Addgene_132777) as described previously (Anzalone et al., 2019). CRISPR-RNA expressing plasmids (px330-GFP) targeting the LRRK2 locus were cloned by ligating annealed oligo pairs (Supplementary file 2) with BbsI-digested px330-GFP as described previously (Soldner et al., 2016). Nicking ngRNA-expressing plasmids (pBPK1520-ngRNA) were cloned by ligating annealed oligo pairs (Supplementary file 2) with BsmBI-digested pBPK1520 (BPK1520 was a gift from Keith Joung. Addgene#65777; http://n2t.net/addgene:65777; RRID:Addgene_65777) as described previously (Kleinstiver et al., 2015). The heterodimeric TALEN pairs to target LRRK2 (G2019S) were constructed and tested as described previously (Cermak et al., 2011; Hockemeyer et al., 2011) using the following variable di-residue (RVD)-containing tandem repeat sequences. Pair#1: TALEN1 (plasmid LRRK2-TALEN-TA01L): 5\u2019-HD-NI-NG-NG-NN-HD-NI-NI-NI-NN-NI-NG-NG-NN-HD-NG-3\u2019 and TALEN3 (Plasmid LRRK2-TALEN-TA03R): 5\u2019-HD-HD-HD-HD-NI-NG-NG-HD-NG-NI-HD-NI-NN-HD-NI-NN-NG-NI-HD-NG-3\u2019. Pair#2: TALEN2 (Plasmid LRRK2-TALEN-TA04L): 5\u2019-NN-HD-NI-NI-NI-NN-NI-NG-NG-NN-HD-NG-NN-NI-NG-3\u2019 and TALEN4 (Plasmid LRRK2-TALEN-TA07R): 5\u2019- NI-NG-HD-HD-HD-HD-NI-NG-NG-HD-NG-NI-HD-NI-NN-HD-NI-NN-NG-3\u2019.\n\n### mRNA in vitro transcription\n\nThe plasmid pCMV-PE2 was cleaved with restriction endonuclease PmeI (100 \u00b5g DNA in 1 mL) for 4 hr at 37\u00b0C. The cleaved DNA was isolated by phenol-chloroform extraction and ethanol precipitation and resuspended at 500 \u00b5g/mL in TE buffer. The DNA was stored at \u201320\u00b0C. Eight 20 \u00b5L in vitro transcription reactions were set up using 1 \u00b5g of template DNA in each reaction using the New England Biolabs HiScribe T7 ARCA kit with tailing (E2060S; as per the manufacturer\u2019s instructions) and incubated for 2 hr at 37\u00b0C in an incubator (not a temp block). Using eight 20 \u00b5L reactions, after transcription, DNase I treatment, and polyA tailing (as per the manufacturer\u2019s instructions), the RNA was purified on four 50 \u03bcg New England Biolabs Monarch RNA cleanup columns (T2040L; as per the manufacturer\u2019s instructions) and eluted in 25 \u03bcL per column RNase-free H2O and pooled. The RNA was stored at \u201380\u00b0C and the yield from the total of eight reactions was ~200 \u03bcg purified PE2 mRNA by measuring A260 on a Nanodrop 2000c spectrophotometer. Note that the nCas9-RT fusion mRNA is ~6500 nt. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b3fmqjk6).\n\n### nCas9-RT protein purification\n\nThe nCas9-RT fragment from pCMV-PE2 was retrieved by BglII digestion and then cloned into the pET30a(+) expression vector (Novagen 69909) in the frame between the NotI and NdeI sites using NEBuilder HiFi DNA Assembly Master Mix (NEB) with bridging gblocks (Supplementary file 1) to encode a version of the protein bearing a C-terminal His6-tag. For protein expression, the plasmid was introduced into Rosetta 2 (pLysS). The cells were grown at 37\u00b0C and shaken at 175 rpm. Isopropyl \u03b2- d-1-thiogalactopyranoside (IPTG) (0.5 mM) was added at an OD600 of 0.6 and the cells were grown for 16 hr at 18\u00b0C. The cells were harvested by centrifugation (5000 \u00d7 g) for 10 min at 4\u00b0C. Harvested cell pellets were washed with phosphate-buffered saline (PBS) and snap-frozen in liquid nitrogen for later purification. Cell pellets were thawed on ice, disrupted in 35 mL lysis buffer (25 mM HEPES-KOH pH 7.6, 1 M KCl, 20 mM imidazole, 1 mM dithiothreitol (DTT), 1 mM phenylmethylsulfonyl fluoride (PMSF), and 1 \u00d7 protease inhibitor cocktail), briefly sonicated, then clarified by centrifugation at 25,000 \u00d7 g for 30 min. Supernatants were filtered through a 0.22 \u03bcm syringe filter before application to 5 mL of nickel resin (Ni-NTA Superflow, QIAGEN) equilibrated in loading buffer (25 mM HEPES-KOH pH 7.6, 150 mM KCl, 20 mM imidazole, 1 mM DTT, and 1 mM PMSF). The resin was washed with 100 mL loading buffer followed by 50 mL wash buffer (25 mM HEPES-KOH, pH 7.6, 150 mM KCl, 40 mM imidazole, 1 mM DTT, and 1 mM PMSF). Protein was eluted in batch six times with 10 mL elution buffer (wash buffer + 500 mM imidazole). The eluted protein was diluted into a low-salt buffer (25 mM HEPES-KOH pH 7.6, 100 mM KCl, 1 mM DTT, and 1 mM PMSF), then loaded onto a 1 mL HiTrap heparin HP column (GE Healthcare) pre-equilibrated in low-salt buffer and eluted with a linear gradient of 100 mM to 1 M KCl over 40 column volumes. Peak fractions were concentrated to 8 mg/mL using a Spin-X UF 20 50 kDa molecular weight cutoff (MWCO) (Corning). Protein concentration was determined by UV absorbance at a wavelength of 280 nm. The final protein purity was determined by sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) and Coomassie staining to be around 90%. The C-terminal His6-tag was not removed prior to the experiments. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4yxqxxn).\n\n### PE, CRISPR/Cas9, and TALEN-based genome editing using plasmid vectors\n\nAs indicated for the respective experiments, plasmid vector-based PE was performed using electroporation or nucleofection (using the high throughput hPSCs genome editing pipeline described below). Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4qnqvve).\n\nBriefly for electroporation-based plasmid-mediated TALEN, CRISPR/Cas9, and PE, hPSCs were cultured on MEFs in Rho-associated protein kinase (ROCK)-inhibitor (10 \u03bcM, Stemgent; Y-27632) for 24 hr before electroporation. Cells were harvested using 0.05% trypsin/EDTA solution (Thermo Fisher Scientific) and resuspended in PBS. 1 \u00d7 107 cells were electroporated (Gene Pulser Xcell System, Bio-Rad: 250 V, 500 mF, 0.4 cm cuvettes) with the following plasmid vectors: for the PE PE2 strategy, we used 33 \u00b5g pCMV-PE2-GFP (Anzalone et al., 2019), (pCMV-PE2-P2A-GFP was a gift from David Liu. Addgene#132776; http://n2t.net/addgene:132776; RRID:Addgene_132776) and 12 \u00b5g pU6-pegRNA. For the PE PE2 strategy, we used 33 \u00b5g pCMV-PE2-GFP, 12 \u00b5g pU6-pegRNA, and 5 \u00b5g pBPK1520-ngRNA. For TALEN editing, we used 7.5 \u00b5g for each (left and right) TALEN-nuclease plasmid, 10 \u00b5g pEGFP-N1 (Clontech, Takara Bio USA, 6085\u20131), and 26 \u00b5g ssODN (single strand oligonucleotide containing the respective modification). For CRISPR/Cas9 editing, we used 16 \u00b5g pX330-GFP guide RNA (gRNA) and 26 \u00b5g ssODN (single strand oligonucleotide containing the respective modification). A list of the respective plasmids can be found in Supplementary file 2. Cells were maintained on MEFs for 72 hr in the presence of ROCK-inhibitor followed by FACS sorting (FACS-Aria; BD-Biosciences) of a single-cell suspension. EGFP expressing cells were either directly used for bulk NGS-based allele quantification or subsequently plated at a low density on MEFs in hESC media supplemented with ROCK-inhibitor for the first 24 hr. Individual colonies were picked and expanded 10\u201314 days after electroporation. Correctly targeted clones were subsequently identified by RFLP and genomic sequencing (see Supplementary file 1 for respective primer sequences).\n\nFor nucleofection-based PE, hPSCs were cultured on MEFs in ROCK-inhibitor for 24 hr before nucleofection. Cells were harvested using collagenase IV (Thermo Fisher Scientific) followed by accutase (Thermo Fisher Scientific) and 5 \u00d7 105 cell were resuspended in 20 \u00b5L nucleofection solution and nucleofected (4D-Nucleofector TM Core +X Unit [Lonza], nucleofection program P3 primary cell, CA137) using the following plasmids vectors: for the PE PE2 strategy, we used 500 ng pCMV-PE2 and 500 ng pU6-pegRNA. For the PE PE2 strategy, we used 500 ng pCMV-PE2, 330 ng pU6-pegRNA, and 170 ng pBPK1520-ngRNA. A list of the respective plasmids can be found in Supplementary file 2. After nucleofection, cells were maintained either on MEFs in hESC media or on VTN-N coated plates in feeder-free media, both containing ROCK-inhibitor and either used for NGS-based allele quantification or single cell cloning (following the high throughput hPSCs genome editing pipeline described below).\n\n### PE using RNP\n\nThe hPSCs cultured on MEFs were harvested and nucleofected using the same procedure as described in the plasmid delivery section, except with RNPs consisting of 90 pmol purified nCas9-RT protein, 300 pmol chemically modified synthetic pegRNA (Supplementary file 2) for PE2 strategy or 90 pmol purified nCas9-RT protein, 200 pmol chemically modified synthetic pegRNA, and 100 pmol chemically modified synthetic ngRNA (Supplementary file 2) for PE3 strategy. For increased protein doses, 270 pmol purified nCas9-RT protein were used instead. All RNPs were pre-assembled at room temperature (RT) for 10 min before nucleofection. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4qnqvve).\n\n### PE using mRNA\n\nThe hPSCs cultured on MEFs were harvested and nucleofected using the same procedure as described in the plasmid delivery section, except with 4 \u03bcg in vitro transcribed nCas9-RT mRNA, 150 pmol chemically modified synthetic pegRNA for PE2 strategy, or 4 \u03bcg in vitro transcribed nCas9-RT mRNA, 100 pmol chemically modified synthetic pegRNA and 50 pmol chemically modified synthetic ngRNA for PE3 strategy (Supplementary file 2). For feeder-free culture, hPSCs were harvested using accutase. In multidosing experiments, after the first nucleofection, hPSCs were nucleofected for the second and third time on days 7 and 14, respectively. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4qnqvve).\n\n### Genotyping of single cell expanded genome edited hPSCs clones by RLFP\n\nThe RFLP analysis was performed as previously described Hernandez et al., 2005 following standard protocols (Green and Sambrook, 2012) to screen single-cell expanded clones for the insertion of the LRRK2 (G2019S) mutation. Genomic DNA was amplified with primers SP-LRRK2-RLFP and ASP-LRRK2-RLFP (Supplementary file 1) under standard PCR conditions followed by restriction digest with SfcI. The LRRK2 (G6055A, G2019S) mutation at coding nucleotide 6055 of LRRK2 creates a novel SfcI cleavage site which allows to distinguish the two alleles after separation on a 3% agarose gel with the reference allele generating fragments of 228 bp and 109 bp and the mutated allele generating fragments of 207 bp, 109 bp, and 21 bp. Mutation carrying clones were further analyzed using Sanger and NGS sequencing of the PCR product.\n\n### High throughput hPSCs genome editing pipeline\n\nAfter nucleofection, cells were directly seeded onto MEF 96-well plates, at seeding densities of 10 cells/well in hPSCs media containing ROCK-inhibitor. Media was changed on days 4, 7, 10, 12, and 13 and ROCK-inhibitor was supplemented on day 13. On day 14, cells were washed with PBS once and then treated with 40 \u00b5L 0.25% trypsin for 5 min at 37\u00b0C, then 60 \u00b5L hPSC media containing ROCK-inhibitor was added to each well to inactivate trypsin. Cells were then gently triturated and 50 \u00b5L cell suspension was transferred to a 96-well PCR plate preloaded with 50 \u00b5L 2 \u00d7 lysis buffer (100 mM KCl, 4 mM MgCl2, 0.9% NP-40, 0.9% Tween-20, 500 \u00b5g/mL proteinase K, in 20 mM Tris-HCl, pH 8) for DNA extraction. The remaining 50 \u00b5L of cells were reseeded to a new MEF 96-well plate preloaded with 100 \u00b5L hPSC media containing ROCK-inhibitor and cultured for another 7 days with hPSC media changed daily. Meanwhile, the lysed cells in 96-well plates were incubated at 50\u00b0C overnight and then heated to 95\u00b0C for 10 min to inactivate the proteinase K. A ~300 bp genomic region covering the designed mutation was amplified using primers (Supplementary file 1) containing NGS barcode attachment sites (GCTCTTCCGATCT) from 2 \u00b5L cell lysis from each well with Titan DNA polymerase. Amplicons were purified at the UC Berkeley DNA Sequencing Facility, then i5/i7 barcoded in indexing PCR, pooled, and sequenced on 150PE iSeq in the NGS core facility at the Innovative Genomics Institute. CRISPResso2 (Clement et al., 2019) in PE mode was used to analyze the NGS data to identify wells containing the designed mutation, with the following criteria. Heterozygous candidates: number of reads aligned >100, 70%> mutant allele frequency >20%, indels frequency <5%; homozygous candidates: number of reads aligned >100, mutant allele frequency >70% and indels frequency <5%. Cells in those identified wells were single-cell subcloned once to ensure clonality. Detailed protocols for high throughput hPSCs genome editing (https://doi.org/10.17504/protocols.io.b4mmqu46) and genotyping by NGS (https://doi.org/10.17504/protocols.io.b4n3qvgn) can be found on protocols.io.\n\n### AAVS1 locus knock-in\n\nTo clone the AAVS1-SA-neo-CAGGS-nCas9-RT-2A-GFP targeting vector, the PmeI/SacII digested nCas9-RT fragment of pCMV-PE2-GFP were Gibson assembled into the EcoRI/KpnI sites of a parental AAVS1-SA-neo-CAGGS vector (a gift from Dr John Boyle). The hPSCs cultured on MEFs were harvested and nucleofected as described in the plasmid delivery section, except with 1 \u00b5g targeting vector and pre-assembled RNP consisting of 80 pmol purified Cas9 (Macrolab, UC Berkely) and 300 pmol chemically-modified sgRNA (Synthego) targeting the AAVS1 locus (Supplementary file 1). Cells were replated onto DR4 MEFs postnucleofection in hESC media containing ROCK-inhibitor then selected with 70 \u03bcg/mL G418 (invitrogen) for 10 days with media change daily from day 3. Survived clones were manually picked, expanded, gDNA extracted and PCR genotyped with primers (Supplementary file 1) flanking each homologous arms using PrimeStar GXL DNA polymerase (Takara). Correctly targeted clones were further expanded and banked. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b37kqrkw).\n\n### Karyotyping using array-based comparative genomic hybridization (aCGH)\n\nHuman hPSCs cultured on MEFs were harvested using collagenase IV as big aggregates and settled 3 times in washing media (DMEM [Thermo Fisher Scientific], 5% Newborn Calf Serum [Sigma], 1\u00d7 Penicillin-Streptomycin [Thermo Fisher Scientific]), then strained by an 80 \u03bcm strainer. Cell aggregates that did not pass through the strainer were collected, snap frozen as cell pellet, then sent to Cell Line Genetics (Madison, WI) for aCGH karyotyping. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.kxygxzdrov8j/v1).\n\n### Pluripotent marker staining\n\nFor immunostaining, hPSCs cultured on MEFs were fixed in 4% paraformaldehyde at RT for 10 min, permeabilized in 0.3% Triton-X100/PBS for 20 min, blocked in blocking solution [3% bovine serum albumin (BSA/PBS)] for 1 hr, incubated with primary antibody (OCT4 [DSHB Cat# PCRP-POU5F1-1D2, RRID:AB_2618968], 1:200; SSEA4 [DSHB Cat# MC-813\u201370 [SSEA-4], RRID:AB_528477], 1:200) in blocking solution at 4\u00b0C overnight, then washed with PBS and incubated with secondary antibody (Thermo Fisher Scientific Cat# A-11001, RRID:AB_2534069, 1:1000) in blocking solution at RT for 1 hr. For alkaline phosphatase staining, cells were fixed with cold 4% paraformaldehyde for 10 min, equilibrated with 100 mM Tris-HCl, pH 9.5 for 10 min at RT, then incubated with nitro-blue tetrazolium and 5-bromo-4-chloro-3'-indolyphosphate (NBT/BCIP) (SK-5400, Vector laboratories) at RT for 2 hr to overnight. Images were acquired on a Zeiss Axio Observer A1 inverted fluorescence microscope. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4yyqxxw).\n\n### Single-cell survival assay\n\nThe hPSCs nucleofected with the plasmid, RNP, or mRNA were seeded to MEFs at 100 cells/cm2, then cultured for 14 days with media changed every other day. Cells were then stained for alkaline phosphatase as described above and the number of colonies in each condition was counted. Detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.4r3l2okxxv1y/v1).\n\n### Bulk NGS and allele quantification\n\nEdited bulk cells were collected using trypsin at day 5 postnucleofection, then DNA extracted, mutation-region amplified, NGS and analyzed as described above detailed protocols can be found on protocols.io (https://doi.org/10.17504/protocols.io.b4n3qvgn). From the CRISPResso2 (RRID:SCR_021538) reported \u2018Quantification_of_editing_frequency\u2019 table, the allele frequency of each group was calculated as follows:\n\n### Software and statistics\n\nBar graphs were drawn in Graphpad Prism 9 (RRID:SCR_002798). Error bars indicate the SD. Number of biological replicates (N) is indicated in each figure legend. Heatmaps were generated using Morpheus (Broad Institute, RRID:SCR_017386).\n",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "f3e04c2f-1a88-4b15-a3ad-8ec450387f6c",
+      "submission_id": "84cbcca2-2753-4057-bfd4-dc92b135025d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sim\u00f3n M\u00e9ndez-Ferrer, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79208.sa0](https://doi.org/10.7554/eLife.79208.sa0)\n\nIn this manuscript, Li et al., directly compare different editing strategies for human pluripotent stem cells and demonstrate that prime editing is more efficient and precise, compared with double strand break-based methods. They also confirm the suitability of prime editing for the introduction of different mutations related to Parkinson\u2019s disease as a model. In this process the authors noted a lower editing efficiency of human pluripotent stem cells, compared with tumour cell lines, and explored ways to improve it. Nucleofection of in vitro-transcribed mRNA-based delivery approach significantly increased the editing efficiency, without the need to select for targeted clones, and multiple rounds of mRNA-based prime editing could yield near complete editing of hPSCs, including disease-causing mutations. The proposed platform paves the way for future prime editing methods for hPSCs.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Sim\u00f3n M\u00e9ndez-Ferrer, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79208.sa1](https://doi.org/10.7554/eLife.79208.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \u201cHighly efficient generation of isogenic pluripotent stem cell models using prime editing\u201d for consideration by eLife. I apologise for the long time required for review. Your article has now been reviewed by 2 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their Identity: Angel Raya (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors should discuss the potential advantages and disadvantages of prime editing compared with other strategies, such as base editing. Although prime editing could target 90% human pathogenic variants and enables a wider range of sequencing changes, it has been associated with the generation of insertion and deletion base products as well.\n\n2) Previous studies have reported undesired on-target edits, such as indels, using the PE3 system. The authors should discuss the reasons for their different results.\n\n3) Other potential limitations, such as the complexity of pegRNA design and its effect on editing efficiency, should be discussed as well.\n\n4) While the authors do search for unwanted editions in the vicinity of the targeted area, no attempt is made at detecting and quantifying more distant undesired editing events, including off-target events. This information should be important to readers when selecting a protocol for generating isogenic controls. The authors should better estimate the safety of their PE protocol. Probably the easiest way to do this would be by WGS of some selected edited versus parental iPSC lines. Particularly informative would be any of the multi-targeted cells shown in Figure 4A (if individual clones were obtained) or any of the SNCA (A30P)-corrected clones shown in Figure 4C, searching for de novo SNVs or indels potentially arising from off-target PE or from overall genotoxicity of the procedure (aCGH karyotyping is not resolutive enough for this). Analyzing genome stability of the clones generated in Figure 2 would also be informative to assess the safety of constitutively expressing nCas9-RT in iPSC.\n\n5) The authors should discuss their findings in the light of a very similar study recently published by Habib et al., in NAR (PMID: 35018468).\n\n6) Please correct the typo in page 20, line 450: 'For feeder feel culture,'.\n\nReviewer #1 (Recommendations for the authors):\n\nThe authors should discuss the potential advantages and disadvantages of prime editing compared with other strategies, such as base editing. Although prime editing could target 90% human pathogenic variants and enables a wider range of sequencing changes, it has been associated with the generation of insertion and deletion base products as well.\n\nPrevious studies have reported undesired on-target edits, such as indels, using the PE3 system. The authors should discuss the reasons for their different results.\n\nOther potential limitations, such as the complexity of pegRNA design and its effect on editing efficiency, should be discussed as well.\n\nReviewer #2 (Recommendations for the authors):\n\nI commend the authors for a well-designed and thorough study, which surely deserves being published. Below are some recommendations for improvement:\n\n1. While the authors do search for unwanted editions in the vicinity of the targeted area, no attempt is made at detecting and quantifying more distant undesired editing events, including off-target events. This information should be important to readers when selecting a protocol for generating isogenic controls. The authors should better estimate the safety of their PE protocol. Probably the easiest way to do this would be by WGS of some selected edited versus parental iPSC lines. Particularly informative would be any of the multi-targeted cells shown in Figure 4A (if individual clones were obtained) or any of the SNCA (A30P)-corrected clones shown in Figure 4C, searching for de novo SNVs or indels potentially arising from off-target PE or from overall genotoxicity of the procedure (aCGH karyotyping is not resolutive enough for this). Analyzing genome stability of the clones generated in Figure 2 would also be informative to assess the safety of constitutively expressing nCas9-RT in iPSC.\n\n2. The authors should discuss their findings in the light of a very similar study recently published by Habib et al., in NAR (PMID: 35018468).\n\n3. Please, edit typo in page 20, line 450: 'For feeder feel culture,'.\n",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c862957d-a67d-454c-83f2-81d3d4de0ccf",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C1",
+      "claim": "The G2019S (G6055A) mutation in the LRRK2 gene is one of the most frequent pathogenic substitutions linked to Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation is found in approximately 4% of dominantly inherited familial PD cases, in both heterozygous and homozygous forms, and around 1% of sporadic PD cases (Healy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Healy et al., 2008, which provides evidence for the frequency of this mutation in PD cases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e6d66a90-8231-4d1d-864c-9148ee0d84ba",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C2",
+      "claim": "PE is overall more efficient and precise than homology-directed repair of site-specific nuclease-induced double-strand breaks in hPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that PE is overall more efficient and precise than homology-directed repair of site-specific nuclease-induced double-strand breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing PE to CRISPR/Cas9 and TALEN approaches, showing lower indel rates and higher heterozygous editing efficiency for PE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "c57d5c18-d60d-4520-a166-544e7bf73f6d",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C3",
+      "claim": "PE is more effective in generating heterozygous editing events to create autosomal dominant disease-associated mutations compared to DSB-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, PE is more effective in generating heterozygous editing events to create autosomal dominant disease-associated mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing higher efficiency of heterozygous clone generation with PE compared to CRISPR/Cas9 and TALEN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "02fb266f-08d3-454f-9368-81a32f8ecccc",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C4",
+      "claim": "Stable integration of nCas9-RT into hPSCs achieves editing efficiencies equal to those reported for cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By stably integrating the nCas9-RT into hPSCs we achieved editing efficiencies equal to those reported for cancer cells, suggesting that the expression of the PE components, rather than cell-intrinsic features, limit PE in hPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing editing efficiencies in hPSCs with stable nCas9-RT expression to those in cancer cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "a8d274ad-c7f0-4dc9-bbd7-7c46204656c6",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C5",
+      "claim": "The expression of PE components, rather than cell-intrinsic features, limits PE efficiency in hPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "By stably integrating the nCas9-RT into hPSCs we achieved editing efficiencies equal to those reported for cancer cells, suggesting that the expression of the PE components, rather than cell-intrinsic features, limit PE in hPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data showing that stable expression of nCas9-RT increases editing efficiency to levels comparable to cancer cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "dc7dbd17-4fdc-47de-86b9-2dfae923f1f0",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C6",
+      "claim": "Delivery of nCas9-RT as mRNA combined with synthetically generated, chemically-modified pegRNAs and ngRNAs improved editing efficiencies up to 13-fold compared with transfecting the PE components as plasmids or ribonucleoprotein particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Delivery of the nCas9-RT as mRNA combined with synthetically generated, chemically-modified pegRNAs and nicking guide RNAs improved editing efficiencies up to 13-fold compared with transfecting the PE components as plasmids or ribonucleoprotein particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing different delivery modalities for PE components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "5de5ac12-e1b6-4e44-a2e5-5d3b496db4f4",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C7",
+      "claim": "mRNA-based delivery of PE components can be used repeatedly to yield editing efficiencies exceeding 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrated that this mRNA-based delivery approach can be used repeatedly to yield editing efficiencies exceeding 60% and to correct or introduce familial mutations causing Parkinson's disease in hPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from multi-dosing experiments showing cumulative editing efficiencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0fdff91d-ef05-461d-81a6-9235eb8fcd87",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C8",
+      "claim": "mRNA-based PE delivery can correct or introduce familial mutations causing Parkinson's disease in hPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we demonstrated that this mRNA-based delivery approach can be used repeatedly to yield editing efficiencies exceeding 60% and to correct or introduce familial mutations causing Parkinson's disease in hPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing successful introduction and correction of PD-associated mutations (LRRK2 G2019S, SNCA A30P, SNCA A53T).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0e94f06a-b260-419d-8a86-e483c331451e",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C9",
+      "claim": "PE does not require a DSB but directly repairs a nicked DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, PE has been shown to overcome this limitation in a wide variety of cell types, as it does not require a DSB but directly repairs a nicked DNA strand (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Anzalone et al., 2019, which describes the mechanism of prime editing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "3d355678-22ae-479c-b1d3-199130bf494e",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C10",
+      "claim": "PE is a multicomponent editing system composed of a Cas9-nickase fused to a reverse transcriptase (nCas9-RT) and an extended prime editing guide RNA (pegRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "PE is a multicomponent editing system composed of a Cas9-nickase fused to a reverse transcriptase (nCas9-RT) and an extended prime editing (PE) guide RNA (pegRNA) that is reverse transcribed and functions as a repair template at the target site (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Anzalone et al., 2019, which describes the components of the prime editing system.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "8ff9d51b-e160-466e-98f2-f3b6da30b18a",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C11",
+      "claim": "The pegRNA extension is reverse transcribed and functions as a repair template at the target site.",
+      "claim_type": "EXPLICIT",
+      "source": "PE is a multicomponent editing system composed of a Cas9-nickase fused to a reverse transcriptase (nCas9-RT) and an extended prime editing (PE) guide RNA (pegRNA) that is reverse transcribed and functions as a repair template at the target site (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Anzalone et al., 2019, which describes the mechanism of prime editing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "295cd2b4-ef60-47a7-9420-8ed2b34bb3fe",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C12",
+      "claim": "Nuclease-induced DSBs are preferentially repaired by non-homologous end joining compared with homology-directed repair mechanisms in most contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since nuclease-induced DSBs are in most contexts preferentially repaired by non-homologous end joining compared with homology-directed repair (HDR) mechanisms, DSB-mediated genome editing frequently generates undesirable compound heterozygous editing outcomes with one correctly targeted allele and insertion or deletion (indel) on the second allele, causing the disruption of the protein-coding sequence (Cox et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cox et al., 2015, and represents established knowledge about DNA repair mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e5ad6040-2424-40b5-bf5f-a3a3b8775af3",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C13",
+      "claim": "DSB-mediated genome editing frequently generates undesirable compound heterozygous editing outcomes with one correctly targeted allele and indel on the second allele.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since nuclease-induced DSBs are in most contexts preferentially repaired by non-homologous end joining compared with homology-directed repair (HDR) mechanisms, DSB-mediated genome editing frequently generates undesirable compound heterozygous editing outcomes with one correctly targeted allele and insertion or deletion (indel) on the second allele, causing the disruption of the protein-coding sequence (Cox et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cox et al., 2015, and by experimental data in this manuscript showing compound heterozygous outcomes with CRISPR/Cas9 and TALEN.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "49273a67-b0e3-4e6e-8dc3-61502aa18728",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C14",
+      "claim": "It has been challenging to generate disease-associated dominant mutations in a heterozygous setting using DSB-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it has been challenging to generate disease-associated dominant mutations in a heterozygous setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the described limitations of DSB-based editing and established knowledge in the field.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "2ae7b548-2bc2-4035-b2a4-18d40d6fab42",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C15",
+      "claim": "PE has been previously demonstrated in hPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While successful PE has been previously demonstrated in hPSCs (Chemello et al., 2021; Chen et al., 2021; S\u00fcr\u00fcn et al., 2020), it remains unclear whether this approach has the potential to facilitate the generation of hPSC-based disease models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chemello et al., 2021; Chen et al., 2021; S\u00fcr\u00fcn et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "f73a3de1-f590-4e73-bb02-494673b1a965",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C16",
+      "claim": "2-4% of alleles carried the correct G2019S (G6055A) substitution when using CRISPR/Cas9, TALEN, and PE (PE3) gene targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Next generation sequencing (NGS) of amplicons spanning the G2019S (G6055A) region indicated that 2\u20134% of alleles carried the correct G2019S (G6055A) substitution (Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NGS data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e032ba67-e5aa-4159-8275-9060412c84a5",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C17",
+      "claim": "CRISPR/Cas9 targeting generated 19.6% indels at the LRRK2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed roughly comparable editing efficiencies using CRISPR/Cas9, TALEN, and PE (with secondary ngRNA [PE3]) gene targeting, all HDR-based approaches generated a significantly higher number of undesired editing outcomes with 19.6 and 3.3% indels for CRISPR/Cas9 and TALEN, respectively, compared with less than 0.5% for PE (Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NGS data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "6e4a59c6-5373-4d80-826f-3e641a3fd910",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C18",
+      "claim": "TALEN targeting generated 3.3% indels at the LRRK2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed roughly comparable editing efficiencies using CRISPR/Cas9, TALEN, and PE (with secondary ngRNA [PE3]) gene targeting, all HDR-based approaches generated a significantly higher number of undesired editing outcomes with 19.6 and 3.3% indels for CRISPR/Cas9 and TALEN, respectively, compared with less than 0.5% for PE (Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NGS data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "3072e315-b182-41f6-8fbd-77ea960d9cd2",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C19",
+      "claim": "PE generated less than 0.5% indels at the LRRK2 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed roughly comparable editing efficiencies using CRISPR/Cas9, TALEN, and PE (with secondary ngRNA [PE3]) gene targeting, all HDR-based approaches generated a significantly higher number of undesired editing outcomes with 19.6 and 3.3% indels for CRISPR/Cas9 and TALEN, respectively, compared with less than 0.5% for PE (Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NGS data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "d42f232b-bc50-497b-b1f0-cbe98bf3a7f7",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C20",
+      "claim": "PE generated higher efficiency in generating heterozygous correctly targeted cell lines compared to CRISPR/Cas9 and TALEN primarily due to a substantially higher number of compound heterozygous editing outcomes for CRISPR/Cas9 and TALEN targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping of expanded single cell-derived clones showed higher efficiency in generating heterozygous correctly targeted cell lines using PE primarily due to a substantially higher number of compound heterozygous editing outcomes for CRISPR/Cas9 and TALEN targeting with the correctly inserted G6055A sequence variant on one allele and indels on the second allele (Figure 1C, as identified by restriction fragment length polymorphism [RFLP] and Sanger sequencing analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clonal genotyping data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "2107a11c-22a2-4f3b-a509-1e787f118b58",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C21",
+      "claim": "Plasmid-based targeting of the HEK3 (CTT insertion) locus resulted in ~4.3% PPE in WIBR3 hESCs using the PE3 strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that plasmid-based targeting of the HEK3 (CTT insertion) locus resulted in only ~4.3% PPE in WIBR3 hESCs compared with ~12.7% PPE in HEK293T tumor cells using the PE3 strategy (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "426f447c-41a4-4ed6-a309-8ccee3ec066f",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C22",
+      "claim": "Plasmid-based targeting of the HEK3 (CTT insertion) locus resulted in ~12.7% PPE in HEK293T tumor cells using the PE3 strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that plasmid-based targeting of the HEK3 (CTT insertion) locus resulted in only ~4.3% PPE in WIBR3 hESCs compared with ~12.7% PPE in HEK293T tumor cells using the PE3 strategy (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "7183d37a-24cf-497e-b111-8f692b7e5767",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C23",
+      "claim": "Similar differences in gene editing efficiencies between hPSCs, primary cells, and tumor cell lines have been commonly observed for other genome engineering approaches including CRISPR/Cas9 targeting.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar differences in gene editing efficiencies between hPSCs, primary cells, and tumor cell lines have been commonly observed for other genome engineering approaches including CRISPR/Cas9 targeting (Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "1954d034-a1f3-43a0-89f2-f06935e9ded3",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C24",
+      "claim": "Nucleofection of hPSCs with stable nCas9-RT expression and chemically-modified synthetic pegRNA resulted in editing efficiencies up to 22% for the HEK3 (CTT insertion) locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleofection of these cells with a plasmid encoding the HEK3 (CTT insertion) pegRNA (without [PE2] or with [PE3] secondary ngRNA) or with a chemically-modified synthetic pegRNA (without [PE2] or with [PE3] secondary ngRNA) resulted in substantially increased editing efficiencies of up to 22% of correctly inserted modifications (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "7027f2a9-0096-412f-ab9f-241b47ae97ab",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C25",
+      "claim": "Targeting the LRRK2 (G2019S) locus with chemically-modified synthetic pegRNAs in hPSCs with stable nCas9-RT expression resulted in editing efficiencies up to 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, targeting the LRRK2 (G2019S) and SNCA (A30P) loci with chemically-modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA) resulted in editing efficiencies up to 12% and 27%, respectively (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "f2cd1f1f-51ab-44fb-9e6b-8dc98e213459",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C26",
+      "claim": "Targeting the SNCA (A30P) locus with chemically-modified synthetic pegRNAs in hPSCs with stable nCas9-RT expression resulted in editing efficiencies up to 27%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, targeting the LRRK2 (G2019S) and SNCA (A30P) loci with chemically-modified synthetic pegRNAs (without [PE2] or with [PE3] secondary ngRNA) resulted in editing efficiencies up to 12% and 27%, respectively (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "10a71c25-0fbe-4e25-a9fd-c15474dae441",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C27",
+      "claim": "The method of delivery of the PE components has a significant role in dictating the genome editing efficiency in hPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While these data do not exclude fundamental biological differences in the PE process between hPSCs and other cell types, these experiments demonstrate that the method of delivery of the PE components has a significant role in dictating the genome editing efficiency in hPSCs, which can be comparable to the efficiencies observed in tumor cell lines and primary cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data comparing different delivery methods and their effects on editing efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0f4e0b4a-349e-4030-97bd-29c7cf5809d1",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C28",
+      "claim": "RNP-mediated PE resulted in editing outcomes in hPSCs with locus-dependent efficiencies between 1 and 6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports on other cell types, we observed RNP-mediated editing outcomes in hPSCs with locus-dependent efficiencies between 1 and 6% (Figure 2E and Figure 2\u2014figure supplement 2B and Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "eaef79e9-ce03-40fa-81e2-3a402f29d2bf",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C29",
+      "claim": "RNP-based PE efficiencies are comparable to the plasmid-based approach and far below the efficiencies observed with stable expression of nCas9-RT from the AAVS1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "While these data clearly indicate the feasibility of RNP-based PE in hPSCs, the observed efficiencies are comparable to the plasmid-based approach and far below the efficiencies observed with stable expression of nCas9-RT from the AAVS1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of experimental data from different delivery methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "61ae7f49-7bc6-4a63-99a3-1506b5eed346",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C30",
+      "claim": "The combination of in vitro transcribed mRNA-based delivery of the nCas9-RT with chemically modified synthetic pegRNAs and ngRNAs consistently increased editing efficiencies across all three tested loci up to 13-fold compared with plasmid- and 8-fold compared with RNP-delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk NGS revealed that the combination of in vitro transcribed mRNA-based delivery of the nCas9-RT with chemically modified synthetic pegRNAs and ngRNAs consistently increased editing efficiencies across all three tested loci up to 13-fold compared with plasmid- and 8-fold compared with RNP-delivery (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "67e67905-0b13-4988-b36d-8ba729215cc6",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C31",
+      "claim": "Using optimized in vitro transcribed mRNA-based delivery approach allowed achieving editing efficiencies up to 26.7% for the SNCA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this optimized in vitro transcribed mRNA-based delivery approach allowed us to achieve editing efficiencies up to 26.7% (for the SNCA locus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from mRNA-based PE experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "58946d99-947f-48cd-8a27-45b20365561b",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C32",
+      "claim": "mRNA-based editing efficiencies with PE3 are similar to using the stably nCas9-RT expressing cell lines and comparable to efficiencies commonly observed in human tumor cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with secondary nicking of the non-edited strand (PE3), these editing efficiencies are similar to using the stably nCas9-RT expressing cell lines and comparable to efficiencies commonly observed in human tumor cell lines (Anzalone et al., 2019; Nelson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of experimental data to published results in Anzalone et al., 2019; Nelson et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0dccccf2-6d98-4c79-9f27-8b976612ed48",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C33",
+      "claim": "mRNA-based editing efficiencies depend on the approach used to in vitro transcribe the nCas9-RT mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While mRNA-based editing efficiencies seem to depend on the approach used to in vitro transcribe the nCas9-RT mRNA (Figure 3\u2014figure supplement 1A), we found that mRNA-based editing efficiencies are highly consistent across different nCas9-RT mRNA batches when using the best in vitro transcription conditions (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0ffa6df5-7005-4fea-9845-cd51ae7a1747",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C34",
+      "claim": "mRNA-based editing efficiencies are highly consistent across different nCas9-RT mRNA batches when using the best in vitro transcription conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While mRNA-based editing efficiencies seem to depend on the approach used to in vitro transcribe the nCas9-RT mRNA (Figure 3\u2014figure supplement 1A), we found that mRNA-based editing efficiencies are highly consistent across different nCas9-RT mRNA batches when using the best in vitro transcription conditions (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e5ceb9f6-dcef-481f-838f-87a0135d93b2",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C35",
+      "claim": "Using single-stranded mRNA compared with either RNPs or double-stranded plasmid DNAs resulted in improved overall health and increased survival of single cells as indicated by increased clonal survival following nucleofection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that using single-stranded mRNA compared with either RNPs or double-stranded plasmid DNAs resulted in improved overall health and increased survival of single cells as indicated by increased clonal survival following nucleofection (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "7f5e8986-f6c3-4c73-a508-bb166929e22a",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C36",
+      "claim": "mRNA-based PE achieved comparable editing efficiencies in a second hiPSC line (8858) for LRRK2 (G2019S) and SNCA (A30P) loci.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if the high efficiency of mRNA-based PE is a unique feature of the WIBR3 hESCs, we repeated some key experiments in a second human-induced pluripotent stem cell (hiPSC) line 8858 (Pa\u015fca et al., 2015) by targeting the LRRK2 (G2019S) and SNCA (A30P) loci and found comparable editing efficiencies (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "005df5be-5dbe-4cf1-bfe9-6493c23e3a1b",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C37",
+      "claim": "Efficient and robust PE of the LRRK2 (G2019S) locus was achieved in WIBR3 hESCs using several commonly used feeder-free culture systems with comparably high PE efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that potential therapeutic applications would require precise genome editing of hPSCs in xeno-free conditions, we were able to show efficient and robust PE of the LRRK2 (G2019S) locus in WIBR3 hESCs using several commonly used feeder-free culture systems with comparably high PE efficiencies (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "a0207c26-54d5-4876-b6ad-25df485f55d4",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C38",
+      "claim": "Additional rounds of mRNA-based PE of the same cell population could substantially increase overall editing efficiencies for all tested loci (HEK3, LRRK2, and SNCA).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find for all tested loci (HEK3, LRRK2, and SNCA) that additional rounds of mRNA-based PE of the same cell population could substantially increase overall editing efficiencies (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from multi-dosing experiments shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "1c8c1d98-d0d0-4812-b3ab-326c3b7a3cf2",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C39",
+      "claim": "Multiple rounds of mRNA-based PE could result in precise and nearly complete editing of a bulk hPSC population without any type of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that multiple rounds of mRNA-based PE could result in precise and nearly complete editing of a bulk hPSC population without any type of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multi-dosing experimental data showing cumulative editing efficiencies exceeding 60%.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "729fcf19-ab3d-41f2-b372-beca8655a10a",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C40",
+      "claim": "Bulk NGS indicated the correction of 31.0% of the mutated A30P alleles when targeting heterozygous SNCA (A30P) hESC lines.",
+      "claim_type": "EXPLICIT",
+      "source": "When targeting heterozygous (Figure 4B and C) or homozygous (Figure 4D and E) SNCA (A30P) hESC lines, bulk NGS indicated the correction of 31.0 (Figure 4B) and 30.1% (Figure 4D) of the mutated A30P alleles, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "01b95ba4-64cd-4ad9-8dca-efc0597f73fe",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C41",
+      "claim": "Bulk NGS indicated the correction of 30.1% of the mutated A30P alleles when targeting homozygous SNCA (A30P) hESC lines.",
+      "claim_type": "EXPLICIT",
+      "source": "When targeting heterozygous (Figure 4B and C) or homozygous (Figure 4D and E) SNCA (A30P) hESC lines, bulk NGS indicated the correction of 31.0 (Figure 4B) and 30.1% (Figure 4D) of the mutated A30P alleles, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "075b8e4d-4c40-4e27-b896-2d6917153966",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C42",
+      "claim": "Genotyping of single-cell derived clones indicated 26.2% precisely corrected clones without additional undesired modifications when correcting heterozygous SNCA (A30P) mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent genotyping of single-cell derived clones indicated 26.2 (Figure 4C) and 48% (Figure 4D; combined heterozygous and homozygous) precisely corrected clones without additional undesired modifications (indels) of the wild-type allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "110ed8fe-a6f7-44ee-8f2e-ca84bb380c97",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C43",
+      "claim": "Genotyping of single-cell derived clones indicated 48% precisely corrected clones (combined heterozygous and homozygous) without additional undesired modifications when correcting homozygous SNCA (A30P) mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent genotyping of single-cell derived clones indicated 26.2 (Figure 4C) and 48% (Figure 4D; combined heterozygous and homozygous) precisely corrected clones without additional undesired modifications (indels) of the wild-type allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "25b30c6b-9020-44e7-938f-864d34d941f2",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C44",
+      "claim": "mRNA transfection of the prime editor component (nCas9-RT) paired with the transfection of chemically modified guide RNAs is well tolerated and highly effective for introducing precise designer mutations in hiPSCs and hESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that mRNA transfection of the prime editor component (nCas9-RT) paired with the transfection of chemically modified guide RNAs is well tolerated and highly effective for introducing precise designer mutations in hiPSCs and hESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing high editing efficiencies and improved cell survival with mRNA-based delivery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0515df32-faae-47a6-8a54-72d9117a563d",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C45",
+      "claim": "PE efficiently allows for the introduction or correction of heterozygous disease-related mutations in hPSCs with base-pair precision and without introducing undesired additional modifications on the second allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that this approach efficiently allows for the introduction or correction of heterozygous disease-related mutations in hPSCs with base-pair precision and without introducing undesired additional modifications on the second allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing precise editing with minimal indels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "a131f4a3-40c9-4f90-a9e3-b033f5e69bc1",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C46",
+      "claim": "The resulting cells showed a normal karyotype, consistent with low genotoxicity of PE due to the lack of DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting cells showed a normal karyotype, consistent with low genotoxicity of PE due to the lack of DSBs (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by karyotyping data and citation to Anzalone et al., 2019 regarding the mechanism of PE.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "7e7d118b-a4f7-41ef-b8cc-91f44463a69c",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C47",
+      "claim": "PE3-mediated PE is generally accompanied by the generation of indels around the target site caused by the combinatory activity of the RT and pegRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors observe that PE3-mediated PE is generally accompanied by the generation of indels around the target site caused by the combinatory activity of the RT and pegRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on citation to a recent study (Habib et al., 2022) that reported this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "852e90b0-1204-4009-8869-71ccf8023b8e",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C48",
+      "claim": "The frequency of undesired edits varies widely across genomic loci and is pegRNA dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has been shown that the frequency of undesired edits varies widely across genomic loci and is pegRNA dependent, it is possible that indel frequency is also affected by the different delivery modalities (e.g. different mRNA transfection of the PE component paired with the transfection of chemically modified guide RNAs has different kinetics and expression levels compared with other approaches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from previous studies and speculation about delivery modality effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "47f69305-0a19-4335-b5f1-eada33f856b3",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C49",
+      "claim": "Indel frequency may be affected by different delivery modalities due to different kinetics and expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has been shown that the frequency of undesired edits varies widely across genomic loci and is pegRNA dependent, it is possible that indel frequency is also affected by the different delivery modalities (e.g. different mRNA transfection of the PE component paired with the transfection of chemically modified guide RNAs has different kinetics and expression levels compared with other approaches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "35282683-062c-40eb-adf2-5cf7a5735fec",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C50",
+      "claim": "hPSCs can be subjected to several rounds of PE, eventually yielding up to 60% correctly targeted alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that hPSCs can be subjected to several rounds of PE, eventually yielding up to 60% correctly targeted alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from multi-dosing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "fa865f52-d83a-4f85-8bfb-e34977f1cd30",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C51",
+      "claim": "PE efficiencies might be further increased by including mRNAs coding for DNA mismatch repair inhibiting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PE efficiencies might be further increased by including mRNAs coding for DNA mismatch repair inhibiting proteins, a novel approach that has been recently shown to significantly improve the PE platform (Chen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative but based on citation to Chen et al., 2021 showing this approach in other contexts.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "9371b1de-efd3-4438-a294-3724dff3f047",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C52",
+      "claim": "Three out of three familial PD point mutations were successfully introduced into hPSCs using previously established algorithms to design pegRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we successfully introduced three out of three familial PD point mutations into hPSCs using previously established algorithms to design pegRNAs (Hsu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing successful editing of LRRK2 G2019S, SNCA A30P, and SNCA A53T mutations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "b26e81c8-99d9-4963-afca-8739a070eaef",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C53",
+      "claim": "PE efficiencies vary widely depending on the specific genomic context and pegRNA design.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case for all genome editing approaches, PE efficiencies vary widely depending on the specific genomic context and pegRNA design, and certain genetic modifications will require more extensive pegRNA testing and validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about genome editing and inference from experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "08179b5b-8b27-4353-a47a-ca91d0842e7e",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C54",
+      "claim": "Systematic approaches that establish optimized design parameters for PE and the development of Cas9 variants with non-classical PAMs will overcome limitations of PE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we expect systematic approaches that establish optimized design parameters for PE, as recently described for cancer cells (Kim et al., 2020b; Nelson et al., 2021) and the development of Cas9 variants with non-classical PAMs (Chatterjee et al., 2020; Kleinstiver et al., 2015; Miller et al., 2020) will overcome these limitations and combined with the optimized protocols reported here will allow PE to become a general method of choice for genome editing in hPSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative but based on citations to recent advances in the field.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "c7a6e929-0461-4339-85a7-e26ff68c81b5",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C55",
+      "claim": "All generated prime edited cell lines showed a normal karyotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The focus of this work was to establish a highly efficient platform for PE in hPSCs and although all generated prime edited cell lines showed a normal karyotype consistent with low genotoxicity of PE due to the lack of DSBs (Anzalone et al., 2019), it is important to point out that we refrained from a detailed off-target analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by karyotyping data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "51d83f45-d404-47a9-9385-27b9343ec210",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C56",
+      "claim": "PE is highly specific and shows much lower guide RNA-dependent or independent off-target effects compared with DSB-based CRISPR/Cas9 or base editing approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that there are already available substantial datasets in a variety of cell types indicating that PE is highly specific and shows much lower guide RNA-dependent or independent off-target effects compared with DSB-based CRISPR/Cas9 or base editing approaches (Gao et al., 2021; Geurts et al., 2021; Habib et al., 2022; Jin et al., 2021; Kim et al., 2020a; Schene et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to studies showing low off-target effects of PE.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "176431fe-0c85-4056-97f6-531480415534",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C57",
+      "claim": "Genome-wide off-target analyses of in vitro generated cell lines including whole genome sequencing-based approaches remain challenging even for conventional CRISPR/Cas9-based cutting approaches due to the substantial number of genetic alterations which occur during regular cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide off-target analyses of in vitro generated cell lines including whole genome sequencing-based approaches remain challenging even for conventional CRISPR/Cas9-based cutting approaches due to the substantial number of genetic alterations which occur during regular cell culture (Kuijk et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kuijk et al., 2020 and represents established knowledge about challenges in off-target analysis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "8fe49b6e-62f4-48b5-9382-75db894f6a99",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C58",
+      "claim": "A key future step toward the development of clinical PE approaches will require the development of sophisticated off-target analyses tools that account for nCas9 single strand break-mediated and transient reverse transcriptase expression-mediated genetic alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a key future step toward the development of clinical PE approaches will require the development of sophisticated off-target analyses tools that account for nCas9 single strand break-mediated and transient reverse transcriptase expression-mediated genetic alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, representing the authors' opinion about future research needs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e1bad0ba-5c42-4759-8b77-d382cfc77efb",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C59",
+      "claim": "The LRRK2 G2019S mutation is found in approximately 4% of dominantly inherited familial PD cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation is found in approximately 4% of dominantly inherited familial PD cases, in both heterozygous and homozygous forms, and around 1% of sporadic PD cases (Healy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Healy et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "b0bdff11-9d64-481b-b7ec-a9eaf3839a11",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C60",
+      "claim": "The LRRK2 G2019S mutation is found in around 1% of sporadic PD cases.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation is found in approximately 4% of dominantly inherited familial PD cases, in both heterozygous and homozygous forms, and around 1% of sporadic PD cases (Healy et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Healy et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "54b6865a-7117-4bfe-8f88-dac16805e009",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C61",
+      "claim": "Representative cytogenetic analysis of single cell-expanded LRRK2 (G2019S) and SNCA (A30P) clones showed normal karyotypes for seven out of seven tested cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, representative cytogenetic analysis of single cell-expanded LRRK2 (G2019S) and SNCA (A30P) clones showed normal karyotypes for seven out of seven tested cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by karyotyping data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "e82de3ba-c43e-4d31-bd07-4915f0e69488",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C62",
+      "claim": "The SNCA A30P mutation is caused by a G88C nucleotide substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to introduce mutations into the previously published and commonly targeted HEK site 3 (HEK3) locus (CTT-sequence insertion) (Anzalone et al., 2019), as well as two additional PD-associated mutations into the \u03b1-Synuclein (SNCA) locus (A30P [G88C]; Kr\u00fcger et al., 1998; and A53T [G209A] Polymeropoulos et al., 1997; Figure 1\u2014figure supplement 1B, C) with editing efficiencies comparable to the LRRK2 locus (Figure 1D and E; quantified as pure prime editing efficiencies [PPE] as defined in Petri et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kr\u00fcger et al., 1998 and the experimental design shown in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "c5c16ed5-ce48-475e-905a-ed0c13ce8e23",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C63",
+      "claim": "The SNCA A53T mutation is caused by a G209A nucleotide substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to introduce mutations into the previously published and commonly targeted HEK site 3 (HEK3) locus (CTT-sequence insertion) (Anzalone et al., 2019), as well as two additional PD-associated mutations into the \u03b1-Synuclein (SNCA) locus (A30P [G88C]; Kr\u00fcger et al., 1998; and A53T [G209A] Polymeropoulos et al., 1997; Figure 1\u2014figure supplement 1B, C) with editing efficiencies comparable to the LRRK2 locus (Figure 1D and E; quantified as pure prime editing efficiencies [PPE] as defined in Petri et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Polymeropoulos et al., 1997 and the experimental design shown in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "b7b5a30c-1767-416f-8699-5f22b8eec595",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C64",
+      "claim": "The omission of FACS enrichment allowed for highly efficient, multiplexed generation of genome-edited hPSC lines in parallel in less than 4 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "While this approach results in slightly lower overall bulk editing efficiencies (as determined by NGS), most likely due to the lack of FACS-based enrichment of transfected cells, the substantially reduced number of cells required and the streamlined workflow allows for highly efficient, multiplexed generation of genome-edited hPSC lines in parallel in less than 4 weeks (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description of the high throughput genome editing pipeline and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "f4fea4c0-07f6-4aca-b120-91b1ef206421",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C65",
+      "claim": "RNP-based PE in hPSCs is feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "While these data clearly indicate the feasibility of RNP-based PE in hPSCs, the observed efficiencies are comparable to the plasmid-based approach and far below the efficiencies observed with stable expression of nCas9-RT from the AAVS1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing successful RNP-based PE, albeit with lower efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "4c225b45-d27b-4b99-871e-285eeb6fc97c",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C66",
+      "claim": "The hiPSC 8858 line was obtained from Sergiu Pasca lab, Stanford.",
+      "claim_type": "EXPLICIT",
+      "source": "The hiPSC 8858 line (Sergiu Pasca lab, Stanford; Pa\u015fca et al., 2015) and hESC line WIBR3 (NIH Registration Number: 0079; RRID:CVCL_9767; Whitehead Institute Center for Human Stem Cell Research, Cambridge, MA; Lengner et al., 2010) were maintained on MEFs in hESC media (Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 (DMEM/F12) [Thermo Fisher Scientific]) supplemented with 15% fetal bovine serum (Hyclone), 5% KnockOut Serum Replacement (Thermo Fisher Scientific), 1  mM glutamine (Invitrogen), 1% nonessential amino acids (Thermo Fisher Scientific), 0.1  mM \u03b2-mercaptoethanol (Sigma) and 4  ng/mL fibroblast growth factor 2 (FGF2) (Thermo Fisher Scientific/Peprotech), 1\u00d7 Penicillin-Streptomycin (Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Pa\u015fca et al., 2015 and explicit statement in the methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "61afe14e-1029-4bd2-8829-23f3e521b526",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "claim_id": "C67",
+      "claim": "The hESC line WIBR3 has NIH Registration Number 0079.",
+      "claim_type": "EXPLICIT",
+      "source": "The hiPSC 8858 line (Sergiu Pasca lab, Stanford; Pa\u015fca et al., 2015) and hESC line WIBR3 (NIH Registration Number: 0079; RRID:CVCL_9767; Whitehead Institute Center for Human Stem Cell Research, Cambridge, MA; Lengner et al., 2010) were maintained on MEFs in hESC media (Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 (DMEM/F12) [Thermo Fisher Scientific]) supplemented with 15% fetal bovine serum (Hyclone), 5% KnockOut Serum Replacement (Thermo Fisher Scientific), 1  mM glutamine (Invitrogen), 1% nonessential amino acids (Thermo Fisher Scientific), 0.1  mM \u03b2-mercaptoethanol (Sigma) and 4  ng/mL fibroblast growth factor 2 (FGF2) (Thermo Fisher Scientific/Peprotech), 1\u00d7 Penicillin-Streptomycin (Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated in the methods section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prime editing (PE) is more efficient and precise than DSB-based methods (CRISPR/Cas9 and TALEN) for generating heterozygous mutations in hPSCs. PE achieved 2-4% correct substitutions with <0.5% indels, compared to 19.6% and 3.3% indels for CRISPR/Cas9 and TALEN respectively, resulting in higher efficiency of heterozygous correctly targeted clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 provide quantitative NGS and clonal genotyping data directly comparing PE to DSB-based methods at the LRRK2 locus. The data consistently show that while editing efficiencies are comparable (2-4%), PE generates substantially fewer indels (<0.5% vs 3.3-19.6%), leading to higher recovery of heterozygous correctly targeted clones. This supports the overall conclusion in C2 and C3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Stable integration of nCas9-RT into hPSCs achieves editing efficiencies comparable to cancer cells (up to 22-27% depending on locus), demonstrating that PE component expression rather than cell-intrinsic features limits PE efficiency in hPSCs. Delivery method significantly impacts editing efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 establish baseline differences between hPSCs (~4.3% PPE) and HEK293T cells (~12.7% PPE). Claims C24-C26 show that stable nCas9-RT expression increases efficiency to 12-27% across multiple loci, approaching cancer cell levels. This supports the inference in C4-C5 that delivery/expression, not cell biology, is the limiting factor. Claim C27 appropriately summarizes this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "aded6605-87a3-42f4-852e-fd2f5e3abbb1",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "mRNA-based delivery of nCas9-RT combined with chemically-modified synthetic pegRNAs and ngRNAs improved editing efficiencies up to 13-fold compared to plasmid delivery and 8-fold compared to RNP delivery, achieving up to 26.7% editing efficiency comparable to tumor cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 provides quantitative comparison data across three loci showing consistent improvement with mRNA delivery. Claims C31-C32 report maximum efficiencies achieved and compare to published tumor cell data. The fold-change claims in C6 and C30 are directly supported by experimental data in Figure 3A, making this a well-supported result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "8acab11c-44f3-4b58-b804-6d5dcfa26e32",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Multiple rounds of mRNA-based PE can substantially increase editing efficiencies, yielding up to 60% correctly targeted alleles across all tested loci (HEK3, LRRK2, SNCA), potentially enabling nearly complete editing of bulk hPSC populations without selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 provides experimental data from multi-dosing experiments across three loci showing cumulative increases in editing efficiency. Claims C7 and C50 report the maximum efficiency achieved (>60%). Claim C39 makes an inference about potential for complete editing, which is reasonable given the data but represents extrapolation. The core experimental findings are well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "280d8ace-b4bb-4b9c-a800-ff907615b983",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "mRNA-based PE can both introduce and correct familial Parkinson's disease mutations in hPSCs. Correction of heterozygous and homozygous SNCA (A30P) mutations achieved 31.0% and 30.1% bulk correction respectively, with 26.2% and 48% precisely corrected clones. Three PD mutations (LRRK2 G2019S, SNCA A30P, A53T) were successfully introduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 provide specific quantitative data for mutation correction experiments with both bulk NGS and clonal genotyping. Claim C52 confirms successful introduction of three different PD mutations. The data demonstrate bidirectional capability (introduction and correction) with quantified efficiencies, supporting the overall claim C8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "6cf58a79-dcdf-4797-9f5c-f7780171d133",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNP-based PE is feasible in hPSCs but achieves only 1-6% editing efficiency, comparable to plasmid-based approaches and substantially lower than stable nCas9-RT expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide experimental data showing RNP-based PE works but with limited efficiency. The comparison to other methods is supported by data in Figure 2E and related figures. Claim C65 appropriately characterizes this as demonstrating feasibility but not optimal performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "0c00ef14-c050-4056-a62f-83a53d8ae43f",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "mRNA-based editing efficiencies depend on the in vitro transcription method used, but are highly consistent across different mRNA batches when using optimized transcription conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by experimental data in Figure 3\u2014figure supplement 1A and 1B. The data show variation between transcription methods but consistency within the optimal method across batches. This is a methodological finding important for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "4624058e-8ad9-4b19-a365-975d4efdc0f8",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mRNA-based delivery results in improved cell health and increased clonal survival following nucleofection compared to RNP or plasmid delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by experimental data in Figure 3B showing increased colony formation with mRNA delivery. This is an important practical advantage of the mRNA approach, though it is a secondary benefit rather than a primary finding about editing efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "2e425f4c-478f-490c-95eb-32c623a5d888",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "mRNA-based PE achieves comparable editing efficiencies in a second hiPSC line (8858) for LRRK2 (G2019S) and SNCA (A30P) loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by experimental data in Figure 3C demonstrating that the mRNA-based PE approach is not specific to the WIBR3 hESC line. This addresses generalizability across hPSC lines, though testing in only one additional line is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "8f3ac638-59e9-444e-915a-b5fd16ab12b7",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Efficient PE of the LRRK2 (G2019S) locus was achieved in WIBR3 hESCs using several feeder-free culture systems with comparable efficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by experimental data in Figure 3\u2014figure supplement 1C. This demonstrates compatibility with clinically-relevant xeno-free culture conditions, which is important for translational applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "9992e9c8-a66a-4a66-90ed-ead4cc3909f4",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "mRNA-based PE is well-tolerated and highly effective for introducing precise mutations in hPSCs with base-pair precision and minimal undesired modifications on the second allele.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C44-C45) are supported by the collective experimental data showing high editing efficiencies, low indel rates, and successful generation of heterozygous mutations. They represent appropriate synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "d5725cde-1950-4436-a8c8-9c7033340b0d",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prime edited hPSC lines showed normal karyotypes (7/7 tested lines), consistent with low genotoxicity of PE due to lack of DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C55, and C61 report karyotyping results showing normal karyotypes in all tested lines. While the sample size is limited (n=7), this provides important safety data. The interpretation linking this to lack of DSBs (C46) is reasonable but somewhat inferential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "22b71264-cfaa-42c0-9817-f194bb957692",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A high-throughput genome editing pipeline omitting FACS enrichment enables multiplexed generation of genome-edited hPSC lines in less than 4 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by the description of the workflow in Figure 1\u2014figure supplement 2 and the methods. This represents a practical methodological advance that facilitates the application of PE, though it results in slightly lower bulk editing efficiencies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "c4899fa3-d576-4b6a-8d9e-56fddb9dad86",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The LRRK2 G2019S mutation is found in approximately 4% of familial PD cases and 1% of sporadic PD cases, making it one of the most frequent pathogenic substitutions linked to Parkinson's disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about the frequency and significance of the LRRK2 G2019S mutation are supported by citation to Healy et al., 2008. This is background information establishing the relevance of the mutation being targeted, not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "b815412f-05f2-401e-83e0-c2a5bdb8a526",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PE is a multicomponent editing system that does not require DSBs but directly repairs nicked DNA strands using a Cas9-nickase fused to reverse transcriptase and an extended pegRNA that is reverse transcribed to function as a repair template.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the established mechanism of prime editing based on citation to Anzalone et al., 2019. This is background information explaining the technology being applied, not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "1a7e6569-3a0d-43c7-92d3-11f4461e09ab",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DSB-mediated genome editing frequently generates undesirable compound heterozygous outcomes due to preferential NHEJ repair, making it challenging to generate disease-associated dominant mutations in heterozygous settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe established limitations of DSB-based editing supported by citation to Cox et al., 2015 and general knowledge. This provides context for why PE is advantageous but is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "d8ecfb94-ee07-435e-981d-d8acb769305d",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PE has been previously demonstrated in hPSCs, though its potential for facilitating hPSC-based disease model generation remained unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 accurately describes prior work (Chemello et al., 2021; Chen et al., 2021; S\u00fcr\u00fcn et al., 2020) and identifies the gap this study addresses. This is appropriate contextualization of the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "2f9cb9ca-5dc8-400a-b083-ba1f8c8264fa",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Similar differences in gene editing efficiencies between hPSCs, primary cells, and tumor cell lines have been commonly observed for other genome engineering approaches including CRISPR/Cas9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 is supported by citations to Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018. This contextualizes the observed efficiency differences as a general phenomenon rather than PE-specific.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "5cec3e8e-8689-48f5-9af5-00b98bf382b6",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PE3-mediated editing can generate indels around the target site, with frequency varying by locus and pegRNA design. Indel frequency may also be affected by delivery modality due to different kinetics and expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 cites Habib et al., 2022 regarding indels with PE3. Claim C48 describes established knowledge about variability. However, claim C49 is explicitly speculative about delivery modality effects. The authors acknowledge this is speculation without providing experimental data to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "526da1a0-91f8-4469-bb84-348321c351df",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "PE efficiencies might be further increased by including mRNAs coding for DNA mismatch repair inhibiting proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C51 is explicitly speculative, suggesting a potential future improvement based on Chen et al., 2021. While the citation provides precedent in other contexts, this approach was not tested in the current study, making this a hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "94b67b54-c9ed-400a-9912-7260f0ccf824",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "PE efficiencies vary widely depending on genomic context and pegRNA design, but systematic optimization approaches and Cas9 variants with non-classical PAMs are expected to overcome these limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 describes general knowledge about PE variability. Claim C54 is explicitly speculative about future developments, citing recent advances but not demonstrating these improvements in the current study. This represents reasonable expectations but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "b0a11214-ddaf-4910-979c-f6ced721f050",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "PE is highly specific and shows much lower guide RNA-dependent or independent off-target effects compared with DSB-based CRISPR/Cas9 or base editing approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 cites multiple studies (Gao et al., 2021; Geurts et al., 2021; Habib et al., 2022; Jin et al., 2021; Kim et al., 2020a; Schene et al., 2020) showing low off-target effects of PE in other systems. However, the authors explicitly state they \"refrained from a detailed off-target analysis\" in their own study (C55), so this claim about PE specificity in their hPSC system is not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "97bd90e3-655a-4ddb-9c46-981c1b80fdc0",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Genome-wide off-target analyses remain challenging for genome editing approaches due to background genetic alterations during cell culture. Future clinical PE development will require sophisticated off-target analysis tools accounting for nCas9 and reverse transcriptase-mediated alterations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by citation to Kuijk et al., 2020 and represents established knowledge about challenges in off-target analysis. Claim C58 is a reasonable opinion about future research needs, appropriately framed as speculative. These claims acknowledge limitations and future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "dc283b87-d8b8-45cb-a53b-957eb796a070",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The SNCA A30P mutation is caused by G88C substitution and A53T by G209A substitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about the molecular basis of SNCA mutations are supported by citations to Kr\u00fcger et al., 1998 and Polymeropoulos et al., 1997. This is background information about the mutations being targeted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    },
+    {
+      "id": "d753adc5-976f-4f2a-a481-9403a2a4fe72",
+      "content_id": "806733f5-dcfa-4afe-ac50-ff0fb8ed8a78",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The hiPSC line 8858 was obtained from Sergiu Pasca lab at Stanford, and the hESC line WIBR3 has NIH Registration Number 0079.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide cell line provenance information supported by appropriate citations and registry numbers. This is standard methodological documentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:30:35.669345Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e6d66a90-8231-4d1d-864c-9148ee0d84ba",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "c57d5c18-d60d-4520-a166-544e7bf73f6d",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "f73a3de1-f590-4e73-bb02-494673b1a965",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "e032ba67-e5aa-4159-8275-9060412c84a5",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "6e4a59c6-5373-4d80-826f-3e641a3fd910",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "3072e315-b182-41f6-8fbd-77ea960d9cd2",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "d42f232b-bc50-497b-b1f0-cbe98bf3a7f7",
+      "result_id": "97ed0d08-7c36-41b9-9dc9-b79742234e8e"
+    },
+    {
+      "claim_id": "02fb266f-08d3-454f-9368-81a32f8ecccc",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "a8d274ad-c7f0-4dc9-bbd7-7c46204656c6",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "2107a11c-22a2-4f3b-a509-1e787f118b58",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "426f447c-41a4-4ed6-a309-8ccee3ec066f",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "1954d034-a1f3-43a0-89f2-f06935e9ded3",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "7027f2a9-0096-412f-ab9f-241b47ae97ab",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "f2cd1f1f-51ab-44fb-9e6b-8dc98e213459",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "10a71c25-0fbe-4e25-a9fd-c15474dae441",
+      "result_id": "7f6d64cc-a702-48e3-b0e6-3afae1ffaa61"
+    },
+    {
+      "claim_id": "dc7dbd17-4fdc-47de-86b9-2dfae923f1f0",
+      "result_id": "aded6605-87a3-42f4-852e-fd2f5e3abbb1"
+    },
+    {
+      "claim_id": "61ae7f49-7bc6-4a63-99a3-1506b5eed346",
+      "result_id": "aded6605-87a3-42f4-852e-fd2f5e3abbb1"
+    },
+    {
+      "claim_id": "67e67905-0b13-4988-b36d-8ba729215cc6",
+      "result_id": "aded6605-87a3-42f4-852e-fd2f5e3abbb1"
+    },
+    {
+      "claim_id": "58946d99-947f-48cd-8a27-45b20365561b",
+      "result_id": "aded6605-87a3-42f4-852e-fd2f5e3abbb1"
+    },
+    {
+      "claim_id": "5de5ac12-e1b6-4e44-a2e5-5d3b496db4f4",
+      "result_id": "8acab11c-44f3-4b58-b804-6d5dcfa26e32"
+    },
+    {
+      "claim_id": "a0207c26-54d5-4876-b6ad-25df485f55d4",
+      "result_id": "8acab11c-44f3-4b58-b804-6d5dcfa26e32"
+    },
+    {
+      "claim_id": "1c8c1d98-d0d0-4812-b3ab-326c3b7a3cf2",
+      "result_id": "8acab11c-44f3-4b58-b804-6d5dcfa26e32"
+    },
+    {
+      "claim_id": "35282683-062c-40eb-adf2-5cf7a5735fec",
+      "result_id": "8acab11c-44f3-4b58-b804-6d5dcfa26e32"
+    },
+    {
+      "claim_id": "0fdff91d-ef05-461d-81a6-9235eb8fcd87",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "729fcf19-ab3d-41f2-b372-beca8655a10a",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "01b95ba4-64cd-4ad9-8dca-efc0597f73fe",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "075b8e4d-4c40-4e27-b896-2d6917153966",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "110ed8fe-a6f7-44ee-8f2e-ca84bb380c97",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "9371b1de-efd3-4438-a294-3724dff3f047",
+      "result_id": "280d8ace-b4bb-4b9c-a800-ff907615b983"
+    },
+    {
+      "claim_id": "0f4e0b4a-349e-4030-97bd-29c7cf5809d1",
+      "result_id": "6cf58a79-dcdf-4797-9f5c-f7780171d133"
+    },
+    {
+      "claim_id": "eaef79e9-ce03-40fa-81e2-3a402f29d2bf",
+      "result_id": "6cf58a79-dcdf-4797-9f5c-f7780171d133"
+    },
+    {
+      "claim_id": "f4fea4c0-07f6-4aca-b120-91b1ef206421",
+      "result_id": "6cf58a79-dcdf-4797-9f5c-f7780171d133"
+    },
+    {
+      "claim_id": "0dccccf2-6d98-4c79-9f27-8b976612ed48",
+      "result_id": "0c00ef14-c050-4056-a62f-83a53d8ae43f"
+    },
+    {
+      "claim_id": "0ffa6df5-7005-4fea-9845-cd51ae7a1747",
+      "result_id": "0c00ef14-c050-4056-a62f-83a53d8ae43f"
+    },
+    {
+      "claim_id": "e5ceb9f6-dcef-481f-838f-87a0135d93b2",
+      "result_id": "4624058e-8ad9-4b19-a365-975d4efdc0f8"
+    },
+    {
+      "claim_id": "7f5e8986-f6c3-4c73-a508-bb166929e22a",
+      "result_id": "2e425f4c-478f-490c-95eb-32c623a5d888"
+    },
+    {
+      "claim_id": "005df5be-5dbe-4cf1-bfe9-6493c23e3a1b",
+      "result_id": "8f3ac638-59e9-444e-915a-b5fd16ab12b7"
+    },
+    {
+      "claim_id": "25b30c6b-9020-44e7-938f-864d34d941f2",
+      "result_id": "9992e9c8-a66a-4a66-90ed-ead4cc3909f4"
+    },
+    {
+      "claim_id": "0515df32-faae-47a6-8a54-72d9117a563d",
+      "result_id": "9992e9c8-a66a-4a66-90ed-ead4cc3909f4"
+    },
+    {
+      "claim_id": "a131f4a3-40c9-4f90-a9e3-b033f5e69bc1",
+      "result_id": "d5725cde-1950-4436-a8c8-9c7033340b0d"
+    },
+    {
+      "claim_id": "c7a6e929-0461-4339-85a7-e26ff68c81b5",
+      "result_id": "d5725cde-1950-4436-a8c8-9c7033340b0d"
+    },
+    {
+      "claim_id": "54b6865a-7117-4bfe-8f88-dac16805e009",
+      "result_id": "d5725cde-1950-4436-a8c8-9c7033340b0d"
+    },
+    {
+      "claim_id": "b7b5a30c-1767-416f-8699-5f22b8eec595",
+      "result_id": "22b71264-cfaa-42c0-9817-f194bb957692"
+    },
+    {
+      "claim_id": "c862957d-a67d-454c-83f2-81d3d4de0ccf",
+      "result_id": "c4899fa3-d576-4b6a-8d9e-56fddb9dad86"
+    },
+    {
+      "claim_id": "e1bad0ba-5c42-4759-8b77-d382cfc77efb",
+      "result_id": "c4899fa3-d576-4b6a-8d9e-56fddb9dad86"
+    },
+    {
+      "claim_id": "b0bdff11-9d64-481b-b7ec-a9eaf3839a11",
+      "result_id": "c4899fa3-d576-4b6a-8d9e-56fddb9dad86"
+    },
+    {
+      "claim_id": "0e94f06a-b260-419d-8a86-e483c331451e",
+      "result_id": "b815412f-05f2-401e-83e0-c2a5bdb8a526"
+    },
+    {
+      "claim_id": "3d355678-22ae-479c-b1d3-199130bf494e",
+      "result_id": "b815412f-05f2-401e-83e0-c2a5bdb8a526"
+    },
+    {
+      "claim_id": "8ff9d51b-e160-466e-98f2-f3b6da30b18a",
+      "result_id": "b815412f-05f2-401e-83e0-c2a5bdb8a526"
+    },
+    {
+      "claim_id": "295cd2b4-ef60-47a7-9420-8ed2b34bb3fe",
+      "result_id": "1a7e6569-3a0d-43c7-92d3-11f4461e09ab"
+    },
+    {
+      "claim_id": "e5ad6040-2424-40b5-bf5f-a3a3b8775af3",
+      "result_id": "1a7e6569-3a0d-43c7-92d3-11f4461e09ab"
+    },
+    {
+      "claim_id": "49273a67-b0e3-4e6e-8dc3-61502aa18728",
+      "result_id": "1a7e6569-3a0d-43c7-92d3-11f4461e09ab"
+    },
+    {
+      "claim_id": "2ae7b548-2bc2-4035-b2a4-18d40d6fab42",
+      "result_id": "d8ecfb94-ee07-435e-981d-d8acb769305d"
+    },
+    {
+      "claim_id": "7183d37a-24cf-497e-b111-8f692b7e5767",
+      "result_id": "2f9cb9ca-5dc8-400a-b083-ba1f8c8264fa"
+    },
+    {
+      "claim_id": "7e7d118b-a4f7-41ef-b8cc-91f44463a69c",
+      "result_id": "5cec3e8e-8689-48f5-9af5-00b98bf382b6"
+    },
+    {
+      "claim_id": "852e90b0-1204-4009-8869-71ccf8023b8e",
+      "result_id": "5cec3e8e-8689-48f5-9af5-00b98bf382b6"
+    },
+    {
+      "claim_id": "47f69305-0a19-4335-b5f1-eada33f856b3",
+      "result_id": "5cec3e8e-8689-48f5-9af5-00b98bf382b6"
+    },
+    {
+      "claim_id": "fa865f52-d83a-4f85-8bfb-e34977f1cd30",
+      "result_id": "526da1a0-91f8-4469-bb84-348321c351df"
+    },
+    {
+      "claim_id": "b26e81c8-99d9-4963-afca-8739a070eaef",
+      "result_id": "94b67b54-c9ed-400a-9912-7260f0ccf824"
+    },
+    {
+      "claim_id": "08179b5b-8b27-4353-a47a-ca91d0842e7e",
+      "result_id": "94b67b54-c9ed-400a-9912-7260f0ccf824"
+    },
+    {
+      "claim_id": "51d83f45-d404-47a9-9385-27b9343ec210",
+      "result_id": "b0a11214-ddaf-4910-979c-f6ced721f050"
+    },
+    {
+      "claim_id": "176431fe-0c85-4056-97f6-531480415534",
+      "result_id": "97bd90e3-655a-4ddb-9c46-981c1b80fdc0"
+    },
+    {
+      "claim_id": "8fe49b6e-62f4-48b5-9382-75db894f6a99",
+      "result_id": "97bd90e3-655a-4ddb-9c46-981c1b80fdc0"
+    },
+    {
+      "claim_id": "e82de3ba-c43e-4d31-bd07-4915f0e69488",
+      "result_id": "dc283b87-d8b8-45cb-a53b-957eb796a070"
+    },
+    {
+      "claim_id": "c5c16ed5-ce48-475e-905a-ed0c13ce8e23",
+      "result_id": "dc283b87-d8b8-45cb-a53b-957eb796a070"
+    },
+    {
+      "claim_id": "4c225b45-d27b-4b99-871e-285eeb6fc97c",
+      "result_id": "d753adc5-976f-4f2a-a481-9403a2a4fe72"
+    },
+    {
+      "claim_id": "61afe14e-1029-4bd2-8829-23f3e521b526",
+      "result_id": "d753adc5-976f-4f2a-a481-9403a2a4fe72"
+    }
+  ],
+  "comparisons": []
+}

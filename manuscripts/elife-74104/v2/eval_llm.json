@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43"
+    ],
+    "result": "The DOGG data matrix was constructed from 7047 bacterial proteomes and 10,177 OGGs downloaded from UniProt on May 20, 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C43 describe the data source and matrix construction with explicit dimensions and dates. The methodology is clearly documented with appropriate citations to the database and annotation tools used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The first four SVD components (SVD1-SVD4) capture phylogenetic signal, explaining only 17% of variance, with bacteria clustering by phylum, consistent with known phylogenetic confounding in comparative genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are mutually consistent and supported by Figure 1C showing phylum-based clustering. The 17% variance explained (C4) is explicitly stated, and the phylogenetic interpretation (C3, C5) is supported by both the data and citations to prior work on phylogenetic confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Different biological scales are distributed hierarchically across the SVD spectrum: phylogeny in shallow components (tens), indirect PPIs in intermediate components (hundreds), and direct PPIs in deep components (thousands), with this pattern robust to subsampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 describe a core finding supported by Figure 3A-C showing distinct MI distributions for different biological benchmarks across the SVD spectrum. The statistical significance of deep components (C7) is demonstrated in Figure 3B, and robustness to subsampling (C10) is shown in supplementary figures. This represents a key methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The variance explained by SVD components follows a power-law distribution with exponent \u03b3 = -0.89.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is explicitly stated and supported by Figure 1B showing the power-law fit. This characterizes the spectral properties of the data matrix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A statistical model for significant spectral correlations was developed using 100-component windows with a threshold of 0.29 (p=0.018), based on empirical distributions that were superimposable across different spectral regions and organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the development of a statistical significance model supported by Figure 4\u2014figure supplement 1. The choice of window width (C47) and threshold (C50) are justified by empirical observations of distribution properties (C48, C49). The methodology is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A hierarchical model of E. coli K12 motility was constructed from 75 proteins correlated with FliC, revealing progressive network fragmentation at different spectral depths (50, 300, 1000) corresponding to different functional scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 describe the construction and properties of the E. coli motility model, supported by Figures 5 and 6A. The number of proteins (C11), network structures at different depths (C12, C14, C15), and GSEA enrichments (C13, C14) are explicitly documented with highly significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The statistical hierarchy of E. coli K12 motility showed substantial agreement with the KEGG hierarchy (44/55 proteins, 7/12 categories) but additionally identified cyclic-di-GMP and LPS biosynthesis modules supported by prior experimental evidence, with 96% of predicted proteins validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 describe validation of the E. coli motility model against KEGG and literature. The quantitative overlaps (C16, C17, C20) are explicitly stated, differences are identified (C18), and literature support is cited (C19). The high validation rate (96%) provides strong support for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Four uncharacterized proteins were predicted to affect P. aeruginosa pilus motility; experimental validation showed Q9I5G6 specifically reduces pilus-based motility (p<10\u207b\u2074) without affecting flagellar motility, representing significant enrichment over background expectation (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe prediction and experimental validation of novel motility effectors. The predictions (C21) are tested experimentally with appropriate controls (C22, C23), statistical significance is demonstrated (C22, C25), and specificity is shown (C23, C24). This represents successful prospective validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C28"
+    ],
+    "result": "Windowed spectral correlations (MIWSCs) produced significantly higher F-scores than 18 alternative methods for predicting all three interaction classes, outperforming the mathematically similar SVD-phy method even when tuned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C28 describe comparative performance supported by Figure 8A and statistical testing (Wilcoxon rank-sum). The superiority over multiple methods including the similar SVD-phy approach is clearly demonstrated across multiple validation tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The SCALES approach exhibited significantly greater precision and recall than the Coev+ method for predicting direct PPIs in M. tuberculosis H37Rv.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by Figure 8D showing superior performance compared to the state-of-the-art AA Coev method. This demonstrates competitive performance despite using lower-resolution features (OGGs vs. amino acid sequences).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "A precomputed database of 122,725,727 indirect and 19,546,063 direct PPI predictions for all 7047 UniProt reference bacterial proteomes was developed and made publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 explicitly describes the resource developed, with specific numbers of predictions and availability information. This represents a significant practical contribution to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Relevant biological signal is distributed throughout the SVD spectrum including components with minimal variance, demonstrating that percent variance per component is not a good proxy for biological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 represent a key conceptual finding supported by the observation that deep components (e.g., SVD2996-3000) with only 0.025% variance contain statistically significant biological information (C7). This challenges conventional dimensionality reduction approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Compared to AA Coev which is computationally expensive and applied to only two organisms, SCALES can compute proteome-wide PPIs in minutes, enabling analysis of all 7047 reference proteomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 compare computational scalability between methods. The characterization of AA Coev (C55, C56) is factual, and the computational efficiency of SCALES (C57) is demonstrated by the comprehensive analysis performed. This represents a significant practical advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The method has limitations related to OGG annotations: 6.7% of E. coli K12 proteins lack OGG annotations and cannot be analyzed, and proteins sharing OGGs appear to interact at all spectral depths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 honestly describe methodological limitations with specific quantification (C58). These are inherent to the OGG-based approach and appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "SCALES is inherently 'mechanism-free', identifying functionally relevant interactors without revealing their collective function or detailed molecular basis of interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 describe conceptual limitations of the approach. This is a fair characterization of what correlation-based methods can and cannot reveal about biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SCALES represents a statistical approach to describing emergence\u2014the integration of components into hierarchical functional units\u2014a property spanning biological systems, suggesting potential general applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 describe the conceptual framework and potential generalizability. While C63 and C64 are reasonable characterizations, C65 is explicitly speculative ('may be true', 'remains to be tested'). The generalizability beyond bacteria requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C42"
+    ],
+    "result": "Hierarchical networks of protein interactions reflecting emergence of complex bacterial phenotypes can be defined from statistical patterns of proteome variation across thousands of bacteria, validated through enrichment analysis, database comparison, and experimental testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 and C42 represent the main thesis and approach of the study. The hierarchical network construction (C32, C33) is supported by multiple lines of evidence including GSEA (C34), KEGG comparison (C16-C20), and experimental validation (C21-C25). The approach is well-validated across multiple test cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study builds on a foundation of experimental and computational PPI methods, addressing the known limitation that higher-order interactions cannot be completely inferred from pairwise interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide context from prior work, appropriately cited. These establish the motivation for developing methods that can capture hierarchical organization directly rather than inferring it from pairwise interactions.",
+    "result_type": "MINOR"
+  }
+]

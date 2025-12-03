@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "AlphaFold-Multimer shows inconsistent performance on TCR:pMHC structures, with highly variable prediction quality, displaced peptides, non-native docking modes, and long computational times, despite being capable of generating some high-quality predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C20-C23 collectively demonstrate that while AlphaFold-Multimer can produce high-quality predictions (CDR RMSD ~2\u00c5), the performance is highly variable with many models showing displaced peptides and non-native docking modes. The computational cost limitation (C23) and citation support (C11) strengthen this assessment. Visual inspection data (C22) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "AlphaFold-Multimer's limitation in not supporting multi-chain templates, combined with the free association of V genes and variable TCR:pMHC docking modes, motivated the development of a specialized pipeline using hybrid templates to provide better docking geometry constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 establish the rationale for the new method. C24-C25 describe AlphaFold-Multimer's technical limitation (supported by citation), C27-C29 explain TCR biology constraints, and C26, C30 provide the logical connection to why hybrid templates would improve performance. This forms a coherent justification for the methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A specialized AlphaFold pipeline (AF_TCR) was developed that uses hybrid structural templates from diverse docking geometries, excludes similar structures during benchmarking, omits MSA information for computational efficiency, and selects the highest confidence model from multiple simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 describe the complete AF_TCR methodology with supporting figures (Figure 1). The methodological choices are clearly documented: hybrid template construction (C31-C33), model selection (C34), benchmarking controls (C35), and computational optimization (C36-C37). The approach is internally consistent and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The AF_TCR pipeline produces higher quality models than AlphaFold-Multimer variants and the TCRpMHCmodels pipeline, with statistically significant improvements (P<10\u207b\u2077), positive correlation between predicted and observed accuracy, and improvement over template geometries in 30-94% of targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present comprehensive benchmarking data with strong statistical support (Figure 2). Multiple comparison methods (Wilcoxon tests, RMSD metrics) consistently show AF_TCR superiority. The correlation analysis (C41) and template improvement metrics (C42-C43) provide convergent evidence. Sample sizes (N=130) are adequate for the statistical claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Two dominant factors contributing to docking prediction accuracy are the deviation of native docking geometry from consensus binding mode and MHC class, with class II binding modes predicted better than class I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by systematic analysis in Figure 2\u2014figure supplement 6. The multidimensional Z-score approach for quantifying docking geometry deviation is methodologically sound. The identification of MHC class as a factor is data-driven, though the mechanistic explanation for why class II performs better is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Fine-tuning AlphaFold on human TCR:pMHC complexes improved performance on mouse targets (p<0.015), suggesting the model learned generalizable features of TCR:pMHC interactions despite the small training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 demonstrate cross-species generalization with statistical significance (Figure 2F). The inference that generalizable features were learned (C47) is reasonable given the sequence and structural differences between human and mouse systems. However, the small training set size (93 structures) and modest improvement suggest this result should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A benchmark of 8 Class I pMHC systems with TCR repertoires was established, using NetMHCpan-4.1 to select decoy peptides, revealing significant TCR- and pMHC-intrinsic effects in raw accuracy estimates that required correction for proper binding score comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 describe the benchmark design and initial observations. The dataset selection criteria are clear (C49-C51), decoy selection methodology is appropriate (C52), and the identification of intrinsic effects (C53-C56) is supported by Figure 3B. The correction strategy for these effects is methodologically sound, though the specific correction algorithm could be better validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The AF_TCR pipeline correctly ranked the target peptide first for 6 of 8 epitopes when averaging across TCR repertoires, achieved an overall AUROC of 0.82, with performance varying by epitope (AUROC \u22650.96 for some, near-random for others) and correlating with TCR repertoire diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 present the main binding specificity results with comprehensive data (Figures 3D-E, 4). The repertoire-level prediction success (C57) and overall AUROC (C62) are clearly quantified. The correlation with repertoire diversity (C58-C59) is supported by TCRdiv analysis (Figure 4\u2014figure supplement 1). The variable performance across epitopes (C60-C61) is honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Well-predicted epitopes have smaller structural RMSD values, with H2Db-ASN9 as an outlier due to its unique TRBV17+ TCR population with reversed/displaced binding modes. Excluding this outlier, there is positive correlation between docking RMSD and binding score, and TCRs with correctly ranked peptides show lower RMSD distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 establish the connection between structural accuracy and prediction success (Figure 5). The H2Db-ASN9 outlier analysis (C64-C68) is well-supported by citations and clustering data. The correlations (C69-C71) demonstrate that successful predictions are driven by structural accuracy. However, the exclusion of H2Db-ASN9 from correlation analysis could be seen as selective data presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Correct binding predictions are driven at least in part by recovery of native-like structural features, though peptide backbone RMSD shows only weak correlation with binding prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide mechanistic insight into prediction success. C72 is a reasonable inference from the docking RMSD correlations, while C73 (Figure 5\u2014figure supplement 2) shows that peptide conformation alone is insufficient. This suggests the method captures interface geometry better than peptide structure, which is consistent with the template-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In silico alanine scanning shows that most epitope-specific repertoires prefer native peptides at most positions, with highly sensitive positions being largely TCR-exposed, including known viral escape mutation sites, while peptide anchor positions are not strongly predicted, suggesting successful correction for peptide-intrinsic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 validate the method through alanine scanning (Figure 6). The identification of TCR-exposed sensitive positions (C75) and known escape mutations (C76 with citations) provides biological validation. The observation about anchor positions (C77-C78) supports the correction methodology, though this is somewhat circular reasoning since the correction was designed to remove such effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The specificity protocol showed much poorer performance on single TCRs with altered peptide variants compared to the decoy-discrimination task, though performance could be somewhat improved by including related templates, suggesting future method improvements may enhance binding predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 honestly report limitations (Figure 6\u2014figure supplement 1). The poor performance on altered peptide variants (C79) is a significant limitation. The improvement with related templates (C80) is data-supported, and the speculation about future improvements (C81) is reasonable but remains unvalidated. This represents an important boundary condition for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The overall accuracy falls short of practical application requirements, several benchmark epitopes have extensive structural characterization that may introduce bias despite exclusion efforts, some TCR chains may overlap with AlphaFold training data, and future benchmarking is needed to establish performance on epitopes without structural coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide critical self-assessment of limitations. The acknowledgment of insufficient practical utility (C82), potential bias from structural coverage (C84-C86), and training set overlap (C87) demonstrate scientific rigor. The call for future validation (C88) and cautious interpretation (C89) are appropriate. These limitations are significant and honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The template-based approach is unlikely to succeed on highly divergent binding modes and is fundamentally limited by structure database coverage, which is biased toward well-studied alleles like HLA-A*02:01 and canonical 9-residue epitopes, though AlphaFold can improve over templates in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 identify fundamental limitations of the template-based approach. The inability to predict divergent geometries (C90, C92) is supported by citations and consistent with the method design. The database bias (C93-C94) is documented in Figure 2\u2014figure supplement 1. The acknowledgment that AlphaFold can sometimes improve templates (C91) provides balanced assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Multiple potential improvements are proposed including testing on other systems, incorporating MSA information or paired MSAs, exploring alternative binding affinity estimates like Rosetta energies, and directly fine-tuning AlphaFold to discriminate binding from non-binding examples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C100 are entirely speculative about future directions. While the suggestions are reasonable and some are supported by citations to related work (C98-C99), none have been tested in this study. These represent hypotheses rather than results. The speculation is appropriate for a Discussion section but cannot be evaluated as supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TCR:pMHC interaction specificity underlies adaptive immunity, but generalizable predictive models remain elusive due to recognition mode diversity and limited training data, though existing structural studies likely cover most docking geometries and specificity is determined by structure and flexibility at the biophysical level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C8 establish the scientific context and motivation. These are well-supported by citations and represent established knowledge in the field. C1 and C7 state fundamental immunological principles, C2 and C5-C6 accurately describe current limitations (supported by citations), and C8 provides reasonable inference about structural coverage. This context appropriately frames the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "A specialized AlphaFold version can discriminate correct from incorrect peptide epitopes with substantial accuracy, with success correlating with structural accuracy and recapitulating key specificity determinants, suggesting deep learning-based structural modeling represents a path to generalizable TCR:pMHC prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C13-C15 present the main conclusions. C3 and C13 are supported by the binding specificity data (AUROC 0.82, 6/8 epitopes ranked first). The correlation between prediction success and structural accuracy (C14-C15) is demonstrated in Figure 5. However, C4's optimism about generalizability should be tempered by the acknowledged limitations (C82-C94). The evidence supports cautious optimism rather than strong confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "AlphaFold and RoseTTAfold use advanced architectures trained on protein structures and can predict protein complexes despite monomer training, with AlphaFold-Multimer leveraging inter-chain covariation, though performance on antibody:antigen complexes (similar to TCR:pMHC) is poor and TCR:pMHC interactions involve variable CDR3 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C16-C19 provide technical background on AlphaFold methods. These are well-supported by citations to the original AlphaFold papers and represent accurate descriptions of the methods. The connection to TCR:pMHC challenges (C17-C19) appropriately motivates why specialized approaches might be needed. This is established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

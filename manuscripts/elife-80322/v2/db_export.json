@@ -1,0 +1,1762 @@
+{
+  "submission": {
+    "id": "cfc612ad-27ee-40ce-8168-4c28d92826c1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:56:03.501321Z",
+    "updated_at": "2025-12-03T14:56:03.501321Z"
+  },
+  "content": [
+    {
+      "id": "94289377-687f-47ad-acea-cfce70923b98",
+      "submission_id": "cfc612ad-27ee-40ce-8168-4c28d92826c1",
+      "content_type": "manuscript",
+      "content_text": "# Integrative small and long RNA omics analysis of human healing and nonhealing wounds discovers cooperating microRNAs as therapeutic targets\n\n## Authors\n\n- Zhuang Liu<sup>1</sup> ([ORCID: 0000-0001-8938-0086](https://orcid.org/0000-0001-8938-0086))\n- Letian Zhang<sup>1</sup> ([ORCID: 0000-0002-0987-0905](https://orcid.org/0000-0002-0987-0905))\n- Maria A Toma<sup>1</sup>\n- Dongqing Li<sup>1</sup>\n- Xiaowei Bian<sup>1</sup>\n- Irena Pastar<sup>3</sup>\n- Marjana Tomic-Canic<sup>3</sup>\n- Pehr Sommar<sup>4</sup> \u2020\n- Ning Xu Land\u00e9n<sup>1</sup> ([ORCID: 0000-0003-4868-3798](https://orcid.org/0000-0003-4868-3798)) \u2020\n\n### Affiliations\n\n1. Dermatology and Venereology Division, Department of Medicine Solna, Center for Molecular Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n2. Key Laboratory of Basic and Translational Research on Immune-Mediated Skin Diseases, Chinese Academy of Medical Sciences; Jiangsu Key Laboratory of Molecular Biology for Skin Diseases and STIs, Institute of Dermatology, Chinese Academy of Medical Sciences and Peking Union Medical College Nanjing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n3. Wound Healing and Regenerative Medicine Research Program, Dr Phillip Frost Department of Dermatology and Cutaneous Surgery, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))\n4. Department of Plastic and Reconstructive Surgery, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))\n5. Ming Wai Lau Centre for Reparative Medicine, Stockholm Node, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroRNAs (miR), as important epigenetic control factors, reportedly regulate wound repair. However, our insufficient knowledge of clinically relevant miRs hinders their potential therapeutic use. For this, we performed paired small and long RNA-sequencing and integrative omics analysis in human tissue samples, including matched skin and acute wounds collected at each healing stage and chronic nonhealing venous ulcers (VUs). On the basis of the findings, we developed a compendium (https://www.xulandenlab.com/humanwounds-mirna-mrna), which will be an open, comprehensive resource to broadly aid wound healing research. With this first clinical, wound-centric resource of miRs and mRNAs, we identified 17 pathologically relevant miRs that exhibited abnormal VU expression and displayed their targets enriched explicitly in the VU gene signature. Intermeshing regulatory networks controlled by these miRs revealed their high cooperativity in contributing to chronic wound pathology characterized by persistent inflammation and proliferative phase initiation failure. Furthermore, we demonstrated that miR-34a, miR-424, and miR-516, upregulated in VU, cooperatively suppressed keratinocyte migration and growth while promoting inflammatory response. By combining miR expression patterns with their specific target gene expression context, we identified miRs highly relevant to VU pathology. Our study opens the possibility of developing innovative wound treatment that targets pathologically relevant cooperating miRs to attain higher therapeutic efficacy and specificity.\n\n## Introduction\n\nWound healing is a fundamental biological process (BP) comprising three sequential and overlapping phases, that is, inflammation, proliferation, and remodeling (Reinke and Sorg, 2012). This delicate repair process is often disrupted in chronic venous insufficiency patients, resulting in venous ulcers (VUs) characterized by persistent inflammation and proliferative phase initiation failure (Eming et al., 2014). VU is the most common chronic nonhealing wound type, comprising 45\u201360% of all lower extremity ulcerations (Vivas et al., 2016). VU exhibits a marked impact on health-related life quality and represents a significant financial burden both to the patients and the society with an annual health care cost of overall $14.9 billion in the USA (Hoversten et al., 2020). A deeper understanding of the underlying gene expression regulatory mechanisms during physiological and pathological wound repair is essential for developing more effective wound treatments (Stone et al., 2017).\n\nMicroRNAs (miR) represent a group of short (~22 nt) noncoding (nc) ribonucleic acids, incorporating into the RNA-induced silencing complex and binding to the 3\u2032 untranslated region of their target mRNAs, resulting in mRNA destabilization and translational repression (Stavast and Erkeland, 2019). Given that an individual miR can target dozens to hundreds of genes, miRs have been identified as regulators of complex gene networks (Stavast and Erkeland, 2019). MiR-mediated regulation is reportedly crucial in multiple fundamental BPs including skin wound repair (Herter and Xu Land\u00e9n, 2017, Meng et al., 2018). Importantly, manipulating miRs critical for the disease pathogenesis could offer a prominent therapeutic effect, supported by viral infection- and cancer-targeting miR therapeutics clinical trials (Rupaimoole and Slack, 2017). Therefore, miR-based therapeutics for hard-to-heal wounds represent a promising approach (Herter and Xu Land\u00e9n, 2017, Luan et al., 2018, Meng et al., 2018; Nie et al., 2020; Pastar et al., 2020, Sen and Roy, 2012).\n\nHowever, our insufficient knowledge of the miR-mediated gene regulation in human wounds severely hinders the identification of clinically relevant miRs and their potential therapeutic use. While most previous wound healing-related miR studies rely on in vitro or animal models, only a few have approached miR profiles in human wound tissues or primary cells from patients, including tissues and fibroblasts of diabetic foot ulcers (Liang et al., 2016; Ramirez et al., 2018), burn wound dermis (Liang et al., 2012), and acute wounds at the inflammatory phase (Li et al., 2015). Despite sharing several fundamental features, the human skin structure and repair processes are different from those of the commonly used animal models (e.g., rodents) (Elliot et al., 2018). Moreover, animal models cannot fully simulate the human disease complexity, and the findings are difficult to extrapolate to humans (Darwin and Tomic-Canic, 2018; Pastar et al., 2018). Thereby, a rigorous and in-depth characterization of miR-mediated gene regulatory networks in human healing and nonhealing wounds is timely needed.\n\nIn this study, we performed paired small and mRNA expression profiling in the human skin, acute wounds during the inflammatory and proliferative phases, and VU, unraveling time-resolved changes of the whole transcriptome throughout the wound healing process and the unique gene expression signature of a common chronic wound type. The integrative miR and mRNA omics analysis provides a network view of miR-mediated gene regulation in human wounds in vivo and demonstrates the functional involvement of miRs in human skin wound repair at the system level. Importantly, we identified miRs highly relevant to VU pathology, based not only on their aberrant expression but also their targetome enriched in the VU-related gene expression signature. Apart from confirming the in silico findings, the experimental miR expression, targetome, and function validation uncovered that VU-dysregulated miRs could act cooperatively contributing to the stalled wound healing characterized by failed transition from inflammatory-to-proliferative phase, which opens up new possibility for the development of more precise and innovative wound treatment targeting pathologically relevant cooperating miRs to achieve higher therapeutic efficacy and specificity. Additionally, based on this comprehensive analysis of human wound tissues, we built a browsable resource web portal (https://www.xulandenlab.com/humanwounds-mirna-mrna), which is the first wound healing-focused miR resource for facilitating the exploration of miR\u2019s clinical application and for aiding in the elucidation of posttranscriptional regulatory underpinnings of tissue repair.\n\n## Results\n\n### miRNA and mRNA paired expression profiling in human wounds\n\nTo better understand tissue repair in humans, we collected wound-edge tissues from human acute wounds and chronic nonhealing VUs (Figure 1a and Materials and methods, Tables 2 and 3). Donor demographics are presented in Table 1. We created 4-mm full-thickness punch wounds at the lower legs of healthy volunteers aged beyond 60 years to match the advanced age of VU patients and anatomical location of the highest VUs occurrence (Vivas et al., 2016). Tissue was collected at baseline (Skin), and at day 1 and 7 post-wounding (Wound1 and Wound7) to capture the inflammatory and proliferative phases of wound healing, respectively. In total, 20 samples divided into four groups, that is, Skin, Wound1, Wound7, and VU, were analyzed by Illumina small RNA sequencing (sRNA-seq) and ribosomal RNA-depleted long RNA sequencing (RNA-seq). After stringent raw sequencing data quality control (Supplementary file 1 and Supplementary file 2), we detected 562 mature miRs and 12,069 mRNAs in our samples. Our principal component analysis showed that either the miR or the mRNA expression profiles clearly separated these four sample groups (Figure 1b). Next, we performed pairwise comparisons to identify the differentially expressed genes (DEGs) during wound repair. We compared the VUs with both the skin and acute wounds and unraveled a VU-specific gene signature, including aberrant increase of 22 miRs and 221 mRNAs and decrease of 10 miRs and 203 mRNAs (differentially expressed [DE] analysis false discovery rate [FDR] <0.05, fold change \u22652 for miRs, and \u22651.5 for mRNAs, Figure 1c\u2013e and Figure 1\u2014source data 1). The full DEG list can be browsed on our resource website (https://www.xulandenlab.com/humanwounds-mirna-mrna) with more or less rigorous cutoffs. With this unique resource, we dissected further the miR-mediated posttranscriptional regulatory underpinnings of wound repair.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of analysis in this study (n = samples used for RNA-seq and qRT-PCR validation in full-thickness tissues). (b) Principal component analysis (PCA) plots based on miRNA (upper panel) and mRNA (lower panel) expression profiles. Each dot indicates an individual sample. The numbers of differentially expressed (DE) miRNAs (c) and mRNAs (e) in venous ulcer (VU) (n = 5) compared to the Skin, Wound1, and Wound7 from five healthy donors are shown in Venn diagrams. False discovery rate (FDR) <0.05, fold change \u22652 for miRNAs, and \u22651.5 for mRNAs. (d) The heatmap depicts the 32 miRNAs specifically dysregulated in the VU with scaled expression values (Z-scores). Weighted gene coexpression network analysis (WGCNA) modules of each miRNA belongs to are marked with color bars. The miRNAs with experimentally validated expression changes are highlighted in red.\n\n**Table 1.**\n Characteristics of the healthy donors and the venous ulcer patients.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristics</th>\n      <th>Healthy donors</th>\n      <th>Patients with VU</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Study population (n)</td>\n      <td>10</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Age, years (mean \u00b1 SD)</td>\n      <td>65.3 \u00b1 3.2</td>\n      <td>75.8 \u00b1 12.0</td>\n    </tr>\n    <tr>\n      <td>Ethnicity</td>\n      <td>Caucasian</td>\n      <td>Caucasian</td>\n    </tr>\n    <tr>\n      <td>Gender (male:female)</td>\n      <td>2:8</td>\n      <td>5:7</td>\n    </tr>\n    <tr>\n      <td>Biopsy location</td>\n      <td>Lower leg</td>\n      <td>Lower leg</td>\n    </tr>\n    <tr>\n      <td>Wound duration</td>\n      <td>Acute (1 or 7 days after injury)</td>\n      <td>3.7 \u00b1 5.3 years</td>\n    </tr>\n  </tbody>\n</table>\n\n_SD, standard deviation; VU, venous ulcer (n = samples used for RNA-seq and qRT-PCR validation)._\n\n**Table 2.**\n Characteristics of the patients with venous ulcer.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Patient</th>\n      <th>Sex</th>\n      <th>Age(years)</th>\n      <th>Ethnicity</th>\n      <th>Wound size (cm)</th>\n      <th>Wound duration (years)</th>\n      <th>Wound location</th>\n      <th>Experiment</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>M</td>\n      <td>86</td>\n      <td>Caucasian</td>\n      <td>6 \u00d7 5</td>\n      <td>4</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>F</td>\n      <td>68</td>\n      <td>Caucasian</td>\n      <td>15 \u00d7 15</td>\n      <td>2</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>M</td>\n      <td>70</td>\n      <td>Caucasian</td>\n      <td>3 \u00d7 0.5</td>\n      <td>0.3</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>F</td>\n      <td>78</td>\n      <td>Caucasian</td>\n      <td>15 \u00d7 12</td>\n      <td>1.5</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>F</td>\n      <td>87</td>\n      <td>Caucasian</td>\n      <td>3 \u00d7 2 + 8 \u00d7 4</td>\n      <td>2.5</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>F</td>\n      <td>73</td>\n      <td>Caucasian</td>\n      <td>3 \u00d7 4</td>\n      <td>3.5</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>M</td>\n      <td>99</td>\n      <td>Caucasian</td>\n      <td>20 \u00d7 10</td>\n      <td>0.5</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>F</td>\n      <td>71</td>\n      <td>Caucasian</td>\n      <td>20 \u00d7 20</td>\n      <td>20</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>F</td>\n      <td>77</td>\n      <td>Caucasian</td>\n      <td>2.5 \u00d7 3 + 15 \u00d7 15</td>\n      <td>4.5</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>M</td>\n      <td>51</td>\n      <td>Caucasian</td>\n      <td>2 \u00d7 1.5</td>\n      <td>3</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>M</td>\n      <td>69</td>\n      <td>Caucasian</td>\n      <td>12 \u00d7 15</td>\n      <td>1</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>F</td>\n      <td>81</td>\n      <td>Caucasian</td>\n      <td>7 \u00d7 2.5</td>\n      <td>1</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>M</td>\n      <td>65</td>\n      <td>Caucasian</td>\n      <td>3 \u00d7 3</td>\n      <td>2.2</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>M</td>\n      <td>78</td>\n      <td>Caucasian</td>\n      <td>10 \u00d7 5</td>\n      <td>0.9</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>M</td>\n      <td>63</td>\n      <td>Caucasian</td>\n      <td>4 \u00d7 4</td>\n      <td>0.3</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>M</td>\n      <td>50</td>\n      <td>Caucasian</td>\n      <td>4.5 \u00d7 1</td>\n      <td>0.4</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>M</td>\n      <td>71</td>\n      <td>Caucasian</td>\n      <td>13 \u00d7 10</td>\n      <td>1</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>M</td>\n      <td>92</td>\n      <td>Caucasian</td>\n      <td>12 \u00d7 12</td>\n      <td>2</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>F</td>\n      <td>87</td>\n      <td>Caucasian</td>\n      <td>3 \u00d7 3</td>\n      <td>2.5</td>\n      <td>Lower leg</td>\n      <td>LCM</td>\n    </tr>\n  </tbody>\n</table>\n\n_M, male; F, female._\n\n### Dynamically changed miR expression during wound repair\n\nWe leveraged weighted gene coexpression network analysis (WGCNA) for classifying miRs according to their coexpression patterns in the 20 sRNA-seq analyzed samples to link the miR expression changes with wound healing progression or nonhealing status at a system level (Langfelder and Horvath, 2008). We identified 13 distinct modules with a robustness confirmed by the module preservation analysis (Figure 2\u2014figure supplement 1a), 10 of them significantly correlating (Pearson\u2019s correlation, FDR <0.05) with at least one of the four phenotypic traits, that is, Skin, Wound1, Wound7, and VU (Figure 2a, b, Figure 2\u2014source data 1). The WGCNA revealed that module (m)2, m10, and m11 miRs were upregulated at the inflammatory phase (Wound1), while m5 and m6 miRs peaked at the proliferative phase (Wound7). In VU, we identified three downregulated (m3, m7, and m9) and two upregulated (m8 and m12) miR modules. We highlighted the 198 \u2018driver\u2019 miRs (i.e., the top 20 miRNAs with the highest kME values in each module and kME >0.5) of the 10 significant modules in the coexpression networks ( Figure 2c, d and Figure 2\u2014figure supplement 2b\u2013i) and they could also be browsed on our resource web portal (https://www.xulandenlab.com/humanwounds-mirna-mrna). Notably, we identified 84% of them as DEGs, suggesting a high consistence between the WGCNA and DE analysis (Figure 2\u2014source data 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-v2.jpg)\n\n**Figure 2.:** (a) Cluster dendrogram shows miRNA coexpression modules: each branch corresponds to a module, and each leaf indicates a single miRNA. Color bars below show the module assignment (the first row) and Pearson\u2019s correlation coefficients between miRNA expression and the sample groups (the second to the fifth row: red and blue lines represent positive and negative correlations, respectively). (b) Heatmap shows Pearson\u2019s correlations between miRNA module eigengenes (MEs) and the sample groups. The correlation coefficients and the adjusted p values (false discovery rate, FDR) are shown where the FDRs are less than 0.05. For the venous ulcer (VU)-associated modules m8 (c) and m9 (d), bar plots (left) depict the ME values across the 20 samples analyzed by RNA-seq, and network plots (right) show the top 20 miRNAs with the highest kME values in each module. Node size and edge thickness are proportional to the kME values and the weighted correlations between two connected miRNAs, respectively. The miRs with their targetome enriched with VU-mRNA signature (see Figure 4b) are highlighted in red. Transcription factors (TFs) with their targets enriched in the m9 module (Fisher\u2019s exact test: false discovery rate [FDR] <0.05) are listed below the network, and TFs differentially expressed in VU are underlined. (e) Heatmap shows Pearson\u2019s correlations between mRNA MEs and the sample groups. (f) The gene expression pattern of each module across all the sample groups is depicted with line charts. Gene ontology analysis of biological processes enriched in each module is shown at the right.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The preservation analysis for miRNAs (a) and mRNAs (b) modules. The standardized Z-scores were calculated for each module by permutating 200 times using the 20 samples analyzed by RNA-seq as reference and test datasets. Modular preservation is strong if Z-summary >10, weak to moderate if 2 < Z-summary < 10, no evidence of preservation if Z-summary \u22642. miRNA modules.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) The scale-free topology fit index (left) and mean connectivity (right) for various soft-threshold powers. The red line indicates signed R2 = 0.8. (b\u2013i) Bar plots (left) depict the module eigengene (ME) values across the 20 samples analyzed by RNA-seq and network plots (right) show the top 20 miRNAs with the highest kME values in each module. Node size and edge thickness are proportional to the kME values and the weighted correlations between two connected miRNAs, respectively. Transcription factors (TFs) with their targets enriched in the modules (Fisher\u2019s exact test: false discovery rate [FDR] <0.05) are listed below the networks.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Pearson\u2019s correlations between the first principal component (PC1) of miRNAs module m9 and the expression of GATA3 or KLF4. (b) GATA3 and KLF4 expression in the skin, day 1 and 7 acute wounds from five healthy donors and in five venous ulcers analyzed by RNA sequencing. Mann\u2013Whitney t-test, **p < 0.01.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) The scale-free topology fit index (left) and mean connectivity (right) for various soft-threshold powers. The red line indicates signed R2 = 0.8. (b) Cluster dendrogram shows mRNA coexpression modules: each branch corresponds to a module, and each leaf indicates a single miRNA. Color bars below show the module assignment (the first row) and Pearson\u2019s correlation coefficients between mRNA expression and the sample groups (the second to the fifth row: red and blue lines represent positive and negative correlations, respectively). (c) Network plots of mRNA modules: the top 20 mRNAs with the highest kME values in each module were plotted in the networks. Node size and edge thickness are proportional to the kME values and the weighted correlations between two connected mRNAs, respectively. Transcription factors (TFs) with their targets enriched in the modules (Fisher\u2019s exact test: false discovery rate [FDR] <0.05) are listed below the networks.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a) The top 10 gene ontology (GO) terms with false discovery rate (FDR) less than 0.05 are shown for each module. (b) MetaCore analysis based on a curated database identified the process networks (left) and pathway maps (right) enriched in the M8 or the combined M11.M12 modules, respectively.\n\nWe hypothesized that the coexpression of various miRs could be due to their transcription driven by common transcription factors (TFs). To test this idea, we leveraged TransmiR v2.0 (Tong et al., 2019), a database including literature-curated and ChIP-seq-derived TF-miR regulation data, to identify the enriched TFs in each miR module (Fisher\u2019s extract test: odds ratio [OR] >1, FDR <0.05, Figure 2\u2014source data 3). Interestingly, the KLF4, KLF5, GATA3, GRHL2, and TP53 families exhibited not only their binding sites enriched in the m9 miR genes but their expression also significantly correlated with the m9 miRs (Pearson\u2019s correlation coefficient = 0.53\u20130.82, p value of p = 7.05e\u221206\u20130.014) (Figure 2d, Figure 2\u2014figure supplement 3a, and Figure 2\u2014source data 3). Notably, both GATA3 and KLF4 are reportedly downregulated in human VU (Stojadinovic et al., 2014; Stojadinovic et al., 2008), which findings were confirmed in our RNA-seq data (Figure 2\u2014figure supplement 3b). These results could explain the deficiency of their regulated miRs in VU and also suggest a link between these TFs and chronic wound pathology.\n\n### mRNA coexpression networks underpinning wound repair\n\nmiRs exert functions through the posttranscriptional regulation of their target mRNAs. Therefore, describing the mRNA expression context would be required for understanding the role of miRs in wound repair (Agarwal et al., 2015). We thus performed WGCNA in the paired long RNA-seq data and identified 13 mRNA coexpression modules (Figure 2e, Figure 2\u2014figure supplement 1b, Figure 2\u2014figure supplement 4a\u2013c, and Figure 2\u2014source data 4). The gene ontology (GO) analysis of the mRNA modules largely confirmed the previous knowledge of wound biology, such as skin hemostasis (M2) and barrier function (M4)-related gene downregulation in the wounds, the upregulation of the genes involved in the immune response (M8), RNA processing, and protein production (M1, M3, and M5) in the inflammatory phase, and the prominent cell mitosis-related gene expression (M7) in the proliferative phase of wound repair (Figure 2f and Figure 2\u2014figure supplement 5a). These results further supported the robustness and reproducibility of our profiling data. Moreover, this unique dataset allows the identification of the key TFs driving these BPs. For example, we identified NFKB1 and RELA, well known for their immune functions (Liu et al., 2017), as the most enriched upstream regulators for the M1 mRNAs, while E2F1, a TF promoting cell growth (Ertosun et al., 2016), surfaced as a master regulator TF in M7 (Figure 2\u2014source data 5).\n\nImportantly, our study unraveled a VU molecular signature: downregulated expression of RNA and protein production- (M1, M3, and M5) as well as cell mitosis-related (M7) genes, and upregulated expression of genes involved in extracellular matrix organization and cell adhesion (M9). These results were in line with the dermal tissue fibrosis observed in patients with chronic venous insufficiency (Blumberg et al., 2012; Pappas et al., 2020, Stone et al., 2020). Moreover, we found an immune gene signature clearly distinguishing the chronic inflammation in VUs (M11 and M12 enriched with adaptive immunity-related mRNAs) from the self-limiting immune response in acute wounds (M8 enriched with neutrophil activation- and phagocytosis-related mRNAs) (Figure 2f and Figure 2\u2014figure supplement 5b). Overall, we generated a gene expression map of human healing and nonhealing wounds, setting a steppingstone for the in-depth understanding of the VU pathological mechanisms. After having established this map, we decided to dissect how miRs contribute to these pathological changes.\n\n### Integrative analysis of miR and mRNA expression changes in wound healing\n\nAmong the multiple gene expression regulatory mechanisms, we aimed to evaluate how miRs could contribute to the protein-coding gene expression in human wound repair. We thus performed a correlation analysis for the miRs and mRNAs that were DE in VU compared to the skin and acute wounds, using the first principal component (PC1) of their expression in each sample. We found significantly negative correlations (Pearson\u2019s correlation, p values: 1.36e\u221212\u20131.27e\u221204) between the PC1 of the DE miRs and the DE mRNAs predicted as miR targets, indicating negative regulation of VU-mRNA signature by the aberrantly expressed miRs in VU (Figure 3a\u2013c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig3-v2.jpg)\n\n**Figure 3.:** (a\u2013c) Correlations between the first principal component (PC1) of VU-associated differentially expressed (DE) miRNAs, and the PC1 of VU DE mRNAs predicted as miRNA targets. (d) PC1 correlations between the hub miRNAs and their predicted targets in the VU-associated miRNA and mRNA modules. Pearson\u2019s correlation coefficients (r) and p values are shown. The mRNA networks are plotted with the top 20 most connected module genes. Transcription factors (TFs) with targets enriched in the VU-associated modules are listed below the networks.\n\nFurthermore, we dissected the potential regulatory relationship between the VU-associated miR and mRNA modules. We identified significantly negative correlations between the downregulated miR (m3, m7, and m9) and the upregulated mRNA (M9, M11, and M12) modules, as well as between the upregulated miR (m8 and m12) and the downregulated mRNA (M5) modules in VU (Figure 3d). Among these miR\u2013mRNA module pairs, we found that the predicted targets of the downregulated m9 miRs were significantly enriched (Fisher\u2019s extract test: OR >1, p value <0.05) for the upregulated M9 mRNAs, whereas the targets of the upregulated miRs and m8 miRs were enriched for the downregulated mRNAs and M5 mRNAs (Figure 4a and Figure 4\u2014source data 1). These results suggest that miRs contribute to the aberrant mRNA expression in VU at a global level.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig4-v2.jpg)\n\n**Figure 4.:** Heatmaps show the enrichment for VU-affected mRNAs and mRNA modules in the top targets of (a) VU-associated differentially expressed (DE) miRNAs and miR modules and (b) the individual candidate miRNAs. Odds ratio (OR) and p values are indicated when OR >1 and p value <0.05 (Fisher\u2019s exact test). The miRNAs with experimentally validated expression changes are highlighted in bold. (c) miR-mediated gene regulatory networks in VU are constructed with the miRNAs in (b), the mRNAs predicted as the strongest targets and with anticorrelated expression patterns (Pearson\u2019s correlation, p value <0.05 and r < 0) with these miRNAs in human wounds, and the transcription factors (TFs) regulating these miRNAs' expression from the TransmiR v2 database. An enlarged version of these networks can be found in Figure 4\u2014figure supplements 1 and 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The mRNAs cotargeted by miRNAs with unrelated seed sequences are highlighted in yellow.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The mRNAs cotargeted by miRNAs with unrelated seed sequences are highlighted in yellow.\n\nBased on the above-identified miR\u2013mRNA module pairs, we next searched for individual candidate miRs with their targets enriched for the VU mRNA signature. We observed that the targets of two VU-associated downregulated miRs (miR-144-3p and miR-218-5p) and five m9 miRs (miR-205-5p, miR-211-5p, miR-506-3p, miR-509-3p, and miR-96-5p) were enriched for the upregulated M9 mRNAs, whereas the targets of three VU-associated upregulated miRs (miR-450-5p, miR-512-3p, and miR-516b-5p) and seven m8 miRs (miR-424-5p, miR-34a-5p, miR-34c-5p, miR-516a-5p, miR-517a-3p, miR-517b-3p, and miR-7704) were enriched for M5 mRNAs and downregulated mRNAs (Figure 4b and Figure 4\u2014source data 2). These miR targetomes were enriched for the mRNAs associated with VU pathology. Therefore, these miR candidates are of importance for understanding the pathological mechanisms hindering wound healing. Moreover, we compiled miR-mediated gene expression regulation networks centered with these highly pathologically relevant miRs (Figure 4c, Figure 4\u2014figure supplements 1 and 2, and Figure 4\u2014source data 2). These networks also include the mRNAs predicted as the strongest targets and with anticorrelated expression patterns with these miRs in human wounds in vivo, as well as the TFs reported to regulate these miR expressions from the TransmiR v2 database (Tong et al., 2019). Taken together, our study identifies a list of highly pathological relevant miRs and their targetomes in human VU.\n\n### Experimental validation of miR expression and targets in human skin wounds\n\nWe next experimentally validated our in silico findings about the VU relevant miRs, including their expression, targetome, and biological functions (Figure 5a). First, we selected 9 shortlisted DE miRs (Figures 1d and 4b), including 3 downregulated (miR-149-5p, miR-218-5p, and miR-96-5p) and 6 upregulated (miR-7704, miR-424-5p, miR-31-3p, miR-450-5p, miR-516b-5p, and miR-517b-3p) miRs in VU, and validated their expression by quantitative reverse transcription PCR (qRT-PCR) in the skin and wound tissue biopsies from a cohort with 7 healthy donors and 12 VU patients, matched in terms of age and the anatomical wound locations (Figure 5b\u2013j, Tables 1 and 2, and Figure 5\u2014source data 1). Additionally, the upregulation of miR-34a-5p and miR-34c-5p in VU has been reported by us previously (Wu et al., 2020). Together, we confirmed these 11 miRs' expression patterns in RNA-seq, supporting the robustness and reproducibility of our profiling data (Figure 5\u2014figure supplement 1). Next, we purified CD45\u2212 epidermal cells consisting of mainly keratinocytes from matched human skin and acute wounds of five healthy donors. With sRNA-seq, we confirmed the in vivo expression of these 11 miRs in the epidermal cells of human skin and wounds (Figure 5k). In addition, with laser capture microdissection (LCM), we isolated the epidermal compartments from human skin, acute wounds, and VUs (n = 7 per group) and found that the expression of miR-34a-5p and miR-424-5p was upregulated in the wound-edge epidermis from the VUs compared to the acute wounds and the skin, as shown in qRT-PCR analysis (Figure 5l\u2013n). These results provided a rationale for the selection of human primary keratinocytes to further study these miRs\u2019 targets and functions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig5-v2.jpg)\n\n**Figure 5.:** (a) A schematic diagram of experimental validation in this study. (b\u2013j) qRT-PCR analysis of venous ulcer (VU)-associated differentially expressed (DE) miRNAs in the skin, day 1 and 7 acute wounds from seven healthy donors and VU from 12 patients. (k) VU-associated DE miRNA expression in RNA-seq of epidermal keratinocytes from human skin and wound day 7. (l) Representative photographs of laser capture microdissection (LCM) -isolated epidermis from skin, wound7 and VU. qRT-PCR analysis of (m) miR-34a-5p and (n) miR-424-5p in LCM-isolated epidermis (n = 7). The data are presented as mean \u00b1 standard deviation (SD). Wilcoxon signed-rank test was used for the comparison between Skin, Wound1, and Wound7; Mann\u2013Whitney U-test was used for comparing VU with the skin and acute wounds. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Mann\u2013Whitney t-test, *p < 0.05, **p < 0.01, ns: not significant.\n\nFurthermore, we experimentally validated the targets of eight miRs surfaced in our analysis (Figure 4b), including the miRs downregulated (miR-218-5p and miR-96-5p) and upregulated (miR-424-5p, miR-450-5p, miR-516b-5p, miR-34a-5p, miR-34c-5p, and miR-7704) in VU. We performed genome-wide microarray analysis in human primary keratinocytes or fibroblasts overexpressing each of these miRs (Figure 6a, Figure 6\u2014figure supplement 1, and Figure 5\u2014source data 1). Also, we reanalyzed our published microarray dataset on keratinocytes with miR-34a-5p or miR-34c-5p overexpression (GSE117506) (Wu et al., 2020). For all these eight miRs, we observed that their strongest targets predicted by TargetScan were significantly downregulated compared to the nontargeting mRNAs (Wilcoxon t-test p values: 1.34e\u221225\u20131.91e\u221259). The differences were more significant when we divided the strongest targets into conserved and experimentally validated subtypes, confirming the bioinformatics prediction robustness of the miR targets applied in this study (Figure 6b\u2013j).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig6-v2.jpg)\n\n**Figure 6.:** (a) A schematic diagram of targetome analysis. Microarray analysis was performed in keratinocytes (KC) or fibroblasts (FB) with miR-218-5p (b), miR-34a-5p (c), miR-34c-5p (d), miR-7704 (e), miR-96-5p (f), miR-424-5p (g, h), miR-450-5p (i), or miR-516-5p (j) overexpression (OE). Density plots of mRNA log2(fold change) are shown. Wilcoxon t-tests were performed to compare the TargetScan predicted strongest targets (purple) with the nontargets (blue) for each of these miRNAs. The conserved and experimentally validated targets are marked with red and green colors, respectively. Dotted lines depict the average log2(fold change) values for each mRNA group. (k) A heatmap shows the enrichment for venous ulcer (VU)-affected mRNAs and mRNA modules in the targets of miR-218-5p, miR-34a-5p, miR-34c-5p, or miR-7704 validated by the microarray analysis. Odds ratio (OR) and p values are shown when OR >1 and p value <0.05 (Fisher\u2019s exact test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The data are presented as mean \u00b1 standard error of the mean (SEM). **p < 0.01, ***p < 0.001, and ****p < 0.0001 by two-tailed Student\u2019s t-test.\n\nNotably, we observed significant enrichment (Fisher\u2019s exact test, OR >1, p value <0.05) of the experimentally validated miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704 targets for the VU gene signature (Figure 6k and Figure 5\u2014source data 1). We have previously shown that miR-34a and miR-34c inhibit keratinocyte proliferation and migration, while promoting apoptosis and inflammatory response, resulting in delayed wound repair in a mouse model (Wu et al., 2020). We validated robustness of the bioinformatics approach applied in this study by miR-34a/c reidentification. Here, we discovered that both the predicted (Figure 4b) and validated (Figure 6k) miR-34a/c targets were enriched for the downregulated M5 module mRNAs in VU. Notably, our microarray analysis in cultured keratinocytes overexpressing miR-34a or miR-34c confirmed that miR-34 reduced the expression of 39 hub genes in the M5 module (log2(fold change) \u2264\u22120.58, p value <0.05, Figure 7a, lower panel), and 26 of them exhibited negative correlation (Pearson\u2019s r = \u22120.83 to \u22120.45, p value <0.05) with miR-34a/c expression levels in the human skin and wound samples (Figure 7a, upper panel and Figure 5\u2014source data 1), suggesting that they were miR-34a/c targets in vivo. MiR-218-5p was downregulated in the VU compared to the acute wounds and the skin (Figure 5c and Figure 5\u2014figure supplement 1). Its predicted (Figure 4b) and validated (Figure 7a) targets were both enriched for the upregulated or M9 module mRNAs in VU. Among the 10 in vitro validated targets (Figure 7a, lower panel), eight negatively correlated (Pearson\u2019s r = \u22120.82 to \u22120.46, p value <0.05) with miR-218-5p expression in the human skin and wounds (Figure 7a, upper panel and Figure 5\u2014source data 1). Interestingly, this study also identified miR-7704, a human-specific miR, with significantly increased expression in VU (Figure 5e and Figure 5\u2014figure supplement 1). Similar to miR-34a/c, the predicted (Figure 4b) and validated (Figure 6k) miR-7704 targets were highly enriched for the M5 module mRNAs downregulated in VU.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig7-v2.jpg)\n\n**Figure 7.:** Pearson\u2019s correlation analysis of expression of the dysregulated miRNAs: (a) upper panels: miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704; (b) upper panels: miR-96, miR-424, miR-450b, and miR-516b and their targets in RNA-seq data of human skin and wound samples. Gray circles indicate correlation coefficients >0. The gene expression of miRNA-regulated targets in epidermal CD45\u2212 cells from human skin and wound day 7 (a, b: middle panels). The target mRNAs are significantly changed (fold change \u2264\u22121.2 and p value <0.05) by the indicated miRNAs in the microarray analysis (a, b: lower panels).\n\nFor miR-96-5p, miR-424-5p, miR-450-5p, and miR-516b-5p, although their predicted targets were significantly enriched (Fisher\u2019s exact test: OR >1, p value <0.05) for VU-associated mRNAs (Figure 4b), we did not find similar enrichment for their experimentally validated targets. Nevertheless, these miRs regulated some VU-associated hub genes in vitro (Figure 7b, lower panel) and also exhibited an anticorrelated expression pattern with their targets in vivo (Figure 7b, upper panel), for example, miR-96-5p from the downregulated m9 module targets the M9 mRNAs upregulated in VU, including TP53INP1, LAMC1, EDNRA, GJC1, and FN1; while miR-424-5p from the upregulated m8 miR module targets the M5 mRNAs downregulated in VU, including SLC25A22, VPS4A, and GHR (Figure 5\u2014source data 1).\n\nIn line with the in vivo expression of these eight miRs (i.e., miR-218-5p, miR-96-5p, miR-424-5p, miR-450-5p, miR-516b-5p, miR-34a-5p, miR-34c-5p, and miR-7704) in the epidermal cells of human skin and wounds (Figure 5k), we also confirmed the in vivo expression of their experimentally validated targets in the same cell type by RNA-seq (Figure 7a, b middle panels).\n\nTogether, our validation work focusing on epidermal keratinocytes confirmed the robustness and reproducibility of this dataset and highlighted its value as a reference for studying the physiological and pathological roles of miRs in human skin wound healing.\n\n### Cooperativity of VU pathology-relevant miRs\n\nFrom the miR-mediated gene expression regulation networks underpinning VU pathology (Figure 4\u2014figure supplements 1 and 2, and Figure 4\u2014source data 2), we caught a glimpse of presumable miR cooperativity through targeting the same mRNAs, that is, cotargeting among miRs, which reportedly imposing stronger and more complex repression patterns on target mRNA expression (Cherone et al., 2019). For the miRs with unrelated seed sequences, we found that miR-34a/c and miR-424-5p or miR-7704 shared 8\u201310 targets, and these miRs were coexpressed in the m8 module. We showed that among the downregulated miRs in VU, miR-96-5p and miR-218-5p shared eight targets.\n\nIn addition, we performed functional annotations for the genes regulated by the VU-associated miRs identified in the microarray analysis (Figure 8a and Figure 8\u2014source data 1). Both miR-218-5p and miR-96-5p were predicted to promote ribosome biogenesis and nc RNA processing, while miR-218-5p might also suppress keratinization. miR-34a/c-5p were predicted to enhance innate immune response, while reducing mitosis. Similarly, GO analysis indicated that miR-424-5p and miR-516b-5p might increase the cellular defense response, while inhibiting cell proliferation. In addition, we showed that miR-450-5p upregulated genes related to the ncRNA metabolic process and mitochondrial respiratory chain complex assembly, whereas miR-7704 downregulated insulin, ERBB, and small GTPase-mediated signaling pathway-related genes. Of particular interest, combining the miR expression changes with their annotated functions, we found a regular pattern, that is, the miRs upregulated in VU (i.e., miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, and miR-516-5p) were predicted to promote inflammation but inhibit proliferation; whereas the miRs downregulated in VU (i.e., miR-218-5p and miR-96-5p) might be required for cell growth and activation (Figure 8b). Therefore, these VU-dysregulated miRs might cooperatively result in impaired cell migration and proliferation accompanied with persistent inflammation, contributing to the stalled wound healing characterized with failed transition from the inflammatory phase to the proliferative phase (Land\u00e9n et al., 2016).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig8-v2.jpg)\n\n**Figure 8.:** For the microarray data in keratinocytes (KC) or fibroblasts (FB) with miR-218-5p, miR-96-5p, miR-34a-5p, miR-34c-5p, miR-7704, miR-424-5p, and miR-516-5p overexpression, we analyzed Kyoto Encyclopedia of Genes and Genome (KEGG) pathways, biological processes (a), and Molecular Signatures Database (MSigDB) hallmarks (b) enriched by the genes up- or downregulated by these miRNAs. (c) Venn diagram shows the number of genes in the E2F target pathway regulated by miR-34a/c-5p and/or miR-424-5p. The direct targets of each miRNA are depicted as a STRING Protein Network in (d). The number of inflammatory response-related genes regulated by miR-34a/c-5p and miR-516b-5p and ranked log2fold changes of overlapped genes from microarray analysis are shown in (e, f).\n\n### Cooperation of miR-34a, miR-424, and miR-516 in regulating keratinocyte migration, proliferation, and inflammatory response\n\nTo validate miR cooperativity in modulating the key pathological process in VU, we analyzed migration, proliferation, and inflammatory response of keratinocytes with individual miR or miR combination overexpression or inhibition. The microarray data GO analysis (Figure 8b) showed that three miRs upregulated in VU could suppress the expression of E2F target genes (Figure 8c): miR-34a/c-5p reduced the level of 129 mRNAs (including eight miR-34a/c targets, Figure 8d), while miR-424-5p downregulated the expression of 106 mRNAs (including 13 miR-424 targets, Figure 8d). Although 86 mRNAs were commonly regulated by miR-34a/c-5p and miR-424-5p, none of them were cotargeted by these miRs (Figure 8c). E2F signaling plays a unique role in keratinocyte proliferation and migration, as well as in wound repair and epidermal regeneration in vivo (D\u2019Souza et al., 2002). Similarly, in the cell cycle pathway, miR-34a-5p directly targeted CCND1, CDK6, HDAC1, and E2F3, while miR-424-5p targeted ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, and YWHAH, and only CDC23 was cotargeted by both miRs (Figure 9\u2014figure supplement 1a). We thus hypothesized that miR-34a-5p and miR-424-5p might cooperate to impact stronger on cell proliferation and migration by targeting different gene sets within the same signaling pathway. To test this idea, we measured keratinocyte growth by detecting proliferation marker gene Ki-67 expression both on mRNA and protein levels. We found that although miR-34a-5p or miR-424-5p alone could reduce Ki-67 levels, their combination suppressed stronger Ki-67 expression (Figure 9a, b, Figure 9\u2014figure supplement 1b, and Figure 9\u2014source data 1). The cooperativity between miR-34a-5p and miR-424-5p in repressing keratinocyte growth was further confirmed by comparing cell growth curves generated with a live cell imaging system (Figure 9c, Figure 9\u2014figure supplement 1c, and Figure 9\u2014video 1). Next, with scratch wound healing assays, we showed that simultaneous overexpression of miR-34a-5p and miR-424-5p delayed keratinocyte migration, whereas inhibition of endogenous miR-34a-5p or miR-424-5p enhanced keratinocyte motility (Figure 9d\u2013g).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig9-v2.jpg)\n\n**Figure 9.:** Ki-67 expression was detected in keratinocytes transfected with miR-34a-5p or miR-424-5p mimics alone or both mimics for 24 hr (n = 3) by qRT-PCR (a) and immunofluorescence staining (n = 4\u20136) (b). (c) The growth of the transfected keratinocytes (n = 3) was analyzed with a live cell imaging system. The migration of keratinocytes transfected with miR-34a-5p or miR-424-5p mimics alone or both mimics (d, e) (n = 8\u201310) or miRNA inhibitors (f, g) (n = 10) was analyzed with a live cell imaging system (scale bar, 300\u03bcm). (h) qRT-PCR analysis of CCL20 in keratinocytes transfected with miR-34a-5p or miR-516b-5p mimics alone or both mimics for 24 hr (n = 3). (i) Proposed mechanism by which venous ulcer (VU)-dysregulated miRNAs cooperatively contribute to the stalled wound healing characterized with failed inflammation\u2013proliferation transition (schematic generated by BioRender). *p < 0.05; **p < 0.01; ***p < 0.001; and ****p < 0.0001 by one-way analysis of variance (ANOVA) with uncorrected Fisher\u2019s least significant difference (LSD) (a, b, h) and two-way ANOVA (c, d, f). Data are presented as mean \u00b1 standard deviation (SD) (a\u2013c, h) or mean \u00b1 standard error of the mean (SEM) (d, f).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80322/elife-80322-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (a) In the Kyoto Encyclopedia of Genes and Genome (KEGG) cell cycle pathway map, genes regulated by miR-34a-5p or miR-424-5p or both miRNAs as shown in the microarray analysis of keratinocytes are marked with green, blue, and orange colors, respectively. Among the regulated genes, the miRNA targets are highlighted in red and labeled with * for miR-34a targets, # for miR-424 targets, *# for the gene cotargeted by both miRNAs. (b) Ki-67 expression was detected in keratinocytes transfected with miR-34a-5p or miR-424-5p mimics alone or both mimics for 24 hr by immunofluorescence staining. Cell nuclei were costained with 4\u2032,6-diamidino-2-phenylindole (DAPI). Ki-67 + cell nuclei are highlighted with white arrows in the representative photographs (scale bar: 50 \u03bcm). (c) The growth of the transfected keratinocytes (n = 3) was analyzed with a live cell imaging system, and representative photographs of cells at 0 and 96 hr are shown (scale bar, 300\u03bcm.).\n\nMoreover, our microarray analysis of keratinocytes with miR overexpression showed that the miR-34a-5p and miR-516b-5p combination extended the list of inflammation-related upregulated genes (Figure 8e). In particular, both miRs enhanced keratinocyte expression of inflammatory chemokines/ cytokines, for example, CCL20, CXCL8, and IL1B (Figure 8f). We showed that simultaneously overexpressing miR-34a-5p and miR-516b-5p induced a higher CCL20 expression compared to the individual overexpression of each miR, suggesting their cooperativity in promoting inflammation (Figure 9h).\n\nIn summary, our study identified VU signature miRs, for example, miR-34a, miR-424, and miR-516, with cooperativity in inflicting more severe pathological changes (Figure 9i). These findings open new opportunities of developing wound treatment targeting cooperating miRs with potentially higher therapeutic efficacy and specificity.\n\n## Discussion\n\nOur genome-wide paired analysis of miR and mRNA expression in human healing and nonhealing wounds provides a novel global landscape of the miR regulatory roles in wound biology. A detailed overview of the mRNA expression context at different healing stages or under pathological condition VU allows a more precise understanding about the complex role of miRs in wound repair. The same miR is often described to play different or even opposite roles in different cells, as each cell type has specific gene expression context subjected to the miR-mediated posttranscriptional regulation (Erhard et al., 2014). Thereby, the different mRNA expression profiles in acute or chronic wounds should be considered to understand the precise role of an miR in these distinct contexts. With this aspect in mind, we highlight miRs with their targetome most enriched in the VU mRNA signature, as these miRs display a higher likelihood to regulate pathologically relevant genes. Notably, certain of these miRs did not exhibit the greatest expression change in VU, they would thus be missed with the commonly used strategy that focuses on the top miR expression profiling data changes.\n\nAnother strength of our study is the decryption of time-resolved miR\u2013mRNA expression pattern during human skin wound healing, providing a temporal view to our understanding of the functional miR roles. miRs and their target gene expression contexts change dynamically to support different functional needs during wound repair. Defining an miR as \u2018pro-healing\u2019 or \u2018anti-healing\u2019 requires specifying its temporal expression pattern. For example, continuous expression of a miR that is beneficial for one healing phase but not the other might also lead to deleterious effects.\n\nTo understand the molecular mechanisms underlying the miR coexpression patterns, we analyzed the enriched TFs for each miR module with experimentally validated TF-miR regulation data (Tong et al., 2019). This analysis led us to important TFs, such as GATA3 (Kaufman et al., 2003; Kurek et al., 2007) that play fundamental roles in skin development and postnatal remodeling, as well as KLF4, crucial for establishing skin barrier function (Segre et al., 1999). Notably, both GATA3 and KLF4 are reportedly downregulated in human VU (Stojadinovic et al., 2014; Stojadinovic et al., 2008). Our study confirms these findings and provides a novel insight, showing that the loss of these TFs might contribute to VU pathology through their regulated miRs.\n\nWe summarized the miRNAs that reportedly regulate wound healing and found that most of them also surfaced in our study, supporting the robustness of our profiling data and bioinformatics analysis (Appendix 1\u2014figure 1 and Supplementary file 3). Thereby, our data would be potentially helpful to evaluate the clinical relevance of these miRs. For example, miR-34a/c reportedly enhance keratinocyte inflammatory response, while suppressing proliferation and migration in cultured cells and mouse wound models (Wu et al., 2020). miR-34a was also identified as one of the most induced miRs in diabetic foot ulcer fibroblasts. Induction of miR-34a together with miR\u201021\u20105p and miR\u2010145\u20105p inhibits fibroblast movement and proliferation, whereas activates cell differentiation and senescence (Liang et al., 2016). In this study, we described that miR-34a/c were specifically upregulated in VU, whereas their levels during wound repair remained relatively low and stable, suggesting their specific role in wound pathology. miR-34 targets were enriched in the M5 mRNA module, containing genes upregulated in the inflammatory phase of wound healing but downregulated in VUs. The VU-relevant miR-34 targetome identified in this study would be potentially useful for determining the precise role of miR-34 in VU pathology. Our current findings in human samples together with previous functional data (Liang et al., 2016; Wu et al., 2020) suggest that miR-34 inhibition along with modulation of additional deregulated miRs might be a promising VU treatment approach.\n\nIn addition, certain of these VU-related miRs are involved in skin-related functions but have not yet been linked to wound healing. For example, miR-218-5p regulates hair follicle development (Zhao et al., 2019), inhibits melanogenesis (Guo et al., 2014b), and enhances fibroblast differentiation (Guo et al., 2014a). miR-7704 was identified as an exosomal miR produced by melanocytes (Shen et al., 2020). miR-424-5p suppresses keratinocyte proliferation (Ichihara et al., 2011) and cutaneous angiogenesis (Nakashima et al., 2010; Yang et al., 2017). Moreover, our VU-related miR list (Figure 4b) also contains miRs without prior knowledge in their role either in skin or wound healing, for example, miR-517a-3p, miR-517b-3p, miR-516b-5p, miR-512-3p, and miR-450-5p. It would be highly interesting to examine the role of these miRs in VU. Overall, our dataset can serve as a valuable reference for prioritizing clinically relevant miRs for further functional studies.\n\nMoreover, we studied the relationships between the dysregulated miRs in VU, regarding their target repertoire and biological functions and identified miRs that could act cooperatively. Such knowledge is required for developing combined miR therapeutics with increased specificity and efficacy (Lai et al., 2019). In the miR-target networks underpinning VU (Figure 4\u2014figure supplements 1 and 2), we identified a few putative cooperating miR pairs/clusters that were coexpressed and shared multiple common targets, including the upregulated miR-34a/c together with miR-424-5p and miR-7704, as well as the downregulated miR-218-5p and miR-96-5p in VU. Furthermore, although not sharing targets, the majority of the VU-dysregulated miRs could still regulate the common BPs coordinately. For example, the miRs upregulated in VU (e.g., miR-34a/c-5p, miR-424-5p, miR-450-5p, miR-7704, and miR-516-5p) were predicted to promote inflammation but inhibit proliferation; whereas the miRs downregulated in VU (e.g., miR-218-5p and miR-96-5p) might be needed for cell growth and activation. Particularly, we validated the cooperation between miR-34a-5p and miR-424-5p in suppressing keratinocyte proliferation and migration, as well as the cooperation between miR-34a-5p and miR-516b-5p in enhancing keratinocyte expression of inflammatory chemokine CCL20. The effect of miR-34 family in promoting keratinocyte inflammatory response has been recently reported and one of the miR-34 targets, LGR4, has been identified to mediate this effect (Wu et al., 2020). However, the mechanism underlying the proinflammatory function of miR-516b-5p in keratinocytes warrants further study. As a combined consequence, this VU-miR signature could disrupt the swift transition from inflammation to proliferation (Figure 9i). The failure of this phase transition represents a core pathology of chronic wounds (Eming et al., 2014; Land\u00e9n et al., 2016). Our findings open the possibility of developing innovative wound treatment targeting multiple pathologically relevant cooperating miRs to attain higher therapeutic efficacy and specificity.\n\nBased on the integrative small and long RNA-omics analysis of human wound tissues, we have developed an openly available compendium (https://www.xulandenlab.com/humanwounds-mirna-mrna) for the research community. This novel, rich resource enabled us to gain a network view of miR-mediated gene regulation during human physiological and pathological wound repair in vivo. With the same sequencing datasets, we have also analyzed circular RNA expression and their potential interaction with miRs and miR targets (Toma et al., 2022), which results can be queried at https://www.xulandenlab.com/humanwounds-circrna. These efforts result in many testable hypotheses for future studies elucidating gene expression regulatory mechanisms underpinning tissue repair.\n\nA limitation of bulk RNA-seq of wound tissues is that the observed expression changes could occur in a single or multiple cell types or reflect cell composition changes. To obtain cell-specific miRNA expression data, single-cell sRNA-seq is required. However, this technology needs extensive cell handing and therefore has only been applied to few cells and still remains challenging to be used at a scale for analyzing complex dynamics of tissue (Nielsen and Pedersen, 2021). Alternatively, we analyzed miR and mRNA expression in epidermal cells isolated from human skin and wound tissues and validated miR-mediated gene regulation in keratinocytes, excluding the possibility of cellular heterogeneity-related changes for several miRs identified in our study.\n\nIn conclusion, this genome-wide, integrative analysis of miR and mRNA expression in human skin and wound tissues reinforce and extend the evidence about the functional role of miRs in wound repair and their therapeutic potential for chronic wound treatment. By combining miR expression patterns with their specific target gene expression context, we identified miRs highly relevant to VU pathology. This rigorous and in-depth molecular characterization of human wound tissues adds a novel dimension to our current knowledge mostly relying on nonhuman models and would serve as a unique platform and valuable resource for further mechanistic studies of miRs with a high translational potential.\n\n## Materials and methods\n\n### Human wound samples collection\n\nPatients with VUs, which persisted for more than 4 months despite conventional therapy, were enrolled in this study (Table 2). Tissue samples were collected from the lower extremity at the nonhealing edges of the ulcers by using a 4-mm biopsy punch (Figure 1a). Each VU biopsy contains about 50% wound edge with epidermis and 50% wound-bed area. Healthy donors above 60 years old without skin diseases, diabetes, unstable heart disease, infections, bleeding disorder, immune suppression, and any ongoing medical treatments were recruited (Table 3). Two full-thickness excisional wounds (4 mm in diameter) were created at the lower extremity on each donor, and the excised skin was saved as intact skin control (Skin). With a 6-mm biopsy punch, we excised the entire wounds (including the ring-shape wound edges covered with epidermis and the center wound beds with granulation tissues) at day 1 (Wound1) and day 7 (Wound7) after wounding (Figure 1a).\n\n**Table 3.**\n Characteristics of the healthy donors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Donor</th>\n      <th>Sex</th>\n      <th>Age(years)</th>\n      <th>Ethnicity</th>\n      <th>Wound location</th>\n      <th>Experiment</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>F</td>\n      <td>66</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>RNA-seq</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>M</td>\n      <td>69</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>RNA-seq</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>F</td>\n      <td>67</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>RNA-seq</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>M</td>\n      <td>69</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>F</td>\n      <td>64</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>RNA-seq and qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>F</td>\n      <td>60</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>F</td>\n      <td>66</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>F</td>\n      <td>60</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>F</td>\n      <td>67</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>F</td>\n      <td>65</td>\n      <td>Caucasian</td>\n      <td>Lower leg</td>\n      <td>qRT-PCR</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>F</td>\n      <td>66</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>Cell isolation; RNA-seq</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>M</td>\n      <td>69</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>Cell isolation; RNA-seq</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>F</td>\n      <td>67</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>Cell isolation; RNA-seq</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>M</td>\n      <td>69</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>Cell isolation; RNA-seq</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>F</td>\n      <td>64</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>Cell isolation; RNA-seq</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>F</td>\n      <td>42</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>M</td>\n      <td>58</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>M</td>\n      <td>42</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>M</td>\n      <td>28</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>M</td>\n      <td>30</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>F</td>\n      <td>46</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>F</td>\n      <td>47</td>\n      <td>Caucasian</td>\n      <td>Lower back</td>\n      <td>LCM</td>\n    </tr>\n  </tbody>\n</table>\n\n_M, male; F, female._\n\n### Sample preparation, RNA extraction, library preparation, and sequencing\n\n#### Laser capture microdissection\n\nAfter embedding of the snap frozen skin and wound biopsies, 8-\u03bcm tissue sections were stained with hematoxylin. LCM was then performed with Leica LMD7000 (Leica, Bernried, Germany) to separate the epidermis from each section.\n\n#### Magnetic Activation Cell Sorting for CD45\u2212 epidermal cell\n\nThe fresh skin and wound tissues were washed in PBS and incubated in dispase II (5 U/ml, Thermo Fisher Scientific) at 4\u00b0C overnight, and the epidermis was separated from the dermis as previously described (Henrot et al., 2020). After the digestion in 0.025% trypsin/ethylenediaminetetraacetic acid (EDTA) solution at 37\u00b0C for 15 min, CD45\u2212 and CD45+ epidermal cells were separated by using CD45 microbeads and MACS MS magnetic columns according to the manufacturer\u2019s instructions (Miltenyi Biotec, Bergisch Gladbach, Germany).\n\n#### RNA extraction\n\nSnap frozen tissue samples were homogenized with the TissueLyser LT (Qiagen), and total RNA was isolated using the miRNeasy Mini kit (Qiagen). RNA quality and quantity were determined by using Agilent 2100 Bioanalyzer (Agilent Technologies) and Nanodrop 1000 (Thermo Fisher Scientific Inc), respectively.\n\n#### Small RNA library preparation and sequencing\n\nThe sRNA-seq libraries were constructed using 3 \u03bcg total RNA per sample and NEB Next Multiplex Small RNA Library Prep Set for Illumina (NEB) following the manufacturer\u2019s recommendation. Briefly, total RNA was first ligated to adaptors at the 3\u2032 end by NEB 3\u2032 SR adaptor and 5\u2032 end by T4 RNA ligase followed by reverse transcription into cDNA using M-MuLV Reverse Transcriptase. PCR amplification of cDNA was performed using SR primers for Illumina and index primers. The PCR products were purified, and DNA fragments spanning from 140 to 160 bp were recovered and quantified by DNA High Sensitivity Chips on the Agilent Bioanalyzer. The libraries were sequenced on an Illumina Hiseq 2500 platform (Illumina, Inc) using single-end 50 bp reads, and all samples were run side by side.\n\n#### mRNA library preparation and sequencing\n\nThe long RNA-seq libraries were constructed with a total amount of 2 \u03bcg RNA per sample. First, the ribosomal RNA was depleted by Epicentre Ribo-zero rRNA Removal Kit (Epicentre). Second, strand-specific total-transcriptome RNA-seq libraries were prepared by incorporating dUTPs in the second-strand synthesis step with NEB Next Ultra Directional RNA Library Prep Kit for Illumina (NEB). The CD45\u2212 epidermal keratinocytes RNA-seq libraries were constructed by following the tutorial of NuGen Ovation Solo RNA-Seq System (Human part no. 0500). Finally, the libraries were sequenced on an Illumina Hiseq 4000 platform, and 150-bp paired-end reads were generated for the following analysis.\n\n### Analysis of miRNA-sequencing data\n\n#### Quality control, mapping, and quantification\n\nQuality of raw data was assessed using FastQC v0.11.8 (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We used mapper.pl module in the miRDeep2 v0.1.3 package (Friedl\u00e4nder et al., 2012, Mackowiak, 2011) to filter low-quality reads and remove sequencing adaptors and redundancies. Trimmed reads with lengths greater than 18 nucleotides were mapped to GENCODE human reference genome (hg38) by the software Bowtie v1.2.2 (Langmead et al., 2009). The miRDeep2.pl module was then performed with default parameters to identify known miRNAs, which were compared to miRNAs in miRBase release 22.1 (Kozomara et al., 2019). Counts of reads mapped to each known mature miRNAs were acquired from the quantifier.pl module output without allowing mismatch. miRNAs with read counts less than five in more than half of twenty samples were discarded since these miRNAs are unlikely to give stable and robust results. Raw counts of 562 miRNAs were normalized for sequencing depth using TPM methods (transcript per million = mapped read count/total reads * 10e6) (Zhou et al., 2010) and prepared for further analysis.\n\n#### DE analysis\n\nThe DESeq2 workflow (Love et al., 2014) was carried out to fit raw counts to the negative binomial generalized linear model and to calculate the statistical significance of each miRNA in each comparison. In particular, the paired model was employed when comparing samples from the same donor. p values obtained from the Wald test were corrected using Benjamini\u2013Hochberg (BH) multiple test to estimate the FDR. The DE miRNAs were defined as FDR <0.05 and |log2(fold change)| \u22651.\n\n#### Principal component analysis\n\nTo explore the similarity of each sample, principal component analysis (PCA) was performed by using a DESeq2 built-in function plotPCA on the transformed data, in which the variances and size factors were stabilized and corrected. PCA and heatmaps were plotted by using ggplot2 (Hadley, 2016) and ComplexHeatmap (Gu et al., 2016) packages in RStudio (https://rstudio.com/).\n\n#### Weighted gene coexpression network analysis\n\nThe normalized expression of 562 miRNAs was used as input to the WGCNA R package (Langfelder and Horvath, 2008). First, we calculated the strength of pairwise correlations between miRNAs using the \u2018biweight\u2019 mid-correlation method. The function pickSoftThreshold was then employed to compute the optimized soft-thresholding power based on connectivity, which led to an approximately scale-free network topology (Zhang and Horvath, 2005). Second, a signed weighted coexpression network was constructed with a power of 18 using the one-step blockwiseModules algorithm (Figure 2\u2014figure supplement 2a). Network modules were filtered according to parameters: minModuleSize = 10 and mergeCutHeight = 0.25.\n\nThe expression profile of each module was represented by the module eigengene (ME), referred to as the PC1 of all miRNAs in each module. Pearson\u2019s correlations (values from \u22121 to 1) and the corresponding p values between MEs and traits were computed. p values were further adjusted to FDR across all the modules using the BH method. Modules significantly associated with each trait were selected by FDR <0.05 and absolute correlation coefficients >0.4. The module membership (also known as kME) of each miRNA was calculated by the correlations between miRNA expression and ME. MiRNAs with the highest kME values were defined as intramodular hub miRNAs, and networks of hub miRNAs in significant modules were visualized using the Cytoscape v3.7.2 software (Shannon et al., 2003).\n\nTo check the robustness of module definition, we carried out module preservation analysis and calculated the standardized Z-scores for each module by permutating 200 times using the same 20 samples as reference and test datasets. Modular preservation is strong if Z-summary >10, weak to moderate if 2 < Z-summary < 10, no evidence of preservation if Z-summary \u22642 (Langfelder et al., 2011).\n\n#### TF enrichment analysis\n\nWe leveraged a curated database about TF-miRNA regulations, TransmiR v2.0 (Tong et al., 2019), to identify the TFs regulating miRNA expression in each module. Fisher\u2019s exact tests were employed to evaluate the enrichment of each TF in the significant modules, and FDRs were adjusted to the total number of TFs (OR >1 and FDR <0.05). Correlations of gene expression between TFs and miRNA modules (represented by MEs) were further filtered to identify putative TF-mediated miRNA gene expression patterns (Pearson\u2019s correlation: p value <0.05, coefficient >0). The 562 miRNAs abundantly expressed in our samples were treated as the background dataset.\n\n### Analysis of mRNA-sequencing data\n\nRaw reads of mRNA-sequencing were first trimmed for adaptors and low-quality bases using Trimmomatic v0.36 software (Bolger et al., 2014). Clean reads were aligned to the human reference genome (GRCh38.p12), coupled with the comprehensive gene annotation file (GENCODEv31) using STAR v2.7.1a (Dobin et al., 2013). Gene expression was then quantified by counting unique mapped fragments to exons by using the feature count function from the Subread package (Liao et al., 2014). Raw counts for each gene were normalized to fragments per kilobase of a transcript, per million mapped reads (FPKM)-like values. Only mRNAs with FPKM \u22651 in at least 10 samples were kept for the rest analysis. We used the same pipeline described above for mRNA DE and PCA analysis. The DE mRNAs were defined as FDR <0.05 and |log2(fold change)| \u22650.58. WGCNA was carried out for 12,069 mRNAs with the optimal threshold power of 12 according to a fit to the scale-free topology of the coexpression network (Figure 2\u2014figure supplement 4a). Thirteen mRNA modules were identified with the settings: maxBlockSize = 20,000, minModuleSize = 100, and mergeCutHeight = 0.25. Furthermore, mRNA module-enriched TF analysis was performed with a manually curated TF-target regulatory relationship database, TRRUST v2 (Han et al., 2018), using Fisher\u2019s exact tests. TFs with FDR <0.05 and OR >1 and the expression significantly correlated with respective mRNA modules (Pearson\u2019s correlation p value <0.05) were identified.\n\n#### GO analysis\n\nWe carried out GO analysis for mRNAs by using the WebGestalt tool (http://www.webgestalt.org/) (Liao et al., 2019), which applied a hypergeometric test in target and reference gene sets. GO terms of nonredundant BP with gene number less than 10 and adjust p value (FDR) >0.05 were filtered out.\n\n### Integrative analysis of miRNA and mRNA expression changes in wound healing\n\n#### Expression correlation between mRNA and miRNA modules\n\nAn integrative analysis was carried out by relating the PC1 of miRNA expression, calculated using the moduleEigengenes function of WGCNA package (Langfelder and Horvath, 2008), to the PC1 of mRNA expression in each module. The miRNA-mRNA module pairs with a Pearson\u2019s correlation coefficient <\u22120.5 and a p value <0.05 were selected for the following enrichment analysis.\n\n#### Prediction of miRNA targets\n\nWe predicted both conserved and nonconserved target sites for all the 562 miRNAs by using the get_multimir function from R package multimiR (Ru et al., 2014) (http://multimir.org/) based on the latest TargetScan v7.2 database (Agarwal et al., 2015, Lewis et al., 2005). All predicted miRNA targets were sorted by a primary score calculated for target site strength, and the top 25% with summed context++score \u2264\u22120.15 were defined as the strongest miRNA targets. Targets that were not detected by the long RNA-seq were removed.\n\n#### Gene set enrichment analysis of miRNA targets in mRNA modules\n\nWe evaluated the degree of enrichment of miRNA modules\u2019 targets in mRNA modules. For this, we focused on the VU-specific DE miRNA, that is, the 22 up- and 10 downregulated miRNAs in VU compared to both the skin and acute wounds (FDR <0.05 and |log2(fold change)|\u2265 1), as well as the VU-associated modules\u2019 hub miRNAs, which kME values were greater than the median kME in respective modules (i.e., 14 miRNAs in m8, 9 miRNAs in m12, 20 miRNAs in m7, 29 miRNAs in m3, and 13 miRNAs in m9). Among these miRNAs\u2019 strongest targets, we selected the ones that were hit by \u22652 miRNAs from m8, m9, m12 modules or miRNAs downregulated in VU; \u22653 miRNAs from m7 module or miRNAs upregulated in VU; \u22654 miRNAs from m3 module, to capture putative module-driving targets. We performed gene set enrichment analyses for these miRs\u2019 targets in VU-specific DE mRNAs (FDR <0.05 and fold change \u22651.5) and VU-associated mRNA modules by using the R function fisher.test() based on the two-side Fisher\u2019s exact test (Wu et al., 2016). Furthermore, we performed enrichment analysis to identify individual miRNA with their strongest targets significantly enriched in VU-specific DE mRNAs or VU-associated mRNA modules (Fisher\u2019s exact test: OR >1, p value <0.05).\n\n### Experimental validation of miRs\u2019 expression, targetome, and functions\n\n#### Quantitative RT-PCR\n\nTo detect miRNA, RNA from human skin and wounds was reverse transcribed using TaqMan Advanced miRNA cDNA Synthesis Kit (Thermo Fisher Scientific). Individual miRNA expression was then quantified using TaqMan Advanced miRNA Assays (Thermo Fisher Scientific) and normalized with miR-361-5p and miR-423-5p due to their relatively constant expression between human skin and wounds. To detect mRNA, we performed reverse transcription using the RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific). Gene expression was examined by SYBR Green expression assays (Thermo Fisher Scientific) and normalized with housekeeping gene B2M and GAPDH. The primer sequences for B2M are forward primer (5\u2032-AAGTGGGATCGAGACATGTAAG-3\u2032) and reverse primer (5\u2032-GGAGACAGCACTCAAAGTAGAA-3\u2032); GAPDH forward primer (5\u2032-GGTGTGAACCATGAGAAGTATGA-3\u2032) and reverse primer (5\u2032-GAGTCCTTCCACGATACCAAAG-3\u2032).\n\n#### Primary cell culture and transfection\n\nAdult human epidermal keratinocytes (Thermo Fisher Scientific) were cultured in EpiLife serum-free keratinocyte growth medium supplemented with Human Keratinocyte Growth Supplement (HKGS) and 100 units/ml penicillin and 100 \u03bcg/ml streptomycin (Thermo Fisher Scientific). Adult human dermal fibroblasts (Thermo Fisher Scientific) were cultured in Medium 106 supplemented with Low Serum Growth Supplement (LSGS) and 100 units/ml penicillin and 100 \u03bcg/ml streptomycin (Thermo Fisher Scientific). Cells were incubated at 37\u00b0C in 5% CO2, and media was routinely changed every 2\u20133 days. Third passage keratinocytes at 50\u201360% confluence were transfected with 20 nM miRNA mimics (Horizon) or negative control using Lipofectamine 3000 (Thermo Fisher Scientific).\n\n#### Microarray analysis\n\nTranscriptome profiling of keratinocytes and fibroblasts transfected with 20 nM miRNA mimics or control mimics for 24 hr (in triplicates) was performed using Affymetrix Genechip system at the Microarray Core facility of Karolinska Institute. Normalized expression data (log2 transformed value) were exported from Transcriptome Analysis Console (TAC) software and analyzed by the limma R package (Ritchie et al., 2015). In brief, expression data were first fitted to a linear model for each probe. Then, the empirical Bayes method was applied to compute the estimated coefficients of gene-wise variability and standard errors for comparisons of experimental and control groups. Genes with FC >1.2 and p value <0.05 between the miRNA mimics- and the control mimics-transfected cells were considered to be significantly changed. Gene set enrichment analysis, including BP, Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway, and hallmark from Molecular Signatures Database (MSigDB) (http://www.gsea-msigdb.org/) (Subramanian et al., 2005), was performed with a ranked fold change list of all the genes by using the fgsea R package (Korotkevich et al., 2021) and visualized by using the ggplot2 and circlize packages. Protein\u2013protein interaction was analyzed using the STRING web resource (https://string-db.org/) (Szklarczyk et al., 2019).\n\n#### Immunofluorescence staining\n\nCells transfected with a combination of miRNA and/or control mimics (50 nM in total) were fixed in 4% paraformaldehyde for 15 min. Cells were incubated with the Ki-67 antibody (Cell Signaling Technology, RRID:AB_2687446) overnight at 4\u00b0C. The next day, cells were incubated with the secondary antibody conjugated with Alexa 488 (RRID:AB_2535792) for 40 min at room temperature. Cells were mounted with the ProLong Diamond Antifade Mountant with 4\u2032,6-diamidino-2-phenylindole (Thermo Fisher Scientific). Ki-67 signals were visualized with Nikon microscopy, and positive cells were counted using ImageJ software (National Institutes of Health).\n\n#### Cell proliferation assay\n\nCells were seeded in 12-well plates with a density of 20,000 cells/well. The plates were placed in IncuCyte live-cell imaging and analysis platform (Essen Bioscience) after cells attaching to the plates. Plates were imaged every 2 hr, and pictures were processed and analyzed using IncuCyte ZOOM 2018A software (Essen Bioscience).\n\n#### Migration assay\n\nHuman primary keratinocytes transfected with miRNA mimics or inhibitors were plated in Essen ImageLock 96-well plates (Essen Bioscience) at 15,000 cells per well for migration assay. Confluent cell layers were scratched using Essen wound maker to generate wounds. The cells were cultured with EpiLife medium without HKGS. The photographs were analyzed by using the IncuCyte software (Essen Bioscience).\n\n#### Statistical analysis\n\nSample size of each experiment is indicated in the figure legend. Data analysis was performed by using R and GraphPad Prism 7 software. Comparison between two groups was performed with Mann\u2013Whitney U-tests (unpaired, nonparametric), Wilcoxon signed-rank test (paired, nonparametric), or two-tailed Student\u2019s t-test (parametric). Comparison between more than two groups was performed by one-way analysis of variance (ANOVA with uncorrected Fisher\u2019s LSD). The cell growth and migration assay were analyzed by using two-way ANOVA. p value <0.05 is considered to be statistically significant.\n\n### Data availability\n\nRaw data of sRNA-seq, long RNA-seq, and microarray performed in this study have been deposited to NCBI\u2019s Gene Expression Omnibus (GEO) database under the accession number GSE174661 and GSE196773, respectively. In addition, the analyzed dataset is presented with an online R Shiny app and can be accessed through a browsable web portal (https://www.xulandenlab.com/humanwounds-mirna-mrna). The analysis source code is available at https://github.com/Zhuang-Bio/miRNAprofiling; copy archived at swh:1:rev:14eaa943d868157d1de14b2e4ffc7f1be2552e15, Liu, 2021.\n",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "06dba299-34cd-44f2-a6e9-e60414243d32",
+      "submission_id": "cfc612ad-27ee-40ce-8168-4c28d92826c1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80322.sa0](https://doi.org/10.7554/eLife.80322.sa0)\n\nA well-performed study looking at the comprehensive coding and non-coding RNA landscape of the healing wound in a highly controlled fashion. This study lends new insight into specific microRNAs as potential targets in human wound healing.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Brian S Kim, https://ror.org/04a9tmd77 Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80322.sa1](https://doi.org/10.7554/eLife.80322.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Integrative small and long RNA-omics analysis of human healing and non-healing wounds discovers cooperating microRNAs as therapeutic targets\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nThis study has conducted a comprehensive analysis to make the bioinformatic analysis results important to this field, while data volume regarding functional validation seems limited. The examined parameters are rather weak to reflect the regulatory network of the pathogenesis-relevant miRNAs, and the cell type chosen for in vitro experiment is circumscribed to mimic the exact biological process during wound healing. Also, the novelty of this work is relatively limited since similar results using similar samples have been reached before.\n\nReviewer #1 (Recommendations for the authors):\n\nLimited human-derived specimens and insufficient identification of clinical relevant miRNA hindered development of miRNA based therapy in venous ulcer treatment, this study performed an innovative work to acquire sufficient high-quality miRNA profiles from self-collected human skin specimens, and comprehensively analyzed miRNAs which participate in venous ulcer pathogenesis, and resolved the dynamic change within temporal dimension. The brief experimental validation also makes the conclusions more solid and reliable. While the data presentation form needs to be improved.\n\nThe project is ambitious and of interest to the medical community in dermatology as the compendium access is free of charge for academic institutions. Moreover, a certain validation of the data has been performed for the identified pathologically relevant miRs in abnormal VU expression.\n\n1. The article could be updated on the presentation of clinical data or reference for miRs already found for VU or related dermatological disorders.\n\n2. My main criticism is that the compendium database linked to the article is rather difficult to use for clinicians. I would recommend that the authors could propose a virtual visit with an example of miRs and mRNA expression etc, how to look for its level of expression in VU as well as their therapeutic indications.\n\n3. Another criticism is that as mentioned in the article, extensive validation should be performed in cell type-specific miR expression data to confirm their findings. Otherwise, it may be difficult to make conclusions based on mixed cell types in biopsies from VU patients.\n\nReviewer #2 (Recommendations for the authors):\n\nLiu et al. used biopsies from acute human excisional wounds and from chronic venous ulcers to identify miRNAs and mRNAs that are dysregulated in the ulcer tissue. Bioinformatics analysis of the data identified putative targets of strongly regulated miRNAs, which are also dysregulated in the ulcers. Finally, the authors show that some of the dysregulated miRNAs act cooperatively in keratinocytes to suppress their proliferation and to induce the expression of pro-inflammatory cytokines.\n\nThe combined analysis of acute and chronic human wounds is a strength. Such biopsies are very difficult to get and therefore, it is particularly appreciated that the authors developed a compendium that will be open to the public. The data analysis is very well done and the results are interesting and important for the field. However, the functional validation of the data is rather limited. There is no information on the cell type that expresses the relevant miRNAs and their targets and no spatial information. Functional studies are limited to keratinocyte proliferation (which is not a major problem in chronic ulcers). Therefore, the data remain speculative and the claims are not fully supported by the available data.\n\n1. As mentioned by the authors, the observed changes may well be a consequence of a different cellular composition of acute vs. chronic human wounds. scRNA-seq would be the best way to address this issue, and this has now been done for many complex tissues. While such a complex analysis can of course not be done in a revision, the authors should at least make an effort to localize the most relevant miRNAs identified in this study and their putative targets in the wound tissue by in situ hybridization or immunostaining (for the targets).\n\n2. Along the same line: The authors suggest a few transcription factors that could regulate the differentially expressed miRNAs (based on their bioinformatics analysis). To strengthen the data, the authors should perform immunostaining for these transcription factors to determine where they are expressed in acute vs. chronic wounds.\n\n3. The functional data are limited to the analysis of the effect of two miRNAs in keratinocyte proliferation. However, it is not clear if these miRNAs are indeed mainly expressed (and regulated) in keratinocytes. In addition, keratinocyte proliferation is not a major problem in chronic wounds \u2013 in fact, keratinocytes at the wound edge of chronic ulcers are frequently hyperproliferative (Usui et al., 2008; Eming et al., 2014). The major problem is the impaired migration (Usui et al., 2008). Therefore, the authors should check if some of these miRNAs, which are abnormally expressed in VUs, are expressed in keratinocytes at the wound edge and if they regulate keratinocyte migration in vitro. Finally, the functional data were all obtained after overexpression of miRNAs, while knock-down studies are missing. Even if there is functional redundancy among the miRNAs of interest, it would still be useful to confirm this and to know if the endogenous levels are sufficient to contribute to a certain cellular function.\n\nReviewer #3 (Recommendations for the authors):\n\nIn this study, Zhuang Liu and colleagues performed paired-RNA sequencing in human skin tissues, including matched acute wounds and chronic non-healing venous ulcers. They identified 17 pathologically relevant miRNAs that exhibited abnormal VU expression and used qPCR to identify some miRNAs. The authors tried to find some targets which have the potential to accelerate wound healing, and this study has done good work on comprehensive analyses, the results are likely to be of interest to the scientific community. However, I have some serious concerns about this research.\n\n1. The scientific novelty is limited, several groups have done similar analyses using similar samples before. Also, the sample size is limited in this study so the statistical power is weak to make solid conclusions.\n\n2. The conclusion is rather weak because there are no experiments to prove the candidate miRNAs have the function in wound healing at all. Ki67 staining and live-cell imaging only suggest that miR-34a and miR-424 affect keratinocyte cell proliferation.\n\n3. The paper is poorly written. Many regulatory network analyses have been done but those results were not clearly explained and it is hard to follow how conclusions were made based on such results.\n\n4. Authors need to perform in vivo or in vitro assays to identify miRNA function.\n\n5. Authors need to analyse previous data to confirm their findings.\n",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0756f1ea-af22-4a48-8fb5-febb7d69f5bd",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C1",
+      "claim": "Wound healing is a fundamental biological process comprising three sequential and overlapping phases: inflammation, proliferation, and remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Wound healing is a fundamental biological process (BP) comprising three sequential and overlapping phases, that is, inflammation, proliferation, and remodeling (Reinke and Sorg, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reinke and Sorg, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "43983435-08e3-4c36-a278-dea429b9ccb1",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C2",
+      "claim": "The delicate wound repair process is often disrupted in chronic venous insufficiency patients, resulting in venous ulcers characterized by persistent inflammation and proliferative phase initiation failure.",
+      "claim_type": "EXPLICIT",
+      "source": "This delicate repair process is often disrupted in chronic venous insufficiency patients, resulting in venous ulcers (VUs) characterized by persistent inflammation and proliferative phase initiation failure (Eming et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eming et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "4a197cba-05b8-4929-a3e2-cdbf1ff9424c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C3",
+      "claim": "VU is the most common chronic nonhealing wound type, comprising 45\u201360% of all lower extremity ulcerations.",
+      "claim_type": "EXPLICIT",
+      "source": "VU is the most common chronic nonhealing wound type, comprising 45\u201360% of all lower extremity ulcerations (Vivas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vivas et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "caad5114-08ef-48a9-9d00-ae3f6b33bd15",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C4",
+      "claim": "VU exhibits a marked impact on health-related life quality and represents a significant financial burden with an annual health care cost of overall $14.9 billion in the USA.",
+      "claim_type": "EXPLICIT",
+      "source": "VU exhibits a marked impact on health-related life quality and represents a significant financial burden both to the patients and the society with an annual health care cost of overall $14.9 billion in the USA (Hoversten et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hoversten et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "79b97040-cfcd-4613-8965-afeeb8d91c48",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C5",
+      "claim": "MicroRNAs are short (~22 nt) noncoding ribonucleic acids that incorporate into the RNA-induced silencing complex and bind to the 3\u2032 untranslated region of their target mRNAs, resulting in mRNA destabilization and translational repression.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs (miR) represent a group of short (~22 nt) noncoding (nc) ribonucleic acids, incorporating into the RNA-induced silencing complex and binding to the 3\u2032 untranslated region of their target mRNAs, resulting in mRNA destabilization and translational repression (Stavast and Erkeland, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stavast and Erkeland, 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "5596a13f-70f2-4666-947b-ce261fa6caff",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C6",
+      "claim": "An individual miR can target dozens to hundreds of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that an individual miR can target dozens to hundreds of genes, miRs have been identified as regulators of complex gene networks (Stavast and Erkeland, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stavast and Erkeland, 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "77fab129-3b30-4e52-93ff-6e7becbacc79",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C7",
+      "claim": "MiR-mediated regulation is reportedly crucial in multiple fundamental biological processes including skin wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "MiR-mediated regulation is reportedly crucial in multiple fundamental BPs including skin wound repair (Herter and Xu Land\u00e9n, 2017, Meng et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Herter and Xu Land\u00e9n, 2017, and Meng et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "857e573d-78f7-451c-8efd-acd23c056f16",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C8",
+      "claim": "Manipulating miRs critical for disease pathogenesis could offer a prominent therapeutic effect, supported by viral infection- and cancer-targeting miR therapeutics clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, manipulating miRs critical for the disease pathogenesis could offer a prominent therapeutic effect, supported by viral infection- and cancer-targeting miR therapeutics clinical trials (Rupaimoole and Slack, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rupaimoole and Slack, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "79e9b0b6-18c4-4ff8-ad53-b6eef927d89f",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C9",
+      "claim": "miR-based therapeutics for hard-to-heal wounds represent a promising approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, miR-based therapeutics for hard-to-heal wounds represent a promising approach (Herter and Xu Land\u00e9n, 2017, Luan et al., 2018, Meng et al., 2018; Nie et al., 2020; Pastar et al., 2020, Sen and Roy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "194007a4-d4d0-4b09-b173-126c0f491636",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C10",
+      "claim": "Human skin structure and repair processes are different from those of commonly used animal models (e.g., rodents).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite sharing several fundamental features, the human skin structure and repair processes are different from those of the commonly used animal models (e.g., rodents) (Elliot et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Elliot et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "9b8ae3fe-a842-40a3-b4ea-4f792d0fd076",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C11",
+      "claim": "Animal models cannot fully simulate the human disease complexity, and the findings are difficult to extrapolate to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, animal models cannot fully simulate the human disease complexity, and the findings are difficult to extrapolate to humans (Darwin and Tomic-Canic, 2018; Pastar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Darwin and Tomic-Canic, 2018, and Pastar et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "b72ba04a-26cd-4564-a186-c36558720122",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C12",
+      "claim": "The study performed paired small and mRNA expression profiling in human skin, acute wounds during the inflammatory and proliferative phases, and VU.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we performed paired small and mRNA expression profiling in the human skin, acute wounds during the inflammatory and proliferative phases, and VU, unraveling time-resolved changes of the whole transcriptome throughout the wound healing process and the unique gene expression signature of a common chronic wound type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the study methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "05880525-44ba-4931-92d2-5fc23ba3207c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C13",
+      "claim": "The study detected 562 mature miRs and 12,069 mRNAs in the samples.",
+      "claim_type": "EXPLICIT",
+      "source": "After stringent raw sequencing data quality control (Supplementary file 1 and Supplementary file 2), we detected 562 mature miRs and 12,069 mRNAs in our samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of sequencing results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "8e0fcec5-c2d8-46d9-89d9-14674128e7eb",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C14",
+      "claim": "Principal component analysis showed that either the miR or the mRNA expression profiles clearly separated the four sample groups (Skin, Wound1, Wound7, and VU).",
+      "claim_type": "EXPLICIT",
+      "source": "Our principal component analysis showed that either the miR or the mRNA expression profiles clearly separated these four sample groups (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis and Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "e30e8681-1137-475c-9a04-bff7a1198eb7",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C15",
+      "claim": "The study identified a VU-specific gene signature, including aberrant increase of 22 miRs and 221 mRNAs and decrease of 10 miRs and 203 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the VUs with both the skin and acute wounds and unraveled a VU-specific gene signature, including aberrant increase of 22 miRs and 221 mRNAs and decrease of 10 miRs and 203 mRNAs (differentially expressed [DE] analysis false discovery rate [FDR] <0.05, fold change \u22652 for miRs, and \u22651.5 for mRNAs, Figure 1c\u2013e and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential expression analysis with specific statistical criteria and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "b43df773-97e6-4935-8248-9bf84d13f96c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C16",
+      "claim": "The study identified 13 distinct miRNA coexpression modules using WGCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 13 distinct modules with a robustness confirmed by the module preservation analysis (Figure 2\u2014figure supplement 1a), 10 of them significantly correlating (Pearson's correlation, FDR <0.05) with at least one of the four phenotypic traits, that is, Skin, Wound1, Wound7, and VU (Figure 2a, b, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by WGCNA analysis and figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "6ad5f335-2aa0-484c-b88a-7ed2ac7e965c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C17",
+      "claim": "Module m2, m10, and m11 miRs were upregulated at the inflammatory phase (Wound1).",
+      "claim_type": "EXPLICIT",
+      "source": "The WGCNA revealed that module (m)2, m10, and m11 miRs were upregulated at the inflammatory phase (Wound1), while m5 and m6 miRs peaked at the proliferative phase (Wound7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by WGCNA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "83b79c70-199d-449f-87f2-07cff8b149b3",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C18",
+      "claim": "Module m5 and m6 miRs peaked at the proliferative phase (Wound7).",
+      "claim_type": "EXPLICIT",
+      "source": "The WGCNA revealed that module (m)2, m10, and m11 miRs were upregulated at the inflammatory phase (Wound1), while m5 and m6 miRs peaked at the proliferative phase (Wound7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by WGCNA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "e12dd557-8c63-4e2b-9d80-1b58c3d795cb",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C19",
+      "claim": "In VU, three downregulated (m3, m7, and m9) and two upregulated (m8 and m12) miR modules were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In VU, we identified three downregulated (m3, m7, and m9) and two upregulated (m8 and m12) miR modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by WGCNA analysis results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "d2ba8c4d-a903-4f84-8316-dc0633b20914",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C20",
+      "claim": "84% of the 198 'driver' miRs were identified as differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we identified 84% of them as DEGs, suggesting a high consistence between the WGCNA and DE analysis (Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of WGCNA and differential expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "82680801-d320-472a-b03b-4706265f386e",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C21",
+      "claim": "KLF4, KLF5, GATA3, GRHL2, and TP53 families exhibited their binding sites enriched in the m9 miR genes and their expression significantly correlated with the m9 miRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the KLF4, KLF5, GATA3, GRHL2, and TP53 families exhibited not only their binding sites enriched in the m9 miR genes but their expression also significantly correlated with the m9 miRs (Pearson's correlation coefficient = 0.53\u20130.82, p value of p = 7.05e\u221206\u20130.014) (Figure 2d, Figure 2\u2014figure supplement 3a, and Figure 2\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcription factor enrichment analysis and correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "146579a4-47a8-477d-ad7f-02d3a743d7a0",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C22",
+      "claim": "Both GATA3 and KLF4 are reportedly downregulated in human VU.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both GATA3 and KLF4 are reportedly downregulated in human VU (Stojadinovic et al., 2014; Stojadinovic et al., 2008), which findings were confirmed in our RNA-seq data (Figure 2\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and confirmed by RNA-seq data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "bd632047-cd25-4716-8336-e23b6a65181b",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C23",
+      "claim": "The study identified 13 mRNA coexpression modules using WGCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus performed WGCNA in the paired long RNA-seq data and identified 13 mRNA coexpression modules (Figure 2e, Figure 2\u2014figure supplement 1b, Figure 2\u2014figure supplement 4a\u2013c, and Figure 2\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by WGCNA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "64f2039a-37ef-4845-a7ce-508a6dda6012",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C24",
+      "claim": "The gene ontology analysis of the mRNA modules largely confirmed the previous knowledge of wound biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene ontology (GO) analysis of the mRNA modules largely confirmed the previous knowledge of wound biology, such as skin hemostasis (M2) and barrier function (M4)-related gene downregulation in the wounds, the upregulation of the genes involved in the immune response (M8), RNA processing, and protein production (M1, M3, and M5) in the inflammatory phase, and the prominent cell mitosis-related gene expression (M7) in the proliferative phase of wound repair (Figure 2f and Figure 2\u2014figure supplement 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO analysis and comparison with existing knowledge",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "f62c3b67-ef72-45a6-a2fc-204bd09b1ef0",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C25",
+      "claim": "NFKB1 and RELA were identified as the most enriched upstream regulators for the M1 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified NFKB1 and RELA, well known for their immune functions (Liu et al., 2017), as the most enriched upstream regulators for the M1 mRNAs, while E2F1, a TF promoting cell growth (Ertosun et al., 2016), surfaced as a master regulator TF in M7 (Figure 2\u2014source data 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transcription factor enrichment analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "21ff39d8-fb4e-4b74-887f-720728e3199a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C26",
+      "claim": "E2F1 surfaced as a master regulator TF in M7.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified NFKB1 and RELA, well known for their immune functions (Liu et al., 2017), as the most enriched upstream regulators for the M1 mRNAs, while E2F1, a TF promoting cell growth (Ertosun et al., 2016), surfaced as a master regulator TF in M7 (Figure 2\u2014source data 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transcription factor enrichment analysis and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "c494cff2-d8e2-41ac-8b94-c3d63f47264a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C27",
+      "claim": "The study unraveled a VU molecular signature: downregulated expression of RNA and protein production- (M1, M3, and M5) as well as cell mitosis-related (M7) genes, and upregulated expression of genes involved in extracellular matrix organization and cell adhesion (M9).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our study unraveled a VU molecular signature: downregulated expression of RNA and protein production- (M1, M3, and M5) as well as cell mitosis-related (M7) genes, and upregulated expression of genes involved in extracellular matrix organization and cell adhesion (M9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mRNA module analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "8db601a1-7639-4447-b379-ba4536fe6aa1",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C28",
+      "claim": "The study found an immune gene signature clearly distinguishing the chronic inflammation in VUs (M11 and M12 enriched with adaptive immunity-related mRNAs) from the self-limiting immune response in acute wounds (M8 enriched with neutrophil activation- and phagocytosis-related mRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found an immune gene signature clearly distinguishing the chronic inflammation in VUs (M11 and M12 enriched with adaptive immunity-related mRNAs) from the self-limiting immune response in acute wounds (M8 enriched with neutrophil activation- and phagocytosis-related mRNAs) (Figure 2f and Figure 2\u2014figure supplement 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mRNA module analysis and GO analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "7fd5b468-12cf-4779-bc28-0df403e5649e",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C29",
+      "claim": "The study found significantly negative correlations between the PC1 of the DE miRs and the DE mRNAs predicted as miR targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found significantly negative correlations (Pearson's correlation, p values: 1.36e\u221212\u20131.27e\u221204) between the PC1 of the DE miRs and the DE mRNAs predicted as miR targets, indicating negative regulation of VU-mRNA signature by the aberrantly expressed miRs in VU (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "80e36723-b9f3-4c99-91b4-d3d6ee2a1d83",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C30",
+      "claim": "The study identified significantly negative correlations between the downregulated miR (m3, m7, and m9) and the upregulated mRNA (M9, M11, and M12) modules in VU.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified significantly negative correlations between the downregulated miR (m3, m7, and m9) and the upregulated mRNA (M9, M11, and M12) modules, as well as between the upregulated miR (m8 and m12) and the downregulated mRNA (M5) modules in VU (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis between miR and mRNA modules",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "acf600d7-a3c5-4d2d-9e19-ab831b0f2abe",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C31",
+      "claim": "The predicted targets of the downregulated m9 miRs were significantly enriched for the upregulated M9 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these miR\u2013mRNA module pairs, we found that the predicted targets of the downregulated m9 miRs were significantly enriched (Fisher's extract test: OR >1, p value <0.05) for the upregulated M9 mRNAs, whereas the targets of the upregulated miRs and m8 miRs were enriched for the downregulated mRNAs and M5 mRNAs (Figure 4a and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "88cd4e03-5e1e-4470-a38c-0382651a4117",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C32",
+      "claim": "The targets of the upregulated miRs and m8 miRs were enriched for the downregulated mRNAs and M5 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these miR\u2013mRNA module pairs, we found that the predicted targets of the downregulated m9 miRs were significantly enriched (Fisher's extract test: OR >1, p value <0.05) for the upregulated M9 mRNAs, whereas the targets of the upregulated miRs and m8 miRs were enriched for the downregulated mRNAs and M5 mRNAs (Figure 4a and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "e39b050a-1540-42ce-9065-b133fb95ab3e",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C33",
+      "claim": "The study identified 17 pathologically relevant miRs that exhibited abnormal VU expression and displayed their targets enriched explicitly in the VU gene signature.",
+      "claim_type": "EXPLICIT",
+      "source": "With this first clinical, wound-centric resource of miRs and mRNAs, we identified 17 pathologically relevant miRs that exhibited abnormal VU expression and displayed their targets enriched explicitly in the VU gene signature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by integrative analysis of miR and mRNA expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "48db1c29-a5b1-412b-9440-828f098daaf5",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C34",
+      "claim": "The study validated the expression of 11 miRs by qRT-PCR in a cohort with 7 healthy donors and 12 VU patients.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we selected 9 shortlisted DE miRs (Figures 1d and 4b), including 3 downregulated (miR-149-5p, miR-218-5p, and miR-96-5p) and 6 upregulated (miR-7704, miR-424-5p, miR-31-3p, miR-450-5p, miR-516b-5p, and miR-517b-3p) miRs in VU, and validated their expression by quantitative reverse transcription PCR (qRT-PCR) in the skin and wound tissue biopsies from a cohort with 7 healthy donors and 12 VU patients, matched in terms of age and the anatomical wound locations (Figure 5b\u2013j, Tables 1 and 2, and Figure 5\u2014source data 1). Additionally, the upregulation of miR-34a-5p and miR-34c-5p in VU has been reported by us previously (Wu et al., 2020). Together, we confirmed these 11 miRs' expression patterns in RNA-seq, supporting the robustness and reproducibility of our profiling data (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR validation and previous publication",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "88463f17-bf97-4ff1-80b2-87fedc085363",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C35",
+      "claim": "The expression of miR-34a-5p and miR-424-5p was upregulated in the wound-edge epidermis from the VUs compared to the acute wounds and the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, with laser capture microdissection (LCM), we isolated the epidermal compartments from human skin, acute wounds, and VUs (n = 7 per group) and found that the expression of miR-34a-5p and miR-424-5p was upregulated in the wound-edge epidermis from the VUs compared to the acute wounds and the skin, as shown in qRT-PCR analysis (Figure 5l\u2013n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by LCM and qRT-PCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "c69c8e31-7b1a-4dd9-ba1b-a5f1d482d8b5",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C36",
+      "claim": "For all eight miRs tested, the strongest targets predicted by TargetScan were significantly downregulated compared to the nontargeting mRNAs in microarray analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For all these eight miRs, we observed that their strongest targets predicted by TargetScan were significantly downregulated compared to the nontargeting mRNAs (Wilcoxon t-test p values: 1.34e\u221225\u20131.91e\u221259).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microarray analysis and statistical testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "0375cb59-1a4d-4050-9d0c-ce3fbb76e928",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C37",
+      "claim": "The experimentally validated miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704 targets showed significant enrichment for the VU gene signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed significant enrichment (Fisher's exact test, OR >1, p value <0.05) of the experimentally validated miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704 targets for the VU gene signature (Figure 6k and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis of validated targets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "66ee69fb-0352-4ba4-8448-87d7d46e6dc4",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C38",
+      "claim": "miR-34a and miR-34c inhibit keratinocyte proliferation and migration, while promoting apoptosis and inflammatory response, resulting in delayed wound repair in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that miR-34a and miR-34c inhibit keratinocyte proliferation and migration, while promoting apoptosis and inflammatory response, resulting in delayed wound repair in a mouse model (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous publication",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "1e3590a1-4e0f-4607-8060-f58713724c25",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C39",
+      "claim": "Both the predicted and validated miR-34a/c targets were enriched for the downregulated M5 module mRNAs in VU.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discovered that both the predicted (Figure 4b) and validated (Figure 6k) miR-34a/c targets were enriched for the downregulated M5 module mRNAs in VU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis of predicted and validated targets",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "44161d22-3972-470b-8ace-b6f216445775",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C40",
+      "claim": "miR-34a or miR-34c overexpression reduced the expression of 39 hub genes in the M5 module in cultured keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our microarray analysis in cultured keratinocytes overexpressing miR-34a or miR-34c confirmed that miR-34 reduced the expression of 39 hub genes in the M5 module (log2(fold change) \u2264\u22120.58, p value <0.05, Figure 7a, lower panel), and 26 of them exhibited negative correlation (Pearson's r = \u22120.83 to \u22120.45, p value <0.05) with miR-34a/c expression levels in the human skin and wound samples (Figure 7a, upper panel and Figure 5\u2014source data 1), suggesting that they were miR-34a/c targets in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray analysis and correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "ad627f1d-9f33-42ee-b9d8-248d37f59b45",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C41",
+      "claim": "miR-218-5p was downregulated in the VU compared to the acute wounds and the skin.",
+      "claim_type": "EXPLICIT",
+      "source": "MiR-218-5p was downregulated in the VU compared to the acute wounds and the skin (Figure 5c and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "2ffb6c81-a262-4ed5-9009-ffbc5fa384d6",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C42",
+      "claim": "The predicted and validated targets of miR-218-5p were both enriched for the upregulated or M9 module mRNAs in VU.",
+      "claim_type": "EXPLICIT",
+      "source": "Its predicted (Figure 4b) and validated (Figure 7a) targets were both enriched for the upregulated or M9 module mRNAs in VU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "8ba0e0e7-edb4-494f-89c3-9c0b8d11f927",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C43",
+      "claim": "miR-7704 is a human-specific miR with significantly increased expression in VU.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this study also identified miR-7704, a human-specific miR, with significantly increased expression in VU (Figure 5e and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "40f54a83-3172-4494-b896-1f2769550c3a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C44",
+      "claim": "The predicted and validated miR-7704 targets were highly enriched for the M5 module mRNAs downregulated in VU.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to miR-34a/c, the predicted (Figure 4b) and validated (Figure 6k) miR-7704 targets were highly enriched for the M5 module mRNAs downregulated in VU.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "f204b836-335b-4880-942a-a8e45feedaec",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C45",
+      "claim": "miR-34a/c and miR-424-5p or miR-7704 shared 8\u201310 targets with unrelated seed sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For the miRs with unrelated seed sequences, we found that miR-34a/c and miR-424-5p or miR-7704 shared 8\u201310 targets, and these miRs were coexpressed in the m8 module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by target analysis and coexpression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "54efe377-b26e-457a-acfd-9711fb45a418",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C46",
+      "claim": "Among the downregulated miRs in VU, miR-96-5p and miR-218-5p shared eight targets.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that among the downregulated miRs in VU, miR-96-5p and miR-218-5p shared eight targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by target analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "07ae41dd-d386-49be-8a9e-086f2eb0ccdd",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C47",
+      "claim": "The miRs upregulated in VU (miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, and miR-516-5p) were predicted to promote inflammation but inhibit proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest, combining the miR expression changes with their annotated functions, we found a regular pattern, that is, the miRs upregulated in VU (i.e., miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, and miR-516-5p) were predicted to promote inflammation but inhibit proliferation; whereas the miRs downregulated in VU (i.e., miR-218-5p and miR-96-5p) might be required for cell growth and activation (Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional annotation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "78b12d69-80fa-4ad6-b26b-8134c443c2ab",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C48",
+      "claim": "The miRs downregulated in VU (miR-218-5p and miR-96-5p) might be required for cell growth and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest, combining the miR expression changes with their annotated functions, we found a regular pattern, that is, the miRs upregulated in VU (i.e., miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, and miR-516-5p) were predicted to promote inflammation but inhibit proliferation; whereas the miRs downregulated in VU (i.e., miR-218-5p and miR-96-5p) might be required for cell growth and activation (Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by functional annotation analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "4f20a5a2-d823-4d67-916a-441e3a03c5e4",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C49",
+      "claim": "VU-dysregulated miRs might cooperatively result in impaired cell migration and proliferation accompanied with persistent inflammation, contributing to the stalled wound healing characterized with failed transition from the inflammatory phase to the proliferative phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these VU-dysregulated miRs might cooperatively result in impaired cell migration and proliferation accompanied with persistent inflammation, contributing to the stalled wound healing characterized with failed transition from the inflammatory phase to the proliferative phase (Land\u00e9n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from functional annotation analysis and citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "73e5c721-f9e1-4141-bf64-f8a5b269fa58",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C50",
+      "claim": "miR-34a-5p and miR-424-5p cooperatively suppressed keratinocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that although miR-34a-5p or miR-424-5p alone could reduce Ki-67 levels, their combination suppressed stronger Ki-67 expression (Figure 9a, b, Figure 9\u2014figure supplement 1b, and Figure 9\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data on Ki-67 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "2362ab2b-29e5-4684-a52f-05630b69db2a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C51",
+      "claim": "The cooperativity between miR-34a-5p and miR-424-5p in repressing keratinocyte growth was confirmed by comparing cell growth curves generated with a live cell imaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "The cooperativity between miR-34a-5p and miR-424-5p in repressing keratinocyte growth was further confirmed by comparing cell growth curves generated with a live cell imaging system (Figure 9c, Figure 9\u2014figure supplement 1c, and Figure 9\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live cell imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "cdbfbf9f-d549-4be3-bc2e-5e5bca66632d",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C52",
+      "claim": "Simultaneous overexpression of miR-34a-5p and miR-424-5p delayed keratinocyte migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, with scratch wound healing assays, we showed that simultaneous overexpression of miR-34a-5p and miR-424-5p delayed keratinocyte migration, whereas inhibition of endogenous miR-34a-5p or miR-424-5p enhanced keratinocyte motility (Figure 9d\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scratch wound healing assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "ad5486fd-9be0-4b84-b248-aa6afa7437e4",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C53",
+      "claim": "Inhibition of endogenous miR-34a-5p or miR-424-5p enhanced keratinocyte motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, with scratch wound healing assays, we showed that simultaneous overexpression of miR-34a-5p and miR-424-5p delayed keratinocyte migration, whereas inhibition of endogenous miR-34a-5p or miR-424-5p enhanced keratinocyte motility (Figure 9d\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by scratch wound healing assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "11ecd2be-693a-4e75-a741-0e9b21d54906",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C54",
+      "claim": "Simultaneously overexpressing miR-34a-5p and miR-516b-5p induced a higher CCL20 expression compared to the individual overexpression of each miR.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that simultaneously overexpressing miR-34a-5p and miR-516b-5p induced a higher CCL20 expression compared to the individual overexpression of each miR, suggesting their cooperativity in promoting inflammation (Figure 9h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data on CCL20 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "5a09e752-4093-4e4c-b46b-05f8dbd970ed",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C55",
+      "claim": "The study developed a compendium (https://www.xulandenlab.com/humanwounds-mirna-mrna), which is an open, comprehensive resource to broadly aid wound healing research.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of the findings, we developed a compendium (https://www.xulandenlab.com/humanwounds-mirna-mrna), which will be an open, comprehensive resource to broadly aid wound healing research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the resource development",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "bbb17c2e-7013-48c7-b413-652bc48c9cbd",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C56",
+      "claim": "The study demonstrated that miR-34a, miR-424, and miR-516, upregulated in VU, cooperatively suppressed keratinocyte migration and growth while promoting inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrated that miR-34a, miR-424, and miR-516, upregulated in VU, cooperatively suppressed keratinocyte migration and growth while promoting inflammatory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental validation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "837975cd-ee5f-405a-adc9-b8fe6dc936e6",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C57",
+      "claim": "The study opens the possibility of developing innovative wound treatment that targets pathologically relevant cooperating miRs to attain higher therapeutic efficacy and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study opens the possibility of developing innovative wound treatment that targets pathologically relevant cooperating miRs to attain higher therapeutic efficacy and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "9435a1c3-2ab9-4817-8ca4-3010b0f2c2c1",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C58",
+      "claim": "The same miR is often described to play different or even opposite roles in different cells, as each cell type has specific gene expression context subjected to the miR-mediated posttranscriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The same miR is often described to play different or even opposite roles in different cells, as each cell type has specific gene expression context subjected to the miR-mediated posttranscriptional regulation (Erhard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Erhard et al., 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "34bdbdc9-cef8-4cd7-8415-97fe603ab1f1",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C59",
+      "claim": "miR-34a was identified as one of the most induced miRs in diabetic foot ulcer fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-34a was also identified as one of the most induced miRs in diabetic foot ulcer fibroblasts. Induction of miR-34a together with miR\u201021\u20105p and miR\u2010145\u20105p inhibits fibroblast movement and proliferation, whereas activates cell differentiation and senescence (Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "49576752-7744-4781-99d9-67d379f4ee3a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C60",
+      "claim": "Induction of miR-34a together with miR\u201021\u20105p and miR\u2010145\u20105p inhibits fibroblast movement and proliferation, whereas activates cell differentiation and senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of miR-34a together with miR\u201021\u20105p and miR\u2010145\u20105p inhibits fibroblast movement and proliferation, whereas activates cell differentiation and senescence (Liang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "b78a2dfc-87af-478c-a409-83f34199c20b",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C61",
+      "claim": "miR-34a/c were specifically upregulated in VU, whereas their levels during wound repair remained relatively low and stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we described that miR-34a/c were specifically upregulated in VU, whereas their levels during wound repair remained relatively low and stable, suggesting their specific role in wound pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by expression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "a4271f29-a904-405b-bedb-f855bed44fa6",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C62",
+      "claim": "miR-218-5p regulates hair follicle development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, miR-218-5p regulates hair follicle development (Zhao et al., 2019), inhibits melanogenesis (Guo et al., 2014b), and enhances fibroblast differentiation (Guo et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "8bb1d7fd-81a6-461b-8a84-bc1aced3099f",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C63",
+      "claim": "miR-218-5p inhibits melanogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, miR-218-5p regulates hair follicle development (Zhao et al., 2019), inhibits melanogenesis (Guo et al., 2014b), and enhances fibroblast differentiation (Guo et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guo et al., 2014b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "5e967824-aafb-4a8c-aa34-b18df6ec1a4b",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C64",
+      "claim": "miR-218-5p enhances fibroblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, miR-218-5p regulates hair follicle development (Zhao et al., 2019), inhibits melanogenesis (Guo et al., 2014b), and enhances fibroblast differentiation (Guo et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guo et al., 2014a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "acc31e48-f607-4f10-845d-7fd114a43777",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C65",
+      "claim": "miR-7704 was identified as an exosomal miR produced by melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-7704 was identified as an exosomal miR produced by melanocytes (Shen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shen et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "c6bc9834-9ff1-43a0-b4f4-2166a1932f64",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C66",
+      "claim": "miR-424-5p suppresses keratinocyte proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-424-5p suppresses keratinocyte proliferation (Ichihara et al., 2011) and cutaneous angiogenesis (Nakashima et al., 2010; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ichihara et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "754fd491-d0c5-4fec-be08-1a54e8d44e0c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C67",
+      "claim": "miR-424-5p suppresses cutaneous angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-424-5p suppresses keratinocyte proliferation (Ichihara et al., 2011) and cutaneous angiogenesis (Nakashima et al., 2010; Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nakashima et al., 2010, and Yang et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "85012d55-4dc0-463e-b967-e865e5f993c2",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C68",
+      "claim": "E2F signaling plays a unique role in keratinocyte proliferation and migration, as well as in wound repair and epidermal regeneration in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "E2F signaling plays a unique role in keratinocyte proliferation and migration, as well as in wound repair and epidermal regeneration in vivo (D'Souza et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to D'Souza et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "ac887dd3-306a-49bc-b30d-19610293fedb",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C69",
+      "claim": "miR-34a-5p directly targeted CCND1, CDK6, HDAC1, and E2F3 in the cell cycle pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the cell cycle pathway, miR-34a-5p directly targeted CCND1, CDK6, HDAC1, and E2F3, while miR-424-5p targeted ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, and YWHAH, and only CDC23 was cotargeted by both miRs (Figure 9\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray analysis and pathway mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "f942f192-74aa-4cfc-bb8f-2b2d1118349b",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C70",
+      "claim": "miR-424-5p targeted ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, and YWHAH in the cell cycle pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the cell cycle pathway, miR-34a-5p directly targeted CCND1, CDK6, HDAC1, and E2F3, while miR-424-5p targeted ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, and YWHAH, and only CDC23 was cotargeted by both miRs (Figure 9\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray analysis and pathway mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "1e59535d-90ef-4f99-943d-b924a37189af",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C71",
+      "claim": "CDC23 was cotargeted by both miR-34a-5p and miR-424-5p in the cell cycle pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the cell cycle pathway, miR-34a-5p directly targeted CCND1, CDK6, HDAC1, and E2F3, while miR-424-5p targeted ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, and YWHAH, and only CDC23 was cotargeted by both miRs (Figure 9\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray analysis and pathway mapping",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "e5ea9458-1eac-499b-9cf5-b4f5ec083166",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C72",
+      "claim": "Both miR-34a-5p and miR-516b-5p enhanced keratinocyte expression of inflammatory chemokines/cytokines, for example, CCL20, CXCL8, and IL1B.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, both miRs enhanced keratinocyte expression of inflammatory chemokines/ cytokines, for example, CCL20, CXCL8, and IL1B (Figure 8f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "eb82d704-7862-4bd0-a31d-3e3fc26cafc4",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C73",
+      "claim": "The study collected wound-edge tissues from human acute wounds and chronic nonhealing VUs.",
+      "claim_type": "EXPLICIT",
+      "source": "To better understand tissue repair in humans, we collected wound-edge tissues from human acute wounds and chronic nonhealing VUs (Figure 1a and Materials and methods, Tables 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of sample collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "fb589786-5bcb-46bf-9e2c-4a607c7003e9",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C74",
+      "claim": "The study created 4-mm full-thickness punch wounds at the lower legs of healthy volunteers aged beyond 60 years to match the advanced age of VU patients and anatomical location of the highest VUs occurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "We created 4-mm full-thickness punch wounds at the lower legs of healthy volunteers aged beyond 60 years to match the advanced age of VU patients and anatomical location of the highest VUs occurrence (Vivas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study design with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "04cb26dd-9c58-40f5-b096-58b134252273",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C75",
+      "claim": "Tissue was collected at baseline (Skin), and at day 1 and 7 post-wounding (Wound1 and Wound7) to capture the inflammatory and proliferative phases of wound healing, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue was collected at baseline (Skin), and at day 1 and 7 post-wounding (Wound1 and Wound7) to capture the inflammatory and proliferative phases of wound healing, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of sample collection timepoints",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "52c1ba6c-9a36-426c-bf73-f9f78db651fe",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C76",
+      "claim": "In total, 20 samples divided into four groups (Skin, Wound1, Wound7, and VU) were analyzed by Illumina small RNA sequencing and ribosomal RNA-depleted long RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 20 samples divided into four groups, that is, Skin, Wound1, Wound7, and VU, were analyzed by Illumina small RNA sequencing (sRNA-seq) and ribosomal RNA-depleted long RNA sequencing (RNA-seq).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of sequencing methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "9204b390-5cb8-4f66-8bf9-ef89a9752568",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C77",
+      "claim": "The study purified CD45\u2212 epidermal cells consisting of mainly keratinocytes from matched human skin and acute wounds of five healthy donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we purified CD45\u2212 epidermal cells consisting of mainly keratinocytes from matched human skin and acute wounds of five healthy donors. With sRNA-seq, we confirmed the in vivo expression of these 11 miRs in the epidermal cells of human skin and wounds (Figure 5k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of cell isolation and sequencing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "d0f311f2-7a68-4a79-923f-2ff7994c88ed",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C78",
+      "claim": "The study isolated the epidermal compartments from human skin, acute wounds, and VUs (n = 7 per group) using laser capture microdissection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, with laser capture microdissection (LCM), we isolated the epidermal compartments from human skin, acute wounds, and VUs (n = 7 per group) and found that the expression of miR-34a-5p and miR-424-5p was upregulated in the wound-edge epidermis from the VUs compared to the acute wounds and the skin, as shown in qRT-PCR analysis (Figure 5l\u2013n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of LCM methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "330f7ecb-32c5-474a-8e3a-35f03031d501",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C79",
+      "claim": "The study performed genome-wide microarray analysis in human primary keratinocytes or fibroblasts overexpressing each of eight miRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed genome-wide microarray analysis in human primary keratinocytes or fibroblasts overexpressing each of these miRs (Figure 6a, Figure 6\u2014figure supplement 1, and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of microarray analysis methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "2c37fc04-6266-4936-81e4-cc8d02241e07",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C80",
+      "claim": "The study reanalyzed published microarray dataset on keratinocytes with miR-34a-5p or miR-34c-5p overexpression (GSE117506).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we reanalyzed our published microarray dataset on keratinocytes with miR-34a-5p or miR-34c-5p overexpression (GSE117506) (Wu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data reanalysis with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "aa3de980-39f1-4192-baf5-d1fed1eb00ec",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C81",
+      "claim": "Raw data of sRNA-seq, long RNA-seq, and microarray performed in this study have been deposited to NCBI's Gene Expression Omnibus (GEO) database under the accession number GSE174661 and GSE196773.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw data of sRNA-seq, long RNA-seq, and microarray performed in this study have been deposited to NCBI's Gene Expression Omnibus (GEO) database under the accession number GSE174661 and GSE196773, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data deposition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "c8825b71-4607-47e9-9e02-be33b53ee186",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C82",
+      "claim": "The analyzed dataset is presented with an online R Shiny app and can be accessed through a browsable web portal (https://www.xulandenlab.com/humanwounds-mirna-mrna).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the analyzed dataset is presented with an online R Shiny app and can be accessed through a browsable web portal (https://www.xulandenlab.com/humanwounds-mirna-mrna).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "0187fc69-d067-4c3e-9c1a-c2597331cf9e",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C86",
+      "claim": "GATA3 is crucial for establishing skin barrier function.",
+      "claim_type": "IMPLICIT",
+      "source": "This analysis led us to important TFs, such as GATA3 (Kaufman et al., 2003; Kurek et al., 2007) that play fundamental roles in skin development and postnatal remodeling, as well as KLF4, crucial for establishing skin barrier function (Segre et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the context that GATA3 plays fundamental roles in skin development and postnatal remodeling, and KLF4 is crucial for establishing skin barrier function",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "9abf9006-266d-430f-abd0-546790e57a35",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C87",
+      "claim": "The loss of GATA3 and KLF4 might contribute to VU pathology through their regulated miRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study confirms these findings and provides a novel insight, showing that the loss of these TFs might contribute to VU pathology through their regulated miRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "1eaa4452-937c-49a7-af65-0b61960052c9",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C88",
+      "claim": "miR-34 inhibition along with modulation of additional deregulated miRs might be a promising VU treatment approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current findings in human samples together with previous functional data (Liang et al., 2016; Wu et al., 2020) suggest that miR-34 inhibition along with modulation of additional deregulated miRs might be a promising VU treatment approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from current and previous findings",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "461cfa9c-6222-4e07-bb04-b29355e9dbc1",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C89",
+      "claim": "miR-34a-5p and miR-424-5p might cooperate to impact stronger on cell proliferation and migration by targeting different gene sets within the same signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus hypothesized that miR-34a-5p and miR-424-5p might cooperate to impact stronger on cell proliferation and migration by targeting different gene sets within the same signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on data analysis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "67668fed-ec5d-4b4d-8549-4fc42c76145a",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C90",
+      "claim": "The VU-miR signature could disrupt the swift transition from inflammation to proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a combined consequence, this VU-miR signature could disrupt the swift transition from inflammation to proliferation (Figure 9i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from functional validation data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "b9153c9f-09d8-46fa-aae9-2af4dc7cd883",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C91",
+      "claim": "The failure of phase transition from inflammation to proliferation represents a core pathology of chronic wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of this phase transition represents a core pathology of chronic wounds (Eming et al., 2014; Land\u00e9n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "947dac45-d065-4d3b-b7f8-537e5bcb2db0",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C92",
+      "claim": "A limitation of bulk RNA-seq of wound tissues is that the observed expression changes could occur in a single or multiple cell types or reflect cell composition changes.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of bulk RNA-seq of wound tissues is that the observed expression changes could occur in a single or multiple cell types or reflect cell composition changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of study limitation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "d6b40cf6-cf27-469b-a064-21a0a5a95e89",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "claim_id": "C93",
+      "claim": "Single-cell sRNA-seq technology needs extensive cell handling and remains challenging to be used at a scale for analyzing complex dynamics of tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this technology needs extensive cell handing and therefore has only been applied to few cells and still remains challenging to be used at a scale for analyzing complex dynamics of tissue (Nielsen and Pedersen, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nielsen and Pedersen, 2021",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study performed paired small and long RNA sequencing on 20 human tissue samples (skin, acute wounds at days 1 and 7, and venous ulcers), detecting 562 miRNAs and 12,069 mRNAs. Principal component analysis showed clear separation of the four sample groups, and differential expression analysis identified a VU-specific gene signature with 22 upregulated and 10 downregulated miRNAs, and 221 upregulated and 203 downregulated mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C73-C76 describe the study design, sample collection, sequencing methodology, and initial results. The experimental design is clearly stated with appropriate controls (matched age, anatomical location), adequate sample sizes (n=5 per group for RNA-seq), and rigorous quality control. The PCA results demonstrate biological reproducibility and the differential expression analysis uses appropriate statistical thresholds (FDR <0.05, fold change \u22652 for miRs, \u22651.5 for mRNAs).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "09c701ff-2713-45ee-8ba2-15eda80326d5",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "WGCNA identified 13 miRNA coexpression modules, with specific modules associated with different wound healing phases: m2, m10, and m11 upregulated during inflammation (Wound1); m5 and m6 peaked during proliferation (Wound7); and m3, m7, m9 downregulated and m8, m12 upregulated in VU. Transcription factors KLF4, KLF5, GATA3, GRHL2, and TP53 showed enriched binding sites in m9 module genes and significant correlation with m9 miRNA expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 describe WGCNA results with appropriate methodology (module preservation analysis confirmed robustness). The identification of 84% of driver miRNAs as DEGs demonstrates consistency between WGCNA and differential expression analysis. The transcription factor enrichment analysis is supported by both computational prediction and correlation analysis (Pearson's r = 0.53-0.82, p < 0.05), with validation from prior literature (C22) and confirmation in the study's own RNA-seq data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "WGCNA identified 13 mRNA coexpression modules that confirmed known wound biology and revealed a VU molecular signature characterized by downregulated RNA/protein production (M1, M3, M5) and cell mitosis genes (M7), upregulated extracellular matrix organization genes (M9), and distinct immune signatures distinguishing chronic inflammation in VU (M11, M12 with adaptive immunity genes) from acute wound inflammation (M8 with neutrophil activation genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 describe mRNA coexpression analysis with appropriate methodology and validation. The GO analysis results (C24) align with established wound biology knowledge, supporting data quality. The identification of master regulators (NFKB1, RELA for M1; E2F1 for M7) is supported by both enrichment analysis and literature citations. The VU molecular signature (C27-C28) represents a novel finding that is internally consistent with the miRNA analysis and supported by multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "d695f876-b6bc-410d-b16a-9d92885fff0c",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Integrative analysis revealed significantly negative correlations between differentially expressed miRNAs and their predicted mRNA targets in VU (p = 1.36e-12 to 1.27e-04). Specific negative correlations were identified between downregulated miRNA modules (m3, m7, m9) and upregulated mRNA modules (M9, M11, M12), and between upregulated miRNA modules (m8, m12) and downregulated mRNA module (M5). The study identified 17 pathologically relevant miRNAs with abnormal VU expression and targets enriched in the VU gene signature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 describe integrative miRNA-mRNA analysis using appropriate statistical methods (Pearson correlation, Fisher's exact test with OR >1, p <0.05). The negative correlations between miRNA and mRNA expression are consistent with the known mechanism of miRNA-mediated gene repression. The enrichment analysis appropriately accounts for multiple testing and uses biologically relevant thresholds. The identification of 17 pathologically relevant miRNAs (C33) represents a key finding that integrates expression changes with functional target enrichment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "413e2893-ba07-437c-b06a-3b69c681c6fd",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study validated miRNA expression by qRT-PCR in 7 healthy donors and 12 VU patients, confirming 11 miRNAs (9 newly identified plus miR-34a-5p and miR-34c-5p from prior work). Expression was confirmed in CD45- epidermal cells by sRNA-seq (n=5) and in laser-capture microdissected epidermis by qRT-PCR (n=7), showing upregulation of miR-34a-5p and miR-424-5p in VU wound-edge epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35, C77-C78 describe comprehensive validation using multiple orthogonal methods (qRT-PCR, sRNA-seq, laser capture microdissection) in independent cohorts. The validation cohort is appropriately matched for age and anatomical location. The use of cell-type-specific analysis (CD45- epidermal cells, LCM-isolated epidermis) addresses potential confounding from cellular heterogeneity. The consistency across methods and cohorts strongly supports the robustness of the initial RNA-seq findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "45908aa4-a2c3-41fc-a78f-7ce6dbdb8f73",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genome-wide microarray analysis in primary keratinocytes or fibroblasts overexpressing eight miRNAs showed that predicted strongest targets were significantly downregulated compared to non-targets (Wilcoxon p = 1.34e-25 to 1.91e-59). Experimentally validated targets of miR-218-5p, miR-34a-5p, miR-34c-5p, and miR-7704 showed significant enrichment for the VU gene signature (Fisher's exact test, OR >1, p <0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C79-C80 describe targetome validation using appropriate methodology (genome-wide microarray in primary human cells with miRNA overexpression). The statistical significance is very strong (p-values ranging from 1.34e-25 to 1.91e-59), and the enrichment analysis appropriately uses Fisher's exact test. The reanalysis of published data (GSE117506) for miR-34a/c adds rigor. The validation confirms computational predictions and links miRNA dysregulation to VU pathology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "miR-34a/c and miR-7704 targets were enriched for downregulated M5 module mRNAs in VU, while miR-218-5p targets were enriched for upregulated M9 module mRNAs. miR-34a/c were specifically upregulated in VU with stable low expression during normal wound healing, and overexpression reduced expression of 39 M5 hub genes in keratinocytes, with 26 showing negative correlation with miR-34a/c in vivo. miR-7704, a human-specific miRNA, showed significantly increased expression in VU.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44, C61 integrate computational predictions, experimental validation, and in vivo correlation analysis. The microarray data showing downregulation of 39 M5 hub genes (log2FC \u2264-0.58, p <0.05) with 26 showing negative correlation in vivo (Pearson's r = -0.83 to -0.45, p <0.05) provides strong evidence for functional relevance. The identification of miR-7704 as human-specific is notable for translational relevance. The consistency between predicted and validated targets, combined with prior functional data (C38), strongly supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VU-dysregulated miRNAs showed cooperativity through shared targets: miR-34a/c shared 8-10 targets with miR-424-5p or miR-7704; miR-96-5p and miR-218-5p shared 8 targets. Functional annotation revealed that upregulated miRNAs (miR-34a-5p, miR-34c-5p, miR-424-5p, miR-450-5p, miR-7704, miR-516-5p) promote inflammation but inhibit proliferation, while downregulated miRNAs (miR-218-5p, miR-96-5p) are required for cell growth and activation, suggesting cooperative contribution to stalled wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 describe miRNA cooperativity based on target sharing and functional annotation. The identification of shared targets is supported by computational analysis, and the functional predictions are based on GO analysis of experimentally validated targets from microarray data. However, C49 is somewhat speculative as it infers cooperative effects without direct experimental validation of the combined miRNA effects at this stage. The logic is sound but represents an inference that requires further validation (which is provided in later claims C50-C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "096efbaa-5881-4067-9fac-c752f84c19de",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experimental validation demonstrated that miR-34a-5p and miR-424-5p cooperatively suppressed keratinocyte proliferation (Ki-67 expression) and migration, with combination treatment showing stronger effects than individual miRNAs. miR-34a-5p and miR-516b-5p cooperatively enhanced inflammatory chemokine expression (CCL20). The miRNAs target different genes in the same pathways (e.g., cell cycle: miR-34a-5p targets CCND1, CDK6, HDAC1, E2F3; miR-424-5p targets ANAPC13, CCNE1, CDC25B, CDK1, CDKN1B, CHK1, WEE1, YWHAH; only CDC23 is co-targeted).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54, C56, C69-C72 provide direct experimental evidence for miRNA cooperativity using multiple assays (Ki-67 immunofluorescence, live cell imaging, scratch wound assays, qRT-PCR). The experiments include appropriate controls (individual miRNA overexpression/inhibition vs. combination) and show statistically significant differences. The pathway analysis (C69-C71) explains the mechanism of cooperativity through targeting different genes in the same pathway. The sample sizes appear adequate (n=3-10 depending on assay) and statistical tests are appropriate (one-way ANOVA, two-way ANOVA).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "eeb80bf1-d293-4154-aa5f-b326af7ea405",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study developed an open-access web resource (https://www.xulandenlab.com/humanwounds-mirna-mrna) presenting the analyzed dataset through an R Shiny app. Raw sequencing and microarray data were deposited in NCBI GEO under accession numbers GSE174661 and GSE196773.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C81-C82 describe data availability and resource development. The deposition of raw data in public repositories (GEO) follows best practices for reproducibility. The development of an interactive web resource adds value for the research community. These are straightforward factual claims that are verifiable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "e3333391-9f31-4044-bc28-4cbc907cb8ad",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about wound healing biology, venous ulcers as a clinical problem, miRNA biology and function, and limitations of animal models for studying human wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 present background information supported by appropriate citations to peer-reviewed literature. These claims establish the rationale for the study but do not present new findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "82e8f4b3-2365-4088-8239-63d8d005ac04",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study proposes that targeting cooperating miRNAs could provide innovative wound treatment with higher therapeutic efficacy and specificity, and that miR-34 inhibition combined with modulation of other deregulated miRNAs might be a promising VU treatment approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57, C88-C90 represent speculative conclusions about therapeutic potential. While the underlying data on miRNA cooperativity is well-supported (C50-C54), these claims extrapolate to therapeutic applications without direct evidence of efficacy in vivo or in clinically relevant models. C88 is particularly speculative as it suggests a specific therapeutic approach (miR-34 inhibition plus modulation of other miRNAs) without experimental validation of this combination. These represent reasonable hypotheses for future work but are not directly supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    },
+    {
+      "id": "b25e6db5-2261-49c7-9582-fef3aa8024d4",
+      "content_id": "94289377-687f-47ad-acea-cfce70923b98",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within existing literature, noting that miRNA function is cell-type specific, that miR-34a has been identified in diabetic foot ulcers, that various miRNAs have known skin-related functions, and acknowledging study limitations including bulk RNA-seq limitations and challenges with single-cell sRNA-seq technology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C68, C86-C87, C91-C93 present discussion points supported by appropriate citations. The acknowledgment of limitations (C92-C93) is appropriate and honest. The contextualization of findings within existing literature is well-supported. These are primarily interpretive claims that appropriately reference prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:56:03.501321Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b72ba04a-26cd-4564-a186-c36558720122",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "05880525-44ba-4931-92d2-5fc23ba3207c",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "8e0fcec5-c2d8-46d9-89d9-14674128e7eb",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "e30e8681-1137-475c-9a04-bff7a1198eb7",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "eb82d704-7862-4bd0-a31d-3e3fc26cafc4",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "fb589786-5bcb-46bf-9e2c-4a607c7003e9",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "04cb26dd-9c58-40f5-b096-58b134252273",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "52c1ba6c-9a36-426c-bf73-f9f78db651fe",
+      "result_id": "4480c2fc-49ff-4da6-9ab0-bd5ba7dbb78e"
+    },
+    {
+      "claim_id": "b43df773-97e6-4935-8248-9bf84d13f96c",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "6ad5f335-2aa0-484c-b88a-7ed2ac7e965c",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "83b79c70-199d-449f-87f2-07cff8b149b3",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "e12dd557-8c63-4e2b-9d80-1b58c3d795cb",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "d2ba8c4d-a903-4f84-8316-dc0633b20914",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "82680801-d320-472a-b03b-4706265f386e",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "146579a4-47a8-477d-ad7f-02d3a743d7a0",
+      "result_id": "09c701ff-2713-45ee-8ba2-15eda80326d5"
+    },
+    {
+      "claim_id": "bd632047-cd25-4716-8336-e23b6a65181b",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "64f2039a-37ef-4845-a7ce-508a6dda6012",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "f62c3b67-ef72-45a6-a2fc-204bd09b1ef0",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "21ff39d8-fb4e-4b74-887f-720728e3199a",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "c494cff2-d8e2-41ac-8b94-c3d63f47264a",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "8db601a1-7639-4447-b379-ba4536fe6aa1",
+      "result_id": "ce124691-f4f7-46c9-a5ef-ebfc946226bc"
+    },
+    {
+      "claim_id": "7fd5b468-12cf-4779-bc28-0df403e5649e",
+      "result_id": "d695f876-b6bc-410d-b16a-9d92885fff0c"
+    },
+    {
+      "claim_id": "80e36723-b9f3-4c99-91b4-d3d6ee2a1d83",
+      "result_id": "d695f876-b6bc-410d-b16a-9d92885fff0c"
+    },
+    {
+      "claim_id": "acf600d7-a3c5-4d2d-9e19-ab831b0f2abe",
+      "result_id": "d695f876-b6bc-410d-b16a-9d92885fff0c"
+    },
+    {
+      "claim_id": "88cd4e03-5e1e-4470-a38c-0382651a4117",
+      "result_id": "d695f876-b6bc-410d-b16a-9d92885fff0c"
+    },
+    {
+      "claim_id": "e39b050a-1540-42ce-9065-b133fb95ab3e",
+      "result_id": "d695f876-b6bc-410d-b16a-9d92885fff0c"
+    },
+    {
+      "claim_id": "48db1c29-a5b1-412b-9440-828f098daaf5",
+      "result_id": "413e2893-ba07-437c-b06a-3b69c681c6fd"
+    },
+    {
+      "claim_id": "88463f17-bf97-4ff1-80b2-87fedc085363",
+      "result_id": "413e2893-ba07-437c-b06a-3b69c681c6fd"
+    },
+    {
+      "claim_id": "9204b390-5cb8-4f66-8bf9-ef89a9752568",
+      "result_id": "413e2893-ba07-437c-b06a-3b69c681c6fd"
+    },
+    {
+      "claim_id": "d0f311f2-7a68-4a79-923f-2ff7994c88ed",
+      "result_id": "413e2893-ba07-437c-b06a-3b69c681c6fd"
+    },
+    {
+      "claim_id": "c69c8e31-7b1a-4dd9-ba1b-a5f1d482d8b5",
+      "result_id": "45908aa4-a2c3-41fc-a78f-7ce6dbdb8f73"
+    },
+    {
+      "claim_id": "0375cb59-1a4d-4050-9d0c-ce3fbb76e928",
+      "result_id": "45908aa4-a2c3-41fc-a78f-7ce6dbdb8f73"
+    },
+    {
+      "claim_id": "330f7ecb-32c5-474a-8e3a-35f03031d501",
+      "result_id": "45908aa4-a2c3-41fc-a78f-7ce6dbdb8f73"
+    },
+    {
+      "claim_id": "2c37fc04-6266-4936-81e4-cc8d02241e07",
+      "result_id": "45908aa4-a2c3-41fc-a78f-7ce6dbdb8f73"
+    },
+    {
+      "claim_id": "66ee69fb-0352-4ba4-8448-87d7d46e6dc4",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "1e3590a1-4e0f-4607-8060-f58713724c25",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "44161d22-3972-470b-8ace-b6f216445775",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "ad627f1d-9f33-42ee-b9d8-248d37f59b45",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "2ffb6c81-a262-4ed5-9009-ffbc5fa384d6",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "8ba0e0e7-edb4-494f-89c3-9c0b8d11f927",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "40f54a83-3172-4494-b896-1f2769550c3a",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "b78a2dfc-87af-478c-a409-83f34199c20b",
+      "result_id": "37ce5b84-985a-45ea-8c9e-fea72ab58a7f"
+    },
+    {
+      "claim_id": "f204b836-335b-4880-942a-a8e45feedaec",
+      "result_id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d"
+    },
+    {
+      "claim_id": "54efe377-b26e-457a-acfd-9711fb45a418",
+      "result_id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d"
+    },
+    {
+      "claim_id": "07ae41dd-d386-49be-8a9e-086f2eb0ccdd",
+      "result_id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d"
+    },
+    {
+      "claim_id": "78b12d69-80fa-4ad6-b26b-8134c443c2ab",
+      "result_id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d"
+    },
+    {
+      "claim_id": "4f20a5a2-d823-4d67-916a-441e3a03c5e4",
+      "result_id": "3a9ab73c-6acc-4824-96db-e952fa1ae99d"
+    },
+    {
+      "claim_id": "73e5c721-f9e1-4141-bf64-f8a5b269fa58",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "2362ab2b-29e5-4684-a52f-05630b69db2a",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "cdbfbf9f-d549-4be3-bc2e-5e5bca66632d",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "ad5486fd-9be0-4b84-b248-aa6afa7437e4",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "11ecd2be-693a-4e75-a741-0e9b21d54906",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "bbb17c2e-7013-48c7-b413-652bc48c9cbd",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "ac887dd3-306a-49bc-b30d-19610293fedb",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "f942f192-74aa-4cfc-bb8f-2b2d1118349b",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "1e59535d-90ef-4f99-943d-b924a37189af",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "e5ea9458-1eac-499b-9cf5-b4f5ec083166",
+      "result_id": "096efbaa-5881-4067-9fac-c752f84c19de"
+    },
+    {
+      "claim_id": "5a09e752-4093-4e4c-b46b-05f8dbd970ed",
+      "result_id": "eeb80bf1-d293-4154-aa5f-b326af7ea405"
+    },
+    {
+      "claim_id": "aa3de980-39f1-4192-baf5-d1fed1eb00ec",
+      "result_id": "eeb80bf1-d293-4154-aa5f-b326af7ea405"
+    },
+    {
+      "claim_id": "c8825b71-4607-47e9-9e02-be33b53ee186",
+      "result_id": "eeb80bf1-d293-4154-aa5f-b326af7ea405"
+    },
+    {
+      "claim_id": "0756f1ea-af22-4a48-8fb5-febb7d69f5bd",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "43983435-08e3-4c36-a278-dea429b9ccb1",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "4a197cba-05b8-4929-a3e2-cdbf1ff9424c",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "caad5114-08ef-48a9-9d00-ae3f6b33bd15",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "79b97040-cfcd-4613-8965-afeeb8d91c48",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "5596a13f-70f2-4666-947b-ce261fa6caff",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "77fab129-3b30-4e52-93ff-6e7becbacc79",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "857e573d-78f7-451c-8efd-acd23c056f16",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "79e9b0b6-18c4-4ff8-ad53-b6eef927d89f",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "194007a4-d4d0-4b09-b173-126c0f491636",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "9b8ae3fe-a842-40a3-b4ea-4f792d0fd076",
+      "result_id": "e3333391-9f31-4044-bc28-4cbc907cb8ad"
+    },
+    {
+      "claim_id": "837975cd-ee5f-405a-adc9-b8fe6dc936e6",
+      "result_id": "82e8f4b3-2365-4088-8239-63d8d005ac04"
+    },
+    {
+      "claim_id": "1eaa4452-937c-49a7-af65-0b61960052c9",
+      "result_id": "82e8f4b3-2365-4088-8239-63d8d005ac04"
+    },
+    {
+      "claim_id": "461cfa9c-6222-4e07-bb04-b29355e9dbc1",
+      "result_id": "82e8f4b3-2365-4088-8239-63d8d005ac04"
+    },
+    {
+      "claim_id": "67668fed-ec5d-4b4d-8549-4fc42c76145a",
+      "result_id": "82e8f4b3-2365-4088-8239-63d8d005ac04"
+    },
+    {
+      "claim_id": "9435a1c3-2ab9-4817-8ca4-3010b0f2c2c1",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "34bdbdc9-cef8-4cd7-8415-97fe603ab1f1",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "49576752-7744-4781-99d9-67d379f4ee3a",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "a4271f29-a904-405b-bedb-f855bed44fa6",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "8bb1d7fd-81a6-461b-8a84-bc1aced3099f",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "5e967824-aafb-4a8c-aa34-b18df6ec1a4b",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "acc31e48-f607-4f10-845d-7fd114a43777",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "c6bc9834-9ff1-43a0-b4f4-2166a1932f64",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "754fd491-d0c5-4fec-be08-1a54e8d44e0c",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "85012d55-4dc0-463e-b967-e865e5f993c2",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "0187fc69-d067-4c3e-9c1a-c2597331cf9e",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "9abf9006-266d-430f-abd0-546790e57a35",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "b9153c9f-09d8-46fa-aae9-2af4dc7cd883",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "947dac45-d065-4d3b-b7f8-537e5bcb2db0",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    },
+    {
+      "claim_id": "d6b40cf6-cf27-469b-a064-21a0a5a95e89",
+      "result_id": "b25e6db5-2261-49c7-9582-fef3aa8024d4"
+    }
+  ],
+  "comparisons": []
+}

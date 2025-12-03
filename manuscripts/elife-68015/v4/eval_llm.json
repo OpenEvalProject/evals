@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript reports epidemiological statistics for spinal cord injury (SCI) in the USA, including incidence (~18,000 new cases/year), prevalence (250,000-368,000 cases), and estimated lifetime costs ($1.2-5.1 million per patient).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are all supported by citations to the National Spinal Cord Injury Statistical Center (2021). These are background statistics from a reputable source and are appropriately cited. The claims serve to establish the clinical and economic significance of SCI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C40",
+      "C41",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript reviews prior literature on MAP management in SCI, noting that lower post-surgery MAP predicts poor outcomes, current guidelines recommend maintaining MAP >85 mmHg for 7 days, but recent evidence suggests a lower threshold (~75 mmHg) and shorter duration (<5 days) may be appropriate. The rationale for MAP augmentation is based on preventing ischemia, but animal studies show vasopressor-induced hypertension increases hemorrhage risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C40-C41, and C77-C79 are all supported by appropriate citations to prior literature. These claims accurately summarize the current state of knowledge and controversy regarding MAP management in SCI. The authors appropriately acknowledge the limitations of existing evidence (Level 4 evidence from 1990s studies) and cite more recent work suggesting modifications to current guidelines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C51",
+      "C85"
+    ],
+    "result": "The authors demonstrate that topology-based analytics previously used in rodent SCI models can be successfully translated to human data, showing that hypertension during surgery predicts recovery outcomes across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C51, and C85 are supported by citation to prior work (Nielson et al., 2015) and the successful application of similar methods in the current study. The cross-species validation strengthens the translational relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study collected retrospective operating room records from two trauma centers (ZSFG: n=94 patients/98 surgeries; SCVMC: n=33 patients/33 surgeries), with different monitoring frequencies (Q5 vs Q1). After exclusions, 118 patients were included for network analysis and 103 for regression analysis. Data preprocessing included filtering artifacts and downsampling to Q5 intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 describe the data collection and preprocessing methodology. The filtering validation accuracy of 99.1% (C17) provides confidence in data quality. However, the different sampling frequencies between centers and the need for downsampling introduces potential heterogeneity. The exclusion criteria are clearly stated, though the loss of 15 patients due to missing AIS grades (C14) reduces the sample size for confirmatory analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors used Isomap dimensionality reduction with k=6 neighbors and d=4 dimensions, selected based on residual variance and topological persistence metrics. Walktrap clustering with 47 random steps identified 11 patient clusters based on unsupervised analysis of hemodynamic time-series data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21, C58-C59 describe the methodological approach for dimensionality reduction and clustering. The parameter selection is justified using multiple criteria (residual variance, Wasserstein distances, modularity). The unsupervised nature of the analysis (C59) is important for avoiding bias. However, the choice of specific parameters (k=6, d=4, 47 steps) involves some subjective judgment despite the optimization criteria used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C24",
+      "C60",
+      "C61"
+    ],
+    "result": "Exploratory network analysis revealed that patients with neurological recovery (AIS improvement) clustered in regions associated with middle-range MAP values, while patients without recovery showed extreme MAP values (hypotension or hypertension).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C24, C60-C61 describe the key exploratory finding from the network analysis. The unsupervised clustering captured associations between MAP patterns and outcomes. However, this is exploratory analysis requiring confirmatory validation, which the authors appropriately provide through regression analysis. The visual inspection of network patterns is subjective but supported by quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Logistic regression analysis confirmed a non-linear (quadratic) relationship between average MAP (aMAP) and probability of AIS improvement. The quadratic model significantly outperformed the linear model (lower LOOCV error), while cubic and higher-order models showed no additional improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C62-C64 report the confirmatory regression analysis results. The model comparison using likelihood ratio tests and LOOCV is appropriate. The quadratic relationship is statistically significant (p=0.0039, Table 2) and represents a key finding. The comparison with spline models (C63-C64) shows the quadratic model is parsimonious and adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C67"
+    ],
+    "result": "The quadratic relationship between aMAP and AIS improvement remained significant after adjusting for covariates (aHR, surgery length, days to discharge, age, AIS grade at admission). None of the covariates-only model terms were significant, and AIS grades at admission had no significant coefficients in the full model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C67 demonstrate that the MAP-outcome relationship is independent of measured confounders. The covariate analysis (Tables 3-5) shows the quadratic aMAP terms remain significant (p=0.017 and p=0.022) while covariates alone are not significant. This strengthens the causal interpretation, though unmeasured confounders could still exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C50"
+    ],
+    "result": "Subgroup analysis showed the quadratic aMAP relationship was maintained in cervical SCI patients (n=71) but not in non-cervical patients (n=32). This suggests MAP management during surgery may be more important for cervical injuries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C30, C50 report differential effects by injury level. The cervical cohort maintained significance (Table 8), but the non-cervical cohort did not (Table 9). However, the authors appropriately note this must be interpreted with caution due to small sample size (n=32), heterogeneity, and low number of improvers in the non-cervical group. The univariate analysis shows marginal differences (p=0.054, Table 1), and non-cervical patients were significantly less likely to recover (\u03b2=-0.93, p=0.041). This is an important exploratory finding requiring validation in larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In the AIS A at admission subgroup (most severe injuries), the linear aMAP coefficient was significant and the quadratic term approached significance (p=0.14), with a likelihood ratio test p-value of 0.07 comparing linear vs quadratic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 report subgroup analysis in the most severely injured patients. The quadratic term is not statistically significant (p=0.14) and the likelihood ratio test is marginal (p=0.07). This suggests the relationship may hold across injury severity, but the reduced sample size (n=51) limits statistical power. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The relationship between aMAP and AIS improvement is independent of days from surgery to discharge. Days to discharge does not predict improvement (p=0.32), does not interact with MAP (p=0.61, p=0.91), and removing it from the model does not affect fit (p=0.729).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 systematically examine whether hospital length of stay confounds the MAP-outcome relationship. The series of analyses (direct association, reverse causation, interaction, model comparison) all support independence. This is important for establishing that the intraoperative MAP effect is not simply a proxy for overall injury severity or recovery trajectory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "LASSO regression identified optimal MAP ranges of 76-104 mmHg (symmetric, 61.16% accuracy) and 76-117 mmHg (asymmetric, 57.28% accuracy). Network analysis showed similar ranges (73-107 mmHg and 76-116 mmHg). The authors conclude the upper limit is likely between 104-117 mmHg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C33, C73-C75 report the optimal MAP range findings. The LASSO approach is appropriate for feature selection, but the authors acknowledge high multicollinearity, Q5 time estimation, and small sample size as limitations. The prediction accuracies are modest (57-61%), and the difference between symmetric and asymmetric ranges is small (<4% variance explained). The conclusion about the upper limit (C75) is appropriately cautious ('probably anywhere between'). The convergence between exploratory network analysis and confirmatory LASSO is reassuring, but the wide range (104-117 mmHg) reflects uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C47",
+      "C48",
+      "C49",
+      "C81"
+    ],
+    "result": "The study identifies an optimal intraoperative MAP range of 76-[104-117] mmHg associated with neurological recovery. Deviation from this range (hypotension or hypertension) predicts lower probability of recovery. The lower boundary (76 mmHg) supports lowering intervention thresholds from current guidelines (85 mmHg), and the upper boundary (104-117 mmHg) suggests limits to MAP augmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C47-C49, C81 represent the main findings of the study. The optimal range is supported by converging evidence from network analysis, logistic regression, and LASSO. The lower boundary aligns with recent literature (C40, C48), while the upper boundary is a novel finding. However, the wide uncertainty in the upper limit (104-117 mmHg) and modest prediction accuracies (57-61%) indicate these should be considered preliminary targets requiring prospective validation rather than definitive clinical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C76"
+    ],
+    "result": "Prediction models achieved cross-validated AUCs of 0.74 (AIS improvement), 0.88 (AIS A at discharge), and 0.84 (AIS D at discharge). MAP features (quadratic aMAP or time out of range) were important for predicting improvement and AIS A, but not AIS D. Removing MAP features substantially reduced performance for improvement (0.74\u21920.52) and AIS A (0.88\u21920.78) models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C76 report prediction model performance. The AUCs indicate good to excellent discrimination, particularly for AIS A (0.88) and AIS D (0.84). The ablation analysis (C39) demonstrates the importance of MAP features for certain outcomes. The finding that AIS D prediction does not require MAP (C38, C76) is interesting and suggests different recovery mechanisms. However, the models were developed and validated on the same dataset using LOOCV, which may overestimate performance. External validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C82"
+    ],
+    "result": "The manuscript discusses physiological mechanisms: vasopressor-induced hypertension increases hemorrhage risk in injured spinal cord, some vasopressors cause complications, and recent animal studies suggest cardiac-focused treatments (e.g., dobutamine) may be preferable to standard vasopressors (e.g., norepinephrine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C82 discuss mechanistic rationale supported by appropriate citations. These provide biological plausibility for the upper MAP limit finding. However, these are primarily from animal studies and the current manuscript does not directly test these mechanisms or examine vasopressor use.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Patients with cervical SCI present more frequently with hemodynamic and cardiac abnormalities than thoracolumbar SCI due to sympathetic dysregulation, which reduces sympathetic tone causing reduced heart contractility, bradycardia, and hypotension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by citations to prior literature (Lehmann et al., 1987; Myers et al., 2007; Teasell et al., 2000). This provides context for the differential effects by injury level (C29-C30, C50) and is relevant for precision medicine approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study demonstrates methodological contributions: patient similarity networks are useful for exploratory analysis of multidimensional datasets, Isomap combined with topology-based metrics can evaluate embedding solutions, and the workflow captures time-series of different lengths into actionable networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe methodological contributions. The successful application of these methods to clinical data and validation through independent regression analysis supports these claims. However, the generalizability to other clinical contexts remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors acknowledge study limitations including retrospective design, relatively small sample size (though large for SCI), use of estimated AIS grades, difficulty determining AIS grade early after injury, and unmeasured confounders (MAP before/after surgery, vasopressor use).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 appropriately acknowledge important limitations. The retrospective design limits causal inference, the sample size (n=103 for regression) is modest despite being large for SCI, and the estimated AIS grades introduce measurement error. The unmeasured confounders (particularly vasopressor use) are critical limitations that could substantially affect interpretation. These limitations are honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The findings translate animal study results to humans, showing prolonged hypertension early after injury predicts poor recovery. Hemodynamic instability could serve as a prognostic physiology-based biomarker for precision medicine in SCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is supported by the study's findings and prior work (Ehsanian, 2020), representing successful translation from animal models. However, C84 is speculative ('could serve') and requires prospective validation. The potential for precision medicine applications is promising but not yet demonstrated.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20"
+    ],
+    "result": "The study estimated 1,065,200 (95% CI 909,800\u20131,218,000) excess all-cause deaths and 757,600 (95% CI 725,200\u2013788,100) excess respiratory deaths in the United States from March 1, 2020 to January 1, 2022. Official COVID-19 statistics reported 848,866 deaths, representing 80% of estimated all-cause excess deaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19, and C20 are well-supported by the excess mortality analysis using time series approaches applied to US mortality data. The estimates are based on established methods with appropriate confidence intervals, and the comparison with official statistics provides validation. The methodology is clearly described and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "State-specific excess death estimates showed high correlation with SARS-CoV-2 seroprevalence data from CDC surveys. National seroprevalence was 34.6% (range 11.1-47.7% across states) as of late December 2021, with New York and Alabama showing higher than predicted excess mortality relative to seroprevalence, while Illinois and Michigan showed lower than predicted excess mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C33 are supported by correlation analysis between excess mortality estimates and CDC seroprevalence surveys. The validation approach is appropriate and strengthens confidence in the excess mortality estimates. The identification of outlier states (New York, Alabama, Illinois, Michigan) is based on regression analysis and is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The nationwide infection fatality rate (IFR) was estimated at 0.67% (95% CI 0.60\u20130.73%) based on excess respiratory mortality and 0.89% (95% CI 0.77\u20131.02%) based on all-cause excess mortality. The IFR based on official COVID-19 deaths was 0.72% (95%CI 0.62\u20130.81%). Serology correlated more highly with excess respiratory deaths than with official COVID-19 deaths. The IFR was significantly higher in individuals over 65 years at 5.5% (95% CI 4.5\u20136.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by calculations using excess mortality and seroprevalence data. The IFR estimates are derived using appropriate methods (regression without intercept assuming direct correspondence between infection and death rates). The finding that serology correlates better with excess respiratory deaths than official deaths (C37) provides additional validation of the excess mortality approach. Age-stratified analysis is appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C64",
+      "C65",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using generalized additive models (GAM), the study estimated that 84% (95% CI 65\u201394%) of all-cause excess mortality was attributable to the direct impact of SARS-CoV-2 infection. For specific chronic conditions, the direct contribution was estimated at 70% (95% CI 45\u201389%) for Alzheimer's, 70% (95% CI 45\u201393%) for diabetes, and 73% (95% CI 32\u201394%) for heart diseases. COVID-19 deaths were the strongest predictor of excess mortality for these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C64, C65, C73-C75 are supported by GAM regression analysis using covariates for direct (COVID-19 intensity) and indirect (intervention stringency, ICU occupancy) pandemic effects. The statistical approach is appropriate for separating direct and indirect effects. The wide confidence intervals for some estimates (e.g., heart diseases: 32\u201394%) reflect appropriate uncertainty quantification, though they indicate substantial uncertainty in the point estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C77",
+      "C78",
+      "C80",
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "Indirect effects predominated in mortality from external causes and all-cause mortality among individuals under 44 years. Stricter interventions were associated with increased external cause mortality and increased mortality in younger individuals, independently from SARS-CoV-2 infection effects. The trajectory of mortality in the 25-44 year age group was disjoint from COVID-19 circulation patterns and statistically tied to intervention stringency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C77, C78, C80, C97, C103, C104 are supported by GAM regression analysis showing stronger associations with intervention stringency than with COVID-19 intensity for younger age groups and external causes. However, the authors appropriately acknowledge this is an ecological study that cannot prove causality (C106). The Oxford stringency index has known limitations (C192) and the relationships are complex and non-linear (C68, C190).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "During the pandemic period, excess mortality increased for 6 of 7 non-respiratory conditions studied. Cancer was the only condition that did not increase, with deaths remaining below historic levels since March 2020, though cumulative departures from baseline were not significantly different from zero. Mortality from chronic conditions (Alzheimer's, diabetes, heart disease) rose during the pandemic, with trajectories matching respiratory mortality patterns across the 4 pandemic waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by cause-specific excess mortality analysis and temporal correlation analysis. The synchronicity between chronic condition mortality and respiratory mortality (C46) provides evidence for direct COVID-19 effects on these conditions. The finding that cancer mortality did not significantly increase (C44) is appropriately qualified with statistical testing showing no significant difference from zero.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "There was a significant rise in deaths from external causes during the pandemic, corresponding to 102,800 (95% CI 81,400\u2013123,700) cumulative excess deaths nationally. The largest increases were from accidents and injuries (43,600 excess deaths, 12% increase), drug overdoses (25,300 deaths, 16% increase), and assaults and homicides (8,000 deaths, 20% increase). Overdoses peaked first in May 2020, followed by accidents and assaults in July 2020. Suicide mortality remained at historic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C53-C58 are supported by excess mortality analysis of external causes and subcategory analysis. The temporal patterns are clearly documented with appropriate confidence intervals. The finding that suicide mortality remained stable (C58) contrasts with increases in other external causes and is consistent with some prior research cited (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "All-cause excess death rates increased monotonically with age. Individuals 85+ years accounted for 17% of excess mortality, while those under 25 years accounted for 2.1%. Age groups 45-64 and 65-75 years each accounted for a quarter of excess deaths. The ratio of official COVID-19 deaths to excess deaths increased with age, from 13% (95% CI 10\u201319%) in those under 25 years to over 100% in the two oldest age groups. The direct contribution of COVID-19 to excess mortality increased with age, from negative/non-significant in those under 25 years to over 100% in those over 85 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 are supported by age-stratified excess mortality analysis and GAM regression. The age gradient in both excess mortality and the proportion attributable to direct COVID-19 effects is clearly demonstrated. The finding that direct COVID-19 contribution exceeds 100% in the oldest age groups (C93, C96) is appropriately discussed in relation to potential harvesting effects and baseline overestimation (C163-C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "The study found a large mortality burden in individuals 25-44 years, with an estimated 112,200 (100,200\u2013123,100) excess deaths by January 1, 2022. Only 30% of these excess deaths are ascribed to COVID-19 in official statistics. The finding that mortality in this age group is tied to intervention stringency supports a possible detrimental effect of COVID-19 control measures, though the authors acknowledge this is an ecological study that cannot prove causality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C102, C105, C106 are supported by age-stratified analysis and GAM regression. The large excess mortality in young adults with low attribution to direct COVID-19 effects is a striking finding. However, the authors appropriately acknowledge the ecological study design limits causal inference (C106), and the mechanisms remain speculative. The association with intervention stringency is statistical but does not prove causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "During the pandemic period, all-cause mortality became more correlated with excess deaths from respiratory conditions in all 16 states with available respiratory estimates compared to historical patterns. States with high cumulative excess respiratory deaths had concomitantly high all-cause excess mortality (Spearman rho=0.81, 95% CI: 0.48\u20130.94). Synchrony between respiratory and chronic condition mortality increased during the pandemic in a subset of states, particularly for diabetes (8 states), Alzheimer's (5 states), heart diseases (4 states), and cerebrovascular diseases (4 states). Cancer and external causes showed no change or declining synchrony with respiratory mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by correlation and synchronicity analyses comparing pandemic and pre-pandemic periods. The increased correlation between respiratory and chronic condition mortality provides evidence for direct COVID-19 effects on these conditions. The lack of increased synchrony for cancer and external causes (C63) is consistent with the finding that indirect effects predominate for these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Over a 5-month period (November 2020 to March 2021), the mortality burden of COVID-19 was 5.7-fold higher than that of influenza (November 2017 to March 2018) based on all-cause excess mortality at the national level. The median ratio of COVID-19 to influenza excess mortality rates across states was 5.8 (IQR, 5.0\u20137.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 are supported by comparison of excess mortality during COVID-19 and influenza seasons. The comparison is appropriate for providing context on the magnitude of COVID-19 mortality. The authors acknowledge the limitation that influenza seasons are typically 3-4 months while COVID-19 mortality persisted for over 2 years, making direct comparison challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The timing and intensity of mortality varied greatly by state. The first wave was concentrated in Northeastern states, while Southern and Western states experienced mortality increases during later waves. National mortality patterns comprised four waves associated with different SARS-CoV-2 variants: wild-type (waves 1-2), wild-type and Alpha (wave 3), and Delta (wave 4). A recrudescence of mortality in late 2021 was attributable to co-circulation of Delta and Omicron variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 are supported by temporal and geographic analysis of mortality data. The characterization of four waves and their association with different variants is based on established knowledge of variant circulation patterns. The geographic heterogeneity is clearly demonstrated in state-specific data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "All-cause and respiratory disease excess mortality estimates, as well as national estimates, were robust to the choice of the calibration period. State-level analyses of most conditions were also robust, though state-specific estimates for Alzheimer's disease were more sensitive to the calibration period choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C184-C186 are supported by sensitivity analysis shown in Appendix 1\u2014figure 9. The robustness of most estimates to calibration period choice strengthens confidence in the results. The sensitivity of Alzheimer's estimates is appropriately noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The relationship between chronic condition mortality and COVID-19 deaths was non-linear but typically monotonically increasing. Non-pharmaceutical interventions and ICU occupancy were statistically associated with excess mortality, though the relationships were complex. At lower intervention levels (early lockdown in March 2020), excess mortality rose with interventions. Later in the pandemic, increased interventions were estimated to have a beneficial effect on excess mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by GAM regression analysis showing functional relationships between predictors and mortality. The non-linear, curvilinear relationships are appropriately characterized. However, the interpretation of these complex relationships is challenging, and the authors acknowledge limitations of the Oxford stringency index (C192) and the difficulty of separating temporal effects from intervention effects (C194).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C81",
+      "C82"
+    ],
+    "result": "Model fit varied across mortality conditions. The best model fit was for all-cause mortality (R\u00b2=96%) and the worst was for cerebrovascular diseases (R\u00b2=47%). The model for cancer had the worst fit of all conditions studied (R\u00b2=18%), while the model for external causes had an intermediate fit (R\u00b2=58%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C81, C82 are supported by model fit statistics from GAM analysis. The variation in model fit across conditions is appropriately reported and reflects the varying strength of associations between predictors and different mortality outcomes. Poor fit for cancer (C81) is consistent with the finding that cancer mortality did not significantly increase during the pandemic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Across chronic conditions, the first excess mortality peaks occurred within one week of the first respiratory mortality peak on April 18, 2020, with the most pronounced synchronicity patterns observed in the first wave in New York and New Jersey. The peak of excess mortality across chronic conditions was highest during the winter of 2020-21 (third wave).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by temporal analysis of cause-specific mortality peaks. The tight temporal synchrony (within one week) between respiratory and chronic condition mortality peaks provides strong evidence for direct COVID-19 effects on these conditions. The geographic specificity (New York and New Jersey) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C120",
+      "C121"
+    ],
+    "result": "The largest excess mortality rates from external causes were found in states with high baseline death rates from these conditions, showing moderate correlation at the state level. However, the weekly trajectory of mortality from external causes did not align with that of respiratory mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C120, C121 are supported by state-level correlation analysis and temporal analysis. The lack of temporal alignment between external cause and respiratory mortality (C52) supports the interpretation that indirect effects predominate for external causes. The correlation with baseline rates suggests pre-existing vulnerabilities were exacerbated during the pandemic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C85"
+    ],
+    "result": "The contribution of COVID-19 on cerebrovascular disease mortality was not statistically significant at both national and state levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C85 are supported by GAM regression analysis. The lack of statistical significance is consistent with the poor model fit for cerebrovascular diseases (R\u00b2=47%, C72). This finding contrasts with the significant direct effects found for other chronic conditions and may reflect different pathophysiological mechanisms or data quality issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C78"
+    ],
+    "result": "Stricter interventions were associated with a nearly linear increase in external cause mortality and a decline in cancer mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by GAM regression analysis showing functional relationships. However, the poor model fit for cancer (R\u00b2=18%, C81) suggests caution in interpreting the cancer finding. The association between stricter interventions and increased external cause mortality is consistent with the overall finding of indirect effects predominating for external causes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "At the state level, the median proportion of all-cause excess deaths attributed to direct COVID-19 effects was 81% (IQR 63\u201390%). State-level analyses confirmed the direct impact of COVID-19 on Alzheimer's, diabetes, and heart diseases, though effect sizes were generally attenuated compared to national analyses. COVID-19 had a negative effect on mortality from external causes at the state level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C86 are supported by state-level GAM regression analysis. The consistency between state and national analyses strengthens confidence in the findings, though the attenuation of effect sizes at the state level may reflect reduced statistical power or greater heterogeneity. The negative effect of COVID-19 on external cause mortality is consistently found at both national and state levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The rise in mortality from external causes was concentrated in ages 15-44 years, with a notable elevation in May to July 2020 compared to 2019 levels. By mid-2021, external cause mortality had substantially decreased, though some decreases could be attributable to reporting delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by age-stratified analysis of external cause mortality. The temporal pattern with peak in summer 2020 followed by decline is clearly documented. The acknowledgment of potential reporting delays (C100) is appropriate given that external cause data are released with longer lags than other mortality data (C219).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Individuals under 25 years had a low overall excess death rate during the pandemic, but the contribution of indirect pandemic effects was even greater in this age group than in 25-44 year olds. In contrast, individuals over 65 years predominantly suffered from the direct consequences of SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by age-stratified excess mortality analysis and GAM regression. The age gradient in direct vs. indirect effects is clearly demonstrated. The low absolute excess mortality in those under 25 (C107) is consistent with the known age-related risk profile of COVID-19.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "There was strong synchronicity between respiratory mortality and mortality from other conditions during spring 2020, possibly due to poor SARS-CoV-2 test availability and guidelines restricting testing to hospitalized cases in the early pandemic stages. Many deaths in nursing homes or at home during March-April 2020 were never tested and were recorded as known underlying conditions by default. Alzheimer patients, who typically live in long-term care facilities, may have been at increased risk of untested COVID-19 infection early in the pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 are supported by temporal correlation analysis and inference about testing practices and death certification. The explanation for strong early synchronicity based on limited testing is plausible and consistent with known testing limitations in early 2020. However, these claims involve inference about death certification practices rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The correlation between excess mortality from respiratory diseases and Alzheimer's increased in the winter 2020-2021 wave, signaling a persistent direct impact of COVID-19 on Alzheimer's in a period where COVID-19 incidence and testing propensity were high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133 and C134 are supported by temporal correlation analysis. The increased correlation in winter 2020-2021 when testing was more available strengthens the interpretation that the synchronicity reflects true direct COVID-19 effects rather than just testing artifacts. This finding complements the earlier synchronicity observed in spring 2020.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The all-age IFR estimate of 0.67% (95% CI 0.60\u20130.73%) is consistent with a 2020 meta-analysis and an early study from China (0.66%; 95% CI: 0.39\u20131.33%). A study from the Netherlands reported a higher IFR of 1% based on all-cause excess mortality, though all-cause mortality is not specific to COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are supported by comparison with cited prior research. The consistency with prior estimates validates the study's IFR calculation. The acknowledgment that all-cause mortality is less specific than respiratory mortality (C138) appropriately explains why the Netherlands study found a higher IFR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "IFR estimates based on official COVID-19 statistics were 15% higher than those based on excess respiratory mortality, yet official statistics did not correlate with serology data as well as excess mortality estimates. Between-state differences in COVID-19 death coding practices could explain these findings. Overall, excess respiratory mortality (with the COVID-19 specific code) is a robust and specific indicator of the COVID-19 mortality burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 are supported by comparison of IFR estimates using different mortality measures and correlation analysis with seroprevalence. The finding that excess respiratory mortality correlates better with serology than official deaths validates the excess mortality approach. The inference about coding practice differences (C141) is plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C149"
+    ],
+    "result": "New York had a higher than predicted IFR while Michigan had a lower than predicted IFR in the regression of excess mortality against serology. Several factors could drive these differences, including age distribution, long-term care facility outbreaks, early pandemic management knowledge, and waning immunity. Serosurveys in December 2021 could underestimate cumulative infection rates in states with most infections in early 2020. New York remained an outlier in sensitivity analysis using maximum seroprevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143, C144, C145, C146, C149 are supported by regression analysis and sensitivity analysis. The identification of outlier states is data-driven. The proposed explanations for state differences (C145) are plausible but largely speculative. The sensitivity analysis (C149) strengthens the finding that New York is a true outlier rather than an artifact of antibody waning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The roll-out of a large SARS-CoV-2 vaccination campaign starting in December 2020 has had a major impact on rates of hospitalizations and deaths for COVID-19. Yet excess mortality from all causes and respiratory diseases remained elevated throughout 2021, fueled by new variants (Delta and Omicron). COVID-19 mortality is now concentrated among unvaccinated groups, with the highest vaccination rates in older individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 are supported by established knowledge about vaccine effectiveness and temporal analysis of excess mortality data. The persistence of elevated mortality despite vaccination is appropriately attributed to new variants and concentration of mortality among unvaccinated individuals. These claims rely on general knowledge rather than novel analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Excess respiratory mortality started to decouple from chronic condition excess mortality around the time of the Delta wave in summer 2021. Among the oldest and most highly vaccinated age groups, the Delta wave had a proportionally milder impact than the winter 2020-21 wave, while the pattern was reversed in younger age groups. Decoupling is likely due to vaccination rather than a specific variant, though it remains insufficient to obfuscate synchronicity observed during the full study period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 are supported by temporal correlation analysis and age-stratified analysis. The decoupling pattern is consistent with differential vaccination rates by age. The inference that decoupling is due to vaccination rather than variant characteristics (C157) is plausible given the timing and age patterns, though not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "During April-June 2021, mortality from cancer, Alzheimer's, and heart diseases was below baseline (negative excess mortality), with similar patterns in all-cause mortality among individuals 75-84 and 85+ years. These negative excesses could signal mortality displacement (harvesting), whereby frail individuals are harvested by a large-scale infectious disease event, resulting in a decline in baseline mortality afterward. Similar patterns have been associated with heatwaves. Harvesting is consistent with regression analysis where direct COVID-19 impact estimates exceeded 100% in the two oldest age groups. The age profile of COVID-19 severity risk dictates that older individuals would bear the strongest effects of harvesting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C165 are supported by temporal analysis of excess mortality and inference about harvesting mechanisms. The harvesting hypothesis is plausible and supported by citation to prior research on heatwaves (C162). The consistency with regression results showing >100% attribution (C163) strengthens this interpretation. However, alternative explanations exist (C166-C170) and the mechanisms are difficult to definitively separate (C169).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Alternative hypotheses for inflated baseline or estimates exceeding 100% include: (1) repression of non-COVID-19 pathogens during the pandemic due to social distancing, which are implicitly included in the baseline; (2) official COVID-19 deaths capturing deaths with COVID-19 rather than from COVID-19. However, the timing of negative excesses (Spring 2021) is not fully supportive of missed pathogens which predominate in winter. Harvesting and depressed pathogen circulation are inherently difficult to separate. Estimates of direct effects exceed 100% in regression models that ignore official statistics, suggesting mechanisms other than miscoding are at play.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C171 are supported by inference and speculation about alternative mechanisms. The authors appropriately present multiple competing hypotheses and acknowledge the difficulty of separating them (C169). The finding that estimates exceed 100% even in models ignoring official statistics (C171) argues against miscoding as the sole explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Mortality counts below 10 were suppressed due to privacy regulations. As a result, age-specific analyses were restricted to larger states, and the study could not assess the role of race and ethnicity. Prior work has shown important disparities in COVID-19 impact by race/ethnicity and economic status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 appropriately describe methodological limitations due to data suppression. The inability to assess race/ethnicity is a significant limitation given known disparities (C175). This limitation is clearly acknowledged and appropriately attributed to data privacy regulations rather than methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Official coding practices may have changed between states and over time based on testing availability, location of death, demographics, and comorbidities. The study assumed full coverage of death reporting, which may not be valid throughout the US, and did not examine changes in ill-defined codes (R codes). Ill-defined deaths would be captured in all-cause mortality but not cause-specific analyses. Periods of negative excesses in cancer, cardiovascular, and heart diseases may be due to changes in death ascertainment, harvesting, or depressed circulation of endemic pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C182 appropriately describe methodological limitations and potential sources of bias. The speculation about mechanisms for negative excesses (C180-C182) is appropriately qualified as possible explanations. The acknowledgment of assumptions about death reporting coverage (C177) is important for interpreting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C183",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "The choice to fit the model baseline to 2014-2020 data is arbitrary. The model baseline did not account for point-in-time disasters independent of COVID-19 or changes in air pollution. GAM indicate the Oxford stringency index is a dominant predictor of excess mortality from external causes and all-cause mortality in individuals under 45 years, yet the relationships are non-linear and models do not fully capture mortality changes. The Oxford stringency index does not consider actual implementation or effect of interventions. The study assumes intervention impact does not change over time for a given stringency level. Time and intervention stringency are highly conflated. Analyses are aggregated at state/national level while interventions may operate more locally. The study does not account for underlying vulnerability differences between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183, C187-C196 appropriately describe methodological limitations related to baseline modeling and intervention measurement. The limitations of the Oxford stringency index (C192) are important for interpreting the findings about indirect effects. The acknowledgment of confounding between time and stringency (C194) and potential ecological fallacy issues (C195, C196) demonstrates appropriate caution in causal interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C197",
+      "C198"
+    ],
+    "result": "The study ends on January 1, 2022 and does not capture a recrudescence of COVID-19-related deaths due to the Omicron variant. As a result, excess mortality estimates should be deemed conservative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197 and C198 appropriately describe the temporal scope of the study and its implications. The characterization of estimates as conservative (C198) is appropriate given the exclusion of the Omicron wave, which caused substantial mortality in early 2022.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Weekly mortality data are available with a typical lag of 7 weeks. The work was undertaken more than 7 months after the last observation, ensuring little reporting delay. The study did not apply backfilling algorithms. External causes of death are typically released several months later than other conditions, and detailed data are unavailable at weekly resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C216-C220 describe data availability and timing considerations. The 7-month lag between data collection and analysis (C217) appropriately addresses potential reporting delays. The acknowledgment of longer lags for external cause data (C219) is important for interpreting those results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "The nucleocapsid antigen is not a component of vaccines used in the United States, so the serologic assay only captures natural infections. The comparison between excess mortality and serology assumes similar delays between infection and death, and between infection and antibody rise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C221-C223 describe the serologic assay and assumptions in the validation analysis. The specificity of the nucleocapsid assay for natural infection (C221-C222) is appropriate for the study's purposes. The assumption of similar delays (C223) is reasonable but represents a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "The study used linear regression models to estimate seasonal mortality baselines for the pre-pandemic period (August 2014 to March 2020). Baselines were estimated separately for each mortality cause, age group, and state. Models included harmonic terms for seasonality, time trends, and a proxy for weekly influenza incidence. The study explicitly modeled influenza contribution and removed it from the baseline, motivated by large year-to-year variations in influenza mortality. Other pathogens were not explicitly modeled and implicitly became part of the baseline. Since endemic pathogen circulation was greatly reduced during the pandemic, the baseline is likely inflated, leading to conservative excess mortality estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C224-C232 describe the baseline modeling approach. The methodology is appropriate and well-established, supported by citations (C224). The explicit modeling of influenza (C227-C229) is justified by its high variability. The acknowledgment that reduced pathogen circulation may inflate the baseline (C232) demonstrates appropriate consideration of potential biases and their direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239"
+    ],
+    "result": "The model was fitted to data until March 1, 2020 and projected forward to January 1, 2022. Weekly excess mortality was estimated by subtracting predicted baseline from observed mortality. Total excess mortality was the sum of weekly excesses (positive or negative). Block bootstraps were used to generate 95% uncertainty intervals. States missing more than 2 weeks of data were excluded. Respiratory excess mortality analyses were run for 16 states and non-respiratory analyses for 33 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C233-C239 describe the analytical procedures. The methods are appropriate and clearly described. The use of block bootstraps for uncertainty quantification (C236) is appropriate for time series data. The exclusion criteria for states with missing data (C237) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248"
+    ],
+    "result": "The study tested whether weekly respiratory excess mortality became increasingly correlated with other causes of death during the pandemic compared to pre-pandemic periods. An increase in correlation would signal a direct but undetected effect of COVID-19 on non-respiratory mortality. The study assessed whether states with high cumulative COVID-19 mortality experienced high mortality from other causes. The study regressed weekly excess mortality against COVID-19 deaths, health containment index, and ICU use. GAM were used to allow for non-linear effects. Models were run separately for each cause of death, nationally and by state, and for each age group. Uncertainty in excess mortality estimates was propagated into regression models. Attributable fractions were obtained by resampling from models after setting covariates to minimum values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C240-C248 describe the analytical approach for estimating direct and indirect effects. The multi-pronged approach (correlation analysis, state-level comparison, regression modeling) is appropriate for addressing the research question. The use of GAM to allow non-linear effects (C245) is appropriate given the complex relationships. The method for calculating attributable fractions (C248) is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "The study regressed cumulative excess respiratory mortality rates against SARS-CoV-2 seroprevalence estimates at the state level using a model without intercept, assuming direct correspondence between infection and death rates. The validation analysis was repeated with all-cause excess mortality, official COVID-19 deaths, and excess mortality in individuals over 65 years. The IFR was estimated based on the slope of the regression. Errors in excess mortality and seroprevalence estimates were propagated into IFR estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C249-C253 describe the validation analysis and IFR estimation. The use of a model without intercept (C250) is justified by the assumption of direct correspondence between infection and death rates. The propagation of uncertainty (C253) is appropriate. The validation using multiple mortality measures (C251) strengthens confidence in the results.",
+    "result_type": "MINOR"
+  }
+]

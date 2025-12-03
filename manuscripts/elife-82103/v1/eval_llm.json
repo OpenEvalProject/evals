@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C61",
+      "C63"
+    ],
+    "result": "At P8 and P12, neural activity in M2 and mPFC is modulated by behavioral state, with significantly higher firing rates and spindle burst rates during active sleep (AS) compared to wake. This state-dependent modulation is similar to that previously observed in M1 and S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C26, C27, C61, and C63 collectively demonstrate state-dependent modulation in M2 and mPFC with appropriate statistical support (t-tests with p \u2264 0.016, Cohen's D \u2265 1.12 at P12; p \u2264 0.007, Cohen's D \u2265 1.35 for spindle bursts at P8). The data are illustrated in Figures 2 and 3 and show consistent patterns across both ages and all three cortical areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Neural activity in M1, M2, and mPFC increases during periods of limb movement regardless of behavioral state, with the highest firing rates during AS-related movement (twitching). Repeated-measures ANOVAs revealed significant main effects of both behavioral state and movement on firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28, C29, C30, and C31 are supported by repeated-measures ANOVAs showing significant main effects of behavioral state (F \u2265 16.90, p \u2264 0.005, \u03b7p\u00b2 \u2265 0.71) and movement (F \u2265 6.83, p \u2264 0.035, \u03b7p\u00b2 \u2265 0.49). The pattern of results from 31 of 32 planned comparisons (p \u2264 0.01, Cohen's D \u2265 1.24) supports the hierarchical pattern of firing rates described in C31.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Neurons in M2 and mPFC respond to sensory input from twitches, wake movements, and manual stimulations, with response profiles similar to M1. The proportion of responsive units is highest in M1, intermediate in M2, and lowest in mPFC at both P8 and P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C38, C62, C64, and C65 are supported by experimental data showing sensory responses in all three areas. Statistical comparisons (t-tests with p \u2264 0.017, Cohen's D \u2265 1.11) confirm the gradient of responsiveness across areas. The temporal profiles (peaks after events) support the interpretation of sensory responding. However, the claim that movement-related activity is 'driven by' sensory feedback (C5) is an inference that could benefit from additional causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "M1 and M2 show comparable activation rates to sensory events at both P8 and P12, while mPFC generally shows lower activation rates than M1, particularly for wake movements and stimulations at P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by statistical analyses comparing activation rates across areas. The 30% threshold for defining area activation is justified by prior work (Glanz et al., 2021). Statistical tests appropriately compare areas (t-tests with Bonferroni correction, p \u2264 0.017), though the choice of the 30% threshold could be better justified in the current context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Spindle bursts in M1, M2, and mPFC are associated with sensory events. In M1 and M2, spindle bursts reliably follow all three types of sensory events (twitches, wake movements, stimulations), while in mPFC they reliably follow wake movements and stimulations but not twitches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by statistical comparisons to shuffled data (t-tests with p \u2264 0.004, Cohen's D \u2265 0.93 for significant associations). The null result for twitches in mPFC (C48, t(7) = 2.16, p > 0.05) is appropriately reported. The analysis method (500 ms window before spindle burst onset) is reasonable, though the choice of window duration could be better justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C74",
+      "C75"
+    ],
+    "result": "Individual sensory events did not reliably trigger contemporaneous unit activity between M1 and M2 or between M1 and mPFC above chance levels, suggesting that the pathways conveying sensory input to M2 and mPFC differ from those reaching M1 and S1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C50, C74, and C75 report a null result without providing the actual data or statistical tests ('data not shown'). While the inference about distinct pathways (C50, C75) is logical given the null result, the lack of reported data makes it impossible to evaluate the quality of the analysis or rule out methodological issues. The claim that response profiles are 'strikingly similar' (C74) appears to contradict the null result for contemporaneous activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C66",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Urethane anesthesia (1.0 mg/g b.w.) at P8 eradicates sleep-wake cycling, suppresses limb movements by ~87%, reduces neural firing rates by >85%, dramatically reduces spindle burst rates, and produces a burst-suppression pattern characteristic of deep anesthesia. These effects demonstrate that urethane is not a suitable proxy for natural sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60, C66, C84-C86 are supported by experimental data with appropriate statistical comparisons between urethane and saline groups. The effects on movement (t(5) = 11.90, p < 0.001, Cohen's D = 4.86), firing rates (t(10) \u2265 3.83, p \u2264 0.003, Cohen's D \u2265 2.21), spindle bursts (t(10) \u2265 3.18, p \u2264 0.01, Cohen's D \u2265 1.83), and ISI distributions (t(5) \u2265 3.36, p \u2264 0.007, Cohen's D \u2265 1.94) are all statistically significant with large effect sizes. The sample sizes are adequate (n=6-7 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "At P8, pups spent 57.7 \u00b1 2.5% of time in AS and 30.9 \u00b1 1.9% in wake; at P12, they spent 44.0 \u00b1 3.6% in AS and 39.3 \u00b1 3.5% in wake. A developmental transition from discontinuous to continuous cortical activity was evident in all three areas between P8 and P12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 report basic behavioral and developmental observations that are consistent with prior literature (cited in C21-C22) and are illustrated in the figures. These are straightforward descriptive findings that establish the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "State-dependent neuromodulation and sensory responsiveness are proposed as general features of developing cortex, suggesting that the early functional development of primary and higher-order cortical areas may be more similar than currently appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C90, C93, and C94 are reasonable inferences from the experimental findings showing similar state-dependent modulation and sensory responsiveness across M1, M2, and mPFC. However, these are generalizations based on a limited set of cortical areas at two developmental time points. The claims would be strengthened by data from additional cortical regions and ages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The decreasing sensory responsiveness across M1, M2, and mPFC likely reflects their decreasing somatotopic homogeneity. It is proposed that multimodal sensory input to prefrontal cortex may enable the development of functional heterogeneity, while unimodal input to primary sensory areas enables somatotopic homogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C77, C79, C80, and C81 present hypotheses about the relationship between sensory input patterns and cortical organization. While the gradient of responsiveness is well-documented (C76), the mechanistic claims about how different input patterns shape development (C80, C81) are speculative and not directly tested. The expectation of multimodal responses in mPFC (C79) is reasonable but untested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Anesthesia in infant animals is not a suitable proxy for natural sleep or sleep-related neural activity and is incompatible with understanding brain-behavior relations in early development. Extreme caution is warranted when interpreting results from anesthetized infant animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are reasonable inferences based on the experimental findings showing profound effects of urethane on behavior and neural activity (C51-C60). The conclusions are supported by citations to similar findings in adults (Akeju and Brown, 2017; Mondino et al., 2022). However, the generalization to all anesthetics and all developmental studies may be overly broad.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The development of prefrontal cortex may be influenced by more than intrinsic activity alone, and the early activity in PFC may not be related in obvious ways to its higher-order functions in adults, similar to the sensory foundations of motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 are reasonable hypotheses based on the experimental findings and the analogy to M1 development (supported by citations). However, these are speculative claims about developmental mechanisms that are not directly tested in this study. The findings challenge the theory that PFC develops independently of sensory input (C16) but do not definitively establish alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about prior work establish that: (1) behavioral state modulates neural activity in developing sensorimotor systems including M1; (2) M1 functions as a sensory structure in early development; (3) M1 forms connections with M2 and mPFC; (4) M2 integrates sensory cues and develops a somatotopic map; (5) mPFC in adults is associated with cognitive functions; and (6) prior studies of mPFC development used urethane anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6-C12, C14, C16-C20 are background claims supported by appropriate citations to prior literature. These establish the context and rationale for the current study. The accuracy of these claims depends on the cited literature, which appears appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C15"
+    ],
+    "result": "The study addresses gaps in knowledge by testing the hypothesis that M2 is similar to M1 with respect to sensory responsiveness and behavioral state modulation, and by investigating whether behavioral state modulates activity in mPFC and whether mPFC processes sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C15 clearly state the hypotheses and knowledge gaps that motivated the study. These are appropriate research questions given the prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C78",
+      "C82",
+      "C83",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion claims about mechanisms, comparative anatomy, and future directions note that: (1) state-dependent release of neuromodulators in infants is unknown; (2) parallel sensory input to primary and higher-order areas occurs in developing visual and sensorimotor systems; (3) M2 has coarser somatotopy than M1 while mPFC lacks somatotopy; (4) there is ongoing debate about rodent-primate PFC homology; and (5) a developmental-comparative approach may clarify PFC evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73, C78, C82, C83, C95, and C96 are discussion points supported by appropriate citations. These place the findings in broader context and identify important open questions. The claims are appropriately qualified as speculative or uncertain where evidence is lacking.",
+    "result_type": "MINOR"
+  }
+]

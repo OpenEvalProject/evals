@@ -1,0 +1,826 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "DOGG consisted of 7047 proteomes (rows) and 10,177 OGGs (columns), where each entry is the number of times an OGG was observed in a proteome.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting data matrix, DOGG, consisted of 7047 proteomes (rows) and 10,177 OGGs (columns), where each entry is the number of times an OGG was observed in a proteome (Figure 1A, Materials and methods; Huerta-Cepas et al., 2017; Huerta-Cepas et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the construction of the data matrix DOGG with specific dimensions and content, supported by citations to methods and prior work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Bacteria sharing the same phylum clustered together on SVD1 through SVD4.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that bacteria sharing the same phylum clustered together on SVD1 through SVD4 suggesting that the most dominant patterns of bacterial variation arise from phylogeny (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The observation is directly stated and supported by reference to Figure 1C showing the clustering pattern.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The most dominant patterns of bacterial variation arise from phylogeny.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that bacteria sharing the same phylum clustered together on SVD1 through SVD4 suggesting that the most dominant patterns of bacterial variation arise from phylogeny (Figure 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an interpretation of the clustering pattern observed in the SVD analysis, supported by the data shown in Figure 1C.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "SVD1 to SVD4 explained only 17% of the overall data variance.",
+    "claim_type": "EXPLICIT",
+    "source": "Taken together, SVD1 to SVD4 explained only 17% of the overall data variance, motivating us to ask what information lies in the remaining data variance\u2014more phylogenetic signal, functional signal, or noise?",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the percentage of variance explained by the first four SVD components.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Strong phylogenetic signals confound PPI inference using comparative genomics.",
+    "claim_type": "EXPLICIT",
+    "source": "These observations are consistent with prior reports that strong phylogenetic signals confound PPI inference using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The top tens of components contained phylogenetic information, the top hundreds contained indirect PPI information, and the top thousands contained direct PPI information.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that the information for the different types of benchmarks was distributed distinctly across the SVD spectrum. The top tens of components contained phylogenetic information, the top hundreds contained indirect PPI information, and the top thousands contained direct PPI information (Figure 3A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly describes the distribution of different types of biological information across the SVD spectrum, supported by Figure 3A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "SVD components 2996 through 3000 harboring 0.025% data variance contain non-random biological information reflecting direct PPIs.",
+    "claim_type": "EXPLICIT",
+    "source": "Even SVD components 2996 through 3000 harboring 0.025% data variance contain non-random biological information reflecting direct PPIs (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states that these deep components contain biologically meaningful information, supported by statistical analysis shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Beyond component 3000, the MI shared between protein spectral correlations and PPIs converged to the estimation of background MI.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond component 3000, the MI shared between protein spectral correlations and PPIs converged to the estimation of background MI.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the convergence to background MI beyond component 3000.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Global to local patterns of bacterial covariation reflect an intuitive hierarchy of biological scale\u2014phylogeny, pathway, protein complex.",
+    "claim_type": "EXPLICIT",
+    "source": "These results show that global to local patterns of bacterial covariation reflect an intuitive hierarchy of biological scale\u2014phylogeny, pathway, protein complex.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary interpretation of the results presented in Figure 3, describing the hierarchical organization of biological information across the SVD spectrum.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The ordering of distributions across the SVD spectrum was robust to subsampling DOGG to account for uneven phylogenetic distributions of bacterial strains in the UniProt database.",
+    "claim_type": "EXPLICIT",
+    "source": "The ordering of these distributions across the SVD spectrum was robust to subsampling DOGG to account for uneven phylogenetic distributions of bacterial strains in the UniProt database (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the robustness of the results to subsampling, supported by Figure 3\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "75 proteins were spectrally correlated with FliC in E. coli K12.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that 75 proteins were spectrally correlated with FliC (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the number of proteins correlated with FliC, supported by Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "At a spectral depth of 50, a single densely connected network devoid of obvious substructure was observed.",
+    "claim_type": "EXPLICIT",
+    "source": "At a spectral depth of 50, we observed a single densely connected network devoid of obvious substructure (Figure 6A, top panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly describes the network structure at spectral depth 50, supported by Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The network at spectral depth 50 was enriched for functional terms related to 'flagellar system' (p<10\u201345).",
+    "claim_type": "EXPLICIT",
+    "source": "Gene-set enrichment analysis (GSEA) indicated that this network was enriched for functional terms related to 'flagellar system' (p<10\u201345; Huang et al., 2009a; Huang et al., 2009b, Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the GSEA results with a specific p-value, supported by citations to the GSEA method.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "At spectral depth of 300, the network fractured into four discrete subnetworks enriched for 'chemotaxis signaling', 'flagellum', 'LPS biosynthesis', or 'cyclic di-GMP signaling'.",
+    "claim_type": "EXPLICIT",
+    "source": "Progressing to spectral depth of 300, we observed that the network at 50 fractured into four discrete subnetworks (Figure 6A, middle panel). These subnetworks were significantly enriched for terms related to 'chemotaxis signaling' (p<10\u201315), 'flagellum' (p<10\u201356), 'LPS biosynthesis' (p<10\u20133), or 'cyclic di-GMP signaling' (p<10\u201321).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly describes the network structure and enrichment results at spectral depth 300, supported by Figure 6A and GSEA analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "At spectral depth of 1000, the subnetworks fractured further yielding 9 discrete subnetworks.",
+    "claim_type": "EXPLICIT",
+    "source": "Progressing to spectral depth of 1000, the subnetworks at 300 fractured further yielding 9 discrete subnetworks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of subnetworks at spectral depth 1000.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "44 of 55 of the proteins listed in the KEGG hierarchy also appeared in the statistical hierarchy.",
+    "claim_type": "EXPLICIT",
+    "source": "First, 44 of 55 of the proteins listed in the KEGG hierarchy also appeared in the statistical hierarchy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the overlap between the KEGG hierarchy and the statistical model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "7 of the 12 categories listed in the KEGG hierarchy had a one-to-one correspondence with a subnetwork of the statistical model sharing an overlapping set of proteins and similar descriptive label.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, 7 of the 12 categories listed in the KEGG hierarchy had a one-to-one correspondence with a subnetwork of the statistical model sharing an overlapping set of proteins and similar descriptive label.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the correspondence between KEGG categories and statistical subnetworks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The statistical hierarchy included subnetworks related to cyclic-di-GMP signaling and LPS biosynthesis which were absent from the KEGG hierarchy.",
+    "claim_type": "EXPLICIT",
+    "source": "The most striking difference was that our statistical hierarchy included subnetworks related to cyclic-di-GMP signaling and LPS biosynthesis which were absent from the KEGG hierarchy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the differences between the statistical and KEGG hierarchies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Prior experimental studies have provided direct genetic evidence that cyclic-di-GMP signaling and LPS biosynthesis systems are involved in E. coli K12 motility.",
+    "claim_type": "EXPLICIT",
+    "source": "Prior experimental studies have provided direct genetic evidence that these systems are involved in E. coli K12 motility (Paul et al., 2010; Walker et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites prior experimental studies supporting the involvement of these systems in motility.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Of the 75 proteins in the hierarchical model of E. coli K12 motility, 44 (59%) were represented in the KEGG hierarchy, 28 (37%) were missing from the KEGG hierarchy but supported by prior experimental evidence in the literature, and only 3 (4%) remained unvalidated.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, of the 75 proteins in our hierarchical model of E. coli K12 motility, 44 (59%) were represented in the KEGG hierarchy, 28 (37%) were missing from the KEGG hierarchy but supported by prior experimental evidence in the literature, and only 3 (4%) remained unvalidated (CsgG, PpdD, TorS; Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly provides the breakdown of validation for proteins in the model.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Four uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) were included in the pilus subnetwork that had not previously been associated with PilA in P. aeruginosa.",
+    "claim_type": "EXPLICIT",
+    "source": "Four uncharacterized proteins (Q9I5G6, Q9I5R2, Q9I0G2, Q9I0G1) were included in the pilus subnetwork that had not previously been associated with PilA in P. aeruginosa (Figure 7BSupplementary file 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly identifies four uncharacterized proteins in the pilus subnetwork, supported by Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Two different transposon mutants of Q9I5G6 exhibited significantly reduced pilus-based motility over 24, 48, and 72 hr compared to the parent strain (p<10\u20134 by Dunnett's multiple comparisons test).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, we found that two different transposon mutants of Q9I5G6 exhibited significantly reduced pilus-based motility over 24, 48, and 72 hr compared to the parent strain (Figure 7C, p<10\u20134 by Dunnett's multiple comparisons test).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the experimental results with statistical significance, supported by Figure 7C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Flagellar-based motility of the transposon mutants in Q9I5G6 was not significantly different from that of the parent strain (p>0.05).",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, flagellar-based motility of the transposon mutants in Q9I5G6 was not significantly different from that of the parent strain (Figure 7C\u2014inset, p>0.05).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the experimental results with statistical significance, supported by Figure 7C inset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Q9I5G6 is a previously unappreciated effector of directed motility in P. aeruginosa that specifically impacts twitch-based motility.",
+    "claim_type": "EXPLICIT",
+    "source": "These results illustrate that Q9I5G6 is a previously unappreciated effector of directed motility in P. aeruginosa that specifically impacts twitch-based motility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results showing specific effects on twitch motility but not flagellar motility.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The experimental results represent a statistically significant enrichment (25% association rate, p<10\u20134 by chi-squared) compared to the background expectation of finding a protein that affects twitch motility.",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to the background expectation of finding a protein that affects twitch motility (22 'pilus assembly proteins' in BRITE KO02035 out of 5564 proteins in the PAO1 proteome equating to a 0.4% background rate of association), our experimental results represent a statistically significant enrichment (25% association rate, p<10\u20134 by chi-squared).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly provides the statistical comparison between the observed and expected rates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Predictions based on windowed spectral correlations produced significantly greater F-scores for all three interaction classes compared to 18 alternative methods in all four validation tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "We found that our predictions based on windowed spectral correlations produced significantly greater F-scores for all three interaction classes compared to 18 alternative methods in all four validation tasks (Figure 8A, Figure 8\u2014figure supplement 3, statistical comparisons by Wilcoxon rank-sum test).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the comparison results with statistical testing, supported by Figures 8A and 8\u2014figure supplement 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The tuned performance of SVD-phy on either interaction class was inferior compared to the method of windowed spectral correlations.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, the tuned performance on either class was inferior compared to our method of windowed spectral correlations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the comparison of performance metrics between SVD-phy and the windowed spectral correlations method.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The windowed spectral correlations approach exhibited significantly greater precision and recall compared to the Coev+ method for predicting direct PPIs in M. tuberculosis H37Rv.",
+    "claim_type": "EXPLICIT",
+    "source": "Using the direct PPIs for Mycobacterium tuberculosis H37Rv found in the STRING database as a benchmark, we found that our approach exhibited significantly greater precision and recall whether using the STRING composite score (as done by Cong et al.) or the STRING experimental subscores (Figure 8D, Materials and methods).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the comparison results, supported by Figure 8D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Cellular behaviors emerge from layers of molecular interactions: proteins interact to form complexes, pathways, and phenotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Cellular behaviors emerge from layers of molecular interactions: proteins interact to form complexes, pathways, and phenotypes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about biological organization presented in the abstract.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria and that these networks reflect the emergence of complex bacterial phenotypes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main claim of the study presented in the abstract, summarizing the overall approach and findings.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The hierarchical networks reflect the emergence of complex bacterial phenotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that hierarchical networks of protein interactions can be defined from the statistical pattern of proteome variation measured across thousands of diverse bacteria and that these networks reflect the emergence of complex bacterial phenotypes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main claim of the study presented in the abstract, describing the biological relevance of the networks.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The results are validated through gene-set enrichment analysis and comparison to existing experimentally derived databases.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results are validated through gene-set enrichment analysis and comparison to existing experimentally derived databases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the validation approach used in the study, presented in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "A model of motility in Pseudomonas aeruginosa was created and used to identify a protein that affects pilus-mediated motility.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate the biological utility of our approach by creating a model of motility in Pseudomonas aeruginosa and using it to identify a protein that affects pilus-mediated motility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the experimental validation of the method, presented in the abstract.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "SCALES may be useful for interrogating genotype-phenotype relationships in bacteria.",
+    "claim_type": "EXPLICIT",
+    "source": "Our method, SCALES (Spectral Correlation Analysis of Layered Evolutionary Signals), may be useful for interrogating genotype-phenotype relationships in bacteria.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the potential utility of the method, presented in the abstract.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Complex behaviors emerge from layers of protein interactions: proteins interact to form complexes, complexes interact to form pathways, and pathways interact to create phenotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Biochemical and genetic studies have illustrated that complex behaviors emerge from layers of protein interactions: proteins interact to form complexes, complexes interact to form pathways, and pathways interact to create phenotypes (Papin et al., 2004; Ravasz, 2009; Nurse, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about biological organization supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Experimental methods for identifying protein-protein interactions are rapidly becoming more high-throughput and comprehensive.",
+    "claim_type": "EXPLICIT",
+    "source": "Experimental methods are rapidly becoming more high-throughput and comprehensive (Rajagopala et al., 2014; Schoenrock et al., 2017; H\u00e4user et al., 2014; Koo et al., 2017; Luck et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of experimental methods supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Computational methods based on statistical patterns of co-occurrence or co-proximity of functionally related genes first appeared shortly after publication of whole genome sequences and are an active area of research.",
+    "claim_type": "EXPLICIT",
+    "source": "Computational methods based on statistical patterns of co-occurrence or co-proximity of functionally related genes first appeared shortly after publication of whole genome sequences and are an active area of research (Eisen, 2017; Pellegrini et al., 2017; Enright et al., 2017; Valencia and Pazos, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the history and current state of computational methods supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Recent efforts have advanced the state-of-the-art in computational methods by incorporating evolutionary models (phylogenomics), interaction models borrowed from statistical physics, or spectral methods borrowed from signal processing.",
+    "claim_type": "EXPLICIT",
+    "source": "More recent efforts have advanced the state-of-the-art in computational methods by incorporating evolutionary models (phylogenomics), interaction models borrowed from statistical physics, or spectral methods borrowed from signal processing (Nagy et al., 2020; Franceschini et al., 2016; Moi et al., 2020; Croce et al., 2019; Cong et al., 2019; Green et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about recent advances in computational methods supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "While higher-order interactions can be inferred from pairwise interactions, recent experimental evidence shows that such inferences are incomplete.",
+    "claim_type": "EXPLICIT",
+    "source": "While higher-order interactions can be inferred from pairwise interactions, recent experimental evidence shows that such inferences are incomplete (Kuzmin et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of inferring higher-order interactions from pairwise interactions, supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Both pairwise and higher-order interactions can be extracted from coevolutionary statistics to create a single multi-scale hierarchical model describing the emergence of complex phenotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Using bacteria as a model, here we show that both pairwise and higher-order interactions can be extracted from coevolutionary statistics to create a single multi-scale hierarchical model describing the emergence of complex phenotypes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a main claim of the study presented in the introduction, summarizing the overall approach.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "All bacterial proteomes from the UniProt Reference Proteome Database were downloaded on May 20, 2020.",
+    "claim_type": "EXPLICIT",
+    "source": "To broadly sample extant bacterial diversity, we downloaded all bacterial proteomes from the UniProt Reference Proteome Database (UniProt Consortium, 2019; downloaded May 20, 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the data source and download date.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The percent variance explained by the SVD spectrum follows a power-law distribution with exponent \u03b3 = -0.89.",
+    "claim_type": "EXPLICIT",
+    "source": "Percent variance explained versus spectral component (singular value decomposition ['SVD] component') number; fit is to a power-law distribution with the indicated exponent (\u03b3).",
+    "source_type": [
+      "IMAGE"
+    ],
+    "evidence": "Figure 1B shows the fit to a power-law distribution with the indicated exponent.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The variance of the distribution of spectral correlations decreased rapidly as the correlation window widened until a width of 100 components.",
+    "claim_type": "EXPLICIT",
+    "source": "The variance of this distribution decreased rapidly as the correlation window widened until a width of 100 components. This motivated our choice of computing spectral correlations over sets of 100 components (Figure 4\u2014figure supplement 1A, B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the observation and its implication for choosing the window width, supported by Figure 4\u2014figure supplement 1A, B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Distributions of all-by-all spectral correlations between E. coli K12 proteins across windows centered on different regions of the SVD spectrum were superimposable.",
+    "claim_type": "EXPLICIT",
+    "source": "We computed distributions of all-by-all spectral correlations between E. coli K12 proteins across windows centered on different regions of the SVD spectrum and found them to be superimposable (Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the observation, supported by Figure 4\u2014figure supplement 1C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Distributions of all-by-all spectral correlations for proteins from diverse bacteria were superimposable with those derived from E. coli K12.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we computed such distributions for proteins from other diverse bacteria and found them to be superimposable with those derived from E. coli K12 (Figure 4\u2014figure supplement 1D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the observation, supported by Figure 4\u2014figure supplement 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "A constant threshold for significant spectral correlations between two proteins across any 100-component SVD window was defined at 0.29 associated with a p-value of 0.018.",
+    "claim_type": "EXPLICIT",
+    "source": "The p-value derived from the empirical cumulative distribution function of this model decreased rapidly until a threshold value of 0.29 (Figure 4\u2014figure supplement 1E). Therefore, we chose the value of 0.29 associated with a p-value of 0.018 as the threshold of spectral correlations signifying functional interactions between proteins derived from any bacterial proteome within any region of the SVD spectrum.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript explicitly states the threshold value and its associated p-value, supported by Figure 4\u2014figure supplement 1E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "A precomputed database of proteome-wide indirect (122,725,727) and direct (19,546,063) PPI predictions for all 7047 UniProt reference bacterial proteomes has been developed.",
+    "claim_type": "EXPLICIT",
+    "source": "Having shown that SCALES can be useful for guiding biological discovery, we have developed the following resources: (i) a precomputed database of proteome-wide indirect (122,725,727) and direct (19,546,063) PPI predictions for all 7047 UniProt reference bacterial proteomes; (ii) a tool for predicting indirect and direct PPIs for a user-input proteome; (iii) a tool for generating and interrogating a hierarchical model for a query protein of interest. All of these can be found at scales.cri.uchicago.edu.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the resources developed and made available.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The admixture of signals arising from phylogeny, function, and noise negatively impact the accuracy of PPI predictions using comparative genomics.",
+    "claim_type": "EXPLICIT",
+    "source": "The admixture of signals arising from phylogeny, function, and noise negatively impact the accuracy of PPI predictions using comparative genomics (Sch\u00e4fer and Strimmer, 2005; Sul et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a known challenge in comparative genomics, supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Relevant biological signal is contained throughout the SVD spectrum, including components harboring a minutiae of data variance.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our results also illustrate that relevant biological signal is contained throughout the SVD spectrum, including components harboring a minutiae of data variance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the results showing biological information in deep SVD components.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Percent variance per component is not a good proxy for relevant biological signal.",
+    "claim_type": "EXPLICIT",
+    "source": "These results demonstrate that percent variance per component is not a good proxy for relevant biological signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the observation that deep components with low variance contain biologically meaningful information.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "AA Coev represented a significant advance for two reasons: (i) it considered coevolution at the resolution of amino acids and (ii) it applied DCA to entire bacterial proteomes.",
+    "claim_type": "EXPLICIT",
+    "source": "Their method represented a significant advance for two reasons: (i) it considered coevolution at the resolution of amino acids and (ii) it applied DCA, to entire bacterial proteomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the advances made by the AA Coev method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "AA Coev is computationally expensive and has been applied to just two organisms thus far.",
+    "claim_type": "EXPLICIT",
+    "source": "A striking difference between the two approaches is related to computational scalability. AA Coev is computationally expensive and, as a result, has been applied to just two organisms thus far.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational limitations of the AA Coev method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The SCALES approach can compute proteome-wide PPIs in a matter of minutes.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, we note that our approach can compute proteome-wide PPIs in a matter of minutes, enabling us to provide predictions for all 7047 UniProt Reference Proteomes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the computational efficiency of the SCALES method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Many proteins have no annotated OGG\u2014for example, 295 of the ~4000 E. coli K12 proteins (6.7%).",
+    "claim_type": "EXPLICIT",
+    "source": "First, many proteins have no annotated OGG\u2014for example, 295 of the ~4000 E. coli K12 proteins (6.7%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the method related to OGG annotation coverage.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Proteins with no annotated OGG cannot be assigned to interactions or units of function by the SCALES method.",
+    "claim_type": "EXPLICIT",
+    "source": "These proteins cannot be assigned to interactions or units of function by our method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the method for proteins without OGG annotations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Many proteins share the same OGGs and appear to interact at all spectral depths.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, many proteins share the same OGGs and appear to interact at all spectral depths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of the method related to proteins sharing OGGs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The SCALES methods are inherently 'mechanism-free': they leverage evolutionary constraint without knowledge of the specific pressures driving the selection of interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation of the methods developed here is that they are inherently 'mechanism-free': they leverage evolutionary constraint without knowledge of the specific pressures driving the selection of interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a conceptual limitation of the method.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The SCALES methods identify functionally relevant interactors but cannot reveal their collective function or the detailed molecular basis of the interactions.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, our methods identify functionally relevant interactors but cannot reveal their collective function or the detailed molecular basis of the interactions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the limitations of what the method can reveal.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "SCALES represents a statistical way to describe emergence\u2014the integration of individual components into layers of collective units of function.",
+    "claim_type": "EXPLICIT",
+    "source": "However, aside from these practical considerations, SCALES represents a statistical way to describe emergence\u2014the integration of individual components into layers of collective units of function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the conceptual contribution of SCALES.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The property of emergence spans biological systems, from proteins to ecosystems.",
+    "claim_type": "EXPLICIT",
+    "source": "The property of emergence spans biological systems, from proteins to ecosystems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the generality of the concept of emergence in biology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "SCALES may be a generally useful approach to learning the hierarchical architecture of biological systems.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, while it remains to be tested, it may be true that SCALES is a generally useful approach to learning the hierarchical architecture of biological systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the potential generalizability of SCALES.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

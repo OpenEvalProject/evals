@@ -1,0 +1,1914 @@
+{
+  "submission": {
+    "id": "fc21f69e-f00e-40ae-bda2-ac15ba86356c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:04:48.456477Z",
+    "updated_at": "2025-12-03T13:04:48.456477Z"
+  },
+  "content": [
+    {
+      "id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "submission_id": "fc21f69e-f00e-40ae-bda2-ac15ba86356c",
+      "content_type": "manuscript",
+      "content_text": "# T cells discriminate between groups C1 and C2 HLA-C\n\n## Authors\n\n- Malcolm J W Sim<sup>1</sup> ([ORCID: 0000-0003-3407-9661](https://orcid.org/0000-0003-3407-9661)) \u2020\n- Zachary Stotz<sup>1</sup>\n- Jinghua Lu<sup>1</sup>\n- Paul Brennan<sup>1</sup>\n- Eric O Long<sup>1</sup> ([ORCID: 0000-0002-7793-3728](https://orcid.org/0000-0002-7793-3728))\n- Peter D Sun<sup>1</sup> ([ORCID: 0000-0003-0475-1891](https://orcid.org/0000-0003-0475-1891)) \u2020\n\n### Affiliations\n\n1. Laboratory of Immunogenetics, National Institute of Allergy and Infectious Diseases, National Institutes of Health Rockville United States ([ROR:043z4tv69](https://ror.org/043z4tv69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDimorphic amino acids at positions 77 and 80 delineate HLA-C allotypes into two groups, C1 and C2, which associate with disease through interactions with C1 and C2-specific natural killer cell receptors. How the C1/C2 dimorphism affects T cell recognition is unknown. Using HLA-C allotypes that differ only by the C1/C2-defining residues, we found that KRAS-G12D neoantigen-specific T cell receptors (TCRs) discriminated between C1 and C2 presenting the same KRAS-G12D peptides. Structural and functional experiments, and immunopeptidomics analysis revealed that Ser77 in C1 and Asn77 in C2 influence amino acid preference near the peptide C-terminus (p\u03a9), including the p\u03a9-1 position, in which C1 favors small and C2 prefers large residues. This resulted in weaker TCR affinity for KRAS-G12D-bound C2-HLA-C despite conserved TCR contacts. Thus, the C1/C2 dimorphism on its own impacts peptide presentation and HLA-C-restricted T cell responses, with implications in disease, including adoptive T cell therapy targeting KRAS-G12D-induced cancers.\n\n## Introduction\n\nThe classical class I human leukocyte antigens (HLA-I; HLA-A, HLA-B, and HLA-C) are the most polymorphic genes across human populations and are associated with a myriad of human diseases (Dendrou et al., 2018; Robinson et al., 2017). HLA-I molecules present short peptides on the cell surface of nucleated cells where they form ligands for receptors of the immune system including T cell receptors (TCRs) and natural killer (NK) cell receptors. HLA-I-bound peptides are collectively known as the immunopeptidome, which defines the subset of the proteome bound as peptides to a particular HLA-I allotype (Istrail et al., 2004). Immunopeptidomes can be highly diverse, consisting of hundreds to thousands of different sequences as they are shaped by polymorphic amino acid residues that form pockets (A to F) in the HLA-I peptide-binding groove (PBG) (Di Marco et al., 2017; Madden, 1995; Sarkizova et al., 2020). These pockets restrict the peptide repertoire to those peptides with certain amino acid side chains at particular positions, which form anchor residues that define allotype-specific motifs (Di Marco et al., 2017; Falk et al., 1991; Sarkizova et al., 2020). The \u2018anchor\u2019 residues are often position 2 (p2) or p3 (B and C pockets) and the C-terminus (p\u03a9; F pocket), while residues outside the anchors can vary extensively allowing immunopeptidome diversification (Di Marco et al., 2017; Falk et al., 1991; Madden, 1995; Sarkizova et al., 2020). HLA-I allotypes with similar PBGs bind similar peptides, but subtle amino acid differences can modify the side-chain orientation impacting interactions with TCRs and NK cell receptors (Illing et al., 2018; Illing et al., 2012; Saunders et al., 2020; Stewart-Jones et al., 2012; Tynan et al., 2005). Understanding how HLA-I polymorphism impacts the immunopeptidome and interactions with immunoreceptors is critical for constructing molecular mechanisms that underpin disease risk associated with specific HLA-I alleles (Dendrou et al., 2018).\n\nHLA-C is thought to play a lesser role in T cell responses compared to that of HLA-A and HLA-B due to its lower cell surface expression level (Apps et al., 2015; McCutcheon et al., 1995). However, HLA-C-restricted T cells are implicated in several disease settings. In HIV infection, HLA-C allotypes with a high expression were associated with increased T cell responses and slower progression to AIDS, while higher HLA-C expression was also linked with susceptibility to Crohn\u2019s disease (Apps et al., 2013). In psoriasis, the strongest genetic association is with HLA-C*06:02, thought to be mediated by HLA-C*06:02-restricted T cells (Chen and Tsai, 2018; Lande et al., 2014). Furthermore, recent efforts to define the specificities of tumor-infiltrating lymphocytes (TIL) readily identified HLA-C-restricted T cells (Levin et al., 2021; Lu et al., 2014; Murata et al., 2020; Tran et al., 2015; Tran et al., 2016). Most notably, multiple HLA-C*08:02-restricted TCRs specific for the oncogenic hotspot mutation KRAS-G12D were identified in several cancer patients (Tran et al., 2015; Tran et al., 2016). Adoptive transfer of expanded KRAS-G12D-specific TILs successfully treated a patient with metastatic colorectal cancer, leading to complete regression of all but one metastatic lesion (Tran et al., 2016). The remaining lesion lost HLA-C*08:02 from its genome demonstrating conclusively that HLA-C-restricted T cells can mediate effective antitumor responses (Tran et al., 2016). Despite the clinical relevance of HLA-C-restricted T cells, few studies have examined TCR-HLA-C interactions with a molecular and structural focus. Indeed, our recent study on HLA-C*08:02-restricted KRAS-G12D-specific TCRs was the first to present crystal structures of any TCR in complex with HLA-C (Sim et al., 2020).\n\nHLA-C is the most recently evolved classical HLA-I gene, present in only humans and other apes, and has several unique features (Adams and Parham, 2001). HLA-C, not HLA-A or HLA-B, is expressed on fetal extravillous trophoblast cells, making it the most polymorphic molecule expressed at the maternal\u2013fetal interface (King et al., 2000). In addition, all HLA-C allotypes serve as ligands for the killer-cell immunoglobulin-like receptors (KIR), whereas only a subset of HLA-A and HLA-B allotypes bind KIRs (Hilton and Parham, 2017; Moesta et al., 2008). The KIR are a family of activating and inhibitory receptors expressed primarily on NK cells (Hilton and Parham, 2017; Saunders et al., 2015). HLA-C allotypes form two groups, C1 and C2, based on two dimorphic amino acid residues at positions 77 and 80 (Biassoni et al., 1995; Parham et al., 2012). C1 HLA-C allotypes carry Ser77 and Asn80 and are ligands for the inhibitory receptors KIR2DL2/3. The inhibitory receptor KIR2DL1 binds C2 HLA-C allotypes, which carry Asn77 and Lys80. The KIR discriminate C1 and C2 HLA-C largely via position 44 in the KIR (Winter and Long, 1997) and direct interactions with HLA-C position 80 (Boyington et al., 2000; Boyington and Sun, 2002; Fan et al., 2001). Genetic association studies link C1/C2 status and the presence or absence of specific KIR-HLA combinations with risk of multiple human diseases, including cancer, infectious diseases, autoimmunity, and disorders of pregnancy (Hiby et al., 2004; Khakoo et al., 2004; Kulkarni et al., 2008; Littera et al., 2016; Parham and Moffett, 2013; Rajagopalan and Long, 2005; Venstrom et al., 2012). Whether the C1/C2 dimorphism impacts HLA-C interactions with other immunoreceptors is unknown.\n\nGiven the clinical relevance of HLA-C-restricted T cells and that all HLA-C allotypes are either C1 or C2, it is important to ask whether this dimorphism impacts T cell recognition. It was hitherto assumed that the C1/C2 dimorphism would not directly affect T cell recognition as it lies outside the general TCR footprint. To answer this question, we studied two HLA-C*08:02 (C1)-restricted TCRs specific for different KRAS-G12D neoantigens. TCR9a is specific for G12D-9mer (GADGVGKSA), while TCR10 is specific for G12D-10mer (GADGVGKSAL) (Sim et al., 2020; Tran et al., 2016). TCR9a and TCR10 do not share TCR V genes and recognize their peptide antigens in different ways (Sim et al., 2020; Tran et al., 2016). We compared TCR9a and TCR10 recognition of HLA-C*08:02 (C1) with that of HLA-C*05:01, a C2 allotype that is identical in sequence to HLA-C*08:02 apart from the C1/C2 defining residues at positions 77 and 80 (Sim et al., 2017). In a previous study, we showed that 28 different \u2018self\u2019 peptides eluted from HLA-C*05:01 bound to both HLA-C*05:01 (C2) and HLA-C*08:02 (C1), suggesting a minimal impact of the C1/C2 dimorphism on peptide binding to HLA-C (Sim et al., 2017). Here, we found that T cells discriminate between C1 and C2 HLA-C due to differences in peptide binding to HLA-C and in peptide presentation to TCR, which revealed unsuspected features of the C1/C2 dimorphism governing interactions of HLA-C with immunoreceptors. Further, our data suggest that HLA-C*05:01-positive individuals may be eligible for immunotherapies targeting KRAS-G12D-10mer.\n\n## Results\n\n### Impact of the C1/C2 dimorphism to T cell recognition of KRAS neoantigens\n\nHLA-C*05:01 (C*05) and HLA-C*08:02 (C*08) differ only by the C1/C2 dimorphism defined by positions 77 and 80, which are located on the \u03b11 helix, near the peptide C-terminal amino acid (p\u03a9) (Figure 1A and B). We expressed C*08 and C*05 to similar levels in 721.221 cells, which are otherwise deficient in classical HLA-I, HLA-A, -B and -C (Figure 1\u2014figure supplement 1A). These cells displayed canonical dimorphic recognition by KIR, with KIR2DL2/3 demonstrating strong binding to C*08, and KIR2DL1 demonstrating exclusive binding to C*05 (Figure 1\u2014figure supplement 1B). We next used these cells as targets in functional experiments with Jurkat-T cells expressing C*08-restricted KRAS-G12D-specific TCRs, TCR9a, or TCR10. As expected, both the 9mer and 10mer G12D but not their WT KRAS peptides activated their respective TCR9a and TCR10 expressing T cells in the presence of C*08 (Figure 1C and D; Sim et al., 2020). Notably, we observed no activation of TCR9a and only weak activation of TCR10 when the 9mer and 10mer G12D KRAS peptides were presented by C*05, respectively (Figure 1C and D). To confirm this was not due to inefficient peptide loading, we utilized C*08 and C*05-expressing cell lines deficient in transporter associated with antigen presentation (TAP) (Figure 1\u2014figure supplement 1C). These experiments yielded similar results using a different functional readout (expression of CD69), as G12D-9mer loaded on C*05 did not activate Jurkat-TCR9a cells, while G12D-10mer loaded on C*05 did stimulate Jurkat-TCR10 cells but required higher peptide concentrations than when loaded on C*08 (Figure 1\u2014figure supplement 1C). Thus, the HLA-C1/C2 dimorphism impacts T cell recognition of KRAS-G12D neoantigen even though neither residue 77 nor 80 is in contact with the TCR. We next explored if the differences in T cell recognition of C*08 and C*05 were due to differences in the binding of peptide (Figure 2) or TCR (Figure 3) to HLA-C.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sequence of C1/C2 dimorphism in HLA-C*08:02 and HLA-C*05:01 at positions 77 and 80. All other residues are identical. (B) Location of C1/C2 dimorphism on the structure of HLA-C*08:02, close to peptide C-terminus (PDB:6ULI). (C, D) Stimulation of TCR9a+ Jurkat cells (C) and TCR10+ Jurkat cells (D) by 221C*08:02 (left) or 221C*05:01 (right) preloaded with KRAS WT or G12D peptides at indicated concentrations. Means and standard errors of IL-2 concentration in culture supernatant measured by ELISA are shown from two independent biological replicates. Source data available in Figure 1\u2014source data 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Expression of HLA-C*08:02 and HLA-C*05:01 on 721.221 (221) cells. (B) Recombinant KIR-Ig fusion protein (KIR-Fc) binding to 221, 221C*05:01, and 221C*08:02. KIR-Fc was conjugated to protein-A APC and used at 3.6 \u03bcg/ml. (C) Stimulation of Jurkat-TCR9a (left) and Jurkat-TCR10 (right) with indicated peptides loaded on TAP-deficient cells expressing HLA-C*08:02 and HLA-C*05:01. Jurkat T cell activation was measured by CD69 expression by flow cytometry. Means and standard errors from at least three independent experiments are shown.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig2-v2.jpg)\n\n**Figure 2.:** (A) Stabilization of HLA-C on TAP-deficient 221 cells expressing HLA-C*08:02 or HLA-C*05:01. (B) Data from (A) shown as fold median fluorescent intensity (MdFI) relative to no peptide (NP) from a minimum of four independent experiments. (C) Stimulation of TCR9a+ Jurkat cells by 221C*05:01 cells preloaded with KRAS peptides at indicated concentrations. Means and standard errors of IL-2 concentration in culture supernatant measured by ELISA from two biological replicates are shown. (D) Frequency of indicated residues at the C-terminus (p\u03a9) in peptides eluted from HLA-C*08:02 or HLA-C*05:01. (E) Frequency of p\u03a9 Ala in peptides eluted from HLA-C*08:02 or HLA-C*05:01. (F) Volcano plot displaying p\u03a9 amino acid frequency from 21 HLA-C allotypes. The C2/C1 ratio is shown for the average frequency of each amino acid. (G) The frequency of p\u03a9 Ala from 21 HLA-C allotypes by C1/C2 status. Statistical significance was assessed by unpaired t-test with Welsh\u2019s correction, *p<0.05, **p<0.001, ****p<0.0001. Source data available in Figure 2\u2014source data 1. Peptide sequences and p9 frequency analysis are available in Figure 2\u2014source data 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Frequency of peptides with C-terminal Ala in 8mers, 9mers, and 10mers eluted from HLA-C*08:02 and HLA-C*05:01.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig3-v2.jpg)\n\n**Figure 3.:** (A) Binding of TCR9a to captured HLA-C*05:01-KRAS-G12D-A18L determined by surface plasmon resonance (SPR). Dissociation constant was determined by kinetic curve fitting of 12 curves from two independent experiments. (B, C) Binding of HLA-C*08:02 or HLA-C*05:01 tetramers to Jurkat T-cells expressing TCR9a or TCR10 at indicated tetramer concentrations. HLA-C was refolded with indicated peptides. (C) Summary of (B) from two independent experiments displayed as average (mean) and standard error of median fluorescence intensity (MdFI). (D, E) Binding of TCR10 to captured HLA-C*08:02-G12D-10mer and HLA-C*05:01-G12D-10mer by SPR. One experiment of four is shown. (F) Mean, standard deviation, and nonlinear curve fitting of TCR10 binding to G12D-10mer bound to C*08:02 and C*05:01. Dissociation constants were derived from four independent binding experiments with twofold serial dilutions of TCR10 starting at 10 \u03bcM (two experiments), 40 \u03bcM (one experiment), and 80 \u03bcM (one experiment). (G) Association binding of TCR10 with G12D-10mer presented by C*08:02 or C*05:01. SA, streptavidin; Tet, tetramer. Source data available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Binding of TCR9a to C*05-A18L-9mer by surface plasmon resonance (SPR). Binding was measured with six serial twofold dilutions with a highest concentration of 1200 nM. The plots display raw and fitted data from two independent experiments. (B) Activation of Jurkat-TCR9a cells by 221C*08:02 and 221C*05:01 loaded with A18L-9mer. Means and standard errors of IL-2 concentration in culture supernatant from three independent experiments are shown.\n\n### KRAS peptide C-terminal residue distinguishes C1 and C2 HLA-C allotypes\n\nTo characterize KRAS-G12D peptide binding to C*08 and C*05, we carried out peptide loading assays with TAP-deficient cells expressing C*08 or C*05. Similar to C*08, C*05 was not stabilized by WT-KRAS peptides likely due to the absence of Asp/Glu at p3, a critical anchor for C*08 and C*05 (Figure 2A and B). However, G12D-9mer only stabilized C*08 and not C*05, while G12D-10mer stabilized both allotypes (Figure 2A and B). An unusual feature of the G12D-9mer was p\u03a9 Ala as its short side chain does not fill the p\u03a9 pocket (F pocket), in contrast to G12D-10mer with p\u03a9 Leu (Sim et al., 2020). We previously demonstrated that substitution of p\u03a9 Ala to Leu in G12D-9mer (A18L-9mer: 10GADGVGKSL) improved binding to HLA-C*08:02, and T cell recognition by Jurkat-TCR9a (Sim et al., 2020). Similarly, A18L-9mer bound C*05 well (Figure 2A and B) and stimulated Jurkat-TCR9a cells (Figure 2C, Figure 1\u2014figure supplement 1C). Thus, the inability of G12D-9mer to bind C*05 accounts for its lack of activation of Jurkat-TCR9a cells. Further, these data suggest that the C1/C2 dimorphism selectively impacts peptide binding to HLA-C in a sequence-dependent manner.\n\nTo explore if p\u03a9 Ala is a general feature of peptides that bind C1 allotypes (like C*08) and not C2 allotypes (like C*05), we examined C-terminal amino acid usage in the immunopeptidomes of HLA-C allotypes using two publicly available datasets (see Materials and methods) (Di Marco et al., 2017; Sarkizova et al., 2020). We initially analyzed both datasets independently and observed similar amino acid frequencies, thus we present a combined analysis of a merged dataset with duplicate sequences removed. However, we cannot rule out that differences in cell line origin, data acquisition, false discovery rates, or analytical pipelines may have influenced our analysis. In addition, our analysis was limited to that of amino acid frequency and did not incorporate peptide abundance. We first compared the immunopeptidomes of C*08 and C*05 as the residues that form the p\u03a9 binding pocket of C*08 and C*05 are identical and accordingly the five most abundant p\u03a9 residues (Leu, Val, Ile, Phe, and Met) were the same in both allotypes, accounting for 97% of C*08% and 98% of C*05 sequences (Figure 2D). Leucine was the most common p\u03a9 in both allotypes but had a higher frequency in C*08 peptides than C*05 (C*08 = 73%, C*05 = 37%) (Figure 2D). The significance of this difference is unknown; however, peptides with p\u03a9 Leu, Val, Ile, Phe, and Met bind well to both C*08 and C*05 (Sim et al., 2017). Among 9mer peptides, the frequency of Ala at p\u03a9 position was 1.5% (30 out of 1986) in C*08, significantly higher (p=0.0016 Fisher\u2019s exact test) than that of 0.13% (1 out of 732) in C*05-bound peptides (Figure 2E). Similar results were observed for 10mers, where p\u03a9 Ala was more common among C*08 peptides (5/349, 1.4%) than C*05 peptides (0/152, 0%) (Figure 2\u2014figure supplement 1). We next analyzed the p\u03a9 amino acid frequency amongst 9mer sequences eluted from 14 C1 allotypes and 7 C2 allotypes and looked for amino acids with the greatest difference in frequency between C1 and C2 eluted peptides. In concordance with the comparison of C*05 and C*08 immunopeptidomes, p\u03a9 Ala was the one most enriched in C1 allotypes, with a frequency of 1.45% \u00b1 1.4% in C1 allotypes compared to 0.27% \u00b1 0.19% in C2 allotypes (Figure 2F and G). In addition, Gln and Ser were significantly enriched at p\u03a9 of C1 allotypes, but at lower frequencies than Ala. Thus, C1 allotypes bind peptides with p\u03a9 Ala to a greater extent than C2 allotypes, consistent with the ability of G12D-9mer to bind C*08 and not C*05.\n\n### Impact of C1/C2 dimorphism on TCR binding to HLA-C\n\nWe next explored the impact of the C1/C2 dimorphism on TCR binding to HLA-C using recombinant HLA-C refolded with individual peptides. The solution-binding affinities of the two neoantigen-specific TCRs, TCR9a and TCR10, to their cognate peptides presented by C*08 or C*05 were determined by surface plasmon resonance (SPR) using recombinant TCRs as analytes. As G12D-9mer with p\u03a9 Ala does not bind C*05 (Figure 2A), we chose the Leu anchor variant A18L-9mer as the peptide for C*05 to ensure HLA-C stability. While TCR9a bound to the C1 allotype HLA-C*08 in the presence of G12D-9mer peptide with 16 nM affinity (Sim et al., 2020), it displayed a binding affinity of 108 nM for the C2 allotype HLA-C*05 in the presence of Leu anchor variant of G12D-9mer, an approximately sevenfold affinity reduction compared to the C1 allotype (Figure 3A, Figure 3\u2014figure supplement 1F). Consistent with their solution-binding affinities, the C*08-G12D-9mer tetramers bound TCR9a-expressing Jurkat cells with lower EC50 than C*05-A18L-9mer tetramers (Figure 3B and C). This reduced binding affinity and avidity may explain the reduced sensitivity of Jurkat-TCR9a cells for A18L-9mer loaded on C*05 compared to C*08 (Figure 3\u2014figure supplement 1B). In solution, TCR10 bound both the C1 and C2 allotypes with similar \u03bcM affinities (Figure 3D\u2013F), though slightly weaker affinity was observed with C*05. By steady-state kinetics, TCR10 binding was less than twofold weaker to C*05:01-G12D-10mer (KD = 13 \u00b1 6 \u03bcM) than C*08:02-G12D-10mer (KD = 8 \u00b1 5 \u03bcM) (Figure 3D and E). However, by kinetic analysis of the binding curves (Figure 3G), TCR10 had almost 20-fold slower on rate with C*05:01-G12D-10mer (Kon = 6.2 \u00b1 1.2 \u00d7 103 M\u20131 s\u20131) than with C*08:02-G12D-10mer (Kon = 1.2 \u00b1 0.9 \u00d7 105 M\u20131 s\u20131). Consistently, C*08-G12D-10mer exhibited better binding to TCR10-expressing Jurkat T cells than C*05-G12D-10mer, which failed to reach binding saturation at the highest concentration of tetramer tested (40 \u03bcg/ml) (Figure 3B and C). Thus, both TCR9a and TCR10 exhibited better binding to the C1 allotype than C2.\n\nNeither TCR9a nor TCR10 make direct contacts to HLA-C positions Ser 77 and Asn 80 (Sim et al., 2020). To understand the impact of C2 residues Asn 77 and Lys 80 on T cell recognition, we determined the crystal structure of TCR9a in complex with C*05-A18L-9mer to a high resolution of 1.9 \u00c5 (Supplementary file 1). TCR9a adopted the same binding mode when in complex with C*05, as in the C*08 complex structure (Figure 4A). TCR9a recognition of C*05-A18L-9mer was via CDR3\u03b1 Q98 that forms hydrogen (h) bonds with Arg 156 and Gln 155 of HLA-C and the peptide backbone of peptide p5 Val (Figure 4B). TCR9a CDR2\u03b2 Tyr48 and Glu49 coordinated peptide p7 Lys (Figure 4C), while CDR3\u03b2 of TCR9a E95 formed a salt bridge with C*05 Arg 69 (Figure 4D). All these contacts observed between TCR9a and the C2 HLA-C*05 are conserved in the structure of TCR9a complexed with C*08 (Supplementary file 2). Like the C1 HLA-C*08, the dimorphic residues 77 and 80 on the C2 HLA-C*05 also do not interact with TCR9a. The closest TCR residue to HLA-C position 77 or 80 is Glu 49 of the TCR\u03b2 chain that interacts with Lys p7 of the peptide but is greater than 7 \u00c5 away from HLA-C position 80. Docking TCR10 onto a structure of C*05:01-G12D-10mer using our TCR10-C*08:02-G12D-10mer complex revealed no obvious impact on TCR contacts (Figure 4\u2014figure supplement 1; Bai et al., 2021; Sim et al., 2020), suggesting the dimorphic positions on C*05 do not directly contact TCR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig4-v2.jpg)\n\n**Figure 4.:** (A) Side view of TCR9a in complex with HLA-C*05:01-G12D-A18L (left) and HLA-C*08:02-G12D-9mer (right; PDB:6ULR). (B\u2013D) Interactions of TCR9a with HLA-C*05:01-A18L (blue) and HLA-C*08:02-G12D-9mer (red). TCR9a \u03b1 chain, green; \u03b2 chain, pink; \u03b22-microglobulin (\u03b22M), gold.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Crystal structure of TCR10 in complex with C*08:02-G12D-10mer (PDB:6UON) was used to dock C*05:01-G12D-10mer (PDB:6JTO). Docking was carried out in PyMOL.\n\n### The C1/C2 dimorphism affects p\u03a9-1 backbone position and side-chain preference\n\nThe lack of direct contacts between TCR and the HLA-C1/C2 dimorphic residues raised the question if the C1/C2 dimorphism indirectly affected TCR binding through peptide conformation. The position 77 side chain is orientated directly into the PBG, while position 80 sits atop the \u03b11-helix (Figure 1B). Position 77 is Ser in C*08 (C1) and Asn in C*05 (C2) and both form an h-bond of the same distance with the amide of the terminal peptide bond between p\u03a9 and p8 (p\u03a9-1) (Figure 5A). Comparing the structures of C*05 and C*08, the HLA-C \u03b11-helices were displaced relative to each other and peptide p8 was higher out of the PBG in C*05 compared to C*08 (Figure 5B\u2013D). This displacement was measured by comparing the distance between the C\u03b1 of peptide p8 (Ser) with that of the C\u03b2 of HLA-C position 77 (the first carbon of the position 77 side chain). This distance was 4.7 \u00c5 and 5.7 \u00c5 in the C*08 and C*05 structures, respectively (Figure 5B and C). We next examined the same distance in 10 additional published HLA-C structures, 4 C1 (HLA-C*03:04, PDB:1EFX, HLA-C*07:02, PDB:5VGE, HLA-C*08:01, PDB:4NT6, HLA-C*08:02-G12D-10mer, PDB: 6ULK) and 6 C2 (HLA-C*04:01, PDB:1QQD, HLA-C*05:01-G12D-10mer, PDB: 6JTO, HLA-C*05:01, PDB: 5VGD, HLA-C*06:02, PDB:5W6A, 5W69, 5W67). We observed that the difference between the C\u03b1 of peptide p8 and HLA-C 77 C\u03b2 was maintained between C1 and C2 HLA-C structures (C1 = 4.6 \u00b1 0.11 \u00c5, C2 = 5.7 \u00b1 0.22 \u00c5) (Figure 5E). In contrast, a conserved contact with the peptide N terminus and Tyr171 O\u03b3 was the same between C1 and C2 HLA-C structures (2.70 \u00c5 vs. 2.76 \u00c5) (Figure 5F and G). A consequence of this displacement is the proximity of the p8 side chain to the HLA-C \u03b11 helix (Figure 5H). We compared the distance between the p8 side chain and HLA-C Val 76 in the 10 HLA-C structures. In all five C1 allotype structures, the p8 side chain was within van der Waals range of Val 76 (3.3\u20134.0 \u00c5). In contrast, the p8 side chain was out of contact range with Val 76 in all but one C2 HLA-C structures (Figure 5H and I). This appears to be due in part to the torsion angle of the terminal peptide bond that orientates p8 towards the \u03b11 helix in C1 allotypes and out of the groove in C2 allotypes (Figure 5J). Thus, the C1/C2 dimorphism impacts the position and orientation of the peptide at p\u03a9-1, suggesting that position 77 is the major determinant of the difference between C*05 and C*08. To interrogate the role of positions 77 and 80 individually, each one was substituted in C*05 with the corresponding residue in C*08 (Figure 5\u2014figure supplement 1). Cells expressing C*05, C*05 Asn77Ser (N77S), C*05 Lys80Asn (K80N), and C*08 loaded with G12D-9mer or G12D-10mer were used as targets for Jurkat-TCR9a and Jurkat-TCR10 cells, respectively. The lack of stimulation of Jurkat-TCR9a by C*05 was minimally impacted by C*05-K80N, while C*05-N77S recovered Jurkat-TCR9a responses, though not completely (Figure 5K). In contrast, stimulation of Jurkat-TCR10 cells by HLA-C*05:01 was not improved by single substitutions at positions 77 and 80, suggesting a synergistic effect of positions 77 and 80 on recognition of HLA-C*08:02 by TCR10.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig5-v2.jpg)\n\n**Figure 5.:** (A) Hydrogen bond between HLA-C position 77 and amide in terminal peptide bond in C*08:02-G12D-9mer and C*05:01-A18L-9mer structures. (B\u2013D) Distance between HLA-C position 77 C\u03b2 and C\u03b1 of peptide p8 Ser of HLA-C*08:02-G12D-9mer (B), HLA-C*05:01-G12D-A18L (C), and both overlaid (D). (E) Distances between HLA-C position 77 C\u03b2 and C\u03b1 of peptide p\u03a9-1 in 12 HLA-C crystal structures. (F) Distance between Tyr 171 O\u03b3 and peptide N-terminus of C*08:02 and C*05:01. (G) Distance between Tyr 171 O\u03b3 and peptide N-terminus in 12 HLA-C crystal structures. (H) Distance between peptide p8 side chain and HLA-C position 77 Val side chain in structures of C*08:02 and C*05:01. (I) Distance between peptide p\u03a9-1 side chain and HLA-C position 76 Val side chain in 12 HLA-C structures. (J) Torsion angle of terminal peptide bond in 12 HLA-C structures. (K) Stimulation of Jurkat-TCR9a+ and Jurkat-TCR10+ by 221 cells expressing HLA-C*08:02, HLA-C*05:01, HLA-C*05:01-N77S, or HLA-C*05:01-K80N preloaded with G12D-9mer (left) or G12D-10mer (right). Means and standard errors of IL-2 concentration in culture supernatant measured by ELISA from three biological replicates are shown. Significance in (E), (G), (I), and (J) was measured using an unpaired t-test with Welch\u2019s correction, **p<0.01, ****p<0.0001. Source data available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig5-figsupp1-v2.jpg)\n\nWe next explored if the shift in p\u03a9-1 position is associated with changes in the HLA-C immunopeptidome other than those at p\u03a9 (Figure 2). Analyzing 9mer sequences unique to C*08 and C*05, we compared the amino acid frequency at each position (1\u20139) by Pearson correlation. Strong correlations (r > 0.9) were observed at positions 1\u20133, while the p\u03a9 was slightly weaker (r = 0.8), reflecting the small differences in p\u03a9 usage (Figure 6A, Figure 6\u2014figure supplement 1A). In contrast, there was a weak correlation (r = 0.46) at p7 and no correlation in amino acid usage (r = \u20130.01) at p8 (p\u03a9-1) (Figure 6A). At p\u03a9-1, Ala and Ser made up over 30% of sequences unique to C*08, but only 5% of sequences unique to C*05. In contrast, Leu, Lys, and Arg were found in approximately 40% of sequences unique to C*05, but only 7% of sequences unique to C*08 (Figure 6A). We observed similar findings for p9 (p\u03a9-1) in an analysis of 10mers (Figure 6\u2014figure supplement 1B). Next, we analyzed the relative amino acid frequencies at p8 of 9mers eluted from 14 C1 allotypes and 7 C2 allotypes (Figure 6B). We found that at p8, C1 allotypes are enriched for Ser, Ala, and Pro, while C2 allotypes are enriched for Phe, Leu, Lys, Met, Arg, Trp, and Tyr (Figure 6B, Figure 6\u2014figure supplement 1C). There was a strong correlation between amino acid enrichment at p8 in C2 allotypes and amino acid side-chain volume, demonstrating that the C1/C2 dimorphism imposes a size constraint on the peptides bound to HLA-C (Figure 1C). In peptides eluted from C1 allotypes, the preference for smaller residues at p8 was accentuated in peptides with p\u03a9-Ala compared to those with p\u03a9-Leu (Figure 6\u2014figure supplement 1D), suggesting that size at p\u03a9-1 is especially important for peptides with p\u03a9-Ala.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig6-v2.jpg)\n\n**Figure 6.:** (A) Correlation of amino acid frequency at p2, p7, and p8 (p\u03a9-1) of 9mer peptides unique to HLA-C*08:02 (uC*08:02) and unique to HLA-C*05:01 (uC*05:01). (B) Volcano plot displaying relative p8 amino acid frequency from 9mer peptides eluted from 14 HLA-C allotypes based on C1/C2 status. Amino acids with twofold enrichment and statistically significant differences (p<0.05) determined by Student\u2019s t-test are shown. A total of 26,543 peptide sequences were included. (C) Correlation (Pearson) of amino acid volume with amino acid enrichment at p8 of peptides eluted from HLA-C defined by C2/C1 status. Source data available in Figure 6\u2014source data 1. Peptide sequences and p8 frequency analysis are available in Figure 2\u2014source data 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Workflow for comparing amino acid frequency of 9mer peptides eluted from HLA-C*05:01 and HLA-C*08:02. Amino acid frequencies were compared by Pearson correlation. (B, left) Correlation of amino acid frequencies at p9 (p\u03a9-1) of 10mers eluted from HLA-C*05:01 and HLA-C*08:02. Frequencies of Ser and Ala and Lys, Leu and Arg at p\u03a9-1 from peptides eluted from HLA-C*08:02 and HLA-C*05:01 (right). (C) Average frequencies of indicated amino acids at p8 (p\u03a9-1) of 9mers eluted from 14 C1 and 7 C2 HLA-C allotypes. (D) Amino acid frequencies at p8 (p\u03a9-1) of 9mers eluted from C1 allotypes with Ala or Leu at the C-terminus (p\u03a9).\n\n### Large amino acid side chains at peptide p\u03a9-1 position impair TCR9a recognition\n\nFinally, we tested the importance of side-chain size at p\u03a9-1 by substituting p8 Ser in G12D-9mer and A18L-9mer to Ala, Gly, Glu, Val, Leu, Lys, and Arg. Stimulation of Jurkat-TCR9a by C*08 cells loaded with G12D-9mer p8 substitutions to Leu, Lys, and Arg substantially increased the EC50 by approximately 1000-fold, while substitution to Ala, Gly, Glu, Val had a minimal impact on the EC50 (Figure 7A\u2013C). The same p8 substitutions in A18L-9mer had much less impact on Jurkat-TCR9a stimulation; however, p8 Lys, Arg, and Leu increased the EC50 by roughly 10-fold (Figure 7D\u2013F). There was not a strict correlation between Jurkat-TCR9a stimulation and stabilization of HLA-C on TAP-deficient C*08+ cells (Figure 7\u2014figure supplement 1). For example, in G12D-9mer, S8L was a poor ligand for Jurkat-TCR9a, but stabilized HLA-C better than S8G, which was a better ligand for Jurkat-TCR9a. Further, substitution at p8 in A18L-9mer had a minimal effect on HLA-C stabilization, but still impacted Jurkat-TCR9a activation (Figure 7F, Figure 7\u2014figure supplement 1). This may be due in part to differences in sensitivity between these assays but also suggests a complex relationship between p8 sequence, HLA-C stabilization, and T cell recognition. In line with our other data, the impact of p8 size demonstrates how molecular changes outside TCR contacts can directly impact T cell recognition.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013F) Stimulation of Jurkat-TCR9a+ cells by 221C*08:02 cells preloaded with p\u03a9-1 substitutions of G12D-9mer (A, B) and A18L-9mer (D, E) at indicated concentrations. Each peptide was tested individually in two independent experiments and displayed by p8 sequence as indicated. (C, F) Data from (A, B) and (D, E) are summarized in (C) and (F), respectively, by pooling data by indicated p8 substitutions. Means and standard errors of IL-2 concentration in culture supernatant measured by ELISA are shown. Source data available in Figure 7\u2014source data 1.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75670/elife-75670-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Stabilization of HLA-C on HLA-C*08:02-expressing TAP-deficient cells by G12D-9mer (left) and A18L-9mer (right) with indicated p8 (p\u03a9-1) substitutions. Data are from five independent experiments and normalized to cells with no peptide (NP).\n\n## Discussion\n\nHLA-I molecules form ligands for many immunoreceptors, and the interpretation of disease associations with HLA-I requires modeling interactions with different immune populations (Debebe et al., 2020). The C1/C2 dimorphism in HLA-C plays a critical role in innate immunity by forming ligands for the NK cell receptors KIR2DL1 and KIR2DL2/3. By comparing T cell recognition of two HLA-C allotypes identical in sequence except for the C1/C2 dimorphism, we assessed how this dimorphism affects adaptive immunity. We examined two clinically relevant, HLA-C*08:02 restricted neoantigens, G12D-9mer and G12D-10mer derived from the oncogenic hotspot mutation KRAS-G12D. We reject the null hypothesis that the C1/C2 dimorphism exhibits no effect on T cell recognition as C*05 was a poor ligand for TCR9a+ and TCR10+ T cells. Our study identified a clear and underestimated role for the C1/C2 dimorphism on peptide binding to HLA-C; specifically, as G12D-9mer bound only C*08 and not C*05. Further, we found that the C1/C2 dimorphism shapes the HLA-C immunopeptidome, exerting a size preference at p\u03a9-1 with C1 allotypes favoring smaller residues. Additionally, we identified an impact of the C1/C2 dimorphism on TCR binding as TCR9a and TCR10 binding to C*05 was weaker than binding to C*08 in the presence of the same peptides.\n\nBy investigating the exclusive restriction of TCR9a to C*08, we uncovered a novel role for the C1/C2 dimorphism in peptide presentation. Specifically, the C1/C2 dimorphism defines two distinct PBG structures that impose size constraints at p\u03a9-1 and allow C1 but not C2 allotypes to bind peptides with shorter p\u03a9 anchors, like Ala in G12D-9mer. The primary cause of these distinct PBGs is likely the size of position 77, which forms a conserved h-bond with the amide of p\u03a9 in both C1 and C2 HLA-C. As Asn (C2) is larger than Ser (C1), it results in peptide p\u03a9-1 protruding out of the groove, thus permitting larger amino acids at p\u03a9-1 in C2 allotypes compared to C1. In C1, p\u03a9-1 sits lower in the groove, restricting p\u03a9-1 side chains to smaller residues to avoid clashing with HLA-C position Val 76. Consistently, substitutions at p8 in G12D-9mer to the larger Leu, Lys, or Arg substantially reduced C1 recognition by TCR9a, while substitution to Gly had only a minor decrease. Further, the penalty imposed for large residues at p8 was diminished with A18L-9mer, suggesting a canonical p\u03a9 anchor can accommodate unfavorable p8 residues, likely via orientating p8 side chain out of the groove like peptides in C2 allotypes. In C1 allotypes, the additional contacts between Val 76 and p8 may explain the ability of C*08:02 to bind peptides with short, suboptimal p\u03a9 anchors. In contrast, p\u03a9-1 in C2, which is higher in the PBG and orientated away from the \u03b11 helix, is unable to contact Val 76 and therefore cannot support peptides with p\u03a9 Ala. Consistently, substitution of Asn 77 to Ser in C*05 substantially recovered TCR9a recognition of G12D-9mer.\n\nIn addition to peptide binding to HLA-C, TCR-binding affinity and T cell sensitivity were reduced in the presence of C2 residues. Neither N77S or K80N substitutions improved the sensitivity of TCR10 for C*05 and G12D-10mer, suggesting a synergistic effect of the C2 residues on reducing TCR recognition. TCR10 displayed a much slower on rate in binding C*05-G12D-10mer and even after controlling for a poor p\u03a9 anchor, TCR9a was more sensitive to A18L-9mer with C*08 than C*05. Comparing our TCR9a-C*05:01-A18L-9mer structure with that of TCR9a:C*08:02-G12D-9mer revealed no impact on TCR contacts. Further, modeling TCR10 in complex with a recently solved crystal structure of C*05-G12D-10mer revealed no impact on TCR contacts (6JTO) (Bai et al., 2021). The most likely explanation for diminished TCR binding in the presence of C2 residues is that of conformational flexibility. Clearly, TCR9a and TCR10 can bind C*05; however, the ability to make the same contacts with C*08 in C*05 likely requires more energetically unfavorable conformational changes, in either peptide, HLA-C, or both, exemplified by the slow on rate of TCR10 with C*05-G12D-10mer. Indeed, recent evidence suggests that TCR recognition can be optimized by peptide substitutions that allow TCR contacts to form more readily (Devlin et al., 2020; Duru et al., 2020). It is likely that the converse is also true; slight alterations in amino acid side-chain orientations or flexibility may impose a higher energy barrier for efficient TCR recognition.\n\nThe G12D-9mer and G12D-10mer are considered public or shared neoantigens due to the high frequency of cancers with KRAS-G12D mutations (Cox et al., 2014; Pearlman et al., 2021; Stephen et al., 2014). Therefore, the small differences between C*08 and C*05 investigated here have clinical implications for mounting an effective antitumor immune response (Tran et al., 2016). The ability of C*05 to bind G12D-10mer means HLA-C*05:01-positive individuals may be eligible for such therapies; however, identifying a more sensitive receptor than TCR10 would be needed to translate these findings for clinical application.\n\nThe consequences of our findings may have broad implications for T cell recognition of HLA-C beyond the specific example of KRAS-G12D recognition in cancer. For example, in infectious diseases, viral escape mutants may eliminate T cell recognition of C1 allotypes by increasing side chain size at p\u03a9-1. Similarly, escape mutants that substitute p\u03a9 to smaller residues like Ala may escape T cell recognition of C2 HLA-C but not C1. For peptide vaccines, p\u03a9-1 size could be optimized depending on whether the peptide targets a C1 or C2 HLA-C allotype. A reasonable prediction from our work is that if a T cell epitope contains a canonical p\u03a9, it will be immunogenic in individuals carrying either C*08 and C*05. Indeed, there is evidence that HIV-infected individuals can respond to the same epitope (SAEPVPLQL) if they carry HLA-Cw5 or HLA-Cw8 (Addo et al., 2001). However, it is possible that preference for p\u03a9-1 size could engender differential T cell immunity based on differences in HLA-C and TCR binding. These effects need to be investigated in further experiments of HLA-C-restricted T cells. It is worth noting that the impact of the C1/C2 dimorphism on TCR recognition is intrinsic to the structure of HLA-C and thus may also affect interactions with other immunoreceptors. In particular, the differences in amino acid preferences at p\u03a9-1 may have enormous consequences for KIR recognition of HLA-C as this residue is central to the KIR binding site (Boyington et al., 2000; Boyington and Sun, 2002; Fan et al., 2001). Our study highlights how small HLA polymorphisms can impact interactions with both peptide and immunoreceptors with implications for immune responses and cancer immunotherapy. Finally, our study establishes that T cells, like NK cells, can discriminate between the dimorphic HLA-C allotypes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>721.221 (221)221C*05:01221C*08:02221C*05:01-N77S221C*05:01-K80N</td>\n      <td>Original 221, PMID:3257565221C*05:01 and 221C*08:02, Sim et al., 2017, PMID:28352266221C*05:01-N77S and 221C*05:01-K80N \u2013 this paper</td>\n      <td></td>\n      <td>Plasmids encoding HLA-C*05:01-N77S and HLA-C*05:01-K80N were generated by QuikChange mutagenesis and expressed in 221 cells via retroviral transduction</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>BL21 (DE3)</td>\n      <td>Novagen</td>\n      <td>70235-4</td>\n      <td>For recombinant protein production</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pet30a-HLA-C*05:01</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Synthesized by GenScript, USAResidues 1\u2013278Sequence from https://www.ebi.ac.uk/ipd/imgt/hla/Soluble HLA-C*05:01 heavy chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pet30a-HLA-C*08:02</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble HLA-C*08:02 heavy chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pet30a-B2M</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble B2M for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HLA-A, -B, -C(mouse monoclonal, clone W6/32)</td>\n      <td>BioLegend</td>\n      <td>311402</td>\n      <td>For SPR10 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b22m(mouse monoclonal, clone 2M2) APC</td>\n      <td>BioLegend</td>\n      <td>316312</td>\n      <td>For peptide-loading experiments1:50</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD3APC-Cy7 (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>300426</td>\n      <td>For Jurkat-T cell functional assays1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD69APC (mouse monoclonal)</td>\n      <td>BioLegend</td>\n      <td>555533</td>\n      <td>For Jurkat-T cell functional assays1:100</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Jurkat-TCR9a, Jurkat TCR10</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>For Jurkat-T cell functional assays</td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>221C*05:01-ICP47</td>\n      <td>Sim et al., 2017; PMID:28352266</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>221C*08:02-TAP-KO</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cas9 was expressed in 221C*08:02 cells and gRNA to TAP1 were introduced by lentiviral transduction</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TCR9a alpha chain</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble TCR9a alpha chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TCR9a beta chain</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble TCR9a beta chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TCR10 alpha chain</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble TCR10 alpha chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TCR10 beta chain</td>\n      <td>Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Soluble TCR10 beta chain for production in E. coli and in vitro refolding</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Streptavidin PE</td>\n      <td>Agilent</td>\n      <td>PJRS25-1</td>\n      <td>For HLA-C tetramers</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>WT and G12D KRAS peptides with substitutions</td>\n      <td>This paper and Sim et al., 2020; PMID:32461371</td>\n      <td></td>\n      <td>Synthesized by GenScript, USA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human IL-2 ELISA</td>\n      <td>BioLegend</td>\n      <td>431804</td>\n      <td>For Jurkat T-cell functional assays</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>TAP1 gRNA</td>\n      <td>GenScript</td>\n      <td>1 gRNA sequence:CCCAGATGTCTTAGTGCTAC2 gRNA sequence:ACCTGTAGCACTAAGACATC</td>\n      <td>pLentiCRISPR v2 vectorUsed to knockout TAP in 221C*08:02-Cas9 cells by lentiviral transduction</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Amine coupling kit</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>BR100050</td>\n      <td>For immobilization of protein on SPR chip</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CM5 chips</td>\n      <td>Cytiva</td>\n      <td>29149604</td>\n      <td>For SPR</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Biotinylated HLA-C monomers</td>\n      <td>NIH Tetramer Core Facility</td>\n      <td></td>\n      <td>For HLA-C tetramers</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and culture\n\nCell lines were cultured in IMDM and 10% fetal calf serum (FCS) at 37\u00b0C and 5% CO2. 721.221 (221) cells expressing HLA-C*05:01 and the TAP inhibitor ICP47 (221C*05:01-ICP47) were described previously (Sim et al., 2017; Sim et al., 2019). Cas9-expressing 221 cells were a generated by lentiviral transduction. cDNA encoding full-length HLA-C*08:02 was expressed in 221-Cas9 cells by retroviral transduction with vectors on the pbabe backbone. Two TAP1 gRNAs (GenScript, USA) were introduced by lentiviral transduction. Jurkat T cells expressing TCR9a and TCR10 were previously described (Sim et al., 2020).\n\n### Peptide loading assay\n\nPeptide loading assays were performed as described (Sim et al., 2017; Sim et al., 2019). 221C*05:01-ICP47 and 221-Cas9-C*08:02-TAP cells were cultured overnight at 26\u00b0C with 100 \u03bcM of peptide. Cells were then stained with anti-mAb (APC, clone 2M2, BioLegend, USA, #316312). Expression of HLA-C was determined by flow cytometry. Each peptide was tested at least twice in independent experiments. Peptides were synthesized at >95% purity (GenScript).\n\n### T cell activation assay\n\nPeptides were incubated with 105 221-HLA-C+target cells for 4 hr at 37\u00b0C before incubation with 105 Jurkat-TCR+ cells overnight. The following day, cell culture supernatants were recovered, and IL-2 measured by ELISA using the ELISA MAX Deluxe Set Human IL-2, BioLegend (#431804). For assays with TAP-deficient target cells, 105 target cells were incubated overnight at 26\u00b0C with peptide ranging from 1 \u03bcM to 0.01 nM. The following day, target cells were mixed with TCR+ Jurkat T cells for 6 hr at 37\u00b0C. Cells were then washed twice in PBS and stained with mAbs to CD69 (APC, FN50, BD Biosciences, USA, #555533) and CD3 (APC-Cy7, UCHT1, BioLegend, #300426). Expression of CD69 was measured on CD3+ cells by flow cytometry. All peptides were tested at indicated concentrations at least twice in independent experiments.\n\n### HLA-C immunopeptidomics\n\nFor the analysis of HLA-C immunopeptidomes, we used published datasets from two studies (Di Marco et al., 2017; Sarkizova et al., 2020). These data are found in public depositories; Di Marco et al., PRIDE Project PXD009531, Sarkizova et al., MASSIVE MSV000084172. Both studies used cells transfected with single HLA-I allotypes. Sarkizova et al. used the HLA-A, -B, -C-deficient 721.221 cells, while Di Marco et al. used C1R cells. C1R cells express low levels of HLA-B*35:03 and HLA-C*04:01, and therefore, peptides aligning with motifs for these allotypes were removed from HLA-C allotype-specific sequences. The false discovery rates were 1 and 5% for Sarkizova et al. and Di Marco et al., respectively. For comparing the immunopeptidomes of C1 and C2 HLA-C allotypes, 9mer peptides eluted from 21 different HLA-C allotypes were obtained. The list of allotype-specific sequences from each study was merged and duplicate sequences removed. For some HLA-C allotypes, data was only available from one study and therefore no merging occurred. The C1 HLA-C allotypes were HLA-C*01:02, C*03:02, C*03:03, C*03:04, C*07:01, C*07:02, C*07:04, C*08:01, C*08:02, C*12:02, C*12:03, C*14:02, C*14:03, and C*16:01. The C2 HLA-C allotypes were HLA-C*02:02, C*04:01, C*04:03, C*05:01, C*06:02, C*15:02, and C*17:01. For C*03:02, C*04:03, C*07:04, C*08:01, C*12:02, annd C*14:03, data were only available from one study (Sarkizova et al., 2020). A total of 18,275 peptides from C1 allotypes and 8268 peptides from C2 allotypes were studied. The amino acid frequency at positions 8 (p\u03a9-1) and 9 (p\u03a9) was determined for each allotype independently and collected to derive an average amino acid frequency for C1 and C2 allotypes. The relative amino acid frequency between C2 and C1 allotypes (C2/C1 fold difference) was determined for each amino acid and significant differences determined by two-sided Student\u2019s t-test. For comparing C*08 and C*05 immunopeptidomes, a total of 1928 C*05 and 3182 C*08 nonredundant 9mer sequences were compared of which 1196 sequences were shared between C*05 and C*08 (Figure 5\u2014figure supplement 1).\n\n### Protein expression, purification, and crystallization\n\nHLA-C*05:01 and TCR proteins were produced largely as described (Clements et al., 2002; Garboczi et al., 1992; Sim et al., 2020; Tikhonova et al., 2012). DNA encoding residues 1\u2013278 of HLA-C*05:01, 1\u201399 of \u03b22M and TCR alpha (1\u2013208) and beta (1\u2013244) chains were synthesized and cloned into the bacterial expression vector pET30a via NdeI and XhoI (GenScript). Proteins were expressed as inclusion bodies in BL21 (DE3) cells (Novagen, USA) and dissolved in 8 M urea, 0.1 M Tris pH 8. Proteins were refolded by rapid dilution in 0.5 M L-arginine, 0.1 M Tris pH 8, 2 mM EDTA, 0.5 mM oxidized glutathione, 5 mM reduced glutathione. Proteins were purified by ion-exchange chromatography (Q column, GE Healthcare, USA) followed by size-exclusion chromatography with a Superdex 200 column (GE Healthcare). HLA-C*05:01-G12D-A18L-9mer and TCR9a were concentrated to 10 mg/ml and crystals grown under the same conditions as TCR9a/d with HLA-C*08:02-G12D-9mer (Sim et al., 2020) and were 22% PEG 3350, 0.1 M MOPS pH 7.1, and 0.25 M MgSO4.\n\n### Data collection, structure determination, and refinement\n\nCrystals were immersed in cryoprotectant (crystallization condition plus 20% glycerol) before flash-cooling in liquid nitrogen. A single dataset was collected on the SER-CAT 22 ID beamline (Argonne National Laboratory, IL, USA), processed and merged using HKL2000 (Otwinowski and Minor, 1997). TCR9a:HLA-C*05:01-G12D-A18L-9mer structure was solved by molecular replacement method with Phaser in the CCP4 package using the TCR9a:HLA-C*08:02-G12D-9mer complex as a search model (PDB: 6ULR) (Sim et al., 2020). The model was built and refined with Coot and Phenix (Adams et al., 2002; Collaborative Computational Project, 1994; Emsley and Cowtan, 2004; McCoy et al., 2007; Otwinowski and Minor, 1997). The complex contained one complex per asymmetric unit and belonged to the P21 space group. Peptide and CDR loops were added manually using 2Fo-Fc electron density maps. Graphical figures were generated in PyMOL.\n\n### Surface plasmon resonance\n\nSPR was performed largely as described (Sim et al., 2020) with a BIAcore 3000 instrument and analyzed with BIAevalution software v4.1 (GE Healthcare). The HLA-A, -B, -C-specific mAb W6/32 (#311402, BioLegend) was immobilized to CM5 chips (Cytiva, USA) in 10 mM sodium acetate pH 5.5 at 5000\u20137000 response units (RU) by primary amine-coupling with a 2 \u03bcl/min flow rate. HLA-C was captured by W6/32 at 400\u2013700 RU in PBS. Soluble TCR heterodimers were used as analytes in 10 mM HEPES pH 7.5 and 0.15 M NaCl with a flow rate of 50 \u03bcl/min. TCRs were injected for 2 min followed by a dissociation of 10 min. Binding was measured with serial dilutions of TCR from 80 \u03bcM to 1.25 \u03bcM for TCR10 and 1200 nM to 37.5 nM for TCR9a. Four independent TCR10-binding experiments were carried out with initial concentrations of 10 \u03bcM (two experiments), 40 \u03bcM (one experiment), and 80 \u03bcM (one experiment). Dissociation constants were obtained by modeling steady-state kinetics for TCR10 and kinetic curve fitting for TCR9a with BIAevaluation software.\n\n### Flow cytometry\n\nFlow cytometry was performed on an LSR II or Fortessa X20 (BD Biosciences) and a Cytoflex S (Beckman Coulter, USA). Data were analyzed using FlowJo software (Treestar V10, USA). Cytometer setup and tracking beads were run daily, and single mAb-stained beads were used to determine compensation settings for multicolor experiments.\n\n### Statistical analysis\n\nStatistical analyses were carried out in GraphPad Prism (version 8) and Microsoft Excel.\n\n### Protein database deposition and files\n\nThe C*05:01-A18L-9mer-TCR9a complex was assigned the PDB code: 7SU9. The following PDBs were used in this article: 6ULI, 6ULR, 1EFX, 5VGE, 4NT6, 1QQD, 6JTO, 5VGD, 5W6A, 5W69, and 5W67.\n",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "97243aff-e63d-4819-8db7-24891ab24540",
+      "submission_id": "fc21f69e-f00e-40ae-bda2-ac15ba86356c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chyung-Ru Wang, https://ror.org/000e0be47 Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75670.sa0](https://doi.org/10.7554/eLife.75670.sa0)\n\nIn this study, the authors use structural, functional, and immunopeptidomics analysis to provide insights into how HLA-C C1/C2 dimorphism impacts T cell recognition. This knowledge is important in immunotherapies targeting HLA-C-specific T cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Chyung-Ru Wang, https://ror.org/000e0be47 Northwestern University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75670.sa1](https://doi.org/10.7554/eLife.75670.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"T cells discriminate between groups C1 and C2 HLA-C\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Anthony W Purcell (Reviewer #1); Dirk Zajonc (Reviewer #3).\n\nReviewer #1 (Recommendations for the authors):\n\nPoints for response buy the authors\n\n1) Was the pHLA complex stability for the WT and heteroclitic peptide assessed for HLA C*05 and C*08??\n\n2) Can the authors comment on the expected conformation of the WT 9mer in C*05 to that observed for the heteroclitic variant? A direct comparison of the bound peptides bound to both C-allotypes would be useful.\n\n3) In Figure 2 the peptidome analysis is shown. In Figure 2G which allotype is the outlier for HLA C1 allotypes? How does this data point impact on the significance? It is important to provide more qualitative information about the data sets used in this analysis = - how do the different data sets compare \u2013 some are clearly more comprehensive than others \u2013 how many of the datasets are based on monoallelic data vs inferred allotype specificity from other cell lines? Are the two studies performed using similar technology, were the same FDR rates used to report peptides and has this been taken into account in the authors reanalysis? Which databases and search engines were used \u2013 it would be most accurate to re-search the raw data together to provide a common analytic workflow to remove biases in the data. At the very least the authors should comment on these influences on the composition of the peptides used for this analysis.\n\n4) It would be interesting to see the results of peptide stabilization assays (akin to T2 stabilization) of the peptides in the TAP deficient 221 cell lines to address the anticipated density of pHLA used for the various TCR readouts/ Likewise was W6/32 flowed over the SPR chis to show similar levels of conformation pHLA were immobilized prior to the SPR analysis? This would seem a critical control?\n\nReviewer #2 (Recommendations for the authors):\n\n1. Supplementary Figure S1B shows that KIR2DL2 binds quite well to 221-C*05:01, would this be a consideration for any therapies targeting the T cell response?\n\n2. Why were 2 different functional readouts utilized for assessing responses from the Jurkat cell lines (e.g. Figure 1C vs Figure S1C)?\n\n3. It was slightly unclear to me why the G12D-A18L peptide was not used for both C*05:01 and C*08:02 for the SPR/tetramer experiments (or as a target for crystallography), given this peptide binds to both alleles and shows improved recognition by TCR9a.\n\n4. The authors state that TCR10 bound C*05 with slightly weaker affinity but this is difficult to judge with such minor differences and large error values.\n\n5. The legend indicates Figure 3C is the summary of 2 experiments and shows mean +/- standard error but the error bars appear to be missing. Moreover, the text indicates the highest concentration of peptide tested was 40 ug/ml, yet only up to 20 ug/ml is shown.\n\n6. The saturation plot in Figure 3F shows a TCR concentration up to 80 \u03bcm was used for SPR, yet the highest concentration in 3D and 3E is 40 \u00b5M. Was there a reason the highest concentration was not shown on the sensorgrams in Figure 3D and 3E?\n\n7. For Figure 3, it is unclear if the KDs provided are the average KDs from the independent experiments or if it is the KD derived from the curves shown. Was there any variation between the independent experiments or is the large error due to poor curve fitting? Please clarify.\n\n8. It would be good to provide the kinetic fit curves overlaid with the raw data for TCR9a binding to C*05:01-KRAS-G12D-A18L (Figure 3A).\n\n9. What the level of surface expression of the mutant HLA-C*0501-N77S and C*05:01K-80N equivalent to the wild-type?\n\n10. Given the importance of position 77 and the observation that the C*05:01 N77S at least partially recovered recognition by Jurkat TCR9a, is the mutant C*08:01 S77N no longer recognised by TCR9a (or TCR10)? These are important experiments to confirm the importance of position 77.\n\n11. Typo line 53: should be Crohn's disease.\n\n12. Typo line 193: should read Lys (Figure 4C).\n\n13. Typo in figure legend to Sup Figure 1 221-C805:01.\n\nReviewer #3 (Recommendations for the authors):\n\nThere is some discussion/speculation about the impact of the different peptides in KIR2DL1-3 recognition. Especially in the scenario where the large amino acid at P(Omega)-1 would diminish T cell recognition. Would the authors think that this would also impact KIR2DL binding and thereby increase NK cell cytotoxicity? Since Dr. Long is an expert in KIR's, these assays should be easy to perform.\n",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "478ae4b4-8891-47d1-aa17-28e90c56145d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C1",
+      "claim": "Dimorphic amino acids at positions 77 and 80 delineate HLA-C allotypes into two groups, C1 and C2.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimorphic amino acids at positions 77 and 80 delineate HLA-C allotypes into two groups, C1 and C2, which associate with disease through interactions with C1 and C2-specific natural killer cell receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about HLA-C classification and is cited in the introduction with references to the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "aba711b2-af80-4ecf-900d-0c1ea98bef9e",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C2",
+      "claim": "C1 and C2 HLA-C groups associate with disease through interactions with C1 and C2-specific natural killer cell receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimorphic amino acids at positions 77 and 80 delineate HLA-C allotypes into two groups, C1 and C2, which associate with disease through interactions with C1 and C2-specific natural killer cell receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction discussing disease associations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "bbd11441-2005-4360-aaeb-8c261f2aa9b4",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C3",
+      "claim": "KRAS-G12D neoantigen-specific T cell receptors (TCRs) discriminated between C1 and C2 presenting the same KRAS-G12D peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Using HLA-C allotypes that differ only by the C1/C2-defining residues, we found that KRAS-G12D neoantigen-specific T cell receptors (TCRs) discriminated between C1 and C2 presenting the same KRAS-G12D peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 1, 3, and functional assays throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "65e39a03-6140-4f8d-84e7-9d35f8d077c8",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C4",
+      "claim": "Ser77 in C1 and Asn77 in C2 influence amino acid preference near the peptide C-terminus (p\u03a9), including the p\u03a9-1 position.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional experiments, and immunopeptidomics analysis revealed that Ser77 in C1 and Asn77 in C2 influence amino acid preference near the peptide C-terminus (p\u03a9), including the p\u03a9-1 position, in which C1 favors small and C2 prefers large residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data in Figure 5, immunopeptidomics analysis in Figure 6, and functional experiments in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "a926e63c-5671-4b64-ab65-1cc698b4ca31",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C5",
+      "claim": "C1 favors small residues at the p\u03a9-1 position and C2 prefers large residues at the p\u03a9-1 position.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural and functional experiments, and immunopeptidomics analysis revealed that Ser77 in C1 and Asn77 in C2 influence amino acid preference near the peptide C-terminus (p\u03a9), including the p\u03a9-1 position, in which C1 favors small and C2 prefers large residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by immunopeptidomics data in Figure 6 showing enrichment of small residues (Ser, Ala, Pro) in C1 and large residues (Phe, Leu, Lys, Met, Arg, Trp, Tyr) in C2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "afa6b51e-94f9-4f02-b737-f6a3c8f5d425",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C6",
+      "claim": "The C1/C2 dimorphism resulted in weaker TCR affinity for KRAS-G12D-bound C2-HLA-C despite conserved TCR contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in weaker TCR affinity for KRAS-G12D-bound C2-HLA-C despite conserved TCR contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SPR binding data in Figure 3 showing reduced affinity of TCR9a and TCR10 for C2 compared to C1, and structural data in Figure 4 showing conserved TCR contacts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6fb60e81-f4dd-4763-b421-dadb8b64b32e",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C7",
+      "claim": "The C1/C2 dimorphism impacts peptide presentation and HLA-C-restricted T cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C1/C2 dimorphism on its own impacts peptide presentation and HLA-C-restricted T cell responses, with implications in disease, including adoptive T cell therapy targeting KRAS-G12D-induced cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by all experimental data showing differential peptide binding (Figure 2), TCR recognition (Figures 1, 3), and structural differences (Figures 4, 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "47f05b16-89ea-4351-b5eb-d3b8829f05cf",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C8",
+      "claim": "HLA-C is thought to play a lesser role in T cell responses compared to HLA-A and HLA-B due to its lower cell surface expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-C is thought to play a lesser role in T cell responses compared to that of HLA-A and HLA-B due to its lower cell surface expression level (Apps et al., 2015; McCutcheon et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6beda77a-cd66-472e-a561-b91d336e7a0a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C9",
+      "claim": "HLA-C allotypes with high expression were associated with increased T cell responses and slower progression to AIDS in HIV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In HIV infection, HLA-C allotypes with a high expression were associated with increased T cell responses and slower progression to AIDS, while higher HLA-C expression was also linked with susceptibility to Crohn's disease (Apps et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Apps et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "4ee8277b-a2f6-4a26-9a18-d583b1199e69",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C10",
+      "claim": "Higher HLA-C expression was linked with susceptibility to Crohn's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In HIV infection, HLA-C allotypes with a high expression were associated with increased T cell responses and slower progression to AIDS, while higher HLA-C expression was also linked with susceptibility to Crohn's disease (Apps et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Apps et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "70527143-7642-450c-8a95-1a5d4b67ad6f",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C11",
+      "claim": "The strongest genetic association in psoriasis is with HLA-C*06:02, thought to be mediated by HLA-C*06:02-restricted T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In psoriasis, the strongest genetic association is with HLA-C*06:02, thought to be mediated by HLA-C*06:02-restricted T cells (Chen and Tsai, 2018; Lande et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen and Tsai, 2018 and Lande et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "58783cb1-f386-4510-acdf-ba2e2bfc3c90",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C12",
+      "claim": "Multiple HLA-C*08:02-restricted TCRs specific for the oncogenic hotspot mutation KRAS-G12D were identified in several cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, multiple HLA-C*08:02-restricted TCRs specific for the oncogenic hotspot mutation KRAS-G12D were identified in several cancer patients (Tran et al., 2015; Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tran et al., 2015 and 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f769b5c0-ab98-415f-a417-1def68ee2a1a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C13",
+      "claim": "Adoptive transfer of expanded KRAS-G12D-specific TILs successfully treated a patient with metastatic colorectal cancer, leading to complete regression of all but one metastatic lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Adoptive transfer of expanded KRAS-G12D-specific TILs successfully treated a patient with metastatic colorectal cancer, leading to complete regression of all but one metastatic lesion (Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tran et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "deeb83f2-22d6-467b-837c-466418bc5001",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C14",
+      "claim": "The remaining lesion after TIL therapy lost HLA-C*08:02 from its genome, demonstrating that HLA-C-restricted T cells can mediate effective antitumor responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining lesion lost HLA-C*08:02 from its genome demonstrating conclusively that HLA-C-restricted T cells can mediate effective antitumor responses (Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tran et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6a626e13-1b5d-4d3b-a057-6447a503948d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C15",
+      "claim": "HLA-C is the most recently evolved classical HLA-I gene, present in only humans and other apes.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-C is the most recently evolved classical HLA-I gene, present in only humans and other apes, and has several unique features (Adams and Parham, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Adams and Parham, 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "2ee84771-333e-4260-b46e-6aab2ae17f9a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C16",
+      "claim": "HLA-C is expressed on fetal extravillous trophoblast cells, making it the most polymorphic molecule expressed at the maternal\u2013fetal interface.",
+      "claim_type": "EXPLICIT",
+      "source": "HLA-C, not HLA-A or HLA-B, is expressed on fetal extravillous trophoblast cells, making it the most polymorphic molecule expressed at the maternal\u2013fetal interface (King et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to King et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f4434955-7448-4ae0-a03c-775257ed7b2f",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C17",
+      "claim": "All HLA-C allotypes serve as ligands for the killer-cell immunoglobulin-like receptors (KIR).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all HLA-C allotypes serve as ligands for the killer-cell immunoglobulin-like receptors (KIR), whereas only a subset of HLA-A and HLA-B allotypes bind KIRs (Hilton and Parham, 2017; Moesta et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hilton and Parham, 2017 and Moesta et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "0633fc1d-deb2-4c15-9729-d557fc365dbe",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C18",
+      "claim": "Only a subset of HLA-A and HLA-B allotypes bind KIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, all HLA-C allotypes serve as ligands for the killer-cell immunoglobulin-like receptors (KIR), whereas only a subset of HLA-A and HLA-B allotypes bind KIRs (Hilton and Parham, 2017; Moesta et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hilton and Parham, 2017 and Moesta et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "21440016-669b-4c85-b007-0498847932f1",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C19",
+      "claim": "C1 HLA-C allotypes carry Ser77 and Asn80 and are ligands for the inhibitory receptors KIR2DL2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "C1 HLA-C allotypes carry Ser77 and Asn80 and are ligands for the inhibitory receptors KIR2DL2/3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C1 HLA-C and is supported by the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "2f038caa-8249-4c1c-8342-c1248adae91a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C20",
+      "claim": "The inhibitory receptor KIR2DL1 binds C2 HLA-C allotypes, which carry Asn77 and Lys80.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory receptor KIR2DL1 binds C2 HLA-C allotypes, which carry Asn77 and Lys80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C2 HLA-C and is supported by the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "d5efedf0-52a2-4100-b625-92cee455ce5b",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C21",
+      "claim": "The KIR discriminate C1 and C2 HLA-C largely via position 44 in the KIR and direct interactions with HLA-C position 80.",
+      "claim_type": "EXPLICIT",
+      "source": "The KIR discriminate C1 and C2 HLA-C largely via position 44 in the KIR (Winter and Long, 1997) and direct interactions with HLA-C position 80 (Boyington et al., 2000; Boyington and Sun, 2002; Fan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Winter and Long, 1997; Boyington et al., 2000; Boyington and Sun, 2002; Fan et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f8fe57f8-fa97-4f4b-b153-46f441478dfd",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C22",
+      "claim": "Genetic association studies link C1/C2 status and the presence or absence of specific KIR-HLA combinations with risk of multiple human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic association studies link C1/C2 status and the presence or absence of specific KIR-HLA combinations with risk of multiple human diseases, including cancer, infectious diseases, autoimmunity, and disorders of pregnancy (Hiby et al., 2004; Khakoo et al., 2004; Kulkarni et al., 2008; Littera et al., 2016; Parham and Moffett, 2013; Rajagopalan and Long, 2005; Venstrom et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to genetic association studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f8dc1e71-bfa8-4b2f-a136-d975563df8ed",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C23",
+      "claim": "HLA-C*08:02 and HLA-C*05:01 differ only by the C1/C2 dimorphism defined by positions 77 and 80.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared TCR9a and TCR10 recognition of HLA-C*08:02 (C1) with that of HLA-C*05:01, a C2 allotype that is identical in sequence to HLA-C*08:02 apart from the C1/C2 defining residues at positions 77 and 80 (Sim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sim et al., 2017 and is shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "83396538-9210-4ca8-a75f-89e33fae767b",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C24",
+      "claim": "28 different 'self' peptides eluted from HLA-C*05:01 bound to both HLA-C*05:01 (C2) and HLA-C*08:02 (C1).",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that 28 different 'self' peptides eluted from HLA-C*05:01 bound to both HLA-C*05:01 (C2) and HLA-C*08:02 (C1), suggesting a minimal impact of the C1/C2 dimorphism on peptide binding to HLA-C (Sim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "4bf514af-b2a0-4056-80b4-f2d08107bf7b",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C25",
+      "claim": "TCR9a is specific for G12D-9mer (GADGVGKSA).",
+      "claim_type": "EXPLICIT",
+      "source": "TCR9a is specific for G12D-9mer (GADGVGKSA), while TCR10 is specific for G12D-10mer (GADGVGKSAL) (Sim et al., 2020; Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sim et al., 2020 and Tran et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "8d8da5df-eb4b-4441-8e9a-0d01c2798742",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C26",
+      "claim": "TCR10 is specific for G12D-10mer (GADGVGKSAL).",
+      "claim_type": "EXPLICIT",
+      "source": "TCR9a is specific for G12D-9mer (GADGVGKSA), while TCR10 is specific for G12D-10mer (GADGVGKSAL) (Sim et al., 2020; Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sim et al., 2020 and Tran et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "b2f12fa0-fc9f-4867-b4b6-d6ec72163076",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C27",
+      "claim": "TCR9a and TCR10 do not share TCR V genes and recognize their peptide antigens in different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR9a and TCR10 do not share TCR V genes and recognize their peptide antigens in different ways (Sim et al., 2020; Tran et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sim et al., 2020 and Tran et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "3f5782c3-8de4-47bc-95fc-de4201de6859",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C28",
+      "claim": "Both the 9mer and 10mer G12D but not their WT KRAS peptides activated their respective TCR9a and TCR10 expressing T cells in the presence of C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both the 9mer and 10mer G12D but not their WT KRAS peptides activated their respective TCR9a and TCR10 expressing T cells in the presence of C*08 (Figure 1C and D; Sim et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and D and citation to Sim et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "9c3771af-9c8f-4cd0-9c82-e338378cf881",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C29",
+      "claim": "No activation of TCR9a was observed when the 9mer G12D KRAS peptide was presented by C*05.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed no activation of TCR9a and only weak activation of TCR10 when the 9mer and 10mer G12D KRAS peptides were presented by C*05, respectively (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "46fd2e05-e891-4088-a676-10f28447db9a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C30",
+      "claim": "Only weak activation of TCR10 was observed when the 10mer G12D KRAS peptide was presented by C*05.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed no activation of TCR9a and only weak activation of TCR10 when the 9mer and 10mer G12D KRAS peptides were presented by C*05, respectively (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "2d1bcd37-f477-44fe-bb99-da768df5500f",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C31",
+      "claim": "G12D-9mer loaded on C*05 did not activate Jurkat-TCR9a cells in TAP-deficient cell experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments yielded similar results using a different functional readout (expression of CD69), as G12D-9mer loaded on C*05 did not activate Jurkat-TCR9a cells, while G12D-10mer loaded on C*05 did stimulate Jurkat-TCR10 cells but required higher peptide concentrations than when loaded on C*08 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "baabc5c4-6d7d-4fc3-8f41-3c1162984eaf",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C32",
+      "claim": "G12D-10mer loaded on C*05 stimulated Jurkat-TCR10 cells but required higher peptide concentrations than when loaded on C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments yielded similar results using a different functional readout (expression of CD69), as G12D-9mer loaded on C*05 did not activate Jurkat-TCR9a cells, while G12D-10mer loaded on C*05 did stimulate Jurkat-TCR10 cells but required higher peptide concentrations than when loaded on C*08 (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "63486de3-5a58-4594-92b0-8984793e2c7a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C33",
+      "claim": "G12D-9mer only stabilized C*08 and not C*05 in peptide loading assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, G12D-9mer only stabilized C*08 and not C*05, while G12D-10mer stabilized both allotypes (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "23b0d61f-ccc2-4995-98f0-3120403b6d06",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C34",
+      "claim": "G12D-10mer stabilized both C*08 and C*05 allotypes in peptide loading assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, G12D-9mer only stabilized C*08 and not C*05, while G12D-10mer stabilized both allotypes (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "acc04e50-1ed2-4f65-816e-4ae7225d8ea7",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C35",
+      "claim": "Substitution of p\u03a9 Ala to Leu in G12D-9mer (A18L-9mer) improved binding to HLA-C*08:02.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that substitution of p\u03a9 Ala to Leu in G12D-9mer (A18L-9mer: 10GADGVGKSL) improved binding to HLA-C*08:02, and T cell recognition by Jurkat-TCR9a (Sim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sim et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "4c9005e4-6061-4921-a746-70527513ebbc",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C36",
+      "claim": "A18L-9mer bound C*05 well.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, A18L-9mer bound C*05 well (Figure 2A and B) and stimulated Jurkat-TCR9a cells (Figure 2C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "ffeaa760-bf56-4417-9fd6-32fbde4824a9",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C37",
+      "claim": "A18L-9mer stimulated Jurkat-TCR9a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, A18L-9mer bound C*05 well (Figure 2A and B) and stimulated Jurkat-TCR9a cells (Figure 2C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6429fd36-3105-4a10-a9de-fd113c01071a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C38",
+      "claim": "The inability of G12D-9mer to bind C*05 accounts for its lack of activation of Jurkat-TCR9a cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the inability of G12D-9mer to bind C*05 accounts for its lack of activation of Jurkat-TCR9a cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the peptide binding data (Figure 2) and T cell activation data (Figure 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6682a0a9-5a00-4e3a-84c0-2e1dd269db74",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C39",
+      "claim": "The C1/C2 dimorphism selectively impacts peptide binding to HLA-C in a sequence-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these data suggest that the C1/C2 dimorphism selectively impacts peptide binding to HLA-C in a sequence-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential binding of G12D-9mer and A18L-9mer to C*05 and C*08.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c50b68e8-7d6f-4c88-8b58-c07f2f49db99",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C40",
+      "claim": "The five most abundant p\u03a9 residues (Leu, Val, Ile, Phe, and Met) were the same in both C*08 and C*05, accounting for 97% of C*08 and 98% of C*05 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We first compared the immunopeptidomes of C*08 and C*05 as the residues that form the p\u03a9 binding pocket of C*08 and C*05 are identical and accordingly the five most abundant p\u03a9 residues (Leu, Val, Ile, Phe, and Met) were the same in both allotypes, accounting for 97% of C*08% and 98% of C*05 sequences (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "1599114f-0997-4ac2-ab51-8bfa3f7ad9a5",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C41",
+      "claim": "Leucine was the most common p\u03a9 in both C*08 and C*05 but had a higher frequency in C*08 peptides (73%) than C*05 (37%).",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine was the most common p\u03a9 in both allotypes but had a higher frequency in C*08 peptides than C*05 (C*08 = 73%, C*05 = 37%) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "2b9a6eeb-8351-45ee-9a26-4fda0befc5de",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C42",
+      "claim": "Among 9mer peptides, the frequency of Ala at p\u03a9 position was 1.5% in C*08, significantly higher than 0.13% in C*05.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 9mer peptides, the frequency of Ala at p\u03a9 position was 1.5% (30 out of 1986) in C*08, significantly higher (p=0.0016 Fisher's exact test) than that of 0.13% (1 out of 732) in C*05-bound peptides (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics data shown in Figure 2E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "cc2d415c-b182-4b88-a165-23629d18b969",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C43",
+      "claim": "p\u03a9 Ala was the amino acid most enriched in C1 allotypes, with a frequency of 1.45% \u00b1 1.4% in C1 allotypes compared to 0.27% \u00b1 0.19% in C2 allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In concordance with the comparison of C*05 and C*08 immunopeptidomes, p\u03a9 Ala was the one most enriched in C1 allotypes, with a frequency of 1.45% \u00b1 1.4% in C1 allotypes compared to 0.27% \u00b1 0.19% in C2 allotypes (Figure 2F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics data shown in Figure 2F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "2c1610fc-0f2b-44ec-95c6-c08790bdfa8c",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C44",
+      "claim": "C1 allotypes bind peptides with p\u03a9 Ala to a greater extent than C2 allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, C1 allotypes bind peptides with p\u03a9 Ala to a greater extent than C2 allotypes, consistent with the ability of G12D-9mer to bind C*08 and not C*05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on immunopeptidomics analysis (Figure 2) and peptide binding experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "4b8f1cb9-cf86-41d1-b4d9-3c0ac16a2f58",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C45",
+      "claim": "TCR9a bound to HLA-C*08 in the presence of G12D-9mer peptide with 16 nM affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "While TCR9a bound to the C1 allotype HLA-C*08 in the presence of G12D-9mer peptide with 16 nM affinity (Sim et al., 2020), it displayed a binding affinity of 108 nM for the C2 allotype HLA-C*05 in the presence of Leu anchor variant of G12D-9mer, an approximately sevenfold affinity reduction compared to the C1 allotype (Figure 3A, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sim et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6487f126-038f-4246-a696-90dd764cb3b4",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C46",
+      "claim": "TCR9a displayed a binding affinity of 108 nM for HLA-C*05 in the presence of A18L-9mer, an approximately sevenfold affinity reduction compared to C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "While TCR9a bound to the C1 allotype HLA-C*08 in the presence of G12D-9mer peptide with 16 nM affinity (Sim et al., 2020), it displayed a binding affinity of 108 nM for the C2 allotype HLA-C*05 in the presence of Leu anchor variant of G12D-9mer, an approximately sevenfold affinity reduction compared to the C1 allotype (Figure 3A, Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data shown in Figure 3A and Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "397d22d5-4340-41bc-8583-77019255ea54",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C47",
+      "claim": "TCR10 bound C*05:01-G12D-10mer with KD = 13 \u00b1 6 \u03bcM by steady-state kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "By steady-state kinetics, TCR10 binding was less than twofold weaker to C*05:01-G12D-10mer (KD = 13 \u00b1 6 \u03bcM) than C*08:02-G12D-10mer (KD = 8 \u00b1 5 \u03bcM) (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "21d55faa-f1ef-4622-acc1-da23af31ef18",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C48",
+      "claim": "TCR10 bound C*08:02-G12D-10mer with KD = 8 \u00b1 5 \u03bcM by steady-state kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "By steady-state kinetics, TCR10 binding was less than twofold weaker to C*05:01-G12D-10mer (KD = 13 \u00b1 6 \u03bcM) than C*08:02-G12D-10mer (KD = 8 \u00b1 5 \u03bcM) (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "fd4d380c-5717-4b1b-9b58-4f0fc13ed06a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C49",
+      "claim": "TCR10 had almost 20-fold slower on rate with C*05:01-G12D-10mer (Kon = 6.2 \u00b1 1.2 \u00d7 10\u00b3 M\u207b\u00b9 s\u207b\u00b9) than with C*08:02-G12D-10mer (Kon = 1.2 \u00b1 0.9 \u00d7 10\u2075 M\u207b\u00b9 s\u207b\u00b9).",
+      "claim_type": "EXPLICIT",
+      "source": "However, by kinetic analysis of the binding curves (Figure 3G), TCR10 had almost 20-fold slower on rate with C*05:01-G12D-10mer (Kon = 6.2 \u00b1 1.2 \u00d7 103 M\u20131 s\u20131) than with C*08:02-G12D-10mer (Kon = 1.2 \u00b1 0.9 \u00d7 105 M\u20131 s\u20131).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic analysis of SPR data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "0f0241f2-c9e7-40a5-b4c8-483422f9c82c",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C50",
+      "claim": "Neither TCR9a nor TCR10 make direct contacts to HLA-C positions Ser 77 and Asn 80.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither TCR9a nor TCR10 make direct contacts to HLA-C positions Ser 77 and Asn 80 (Sim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sim et al., 2020 and structural data in Figure 4.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "7e6b4967-4402-4a4c-b947-0381a3985411",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C51",
+      "claim": "The crystal structure of TCR9a in complex with C*05-A18L-9mer was determined to a high resolution of 1.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the impact of C2 residues Asn 77 and Lys 80 on T cell recognition, we determined the crystal structure of TCR9a in complex with C*05-A18L-9mer to a high resolution of 1.9 \u00c5 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure determination described in the methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "5c5678b1-e70b-4857-b62c-a99cd3599472",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C52",
+      "claim": "TCR9a adopted the same binding mode when in complex with C*05 as in the C*08 complex structure.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR9a adopted the same binding mode when in complex with C*05, as in the C*08 complex structure (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f363e6f6-2be2-4816-b92b-ba6e04a597b4",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C53",
+      "claim": "All contacts observed between TCR9a and the C2 HLA-C*05 are conserved in the structure of TCR9a complexed with C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "All these contacts observed between TCR9a and the C2 HLA-C*05 are conserved in the structure of TCR9a complexed with C*08 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison data in Supplementary file 2 and Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "b6009b78-b751-4a4b-9dd7-a2243bf248f5",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C54",
+      "claim": "The dimorphic residues 77 and 80 on the C2 HLA-C*05 do not interact with TCR9a.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the C1 HLA-C*08, the dimorphic residues 77 and 80 on the C2 HLA-C*05 also do not interact with TCR9a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "bd62523a-09a1-46f7-a4a6-b75ec2b41be4",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C55",
+      "claim": "The closest TCR residue to HLA-C position 77 or 80 is Glu 49 of the TCR\u03b2 chain, which is greater than 7 \u00c5 away from HLA-C position 80.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest TCR residue to HLA-C position 77 or 80 is Glu 49 of the TCR\u03b2 chain that interacts with Lys p7 of the peptide but is greater than 7 \u00c5 away from HLA-C position 80.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis of the TCR9a-C*05 complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c3638421-c42c-47b4-8457-ab3925e076c2",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C56",
+      "claim": "Position 77 side chain is orientated directly into the peptide-binding groove, while position 80 sits atop the \u03b11-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The position 77 side chain is orientated directly into the PBG, while position 80 sits atop the \u03b11-helix (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural visualization shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "ce756379-d46b-4e48-a4e3-e1def4b7ddaa",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C57",
+      "claim": "Position 77 is Ser in C*08 (C1) and Asn in C*05 (C2) and both form an h-bond of the same distance with the amide of the terminal peptide bond between p\u03a9 and p8 (p\u03a9-1).",
+      "claim_type": "EXPLICIT",
+      "source": "Position 77 is Ser in C*08 (C1) and Asn in C*05 (C2) and both form an h-bond of the same distance with the amide of the terminal peptide bond between p\u03a9 and p8 (p\u03a9-1) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "76880c89-2264-480a-aeb8-60c7f0c9fdad",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C58",
+      "claim": "Peptide p8 was higher out of the peptide-binding groove in C*05 compared to C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the structures of C*05 and C*08, the HLA-C \u03b11-helices were displaced relative to each other and peptide p8 was higher out of the PBG in C*05 compared to C*08 (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "ea9f8f83-77c8-40a7-8bc7-28bd9f231973",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C59",
+      "claim": "The distance between the C\u03b1 of peptide p8 and the C\u03b2 of HLA-C position 77 was 4.7 \u00c5 in C*08 and 5.7 \u00c5 in C*05.",
+      "claim_type": "EXPLICIT",
+      "source": "This distance was 4.7 \u00c5 and 5.7 \u00c5 in the C*08 and C*05 structures, respectively (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural measurements shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "e492a548-87d1-49b8-be17-7102f92fb83f",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C60",
+      "claim": "The difference between the C\u03b1 of peptide p8 and HLA-C 77 C\u03b2 was maintained between C1 and C2 HLA-C structures (C1 = 4.6 \u00b1 0.11 \u00c5, C2 = 5.7 \u00b1 0.22 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the difference between the C\u03b1 of peptide p8 and HLA-C 77 C\u03b2 was maintained between C1 and C2 HLA-C structures (C1 = 4.6 \u00b1 0.11 \u00c5, C2 = 5.7 \u00b1 0.22 \u00c5) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of 12 HLA-C structures shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f5962df5-43d5-466d-bf87-c1e8d748ed75",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C61",
+      "claim": "In all five C1 allotype structures, the p8 side chain was within van der Waals range of Val 76 (3.3\u20134.0 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "In all five C1 allotype structures, the p8 side chain was within van der Waals range of Val 76 (3.3\u20134.0 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis of multiple HLA-C structures shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "6cff5e03-7ddb-4570-a11e-332b369090cc",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C62",
+      "claim": "The p8 side chain was out of contact range with Val 76 in all but one C2 HLA-C structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the p8 side chain was out of contact range with Val 76 in all but one C2 HLA-C structures (Figure 5H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 5H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "794f9aaf-09f3-458d-a849-ee42f49cd13d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C63",
+      "claim": "The torsion angle of the terminal peptide bond orientates p8 towards the \u03b11 helix in C1 allotypes and out of the groove in C2 allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to be due in part to the torsion angle of the terminal peptide bond that orientates p8 towards the \u03b11 helix in C1 allotypes and out of the groove in C2 allotypes (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "90e9a3dd-9370-43c6-acd6-560e8dedc871",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C64",
+      "claim": "The C1/C2 dimorphism impacts the position and orientation of the peptide at p\u03a9-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C1/C2 dimorphism impacts the position and orientation of the peptide at p\u03a9-1, suggesting that position 77 is the major determinant of the difference between C*05 and C*08.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "ebd99ab0-fa15-47ec-8465-0ec9c0b8bd22",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C65",
+      "claim": "Position 77 is the major determinant of the difference between C*05 and C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C1/C2 dimorphism impacts the position and orientation of the peptide at p\u03a9-1, suggesting that position 77 is the major determinant of the difference between C*05 and C*08.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested by structural analysis and supported by mutagenesis experiments in Figure 5K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "81e038cc-2db3-4c5e-824f-258d7ee729d9",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C66",
+      "claim": "C*05-N77S recovered Jurkat-TCR9a responses, though not completely.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of stimulation of Jurkat-TCR9a by C*05 was minimally impacted by C*05-K80N, while C*05-N77S recovered Jurkat-TCR9a responses, though not completely (Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c8f46990-f07b-4dbe-b07d-fce78c79c414",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C67",
+      "claim": "Stimulation of Jurkat-TCR10 cells by HLA-C*05:01 was not improved by single substitutions at positions 77 and 80.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, stimulation of Jurkat-TCR10 cells by HLA-C*05:01 was not improved by single substitutions at positions 77 and 80, suggesting a synergistic effect of positions 77 and 80 on recognition of HLA-C*08:02 by TCR10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by functional data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "e32f8d97-3e96-4a89-b1e9-3c40a78e579d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C68",
+      "claim": "There was a weak correlation (r = 0.46) at p7 and no correlation in amino acid usage (r = \u20130.01) at p8 (p\u03a9-1) between C*08 and C*05 immunopeptidomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was a weak correlation (r = 0.46) at p7 and no correlation in amino acid usage (r = \u20130.01) at p8 (p\u03a9-1) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "194693f3-08e4-443b-a037-7e4ce01ed633",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C69",
+      "claim": "At p\u03a9-1, Ala and Ser made up over 30% of sequences unique to C*08, but only 5% of sequences unique to C*05.",
+      "claim_type": "EXPLICIT",
+      "source": "At p\u03a9-1, Ala and Ser made up over 30% of sequences unique to C*08, but only 5% of sequences unique to C*05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunopeptidomics analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "dbe620e5-bf3b-4dc7-8aa3-f69bf7408513",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C70",
+      "claim": "Leu, Lys, and Arg were found in approximately 40% of sequences unique to C*05, but only 7% of sequences unique to C*08.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Leu, Lys, and Arg were found in approximately 40% of sequences unique to C*05, but only 7% of sequences unique to C*08 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "e49f792f-22d5-4c81-9b98-56931deb5d54",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C71",
+      "claim": "At p8, C1 allotypes are enriched for Ser, Ala, and Pro, while C2 allotypes are enriched for Phe, Leu, Lys, Met, Arg, Trp, and Tyr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that at p8, C1 allotypes are enriched for Ser, Ala, and Pro, while C2 allotypes are enriched for Phe, Leu, Lys, Met, Arg, Trp, and Tyr (Figure 6B, Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics analysis shown in Figure 6B and Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "899b5ebb-d6ff-4b4b-97cc-81aa63110117",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C72",
+      "claim": "There was a strong correlation between amino acid enrichment at p8 in C2 allotypes and amino acid side-chain volume.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong correlation between amino acid enrichment at p8 in C2 allotypes and amino acid side-chain volume, demonstrating that the C1/C2 dimorphism imposes a size constraint on the peptides bound to HLA-C (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "a251ae4a-8ef1-4e0e-8be1-3cff89708461",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C73",
+      "claim": "The C1/C2 dimorphism imposes a size constraint on the peptides bound to HLA-C.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong correlation between amino acid enrichment at p8 in C2 allotypes and amino acid side-chain volume, demonstrating that the C1/C2 dimorphism imposes a size constraint on the peptides bound to HLA-C (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the correlation analysis in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "b20b1df5-0609-4db9-ab7e-953ba4faaf83",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C74",
+      "claim": "In peptides eluted from C1 allotypes, the preference for smaller residues at p8 was accentuated in peptides with p\u03a9-Ala compared to those with p\u03a9-Leu.",
+      "claim_type": "EXPLICIT",
+      "source": "In peptides eluted from C1 allotypes, the preference for smaller residues at p8 was accentuated in peptides with p\u03a9-Ala compared to those with p\u03a9-Leu (Figure 6\u2014figure supplement 1D), suggesting that size at p\u03a9-1 is especially important for peptides with p\u03a9-Ala.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunopeptidomics analysis shown in Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "3c216864-6145-439a-8974-19571238f207",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C75",
+      "claim": "Substitution at p8 in G12D-9mer to Leu, Lys, and Arg substantially increased the EC50 by approximately 1000-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of Jurkat-TCR9a by C*08 cells loaded with G12D-9mer p8 substitutions to Leu, Lys, and Arg substantially increased the EC50 by approximately 1000-fold, while substitution to Ala, Gly, Glu, Val had a minimal impact on the EC50 (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "7f87f721-a388-448c-8091-8478edb1fea7",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C76",
+      "claim": "Substitution at p8 in G12D-9mer to Ala, Gly, Glu, Val had a minimal impact on the EC50.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation of Jurkat-TCR9a by C*08 cells loaded with G12D-9mer p8 substitutions to Leu, Lys, and Arg substantially increased the EC50 by approximately 1000-fold, while substitution to Ala, Gly, Glu, Val had a minimal impact on the EC50 (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "07108bab-92a2-4d46-84cb-efcf5d850cde",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C77",
+      "claim": "p8 substitutions in A18L-9mer to Lys, Arg, and Leu increased the EC50 by roughly 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The same p8 substitutions in A18L-9mer had much less impact on Jurkat-TCR9a stimulation; however, p8 Lys, Arg, and Leu increased the EC50 by roughly 10-fold (Figure 7D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by functional data shown in Figure 7D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "ac9cbbb9-bd04-4c52-93b3-77528a0701a4",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C78",
+      "claim": "The G12D-9mer and G12D-10mer are considered public or shared neoantigens due to the high frequency of cancers with KRAS-G12D mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The G12D-9mer and G12D-10mer are considered public or shared neoantigens due to the high frequency of cancers with KRAS-G12D mutations (Cox et al., 2014; Pearlman et al., 2021; Stephen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cox et al., 2014; Pearlman et al., 2021; Stephen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "a97156fe-b106-4dbc-8891-0326e6c64b14",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C79",
+      "claim": "The ability of C*05 to bind G12D-10mer means HLA-C*05:01-positive individuals may be eligible for immunotherapies targeting KRAS-G12D.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of C*05 to bind G12D-10mer means HLA-C*05:01-positive individuals may be eligible for such therapies; however, identifying a more sensitive receptor than TCR10 would be needed to translate these findings for clinical application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental findings that C*05 can bind G12D-10mer.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "22a5914b-6b4c-41dc-b440-70b8d08b86b8",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C80",
+      "claim": "T cells, like NK cells, can discriminate between the dimorphic HLA-C allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our study establishes that T cells, like NK cells, can discriminate between the dimorphic HLA-C allotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "405fb5ac-0973-4795-814e-e873b39f176d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C81",
+      "claim": "The C1/C2 dimorphism defines two distinct peptide-binding groove structures that impose size constraints at p\u03a9-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the C1/C2 dimorphism defines two distinct PBG structures that impose size constraints at p\u03a9-1 and allow C1 but not C2 allotypes to bind peptides with shorter p\u03a9 anchors, like Ala in G12D-9mer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on structural analysis (Figure 5) and immunopeptidomics data (Figure 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "409a03eb-8b12-49dd-8a86-d222e65d9e6e",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C82",
+      "claim": "C1 but not C2 allotypes can bind peptides with shorter p\u03a9 anchors, like Ala in G12D-9mer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the C1/C2 dimorphism defines two distinct PBG structures that impose size constraints at p\u03a9-1 and allow C1 but not C2 allotypes to bind peptides with shorter p\u03a9 anchors, like Ala in G12D-9mer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide binding data in Figure 2 showing G12D-9mer binds C*08 but not C*05.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "b59af314-2bb7-44a9-9ffd-46ec3b8255d2",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C83",
+      "claim": "As Asn (C2) is larger than Ser (C1), it results in peptide p\u03a9-1 protruding out of the groove, thus permitting larger amino acids at p\u03a9-1 in C2 allotypes compared to C1.",
+      "claim_type": "EXPLICIT",
+      "source": "As Asn (C2) is larger than Ser (C1), it results in peptide p\u03a9-1 protruding out of the groove, thus permitting larger amino acids at p\u03a9-1 in C2 allotypes compared to C1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c4795453-0e4e-42fa-8c1f-5111f786e049",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C84",
+      "claim": "In C1, p\u03a9-1 sits lower in the groove, restricting p\u03a9-1 side chains to smaller residues to avoid clashing with HLA-C position Val 76.",
+      "claim_type": "EXPLICIT",
+      "source": "In C1, p\u03a9-1 sits lower in the groove, restricting p\u03a9-1 side chains to smaller residues to avoid clashing with HLA-C position Val 76.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "beab3c68-d53e-427b-8b55-93cc285fd891",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C85",
+      "claim": "A canonical p\u03a9 anchor can accommodate unfavorable p8 residues, likely via orientating p8 side chain out of the groove like peptides in C2 allotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the penalty imposed for large residues at p8 was diminished with A18L-9mer, suggesting a canonical p\u03a9 anchor can accommodate unfavorable p8 residues, likely via orientating p8 side chain out of the groove like peptides in C2 allotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on functional data in Figure 7 comparing G12D-9mer and A18L-9mer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "1a935d30-6e66-4317-84a5-8ae8098e5886",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C86",
+      "claim": "In C1 allotypes, the additional contacts between Val 76 and p8 may explain the ability of C*08:02 to bind peptides with short, suboptimal p\u03a9 anchors.",
+      "claim_type": "EXPLICIT",
+      "source": "In C1 allotypes, the additional contacts between Val 76 and p8 may explain the ability of C*08:02 to bind peptides with short, suboptimal p\u03a9 anchors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on structural analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c5f05bee-b35b-43e0-8eee-9b98bb2b446e",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C87",
+      "claim": "p\u03a9-1 in C2, which is higher in the peptide-binding groove and orientated away from the \u03b11 helix, is unable to contact Val 76 and therefore cannot support peptides with p\u03a9 Ala.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, p\u03a9-1 in C2, which is higher in the PBG and orientated away from the \u03b11 helix, is unable to contact Val 76 and therefore cannot support peptides with p\u03a9 Ala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural analysis in Figure 5 and peptide binding data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "1ef5b709-0802-418b-88cf-7aad95a028c8",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C88",
+      "claim": "The most likely explanation for diminished TCR binding in the presence of C2 residues is conformational flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The most likely explanation for diminished TCR binding in the presence of C2 residues is that of conformational flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that TCR contacts are conserved but binding is weaker.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "b16da77b-6af2-4a85-89cb-650fc7ffceca",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C89",
+      "claim": "The ability to make the same contacts with C*08 in C*05 likely requires more energetically unfavorable conformational changes, in either peptide, HLA-C, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, TCR9a and TCR10 can bind C*05; however, the ability to make the same contacts with C*08 in C*05 likely requires more energetically unfavorable conformational changes, in either peptide, HLA-C, or both, exemplified by the slow on rate of TCR10 with C*05-G12D-10mer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the slow on rate observed for TCR10 with C*05 in Figure 3G.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c862966d-53b2-4c7c-bc20-43fc62fd2ff2",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C90",
+      "claim": "Viral escape mutants may eliminate T cell recognition of C1 allotypes by increasing side chain size at p\u03a9-1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in infectious diseases, viral escape mutants may eliminate T cell recognition of C1 allotypes by increasing side chain size at p\u03a9-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "992edb70-9983-46dc-a679-d816b878aa4a",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C91",
+      "claim": "Escape mutants that substitute p\u03a9 to smaller residues like Ala may escape T cell recognition of C2 HLA-C but not C1.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, escape mutants that substitute p\u03a9 to smaller residues like Ala may escape T cell recognition of C2 HLA-C but not C1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f378f995-b3e3-4c7c-8807-bc360ffd6711",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C92",
+      "claim": "For peptide vaccines, p\u03a9-1 size could be optimized depending on whether the peptide targets a C1 or C2 HLA-C allotype.",
+      "claim_type": "EXPLICIT",
+      "source": "For peptide vaccines, p\u03a9-1 size could be optimized depending on whether the peptide targets a C1 or C2 HLA-C allotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "1bc75c7a-ef76-47ab-9047-fd4617fee23d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C93",
+      "claim": "HIV-infected individuals can respond to the same epitope (SAEPVPLQL) if they carry HLA-Cw5 or HLA-Cw8.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is evidence that HIV-infected individuals can respond to the same epitope (SAEPVPLQL) if they carry HLA-Cw5 or HLA-Cw8 (Addo et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Addo et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "e207bbae-4b37-441d-8281-fca8ffc3eefa",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "claim_id": "C94",
+      "claim": "The differences in amino acid preferences at p\u03a9-1 may have consequences for KIR recognition of HLA-C as this residue is central to the KIR binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the differences in amino acid preferences at p\u03a9-1 may have enormous consequences for KIR recognition of HLA-C as this residue is central to the KIR binding site (Boyington et al., 2000; Boyington and Sun, 2002; Fan et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and supported by citations about KIR binding sites.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "05b44561-2b6d-4e6c-b91b-e45e81644d89",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The C1/C2 dimorphism in HLA-C, defined by amino acids at positions 77 and 80, delineates HLA-C allotypes into two groups that serve as ligands for specific KIR receptors and associate with disease risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C19-C22 establish well-documented background knowledge about the C1/C2 dimorphism, supported by multiple literature citations. This represents established scientific consensus rather than novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "af291cd9-862c-4464-8b78-0ae7cce85404",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "KRAS-G12D neoantigen-specific TCRs (TCR9a and TCR10) discriminate between C1 (HLA-C*08:02) and C2 (HLA-C*05:01) allotypes presenting the same KRAS-G12D peptides, with TCR9a showing no activation and TCR10 showing only weak activation when peptides are presented by C*05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C32 are supported by consistent functional data across multiple experimental systems (Figures 1C, 1D, Figure 1\u2014figure supplement 1C) using both IL-2 ELISA and CD69 expression readouts. The experiments include appropriate controls (WT peptides) and demonstrate reproducibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The C1/C2 dimorphism selectively impacts peptide binding to HLA-C in a sequence-dependent manner, with G12D-9mer (p\u03a9 Ala) binding only C*08 (C1) and not C*05 (C2), while G12D-10mer (p\u03a9 Leu) and A18L-9mer (p\u03a9 Leu) bind both allotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34, C36-C39, C82 are supported by peptide stabilization assays (Figure 2A-B) and functional T cell activation data (Figures 1, 2C). The differential binding pattern is consistent across multiple experimental approaches and provides a mechanistic explanation for the lack of TCR9a activation by C*05.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Immunopeptidomics analysis reveals that C1 allotypes bind peptides with p\u03a9 Ala to a significantly greater extent than C2 allotypes (1.45% \u00b1 1.4% in C1 vs 0.27% \u00b1 0.19% in C2), with C*08 showing 1.5% p\u03a9 Ala frequency compared to 0.13% in C*05.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by immunopeptidomics data from two independent published datasets (Figure 2D-G). Statistical analysis (Fisher's exact test, p=0.0016) confirms significance. However, the authors acknowledge limitations including potential differences in data acquisition methods and lack of peptide abundance information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TCR binding affinity is reduced for C2 compared to C1 allotypes, with TCR9a showing ~7-fold weaker binding to C*05-A18L-9mer (108 nM) versus C*08-G12D-9mer (16 nM), and TCR10 displaying a ~20-fold slower on-rate with C*05-G12D-10mer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49, C6 are supported by SPR binding data (Figure 3) and tetramer binding experiments. Multiple independent experiments were performed with appropriate replicates. The kinetic analysis provides mechanistic insight into the reduced T cell activation observed with C2 allotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "39b68235-e9d4-40d3-814c-2817310ef159",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Crystal structure of TCR9a in complex with C*05-A18L-9mer at 1.9 \u00c5 resolution reveals that TCR9a adopts the same binding mode with conserved contacts for both C1 and C2 allotypes, with dimorphic residues 77 and 80 not directly contacting the TCR (>7 \u00c5 away).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 are supported by high-resolution crystal structure data (Figure 4, Supplementary files 1-2) and comparison with previously published C*08 structure. The structural analysis is rigorous and provides clear evidence that the C1/C2 dimorphism affects TCR recognition indirectly rather than through direct contacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "3e76b7c2-c8ea-4569-9267-738c7ea02787",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structural analysis reveals that the C1/C2 dimorphism impacts peptide position and orientation at p\u03a9-1, with position 77 (Ser in C1, Asn in C2) causing peptide p8 to sit ~1 \u00c5 higher in C2 (5.7 \u00c5) versus C1 (4.6 \u00c5), resulting in C1 favoring small residues and C2 preferring large residues at p\u03a9-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C64, C4-C5 are supported by detailed structural analysis of 12 HLA-C structures (Figure 5B-J) showing consistent differences between C1 and C2 allotypes. The measurements are quantitative and statistically significant (p<0.0001). This structural mechanism explains the immunopeptidomics observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c7a8d617-7618-44bc-9f28-ddad6edf9342",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments demonstrate that position 77 is the major determinant of the C1/C2 difference, with C*05-N77S partially recovering TCR9a responses, while single substitutions at positions 77 and 80 do not improve TCR10 recognition, suggesting synergistic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by functional data with HLA-C mutants (Figure 5K). The experiments provide direct evidence for the role of position 77, though the incomplete recovery suggests additional complexity. The differential effects on TCR9a versus TCR10 are appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "5ad43107-6fac-40c6-b465-5ed0e47dddff",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Immunopeptidomics analysis of p\u03a9-1 (p8) position shows no correlation (r = -0.01) in amino acid usage between C*08 and C*05, with C1 allotypes enriched for small residues (Ser, Ala, Pro) and C2 allotypes enriched for large residues (Phe, Leu, Lys, Met, Arg, Trp, Tyr), demonstrating a size constraint imposed by the C1/C2 dimorphism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 are supported by comprehensive immunopeptidomics analysis (Figure 6) of 21 HLA-C allotypes. The correlation analysis and statistical comparisons are appropriate. The strong correlation between amino acid enrichment and side-chain volume (Figure 6C) provides compelling evidence for the size constraint mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "060cb81e-20a5-4376-9304-7c85d4db5040",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Functional validation shows that substituting p8 in G12D-9mer to large residues (Leu, Lys, Arg) increases EC50 by ~1000-fold, while small residues (Ala, Gly, Glu, Val) have minimal impact; the effect is reduced (~10-fold) with the canonical p\u03a9 anchor in A18L-9mer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 are supported by systematic functional experiments with p8 substitutions (Figure 7A-F). The data demonstrate the functional importance of p\u03a9-1 size and the interplay with the p\u03a9 anchor. However, the authors note that the relationship between HLA-C stabilization and T cell recognition is complex (Figure 7\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "60c7bd48-260c-4fac-9af4-12138b6e6dd0",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The C1/C2 dimorphism impacts both peptide presentation and HLA-C-restricted T cell responses, establishing that T cells, like NK cells, can discriminate between dimorphic HLA-C allotypes through distinct peptide-binding groove structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C80-C81 represent the main conclusions of the study, supported by the convergence of structural, biochemical, immunopeptidomics, and functional data. The evidence is comprehensive and internally consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The mechanistic model proposes that the larger Asn77 in C2 causes p\u03a9-1 to protrude from the groove permitting larger residues, while in C1 the smaller Ser77 positions p\u03a9-1 lower in the groove with contacts to Val76, restricting p\u03a9-1 to smaller residues and enabling binding of peptides with suboptimal p\u03a9 anchors like Ala.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 present a mechanistic model that integrates structural observations (Figure 5) with functional data (Figures 2, 7). The model is well-supported by the data, though some aspects (e.g., C86) are appropriately presented as speculation. The model provides a coherent explanation for all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "83adecf9-f48e-477f-94de-5bfa3dc05d56",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The reduced TCR binding to C2 allotypes despite conserved contacts is attributed to conformational flexibility, with TCR binding to C*05 likely requiring more energetically unfavorable conformational changes, as evidenced by the slow on-rate of TCR10 with C*05-G12D-10mer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 present a mechanistic hypothesis for the reduced TCR binding affinity. While the slow on-rate data (C49) supports this interpretation, the conformational flexibility explanation is speculative and not directly demonstrated. Additional biophysical or computational studies would be needed to confirm this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "719587e8-f520-4ccd-a162-35707727c6df",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HLA-C*08:02 and HLA-C*05:01 differ only by the C1/C2 dimorphism at positions 77 and 80, and previous work showed that 28 self-peptides eluted from C*05:01 bound to both allotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 describe the experimental system and cite prior work (Sim et al., 2017). The sequence identity except at positions 77 and 80 is confirmed by Figure 1A. This establishes the validity of using these allotypes as a minimal system to study C1/C2 effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "da47598e-1ec4-4c15-97aa-be7818d6c188",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TCR9a is specific for G12D-9mer (GADGVGKSA) and TCR10 is specific for G12D-10mer (GADGVGKSAL); these TCRs do not share V genes and recognize their peptide antigens in different ways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 describe the TCR specificities used in the study, supported by citations to prior work (Sim et al., 2020; Tran et al., 2016). This background information is essential for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "33a770fd-eeaf-403e-a257-ca0ab85c97aa",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "G12D-9mer and G12D-10mer are considered public neoantigens due to high frequency of KRAS-G12D mutations, and HLA-C*05:01-positive individuals may be eligible for immunotherapies targeting KRAS-G12D, though a more sensitive receptor than TCR10 would be needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 discuss clinical implications. While C78 is supported by citations about KRAS-G12D frequency, C79 is speculative regarding clinical application. The weak TCR10 response to C*05 (C30, C32) suggests significant optimization would be required before clinical translation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "69daf579-d63e-4e8e-ab00-a83537f1b085",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings have potential implications for viral escape mechanisms, peptide vaccine design, and KIR recognition of HLA-C, with evidence that HIV-infected individuals can respond to the same epitope when carrying either HLA-Cw5 or HLA-Cw8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C94 discuss potential implications and future applications. Most are speculative (C90-C92, C94), though C93 is supported by citation (Addo et al., 2001). These represent reasonable hypotheses for future investigation but are not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "f460eadf-ccfa-439d-9085-69f8205b6ce2",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background on HLA-C biology: HLA-C has lower expression than HLA-A/B but is implicated in HIV, Crohn's disease, psoriasis, and cancer; HLA-C is the most recently evolved classical HLA-I gene, is expressed at the maternal-fetal interface, and all HLA-C allotypes bind KIRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C18 provide background information supported by multiple literature citations. This establishes the biological and clinical relevance of HLA-C and motivates the study, but represents prior knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    },
+    {
+      "id": "c364a32c-520c-41c2-a482-12589881313d",
+      "content_id": "086bc6bc-9943-4618-8127-2fcd0f0a9fdc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Previous work demonstrated that substitution of p\u03a9 Ala to Leu in G12D-9mer (A18L-9mer) improved binding to HLA-C*08:02 and T cell recognition by TCR9a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 cites prior work (Sim et al., 2020) that is relevant for interpreting the current results. This prior finding motivated the use of A18L-9mer in experiments with C*05.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:04:48.456477Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "478ae4b4-8891-47d1-aa17-28e90c56145d",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "aba711b2-af80-4ecf-900d-0c1ea98bef9e",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "21440016-669b-4c85-b007-0498847932f1",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "2f038caa-8249-4c1c-8342-c1248adae91a",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "d5efedf0-52a2-4100-b625-92cee455ce5b",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "f8fe57f8-fa97-4f4b-b153-46f441478dfd",
+      "result_id": "05b44561-2b6d-4e6c-b91b-e45e81644d89"
+    },
+    {
+      "claim_id": "bbd11441-2005-4360-aaeb-8c261f2aa9b4",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "3f5782c3-8de4-47bc-95fc-de4201de6859",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "9c3771af-9c8f-4cd0-9c82-e338378cf881",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "46fd2e05-e891-4088-a676-10f28447db9a",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "2d1bcd37-f477-44fe-bb99-da768df5500f",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "baabc5c4-6d7d-4fc3-8f41-3c1162984eaf",
+      "result_id": "af291cd9-862c-4464-8b78-0ae7cce85404"
+    },
+    {
+      "claim_id": "63486de3-5a58-4594-92b0-8984793e2c7a",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "23b0d61f-ccc2-4995-98f0-3120403b6d06",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "4c9005e4-6061-4921-a746-70527513ebbc",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "ffeaa760-bf56-4417-9fd6-32fbde4824a9",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "6429fd36-3105-4a10-a9de-fd113c01071a",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "6682a0a9-5a00-4e3a-84c0-2e1dd269db74",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "409a03eb-8b12-49dd-8a86-d222e65d9e6e",
+      "result_id": "9a8bbb32-bd63-4ee0-a2be-ec9ed894514d"
+    },
+    {
+      "claim_id": "c50b68e8-7d6f-4c88-8b58-c07f2f49db99",
+      "result_id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0"
+    },
+    {
+      "claim_id": "1599114f-0997-4ac2-ab51-8bfa3f7ad9a5",
+      "result_id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0"
+    },
+    {
+      "claim_id": "2b9a6eeb-8351-45ee-9a26-4fda0befc5de",
+      "result_id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0"
+    },
+    {
+      "claim_id": "cc2d415c-b182-4b88-a165-23629d18b969",
+      "result_id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0"
+    },
+    {
+      "claim_id": "2c1610fc-0f2b-44ec-95c6-c08790bdfa8c",
+      "result_id": "352b32c1-9ecf-4aba-8428-18dc98fcc3d0"
+    },
+    {
+      "claim_id": "4b8f1cb9-cf86-41d1-b4d9-3c0ac16a2f58",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "6487f126-038f-4246-a696-90dd764cb3b4",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "397d22d5-4340-41bc-8583-77019255ea54",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "21d55faa-f1ef-4622-acc1-da23af31ef18",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "fd4d380c-5717-4b1b-9b58-4f0fc13ed06a",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "afa6b51e-94f9-4f02-b737-f6a3c8f5d425",
+      "result_id": "bb4fa605-0c1e-475e-8fe4-79882a2fcbec"
+    },
+    {
+      "claim_id": "0f0241f2-c9e7-40a5-b4c8-483422f9c82c",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "7e6b4967-4402-4a4c-b947-0381a3985411",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "5c5678b1-e70b-4857-b62c-a99cd3599472",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "f363e6f6-2be2-4816-b92b-ba6e04a597b4",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "b6009b78-b751-4a4b-9dd7-a2243bf248f5",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "bd62523a-09a1-46f7-a4a6-b75ec2b41be4",
+      "result_id": "39b68235-e9d4-40d3-814c-2817310ef159"
+    },
+    {
+      "claim_id": "c3638421-c42c-47b4-8457-ab3925e076c2",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "ce756379-d46b-4e48-a4e3-e1def4b7ddaa",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "76880c89-2264-480a-aeb8-60c7f0c9fdad",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "ea9f8f83-77c8-40a7-8bc7-28bd9f231973",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "e492a548-87d1-49b8-be17-7102f92fb83f",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "f5962df5-43d5-466d-bf87-c1e8d748ed75",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "6cff5e03-7ddb-4570-a11e-332b369090cc",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "794f9aaf-09f3-458d-a849-ee42f49cd13d",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "90e9a3dd-9370-43c6-acd6-560e8dedc871",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "65e39a03-6140-4f8d-84e7-9d35f8d077c8",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "a926e63c-5671-4b64-ab65-1cc698b4ca31",
+      "result_id": "3e76b7c2-c8ea-4569-9267-738c7ea02787"
+    },
+    {
+      "claim_id": "ebd99ab0-fa15-47ec-8465-0ec9c0b8bd22",
+      "result_id": "c7a8d617-7618-44bc-9f28-ddad6edf9342"
+    },
+    {
+      "claim_id": "81e038cc-2db3-4c5e-824f-258d7ee729d9",
+      "result_id": "c7a8d617-7618-44bc-9f28-ddad6edf9342"
+    },
+    {
+      "claim_id": "c8f46990-f07b-4dbe-b07d-fce78c79c414",
+      "result_id": "c7a8d617-7618-44bc-9f28-ddad6edf9342"
+    },
+    {
+      "claim_id": "e32f8d97-3e96-4a89-b1e9-3c40a78e579d",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "194693f3-08e4-443b-a037-7e4ce01ed633",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "dbe620e5-bf3b-4dc7-8aa3-f69bf7408513",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "e49f792f-22d5-4c81-9b98-56931deb5d54",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "899b5ebb-d6ff-4b4b-97cc-81aa63110117",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "a251ae4a-8ef1-4e0e-8be1-3cff89708461",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "b20b1df5-0609-4db9-ab7e-953ba4faaf83",
+      "result_id": "5ad43107-6fac-40c6-b465-5ed0e47dddff"
+    },
+    {
+      "claim_id": "3c216864-6145-439a-8974-19571238f207",
+      "result_id": "060cb81e-20a5-4376-9304-7c85d4db5040"
+    },
+    {
+      "claim_id": "7f87f721-a388-448c-8091-8478edb1fea7",
+      "result_id": "060cb81e-20a5-4376-9304-7c85d4db5040"
+    },
+    {
+      "claim_id": "07108bab-92a2-4d46-84cb-efcf5d850cde",
+      "result_id": "060cb81e-20a5-4376-9304-7c85d4db5040"
+    },
+    {
+      "claim_id": "6fb60e81-f4dd-4763-b421-dadb8b64b32e",
+      "result_id": "60c7bd48-260c-4fac-9af4-12138b6e6dd0"
+    },
+    {
+      "claim_id": "22a5914b-6b4c-41dc-b440-70b8d08b86b8",
+      "result_id": "60c7bd48-260c-4fac-9af4-12138b6e6dd0"
+    },
+    {
+      "claim_id": "405fb5ac-0973-4795-814e-e873b39f176d",
+      "result_id": "60c7bd48-260c-4fac-9af4-12138b6e6dd0"
+    },
+    {
+      "claim_id": "b59af314-2bb7-44a9-9ffd-46ec3b8255d2",
+      "result_id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85"
+    },
+    {
+      "claim_id": "c4795453-0e4e-42fa-8c1f-5111f786e049",
+      "result_id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85"
+    },
+    {
+      "claim_id": "beab3c68-d53e-427b-8b55-93cc285fd891",
+      "result_id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85"
+    },
+    {
+      "claim_id": "1a935d30-6e66-4317-84a5-8ae8098e5886",
+      "result_id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85"
+    },
+    {
+      "claim_id": "c5f05bee-b35b-43e0-8eee-9b98bb2b446e",
+      "result_id": "77d86c4f-c9a4-436f-81cd-fa256a4d0d85"
+    },
+    {
+      "claim_id": "1ef5b709-0802-418b-88cf-7aad95a028c8",
+      "result_id": "83adecf9-f48e-477f-94de-5bfa3dc05d56"
+    },
+    {
+      "claim_id": "b16da77b-6af2-4a85-89cb-650fc7ffceca",
+      "result_id": "83adecf9-f48e-477f-94de-5bfa3dc05d56"
+    },
+    {
+      "claim_id": "f8dc1e71-bfa8-4b2f-a136-d975563df8ed",
+      "result_id": "719587e8-f520-4ccd-a162-35707727c6df"
+    },
+    {
+      "claim_id": "83396538-9210-4ca8-a75f-89e33fae767b",
+      "result_id": "719587e8-f520-4ccd-a162-35707727c6df"
+    },
+    {
+      "claim_id": "4bf514af-b2a0-4056-80b4-f2d08107bf7b",
+      "result_id": "da47598e-1ec4-4c15-97aa-be7818d6c188"
+    },
+    {
+      "claim_id": "8d8da5df-eb4b-4441-8e9a-0d01c2798742",
+      "result_id": "da47598e-1ec4-4c15-97aa-be7818d6c188"
+    },
+    {
+      "claim_id": "b2f12fa0-fc9f-4867-b4b6-d6ec72163076",
+      "result_id": "da47598e-1ec4-4c15-97aa-be7818d6c188"
+    },
+    {
+      "claim_id": "a97156fe-b106-4dbc-8891-0326e6c64b14",
+      "result_id": "33a770fd-eeaf-403e-a257-ca0ab85c97aa"
+    },
+    {
+      "claim_id": "ac9cbbb9-bd04-4c52-93b3-77528a0701a4",
+      "result_id": "33a770fd-eeaf-403e-a257-ca0ab85c97aa"
+    },
+    {
+      "claim_id": "c862966d-53b2-4c7c-bc20-43fc62fd2ff2",
+      "result_id": "69daf579-d63e-4e8e-ab00-a83537f1b085"
+    },
+    {
+      "claim_id": "992edb70-9983-46dc-a679-d816b878aa4a",
+      "result_id": "69daf579-d63e-4e8e-ab00-a83537f1b085"
+    },
+    {
+      "claim_id": "f378f995-b3e3-4c7c-8807-bc360ffd6711",
+      "result_id": "69daf579-d63e-4e8e-ab00-a83537f1b085"
+    },
+    {
+      "claim_id": "1bc75c7a-ef76-47ab-9047-fd4617fee23d",
+      "result_id": "69daf579-d63e-4e8e-ab00-a83537f1b085"
+    },
+    {
+      "claim_id": "e207bbae-4b37-441d-8281-fca8ffc3eefa",
+      "result_id": "69daf579-d63e-4e8e-ab00-a83537f1b085"
+    },
+    {
+      "claim_id": "47f05b16-89ea-4351-b5eb-d3b8829f05cf",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "6beda77a-cd66-472e-a561-b91d336e7a0a",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "4ee8277b-a2f6-4a26-9a18-d583b1199e69",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "70527143-7642-450c-8a95-1a5d4b67ad6f",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "58783cb1-f386-4510-acdf-ba2e2bfc3c90",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "f769b5c0-ab98-415f-a417-1def68ee2a1a",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "deeb83f2-22d6-467b-837c-466418bc5001",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "6a626e13-1b5d-4d3b-a057-6447a503948d",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "2ee84771-333e-4260-b46e-6aab2ae17f9a",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "f4434955-7448-4ae0-a03c-775257ed7b2f",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "0633fc1d-deb2-4c15-9729-d557fc365dbe",
+      "result_id": "f460eadf-ccfa-439d-9085-69f8205b6ce2"
+    },
+    {
+      "claim_id": "acc04e50-1ed2-4f65-816e-4ae7225d8ea7",
+      "result_id": "c364a32c-520c-41c2-a482-12589881313d"
+    }
+  ],
+  "comparisons": []
+}

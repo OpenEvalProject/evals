@@ -1,0 +1,2156 @@
+{
+  "submission": {
+    "id": "78957313-7c31-4d2c-a4dc-a8e80970a7bd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:50:37.672971Z",
+    "updated_at": "2025-12-03T16:50:37.672971Z"
+  },
+  "content": [
+    {
+      "id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "submission_id": "78957313-7c31-4d2c-a4dc-a8e80970a7bd",
+      "content_type": "manuscript",
+      "content_text": "# A low-cost, open-source evolutionary bioreactor and its educational use\n\n## Authors\n\n- Vishhvaan Gopalakrishnan<sup>1</sup> ([ORCID: 0000-0002-0532-7710](https://orcid.org/0000-0002-0532-7710)) \u2020\n- Dena Crozier<sup>1</sup> ([ORCID: 0000-0002-1841-0011](https://orcid.org/0000-0002-1841-0011))\n- Kyle J Card<sup>3</sup> ([ORCID: 0000-0002-0462-2777](https://orcid.org/0000-0002-0462-2777))\n- Lacy D Chick<sup>4</sup> ([ORCID: 0000-0002-3059-4300](https://orcid.org/0000-0002-3059-4300))\n- Nikhil P Krishnan<sup>2</sup>\n- Erin McClure<sup>3</sup> ([ORCID: 0000-0002-6604-1273](https://orcid.org/0000-0002-6604-1273))\n- Julia Pelesko<sup>3</sup>\n- Drew FK Williamson<sup>6</sup> ([ORCID: 0000-0003-1745-8846](https://orcid.org/0000-0003-1745-8846))\n- Daniel Nichol<sup>9</sup> ([ORCID: 0000-0003-2662-1836](https://orcid.org/0000-0003-2662-1836))\n- Soumyajit Mandal<sup>10</sup>\n- Robert A Bonomo<sup>11</sup>\n- Jacob G Scott<sup>3</sup> ([ORCID: 0000-0003-2971-7673](https://orcid.org/0000-0003-2971-7673)) \u2020\n\n### Affiliations\n\n1. Lerner College of Medicine, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))\n2. Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n3. Department of Translational Hematology and Oncology Research, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))\n4. Hawken School Gates Mills United States\n5. Department of Physics, Case Western Reserve University Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n6. Department of Pathology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n7. Department of Pathology, Brigham & Women\u2019s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))\n8. Cancer Program, Broad Institute of Harvard and MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n9. Centre for Evolution and Cancer, Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))\n10. Integrated Circuits and Sensor Physics Lab, Case Western Reserve University School of Engineering Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n11. Louis Stokes Cleveland Department of Veteran Affairs Medical Center Cleveland United States ([ROR:01vrybr67](https://ror.org/01vrybr67))\n12. Departments of Medicine, Pharmacology, Molecular Biology and Microbiology, Biochemistry, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))\n13. CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology Cleveland United States\n14. Department of Radiation Oncology, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA morbidostat is a bioreactor that uses antibiotics to control the growth of bacteria, making it well-suited for studying the evolution of antibiotic resistance. However, morbidostats are often too expensive to be used in educational settings. Here we present a low-cost morbidostat called the EVolutionary biorEactor (EVE) that can be built by students with minimal engineering and programming experience. We describe how we validated EVE in a real classroom setting by evolving replicate Escherichia coli populations under chloramphenicol challenge, thereby enabling students to learn about bacterial growth and antibiotic resistance.\n\n## Introduction\n\nThe first bioreactor, the chemostat, was built over 70 years ago to study the growth of bacteria suspended in a liquid medium (Novick and Szilard, 1950). In particular, the chemostat maintains the specific growth rate of the bacteria at a fixed value by supplying fresh medium and removing unused nutrients, cells and metabolic byproducts. Studies performed with chemostats and other bioreactors made various physiological and biochemical analyses more tractable and led to the development of quantitative models that describe microbial growth (Hoskisson and Hobbs, 2005).\n\nThe morbidostat is a bioreactor that maintains a steady death rate. Specifically, a morbidostat regulates the bacterial growth rate by measuring the cell density of a population at fixed time intervals and subsequently introducing factors that cause the growth rate to increase (such as nutrient-rich media) or factors that cause the growth rate to decrease (such as antibiotic-rich media). Antibiotics are introduced into the medium when the population size exceeds a predetermined threshold and the growth rate is greater than zero. The morbidostat, therefore, adjusts the selective pressure to maintain near-constant growth inhibition as the population becomes resistant to the antibiotics over time. Studies performed with morbidostats have improved our understanding of the evolution of antibiotic resistance in bacteria (Toprak et al., 2012; D\u00f6\u00dfelmann et al., 2017; Yoshida et al., 2017; Leyn et al., 2021) and the temperature-stress response in yeast (Wong et al., 2018).\n\nIntroducing the morbidostat into high-school or college curricula has many benefits. First, educators often use passive, lecture-based instruction to teach gradual long-term species evolution. In contrast, in-classroom morbidostat use enables inquiry-based research where students combine hypothesis generation and experimental design with measurement of real-time adaptation of microbial populations. This active learning approach improves student understanding of bacterial growth and how natural selection acts on heritable genetic variation to promote drug resistance (Freeman et al., 2014; Tomandl et al., 2015). In the context of biology classes, the use of a morbidostat in the classroom complements existing inquiry-based laboratory curricula (Cooper et al., 2019). Second, constructing a morbidostat will teach students critical engineering and computer programming skills.\n\nWe have developed a low-cost open-source morbidostat called the EVolutionary biorEactor (EVE) with these goals in mind. Our platform, which builds on the methodology outlined by Toprak and colleagues (Toprak et al., 2012; Toprak et al., 2013), supports multiple culture units that each run independently with precise control over exchange of the growth medium, cell density measurement rates, and drug addition. EVE costs about $115\u2013200 to construct using printed circuit board (PCB) and 3D-printed component files; circuit diagrams, software and complete build instructions are available in our GitHub repository (Gopalakrishnan, 2022).\n\nIn this article we discuss the design and construction of EVE. We also describe how high school students in a class taught by one of the authors (LDC) used it to study the growth of bacteria and the evolution of antibiotic resistance, demonstrating that EVE is an accessible alternative to other bioreactors for use in low-resource classrooms, and in settings where instructors and students have limited engineering and programming experience.\n\n## The EVolutionary biorEactor\n\nThe EVE is functionally similar to other small, automated bioreactors (Toprak et al., 2012; D\u00f6\u00dfelmann et al., 2017; Wong et al., 2018). In summary, several bacterial cultures are grown simultaneously in small glass vials under well-mixed, drug-selective conditions (Figure 1A). A control algorithm maintains these conditions by: (i) supplying power to fans (with attached magnets) that rotate magnetic stir bars; (ii) introducing fresh medium into each culture at a constant rate through the activation of peristaltic pumps; (iii) monitoring population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes; (iv) introducing selective medium when these absorbance measurements exceed a user-defined value. Nonetheless, the EVE differs from other bioreactors in its hardware, software, and production costs. We detail these aspects below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83067/elife-83067-fig1-v2.jpg)\n\n**Figure 1.:** Schematic illustration of the EVE hardware and software architecture. (A) Reservoirs containing permissive (i.e., drug-free) and selective growth media are each connected to a culture unit (CU) through silicone tubing. Peristaltic pumps control the rate at which the media are added to the evolving bacterial population, and an additional pump removes waste. Multiple CUs can fit into an incubator, allowing users to simultaneously evolve several independent replicate populations. (B) A Raspberry Pi interfaces with a custom printed circuit board (PCB) to monitor culture growth and coordinate the addition and removal of growth media and waste. The user controls the EVE hardware with a web application. (C) The PCB chips measure voltage and temperature. These voltage measurements are proportional to optical density and thus are a way to estimate population size. The chips also control the fluidic pumps, diodes, onboard indicators, and stirring speed. The PCB diagram illustrates where these chips are located on the board.\n\n### Hardware and software\n\nThe EVE uses a primary onboard Raspberry Pi microcomputer to execute the software and serve as a bridge between the user interface and a PCB (Figure 1B, C). This design keeps costs low while allowing the device to be self-contained in environments without internet access. One can also construct the EVE with a breadboard. Breadboards give users more flexibility to modify the hardware but require prior experience and come at the cost of increased assembly time and device footprint. In either case, circuit diagrams, 3D-printed component files, complete build instructions, and a part list are in our GitHub repository (Gopalakrishnan, 2022).\n\nOne may access population growth and temperature measurements, edit configuration files, define experimental parameters, and monitor and control experiments remotely with our free, open-source software run inside any web browser. Users install this software by downloading the pre-compiled Raspberry Pi image or executing the installation script directly from our GitHub repository. Data can be saved to network locations mounted to the Pi\u2019s file system or an attached USB device.\n\n### Comparisons to alternative bioreactors\n\nThe EVE differs from other bioreactors, including the eVOLVER (Wong et al., 2018) and Flexostat (Takahashi et al., 2014), in its design philosophy and customization capabilities. The EVE and eVOLVER software are hosted on a Raspberry Pi and written in Python, a common programming language with a broad user base and community support. This combination of hardware and software allows for fast code execution and the Linux operating system facilitates customization. In contrast, other automated culture systems use proprietary or third-party software that may be inaccessible or cost-prohibitive for educators (Toprak et al., 2012).\n\nOne does not need to be familiar with Python to install the software, edit experimental parameters, or run the pre-configured control algorithms. However, working knowledge of this language is necessary to create custom algorithms, for which we uniquely provide design instructions in our GitHub repository. Moreover, the EVE uses a more modern serial connection between the motherboard and the Pi than the eVOLVER, which permits the use of more up-to-date software packages. Lastly, the Flexostat and the EVE have a similar broadly open software license that permits unrestricted use of the software.\n\n### Production cost\n\nWe designed the EVE to be cost-effective. The total cost varies between $115 and $200 to build a system that performs simple growth or evolution experiments in triplicate with a negative control. These estimates include all parts except the incubator, glassware, and 3D printer. The circuit board design can be downloaded from our repository and sent to a PCB manufacturer for printing and assembly; in our case, we purchased fully assembled PCBs for approximately $42 per board, including the power supply. Users may further decrease costs and increase accessibility in low-resource classrooms by incubating bacterial cultures at room temperature and using a pressure cooker to sterilize growth media instead of an autoclave.\n\n### Validation\n\nWe validated the EVE in two ways. First, we examined voltage measurement variability across seven independent culture units and compared these results with previously reported measurements (Toprak et al., 2012). Voltage is the raw measurement that is used to estimate optical density (i.e., population size). Smaller voltage measurement variability between individual culture units indicates better construct and internal validity. Variability in measurements is introduced due to subtle differences when printing the vial holder, leading to slightly altered positioning of the diodes responsible for voltage measurements. The average variability was 8.0% (mean \u00b1 sd = 2.93\u00b10.23), comparable to the 7.5% of Toprak and colleagues.\n\nSecond, we experimentally evolved bacterial populations and again compared the results to those of Toprak et al., 2012. We revived E. coli ATCC 25922 from a frozen stock by overnight growth in Mueller-Hinton broth (MHB) (Sigma). We inoculated 100 \u00b5L of this culture into three separate culture units containing 12 mL of MHB. We then prepared the selective growth medium by diluting a chloramphenicol stock solution to 40 \u00b5g/mL in MHB. The selective and permissive media were connected to the culture units, which were incubated at 37 \u00b0C with constant stirring (\u223c225 rpm). Samples were taken from each culture\u2019s effluent waste every 12 hours and frozen at \u201380 \u00b0C with 15% glycerol as a cryoprotectant.\n\nWe estimated each sample\u2019s half-maximal inhibitory concentration (IC50) following the broth microdilution method (Wiegand et al., 2008) and by fitting a Hill function to the resulting optical density data (Maltas and Wood, 2019). The three ancestral populations began the experiment with an IC50 of 4 \u00b5g/mL, and chloramphenicol resistance increased to 9.3\u201313.9 \u00b5g/mL. These results are comparable to Toprak et al., 2012, where resistance increased, on average, to approximately 15 \u00b5g/mL over the same time period (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83067/elife-83067-fig2-v2.jpg)\n\n**Figure 2.:** Half-maximal inhibitory concentration (IC50) values for two biologically independent replicates (CU1 and CU2) are plotted against time. Points represent the estimated IC50 determined by fitting a Hill function to OD600 measurements across this dilution series after 18 hours of population growth. Error bars represent the variance in IC50. The data used to generate this figure are available in our Github repository: https://github.com/vishhvaan/eve-pi (Gopalakrishnan, 2022).\n\n## Educational use\n\nThe EVE is well-suited for classroom settings because it was designed in collaboration with educators and tested by high school students at Hawken School in Gates Mills, Ohio. We discuss our curriculum design, the students\u2019 experience using the EVE, and its potential applications in other educational contexts.\n\nWe first examined the Advanced Placement (AP) Biology curriculum and then developed a pilot curriculum for the evolutionary unit of the course that detailed the desired learning outcomes, assessment evidence for those outcomes, and a learning plan (see Supplementary file 1). The AP curriculum introduces several key learning objectives about the importance of phenotypic variation, how natural selection acts on this variation, and how this phenomenon affects populations over time. The AP instructional model also emphasizes that students use supporting resources and perform appropriate experiments to build and strengthen their conceptual understanding of these objectives. More generally, for most biology classrooms, bioreactor experiments introduce basic microbiology techniques, biotechnology, and data analysis to students. We therefore developed our unit to facilitate student understanding of population growth dynamics and trait evolution through independent experimentation with the EVE. To reinforce this objective, we asked the students to consider how bacterial populations respond to changing environments, such as introducing antimicrobial agents.\n\nTwo high school students followed the instructions in our GitHub repository (Gopalakrishnan, 2022) to assemble the EVE bioreactor with 3D-printed equipment, a fabricated circuit board, and a Raspberry Pi microcomputer with the necessary pre-installed software. Then two AP Biology students, working as a team, calibrated the device (Figure 3) and evolved a population of E. coli ATCC 25922 to increasing chloramphenicol concentrations over several days (Figure 4A\u2013G). The population initially expanded in size, decreased after the introduction of the antibiotic into the culture unit, and later rebounded as drug-resistant variants rose in frequency (Figure 4H). From these data, the students calculated growth rates and predicted how these rates would change with varying drug selective pressures. This authentic research experience introduced the students to standard microbiology practices and concepts, including how to prepare drug solutions and use sterile technique to maintain bacterial cultures, when logistic growth models apply, and the relationship between light absorbance and cell number (i.e., Beer\u2019s law). We share testimonials from these students in Box 1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83067/elife-83067-fig3-v2.jpg)\n\n**Figure 3.:** (Top) Culture units behave similarly when measuring voltage. (Bottom) Various regression methods were used to quantify the relationship between the optical density (OD) and voltage. R2 values of 0.97, 0.99, and 0.99 were calculated for the linear, quadratic, and cubic fits respectively. We used a linear model to translate voltage to optical density in our experiments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83067/elife-83067-fig4-v2.jpg)\n\n**Figure 4.:** (A) Prior to experimentation, the students practiced pipetting with media. (B) They prepared the selective growth medium and (C) inoculated E. coli into a culture unit containing the permissive medium. (D) The system was sterilized with bleach and ethanol solutions. (E) Before the experiment, the students printed a culture unit stand in the maker-space at Hawken School. (F) The media and waste reservoirs were attached to the culture unit by silicon tubing, and then (G) the students began the experiment. (H) Bacterial growth and inhibition in the EVE over 28 hours. The grey boxes and vertical lines indicate when the EVE control algorithm added the permissive and selective media into the culture units, respectively.\n\nNotably, the students adjusted the experimental protocol to account for classroom limitations. For example, the Hawken School does not have Bunsen burners or standing incubators. The students therefore created a spartan workspace and disinfected all surfaces with 70% ethanol, visually inspected the growth medium to ensure that it remained free of contamination, and incubated bacterial cultures in an oven set to approximately 30\u201340\u00baC. Moreover, although this particular high school has autoclaves, there are several alternative ways that users can sterilize glassware and media, including using liquid chemicals and microwaves. The Centers for Disease Control and Prevention describe some of these methods in greater detail (https://www.cdc.gov/infectioncontrol/guidelines/disinfection/sterilization/other-methods.html).\n\nOne could also use the EVE in other educational contexts (i.e., college laboratory classrooms) or outside the classroom. Since the EVE functions through a combination of engineering and biology, project work within clubs may offer unique experiences to students wishing to learn about how multiple disciplines interact. These projects could combine construction and experimentation for a seamless educational experience. Interested parties may acquire non-pathogenic E. coli K12, growth medium, and antibiotic powders through the Carolina Biological Supply Company or a similar vendor.\n\nThe EVE has also been implemented in several other contexts. For instance, the EVE is being used to study bacteriophages in continuous culture at the University of Exeter in the United Kingdom, and to develop research bioreactors at a French biotech company. Additionally, undergraduate students used its design to build their own custom morbidostat as part of the International Genetically Engineered Machine (iGEM) competition. The manual produced by these students represents an example of what the EVE would look like in a college setting (https://static.igem.org/mediawiki/2019/c/c6/T--Athens--Morbidostat_manual.pdf).\n\n## Future directions and conclusion\n\nIn addition to its educational utility, the EVE can address questions of evolutionary repeatability. For instance, one might examine whether correlated drug responses are conserved across time as populations evolve under single- or multi-drug selection (Nichol et al., 2015; Nichol et al., 2019; Card et al., 2021; Iram et al., 2021; King, 2022). Although the current EVE system can only introduce one drug solution into the growth medium, we are designing a PCB to allow the simultaneous or sequential addition of multiple drugs across more replicate cultures. Moreover, users could substitute the existing hardware with LEDs and photodiodes corresponding to fluorescence proteins\u2019 excitation and emission frequencies. This hardware alteration would allow bacterial head-to-head competitions without periodic sampling and cell enumeration.\n\nThe EVE device has several limitations, some of which we will address with additional design and hardware improvements. Although one could buy 3D-printed parts from several internet vendors, the need of a 3D printer may still restrict use in resource-limited classrooms. Future implementations will include alternative hardware construction methods that preclude the need for a 3D printer and thus lower indirect costs. Second, the EVE may require slightly more setup than a pre-constructed and calibrated commercially available bioreactor. For example, fluid pumps may vary in flow rate; thus, they must be individually calibrated to avoid accidental overflow. Although there is educational value in solving hardware and software challenges, especially in a classroom setting, we encourage individuals to use EVE\u2019s GitHub repository to report challenges and potential solutions. We will also continue to work on automated solutions to mitigate these setup tasks for the user.\n\nIn summary, we believe that EVE is uniquely suited for use in educational settings because of its low-cost and open-source design. High school students demonstrated these aspects by building the EVE and performing a simple evolution experiment in the classroom. We are optimistic about a future where more classrooms use the EVE and other platforms to spur student interest in experimental biology and technology.\n",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "4c34e437-5b6e-4860-b997-d45b93bdd28b",
+      "submission_id": "78957313-7c31-4d2c-a4dc-a8e80970a7bd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Rodgers, https://ror.org/04rjz5883 eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83067.sa1](https://doi.org/10.7554/eLife.83067.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A Low-Cost, Open Source, Self-Contained Bacterial EVolutionary biorEactor (EVE)\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Patricia Wittkopp as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Vaughn S Cooper (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision in consultation with the Senior Editor.\n\nThe editors have judged that your manuscript is of interest, but as described below much additional work is needed to make it suitable for publication in eLife. We suspect that these changes will require more than the 2 months typically allowed for revisions, so are rejecting the paper in its current form. We are, however, very interested in seeing a revised version that addresses the reviewers concerns. In fact, the journal is currently considering adding a new category to its Features section focusing on education and outreach, and we think this work would be a good fit for that format. We share the author's passion for finding ways to bring experimental systems into high-schools and think that the changes requested below will make adoption more likely.\n\nSummary:\n\nThis article introduces a flexible continuous culture device built with open source hardware and based on readily (and cheaply) available hardware. The paper also presents a proof of concept using antibiotic selection to demonstrate the ability to use feedback control. The manuscript claims it can replicate the functionality of more elaborate and expensive reactors on the market and thus enable students to build their own devices and conduct their own research. However, no such data are presented to substantiate these claims, either to demonstrate the performance of the device relative to the competing standards or to show its usability by less trained students.\n\nEssential revisions:\n\n1) Provide evidence for the first claim: present data that shows that the bioreactor works and provides useable data and compare the bioreactor's result to other currently available reactors. While we don't expect that the authors purchase expensive reactors for these comparisons themselves, they should compare their findings with the product specs of others. How variable are the replicates, typically? What are key issues to be cautious with? Are the parts easy to come by, even though they are cheap?\n\n2) Show ease of use, e.g. by providing the parts of a bioreactor together with a manual to a number of college or high school classes, and ask them to build the reactor and perform a simple experiment. They could then report the data on how many classes were able to do this, and how the data compares with a reference experiment. Even several anecdotal examples of it being used in non-traditional lab settings? The more of these the better! Please also add a photograph of the device.\n\n3) Regarding educational use -- what would they learn? What are the learning objectives for experiments based on this setup?\n\n4) Who is the target user, and what must they know to succeed?\n\n5) What kinds of experiments would this target user ideally conduct?\n\n6) We would like to know more specifically how this method advances your research, and think a research advance (rather than Amp killing E coli) would be the use case that proves its merit.\n\n7) Figure 2 is hard to follow, and without some effort. The letter labels are placed oddly for my preference, a border around the subfigures might make that easier. It took a little bit of time to figure out what I was looking at in b) with regard to the concentration and the voltage. I also didn't see the data from b) in c) but was expecting to.\n\n8) There is no data that suggests that drug concentrations can be set to a desired and reliable level. Please provide.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting the revised version of your article \"A low-cost, open-source evolutionary bioreactor and its educational use\" to eLife for consideration as a Feature Article. I sent the revised version of the article to the three reviewers who reviewed the original version and their comments are below. As you will see, there are still a small number of points you need to address. The following individuals involved in review of your submission have agreed to reveal their identity: Vaughn Cooper.\n\nSummary\n\nThis paper presents the author's low-cost continuous culture device EVE. It presents a case study of this device as a morbidostat, and its use within a high school AP Biology lesson. The stated goal is to show how this open source device is a viable alternative to other more expensive or cumbersome technology. This is a great idea and the method is impressive. However, there are a number of points that need to be addressed to make the article suitable for publication.\n\nEssential revisions:\n\n1. Evidence for the efficacy of the program is anecdotal: how well did students learn AP material?\n\n2. Please say more about the challenges of implementation and any potential limitations of this approach/device.\n\n3. Please say more about other options (e.g., eVOLVER, Flexostat, commercial bioreactors) and how EVE compares to them. What are the benefits and/or unique features of EVE compared with other options.\n",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e99a28ff-0243-4f00-8eeb-1c4a27489f26",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C1",
+      "claim": "A morbidostat is a bioreactor that uses antibiotics to control the growth of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A morbidostat is a bioreactor that uses antibiotics to control the growth of bacteria, making it well-suited for studying the evolution of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that establishes what a morbidostat is.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "43bc08a4-cc20-4693-bfeb-1e2a448a8cba",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C2",
+      "claim": "Morbidostats are well-suited for studying the evolution of antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "A morbidostat is a bioreactor that uses antibiotics to control the growth of bacteria, making it well-suited for studying the evolution of antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the functional characteristics of morbidostats and their application in research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "fa309c01-d365-4623-a171-c603e301eb09",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C3",
+      "claim": "Morbidostats are often too expensive to be used in educational settings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, morbidostats are often too expensive to be used in educational settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the accessibility of morbidostats in education.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "be4273f7-e9f6-415b-9e5a-9b1968c68ac8",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C4",
+      "claim": "EVE is a low-cost morbidostat that can be built by students with minimal engineering and programming experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a low-cost morbidostat called the EVolutionary biorEactor (EVE) that can be built by students with minimal engineering and programming experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the design philosophy and accessibility of the EVE system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3110020c-bb94-4320-8cc9-c51811b770b5",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C5",
+      "claim": "EVE was validated in a real classroom setting by evolving replicate Escherichia coli populations under chloramphenicol challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe how we validated EVE in a real classroom setting by evolving replicate Escherichia coli populations under chloramphenicol challenge, thereby enabling students to learn about bacterial growth and antibiotic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental validation described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "73b99553-99bd-4745-86c5-72b51a7cf114",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C6",
+      "claim": "The first bioreactor, the chemostat, was built over 70 years ago to study the growth of bacteria suspended in a liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The first bioreactor, the chemostat, was built over 70 years ago to study the growth of bacteria suspended in a liquid medium (Novick and Szilard, 1950).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by a citation to Novick and Szilard, 1950.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "35991953-e310-4367-99cf-1df229d691ba",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C7",
+      "claim": "The chemostat maintains the specific growth rate of bacteria at a fixed value by supplying fresh medium and removing unused nutrients, cells and metabolic byproducts.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the chemostat maintains the specific growth rate of the bacteria at a fixed value by supplying fresh medium and removing unused nutrients, cells and metabolic byproducts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional mechanism of a chemostat based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a9f8cd5e-db7c-4f1a-a16a-5a7cf101ed85",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C8",
+      "claim": "Studies performed with chemostats and other bioreactors made various physiological and biochemical analyses more tractable and led to the development of quantitative models that describe microbial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies performed with chemostats and other bioreactors made various physiological and biochemical analyses more tractable and led to the development of quantitative models that describe microbial growth (Hoskisson and Hobbs, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hoskisson and Hobbs, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "c522c755-a985-420b-a785-660b953483d3",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C9",
+      "claim": "The morbidostat is a bioreactor that maintains a steady death rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The morbidostat is a bioreactor that maintains a steady death rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about morbidostats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "eb5c74e8-eb1f-4ea1-81e5-2119c583265c",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C10",
+      "claim": "A morbidostat regulates bacterial growth rate by measuring cell density at fixed time intervals and subsequently introducing factors that cause the growth rate to increase or decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a morbidostat regulates the bacterial growth rate by measuring the cell density of a population at fixed time intervals and subsequently introducing factors that cause the growth rate to increase (such as nutrient-rich media) or factors that cause the growth rate to decrease (such as antibiotic-rich media).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational mechanism of a morbidostat.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "d4bfc234-90e9-4aab-b301-110c037b5cb5",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C11",
+      "claim": "Antibiotics are introduced into the medium when the population size exceeds a predetermined threshold and the growth rate is greater than zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotics are introduced into the medium when the population size exceeds a predetermined threshold and the growth rate is greater than zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control algorithm logic of a morbidostat.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "44fd1211-b2ef-42a3-b82e-8a7989b7f674",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C12",
+      "claim": "The morbidostat adjusts the selective pressure to maintain near-constant growth inhibition as the population becomes resistant to the antibiotics over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The morbidostat, therefore, adjusts the selective pressure to maintain near-constant growth inhibition as the population becomes resistant to the antibiotics over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adaptive function of a morbidostat.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "09503559-7852-44cf-a458-cd872fd52c08",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C13",
+      "claim": "Studies performed with morbidostats have improved our understanding of the evolution of antibiotic resistance in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies performed with morbidostats have improved our understanding of the evolution of antibiotic resistance in bacteria (Toprak et al., 2012; D\u00f6\u00dfelmann et al., 2017; Yoshida et al., 2017; Leyn et al., 2021) and the temperature-stress response in yeast (Wong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "2f192c96-198c-44e3-a4d0-4f7d0b6a3a77",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C14",
+      "claim": "Studies performed with morbidostats have improved our understanding of the temperature-stress response in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies performed with morbidostats have improved our understanding of the evolution of antibiotic resistance in bacteria (Toprak et al., 2012; D\u00f6\u00dfelmann et al., 2017; Yoshida et al., 2017; Leyn et al., 2021) and the temperature-stress response in yeast (Wong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "1ea6f47f-31fb-4251-b968-7eacc9b00469",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C15",
+      "claim": "Educators often use passive, lecture-based instruction to teach gradual long-term species evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "First, educators often use passive, lecture-based instruction to teach gradual long-term species evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about educational practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "f4614f5d-1024-4f89-8332-f9d90b1f188f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C16",
+      "claim": "In-classroom morbidostat use enables inquiry-based research where students combine hypothesis generation and experimental design with measurement of real-time adaptation of microbial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in-classroom morbidostat use enables inquiry-based research where students combine hypothesis generation and experimental design with measurement of real-time adaptation of microbial populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the educational application of morbidostats.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "87782b5e-02da-4ad9-a3e1-9305ba3091e6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C17",
+      "claim": "Active learning approach improves student understanding of bacterial growth and how natural selection acts on heritable genetic variation to promote drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This active learning approach improves student understanding of bacterial growth and how natural selection acts on heritable genetic variation to promote drug resistance (Freeman et al., 2014; Tomandl et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Freeman et al., 2014 and Tomandl et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "ef9d466d-c336-4e33-8e4c-f3ec047bea13",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C18",
+      "claim": "The use of a morbidostat in the classroom complements existing inquiry-based laboratory curricula in biology classes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of biology classes, the use of a morbidostat in the classroom complements existing inquiry-based laboratory curricula (Cooper et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cooper et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "536f7541-16ac-426e-a4c2-54d4233ad06c",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C19",
+      "claim": "Constructing a morbidostat will teach students critical engineering and computer programming skills.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, constructing a morbidostat will teach students critical engineering and computer programming skills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the educational benefits of building a morbidostat.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b83c87a7-6ed6-4782-9fd5-98d5ecb0ee1f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C20",
+      "claim": "EVE is a low-cost open-source morbidostat.",
+      "claim_type": "EXPLICIT",
+      "source": "We have developed a low-cost open-source morbidostat called the EVolutionary biorEactor (EVE) with these goals in mind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the EVE platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "fd399bcd-20f3-46ea-afb2-b3dc1b675102",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C21",
+      "claim": "EVE's platform builds on the methodology outlined by Toprak and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our platform, which builds on the methodology outlined by Toprak and colleagues (Toprak et al., 2012; Toprak et al., 2013), supports multiple culture units that each run independently with precise control over exchange of the growth medium, cell density measurement rates, and drug addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Toprak et al., 2012 and 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "fa38f677-27e8-458f-adef-d5730846a0ca",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C22",
+      "claim": "EVE supports multiple culture units that each run independently with precise control over exchange of the growth medium, cell density measurement rates, and drug addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our platform, which builds on the methodology outlined by Toprak and colleagues (Toprak et al., 2012; Toprak et al., 2013), supports multiple culture units that each run independently with precise control over exchange of the growth medium, cell density measurement rates, and drug addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional capabilities of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "f224f146-60c3-44eb-9428-52b8ae848466",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C23",
+      "claim": "EVE costs about $115\u2013200 to construct using printed circuit board (PCB) and 3D-printed component files.",
+      "claim_type": "EXPLICIT",
+      "source": "EVE costs about $115\u2013200 to construct using printed circuit board (PCB) and 3D-printed component files; circuit diagrams, software and complete build instructions are available in our GitHub repository (Gopalakrishnan, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific cost estimate for building EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "5f15b966-45f8-42fe-be48-94f6ed1e5c0f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C24",
+      "claim": "Circuit diagrams, software and complete build instructions for EVE are available in a GitHub repository.",
+      "claim_type": "EXPLICIT",
+      "source": "EVE costs about $115\u2013200 to construct using printed circuit board (PCB) and 3D-printed component files; circuit diagrams, software and complete build instructions are available in our GitHub repository (Gopalakrishnan, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the availability of resources for building EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "dcb76cb5-4bad-425d-be9a-2fcd5b227778",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C25",
+      "claim": "High school students in a class taught by one of the authors used EVE to study the growth of bacteria and the evolution of antibiotic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also describe how high school students in a class taught by one of the authors (LDC) used it to study the growth of bacteria and the evolution of antibiotic resistance, demonstrating that EVE is an accessible alternative to other bioreactors for use in low-resource classrooms, and in settings where instructors and students have limited engineering and programming experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the educational validation of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "c3cf27ea-44f6-4af1-98f6-c83970c5bae6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C26",
+      "claim": "EVE is an accessible alternative to other bioreactors for use in low-resource classrooms.",
+      "claim_type": "EXPLICIT",
+      "source": "We also describe how high school students in a class taught by one of the authors (LDC) used it to study the growth of bacteria and the evolution of antibiotic resistance, demonstrating that EVE is an accessible alternative to other bioreactors for use in low-resource classrooms, and in settings where instructors and students have limited engineering and programming experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the demonstration of EVE's use in a high school setting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "4fd47cf9-9e2a-4007-b55e-482fd6962ca6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C27",
+      "claim": "EVE is functionally similar to other small, automated bioreactors.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE is functionally similar to other small, automated bioreactors (Toprak et al., 2012; D\u00f6\u00dfelmann et al., 2017; Wong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to other bioreactor systems.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "625518d9-48b9-492c-b44a-db5c309dced1",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C28",
+      "claim": "Several bacterial cultures are grown simultaneously in small glass vials under well-mixed, drug-selective conditions in EVE.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, several bacterial cultures are grown simultaneously in small glass vials under well-mixed, drug-selective conditions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the operational setup of EVE and references Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3c6b126c-d665-4dae-92a5-264ca146283d",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C29",
+      "claim": "A control algorithm maintains culture conditions by supplying power to fans that rotate magnetic stir bars.",
+      "claim_type": "EXPLICIT",
+      "source": "A control algorithm maintains these conditions by: (i) supplying power to fans (with attached magnets) that rotate magnetic stir bars; (ii) introducing fresh medium into each culture at a constant rate through the activation of peristaltic pumps; (iii) monitoring population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes; (iv) introducing selective medium when these absorbance measurements exceed a user-defined value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one function of the EVE control algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "ff8148f7-9052-427b-b671-e39d8e225a03",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C30",
+      "claim": "A control algorithm introduces fresh medium into each culture at a constant rate through the activation of peristaltic pumps.",
+      "claim_type": "EXPLICIT",
+      "source": "A control algorithm maintains these conditions by: (i) supplying power to fans (with attached magnets) that rotate magnetic stir bars; (ii) introducing fresh medium into each culture at a constant rate through the activation of peristaltic pumps; (iii) monitoring population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes; (iv) introducing selective medium when these absorbance measurements exceed a user-defined value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another function of the EVE control algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "828b83ef-caf6-4a89-b1bf-8d8ae9fadcfd",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C31",
+      "claim": "A control algorithm monitors population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes.",
+      "claim_type": "EXPLICIT",
+      "source": "A control algorithm maintains these conditions by: (i) supplying power to fans (with attached magnets) that rotate magnetic stir bars; (ii) introducing fresh medium into each culture at a constant rate through the activation of peristaltic pumps; (iii) monitoring population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes; (iv) introducing selective medium when these absorbance measurements exceed a user-defined value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the monitoring function of the EVE control algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a6b86732-d074-4567-a077-af0659402231",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C32",
+      "claim": "A control algorithm introduces selective medium when absorbance measurements exceed a user-defined value.",
+      "claim_type": "EXPLICIT",
+      "source": "A control algorithm maintains these conditions by: (i) supplying power to fans (with attached magnets) that rotate magnetic stir bars; (ii) introducing fresh medium into each culture at a constant rate through the activation of peristaltic pumps; (iii) monitoring population growth via absorbance measurements taken from paired light-emitting and photo-sensitive diodes; (iv) introducing selective medium when these absorbance measurements exceed a user-defined value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adaptive response function of the EVE control algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b00aecb9-9eb6-4519-ba45-084441002076",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C33",
+      "claim": "EVE differs from other bioreactors in its hardware, software, and production costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the EVE differs from other bioreactors in its hardware, software, and production costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about EVE's distinguishing features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a900825c-5d10-4bc1-94a2-338fc854c680",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C34",
+      "claim": "The EVE uses a primary onboard Raspberry Pi microcomputer to execute the software and serve as a bridge between the user interface and a PCB.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE uses a primary onboard Raspberry Pi microcomputer to execute the software and serve as a bridge between the user interface and a PCB (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the hardware architecture of EVE and references Figure 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "0075cfea-1bf4-4d9a-859d-bc24d937bec2",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C35",
+      "claim": "EVE's design keeps costs low while allowing the device to be self-contained in environments without internet access.",
+      "claim_type": "EXPLICIT",
+      "source": "This design keeps costs low while allowing the device to be self-contained in environments without internet access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes design benefits of EVE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "d86c0897-a853-4548-9c89-503861d4c5ea",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C36",
+      "claim": "One can construct the EVE with a breadboard.",
+      "claim_type": "EXPLICIT",
+      "source": "One can also construct the EVE with a breadboard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative construction method for EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a454d543-bc68-47c1-aa8e-20ec92917696",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C37",
+      "claim": "Breadboards give users more flexibility to modify the hardware but require prior experience and come at the cost of increased assembly time and device footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "Breadboards give users more flexibility to modify the hardware but require prior experience and come at the cost of increased assembly time and device footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes trade-offs of using breadboards for EVE construction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "c9633104-2aca-41a9-9250-8e57347cfab6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C38",
+      "claim": "Users can access population growth and temperature measurements, edit configuration files, define experimental parameters, and monitor and control experiments remotely with EVE's free, open-source software run inside any web browser.",
+      "claim_type": "EXPLICIT",
+      "source": "One may access population growth and temperature measurements, edit configuration files, define experimental parameters, and monitor and control experiments remotely with our free, open-source software run inside any web browser.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software capabilities of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "01731b50-36ea-4a06-aeb7-2fea98f349b4",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C39",
+      "claim": "Users install EVE software by downloading the pre-compiled Raspberry Pi image or executing the installation script directly from the GitHub repository.",
+      "claim_type": "EXPLICIT",
+      "source": "Users install this software by downloading the pre-compiled Raspberry Pi image or executing the installation script directly from our GitHub repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software installation process for EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3ea35539-8ed4-4144-ac3b-5c9798b204f0",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C40",
+      "claim": "Data can be saved to network locations mounted to the Pi's file system or an attached USB device.",
+      "claim_type": "EXPLICIT",
+      "source": "Data can be saved to network locations mounted to the Pi's file system or an attached USB device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes data storage options for EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "0d65d2b8-5904-4d9b-8311-ef81b669050b",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C41",
+      "claim": "EVE and eVOLVER software are hosted on a Raspberry Pi and written in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE and eVOLVER software are hosted on a Raspberry Pi and written in Python, a common programming language with a broad user base and community support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the software platforms of EVE and eVOLVER.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "52cc69ca-c5b8-49f2-8f1e-cf9c95f50a1e",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C42",
+      "claim": "Python is a common programming language with a broad user base and community support.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE and eVOLVER software are hosted on a Raspberry Pi and written in Python, a common programming language with a broad user base and community support.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about Python's characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "f08d899b-1c02-4f1e-8bc1-f80e87737766",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C43",
+      "claim": "The combination of Raspberry Pi hardware and Python software allows for fast code execution and the Linux operating system facilitates customization.",
+      "claim_type": "EXPLICIT",
+      "source": "This combination of hardware and software allows for fast code execution and the Linux operating system facilitates customization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical benefits of EVE's design choices.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "9631bcf8-226b-422d-84c9-52900d693f9e",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C44",
+      "claim": "Other automated culture systems use proprietary or third-party software that may be inaccessible or cost-prohibitive for educators.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other automated culture systems use proprietary or third-party software that may be inaccessible or cost-prohibitive for educators (Toprak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by a citation to Toprak et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7ad2f86a-1db6-4bb8-8050-e850c610a1e1",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C45",
+      "claim": "One does not need to be familiar with Python to install the software, edit experimental parameters, or run the pre-configured control algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "One does not need to be familiar with Python to install the software, edit experimental parameters, or run the pre-configured control algorithms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the accessibility of EVE for users without programming experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "19f19b77-192f-45eb-907f-91bea4b0bb9f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C46",
+      "claim": "Working knowledge of Python is necessary to create custom algorithms for EVE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, working knowledge of this language is necessary to create custom algorithms, for which we uniquely provide design instructions in our GitHub repository.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a requirement for advanced customization of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "99b20da3-dba7-48cf-8e29-df9f6f859efa",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C47",
+      "claim": "EVE uses a more modern serial connection between the motherboard and the Pi than the eVOLVER.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the EVE uses a more modern serial connection between the motherboard and the Pi than the eVOLVER, which permits the use of more up-to-date software packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical comparison between EVE and eVOLVER.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "e844ac50-f654-4ca9-ae08-e730002271e5",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C48",
+      "claim": "EVE's modern serial connection permits the use of more up-to-date software packages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the EVE uses a more modern serial connection between the motherboard and the Pi than the eVOLVER, which permits the use of more up-to-date software packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of EVE's hardware design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b06ac4d9-1919-4283-9bb1-6975a04dd699",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C49",
+      "claim": "The Flexostat and the EVE have a similar broadly open software license that permits unrestricted use of the software.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the Flexostat and the EVE have a similar broadly open software license that permits unrestricted use of the software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the licensing of EVE and Flexostat.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "067bf24f-ea0f-41b9-af50-fe2bbbdae4af",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C50",
+      "claim": "EVE was designed to be cost-effective.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed the EVE to be cost-effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states a design goal for EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "40a98472-b672-4812-92f5-adae16cf5db1",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C51",
+      "claim": "The total cost to build an EVE system that performs simple growth or evolution experiments in triplicate with a negative control varies between $115 and $200.",
+      "claim_type": "EXPLICIT",
+      "source": "The total cost varies between $115 and $200 to build a system that performs simple growth or evolution experiments in triplicate with a negative control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific cost data for building EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3f3d1c9f-2c86-48a1-933b-54f0b1e7dd0f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C52",
+      "claim": "The cost estimates for EVE include all parts except the incubator, glassware, and 3D printer.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates include all parts except the incubator, glassware, and 3D printer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies what is included in the cost estimate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "ec8cca5c-3973-4714-9ab0-7598384d29f2",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C53",
+      "claim": "Fully assembled PCBs for EVE can be purchased for approximately $42 per board, including the power supply.",
+      "claim_type": "EXPLICIT",
+      "source": "The circuit board design can be downloaded from our repository and sent to a PCB manufacturer for printing and assembly; in our case, we purchased fully assembled PCBs for approximately $42 per board, including the power supply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific cost data for a key EVE component.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7ffcf792-681d-4a44-968b-db86bc362b35",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C54",
+      "claim": "Users may decrease costs and increase accessibility in low-resource classrooms by incubating bacterial cultures at room temperature and using a pressure cooker to sterilize growth media instead of an autoclave.",
+      "claim_type": "EXPLICIT",
+      "source": "Users may further decrease costs and increase accessibility in low-resource classrooms by incubating bacterial cultures at room temperature and using a pressure cooker to sterilize growth media instead of an autoclave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes cost-reduction strategies for using EVE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "f0c2dfc3-dd76-4fdc-8d73-7dd33092efdd",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C55",
+      "claim": "EVE was validated by examining voltage measurement variability across seven independent culture units and comparing these results with previously reported measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated the EVE in two ways. First, we examined voltage measurement variability across seven independent culture units and compared these results with previously reported measurements (Toprak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one validation method for EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "28101ce5-ed22-4257-8d2a-cc20e6f5dfea",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C56",
+      "claim": "Voltage is the raw measurement that is used to estimate optical density (i.e., population size).",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage is the raw measurement that is used to estimate optical density (i.e., population size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the relationship between voltage and population measurement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "5c90a9c2-e5bc-4ee9-b87d-a6cf4d86de0f",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C57",
+      "claim": "Smaller voltage measurement variability between individual culture units indicates better construct and internal validity.",
+      "claim_type": "EXPLICIT",
+      "source": "Smaller voltage measurement variability between individual culture units indicates better construct and internal validity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of voltage variability measurements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "8c8a9fad-e1fe-417b-a3f3-03649be9a534",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C58",
+      "claim": "Variability in measurements is introduced due to subtle differences when printing the vial holder, leading to slightly altered positioning of the diodes responsible for voltage measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Variability in measurements is introduced due to subtle differences when printing the vial holder, leading to slightly altered positioning of the diodes responsible for voltage measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a source of measurement variability in EVE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "780ea1db-3536-44e2-99dd-d07e5175d26a",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C59",
+      "claim": "The average voltage measurement variability in EVE was 8.0% (mean \u00b1 sd = 2.93\u00b10.23).",
+      "claim_type": "EXPLICIT",
+      "source": "The average variability was 8.0% (mean \u00b1 sd = 2.93\u00b10.23), comparable to the 7.5% of Toprak and colleagues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific measurement data from EVE validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "4df3224e-62df-488d-b925-643a14744c87",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C60",
+      "claim": "EVE's average voltage measurement variability of 8.0% is comparable to the 7.5% reported by Toprak and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "The average variability was 8.0% (mean \u00b1 sd = 2.93\u00b10.23), comparable to the 7.5% of Toprak and colleagues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares EVE's performance to a published benchmark.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "343d266c-9c66-4808-9dba-830ac90fce40",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C61",
+      "claim": "EVE was validated by experimentally evolving bacterial populations and comparing the results to those of Toprak et al., 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we experimentally evolved bacterial populations and again compared the results to those of Toprak et al., 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the second validation method for EVE.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7cd5eb44-f0ad-4777-9fbb-fe1a79655d76",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C62",
+      "claim": "E. coli ATCC 25922 was revived from a frozen stock by overnight growth in Mueller-Hinton broth.",
+      "claim_type": "EXPLICIT",
+      "source": "We revived E. coli ATCC 25922 from a frozen stock by overnight growth in Mueller-Hinton broth (MHB) (Sigma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "533abda1-36a3-458a-b0a5-c36d1498a6fe",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C63",
+      "claim": "100 \u00b5L of E. coli culture was inoculated into three separate culture units containing 12 mL of MHB.",
+      "claim_type": "EXPLICIT",
+      "source": "We inoculated 100 \u00b5L of this culture into three separate culture units containing 12 mL of MHB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "4d4870ef-2bde-4bf7-8aa9-2f7f5f51bc1d",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C64",
+      "claim": "The selective growth medium was prepared by diluting a chloramphenicol stock solution to 40 \u00b5g/mL in MHB.",
+      "claim_type": "EXPLICIT",
+      "source": "We then prepared the selective growth medium by diluting a chloramphenicol stock solution to 40 \u00b5g/mL in MHB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "9e0fa1f7-2364-42b1-bd98-646ea981df03",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C65",
+      "claim": "The culture units were incubated at 37 \u00b0C with constant stirring (\u223c225 rpm).",
+      "claim_type": "EXPLICIT",
+      "source": "The selective and permissive media were connected to the culture units, which were incubated at 37 \u00b0C with constant stirring (\u223c225 rpm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "8787605c-7c82-4bf6-b06b-8e9986ac4a88",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C66",
+      "claim": "Samples were taken from each culture's effluent waste every 12 hours and frozen at \u201380 \u00b0C with 15% glycerol as a cryoprotectant.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were taken from each culture's effluent waste every 12 hours and frozen at \u201380 \u00b0C with 15% glycerol as a cryoprotectant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "06f007df-5781-40b2-9df9-eb9904c4ecdf",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C67",
+      "claim": "Each sample's half-maximal inhibitory concentration (IC50) was estimated following the broth microdilution method and by fitting a Hill function to the resulting optical density data.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated each sample's half-maximal inhibitory concentration (IC50) following the broth microdilution method (Wiegand et al., 2008) and by fitting a Hill function to the resulting optical density data (Maltas and Wood, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "73bec9a4-c774-448d-8f2c-97f4f60ea799",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C68",
+      "claim": "The three ancestral E. coli populations began the experiment with an IC50 of 4 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The three ancestral populations began the experiment with an IC50 of 4 \u00b5g/mL, and chloramphenicol resistance increased to 9.3\u201313.9 \u00b5g/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "87f3092e-b400-4375-b6cd-83c57de23895",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C69",
+      "claim": "Chloramphenicol resistance in the E. coli populations increased to 9.3\u201313.9 \u00b5g/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The three ancestral populations began the experiment with an IC50 of 4 \u00b5g/mL, and chloramphenicol resistance increased to 9.3\u201313.9 \u00b5g/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "bfb9cc7f-2440-467a-9648-ca862d511e0c",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C70",
+      "claim": "EVE's results are comparable to Toprak et al., 2012, where resistance increased, on average, to approximately 15 \u00b5g/mL over the same time period.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are comparable to Toprak et al., 2012, where resistance increased, on average, to approximately 15 \u00b5g/mL over the same time period (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares EVE's experimental results to published data and references Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b030fb74-54af-47d7-b10e-bac0149b2348",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C71",
+      "claim": "EVE is well-suited for classroom settings because it was designed in collaboration with educators and tested by high school students at Hawken School in Gates Mills, Ohio.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE is well-suited for classroom settings because it was designed in collaboration with educators and tested by high school students at Hawken School in Gates Mills, Ohio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the educational validation of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "5c6990f5-0a57-43c6-8c07-718a5e517995",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C72",
+      "claim": "A pilot curriculum was developed for the evolutionary unit of the AP Biology course that detailed the desired learning outcomes, assessment evidence for those outcomes, and a learning plan.",
+      "claim_type": "EXPLICIT",
+      "source": "We first examined the Advanced Placement (AP) Biology curriculum and then developed a pilot curriculum for the evolutionary unit of the course that detailed the desired learning outcomes, assessment evidence for those outcomes, and a learning plan (see Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes curriculum development for EVE's educational use.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "63cc5dc7-8ab5-42b9-9529-ecad91203339",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C73",
+      "claim": "The AP curriculum introduces several key learning objectives about the importance of phenotypic variation, how natural selection acts on this variation, and how this phenomenon affects populations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP curriculum introduces several key learning objectives about the importance of phenotypic variation, how natural selection acts on this variation, and how this phenomenon affects populations over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes content of the AP Biology curriculum.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "5cdfede2-c940-4334-9522-5bc0da67a3be",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C74",
+      "claim": "The AP instructional model emphasizes that students use supporting resources and perform appropriate experiments to build and strengthen their conceptual understanding.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP instructional model also emphasizes that students use supporting resources and perform appropriate experiments to build and strengthen their conceptual understanding of these objectives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the pedagogical approach of AP Biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a1e1c28f-401d-4475-981d-6f7298a71eb6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C75",
+      "claim": "For most biology classrooms, bioreactor experiments introduce basic microbiology techniques, biotechnology, and data analysis to students.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, for most biology classrooms, bioreactor experiments introduce basic microbiology techniques, biotechnology, and data analysis to students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes educational benefits of bioreactor experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "03bdf62f-ca8d-4ee3-8c31-6159318c08e8",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C76",
+      "claim": "The unit was developed to facilitate student understanding of population growth dynamics and trait evolution through independent experimentation with the EVE.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore developed our unit to facilitate student understanding of population growth dynamics and trait evolution through independent experimentation with the EVE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the educational goals of the EVE curriculum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "19bf2f48-d097-42e1-9180-05a60ee056b2",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C77",
+      "claim": "Students were asked to consider how bacterial populations respond to changing environments, such as introducing antimicrobial agents.",
+      "claim_type": "EXPLICIT",
+      "source": "To reinforce this objective, we asked the students to consider how bacterial populations respond to changing environments, such as introducing antimicrobial agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a learning activity in the EVE curriculum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "4b378f27-6ec9-408f-b7f3-043d688430be",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C78",
+      "claim": "Two high school students followed the instructions in the GitHub repository to assemble the EVE bioreactor with 3D-printed equipment, a fabricated circuit board, and a Raspberry Pi microcomputer with the necessary pre-installed software.",
+      "claim_type": "EXPLICIT",
+      "source": "Two high school students followed the instructions in our GitHub repository (Gopalakrishnan, 2022) to assemble the EVE bioreactor with 3D-printed equipment, a fabricated circuit board, and a Raspberry Pi microcomputer with the necessary pre-installed software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the educational implementation of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "124446b9-e702-496d-a697-8f543edac725",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C79",
+      "claim": "Two AP Biology students, working as a team, calibrated the EVE device.",
+      "claim_type": "EXPLICIT",
+      "source": "Then two AP Biology students, working as a team, calibrated the device (Figure 3) and evolved a population of E. coli ATCC 25922 to increasing chloramphenicol concentrations over several days (Figure 4A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes student activities with EVE and references Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "d3e745df-ed52-4376-a9ee-9ee3f7087f93",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C80",
+      "claim": "Two AP Biology students evolved a population of E. coli ATCC 25922 to increasing chloramphenicol concentrations over several days.",
+      "claim_type": "EXPLICIT",
+      "source": "Then two AP Biology students, working as a team, calibrated the device (Figure 3) and evolved a population of E. coli ATCC 25922 to increasing chloramphenicol concentrations over several days (Figure 4A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes student experimental work with EVE and references Figure 4A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "6aa1e7bc-8109-4828-bf83-733b856e5324",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C81",
+      "claim": "The bacterial population initially expanded in size, decreased after the introduction of the antibiotic into the culture unit, and later rebounded as drug-resistant variants rose in frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "The population initially expanded in size, decreased after the introduction of the antibiotic into the culture unit, and later rebounded as drug-resistant variants rose in frequency (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes experimental observations and references Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "53f6fa69-f368-401a-9b49-8b8d4f857da5",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C82",
+      "claim": "Students calculated growth rates and predicted how these rates would change with varying drug selective pressures from the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, the students calculated growth rates and predicted how these rates would change with varying drug selective pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes student learning activities with EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "93c24ca5-d8bc-4167-8c8f-b2fce81b20b9",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C83",
+      "claim": "The authentic research experience introduced students to standard microbiology practices and concepts, including how to prepare drug solutions and use sterile technique to maintain bacterial cultures, when logistic growth models apply, and the relationship between light absorbance and cell number (i.e., Beer's law).",
+      "claim_type": "EXPLICIT",
+      "source": "This authentic research experience introduced the students to standard microbiology practices and concepts, including how to prepare drug solutions and use sterile technique to maintain bacterial cultures, when logistic growth models apply, and the relationship between light absorbance and cell number (i.e., Beer's law).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes educational outcomes from using EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a925f863-5a35-491d-b32a-3328c562d0c8",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C84",
+      "claim": "The students adjusted the experimental protocol to account for classroom limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the students adjusted the experimental protocol to account for classroom limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes student problem-solving with EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a0c2235b-3c48-4f96-841d-a7bae812962b",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C85",
+      "claim": "Hawken School does not have Bunsen burners or standing incubators.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Hawken School does not have Bunsen burners or standing incubators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes resource limitations at the test site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "08b611f3-cf03-4f78-8dda-5597e79da82d",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C86",
+      "claim": "The students created a spartan workspace and disinfected all surfaces with 70% ethanol, visually inspected the growth medium to ensure that it remained free of contamination, and incubated bacterial cultures in an oven set to approximately 30\u201340\u00baC.",
+      "claim_type": "EXPLICIT",
+      "source": "The students therefore created a spartan workspace and disinfected all surfaces with 70% ethanol, visually inspected the growth medium to ensure that it remained free of contamination, and incubated bacterial cultures in an oven set to approximately 30\u201340\u00baC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes student adaptations to resource limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "ab98034a-c2be-4f62-91e1-2051bd4c5a49",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C87",
+      "claim": "There are several alternative ways that users can sterilize glassware and media, including using liquid chemicals and microwaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although this particular high school has autoclaves, there are several alternative ways that users can sterilize glassware and media, including using liquid chemicals and microwaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes alternative sterilization methods for resource-limited settings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "dc56a431-2bbc-4f03-bdc9-323291b99d39",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C88",
+      "claim": "The Centers for Disease Control and Prevention describe sterilization methods in greater detail at https://www.cdc.gov/infectioncontrol/guidelines/disinfection/sterilization/other-methods.html.",
+      "claim_type": "EXPLICIT",
+      "source": "The Centers for Disease Control and Prevention describe some of these methods in greater detail (https://www.cdc.gov/infectioncontrol/guidelines/disinfection/sterilization/other-methods.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides a reference for sterilization methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "83596d07-e438-42b8-ac95-1e20fd90a049",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C89",
+      "claim": "EVE could be used in other educational contexts (i.e., college laboratory classrooms) or outside the classroom.",
+      "claim_type": "EXPLICIT",
+      "source": "One could also use the EVE in other educational contexts (i.e., college laboratory classrooms) or outside the classroom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests potential applications of EVE beyond high school.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "574b897e-3449-409c-9f75-58d71b609ce2",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C90",
+      "claim": "Project work within clubs may offer unique experiences to students wishing to learn about how multiple disciplines interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the EVE functions through a combination of engineering and biology, project work within clubs may offer unique experiences to students wishing to learn about how multiple disciplines interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests potential educational applications of EVE.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "643d9736-ccc2-4988-8f66-cdfc989e1aba",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C91",
+      "claim": "Interested parties may acquire non-pathogenic E. coli K12, growth medium, and antibiotic powders through the Carolina Biological Supply Company or a similar vendor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interested parties may acquire non-pathogenic E. coli K12, growth medium, and antibiotic powders through the Carolina Biological Supply Company or a similar vendor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about obtaining materials for EVE experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "9f7cb715-99f2-431a-9b40-4f64d8e6c7ae",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C92",
+      "claim": "EVE is being used to study bacteriophages in continuous culture at the University of Exeter in the United Kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE has also been implemented in several other contexts. For instance, the EVE is being used to study bacteriophages in continuous culture at the University of Exeter in the United Kingdom, and to develop research bioreactors at a French biotech company.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of EVE in research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "66045535-0376-4b72-bd03-fbcaf94869b6",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C93",
+      "claim": "EVE is being used to develop research bioreactors at a French biotech company.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVE has also been implemented in several other contexts. For instance, the EVE is being used to study bacteriophages in continuous culture at the University of Exeter in the United Kingdom, and to develop research bioreactors at a French biotech company.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an application of EVE in industry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "036e1cdb-4dfd-4d1b-8fcf-7f0dc6c29620",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C94",
+      "claim": "Undergraduate students used EVE's design to build their own custom morbidostat as part of the International Genetically Engineered Machine (iGEM) competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, undergraduate students used its design to build their own custom morbidostat as part of the International Genetically Engineered Machine (iGEM) competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an educational application of EVE at the college level.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "d90fa954-b86b-4c4b-8453-1c1ec8ff040a",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C95",
+      "claim": "The manual produced by iGEM students represents an example of what the EVE would look like in a college setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The manual produced by these students represents an example of what the EVE would look like in a college setting (https://static.igem.org/mediawiki/2019/c/c6/T--Athens--Morbidostat_manual.pdf).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides an example of EVE implementation in higher education.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "54a1a421-390a-41b5-b8fe-19472da27aee",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C96",
+      "claim": "EVE can address questions of evolutionary repeatability.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its educational utility, the EVE can address questions of evolutionary repeatability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a research application of EVE.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "27719812-227c-45b4-a888-9f5bb7e7394b",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C97",
+      "claim": "One might examine whether correlated drug responses are conserved across time as populations evolve under single- or multi-drug selection using EVE.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, one might examine whether correlated drug responses are conserved across time as populations evolve under single- or multi-drug selection (Nichol et al., 2015; Nichol et al., 2019; Card et al., 2021; Iram et al., 2021; King, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests a research application of EVE, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "53396ef9-9c6e-45a3-ab6f-24b8c70dbacd",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C98",
+      "claim": "The current EVE system can only introduce one drug solution into the growth medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the current EVE system can only introduce one drug solution into the growth medium, we are designing a PCB to allow the simultaneous or sequential addition of multiple drugs across more replicate cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a current limitation of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7b315a06-cc56-46be-8a97-eebc285bd0dd",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C99",
+      "claim": "A PCB is being designed to allow the simultaneous or sequential addition of multiple drugs across more replicate cultures in EVE.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the current EVE system can only introduce one drug solution into the growth medium, we are designing a PCB to allow the simultaneous or sequential addition of multiple drugs across more replicate cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes planned improvements to EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "bc364c07-5b80-4fce-9cd4-3bd72b33b3ae",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C100",
+      "claim": "Users could substitute the existing hardware with LEDs and photodiodes corresponding to fluorescence proteins' excitation and emission frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, users could substitute the existing hardware with LEDs and photodiodes corresponding to fluorescence proteins' excitation and emission frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential modification to EVE.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7fe5edcf-1038-4413-9f43-be50a5fdfb51",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C101",
+      "claim": "Hardware alteration to use fluorescence would allow bacterial head-to-head competitions without periodic sampling and cell enumeration.",
+      "claim_type": "EXPLICIT",
+      "source": "This hardware alteration would allow bacterial head-to-head competitions without periodic sampling and cell enumeration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of the proposed hardware modification.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "1ed766d7-78d3-4f08-93e2-a7a53c0d9313",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C102",
+      "claim": "The need of a 3D printer may restrict EVE use in resource-limited classrooms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although one could buy 3D-printed parts from several internet vendors, the need of a 3D printer may still restrict use in resource-limited classrooms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of EVE for some educational settings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "09318739-492e-404b-b49a-26396d4c38ee",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C103",
+      "claim": "Future implementations will include alternative hardware construction methods that preclude the need for a 3D printer and thus lower indirect costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Future implementations will include alternative hardware construction methods that preclude the need for a 3D printer and thus lower indirect costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes planned improvements to EVE accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "6de32a21-c380-4624-b0fa-b4868e72a43a",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C104",
+      "claim": "EVE may require slightly more setup than a pre-constructed and calibrated commercially available bioreactor.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the EVE may require slightly more setup than a pre-constructed and calibrated commercially available bioreactor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of EVE compared to commercial alternatives.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "5025746a-ba15-4f77-b430-f459c2828691",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C105",
+      "claim": "Fluid pumps may vary in flow rate and must be individually calibrated to avoid accidental overflow.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fluid pumps may vary in flow rate; thus, they must be individually calibrated to avoid accidental overflow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a setup requirement for EVE.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "f3e42899-4a48-46d6-8b19-573d97f8bc19",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C106",
+      "claim": "There is educational value in solving hardware and software challenges, especially in a classroom setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is educational value in solving hardware and software challenges, especially in a classroom setting, we encourage individuals to use EVE's GitHub repository to report challenges and potential solutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pedagogical benefit of EVE's design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "166016f3-aac8-4de7-8173-57f0ed44e97e",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C107",
+      "claim": "The authors will continue to work on automated solutions to mitigate setup tasks for the user.",
+      "claim_type": "EXPLICIT",
+      "source": "We will also continue to work on automated solutions to mitigate these setup tasks for the user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes planned improvements to EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "40d271ed-b076-468e-a92e-51f19bee3082",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C108",
+      "claim": "EVE is uniquely suited for use in educational settings because of its low-cost and open-source design.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we believe that EVE is uniquely suited for use in educational settings because of its low-cost and open-source design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about EVE's educational value.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a6ef14bf-5260-4dcc-ae27-b1f1f526c971",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C109",
+      "claim": "High school students demonstrated EVE's suitability for education by building the EVE and performing a simple evolution experiment in the classroom.",
+      "claim_type": "EXPLICIT",
+      "source": "High school students demonstrated these aspects by building the EVE and performing a simple evolution experiment in the classroom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the educational validation of EVE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "fb6f1fc5-4b6c-48e7-b37c-c23ca0dac7d3",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C110",
+      "claim": "R2 values of 0.97, 0.99, and 0.99 were calculated for the linear, quadratic, and cubic fits respectively for the relationship between optical density and voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "R2 values of 0.97, 0.99, and 0.99 were calculated for the linear, quadratic, and cubic fits respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides specific calibration data from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "18ce3ba8-78fa-40b6-a956-54f25e900c42",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C111",
+      "claim": "A linear model was used to translate voltage to optical density in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a linear model to translate voltage to optical density in our experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method used for data analysis, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b50dbb0a-d363-4157-b52f-d799c2a95992",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "claim_id": "C112",
+      "claim": "Culture units behave similarly when measuring voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Culture units behave similarly when measuring voltage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a validation result shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "20c09df8-bec7-4169-b8d9-035d6c53c77c",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "EVE is a low-cost, open-source morbidostat that costs $115-200 to construct and supports multiple independently controlled culture units with precise control over medium exchange, cell density measurement, and drug addition. The system uses a Raspberry Pi microcomputer interfacing with a PCB, can be constructed with either PCB or breadboard, and includes web-based software for remote monitoring and control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C40 collectively describe EVE's design, cost, and capabilities with specific technical details. The hardware architecture (C34), cost estimates (C23, C51-53), functional capabilities (C22, C28-32), and software features (C38-40) are clearly documented with supporting figures. The design choices are well-justified and the system appears feasible based on the described components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "e7cc40b0-766f-4960-8ea4-33c21cac8970",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EVE's software is written in Python and hosted on Raspberry Pi, making it accessible to users without programming experience for basic operations while allowing customization for advanced users. EVE differs from other bioreactors like eVOLVER and Flexostat in its use of modern serial connections and broadly open licensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 describe EVE's software architecture and compare it to alternatives. The use of Python and Raspberry Pi (C41-43) is well-documented, and the accessibility claims (C45-46) are reasonable given the web interface described. Comparisons to eVOLVER and Flexostat (C44, C47-49) are supported by citations, though specific technical details about the serial connection advantages (C47-48) could be more thoroughly validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b29ec43a-8e40-492b-b0df-df748ab20aba",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EVE was designed to be cost-effective, with total construction costs of $115-200 for a system performing experiments in triplicate with a negative control. Costs can be further reduced by using room temperature incubation and pressure cookers for sterilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 provide specific cost data for EVE construction. The cost range (C51) and component costs (C53) are clearly stated, and exclusions (C52) are documented. Cost-reduction strategies (C54) are reasonable suggestions, though their effectiveness is not empirically validated in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b6568613-b119-4aaf-a35e-17068bad0c06",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EVE was validated by measuring voltage variability across seven culture units, achieving 8.0% average variability (mean \u00b1 sd = 2.93\u00b10.23), comparable to the 7.5% reported by Toprak et al., 2012. Voltage measurements are used to estimate optical density, and variability arises from subtle differences in 3D-printed vial holder positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 and C112 describe the first validation method with specific quantitative data. The 8.0% variability (C59) is comparable to the published benchmark of 7.5% (C60), demonstrating acceptable performance. The explanation of variability sources (C58) is reasonable, and Figure 3 supports the claim that culture units behave similarly (C112). However, no statistical test is provided to formally compare EVE's variability to Toprak et al.'s benchmark.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EVE was validated by experimentally evolving E. coli ATCC 25922 populations under chloramphenicol selection. Three replicate populations evolved from an initial IC50 of 4 \u00b5g/mL to 9.3-13.9 \u00b5g/mL, comparable to Toprak et al., 2012, where resistance increased to approximately 15 \u00b5g/mL over the same time period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C70 describe the second validation experiment with detailed methodology (C62-C67) and quantitative results (C68-C70). The experimental design is sound with three biological replicates, and the IC50 measurements follow established methods (C67). The results (9.3-13.9 \u00b5g/mL) are reasonably comparable to the benchmark (~15 \u00b5g/mL), though slightly lower. Figure 2 supports these findings, showing the temporal evolution of resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "ace37250-aa74-400f-b9b0-65980f084c0c",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Calibration of EVE showed R\u00b2 values of 0.97, 0.99, and 0.99 for linear, quadratic, and cubic fits respectively between optical density and voltage. A linear model was used to translate voltage to optical density in experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 provide specific calibration data shown in Figure 3. The high R\u00b2 values indicate good fits, though the choice of a linear model (C111) despite slightly better quadratic/cubic fits (R\u00b2=0.99 vs 0.97) is not explicitly justified. The linear model is reasonable for simplicity and the R\u00b2=0.97 indicates acceptable performance, but the manuscript does not discuss whether the linear approximation introduces systematic errors at high or low densities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EVE was successfully used in a high school classroom setting where students assembled the device, calibrated it, and evolved E. coli populations under chloramphenicol selection. Students observed population dynamics (expansion, decline, rebound) and learned microbiology techniques, growth models, and Beer's law while adapting protocols to classroom limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C86 describe the educational implementation with specific details about student activities (C78-C82) and learning outcomes (C83). The successful assembly and operation by high school students (C78-C80) demonstrates accessibility. Student adaptations to resource limitations (C84-C86) show problem-solving skills. Figures 3-4 provide visual documentation of student work. However, no formal assessment of learning outcomes is provided beyond the authors' observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EVE is an accessible, low-cost morbidostat suitable for educational settings with limited resources and minimal engineering/programming experience, as demonstrated by high school students successfully building and using it to study bacterial growth and antibiotic resistance evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C25-C26, and C108-C109 represent the manuscript's central thesis about EVE's educational accessibility. The demonstration with high school students (C5, C25, C109) provides strong evidence for accessibility claims. The low cost (C4, C23) and successful classroom implementation (C71-C86) support the conclusion that EVE is suitable for resource-limited settings (C26, C108). However, the sample size is limited (one school, small number of students), and broader validation across diverse educational settings would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "566b35ca-42b5-498d-93fd-dd0d60b99476",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Morbidostats are bioreactors that maintain steady death rates by dynamically adjusting antibiotic concentrations based on population growth measurements, making them well-suited for studying antibiotic resistance evolution. The chemostat, built over 70 years ago, was the first bioreactor and maintains fixed growth rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 provide background on bioreactors and morbidostats, supported by appropriate citations (C6, C8, C13, C14). The definitions and mechanisms (C1, C7, C9-C12) are consistent with established knowledge. The historical context (C6) and applications (C13-C14) are well-documented in the cited literature. These are standard background claims that accurately represent the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Morbidostats in classrooms enable inquiry-based learning where students combine hypothesis generation with real-time observation of microbial adaptation, improving understanding of evolution and natural selection compared to passive lecture-based instruction. This approach complements existing AP Biology curricula and teaches engineering and programming skills.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 and C73-C75 describe educational benefits of morbidostats, supported by citations to education research (C17, C18). The contrast between passive and active learning (C15-C16) is well-established in education literature. The alignment with AP Biology objectives (C73-C74) is documented. However, the manuscript does not provide empirical data comparing learning outcomes with and without EVE, relying instead on cited literature and logical inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3bad3111-0671-4ef9-bfa5-dd3447392cb0",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "EVE is functionally similar to other small automated bioreactors but differs in its hardware, software, and production costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C33 make general comparative statements supported by citations (C27) and elaborated in subsequent claims about specific differences. The functional similarity (C27) is reasonable given the shared morbidostat principles, while the differences (C33) are detailed in claims C34-C53. These are appropriate framing statements for the comparisons that follow.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "3fdf5334-6711-444d-82eb-0d0105d0572e",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "EVE has been implemented in diverse contexts including college classrooms, research labs at University of Exeter, a French biotech company, and the iGEM competition. It could be used in other educational contexts and clubs to teach interdisciplinary skills.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C95 describe actual implementations (C92-C95) and potential applications (C89-C90). The documented uses (C92-C95) demonstrate EVE's versatility beyond high school settings. The potential applications (C89-C90) are reasonable extrapolations. However, details about these implementations are limited, and no data on outcomes from these other contexts are provided. The iGEM manual reference (C95) provides some external validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "85b96b56-3f2d-41f9-b695-72c78f5349fc",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "EVE can address research questions about evolutionary repeatability and correlated drug responses. Current limitations include single-drug capability, but multi-drug PCBs are being designed. Hardware modifications for fluorescence detection could enable competition experiments without sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 describe potential research applications and future developments. The research applications (C96-C97) are supported by relevant citations but remain speculative as no data are presented. The current limitation (C98) is clearly stated, and planned improvements (C99) are mentioned but not demonstrated. The fluorescence modification (C100-C101) is a reasonable suggestion but entirely speculative. These represent future directions rather than validated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "EVE has limitations including the need for 3D printing (which may restrict use in some classrooms) and more setup than commercial bioreactors (e.g., pump calibration). Future implementations will address these limitations with alternative construction methods and automated solutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C107 honestly acknowledge EVE's limitations. The 3D printing requirement (C102) is a valid accessibility concern, though mitigated by commercial printing services. The setup requirements (C104-C105) are realistic, and the educational value of troubleshooting (C106) is a reasonable perspective. Planned improvements (C103, C107) show awareness of limitations, though no timeline or specific solutions are provided. This transparent discussion of limitations strengthens the manuscript's credibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    },
+    {
+      "id": "a63002ac-a4ca-45f6-aebd-5dbfd82c7c96",
+      "content_id": "9b1a7e8c-2806-40c2-b5ff-1cf7079a5408",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Morbidostats are often too expensive to be used in educational settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C3 states that morbidostats are often too expensive for education, motivating EVE's development. However, no specific cost data for existing morbidostats are provided, making it difficult to evaluate this claim. While the eVOLVER and other systems may be more expensive, quantitative cost comparisons would strengthen this motivating claim. The statement may be accurate but lacks supporting evidence in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:50:37.672971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b83c87a7-6ed6-4782-9fd5-98d5ecb0ee1f",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "fd399bcd-20f3-46ea-afb2-b3dc1b675102",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "fa38f677-27e8-458f-adef-d5730846a0ca",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "f224f146-60c3-44eb-9428-52b8ae848466",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "5f15b966-45f8-42fe-be48-94f6ed1e5c0f",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "625518d9-48b9-492c-b44a-db5c309dced1",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "3c6b126c-d665-4dae-92a5-264ca146283d",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "ff8148f7-9052-427b-b671-e39d8e225a03",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "828b83ef-caf6-4a89-b1bf-8d8ae9fadcfd",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "a6b86732-d074-4567-a077-af0659402231",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "a900825c-5d10-4bc1-94a2-338fc854c680",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "0075cfea-1bf4-4d9a-859d-bc24d937bec2",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "d86c0897-a853-4548-9c89-503861d4c5ea",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "a454d543-bc68-47c1-aa8e-20ec92917696",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "c9633104-2aca-41a9-9250-8e57347cfab6",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "01731b50-36ea-4a06-aeb7-2fea98f349b4",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "3ea35539-8ed4-4144-ac3b-5c9798b204f0",
+      "result_id": "20c09df8-bec7-4169-b8d9-035d6c53c77c"
+    },
+    {
+      "claim_id": "0d65d2b8-5904-4d9b-8311-ef81b669050b",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "52cc69ca-c5b8-49f2-8f1e-cf9c95f50a1e",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "f08d899b-1c02-4f1e-8bc1-f80e87737766",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "9631bcf8-226b-422d-84c9-52900d693f9e",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "7ad2f86a-1db6-4bb8-8050-e850c610a1e1",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "19f19b77-192f-45eb-907f-91bea4b0bb9f",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "99b20da3-dba7-48cf-8e29-df9f6f859efa",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "e844ac50-f654-4ca9-ae08-e730002271e5",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "b06ac4d9-1919-4283-9bb1-6975a04dd699",
+      "result_id": "e7cc40b0-766f-4960-8ea4-33c21cac8970"
+    },
+    {
+      "claim_id": "067bf24f-ea0f-41b9-af50-fe2bbbdae4af",
+      "result_id": "b29ec43a-8e40-492b-b0df-df748ab20aba"
+    },
+    {
+      "claim_id": "40a98472-b672-4812-92f5-adae16cf5db1",
+      "result_id": "b29ec43a-8e40-492b-b0df-df748ab20aba"
+    },
+    {
+      "claim_id": "3f3d1c9f-2c86-48a1-933b-54f0b1e7dd0f",
+      "result_id": "b29ec43a-8e40-492b-b0df-df748ab20aba"
+    },
+    {
+      "claim_id": "ec8cca5c-3973-4714-9ab0-7598384d29f2",
+      "result_id": "b29ec43a-8e40-492b-b0df-df748ab20aba"
+    },
+    {
+      "claim_id": "7ffcf792-681d-4a44-968b-db86bc362b35",
+      "result_id": "b29ec43a-8e40-492b-b0df-df748ab20aba"
+    },
+    {
+      "claim_id": "f0c2dfc3-dd76-4fdc-8d73-7dd33092efdd",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "28101ce5-ed22-4257-8d2a-cc20e6f5dfea",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "5c90a9c2-e5bc-4ee9-b87d-a6cf4d86de0f",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "8c8a9fad-e1fe-417b-a3f3-03649be9a534",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "780ea1db-3536-44e2-99dd-d07e5175d26a",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "4df3224e-62df-488d-b925-643a14744c87",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "b50dbb0a-d363-4157-b52f-d799c2a95992",
+      "result_id": "b6568613-b119-4aaf-a35e-17068bad0c06"
+    },
+    {
+      "claim_id": "343d266c-9c66-4808-9dba-830ac90fce40",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "7cd5eb44-f0ad-4777-9fbb-fe1a79655d76",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "533abda1-36a3-458a-b0a5-c36d1498a6fe",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "4d4870ef-2bde-4bf7-8aa9-2f7f5f51bc1d",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "9e0fa1f7-2364-42b1-bd98-646ea981df03",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "8787605c-7c82-4bf6-b06b-8e9986ac4a88",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "06f007df-5781-40b2-9df9-eb9904c4ecdf",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "73bec9a4-c774-448d-8f2c-97f4f60ea799",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "87f3092e-b400-4375-b6cd-83c57de23895",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "bfb9cc7f-2440-467a-9648-ca862d511e0c",
+      "result_id": "7a1353bd-6a50-4020-925b-8a80a91fa1a3"
+    },
+    {
+      "claim_id": "fb6f1fc5-4b6c-48e7-b37c-c23ca0dac7d3",
+      "result_id": "ace37250-aa74-400f-b9b0-65980f084c0c"
+    },
+    {
+      "claim_id": "18ce3ba8-78fa-40b6-a956-54f25e900c42",
+      "result_id": "ace37250-aa74-400f-b9b0-65980f084c0c"
+    },
+    {
+      "claim_id": "b030fb74-54af-47d7-b10e-bac0149b2348",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "5c6990f5-0a57-43c6-8c07-718a5e517995",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "03bdf62f-ca8d-4ee3-8c31-6159318c08e8",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "19bf2f48-d097-42e1-9180-05a60ee056b2",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "4b378f27-6ec9-408f-b7f3-043d688430be",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "124446b9-e702-496d-a697-8f543edac725",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "d3e745df-ed52-4376-a9ee-9ee3f7087f93",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "6aa1e7bc-8109-4828-bf83-733b856e5324",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "53f6fa69-f368-401a-9b49-8b8d4f857da5",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "93c24ca5-d8bc-4167-8c8f-b2fce81b20b9",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "a925f863-5a35-491d-b32a-3328c562d0c8",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "a0c2235b-3c48-4f96-841d-a7bae812962b",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "08b611f3-cf03-4f78-8dda-5597e79da82d",
+      "result_id": "b0e5c639-a2a6-4a75-bc72-eb04feca2d0d"
+    },
+    {
+      "claim_id": "be4273f7-e9f6-415b-9e5a-9b1968c68ac8",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "3110020c-bb94-4320-8cc9-c51811b770b5",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "dcb76cb5-4bad-425d-be9a-2fcd5b227778",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "c3cf27ea-44f6-4af1-98f6-c83970c5bae6",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "40d271ed-b076-468e-a92e-51f19bee3082",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "a6ef14bf-5260-4dcc-ae27-b1f1f526c971",
+      "result_id": "a217a3d4-c500-4c9b-9b7c-512ce96d42e3"
+    },
+    {
+      "claim_id": "e99a28ff-0243-4f00-8eeb-1c4a27489f26",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "43bc08a4-cc20-4693-bfeb-1e2a448a8cba",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "73b99553-99bd-4745-86c5-72b51a7cf114",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "35991953-e310-4367-99cf-1df229d691ba",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "a9f8cd5e-db7c-4f1a-a16a-5a7cf101ed85",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "c522c755-a985-420b-a785-660b953483d3",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "eb5c74e8-eb1f-4ea1-81e5-2119c583265c",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "d4bfc234-90e9-4aab-b301-110c037b5cb5",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "44fd1211-b2ef-42a3-b82e-8a7989b7f674",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "09503559-7852-44cf-a458-cd872fd52c08",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "2f192c96-198c-44e3-a4d0-4f7d0b6a3a77",
+      "result_id": "566b35ca-42b5-498d-93fd-dd0d60b99476"
+    },
+    {
+      "claim_id": "1ea6f47f-31fb-4251-b968-7eacc9b00469",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "f4614f5d-1024-4f89-8332-f9d90b1f188f",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "87782b5e-02da-4ad9-a3e1-9305ba3091e6",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "ef9d466d-c336-4e33-8e4c-f3ec047bea13",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "536f7541-16ac-426e-a4c2-54d4233ad06c",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "63cc5dc7-8ab5-42b9-9529-ecad91203339",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "5cdfede2-c940-4334-9522-5bc0da67a3be",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "a1e1c28f-401d-4475-981d-6f7298a71eb6",
+      "result_id": "46de44d4-12ac-4565-8a8c-e85dbab7e4de"
+    },
+    {
+      "claim_id": "4fd47cf9-9e2a-4007-b55e-482fd6962ca6",
+      "result_id": "3bad3111-0671-4ef9-bfa5-dd3447392cb0"
+    },
+    {
+      "claim_id": "b00aecb9-9eb6-4519-ba45-084441002076",
+      "result_id": "3bad3111-0671-4ef9-bfa5-dd3447392cb0"
+    },
+    {
+      "claim_id": "83596d07-e438-42b8-ac95-1e20fd90a049",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "574b897e-3449-409c-9f75-58d71b609ce2",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "643d9736-ccc2-4988-8f66-cdfc989e1aba",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "9f7cb715-99f2-431a-9b40-4f64d8e6c7ae",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "66045535-0376-4b72-bd03-fbcaf94869b6",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "036e1cdb-4dfd-4d1b-8fcf-7f0dc6c29620",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "d90fa954-b86b-4c4b-8453-1c1ec8ff040a",
+      "result_id": "3fdf5334-6711-444d-82eb-0d0105d0572e"
+    },
+    {
+      "claim_id": "54a1a421-390a-41b5-b8fe-19472da27aee",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "27719812-227c-45b4-a888-9f5bb7e7394b",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "53396ef9-9c6e-45a3-ab6f-24b8c70dbacd",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "7b315a06-cc56-46be-8a97-eebc285bd0dd",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "bc364c07-5b80-4fce-9cd4-3bd72b33b3ae",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "7fe5edcf-1038-4413-9f43-be50a5fdfb51",
+      "result_id": "85b96b56-3f2d-41f9-b695-72c78f5349fc"
+    },
+    {
+      "claim_id": "1ed766d7-78d3-4f08-93e2-a7a53c0d9313",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "09318739-492e-404b-b49a-26396d4c38ee",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "6de32a21-c380-4624-b0fa-b4868e72a43a",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "5025746a-ba15-4f77-b430-f459c2828691",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "f3e42899-4a48-46d6-8b19-573d97f8bc19",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "166016f3-aac8-4de7-8173-57f0ed44e97e",
+      "result_id": "bbb65341-4f38-4a50-aeb7-0e67801f72ca"
+    },
+    {
+      "claim_id": "fa309c01-d365-4623-a171-c603e301eb09",
+      "result_id": "a63002ac-a4ca-45f6-aebd-5dbfd82c7c96"
+    }
+  ],
+  "comparisons": []
+}

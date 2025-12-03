@@ -1,0 +1,1495 @@
+{
+  "submission": {
+    "id": "ec14611c-6593-4bb9-924d-2c3059af7287",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T03:38:25.261149Z",
+    "updated_at": "2025-12-03T03:38:25.261149Z"
+  },
+  "content": [
+    {
+      "id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "submission_id": "ec14611c-6593-4bb9-924d-2c3059af7287",
+      "content_type": "manuscript",
+      "content_text": "# Infection with a newly designed dual fluorescent reporter HIV-1 effectively identifies latently infected CD4+ T cells\n\n## Authors\n\n- Jinfeng Cai<sup>1</sup> ([ORCID: 0000-0001-8356-030X](https://orcid.org/0000-0001-8356-030X))\n- Hongbo Gao<sup>1</sup>\n- Jiacong Zhao<sup>1</sup>\n- Shujing Hu<sup>1</sup>\n- Xinyu Liang<sup>1</sup>\n- Yanyan Yang<sup>1</sup>\n- Zhuanglin Dai<sup>1</sup>\n- Zhongsi Hong<sup>3</sup>\n- Kai Deng<sup>1</sup> ([ORCID: 0000-0002-9973-8130](https://orcid.org/0000-0002-9973-8130)) \u2020\n\n### Affiliations\n\n1. Institute of Human Virology, Key Laboratory of Tropical Disease Control of Ministry of Education, Zhongshan School of Medicine, Sun Yat-sen University Guangzhou China\n2. Department of Immunology, Zhongshan School of Medicine, Sun Yat-sen University Guangzhou China\n3. Department of Infectious Diseases, Fifth Affiliated Hospital, Sun Yat-sen University Zhuhai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe major barrier to curing HIV-1 infection is a small pool of latently infected cells that harbor replication-competent viruses, which are widely considered the origin of viral rebound when antiretroviral\u2002therapy (ART) is interrupted. The difficulty in distinguishing latently infected cells from the vast majority of uninfected cells has represented a significant bottleneck precluding comprehensive understandings of HIV-1 latency. Here we reported and validated a newly designed dual fluorescent reporter virus, DFV-B, infection with which primary CD4+ T cells can directly label latently infected cells and generate a latency model that was highly physiological relevant. Applying DFV-B infection in Jurkat T cells, we generated a stable cell line model of HIV-1 latency with diverse viral integration sites. High-throughput compound screening with this model identified ACY-1215 as a potent latency reversing agent, which could be verified in other cell models and in primary CD4+ T cells from ART-suppressed individuals ex vivo. In summary, we have generated a meaningful and feasible model to directly study latently infected cells, which could open up new avenues to explore the critical events of HIV-1 latency and become a valuable tool for the research of AIDS functional cure.\n\n## Introduction\n\nDespite antiretroviral\u2002therapy\u2002(ART) efficiently blocks productive HIV-1 replication, viruses persist in a small pool of latently infected CD4+ T cells, which are widely considered the major barrier to curing HIV-1 infection. These latently infected cells harbor transcriptional silent but replication-competent proviral genome, which was demonstrated to be the origin of rapid viral rebound after ART is interrupted (Finzi et al., 1997; Chun et al., 2008). Latently infected CD4+ T cells are essentially indistinguishable from uninfected cells and are therefore not recognized by immune responses, including broadly neutralizing antibodies or cytotoxic T lymphocytes (CTLs). Current technologies also do not allow direct identification or purification of live latently infected cells from the infected individuals on ART. It is therefore vitally important to create novel and physiological relevant cell models of HIV-1 latency, which can be further exploited to study the mechanisms underlying HIV-1 latency and to develop novel strategies for AIDS functional cure.\n\nThe difficulty in distinguishing latently infected cells from the vast majority of uninfected cells has represented a major bottleneck precluding comprehensive understandings of HIV-1 latency. To tackle this question, researchers have tried to establish reporter virus systems to differentiate productively and latently infected cells. The reporter viruses usually incorporate two fluorescent proteins, with one dependent on LTR activity while the other under the control of a constitutive promoter (Calvanese et al., 2013; Dahabieh et al., 2013; Battivelli et al., 2018; Kim et al., 2019). However, some apparent defects existed with the previously reported systems, especially when infecting primary CD4+ T cells: (a) unclear cell subpopulations, for example, the boundaries of productively infected cells were obscured (Calvanese et al., 2013; Battivelli et al., 2018; Kim et al., 2019); (b) potential interference of cytokines on HIV-1 latency, as all infected cells (Dahabieh et al., 2013; Battivelli et al., 2018) were maintained in IL-2 containing medium for latency establishment; and\u00a0(c) low frequency of reactivation of the identified latently infected cells, for instance, only 5% of HIVGKO cells were reactivated by bryostatin-1 and panobinostat (Battivelli et al., 2018), which bona fide limit its application to explore the mechanism of HIV latency maintenance and reactivation in vitro.\n\nTo improve on the cell model of HIV-1 latency, here we set up a newly\u00a0designed dual fluorescent reporter virus, DFV-B, infection of which can distinguish latently infected from productively infected and uninfected cells. With DFV-B infection, we can sort out latently infected primary CD4+ T cells, in which more than 50% can be reactivated by subsequent PMA and ionomycin stimulation. We also showed that DFV-B infection in Jurkat cells can generate a bunch of stable latently infected cells (named J-mC cells), which were obtained by natural infection, therefore circumventing the clonal-derived biases of some previous cell lines like J-Lat. We went on to show that the J-mC system is a robust model of HIV-1 latency, as a high-throughput compound screening with this model successfully identifies a novel latency reversal agent (LRA) ACY-1215, whose activity could be verified in other cell models and in primary CD4+ T cells from ART-suppressed individuals. As an oral HDAC6-selective inhibitor, ACY-1215 has a higher safety and tolerability profile than the currently available pan-HDAC inhibitors such as SAHA or panobinastat, making it a promising LRA in future applications for HIV-1 functional cure.\n\n## Results\n\n### DFV-B infection directly identifies latently infected primary CD4+ T cells\n\nTo specifically identify latently infected cells, we constructed a new reporter virus by engineering GFP and mCherry into the HIV-1 genome, in which GFP expression was controlled by LTR, while mCherry expression was independently controlled by the constitutive promoter EF-1\u03b1. This viral construct was named DFV-B (dual fluorescent virus-B) (Figure 1A). To test the infectivity of DFV-B, activated primary CD4+ T cells from HIV-1 na\u00efve individuals were infected with DFV-B incorporating a CXCR4-tropic env (Figure 1B). Productively infected (double-positive, DP) and latently infected (single mCherry-positive, mC) CD4+ T cells were clearly distinguishable (Figure 1B),\u00a0and the percentage of the DP cells was roughly 16 times more than the single mC-positive cells on day 3 post-infection (p.i.) in STCM (Super T cell medium) (Figure 1B). To mimic the process of infected activated CD4+ T cells transitioning back to a more resting state, and monitor how the dynamics of productive and latent infection change during this process, DFV-B-infected cells were transferred to cytokine-free medium (CFM) on day 3 p.i. As culture time increased, the proportion of DP cells decreased significantly, while the proportion of mC cells gradually increased (Figure 1C). mC cells accounted for up to 30% of the total infected cells on day 10 p.i. (Figure 1C), suggesting some of the productively infected cells survived, reverted to a more resting state, and turned off viral gene (GFP) expression, which may add to the increased proportion of latently infected cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of the derivation of DFV-B from the original NL4-3 strain of HIV-1. Top panel depicts the genomic structure of HIV-1 NL4-3; bottom panel shows the genomic structure of DFV-B and the major modifications comparing to NL4-3. (B) Representative experiment of DFV-B infection in activated primary CD4+ T cells. Top panel depicts the scheme of experimental procedure. Isolated primary CD4+ T cells from HIV na\u00efve individuals were stimulated with \u03b1CD3/\u03b1CD28 antibodies in the presence of IL-2 and TCGF for 3 days, and\u00a0the activated CD4+ T cells were then infected with DFV-B incorporating a CXCR4-tropic Env at the MOI of 0.1 to 1 for 3 days in STCM and were subsequently transferred to CFM. Bottom panel shows the infection profiles of stimulated primary CD4+ T cells by DFV-B at indicated time points. (C) Data from panel B are displayed graphically. Line charts show the percentages of latent infection (mC) and productive infection (DP). Histogram represents the cell viability. Data indicate mean\u00a0\u00b1\u00a0SD from three different donors. TCGF: T cell growth factor; CFM: cytokine-free medium; STCM: super T cell medium, CFM with IL-2 and TCGF.\n\nTo validate the single mC-positive cells\u00a0that were indeed latently infected, a series of experiments were performed as illustrated in Figure 2A. We sorted the DP, the single mC-positive, and the double-negative (DN) cells by flow cytometry at 7 days post DFV-B infection and validated the purity of each population (Figure 2\u2014figure supplement 1A). The sorted mC cells were then cultured in CFM and activated by PMA and ionomycin for 3 days. During this process, the viability of mC cell population was more than 40% (Figure 2\u2014figure supplement 1B). Compared to the DMSO control, over 50% of total cells were\u00a0converted from mC to DP cells (Figure 2B), suggesting\u00a0that more than half of the\u00a0latently infected cells were reactivated. At the same time, DP and DN cells were not affected (Figure 2B). In addition, these sorted populations were analyzed for HIV-1 RNA and protein expression. As expected, the DP cells transcribed significantly higher amounts of HIV-1 mRNA, nearly 10 times as the mC cells (Figure 2C). HIV-1 Gag and Vif protein production were detected by western blot in DP cells, but not in mC cells (Figure 2D). To further verify that the absence of GFP production was due to viral latency but not possible genomic deletion, we quantified the cell-associated DNA and RNA of fluorescent protein from different populations respectively. Comparing to the uninfected DN cells, both GFP-DNA and mCherry-DNA were comparable between mC and DP cells, indicating no difference in viral integration (Figure 2E). Meanwhile, levels of GFP mRNA in DP cells were much higher than that in mC cells, but mCherry mRNA levels remained the same (Figure 2E), consistent with the phenotypes observed by FACS. A small fraction of single GFP+ cells existed after DFV-B infection (Figure 1B),\u00a0and we traced and found that the proportion of single GFP+\u00a0cells decreased from 0.7% to 0.2% (similar to uninfected cells) as the culture time increased (Figure 2\u2014figure supplement 1C), which is significantly lower than the previous reported dual reporter viral systems (Calvanese et al., 2013; Kim et al., 2019). The integrated DNA levels of GFP and mCherry in this single GFP+\u00a0cells were not different (Figure 2\u2014figure supplement 1D), suggesting both reporters were still stably integrated. We speculated that this unlikely phenotype of single GFP+\u00a0cells could be due to the differential dynamics of fluorescent protein degradation. Taken together, these results demonstrated that infection of DFV-B reporter virus in primary CD4+ T cells could directly identify live latently infected cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of experimental design. (B) Reactivation of the sorted different cell populations. Cells were cultured in CFM with 50 ng/ml PMA and 1 \u03bcM ionomycin and measured by flow cytometry 3 days later. Data shown from three different donors (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ***p<0.001; ****p<0.0001; ns, not significant. (C) Quantification of cell-associated HIV-1 mRNA of different sorted populations. HIV-1 mRNAs were measured by real-time qPCR. RNA copies were normalized to the uninfected group. Each symbol represents the mean of three replicates (n\u00a0=\u00a08). (D) Western blot analysis of HIV-1 protein production in different sorted cell populations. (E) Quantification of the cell-associated DNA and RNA of GFP and mCherry in the sorted populations. The DNA and mRNA of GFP and mCherry were quantified relative to cellular GAPDH, respectively. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant; ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) FACS sorting strategy of DFV-B infected primary CD4+ T cells. (B) Viability of sorted cells under different conditions. (C)\u00a0The percentage of single GFP-positive cells in DFV-B infected CD4+ T cells. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). (D) qPCR quantification of GFP-DNA and mCherry-DNA in the sorted single GFP positive cell population. DNA of GFP and mCherry were quantified relative to cellular GAPDH. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant.\n\n### DFV-B infection confirms effector-to-memory transitioning (EMT) CD4+ T cells are the primary targets for latency establishment\n\nThe latent HIV-1 reservoir mainly resides in resting memory CD4+ T cells (Chun et al., 1997; Finzi et al., 1997; Chomont et al., 2009), but they are normally not the direct targets for infection, due to the blocks in reverse transcription (Korin and Zack, 1998), integration (Bukrinsky et al., 1992) and host restriction by SAMHD1 (Baldauf et al., 2012). It has been recently demonstrated that HIV-1 latency was preferentially established in EMT CD4+ T cells (Shan et al., 2017). Therefore, we investigated whether DFV-B infection in EMT CD4+ T cells recapitulated the tendency of latency establishment. We first confirmed the primary CD4+ T cells were in the process of EMT after 5\u20137 days in CFM culture, as the expression of CD25/CD69/HLA-DR and T cell exhaustion markers (PD-1 and TIM-3) had been greatly reduced (Figure 3A and B). mC cells expressed significantly lower levels of activation markers and exhaustion markers than DP cells (Figure 3C and D), again supporting our results that mC cells were latently infected. The infection profiles were then analyzed when infection was administered independently at different time points indicated (Figure 3E). In general, EMT CD4+ T cells were less permissive to DFV-B infection; however, the ratio of mC cells to total infected cells (mC+DP) steadily increased from 15.7% (day 0 infection) to 64.8% (day 10 infection) (Figure 3F). This data strongly supports that infection during EMT process of CD4+ T cells is most likely to generate latent infection, which also highlights the significance and applicability of our DFV-B system as a viable cell model for HIV-1 latency.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Expression of activation markers (CD25, CD69, HLA-DR; panel A) and exhaustion markers (LAG-3, TIM-3, PD-1; panel B) of the DFV-B infected primary CD4+ T cells. Primary CD4+ T cells were infected as described in Figure 1B and the surface markers were measured by FACS at indicated time points. Data indicate mean\u00a0\u00b1\u00a0SD for three different donors. p-values calculated using unpaired t-test, ns, not significant; **p<0.01; ***p<0.001. (C and D) Expression of activation markers and exhaustion markers in the DN, DP, and\u00a0mC population from A and B of this figure. Panel C only shows the results of day 8 post-infection. Red dots represented marker-positive cells; blue dots represented negative cells. Panel D shows quantified values of markers expression. Data indicate mean\u00a0\u00b1\u00a0SD for three different donors. (E) Infection profile of EMT CD4+ T cells when infected by DFV-B at indicated time points. Top panel depicts scheme of experimental procedure. Bottom panel shows the flow cytometric chart of infected EMT CD4+ T cells on day 5 post-infection. (F) Infected EMT CD4+ T cells are more likely to become latently infected cells. The ratios of DP cells or mC cells to total infected cells were calculated using data from panel E. Data represents the average of three donors.\n\n### Generation of a stable cell line model of HIV-1 latency\n\nAlthough some cell line models of HIV-1 latency\u2002(such as the widely used J-Lat model) have\u2002been\u2002reported, all of which are derived from single-cell clones, and therefore with identical integration sites, which significantly underrepresented the heterogenous nature of latently infected cells in vivo. Here, by taking the advantage of direct labeling of latently infected cells with DFV-B infection, we generated a Jurkat-based cell line model of HIV-1 latency (J-mC), which were derived from random infection events,\u00a0and therefore should harbor diverse integration sites. We found that DFV-B infection in Jurkat cells closely resembled primary CD4+ T cells. Latently infected cells were readily identifiable on day 7 p.i. (Figure 4\u2014figure supplement 1A). Then the DN, DP, and mC Jurkat T cells were sorted by flow cytometry and stimulated by 10 ng/ml TNF-\u03b1 for 3 days in CFM. Over 80% of mC cells were converted to DP cells following the treatment, but DP and DN cells were not affected (Figure 4\u2014figure supplement 1B), confirming DFV-B infection could directly identify latent infection in Jurkat cells.\n\nThe process of model generation is illustrated in Figure 4A. Thirty days after the first sorting, a small dose of TNF-\u03b1 (5 ng/ml) was added to the culture to activate those unstable cells that were probably in the borderline state of latency (Figure 4A and B). To assess the activatability of J-mC cells, we stimulated them with different stimuli. As expected, J-mC cells were activated efficiently by all stimuli to express both fluorescent proteins (Figure 4C and D). The potent induction of cell-associated HIV-1 mRNA after PMA treatment further confirmed the integrated proviruses were reactivated in this model (Figure 4E). Besides, mRNA expression levels and DNA levels of GFP and mCherry remained relatively stable over the course of a year (Figure 4F and G). Together, these results demonstrated that J-mC cells were indeed a stable group of latently infected cells and could be reactivated efficiently upon stimulation, suggesting that this would become a useful cell line model to study HIV-1 latency.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig4-v2.jpg)\n\n**Figure 4.:** (A) The experimental procedure of generating a Jurkat-based cell line model of HIV-1 latency (J-mC). Jurkat cells were infected by DFV-B at day 0 in CFM. (B) Flow cytometric charts during the process of J-mC model generation. Detailed steps can be found in \u2018Generation of J-mC cells\u2019 in the Materials and methods section. (C) Reactivation of J-mC cells by different stimuli. J-mC cells were stimulated, respectively, with 1 \u03bcM JQ1, 1 \u03bcM SAHA, 10 ng/ml TNF-\u03b1, 50 ng/ml PMA, and 50 ng/ml PMA and 1 \u03bcM ionomycin for 48 hr prior to analysis by flow cytometry. (D) Data from panel C are displayed graphically. Data indicate mean\u00a0\u00b1\u00a0SD for three different treatments. (E) Cell-associated HIV-1 mRNA in J-mC cells after reactivation. J-mC cells were treated with DMSO or 50 ng/ml PMA for 48 hr. HIV-1 gag, tat, vif, and LTR mRNAs were quantified relative to cellular GAPDH, and values within each group were normalized to the DMSO treatment. Error bars represent SDs of three technical replicates. p-values calculated using unpaired t-test, ***p<0.001; ****p<0.0001. (F) Long-term tracking of the phenotype of J-mC cells. J-mC cells were cultured in CFM and the expression of GFP and mCherry were monitored over the course of a year. (G) Long-term tracking of the integrated DNA level of GFP and mCherry in J-mC cells. J-mC cells were collected on the date indicated, and then total DNA were isolated. The DNA of GFP and mCherry were quantified relative to cellular GAPDH, respectively. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Jurkat cells were infected with DFV-B incorporating VSV-G in CFM. On day 7 post-infection, DP, DN, and mC Jurkat cells were sorted by flow cytometry. (B) Reactivation of DP, DN, and mC cells. DN, DP, and mC Jurkat cells were sorted according to panel A, purities of DN, DP, and mC population were measured by FACS. Then the sorted cells were stimulated by 10 ng/ml TNF-\u03b1 for 3 days and the percentages of double positive subpopulations were measured by FACS.\n\n### The integration landscape of HIV-1 in J-mC cells\n\nTo verify whether J-mC cells harbored diverse HIV-1 integration sites, we adopted a method called linear amplification\u2013mediated high-throughput genome-wide sequencing (LAM-HTGTS) (Hu et al., 2016) to analyze HIV-1 integration sites. We first tested the applicability of the method on J-Lat 8.4 and J-Lat 15.4, which had been reported to have only one HIV-1 integration site respectively (Symons et al., 2017). J-Lat 8.4 and 15.4 were mixed in equal amounts and then subjected to LAM-HTGTS. As shown in Figure 5A and B, 49.09% of the integration sites were located in the same position 77946384 of chromosome 1% and 46.92% counts were located in the same position 34441293 of chromosome 19 (Supplementary file 1), which were exactly the integration sites of J-Lat 8.4 and J-Lat 15.4, suggesting that LAM-HTGTS was a robust method for analyzing HIV-1 integration sites. For J-mC cells, all integration sites recovered were diffusely distributed on 24 chromosomes (Figure 5C). Chromosome 17 harbored the most abundant integration sites, which at the same time were extremely diverse (Figure 5D and Supplementary file 2). We also noticed that more than 70% of the integration sites were distributed on intronic regions (Figure 5E), which is consistent with previous reports on integration sites recovered from ART-treated HIV-1 infected individuals (Han et al., 2004; Cohn et al., 2015). We performed gene ontology (GO) and GO pathway analysis on the genes at all integration sites, and found that the proviruses were enriched in genes related to \u2018Regulation of transcription\u2019, \u2018Membrane\u2019, and \u2018Binding\u2019 (Figure 5F). In addition, HIV-1 integrated more frequently in cancer-related pathways (Figure 5G), which is also consistent with previously reported ex vivo data (Wagner et al., 2014; Cohn et al., 2015). Together, these data clearly demonstrated that J-mC cells harbored tremendously diverse HIV-1 integration sites, which were highly physiologically relevant, suggesting this cell line model as a valuable tool to study HIV-1 latency.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig5-v2.jpg)\n\n**Figure 5.:** (A\u00a0and\u00a0B) Validation of integration sites of J-Lat cell lines by LAM-HTGTS. J-Lat 8.4 and J-Lat 15.4 were mixed in equal amounts and subjected to LAM-HTGTS. A: Chromosome distribution of all integration sites. B: Integration sites analysis of J-Lat 8.4 and J-Lat 15.4. (C\u00a0and\u00a0D) Diversity of HIV-1 integration sites in J-mC cells. C: Chromosome distribution of all integration sites. A total of 5154 identified integration sites were obtained from J-mC cells. D: Distribution of integration sites on chromosome 17. The percentage of top 10 integration sites was shown. A total of 499 identified integration sites were obtained from chromosome 17. (E) Proportion of integration sites of J-mC cells in the indicated genomic regions. (F) The gene ontology analysis of HIV-1 integration sites detected in J-mC cells. (G) The GO pathway enrichment analysis of HIV-1 integration sites in J-mC cells.\n\n### High-throughput screening of small compound library in J-mC cells discovers ACY-1215 as a potent latency reversing agent\n\nTo test the applicability of our J-mC model, we performed a high-throughput screening of\u2002a\u2002small-molecule library\u2002containing\u20021700\u2002FDA-approved compounds to discover novel LRAs. The screening was performed from high\u00a0concentrations to low\u00a0concentrations (Figure 6\u2014figure supplement 1A), and with this system we successfully identified several previously reported LRAs, including SAHA, panobinostat, and romidepsin (Figure 6A). A new compound, ricolinistat (ACY-1215), was discovered in this screen (Figure 6A and B), displaying excellent potential to reactivate latent HIV-1 in\u2002a\u2002dose-dependent\u2002manner (Figure 6C, Figure 6\u2014figure supplement 1B). Viral\u2002transcription\u2002was\u2002induced\u2002eight\u00a0fold in average after 24 hr of ACY-1215 treatment (Figure 6D). In addition, we found that ACY-1215 showed better latency reversing activities in J-mC cells than in different J-Lat cell lines (Figure 6\u2014figure supplement 1C\u2013E), which probably explained why it was\u00a0not discovered in previous drug screenings. Besides, we observed that ACY-1215 displayed a\u00a0synergistic effect with several other LRAs, but not disulfiram (Figure 6\u2014figure supplement 1F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig6-v2.jpg)\n\n**Figure 6.:** (A) Summary of screening results in J-mC cells. The results were shown as the percentage of the double positive cells and were normalized to the reactivation level of 50 ng/ml PMA. Each bar represents the average value of triplicates. (B)\u00a0The chemical structure of ricolinostat (ACY-1215). (C) Reactivation effects of ACY-1215 on J-mC cells at the indicated concentrations. 0.5 million J-mC cells were stimulated with ACY-1215 for 3 days in each condition. Error bars represent SDs of three technical replicates. (D) Cell-associated HIV-1 mRNA expression of J-mC cells after ACY-1215 treatment. Data are representative of at least three independent experiments (mean\u00a0\u00b1\u00a0SD). (E) ACY-1215 induced HIV-1 transcription in a primary CD4+ T cells model of HIV-1 latency. (F) Data from panel E are displayed graphically. Histograms show quantification of the percent population in the active gate. Values represent the mean\u00a0\u00b1\u00a0SD, N\u00a0=\u00a03. **p<0.01. Results were analyzed by unpaired t-tests. (G) Quantification of ACY-1215 induced transcription of cell-associated HIV-1 mRNA in CD4+ T cells from ART-suppressed infected individuals. HIV-1 transcription was measured by HIV-1 viral quality assurance assay. 1 million CD4+ T cells were analyzed per condition. Data indicate mean\u00a0\u00b1\u00a0SD for three technical replicates. p-values calculated using unpaired t-test, **p<0.01. (H) Fold induction of cell-associated HIV-1 mRNA was shown relative to the negative control (DMSO). Data indicate mean\u00a0\u00b1\u00a0SD for three technical replicates. p-values calculated using unpaired t-test, **p<0.01.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic layout of the compound screening. (B) Reactivation effects of ACY-1215 on J-mC cells at the indicated concentrations. (C) Reactivation potency of ACY-1215 in a series of J-Lat cell lines. Error bars represent SDs of three technical replicates. (D) Reactivation effects of ACY-1215 and other LRAs on J-mC cells. Error bars represent SDs of three technical replicates. (E) Reactivation effects of ACY-1215 and other LRAs on J-Lat A2 cells. Error bars represent SDs of three technical replicates. (F) Reactivation effects of ACY-1215 are synergistically enhanced by co-treatment with other LRAs in J-mC cells. Data are representative of three independent experiments. Error bars represent SDs of three technical replicates, p-values calculated using unpaired t-test, *p<0.05; **p<0.01.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) ACY-1215 did\u00a0not significantly induce expression of apoptotic markers. Representative flow chart shows the expression of annexin V and propidium iodide (PI) in PBMCs. (B) Data from panel A is displayed graphically. Histograms show the percentage of positive cells. Error bars represent SDs of three technical replicates. p-values calculated using unpaired t-test, ns, not significant; *p<0.05, **p<0.01. (C) CCK-8 assays were used to determine cell viability in the ACY-1215 treated primary CD4+ T cells. Error bars represent SDs of three technical replicates.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63810/elife-63810-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) ACY-1215 did\u00a0not induce global activation of primary CD4+ T cells. Expressions of CD25, CD69, and HLA-DR were measured by flow cytometry. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant; ***p<0.001, ****p<0.0001. (B and C) ACY-1215 did\u00a0not upregulate HIV-1 co-receptor CCR5 (B) and CXCR4 (C) expression. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant; ***p<0.001. (D and E) Effects of ACY-1215 on the cytokine secretion of CD8+ T cells. PBMCs isolated from HIV-1 na\u00efve individuals were exposed to indicated treatment for 4 hr. Cells were then washed and cultured in fresh medium with PMA and ionomycin for 5 hr in the presence of brefeldin A. IFN-\u03b3 or TNF-\u03b1 production in CD8+ T cells was measured by intracellular cytokine staining. Data is shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant. (F and G) Effects of ACY-1215 on the cytokine secretion of CD4+ T cells. PBMCs isolated from HIV na\u00efve individuals were exposed to indicated treatment for 4 hr. Cells were then washed and cultured in fresh medium with PMA and ionomycin for 5 hr in the presence of brefeldin A. IFN-\u03b3 or TNF-\u03b1 production in CD4+ T cells was measured by intracellular cytokine staining. Data shown from three biological replicates (mean\u00a0\u00b1\u00a0SD). p-values calculated using unpaired t-test, ns, not significant.\n\nACY-1215 is an oral HDAC6-selective inhibitor,\u00a0and our data suggested that it was less toxic than SAHA as measured by annexin-V/propidium iodide (PI) staining (Figure 6\u2014figure supplement 2A and B) and CCK-8 assay (Figure 6\u2014figure supplement 2C). ACY-1215 does not induce upregulation\u2002of\u2002classic\u2002T\u2002cell\u2002activation\u2002markers on\u2002freshly\u2002isolated primary CD4+ T cells (Figure 6\u2014figure supplement 3A). In addition, ACY-1215 had no significant effect on CCR5 and CXCR4 expression of CD4+ T cells (Figure 6\u2014figure supplement 3B and C). No significant induction of IFN-\u03b3 and TNF-\u03b1 was detected in CD8+ T cells and CD4+ T cells from the same donors following ACY-1215 treatment (Figure 6\u2014figure supplement 3D\u2013G). Taken together, these data indicated that ACY-1215 does not cause global T cell activation, T cell dysfunction, or cytotoxicity to CD4+ and CD8+ T cells.\n\nTo further verify the physiological relevance of the J-mC model, we tested the latency reversal activities of ACY-1215 in a primary cell model of HIV-1 latency and in primary cells from ART-treated infected individuals. Average 20 million of GFP- Bcl-2-transduced CD4+ T cells were obtained from one healthy donor according to the protocol (Kim et al., 2014). At 48 hr post-treatment, we found that ACY-1215 worked as well as SAHA, reactivating over 80% of latent HIV-1 when comparing to PMA and ionomycin (Figure 6E and F). We collected five PBMC samples from ART-suppressed, HIV-1 infected individuals (Figure 6\u2014source data 1) and isolated CD4+ T cells. As shown in the Figure 6G and H, ACY-1215 robustly induced the level of cell-associated HIV-1 mRNA by an average of 50-fold comparing to the negative controls. Taken together, our data strongly supports that ACY-1215 is a promising LRA candidate and J-mC is a highly physiological relevant cell model for HIV-1 latency.\n\n## Discussion\n\nIn this study, we presented a newly\u00a0designed dual fluorescent virus, DFV-B. With DFV-B infection, latently infected cells can be easily distinguished from productively infected or uninfected cells. Compared with the previously reported infection models, DFV-B displayed a better infection profile with a clearer cell population and a lower percentage of single GFP positive cells (<1%) (Figure 1B) than RGH (Dahabieh et al., 2013), Duo-Fluo I (Calvanese et al., 2013), mdHIV (Hashemi et al., 2016), and HIVGKO (Battivelli et al., 2018).\n\nMore than 50% of the latently infected primary cells by DFV-B were reactivated by PMA and ionomycin in CFM (Figure 2B), while only 5% were reactivatable in the HIVGKO model (Battivelli et al., 2018), indicating the robustness of the DFV-B system to research the mechanism of HIV-1 latency maintenance and reactivation in vitro. A small fraction of single GFP positive cells existed after DFV-B infection (Figure 1B), but compared with Duo-Fluo I or HIVGKO infected cells, the\u00a0proportion of the cells was extremely small (<1%). The eGFP and mCherry have 20\u201330 bp regions of homology at the C- and N-termini (Salamango et al., 2013), which may cause genomic deletion due to homologous recombination. However, our data showed that the absence of GFP production was due to viral latency but not genomic deletion (Figure 2E). Nevertheless, the risk of recombination still exists between GFP and mCherry, which may need further optimizations. Based on sequence similarity of fluorescent proteins that have been reported, E2 crimson/mKO2 may be a good choice to replace mCherry, which have been used previously to construct a dual-fluorescence reporter system (Battivelli et al., 2018; Kim et al., 2019). Besides, the insertion location of the fluorescent protein in the construct needs to be considered, because there was a big difference in protein expression depending on whether 31 bp nef was retained or not, or two fluorescent proteins were connected or not in DFV-B.\n\nHow HIV-1 latency is established is still not fully understood. A widely accepted view is that after infection occurs in activated CD4+ T cells, a tiny fraction of the infected cells survive viral cytopathic effect and host immune elimination and revert to a more resting and memory phenotype, becoming latently infected cells (Sengupta and Siliciano, 2018; Margolis et al., 2020). Our data here was in line with the mainstream view (Figure 1B and C). It is also suggested that latent infection is preferentially established in CD4+ T cells undergoing EMT (Chavez et al., 2015; Shan et al., 2017). Our results from DFV-B infection indicated that EMT CD4+ T cells were less permissive to infection, but once infected were much more likely to establish latency (Figure 3E and F), which supports that EMT CD4+ T cells are the primary targets for latent infection, and highlights the feasibility of our DFV-B system.\n\nSome\u2002primary\u2002cell\u2002models\u2002of HIV-1 latency have\u2002been developed\u2002in CD4+\u2002T\u2002cells or thymocytes (Sahu et al., 2006; Burke et al., 2007; Marini et al., 2008; Bosque and Planelles, 2009). However, the limited source and poor long-term viability of primary CD4+\u2002T cells preclude their extensive use. Yang et al reported a Bcl-2-transduced primary CD4+ T cell model of HIV-1 latency, which could obtain a large amount of viable resting CD4+ T\u2002cells long\u00a0term and mimic the process of latency establishment in vitro. However, the over-expression of Bcl-2 may alter the global transcriptional profile and affect the physiological characteristics of the latently infected cells (Yang et al., 2009). In addition, the\u00a0in vitro cell line model of latency, such as the J-Lat cell lines (Jordan et al., 2003), was derived from single-cell clone with identical HIV-1 integration sites, which significantly underrepresented the heterogeneous nature of latently infected cells (Golumbeanu et al., 2018; Ait-Ammar et al., 2019). Our novel model of J-mC cells harbored extremely diverse HIV-1 integration sites, with a\u00a0majority of them located in intronic regions, which was in line with data recovered from infected individuals (Han et al., 2004, Craigie and Bushman, 2012, Cohn et al., 2015). In general, our DFV-B model system in primary CD4+ T cells or Jurkat cells circumvented the problems mentioned above, and\u00a0therefore could be utilized as a robust model to study the characteristics and mechanisms of HIV-1 latent infection.\n\nBy applying the J-mC model, we discovered a novel compound ricolinistat (ACY-1215) that can reactivate latent HIV-1 efficiently in different cell models and primary CD4+ T cells from ART-treated infected individuals. ACY-1215, an orally bioavailable HDAC6-selective inhibitor, had previously completed Phase 1 and 2 clinical trials for treatment of multiple myeloma (Santo et al., 2012). In vitro, ACY-1215 selectively increased acetylated a-tubulin (a marker of HDAC6 inhibition) without altering acetylated histone H4 (a marker of global HDAC inhibition) at biologically relevant concentrations (<10 \u03bcM) (Carew et al., 2019). In osteoarthritis chondrocytes, the function of ACY-1215 was investigated at concentrations of 1\u201310 \u03bcM, and\u00a0decreased cell viability was observed at a concentration of 50 \u03bcM (Cheng et al., 2019; Li et al., 2019). In the present study, we used 3 \u03bcM ACY-1215 in all additional assays to achieve selective inhibition of HDAC6 activity, which was in line with the studies mentioned above and was in the achievable range for clinical trials.\n\nHDAC6 belongs to class II b HDACs and is a cytosolic microtubule-associated deacetylase. Selective HDAC6 inhibition stops aggresome formation, thence inhibiting the degradation leading to accumulation of misfolded proteins within cells, and may reduce the toxicity related to the off-target effects of pan-HDAC inhibitors\u00a0(Amengual et al., 2021). Besides, HDAC6-KO mice were normal, as opposed to the lethal effect of genetic ablation of class I HDACs (Haberland et al., 2009). ACY-1215 and ACY-241 (another HDAC6-selective inhibitor) can downregulate Th2 cytokine production, decrease T-cell exhaustion, increase T-cell killing ability, and\u00a0augment the proportion of central memory cells and expression of cytolytic markers in vitro (Laino et al., 2019; Bae et al., 2018). ACY-1215 can also change the chromatin accessibility of T cells (Laino et al., 2019). Besides, ACY-1215 has anti-in\ufb02ammatory e\ufb00ect and is considered a potential anti-inflammatory drug (Cheng et al., 2019; Zhang et al., 2018; Zhang et al., 2019). A recent study reported that ACY-1215 could prevent the neurotoxicity of HIV-1 envelope protein gp120 (Wenzel et al., 2019). Our data suggested\u2002that ACY-1215 was less toxic than SAHA as described clinically (Santo et al., 2012), did not elevate the expression of classic\u2002T\u2002cell\u2002activation\u2002markers, and had no significant effect on HIV-1 co-receptors. Taken together, ACY-1215 could become a promising LRA for future AIDS functional cure studies.\n\nIn summary, our study designed and put forward a new dual fluorescent reporter virus, DFV-B, infection of which can directly mark latently infected primary CD4+ T cells. We have also developed a stable latently\u00a0infected cell line model based on DFV-B infection, which can be utilized as a valuable tool to study HIV-1 latency. We further identified a novel small compound ACY-1215 that can effectively reactivate latent HIV-1 and will be of great importance for the future applications of HIV-1 functional cure strategy.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD4-FITC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 317408; RRID:AB_571951</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD8-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 301049; RRID:AB_2562054</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human Bcl2-AF647 (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 658706; RRID:AB_2563280</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD69-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 310910; RRID:AB_314845</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD25-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 302610; RRID:AB_314280</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human HLA-DR-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 307610; RRID:AB_314688</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human PD-1-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 329908; RRID:AB_940475</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human LAG-3-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 369212; RRID:AB_2728373</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CCR5-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 359122; RRID:AB_2564073</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CXCR4-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 306510; RRID:AB_314616</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human IFN-\u03b3-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 502512; RRID:AB_315237</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human TNF-\u03b1-APC (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 502912; RRID:AB_315264</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HIV-1 p24 antibody (mouse monoclonal)</td>\n      <td>ABcam</td>\n      <td>Cat# ab9071; RRID:AB_306981</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HIV-1 Vif antibody (mouse monoclonal)</td>\n      <td>ABcam</td>\n      <td>Cat# ab66643; RRID:AB_1139534</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b2-actin antibody (mouse monoclonal)</td>\n      <td>ABcam</td>\n      <td>Cat# ab8226; RRID:AB_306371</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat Anti-Mouse IgG H and L (Alexa Fluor 680) preadsorbed</td>\n      <td>ABcam</td>\n      <td>Cat# ab186694</td>\n      <td>Dilution 1:20000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Purified anti-human CD3 Antibody (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 300302; RRID:AB_314038</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Purified anti-human CD28 Antibody (mouse monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat# 302902; RRID:AB_314304</td>\n      <td>Dilution 1:1000</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Stbl3 E.\u00a0coli</td>\n      <td>ThermoFisher</td>\n      <td>Cat#C7381201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Blood samples</td>\n      <td>Guangzhou Blood Center, Guangzhou</td>\n      <td>http://www.gzbc.org/</td>\n      <td>Blood samples from healthy individuals</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Homo sapiens)</td>\n      <td>Blood samples</td>\n      <td>The Fifth Affiliated Hospital, Sun Yat-sen University, Zhuhai, China</td>\n      <td>http://www.zsufivehos.com/</td>\n      <td>Blood samples from HIV-1- infected individuals</td>\n    </tr>\n    <tr>\n      <td>Tissue culture media</td>\n      <td>RPMI 1640</td>\n      <td>GIBCO</td>\n      <td>Cat# 11875093</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tissue culture media</td>\n      <td>DMEM</td>\n      <td>GIBCO</td>\n      <td>Cat# 11995065</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tissue culture media</td>\n      <td>Penicillin-Streptomycin Solution</td>\n      <td>BBI Life Sciences</td>\n      <td>Cat# E607011</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tissue culture media</td>\n      <td>1 M Hepes Solution</td>\n      <td>BBI Life Sciences</td>\n      <td>Cat# E607018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMSO</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# D2650-100ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Disulfiram</td>\n      <td>Selleckchem</td>\n      <td>Cat# S1680</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bryostatin-1</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# B7431</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Panobinostat</td>\n      <td>Selleckchem</td>\n      <td>Cat# S1030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ACY-1215</td>\n      <td>Selleckchem</td>\n      <td>Cat# S8001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(+)-JQ-1</td>\n      <td>Selleckchem</td>\n      <td>Cat#S7110</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SAHA</td>\n      <td>Selleckchem</td>\n      <td>Cat#S1047</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Approved Drug Library</td>\n      <td>TargetMOI</td>\n      <td>Cat# L1000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phorbol 12-myristate 13-acetate (PMA)</td>\n      <td>Selleckchem</td>\n      <td>Cat#S7791</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ionomycin</td>\n      <td>MERCK</td>\n      <td>at#407952\u20135 MG</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Phytohemagglutinin-M(PHA-M)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#11082132001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRIzol Reagent</td>\n      <td>ThermoFisher</td>\n      <td>Cat#15596018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Propidium Iodide (PI)</td>\n      <td>Biolegend</td>\n      <td>Cat# 421301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Annexin-V-APC</td>\n      <td>Biolegend</td>\n      <td>Cat# 640941; RRID:AB_2616657</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant proteins</td>\n      <td>Recombinant Human TNF-a</td>\n      <td>PeproTech</td>\n      <td>Cat#300-01A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant proteins</td>\n      <td>Recombinant Human IL-2</td>\n      <td>R and D Systems</td>\n      <td>Cat#202-IL-500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Human CD4+T Lymphocyte Enrichment Set-DM</td>\n      <td>BD Biosciences</td>\n      <td>Cat#557939</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>HIV-1 p24 ELISA Kit</td>\n      <td>Abcam</td>\n      <td>Cat#ab218268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Cell Counting Kit-8</td>\n      <td>MedChemExpress</td>\n      <td>Cat# HY-K0301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Plasmid Mini Kit</td>\n      <td>OMEGA</td>\n      <td>Cat# D6943-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Endo-free Plasmid Mini Kit</td>\n      <td>OMEGA</td>\n      <td>Cat# D6950-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Gel Extraction</td>\n      <td>OMEGA</td>\n      <td>Cat# D2500-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Cycle-Pure Kit</td>\n      <td>OMEGA</td>\n      <td>Cat# D6492-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Critical commercial assays</td>\n      <td>Tissue DNA kit</td>\n      <td>OMEGA</td>\n      <td>Cat# D3396-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>CRL-3216; RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat 6.3</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat# 9846; RRID:CVCL_8280</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat 8.4</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat#9847; RRID:CVCL_8284</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat 9.2</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat# 9848; RRID:CVCL_8285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat 10.6</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat#9849; RRID:CVCL_8281</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat 15.4</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat# 9850; RRID:CVCL_8282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo\u00a0sapiens)</td>\n      <td>J-Lat A2</td>\n      <td>NIH AIDS Reagents Program (Jordan et al., 2003)</td>\n      <td>Cat#9867; RRID:CVCL_1G43</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Prism 6</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/; RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>BD LSRFortessa cell analyzer</td>\n      <td>BD Biosciences</td>\n      <td>http://www.bdbiosciences.com/in/instruments/lsr/index.jsp; RRID:SCR_018655</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>FlowJo V10</td>\n      <td>Tree Star</td>\n      <td>https://www.flowjo.com/; RRID:SCR_008520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>GloMax 96 Microplate Luminometer Software</td>\n      <td>Promega</td>\n      <td>https://www.promega.com/resources/softwarefirmware/; RRID:SCR_018614</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-VQA-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CAGATGCTGCATATAAGCAGCTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-VQA-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTTTTTTTTTTTTTTTTTTTTTTTGAAGCAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-VQA-Probe</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>FAM-CCTGTACTGGGTCTCTCTGG-MGB</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-GFP-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTGCAGTGCTTCAGCCGCTACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-GFP-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACCTCGGCGCGGGTCTTGTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-mCherry-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GTGGTGACCGTGACCCAGGACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-mCherry-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TGGTCTTGACCTCAGCGTCGTAGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-GAPDH-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTCTGCTCCTCCTGTTCGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>qPCR-GAPDH-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AGTTAAAAGCAGCCCTGGTGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-gag-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ACATCAAGCAGCCATGCAAAT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-gag-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TCTGGCCTGGTGCAATAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-tat-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>ATGGAGCCAGTAGATCCTAGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-tat-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CGCTTCTTCCTGCCATAGG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-vif-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CACACAAGTAGACCCTGACCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-vif-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCCTACCTTGTTATGTCCTGCT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-LTR-F</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCACAAAGGGAGCCATACAATG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>HIV-1-LTR-R</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>TTATGGCTTCCACTCCTGCC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines\n\nHEK293T and Jurkat cells were obtained from ATCC. HEK293T cells were cultured in DMEM supplemented with 1% penicillin\u2013streptomycin (ThermoFisher), 1% L-glutamine (ThermoFisher), and 10% FBS (ThermoFisher). Jurkat T cells were cultured in CFM (RPMI 1640 supplemented with 1% penicillin\u2013streptomycin, 1% L-glutamine, and 10% FBS). J-Lat 6.3, J-Lat 8.4, J-Lat 9.3, J-Lat 10.6, J-Lat 15.4, and J-Lat A2 cell lines were derived from the human Jurkat T cell line and were gifts from Dr. Robert F. Siliciano (Department of Medicine, Johns Hopkins University School of Medicine, Baltimore, MD) Laboratory, which were originally generated from Dr. Eric Verdin (The Buck Institute for Research on Aging, Novato, CA). All the J-Lat cell lines were cultured in CFM. All cells have been tested for mycoplasma using a PCR assay and confirmed to be mycoplasma-free. All cells were\u00a0cultured in a\u00a0sterile incubator at 37\u00b0C and 5% CO2.\n\n### Plasmids and vector construction\n\nDFV-B was\u2002derived\u2002from the original NL4-3 strain of HIV-1, which\u2002contains\u2002an\u2002HIV-1\u2002genome. To construct DFV-B, GFP (Fragment 2) and EF-1\u03b1-mCherry (Fragment 3) were obtained by cloning in the respective plasmids. A 347 bp sequence (Fragment 1) was amplified from pNL4-3 plasmid using primers F1: 5\u2019-ATTAGTGAACGGATCCTTAGCACTTATCTGGGACG-3\u2019 and R1: 5\u2019-GCCCTTGCTCACCATCTTATAGCAAAATCCTTTCCA-3\u2019. A 3\u2019LTR sequence (Fragment 4) was amplified from pNL4-3 plasmid using primers F2: 5\u2019-CTTAGCCACTTTTTAAAAGAAA-3\u2019 and R2: 5\u2019- ACCCTGCACTCCATGGATCAGCTGGCACCCCCGGA-3\u2019. Next, a skeleton sequence was obtained from pNL4-3 using\u2002the BamH I\u2002and\u2002Nco I\u2002restriction\u2002sites. Finally, Fragment 1, GFP (Fragment 2), EF-1\u03b1-mCherry (Fragment 3), and Fragment 4 were cloned into the skeleton sequence by a modified SLIC technique (Li and Elledge, 2012). Of note, a\u2002portion\u2002of\u2002env\u2002was deleted for a single round of infection of the virus, and\u00a0the vpr gene had a frameshift mutation to reduce the toxicity of the pseudovirus. Most of\u2002the nef sequence was replaced by GFP- EF-1\u03b1-kozak-mCherry, and the remaining 31 bp of nef sequence was reserved in order not to disturb the function of LTR.\n\n### Virus stock production\n\nPseudotyped viral stocks were produced in HEK293 T cells by co-transfecting 2.2 \u03bcg of VSV-G glycoprotein-expression or pCXCR4 HIV-1\u2002envelope-expression vector, 4.4 \u03bcg of packaging\u2002vector\u2002pC-Help, and 4.4 \u03bcg pEB-FLV or pDFV-B construct using a polyethylenimine (Invitrogen) transfection system according to the manufacturer\u2019s instructions. Supernatants were harvested after 48 hr, centrifuged (10 min, 500 \u00d7 g, room temperature), and filtered through a 0.45\u00a0\u03bcm\u00a0pore\u00a0size membrane to remove the cell debris. Viruses were concentrated by centrifuging with a 25% vol of 50% polyethylene glycol 6000 and a 10% vol of 4 M NaCl. Concentrated virions were resuspended in complete medium and stored at \u221280\u00b0C.\n\n### Generation of J-mC cells\n\nThe cell line model of HIV-1 latency was generated as described (Figure 4A\u00a0and\u00a0B). Briefly, Jurkat cells were infected by DFV-B incorporating a VSVG envelope at 250 ng virus per million cells on day 0 in CFM. At day 7, the single mCherry positive cells were sorted according to the red gate in Figure 4B. The purity of single mCherry positive cells was greater than 99%. Next, the cells were cultured for another 30 days in CFM. At day 37, a small dose of TNF-\u03b1 (5 ng/ml) was added to the culture and maintained for 7 days to further activate those unstable cells that were probably in the borderline state of latency. At day 44 the second sorting of single mCherry positive cells was performed by the red gate. Similarly, the third and fourth sorting of single mCherry positive cells were performed at days 58 and 72. J-mC cells were finalized at day 86. Each sorting was performed by the red gate in Figure 4B.\n\n### Generation of latently HIV-1 infected Bcl-2\u2013transduced cells\n\nThis primary cell of HIV-1 latency was generated as described previously (Kim et al., 2014). In brief, primary CD4+ T cells were isolated from PBMCs with Human CD4+ T lymphocyte Enrichment Set-DM (BD, USA) according to manufacturer\u2019s instructions. CD4+ T cells were co-stimulated with anti-CD3 and anti-CD28 antibodies and were transduced with EB-FLV at the MOI of 5\u201310 by spinoculation of cells at 1200 g at room temperature for 2 hr. Following 3\u20134 weeks of culture, viable cells were isolated using Ficoll density gradient centrifugation. Activated Bcl-2-transduced cells were then infected with reporter virus NL4-3-\u03946-drEGFP at a MOI of less than 0.1. The infected cells were maintained in IL-2 and T cell growth factor\u2013enriched medium for 3 days after infection,\u00a0and then the medium was changed to RPMI 1640 with 10% FBS and 1% penicillin/streptomycin without exogenous cytokines and cultured for more than 1 month. Finally, the GFP-negative cells were sorted to more than 99.9% purity using fluorescence-activated cell sorting (FACS Aria II, BD).\n\n### Infection of primary CD4+ T cells\n\nPrimary CD4+ T cells were isolated from HIV na\u00efve individuals. CD4+ T cells were co-stimulated with anti-CD3 and anti-CD28 antibodies for 3 days. Activated CD4+ T cells were then infected with DFV-B incorporating a CXCR4-tropic Env at a MOI of 0.05\u20130.1. The infected cells were maintained in STCM for 3 days after infection, then the medium was changed to CFM, and cultured for 1\u00a0week.\n\n### Flow cytometry and cell sorting\n\nGFP and mCherry fluorescence were measured in a BD LSR Fortessa cell analyzer and sorted in a FACS Aria II (BD). Data were analyzed using Flowjo (version 10.4.0).\n\n### DNA, RNA extraction, and qPCR\n\nTotal DNA was extracted with tissue DNA kit (OMEGA). Cells were incubated with different drugs for different time intervals, total RNA was extracted using TRIzol (Invitrogen) and chloroform,\u00a0and then precipitated with isopropyl alcohol. RNA reverse transcription to cDNA was done according to the procedure of the SuperScript IV Control Reactions (ThermoFisher). Relatively quantitative PCR was performed using SYBR qPCR Master Mix (Vazyme) on the QuantStudio 3 (Thermo Fisher Scientific) using a standard two-step procedure (denatured: 95\u00b0C/10 s, annealed/extended: 60\u00b0C/30 s, 40 cycles). The RT-PCR primer sequences used\u00a0were shown in Key resources table. The 2\u2212\u0394\u0394CT method was adopted to analyze the relative expression of mRNAs, using GAPDH as the reference gene.\n\n### Viral quality assurance\n\nTotal cellular RNA was extracted from 1 million CD4+ T cells after 24 hr of stimulation followed by reverse transcription. Real-time PCR was performed using the TaqMan (Life Technologies) gene expression assay. HIV-1 mRNAs were detected using the following primers and probe, modified from Shan et al., 2013. Forward (5\u2032\u21923\u2032) CAGATGCTGCATATAAGCAGCTG (9501\u20139523), Reverse (5\u2032\u21923\u2032) TTTTTTTTTTTTTTTTTTTTTTTTGAAGCAC (9629-poly A),\u00a0and Probe (5\u2032\u21923\u2032) FAM-CCTGTACTGGGTCTCTCTGG-MGB (9531\u20139550). The cycling parameters were as follows: 2 min at 50\u00b0C,\u00a010 min at 95\u00b0C, and 45\u201350 cycles at 95\u00b0C for 15 s and then 60\u00b0C for 60 s. Molecular standard curves were generated using serial dilutions of a TOPO plasmid containing the last 352 nucleotides of viral genomic RNA plus 30 deoxyadenosines (pVQA). Results for each drug treatment were presented as fold change relative to DMSO control (mean\u00a0\u00b1\u00a0SD).\n\n### Protein extraction and western blot\n\nAfter treatment, cells were lysed in RIPA lysis buffer (10 mM Tris-HCl buffered at pH 7.5, 150 mM NaCl, 0.5 % NP-40, 1% Triton X-100, 10% glycerol, 2 mM EDTA, 1 mM NaF, 1 Mm Na3VO4, 1\u00d7\u00a0protease and phosphatase inhibitor cocktail) and incubated in ice for 30 min, followed by centrifugation at 12,000 g for 10 min at 4\u00b0C. The supernatants were collected as a whole protein extract. Protein samples were stored at \u221280\u00b0C or directly used for western blotting analysis. The protein extract was denatured by addition of NuPAGE running buffer (ThermoFisher), followed by denaturation at 100\u00b0C for 10 min, 50 \u03bcg of total protein were electrophoresis for 1.5 hr on a 10% polyacrylamide gel to separate the proteins, transferred onto PVDF membranes (Biorad), and co-incubation with primary and secondary antibodies. The antibodies were diluted by 5% BSA. Subsequently, Blots were imaged on an infrared (IR) laser-based fluorescence imaging system (LI-COR Odyssey).\n\n### Linear amplification\u2013mediated high-throughput genome-wide sequencing (LAM-HTGTS)\n\nGenomic DNA is sheared by sonication, and the HIV-1-human genome junctions are then amplified by LAM-PCR (Schmidt et al., 2007), using directional primers lying on HIV-1 LTR. LAM-PCR with a single 5\u2032 biotinylated primer amplifies across the HIV-1 LTR into the unknown human genome. Junction-containing single-stranded DNAs (ssDNAs) are enriched via binding to streptavidin-coated magnetic beads. After washing, bead-bound ssDNAs are unidirectionally ligated to a bridge adapter. Adapter-ligated, bead-bound ssDNA fragments are then subjected to nested PCR to incorporate a barcode sequence that is necessary for demultiplexing. A final PCR step fully reconstructs Illumina Miseq adapter sequences at the ends of the amplified HIV-1-human junction sequence. Samples are then separated on an agarose gel, and the resulting population of 0.5\u20131 kb fragments is collected and quantified before Miseq paired-end sequencing, with a typical 2\u00a0\u00d7\u00a0250 bp HTGTS library. The sequence of the matched read pairs after the LTR or adapter were trimmed to 50 base pairs and subsequently the trimmed read pairs were grouped according to 100% sequence match. Well-represented sequences were used for chromosomal alignment which was determined using the Blat-UCSC Genome Browser (GRCH38/hg38). An HIV integration site was identified if the position had\u00a0\u226510 counts.\n\n### Drug screening\n\nWe\u2002screened\u2002a\u2002library\u2002of\u20021700\u2002drugs from\u2002the FDA-approved drug\u2002library.\u20021 \u00d7\u00a0105\u2002J-mC\u2002cells\u2002were\u2002resuspended\u2002in\u2002200 \u03bcl\u2002of\u2002medium\u2002in\u2002round-bottom\u200296-well\u2002plates. For the first round of screening, J-mC cells were treated with compounds (10 \u03bcM) for 48 hr and were analyzed by FACS. Then drugs with less than 30% of live cells are selected from the result of the\u00a0first round of screening for a second round of screening with 5 \u03bcM drug concentration. Each\u2002plate\u2002contained\u2002cells\u2002treated\u2002with\u200250 ng/ml\u2002PMA,\u2002PBS and DMSO as\u2002controls.\u2002After\u200248 hr\u2002at\u200237\u00b0C,\u2002reactivation\u2002of\u2002latent\u2002HIV-1\u2002was\u2002detected as\u2002above.\n\n### Cytotoxicity assays\n\nCell death radio was evaluated by Annexin V/propidium iodide (PI) double staining assay. The cells incubate Annexin V-FITC at room temperature for 15 min. Then add PI before analyzing the stained cells by flow cytometry. Cell viability was measured by a Cell Count Kit-8 (MCE). PBMCs plated as 1 million cells per well in a 96-well plate were incubated with drugs for 48 hr. Then 10 \u03bcl of CCK-8 reagent was added to 100 \u03bcl of cell culture mixture and incubated for an additional 4 hr. Optical density (OD) was recorded at a wavelength of 450 nm on a microplate reader (M\u03bflecular Devices). The cell viability was calculated as follows. (OD treatment \u2013\u00a0OD blank control) / (OD untreatment \u2013\u00a0OD blank control)\u00a0\u00d7 100%.\n\n### Statistical analysis\n\nAll experiments were repeated at least three times. Statistics were performed with GraphPad Prism 8 (GraphPad), and all data are presented as mean values\u00a0\u00b1\u00a0SD. p-values were calculated based on the Mann\u2013Whitney U-test or Student\u2019s t-test (large sample size) using SPSS software. * denotes p<0.05, ** denotes p<0.01, *** denotes p<0.001, **** denotes p<0.0001, and NS denotes non-significant.\n",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "8f519740-b040-4078-bfd6-27c39bc88dfc",
+      "submission_id": "ec14611c-6593-4bb9-924d-2c3059af7287",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jori Symons, University Medical Center Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63810.sa1](https://doi.org/10.7554/eLife.63810.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors demonstrate that their dual reporter virus is an efficient tool to determine latency and to test latency reversal agents. These findings will contribute to the armoury to study and combat HIV latency.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Infection with a newly-designed dual fluorescent reporter HIV-1 effectively identifies latently infected CD4+ T cells\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Miles Davenport as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Thomas Rasmussen (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nIn this paper, Cai and colleagues describe a dual fluorescent reporter virus, DFV-B, that was used to infect primary CD4+ T cells and Jurkat cells. In DFV-B infected primary CD4+ T cells, latently infected cells could be sorted out and in those more than 50% could be activated to produce GFP (under control of LTR) using PMA/ionomycin stimulation. In Jurkat cells the authors demonstrated the establishment of a latently infected cell line model of HIV latency that was used to identify ACY-1215, a selective inhibitor of HDAC6, as a potential latency-reversing agent.\n\nThe manuscript is well written and in general, data are clearly and soundly presented. As such, this work should be of interest for the field of HIV latency and cure, but there are a few outstanding issues that may require further clarification or modification:\n\nEssential revisions:\n\n1. The results show that the ratio of mC cells tot total infected cells increased over prolonged culturing in CD4 T cells. However, as the mC signal also dropped 10 fold. Additionally, there seems to be cells that solely transcribe the productive reporter.\n\nThe drop in the latent reporter needs to be explained. My understanding is that this reporter should be continuously transcribed. A loss of signal of the latent reporter is a known problem with dual reporter viral systems. Why does this system show less efficiency in primary cells compared to cell lines.\n\n2. Figure 2: I suggest including the PMA/ionomycin stimulation of DN and DP cells in the actual Figure 2 (currently in the supplement) as these are good controls and add further credibility to the conclusion.\n\n3. Figure 4: The process of model generation is not quite clear from text and Figure 4. Please further clarify identification of latently infected (mCherry) and DP cells. In that process I recommend incorporating the gating plots from the supplementary figure to further clarify gating strategy and how this is different to the sorting plots shown in Figure 4B. It is also not clear at which time points in the model (shown in Figure 4B) cells were sorted and then subjected to the various stimuli.\n\n4. The authors mention that previous J-Lat models are disadvantaged due to their identical integration sites, but that their J-mC model of DFB-V infection should harbour diverse integration sites. Yet, no data are presented to confirm this assumption.\n\n5. The use of the developed model systems in the identification of ACY-1215 is\n\ninteresting and relevant, but several important pieces of information are missing, which will further strengthen the presentation of these data:\n\na. The dose-dependent activation of GFP expression with increasing concentration of ricolinistat looks consistent and credible, but information on how long cells were stimulated for should be included in the figure or figure text, as should the utilised concentration of SAHA. It would also strengthen the interpretation if the authors could relate the used concentrations of ricolinistat to therapeutic levels during clinical dosing, ie are these levels physiologically relevant?\n\nb. Figure 5G: Given the significant variation among individuals in cell-associated HIV RNA in the absence of stimulation, it would useful to also display the actual measured levels across DMSO, PMA/ionomycin and ACY conditions in Figure 5G. Also, which concentration of ACY was used here and is this therapeutically relevant? Finally, how many isolated CD4+ T cells were analysed per condition?\n\n6. Depending on the above clarifications with regard to the most relevant concentration of ricolinistat for ex vivo and in vitro use, the compound looks like it could have similar potency to vorinostat, which is not overly impressive and may not offer any advantage compared to previously tested LRAs. One difference could be its HDAC6 selectivity, which may offer a better effect/toxicity index as hinted by the authors, but this is not really elaborated on any further. I recommend adding this aspect to the discussion of this compound by comparing clinically available data with this compound and selected pan-HDAC inhibitors.\n\n7. Figure 1c demonstrates that the viability of the total cell population after day 6 of viral infection is rapidly decreasing. Was the viability of the mC cell population after 7 days (moment of reactivation) also reduced and if so, how does this impact latency and the subsequent reactivation of HIV.\n",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "aeb153e7-d01d-4c2f-b064-3a002f771cd1",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C1",
+      "claim": "DFV-B is a dual fluorescent reporter virus derived from HIV-1 NL4-3 strain with GFP expression controlled by LTR and mCherry expression controlled by EF-1\u03b1 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "To specifically identify latently infected cells, we constructed a new reporter virus by engineering GFP and mCherry into the HIV-1 genome, in which GFP expression was controlled by LTR, while mCherry expression was independently controlled by the constitutive promoter EF-1\u03b1. This viral construct was named DFV-B (dual fluorescent virus-B) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the construction of DFV-B and Figure 1A shows the genomic structure diagram.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "2b3dc1e2-3bad-452d-9935-516bf7063477",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C2",
+      "claim": "DFV-B infection of activated primary CD4+ T cells produces productively infected (double-positive) cells at roughly 16 times the frequency of latently infected (single mCherry-positive) cells on day 3 post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Productively infected (double-positive, DP) and latently infected (single mCherry-positive, mC) CD4+ T cells were clearly distinguishable (Figure 1B), and the percentage of the DP cells was roughly 16 times more than the single mC-positive cells on day 3 post-infection (p.i.) in STCM (Super T cell medium) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative data from DFV-B infection experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "ad5d602f-d693-4ac7-9e3d-9982455057aa",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C3",
+      "claim": "When DFV-B-infected cells are transferred to cytokine-free medium, the proportion of double-positive cells decreases while the proportion of single mCherry-positive cells increases over time.",
+      "claim_type": "EXPLICIT",
+      "source": "As culture time increased, the proportion of DP cells decreased significantly, while the proportion of mC cells gradually increased (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental observations shown in Figure 1C tracking cell populations over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "66569cad-e2cb-4cdb-9d3a-64208f4d08aa",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C4",
+      "claim": "Single mCherry-positive cells account for up to 30% of total infected cells on day 10 post-infection in cytokine-free medium.",
+      "claim_type": "EXPLICIT",
+      "source": "mC cells accounted for up to 30% of the total infected cells on day 10 p.i. (Figure 1C), suggesting some of the productively infected cells survived, reverted to a more resting state, and turned off viral gene (GFP) expression, which may add to the increased proportion of latently infected cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative data from Figure 1C at day 10 post-infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "251cf4c6-656d-4ae5-a79a-b20b6071094b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C5",
+      "claim": "More than 50% of sorted single mCherry-positive cells can be reactivated by PMA and ionomycin stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the DMSO control, over 50% of total cells were converted from mC to DP cells (Figure 2B), suggesting that more than half of the latently infected cells were reactivated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports reactivation data from sorted mC cells shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "ee7e269f-762e-4494-a476-3128cdc034aa",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C6",
+      "claim": "Double-positive cells transcribe significantly higher amounts of HIV-1 mRNA than single mCherry-positive cells, nearly 10 times as much.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the DP cells transcribed significantly higher amounts of HIV-1 mRNA, nearly 10 times as the mC cells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data comparing HIV-1 mRNA levels shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "f586b8a5-5608-44fe-b60f-133120ab83d6",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C7",
+      "claim": "HIV-1 Gag and Vif proteins are detected in double-positive cells but not in single mCherry-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 Gag and Vif protein production were detected by western blot in DP cells, but not in mC cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports western blot results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "d2d39ff8-7146-4ae2-ba66-730d3d22878b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C8",
+      "claim": "GFP-DNA and mCherry-DNA levels are comparable between single mCherry-positive and double-positive cells, indicating no difference in viral integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing to the uninfected DN cells, both GFP-DNA and mCherry-DNA were comparable between mC and DP cells, indicating no difference in viral integration (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data for integrated DNA shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "03990c0d-5870-4137-9a23-ebff2eec9680",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C9",
+      "claim": "GFP mRNA levels in double-positive cells are much higher than in single mCherry-positive cells, while mCherry mRNA levels remain the same.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, levels of GFP mRNA in DP cells were much higher than that in mC cells, but mCherry mRNA levels remained the same (Figure 2E), consistent with the phenotypes observed by FACS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data for mRNA levels shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "36a8b1f1-3838-4a63-9ff8-0d19adee0404",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C10",
+      "claim": "Single mCherry-positive cells express significantly lower levels of activation markers (CD25, CD69, HLA-DR) than double-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "mC cells expressed significantly lower levels of activation markers and exhaustion markers than DP cells (Figure 3C and D), again supporting our results that mC cells were latently infected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow cytometry data for activation markers shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "c241da7c-fa3a-446d-8f21-6fa10944d795",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C11",
+      "claim": "Single mCherry-positive cells express significantly lower levels of exhaustion markers (PD-1, TIM-3) than double-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "mC cells expressed significantly lower levels of activation markers and exhaustion markers than DP cells (Figure 3C and D), again supporting our results that mC cells were latently infected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow cytometry data for exhaustion markers shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "ada563f0-46ab-48d8-977a-ea5753e1f6b6",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C12",
+      "claim": "The ratio of single mCherry-positive cells to total infected cells increases from 15.7% to 64.8% when infection occurs during effector-to-memory transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, EMT CD4+ T cells were less permissive to DFV-B infection; however, the ratio of mC cells to total infected cells (mC+DP) steadily increased from 15.7% (day 0 infection) to 64.8% (day 10 infection) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative data from infections at different time points shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "716186ba-5de0-4522-ac7a-708c5ffd5f85",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C13",
+      "claim": "Over 80% of single mCherry-positive Jurkat cells are converted to double-positive cells following TNF-\u03b1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 80% of mC cells were converted to DP cells following the treatment, but DP and DN cells were not affected (Figure 4\u2014figure supplement 1B), confirming DFV-B infection could directly identify latent infection in Jurkat cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports reactivation data from Jurkat cells shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "d341e33e-f40d-4386-98ca-d1f455b07c2d",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C14",
+      "claim": "J-mC cells can be efficiently activated by JQ1, SAHA, TNF-\u03b1, PMA, and PMA plus ionomycin to express both fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, J-mC cells were activated efficiently by all stimuli to express both fluorescent proteins (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports reactivation data for J-mC cells with various stimuli shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "d080b5f9-818b-44ce-82d6-176527a5d20a",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C15",
+      "claim": "PMA treatment induces significant increases in HIV-1 gag, tat, vif, and LTR mRNA expression in J-mC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The potent induction of cell-associated HIV-1 mRNA after PMA treatment further confirmed the integrated proviruses were reactivated in this model (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data for HIV-1 mRNA after PMA treatment shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "439d0251-7341-42ae-80a6-67f2300c461b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C16",
+      "claim": "J-mC cells maintain relatively stable mRNA expression levels and DNA levels of GFP and mCherry over the course of a year.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, mRNA expression levels and DNA levels of GFP and mCherry remained relatively stable over the course of a year (Figure 4F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports long-term tracking data shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "9108db08-aae3-43e2-a947-421b561d30fe",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C17",
+      "claim": "49.09% of integration sites in mixed J-Lat 8.4 and 15.4 cells are located at position 77946384 of chromosome 1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A and B, 49.09% of the integration sites were located in the same position 77946384 of chromosome 1% and 46.92% counts were located in the same position 34441293 of chromosome 19 (Supplementary file 1), which were exactly the integration sites of J-Lat 8.4 and J-Lat 15.4, suggesting that LAM-HTGTS was a robust method for analyzing HIV-1 integration sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAM-HTGTS validation data shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "7c6105e0-e299-432b-b5b0-7ecab8637c7d",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C18",
+      "claim": "46.92% of integration sites in mixed J-Lat 8.4 and 15.4 cells are located at position 34441293 of chromosome 19.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A and B, 49.09% of the integration sites were located in the same position 77946384 of chromosome 1% and 46.92% counts were located in the same position 34441293 of chromosome 19 (Supplementary file 1), which were exactly the integration sites of J-Lat 8.4 and J-Lat 15.4, suggesting that LAM-HTGTS was a robust method for analyzing HIV-1 integration sites.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAM-HTGTS validation data shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "02a538f3-1310-4383-939c-a248a1b9cd92",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C19",
+      "claim": "J-mC cells have integration sites diffusely distributed on 24 chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For J-mC cells, all integration sites recovered were diffusely distributed on 24 chromosomes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAM-HTGTS data for J-mC cells shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5d5392d2-10f8-4848-8930-8bb2bacced7b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C20",
+      "claim": "Chromosome 17 harbors the most abundant and diverse integration sites in J-mC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome 17 harbored the most abundant integration sites, which at the same time were extremely diverse (Figure 5D and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAM-HTGTS data for chromosome 17 shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "79f43391-963f-45cd-a08c-47915b727e65",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C21",
+      "claim": "More than 70% of integration sites in J-mC cells are distributed in intronic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that more than 70% of the integration sites were distributed on intronic regions (Figure 5E), which is consistent with previous reports on integration sites recovered from ART-treated HIV-1 infected individuals (Han et al., 2004; Cohn et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports LAM-HTGTS data shown in Figure 5E and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "7990029c-59ad-4461-abbe-7c6f5a45aff2",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C22",
+      "claim": "HIV-1 proviruses in J-mC cells are enriched in genes related to 'Regulation of transcription', 'Membrane', and 'Binding'.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed gene ontology (GO) and GO pathway analysis on the genes at all integration sites, and found that the proviruses were enriched in genes related to 'Regulation of transcription', 'Membrane', and 'Binding' (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports GO analysis results shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "dab79009-35b1-47eb-a746-816e3b526523",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C23",
+      "claim": "HIV-1 integrates more frequently in cancer-related pathways in J-mC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HIV-1 integrated more frequently in cancer-related pathways (Figure 5G), which is also consistent with previously reported ex vivo data (Wagner et al., 2014; Cohn et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports GO pathway analysis shown in Figure 5G and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5cc257d0-346c-442e-91b7-e3f279dfee90",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C24",
+      "claim": "High-throughput screening with J-mC cells identified previously reported latency reversing agents including SAHA, panobinostat, and romidepsin.",
+      "claim_type": "EXPLICIT",
+      "source": "The screening was performed from high concentrations to low concentrations (Figure 6\u2014figure supplement 1A), and with this system we successfully identified several previously reported LRAs, including SAHA, panobinostat, and romidepsin (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports drug screening results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "93dea400-200c-4fba-905c-038005d7b7c4",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C25",
+      "claim": "ACY-1215 (ricolinistat) was discovered as a novel compound that reactivates latent HIV-1 in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "A new compound, ricolinistat (ACY-1215), was discovered in this screen (Figure 6A and B), displaying excellent potential to reactivate latent HIV-1 in a dose-dependent manner (Figure 6C, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports drug screening and dose-response data shown in Figures 6A, 6B, 6C, and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "82ac54ef-f486-4aa8-9b67-6ca4d2b7019e",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C26",
+      "claim": "ACY-1215 induces an eight-fold increase in viral transcription in J-mC cells after 24 hours of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Viral transcription was induced eight fold in average after 24 hr of ACY-1215 treatment (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data for HIV-1 mRNA after ACY-1215 treatment shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "ef632df0-14ed-4bef-9564-aecf4c4b9bb2",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C27",
+      "claim": "ACY-1215 shows better latency reversing activities in J-mC cells than in different J-Lat cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that ACY-1215 showed better latency reversing activities in J-mC cells than in different J-Lat cell lines (Figure 6\u2014figure supplement 1C\u2013E), which probably explained why it was not discovered in previous drug screenings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative reactivation data shown in Figure 6\u2014figure supplement 1C\u2013E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "b78ce3f7-ee35-451d-b48c-a4afd14f7bfe",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C28",
+      "claim": "ACY-1215 displays a synergistic effect with several other latency reversing agents, but not disulfiram.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, we observed that ACY-1215 displayed a synergistic effect with several other LRAs, but not disulfiram (Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports combination treatment data shown in Figure 6\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "a7eae0ca-dcb3-4516-9909-1be92189fc80",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C29",
+      "claim": "ACY-1215 is less toxic than SAHA as measured by annexin-V/propidium iodide staining and CCK-8 assay.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215 is an oral HDAC6-selective inhibitor, and our data suggested that it was less toxic than SAHA as measured by annexin-V/propidium iodide (PI) staining (Figure 6\u2014figure supplement 2A and B) and CCK-8 assay (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports cytotoxicity assay data shown in Figure 6\u2014figure supplement 2A, 2B, and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "08c23bf2-7ce0-4bca-8c02-f0c18d96e3fd",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C30",
+      "claim": "ACY-1215 does not induce upregulation of classic T cell activation markers on freshly isolated primary CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215 does not induce upregulation of classic T cell activation markers on freshly isolated primary CD4+ T cells (Figure 6\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow cytometry data for activation markers shown in Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "352820e2-ed37-438d-9790-e66a27836d93",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C31",
+      "claim": "ACY-1215 has no significant effect on CCR5 and CXCR4 expression of CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ACY-1215 had no significant effect on CCR5 and CXCR4 expression of CD4+ T cells (Figure 6\u2014figure supplement 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow cytometry data for co-receptor expression shown in Figure 6\u2014figure supplement 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "edd9d7f8-b5d8-4184-92f5-2476c26c4e1b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C32",
+      "claim": "No significant induction of IFN-\u03b3 and TNF-\u03b1 is detected in CD8+ T cells and CD4+ T cells following ACY-1215 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant induction of IFN-\u03b3 and TNF-\u03b1 was detected in CD8+ T cells and CD4+ T cells from the same donors following ACY-1215 treatment (Figure 6\u2014figure supplement 3D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports intracellular cytokine staining data shown in Figure 6\u2014figure supplement 3D\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "542c2fc4-fc65-4680-9350-8ccd01734d7e",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C33",
+      "claim": "ACY-1215 reactivates over 80% of latent HIV-1 in Bcl-2-transduced CD4+ T cells when compared to PMA and ionomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "At 48 hr post-treatment, we found that ACY-1215 worked as well as SAHA, reactivating over 80% of latent HIV-1 when comparing to PMA and ionomycin (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports reactivation data from Bcl-2-transduced cells shown in Figures 6E and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "010a5c60-255b-4832-8452-91e6e93212e4",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C34",
+      "claim": "ACY-1215 induces an average 50-fold increase in cell-associated HIV-1 mRNA in CD4+ T cells from ART-suppressed infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the Figure 6G and H, ACY-1215 robustly induced the level of cell-associated HIV-1 mRNA by an average of 50-fold comparing to the negative controls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports viral quality assurance data from patient samples shown in Figures 6G and 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "fd3cb4c8-7e84-42b5-83b9-8bd9e353fcd8",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C35",
+      "claim": "DFV-B displays a lower percentage of single GFP positive cells (<1%) than previously reported dual reporter viral systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the previously reported infection models, DFV-B displayed a better infection profile with a clearer cell population and a lower percentage of single GFP positive cells (<1%) (Figure 1B) than RGH (Dahabieh et al., 2013), Duo-Fluo I (Calvanese et al., 2013), mdHIV (Hashemi et al., 2016), and HIVGKO (Battivelli et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares DFV-B to previously reported systems with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "8fcc4428-5dd5-40df-ae42-4922542e59b6",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C36",
+      "claim": "More than 50% of latently infected primary cells by DFV-B are reactivatable by PMA and ionomycin, compared to only 5% in the HIVGKO model.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 50% of the latently infected primary cells by DFV-B were reactivated by PMA and ionomycin in CFM (Figure 2B), while only 5% were reactivatable in the HIVGKO model (Battivelli et al., 2018), indicating the robustness of the DFV-B system to research the mechanism of HIV-1 latency maintenance and reactivation in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares reactivation rates between DFV-B and HIVGKO with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "c266c857-170e-4cb8-b774-23bc06394075",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C37",
+      "claim": "The latent HIV-1 reservoir mainly resides in resting memory CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The latent HIV-1 reservoir mainly resides in resting memory CD4+ T cells (Chun et al., 1997; Finzi et al., 1997; Chomont et al., 2009), but they are normally not the direct targets for infection, due to the blocks in reverse transcription (Korin and Zack, 1998), integration (Bukrinsky et al., 1992) and host restriction by SAMHD1 (Baldauf et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies supporting this established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "a59afd16-42fe-4752-bbd7-efdf590f1c3a",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C38",
+      "claim": "HIV-1 latency is preferentially established in effector-to-memory transitioning CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been recently demonstrated that HIV-1 latency was preferentially established in EMT CD4+ T cells (Shan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a recent study demonstrating this finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "9bf637aa-27ce-41d3-bb25-591f0d15c3bb",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C39",
+      "claim": "ACY-1215 is an oral HDAC6-selective inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215 is an oral HDAC6-selective inhibitor, and our data suggested that it was less toxic than SAHA as measured by annexin-V/propidium iodide (PI) staining (Figure 6\u2014figure supplement 2A and B) and CCK-8 assay (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes ACY-1215 as an HDAC6-selective inhibitor, which is established knowledge about this compound.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "b71edd95-eeaa-4ad1-b228-6eebfd1d9aa7",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C40",
+      "claim": "ACY-1215 has completed Phase 1 and 2 clinical trials for treatment of multiple myeloma.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215, an orally bioavailable HDAC6-selective inhibitor, had previously completed Phase 1 and 2 clinical trials for treatment of multiple myeloma (Santo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study reporting clinical trial completion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "ac8df960-43d4-4e8e-9289-72fae2496c9b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C41",
+      "claim": "ACY-1215 selectively increases acetylated \u03b1-tubulin without altering acetylated histone H4 at biologically relevant concentrations (<10 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, ACY-1215 selectively increased acetylated a-tubulin (a marker of HDAC6 inhibition) without altering acetylated histone H4 (a marker of global HDAC inhibition) at biologically relevant concentrations (<10 \u03bcM) (Carew et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study reporting ACY-1215's selective effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "12a92512-931b-4d0a-81eb-1a0e61e75e7b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C42",
+      "claim": "HDAC6-KO mice are normal, as opposed to the lethal effect of genetic ablation of class I HDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, HDAC6-KO mice were normal, as opposed to the lethal effect of genetic ablation of class I HDACs (Haberland et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study reporting the viability of HDAC6-KO mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "4758c9ac-c254-4801-8745-14b74423663e",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C43",
+      "claim": "ACY-1215 and ACY-241 can downregulate Th2 cytokine production, decrease T-cell exhaustion, increase T-cell killing ability, and augment the proportion of central memory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215 and ACY-241 (another HDAC6-selective inhibitor) can downregulate Th2 cytokine production, decrease T-cell exhaustion, increase T-cell killing ability, and augment the proportion of central memory cells and expression of cytolytic markers in vitro (Laino et al., 2019; Bae et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies reporting these effects of ACY-1215 and ACY-241.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5562a34c-6d91-44e0-9449-8489c1788ca8",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C44",
+      "claim": "ACY-1215 can change the chromatin accessibility of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ACY-1215 can also change the chromatin accessibility of T cells (Laino et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study reporting this effect of ACY-1215.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "de35c72e-65c7-40d9-9404-0477beb31b05",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C45",
+      "claim": "ACY-1215 has anti-inflammatory effect and is considered a potential anti-inflammatory drug.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, ACY-1215 has anti-in\ufb02ammatory e\ufb00ect and is considered a potential anti-inflammatory drug (Cheng et al., 2019; Zhang et al., 2018; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies reporting ACY-1215's anti-inflammatory properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "bc7ee6be-efe9-4fc0-962e-205c72c8a1d4",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C46",
+      "claim": "ACY-1215 can prevent the neurotoxicity of HIV-1 envelope protein gp120.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported that ACY-1215 could prevent the neurotoxicity of HIV-1 envelope protein gp120 (Wenzel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study reporting this neuroprotective effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "1547f03e-cc21-4d4e-897d-87233f3ef939",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C47",
+      "claim": "Latently infected CD4+ T cells harbor transcriptionally silent but replication-competent proviral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These latently infected cells harbor transcriptional silent but replication-competent proviral genome, which was demonstrated to be the origin of rapid viral rebound after ART is interrupted (Finzi et al., 1997; Chun et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies establishing this characteristic of latently infected cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "fc8be19d-518d-40e5-a8f5-c582c75fbc58",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C48",
+      "claim": "Latently infected cells are the origin of rapid viral rebound after ART is interrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "These latently infected cells harbor transcriptional silent but replication-competent proviral genome, which was demonstrated to be the origin of rapid viral rebound after ART is interrupted (Finzi et al., 1997; Chun et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites studies demonstrating this role of latently infected cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "3187d72e-9d62-4fd7-9a42-af56b68fc31b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C49",
+      "claim": "Latently infected CD4+ T cells are essentially indistinguishable from uninfected cells and are not recognized by immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Latently infected CD4+ T cells are essentially indistinguishable from uninfected cells and are therefore not recognized by immune responses, including broadly neutralizing antibodies or cytotoxic T lymphocytes (CTLs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about latently infected cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "33a91cee-8603-47a9-846f-03b04672b0d3",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C50",
+      "claim": "Current technologies do not allow direct identification or purification of live latently infected cells from infected individuals on ART.",
+      "claim_type": "EXPLICIT",
+      "source": "Current technologies also do not allow direct identification or purification of live latently infected cells from the infected individuals on ART.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a current limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "1a3a404f-e450-4e93-a229-1345d6876872",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C51",
+      "claim": "The difficulty in distinguishing latently infected cells from uninfected cells has represented a major bottleneck precluding comprehensive understandings of HIV-1 latency.",
+      "claim_type": "EXPLICIT",
+      "source": "The difficulty in distinguishing latently infected cells from the vast majority of uninfected cells has represented a major bottleneck precluding comprehensive understandings of HIV-1 latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a recognized challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "0ed1acf2-ff6d-41af-a7fc-da3fd450e525",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C52",
+      "claim": "Previously reported dual reporter virus systems have apparent defects when infecting primary CD4+ T cells, including unclear cell subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some apparent defects existed with the previously reported systems, especially when infecting primary CD4+ T cells: (a) unclear cell subpopulations, for example, the boundaries of productively infected cells were obscured (Calvanese et al., 2013; Battivelli et al., 2018; Kim et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies and identifies their limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5a2cac8d-c02d-4098-b639-9f1f95b23edc",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C53",
+      "claim": "Previously reported dual reporter virus systems have potential interference of cytokines on HIV-1 latency.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) potential interference of cytokines on HIV-1 latency, as all infected cells (Dahabieh et al., 2013; Battivelli et al., 2018) were maintained in IL-2 containing medium for latency establishment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies and identifies their limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "694b8d52-789b-496a-a1d7-b629ef284e3c",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C54",
+      "claim": "Only 5% of HIVGKO cells were reactivated by bryostatin-1 and panobinostat.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) low frequency of reactivation of the identified latently infected cells, for instance, only 5% of HIVGKO cells were reactivated by bryostatin-1 and panobinostat (Battivelli et al., 2018), which bona fide limit its application to explore the mechanism of HIV latency maintenance and reactivation in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study reporting low reactivation rates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "cb0008c1-b95b-48e8-9b06-574578fc9464",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C55",
+      "claim": "J-Lat cell line models are derived from single-cell clones with identical integration sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some cell line models of HIV-1 latency (such as the widely used J-Lat model) have been reported, all of which are derived from single-cell clones, and therefore with identical integration sites, which significantly underrepresented the heterogenous nature of latently infected cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a known limitation of J-Lat models.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "40bd4e86-58bd-4c8c-9e79-f37e4133e623",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C56",
+      "claim": "J-mC cells harbor tremendously diverse HIV-1 integration sites that are highly physiologically relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data clearly demonstrated that J-mC cells harbored tremendously diverse HIV-1 integration sites, which were highly physiologically relevant, suggesting this cell line model as a valuable tool to study HIV-1 latency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the integration site analysis data and draws this conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "7da21745-e541-4653-8ee8-5396673a6b27",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C57",
+      "claim": "DFV-B infection circumvents the clonal-derived biases of previous cell lines like J-Lat.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that DFV-B infection in Jurkat cells can generate a bunch of stable latently infected cells (named J-mC cells), which were obtained by natural infection, therefore circumventing the clonal-derived biases of some previous cell lines like J-Lat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as an advantage of the DFV-B system based on the method of generation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "70c5a5fb-43b2-4bea-bbf5-5bdde75946d6",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C58",
+      "claim": "ACY-1215 has a higher safety and tolerability profile than pan-HDAC inhibitors such as SAHA or panobinostat.",
+      "claim_type": "EXPLICIT",
+      "source": "As an oral HDAC6-selective inhibitor, ACY-1215 has a higher safety and tolerability profile than the currently available pan-HDAC inhibitors such as SAHA or panobinastat, making it a promising LRA in future applications for HIV-1 functional cure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about ACY-1215's safety profile and draws this conclusion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "77057b04-46b2-41ed-8b67-7653294f77e8",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C59",
+      "claim": "Selective HDAC6 inhibition stops aggresome formation and inhibits degradation leading to accumulation of misfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective HDAC6 inhibition stops aggresome formation, thence inhibiting the degradation leading to accumulation of misfolded proteins within cells, and may reduce the toxicity related to the off-target effects of pan-HDAC inhibitors (Amengual et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a study explaining the mechanism of HDAC6 inhibition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "cd3e9589-a39b-4f5f-be3d-f38171a5cb00",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C60",
+      "claim": "The proportion of single GFP-positive cells decreased from 0.7% to 0.2% as culture time increased.",
+      "claim_type": "EXPLICIT",
+      "source": "A small fraction of single GFP+ cells existed after DFV-B infection (Figure 1B), and we traced and found that the proportion of single GFP+ cells decreased from 0.7% to 0.2% (similar to uninfected cells) as the culture time increased (Figure 2\u2014figure supplement 1C), which is significantly lower than the previous reported dual reporter viral systems (Calvanese et al., 2013; Kim et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports tracking data for single GFP+ cells shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "872c8d40-69f7-4d0e-b98e-159ec31169c6",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C61",
+      "claim": "The integrated DNA levels of GFP and mCherry in single GFP+ cells are not different.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrated DNA levels of GFP and mCherry in this single GFP+ cells were not different (Figure 2\u2014figure supplement 1D), suggesting both reporters were still stably integrated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports qPCR data for integrated DNA shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "7fe98309-2542-4bef-8812-d7954def7113",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C62",
+      "claim": "The absence of GFP production in single mCherry-positive cells is due to viral latency but not genomic deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "To further verify that the absence of GFP production was due to viral latency but not possible genomic deletion, we quantified the cell-associated DNA and RNA of fluorescent protein from different populations respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes experiments designed to test this hypothesis and presents supporting data in Figure 2E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "32dcb68e-176f-4964-8c06-f04bdb9d7c40",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C63",
+      "claim": "The viability of single mCherry-positive cell population was more than 40% during the reactivation process.",
+      "claim_type": "EXPLICIT",
+      "source": "During this process, the viability of mC cell population was more than 40% (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports viability data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "41379ec4-be26-40d1-a098-b97b493ebee7",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C64",
+      "claim": "Primary CD4+ T cells are in the process of effector-to-memory transition after 5-7 days in cytokine-free medium culture.",
+      "claim_type": "EXPLICIT",
+      "source": "We first confirmed the primary CD4+ T cells were in the process of EMT after 5\u20137 days in CFM culture, as the expression of CD25/CD69/HLA-DR and T cell exhaustion markers (PD-1 and TIM-3) had been greatly reduced (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports flow cytometry data confirming EMT shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "9f5ed721-aed4-417d-8021-33968906b9c4",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C65",
+      "claim": "Effector-to-memory transitioning CD4+ T cells are less permissive to DFV-B infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, EMT CD4+ T cells were less permissive to DFV-B infection; however, the ratio of mC cells to total infected cells (mC+DP) steadily increased from 15.7% (day 0 infection) to 64.8% (day 10 infection) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports infection data at different time points shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "f058ed7e-7e7d-466f-ab03-d9233b6231a5",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C66",
+      "claim": "A total of 5154 identified integration sites were obtained from J-mC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "C: Chromosome distribution of all integration sites. A total of 5154 identified integration sites were obtained from J-mC cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the total number of integration sites identified in Figure 5C legend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "6ec60b91-cb73-44f7-b195-948791532aec",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C67",
+      "claim": "A total of 499 identified integration sites were obtained from chromosome 17 in J-mC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "D: Distribution of integration sites on chromosome 17. The percentage of top 10 integration sites was shown. A total of 499 identified integration sites were obtained from chromosome 17.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of integration sites on chromosome 17 in Figure 5D legend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "93c6fede-cafe-4174-b2c1-038e1017b4b4",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C68",
+      "claim": "DFV-B has a portion of env deleted for a single round of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a portion of env was deleted for a single round of infection of the virus, and the vpr gene had a frameshift mutation to reduce the toxicity of the pseudovirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the modifications made to construct DFV-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "3f6f2ad2-5825-4ef6-9c43-178983e40a22",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C69",
+      "claim": "DFV-B has a frameshift mutation in the vpr gene to reduce toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, a portion of env was deleted for a single round of infection of the virus, and the vpr gene had a frameshift mutation to reduce the toxicity of the pseudovirus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the modifications made to construct DFV-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "1a62e344-4e6c-4a75-9624-b95a326ee312",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C70",
+      "claim": "Most of the nef sequence in DFV-B was replaced by GFP-EF-1\u03b1-kozak-mCherry, with 31 bp of nef sequence reserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the nef sequence was replaced by GFP- EF-1\u03b1-kozak-mCherry, and the remaining 31 bp of nef sequence was reserved in order not to disturb the function of LTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the modifications made to construct DFV-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "7c51c7ff-4a0f-4d09-84b3-69e8edf7165f",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "claim_id": "C71",
+      "claim": "The 31 bp of nef sequence was reserved in DFV-B in order not to disturb the function of LTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the nef sequence was replaced by GFP- EF-1\u03b1-kozak-mCherry, and the remaining 31 bp of nef sequence was reserved in order not to disturb the function of LTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explains the rationale for retaining part of the nef sequence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "11777c93-4f4a-4b8f-949a-f83cf57cf841",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DFV-B is a dual fluorescent reporter virus derived from HIV-1 NL4-3 with GFP controlled by LTR and mCherry by EF-1\u03b1 promoter. The construct includes deletions in env for single-round infection, a frameshift mutation in vpr to reduce toxicity, and replacement of most nef sequence with the dual reporter cassette while retaining 31 bp of nef to preserve LTR function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C68-C71 provide consistent and detailed description of the DFV-B construct design with supporting evidence from Figure 1A showing the genomic structure. The modifications are clearly documented and rationally justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "e0f82617-411e-4a34-9bc7-b817ad5c770a",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DFV-B infection of activated primary CD4+ T cells produces productively infected (double-positive) cells at roughly 16 times the frequency of latently infected (single mCherry-positive) cells on day 3. When transferred to cytokine-free medium, the proportion of double-positive cells decreases while single mCherry-positive cells increase to 30% by day 10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 describe a coherent time course of infection with quantitative data from Figures 1B and 1C. The dynamics are consistent with cells transitioning from productive to latent infection, though the mechanism of this transition is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single mCherry-positive cells represent latently infected cells that can be reactivated (>50% by PMA/ionomycin), have ~10-fold lower HIV-1 mRNA than double-positive cells, lack detectable HIV-1 proteins, but maintain comparable integrated viral DNA levels with differential mRNA expression (low GFP, normal mCherry). The absence of GFP is due to transcriptional silencing rather than genomic deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9, C62-C63 provide comprehensive molecular characterization of single mCherry-positive cells using multiple orthogonal approaches (reactivation, qPCR, western blot). The data from Figures 2B-E consistently support that these cells harbor transcriptionally silent but intact proviruses, meeting the definition of latent infection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "d648c395-61b4-461e-95a5-5f5446484a46",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single mCherry-positive cells express significantly lower levels of activation markers (CD25, CD69, HLA-DR) and exhaustion markers (PD-1, TIM-3) compared to double-positive cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 are supported by flow cytometry data in Figures 3C-D showing clear differences in marker expression between cell populations. This phenotypic characterization is consistent with latently infected cells having a more resting phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "bd49354c-d248-4e57-87ce-cd7583ddffc3",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "HIV-1 latency is preferentially established in effector-to-memory transitioning (EMT) CD4+ T cells. When DFV-B infection occurs during EMT (confirmed by reduced activation/exhaustion markers after 5-7 days in cytokine-free medium), the ratio of latently infected to total infected cells increases from 15.7% to 64.8% between day 0 and day 10 of transition, despite EMT cells being less permissive to infection overall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C38, C64-C65 are supported by data in Figures 3A-B and 3F, with C38 citing prior literature. The experimental design appropriately tests the hypothesis that EMT cells favor latency establishment. However, the mechanism underlying this preference is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "969b8595-586e-4d31-a04d-795023b52820",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "J-mC cells, a stable Jurkat-based latency model generated by DFV-B infection, can be efficiently reactivated by multiple stimuli (>80% by TNF-\u03b1, and by JQ1, SAHA, PMA, PMA+ionomycin), show significant HIV-1 mRNA induction upon PMA treatment, and maintain stable GFP/mCherry DNA and mRNA levels over one year.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by data in Figures 4 and supplements showing robust reactivation, molecular characterization, and long-term stability. The generation process through multiple sorting rounds (Figure 4A-B) is well-documented, though the rationale for the specific TNF-\u03b1 concentration and timing is not fully justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "031626f8-55f5-4b6e-bab2-017dae89c7c3",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LAM-HTGTS validation using mixed J-Lat 8.4 and 15.4 cells shows 49.09% of integration sites at chromosome 1 position 77946384 and 46.92% at chromosome 19 position 34441293, matching the known integration sites of these clonal cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are supported by data in Figures 5A-B and demonstrate that LAM-HTGTS can accurately detect known integration sites. This validation is appropriate for establishing the method's reliability before applying it to J-mC cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "00702392-4dde-41aa-9c6b-d93324a4b9b2",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "J-mC cells harbor 5,154 diverse HIV-1 integration sites distributed across 24 chromosomes, with chromosome 17 having the most abundant sites (499 total). Over 70% of integrations are in intronic regions, enriched in genes related to transcription regulation, membrane, and binding functions, and more frequently in cancer-related pathways. These characteristics are consistent with integration patterns from ART-treated patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23, C66-C67, C56 are supported by LAM-HTGTS data in Figure 5C-G with appropriate citations to prior patient studies. The diversity and physiological relevance of integration sites are well-documented. However, the threshold of \u226510 counts for calling an integration site may introduce bias toward more abundant clones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High-throughput screening of 1,700 FDA-approved compounds using J-mC cells identified known LRAs (SAHA, panobinostat, romidepsin) and discovered ACY-1215 as a novel LRA that reactivates latent HIV-1 in a dose-dependent manner with 8-fold viral transcription induction. ACY-1215 shows better activity in J-mC cells than in J-Lat cell lines and displays synergistic effects with several other LRAs except disulfiram.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are supported by screening data in Figure 6A-D and supplements. The identification of known LRAs validates the screening approach. The superior performance in J-mC versus J-Lat cells (C27) is supported by data but the explanation is speculative. Synergy data (C28) would benefit from formal synergy analysis rather than simple combination testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "0e7d9ab5-0ed9-4ede-a6cd-205435599984",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ACY-1215 shows lower toxicity than SAHA (by annexin-V/PI staining and CCK-8 assay), does not induce upregulation of T cell activation markers (CD25, CD69, HLA-DR), has no significant effect on HIV-1 co-receptors (CCR5, CXCR4), and does not induce IFN-\u03b3 or TNF-\u03b1 production in CD4+ or CD8+ T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by data in Figure 6 supplements. The safety profile is appropriately characterized across multiple parameters. However, the concentration used (3 \u03bcM) and duration of treatment should be more clearly justified relative to achievable clinical concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "c0d9bf62-bdbb-48b4-a9bc-d46a30cdd06b",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ACY-1215 reactivates over 80% of latent HIV-1 in Bcl-2-transduced primary CD4+ T cells (comparable to SAHA, relative to PMA+ionomycin) and induces an average 50-fold increase in cell-associated HIV-1 mRNA in CD4+ T cells from five ART-suppressed infected individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by data in Figures 6E-H demonstrating ACY-1215 activity in physiologically relevant primary cell models and patient samples. The ex vivo validation in patient cells is particularly important. However, sample size (n=5 patients) is limited and patient characteristics are not fully described in the main text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "a8ec248b-d63d-4110-a6e1-5c945ba922db",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DFV-B displays superior performance compared to previously reported dual reporter systems: <1% single GFP-positive cells (decreasing from 0.7% to 0.2% over time) versus higher percentages in RGH, Duo-Fluo I, mdHIV, and HIVGKO; and >50% reactivation rate in primary cells versus only 5% in HIVGKO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C60 compare DFV-B to prior systems with appropriate citations. The comparisons are supported by data in Figures 1B, 2B, and supplements. However, direct head-to-head comparisons under identical conditions would strengthen these claims, as experimental conditions may differ across studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ACY-1215 is an oral HDAC6-selective inhibitor that has completed Phase 1 and 2 clinical trials for multiple myeloma. It selectively increases acetylated \u03b1-tubulin without altering acetylated histone H4 at <10 \u03bcM, has a favorable safety profile (HDAC6-KO mice are viable), can modulate T cell function (downregulate Th2 cytokines, decrease exhaustion, increase killing ability, alter chromatin accessibility), has anti-inflammatory effects, and can prevent HIV-1 gp120 neurotoxicity. These properties give it higher safety and tolerability than pan-HDAC inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46, C58-C59 are supported by multiple literature citations describing ACY-1215's properties and prior clinical development. The authors appropriately cite prior work to establish the compound's known characteristics. However, some cited effects (C43-C46) are from other contexts and their relevance to HIV latency reversal requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "5e800dac-60ff-4990-9f32-ec48b2f7976d",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The latent HIV-1 reservoir resides mainly in resting memory CD4+ T cells that harbor transcriptionally silent but replication-competent proviruses, are the origin of viral rebound after ART interruption, are indistinguishable from uninfected cells, and cannot be directly identified or purified with current technologies. This difficulty represents a major bottleneck in understanding HIV-1 latency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C47-C51 describe established knowledge in the HIV latency field with appropriate citations. These background claims accurately represent the current state of the field and provide context for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "16b55712-423a-4813-8431-b076347c8b24",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previously reported dual reporter virus systems and cell line models have limitations including unclear cell subpopulations, potential cytokine interference on latency establishment, low reactivation frequencies (5% for HIVGKO with bryostatin-1/panobinostat), and derivation from single-cell clones with identical integration sites (J-Lat models) that underrepresent in vivo heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 identify limitations of prior models with appropriate citations. These critiques provide justification for developing DFV-B. However, some limitations (e.g., C52 on 'unclear cell subpopulations') are somewhat subjective and would benefit from more specific quantitative comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "0942a934-feca-415d-bbc0-dadc35751a06",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DFV-B infection in Jurkat cells generates J-mC cells through natural infection, circumventing the clonal-derived biases of previous cell lines like J-Lat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by the generation method (Figure 4A-B) and integration site diversity data (Figure 5). The polyclonal nature of J-mC cells is a clear advantage over clonal models, though 'natural infection' may be somewhat overstated given the use of pseudotyped virus and multiple sorting rounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    },
+    {
+      "id": "9f659fb3-d18d-438a-9130-45597ef3660a",
+      "content_id": "e284383d-523d-4bee-9119-68f89cc89557",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The integrated DNA levels of GFP and mCherry in single GFP-positive cells are not different, suggesting both reporters remain stably integrated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by qPCR data in Figure 2\u2014figure supplement 1D. This addresses the possibility of genomic deletion in the rare single GFP-positive population, though the biological significance of this small population remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T03:38:25.261149Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aeb153e7-d01d-4c2f-b064-3a002f771cd1",
+      "result_id": "11777c93-4f4a-4b8f-949a-f83cf57cf841"
+    },
+    {
+      "claim_id": "93c6fede-cafe-4174-b2c1-038e1017b4b4",
+      "result_id": "11777c93-4f4a-4b8f-949a-f83cf57cf841"
+    },
+    {
+      "claim_id": "3f6f2ad2-5825-4ef6-9c43-178983e40a22",
+      "result_id": "11777c93-4f4a-4b8f-949a-f83cf57cf841"
+    },
+    {
+      "claim_id": "1a62e344-4e6c-4a75-9624-b95a326ee312",
+      "result_id": "11777c93-4f4a-4b8f-949a-f83cf57cf841"
+    },
+    {
+      "claim_id": "7c51c7ff-4a0f-4d09-84b3-69e8edf7165f",
+      "result_id": "11777c93-4f4a-4b8f-949a-f83cf57cf841"
+    },
+    {
+      "claim_id": "2b3dc1e2-3bad-452d-9935-516bf7063477",
+      "result_id": "e0f82617-411e-4a34-9bc7-b817ad5c770a"
+    },
+    {
+      "claim_id": "ad5d602f-d693-4ac7-9e3d-9982455057aa",
+      "result_id": "e0f82617-411e-4a34-9bc7-b817ad5c770a"
+    },
+    {
+      "claim_id": "66569cad-e2cb-4cdb-9d3a-64208f4d08aa",
+      "result_id": "e0f82617-411e-4a34-9bc7-b817ad5c770a"
+    },
+    {
+      "claim_id": "251cf4c6-656d-4ae5-a79a-b20b6071094b",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "ee7e269f-762e-4494-a476-3128cdc034aa",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "f586b8a5-5608-44fe-b60f-133120ab83d6",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "d2d39ff8-7146-4ae2-ba66-730d3d22878b",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "03990c0d-5870-4137-9a23-ebff2eec9680",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "7fe98309-2542-4bef-8812-d7954def7113",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "32dcb68e-176f-4964-8c06-f04bdb9d7c40",
+      "result_id": "c7f54b91-acbc-46df-b5f0-3811dcc4ceef"
+    },
+    {
+      "claim_id": "36a8b1f1-3838-4a63-9ff8-0d19adee0404",
+      "result_id": "d648c395-61b4-461e-95a5-5f5446484a46"
+    },
+    {
+      "claim_id": "c241da7c-fa3a-446d-8f21-6fa10944d795",
+      "result_id": "d648c395-61b4-461e-95a5-5f5446484a46"
+    },
+    {
+      "claim_id": "ada563f0-46ab-48d8-977a-ea5753e1f6b6",
+      "result_id": "bd49354c-d248-4e57-87ce-cd7583ddffc3"
+    },
+    {
+      "claim_id": "a59afd16-42fe-4752-bbd7-efdf590f1c3a",
+      "result_id": "bd49354c-d248-4e57-87ce-cd7583ddffc3"
+    },
+    {
+      "claim_id": "41379ec4-be26-40d1-a098-b97b493ebee7",
+      "result_id": "bd49354c-d248-4e57-87ce-cd7583ddffc3"
+    },
+    {
+      "claim_id": "9f5ed721-aed4-417d-8021-33968906b9c4",
+      "result_id": "bd49354c-d248-4e57-87ce-cd7583ddffc3"
+    },
+    {
+      "claim_id": "716186ba-5de0-4522-ac7a-708c5ffd5f85",
+      "result_id": "969b8595-586e-4d31-a04d-795023b52820"
+    },
+    {
+      "claim_id": "d341e33e-f40d-4386-98ca-d1f455b07c2d",
+      "result_id": "969b8595-586e-4d31-a04d-795023b52820"
+    },
+    {
+      "claim_id": "d080b5f9-818b-44ce-82d6-176527a5d20a",
+      "result_id": "969b8595-586e-4d31-a04d-795023b52820"
+    },
+    {
+      "claim_id": "439d0251-7341-42ae-80a6-67f2300c461b",
+      "result_id": "969b8595-586e-4d31-a04d-795023b52820"
+    },
+    {
+      "claim_id": "9108db08-aae3-43e2-a947-421b561d30fe",
+      "result_id": "031626f8-55f5-4b6e-bab2-017dae89c7c3"
+    },
+    {
+      "claim_id": "7c6105e0-e299-432b-b5b0-7ecab8637c7d",
+      "result_id": "031626f8-55f5-4b6e-bab2-017dae89c7c3"
+    },
+    {
+      "claim_id": "02a538f3-1310-4383-939c-a248a1b9cd92",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "5d5392d2-10f8-4848-8930-8bb2bacced7b",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "79f43391-963f-45cd-a08c-47915b727e65",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "7990029c-59ad-4461-abbe-7c6f5a45aff2",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "dab79009-35b1-47eb-a746-816e3b526523",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "f058ed7e-7e7d-466f-ab03-d9233b6231a5",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "6ec60b91-cb73-44f7-b195-948791532aec",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "40bd4e86-58bd-4c8c-9e79-f37e4133e623",
+      "result_id": "00702392-4dde-41aa-9c6b-d93324a4b9b2"
+    },
+    {
+      "claim_id": "5cc257d0-346c-442e-91b7-e3f279dfee90",
+      "result_id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c"
+    },
+    {
+      "claim_id": "93dea400-200c-4fba-905c-038005d7b7c4",
+      "result_id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c"
+    },
+    {
+      "claim_id": "82ac54ef-f486-4aa8-9b67-6ca4d2b7019e",
+      "result_id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c"
+    },
+    {
+      "claim_id": "ef632df0-14ed-4bef-9564-aecf4c4b9bb2",
+      "result_id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c"
+    },
+    {
+      "claim_id": "b78ce3f7-ee35-451d-b48c-a4afd14f7bfe",
+      "result_id": "1a703c7c-dbc0-4ec4-8f31-870d99dbb38c"
+    },
+    {
+      "claim_id": "a7eae0ca-dcb3-4516-9909-1be92189fc80",
+      "result_id": "0e7d9ab5-0ed9-4ede-a6cd-205435599984"
+    },
+    {
+      "claim_id": "08c23bf2-7ce0-4bca-8c02-f0c18d96e3fd",
+      "result_id": "0e7d9ab5-0ed9-4ede-a6cd-205435599984"
+    },
+    {
+      "claim_id": "352820e2-ed37-438d-9790-e66a27836d93",
+      "result_id": "0e7d9ab5-0ed9-4ede-a6cd-205435599984"
+    },
+    {
+      "claim_id": "edd9d7f8-b5d8-4184-92f5-2476c26c4e1b",
+      "result_id": "0e7d9ab5-0ed9-4ede-a6cd-205435599984"
+    },
+    {
+      "claim_id": "542c2fc4-fc65-4680-9350-8ccd01734d7e",
+      "result_id": "c0d9bf62-bdbb-48b4-a9bc-d46a30cdd06b"
+    },
+    {
+      "claim_id": "010a5c60-255b-4832-8452-91e6e93212e4",
+      "result_id": "c0d9bf62-bdbb-48b4-a9bc-d46a30cdd06b"
+    },
+    {
+      "claim_id": "fd3cb4c8-7e84-42b5-83b9-8bd9e353fcd8",
+      "result_id": "a8ec248b-d63d-4110-a6e1-5c945ba922db"
+    },
+    {
+      "claim_id": "8fcc4428-5dd5-40df-ae42-4922542e59b6",
+      "result_id": "a8ec248b-d63d-4110-a6e1-5c945ba922db"
+    },
+    {
+      "claim_id": "cd3e9589-a39b-4f5f-be3d-f38171a5cb00",
+      "result_id": "a8ec248b-d63d-4110-a6e1-5c945ba922db"
+    },
+    {
+      "claim_id": "9bf637aa-27ce-41d3-bb25-591f0d15c3bb",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "b71edd95-eeaa-4ad1-b228-6eebfd1d9aa7",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "ac8df960-43d4-4e8e-9289-72fae2496c9b",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "12a92512-931b-4d0a-81eb-1a0e61e75e7b",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "4758c9ac-c254-4801-8745-14b74423663e",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "5562a34c-6d91-44e0-9449-8489c1788ca8",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "de35c72e-65c7-40d9-9404-0477beb31b05",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "bc7ee6be-efe9-4fc0-962e-205c72c8a1d4",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "70c5a5fb-43b2-4bea-bbf5-5bdde75946d6",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "77057b04-46b2-41ed-8b67-7653294f77e8",
+      "result_id": "5c0a8fd8-834e-4a5d-b968-5667cbf5b7dc"
+    },
+    {
+      "claim_id": "c266c857-170e-4cb8-b774-23bc06394075",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "1547f03e-cc21-4d4e-897d-87233f3ef939",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "fc8be19d-518d-40e5-a8f5-c582c75fbc58",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "3187d72e-9d62-4fd7-9a42-af56b68fc31b",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "33a91cee-8603-47a9-846f-03b04672b0d3",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "1a3a404f-e450-4e93-a229-1345d6876872",
+      "result_id": "5e800dac-60ff-4990-9f32-ec48b2f7976d"
+    },
+    {
+      "claim_id": "0ed1acf2-ff6d-41af-a7fc-da3fd450e525",
+      "result_id": "16b55712-423a-4813-8431-b076347c8b24"
+    },
+    {
+      "claim_id": "5a2cac8d-c02d-4098-b639-9f1f95b23edc",
+      "result_id": "16b55712-423a-4813-8431-b076347c8b24"
+    },
+    {
+      "claim_id": "694b8d52-789b-496a-a1d7-b629ef284e3c",
+      "result_id": "16b55712-423a-4813-8431-b076347c8b24"
+    },
+    {
+      "claim_id": "cb0008c1-b95b-48e8-9b06-574578fc9464",
+      "result_id": "16b55712-423a-4813-8431-b076347c8b24"
+    },
+    {
+      "claim_id": "7da21745-e541-4653-8ee8-5396673a6b27",
+      "result_id": "0942a934-feca-415d-bbc0-dadc35751a06"
+    },
+    {
+      "claim_id": "872c8d40-69f7-4d0e-b98e-159ec31169c6",
+      "result_id": "9f659fb3-d18d-438a-9130-45597ef3660a"
+    }
+  ],
+  "comparisons": []
+}

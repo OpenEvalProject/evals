@@ -1,0 +1,488 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Maternal depletion of CLAMP or ZLD causes severe embryonic patterning defects including disruption of pair-rule gene expression (eve/run), loss of sharp stripe boundaries, nuclear disassociation, and defective cellularization with reduced NRT levels. Both factors are essential for early embryonic patterning and development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide converging evidence from multiple experimental approaches (smFISH, immunostaining, RNA-seq) with appropriate statistical testing (Fisher's exact test, DESeq2) and adequate sample sizes (n=10-23 embryos). The phenotypic observations are consistent across methods and show that both CLAMP and ZLD are required for proper embryonic development, with ZLD showing slightly stronger effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CLAMP directly binds to nucleosomal DNA in vitro. Both the DNA-binding domain and full-length CLAMP protein can bind and shift naked DNA and nucleosomes assembled with the 5C2 locus DNA containing three CLAMP-binding motifs, with multiple shift species suggesting multimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate nucleosome binding through EMSA experiments with appropriate controls (naked DNA vs. nucleosomes, DBD vs. FL protein, MBP control validated by C27). The observation of super-shift species at higher protein concentrations provides evidence for multimerization. However, the inference of multimerization (C26, C30) is speculative and would benefit from additional biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C88"
+    ],
+    "result": "CLAMP specifically regulates zygotic gene transcription but not maternal gene expression, similar to ZLD. Expression levels of zygotically transcribed genes are significantly downregulated in embryos lacking CLAMP (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by RNA-seq analysis with appropriate statistical testing (Mann-Whitney U-test, p<0.001) comparing maternal vs. zygotic gene expression. The comparison to ZLD (C32, C88) is validated using published data (Schulz et al., 2015) and confirmed in this study. The selective effect on zygotic genes establishes CLAMP's role in ZGA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CLAMP regulates chromatin accessibility at a subset of genomic regions (277 at 0-2hr, 50 at 2-4hr) that are enriched at promoters (49.16%) of genes encoding transcription factors. A subset of these regions (26.7-90%) are directly bound by CLAMP, and genes at CLAMP-dependent accessible regions show significant expression reduction after CLAMP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C54 are supported by ATAC-seq with appropriate differential accessibility analysis (DiffBind, FDR<0.1), integration with ChIP-seq to identify direct binding, and correlation with RNA-seq showing functional consequences. GO analysis (C41) validates enrichment for TF genes. However, some variation among replicates is noted (PC2 explains 5-6% variance), and the inference that CLAMP 'may play other roles' in introns (C50) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CLAMP and ZLD regulate each other's genomic occupancy. ZLD binding decreases at 274 (0-2hr) and 1,289 (2-4hr) sites after CLAMP depletion, while CLAMP binding decreases at 390 (0-2hr) and 30 (2-4hr) sites after ZLD depletion. Dependent sites are broader (400-500bp) and located at promoters, while independent sites are narrower (200-250bp) and intronic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C71 are supported by ChIP-seq with differential binding analysis (DiffBind, FDR<0.05) and statistical testing of peak characteristics (Mann-Whitney U-test, p<0.001). The asymmetry in temporal effects (more ZLD sites depend on CLAMP at 2-4hr, more CLAMP sites depend on ZLD at 0-2hr) suggests sequential pioneer activity. Genomic distribution analysis provides mechanistic insight into functional differences between dependent and independent sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CLAMP and ZLD regulate each other's binding through DNA motif recognition rather than direct protein-protein interaction. Dependent sites are enriched for motifs of the required protein, while independent sites lack these motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by prior proteomic studies showing no CLAMP-ZLD interaction (C72) and motif analysis showing enrichment patterns consistent with indirect regulation (C74-C76). The inference that regulation occurs 'via binding to their DNA motifs' (C73, C77) is well-supported by the combined evidence, though direct mechanistic proof would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Chromatin accessibility is reduced at ZLD-dependent CLAMP binding sites (ZLD down-DB) in clamp-depleted embryos, while accessibility at ZLD-independent sites remains unchanged. Sites where ZLD regulates CLAMP binding show high accessibility, while CLAMP-independent sites show low accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by integration of ATAC-seq and ChIP-seq data showing coordinated changes in accessibility and binding. The slight accessibility increase at some sites after ZLD loss (C83) is appropriately interpreted as a technical artifact of ATAC-seq (C84-C85), where TF binding can prevent Tn5 cleavage. This demonstrates appropriate consideration of technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C121"
+    ],
+    "result": "CLAMP and ZLD increase each other's occupancy by binding to their respective motifs and altering chromatin accessibility at promoters of genes that often encode other transcription factors, thereby regulating zygotic transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C121 synthesize results from ChIP-seq, ATAC-seq, and GO analysis to propose a mechanistic model. The model is well-supported by the combined evidence showing: (1) motif-dependent binding, (2) coordinated changes in occupancy and accessibility, and (3) enrichment at TF gene promoters. This represents a major conceptual advance in understanding ZGA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CLAMP and ZLD directly regulate transcription of their target genes. CLAMP binding is enriched at mid- and late-transcribed zygotic genes, while ZLD binding is enriched at early genes. Genes bound by either factor show significant expression reduction after depletion (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 integrate ChIP-seq with RNA-seq and temporal gene expression categories to show functional consequences of binding. Statistical testing (Mann-Whitney U-test, p<0.001) demonstrates significant effects. The temporal binding patterns (C89-C90) suggest sequential roles in ZGA. The inference of direct regulation (C94) is supported by correlation between binding and expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "CLAMP and ZLD regulate expression of each other's target genes through promoting each other's binding. Genes where ZLD promotes CLAMP binding show greater expression reduction after ZLD depletion (p=4.3E-5), and genes where CLAMP promotes ZLD binding show greater reduction after CLAMP depletion (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 demonstrate functional interdependence by integrating ChIP-seq differential binding analysis with RNA-seq. Statistical testing shows significant effects, and motif analysis (C99) provides mechanistic support. This establishes that the mutual regulation of binding has functional consequences for gene expression, supporting the cooperative model of ZGA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "CLAMP and ZLD co-bound loci fall into four categories based on accessibility requirements: Type I (both required, n=5), Type II (CLAMP-dependent, n=23), Type III (ZLD-dependent, n=123), and Type IV (neither required, n=374). At Type II sites, ZLD occupancy is entirely ablated without CLAMP. Type II and III genes show significant expression reduction when the required factor is depleted, while Type IV genes do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C115 provide a comprehensive classification of co-bound sites with functional validation through RNA-seq. The complete loss of ZLD at Type II sites (C106) is striking and well-documented. Statistical testing shows significant expression effects for Types II and III (p<0.05 to p<0.001) but not Type IV, supporting functional redundancy or regulation by other factors (C105, C115). However, the speculation about redundancy (C105, C115) requires experimental validation through simultaneous depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "GAF-dependent accessible regions overlap extensively (97% without requiring CLAMP/ZLD occupancy) with CLAMP/ZLD-independent sites, suggesting that multiple transcription factors including GAF coordinately regulate chromatin accessibility during ZGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 integrate published GAF data (Gaskill et al., 2021) with this study's CLAMP/ZLD data to propose a multi-factor model. The high overlap (97%, C118) is compelling, though the 10% overlap when requiring occupancy (C117) suggests complexity. The inference that GAF functions at these sites (C119) and that multiple TFs coordinate ZGA (C120, C122) is well-supported but would benefit from direct functional testing of GAF in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "CLAMP functions as a pioneer transcription factor with targeted yet essential roles in early embryonic development. CLAMP directly binds nucleosomal DNA, establishes chromatin accessibility at TF gene promoters, facilitates ZLD binding, and regulates zygotic gene transcription through mutual regulation with ZLD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C130 synthesize the major findings into a coherent model of CLAMP as a pioneer factor. Each component is supported by experimental evidence: nucleosome binding (C125, EMSA), chromatin accessibility (C126, ATAC-seq), ZLD facilitation (C127, ChIP-seq), transcriptional regulation (C128, RNA-seq), and mutual regulation (C129, integrated analysis). This represents the central conclusion of the manuscript and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "CLAMP and ZLD regulate ZGA differently: ZLD plays a global role affecting chromatin accessibility genome-wide, while CLAMP functions in a targeted manner at specific TF gene promoters. Despite different scopes, both are critical for ZGA and embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 compare CLAMP and ZLD functions, supported by the differential scale of effects (hundreds of CLAMP-dependent sites vs. thousands for ZLD) and GO analysis showing CLAMP enrichment at TF genes. The characterization of ZLD as 'global' (C133, C135) is supported by prior literature and confirmed here. The conclusion that both are critical despite different mechanisms (C136) is supported by the severe phenotypes observed for both depletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "ZLD regulates CLAMP occupancy earlier than CLAMP regulates ZLD occupancy. CLAMP-dependent sites at 0-2hr often become ZLD-independent at 2-4hr, suggesting CLAMP may require ZLD's pioneering activity initially but not after binding is established. CLAMP is a potent regulator of ZLD binding especially at 2-4hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 describe temporal dynamics of mutual regulation supported by comparing differential binding at two time points. The asymmetry (390 CLAMP down-DB sites at 0-2hr vs. 30 at 2-4hr; 274 ZLD down-DB at 0-2hr vs. 1,289 at 2-4hr) supports the sequential model (C164). However, the caveat that 'ZLD depletion is not as effective later' (C163) is important and could confound interpretation of the 2-4hr results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "ZLD functions primarily as an early pioneer factor, while CLAMP has pioneer functions in both early and late ZGA. CLAMP binding is enriched at both early and late zygotic genes, while ZLD binding is enriched at early genes, suggesting sequential occupancy at some loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 are supported by ChIP-seq analysis in the context of temporal gene expression categories (Li et al., 2014). The differential temporal enrichment patterns (C173-C174) support the inference of sequential relationships (C175) and different pioneer functions (C172). This provides mechanistic insight into how the two factors coordinate ZGA progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "At dependent sites, CLAMP and ZLD show broad peaks enriched for clustered motifs. CLAMP contains glutamine-rich regions that may mediate multimerization, consistent with multiple shifted bands in gel shift assays and the presence of multiple binding motifs at dependent sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C176-C177 are supported by peak size and motif analysis plus EMSA data. However, the inference that glutamine-rich domains mediate CLAMP multimerization (C181) is speculative, based on analogy to other TFs (C178-C180) rather than direct evidence. While reasonable, this hypothesis requires biochemical validation through mutagenesis, cross-linking, or analytical ultracentrifugation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "ZLD does not form dimers or multimers and likely binds as a monomer. There is no evidence for direct CLAMP-ZLD protein-protein interaction, as mass spectrometry of CLAMP-associated proteins did not identify ZLD, and no ZLD protein-protein interactions have been validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C186 are supported by multiple prior studies (Hamm et al., 2015, 2017; Urban et al., 2017b) showing lack of ZLD multimerization and absence of CLAMP-ZLD interaction. This negative evidence is important for establishing that the mutual regulation occurs through DNA binding rather than protein interaction, supporting the mechanistic model proposed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C146",
+      "C147"
+    ],
+    "result": "Not all GA-rich sites are regulated by CLAMP depletion. GAF is enriched at ZLD-bound regions where ZLD is not required for accessibility, and GAF-dependent loci overlap with CLAMP/ZLD-independent sites. GAF may function independently or redundantly with CLAMP and ZLD, but could not be depleted by RNAi in early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C147 integrate published GAF data with this study's results to explain CLAMP/ZLD-independent sites. The inability to deplete GAF by RNAi (C141) is a significant limitation that prevents direct functional testing, but is explained by biological mechanisms (autoregulation, prion-like function). The inference of GAF function at independent sites (C147) is reasonable given the overlap data but remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "CLAMP and GAF have complex relationships including competition at some sites (MSL recruitment, histone locus) and synergy at others. They bind similar but distinct GA-rich motifs (GAF: 3.5 GA repeats; CLAMP: 8-bp core with variable second GA). The competitive relationship may not be established in early embryos before dosage compensation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C153 synthesize prior work on CLAMP-GAF relationships with speculation about early embryos. The characterization of binding site differences (C148-C152) is well-supported by prior studies. The speculation that competition is not established early (C145) is reasonable given dosage compensation timing but lacks direct evidence. The inference of overlapping and non-overlapping functions (C153) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "CLAMP functions early in the embryo prior to MSL complex assembly to open chromatin regions for subsequent MSL recruitment. X chromosome counting initiates at nuclear cycle 12, but most dosage compensation occurs much later in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 integrate this study's findings with prior work on dosage compensation timing. The model that CLAMP prepares chromatin for later MSL recruitment (C171) is supported by the early chromatin accessibility changes observed here and prior studies (Urban et al., 2017b; Rieder et al., 2019). The temporal separation between X counting (C169) and dosage compensation (C170) supports this sequential model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C187"
+    ],
+    "result": "Regulating the chromatin landscape in early embryos to drive ZGA requires the function of multiple pioneer transcription factors including CLAMP, ZLD, and GAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C187 represents the overarching conclusion synthesizing all results. It is well-supported by the demonstration that: (1) CLAMP and ZLD each regulate subsets of accessible sites, (2) they cooperate at some sites, (3) many sites remain accessible without either factor, and (4) GAF-dependent sites overlap with CLAMP/ZLD-independent sites. This multi-factor model represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C34",
+      "C35",
+      "C46",
+      "C84",
+      "C132",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Background knowledge claims about NRT, pioneer TF characteristics, prior CLAMP/ZLD/GAF functions, and Psq are cited from literature to provide context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C33-C35, C46, C84, C132, C154-C160 represent established knowledge from prior studies, appropriately cited. These provide necessary context but are not novel findings of this manuscript. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "MBP tag does not bind DNA independently or alter CLAMP binding specificity, and CLAMP binds specifically to GAGA-repeats in vivo and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 cite prior validation (Kaye et al., 2018; Soruco et al., 2013) of the MBP-CLAMP fusion protein and CLAMP binding specificity. These controls are essential for interpreting the EMSA results but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "It is possible that CLAMP and ZLD are functionally redundant at some genomic loci where they regulate each other's occupancy, but depleting either factor individually is insufficient to alter chromatin and expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is speculative, proposing functional redundancy to explain Type IV sites that remain accessible and transcriptionally active after single depletions. While this is a reasonable hypothesis consistent with the data, it requires experimental validation through simultaneous depletion of both factors. The alternative explanation that other factors (like GAF) regulate these sites is equally plausible and partially supported by C117-C119.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C105",
+      "C112",
+      "C145",
+      "C147",
+      "C153",
+      "C164",
+      "C167",
+      "C175",
+      "C181"
+    ],
+    "result": "Various speculative claims about CLAMP's roles in introns, regulation of ZLD binding sites, functional redundancy, GAF relationships, temporal dynamics, and multimerization mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C52, C105, C112, C145, C147, C153, C164, C167, C175, C181 represent speculative inferences that extend beyond the direct evidence. While these are reasonable hypotheses consistent with the data, they require additional experiments for validation. The authors appropriately use cautious language ('may', 'might', 'suggesting', 'possible') to indicate uncertainty.",
+    "result_type": "MINOR"
+  }
+]

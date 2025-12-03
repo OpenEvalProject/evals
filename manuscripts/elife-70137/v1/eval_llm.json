@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prolonged blue light exposure (470 nm, 12 hr) caused arrhythmicity in PER2::LUC SCN slices that was not reversible with medium change, while red light (625 nm, 12 hr) did not significantly affect rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide direct experimental evidence with quantitative data (Figure 1A-B) demonstrating differential effects of blue versus red light on SCN rhythmicity. The irreversibility test (medium change) strengthens the conclusion about blue light toxicity. Sample sizes and statistical comparisons are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Optogenetic stimulation at different circadian times (CT6, CT14, CT21) produced time-dependent phase responses: minimal shift at CT6 (0.14\u00b10.19 hr), phase delays at CT14 (-4.25\u00b10.76 hr), and phase advances at CT21 (4.38\u00b10.67 hr), with greater PER2 induction at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are well-supported by experimental data in Figure 2C-D with appropriate statistical tests (one-way ANOVA), sample sizes (n=3-4), and error bars. The phase response curve pattern matches established circadian biology principles and cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Phase shifts result from differential waveform changes: CT14 stimulation elongated the falling phase (1.31\u00b10.06 FC) causing delays, CT21 stimulation accelerated the rising phase (0.72\u00b10.04 FC) causing advances, while CT6 stimulation did not significantly alter phase durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide mechanistic insight linking waveform changes to phase shifts with quantitative fold-change data (Figure 2E). The differential effects across circadian times are internally consistent and supported by statistical analysis (RM two-way ANOVA). This represents a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Single optogenetic pulses produced period after-effects: CT14 stimulation caused period lengthening (0.91\u00b10.14 hr by linear regression, 1.46\u00b10.38 hr by Lomb-Scargle), while CT21 stimulation caused period shortening (-1.57\u00b10.28 hr, -1.98\u00b10.28 hr), demonstrating intrinsic SCN period plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by data in Figure 2F using two independent period calculation methods. The magnitude and direction of period changes are consistent across methods. However, the biological significance of using two methods when both show the same pattern is unclear, and sample sizes are modest (n=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SCN slices entrained to T22 and T25 cycles, demonstrating canonical entrainment features including period matching, stable phase angles, and entrainment via repeated waveform changes (rising phase acceleration for T22: 0.79\u00b10.03 FC; falling phase elongation for T25: 1.17\u00b10.03 FC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate ex vivo entrainment with comprehensive evidence from Figures 3A-F including actograms, period quantification, phase angle analysis, and waveform measurements. Statistical tests are appropriate (one-way ANOVA, Student's t-test) with adequate sample sizes (n=4-6). This is a major finding showing SCN-intrinsic entrainment capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Repeated phase shifts during T-cycle entrainment did not produce statistically significant period after-effects, suggesting phase shifts rather than period changes are the primary driver of T-cycle entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by data in Figure 3D and supplement 2. The lack of significant period after-effects during repeated stimulation contrasts with single-pulse effects (C28-C29), which is surprising but well-documented. The interpretation aligns with the non-parametric model of entrainment. However, the one-week entrainment duration may be insufficient as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "SCN slices entrained to skeleton photoperiods (8:16, 12:12, 16:8) with period matching to 24 hr and stable phase angles. The 16:8 skeleton induced phase-jumping to the 8:16 phase angle, demonstrating SCN-intrinsic photoperiodic plasticity and minimum tolerable night phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by comprehensive data in Figure 4B-D with appropriate statistical analysis (one-way ANOVA, n=3). The phase-jumping behavior replicates known behavioral phenomena, providing strong evidence for SCN-intrinsic mechanisms. The observation that isolated SCN exhibits this complex behavior is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Skeleton photoperiod entrainment altered PER2 waveforms through dawn-induced rising phase shortening and dusk-induced falling phase lengthening, creating asymmetric waveforms. These changes did not persist in constant darkness, indicating direct light effects during entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by waveform analysis data in Figure 4F-G with statistical testing (RM two-way ANOVA, n=3). The reversibility test (free-running after entrainment) is a critical control demonstrating that waveform changes are activity-dependent rather than stable alterations. Quantitative fold-change data are provided for all conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Entrainment to 8:16 skeleton photoperiods showed a trend toward period lengthening (0.47\u00b10.11 hr) that did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 accurately reports a non-significant trend with appropriate statistical transparency. The comparison to in vivo behavioral data (cited) provides context. While the result is negative for statistical significance, it is appropriately reported and discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Progressive expansion of skeleton photoperiods from 12:12 to 14:10 to 16:8 showed decreasing entrainment stability (9/9, 8/9, 2/9 maintained entrainment respectively), with most slices executing phase jumps at 16:8, consistent with the minimum tolerable night phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide clear quantitative data on entrainment stability across photoperiods (Figure 5A,C, n=9). The progressive decrease in stable entrainment and citation to prior behavioral studies (Pittendrigh and Daan, 1976b; Stephan, 1983) strengthen the conclusion. Sample size is adequate for this type of categorical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "SCN slices stably entrained to 16:8 skeleton photoperiods exhibited broader PER2 waveforms with more prominent inductions at dawn and dusk transitions compared to 12:12, suggesting that light transition timing drives photoperiodic waveform effects via differential Per induction magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by waveform comparison data in Figure 5B. The mechanistic interpretation linking transition timing to induction magnitude is reasonable given the data, though the small sample size (2/9 slices maintaining 16:8 entrainment) limits generalizability. The conclusion is appropriately qualified as 'likely via' rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Before optogenetic stimulation, SCN slices exhibited a baseline phase distribution with the dorsomedial region most phase-leading and ventrolateral region most phase-lagging, while circadian period was nearly uniform across the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe baseline network organization supported by imaging data in Figure 6A. This establishes the pre-stimulation state necessary for interpreting subsequent regional responses. The uniform period distribution is an important baseline observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Following CT14 stimulation, the lateral SCN showed larger phase delays than medial SCN, while period lengthening was greater in medial than lateral regions, revealing an inverse correlation between phase and period responses. Cluster analysis identified distinct lateral-medial and ventrolateral-dorsomedial axes for phase and period responses, with increased phase desynchrony post-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by comprehensive spatiotemporal imaging data in Figure 6A-D with unsupervised clustering analysis (Ward's method) and appropriate statistics (RM one-way ANOVA, paired t-test, n=6-7). The inverse correlation between phase and period responses is a novel network-level finding. The increased phase variance (circular variance analysis) provides quantitative evidence for desynchrony.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Following CT21 stimulation, ventrolateral/ventral SCN showed larger phase advances and smaller period shortening than dorsomedial/dorsal SCN. Cluster analysis revealed ventrolateral-dorsomedial and ventral-dorsal axes for phase and period responses, with increased phase variance and inter-cluster phase differences post-stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 parallel the CT14 analysis with similar methodological rigor (Figure 6A-C,E, n=6-7). The consistency of inverse phase-period correlation across both stimulation times strengthens the conclusion about regional heterogeneity. Statistical support is adequate with multiple comparison corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Subregions with large phase shifts had lower ChrimsonR-tdT expression levels, indicating that regional phase response differences are not directly derived from opsin expression patterns but are intrinsic to ventrolateral and dorsomedial SCN neurons or circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 address a critical control for optogenetic experiments (Figure 6 supplement 1). The inverse relationship between opsin expression and phase shift magnitude rules out a trivial explanation and supports the conclusion of intrinsic regional differences. The inference (C68-C69) is logical given uniform stimulation across the SCN.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Network-level analysis revealed that lateral/ventrolateral SCN exhibits large phase shifts with small period changes, while medial/dorsomedial SCN displays small phase shifts with large period changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 synthesizes the regional analysis findings (C55-C66) into a clear summary statement. This is well-supported by the comprehensive spatiotemporal data and represents a major conclusion about SCN network organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Optogenetic light input transforms PER2 waveforms from sinusoidal to asymmetrical with accelerated rising and extended falling phases at dawn and dusk. These waveform changes occur under various photoperiods and non-24hr periods, with acute shifts greatest in ventrolateral SCN and period effects greatest in dorsomedial SCN, encoding entrainment through spatiotemporally distinct intrinsic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 represent the study's main conclusions, synthesizing findings from multiple experiments (Figures 2-6). Each component is supported by specific experimental results detailed in other claim groups. The integration of waveform changes, regional differences, and entrainment mechanisms is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The isolated SCN recapitulates canonical circadian entrainment features including phase responses with period after-effects, period matching to non-24hr cycles, and differential skeleton photoperiod entrainment. Entrainment involves PER2 waveform transformation from sinusoidal to asymmetrical, with ventrolateral SCN showing greatest phase shifts and dorsomedial SCN showing greatest period after-effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide a comprehensive summary of the study's major findings. These are well-supported by the extensive experimental data across multiple paradigms (single pulses, T-cycles, skeleton photoperiods, spatiotemporal imaging). The claims accurately reflect the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Many classically studied forms of circadian plasticity and entrainment properties reside intrinsically within the SCN molecular and neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is a major interpretive conclusion supported by the demonstration of multiple entrainment phenomena (phase responses, T-cycle entrainment, skeleton photoperiod entrainment, minimum tolerable night) in isolated SCN slices. The ex vivo system effectively isolates SCN-intrinsic mechanisms from systemic influences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Period after-effects in isolated SCN (up to several hours) are larger than behavioral period after-effects (less than an hour), suggesting either signal attenuation downstream of SCN or constraint by extra-SCN oscillators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 compare ex vivo SCN data with cited behavioral studies. The magnitude difference is clearly documented (Figure 2F vs. Pittendrigh and Daan, 1976a). However, C78 is speculative about mechanisms ('suggests'), which is appropriately qualified. The comparison raises interesting questions about SCN-behavior relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Extra-SCN clocks may critically influence period after-effects of T-cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is speculative, based on cited discrepancies between explanted SCN and behavioral periods (Aton et al., 2004; Azzi et al., 2017; Ciarleglio et al., 2014; Molyneux et al., 2008). While the cited evidence supports the possibility, the current study does not directly test this hypothesis. The claim is appropriately qualified as a 'possibility.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Period responses inversely correlated with phase responses could help SCN recover baseline network phase state from decreased synchrony following phase shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is a speculative mechanistic interpretation of the inverse correlation between phase and period responses. While the correlation is well-documented (C57, C62), the proposed functional role is not directly tested. This represents a reasonable hypothesis for future work but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "P11-14 heterozygous PER2::LUC mice were used for organotypic cultures, with the caveat that the PER2::LUC allele can alter circadian functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe methodological choices with appropriate citation (Ralph et al., 2021) acknowledging potential confounds. The use of heterozygous rather than homozygous mice partially mitigates concerns. This is an important methodological consideration appropriately disclosed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C75",
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background knowledge and prior work establish the SCN as the central circadian clock, describe classical entrainment principles, molecular clockwork mechanisms, light-induced Per expression, phototoxicity concerns, retinal projections, and SCN development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15, C19, C75, C80, C82-C84 represent established knowledge and prior work appropriately cited throughout the manuscript. These provide necessary context for interpreting the current findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

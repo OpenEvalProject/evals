@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors developed a novel mechanistic approach for inferring SARS-CoV-2 infectiousness profiles from transmission pair data. The approach divides infection into three stages (latent E, presymptomatic infectious P, and symptomatic infectious I) with Gamma-distributed durations and constant infectiousness within each stage, motivated by compartmental epidemic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C18, C76-C79 collectively describe the methodological innovation. The mechanistic framework is clearly defined with explicit mathematical structure, appropriate citations to motivating literature, and transparent assumptions about stage durations and infectiousness profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C48",
+      "C53"
+    ],
+    "result": "The mechanistic variable infectiousness model provides superior fit to SARS-CoV-2 transmission pair data compared to existing approaches, with \u0394AIC = 0 versus \u0394AIC = 1.3 (constant infectiousness), \u0394AIC = 5.1 (Ferretti model), and \u0394AIC = 38.9 (independent transmission and symptoms model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C26, C48, C53 are supported by AIC comparisons showing clear model superiority. The statistical comparison is appropriate, though the analysis assumes symptom onsets at midday for AIC calculation, which may introduce minor bias. The large \u0394AIC for the independent model (38.9) strongly supports the claim of improved fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C67",
+      "C68"
+    ],
+    "result": "The best-fitting variable infectiousness model indicates 65% (95% CI: 53-77%) of transmissions occur presymptomatically, with many transmissions concentrated immediately before symptom onset. This proportion is higher than estimates from the constant infectiousness model (56%), Ferretti model (55%), and independent transmission and symptoms model (49%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C31-C34, C67-C68 are supported by posterior distributions from MCMC fitting and TOST distributions shown in Figure 2B. The concentration of transmission around symptom onset is visually evident. However, the estimate depends on the assumed incubation period distribution and data from early 2020, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C71",
+      "C72",
+      "C73",
+      "C81",
+      "C82"
+    ],
+    "result": "Four infectiousness models were fitted to 191 SARS-CoV-2 transmission pairs from five studies using data augmentation MCMC to account for uncertainty in exact symptom onset times. The main analysis assumed a Gamma-distributed incubation period with mean 5.5 days and SD 2.3 days, with sensitivity analysis using an alternative distribution (mean 5.3 days, SD 3.2 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C71-C73, C81-C82 describe the data and methodology transparently. The use of data augmentation MCMC is appropriate for handling discrete symptom onset data. The MCMC chain length (2.5M steps, 500K burn-in) appears adequate, though convergence diagnostics are not reported. Sensitivity analysis strengthens robustness claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The variable infectiousness model predicts lower variability in generation time but higher concentration of TOST around symptom onset compared to the independent transmission and symptoms model. A decrease in infectiousness following symptom onset was inferred, likely due to behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by Figure 2A-B showing distributional differences. The behavioral interpretation (C30) is speculative but reasonably supported by citation. The inferred decrease in post-symptom infectiousness could also reflect isolation policies in the data collection period, which the authors acknowledge as a limitation (C63-C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The 65% presymptomatic transmission estimate from the best-fitting model is higher than most previous generation time/TOST studies, though the wider literature shows significant variation including estimates exceeding 65%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 appropriately contextualize the findings within existing literature through citations. The acknowledgment of variation in the literature (C36) demonstrates appropriate scientific caution. However, differences in modeling assumptions across studies make direct comparisons challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Under the variable infectiousness model, isolating symptomatic hosts one day after symptom onset prevents only 23% (17-31%) of transmissions, compared to 38% (32-44%) under the independent transmission and symptoms model. This limited impact highlights the need for contact tracing in addition to isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by calculations from the fitted models shown in Figure 4A. The inference about contact tracing necessity (C39) follows logically from the high presymptomatic transmission proportion. However, the analysis assumes perfect isolation effectiveness, which is unrealistic and acknowledged in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "With a 2-day contact elicitation window (as used in UK/USA), the variable infectiousness model predicts 69% (57-81%) of presymptomatic infectious contacts are identified, versus 49% (44-53%) for the independent model. Extending to 4 days identifies 93% (88-97%), though this requires tracing more uninfected contacts and contacts from periods of lower infectiousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by model calculations in Figure 4B and the TOST distribution. The practical trade-off between window length and tracing burden (C44) is a reasonable inference. Citation to UK/USA policies (C41) provides real-world context. However, the analysis assumes perfect contact identification within the window.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "For contacts traced and isolated with a 4-day total delay from infection, 71% of onward transmissions are prevented under the variable infectiousness model. For contacts occurring 4 days before index symptom onset (6-day total delay), only 41% of onward transmissions are prevented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by calculations shown in Figure 4C. The analysis appropriately considers combined delays across the contact tracing process. However, the assumption of perfect isolation effectiveness limits practical applicability, though sensitivity analyses with lower effectiveness are provided in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70"
+    ],
+    "result": "High infectiousness immediately prior to symptom onset highlights the importance of continued contact tracing until effective vaccines are widely distributed, even with short contact elicitation windows. The use and refinement of contact tracing programs worldwide is of clear public health importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C69-C70 represent policy inferences drawn from the modeling results. These are logically supported by the findings of high presymptomatic transmission and contact tracing effectiveness calculations. However, these are normative recommendations that depend on additional considerations beyond the model (e.g., feasibility, cost-effectiveness, vaccine availability).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Most previous SARS-CoV-2 generation time estimates assumed infectiousness is independent of symptom status, an assumption that is unjustified and can lead to poor data fit. Some studies assumed infectiousness depends only on time since symptom onset, which is equivalent to assuming identical serial interval and generation time distributions when serial intervals are always positive (not the case for COVID-19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C49-C52 accurately characterize limitations of prior approaches through appropriate citations. The theoretical relationship between modeling assumptions and distributional equivalence (C51) is correctly stated with supporting citations. The observation about negative serial intervals in COVID-19 (C52) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The mechanistic method is useful for parameterizing compartmental epidemic models since derived time periods correspond naturally to compartments. The E/P/I structure assumes infectiousness changes at symptom onset, though behavioral changes may not occur immediately, particularly with mild symptoms. A delay could be incorporated by adding an additional infection stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 discuss advantages and limitations of the model structure. The utility for compartmental models (C54) is a reasonable inference supported by citation. The acknowledgment that behavioral changes may not be instantaneous (C56) demonstrates appropriate scientific caution. The suggestion for model extension (C57) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study has several limitations: data were collected early in the pandemic (January-March 2020) when case numbers were increasing in some locations, potentially over-representing shorter serial intervals. Isolation policies already in place were not explicitly accounted for, potentially lowering estimated isolation effectiveness. The impact of novel variants on generation time is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 transparently acknowledge important limitations. The potential for bias from epidemic growth phase (C59) is appropriately cited. The acknowledgment of unaccounted isolation policies (C63-C64) is important for interpreting effectiveness estimates. The uncertainty about variant impacts (C65-C66) is appropriately cautious. These limitations are significant and may affect generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The proportion of SARS-CoV-2 transmissions from non-symptomatic infectors remains uncertain. Statistical models using infector-infectee pair data can assess presymptomatic versus symptomatic transmission contributions by inferring distributions of generation time, TOST, and serial interval, which are important for evaluating public health measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide appropriate background context supported by citations. The definitions of epidemiological time intervals (C9-C12) are standard and correctly stated. The importance for public health evaluation (C13) is well-established in cited literature. This background appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C86",
+      "C87"
+    ],
+    "result": "The independent transmission and symptoms model assumes infectiousness at a given time since infection is independent of incubation period. Three parameters were estimated for the variable infectiousness and Ferretti models, while two parameters were estimated for the constant infectiousness and independent transmission and symptoms models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C86-C87 accurately describe model structures and parameter counts. These are straightforward methodological details that are clearly stated. The difference in parameter counts is appropriately accounted for in AIC comparisons.",
+    "result_type": "MINOR"
+  }
+]

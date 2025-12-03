@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study measured glucosinolate variation in seeds from 797 European Arabidopsis thaliana accessions, detecting 23 different glucosinolates with a median heritability of 83%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, C103-C108 collectively describe the experimental design and measurement outcomes. The sample size (C1, C103, C106), number of detected compounds (C9), heritability estimates (C10), and methodological details (C104-C108) are clearly stated and internally consistent, providing a solid foundation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Principal component analysis captured only 33% of total glucosinolate variation, revealing that the previously reported simple SW-NE gradient in Central Europe reiterates within the Iberian Peninsula rather than being a single continental gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe PCA results with specific variance explained and chemical interpretations. Claims C15-C17 describe geographic patterns that contradict prior work (C14), with the low variance captured by PCA (C11) supporting the conclusion that glucosinolate variation is more complex than linear gradients suggest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C100",
+      "C101"
+    ],
+    "result": "Genome-wide association analysis identified only two major loci (GS-Elong and GS-AOP) but failed to detect 80% of known causal loci including GS-OH, despite using 797 accessions with dense SNP coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe GWA results identifying two loci while missing others. Claims C100-C101 explicitly quantify this limitation (80% false negative rate). The authors acknowledge potential causes (unequal sampling, allelic heterogeneity) and provide methodological details (C110), making this a well-documented negative result that highlights GWA limitations in complex adaptive systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C92",
+      "C93"
+    ],
+    "result": "Chemotype classification revealed distinct geographic patterns: Central/Northern Europe shows high chemotype diversity with overlapping distributions, while Southern Europe (Iberian Peninsula, Italy, Balkans) shows low diversity with sharp geographic partitioning between Allyl and 2-OH-3-Butenyl chemotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe specific chemotype frequencies and geographic distributions based on phenotypic classification. Claims C92-C93 summarize these patterns. The sharp geographic partitioning in the south (C24) contrasts with high diversity in the north (C23), supported by visual evidence in figures and representing a key observational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C63"
+    ],
+    "result": "Environmental conditions have different relationships to chemotypes that shift by geographic area, with minimum temperature of coldest month and precipitation of wettest month showing significant interactions with geography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe results from linear modeling showing environment-chemotype relationships vary geographically, with specific parameters (C27) showing significant interactions. Claim C63 summarizes this finding. The statistical evidence (Table 1) supports these claims, though the authors acknowledge that abiotic factors may be proxies for biotic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Phylogenetic analysis of MAM3 sequences revealed eight clades with distinct C3/C4 phenotypes, including a chimeric MAM gene in clade 6. In Iberia, nearly all major European GS-Elong haplotypes are present but show sharp C3/C4 chemotype partitioning, suggesting selective pressure rather than solely neutral demographic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C32 describe phylogenetic structure and specific haplotypes supported by sequencing data. Claims C33-C35 describe geographic patterns and infer selection. While the haplotype mixing (C33) and sharp chemotype partitioning (C34) are observational, the inference of selective pressure (C35) is speculative and acknowledged as such. The contrast between genetic diversity and phenotypic partitioning is intriguing but requires additional evidence to definitively support the selection hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "At the GS-AOP locus, alkenyl-expressing accessions form a single cluster while hydroxyalkyl accessions cluster into two independent groups (one with promoter inversion, one with AOP2 deletion), representing at least two independent alkenyl-to-hydroxyalkyl transitions. Multiple independent loss-of-function mutations create MSO chemotypes from both alkenyl and hydroxyalkyl backgrounds, suggesting convergent evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe phylogenetic structure and identify two independent transitions to hydroxyalkyl chemotypes with distinct structural mechanisms (C39-C40). Claims C43-C46 document multiple independent LOF events creating MSO chemotypes. The structural evidence (sequencing, prior BAC data) and phylogenetic patterns strongly support convergent evolution at this locus, with the same phenotype arising from different genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The alkenyl GS-AOP haplotype is distributed across Europe, while hydroxyalkyl haplotypes show restricted geographic distributions. Independent loss-of-function null haplotypes are all contiguous in Central/Northern Europe, suggesting they may be beneficial or neutral in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe geographic distributions of specific haplotypes with clear spatial patterns. Claim C51 infers potential fitness effects from the contiguous distribution of independent LOF alleles. While the geographic patterns are well-documented, the fitness inference is speculative but reasonable given the repeated independent origins in the same region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "Multiple independent loss-of-function events were identified in GS-OH (11 accessions with at least 4 distinct mutations), all occurring in genetic backgrounds where the gene is functionally cryptic due to epistasis. LOF alleles are significantly more frequent in non-four-carbon-alkenyl accessions, suggesting selection against 3-Butenyl glucosinolate and ongoing pseudogenization when GS-OH is epistatically hidden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 document multiple independent LOF events with specific molecular lesions. Claims C58-C60 show these occur in epistatically masked backgrounds with statistical enrichment. Claim C62 infers pseudogenization. The pattern is compelling: multiple independent mutations in the same functional context (epistatic masking) with statistical enrichment supports the pseudogenization hypothesis, though direct fitness measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "All three major glucosinolate loci display extensive allelic heterogeneity shaped by parallel and convergent evolution. GS-OH shows clear parallel evolution (multiple LOF alleles from single functional haplotype), while GS-AOP shows convergent evolution (MSO chemotype from independent LOF alleles in different genes, AOP2 and AOP3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 synthesize genetic findings across loci. The distinction between parallel (same starting point, C70) and convergent (different starting points, C71-C72) evolution is well-supported by the phylogenetic and structural data. The same phenotype (MSO) arising from mutations in two different genes (AOP2 vs AOP3) in different haplotypic backgrounds (C72) is strong evidence for convergent evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Three-way epistasis shapes allelic heterogeneity and evolutionary potential at glucosinolate loci. GS-OH loss-of-function variants arise in lineages where GS-AOP and GS-Elong epistatically block substrate formation. Within-locus epistasis at GS-Elong (functional MAM1 dominates over MAM2) constrains evolutionary trajectories, with C3 lineages unable to recreate C4 chemotypes after MAM1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 describe epistatic conditioning of GS-OH evolution, supported by the observation that LOF mutations only occur in specific genetic backgrounds (C75). Claims C77-C82 describe within- and between-locus epistasis affecting evolutionary potential. The epistatic relationships are well-documented from prior work and this study's genetic data, though the evolutionary constraint inference (C81) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C64",
+      "C65",
+      "C99"
+    ],
+    "result": "Chemotypic variation across Europe is created by a blend of genetics, geography, environment, and demography that differ at individual loci, requiring simultaneous analysis of genotype and phenotype to fully interpret these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C64, C99 are summary statements of the study's main conclusion. Claim C65 is a methodological conclusion. These are well-supported by the collective evidence from geographic patterns (C23-C25), environmental associations (C26-C27), genetic architecture (C69-C73), and epistasis (C74-C82). The study demonstrates that different loci have different geographic distributions and evolutionary patterns, supporting the conclusion of complex, locus-specific processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C86"
+    ],
+    "result": "Causal loci in specialized metabolism contain frequent independently generated alleles with patterns suggesting potential within-species convergence, with glucosinolate variation being recreated repeatedly within and between Arabidopsis species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is a primary finding from the abstract. Claim C86 extends this to between-species patterns. The evidence for within-species convergence is strong (C41-C42, C46, C72), with multiple independent origins of similar phenotypes. The between-species inference (C86) is more speculative but supported by comparisons with A. lyrata and Brassica (C83-C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The apparent chemotypic divergence between Iberia/Mediterranean Basin and Central Europe is driven primarily by fixation of the Alkenyl allele at GS-AOP in the south, while GS-Elong shows high diversity throughout. Central European chemotypic variation represents a blend of southern-origin GS-Elong alleles and locally-arising GS-AOP alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe locus-specific geographic patterns explaining the apparent contradiction between high genomic diversity (C94) and low chemotypic diversity (C92) in the south. Claim C98 synthesizes the origin of northern diversity. This is well-supported by the haplotype distribution data and represents an important insight about how single-locus effects can dominate phenotypic patterns despite genome-wide diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "In complex adaptive systems, the optimal solution to identifying causal variants is likely a blend of structured mapping populations and then translating the causal genes to genome-wide association results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is a methodological recommendation based on the GWA failure (C100-C101). While the recommendation is reasonable given the study's experience, it is speculative and not directly tested. The claim represents a conclusion about future research strategy rather than a finding from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "MAM1 and MAM2 are likely derived via tandem duplication with ensuing divergence since separation from A. lyrata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by phylogenetic analysis (Figure 5\u2014figure supplement 3) and prior research citations. The phylogenetic evidence shows MAM1 and MAM2 as sister genes specific to A. thaliana, supporting the tandem duplication hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Statistical and phylogenetic methods were appropriately applied, including heritability estimation, GWAS with EMMAX, multiple sequence alignment with three algorithms, neighbor-joining trees, and PacBio-based genome assembly with Canu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 describe methodological approaches. The methods are standard and appropriate for the analyses performed. Software versions and parameters are specified (C110, C114), supporting reproducibility. These are methodological details rather than findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C14",
+      "C52",
+      "C61",
+      "C66",
+      "C67",
+      "C68",
+      "C83",
+      "C84",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "Background knowledge and prior work establish that plants produce diverse metabolites for defense, that metabolic variation results from structural and regulatory variation in enzymes, that these variants influence fitness, and that different defense loci have diverse genetic architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C14, C52, C61, C66-C68, C83-C84, C87, C89-C91, C94 are statements of established knowledge or prior findings, all supported by appropriate citations. These provide context for the current work but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The underlying genetic basis of glucosinolate variation between Arabidopsis species represents independent events at the AOP and MAM loci, showing that the variation did not go through the speciation boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is an inference about evolutionary history based on comparing variation patterns across species. While the observation of independent events is supported by phylogenetic data, the definitive conclusion that variation did not cross speciation boundaries is difficult to prove without more extensive phylogenetic sampling and would benefit from additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The glucosinolate loci are characterized by a blend of structural and SNP-based variation with numerous alleles that appear young, contrasting with R-gene loci characterized by old/stable biallelic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 contrasts GSL loci with R-gene loci (C87). The characterization of GSL loci as having multiple young alleles is supported by the phylogenetic and structural data showing recent independent origins. However, formal molecular clock analysis would strengthen the 'young' designation.",
+    "result_type": "MINOR"
+  }
+]

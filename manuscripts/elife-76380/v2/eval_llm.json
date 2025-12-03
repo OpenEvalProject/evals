@@ -1,0 +1,101 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript reviews established knowledge about bacterial phenotypic states (planktonic vs. biofilm), motility mechanisms, and quorum sensing control of biofilm formation. These claims establish the biological context and prior knowledge that motivates the modeling work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are all well-supported by extensive citations to prior literature. These are background claims establishing known biological phenomena rather than novel findings from this work. The citations appropriately reference historical observations (van Leeuwenhoek) and contemporary research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C26",
+      "C70",
+      "C71",
+      "C79",
+      "C91"
+    ],
+    "result": "The authors develop a mathematical model incorporating bacterial motility, chemotaxis, nutrient consumption, autoinducer production, and quorum sensing-controlled biofilm formation. The model includes specific assumptions about irreversibility of the planktonic-to-biofilm transition, loss of motility in biofilms, and jammed growth expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C25, C26, C70, C71, C79, and C91 describe the model formulation with appropriate citations to prior work for established modeling approaches. The assumptions are clearly stated and justified. The model provides a minimal but generalizable framework as claimed in C79.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Representative numerical simulations demonstrate that planktonic cells consume nutrients to establish gradients, disperse via chemotaxis forming coherent fronts, and produce autoinducer that accumulates into plumes. This leads to partial biofilm formation (f=21%) in the example case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 describe results from Figure 1C simulations that are clearly shown in the figure and consistent with prior work (C30 cites Bhattacharjee et al., 2021). The simulation demonstrates the model's ability to capture the competition between dispersal and biofilm formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C61"
+    ],
+    "result": "Through 10,983 numerical simulations exploring physiological parameter ranges, the authors demonstrate that two dimensionless parameters (D\u0303 and J\u0303) encompass all factors determining biofilm formation within the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes the computational experiments performed, and C61 concludes that D\u0303 and J\u0303 capture the essential factors. This is supported by Figure 4 showing that diverse parameter combinations with the same (D\u0303, J\u0303) yield the same biofilm fraction f, demonstrating the universality of this parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The numerical methods are validated through convergence testing and robustness checks. The Adams-Bashforth-Moulton predictor-corrector method with specified discretization is shown to be sufficiently resolved, and results are robust to variations in initial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 describe the numerical implementation and validation. C83 and C84 are supported by Figure 4\u2014figure supplement 2 showing convergence with finer discretization. C85 and C86 are supported by Figure 1\u2014figure supplement 2 showing robustness to initial condition shape. These are appropriate validation checks for computational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C67"
+    ],
+    "result": "The authors claim their biophysical model provides a key step toward quantitatively predicting and controlling biofilm formation, with extensions potentially enabling a priori prediction of biofilm formation given bacterial strain and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 asserts significance while C67 discusses potential applications. While the model demonstrates predictive capability within its framework (as shown by the universal threshold), the claims about practical prediction and control are aspirational. The model requires experimental validation and measurement of all input parameters, which is not demonstrated. These are reasonable future directions but not yet established capabilities.",
+    "result_type": "MAJOR"
+  }
+]

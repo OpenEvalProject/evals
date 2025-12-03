@@ -1,0 +1,2211 @@
+{
+  "submission": {
+    "id": "630e7b4e-e246-40c9-b68b-98bfa80ac456",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:21:05.868434Z",
+    "updated_at": "2025-12-03T18:21:05.868434Z"
+  },
+  "content": [
+    {
+      "id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "submission_id": "630e7b4e-e246-40c9-b68b-98bfa80ac456",
+      "content_type": "manuscript",
+      "content_text": "# Histological E-data Registration in rodent Brain Spaces\n\n## Authors\n\n- Jingyi Guo Fuglstad<sup>1</sup> \u2020\n- Pearl Saldanha<sup>1</sup> ([ORCID: 0000-0002-6749-8240](https://orcid.org/0000-0002-6749-8240))\n- Jacopo Paglia<sup>1</sup>\n- Jonathan R Whitlock<sup>1</sup> ([ORCID: 0000-0003-2642-8737](https://orcid.org/0000-0003-2642-8737)) \u2020\n\n### Affiliations\n\n1. Kavli Institute for Systems Neuroscience, Norwegian University of Science and Technology (NTNU) Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecording technologies for rodents have seen huge advances in the last decade, allowing users to sample thousands of neurons simultaneously from multiple brain regions. This has prompted the need for digital tool kits to aid in curating anatomical data, however, existing tools either provide limited functionalities or require users to be proficient in coding to use them. To address this we created HERBS (Histological E-data Registration in rodent Brain Spaces), a comprehensive new tool for rodent users that offers a broad range of functionalities through a user-friendly graphical user interface. Prior to experiments, HERBS can be used to plan coordinates for implanting electrodes, targeting viral injections or tracers. After experiments, users can register recording electrode locations (e.g. Neuropixels and tetrodes), viral expression, or other anatomical features, and visualize the results in 2D or 3D. Additionally, HERBS can delineate labeling from multiple injections across tissue sections and obtain individual cell counts.Regional delineations in HERBS are based either on annotated 3D volumes from the Waxholm Space Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas, though HERBS can work with compatible volume atlases from any species users wish to install. HERBS allows users to scroll through the digital brain atlases and provides custom-angle slice cuts through the volumes, and supports free-transformation of tissue sections to atlas slices. Furthermore, HERBS allows users to reconstruct a 3D brain mesh with tissue from individual animals. HERBS is a multi-platform open-source Python package that is available on PyPI and GitHub, and is compatible with Windows, macOS, and Linux operating systems.\n\n## Introduction\n\nUnderstanding the structure, function, or physiology of neural circuits requires the ability to consistently target brain regions prior to experiments and, afterward, to maintain an accessible, objective record of the areas studied (Simmons and Swanson, 2009). Traditionally, post hoc anatomical record-keeping has relied on histological approaches where users delineate anatomical features in tissue sections, then register them manually with a reference atlas. While these and other approaches are critical for grounding experiments anatomically, doing them has become increasingly challenging with the emergence of large-scale recordings spanning multiple brain regions.\n\nSeveral software tools have been developed in recent years which use computer vision technology to accelerate and systematize the mapping of experimental results in various model species (e.g., Shamash et al., 2018; Song et al., 2020; Claudi et al., 2021; Andy, 2022). When combined with the appropriate reference atlases (e.g., Franklin and Paxinos, 2008; Wang et al., 2020; Claudi et al., 2020), these tool kits give users the ability to reconstruct electrode tracks, viral expression, anatomical projections (Oh et al., 2014; Zingg et al., 2014; Winnubst et al., 2019), cell types (F\u00fcrth et al., 2018), or to detect cells (Tyson et al., 2021), gene expression patterns, or functional nodes (Lein et al., 2007; Ortiz et al., 2020) in the brain.\n\nDifferent types of tool kits have been developed for different brain preparations, including volumetric whole-brain data or sliced tissue sections, with each approach bringing its own strengths and limitations. Whole-brain volume analyses have the advantage of readily conveying the 3D spatial relationships between neuronal pathways and neighboring structures. For instance, ITK-SNAP (Yushkevich et al., 2006) is a popular biomedical software used for automatic image segmentation and delineation of regions of interest in human brain imaging data. For animal models, there is Brainrender (Claudi et al., 2021), which displays any of several atlases incorporated from the BrainGlobe Atlas API in 3D. It provides fast visualization for user-defined data sets, such as reconstructed electrode tracks, viral expression, or anatomical projections. These can be obtained when Brainrender is combined with sibling software, Brainreg (Tyson et al., 2020), which maps whole-brain data sets to atlases using supervised automatic image registration. While whole-brain data sets provide a holistic quantitative dimension to analyses, generating them is time and resource intensive, requiring either a light sheet scanning microscope or magnetic resonance imaging.\n\nBecause of the comparatively lower cost and simplicity, anatomical mapping using histological tissue sectioning still dominates in most labs (e.g., Clancy et al., 2019; Zutshi et al., 2022; Lagartos-Donate et al., 2022; Gardner et al., 2022). This, however, also has its own challenges. One common issue lies in matching a given tissue slice correctly to a reference atlas template. Previous studies have sought to solve this problem using multiple software platforms, like ImageJ (Schneider et al., 2012), Adobe Illustrator (Adobe Inc, 2023b), or Adobe Photoshop (Adobe Inc, 2023a), which can be time consuming for manual curation and is not systematic. Software packages have been developed to address this issue, including the electrode reconstruction tool kit, SHARP-TRACK (Shamash et al., 2018). This software uses a global warping transformation method to fit histological images back to a mouse atlas. Afterward, it provides a read-out of the estimated number of channels in each brain region as well as 3D visualizations. As currently configured, the tool kit works only with mouse atlases and is MATLAB-based, which requires a paid license and some programming knowledge.\n\nDespite the number of tool kits available, there currently is no single software that combines functionalities spanning the gamut of pre-surgical planning and post-experiment registration without requiring programming. To help fill this methodological gap, we developed HERBS, an open-source Python package which brings together a range of functionalities in a user-friendly graphical front-end interface. HERBS can generate pre-surgical coordinates, reconstruct electrode tracks after recordings, mark viral expression volumes, or single cells; delineate regional boundaries in brain slices, and view post hoc anatomical reconstructions in 2D or 3D. There is no upper limit for the number of electrodes that it can reconstruct, so it can be used with microelectrode arrays or multi-tetrode bundles. To serve both rat and mouse users, HERBS has the in-built function to download and run the Waxholm Space (WHS) Atlas of the Sprague Dawley Rat Brain (Papp et al., 2014) or the Allen Mouse Brain Atlas (Wang et al., 2020). The software also contains an atlas explorer that can scroll freely through either rat or mouse atlases to display coronal, sagittal, and horizontal planar surfaces in 2D, as well as the corresponding mesh or volume of the atlas in 3D.\n\nFor accurate and robust image registration, HERBS provides rigid registration as well as interactive, non-rigid registration using triangulation-based piece-wise affine transformation. It is compatible with most tissue staining methods and image formats, as long as the regions of interest are visible and can be delineated by the user. For users who wish to augment or add functionalities of their own in Python, we provide a standalone Python pipeline tool kit, TRACER (Toolkit for Reconstructing Anatomical CoorindatEs in Rats), in parallel with HERBS (see Materials and methods for more information). To maximize general accessibility, HERBS requires minimal programming knowledge and is compatible with Windows, macOS, and Linux systems. It is intended as an open community resource available for further expansion and refinement. We hope it offers a valuable addition to the anatomical methods available for the neuroscience community.\n\n## Results\n\n### General outline\n\nHERBS was designed as an intuitive, generic software tool to provide rodent users with four core functionalities, shown in Figure 1A. These include (a) generating anatomical target coordinates when planning a surgery; (b) processing and editing raw histological data; (c) registering and reconstructing objects implanted in the brain; and (d) visualizing annotated brain volumes in 3D. Users can carry out each functionality by following a series of steps described in the HERBS Cookbook using a keyboard and mouse. The layout of the user interface for HERBS, including color-coded panels used to execute its functionalities, are shown in Figure 1B.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig1-v2.jpg)\n\n**Figure 1.:** (A) HERBS can be used to (a) plan electrode insertions or viral injections before surgery, (b) process and edit histological images, (c) register objects such as probes, virus, cells, and slice boundaries from histological images, and (d) visualize the brain in 3D with defined functions. (B) The user interface of HERBS consists of the Menu Bar (outlined in blue) for navigating through the functions, the Tool Bar (outlined in red) from which users select actions to perform in the Plot Window (magenta), such as registering or reconstruct objects. The Side Bar (geen) provides tools for visually editing objects or layers. The Status Bar (in purple at bottom) shows the brain regions and coordinates displayed in the Plot Window. The WHS or Allen Mouse Brain atlases can be downloaded and loaded directly through HERBS from the Menu Bar with a click of a button.\n\nWhen installing HERBS, users can choose whether to use the WHS Atlas of the Sprague Dawley Rat Brain (Papp et al., 2014) or the Allen Mouse Brain Atlas (Wang et al., 2020) as the anatomical reference (see Cookbook, chapter 6.1). Either atlas can be downloaded through HERBS, as they are both integrated as parts of the software package. We point users wishing to employ other volumetric atlases, including for other species, to section 6.1.3 of the HERBS CookBook for links to illustrated instructions on uploading and installing additional atlases.\n\n### Generating pre-surgical coordinates\n\nOne of the essential steps in planning a surgery is defining the stereotaxic coordinates to reach specific brain areas of interest. HERBS facilitates this process by allowing users to determine the insertion parameters required to target one or several regions along a linear trajectory. This is done by simply clicking the start point and end point of the desired path on a 2D brain slice image, and there is no limit to the number of trajectories (e.g. recording probes) that can be planned. HERBS then automatically computes the insertion angle and length needed to reach the target brain region, as well as the location of the trajectory relative to Bregma defined in the atlas. The user can print and bring the read-out to the surgery room or save for record keeping. The planning functionality is equally applicable for targeting imaging lenses, injection pipettes for tracer or virus injections, or making focal lesions.\n\nThe working steps for generating pre-surgical coordinates are illustrated in Figure 2, in which we plan the insertion of a multi-shank Neuropixels 2.0 probe through retrosplenial cortex, visual cortex, and the intermediate hippocampus in the right hemisphere of a rat. The step-by-step protocol is described in the HERBS Cookbook, Chapter 6.4. Neuropixels users should note that estimates of probe length include the 175-\u00b5m channel-less shank tip, and that HERBS eliminates it when estimating the number of recording channels in the brain. In the first step, the user scrolls to the brain slice of interest (Figure 2A). This is aided by the color coding of each brain area in the atlas, which provides visual landmarks for defining boundaries between regions. Next, the probe trajectory is defined in the region(s) of interest with clicks of the mouse (Figure 2B). Once completed, the probe trajectory is saved as a layer in the Side Bar, after which it is saved to a 3D representation showing the trajectory of the probe in a WHS brain volume (Figure 2C). After the probe is merged on the Side Bar, a read-out is generated for a 4-shank probe (Figure 2D) that includes the location and regions traversed. A more detailed read-out table for each shank of the 4-shank probe can also be made (Figure 2E) which includes inclination, length of probe inserted, number of recording channels per region, and entry and exit coordinates of the probe. Either or both read-outs can be saved per the user\u2019s desire. As there is no limit to the number of probes that can be planned for insertion, the user simply repeats the steps above for each probe. Users can also apply this functionality to target multiple regions using multi-probe implants with user-defined spacing and geometries. Users can define the recording site layout on individual probes as well (see section 6.6 of the CookBook for instructions and links to illustrated tutorials).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig2-v2.jpg)\n\n**Figure 2.:** (A) Once the plane of choice is set (coronal in this example), 2D atlas brain sections with regional delineations appear and the user scrolls to the slice with the region(s) they wish to target. (B) The user defines the trajectory of the probe by clicking the desired start and end-points (the insertion angle here is 40.8\u00b0 lateral tilt at Bremga \u20136.8 mm). (C) A linear probe trajectory is projected into the Waxholm Space in 3D. (D) A read-out table for all four probes shows the regions the probe has traversed and the number of channels in each region. (E) A detailed read-out for a single probe provides the entry position, probe angle, and insertion length to reach the target regions, as well as an estimation of the number of recording channels in each region in the experiments.\n\n### Reconstructing electrode tracks\n\nAnother core functionality of HERBS is reconstructing electrode paths after surgeries or in vivo recordings, and there is no upper limit on the number of electrodes that can be reconstructed. Prior to reconstructing probe trajectories, histological images can be pre-processed before they are overlaid on their corresponding atlas images. Pre-processing can include rotating the section to an optimal plane, changing brightness, gamma curves, and so forth, and can be done using the image view controller in the Side Bar, or the Edit option in the Menu Bar, as indicated in the interface panel in Figure 1B (see HERBS Cookbook, chapter 6.6).\n\nAfter the image has been loaded and adjusted, the user can begin the steps of the reconstruction pipeline shown in Figure 3, which uses an example section with a track from a Dil-stained Neuropixels 1.0 probe (red) progressing laterally from visual to auditory cortex (an example image for probe reconstruction is provided in Figure 3\u2014figure supplement 1). The first step is choosing the plane of sectioning (coronal, sagittal, and horizontal) and scrolling to the corresponding atlas brain slice. Once the corresponding slice is located, the user defines anchor points to warp the histological section onto the atlas section (Figure 3A) (see Cookbook, chapters 6.4 and 6.5). Once the anchor points are defined and the matching step is complete, the user then clicks a minimum of 4 points along the probe track in the tissue, after which a 3D rendering is generated showing how the probe is situated in the volume of the brain (Figure 3B) (Cookbook, chapter 6.6.1). A detailed read-out table showing the inclination and length of the probe, regions traversed and number of recording channels per region are generated automatically (Figure 3C). In cases where histological sections are cut out of plane, HERBS allows the user to tilt the atlas brain up to 30\u00b0 to facilitate template matching. We also note that electrode track reconstructions can be performed for any type of electrodes, tetrodes, or recording arrays, as well as with different sizes of sections. HERBS facilitates this by allowing users to build user-defined geometry and channel layouts of linear silicon probes (see the subfolder \"HERBS/image/probe_related\" on the HERBS GitHub page, linked in \"Data availability, software, and citation policy\" below).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig3-v2.jpg)\n\n**Figure 3.:** (A) The initial steps include scrolling to the atlas brain slice (left) that best matches the user\u2019s histological section (middle). User-defined anchor points are then used to stretch and conform the histological section onto the atlas section; once they are merged a new image is generated with the histology warped to overlay the atlas slice (right panel). (B) The user then generates an estimate of probe placement and length by clicking at least four points spanning from the entry of the probe in the brain to the distal tip (left). The 3D reconstructed placement of the probe is shown in the sagittal plane (middle panel) and viewed from the top (right panel) in the WHS volume. (C) A read-out from the merged probe shows details of the probe insertion, the coordinates, as well as the brain regions the probe traversed in different colors. WHS, Waxholm Space.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig3-figsupp1-v2.jpg)\n\n### Reconstruction of viral expression\n\nBeyond electrode reconstructions, HERBS can be used for anatomical applications including visualization of virus expression, tracer labeling, or marking lesions or neurodegeneration. Here, we provide a brief overview of the procedure for reconstructing a spatial volume of adenovirus (AAV) expression (see Cookbook, chapter 6.7 for this and related protocols). The procedure for reconstructing viral expresion volumes is similar to that for probe reconstruction, but the regions defined in each slice are two-dimensional, and the volume to delineate will likely extend over multiple slices (Figure 4). As with reconstructing a probe track, the first step in reconstructing a viral volume is matching the starting histology section with the corresponding slice in the atlas brain and overlaying the two. The initial slice from an example viral reconstruction is shown in Figure 4A, and the same image is provided for user practice in Figure 4\u2014figure supplement 1. The user then defines the perimeter of virus expression by selecting the magic wand tool from the Tool Bar and clicking on a fluorescent region of tissue in the histological section (Figure 4B). Note that the granularity of the selected region will depend on the magic wand tolerance set by the user. These steps are repeated for each slice included in the visualization. Finally, the marked fluorescent regions from several 2D sections are combined and projected into a 3D brain volume (Figure 4C), and the list of brain regions in contact with the virus are shown in the read-out with color-coded labels (Figure 4D). The same functions and steps are used for similar tasks such as labeling single cells, marking fibers of passage, or visualizing lesions. Note also that the resolution of the 3D reconstruction will depend on how many sections the user includes in the reconstruction; the example in Figure 4C consisted of 11 tissue slices. It is also possible to load cell point data generated from other programs, such as CellFinder (Tyson et al., 2021), and to visualize those data in 3D brain volumes. Instructions for importing external cell point data can be found in section 6.8.3 of the HERBS Cookbook.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig4-v2.jpg)\n\n**Figure 4.:** (A) Shows the spatial extent of AAV-mediated mCherry expression in a coronal section from the frontal cortex of an adult rat. (B) The region of viral expression is defined by clicking the fluorescent region of tissue with the magic wand tool; areal boundaries are included at this stage. (C) A volumetric rendering of the brain shows the extent of viral expression in cingulate cortex and surrounding areas, with the volume of virus spread (based on the 11 slices used here) expressed in voxels, and the proportion of each region expressing the virus show as a percentage. (D) A read-out of the regions in which the virus was expressed.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/83496/elife-83496-fig4-figsupp1-v2.jpg)\n\n## Discussion\n\nWith HERBS, we seek to furnish rodent users with a user-friendly, click-button GUI that simplifies the process of curating histological data. The functionalities include planning coordinates ahead of surgeries as well as registering and visualizing anatomical data in 2D or 3D after experiments are completed. The GUI can be used to delineate a range of features such as recording locations, lesions or viral expression and is compatible with potentially any histological staining method. With HERBS, the user marks regions of interest on tissue images directly and each slice is mapped to a template, which should greatly reduce subjective judgement and variability across samples and brains. For rat users, HERBS references the newest version (v4) of the WHS rat brain atlas (Papp et al., 2014), which contains over 200 labeled cortical and sub-cortical regions at sub-millimeter scales, and for mouse users it references the widely-adopted Allen Mouse Brain Atlas (Wang et al., 2020).\n\n### Novelty and utility of HERBS in relation to other tool kits\n\nAlthough several software packages with similar functionalities have been released in recent years (see Supplementary file 1), there are a number of features that distinguish HERBS from them. Foremost is its simplicity, since it works via a visually intuitive, click-button interface designed to minimize user effort, and it requires minimal coding and no added software. It is also unique in that it brings together both pre- and post-surgical registration and mapping functionalities in one program. The fact that it specifically includes rats also stands out among the many high-quality rendering and digital atlas resources for mice, such as Brain Mesh (Yaoyao-Hao, 2020), SHARPTRACK (Shamash et al., 2018), cocoframer (Lein et al., 2007), and others (e.g. Jin et al., 2019, Chon et al., 2019).\n\nAnother recently available anatomical tool kit is Brainrender (Claudi et al., 2021), which produces visually appealing anatomical renderings from a variety of source atlases through the BrainAtlasglobe API, but differs from HERBS in important ways. The most essential difference is that Brainrender was designed as a visualization tool. As such, it renders anatomical data in 3D volumes, but it cannot register anatomical data in a reference atlas on its own. Registration must be done beforehand with separate software such as Brainreg (Tyson et al., 2022) or CellFinder (Tyson et al., 2021). HERBS, in contrast, was designed primarily as a registration tool, which comes configured to work with primary source atlases for rats or mice. The HERBS GUI can both download and load these reference atlases, whereas Brainrender relies on separate software and plugins which require programming knowledge in Python. The output from HERBS could be used as input for Brainrender if formatted appropriately, though HERBS offers some of its own visualization functionalities for simplicity. Finally, Brainreg and Brainrender use whole-brain data from light sheet imaging, whereas HERBS works with commonly used histological tissue sectioning methods.\n\nThe Allen Institute recently released the Neuropixels Trajectory Explorer (Andy, 2022.), a MATLAB-based platform which can be used to plan coordinates for electrophysiological probes prior to surgery in mice and rats. Currently, the pre-surgical registration step is the only functionality available, as it does not yet have the option to load histology for post hoc processing of probe tracks or viral expression. Unlike Brainrender and HERBS, it runs in MATLAB, which typically requires a paid software license. Thus, the main features that distinguish HERBS from other tools are that it (i) offers a combination of functionalities found separately in Brainrender and Neuropixels trajectory explorer, (ii) all functionalities in HERBS are accessible with button clicks and keystrokes. It includes reconstructing probe tracks of neuropixel 1.0 and 2.0, tetrodes and linear silicon probes (with user defined geometry and channel layout); along with registering virus expressed with a read-out of the spread in brain regions in volume and percentage, and (iii) it can be used immediately with the WHS Rat Brain Atlas or the Allen Mouse Brain Atlas without requiring additional plugins. Beyond these features, HERBS, similar to Brainreg (Tyson et al., 2022), can incorporate other atlases given the correctly formatted files, such as the Paxinos and Watson atlases for rats or mice, provided the user has the appropriate licensing permissions.\n\n### Sources of error and future improvements\n\nWhile we hope that HERBS proves useful in its current form, there are areas where it can be improved and expanded in the future. For example, the template matching step can be time consuming if data sets contain a large number of histological slices, as with virus expression or tracer labeling. We aim to streamline these processes by implementing machine vision-based algorithms for pre-processing user images and matching them to template slices automatically in future versions of HERBS. Furthermore, although we designed HERBS to minimize the need for programming, installing it could be challenging for users who have not installed Python before.\n\nIn developing HERBS we also encountered sources of error which appear general to working with anatomical tissue that has been preserved with fixatives. For instance, we found that probe length estimates can be less consistent when larger numbers of histological slices are used for reconstructions. We suspect these errors could arise from averaging across clicked points defining the probe trajectory, and it is possible that misalignment of clicked points between slices can add to this. Another issue is that fixing tissue with paraformaldehyde causes non-uniform shrinking of the tissue. We found this could lead to small discrepancies when comparing Neuropixels channel counts from HERBS, which uses fixed tissue, against LFP measures taken while the animals were still alive. Although tissue shrinkage is inherent to histological processing and cannot be removed mathematically, HERBS offers a solution by fitting warped tissue to the atlas template using multiple anchor points per slice, which should substantially reduce inconsistencies due to shrinkage.\n\nAccurately registering raw neuroanatomical data in a reference atlas framework, though critically important, is time consuming, tedious and variable from user to user. HERBS was developed to expedite, simplify, and systematize this process by providing a single tool for generating anatomical coordinates, as well as annotated 2D and 3D visualizations and data tables summarizing its outputs. We wish to emphasize that HERBS is a completely open-source software with which we aim to help our fellow research community. We therefore welcome users to submit suggestions for improvements and to report bugs on our GitHub page, as this will help us continually improve the software and user experience.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Numpy</td>\n      <td>Harris et al., 2020</td>\n      <td>RRID:SCR_008633</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Scipy</td>\n      <td>Virtanen et al., 2020</td>\n      <td>RRID:SCR_008058</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>OpenCV</td>\n      <td>Bradski, 2000</td>\n      <td>RRID:SCR_01552</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyOpenGL</td>\n      <td>Woo et al., 1999</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyQT5</td>\n      <td>PyQT, 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Python packages and resources\n\nHERBS is written entirely in Python version three using basic Python packages, such as numpy, opencv, and scipy, as mentioned in the table below. Details on the specific dependencies used in HERBS can be found in HERBS Cookbook (chapter 3). Documentation and step-wise instructions for installing and implementing HERBS can be found in the HERBS Cookbook (chapter 4). HERBS is an open-source software with hard-coded Python scripts. Should a user wish to customize Python-pipeline, one can use the code of TRACER\u2014which is open-source and available at the Github repository (Paglia et al., 2021). To use HERBS, we recommend users to create a PyCharm project with Python installation (version 3.8.10) and other supporting packages which are specified in the dependencies section in the HERBS Cookbook (chapter 4).\n\n### Neuropixels and virus expression\n\nAll experiments were performed in accordance with the Norwegian Animal Welfare Act and the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes. All procedures were approved by the Norwegian Food Safety Authority (Mattilsynet; protocol IDs 27175 and 25094). All tissue for in-house testing came from adult (>15 weeks) Long-Evans hooded rats. Detailed steps of the surgical preparation and post-operative care are described in Mimica et al., 2018.\n\n#### Neuropixels\n\nThe probes (version 1.0 Neuropixels, IMEC, Belgium) were coated with DiI (Vybrant DiI, catalog no. V22888, Thermo Fisher Scientific, USA) by repeatedly drawing a 2 \u00b5L droplet of DiI solution at the tip of a micropipette up and down the length of the probe shank until all DiI had dried onto the shank, causing the shank to appear pink. The probes were angled in the arm of a stereotaxic frame and inserted at a rate of 100\u2013300 \u00b5m per min. The chronically implanted animal was kept <1 week following surgery, after which it was perfused with 4% paraformaldehyde and the brains were removed.\n\nThe brain was transferred to 2% dimethyl sulfoxide (DMSO; VWR, USA) solution for cryoprotection for 1\u20132 days, after which the Neuropixel shank was removed, the brain was frozen and sectioned in 50 \u00b5m slices with a sliding microtome (Microm HM430, Thermo Fisher Scientific). The tissue sections then underwent fluorescent immunostaining against NeuN (catalog no. ABN90P, Sigma-Alrich, USA), followed by secondary antibody-staining with Alexa 647-tagged goat anti-guinea pig antibody (catalog no. A21450, Thermo Fisher Scientific), after which the sections were rinsed, mounted, coverslipped, and stored at 40C. The detailed immunostaining protocol is available per request. Next, the sections were digitized using an automated scanner for fluorescence and brightfield images at the appropriate illumination wavelengths (Zeiss Axio Scan.Z1, Jena, Germany), and were saved in .jpeg format for processing in TRACER.\n\n#### Virus expression\n\nPulled glass pipettes were used to inject 500 nL of AAV5-mDIx-Chr2-mCherry-Fishell-3 (plasmid no. 83898, Addgene, USA; AAV produced at Kavli Viral Vector Core Facility, NTNU) at a rate of 50 nL per min. Bilateral injections were targeted to the cingulate cortex (Cg1; +2.0 AP, \u00b10.5 ML, \u20132.0DV). Five weeks after surgery, the animal was killed and perfused with 4% paraformaldehyde. The brain was removed, post-fixed overnight in 4% paraformaldehyde at 40C, then cryoprotected for 24 hr in 2% DMSO. The brain was then frozen in dry ice and 40 \u00b5m sections were collected as described above. Fluorescent signal from the virus was amplified by immunostaining against Red Fluorescent Protein (catalog no. 5F8, Chromotek GmbH, Germany), followed by secondary antibody-staining with Alexa 546-tagged Goat anti-rat IgG (catalog no. A-11081, Thermo Fisher Scientific). The detailed immunostaining protocol is available upon request.\n\n### Data availability, software, and citation policy\n\nThe software described in this manuscript is an open-source software written completely in Python. HERBS is fully supported by Windows, macOS, and Linux. Source code is available on https://github.com/Whitlock-Group/HERBS (Fuglstad, 2022). HERBS Cookbook and documents are available on the Whitlock group Github page.\n\nThe WHS rat brain atlas files can be found here on the NITRC website (https://www.nitrc.org/projects/whs-sd-atlas). The required atlas files to run HERBS (downloaded upon installation of HERBS) and TRACER are cited below:\n\n#### Citation policy\n\nWe kindly ask users to cite this paper when using HERBS or TRACER in their studies, and to cite the appropriate version of the WHS rat brain atlas.\n\nRefer to the WHS Atlas by its RRID: SCR_017124, and cite the first publication (Papp et al., 2014) along with the version of the atlas that is used. For example, cite Kjonigsen et al., 2015, v2 of the atlas if the user\u2019s work makes particular use of delineations of the hippocampal region. Or cite Osen et al., 2019, v3 of the atlas if the user\u2019s work makes particular use of delineations of the auditory system.\n\n#### License\n\nThe WHS Atlas of the Sprague Dawley rat brain is licensed under the Creative Commons Attribution ShareAlike (CC BY-SA) 4.0 license: https://creativecommons.org/licenses/by-sa/4.0/.\n\nThe Allen Mouse Brain Atlas software and wiki are freely available at https://github.com/cortex-lab/allenCCF (Shamash et al., 2022).\n",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "6dbbe401-a2dd-4fb7-ae70-72fa05ca1c6c",
+      "submission_id": "630e7b4e-e246-40c9-b68b-98bfa80ac456",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mathieu Wolff, https://ror.org/057qpr032 CNRS, University of Bordeaux France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83496.sa0](https://doi.org/10.7554/eLife.83496.sa0)\n\nThis paper provides the field with a new and important Python-based tool to assist neurosurgery both before and after a wide range of interventions. In its present form, the software comes as a convincing toolbox that may be helpful for researchers relying on neurosurgery in rodents (both mice and rats).\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Mathieu Wolff, https://ror.org/057qpr032 CNRS, University of Bordeaux France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.83496.sa1](https://doi.org/10.7554/eLife.83496.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"TRACER: A toolkit to register and visualize anatomical coordinates in the rat brain\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Mathieu Wolff as the Reviewing Editor and Reviewer #3, and the evaluation has been overseen by a Senior Editor.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nIn short, all reviewers found the tool described of this study with a clear value but it really needs further polishing to be widely used within the neuroscience community. At present the installation process is by itself an obstacle for any user with only moderate familiarity with Python-based environment. So this would need to be considerably enhanced to consider a new examination of this tool. In addition a more thorough description of its specific value versus other tools already available including for rats is warranted to understand the added value that TRACER brings.\n\nReviewer #1 (Recommendations for the authors):\n\nGeneral comments:\n\nIt seems like a lot of work to go through all sections and match to the digital atlas. Incorporating matching between pre-processed images and reference sections seems crucial for widespread use of the tool. If this is something that cannot be done in short order, a widespread use of the tool may be limited.\n\nMore extensive comments should be made about Brainrender, which was published in eLife in March 2021. This tool is only mentioned and no extensive comparison with TRACER is made.\n\nSoftware issues:\n\nIn evaluating the package (on a machine with Linux Mint 20 Cinnamon, version 4.6.7. Linux Kernel, 5.4.0-89-generic), there were issues with getting the atlas to load. It was an issue with an xcf library, so perhaps this is very specific to this setup, but perhaps is worth noting that some Linux users may have a similar issue.\n\nMore generally, there were issues with getting the latest atlas (v4) to work. An error was received that the process was \"Killed\" and then a message stating that the atlas v3 couldn't be found. Downloading atlas v3 resolved the issue.\n\nIt would be useful to know if this software allow for localization of microelectrode arrays? The paper states that TRACER can place trajectory of 6 probes for prediction or reconstruction, so does this mean it can only be used for single point trajectories (such as those from single shank electrodes, fiber optic cannula, or a drug infusion cannula)? A statement should be included about the utility of TRACER for array probes. (If it is not capable of mapping arrays, perhaps this is a modification to consider for the future).\n\nThe text in Figure 5 as a bit small and maybe the axis labels could also be shortened and bounding boxes removed.\n\nPotential issue with tissue processing:\n\nHow was shrinkage dealt with in processing the brain tissue? Was any estimate done? This might matter for the specific experiment reported in the manuscript, which involved staining with several antibodies. This could also be a major issue for users, especially in cases where histochemical or immunohistochemical stains might be combined in a study.\n\nReviewer #2 (Recommendations for the authors):\n\nStrengths\n\n\u2013 The tool and user manual both appear excellent. The authors have put a lot of effort into making this tool.\n\n\u2013 Prior tools were focused on mice, while this one is optimized for rat histology.\n\n\u2013 The \"surgery planning\" aspects were interesting and very useful, particularly for deciding how many recording sites would end up in various brain regions with different insertion angles, etc.\n\nWeaknesses\n\n\u2013 There were files from the Waxholm Space rat brain atlas that needed to be downloaded. I clicked on the provided link but it wasn't clear how to find the relevant files, they appear to come from multiple different releases. Unless it violates licensing, can these be automatically included in TRACER? Extra steps like this can confuse and trip up new users (like me!), and potentially create obsolete instructions if the external links change their organization or content.\n\n\u2013 The authors correctly note that installing and running TRACER requires some knowledge of Python and the command line. I see this as the biggest weakness of the package. They say they are working on a stand-alone GUI to run it, but in the meantime I suggest they develop instructional videos to talk a new user through a standard installation and example case.\n\n\u2013 Both myself and a grad student in our lab tried to install the tool but ultimately failed to do so. We are moderately experienced with Python and we worked through some errors and felt like we were getting closer, but after ~3 hours we finally gave up. While I'm sure the fault is on our end to some degree, we were motivated to test the tool out and we are experienced in Python but we could not get it installed on our system. I suggest the author's \u03b2 test the tool with novice users with no instruction other than what is on the Github, and see if they can discover any pain points in the installation process. I believe this is addressable, but is a critical weakness of the tool as it currently stands.\n\nSuggestions for improving the user experience\n\n\u2013 Strongly encourage the authors to upload the package to Pypi or conda package repository. This will make the installation of the dependencies and the package itself much easier.\n\n\u2013 At the bare minimum, instructions should be expanded and clarified starting from the creation of the environment. If the terminal will be used anyway for installing the dependencies, it is much easier to create the environment using the Anaconda prompt from scratch.\n\n\u2013 Downloading packages from Github can be confusing for people who are not experienced with this. Where the instructions say they need \"TRACER package downloaded on your local computer\u2026\" I think the user manual should explicitly walk them through each step \u2013 What does a user do when they're looking at the Github page? Click download as Zip? Does it matter where this is saved? Should this be unzipped? Getting tripped up on these early steps can be deal breakers for new users.\n\n\u2013 In the user manual, some screenshots would be helpful to orient the user, instead of things like \"open the terminal by clicking the arrow near the name of your environment\".\n\n\u2013 After downloading the zip file from Github and extracting the package, the name of the folder is TRACER_main (or TRACER_master) and not just TRACER. So when trying to run it on Spyder (or wherever), it doesn't find the module.\n\n\u2013 To run the package, the working directory has to be inside the first TRACER_main folder, since there is another TRACER_main folder inside the first. This tripped us up for a while.\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors propose here a new open-source, python-based toolkit to reconstruct the trajectories of recording electrodes in the rat brain. Other possible applications include to visualize virus spread or to provide candidates stereotaxic coordinates before starting a surgery. At first glance, the tool is promising and may effectively fill a gap as many existing tools have been designed for mice primarily although rats continue to be highly relevant for behavioral studies. Installing and using the tool is not trivial for users with no Python experience though and the added value by comparison with other tools recently developed is unclear as detailed below.\n\nInstalling/running TRACER\n\nThe authors acknowledge in the short discussion that using TRACER may be challenging for users with no experience in Python-based environments. I can concur with that comment. I have asked a few trainees in the lab (with no coding experience) to try to install it and none of them was able to go through the entire process alone. So I think getting a GUI as stand-alone is really needed to impact on the field. Otherwise it is hard to appreciate why this could be more useful than any other tools. I would really encourage the authors to develop this GUI early on rather than only suggesting it's a possible future direction.\n\nAdded value versus other existing tools\n\nEarlier this year, another paper was published at eLife documenting Brainrender, which is potentially suitable across species, including rats (Claudi et al., 2021). There are multiple other resources that are also available. I think a greater effort to explain how the present tool is positioned by respect with these other options is needed. This is very important for the field; while we can appreciate the value of having diverse tools to rely on, there is also some merit in adopting standards and splitting the community around multiple tools may not be beneficial in the long run. I think a much more thorough discussion is needed to present the PROs and CONs of TRACER versus Brainrender and other tools.\n\nTo address my general comments, I think the authors should really answer the following question: Considering that Brainrender is available in multiple species, what is the added value of TRACER?\n\nI do not intend at all to minimize the work produced by the authors, I just want to make my point clearer from the end-user viewpoint: as many potentially equivalent tools exist, why choosing a specific one over the others?\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"HERBS: Histological E-data Registration in rodent Brain Spaces\" for further consideration by eLife. Your revised article has been evaluated by Laura Colgin (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nAll reviewers recognized the value of HERB to process brain histology data and think it could be particularly useful for people working with rats, for which very little tools are currently available. The reviewers also identified a number of points that, if adequately addressed, may considerably improve the impact of HERB for the field. The authors are encouraged to implement these points or at least to provide a thorough discussion on their will and ability to carry further developments of the software in the future.\n\n1) There is a need for clearer plans for long term sustainability of the software following future releases of Python. The authors should indicate with more details if they have the manpower necessary to ensure the maintenance of all packages in the long run, and possibly to implement further features (see other points below)\n\n2) Being able to incorporate other brain atlases and other packages (e.g. CellFinder) would enhance its value and the potential for HERB to be widely adopted.\n\n3) Viral reconstruction could benefit from a more quantitative assessment: since the user is provided with a list of brain structures affected by the viral spread, it would be incredibly helpful to provide the volume estimates (or %) affected for each of these brain regions.\n\n4) Automatic registration of sections is not available, and therefore requires extensive manual work to use the software. Perhaps the authors have plans to improve on this front.\n\nReviewer #2 (Recommendations for the authors):\n\nWe gave HERBS some testing in the team and we found that it could really be very helpful for many researchers.\n\nOne potential caveat will be to ensure that maintenance of the main packages is being covered as new versions of Python are being developed. Recommending older Python versions for HERB may not be a realistic option in the long run as this is currently suggested in the Cooking book (which currently do not point on the right page for Python 3.9.9 \u2013 p.10, section 3.4.2).\n\nWe do have a major suggestion for viral spread reconstruction as we think this particular option may be particularly useful. Since the user is provided with a list of brain structures affected by the viral spread, it would be incredibly helpful to provide the volume estimates (or %) affected for each of these brain regions. This would thus open the way for relatively unbiased quantitative analyses (specificity of viral spread, but also lesions, or any infusion). This is much needed in the field to encourage researchers to better report histology data and I strongly believe it will really make HERB reaching another level.\n\nReviewer #3 (Recommendations for the authors):\n\nIt would be useful to specify whether this toolkit covers the following features, and if so, how?\n\n\u2013 Designing multi-area implants: does the first section (generating surgical coordinates) include the possibility to design multi-probe implants that could target different brain areas? this can be a great value to those who'd like prototype headstages for targeting multiple areas.\n\n\u2013 Adaptable to other atlases: is it possible to upload brain atlas for similar animals (e.g. naked mole rats or tree shrews)? How about other available rat brain atlases?\n\n\u2013 Integrating other available packages: it would be great if one could easily integrate e.g. CellFinder with HERBS.\n",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "825b8101-912d-44c1-b71d-56f9111437b7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C1",
+      "claim": "Recording technologies for rodents have seen huge advances in the last decade, allowing users to sample thousands of neurons simultaneously from multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recording technologies for rodents have seen huge advances in the last decade, allowing users to sample thousands of neurons simultaneously from multiple brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about technological advances in the field, drawing from established scientific knowledge about recording technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "53ed8688-8380-4a3f-b221-bb560791fc8e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C2",
+      "claim": "Existing tools either provide limited functionalities or require users to be proficient in coding to use them.",
+      "claim_type": "EXPLICIT",
+      "source": "existing tools either provide limited functionalities or require users to be proficient in coding to use them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' assessment of existing tools in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "391635f4-3459-4aa0-a057-7c5572c53b85",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C3",
+      "claim": "HERBS is a comprehensive new tool for rodent users that offers a broad range of functionalities through a user-friendly graphical user interface.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this we created HERBS (Histological E-data Registration in rodent Brain Spaces), a comprehensive new tool for rodent users that offers a broad range of functionalities through a user-friendly graphical user interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct claim about the software being described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "abf1f736-655e-409f-8ca5-e7f7999dc6b5",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C4",
+      "claim": "HERBS can be used to plan coordinates for implanting electrodes, targeting viral injections or tracers prior to experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to experiments, HERBS can be used to plan coordinates for implanting electrodes, targeting viral injections or tracers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of the software demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "d1dede95-eb2a-440f-bd7d-f21ea5319695",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C5",
+      "claim": "HERBS can register recording electrode locations (e.g. Neuropixels and tetrodes), viral expression, or other anatomical features after experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "After experiments, users can register recording electrode locations (e.g. Neuropixels and tetrodes), viral expression, or other anatomical features, and visualize the results in 2D or 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes post-experimental functionalities of the software demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1582ca75-11d7-4c7e-bc9f-c968c4c8eeba",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C6",
+      "claim": "HERBS can visualize results in 2D or 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "After experiments, users can register recording electrode locations (e.g. Neuropixels and tetrodes), viral expression, or other anatomical features, and visualize the results in 2D or 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a visualization capability of the software demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "453abf97-daf1-4a68-8717-f0e73fe1ee8c",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C7",
+      "claim": "HERBS can delineate labeling from multiple injections across tissue sections and obtain individual cell counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, HERBS can delineate labeling from multiple injections across tissue sections and obtain individual cell counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific analytical capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "96c3cf34-3124-4cbf-afab-982c1e1afe49",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C8",
+      "claim": "Regional delineations in HERBS are based on annotated 3D volumes from the Waxholm Space Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "Regional delineations in HERBS are based either on annotated 3D volumes from the Waxholm Space Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas, though HERBS can work with compatible volume atlases from any species users wish to install.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reference atlases used by the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "84fe894c-a1e4-4f00-8b62-58dc3269613f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C9",
+      "claim": "HERBS can work with compatible volume atlases from any species users wish to install.",
+      "claim_type": "EXPLICIT",
+      "source": "Regional delineations in HERBS are based either on annotated 3D volumes from the Waxholm Space Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas, though HERBS can work with compatible volume atlases from any species users wish to install.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of the software to other atlases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "03be0a75-0a29-4459-b5ef-6776ac9378d4",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C10",
+      "claim": "HERBS allows users to scroll through the digital brain atlases and provides custom-angle slice cuts through the volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS allows users to scroll through the digital brain atlases and provides custom-angle slice cuts through the volumes, and supports free-transformation of tissue sections to atlas slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes specific navigation and slicing functionalities of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3b2232d1-ea5a-438a-bd2d-75aafb62e2bb",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C11",
+      "claim": "HERBS supports free-transformation of tissue sections to atlas slices.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS allows users to scroll through the digital brain atlases and provides custom-angle slice cuts through the volumes, and supports free-transformation of tissue sections to atlas slices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a registration capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "dc443c55-1a80-4666-afe7-3c3fb32fcdf9",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C12",
+      "claim": "HERBS allows users to reconstruct a 3D brain mesh with tissue from individual animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, HERBS allows users to reconstruct a 3D brain mesh with tissue from individual animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a 3D reconstruction capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f224f92f-f161-4a95-8cd4-92274ebee09d",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C13",
+      "claim": "HERBS is a multi-platform open-source Python package.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS is a multi-platform open-source Python package that is available on PyPI and GitHub, and is compatible with Windows, macOS, and Linux operating systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical nature and availability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e296f6c1-f27b-44f4-b2ee-ea60a862de94",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C14",
+      "claim": "HERBS is available on PyPI and GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS is a multi-platform open-source Python package that is available on PyPI and GitHub, and is compatible with Windows, macOS, and Linux operating systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the software can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "c6283200-83fe-4e33-b936-47fcdc96e556",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C15",
+      "claim": "HERBS is compatible with Windows, macOS, and Linux operating systems.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS is a multi-platform open-source Python package that is available on PyPI and GitHub, and is compatible with Windows, macOS, and Linux operating systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cross-platform compatibility of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "83886afb-dd41-4fff-9602-3e4e6eb9be86",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C16",
+      "claim": "Understanding the structure, function, or physiology of neural circuits requires the ability to consistently target brain regions prior to experiments and maintain an accessible, objective record of the areas studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the structure, function, or physiology of neural circuits requires the ability to consistently target brain regions prior to experiments and, afterward, to maintain an accessible, objective record of the areas studied (Simmons and Swanson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Simmons and Swanson, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "759bb776-298e-4c1a-968c-b011556c53bd",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C17",
+      "claim": "Traditionally, post hoc anatomical record-keeping has relied on histological approaches where users delineate anatomical features in tissue sections, then register them manually with a reference atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, post hoc anatomical record-keeping has relied on histological approaches where users delineate anatomical features in tissue sections, then register them manually with a reference atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes traditional methods based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "41a5ba20-f9cf-4eae-9bb0-398a634754d7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C18",
+      "claim": "Traditional anatomical record-keeping approaches have become increasingly challenging with the emergence of large-scale recordings spanning multiple brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "While these and other approaches are critical for grounding experiments anatomically, doing them has become increasingly challenging with the emergence of large-scale recordings spanning multiple brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the challenges posed by technological advances.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "088494ce-b51a-4bca-b387-2036f1783c9f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C19",
+      "claim": "Several software tools have been developed in recent years which use computer vision technology to accelerate and systematize the mapping of experimental results in various model species.",
+      "claim_type": "EXPLICIT",
+      "source": "Several software tools have been developed in recent years which use computer vision technology to accelerate and systematize the mapping of experimental results in various model species (e.g., Shamash et al., 2018; Song et al., 2020; Claudi et al., 2021; Andy, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to existing software tools.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3654aedc-3f77-4802-ae9f-93d73c0b1f65",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C20",
+      "claim": "Tool kits combined with appropriate reference atlases give users the ability to reconstruct electrode tracks, viral expression, and anatomical projections.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with the appropriate reference atlases (e.g., Franklin and Paxinos, 2008; Wang et al., 2020; Claudi et al., 2020), these tool kits give users the ability to reconstruct electrode tracks, viral expression, anatomical projections (Oh et al., 2014; Zingg et al., 2014; Winnubst et al., 2019), cell types (F\u00fcrth et al., 2018), or to detect cells (Tyson et al., 2021), gene expression patterns, or functional nodes (Lein et al., 2007; Ortiz et al., 2020) in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to reference atlases and studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e70668bb-14d6-4143-8608-0c56d44d799d",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C21",
+      "claim": "Different types of tool kits have been developed for different brain preparations, including volumetric whole-brain data or sliced tissue sections, with each approach bringing its own strengths and limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "Different types of tool kits have been developed for different brain preparations, including volumetric whole-brain data or sliced tissue sections, with each approach bringing its own strengths and limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' assessment of existing tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "43bf3839-1b76-468c-9476-137dc4006177",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C22",
+      "claim": "Whole-brain volume analyses have the advantage of readily conveying the 3D spatial relationships between neuronal pathways and neighboring structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain volume analyses have the advantage of readily conveying the 3D spatial relationships between neuronal pathways and neighboring structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the advantages of whole-brain volume analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "7d450fc7-d116-4052-a60f-1222aaaa9f49",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C23",
+      "claim": "ITK-SNAP is a popular biomedical software used for automatic image segmentation and delineation of regions of interest in human brain imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, ITK-SNAP (Yushkevich et al., 2006) is a popular biomedical software used for automatic image segmentation and delineation of regions of interest in human brain imaging data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yushkevich et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "fe0d9826-f8a2-4027-979d-9817feaf5461",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C24",
+      "claim": "Brainrender displays any of several atlases incorporated from the BrainGlobe Atlas API in 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "For animal models, there is Brainrender (Claudi et al., 2021), which displays any of several atlases incorporated from the BrainGlobe Atlas API in 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Claudi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "24bcab80-dd95-47cd-a226-360ef04bdaf5",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C25",
+      "claim": "Brainrender provides fast visualization for user-defined data sets, such as reconstructed electrode tracks, viral expression, or anatomical projections.",
+      "claim_type": "EXPLICIT",
+      "source": "It provides fast visualization for user-defined data sets, such as reconstructed electrode tracks, viral expression, or anatomical projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of Brainrender based on the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "0714c61b-d8ed-45ae-9834-b7af70cc8f6e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C26",
+      "claim": "Brainreg maps whole-brain data sets to atlases using supervised automatic image registration.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be obtained when Brainrender is combined with sibling software, Brainreg (Tyson et al., 2020), which maps whole-brain data sets to atlases using supervised automatic image registration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Tyson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "d98d3238-336c-447a-8bd6-bd1f184d9726",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C27",
+      "claim": "Generating whole-brain data sets is time and resource intensive, requiring either a light sheet scanning microscope or magnetic resonance imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "While whole-brain data sets provide a holistic quantitative dimension to analyses, generating them is time and resource intensive, requiring either a light sheet scanning microscope or magnetic resonance imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the requirements for whole-brain imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f6f00aa7-70ed-48fa-9b4b-7659517113d7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C28",
+      "claim": "Anatomical mapping using histological tissue sectioning still dominates in most labs because of the comparatively lower cost and simplicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the comparatively lower cost and simplicity, anatomical mapping using histological tissue sectioning still dominates in most labs (e.g., Clancy et al., 2019; Zutshi et al., 2022; Lagartos-Donate et al., 2022; Gardner et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent studies using histological sectioning.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "62fbd4a7-3cc4-4626-b332-7e7c56d734d0",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C29",
+      "claim": "One common issue in histological mapping lies in matching a given tissue slice correctly to a reference atlas template.",
+      "claim_type": "EXPLICIT",
+      "source": "One common issue lies in matching a given tissue slice correctly to a reference atlas template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' experience with histological methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e883b933-86c0-4710-9f87-4123a4c8fff3",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C30",
+      "claim": "Previous studies have sought to solve the tissue-to-atlas matching problem using multiple software platforms, like ImageJ, Adobe Illustrator, or Adobe Photoshop, which can be time consuming for manual curation and is not systematic.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have sought to solve this problem using multiple software platforms, like ImageJ (Schneider et al., 2012), Adobe Illustrator (Adobe Inc, 2023b), or Adobe Photoshop (Adobe Inc, 2023a), which can be time consuming for manual curation and is not systematic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to these software platforms and is an inference about their limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "7491aafa-5691-458b-b9aa-435d297b58b0",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C31",
+      "claim": "SHARP-TRACK is an electrode reconstruction tool kit that uses a global warping transformation method to fit histological images back to a mouse atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "Software packages have been developed to address this issue, including the electrode reconstruction tool kit, SHARP-TRACK (Shamash et al., 2018). This software uses a global warping transformation method to fit histological images back to a mouse atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shamash et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "6490d9eb-bb26-4162-a79d-3fdd748581b8",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C32",
+      "claim": "SHARP-TRACK provides a read-out of the estimated number of channels in each brain region as well as 3D visualizations.",
+      "claim_type": "EXPLICIT",
+      "source": "Afterward, it provides a read-out of the estimated number of channels in each brain region as well as 3D visualizations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the output capabilities of SHARP-TRACK based on the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "84065e18-f1c9-49d7-82ee-08230ae13b6a",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C33",
+      "claim": "SHARP-TRACK works only with mouse atlases and is MATLAB-based, which requires a paid license and some programming knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "As currently configured, the tool kit works only with mouse atlases and is MATLAB-based, which requires a paid license and some programming knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of SHARP-TRACK based on its implementation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f11db40f-f174-4360-a8bb-5fa12d5afd85",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C34",
+      "claim": "There currently is no single software that combines functionalities spanning the gamut of pre-surgical planning and post-experiment registration without requiring programming.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the number of tool kits available, there currently is no single software that combines functionalities spanning the gamut of pre-surgical planning and post-experiment registration without requiring programming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' assessment of existing tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "90b815f8-fc4b-454f-9eb2-5b5af6deabdc",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C35",
+      "claim": "HERBS can generate pre-surgical coordinates, reconstruct electrode tracks after recordings, mark viral expression volumes, or single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS can generate pre-surgical coordinates, reconstruct electrode tracks after recordings, mark viral expression volumes, or single cells; delineate regional boundaries in brain slices, and view post hoc anatomical reconstructions in 2D or 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functionalities of HERBS demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "c52a7c19-4701-4bda-a771-34b60e87b24f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C36",
+      "claim": "There is no upper limit for the number of electrodes that HERBS can reconstruct.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no upper limit for the number of electrodes that it can reconstruct, so it can be used with microelectrode arrays or multi-tetrode bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "7d306c3d-a47e-4524-92f1-79d1d21dadf8",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C37",
+      "claim": "HERBS can be used with microelectrode arrays or multi-tetrode bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no upper limit for the number of electrodes that it can reconstruct, so it can be used with microelectrode arrays or multi-tetrode bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the types of electrode configurations HERBS can handle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "2c49c477-4ffc-4be6-84d9-2f24a7becc90",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C38",
+      "claim": "HERBS has the in-built function to download and run the Waxholm Space (WHS) Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "To serve both rat and mouse users, HERBS has the in-built function to download and run the Waxholm Space (WHS) Atlas of the Sprague Dawley Rat Brain (Papp et al., 2014) or the Allen Mouse Brain Atlas (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a built-in functionality of the software, supported by citations to the atlases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "2e8b5727-ce59-4b26-ac65-7115d8fd5958",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C39",
+      "claim": "HERBS contains an atlas explorer that can scroll freely through either rat or mouse atlases to display coronal, sagittal, and horizontal planar surfaces in 2D, as well as the corresponding mesh or volume of the atlas in 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "The software also contains an atlas explorer that can scroll freely through either rat or mouse atlases to display coronal, sagittal, and horizontal planar surfaces in 2D, as well as the corresponding mesh or volume of the atlas in 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "21dc02c0-8084-440a-b5ca-8e044be6572f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C40",
+      "claim": "HERBS provides rigid registration as well as interactive, non-rigid registration using triangulation-based piece-wise affine transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "For accurate and robust image registration, HERBS provides rigid registration as well as interactive, non-rigid registration using triangulation-based piece-wise affine transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the registration methods implemented in the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "171804ac-f722-4239-892d-a6af240d8af3",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C41",
+      "claim": "HERBS is compatible with most tissue staining methods and image formats, as long as the regions of interest are visible and can be delineated by the user.",
+      "claim_type": "EXPLICIT",
+      "source": "It is compatible with most tissue staining methods and image formats, as long as the regions of interest are visible and can be delineated by the user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the compatibility of the software with different input types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "84696a0e-6d8c-4ff1-b2f4-f8d83847b918",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C42",
+      "claim": "The WHS rat brain atlas (v4) contains over 200 labeled cortical and sub-cortical regions at sub-millimeter scales.",
+      "claim_type": "EXPLICIT",
+      "source": "For rat users, HERBS references the newest version (v4) of the WHS rat brain atlas (Papp et al., 2014), which contains over 200 labeled cortical and sub-cortical regions at sub-millimeter scales",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Papp et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "49fa3e7c-8224-45ab-921d-6534266ec4d9",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C43",
+      "claim": "HERBS requires minimal programming knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize general accessibility, HERBS requires minimal programming knowledge and is compatible with Windows, macOS, and Linux systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a571bdc8-f567-43f9-9fc0-9db9e3edb54d",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C44",
+      "claim": "HERBS is intended as an open community resource available for further expansion and refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intended as an open community resource available for further expansion and refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the intended use and development model of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4bcd0d25-8df3-4c8f-ac1b-7312ab25b9e8",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C45",
+      "claim": "HERBS was designed as an intuitive, generic software tool to provide rodent users with four core functionalities.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS was designed as an intuitive, generic software tool to provide rodent users with four core functionalities, shown in Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the design goals of the software and references Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "02116624-5f66-4010-beea-b7721689c354",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C46",
+      "claim": "The four core functionalities of HERBS include generating anatomical target coordinates when planning a surgery, processing and editing raw histological data, registering and reconstructing objects implanted in the brain, and visualizing annotated brain volumes in 3D.",
+      "claim_type": "EXPLICIT",
+      "source": "These include (a) generating anatomical target coordinates when planning a surgery; (b) processing and editing raw histological data; (c) registering and reconstructing objects implanted in the brain; and (d) visualizing annotated brain volumes in 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists the core functionalities of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3e57afef-c506-45e1-a794-298c20ba176e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C47",
+      "claim": "Users can carry out each functionality by following a series of steps described in the HERBS Cookbook using a keyboard and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can carry out each functionality by following a series of steps described in the HERBS Cookbook using a keyboard and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how users interact with the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "8fa8f626-e5ef-4df4-8e15-94335e6f70bf",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C48",
+      "claim": "When installing HERBS, users can choose whether to use the WHS Atlas of the Sprague Dawley Rat Brain or the Allen Mouse Brain Atlas as the anatomical reference.",
+      "claim_type": "EXPLICIT",
+      "source": "When installing HERBS, users can choose whether to use the WHS Atlas of the Sprague Dawley Rat Brain (Papp et al., 2014) or the Allen Mouse Brain Atlas (Wang et al., 2020) as the anatomical reference (see Cookbook, chapter 6.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an installation option for the software, supported by citations to the atlases.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e9c60667-7763-432c-a03d-13c96fadb12c",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C49",
+      "claim": "Either atlas can be downloaded through HERBS, as they are both integrated as parts of the software package.",
+      "claim_type": "EXPLICIT",
+      "source": "Either atlas can be downloaded through HERBS, as they are both integrated as parts of the software package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4bca495b-05a3-49d2-92f1-dc3be022e1b5",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C50",
+      "claim": "HERBS facilitates pre-surgical planning by allowing users to determine the insertion parameters required to target one or several regions along a linear trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS facilitates this process by allowing users to determine the insertion parameters required to target one or several regions along a linear trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific functionality of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "34d295f0-f95f-4e8b-ae95-ccb6843f6d9c",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C51",
+      "claim": "There is no limit to the number of trajectories (e.g. recording probes) that can be planned in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "This is done by simply clicking the start point and end point of the desired path on a 2D brain slice image, and there is no limit to the number of trajectories (e.g. recording probes) that can be planned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1bd4661a-a32c-49b2-be91-1130a577ad11",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C52",
+      "claim": "HERBS automatically computes the insertion angle and length needed to reach the target brain region, as well as the location of the trajectory relative to Bregma defined in the atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS then automatically computes the insertion angle and length needed to reach the target brain region, as well as the location of the trajectory relative to Bregma defined in the atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an automatic computation feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a4b7161a-b732-4481-b2cf-abdc592839f6",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C53",
+      "claim": "The planning functionality is equally applicable for targeting imaging lenses, injection pipettes for tracer or virus injections, or making focal lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The planning functionality is equally applicable for targeting imaging lenses, injection pipettes for tracer or virus injections, or making focal lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the versatility of the planning functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "9ab06ecd-e377-46ec-86ea-53003e1bbe4c",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C54",
+      "claim": "HERBS estimates of probe length include the 175-\u00b5m channel-less shank tip for Neuropixels users.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropixels users should note that estimates of probe length include the 175-\u00b5m channel-less shank tip, and that HERBS eliminates it when estimating the number of recording channels in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific feature of how HERBS handles Neuropixels probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "629107ee-61f7-49ac-9b5d-e471d12033be",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C55",
+      "claim": "HERBS eliminates the 175-\u00b5m channel-less shank tip when estimating the number of recording channels in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropixels users should note that estimates of probe length include the 175-\u00b5m channel-less shank tip, and that HERBS eliminates it when estimating the number of recording channels in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how HERBS calculates channel counts for Neuropixels probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "43a0eaee-6d6b-4fa9-929d-14da6e45c1d4",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C56",
+      "claim": "The color coding of each brain area in the atlas provides visual landmarks for defining boundaries between regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is aided by the color coding of each brain area in the atlas, which provides visual landmarks for defining boundaries between regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the atlas visualization in HERBS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "aa2a1579-be60-4150-a4e5-ff40ddecc50d",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C57",
+      "claim": "Users can apply HERBS functionality to target multiple regions using multi-probe implants with user-defined spacing and geometries.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can also apply this functionality to target multiple regions using multi-probe implants with user-defined spacing and geometries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the software for multi-probe planning.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "c43dbdf8-5ce2-49bd-b615-9526991c18e1",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C58",
+      "claim": "Users can define the recording site layout on individual probes in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Users can define the recording site layout on individual probes as well (see section 6.6 of the CookBook for instructions and links to illustrated tutorials).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a customization feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1e62bb88-566d-459c-9270-973be3057337",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C59",
+      "claim": "There is no upper limit on the number of electrodes that can be reconstructed in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Another core functionality of HERBS is reconstructing electrode paths after surgeries or in vivo recordings, and there is no upper limit on the number of electrodes that can be reconstructed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a6a80c4e-0397-4c41-86cd-24ed6bad1a47",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C60",
+      "claim": "Histological images can be pre-processed before they are overlaid on their corresponding atlas images in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to reconstructing probe trajectories, histological images can be pre-processed before they are overlaid on their corresponding atlas images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pre-processing capability of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b588d388-897a-45a3-b0c2-199294f973b1",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C61",
+      "claim": "Pre-processing in HERBS can include rotating the section to an optimal plane, changing brightness, gamma curves, and so forth.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-processing can include rotating the section to an optimal plane, changing brightness, gamma curves, and so forth, and can be done using the image view controller in the Side Bar, or the Edit option in the Menu Bar, as indicated in the interface panel in Figure 1B (see HERBS Cookbook, chapter 6.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes specific pre-processing operations available in the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "8096fb62-4c85-4520-856c-6e9aed59fb7b",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C62",
+      "claim": "In cases where histological sections are cut out of plane, HERBS allows the user to tilt the atlas brain up to 30\u00b0 to facilitate template matching.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where histological sections are cut out of plane, HERBS allows the user to tilt the atlas brain up to 30\u00b0 to facilitate template matching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature to handle off-plane sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "253e73bb-95aa-4e6a-8f4e-5defe9da3a97",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C63",
+      "claim": "Electrode track reconstructions can be performed for any type of electrodes, tetrodes, or recording arrays in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that electrode track reconstructions can be performed for any type of electrodes, tetrodes, or recording arrays, as well as with different sizes of sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the versatility of the reconstruction functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b9dedb93-90c3-4e26-87ce-9032f548b4ae",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C64",
+      "claim": "HERBS facilitates electrode reconstruction by allowing users to build user-defined geometry and channel layouts of linear silicon probes.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS facilitates this by allowing users to build user-defined geometry and channel layouts of linear silicon probes (see the subfolder \"HERBS/image/probe_related\" on the HERBS GitHub page, linked in \"Data availability, software, and citation policy\" below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a customization feature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "65382b6c-78f9-4621-b755-ce49251740ee",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C65",
+      "claim": "HERBS can be used for anatomical applications including visualization of virus expression, tracer labeling, or marking lesions or neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond electrode reconstructions, HERBS can be used for anatomical applications including visualization of virus expression, tracer labeling, or marking lesions or neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes additional applications of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "2aa05864-393a-4168-804e-8d51ff0ae025",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C66",
+      "claim": "The procedure for reconstructing viral expression volumes is similar to that for probe reconstruction, but the regions defined in each slice are two-dimensional, and the volume to delineate will likely extend over multiple slices.",
+      "claim_type": "EXPLICIT",
+      "source": "The procedure for reconstructing viral expresion volumes is similar to that for probe reconstruction, but the regions defined in each slice are two-dimensional, and the volume to delineate will likely extend over multiple slices (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the procedure for viral expression reconstruction and references Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "773f9edb-114b-414f-a8ae-3899918ea0ba",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C67",
+      "claim": "The granularity of the selected region in HERBS will depend on the magic wand tolerance set by the user.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the granularity of the selected region will depend on the magic wand tolerance set by the user.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how a tool parameter affects the output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "03a56669-de54-4441-aed3-0aed37f075ca",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C68",
+      "claim": "The same functions and steps used for viral expression reconstruction are used for similar tasks such as labeling single cells, marking fibers of passage, or visualizing lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The same functions and steps are used for similar tasks such as labeling single cells, marking fibers of passage, or visualizing lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the versatility of the reconstruction functionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "78928d55-0a09-4bbc-bf18-745205329f4e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C69",
+      "claim": "The resolution of the 3D reconstruction will depend on how many sections the user includes in the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Note also that the resolution of the 3D reconstruction will depend on how many sections the user includes in the reconstruction; the example in Figure 4C consisted of 11 tissue slices.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a factor affecting reconstruction quality and references Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "d25a75ec-c133-41c6-8b83-dff28a12dd05",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C70",
+      "claim": "It is possible to load cell point data generated from other programs, such as CellFinder, and to visualize those data in 3D brain volumes in HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible to load cell point data generated from other programs, such as CellFinder (Tyson et al., 2021), and to visualize those data in 3D brain volumes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes interoperability with other software, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "52fbdcd3-4cb9-4f02-9404-0fa14c37f638",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C71",
+      "claim": "HERBS is unique in that it brings together both pre- and post-surgical registration and mapping functionalities in one program.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also unique in that it brings together both pre- and post-surgical registration and mapping functionalities in one program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what distinguishes HERBS from other tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "58f67a1c-aca6-4e24-97a2-7a11ba31fabc",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C72",
+      "claim": "HERBS specifically includes rats, which stands out among the many high-quality rendering and digital atlas resources for mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that it specifically includes rats also stands out among the many high-quality rendering and digital atlas resources for mice, such as Brain Mesh (Yaoyao-Hao, 2020), SHARPTRACK (Shamash et al., 2018), cocoframer (Lein et al., 2007), and others (e.g. Jin et al., 2019, Chon et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what distinguishes HERBS, supported by citations to mouse-focused tools.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "ecafc8bc-4cb8-445a-aa9a-8e3602f15afe",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C73",
+      "claim": "Brainrender was designed as a visualization tool.",
+      "claim_type": "EXPLICIT",
+      "source": "The most essential difference is that Brainrender was designed as a visualization tool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the design purpose of Brainrender.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "7bf51c66-d070-4f21-8467-67eaf59d9668",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C74",
+      "claim": "Brainrender renders anatomical data in 3D volumes, but it cannot register anatomical data in a reference atlas on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it renders anatomical data in 3D volumes, but it cannot register anatomical data in a reference atlas on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of Brainrender.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "720c83c1-b434-48de-b89a-e9150aa39fe7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C75",
+      "claim": "Registration for Brainrender must be done beforehand with separate software such as Brainreg or CellFinder.",
+      "claim_type": "EXPLICIT",
+      "source": "Registration must be done beforehand with separate software such as Brainreg (Tyson et al., 2022) or CellFinder (Tyson et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Brainreg and CellFinder.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "8659ce0b-6951-46cf-a77a-325391be8d92",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C76",
+      "claim": "HERBS was designed primarily as a registration tool.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS, in contrast, was designed primarily as a registration tool, which comes configured to work with primary source atlases for rats or mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary design purpose of HERBS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1acc09e1-60a0-442c-b7c3-9950017a9f63",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C77",
+      "claim": "The HERBS GUI can both download and load reference atlases, whereas Brainrender relies on separate software and plugins which require programming knowledge in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "The HERBS GUI can both download and load these reference atlases, whereas Brainrender relies on separate software and plugins which require programming knowledge in Python.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference comparing the ease of use of HERBS versus Brainrender.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a4158f96-8ab1-47d6-9195-56c812c0a96a",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C78",
+      "claim": "The output from HERBS could be used as input for Brainrender if formatted appropriately.",
+      "claim_type": "EXPLICIT",
+      "source": "The output from HERBS could be used as input for Brainrender if formatted appropriately, though HERBS offers some of its own visualization functionalities for simplicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential interoperability between the tools.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "2c5513b6-2464-40ae-a8f0-62edcde3b107",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C79",
+      "claim": "Brainreg and Brainrender use whole-brain data from light sheet imaging, whereas HERBS works with commonly used histological tissue sectioning methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Brainreg and Brainrender use whole-brain data from light sheet imaging, whereas HERBS works with commonly used histological tissue sectioning methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the different input data types for these tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b184a74e-de94-4b07-a9ff-ed0fb3d4bf66",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C80",
+      "claim": "The Allen Institute recently released the Neuropixels Trajectory Explorer, a MATLAB-based platform which can be used to plan coordinates for electrophysiological probes prior to surgery in mice and rats.",
+      "claim_type": "EXPLICIT",
+      "source": "The Allen Institute recently released the Neuropixels Trajectory Explorer (Andy, 2022.), a MATLAB-based platform which can be used to plan coordinates for electrophysiological probes prior to surgery in mice and rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Andy, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a63a0129-2f6c-492c-bab5-d022e3aa059f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C81",
+      "claim": "The Neuropixels Trajectory Explorer does not yet have the option to load histology for post hoc processing of probe tracks or viral expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the pre-surgical registration step is the only functionality available, as it does not yet have the option to load histology for post hoc processing of probe tracks or viral expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the current limitations of the Neuropixels Trajectory Explorer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "716b5a18-8f1a-4351-b1c4-59dcf891e199",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C82",
+      "claim": "The Neuropixels Trajectory Explorer runs in MATLAB, which typically requires a paid software license.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike Brainrender and HERBS, it runs in MATLAB, which typically requires a paid software license.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about MATLAB licensing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b47d8dc4-a9a9-4597-8d78-c0d88229eb90",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C83",
+      "claim": "HERBS offers a combination of functionalities found separately in Brainrender and Neuropixels trajectory explorer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the main features that distinguish HERBS from other tools are that it (i) offers a combination of functionalities found separately in Brainrender and Neuropixels trajectory explorer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what distinguishes HERBS from other tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b6ee4bcf-95bf-4056-8b49-b899c995e132",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C84",
+      "claim": "All functionalities in HERBS are accessible with button clicks and keystrokes.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) all functionalities in HERBS are accessible with button clicks and keystrokes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the user interface design of HERBS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "ef0dca82-f4a7-4ed7-97ee-95df31476605",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C85",
+      "claim": "HERBS can be used immediately with the WHS Rat Brain Atlas or the Allen Mouse Brain Atlas without requiring additional plugins.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) it can be used immediately with the WHS Rat Brain Atlas or the Allen Mouse Brain Atlas without requiring additional plugins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of HERBS that distinguishes it from other tools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4cf8750b-096d-40f1-9619-8885efe12827",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C86",
+      "claim": "HERBS, similar to Brainreg, can incorporate other atlases given the correctly formatted files, such as the Paxinos and Watson atlases for rats or mice, provided the user has the appropriate licensing permissions.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond these features, HERBS, similar to Brainreg (Tyson et al., 2022), can incorporate other atlases given the correctly formatted files, such as the Paxinos and Watson atlases for rats or mice, provided the user has the appropriate licensing permissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the extensibility of HERBS, supported by a citation to Brainreg.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "8bf91515-132d-43e9-8379-213c5180e7eb",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C87",
+      "claim": "The template matching step can be time consuming if data sets contain a large number of histological slices, as with virus expression or tracer labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the template matching step can be time consuming if data sets contain a large number of histological slices, as with virus expression or tracer labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a limitation of the current implementation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "5f8e2e95-9fa9-4e39-9ee4-ddb8f8a6b9f7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C88",
+      "claim": "The authors aim to streamline template matching processes by implementing machine vision-based algorithms for pre-processing user images and matching them to template slices automatically in future versions of HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "We aim to streamline these processes by implementing machine vision-based algorithms for pre-processing user images and matching them to template slices automatically in future versions of HERBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future improvements to the software.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "0a424017-49dd-4af1-8981-65de9f6612d4",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C89",
+      "claim": "Installing HERBS could be challenging for users who have not installed Python before.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although we designed HERBS to minimize the need for programming, installing it could be challenging for users who have not installed Python before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about a potential limitation for some users.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b63adf3a-3eed-4a0e-8545-6130985b3262",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C90",
+      "claim": "Probe length estimates can be less consistent when larger numbers of histological slices are used for reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we found that probe length estimates can be less consistent when larger numbers of histological slices are used for reconstructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from the authors' testing of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "20487971-86f9-4f0a-852c-f8042355f3cb",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C91",
+      "claim": "Errors in probe length estimates could arise from averaging across clicked points defining the probe trajectory, and misalignment of clicked points between slices can add to this.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect these errors could arise from averaging across clicked points defining the probe trajectory, and it is possible that misalignment of clicked points between slices can add to this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the source of errors observed in testing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "bfe7b9c8-cf42-445c-90aa-dd561864951a",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C92",
+      "claim": "Fixing tissue with paraformaldehyde causes non-uniform shrinking of the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Another issue is that fixing tissue with paraformaldehyde causes non-uniform shrinking of the tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about tissue processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "73be6969-04e9-498e-9c06-20a5cd803fa3",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C93",
+      "claim": "Tissue shrinkage from paraformaldehyde fixation could lead to small discrepancies when comparing Neuropixels channel counts from HERBS against LFP measures taken while the animals were still alive.",
+      "claim_type": "EXPLICIT",
+      "source": "We found this could lead to small discrepancies when comparing Neuropixels channel counts from HERBS, which uses fixed tissue, against LFP measures taken while the animals were still alive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from the authors' testing of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "bfd96f6a-7321-42e9-b54d-3c14ff55d0c7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C94",
+      "claim": "Tissue shrinkage is inherent to histological processing and cannot be removed mathematically.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tissue shrinkage is inherent to histological processing and cannot be removed mathematically, HERBS offers a solution by fitting warped tissue to the atlas template using multiple anchor points per slice, which should substantially reduce inconsistencies due to shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge about histological processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1d764105-091c-4c48-a527-c1e6e26caf6f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C95",
+      "claim": "HERBS offers a solution to tissue shrinkage by fitting warped tissue to the atlas template using multiple anchor points per slice, which should substantially reduce inconsistencies due to shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tissue shrinkage is inherent to histological processing and cannot be removed mathematically, HERBS offers a solution by fitting warped tissue to the atlas template using multiple anchor points per slice, which should substantially reduce inconsistencies due to shrinkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of HERBS designed to address tissue shrinkage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "9f24567c-3ae3-4746-9894-46a49e7f1cf2",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C96",
+      "claim": "HERBS is a completely open-source software written completely in Python.",
+      "claim_type": "EXPLICIT",
+      "source": "The software described in this manuscript is an open-source software written completely in Python.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical nature of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3e5d0aea-01a5-4a52-aef8-08b5cfa269c9",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C97",
+      "claim": "HERBS is fully supported by Windows, macOS, and Linux.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS is fully supported by Windows, macOS, and Linux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the platform compatibility of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "6ed4c7db-1617-413b-857e-c7433b5660ea",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C98",
+      "claim": "HERBS is written entirely in Python version three using basic Python packages, such as numpy, opencv, and scipy.",
+      "claim_type": "EXPLICIT",
+      "source": "HERBS is written entirely in Python version three using basic Python packages, such as numpy, opencv, and scipy, as mentioned in the table below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e9db3a30-def5-4eb1-93d1-ab763ed4a7b4",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C99",
+      "claim": "All experiments were performed in accordance with the Norwegian Animal Welfare Act and the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in accordance with the Norwegian Animal Welfare Act and the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical compliance of the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f6caacd5-7603-4b62-895f-cf62ece7c6f6",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C100",
+      "claim": "All procedures were approved by the Norwegian Food Safety Authority (Mattilsynet; protocol IDs 27175 and 25094).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Norwegian Food Safety Authority (Mattilsynet; protocol IDs 27175 and 25094).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the regulatory approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "25154998-efab-4c26-8ea8-3767a99e1d80",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C101",
+      "claim": "All tissue for in-house testing came from adult (>15 weeks) Long-Evans hooded rats.",
+      "claim_type": "EXPLICIT",
+      "source": "All tissue for in-house testing came from adult (>15 weeks) Long-Evans hooded rats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal subjects used for testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b69e6b64-6aeb-4186-a7a0-cdc51f96e650",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C102",
+      "claim": "The probes (version 1.0 Neuropixels, IMEC, Belgium) were coated with DiI by repeatedly drawing a 2 \u00b5L droplet of DiI solution at the tip of a micropipette up and down the length of the probe shank until all DiI had dried onto the shank, causing the shank to appear pink.",
+      "claim_type": "EXPLICIT",
+      "source": "The probes (version 1.0 Neuropixels, IMEC, Belgium) were coated with DiI (Vybrant DiI, catalog no. V22888, Thermo Fisher Scientific, USA) by repeatedly drawing a 2 \u00b5L droplet of DiI solution at the tip of a micropipette up and down the length of the probe shank until all DiI had dried onto the shank, causing the shank to appear pink.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b49a1150-b26b-4c9f-8070-0c028c25a57a",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C103",
+      "claim": "The probes were angled in the arm of a stereotaxic frame and inserted at a rate of 100\u2013300 \u00b5m per min.",
+      "claim_type": "EXPLICIT",
+      "source": "The probes were angled in the arm of a stereotaxic frame and inserted at a rate of 100\u2013300 \u00b5m per min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "e9ada4d7-4f42-4def-b4db-417d0fdfe99e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C104",
+      "claim": "The chronically implanted animal was kept <1 week following surgery, after which it was perfused with 4% paraformaldehyde and the brains were removed.",
+      "claim_type": "EXPLICIT",
+      "source": "The chronically implanted animal was kept <1 week following surgery, after which it was perfused with 4% paraformaldehyde and the brains were removed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "cbe08eed-1bb8-466a-84a4-b86f9926296f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C105",
+      "claim": "The brain was transferred to 2% dimethyl sulfoxide (DMSO) solution for cryoprotection for 1\u20132 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain was transferred to 2% dimethyl sulfoxide (DMSO; VWR, USA) solution for cryoprotection for 1\u20132 days, after which the Neuropixel shank was removed, the brain was frozen and sectioned in 50 \u00b5m slices with a sliding microtome (Microm HM430, Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3b5207a5-3f1f-402c-9505-6321c5ea7d51",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C106",
+      "claim": "The Neuropixel shank was removed after cryoprotection, the brain was frozen and sectioned in 50 \u00b5m slices with a sliding microtome.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain was transferred to 2% dimethyl sulfoxide (DMSO; VWR, USA) solution for cryoprotection for 1\u20132 days, after which the Neuropixel shank was removed, the brain was frozen and sectioned in 50 \u00b5m slices with a sliding microtome (Microm HM430, Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "1434e257-b474-4e24-bc1b-db5504e41f81",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C107",
+      "claim": "The tissue sections underwent fluorescent immunostaining against NeuN, followed by secondary antibody-staining with Alexa 647-tagged goat anti-guinea pig antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue sections then underwent fluorescent immunostaining against NeuN (catalog no. ABN90P, Sigma-Alrich, USA), followed by secondary antibody-staining with Alexa 647-tagged goat anti-guinea pig antibody (catalog no. A21450, Thermo Fisher Scientific), after which the sections were rinsed, mounted, coverslipped, and stored at 40C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "3f160d91-0115-43f1-b7a0-f619e8563ac3",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C108",
+      "claim": "The sections were digitized using an automated scanner for fluorescence and brightfield images at the appropriate illumination wavelengths and were saved in .jpeg format for processing in TRACER.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the sections were digitized using an automated scanner for fluorescence and brightfield images at the appropriate illumination wavelengths (Zeiss Axio Scan.Z1, Jena, Germany), and were saved in .jpeg format for processing in TRACER.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "539edb16-effb-45d5-b2ee-3cf3a998123c",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C109",
+      "claim": "Pulled glass pipettes were used to inject 500 nL of AAV5-mDIx-Chr2-mCherry-Fishell-3 at a rate of 50 nL per min.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulled glass pipettes were used to inject 500 nL of AAV5-mDIx-Chr2-mCherry-Fishell-3 (plasmid no. 83898, Addgene, USA; AAV produced at Kavli Viral Vector Core Facility, NTNU) at a rate of 50 nL per min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f09a04b9-16a9-4c5a-acd8-53f51d61ce27",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C110",
+      "claim": "Bilateral injections were targeted to the cingulate cortex (Cg1; +2.0 AP, \u00b10.5 ML, \u20132.0DV).",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral injections were targeted to the cingulate cortex (Cg1; +2.0 AP, \u00b10.5 ML, \u20132.0DV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "a601ae3c-f2e3-425c-b67d-cd68feb7cae5",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C111",
+      "claim": "Five weeks after surgery, the animal was killed and perfused with 4% paraformaldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "Five weeks after surgery, the animal was killed and perfused with 4% paraformaldehyde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "d96ce0e9-2508-450b-a7e0-8c524bd0cbdc",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C112",
+      "claim": "The brain was removed, post-fixed overnight in 4% paraformaldehyde at 40C, then cryoprotected for 24 hr in 2% DMSO.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain was removed, post-fixed overnight in 4% paraformaldehyde at 40C, then cryoprotected for 24 hr in 2% DMSO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "57890814-593a-4229-be3e-6eddb448ba81",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C113",
+      "claim": "Fluorescent signal from the virus was amplified by immunostaining against Red Fluorescent Protein, followed by secondary antibody-staining with Alexa 546-tagged Goat anti-rat IgG.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent signal from the virus was amplified by immunostaining against Red Fluorescent Protein (catalog no. 5F8, Chromotek GmbH, Germany), followed by secondary antibody-staining with Alexa 546-tagged Goat anti-rat IgG (catalog no. A-11081, Thermo Fisher Scientific).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological procedure used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4f62deaa-cdc5-48f8-b4c1-85c7bd47396e",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C114",
+      "claim": "Source code for HERBS is available on https://github.com/Whitlock-Group/HERBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Source code is available on https://github.com/Whitlock-Group/HERBS (Fuglstad, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the source code can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "757a8d0f-df05-4153-ad48-726d71634d56",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C115",
+      "claim": "The WHS rat brain atlas files can be found on the NITRC website (https://www.nitrc.org/projects/whs-sd-atlas).",
+      "claim_type": "EXPLICIT",
+      "source": "The WHS rat brain atlas files can be found here on the NITRC website (https://www.nitrc.org/projects/whs-sd-atlas).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the atlas files can be accessed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "990b962d-a2b9-481f-aad0-0b2e9a42f9a2",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C116",
+      "claim": "The WHS Atlas of the Sprague Dawley rat brain is licensed under the Creative Commons Attribution ShareAlike (CC BY-SA) 4.0 license.",
+      "claim_type": "EXPLICIT",
+      "source": "The WHS Atlas of the Sprague Dawley rat brain is licensed under the Creative Commons Attribution ShareAlike (CC BY-SA) 4.0 license: https://creativecommons.org/licenses/by-sa/4.0/.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the licensing terms for the atlas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b91f4be0-483c-4932-9a21-471f092818b2",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "claim_id": "C117",
+      "claim": "The Allen Mouse Brain Atlas software and wiki are freely available at https://github.com/cortex-lab/allenCCF.",
+      "claim_type": "EXPLICIT",
+      "source": "The Allen Mouse Brain Atlas software and wiki are freely available at https://github.com/cortex-lab/allenCCF (Shamash et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the Allen Mouse Brain Atlas can be accessed, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d1883531-b136-48a9-a089-2a5b29e77413",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HERBS is a comprehensive, open-source Python software tool that provides rodent neuroscientists with four core functionalities through a user-friendly GUI: pre-surgical coordinate planning, histological image processing, registration and reconstruction of implanted objects (electrodes, viral expression, anatomical features), and 2D/3D visualization. The software is multi-platform (Windows, macOS, Linux), requires minimal programming knowledge, and integrates the Waxholm Space Rat Brain Atlas and Allen Mouse Brain Atlas with the ability to incorporate other atlases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C15 and C35-C49 collectively describe HERBS' design, functionalities, and technical specifications. The manuscript provides detailed descriptions of the software architecture (C45-C47), demonstrates each core functionality with figures (Figures 1-4), describes technical implementation (C96-C98), and documents atlas integration (C38, C48-C49). The claims are internally consistent and supported by visual evidence showing the GUI and outputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4784df21-7852-4177-b6f6-53f245a73ffb",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HERBS enables pre-surgical planning by allowing users to define electrode trajectories on 2D atlas slices through point-and-click interaction, with automatic computation of insertion angles, probe length, and stereotaxic coordinates relative to Bregma. The software handles unlimited trajectory numbers, supports multi-probe implants with user-defined geometries, and accounts for Neuropixels-specific features like the 175-\u00b5m channel-less shank tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 describe the pre-surgical planning functionality demonstrated in Figure 2. The figure shows the workflow from atlas navigation (C50, C56) through trajectory definition (C51) to automatic parameter calculation (C52) and read-out generation. The Neuropixels-specific handling (C54-C55) and multi-probe capabilities (C57-C58) are explicitly described with supporting documentation references.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "HERBS reconstructs electrode tracks from histological sections without upper limits on electrode numbers, supporting various electrode types (Neuropixels, tetrodes, recording arrays). The software includes pre-processing capabilities (rotation, brightness adjustment, gamma correction) and handles off-plane sections by allowing atlas tilting up to 30\u00b0, with support for user-defined probe geometries and channel layouts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64 describe electrode reconstruction functionality demonstrated in Figure 3. The figure shows the complete workflow from histological section loading through pre-processing, atlas matching with anchor points, trajectory marking, and 3D reconstruction with detailed read-outs. The versatility claims (C63-C64) are supported by descriptions of customization options and GitHub resources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "d925c729-af8d-4d54-b20d-d2428867c545",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HERBS reconstructs viral expression volumes and other anatomical features across multiple tissue sections using 2D region delineation with a magic wand tool. The same workflow applies to labeling single cells, marking fibers of passage, or visualizing lesions, with 3D reconstruction resolution depending on the number of sections included. The software can import and visualize cell point data from external programs like CellFinder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 describe viral expression reconstruction demonstrated in Figure 4, which shows the complete workflow from tissue imaging through region delineation to 3D visualization and quantitative read-outs. The example uses 11 tissue slices (C69), demonstrating the multi-slice reconstruction capability. Interoperability with CellFinder (C70) is explicitly stated with citation support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "HERBS distinguishes itself from existing tools by combining pre- and post-surgical functionalities in a single GUI-based program, supporting both rat and mouse atlases without requiring programming knowledge or additional plugins. Unlike Brainrender (visualization-focused, requires separate registration software) and Neuropixels Trajectory Explorer (MATLAB-based, pre-surgical only), HERBS provides integrated registration and visualization for histological sections rather than whole-brain light sheet data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C86 compare HERBS to existing tools (Brainrender, Brainreg, Neuropixels Trajectory Explorer) with appropriate citations (C73-C75, C80, C86). The comparisons are reasonable and supported by documented differences in design philosophy (C73, C76), input data types (C79), software requirements (C77, C82), and functionality scope (C74-C75, C81, C83-C85). The claims accurately characterize both HERBS and competing tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "756de6cc-c911-4c44-97bc-7efa245c3bd7",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HERBS has limitations including time-consuming template matching for large datasets, potential installation challenges for Python-naive users, inconsistent probe length estimates with many histological slices, and discrepancies from tissue shrinkage during paraformaldehyde fixation. The authors acknowledge these issues and propose future improvements (automated template matching) while noting that HERBS' multi-anchor-point warping approach mitigates shrinkage-related inconsistencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C95 honestly assess limitations based on the authors' testing experience (C90, C93) and established knowledge about histological processing (C92, C94). The speculation about error sources (C91) is appropriately qualified. The proposed solution using multiple anchor points (C95) is a feature already implemented in HERBS. Future improvements (C88) are clearly identified as planned work rather than current capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "612555bb-1236-48c6-909b-ce75bf82a3f9",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript describes detailed experimental methods for generating test data, including Neuropixels probe implantation with DiI coating, viral injections of AAV5-mDlx-Chr2-mCherry in rat cingulate cortex, tissue processing with paraformaldehyde fixation and cryoprotection, immunostaining protocols, and automated scanning for digitization. All procedures were approved by Norwegian authorities and followed ethical guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C113 provide comprehensive methodological details for the experimental validation of HERBS. The methods are standard for the field, include appropriate ethical approvals (C99-C100), specify reagents with catalog numbers (C102, C107, C109, C113), and describe tissue processing parameters (C104-C106, C111-C112). These methods generated the example data shown in Figures 3-4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "4f95a2ea-4380-47fa-942b-538653a8276f",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HERBS source code is available on GitHub, the WHS rat brain atlas files are available on NITRC under CC BY-SA 4.0 license, and the Allen Mouse Brain Atlas is freely available on GitHub. The software and atlases are openly accessible for community use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C114-C117 provide specific URLs and licensing information for software and data availability. These are factual statements about resource accessibility that can be verified. The open-source nature and appropriate licensing (C116) support the stated goal of HERBS as a community resource (C44).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "f1d807d6-5d01-40aa-8c00-2ee4d6194f57",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Advances in rodent recording technologies enabling simultaneous sampling of thousands of neurons across multiple brain regions have created challenges for traditional manual histological registration methods, necessitating the ability to consistently target brain regions and maintain objective anatomical records.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C16-C18 establish the scientific context and motivation for HERBS. C1 describes established technological advances (supported by general knowledge), C16 is supported by citation to Simmons and Swanson 2009, and C17-C18 accurately characterize traditional methods and emerging challenges. These claims provide appropriate background for the tool's development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiple software tools using computer vision have been developed for anatomical mapping in model species, with different approaches for whole-brain versus sectioned tissue data. Whole-brain methods (ITK-SNAP, Brainrender, Brainreg) provide 3D spatial relationships but require expensive equipment, while histological sectioning remains dominant due to lower cost but faces challenges in tissue-to-atlas matching. Existing tools like SHARP-TRACK address some issues but have limitations (mouse-only, MATLAB-based), and no single software combines pre-surgical planning with post-experiment registration without programming requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C34 provide a comprehensive literature review with appropriate citations (C19-C20, C23-C26, C28, C30-C32). The characterizations of existing tools are accurate and supported by citations. The assessment of the gap in available tools (C34) logically follows from the review and provides clear motivation for HERBS development. The comparisons between whole-brain and sectioning approaches (C21-C22, C27-C28) are reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "b0fda001-2bd4-40b5-92e1-dba446df03e8",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Existing anatomical mapping tools either provide limited functionalities or require coding proficiency, with no single software combining pre-surgical planning and post-experiment registration without programming requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2 and C34 make broad assertions about existing tools' limitations. While the manuscript provides evidence for specific tools (SHARP-TRACK, Brainrender, Neuropixels Trajectory Explorer), the claim that ALL existing tools have these limitations is difficult to verify without exhaustive review of the field. The characterization may be accurate but represents the authors' assessment rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    },
+    {
+      "id": "659d9c89-91b1-46c0-93b0-67c1cd4740ea",
+      "content_id": "1f90d61c-b25a-41e7-8dc6-0206cdc34ffe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The WHS rat brain atlas version 4 contains over 200 labeled cortical and sub-cortical regions at sub-millimeter scales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 describes a feature of the WHS atlas v4 and is supported by citation to Papp et al., 2014. This is a factual statement about the atlas that HERBS uses as a reference, verifiable from the cited source.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:21:05.868434Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "391635f4-3459-4aa0-a057-7c5572c53b85",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "abf1f736-655e-409f-8ca5-e7f7999dc6b5",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "d1dede95-eb2a-440f-bd7d-f21ea5319695",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "1582ca75-11d7-4c7e-bc9f-c968c4c8eeba",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "453abf97-daf1-4a68-8717-f0e73fe1ee8c",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "96c3cf34-3124-4cbf-afab-982c1e1afe49",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "84fe894c-a1e4-4f00-8b62-58dc3269613f",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "03be0a75-0a29-4459-b5ef-6776ac9378d4",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "3b2232d1-ea5a-438a-bd2d-75aafb62e2bb",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "dc443c55-1a80-4666-afe7-3c3fb32fcdf9",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "f224f92f-f161-4a95-8cd4-92274ebee09d",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "e296f6c1-f27b-44f4-b2ee-ea60a862de94",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "c6283200-83fe-4e33-b936-47fcdc96e556",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "90b815f8-fc4b-454f-9eb2-5b5af6deabdc",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "c52a7c19-4701-4bda-a771-34b60e87b24f",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "7d306c3d-a47e-4524-92f1-79d1d21dadf8",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "2c49c477-4ffc-4be6-84d9-2f24a7becc90",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "2e8b5727-ce59-4b26-ac65-7115d8fd5958",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "21dc02c0-8084-440a-b5ca-8e044be6572f",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "171804ac-f722-4239-892d-a6af240d8af3",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "49fa3e7c-8224-45ab-921d-6534266ec4d9",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "a571bdc8-f567-43f9-9fc0-9db9e3edb54d",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "4bcd0d25-8df3-4c8f-ac1b-7312ab25b9e8",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "02116624-5f66-4010-beea-b7721689c354",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "3e57afef-c506-45e1-a794-298c20ba176e",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "8fa8f626-e5ef-4df4-8e15-94335e6f70bf",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "e9c60667-7763-432c-a03d-13c96fadb12c",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "9f24567c-3ae3-4746-9894-46a49e7f1cf2",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "3e5d0aea-01a5-4a52-aef8-08b5cfa269c9",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "6ed4c7db-1617-413b-857e-c7433b5660ea",
+      "result_id": "d1883531-b136-48a9-a089-2a5b29e77413"
+    },
+    {
+      "claim_id": "4bca495b-05a3-49d2-92f1-dc3be022e1b5",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "34d295f0-f95f-4e8b-ae95-ccb6843f6d9c",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "1bd4661a-a32c-49b2-be91-1130a577ad11",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "a4b7161a-b732-4481-b2cf-abdc592839f6",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "9ab06ecd-e377-46ec-86ea-53003e1bbe4c",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "629107ee-61f7-49ac-9b5d-e471d12033be",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "43a0eaee-6d6b-4fa9-929d-14da6e45c1d4",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "aa2a1579-be60-4150-a4e5-ff40ddecc50d",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "c43dbdf8-5ce2-49bd-b615-9526991c18e1",
+      "result_id": "4784df21-7852-4177-b6f6-53f245a73ffb"
+    },
+    {
+      "claim_id": "1e62bb88-566d-459c-9270-973be3057337",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "a6a80c4e-0397-4c41-86cd-24ed6bad1a47",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "b588d388-897a-45a3-b0c2-199294f973b1",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "8096fb62-4c85-4520-856c-6e9aed59fb7b",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "253e73bb-95aa-4e6a-8f4e-5defe9da3a97",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "b9dedb93-90c3-4e26-87ce-9032f548b4ae",
+      "result_id": "2fe8f56c-65a1-4fbf-8c4a-7e4f636814bc"
+    },
+    {
+      "claim_id": "65382b6c-78f9-4621-b755-ce49251740ee",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "2aa05864-393a-4168-804e-8d51ff0ae025",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "773f9edb-114b-414f-a8ae-3899918ea0ba",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "03a56669-de54-4441-aed3-0aed37f075ca",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "78928d55-0a09-4bbc-bf18-745205329f4e",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "d25a75ec-c133-41c6-8b83-dff28a12dd05",
+      "result_id": "d925c729-af8d-4d54-b20d-d2428867c545"
+    },
+    {
+      "claim_id": "52fbdcd3-4cb9-4f02-9404-0fa14c37f638",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "58f67a1c-aca6-4e24-97a2-7a11ba31fabc",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "ecafc8bc-4cb8-445a-aa9a-8e3602f15afe",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "7bf51c66-d070-4f21-8467-67eaf59d9668",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "720c83c1-b434-48de-b89a-e9150aa39fe7",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "8659ce0b-6951-46cf-a77a-325391be8d92",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "1acc09e1-60a0-442c-b7c3-9950017a9f63",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "a4158f96-8ab1-47d6-9195-56c812c0a96a",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "2c5513b6-2464-40ae-a8f0-62edcde3b107",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "b184a74e-de94-4b07-a9ff-ed0fb3d4bf66",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "a63a0129-2f6c-492c-bab5-d022e3aa059f",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "716b5a18-8f1a-4351-b1c4-59dcf891e199",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "b47d8dc4-a9a9-4597-8d78-c0d88229eb90",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "b6ee4bcf-95bf-4056-8b49-b899c995e132",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "ef0dca82-f4a7-4ed7-97ee-95df31476605",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "4cf8750b-096d-40f1-9619-8885efe12827",
+      "result_id": "ee5d541f-c4a4-4e55-b3dd-7dd3aaef27cf"
+    },
+    {
+      "claim_id": "8bf91515-132d-43e9-8379-213c5180e7eb",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "5f8e2e95-9fa9-4e39-9ee4-ddb8f8a6b9f7",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "0a424017-49dd-4af1-8981-65de9f6612d4",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "b63adf3a-3eed-4a0e-8545-6130985b3262",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "20487971-86f9-4f0a-852c-f8042355f3cb",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "bfe7b9c8-cf42-445c-90aa-dd561864951a",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "73be6969-04e9-498e-9c06-20a5cd803fa3",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "bfd96f6a-7321-42e9-b54d-3c14ff55d0c7",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "1d764105-091c-4c48-a527-c1e6e26caf6f",
+      "result_id": "756de6cc-c911-4c44-97bc-7efa245c3bd7"
+    },
+    {
+      "claim_id": "e9db3a30-def5-4eb1-93d1-ab763ed4a7b4",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "f6caacd5-7603-4b62-895f-cf62ece7c6f6",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "25154998-efab-4c26-8ea8-3767a99e1d80",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "b69e6b64-6aeb-4186-a7a0-cdc51f96e650",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "b49a1150-b26b-4c9f-8070-0c028c25a57a",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "e9ada4d7-4f42-4def-b4db-417d0fdfe99e",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "cbe08eed-1bb8-466a-84a4-b86f9926296f",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "3b5207a5-3f1f-402c-9505-6321c5ea7d51",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "1434e257-b474-4e24-bc1b-db5504e41f81",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "3f160d91-0115-43f1-b7a0-f619e8563ac3",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "539edb16-effb-45d5-b2ee-3cf3a998123c",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "f09a04b9-16a9-4c5a-acd8-53f51d61ce27",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "a601ae3c-f2e3-425c-b67d-cd68feb7cae5",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "d96ce0e9-2508-450b-a7e0-8c524bd0cbdc",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "57890814-593a-4229-be3e-6eddb448ba81",
+      "result_id": "612555bb-1236-48c6-909b-ce75bf82a3f9"
+    },
+    {
+      "claim_id": "4f62deaa-cdc5-48f8-b4c1-85c7bd47396e",
+      "result_id": "4f95a2ea-4380-47fa-942b-538653a8276f"
+    },
+    {
+      "claim_id": "757a8d0f-df05-4153-ad48-726d71634d56",
+      "result_id": "4f95a2ea-4380-47fa-942b-538653a8276f"
+    },
+    {
+      "claim_id": "990b962d-a2b9-481f-aad0-0b2e9a42f9a2",
+      "result_id": "4f95a2ea-4380-47fa-942b-538653a8276f"
+    },
+    {
+      "claim_id": "b91f4be0-483c-4932-9a21-471f092818b2",
+      "result_id": "4f95a2ea-4380-47fa-942b-538653a8276f"
+    },
+    {
+      "claim_id": "825b8101-912d-44c1-b71d-56f9111437b7",
+      "result_id": "f1d807d6-5d01-40aa-8c00-2ee4d6194f57"
+    },
+    {
+      "claim_id": "83886afb-dd41-4fff-9602-3e4e6eb9be86",
+      "result_id": "f1d807d6-5d01-40aa-8c00-2ee4d6194f57"
+    },
+    {
+      "claim_id": "759bb776-298e-4c1a-968c-b011556c53bd",
+      "result_id": "f1d807d6-5d01-40aa-8c00-2ee4d6194f57"
+    },
+    {
+      "claim_id": "41a5ba20-f9cf-4eae-9bb0-398a634754d7",
+      "result_id": "f1d807d6-5d01-40aa-8c00-2ee4d6194f57"
+    },
+    {
+      "claim_id": "088494ce-b51a-4bca-b387-2036f1783c9f",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "3654aedc-3f77-4802-ae9f-93d73c0b1f65",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "e70668bb-14d6-4143-8608-0c56d44d799d",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "43bf3839-1b76-468c-9476-137dc4006177",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "7d450fc7-d116-4052-a60f-1222aaaa9f49",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "fe0d9826-f8a2-4027-979d-9817feaf5461",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "24bcab80-dd95-47cd-a226-360ef04bdaf5",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "0714c61b-d8ed-45ae-9834-b7af70cc8f6e",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "d98d3238-336c-447a-8bd6-bd1f184d9726",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "f6f00aa7-70ed-48fa-9b4b-7659517113d7",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "62fbd4a7-3cc4-4626-b332-7e7c56d734d0",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "e883b933-86c0-4710-9f87-4123a4c8fff3",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "7491aafa-5691-458b-b9aa-435d297b58b0",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "6490d9eb-bb26-4162-a79d-3fdd748581b8",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "84065e18-f1c9-49d7-82ee-08230ae13b6a",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "f11db40f-f174-4360-a8bb-5fa12d5afd85",
+      "result_id": "b16087fa-1a8f-4e9e-bf3b-54c2f7092586"
+    },
+    {
+      "claim_id": "53ed8688-8380-4a3f-b221-bb560791fc8e",
+      "result_id": "b0fda001-2bd4-40b5-92e1-dba446df03e8"
+    },
+    {
+      "claim_id": "f11db40f-f174-4360-a8bb-5fa12d5afd85",
+      "result_id": "b0fda001-2bd4-40b5-92e1-dba446df03e8"
+    },
+    {
+      "claim_id": "84696a0e-6d8c-4ff1-b2f4-f8d83847b918",
+      "result_id": "659d9c89-91b1-46c0-93b0-67c1cd4740ea"
+    }
+  ],
+  "comparisons": []
+}

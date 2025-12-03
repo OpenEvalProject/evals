@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C69"
+    ],
+    "result": "The authors demonstrate that a polar transport mechanism, combining cytoplasmic diffusion with cortical transport to the cell pole, produces a scale-invariant protein gradient whose shape is determined solely by cell geometry. The gradient's length scale is set by the cell's linear dimensions and is independent of diffusion constants, transport speeds, and chemical rate constants under biologically realistic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C39, C40, and C69 collectively establish the core theoretical finding through mathematical analysis (Equations 2-7) and computational simulations across multiple cell geometries (Figures 2-6). The analytical solutions match simulation results excellently, and the independence from kinetic parameters is demonstrated for the regime of efficient protein capture (k_on*R/D >> 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C67"
+    ],
+    "result": "In spherical cells, the protein concentration gradient along the polar axis scales with cell radius, providing relative rather than absolute positional information. The gradient is approximately exponential with decay length set by the cell radius, and changing diffusion constants or transport velocities only affects the surface-to-cytoplasm protein distribution, not the gradient shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C49, and C67 are well-supported by analytical solutions (Equations 4-6) and simulation data (Figure 2). The electrostatic analogy provides rigorous mathematical foundation, and Figure 2C demonstrates clear scaling when distance is normalized by radius. The independence from kinetic parameters is explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C55",
+      "C68"
+    ],
+    "result": "In cylindrical cells with transport along the long axis, the gradient is exponential with decay length \u03bb = R/2.4 (set by radius), independent of cell length. This enables cells to sense their overall length by monitoring local protein concentration at fixed positions like the midpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C55, and C68 are supported by analytical solutions using Bessel function expansions (Equation 7, Appendix A) and simulations (Figure 3). The decay length formula \u03bb = R/2.4 is derived from the first root of J_0. However, C55's claim about length sensing is somewhat speculative as it proposes a biological function without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C44"
+    ],
+    "result": "Multiple cell types (fission yeast, budding yeast, Drosophila oocyte) exhibit polar arrangements of cytoskeleton filaments that transport proteins toward the anterior pole, and the resulting gradient scales with linear cell dimensions providing size-independent positional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C44 are supported by multiple citations (Kovar et al. 2011, Chesarone-Cataldo et al. 2011, Raman et al. 2018) and Figure 1 illustration. The scaling property is demonstrated theoretically and compared to experimental observations of Bicoid gradients (Gregor et al. 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experimental validation in Giardia flagella shows that kinesin-13 forms an exponential gradient with decay length 0.4 \u00b5m (comparable to flagellar radius) that remains constant across flagella of varying lengths (7-14 \u00b5m), consistent with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, and C72 provide experimental support for the theoretical model. The observed decay length independence from flagellar length and its correspondence to the radius directly validate the model's key predictions. This represents strong experimental confirmation of the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "When proteins can detach from motors during transport (finite residence time), the gradient becomes flatter but scaling with cell radius is preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by simulation results in Figure 6B showing that varying residence times (t_bound) affects gradient steepness but maintains the scaling relationship when distance is normalized by radius. This demonstrates robustness of the scaling property.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C15"
+    ],
+    "result": "The scale-invariant gradient can be used for assembly of intracellular structures whose size scales with cell dimensions, such as cytokinetic rings in budding yeast where ring diameter scales with cell diameter and assembles at fixed relative distance from the pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 proposes a biological application while C14 and C15 cite experimental observations (Kukhtevich et al. 2020) of scaled cytokinetic rings. However, the manuscript does not experimentally demonstrate that the proposed gradient mechanism actually controls cytokinetic ring assembly. This remains a plausible hypothesis requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "Budding yeast represents a promising experimental system where actin cables at the cell cortex could establish polar gradients via myosin V motor transport or actin treadmilling. A Smy1 gradient has been reported but size-dependence remains unmeasured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C74, C76, and C77 describe established yeast cell biology. Claim C75 notes a reported Smy1 gradient (Eskin et al. 2016) but explicitly states size-dependence is unmeasured. This represents a testable prediction rather than a validated result, making the connection to the model uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Actin cable length scaling with cell radius in abnormally large yeast cells could be explained by a scale-invariant gradient of depolymerizing activity, where cable-dependent polar transport of depolymerizing proteins creates a gradient that controls cable length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 cites experimental observations (McInally et al. 2021), but C89 and C90 are explicitly labeled as speculative hypotheses. The manuscript proposes but does not test this mechanism. This represents an interesting application of the model requiring future experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background context establishing that intracellular protein gradients serve various functions including cell polarity and positional information, must often scale with cell size, and are observed in multiple systems including fly embryos (Bicoid), C. elegans (MEX-5), fission yeast (Pom1), and budding yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C26) provide established background knowledge supported by multiple citations. They set the biological context and motivation for the theoretical work but do not represent novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C35"
+    ],
+    "result": "Prior mechanisms for scale-invariant gradients include the Bicoid diffusion-degradation model, nuclear density-dependent degradation, and expander-repressor interactions. Bicoid gradients scale with embryo size across fly species varying by an order of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29, C30, C31, and C35 accurately describe prior work with appropriate citations (Gregor et al. 2005, 2007; Ben-Zvi et al. 2011a,b). These establish the scientific context and alternative mechanisms, demonstrating the authors understand the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Cortical transport occurs in multiple cell types: C. elegans embryos (actin-myosin contractility), budding yeast (actin cable transport), and Chlamydomonas cilia (microtubule motor transport).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C38 cite appropriate references (Mayer et al. 2010, Chesarone-Cataldo et al. 2011, Ishikawa and Marshall 2011) establishing that the transport mechanisms assumed in the model exist in real biological systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "In Chlamydomonas intraflagellar transport, proteins are always transported to the anterior pole where they are released.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by citation to Chien et al. 2017 and represents established knowledge about this transport system, providing biological justification for the model's assumption of polar release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "mRNA localization via polar transport and anchoring could produce scale-invariant gradients, as observed for Bicoid mRNA in fly oocytes. If translated proteins don't diffuse substantially, the mRNA gradient scaling transfers to the protein gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 describe established mechanisms (Weil et al. 2006). Claim C85 makes a logical inference about gradient inheritance from mRNA to protein under specific conditions (limited protein diffusion). This is theoretically sound but represents a prediction rather than demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The model's key requirement is that the cell pole serves as a source and the surface as a sink for diffusing proteins with fixed total number. This can be achieved by cytoplasmic flows instead of motor transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 correctly identify the essential mathematical features of the model (Equation 3) and note that different physical mechanisms (flows vs. motors) could satisfy these requirements. This demonstrates understanding of the model's generality, supported by citation to Howard et al. 2011.",
+    "result_type": "MINOR"
+  }
+]

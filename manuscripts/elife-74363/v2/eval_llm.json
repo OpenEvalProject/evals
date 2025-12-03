@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Dynamic clamp methodology successfully creates half-center oscillators from pharmacologically isolated GM neurons by injecting artificial synaptic and H currents. GM neurons are silent at baseline but generate antiphase bursting when coupled with reciprocal inhibition and H current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C19 describe the experimental methodology and baseline neuronal properties. The dynamic clamp approach is well-established, the observations of GM neuron silence and tonic firing are directly shown in Figure 1C, and the generation of antiphase bursting is demonstrated in Figure 1D with clear experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21"
+    ],
+    "result": "Half-center oscillators exhibit a continuum of mechanisms from escape to release, determined by synaptic threshold position within the membrane potential envelope. In escape, the inhibited neuron controls transitions; in release, the active neuron controls transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C12-C15, C20-C21 establish the theoretical framework and experimental validation of escape and release mechanisms. The position-dependence of mechanism on synaptic threshold is demonstrated in Figures 1D and 2A, consistent with cited theoretical work (Skinner et al., 1994; Wang and Rinzel, 1992). The ERQ metric quantifies this continuum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C30"
+    ],
+    "result": "Circuit output characteristics show systematic relationships with the Escape to Release Quotient (ERQ): cycle frequency exhibits U-shaped dependence, number of spikes per burst shows inverted U-shaped dependence, and spike frequency is higher in escape due to stronger rebound current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C28, C30 describe quantitative relationships between ERQ and circuit properties shown in Figure 2D. The U-shaped frequency relationship is consistent with Sharp et al., 1996. The mechanistic explanation for spike frequency differences (C30) is reasonable given the role of H current in escape, though this is an inference rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Release circuits occupy a larger region of gSyn-gH parameter space and are more robust to conductance variations than escape circuits, which require tight correlation between synaptic and H conductances for stable bursting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are directly supported by Figure 3A showing the distribution of bursting circuits in parameter space. The data clearly show that escape circuits require correlated conductances (diagonal region) while release circuits burst across a broader parameter range. This is a key finding about differential robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "H current has opposite effects on cycle frequency in escape versus release mechanisms: increasing gH increases frequency in escape but decreases it in release. Synaptic conductance increases decrease frequency in both mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe effects shown in Figure 3B. The opposite effects of gH on frequency are clearly demonstrated. The mechanistic explanations (C36-C37) are reasonable inferences based on the known roles of H current in depolarization and the position of synaptic thresholds, though these are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "For certain gSyn-gH parameter combinations, escape and release circuits produce statistically indistinguishable output characteristics (except duty cycle), making mechanism identification from baseline activity alone practically impossible without perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C43 are supported by Figure 3B-E showing black boxes indicating non-significant differences (Wilcoxon test, p>0.05). This is an important finding about the difficulty of mechanism identification. However, the claim that identification is 'practically impossible' (C43) is somewhat overstated\u2014duty cycle does differ significantly between mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At extreme synaptic thresholds, oscillation mechanism is independent of gSyn and gH, but at intermediate thresholds, the mechanism is sensitive to these conductances. Intermediate thresholds produce less regular and more asymmetric bursting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by Figure 4 showing ERQ maps at different synaptic thresholds. The data clearly show mechanism stability at extreme thresholds and sensitivity at intermediate values. The observation of irregular and asymmetric bursting (C48) is shown in Figure 4 supplement 1, though the mechanistic explanation about neuronal asymmetry is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Release circuits lose robustness with temperature increase (9/15 lost oscillations at 20\u00b0C, with increased frequency and irregularity), while escape circuits maintain remarkably stable frequency across the temperature range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe temperature effects shown in Figure 5. The quantitative data (9/15 circuits losing oscillations) is explicitly stated. The contrasting responses are clearly demonstrated in Figure 5A versus 5B. This is a major finding about differential temperature robustness, though the experiments only test one Q10 condition (Q10=1 for dynamic clamp currents).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "Loss of oscillations in release circuits at high temperature results from membrane potential hyperpolarization (causing relative synaptic threshold depolarization) combined with decreased spike amplitude, both of which reduce synaptic current effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, C60 provide mechanistic explanation for temperature effects. The membrane hyperpolarization and spike amplitude decrease are directly measured (Figure 5C-D, with statistical significance). The mechanistic link to oscillation loss is a reasonable inference given the dependence of release on spike-mediated transmission, though not all steps are directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Temperature-dependent conductances (Q10=2) make release circuits more robust by increasing oscillation amplitude and decreasing frequency. In escape, temperature-induced increases in gSyn and gH counteract each other, maintaining constant frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe Case 2 temperature experiments (Figures 6B, 7). The data show that temperature-dependent conductances improve release circuit robustness and maintain escape frequency stability. The explanation about counteracting effects (C64) is supported by reference to Figure 3B parameter maps, providing a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "When both conductances and activation rates have Q10=2, release circuits maintain stable frequency while escape circuits show dramatic frequency increases. In release, opposing effects cancel; in escape, H current activation rate dominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe Case 3 temperature experiments (Figures 6C, 7). The contrasting frequency responses are clearly shown. The mechanistic explanations (C68-C69) are reasonable inferences about which factors dominate in each mechanism, though these represent interpretations rather than direct measurements of individual current contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Modulatory current IMI has mechanism-dependent effects: no effect on escape circuit frequency, decreased frequency in release/mixed circuits, increased robustness in release (larger amplitude, expanded parameter range), but increased irregularity and asymmetry in mixed-mode circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe IMI effects shown in Figure 8. The differential effects on frequency (C70-C71) and amplitude (C72) are statistically supported (Figure 8D). The destabilizing effect on mixed circuits (C73) is supported by CV analysis with p=0.04. The asymmetry amplification (C74) is shown in Figure 8 supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Quantitative comparison shows release circuits are significantly more sensitive to IMI than escape circuits across multiple measures: cycle frequency, amplitude, duty cycle, spikes per burst, and spike frequency within bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 provide statistical comparisons from Figure 8D (N=8). All statistical tests are reported in the figure legend with appropriate paired tests. The conclusion of greater sensitivity in release (C80) is justified by the pattern of significant effects, though 'significantly more sensitive' could be quantified more precisely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "IMI rescues temperature-disrupted release circuits by restoring oscillations at high temperature (4/4 preparations), demonstrating that neuromodulation can compensate for temperature-induced circuit failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe rescue experiments shown in Figure 8E. The quantitative result (4/4 preparations) is explicitly stated. This demonstrates an important interaction between temperature and neuromodulation, though the sample size is small (N=4) and represents a subset of experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10",
+      "C83",
+      "C84",
+      "C91"
+    ],
+    "result": "The central conclusion: circuits with different oscillation mechanisms show dramatically different robustness profiles\u2014escape circuits require tight conductance correlations but resist temperature; release circuits tolerate conductance variations but are fragile to temperature. The same perturbation produces mechanism-dependent effects not observable from baseline activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C10, C83-C84, C91 state the main conclusions synthesizing multiple experimental findings. These are well-supported by the collective evidence from conductance mapping (Figure 3), temperature experiments (Figures 5-7), and modulation studies (Figure 8). The conclusion about hidden differences (C10, C84) is justified by the similarity of baseline outputs despite differential responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C9"
+    ],
+    "result": "The mechanism of oscillation is not fixed but can be altered by perturbations, modulators, and parameter changes, creating mixed-mode oscillations and shifting the balance between escape and release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C9 describe mechanism plasticity demonstrated throughout the paper. Figure 4 shows mechanism shifts with conductance changes, temperature experiments show ERQ changes (Supplementary file 1a), and Figure 7 supplement 1 shows a complete transition from mixed to release with temperature. This is well-supported experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mechanistic differences in state transitions: escape shows graded transitions due to saturated synaptic activation at hyperpolarized thresholds, while release depends on spike-mediated transmission where spike amplitude and frequency are critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide mechanistic explanations for transition differences. These are reasonable inferences based on the properties of synaptic activation curves (Figure 1B) and the position of thresholds, supported by the observation that spike properties matter more in release (Figure 5D). However, these are interpretations rather than direct measurements of transition mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Speculation that variability in previous studies (Grashow et al., 2009) may reflect mechanism differences, and that different gastric mill rhythms (MCN1 vs CabPK) may operate via different mechanisms (release vs escape), explaining their differential temperature sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 are explicitly speculative ('we speculate', 'we propose'). While the hypotheses are reasonable given the current findings, they lack direct experimental support. The connection to Grashow et al., 2009 variability is plausible but untested. The gastric mill rhythm hypothesis is interesting but would require direct measurement of mechanisms in those systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C100"
+    ],
+    "result": "Methodological insights: identifying oscillation mechanisms is challenging, requiring knowledge of all underlying currents. Asymmetric circuits require independent ERQ calculation for each neuron. Perturbation is necessary to reveal mechanism differences. Future work needs new methods to extract mechanisms from operating biological circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88, C90, C100 provide methodological conclusions and future directions. These are well-justified by the experimental challenges encountered (e.g., asymmetry effects in Figure 4, similarity of baseline outputs in Figure 3). The call for new methods (C100) is reasonable given the limitations identified, though somewhat general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Conductance correlations contribute to escape circuit robustness: positive correlation between gSyn and gH in escape circuits (Figure 3A) enables temperature-induced changes to counteract each other, maintaining stable frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 connect conductance correlations to temperature robustness. The positive correlation in escape is visible in Figure 3A. The counteracting effect is demonstrated in Figure 6B2. This links the parameter space structure to functional robustness, though the causal relationship is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C16",
+      "C85",
+      "C96"
+    ],
+    "result": "Background context: reciprocal inhibition is a fundamental building block in nervous systems, forming half-center oscillators. Mixed mechanisms are common in biological circuits. Conductance correlations enhance circuit robustness more than specific parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C16, C85, C96 provide background knowledge supported by extensive citations. These establish the context for the study and are well-supported by prior literature. The statements about mixed mechanisms and conductance correlations are relevant to interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

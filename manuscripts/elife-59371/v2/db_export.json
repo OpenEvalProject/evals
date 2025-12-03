@@ -1,0 +1,1921 @@
+{
+  "submission": {
+    "id": "ee99907e-fabf-4804-a389-baa2efd86063",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T12:18:43.760914Z",
+    "updated_at": "2025-12-03T12:18:43.760914Z"
+  },
+  "content": [
+    {
+      "id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "submission_id": "ee99907e-fabf-4804-a389-baa2efd86063",
+      "content_type": "manuscript",
+      "content_text": "# Cell-state transitions and collective cell movement generate an endoderm-like region in gastruloids\n\n## Authors\n\n- Ali Hashmi<sup>1</sup> ([ORCID: 0000-0001-9946-7679](https://orcid.org/0000-0001-9946-7679))\n- Sham Tlili<sup>1</sup> ([ORCID: 0000-0001-6018-9923](https://orcid.org/0000-0001-6018-9923))\n- Pierre Perrin<sup>1</sup>\n- Molly Lowndes<sup>2</sup>\n- Hanna Peradziryi<sup>2</sup>\n- Joshua M Brickman<sup>2</sup> ([ORCID: 0000-0003-1580-7491](https://orcid.org/0000-0003-1580-7491))\n- Alfonso Mart\u00ednez Arias<sup>4</sup> ([ORCID: 0000-0002-1781-564X](https://orcid.org/0000-0002-1781-564X))\n- Pierre-Fran\u00e7ois Lenne<sup>1</sup> ([ORCID: 0000-0003-1066-7506](https://orcid.org/0000-0003-1066-7506)) \u2020\n\n### Affiliations\n\n1. Aix-Marseille University, CNRS, UMR 7288, IBDM, Turing Center for Living Systems Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))\n2. Novo Nordisk Foundation Center for Stem Cell Biology (DanStem), University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n3. Novo Nordisk Foundation Center for Stem Cell Medicine (reNEW), University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n4. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n5. Systems Bioengineering, DCEXS , Universidad Pompeu Fabra, ICREA Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))\n\n\u2020 Corresponding author\n\n## Abstract\n\nShaping the animal body plan is a complex process that involves the spatial organization and patterning of the different germ layers. Recent advances in live imaging have started to unravel the cellular choreography underlying this process in mammals, however, the sequence of events transforming an unpatterned cell ensemble into structured territories is largely unknown. Here, using gastruloids \u20133D aggregates of mouse embryonic stem cells- we study the formation of one of the three germ layers, the endoderm. We show that the endoderm is generated from an epiblast-like homogeneous state by a three-step mechanism: (i) a loss of E-cadherin mediated contacts in parts of the aggregate leading to the appearance of islands of E-cadherin expressing cells surrounded by cells devoid of E-cadherin, (ii) a separation of these two populations with islands of E-cadherin expressing cells flowing toward the aggregate tip, and (iii) their differentiation into an endoderm population. During the flow, the islands of E-cadherin expressing cells are surrounded by cells expressing T-Brachyury, reminiscent of the process occurring at the primitive streak. Consistent with recent in vivo observations, the endoderm formation in the gastruloids does not require an epithelial-to-mesenchymal transition, but rather a maintenance of an epithelial state for a subset of cells coupled with fragmentation of E-cadherin contacts in the vicinity, and a sorting process. Our data emphasize the role of signaling and tissue flows in the establishment of the body plan.\n\n## Introduction\n\nGastrulation is a crucial stage of animal development that results in the laying down of the body plan through the specification of the germ layers \u2013 the endoderm, the mesoderm, and the ectoderm \u2013 and their organization with reference to three orthogonal axes (Wolpert et al., 2006; Solnica-Krezel and Sepich, 2012; Williams and Solnica-Krezel, 2017). Defects in gastrulation result in premature death or birth defects (Ferrer-Vaquer and Hadjantonakis, 2013). In most vertebrates, gastrulation entails the reorganization of a large mass of cells that has been generated in a burst of cell divisions and the process can be easily followed and manipulated in the lab as the embryos develop externally. Mammalian embryos are different, in that an increase in the cellular mass is concomitant with gastrulation (Snow, 1977; the fact that they develop in the uterus of the mother makes this coupling and the process of gastrulation difficult to study). For this reason, our understanding of mammalian gastrulation is poor relying on mutant analysis and description of patterns of gene expression (Anderson and Ingham, 2003; Artzt, 2012). Recent live imaging of the process (McDole et al., 2018) has added an important dimension to our understanding of the event, but this is low throughput and involves time consuming analysis. Gastrulation is, essentially, a cellular process that needs to be investigated at the cellular level and it would be useful to complement the in vivo studies with alternatives in vitro.\n\nThe advent of in vitro models of mammalian development provides several advantages (Fu et al., 2021). Firstly, unlike embryos, such systems are amenable to systematic perturbations. The system size and its composition can be conveniently modulated by changing the type and the initial number of cells seeded. Secondly, environmental cues \u2013 not limited to morphogen concentration (Heemskerk et al., 2019), such as geometric confinements and properties of extracellular matrix \u2013 can be finely tuned. Lastly, such systems are amenable to live imaging at single cell resolution to follow cell fates and cell dynamics.\n\nGastruloids offer the opportunity to enrich our understanding of the agents that may influence gastrulation/embryogenesis \u2013 particularly the role of environment, forces, and signaling. Upon exposure to external cues and morphogens, gastruloids show an intrinsic capability to polarize, elongate and pattern in a manner that is reminiscent of the early embryo (van den Brink et al., 2014; Turner et al., 2017). Strikingly, 3D gastruloids exhibit a multiaxial organization and spatiotemporal patterning of Hox genes (Beccari et al., 2018) with signatures of somitogenesis (van den Brink et al., 2020; Veenvliet et al., 2020). From in vitro assays, it was shown that combinations of embryonic and extraembryonic stem cells is needed to generate a pro-amniotic cavity (Harrison et al., 2017) and gastrulating embryo-like structures (Sozen et al., 2018). Moreover, by exploiting aggregates, the role of mechanics \u2013 for instance a relationship between the physical contact of cells with their confinement and the expression of the mesoderm transcription factor Brachyury (T-Bra) \u2013 has been revealed (Sagy et al., 2019). Besides tridimensional (3D) systems, planar/2D gastruloids confined on micropatterns have emphasized the role of the boundary conditions, shapes (Blin et al., 2018) and scaling parameter on the patterning of the different germ layers (Warmflash et al., 2014; Etoc et al., 2016; Morgani et al., 2018; Xue et al., 2018).\n\nHowever, how a genetically unpatterned and morphologically symmetric 3D ESCs aggregate transforms into a spatially organized and patterned array of germ layers is largely unknown. In particular, how cellular movements, their rearrangements and patterning coordinate has not been explored. In embryo, the widespread notion is that the endoderm is formed from a single pool of cells that firstly become mesenchymal, then migrate and a proportion of which eventually re-epithelialize (Williams et al., 2012). This notion has been recently challenged by in vivo observations that show that the definitive endoderm is formed in absence of an epithelial to mesenchymal transition (EMT) (Scheibner et al., 2021).\n\nHere, we dissect the formation of an endoderm-like region in 3D gastruloids, focusing on the spatio-temporal deployment and cell state transitions that yield the aforesaid region; specifically, starting from an ensemble of epithelial cells, we follow the cell-state transitions that govern the mesendodermal-like progenitors by looking at expression of the transcription factor Brachyury (T-Bra) and E-cadherin (E-cad). We find that an endoderm-like region is established from a distinct pool of cells, different from the mesoderm. Furthermore, we identify tissue scale flow that localizes the progenitors of the endoderm at a pole. Lastly, we find that a heterogeneity of cellular junction tension could be responsible for segregating the endoderm-like region from the rest of the aggregate via a cell-sorting mechanism.\n\n## Results\n\n### A pole of E-cadherin expression emerges at the tip of the aggregate\n\nTo induce a pluripotent, post-implantation epiblast state of the mouse ESCs (Hayashi et al., 2011), we placed the cells in Activin and FGF throughout the protocol (Figure 1A). A portion of the aggregates were exposed to the Wnt agonist Chiron (Chi) as the combination with Activin and Chi tends to promote endoderm formation (Figure 1A; Morgani et al., 2018; Engert et al., 2013). We investigated the aggregate morphologies and gene expression patterns following a pulse of Chi (lasting a day from the second day post plating).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental protocol; mESCs seeded onto a low-adherence substrate form aggregates that are exposed to N2B27 medium, FGF and Act throughout the experiment. In addition, a pulse of Chi is provided for 24 hr - starting at 48 hr-post plating. (B) The box-whisker plot shows the distribution of elongation for Chi + (n = 37) and the control (Chi -) aggregates (n = 20) (Mann-Whitney test with correction, p-value = 3 x 10\u20135, N = 2 replicates). The insets delineate the contours of the two classes of aggregates. (C) Box-whisker plot showing the distribution of E-cad polarization in the Chi + (n = 37) and Chi - aggregates (n = 20). The polarization of the signal is defined by the maximum contrast between the two halves of the aggregate (Mann-Whitney test with correction, p = 7 x 10\u201310, N = 2 replicates). The insets display E-cad intensity within the aggregates. (D) Snapshots of aggregates (first column composed of E-cad-GFP/Oct4-mCherry and the second column composed of T-Bra-GFP/NE-mKate2 and E14Tg2a.4) exposed to Chi pulse at different developmental stages (scale bars for the columns represent 100 \u00b5m). The T-Bra-GFP/NE-mKate2 aggregate was generated from ~200 cells. (E) Temporal changes in the mean E-cad intensity profile between 48 and 92 hr for aggregates (Ecad-GFP/Oct4-mCherry) exposed to Chi (n = 7 aggregates, N = 3 replicates) and the control (n = 7 aggregates, N = 1 replicate). (F) The plot illustrates the polarization of E-cad (n = 14 aggregates, N = 3 replicates) with respect to the deformation of the aggregates between 72 and 92 hr; the thick and the dashed lines represent the mean and the mean \u00b1 SD, respectively. (G) T-Bra polarization (n = 11 aggregates) with respect to the aggregate deformation between 72 and 96 hr; the thick and the dashed lines represent the mean and the mean \u00b1 SD, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Targeting strategy for the generation of endogenously tagged fusion protein reporter lines by adding fluorecent proteins mGFP or mCherry to the C-terminus of Ecadherin (Cdh1) or Oct4 (Pou5f1), repectively. (B) Karyotype analysis of two Ecad-GFP/Oct4-mCherry clones, both with the expected number of chromosomes (40). (C) Representative image of the chromatin spread for karyotype analysis. (D) Western blot analysis of heterozygous reporter lines with one wildtype and one targeted Oct4 allele with a fluorecent protein (FP) tag (mCherry, mCFP or mGFP), compared to the E14 parental control. Oct4 staining shows the wildtype protein at the expected molecular weight (~38 kDa) and the fusion proteins at higher molecular weights, corresponding to the addition of the 37 kDa tags. Tubulin staining is shown as a loading control. (E) Western blot analysis of the heterozygous dual reporter Ecad-GFP/Oct4-mCherry line (E-G/O-C) compared to the E14 parental control. E-cadherin staining shows the wildtype protein at the expected molecular weight (~135 kDa) and the fusion protein (Ecad-GFP) at a higher molecular weight, with the addition of the 37 kDa GFP tag. Tubulin is shown as a loading control. (F) Confocal max projection images showing fusion reporter expression for Ecad-mGFP and Oct4-mCherry. Scale bar = 10 \u03bcm.\n\nAggregates exposed to Chi lose their spherical morphology and acquire a teardrop shape (Figure 1B, day 4, Video 1). We find that 30/37 or ~80% aggregates qualify as elongated with an elongation threshold set to 0.125 (see also Video 2). In contrast, 15/20 or 75% of control aggregates remained spherical (Figure 1b, day 4). At the pointed end of the Chi exposed aggregates, we observed an E-cadherin (E-cad)-rich region, which was absent in the control aggregates (Figure 1C, Figure 1\u2014figure supplement 1). The E-cad pole emerges from an initially homogeneous distribution of E-cad (Figure 1D, Video 3). Likewise, a T-Brachyury (T-Bra)-rich pole, clearly visible at the tip of the aggregate at day 4, emerges from a spatially homogeneous distribution at day 3.\n\n![Video 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/59371/elife-59371-video2.mp4.jpg)\n\n**Video 2.:** In magenta, aggregates were pulsed with Chi between 48 hr and 72 hr and have a T-Bra expression and polarization. In blue, control Gastruloids that were not pulsed and do not exhibit T-Bra expression.\n\n![Video 3.](https://cdn.elifesciences.org/articles/59371/elife-59371-video3.mp4.jpg)\n\nTime-lapse imaging shows distinct time evolution of global E-cad and T-Bra signals. While E-cad is expressed from the early time points (Figure 1D, day 2), T-Bra expression follows exposure to Chi (Figure 1D and Video 4). The Chi pulse triggers a decay in E-cad level (mean intensity, Figure 1E and Video 5). T-Bra level, maximal just before removal of Chi, gradually decreases thereafter (Videos 2 and 6).\n\n![Video 4.](https://cdn.elifesciences.org/articles/59371/elife-59371-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/59371/elife-59371-video5.mp4.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/59371/elife-59371-video6.mp4.jpg)\n\nMost aggregates show a single pole of T-Bra (35/64), some display multiple poles (18/64) and 11/64 do not polarize (Video 2). We then asked whether the polarized expression of E-cad precedes, follows or is concomitant with the deformation of the aggregates. Using descriptors of aggregate\u2019s shape and polarization of fluorescence signal (see Materials and methods), we found that E-cad and T-Bra polarize prior to the onset of tip formation (Figure 1F and G), suggesting a possible role of E-cad and T-Bra in the aggregate\u2019s shape polarization.\n\n### E-cadherin expression defines an endoderm-like region in the gastruloid\n\nTo resolve the spatial distribution of E-cad and T-Bra expressing cells at the single-cell level, aggregates exposed to Chi were stained at day 4. As shown in Figure 2A, a group of E-cad expressing cells is localized at the tip, spatially segregated from, and surrounded by T-Bra expressing cells. Furthermore, we observed that this core expresses Sox17 (Figure 2A, inset, Figure 2\u2014figure supplement 1) and Foxa2 (Figure 2\u2014figure supplement 1, Video 7) \u2013 markers of the endoderm. We confirmed that Sox2 is present earlier but absent at 5 days-pp while Sox17 is retained (Figure 2\u2014figure supplement 1). These observations lead us to conclude that the group of E-cad expressing cells demarcates an endoderm-like region in the gastruloids. Figure 2B shows a histogram of the various cell populations at the tip of aggregates. The core of E-cad/Sox17 expressing cells and the T-Bra expressing cells constitute the majority of the cell population near the tip (Figure 2B). Nevertheless, a minority outside the core expresses either Sox17 alone or in conjunction with T-Bra. To obtain some insight into the supracellular tissue organization, we further determined the local neighborhood of the different cell populations (Figure 2C). The E-cad/Sox17 expressing cells that form the core maintain a relatively larger simply-connected-component (126 of 131 Ecad+/Sox17+ cells) and a homotypic neighborhood (111 E-cad+/Sox17+ cells maintain an Ecad+/Sox17+majority neighborhood), which implies that they form a tightly packed group of cells. In contrast, the T-Bra expressing cells form multiple simply connected-components (20 components) suggesting that they are sparsely distributed around the core. The E-cad+/Sox17+ cells thus form a compact region that is flanked by sparse T-Bra+ cells and few other cell types that span widely about the tip (Figure 2D and Figure 2\u2014figure supplement 2 for two other aggregates).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig2-v2.jpg)\n\n**Figure 2.:** (A) aggregate stained at 96 hrs-pp for E-cad and T-Bra; the inset shows the endoderm-like cells at the tip expressing both E-cad and Sox17, surrounded by T-Bra+ cells. (B) the bar chart delineates the population fraction of the different cell populations present near the tip (n = 3 aggregates: 268, 179, and 150 cells, N = 2 replicates) with the error bars indicating the SD. (C) Spatial connectivity graph (Delaunay Mesh) of the different cell populations in an aggregate fixed at 96 hr-pp (D) Spatial distribution of the different cell types near the tip of a representative aggregate (stained at 96 hr-pp), its projection and the respective population fractions as a function of the distance from the tip of the aggregate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Immunostaining for E-cadherin, Sox17, Foxa2, Ph3, and Sox 2 in aggregates. At 96 hrs-pp, islands of E-cad+ cells express Foxa2 and Sox17. At 120 hr-pp (bottom images), E-cad+ cells are found to still express high levels of Sox17. Sox2 being an early marker of the endoderm is absent at this stage. E-cad/Ph3/Foxa2: n = 5 aggregates, N = 2 replicates; Foxa2/E-cad/T-Bra: n = 3, N = 2 replicates; Sox17/E-cad/T-Bra: n = 13 aggregates, N = 2 replicates; E-cad/Sox17/Sox 2: n = 5 aggregates, N = 1 replicate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Spatial distribution of E-cad/Sox17, T-Bra, Sox17, T-Bra/Sox17 expressing cells near the tip in two representative aggregates (stained at 96 hrs-pp), their projection and their respective population fractions as a function of the distance from the tip.\n\n![Video 7.](https://cdn.elifesciences.org/articles/59371/elife-59371-video7.mp4.jpg)\n\n### Endoderm is established from an epiblast-like population\n\nTo probe how the endoderm-like region is established in gastruloids, we performed time-lapse imaging of the aggregates at single cell resolution. At the early stages E-cad expression pervades the entire aggregate; It is present at every cell-cell contact forming a quite homogeneous network of junctions. However, this network undergoes a gradual fragmentation (Figure 3A and Videos 8\u201311). The level of E-cad decreases temporally while a small fraction is retained, which eventually localizes near the aggregate\u2019s tip. Within our immunostainings, we found consistently the presence of some E-cad/T-Bra cells that express lower levels of E-cad compared to their neighbors devoid of T-Bra (Figure 3\u2014figure supplement 1A, 92 hrs-pp). In view of earlier studies (Turner et al., 2014; Fernando et al., 2010), a gradual repression of E-cad via increasing levels of T-Bra may possibly account for the fall of the E-cad level in the junctional network. Furthermore, in immunostainings at 3 days-pp, we notice only a small fraction of cells \u2013 distributed in a salt and pepper manner \u2013 that express Foxa2 (Figure 3\u2014figure supplement 1B). Therefore, at 72 hr-pp, we do not find an organized group of cells that can potentially yield the endoderm. Additionally, at this stage, the cell population in the aggregates can be broadly classified into three categories: a class of cells that express both E-cad and T-Bra and two classes that express either one of the two markers (Figure 3B, left). Additionally, the E-cad+/T-Bra- cells are also found to be the ones expressing Sox2, akin to an epiblast. The E-cad/T-Bra expressing cells constitute most of the cell population (~70% of the total) and are surrounded by the T-Bra expressing cells (Figure 3B, right). The cells expressing only E-cad \u2013 present in the minority \u2013 are present mainly within the core of the E-cad/T-Bra expressing cells (Figure 3B, right, inset). A spatial connectivity graph shows that the cells in the core (E-cad+/T-Bra+) are found to be tightly packed \u2013 with 70 out of 81 of E-cad+/T-Bra+ cells forming the largest connected component - and maintain a homotypic neighborhood (72 E-cad+/T-Bra+ cells maintain an E-cad+/T-Bra+ neighborhood) (Figure 3b, right). Yet again the cells expressing only T-Bra are sparsely wrapped around the core (13 components for 31 T-Bra+ cells) and therefore, have a relatively heterotypic neighborhood (12 T-Bra+ cells have an E-cad+/T-Bra+ majority neighborhood). Spatial distribution of the cell types (mean of n = 7 aggregates) at 72 hrs-pp depicts that the cells expressing only E-cad are mostly present within the E-cad+/T-Bra+ cell islands, whereas the T-Bra+ cells are situated at the periphery of the aggregate (Figure 3C). Interestingly, at later time-points but before the aggregates are fully polarized, we observed an \u2018archipelago\u2019 of E-cad expressing cells separated by T-Bra expressing cells (Figure 3D, 92 hrs-pp, Figure 3\u2014figure supplement 1A). At day 4, the E-cad expressing cells exhibit low levels of N-cadherin and Snail1, supporting the absence of an EMT transition for the E-cad expressing cells (Figure 3\u2014figure supplements 1C and 2). These data are consistent with recent observations in the mouse (Scheibner et al., 2021). Additionally, the islands of E-cad expressing cells were found to be positive for the pluripotency markers Oct4 (Figure 3D). The Oct4 expression correlates inversely with the T-Bra expression, suggesting pluripotency and an epiblast-like nature of these cells (Figure 3E). Altogether our data suggests that the endoderm-like region - identified at the end of day 4 \u2013 originates from islands of pluripotent and epithelial cells expressing E-cadherin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig3-v2.jpg)\n\n**Figure 3.:** (A) Time lapse images showing a gradual fragmentation and loss of E-cad network at 73, 80, 85, and 92 hrs-pp; scale bar represents 100 \u00b5m (B) (left) The three different cell populations in the aggregate are marked at 72 hrs-pp: namely cells that express only T-Bra, cells that express both T-Bra and E-cad, and cells that express only E-cad. (right) the fraction of the total population of cells for the three classes are provided in the histogram (n = 7 aggregates: 126, 116, 121, 102, 85, 184, and 163 cells, N = 2 replicates) with the SD shown by the error bars; inset shows the spatial distribution of the cells in one such aggregate (right) Spatial connectivity graph is generated for the aggregate at 72 hrs-pp. (C) Spatial distribution of the population fraction of the different cell types as a function of the radial distance from the aggregate centre (n = 7 aggregates: 126, 116, 121, 102, 85, 184, and 163 cells, N = 2 replicates). (D) Islands of E-cad/Oct4 expressing cells surrounded by T-Bra+ cells are present within the aggregate fixed at 92 hr-pp; the inset zooms on a few such islands. (E) Pixel intensity correlation plot between Oct4 and T-Bra (n = 6 aggregates, N = 2 replicates).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Staining for E-cadherin, T-Bra and Sox2 in aggregates at 92 hrs-pp. White arrows mark the junctions between cells that are expressing both E-cadherin and T-Bra. Notice that these cells do not express Sox2 and express E-cadherin only weakly compared to the cells that express E-cadherin/Sox2. (Right panel) Staining for E-cadherin and Sox2 in an aggregate at 92 hrs-pp. (B) Staining for E-cadherin, T-Bra and Foxa2 in aggregates at 72 hrs-pp. Few Foxa2-positive cells are found within the tissue which expresses in large majority T-Bra. (C) Staining for E-cadherin and N-cadherin in aggregates at 96 hrs-pp. n = 4, 7, and 5 aggregates (N = 1 replicate) for panels A, B, and C, respectively.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig3-figsupp2-v2.jpg)\n\n![Video 8.](https://cdn.elifesciences.org/articles/59371/elife-59371-video8.mp4.jpg)\n\n![Video 9.](https://cdn.elifesciences.org/articles/59371/elife-59371-video9.mp4.jpg)\n\n![Video 10.](https://cdn.elifesciences.org/articles/59371/elife-59371-video10.mp4.jpg)\n\n**Video 10.:** Four planes 12.5 \u00b5m apart are superimposed on the right panel.\n\n![Video 11.](https://cdn.elifesciences.org/articles/59371/elife-59371-video11.mp4.jpg)\n\n![Video 12.](https://cdn.elifesciences.org/articles/59371/elife-59371-video12.mp4.jpg)\n\n### Tissue flows and a local sorting segregate islands of E-cadherin expressing cells\n\nOur observations raise the possibility that the islands of E-cad+ cells sort and form a compact group of cells. To test this possibility, we analyzed cell movements prior to the establishment of the aggregate tip. We imaged the aggregates with inverted two-photon microscopy adding Sulforhodamine B (SRB) to the medium which enables to visualize cell contours and extracellular space. We perform optical flow (See Materials and method) on the SRB signal (Figure 4A\u2013B, Videos 8\u201314) and reconstruct the coarse-grained velocity field within the tissue. The flow field clearly shows that there is a directed flow of cells towards the future region that will form the tip of the gastruloid (Figure 4A\u2013B, Figure 4\u2014figure supplement 1, and Videos 15\u201317). E-cad- cells flow backward at the periphery, away from the tip, which creates a physical separation between the two populations: E-cad+ and E-cad- cells (Videos 8\u201310). Islands of E-cad+ cells are highly dynamic during their movement toward the tip (Video 11). The directed flow and recirculation are not observed in absence of Chi pulse (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Cellular movements are quantified during the aggregate elongation using two-photon imaging of the aggregates with Sulforhodamine B (SRB) added in the medium, which enables to visualize cell contours. Optic flow measurements are performed on the SRB signal and the obtained velocity fields overlapped on the GFP signal corresponding to (A) E-cad and (B) T-Bra (N = 3 replicates). (C) Box-whisker plot shows the distribution of the ratio of the cell-junction tension heterogeneity between E-cad expressing cells (+), and between E-cad expressing cells and their neighbors (-) at 72 hr-pp (n = 28 junctions, N = 2 replicates) and 96 hr-pp (n = 54 junctions, N = 2 replicates); 25th and 75th quartiles together with the minimum and maximum values are shown; the insets to the left depict regions on the E-cad+ cell islands where the angle measurements were made. No significant statistical difference between the two time points (Kolmogorov-Smirnov Test; p-value = 0.37) (D) Cartoon depicting the different steps leading to the formation of an endoderm-like region within the gastruloid. Upon addition of Chi, majority of the E-cad expressing cells begin to express T-Bra. The transient expression of T-Bra represses E-cad expression in T-Bra+/E-cad+. Formation of islands of E-cad expressing cells surrounded by T-Bra+ cells; these islands are transported to one end of the aggregate via a tissue-scale movement. Islands of E-cad expressing cells segregate to give rise to the endoderm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cell collective movements are quantified in both aggregates cultured in normal conditions (with a chiron pulse between 48 hrand 72hr pp) and in non-pulsed aggregates. Mosaic aggregates are used (100 cells wild-type and 20 cells with T-Bra-GFP and nuclear membrane mKate) which enables to perform optic flow on the sparse nuclear membrane signal obtained by epifluorescence microscopy. Here, the velocity fields (averaged over 2 hr) are represented on the T-Bra-GFP signal. Collective anisotropic flows associated with a re-circulation of cells from the tip to the back are only observed in the chiron pulse case. Control: n = 4 aggregates, N = 2 replicates; pulsed: n = 3 aggregates, N = 2 replicates.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59371/elife-59371-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Examples of E-cad islands used to measure relative tensions between junctions inside an E-cad island and the non-E-cad cells.\n\n![Video 13.](https://cdn.elifesciences.org/articles/59371/elife-59371-video13.mp4.jpg)\n\n![Video 14.](https://cdn.elifesciences.org/articles/59371/elife-59371-video14.mp4.jpg)\n\n![Video 15.](https://cdn.elifesciences.org/articles/59371/elife-59371-video15.mp4.jpg)\n\n![Video 16.](https://cdn.elifesciences.org/articles/59371/elife-59371-video16.mp4.jpg)\n\n![Video 17.](https://cdn.elifesciences.org/articles/59371/elife-59371-video17.mp4.jpg)\n\nDespite dynamic cell rearrangements and shear in the bulk of the aggregate, the islands of E-cad expressing cells are not fully fragmented, implying that physical forces maintain their cohesion (Video 11). The E-cad expressing cells in islands have a significantly smaller contact angle with the surrounding cells than with each other (Figure 4c, inset). Assuming that the cell-cell contacts are determined by interfacial tension (Supplementary material), we measured the angle of contacts between E-cad expressing cells within the islands and with neighboring cells (Figure 4C). They correspond to a significant higher tension at the outer boundary of islands at days 3 and 4 (Figure 4C, Figure 4\u2014figure supplement 2). Such difference could account for the maintenance of E-cad+ cell islands during their transport as well as their segregation at the tip, where E-cad+ cells would sort from the T-Bra+ cells to form a large endoderm domain.\n\n## Discussion\n\nIn contrast to classical gastruloids, when aggregates of ESCs are grown in Activin and FGF, they go through a clear phase similar to the postimplantation epiblast. In this state, suppression of Wnt signaling leads to anterior neural development (Girgin et al., 2021) but, as we show here, exposure to Wnt signaling leads to fates associated with primitive streak, as evidenced by expression of T-Bra and the emergence of an endoderm-like region. We also observe directional and coordinated movements of cell ensembles that mimic some aspects of mammalian gastrulation, in particular the epithelial organization of the gastruloid at the time of Chi application. Under Chi exposure, that mimics the Wnt/\u03b2-catenin signaling, the pluripotent epiblast-like cells (with the exception of a few cells) experience a massive wave of T-Bra expression and a loss of E-cad-mediated contacts (Figure 4D). The cells near the periphery specifically exhibit high levels of T-Bra and low levels of E-cad expression (Figure 3B and C). A similar observation has been made on 2D micropatterns in which a T-Bra wave emanates and travels inwards, from the boundary where E-cad is absent (Martyn et al., 2019). Loss of E-cad contacts in parts of the aggregate leads to the appearance of pluripotent E-cad+ cell islands (Sox2 or Oct4 positive), that are enveloped by T-Bra expressing cells (Figure 3, B, D, Figure 3\u2014figure supplement 1, and Figure 4D). All the while a coordinated motion of the cells within the aggregate arrange the islands of the E-cad/Sox2/Oct4 expressing cells at one pole of the aggregate. This pole protrudes outwards to form the tip. The E-cad islands subsequently segregate at the tip and are found to express markers characteristic of the endoderm (Figures 2 and 4D).\n\nWhile we cannot rule out the possibility that the mechanogenetic trajectory followed by cells in the gastruloids may be different from that in the embryo, our data are consistent with recent observations in the embryo (Scheibner et al., 2021) that challenged the prevailing view that endoderm forms from a mesendodermal primodium. In the mouse (Scheibner et al., 2021) and in the gastruloids (our work and Vianello and Lutolf, 2020) the endodermal progenitors do not undergo an Epithelial-Mesenchymal transition (EMT) and emerge from a different pool of cells (E-cad+ /T-Bra-) than the mesodermal-like precursor cells (T-Bra+). Vianello and Lutolf further reported that within 7 days the endoderm primordium in the gastruloids give rise to different expression territories corresponding to anterior foregut, midgut and hindgut (Vianello and Lutolf, 2020), suggesting that what we observe in vitro follows closely the events in vivo. Altogether the in vivo and in vitro data point to a mechanism where the endoderm tissues originate from the epiblast via a trajectory that differs from that of the mesodermal cells.\n\nA surprising feature of endoderm specification in gastruloids (see also Pour et al., 2019; Vianello and Lutolf, 2020) is the appearance of endodermal cells as small islands that coalesce into a continuous tissue. The evidence that a similar mechanism is at play in the mouse embryo remains partial, although a recent report suggests that endodermal progenitors emerge in small islands (see Figure 3 in Probst et al., 2021). In zebrafish, a similar mode of endoderm specification has been reported, where it is the predominant mode (Montero et al., 2005; Nair and Schilling, 2008; Warga and N\u00fcsslein-Volhard, 1999). The clear manifestation of this mode of specification in the gastruloids might reflect that ancestral modes are emphasized in this model (Steventon et al., 2021).\n\nThe segregation of endodermal-like cells in the gastruloids is a consequence of a wave of cell state transitions, a global flow and surface tension heterogeneity. Whether the same mechanism exists at the primitive streak in the mouse embryo remains to be explored. The mechanism described here cannot be reduced to a simple cell-sorting mechanism based on differential adhesion. Different cellular mechanisms are at stake: advection by tissue flow, cell sorting by cellular motions, but also cell division, cell death, and cell differentiation that constantly modify the number of constituent cells and their pattern. How these different cell events lead to the eventual tissue pattern will require further study. Our work emphasizes the coupling between biochemical signaling and tissue flows during endoderm formation, and perhaps more generally during the morphogenesis of germ layers. Furthermore, it illustrates the potential of in vitro models of early embryogenesis to decouple and study these events.\n\n## Materials and methods\n\n### Cell culture and gastruloids\n\nA complete description of the culture conditions and the protocol for making gastruloids is present in Baillie-Johnson et al., 2015. Nevertheless, a twofold modification was made to the original protocol.\n\n* We formed our aggregates in low-adherence condition in 96 well plates (Costar ref: 7007) and microwell plates (400 um wells, SUNBIOSCIENCE ref: Gri3D).\n\nList of cell lines used:\n\nAll cell lines were tested free from mycoplasma contamination by qPCR.\n\n### Immunostaining\n\nImmunostaining was performed by fixing the aggregates (4% PFA in PBS with 1 mM CaCl2 and 0.49 mM MgCl2 overnight at 4 \u00b0C), followed by washing and blocking for 1 hour in PBSFT buffer (PBS with 10% FBS, 0.2% Triton X-100). Aggregates were incubated with primary antibodies, washed, and incubated again with secondary antibodies. The incubations were done overnight at 4 \u00b0C.\n\nMentioned below is a list of primary antibodies used in this study:\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibodies</th>\n      <th>Species</th>\n      <th>Reference</th>\n      <th>Provider</th>\n      <th>Dilution</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Brachyury</td>\n      <td>Goat</td>\n      <td>AF2085</td>\n      <td>RD system</td>\n      <td>1:80</td>\n    </tr>\n    <tr>\n      <td>E-cadherin</td>\n      <td>Rat</td>\n      <td>M108</td>\n      <td>Takara</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>anti-GFP</td>\n      <td>Chicken</td>\n      <td>GFP-1020</td>\n      <td>Aves</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Sox17</td>\n      <td>Goat</td>\n      <td>AF1924</td>\n      <td>RD system</td>\n      <td>1:80</td>\n    </tr>\n    <tr>\n      <td>FoxA2</td>\n      <td>Goat</td>\n      <td>sc-6554</td>\n      <td>Santa-Cruz</td>\n      <td>1:50</td>\n    </tr>\n    <tr>\n      <td>CDX2</td>\n      <td>Rabbit</td>\n      <td>MA514494</td>\n      <td>Thermo</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Gata6</td>\n      <td>Goat</td>\n      <td>AF1700</td>\n      <td>RD system</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Sox2</td>\n      <td>Mouse</td>\n      <td>Sc-365823</td>\n      <td>Santa Cruz</td>\n      <td>1:100</td>\n    </tr>\n    <tr>\n      <td>Snail</td>\n      <td>Goat</td>\n      <td>AF3639</td>\n      <td>RD system</td>\n      <td>1:50</td>\n    </tr>\n  </tbody>\n</table>\n\n*We used Alexa dyes (ThermoFisher) against the primary antibodies.\n\n### Live and fixed imaging\n\nEpifluorescence time-lapse imaging of gastruloids was achieved in a chamber \u2013 maintained at 37 \u00b0C, 5% CO2 with a humidifier \u2013 using an AxioObserver inverted microscope (Carl Zeiss) with a 20 x LD Plan-Neofluar 0.4 NA Ph2 objective. A white LED source (Laser2000, Kettering UK) was used for illumination. A second setup with similar specifications was also utilized for long-term imaging.\n\nFixed gastruloids were loaded on MatTek dishes (MatTek corporation, ref: P35G-1.5\u201314 C) and imaged using a confocal microscope (Zeiss LSM 880) with a 40 \u00d7 1.2 NA W Korr objective.\n\nBiphoton imaging of gastruloids was achieved in a chamber- maintained at 37 \u00b0C, 5% CO2 with a humidifier \u2013 using a Zeiss 510 NLO (Inverse - LSM) with a femtosecond laser (Laser Mai Tai DeepSee HP) (900 nm) with a 40 x/1.2 C Apochromat objective. Seventy-two hr old gastruloids were transferred from 96-well plates to either MatTek dishes (MatTek corporation, ref: P35G-1.5\u201314 C) or to microwell plates (400 um wells, SUNBIOSCIENCE ref: Gri3D). To visualize intercellular space, we added 32 \u00b5L/mL of a Sulforhodamin B solution (1 mg of Sulforhodamin B powder, 230,162 Aldrich per mL of medium) to the medium. We imaged sub-volumes of gastruloids (10 slices z-stacks with a z-interval of 2 \u00b5m) near their midplane during a total time between 10 h and 24 h (time interval between two frames between 2 and 4 min depending on the experiment). We imaged the GFP (T-Bra-GFP/NE-mKate2 and E-cadherin-GFP/Oct4-mCherry cell lines) and the Sulforhodamin B channels using a non-descanned detector.\n\n### Cryosection\n\nAggregates were embedded in Optimal Cutting Temperature (OCT) after fixing in 4% Paraformaldehyde (PFA) and then flash frozen in liquid nitrogen. Slices of 25 and 30 \u00b5m were manually cut from the resin with a cryostat (Leica CM3050 S). The slices were mounted on Superfrost Plus slides before proceeding with immunostaining.\n\n### Relative surface tension\n\nUnder the assumption that the final shape and configuration of the cells are largely dominated by surface tension, we can compute the relative tension between the E-cadherin/non-E-cadherin $(\\gamma_{+-})$ and the E-cadherin/E-cadherin expressing cells $(\\gamma_{++})$ as the reciprocal of the sum of the cosines of the two angles subtended at the interface of the E-cadherin/non-E-cadherin cells (Figure 4C).\n\n$$\n\\frac{\\gamma_{+-}}{\\gamma_{++}}=\\frac{1}{cos \\theta_{1} +cos \\theta_{2} }\n$$\n\n### Image processing and data analysis triangulation/probability map\n\nThe gastruloids were initially manually segmented using brightfield images or a combination of brightfield and the fluorescence signal. An artificial convolutional neural network, UNET (Ronneberger et al., 2015) was also employed to yield a high-throughput pipeline for generating binary masks of aggregates with brightfield images. The UNET was trained on an augmented dataset (n = 390 and n = 264 images for aggregates generated from Ecad/Oct4 line and T-Bra/NE-mKate2 lines respectively) and then applied onto the time series aggregate images to obtain binarized masks. Any imperfections in the generated masks were manually corrected in FIJI/ImageJ. The mean signal intensity of the aggregates was computed by averaging the pixel intensities within the binary masks.\n\nThe overall elongation of the aggregates at each time point was quantified by determining the ratio of the eigenvalue pairs of the inertia tensor of the binary mask. This is equivalent to finding the ratio of the major to the minor axes of the best-fit ellipse to the mask. Furthermore, to precisely capture the onset of the tip formation we relied on Fourier-Elliptic Descriptors3(FED) as a shape descriptor (Kuhl and Giardina, 1982). The aggregate perimeter was defined by a set of n-harmonics/ellipses (n = 1,2,3 \u2026) \u2013 each associated with four coefficients \u2013 such that the difference of area between the aggregate mask and the morphology obtained from the harmonics was less than 2%. The onset of tip formation was determined using the 2nd FED harmonic at each time point. The corresponding coefficients were transformed to the lengths of the major and minor axes of the ellipse. The magnitude of the second harmonic was then taken to be the product of the lengths of the two axes, which is a proxy for the extent of tip formation and shape polarization.\n\nThe polarization of the fluorescence was defined as the maximum of contrast between the two-halves of the aggregate. It was calculated in two-steps: first the aggregate mask was chopped into two halves about the eigenvector of the inertia matrix, which passes through the centroid of the mask. The contrast was then calculated as (I_max-I_min)/(I_max + I_min) where I_max and I_min represent the intensities of the brighter and less bright halves, respectively. The contrast maximum was then determined by angular scanning by repeatedly rotating the cutting plane by 5\u00b0.\n\nThe different cell-types in the confocal image-stacks were manually identified and tagged via Cell Counter \u2013 a built-in FIJI plugin. Corrections were made to ensure that each cell was designated a unique identity. The positions of the marked cells were extracted for further processing. The centroids of the cell were extracted to create a neighborhood graph and deduce spatial statistics. The cell populations at the aggregate tip (at 96 hr-pp) are spatially binned to generate probability maps of the different cell types along the tip. Owing to the sphericity of the aggregates at 72 hrs-pp, cell positions are normalized to lie in a unit sphere. Aggregates are registered via their common origin and all the cell populations are pooled to create a spatial probability density map (using SmoothKernelDistribution function in Mathematica). A numerical integration of the density function yields the probability of finding the various cell types as a function of the distance from the origin.\n\nTo build the graph we generated a Delaunay triangulation (using the built-in DelaunayMesh in Mathematica) from the cell centroids and pruned any edges that were more than 12 um in length (avg. size of a cell). The neighborhood type of a cell is assigned by counting the cell types of all the adjoining cells and taking the most dominant cell-type as the neighborhood type; for instance, if majority of the neighboring cells, around an E-cad+/T-Bra+ cell, are also E-cad+/T-Bra+ then the cell has a homotypic neighborhood, else the neighborhood is designated as being heterotypic.\n\nTo measure velocity fields corresponding to Gastruloids polarization and elongation, we use the signal obtained from the Sulforhodamin B (SRB) channel in two-photon timelapses (which is present in all the parts of the Gastruloid in contrary to signals such as T-Bra GFP or E-Cadherin GFP). The SRB signal corresponds to (i) cell contours, (2) dead cells, and (3) bright spots of subcellular size moving rapidly corresponding probably to vesicles are visible. As dead cells and bright spots are much brighter than cell contours, we filter them with a thresholding operation, and perform the optic flow on the filtered image where only cell contours are visible after timelapse registration to remove rapid rotations and translations of the aggregate. We use a custom-made Matlab optic flow code based on the Kanade Lucas Tomasi (KLT) algorithm with a level 2 pyramid and a window size corresponding to a square of 2 cells by 2 cells (Lucas and Kanade, 1981).\n\nImages in the timeseries data were registered using MultiStackReg \u2013 an ImageJ plugin \u2013 and custom Matlab scripts. The scripts for analyzing data, image processing, neural networks and computer vision techniques were implemented in Wolfram Mathematica 12 and Matlab. Analysis scripts are provided in the supplemental information of this paper.\n",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "52312789-6ff6-4b9c-9ac7-3beec7623721",
+      "submission_id": "ee99907e-fabf-4804-a389-baa2efd86063",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Isabelle Migeotte, https://ror.org/01r9htc13 Universit\u00e9 Libre de Bruxelles Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59371.sa0](https://doi.org/10.7554/eLife.59371.sa0)\n\nThe authors took advantage of the gastruloid system to explore mechanisms of endoderm specification at cellular resolution. First, they confirm that contrary to mesoderm, nascent endoderm does not undergo epithelial-mesenchymal transition. Second, they provide evidence for a role of tissue flow, and possibly heterogeneity of cellular junction tension, in the sorting and differentiation of the islets of endoderm cells.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Isabelle Migeotte, https://ror.org/01r9htc13 Universit\u00e9 Libre de Bruxelles Belgium\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59371.sa1](https://doi.org/10.7554/eLife.59371.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Cell-state transitions and collective cell movement generate an endoderm-like region in gastruloids\" for peer review at eLife. Your article is being evaluated by 3 peer reviewers, including Isabelle Migeotte as the Reviewing Editor and Reviewer #1, and the evaluation is being overseen by Didier Stainier as the Senior Editor.\n\nThe reviewers agree that the manuscript reports an interesting and original observation in gastruloids. However, there is currently no evidence to propose that such mechanism would be present in embryos. Additionally, there is consensus that the methods are not sufficiently explained, the reproducibility is not clearly quantified, and some claims would require a larger number of aggregates/cells to be solid.\n\nReviewer #1:\n\nGeneral assessment\n\nThe manuscript by Hashmi et al., describes the emergence of endoderm-like cells in a stem cells based embryo model. The particularity of the protocol is that it stimulates transition through an epiblast-like state, then differentiation towards mesoderm after a pulse of Chiron, a Wnt agonist. In those conditions, islets of E-cadherin positive cells emerge, surrounded by Ecad+Brachyury+, then Brachyury positive cells. Those islets fuse together at the tip, possibly due to distinct surface tension and directed cell movements, and express endoderm markers such as Sox17 and FoxA2.\n\nIt is an original approach and concept, raising new questions and possibilities about the mechanisms of endoderm emergence in the mouse embryo. The manuscript is well written and clear.\n\nConcerns\n\n1.The data would benefit from increased clarity in stating, for each experiment, the proportion of aggregates in which a given phenomenon was observed, as well as the number of cells counted in each aggregate, in particular in supplementary figures.\n\n2. For the migration analysis, it could be interesting to distinguish each cell trajectory in order to distinguish behaviours of the subpopulations.\n\n3. In terms of the surface tension analysis, performing a similar analysis at different timepoints might be helpful to understand how the islets come to fuse at the tip.\n\n4. I am not sure about the specificity of the gata6 staining, not that it adds a lot to the story.\n\n5. The authors might want to discuss how those aggregates evolve, and whether the endoderm-like cells have a potential for further differentiation.\n\nConclusion\n\nOverall it is an interesting and original observation, well substantiated. More details on the quantification methods would help convince about the solidity of the model: chance of obtaining those cells, amount of cells of each subpopulation including those described in supplementary figures, technical possibility of sorting them for transcriptome analysis etc. In terms of format, I think this report would better fit as a short report than full research article.\n\nReviewer #2:\n\nIn this manuscript, the authors proposed a new mechanism of endoderm formation in 3D gastruloid models based on cell migration and fragmentation. Specifically, they found that E-cad is first uniformly expressed inside mESC aggregates. After exposure to Wnt agonist Chiron (Chi), a gradual repression of E-cad and an increase of T-Bra were detected. Cells in the core are tightly packed and express E-cad. T-Bra expressing cells are sparsely wrapped around the core. A directed flow of E-cad expressing cell islands surrounded by T-Bra expressing cells help to accumulate E-cad expressing cells to the tip of the aggregate and form endoderm domain.\n\nI think the dynamical expression of E-cad and T-Bra and the directed cell flow reported in this manuscript are interesting. The results and videos have showed that the elongation and formation of endoderm region is a collective cell behavior rather than single cells undergo epithelial-to-mensenchymal transition. But I am not convinced that the process is done based on the three-step mechanism proposed by the authors. Moreover, I am not sure if this phenomenon really happened in mouse embryo development, giving the considerable differences between gastruloid model and embryo. Since there are methods culturing mouse embryo in vitro up to the early organogenesis stage, I would suggest the authors to provide more evidence showing that the proposed mechanisms might also happen in vivo.\n\nIn addition, the manuscript provides too little information to understand the phenomenon. And they did not clearly introduce experimental and computational methods they used to acquire the results. I listed some of my comments below.\n\n1. Did all 3D aggregates become elongated shape in the presence of Chi? If not, what do E-cad and T-Bra expressions and cell migration dynamics look like in those spherical aggregates? Without Chi, inside the spherical aggregates, do they also have cell migration since the aggregates keep growing larger?\n\n2. When did the collective cell migration start? Right after exposing to Chi? Or after some percentage of cells become T-Bra positive cells? Did the gastruloid keep elongating with directed cell flow inside it when cultured for a long time?\n\n3. Are the collective cell migration driven by the T-Bra cells? Is it a spontaneous property of E-cad cells when the E-cad cell density exceed some critical threshold (e.g. glassy dynamics)?\n\n4. Does the elongation and migration dynamics depend on the concentration of Chi, size of the aggregates? I noticed the authors used different initial seeding densities.\n\n5. For the elongated cell aggregates, one side of cells express E-cad. How about the other side of cells? Did they all become mesoderm-like (T-Bra+) cells?\n\n6. Many results are only based on several (3 or 4) gastruloids. For example, figure 1 (d) (e), figure 2 (b), figure 3(c). And in Figure 4 (b), the authors only quantify 13 junctions, probably in the same gastruloid. Due to the heterogeneity among the gastruloids, I am not sure how repeatable the experiments are. Can those observations really reflect phenomenon happened inside the majority of gastruloids? I think the authors should provide some quantifications of the percentage of observing the reported results among a large number of gastruloids.\n\nUnclear results or experimental descriptions:\n\n1. Can the authors show a schematic of the experimental process, such as the time of adding Chi and fixation?\n\n2. 'We find that 30/37 \u2026 set to 0.125.' How did the authors define and calculate the elongation ratio and E-cadherin polarization ratio? How did the authors define the elongation threshold?\n\n3. Figure 1 (a): what is the y axis? 1 (d): how did the author measure the E-cad and T-Bra expression? Fixing at different time points or live imaging? If it is live imaging, is the acquisition process influenced by adding and removing Chi? 1(e) how can the authors get continuous results for polarization?\n\n4. Figure 2 (b) Are those dots represents the nuclear position? Can the authors provide the 3D view of the whole gastruloid? (c) What information the authors are trying to get from the connectivity graph?\n\n5. Figure 3 (a) What are those white dots in the images, also in video 6? Can the authors replace t1, t2, t3, t4 with the real time, such as 24h, 36h? (d) How did the authors calculate the intensity? How did the authors normalize the intensity? The schematic in (b) is hard to understand. What do the light and dark colors represent? How did the authors measure theta_1 and theta_2, especially in 3D situation? More quantitative information should be acquired from (a).\n\n6. I am not able to identify islands of E-cad expressing cells in Figure 3 (a) and video 6.\n\nReviewer #3:\n\nIn this manuscript Hashmi et al., describe the emergence of an endoderm population in a gastruloid model. They observe that endoderm cells are positive for E-Cad, likely express E-Cad continuously from an epiblast state, initially form small islands, and finally coalesce into a larger endoderm region at the pole of the gastruloid. There are several issues with this manuscript in its current form.\n\n1. No evidence is provided that there is an relationship between how endoderm forms in this gastruloid model and in vivo. In fact, endoderm is believed to derive from a restricted area in the anterior primitive steak. This is evident from the mouse imaging data of Mcdole et al., Cell 2018 as well as from more recent genetic labeling experiments (Probst et al., bioRxiv 2020). It is well known that cells of different germ layers may self-segregate and this may drive the behavior observed here downstream of heterogenous differentiation in the gastruloids, but that is not necessarily the mechanism which occurs in vivo. The authors suggest that their experiments show something about endoderm formation in vivo without addressing this point which substantially diminishes from the interest of the manuscript.\n\n2. The authors suggest that this view of endoderm differentiation, which doesn't require full EMT is novel, however, much of the observations here are already known. It is known that future endoderm cells do not down regulate E-Cadherin but instead must continue to express it. They also are known to migrate collectively rather than as single cells in a cadherin-dependent way (Montero et al., Development 2005; reviewed in Nowotschin et al., Development 2019). The authors should discuss this literature and make clear which aspects of the proposed mechanisms are novel.\n\n3. The authors are assessing the status of EMT based on a single marker, E-Cad. If this is a major point of the manuscript other markers e.g. Snail, N-Cad should be examined.\n\n4. It is well known that embryoid bodies form an outer layer of visceral endoderm e.g. Concouvanis and Martin Cell 1995, Doughton et al., PLOS One 2010. None of the markers here are exclusive to definitive endoderm (including Sox17 which is used throughout, see Artus et al., Dev Biol 2011). The authors should address the possibility that their observations may be consistent with a similar mechanism and may not reflect definitive endoderm differentiation.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cell-state transitions and collective cell movement generate an endoderm-like region in gastruloids\" for further consideration by eLife. Your revised article has been evaluated by Didier Stainier (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nConceptual concern:\n\nThe notion that endoderm specification does not requite EMT is indeed backed up by data in the embryo, and this part is now adequately covered in the paper.\n\nThe observation that, in gastruloids, endoderm cells arise as islets that get sorted from the other cells possibly though differences in cell junctions tension is interesting and well substantiated. It is supported by studies in vitro in different species, including rather ancient experiments. However, the referees point that the evidence that a similar mechanism is at play in the mouse embryo is still weak, and would suggest tempering that claim (revise paragraph starting at line 233 in discussion).\n\nTechnical concern:\n\nAlthough the reviewers acknowledge that the authors have increased the number of gastruloids and cells in most quantifications, they argue that the number is not huge yet in view of the variability. Therefore they propose that:\n\n\u2013 number of samples and replicates should be added to the figure legends for clarity.\n\n\u2013 statistical analysis should be reinforced through addition of a power calculation.\n\nFormat:\n\nReviewers point that the paper would be better suited as a short report. A change of format at this stage may present a risk of losing clarity. We would nonetheless recommend to condense the data notably through fusion of the supplementary figures in one (or maximum two) per main figure.\n\nPlease find below the comments of an additional reviewer consulted.\n\nReviewer #4:\n\nHashmi et al., present a gastruloid model for the emergence of endoderm-like cells after treatment with a Wnt agonist. These gastruloids appear to resemble the posterior region of the mouse embryo during gastrulation, segregating into T+ and Foxa2+ regions, the latter of which retains E-cadherin, paralleling recent studies which have suggested endoderm cells do not undergo EMT on exit from the epiblast. The data they present are intriguing, and suggest a conserved mechanism for sorting mesoderm and endoderm, however it is very difficult to draw direct comparisons to the mouse embryo. More information on the emergence, behaviour and ultimate fate of these endoderm-like cells would better substantiate their model as well as provide valuable new information, however this is technically challenging and would result in a much larger study than what is presented here. I agree with Reviewer 1 that the fit for this manuscript is more suited for a short report than a full research article.\n\nIn general, the authors have addressed each reviewer's points, provided new data as well as clarified their methods and increased the number of gastruloids used in each analysis. While the number of samples and replicates used are presented in a supplementary table, it would be helpful for the reader if these were included either in the figure legends or the figure themselves. The increase in sample number is not huge, however, (particularly given the variability between gastruloids) and the study could benefit from some power calculations. While there are clearly more avenues for the authors to expand up on or follow up, regarding the manuscript in its current state they have addressed the majority of the reviewer's questions and concerns.\n",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6612763d-0155-477c-9032-1deb716dce3d",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C1",
+      "claim": "Gastruloids are 3D aggregates of mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using gastruloids \u20133D aggregates of mouse embryonic stem cells- we study the formation of one of the three germ layers, the endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a definition of gastruloids.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "173fcd02-4f16-4887-8b66-ee74b42c3c27",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C2",
+      "claim": "The endoderm is generated from an epiblast-like homogeneous state by a three-step mechanism in gastruloids.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the endoderm is generated from an epiblast-like homogeneous state by a three-step mechanism: (i) a loss of E-cadherin mediated contacts in parts of the aggregate leading to the appearance of islands of E-cadherin expressing cells surrounded by cells devoid of E-cadherin, (ii) a separation of these two populations with islands of E-cadherin expressing cells flowing toward the aggregate tip, and (iii) their differentiation into an endoderm population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the three-step mechanism observed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "61082846-82fe-497e-a7d3-8bb7f6ae5a90",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C3",
+      "claim": "Islands of E-cadherin expressing cells are surrounded by cells expressing T-Brachyury during the flow.",
+      "claim_type": "EXPLICIT",
+      "source": "During the flow, the islands of E-cadherin expressing cells are surrounded by cells expressing T-Brachyury, reminiscent of the process occurring at the primitive streak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is directly stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "0b6e1a07-7d3a-42dc-b9c5-a875f94c4a68",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C4",
+      "claim": "Endoderm formation in gastruloids does not require an epithelial-to-mesenchymal transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent in vivo observations, the endoderm formation in the gastruloids does not require an epithelial-to-mesenchymal transition, but rather a maintenance of an epithelial state for a subset of cells coupled with fragmentation of E-cadherin contacts in the vicinity, and a sorting process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding and references consistency with in vivo observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "31265c5c-f951-46c7-8b2a-d5b9fa99f4de",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C5",
+      "claim": "Gastrulation is a crucial stage of animal development that results in the laying down of the body plan through the specification of the germ layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Gastrulation is a crucial stage of animal development that results in the laying down of the body plan through the specification of the germ layers \u2013 the endoderm, the mesoderm, and the ectoderm \u2013 and their organization with reference to three orthogonal axes (Wolpert et al., 2006; Solnica-Krezel and Sepich, 2012; Williams and Solnica-Krezel, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "bea6731b-2af7-4063-a10a-a9e15109b695",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C6",
+      "claim": "Defects in gastrulation result in premature death or birth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in gastrulation result in premature death or birth defects (Ferrer-Vaquer and Hadjantonakis, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "75790339-4319-49f2-b98e-05f88a92512f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C7",
+      "claim": "Mammalian embryos develop in the uterus of the mother, which makes gastrulation difficult to study.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian embryos are different, in that an increase in the cellular mass is concomitant with gastrulation (Snow, 1977; the fact that they develop in the uterus of the mother makes this coupling and the process of gastrulation difficult to study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "77be9db0-52d6-48f6-93bf-6e1a7b5d9990",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C8",
+      "claim": "Upon exposure to external cues and morphogens, gastruloids show an intrinsic capability to polarize, elongate and pattern in a manner that is reminiscent of the early embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to external cues and morphogens, gastruloids show an intrinsic capability to polarize, elongate and pattern in a manner that is reminiscent of the early embryo (van den Brink et al., 2014; Turner et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ab797589-2ee2-4dee-919f-9dfbeaec5eb3",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C9",
+      "claim": "3D gastruloids exhibit a multiaxial organization and spatiotemporal patterning of Hox genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, 3D gastruloids exhibit a multiaxial organization and spatiotemporal patterning of Hox genes (Beccari et al., 2018) with signatures of somitogenesis (van den Brink et al., 2020; Veenvliet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ea8881b0-a223-4654-b96f-95209a383f40",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C10",
+      "claim": "Aggregates exposed to Chiron lose their spherical morphology and acquire a teardrop shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregates exposed to Chi lose their spherical morphology and acquire a teardrop shape (Figure 1B, day 4, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated in the text and supported by figure and video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "b44d83c7-6e35-4918-b7b8-698602c832a1",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C11",
+      "claim": "Approximately 80% of aggregates exposed to Chiron qualify as elongated.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that 30/37 or ~80% aggregates qualify as elongated with an elongation threshold set to 0.125 (see also Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6827aaac-2c1c-4ac5-bc70-d74efb1c4b9f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C12",
+      "claim": "75% of control aggregates remained spherical.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 15/20 or 75% of control aggregates remained spherical (Figure 1b, day 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result comparing control aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6409acb0-c313-47ca-aa47-1df74372378e",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C13",
+      "claim": "An E-cadherin-rich region is observed at the pointed end of Chiron-exposed aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "At the pointed end of the Chi exposed aggregates, we observed an E-cadherin (E-cad)-rich region, which was absent in the control aggregates (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "80f82a1f-d128-4e62-b20f-c7e7b736bcc6",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C14",
+      "claim": "The E-cadherin pole emerges from an initially homogeneous distribution of E-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "The E-cad pole emerges from an initially homogeneous distribution of E-cad (Figure 1D, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal observation is stated and supported by figure and video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "76de6072-f5a1-49d0-b6fd-dd301db46b56",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C15",
+      "claim": "A T-Brachyury-rich pole emerges from a spatially homogeneous distribution at day 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, a T-Brachyury (T-Bra)-rich pole, clearly visible at the tip of the aggregate at day 4, emerges from a spatially homogeneous distribution at day 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal observation is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e34e539a-a38c-4d14-9699-155928cad65d",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C16",
+      "claim": "E-cadherin is expressed from the early time points.",
+      "claim_type": "EXPLICIT",
+      "source": "While E-cad is expressed from the early time points (Figure 1D, day 2), T-Bra expression follows exposure to Chi (Figure 1D and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal expression pattern is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "8084ba11-3a57-4376-9eed-ca991af0846e",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C17",
+      "claim": "T-Brachyury expression follows exposure to Chiron.",
+      "claim_type": "EXPLICIT",
+      "source": "While E-cad is expressed from the early time points (Figure 1D, day 2), T-Bra expression follows exposure to Chi (Figure 1D and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal relationship is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "79a9f38b-a6e4-41a3-a208-95b8ede57af2",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C18",
+      "claim": "The Chiron pulse triggers a decay in E-cadherin level.",
+      "claim_type": "EXPLICIT",
+      "source": "The Chi pulse triggers a decay in E-cad level (mean intensity, Figure 1E and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure and video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "5b88b57f-a4e7-4c70-8d20-fdf70fadef4c",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C19",
+      "claim": "T-Brachyury level is maximal just before removal of Chiron and gradually decreases thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "T-Bra level, maximal just before removal of Chi, gradually decreases thereafter (Videos 2 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal pattern is stated and supported by video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ef4496e4-570f-4e77-b426-30db57986c79",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C20",
+      "claim": "Most aggregates show a single pole of T-Brachyury (35/64).",
+      "claim_type": "EXPLICIT",
+      "source": "Most aggregates show a single pole of T-Bra (35/64), some display multiple poles (18/64) and 11/64 do not polarize (Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2675836c-0c5d-4b63-980d-29effbacfe9e",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C21",
+      "claim": "E-cadherin and T-Brachyury polarize prior to the onset of tip formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using descriptors of aggregate's shape and polarization of fluorescence signal (see Materials and methods), we found that E-cad and T-Bra polarize prior to the onset of tip formation (Figure 1F and G), suggesting a possible role of E-cad and T-Bra in the aggregate's shape polarization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal relationship is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "5ca367f0-399f-427f-a230-d9c91e82a35b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C22",
+      "claim": "E-cadherin and T-Brachyury may play a role in the aggregate's shape polarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Using descriptors of aggregate's shape and polarization of fluorescence signal (see Materials and methods), we found that E-cad and T-Bra polarize prior to the onset of tip formation (Figure 1F and G), suggesting a possible role of E-cad and T-Bra in the aggregate's shape polarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a suggestion based on the temporal relationship observed.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "831d9fdf-d06f-4b96-85bf-48f1e07069df",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C23",
+      "claim": "A group of E-cadherin expressing cells is localized at the tip, spatially segregated from and surrounded by T-Brachyury expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A, a group of E-cad expressing cells is localized at the tip, spatially segregated from, and surrounded by T-Bra expressing cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This spatial organization is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6f108e39-2de8-48db-91a0-ba377ea0fd58",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C24",
+      "claim": "The core of E-cadherin expressing cells expresses Sox17.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that this core expresses Sox17 (Figure 2A, inset, Figure 2\u2014figure supplement 1) and Foxa2 (Figure 2\u2014figure supplement 1, Video 7) \u2013 markers of the endoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "94bc1a03-bde5-48bc-8574-d40b966fba3a",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C25",
+      "claim": "The core of E-cadherin expressing cells expresses Foxa2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that this core expresses Sox17 (Figure 2A, inset, Figure 2\u2014figure supplement 1) and Foxa2 (Figure 2\u2014figure supplement 1, Video 7) \u2013 markers of the endoderm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ac8475c0-ba87-4aab-a656-b9d0306e4b02",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C26",
+      "claim": "Sox17 and Foxa2 are markers of the endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that this core expresses Sox17 (Figure 2A, inset, Figure 2\u2014figure supplement 1) and Foxa2 (Figure 2\u2014figure supplement 1, Video 7) \u2013 markers of the endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "a3b2a942-3f94-42e0-bdce-2fdef6f32e49",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C27",
+      "claim": "Sox2 is present earlier but absent at 5 days post-plating while Sox17 is retained.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Sox2 is present earlier but absent at 5 days-pp while Sox17 is retained (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This temporal expression pattern is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "a8971292-ee4a-457e-9c5a-ffab79ccec14",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C28",
+      "claim": "The group of E-cadherin expressing cells demarcates an endoderm-like region in the gastruloids.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations lead us to conclude that the group of E-cad expressing cells demarcates an endoderm-like region in the gastruloids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the marker expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "91e98301-bcd0-47ba-9660-3019a37523ef",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C29",
+      "claim": "The core of E-cadherin/Sox17 expressing cells and the T-Brachyury expressing cells constitute the majority of the cell population near the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of E-cad/Sox17 expressing cells and the T-Bra expressing cells constitute the majority of the cell population near the tip (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "7ee1e66a-fda7-4715-99c2-7b260bfbab3f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C30",
+      "claim": "A minority of cells outside the core express either Sox17 alone or in conjunction with T-Brachyury.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a minority outside the core expresses either Sox17 alone or in conjunction with T-Bra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "7d7d8e60-9788-4f17-98d0-661119ad8b40",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C31",
+      "claim": "The E-cadherin/Sox17 expressing cells form a tightly packed group of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The E-cad/Sox17 expressing cells that form the core maintain a relatively larger simply-connected-component (126 of 131 Ecad+/Sox17+ cells) and a homotypic neighborhood (111 E-cad+/Sox17+ cells maintain an Ecad+/Sox17+majority neighborhood), which implies that they form a tightly packed group of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ba2baa4e-e93e-41fc-8f26-4dc1fb502745",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C32",
+      "claim": "The T-Brachyury expressing cells form multiple simply connected-components suggesting they are sparsely distributed around the core.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the T-Bra expressing cells form multiple simply connected-components (20 components) suggesting that they are sparsely distributed around the core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "68bbc49d-764a-4ae0-bf2f-3fba9fae9bda",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C33",
+      "claim": "At early stages, E-cadherin expression pervades the entire aggregate and is present at every cell-cell contact forming a homogeneous network of junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "At the early stages E-cad expression pervades the entire aggregate; It is present at every cell-cell contact forming a quite homogeneous network of junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "a094643b-e3ed-46a9-a829-91f4e491e6e5",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C34",
+      "claim": "The E-cadherin junctional network undergoes a gradual fragmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this network undergoes a gradual fragmentation (Figure 3A and Videos 8\u201311).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure and video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "277fcaaa-d4dd-4730-9883-c1afe05437dd",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C35",
+      "claim": "The level of E-cadherin decreases temporally while a small fraction is retained, which eventually localizes near the aggregate's tip.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of E-cad decreases temporally while a small fraction is retained, which eventually localizes near the aggregate's tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This temporal pattern is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "d5771e8e-81a8-44ce-90d8-c9b882b302ad",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C36",
+      "claim": "Some E-cadherin/T-Brachyury cells express lower levels of E-cadherin compared to their neighbors devoid of T-Brachyury.",
+      "claim_type": "EXPLICIT",
+      "source": "Within our immunostainings, we found consistently the presence of some E-cad/T-Bra cells that express lower levels of E-cad compared to their neighbors devoid of T-Bra (Figure 3\u2014figure supplement 1A, 92 hrs-pp).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2406bf09-0311-4208-b6fa-6f112d1f84fa",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C37",
+      "claim": "A gradual repression of E-cadherin via increasing levels of T-Brachyury may account for the fall of the E-cadherin level in the junctional network.",
+      "claim_type": "EXPLICIT",
+      "source": "In view of earlier studies (Turner et al., 2014; Fernando et al., 2010), a gradual repression of E-cad via increasing levels of T-Bra may possibly account for the fall of the E-cad level in the junctional network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation based on earlier studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "470fd210-6b9f-4cae-b627-d5e06a5c28d2",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C38",
+      "claim": "At 72 hours post-plating, only a small fraction of cells distributed in a salt and pepper manner express Foxa2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in immunostainings at 3 days-pp, we notice only a small fraction of cells \u2013 distributed in a salt and pepper manner \u2013 that express Foxa2 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "147af784-5012-47ee-ba9c-f3c16ae17e8e",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C39",
+      "claim": "At 72 hours post-plating, there is no organized group of cells that can potentially yield the endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, at 72 hr-pp, we do not find an organized group of cells that can potentially yield the endoderm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2df670f0-9b7c-48ad-bbc7-ed226b1ea13a",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C40",
+      "claim": "At 72 hours post-plating, the cell population can be broadly classified into three categories: cells expressing both E-cadherin and T-Brachyury, cells expressing only T-Brachyury, and cells expressing only E-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, at this stage, the cell population in the aggregates can be broadly classified into three categories: a class of cells that express both E-cad and T-Bra and two classes that express either one of the two markers (Figure 3B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This classification is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "c0270cf5-0cee-414d-987d-4b72785e8846",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C41",
+      "claim": "The E-cadherin+/T-Brachyury- cells are the ones expressing Sox2, akin to an epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the E-cad+/T-Bra- cells are also found to be the ones expressing Sox2, akin to an epiblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "1f869345-27ae-45ba-bf78-5ee554e8c02f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C42",
+      "claim": "The E-cadherin/T-Brachyury expressing cells constitute most of the cell population (~70% of the total).",
+      "claim_type": "EXPLICIT",
+      "source": "The E-cad/T-Bra expressing cells constitute most of the cell population (~70% of the total) and are surrounded by the T-Bra expressing cells (Figure 3B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantitative observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "87805643-038e-4070-8be1-5791189c5131",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C43",
+      "claim": "At later time-points before aggregates are fully polarized, an 'archipelago' of E-cadherin expressing cells separated by T-Brachyury expressing cells is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at later time-points but before the aggregates are fully polarized, we observed an 'archipelago' of E-cad expressing cells separated by T-Bra expressing cells (Figure 3D, 92 hrs-pp, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "a93b0679-7905-4462-8bc2-cfbb92a93dbf",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C44",
+      "claim": "At day 4, the E-cadherin expressing cells exhibit low levels of N-cadherin and Snail1.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 4, the E-cad expressing cells exhibit low levels of N-cadherin and Snail1, supporting the absence of an EMT transition for the E-cad expressing cells (Figure 3\u2014figure supplements 1C and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "9b7141d4-aa66-468c-82ce-401c328fe6be",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C45",
+      "claim": "Low levels of N-cadherin and Snail1 in E-cadherin expressing cells support the absence of an EMT transition.",
+      "claim_type": "EXPLICIT",
+      "source": "At day 4, the E-cad expressing cells exhibit low levels of N-cadherin and Snail1, supporting the absence of an EMT transition for the E-cad expressing cells (Figure 3\u2014figure supplements 1C and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the marker expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "b790a19f-094d-49e9-b3e7-8ba7870792f2",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C46",
+      "claim": "The data are consistent with recent observations in the mouse showing endodermal progenitors do not undergo EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with recent observations in the mouse (Scheibner et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with published work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "aa7edb4a-7d51-40f0-a975-61ed174aa5a0",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C47",
+      "claim": "The islands of E-cadherin expressing cells are positive for the pluripotency marker Oct4.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the islands of E-cad expressing cells were found to be positive for the pluripotency markers Oct4 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ad77624c-4960-49ee-b5fe-6324aa31b5d9",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C48",
+      "claim": "Oct4 expression correlates inversely with T-Brachyury expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The Oct4 expression correlates inversely with the T-Bra expression, suggesting pluripotency and an epiblast-like nature of these cells (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "93bb4c36-db27-4ff3-be32-5c13ede26ce6",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C49",
+      "claim": "The inverse correlation between Oct4 and T-Brachyury suggests pluripotency and an epiblast-like nature of E-cadherin expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Oct4 expression correlates inversely with the T-Bra expression, suggesting pluripotency and an epiblast-like nature of these cells (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the correlation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e732e0a9-dc64-4ef8-8fb0-e961f9b3da7e",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C50",
+      "claim": "The endoderm-like region originates from islands of pluripotent and epithelial cells expressing E-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether our data suggests that the endoderm-like region - identified at the end of day 4 \u2013 originates from islands of pluripotent and epithelial cells expressing E-cadherin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "892f707c-838f-4a7e-8afb-c182e5356f93",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C51",
+      "claim": "There is a directed flow of cells towards the future region that will form the tip of the gastruloid.",
+      "claim_type": "EXPLICIT",
+      "source": "The flow field clearly shows that there is a directed flow of cells towards the future region that will form the tip of the gastruloid (Figure 4A\u2013B, Figure 4\u2014figure supplement 1, and Videos 15\u201317).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure and video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "558a5b8a-c49a-4a04-88c8-f39bab7e69ea",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C52",
+      "claim": "E-cadherin-negative cells flow backward at the periphery, away from the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "E-cad- cells flow backward at the periphery, away from the tip, which creates a physical separation between the two populations: E-cad+ and E-cad- cells (Videos 8\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by video references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "5c45a666-3020-463c-bd8b-ecb382ebfe63",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C53",
+      "claim": "The backward flow of E-cadherin-negative cells creates a physical separation between E-cadherin-positive and E-cadherin-negative cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "E-cad- cells flow backward at the periphery, away from the tip, which creates a physical separation between the two populations: E-cad+ and E-cad- cells (Videos 8\u201310).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the observed flow pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "7d6bc302-2a43-4e49-88e1-5d0eac427cd7",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C54",
+      "claim": "Islands of E-cadherin-positive cells are highly dynamic during their movement toward the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Islands of E-cad+ cells are highly dynamic during their movement toward the tip (Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by video reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ac20ce62-8e09-4bd8-b089-91d60d5120a8",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C55",
+      "claim": "The directed flow and recirculation are not observed in absence of Chiron pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The directed flow and recirculation are not observed in absence of Chi pulse (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This control observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e0e5e0c7-959c-4a96-94b5-600438ccec23",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C56",
+      "claim": "The islands of E-cadherin expressing cells are not fully fragmented despite dynamic cell rearrangements and shear in the bulk of the aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite dynamic cell rearrangements and shear in the bulk of the aggregate, the islands of E-cad expressing cells are not fully fragmented, implying that physical forces maintain their cohesion (Video 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by video reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "60d01f9c-8fbc-4dce-83e3-7dce9525f663",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C57",
+      "claim": "Physical forces maintain the cohesion of E-cadherin expressing cell islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite dynamic cell rearrangements and shear in the bulk of the aggregate, the islands of E-cad expressing cells are not fully fragmented, implying that physical forces maintain their cohesion (Video 11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the observation that islands remain intact.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "81471b17-c9fa-4b20-86cf-e021b0e1b0c4",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C58",
+      "claim": "E-cadherin expressing cells in islands have a significantly smaller contact angle with surrounding cells than with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The E-cad expressing cells in islands have a significantly smaller contact angle with the surrounding cells than with each other (Figure 4c, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "20e2d64c-c5a4-42d2-8f27-e5b0c698b379",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C59",
+      "claim": "There is a significantly higher tension at the outer boundary of E-cadherin islands at days 3 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the cell-cell contacts are determined by interfacial tension (Supplementary material), we measured the angle of contacts between E-cad expressing cells within the islands and with neighboring cells (Figure 4C). They correspond to a significant higher tension at the outer boundary of islands at days 3 and 4 (Figure 4C, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result from tension measurements based on contact angles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "bf33a9bd-cc54-4a8b-ac15-dd121f4cc41f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C60",
+      "claim": "The difference in tension could account for the maintenance of E-cadherin-positive cell islands during their transport and their segregation at the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Such difference could account for the maintenance of E-cad+ cell islands during their transport as well as their segregation at the tip, where E-cad+ cells would sort from the T-Bra+ cells to form a large endoderm domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation based on the tension measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "767449aa-968e-44c6-993c-3e3030440cb5",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C61",
+      "claim": "When aggregates of ESCs are grown in Activin and FGF, they go through a clear phase similar to the postimplantation epiblast.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to classical gastruloids, when aggregates of ESCs are grown in Activin and FGF, they go through a clear phase similar to the postimplantation epiblast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the culture conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2088a65e-46d4-4f46-a7a9-31049e5d2c60",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C62",
+      "claim": "Suppression of Wnt signaling in the epiblast-like state leads to anterior neural development.",
+      "claim_type": "EXPLICIT",
+      "source": "In this state, suppression of Wnt signaling leads to anterior neural development (Girgin et al., 2021) but, as we show here, exposure to Wnt signaling leads to fates associated with primitive streak, as evidenced by expression of T-Bra and the emergence of an endoderm-like region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the claim about Wnt suppression.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "31a854ef-0f25-411e-9ebe-85eeedc23f12",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C63",
+      "claim": "Exposure to Wnt signaling leads to fates associated with primitive streak, as evidenced by expression of T-Brachyury and the emergence of an endoderm-like region.",
+      "claim_type": "EXPLICIT",
+      "source": "In this state, suppression of Wnt signaling leads to anterior neural development (Girgin et al., 2021) but, as we show here, exposure to Wnt signaling leads to fates associated with primitive streak, as evidenced by expression of T-Bra and the emergence of an endoderm-like region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e6113f58-ca82-4482-8df1-4f05a57ae2e0",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C64",
+      "claim": "Under Chiron exposure that mimics Wnt/\u03b2-catenin signaling, pluripotent epiblast-like cells experience a massive wave of T-Brachyury expression and a loss of E-cadherin-mediated contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Under Chi exposure, that mimics the Wnt/\u03b2-catenin signaling, the pluripotent epiblast-like cells (with the exception of a few cells) experience a massive wave of T-Bra expression and a loss of E-cad-mediated contacts (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is stated and supported by figure reference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "42bfc1bf-21e9-4c31-9e3b-5d9900b107cd",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C65",
+      "claim": "Cells near the periphery exhibit high levels of T-Brachyury and low levels of E-cadherin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells near the periphery specifically exhibit high levels of T-Bra and low levels of E-cad expression (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This spatial pattern is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e5ad1de6-bc45-4ba5-a5d6-f108a32bb8e4",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C66",
+      "claim": "A similar observation of T-Brachyury wave emanating from the boundary has been made on 2D micropatterns.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar observation has been made on 2D micropatterns in which a T-Bra wave emanates and travels inwards, from the boundary where E-cad is absent (Martyn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with published work on 2D systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "fbc9e9c6-d9b8-4090-b397-25dc5b88c6ca",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C67",
+      "claim": "Loss of E-cadherin contacts in parts of the aggregate leads to the appearance of pluripotent E-cadherin-positive cell islands that are enveloped by T-Brachyury expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of E-cad contacts in parts of the aggregate leads to the appearance of pluripotent E-cad+ cell islands (Sox2 or Oct4 positive), that are enveloped by T-Bra expressing cells (Figure 3, B, D, Figure 3\u2014figure supplement 1, and Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This sequence of events is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "9fba33e5-d4dd-4568-b737-bd2dda27b601",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C68",
+      "claim": "A coordinated motion of cells within the aggregate arranges the islands of E-cadherin/Sox2/Oct4 expressing cells at one pole of the aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "All the while a coordinated motion of the cells within the aggregate arrange the islands of the E-cad/Sox2/Oct4 expressing cells at one pole of the aggregate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "33d6d8a6-6081-4e07-9eed-e3ca565c2dd0",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C69",
+      "claim": "The pole with E-cadherin islands protrudes outwards to form the tip.",
+      "claim_type": "EXPLICIT",
+      "source": "This pole protrudes outwards to form the tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This morphological change is explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2e766888-6055-4b42-a1da-a41b8447ab15",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C70",
+      "claim": "The E-cadherin islands subsequently segregate at the tip and express markers characteristic of the endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "The E-cad islands subsequently segregate at the tip and are found to express markers characteristic of the endoderm (Figures 2 and 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This sequence is stated and supported by figure references.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "a34964ce-e088-4b27-8468-4f618e257d7b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C71",
+      "claim": "In the mouse embryo, endodermal progenitors do not undergo an Epithelial-Mesenchymal transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse (Scheibner et al., 2021) and in the gastruloids (our work and Vianello and Lutolf, 2020) the endodermal progenitors do not undergo an Epithelial-Mesenchymal transition (EMT) and emerge from a different pool of cells (E-cad+ /T-Bra-) than the mesodermal-like precursor cells (T-Bra+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to support the claim about mouse embryos.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "8895e459-2d70-4de0-8798-972c37cf6299",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C72",
+      "claim": "In gastruloids, endodermal progenitors do not undergo an Epithelial-Mesenchymal transition and emerge from a different pool of cells than mesodermal-like precursor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse (Scheibner et al., 2021) and in the gastruloids (our work and Vianello and Lutolf, 2020) the endodermal progenitors do not undergo an Epithelial-Mesenchymal transition (EMT) and emerge from a different pool of cells (E-cad+ /T-Bra-) than the mesodermal-like precursor cells (T-Bra+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the current work and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "144d0f14-6903-4a6b-8bf8-80ae386dfe8d",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C73",
+      "claim": "Within 7 days, the endoderm primordium in gastruloids gives rise to different expression territories corresponding to anterior foregut, midgut and hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "Vianello and Lutolf further reported that within 7 days the endoderm primordium in the gastruloids give rise to different expression territories corresponding to anterior foregut, midgut and hindgut (Vianello and Lutolf, 2020), suggesting that what we observe in vitro follows closely the events in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "bff41d4d-319d-4a58-b1da-f1ea8a76b14b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C74",
+      "claim": "What is observed in vitro follows closely the events in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Vianello and Lutolf further reported that within 7 days the endoderm primordium in the gastruloids give rise to different expression territories corresponding to anterior foregut, midgut and hindgut (Vianello and Lutolf, 2020), suggesting that what we observe in vitro follows closely the events in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the comparison with cited work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "52d615b8-838d-4d81-80b8-ce5b8d653c75",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C75",
+      "claim": "The in vivo and in vitro data point to a mechanism where endoderm tissues originate from the epiblast via a trajectory that differs from that of mesodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether the in vivo and in vitro data point to a mechanism where the endoderm tissues originate from the epiblast via a trajectory that differs from that of the mesodermal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the combined data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "b2137bae-402e-471e-ba89-0003b45fb459",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C76",
+      "claim": "A surprising feature of endoderm specification in gastruloids is the appearance of endodermal cells as small islands that coalesce into a continuous tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "A surprising feature of endoderm specification in gastruloids (see also Pour et al., 2019; Vianello and Lutolf, 2020) is the appearance of endodermal cells as small islands that coalesce into a continuous tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "f885ae44-d9ac-4ba5-a8ac-4f000fce195f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C77",
+      "claim": "A recent report suggests that endodermal progenitors emerge in small islands in the mouse embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence that a similar mechanism is at play in the mouse embryo remains partial, although a recent report suggests that endodermal progenitors emerge in small islands (see Figure 3 in Probst et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "b312f290-c01b-4bf0-ae18-59097676d505",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C78",
+      "claim": "In zebrafish, a similar mode of endoderm specification where cells emerge in islands has been reported as the predominant mode.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, a similar mode of endoderm specification has been reported, where it is the predominant mode (Montero et al., 2005; Nair and Schilling, 2008; Warga and N\u00fcsslein-Volhard, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "39bb7300-8e9b-414d-8934-6536b8b0ee9b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C79",
+      "claim": "The clear manifestation of island-based endoderm specification in gastruloids might reflect that ancestral modes are emphasized in this model.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear manifestation of this mode of specification in the gastruloids might reflect that ancestral modes are emphasized in this model (Steventon et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation with citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "f6477c57-9f44-427a-82db-4d4e66d6afc4",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C80",
+      "claim": "The segregation of endodermal-like cells in gastruloids is a consequence of a wave of cell state transitions, a global flow and surface tension heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The segregation of endodermal-like cells in the gastruloids is a consequence of a wave of cell state transitions, a global flow and surface tension heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6075770b-6507-4c34-9e40-abb857bdec91",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C81",
+      "claim": "Whether the same mechanism exists at the primitive streak in the mouse embryo remains to be explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the same mechanism exists at the primitive streak in the mouse embryo remains to be explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as an open question.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ac8ab992-84b1-410f-a1f5-09a0a7b2103f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C82",
+      "claim": "The mechanism described cannot be reduced to a simple cell-sorting mechanism based on differential adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism described here cannot be reduced to a simple cell-sorting mechanism based on differential adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "80f9f7a3-14f7-41c4-b976-e1e07769fe95",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C83",
+      "claim": "Different cellular mechanisms are at stake including advection by tissue flow, cell sorting by cellular motions, cell division, cell death, and cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Different cellular mechanisms are at stake: advection by tissue flow, cell sorting by cellular motions, but also cell division, cell death, and cell differentiation that constantly modify the number of constituent cells and their pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of the mechanisms involved.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "264e3152-9ace-4591-9f6c-42fefa363bed",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C84",
+      "claim": "The work emphasizes the coupling between biochemical signaling and tissue flows during endoderm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work emphasizes the coupling between biochemical signaling and tissue flows during endoderm formation, and perhaps more generally during the morphogenesis of germ layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key message from the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "9bb0c4a1-c331-4a12-a50f-1a79e6cdf143",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C85",
+      "claim": "The work illustrates the potential of in vitro models of early embryogenesis to decouple and study developmental events.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it illustrates the potential of in vitro models of early embryogenesis to decouple and study these events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a broader implication of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "3e79de30-ada4-4f31-9f3b-a88a3ea1ac1b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C86",
+      "claim": "Mouse ESCs were placed in Activin and FGF throughout the protocol to induce a pluripotent, post-implantation epiblast state.",
+      "claim_type": "EXPLICIT",
+      "source": "To induce a pluripotent, post-implantation epiblast state of the mouse ESCs (Hayashi et al., 2011), we placed the cells in Activin and FGF throughout the protocol (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological approach with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "cc2a7d26-8247-4741-ba04-e481b27db53f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C87",
+      "claim": "A portion of aggregates were exposed to the Wnt agonist Chiron as the combination with Activin and Chiron tends to promote endoderm formation.",
+      "claim_type": "EXPLICIT",
+      "source": "A portion of the aggregates were exposed to the Wnt agonist Chiron (Chi) as the combination with Activin and Chi tends to promote endoderm formation (Figure 1A; Morgani et al., 2018; Engert et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological choice with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "4ab1ef02-a20d-4c11-9db3-0bff6b9995f5",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C88",
+      "claim": "The aggregates were investigated following a pulse of Chiron lasting a day from the second day post plating.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the aggregate morphologies and gene expression patterns following a pulse of Chi (lasting a day from the second day post plating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "ad17ff82-271a-4ae0-ae45-a2e0796f77ea",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C89",
+      "claim": "Aggregates exposed to Chiron show significantly higher elongation compared to control aggregates (Mann-Whitney test, p-value = 3 x 10^-5).",
+      "claim_type": "EXPLICIT",
+      "source": "The box-whisker plot shows the distribution of elongation for Chi + (n = 37) and the control (Chi -) aggregates (n = 20) (Mann-Whitney test with correction, p-value = 3 x 10\u20135, N = 2 replicates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "8dbf4852-ea66-4cb9-a4ec-7d29a6abdfed",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C90",
+      "claim": "Aggregates exposed to Chiron show significantly higher E-cadherin polarization compared to control aggregates (Mann-Whitney test, p = 7 x 10^-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Box-whisker plot showing the distribution of E-cad polarization in the Chi + (n = 37) and Chi - aggregates (n = 20). The polarization of the signal is defined by the maximum contrast between the two halves of the aggregate (Mann-Whitney test with correction, p = 7 x 10\u201310, N = 2 replicates).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "9769df07-04ba-4fc9-8b32-02eba4f15a07",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C91",
+      "claim": "The E-cadherin/Sox17 expressing cells and T-Brachyury expressing cells constitute approximately 45% and 40% of the cell population near the tip, respectively.",
+      "claim_type": "IMPLICIT",
+      "source": "The bar chart delineates the population fraction of the different cell populations present near the tip (n = 3 aggregates: 268, 179, and 150 cells, N = 2 replicates) with the error bars indicating the SD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This can be inferred from Figure 2B which shows the population fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "009bcc01-c322-4efa-ac2b-14a2c7c7d806",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C92",
+      "claim": "The E-cadherin+/T-Brachyury+ cells constitute approximately 70% of the total cell population at 72 hours post-plating.",
+      "claim_type": "IMPLICIT",
+      "source": "The three different cell populations in the aggregate are marked at 72 hrs-pp: namely cells that express only T-Bra, cells that express both T-Bra and E-cad, and cells that express only E-cad. (right) the fraction of the total population of cells for the three classes are provided in the histogram (n = 7 aggregates: 126, 116, 121, 102, 85, 184, and 163 cells, N = 2 replicates) with the SD shown by the error bars",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This can be inferred from Figure 3B which shows the population fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e57bbd89-a383-4d20-bb33-708a426b6178",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "claim_id": "C93",
+      "claim": "There is no significant statistical difference in the ratio of cell-junction tension heterogeneity between 72 hours and 96 hours post-plating (Kolmogorov-Smirnov Test; p-value = 0.37).",
+      "claim_type": "EXPLICIT",
+      "source": "Box-whisker plot shows the distribution of the ratio of the cell-junction tension heterogeneity between E-cad expressing cells (+), and between E-cad expressing cells and their neighbors (-) at 72 hr-pp (n = 28 junctions, N = 2 replicates) and 96 hr-pp (n = 54 junctions, N = 2 replicates); 25th and 75th quartiles together with the minimum and maximum values are shown; the insets to the left depict regions on the E-cad+ cell islands where the angle measurements were made. No significant statistical difference between the two time points (Kolmogorov-Smirnov Test; p-value = 0.37)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statistical result is stated in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c4f3f10f-7207-4441-aed4-06bfbeb17bb2",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Chiron exposure induces morphological changes in gastruloids, with approximately 80% of Chiron-exposed aggregates becoming elongated compared to 75% of control aggregates remaining spherical. This difference is statistically significant (Mann-Whitney test, p = 3\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C89 provide converging morphological and statistical evidence. The quantitative data (C11, C12) with appropriate statistical testing (C89) and visual documentation (C10) support the conclusion that Chiron induces aggregate elongation. Sample sizes (n=37 Chiron+, n=20 control) are adequate for the statistical test used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "11fae53c-83b6-42c9-9094-3215de900dc3",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An E-cadherin-rich region emerges at the pointed end of Chiron-exposed aggregates from an initially homogeneous distribution, with significantly higher E-cadherin polarization compared to controls (Mann-Whitney test, p = 7\u00d710\u207b\u00b9\u2070). A T-Brachyury-rich pole similarly emerges from a homogeneous distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C15 and C90 demonstrate spatial polarization of molecular markers with strong statistical support. The temporal progression from homogeneous to polarized states is documented with imaging evidence, and the statistical significance is robust. The emergence of both E-cadherin and T-Brachyury poles from homogeneous distributions is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "66abc44a-6194-47ee-81eb-23ab34d199fc",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "E-cadherin is expressed from early time points while T-Brachyury expression follows Chiron exposure. Chiron pulse triggers decay in E-cadherin levels, while T-Brachyury levels peak just before Chiron removal and gradually decrease thereafter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 establish a clear temporal sequence of marker expression supported by time-lapse imaging and video documentation. The inverse temporal dynamics of E-cadherin (decreasing) and T-Brachyury (increasing then decreasing) are well-documented and consistent with the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "81b4146e-5c3f-4a61-9c58-22de778aeeda",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E-cadherin and T-Brachyury polarize prior to the onset of tip formation, suggesting a possible role in aggregate shape polarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 provides temporal data showing molecular polarization precedes morphological changes, which is well-supported by quantitative shape descriptors. However, C22 appropriately presents the mechanistic interpretation as speculative ('suggesting a possible role'), acknowledging that correlation does not establish causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "3249411c-653e-4571-8bc5-10895b1ea733",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "E-cadherin expressing cells localize at the aggregate tip, spatially segregated from and surrounded by T-Brachyury expressing cells. This core expresses endoderm markers Sox17 and Foxa2, with Sox2 present earlier but absent at 5 days while Sox17 is retained. These populations constitute the majority (~45% E-cad/Sox17, ~40% T-Bra) of cells near the tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 and C91 provide comprehensive spatial and temporal characterization of cell populations with appropriate endoderm markers. The marker expression patterns (Sox17+, Foxa2+, Sox2 temporal dynamics) are consistent with endoderm identity. Quantitative population data from multiple aggregates (n=3) support the conclusions, though sample size is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "c985de6e-1ae6-45a5-a413-ef90a45a1537",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "E-cadherin/Sox17 expressing cells form a tightly packed group (126 of 131 cells in largest connected component with homotypic neighborhoods), while T-Brachyury expressing cells form multiple components (20 components) suggesting sparse distribution around the core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 use connectivity analysis to quantify tissue organization. The simply-connected-component analysis provides objective measures of cell clustering and neighborhood composition. The contrasting organization patterns (compact E-cad/Sox17 vs. sparse T-Bra) are well-supported by the quantitative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6915f517-011b-428e-8d6c-74bbb374578b",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "E-cadherin expression initially pervades the entire aggregate in a homogeneous junctional network, which undergoes gradual fragmentation. E-cadherin levels decrease temporally while a small fraction is retained at the tip. Some E-cad/T-Bra cells express lower E-cadherin levels than neighbors lacking T-Bra, possibly due to T-Brachyury-mediated repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 document the temporal dynamics of E-cadherin network fragmentation with imaging evidence. C37 appropriately cites prior literature for the proposed T-Bra-mediated repression mechanism and presents it as speculative ('may possibly account'). The observations are well-documented though the mechanistic explanation requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At 72 hours post-plating, no organized endoderm group exists; only scattered Foxa2+ cells are present. The population comprises three categories: E-cad+/T-Bra+ cells (~70%), T-Bra+ only cells, and E-cad+ only cells (which express Sox2, indicating epiblast-like identity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 and C92 establish the cellular composition at an intermediate timepoint before endoderm organization. The quantitative population data from multiple aggregates (n=7) and marker expression patterns support the conclusion that endoderm specification occurs after 72h. The Sox2 expression in E-cad+/T-Bra- cells supports their epiblast-like identity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "03346fc6-8b4b-4b54-a460-a3075b8bbabe",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Before full polarization, an 'archipelago' of E-cadherin expressing cells separated by T-Brachyury cells is observed. At day 4, E-cadherin expressing cells exhibit low N-cadherin and Snail1 levels, supporting absence of EMT transition, consistent with recent mouse observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 document the intermediate 'island' state and provide molecular evidence against EMT. The low expression of EMT markers (N-cadherin, Snail1) in E-cad+ cells is appropriate evidence for absence of EMT. The consistency with cited in vivo work (Scheibner et al., 2021) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "2541116e-982c-48f4-a846-9a953883d932",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "E-cadherin expressing cell islands are positive for pluripotency marker Oct4, which correlates inversely with T-Brachyury expression, suggesting pluripotency and epiblast-like nature. The endoderm-like region originates from these islands of pluripotent and epithelial E-cadherin expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 establish the pluripotent, epiblast-like origin of endoderm progenitors through Oct4 expression and its inverse correlation with T-Bra (n=6 aggregates). The conclusion that endoderm originates from these islands is well-supported by the combined marker expression data, though the mechanistic details of differentiation are not fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "e68cdd7b-768d-4b2e-9588-d27d4055100c",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Directed cell flow toward the future tip region occurs during aggregate elongation. E-cadherin-negative cells flow backward at the periphery, creating physical separation between E-cad+ and E-cad- populations. E-cad+ islands are highly dynamic during movement. This directed flow and recirculation is absent without Chiron pulse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 document tissue-scale flows using optical flow analysis on two-photon imaging data. The control experiment (C55) showing absence of directed flow without Chiron strengthens the conclusion that Chiron induces these movements. The methodology is appropriate though N=3 replicates is modest for flow analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6db4efbe-208f-467b-9681-162fd55a98b6",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E-cadherin expressing cell islands remain cohesive despite dynamic rearrangements, implying physical forces maintain cohesion. E-cad cells in islands have significantly smaller contact angles with surrounding cells than with each other, corresponding to significantly higher tension at island boundaries at days 3 and 4. This tension difference could account for island maintenance and segregation at the tip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 provide biophysical measurements of cell-cell contact angles to infer interfacial tensions. The methodology assumes tension determines contact angles (stated in methods), which is reasonable for cell aggregates. However, C60 appropriately presents the mechanistic interpretation as speculative ('could account'). The measurements are from n=28 (72h) and n=54 (96h) junctions, which is adequate. C93 notes no significant difference between timepoints (p=0.37), suggesting stable tension heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "727f45c4-0c33-45e0-a512-f853833beccf",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Endoderm formation occurs through a three-step mechanism: (i) loss of E-cadherin contacts leading to E-cad+ islands surrounded by E-cad- cells, (ii) coordinated cell motion arranging E-cad/Sox2/Oct4+ islands at one pole which protrudes to form the tip, and (iii) island segregation and differentiation into endoderm expressing Sox17/Foxa2. This process does not require EMT but involves cell state transitions, global flow, and surface tension heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result synthesizes the major findings into the proposed three-step mechanism. Claims C2-C4 state the mechanism in the abstract, while C67-C70 and C80 provide the detailed evidence. The mechanism is well-supported by the combined spatial, temporal, and biophysical data. The absence of EMT is supported by marker expression (C44-C46). However, the relative contributions of different cellular mechanisms (flow, sorting, division, death, differentiation) mentioned in C83 are not fully quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "c022bb1a-5129-4e43-935f-f9dec327b4ec",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Aggregates grown in Activin and FGF develop through an epiblast-like phase. Wnt suppression leads to anterior neural development while Wnt exposure (via Chiron pulse from 48-72h) leads to primitive streak-associated fates, with pluripotent epiblast-like cells experiencing massive T-Brachyury expression and loss of E-cadherin contacts, particularly at the periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 and C86-C88 establish the experimental system and the differential response to Wnt signaling. The epiblast-like state is supported by citation (Hayashi et al., 2011), and the Wnt-dependent fate specification is consistent with cited work (Girgin et al., 2021; Morgani et al., 2018). The spatial pattern of T-Bra expression at the periphery is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "681061e9-42ed-4acb-87a5-f2714c5bcf06",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In both mouse embryos and gastruloids, endodermal progenitors do not undergo EMT and emerge from a different cell pool (E-cad+/T-Bra-) than mesodermal precursors (T-Bra+). The gastruloid endoderm primordium gives rise to foregut, midgut, and hindgut territories within 7 days, suggesting in vitro events closely follow in vivo development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 compare gastruloid findings with in vivo data. The absence of EMT in mouse endoderm is supported by citation (Scheibner et al., 2021), and the current work demonstrates the same in gastruloids. The regional specification (C73) is from cited work (Vianello and Lutolf, 2020). The conclusion that in vitro follows in vivo (C74) is appropriately presented as a suggestion based on these parallels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "b103f516-68bb-4011-9f12-62f2de4aad25",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Endoderm specification in gastruloids occurs through appearance of small islands that coalesce into continuous tissue. Similar island-based specification has been reported in zebrafish as the predominant mode and suggested in recent mouse embryo reports. This manifestation in gastruloids might reflect emphasis on ancestral developmental modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 place the island-based specification in evolutionary context. The observation in gastruloids is well-documented in current work and cited studies (Pour et al., 2019; Vianello and Lutolf, 2020). The zebrafish precedent is well-cited (C78), while evidence in mouse is acknowledged as partial (C77). The evolutionary interpretation (C79) is appropriately speculative and cited (Steventon et al., 2021).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "8a932a3d-a35f-4cd9-b067-aef31123c41a",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The mechanism cannot be reduced to simple differential adhesion-based cell sorting. Multiple cellular mechanisms operate including advection by tissue flow, cell sorting, division, death, and differentiation. The work emphasizes coupling between biochemical signaling and tissue flows during endoderm formation and illustrates the potential of in vitro models to study developmental events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 provide appropriate interpretation and contextualization of the findings. C82 correctly notes the complexity beyond simple sorting. C83 acknowledges multiple mechanisms though their relative contributions are not quantified. C84-C85 appropriately frame the broader implications. These are reasonable interpretations of the data though some aspects remain to be fully explored (as acknowledged in C81).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "21de4343-c83e-4682-833f-6d8eef0f1d49",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Most aggregates show a single T-Brachyury pole (35/64), some display multiple poles (18/64), and 11/64 do not polarize. The ratio of cell-junction tension heterogeneity shows no significant difference between 72h and 96h post-plating (Kolmogorov-Smirnov test, p=0.37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C93 provide quantitative characterization of aggregate variability and tension dynamics. The T-Bra polarization data (C20) shows substantial heterogeneity in the system (~55% single pole, ~28% multiple poles, ~17% unpolarized). The tension measurement (C93) indicates stable heterogeneity over time. Both are well-supported by appropriate sample sizes and statistical testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "953e9111-1ebd-44b4-80c2-1e452978c9f6",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "A similar observation of T-Brachyury wave emanating from the boundary has been made on 2D micropatterns where E-cadherin is absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 appropriately cites comparable observations in 2D systems (Martyn et al., 2019) to contextualize the 3D findings. This comparison strengthens the interpretation that boundary conditions influence T-Bra expression patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Gastruloids are 3D aggregates of mouse embryonic stem cells that, upon exposure to external cues, can polarize, elongate, and pattern in a manner reminiscent of early embryos, exhibiting multiaxial organization and Hox gene patterning. Gastrulation is crucial for body plan establishment, and mammalian gastrulation is difficult to study due to intrauterine development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5-C9 provide background context supported by appropriate citations. These establish the rationale for using gastruloids as a model system. The claims about gastrulation importance (C5-C6) and gastruloid capabilities (C8-C9) are well-supported by cited literature. This is standard background material.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    },
+    {
+      "id": "9dd5aadc-f96b-45bb-b9d8-33079f498284",
+      "content_id": "c039d1b1-4ce9-48b8-86dd-d088f4a91b42",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Whether the same mechanism exists at the primitive streak in the mouse embryo remains to be explored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 appropriately acknowledges the limitation that the mechanism described in gastruloids has not been fully validated in vivo. This is an honest assessment of what remains unknown and suggests important future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T12:18:43.760914Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ea8881b0-a223-4654-b96f-95209a383f40",
+      "result_id": "c4f3f10f-7207-4441-aed4-06bfbeb17bb2"
+    },
+    {
+      "claim_id": "b44d83c7-6e35-4918-b7b8-698602c832a1",
+      "result_id": "c4f3f10f-7207-4441-aed4-06bfbeb17bb2"
+    },
+    {
+      "claim_id": "6827aaac-2c1c-4ac5-bc70-d74efb1c4b9f",
+      "result_id": "c4f3f10f-7207-4441-aed4-06bfbeb17bb2"
+    },
+    {
+      "claim_id": "ad17ff82-271a-4ae0-ae45-a2e0796f77ea",
+      "result_id": "c4f3f10f-7207-4441-aed4-06bfbeb17bb2"
+    },
+    {
+      "claim_id": "6409acb0-c313-47ca-aa47-1df74372378e",
+      "result_id": "11fae53c-83b6-42c9-9094-3215de900dc3"
+    },
+    {
+      "claim_id": "80f82a1f-d128-4e62-b20f-c7e7b736bcc6",
+      "result_id": "11fae53c-83b6-42c9-9094-3215de900dc3"
+    },
+    {
+      "claim_id": "76de6072-f5a1-49d0-b6fd-dd301db46b56",
+      "result_id": "11fae53c-83b6-42c9-9094-3215de900dc3"
+    },
+    {
+      "claim_id": "8dbf4852-ea66-4cb9-a4ec-7d29a6abdfed",
+      "result_id": "11fae53c-83b6-42c9-9094-3215de900dc3"
+    },
+    {
+      "claim_id": "e34e539a-a38c-4d14-9699-155928cad65d",
+      "result_id": "66abc44a-6194-47ee-81eb-23ab34d199fc"
+    },
+    {
+      "claim_id": "8084ba11-3a57-4376-9eed-ca991af0846e",
+      "result_id": "66abc44a-6194-47ee-81eb-23ab34d199fc"
+    },
+    {
+      "claim_id": "79a9f38b-a6e4-41a3-a208-95b8ede57af2",
+      "result_id": "66abc44a-6194-47ee-81eb-23ab34d199fc"
+    },
+    {
+      "claim_id": "5b88b57f-a4e7-4c70-8d20-fdf70fadef4c",
+      "result_id": "66abc44a-6194-47ee-81eb-23ab34d199fc"
+    },
+    {
+      "claim_id": "2675836c-0c5d-4b63-980d-29effbacfe9e",
+      "result_id": "81b4146e-5c3f-4a61-9c58-22de778aeeda"
+    },
+    {
+      "claim_id": "5ca367f0-399f-427f-a230-d9c91e82a35b",
+      "result_id": "81b4146e-5c3f-4a61-9c58-22de778aeeda"
+    },
+    {
+      "claim_id": "831d9fdf-d06f-4b96-85bf-48f1e07069df",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "6f108e39-2de8-48db-91a0-ba377ea0fd58",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "94bc1a03-bde5-48bc-8574-d40b966fba3a",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "ac8475c0-ba87-4aab-a656-b9d0306e4b02",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "a3b2a942-3f94-42e0-bdce-2fdef6f32e49",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "a8971292-ee4a-457e-9c5a-ffab79ccec14",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "91e98301-bcd0-47ba-9660-3019a37523ef",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "9769df07-04ba-4fc9-8b32-02eba4f15a07",
+      "result_id": "3249411c-653e-4571-8bc5-10895b1ea733"
+    },
+    {
+      "claim_id": "7d7d8e60-9788-4f17-98d0-661119ad8b40",
+      "result_id": "c985de6e-1ae6-45a5-a413-ef90a45a1537"
+    },
+    {
+      "claim_id": "ba2baa4e-e93e-41fc-8f26-4dc1fb502745",
+      "result_id": "c985de6e-1ae6-45a5-a413-ef90a45a1537"
+    },
+    {
+      "claim_id": "68bbc49d-764a-4ae0-bf2f-3fba9fae9bda",
+      "result_id": "6915f517-011b-428e-8d6c-74bbb374578b"
+    },
+    {
+      "claim_id": "a094643b-e3ed-46a9-a829-91f4e491e6e5",
+      "result_id": "6915f517-011b-428e-8d6c-74bbb374578b"
+    },
+    {
+      "claim_id": "277fcaaa-d4dd-4730-9883-c1afe05437dd",
+      "result_id": "6915f517-011b-428e-8d6c-74bbb374578b"
+    },
+    {
+      "claim_id": "d5771e8e-81a8-44ce-90d8-c9b882b302ad",
+      "result_id": "6915f517-011b-428e-8d6c-74bbb374578b"
+    },
+    {
+      "claim_id": "2406bf09-0311-4208-b6fa-6f112d1f84fa",
+      "result_id": "6915f517-011b-428e-8d6c-74bbb374578b"
+    },
+    {
+      "claim_id": "470fd210-6b9f-4cae-b627-d5e06a5c28d2",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "147af784-5012-47ee-ba9c-f3c16ae17e8e",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "2df670f0-9b7c-48ad-bbc7-ed226b1ea13a",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "c0270cf5-0cee-414d-987d-4b72785e8846",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "1f869345-27ae-45ba-bf78-5ee554e8c02f",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "009bcc01-c322-4efa-ac2b-14a2c7c7d806",
+      "result_id": "88e2e9ae-9c0f-4935-99c4-bd369b72f74f"
+    },
+    {
+      "claim_id": "87805643-038e-4070-8be1-5791189c5131",
+      "result_id": "03346fc6-8b4b-4b54-a460-a3075b8bbabe"
+    },
+    {
+      "claim_id": "a93b0679-7905-4462-8bc2-cfbb92a93dbf",
+      "result_id": "03346fc6-8b4b-4b54-a460-a3075b8bbabe"
+    },
+    {
+      "claim_id": "9b7141d4-aa66-468c-82ce-401c328fe6be",
+      "result_id": "03346fc6-8b4b-4b54-a460-a3075b8bbabe"
+    },
+    {
+      "claim_id": "b790a19f-094d-49e9-b3e7-8ba7870792f2",
+      "result_id": "03346fc6-8b4b-4b54-a460-a3075b8bbabe"
+    },
+    {
+      "claim_id": "aa7edb4a-7d51-40f0-a975-61ed174aa5a0",
+      "result_id": "2541116e-982c-48f4-a846-9a953883d932"
+    },
+    {
+      "claim_id": "ad77624c-4960-49ee-b5fe-6324aa31b5d9",
+      "result_id": "2541116e-982c-48f4-a846-9a953883d932"
+    },
+    {
+      "claim_id": "93bb4c36-db27-4ff3-be32-5c13ede26ce6",
+      "result_id": "2541116e-982c-48f4-a846-9a953883d932"
+    },
+    {
+      "claim_id": "e732e0a9-dc64-4ef8-8fb0-e961f9b3da7e",
+      "result_id": "2541116e-982c-48f4-a846-9a953883d932"
+    },
+    {
+      "claim_id": "892f707c-838f-4a7e-8afb-c182e5356f93",
+      "result_id": "e68cdd7b-768d-4b2e-9588-d27d4055100c"
+    },
+    {
+      "claim_id": "558a5b8a-c49a-4a04-88c8-f39bab7e69ea",
+      "result_id": "e68cdd7b-768d-4b2e-9588-d27d4055100c"
+    },
+    {
+      "claim_id": "5c45a666-3020-463c-bd8b-ecb382ebfe63",
+      "result_id": "e68cdd7b-768d-4b2e-9588-d27d4055100c"
+    },
+    {
+      "claim_id": "7d6bc302-2a43-4e49-88e1-5d0eac427cd7",
+      "result_id": "e68cdd7b-768d-4b2e-9588-d27d4055100c"
+    },
+    {
+      "claim_id": "ac20ce62-8e09-4bd8-b089-91d60d5120a8",
+      "result_id": "e68cdd7b-768d-4b2e-9588-d27d4055100c"
+    },
+    {
+      "claim_id": "e0e5e0c7-959c-4a96-94b5-600438ccec23",
+      "result_id": "6db4efbe-208f-467b-9681-162fd55a98b6"
+    },
+    {
+      "claim_id": "60d01f9c-8fbc-4dce-83e3-7dce9525f663",
+      "result_id": "6db4efbe-208f-467b-9681-162fd55a98b6"
+    },
+    {
+      "claim_id": "81471b17-c9fa-4b20-86cf-e021b0e1b0c4",
+      "result_id": "6db4efbe-208f-467b-9681-162fd55a98b6"
+    },
+    {
+      "claim_id": "20e2d64c-c5a4-42d2-8f27-e5b0c698b379",
+      "result_id": "6db4efbe-208f-467b-9681-162fd55a98b6"
+    },
+    {
+      "claim_id": "bf33a9bd-cc54-4a8b-ac15-dd121f4cc41f",
+      "result_id": "6db4efbe-208f-467b-9681-162fd55a98b6"
+    },
+    {
+      "claim_id": "173fcd02-4f16-4887-8b66-ee74b42c3c27",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "61082846-82fe-497e-a7d3-8bb7f6ae5a90",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "0b6e1a07-7d3a-42dc-b9c5-a875f94c4a68",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "fbc9e9c6-d9b8-4090-b397-25dc5b88c6ca",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "9fba33e5-d4dd-4568-b737-bd2dda27b601",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "33d6d8a6-6081-4e07-9eed-e3ca565c2dd0",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "2e766888-6055-4b42-a1da-a41b8447ab15",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "f6477c57-9f44-427a-82db-4d4e66d6afc4",
+      "result_id": "727f45c4-0c33-45e0-a512-f853833beccf"
+    },
+    {
+      "claim_id": "767449aa-968e-44c6-993c-3e3030440cb5",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "2088a65e-46d4-4f46-a7a9-31049e5d2c60",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "31a854ef-0f25-411e-9ebe-85eeedc23f12",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "e6113f58-ca82-4482-8df1-4f05a57ae2e0",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "42bfc1bf-21e9-4c31-9e3b-5d9900b107cd",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "3e79de30-ada4-4f31-9f3b-a88a3ea1ac1b",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "cc2a7d26-8247-4741-ba04-e481b27db53f",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "4ab1ef02-a20d-4c11-9db3-0bff6b9995f5",
+      "result_id": "c022bb1a-5129-4e43-935f-f9dec327b4ec"
+    },
+    {
+      "claim_id": "a34964ce-e088-4b27-8468-4f618e257d7b",
+      "result_id": "681061e9-42ed-4acb-87a5-f2714c5bcf06"
+    },
+    {
+      "claim_id": "8895e459-2d70-4de0-8798-972c37cf6299",
+      "result_id": "681061e9-42ed-4acb-87a5-f2714c5bcf06"
+    },
+    {
+      "claim_id": "144d0f14-6903-4a6b-8bf8-80ae386dfe8d",
+      "result_id": "681061e9-42ed-4acb-87a5-f2714c5bcf06"
+    },
+    {
+      "claim_id": "bff41d4d-319d-4a58-b1da-f1ea8a76b14b",
+      "result_id": "681061e9-42ed-4acb-87a5-f2714c5bcf06"
+    },
+    {
+      "claim_id": "52d615b8-838d-4d81-80b8-ce5b8d653c75",
+      "result_id": "681061e9-42ed-4acb-87a5-f2714c5bcf06"
+    },
+    {
+      "claim_id": "b2137bae-402e-471e-ba89-0003b45fb459",
+      "result_id": "b103f516-68bb-4011-9f12-62f2de4aad25"
+    },
+    {
+      "claim_id": "f885ae44-d9ac-4ba5-a8ac-4f000fce195f",
+      "result_id": "b103f516-68bb-4011-9f12-62f2de4aad25"
+    },
+    {
+      "claim_id": "b312f290-c01b-4bf0-ae18-59097676d505",
+      "result_id": "b103f516-68bb-4011-9f12-62f2de4aad25"
+    },
+    {
+      "claim_id": "39bb7300-8e9b-414d-8934-6536b8b0ee9b",
+      "result_id": "b103f516-68bb-4011-9f12-62f2de4aad25"
+    },
+    {
+      "claim_id": "ac8ab992-84b1-410f-a1f5-09a0a7b2103f",
+      "result_id": "8a932a3d-a35f-4cd9-b067-aef31123c41a"
+    },
+    {
+      "claim_id": "80f9f7a3-14f7-41c4-b976-e1e07769fe95",
+      "result_id": "8a932a3d-a35f-4cd9-b067-aef31123c41a"
+    },
+    {
+      "claim_id": "264e3152-9ace-4591-9f6c-42fefa363bed",
+      "result_id": "8a932a3d-a35f-4cd9-b067-aef31123c41a"
+    },
+    {
+      "claim_id": "9bb0c4a1-c331-4a12-a50f-1a79e6cdf143",
+      "result_id": "8a932a3d-a35f-4cd9-b067-aef31123c41a"
+    },
+    {
+      "claim_id": "ef4496e4-570f-4e77-b426-30db57986c79",
+      "result_id": "21de4343-c83e-4682-833f-6d8eef0f1d49"
+    },
+    {
+      "claim_id": "e57bbd89-a383-4d20-bb33-708a426b6178",
+      "result_id": "21de4343-c83e-4682-833f-6d8eef0f1d49"
+    },
+    {
+      "claim_id": "e5ad1de6-bc45-4ba5-a5d6-f108a32bb8e4",
+      "result_id": "953e9111-1ebd-44b4-80c2-1e452978c9f6"
+    },
+    {
+      "claim_id": "6612763d-0155-477c-9032-1deb716dce3d",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "31265c5c-f951-46c7-8b2a-d5b9fa99f4de",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "bea6731b-2af7-4063-a10a-a9e15109b695",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "75790339-4319-49f2-b98e-05f88a92512f",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "77be9db0-52d6-48f6-93bf-6e1a7b5d9990",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "ab797589-2ee2-4dee-919f-9dfbeaec5eb3",
+      "result_id": "6eb9467a-7f70-4360-9934-17f3d6e1d6b1"
+    },
+    {
+      "claim_id": "6075770b-6507-4c34-9e40-abb857bdec91",
+      "result_id": "9dd5aadc-f96b-45bb-b9d8-33079f498284"
+    }
+  ],
+  "comparisons": []
+}

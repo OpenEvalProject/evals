@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SFSCS enables cross-talk-free two-species analysis of membrane proteins tagged with strongly overlapping fluorophores (mEGFP/mEYFP or mCherry2/mApple) using single excitation wavelengths. The method yields correct estimates of protein diffusion dynamics, distinguishing faster and slower diffusing species, with high relative cross-correlation for heterodimers (0.72\u00b10.12 for mEGFP-mEYFP, 0.78\u00b10.19 for mCherry2-mApple) and negligible values for non-interacting controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C37 collectively demonstrate successful two-species SFSCS implementation with appropriate positive (heterodimers) and negative (co-expressed monomers) controls. The data show clear discrimination between interacting and non-interacting species with statistically significant differences in rel.cc. values, and diffusion times match expected values for different protein constructs. SNR analysis (C33) acknowledges method limitations appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C29",
+      "C30"
+    ],
+    "result": "SFSCS accurately determines molecular brightness for oligomerization analysis, detecting mEGFP homodimers with normalized brightness of 1.64\u00b10.36 (corresponding to ~60-75% fluorescence probability) while maintaining consistent brightness values for monomeric controls. Linker length affects rel.cc. values, with short linkers showing reduced cross-correlation likely due to FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate that SFSCS provides quantitatively accurate brightness measurements consistent with previous characterizations (C39). The brightness ratio of ~1.64 for dimers vs monomers is appropriate given the known fluorescence probability of mEGFP. The linker effect (C29-C30) is properly controlled and explained, strengthening the overall validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Three-species SFSCS successfully discriminates interactions among mEGFP, mEYFP, and mCherry2-tagged proteins at the plasma membrane. Applied to IAV proteins, the method detected strong LC3-M2 interaction (rel.cc. 0.52\u00b10.14, ~90% of heterotrimer control) but no CD9-M2 interaction, while brightness analysis revealed M2 oligomerization (dimers to tetramers, \u03b5=3.1\u00b10.8) and monomeric CD9 and LC3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 demonstrate successful three-species implementation with appropriate controls (non-interacting monomers, heterodimers, heterotrimers) showing expected rel.cc. patterns. The biological application to IAV proteins provides meaningful data with proper quantification of both interactions and oligomerization states. The interpretation accounts for known binding stoichiometries (C102) and expression level differences (C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Four-species SFSCS can simultaneously analyze mEGFP, mEYFP, mApple, and mCherry2, successfully discriminating different interaction patterns among hetero-oligomers. ACFs were obtained for all species with higher SNR for green FPs, and rel.cc. values correctly identified non-interacting controls (\u22640.11), selective heterodimers (0.55\u00b10.13 for mEGFP-mCherry2), and hetero-tetramers (0.42-0.78 for all pairs including the challenging mApple-mCherry2 pair at 0.53\u00b10.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 demonstrate successful four-species implementation with appropriate sample complexity (non-interacting, two heterodimers, tetramer). The detection of significant cross-correlation even for the lowest SNR pair (mApple-mCherry2, C61) validates the method's capability. The systematic progression from negative to positive controls with expected rel.cc. patterns supports the claims, though the reduced SNR for red FPs (C56) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C78"
+    ],
+    "result": "Four-species RSICS successfully analyzes mEGFP, mEYFP, mApple, and mCherry2 in the cytoplasm, obtaining ACFs for all species and correctly identifying interaction patterns. The method distinguished non-interacting controls (rel.cc. 0.03\u00b10.05), selective heterodimers (rel.cc. 0.46\u00b10.09 and 0.30\u00b10.10 for linked pairs), and hetero-tetramers (rel.cc. 0.31-0.60 for all pairs), with similar diffusion coefficients for coupled species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C78 demonstrate successful extension of RSICS to four species with appropriate controls and consistent results. The ability to fit 3D diffusion models to all ACFs (C63) and obtain similar diffusion coefficients for coupled species (C67) validates the analysis. The systematic testing across three sample types with expected correlation patterns strongly supports the claims, representing a clear technical advance over previous three-species implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C107",
+      "C110",
+      "C111"
+    ],
+    "result": "Three-species RSICS on IAV polymerase complex subunits (PA-mEYFP, PB1-mEGFP, PB2-mCherry2) revealed high rel.cc. values for all combinations (0.39-0.93) and pf-corrected brightness values of \u03b5PB1-G=2.1\u00b10.7, \u03b5PA-Y=1.8\u00b10.6, \u03b5PB2-Ch2=2.2\u00b10.7, indicating 2:2:2 stoichiometry. This represents the first direct quantification of complete PC stoichiometry in living cells with simultaneous information on interactions, brightness, diffusion, and concentration for all three subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72, C107, C110-C111 provide strong evidence for 2:2:2 stoichiometry through brightness analysis with appropriate pf corrections and proper controls (homodimers for pf determination). The high rel.cc. values indicate strong interactions, with lower PA-PB2 correlation (C69) appropriately explained by excess unbound subunits. The diffusion data (C72) supports this interpretation. The result is consistent with prior structural studies (C108) while providing novel quantification in living cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Triple-correlation analysis (TRICS) directly detected ternary IAV polymerase complexes in cell nuclei, with significantly positive rel.3C. values (0.43\u00b10.38) for polymerase samples compared to negative controls fluctuating around zero (-0.02\u00b10.54). Based on theoretical calculations accounting for fluorescence probability and detection volume overlap, approximately 90% of PC subunits form ternary complexes when all subunits are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 demonstrate successful implementation of TRICS in living cells for the first time, with clear statistical separation between negative controls and polymerase samples. The 90% estimate (C75) is supported by theoretical calculations detailed in the appendix, though this represents an approximation with inherent uncertainties from pf values and volume overlap estimates. The result provides direct confirmation of ternary complex formation complementing the stoichiometry data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Two-species SFSCS has substantial advantages over conventional two-laser FCCS by circumventing imperfect observation volume overlap through single excitation wavelength and compatible overlapping fluorophores. This is evidenced by higher rel.cc. values (70-80%) for mEGFP-mEYFP compared to mEGFP-mCherry2 (45-60%), with the ~70% values matching theoretical expectations given fluorescence probability of ~0.7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide valid comparison with conventional FCCS, supported by experimental data showing higher cross-correlation for spectrally similar FPs. The theoretical justification (C83) based on fluorescence probability is sound and supported by prior literature. However, the advantage is primarily for spectrally overlapping FPs requiring single excitation; the method still requires two lasers for three/four-species applications, limiting the generality of the advantage claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The emission spectra of FPs used in this study are stable across cell lines and subcellular localizations, with mEGFP and mEYFP showing no pH variation and mApple/mCherry2 showing little variation over pH 5.0-9.2. mApple exhibited a red shift at acidic pH consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by experimental data in supplementary figures showing spectral stability across conditions. This validation is important for the spectral filtering approach, as spectral changes could introduce artifacts. The pH sensitivity of mApple (C87) is appropriately noted as a consideration for specific applications, with proper citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "A major limitation of SFSCS is reduced SNR of correlation functions due to statistical filtering of overlapping fluorophore signals, affecting all spectral/lifetime-based FFS methods. For two-species SFSCS, cross-talk-free analysis was achievable for relative intensity ratios of 1:10 (mEGFP/mEYFP) or 1:5 (mApple/mCherry2), providing correct estimates of interactions, diffusion, and oligomerization. Three/four-species analysis required restriction to 1:5 ratios between adjacent spectral species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 appropriately characterize the method's limitations with experimental support. The SNR reduction is inherent to the filtering approach and properly acknowledged. The specified concentration ranges are empirically determined and represent practical constraints. The restriction to 1:5 ratios for multi-species analysis (C93) is a significant limitation but is transparently reported with experimental justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Three-species SFSCS revealed strong LC3-M2 association with PM recruitment, but LC3 concentration at the PM was only ~30% of M2 despite comparable expression levels. M2 formed oligomers (dimers-tetramers) while LC3 remained monomeric, suggesting apparent 1:2 to 1:4 LC3:M2 stoichiometry. No significant CD9-M2 interaction was detected, though FP tag positioning might affect this specific interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide detailed biological insights with appropriate caveats. The strong LC3-M2 interaction is well-supported and consistent with prior work (C100). The stoichiometry interpretation (C101, C104) appropriately considers that each M2 monomer has an LC3 binding site (C102) and accounts for the concentration discrepancy (C103). The negative CD9-M2 result (C105) is reported with appropriate caution about potential tag interference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C76",
+      "C77",
+      "C127"
+    ],
+    "result": "SFSCS enables cross-talk-free analysis of up to four protein species labeled with strongly overlapping fluorophores, providing measurements of protein interactions and diffusion dynamics. The approaches provide a powerful toolbox to investigate complex protein interaction networks in living cells and organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C76-C77, C127 are high-level summary statements supported by the comprehensive experimental validation across two-, three-, and four-species implementations. The claims are appropriately scoped to the demonstrated capabilities while acknowledging that the method is most robust for two-species and faces increasing challenges with higher multiplexing due to SNR limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Dimerization of heterotrimeric IAV polymerase complexes was previously proposed based on in vitro structural studies and co-immunoprecipitation assays, with intermolecular PC interactions hypothesized to be required for vRNA synthesis initiation during viral genome replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 accurately represent prior literature with appropriate citations. These claims provide important context for interpreting the current study's findings on PC stoichiometry. The citations to structural and biochemical studies support the statements, though these are background claims rather than results of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The multicolor FFS approaches have several instrumental, conceptual, and sample-related limitations including: requirement for spectral photon counting detectors, two excitation wavelengths for 3+species, limited time resolution (0.5 ms for SFSCS), requirement for diffusing proteins, need for balanced expression levels, potential spectral variations, reduced SNR for red FPs, FP maturation effects, and possible FRET artifacts (minimizable with rigid linkers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C126 provide comprehensive and honest assessment of method limitations. Each limitation is appropriately characterized with experimental or theoretical support. The discussion of FRET artifacts and their mitigation (C125-C126) is particularly important for proper implementation. These limitations are transparently reported and help define the method's applicability range, which is essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on fluorescence fluctuation spectroscopy methods: FFS provides tools to quantify interactions in living cells through temporal analysis of fluctuations (dynamics), magnitude analysis (concentration/oligomerization), and cross-correlation of spectrally separated signals (interactions). Conventional FFS is limited to two species, but recent advances including RSICS and sc-FLCCS demonstrated three-species analysis in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 accurately summarize established FFS principles and recent literature with appropriate citations. These are background claims that contextualize the current work rather than novel results. The characterization of prior art is accurate and provides proper attribution to previous three-species implementations (C16-C19), establishing the novelty of the four-species extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C112"
+    ],
+    "result": "Discussion of method comparisons and future applications: Spectral discrimination may be more robust than lifetime-based approaches due to FRET sensitivity. The SNR limitation also affects conventional FCCS. The approaches would benefit from multiparametric analysis combining spectral and lifetime detection. SFSCS is applicable to multicellular organisms and offers potential for studying PC-host factor interactions or inhibitor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C92, C97-C99, C112 mix comparative analysis with speculation about future applications. The comparison with sc-FLCCS (C84) is reasonable but somewhat speculative regarding robustness. The applicability to multicellular organisms (C99) is inferred from prior two-color work rather than directly demonstrated. The future applications (C97, C112) are speculative. These claims provide useful context but lack direct experimental support in the current work.",
+    "result_type": "MINOR"
+  }
+]

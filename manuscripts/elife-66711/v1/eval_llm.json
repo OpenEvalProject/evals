@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a computational model of clonally developing organisms with two cell types (germ-role and soma-role) that undergo stochastic differentiation during synchronous cell divisions. Fitness is measured by population growth rate, which depends on offspring number and development time, with soma-role cells accelerating growth but dying at reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C42 collectively describe a well-defined computational model with clear assumptions (synchronous division, stochastic strategies, fitness based on growth rate). The model structure is internally consistent and the fitness measure (C40) is appropriately cited. The assumptions are explicitly stated and biologically motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C94",
+      "C95"
+    ],
+    "result": "Cell differentiation costs are essential for the evolution of irreversible somatic differentiation. Without costs, reversible strategies always outperform irreversible strategies because they can maintain high soma-role fractions during growth while recovering germ-role cells before reproduction, avoiding the fundamental tradeoff faced by irreversible strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 provide clear logical reasoning for why costless differentiation cannot favor irreversible strategies, supported by model results in C55 (with reference to Appendix 2) and empirical data in C94-C95 (Figure 2A,D). The mechanism is well-explained: irreversible strategies have inherently lower differentiation rates (C57-C58, Figure 2D), making them competitive only when high differentiation rates are penalized by costs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Evolutionarily optimal reversible strategies feature much higher cell differentiation rates than irreversible strategies across all cost levels. Irreversible strategies are insensitive to soma-to-germ costs (since soma never differentiates), while reversible strategies are heavily penalized by such costs, explaining why irreversible strategies evolve even when soma-to-germ transitions are easier than the reverse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are directly supported by Figure 2D showing differentiation rate distributions. Claims C60-C62 provide mechanistic explanation supported by Figure 2A,H. The logic is sound: irreversible strategies avoid costs of soma-to-germ transitions entirely, giving them an advantage in specific cost regimes despite the general disadvantage described in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Irreversible somatic differentiation evolves only when soma-role cells provide substantial benefits even at small numbers (low contribution threshold x0 or high synergy \u03b1). This is because irreversible strategies produce soma-role cells at low rates and spend significant time with few soma-role cells, requiring these few cells to meaningfully contribute to growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Figure 3A,B,D showing the relationship between composition effect profiles and strategy evolution. Claims C66-C70 provide clear mechanistic reasoning linking the static nature of differentiation strategies (C67) to the requirement for early soma effectiveness. The logic connecting low differentiation rates (C68) to the need for effective small-number soma (C70) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Intermediate maximal benefit values (b) are required for irreversible differentiation to evolve. When maximal benefit is too small, no differentiation evolves; when it approaches 1 (cell doubling time approaches zero), reversible strategies dominate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe boundary conditions for irreversible strategy evolution, with C73 referencing Equation 3 and Appendix 4. The reasoning is logical: extreme parameter values favor either no differentiation or reversible differentiation, leaving an intermediate range for irreversible strategies. However, Figure 3D shows this pattern but quantitative thresholds are not precisely specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C88",
+      "C110",
+      "C114"
+    ],
+    "result": "Irreversible somatic differentiation requires organism size to exceed approximately 64 cells (2^6). Small organisms favor reversible or no differentiation strategies because irreversible strategies accumulate benefits gradually with size while costs decrease, whereas reversible strategies quickly reach optimal soma fractions and no-differentiation strategies avoid costs entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C82-C83, C88, and C114 are supported by Figure 4A showing size-dependent strategy evolution. Claims C75-C80 provide mechanistic explanation for size effects. The threshold of ~64 cells is clearly stated and supported by data, though C86 notes rare exceptions at 32 cells under extreme cost asymmetries (Figure 4B,C). The reasoning connecting gradual benefit accumulation (C78) and decreasing costs (C79) to size requirements is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C101"
+    ],
+    "result": "An alternative model where differentiation incurs death risk rather than time delay produces qualitatively similar results: irreversible differentiation evolves only with costly differentiation, and the same cost-dependent patterns emerge. This demonstrates that the specific mechanism of differentiation costs (delay vs. risk) does not qualitatively affect the evolution of irreversible somatic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by Figure 5 showing similar patterns between delay and risk models. Claim C101 draws the appropriate conclusion about mechanism independence. However, the risk model is described only briefly (reference to Appendix 6), and quantitative comparisons are limited. The qualitative similarity is clear, but whether thresholds and parameter ranges are identical is not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The model prediction that small numbers of highly effective soma-role cells promote irreversible differentiation is consistent with observations in Eudorina illinoiensis, where only 4 of 32 cells are vegetative yet the species shows reproductive division of labor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 summarizes a key model finding (supported by Figure 3), and C103 provides a biological example from Sambamurty AVSS, 2005. Claim C105 appropriately frames this as suggestive rather than definitive. The correspondence is qualitative and the model was not specifically parameterized for this organism, but the agreement is noteworthy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C146"
+    ],
+    "result": "Model predictions align with developmental patterns in Volvocales algae: small species (Chlamydomonas, Gonium \u226416 cells) show temporal specialization; intermediate species (Eudorina 16-32 cells) show reduced reproductive capacity in some cells; larger species (Pleodorina 128 cells, Volvox 10,000 cells) show irreversible somatic differentiation with size thresholds consistent with model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 provide well-cited biological observations forming a size-dependent progression. Claim C115 and C146 assert correspondence with model results. The qualitative agreement is strong: the model predicts size thresholds of 32-64 cells (C114), and Volvocales show the transition in this range. However, the model was not specifically fit to Volvocales data, and other factors (e.g., centriole constraints, C116) may contribute to observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The model assumes synchronous cell division requiring organism-level coordination. This assumption is justified by observations in simple species showing synchronous division with differentiation (Eudorina illinoiensis 32 cells, Pleodorina californica 128 cells), and by organism sizes being powers of two indicating coordinated rather than independent cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 explicitly states a key assumption, C130 explains its biological requirement, and C131-C134 provide empirical support with appropriate citations. The justification is reasonable for the size range modeled. However, the authors acknowledge in Appendix G that asynchronous division significantly suppresses irreversible differentiation, indicating this assumption is consequential. The assumption is justified but its impact on generality should be noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The model uses static differentiation strategies (probabilities independent of life cycle stage), which disadvantages irreversible strategies by creating tradeoffs, but fully dynamic strategies would produce unrealistic all-soma-then-all-germ patterns not observed in nature. Real organisms like higher Volvocales use intermediate dynamic strategies warranting further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 acknowledge a significant model limitation and its implications. Claim C139 (citing Kirk 2005) notes that real Volvocales strategies are not static. This is an honest assessment of model scope. The static assumption is a reasonable simplification that likely makes irreversible strategies harder to evolve (conservative), but the authors appropriately identify this as an area for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Cell differentiation costs are biologically realistic, arising from material, energy, and time requirements to produce differentiation-specific components. Examples include heterocyst cell wall thickening in cyanobacteria and proteome changes of 23-74% in heterocysts and during Dictyostelium development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C97 provide biological justification for the cost assumption. Claims C98-C100 provide specific examples with appropriate citations (Ow et al. 2008, Sandh et al. 2014, Bakthavatsalam and Gomer 2010, Czarna et al. 2010). The examples demonstrate that differentiation costs are real and substantial, supporting the model's central assumption. However, the model's specific cost formulation (time delay) is a simplification of these complex biological processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C147"
+    ],
+    "result": "Despite heavy reliance on Volvocales examples (reflecting literature bias), the model is not Volvocales-specific but addresses irreversible somatic differentiation generally. Three key factors emerge: organism size (known for division of labor), differentiation costs (discussed biologically but not in evolutionary models), and early soma effectiveness (a novel finding). The results likely reveal general properties independent of clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 appropriately acknowledge scope and limitations. Claims C142-C145 summarize contributions, distinguishing known factors (C143) from novel ones (C145). Claim C147 asserts generality, which is reasonable given the model's abstract nature and correspondence with available data, though testing in other systems would strengthen this claim. The assessment is balanced and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Irreversible somatic differentiation, where vegetative cell lineages cannot contribute to reproduction, is a key innovation in complex animals and some algae (Volvocales), contrasting with primitive species using temporal specialization. While this pattern dominates metazoans, exceptions exist in plants and cnidarians, indicating irreversibility is not inevitable and requires explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish biological context with appropriate citations (Mikhailov et al. 2009, Kirk 2005, Grosberg and Strathmann 2007). Claims C10-C14 motivate the research question by noting exceptions (Lanfear 2018, DuBuc et al. 2020). Claims C15-C16 clarify terminology distinguishing irreversible from terminal differentiation. This provides solid background establishing the biological puzzle the model addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Existing theoretical models of somatic cell evolution focus on optimal cell specialization in adult organisms, abstracting from developmental processes. Models considering development either fix the fraction of cells capable of becoming somatic (Gavrilets 2010), assume irreversibility (Erten and Kokko 2020), don't produce true somatic dead-ends (Rodrigues et al. 2012), or don't consider irreversible differentiation (Cooper and West 2018). Theoretical understanding of irreversible somatic differentiation evolution is therefore limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 characterize existing literature with multiple citations, identifying specific gaps in each referenced work. Claim C23 draws the appropriate conclusion that this study addresses an understudied question. The literature review is thorough and accurately identifies the novelty of the current work. The characterizations of prior work appear fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "The model's composition effect function requires soma-role cells to exceed a contribution threshold (x0) before providing benefits, extends previous work on convex performance functions favoring differentiation, and incorporates recent findings that concave functions can also favor differentiation when topological constraints are included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 describes a model feature (Equation 3). Claims C47-C48 appropriately cite prior work (Michod 2006, Rueffler et al. 2012, Cooper and West 2018, Yanni et al. 2020) showing how the current model extends existing frameworks. The model's functional form is more flexible than previous work, allowing exploration of threshold and saturation effects. This positions the work appropriately in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Previous models focused on resource allocation and cell divergence within organisms. The current model assumes functional differences between germ-role and soma-role cells and focuses on how the number of soma-role cells affects organism performance (interaction character), representing a different approach to modeling soma benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 characterize prior approaches with appropriate citations. Claim C108 describes how the current model differs. This is a fair characterization of the modeling choice. However, the distinction between \"resource allocation\" and \"number-dependent impact\" approaches could be more precisely articulated, as both ultimately affect organism performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Organism size plays important roles in life cycles, with large organisms having advantages in growth efficiency, predator avoidance, problem-solving, and division of labor. Maximum size has been related to reproduction since the onset of multicellularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide biological context for why size matters, with appropriate citations (Amado et al. 2018, Erten and Kokko 2020, Waters et al. 2010, Matz and Kjelleberg 2005, Fisher et al. 2016, Hiltunen and Becks 2014, Morand-Ferron and Quinn 2011, Carroll 2001, Matt and Umen 2016, Ratcliff et al. 2012). This contextualizes the model's size-dependent findings within broader understanding of size evolution. The citations support the general claims about size advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The model uses maturity size of 1024 cells, larger than the minimum for irreversible differentiation but interesting because organisms at ~1000 cells span diverse complexity levels. The model focuses on colonial-to-multicellular transitions; further complexity (e.g., maternal protection in V. carteri) could relax the identified conditions for irreversible differentiation evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 describes the parameter choice. Claim C124 justifies it by noting biological diversity at this scale. Claims C125-C128 appropriately scope the model and speculate about extensions. This is reasonable framing: the model addresses early multicellularity, and the authors appropriately note that additional features in more complex organisms might alter predictions. Claims C126-C128 are speculative but appropriately framed as such.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Cell differentiation may impact development by creating dysregulation risks leading to selfish mutants (e.g., cancer). The disposable soma theory suggests vegetative cells form separate lineages to contain mutations and prevent their transmission to future generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide biological motivation for the alternative risk-based model. The connection between differentiation, dysregulation, and cancer risk is biologically plausible, and disposable soma theory is an established framework. However, no specific citations are provided for these claims, and the connection to the model's risk formulation could be more explicit. The reasoning is sound but could be better supported.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1919 @@
+{
+  "submission": {
+    "id": "ab121e2f-01e9-40a0-83b1-27bf6a87bcd7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T00:50:48.584924Z",
+    "updated_at": "2025-12-03T00:50:48.584924Z"
+  },
+  "content": [
+    {
+      "id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "submission_id": "ab121e2f-01e9-40a0-83b1-27bf6a87bcd7",
+      "content_type": "manuscript",
+      "content_text": "# Altered N-glycan composition impacts flagella-mediated adhesion in Chlamydomonas reinhardtii\n\n## Authors\n\n- Nannan Xu<sup>1</sup> ([ORCID: 0000-0003-2847-7225](https://orcid.org/0000-0003-2847-7225))\n- Anne Oltmanns<sup>3</sup> ([ORCID: 0000-0002-0153-048X](https://orcid.org/0000-0002-0153-048X))\n- Longsheng Zhao<sup>4</sup>\n- Antoine Girot<sup>6</sup>\n- Marzieh Karimi<sup>6</sup>\n- Lara Hoepfner<sup>3</sup> ([ORCID: 0000-0002-8222-4563](https://orcid.org/0000-0002-8222-4563))\n- Simon Kelterborn<sup>7</sup>\n- Martin Scholz<sup>3</sup>\n- Julia Bei\u00dfel<sup>3</sup>\n- Peter Hegemann<sup>7</sup> ([ORCID: 0000-0003-3589-6452](https://orcid.org/0000-0003-3589-6452))\n- Oliver B\u00e4umchen<sup>6</sup> ([ORCID: 0000-0002-4879-0369](https://orcid.org/0000-0002-4879-0369))\n- Lu-Ning Liu<sup>4</sup> ([ORCID: 0000-0002-8884-4819](https://orcid.org/0000-0002-8884-4819))\n- Kaiyao Huang<sup>1</sup> ([ORCID: 0000-0001-8669-1065](https://orcid.org/0000-0001-8669-1065)) \u2020\n- Michael Hippler<sup>3</sup> ([ORCID: 0000-0001-9670-6101](https://orcid.org/0000-0001-9670-6101)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Algal Biology, Institute of Hydrobiology, Chinese Academy of Sciences Wuhan China\n2. University of Chinese Academy of Sciences Beijing China\n3. Institute for Plant Biology and Biotechnology, University of M\u00fcnster M\u00fcnster Germany\n4. Institute of Integrative Biology, University of Liverpool Liverpool United Kingdom\n5. State Key Laboratory of Microbial Technology, and Marine Biotechnology Research Center, Shandong University Qingdao China\n6. Max Planck Institute for Dynamics and Self-Organization (MPIDS) G\u00f6ttingen Germany\n7. Institute of Biology, Experimental Biophysics, Humboldt University of Berlin Berlin Germany\n8. Experimental Physics V, University of Bayreuth Bayreuth Germany\n9. College of Marine Life Sciences, and Frontiers Science Center for Deep Ocean Multispheres and Earth System, Ocean University of China Qingdao China\n10. Institute of Plant Science and Resources, Okayama University Kurashiki Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor the unicellular alga Chlamydomonas reinhardtii, the presence of N-glycosylated proteins on the surface of two flagella is crucial for both cell-cell interaction during mating and flagellar surface adhesion. However, it is not known whether only the presence or also the composition of N-glycans attached to respective proteins is important for these processes. To this end, we tested several C. reinhardtii insertional mutants and a CRISPR/Cas9 knockout mutant of xylosyltransferase 1A, all possessing altered N-glycan compositions. Taking advantage of atomic force microscopy and micropipette force measurements, our data revealed that reduction in N-glycan complexity impedes the adhesion force required for binding the flagella to surfaces. This results in impaired polystyrene bead binding and transport but not gliding of cells on solid surfaces. Notably, assembly, intraflagellar transport, and protein import into flagella are not affected by altered N-glycosylation. Thus, we conclude that proper N-glycosylation of flagellar proteins is crucial for adhering C. reinhardtii cells onto surfaces, indicating that N-glycans mediate surface adhesion via direct surface contact.\n\n## Introduction\n\nN-glycosylation, as one of the major post-translational modifications, takes place along the ER/Golgi secretion route and consequently most N-linked glycans are found on proteins facing the extracellular space. Initial steps of N-glycosylation in the ER are highly conserved among most eukaryotes and consist of the synthesis of a common prebuilt N-glycan precursor onto a dolichol phosphate. Following the transfer of the glycan precursor onto the asparagine of the consensus sequence N-X-S/T of a nascent protein (where X can be any amino acid except proline), the glycoprotein is folded by the glycan recognizing chaperones Calnexin and Calreticulin (Stanley and Taniguchi, 2017). Subsequent N-glycan maturation steps in the Golgi are species dependent and give rise to a high variety of N-glycan structures. In land plants, Golgi maturation leads to N-glycans modified with \u03b21,2-core xylose and \u03b11,3-core fucose (Strasser, 2016). In Chlamydomonas reinhardtii, a unicellular biflagellate green alga, N-glycans can be decorated with core xylose and -fucose (Lucas et al., 2020; Oltmanns et al., 2019; Schulze et al., 2018). Additionally, 6O-methylation of mannose and addition of a terminally linked \u03b21,4-xylose were reported (Mathieu-Rivet et al., 2013). While the functional advantage of N-linked glycans to mature proteins is hardly understood, it is known that blocking the synthesis of a full N-glycan precursor results in hypoglycosylated proteins that cannot be folded properly (Gardner et al., 2013). Instead, they are degraded via the ER-associated degradation pathway (ERAD) and are consequently not targeted correctly (Adams et al., 2019; Cherepanova et al., 2016). Therefore, impairment of glycosylation at such early stage is lethal in both uni- and multi-cellular organisms and only when inhibition of glycosylation is carefully dosed (e.g. by tunicamycin), immediate physiological effects caused by hypoglycosylation can be observed (Kukuruzinska et al., 1987). Looking at C. reinhardtii, treatment of vegetative cells with tunicamycin lead to an impaired flagellar adhesiveness, indicating that glycoproteins are crucial for adhesion and the subsequent onset of gliding (Bloodgood et al., 1987).\u00a0However, whether this phenotype is linked to mistargeting of proteins due to hypoglycosylation and/or the lack of N-glycans on the flagella surface is unclear.\n\nWhole-cell gliding is one of two flagella-based motilities in C. reinhardtii besides swimming (Ishikawa and Marshall, 2011; Kozminski et al., 1993; Snell et al., 2004). In principle, the cell adheres to a surface via its flagella, positioning them in a 180\u00b0 angle and initiates gliding along the solid or semisolid surface into the direction in which one flagellum is pointing (designating it as leading flagellum) (Bloodgood, 2009). Interestingly, flagella not only bind to large solid surfaces, but they also bind to small, inert objects (e.g. polystyrene microbeads) that are moved along the flagellar membrane. While the two events, summarized as flagellar membrane motility, are believed to underly the same molecular machinery, it is assumed that they start with an adhesion of flagella membrane components to the surface (Bloodgood and Salomonsky, 1998). A micropipette force measurement approach recently showed that the flagella adhesion forces on different model surfaces with tailored properties lie in the range of 1 to 4 nN and that only positive surface charge diminished the adhesion force significantly (Backholm and B\u00e4umchen, 2019; Kreis et al., 2019; Kreis et al., 2018). These findings imply that the adhesion system of C. reinhardtii has developed toward great flexibility instead of high specificity, in line with the high diversity of solid surfaces dwelled by the microalga in nature, ranging from soil and sand to wet leaves, moss, and bark (Harris, 2009). Remarkably, surface iodination experiments in the early 1980s revealed a single protein called flagellar membrane glycoprotein 1B (FMG-1B) as the main player mediating surface contact (Bloodgood and Workman, 1984). FMG-1B is exclusively located in the flagellar membrane and has a remarkable size of around 350 kDa (4389 amino acids) with a large extra-flagellar part (4340 amino acids) anchored in the membrane via a single predicted trans membrane helix of 22 amino acids (Bloodgood et al., 2019). As the name indicates, it is heavily N- and O-glycosylated. A recent knock down study showed, that it is the main constituent of the glycocalyx surrounding the flagellum. Additionally, a fmg-1B mutant showed a drastically reduced ability to glide (Bloodgood et al., 2019). Strikingly, FMG-1B is present at a high copy number and turns over rapidly within approximately 1 hr (Bloodgood, 2009). The rapid turnover is probably attributed to the fact that flagellar membrane components are constantly shed into the medium as flagellar ectosomes (Bloodgood, 2009; Wood et al., 2013). FMG-1B and another N-glycosylated membrane component, FAP113, have been shown to be eventually torn out of the membrane once bound to microbeads (Kamiya et al., 2018). Whether FAP113 is only involved in microbead binding or also in whole-cell gliding is unknown.\n\nRecently, it was found that flagellar adhesion to surfaces is switchable by light, indicating that a blue-light photoreceptor signal is governing this process (Kreis et al., 2018). Following adhesion to the surface, a transmembrane signal mediates translation of the adhesion event into a calcium transient and protein phosphorylation cascade (Bloodgood, 2009; Collingridge et al., 2013; Kreis et al., 2018). According to the current model, an interaction of the short cytoplasmic part of FMG-1B with intraflagellar transport (IFT) may occur (Laib et al., 2009; Shih et al., 2013). IFT moves bidirectionally along the flagellar microtubules, the anterograde transport is driven by kinesin 2 and retrograde transport is driven by cytoplasmic dynein-1b (Cole et al., 1998; Huangfu et al., 2003; Kozminski et al., 1995; Lechtreck, 2015; Pedersen and Rosenbaum JLBT-CT in DB, 2008; Porter et al., 1999; Rosenbaum and Witman, 2002). Since retrograde IFT trains pause relative to the adhesion site while FMG-1B tethers to the solid surface through its large extracellular carbohydrate domain (Bloodgood, 2009), the force generated by retrograde motor protein dynein-1b will push the microtubule into the opposite direction, dragging the cell body and the second flagellum behind; the gliding process is initiated (Shih et al., 2013).\n\nDue to the high N-glycosylation level of the extraflagellar domain of FMG1-B, interacting with the solid surface, it was suggested that N-glycosylation could be crucial for adhesion, beyond proper glycoprotein folding. Therefore, we compared flagellar membrane motility of different mutant strains impaired in N-glycan maturation (characterized in Schulze et al., 2018). We found that N-glycan maturation indeed impacts the interaction of flagellum and surface in all mutants analyzed.\n\n## Results\n\n### Altered N-linked glycans do not change the flagellar localization of FMG-1B\n\nTo test whether N-glycan maturation in Golgi is important for flagellar surface motility in C. reinhardtii, two insertional mutants (IM) such as IMMan1A, IMXylT1A and their double mutant IMMan1AxIMXylT1A were studied. Initially, these mutants had been described in Schulze et al., 2018, where N-glycan patterns of supernatant proteins were analyzed and compared (Figure 1A). The insertional mutagenesis giving rise to these mutants was performed in the parental strain CC-4375 (a ift46 mutant backcrossed with CC-124) complemented with IFT-46::YFP, referred to as WT-Ins throughout the current study. The first mutant, deficient in xylosyltransferase 1A (IMXylT1A), produces N-glycans devoid of core xylose while simultaneously having a reduced length. Second mutant IMMan1A, a knock down mutant of mannosidase 1A, is mainly characterized by a lack of 6O-methylation of mannose residues while the N-glycan length is slightly greater than in WT-Ins. Furthermore, N-glycans of IMMan1A are slightly reduced in terminal xylose and core fucose. Finally, a double mutant of the above two single mutants (IMMan1AxIMXylT1A, obtained by genetic crossing) produces N-glycans devoid of 6O- methylation but of WT-Ins length and carrying core xylose and fucose residues (Figure 1A). It is of note that in none of the mutants the flagellar length is altered as compared to WT-Ins (Figure 1\u2014figure supplement 1). To confirm that flagellar N-glycan patterns of these mutants deviate from WT-Ins, whole-cell extracts and isolated flagella were probed with anti-HRP, binding to \u03b21,2-xylose and \u03b11,3-fucose attached to the N-glycan core (Kaulf\u00fcrst-Soboll et al., 2011). In line with previous publications, the antibody showed a higher affinity toward N-glycoproteins synthesized by IMMan1A and IMMan1AxIMXylT1A while it showed a decreased affinity toward probes of IMXylT1A (Figure 1\u2014figure supplement 2; Schulze et al., 2018). Further lectin-affino blotting with concanavalin A (ConA) was performed on whole-cell extracts, revealing increased ConA-affinity in all three N-glycosylation mutants compared to WT-ins (Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram of N-linked glycan compositions of mutant strains characterized in Schulze et al., 2018 and used in the current study. While IMMan1A and the double mutant are mainly characterized by a lower degree of methylation (Me), N-glycans of IMXylT1A are decreased in length and lack the core xylose. All monosaccharides depicted above the horizontal line can be bound to any subjacent residue or to any residue at the same level. Square: (N-Acetylglucosamine, Circe: hexose, Triangle: fucose, Star: xylose). (B) Probing whole-cell and flagella samples with antibodies directed against N-glycans or the protein backbone of FMG-1B (Bloodgood et al., 1986). (C) Log2 peptide abundances of FMG-1B obtained by label-free MS analysis. (D) Log2 peptide abundances of FAP-113 obtained by label-free MS analysis. (E) Immuno-staining of WT-Ins mutant cells (IMMan1A, IMXylT1A or IMMan1AxIMXylT1A) with antibodies directed against FMG-1B. IMMan1A, IMXylT1A or IMMan1AxIMXylT1A express IFT46::YFP. To prevent YFP signal to interfere in immune staining and allow direct comparison of signal in WT-Ins and mutants, strains were crossed with WT-CC124 and progenies of IMMan1A, IMXylT1A or IMMan1AxIMXylT1A absent of IFT46::YFP (#37, #1 and #15) used for immuno-staining experiments (see Figure 1\u2014figure supplement 5).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Measurement of the flagellar length (in \u00b5m) among WT-Ins and three mutants. 50 flagella were measured in each experiment and this experiment has three biological repeats. Error bar: mean \u00b1 SD. p>0.05. (b) Percentage of flagellated cell in WT-Ins and IM strains. The result of three biological replicates is shown. Error bar: mean \u00b1 SD. p>0.05.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Whole-cell proteins (a) and isolated flagella (b) of WT-Ins and mutants were separated on a 7% SDS-PAGE, transferred to nitrocellulose and probed with anti-HRP, which is specifically binding to \u03b21,2-xylose and \u03b11,3-fucose attached to the N-glycan core. \u03b1-tubulin, as loading controls.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Whole-cell proteins of WT-SAG, WT-Ins and mutants were separated on a 7% SDS-PAGE, transferred to nitrocellulose and probed with the lectin Concanavalin A, which binds specific N-glycan epitopes. To ensure equal protein loading membrane was stained before lectin probing with ponceau red (left).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Diagram of the topology of FMG-1B, the major component of the glycocalyx in C. reinhardtii. The identified N-linked glycosylation sites are marked. (b) Comparison of FMG-1B proteotypic N-glycopeptides identified by IS-CID/SugarPy in WT-Ins, IMMan1A, IMXylT1A and IMMan1AxIMXylT1A. (c) The relative peptide abundances of FMG-1A in IMMan1A, IMXylT1A and IMMan1AxIMXylT1A strains compared it in WT-Ins obtained by label-free MS analysis.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Screening the progenies of IMMan1A mutants with WT-CC-124 to obtain the mutant without IFT46::YFP background, which grew in TAP plate with Paromomycin added and died in TAP plate with Hygromycin added. (b) Determination of mRNA levels of MAN1A gene in progeny clones P14, P15, and WT-Ins. IMMan1A -P14 still can live in TAP plate with Paromomycin or Hygromycin. IMMan1A -P15 grew in TAP plate with Paromomycin and died in TAP plate added Hygromycin, which is the strain IFT46::YFP had been removed. Error bar: mean \u00b1 SD. Asterisks indicate statistically significant differences (p<0.01). (c) Comparison of mRNA level of MAN1A gene in progeny clones with CC-124. Error bar: mean \u00b1 SD. Asterisks indicate statistically significant differences (p<0.01). (d) Determination of the expression of IFT46::YFP in whole-cell of WT-Ins and IMMan1A -P15 mutant. IMMan1A -P15 is the offspring generated by crossing IMMan1A -P15 mutant (mt+) with CC124 (mt-). \u03b1-tubulin, as loading control. (e) Determination of the expression of IFT46::YFP in whole-cell of WT-Ins and IMXylT1A -P1 mutant. \u03b1-tubulin, as loading control. (f) Determination of the expression of IFT46::YFP in progenies from the crossing CC124 with IMMan1A X IMXylT1A. \u03b1-tubulin, as loading control.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) The mutants of IMMan1A-P15, IMXylT1A -P37, IMMan1A X IMXylT1A -P37 were mixed with equal amount of WT-Ins expressing IFT46::YFP, then immune stained with an antibody against N-glycan epitope, there is at least one WT-Ins cell and one mutant cell in each picture. (B) The mutants of IMMan1A-P15, IMXylT1A -P37, IMMan1A X IMXylT1A -P37 were mixed with equal amount of WT-Ins expressing IFT46::YFP, then immune stained with a peptide antibody of FMG-1B, there are at least one WT-Ins cell and one mutant cell in each picture.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (a) Experimental procedures of flagella isolation and following analyses. (b) Immunoblot of isolated flagella probed with antibodies against chloroplast marker protein (Cytf, cytochrome f) and mitochondrium marker protein (COXIIB). The absence of respective marker proteins in the flagellar fraction prove the purity of flagellar samples while ponceau staining of the same membrane indicates that similar amounts of protein were loaded. (c) Proteins found significantly differential in abundance in IM strains compared to WT-Ins. Entries of proteins are given with corresponding phytozome ID protein description.\n\nSince FMG-1B is the major constituent of the flagellar glycoproteome and to date the only protein proven to be involved in flagellar surface motility, different monoclonal antibodies raised against FMG-1B were employed to analyze FMG-1B localization (Bloodgood et al., 1986; Long et al., 2016). The whole-cell extracts or isolated flagella from IMMan1A, IMXylT1A,\u00a0and their double mutant IMMan1AxIMXylT1A were probed separately with the glycan epitope recognizing antibody or the antibody against the protein backbone of FMG-1B. FMG-1B was found in whole cells and flagella of WT-Ins and all three mutants. Hereby, the protein amount was similar in all four strains as indicated by the use of the FMG-1B protein-specific antibody (Figure 1B). Contrarily, the antibody raised against FMG-1B glycan epitopes barely detected whole-cell or flagella probes of IMMan1A and IMMan1AxIMXylT1A. Also, the FMG-1B glycan signal decreased in the mutant IMXylT1A, particularly in the whole-cell sample. Taken together, these immuno-blots confirm that the N-glycan pattern of FMG-1B is altered in the mutants, while the protein localization is not affected by this alteration. In addition, label-free mass spectrometric quantification confirmed that FMG-1B is correctly targeted to the flagella in all mutants analyzed (Figure 1C). The same is true for FAP113, another protein shown to be involved in flagella surface motility (Figure 1D).\n\nTo compare the localization of glycan and protein of FMG1-B in WT-Ins and mutants, the cells were immuno-stained with the two FMG-1B-specific antibodies described above. A uniform signal of the glycan-specific antibody was found in the flagella and the cell wall of WT-Ins (Figure 1E, left panel). It should be noted, that such cross reaction with cell wall localized glycosylated proteins has been reported previously (Bloodgood et al., 1986). In line with the immuno-blotting experiment, no glycan signal was observed in the flagella or cell wall of IMMan1A and the double mutant, while signal intensity was low in the flagella of mutant IMXylT1A (Figure 1E, left panel and). The faint FMG-1B signal in IMXylT1A compared to the WT-Ins was clearly observed when WT-Ins and IMXylT1A were mixed prior to immuno-staining (Figure 1\u2014figure supplement 6). When the FMG-1B peptide antibody was used, a uniform signal is found in the flagella of WT-ins, MMan1A, IMXylT1A,\u00a0and the mutant IMMan1AxIMXylT1A (Figure 1E, right panel). In summary, these data show that altered N-glycan maturation did not affect the flagellar localization of FMG-1B. This is in line with early findings by Bloodgood et al., reporting proper FMG-1B targeting to the flagella in a N-glycosylation mutant termed L23 showing increased ConA-affinity (Bloodgood et al., 1987). Although FMG-1B is the most prominent and best studied flagella membrane glycoprotein, there might be other glycoproteins involved in flagellar adhesion. Nevertheless, no protein was found consistently and significantly changed in abundance in flagella of the IM strains analyzed when compared to WT-Ins (Figure 1\u2014figure supplement 7), also indicating that flagellar assembly is not considerably altered in the mutants versus WT.\n\n### Altered N-linked glycans attenuate bead attachment to and movement along the flagellar membrane\n\nIn C. reinhardtii, polystyrene microspheres adhere to and move bidirectionally along the flagellar surface (Bloodgood, 1981). To check the effect of altered N-glycans on these processes, beads with a diameter of 0.7 \u03bcm were added to cell suspensions of IMMan1A, IMXylT1A,\u00a0and the double mutant and the number of beads attached to- or moved along flagella were quantified (Figure 2A and B, exemplary video in Figure 2\u2014video 1). In WT-Ins strains, about 52% of all flagella had at least one bead attached, whereas the percentage of flagella with beads bound decreased to 46% in IMMan1A, 33% in IMXylT1A and 27% in the double mutant (Figure 2A). Among the beads attached, 37% moved along flagella of WT-Ins, 22% in IMMan1A, 29% in IMXylT1A and 27% in the double mutant (Figure 2B). Source data for Figure 2 can be found in Figure 2\u2014source data 1. These data suggested that interaction of flagellar membrane and surface is altered due to altered N-glycan composition in these mutants.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig2-v2.jpg)\n\n**Figure 2.:** (A) Percentage of flagella with at least one polystyrene bead bound. Cells were incubated with polystyrene beads (0.7 \u00b5m in diameter) and subsequently analyzed by light microscopy. (B) Percentage of polystyrene beads transported along the flagellum with at least one polystyrene bead bound. Results present mean of three replicates with 50 cells analyzed per replicate. Error bars show SEM of three replicates. T-test was used for statistical analysis. Source data can be found in Figure 2\u2014source data 1.\n\n### Quantification of the flagella-mediated adhesion using atomic force microscopy\n\nFlagella-mediated surface adhesion force was measured via atomic force microscopy (AFM) (Figure 3A). Here, cells adhered to a cover slide were attached to an AFM cantilever via physical contact (Liu et al., 2011). Subsequently, the AFM cantilever was pulled upwards and the force required to pull the cells was recorded (Figure 3B). To inhibit whole-cell gliding during the measurement, ciliobrevin D was used to inhibit dynein-1b activity and consequently the cell gliding (Firestone et al., 2012). Remarkably, the forces necessary to overcome the adhesion of C. reinhardtii flagella to the surface were significantly reduced in these three mutants analyzed as compared to WT-Ins (Figure 3B and C). Especially in the double mutant the adhesion force was reduced from 8 nN in WT-Ins to 1 nN, while the average energy was reduced from 4 to 0.5 J nm\u22121 (Figure 3C and D). Source data can be seen in Figure 3\u2014source data 1. This result indicates that an altered N-glycan composition impacts the flagellar adhesion force onto a solid substrate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig3-v2.jpg)\n\n**Figure 3.:** (A) Diagram of experimental procedures for force measurement: the cell adhered to the surface (1); the cell attached to the AFM cantilever (2); the cell was pulled up from the surface by AFM cantilever (3). Please note, that retrograde IFT, i.e. gliding was inhibited by ciliobrevin D during all measurements presented here. (B) Representative force curves acquired for strains including WT, IMMan1A, IMXylT1A,\u00a0and IMMan1AxIMXylT1A. (C) Flagella adhesion forces of WT-Ins, IMMan1A, IMXylT1A,\u00a0and IMMan1AxIMXylT1A were generated from force curves (B). (D) Average energy of flagellar adhesion of WT-Ins, IMMan1A, IMXylT1A,\u00a0and IMMan1AxIMXylT1A. Three biological replicates were performed with minimum 5 cells measured per replicate. The p-values are obtained from a two-sided, two sample t-test of mean values. Source data can be seen in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The curve shows the relation of pulling force and pulling distance during AFM probe retracting. The lowest point of the curve represents the maximal adhesion force of flagella which was used in Figure 3C. The area of shaded region represents the total energy calculated by the JPK SPM Data Processing software for pulling up the cell. The average energy is calculated via dividing total energy by pulling distance as shown in the figure. Source data can be seen in Figure 3\u2014figure supplement 1\u2014source data 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Flagella detachment distances of WT-Ins, IMMan1A, IMXylT1A,\u00a0and IMMan1AxIMXylT1A were generated from force curves. (B) Total energy of flagellar adhesion of WT-Ins, IMMan1A, IMXylT1A,\u00a0and IMMan1AxIMXylT1A. Three biological replicates were performed with minimum 5 cells measured per replicate. *p<0.05, **p<0.01, ***p<0.001. The p values are obtained from a two-sided, two sample t-test of mean values. Source data can be seen in Figure 3\u2014figure supplement 2\u2014source data 1.\n\n### Quantification of flagellar adhesion using a micropipette force measurement approach\n\nTo validate the AFM adhesion force measurements, an independent in vivo force measurement approach (Backholm and B\u00e4umchen, 2019; Kreis et al., 2018) was used with another genetic background mutant, xylosyltransferase 1A (CRISPRXylT1A_1), generated in parental wildtype SAG11-32b (WT-SAG) by employing CRISPR/Cas9 (Figure 4\u2014figure supplement 1). As a wavelength dependency of flagellar adhesion had been revealed using this approach (Backholm and B\u00e4umchen, 2019), adhesion forces of the same cells were measured under precisely controlled blue- and red-light conditions using a micropipette adhesion force measurement approach. Adhesion forces were measured in presence and absence of dynein-1b inhibitor ciliobrevin D. Importantly, adhesion forces in CRISPRXylT1A_1 were significantly diminished in comparison to respective WT under both ciliobrevin D conditions confirming AFM results (Figure 4). Illuminating cells with red light dramatically decreased the adhesion force in both WT-SAG and CRISPRXylT1A_1 in presence as well as in absence of ciliobrevin D. Notably, removal of ciliobrevin D resulted in a significant decrease in adhesion force for both WT-SAG and CRISPRXylT1A_1 from ~2.6 nN to\u00a0~1.3 nN in WT-SAG and from\u00a0~1.8 nN to\u00a0~1 nN in CRISPRXylT1A_1. Source data can be seen in Figure 4\u2014source data 1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig4-v2.jpg)\n\n**Figure 4.:** Flagella-mediated adhesion forces acquired for WT-SAG and a xylosyltransferase 1A mutant generated in the genetic background of WT-SAG (CRISPRXylT1A_1). Micropipette force measurements of the same cells were performed for both strains under blue and red light in the (+) presence or (-) absence of ciliobrevin D. Mean values of 10 measurements per cell are depicted, statistical analysis was performed on mean values. The p-values obtained a from Kolmogorov-Smirnov test are respectively (from top to bottom): (***) p=0.0004, (**) p=0.0016, (*) p=0.0491, (***) p=0.0009. Source data can be seen in Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic representation of the XylT1A gene including the site targeted by CIRSPR/Cas9. (b) Parallel reaction monitoring was employed to prove the knock out of XylT1A on proteomic level in two mutants generated by CRISPR/Cas9. (c) Comparison of N-glycan patterns between the XylT1A mutant strains in different genetic backgrounds (IM strain and CRISPR-Cas generated mutants) considering comparable N-glycosites. (d) Detailed comparison of the XylT1A strains in different genetic background looking specifically at Pent (left), dHex (middle) and N-glycan length (number of Hex+MeHex, right).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** 30 \u00b5g of protein per sample were separated by SDS-PAGE and transferred to a nitrocellulose membrane in biological quadruplicates. (a) Ponceau staining of the membrane reveals equal loading between different strains and differential composition of different sample types. (b) On one hand, the FMG-1B protein backbone-specific antibody proves a correct targeting of FMG-1B to flagella in the mutants despite altered N-glycosylation. On the other, the application of antibodies specifically binding to a chloroplast (Cytf, cytochrome f) marker protein as well as to the ATPase beta subunit (mitochondrial and chloroplast) proves the purity of flagellar samples analyzed.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Micropipette force measurements of the same cells were performed for WT-SAG under blue and red light in the (+) presence or (-) absence of DMSO. The concentration of DMSO corresponds to the one used in the experiments with ciliobrevin\u00a0D. Mean values of 10 measurements per cell are depicted, statistical analysis was performed on mean values. The p-values obtained a from Kolmogorov-Smirnov test are respectively (from top to bottom): (n.s.) p=0.9556, (*) p=0.0415.\n\n### The effect of altered N-glycosylation on IFT and gliding\n\nAs presented in Figure 3, the strongest effect on adhesion forces assessed was observed in the double mutant IMMan1AxIMXylT1A when compared to WT-Ins. In the absence of ciliobrevin D, the adhesion force measured by AFM in mutant IMMan1AxIMXylT1A is still significantly lower than in WT-Ins (Figure 5A). This is in line with the WT-SAG and CRISPRXylT1A_1 micropipette adhesion force measurement performed in the absence of ciliobrevin D, where also CRISPRXylT1A_1 had a lower adhesion force (Figure 4). Interestingly, addition of ciliobrevin D resulted in significantly increased adhesion forces as seen for WT-SAG or WT-Ins (Figure 4 and Figure 5A). Taken together, these results suggested that active dynein-1b might reduce surface adhesion forces. On the other hand, it implied that IFT might be hampered via altered N-glycosylation as surface adhesion forces were smaller in the N-glycosylation mutants. Therefore, IFT velocity and gliding ability of IFT46::YFP expressing WT-Ins and IMMan1AxIMXylT1A in absence of ciliobrevin D were assessed by using total internal reflection fluorescence (TIRF) microscopy. Videos of adhered cells generated by TIRF microscopy were evaluated manually with help of kymographs in Fiji software (Figure 5B). Obtained data revealed that neither the proportion of gliding events (gliding velocity higher 0.3 \u00b5m*s\u22121), nor gliding speed distribution was significantly diminished when comparing WT-Ins and the double mutant (Figure 5C). Likewise, anterograde and retrograde IFT velocities were found at WT-Ins values when comparing WT-Ins and the double mutant of adherent cells (Figure 5C), implying no significant impact of altered N-glycan maturation on IFT. Source data for Figure 5 can be seen in Figure 5\u2014source data 1. Lastly, to rule out the possibility that ciliobrevin D might result in elevated adhesion forces due to a toxic side effect, we generated the triple mutant dynein-1btsX IMMan1A X IMXylT1A-4-13# by crossing IMMan1AxIMXylT1A with CC-4423 (Figure 5\u2014figure supplement 1A\u2013C). CC-4423 is characterized by the expression of a temperature sensitive transcript of dynein-1b leading to a depletion of dynein-1b at restrictive temperatures followed by an attenuation of retrograde IFT and flagella disassembly (Engel et al., 2012). Subsequently, adhesion forces were measured via AFM at restrictive temperatures, that\u00a0is, under conditions mimicking the ciliobrevin D dependent inactivity of dynein-1b. As it cannot be excluded that flagella shortening, as induced upon temperature shift (Figure 5\u2014figure supplement 1D), might impact flagellar adhesion forces, the triple mutant treated with 20 mM NaPPi was assessed by AFM as control. Indeed, it was found that adhesion forces differed when measured at a defined flagella length of about 6.5 \u03bcm: while control cells showed an average adhesion force of 0.48 nN, cells depleted from dynein-1b showed a significantly elevated adhesion force of 1.64 N. Importantly, NaPPi only induces flagellar shortening (Figure 5\u2014figure supplement 1E) but does not affect dynein-1b (Dentler, 2005), therefore, differences observed are directly correlated to the action of dynein-1b. Thus we suggest, that the action of dynein-1b reduces flagellar adhesion forces due to a destabilization of surface adhered protein clusters.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig5-v2.jpg)\n\n**Figure 5.:** (A) Adhesion forces acquired for WT-Ins and the double mutant IMMan1AxIMXylT1A in the absence or presence of ciliobrevin D via AFM, respectively. Three biological replicates were performed with minimum 5 cells measured per replicate. (B) Representative kymograph of the movement of IFT46::YFP in flagella of WT-Ins acquired with TIRF microscopy used to calculate the velocity of gliding and IFT. White arrow: non-gliding event (v\u00a0<\u00a00.3 \u00b5m*s\u22121); green arrow: gliding event (v\u00a0>\u00a00.3 \u00b5m*s\u22121); red arrow: anterograde IFT track; blue: retrograde IFT track. (C) IFT and gliding are not significantly altered in the double mutant compared to WT-Ins. Proportion of gliding events (left), gliding velocity (excluding non-gliding events; middle), IFT velocities in either direction (right). Three biological replicates were performed with 10 cells evaluated per replicate corresponding to 300 IFTs/replicates/strain in case of IFT velocity. Error bars in bar plots represent SD of three replicates. Student\u00a0t-test was performed comparing mean values of replicates in regard of proportion of gliding events and IFT\u00a0velocity. Distribution of gliding velocities was analyzed by use of Mann-Whitney U test, n represents number of gliding events measured. Gliding and IFT analysis has been performed in absence of ciliobrevin D. Source data for can be seen in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58805/elife-58805-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The unique inserted cassette of AphVIII in MAN1A gene was identified in the double mutant and the progenies of the cross between the IMMan1A IMXylT1A with dynein-1bts using PCR. (B) Identification of the point mutation of DHC1bts in the progenies of the cross between the IMMan1A IMXylT1A and dynein-1bts. (C) Identification of the unique inserted fragment of XylT1A gene in the progenies of the cross between theIMMan1A IMXylT1A and dynein-1bts using PCR. (D) The shortening of flagella occurs only when triple mutant was incubated at restrictive temperature. Three biological replicates were performed with 50 flagella evaluated per replicate. Error bars show SEM of three replicates. (E) The flagella were shortening when triple mutant was treated with 20 mM Nappi. Three biological replicates were performed with 50 flagella evaluated per replicate. Error bars show SEM of three replicates. (F) The distribution of adhesive force when triple mutant was incubated at restrictive temperature (- no functional DHC1b) or treated with 20 mM NaPPi (+ with functional DHC1b). These measurements were performed at a flagellar length of about 6.5 \u03bcm. Three biological replicates were performed with at least 4 cells evaluated per replicate. T-test was used for statistical analysis. Asterisks indicate statistically differences (*p<0.01). (G) The total energy of pulled up cell from the solid surface. Three biological replicates were performed with at least 4 cells evaluated per replicate. T-test was used for statistical analysis. Asterisks indicate statistically differences (*p<0.1). Source data can be seen in Figure 5\u2014figure supplement 1\u2014source data 1.\n\n## Discussion\n\nOur data revealed that the maturation of N-glycans has an impact on flagella-mediated cell adhesion in C. reinhardtii. At the same time, IFT and gliding velocity were not changed due to altered N-glycosylation.\n\nMicrobead binding was found diminished in IM strains, implying that the flagellar surface has an altered affinity toward microbeads. In line with this, their surface adhesion forces were significantly reduced compared to WT-Ins. The AFM data were confirmed by assessing another XylT1A mutant created via CRISPR/Cas9, using micropipette force measurements. It should be noted that N-glycan patterns of IMXylT1A and CRISPRXylT1A were comparable and thereby strengthen the proposed role of XylT1A as core xylosyltransferase (Lucas et al., 2020; Schulze et al., 2018). Forces measured for WT strains and N-glycosylation mutants with AFM and micropipette force measurement confirmed that differential N-glycan maturation, i.e. altered N-glycan structures attached to mature proteins, lowers the adhesion force of flagella to a surface. These changes in adhesion forces were not accompanied by consistent drastic changes in the flagellar proteomes. For example, FMG-1B and FAP113, to date the only two known proteins involved in surface adhesion, were found in comparable amounts in WT-Ins and mutants (Figure 1 and Figure 4\u2014figure supplement 2; Bloodgood et al., 2019; Kamiya et al., 2018). Of note, also FMG-1A is localized in flagella and its abundance was unaltered between WT and mutants in vegetative cells (Figure 1\u2014figure supplement 4). This contrasts the current assumption that FMG-1A is solely expressed in reproductive cells and opens the question whether it might have a similar role as FMG-1B, given the high similarity of the two proteins (Bloodgood, 2009). Interestingly, gliding of mutant strains on solid surface was not affected. The current model for flagella-mediated cell adhesion and subsequent gliding proposes that the extracellular part of certain glycoproteins such as FMG-1B adheres to the surface, cytoplasmic moieties of these proteins are bound to ongoing retrograde IFT directly or indirectly upon calcium- and light dependent stimulus which is followed by an onset of gliding (Kreis et al., 2018; Shih et al., 2013). Assuming that altered N-glycan maturation does not impact initial protein folding in the ER (as those steps are spatially and temporally separated), our data revealed that changed N-glycosylation, did not alter targeting of respective glycoproteins to flagella nor the velocity of IFT. Thus, changes in surface adhesion are likely linked to N-glycoprotein epitopes and their direct interaction with the solid or semisolid surface. How specific N-glycan moieties modulate adhesion force is subject of future research, particularly considering the finding that flagella-mediated adhesion of C. reinhardtii has been shown to be largely unaffected by different substrate surface properties (Kreis et al., 2019).\n\nNotably, IFT and gliding were not changed between double mutant and WT-Ins (Figure 5). The fact that altered N-glycosylation diminished the force of cells to adhere to surfaces but did not affect IFT, strongly suggests that adhesion to surfaces and IFT are not necessarily coupled. As discussed below, adhesion probably evolved independently of the necessity to enable cell gliding.\n\nMoreover, it can be concluded that N-glycosylation does not significantly impact differences in light perception, as the adhesion forces for WT-SAG and CRISPRXylT1A were significantly stronger under blue than under red light (Figure 4).\n\nIn summary, taking advantage of single-cell adhesion force measurements, our data revealed that cell adhesion was significantly impaired in C. reinhardtii N-glycosylation mutant strains. Our data further suggested that flagellar assembly, IFT and FMG-1B transport into flagella were not affected by altered N-glycosylation implicating no role of N-glycosylation in these processes. Instead, proper N-glycosylation of flagellar proteins is crucial for adhering C. reinhardtii cells onto surfaces. Our observations further suggest that the remaining adhesion force, although diminished in N-glycan mutants, is still sufficient for gliding. Given the response of flagellar adhesion to blue light, it could potentially link adhesion to photo-protection which is also blue-light mediated, as adhesion might result in photoprotection via biofilm formation, which in turn would enable mutual cell shading (Kreis et al., 2018; Petroutsos et al., 2016).\n\n## Materials and methods\n\n### Culture growth\n\nCells were grown photoheterotrophically in tris-acetate-phosphate (TAP) medium under constant illumination at 50 \u00b5mol photons*s\u22121*cm\u22122 unless stated otherwise.\n\n### Measurement of flagellar length and flagellated cells\n\nThe cells were fixed with 0.5% Lugol\u2019s solution for 1 hr at room temperature. Flagellar length measurements were performed using a phase microscope (Nikon Eclipse Ti) equipped with an electron multiplying charged-coupled device. For each sample, at least 50 flagella were measured. For the measurement of flagellated cells, at least 100 cells were counted for each strain in biological triplicates.\n\n### Generation and analysis of a CRISPR/Cas9 mutant strain\n\nMutagenesis was performed on the WT strain SAG11-32b following the protocol described in\u00a0Greiner et al., 2017\u00a0employing the transformation of a pre-built Cas9:guideRNA complex (Cas9 target seuence in the XylT1A gene: ACGAACACCCCAACACCAAT) simultaneously with a plasmid encoding for a paromomycin resistance via electroporation. Following selection with paromomycin, putative mutants were screened by PCR using the primer pairs short_fw: TACAAAGAACGGGACGCAGG, short_rev: CATTGAAGCTCATCCAGACAC and long_fw: AAGGGTCACGGCACGGTATG, long_rev: CCTGAAGCACCCATGATGCACG. Genomic XylT1A regions of candidate strains showing not-WT like band patterns were sequenced. In total, two mutant strains differing in the DNA inserted following the Cas9 cutting site were identified (CRISPRXylT1A_1 and CRISPRXylT1A_2). Next, XylT1A protein levels were quantified by parallel reaction monitoring (PRM) and supernatant N-glycan compositions were assessed by IS-CID mass spectrometry. Additionally, flagella were isolated, separated by SDS-PAGE and, after transferred to a nitrocellulose membrane, probed with the protein backbone FMG-1B-specific antibody.\n\n### Flagella isolation\n\nFlagella isolation from cultures in the mid-log growth phase was performed as described elsewhere by the pH shock method (Witman et al., 1972). Pellets containing flagella samples were stored at \u221280\u00b0C until further use for immunoblotting or sample preparation for mass spectrometric measurements.\n\n### Immunoblotting\n\nFrozen, dry flagella and whole-cell samples were resuspended in lysis buffer (10 mM Tris/HCl, pH\u00a0=\u00a07.4, 2% SDS, 1 mM Benzamidine and 1 mM PMSF) and subjected to sonication for 10 min. After pelleting cell debris, the protein concentration was determined using the bicinchoninic acid assay (BCA Protein Assay Kit by Thermo Scientific Pierce). Volumes corresponding to 30 \u00b5g of protein were separated by SDS-PAGE, transferred to nitrocellulose membranes and incubated with antibodies as indicated.\n\n### Lectin-affino blotting with concanavalin A and HRP\n\nFrozen, dry whole-cell samples were resuspended in lysis buffer (10 mM Tris/HCl, pH\u00a0=\u00a07.4, 2% SDS, 1 mM Benzamidine and 1 mM PMSF) and subjected to sonication for 10 min. After pelleting the not-soluble cell debris, the protein concentration was determined using the bicinchoninic acid assay (BCA Protein Assay Kit by Thermo Scientific Pierce). Volumes corresponding to 50 \u00b5g of protein were separated by SDS-PAGE and transferred to nitrocellulose membrane. Membrane was incubated with ConA (1 \u00b5g/mL in TBST + 1 mM CaCl2 + 1 mM MnCl2) for 1.5 hr at room temperature. Subsequently membrane was washed and incubated 1 hr with HRP (5 \u00b5g/mL in TBST + 1 mM CaCl2 + 1 mM MnCl2). Excess HRP as well as Ca2+ and Mn2+ were removed by three washing steps with TBST, before affino blot was development via ECL.\n\n### Sample preparation for mass spectrometric measurements\n\nFrozen, dry flagella and whole-cell samples were treated as described in Immunoblotting. Volumes corresponding to 60 \u00b5g of protein were tryptically digested and desalted as described elsewhere (Rappsilber et al., 2007).\n\n### Mass spectrometry measurements\n\nTryptic peptides were reconstituted in 2% (v/v) acetonitrile/0.1% (v/v) formic acid in ultrapure water and separated with an Ultimate 3000 RSLCnano System (Thermo Scientific). Subsequently, the sample was loaded on a trap column (C18 PepMap 100, 300 \u00b5m x 5 mm, 5 mm particle size, 100 \u00c5 pore size; Thermo Scientific) and desalted for 5 min using 0.05% (v/v) TFA/2% (v/v) acetonitrile in ultrapure water with a flow rate of 10 \u00b5L*min\u22121. Following, peptides were separated on a separation column (Acclaim PepMap100 C18, 75 mm i.D., 2 mm particle size, 100 \u00c5 pore size; Thermo Scientific) with a length of 50 cm. General mass spectrometric (MS) parameters are listed in Table 1.\n\n**Table 1.**\n MS parameters.Relevant parameters used to acquire IS-CID and not fragmented TopN MS spectra as well as PRM data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>TopN without IS-CID</th>\n      <th>In-Source CID HCD</th>\n      <th>Parallel reaction monitoring</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Eluent compositions</td>\n      <td colspan=\"3\">Peptide trapping: 0.05% trifluoroacetic acid (TFA) in ultrapure water (A1), 0.05% TFA in 80% acetonitrile (B1) Peptide separation: 0.1% formic acid (FA) in ultrapure water (A2), 0.1% FA in 80% acetonitrile (B2)</td>\n      <td rowspan=\"6\">LC parameters</td>\n    </tr>\n    <tr>\n      <td>Trap Column</td>\n      <td colspan=\"3\">C18 PepMap 100, 300 \u00b5M x 5 mm, 5 \u00b5m particle size, 100 \u00c5 pore size; Thermo Scientific</td>\n    </tr>\n    <tr>\n      <td>Peptide trapping (eluents A1+B1)</td>\n      <td colspan=\"2\">2.5% B1 at 5 \u03bcL/min for 5 min</td>\n      <td>2.5% B1 at 10 \u03bcL/min for 3 min</td>\n    </tr>\n    <tr>\n      <td>Flow rate</td>\n      <td colspan=\"2\">300 nL/min</td>\n      <td>250 nL/min</td>\n    </tr>\n    <tr>\n      <td>Separation Column</td>\n      <td colspan=\"3\">Acclaim PepMap C18, 75 \u00b5m x 50 cm, 2 \u00b5m particle size, 100 \u00c5 pore size; Thermo Scientific</td>\n    </tr>\n    <tr>\n      <td>Gradient for peptide separation  (eluents A2+B2)</td>\n      <td colspan=\"2\">2.5% B2 over 5 min, 2.5\u201345% B2 over 40 min, 45\u201399 % B2 over 5 min 99% B2 for 20 min 99\u20132.5% over 5 min 2.5% for 30 min</td>\n      <td>2.5% B2 over 5 min, 2.5\u201335% B2 over 105 min, 35\u201399 % B2 over 5 min 99% B2 for 20 min 99\u20132.5% over 5 min 2.5% for 40 min</td>\n    </tr>\n    <tr>\n      <td>In-source CID</td>\n      <td>off</td>\n      <td>80 eV</td>\n      <td>off</td>\n      <td rowspan=\"8\">MS1 settings</td>\n    </tr>\n    <tr>\n      <td>Use lock masses</td>\n      <td colspan=\"2\">off</td>\n      <td>on (m/z 445.12003)</td>\n    </tr>\n    <tr>\n      <td>Resolution at m/z 200 (FWHM)</td>\n      <td colspan=\"3\">70,000</td>\n    </tr>\n    <tr>\n      <td>Chromatographic peak width</td>\n      <td colspan=\"3\">15 s</td>\n    </tr>\n    <tr>\n      <td>AGC target</td>\n      <td colspan=\"3\">3e6</td>\n    </tr>\n    <tr>\n      <td>Maximum injection time</td>\n      <td colspan=\"2\">100 ms</td>\n      <td>50 ms</td>\n    </tr>\n    <tr>\n      <td>Scan range</td>\n      <td colspan=\"2\">600\u20133000 m/z</td>\n      <td>350\u20131600 m/z</td>\n    </tr>\n    <tr>\n      <td>Mass tags</td>\n      <td>off</td>\n      <td>on</td>\n      <td>off</td>\n    </tr>\n    <tr>\n      <td>TopN</td>\n      <td colspan=\"2\">12</td>\n      <td>n/a</td>\n      <td rowspan=\"10\">MS2 settings</td>\n    </tr>\n    <tr>\n      <td>Resolution at m/z 200 (FWHM)</td>\n      <td colspan=\"2\">17,500</td>\n      <td>35,000</td>\n    </tr>\n    <tr>\n      <td>Isolation window</td>\n      <td colspan=\"2\">2 m/z</td>\n      <td>2 m/z (offset 0.5 m/z)</td>\n    </tr>\n    <tr>\n      <td>AGC target</td>\n      <td colspan=\"3\">1e5</td>\n    </tr>\n    <tr>\n      <td>Maximum injection time</td>\n      <td colspan=\"3\">120 ms</td>\n    </tr>\n    <tr>\n      <td>Normalized collision energy (NCE)</td>\n      <td colspan=\"2\">30</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Minimum AGC target</td>\n      <td colspan=\"2\">1.25e3</td>\n      <td>n/a</td>\n    </tr>\n    <tr>\n      <td>Intensity threshold</td>\n      <td colspan=\"2\">1e4</td>\n      <td>n/a</td>\n    </tr>\n    <tr>\n      <td>Charge exclusion</td>\n      <td colspan=\"2\">unassigned,&gt;5</td>\n      <td>n/a</td>\n    </tr>\n    <tr>\n      <td>Dynamic exclusion</td>\n      <td colspan=\"2\">15 s</td>\n      <td>n/a</td>\n    </tr>\n  </tbody>\n</table>\n\nFor quantification of glycosyltransferases, PRM (including a target list) was employed on whole-cell samples and respective spectra were analyzed with the Skyline software (Pino et al., 2020). For quantification of flagellar proteins, flagella samples were measured in biological quadruplicates in standard, not targeted, data dependent measurements. Following, peptide wise protein abundance ratios (IM/WT) were calculated with ProteomeDiscoverer (normalizing on a set of not membrane standing flagellar proteins) and filtered for proteins identified in at least 11 samples, for proteins having Abundance Ratio Adj. p-value<0.05 for at least one ratio and for proteins appearing in the flagellar proteome ChlamyFPv5\u00a0(Pazour et al., 2005).\n\nIn order to assign glycopeptides, samples were measured employing In-Source collision induced dissociation (IS-CID) as described previously followed by analysis of data with Ursgal and SugarPy (Kremer et al., 2016; Oltmanns et al., 2019; Schulze et al., 2020).\n\n### Microbead measurements\n\nMicrobead binding- and transport assays were performed analogous to previous descriptions.(Bloodgood et al., 2019) Monodisperse polystyrene microspheres (0.7 \u03bcm diameter) were purchased from Polysciences, Inc Beads were washed with deionized water for three times and resuspended in NFHSM to make a store solution, which was used at 1:10 dilution in adhesion and motility detecting experiment.\n\nTo quantify the ability of bead binding, beads were added to 500 \u03bcL of cells at a density of 2 \u00d7 107 cells*mL\u22121. After 5 min, cells were observed with a light microscope (Olympus, U-HGLGPS, 100X oil objective). A flagellum was scored as \u2018+ bead\u2019 if beads adhered to it. The percentage of flagellar binding beads was calculated as: Percentage of flagellar binding beads\u00a0=\u00a0the number of \u2018+ bead\u2019/ (total number flagella scored) x 100%.\n\nTo obtain a kinetic measure of surface motility, cells were mixed with beads as above for 5 min and randomly observed under the light microscope. Each bead adhered to a flagellum was monitored for about 30 s. If beads moved along the flagella, we marked it as \u2018Moved bead\u2019 or it was \u2018Adhered bead\u2019. The surface motility was calculated as: Percentage of moved beads along with flagella\u00a0= \u2018Move bead\u2019 x/ (\u2018Moved bead\u2019 + \u2018Adhered bead\u2019) 100%.\n\n### AFM measurements\n\nC. reinhardtii strains, grown in M1 medium under constant white illumination were grown for 65 hr, were allowed to adhere to a glass slide (immersed in ethanol for overnight, subsequently rinsed with MQ water) in fresh M1 medium for 15 min. Following, cells were incubated in the presence of ciliobrevin D for 1 hr (500 \u00b5L M1 supplemented with 200 \u00b5M ciliobrevin D). For AFM measurements, only adhered cells in gliding conformation having approximately similar appearance were analyzed. The MLCT-O10 AFM probe (Spring Const.: 0.03 N m\u22121, length: 215 \u00b5m, width: 20 \u00b5m, resonant freq.: 15 kHz, Bruker) was soaked in acetone for 5 min, then subjected to UV illumination (distance to lamp: 3\u20135 mm) for 15 min. Then, the probe was immersed in 0.01% poly-l-lysine for 1 hr and afterwards rinsed with MQ water. Following, the probe was immersed with 2% glutaraldehyde for 1 hr and rinsed with MQ water before use. The AFM measurement was performed in Force Spectroscopy Mode in liquid at room temperature using a NanoWizard 3 AFM (JPK) equipped with a CellHesion stage (Z range: 100 \u00b5m) NanoWizard three head. The spring constant of the cantilever was routinely calibrated using the contact-based thermal noise method. The AFM tip, modified as described, was lowered onto the cell surface at a rate of 10 \u03bcm s\u22121 with a z scale of 25 \u03bcm. After contact, the applied force was maintained at 3 nN for 15 s. Then, the cell-attached probe was upraised at a rate of 1 \u03bcm s\u22121. Force curves were processed with JPK SPM Data Processing (JPK). The forces and energy were determined as described in Figure 3\u2014figure supplement 1 (Liu et al., 2011). Three biological replicates were performed with minimum 5 cells measured per replicate.\n\n### Micropipette force measurements\n\nCell culture growth and micropipette force measurements were performed following established recipes (Kreis et al., 2019; Kreis et al., 2018). In brief, C. reinhardtii strains WT-SAG and CRISPRXylT1A_1 grew axenically in tris-acetate-phosphate (TAP) medium (Thermo Fisher Scientific) in a Memmert IPP 100Plus incubator on a 12 h day / 12 hr night cycle. The experimental approach is based on the use of a homemade micropipette force sensor, which allows for grasping a living cell by suction (Backholm and B\u00e4umchen, 2019). The micropipette is calibrated by measuring the deflection induced by the weight of an evaporating water droplet at tip of the pipette. The adhesion force is obtained by bringing the flagella into contact with a piece of a silicon wafer (unilateral polished, Si-Mat) cleaned by sonication in ethanol, and by measuring the micropipette deflection during iterative approach and retraction of the substrate moving at 1 \u00b5m*s\u22121. The substrate approach consists of pushing the cell such that the micropipette is deflected by 10 \u00b5m from the cell/substrate contact position, which is then followed by a dwell period of 10 s. The substrate is then retracted by 30 \u00b5m from the cell/substrate contact position at the same speed. The overall contact time between the flagella and the substrate is about 30 s. The illumination wavelength for blue and red light was 470 nm and 671 nm respectively, and realized by using narrow band pass interference filters (FWHM: 10 nm) added on top of the condenser of an inverted microscope (Olympus IX-73 and IX-83). During the adhesion force measurements, the cells were illuminated with a constant photon flux of 1019 photons*m\u22122* s\u22121 for both light conditions. For each cell, 10 adhesion force measurements were performed for each wavelength, whereby the order of red and blue light was varied randomly after five consecutive measurements.\n\nIn order to evaluate the influence of ciliobrevin\u00a0D on the adhesiveness, a 200 \u03bcM stock solution of ciliobrevin\u00a0D (Merck) was prepared in a 9:1 water: dimethylsulfoxide (DMSO, Purity: 99.9%, Sigma-Aldrich,) mixture. Then, 1.08 mL of this stock solution was added to 30 mL of culture to achieve a final concentration of 7 \u03bcM of ciliobrevin\u00a0D in the cell suspension. The C. reinhardtii suspension containing ciliobrevin\u00a0D was next incubated for 30 min and then centrifuged at 100 g for ten minutes, followed-up by a minimum of 30 min rest in the incubator. Finally, about 15 mL of the cell suspension was used to fill the liquid chamber. In parallel, a second suspension of C. reinhardtii cells was incubated using the same fraction of DMSO (but without ciliobrevin\u00a0D), followed by the exact same experimental procedure to serve as a control group.\n\n### TIRF imaging\n\nTotal internal reflection microscopy (TIRF) was applied to assess IFT and gliding behavior of C. reinhardtii strains expressing YFP-coupled IFT46. Therefore, cell densities were adjusted to 1 \u00d7 105 cells*mL\u22121. Samples were loaded to a glass bottom microscopy chamber (\u00b5-Slide 8 Well Glass Bottom) and refreshed every 20 min while imaging. TIRF microscopy was performed at room temperature with a Nikon Eclipse Ti and a 100x objective. IFT46::YFP was excited at 488 nm and fluorescence was recorded with an iXon Ultra EMCCD camera (Andor). For analysis, images were captured with NIS-Elements software over 30 s at 10 fps and a pixel size of 0.158 \u00b5m*pixel\u22121. Images were evaluated by use of Fiji via manual evaluation of kymographs. Nett IFT velocities during gliding were calculated by subtracting corresponding gliding velocities. Three biological replicates were performed with 10 cells in gliding configuration analysed per replicate.\n\n### Confocal imaging\n\nCells were incubated with primary antibodies (FMG-1B #8 and #61, available at dshb.com), subsequently incubated with a fluorescently labeled secondary antibody and analyzed by confocal microscopy as described previously (Lv et al., 2017). In brief, cells were plated on 1% poly (ethyleneimine) coated cover glass, decolorized and fixed in methanol at \u221220\u00b0C for 20 min, permeated cells in PBS buffer for 1 hr, and then blocked in 5% BSA (Biosharp), 10% normal goat serum (Dingguo) and 1% fish gelatin (Sigma) in PBS. Incubated the samples with primary antibodies overnight, washed them, and incubated secondary antibody, washed the samples and mounted them on slides with nail polish. The slides were examined with a Leica confocal microscope (SP8). Images were acquired and processed by LAS X software (Leica) and ImageJ software. The 488 nm laser was used YFP excitation wavelength is 510 nm, the emission wavelength is 525 nm and the exposure time is 200 ms.\n\n### Mating and Tetrad analysis\n\nThe plus and minus strains was incubated in 2 mL TAP-N medium (2 \u00d7 107 cells/mL) under continuous light overnight for gametogenesis. 0.5 mL plus and minus gametes were mixed together and incubated for 2 hr for mating. Then 0.15 mL mixture was dispersed onto mature plate (4% agar). Plate was kept in dark for 5 days, then exposed to light for 24 hr. The unmated gametes were removed from the mature plate with razor blade and were killed using chloroform for 30 s. The agar contained about 30 zygotes was cut and transferred to a germination plate (1% agar). The plates were incubated in bright light till the spores were released from the zygote, then 100 \u03bcL water was added to the cut agar and was dispersed on whole plate. Single clones appeared within 3\u20135 days and were picked for further analysis.\n\n### Materials and correspondence\n\nThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository with the dataset identifier PXD018353 and will be publically available upon acceptance of the manuscript (Perez-Riverol et al., 2019). For further requests, please contact K. Huang (huangky@ihb.ac.cn) or M. Hippler (mhippler@uni-muenster.de).\n",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "fdf277e9-a053-4970-92b3-eb78d4bb611d",
+      "submission_id": "ab121e2f-01e9-40a0-83b1-27bf6a87bcd7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ahmet Yildiz, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58805.sa1](https://doi.org/10.7554/eLife.58805.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis article examines the basis for the adhesion of the bi-flagellate cell Chlamydomonas to substrates, which is important for the ability of these cells to live in diverse habitats. Substrate adhesion in Chlamydomonas is due to flagellar membrane protein FMG-1B. This paper shows that mutations that disrupt N-glycosylation of FMG-1B do not change its abundance and flagellar localization, but reduces the strength of cell adhesion to solid substrates.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Altered N-glycan composition impacts flagella mediated adhesion in Chlamydomonas reinhardtii \" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Piali Sengupta as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Robert Bloodgood (Reviewer #1); Felix Rico (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThis article examines the basis for the adhesion of the bi-flagellate cell Chlamydomonas to substrates. Substrate adhesion in Chlamydomonas is due to the flagellar surface. FMG-1B constitutes most of the protein of the Chlamydomonas flagellar membrane and is the major surface-exposed flagellar membrane protein and the only flagellar membrane protein that contacts a planar substrate during whole-cell gliding motility or a polystyrene microsphere during the other manifestation of surface motility associated with the flagellum. The authors are asking the rather straight forward question of whether alterations in the N-glycosylation of the flagellar membrane glycoproteins affects the strength of cell adhesion of Chlamydomonas with a substrate. The study uses two previously characterized insertional mutants, IMMan1A ( in mannosidase) and IMXylT1A (in xylosyltransferase 1A), a corresponding double mutant and a novel CRISPR mutant (CRISPRXylT1A_1 also in xylosyltransferase 1A) to analyze how changes in protein N-glycosylation affect flagellar adhesion to surfaces using Chlamydomonas.\n\nThe results show that altered N-glycosylation of FMG-1B does not change its abundance and flagellar localization, or the IFT and gliding velocity of the cells. However, it affects the binding of polystyrene microbeads to the flagella, as well as its transport. Moreover, AFM measurements show a decrease of both the forces and average energy in the mutants in comparison to the WT strain. Besides, micropipette force measurements performed on strains whose N-glycan composition was altered using the CRISPR approach showed also a decrease of the adhesion force on mutant cells under blue light (known to enhance adhesion of the WT reference). Finally, measurements done with and without ciliobrevin D show that ciliobrevin D is not increasing the adhesion forces of mutant cells contrary to what is observed for WT cells.\n\nWhile the reviewers agreed that perturbations in the N-glycosylation pattern affect the level of cell adhesion and can be an interesting result worthy of being reported in eLife, they also noted major weaknesses and raised serious concerns about the validity of the conclusions made in the manuscript and the advance the manuscript makes in the field. Specifically, the key AFM and micropipette experiments, while very elegant and of great potential, as shown in a previous publication, were performed in the presence of a drug, which appears to kill and damage many cells. It remains unclear whether the changes in glycosylation directly impact adhesion or change protein folding or cilia protein composition. Also, the mutations do not eliminate N-glycosylation, but alter the composition and size, raising the question of how these changes would interfere with adhesion, considering that the double mutant shows subtle changes in anti-HRP staining. Thus, the panel recommended that the work in its present form is too preliminary to be considered for publication in eLife, and the manuscript could benefit greatly by a major revision. The major points listed below provide clear guidance as to how to improve the manuscript.\n\nEssential revisions:\n\n1) It appears that the difference in \"Adhesion Force\" between control and the xylT1Amutant are different in Figure 4A and 3C \u2013 this might be due to the differences in the method. However, since different strains were used, it is also possible that there might be a large strain-specific difference in the adhesion phenotype (two distinct wild-type strains were used) that are not necessarily related to the mutations of interest. Since no rescue experiments are presented, the correlation between the genotype and the quite variable phenotypes is somewhat uncertain.\n\n2) The pattern obtained by staining of flagella extracts of the double mutant with anti-HRP is quite similar to that of wild-type flagella. How does that fit with the observation that adhesion forces are most affected in the double mutant? Concerning protein glycosylation, the double mutant is better off than the two single mutants (e.g. binding of anti-HRP is reduced in the single mutant but returned to normal in the double) but no explanation is offered why that is the case. Schulze et al. state that loss of mannosidase suppresses the XlyT1A mutation but \u2013 since it is called a knock-down mutant -it appears that the Man1A mutant is not null?\n\n3) The authors observe that Ciliobrevin D (an inhibitor of IFT dynein) treatment increases the adhesion force. However, as stated in the Materials and methods section, many cells died during the treatment of cells with ciliobrevin D. Thus, it is unclear whether the effect observed here is really to the inhibition of dynein or due to some toxicity of the drug.\n\n\"The impact of ciliobrevin D on the adhesion force suggested that IFT might contribute to surface adhesion forces.\" But differences in IFT were not observed. So, how do the authors explain the effect of ciliobrevin? Does active gliding make adhesion less strong?\n\nSince ciliobrevin D is believed to inhibit IFT dynein, the panel recommends using strains that abolish IFT by a temperature shift such as fla10ts to further explore whether active IFT lowers cell adhesion.\n\n4) The authors should discuss the nature and the relevance of these binding measurements. What is the natural surface of binding for this organism in real life? While polystyrene (beads), glass (AFM) and silicon (micropipette) present all similar surface charges, what kind of interaction is reported in this work? It would be useful to provide a plausible description of the interaction between glycans and the surfaces.\n\n5) The manuscript is complicated, difficult to read and the authors could do better with explaining the logic behind some of their experiments. To guide the reader through the numerous variations, some details should be more explicitly set out. In particular, the last part of the discussion, regarding the impact of ciliobrevin D and its link with gliding, can probably be explained more clearly and further discussed. Some details are currently lacking to give a clear overview.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Altered N-glycan composition impacts flagella mediated adhesion in Chlamydomonas reinhardtii \" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Piali Sengupta as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert Bloodgood (Reviewer #1); Felix Rico (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe authors have made a commendable effort to address the many comments and requests of the reviewers, and have performed new experiments to respond to the reviews. This has resulted in a greatly improved manuscript which will be much easier for readers to understand. This paper makes a worthwhile contribution to the field of cell adhesion (in particular flagellar adhesion) and is likely to be of interest to many readers of eLife provided that they can revise their manuscript in response to the remaining concerns below.\n\nRevisions:\n\n1) \"reduction in N-glycan complexity impedes the adhesion force required for binding the flagella to surfaces as demonstrated by force spectroscopy and impairs polystyrene bead binding and transport\"\n\nDelete \"as demonstrated by force spectroscopy\" as the beginning of this sentence explains the method used. It is important to clarify that \"\u2026reduction in N-glycosylation reduces the flagellar adhesion force. This results in a reduction of bead motility but not gliding of cells on solid surfaces.\"\n\n2) \"Since (the) retrograde motor dynein-1b pauses relative to the adhesion\u2026\"\n\nAccording to Shih et al., it is the retrograde IFT trains that pause at the adhesion sites and dynein-1b motors carrying these paused trains pull the axoneme in the opposite direction.\n\n3) \"Considering that N-glycoproteins per se are important for adhesion but are constantly lost from the flagellar membrane, gliding is supposed to require an enormous amount of energy, which suggests that flagella mediated adhesion has a somewhat high importance. Furthermore, it opens the question whether the maturation of N-glycans (as additional energy expense) in Golgi is important for flagella mediated adhesion, i.e. whether N-glycosylation is crucial for adhesion beyond proper glycoprotein folding.\"\n\nThe reasoning with ATP costs are rather abstract and not relevant. This section should be removed from the manuscript. Instead, the authors could point out in the Introduction that Chlamydomonas species often grow on solid surfaces (and then might move by gliding) rather than living in aquatic habitats. Because many Chlamydomonas species can live on a wide variety of surfaces (soil, sand, wet leaves, moss, and bark), the flagellar surface adhesion system has not developed high specificity but rather has great flexibility.\n\n4) \"two insertional mutants such as IMMan1A, IMXylT1A and their double mutant IMMan1AxIMXylT1A were studied.\"\n\nDefine IM as in insertional mutants here.\n\n5) \"that altered N-glycan maturation did not affect the flagellar localization of FMG-1B.\"\n\nThe authors should cite Bloodgood, Salomonsky and Reinhart, 1987, Figure 5 of this paper has the same result shown in Figure 1 of the manuscript. The paper also reported that the glycosylation defective FMG-1B mutant exhibited increased binding of Concanavalin A.\n\n6) \"As it cannot be excluded that flagella shortening, as induced upon temperature shift (Figure 5\u2014figure supplement 1D), impacted flagellar adhesion forces, the triple mutant treated with 20 mM NaPPi was assessed by AFM as control.\"\n\nIt is unclear why NaPPi treatment was used as a control. Because flagellar shortening can't be excluded? Was a flagellar length-dependency of the adhesion force observed?\n\n7) \"It could be speculated, that the action of dynein-1b reduces flagellar adhesion forces due to its opposite direction of action with respect to the flagellar adhesion force.\"\n\nIt is unclear what the authors mean by \"opposite direction of action\". Does this mean that IFT dynein pulls the membrane away from the substrate? Or, do forces generated by dynein motors on paused IFT trains dissociate the FMG1B clusters from the surface, effectively reducing the flagellar adhesion forces?\n\n8) \"Of note, also FMG-1A is localized in flagella (but) and its abundance was unaltered between WT and mutants in vegetative cells (Figure 1\u2014figure supplement 4).\"\n\nIt is not clear what is concluded here.\n\n9) \"Our data further suggested that flagellar assembly\u2026\".\n\nThe authors should more clearly state that N-glycosylation is not needed for flagellar elongation, IFT, and FMG-1B, but it is needed for adhesion of flagellar surface to the solid substrates and that the diminished adhesion force in N-glycan mutants is still sufficient for gliding. We recommend deleting \"This suggests that the evolution of adhesion might not have been governed only by the capability of gliding but by the necessity of adhesion itself.\"\n\n10) \"Given the response of flagellar adhesion to blue light, it could potentially link adhesion to photo-protection which is also blue-light-mediated, as adhesion might result in photoprotection via cell shading\"\n\nIt is unclear what the authors mean by shading here. Just because a cell (the width of flagella is smaller than the wavelength of blue light) adheres does not make any shade. This either needs to be elaborated or removed.\n\n11) Figure 1\u2014figure supplement 3: Showing just one half of the lectin blot is sufficient.\n",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0cc2ccfc-e3ab-4afc-b857-5c68b26e1810",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C1",
+      "claim": "N-glycosylated proteins on the surface of Chlamydomonas reinhardtii flagella are crucial for cell-cell interaction during mating.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unicellular alga Chlamydomonas reinhardtii, the presence of N-glycosylated proteins on the surface of two flagella is crucial for both cell-cell interaction during mating and flagellar surface adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about C. reinhardtii.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "52facfb4-6a06-45b0-9525-c439497fc37f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C2",
+      "claim": "N-glycosylated proteins on the surface of Chlamydomonas reinhardtii flagella are crucial for flagellar surface adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unicellular alga Chlamydomonas reinhardtii, the presence of N-glycosylated proteins on the surface of two flagella is crucial for both cell-cell interaction during mating and flagellar surface adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about C. reinhardtii.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "7ddbae0f-17a4-4bea-8d2d-85ef428f067c",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C3",
+      "claim": "Reduction in N-glycan complexity impedes the adhesion force required for binding the flagella to surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of atomic force microscopy and micropipette force measurements, our data revealed that reduction in N-glycan complexity impedes the adhesion force required for binding the flagella to surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by AFM and micropipette force measurement data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "a6f89d46-5dab-45f9-a80e-80a71d4f07f7",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C4",
+      "claim": "Altered N-glycan composition results in impaired polystyrene bead binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in impaired polystyrene bead binding and transport but not gliding of cells on solid surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the microbead binding assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "28a1d609-95b3-4d5f-adda-8db9e2ca17c4",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C5",
+      "claim": "Altered N-glycan composition results in impaired polystyrene bead transport.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in impaired polystyrene bead binding and transport but not gliding of cells on solid surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the microbead transport assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "e3ca215c-24e6-413d-9bee-70ddddb3096a",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C6",
+      "claim": "Altered N-glycan composition does not affect gliding of cells on solid surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in impaired polystyrene bead binding and transport but not gliding of cells on solid surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the TIRF microscopy data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0d256d94-2ab2-4670-9667-757a54ee7598",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C7",
+      "claim": "Assembly of flagella is not affected by altered N-glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, assembly, intraflagellar transport, and protein import into flagella are not affected by altered N-glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flagellar length measurements and proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "cfc07b41-8501-42aa-b0f1-4cb43547ef37",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C8",
+      "claim": "Intraflagellar transport is not affected by altered N-glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, assembly, intraflagellar transport, and protein import into flagella are not affected by altered N-glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by IFT velocity measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "30bc9cb1-c66d-409f-99cb-2688d70ca310",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C9",
+      "claim": "Protein import into flagella is not affected by altered N-glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, assembly, intraflagellar transport, and protein import into flagella are not affected by altered N-glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic analysis showing FMG-1B and FAP113 are correctly targeted to flagella.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "54749882-3149-40ee-98cf-ecddaff04a16",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C10",
+      "claim": "Proper N-glycosylation of flagellar proteins is crucial for adhering C. reinhardtii cells onto surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that proper N-glycosylation of flagellar proteins is crucial for adhering C. reinhardtii cells onto surfaces, indicating that N-glycans mediate surface adhesion via direct surface contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the AFM and micropipette force measurement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "f486b787-c765-479a-b7c8-bed0eb2fc097",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C11",
+      "claim": "N-glycans mediate surface adhesion via direct surface contact.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that proper N-glycosylation of flagellar proteins is crucial for adhering C. reinhardtii cells onto surfaces, indicating that N-glycans mediate surface adhesion via direct surface contact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that altered N-glycans affect adhesion but not protein targeting or IFT.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8ce1c66c-9a5e-49fc-ab2d-9503071beba9",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C12",
+      "claim": "Initial steps of N-glycosylation in the ER are highly conserved among most eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial steps of N-glycosylation in the ER are highly conserved among most eukaryotes and consist of the synthesis of a common prebuilt N-glycan precursor onto a dolichol phosphate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about N-glycosylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "a8fe26ff-a8ff-46e8-b407-1ec2febad2e3",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C13",
+      "claim": "N-glycan maturation steps in the Golgi are species dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent N-glycan maturation steps in the Golgi are species dependent and give rise to a high variety of N-glycan structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about N-glycosylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0b51a337-63d8-494f-bc84-8ddfbfe963a1",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C14",
+      "claim": "In land plants, Golgi maturation leads to N-glycans modified with \u03b21,2-core xylose and \u03b11,3-core fucose.",
+      "claim_type": "EXPLICIT",
+      "source": "In land plants, Golgi maturation leads to N-glycans modified with \u03b21,2-core xylose and \u03b11,3-core fucose (Strasser, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Strasser, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "883530ce-cc05-4fdd-9a5d-dd5d2d26a703",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C15",
+      "claim": "In Chlamydomonas reinhardtii, N-glycans can be decorated with core xylose and -fucose.",
+      "claim_type": "EXPLICIT",
+      "source": "In Chlamydomonas reinhardtii, a unicellular biflagellate green alga, N-glycans can be decorated with core xylose and -fucose (Lucas et al., 2020; Oltmanns et al., 2019; Schulze et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lucas et al., 2020; Oltmanns et al., 2019; Schulze et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "5195d2a3-3933-4467-af1c-de8d89137e2b",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C16",
+      "claim": "6O-methylation of mannose and addition of a terminally linked \u03b21,4-xylose were reported in C. reinhardtii N-glycans.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 6O-methylation of mannose and addition of a terminally linked \u03b21,4-xylose were reported (Mathieu-Rivet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mathieu-Rivet et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "665324a8-5fe4-44c4-8492-ce157da4470d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C17",
+      "claim": "Blocking the synthesis of a full N-glycan precursor results in hypoglycosylated proteins that cannot be folded properly.",
+      "claim_type": "EXPLICIT",
+      "source": "While the functional advantage of N-linked glycans to mature proteins is hardly understood, it is known that blocking the synthesis of a full N-glycan precursor results in hypoglycosylated proteins that cannot be folded properly (Gardner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gardner et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "12d1b61c-a053-4cd4-a7cf-3f952188ac36",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C18",
+      "claim": "Hypoglycosylated proteins are degraded via the ER-associated degradation pathway (ERAD).",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they are degraded via the ER-associated degradation pathway (ERAD) and are consequently not targeted correctly (Adams et al., 2019; Cherepanova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Adams et al., 2019; Cherepanova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "eb45cf67-9b5a-49ba-adf2-5a18023a68ae",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C19",
+      "claim": "Impairment of glycosylation at early stage is lethal in both uni- and multi-cellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, impairment of glycosylation at such early stage is lethal in both uni- and multi-cellular organisms and only when inhibition of glycosylation is carefully dosed (e.g. by tunicamycin), immediate physiological effects caused by hypoglycosylation can be observed (Kukuruzinska et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kukuruzinska et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "a53d6e6e-f8b7-4db7-aaf3-a0b310a09862",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C20",
+      "claim": "Treatment of vegetative C. reinhardtii cells with tunicamycin leads to impaired flagellar adhesiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at C. reinhardtii, treatment of vegetative cells with tunicamycin lead to an impaired flagellar adhesiveness, indicating that glycoproteins are crucial for adhesion and the subsequent onset of gliding (Bloodgood et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "fc5fc549-4fab-4fc2-ac88-cf4beb2e3004",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C21",
+      "claim": "Whole-cell gliding is one of two flagella-based motilities in C. reinhardtii besides swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-cell gliding is one of two flagella-based motilities in C. reinhardtii besides swimming (Ishikawa and Marshall, 2011; Kozminski et al., 1993; Snell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ishikawa and Marshall, 2011; Kozminski et al., 1993; Snell et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "371df20c-3356-493c-ad05-d9d9e4ef78dc",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C22",
+      "claim": "During gliding, the cell adheres to a surface via its flagella, positioning them in a 180\u00b0 angle.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, the cell adheres to a surface via its flagella, positioning them in a 180\u00b0 angle and initiates gliding along the solid or semisolid surface into the direction in which one flagellum is pointing (designating it as leading flagellum) (Bloodgood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "026bc670-9756-4604-82ae-84542ff893b7",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C23",
+      "claim": "Flagella bind to small, inert objects (e.g. polystyrene microbeads) that are moved along the flagellar membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, flagella not only bind to large solid surfaces, but they also bind to small, inert objects (e.g. polystyrene microbeads) that are moved along the flagellar membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. reinhardtii flagellar behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "44e7ab8e-f764-491e-977d-f0c8d376ade5",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C24",
+      "claim": "Flagellar adhesion forces on different model surfaces lie in the range of 1 to 4 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "A micropipette force measurement approach recently showed that the flagella adhesion forces on different model surfaces with tailored properties lie in the range of 1 to 4 nN and that only positive surface charge diminished the adhesion force significantly (Backholm and B\u00e4umchen, 2019; Kreis et al., 2019; Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Backholm and B\u00e4umchen, 2019; Kreis et al., 2019; Kreis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "37d5c025-3185-43fb-a7a9-73d2e180d897",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C25",
+      "claim": "Only positive surface charge diminished the adhesion force significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "A micropipette force measurement approach recently showed that the flagella adhesion forces on different model surfaces with tailored properties lie in the range of 1 to 4 nN and that only positive surface charge diminished the adhesion force significantly (Backholm and B\u00e4umchen, 2019; Kreis et al., 2019; Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Backholm and B\u00e4umchen, 2019; Kreis et al., 2019; Kreis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "730fe4f8-4e62-4d57-b7bf-c0fd87b2cdf0",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C26",
+      "claim": "FMG-1B is the main player mediating surface contact in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, surface iodination experiments in the early 1980s revealed a single protein called flagellar membrane glycoprotein 1B (FMG-1B) as the main player mediating surface contact (Bloodgood and Workman, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood and Workman, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "e4cf92ff-45a0-446c-b0cc-39c5460d4ff6",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C27",
+      "claim": "FMG-1B is exclusively located in the flagellar membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "FMG-1B is exclusively located in the flagellar membrane and has a remarkable size of around 350 kDa (4389 amino acids) with a large extra-flagellar part (4340 amino acids) anchored in the membrane via a single predicted trans membrane helix of 22 amino acids (Bloodgood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "d2ca06c6-4341-462b-891a-b987d1e0de40",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C28",
+      "claim": "FMG-1B has a size of around 350 kDa (4389 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "FMG-1B is exclusively located in the flagellar membrane and has a remarkable size of around 350 kDa (4389 amino acids) with a large extra-flagellar part (4340 amino acids) anchored in the membrane via a single predicted trans membrane helix of 22 amino acids (Bloodgood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "1870eb1e-4ebd-4fd7-ae5e-72ab6355faf1",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C29",
+      "claim": "FMG-1B is heavily N- and O-glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "As the name indicates, it is heavily N- and O-glycosylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about FMG-1B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "de981161-745e-4214-8880-db783f695c25",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C30",
+      "claim": "FMG-1B is the main constituent of the glycocalyx surrounding the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent knock down study showed, that it is the main constituent of the glycocalyx surrounding the flagellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "4dd817da-0ec6-45b4-b6b9-ab8a56359b27",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C31",
+      "claim": "A fmg-1B mutant showed a drastically reduced ability to glide.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a fmg-1B mutant showed a drastically reduced ability to glide (Bloodgood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "5eaa3c4c-2a46-4f7a-8a99-9009f5d348b9",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C32",
+      "claim": "FMG-1B is present at a high copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, FMG-1B is present at a high copy number and turns over rapidly within approximately 1 hr (Bloodgood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0d28dcbb-bfc0-4cb5-bfaa-60e7b701b004",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C33",
+      "claim": "FMG-1B turns over rapidly within approximately 1 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, FMG-1B is present at a high copy number and turns over rapidly within approximately 1 hr (Bloodgood, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bloodgood, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "da05e394-f92d-4811-999c-8ec7b259acbd",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C34",
+      "claim": "Flagellar membrane components are constantly shed into the medium as flagellar ectosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid turnover is probably attributed to the fact that flagellar membrane components are constantly shed into the medium as flagellar ectosomes (Bloodgood, 2009; Wood et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bloodgood, 2009; Wood et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8e58439b-5afe-472d-bcaf-788c6190a679",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C35",
+      "claim": "FMG-1B and FAP113 have been shown to be eventually torn out of the membrane once bound to microbeads.",
+      "claim_type": "EXPLICIT",
+      "source": "FMG-1B and another N-glycosylated membrane component, FAP113, have been shown to be eventually torn out of the membrane once bound to microbeads (Kamiya et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kamiya et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "e998f3b2-3496-47bc-8c65-256440e35d52",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C36",
+      "claim": "Flagellar adhesion to surfaces is switchable by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was found that flagellar adhesion to surfaces is switchable by light, indicating that a blue-light photoreceptor signal is governing this process (Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kreis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0d9ad56a-f9a2-48a5-b60c-9462be1d587f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C37",
+      "claim": "A blue-light photoreceptor signal is governing flagellar adhesion to surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it was found that flagellar adhesion to surfaces is switchable by light, indicating that a blue-light photoreceptor signal is governing this process (Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kreis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0adc0f97-e6d3-4205-b8cd-ef535a0416b0",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C38",
+      "claim": "Following adhesion to the surface, a transmembrane signal mediates translation of the adhesion event into a calcium transient and protein phosphorylation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Following adhesion to the surface, a transmembrane signal mediates translation of the adhesion event into a calcium transient and protein phosphorylation cascade (Bloodgood, 2009; Collingridge et al., 2013; Kreis et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bloodgood, 2009; Collingridge et al., 2013; Kreis et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "cdb3b89e-5195-4c5d-8028-909c80be16f7",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C39",
+      "claim": "Anterograde IFT transport is driven by kinesin 2.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT moves bidirectionally along the flagellar microtubules, the anterograde transport is driven by kinesin 2 and retrograde transport is driven by cytoplasmic dynein-1b (Cole et al., 1998; Huangfu et al., 2003; Kozminski et al., 1995; Lechtreck, 2015; Pedersen and Rosenbaum JLBT-CT in DB, 2008; Porter et al., 1999; Rosenbaum and Witman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "51e5fe08-8ce1-4d06-8497-264925ce9af5",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C40",
+      "claim": "Retrograde IFT transport is driven by cytoplasmic dynein-1b.",
+      "claim_type": "EXPLICIT",
+      "source": "IFT moves bidirectionally along the flagellar microtubules, the anterograde transport is driven by kinesin 2 and retrograde transport is driven by cytoplasmic dynein-1b (Cole et al., 1998; Huangfu et al., 2003; Kozminski et al., 1995; Lechtreck, 2015; Pedersen and Rosenbaum JLBT-CT in DB, 2008; Porter et al., 1999; Rosenbaum and Witman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "4165d9f8-3d49-4867-bf67-5a4ef741f244",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C41",
+      "claim": "Retrograde IFT trains pause relative to the adhesion site while FMG-1B tethers to the solid surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Since retrograde IFT trains pause relative to the adhesion site while FMG-1B tethers to the solid surface through its large extracellular carbohydrate domain (Bloodgood, 2009), the force generated by retrograde motor protein dynein-1b will push the microtubule into the opposite direction, dragging the cell body and the second flagellum behind; the gliding process is initiated (Shih et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bloodgood, 2009 and Shih et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "987aa83f-0f30-4ae0-ba6a-e3c50671d20d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C42",
+      "claim": "The force generated by retrograde motor protein dynein-1b pushes the microtubule into the opposite direction, dragging the cell body and the second flagellum behind, initiating the gliding process.",
+      "claim_type": "EXPLICIT",
+      "source": "Since retrograde IFT trains pause relative to the adhesion site while FMG-1B tethers to the solid surface through its large extracellular carbohydrate domain (Bloodgood, 2009), the force generated by retrograde motor protein dynein-1b will push the microtubule into the opposite direction, dragging the cell body and the second flagellum behind; the gliding process is initiated (Shih et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shih et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "64e28c9c-f1fe-413e-915a-c7f9041fb162",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C43",
+      "claim": "IMXylT1A produces N-glycans devoid of core xylose while simultaneously having a reduced length.",
+      "claim_type": "EXPLICIT",
+      "source": "The first mutant, deficient in xylosyltransferase 1A (IMXylT1A), produces N-glycans devoid of core xylose while simultaneously having a reduced length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous characterization in Schulze et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "7d05a242-754f-45fb-a6b2-bbf48dff2dec",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C44",
+      "claim": "IMMan1A is mainly characterized by a lack of 6O-methylation of mannose residues while the N-glycan length is slightly greater than in WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Second mutant IMMan1A, a knock down mutant of mannosidase 1A, is mainly characterized by a lack of 6O-methylation of mannose residues while the N-glycan length is slightly greater than in WT-Ins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous characterization in Schulze et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "a721801e-bc50-449c-87e3-ef5e5c365d01",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C45",
+      "claim": "N-glycans of IMMan1A are slightly reduced in terminal xylose and core fucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, N-glycans of IMMan1A are slightly reduced in terminal xylose and core fucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous characterization in Schulze et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "db802e2d-3068-4bde-93df-73efb805a19f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C46",
+      "claim": "IMMan1AxIMXylT1A produces N-glycans devoid of 6O-methylation but of WT-Ins length and carrying core xylose and fucose residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a double mutant of the above two single mutants (IMMan1AxIMXylT1A, obtained by genetic crossing) produces N-glycans devoid of 6O- methylation but of WT-Ins length and carrying core xylose and fucose residues (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on previous characterization in Schulze et al., 2018 and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "d635ac92-65ce-4007-bb1c-e1b9b942bad4",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C47",
+      "claim": "In none of the mutants the flagellar length is altered as compared to WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that in none of the mutants the flagellar length is altered as compared to WT-Ins (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flagellar length measurements shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "49a37a67-a0e0-409b-91f0-d8d35b24cc84",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C48",
+      "claim": "Anti-HRP antibody showed a higher affinity toward N-glycoproteins synthesized by IMMan1A and IMMan1AxIMXylT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous publications, the antibody showed a higher affinity toward N-glycoproteins synthesized by IMMan1A and IMMan1AxIMXylT1A while it showed a decreased affinity toward probes of IMXylT1A (Figure 1\u2014figure supplement 2; Schulze et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2 and consistent with Schulze et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "75ba3065-3c86-4891-97cc-69bf3cbcfa87",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C49",
+      "claim": "Anti-HRP antibody showed a decreased affinity toward probes of IMXylT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous publications, the antibody showed a higher affinity toward N-glycoproteins synthesized by IMMan1A and IMMan1AxIMXylT1A while it showed a decreased affinity toward probes of IMXylT1A (Figure 1\u2014figure supplement 2; Schulze et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2 and consistent with Schulze et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "aa104ed4-cd01-43df-807e-e60145471d38",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C50",
+      "claim": "All three N-glycosylation mutants showed increased ConA-affinity compared to WT-ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Further lectin-affino blotting with concanavalin A (ConA) was performed on whole-cell extracts, revealing increased ConA-affinity in all three N-glycosylation mutants compared to WT-ins (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "bc662f02-d189-4386-9679-f0956edb5445",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C51",
+      "claim": "FMG-1B protein amount was similar in WT-Ins and all three mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "FMG-1B was found in whole cells and flagella of WT-Ins and all three mutants. Hereby, the protein amount was similar in all four strains as indicated by the use of the FMG-1B protein-specific antibody (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B using the FMG-1B protein-specific antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "b93e736f-b793-4e2e-b940-3e347a2745ac",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C52",
+      "claim": "The antibody raised against FMG-1B glycan epitopes barely detected whole-cell or flagella probes of IMMan1A and IMMan1AxIMXylT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrarily, the antibody raised against FMG-1B glycan epitopes barely detected whole-cell or flagella probes of IMMan1A and IMMan1AxIMXylT1A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "1bd37348-d957-4712-8080-3d585dcb6a24",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C53",
+      "claim": "The FMG-1B glycan signal decreased in the mutant IMXylT1A, particularly in the whole-cell sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the FMG-1B glycan signal decreased in the mutant IMXylT1A, particularly in the whole-cell sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "c73d4fd7-ff78-4aac-ab8e-52ecc47ffb93",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C54",
+      "claim": "The N-glycan pattern of FMG-1B is altered in the mutants, while the protein localization is not affected by this alteration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these immuno-blots confirm that the N-glycan pattern of FMG-1B is altered in the mutants, while the protein localization is not affected by this alteration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the immunoblot data in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "4343dcaf-c244-48cd-9423-7342bf065de3",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C55",
+      "claim": "Label-free mass spectrometric quantification confirmed that FMG-1B is correctly targeted to the flagella in all mutants analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, label-free mass spectrometric quantification confirmed that FMG-1B is correctly targeted to the flagella in all mutants analyzed (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C using mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "951ae7cc-c3b7-4b1a-b9bc-375d7faabfd1",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C56",
+      "claim": "FAP113 is correctly targeted to the flagella in all mutants analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "The same is true for FAP113, another protein shown to be involved in flagella surface motility (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1D using mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "48ab9566-24ef-4aa9-b876-a02486cc8938",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C57",
+      "claim": "No glycan signal was observed in the flagella or cell wall of IMMan1A and the double mutant using the glycan-specific antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the immuno-blotting experiment, no glycan signal was observed in the flagella or cell wall of IMMan1A and the double mutant, while signal intensity was low in the flagella of mutant IMXylT1A (Figure 1E, left panel and).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E using immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "d69785d3-217a-4198-9595-d86ebfaccfdb",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C58",
+      "claim": "Signal intensity was low in the flagella of mutant IMXylT1A using the glycan-specific antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the immuno-blotting experiment, no glycan signal was observed in the flagella or cell wall of IMMan1A and the double mutant, while signal intensity was low in the flagella of mutant IMXylT1A (Figure 1E, left panel and).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E using immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "c3633653-019d-4b46-9ff0-13a14a011cec",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C59",
+      "claim": "A uniform signal is found in the flagella of WT-ins, MMan1A, IMXylT1A, and the mutant IMMan1AxIMXylT1A when the FMG-1B peptide antibody was used.",
+      "claim_type": "EXPLICIT",
+      "source": "When the FMG-1B peptide antibody was used, a uniform signal is found in the flagella of WT-ins, MMan1A, IMXylT1A, and the mutant IMMan1AxIMXylT1A (Figure 1E, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E using immunostaining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8b04e18c-4c73-4a28-8a10-72c3f7d77acd",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C60",
+      "claim": "Altered N-glycan maturation did not affect the flagellar localization of FMG-1B.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, these data show that altered N-glycan maturation did not affect the flagellar localization of FMG-1B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the immunostaining and mass spectrometry data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "7402ba1b-247f-4405-8084-0c06b4681548",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C61",
+      "claim": "No protein was found consistently and significantly changed in abundance in flagella of the IM strains analyzed when compared to WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, no protein was found consistently and significantly changed in abundance in flagella of the IM strains analyzed when compared to WT-Ins (Figure 1\u2014figure supplement 7), also indicating that flagellar assembly is not considerably altered in the mutants versus WT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 7 using proteomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "87139744-b1b3-49b8-8d84-12a4a84cc98e",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C62",
+      "claim": "Flagellar assembly is not considerably altered in the mutants versus WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, no protein was found consistently and significantly changed in abundance in flagella of the IM strains analyzed when compared to WT-Ins (Figure 1\u2014figure supplement 7), also indicating that flagellar assembly is not considerably altered in the mutants versus WT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the proteomic analysis shown in Figure 1\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "23db60fa-402d-42f2-bc5d-92c2bf81c7da",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C63",
+      "claim": "In WT-Ins strains, about 52% of all flagella had at least one bead attached.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT-Ins strains, about 52% of all flagella had at least one bead attached, whereas the percentage of flagella with beads bound decreased to 46% in IMMan1A, 33% in IMXylT1A and 27% in the double mutant (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A from microbead binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "c351bc28-2b09-4528-8b6e-c98c10992974",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C64",
+      "claim": "The percentage of flagella with beads bound decreased to 46% in IMMan1A.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT-Ins strains, about 52% of all flagella had at least one bead attached, whereas the percentage of flagella with beads bound decreased to 46% in IMMan1A, 33% in IMXylT1A and 27% in the double mutant (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A from microbead binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "9317042e-fa3e-4258-865c-f88084652fea",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C65",
+      "claim": "The percentage of flagella with beads bound decreased to 33% in IMXylT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT-Ins strains, about 52% of all flagella had at least one bead attached, whereas the percentage of flagella with beads bound decreased to 46% in IMMan1A, 33% in IMXylT1A and 27% in the double mutant (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A from microbead binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "fd292538-24da-4ef7-92c9-ca73abbdcbf5",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C66",
+      "claim": "The percentage of flagella with beads bound decreased to 27% in the double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT-Ins strains, about 52% of all flagella had at least one bead attached, whereas the percentage of flagella with beads bound decreased to 46% in IMMan1A, 33% in IMXylT1A and 27% in the double mutant (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A from microbead binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "d6d2a8df-b390-4d13-96fc-52ef900e0c34",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C67",
+      "claim": "Among the beads attached, 37% moved along flagella of WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the beads attached, 37% moved along flagella of WT-Ins, 22% in IMMan1A, 29% in IMXylT1A and 27% in the double mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B from microbead transport assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "18505f8a-a629-4c34-a315-62c572aab7bd",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C68",
+      "claim": "Among the beads attached, 22% moved along flagella in IMMan1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the beads attached, 37% moved along flagella of WT-Ins, 22% in IMMan1A, 29% in IMXylT1A and 27% in the double mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B from microbead transport assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "a38d8107-588b-490a-aa72-77d1c8e3d75d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C69",
+      "claim": "Among the beads attached, 29% moved along flagella in IMXylT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the beads attached, 37% moved along flagella of WT-Ins, 22% in IMMan1A, 29% in IMXylT1A and 27% in the double mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B from microbead transport assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "415b93ab-e153-4e8c-826a-027c1e84336f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C70",
+      "claim": "Among the beads attached, 27% moved along flagella in the double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the beads attached, 37% moved along flagella of WT-Ins, 22% in IMMan1A, 29% in IMXylT1A and 27% in the double mutant (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B from microbead transport assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "4ef88208-7e8f-4fd9-b98a-a892a9c843f8",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C71",
+      "claim": "Interaction of flagellar membrane and surface is altered due to altered N-glycan composition in these mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that interaction of flagellar membrane and surface is altered due to altered N-glycan composition in these mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the microbead binding and transport data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "f34565bf-b952-49bd-b244-74bc2e8c2138",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C72",
+      "claim": "The forces necessary to overcome the adhesion of C. reinhardtii flagella to the surface were significantly reduced in these three mutants analyzed as compared to WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the forces necessary to overcome the adhesion of C. reinhardtii flagella to the surface were significantly reduced in these three mutants analyzed as compared to WT-Ins (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and C using AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "17a60586-dc01-482f-b2a6-7617fb5f1e1f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C73",
+      "claim": "In the double mutant the adhesion force was reduced from 8 nN in WT-Ins to 1 nN.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially in the double mutant the adhesion force was reduced from 8 nN in WT-Ins to 1 nN, while the average energy was reduced from 4 to 0.5 J nm\u22121 (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and D using AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "dca1f525-6642-4000-8488-41b43ffb2d1e",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C74",
+      "claim": "In the double mutant the average energy was reduced from 4 to 0.5 J nm\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Especially in the double mutant the adhesion force was reduced from 8 nN in WT-Ins to 1 nN, while the average energy was reduced from 4 to 0.5 J nm\u22121 (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and D using AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "97f21ec7-dba1-4e98-adc5-0db7ad53fc2b",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C75",
+      "claim": "An altered N-glycan composition impacts the flagellar adhesion force onto a solid substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that an altered N-glycan composition impacts the flagellar adhesion force onto a solid substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the AFM measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "97a014d8-8f8c-41bf-8fac-0b13085e1a45",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C76",
+      "claim": "Adhesion forces in CRISPRXylT1A_1 were significantly diminished in comparison to respective WT under both ciliobrevin D conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Adhesion forces were measured in presence and absence of dynein-1b inhibitor ciliobrevin D. Importantly, adhesion forces in CRISPRXylT1A_1 were significantly diminished in comparison to respective WT under both ciliobrevin D conditions confirming AFM results (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 using micropipette force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "f85d58b3-dba7-4323-ba29-55a05d7152ac",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C77",
+      "claim": "Illuminating cells with red light dramatically decreased the adhesion force in both WT-SAG and CRISPRXylT1A_1 in presence as well as in absence of ciliobrevin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Illuminating cells with red light dramatically decreased the adhesion force in both WT-SAG and CRISPRXylT1A_1 in presence as well as in absence of ciliobrevin D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4 using micropipette force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ded285a5-d193-42a4-b26e-825aa3d03dc1",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C78",
+      "claim": "Removal of ciliobrevin D resulted in a significant decrease in adhesion force for both WT-SAG and CRISPRXylT1A_1 from ~2.6 nN to ~1.3 nN in WT-SAG and from ~1.8 nN to ~1 nN in CRISPRXylT1A_1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, removal of ciliobrevin D resulted in a significant decrease in adhesion force for both WT-SAG and CRISPRXylT1A_1 from ~2.6 nN to ~1.3 nN in WT-SAG and from ~1.8 nN to ~1 nN in CRISPRXylT1A_1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4 using micropipette force measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8e48f6bc-c5f5-4c3e-b026-14c39d7261f1",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C79",
+      "claim": "In the absence of ciliobrevin D, the adhesion force measured by AFM in mutant IMMan1AxIMXylT1A is still significantly lower than in WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "As presented in Figure 3, the strongest effect on adhesion forces assessed was observed in the double mutant IMMan1AxIMXylT1A when compared to WT-Ins. In the absence of ciliobrevin D, the adhesion force measured by AFM in mutant IMMan1AxIMXylT1A is still significantly lower than in WT-Ins (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A using AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "6cd78a5c-6b62-4f40-98bd-9b395ab89723",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C80",
+      "claim": "Addition of ciliobrevin D resulted in significantly increased adhesion forces as seen for WT-SAG or WT-Ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, addition of ciliobrevin D resulted in significantly increased adhesion forces as seen for WT-SAG or WT-Ins (Figure 4 and Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "52465698-1b64-484f-b752-eb90eae16f35",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C81",
+      "claim": "Active dynein-1b might reduce surface adhesion forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggested that active dynein-1b might reduce surface adhesion forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that ciliobrevin D increases adhesion forces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "d6050cfb-662a-49d0-81a9-7b6b0e6e6952",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C82",
+      "claim": "Neither the proportion of gliding events (gliding velocity higher 0.3 \u00b5m*s\u22121), nor gliding speed distribution was significantly diminished when comparing WT-Ins and the double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Obtained data revealed that neither the proportion of gliding events (gliding velocity higher 0.3 \u00b5m*s\u22121), nor gliding speed distribution was significantly diminished when comparing WT-Ins and the double mutant (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C using TIRF microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "41014a10-7bf9-4b30-8ed8-61e326480aac",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C83",
+      "claim": "Anterograde and retrograde IFT velocities were found at WT-Ins values when comparing WT-Ins and the double mutant of adherent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, anterograde and retrograde IFT velocities were found at WT-Ins values when comparing WT-Ins and the double mutant of adherent cells (Figure 5C), implying no significant impact of altered N-glycan maturation on IFT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C using TIRF microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "39475252-3618-45b3-ba27-8fbff96a6d11",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C84",
+      "claim": "There is no significant impact of altered N-glycan maturation on IFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, anterograde and retrograde IFT velocities were found at WT-Ins values when comparing WT-Ins and the double mutant of adherent cells (Figure 5C), implying no significant impact of altered N-glycan maturation on IFT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the IFT velocity measurements shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "e6f3272c-4a43-49d4-8128-06844a327a7d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C85",
+      "claim": "Adhesion forces differed when measured at a defined flagella length of about 6.5 \u03bcm: while control cells showed an average adhesion force of 0.48 nN, cells depleted from dynein-1b showed a significantly elevated adhesion force of 1.64 N.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was found that adhesion forces differed when measured at a defined flagella length of about 6.5 \u03bcm: while control cells showed an average adhesion force of 0.48 nN, cells depleted from dynein-1b showed a significantly elevated adhesion force of 1.64 N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1 using AFM measurements on the triple mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ab877416-06cf-4bf8-a2ab-e2c5e34ce6cd",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C86",
+      "claim": "The action of dynein-1b reduces flagellar adhesion forces due to a destabilization of surface adhered protein clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we suggest, that the action of dynein-1b reduces flagellar adhesion forces due to a destabilization of surface adhered protein clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dynein-1b depletion increases adhesion forces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "eaf1eb99-01d1-4f8a-9a71-067052add57f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C87",
+      "claim": "The maturation of N-glycans has an impact on flagella-mediated cell adhesion in C. reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data revealed that the maturation of N-glycans has an impact on flagella-mediated cell adhesion in C. reinhardtii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "6a65bd4d-3232-4e5c-bd70-cdabe6bfe240",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C88",
+      "claim": "IFT and gliding velocity were not changed due to altered N-glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, IFT and gliding velocity were not changed due to altered N-glycosylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5C using TIRF microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "f7c3875d-5f23-48fd-98d0-98c177f4e4ff",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C89",
+      "claim": "Microbead binding was found diminished in IM strains, implying that the flagellar surface has an altered affinity toward microbeads.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbead binding was found diminished in IM strains, implying that the flagellar surface has an altered affinity toward microbeads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2 and inferred from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "3baf4d28-bcea-4df6-8c1d-1ef57da57de9",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C90",
+      "claim": "N-glycan patterns of IMXylT1A and CRISPRXylT1A were comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that N-glycan patterns of IMXylT1A and CRISPRXylT1A were comparable and thereby strengthen the proposed role of XylT1A as core xylosyltransferase (Lucas et al., 2020; Schulze et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "8298e76a-d183-47f1-a3ed-754270031b5f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C91",
+      "claim": "Changes in surface adhesion are likely linked to N-glycoprotein epitopes and their direct interaction with the solid or semisolid surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, changes in surface adhesion are likely linked to N-glycoprotein epitopes and their direct interaction with the solid or semisolid surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that altered N-glycans affect adhesion but not protein targeting or IFT.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "010ce53e-e976-4028-8d47-8e03856eef7c",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C92",
+      "claim": "Altered N-glycosylation diminished the force of cells to adhere to surfaces but did not affect IFT, strongly suggesting that adhesion to surfaces and IFT are not necessarily coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that altered N-glycosylation diminished the force of cells to adhere to surfaces but did not affect IFT, strongly suggests that adhesion to surfaces and IFT are not necessarily coupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of reduced adhesion and unchanged IFT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "9827fa9b-6d43-45ee-a1d3-a08ccba8adc0",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C93",
+      "claim": "N-glycosylation does not significantly impact differences in light perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it can be concluded that N-glycosylation does not significantly impact differences in light perception, as the adhesion forces for WT-SAG and CRISPRXylT1A were significantly stronger under blue than under red light (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that both WT and mutant respond similarly to light.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "32215d79-e324-4d6e-9f97-91a7c1f04c6d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C94",
+      "claim": "Cell adhesion was significantly impaired in C. reinhardtii N-glycosylation mutant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, taking advantage of single-cell adhesion force measurements, our data revealed that cell adhesion was significantly impaired in C. reinhardtii N-glycosylation mutant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study based on AFM and micropipette measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "86156a4d-366a-4f23-a058-24a908d02bc7",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C95",
+      "claim": "Flagellar assembly, IFT and FMG-1B transport into flagella were not affected by altered N-glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data further suggested that flagellar assembly, IFT and FMG-1B transport into flagella were not affected by altered N-glycosylation implicating no role of N-glycosylation in these processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on flagellar length measurements, IFT velocity measurements, and proteomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "fec30394-271e-4c70-9f78-40c6d325787f",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C96",
+      "claim": "The remaining adhesion force, although diminished in N-glycan mutants, is still sufficient for gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations further suggest that the remaining adhesion force, although diminished in N-glycan mutants, is still sufficient for gliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that gliding is not affected in the mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ce1014d1-0dda-43d0-b537-5d8449b269d6",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "claim_id": "C97",
+      "claim": "Adhesion might result in photoprotection via biofilm formation, which in turn would enable mutual cell shading.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the response of flagellar adhesion to blue light, it could potentially link adhesion to photo-protection which is also blue-light mediated, as adhesion might result in photoprotection via biofilm formation, which in turn would enable mutual cell shading (Kreis et al., 2018; Petroutsos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the light-dependent adhesion and citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "326785c8-5a06-4c05-93ba-75c236c53fad",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Three N-glycosylation mutants (IMXylT1A, IMMan1A, and IMMan1AxIMXylT1A) were characterized with distinct N-glycan compositions but normal flagellar length. IMXylT1A lacks core xylose and has reduced N-glycan length; IMMan1A lacks 6O-methylation with slightly greater N-glycan length; the double mutant lacks 6O-methylation but has WT-like length with core xylose and fucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe the N-glycan compositions of the mutants based on prior characterization (Schulze et al., 2018) and Figure 1A. Claim C47 shows flagellar length is unaffected (Figure 1\u2014figure supplement 1). The mutant characterization is well-documented and provides the foundation for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ac311223-6285-423f-ab67-1de8bb9edd08",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FMG-1B and FAP113 are correctly targeted to flagella in all N-glycosylation mutants despite altered N-glycan patterns. Immunoblotting and immunostaining with glycan-specific and peptide-specific antibodies show that while N-glycan epitopes are altered or reduced in mutants, the protein backbone localization remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C60 are supported by multiple complementary techniques: immunoblotting (Figure 1B), mass spectrometry (Figures 1C-D), and immunostaining (Figure 1E). The use of both glycan-specific and peptide-specific antibodies provides strong evidence that protein localization is independent of N-glycan maturation. This is a critical control showing that adhesion defects are not due to mistargeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "1af10c7f-56fc-40c1-9116-ed7103670b3b",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Proteomic analysis revealed no proteins consistently and significantly changed in abundance in flagella of N-glycosylation mutants compared to WT-Ins, indicating flagellar assembly is not considerably altered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by label-free mass spectrometry data (Figure 1\u2014figure supplement 7). The lack of consistent proteomic changes across mutants strengthens the conclusion that observed adhesion defects are specifically due to altered N-glycan structures rather than global changes in flagellar composition or assembly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "99922486-1c95-4fbf-a8aa-11709622e315",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microbead binding and transport are impaired in N-glycosylation mutants. The percentage of flagella with beads bound decreased from 52% in WT-Ins to 46% (IMMan1A), 33% (IMXylT1A), and 27% (double mutant). Among attached beads, movement decreased from 37% (WT-Ins) to 22-29% in mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 are supported by quantitative microbead binding and transport assays (Figure 2). The progressive decrease in both binding and transport correlates with the severity of N-glycan alterations, with the double mutant showing the strongest effect. Statistical significance is reported (Figure 2\u2014source data 1). This provides functional evidence that N-glycan composition affects flagellar surface interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "f348c738-4877-4c23-8dac-93b837248467",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AFM measurements show that adhesion forces are significantly reduced in N-glycosylation mutants compared to WT-Ins. The double mutant showed the strongest effect with adhesion force reduced from 8 nN to 1 nN and average energy reduced from 4 to 0.5 J nm\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by AFM force measurements (Figures 3B-D) with appropriate statistical analysis. The measurements were performed with ciliobrevin D to inhibit gliding, ensuring adhesion forces were measured independently of dynein-1b activity. Three biological replicates with minimum 5 cells per replicate provide adequate statistical power. The dose-dependent effect across mutants strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "b33fa269-1ea7-4a38-a8e7-0cdcb0b87b8d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Micropipette force measurements on an independent CRISPR/Cas9-generated XylT1A mutant (CRISPRXylT1A_1) confirmed reduced adhesion forces compared to WT-SAG under both blue and red light conditions, with and without ciliobrevin D. N-glycan patterns of IMXylT1A and CRISPRXylT1A were comparable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 and C90 are supported by micropipette force measurements (Figure 4) using an independent mutant in a different genetic background. This orthogonal validation strengthens the conclusion that N-glycan composition affects adhesion. The light-dependent adhesion response is preserved in both WT and mutant, indicating N-glycosylation does not affect photoreceptor function. Statistical analysis using Kolmogorov-Smirnov test is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "019de554-f7b2-4e31-a90c-031b83d7e99c",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ciliobrevin D treatment significantly increased adhesion forces in both WT and N-glycosylation mutants, suggesting that active dynein-1b reduces surface adhesion forces. In the absence of ciliobrevin D, the double mutant still showed significantly lower adhesion than WT-Ins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by AFM measurements with and without ciliobrevin D (Figures 4, 5A). The observation that dynein-1b inhibition increases adhesion forces is consistent across multiple experiments and strains. However, claim C81 is somewhat speculative as it proposes a mechanism (destabilization of protein clusters) that is not directly tested. The inference is reasonable but requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "0eda8097-6abf-48b5-aa91-6b176b025328",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gliding velocity and IFT velocities (both anterograde and retrograde) were not significantly affected by altered N-glycosylation when comparing WT-Ins and the double mutant, indicating no significant impact of altered N-glycan maturation on IFT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 are supported by TIRF microscopy measurements (Figure 5C). The lack of effect on IFT and gliding despite reduced adhesion forces is a key finding that decouples adhesion from IFT function. The measurements were performed on adherent cells without ciliobrevin D. Three biological replicates with 10 cells per replicate (300 IFT events per strain) provide adequate statistical power. Statistical tests (t-test and Mann-Whitney U) are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "60b58324-1f16-44b4-a3cf-ead3b88a5014",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using a temperature-sensitive dynein-1b mutant crossed with the double N-glycosylation mutant, AFM measurements at restrictive temperature (dynein-1b depleted) showed significantly elevated adhesion force (1.64 nN) compared to control (0.48 nN), suggesting dynein-1b action reduces adhesion forces by destabilizing surface-adhered protein clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 is supported by AFM measurements on the triple mutant (Figure 5\u2014figure supplement 1). However, the interpretation in claim C86 is speculative. While the data show that dynein-1b depletion increases adhesion, the proposed mechanism (destabilization of protein clusters) is not directly demonstrated. The control using NaPPi (which shortens flagella without affecting dynein-1b) is appropriate, but the measurements were performed at a specific flagellar length (~6.5 \u03bcm), which may introduce confounding factors. Additional experiments would be needed to confirm the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "86963b08-a090-4ba2-ab64-51dc334fd919",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The maturation of N-glycans has an impact on flagella-mediated cell adhesion in C. reinhardtii. Proper N-glycosylation of flagellar proteins is crucial for adhering cells to surfaces, with N-glycans mediating surface adhesion via direct surface contact rather than through effects on protein targeting or IFT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C94, C10, C11, and C91 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: microbead assays (Figure 2), AFM measurements (Figure 3), micropipette measurements (Figure 4), and TIRF microscopy (Figure 5). The conclusion that N-glycans mediate direct surface contact is inferred from the observation that adhesion is affected while protein localization and IFT are not. This inference is logical but somewhat indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "89e981af-c870-4afa-9e35-e860fe2c46b2",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Flagellar assembly, IFT, and FMG-1B transport into flagella were not affected by altered N-glycosylation, implicating no role of N-glycosylation in these processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C7, and C9 are supported by multiple lines of evidence: flagellar length measurements (Figure 1\u2014figure supplement 1), IFT velocity measurements (Figure 5C), and proteomic analysis showing correct targeting of FMG-1B and FAP113 (Figures 1C-D). This negative result is important for establishing that the observed adhesion defects are specific to surface interactions rather than general flagellar dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "fa722b1a-9fb4-47a6-a333-32f1c6d3d33d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Altered N-glycosylation diminished adhesion forces but did not affect IFT, strongly suggesting that adhesion to surfaces and IFT are not necessarily coupled.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is supported by the combined observations from Figures 3-5 showing reduced adhesion forces but unchanged IFT velocities. This challenges the prevailing model that adhesion and IFT are tightly coupled and suggests they can function independently. The conclusion is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "b50e0efb-6033-42b5-b8d4-6fd68797ec5d",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "N-glycosylation does not significantly impact light perception, as both WT-SAG and CRISPRXylT1A showed significantly stronger adhesion under blue light than red light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is supported by micropipette measurements (Figure 4) showing that both WT and mutant respond similarly to different wavelengths of light. This indicates that the photoreceptor pathway governing light-dependent adhesion is independent of N-glycan maturation. The inference is reasonable and supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ba5cfbc1-0af4-42d3-a3cc-a14a7ff9d8d4",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The remaining adhesion force in N-glycan mutants, although diminished, is still sufficient for gliding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by the observation that gliding is not significantly affected in mutants (Figure 5C) despite reduced adhesion forces (Figures 3-4). This suggests a threshold model where a minimum adhesion force is required for gliding, and mutants retain sufficient force above this threshold. The inference is reasonable and consistent with the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "e2a15fc1-c996-44a7-a376-adb25c68f8fd",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Adhesion might result in photoprotection via biofilm formation, which would enable mutual cell shading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 is speculative and not directly tested in this study. While the authors cite relevant literature (Kreis et al., 2018; Petroutsos et al., 2016), the connection between N-glycan-mediated adhesion and photoprotection is hypothetical. This represents a potential direction for future research but is not supported by data in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    },
+    {
+      "id": "ba770f01-6eb0-413f-ac33-07a5c75703c9",
+      "content_id": "df167815-b937-44fa-b772-3f1167ac8b9e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge about N-glycosylation, flagellar biology, and C. reinhardtii is established through citations to prior literature, including the role of N-glycosylated proteins in mating and adhesion, the structure and function of FMG-1B, IFT mechanisms, and light-dependent adhesion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C12-C42 represent established knowledge from prior literature, appropriately cited throughout the introduction. These claims provide necessary context for the current study and are well-documented in the cited references. The authors accurately represent prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T00:50:48.584924Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64e28c9c-f1fe-413e-915a-c7f9041fb162",
+      "result_id": "326785c8-5a06-4c05-93ba-75c236c53fad"
+    },
+    {
+      "claim_id": "7d05a242-754f-45fb-a6b2-bbf48dff2dec",
+      "result_id": "326785c8-5a06-4c05-93ba-75c236c53fad"
+    },
+    {
+      "claim_id": "a721801e-bc50-449c-87e3-ef5e5c365d01",
+      "result_id": "326785c8-5a06-4c05-93ba-75c236c53fad"
+    },
+    {
+      "claim_id": "db802e2d-3068-4bde-93df-73efb805a19f",
+      "result_id": "326785c8-5a06-4c05-93ba-75c236c53fad"
+    },
+    {
+      "claim_id": "d635ac92-65ce-4007-bb1c-e1b9b942bad4",
+      "result_id": "326785c8-5a06-4c05-93ba-75c236c53fad"
+    },
+    {
+      "claim_id": "49a37a67-a0e0-409b-91f0-d8d35b24cc84",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "75ba3065-3c86-4891-97cc-69bf3cbcfa87",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "aa104ed4-cd01-43df-807e-e60145471d38",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "bc662f02-d189-4386-9679-f0956edb5445",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "b93e736f-b793-4e2e-b940-3e347a2745ac",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "1bd37348-d957-4712-8080-3d585dcb6a24",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "c73d4fd7-ff78-4aac-ab8e-52ecc47ffb93",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "4343dcaf-c244-48cd-9423-7342bf065de3",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "951ae7cc-c3b7-4b1a-b9bc-375d7faabfd1",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "48ab9566-24ef-4aa9-b876-a02486cc8938",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "d69785d3-217a-4198-9595-d86ebfaccfdb",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "c3633653-019d-4b46-9ff0-13a14a011cec",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "8b04e18c-4c73-4a28-8a10-72c3f7d77acd",
+      "result_id": "ac311223-6285-423f-ab67-1de8bb9edd08"
+    },
+    {
+      "claim_id": "7402ba1b-247f-4405-8084-0c06b4681548",
+      "result_id": "1af10c7f-56fc-40c1-9116-ed7103670b3b"
+    },
+    {
+      "claim_id": "87139744-b1b3-49b8-8d84-12a4a84cc98e",
+      "result_id": "1af10c7f-56fc-40c1-9116-ed7103670b3b"
+    },
+    {
+      "claim_id": "23db60fa-402d-42f2-bc5d-92c2bf81c7da",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "c351bc28-2b09-4528-8b6e-c98c10992974",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "9317042e-fa3e-4258-865c-f88084652fea",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "fd292538-24da-4ef7-92c9-ca73abbdcbf5",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "d6d2a8df-b390-4d13-96fc-52ef900e0c34",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "18505f8a-a629-4c34-a315-62c572aab7bd",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "a38d8107-588b-490a-aa72-77d1c8e3d75d",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "415b93ab-e153-4e8c-826a-027c1e84336f",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "4ef88208-7e8f-4fd9-b98a-a892a9c843f8",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "a6f89d46-5dab-45f9-a80e-80a71d4f07f7",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "28a1d609-95b3-4d5f-adda-8db9e2ca17c4",
+      "result_id": "99922486-1c95-4fbf-a8aa-11709622e315"
+    },
+    {
+      "claim_id": "f34565bf-b952-49bd-b244-74bc2e8c2138",
+      "result_id": "f348c738-4877-4c23-8dac-93b837248467"
+    },
+    {
+      "claim_id": "17a60586-dc01-482f-b2a6-7617fb5f1e1f",
+      "result_id": "f348c738-4877-4c23-8dac-93b837248467"
+    },
+    {
+      "claim_id": "dca1f525-6642-4000-8488-41b43ffb2d1e",
+      "result_id": "f348c738-4877-4c23-8dac-93b837248467"
+    },
+    {
+      "claim_id": "97f21ec7-dba1-4e98-adc5-0db7ad53fc2b",
+      "result_id": "f348c738-4877-4c23-8dac-93b837248467"
+    },
+    {
+      "claim_id": "7ddbae0f-17a4-4bea-8d2d-85ef428f067c",
+      "result_id": "f348c738-4877-4c23-8dac-93b837248467"
+    },
+    {
+      "claim_id": "97a014d8-8f8c-41bf-8fac-0b13085e1a45",
+      "result_id": "b33fa269-1ea7-4a38-a8e7-0cdcb0b87b8d"
+    },
+    {
+      "claim_id": "f85d58b3-dba7-4323-ba29-55a05d7152ac",
+      "result_id": "b33fa269-1ea7-4a38-a8e7-0cdcb0b87b8d"
+    },
+    {
+      "claim_id": "ded285a5-d193-42a4-b26e-825aa3d03dc1",
+      "result_id": "b33fa269-1ea7-4a38-a8e7-0cdcb0b87b8d"
+    },
+    {
+      "claim_id": "3baf4d28-bcea-4df6-8c1d-1ef57da57de9",
+      "result_id": "b33fa269-1ea7-4a38-a8e7-0cdcb0b87b8d"
+    },
+    {
+      "claim_id": "8e48f6bc-c5f5-4c3e-b026-14c39d7261f1",
+      "result_id": "019de554-f7b2-4e31-a90c-031b83d7e99c"
+    },
+    {
+      "claim_id": "6cd78a5c-6b62-4f40-98bd-9b395ab89723",
+      "result_id": "019de554-f7b2-4e31-a90c-031b83d7e99c"
+    },
+    {
+      "claim_id": "52465698-1b64-484f-b752-eb90eae16f35",
+      "result_id": "019de554-f7b2-4e31-a90c-031b83d7e99c"
+    },
+    {
+      "claim_id": "d6050cfb-662a-49d0-81a9-7b6b0e6e6952",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "41014a10-7bf9-4b30-8ed8-61e326480aac",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "39475252-3618-45b3-ba27-8fbff96a6d11",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "e3ca215c-24e6-413d-9bee-70ddddb3096a",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "cfc07b41-8501-42aa-b0f1-4cb43547ef37",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "6a65bd4d-3232-4e5c-bd70-cdabe6bfe240",
+      "result_id": "0eda8097-6abf-48b5-aa91-6b176b025328"
+    },
+    {
+      "claim_id": "e6f3272c-4a43-49d4-8128-06844a327a7d",
+      "result_id": "60b58324-1f16-44b4-a3cf-ead3b88a5014"
+    },
+    {
+      "claim_id": "ab877416-06cf-4bf8-a2ab-e2c5e34ce6cd",
+      "result_id": "60b58324-1f16-44b4-a3cf-ead3b88a5014"
+    },
+    {
+      "claim_id": "eaf1eb99-01d1-4f8a-9a71-067052add57f",
+      "result_id": "86963b08-a090-4ba2-ab64-51dc334fd919"
+    },
+    {
+      "claim_id": "32215d79-e324-4d6e-9f97-91a7c1f04c6d",
+      "result_id": "86963b08-a090-4ba2-ab64-51dc334fd919"
+    },
+    {
+      "claim_id": "54749882-3149-40ee-98cf-ecddaff04a16",
+      "result_id": "86963b08-a090-4ba2-ab64-51dc334fd919"
+    },
+    {
+      "claim_id": "f486b787-c765-479a-b7c8-bed0eb2fc097",
+      "result_id": "86963b08-a090-4ba2-ab64-51dc334fd919"
+    },
+    {
+      "claim_id": "8298e76a-d183-47f1-a3ed-754270031b5f",
+      "result_id": "86963b08-a090-4ba2-ab64-51dc334fd919"
+    },
+    {
+      "claim_id": "86156a4d-366a-4f23-a058-24a908d02bc7",
+      "result_id": "89e981af-c870-4afa-9e35-e860fe2c46b2"
+    },
+    {
+      "claim_id": "0d256d94-2ab2-4670-9667-757a54ee7598",
+      "result_id": "89e981af-c870-4afa-9e35-e860fe2c46b2"
+    },
+    {
+      "claim_id": "30bc9cb1-c66d-409f-99cb-2688d70ca310",
+      "result_id": "89e981af-c870-4afa-9e35-e860fe2c46b2"
+    },
+    {
+      "claim_id": "010ce53e-e976-4028-8d47-8e03856eef7c",
+      "result_id": "fa722b1a-9fb4-47a6-a333-32f1c6d3d33d"
+    },
+    {
+      "claim_id": "9827fa9b-6d43-45ee-a1d3-a08ccba8adc0",
+      "result_id": "b50e0efb-6033-42b5-b8d4-6fd68797ec5d"
+    },
+    {
+      "claim_id": "fec30394-271e-4c70-9f78-40c6d325787f",
+      "result_id": "ba5cfbc1-0af4-42d3-a3cc-a14a7ff9d8d4"
+    },
+    {
+      "claim_id": "ce1014d1-0dda-43d0-b537-5d8449b269d6",
+      "result_id": "e2a15fc1-c996-44a7-a376-adb25c68f8fd"
+    },
+    {
+      "claim_id": "0cc2ccfc-e3ab-4afc-b857-5c68b26e1810",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "52facfb4-6a06-45b0-9525-c439497fc37f",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "8ce1c66c-9a5e-49fc-ab2d-9503071beba9",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "a8fe26ff-a8ff-46e8-b407-1ec2febad2e3",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "0b51a337-63d8-494f-bc84-8ddfbfe963a1",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "883530ce-cc05-4fdd-9a5d-dd5d2d26a703",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "5195d2a3-3933-4467-af1c-de8d89137e2b",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "665324a8-5fe4-44c4-8492-ce157da4470d",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "12d1b61c-a053-4cd4-a7cf-3f952188ac36",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "eb45cf67-9b5a-49ba-adf2-5a18023a68ae",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "a53d6e6e-f8b7-4db7-aaf3-a0b310a09862",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "fc5fc549-4fab-4fc2-ac88-cf4beb2e3004",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "371df20c-3356-493c-ad05-d9d9e4ef78dc",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "026bc670-9756-4604-82ae-84542ff893b7",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "44e7ab8e-f764-491e-977d-f0c8d376ade5",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "37d5c025-3185-43fb-a7a9-73d2e180d897",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "730fe4f8-4e62-4d57-b7bf-c0fd87b2cdf0",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "e4cf92ff-45a0-446c-b0cc-39c5460d4ff6",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "d2ca06c6-4341-462b-891a-b987d1e0de40",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "1870eb1e-4ebd-4fd7-ae5e-72ab6355faf1",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "de981161-745e-4214-8880-db783f695c25",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "4dd817da-0ec6-45b4-b6b9-ab8a56359b27",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "5eaa3c4c-2a46-4f7a-8a99-9009f5d348b9",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "0d28dcbb-bfc0-4cb5-bfaa-60e7b701b004",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "da05e394-f92d-4811-999c-8ec7b259acbd",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "8e58439b-5afe-472d-bcaf-788c6190a679",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "e998f3b2-3496-47bc-8c65-256440e35d52",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "0d9ad56a-f9a2-48a5-b60c-9462be1d587f",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "0adc0f97-e6d3-4205-b8cd-ef535a0416b0",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "cdb3b89e-5195-4c5d-8028-909c80be16f7",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "51e5fe08-8ce1-4d06-8497-264925ce9af5",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "4165d9f8-3d49-4867-bf67-5a4ef741f244",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    },
+    {
+      "claim_id": "987aa83f-0f30-4ae0-ba6a-e3c50671d20d",
+      "result_id": "ba770f01-6eb0-413f-ac33-07a5c75703c9"
+    }
+  ],
+  "comparisons": []
+}

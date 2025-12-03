@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Dentate granule cells generate sparse, synchronized network events that occur predominantly during immobility. These events incorporate only 5.7\u00b10.09% of active granule cells and occur significantly more frequently during immobility than running (p=2\u00d710\u207b\u2076), with 99.6% occurring when mice are completely immobile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C29 provide converging evidence from dual-color two-photon imaging showing sparse, synchronized network events during immobility. Statistical analyses with appropriate controls (shuffling) confirm these events do not arise by chance, and repeated measures ANOVA demonstrates significantly higher frequencies during immobility versus running.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C99"
+    ],
+    "result": "Network events are temporally correlated with activation of medial perforant path (MPP) inputs. During immobility, MPP and granule cell signals show significant correlation (8/9 sessions, Granger causality p<0.05), with strong coactivation during network events and a short temporal delay between MPP transients and network events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 and C99 demonstrate correlation between MPP and GC activity using cross-correlation analysis, Granger causality testing, and temporal alignment. The data show larger MPP event amplitudes during immobility and appropriate statistical controls distinguish running from resting states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C76"
+    ],
+    "result": "Network events are associated with specific pupillary dynamics, including pupil constriction and significantly smaller pupil diameters compared to general immobility periods (repeated measures ANOVA F(2,28)=17.17, p=1\u00d710\u207b\u2075), suggesting association with substates of arousal during immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 and C76 provide pupillometry data with appropriate statistical analysis showing network events correlate with pupil constriction. The repeated measures ANOVA with post-hoc tests demonstrates significant differences between locomotion, immobility, and network event states, consistent with prior work on arousal states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Network events exhibit structured organization with 38% of event pairs being completely orthogonal (significantly more than the 29% expected by chance, p=0.0039), while specific sub-ensembles of granule cells (average cluster size 6.7\u00b10.4 cells) are repeatedly recruited across multiple network events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate network event structure using cosine similarity analysis with shuffling controls and hierarchical clustering with statistical thresholds. The combination of orthogonality and repeated ensemble recruitment is supported by appropriate quantitative methods and comparison to null distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A small fraction of dentate granule cells exhibit place coding (2.83% of active cells, 6.09% of running-active cells) and speed coding (0.85% of active cells). In cue-enriched environments, the fraction of place cells increases to 4.56% (10.74% of running-active cells) and speed cells to 1.54%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 provide quantitative measurements of place and speed cell proportions using spatial tuning vector analysis with shuffling controls. The increases in cue-enriched conditions are documented with appropriate sample sizes (n=9 mice) and statistical validation of spatial coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Network events are responsive to environmental changes. In cue-enriched conditions, network events are larger (p=4\u00d710\u207b\u2074\u00b9), individual granule cells participate more frequently (p=1\u00d710\u207b\u2074\u2070), and place cells show significantly higher probability of incorporation (88.46% vs 55.42% in baseline, p=1\u00d710\u207b\u2075), while speed cell incorporation remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 demonstrate environmental modulation of network events using statistical comparisons between baseline and cue-enriched conditions. The selective increase in place cell (but not speed cell) incorporation is supported by chi-square tests and appropriate post-hoc comparisons with sufficient sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The dentate gyrus exhibits high lap-to-lap variability in population activity during linear track locomotion, with episodic dynamics clearly distinct from the repetitive, stable population dynamics observed in CA1 across three different track types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by PCA analysis comparing DG and CA1 population dynamics. Autocorrelation analysis quantifies spatial stability showing significantly larger peaks at integer lap multiples for CA1 versus DG (ANOVA F(1,3)=88.32, p=2\u00d710\u207b\u00b3\u2070), demonstrating the distinct population behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "At the population level, network events during immobility are more similar to locomotion-related activity patterns than expected by chance, and the cellular composition of network events matters for this similarity, as demonstrated by multiple PCA-based similarity measures and shuffling analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by three independent PCA-based similarity measures (variance projection, cosine similarity, EROS) all showing significant differences from shuffled controls. Three different shuffling procedures confirm that network event composition and synchrony are critical for the observed similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C89"
+    ],
+    "result": "Optogenetic inhibition of granule cells during immobility in the learning trial of the object pattern separation task led to complete loss of preference for the displaced object in recall trials (t(12)=5.37, p=0.0002), while control mice showed clear preference. Inhibition during exploration also impaired performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C89 provide behavioral evidence from optogenetic experiments with appropriate controls (eYFP vs eNpHR groups). Statistical analysis shows significant impairment with inhibition during immobility, supported by discrimination index measurements and proper experimental design including intermediate periods between acquisition and recall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Inhibition of the dentate gyrus during the recall phase did not significantly inhibit task performance in the OPS task, consistent with the idea that recall is achieved via activation of memory-related attractors in downstream CA3 and/or CA1 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 show that DG activity is required for encoding but not retrieval in the OPS task. The lack of effect during recall is supported by behavioral data and is consistent with established hippocampal memory circuit models, though the interpretation about downstream attractors is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The dentate gyrus serves as a relay from entorhinal cortex to hippocampus and has been proposed to perform pattern separation during exploration through sparse firing patterns. However, little is known about population-level granule cell activity during immobility or whether such activity reiterates behaviorally relevant information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 establish the background knowledge and identify gaps in understanding. These are well-supported by citations to established literature and accurately describe the state of the field, providing appropriate context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Network events during immobility meet theoretical requirements for memory consolidation by reactivating exploration-related patterns. The sparse recruitment (~5-7% of active GCs) predicts highly constrained CA3 ensembles, which may be important for instructing downstream memory-related sequences while conserving pattern separation benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C86 present theoretical interpretations and predictions based on the experimental findings. While the sparseness measurements (C79) are data-supported, the predictions about CA3 recruitment (C83) and memory consolidation mechanisms (C85) are speculative inferences requiring additional experimental validation in CA3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "The dentate gyrus may amplify small differences between laps as a manifestation of pattern separation, and network events may rapidly introduce environmental information into the hippocampal network during intervals between exploration episodes, with real-time updating observed in cue-rich environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C90, C91, and C96 present interpretations of the data. While C91 is supported by experimental observations of increased place cell incorporation, C87 and C90 are speculative interpretations. C96 presents an alternative explanation that cannot be distinguished from the primary interpretation with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The experimental methods employed appropriate mouse lines (Thy1-GCaMP6 expressing GCaMP6s in hippocampal neurons, Prox1-Cre for selective dentate gyrus targeting) with proper verification of expression patterns and specificity, including confirmation that no epileptiform activity was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 describe methodological validations that are well-documented with histological verification, citations to prior characterization studies, and functional evidence for specificity. These provide confidence in the experimental approach and interpretation of results.",
+    "result_type": "MINOR"
+  }
+]

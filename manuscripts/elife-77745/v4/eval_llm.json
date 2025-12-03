@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C44",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "The study analyzed 708 participants from ADNI with 3T MRI and FDG-PET imaging, stratified into three pathology groups (A-T-, A-T+, A+T-/A+T+) based on CSF biomarkers using established cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C37, C44, and C94-C103 collectively describe the participant selection, imaging protocols, pathology classification criteria, and ethical approvals. The methodology is clearly documented with appropriate citations to established protocols and cutoffs (Shaw et al., 2009; Petersen et al., 2010), providing a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Individual-level structural and metabolic covariance network scores were derived using seed-based partial least squares (PLS) analysis from 12 seed regions covering hippocampus, default mode, salience, and executive control networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, and C38-C42, C104-C106 describe the PLS methodology for deriving individual network scores. The approach is well-documented with appropriate citations (Krishnan et al., 2011), seed definitions based on group comparisons, and statistical validation (all p<0.0001). The method generates 14 network scores per participant (2 modalities \u00d7 7 seed regions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Sparse varying coefficient (SVC) modeling was used to examine non-linear associations between network scores and memory across cognitive stages, with participants ordered by diagnosis, cognitive severity, and age, then binned for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31, and C108-C114 describe the SVC methodology with appropriate citations (Hong et al., 2015; Daye et al., 2012). The ordering strategy is clearly defined (CN\u2192MCI\u2192dementia, then by MMSE/CDR-SOB, then by age), and the selection criterion (>90/100 repetitions) is specified. The approach allows for non-linear relationships without assuming constancy across stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In amyloid-positive individuals, probable AD patients showed lower metabolic and structural network scores than CN and MCI across all networks, while amyloid-negative groups showed no such differences across cognitive stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C115-C117 report group differences with appropriate statistical methods (non-parametric ANOVA with 5000 permutations, Bonferroni-Holm correction, alpha=0.05). The findings are supported by Figures 2B and 3B. The differential patterns between amyloid-positive and negative groups are clearly demonstrated with proper covariate adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the amyloid pathology group, hippocampal structural network deterioration showed early influence on memory impairment in the preclinical stage, with the strongest association in early CN that decreased through MCI stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, and C51-C54 report the primary finding on hippocampal networks in amyloid-positive individuals. The SVC modeling identified HIP structural network as a key predictor (selected in >90/100 repetitions), with trajectory data shown in Figure 4A. The biphasic pattern with early peak in CN and decline through MCI is clearly demonstrated and replicated in validation dataset (C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In the amyloid pathology group, the angular gyrus-seeded default mode metabolic network showed a biphasic influence on memory, with peaks in early CN and late dementia stages, and a trough in MCI stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, and C57-C59 describe the ANG metabolic network findings specific to amyloid-positive individuals. The SVC modeling identified this network as significant only in the A+T-/A+T+ group, with the biphasic trajectory clearly shown in Figure 4A (right panel). The pattern is replicated in validation dataset 1 (C62-C63), supporting the robustness of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C36",
+      "C55",
+      "C56"
+    ],
+    "result": "In non-amyloid pathology groups (A-T- and A-T+), the hippocampus-memory association trajectory was opposite and weaker compared to amyloid groups, with lowest association in early CN that increased toward dementia, and no metabolic networks were related to memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C36, and C55-C56 report contrasting findings in non-amyloid groups. The opposite trajectory (lowest in CN, increasing toward dementia) is shown in Figure 5A, with weaker overall associations compared to amyloid groups. The absence of metabolic network associations in these groups is explicitly stated and supported by SVC modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Key findings were replicated in validation dataset 1 (1280 participants) and validation dataset 2 (468 independent participants), with consistent results across different ordering strategies and reference group selections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C60-C66 document extensive validation analyses. The replication in validation dataset 1 (Figures 4B, 5B) and independent validation dataset 2 (Figure 4\u2014figure supplement 1A) demonstrate robustness. Additional sensitivity analyses using alternative ordering methods (C64) and CN-only derived networks (C66) further support the findings' reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Permutation tests demonstrated high specificity of the SVC models, and results were consistent when using either LASSO or Ridge penalty methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report validation of model specificity. Permutation tests (100 permutations) showed random frequency distributions for null models (Figure 5\u2014figure supplement 4), indicating selected variables were not favored by chance. Consistency between LASSO and Ridge penalties (Figure 4\u2014figure supplement 1D, Figure 5\u2014figure supplement 1C) further validates model robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The study hypothesized that individual-level brain network integrity would be non-linearly associated with memory across the AD continuum, with posterior DMN and medial temporal regions playing early dominant roles in amyloid pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 state the study hypotheses, which are supported by the results (C4-C7, C34-C36, C51-C59). The non-linear associations were confirmed through SVC modeling, and the early influence of hippocampal and ANG networks in amyloid-positive individuals validates the hypothesis based on prior work (Zhou et al., 2010; Chong et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The hippocampus plays a well-established role in memory, with early divergence from normal aging in AD, and hippocampal atrophy is associated with memory deficits in preclinical AD and predicts progression, though extra-hippocampal regions become increasingly implicated as disease progresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 provide literature context supporting the hippocampal findings. Multiple citations document the hippocampus role in memory (Tulving and Markowitsch, 1998; Eichenbaum, 2004), early divergence in AD (Coup\u00e9 et al., 2019), associations with memory in preclinical AD (Bayram et al., 2018; Wang et al., 2015), and progression to extra-hippocampal regions (Bayram et al., 2018; Dor\u00e9 et al., 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The angular gyrus is a major connector hub in the default mode network involved in memory functions, with impaired glucose uptake predicting cognitive performance in later AD stages, and amyloid aggregation in DMN associated with hypometabolism in connected regions including ANG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide literature context for ANG findings. Citations document ANG as a DMN hub (Greicius et al., 2004; Tomasi and Volkow, 2011), its role in memory (Jonides et al., 1998; Seghier, 2013; Ciaramelli et al., 2008), connectivity with hippocampus, and associations between amyloid and hypometabolism (Pascoal et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Increased functional connectivity in DMN and between networks has been reported in MCI, associated with lower cognitive performance suggesting maladaptive compensation, with similar patterns in subjective cognitive decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide literature context for the biphasic ANG-memory relationship. Citations document increased FC in MCI (Gardini et al., 2015; Liang et al., 2020) and subjective cognitive decline (Chen et al., 2020), supporting the interpretation of the MCI trough as potential maladaptive compensation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Hippocampal atrophy's relationship with memory is moderated by multiple factors including age and cognitive reserve, with neuropathologies accounting for substantial cognitive decline variance while hippocampal volume alone contributes modestly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 provide context for the weaker hippocampus-memory associations in non-amyloid groups. Citations document that multiple pathologies contribute to cognitive decline (Dawe et al., 2020), and that age (Gorbach et al., 2017) and cognitive reserve (Vuoksimaa et al., 2013) moderate hippocampus-memory relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on AD pathology (amyloid, tau, neurodegeneration), the AT(N) framework, network dysfunction in AD, structural/metabolic covariance networks, and non-linear trajectories of biomarkers, all supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C29 establish the scientific background with appropriate citations throughout. The characterization of AD pathology, AT(N) system, network approaches, and non-linear modeling are all well-supported by prior literature, providing proper context for the current study's rationale and approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The study acknowledges limitations including potential selection bias from the ADNI cohort and the cross-sectional design providing only indirect evidence on brain-behavior relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately acknowledge study limitations. The ADNI cohort's self-selected nature and enrichment for amyloid-positive individuals could limit generalizability. The cross-sectional design is a valid limitation for inferring temporal dynamics, though the ordering strategy and validation analyses partially address this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C102"
+    ],
+    "result": "The study was funded by ADNI (NIH Grant U01 AG024904) and DOD ADNI (W81XWH-12-2-0012), with additional funding from Duke NUS, NMRC, and Yong Loo Lin School of Medicine, and used validated ADNI-mem composite scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C102 document funding sources and outcome measures. The funding acknowledgments are explicit and complete. The ADNI-mem composite score is appropriately cited as a validated measure (Crane et al., 2012).",
+    "result_type": "MINOR"
+  }
+]

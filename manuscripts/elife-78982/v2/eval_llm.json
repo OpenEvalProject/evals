@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the background that GPCR activation is allosteric, involving conformational coupling between orthosteric and G protein binding sites, and that allosteric modulators represent a promising therapeutic class, though structural mechanisms remain unclear for many receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent well-established knowledge in the GPCR field, appropriately cited and accurately stated. These background claims correctly identify the knowledge gap that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C68"
+    ],
+    "result": "The authors developed three FRET sensors (SNAP-m2 for VFT, azi-CRD for CRD, and azi-ECL2 for 7TM domain) that accurately report mGluR2 activation with glutamate-dependent FRET changes. The azi-ECL2 sensor showed EC50 of 5.1\u00b10.6 \u03bcM for glutamate, consistent with functional assays, and all three sensors correctly ranked agonist efficacy as LY379268 > (2R,4R)-APDC > glutamate > DCG-IV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRET sensor validation is well-supported by dose-response curves (Figure 1C-E, Tables 1-2), consistency with published EC50 values, agreement with functional calcium imaging (Figure 1\u2014figure supplement 3), and accurate reporting of known partial agonist behavior. The experimental design includes appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C52",
+      "C113"
+    ],
+    "result": "The CRD and 7TM domain conformations are more sensitive and accurate metrics for quantifying ligand efficacy than the VFT domain. Highly efficacious agonists showed larger maximum responses at CRD and 7TM domains compared to VFT, while partial agonist DCG-IV showed smaller responses at these domains (79% efficacy at VFT vs 69% at CRD and 64% at ECL2, matching 69% in functional assays).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by quantitative data across multiple sensors (Table 2, Figure 1\u2014figure supplement 2) and validated by functional calcium imaging. The proposed explanation of loose conformational coupling between domains is supported by cited prior work (Grushevskyi et al., 2019; Liauw et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C48",
+      "C49",
+      "C79"
+    ],
+    "result": "All tested PAMs (BINA, LY487379, JNJ-42153605) increased glutamate potency and efficacy at every structural domain as measured by FRET, with effects manifested consistently across domains but to different degrees. PAMs generally increased glutamate efficacy more at CRD and 7TM domains compared to VFT domain, matching functional characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational fingerprinting of PAMs is supported by comprehensive dose-response data (Figure 2A,C,D,F,G,I, Tables 1-2), consistency with functional calcium imaging (Figure 2\u2014figure supplement 4), and appropriate statistical analysis. The domain-specific differences are quantified and reproducible across multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C81"
+    ],
+    "result": "Different PAMs showed distinct conformational fingerprints across domains, with JNJ-42153605 showing no efficacy change at ECL2 while affecting VFT and CRD. This variability suggests PAMs utilize distinct mechanisms to achieve allosteric modulation, with multiple pathways existing for mGluR2 modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of distinct mechanisms is supported by quantitative differences in domain-specific effects (Figure 2J, Table 2) and structural analysis showing overlapping but distinct binding modes (Figure 2\u2014figure supplement 5). However, the mechanistic interpretation remains somewhat speculative without direct structural evidence of the specific PAM-receptor complexes studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NAMs (MNI-137 and Ro 64-5229) reduced glutamate potency and efficacy at all three domains. At 10 \u03bcM NAM concentration, robust glutamate-induced conformational changes were observed despite complete blockade of receptor activation, demonstrating that NAMs can block activation without preventing conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by FRET data (Figure 2B,E,H, Tables 1-2) and functional assays showing no activation at these NAM concentrations. The observation is consistent with cited prior work (Hemstapat et al., 2007; Kolczewski et al., 1999) and provides important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C117"
+    ],
+    "result": "Single-molecule FRET analysis revealed that PAM BINA increases glutamate efficacy by increasing active state occupancy and modulating receptor dynamics in a glutamate-dependent manner. Without glutamate, BINA increased intermediate state 2 occupancy and dynamics; with glutamate, BINA increased active state occupancy and reduced CRD dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The smFRET data (Figure 3, Table 3) provide direct evidence for state occupancy changes with appropriate statistical analysis from multiple replicates. Cross-correlation analysis quantifies dynamics changes (Figure 3I). The four-state model is consistent with prior work (Liauw et al., 2021), and the conclusions logically follow from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C118",
+      "C119"
+    ],
+    "result": "NAM MNI-137 prevents receptor activation by blocking CRD progression to the active conformation and trapping the receptor in intermediate states. Hidden Markov modeling showed that with MNI-137, the CRD primarily transitions between intermediate states 1 and 2 rather than to the active state, effectively preventing the stabilizing 7TM domain interaction necessary for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is well-supported by smFRET histograms (Figure 4A-D, Table 3), transition density plots (Figure 4E), and cross-correlation analysis (Figure 4F). The HMM analysis provides quantitative evidence for altered state transitions. The conclusion that MNI-137 blocks the final activation step is directly supported by the TDP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C100",
+      "C101",
+      "C102",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The effect of allosteric modulators on receptor dynamics depends on the presence of orthosteric agonist. Without glutamate, NAMs stabilize dynamics while PAMs increase dynamics; with saturating glutamate, PAMs reduce dynamics while NAMs increase dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This context-dependent effect is quantified by cross-correlation analysis (Figure 4\u2014figure supplement 2A-B, Figure 3I, Figure 4F) with clear differences between conditions. The data demonstrate that modulator effects cannot be understood in isolation from the orthosteric ligand state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Allosteric modulators do not induce new conformational states within smFRET resolution but instead modulate receptor occupancy of existing intermediate states by employing the inherent conformational flexibility of the receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The smFRET histograms consistently show four states across all conditions (Figures 3-4), with modulators shifting occupancy rather than creating new peaks. This is a key mechanistic insight, though limited by the resolution of the FRET measurements (~0.1 FRET units).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Modulators consistently affect glutamate-induced conformational changes at every structural domain of mGluR2, demonstrating a long-range allosteric pathway spanning ~10 nm from the 7TM binding site to the VFT domain, though the degree of conformational change differs among domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The long-range allosteric effect is demonstrated by FRET changes at all three domains (Figure 2), with the 10 nm distance estimate based on structural models (Figure 1A). The domain-specific differences are quantified (Figure 2J) and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Regulation of intermediate state occupancy has been shown to be a mechanism of allosteric modulation in other GPCR classes, with NMR studies on \u03bc-opioid receptor and cannabinoid receptor 1 revealing similar mechanisms to those found for BINA and MNI-137.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately represents findings from cited studies (Kaneko et al., 2022; Wang et al., 2021) and appropriately contextualizes the current work within broader GPCR biology. The comparison strengthens the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C57",
+      "C58",
+      "C108",
+      "C109",
+      "C127"
+    ],
+    "result": "The study provides a dynamic receptor-centric model of allosteric modulator effects on mGluR2 conformation and dynamics, establishing direct connections between modulator effects on receptor conformation at each domain and physiological metrics of efficacy and potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is supported by the comprehensive FRET fingerprinting data, smFRET mechanistic insights, and validation against functional assays. The receptor-centric approach successfully bridges structural and functional characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C122",
+      "C130"
+    ],
+    "result": "The findings suggest that designing compounds to regulate intermediate state occupancy could be a promising strategy for developing allosteric modulators for mGluR2 and other GPCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mechanistic insights support this as a plausible strategy, this remains speculative without actual drug design validation. The suggestion is reasonable based on the data but represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Even with 1 mM glutamate and BINA, receptors remained dynamic with CRDs not fully stabilized in a single conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation is directly supported by the smFRET data showing continued transitions and cross-correlation analysis indicating persistent dynamics (Figure 3). This highlights the inherently dynamic nature of GPCR activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The reduction of CRD stability and blocking of active conformation entry by MNI-137 explains why glutamate-induced conformational changes can be observed despite inhibiting concentrations of NAM. The mechanisms of both MNI-137 and BINA highlight the importance of structural dynamics for mGluR activation and modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic explanation logically integrates the smFRET observations (state occupancy, dynamics, transitions) with the live-cell FRET and functional data. The conclusion about the importance of dynamics is well-justified by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "The findings highlight the significance of intermediate states in GPCRs for receptor modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is strongly supported by the smFRET data showing that both PAMs and NAMs primarily affect intermediate state occupancy and transitions rather than simply shifting between inactive and active states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "The tools developed are not limited to mGluRs and can be extended to study other complex multi-domain proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the UAA incorporation and FRET sensor approaches are technically transferable, this claim is speculative without demonstration in other systems. The statement is reasonable but represents potential rather than demonstrated capability.",
+    "result_type": "MINOR"
+  }
+]

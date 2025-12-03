@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C34",
+      "C13",
+      "C14",
+      "C15",
+      "C30",
+      "C94"
+    ],
+    "result": "Existing rRNA depletion methods designed for Ae. aegypti perform poorly on other mosquito species, with 46-94% of reads remaining ribosomal after depletion. Depletion efficiency decreases with taxonomic distance from Ae. aegypti, and the lack of full-length reference sequences compromises computational cleanup of remaining rRNA reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C34 provide direct experimental evidence from Figure 1 showing poor depletion across multiple species. Claims C13-C15 and C30 establish the technical basis for why this occurs (lack of reference sequences, requirement for prior knowledge). The evidence is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C96",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The authors developed a score-based filtration strategy that successfully assembles full-length 28S and 18S rRNA sequences from total RNA-seq data by computing ratios of BLAST scores against Insecta vs Non-Insecta libraries and filtering reads with ratios >0.8. This method works even for specimens engorged with vertebrate blood or parasitized by water mites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate successful assembly across all specimens including challenging cases. Claims C161-C167 provide detailed methodology. The approach is validated by successful assembly of 122 28S and 114 18S sequences (C165), including from blood-fed specimens (C41-C42). The methodology is reproducible and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C47",
+      "C48",
+      "C142",
+      "C143",
+      "C168",
+      "C176"
+    ],
+    "result": "The study generated 234 novel full-length 28S and 18S rRNA sequences from 33 mosquito species representing 10 genera, including first records for 30 species and 7 genera (Coquillettidia, Mansonia, Limatus, Mimomyia, Uranotaenia, Psorophora, Eretmapodites). All sequences have been deposited in GenBank.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C47-C48 provide consistent numbers (234 sequences, 33 species, 30 first records). Claims C142-C143 confirm the dataset's novelty and scope. Data deposition is documented (C168, C176). The numbers are internally consistent and the contribution is substantial and verifiable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C97"
+    ],
+    "result": "Phylogenetic reconstructions based on 28S or concatenated 28S+18S rRNA sequences correctly cluster mosquito taxa according to species with moderate to good bootstrap support and recapitulate established mosquito systematics, including the early divergence of Anophelinae from Culicinae and the division of major genera into recognized subgenera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe clustering patterns with specific bootstrap values. Claims C64-C67 show agreement with established systematics (supported by citations to Harbach 2007, Harbach and Kitching 2016). Claim C97 synthesizes these findings. The phylogenetic trees (Figures 3-4) provide visual confirmation with bootstrap support values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C137"
+    ],
+    "result": "COI-based phylogeny shows major incongruence with rRNA phylogeny, including failure to recapitulate the early divergence of Anophelinae from Culicinae and remarkably low bootstrap support at internal nodes. The short length of COI sequences (621-699 bp) combined with high mitochondrial substitution rates likely results in homoplasy, limiting its utility for determining deeper evolutionary relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 and C129-C130 document specific phylogenetic incongruences with data from Figures 4-5 and Table 2. Claims C131, C134-C135, C137 provide mechanistic explanations supported by multiple citations. The comparison is systematic and the limitations of COI for deep phylogeny are well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C88",
+      "C89",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "COI sequences showed limited ability to distinguish between closely related Culex species, with specimens from the Cx. pipiens and Cx. vishnui subgroups differing by only a single nucleotide. Even the ITS2 marker cannot differentiate Cx. quinquefasciatus and Cx. pipiens, requiring use of multiple markers in tandem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C72, C88-C89, C111 provide specific examples with sequence similarity data. Claims C112-C113 cite prior work showing similar limitations. The evidence is consistent across multiple species pairs and supported by both the current study's data and published literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C114",
+      "C115",
+      "C106"
+    ],
+    "result": "28S rRNA sequences successfully distinguished Cx. quinquefasciatus from Cx. pipiens where COI failed, validating specimen 'Cx quinquefasciatus MG S74' as Cx. quinquefasciatus (78% bootstrap support) and identifying 'Cx quinquefasciatus MG S75' as a possible hybrid (100% bootstrap support for basal position). Concatenation of 28S+18S rRNA sequences enables species delineation even among sister species of Culex subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide specific phylogenetic placements with bootstrap values from Figure 3. Claim C91 is supported by citations to Sun et al. 2019 and Harbach et al. 2017. Claims C93, C114-C115 provide reasonable interpretations. Claim C106 generalizes the finding. The evidence is strong with good bootstrap support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C99",
+      "C100",
+      "C146"
+    ],
+    "result": "The 28S+18S rRNA tree successfully identified six specimens for which COI sequencing failed, confirming morphological identification to genus level for all six and to species level for three. This demonstrates that rRNA sequences can serve as molecular markers for species identification directly from RNA-seq data without additional DNA isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 describe the analysis with specific results from Figure 4. Claim C99 confirms the utility for molecular identification. Claims C100 and C146 highlight the practical advantage. The evidence is direct and demonstrates clear utility of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The concatenated 28S+18S rRNA trees discriminated between conspecifics from different geographic locations (Ma. uniformis from Madagascar, Cambodia, and Central African Republic; An. coustani from Madagascar and Central African Republic) with 100% bootstrap support, while COI trees only resolved Ma. uniformis with 72% bootstrap support, suggesting rRNA provides more population-level genetic information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 provide specific results with bootstrap values for both rRNA and COI analyses. Claim C128 draws a reasonable inference from the comparative data. The bootstrap support values clearly favor the rRNA approach for geographic discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "28S and 18S rRNA phylogenies show marked incongruence when analyzed separately, with 18S exhibiting taxonomic anomalies including near-identical sequences for different species and lack of species clustering. However, concatenation of 28S+18S sequences resolves these anomalies and provides higher bootstrap support at internal nodes compared to 28S alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 document specific incongruences with reference to multiple figures. Claims C56-C60 show that concatenation resolves issues with improved bootstrap support. Claims C102-C105 provide additional detail on 18S limitations. The evidence is systematic and well-documented across multiple phylogenetic analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C132"
+    ],
+    "result": "In all rRNA trees, interspecific and intersubgeneric evolutionary distances within genus Anopheles are remarkably high relative to other genera, evidenced by longer branch lengths. This hyperdiversity may reflect the earlier diversification of Anophelinae in the early Cretaceous period, ~40 million years before Culicinae. This pattern is not evident in COI trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe the pattern observed across multiple rRNA phylogenies (Figures 3-4 and supplements) with clear visual evidence of longer branch lengths. Claim C132 provides evolutionary context supported by citation to Lorenz et al. 2021. The observation is consistent across all rRNA analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The concatenated 28S+18S rRNA tree places French Guianese Culex Melanoconion species (Cx. portesi and Cx. pedroi as sister groups with 92% bootstrap support, Cx. spissipes basal with 100% support), corroborating systematics from ITS2 and morphology studies. In contrast, the COI tree depicts Melanoconion as polyphyletic with very low bootstrap support, possibly an artifact of the diversified assemblage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 describe the rRNA phylogeny with specific bootstrap values and supporting citations. Claims C122-C124 contrast with COI results and provide interpretation. The rRNA results show strong bootstrap support and agreement with prior studies, while COI shows weak support, making the interpretation reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "For three Mansonia africana specimens (S33-S35), COI amplification failed and SPAdes could only assemble partial rRNA contigs. Guided assembly using Ma. uniformis CF S51 sequences as reference successfully produced full-length contigs. Two specimens (S34-S35) initially yielded both mosquito and water mite (Horreolanus) rRNA sequences, with the mite sequences having 10-fold higher coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe specific technical challenges and solutions with specimen IDs. The successful resolution through guided assembly demonstrates the robustness of the method. The detection of parasitic mite sequences validates the filtration strategy's ability to handle complex samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "COI sequences of Ma sp.4 specimens share only 87.12-87.39% similarity with Ma. titillans, yet rRNA trees place them as sister taxa with 100% bootstrap support. The divergent COI sequences may reflect historical selective sweeps possibly related to Wolbachia pipientis infection detected in Brazilian Ma. titillans, highlighting limitations of mitochondrial markers that nuclear rRNA sequences avoid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138 provides specific sequence similarity data. Claim C139 offers speculative reasoning about Wolbachia based on a citation to de Oliveira et al. 2015 from Brazilian specimens, not the study specimens. Claim C140 draws broad conclusions from a single case. The Wolbachia hypothesis is not directly tested in these specimens, making the mechanistic explanation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Three specimens morphologically identified as Ae. opok had COI sequences showing 97-100% similarity to Ae. simpsoni but only 89-90% similarity to Ae. opok sister species, leading to identification as Ae. simpsoni. Two of three Ma. titillans specimens appeared to be a different but closely related species, possibly Ma. pseudotitillans based on morphology, but this could not be molecularly verified due to lack of reference sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide specific sequence similarity data and logical reasoning for species assignment. Claim C73 acknowledges the limitation of unavailable reference sequences. The Ae. simpsoni identification is well-supported by the large divergence from sister species, while the Ma. pseudotitillans identification remains tentative as stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Mosquito specimens were collected from four countries (Cambodia, Central African Republic, Madagascar, French Guiana) chosen for their high mosquito biodiversity and long histories of mosquito-borne virus circulation. Specimens were sampled from sylvatic locations using CDC light traps, BG sentinels, and human-landing catches, morphologically identified, and preserved by flash freezing for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 establish the rationale for site selection with supporting citations. Claims C31-C32, C149-C152 describe sampling methodology with appropriate detail. The approach is standard for mosquito surveillance studies and well-documented.",
+    "result_type": "MINOR"
+  }
+]

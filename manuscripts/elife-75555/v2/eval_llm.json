@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "A deep mutational scan (DMS) was performed measuring the effect of 4959 single amino acid substitutions across 261 residues (340-600) of the ADAR2 deaminase domain on RNA editing activity. The screen achieved near-complete coverage (4958/4959 variants detected, 4931 with >50 reads) with biological replicates showing R\u00b2 = 0.687 correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17, C68-C73, and C76 collectively describe a well-executed DMS with appropriate experimental design including clonal cell lines to minimize noise (C70), low MOI transduction (C71), biological replicates (C72), adequate coverage (C76), and stringent filtering criteria (C73). The replicate correlation of R\u00b2 = 0.687 (C17) is moderate but reasonable for this type of screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C74"
+    ],
+    "result": "The DMS revealed expected patterns including intolerance of mutations in conserved RNA-binding regions (442-460, 469-495), active site residues, and residues contacting the flipped adenosine, while surface-exposed residues tolerated mutations. The E488 position showed improved activity when mutated to polar or positively charged residues, consistent with prior work. Independent validation of 33 variants showed strong correlation with DMS data (Pearson r = 0.818, Spearman r = 0.824).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 describe DMS findings that align with structural and biochemical knowledge, with appropriate citations to prior work. The validation experiments (C24-C25, C74) demonstrate strong correlation between the pooled screen and arrayed assays, with 72% of variants showing no significant difference (p > 0.05), supporting the reliability of the DMS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A focused screen of 3287 ADAR2-DD(E488Q) variants identified a novel E488Q, N496F double mutant with enhanced activity at 5'-GAN-3' motifs. This variant showed 3-fold improvement in luciferase restoration and 1.1- to 2.1-fold increased editing efficiency at various 5'-GAN-3' motifs compared to E488Q alone, while maintaining activity at other motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe a rational screen design targeting a known refractory motif, discovery of a novel variant, structural rationalization (N496 proximity to relevant nucleotide, C30), and validation across multiple assays and endogenous targets. The moderate replicate correlation (R\u00b2 = 0.476, C28) is acknowledged but the key finding is independently validated through multiple orthogonal assays (C31-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A split-ADAR2 system was engineered by rationally identifying 18 potential split sites using DMS mutability data, crystal structure information, and conservation scores. Split pairs 9-12 (residues 465-468) showed optimal activity, with pair 12 selected for further development. Component essentiality and correct fragment orientation were confirmed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe a rational protein engineering approach combining multiple data sources (C36) to identify split sites. The experimental validation demonstrates that all components are essential (C40-C41) and orientation matters (C42-C43). The convergence of multiple split sites within a narrow region (465-468) with low conservation flanked by highly conserved regions (C37-C39) provides strong support for the design rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "A humanized split-ADAR2 system was created by replacing viral proteins (MCP and \u03bbN) with human TAR binding protein and stem loop binding protein, which showed functional RNA editing activity with appropriate chimeric guide RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 demonstrate successful adaptation of the split-ADAR2 system to human-derived components, confirmed by luciferase restoration assays. This addresses translational concerns about using viral proteins and validates the modularity of the split system design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C62",
+      "C63"
+    ],
+    "result": "The split-ADAR2 system achieved 1000- to 1300-fold reduction in transcriptome-wide off-target editing compared to full-length ADAR2-DD or ADAR2-DD(E488Q), with specificity profiles comparable to endogenous ADAR recruitment. The system showed robust editing at multiple endogenous loci (RAB7A, CKB, KRAS), with an all-in-one bicistronic vector enabling higher editing efficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C62-C63 are supported by comprehensive RNA-seq analysis (25 million read pairs per sample, C77) using Fisher's exact test (C78). The dramatic reduction in off-targets is clearly demonstrated in Figure 3b, and generalizability is confirmed across multiple loci. The comparison to endogenous ADAR recruitment (C48, C63) provides important context for the specificity achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Off-target editing patterns differed between split-ADAR2 and full-length systems, with split-ADAR2 showing guide RNA sequence-dependent off-targets while full-length deaminase overexpression showed predominantly deaminase domain-driven off-targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by analysis of off-target patterns in RNA-seq data (Supplementary file 1). This mechanistic insight explains the improved specificity of the split system and suggests that remaining off-targets could be further reduced through guide RNA optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The complete split-ADAR2 system (CMV-driven bicistronic construct and U6-driven guide RNA) is approximately 3500 bp and can be packaged into a single AAV vector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are based on straightforward calculation of construct sizes and comparison to known AAV packaging capacity (~4.7 kb). This represents an important practical advantage for therapeutic delivery, though actual AAV packaging and functionality would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The split-ADAR2 chassis was successfully extended to create split-ADAR2-DD(E488Q, N496F) for enhanced 5'-GAN-3' editing and split-RESCUE for C-to-U editing. Both systems maintained high transcriptome-wide specificity while achieving comparable on-target editing to their full-length counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 demonstrate the modularity and broad applicability of the split-ADAR2 approach. RNA-seq data (Figures 4b, 4d) clearly show dramatic reductions in off-targets for both split variants compared to full-length versions, while maintaining on-target activity (C56, C59). This extends the utility of the split approach beyond the original ADAR2-DD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The split-ADAR2 system showed approximately 50-70% editing efficiency compared to full-length domain overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by comparison of editing efficiencies across multiple experiments (Figures 3a, 3c, 4a). This trade-off between efficiency and specificity is acknowledged and represents a reasonable compromise given the >1000-fold improvement in specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The authors attribute moderate replicate correlations in the DMS screens to the lentiviral delivery format, which causes random genomic integration and variable transcript expression between cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 represent the authors' interpretation of why replicate correlations were moderate (R\u00b2 = 0.687 for DMS, R\u00b2 = 0.476 for GAN screen). While the explanation is plausible based on known lentiviral biology (C65), this remains speculative (C64) as alternative explanations (biological noise, technical variability, stochastic editing) were not systematically tested. The validation data (C24-C25) showing strong correlation suggests the screen still captured meaningful trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The ADAR2-DD(E488Q, N496F) double mutant showed increased bystander editing and transcriptome-wide off-targeting compared to wild-type ADAR2-DD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by editing data and RNA-seq analysis. This is expected for hyperactive variants and motivates the need for the split-ADAR2 approach to control specificity while maintaining enhanced activity at difficult motifs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establishing that A-to-I RNA editing is catalyzed by ADARs, inosine is read as guanosine, ADARs have been repurposed for programmable editing, exogenous ADARs cause off-target effects, endogenous ADAR recruitment has limitations, and ADAR2 structural information is available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide well-cited background establishing the scientific context and motivation for the study. These are supported by extensive prior literature and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The DMS enabled identification of novel enhanced variants for A-to-I editing, and a split-ADAR2 system was engineered that enabled efficient and highly specific RNA editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 represent high-level summary statements of the main findings, which are supported by the detailed experimental results described in other claim groups. These serve as accurate abstractions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Overexpression of ADARs leads to promiscuous transcriptome-wide off-targeting due to their intrinsic dsRNA binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by prior knowledge and observations in this study (C46) and cited literature (C6). This provides the key motivation for developing the split-ADAR2 approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "Methodological details: HEK293FT cells were authenticated and tested for mycoplasma; RNA-seq achieved 25 million read pairs per sample; Fisher's exact test was used for statistical analysis of editing yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77-C78 describe appropriate quality control measures and analytical methods. These represent good experimental practices that support the reliability of the results.",
+    "result_type": "MINOR"
+  }
+]

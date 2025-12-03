@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C125",
+      "C126"
+    ],
+    "result": "Elevated cytoplasmic Mn2+ levels, induced by loss of Pmr1 and dependent on NRAMP transporters Smf1 and Smf2, stimulate TORC1 activity in vivo and confer rapamycin resistance in yeast. Loss of Smf1 or Smf2 suppresses the rapamycin resistance phenotype of pmr1\u0394 cells, while loss of other metal transporters does not. The effect is specific to cytoplasmic Mn2+ accumulation and not due to changes in TORC1 localization or expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C39-C50, C125, and C126 provide converging genetic evidence from multiple complementary experiments (rapamycin sensitivity assays, double mutant analyses, transporter overexpression studies) demonstrating that cytoplasmic Mn2+ levels regulate TORC1 activity through NRAMP transporters. The data show consistent phenotypes across different genetic manipulations and include appropriate controls (Gap1 deletion, TORC1 localization). The use of telomere length as a proxy for Mn2+ levels (C51-C53, C127) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C127"
+    ],
+    "result": "Telomere length serves as a proxy for cytoplasmic and nuclear Mn2+ levels, with pmr1\u0394 cells showing significantly decreased telomere length, smf2\u0394 cells showing increased telomere length, and pmr1\u0394 smf2\u0394 double mutants showing telomere length similar to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C127 are supported by Southern blot analysis (Figure 1E) showing clear differences in telomere length across genotypes. The pattern is internally consistent with the model that loss of Smf2 suppresses high Mn2+ levels in pmr1\u0394 cells. However, the use of telomere length as a proxy for Mn2+ levels relies on prior work (Garc\u00eda-Rodr\u00edguez et al., 2015) and is indirect; direct measurement of Mn2+ levels would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C56"
+    ],
+    "result": "The function of Mn2+ transporters is evolutionarily conserved, as demonstrated by the ability of human ATP2C1/SPCA1 to substitute for yeast Pmr1 function and mouse SLC11A2 (DMT1) to complement yeast Smf2 function in rapamycin resistance assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C56 are supported by complementation experiments (Figure 1F) showing functional conservation of metal transporters across species. The data demonstrate that mammalian orthologs can rescue yeast phenotypes, providing evidence for evolutionary conservation. However, C55 notes that SLC11A1 did not rescue Smf2 function, indicating specificity in the complementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C128"
+    ],
+    "result": "Elevated cytoplasmic Mn2+ levels antagonize rapamycin-induced autophagy, as evidenced by reduced GFP-Atg8 expression in pmr1\u0394 cells, which is restored in pmr1\u0394 smf2\u0394 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58, C59, and C128 are supported by immunoblot analysis (Figure 2A-B) showing reduced autophagy marker expression in pmr1\u0394 cells and rescue in double mutants. The data include appropriate time courses and quantification with statistical analysis. The interpretation that elevated Mn2+ compromises autophagy initiation is consistent with the genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C129"
+    ],
+    "result": "Elevated cytoplasmic Mn2+ levels antagonize rapamycin-induced mitophagy, as shown by reduced accumulation of cleaved GFP from Om45-GFP in pmr1\u0394 cells, which is suppressed in pmr1\u0394 smf2\u0394 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57, C60-C62, and C129 are supported by Om45-GFP processing assays (Figure 2C-D) demonstrating impaired mitophagy in pmr1\u0394 cells. The data show time-dependent accumulation of Om45-GFP and differential processing of cleaved GFP across genotypes. The results are consistent with prior work (C57, Kanki et al., 2010) and the overall model of Mn2+-mediated TORC1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C130"
+    ],
+    "result": "Elevated cytoplasmic Mn2+ levels antagonize rapamycin-induced Rtg1-Rtg3-dependent retrograde signaling, as demonstrated by reduced Rtg3-GFP levels and nuclear localization in pmr1\u0394 cells, which are partially restored by loss of Smf2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C69, and C130 are supported by transcriptome analysis, microscopy (Figure 2E), and immunoblot analysis (Figure 2F-G) showing reduced Rtg3-GFP expression and nuclear localization in pmr1\u0394 cells. The data include appropriate controls and quantification with statistical analysis. The partial suppression by loss of Smf2 is consistent with the model that Mn2+ levels regulate TORC1 activity, which in turn controls Rtg1-Rtg3 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C75",
+      "C76",
+      "C77",
+      "C131"
+    ],
+    "result": "Mn2+ activates TORC1 substantially better than Mg2+ in vitro, with 25-fold lower concentrations of MnCl2 (38 \u00b5M) than MgCl2 (980 \u00b5M) promoting half-maximal activation of TORC1 in kinase assays using purified TORC1 and Lst4Loop substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C75-C77, and C131 are supported by in vitro kinase assays (Figure 3A-B) showing concentration-dependent activation of TORC1 by Mn2+ and Mg2+. The data include appropriate negative controls (no divalent ions), technical replicates (n=3), and curve fitting to determine EC50 values. The 25-fold difference in potency is substantial and clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C78",
+      "C79",
+      "C80",
+      "C132",
+      "C133"
+    ],
+    "result": "Mn2+ activates TORC1 better than Mg2+ primarily by lowering the Km for ATP (5.3-fold reduction), allowing more efficient ATP coordination in the catalytic cleft. Mn2+ can efficiently compete with Mg2+ even at saturating Mg2+ concentrations, enhancing VMAX and reducing Km for ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C78-C80, C132, and C133 are supported by ATP titration experiments (Figure 3C-D) showing differential effects of Mn2+ and Mg2+ on TORC1 kinetics. The data include appropriate technical replicates (n=3), Michaelis-Menten curve fitting, and determination of kinetic parameters. The ability of Mn2+ to enhance activity even in the presence of saturating Mg2+ is particularly compelling evidence for competitive binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C134"
+    ],
+    "result": "The in vitro kinase assay conditions are physiologically relevant, as intracellular Mg2+ levels in yeast are approximately 2 mM and Mn2+ levels range from 26 \u00b5M in wild-type cells to 170 \u00b5M in pmr1\u0394 cells, providing a rationale for why pmr1\u0394 cells are resistant to rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, and C134 are supported by citations to prior work measuring intracellular metal ion concentrations (van Eunen et al., 2010; McNaughton et al., 2010). The comparison between in vitro assay conditions and in vivo concentrations strengthens the physiological relevance of the findings. However, the inference in C134 assumes that the in vitro kinetic parameters directly translate to in vivo TORC1 activity, which may be influenced by additional factors not captured in the reconstituted system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C135",
+      "C136"
+    ],
+    "result": "TORC1 regulates Smf1 through transcriptional activation rather than post-translational control of turnover. Rapamycin treatment triggers a strong increase in GFP-Smf1 levels that is abolished by cycloheximide, while GFP-Smf1 degradation rate is similar with or without rapamycin in the presence of cycloheximide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C85-C89, C135, and C136 are supported by immunoblot analysis (Figure 4A-B) and microscopy (Figure 4C) showing rapamycin-induced increases in Smf1 levels that are blocked by protein synthesis inhibition. The data include appropriate time courses, quantification with statistical analysis (n=3), and controls. The interpretation that TORC1 regulates Smf1 transcriptionally is consistent with prior work (Reinke et al., 2006) and the observation that degradation rates are similar with or without rapamycin in the presence of CHX.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C137"
+    ],
+    "result": "TORC1 antagonizes the turnover of Smf2, as evidenced by faster degradation of Smf2-GFP in rapamycin-treated cells compared to cycloheximide-treated cells, and relocalization of Smf2-GFP from late Golgi/endosomal foci to the vacuolar lumen upon rapamycin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 and C137 are supported by immunoblot analysis (Figure 4D-E) and microscopy (Figure 4F) showing differential Smf2-GFP turnover rates and relocalization upon rapamycin treatment. The data include appropriate time courses, quantification with statistical analysis (n=3), and controls. The interpretation that TORC1 antagonizes Smf2 turnover is consistent with the observed faster degradation upon TORC1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C138",
+      "C143"
+    ],
+    "result": "Mn2+-mediated activation of TORC1 is evolutionarily conserved in mammals, as demonstrated by dose-dependent increases in phosphorylation of mTORC1 downstream targets (RPS6KB and RPS6) in amino acid-starved U2OS and HEK293T cells treated with MnCl2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C93-C96, C138, and C143 are supported by immunoblot analysis (Figure 5A-B) showing dose-dependent phosphorylation of mTORC1 targets in human cells treated with MnCl2 during amino acid starvation. The data include appropriate positive controls (amino acid-replete conditions) and demonstrate that Mn2+ is sufficient to maintain mTORC1 activity for at least 2 hours. The conservation across yeast and mammals is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C139"
+    ],
+    "result": "MnCl2 retains AKT1 phosphorylation in amino acid-starved cells, but AKT1 phosphorylation is much less pronounced than phosphorylation of mTORC1 downstream targets, validating the specificity of Mn2+ toward mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 and C139 are supported by immunoblot analysis (Figure 5C) showing differential phosphorylation of AKT1 versus mTORC1 targets. The data demonstrate that while Mn2+ affects AKT1 phosphorylation (consistent with prior work, C99-C100), the effect is less pronounced than on mTORC1 targets, supporting specificity. However, the interpretation of specificity could be strengthened by dose-response comparisons or additional controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Mn2+ inhibits autophagy downstream of mTORC1 in human cells, as demonstrated by complete abolition of amino acid withdrawal-induced increases in MAP1LC3II levels and GFP-MAP1LC3 aggregation by MnCl2 treatment, even in the presence of chloroquine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 and C140-C142 are supported by immunoblot analysis (Figure 5D-E) and microscopy (Figure 5F-G) showing that MnCl2 prevents autophagy initiation in amino acid-starved cells. The data include appropriate controls (chloroquine treatment to block autophagosome-lysosome fusion), quantification with statistical analysis (n=3), and demonstrate that Mn2+ acts at the level of autophagy initiation. The consistency across multiple assays (MAP1LC3II levels and GFP-MAP1LC3 aggregation) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C109",
+      "C144"
+    ],
+    "result": "TORC1/mTOR shows a preference for Mn2+ over Mg2+ in in vitro kinase assays, a property shared with PI3-kinases but distinct from typical serine/threonine kinases, suggesting that Mn2+-driven activation may be related to the architecture of the TORC1 catalytic center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C109, and C144 are supported by citations to prior work demonstrating similar metal ion preferences for Tor1, PI3-kinases, and mTOR. The speculation in C144 about the catalytic center architecture is reasonable given the unusual metal ion preference, but would require structural studies for definitive confirmation. The distinction from typical serine/threonine kinases (C109) is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C145"
+    ],
+    "result": "The study provides a mechanistic rationale for how chronic Mn2+ exposure causes autophagic dysfunction and mitochondrial accumulation in mammalian astrocytes: excess Mn2+ activates mTORC1, which inhibits TFEB, preventing proper disposal of damaged mitochondria through autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 and C145 integrate findings from the current study with prior work (Zhang et al., 2020; Settembre et al., 2012; Siddiqui et al., 2015; Villar et al., 2017) to provide a coherent mechanistic model. The inference in C145 is well-supported by the combination of observations that Mn2+ activates mTORC1, mTORC1 inhibits TFEB, and TFEB is required for autophagy. However, direct experimental validation of this pathway in the context of Mn2+ toxicity would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C146"
+    ],
+    "result": "The findings have implications for cancer biology, as Mn2+ administration has been suggested to provide antitumoral effects through immune stimulation, but mTORC1 hyperactivation promotes tumor progression, and mutations in ATP2C1 (human PMR1 ortholog) are associated with cancer in Hailey-Hailey disease patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C117 are supported by citations to prior work, but the speculation in C146 about causal links between Mn2+-dependent processes and tumor formation in Hailey-Hailey disease patients is not directly tested in this study. While the mechanistic connections are plausible (Mn2+ activates mTORC1, which promotes tumor progression), additional experimental evidence would be needed to establish causality. The competing effects of Mn2+ on immune stimulation versus mTORC1 activation add complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C147"
+    ],
+    "result": "The findings suggest that Mn2+-driven mTORC1 hyperactivation may impair autophagy and contribute to neurological diseases such as manganism, a parkinsonian-like syndrome caused by Mn exposure, and that mTORC1 inhibitors may be therapeutic for Parkinson-like symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C120 are supported by citations to prior work, but the speculation in C147 about Mn2+-driven mTORC1 hyperactivation contributing to neurological diseases is not directly tested in this study. While the mechanistic connection is plausible (Mn2+ activates mTORC1, which inhibits autophagy, and autophagy is important for neuronal health), additional experimental evidence in relevant disease models would be needed to establish this link. The suggestion about mTORC1 inhibitors as therapeutics (C120) is based on prior work but not tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C148"
+    ],
+    "result": "The observation that Huntington disease patients exhibit reduced Mn2+ levels in the brain raises the question of whether cells may evade Mn-driven mTORC1 activation to stimulate huntingtin protein degradation via autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 are supported by citations to prior work, but the speculation in C148 is not tested in this study. While the hypothesis is interesting and consistent with the model that Mn2+ activates mTORC1 and inhibits autophagy, it remains speculative without direct experimental evidence. The reduced Mn2+ levels in HD patients could have alternative explanations not related to autophagy regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Mn2+ contributes to prion formation in yeast, and elevated Mn2+ levels have been detected in the blood and central nervous system of Creutzfeldt-Jakob patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by citations to prior work (Chakrabortee et al., 2016; Hesketh et al., 2008). These observations are presented as context for the potential relevance of Mn2+-mediated TORC1 regulation in disease, but are not directly investigated in this study.",
+    "result_type": "MINOR"
+  }
+]

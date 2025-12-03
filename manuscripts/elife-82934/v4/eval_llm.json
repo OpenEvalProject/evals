@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Stable knockdown of STC1 in hMSCs inhibited cell migration by >30%, slightly suppressed cell proliferation (increased G0/G1 phase cells), but did not induce apoptosis as measured by annexin V/PI staining and TUNEL assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are well-supported by multiple complementary assays shown in Figure 1. The wound healing and transwell assays demonstrate migration inhibition, MTT and FACS data show modest proliferation effects, and both annexin V/PI and TUNEL assays confirm no apoptosis. The experimental design is appropriate with proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C100"
+    ],
+    "result": "hMSCs significantly inhibited CAR-T cell killing activity toward Pfeiffer lymphoma cells (reducing cytotoxicity from 67% to lower levels at 24h), but this inhibition was completely abrogated when STC1 was knocked down in hMSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C100 are supported by LDH cytotoxicity assay data in Figure 2A showing clear differences between control and STC1 knockdown conditions. The rescue experiment with STC1 knockdown provides strong evidence for STC1's critical role. However, exact quantification of inhibition magnitude is not clearly stated in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C103"
+    ],
+    "result": "Co-culturing with hMSCs altered T cell subset composition, increasing CD4+ T cells and Tregs while decreasing CD8+ T cells (changing CD4:CD8 ratio from 1:4 to 2:1, and Tregs from ~3% to 12%). These changes were completely reversed with STC1 knockdown hMSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are well-supported by flow cytometry data in Figure 2B-E showing clear shifts in T cell populations. The reversal with STC1 knockdown provides strong mechanistic evidence. Claim C103 appropriately cites prior literature establishing the importance of CD4/CD8 ratios for CAR-T efficacy, providing context for the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C36",
+      "C37"
+    ],
+    "result": "hMSCs stimulated expression of immunosuppressive proteins IDO and PD-L1 in the co-culture system, with expression reduced by >50% when STC1 was knocked down (though still elevated compared to no hMSC control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C38 are supported by Western blot data in Figure 2F. Claims C36-C37 appropriately cite literature establishing the immunosuppressive functions of IDO and PD-L1. However, the Western blot lacks quantification and loading controls appear inconsistent. The claim that levels remain 'still higher than without hMSC' (C38) requires more rigorous quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "hMSCs suppressed NLRP3 inflammasome activation in macrophages, as evidenced by reduced levels of cleaved caspase-1, IL-1\u03b2, and AIM2. This suppression was dependent on STC1, as knockdown completely blocked the inhibitory function of hMSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 are supported by Western blot (Figure 3A) and ELISA data (Figure 3B) showing consistent patterns across multiple inflammasome markers. The STC1 dependency is demonstrated by rescue experiments. However, the Western blots lack proper quantification, and the claim of 'complete' blockade (C45) may be overstated given the semi-quantitative nature of Western blotting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C51",
+      "C52"
+    ],
+    "result": "hMSCs markedly suppressed both cellular and mitochondrial ROS in the co-culture system, an effect eliminated by STC1 knockdown. This suggests hMSCs inhibit NLRP3 inflammasome activation by suppressing oxidative burst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by flow cytometry data in Figure 3C-D showing clear ROS suppression that is STC1-dependent. Claims C51-C52 appropriately cite literature linking mitochondrial dysfunction to inflammasome activation and STC1's mitochondrial localization. The mechanistic inference (C55) is reasonable given the correlation between ROS and inflammasome markers, though direct causation is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C62",
+      "C63",
+      "C90",
+      "C91",
+      "C102"
+    ],
+    "result": "In xenograft mice, CAR-T combined with STC1-knockdown hMSCs achieved significant tumor regression (tumors nearly disappeared by day 38 with 100% survival), while control hMSCs showed continued tumor growth. This demonstrates that hMSCs inhibit CAR-T efficacy in vivo in an STC1-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C62-C63, and C90-C91 are supported by bioluminescence imaging (Figure 4A) and survival data (Figure 4D) showing clear differences between groups. However, the study acknowledges (C93) that hMSC doses were much higher than physiological levels, limiting translational relevance. Sample sizes appear small (n=3 per group based on error bars), which may limit statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C92"
+    ],
+    "result": "Immunohistochemical analysis of tumor tissue showed that STC1 knockdown resulted in increased IL-1\u03b2 positive cells (76-100% vs 5-20%), decreased CD4+ T cells, increased CD8+ T cells, and decreased Tregs compared to control hMSCs, confirming in vivo that these effects are STC1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C92 are supported by immunohistochemistry data in Figure 4B. The patterns are consistent with in vitro findings, strengthening the overall conclusions. However, the quantification method for IHC is not clearly described, and the wide ranges reported (e.g., 76-100%) suggest high variability or subjective scoring. More rigorous quantification methods would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C70",
+      "C71",
+      "C72",
+      "C82",
+      "C89",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study demonstrates that STC1 is critical for MSC's immunosuppressive function, acting through multiple mechanisms including modulation of T cell subsets, induction of immunosuppressive molecules, and suppression of inflammasome activation, likely via paracrine signaling and feedback regulation with macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic and interpretive claims (C48, C70-C72, C82, C89, C94-C96) are reasonable inferences from the collective experimental data. The consistent reversal of effects with STC1 knockdown across multiple assays provides strong support. However, some claims involve speculation about indirect mechanisms (C72) and feedback loops (C89) that are not directly tested. The paracrine mechanism is inferred from STC1's secreted nature but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C101"
+    ],
+    "result": "MSCs in the tumor microenvironment represent an important source of cancer treatment resistance by strongly suppressing CAR-T efficacy through modulation of the TME, with all suppressive events being STC1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C101 represent the study's main conclusions, which are well-supported by the convergent evidence from multiple in vitro and in vivo experiments. However, the claim that MSCs are an 'important source' of resistance (C65) in clinical settings requires caution, as the experimental model uses supraphysiological MSC doses (acknowledged in C93) and a simplified tumor model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C97",
+      "C99"
+    ],
+    "result": "The authors speculate that MSC suppression of NLRP3 inflammasome may reduce CAR-T-associated toxicity, and that modulating STC1 levels could have clinical applications for improving CAR-T efficacy and reducing toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C97, and C99 are explicitly speculative (marked as SPECULATION in evidence_type). While the mechanistic data support the possibility, these therapeutic implications are not tested. The connection between inflammasome suppression and reduced neurotoxicity (C84) is particularly speculative, as the study did not measure neurotoxicity or CRS-related outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establishing that CAR-T therapy shows promise for hematologic malignancies but faces challenges including severe toxicity (CRS, neurotoxicity), limited efficacy in solid tumors due to immunosuppressive TME, and that MSC impact on CAR-T has been little studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are appropriately cited background information from the literature that establishes context and rationale for the study. These are standard knowledge claims in the CAR-T field and are properly attributed to relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on MSC biology: MSCs are adult stem cells with proliferative capacity that exert paracrine effects through cytokine secretion, modulating extracellular matrix, angiogenesis, inflammation, and immune cell function including macrophages and T cells. LPS-stimulated macrophages can activate MSCs to secrete STC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 provide well-cited background on MSC biology from the literature, establishing the biological context for investigating MSC-CAR-T interactions. These are appropriately referenced to relevant prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on STC1: Originally identified as a calcium/phosphate hormone in fish, STC1 is a pleiotropic factor involved in degenerative diseases and cancer, with oncogenic roles reported in multiple tumor types. It participates in oxidative stress responses, cancer signaling pathways, metabolic reprogramming, and epithelial-to-mesenchymal transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide comprehensive, well-cited background on STC1 biology from the literature. The paradoxical roles of STC1 in cancer (later discussed in C67) are appropriately acknowledged. These background claims establish the rationale for investigating STC1's role in MSC-mediated immunosuppression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C51",
+      "C52",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C81",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Literature-based mechanistic context claims about T cell biology, immunosuppressive molecules (IDO, PD-L1), inflammasome biology, and MSC-immune cell interactions that provide interpretive framework for the experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C33-C34, C36-C37, C39-C41, C46, C51-C52, C73-C77, C79, C81, C83, C85-C87) are appropriately cited literature references that provide mechanistic context for interpreting the experimental results. They establish the biological significance of the observed changes in T cell subsets, immunosuppressive molecules, and inflammasome components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Discussion claims noting that STC1's role in cancer is paradoxical, with evidence for both oncogenic effects (triggering angiogenesis, causing poor outcomes in multiple cancers) and opposite effects in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 appropriately acknowledge the complexity and context-dependency of STC1's roles in cancer, citing relevant literature. This nuanced discussion strengthens the paper by acknowledging that STC1's effects may vary by context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C88"
+    ],
+    "result": "Summary claims reiterating that STC1 knockdown reduced IDO/PD-L1 expression, suppressed inflammasome formation, and eliminated MSC's suppressive functions across multiple markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C80, and C88 are summary statements in the Discussion that accurately reflect the experimental findings already evaluated in other result groups. They appropriately synthesize the data without overstating conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Acknowledgment that the amount of injected hMSCs in the xenograft model was much higher than physiological levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is an important limitation acknowledged by the authors. This transparency is appropriate and necessary for proper interpretation of the in vivo results. However, the lack of dose-response experiments or physiologically relevant MSC concentrations is a significant weakness of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Interpretive claim that STC-1 serves as a pleiotropic factor to negatively impact T cell function and stimulate expression of molecules that inactivate immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is a reasonable synthesis of the experimental findings, though it involves some inference about STC1's pleiotropic nature. The multiple effects observed (T cell modulation, IDO/PD-L1 induction, inflammasome suppression) support this characterization, though direct evidence that STC1 itself (rather than MSCs via STC1) causes all these effects is incomplete.",
+    "result_type": "MINOR"
+  }
+]

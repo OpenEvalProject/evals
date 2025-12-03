@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "IVF-generated blastocysts exhibit increased oxidative stress compared to in vivo controls, characterized by elevated intracellular and extracellular ROS, reduced glutathione (GSH) levels, and increased oxidative damage to DNA (8-OHdG), lipids (PGF2-alpha), and proteins (DNPH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C40-C45 are supported by multiple independent assays (fluorescence microscopy for ROS and GSH, immunofluorescence for oxidative damage markers) with appropriate statistical testing (p<0.05 to p<0.0001) and multiple replicates (n\u22653). The use of established markers (8-OHdG, PGF2\u03b1, DNPH) and dose-response relationship with oxygen concentration (20%O2 > 5%O2 > in vivo) strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C98",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "IVF-generated blastocysts show significantly reduced mitochondrial respiration compared to in vivo controls, with decreased basal OCR, ATP production, and maximal respiration, with effects more pronounced in embryos cultured at 20% oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46-C48, C98, and C170-C178 are supported by Seahorse XF metabolic flux analysis with quantitative measurements and statistical significance (p<0.05 to p<0.0001). The dose-response relationship (FB > IVF5%O2 > IVF20%O2) is consistent across all mitochondrial parameters. However, the study uses pooled embryos (n=10 per well) which may mask individual variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C99",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "IVF-generated blastocysts display increased glycolytic activity with higher basal glycolysis, proton efflux rate (PER), and compensatory glycolysis compared to in vivo controls, indicating a metabolic shift toward Warburg metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49-C53, C99, and C179-C188 are supported by Seahorse glycolysis stress test data with consistent dose-response effects (IVF20%O2 > IVF5%O2 > FB) and statistical significance. The interpretation of 'Warburg metabolism' (C53, C188) is reasonable given the simultaneous decrease in oxidative phosphorylation and increase in glycolysis, though the term typically applies to cancer cells and may be somewhat speculative for embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "IVF-generated blastocysts exhibit altered pH homeostasis with significantly higher intracellular pH and lower extracellular pH compared to in vivo controls, showing an inverse correlation between intracellular and extracellular pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C54-C56 are supported by SNARF-1 fluorescence measurements for intracellular pH and electrode measurements for extracellular pH, with appropriate calibration and statistical significance (p<0.05 to p<0.0001). The inverse correlation (C56) is a logical inference from the data, though a formal correlation analysis is not presented. Sample sizes are adequate (7-13 blastocysts per group in triplicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "IVF-generated embryos show altered lactate and pyruvate metabolism with decreased intracellular pyruvate, increased intracellular lactate, decreased extracellular lactate and pyruvate, reduced NAD levels, and elevated lactate-to-pyruvate ratios (11 for FB, 19 for IVF5%O2, 27 for IVF20%O2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C57-C61, C134-C137 are based on biochemical assays, but critical methodological concerns exist. The lactate/pyruvate measurements used only one biological replicate with 300 embryos (7-10 technical replicates), which is insufficient to assess biological variability. The decreased extracellular lactate (C60) contradicts the increased intracellular lactate (C59), and the authors' explanation of reduced MCT1 transporter is speculative without direct functional assays. The lactate-to-pyruvate ratios (C135-C137) are calculated values not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Proteomic analysis identified 3,965 proteins with 1,029 differentially expressed between groups, revealing downregulation of LDH-B, pyruvate kinase, and 2,3-bisphosphoglycerate mutase, and upregulation of hexokinase 2 and triosephosphate isomerase 1 in IVF embryos, with LDH-A upregulated only in IVF5%O2 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C62-C72 are supported by comprehensive LC-MS/MS proteomic analysis with appropriate sample size (n=100 blastocysts per replicate, 3 replicates), statistical analysis (MSstats with 1% FDR), and pathway enrichment. The findings are internally consistent with the metabolic phenotype. However, protein-level changes don't always correlate with functional activity, and validation by immunofluorescence (Figure 6) shows some discrepancies with proteomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Immunofluorescence validation confirms that both LDH isoenzymes (LDH-A and LDH-B) and the monocarboxylate transporter MCT1 are reduced in IVF-generated embryos compared to in vivo controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by immunofluorescence data (Figure 6) with adequate sample sizes (31-33 blastocysts per group, \u22653 replicates) and statistical significance (p<0.05 to p<0.0001). The findings corroborate the proteomic data for LDH-B and MCT1. However, the immunofluorescence method is semi-quantitative and may be subject to antibody specificity issues and imaging artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "LDH-B and MCT1 remain downregulated in multiple tissues (gastrocnemius muscle, adipose tissue, liver) of adult IVF-conceived mice, with trends toward lower lactate levels in liver, fat, and serum, suggesting persistent metabolic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13, C76-C81, C85-C87 are based on Western blot analysis of adult tissues (n=8 per group, 4 technical replicates each) showing significant reductions in LDH-B and MCT1. However, critical limitations exist: (1) only IVF5%O2 adult mice were examined, not IVF20%O2; (2) the lactate measurements (C85-C87) are re-analyzed data from a previous study with only trend-level significance (p=0.05-0.08); (3) no functional metabolic assays were performed in adult mice; (4) potential confounders (diet, housing, age-related changes) are not addressed. The persistence claim requires more rigorous longitudinal studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C167"
+    ],
+    "result": "IVF-generated embryos show reduced developmental competence with lower 2-cell rates (71.0\u00b13.1% at 5%O2 vs 51.8\u00b19.3% at 20%O2) and blastocyst rates (82.8\u00b110.9% at 5%O2 vs 57.5\u00b111.6% at 20%O2), and IVF blastocysts have fewer total cells (IVF5%O2: 58.1\u00b110.8; IVF20%O2: 47.5\u00b110.9) compared to in vivo controls (70.6\u00b111.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C167 are supported by developmental assessments and cell counting with appropriate statistical analysis (p<0.05 to p<0.0001) and adequate replication (n=11 independent replicates). The dose-response relationship with oxygen concentration is consistent. However, the study only used 'expanded blastocysts of similar morphology' for experiments, which may introduce selection bias and underestimate the true developmental defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C84",
+      "C138",
+      "C154",
+      "C158",
+      "C160",
+      "C165"
+    ],
+    "result": "The authors propose that metabolic alterations in IVF embryos, particularly altered lactate metabolism, may result in epigenetic reprogramming involved in the developmental origins of health and disease, potentially predisposing IVF offspring to chronic diseases like glucose intolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C14-C16, C84, C138, C154, C158, C160, C165 are highly speculative hypotheses not directly tested in this study. While the authors demonstrate metabolic alterations and cite one study showing histone lactylation changes (C161), they provide no direct evidence of: (1) epigenetic modifications in their embryos; (2) causal links between lactate metabolism and epigenetic changes; (3) health outcomes in IVF offspring; (4) mechanisms connecting embryonic metabolism to adult disease. These claims require extensive additional experimentation including epigenetic profiling, functional studies, and long-term health assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context: IVF has resulted in over 8 million births, and while most IVF-conceived children are healthy, several studies suggest increased risks of altered growth, cardiovascular dysfunction, glucose intolerance, altered lipid metabolism, and increased cerebral palsy prevalence in ART offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17-C22 are literature review statements supported by appropriate citations to peer-reviewed studies. These provide context for the study but are not original findings. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background context: Different culture conditions (media composition, oxygen concentration) affect embryo stress, with only 25% of IVF clinics using physiologic (5%) oxygen in 2014. Low oxygen tension improves embryo development outcomes, while supraphysiological oxygen increases ROS and likely causes oxidative damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are literature review statements with appropriate citations. The claim about clinic practices (C24) is supported by a 2014 survey. The inference about oxidative damage from supraphysiological oxygen (C28) is reasonable based on cited literature and general knowledge of ROS biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Background context: Preimplantation embryo metabolism is characterized by Krebs cycle dominance, increasing glycolysis at the blastocyst stage, and Warburg-like metabolism with lactate production facilitated by LDH enzymes. Lactate is now recognized as a critical energy source, gluconeogenic precursor, and signaling molecule rather than a waste product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C100-C103, C121-C133 are established scientific knowledge supported by appropriate citations to peer-reviewed literature. These provide essential background for interpreting the experimental findings. The shift in understanding lactate's role (C125-C126) is well-documented in recent metabolism literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background context: ROS function as second messengers with a narrow therapeutic window; physiological ROS levels support embryo development, but excessive ROS causes oxidative damage to DNA, lipids, and proteins, reducing oocyte maturation and embryonic development. GSH is a major non-enzymatic antioxidant defense in embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 are established scientific knowledge about ROS biology and oxidative stress markers, supported by appropriate citations. These provide the conceptual framework for interpreting the oxidative stress findings. The characterization of 8-OHdG, PGF2\u03b1, and DNPH as oxidative damage markers is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C110",
+      "C143",
+      "C152",
+      "C168"
+    ],
+    "result": "Interpretive inferences: The authors infer that IVF blastocysts increase glycolysis to compensate for impaired mitochondrial function, that reduced NAD confirms altered energy metabolism, that LDH is a critical regulatory node, that MCT1 downregulation explains altered lactate metabolism, and that morphological changes correlate with oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C110, C143, C152, C168 are reasonable inferences from the experimental data, though they remain interpretations rather than directly demonstrated mechanisms. The compensatory glycolysis interpretation (C104) is consistent with the Seahorse data showing reciprocal changes in oxidative phosphorylation and glycolysis. However, these inferences would benefit from additional mechanistic studies (e.g., rescue experiments, genetic manipulations).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C111",
+      "C118",
+      "C120",
+      "C157"
+    ],
+    "result": "Future directions: The authors suggest that metabolic parameters (glucose consumption, lactate/proton efflux, pH) could predict embryo viability, NAD supplementation might improve embryo metabolism, and optimized culture media should be developed to reduce ROS generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C111, C118, C120, C157 are speculative proposals for future applications and research directions. While these suggestions are reasonable based on the findings, they are untested hypotheses. The proposal to use metabolic parameters for embryo selection (C105, C118, C120) would require extensive validation studies in humans, and the NAD supplementation suggestion (C111) needs experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Background context: NAD is an essential metabolic cofactor controlling diverse signaling pathways, with age-related NAD reductions linked to infertility. pH regulation is essential for cellular function, with cancer cells showing similar pH alterations. LDH and MCT1 have well-characterized structures and functions in lactate metabolism, with developmental stage-specific expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109, C112-C117, C139-C142, C144-C151 are established scientific knowledge about NAD, pH regulation, and lactate metabolism enzymes, supported by appropriate citations. These provide the biochemical context for interpreting the metabolic findings. The comparison to cancer cell pH (C112) is appropriate given the Warburg metabolism phenotype observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C155",
+      "C156",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C169"
+    ],
+    "result": "Background context: Previous studies have shown IVF offspring exhibit glucose intolerance and metabolic alterations, embryo culture causes epigenetic changes, ROS production occurs even with optimized media, hypoxic culture alters histone lactylation, environmental mismatch increases disease risk, and lactate regulates lipolysis via HCAR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153, C155-C156, C161-C164, C169 are literature review statements supported by appropriate citations, including the authors' previous work. These provide context for the long-term implications of the findings. The histone lactylation study (C161) is particularly relevant to the authors' hypothesis about epigenetic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C166"
+    ],
+    "result": "Methodological notes: The study used expanded blastocysts of similar morphology for all experiments, and the authors note established functions of LDHB (converting lactate to pyruvate) and MCT1 (transporting lactate across membranes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C166 are methodological statements and established biochemical facts. The selection of morphologically similar blastocysts (C166) is appropriate for controlling developmental stage but may introduce selection bias. The functional descriptions of LDHB and MCT1 (C82-C83) are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Observation: Individual blastocysts show variation in intracellular pH, oxidative damage, ROS, and NAD levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by the scatter plots in the figures showing individual data points with considerable variation within groups. This observation is important for understanding the heterogeneity of embryo responses to culture conditions and supports the authors' suggestion about embryo selection strategies.",
+    "result_type": "MINOR"
+  }
+]

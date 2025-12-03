@@ -1,0 +1,1505 @@
+{
+  "submission": {
+    "id": "69a355cc-1e6b-466d-a8bf-873ffb69f65a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:49:01.418652Z",
+    "updated_at": "2025-12-03T11:49:01.418652Z"
+  },
+  "content": [
+    {
+      "id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "submission_id": "69a355cc-1e6b-466d-a8bf-873ffb69f65a",
+      "content_type": "manuscript",
+      "content_text": "# Taller height and risk of coronary heart disease and cancer: A within-sibship Mendelian randomization study\n\n## Authors\n\n- Laurence J Howe<sup>1</sup> ([ORCID: 0000-0002-2819-9686](https://orcid.org/0000-0002-2819-9686)) \u2020\n- Ben Brumpton<sup>3</sup>\n- Humaira Rasheed<sup>1</sup> ([ORCID: 0000-0002-3331-5864](https://orcid.org/0000-0002-3331-5864))\n- Bj\u00f8rn Olav \u00c5svold<sup>3</sup>\n- George Davey Smith<sup>1</sup> ([ORCID: 0000-0002-1407-8314](https://orcid.org/0000-0002-1407-8314))\n- Neil M Davies<sup>1</sup> ([ORCID: 0000-0002-2460-0508](https://orcid.org/0000-0002-2460-0508)) \u2020\n\n### Affiliations\n\n1. Medical Research Council Integrative Epidemiology Unit, Population Health Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n2. Population Health Sciences, Bristol Medical School, University of Bristol, Barley House, Oakfield Grove Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))\n3. K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n4. HUNT Research Center, Department of Public Health and Nursing, NTNU, Norwegian University of Science and Technology Levanger Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))\n5. Clinic of Medicine, St. Olavs Hospital, Trondheim University Hospital Trondheim Norway\n6. Department of Endocrinology, Clinic of Medicine, St. Olavs Hospital, Trondheim University Hospital Trondheim Norway\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Taller people have a lower risk of coronary heart disease but a higher risk of many cancers. Mendelian randomization (MR) studies in unrelated individuals (population MR) have suggested that these relationships are potentially causal. However, population MR studies are sensitive to demography (population stratification, assortative mating) and familial (indirect genetic) effects.Methods:In this study, we performed within-sibship MR analyses using 78,988 siblings, a design robust against demography and indirect genetic effects of parents. For comparison, we also applied population MR and estimated associations with measured height.Results:Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3\u201323%) but increases the odds of cancer by 18% (95% CI: 3\u201334%), highly consistent with population MR and height-disease association estimates. There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk.Conclusions:For the first time, we have demonstrated that the purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors, and so likely reflect an individual-level causal effect. Disentangling the mechanisms via which height affects disease risk may improve the understanding of the etiologies of atherosclerosis and carcinogenesis.Funding:This project was conducted by researchers at the MRC Integrative Epidemiology Unit (MC_UU_00011/1) and also supported by a Norwegian Research Council Grant number 295989.\n\n## Introduction\n\nHeight is a classical complex trait influenced by genetic and early-life environmental factors. Despite the nonmodifiable nature of adult height, evaluating the effects of height on noncommunicable disease risk can give insights into the etiology of adulthood diseases (Emerging Risk Factors Collaboration, 2012; Davey Smith et al., 2000). Two major groupings of diseases, cardiovascular disease and cancer, have divergent associations with height (Emerging Risk Factors Collaboration, 2012; Davey Smith et al., 2000; Stefan et al., 2016). Taller people are less likely to develop cardiovascular disease, including coronary heart disease (CHD) (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Batty et al., 2009; Marouli et al., 2019) and stroke (Nj\u00f8lstad et al., 1996), but more likely to be diagnosed with cancer (Emerging Risk Factors Collaboration, 2012; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016). The mechanisms via which height influences disease risks are unclear. The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O\u2019Connor et al., 1996). The increased cancer incidence among taller individuals could relate to early-life exposure to hormones such as insulin-like growth factor 1 (IGF-1) (Renehan et al., 2004; Clayton et al., 2011) or the increased number of cells in taller individuals (Stefan et al., 2016; Green et al., 2011; Albanes and Winick, 1988). However, although overall cancer risk is higher among taller individuals (Green et al., 2011; Batty et al., 2006; Gunnell et al., 2001), there is some evidence for heterogeneity across cancer subtypes with null or inverse associations observed between height and risk of stomach, oropharyngeal, and esophageal cancers (Green et al., 2011; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016).\n\nHeight is highly heritable, but the average height across the European populations has increased over the last hundred years (Hatton, 2013), illustrating the effects of early-life environmental factors such as nutrition and childhood infections. The associations of height with adulthood diseases and relevant biomarkers could reflect the biomechanical effects relating to increased stature (e.g., number of cells or larger arteries; O\u2019Connor et al., 1996) or could reflect confounding by early-life environmental factors that influence both height and later-life health such as parental socioeconomic position. For example, wealthier parents may provide their offspring with better nutrition, leading to increased adult height, and a better education, potentially leading to improved health in adulthood (Perkins et al., 2016). Thus, it is unclear whether height has a causal effect on the risk of cardiovascular disease and cancer or if a confounding factor influences both height and disease risk.\n\nMendelian randomization (Smith and Ebrahim, 2003) analyses, using genetic variants associated with height as a proxy for observed height, have been used to strengthen the evidence for causal effects of height on adulthood diseases (Nelson et al., 2015; N\u00fcesch et al., 2016; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018). The underlying premise being that genetic variants associated with height, unlike height itself, are unlikely to be associated with potential confounders such as childhood nutrition. However, there is growing evidence that estimates from genetic epidemiological studies using unrelated individuals may capture effects relating to demography (population stratification, assortative mating) and familial effects (e.g., indirect genetic effects of relatives where parental genotype influences offspring phenotypes) (Barton and Hermisson, 2019; Berg et al., 2019; Sohail et al., 2019; Ruby et al., 2018; Haworth et al., 2019; Brumpton et al., 2019; Lee et al., 2018; Kong et al., 2018; Young et al., 2018). Indeed, recent articles have illustrated the potential for genetic analyses of height to be affected by these biases (Berg et al., 2019; Sohail et al., 2019), including a Mendelian randomization study of height on education (Brumpton et al., 2019). One approach to overcome these potential biases is to use data from siblings (Brumpton et al., 2019; Davies et al., 2019) and exploit the shared early-life environment of siblings and the random segregation of alleles during meiosis (Smith and Ebrahim, 2003). Indeed, true Mendelian randomization was initially proposed as existing within a parent-offspring design (Smith and Ebrahim, 2003; Davey Smith et al., 2020; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72984/elife-72984-fig1-v2.jpg)\n\n**Figure 1.:** The random allocation of alleles within a parent-offspring quad (two parents and two offspring), initially observed by Mendel, is illustrated. Consider a height influencing genetic variant H where on average individuals with the H+ allele are taller than individuals with the H- allele. From Mendel\u2019s law of segregation, parent 1, who is heterozygous at this allele, has an equal chance of transmitting either an H+ or H- allele to offspring. Parent 2, homozygous at this allele, will always transmit a copy of the H- allele. It follows that 50% of this pair\u2019s offspring will be heterozygous (as parent 1) and 50% will be homozygous for the H- allele (as parent 2). On average, the heterozygous offspring will be taller than the homozygous H- offspring, with this difference a consequence of random segregation of gametes.\n\nHere, we used data from 40,275 siblings from UK Biobank (Bycroft et al., 2018) and 38,723 siblings from the Norwegian HUNT study (Krokstad et al., 2013) to estimate the effects of adulthood height on CHD, cancer risk, and relevant biomarkers. Study-level information is contained in Table 1. We report the estimates of the effects of height on CHD and cancer from both phenotypic models and Mendelian randomization, with and without accounting for family structure.\n\n**Table 1.**\n UK Biobank and HUNT study characteristics.Information on the UK Biobank and Norwegian HUNT studies, including descriptive of the sibling samples, is given.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>UK Biobank</th>\n      <th>HUNT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sibling sample:N individuals (N sibships)</td>\n      <td>40,275 (19,588)</td>\n      <td>38,723 (15,179)</td>\n    </tr>\n    <tr>\n      <td>Recruitment period:years</td>\n      <td>2006\u20132010</td>\n      <td>HUNT2 (1995\u201397)HUNT3 (2006\u201308)</td>\n    </tr>\n    <tr>\n      <td>Year of birth:median (Q1, Q3)</td>\n      <td>1950 (1945, 1956)</td>\n      <td>1951 (1937, 1963)</td>\n    </tr>\n    <tr>\n      <td>Sex:male (%)</td>\n      <td>42.2</td>\n      <td>48.7</td>\n    </tr>\n    <tr>\n      <td>Male height (cm):mean (SD)</td>\n      <td>175.7 (6.7)</td>\n      <td>177.6 (6.7)</td>\n    </tr>\n    <tr>\n      <td>Female height (cm):mean (SD)</td>\n      <td>162.4 (6.2)</td>\n      <td>164.4 (6.3)</td>\n    </tr>\n    <tr>\n      <td>Coronary heart disease:N cases (% of sample)</td>\n      <td>3006 (7.5%)</td>\n      <td>6447 (16.6%)</td>\n    </tr>\n    <tr>\n      <td>Cancer:N cases (% of sample)</td>\n      <td>6724 (16.5%)</td>\n      <td>2323 (6.0%)</td>\n    </tr>\n  </tbody>\n</table>\n\n## Methods\n\n### UK Biobank\n\n#### Overview\n\nUK Biobank is a large-scale prospective cohort study, described in detail previously (Bycroft et al., 2018; Sudlow et al., 2015). In brief, 503,325 individuals aged between 38 and 73 years were recruited between 2006 and 2010 from across the United Kingdom. For the purpose of this study, we used a subsample of 40,275 siblings from 19,588 families (Brumpton et al., 2019). Full-siblings were derived using UK Biobank-provided estimates of pairwise identical by state (IBS) kinships (>0.5\u201321 * IBS0, <0.7) and IBS0 (>0.001, <0.008), the proportion of unshared loci (Hill and Weir, 2011). This research has been conducted using the UK Biobank Resource under Application Number 15825. UK Biobank has ethical approval from the North West Multi-centre Research Ethics Committee (MREC). All UK Biobank participants provided written informed consent.\n\n#### Phenotype data\n\nAt baseline, study participants attended an assessment center where they completed a touch-screen questionnaire, were interviewed, and had various measurements and samples taken. Height (field ID: 12144-0.0) and sitting height (field ID: 20015-0.0) were measured using a Seca 202 device at the assessment center. Seated height is equivalent to trunk length, leg length was defined as height minus seated height, and the leg to trunk ratio was calculated by taking the ratio of leg and trunk length. SBP was measured using an automated reading from an Omron Digital blood pressure monitor (field ID: 4080-0.0). Biomarkers of interest, including direct low-density lipoprotein cholesterol (LDL-C), high-density lipoprotein cholesterol (HDL-C), triglycerides (TG), glucose, and IGF-1, were measured using blood samples and the Beckman Coulter AU5800 or the DiaSorin LIASON XL (IGF-1) analyzers.\n\nInternational Classification of Disease (10th edition) (ICD10) codes and Office of Population Censuses and Surveys Classifications of Interventions and Procedures (OPCS) codes were used to identify CHD and cancer (all subtypes and a stratified analysis) cases using several data sources: (1) secondary care data from Hospital Episode Statistics (HES), (2) death register data, and (3) cancer registry data. The stratified analysis included a subset of cancer subtypes (lung, oropharyngeal, stomach, esophageal, pancreatic, bladder, and multiple myeloma). Relevant codes are given in Supplementary file 1A. Both prevalent and incident cases were included in the analyses.\n\n#### Genotyping\n\nThe UK Biobank study participants (N = 488,377) were genotyped using the UK BiLEVE (N = 49,950) and the closely related UK Biobank Axiom Arrays (N = 438,427). Directly genotyped variants were pre-phased using SHAPEIT3 (O\u2019Connell et al., 2016) and imputed using Impute4 and the UK10K (Walter et al., 2015), Haplotype Reference Consortium (McCarthy et al., 2016) and 1000 Genomes Phase 3 (Genomes Project Consortium, 2015) reference panels. More details are given in a previous publication (Bycroft et al., 2018).\n\n### HUNT\n\n#### Overview\n\nThe Tr\u00f8ndelag Health Study (HUNT) is a series of general health surveys of the adult population of the demographically stable Nord-Tr\u00f8ndelag region, Norway, as detailed in a previous study (Holmen et al., 2003). The entire adult population of this region (~90,000 adults in 1995) is invited to attend a health survey (includes comprehensive questionnaires, an interview, clinical examination, and detailed phenotypic measurements) every 10 years. To date, four health surveys have been conducted, HUNT1 (1984\u20131986), HUNT2 (1995\u20131997), HUNT3 (2006\u20132008), and HUNT4 (2017\u20132019), and all surveys have a high participation rate (Krokstad et al., 2013). This study includes 38,723 siblings from 15,179 families who participated in the HUNT2 and HUNT3 surveys. Siblings were identified using KING software (Manichaikul et al., 2010), with pairs defined as follows: kinship coefficient between 0.177 and 0.355, the proportion of the genomes that share two alleles identical by descent (IBD) > 0.08, and the proportion of the genome that share zero alleles IBD > 0.04. The use of HUNT data in this study was approved by the Regional Committee for Ethics in Medical Research, Central Norway (2017/2479). All HUNT study participants provided written informed consent.\n\n#### Phenotype data\n\nHeight was measured to the nearest 1.0 cm using standardized instruments with participants wearing light clothes without shoes. SBP was measured using automated oscillometry (Critikon Dinamap 845XT and XL9301, acquired by GE Medical Systems Information Technologies in 2000) on the right arm in a relaxed sitting position (Holmen et al., 2003; Krokstad et al., 2013). SBP was measured twice with a 1 min interval between measurement with the mean of both measurements used in this study.\n\nAll HUNT participants provided nonfasting blood samples when attending the screening site. Total cholesterol, HDL-C, and TG levels in HUNT2 were measured in serum samples using enzymatic colorimetric methods (Boehringer Mannheim, Mannheim, Germany). In HUNT3, participants\u2019 total cholesterol was measured by enzymatic cholesterol esterase methodology; HDL-C was measured by accelerator selective detergent methodology; and TGs were measured by glycerol phosphate oxidase methodology (Abbott, Clinical Chemistry, USA). LDL-C levels were calculated using the Friedewald formula (Friedewald et al., 1972) in both surveys. Participants in HUNT with TG levels \u2265 4.5 mmol/L (n = 1349) were excluded for LDL-C calculation as the Friedewald formula is not valid at higher TG levels. For all these phenotypes, if the participant attended both HUNT2 and HUNT3 surveys, then the values from HUNT2 were used for the analysis presented here.\n\nThe unique 11-digit identification number of every Norwegian citizen was used to link the HUNT participant records with the hospital registry, which included the three hospitals in the area (up to March 2019). We used ICD-10 and ICD-9 codes 410\u2013414 and I20\u2013I25 to define CHD, including both prevalent and incident cases. Cancer status (yes/no) was self-reported in HUNT2, HUNT3, and HUNT4 questionnaires. Individuals with discordant responses across different questionnaires were excluded from analyses. Due to the nature of cancer data collection, only prevalent cancer cases were included in analyses.\n\n#### Genotyping\n\nDNA samples were available from 71,860 HUNT samples from HUNT2 and HUNT3 and were genotyped (Krokstad et al., 2013) using one of the three different Illumina HumanCoreExome arrays: HumanCoreExome12 v1.0 (n = 7570), HumanCoreExome12 v1.1 (n = 4960), and University of Michigan HUNT Biobank v1.0 (n = 58,041; HumanCoreExome-24 v1.0, with custom content). Quality control was performed separately for genotype data from different arrays. The call rate of genotyped samples was >99%. Imputation was performed on samples of recent European ancestry using Minimac3 (v2.0.1, http://genome.sph.umich.edu/wiki/Minimac3) (Das et al., 2016) from a merged reference panel constructed from (1) the Haplotype Reference Consortium panel (release version 1.1) (McCarthy et al., 2016) and (2) a local reference panel based on 2202 whole-genome sequenced HUNT participants (Zhou et al., 2017). The subjects included in the study were of European ancestry and had passed the quality control.\n\n### Statistical analysis\n\n#### Population and within-sibship models\n\nThe population model is a conventional regression model where the outcome is regressed (linear or logistic) against the exposure (height or height polygenic score [PGS]) with the option to include covariates.\n\nThe within-sibship model is an extension to the population model that includes a family mean term, the average exposure value across each family (height or height PGS), with each individual exposure value centered about the family mean exposure. To account for relatedness between siblings, standard errors are clustered by family in both models. More information on these models is contained in previous publications (Brumpton et al., 2019; Howe et al., 2021) with statistical code available on GitHub (Howe, 2022).\n\n#### Phenotypic and Mendelian randomization analyses\n\nIn phenotypic analyses, we used regression models (within-sibship and population) to estimate the association between measured height and all outcomes (CHD, cancer, SBP, LDL-C, HDL-C, TG, glucose, and IGF-1) using linear models for continuous outcomes and logistic models for binary disease outcomes. In both cohorts, we used a standardized measure of height after adjusting for age and sex and also standardized continuous outcomes after adjusting for age and sex.\n\nIn Mendelian randomization analyses, we fit regression models as above but used an age/sex-standardized height PGS instead of measured height. The height PGS was constructed in PLINK (Purcell et al., 2007) using 372 independent (LD clumping: 250 kb, r2 < 0.01, p<5 \u00d7 10\u20138) genetic variants from a previous height genome-wide association study (Wood et al., 2014) that did not include UK Biobank or HUNT. Again, we standardized and adjusted for age/sex for continuous outcomes. To estimate the effect of the PGS on height, we fit a model regressing measured standardized height against the height PGS. We then generated scaled Mendelian randomization estimates by taking the Wald ratio of the PGS-outcome associations and the PGS-height associations. All statistical analyses were conducted using R (v. 3.5.1).\n\nThere are three core instrumental variable assumptions for Mendelian randomization analyses. First, the genetic variants should be robustly associated with the exposure (relevance). Second, there should be no unmeasured confounders of the genetic variant-outcome association (independence). Third, the genetic variants should only influence the outcome via their effect on the exposure (the exclusion restriction) (Haycock et al., 2016; Didelez and Sheehan, 2007; Lawlor et al., 2008).\n\n#### UK Biobank and HUNT meta-analyses\n\nWe performed phenotypic and Mendelian randomization analyses (using population and within-sibship models) in both UK Biobank and HUNT. For phenotypes measured in both studies (CHD, cancer, LDL-C, HDL-C, TG), we combined estimates across both studies using a fixed-effects model in the metafor R package for meta-analysis. We tested for heterogeneity between UK Biobank/HUNT estimates using the difference of two means test statistic (Altman and Bland, 2003).\n\n#### Outcomes\n\nUsing the previously described models and meta-analysis procedure, we estimated the effects of height on CHD, cancer, LDL-C, HDL-C, TG, glucose, and IGF-1. As a sensitivity analysis, we used phenotypic models to evaluate the associations between dimensions of height (leg length, trunk length, and leg to trunk ratio) with CHD and cancer in UK Biobank. A further sensitivity analysis involved repeating cancer analyses in UK Biobank with a subset of cancers not phenotypically associated with height (described above).\n\n## Results\n\n### Adulthood height and risk of CHD and cancer\n\nWe found consistent evidence across population and within-sibship models, using both measured height and a height PGS, that taller adulthood height reduced CHD risk and increased the risk of cancer (Supplementary file 1B and C).\n\nWithin-sibship Mendelian randomization estimated that 1 SD taller height (approximately 6.8 cm for men and 6.2 cm for women) reduced the odds of CHD by 14% (95% CI 3\u201323%) but increased the odds of cancer by 18% (95% CI 3\u201334%). These estimates were consistent across analyses using measured height as well as with population Mendelian randomization estimates. For example, population Mendelian randomization analyses estimated that 1 SD taller height reduced the odds of CHD by 10% (95% CI 4\u201316%) and increased the odds of cancer by 9% (95% CI 2\u201316%) (Table 2, Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72984/elife-72984-fig2-v2.jpg)\n\n**Figure 2.:** The meta-analysis results from four different models used to evaluate the effect of height on coronary heart disease (CHD) and cancer risk are displayed. First, a phenotypic population model with measured height as the exposure and age and sex included as covariates. Second, a within-sibship phenotypic model with the family mean height included as an additional covariate to account for family structure. Third, a population Mendelian randomization model with height polygenic score (PGS) as the exposure exploiting advantageous properties of genetic instruments. Fourth, a within-sibship Mendelian randomization model with the family mean PGS included as a covariate to control for parental genotypes. Across all four models, we found consistent evidence that taller height reduces the odds of CHD and increases the odds of cancer.\n\n**Table 2.**\n Mendelian randomization (MR) results: change in outcome (SD units), per 1 SD increase in height.Population and within-sibship MR estimates of height on the eight different outcomes are shown. The presented estimates are from UK Biobank, HUNT, and the combined fixed-effects meta-analysis. The heterogeneity p-value refers to the difference between the UK Biobank and HUNT estimates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Outcome</th>\n      <th>Model</th>\n      <th>UK Biobank</th>\n      <th>HUNT</th>\n      <th>Combined</th>\n      <th>Study heterogeneityp-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Systolic blood pressure</td>\n      <td>Population</td>\n      <td>\u20130.044 (\u20130.074, \u20130.015)</td>\n      <td>\u20130.025 (\u20130.057, 0.008)</td>\n      <td>\u20130.036 (\u20130.058, \u20130.014)</td>\n      <td>0.38</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>\u20130.077 (\u20130.137, \u20130.017)</td>\n      <td>0.010 (\u20130.040, 0.059)</td>\n      <td>\u20130.025 (\u20130.063, 0.013)</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">High-density lipoprotein cholesterol</td>\n      <td>Population</td>\n      <td>\u20130.039 (\u20130.070, \u20130.008)</td>\n      <td>\u20130.010 (\u20130.043, 0.024)</td>\n      <td>\u20130.025 (\u20130.048, \u20130.003)</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>\u20130.038 (\u20130.096, 0.021)</td>\n      <td>0.001 (\u20130.046, 0.047)</td>\n      <td>\u20130.014 (\u20130.050, 0.022)</td>\n      <td>0.31</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Low-density lipoprotein cholesterol</td>\n      <td>Population</td>\n      <td>\u20130.066 (\u20130.095, \u20130.036)</td>\n      <td>\u20130.065 (\u20130.098, \u20130.032)</td>\n      <td>\u20130.065 (\u20130.087, \u20130.044)</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>\u20130.083 (\u20130.141, \u20130.025)</td>\n      <td>\u20130.014 (\u20130.061, 0.033)</td>\n      <td>\u20130.041 (\u20130.078, \u20130.005)</td>\n      <td>0.07</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Triglycerides</td>\n      <td>Population</td>\n      <td>0.011 (\u20130.018, 0.040)</td>\n      <td>\u20130.006 (\u20130.038, 0.027)</td>\n      <td>0.004 (\u20130.018, 0.025)</td>\n      <td>0.43</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>0.024 (\u20130.034, 0.081)</td>\n      <td>0.032 (\u20130.018, 0.082)</td>\n      <td>0.028 (\u20130.009, 0.066)</td>\n      <td>0.84</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Glucose</td>\n      <td>Population</td>\n      <td>0.032 (0.005, 0.060)</td>\n      <td>N/A</td>\n      <td>0.032 (0.005, 0.060)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>0.023 (\u20130.030, 0.077)</td>\n      <td>N/A</td>\n      <td>0.023 (\u20130.030, 0.077)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">IGF-1</td>\n      <td>Population</td>\n      <td>\u20130.005 (\u20130.035, 0.025)</td>\n      <td>N/A</td>\n      <td>\u20130.005 (\u20130.035, 0.025)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>\u20130.045 (\u20130.093, 0.004)</td>\n      <td>N/A</td>\n      <td>\u20130.045 (\u20130.093, 0.004)</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Cancer (OR)</td>\n      <td>Population</td>\n      <td>1.12 (1.04, 1.20)</td>\n      <td>0.99 (0.88, 1.12)</td>\n      <td>1.09 (1.02, 1.16)</td>\n      <td>0.089</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>1.21 (1.03, 1.42)</td>\n      <td>1.12 (0.90, 1.39)</td>\n      <td>1.18 (1.03, 1.34)</td>\n      <td>0.57</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Coronary heart disease (OR)</td>\n      <td>Population</td>\n      <td>0.94 (0.84, 1.04)</td>\n      <td>0.88 (0.80, 0.96)</td>\n      <td>0.90 (0.84, 0.96)</td>\n      <td>0.33</td>\n    </tr>\n    <tr>\n      <td>Within-sibship</td>\n      <td>0.81 (0.65, 1.02)</td>\n      <td>0.88 (0.77, 1.00)</td>\n      <td>0.86 (0.77, 0.97)</td>\n      <td>0.55</td>\n    </tr>\n  </tbody>\n</table>\n\nWe then evaluated the associations between dimensions of height (trunk length, leg length, and leg to trunk ratio) and risk of CHD/cancer in UK Biobank. We found little evidence of heterogeneity between estimates, although stronger conclusions are limited by statistical power (Supplementary file 1D). We also ran a sensitivity analysis in UK Biobank, rerunning height-cancer analyses including only cases with one of seven cancer subtypes (lung, oropharyngeal, stomach, esophageal, pancreatic, bladder, and multiple myeloma) for which a previous study found little evidence they associated with height (Green et al., 2011). These subtypes generally show very strong social patterning, which could explain the attenuated associations with height that is also often socially patterned. As expected, the association of measured height with this subset of cancers (population OR 0.99; 95% CI 0.92\u20131.06; within-sibship OR 1.01; 95% CI 0.88\u20131.15) was less strong than the association between height and the all-cancer outcome (population OR 1.05; 95% CI 1.02\u20131.07; within-sibship OR 1.05; 95% CI 1.01\u20131.09). Mendelian randomization estimates were imprecise because of the modest number of cases for these cancers (Supplementary file 1E).\n\n### Adulthood height and biomarkers\n\nUsing measured biomarkers, both population and within-sibship models found evidence for the association between taller height and lower SBP, lower circulating LDL-C, and higher circulating IGF-1 levels. There was some evidence for heterogeneity in phenotypic associations between height and biomarkers in UK Biobank and HUNT, such as for SBP, which was more strongly associated with height in UK Biobank (Supplementary file 1B).\n\nPopulation Mendelian randomization results suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058), LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087), HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048) but increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060). In contrast, we found little evidence that taller height affected TG or IGF-1 levels. Within-sibship Mendelian randomization estimates were consistent with population estimates; SBP (per 1 SD taller height, 0.025 SD decrease; 95% CI \u20130.013 to 0.063), LDL-C (per 1 SD taller height, 0.041 SD decrease; 95% CI 0.005\u20130.078), HDL-C (per 1 SD taller height, 0.014 SD decrease; 95% CI \u20130.022 to 0.050) and glucose (per 1 SD taller height, 0.023 SD increase; 95% CI \u20130.030 to 0.077) (Figure 3, Table 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72984/elife-72984-fig3-v2.jpg)\n\n**Figure 3.:** The meta-analysis results from population and within-sibship Mendelian randomization analyses estimating the effect of taller height on biomarkers across UK Biobank and HUNT are shown. The estimates were broadly similar between the two models, suggesting the modest effects of demography and indirect genetic effects.\n\nThere was some putative evidence for heterogeneity in the Mendelian randomization effect estimates between UK Biobank and HUNT. For example, within-sibship Mendelian randomization estimate suggested the effects of height on SBP in UK Biobank (0.077 SD decrease; 95% CI 0.017\u20130.137) but the effect estimate was in the opposite direction in HUNT (0.010 SD increase; 95% CI \u20130.040 to 0.059; heterogeneity p=0.03) (Table 2).\n\n## Discussion\n\nIn this study, we used sibling data from two large biobanks to estimate the effects of height on CHD, cancer, and relevant biomarkers. We found consistent evidence across all models, including within-sibship Mendelian randomization, that taller height is protective against CHD but increases the risk of cancers. We found less consistent evidence for the effects of height on biomarkers; population and within-sibship phenotypic models as well as population Mendelian randomization models suggested modest effects of taller height on SBP, LDL-C, and HDL-C. However, the confidence intervals for within-family Mendelian randomization of height and biomarkers were too wide to draw strong conclusions.\n\nOur findings are largely consistent with previous studies (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Marouli et al., 2019; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Carslake et al., 2013) that used nonsibling designs, and with the hypothesis that height affects CHD and cancer risk. However, previous studies were potentially susceptible to bias relating to geographic and socioeconomic variation in height and height genetic variants (Barton and Hermisson, 2019; Sohail et al., 2019; Lee et al., 2018). Indeed, a recent within-sibship Mendelian randomization study found that the previously reported effects of height and body mass index on educational attainment were greatly attenuated when using siblings (Brumpton et al., 2019). Here, we provided robust evidence for individual-level effects of height by demonstrating that the previous evidence for effects of height on adulthood disease risk is unlikely to have been confounded by demography or indirect genetic effects. The major strengths of our work are the use of within-sibship Mendelian randomization (Davies et al., 2019) and the triangulation (Lawlor et al., 2016) of evidence from across phenotypic, genetic, and within-sibship models.\n\nA limitation of our analyses is that because of limited sibling data and the statistical inefficiency of within-family models, we have limited statistical power to investigate the effects of height on disease subtypes,further explore the mechanisms using multivariable Mendelian randomization (Burgess and Thompson, 2015), and perform sensitivity analyses to evaluate horizontal pleiotropy. An additional limitation is that our study may have been susceptible to selection and survival biases relating to nonrandom participation in UK Biobank and/or HUNT and the requirement of at least two siblings to survive to be recruited. Indeed, cancer and CHD are both leading worldwide causes of mortality and so cases for one disease may have a reduced likelihood of developing the other disease due to increased mortality. Therefore, our study may have been susceptible to survival bias relating to competing risks. We mitigated this by defining cases for both diseases using both nonfatal and fatal events. Our study analyzed families with two or more siblings jointly participating in a cohort; nevertheless, further research is required to investigate the impact of selection bias on family studies.\n\nAdulthood height is nonmodifiable, and the interpretation of causality is nuanced because it is unclear whether biological effects relate to stature itself, increased childhood growth, or to factors highly correlated with height such as lung function (Marouli et al., 2019; Gunnell et al., 2003) and artery length (Palmer et al., 1990). Previous studies Gunnell et al., 2001; Langenberg et al., 2003; Gunnell et al., 2003; Regnault et al., 2014 have explored the possibility that associations may relate to dimensions of height, with evidence that blood pressure is associated with trunk but not leg length (Regnault et al., 2014). Here, we found that the effects of height on disease risk due to leg or trunk length were similar. We found consistent effects of increased height across etiologically heterogeneous cancer subtypes, which implies that the mechanism could relate to the larger number of cells in taller individuals or a generalized growth phenotype. Notably there is minimal evidence of a correlation between the size of an organism and cancer risk (Peto\u2019s paradox), suggesting that the number of cells hypothesis could influence cancer risk in humans but would not explain variation in cancer risk across different organisms (Caulin and Maley, 2011). Our Mendelian randomization estimates for the effects of height on a subset of cancers not strongly phenotypically associated with height (Green et al., 2011) were consistent with the combined cancer estimates, although we had limited power in this dataset because of the modest prevalence of the cancer subtypes.\n\nThe estimated effects of height on disease risk were relatively consistent between the Norwegian HUNT and UK Biobank studies. Contrastingly, the heterogeneity between UK Biobank and HUNT for analyses involving SBP and LDL-C suggests that some effects of height could be population specific. Alternatively, heterogeneity could relate to the variance in associations between adulthood height and early-life environmental confounders across countries (Perkins et al., 2016). Additional explanations could relate to the differences in biomarker measurement between studies (e.g., measuring LDL-C directly or using the Friedewald formula, differences in fasting level before samples were taken), selection bias (Munaf\u00f2 et al., 2016), or differences between the cohorts in terms of recruitment and participation. Further work is required to investigate if our findings generalize to non-European populations; biological mechanisms could be expected to be largely consistent across populations but context-specific (e.g., social) mechanisms could lead to geographic heterogeneity.\n\nTo conclude, using within-sibship Mendelian randomization, we showed that height has individual-level effects on risk of CHD and cancers as well as several biomarkers. Larger family datasets and additional analyses including two-step (Relton and Davey Smith, 2012) and multivariable Mendelian randomization (Burgess and Thompson, 2015) could be used to investigate the potential mediators of these relationships.\n",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "c17880c3-2f91-4d92-809c-1e71b2c64c6d",
+      "submission_id": "69a355cc-1e6b-466d-a8bf-873ffb69f65a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72984.sa0](https://doi.org/10.7554/eLife.72984.sa0)\n\nThe authors examined the role of height in cancer, coronary heart disease and cardiovascular disease risk factors, using four different designs. They found that height increases risk of cancer and decreases risk of coronary heart disease, while the associations for the cardiovascular disease risk factors were largely null. This will be mainly of interest to epidemiologists.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward D Janus, https://ror.org/01ej9dk98 University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72984.sa1](https://doi.org/10.7554/eLife.72984.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Taller height and risk of coronary heart disease and cancer: a within-sibship Mendelian randomization study\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sara H\u00e4gg (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\n1. A major source of bias in studies of cause and effect is selection (or collider) bias. The study also needs to consider possible selection bias from inevitably only selecting survivors to recruitment of their height (measured or genetically endowed), the disease of interest and any competing risk of the disease of interest. Whether, the sibling design, by requiring at least two siblings to survive to recruitment, is more open to selection bias than a population-based design could also be considered.\n\n2. The study provides an interesting comparison of four different methods. Height increasing cancer risk is plausible because of the potential mechanism given, i.e., IGF1, the consistency with well accepted biological theories from evolutionary biology, and that cancer deaths tend to occur at younger ages than cardiovascular disease deaths. The results for coronary artery disease are possible but, could be overstated Greater consideration should be also be given to as to how \"an individual-level causal effect\" observed largely in Europeans generalizes.\n\n3. Whether the findings for height decreasing the risk of coronary heart disease could be partly due to an artefact of survivorship bias (https://en.wikipedia.org/wiki/Survivorship_bias) arising from taller people dying of cancer before they have a chance to get coronary heart disease should be considered in more detail.\n\n4. Please explain more clearly about adjustment for age, does it account for the fact that risk of disease goes up exponentially with age? Please also consider whether cohort is also relevant. Cohort may affect both height and disease risk. In the UK Biobank the recruitment period is quite short, so cohort should not be an issue. Please clarify over what time period the HUNT study was recruited and whether cohort should be considered as well as age.\n\n5. Adhere to eLife title standards. Also, not clear that both observational and MR estimates are calculated on individual level data from HUNT and UKB. I think the title should be modified and make more justice to the study.\n\nSame thing with abstract. Lots of background added but not the phenotypic associations. By the way, why call it phenotypic- the usual phrase is observational association? Biomarker results not described either.\n\n6. Add more discussion on the CVD-cancer paradox that has been discussed in literature.\n\nReviewer #1 (Recommendations for the authors):\n\nMethods\n\nPlease explain more clearly about adjustment for age, does it account for the fact that risk of disease goes up exponentially with age? Please also consider whether cohort is also relevant. Cohort may affect both height and disease risk. In the UK Biobank the recruitment period is quite short, so cohort should not be an issue. Please clarify over what time period the HUNT study was recruited and whether cohort should be considered as well as age.\n\nIs a p-value cutoff given for SNP selection into the height PGS?\n\nPlease clarify whether prevalent cases were included as well as incident cases. Given, genetics are a lifelong exposure, it might be better to include prevalent cases, so as to avoid time related biases, as explained here[1].\n\nResults\n\nPlease give a table describing the baseline characteristics of the two studies, particularly in terms of age and sex, and possibly recruitment period.\n\nDiscussion\n\nPlease consider the limitations of this study in more detail, specifically.\n\n1. Using a PGS for the exposure increases power but means it is difficult to check for any pleotropic effects. How might this affect interpretation of the study?\n\n2. This study is carefully designed to avoid use of overlapping samples for exposure and outcome. Is the study used for height unbiased?\n\n3. The possibility of selection bias from survivorship. This study only includes people who have survived to recruitment, so it will be missing people who died before recruitment because of their height or height-related genetic endowment, the disease of interest or a competing risk of the disease of interest. Missing these people can attenuate or reverse estimates for exposures that affect survival. If cancer causes death at earlier ages than coronary heart disease then the results for coronary heart disease could be an artefact of the competing risk of previous death from cancer.\n\n4. Please clarify whether the results presented are specific to the UK Biobank and HUNT studies or explain their generalizability and transportability.\n\n5. Could differences between UK Biobank and HUNT be due to differences to design?\n\n6. Are both the comparisons between the sibling and population estimates for cancer and coronary heart disease in the expected directions?\n\n[1] Hern\u00e1n MA, Sauer BC, Hern\u00e1ndez-D\u00edaz S, Platt R, Shrier I: Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses. J Clin Epidemiol 2016, 79:70-75.\n\nReviewer #2 (Recommendations for the authors):\n\nHow likely is it that the earlier MR results are misleading? Biased by demographics etc? It relates to the novelty of the paper because the MR association has been shown before multiple times.\n\nWhat is the rationale for doing the biomarker analysis? Would it not be more informative to investigate if they mediate the effect from height on CHD?\n\nTable 1 should be sample characteristics in HUNT and UKB.\n\nWhat about sex stratifications? Is it possible to do for same-sex sib pairs? Is it of importance in the population at large regardless of sib ship pairs? For the traits used here it should matter.\n\nAll figures and tables should contain information so that they are stand alone items.\n",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7b37c57-0e82-4e3a-ae8c-d9673d804809",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C1",
+      "claim": "Taller people have a lower risk of coronary heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Background:Taller people have a lower risk of coronary heart disease but a higher risk of many cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract background and is supported by citations to previous literature throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "6640aa35-e50e-4e09-8b92-69fc4df7c76b",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C2",
+      "claim": "Taller people have a higher risk of many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Background:Taller people have a lower risk of coronary heart disease but a higher risk of many cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract background and is supported by citations to previous literature throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "624eb47e-dfaa-4713-84f7-a0de433a494c",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C3",
+      "claim": "Population MR studies have suggested that the relationships between height and disease are potentially causal.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (MR) studies in unrelated individuals (population MR) have suggested that these relationships are potentially causal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to previous Mendelian randomization studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "30bffbde-88df-45f9-a469-56c8fcd51990",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C4",
+      "claim": "Population MR studies are sensitive to demography (population stratification, assortative mating) and familial (indirect genetic) effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, population MR studies are sensitive to demography (population stratification, assortative mating) and familial (indirect genetic) effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature on biases in genetic epidemiological studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "29d1042e-aa1d-4003-bb3c-762b7e744eec",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C5",
+      "claim": "Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3\u201323%).",
+      "claim_type": "EXPLICIT",
+      "source": "Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3\u201323%) but increases the odds of cancer by 18% (95% CI: 3\u201334%), highly consistent with population MR and height-disease association estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "d450874d-23b2-4bbb-aa53-8807ae0b3c18",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C6",
+      "claim": "Within-sibship MR estimated that 1 SD taller height increases the odds of cancer by 18% (95% CI: 3\u201334%).",
+      "claim_type": "EXPLICIT",
+      "source": "Within-sibship MR estimated that 1 SD taller height lowers the odds of coronary heart disease by 14% (95% CI: 3\u201323%) but increases the odds of cancer by 18% (95% CI: 3\u201334%), highly consistent with population MR and height-disease association estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "55421570-26a4-44c0-a8be-0c70e516b284",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C7",
+      "claim": "There was some evidence that taller height reduces systolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "622a4933-6530-4724-ab1f-4b0821a73182",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C8",
+      "claim": "There was some evidence that taller height reduces low-density lipoprotein cholesterol.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "04230698-1bbd-4c87-b4e4-a83e251000e3",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C9",
+      "claim": "Reduced systolic blood pressure and low-density lipoprotein cholesterol may mediate some of the protective effects of taller height on coronary heart disease risk.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some evidence that taller height reduces systolic blood pressure and low-density lipoprotein cholesterol, which may mediate some of the protective effects of taller height on coronary heart disease risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed associations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "8f3ad262-dcc1-4075-9b2f-36202a232568",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C10",
+      "claim": "The purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, we have demonstrated that the purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors, and so likely reflect an individual-level causal effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the within-sibship MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "6bd1ce79-9b59-4b91-b77a-1cf33a4fdc92",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C11",
+      "claim": "The effects of height on adulthood disease risk likely reflect an individual-level causal effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first time, we have demonstrated that the purported effects of height on adulthood disease risk are unlikely to be explained by demographic or familial factors, and so likely reflect an individual-level causal effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the within-sibship MR analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "140a5252-a4ce-42e7-80ac-cad8b4566aaa",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C12",
+      "claim": "Height is a classical complex trait influenced by genetic and early-life environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Height is a classical complex trait influenced by genetic and early-life environmental factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about height.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b606f50d-1e2b-4986-a816-56e1d55b5135",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C13",
+      "claim": "Adult height is nonmodifiable.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the nonmodifiable nature of adult height, evaluating the effects of height on noncommunicable disease risk can give insights into the etiology of adulthood diseases (Emerging Risk Factors Collaboration, 2012; Davey Smith et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is common knowledge about human biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "50c8802d-b33e-47e2-a8eb-977b15ee43bb",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C14",
+      "claim": "Evaluating the effects of height on noncommunicable disease risk can give insights into the etiology of adulthood diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the nonmodifiable nature of adult height, evaluating the effects of height on noncommunicable disease risk can give insights into the etiology of adulthood diseases (Emerging Risk Factors Collaboration, 2012; Davey Smith et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "e17db706-f6e9-435d-9e90-d3dbda0b16b0",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C15",
+      "claim": "Taller people are less likely to develop cardiovascular disease, including coronary heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Taller people are less likely to develop cardiovascular disease, including coronary heart disease (CHD) (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Batty et al., 2009; Marouli et al., 2019) and stroke (Nj\u00f8lstad et al., 1996), but more likely to be diagnosed with cancer (Emerging Risk Factors Collaboration, 2012; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "32737b81-733c-4c3b-8914-f97661da5f74",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C16",
+      "claim": "Taller people are less likely to develop stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Taller people are less likely to develop cardiovascular disease, including coronary heart disease (CHD) (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Batty et al., 2009; Marouli et al., 2019) and stroke (Nj\u00f8lstad et al., 1996), but more likely to be diagnosed with cancer (Emerging Risk Factors Collaboration, 2012; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Nj\u00f8lstad et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "815bd12e-1dad-4f68-907e-647c1e15faee",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C17",
+      "claim": "Taller people are more likely to be diagnosed with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Taller people are less likely to develop cardiovascular disease, including coronary heart disease (CHD) (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Batty et al., 2009; Marouli et al., 2019) and stroke (Nj\u00f8lstad et al., 1996), but more likely to be diagnosed with cancer (Emerging Risk Factors Collaboration, 2012; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "8a7b0eb5-eb7e-4578-b3e8-377fdaa3ed45",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C18",
+      "claim": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O'Connor et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "3d1ecd5c-7363-4996-97a4-6c2633e7fd4d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C19",
+      "claim": "The association between height and cardiovascular disease may be mediated via lower systolic blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O'Connor et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "90b83ee6-fdf2-4517-8f58-278ac947272c",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C20",
+      "claim": "The association between height and cardiovascular disease may be mediated via lung function.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O'Connor et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b1b1ecbc-9eb4-42b4-b895-7e36437153c6",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C21",
+      "claim": "The association between height and cardiovascular disease may be mediated via lower heart rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O'Connor et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Smulyan et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "344b3c5f-c1d2-4f15-870d-d007d196a94c",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C22",
+      "claim": "The association between height and cardiovascular disease may be mediated via coronary artery vessel dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "The association between height and cardiovascular disease may be mediated via favorable lipid profiles (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015), lower systolic blood pressure (SBP) (Emerging Risk Factors Collaboration, 2012; Langenberg et al., 2003), lung function (Marouli et al., 2019; Gunnell et al., 2003), lower heart rate (Smulyan et al., 1998), and coronary artery vessel dimension (O'Connor et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to O'Connor et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b84b8a38-fa97-4c34-95c8-02c1fd235cfe",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C23",
+      "claim": "The increased cancer incidence among taller individuals could relate to early-life exposure to hormones such as insulin-like growth factor 1 (IGF-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The increased cancer incidence among taller individuals could relate to early-life exposure to hormones such as insulin-like growth factor 1 (IGF-1) (Renehan et al., 2004; Clayton et al., 2011) or the increased number of cells in taller individuals (Stefan et al., 2016; Green et al., 2011; Albanes and Winick, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "180b0d0b-7b6b-4f83-9022-0db334989a09",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C24",
+      "claim": "The increased cancer incidence among taller individuals could relate to the increased number of cells in taller individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased cancer incidence among taller individuals could relate to early-life exposure to hormones such as insulin-like growth factor 1 (IGF-1) (Renehan et al., 2004; Clayton et al., 2011) or the increased number of cells in taller individuals (Stefan et al., 2016; Green et al., 2011; Albanes and Winick, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "cdf41e03-caea-4b3e-a8ca-18abdd1a6ff2",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C25",
+      "claim": "There is some evidence for heterogeneity across cancer subtypes with null or inverse associations observed between height and risk of stomach, oropharyngeal, and esophageal cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although overall cancer risk is higher among taller individuals (Green et al., 2011; Batty et al., 2006; Gunnell et al., 2001), there is some evidence for heterogeneity across cancer subtypes with null or inverse associations observed between height and risk of stomach, oropharyngeal, and esophageal cancers (Green et al., 2011; Batty et al., 2006; Gunnell et al., 2001; Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "a21fa433-a4ea-49bf-95be-eb550fbf6d7e",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C26",
+      "claim": "Height is highly heritable.",
+      "claim_type": "EXPLICIT",
+      "source": "Height is highly heritable, but the average height across the European populations has increased over the last hundred years (Hatton, 2013), illustrating the effects of early-life environmental factors such as nutrition and childhood infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "bcc969d7-f3c3-4fde-9592-09ac2411d0cb",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C27",
+      "claim": "The average height across the European populations has increased over the last hundred years.",
+      "claim_type": "EXPLICIT",
+      "source": "Height is highly heritable, but the average height across the European populations has increased over the last hundred years (Hatton, 2013), illustrating the effects of early-life environmental factors such as nutrition and childhood infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hatton, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "772020eb-79cf-48cd-ba03-f50f8db0e623",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C28",
+      "claim": "The increase in average height across European populations illustrates the effects of early-life environmental factors such as nutrition and childhood infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Height is highly heritable, but the average height across the European populations has increased over the last hundred years (Hatton, 2013), illustrating the effects of early-life environmental factors such as nutrition and childhood infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed secular trend in height.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "e5e9a7b0-2740-4dfc-9bc5-96dc9db90719",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C29",
+      "claim": "The associations of height with adulthood diseases could reflect confounding by early-life environmental factors that influence both height and later-life health such as parental socioeconomic position.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations of height with adulthood diseases and relevant biomarkers could reflect the biomechanical effects relating to increased stature (e.g., number of cells or larger arteries; O'Connor et al., 1996) or could reflect confounding by early-life environmental factors that influence both height and later-life health such as parental socioeconomic position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for observed associations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "f2b1c5fd-ef46-4d23-9f8b-53df41f560e1",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C30",
+      "claim": "Wealthier parents may provide their offspring with better nutrition, leading to increased adult height, and a better education, potentially leading to improved health in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, wealthier parents may provide their offspring with better nutrition, leading to increased adult height, and a better education, potentially leading to improved health in adulthood (Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative confounding pathway supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9bf804aa-24a4-4323-bfd2-a5ef01fa91db",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C31",
+      "claim": "Mendelian randomization analyses use genetic variants associated with height as a proxy for observed height.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (Smith and Ebrahim, 2003) analyses, using genetic variants associated with height as a proxy for observed height, have been used to strengthen the evidence for causal effects of height on adulthood diseases (Nelson et al., 2015; N\u00fcesch et al., 2016; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Mendelian randomization method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9cefc035-a685-432f-9eab-6d45d55f91a8",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C32",
+      "claim": "Genetic variants associated with height are unlikely to be associated with potential confounders such as childhood nutrition.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying premise being that genetic variants associated with height, unlike height itself, are unlikely to be associated with potential confounders such as childhood nutrition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental assumption of Mendelian randomization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9e1de979-3177-40f0-9637-6fc76c9719fa",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C33",
+      "claim": "There is growing evidence that estimates from genetic epidemiological studies using unrelated individuals may capture effects relating to demography (population stratification, assortative mating) and familial effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is growing evidence that estimates from genetic epidemiological studies using unrelated individuals may capture effects relating to demography (population stratification, assortative mating) and familial effects (e.g., indirect genetic effects of relatives where parental genotype influences offspring phenotypes) (Barton and Hermisson, 2019; Berg et al., 2019; Sohail et al., 2019; Ruby et al., 2018; Haworth et al., 2019; Brumpton et al., 2019; Lee et al., 2018; Kong et al., 2018; Young et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "0076b36f-d3a7-40dc-bf7e-766f45e73265",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C34",
+      "claim": "Recent articles have illustrated the potential for genetic analyses of height to be affected by biases relating to demography and familial effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recent articles have illustrated the potential for genetic analyses of height to be affected by these biases (Berg et al., 2019; Sohail et al., 2019), including a Mendelian randomization study of height on education (Brumpton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "162960c3-8745-4007-93d7-7d64c546feaa",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C35",
+      "claim": "Using data from siblings can overcome potential biases in genetic analyses by exploiting the shared early-life environment of siblings and the random segregation of alleles during meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "One approach to overcome these potential biases is to use data from siblings (Brumpton et al., 2019; Davies et al., 2019) and exploit the shared early-life environment of siblings and the random segregation of alleles during meiosis (Smith and Ebrahim, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and describes the methodological approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "4cc4d669-4342-4fd5-8f30-c69ed444f14d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C36",
+      "claim": "True Mendelian randomization was initially proposed as existing within a parent-offspring design.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, true Mendelian randomization was initially proposed as existing within a parent-offspring design (Smith and Ebrahim, 2003; Davey Smith et al., 2020; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "8fc4b709-b4fd-4101-9b22-7b395317504f",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C37",
+      "claim": "The study used data from 40,275 siblings from UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used data from 40,275 siblings from UK Biobank (Bycroft et al., 2018) and 38,723 siblings from the Norwegian HUNT study (Krokstad et al., 2013) to estimate the effects of adulthood height on CHD, cancer risk, and relevant biomarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "4c85d91a-717c-4a95-8544-89e5f11f7ff1",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C38",
+      "claim": "The study used data from 38,723 siblings from the Norwegian HUNT study.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used data from 40,275 siblings from UK Biobank (Bycroft et al., 2018) and 38,723 siblings from the Norwegian HUNT study (Krokstad et al., 2013) to estimate the effects of adulthood height on CHD, cancer risk, and relevant biomarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "f0000fab-541f-4f1d-bf5b-1af15d4d6060",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C39",
+      "claim": "UK Biobank is a large-scale prospective cohort study with 503,325 individuals aged between 38 and 73 years recruited between 2006 and 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, 503,325 individuals aged between 38 and 73 years were recruited between 2006 and 2010 from across the United Kingdom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the UK Biobank cohort.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "0ae0bba8-7ca3-433e-ba9f-8189507af47d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C40",
+      "claim": "The UK Biobank sibling sample consisted of 40,275 siblings from 19,588 families.",
+      "claim_type": "EXPLICIT",
+      "source": "For the purpose of this study, we used a subsample of 40,275 siblings from 19,588 families (Brumpton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study sample used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "633bd8df-8bfd-4a67-b36a-3872142daaf0",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C41",
+      "claim": "In UK Biobank, there were 3006 coronary heart disease cases (7.5% of sample).",
+      "claim_type": "EXPLICIT",
+      "source": "Coronary heart disease:N cases (% of sample) 3006 (7.5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is descriptive data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "95ce9a3a-a660-4d20-bfb5-057a08ae87fc",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C42",
+      "claim": "In UK Biobank, there were 6724 cancer cases (16.5% of sample).",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer:N cases (% of sample) 6724 (16.5%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is descriptive data from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b6072a8f-d0f3-48c0-828a-6a150d24bc82",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C45",
+      "claim": "The height PGS was constructed using 372 independent genetic variants from a previous height genome-wide association study.",
+      "claim_type": "EXPLICIT",
+      "source": "The height PGS was constructed in PLINK (Purcell et al., 2007) using 372 independent (LD clumping: 250 kb, r2 < 0.01, p<5 \u00d7 10\u20138) genetic variants from a previous height genome-wide association study (Wood et al., 2014) that did not include UK Biobank or HUNT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach for constructing the polygenic score.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "11311652-d8c2-4589-a3c3-d1f954b46a02",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C46",
+      "claim": "Population Mendelian randomization analyses estimated that 1 SD taller height reduced the odds of CHD by 10% (95% CI 4\u201316%).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, population Mendelian randomization analyses estimated that 1 SD taller height reduced the odds of CHD by 10% (95% CI 4\u201316%) and increased the odds of cancer by 9% (95% CI 2\u201316%) (Table 2, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data analysis, shown in Table 2 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "7886b2d3-882b-4610-999b-d3096db98528",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C47",
+      "claim": "Population Mendelian randomization analyses estimated that 1 SD taller height increased the odds of cancer by 9% (95% CI 2\u201316%).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, population Mendelian randomization analyses estimated that 1 SD taller height reduced the odds of CHD by 10% (95% CI 4\u201316%) and increased the odds of cancer by 9% (95% CI 2\u201316%) (Table 2, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the study's data analysis, shown in Table 2 and Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9639d069-06f8-4095-90d5-d77a2fe081b4",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C48",
+      "claim": "Population Mendelian randomization suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058).",
+      "claim_type": "EXPLICIT",
+      "source": "Population Mendelian randomization results suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058), LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087), HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048) but increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9240ae61-f316-46d7-a3e9-69f299b6691e",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C49",
+      "claim": "Population Mendelian randomization suggested that taller height reduced LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087).",
+      "claim_type": "EXPLICIT",
+      "source": "Population Mendelian randomization results suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058), LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087), HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048) but increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "0abee8e8-a6e1-4744-bd8b-e71b9601dea0",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C50",
+      "claim": "Population Mendelian randomization suggested that taller height reduced HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048).",
+      "claim_type": "EXPLICIT",
+      "source": "Population Mendelian randomization results suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058), LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087), HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048) but increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "6ad45c65-74ac-4927-8ba9-dcd01c03837b",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C51",
+      "claim": "Population Mendelian randomization suggested that taller height increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060).",
+      "claim_type": "EXPLICIT",
+      "source": "Population Mendelian randomization results suggested that taller height reduced SBP (per 1 SD taller height, 0.036 SD decrease; 95% CI 0.014\u20130.058), LDL-C (per 1 SD taller height, 0.065 SD decrease; 95% CI 0.044\u20130.087), HDL-C (per 1 SD taller height, 0.025 SD decrease; 95% CI 0.003\u20130.048) but increased glucose (per 1 SD taller height, 0.032 SD increase; 95% CI 0.005\u20130.060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "3fc23a34-d6f1-4819-b279-2a4c9409f47f",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C52",
+      "claim": "There was little evidence that taller height affected TG or IGF-1 levels in population Mendelian randomization.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found little evidence that taller height affected TG or IGF-1 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "7abbffb5-25d6-49ba-ada8-26636c681d48",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C53",
+      "claim": "Within-sibship Mendelian randomization estimates for biomarkers were consistent with population estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Within-sibship Mendelian randomization estimates were consistent with population estimates; SBP (per 1 SD taller height, 0.025 SD decrease; 95% CI \u20130.013 to 0.063), LDL-C (per 1 SD taller height, 0.041 SD decrease; 95% CI 0.005\u20130.078), HDL-C (per 1 SD taller height, 0.014 SD decrease; 95% CI \u20130.022 to 0.050) and glucose (per 1 SD taller height, 0.023 SD increase; 95% CI \u20130.030 to 0.077) (Figure 3, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis, shown in Figure 3 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "459dd5c5-45b2-47fe-8b7c-df9fe160de0f",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C54",
+      "claim": "There was putative evidence for heterogeneity in the Mendelian randomization effect estimates between UK Biobank and HUNT for the effect of height on SBP.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, within-sibship Mendelian randomization estimate suggested the effects of height on SBP in UK Biobank (0.077 SD decrease; 95% CI 0.017\u20130.137) but the effect estimate was in the opposite direction in HUNT (0.010 SD increase; 95% CI \u20130.040 to 0.059; heterogeneity p=0.03) (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "c4dd1c58-0d67-4309-be8a-b30d2bcd785d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C55",
+      "claim": "The findings are largely consistent with previous studies that used nonsibling designs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are largely consistent with previous studies (Emerging Risk Factors Collaboration, 2012; Nelson et al., 2015; N\u00fcesch et al., 2016; Hebert et al., 1993; Marouli et al., 2019; Green et al., 2011; Zhang et al., 2015; Thrift et al., 2015; Dixon-Suen et al., 2018; Carslake et al., 2013) that used nonsibling designs, and with the hypothesis that height affects CHD and cancer risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b763a289-4bfd-4479-9835-e5b02ac65432",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C56",
+      "claim": "Previous studies were potentially susceptible to bias relating to geographic and socioeconomic variation in height and height genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies were potentially susceptible to bias relating to geographic and socioeconomic variation in height and height genetic variants (Barton and Hermisson, 2019; Sohail et al., 2019; Lee et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "c362023c-3ddd-4a5f-91b7-2fdbe6d52c7b",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C57",
+      "claim": "A recent within-sibship Mendelian randomization study found that the previously reported effects of height and body mass index on educational attainment were greatly attenuated when using siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent within-sibship Mendelian randomization study found that the previously reported effects of height and body mass index on educational attainment were greatly attenuated when using siblings (Brumpton et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brumpton et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "30504815-d24c-4396-bc83-7c0fdf16c0fa",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C58",
+      "claim": "The study provided robust evidence for individual-level effects of height by demonstrating that the previous evidence for effects of height on adulthood disease risk is unlikely to have been confounded by demography or indirect genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provided robust evidence for individual-level effects of height by demonstrating that the previous evidence for effects of height on adulthood disease risk is unlikely to have been confounded by demography or indirect genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "47613eae-f601-40cd-b4c2-dd8a1bbf5c4f",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C59",
+      "claim": "The major strengths of the work are the use of within-sibship Mendelian randomization and the triangulation of evidence from across phenotypic, genetic, and within-sibship models.",
+      "claim_type": "EXPLICIT",
+      "source": "The major strengths of our work are the use of within-sibship Mendelian randomization (Davies et al., 2019) and the triangulation (Lawlor et al., 2016) of evidence from across phenotypic, genetic, and within-sibship models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the study's methodological strengths.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "08e7aa2b-9850-4aec-b36c-f10ff2f97462",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C60",
+      "claim": "The study has limited statistical power to investigate the effects of height on disease subtypes because of limited sibling data and the statistical inefficiency of within-family models.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of our analyses is that because of limited sibling data and the statistical inefficiency of within-family models, we have limited statistical power to investigate the effects of height on disease subtypes,further explore the mechanisms using multivariable Mendelian randomization (Burgess and Thompson, 2015), and perform sensitivity analyses to evaluate horizontal pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "d97a43f4-bec0-4ffc-acbf-c2f3f53454fd",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C61",
+      "claim": "The study may have been susceptible to selection and survival biases relating to nonrandom participation in UK Biobank and/or HUNT and the requirement of at least two siblings to survive to be recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional limitation is that our study may have been susceptible to selection and survival biases relating to nonrandom participation in UK Biobank and/or HUNT and the requirement of at least two siblings to survive to be recruited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "49e8329e-4e2d-4046-92d5-796379699b6f",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C62",
+      "claim": "Cancer and CHD are both leading worldwide causes of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cancer and CHD are both leading worldwide causes of mortality and so cases for one disease may have a reduced likelihood of developing the other disease due to increased mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about disease burden.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b80eee4d-1437-4804-bb1b-2d1338819a91",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C63",
+      "claim": "Cases for one disease may have a reduced likelihood of developing the other disease due to increased mortality (competing risks).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cancer and CHD are both leading worldwide causes of mortality and so cases for one disease may have a reduced likelihood of developing the other disease due to increased mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about potential survival bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "d6840712-5079-47a6-8c11-f717590fd607",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C64",
+      "claim": "Adulthood height is nonmodifiable.",
+      "claim_type": "EXPLICIT",
+      "source": "Adulthood height is nonmodifiable, and the interpretation of causality is nuanced because it is unclear whether biological effects relate to stature itself, increased childhood growth, or to factors highly correlated with height such as lung function (Marouli et al., 2019; Gunnell et al., 2003) and artery length (Palmer et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is common knowledge about human biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "ef5078be-3400-40eb-a576-d41a2c87eba8",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C65",
+      "claim": "It is unclear whether biological effects of height relate to stature itself, increased childhood growth, or to factors highly correlated with height such as lung function and artery length.",
+      "claim_type": "EXPLICIT",
+      "source": "Adulthood height is nonmodifiable, and the interpretation of causality is nuanced because it is unclear whether biological effects relate to stature itself, increased childhood growth, or to factors highly correlated with height such as lung function (Marouli et al., 2019; Gunnell et al., 2003) and artery length (Palmer et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of mechanistic uncertainty supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "458e96b1-13b7-4934-aff3-4cdda96e43f6",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C66",
+      "claim": "Previous studies have explored the possibility that associations may relate to dimensions of height, with evidence that blood pressure is associated with trunk but not leg length.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies Gunnell et al., 2001; Langenberg et al., 2003; Gunnell et al., 2003; Regnault et al., 2014 have explored the possibility that associations may relate to dimensions of height, with evidence that blood pressure is associated with trunk but not leg length (Regnault et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "eb0ba45d-08c2-4bac-b4b1-dddd621e9dc3",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C67",
+      "claim": "The study found that the effects of height on disease risk due to leg or trunk length were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that the effects of height on disease risk due to leg or trunk length were similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "ab2179ba-84d9-4f49-9209-9a5300e1da16",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C68",
+      "claim": "The study found consistent effects of increased height across etiologically heterogeneous cancer subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent effects of increased height across etiologically heterogeneous cancer subtypes, which implies that the mechanism could relate to the larger number of cells in taller individuals or a generalized growth phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "387fded9-55e3-4378-90fb-079769ea43f8",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C69",
+      "claim": "The consistent effects of increased height across etiologically heterogeneous cancer subtypes implies that the mechanism could relate to the larger number of cells in taller individuals or a generalized growth phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent effects of increased height across etiologically heterogeneous cancer subtypes, which implies that the mechanism could relate to the larger number of cells in taller individuals or a generalized growth phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "f89cebf7-6db3-4276-9083-81d56f3366c4",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C70",
+      "claim": "There is minimal evidence of a correlation between the size of an organism and cancer risk (Peto's paradox).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably there is minimal evidence of a correlation between the size of an organism and cancer risk (Peto's paradox), suggesting that the number of cells hypothesis could influence cancer risk in humans but would not explain variation in cancer risk across different organisms (Caulin and Maley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Caulin and Maley, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "ebca9001-2220-4583-9d8d-e316205b6b8a",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C71",
+      "claim": "The number of cells hypothesis could influence cancer risk in humans but would not explain variation in cancer risk across different organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably there is minimal evidence of a correlation between the size of an organism and cancer risk (Peto's paradox), suggesting that the number of cells hypothesis could influence cancer risk in humans but would not explain variation in cancer risk across different organisms (Caulin and Maley, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on Peto's paradox.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b3780004-f179-436f-9480-91d71db18d97",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C72",
+      "claim": "The estimated effects of height on disease risk were relatively consistent between the Norwegian HUNT and UK Biobank studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated effects of height on disease risk were relatively consistent between the Norwegian HUNT and UK Biobank studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "1d8b0ed9-97db-4449-a43f-412b759fb3e8",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C73",
+      "claim": "The heterogeneity between UK Biobank and HUNT for analyses involving SBP and LDL-C suggests that some effects of height could be population specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, the heterogeneity between UK Biobank and HUNT for analyses involving SBP and LDL-C suggests that some effects of height could be population specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observed heterogeneity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "e352286b-dfcb-49dc-8c12-d5456c938e08",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C74",
+      "claim": "Heterogeneity could relate to the variance in associations between adulthood height and early-life environmental confounders across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, heterogeneity could relate to the variance in associations between adulthood height and early-life environmental confounders across countries (Perkins et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for observed heterogeneity.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "267005dd-711e-4b9c-a758-de4dd3c55ae7",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C75",
+      "claim": "Further work is required to investigate if the findings generalize to non-European populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Further work is required to investigate if our findings generalize to non-European populations; biological mechanisms could be expected to be largely consistent across populations but context-specific (e.g., social) mechanisms could lead to geographic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the need for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9265d666-80c6-4cc2-9989-893f511bbadf",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C76",
+      "claim": "Biological mechanisms could be expected to be largely consistent across populations but context-specific (e.g., social) mechanisms could lead to geographic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further work is required to investigate if our findings generalize to non-European populations; biological mechanisms could be expected to be largely consistent across populations but context-specific (e.g., social) mechanisms could lead to geographic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "6a670e89-1197-4ede-bb84-04def0c2f240",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C77",
+      "claim": "Using within-sibship Mendelian randomization, the study showed that height has individual-level effects on risk of CHD and cancers as well as several biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, using within-sibship Mendelian randomization, we showed that height has individual-level effects on risk of CHD and cancers as well as several biomarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b2247818-4fda-4242-9baf-407f7654e83d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C78",
+      "claim": "Larger family datasets and additional analyses including two-step and multivariable Mendelian randomization could be used to investigate the potential mediators of the relationships between height and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger family datasets and additional analyses including two-step (Relton and Davey Smith, 2012) and multivariable Mendelian randomization (Burgess and Thompson, 2015) could be used to investigate the potential mediators of these relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "d0ad63ad-3961-4910-834b-f90c864cd23c",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C79",
+      "claim": "From Mendel's law of segregation, a heterozygous parent has an equal chance of transmitting either allele to offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "From Mendel's law of segregation, parent 1, who is heterozygous at this allele, has an equal chance of transmitting either an H+ or H- allele to offspring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established genetic knowledge illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "7654fbbb-244e-4809-93b1-8f87a00790ca",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C80",
+      "claim": "On average, heterozygous offspring will be taller than homozygous H- offspring, with this difference a consequence of random segregation of gametes.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the heterozygous offspring will be taller than the homozygous H- offspring, with this difference a consequence of random segregation of gametes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an illustration of Mendelian randomization principles shown in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "9b91a9d9-b1c2-44b0-bb34-2d5f2e204bef",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C81",
+      "claim": "The association of measured height with a subset of cancers (lung, oropharyngeal, stomach, esophageal, pancreatic, bladder, and multiple myeloma) was less strong than the association between height and the all-cancer outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the association of measured height with this subset of cancers (population OR 0.99; 95% CI 0.92\u20131.06; within-sibship OR 1.01; 95% CI 0.88\u20131.15) was less strong than the association between height and the all-cancer outcome (population OR 1.05; 95% CI 1.02\u20131.07; within-sibship OR 1.05; 95% CI 1.01\u20131.09).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "a3d3fe2d-b144-4907-9ad5-7228f17016d0",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C82",
+      "claim": "Both population and within-sibship models found evidence for the association between taller height and lower SBP, lower circulating LDL-C, and higher circulating IGF-1 levels using measured biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using measured biomarkers, both population and within-sibship models found evidence for the association between taller height and lower SBP, lower circulating LDL-C, and higher circulating IGF-1 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the phenotypic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "353820ac-aa1a-48db-afe9-a96d163627e5",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C83",
+      "claim": "There was some evidence for heterogeneity in phenotypic associations between height and biomarkers in UK Biobank and HUNT, such as for SBP, which was more strongly associated with height in UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "There was some evidence for heterogeneity in phenotypic associations between height and biomarkers in UK Biobank and HUNT, such as for SBP, which was more strongly associated with height in UK Biobank (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the phenotypic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "244f35b5-9c05-478a-b589-b937ec2c65e3",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C84",
+      "claim": "The study found little evidence of heterogeneity between estimates for dimensions of height (trunk length, leg length, and leg to trunk ratio) and risk of CHD/cancer in UK Biobank, although stronger conclusions are limited by statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "We found little evidence of heterogeneity between estimates, although stronger conclusions are limited by statistical power (Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "a5b4a2e9-71c6-4694-ac9a-41a0f8e5de8d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "claim_id": "C85",
+      "claim": "The study found consistent evidence across population and within-sibship models, using both measured height and a height PGS, that taller adulthood height reduced CHD risk and increased the risk of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found consistent evidence across population and within-sibship models, using both measured height and a height PGS, that taller adulthood height reduced CHD risk and increased the risk of cancer (Supplementary file 1B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Within-sibship Mendelian randomization demonstrates that increased height causally reduces coronary heart disease risk by 14% (95% CI: 3\u201323%) and increases cancer risk by 18% (95% CI: 3\u201334%) per standard deviation increase in height. These estimates are highly consistent with population MR estimates (CHD: 10% reduction, 95% CI: 4\u201316%; cancer: 9% increase, 95% CI: 2\u201316%) and phenotypic associations, suggesting robustness across analytical approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C46, C47, and C85 collectively provide strong, converging evidence from multiple analytical approaches (within-sibship MR, population MR, and phenotypic models) showing consistent effect estimates for height on CHD and cancer. The within-sibship design controls for demographic and familial confounding, strengthening causal inference. Effect sizes are precisely estimated with non-overlapping confidence intervals excluding the null for most estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "4dd152f8-946c-49a4-a6b4-0831a9b409d4",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study demonstrates that the effects of height on disease risk reflect individual-level causal effects rather than confounding by demographic factors (population stratification, assortative mating) or familial indirect genetic effects. This conclusion is based on the consistency between within-sibship and population MR estimates, which would diverge if such biases were substantial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C58, and C77 are well-supported by the convergence of within-sibship and population MR estimates (C5, C6, C46, C47). The within-sibship design explicitly controls for shared environmental and parental genetic effects, and the similarity of estimates across designs provides strong evidence against demographic/familial confounding. This represents a key methodological advance over prior population-based studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There is evidence that taller height reduces systolic blood pressure (population MR: 0.036 SD decrease, 95% CI: 0.014\u20130.058) and LDL cholesterol (population MR: 0.065 SD decrease, 95% CI: 0.044\u20130.087). Within-sibship MR estimates are directionally consistent but less precise (SBP: 0.025 SD decrease, 95% CI: \u20130.013 to 0.063; LDL-C: 0.041 SD decrease, 95% CI: 0.005\u20130.078).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C8, C48, C49, and C53 show consistent directional effects across population and within-sibship models, but the within-sibship estimates have wide confidence intervals that include the null for SBP. Additionally, significant heterogeneity exists between UK Biobank and HUNT for SBP (C54, heterogeneity p=0.03), with opposite effect directions. The evidence is suggestive but not definitive, particularly for mediation claims (C9).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b4fb11af-8170-4941-90e3-f29d65870d31",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that reduced systolic blood pressure and LDL cholesterol may mediate the protective effects of height on coronary heart disease risk, based on observed associations between height and these biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C9, C18, and C19 are speculative mediation hypotheses not formally tested in this study. The authors acknowledge limited power for multivariable MR analyses (C60), which would be required to establish mediation. The observed associations with biomarkers are modest and inconsistent across cohorts (C54, C73), and no formal mediation analysis or two-step MR was performed. The claim remains a hypothesis requiring future investigation (C78).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "7abb47e6-4ecc-48b5-a222-832272fc7a95",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study found heterogeneity between UK Biobank and HUNT cohorts for some biomarker associations, particularly for systolic blood pressure (within-sibship heterogeneity p=0.03), while disease risk estimates were relatively consistent across cohorts. This suggests potential population-specific effects for some intermediate phenotypes but not for primary disease outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C72, C73, and C83 are supported by the reported heterogeneity statistics and cohort-specific estimates in Table 2. The significant heterogeneity for SBP (opposite effect directions in UK Biobank vs. HUNT) is clearly documented, while CHD and cancer estimates show consistency. However, the authors appropriately note multiple potential explanations (measurement differences, selection bias, true population differences) without definitive resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "66e7db9c-3e9d-4688-970e-b58f8bff889d",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study found similar effects of height on disease risk across different height dimensions (leg length, trunk length, leg-to-trunk ratio) and consistent effects across etiologically heterogeneous cancer subtypes, suggesting mechanisms related to overall stature or cell number rather than specific anatomical components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67, C68, C69, and C84 are based on sensitivity analyses with acknowledged limited statistical power. While the point estimates show consistency, the confidence intervals are wide and the authors explicitly state that \"stronger conclusions are limited by statistical power.\" The mechanistic inference about cell number (C69) is speculative and not directly tested. Additional data would be needed to definitively support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "fb797e03-f60d-45b0-9779-f65742a68259",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study has important limitations including limited statistical power for subtype analyses and potential selection/survival biases related to cohort participation requirements and competing risks between cancer and CHD mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, and C63 accurately describe acknowledged study limitations. The power limitation is evident in wide confidence intervals for within-sibship estimates and subgroup analyses. The survival bias concern is valid given that both diseases are major causes of mortality and the study requires sibling survival to recruitment age. These are appropriately recognized limitations that temper interpretation of some findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "6b208301-ab47-474f-aa8b-602b662a3270",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior population-based Mendelian randomization studies of height and disease risk were potentially biased by demographic factors (population stratification, assortative mating) and familial indirect genetic effects, as demonstrated by recent literature showing attenuation of genetic associations in within-family designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C33, C34, C56, and C57 accurately represent the motivation for this study based on recent methodological literature. The citations to Berg et al., 2019, Sohail et al., 2019, and Brumpton et al., 2019 appropriately document concerns about bias in population genetic studies. However, the current study's finding that within-sibship and population estimates are similar (C5, C6, C46, C47) suggests these biases may be less substantial for height-disease associations than for other phenotypes like educational attainment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "597cfb96-988b-4861-909c-d1f61eabcdfc",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Within-sibship Mendelian randomization exploits random segregation of alleles during meiosis and shared family environment to control for demographic and indirect genetic effects, representing a return to the original conception of Mendelian randomization in family-based designs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C79, and C80 accurately describe the methodological approach and its theoretical foundation. The explanation of Mendelian segregation is correct and well-illustrated in Figure 1. The citations to Smith and Ebrahim, 2003 and Davey Smith et al., 2020 appropriately document the historical development of MR methodology. This represents established genetic epidemiological knowledge correctly applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "5924852f-29c8-4b49-bf67-79c751142919",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study utilized 40,275 siblings from UK Biobank and 38,723 siblings from HUNT, with height polygenic scores constructed from 372 independent genetic variants from a non-overlapping GWAS, providing adequate sample size and genetic instrumentation for Mendelian randomization analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37\u2013C42 and C45 accurately describe the study design and samples as documented in Table 1 and Methods. The sample sizes are substantial for sibling studies, the PGS construction is methodologically sound using independent variants from non-overlapping discovery samples, and case numbers are adequate for primary disease outcomes (3,006 CHD and 6,724 cancer cases in UK Biobank). The descriptive statistics are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "b3fc94f0-5406-45f4-aa4c-6634d9def4e7",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss potential mechanisms for height-cancer associations, including early-life IGF-1 exposure and increased cell number in taller individuals, while noting that Peto's paradox suggests the cell number hypothesis may not explain cross-species variation in cancer risk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, C70, and C71 appropriately present speculative mechanistic hypotheses supported by relevant citations. The discussion of Peto's paradox (C70, C71) correctly notes a limitation of the cell number hypothesis when considering cross-species comparisons, while acknowledging it may still be relevant within humans. These are appropriately framed as speculative mechanisms requiring further investigation rather than tested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    },
+    {
+      "id": "4e892fe9-6eb2-40d3-b654-8f1eeb9363cc",
+      "content_id": "e137632b-23f2-441d-94d2-33534b57031b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors identify important directions for future research, including investigation of generalizability to non-European populations and use of larger family datasets with multivariable MR to investigate mediating mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C76, and C78 appropriately identify limitations of the current study (European-only populations, limited power for mediation analyses) and suggest logical next steps. These represent reasonable research recommendations given the study's findings and limitations. The distinction between biological mechanisms (expected to be consistent) and social mechanisms (potentially population-specific) is a thoughtful consideration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:49:01.418652Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "29d1042e-aa1d-4003-bb3c-762b7e744eec",
+      "result_id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27"
+    },
+    {
+      "claim_id": "d450874d-23b2-4bbb-aa53-8807ae0b3c18",
+      "result_id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27"
+    },
+    {
+      "claim_id": "11311652-d8c2-4589-a3c3-d1f954b46a02",
+      "result_id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27"
+    },
+    {
+      "claim_id": "7886b2d3-882b-4610-999b-d3096db98528",
+      "result_id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27"
+    },
+    {
+      "claim_id": "a5b4a2e9-71c6-4694-ac9a-41a0f8e5de8d",
+      "result_id": "fa6400cb-a8c0-4cfa-8941-03d75a91ca27"
+    },
+    {
+      "claim_id": "8f3ad262-dcc1-4075-9b2f-36202a232568",
+      "result_id": "4dd152f8-946c-49a4-a6b4-0831a9b409d4"
+    },
+    {
+      "claim_id": "6bd1ce79-9b59-4b91-b77a-1cf33a4fdc92",
+      "result_id": "4dd152f8-946c-49a4-a6b4-0831a9b409d4"
+    },
+    {
+      "claim_id": "30504815-d24c-4396-bc83-7c0fdf16c0fa",
+      "result_id": "4dd152f8-946c-49a4-a6b4-0831a9b409d4"
+    },
+    {
+      "claim_id": "6a670e89-1197-4ede-bb84-04def0c2f240",
+      "result_id": "4dd152f8-946c-49a4-a6b4-0831a9b409d4"
+    },
+    {
+      "claim_id": "55421570-26a4-44c0-a8be-0c70e516b284",
+      "result_id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a"
+    },
+    {
+      "claim_id": "622a4933-6530-4724-ab1f-4b0821a73182",
+      "result_id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a"
+    },
+    {
+      "claim_id": "9639d069-06f8-4095-90d5-d77a2fe081b4",
+      "result_id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a"
+    },
+    {
+      "claim_id": "9240ae61-f316-46d7-a3e9-69f299b6691e",
+      "result_id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a"
+    },
+    {
+      "claim_id": "7abbffb5-25d6-49ba-ada8-26636c681d48",
+      "result_id": "d8a3b76b-f056-4eaf-afda-85ac7a39d25a"
+    },
+    {
+      "claim_id": "04230698-1bbd-4c87-b4e4-a83e251000e3",
+      "result_id": "b4fb11af-8170-4941-90e3-f29d65870d31"
+    },
+    {
+      "claim_id": "8a7b0eb5-eb7e-4578-b3e8-377fdaa3ed45",
+      "result_id": "b4fb11af-8170-4941-90e3-f29d65870d31"
+    },
+    {
+      "claim_id": "3d1ecd5c-7363-4996-97a4-6c2633e7fd4d",
+      "result_id": "b4fb11af-8170-4941-90e3-f29d65870d31"
+    },
+    {
+      "claim_id": "459dd5c5-45b2-47fe-8b7c-df9fe160de0f",
+      "result_id": "7abb47e6-4ecc-48b5-a222-832272fc7a95"
+    },
+    {
+      "claim_id": "b3780004-f179-436f-9480-91d71db18d97",
+      "result_id": "7abb47e6-4ecc-48b5-a222-832272fc7a95"
+    },
+    {
+      "claim_id": "1d8b0ed9-97db-4449-a43f-412b759fb3e8",
+      "result_id": "7abb47e6-4ecc-48b5-a222-832272fc7a95"
+    },
+    {
+      "claim_id": "353820ac-aa1a-48db-afe9-a96d163627e5",
+      "result_id": "7abb47e6-4ecc-48b5-a222-832272fc7a95"
+    },
+    {
+      "claim_id": "eb0ba45d-08c2-4bac-b4b1-dddd621e9dc3",
+      "result_id": "66e7db9c-3e9d-4688-970e-b58f8bff889d"
+    },
+    {
+      "claim_id": "ab2179ba-84d9-4f49-9209-9a5300e1da16",
+      "result_id": "66e7db9c-3e9d-4688-970e-b58f8bff889d"
+    },
+    {
+      "claim_id": "387fded9-55e3-4378-90fb-079769ea43f8",
+      "result_id": "66e7db9c-3e9d-4688-970e-b58f8bff889d"
+    },
+    {
+      "claim_id": "244f35b5-9c05-478a-b589-b937ec2c65e3",
+      "result_id": "66e7db9c-3e9d-4688-970e-b58f8bff889d"
+    },
+    {
+      "claim_id": "08e7aa2b-9850-4aec-b36c-f10ff2f97462",
+      "result_id": "fb797e03-f60d-45b0-9779-f65742a68259"
+    },
+    {
+      "claim_id": "d97a43f4-bec0-4ffc-acbf-c2f3f53454fd",
+      "result_id": "fb797e03-f60d-45b0-9779-f65742a68259"
+    },
+    {
+      "claim_id": "b80eee4d-1437-4804-bb1b-2d1338819a91",
+      "result_id": "fb797e03-f60d-45b0-9779-f65742a68259"
+    },
+    {
+      "claim_id": "624eb47e-dfaa-4713-84f7-a0de433a494c",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "30bffbde-88df-45f9-a469-56c8fcd51990",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "9e1de979-3177-40f0-9637-6fc76c9719fa",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "0076b36f-d3a7-40dc-bf7e-766f45e73265",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "b763a289-4bfd-4479-9835-e5b02ac65432",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "c362023c-3ddd-4a5f-91b7-2fdbe6d52c7b",
+      "result_id": "6b208301-ab47-474f-aa8b-602b662a3270"
+    },
+    {
+      "claim_id": "162960c3-8745-4007-93d7-7d64c546feaa",
+      "result_id": "597cfb96-988b-4861-909c-d1f61eabcdfc"
+    },
+    {
+      "claim_id": "4cc4d669-4342-4fd5-8f30-c69ed444f14d",
+      "result_id": "597cfb96-988b-4861-909c-d1f61eabcdfc"
+    },
+    {
+      "claim_id": "d0ad63ad-3961-4910-834b-f90c864cd23c",
+      "result_id": "597cfb96-988b-4861-909c-d1f61eabcdfc"
+    },
+    {
+      "claim_id": "7654fbbb-244e-4809-93b1-8f87a00790ca",
+      "result_id": "597cfb96-988b-4861-909c-d1f61eabcdfc"
+    },
+    {
+      "claim_id": "8fc4b709-b4fd-4101-9b22-7b395317504f",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "4c85d91a-717c-4a95-8544-89e5f11f7ff1",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "f0000fab-541f-4f1d-bf5b-1af15d4d6060",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "0ae0bba8-7ca3-433e-ba9f-8189507af47d",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "633bd8df-8bfd-4a67-b36a-3872142daaf0",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "95ce9a3a-a660-4d20-bfb5-057a08ae87fc",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "b6072a8f-d0f3-48c0-828a-6a150d24bc82",
+      "result_id": "5924852f-29c8-4b49-bf67-79c751142919"
+    },
+    {
+      "claim_id": "b84b8a38-fa97-4c34-95c8-02c1fd235cfe",
+      "result_id": "b3fc94f0-5406-45f4-aa4c-6634d9def4e7"
+    },
+    {
+      "claim_id": "180b0d0b-7b6b-4f83-9022-0db334989a09",
+      "result_id": "b3fc94f0-5406-45f4-aa4c-6634d9def4e7"
+    },
+    {
+      "claim_id": "f89cebf7-6db3-4276-9083-81d56f3366c4",
+      "result_id": "b3fc94f0-5406-45f4-aa4c-6634d9def4e7"
+    },
+    {
+      "claim_id": "ebca9001-2220-4583-9d8d-e316205b6b8a",
+      "result_id": "b3fc94f0-5406-45f4-aa4c-6634d9def4e7"
+    },
+    {
+      "claim_id": "267005dd-711e-4b9c-a758-de4dd3c55ae7",
+      "result_id": "4e892fe9-6eb2-40d3-b654-8f1eeb9363cc"
+    },
+    {
+      "claim_id": "9265d666-80c6-4cc2-9989-893f511bbadf",
+      "result_id": "4e892fe9-6eb2-40d3-b654-8f1eeb9363cc"
+    },
+    {
+      "claim_id": "b2247818-4fda-4242-9baf-407f7654e83d",
+      "result_id": "4e892fe9-6eb2-40d3-b654-8f1eeb9363cc"
+    }
+  ],
+  "comparisons": []
+}

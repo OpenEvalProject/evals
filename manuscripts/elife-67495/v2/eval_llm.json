@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript defines three key cell cycle periods: the C period (time between initiation and termination of chromosome replication), the D period (time between replication termination and division), and the I period (time between subsequent initiations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide standard definitions of bacterial cell cycle periods that are well-established in the field. These are definitional claims supported by general knowledge and are consistently used throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The manuscript reviews three classes of models for E. coli division control: (1) DNA replication/segregation-limited models, (2) chromosome-independent accumulator models, and (3) the concurrent-cycles model that proposes both processes can limit division. Previous single-process models fail to explain experimental data on cell cycle subperiods, while the concurrent-cycles model can fit available datasets but has more parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C39 accurately summarize the state of the field based on cited literature. The characterization of existing models, their predictions, and their limitations are well-documented with appropriate citations. The acknowledgment that the concurrent-cycles model has more parameters (C39) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Prior work (Zheng et al., 2016) showed that increasing cell width through MreB-actin cytoskeleton titration increases the D period without affecting C period or cell-cycle duration. The authors hypothesize this might correspond to DNA replication becoming less limiting and the inter-division process becoming more limiting for cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 accurately cite prior experimental observations. Claims C43-C44 appropriately present the authors' hypothesis as speculation rather than established fact. This provides the rationale for the experimental approach taken in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors used a modified E. coli wildtype strain (NCM3722) with cytoplasmic mCherry and YPet-DnaN fusion markers, grown in microfluidic 'mother machines' in minimal medium (M9+NH4Cl+glycerol) where replication rounds do not overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 describe the experimental system with appropriate citations. The strain construction, marker properties, and growth conditions are clearly documented. The choice of minimal medium to prevent overlapping replication rounds is well-justified for the experimental goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In unperturbed cells, the average C period is 51\u00b11 min and D period is 22\u00b14 min, in agreement with previous bulk measurements. The authors acknowledge a ~5 min systematic bias in C and D period measurements due to DnaN remaining bound after termination, but note this does not affect their analysis based on combined C+D periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 present experimental measurements with appropriate error estimates and citation to prior work showing agreement. The acknowledgment of systematic measurement bias (C60-C62) and explanation of why it doesn't affect conclusions (C63) demonstrates scientific rigor and transparency about limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Treatment with increasing concentrations of the MreB inhibitor A22 systematically increases steady-state cell width without affecting cell-to-cell width fluctuations, doubling time, single-cell growth rate, or growth-rate fluctuations. This leads to an increased D period while the C period and initiation volume remain constant, with cell-to-cell fluctuations in period durations remaining constant or decreasing mildly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C76 present a comprehensive characterization of the A22 perturbation with references to multiple figure panels. The results show the perturbation specifically affects width and D period while leaving other parameters unchanged, which is critical for the interpretation. The consistency with prior work (C71-C73) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C86",
+      "C87"
+    ],
+    "result": "Cells show near-adder behavior between birth and division (\u03b6G\u22480) with a weak trend toward sizer at high A22 concentrations, and robust adder behavior between subsequent replication initiations (\u03b6I\u22480) that is independent of A22 treatment and growth rate variations. The constancy of \u03b6I and initiation volume suggests replication initiation is unaffected by A22-induced widening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C81, C86-C87 present key experimental observations with appropriate statistical analysis (coupling constants) and references to figures. The adder behavior is consistent with prior literature, and the robustness across conditions strengthens the conclusions. The inference that replication initiation is unaffected (C87) is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Correlations between initiation size and division size systematically change with increasing D period, with \u03b6CD continuously changing toward -1. This corresponds to division size becoming increasingly independent of initiation size, suggesting a process different from DNA replication increasingly controls division. This effect is not due to replication spreading across division events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 present the central experimental finding with appropriate quantification and controls. The systematic change in \u03b6CD (C90) is well-documented in figures, and the interpretation (C91-C92, C95) follows logically from the data. The control for replication timing relative to division (C93-C94) addresses a potential confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The concurrent-cycles model assumes two processes (replication/segregation and inter-division) must complete for division, with control parameters \u03b6CD', \u03b6H, and \u03b6I. For fitting, the authors set \u03b6I=0 (adder) based on experimental data, \u03b6CD'=1 (timer) for replication/segregation, and \u03b6H=0 (adder) for inter-division. The model outputs pH, the probability that inter-division is limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 clearly describe the model structure and fitting strategy. The assumptions are justified based on experimental observations (C99) or prior work (C100-C102). The model is appropriately constrained to be testable, though some assumptions (particularly C100) involve speculation about unmeasurable parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Model fitting shows that increasing D period leads to increased pH (probability of inter-division process being limiting). The model predicts that under unperturbed conditions, DNA replication and the inter-division process are almost equally likely to limit division (pH\u22480.5), but with A22 perturbation, the inter-division process becomes increasingly limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 present model predictions that are consistent with the experimental observations. The prediction of balanced processes in unperturbed cells (C105) is supported by prior work cited, and the shift with perturbation (C106) follows logically from the increased D period. However, the model has multiple parameters and assumptions that could affect these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C113",
+      "C114"
+    ],
+    "result": "Both single-process models tested (Si et al., 2019 and Witz et al., 2019) appear incompatible with the experimental data in both perturbed and unperturbed conditions, while the concurrent-cycles model describes the data well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107, C113-C114 present model comparison results with reference to Figure 4C. The incompatibility of single-process models is demonstrated by their inability to capture the observed relationship between \u03b6G and \u03b6CD across conditions. However, the evaluation would be stronger with quantitative goodness-of-fit metrics rather than visual assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Fitting the model to multiple datasets reveals pH\u22480.5 at slow growth (doubling time <1.4 hr) and pH increases with decreasing doubling time, in qualitative agreement with recent work by Tiruvadi-Krishnan et al., 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 extend the analysis to literature data, but the authors acknowledge that part of the pH increase at fast growth might be due to decreasing accuracy of detecting replication initiation during overlapping rounds. This caveat undermines confidence in the quantitative conclusions about growth-rate dependence, though the qualitative trend may be real.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C50",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C162"
+    ],
+    "result": "The study concludes that cell division is controlled by at least two concurrent processes: genome replication/segregation and an inter-division process relating division to birth size. In unperturbed cells, these processes have balanced contributions, but width perturbations increase the odds of the inter-division process being limiting. Division and replication cannot proceed fully independently, as evidenced by correlations in unperturbed cells, but division becomes decreasingly dependent on replication with increasing D period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C50, C111-C112, C115-C122, C162 present the main conclusions, which are well-supported by the experimental observations and model fitting. The evidence includes: (1) maintained correlations between birth and division (C8-C9), (2) changing correlations between initiation and division with perturbation (C88-C92), (3) superior fit of concurrent-cycles model (C107, C113-C114), and (4) systematic changes in pH with D period (C104-C106). The conclusions appropriately acknowledge limitations and alternative interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The concurrent-cycles model suggests the inter-division process is adder-like (\u03b6H\u22480) with a mild trend toward sizer with increasing perturbation. This is supported by experiments with dividing filamentous cells where DNA replication is likely never limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 present model results and supporting evidence from independent experiments. The adder-like nature is consistent with the experimental observations (C78), and the support from filamentous cell experiments (C125) provides independent validation. However, the trend toward sizer (C124) is described as 'mild' and may be within experimental uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Multiple studies have suggested licensing molecules (cell-wall precursors, FtsZ, or other divisome components) that accumulate since birth and reach a threshold at division. However, recent work shows cell surface area grows proportionally to biomass, making equal rates of peptidoglycan synthesis and insertion more likely. FtsZ correlates with z-ring formation and affects division timing, but its expression is cell-cycle dependent, requiring further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 provide a balanced review of potential molecular mechanisms with appropriate citations. The discussion acknowledges both supporting evidence (C131-C132) and complications (C129-C130, C133) for proposed mechanisms. The conclusion that further investigation is needed (C134) is appropriately cautious given the conflicting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Z-ring formation and DNA segregation are coupled through nucleoid occlusion (which inhibits Z-ring formation on nucleoids) and ter linkage (linking Z-ring to terminal chromosome regions). FtsZ expression increases stepwise during the cell cycle, with Z-ring formation predominantly after increased production. However, which process couples replication timing to division remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C140 summarize established mechanisms from the literature with appropriate citations. The acknowledgment that the specific coupling mechanism remains unknown (C140) is scientifically appropriate given current knowledge. These claims provide context for interpreting the results but don't constitute new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The concurrent-cycles model predicts pH\u22480.5 in two minimal growth media and in previous slow-growth experiments. Recent work by Tiruvadi-Krishnan et al., 2021 shows high temporal correlations between replication termination and z-ring constriction at slow growth (supporting replication limiting division) but decreased correlations at fast growth, in qualitative agreement with the concurrent-cycles model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 compare model predictions with independent experimental data from the literature. The consistency between the model and independent observations (C143-C144) provides external validation. However, the comparison is qualitative rather than quantitative, and the authors acknowledge potential confounds at fast growth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The balance between replication/segregation and inter-division processes at slow growth is surprising, requiring both to terminate at the same average cell volume. This requires \u0394H to scale proportionally to 2^[(C+D')/\u03c4]. Recent work identified a linear (not exponential) relationship between cell size and growth rate, and suggested an accumulator model where the threshold molecule is produced at a rate proportional to 1/(C+D), supported by theoretical work and nutrient-shift data. Constitutive divisor expression could explain pH maintenance across conditions, but the balance breaks when only one process is modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C156 provide theoretical analysis and connect to recent literature. The mathematical relationship (C148) follows from the model assumptions, and the discussion of recent findings (C149-C154) is accurate with appropriate citations. The hypothesis about constitutive expression (C155) is appropriately presented as speculation, and the observation about breaking the balance (C156) is supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The concurrent-cycles framework assumes replication initiation is independent of cell division based on robust adder behavior between initiations, though DNA replication may not be entirely independent of division. Alternative hypotheses suggest possible connections of initiation to the preceding division event. Cell-cycle regulation remains to be understood mechanistically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 discuss alternative models and acknowledge limitations of the current framework. The assumption of independence (C158) is justified by experimental data, but the acknowledgment of alternatives (C159-C160) and remaining unknowns (C161) demonstrates appropriate scientific caution. These claims appropriately frame the work within broader questions in the field.",
+    "result_type": "MINOR"
+  }
+]

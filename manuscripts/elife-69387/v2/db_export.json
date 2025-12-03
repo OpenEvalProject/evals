@@ -1,0 +1,1734 @@
+{
+  "submission": {
+    "id": "0f545c6b-c228-49c9-ac37-dbded6ab20e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:18:03.460164Z",
+    "updated_at": "2025-12-03T06:18:03.460164Z"
+  },
+  "content": [
+    {
+      "id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "submission_id": "0f545c6b-c228-49c9-ac37-dbded6ab20e6",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule imaging of chromatin remodelers reveals role of ATPase in promoting fast kinetics of target search and dissociation from chromatin\n\n## Authors\n\n- Jee Min Kim<sup>1</sup>\n- Pat Visanpattanasin<sup>1</sup> ([ORCID: 0000-0002-9506-8360](https://orcid.org/0000-0002-9506-8360))\n- Vivian Jou<sup>1</sup>\n- Sheng Liu<sup>1</sup>\n- Xiaona Tang<sup>1</sup>\n- Qinsi Zheng<sup>2</sup>\n- Kai Yu Li<sup>1</sup>\n- Jonathan Snedeker<sup>1</sup>\n- Luke D Lavis<sup>2</sup>\n- Timothee Lionnet<sup>3</sup>\n- Carl Wu<sup>1</sup> ([ORCID: 0000-0001-6933-5763](https://orcid.org/0000-0001-6933-5763)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Johns Hopkins University Baltimore United States\n2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n3. Institute of Systems Genetics, Langone Medical Center, New York University New York United States\n4. Department of Molecular Biology and Genetics, Johns Hopkins School of Medicine Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nConserved ATP-dependent chromatin remodelers establish and maintain genome-wide chromatin architectures of regulatory DNA during cellular lifespan, but the temporal interactions between remodelers and chromatin targets have been obscure. We performed live-cell single-molecule tracking for RSC, SWI/SNF, CHD1, ISW1, ISW2, and INO80 remodeling complexes in budding yeast and detected hyperkinetic behaviors for chromatin-bound molecules that frequently transition to the free state for all complexes. Chromatin-bound remodelers display notably higher diffusion than nucleosomal histones, and strikingly fast dissociation kinetics with 4\u20137 s mean residence times. These enhanced dynamics require ATP binding or hydrolysis by the catalytic ATPase, uncovering an additional function to its established role in nucleosome remodeling. Kinetic simulations show that multiple remodelers can repeatedly occupy the same promoter region on a timescale of minutes, implicating an unending \u2018tug-of-war\u2019 that controls a temporally shifting window of accessibility for the transcription initiation machinery.\n\n## Introduction\n\nEukaryotic chromatin is assembled in nucleosomes and higher order structures that compact the DNA for genome folding in the cell nucleus. Nucleosomes are actively organized at promoter and enhancer elements that are hypersensitive to nuclease digestion (Almer and H\u00f6rz, 1986; Heintzman et al., 2007; Wu, 1980). In the budding yeast Saccharomyces cerevisiae, gene promoters contain nucleosome-depleted regions (NDRs), approximately 150 base-pair stretches of DNA that are depleted of nucleosomes (Yuan, 2005). Non-canonical nucleosome conformations, often called \u2018fragile nucleosomes\u2019, and non-histone protein-DNA complexes, are also observed by limited MNase treatment and occupy a subset of NDRs (Floer et al., 2010; Kubik et al., 2015; Prajapati et al., 2020). NDRs are flanked by well-positioned +1 and \u22121 nucleosomes, with the +1 nucleosome overlapping the transcription start site (TSS) in yeast (Albert et al., 2007; Yuan, 2005). The +1 nucleosome also phases downstream nucleosome positions in regularly spaced locations which become progressively less well-positioned into the gene body (Lai and Pugh, 2017; Mavrich et al., 2008). This arrangement of nucleosomes is important for the accurate engagement of transcription regulators and the transcription pre-initiation complex [PIC], as well as the progression of the transcription machinery after initiation.\n\nATP-dependent chromatin remodelers are key trans-acting factors in establishing and maintaining nucleosome organization around genes (Becker and Workman, 2013; Rando and Winston, 2012; Zhang et al., 2011). As specialized members of the superfamily 2 (SF2) translocases, chromatin remodeling enzymes share a highly conserved ATPase motor that utilizes DNA translocation as the fundamental mechanism to restructure DNA-histone contacts within nucleosomes. In addition to the core ATPase domain, chromatin remodelers harbor additional functional domains and accessory subunits, forming multiprotein complexes up to ~1 MDa in size that show substantial functional diversity. They are further classified into four sub-families based on sequence homology of the catalytic ATPase and possession of shared components, namely the SWI/SNF [Switch defective/sucrose non-fermenting], CHD [Chromodomain helicase DNA-binding], ISWI [Imitation switch], and INO80 [Inositol requiring 80] sub-families.\n\nIn vivo studies of remodelers in yeast revealed their distinct genome-wide specificities and functions in the multi-stage transcription process (Yen et al., 2012). In this context, remodelers can be distinguished based on their in vivo specificities for nucleosome targets genome-wide. The first group of remodelers, RSC, SWI/SNF, INO80, and ISW2, mainly act at gene promoter regions to define the +1 and \u22121 nucleosome positions. RSC and SWI/SNF mobilize the +1 and \u22121 nucleosomes away from the NDR relative to the TSS to promote proper engagement of transcription initiation machinery (Ganguli et al., 2014; Klein-Brill et al., 2019; Kubik et al., 2018). Specifically, RSC assists NDR formation for the majority of yeast genes, and the consequence of conditional RSC inactivation is a global loss of transcription (Brahma and Henikoff, 2019; Ganguli et al., 2014; Kubik et al., 2018; Yen et al., 2012). This has led to the concept of RSC (and SWI/SNF) as nucleosome \u2018pushers,\u2019 widening the NDR (Kubik et al., 2019). Antagonizing the pushing actions of RSC and SWI/SNF are INO80 and ISW2 (Klein-Brill et al., 2019; Kubik et al., 2019; Shimada et al., 2008; Yen et al., 2012). Both ISW2 and INO80 remodelers reposition the +1 and \u22121 nucleosomes towards the NDR in vivo, which is important for suppressing yeast cryptic transcription via noncanonical TSS usage (Klein-Brill et al., 2019; Kubik et al., 2019; Whitehouse et al., 2007). Furthermore, INO80 and ISW2 are implicated in DNA replication (Au et al., 2011; Lee et al., 2015; Vincent et al., 2008) and INO80 in DNA damage repair (Morrison et al., 2004; van Attikum et al., 2004).\n\nThe second group of remodelers, CHD1 and ISW1, act primarily in the gene body where they maintain proper nucleosome spacing and density relative to the +1 nucleosome. Their actions are coupled to transcription elongation by interacting with the elongating polymerase to maintain nucleosome density and thus suppress cryptic initiation within the gene body (Cheung et al., 2008; Radman-Livaja et al., 2012; Smolle et al., 2012). Remodelers with similar in vivo activities are functionally redundant as shown by stronger effects due to multiple deletions or depletions, compared to single deletion or depletion (Kubik et al., 2019; Ocampo et al., 2016). Furthermore, remodelers act competitively to fine-tune nucleosome positions around genes, leading to proper transcriptional regulation (Kubik et al., 2019; Ocampo et al., 2016; Ocampo et al., 2019; Parnell et al., 2015). These results further highlight the current perspective that nucleosomes located around genes are highly dynamic rather than static, and that the concerted actions of multiple remodelers result in the striking steady-state nucleosome organization observed by genome-wide mapping experiments. However, despite this knowledge, a gap still lies in our understanding of their real-time dynamics and timescales of remodeler interactions on their chromatin targets.\n\nHere, we utilize single-molecule tracking (SMT) to directly observe and characterize the chromatin-binding kinetics of ATP-dependent chromatin remodelers in living cells (Lionnet and Wu, 2021). We investigated a comprehensive set of remodelers (RSC, SWI/SNF, CHD1, ISW1, ISW2, INO80) acting at gene promoter regions and gene bodies, allowing us to quantify and compare their in vivo dynamics. We show that remodelers have varying but substantial frequencies of chromatin binding, while exhibiting a common target search strategy of frequently engaging in highly transient (sub-second) chromatin interactions and stable residence times of only several seconds. We also discovered that the catalytic ATPase is responsible for enhancing their chromatin-associated diffusion and fast dissociation rates. By integrating the kinetic parameters measured for individual chromatin remodelers with values from genomic studies, we could simulate substantial temporal occupancies at yeast chromatin targets, leading to a tug-of-war model for the organization and dynamic positioning of the nucleosome landscape.\n\n## Results\n\n### Chromatin remodelers exist in chromatin bound and free populations\n\nWe tagged the catalytic subunits of six major chromatin remodeling complexes, RSC, SWI/SNF, CHD1, ISW1 (ISW1a, and ISW1b), ISW2, and INO80 at the C-terminus with the self-labeling HaloTag by engineering the endogenous loci and expressed the fusion proteins as the sole source under natural promoter control. The fusion proteins were localized in the nucleus and did not display detectable cleavage of the tag by SDS-PAGE (Figure 1\u2014figure supplement 1A,B). Furthermore, no phenotypes were observed for all strains containing tagged constructs (Figure 1\u2014figure supplement 1C). We then investigated their endogenous, real-time dynamics as representative subunits of chromatin remodeling complexes in asynchronous, log-phase cells (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental scheme. (B) Fast-tracking imaging regime uses short exposures (10 ms) at high laser power to distinguish slow (chromatin-bound) and fast (chromatin-free) diffusing populations. (C) Slow-tracking regime directly observes the dwell times of chromatin-bound molecules using 250 ms exposures at low laser power. (D\u2013G) (Top) Raw displacement histograms over the first 5 time frames (\u0394t: 10, 20, 30, 40, 50 ms). A two-state kinetic model was used for fitting the CDF [black lines] in Spot-On. (Bottom) Spot-On kinetic modeling results based on displacement distribution histograms for Sth1-Halo (D), Snf2-Halo (E), Ino80-Halo (F), and Isw2-Halo (G). Solid colored bar with indicated value represents % chromatin-bound molecules; open bar represents % chromatin-free. Error bars are standard deviations from 2 [or 3 for ISW2] biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SDS-PAGE gel scanned for JF646 dye fluorescence (top) and imaged after Coomassie staining (bottom). Cell lysates are prepared by NaOH protein extraction method (Amberg et al., 2006) after treatment with JF646 at a saturating dye concentration (20 nM) for 2 hr at 30\u00b0C. (B) JF646 dye fluorescence in the soluble supernatant (as shown in A) and insoluble pellet for Sth1-Halo strain. Substantial Sth1-Halo protein is retained the insoluble pellet. (C) Overlay of Phase Contrast image and initial nuclear fluorescence captured by JF552 dye excitation of yeast stained with JF552. (D) Fivefold dilutions of HaloTag fusion and wildtype strains are plated on YPAD plates at the indicated temperatures for 2\u20133 days. (E) Relationship between Dfree values determined by Spot-On analysis and the calculated molecular weights of chromatin remodeling complexes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Kinetic parameters (Fbound, Dbound, Dfree) determined by Spot-On analysis. Errors represent standard deviation between 2 [or three for ISW2] biological replicates.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Spot-On analyses were performed on movies acquired either in the \u2018first half\u2019 or \u2018second half\u2019 of an imaging session to compare the Fbound values between the two groups. (B) Spot-On analyses were performed on the \u2018first half\u2019 [1\u20132500 frames] and \u2018second half\u2019 [2501\u20135000 frames] of each movie \u2018substack\u2019 to compare the Fbound values between the two groups. Circles represent individual biological replicates with red lines indicating before-after changes for each replicate. Errors represent standard deviation between biological replicates. Comparison between \u2018first half\u2019 and \u2018second half\u2019 groups for each remodeler by ordinary one-way ANOVA test (ns: not significant).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013H) Normalized histograms of log10 diffusion coefficients of single-molecule trajectories fitted to two Gaussian distribution functions (solid gray line: sum of two Gaussians; dashed lines: individual Gaussian curves representing chromatin-bound and chromatin-free populations) for Sth1-Halo (A), Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F), Ioc3-Halo (G), and Ioc4-Halo (H). The two components are not well-resolved.\n\nIn order to quantify a broad range of kinetic behaviors displayed by remodelers, two imaging regimes were applied. \u2018Fast-tracking\u2019 acquires 10 ms frame-rate movies to directly measure a range of single-molecule diffusivities from \u2018slow\u2019 (chromatin-bound) to \u2018fast\u2019 (chromatin-free) and determine fractional representation (Figure 1B, Figure 1\u2014video 1). However, high laser power and extensive photobleaching precludes measurement of chromatin residence times. \u2018Slow-tracking\u2019 with a longer 250 ms frame-rate and lower laser power motion-blurs fast diffusing molecules to selectively visualize the chromatin-bound state and report dwell times (Figure 1C). Combining the two imaging regimes provides a holistic and quantitative view of a range of diffusive behaviors and kinetic subpopulations.\n\nWe applied two independent methods for visualization and quantification of fast-tracking datasets. First, we determined the diffusion coefficient D for trajectories \u2265 six frames (i.e. \u2265 60 ms) based on their mean squared displacements (MSD), and present frequency histograms based on the log(D) values of each trajectory. The histograms were initially fit to two Gaussian distributions, approximating slow and fast populations (Figure 1\u2014figure supplement 4, Figure 1\u2014source data 1). For more robust quantification, we applied Spot-On analytics, which uses kinetic modeling based on distribution of displacements for trajectories lasting \u2265 three frames (Hansen et al., 2018;\u00a0Figure 1\u2014figure supplement 2A,B). Hereafter, we refer to diffusive values derived from Spot-On in the text. As previously reported for biological controls, H2B histone (Halo-H2B) and free HaloTag (Halo-NLS, nuclear localization signal), exhibit two distinct, well-separated diffusion states representing chromatin-bound and chromatin-free molecules (Ranjan et al., 2020). We found that the majority of H2B molecules (79.4 \u00b1 1.9%) are slow-moving with average D of 0.026 \u00b5m2s\u22121 (Figure 1\u2014figure supplement 2A) consistent with incorporation into chromatin, whereas most of the chromatin-free Halo-NLS molecules show greatly increased diffusivity (D ~ 5 \u00b5m2s\u22121) (Ranjan et al., 2020).\n\nCompared to H2B, chromatin remodelers exhibit a slow Dbound fraction (average 0.036 \u00b1 0.007 to 0.067 \u00b1 0.004 \u00b5m2s\u22121) as would be expected for molecules associated with largely immobile chromatin (Figure 1\u2014figure supplement 2A). However, as discussed later, the Dbound values are ~2-fold higher than H2B. Furthermore, we also observed a separable chromatin-free fraction whose Dfree values (0.464 \u00b1 0.043 to 1.014 \u00b1 0.024 \u00b5m2s\u22121) are ~10-fold higher, but distinctly lower than the Dfree for Halo-NLS, indicating that our imaging regime captures essentially the full range of potential diffusive behaviors for this family. In addition, the Dfree values show an inverse correlation with the estimated total molecular\u00a0weights of chromatin remodeling complexes, consistent with expectations that the tagged catalytic subunits are associated within larger complexes (Figure 1\u2014figure supplement 1D). We note that additional subpopulations, including variant or modified complexes, could be included within our two diffusive populations distinguishable by SMT.\n\nWe next assessed how the fractions of chromatin-bound and chromatin-free molecules vary among subgroups of chromatin remodeling enzymes. RSC and SWI/SNF mobilize +1 and \u22121 nucleosomes to increase promoter accessibility, while INO80 and ISW2 mobilize them to reduce accessibility (Hartley and Madhani, 2009; Kubik et al., 2019). We found that the majority of both RSC and SWI/SNF molecules are associated with chromatin (RSC: 66.0 \u00b1 1.1%; SWI/SNF: 55.9 \u00b1 1.3%) (Figure 1D,E). INO80 and ISW2 exhibit Fbound values of 48.3 \u00b1 0.2% and 34.8 \u00b1 1.0%, respectively (Figure 1F,G). Overall, these NDR-acting remodelers display a broad range of chromatin-binding fractions (inclusive of stable and transient binding), with RSC showing the highest overall chromatin binding.\n\nCHD1 and ISW1 act primarily on nucleosomes located in the gene body (Kubik et al., 2019; Ocampo et al., 2016). The two remodelers show comparable Fbound values (CHD1: 47.8 \u00b1 4.9%; ISW1a/b: 52.0 \u00b1 1.1%) (Figure 2A,B). However, the catalytic subunit Isw1 is shared by two distinct chromatin remodeling complexes called ISW1a and ISW1b (Vary, et al., 2003), in addition to potentially un-complexed Isw1 catalytic subunit (Tsukiyama et al., 1999). The ISW1a complex localizes near the transcription start and end of genes, whereas the ISW1b complex occupies more mid-coding regions (Morillon et al., 2003; Smolle et al., 2012; Yen et al., 2012). Since Isw1 catalytic subunit dynamics represent a composite of the two remodeling complexes, we also tagged Ioc3 and Ioc4 accessory subunits unique to ISW1a and ISW1b complexes, respectively. The gene-body acting ISW1b (Ioc4-Halo) complex exhibits higher Fbound compared to ISW1a (Ioc3-Halo) complex (ISW1b: 55.5 \u00b1 2.6%; ISW1a: 39.6 \u00b1 0.0%) (Figure 2C,D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013B) Spot-On analysis as described in Figure 1 for the catalytic subunits Chd1-Halo (A) and Isw1-Halo (B). (C\u2013D) Spot-On analysis of the accessory subunits of ISW1a and ISW1b complexes: Ioc3-Halo (C) and Ioc4-Halo (D).\n\n### Chromatin remodelers frequently transition between bound and free states\n\nUnlike the two well-separated Gaussian distributions for H2B histones and HaloTag protein (Figure 3A), the Log(D) histograms of all imaged chromatin remodelers display less distinct bound and free populations, with a noticeable fraction showing an intermediate range of diffusion coefficients (Figure 1\u2014figure supplement 4). This population could either represent remodeler complexes transitioning between chromatin-bound and chromatin-free states, or chromatin-free molecules of intermediate diffusivity due to association with additional factors or confined inside a subnuclear compartment (Hansen et al., 2020; Izeddin et al., 2014; McSwiggen et al., 2018; Strom et al., 2017).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig3-v2.jpg)\n\n**Figure 3.:** (A) Halo-H2B (brown) and Halo-NLS (pink) molecules display well-separated peaks in their diffusion coefficient histograms. (B) An overview of displacement-based HMM classification (vbSPT) to identify transitioning trajectories. After classifying each displacement as either in bound or free state, each trajectory is sub-classified as \u2018bound only\u2019, \u2018free only\u2019, or \u2018transitioning\u2019. (C\u2013I) Left: Overlay of raw histograms of log10 diffusion coefficients for \u2018Bsound only\u2019 (turquoise), \u2018Free only\u2019 (yellow), \u2018Transitioning\u2019 (purple), and total trajectories (thin black). Right: Quantification (%) of transitioning trajectories in the diffusion coefficient histogram, where errors represent standard deviation between two [or three for ISW2] biological replicates. (C) Transitioning trajectories for Halo-H2B (top) and Halo-NLS (bottom). (D\u2013I) Transitioning trajectories for remodelers: Sth1-Halo (D), Snf2-Halo (E), Ino80-Halo (F), and Isw2-Halo (G), Chd1-Halo (H), and Isw1-Halo (I).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pipeline for classification and sub-classification of trajectories using vbSPT. Individual displacement lengths were determined for \u2018bound only\u2019, \u2018free only\u2019, and \u2018transitioning\u2019-subclassified trajectories to validate the two states and state transitions. (B\u2013C) Violin plot (B) and median value (C) of individual displacement lengths for the Bound and Free states in non-transitioning and transitioning trajectories. For violin plots, thick red and dotted gray lines represent the median and two quartiles, respectively. (D\u2013E) Transitioning trajectories for Ioc3-Halo (D) and Ioc4-Halo (E). Left: Overlay of raw histograms of log10 diffusion coefficients for \u2018Bound only\u2019 (turquoise), \u2018Free only\u2019 (yellow), \u2018Transitioning\u2019 (purple), and total trajectories (thin black). Right: Quantification (%) of transitioning trajectories in the diffusion coefficient histogram. (F) For all classified transitioning trajectories, \u2018FREE\u2019 to \u2018BOUND\u2019 and \u2018BOUND\u2019 to \u2018FREE\u2019 transition frequencies are indicated. For D\u2013F, errors represent standard deviation between two [or three for ISW2] biological replicates.\n\nTo distinguish between these possibilities, we analyzed single-particle trajectories using vbSPT, a variational Bayesian Hidden Markov Model (HMM) algorithm, which models state kinetics and assigns diffusive states to each displacement (Persson et al., 2013). We classified every displacement as either State 1 (\u2018bound\u2019) or State 2 (\u2018free\u2019) (Figure 3\u2014source data 1), and sub-classified all trajectories as bound, free, or transitioning (Figure 3B). The median bound and free displacement lengths between transitioning and non-transitioning trajectories are highly similar or identical for each remodeler, validating the vbSPT state assignments and essentially excluding a dominant intermediate diffusive state (Figure 3\u2014figure supplement 1A\u2013C). Notably, the log D histograms of transitioning populations show enrichment for intermediate D values.\n\nIt is striking that the population of transitioning trajectories is more prominent for remodelers (from 20.9 \u00b1 2.5% to 30.2 \u00b1 1.5%) compared to free HaloTag (10.4 \u00b1 0.7%) and H2B histone (7.1 \u00b1 2.1%), (Figure 3C\u2013I, Figure 3\u2014figure supplement 1D\u2013E). We observed comparable frequencies for remodeler dissociation (bound to free transition: 45.3 \u00b1 1.3 to 50.24 \u00b1 0.01%) and association (free to bound: 49.76 \u00b1 0.01 to 54.7 \u00b1 1.3%), indicating that there is little bias in the direction of state transitions (Figure 3\u2014figure supplement 1F). Furthermore, the frequent detection of state transitions over short trajectory lifetimes suggests that the duration of each state is short-lived. We concluded that transient but frequent chromatin interactions are characteristic of the six remodeling complexes.\n\n### All remodelers have remarkably short in vivo residence times of 4\u20137 s\n\nThe chromatin-bound remodeler population measured by fast tracking consists of both transiently and stably bound molecules. We acquired long-exposure movies [250 ms/frame] under slow tracking (Chen et al., 2014) to generate survival curves revealing the apparent dissociation of chromatin-bound molecules as a function of time (Figure 1C). Particle dissociation can be due to molecules truly disengaging from chromatin, or to fluorophore photobleaching and chromatin movements out of focus, which can corrected using the survival curve of H2B histone as a standard (Hansen et al., 2017). The remodeler survival plots fit well to a double exponential decay model (Figure 4\u2014figure supplement 1A\u2013F,H), from which the average lifetimes (\u03c4sb, \u03c4tb) and fractions (fsb, ftb) of stable-binding and transient-binding species were extracted (Figure 4). All \u03c4 values presented in the text and figures are corrected based on H2B decay kinetics.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013F) Fitted double exponential decay curves from 1-CDF plots of observed dwell times from individual binding events (n) imaged by slow-tracking, for Sth1-Halo (A) Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F). Solid colored and dashed black fitted curves for indicated remodelers and H2B, respectively. Pie charts show the percentage (fsb) and average residence time (\u03c4sb) of the stable binding population after photobleaching correction. Errors represent bootstrap resampling errors after resampling 100 times (sb: stable-binding; tb: transient-binding).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013F)\u00a01- and 2-component exponential decay fits to survival plots of dwell times for Sth1-Halo (A), Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F). (G) 1-CDF plot, pie chart as in Figure 4, and residence times of Ioc3-Halo (Left) and Ioc4-Halo (Right). (H) One- and two-component exponential decay fits to survival plots of dwell times for Ioc3-Halo (Left) and Ioc4-Halo (Right).\n\nThe stable-binding subpopulations (fsb) of RSC (27 \u00b1 2%) and SWI/SNF (24 \u00b1 6%) display strikingly short lifetimes (RSC: 5.0 \u00b1 0.7 s; SWI/SNF 4.4 \u00b1 1.2 s) (Figure 4A,B), consistent with a previous measurement for the Rsc2 subunit of RSC (Mehta et al., 2018). Similarly, INO80 and ISW2 exhibit stable-binding fractions (fsb\u00a020 \u00b1 3% and 13 \u00b1 3%, respectively) and similarly short residence times (\u03c4sb 3.7 \u00b1 0.8 s and 4.9 \u00b1 2.2 s, respectively) (Figure 4C,D). Hence, all NDR-acting remodelers bind stably for less than 5 s in live yeast, whereas transient-binding populations are more short-lived by almost an order of magnitude (Figure 4\u2014source data 1).\n\nFor gene body-acting remodelers, CHD1 and ISW1 complexes exhibit stable-binding fractions (fsb\u00a015 \u00b1 3% and 19 \u00b1 2%, respectively) and short dwell times (\u03c4sb 7.2 \u00b1 3.3 s and 5.6 \u00b1 1.3 s, respectively) (Figure 4E,F). Interestingly, ISW1b shows 2.5-fold higher residence times compared to ISW1a (\u03c4sb 5.9 \u00b1 2.5 s and 2.2 \u00b1 1.0 s, respectively) with comparable stable-binding fractions (Figure 4\u2014figure supplement 1G). These remodelers also exhibit very short transient-binding residence times (\u03c4tb< 0.65 s). Hence, the majority of chromatin binding events by remodelers is transient, and stable binding, on the order of several seconds, is notably short-lived.\n\n### ATPase activity is coupled to fast dissociation rates\n\nTo examine whether the measured dissociation kinetics are intrinsic to chromatin remodeling complexes or functionally related to their ATP-dependent remodeling activities, we made strains harboring a point mutation in the ATPase domains of Isw2, Isw1, and Chd1; these mutations have previously been shown to abolish their ATPase activities (Isw2K215R, Isw1K227R, Chd1K407R, and Chd1D513N) (Figure 5A;\u00a0Fitzgerald et al., 2004; Gelbart et al., 2001; Hauk et al., 2010; Tsukiyama et al., 1999). We then acquired slow-tracking movies to compare the dwell times of mutant to those of wild-type remodeling enzymes (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig5-v2.jpg)\n\n**Figure 5.:** (A) Bar diagram and cartoons for remodelers mutated in the \u2018Walker A\u2019 and \u2018Walker B\u2019 motifs, respectively. (B) Representative 3D plots of trajectories imaged by slow-tracking for wildtype (Chd1-Halo, black) and ATPase-dead mutant (Chd1K407R-Halo, red). Each plot shows all trajectories (\u2265 three frames) from single nucleus where lines represent apparent durations of chromatin-binding events. (C\u2013F) 1-CDF plot, pie chart, and residence times of wild-type (top) and ATPase-dead mutants (bottom) for Isw2 (C), Isw1 (D), and Chd1 (E,F).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) SDS-PAGE analysis; gel scanned for JF646 dye fluorescence (top) and imaged after Coomassie staining (bottom). Cell lysates of ATPase mutants (Isw1K227R-Halo, Isw2K215R-Halo and Chd1D513N-Halo) and their wild-type strains were prepared after treatment with JF646 at a saturating dye concentration (20 nM) for 2 hr at 30\u00b0C. (B\u2013E)\u00a01-CDF plot in log-log scale for Isw2K215R (B), Isw1K227R (C), Chd1K407R (D), and Chd1D513N (E) compared to wildtype. Colored dashed lines represent 95% confidence interval.\n\nWe found that the stable-binding average residence time increased by ~2-fold (from 4.9 \u00b1 2.2 to 9.7 \u00b1 3.1 s) for the Isw2K215R mutant (Figure 5C). Similarly, we observed increased residence time (from 5.6 \u00b1 1.3 to 9.1 \u00b1 3.6 s) for the Isw1K227R (Figure 5D). The two ATPase-dead Chd1 mutants both showed increased stable-binding residence times (Chd1K407R from 7.2 \u00b1 3.3 to ~52 s; Chd1D513N from 7.2 \u00b1 3.3 to 16.1 \u00b1 7.3 s) (Figure 5E,F). Interestingly, the tail of the Chd1K407R survival curve approaches that of H2B, which indicates its longevity, but precludes precise determination of dwell time (Figure 5\u2014figure supplement 1B). All four mutants (Figure 5\u2014source data 1) exhibit little to no changes in the transient-binding residence times compared to wildtype. In all, our results indicate that after chromatin association, the mutant ATPases exhibit slower dissociation rate (the reciprocal of residence time), consistent with previous genome-wide ChIP and biochemical studies (Fitzgerald et al., 2004; Gelbart et al., 2001).\n\n### ATP binding enhances chromatin-bound mobility of remodelers\n\nChromatin imaged by several distinct methods in living cells displays heterogeneous mobility, which is dependent on its compaction state, subnuclear localization, and ATP-dependent processes (Gasser, 2002; Gu et al., 2018; Marshall et al., 1997; Soutoglou and Misteli, 2007). Remodelers may undergo 1D translocation on DNA (Sirinakis et al., 2011), and alter either local chromatin movement (Basu et al., 2020; Neumann et al., 2012) or higher\u00a0order chromatin structure (Lusser et al., 2005; Maier et al., 2008) in an ATP-dependent fashion. We assessed the diffusive behavior of the chromatin-bound fraction of remodelers relative to the average dynamics of incorporated Halo-H2B histone. H2B not only reflects the motions of bulk chromatin but also provides an internal reference standard for nuclear movements and instrumental drift. From each trajectory classified as bound by vbSPT, the apparent D value and the Rc [radius of confinement] were calculated to characterize its diffusivity and the confined domain encompassing the observed trajectory, respectively (Lerner et al., 2020). Importantly, chromatin-bound remodelers exhibit ~2-fold higher mobility than H2B histone, as revealed by the average MSD plot and the distribution of individual D values of each trajectory under fast-tracking (Figure 6A,B). The mean Rc values are also substantially higher for remodelers compared to the global mean measured for H2B (Figure 6\u2014figure supplement 1A). This is further supported by the higher apparent D values to varying degrees [two- to fourfold] of stably-bound remodelers measured by slow-tracking (Figure 6C). Such greater mobility of chromatin-bound remodelers may be due to the combined effects of remodeler diffusion on chromatin and movement of the chromatin fiber caused by remodeling activity, or alternatively, may reflect the intrinsic dynamics of genomic loci being targeted.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) Average MSD plot (A) and violin plot (B), of individual D values for \u2018bound only\u2019 trajectories imaged by fast-tracking, shown for six remodelers and H2B histone. (C) Violin plot showing distribution of individual D values imaged by slow-tracking for six remodelers and H2B histone. For (A\u2013C) each wildtype remodeler is compared to H2B by the ordinary one-way ANOVA test (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (D\u2013H) MSD plot (D\u2013F) and violin plot (G,H) of individual D values for \u2018trajectories imaged by slow-tracking for wildtype, ATPase-dead mutant, and H2B. For violin plots, thick red and dotted gray lines represent the median and two quartiles, respectively. For D\u2013H, mutants are compared to wildtype by the unpaired t test (****p<0.0001, ***p<0.001, ns: not significant). (I) Representative trajectories imaged by slow-tracking for H2B and remodelers. H2B displays low mobility, whereas remodelers display higher chromatin-associated diffusivity that is enhanced by ATP utilization.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Radius of confinement values of bound trajectories in 10 ms exposure movies for histone H2B and chromatin remodelers. Violin plot showing distribution of Rc values, and comparison between histone H2B and each of wildtype remodelers by ordinary one-way ANOVA test. (B) Violin plot of individual D values by slow-tracking for Isw1-Halo after 30 min pre-treatment with 3 or 5 \u00b5g/mL thiolutin, and comparison between wildtype and thiolutin-treated samples by unpaired t test (ns: not significant). Thick red and dotted gray lines represent the median and two quartiles, respectively.\n\nTo distinguish between these two alternatives, we measured the chromatin-associated mobility of the four aforementioned ATPase-dead mutants. Three mutants Isw2K215R, Isw1K227R, Chd1K407R harboring substitutions in the catalytic ATPase Walker A motif responsible for ATP binding display strikingly lower diffusivity as revealed by the average MSD plot of stably bound molecules, which approaches or substantially overlaps the global H2B curve (Figure 6D\u2013F). This is supported by the violin plots of individual D values for stably bound trajectories (Figure 6G). Surprisingly, Chd1D513N bearing a substitution in the Walker B motif of Chd1 shows no substantial changes in the average MSD curve and apparent D values for stably bound trajectories compared to wildtype as measured by slow-tracking (Figure 6F,H). To rule out Chd1-specific effects, we also made a strain harboring the corresponding D-to-N substitution in ISW2 (Isw2D312N), and found no substantial changes in the average MSD curve and apparent D values compared to wildtype (Figure 6D,H). As expected for a mutation in the catalytic ATPase, the Isw2D312N mutant exhibits an approximately two-fold increase in its residence time compared to wildtype (Figure 5\u2014figure supplement 1C). Because the Walker B motif is important for ATP hydrolysis (via coordinating Mg2+ ion and a water molecule), but not for ATP binding (Singleton et al., 2007; Walker et al., 1982;\u00a0Figure 5A), this result suggests that the ATP-bound state may be adequate to induce enhanced diffusion on chromatin as part of the mechanism of target search by remodeling enzymes.\n\n### Promoter-enriched remodelers have robust chromatin occupancies\n\nChromatin remodelers are key regulators of the +1 nucleosome position genome-wide, whose accurate location is crucial for the PIC (pre-initiation complex) formation and TSS fidelity (Lai and Pugh, 2017; Zhang et al., 2011). RSC and SWI/SNF mobilize the +1 nucleosome away from the NDR, opposed by INO80 and ISW2 activities, which slide the +1 nucleosome towards the NDR. As a quantitative indicator of nucleosome engagement, we determined the occupancies of the four remodelers, that\u00a0is the percent average occupancy at a chromatin target by each remodeler over a given time period. To calculate temporal occupancy, we utilized the measured overall chromatin-binding fraction [Fsb] and the temporal parameters for stable [\u03c4sb, fsb] and transient [\u03c4tb, ftb] chromatin-binding (Figure 7A). Here, we assume that stable binding, which is almost an order of magnitude longer than transient binding, represents binding at \u2018specific\u2019 target sites within promoter regions including \u22121, +one\u00a0[+1] nucleosomes and the intervening NDR, while transient binding represents non-specific chromatin interactions (Ball et al., 2016).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig7-v2.jpg)\n\n**Figure 7.:** (A) Key parameters measured in this study and acquired from the literature (Ho et al., 2018; Kubik et al., 2019) are used to calculate occupancy levels for gene promoter-acting remodelers. (B) Time trace simulations of temporal occupancy for individual remodelers at a target promoter region based on average \u03c4sb and sampling interval. Top and bottom bars represent occupied (on) and vacant (off) states, respectively, and vertical lines depict transitions between the two states. (C) Time trace simulations of occupancy at a RSC- and INO80-bound promoter region based on average \u03c4sb and sampling interval. Individual time trace simulations are shown above, and the cumulative simulated occupancy plot (black) shows either one or both remodelers bound in the time course of 500 s.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A\u2013B) Time trace simulations of occupancy as in Figure 6, at a promoter region bound by RSC, INO80, and ISW2 remodelers (A) or by RSC, SWI/SNF, INO80, and ISW2 remodelers (B). Individual time trace simulations are shown above, and the cumulative simulated occupancy time trace (black) shows any one or multiple remodelers bound in the time course of 500 s. (C\u2013D) Fast-tracking and slow-tracking results for CHD1 DNA-binding domain mutant (Chd1R1016A/K1020A/R1255A-Halo). (wildtype: dashed gray lines; DBD mutant: solid green lines). (C) Normalized histogram log10 diffusion coefficients (Left) and Spot-On kinetic modeling results (Right). (D) 1-CDF plot, pie chart, and residence times.\n\nThe fraction of stable-binding depends on both the number of molecules per nucleus (Nmolecules) and number of the target sites in the genome (Ntargets) (Chen et al., 2014). We rely on published values for Nmolecules compiled from a meta-analysis of 21 proteomic studies for the best available quantitative estimate of remodeler abundance in S. cerevisiae (Ho et al., 2018), with the assumption that our sole source HaloTag fusions under natural promoter control are similar in abundance to the untagged proteins. As regards the number of chromatin targets (Ntargets), many studies have investigated the genome-wide specificities of chromatin remodelers using multiple approaches including ChIP-Seq (Cutler et al., 2018; Floer et al., 2010; Shimada et al., 2008; Spain et al., 2014), MNase-ChIP (Yen et al., 2012), ChIP-exo (Rossi et al., 2021), Native-ChIP-Seq (Ramachandran et al., 2015; Zentner et al., 2013), CUT and RUN (Brahma and Henikoff, 2019), and ChEC-seq (Kubik et al., 2019). For this paper, we utilized the Ntargets values reported by Kubik et al., who investigated the binding sites for four yeast remodelers of interest in this study, and explicitly quantified the number of mRNA gene promoters enriched for each remodeler. Assuming that the +1 or \u22121 nucleosomes and the NDR together represent the main interaction substrates at promoter regions, this value of Ntargets can be considered as a lower bound estimate. Accordingly, RSC binding is the most widespread (Ntargets\u00a0= 3702), SWI/SNF binds only a small subset (Ntargets\u00a0= 466), and INO80 (Ntargets\u00a0= 1646) and ISW2 (Ntargets\u00a0= 1802) each bind to approximately a third of all yeast promoters (Kubik et al., 2019). Because INO80 and ISW2 are also targeted to sites of DNA replication, as well as tDNA and ribosomal DNA loci (Cutler et al., 2018; Gelbart, 2005; Shimada et al., 2008), the total Ntargets for each remodeler is likely to be larger than the values we utilized.\n\nTo calculate occupancy values, we used the \u03c4search (search time), the time it takes for a molecule to go from one stable target site to the next [i.e. time bound non-specifically plus time in free diffusion], the SI (sampling interval) [i.e. the time between initial binding of one molecule and binding of the second molecule], and the estimated values for Nmolecules and Ntargets per cell (Figure 7A; see Materials\u00a0and\u00a0methods). RSC shows substantial occupancy (30 \u00b1 7.3%) at stably bound chromatin targets, despite its short residence time (\u03c4sb) of 5.0 \u00b1 0.7 s. Thus, rather than individual RSC molecules residing for long periods of time, the high occupancy rate can be attributed to the short \u03c4search (15 \u00b1 2.6 s) and comparable SI (17 \u00b1 3.3 s) values coupled to high Nmolecules (>4000) (Figure 7A). SWI/SNF exhibits the highest occupancy (94 \u00b1 41%) among the four remodelers, consistent with the highest raw ChEC signals reported for Swi3 (Kubik et al., 2019). Strikingly, our estimate indicates that SWI/SNF also maintains its occupancy at target sites by coupling short residence time (4.4 \u00b1 1.2 s) with short SI (4.7 \u00b1 1.6 s) (Figure 7A).\n\nWe next assessed the occupancy values for INO80 and ISW2, which oppose the actions of RSC and SWI/SNF. Comparable to RSC, INO80 displays substantial occupancy (25 \u00b1 9.7%) at its targets while ISW2 displays a lower occupancy (11 \u00b1 7.2%). INO80 exhibits short \u03c4search (23 \u00b1 6.0 s) and SI (15 \u00b1 4.7 s) values, while ISW2 has a relatively longer \u03c4search (61 \u00b1 30 s) and SI (44 \u00b1 21 s) values (Figure 7A). Average time trace simulations of stably bound occupancies for each of the four remodelers over several hundred seconds (Figure 7B) show that at promoter regions targeted by multiple remodelers such as genes in \u2018cluster IV\u2019 enriched for RSC and INO80 (Kubik et al., 2019), the occupancy by any one remodeler is strikingly high, and more than one remodeler can simultaneously engage a promoter repeatedly over several minutes (Figure 7C; see also Figure 7\u2014figure supplement 1A,B). (Note that our calculated promoter occupancy values for INO80 and ISW2 represent an upper limit and are subject to revision depending on the extent of remodeler binding to sites of DNA replication or repair).\n\n## Discussion\n\nImaging chromatin remodeler diffusion by the fast-tracking mode in yeast shows that they bind to chromatin at substantial frequencies [Fbound: 35\u201366%], and with a notable population [21\u201330%] displaying intermediate D values resulting from transitions between bound and free states (Figures 1\u20133). This suggests remodelers frequently undergo highly short-lived chromatin interactions and is consistent with our slow-tracking measurements of transient-binding frequency (ftb: 73\u201387%) (Figure 4), and with FRAP and FCS measurements of over-expressed mammalian ISWI (Erdel et al., 2010). The high frequency of transient interactions, and direct evidence for transitioning trajectories is also consistent with the model of 1D-3D facilitated diffusion, a proposed mechanism to increase the target search efficiency of nuclear proteins (von Hippel and Berg, 1989),\u00a0By slow-tracking, two chromatin-associated populations, \u2018stable-binding\u2019 and \u2018transient-binding\u2019, were observed for all six remodelers. Previous SMT studies on the mammalian Sox2 and yeast Ace1 transcription factors showed that stable-binding subpopulation represent interactions with cognate target sequences (Chen et al., 2014; Mehta et al., 2018). Comparable to reported values for the Rsc2 subunit of RSC and the yeast transcription factors, Ace1 and Gal4 (Donovan et al., 2019; Mehta et al., 2018), all imaged remodelers show stable and transient residence times of 4\u20137 s and 0.4\u20130.7 s, respectively. Furthermore, the effect of mutating the DNA-binding domain of CHD1 monomer (Ryan et al., 2011; Tran et al., 2000) results in a threefold reduction in the \u03c4sb value (from 7.2 \u00b1 3.3 to 2.4 \u00b1 0.7 s) (Figure 7\u2014figure supplement 1C,D). Unlike sequence-specific transcription factors, a complete loss of stable-binding would not be expected for remodeling complexes, whose recruitment relies on multiple interactions with gene-specific transcription factors, histone modification recognition domains, and interaction with components of the transcription machinery (Becker and Workman, 2013). Indeed, we speculate that the multiplicity of interaction motifs has a central role in the unusual diffusive behaviors shown by chromatin remodelers.\n\nImportantly, the fast dissociation rates of remodelers are facilitated by ATP hydrolysis. Five tested ATPase-dead mutants (for ISW2, ISW1, CHD1) show twofold or greater increase in their stable-binding residence times (Figure 5C\u2013F), highlighting a new role of for ATP-utilization in coupling nucleosome remodeling to rapid enzyme dissociation from chromatin. This also suggests that their mean residence times can reflect timescales for the diverse reactions performed by remodeling enzymes on chromatin in vivo. Assuming that the +1 or \u22121 nucleosomes and the NDR are the main targets for promoter-acting RSC, SWI/SNF, INO80 and ISW2, their 4\u20137 s stable residence time would include time for diffusion on the NDR as well as time expended for nucleosome remodeling. Biochemical studies have shown that remodelers undertake small translocation steps with remodeling rates of a few bp/sec (Blosser et al., 2009; Deindl et al., 2013; Harada et al., 2016; Qiu et al., 2017; Sabantsev et al., 2019). For example, with an enzymatic rate of 2 bp/s for ISWI (Blosser et al., 2009), an ISWI stable-binding event would allow octamer sliding by roughly 12 bp, which is within range of in vivo nucleosome position changes after conditional inactivation of RSC, SWI/SNF, INO80, and ISW2 (Ganguli et al., 2014; Kubik et al., 2019).\n\nUnder our imaging conditions, the chromatin-bound populations of the six remodelers exhibit higher mobility than H2B measured for bulk incorporated histones (Figure 6A\u2013C). We further showed that this enhanced mobility is dependent on the ATPase domain. Mutations in the ISW1, ISW2, and CHD1 Walker A motif implicated in nucleotide binding (Singleton et al., 2007) substantially decreases in vivo mobility. Further analysis of mutations in the CHD1 and ISW2 Walker B motif, implicated in ATP hydrolysis [but not ATP binding] (Singleton et al., 2007), displays a milder decrease of its chromatin mobility, suggesting that nucleotide binding is largely sufficient for promoting diffusion for the two remodelers. Previous observations for other DNA-binding ATPase enzymes have noted ATP binding-dependent, hydrolysis-independent 1D diffusion or sliding on DNA (Cho et al., 2012; Mazur et al., 2006; T\u00f3th et al., 2015), suggesting that this mode of diffusion to enhance target search may be shared among remodelers. In addition, RSC and Drosophila ISWI remodelers undergo ATP hydrolysis-dependent translocation on ssDNA and dsDNA in vitro (Saha et al., 2005; Whitehouse et al., 2003), with processivities of 20\u201370 bp/translocation event (Fischer et al., 2007; Saha et al., 2005; Sirinakis et al., 2011; Whitehouse et al., 2003). Finally, the absence of any change in ISW1 chromatin-bound mobility upon treatment with a general transcription inhibitor thiolutin rules out transcription per se as a source of enhanced remodeler diffusion (Figure 6\u2014figure supplement 1B). In all, our results suggest that chromatin remodelers use the catalytic ATPase not only for nucleosome remodeling but also to enhance target search kinetics by promoting 1D diffusion on chromatin and rapid detachment after reaction.\n\nYeast promoter regions can be classified into different groups enriched either for no remodeler or a combination of RSC, SWI/SNF, INO80, and ISW2, with about half of promoters genome-wide harboring at least two distinct remodelers that harbor nucleosome pushing and pulling activities relative to the NDR (Kubik et al., 2019). At promoter regions where opposing remodelers bind, we expect a consecutive \u2018tug-of-war\u2019 between the pushing and pulling activities, in which successive engagements would ultimately result in fine-tuning the steady-state nucleosome position, with the final outcome dependent on remodeler occupancy and nucleosome remodeling activity. Based on occupancy estimates, two remodelers may be found to simultaneously engage promoter chromatin (Figure 7C, Figure 7\u2014figure supplement 1A,B), but steric considerations likely preclude two remodelers binding to the same nucleosome or the same face of a nucleosome. Alternatively, at promoter regions where none or only one remodeler binds, other mechanisms are likely to have more substantial roles in nucleosome positioning. These include the sequence-dependent bendability of promoter DNA as well as the binding of general regulatory factors (GRFs), such as Reb1, Abf1, and Rap1, acting as barriers to nucleosome mobility (Struhl and Segal, 2013).\n\n### A temporal model for nucleosome remodeling at NDRs\n\nBy integrating our live-cell SMT measurements with available genome-wide localization and protein expression data, we estimate temporal occupancies ranging from 11 \u00b1 7.2 to 94 \u00b1 41% for RSC, SWI/SNF, INO80, and ISW2 at target promoter regions including the NDR and flanking nucleosomes. Our findings of highly dynamic and frequent remodeler-nucleosome interactions are consistent with recent genomics studies showing substantial changes in nucleosome positions upon rapid, conditional inactivation of remodelers in yeast and mammalian systems (Iurlaro et al., 2021; Klein-Brill et al., 2019; Kubik et al., 2019; Schick et al., 2021). Accordingly, we envision a nucleosome remodeling cycle at promoters in which remodeler combinations undergo frequent association, ATP-dependent mobilization and dissociation from chromatin to dynamically fine-tune \u22121 and +1 nucleosome positions (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig8-v2.jpg)\n\n**Figure 8.:** Model for nucleosome remodeling cycle at a gene promoter region targeted by RSC, SWI/SNF, INO80, and ISW2. The promoter region transitions between remodeler-occupied [solid arrow] and remodeler-vacant [dashed arrow] states, and their mean durations are indicated. After association with the NDR, remodelers undergo 1-D diffusion on chromatin facilitated by ATP binding, resulting in higher chromatin-associated mobility. Upon engaging a nucleosome substrate [e.g. the +1 nucleosome], RSC or SWI/SNF uses the energy of ATP hydrolysis to \u2018push\u2019 the nucleosome away from the NDR and INO80 or ISW2 to \u2018pull\u2019 the nucleosome into the NDR. ATP hydrolysis facilitates remodeler dissociation, and the promoter region becomes vacant for other factor interactions. The order of remodeler visitation is arbitrary, and simultaneous co-occupancy within the NDR can occur (see text for details).\n\nWe anticipate stochastic recruitment of RSC, SWI/SNF, INO80 and ISW2 to their target promoter regions. RSC recognizes general promoter characteristics, such as the long DNA stretch of the NDR (Wagner et al., 2020), histone acetylation marks potentially read by eight bromodomains in four RSC subunits (Josling et al., 2012), and the Rsc3 DNA-binding sequence motif found in several hundred promoters (Badis et al., 2008). These recruitment mechanisms likely account for RSC enrichment at the majority of yeast promoters [3702/5040] (Kubik et al., 2019). For SWI/SNF recruitment to a minority of yeast promoters [466/5040 promoters], extensive studies have shown interactions with gene-specific transcription factors (Cosma et al., 1999; Neely et al., 1999; Peterson and Workman, 2000; Yudkovsky et al., 1999). ISW2 also interacts with transcription factors such as Ume6 (Goldmark et al., 2000), but overall, less is known about the recruitment mechanisms for INO80 and ISW2, presenting opportunities for future studies.\n\nUpon binding within the accessible NDR, RSC or SWI/SNF undergoes 1-D diffusion in an ATP-dependent manner, manifesting higher chromatin-associated mobility. On engagement with either flanking nucleosome substrate [+1 nucleosome shown], RSC or SWI/SNF uses the energy of ATP hydrolysis to reposition the nucleosome away from NDR, enlarging NDR length. Importantly, this remodeling activity also facilitates RSC or SWI/SNF dissociation. Subsequent stochastic recruitment of INO80 or ISW2, ATP-dependent 1-D diffusion, and nucleosome engagement remodels the nucleosome to move in the opposing direction and narrow the NDR, coupled with remodeler dissociation. Cycles of sequential or simultaneous binding and activity by the four remodelers with their similar dwell times (4\u20135 s) and varying sampling intervals (5\u201344 s) provides a dynamic temporal window of accessibility for promoter chromatin.\n\nIn a related study (Nguyen et al., 2021), the average promoter occupancy of the yeast PIC that forms upstream and overlapping the +1 nucleosome was found to be in the range of 10%, that\u00a0is on the same order of magnitude but lower than three of four remodelers examined. Similar to chromatin remodelers, a full PIC lasts only several seconds before dissociation from chromatin, but the average promoter is vacant for ~100 s before PIC reformation. Thus, we suggest that there may be robust and dynamic competition between PIC components and mobilized NDR-flanking nucleosomes with chromatin exposure of key promoter elements such as the TATA box occurring for only a limited time window allowing proper assembly of downstream PIC components. This temporally positioned +one [+1]\u00a0nucleosome would enable Pol II to scan and start transcription at the proper, canonical TSS. In this way, the dynamic interactions of remodeling enzymes with their promoter targets provides a temporal, chromatin accessibility-based regulatory mechanism for eukaryotic transcription.\n\nTaken together, our SMT study elucidates the dynamic behaviors of this family of nuclear proteins and offers insights into additional kinetic functions for the remodeling ATPase and the timescales that govern nucleosome repositioning in relation to transcription events. It is notable that an independent study from the Verrijzer laboratory (Tilly et al. 2021) found that the Drosophila Brahma (BRM) remodeler also displays dependence on ATP utilization by the catalytic ATPase for dynamic mobility and remodeler dissociation in live Drosophila cells. For INO80 and ISW2, it would be of interest to distinguish their diffusive behaviors specific to DNA replication in cells undergoing S phase, and to DNA repair in the presence of DNA damaging agents. Outstanding questions also include determining the kinetic parameters for other chromatin regulators such as histone acetyltransferases, methyltransferases, histone de-modification enzymes, and histone chaperones, to gain a comprehensive view of the overall competition for engagement of promoter-proximal nucleosomes, their effects on nucleosome positioning and the dynamics of transcription complexes. Our findings in live cells provide a temporal framework for further testing of proposed models and should facilitate development of in vitro single-molecule assays that allow direct observation of physical and functional interactions between transcription regulators, chromatin, and the transcription machinery.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>Full list of yeast strains is presented in Supplementary file 1.</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBS-SK-Halo-NatMX (plasmid)</td>\n      <td>Ranjan et al., 2020</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pUG72 (plasmid)</td>\n      <td>Euroscarf, Germany</td>\n      <td>pUG72 (P30117)-Euroscarf</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Full list of oligonucleotides is presented in Supplementary file 2.</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>JF552-HaloTag ligand</td>\n      <td>Zheng et al., 2019</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>JF646-HaloTag ligand</td>\n      <td>Grimm et al., 2015</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>#1.5 Micro Coverglass \u2013 25 mm Diameter</td>\n      <td>Electron Microscopy Sciences</td>\n      <td>72225\u201301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ (1.52 p)</td>\n      <td>ImageJ</td>\n      <td>RRID:SCR_003070 https://imagej.net/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Diatrack 3.05</td>\n      <td>Vallotton and Olivier, 2013</td>\n      <td>http://www.diatrack.org/index.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism version 8.4.2</td>\n      <td>GraphPad Software, Inc.</td>\n      <td>RRID:SCR_002798 http://www.graphpad.com</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Sojourner package</td>\n      <td>Carl Wu lab</td>\n      <td>https://rdrr.io/github/sheng-liu/sojourner/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spot-On</td>\n      <td>Hansen et al., 2018</td>\n      <td>https://spoton.berkeley.edu/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>vbSPT</td>\n      <td>Persson et al., 2013</td>\n      <td>http://vbspt.sourceforge.net/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Radius of confinement calculation</td>\n      <td>Lerner et al., 2020</td>\n      <td>https://data.mendeley.com/datasets/wctzwpp9h2/2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom Matlab script</td>\n      <td>This paper, Mendeley Data</td>\n      <td>http://dx.doi.org/10.17632/ydwcx9yhpp.2</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains\n\nAll Saccharomyces cerevisiae strains used in this study are isogenic derivatives of W303 strain carrying pdr5\u25b3 for efficient JF ligand labeling, and are listed in Supplementary file 1. HaloTag was fused to the C-terminus of the protein of interest using standard methods for yeast transformation, using pBS-SK-Halo-NatMX plasmid (Ranjan et al., 2020). Point mutations were introduced by either the traditional \u2018pop-in pop-out\u2019 (Rothstein, 1991) or the \u201850:50\u2019 method (Horecka and Davis, 2014), using pUG72 plasmid (P30117, Euroscarf, Germany), and list of primers are provided in Supplementary file 2.\n\n### Yeast growth assays\n\nThe cell growth of strains carrying HaloTag fusion constructs were compared to their derived parental genotype. The strains grown to saturation in YPAD (Yeast Extract-Peptone-Dextrose + 40 mg/L Ade-SO4) were serially diluted (5-fold dilutions) on YPAD plates. Plates were imaged after 48 or 72 hr growing at three different temperatures (25\u00b0C, 30\u00b0C, and 38\u00b0C).\n\n### Cell lysate preparation to check integrity of HaloTag fusion proteins\n\nYeast cultures growing at early log phase (OD600 0.2) were treated with JF646 dye at a saturating dye concentration of 20 nM JF646 (Grimm et al., 2015) was used instead of JF552 for better dye labeling (Ranjan et al., 2020). Yeast protein extract was prepared using the NaOH method (Amberg et al., 2006). Total protein concentration was measured using the Bradford Assay, and 45 ng of total protein was loaded per well in SDS-PAGE. Gels were imaged on Tecan five scanner, with Cy5 excitation. After imaging, gels were stained with Coomassie dye for loading control.\n\n### Yeast culture preparation for single molecule imaging\n\nYeast cultures growing in Synthetic Complete Medium (0.79 g/L Complete Supplement Mixture [CSM] Powder, Sunrise Science Products, Cat. No. 1001\u2013010; 6.7 g/L Yeast nitrogen base without amino acids, BD Difco, Cat. No. DF0919-15-3; 2% (w/v) dextrose; 40 mg/L Adenine hemisulfate) were treated with dyes at early log phase (D600 0.2\u20130.3) for 2 hr. For fast-tracking, saturating dye concentrations ranging from 10 to 20 nM JF552 (Zheng et al., 2019) were used depending on factor abundance. For slow-tracking, we used 5\u20137.5 nM JF552. In some instances, we also added JF646 (~5 nM) to visualize nuclear fluorescence without JF552 excitation and to partially reduce JF552 labelling. Cells were harvested around mid-log phase by brief centrifugation (3500 rpm for 2 min), washed at least three times, and finally resuspended in CSM medium. Resuspended cells were loaded on Concanavalin A-treated coverslip (#1.5 Micro Coverglass \u221225 mm Diameter, Electron Microscopy Sciences, Cat. No. 72225\u201301) assembled on imaging cell chamber (Invitrogen, Cat. No. A7816), where coverslips were flamed prior to the treatment in order to reduce single-to-noise background. After immobilization and additional washing, ~1.5 mL of fresh medium was added to the chamber in which the cells are bathed continually for the duration of the imaging session (~2 hr). Comparison of results from the first and second halves of an imaging session shows no substantial differences (Figure 1\u2014figure supplement 3A).\n\n### Live cell, single molecule imaging using wide-field microscopy\n\n#### Microscope setup\n\nAll yeast imagings were performed using a custom-built Zeiss widefield microscope (Axio Observer Z1) with a 150X glycerin immersion objective (NA 1.35) as previously described (Ranjan et al., 2020). Data was acquired with EM-CCD (Hamamatsu C9100-13) camera with FF01-750/SP and NF03-405/488/561/635E quad-notch filters for a final x-y pixel size of 107 nm. All imagings were performed with a single excitation channel. For JF552 dye excitation, 555 nm laser (Crystalaser) at (TTL pulsed) with 561 beam-splitter and 612/69 nm filter was used. For JF646 dye excitation, a 639 nm laser with 648 beamsplitter and 676/29 nm filter was used. Microscope manipulations (i.e. Z-focus, X/Y translation, filter cube switch) was performed by Zen software (Zeiss, Germany) and camera and data acquisition was controlled by HCImage software (Hamamatsu Photonics, Japan).\n\n### Data acquisition\n\nAfter yeast immobilization, the asynchronous cells representing all phases of the cell cycle were imaged for around 2 hr at room temperature.\n\n#### Fast tracking\n\nMovies with 10 ms exposure/frame were recorded with continuous 555 nm laser irradiation at ~1 kW/cm2. A field of view of 128 x 128 pixels was used to capture 4\u20136 yeast nuclei. Single-molecule imaging was performed using dSTORM (direct stochastic optical reconstruction microscopy) (Heilemann et al., 2008; Rust et al., 2006). Each movie begins with global nuclear fluorescence on laser excitation of essentially all JF552-labelled molecules before photoconversion to a dark, non-fluorescent state. The duration of the initial excitation pulse which pushes fluorescent JF552 to the dark state is ~10 s, depending on the density of labeled Halo-proteins, which is a function of protein expression and dye labeling concentration adjusted for the specific protein. Once in the dark state, JF552 spontaneously and stochastically converts back to the fluorescent state (Grimm et al., 2015; Zheng et al., 2019).This conversion is sufficiently slow such that mostly one JF552 molecule per yeast nucleus is fluorescent at any given time during data acquisition, allowing for an unambiguous spatio-temporal record of single JF552-labeled proteins. To ensure that we can harvest a \u2018substack\u2019 of at least 5000 frames (10 ms/frame) (See Single molecule image analysis), we routinely record movies of ~1.5 min. About 40 movies were acquired per imaging session, and two [or three for ISW2] biological replicates were obtained for each sample.\n\nUnder fast-tracking conditions, cells displayed no detectable cellular damage and underwent normal bud growth and cell division when examined every 30 min up to 3 hr (Nguyen et al., 2021). Furthermore, we did not observe any substantial difference between the first and second half of each movie (Figure 1\u2014figure supplement 3B).\n\n#### Slow tracking\n\nMovies with 250 ms exposure/frame were acquired using continuous 555 nm laser irradiation at 0.05 kW/cm2 (5% of fast-tracking power) for sufficient signal-to-noise while minimizing photobleaching. A focal plane of 256 x 256 pixels was used to capture 15\u201320 yeast nuclei. In the beginning of each movie, the 639 nm excitation channel was briefly used to fine-tune the focus, and then immediately switched to 555 nm excitation to start data acquisition. Upon 555 nm laser illumination, we record ~5 min movies starting with fluorescent JF552 pushed to the dark state for > 30 s, followed by single-molecule imaging of at least 750 frames at 250 ms/frame. Fifteen\u00a0to\u00a0twenty movies were taken per imaging session, with two or three biological replicates for wildtype and two to four biological replicates for mutant strains.\n\n### Single molecule image analysis\n\nFor each raw movie, we first manually selected a \u2018substack\u2019 where ~one single molecule per nucleus per frame was observed in order to minimize tracking errors resulting from connecting different molecules as one trajectory. Substack lengths of 5000 frames (50 s) and 750 frames (3.125 min) were selected for fast and slow tracking movies, respectively, using ImageJ (1.52 p) custom-written script. The substacks were then applied to the Diatrack software (ver. 3.05, http://www.diatrack.org/index.html) to localize the centroid of PSF (point spread function) by Gaussian fitting over the fluorescence intensity to sub-pixel resolution (Thompson et al., 2002; Yildiz et al., 2003) and track single particles (Vallotton and Olivier, 2013). For localization, the following parameters were applied: Remove dim: 75\u201385, Remove blurred: 0.1, Activate High Precision mode: ON (HWHM=one pixel). For tracking, we used max jump of \u20186\u2019 (642 nm) and \u20183\u2019 pixels (321 nm) for fast and slow tracking datasets, respectively. Furthermore, we masked the nuclear regions based on the maximum intensity Z-projection of the selected substacks to filter out trajectories found outside of the nucleus in the subsequent analysis steps. The Diatrack output file containing information about the x, y coordinate and frame number were then applied for further downstream analysis.\n\n#### Fast tracking\n\nMSD-based diffusion coefficient histograms: All \u2018masked\u2019 trajectories with at least five displacements were analyzed, using the lab custom-written R package, Sojourner (https://rdrr.io/github/sheng-liu/sojourner/; Liu et al., 2020). Briefly, for each trajectory, MSD plot for time lags from 2 to 5 \u25b3t (\u25b3t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):\n\n$$\nD=\\frac{1}{2d}\\times\\frac{MSD(dt)}{dt}\n$$\n\nSpot-On (Hansen et al., 2018): All \u2018masked\u2019 trajectories with at least two displacements were analyzed. The following parameters were applied for Jump Length Distribution: Bin width (\u00b5m): 0.01, Number of time-points: 6, Jumps to consider: 4, Use entire trajectories No, Max jump (\u00b5m): 2. Additionally, the following parameters were applied for 2-state Model Fitting: Dbound (\u00b5m2/s): 0.0005\u20130.1, Dfree (\u00b5m2/s): 0.15\u201325, Fbound: 0\u20131, Localization error (\u00b5m): Fit from data (0.01\u20130.1), dZ (\u00b5m): 0.6, Use Z correction, Model Fit: CDF, Iterations: 3.\n\nvbSPT (variational Bayesian) HMM (Persson et al., 2013): All \u2018masked\u2019 trajectories with at least two displacements were analyzed. The following parameters were used to run vbSPT-1.1.3 to classify each displacement into two states, \u2018Bound\u2019 or \u2018Free\u2019 (Hansen et al., 2020;\u00a0Hansen, 2019, https://gitlab.com/anders.sejr.hansen/anisotropy): timestep\u00a0= 0.01; dim\u00a0= 2; trjLmin\u00a0= 2; runs\u00a0= 3; maxHidden\u00a0= 2; stateEstimate\u00a0= 1; bootstrapNum=10; fullBootstrap\u00a0= 0; init_D = [0.001, 16]; init_tD = [2, 20]*timestep; and default prior choices according to Persson et al., 2013.\n\nThen each trajectory was sub-classified as \u2018Bound only\u2019 if all displacements are classified as bound state; \u2018Free only\u2019 if all displacements are classified as free state; and \u2018Transitioning\u2019 if the trajectory contains both bound and free displacements with at least two consecutive displacements in each state. To validate that the transitioning trajectories consist of bound and free states, we calculated and compared the displacement length between \u2018bound only\u2019 and bound segments of transitioning trajectories, and between \u2018free only\u2019 and free segments of transitioning trajectories. Finally, the sub-classified trajectories were used to regenerate the diffusion coefficient histograms.\n\nRadius of confinement: All \u2018masked\u2019 trajectories with at least four displacements were analyzed, as described previously (Lerner et al., 2020). To determine the radius of confinement exhibited by chromatin-bound molecules, we analyzed trajectories classified as \u2018bound only\u2019 by vbSPT (as described above). Since many confined trajectories with low D do not pass the R2 \u2265 0.8 filter, we used all trajectories whose MSD plots passed the more lenient R2 \u2265 0.1 filtering. The MSD plot was then fit to the circular confined diffusion model:\n\n$$\nMSD_{circle}=R^{2}\u22191-e^{\\frac{-4\u2219D\u2219t_{lag}}{R^{2}}}\n$$\n\nwhere R is the radius of confinement, D is the short-term diffusion coefficient. Specifically, the first 10 time points of the MSD plot were used to fit to the model, and trajectories with squared norm of residual (RSS) higher than 10\u22125 and Rc higher than 300 nm were discarded.\n\n#### Slow tracking\n\nResidence times: Using Sojourner package, the apparent lifetimes (temporal length of trajectories) were determined for all \u2018masked\u2019 trajectories lasting at least three frames. To account for blinking or mislocalizations, we allowed for gaps up to two frames between two localizations and linked them as one trajectory if they were less than three pixels apart. 1-CDF curves were generated and fit to a double exponential decay model:\n\n$$\nP(t)=f_{sb}e^{-k_{sb}t}+f_{tb}e^{-k_{tb}t}\n$$\n\nwhere ksb and ktb correspond to dissociation rates for stable- and transient-binding events, respectively, and $1=f_{sb}+f_{tb}$\u00a0for the two components.\n\nThe apparent ksb and ktb values are affected by technical and imaging limitations such as photobleaching and chromatin movements. To correct for this bias, we used apparent dissociation rates of H2B imaged under same conditions as described previously\u00a0(Hansen et al., 2017). The corrected residence times for stable- (\u03c4sb) and transient binding (\u03c4tb) were calculated as follows:\n\n$$\n\\tau_{sb}=\\frac{1}{k_{sb}-k_{sb,H2B}}\n$$\n\n\n\n$$\n\\tau_{tb}=\\frac{1}{k_{tb}-k_{sb,H2B}}\n$$\n\nApparent diffusion coefficient values for stably bound trajectories: All \u2018masked\u2019 trajectories lasting at least five frames (not allowing for gaps) were analyzed, using Sojourner package. For each trajectory, MSD plot for time lags from 2 to 5 \u25b3t (\u25b3t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):\n\n$$\nD=\\frac{1}{2d}\\times\\frac{MSD(dt)}{dt}\n$$\n\n### Occupancy calculation\n\nTo calculate temporal occupancy, we integrated approaches from previous studies (Chen et al., 2014; Loffreda et al., 2017; Tatavosian et al., 2018).\n\nSearch time (\u03c4search) is the average time it takes for a molecule to go from one specific site to its next specific site. The two specific binding events (lasting for \u03c4sb) are interspersed by a number of trials (Ntrials) binding to non-specific sites (lasting for \u03c4tb). \u03c4free is the average free time between two binding events. Assuming equal probability of binding to all specific and non-specific sites, the search time is calculated as follows:\n\n$$\n\\tau_{search}=N_{trials}\\times\\tau_{tb}+(N_{trials}+1)\\times\\tau_{free}\n$$\n\nNtrials depends on the ratio of number of non-specific (Nns) to specific sites (Ns), or rs:\n\n$$\nN_{trials}=\\frac{N_{s}+N_{ns}}{N_{s}}=1+r_{s}\n$$\n\nHere, rs can be determined based on two assumed scenarios for bound molecules observed during slow tracking (as described in Nguyen et al., 2021). First, fsb determined by slow tracking depends on the time a molecule spends bound to specific sites compared to nonspecific sites:\n\n$$\nf_{sb}=\\frac{N_{s}\\times\\tau_{sb}}{N_{s}\\times\\tau_{sb}+N_{ns}\\times\\tau_{tb}}=\\frac{\\tau_{sb}}{\\tau_{sb}+r_{s,1}\\times\\tau_{tb}}\n$$\n\nThus rs is equal to:\n\n$$\nr_{s,1}=\\frac{\\tau_{sb}}{\\tau_{tb}}\\times(\\frac{1}{f_{sb}}-1)\n$$\n\nIn the second scenario, fsb depends on the probability that a free molecule binds to a specific site over all sites:\n\n$$\nf_{sb}=\\frac{N_{s}}{N_{s}+N_{ns}}=\\frac{1}{1+r_{s,2}}\n$$\n\nIn this case rs is:\n\n$$\nr_{s,2}=\\frac{1}{f_{sb}}-1\n$$\n\nWe take the average value calculated from the 2 proposed scenarios to finally determine\u00a0$r_{s}$:\n\n$$\nr_{s}=\\frac{1}{2}(\\frac{1}{f_{sb}}-1)(\\frac{\\tau_{sb}}{\\tau_{tb}}+1)\n$$\n\nIn fast tracking, Fbound is percentage or fraction of the time a molecule spends bound to chromatin either specifically or non-specifically:\n\n$$\nF_{bound}=\\frac{N_{trials}\\times\\tau_{tb}+\\tau_{sb}}{N_{trials}\\times\\tau_{tb}+\\tau_{sb}+(N_{trials}+1)\\times\\tau_{free}}\n$$\n\nThus $\\tau_{free}$ is (in terms of\u00a0$r_{s}$):\n\n$$\n\\tau_{free}=\\frac{\\frac{1+r_{s}\\times\\tau_{tb}+\\tau_{sb}}{F_{bound}}-1+r_{s}\\times\\tau_{tb}-\\tau_{sb}}{2+r_{s}}\n$$\n\nUsing the values derived for $r_{s}$ and\u00a0$\\tau_{free}$, we then calculated the search time as shown above.\n\nSampling interval (SI) is the time interval between two specific binding events at a given site as described previously (Chen et al., 2014):\n\n$$\nSamplingInterval(SI)=\\frac{(\\tau_{search}+\\tau_{sb})\\timesN_{targets}}{N_{molecules}}\n$$\n\nWe used Ntargets values presented by Kubik et al., 2019. Nmolecules was determined as the median and standard error values (Ho et al., 2018), and their standard error was used for error propagation.\n\nFinally, occupancy is the temporal probability that a given specific site is occupied by the protein of interest:\n\n$$\nOccupancy=\\frac{\\tau_{sb}}{SI}\n$$\n\n### Target occupancy simulation\n\nRemodeler occupancy at a target promoter region was simulated as described previously (Nguyen et al., 2021). Briefly, experimentally determined \u03c4sb and estimated sampling interval (SI) values were used to simulate sequential promoter-occupied and vacant states over the time trace (500 s). The duration for each occupied and vacant state was randomly chosen from exponential distributions of the average \u03c4sb and (SI- \u03c4sb) values, respectively. For promoter regions targeted by multiple remodelers, each remodeler was independently subject to the occupancy simulation, and the number of any single or multiple remodeler(s) co-occupying each timepoint was calculated throughout the time trace.\n",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "db90588d-6ff2-4d5b-a956-52d1c687b40f",
+      "submission_id": "0f545c6b-c228-49c9-ac37-dbded6ab20e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sebastian Deindl, Uppsala University Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69387.sa1](https://doi.org/10.7554/eLife.69387.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nIn this study, Kim and co-workers track the dynamics of a large set of different ATP-dependent chromatin remodelers in living cells by utilizing state-of-the-art single-molecule imaging. They report that the remodelers exhibit very high turnover rates at target loci/nucleosomes, find evidence for cooperativity among the remodelers, and reveal the role of ATP hydrolysis in those interactions. These observations allow the authors to put forward a model for tug-of-war activities that modulate the accessibility of promoter regions for transcriptional activity. This manuscript brings important new information to the remodeler and chromatin dynamics field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Single-molecule imaging of chromatin remodelers reveals role of ATPase in promoting fast kinetics of target search and dissociation from chromatin\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by Sebastian Deindl as the Reviewing Editor and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Xiaojun Ren (Reviewer #1); Bradley R Cairns (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The impact of the paper would be increased if the model presented in Figure 8 could be extended to include all six remodelers studied, thereby highlighting their kinetics similarities and the resulting tug-of-war at promoters.\n\n2) The authors should comment on the perceived discrepancy in the relative abundance of the remodelers. The authors should consider adding the proposed quantification via Western Blot if feasible.\n\n3) The authors should comment on several important technical points raised by the reviewers, in particular in terms of the imaging conditions (single remodelers rather than clusters, potential effect of exposure to laser light, media flow during data acquisition) and data analysis (decomposition of histograms in Figures 1 and 2. The authors should also comment on the cell cycle phase and explicitly describe if/how it was taken into account.\n\nAppropriate textual changes to the manuscript would improve clarity on these points.\n\nReviewer #1 (Recommendations for the authors):\n\n1) It appears to this reviewer that the Log D and jump distance histograms in Figures 1 and 2 should be decomposed into three components: chromatin-bound, intermediate diffusive, and free diffusive, since the authors have identified an intermediate diffusive population that can transition between bound and free states, which are shown in Figure 3.\n\n2) The authors use the number of molecules of remodelers from published results (Ho, 2018) to calculate target-search kinetics. It appears to this reviewer that the published data does not match the data in Figure S1A. For instance, Figure 7A shows that INO80 is more abundance than ISW2; however, Figure S1A shows the opposite results. Given that these remodelers have been endogenously tagged, it would be possible to quantify the number of molecules of remodelers through western blotting by comparing to known concentrations of HaloTag.\n\n3) P27L603: It should be 10 ms exposure time.\n\n4) P27L605: Please explain why each video lasts 1.5 min.\n\n5) P27L607: It should be 250 ms exposure time.\n\n6) P27L612: Please explain again why each video lasts 7-9 min.\n\n7) P28L638: Please check the equation.\n\n8) P32L716: Please check the reference.\n\nReviewer #2 (Recommendations for the authors):\n\nThe model presented in figure 8 restricts itself to two of the remodelers (RSC and INO80) addressed, and does not reflect the full scope of the results obtained in this work. It would be helpful if changes could be made to the model figure in order to embrace all six remodelers studied, highlighting their kinetics similarities, and the resulting tug-of-war at promoters. Notably, it would be helpful to consolidate and clarify the ATPase state, as ATP and ADP+Pi are written concomitantly at all stages of each remodeler presented. Moreover, the model would benefit from a more clear depiction of ATP binding in the enhancement of nucleosome browsing, and of ATP hydrolysis in the enhancement of dissociation.\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper is a technical tour-de-force, but I have a number of technical questions that need clarification. These arise partially from my ignorance, but also from the fact that there seem to be details missing in the methods section. Given that the paper should be read by a maximal number of chromatin biologists, I think it would greatly enhance the impact of the paper to include explanations concerning the following points, either in the methods section or in the text itself.\n\n1. How do they know that they are actually imaging SINGLE chromatin remodelers in every case, and not clusters of a given remodeler, for example, bound at multiple nucleosomes at a promoter (or cluster of promoters) ? I understand that they use a pulsed laser to activate the Halo tag fluorochrome, but it seems to me that they need to quantify the number of molecules each signal might represent. Hansen and Darzacq have worked out means to do this. The authors could also estimate the number of total molecules of each remodeler this way, which would be useful to know, especially to see if this influences occupancy rates.\n\n2. The pixel size (over 100 nm) is quite large \u2013 certainly large enough to contain multiple protein complexes. How large are the signals they monitor ? Did the try to reduce pixel size (it is possible with the LSM 710 and 100x objective)?\n\n3. The authors use an imaging scheme worked out by Hansen et al. for \"rapid\" and \"slower\" movements. In one they image at 10ms intervals for 1.5 min, but for the slower one they image at 250ms intervals for 7-9 minutes. This latter scheme implies a lot of exposure to laser light. Did they check that there was no impact on cell division rate after the slower, longer imaging protocol ? It is a massive dose, and the time needed for cell division should be monitored under these conditions.\n\n4. The authors say that they image for 2 h after the immobilization of cells on a cover slide. Are the cells continually bathed in medium during imaging ? this should be stated, if so. During 2 hours without glucose yeast rapidly deplete their ATP levels and this strongly influences chromatin mobility and remodeler activity (as shown 20 years ago, but also in this paper by walker motif mutation). It leads one to wonder if the slower moving remodeler tracks were taken at the end of the 2h period and the faster ones at the early time points ? Or did they keep a flow of fresh media onto the cells ? This is a very important technical point that should be explained in the methods.\n\n5. For the longer (but not shorter) tracking and subsequent calculation of diffusion coefficients the authors should be conscious that nuclear movement (or cellular and instrumental drift) can alter the track, if not normalized out. I guess the fact that they subtract H2B movement does normalize for cellular or instrumental drift, but perhaps they should state that. Other means exist, e.g. to track the center of the nucleus interpolated from a ring of nuclear pores or background nuclear fluorescence \u2013 and subtract that movement from the movement of the SPT. Some discussion of removal of such background drift should be mentioned in methods, or if this has already been ruled out elsewhere, the reference should be cited.\n\n6. Finally, the authors assume that the nucleosome remodelers are almost exclusively involved in transcription, and based on this they make the tug-of-war argument that INO80 and ISWI2 are counteracting RSC and Swi/SNF action. However, the two remodelers that have slightly different diffusion histograms (INO80 and ISWI2) are both implicated in DNA replication (and also in DNA repair), as well as transcription. The Tsukiyama lab has clearly demonstrated their roles in replication, and various authors provided convincing evidence that INO80 is important for paused fork restart and other repair events. DNA repair may be too rare an event (compared to transcription) to bias the movement observed, but replication could definitely bias the mobility/diffusion or Spot-on profiles, if a fraction of the cells imaged were in S phase.\n\nThis raises a number of questions:\n\na) Were the cells imaged exclusively in G1 phase ? That is, were only cells without buds monitored ? This should be stated if so.\n\nb) If not, did they monitor INO80 or ISWi2 diffusion specifically in S phase cells and did this lead to the same or a different profile of chromatin-bound/-free fractions and diffusion co-efficients?\n\nc) The diffusion histograms are fit to two Gaussian curves, but they would also be compatible with the superposition of multiple populations. Given that INO80 (and probably ISWI2) respond to phosphorylation, and may be regulated by cell cycle phase \u2013 it might be that there are more than simply a \"bound\" and an \"unbound\" population. This should \u2013 at the very least be discussed.\n\nI think it should be mentioned that these specific two remodelers are involved in replication \u2013 and what that might imply \u2013 unless all cells imaged were in G1 phase. If they were all G1 phase cells, then it should have been mentioned (sorry if I missed it).\n\nd) There could also be multiple variant complexes, containing additional subunits or being post-translationally modified, that might account for the complexity of Diffusion coefficients. This should at least be mentioned somewhere in the discussion.\n\nWith clarity on these issues, I think this paper definitely brings important new information to the remodeler and chromatin dynamics field.\n",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f3cc778a-4296-4723-a3a1-6798ecef16b1",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C1",
+      "claim": "Conserved ATP-dependent chromatin remodelers establish and maintain genome-wide chromatin architectures of regulatory DNA during cellular lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved ATP-dependent chromatin remodelers establish and maintain genome-wide chromatin architectures of regulatory DNA during cellular lifespan, but the temporal interactions between remodelers and chromatin targets have been obscure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established knowledge about chromatin remodelers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "cf9449b6-3acd-4d08-ac0f-9278d96d9e26",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C2",
+      "claim": "Chromatin-bound remodelers display notably higher diffusion than nucleosomal histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin-bound remodelers display notably higher diffusion than nucleosomal histones, and strikingly fast dissociation kinetics with 4\u20137 s mean residence times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically in Figure 6 showing MSD plots and diffusion coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "6533c959-00df-4709-ad92-eea6bf61ef35",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C3",
+      "claim": "Chromatin remodelers have strikingly fast dissociation kinetics with 4\u20137 s mean residence times.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin-bound remodelers display notably higher diffusion than nucleosomal histones, and strikingly fast dissociation kinetics with 4\u20137 s mean residence times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from slow-tracking experiments presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "ae94fbd5-cdab-4c92-a9d8-03c174e67ae6",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C4",
+      "claim": "Enhanced dynamics of chromatin remodelers require ATP binding or hydrolysis by the catalytic ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "These enhanced dynamics require ATP binding or hydrolysis by the catalytic ATPase, uncovering an additional function to its established role in nucleosome remodeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ATPase mutant studies presented in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "88601cff-a112-4bb5-b6b4-29c7380f1495",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C5",
+      "claim": "Multiple remodelers can repeatedly occupy the same promoter region on a timescale of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic simulations show that multiple remodelers can repeatedly occupy the same promoter region on a timescale of minutes, implicating an unending 'tug-of-war' that controls a temporally shifting window of accessibility for the transcription initiation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic simulations based on measured parameters, as shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "70941d28-872c-44c7-92f0-cd93842396b4",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C6",
+      "claim": "Gene promoters in budding yeast contain nucleosome-depleted regions (NDRs), approximately 150 base-pair stretches of DNA that are depleted of nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the budding yeast Saccharomyces cerevisiae, gene promoters contain nucleosome-depleted regions (NDRs), approximately 150 base-pair stretches of DNA that are depleted of nucleosomes (Yuan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yuan, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "484705fe-532c-4f65-9d64-a28fe6ff0548",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C7",
+      "claim": "NDRs are flanked by well-positioned +1 and \u22121 nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "NDRs are flanked by well-positioned +1 and \u22121 nucleosomes, with the +1 nucleosome overlapping the transcription start site (TSS) in yeast (Albert et al., 2007; Yuan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Albert et al., 2007 and Yuan, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "75cb79d1-aa7e-4484-ada7-5c86b6fdfc17",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C8",
+      "claim": "The +1 nucleosome overlaps the transcription start site (TSS) in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "NDRs are flanked by well-positioned +1 and \u22121 nucleosomes, with the +1 nucleosome overlapping the transcription start site (TSS) in yeast (Albert et al., 2007; Yuan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Albert et al., 2007 and Yuan, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "c0173320-34a6-4e9f-98ef-2a0bd381a964",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C9",
+      "claim": "ATP-dependent chromatin remodelers are key trans-acting factors in establishing and maintaining nucleosome organization around genes.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-dependent chromatin remodelers are key trans-acting factors in establishing and maintaining nucleosome organization around genes (Becker and Workman, 2013; Rando and Winston, 2012; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Becker and Workman, 2013; Rando and Winston, 2012; Zhang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "98c07cce-3754-4d58-ab1a-c9c567821b44",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C10",
+      "claim": "Chromatin remodeling enzymes utilize DNA translocation as the fundamental mechanism to restructure DNA-histone contacts within nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "As specialized members of the superfamily 2 (SF2) translocases, chromatin remodeling enzymes share a highly conserved ATPase motor that utilizes DNA translocation as the fundamental mechanism to restructure DNA-histone contacts within nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about chromatin remodeling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "94093654-f031-49f4-8ccb-e377cc13370b",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C11",
+      "claim": "Chromatin remodelers are classified into four sub-families: SWI/SNF, CHD, ISWI, and INO80.",
+      "claim_type": "EXPLICIT",
+      "source": "They are further classified into four sub-families based on sequence homology of the catalytic ATPase and possession of shared components, namely the SWI/SNF [Switch defective/sucrose non-fermenting], CHD [Chromodomain helicase DNA-binding], ISWI [Imitation switch], and INO80 [Inositol requiring 80] sub-families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about chromatin remodeler classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "c9ac358a-5da6-455c-8a5c-db9c97a01cd5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C12",
+      "claim": "RSC and SWI/SNF mobilize the +1 and \u22121 nucleosomes away from the NDR relative to the TSS to promote proper engagement of transcription initiation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC and SWI/SNF mobilize the +1 and \u22121 nucleosomes away from the NDR relative to the TSS to promote proper engagement of transcription initiation machinery (Ganguli et al., 2014; Klein-Brill et al., 2019; Kubik et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ganguli et al., 2014; Klein-Brill et al., 2019; Kubik et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8516348c-ad78-4a3f-8b8c-47500a8ed94e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C13",
+      "claim": "RSC assists NDR formation for the majority of yeast genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RSC assists NDR formation for the majority of yeast genes, and the consequence of conditional RSC inactivation is a global loss of transcription (Brahma and Henikoff, 2019; Ganguli et al., 2014; Kubik et al., 2018; Yen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brahma and Henikoff, 2019; Ganguli et al., 2014; Kubik et al., 2018; Yen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "2eebb476-8a8b-4c1e-b1f8-cce8e3f4a88c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C14",
+      "claim": "Conditional RSC inactivation results in a global loss of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, RSC assists NDR formation for the majority of yeast genes, and the consequence of conditional RSC inactivation is a global loss of transcription (Brahma and Henikoff, 2019; Ganguli et al., 2014; Kubik et al., 2018; Yen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brahma and Henikoff, 2019; Ganguli et al., 2014; Kubik et al., 2018; Yen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "236996f8-24d1-41bc-94ee-3e2fb88078ac",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C15",
+      "claim": "INO80 and ISW2 reposition the +1 and \u22121 nucleosomes towards the NDR in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ISW2 and INO80 remodelers reposition the +1 and \u22121 nucleosomes towards the NDR in vivo, which is important for suppressing yeast cryptic transcription via noncanonical TSS usage (Klein-Brill et al., 2019; Kubik et al., 2019; Whitehouse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Klein-Brill et al., 2019; Kubik et al., 2019; Whitehouse et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "1886475f-1892-43d6-956e-10f6fcacd5d2",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C16",
+      "claim": "INO80 and ISW2 are important for suppressing yeast cryptic transcription via noncanonical TSS usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ISW2 and INO80 remodelers reposition the +1 and \u22121 nucleosomes towards the NDR in vivo, which is important for suppressing yeast cryptic transcription via noncanonical TSS usage (Klein-Brill et al., 2019; Kubik et al., 2019; Whitehouse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Klein-Brill et al., 2019; Kubik et al., 2019; Whitehouse et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "ff2f11c8-e64a-487c-869e-4ce87890466e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C17",
+      "claim": "INO80 and ISW2 are implicated in DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, INO80 and ISW2 are implicated in DNA replication (Au et al., 2011; Lee et al., 2015; Vincent et al., 2008) and INO80 in DNA damage repair (Morrison et al., 2004; van Attikum et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Au et al., 2011; Lee et al., 2015; Vincent et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "89478f2a-dc0b-40b0-9fe5-6a6525b79d6d",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C18",
+      "claim": "INO80 is implicated in DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, INO80 and ISW2 are implicated in DNA replication (Au et al., 2011; Lee et al., 2015; Vincent et al., 2008) and INO80 in DNA damage repair (Morrison et al., 2004; van Attikum et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Morrison et al., 2004; van Attikum et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "41e7b155-4c24-4c9c-9882-032f2414f2c5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C19",
+      "claim": "CHD1 and ISW1 act primarily in the gene body where they maintain proper nucleosome spacing and density relative to the +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The second group of remodelers, CHD1 and ISW1, act primarily in the gene body where they maintain proper nucleosome spacing and density relative to the +1 nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about CHD1 and ISW1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "09321dd1-a3da-4b94-aa6e-c7b4df0b61b3",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C20",
+      "claim": "CHD1 and ISW1 actions are coupled to transcription elongation by interacting with the elongating polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Their actions are coupled to transcription elongation by interacting with the elongating polymerase to maintain nucleosome density and thus suppress cryptic initiation within the gene body (Cheung et al., 2008; Radman-Livaja et al., 2012; Smolle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cheung et al., 2008; Radman-Livaja et al., 2012; Smolle et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "c26e8377-d7c1-425b-bc45-5b264c937e2d",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C21",
+      "claim": "The catalytic subunits of six major chromatin remodeling complexes were tagged at the C-terminus with HaloTag by engineering the endogenous loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We tagged the catalytic subunits of six major chromatin remodeling complexes, RSC, SWI/SNF, CHD1, ISW1 (ISW1a, and ISW1b), ISW2, and INO80 at the C-terminus with the self-labeling HaloTag by engineering the endogenous loci and expressed the fusion proteins as the sole source under natural promoter control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "c3d4d81e-7e98-4d21-ba80-851f8b5fe61c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C22",
+      "claim": "The HaloTag fusion proteins were localized in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion proteins were localized in the nucleus and did not display detectable cleavage of the tag by SDS-PAGE (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "59bfd561-25cf-4773-be3e-6ba82e5cd7c4",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C23",
+      "claim": "The HaloTag fusion proteins did not display detectable cleavage of the tag by SDS-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion proteins were localized in the nucleus and did not display detectable cleavage of the tag by SDS-PAGE (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "654a93d6-9f2e-43ff-a382-aadc9a20369e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C24",
+      "claim": "No phenotypes were observed for all strains containing tagged constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no phenotypes were observed for all strains containing tagged constructs (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "7d803633-811b-4a2a-bc9e-e48310090688",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C25",
+      "claim": "The majority of H2B molecules (79.4 \u00b1 1.9%) are slow-moving with average D of 0.026 \u00b5m2s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of H2B molecules (79.4 \u00b1 1.9%) are slow-moving with average D of 0.026 \u00b5m2s\u22121 (Figure 1\u2014figure supplement 2A) consistent with incorporation into chromatin, whereas most of the chromatin-free Halo-NLS molecules show greatly increased diffusivity (D ~ 5 \u00b5m2s\u22121) (Ranjan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "a3e502c0-359d-4a03-89ce-9392e8528ed5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C26",
+      "claim": "Chromatin-free Halo-NLS molecules show greatly increased diffusivity (D ~ 5 \u00b5m2s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of H2B molecules (79.4 \u00b1 1.9%) are slow-moving with average D of 0.026 \u00b5m2s\u22121 (Figure 1\u2014figure supplement 2A) consistent with incorporation into chromatin, whereas most of the chromatin-free Halo-NLS molecules show greatly increased diffusivity (D ~ 5 \u00b5m2s\u22121) (Ranjan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ranjan et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "77d32371-f5df-471b-8b55-59facba62cf9",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C27",
+      "claim": "Chromatin remodelers exhibit a slow Dbound fraction (average 0.036 \u00b1 0.007 to 0.067 \u00b1 0.004 \u00b5m2s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to H2B, chromatin remodelers exhibit a slow Dbound fraction (average 0.036 \u00b1 0.007 to 0.067 \u00b1 0.004 \u00b5m2s\u22121) as would be expected for molecules associated with largely immobile chromatin (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "e83b8cf8-bd63-46cb-870f-6cda7d06ecc6",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C28",
+      "claim": "The Dbound values of chromatin remodelers are ~2-fold higher than H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as discussed later, the Dbound values are ~2-fold higher than H2B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "a9c02eb2-b767-4b5e-b61c-d1e1a59238f8",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C29",
+      "claim": "Chromatin remodelers exhibit a chromatin-free fraction whose Dfree values (0.464 \u00b1 0.043 to 1.014 \u00b1 0.024 \u00b5m2s\u22121) are ~10-fold higher than Dbound.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also observed a separable chromatin-free fraction whose Dfree values (0.464 \u00b1 0.043 to 1.014 \u00b1 0.024 \u00b5m2s\u22121) are ~10-fold higher, but distinctly lower than the Dfree for Halo-NLS, indicating that our imaging regime captures essentially the full range of potential diffusive behaviors for this family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from fast-tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "c7ab4eef-36a1-455b-bb05-ddc62816928a",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C30",
+      "claim": "The Dfree values show an inverse correlation with the estimated total molecular weights of chromatin remodeling complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Dfree values show an inverse correlation with the estimated total molecular weights of chromatin remodeling complexes, consistent with expectations that the tagged catalytic subunits are associated within larger complexes (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8cc0f755-f781-4145-b4e5-fa51c58db51c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C31",
+      "claim": "The majority of RSC molecules are associated with chromatin (66.0 \u00b1 1.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of both RSC and SWI/SNF molecules are associated with chromatin (RSC: 66.0 \u00b1 1.1%; SWI/SNF: 55.9 \u00b1 1.3%) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "92fd867c-0381-4b36-a4e7-02f1bf4b2395",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C32",
+      "claim": "The majority of SWI/SNF molecules are associated with chromatin (55.9 \u00b1 1.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of both RSC and SWI/SNF molecules are associated with chromatin (RSC: 66.0 \u00b1 1.1%; SWI/SNF: 55.9 \u00b1 1.3%) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d88643e4-022d-43a9-a5e7-28185d42499c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C33",
+      "claim": "INO80 exhibits Fbound value of 48.3 \u00b1 0.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "INO80 and ISW2 exhibit Fbound values of 48.3 \u00b1 0.2% and 34.8 \u00b1 1.0%, respectively (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "6b4569f9-a899-4b88-89c7-59f33f9fe491",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C34",
+      "claim": "ISW2 exhibits Fbound value of 34.8 \u00b1 1.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "INO80 and ISW2 exhibit Fbound values of 48.3 \u00b1 0.2% and 34.8 \u00b1 1.0%, respectively (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "f09d1547-371f-4723-8ade-9146a0767bd9",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C35",
+      "claim": "CHD1 shows Fbound value of 47.8 \u00b1 4.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "The two remodelers show comparable Fbound values (CHD1: 47.8 \u00b1 4.9%; ISW1a/b: 52.0 \u00b1 1.1%) (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "a4a023b0-2e94-48fa-a7ee-e02c8d5a6566",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C36",
+      "claim": "ISW1a/b shows Fbound value of 52.0 \u00b1 1.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "The two remodelers show comparable Fbound values (CHD1: 47.8 \u00b1 4.9%; ISW1a/b: 52.0 \u00b1 1.1%) (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "1892aef8-3300-4b74-876d-455b65bbe0a4",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C37",
+      "claim": "The Isw1 catalytic subunit is shared by two distinct chromatin remodeling complexes called ISW1a and ISW1b.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the catalytic subunit Isw1 is shared by two distinct chromatin remodeling complexes called ISW1a and ISW1b (Vary, et al., 2003), in addition to potentially un-complexed Isw1 catalytic subunit (Tsukiyama et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Vary et al., 2003 and Tsukiyama et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "538a0ad4-8941-4a2a-803d-9b6e6a18402e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C38",
+      "claim": "The ISW1a complex localizes near the transcription start and end of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ISW1a complex localizes near the transcription start and end of genes, whereas the ISW1b complex occupies more mid-coding regions (Morillon et al., 2003; Smolle et al., 2012; Yen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Morillon et al., 2003; Smolle et al., 2012; Yen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "4082f6f6-c8b3-4613-a4f9-1b641d06bb4d",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C39",
+      "claim": "The ISW1b complex occupies more mid-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ISW1a complex localizes near the transcription start and end of genes, whereas the ISW1b complex occupies more mid-coding regions (Morillon et al., 2003; Smolle et al., 2012; Yen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Morillon et al., 2003; Smolle et al., 2012; Yen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "48eb4e82-4fcf-440a-8945-b882a46940bb",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C40",
+      "claim": "ISW1b (Ioc4-Halo) complex exhibits higher Fbound (55.5 \u00b1 2.6%) compared to ISW1a (Ioc3-Halo) complex (39.6 \u00b1 0.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "The gene-body acting ISW1b (Ioc4-Halo) complex exhibits higher Fbound compared to ISW1a (Ioc3-Halo) complex (ISW1b: 55.5 \u00b1 2.6%; ISW1a: 39.6 \u00b1 0.0%) (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "257fbbcb-4e8b-45f4-820d-7bdeeba2359f",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C41",
+      "claim": "The Log(D) histograms of all imaged chromatin remodelers display less distinct bound and free populations compared to H2B histones and HaloTag protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the two well-separated Gaussian distributions for H2B histones and HaloTag protein (Figure 3A), the Log(D) histograms of all imaged chromatin remodelers display less distinct bound and free populations, with a noticeable fraction showing an intermediate range of diffusion coefficients (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "f35145e9-ee23-4a06-965b-f5e27a5e6984",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C42",
+      "claim": "The population of transitioning trajectories is more prominent for remodelers (from 20.9 \u00b1 2.5% to 30.2 \u00b1 1.5%) compared to free HaloTag (10.4 \u00b1 0.7%) and H2B histone (7.1 \u00b1 2.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that the population of transitioning trajectories is more prominent for remodelers (from 20.9 \u00b1 2.5% to 30.2 \u00b1 1.5%) compared to free HaloTag (10.4 \u00b1 0.7%) and H2B histone (7.1 \u00b1 2.1%), (Figure 3C\u2013I, Figure 3\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C\u2013I and Figure 3\u2014figure supplement 1D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "26440723-8a2e-41e5-8eaa-c03581e4def0",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C43",
+      "claim": "Comparable frequencies were observed for remodeler dissociation (bound to free transition: 45.3 \u00b1 1.3 to 50.24 \u00b1 0.01%) and association (free to bound: 49.76 \u00b1 0.01 to 54.7 \u00b1 1.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed comparable frequencies for remodeler dissociation (bound to free transition: 45.3 \u00b1 1.3 to 50.24 \u00b1 0.01%) and association (free to bound: 49.76 \u00b1 0.01 to 54.7 \u00b1 1.3%), indicating that there is little bias in the direction of state transitions (Figure 3\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "25f06514-b53e-4a3d-ab01-ffe8405105e3",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C44",
+      "claim": "Transient but frequent chromatin interactions are characteristic of the six remodeling complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that transient but frequent chromatin interactions are characteristic of the six remodeling complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on transitioning trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "0ddffd58-bad5-4041-a74c-f1e984a6f1d8",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C45",
+      "claim": "RSC exhibits a stable-binding fraction (fsb) of 27 \u00b1 2% with a lifetime (\u03c4sb) of 5.0 \u00b1 0.7 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable-binding subpopulations (fsb) of RSC (27 \u00b1 2%) and SWI/SNF (24 \u00b1 6%) display strikingly short lifetimes (RSC: 5.0 \u00b1 0.7 s; SWI/SNF 4.4 \u00b1 1.2 s) (Figure 4A,B), consistent with a previous measurement for the Rsc2 subunit of RSC (Mehta et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "4c4a9175-4956-4411-92a5-e363da33d928",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C46",
+      "claim": "SWI/SNF exhibits a stable-binding fraction (fsb) of 24 \u00b1 6% with a lifetime (\u03c4sb) of 4.4 \u00b1 1.2 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable-binding subpopulations (fsb) of RSC (27 \u00b1 2%) and SWI/SNF (24 \u00b1 6%) display strikingly short lifetimes (RSC: 5.0 \u00b1 0.7 s; SWI/SNF 4.4 \u00b1 1.2 s) (Figure 4A,B), consistent with a previous measurement for the Rsc2 subunit of RSC (Mehta et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "93a1fb13-386c-42a9-bfa0-b6f8a566894c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C47",
+      "claim": "INO80 exhibits a stable-binding fraction (fsb) of 20 \u00b1 3% with a residence time (\u03c4sb) of 3.7 \u00b1 0.8 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, INO80 and ISW2 exhibit stable-binding fractions (fsb 20 \u00b1 3% and 13 \u00b1 3%, respectively) and similarly short residence times (\u03c4sb 3.7 \u00b1 0.8 s and 4.9 \u00b1 2.2 s, respectively) (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d24e33f8-6c0d-4cfd-b0f3-1ee2d5eee27a",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C48",
+      "claim": "ISW2 exhibits a stable-binding fraction (fsb) of 13 \u00b1 3% with a residence time (\u03c4sb) of 4.9 \u00b1 2.2 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, INO80 and ISW2 exhibit stable-binding fractions (fsb 20 \u00b1 3% and 13 \u00b1 3%, respectively) and similarly short residence times (\u03c4sb 3.7 \u00b1 0.8 s and 4.9 \u00b1 2.2 s, respectively) (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "50c88c9e-2858-41a6-8b18-3e8accdcd8ad",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C49",
+      "claim": "CHD1 exhibits a stable-binding fraction (fsb) of 15 \u00b1 3% with a dwell time (\u03c4sb) of 7.2 \u00b1 3.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "For gene body-acting remodelers, CHD1 and ISW1 complexes exhibit stable-binding fractions (fsb 15 \u00b1 3% and 19 \u00b1 2%, respectively) and short dwell times (\u03c4sb 7.2 \u00b1 3.3 s and 5.6 \u00b1 1.3 s, respectively) (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "9357b27c-4b8d-4a32-85b1-d16fdbccdead",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C50",
+      "claim": "ISW1 complexes exhibit a stable-binding fraction (fsb) of 19 \u00b1 2% with a dwell time (\u03c4sb) of 5.6 \u00b1 1.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "For gene body-acting remodelers, CHD1 and ISW1 complexes exhibit stable-binding fractions (fsb 15 \u00b1 3% and 19 \u00b1 2%, respectively) and short dwell times (\u03c4sb 7.2 \u00b1 3.3 s and 5.6 \u00b1 1.3 s, respectively) (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "3a3d1c78-7181-44a5-9b97-d7be1ca23735",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C51",
+      "claim": "ISW1b shows 2.5-fold higher residence times compared to ISW1a (\u03c4sb 5.9 \u00b1 2.5 s and 2.2 \u00b1 1.0 s, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ISW1b shows 2.5-fold higher residence times compared to ISW1a (\u03c4sb 5.9 \u00b1 2.5 s and 2.2 \u00b1 1.0 s, respectively) with comparable stable-binding fractions (Figure 4\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "5311f8be-dcf4-4108-9ee9-91f50a1cc7d0",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C52",
+      "claim": "The stable-binding average residence time increased by ~2-fold (from 4.9 \u00b1 2.2 to 9.7 \u00b1 3.1 s) for the Isw2K215R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the stable-binding average residence time increased by ~2-fold (from 4.9 \u00b1 2.2 to 9.7 \u00b1 3.1 s) for the Isw2K215R mutant (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "7655cc8b-3078-4951-98ef-f2c1e91a9125",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C53",
+      "claim": "Increased residence time (from 5.6 \u00b1 1.3 to 9.1 \u00b1 3.6 s) was observed for the Isw1K227R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed increased residence time (from 5.6 \u00b1 1.3 to 9.1 \u00b1 3.6 s) for the Isw1K227R (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "f8876544-e077-4d4d-994e-4d7987d5ab8a",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C54",
+      "claim": "The two ATPase-dead Chd1 mutants both showed increased stable-binding residence times (Chd1K407R from 7.2 \u00b1 3.3 to ~52 s; Chd1D513N from 7.2 \u00b1 3.3 to 16.1 \u00b1 7.3 s).",
+      "claim_type": "EXPLICIT",
+      "source": "The two ATPase-dead Chd1 mutants both showed increased stable-binding residence times (Chd1K407R from 7.2 \u00b1 3.3 to ~52 s; Chd1D513N from 7.2 \u00b1 3.3 to 16.1 \u00b1 7.3 s) (Figure 5E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "0c2d1c79-1ba6-461c-b9ae-29dbf7e3ff17",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C55",
+      "claim": "After chromatin association, the mutant ATPases exhibit slower dissociation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, our results indicate that after chromatin association, the mutant ATPases exhibit slower dissociation rate (the reciprocal of residence time), consistent with previous genome-wide ChIP and biochemical studies (Fitzgerald et al., 2004; Gelbart et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Fitzgerald et al., 2004; Gelbart et al., 2001.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "0f677ef1-fe59-45f4-8331-482092eaac8e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C56",
+      "claim": "Chromatin-bound remodelers exhibit ~2-fold higher mobility than H2B histone.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, chromatin-bound remodelers exhibit ~2-fold higher mobility than H2B histone, as revealed by the average MSD plot and the distribution of individual D values of each trajectory under fast-tracking (Figure 6A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "966e2100-9906-4af1-ab15-3c210f185d17",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C57",
+      "claim": "The mean Rc values are substantially higher for remodelers compared to the global mean measured for H2B.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean Rc values are also substantially higher for remodelers compared to the global mean measured for H2B (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "69137371-444e-4556-8994-4613706df496",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C58",
+      "claim": "Three mutants Isw2K215R, Isw1K227R, Chd1K407R harboring substitutions in the catalytic ATPase Walker A motif display strikingly lower diffusivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Three mutants Isw2K215R, Isw1K227R, Chd1K407R harboring substitutions in the catalytic ATPase Walker A motif responsible for ATP binding display strikingly lower diffusivity as revealed by the average MSD plot of stably bound molecules, which approaches or substantially overlaps the global H2B curve (Figure 6D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "223dbc37-3924-48d8-a7c3-fe60cde445d5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C59",
+      "claim": "Chd1D513N bearing a substitution in the Walker B motif of Chd1 shows no substantial changes in the average MSD curve and apparent D values for stably bound trajectories compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Chd1D513N bearing a substitution in the Walker B motif of Chd1 shows no substantial changes in the average MSD curve and apparent D values for stably bound trajectories compared to wildtype as measured by slow-tracking (Figure 6F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6F,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8a0927ff-c69d-4f1f-8303-7cdde5de1af0",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C60",
+      "claim": "Isw2D312N exhibits an approximately two-fold increase in its residence time compared to wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a mutation in the catalytic ATPase, the Isw2D312N mutant exhibits an approximately two-fold increase in its residence time compared to wildtype (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "5b1dac01-5150-46a8-86b6-a74a72a15874",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C61",
+      "claim": "The ATP-bound state may be adequate to induce enhanced diffusion on chromatin as part of the mechanism of target search by remodeling enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the Walker B motif is important for ATP hydrolysis (via coordinating Mg2+ ion and a water molecule), but not for ATP binding (Singleton et al., 2007; Walker et al., 1982; Figure 5A), this result suggests that the ATP-bound state may be adequate to induce enhanced diffusion on chromatin as part of the mechanism of target search by remodeling enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data and citations to Singleton et al., 2007; Walker et al., 1982.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "64b6e70d-341d-46d3-b520-9aec2ed70a33",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C62",
+      "claim": "RSC binding is the most widespread (Ntargets = 3702).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, RSC binding is the most widespread (Ntargets = 3702), SWI/SNF binds only a small subset (Ntargets = 466), and INO80 (Ntargets = 1646) and ISW2 (Ntargets = 1802) each bind to approximately a third of all yeast promoters (Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kubik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "ae76e8e8-fe58-42fa-8f6d-92f211792e41",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C63",
+      "claim": "SWI/SNF binds only a small subset (Ntargets = 466).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, RSC binding is the most widespread (Ntargets = 3702), SWI/SNF binds only a small subset (Ntargets = 466), and INO80 (Ntargets = 1646) and ISW2 (Ntargets = 1802) each bind to approximately a third of all yeast promoters (Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kubik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "182d3064-3ddd-4e8d-acd3-45bb514dd4e3",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C64",
+      "claim": "INO80 (Ntargets = 1646) and ISW2 (Ntargets = 1802) each bind to approximately a third of all yeast promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, RSC binding is the most widespread (Ntargets = 3702), SWI/SNF binds only a small subset (Ntargets = 466), and INO80 (Ntargets = 1646) and ISW2 (Ntargets = 1802) each bind to approximately a third of all yeast promoters (Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kubik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "26b810aa-e025-4a31-9b84-17c44c280075",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C65",
+      "claim": "RSC shows substantial occupancy (30 \u00b1 7.3%) at stably bound chromatin targets.",
+      "claim_type": "EXPLICIT",
+      "source": "RSC shows substantial occupancy (30 \u00b1 7.3%) at stably bound chromatin targets, despite its short residence time (\u03c4sb) of 5.0 \u00b1 0.7 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculations using measured kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "38f96fab-5763-4bbe-99e5-7db0368c5c3c",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C66",
+      "claim": "SWI/SNF exhibits the highest occupancy (94 \u00b1 41%) among the four remodelers.",
+      "claim_type": "EXPLICIT",
+      "source": "SWI/SNF exhibits the highest occupancy (94 \u00b1 41%) among the four remodelers, consistent with the highest raw ChEC signals reported for Swi3 (Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculations using measured kinetic parameters and is consistent with a citation to Kubik et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "33fdaf7d-60c0-4ea1-b581-3127f1f783c5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C67",
+      "claim": "INO80 displays substantial occupancy (25 \u00b1 9.7%) at its targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparable to RSC, INO80 displays substantial occupancy (25 \u00b1 9.7%) at its targets while ISW2 displays a lower occupancy (11 \u00b1 7.2%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculations using measured kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "195e1f4c-18dd-4ba7-9521-414997c04203",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C68",
+      "claim": "ISW2 displays a lower occupancy (11 \u00b1 7.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparable to RSC, INO80 displays substantial occupancy (25 \u00b1 9.7%) at its targets while ISW2 displays a lower occupancy (11 \u00b1 7.2%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on calculations using measured kinetic parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "78ebc739-3b4f-480b-bc6a-42e26c425cd6",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C69",
+      "claim": "At promoter regions targeted by multiple remodelers, the occupancy by any one remodeler is strikingly high.",
+      "claim_type": "EXPLICIT",
+      "source": "Average time trace simulations of stably bound occupancies for each of the four remodelers over several hundred seconds (Figure 7B) show that at promoter regions targeted by multiple remodelers such as genes in 'cluster IV' enriched for RSC and INO80 (Kubik et al., 2019), the occupancy by any one remodeler is strikingly high, and more than one remodeler can simultaneously engage a promoter repeatedly over several minutes (Figure 7C; see also Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on simulations using measured kinetic parameters, as shown in Figure 7B,C and Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d6885f7d-868e-4f38-bde7-991fca2db7bf",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C70",
+      "claim": "More than one remodeler can simultaneously engage a promoter repeatedly over several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Average time trace simulations of stably bound occupancies for each of the four remodelers over several hundred seconds (Figure 7B) show that at promoter regions targeted by multiple remodelers such as genes in 'cluster IV' enriched for RSC and INO80 (Kubik et al., 2019), the occupancy by any one remodeler is strikingly high, and more than one remodeler can simultaneously engage a promoter repeatedly over several minutes (Figure 7C; see also Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on simulations using measured kinetic parameters, as shown in Figure 7C and Figure 7\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "b09b93c7-0222-458a-a9ea-d14130405512",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C71",
+      "claim": "All imaged remodelers show stable and transient residence times of 4\u20137 s and 0.4\u20130.7 s, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparable to reported values for the Rsc2 subunit of RSC and the yeast transcription factors, Ace1 and Gal4 (Donovan et al., 2019; Mehta et al., 2018), all imaged remodelers show stable and transient residence times of 4\u20137 s and 0.4\u20130.7 s, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations to Donovan et al., 2019; Mehta et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "e76340d5-41f4-4e2e-a465-4bb485e3611b",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C72",
+      "claim": "The effect of mutating the DNA-binding domain of CHD1 monomer results in a threefold reduction in the \u03c4sb value (from 7.2 \u00b1 3.3 to 2.4 \u00b1 0.7 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effect of mutating the DNA-binding domain of CHD1 monomer (Ryan et al., 2011; Tran et al., 2000) results in a threefold reduction in the \u03c4sb value (from 7.2 \u00b1 3.3 to 2.4 \u00b1 0.7 s) (Figure 7\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 1C,D and citations to Ryan et al., 2011; Tran et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "780215eb-725d-4022-a032-420dc31890ee",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C73",
+      "claim": "Five tested ATPase-dead mutants (for ISW2, ISW1, CHD1) show twofold or greater increase in their stable-binding residence times.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the fast dissociation rates of remodelers are facilitated by ATP hydrolysis. Five tested ATPase-dead mutants (for ISW2, ISW1, CHD1) show twofold or greater increase in their stable-binding residence times (Figure 5C\u2013F), highlighting a new role of for ATP-utilization in coupling nucleosome remodeling to rapid enzyme dissociation from chromatin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "cfc72a0f-c8f6-403a-96b5-aae82bc2df33",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C74",
+      "claim": "Remodelers undertake small translocation steps with remodeling rates of a few bp/sec.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have shown that remodelers undertake small translocation steps with remodeling rates of a few bp/sec (Blosser et al., 2009; Deindl et al., 2013; Harada et al., 2016; Qiu et al., 2017; Sabantsev et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Blosser et al., 2009; Deindl et al., 2013; Harada et al., 2016; Qiu et al., 2017; Sabantsev et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d4ff0978-cb19-47b8-a486-4c61c33f81ce",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C75",
+      "claim": "With an enzymatic rate of 2 bp/s for ISWI, an ISWI stable-binding event would allow octamer sliding by roughly 12 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, with an enzymatic rate of 2 bp/s for ISWI (Blosser et al., 2009), an ISWI stable-binding event would allow octamer sliding by roughly 12 bp, which is within range of in vivo nucleosome position changes after conditional inactivation of RSC, SWI/SNF, INO80, and ISW2 (Ganguli et al., 2014; Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited enzymatic rates and is consistent with citations to Ganguli et al., 2014; Kubik et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "cbb813cc-1d0f-4d4f-9895-79ddb3cbb8cc",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C76",
+      "claim": "Mutations in the ISW1, ISW2, and CHD1 Walker A motif substantially decreases in vivo mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "We further showed that this enhanced mobility is dependent on the ATPase domain. Mutations in the ISW1, ISW2, and CHD1 Walker A motif implicated in nucleotide binding (Singleton et al., 2007) substantially decreases in vivo mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Singleton et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "40f5b4cb-3caa-4758-93af-536802a07c53",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C77",
+      "claim": "Mutations in the CHD1 and ISW2 Walker B motif displays a milder decrease of its chromatin mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of mutations in the CHD1 and ISW2 Walker B motif, implicated in ATP hydrolysis [but not ATP binding] (Singleton et al., 2007), displays a milder decrease of its chromatin mobility, suggesting that nucleotide binding is largely sufficient for promoting diffusion for the two remodelers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and a citation to Singleton et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "dce20d4f-a443-4799-b86f-d884a3d530bd",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C78",
+      "claim": "RSC and Drosophila ISWI remodelers undergo ATP hydrolysis-dependent translocation on ssDNA and dsDNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RSC and Drosophila ISWI remodelers undergo ATP hydrolysis-dependent translocation on ssDNA and dsDNA in vitro (Saha et al., 2005; Whitehouse et al., 2003), with processivities of 20\u201370 bp/translocation event (Fischer et al., 2007; Saha et al., 2005; Sirinakis et al., 2011; Whitehouse et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Saha et al., 2005; Whitehouse et al., 2003; Fischer et al., 2007; Sirinakis et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d1f434ec-c227-4f40-89e0-68c075678419",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C79",
+      "claim": "The absence of any change in ISW1 chromatin-bound mobility upon treatment with a general transcription inhibitor thiolutin rules out transcription per se as a source of enhanced remodeler diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the absence of any change in ISW1 chromatin-bound mobility upon treatment with a general transcription inhibitor thiolutin rules out transcription per se as a source of enhanced remodeler diffusion (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "bbd15ad7-16f7-4738-bebe-027edd3c7771",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C80",
+      "claim": "Chromatin remodelers use the catalytic ATPase not only for nucleosome remodeling but also to enhance target search kinetics by promoting 1D diffusion on chromatin and rapid detachment after reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, our results suggest that chromatin remodelers use the catalytic ATPase not only for nucleosome remodeling but also to enhance target search kinetics by promoting 1D diffusion on chromatin and rapid detachment after reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on ATPase mutants and their effects on mobility and dissociation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "a711e703-5f8c-46ca-b26d-bb755749c136",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C81",
+      "claim": "About half of promoters genome-wide harbor at least two distinct remodelers that harbor nucleosome pushing and pulling activities relative to the NDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast promoter regions can be classified into different groups enriched either for no remodeler or a combination of RSC, SWI/SNF, INO80, and ISW2, with about half of promoters genome-wide harboring at least two distinct remodelers that harbor nucleosome pushing and pulling activities relative to the NDR (Kubik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kubik et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "1ba58b52-e234-4365-9bda-f9bf04b6eda5",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C82",
+      "claim": "At promoter regions where opposing remodelers bind, a consecutive 'tug-of-war' between the pushing and pulling activities is expected.",
+      "claim_type": "EXPLICIT",
+      "source": "At promoter regions where opposing remodelers bind, we expect a consecutive 'tug-of-war' between the pushing and pulling activities, in which successive engagements would ultimately result in fine-tuning the steady-state nucleosome position, with the final outcome dependent on remodeler occupancy and nucleosome remodeling activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental data and known remodeler activities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d11988a7-2eba-49e2-b7b9-5402d7c43055",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C83",
+      "claim": "The average promoter occupancy of the yeast PIC is in the range of 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "In a related study (Nguyen et al., 2021), the average promoter occupancy of the yeast PIC that forms upstream and overlapping the +1 nucleosome was found to be in the range of 10%, that is on the same order of magnitude but lower than three of four remodelers examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nguyen et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "bbfecb86-2dc8-405d-84ca-f98a9e80be3d",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C84",
+      "claim": "A full PIC lasts only several seconds before dissociation from chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to chromatin remodelers, a full PIC lasts only several seconds before dissociation from chromatin, but the average promoter is vacant for ~100 s before PIC reformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on the related study mentioned (Nguyen et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "58653b6f-e38c-48d6-bcde-502f3492ffa9",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C85",
+      "claim": "The average promoter is vacant for ~100 s before PIC reformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to chromatin remodelers, a full PIC lasts only several seconds before dissociation from chromatin, but the average promoter is vacant for ~100 s before PIC reformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on the related study mentioned (Nguyen et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "6abac283-775c-48a3-9578-f3ab819deb7b",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "claim_id": "C86",
+      "claim": "An independent study from the Verrijzer laboratory found that the Drosophila Brahma (BRM) remodeler also displays dependence on ATP utilization by the catalytic ATPase for dynamic mobility and remodeler dissociation in live Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that an independent study from the Verrijzer laboratory (Tilly et al. 2021) found that the Drosophila Brahma (BRM) remodeler also displays dependence on ATP utilization by the catalytic ATPase for dynamic mobility and remodeler dissociation in live Drosophila cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tilly et al. 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9d7f0571-d0cb-42b1-9e1f-cd1260aa0bdb",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HaloTag fusion proteins for six chromatin remodeling complexes were successfully generated and validated. The fusion proteins localized to the nucleus, showed no detectable tag cleavage, and exhibited no growth phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 provide converging evidence that the HaloTag fusion approach is functional. Nuclear localization (C22), lack of tag cleavage (C23), and absence of phenotypes (C24) collectively validate the experimental system for subsequent single-molecule tracking studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chromatin remodelers exhibit distinct chromatin-bound and chromatin-free populations with varying binding fractions. Remodelers show 2-fold higher Dbound values than H2B and 10-fold higher Dfree values, with chromatin-binding fractions ranging from 35-66% across different remodeler families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C40 present comprehensive fast-tracking data showing distinct diffusive populations for all six remodelers. The use of H2B and Halo-NLS as controls (C25-C26), consistent methodology across remodelers (C27-C36, C40), and correlation with molecular weight (C30) provide strong support for these measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "e0d33546-5d15-48f0-bad5-16e88a3d2ec1",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chromatin remodelers display frequent transitions between chromatin-bound and free states. Transitioning trajectories represent 21-30% of remodeler molecules, significantly higher than H2B (7%) or free HaloTag (10%), with balanced frequencies of association and dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by vbSPT Hidden Markov Model analysis distinguishing bound, free, and transitioning populations. The higher transitioning frequency for remodelers compared to controls (C42), balanced directionality (C43), and validation of state assignments strengthen this conclusion (C44).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All six chromatin remodelers exhibit remarkably short chromatin residence times of 4-7 seconds for stable binding. Residence times were measured using slow-tracking and corrected for photobleaching using H2B as a reference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 and C71 present consistent residence time measurements across all remodelers using slow-tracking methodology. The photobleaching correction using H2B, double exponential fitting to distinguish stable and transient binding, and consistency with prior measurements for RSC (C45) support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ATPase-dead mutants in the Walker A motif show 2-fold or greater increases in chromatin residence times. Five tested mutants (Isw2K215R, Isw1K227R, Chd1K407R, Chd1D513N, Isw2D312N) all exhibited slower dissociation rates compared to wildtype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55, C60, and C73 demonstrate that ATP hydrolysis facilitates rapid dissociation. Multiple independent mutants across three remodelers show consistent increases in residence time, with proper controls and consistency with prior biochemical studies (C55).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8d536756-fe96-4110-96f5-67704e56d7e4",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chromatin-bound remodelers exhibit 2-fold higher mobility than H2B histone, and this enhanced mobility requires ATP binding but not necessarily ATP hydrolysis. Walker A mutants show reduced mobility while Walker B mutants show milder effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59, C76-C77, and C79 provide strong evidence for ATP-dependent enhanced mobility. The differential effects of Walker A versus Walker B mutations (C58-C59, C76-C77) and control experiment ruling out transcription effects (C79) support the conclusion that ATP binding is sufficient for enhanced diffusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "d3ee7ce6-1623-4f83-b889-a8c2732f2237",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The catalytic ATPase has dual functions: nucleosome remodeling and enhancing target search kinetics through promoting 1D diffusion on chromatin and rapid detachment after reaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C80 synthesize findings from mobility and residence time experiments with ATPase mutants. The distinction between ATP binding (sufficient for mobility) and hydrolysis (required for rapid dissociation) is well-supported by the Walker A versus Walker B mutant data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chromatin remodelers show substantial temporal occupancies at target promoters ranging from 11-94%. RSC shows 30% occupancy, SWI/SNF 94%, INO80 25%, and ISW2 11%, calculated from measured kinetic parameters and literature values for molecule numbers and target sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C68 present occupancy calculations that depend critically on literature values for Nmolecules and Ntargets (C62-C64). While the kinetic measurements are well-supported, the occupancy calculations involve multiple assumptions and propagated errors. The large error bars (e.g., SWI/SNF: 94\u00b141%) and reliance on external data sources introduce uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "85b3a3ce-983d-4cb5-8b8d-5ea33982867d",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Kinetic simulations based on measured parameters show that multiple remodelers can repeatedly and simultaneously occupy the same promoter region on a timescale of minutes, supporting a 'tug-of-war' model for nucleosome positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C69-C70, and C82 present simulation results based on experimentally measured kinetic parameters. The simulations are appropriately grounded in the measured residence times and occupancy calculations, though the tug-of-war model (C82) remains somewhat speculative as it cannot be directly tested with the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "8a24f017-97c7-4efb-8a02-0892180acb58",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutation of the CHD1 DNA-binding domain results in a 3-fold reduction in stable-binding residence time (from 7.2\u00b13.3 to 2.4\u00b10.7 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 provides evidence that DNA-binding domains contribute to residence time. The measurement is consistent with the methodology used for other mutants and helps distinguish specific from non-specific binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on chromatin structure, nucleosome organization, and remodeler classification and function is established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C20, C37-C39, C62-C64, and C81 present established knowledge about chromatin biology supported by appropriate citations. These provide necessary context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "dfb903db-2620-4013-88f6-2e856b55f09b",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Biochemical studies show remodelers undertake small translocation steps with rates of a few bp/sec, and the measured 4-7 s residence times would allow ~12 bp of nucleosome sliding, consistent with in vivo position changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 and C78 integrate prior biochemical measurements with the current findings to provide mechanistic context. The calculation in C75 appropriately connects residence times to functional outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "fc9a43d0-ad42-4cd4-a481-14e28b1937df",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The yeast PIC shows ~10% promoter occupancy and lasts several seconds before dissociation, with ~100 s vacancy before reformation, based on a related study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 cite a related study (Nguyen et al., 2021) to provide comparative context for remodeler occupancy. These are appropriately attributed to the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "6a2ce11d-0726-4ab3-96a5-6c37b68fb73e",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "An independent study in Drosophila found that the BRM remodeler also shows ATP-dependent dynamic mobility and dissociation, supporting conservation of these mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 appropriately cites independent corroborating evidence from another system, strengthening the generalizability of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    },
+    {
+      "id": "3d873918-b517-43c4-9ec4-8f7a9d5dce54",
+      "content_id": "e5b03487-8a81-4ff0-8912-1e8dc0681102",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Chromatin remodelers establish genome-wide chromatin architectures, display higher diffusion than histones with 4-7 s residence times, and require ATP binding/hydrolysis for enhanced dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 from the abstract accurately summarize the major findings of the study. These are well-supported by the detailed experimental results presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:18:03.460164Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c26e8377-d7c1-425b-bc45-5b264c937e2d",
+      "result_id": "9d7f0571-d0cb-42b1-9e1f-cd1260aa0bdb"
+    },
+    {
+      "claim_id": "c3d4d81e-7e98-4d21-ba80-851f8b5fe61c",
+      "result_id": "9d7f0571-d0cb-42b1-9e1f-cd1260aa0bdb"
+    },
+    {
+      "claim_id": "59bfd561-25cf-4773-be3e-6ba82e5cd7c4",
+      "result_id": "9d7f0571-d0cb-42b1-9e1f-cd1260aa0bdb"
+    },
+    {
+      "claim_id": "654a93d6-9f2e-43ff-a382-aadc9a20369e",
+      "result_id": "9d7f0571-d0cb-42b1-9e1f-cd1260aa0bdb"
+    },
+    {
+      "claim_id": "7d803633-811b-4a2a-bc9e-e48310090688",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "a3e502c0-359d-4a03-89ce-9392e8528ed5",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "77d32371-f5df-471b-8b55-59facba62cf9",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "e83b8cf8-bd63-46cb-870f-6cda7d06ecc6",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "a9c02eb2-b767-4b5e-b61c-d1e1a59238f8",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "c7ab4eef-36a1-455b-bb05-ddc62816928a",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "8cc0f755-f781-4145-b4e5-fa51c58db51c",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "92fd867c-0381-4b36-a4e7-02f1bf4b2395",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "d88643e4-022d-43a9-a5e7-28185d42499c",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "6b4569f9-a899-4b88-89c7-59f33f9fe491",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "f09d1547-371f-4723-8ade-9146a0767bd9",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "a4a023b0-2e94-48fa-a7ee-e02c8d5a6566",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "48eb4e82-4fcf-440a-8945-b882a46940bb",
+      "result_id": "0c4ea5a0-d094-4552-a1a5-cf23cb5a23c2"
+    },
+    {
+      "claim_id": "257fbbcb-4e8b-45f4-820d-7bdeeba2359f",
+      "result_id": "e0d33546-5d15-48f0-bad5-16e88a3d2ec1"
+    },
+    {
+      "claim_id": "f35145e9-ee23-4a06-965b-f5e27a5e6984",
+      "result_id": "e0d33546-5d15-48f0-bad5-16e88a3d2ec1"
+    },
+    {
+      "claim_id": "26440723-8a2e-41e5-8eaa-c03581e4def0",
+      "result_id": "e0d33546-5d15-48f0-bad5-16e88a3d2ec1"
+    },
+    {
+      "claim_id": "25f06514-b53e-4a3d-ab01-ffe8405105e3",
+      "result_id": "e0d33546-5d15-48f0-bad5-16e88a3d2ec1"
+    },
+    {
+      "claim_id": "0ddffd58-bad5-4041-a74c-f1e984a6f1d8",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "4c4a9175-4956-4411-92a5-e363da33d928",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "93a1fb13-386c-42a9-bfa0-b6f8a566894c",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "d24e33f8-6c0d-4cfd-b0f3-1ee2d5eee27a",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "50c88c9e-2858-41a6-8b18-3e8accdcd8ad",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "9357b27c-4b8d-4a32-85b1-d16fdbccdead",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "3a3d1c78-7181-44a5-9b97-d7be1ca23735",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "b09b93c7-0222-458a-a9ea-d14130405512",
+      "result_id": "a6298dc0-9327-4ba3-bf40-484c0fc09ac7"
+    },
+    {
+      "claim_id": "5311f8be-dcf4-4108-9ee9-91f50a1cc7d0",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "7655cc8b-3078-4951-98ef-f2c1e91a9125",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "f8876544-e077-4d4d-994e-4d7987d5ab8a",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "0c2d1c79-1ba6-461c-b9ae-29dbf7e3ff17",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "8a0927ff-c69d-4f1f-8303-7cdde5de1af0",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "780215eb-725d-4022-a032-420dc31890ee",
+      "result_id": "f76c9b05-b34a-41b2-8711-23230a0ec3f0"
+    },
+    {
+      "claim_id": "0f677ef1-fe59-45f4-8331-482092eaac8e",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "966e2100-9906-4af1-ab15-3c210f185d17",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "69137371-444e-4556-8994-4613706df496",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "223dbc37-3924-48d8-a7c3-fe60cde445d5",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "cbb813cc-1d0f-4d4f-9895-79ddb3cbb8cc",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "40f5b4cb-3caa-4758-93af-536802a07c53",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "d1f434ec-c227-4f40-89e0-68c075678419",
+      "result_id": "8d536756-fe96-4110-96f5-67704e56d7e4"
+    },
+    {
+      "claim_id": "5b1dac01-5150-46a8-86b6-a74a72a15874",
+      "result_id": "d3ee7ce6-1623-4f83-b889-a8c2732f2237"
+    },
+    {
+      "claim_id": "bbd15ad7-16f7-4738-bebe-027edd3c7771",
+      "result_id": "d3ee7ce6-1623-4f83-b889-a8c2732f2237"
+    },
+    {
+      "claim_id": "64b6e70d-341d-46d3-b520-9aec2ed70a33",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "ae76e8e8-fe58-42fa-8f6d-92f211792e41",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "182d3064-3ddd-4e8d-acd3-45bb514dd4e3",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "26b810aa-e025-4a31-9b84-17c44c280075",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "38f96fab-5763-4bbe-99e5-7db0368c5c3c",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "33fdaf7d-60c0-4ea1-b581-3127f1f783c5",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "195e1f4c-18dd-4ba7-9521-414997c04203",
+      "result_id": "06159fc4-1b57-4a20-b5bb-1d77e1189b88"
+    },
+    {
+      "claim_id": "88601cff-a112-4bb5-b6b4-29c7380f1495",
+      "result_id": "85b3a3ce-983d-4cb5-8b8d-5ea33982867d"
+    },
+    {
+      "claim_id": "78ebc739-3b4f-480b-bc6a-42e26c425cd6",
+      "result_id": "85b3a3ce-983d-4cb5-8b8d-5ea33982867d"
+    },
+    {
+      "claim_id": "d6885f7d-868e-4f38-bde7-991fca2db7bf",
+      "result_id": "85b3a3ce-983d-4cb5-8b8d-5ea33982867d"
+    },
+    {
+      "claim_id": "1ba58b52-e234-4365-9bda-f9bf04b6eda5",
+      "result_id": "85b3a3ce-983d-4cb5-8b8d-5ea33982867d"
+    },
+    {
+      "claim_id": "e76340d5-41f4-4e2e-a465-4bb485e3611b",
+      "result_id": "8a24f017-97c7-4efb-8a02-0892180acb58"
+    },
+    {
+      "claim_id": "70941d28-872c-44c7-92f0-cd93842396b4",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "484705fe-532c-4f65-9d64-a28fe6ff0548",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "75cb79d1-aa7e-4484-ada7-5c86b6fdfc17",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "c0173320-34a6-4e9f-98ef-2a0bd381a964",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "98c07cce-3754-4d58-ab1a-c9c567821b44",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "94093654-f031-49f4-8ccb-e377cc13370b",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "c9ac358a-5da6-455c-8a5c-db9c97a01cd5",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "8516348c-ad78-4a3f-8b8c-47500a8ed94e",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "2eebb476-8a8b-4c1e-b1f8-cce8e3f4a88c",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "236996f8-24d1-41bc-94ee-3e2fb88078ac",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "1886475f-1892-43d6-956e-10f6fcacd5d2",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "ff2f11c8-e64a-487c-869e-4ce87890466e",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "89478f2a-dc0b-40b0-9fe5-6a6525b79d6d",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "41e7b155-4c24-4c9c-9882-032f2414f2c5",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "09321dd1-a3da-4b94-aa6e-c7b4df0b61b3",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "1892aef8-3300-4b74-876d-455b65bbe0a4",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "538a0ad4-8941-4a2a-803d-9b6e6a18402e",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "4082f6f6-c8b3-4613-a4f9-1b641d06bb4d",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "64b6e70d-341d-46d3-b520-9aec2ed70a33",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "ae76e8e8-fe58-42fa-8f6d-92f211792e41",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "182d3064-3ddd-4e8d-acd3-45bb514dd4e3",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "a711e703-5f8c-46ca-b26d-bb755749c136",
+      "result_id": "1f4e5853-9ece-43cb-b8fe-c227dd1daa71"
+    },
+    {
+      "claim_id": "cfc72a0f-c8f6-403a-96b5-aae82bc2df33",
+      "result_id": "dfb903db-2620-4013-88f6-2e856b55f09b"
+    },
+    {
+      "claim_id": "d4ff0978-cb19-47b8-a486-4c61c33f81ce",
+      "result_id": "dfb903db-2620-4013-88f6-2e856b55f09b"
+    },
+    {
+      "claim_id": "dce20d4f-a443-4799-b86f-d884a3d530bd",
+      "result_id": "dfb903db-2620-4013-88f6-2e856b55f09b"
+    },
+    {
+      "claim_id": "d11988a7-2eba-49e2-b7b9-5402d7c43055",
+      "result_id": "fc9a43d0-ad42-4cd4-a481-14e28b1937df"
+    },
+    {
+      "claim_id": "bbfecb86-2dc8-405d-84ca-f98a9e80be3d",
+      "result_id": "fc9a43d0-ad42-4cd4-a481-14e28b1937df"
+    },
+    {
+      "claim_id": "58653b6f-e38c-48d6-bcde-502f3492ffa9",
+      "result_id": "fc9a43d0-ad42-4cd4-a481-14e28b1937df"
+    },
+    {
+      "claim_id": "6abac283-775c-48a3-9578-f3ab819deb7b",
+      "result_id": "6a2ce11d-0726-4ab3-96a5-6c37b68fb73e"
+    },
+    {
+      "claim_id": "f3cc778a-4296-4723-a3a1-6798ecef16b1",
+      "result_id": "3d873918-b517-43c4-9ec4-8f7a9d5dce54"
+    },
+    {
+      "claim_id": "cf9449b6-3acd-4d08-ac0f-9278d96d9e26",
+      "result_id": "3d873918-b517-43c4-9ec4-8f7a9d5dce54"
+    },
+    {
+      "claim_id": "6533c959-00df-4709-ad92-eea6bf61ef35",
+      "result_id": "3d873918-b517-43c4-9ec4-8f7a9d5dce54"
+    },
+    {
+      "claim_id": "ae94fbd5-cdab-4c92-a9d8-03c174e67ae6",
+      "result_id": "3d873918-b517-43c4-9ec4-8f7a9d5dce54"
+    }
+  ],
+  "comparisons": []
+}

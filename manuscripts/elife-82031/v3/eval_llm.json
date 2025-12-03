@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Microglia in Rag1\u2212/\u2212 mice (lacking lymphocytes) display extended ramifications and lower sphericity compared to wild-type mice in the perilesional cortex after stroke, indicating a less reactive phenotype. This morphological difference is specific to the ipsilateral hemisphere where T cells accumulate, as the contralateral hemisphere shows no difference between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are well-supported by automated morphological analysis (Figure 1C, D) showing quantitative differences in microglia morphology between WT and Rag1\u2212/\u2212 mice. The hemisphere-specific effect strengthens the interpretation that local lymphocyte infiltration drives microglial morphological changes. Statistical significance is demonstrated (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Microglia depletion using PLX5622 significantly increases infarct volume in Rag1\u2212/\u2212 mice but has no significant effect in wild-type mice, suggesting that microglia-T cell interaction is required to influence infarct development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by experimental data (Figure 1G) showing differential effects of microglia depletion in WT vs Rag1\u2212/\u2212 mice with appropriate statistical testing. The inference that microglia-T cell interaction is required (C22) is logically derived from the genotype-dependent effect of microglia depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-cell RNA sequencing reveals that stroke is the primary driver of microglial transcriptomic changes at 5 days post-stroke in both WT and Rag1\u2212/\u2212 mice. However, lymphocyte absence affects microglial gene expression even in homeostatic conditions (Apoe, Cd74 downregulated) and modulates stroke-associated genes, with 120 genes uniquely regulated in Rag1\u2212/\u2212 mice including cytokine signaling and chemotaxis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are well-supported by comprehensive single-cell RNA sequencing analysis (Figure 2C-E) with appropriate differential expression testing and visualization. The distinction between common and genotype-specific stroke-associated genes is clearly demonstrated with specific gene lists provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Trajectory inference analysis suggests lymphocytes influence the transition of microglia from homeostatic to reactive states, with Rag1\u2212/\u2212 mice showing altered cell distribution along trajectory paths and differential expression of genes associated with ribosomal processes (enriched) and phagocytosis (downregulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by trajectory inference analysis (Figure 2\u2014figure supplement 2) using appropriate computational methods (PAGA, DPT). The differential gene expression along trajectories is demonstrated with pathway enrichment analysis. The inference about lymphocyte influence on microglial transition is appropriately qualified as a suggestion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Gene set analysis reveals that lymphocyte absence significantly reduces microglial genes associated with macrophage activation while enriching genes associated with cytokine/chemokine stimulus in Rag1\u2212/\u2212 mice after stroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by gene set analysis (Figure 2F) with specific genes identified and appropriate statistical testing. The functional categorization is supported by citations to prior work establishing gene functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Flow cytometry analysis demonstrates that T cells are 14 times more abundant than B cells in the ipsilesional hemisphere 5 days after stroke, and myeloid cell subset abundance is not affected by Rag1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by flow cytometry data (Figure 2\u2014figure supplement 3) with appropriate statistical testing. This control experiment strengthens the interpretation that T cells are the primary lymphocyte population affecting microglial phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Adoptive transfer of differentiated T helper cell subsets reveals that TH1 cells regulate 34 microglial genes associated with antigen presentation, cytokine response, and type I IFN signaling, while TREG cells regulate 12 genes associated with chemotaxis, with TREG-induced profiles more similar to vehicle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are well-supported by gene expression analysis (Figure 3B-D) with clear differential expression criteria (p<0.05, |FC|>1.5) and gene ontology analysis. The distinct functional profiles induced by TH1 vs TREG cells are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TH1 cells polarize microglia toward an antigen-immunocompetent phenotype expressing Cd74, Lag3, and IFN response genes (Irf7, Stat1), a profile previously associated with late-stage neurodegeneration, and increase Trem2 expression compared to TREG-primed microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by gene expression analysis and smFISH validation (Figure 3E). The connection to prior work on neurodegenerative profiles is appropriately cited. The Trem2 increase is validated by an orthogonal method (smFISH).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "TREG cells promote expression of chemokines/cytokines (Ccl2, Ccl7, Cxcl10) in microglia, which may have pro-regenerative or detrimental effects including regulation of leukocyte chemotaxis, protective preconditioning, or promoting neuronal stem cell recruitment and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by gene expression data with appropriate citations for potential functional consequences. The authors appropriately acknowledge the dual potential (pro-regenerative or detrimental) of these chemokines rather than making definitive functional claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Morphological analysis reveals that microglia display a more reactive state (spherical, less branched) in TH1-injected compared to TREG-injected mice, with changes observed in both ipsilesional and contralateral hemispheres, suggesting brain-wide effects of T helper cells injected into the CSF compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by quantitative morphological analysis (Figure 3F) with appropriate statistical testing. The bilateral effect is an important observation suggesting CSF-mediated distribution, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Intra-cisterna magna injection of eGFP-labeled TH1 cells results in primary recruitment to the ischemic brain parenchyma, with additional localization in meninges and systemic circulation (spleen detection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by flow cytometry and immunofluorescence data (Figure 4A, B and supplement). The multi-compartment distribution is clearly demonstrated, supporting the concept of both local and systemic effects of CM-injected cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Infarct volume measurements show no significant differences between WT and Rag1\u2212/\u2212 mice, between TH1 or TREG-supplemented Rag1\u2212/\u2212 mice, or with eTc-IL10 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by infarct volumetry data (Figure 3\u2014figure supplement 1B, C and Figure 4D). These negative results are important controls demonstrating that the observed transcriptomic and morphological changes are not confounded by differences in lesion size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Engineered T cells overexpressing IL-10 (eTc-IL10) administered into the cisterna magna 4 hours after stroke significantly improve functional outcome at 48 hours as measured by reduced forelimb asymmetry in the cylinder test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by behavioral testing data (Figure 4E) with appropriate statistical analysis (p<0.05, ANOVA). The functional improvement without infarct volume change suggests effects on recovery mechanisms rather than acute neuroprotection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "eTc-IL10 treatment downregulates disease-associated microglia (DAM) genes including Cd68, Apoe, Trem2, Tyrobp, and Cst7, increases chemokine response pathways, and downregulates microglial effector functions (spine pruning, phagocytosis, complement activation), confirmed by reduced Trem2 mRNA in Cx3cr1+ microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are well-supported by gene expression analysis (Figure 4F, G) and validated by smFISH (Figure 4H). The gene ontology analysis appropriately categorizes functional pathways. The Trem2 reduction is confirmed by an orthogonal method providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The authors postulate that acute intra-CM administration of eTc-IL10 induces a switch of microglia gene signature possibly involved in promoting post-stroke recovery mechanisms based on observed downregulation of synapse pruning, microglia activation, and phagocytosis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is explicitly speculative ('postulate', 'possibly involved') and lacks direct functional validation. While the gene expression changes are demonstrated, the causal link to recovery mechanisms requires additional experiments such as synapse quantification, long-term recovery assessment, or mechanistic perturbation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The microglia-polarizing effect of T helper cell subpopulations is mainly mediated via their specific cytokine/chemokine secretion patterns, with TH1 cells inducing type I IFN signaling genes and TREG cells modulating chemotaxis-associated genes (Ccl2, Ccl7, Cxcl10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by transcriptomic analysis showing correspondence between T cell subset-specific cytokines and induced microglial gene programs. However, the claim that this is 'mainly mediated' by cytokines (C60) is an inference that could benefit from additional validation such as blocking experiments or direct cytokine measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "TREG cells mediate downregulation of Trem2 in microglia, a marker of reactive microglia previously shown to be regulated by IL-10, demonstrating a direct role of IL-10 in modulating microglial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by current experimental data and appropriately cited prior work (Shemer et al., 2020). The convergence of TREG effects and IL-10 overexpression on Trem2 expression strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "IL-10 overexpression in T cells modulates microglial genes involved in complement pathway, phagocytosis, and synaptic pruning, correlating with better functional outcome. The authors speculate this may prevent excessive synapse elimination, as complement proteins are known to mediate synapse pruning and are upregulated in CNS diseases prior to neuron loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is supported by gene expression and behavioral data. Claims C70-C73 appropriately cite prior work on complement-mediated synapse elimination. However, C74 is speculative\u2014the proposed mechanism linking IL-10-induced complement downregulation to synapse preservation and functional improvement lacks direct validation (no synapse counts, no demonstration that complement inhibition is necessary/sufficient for the observed effects).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Microglia effector functions can be neuroprotective through monitoring neuronal status and modifying extracellular matrix for synaptic remodeling. T cell-dependent regulation includes genes mediating extracellular matrix modifications involved in phagocytosis and proteases (Clstn1, Mmp12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 appropriately cite prior work establishing dual roles of microglia. Claim C77 is supported by gene expression data from the current study. The connection between observed gene changes and functional consequences is appropriately qualified by citing relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "At the acute 5-day timepoint, transcriptomic changes in microglia are mainly attributed to stroke-induced tissue injury, but brain-invading T cells specifically fine-tune the transition of stroke-associated microglia to distinct morphological and transcriptomic profiles, with TREG cells inducing a shift toward homeostatic state and immune cell recruitment genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 appropriately synthesize the major findings. The distinction between stroke as the primary driver and T cells as modulators is supported by the scRNA-seq data (Figure 2C) and subsequent adoptive transfer experiments. The characterization of T cell effects as 'fine-tuning' is appropriate given the magnitude of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The authors postulate that engineered T cells could have important translational implications by targeting specific effector functions of microglia with relevant impact on chronic stroke pathobiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is explicitly speculative and represents a future direction rather than a demonstrated result. While the acute effects are shown, translational potential requires additional validation including long-term studies, dose optimization, safety assessment, and demonstration of effects in chronic phases of stroke.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The 5-day post-stroke timepoint at the lesion border represents maximal cerebral leukocyte infiltration, and PLX5622 treatment for 2 weeks almost completely depletes microglia from the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by citation to prior work and exemplified in current data (Figure 1B). Claim C83 is clearly demonstrated by immunohistochemistry (Figure 1F). These are important methodological validations for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Single-cell RNA sequencing identifies five clusters as microglial cells based on established markers, with subpopulations showing transcriptomic profiles associated with either homeostatic (clusters 0, 1, 4, 6) or reactive (clusters 2, 3, 5, 7) microglia. Trajectory analysis reveals two distinct paths from homeostatic to reactive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by appropriate computational analysis using established markers and methods (Figure 2B, C and supplements). The clustering and trajectory inference follow standard practices for single-cell analysis with appropriate citations to prior work defining markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "eTc-IL10 cells localize to meningeal compartments and could contribute to functional recovery by resolving inflammation at border structures or providing IL-10 to brain parenchyma along CSF flow, consistent with prior observations of meningeal immune cell accumulation and cytokine entry via CSF flow and paravascular spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The localization of eTc-IL10 cells to meninges is demonstrated, and claims C88-C89 appropriately cite prior work. However, C87's speculation about mechanisms of functional recovery (resolving meningeal inflammation, IL-10 delivery via CSF) lacks direct experimental validation. The relative contributions of parenchymal vs. meningeal effects are not determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that lymphocytes infiltrate the brain in small numbers after stroke but are the most potent leukocyte subpopulation for secondary injury, with pro-inflammatory subsets (TH1, TH17, \u03b3\u03b4 T cells) causing neurotoxicity and TREG cells providing neuroprotection. Despite low numbers compared to innate immune cells, blocking T cell recruitment improves stroke outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C12 appropriately cite prior work establishing the field's knowledge about T cell roles in stroke. These background claims provide context for the current study's focus on mechanisms by which small numbers of T cells exert large effects (via microglial modulation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing that microglia interact with T cells via cell-to-cell contact, cytokine communication, or antigen presentation, influencing neuroinflammatory responses in multiple sclerosis and possibly stroke, with recent evidence suggesting this crosstalk is key for neuronal plasticity during recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 appropriately cite prior work establishing microglia-T cell interactions in other contexts. These provide the conceptual framework for investigating such interactions in stroke, though the 'possibly in stroke' qualifier in C15 acknowledges limited prior evidence in this specific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "CD3+ T cells localize at the infarct border 5 days after stroke as demonstrated by immunohistochemistry and topographic mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is clearly demonstrated by immunohistochemistry with quantitative topographic mapping (Figure 1C). This validates the spatial relationship between T cells and the region selected for microglial analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work demonstrates IL-10 secretion upon microglia-T cell contact and that intracerebroventricular IL-10 modulates neuroinflammation after stroke. However, IL-10 has a short half-life (<1 hour) and limited bioactivity as a recombinant protein, and systemic application can have unforeseen side-effects due to divergent functions on inflamed vs. homeostatic tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 appropriately cite prior work establishing IL-10's effects and limitations. These provide rationale for the engineered T cell approach as an alternative to recombinant protein administration, addressing pharmacokinetic and targeting challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study's main findings: TH1 cells induce type I IFN signaling in microglia, TREG cells promote chemotaxis-associated genes, and engineered IL-10-overexpressing T cells induce pro-regenerative microglial profiles. These effects on microglial polarization do not affect acute infarct volume development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 accurately summarize the paper's main findings as stated in the abstract. These are supported by the detailed experimental results described in subsequent claims. The lack of effect on acute infarct volume (C6) is an important finding distinguishing transcriptomic/functional effects from acute neuroprotection.",
+    "result_type": "MAJOR"
+  }
+]

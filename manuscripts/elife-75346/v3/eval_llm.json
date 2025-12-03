@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on dilated cardiomyopathy (DCM), its prevalence, genetic basis, and the role of phospholamban (PLN) mutations in familial DCM, particularly focusing on the R9C and \u0394R14 mutations near the PKA phosphorylation site Ser16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 establish the scientific context through citations to published literature. These background claims are well-supported by appropriate references and represent established knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previous studies have proposed conflicting mechanisms for how the R9C mutation causes DCM, including tighter PKA binding, stabilization of pentameric PLN, and altered PLN conformation and membrane interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 accurately summarize prior work through appropriate citations. This establishes the controversial nature of the DCM mechanism and motivates the current study, though it represents prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Crystal structures of PKAc in complex with WT PLN (2.1 \u00c5) and R9C PLN (3.4 \u00c5) reveal that WT PLN binds PKAc through electrostatic interactions between Arg9 and helix 4, and hydrophobic interactions between Ala11 and Phe129, with Ser16 positioned ~3.4 \u00c5 from the \u03b3-phosphate of AMP-PNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe the WT PLN-PKAc structure with clear experimental data (resolution, electron density, structural features). The structural details are well-defined and internally consistent, providing the baseline for comparison with mutant structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The R9C mutation abolishes the electrostatic interaction between Arg9 and PKAc helix 4, causing a 26\u00b0 rotation of the N-terminal region, a 62.9 \u00c5\u00b2 reduction in interface area, and allosteric changes that increase the distance between Ser16 and the \u03b3-phosphate by ~0.4 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 provide detailed structural analysis of the R9C mutation effects. The quantitative measurements (angles, distances, surface areas) are specific and supported by the crystallographic data, though the 3.4 \u00c5 resolution is lower than ideal for precise distance measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SPR measurements show that DCM mutations decrease PLN binding affinity to PKAc: R9C shows 4-fold higher KD (~750 \u03bcM vs ~180 \u03bcM for WT), R9H shows 3.2-fold increase, R9L shows dramatic weakening, \u0394R14 shows 10-fold reduction, and I18T shows similar effects to \u0394R14, with A11E showing 2-fold increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C55 present comprehensive SPR binding data for multiple mutations. The measurements are internally consistent and correlate with structural predictions. The presence of AMP-PNP is appropriately controlled, and the KD values are reasonable for peptide-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Thermal shift assays show that WT PLN increases PKAc melting temperature by 1.4\u00b0C, while mutant PLNs show reduced stabilization, with R9L and \u0394R14 showing the least stabilizing effects, consistent with SPR results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide orthogonal validation of binding differences using thermal stability. The results are qualitatively consistent with SPR data, though the manuscript notes this is not quantitative binding measurement due to excess peptide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Enzyme kinetic assays show that kcat values remain similar between WT and R9C PLN, but KM for R9C is 2-fold higher (173 \u03bcM vs 85 \u03bcM), indicating reduced catalytic efficiency primarily due to decreased substrate binding, with R9H showing mildest effects and \u0394R14 showing largest decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 present kinetic data that mechanistically explains reduced phosphorylation. The interpretation that similar kcat but higher KM indicates a binding rather than catalytic defect is sound. The correlation between binding affinity and catalytic efficiency strengthens the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The current structure differs substantially from the previously published 3O7L structure: while overall PKAc RMSD is ~0.6 \u00c5, PLN RMSD is >4.4 \u00c5; the current structure shows 1:1 PKAc:PLN stoichiometry confirmed by size-exclusion chromatography, whereas 3O7L shows 2:1 stoichiometry likely due to crystal packing artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C83 provide detailed comparison with prior structure and demonstrate the current structure is more physiologically relevant. The size-exclusion chromatography data (C74-C76) provides strong solution-phase evidence for 1:1 stoichiometry. The electron density analysis of 3O7L reveals modeling issues in the prior structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In the current structure, Ile18 makes extensive interactions with Gln84 and Phe187 of PKAc, whereas in 3O7L it faces solvent; the I18T mutation reduces phosphorylation and binding affinity, supporting the current structural model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 use functional data (I18T mutation effects) to validate the structural model over the previous 3O7L structure. The agreement between structure and function provides strong support for the current model's accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The crystal structure of PKAc with A11E PLN (2.8 \u00c5 resolution) shows the mutation flips the side chain and moves the C\u03b2 5.9 \u00c5 away from PKAc, confirming that Ala11 contributes to PLN-PKAc binding as seen in the WT structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present an additional structure that validates the WT model by showing how disrupting the Ala11-Phe129 interaction affects binding. The functional data (C54-C55) supports the structural interpretation, though C90 involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Phosphorylation at Ser16 abolishes PKAc binding (no detectable KD by SPR), while phosphorylation at Thr17 reduces binding 20-fold (KD ~4 mM) and reduces PKAc activity to <1/3 of WT, consistent with structural predictions of steric and electrostatic clashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 demonstrate that phosphorylation provides negative feedback by reducing PKAc binding. The SPR and activity data support the structural predictions. The interpretation that pSer16 residual activity is due to hydrolysis (C98) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "NMR structures show WT PLN is more dynamic (5 distinct conformations) than R9C, pSer16, and pThr17 variants, which are more rigid; this reduced flexibility might contribute to decreased PKAc binding through higher energetic cost of conformational rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 present NMR data showing conformational differences. However, C103-C104 involve speculation about energetic contributions. While the flexibility differences are demonstrated, the mechanistic interpretation requires additional validation (e.g., computational energetics or kinetic studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Mouse ALN contains a PKA recognition motif and acts as a PKA substrate, but shows 5-fold lower binding affinity and 1.5-fold lower activity compared to human PLN, likely due to arginine at position 14 (vs Ala11 in PLN) causing charge repulsion and Phe20 (vs Thr17) causing steric clashes; human ALN lacks the serine site and shows no activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 extend the findings to ALN. The sequence alignment, SPR, and activity data are clear. The structural explanations (C108-C109) are reasonable inferences based on the PLN-PKAc structure. The negative control (human ALN) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "DCM mutations at positions 9, 14, and 18 share a common disease mechanism: they reduce PLN phosphorylation by (1) changing substrate conformation and (2) weakening PKAc binding through disrupted interactions, leading to increased SERCA inhibition and decreased cardiac contractility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C118 synthesize the structural, biophysical, and kinetic data into a unified disease mechanism. The model is well-supported by the experimental evidence, though C118 involves inference about physiological consequences. The refutation of the sequestration hypothesis (C115) is supported by the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The ~2-fold decrease in catalytic efficiency for R9C PLN could be consistent with mild DCM symptoms, though oligomerization state significantly affects the magnitude of phosphorylation reduction, and decreased PLN phosphorylation is likely an important but not sole contributor to DCM pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 attempt to connect molecular findings to disease severity. C119 is speculative about clinical correlation. C120 cites prior work showing context-dependence. C121 appropriately acknowledges other potential factors. The connection between 2-fold biochemical change and disease phenotype requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Phosphorylation at Thr17 (CaMKII site) reduces PLN flexibility and PKA phosphorylation efficiency, representing crosstalk between kinases; unlike RyR2 where CaMKII phosphorylation enhances PKA activity, in PLN the proximity of sites causes inhibition, potentially decreasing SERCA activity through dual pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C131 describe kinase crosstalk with supporting NMR and functional data. The comparison with RyR2 (C125-C127) provides mechanistic context. The proposed dual pathway for SERCA regulation (C131) is reasonable inference based on cited literature about phosphorylation effects on SERCA inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Position 9 is a DCM mutation hotspot with three mutations (R9C, R9L, R9H); the effects correlate with side chain polarity, with histidine showing mildest effects, cysteine intermediate, and leucine nearly abolishing binding, consistent with the importance of the Arg9-helix dipole interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 analyze structure-function relationships at position 9. The experimental data (SPR, activity) support the polarity correlation. Citation of prior work (C137) showing effects on SERCA inhibition validates the functional relevance of the binding differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The current structure represents only the second physiologically relevant PKAc-substrate complex structure (after RyR2), correcting issues in the previously published 3O7L structure that misguided understanding of PKA-PLN regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 assert the significance of the structural work. The detailed comparison with 3O7L and solution validation support this assessment. The claim of being the second physiologically relevant structure is supported by the literature survey showing other structures use non-physiological substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Comparison of PKAc-PLN and PKAc-RyR2 structures shows PKAc molecules are similar (RMSD 0.66 \u00c5), with the RRXS motif showing highest conservation (RMSD 0.86 \u00c5) while N-terminal regions diverge, confirming the importance of the RRXS motif in PKA substrate recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 provide comparative structural analysis identifying conserved recognition elements. The RMSD values and interaction analysis are well-supported. This establishes general principles for PKA substrate binding beyond the specific PLN case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "ALN is ubiquitously expressed (highest in ovary/testis), and differential PKA phosphorylation of ALN in mice versus humans could be relevant for understanding species differences in heart disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C144 is supported by citation. However, C145 is speculation about potential relevance to animal models without supporting data. While the observation is interesting, the physiological and translational significance remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "ALN is a newly identified SERCA-regulatory protein with ubiquitous expression, containing a putative PKA recognition motif, with Ser19 phosphorylation detected by mass spectrometry in mouse tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide background on ALN from prior literature. These are well-supported by citations and motivate the investigation of ALN as a PKA substrate, though they represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

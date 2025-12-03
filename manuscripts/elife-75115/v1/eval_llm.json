@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C40",
+      "C41",
+      "C43",
+      "C45",
+      "C71",
+      "C78"
+    ],
+    "result": "KRAB recruitment leads to rapid, distance-dependent spreading of gene silencing between neighboring genes (within hours), accompanied by loss of H3Kac and gain of H3K9me3 across both genes and intergenic regions. The silencing delay increases with intergenic distance (2.3\u00b13.1 hr for NS vs 12.3\u00b19.8 hr for 5 kb in CHO-K1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40-C41, C43, C45 are directly supported by time-lapse microscopy (Figure 3B&C) and flow cytometry model fits (Figure 3I) showing distance-dependent delays. Claims C23-C28 are supported by CUT&RUN data (Figure 2A-C, supplements) demonstrating expected chromatin modifications. The data consistently show KRAB-mediated spreading increases with distance across multiple cell types and reporter configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C42",
+      "C44",
+      "C46",
+      "C72",
+      "C73"
+    ],
+    "result": "HDAC4 recruitment leads to slower, distance-independent spreading of gene silencing (days rather than hours), mediated indirectly through PRC2-dependent H3K27me3 deposition at the downstream gene rather than direct HDAC4 action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14-C16, C42, C44, C46 are supported by flow cytometry data (Figure 1G-J, Figure 3D-E, J) showing slower, distance-independent delays. Claims C29-C30, C34-C35 are supported by CUT&RUN showing H3K27me3 deposition (Figure 2D-E) and EZH2 inhibitor experiments (Figure 2G-H) demonstrating PRC2 dependence. The mechanistic model (C33, C73) is well-supported by multiple converging lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51"
+    ],
+    "result": "cHS4 insulators do not block or delay KRAB-mediated spreading of silencing in either CHO-K1 or K562 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C51 are directly supported by flow cytometry data (Figure 4C-D, F) showing that all cHS4 insulator configurations fail to prevent KRAB-mediated silencing, with delay times similar to spacer reporters. This is a surprising finding given the traditional view of cHS4 as a heterochromatin barrier, but the data are clear and consistent across multiple insulator configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "cHS4 insulators show cell-type-specific effects on HDAC4-mediated silencing: no effect in CHO-K1 cells, but attenuation (particularly with DC configuration) in K562 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C55 are supported by flow cytometry data (Figure 4E, G-H) showing differential insulator effects between cell types. In K562, insulators cause broadening of mCherry distribution rather than complete silencing, with DC configuration maintaining ON state even after 20 days. The cell-type specificity is consistent with the slower HDAC4-mediated silencing kinetics in K562 (C15, C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gene reactivation after CR release is coupled between neighboring genes in a distance-dependent manner, with the order of reactivation determined by promoter strength and insulator presence. In CHO-K1, the stronger pEF reactivates first; in K562, where promoter strengths are more balanced, either gene can reactivate first.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C61-C69 are supported by flow cytometry data (Figure 5B-I) showing reactivation patterns after CR release. The distance-dependence (C63) and cell-type-specific patterns (C65-C68) are clearly demonstrated. Claim C69 showing faster reactivation with insulators is supported by Figure 5H-I. The interpretation linking reactivation order to promoter strength (C64, C68, C82) is reasonable given the expression data (Figure 3\u2014supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C48",
+      "C49",
+      "C82"
+    ],
+    "result": "Cellular background and promoter strength differences between cell types affect silencing and reactivation dynamics. The pRSV promoter is stronger in K562 than CHO-K1, contributing to slower spreading and altered reactivation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C48-C49, C82 are supported by comparative flow cytometry data across cell types (Figure 1, Figure 3I-J, Figure 3\u2014supplement 3). The observation that identical reporter constructs show different dynamics in different cell types (C17) is well-documented. The inference about pRSV promoter strength (C49, C82) is supported by expression level measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Statistical significance of silencing was confirmed by Welch's T-test comparing percent of cells silenced with and without dox for all reporter configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by statistical analysis (Appendix 1\u2014table 1) showing p < 0.05 for all tested conditions. This provides appropriate statistical validation for the silencing observations, though the specific p-values and test details are relegated to the appendix.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Transcriptional interference occurs between the two promoters in a distance-dependent manner, with transcriptional run-on from pEF into pRSV that is resolved upon mCitrine silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by flow cytometry data (Figure 1E, H) showing lower mCherry expression in 5 kb vs NS reporters and increased mCherry after HDAC4 recruitment in K562, plus qPCR and PCR data (Figure 1\u2014supplement 4A-B) demonstrating run-on transcripts. This provides a mechanistic explanation for the mCherry expression spike observed in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "At lower dox concentrations, silencing is slower and fewer cells silence mCitrine, but cells that do silence mCitrine are likely to also silence mCherry for both HDAC4 and KRAB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by flow cytometry data at varying dox concentrations (Figure 4\u2014supplements 3-4). This demonstrates dose-dependent effects on silencing kinetics while maintaining the spreading phenomenon, consistent with the recruitment-dependent mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "cHS4 insulators prevent spontaneous background silencing in CHO-K1 cells, increase mCherry expression levels, and prevent transcriptional run-on across the insulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by flow cytometry data (Figure 4\u2014supplement 5, Figure 3\u2014supplement 3) and PCR data (Figure 1\u2014supplement 4E-F). These findings are consistent with the traditional insulator function of preventing position effect variegation and transcriptional interference, even though the insulators fail to block CR-mediated spreading.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A kinetic model describes the system where active promoters and insulators drive distance-dependent reactivation rates that compete with CR-mediated silencing rates. Silent promoters cannot activate neighboring genes until they reactivate themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C81, C83-C90 describe components of the kinetic model presented in Figure 6. The model successfully explains the experimental observations including: distance-dependent reactivation (C81, C84), the inability of silent promoters to activate neighbors (C83), insulator effects on background silencing (C85-C86), and cell-type-specific reactivation patterns (C89-C90). The model is well-supported by the data and provides a unifying framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "CRs with positive reader-writer feedback (like KRAB) can directly affect nearby genes over longer distances, while CRs without feedback (like HDAC4) can only indirectly affect neighboring genes by changing the state of very proximal promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 represent a mechanistic hypothesis that explains the distance-dependent (KRAB) vs distance-independent (HDAC4) spreading patterns. This is supported by the known mechanisms of KRAB (H3K9me3 reader-writer feedback via HP1/SETDB1) vs HDAC4 (acetylation removal without feedback), the chromatin modification data (Figure 2), and the kinetics data (Figure 3). The hypothesis is reasonable and well-grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Genes in close proximity (<5-10 kb) in synthetic systems can respond to chromatin regulator recruitment in a coordinated manner during both silencing and activation, similar to endogenous co-regulated gene clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is a summary statement supported by the entire body of experimental work. Claim C92 provides context from the literature. The synthetic system successfully recapitulates aspects of endogenous gene regulation, though the authors appropriately note this is in a synthetic context with specific promoters and insulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C74",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background knowledge claims about KRAB, HDAC4, PRC2, and cHS4 insulators from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11, C31-C32, C36-C39, C74, C93-C97 are statements of established knowledge supported by appropriate citations to prior literature. These provide necessary context for the experimental work. The citations appear appropriate and the claims are consistent with the field's understanding of these chromatin regulators and insulators.",
+    "result_type": "MINOR"
+  }
+]

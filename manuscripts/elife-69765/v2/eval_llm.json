@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C74"
+    ],
+    "result": "Nhlh2 is highly enriched in Kiss1 neurons of the arcuate nucleus in adult mice, with 71% of Kiss1ARH neurons in males co-expressing Nhlh2, making it the most enriched transcript in these neurons ahead of Tac2 and Pdyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C74 are supported by converging evidence from Drop-Seq analysis (C1), in situ hybridization quantification (C2), and comparative transcript enrichment analysis (C74). The data consistently demonstrate high Nhlh2 enrichment in Kiss1 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "JASPAR computational analysis reveals multiple NHLH2 binding sites in the Kiss1 and Tac2/3 promoter regions, with Tac2/3 genes containing approximately 1 binding site every 80 nucleotides and Kiss1 containing 1 site every 150 nucleotides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by JASPAR computational analysis shown in Figure 2B. However, computational prediction of binding sites does not guarantee functional binding in vivo, though this is addressed by subsequent ChIP experiments (C11).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "NHLH2 stimulates human KISS1 promoter activity up to 6-fold and TAC3 promoter activity up to 20-fold in vitro, with TAC3 showing greater sensitivity to NHLH2 stimulation at lower doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are supported by luciferase assay data in Neuro2A cells (Figure 2C,D). The differential sensitivity is consistent with the JASPAR analysis showing higher binding site density in TAC3. However, in vitro promoter assays may not fully reflect in vivo regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "NHLH2 directly interacts with the Kiss1 and Tac3 immediate 5'-regulatory regions as demonstrated by chromatin immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by ChIP assay data (Figure 2E) showing direct binding of NHLH2 to Kiss1 and Tac3 promoters but not to a distal enhancer region. This provides critical validation of the computational predictions and functional promoter assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "During postnatal development, Nhlh2 expression in the mediobasal hypothalamus decreases significantly from early juvenile onwards in males and late juvenile in females, while Kiss1 expression remains stable in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by RT-qPCR data (Figure 3) showing developmental changes in Nhlh2 but not Kiss1 expression. The stable Kiss1 expression is consistent with prior literature (Gill et al., 2012). This suggests developmental regulation of Nhlh2 independent of Kiss1 neuron number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Female Kiss1Cre:Nhlh2fl/fl mice display normal puberty onset and LH surge magnitude but have disrupted estrous cycles with increased time in diestrus and decreased time in estrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by puberty monitoring, estrous cycle tracking, and LH surge induction data (Figure 4A-G). The normal LH surge despite disrupted cycles suggests Nhlh2 in Kiss1 neurons is not required for surge generation but affects cycle regularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Male Kiss1Cre:Nhlh2fl/fl mice exhibit delayed puberty onset as measured by preputial separation, with slightly higher body weight at puberty due to older age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by preputial separation monitoring and body weight data (Figure 4H-J). The higher body weight is appropriately attributed to delayed puberty rather than metabolic dysfunction, as overall body weight trajectories are normal (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Overall body weight throughout development does not differ between Kiss1Cre:Nhlh2fl/fl and control mice under regular chow or high-fat diet conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by longitudinal body weight monitoring data (Figure 4\u2014figure supplement 2). This indicates Nhlh2 in Kiss1 neurons does not contribute to metabolic regulation of body weight, distinguishing this phenotype from whole-body Nhlh2 KO mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Kiss1Cre:Nhlh2fl/fl mice retain normal fertility overall, though male mice show variable phenotypes with some exhibiting absent or severely reduced fertility, while gonadal histology appears normal in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by fertility assessment and histological data (Figure 5). The variable male phenotype is notable but the overall fertility preservation is consistent with the hypothesis that 5% kisspeptin production is sufficient for reproduction (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Kiss1 expression is significantly decreased in the mediobasal hypothalamus of both male and female Kiss1Cre:Nhlh2fl/fl mice, while Tac2 and Pdyn expression remain unchanged in males but are decreased in females, and Tacr3 shows a modest increase in males only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by RT-qPCR and RNAscope data (Figure 6). The sex-specific differences in Tac2/Pdyn regulation are intriguing and may explain the more severe male reproductive phenotype. The Tacr3 increase in males may represent compensatory upregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Central administration of kisspeptin-10 or senktide induces similar LH responses in Kiss1Cre:Nhlh2fl/fl and control males, and the post-gonadectomy LH rise is preserved in both groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by LH measurement data after pharmacological stimulation and gonadectomy (Figure 7A-C). This indicates that despite reduced Kiss1 expression, the remaining kisspeptin system can respond normally to direct stimulation, consistent with the fertility preservation observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Kiss1Cre:Nhlh2fl/fl mice show a significantly faster reduction in circulating LH levels during 24-hour fasting compared to controls, suggesting increased sensitivity to decreasing energy reserves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by LH measurement data during fasting (Figure 7D). The inference that this represents increased sensitivity to metabolic challenges is reasonable given the faster LH decline, though alternative mechanisms cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The LH response to refeeding is similar in Kiss1Cre:Nhlh2fl/fl and control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by LH measurement data during refeeding. This suggests that Nhlh2-independent mechanisms can restore Kiss1 neuron activity upon energy restoration, consistent with multi-level metabolic regulation of reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Kiss1Cre:Nhlh2fl/fl mice display a significantly lower LH response to leptin administration after overnight fasting, supporting the role of Nhlh2 as a mechanism for Kiss1 neurons to respond to leptin action, likely through interaction with STAT3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by LH measurement data after leptin administration (Figure 7E) and prior literature on Nhlh2/STAT3 interaction (AL_Rayyan et al., 2014). However, the STAT3 interaction is inferred from prior work rather than directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Nhlh2 in Kiss1 neurons contributes to metabolic regulation of kisspeptin and NKB synthesis and release, with implications for puberty onset timing and fertility regulation in male mice, though additional unknown factors likely contribute to this regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 represent summary conclusions supported by the collective experimental data showing delayed male puberty (C20), variable male fertility (C25), decreased Kiss1 expression (C28), and impaired leptin response (C40). The speculation about additional factors (C96) is reasonable given the incomplete penetrance of the phenotype.",
+    "result_type": "MAJOR"
+  }
+]

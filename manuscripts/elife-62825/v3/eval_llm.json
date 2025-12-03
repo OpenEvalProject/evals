@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling demonstrates that a Bayesian learner with performance monitoring (incorporating outcome predictions and confidence calibration) outperforms both a feedback-only learner and a learner with outcome predictions but no confidence calibration. In this model, confidence varies with prediction precision, and agents with superior confidence calibration learn better.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are well-supported by computational modeling results shown in Figures 1F, 2A-B and supplements. The model simulations clearly demonstrate the predicted relationships between confidence, prediction precision, and learning performance, providing proof-of-concept for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C31"
+    ],
+    "result": "In human participants, predicted outcomes and actual outcomes were positively correlated, and this relationship was stronger for predictions made with higher confidence, demonstrating that the precision of outcome predictions increases with confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by empirical behavioral data shown in Figure 2C and Table 1, with appropriate statistical analyses (LMM showing significant Predicted Outcome \u00d7 Confidence interaction). This directly tests and confirms the first key behavioral prediction (C31) of the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C32"
+    ],
+    "result": "Participants with better confidence calibration (the correlation between confidence and prediction precision) showed greater performance improvements during learning. This relationship was specific to learning rather than overall performance, as confidence calibration did not correlate with overall performance or response variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by behavioral data shown in Figure 2D and Table 3, with appropriate statistical controls. The significant interaction between confidence calibration and trial (linear component) on log error magnitude, combined with null correlations with overall performance and response variance, provides strong evidence for the second key behavioral prediction (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C38"
+    ],
+    "result": "Confidence tracked the precision of predictions, increasing as the discrepancy between predicted and actual outcomes decreased. Confidence was also higher for larger errors and both relationships changed across blocks, with both outcome predictions and confidence calibration improving across blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by behavioral data in Table 2 and Supplementary files, showing significant relationships between confidence, sensory prediction error, and error magnitude. Claim C38 is supported by Figure 2\u2014figure supplement 2. However, the interpretation of improvement in confidence calibration across blocks is somewhat tentative given the strategic biasing of predictions toward center in early blocks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Sensory prediction error (SPE) decreased as confidence increased, and all error signals (Error Magnitude, RPE, SPE) decreased across blocks. When controlling for error magnitude, block effects on SPE were eliminated but the main effect of confidence on SPE persisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by behavioral analyses in Supplementary files 5-7. The control analysis (C48) is particularly important as it demonstrates that the confidence effect on SPE is not simply driven by improvements in performance, strengthening the interpretation that confidence tracks prediction precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FRN amplitude decreased with more positive-going reward prediction errors (RPE), while error magnitude and sensory prediction error did not significantly affect FRN amplitude. This indicates that FRN reflects the degree to which feedback is better than predicted, with outcome predictions incorporating information about likely execution errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by EEG data in Figure 4C and Table 4. The selective sensitivity to RPE but not error magnitude or SPE provides strong evidence that the FRN integrates post-response outcome predictions. The statistical analysis appropriately controls for multiple error signals simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "P3a amplitude increased with increasing sensory prediction errors (SPE) and with increasing confidence. P3a amplitude also decreased across blocks, possibly reflecting decreased motivational relevance of feedback as participants improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are well-supported by EEG data in Figure 4G-I and Table 5, showing significant main effects of both SPE and confidence on P3a amplitude. Claim C54 is supported but the interpretation is speculative. The findings align with predictions from Shannon Information calculations (Figure 4F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "P3b amplitude increased with increasing SPE and with negative-going RPE (worse-than-expected outcomes), and decreased with decreasing error magnitude (better outcomes). The SPE effect and overall P3b amplitude decreased across blocks. The RPE effect was significantly modulated by confidence and block, with complex patterns across learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by EEG data in Figure 5 and Table 6. The P3b shows sensitivity to multiple error signals (SPE, RPE, error magnitude), suggesting integration of multiple sources of information. The complex interactions (C59-C60) are well-documented but require careful interpretation. The findings suggest P3b reflects learning-related processing that changes across task experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Predicted error magnitude interacted with confidence and block in affecting P3b amplitude. In the first block, P3b increased with higher confidence and decreased more with increasing predicted error magnitude as confidence increased, consistent with confidence-based regulation of learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by follow-up analyses in Table 7 and Supplementary file 8. This analysis provides more direct evidence for confidence-weighted discounting of predictions than the RPE analysis alone. The pattern is strongest in early learning when most adaptation occurs, which is theoretically sensible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "P3b amplitude on trial n-1 mediated the relationship between error magnitude on trial n-1 and improvement on the current trial in the first block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by mediation analysis in Supplementary file 10. However, the authors appropriately note caution in interpretation as the task is not optimized for trial-to-trial adjustment analyses. The finding is consistent with P3b reflecting learning-related processing but should be considered preliminary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study tests the hypothesis that performance monitoring (outcome predictions and confidence) adaptively regulates learning from feedback. This predicts that confidence mediates the relationship between outcome predictions and feedback, learning is compromised when confidence is miscalibrated, and neural correlates of feedback processing integrate information about predictions and confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C25-C30 represent the core hypothesis and predictions of the study. These are well-supported by the convergent evidence from computational modeling (C33-C35), behavioral data (C36-C37, C42-C45), and neural data (C49-C63). The multi-method approach provides strong support for the overarching theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Participants' behavior displayed hallmarks of error monitoring with outcome predictions tracking actual errors. Confidence reflected prediction precision, and participants with superior confidence calibration learned better. This effect is unlikely due to overall ability differences and supports the hypothesis that confidence optimizes feedback processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 represent summary interpretations of the behavioral findings. These are well-supported by the empirical data (C36-C45) and the control analyses ruling out alternative explanations (C43-C44). The interpretation that confidence calibration relates specifically to learning rather than general ability is appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The main impact of error monitoring is to reduce surprise about outcomes through outcome predictions. In computational models, this led to more accurate updating and superior learning. Higher confidence in predictions enhanced surprise for a given prediction error, and both agents and participants learned more from feedback when confidence was high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 represent mechanistic interpretations supported by both computational modeling (C33-C35, C72-C73) and empirical data (C42, C52-C53, C63). The counterintuitive finding that learning is enhanced with high confidence (C74) is well-supported across methods and represents a key insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Unlike Bayesian agents, participants exhibited learning not only at the level of first-order performance but also at the level of performance monitoring, with the precision of outcome predictions and confidence increasing as learning progressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by behavioral data showing improvements in prediction precision and confidence calibration across blocks (C38, C41). This represents an interesting divergence from the model and suggests additional metacognitive learning processes not captured in the current computational framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "P3b was sensitive to both RPE and SPE, indicating that multiple learning mechanisms may act in parallel. This resonates with recent work showing prediction error signals encode multiple outcome features and are based on distributed representations, which may help credit assignment and support learning at multiple levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by the P3b findings (C55-C61). Claims C86-C87 are appropriately cited prior work. Claim C88 is speculative but reasonable given the empirical findings and cited literature. The interpretation that multiple learning mechanisms operate in parallel is well-supported but the specific mechanisms remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Feedback evaluation is fundamentally affected by internal representations of performance at the time of feedback. These representations influence learning, beliefs, and actions, creating a recursive process of performance optimization. The study represents a first step toward elucidating this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 represent the main conclusions and broader implications of the study. These are well-supported by the convergent evidence from modeling, behavior, and neural data. The characterization as a 'first step' (C91) is appropriately modest given that many mechanistic questions remain open.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study employed 40 participants performing a modified time-estimation task with 1504 ms target interval across five blocks of 50 trials. EEG was recorded from 64 electrodes. FRN, P3a, and P3b were quantified using standard methods. SPE, RPE, and confidence calibration were operationalized as specified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 describe the methods and are supported by the Materials and Methods section. The methods are generally well-described and appropriate for the research questions. Sample size (n=40) is reasonable for EEG research. The operationalizations of key variables are clearly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes theoretical background on prediction-based learning, performance monitoring, error detection, confidence, and their potential roles in regulating learning from feedback. This includes established findings about error awareness, graded error detection, internal models, and the role of uncertainty in learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C24 represent background knowledge and theoretical framing supported by appropriate citations to established literature. These claims provide the conceptual foundation for the study's hypotheses. The logical progression from established findings to the current hypothesis is well-constructed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The results align with previous findings on metacognitive mismatch and hypercorrection, offer a computational mechanism for these effects, shed new light on the relationship between error monitoring and confidence, and forge links between research on performance monitoring and learning under uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 appropriately connect the current findings to prior literature. The connections are well-supported by appropriate citations and the empirical results. The claim of offering a 'computational mechanism' (C76) is justified by the Bayesian modeling framework. These represent important theoretical contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In motor learning, individuals prefer and learn better from feedback following successful trials. The P3b component scales with the amount of information and learning from a stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are appropriately cited background claims used to contextualize the P3b findings. These are well-established findings in the literature and appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

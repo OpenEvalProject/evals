@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C24",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors identify significant limitations in existing neuroanatomical visualization software, including restriction to single atlases/species, lack of support for diverse data types, and absence of Python-based alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C18-C20, C22, C24, C26, C28-C29 collectively establish the limitations of existing software through citations to specific tools (cocoframer, BrainMesh, SHARPTRACK, natverse, Simple Neurite Tracer, MagellanMapper) and assessment of their constraints. The characterizations are supported by citations and represent a reasonable assessment of the software landscape, though some assessments (C19, C20, C22, C24, C26) are based on inference rather than systematic benchmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Brainrender is presented as an open-source Python package that enables multi-atlas, multi-data-type visualization with minimal programming requirements, integrated with the BrainGlobe suite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C32-C37 describe brainrender's core capabilities and design goals. These are well-supported by demonstrations throughout the manuscript (Figures 1-6, Videos 1-5) showing diverse data types, multiple atlases, and the GUI interface. The claim of 'minimal programming skills' (C36) is supported by the GUI and documentation but remains somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Brainrender achieves atlas-agnostic functionality through integration with BrainGlobe's AtlasAPI, enabling unified access to multiple atlases and direct visualization of data from BrainGlobe analysis tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the technical implementation enabling multi-atlas support. This is demonstrated through Figure 1B showing three different atlases (mouse, zebrafish, human), Figure 2 showing identical code for different atlases, and citations to the AtlasAPI and BrainGlobe tools (cellfinder, brainreg). The unified interface is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Brainrender uses vedo as its rendering engine and can produce high-resolution renderings rapidly on standard hardware, with GPU acceleration providing 3.5\u00d7 framerate improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe rendering performance. C46 is directly supported by benchmark data in Tables 1-2. C45's specific claim of '10,000 cells in less than 2 s' is supported by Table 2 data. However, the characterization of vedo as 'state-of-the-art' (C44) relies on citation rather than comparative benchmarking. The design decision to prioritize quality over performance (C47) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Brainrender enables creation of publication-quality images, animated videos, and interactive online visualizations through both programmatic and GUI interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C59-C61 describe output capabilities. These are demonstrated through Videos 1-5, multiple figures in the manuscript, and Figure 1C/Video 1 showing the GUI. C61 explicitly states all manuscript figures were generated directly in brainrender, providing strong evidence for publication-quality output capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "Brainrender supports visualization of diverse data types including gene expression, connectivity streamlines, implanted devices, neuronal morphology, and custom 3D objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C57-C58 describe data type versatility. Each is demonstrated with specific examples: gene expression (Figure 3E), streamlines (Figure 3B), implanted devices (Figure 3C), custom objects (Figure 3D), and neuronal morphology (Figure 4B). Integration with morphapi (C58) is stated and demonstrated. The breadth of supported data types is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C67",
+      "C68"
+    ],
+    "result": "Brainrender is optimized for mesh data rendering quality rather than performance, being 20\u00d7 faster than napari for mesh data but 5\u00d7 slower for image data, while achieving superior rendering quality in both cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 present performance comparisons with napari. While C69 provides specific quantitative comparisons, no methodological details are provided about how these benchmarks were conducted (data sizes, hardware, test conditions). C70's claim of 'superior rendering quality' is entirely qualitative with no objective metrics or validation. The comparison lacks the rigor of the internal benchmarking (Tables 1-2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C46"
+    ],
+    "result": "Benchmark tests across four machines with different hardware configurations demonstrate that brainrender can handle rich interactive visualizations even without dedicated GPU, though GPU improves performance by 3.5\u00d7 for framerate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C46 describe benchmarking methodology and results. The methodology is described (five tests covering different aspects), hardware configurations are detailed (Table 1), and comprehensive results are presented (Table 2). The conclusion that GPU-less systems can handle visualizations (C82) is supported by the data, though the caveat about typical use cases having fewer vertices is important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Brainrender addresses the lack of Python-based neuroanatomical visualization tools and facilitates integrated analysis pipelines, though data registration and atlas integration remain technically challenging prerequisites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 summarize brainrender's contribution and acknowledge limitations. C62-C63 are supported by the demonstrated capabilities throughout the manuscript. C64-C66 appropriately acknowledge that registration (a prerequisite for using brainrender) remains challenging, with C65 citing available tools. This represents a balanced assessment of the tool's scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Brainrender is implemented in Python 3.6+, depends on standard packages (numpy, matplotlib, pandas) and vedo/AtlasAPI, and is open-source under BSD 3-Clause license with a Scene-Actor architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 describe technical implementation details. These are factual statements about the software architecture, dependencies (with citations), licensing, and installation requirements. C74-C75 describe the Scene-Actor design pattern that is consistently used throughout the code examples (Figures 2, 5). These implementation details are verifiable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Brainrender provides interfaces to Allen Institute data and morphapi for downloading public datasets, and enables basic spatial analyses through vedo and AtlasAPI functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe additional functionality and integrations. C76-C77 are supported by citations to Allen Institute projects and morphapi. C78-C79 are demonstrated in Figure 6A-B with code examples showing distance measurements and region containment checks. These represent useful auxiliary capabilities beyond core visualization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C27",
+      "C30",
+      "C31",
+      "C55",
+      "C56"
+    ],
+    "result": "The manuscript establishes the scientific context: multidimensional brain data require registration to common reference frames (typically anatomical atlases), 3D visualization aids understanding, but creating such visualizations is technically demanding, motivating the need for accessible tools in Python.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C17, C27, C30-C31, C55-C56 establish background knowledge and motivation. These are supported by multiple citations to relevant literature (atlas papers, imaging methods, existing tools) and represent accurate characterizations of the field's state and challenges. The logical progression from data generation \u2192 registration needs \u2192 visualization challenges \u2192 tool requirements is well-established.",
+    "result_type": "MINOR"
+  }
+]

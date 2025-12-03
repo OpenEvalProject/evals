@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "ec4c75ab-7128-4a4c-a28a-f381c6eb5275",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T16:38:00.010723Z",
+    "updated_at": "2025-12-03T16:38:00.010723Z"
+  },
+  "content": [
+    {
+      "id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "submission_id": "ec4c75ab-7128-4a4c-a28a-f381c6eb5275",
+      "content_type": "manuscript",
+      "content_text": "# Neural underpinning of a respiration-associated resting-state fMRI network\n\n## Authors\n\n- Wenyu Tu<sup>1</sup> ([ORCID: 0000-0003-3480-2098](https://orcid.org/0000-0003-3480-2098))\n- Nanyin Zhang<sup>1</sup> ([ORCID: 0000-0002-5824-9058](https://orcid.org/0000-0002-5824-9058)) \u2020\n\n### Affiliations\n\n1. The Neuroscience Graduate Program, The Huck Institutes of the Life Sciences, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))\n2. Center for Neurotechnology in Mental Health Research, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))\n3. Department of Biomedical Engineering, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRespiration can induce motion and CO2 fluctuation during resting-state fMRI (rsfMRI) scans, which will lead to non-neural artifacts in the rsfMRI signal. In the meantime, as a crucial physiologic process, respiration can directly drive neural activity change in the brain, and may thereby modulate the rsfMRI signal. Nonetheless, this potential neural component in the respiration\u2013fMRI relationship is largely unexplored. To elucidate this issue, here we simultaneously recorded the electrophysiology, rsfMRI, and respiration signals in rats. Our data show that respiration is indeed associated with neural activity changes, evidenced by a phase-locking relationship between slow respiration variations and the gamma-band power of the electrophysiological signal recorded in the anterior cingulate cortex. Intriguingly, slow respiration variations are also linked to a characteristic rsfMRI network, which is mediated by gamma-band neural activity. In addition, this respiration-related brain network disappears when brain-wide neural activity is silenced at an isoelectrical state, while the respiration is maintained, further confirming the necessary role of neural activity in this network. Taken together, this study identifies a respiration-related brain network underpinned by neural activity, which represents a novel component in the respiration\u2013rsfMRI relationship that is distinct from respiration-related rsfMRI artifacts. It opens a new avenue for investigating the interactions between respiration, neural activity, and resting-state brain networks in both healthy and diseased conditions.\n\n## Introduction\n\nResting-state fMRI (rsfMRI), which measures spontaneous blood-oxygen-level-dependent (BOLD) signal, is a powerful tool for non-invasively investigating brain-wide functional connectivity (Biswal et al., 1995; Fox and Raichle, 2007; Smith et al., 2009). Due to its hemodynamic nature, the rsfMRI signal is susceptible to systemic physiological changes such as respiration and cardiac pulsations (Murphy et al., 2013; Liu, 2016; Caballero-Gaudes and Reynolds, 2017; Chen et al., 2020), and these effects are usually treated as non-neuronal artifacts in rsfMRI data.\n\nRespiration is a major physiological process that drives fluctuations in cerebral blood flow and oxygenation (Liu, 2016). Respiration can affect the BOLD signal (Thomason et al., 2005; Abbott et al., 2005; Birn et al., 2006) with two types of effects resulting from slow respiration variations and fast cyclic changes, respectively. Slowly varying changes (typically below 0.15 Hz) in breathing rate and depth, which can be quantified as respiration volume per time (RVT) (Birn et al., 2006), covary with arterial CO2 (Wise et al., 2004; Chang and Glover, 2009; Hoiland et al., 2016; Liu et al., 2017) and affect the BOLD signal via vasodilatory effects and/or autonomic influences of the vessel tone (Duyn et al., 2020; Picchioni et al., 2022). On the other hand, faster respiratory cycles (i.e., periodic inspiration and expiration), accompanied by the corresponding chest and neck movement, can induce changes in the static magnetic field, which in turn lead to BOLD signal changes (Glover et al., 2000; Raj et al., 2000; Windischberger et al., 2002). Both effects can be effectively mitigated/removed by standard rsfMRI preprocessing methods (Birn et al., 2006; Glover et al., 2000).\n\nIn addition to the well-characterized respiration-related non-neural artifacts, there is evidence hinting a possible neural component in the respiration\u2013rsfMRI interaction (Yuan et al., 2013; Shams et al., 2021). First, respiration can directly drive brain-wide neuronal oscillations (Tort et al., 2018a; Kay et al., 2009) not only in the olfactory bulb (Adrian, 1942) and piriform cortex (Fontanini et al., 2003)\u2014brain regions directly related to breathing\u2014but also in the medial prefrontal cortex (mPFC), somatosensory cortex, and hippocampus, and this effect has been consistently found across species (Ito et al., 2014; Yanovsky et al., 2014; Biskamp et al., 2017; Zelano et al., 2016). In addition, respiration changes can be associated with arousal and/or emotion-related brain state changes, which covary with cortical activity (Yackle et al., 2017; Shea, 1996; Homma and Masaoka, 2008; Folschweiller and Sauer, 2021). Therefore, in addition to the artifactual effects aforementioned, respiration may affect the rsfMRI signal by directly modulating the neural activity. However, this potential neural component in the respiration\u2013fMRI relationship is largely unexplored.\n\nTo gain a comprehensive understanding of the relationships between respiration, neuronal activity, and rsfMRI signal, here we simultaneously acquired rsfMRI, electrophysiology, and respiration data in anesthetized rats. Anesthesia was used to ensure our results are not confounded by the animal\u2019s motion, which affects all three signals. Based on these measures, an RVT-correlated rsfMRI network was identified. Importantly, regressing out gamma activity or silencing neural activity across the brain disrupted this respiration-related network, suggesting that this respiration\u2013rsfMRI relationship is mediated by neural activity.\n\n## Results\n\nTo determine the potential role of neural activity in the respiration\u2013rsfMRI relationship, we simultaneously recorded the electrophysiology and respiration signals along with rsfMRI data in rats (Figure 1A). The respiration signal was recorded by a respiration sensor placed under the animal\u2019s chest (Figure 1A). Representative raw respiration signal, the respiration rate distribution across all scans, and the averaged respiration power are shown in Figure 1B, C. Slow respiration variations are quantified by RVT, calculated as the difference of consecutive peaks of inspiration and expiration divided by the time interval between the two adjacent signal maxima (or minima) (Figure 1D; Birn et al., 2006). The electrophysiology signal was recorded using an MR-compatible electrode implanted in the right side of the anterior cingulate cortex (ACC). The ACC was selected given its critical role in respiratory modulation, evidenced by early studies showing that ACC was activated during breathlessness (Liotti et al., 2001; Evans et al., 2002). More recent research further demonstrates the role of ACC in respiratory control (Evans et al., 2009; Holton et al., 2021; Tort et al., 2018b). For example, electrophysiology recordings in humans showed that ACC exhibited different neural responses to separate respirational tasks including breath-holding, voluntary deep breathing, and hypercapnia (Holton et al., 2021). In addition, the ACC is a key region in the rodent default-mode network (DMN) (Lu et al., 2012; Tu et al., 2021a), which has been linked to respiration-related fMRI signal changes (Birn et al., 2006). The location of the electrode was confirmed by T2-weighted structural images (Figure 1\u2014figure supplement 1). MRI artifacts in the electrophysiology signal were removed using a template regression method (Logothetis et al., 2001; Pan et al., 2011) (see Materials and methods and Figure 1\u2014figure supplement 2), and local field potential (LFP) and spectrogram were obtained using denoised electrophysiologic data (Figure 1E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental design\u2014simultaneous measurement of the resting-state fMRI (rsfMRI), electrophysiology, and respirational signals. Top: anterior cingulate cortex (ACC) seedmap; bottom left: respiration signal; bottom right: local field potential (LFP). (B) Exemplar respiration signal waveform. (C) Left: distribution of the respiration rate across all scans; right: power of the respiration signal averaged across all scans. (D) Computing respiration volume per time (RVT) from the respiration waveform. (E) Exemplar denoised LFP signal. Top: LFP time series; bottom: LFP power spectrogram.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) An example of raw electrophysiology signals before the denoising of MRI artifacts; (B) an example of the MRI artifact template. (C) Local field potential (LFP) after MRI artifact denoising.\n\n### Gamma-band neural oscillations are, respectively, associated with respiration and rsfMRI signals\n\nWe first asked whether the respiration is linked to neural activity changes (Figure 2A) in lightly sedated animals (combined low-dose dexmedetomidine and isoflurane, see Methods and materials). Prominent coherence between the respiration signal and LFP is observed with the dominant peak at ~1.1 Hz (Figure 2B, C), in line with the respiration frequency in animals (Figure 1C). This result is consistent with the finding of respiration-entrained LFP oscillations previously reported (Tort et al., 2018a; Kay et al., 2009).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig2-v2.jpg)\n\n**Figure 2.:** (A) The relationship between respiration and neural activity. (B) Respiration\u2013local field potential (LFP) coherence from one sample scan. (C) Respiration\u2013LFP coherence averaged across all scans. (D) Coherence between respiration volume per time (RVT) and gamma-band power (40\u2013100 Hz), with the peak at 0.035 Hz. (E) Phase lag between RVT and gamma-band power. In contrast, no obvious coherence is observed between RVT and delta-band power (1\u20134 Hz, F), theta-band power (4\u20137 Hz, G), alpha-band power (7\u201313 Hz, H), or beta-band power (13\u201330 Hz, I).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Exemplar electrophysiology signals from two separate channels: channel 1 (top) and channel 10 (middle), as well as the subtracted signal between the two channels (bottom). Results in panels B\u2013D are all based on the subtracted electrophysiology signal. (B) Left: coherence between the respiration volume per time (RVT) and gamma-band power (40\u2013100 Hz). Right: phase lag between the RVT and gamma-band power. (C) Coherence between the RVT and delta-band power (1\u20134 Hz), theta-band power (4\u20137 Hz), alpha-band power (7\u201313 Hz), and beta-band power (13\u201330 Hz), respectively. (D) Gamma-band power-derived resting-state fMRI (rsfMRI) correlation map.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig2-figsupp2-v2.jpg)\n\nTo further dissect the respiration\u2013LFP relationship, the LFP was separated into five conventionally defined frequency bands including gamma (40\u2013100 Hz), delta (1\u20134 Hz), theta (4\u20137 Hz), alpha (7\u201313 Hz), and beta band (13\u201330 Hz) (Lu et al., 2016; Zhang et al., 2020). Gamma-band power displays significant coherence with the RVT at ~0.035 Hz with a zero phase lag (Figure 2D, E, phase [mean \u00b1 ste] = \u22120.08 \u00b1 0.5 pi, with the range of [\u2212pi, pi]), suggesting a phase-locking relationship between the two measures. In contrast, this coherence is not observed in any other frequency bands (Figure 2F\u2013I). These results remain the same when the LFP data were analyzed using the local subtraction method (Figure 2\u2014figure supplement 1A\u2013C), ruling out the potential artifact resulting from the volume conduction of signals between the cortex and olfactory bulb (Parabucki and Lampl, 2017). The RVT\u2013gamma power coherence in individual lightly sedated animals is shown in Figure 2\u2014figure supplement 2. Taken together, our data demonstrate that respiration is associated with gamma-band neural oscillations in the ACC.\n\nWe next examined the relationship between the gamma-band LFP and rsfMRI signals (Figure 3A; Winder et al., 2017). The ACC gamma power was first convolved with a hemodynamic response function (HRF, defined by a single gamma probability distribution function (a = 3, b = 0.8) Liang et al., 2017, Figure 3B), which was then voxel-wise correlated to brain-wide rsfMRI signals. The r value between the ACC rsfMRI signal and HRF-convolved gamma power was 0.086 (1200 time points, p = 0.003). Our data show that the gamma power-derived rsfMRI correlation map (Figure 3C) is highly consistent with the ACC resting-state functional connectivity (RSFC) seedmap with the right ACC (i.e., the electrode implanted side) defined as the seed (Figure 3D), evidenced by a strong voxel-to-voxel spatial correlation between these two maps (Figure 3E, R = 0.775, p < 10\u221215). Again, the same gamma power-derived correlation pattern is observed when the LFP data were analyzed using the local subtraction method (Figure 2\u2014figure supplement 1D). The gamma power-derived rsfMRI correlation maps in individual animals are shown in Figure 3\u2014figure supplement 1. These data demonstrate that the gamma-band LFP is tightly linked to the rsfMRI signal.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig3-v2.jpg)\n\n**Figure 3.:** (A) The relationship between neural activity and rsfMRI signal. (B) Top: exemplar gamma-band power in the anterior cingulate cortex (ACC); middle: estimated blood-oxygen-level-dependent (BOLD) signal by convolving the gamma-band power with the hemodynamic response function (HRF); bottom: measured BOLD signal from the same brain region. (C) Gamma power-derived correlation map. (D) Seedmap of the right ACC. (E) Voxel-to-voxel spatial correlation between (C) and (D).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Anterior cingulate cortex (ACC) (right side) seedmap after RVT regression; (B) difference of right ACC seedmaps before and after RVT regression; (C) gamma-band power-derived correlation map after RVT regression; (D) difference of gamma-band power-derived correlation maps before and after RVT regression.\n\n### Respiration is associated with a characteristic rsfMRI network, mediated by gamma-band neural activity\n\nGiven that the gamma-band power is, respectively, associated with the RVT and rsfMRI signals, we specifically asked how RVT is related to the rsfMRI signal in lightly sedated animals by calculating voxel-wise correlations between the RVT and rsfMRI signals (Figure 4A). This analysis generates a respiration-related rsfMRI network (Figure 4B), involving key brain regions controlling respiration such as the piriform cortex. It is known that the piriform cortex receives inputs from the olfactory bulb, and can be directly activated when the animal breathes. In addition, this network includes regions involved in the rodent DMN such as the ACC, mPFC, orbital, retrosplenial, and primary somatosensory cortices, as well as the hippocampus (Lu et al., 2012; Figure 4C, one-sample t-test, p < 0.05, false discovery rate [FDR] corrected). The resemblance of this respiration-related network and DMN well agrees with the human literature that the physiological effects on rsfMRI data are colocalized with the DMN (Birn et al., 2006). The respiration-related rsfMRI network in individual animals is shown Figure 4\u2014figure supplement 1. Taken together, slow respiration variations exhibit a characteristic correlation pattern with brain-wide rsfMRI signals, representing a respiration-related rsfMRI network.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig4-v2.jpg)\n\n**Figure 4.:** (A) The relationship between respiration and rsfMRI signals. (B, C) Voxel-wise correlations between the respiration volume per time (RVT) and rsfMRI signals. (B) Unthresholded correlation map averaged across scans. (C) Thresholded T-value map (one-sample t-test, p < 0.05, false discovery rate [FDR] corrected). Brain regions displaying significant RVT\u2013rsfMRI correlations include the anterior cingulate cortex (ACC), orbital cortex (OC), medial prefrontal cortex (mPFC), piriform cortex (PC), hippocampus (HP), retrosplenial cortex (RSP), and primary somatosensory cortex (S1). (D) Voxel-wise correlations between the RVT and rsfMRI signals after the gamma-band power are regressed out from both signals. (E) Difference of correlation maps before and after gamma power regression (paired t-test, p < 0.05, FDR corrected).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Voxel-wise correlations between the rsfMRI signal and RETROICOR regressor without the regression of the white matter and ventricle signals in (C) light sedation and (D) isoelectric state.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Respiratory response function. Voxel-wise correlations between the estimated time course of respirational artifacts and rsfMRI signals without (B) and with (C) the regression of the white matter and ventricle signals.\n\nTo test whether this respiration-related rsfMRI network is mediated by gamma-band activity, the gamma power was, respectively, regressed out from the RVT and voxel-wise rsfMRI signals, and the same correlational analysis was repeated on the residual signals. In this case, the respiration-related network is diminished (Figure 4D). This result is confirmed by the contrast of the correlation maps before (Figure 4B) and after (Figure 4D) gamma power regression, with essentially all brain regions involved in the respiration-related network exhibiting reduced RVT\u2013rsfMRI correlation after the gamma power is regressed out (Figure 4E, paired t-test, p < 0.05, FDR corrected). These results demonstrate that the respiration-related rsfMRI network is mediated by gamma-band neural activity.\n\n### The respiration-related rsfMRI network is absent at the isoelectric state\n\nTo further confirm the necessary role of neural activity in the respiration-related rsfMRI network, we experimentally silenced the neural activity in the whole brain by inducing an isoelectric brain state using high-dose sodium pentobarbital, while maintained the respiration in the rat (Figure 5A; Du et al., 2008). At the isoelectric state, the LFP amplitude and power are close to zero, in remarkable contrast to the electrophysiology data recorded before the drug infusion (Figure 5B). In addition, rsfMRI data recorded at the isoelectric state exhibit a flat, noise-like power distribution, unlike the characteristic 1/f pattern during light sedation (Figure 5I; Zhang et al., 2021). Furthermore, there is no meaningful ACC RSFC in the ACC seedmap at the isoelectric state (Figure 5H), which is distinct from the ACC seedmap during light sedation (Figure 3D). The brain-wide ROI-based RSFC matrix also reveals a global suppression of RSFC at the isoelectric state (Figure 5K), compared to the RSFC matrix observed during light sedation. These data collectively confirm that brain-wide neural activity is silenced in the isoelectric state.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig5-v2.jpg)\n\n**Figure 5.:** (A) Determining the relationship between slow respiration variations and the rsfMRI signal after silencing the brain-wide neural activity. (B) Silencing neural activity at the isoelectric state induced by sodium pentobarbital. Top: LFP amplitude; bottom: LFP power; arrow: infusion of sodium pentobarbital. (C) Respiration signal at the isoelectric state. (D) Distribution of respiration rate (RR) across scans. (E) Variance of RR, quantified by the standard deviation (SD) of RR in the light sedation and isoelectric states. (F) Variance of respiration volume per time (RVT), quantified by the SD of RVT in the light sedation and isoelectric states. There is no significant difference in the SD of the RR (E, two-sample t-test, t = \u22121.0, p = 0.32) or the SD of RVT (F, two-sample t-test, t = \u22120.87, p = 0.39) between the light sedation and isoelectric states. (G) Power spectrum of RVT during (left) light sedation and (right) the isoelectric state. (H) Seedmap of the right anterior cingulate cortex (ACC) at the isoelectric state. (I) Power spectra of the blood-oxygen-level-dependent (BOLD) signal during (left) light sedation and (right) the isoelectric state. (J) Voxel-wise correlations between RVT and the rsfMRI signal at the isoelectric state. (K) Brain-wide ROI-based RSFC matrices at (left) light sedation and (right) the isoelectric state (132 ROIs in total).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81555/elife-81555-fig5-figsupp1-v2.jpg)\n\nTo examine whether the temporal variation of respiration in the isoelectric state and light sedation is consistent, we calculated the respiration rate (Figure 5D) as well as the standard deviation (SD) and power spectrum of RVT across all scans. We did not observe any significant difference in the SD of the respiration rate (Figure 5E, two-sample t-test, t = \u22121.0, p = 0.32) or the SD of RVT (Figure 5F, two-sample t-test, t = \u22120.87, p = 0.39) between the light sedation and isoelectric states, suggesting that the temporal variance of respiration is similar between the two states. Interestingly, we observed a characteristic 1/f pattern in the RVT power during light sedation, but this pattern was not present at the isoelectric state (Figure 5G). This difference is consistent with the ACC BOLD signal power spectra in the light sedation and isoelectric states (Figure 5I).\n\nAfter confirming the global neural silencing effect, we calculated voxel-wise correlations between the RVT and rsfMRI signals in the isoelectric state. The respiration-related network observed during light sedation is absent when brain-wide neural activity is silenced (Figure 5J), despite similar breathing patterns (Figure 5C\u2013F) at both conditions. The RVT\u2013rsfMRI correlation maps in individual animals in the isoelectric state are shown in Figure 5\u2014figure supplement 1. These data demonstrate that the neural activity plays a necessary role in the respiration-related rsfMRI network, corroborating the notion that the respiration-related rsfMR network we observed is mediated by neural activity.\n\n### Respiration-related brain network is distinct from respiration-related rsfMRI artifacts\n\nTo confirm the respiration-related neural network we observed is different from respiration-related rsfMRI artifacts previous reported, we separately obtained the artifactual patterns of fast (i.e., cyclic inspiration and expiration) and slow respiration signals in the rsfMRI data.\n\nThe fast variations of respiration can cause aliased respiratory artifacts in the fMRI signal by inducing B0 offsets (Pais-Rold\u00e1n et al., 2018; Zhao et al., 2000). To determine this effect, we calculated voxel-wise correlations between the rsfMRI signal and the respiration regressor estimated by RETROICOR (see Materials and methods for details) (Glover et al., 2000). Unlike the respiration-related neural network described above, we did not observe any appreciable correlations between RETROICOR and the rsfMRI signals across the brain in either the light sedation or isoelectric state (Figure 4\u2014figure supplement 2). This result remains the same with and without regressing out the signals of the white matter and ventricles in rsfMRI preprocessing, likely due to minimal motion of animals in both anesthetized states.\n\nTo assess the artifactual effects resulting from slow respiration signals on rsfMRI data, we adopted the standard analysis method by convolving the RVT with a respiration response function (RRF) determined by the difference of two gamma variate functions (see Materials and methods, Figure 4\u2014figure supplement 3A; Birn et al., 2008), and then voxel-wise correlated it to the rsfMRI signal (Figure 4\u2014figure supplement 3). Note that this calculation is different from the method we used to identify respiration-related neural network, which directly correlated the RVT with the rsfMRI signal. Our data show that the slow respiration-related rsfMRI artifact is distinct from the respiration-related neural network. First, the slow respiration-related rsfMRI artifact is dominantly located around the ventricles and large veins (Figure 4\u2014figure supplement 3B), whereas the respiration-related neural network is mostly located at the gray matter with a distinct spatial pattern (Figure 4B, C). In addition, the slow respiration-related rsfMRI artifact can be reduced by regressing out the signals in the white matter and ventricles (Figure 4\u2014figure supplement 3C), but the respiration-induced neural network persists after the regression. Taken together, these data indicate that the respiration-related neural network we observed is not a non-neural physiological artifact but originates from neural activity.\n\n## Discussion\n\nIn this study, we discovered a slow respiration variation-related functional network in rodents. Importantly, we confirmed the neural underpinning of this network, indicated by the phase-locking relationship between the RVT and gamma-band power in the ACC\u2014a node in this network. Regressing out the gamma-band power disrupted the respiration network, suggesting a mediating role of neural activity in this network. To further validate this finding, we experimentally silenced the neural activity across the brain but maintained the respiration in the animal. In this condition, we again failed to observe the respiration-related brain network, confirming the neural underpinning of the network. Lastly, we showed that the respiration-related neural network is distinct from respiration-related rsfMRI artifacts. Overall, our study maps brain-wide neural responses related to respiration. These data provide new insight into understanding the neural activity-mediated respiratory effects on resting-state functional networks. Importantly, this breathing-related brain network might be altered in brain disorders, and thus our findings might potentially provide important clinical value.\n\n### The respiration network is very likely linked to respiration-entrained brain-wide neural oscillations\n\nRespiration-induced neuronal oscillations have been consistently observed across multiple species including rats, mice, and humans (Yanovsky et al., 2014; Zelano et al., 2016; Lockmann et al., 2016). This phenomenon also seems to be robust in various physiological and behavioral states including freely moving awake and immobile awake conditions, as well as anesthetized states (Fontanini et al., 2003; Ito et al., 2014; Zhong et al., 2017). Intriguingly, previous studies found that respiration specifically modulated the amplitude of gamma activity in the mPFC (Zhong et al., 2017; Rojas-L\u00edbano and Kay, 2008; Fontanini and Bower, 2005), consistent with our finding of band-specific coherence between the gamma power in the ACC and RVT. Notably, gamma power is generally believed to relate to the BOLD signal (Logothetis et al., 2001; Winder et al., 2017), which is also demonstrated in our study (Figure 3). These results suggest that respiration is associated with gamma oscillations, which is necessary for BOLD signal changes in the respiration network. This notion is further supported by our data that regressing out gamma-band LFP signals tremendously reduced the correlation between RVT and fMRI (Figure 4D,E), although it is still possible that if there are non-neural hemodynamic effects of respiration on the rsfMRI signal that occur at zero lag (i.e., a non-neural hemodynamic factor that are synchronized with gamma LFP), regressing out gamma LFP could also reduce these effects.\n\nIn addition to the mPFC, previous work has shown that respiration-generated neuronal oscillations are phase locked to the breath rhythm across distributed brain regions including the olfactory bulb, primary piriform cortex, hippocampus, and somatosensory barrel cortex (Fontanini et al., 2003; Ito et al., 2014; Yanovsky et al., 2014; Biskamp et al., 2017; Herrero et al., 2018). Those regions are highly consistent with brain regions in the respiration network we observed. Furthermore, the piriform cortex is anatomically connected to the mPFC, ACC, and orbital cortex, all of which are parts of the respiration network in our study (Schmahmann, 2009; Illig, 2005; Garc\u00eda-Cabezas and Barbas, 2014; Carmichael et al., 1994). Taken together, the spatial pattern of the respiration network reported here well agrees with brain regions exhibiting neural oscillation changes driven by respiration.\n\nPrevious work also demonstrates that respiration-induced neuronal oscillations do not result from the movement of the muscle or electrode. For instance, the oscillations are different in the laminar amplitude along the hippocampus, with the maximal amplitude in the dentate gyrus (DG) (Yanovsky et al., 2014). This finding well agrees with our data, displaying more prominent involvement of the DG than other parts of the hippocampus in the respiration network. In addition, our data show that only the gamma-band power, not other LFP bands, is coherent with slow variations of respiration, whereas the movement of electrode or muscle would lead to increased coherence across multiple frequency bands. Taken together, the respiration-related functional network we observed is very likely linked to the respiration-entrained gamma-band oscillations in regions involved in the network.\n\nNotably, regressing out the respirational signal does not abolish the RSFC measured by rsfMRI data, suggesting that the respiration does not account for all the effects of the RSFC measured. Figure 3\u2014figure supplement 2 shows the differences of ACC seedmaps and ACC gamma activity-derived correlation maps before and after regressing out the RVT. Although RVT regression reduced ACC RSFC particularly in brain regions involved in the respiration network as expected, the major RSFC pattern remains consistent, indicating that a dominant component of RSFC is not ascribed by the respiration effect.\n\n### Respiration and arousal changes\n\nIt is possible that the neural contribution to the respiration-related brain network is mediated by arousal changes, which is associated with both neural excitability and respiration (Yackle et al., 2017; Shea, 1996; Fan et al., 2012). The cerebral blood flow can be regulated by the innervation from the basal forebrain and locus coeruleus, and both regions are directly related to arousal changes (Yackle et al., 2017; Lecrux and Hamel, 2016; Melnychuk et al., 2018). Previous studies in humans demonstrated correlations among the fMRI signal, low-frequency fluctuations of respiration, and EEG alpha power (Yuan et al., 2013). The fMRI\u2013respiration correlate was stronger at the eye-closing resting state with a greater arousal-level change than the eye-open state. In addition, strong association was identified between alpha wave and alertness level. These data together suggest that the correlations between low-frequency fluctuations of respiration, alpha EEG power, and the fMRI signal might be related to the fluctuation of wakefulness (Yuan et al., 2013). However, we do not believe the arousal level plays a dominant role in our results, given that our study was performed in anesthetized animals. Accordingly, we did not observe any coherence between alpha-band power and the slow variations of respiration, suggesting the respiration-related fMRI network we observed might be attributed to a different mechanism than arousal.\n\n### The association between neural activity and respiration in human studies\n\nThe findings in the present study to a large extent echo the results reported in human studies. Previous research demonstrated bidirectional interplay between respiration and neural activity in humans. Neural activity in brainstem regions such as the preB\u00f6tzinger complex directly controls the respiration (Baertsch et al., 2021; Smith et al., 1991). In addition, respiration-induced LFP oscillations were observed in multiple human brain regions such as the piriform cortex and hippocampus (Zelano et al., 2016; Herrero et al., 2018), consistent with our data. McKay et al. also found that voluntary hyperpnea was related to the neural activity of various brain regions including the primary sensory and motor cortices, supplementary motor area, caudate nucleus, and globus pallidum, which largely agree with the respiration-related brain network we identified in rats (McKay et al., 2003). Importantly, respiration-mediated neural activity was found to modulate brain function. For example, respiration is shown to modulate visual perceptual sensitivity, mediated by alpha power (Kluger et al., 2021). Respiration is also the key component in mindfulness meditation, which has been repeatedly shown to have modulatory effects on brain function (Doll et al., 2016). Furthermore, the coupling between neural activity and respiration may facilitate our understanding of brain disease. Hyam et al. stimulated the pedunculopontine region (PPNr) and observed improvement in upper airway function in Parkinson\u2019s patients (Hyam et al., 2019). Loss of neurons in the preB\u00f6tzinger complex was found to cause sleep-disordered breathing (McKay et al., 2005). Taken together, those findings indicate that the respiration-related brain network might be conserved across species and represent a general phenomenon in the mammalian brain, and this brain network might play an important role in normal and diseased brain function.\n\n### Potential pitfalls\n\nIn the current study, we performed the experiment in lightly sedated animals to ensure the results were not confounded by the animal\u2019s motion. Indeed, animals\u2019 motion, particularly respiration-correlated motion, can induce systematic variation in the rsfMRI signal that potentially leads to an artifactual correlation pattern. Such a correlation pattern is difficult to be parceled out in our respiration-associated brain network. However, it has to be recognized that anesthesia might be a potential confounder by itself, as it may affect the respiration, as well as respiration-induced neural and vascular activities. For instance, anesthetics can reduce the respiration rate and affect LFP by increasing the low-frequency power and decreasing the high-frequency power (Purdon et al., 2013; You et al., 2021; Bastos et al., 2021). Our rationale for choosing combined low-dose isoflurane and dexmedetomidine as our anesthesia protocol is as follows: Isoflurane is a vasodilator, which can attenuate the BOLD signal (Schwinn et al., 1990), whereas the dexmedetomidine is a vasoconstrictor, which can counteract the vasodilatory effect from isoflurane (Talke and Anderson, 2018). This anesthesia protocol has been shown to minimize the confounding effects on the BOLD response and maintain the functional connectivity across both cortical and subcortical regions (Grandjean et al., 2014; Benveniste et al., 2017). Despite the potential confounding effects of anesthesia, previous studies demonstrated that similar respiration-coupled LFP oscillations were observed in both anesthetized and awake states (Yanovsky et al., 2014; Lockmann et al., 2016; Nguyen Chi et al., 2016). As the relationship between respiration and neural activity is preserved under anesthesia, our results obtained in anesthetized rats should remain valid. However, it has to be noted that the neural contributions in the respiration-related network may be different in signal amplitude and/or spatial pattern between the awake and anesthetized states, and other potential neural contributions, such as those mediated by emotional or arousal changes, may only be present in the awake state. Such factors warrant further investigation in awake animal studies. Another potential pitfall is that the number of animals in the present study is limited, and the reported effects are dominated by the number of scans/imaging sessions, rather than the number of individual rats. However, as main results are highly reproducible across animals as demonstrated in Results, we believe this issue should not be a major concern.\n\n## Materials and methods\n\n### Animals\n\nThe present study was approved by the Pennsylvania State University Institutional Animal Care and Use Committee (IACUC, protocol #: PRAMS201343583). Seven adult male Long\u2013Evans rats (300\u2013500 g) were used. Rats were housed in Plexiglas cages with food and water provided ad libitum. The ambient temperature was controlled at 22\u201324\u00b0C under a 12 hr light:12 hr dark schedule.\n\n### Surgery\n\nStereotaxic surgeries were performed to implant electrodes in animals for the electrophysiology recording. The rat was anesthetized with an injection of ketamine (40 mg/kg) and xylazine (12 mg/kg), and remained anesthetized throughout the surgery by 0.75% isoflurane delivered through an endotracheal catheter intubated (PhysioSuite, Kent Scientific Corporaition). Antibiotics baytril (2.5 mg/kg) and long-acting analgesic drug buprenorphine were intramuscularly administered. During surgery, the temperature was monitored and maintained by a warming pad (PhysioSuite, Kent Scientific Corporaition). Heart rate and SpO2 were monitored with a pulse oximetry (MouseSTAT Jr, Kent Scientific Corporation). An MR-compatible electrode (MRCM16LP, NeuroNexus Inc) was unilaterally implanted into the ACC (coordinates: anterior/posterior +1.5, medial/lateral +0.5, dorsal/ventral \u22122.8). The reference wire and grounding wire from the electrode were both connected to a silver wire placed in the cerebellum. After surgery, the animal was returned to the home cage and allowed to recover for at least 1 week.\n\n### Simultaneous rsfMRI, respiration, and electrophysiology recordings\n\nrsfMRI experiments were performed on a 7T Bruker 70/30 BioSpec running ParaVision 6.0.1 (Bruker, Billerica, MA) with a homemade single loop surface coil at the high-field MRI facility at the Pennsylvania State University. T2*-weighted gradient-echo rsfMRI images were acquired using an echo planar imaging sequence with following parameters: repetition time (TR) = 1 s; echo time (TE) = 15 ms; matrix size = 64 \u00d7 64; field of view = 3.2 \u00d7 3.2 cm2; slice number = 20; slice thickness = 1 mm; volume number = 1200. T2-weighted structural images were also obtained using a rapid acquisition with relaxation enhancement (RARE) sequence with the following parameters: TR = 3000 ms; TE = 40 ms; matrix size = 256 \u00d7 256; field of view = 3.2 \u00d7 3.2 cm2; slice number = 20; slice thickness = 1 mm; repetition number = 6.\n\nDuring imaging, the animal was maintained in one of two anesthetized states: light sedation and isoelectric state. For imaging sessions under light sedation, animals were anesthetized with the combination of dexmedetomidine (initial bolus of 0.05 mg/kg followed by constant infusion at 0.1 mg kg\u22121 hr\u22121) and isoflurane (0.3%) (Grandjean et al., 2014), and spontaneous respiration was maintained in animals. For imaging sessions under the isoelectric state, sodium pentobarbital was administered with a 30 mg/kg bolus followed by continuous infusion (70 mg kg\u22121 hr\u22121) (Du et al., 2008). Before imaging, the rat was intubated via tracheal, and the respiration was controlled by a ventilator (PhysioSuite, Kent Scientific Corporaition) throughout the entire imaging session. Three rats were in the light sedation group with a total of 51 scans and four rats were in the isoelectric state group with a total of 48 scans. During all imaging sessions, the temperature was measured by a rectal thermometer and maintained at 37\u00b0C with warm air. Eyes of the animal were protected from dryness using artificial tear.\n\nDuring rsfMRI acquisition, the respiration signal was simultaneously recorded at the sampling rate of 225 Hz by a respiration sensor placed under the animal\u2019s chest. Electrophysiology recording started 10 min before the beginning of rsfMRI acquisition and continued throughout the whole imaging session using a TDT recording system including an MR-compatible LP16CH headstage, PZ5 neurodigitizer amplifier, RZ2 BioAmp Processor and WS8 workstation (Tucker Davis Technologies Inc, Alachua, FL). The electrophysiology signal was sampled at 24,414 Hz and the unfiltered raw signal was used for further data processing.\n\n### Data preprocessing\n\nrsfMRI data were preprocessed using a pipeline described in our previous publications (Liang et al., 2017; Tu et al., 2021b). Briefly, rsfMRI images were first motion scrubbed based on relative framewise displacement (FD). Volumes with FD >0.25 mm and their adjacent preceding and following volumes were removed. Subsequently, data were preprocessed by performing motion correction (SPM12), co-registration to a defined atlas, spatial smoothing, as well as voxel-wise nuisance regression of motion parameters and the signals of the white matter and ventricles.\n\nElectrophysiology data were preprocessed to remove MR artifacts using a template regression method (Logothetis et al., 2001; Pan et al., 2011). Specifically, raw electrophysiology signal was first temporally aligned with the corresponding rsfMRI scan. The potential phase differences across 16 electrophysiology channels were corrected by calculating cross-correlations of electrophysiology time series between channels, and the corrected signals from all 16 channels were summed. This summed signal was then segmented for each individual rsfMRI slice acquisition. Subsequently, an MRI interference template for each fMRI slice was estimated by averaging raw electrophysiology data across all segments corresponding the same slice acquisition from all rsfMRI volumes. The template was then aligned to each slice acquisition using cross-correlation. The final templates of all slices were linearly regressed out from the raw electrophysiology data to remove MR-induced artifacts, followed by a series of notch filters for harmonics of the power supply (60 Hz and multiples of 60 Hz) and slice acquisition (20 Hz and multiples of 20 Hz). Lastly, the continuous LFP was bandpass filtered (0.1\u2013300 Hz). Figure 1\u2014figure supplement 2 shows an example of raw electrophysiology signals before denoising of MRI artifacts (Figure 1\u2014figure supplement 2A), an example of the MRI artifact template (Figure 1\u2014figure supplement 2B), as well as the LFP signal after MRI artifact denoising (Figure 1\u2014figure supplement 2C).\n\nThe LFP spectrogram was computed using the MATLAB function spectrogram with window size = 1 s, step size = 0.1 s, as shown in Figure 1E.\n\n### Data analysis\n\nTo determine the relationship between slow variations of respiration and the rsfMRI signal, Pearson correlation was voxel-wise calculated between the rsfMRI signal and RVT, which was calculated by the difference between consecutive peaks of inspiration and expiration divided by the time interval between the two peaks (Birn et al., 2006). One-sample t-test was performed to determine the statistical significance of correlations, thresholded at p < 0.05 after FDR correction of multiple comparisons.\n\nTo determine the artifactual impact of slow respiration variations on the rsfMRI signal, we convolved the RVT with the RRF, and then voxel-wise correlated it to the rsfMRI signal. The RRF is defined below:\n\n$$\nRFF(t)=0.6t^{2.1}e^{t/1.6}\u22120.0023t^{3.54}e^{t/4.25}\n$$\n\nThe fast cyclic respiratory effects on the rsfMRI signal were quantified using the method RETROICOR (Glover et al., 2000). Sinusoids were constructed based on TR relative to the phase of the respiratory cycles. For each brain voxel, the predicted fast respiration regressor was estimated by the linear combination of sinusoids that best fits to the voxel time series.\n\nThe phase-locking relationship between the respiratory rhythm and the LFP oscillations was determined by calculating the magnitude squared coherence between the two signals. We also assessed the relationship between the frequency band-specific power of the LFP signal and slow variations of respiration. LFP band power was obtained using the MATLAB function spectrogram with window size = 1 s, step size = 0.1 s based on the conventional LFP band definition from previous studies (delta: 1\u20134 Hz, theta: 4\u20137 Hz, alpha: 7\u201313 Hz, beta: 13\u201330 Hz, gamma: 40\u2013100 Hz) (Lu et al., 2016; Magri et al., 2012). The magnitude squared coherence and the phase relationship between the power of each LFP band and RVT were calculated using the MATLAB function mscohere.\n\nTo determine the relationship between the gamma-band power and rsfMRI signal, the time course of gamma power was first convolved with the hemodynamic response function (HRF, a single gamma probability distribution function [a = 3, b = 0.8]; Liang et al., 2017), and voxel-wise Pearson correlations between the HRF-convolved gamma power and rsfMRI signals in the brain were computed.\n\nThe ACC seedmap was obtained by voxel-wise calculating the Pearson correlations between the regionally averaged rsfMRI time course of the unilateral right-side ACC with the rsfMRI signals across the whole brain. To perform the region of interest (ROI)-based analysis, the whole brain was parcellated into 132 anatomical ROIs based on the Swanson, 2004 Atlas. The whole-brain RSFC matrix was computed by Pearson correlations of regionally averaged rsfMRI time courses between pairwise ROIs.\n",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "2a186f38-f7d5-466d-9d54-0314ad538062",
+      "submission_id": "ec4c75ab-7128-4a4c-a28a-f381c6eb5275",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karla L Miller, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81555.sa0](https://doi.org/10.7554/eLife.81555.sa0)\n\nThis paper will be of interest to researchers studying control of respiration and also those developing functional magnetic resonance imaging methodology. The work provides insight into the relationship between brain activity (measured directly) and non-invasive functional magnetic resonance imaging measures. The authors find that the respiration signal is associated with the \u03b3 band in the cingulate cortex, and both the \u03b3 signal and respiration signal correlate with distributed neuronal networks across the brain. This contributes to our knowledge of the contribution of respiration on neuro and neuro-vascular signals during resting conditions.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Karla L Miller, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81555.sa1](https://doi.org/10.7554/eLife.81555.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Respiration-driven brain network: neural underpinning of breathing correlates with resting-state fMRI signal\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Joanes Grandjean (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Tempering of language purporting to establish a causal relationship between respiration and the observed \u03b3 oscillations.\n\n2) Comment on the relatively small number of rodents used in the study. [In consultation between the reviewers, it has been pointed out that the reported effects are based on statistical tests driven by the number of timepoints, rather than the number of individual rodents.]\n\n3) Discussion of the potential effects of anaesthesia on the study conclusions.\n\n4) Placing results in the context of related human studies.\n\n5) Analysis of RVT estimates (variance) in the isoelectric state.\n\nReviewer #1 (Recommendations for the authors):\n\nAs indicated in the public review, I don't find anything that is lacking in the study. I find it compelling, and I do not wish to burden the authors with additional work that may only remotely nuance their excellent work.\n\nIf anything, I am not sure the statement below (and other similar later in the discussion) are sufficiently substantiated. \u0393 oscillations are correlated with respiration in this study. Other tests to further establish causality would be required, such as comparing spontaneous vs mechanical respiration. Personally, I can think of other mechanisms to explain the results, such as predictive encoding of respiration-associated outputs in the cingulate area.\n\n\"These results suggest that respiration can drive \u03b3 oscillations, which further lead to BOLD signal changes in the respiration network\"\n\nReviewer #2 (Recommendations for the authors):\n\n1) The sample size is small -- the study hasn't been pre-registered nor has a formal sample size calculation been provided. This does mean that a number of analyses could have been tried before coming out with this result. With calls for ever increasing numbers of participants in human studies, a sample size of 7 seems difficult to justify.\n\n2) Stronger justification for the use of the ACC as electrode location is essential. The Liotti paper gave CO2 inhalation to healthy humans and reported which areas of the brain showed increased cerebral blood flow, but interpreted the findings in the context of breathlessness. There is a lot more recent work from a range of laboratories done in a much more controlled manner that would justify better the use of the ACC as a component of the respiratory network. There are other areas consistently identified in respiration (e.g. anterior insula, prefrontal cortex etc) that could have been chosen so it's important here not to make the conclusions too ACC specific (in the most part the authors have done this)\n\n3) The effects of anaesthesia are, in my view, a major potential confound. In addition to direct effects on BOLD responsiveness, isoflurane, pentobarbital and (particularly) buprenorphine will depress respiration, raising arterial CO2 and dampening BOLD responsiveness. Ketamine may stimulate respiration doing the opposite. Interaction effects between the different drugs are highly likely and difficult to predict how they would affect BOLD responses.\n\n4) Why was RVT used as the measure of minute ventilation when it would have been possible to take direct measures of breathing via the endotracheal tube? This would be considerably more accurate.\n\n5) Novelty \u2013 with such a small sample size it's difficult to know what is truly new. For example Alexander Green's group in Oxford report EEG changes (in \u03b1 band) in patients with deep brain stimulator electrodes during various respiratory manoeuvres. Of course those studies are also limited by small sample size and diseased patients so comparison is difficult.\n\nReviewer #3 (Recommendations for the authors):\n\n1) As mentioned in the public review, the statistics of RVT in the isoelectric condition are not reported (unless I have missed it), so it is not clear whether the corresponding decrease in correlation with fMRI could be due to reduced temporal variation in RVT. I would therefore recommend reporting the magnitude of respiratory volume and rate variation and the RVT power spectrum, comparing both the light anesthesia and isoelectric states, in order to determine if this is the case. If RVT is indeed found to be less variable in this condition, it would strengthen the study if the authors are able to perform additional experiments that induce variations in breathing (if that is a possibility).\n\n2) Relatedly, further support could be provided if the authors observe that the isoelectric state selectively disrupts the potential neuronal component (instantaneous fMRI correlation with RVT), but preserves the non-neural CO2 effect on BOLD (assessed by convolving RVT with the respiration response function).\n\n3) To my understanding, RVT was correlated with fMRI at zero time-lag. However, when \u03b3 power was correlated with fMRI, it was first convolved with a standard hemodynamic response function. It was not clear to me why RVT was also not convolved with a hemodynamic response function to assess potential neural correlations with fMRI, especially given that it has highest coherence with the \u03b3 power signal at zero phase lag.\n\n4) It is shown that the fMRI spatial maps that correlate with ACC \u03b3 power resemble the maps of the seed-based correlation from the ACC fMRI signal. For completeness, it would be useful to also report the temporal correlation between the fMRI and \u03b3 power signals measured in the ACC.\n\n5) It is mentioned on p.2, line 85, that anesthesia was used to ensure that results are not confounded by motion. Though animals were only lightly sedated, it would be helpful to explain in the discussion whether this level of anesthesia might also impact fMRI and/or electrophysiological signals, to help readers better interpret the findings.\n\n6) One analysis supporting the possible neural origin of RVT correlation in fMRI data is that regressing out neural (\u03b3-band LFP) signals reduced the correlation between RVT and fMRI. This is indeed promising, though I suppose that if there are any non-neural hemodynamic effects of respiration on brain vasculature closer to zero lag (and which therefore also correlate with \u03b3 LFP), these would also be reduced when regressing out \u03b3 LFP. It would be helpful to include a discussion of whether any non-neural hemodynamic effects in fMRI could occur at zero lag.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Neural underpinning of a respiration-associated resting-state fMRI network\" for further consideration by eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below:\n\nIn the Response to Reviewers, the authors present arguments that their anaesthesia protocol has minimal disruption on neurovascular coupling. Unfortunately, though, this does not come through in the discussion added to the paper itself, which focuses on respiration-LFP coupling. Given that the effects of anaesthesia on neurovascular coupling were very specifically raised by Reviewers 2 and 3 (and will be shared by many readers), please add a brief discussion along the lines of the response to Reviewer 2 Comment 3.\n",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3dd5072-9a66-499a-92bf-dcdb9f98fdc8",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C1",
+      "claim": "Respiration can induce motion and CO2 fluctuation during resting-state fMRI (rsfMRI) scans, which will lead to non-neural artifacts in the rsfMRI signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration can induce motion and CO2 fluctuation during resting-state fMRI (rsfMRI) scans, which will lead to non-neural artifacts in the rsfMRI signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of fMRI research, supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8943b8b6-f096-4c39-b1ac-16239665235c",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C2",
+      "claim": "Respiration can directly drive neural activity change in the brain, and may thereby modulate the rsfMRI signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, as a crucial physiologic process, respiration can directly drive neural activity change in the brain, and may thereby modulate the rsfMRI signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the abstract, supported by citations in the introduction.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "70297054-0d34-4d48-bcda-32342e52f24f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C3",
+      "claim": "Respiration is associated with neural activity changes, evidenced by a phase-locking relationship between slow respiration variations and the gamma-band power of the electrophysiological signal recorded in the anterior cingulate cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that respiration is indeed associated with neural activity changes, evidenced by a phase-locking relationship between slow respiration variations and the gamma-band power of the electrophysiological signal recorded in the anterior cingulate cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing coherence between RVT and gamma-band power with zero phase lag (Figure 2D, E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "21d0ace0-39e7-4488-aa14-330ce564b71d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C4",
+      "claim": "Slow respiration variations are linked to a characteristic rsfMRI network, which is mediated by gamma-band neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, slow respiration variations are also linked to a characteristic rsfMRI network, which is mediated by gamma-band neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that regressing out gamma power diminishes the respiration-related network (Figure 4D, E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f7af93a4-4347-460d-aaae-9ea143e31c1d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C5",
+      "claim": "The respiration-related brain network disappears when brain-wide neural activity is silenced at an isoelectrical state, while the respiration is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this respiration-related brain network disappears when brain-wide neural activity is silenced at an isoelectrical state, while the respiration is maintained, further confirming the necessary role of neural activity in this network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing absence of the respiration-related network in the isoelectric state (Figure 5J).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "e761ec8c-e410-4cd8-86ae-3edfe0e245fd",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C6",
+      "claim": "Resting-state fMRI (rsfMRI) measures spontaneous blood-oxygen-level-dependent (BOLD) signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Resting-state fMRI (rsfMRI), which measures spontaneous blood-oxygen-level-dependent (BOLD) signal, is a powerful tool for non-invasively investigating brain-wide functional connectivity (Biswal et al., 1995; Fox and Raichle, 2007; Smith et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "9c512d05-9e2b-4e59-be04-754205eb0599",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C7",
+      "claim": "The rsfMRI signal is susceptible to systemic physiological changes such as respiration and cardiac pulsations.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its hemodynamic nature, the rsfMRI signal is susceptible to systemic physiological changes such as respiration and cardiac pulsations (Murphy et al., 2013; Liu, 2016; Caballero-Gaudes and Reynolds, 2017; Chen et al., 2020), and these effects are usually treated as non-neuronal artifacts in rsfMRI data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "e337c08a-1615-4737-8e11-f9a435f09cef",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C8",
+      "claim": "Respiration is a major physiological process that drives fluctuations in cerebral blood flow and oxygenation.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration is a major physiological process that drives fluctuations in cerebral blood flow and oxygenation (Liu, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "b5d4132c-a103-44d0-8d2f-b69b33d091e1",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C9",
+      "claim": "Respiration can affect the BOLD signal with two types of effects resulting from slow respiration variations and fast cyclic changes, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration can affect the BOLD signal (Thomason et al., 2005; Abbott et al., 2005; Birn et al., 2006) with two types of effects resulting from slow respiration variations and fast cyclic changes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "28f23dad-b44e-4e39-89bd-8f313cd92f66",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C10",
+      "claim": "Slowly varying changes (typically below 0.15 Hz) in breathing rate and depth can be quantified as respiration volume per time (RVT).",
+      "claim_type": "EXPLICIT",
+      "source": "Slowly varying changes (typically below 0.15 Hz) in breathing rate and depth, which can be quantified as respiration volume per time (RVT) (Birn et al., 2006), covary with arterial CO2 (Wise et al., 2004; Chang and Glover, 2009; Hoiland et al., 2016; Liu et al., 2017) and affect the BOLD signal via vasodilatory effects and/or autonomic influences of the vessel tone (Duyn et al., 2020; Picchioni et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "620fea09-c883-40e2-b184-3982c0bafb3c",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C11",
+      "claim": "Slow respiration variations covary with arterial CO2 and affect the BOLD signal via vasodilatory effects and/or autonomic influences of the vessel tone.",
+      "claim_type": "EXPLICIT",
+      "source": "Slowly varying changes (typically below 0.15 Hz) in breathing rate and depth, which can be quantified as respiration volume per time (RVT) (Birn et al., 2006), covary with arterial CO2 (Wise et al., 2004; Chang and Glover, 2009; Hoiland et al., 2016; Liu et al., 2017) and affect the BOLD signal via vasodilatory effects and/or autonomic influences of the vessel tone (Duyn et al., 2020; Picchioni et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "1d7d536a-4e83-4e38-a6e8-2637dd38e373",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C12",
+      "claim": "Faster respiratory cycles, accompanied by chest and neck movement, can induce changes in the static magnetic field, which in turn lead to BOLD signal changes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, faster respiratory cycles (i.e., periodic inspiration and expiration), accompanied by the corresponding chest and neck movement, can induce changes in the static magnetic field, which in turn lead to BOLD signal changes (Glover et al., 2000; Raj et al., 2000; Windischberger et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "799b110c-2893-424d-bdbb-52ca8715a05d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C13",
+      "claim": "Both slow and fast respiration effects can be effectively mitigated/removed by standard rsfMRI preprocessing methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Both effects can be effectively mitigated/removed by standard rsfMRI preprocessing methods (Birn et al., 2006; Glover et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "cf3bebd3-cd3b-4d56-81dd-9bdbe54bf68e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C14",
+      "claim": "Respiration can directly drive brain-wide neuronal oscillations not only in the olfactory bulb and piriform cortex but also in the medial prefrontal cortex, somatosensory cortex, and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "First, respiration can directly drive brain-wide neuronal oscillations (Tort et al., 2018a; Kay et al., 2009) not only in the olfactory bulb (Adrian, 1942) and piriform cortex (Fontanini et al., 2003)\u2014brain regions directly related to breathing\u2014but also in the medial prefrontal cortex (mPFC), somatosensory cortex, and hippocampus, and this effect has been consistently found across species (Ito et al., 2014; Yanovsky et al., 2014; Biskamp et al., 2017; Zelano et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "12c0b9ab-00e3-4efa-9df0-309a7e8cd8ab",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C15",
+      "claim": "Respiration changes can be associated with arousal and/or emotion-related brain state changes, which covary with cortical activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, respiration changes can be associated with arousal and/or emotion-related brain state changes, which covary with cortical activity (Yackle et al., 2017; Shea, 1996; Homma and Masaoka, 2008; Folschweiller and Sauer, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "85bc9e5b-743f-4cbb-b08b-51d8c5cb8198",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C16",
+      "claim": "Prominent coherence between the respiration signal and LFP is observed with the dominant peak at ~1.1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Prominent coherence between the respiration signal and LFP is observed with the dominant peak at ~1.1 Hz (Figure 2B, C), in line with the respiration frequency in animals (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "3f918fcf-de1d-435a-8e2f-733f68be2a90",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C17",
+      "claim": "The coherence between respiration signal and LFP at ~1.1 Hz is consistent with the finding of respiration-entrained LFP oscillations previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the finding of respiration-entrained LFP oscillations previously reported (Tort et al., 2018a; Kay et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "4d82f1a2-df1a-4666-b96c-a1361425b22e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C18",
+      "claim": "Gamma-band power displays significant coherence with the RVT at ~0.035 Hz with a zero phase lag.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma-band power displays significant coherence with the RVT at ~0.035 Hz with a zero phase lag (Figure 2D, E, phase [mean \u00b1 ste] = \u22120.08 \u00b1 0.5 pi, with the range of [\u2212pi, pi]), suggesting a phase-locking relationship between the two measures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d97e0554-bc7a-4cd7-8773-5b7550ef028f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C19",
+      "claim": "There is a phase-locking relationship between gamma-band power and RVT.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma-band power displays significant coherence with the RVT at ~0.035 Hz with a zero phase lag (Figure 2D, E, phase [mean \u00b1 ste] = \u22120.08 \u00b1 0.5 pi, with the range of [\u2212pi, pi]), suggesting a phase-locking relationship between the two measures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the zero phase lag observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8d06b32d-dd9c-45ae-8621-b6645c38d8ec",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C20",
+      "claim": "No coherence is observed between RVT and delta-band, theta-band, alpha-band, or beta-band power.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this coherence is not observed in any other frequency bands (Figure 2F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f1504e19-5b30-445d-a4f8-2ae1d61654db",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C21",
+      "claim": "The gamma power-derived rsfMRI correlation map is highly consistent with the ACC resting-state functional connectivity (RSFC) seedmap.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the gamma power-derived rsfMRI correlation map (Figure 3C) is highly consistent with the ACC resting-state functional connectivity (RSFC) seedmap with the right ACC (i.e., the electrode implanted side) defined as the seed (Figure 3D), evidenced by a strong voxel-to-voxel spatial correlation between these two maps (Figure 3E, R = 0.775, p < 10\u221215).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing strong spatial correlation (R = 0.775, p < 10\u221215) between the two maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "170dac6d-32d1-450a-98ce-28665dce1daf",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C22",
+      "claim": "The gamma-band LFP is tightly linked to the rsfMRI signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the gamma-band LFP is tightly linked to the rsfMRI signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high spatial correlation between gamma power-derived correlation map and ACC RSFC seedmap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f7b8ade9-9ae8-4807-92c4-3d5bd3db2c0d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C23",
+      "claim": "Slow respiration variations exhibit a characteristic correlation pattern with brain-wide rsfMRI signals, representing a respiration-related rsfMRI network.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, slow respiration variations exhibit a characteristic correlation pattern with brain-wide rsfMRI signals, representing a respiration-related rsfMRI network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing voxel-wise correlations between RVT and rsfMRI signals (Figure 4B, C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "1b50777e-018d-440b-b7c3-6674f61b3644",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C24",
+      "claim": "The respiration-related rsfMRI network involves key brain regions controlling respiration such as the piriform cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis generates a respiration-related rsfMRI network (Figure 4B), involving key brain regions controlling respiration such as the piriform cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "2468edf2-e0c5-4c4d-8c5a-0bbc795894c2",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C25",
+      "claim": "The respiration-related network includes regions involved in the rodent DMN such as the ACC, mPFC, orbital, retrosplenial, and primary somatosensory cortices, as well as the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this network includes regions involved in the rodent DMN such as the ACC, mPFC, orbital, retrosplenial, and primary somatosensory cortices, as well as the hippocampus (Lu et al., 2012; Figure 4C, one-sample t-test, p < 0.05, false discovery rate [FDR] corrected).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C with statistical significance (p < 0.05, FDR corrected).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d68f9d5c-c041-4f5d-b4bf-1827d2cf3edd",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C26",
+      "claim": "The resemblance of the respiration-related network and DMN agrees with the human literature that the physiological effects on rsfMRI data are colocalized with the DMN.",
+      "claim_type": "EXPLICIT",
+      "source": "The resemblance of this respiration-related network and DMN well agrees with the human literature that the physiological effects on rsfMRI data are colocalized with the DMN (Birn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8a39fd8a-5aab-4261-a0cf-9a6ec99cead6",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C27",
+      "claim": "Regressing out gamma power from RVT and rsfMRI signals diminishes the respiration-related network.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the respiration-related network is diminished (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "38be29d1-2db9-4d2a-8e6b-674bebe9297a",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C28",
+      "claim": "All brain regions involved in the respiration-related network exhibit reduced RVT\u2013rsfMRI correlation after the gamma power is regressed out.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is confirmed by the contrast of the correlation maps before (Figure 4B) and after (Figure 4D) gamma power regression, with essentially all brain regions involved in the respiration-related network exhibiting reduced RVT\u2013rsfMRI correlation after the gamma power is regressed out (Figure 4E, paired t-test, p < 0.05, FDR corrected).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E with statistical significance (p < 0.05, FDR corrected).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "431edb6b-ec9c-44b1-9ef1-097c77be2ded",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C29",
+      "claim": "The respiration-related rsfMRI network is mediated by gamma-band neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the respiration-related rsfMRI network is mediated by gamma-band neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that regressing out gamma power diminishes the respiration-related network.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "744da5ed-499e-49f8-854c-7d0c9a287bb3",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C30",
+      "claim": "At the isoelectric state, the LFP amplitude and power are close to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "At the isoelectric state, the LFP amplitude and power are close to zero, in remarkable contrast to the electrophysiology data recorded before the drug infusion (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "94d7c314-b775-4e3e-bccb-8c973f412fc2",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C31",
+      "claim": "rsfMRI data recorded at the isoelectric state exhibit a flat, noise-like power distribution, unlike the characteristic 1/f pattern during light sedation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, rsfMRI data recorded at the isoelectric state exhibit a flat, noise-like power distribution, unlike the characteristic 1/f pattern during light sedation (Figure 5I; Zhang et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "1ba389c6-c83d-4b52-b54a-4bd4321e539a",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C32",
+      "claim": "There is no meaningful ACC RSFC in the ACC seedmap at the isoelectric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is no meaningful ACC RSFC in the ACC seedmap at the isoelectric state (Figure 5H), which is distinct from the ACC seedmap during light sedation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "76c3fa39-f559-4e51-833f-41afaff31472",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C33",
+      "claim": "The brain-wide ROI-based RSFC matrix reveals a global suppression of RSFC at the isoelectric state compared to light sedation.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain-wide ROI-based RSFC matrix also reveals a global suppression of RSFC at the isoelectric state (Figure 5K), compared to the RSFC matrix observed during light sedation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c829abde-ed21-48c4-b4d8-79a23ac02029",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C34",
+      "claim": "Brain-wide neural activity is silenced in the isoelectric state.",
+      "claim_type": "EXPLICIT",
+      "source": "These data collectively confirm that brain-wide neural activity is silenced in the isoelectric state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple observations including near-zero LFP, flat BOLD power spectrum, and suppressed RSFC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ad509282-70ea-44ac-bd8f-d3b8948c0868",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C35",
+      "claim": "There is no significant difference in the standard deviation of the respiration rate between the light sedation and isoelectric states.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant difference in the SD of the respiration rate (Figure 5E, two-sample t-test, t = \u22121.0, p = 0.32) or the SD of RVT (Figure 5F, two-sample t-test, t = \u22120.87, p = 0.39) between the light sedation and isoelectric states, suggesting that the temporal variance of respiration is similar between the two states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical testing (t = \u22121.0, p = 0.32).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "796afc00-6b80-4d3a-aea3-e230189d2e2a",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C36",
+      "claim": "There is no significant difference in the standard deviation of RVT between the light sedation and isoelectric states.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant difference in the SD of the respiration rate (Figure 5E, two-sample t-test, t = \u22121.0, p = 0.32) or the SD of RVT (Figure 5F, two-sample t-test, t = \u22120.87, p = 0.39) between the light sedation and isoelectric states, suggesting that the temporal variance of respiration is similar between the two states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical testing (t = \u22120.87, p = 0.39).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "a9947f70-191c-42b5-b759-372482cb7d4d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C37",
+      "claim": "The temporal variance of respiration is similar between the light sedation and isoelectric states.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant difference in the SD of the respiration rate (Figure 5E, two-sample t-test, t = \u22121.0, p = 0.32) or the SD of RVT (Figure 5F, two-sample t-test, t = \u22120.87, p = 0.39) between the light sedation and isoelectric states, suggesting that the temporal variance of respiration is similar between the two states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of significant difference in SD of respiration rate and RVT.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "30a4627f-2620-4203-8758-3709f38a338e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C38",
+      "claim": "A characteristic 1/f pattern is observed in the RVT power during light sedation, but this pattern is not present at the isoelectric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a characteristic 1/f pattern in the RVT power during light sedation, but this pattern was not present at the isoelectric state (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ae323352-d08e-4d9f-8a51-07069faeb173",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C39",
+      "claim": "The respiration-related network observed during light sedation is absent when brain-wide neural activity is silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "The respiration-related network observed during light sedation is absent when brain-wide neural activity is silenced (Figure 5J), despite similar breathing patterns (Figure 5C\u2013F) at both conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "b2c80adb-3364-4466-8795-1ab55a510d34",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C40",
+      "claim": "Neural activity plays a necessary role in the respiration-related rsfMRI network.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the neural activity plays a necessary role in the respiration-related rsfMRI network, corroborating the notion that the respiration-related rsfMR network we observed is mediated by neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of the respiration-related network when neural activity is silenced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "fdfcd41c-c2d9-4320-92d2-0f524817ef46",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C41",
+      "claim": "No appreciable correlations are observed between RETROICOR and the rsfMRI signals across the brain in either the light sedation or isoelectric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the respiration-related neural network described above, we did not observe any appreciable correlations between RETROICOR and the rsfMRI signals across the brain in either the light sedation or isoelectric state (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "1f075250-65bb-4939-8d01-42800005dd6f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C42",
+      "claim": "The slow respiration-related rsfMRI artifact is distinct from the respiration-related neural network.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the slow respiration-related rsfMRI artifact is distinct from the respiration-related neural network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from differences in spatial patterns and response to preprocessing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c0905ec2-3717-45be-b1a4-28cc07cc513c",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C43",
+      "claim": "The slow respiration-related rsfMRI artifact is dominantly located around the ventricles and large veins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the slow respiration-related rsfMRI artifact is dominantly located around the ventricles and large veins (Figure 4\u2014figure supplement 3B), whereas the respiration-related neural network is mostly located at the gray matter with a distinct spatial pattern (Figure 4B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8c3e4872-8d23-43f8-aa42-a366386f77b7",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C44",
+      "claim": "The respiration-related neural network is mostly located at the gray matter with a distinct spatial pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the slow respiration-related rsfMRI artifact is dominantly located around the ventricles and large veins (Figure 4\u2014figure supplement 3B), whereas the respiration-related neural network is mostly located at the gray matter with a distinct spatial pattern (Figure 4B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f14676bd-721d-4603-aaf8-8ea2b9e4f65b",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C45",
+      "claim": "The slow respiration-related rsfMRI artifact can be reduced by regressing out the signals in the white matter and ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the slow respiration-related rsfMRI artifact can be reduced by regressing out the signals in the white matter and ventricles (Figure 4\u2014figure supplement 3C), but the respiration-induced neural network persists after the regression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "cddf58dc-9c43-41e3-930c-2d1765e21ae4",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C46",
+      "claim": "The respiration-induced neural network persists after regressing out the signals in the white matter and ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the slow respiration-related rsfMRI artifact can be reduced by regressing out the signals in the white matter and ventricles (Figure 4\u2014figure supplement 3C), but the respiration-induced neural network persists after the regression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "a5867c99-aa2a-4557-b3e4-b08132339439",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C47",
+      "claim": "The respiration-related neural network is not a non-neural physiological artifact but originates from neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the respiration-related neural network we observed is not a non-neural physiological artifact but originates from neural activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the distinct spatial patterns and differential responses to preprocessing between the neural network and artifacts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c0c40c8d-07c4-4bf2-bf3c-7a76315dd1b5",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C48",
+      "claim": "The respiration network is very likely linked to respiration-entrained brain-wide neural oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "The respiration network is very likely linked to respiration-entrained brain-wide neural oscillations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from consistency with previous literature on respiration-entrained neural oscillations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ea461c5e-5b8a-4fa5-a888-7c6d7ebf5270",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C49",
+      "claim": "Respiration-induced neuronal oscillations have been consistently observed across multiple species including rats, mice, and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration-induced neuronal oscillations have been consistently observed across multiple species including rats, mice, and humans (Yanovsky et al., 2014; Zelano et al., 2016; Lockmann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "085a109b-515c-49fe-a5f8-ac44094cb04c",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C50",
+      "claim": "Respiration-induced neuronal oscillations are robust in various physiological and behavioral states including freely moving awake and immobile awake conditions, as well as anesthetized states.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon also seems to be robust in various physiological and behavioral states including freely moving awake and immobile awake conditions, as well as anesthetized states (Fontanini et al., 2003; Ito et al., 2014; Zhong et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "e2d6afa8-f454-4894-ba77-9a0d6429a8fd",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C51",
+      "claim": "Previous studies found that respiration specifically modulated the amplitude of gamma activity in the mPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, previous studies found that respiration specifically modulated the amplitude of gamma activity in the mPFC (Zhong et al., 2017; Rojas-L\u00edbano and Kay, 2008; Fontanini and Bower, 2005), consistent with our finding of band-specific coherence between the gamma power in the ACC and RVT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations, consistent with the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "324d9df4-026b-4965-8b2d-44e3cdb74ec9",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C52",
+      "claim": "Gamma power is generally believed to relate to the BOLD signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, gamma power is generally believed to relate to the BOLD signal (Logothetis et al., 2001; Winder et al., 2017), which is also demonstrated in our study (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and confirmed by data in the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "3c9be17b-4db1-4442-8e26-d7eb0685c40e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C53",
+      "claim": "Respiration-generated neuronal oscillations are phase locked to the breath rhythm across distributed brain regions including the olfactory bulb, primary piriform cortex, hippocampus, and somatosensory barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the mPFC, previous work has shown that respiration-generated neuronal oscillations are phase locked to the breath rhythm across distributed brain regions including the olfactory bulb, primary piriform cortex, hippocampus, and somatosensory barrel cortex (Fontanini et al., 2003; Ito et al., 2014; Yanovsky et al., 2014; Biskamp et al., 2017; Herrero et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "025a0506-953c-4975-8b4c-e6539193a015",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C54",
+      "claim": "The brain regions showing respiration-generated neuronal oscillations are highly consistent with brain regions in the respiration network observed in the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "Those regions are highly consistent with brain regions in the respiration network we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison between the current study's findings and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c7a899c6-b658-4806-8cf3-4a51ce100cce",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C55",
+      "claim": "The piriform cortex is anatomically connected to the mPFC, ACC, and orbital cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the piriform cortex is anatomically connected to the mPFC, ACC, and orbital cortex, all of which are parts of the respiration network in our study (Schmahmann, 2009; Illig, 2005; Garc\u00eda-Cabezas and Barbas, 2014; Carmichael et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "b975fdeb-afbb-45d6-b3d1-57dd1de8972b",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C56",
+      "claim": "The spatial pattern of the respiration network agrees with brain regions exhibiting neural oscillation changes driven by respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the spatial pattern of the respiration network reported here well agrees with brain regions exhibiting neural oscillation changes driven by respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with previous literature on respiration-driven neural oscillations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ee294b34-5490-4db7-97d7-8d66c345878d",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C57",
+      "claim": "Respiration-induced neuronal oscillations do not result from the movement of the muscle or electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work also demonstrates that respiration-induced neuronal oscillations do not result from the movement of the muscle or electrode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "32a4f186-be9f-46fb-bba2-d819aa762444",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C58",
+      "claim": "The oscillations are different in the laminar amplitude along the hippocampus, with the maximal amplitude in the dentate gyrus (DG).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the oscillations are different in the laminar amplitude along the hippocampus, with the maximal amplitude in the dentate gyrus (DG) (Yanovsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "036e57be-9283-412d-a00f-6ac1737c39c9",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C59",
+      "claim": "The finding of maximal oscillation amplitude in the DG agrees with the current study's data showing more prominent involvement of the DG than other parts of the hippocampus in the respiration network.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding well agrees with our data, displaying more prominent involvement of the DG than other parts of the hippocampus in the respiration network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison between the current study's findings and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d074fa04-0c9a-404e-a934-beaa2fdb3032",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C60",
+      "claim": "Only the gamma-band power, not other LFP bands, is coherent with slow variations of respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our data show that only the gamma-band power, not other LFP bands, is coherent with slow variations of respiration, whereas the movement of electrode or muscle would lead to increased coherence across multiple frequency bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "4527190a-f234-4a41-a2f5-5740314494fa",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C61",
+      "claim": "Movement of electrode or muscle would lead to increased coherence across multiple frequency bands.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our data show that only the gamma-band power, not other LFP bands, is coherent with slow variations of respiration, whereas the movement of electrode or muscle would lead to increased coherence across multiple frequency bands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about artifacts from electrode or muscle movement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "eb0aa5c6-efc5-4924-aa3e-ce74e311cca0",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C62",
+      "claim": "Regressing out the respirational signal does not abolish the RSFC measured by rsfMRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, regressing out the respirational signal does not abolish the RSFC measured by rsfMRI data, suggesting that the respiration does not account for all the effects of the RSFC measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RSFC patterns remain after RVT regression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "7e1520ef-9c92-4266-b2f1-fecfbcee453f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C63",
+      "claim": "RVT regression reduced ACC RSFC particularly in brain regions involved in the respiration network, but the major RSFC pattern remains consistent.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RVT regression reduced ACC RSFC particularly in brain regions involved in the respiration network as expected, the major RSFC pattern remains consistent, indicating that a dominant component of RSFC is not ascribed by the respiration effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "bd953627-e62c-4612-9cac-10b5ce9733ff",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C64",
+      "claim": "A dominant component of RSFC is not ascribed by the respiration effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RVT regression reduced ACC RSFC particularly in brain regions involved in the respiration network as expected, the major RSFC pattern remains consistent, indicating that a dominant component of RSFC is not ascribed by the respiration effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the persistence of major RSFC patterns after RVT regression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "e74300a2-565b-4113-b888-f30103705ca2",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C65",
+      "claim": "The neural contribution to the respiration-related brain network may be mediated by arousal changes, which is associated with both neural excitability and respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the neural contribution to the respiration-related brain network is mediated by arousal changes, which is associated with both neural excitability and respiration (Yackle et al., 2017; Shea, 1996; Fan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "26136abc-81d4-46ed-ac14-86379d9839b1",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C66",
+      "claim": "The cerebral blood flow can be regulated by the innervation from the basal forebrain and locus coeruleus, and both regions are directly related to arousal changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebral blood flow can be regulated by the innervation from the basal forebrain and locus coeruleus, and both regions are directly related to arousal changes (Yackle et al., 2017; Lecrux and Hamel, 2016; Melnychuk et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8bb7692b-e1ce-42e3-85b7-c6674b19bd31",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C67",
+      "claim": "Previous studies in humans demonstrated correlations among the fMRI signal, low-frequency fluctuations of respiration, and EEG alpha power.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in humans demonstrated correlations among the fMRI signal, low-frequency fluctuations of respiration, and EEG alpha power (Yuan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "b065fe5f-fe9d-4b01-9f7d-54a54efcd628",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C68",
+      "claim": "The fMRI\u2013respiration correlate was stronger at the eye-closing resting state with a greater arousal-level change than the eye-open state.",
+      "claim_type": "EXPLICIT",
+      "source": "The fMRI\u2013respiration correlate was stronger at the eye-closing resting state with a greater arousal-level change than the eye-open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d14e9c04-6c63-43a9-9b50-54f200e03807",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C69",
+      "claim": "The arousal level does not play a dominant role in the current study's results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not believe the arousal level plays a dominant role in our results, given that our study was performed in anesthetized animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental design using anesthetized animals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d196f2a8-9015-46e3-8b91-d3a07faf346f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C70",
+      "claim": "No coherence was observed between alpha-band power and the slow variations of respiration in the current study.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we did not observe any coherence between alpha-band power and the slow variations of respiration, suggesting the respiration-related fMRI network we observed might be attributed to a different mechanism than arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d7164325-b5b4-4f82-b5ce-680a07dd6ab7",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C71",
+      "claim": "The respiration-related fMRI network observed in the current study might be attributed to a different mechanism than arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we did not observe any coherence between alpha-band power and the slow variations of respiration, suggesting the respiration-related fMRI network we observed might be attributed to a different mechanism than arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of coherence between alpha-band power and respiration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "01e23e70-313c-4c5a-8f63-7bec7388d9ae",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C72",
+      "claim": "The findings in the present study echo the results reported in human studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings in the present study to a large extent echo the results reported in human studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with human literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "1cd99bb5-b3e5-4bca-840e-4e6fc306b2e9",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C73",
+      "claim": "Previous research demonstrated bidirectional interplay between respiration and neural activity in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research demonstrated bidirectional interplay between respiration and neural activity in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c559987e-b0e7-4667-bf37-50f47956d667",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C74",
+      "claim": "Neural activity in brainstem regions such as the preB\u00f6tzinger complex directly controls the respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural activity in brainstem regions such as the preB\u00f6tzinger complex directly controls the respiration (Baertsch et al., 2021; Smith et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "7dd5bd60-cbbb-453e-8478-406a772c7123",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C75",
+      "claim": "Respiration-induced LFP oscillations were observed in multiple human brain regions such as the piriform cortex and hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, respiration-induced LFP oscillations were observed in multiple human brain regions such as the piriform cortex and hippocampus (Zelano et al., 2016; Herrero et al., 2018), consistent with our data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations, consistent with the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "96f736de-1a54-4b9d-9c7f-cc72a9b9d1c9",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C76",
+      "claim": "Voluntary hyperpnea was related to the neural activity of various brain regions including the primary sensory and motor cortices, supplementary motor area, caudate nucleus, and globus pallidum.",
+      "claim_type": "EXPLICIT",
+      "source": "McKay et al. also found that voluntary hyperpnea was related to the neural activity of various brain regions including the primary sensory and motor cortices, supplementary motor area, caudate nucleus, and globus pallidum, which largely agree with the respiration-related brain network we identified in rats (McKay et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation, consistent with the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f2b03b62-1977-4d50-90f7-fd4fb19e58b6",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C77",
+      "claim": "Respiration-mediated neural activity was found to modulate brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, respiration-mediated neural activity was found to modulate brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d7c6e1bb-569a-4842-afa6-c32276f95812",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C78",
+      "claim": "Respiration modulates visual perceptual sensitivity, mediated by alpha power.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, respiration is shown to modulate visual perceptual sensitivity, mediated by alpha power (Kluger et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "bc0982aa-e91f-40e5-98a7-aef542ca89d5",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C79",
+      "claim": "Respiration is a key component in mindfulness meditation, which has been repeatedly shown to have modulatory effects on brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "Respiration is also the key component in mindfulness meditation, which has been repeatedly shown to have modulatory effects on brain function (Doll et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ad0355e4-31c3-4fdb-94d2-a4cb120d270e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C80",
+      "claim": "Stimulation of the pedunculopontine region (PPNr) improved upper airway function in Parkinson's patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Hyam et al. stimulated the pedunculopontine region (PPNr) and observed improvement in upper airway function in Parkinson's patients (Hyam et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "a23afd9f-fc92-4dc8-819e-9447d2835d4f",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C81",
+      "claim": "Loss of neurons in the preB\u00f6tzinger complex causes sleep-disordered breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of neurons in the preB\u00f6tzinger complex was found to cause sleep-disordered breathing (McKay et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f24c5868-dcca-4c62-a260-dfa16f8fe029",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C82",
+      "claim": "The respiration-related brain network might be conserved across species and represent a general phenomenon in the mammalian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, those findings indicate that the respiration-related brain network might be conserved across species and represent a general phenomenon in the mammalian brain, and this brain network might play an important role in normal and diseased brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from consistency of findings across species.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "455d0856-4873-4d97-8015-193e63175dd8",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C83",
+      "claim": "The respiration-related brain network might play an important role in normal and diseased brain function.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, those findings indicate that the respiration-related brain network might be conserved across species and represent a general phenomenon in the mammalian brain, and this brain network might play an important role in normal and diseased brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "18b14dd3-b40d-42a7-9e4b-c10234f0118e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C84",
+      "claim": "Anesthesia might be a potential confounder as it may affect the respiration, as well as respiration-induced neural and vascular activities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has to be recognized that anesthesia might be a potential confounder by itself, as it may affect the respiration, as well as respiration-induced neural and vascular activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "25ffaf3a-c62a-4cd3-8911-312cc1d1c150",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C85",
+      "claim": "Anesthetics can reduce the respiration rate and affect LFP by increasing the low-frequency power and decreasing the high-frequency power.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, anesthetics can reduce the respiration rate and affect LFP by increasing the low-frequency power and decreasing the high-frequency power (Purdon et al., 2013; You et al., 2021; Bastos et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "154f3b86-15dd-442e-9ae2-4e74b4768806",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C86",
+      "claim": "Isoflurane is a vasodilator, which can attenuate the BOLD signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoflurane is a vasodilator, which can attenuate the BOLD signal (Schwinn et al., 1990), whereas the dexmedetomidine is a vasoconstrictor, which can counteract the vasodilatory effect from isoflurane (Talke and Anderson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "20d237e2-1919-4068-b830-014729ba60cd",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C87",
+      "claim": "Dexmedetomidine is a vasoconstrictor, which can counteract the vasodilatory effect from isoflurane.",
+      "claim_type": "EXPLICIT",
+      "source": "Isoflurane is a vasodilator, which can attenuate the BOLD signal (Schwinn et al., 1990), whereas the dexmedetomidine is a vasoconstrictor, which can counteract the vasodilatory effect from isoflurane (Talke and Anderson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "57eeae74-9f6c-4982-9091-d1518586d790",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C88",
+      "claim": "The combined low-dose isoflurane and dexmedetomidine anesthesia protocol has been shown to minimize the confounding effects on the BOLD response and maintain the functional connectivity across both cortical and subcortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "This anesthesia protocol has been shown to minimize the confounding effects on the BOLD response and maintain the functional connectivity across both cortical and subcortical regions (Grandjean et al., 2014; Benveniste et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "5a737790-d788-40ef-8b95-ec823dac03c1",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C89",
+      "claim": "Similar respiration-coupled LFP oscillations were observed in both anesthetized and awake states.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the potential confounding effects of anesthesia, previous studies demonstrated that similar respiration-coupled LFP oscillations were observed in both anesthetized and awake states (Yanovsky et al., 2014; Lockmann et al., 2016; Nguyen Chi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "d3d425d2-e52a-440c-a31c-f4499e956611",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C90",
+      "claim": "The relationship between respiration and neural activity is preserved under anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "As the relationship between respiration and neural activity is preserved under anesthesia, our results obtained in anesthetized rats should remain valid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cited literature showing similar respiration-coupled LFP oscillations in anesthetized and awake states.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "7fbe1261-018a-483b-96aa-55fd6651cd55",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C91",
+      "claim": "The neural contributions in the respiration-related network may be different in signal amplitude and/or spatial pattern between the awake and anesthetized states.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has to be noted that the neural contributions in the respiration-related network may be different in signal amplitude and/or spatial pattern between the awake and anesthetized states, and other potential neural contributions, such as those mediated by emotional or arousal changes, may only be present in the awake state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential differences between awake and anesthetized states.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "7dc4af06-b3b6-4687-b3f5-6b100535e243",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C92",
+      "claim": "The ACC was selected for electrode implantation given its critical role in respiratory modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ACC was selected given its critical role in respiratory modulation, evidenced by early studies showing that ACC was activated during breathlessness (Liotti et al., 2001; Evans et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "94866b02-2898-4010-a949-31c209255238",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C93",
+      "claim": "ACC was activated during breathlessness.",
+      "claim_type": "EXPLICIT",
+      "source": "The ACC was selected given its critical role in respiratory modulation, evidenced by early studies showing that ACC was activated during breathlessness (Liotti et al., 2001; Evans et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "b64ad49e-9396-4e4e-bf6d-b62c9605a1d4",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C94",
+      "claim": "ACC plays a role in respiratory control.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent research further demonstrates the role of ACC in respiratory control (Evans et al., 2009; Holton et al., 2021; Tort et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8966d74f-9ffc-4fba-b30b-4ddb989f4a0a",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C95",
+      "claim": "Electrophysiology recordings in humans showed that ACC exhibited different neural responses to separate respirational tasks including breath-holding, voluntary deep breathing, and hypercapnia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, electrophysiology recordings in humans showed that ACC exhibited different neural responses to separate respirational tasks including breath-holding, voluntary deep breathing, and hypercapnia (Holton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "33d02775-1f19-46df-8196-f11c2419a212",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C96",
+      "claim": "The ACC is a key region in the rodent default-mode network (DMN).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ACC is a key region in the rodent default-mode network (DMN) (Lu et al., 2012; Tu et al., 2021a), which has been linked to respiration-related fMRI signal changes (Birn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "9c40ca81-be3a-41c4-8cb3-199f9e0453f3",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C97",
+      "claim": "The rodent DMN has been linked to respiration-related fMRI signal changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ACC is a key region in the rodent default-mode network (DMN) (Lu et al., 2012; Tu et al., 2021a), which has been linked to respiration-related fMRI signal changes (Birn et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "4caec6f4-69df-4257-b3d5-292fbaf0eaec",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C98",
+      "claim": "The r value between the ACC rsfMRI signal and HRF-convolved gamma power was 0.086 (1200 time points, p = 0.003).",
+      "claim_type": "EXPLICIT",
+      "source": "The r value between the ACC rsfMRI signal and HRF-convolved gamma power was 0.086 (1200 time points, p = 0.003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f66949d4-2963-4c1b-b7a8-06e0a3d7c62c",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C99",
+      "claim": "There is a strong voxel-to-voxel spatial correlation (R = 0.775, p < 10\u221215) between the gamma power-derived rsfMRI correlation map and the ACC RSFC seedmap.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the gamma power-derived rsfMRI correlation map (Figure 3C) is highly consistent with the ACC resting-state functional connectivity (RSFC) seedmap with the right ACC (i.e., the electrode implanted side) defined as the seed (Figure 3D), evidenced by a strong voxel-to-voxel spatial correlation between these two maps (Figure 3E, R = 0.775, p < 10\u221215).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "9ca544db-dc35-40f8-a22c-72070fcf0235",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C100",
+      "claim": "Seven adult male Long\u2013Evans rats (300\u2013500 g) were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven adult male Long\u2013Evans rats (300\u2013500 g) were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "5041ec68-3f86-4655-bbf8-2694ea748637",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C101",
+      "claim": "Three rats were in the light sedation group with a total of 51 scans.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rats were in the light sedation group with a total of 51 scans and four rats were in the isoelectric state group with a total of 48 scans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "fc54d7e9-6670-4d1f-a06a-ebd117005202",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "claim_id": "C102",
+      "claim": "Four rats were in the isoelectric state group with a total of 48 scans.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rats were in the light sedation group with a total of 51 scans and four rats were in the isoelectric state group with a total of 48 scans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3da30924-85eb-4201-9feb-2c82882ff31a",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Respiration is associated with neural activity changes in the ACC, specifically showing a phase-locking relationship between slow respiration variations (RVT) and gamma-band power at ~0.035 Hz with zero phase lag. This coherence is specific to the gamma band and not observed in other frequency bands (delta, theta, alpha, beta).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, and C19 provide converging experimental evidence from Figure 2D-E showing significant coherence between RVT and gamma power with zero phase lag. Claim C20 provides negative control data (Figure 2F-I) showing no coherence with other frequency bands, strengthening the specificity of the finding. The consistency with prior literature (C17) further supports the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "f12041f4-d7c8-481f-aa23-6684ccac3f59",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gamma-band LFP is tightly linked to the rsfMRI signal, demonstrated by high spatial correlation (R = 0.775, p < 10^-15) between the gamma power-derived rsfMRI correlation map and the ACC RSFC seedmap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C99 provide strong quantitative evidence with highly significant statistical support (p < 10^-15) for the spatial correlation between gamma-derived and RSFC maps. Claim C98 provides additional temporal correlation data (r = 0.086, p = 0.003). The convergence of spatial and temporal analyses supports the tight link between gamma LFP and rsfMRI.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "a13e17d5-02ae-4751-8489-59d087c40ac1",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Slow respiration variations (RVT) exhibit a characteristic correlation pattern with brain-wide rsfMRI signals, forming a respiration-related network that includes key respiratory control regions (piriform cortex) and rodent DMN regions (ACC, mPFC, orbital cortex, retrosplenial cortex, primary somatosensory cortex, hippocampus).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 provide experimental evidence from Figure 4B-C with appropriate statistical correction (p < 0.05, FDR corrected). The spatial pattern is well-characterized and includes anatomically relevant regions. Claim C26 provides context by linking findings to human literature, though this is inferential rather than direct evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "e1a574ae-829b-4e2c-9fb8-a15851f79e6e",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The respiration-related rsfMRI network is mediated by gamma-band neural activity, as demonstrated by diminished network correlations after regressing out gamma power from both RVT and rsfMRI signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide experimental evidence from Figure 4D-E showing reduced RVT-rsfMRI correlations after gamma power regression with statistical significance (p < 0.05, FDR corrected). This manipulation provides strong evidence for the mediating role of gamma activity. However, the authors acknowledge that non-neural hemodynamic effects synchronized with gamma could also be affected by this regression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "ce19301e-2900-4583-9268-843e53a5ec65",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The respiration-related brain network disappears when brain-wide neural activity is silenced at the isoelectric state (induced by sodium pentobarbital), while respiration patterns remain similar between light sedation and isoelectric states, confirming the necessary role of neural activity in this network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 provide multiple converging lines of evidence confirming neural silencing (near-zero LFP, flat BOLD power spectrum, suppressed RSFC). Claims C35-C37 demonstrate similar respiration variance between states (p = 0.32 and p = 0.39), controlling for respiratory differences. Claim C39 shows absence of the respiration-related network in the isoelectric state. This experimental manipulation provides strong causal evidence for the neural basis of the network.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "98fafc15-c3ca-4624-af62-040dbae96684",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The respiration-related neural network is distinct from respiration-related rsfMRI artifacts, as evidenced by different spatial patterns (gray matter vs. ventricles/large veins) and differential responses to preprocessing (neural network persists after white matter/ventricle regression while artifacts are reduced).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C43-C46 provide experimental evidence from supplementary figures showing distinct spatial patterns and differential responses to preprocessing. The lack of RETROICOR correlations (C41) and persistence of the neural network after artifact removal (C45-C46) support the distinction. This addresses a critical alternative explanation and strengthens the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "c4c2234e-f73f-4333-8c17-c519bf6bf7ef",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Regressing out the respiratory signal does not abolish RSFC measured by rsfMRI, with major RSFC patterns remaining consistent after RVT regression, indicating that respiration does not account for all RSFC effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by data in Figure 3\u2014figure supplement 2 showing that while RVT regression reduces ACC RSFC in respiration network regions, the major RSFC pattern persists. This provides important context about the relative contribution of respiration to overall RSFC and prevents overinterpretation of the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The respiration network is very likely linked to respiration-entrained brain-wide neural oscillations, based on consistency with prior literature showing respiration-coupled oscillations across species and brain regions, specific gamma modulation in mPFC, and laminar patterns in hippocampus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result synthesizes the current findings with extensive prior literature (C49-C59). The consistency across multiple dimensions (species, brain regions, frequency specificity, anatomical connectivity) provides strong inferential support. Claims C57-C61 address potential artifacts from electrode/muscle movement. However, this remains an inference rather than direct demonstration of the mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "8b073ed7-ff7c-4ef7-a948-63de4fd62101",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The arousal level does not play a dominant role in the observed respiration-related fMRI network, as evidenced by the use of anesthetized animals and the absence of coherence between alpha-band power and slow respiration variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 provides experimental evidence (Figure 2H) showing no coherence between alpha-band power and RVT. Claim C69 provides logical reasoning based on the experimental design using anesthesia. However, the authors acknowledge (C91) that arousal-mediated contributions may differ between awake and anesthetized states, limiting the generalizability of this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "080f80c3-d487-458a-ba9e-afb17ba58241",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While anesthesia is a potential confounder that may affect respiration and neural/vascular activities, the relationship between respiration and neural activity is preserved under the combined low-dose isoflurane and dexmedetomidine anesthesia protocol used, as supported by prior literature showing similar respiration-coupled LFP oscillations in anesthetized and awake states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C85 acknowledge anesthesia as a potential confounder. Claims C86-C88 justify the anesthesia protocol choice based on prior literature. Claims C89-C90 argue for preservation of respiration-neural coupling under anesthesia based on cited studies. However, claim C91 acknowledges potential differences in amplitude/spatial pattern between awake and anesthetized states. The reliance on prior literature rather than direct comparison limits the strength of this conclusion for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "9f253fbe-40e8-4d55-9af7-f4302066da31",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study used seven adult male Long-Evans rats (300-500 g), with three rats in the light sedation group (51 scans total) and four rats in the isoelectric state group (48 scans total).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the experimental subjects and design. The sample sizes are clearly stated. However, the authors acknowledge in the discussion that the limited number of animals is a potential pitfall, with effects dominated by number of scans rather than individual rats. The reproducibility across animals (shown in supplementary figures) partially mitigates this concern.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    },
+    {
+      "id": "38ec99ae-6f07-42bc-8240-baf275b2d350",
+      "content_id": "5bf3fc9b-39e0-446a-b901-2c16919a2b2d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings echo results from human studies showing bidirectional interplay between respiration and neural activity, with the respiration-related brain network potentially conserved across species and playing important roles in normal and diseased brain function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C81 cite extensive human literature showing consistency with the current rodent findings. However, these are primarily inferential comparisons rather than direct evidence. Claims C82-C83 speculate about conservation across species and functional importance. While the consistency across literature is compelling, the lack of direct cross-species comparison and the speculative nature of functional implications limit the strength of these conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T16:38:00.010723Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "70297054-0d34-4d48-bcda-32342e52f24f",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "85bc9e5b-743f-4cbb-b08b-51d8c5cb8198",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "3f918fcf-de1d-435a-8e2f-733f68be2a90",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "4d82f1a2-df1a-4666-b96c-a1361425b22e",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "d97e0554-bc7a-4cd7-8773-5b7550ef028f",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "8d06b32d-dd9c-45ae-8621-b6645c38d8ec",
+      "result_id": "3da30924-85eb-4201-9feb-2c82882ff31a"
+    },
+    {
+      "claim_id": "f1504e19-5b30-445d-a4f8-2ae1d61654db",
+      "result_id": "f12041f4-d7c8-481f-aa23-6684ccac3f59"
+    },
+    {
+      "claim_id": "170dac6d-32d1-450a-98ce-28665dce1daf",
+      "result_id": "f12041f4-d7c8-481f-aa23-6684ccac3f59"
+    },
+    {
+      "claim_id": "4caec6f4-69df-4257-b3d5-292fbaf0eaec",
+      "result_id": "f12041f4-d7c8-481f-aa23-6684ccac3f59"
+    },
+    {
+      "claim_id": "f66949d4-2963-4c1b-b7a8-06e0a3d7c62c",
+      "result_id": "f12041f4-d7c8-481f-aa23-6684ccac3f59"
+    },
+    {
+      "claim_id": "f7b8ade9-9ae8-4807-92c4-3d5bd3db2c0d",
+      "result_id": "a13e17d5-02ae-4751-8489-59d087c40ac1"
+    },
+    {
+      "claim_id": "1b50777e-018d-440b-b7c3-6674f61b3644",
+      "result_id": "a13e17d5-02ae-4751-8489-59d087c40ac1"
+    },
+    {
+      "claim_id": "2468edf2-e0c5-4c4d-8c5a-0bbc795894c2",
+      "result_id": "a13e17d5-02ae-4751-8489-59d087c40ac1"
+    },
+    {
+      "claim_id": "d68f9d5c-c041-4f5d-b4bf-1827d2cf3edd",
+      "result_id": "a13e17d5-02ae-4751-8489-59d087c40ac1"
+    },
+    {
+      "claim_id": "21d0ace0-39e7-4488-aa14-330ce564b71d",
+      "result_id": "e1a574ae-829b-4e2c-9fb8-a15851f79e6e"
+    },
+    {
+      "claim_id": "8a39fd8a-5aab-4261-a0cf-9a6ec99cead6",
+      "result_id": "e1a574ae-829b-4e2c-9fb8-a15851f79e6e"
+    },
+    {
+      "claim_id": "38be29d1-2db9-4d2a-8e6b-674bebe9297a",
+      "result_id": "e1a574ae-829b-4e2c-9fb8-a15851f79e6e"
+    },
+    {
+      "claim_id": "431edb6b-ec9c-44b1-9ef1-097c77be2ded",
+      "result_id": "e1a574ae-829b-4e2c-9fb8-a15851f79e6e"
+    },
+    {
+      "claim_id": "f7af93a4-4347-460d-aaae-9ea143e31c1d",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "744da5ed-499e-49f8-854c-7d0c9a287bb3",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "94d7c314-b775-4e3e-bccb-8c973f412fc2",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "1ba389c6-c83d-4b52-b54a-4bd4321e539a",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "76c3fa39-f559-4e51-833f-41afaff31472",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "c829abde-ed21-48c4-b4d8-79a23ac02029",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "ad509282-70ea-44ac-bd8f-d3b8948c0868",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "796afc00-6b80-4d3a-aea3-e230189d2e2a",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "a9947f70-191c-42b5-b759-372482cb7d4d",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "30a4627f-2620-4203-8758-3709f38a338e",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "ae323352-d08e-4d9f-8a51-07069faeb173",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "b2c80adb-3364-4466-8795-1ab55a510d34",
+      "result_id": "ce19301e-2900-4583-9268-843e53a5ec65"
+    },
+    {
+      "claim_id": "fdfcd41c-c2d9-4320-92d2-0f524817ef46",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "1f075250-65bb-4939-8d01-42800005dd6f",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "c0905ec2-3717-45be-b1a4-28cc07cc513c",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "8c3e4872-8d23-43f8-aa42-a366386f77b7",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "f14676bd-721d-4603-aaf8-8ea2b9e4f65b",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "cddf58dc-9c43-41e3-930c-2d1765e21ae4",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "a5867c99-aa2a-4557-b3e4-b08132339439",
+      "result_id": "98fafc15-c3ca-4624-af62-040dbae96684"
+    },
+    {
+      "claim_id": "eb0aa5c6-efc5-4924-aa3e-ce74e311cca0",
+      "result_id": "c4c2234e-f73f-4333-8c17-c519bf6bf7ef"
+    },
+    {
+      "claim_id": "7e1520ef-9c92-4266-b2f1-fecfbcee453f",
+      "result_id": "c4c2234e-f73f-4333-8c17-c519bf6bf7ef"
+    },
+    {
+      "claim_id": "bd953627-e62c-4612-9cac-10b5ce9733ff",
+      "result_id": "c4c2234e-f73f-4333-8c17-c519bf6bf7ef"
+    },
+    {
+      "claim_id": "c0c40c8d-07c4-4bf2-bf3c-7a76315dd1b5",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "ea461c5e-5b8a-4fa5-a888-7c6d7ebf5270",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "085a109b-515c-49fe-a5f8-ac44094cb04c",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "e2d6afa8-f454-4894-ba77-9a0d6429a8fd",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "324d9df4-026b-4965-8b2d-44e3cdb74ec9",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "3c9be17b-4db1-4442-8e26-d7eb0685c40e",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "025a0506-953c-4975-8b4c-e6539193a015",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "c7a899c6-b658-4806-8cf3-4a51ce100cce",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "b975fdeb-afbb-45d6-b3d1-57dd1de8972b",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "ee294b34-5490-4db7-97d7-8d66c345878d",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "32a4f186-be9f-46fb-bba2-d819aa762444",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "036e57be-9283-412d-a00f-6ac1737c39c9",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "d074fa04-0c9a-404e-a934-beaa2fdb3032",
+      "result_id": "391d8690-9970-42ef-bbf6-e52cbcd9ec94"
+    },
+    {
+      "claim_id": "d14e9c04-6c63-43a9-9b50-54f200e03807",
+      "result_id": "8b073ed7-ff7c-4ef7-a948-63de4fd62101"
+    },
+    {
+      "claim_id": "d196f2a8-9015-46e3-8b91-d3a07faf346f",
+      "result_id": "8b073ed7-ff7c-4ef7-a948-63de4fd62101"
+    },
+    {
+      "claim_id": "d7164325-b5b4-4f82-b5ce-680a07dd6ab7",
+      "result_id": "8b073ed7-ff7c-4ef7-a948-63de4fd62101"
+    },
+    {
+      "claim_id": "18b14dd3-b40d-42a7-9e4b-c10234f0118e",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "25ffaf3a-c62a-4cd3-8911-312cc1d1c150",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "154f3b86-15dd-442e-9ae2-4e74b4768806",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "20d237e2-1919-4068-b830-014729ba60cd",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "57eeae74-9f6c-4982-9091-d1518586d790",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "5a737790-d788-40ef-8b95-ec823dac03c1",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "d3d425d2-e52a-440c-a31c-f4499e956611",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "7fbe1261-018a-483b-96aa-55fd6651cd55",
+      "result_id": "080f80c3-d487-458a-ba9e-afb17ba58241"
+    },
+    {
+      "claim_id": "9ca544db-dc35-40f8-a22c-72070fcf0235",
+      "result_id": "9f253fbe-40e8-4d55-9af7-f4302066da31"
+    },
+    {
+      "claim_id": "5041ec68-3f86-4655-bbf8-2694ea748637",
+      "result_id": "9f253fbe-40e8-4d55-9af7-f4302066da31"
+    },
+    {
+      "claim_id": "fc54d7e9-6670-4d1f-a06a-ebd117005202",
+      "result_id": "9f253fbe-40e8-4d55-9af7-f4302066da31"
+    },
+    {
+      "claim_id": "01e23e70-313c-4c5a-8f63-7bec7388d9ae",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "1cd99bb5-b3e5-4bca-840e-4e6fc306b2e9",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "c559987e-b0e7-4667-bf37-50f47956d667",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "7dd5bd60-cbbb-453e-8478-406a772c7123",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "96f736de-1a54-4b9d-9c7f-cc72a9b9d1c9",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "f2b03b62-1977-4d50-90f7-fd4fb19e58b6",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "d7c6e1bb-569a-4842-afa6-c32276f95812",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "bc0982aa-e91f-40e5-98a7-aef542ca89d5",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "ad0355e4-31c3-4fdb-94d2-a4cb120d270e",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "a23afd9f-fc92-4dc8-819e-9447d2835d4f",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "f24c5868-dcca-4c62-a260-dfa16f8fe029",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    },
+    {
+      "claim_id": "455d0856-4873-4d97-8015-193e63175dd8",
+      "result_id": "38ec99ae-6f07-42bc-8240-baf275b2d350"
+    }
+  ],
+  "comparisons": []
+}

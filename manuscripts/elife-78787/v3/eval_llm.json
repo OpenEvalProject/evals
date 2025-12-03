@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C46",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "PRG and TLR expression patterns are passively advected by tissue flow and deform continuously, while myosin anisotropy orientation remains approximately static, aligned with the dorsal-ventral axis, leading to an increasing discrepancy between PRG/TLR patterns and myosin orientation during germband extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C17, C18, C21, C22, C46, C122, C123 are directly supported by quantitative imaging data showing PRG/TLR advection and static myosin orientation (Figures 2, 3). The autocorrelation analyses (C43, C48, C56) and advection modeling (C44, C45) provide strong quantitative support. The conclusion (C19, C124) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Linear regression analysis shows that weighted combinations of PRG gradients cannot quantitatively account for the observed myosin accumulation pattern, particularly along the anterior-posterior axis, suggesting that local PRG differences cannot be linearly related to myosin recruitment without additional complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C35-C39 are supported by the regression analysis shown in Figure 1g-i. The analysis systematically tests the simplest linear model and demonstrates its failure to capture the AP pattern (C36, C37, C38). The conclusion (C39) is appropriately cautious, acknowledging that more complex nonlinear relationships remain possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "FRAP experiments reveal that myosin motors bind transiently to junctions with approximately 50% immediate mobile fraction and complete recovery by 210 seconds, indicating dynamic recruitment and transient binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, C62 are directly supported by FRAP data (Figure 3a, a'). The inference about transient binding (C63) is reasonable given the recovery kinetics. However, the manuscript notes high variability (standard deviation) in the recovery curves, which could affect the precision of the lifetime estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Myosin orientation shows transient deflection from the DV axis that correlates spatially and temporally with tissue flow vorticity, with maximum deflection of 8\u00b0 (whole embryo) or 12\u00b0 (stripe 5) occurring around 25-28 minutes, followed by recovery as vorticity decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74, C89-C92 are supported by quantitative measurements from multiple embryos (N=5) shown in Figures 3b-i. The spatial correlation between vorticity and myosin deflection (C72, C73, C74) and temporal dynamics (C89, C90) are well-documented. The 5-minute delay between vorticity and deflection (C74) is consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C84",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A mathematical model where myosin preferentially binds to DV-aligned junctions and is passively rotated by tissue flow with finite binding lifetime (\u03c4=5 min) quantitatively accounts for myosin orientation dynamics, with rotation-rate-adjusted angles remaining close to 0\u00b0 throughout GBE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model (C75-C77, Equations 2-4) is mathematically sound and makes testable predictions. Claims C84, C94, C95 show the model fits data from N=5 embryos with a single parameter. The rejection of an alternative model (C81) strengthens the conclusion. However, the model is phenomenological\u2014the 'static source' mechanism remains speculative (C5, C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The angular distribution of myosin-rich junctions shows region-dependent dynamics: standard deviation remains constant in low-vorticity regions (e.g., Runt stripe 3) but rapidly broadens in high-vorticity regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88 are supported by analysis shown in Figure 3h-h'. The observation is consistent with the proposed model where vorticity causes junction rotation and thus broadens the angular distribution. The simulated distributions (Figure 3h'') match observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In twist mutants, reduced GBE speed is accompanied by reduced vorticity and smaller myosin/DV axis angles, with model fitting revealing similar myosin binding lifetime as wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by data from N=4 twist mutant embryos (Figure 4a-c). The consistency of the myosin lifetime parameter across genotypes (C102) supports the model's generality. However, sample size is modest (N=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In eve mutants, initial GBE kinetics match wild-type but change abruptly at 10 minutes, with reduced vorticity and significantly reduced myosin anisotropy, though MRJs remain mainly DV-aligned except near the posterior vortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C107-C110 are supported by data from N=3 eve mutant embryos (Figure 4a', b, d, e). The observations are consistent with prior work on PRG mutants (C103, C104). However, the sample size is small (N=3) and the manuscript notes that FRAP data in eve mutants shows 'complex modifications' that are only 'compatible with' faster dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In Fat2-RNAi embryos with extended DV circumference, PRG stripes extend normally but myosin recruitment is limited to the same absolute distance from the ventral furrow as in wild-type, creating regions with PRG stripes but no myosin anisotropy, suggesting PRG presence is insufficient for myosin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by data from N=3 Fat2-RNAi embryos (Figure 4f-g'). The key observation (C116) that PRG stripes exist without myosin in extended regions is striking and well-documented. The conclusion (C119) is appropriately cautious. However, the authors note they originally intended to test a different hypothesis with this mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C126"
+    ],
+    "result": "The hypothesis that PRGs directly instruct myosin anisotropy is not supported; instead, PRGs likely modulate myosin retention on junctions and sensitivity to a static geometric source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by multiple lines of evidence: lack of linear correlation (C16, C39), Fat2-RNAi results (C119), and prior work (Gustafson et al., 2021). The alternative hypothesis (C121, C126) is reasonable given the data but remains speculative. The model provides a simpler explanation (C6, C126) but the molecular mechanism is unclear (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C97",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Myosin recruitment is proposed to be controlled by a geometrically defined static source, potentially related to embryo-scale epithelial tension or hoop stress from turgor pressure, though the precise mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C75, C97 represent the central hypothesis but are speculative (C5, C75 marked as SPECULATION). Supporting evidence from mechanical cues (C128-C134) comes from citations to prior work, not direct measurements in this study. The authors acknowledge the mechanism is unclear (C127) and suggest future work is needed. The hypothesis is plausible but requires direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Throughout embryogenesis, egg geometry remains static, defining a fixed DV/AP reference frame. MRJs align with the DV axis while PRGs are expressed in 14 regularly spaced stripes along the AP axis, with gradients steepest along AP and expression reducing toward the dorsal pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 describe basic observations well-supported by imaging data (Figures 1b-f, 2). These are largely confirmatory of prior work (C26, C27 cite previous studies) but provide quantitative whole-embryo characterization. The observations form the foundation for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The tissue flow field during GBE is nearly stationary with four vortices and two hyperbolic fixed points, maintaining high autocorrelation of flow direction throughout GBE, while PRG and Tartan stripes remain parallel and are transported by flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 are supported by flow field analysis and advection modeling (Figure 2a-e). The near-stationary nature of flow (C48, C49) is quantified by autocorrelation analysis. Manual tracking (C45) and advection predictions (C44) confirm PRG transport. Data from N=5 embryos provides good statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MRJ orientation varies by position: in Runt stripe 3 (central region), MRJs remain parallel to DV axis, while in posterior stripes (e.g., stripe 6), increasing angles are observed. Global myosin orientation autocorrelation remains high, and frame-of-reference analysis confirms myosin is more static than PRGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by regional analysis (Figure 2h-k') and supplementary data (Appendix 1-figure 15). The position-dependent behavior (C53-C55) is consistent with the vorticity distribution. The autocorrelation (C56) and frame-of-reference analyses (C57, C58) provide strong quantitative support for the static vs. advected distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Tissue cartography methodology extracts embryo surfaces from volumetric light sheet imaging and projects them onto cylindrical charts, enabling measurement of PRG gradients that show 14 stripes with DV modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe the methodology and basic observations. The tissue cartography approach (C13) is well-established (Heemskerk and Streichan, 2015). The gradient analysis (C14) and observations (C15) are straightforward applications shown in Figure 1e-f.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The findings confirm and extend previous observations of junction remodeling, show parallels to other morphogenetic systems (quail embryo, Drosophila wing disc, Xenopus epithelium), and suggest morphogenesis dynamics can be described by simple quantitative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 appropriately connects to prior work (Farrell et al., 2017). Claims C136-C137 draw reasonable parallels to other systems based on citations. Claim C138 is a justified conclusion given the model's success with a single parameter across multiple genotypes (C6, C94, C95). However, these are interpretive claims rather than direct experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C23",
+      "C24",
+      "C28",
+      "C50",
+      "C51",
+      "C103",
+      "C104",
+      "C128",
+      "C130",
+      "C135"
+    ],
+    "result": "Background knowledge and prior work establish that actomyosin drives morphogenesis through patterned cytoskeletal processes, that PRGs and TLRs have been linked to myosin anisotropy in fixed embryos, and that mechanical inputs can also organize myosin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C12, C23-C24, C28, C50-C51, C103-C104, C128, C130, C135 summarize established knowledge from prior work, all supported by appropriate citations. These provide context for the current study but are not novel findings. The authors accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The single-parameter model quantitatively accounts for myosin anisotropy orientation dynamics in wild-type, twist, and even-skipped embryos, as well as embryos with perturbed egg geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by data from multiple genotypes (WT N=5, twist N=4, eve N=3) and Fat2-RNAi (N=3) shown in Figures 3-4. The model successfully fits all conditions with the same framework, though with different parameter values for eve mutants. This demonstrates the model's generality and predictive power.",
+    "result_type": "MAJOR"
+  }
+]

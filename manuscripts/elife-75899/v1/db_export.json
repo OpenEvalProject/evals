@@ -1,0 +1,1325 @@
+{
+  "submission": {
+    "id": "82d1f752-9b5c-4528-b642-5f02329647ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:35:59.378735Z",
+    "updated_at": "2025-12-03T15:35:59.378735Z"
+  },
+  "content": [
+    {
+      "id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "submission_id": "82d1f752-9b5c-4528-b642-5f02329647ae",
+      "content_type": "manuscript",
+      "content_text": "# Mars, a molecule archive suite for reproducible analysis and reporting of single-molecule properties from bioimages\n\n## Authors\n\n- Nadia M Huisjes<sup>1</sup> ([ORCID: 0000-0002-4182-7229](https://orcid.org/0000-0002-4182-7229))\n- Thomas M Retzer<sup>1</sup> ([ORCID: 0000-0002-7353-2708](https://orcid.org/0000-0002-7353-2708))\n- Matthias J Scherr<sup>1</sup> ([ORCID: 0000-0003-0110-3709](https://orcid.org/0000-0003-0110-3709))\n- Rohit Agarwal<sup>1</sup>\n- Lional Rajappa<sup>1</sup>\n- Barbara Safaric<sup>1</sup>\n- Anita Minnen<sup>1</sup>\n- Karl E Duderstadt<sup>1</sup> ([ORCID: 0000-0002-1279-7841](https://orcid.org/0000-0002-1279-7841)) \u2020\n\n### Affiliations\n\n1. Structure and Dynamics of Molecular Machines, Max Planck Institute of Biochemistry Martinsried Germany ([ROR:04py35477](https://ror.org/04py35477))\n2. Physik Department, Technische Universit\u00e4t M\u00fcnchen Garching Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe rapid development of new imaging approaches is generating larger and more complex datasets, revealing the time evolution of individual cells and biomolecules. Single-molecule techniques, in particular, provide access to rare intermediates in complex, multistage molecular pathways. However, few standards exist for processing these information-rich datasets, posing challenges for wider dissemination. Here, we present Mars, an open-source platform for storing and processing image-derived properties of biomolecules. Mars provides Fiji/ImageJ2 commands written in Java for common single-molecule analysis tasks using a Molecule Archive architecture that is easily adapted to complex, multistep analysis workflows. Three diverse workflows involving molecule tracking, multichannel fluorescence imaging, and force spectroscopy, demonstrate the range of analysis applications. A comprehensive graphical user interface written in JavaFX enhances biomolecule feature exploration by providing charting, tagging, region highlighting, scriptable dashboards, and interactive image views. The interoperability of ImageJ2 ensures Molecule Archives can easily be opened in multiple environments, including those written in Python using PyImageJ, for interactive scripting and visualization. Mars provides a flexible solution for reproducible analysis of image-derived properties, facilitating the discovery and quantitative classification of new biological phenomena with an open data format accessible to everyone.\n\n## Introduction\n\nReproducible analysis of bioimaging data is a major challenge slowing scientific progress. New imaging techniques generate datasets with increasing complexity that must be efficiently analyzed, classified, and shared. This challenge has gained wide recognition (Carpenter et al., 2012; Eliceiri et al., 2012; Lerner et al., 2021; Meijering et al., 2016; Ouyang and Zimmer, 2017), which has led to the development of software frameworks for curating images (Allan et al., 2012; Kvilekval et al., 2010) and analysis workflows (Rubens et al., 2020), metadata reporting standards (Goldberg et al., 2005) and the creation of public archives to increase data availability (Williams et al., 2017). However, few standards exist for the reproducible analysis and reuse of image-derived properties and those that have been developed for single molecule fluorescence (Greenfeld et al., 2015; Ingargiola et al., 2016) offer limited options for adaption to other experimental configurations. There is an increasingly powerful toolkit to quantitatively follow the time evolution of the position, shape, composition, and conformation of individual cells and complexes, but these precious information-rich observations are generated in heterogenous formats that do not provide easy, transparent access to key features. As a consequence, the promise of new technologies is often unrealized, and new biological phenomena remain undiscovered in existing datasets, due to the lack of tools that enable robust classification and interactive exploration.\n\nSingle-molecule techniques provide access to rare intermediates in complex, multistage molecular pathways. Multicolor fluorescence imaging has revealed the conformational dynamics of membrane transport (Akyuz et al., 2013; Erkens et al., 2013), molecular states underlying assembly and transcription by RNA polymerase (Baek et al., 2021; Duchi et al., 2016), and DNA replication dynamics (Duderstadt et al., 2016; Scherr et al., 2018; Ticau et al., 2015). These approaches have been combined with spatial tracking on biological structures to clarify how exchange events and conformational changes modulate the function of motor proteins, as well as replication, transcription, and DNA repair machineries (Crickard et al., 2020; Lewis et al., 2020; Niekamp et al., 2021; Scherr et al., 2022). Biological macromolecules are routinely attached to microspheres which allow for controlled studies of the forces and torques involved in basic biological reactions (Agarwal and Duderstadt, 2020; Dulin et al., 2013; Neuman and Nagy, 2008; Revyakin et al., 2006). And finally, improvements in the sensitivity of camera sensors, fluorophore brightness, and new illumination strategies Gao et al., 2012; Tokunaga et al., 2008 have enabled time-resolved studies of biological processes in live cells. These developments have revealed frequent exchange of factors during normal operation of replisomes (Beattie et al., 2017; Kapadia et al., 2020) and the dynamics of the transcription-factor target site search (Chen et al., 2014).\n\nThe discovery of new biological phenomena from these multidimensional observations, depends on long, multistage image analysis workflows, followed by careful grouping and feature classification. Images are typically preprocessed, to correct for non-uniform beam profiles and filtered to enhance detection of individual molecules and structures over the background. Additional tools are then used to follow the properties of individual biomolecules through time. These often provide some form of tabular data containing aggregated results, which are either manually evaluated or filtered using a feature unique to the desired group of observations. Typically, at this point, results can no longer be re-evaluated in the context of the original images due to unidirectional transformations or lack of interactive image evaluation software. The final data are frequently migrated to another platform ideally suited for the generation of publication-quality figures. This necessitates further data restructuring during transfers between software platforms. Large datasets are downsized to cope with limited storage by removal of rejected observations in ways that irreversibly alter datasets. As rejection criteria change and additional data must be incorporated, precious time and reproducibility are lost. This process is often repeated for each experimental application and research group, leading to substantial duplication of efforts.\n\nRecognizing these issues in common single-molecule image processing workflows, we developed Mars, which provides a collection of Fiji/ImageJ2 (Pietzsch et al., 2012; Rueden et al., 2017; Schindelin et al., 2012) commands and integrations with well-established Fiji workflows for processing images and image-derived properties based on a versatile Molecule Archive architecture (Figure 1). This architecture allows for seamless virtual storage, merging, and multithreaded processing of very large datasets. A simple, yet powerful interface allows for fast and easy access to subsets of records based on any biomolecule property. This framework allows for the same data structure to be used from initial image processing all the way to the generation of final figures. All image metadata and biomolecule records are assigned universally unique ids (uids) upon creation, which together with comprehensive logging, ensures the history of each record remains traceable through long and complex analysis workflows involving numerous data merging steps. Non-destructive tag-based filtering ensures no observations are lost and updates to rejection criteria only require retagging of processed records. These design principles facilitate the reproduction of analysis workflows and ensure Molecule Archives provide a comprehensive, transparent format for the deposition of final datasets.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig1-v1.jpg)\n\n**Figure 1.:** The process of reproducible data analysis with Mars starting from image processing to iterative rounds of classification and filtering to the final stage of data exploration and deposition into a public database.\n\nThe modular design of commands and minimal definitions of image metadata and biomolecule records ensure flexibility that facilitates the development of varied Mars workflows. To illustrate the range of image processing and kinetic analysis tasks that can be accomplished, we present the results of three applications. We demonstrate the versatility of Mars record types in representing both single molecules as well as large macromolecular structures by tracking single RNA polymerases on long DNAs. We benchmark a multichannel fluorescence integration workflow using well-established single-molecule FRET frameworks. And finally, we show how high-throughput imaging of DNA-tethered microspheres reveals the results of complex topological transformations induced by controlled forces and torques. In each example, we highlight image processing commands and methods for accessing and manipulating Molecule Archives using scripts. Each workflow provides a basic framework that can be further adapted to custom applications by the introduction of additional processing steps and modification of the scripts provided. The graphical user interface provided by the Mars Rover facilitates workflow refinement through interactive data exploration and manual classification with multichannel image views. Taken together, these features make Mars a powerful platform for the development of imaging-processing workflows for the discovery and quantitative characterization of new biological phenomena in a format that is open to everyone.\n\n## Results\n\n### Common pitfalls in single-molecule image-processing workflows\n\nSingle-molecule imaging platforms provide an increasingly powerful toolkit to observe complex biological systems, but obtaining quantitative information depends on multistage analysis workflows with many potential pitfalls. The core design principles of Mars were developed to avoid common issues. Before introducing the architecture of Mars in depth, we will illustrate the benefit of Mars with a practical example. For those not yet experienced with single-molecule imaging, this example should help to clarify how Mars improves data readability and workflow reproducibility to avoid issues that frequently arise during dataset transformations when analysis steps are not properly documented and annotated.\n\nMany common single-molecule experiments involve recording images of the position and intensity of fluorescent labels attached to biomolecules as a function of time. For example, consider the simple experiment of fluorescently labeled polymerases traveling along DNA molecules during synthesis (covered in greater depth in workflow 1). Experimenters typically want to track polymerase position and fluorescence intensity in consecutive images. From the raw images, they would like to determine the polymerase synthesis rate, product sizes, and number of polymerases on each DNA molecule. This is accomplished by finding the locations of fluorescent spots in individual images, followed by linking spots from the same molecules over time. In a typical single-molecule workflow, tracking results are generated in a single table with columns for the image number, molecule position, and an index number for each track. Several filters are used to select moving polymerases that travel a minimum distance and have an intensity consistent with a single dye. After this automated filtering, tracks are manually checked to remove those with tracking errors. In a typical workflow, these filtering steps remove rejected tracks from the table. Finally, a conversion factor that relates DNA length to polymerase coordinates is used to calculate the synthesis rate and product length. The process is then repeated for many videos generating a final merged table with reindexed global track numbers.\n\nThis typical workflow has several pitfalls that increase the analysis time, make discovery of new phenomena more difficult, lead to irreproducibility, and, in the worst case, result in mistakes. The most significant problem is that every step is unidirectional. Tracks rejected during automated or manual filtering are removed. As a consequence, if any filtering criteria change, the analysis must be repeated from the start. Moreover, no framework is provided to easily document which scripts and thresholds were used and why tracks were manually rejected. The most significant pitfall arises from merging multiple videos and reindexing track numbers. This makes it impossible to evaluate the final dataset in the context of the original raw videos and their metadata. For example, when a mistake is discovered in a subset of experiments, such as poor polymerase labeling, incorrect temperature, illumination, or contamination, there is no way to easily remove the subset of experiments from the final dataset since the tracks have no identity linking them to the original videos. Beyond these immediate practical pitfalls, the structure of the workflow makes it difficult to ask complex questions that relate one biomolecule property to another and quickly re-evaluate the dataset based on a new model. For example, how does the synthesis rate depend on the number of polymerases? How does polymerase number influence the frequency of pauses? What if there are large differences in DNA extension between molecules or videos that require unique correction factors. The entire analysis and filtering would need to be done again.\n\nMars was developed to address these common pitfalls that arise in workflows like the example provided. First, Mars provides image processing commands streamlined for single-molecule applications that generate Molecule Archives containing a record of the analysis steps. Filtering is done using tags without the removal of rejected data to avoid unidirectional workflows. When filter criteria change only the tags need to be updated without redoing the analysis. Different subsets of existing tags may also be used to study complex differences between subpopulations such as polymerase clusters. The uids given to records upon creation, together with unique metadata ids, ensure a traceable history when datasets are merged, so that final datasets can always be evaluated in the context of the original raw images. The biomolecule storage and graphical interface in Mars are built to simplify the exploration of complex relationships based on different biomolecule properties. If experimental problems are discovered in a subset of videos, they can easily be filtered using the metadata ids stored with the records. All of these elements provide endless reslicing possibilities using the same dataset that overcome common pitfalls in single molecule image processing workflows.\n\n### Molecule Archive architecture\n\nMolecule Archives provide a flexible standard for storing and processing image-derived properties adaptable to a broad range of experimental configurations. Molecule Archives contain three record types: Properties, Metadata, and Molecule (Figure 2). Each type is defined in an interface, independent of implementation details. This abstraction ensures Molecule Archives support a variety of biomolecule, metadata, and property implementations. Moreover, this allows for the creation of new implementations that seamlessly work with the existing code base, algorithms, and user interface. To simplify the mechanics of record retrieval and the process of dataset merging, all Molecule and Metadata records are assigned human-readable, base58-encoded universally uids. Storing records using uids reduces indexing requirements, facilitates scalable processing using uid-to-record maps that support multithreaded operations, and ensures the traceability of records through analysis workflows.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig2-v1.jpg)\n\n**Figure 2.:** Schematic representation of the structure of Molecule Archives consisting of three types of records: Properties, Metadata, and Molecule. The single Properties record contains global information about the Molecule Archive contents, the Metadata records store information about the images used for biomolecule analysis (e.g. image dimensions, the analysis log), and the Molecule records store molecule-specific information (e.g. position over time, intensity).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Mars Rover metadata tab showing open microscopy environment (OME) image metadata information for each analyzed image as well as the metadata-specific tags and other record options. (B) Mars Rover molecules tab highlighting the user-friendly data exploration features such as the trace plotter displaying region highlighting as well as molecule-specific tags, notes, uids, and metadata uids.\n\nMolecule Archives contain a single Properties record with the type of the Molecule Archive and global information about the Molecule Archive contents. This includes the number of Metadata and Molecule records and unique names used for tags, parameters, regions, positions, and table columns. The Properties record stores global Molecule Archive comments typically containing important information about the analysis strategy and naming scheme for tags, parameters, regions, positions, and other fields to orient a new researcher that did not perform the original analysis. To improve the organization and readability of comments, the Mars Rover also provides a convenient Markdown editor.\n\nMetadata records contain experimental information about the images used for biomolecule analysis. To ensure compatibility with the broadest set of image formats and maximum reusability, image dimensionality, timepoints, channels, filters, camera settings, and other microscope information are stored in OME format (Goldberg et al., 2005). Molecule Archives do not store the raw images, only the image-derived properties and the source directory containing the project. Nevertheless, interactive image views linked to molecule records are supported through big data viewer (BDV) integration (Pietzsch et al., 2015) with HD5 and N5 (Stephan Saalfeld et al., 2022) formatted images. The image file locations, coordinate transforms, and other settings are stored in Metadata records. Global events in time influencing all biomolecules are documented using Metadata regions and positions that are available for kinetic analysis and scripting. Global experimental conditions are stored as parameters in the form of key-value pairs (e.g. buffer composition and temperature). Metadata records are categorized using tags to filter biomolecules by whole experiments. The Metadata records also contain a log where all commands and settings used for processing are recorded, thus maintaining the entire history of data processing throughout the analysis.\n\nMolecule records contain fields for convenient storage of common image-derived properties of biomolecules. This includes a table that typically contains the position and intensity over time, the uid of the Metadata record containing the primary experimental information, and the index of the image containing the biomolecule. Events of interest in time can be marked with regions and positions (e.g. activity bursts, dye bleaching), which allow for event-specific calculations and kinetic analyses. Calculated global biomolecule properties are stored as parameters in the form of key-value pairs (e.g. mean intensity, distance traveled, and mean position). Mars comes with kinetic change point (KCP) commands for unbiased identification of distinct linear regimes and steps (e.g. polymerase synthesis rate, FRET states, and dye bleaching) (Hill et al., 2018), which are stored in segment tables. And finally, Molecule records are categorized for later analysis using custom tags and notes for manual assessments.\n\nMolecule Archives can be created, saved, and reloaded in a variety of formats in multiple environments both desktop-based and without a user interface for parallel processing on high-performance clusters. Molecule Archives are saved in JSON format using the field schema outlined in Figure 2. By default, Molecule Archives are written to single files with a yama extension using smile encoding and compression of molecule table data to reduce file size, but can also be saved and reopened in plaintext JSON. Mars supports processing of very large datasets, that typically do not fit in physical memory using a virtual storage mode in which records are retrieved only on-demand supported by a simple filesystem-backed record hierarchy. This architecture provides a powerful and flexible framework for multistep analysis workflows involving very large datasets.\n\n### Mars Rover\u2013interactive molecule feature exploration and image views\n\nThe discovery of new biological phenomena using single-molecule techniques often relies on manual exploration of individual biomolecules in primary images together with image-derived measurements. To simplify this process, we developed a user interface in JavaFX, called the Mars Rover, that provides access to all information stored in Molecule Archives. The Mars Rover is integrated into Fiji with windows available for all open Molecule Archives. Open Molecule Archives are available as inputs and outputs in Fiji/ImageJ2 commands and in supported scripting languages.\n\nIn the Mars Rover, Molecule Archive windows contain tabs and subpanels that provide complete access to all fields of Molecule and Metadata records as well as global properties, comments, and interface settings (Figure 2\u2014figure supplement 1). A customizable global dashboard provides information about the Molecule Archive contents and scriptable chart widgets that can be adapted to specific workflows. The Molecule tab features an interactive chart panel that reveals the time evolution of biomolecule properties and provides region and position highlighting tools. To ensure image-derived measurements of biomolecule properties are evaluated together with primary observations, interactive image views linked to molecule records are supported through BDV integration (Pietzsch et al., 2015).\n\nThe Mars Rover was written to provide extensive possibilities for customization. All tabs and panels are defined in interfaces, independent of implementation details. This facilitates extension of the Mars Rover to support custom icons and display elements based on Molecule Archive type. This will enable further refinement and the development of workflow-specific displays by extending the core architecture in the future.\n\n### Commands for image processing and biomolecule analysis\n\nMars comes with a collection of several dozen Fiji/ImageJ2 commands for common single-molecule image processing and analysis tasks (Table 1). This includes commands to find, fit, integrate, and track through time intensity peaks and objects in images. Commands to correct for non-uniform excitation beam profiles, and to transform region of interest peak collections with colocalization filtering possibilities. In addition to image processing, there are Molecule Archive commands for opening, merging, and transforming datasets as well as kinetic change point analysis. Finally, Mars has commands devoted to interoperability with other common formats. This includes importers for TrackMate (see the next section), single molecule dataset (SMD) (Greenfeld et al., 2015), and LUMICKS h5 files from optical tweezers experiments.\n\n**Table 1.**\n Mars commands.Description of Fiji/ImageJ2 commands supporting the analysis of image-derived biomolecule data in Mars. Detailed documentation can be found on the Mars documentation website (https://duderstadt-lab.github.io/mars-docs/).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Command</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Image</td>\n    </tr>\n    <tr>\n      <td>Peak Finder</td>\n      <td>Finds high-intensity pixel clusters (peaks) in an image. Additionally, the sub-pixel position can be determined utilizing a 2D Gaussian fit.</td>\n    </tr>\n    <tr>\n      <td>DNA Finder</td>\n      <td>Finds vertically aligned DNA molecules in an image. Additionally, the sub-pixel position of both ends of the molecule can be determined utilizing a 2D Gaussian fit.</td>\n    </tr>\n    <tr>\n      <td>Peak Tracker</td>\n      <td>Finds, fits, and tracks peaks in images.</td>\n    </tr>\n    <tr>\n      <td>Object Tracker</td>\n      <td>Identifies unspecified objects in images utilizing classification by segmentation and tracks their center of mass.</td>\n    </tr>\n    <tr>\n      <td>Molecule Integrator</td>\n      <td>Integrates the intensity of a peak over all frames.</td>\n    </tr>\n    <tr>\n      <td>Molecule Integrator (multiview)</td>\n      <td>Integrates the intensity of a peak over all frames in an image stack with multiview images.</td>\n    </tr>\n    <tr>\n      <td>Beam Profile Corrector</td>\n      <td>Corrects for the beam profile-generated image intensity deviations.</td>\n    </tr>\n    <tr>\n      <td>Gradient Calculator</td>\n      <td>Calculates the gradient of consecutive pixels from top to bottom or from left to right to identify long linear objects such as DNA molecules.</td>\n    </tr>\n    <tr>\n      <td>Overlay channels</td>\n      <td>Combines several individual videos into one creating a single video with the information stored along the \u2018Channel (C)\u2019 dimension.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Molecule</td>\n    </tr>\n    <tr>\n      <td>Open Archive</td>\n      <td>Opens a Molecule Archive.</td>\n    </tr>\n    <tr>\n      <td>Open Virtual Store</td>\n      <td>Opens a virtual Molecule Archive.</td>\n    </tr>\n    <tr>\n      <td>Build Archive from Table</td>\n      <td>Converts an opened table with a \u2018molecule\u2019 index column into a Molecule Archive.</td>\n    </tr>\n    <tr>\n      <td>Build DNA Archive</td>\n      <td>Builds a DNA Molecule Archive from a single Molecule Archive and a list of DNA ROIs in the ROI Manager. It uses the location of the DNA molecules to search for molecules in the single Molecule Archive that overlap with (parts of) this location.</td>\n    </tr>\n    <tr>\n      <td>Merge Archives</td>\n      <td>Merges multiple Molecule Archives (placed in a single folder) into one.</td>\n    </tr>\n    <tr>\n      <td>Merge Virtual Stores</td>\n      <td>Merges multiple virtual Molecule Archives (placed in a single folder) into one.</td>\n    </tr>\n    <tr>\n      <td>Add Time</td>\n      <td>Adds a column to the molecule tables to convert time points (T) to real time values as specified in the metadata or by a user-defined time increment.</td>\n    </tr>\n    <tr>\n      <td>Drift Corrector</td>\n      <td>Calculates and corrects for the sample drift given a Molecule Archive and a tag corresponding to all immobile molecules in the dataset. Generates new columns for each molecule table.</td>\n    </tr>\n    <tr>\n      <td>Region Difference Calculator</td>\n      <td>Calculates the difference between the regions specified for all molecules in the Molecule Archive and adds the outcome as a molecule parameter.</td>\n    </tr>\n    <tr>\n      <td>Variance Calculator</td>\n      <td>Calculates the variance on a specified molecule table column and adds the outcome as a molecule parameter.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Table</td>\n    </tr>\n    <tr>\n      <td>Open Table</td>\n      <td>Imports a comma or tab-delimited table to the MarsTable format.</td>\n    </tr>\n    <tr>\n      <td>Sort</td>\n      <td>Sorts a MarsTable based on values in a specified column.</td>\n    </tr>\n    <tr>\n      <td>Filter</td>\n      <td>Filters the rows of a MarsTable based on the specified criteria.</td>\n    </tr>\n    <tr>\n      <td>Import IJ1 Table</td>\n      <td>Imports any ImageJ1 table to the MarsTable format.</td>\n    </tr>\n    <tr>\n      <td>Import TableDisplay</td>\n      <td>Imports any SciJava table to the MarsTable format.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">KCP</td>\n    </tr>\n    <tr>\n      <td>Change Point Finder</td>\n      <td>Detects linear regions or steps in single-molecule traces. This command generates molecule segments tables listing endpoints and fits for linear regions.</td>\n    </tr>\n    <tr>\n      <td>Single Change Point Finder</td>\n      <td>Detects a single change point in a single-molecule trace. The output is a segments table with the end points and fit or the position.</td>\n    </tr>\n    <tr>\n      <td>Sigma Calculator</td>\n      <td>Calculates the error value in a specific region of interest in all single-molecule traces that can be used as input for the change point calculation commands.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">ROI</td>\n    </tr>\n    <tr>\n      <td>Transform ROIs</td>\n      <td>Transforms peak ROIs from one region of a multiview image to another.</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Import</td>\n    </tr>\n    <tr>\n      <td>LUMICKS h5</td>\n      <td>Opens optical tweezer data in HDF5 (h5 file extension) format collected using a LUMICKS instrument and converts the data to Molecule Archive format.</td>\n    </tr>\n    <tr>\n      <td>Single-molecule dataset (SMD)</td>\n      <td>Opens SMD files in plaintext json format and converts the data to Molecule Archive format.</td>\n    </tr>\n  </tbody>\n</table>\n\nCommands appear in a submenu of the plugins menu of Fiji when Mars is installed using the update site. When a command is selected, users are presented with a dialog to choose the desired options. The active image in Fiji is used as input by image processing commands. Some provide preview possibilities prior to processing full image sequences. Tracking and fluorescence integration commands generate Molecule Archives as outputs which open in new windows when the command finishes. Biomolecules can then be explored using the Mars Rover user interface presented in all open Molecule Archive windows and all analysis work can be saved to disk as two files: one file with a yama extension containing the primary Molecule Archive data and a second file with the yama.rover extension containing Mars Rover settings used to restore the window state and dashboard widgets. The typical Mars workflow starts with the creation of a Molecule Archive by processing an image sequence, followed by biomolecule feature analysis and tagging. This typically involves the creation of custom analysis scripts in Fiji that manipulate Molecule Archives. Final publication quality figures are often rendered by opening the yama file in a Jupyter notebook and using one of the Python charting libraries. Comprehensive reference materials and detailed step-by-step guides for common workflows are freely available on the Mars documentation website.\n\nThe UI-agnostic format of ImageJ2 commands ensures they can be used in many different contexts with or without a graphical user interface available. To facilitate these applications, methods have been added for all required settings and example scripts for commands. Commands can be combined into larger scripts that support multistep analysis workflows runnable on high-performance computing clusters. This facilitates a smooth transition from a dialog-based workflow development phase using the graphical user interface of Fiji to high-performance parallel processing of many experiments in environments lacking a graphical user interface.\n\n### TrackMate interoperability\n\nFiji provides a comprehensive open-source platform for scientific image analysis containing well-established software for common imaging processing tasks. These technologies are integrated in a modular fashion as plugins that can be combined in limitless combinations. Mars commands and data structures are fully integrated into Fiji, simplifying interoperability with these technologies. The applications presented below provide examples of how Fiji plugins can be combined with Mars commands. To illustrate how this interoperability can be further extended, we developed an action to export TrackMate results to Molecule Archive format (Source code available at https://github.com/duderstadt-lab/mars-trackmate). TrackMate is a Fiji plugin for single-particle tracking that offers several tracking algorithms with a powerful user interface with many spot filtering and track editing tools (Tinevez et al., 2017). The action we developed adds an export option in the final TrackMate panel called \u2018go to Mars\u2019 that opens a Molecule Archive with the converted results. This feature is installed with Mars and requires no additional configuration. The Mars Peak Tracker is ideal for everyday single-molecule tracking problems with a few simple options in a single dialog but does not offer all the capabilities of TrackMate. This extension gives users more possibilities for complex problems such as tracking the shape and position of objects using machine learning algorithms (Ershov et al., 2021) and exporting the results from TrackMate to a Mars ObjectArchive.\n\n### Applications\n\nTo demonstrate the range of analysis tasks that can be performed with Mars, we have developed three workflows based on real-world applications. In the first workflow, we determine the rate of transcription of single RNA polymerases by tracking their position as a function of time on long DNAs based on Scherr et al., 2022. In the second workflow, we demonstrate how to accurately analyze images containing observations of single-molecule FRET based on Hellenkamp et al., 2018 and dynamic FRET arising from conformational switching of Holiday junctions (Hyeon et al., 2012). And finally, we highlight the virtual storage capability of Mars working with very large datasets from high-throughput imaging of DNA-tethered microspheres manipulated with forces and torques based on Agarwal and Duderstadt, 2020. Detailed step-by-step instructions for each workflow can be found on the Mars documentation website and the raw data used in each workflow are freely available on either GitHub or Zenodo. Jupyter notebooks, sample archives, and scripts used in the workflows are available in the mars-tutorials repository.\n\n### Workflow 1\u2013tracking RNA polymerase position during transcription\n\nSingle-molecule total internal reflection fluorescence (smTIRF) microscopy has become an indispensable tool to study biomacromolecular structure and functionality allowing the observation of, e.g., molecule position and dynamics. Examples of such studies include kinetic studies of DNA replication (Dequeker et al., 2022; Ha et al., 2002; Lewis et al., 2020), studies of the polymerization of structural elements like actin (Amann and Pollard, 2001), the direct observation of flagellar motor rotation (Sowa et al., 2005), as well as tracking of processes in vivo (Vizcay-Barrena et al., 2011). To illustrate the use of Mars for the analysis of such datasets, this example shows a typical Mars workflow for smTIRF studies of the kinetics of a fluorescently-labeled RNA polymerase transcribing on an immobilized, promoter-containing, 21 kb DNA molecule (Scherr et al., 2022; Figure 3A). In the presence of all four nucleotides, RNA polymerase could initiate transcription from the promoter and progress on the DNA which could be temporally and spatially visualized by measuring fluorescent emission upon excitation. After transcription was completed, DNA was poststained with SYTOX orange to reveal the position of the DNA molecules in the last frames of the video. By correlating the RNA polymerase movement with the position of the DNA molecule, information about the polymerase processivity and progression rates were obtained.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the RNA polymerase assay. Promoter-containing surface-immobilized 21 kb DNA was incubated with fluorescently-labeled RNA polymerase after which transcription was tracked over time. (B) Representation of the analysis pathway showing the analysis steps starting from the raw image stack on the left to a final plot on the right. First, the Peak Tracker extracted position vs time information from each fluorescent RNA polymerase creating a single Molecule Archive. In parallel, the DNA finder located the long, line-shaped, DNA molecules and generates a list of start and end positions. The information yielded from both tools was merged into a final DNA Molecule Archive. A classification and sorting process was applied resulting in a final plot showing the abundance of tracked molecules at various transcription rates (nt/s). A Gaussian fit to the population with rates > 40 nt/s revealed a population average transcription rate of 53\u00b13.6 nt/s. Here n is the number of molecules.\n\nTo analyze the data quantitatively, first, a beam profile correction was applied to remove the non-uniform laser excitation in the field of view due to the Gaussian beam profile of frequently employed light sources in TIRF microscopy. The Peak Tracker (Figure 3B) then determined the location of each fluorescent spot throughout the progressing frames and stored this information in a Single Molecule Archive. The identified positions were subsequently corrected for sample drift, that occurred over the course of the measurement, with the Drift Corrector. In parallel, the last frames of the video, showing the DNA molecules, were fitted with the DNA Finder to generate a coordinate list with the positions of all DNA molecules. This information was correlated with the positional information of the polymerases and a DNA Molecule Archive was created. The obtained DNA Molecule Archive contains the positional information of all polymerase molecules found to be on the DNA and serves as the basis for further kinetic studies. Distinguishing between sub-populations is possible by sorting the molecule records either by means of parameter values and/or assigned molecule tags. Concluding the analysis, data exploration revealed a population-specific rate distribution (Figure 3B, right) showing an observed transcription rate of 53\u00b13.6 nt/s which is well in line with previous studies reporting transcription rates between 40\u201380 nt/s (Thomen et al., 2008).\n\n### Workflow 2\u2013measuring intramolecular distances with smFRET\n\nSingle-molecule F\u00f6rster Resonance Energy Transfer (smFRET) microscopy is used extensively to study protein dynamics (Lerner et al., 2018; Mazal and Haran, 2019; Michalet et al., 2006), RNA (Seidel and Dekker, 2007; Shaw et al., 2014; Xiaowei, 2005) and DNA (Seidel and Dekker, 2007) interactions, to elucidate enzyme mechanisms (Smiley and Hammes, 2006) as well as to study protein structure (Dimura et al., 2016; Schuler and Eaton, 2008) and molecular machines (Hildebrandt et al., 2014; Stein et al., 2011). Mars comes with multi-color fluorescence integration commands well-suited for the analysis of such datasets. Here we present a typical Mars workflow for dual-color smFRET data collected using alternating laser excitation with TIRF microscopy. This workflow starts with integration of fluorescence intensities and performs all stages of analysis to obtain corrected FRET efficiency (E) and stoichiometry (S) distributions that provide intramolecular distance information and the kinetics of the molecule dynamics. The workflow is applied to both static and dynamic FRET datasets and was adapted to several collection strategies.\n\nTo illustrate how Mars is used to analyze static smFRET populations, we processed the publicly available dataset from the benchmark study of Hellenkamp et al., 2018 to determine the FRET efficiency (E) and stoichiometry (S) of two short dsDNA-based samples labeled with donor (Atto550) and acceptor (Atto647N) fluorophores at two different inter-fluorophore distances (15 bps [1-lo] and 23 bps [1-mid], Figure 4A). Data were gathered by recording the emission from the surface-attached DNA molecules upon alternating donor and acceptor excitation (ALEX) to ensure accurate FRET measurements. Images were analyzed as follows, the Peak Finder was used to identify the locations of DNA molecules, followed by integration of the fluorescence intensity using the molecule integrator (multiview) to generate Molecule Archives with intensity vs time (I vs T) information (Figure 4B). To allow for the calculation of all correction factors, three Single Molecule Archives were generated: (i) a FRET archive including all DNA molecules that were found to fluoresce in both emission regions, (ii) an acceptor only (AO) archive containing all molecules that only have fluorescent acceptors excited with direct acceptor excitation, and (iii) a donor only (DO) archive containing all molecules that only exhibit donor emission. Separating these three species at the start of analysis facilitated easier downstream processing and data correction calculations. All three Molecule Archives were tagged and merged to a single master Molecule Archive containing the information of all three DNA molecule population types before further data corrections were applied.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the FRET assay. The FRET efficiency between two coupled dyes (donor, shown in blue, and acceptor, shown in red) on a short, immobilized, dsDNA oligo was measured. The inter-fluorophore distance was probed for two constructs: 23 bps (1-lo) or 15 bps (1-mid). (B) Representation of the analysis pathway starting from the raw image stack on the left to a stoichiometry vs FRET efficiency plot on the far right. First, the molecule integrator is used to integrate intensity vs time traces for each molecule (Aex: acceptor excitation, Aem: acceptor emission, Dem: donor emission, Dex: donor excitation) resulting in three Single Molecule Archives (FRET archive, donor only [DO] archive, and acceptor only [AO] archive). After merging, the data are corrected for background and other photo-physical effectsre classified according to the observed molecular features. Finally, the single-molecule data is displayed in a scatterplot with the stoichiometry (S) and FRET efficiency (E) information for both FRET samples (1-lo and 1-mid) as well as the AO and DO populations. The accompanying histograms plot the data from the 1-lo and 1-mid populations in gray bars and corresponding population-specific Gaussian fits as a solid black line. A detailed step-by-step guide to this workflow is available on the Mars documentation website.\n\nFirst, a position-specific excitation correction was applied normalizing donor and acceptor intensities in relation to their specific position in the field of view. A subsequent kinetic change point analysis procedure (Hill et al., 2018) identified all intensity transitions associated with bleaching events. Next, molecules exhibiting all the expected smFRET features were selected. For example, molecules were not selected if they had more or less than exactly one donor and acceptor, displayed large intensity fluctuations not caused by the bleaching event, or low signal. Molecules were background corrected by subtracting the mean background intensity after bleaching from the measured intensity at each time point of the respective molecule. Furthermore, corrections accounting for leakage of donor emission into the acceptor region, quantum yield normalization, and direct excitation of the acceptor were applied to obtain accurate FRET parameters (see Methods for details). Finally, the corrected traces allowed for the calculation of E and S values for each molecule. The average corrected E values obtained for 1-lo and 1-mid were E1-lo = 0.16 \u00b1 0.11 and E1-mid = 0.53 \u00b1 0.13 (mean \u00b1 SD) with 246 and 250 accepted molecules included in the final calculations, respectively. These values are in agreement with the results of the multilab study by Hellenkamp et al. (E1-lo = 0.15 \u00b1 0.02 and E1-mid = 0.56 \u00b1 0.03). The differences in precision are due to differences in error estimation. We report the standard deviation resulting from Gaussian fitting of each population. Whereas, Hellenkamp et al. have reported the standard deviation from the best estimates from many labs. When calculated with the standard error of the mean our estimates become E1-lo = 0.16 \u00b1 0.01 and E1-mid = 0.53 \u00b1 0.01.\n\nOur analysis of the static FRET dataset illustrates how Mars can be used to determine the FRET efficiency (E) and stoichiometry (S) of fixed FRET populations and allowed for direct benchmarking against published values. However, the majority of smFRET studies typically contain transitions between FRET states resulting from distance changes during the observation time within each molecule. To illustrate how this workflow can be used to analyze samples that exhibit transitions between states, we imaged surface-immobilized Holliday junctions labeled with donor and acceptor fluorophores attached to different DNA arms with ALEX (Figure 5A). To enhance conformational switching of the arms, we introduced a buffer containing 50 mM magnesium as previously described (Hyeon et al., 2012). We applied the smFRET workflow described above for the static FRET case to obtain the corrected FRET efficiency and stoichiometry as a function of time. Frequent transitions between high and low FRET states are observed from Holliday junctions switching between iso-I and iso-II conformations (Figure 5B). A scatterplot of stoichiometry vs FRET efficiency for all accepted molecules has two well-defined populations (Figure 5C) which we fit with a double Gaussian distribution to obtain Eiso-I=0.16 \u00b1 0.12 and Eiso-II=0.64 \u00b1 0.13 (mean \u00b1 SD, for n=601 molecules). Finally, we determined the dwell time distributions using a simple threshold-based two state model from which we obtained the transition timescales \u03c4iso-I = 0.31 \u00b1 0.03 seconds and \u03c4iso-II = 0.37 \u00b1 0.04 seconds (mean \u00b1 standard error) (Figure 5D). We used this simple model based on our prior knowledge that the system exhibited two state behavior. Alternatively, when the number of states is not known and transitions occur on timescales longer than the imaging rate, the Change Point Finder can be used to identify transitions in an unbiased manner. Alternatively, Molecule Archives can be opened in Python and other kinetic analysis methods can be used, such as Hidden Markov Modeling.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of the dynamic FRET substrate. The FRET efficiency between two dyes (donor, shown in blue, and acceptor, shown in red) attached to the arms of a Holliday junction exhibiting rapid interconversion between low and high FRET states was measured. Biotin attachment to the surface used during the experiment was omitted from the cartoon for clarity. (B) FRET efficiency as a function of time for representative molecules. (C) Scatterplot showing the stoichiometry vs FRET efficiency for all timepoints of accepted molecules for FRET, AO, and DO populations. One-dimensional histograms displayed along each axis are fitted with single or double Gaussian models for stoichiometry and FRET efficiency, respectively. (D) Dwell time distributions from a two-state model for the high and low FRET states. Time scales are from exponential fits with standard deviation and n is the number of dwells taken from 601 molecules. A detailed step-by-step guide to this workflow is available on the Mars documentation website.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The set of accepted molecules in the dynamic FRET dataset collected with the Holliday junction substrate exhibit expected smFRET features. The coefficient of variation is the standard deviation divided by the mean and provides a measure of the stability of signals. For the sum of donor signals and all signals it is expected to be constant. The Pearson correlation coefficient provides a measure of the correlation between two signals. This provides a measure of anti-correlation between donor and acceptor signals that is expected during FRET. (A) The coefficient of variation of the sum of donor emission (FD|D) and acceptor emission (FA|D) upon donor excitation. (B) The coefficient of variation of the sum of all signals (FD|D, FA|D, and FA|A) should be constant. (C) The Pearson correlation coefficient for donor and acceptor emission upon donor excitation should be negative during FRET. (D) Stoichiometry during FRET. Expected to be 0.5 for one acceptor and one donor. (E) Stoichiometry after donor bleach but before acceptor bleach. Expected to be 0.0 for only acceptor. (F) Stoichiometry after acceptor bleach but before donor bleach. Expected to be 1.0 for only donor. Each histogram provides a comparison of accepted to rejected molecules. Suggested rejection thresholds and expected values are indicated on each plot. The set of accepted molecules exhibits the expected features for valid smFRET.\n\nThe FRET datasets presented thus far demonstrate the advantages of the ALEX collection strategy. Alternating excitation offers acceptor emission information from direct excitation that is used to calculate the stoichiometry of the dyes in each molecule and exclude traces with fluctuations in the acceptor signal that are independent of FRET. This ensures a more robust determination of correction factors and greater reliability. However, it comes at a cost when imaging with smTIRF. The FRET sampling rate is lower and the observation time is reduced due to limited emission from the acceptor before photobleaching. As a consequence, there are good reasons to omit the acceptor excitation pulses when considering the FRET collection strategy. Therefore, we have developed a third smFRET workflow with the Holliday junction dataset but without using the direct acceptor excitation information to calculate the correction factors. A detailed step-by-step guide to this workflow is available on the Mars documentation website. In this case, the stoichiometry is not calculated due to the lack of direct acceptor information.\n\nMolecule selection is one of the most important steps during smFRET analysis and also the one most susceptible to bias. Therefore, a consistent set of criteria must be adhered to throughout the selection process and the final set of accepted molecules should be evaluated against known smFRET features. These procedures ensure molecules with improper labeling, dye fluctuations independent of FRET, and other photophysical artifacts are removed from the analysis. Jupyter notebooks that generate an automated validation report for all smFRET examples are included in the mars-tutorials repository. In the report, the stability of the sum of fluorescence signals is evaluated using the coefficient of variation, the anti-correlation of donor and acceptor emission is quantified using the Pearson correlation coefficient, and the median values of stoichiometry and FRET efficiency are compared with expected values for different regions of FRET traces, among other validation tests. The results of these evaluations for the dynamic FRET dataset are displayed in Figure 5\u2014figure supplement 1 with suggested rejection thresholds. This provides an extra layer to improve the quality of final datasets and provides additional quantitative criteria to reduce bias.\n\n### Workflow 3\u2013characterizing the kinetics of DNA topology transformations\n\nForce spectroscopy methods, utilizing the high precision tracking of beads attached to biomolecules, have led to great insights into biological processes. Magnetic tweezers, in particular, are routinely used to study the physical behavior of DNA (Nomidis et al., 2017; Strick et al., 1998) as well as nucleic acid transformations by essential types of cellular machinery, such as structural maintenance of chromosomes complexes (Eeftens et al., 2017), the DNA replication machinery (Burnham et al., 2019; Hodeib et al., 2016; Manosas et al., 2012; Seol et al., 2016) and topoisomerases (Charvin et al., 2005; Gore et al., 2006; N\u00f6llmann et al., 2007; Strick et al., 2000). The throughput of this approach has recently been improved by combining magnetic tweezers with DNA flow stretching to create an instrument called flow magnetic tweezers (FMT) (Agarwal and Duderstadt, 2020). The very large datasets generated by this instrument pose a challenge for analysis and initially led to the development of Mars. To illustrate the advantages offered by Mars in the analysis of these types of data, we present a workflow studying the behavior of DNA gyrase, a topoisomerase from E. coli (N\u00f6llmann et al., 2007). This workflow illustrates the analysis steps required from raw tracking data to a well-structured single-molecule dataset with a traceable processing history utilizing the virtual storage infrastructure of Mars.\n\nIn the experimental setup of FMT, surface-immobilized DNA molecules are attached to paramagnetic polystyrene beads in a flow cell (Figure 6A). Block magnets placed above the flow cell create a magnetic field that orients the beads and applies a vertical force. A constant flow through the flow cell results in a drag force on the beads and the DNAs. Similar to a conventional magnetic tweezers setup, rotation of the magnets will change the topology of the DNA according to the direction of rotation. Furthermore, by inverting the flow direction, the DNA tether will flip and reveal the location of surface attachment. A low magnification telecentric lens makes it possible to image a massive field of view providing high throughput observations. At low applied forces, changes in DNA topology induced through magnet rotation result in the formation of DNA supercoils and DNA compaction. This results in a decrease in the projected length of the DNA molecule observable as bead motion in the image. Despite the low magnification of the lens required for high throughput, subpixel fitting allows for high resolution tracking of DNA length over time. The tracking results are rich in information that allows for detailed molecule classification and quantification of enzyme kinetics.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/75899/elife-75899-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of flow magnetic tweezers (FMT). The projected length of the surface-immobilized DNA molecule attached to a magnetic bead was measured under different flow as well as magnet height and rotation conditions to study changes in DNA topology. (B) Representation of the analysis workflow starting from the raw image stack on the left to the fully analyzed plots on the right. First, positional information is extracted by the Peak Tracker to yield a Single Molecule Archive. Regions assigned to specific parts of the experiment are highlighted in the example trace (\u2018reversal\u2019, \u2018singly tethered\u2019, \u2018force\u2019, \u2018coiling\u2019, and \u2018gyrase reaction\u2019) and are used to calculate different DNA-related properties and parameters. Subsequent classification and tagging allows for easy exploration of subpopulations. The top graph shows the rate distribution (enzymatic cycles/s) found for gyrase activity resolving positive supercoils (orange) and introducing negative supercoils (blue), respectively. The lower graph shows a box plot of the delay between the introduction of the enzyme to the system (T=0) and the observed enzymatic activity. Plots were calculated from 2,406 individual molecules.\n\nIn the experiment presented in Figure 6B, first, a series of predetermined flow and magnet transformations were executed to check tether quality. Then gyrase was introduced, resolving positive supercoils and subsequently introducing negative supercoils. Regions were assigned to the trace in which parameters were calculated and tags were allocated to the molecules based on these parameter values. In this particular example, four final categories discriminated molecules that were either retained for analysis, immobile, nicked, or rejected for various other reasons (e.g. attachment of multiple DNA molecules to one magnetic bead). The molecules retained for analysis were background corrected and the rate of positive relaxation and negative introduction was calculated and plotted (Figure 6B, right). A positive burst rate of 1.59 cycles/s, as well as a negative burst rate of 0.80 cycles/s, were found in this experiment. These values are in agreement with those reported previously (N\u00f6llmann et al., 2007).\n\nThis workflow illustrates how Mars can be used to analyze large datasets virtually with on-the-fly data retrieval. Careful documentation is even more critical for large datasets where many stages of analysis must be entirely automated. The documentation framework provided in Mars ensures that the analysis is done reproducibly by entering each step in the log of the metadata record. This ensures a fully reversible workflow in combination with keeping all observations in the Molecule Archive, including those rejected from the final analysis. Mars can be of value for other major force spectroscopy methods, even though many do rely on z-directional movement instead of x-y tracking. Several options for external initial image processing are available from which results could be imported to Mars either in tabular form or using a scripting environment. Furthermore, this example proves that Mars is very flexible and can be used for any camera-based data where single-molecules are localized or tracked. Subsequently, Mars provides a platform with improved classification options, documentation, and data reusability for downstream analysis. The expandability of Mars will allow diversification of the workflow to integrate a broader range of force spectroscopy input data, for example, from optical and traditional magnetic tweezers.\n\n## Discussion\n\nRapid improvements in bioimaging technologies have led to powerful new approaches to follow the time evolution of complex biological systems with unprecedented spatial and temporal resolution generating vast information-rich datasets. These observations must be efficiently and reproducibly analyzed, classified, and shared to realize the full potential of recent technological advances and ensure new biological phenomena are discovered and faithfully quantified. Single-molecule imaging approaches, in particular, have moved from obscurity in specialized physics laboratories to the forefront of molecular biology research. Nevertheless, surprisingly few reporting standards and common formats exist. While significant progress has been made in establishing common file formats for single-molecule FRET datasets that can store raw photon information from point detectors (Greenfeld et al., 2015) and time-binned trajectories from images (Ingargiola et al., 2016), they offer limited options for adaption to other experimental modalities. Mars provides a solution to bridge this gap in the form of a common set of commands for single-molecule image processing, a graphical user interface for molecule exploration, and a Molecule Archive file format for flexible storage and reuse of image-derived datasets adaptable to a broad range of experiment types. To ensure Mars is accessible to a large community, Mars is developed open source and freely available as a collection of SciJava commands distributed through a Fiji update site. The Mars project is a member of the Scientific Community Image Forum (Rueden et al., 2019) which provides a vibrant platform for new users to get help and for advanced users to find solutions to difficult image analysis problems.\n\nThe workflows described illustrate how the basic collection of modular commands and Molecule Archive transformations provided can be reused to analyze data from very different experimental configurations. Nevertheless, we recognize the commands are ultimately limited and will not address all problems easily. Therefore, we provide interoperability between Mars and other platforms available in Fiji. In particular, to provide access to a broader range of particle tracking options, results can be exported from TrackMate to Molecule Archive format. We plan to expand interoperability to include other common formats generated from single-molecule imaging experiments as they emerge. Additionally, Mars uses the SCIFIO framework (Hiner et al., 2016) to convert different image formats into OME format and includes a specialized image reader for more comprehensive support of images recorded using Micromanager (Edelstein et al., 2010) frequently used for single-molecule imaging. This will allow Mars to process new image formats as they are developed and SCIFIO or Bio-Formats readers are written (Linkert et al., 2010). These are only a few examples of the many workflow options that integrate with core Fiji technologies. In case these integrations do not provide a solution, Mars has several built-in extension mechanisms. New Molecule Archive types and custom user interface elements can be added separately and discovered by Mars at runtime using the SciJava discovery mechanism. Mars was written with script and command development in mind to allow for the analysis of observations resulting from new approaches beyond single-molecule applications by extending the existing framework. Finally, Molecule Archives can easily be opened in Python environments by directly loading them as JSON files or using PyImageJ (Curtis Rueden et al., 2021), which provides access to many other data manipulation and visualization libraries.\n\nSingle-molecule imaging approaches have gained widespread usage and have become an indispensable tool for the discovery of new biological mechanisms. Unfortunately, data reporting standards have lagged far behind. Raw images together with a record of the processing history for reproduction are rarely provided. The development of new formats like the Molecule Archive format presented here will make it easier for researchers to faithfully report their results and ensure reproducibility. This will increase the level of confidence and quantitative accuracy of findings and allow for broader reuse of existing information-rich datasets. However, Mars only provides a framework to aid reproducibility and does not ensure it. Individual researchers are ultimately responsible for maintaining reporting standards sufficient for reproduction and following best practice recommendations for single molecule imaging experiments (Lerner et al., 2021). For example, scripts developed with Mars should be version controlled, made publicly accessible, and report all essential parameters to the processing log. Moreover, the version numbers and settings of all software integrated into workflows must be documented and reported to ensure reproducibility.\n\nThe discovery of new biological phenomena from single-molecule observations often depends on time-consuming manual classification of individual molecules and behaviors. Machine learning algorithms are now offering the possibility to automate these tasks (Kapadia et al., 2021; Thomsen et al., 2020), but their accuracy depends on robust training datasets. The powerful record tagging tools provided with Mars provide the ideal platform for the creation of large training datasets for machine learning based classifiers. Future work will focus on further development of interoperability of Mars with other platforms and machine learning workflows.\n\n## Methods\n\n### Mars installation\n\nTo get Mars, start by downloading a copy of Fiji and installing it. Open Fiji, go to the help menu, select update\u2026 and click the manage update sites button and activate the Mars update site by checking the box where you find Mars in the list of available update sites. Apply all required changes. This should install a large number of jar files that includes all core Mars software components and all dependencies required. To complete the installation process, quit and reopen Fiji. Now you are ready to start using Mars by running the commands in the Plugins menu in the Mars submenu. We suggest installing Mars into a new copy of Fiji to avoid incompatibility issues with older copies of Fiji. We will ensure Mars works with future copies of Fiji using the installation procedure outlined.\n\n### Getting help with Mars\n\nMars is a community partner on the Scientific Community Image Forum (Rueden et al., 2019) where users can report their problems in posts with the mars tag to get feedback and troubleshooting support. Don\u2019t be a stranger! If you have a problem, no matter how small, we would love to hear about it and try to help. Solving your problem will likely help other users.\n\n### Workflow 1\u2013tracking RNA polymerase position during transcription\n\nSpecific details about protein purification and labeling, the microscope set-up, sample preparation, and the imaging procedure can be found in the publication by Scherr et al., 2022. The raw data accompanying this example workflow is freely available through the Mars tutorials GitHub repository .\n\nExtensive background information about all described Mars commands, specific settings used, and screenshots of example Molecule Archives and algorithm outcomes can be found on the Mars documentation pages. Scripts and example Molecule Archives accompanying this analysis can be found in the Mars tutorials GitHub repository.\n\n### Workflow 2\u2013measuring intramolecular distances with smFRET\n\nIn this workflow, parameter nomenclature, as well as data correction and calculation procedures, were performed as described by Hellenkamp et al., 2018 to facilitate comparisons and to illustrate the flexibility of Mars workflow creation. Specifics on sample design, preparation, and the data acquisition procedure for the static FRET dataset presented in Figure 4 can be found in the original work (Hellenkamp et al., 2018). The raw image data is freely available on Zenodo. Dynamic FRET from conformational changes of a Holliday junction labeled with donor and acceptor dyes was collected for this study and deposited on Zenodo, where it is freely available for download. Full experimental details can be found below. Detailed step-by-step instructions for three smFRET workflows are available on the Mars documentation website for static FRET, dynamic FRET , and dynamic FRET without direct acceptor excitation . In addition to the detailed step-by-step guides on the workflow documentation pages linked above, we have also created a YouTube channel with many tutorials and included a video showing how to perform the dynamic FRET workflow.\n\nThe most significant difference between the three examples is the method used to calculate gamma (\u03b3), the normalization of effective fluorescence quantum yields, and detection efficiencies of the acceptor and donor. For datasets collected using ALEX, the \u03b3 correction factor is calculated using a linear fit of one over the stoichiometry vs FRET efficiency as described previously (Lee et al., 2005). In the case of static FRET, this is conducted with the combined 1-lo and 1-mid datasets. For dynamic FRET, the two populations within each molecule are separated and fit. In the absence of direct acceptor excitation, \u03b3 is calculated using the ratio of the changes in intensities before and after acceptor photobleaching as described previously (McCann et al., 2010).\n\nThe analysis starts with the identification of the fluorescent DNA molecule positions and subsequent intensity vs time trace extractions. The Mars image processing commands used in the smFRET workflow were written for videos where different excitation wavelengths are stored in different channels which is standard practice throughout the imaging community. However, the static FRET sample data (https://doi.org/10.5281/zenodo.1249497) was saved as a single image sequence without channel information despite alternating acceptor and donor excitation for each frame. Therefore, we wrote a script for Fiji to convert to the multichannel format expected by Mars that de-interleaves the frames into two channels: acceptor excitation (C=0) and donor excitation (C=1). The intensity peaks were identified using the Peak Finder and their locations are exported to the ImageJ ROI Manager. To account for the dual-view of the camera which separates the acceptor emission and donor emission wavelengths to different regions, the coordinates of the peaks were transformed to the other half of the dual-view using an Affine2D matrix. This matrix was calculated with the bead data provided on Zenodo using the \u2018descriptor-based registration (2d/3d) (Preibisch et al., 2010) plugin in Fiji as described in the tutorial on the Mars documentation site . Next, the molecule integrator (multiview) was used to extract the intensity vs time traces of all molecules at all specified emission and excitation colors. This generated a single Molecule Archive containing molecule records with intensity traces for each identified molecule. For easier downstream analysis, the described procedure was repeated, thereby generating three different Molecule Archives from each video: (i) FRET archive\u2013a Molecule Archive containing molecules that have both donor and acceptor emission; (ii) AO archive\u2013a Molecule Archive containing molecules with acceptor emission after acceptor excitation only; and (iii) DO archive\u2013a Molecule Archive containing molecules with only donor emission after donor excitation. The metadata records of these Molecule Archives were tagged accordingly before merging them into a master Molecule Archive using the Merge Archives command.\n\nIn the master Molecule Archive, after the metadata tags (FRET, AO, and DO) were added to all molecule records , a position-specific excitation correction was applied that normalizes the donor and acceptor intensities dependent on their location in the field of view . Next, for each intensity trace, the Single Change Point Finder was used to automatically detect large intensity shifts indicating donor or acceptor bleaching events . Subsequent manual tagging of molecule traces with the \u2018accepted\u2019 tag allowed for the exclusion of certain molecules in further analysis: (i) molecules with either more than or fewer than exactly one donor and acceptor fluorophore per molecule, respectively, (ii) molecules showing large intensity changes other than the bleaching event, and (iii) molecules with a too low signal to noise ratio, for example. This yielded a Molecule Archive with tagged molecules to be included in the forthcoming calculations and data correction steps.\n\nNext, the fluorescence emission from the donor and acceptor were corrected and the FRET efficiency and stoichiometry values were calculated. All steps were combined in one script . The corrections and calculations performed by this script are described in the following steps, subscripts, superscripts, and variables are defined as follows:\n\nStep 1: The background correction step subtracts the mean background intensity after bleaching as measured from the traces in the respective FRET Molecule Archive from all prebleaching intensities in a trace-wise fashion. This yielded the background-corrected intensity values (iiIemission|excitation). These corrected intensity values were used to calculate iiEapp and iiSapp (Equation 1).\n\n$$\n^{ii}S_{app}=\\frac{^{ii}I_{Aem\u2223Dex}\u00a0+\u00a0^{ii}I_{Dem\u2223Dex}}{^{ii}I_{Aem\u2223Dex}\u00a0+\u00a0^{ii}I_{Dem\u2223Dex}\u00a0+\u00a0^{ii}I_{Aem\u2223Aex}}\u00a0and\u00a0^{ii}E_{app}=\\frac{^{ii}I_{Aem\u2223Dex}}{^{ii}I_{Aem\u2223Dex}\u00a0+\u00a0^{ii}I_{Dem\u2223Dex}}\n$$\n\nStep 2\u20133: Next, the leakage of donor fluorescence into the acceptor channel (\u03b1) and direct acceptor excitation by the donor excitation laser (\u03b4) were calculated from the AO and DO molecules respectively according to (Equation 2 ). FA|D stores the fully corrected intensity from acceptor emission upon donor excitation for each molecule at each time point before the first photobleaching event (Equation 3).\n\n$$\n\\alpha=\\frac{\u27e8^{ii}E_{app}^{(DO)}\u27e9}{1\u2212\u27e8^{ii}E_{app}^{(DO)}\u27e9}\u00a0and\u00a0\\delta=\\frac{\u27e8^{ii}S_{app}^{(AO)}\u27e9}{1\u2212\u27e8^{ii}S_{app}^{(AO)}\u27e9}\n$$\n\n\n\n$$\nF_{A\u2223D}=^{ii}I_{Aem\u2223Dex}\u2212\\alpha^{ii}I_{Dem\u2223Dex}\u2212\\delta^{ii}I_{Aem\u2223Aex}\n$$\n\nStep 4\u20135: To then account for the normalization of excitation intensities and cross-sections of the acceptor and donor (\u03b2) and the normalization of effective fluorescence quantum yields and detection efficiencies of the acceptor and donor (\u03b3) the respective correction factors were determined based on the relationship between the 1-lo and 1-mid population. To do so, iiEapp and iiSapp values were averaged in a molecule-wise fashion and linear regression against the values of the entire population yielded correction factors \u03b2 and \u03b3 (Equation 4) that were applied to calculate FA|A and FD|D (Equation 5). Where FA|A is the corrected acceptor emission upon acceptor excitation and FD|D is the corrected donor emission on donor excitation. The gamma correction factor was calculated based on the assumption that placing the same dyes at different bases along the DNA molecule does not influence the ratio of the acceptor and donor fluorescence quantum yields. These subsequently yielded the fully corrected E and S parameters for each molecule (Equation 6). A population-specific molecule average revealed the respective population average values.\n\n$$\n\\frac{1}{\u27e8^{iii}S_{app}^{(FRET)}\u27e9}=b\u2217\u27e8^{iii}E_{app}^{(FRET)}\u27e9\u00a0+\u00a0a\n$$\n\nwhere $\\beta=a+b\u22121$ and $\\gamma=\\frac{a\u22121}{a+b\u22121}$\n\n$$\nF_{D\u2223D}=\\gamma^{\u2217ii}I_{Dem\u2223Dex}\u00a0and\u00a0F_{A\u2223A}=\\frac{1}{\\beta}^{\u2217ii}I_{Aem\u2223Aex}\n$$\n\n\n\n$$\nE=\\frac{F_{A\u2223D}}{F_{D\u2223D}+F_{A\u2223D}}\u00a0and\u00a0S=\\frac{F_{A\u2223D}+F_{D\u2223D}}{F_{D\u2223D}+F_{A\u2223D}+F_{A\u2223A}}\n$$\n\nMore information regarding the derivation of the discussed formula as well as information about the applied corrections can be found in the publication by Lee et al., 2005. We developed a second workflow using the Holliday junction dataset but without using the direct acceptor excitation information for corrections and calculations . In the absence of direct acceptor excitation, \u03b3 is calculated using the ratio of the changes in intensities before and after acceptor photobleaching as described previously (McCann et al., 2010).\n\n$$\n\\gamma\u00a0=\\frac{\u00a0^{A}I_{Pre}\u2212^{A}I_{Post}}{^{D}I_{Post}\u2212^{D}I_{Pre}}\n$$\n\nwhere AIPre is the mean acceptor intensity before photobleaching, AIPost is the mean background of the acceptor spot after photobleaching, DIPre is the mean intensity of the donor before acceptor photobleaching, and DIPost is the mean intensity of the donor after acceptor photobleaching before donor photobleaching (the donor recovery period).\n\nThe dwell time distributions for the dynamic FRET workflow examples using the Holliday junction were determined using a simple two-state model run on the final archive that adds segments tables to all molecule records . The segment tables with the state fits from the script are used in the Jupyter notebook to calculate the timescales of conformational changes displayed in Figure 5.\n\nTo assess the quality of the selected molecules in the final Molecule Archives, we developed several validation criteria and included validation reports for all three smFRET examples that can be found in the FRET section of mars-tutorials repository within the subfolder for each example workflow. In the report, the stability of the sum of fluorescence signals is evaluated using the coefficient of variation, anti-correlation of donor and acceptor emission is quantified using the Pearson correlation coefficient, and the median values of stoichiometry and FRET efficiency are compared with expected values for different regions of FRET traces, among other validation tests. The results of these evaluations for the dynamic FRET dataset are displayed in Figure 5\u2014figure supplement 1 with suggested rejection thresholds. The Jupyter notebooks provided only report on these validation parameters. We also provide a script to filter the selected molecules based on thresholds that can be used to automate part of the selection process . We offer this as a starting point, but care must be taken when performing the selection process and we expect additional criteria may need to be added to ensure robust automated filtering.\n\nFurthermore, information about all described Mars commands, specific settings used in the built-in tools, and screenshots of expected outcomes can be found on the Mars documentation pages. Scripts, Jupyter notebooks, and Molecule Archives accompanying this analysis can be found in the Mars tutorials GitHub repository.\n\n### Dynamic smFRET data collection\n\nDynamic single-molecule FRET datasets were obtained using a four-stranded holliday junction assembled as previously described (Hyeon et al., 2012). Briefly, HPLC purified oligos R_branch_bio (5\u02b9-biotin-TTTTTTTTCCCACCGCTCGGCTCAACTGGG-3\u02b9), H_branch_Cy3 (5\u02b9-Cy3-CCGTAGCAGCGCGAGCGGTGGG-3\u02b9), X_branch (5\u02b9-GGGCGGCGACCT CCCAGTTGAGCGCTTGCTAGGG-3\u02b9), and B_branch_Alexa647 (5\u02b9-Alexa647-CCCTAGCAAGCCGCTGCTACGG-3\u02b9) obtained from Eurofins Genomics GmbH were mixed to a final concentration of 10 \u03bcM each in annealing buffer (30 mM Hepes pH 7.5, 100 mM potassium acetate), heated to 90\u00b0C, and annealed by slow cooling to 4\u00b0C over 90 min. Imaging was performed using an RM21 micromirror TIRF microscope from Mad City Labs (MCL, Madison Wisconsin, USA) with custom modifications as previously described (Larson et al., 2014) equipped with an Apo N TIRF 60 \u00d7 oil-immersion objective (NA 1.49, Olympus). Dyes were excited with OBIS 532 nm LS 120 mW and 637 nm LX 100 mW lasers from Coherent at full power, expanded to fill the field of view. Scattered light from excitation was removed and signals were separated with emission filter sets (ET520/40 m and ZET532/640 m, Chroma). Emission light was split at 635 nm (T635lpxr, Chroma) with an OptoSplit II dualview (Cairn Research, UK) and collected on an iXon Ultra 888 EMCCD camera (Andor).\n\nImaging surfaces were prepared as follows. Glass coverslips (22\u00d722 mm, Marienfeld) were cleaned with a Zepto plasma cleaner (Diener Electronic) and incubated in acetone containing 2% (v/v) 3-aminopropyltriethoxysilane for 5 min. Silanized coverslips were rinsed with ddH2O, dried, and baked at 110\u00b0C for 30 min. Coverslips were then covered with a fresh solution of 0.4% (w/v) Biotin-PEG-Succinimidyl Carbonate (MW 5,000) and 15% (w/v) mPEG-Succinimidyl Carbonate (MW 5,000) in fresh 0.1 M NaHCO3 and incubated overnight at room temperature. Coverslips were rinsed with ddH2O, dried, and incubated again with a fresh Biotin-PEG/mPEG solution as described above. Functionalized PEG-Biotin microscope slides were again washed and dried and finally stored under vacuum.\n\nA functionalized PEG-Biotin microscope slide was covered with 0.2 mg/ml streptavidin in blocking buffer (20 mM Tris-HCl, pH 7.5, 50 mM NaCl, 2 mM EDTA, 0.2 mg/ml BSA, 0.005% (v/v) Tween20) for 15 min. Flow cells were assembled using ~0.1 mm thick double-sided tape containing an ~0.5 mm wide flow lane. The double-sided tape was sandwiched between the cover glass on one side and a 1 mm thick piece of glass on the other containing entry and exit holds. Polyethylene tubes (inner diameter 0.58 mm) were inserted into the holes and the entire assembly was sealed with epoxy.\n\nFlow cells were flushed with blocking buffer and left for 30 min. Holliday junctions were incubated in the flow chamber at a concentration of 1\u20135 pM for 2 min in TN Buffer (10 mM Tris pH 8.0, 50 mM NaCl). Excess holliday junctions were removed by washing with TN buffer. Finally, imaging was performed in RXN Buffer (10 mM Tris pH 8.0, 50 mM MgCl2, 1 mM Trolox (aged for 5\u20138 min under UV), 2.5 mM PCA and 0.21 U/ml PCD). Tubes were sealed with clips several minutes prior to imaging to allow time for oxygen removal. Before exciting the dyes in each field of view, an 808 nm laser was used to obtain focus. Collection was performed using an ALEX approach in which the 532 and 637 lasers were alternated and 40 ms exposures were collected in burst acquisition mode using a custom BeanShell collection script with micromanager 2.0. Ten to twenty fields of view were collected sequentially for 3 min each using an automated microDrive stage from MCL with autofocus steps preceding each collection. Image sequences are available on Zenodo (https://doi.org/10.5281/zenodo.6659531).\n\n### Workflow 3\u2013characterizing the kinetics of DNA topology transformations\n\nThe raw video is available through Zenodo (https://zenodo.org/record/3786442#.YTns2C2B1R0). This video is a reduced dataset from one of the FMT experiments investigating the topological changes gyrase performs on the DNA. The groovy scripts for analyzing the dataset can be found on GitHub . The first three scripts have been used to create a CSV file and the data was then plotted with a Python script. The data analysis procedure using Mars has been described in Agarwal and Duderstadt, 2020.\n\nAfter tracking the molecules in the dataset and the generation of the single Molecule Archive, the traces were sorted and classified. The experiment was designed in such a way that steps in the process of the assay could be used as indicators. Based on these indicators, a discrimination was made between the molecules classifying them either as immobile (not mobile, not coilable), nicked (mobile, not coilable) or fit for analysis (mobile, coilable). A fourth category contains every rejected molecule due to various reasons like multiple DNA attachments on a single bead or getting stuck during the experiment before the enzymatic activity was detected. The tethers can appear to be mobile and coilable but certain thresholds are not passed like being coilable at high force. Specifically, the main indicators for this dataset are derived from: (i) the observation of a positional change of the DNA-bead after flow direction reversal (stuck or not stuck), (ii) a test for DNA molecule coilability by rotating the magnets at high force (single or multiple DNA molecules attached to a single bead), (iii) a molecular force measurement investigating the force on the DNA, and (iv) a second rotating step at lower force to introduce positive twist which is resolved by gyrase. The positive and negative introduction of supercoiling is used to calibrate the extension change of each DNA molecule to the change of twist during the analysis. The response of the molecule to these indicator tests is determined by parameter calculation scripts that only consider a certain assigned region of interest in the trace. When a certain threshold for a parameter is met, a tag is added to the molecule record. The final set of tags present in the molecule record determines in which group the molecule is classified. A sliding window approach is applied to all relevant molecules revealing kinetic information such as coiling and compaction rates as well as influences on these parameters after the introduction of gyrase. The size of the window depends on whether gyrase is relaxing positive twist or introducing negative twist. For the positive relaxation a window of 12.5 s and for the negative introduction a window of 25 s is used. In this case, one cycle means the linking number of the DNA is changed by \u20132. Since the DNA has to be relaxed to get negatively supercoiled, the burst position for positive relaxation comes earlier than the negative introduction. The time points have been corrected such that gyrase introduction coincides with T=0. The calculated information was either exported to CSV format or was directly interpreted with Python. This flexibility enables data visualization on various platforms.\n\nThe entire analysis, including more background information, can be found on the website. Furthermore, the Mars commands are explained in great detail on the documentation site (https://duderstadt-lab.github.io/mars-docs/docs/).\n\n### Data availability\n\nThe analysis software described is publicly available in several repositories on GitHub at https://github.com/duderstadt-lab. The core library used for the analysis and storage of data is contained in the mars-core repository. The graphical user interface is contained in the Mars-fx repository. The videos used in all workflows have been made available in public databases. Links can be found in the methods sections for each workflow. Extensive documentation and links to many additional resources and scripts used in all workflows can be found on the Mars documentation website.\n",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "6ebfaf0b-6297-4333-9c2c-a77a1523da49",
+      "submission_id": "82d1f752-9b5c-4528-b642-5f02329647ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruben L Gonzalez, https://ror.org/00hj8s172 Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75899.sa0](https://doi.org/10.7554/eLife.75899.sa0)\n\nThis is a valuable paper that reports an open-source platform for the storage and processing of single-molecule, camera-based, imaging data. The development and testing of the platform are very compelling and the platform will facilitate data sharing and reproducibility and will be of great interest to practitioners of single-molecule imaging experiments, both experienced and new to the field. The work represents significant and important steps towards unifying and standardizing how the field stores and processes data and expanding the base of researchers who can easily employ single-molecule imaging methods.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ruben L Gonzalez, https://ror.org/00hj8s172 Columbia University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.75899.sa1](https://doi.org/10.7554/eLife.75899.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mars, a molecule archive suite for reproducible analysis and reporting of single molecule properties from bioimages\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Ruben Gonzalez as the Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Eitan Lerner (Reviewer #1); Jingyi Fei (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The authors should further develop the Mars platform to: (i) expand the flexibility of the smFRET input data files in the manner described by Reviewer 2 and, if necessary, to do the same for the other various types of data files (e.g., single-molecule force-extension data from laser tweezer data, particle tracking data from DNA curtain experiments, etc.) and (ii) include validation information/reports of the kind described by Reviewer 1.\n\n2) The authors should comprehensively test and troubleshoot all of the functions of the platform using different computers and operating systems to ensure the robust performance of the platform. Reviewer 2 and her student have kindly provided a detailed, but not exhaustive, list of technical problems that they encountered and that should be resolved.\n\n3) The sample dataset of smFRET trajectories from Hellenkamp et al., (2017) that is analyzed for the work reported in this manuscript is limited in the sense that the trajectories do not exhibit transitions between different FRET efficiency states as a function of time. Given that the majority of smFRET studies typically contain trajectories that do exhibit such transitions, it is important that the authors include a second sample dataset of smFRET trajectories that do exhibit such transitions as a function of time. The authors are encouraged to analyze an already existing dataset from their own laboratory or a collaborator's laboratory or, if that is somehow not possible, to record such a dataset de novo. When adding these new analyses and revising the smFRET section of the manuscript, the authors should take care to also address Reviewer 1's comments regarding the smFRET example(s).\n\n4) The authors should revise the manuscript to include: (i) a beginners-level, practical discussion of why a platform such as Mars is needed to increase the reproducibility of data storage and processing practices (including examples of real-world problems that Mars would address, minimize, or eliminate) and (ii) an easy-to-follow, brief guide explaining the use of Mars within the manuscript aimed at readers who may not necessarily be ready to use the platform or the associated Jupyter notebooks and/or interactive features of the website.\n\n5) The step-by-step instructions for using Mars that are included on the website should be expanded to include further details, particularly in terms of the output files, as well as to include a general troubleshooting guide for users.\n\nReviewer #1 (Recommendations for the authors):\n\nThis report constitutes the review of the manuscript titled \"Mars, a molecule archive suite for reproducible analysis and reporting of single molecule properties from bioimages\", by Huisjes, Retzer et al. With the ever increasing interest in these techniques, accompanied by ever increasing experimental schemes and analytical frameworks it becomes difficult to report such experimental results in a manner that is universal, one which can adapt to any type of experiment and analysis, one which assists in reproducibility, and one which will keep the data as compact as possible, yet its usage as efficient as possible. This work introduces a novel platform for the reproducible archiving of camera-based single-molecule imaging experiments. This work will appeal to practitioners of single-molecule imaging experiments, both experienced and newbies. The readers of this work would benefit from understanding how to employ a rational data archiving process using Mars, following three examples the authors provide, which exhibit the generality of the platform and its ease of use. Readers who might want to employ Mars for their own single-molecule imaging measurements can also experience an intuitive guide on Mars GitHub or in Jupyter Notebooks the authors provide. However, I believe that it would even be better if the authors could provide a guidance chapter in the manuscript itself, in addition and before sending the readers to the guide online \u2013 this way, readers would already have an idea of what to expect when they try constructing their own Mars data archiving.\n\nI judge that to the most part, the manuscript shows concisely and clearly how to use Mars for proper archiving of single-molecule imaging data, in a rational manner, that can be easily read, well understood, without loss of information and with the ability to easily track back and perform changes. The manuscript is very well polished, the figures provide a self-explanatory graphical guide \u2013 overall I enjoyed reading it and see how much this tool can advance the field. The importance of this work is very clear to experienced practitioners, who already know what it takes to provide extensive reports on their results, after being analyzed, corrected, filtered and analyzed in one combination of ways out of many others. Although I am very positive about this manuscript, I have a few suggestions for the authors:\n\n1. Readers of the manuscript who are not yet experienced with single-molecule imaging could benefit from a pragmatical discussion that will explain the need for Mars for reproducibility and/or readability of the data: the different types of filtrations a practitioner may perform, all are context dependent, and what might happen if those are not properly documented and annotated. I suggest providing user examples of what might go wrong, and how Mars minimizes such cases.\n\n2. The authors provide a very nice interactive as well as notebook guidance for readers of the manuscript who might want to get acquainted with Mars. However, I think readers of the manuscript would benefit from such a guide already in the manuscript, which will assist them in understanding what to expect when they move to try using Mars. This way, readers who are not yet ready to test Mars, would already be able to follow the guide in text, and then decide if they move to test Mars in action for their datasets.\n\n3. The analysis pipeline provides a nice abstraction all the way from the raw data to the filtered information. However, another layer of validation should be added afterwards. For example, procedures that test all the filtered smFRET data for features that should exist in the data: (1) sum of all donor-excited signals should be constant after corrections were applied; (2) sum of all intensities should be constant, after corrections were applied, (3) transitions between states (FRET dynamics, or photobleaching) should exhibit donor and acceptor anti-correlation; (4) transitions between Stoichiometry states should exhibit donor and acceptor anti-correlation. Adding a filtered data validation procedure will enhance the procedure even better, and provide another layer of credibility, perhaps even in an automated report as an outcome of the validation step applied on all molecules.\n\n4. Comments on the smFRET example:\n\na. The authors chose to show the TIRF camera-based smFRET data from Hellenkamp et al., (2017), of a static mixture of two DNA FRET constructs with two different mean FRET efficiencies. The procedure they describe was designed to fit the treatment of the static mixture of two types of immobilized molecules. Therefore, the analysis pipeline employed the change point finder only for the identification of photo-bleaching steps, and not for identifying dynamic FRET transitions. While this might be fine for the static heterogeneity of this sample, for the analysis framework to be as generic as possible for analyzing smFRET measurements, it is important to include a step of identification of state dwells within each single molecule FRET trajectory. Importantly, the FRET calculations should be performed on dwells that have been proven to belong to a single state.\n\nb. The analysis pipeline was designed to filter out traces with large intensity changes that are not due to photo-bleaching. Large intensity changes might be interesting if one of the FRET dyes experiences quantum-yield changes that are unrelated to FRET (e.g., smFRET involving Cy3 and Cy5). It could be interesting in the proper context, and hence should allow the user to change the data rejection criteria, in a context-dependent manner.\n\nc. Correction factors 1: the text relies on the correction factors presented by the multi-lab work of Hellenkamp et al., (2017). That approach uses the Lee et al., (2005) approach for calculating the \u03b3 correction factor, which relies on the linear dependence of the inverse of the mean stoichiometry on the mean proximity ratio, of multiple single-population smFRET-ALEX measurements. While this correction factor procedure is used by many and is very common, it does suffer from assuming that both donor and acceptor fluorescence quantum yields change in the same manner when positioning the same donor and acceptor dyes at different positions along the same molecule (a dsDNA in this case). This might not be true, as different abelling positions introduce different dye microenvironments, which may introduce different quenching rates that are unrelated to FRET. In other words, it is possible (and not uncommon at all) that different molecules with different FRET values will also be associated with different \u03b3 factors. There are alternatives that can assist in calculating per-population \u03b3 factors, which require knowledge of the donor and acceptor fluorescence lifetimes per population. However, this is not yet possible in immobilized TIRF camera-based smFRET. Therefore, in page 10 of the bioRxiv preprint, when the authors present the \u03b3 correction factor, I suggest they add: \u201c\u2026 , under the assumption that placing the same dyes at different bases along the DNA molecule does not influence the ratio of the acceptor and donor fluorescence quantum yields\u201d.\n\nd. Correction factors 2: the text relies on the correction factors presented by the multi-lab work of Hellenkamp et al., (2017). That approach uses the Lee et al., (2005) approach for calculating the \u03b3 correction factor. However, Hellenkamp et al., (2017) and not Lee et al., (2005) is cited. I ask the authors to cite Lee et al., (2005), when providing the explanation on the \u03b2- and \u03b3-factor calculations.\n\ne. When explaining the FRET-related calculations, sometimes the variables are not explained: (i) in steps 4 and 5, explicitly explain the readers what are FA|A and FD|D; (ii) \"FA|D stores the fully corrected acceptor fluorescence intensity value\"; (iii) explain for FRET novices what do the variables in equations 1 and 2 mean.\n\nf. At the bottom of page 6 of the bioRxiv preprint, the authors provide their estimations of the FRET efficiency values, and it seems that the accuracy is high, if comparing the values to the mean values reported by Hellenkamp et al., (2017). However, the precision of the reported values (E1-lo = 0.14 {plus minus} 0.13 and E1-mid = 0.51 {plus minus} 0.09) are low compared to the precisions in Hellenlamp et al., (E1-lo = 0.15 {plus minus} 0.02 and E1-mid = 0.56 {plus minus} 0.03). Why such imprecisions? Please explain the readers in the text.\n\nReviewer #2 (Recommendations for the authors):\n\nTechnical issues encountered:\n\n1. Overall the step-wise tutorial on the website is well organized, but can be further improved. Particularly, the expected results/output files/windows should also be included, similar as the parameter setting for the input part. Sometimes it\u2019s unclear what the correct output format should be from each operation.\n\n2. We noticed Mac and Windows systems could encounter different issues. Taking the FRET analysis as an example, we had to switch between the Windows and Mac systems to get it through completely, because certain steps worked in one but not the other. For example:\n\n(1) When we tried to convert the example FRET video to contain channel information using script 1, the Windows system generated a blank image. However, it ran correctly on Mac.\n\n(2) There was some problem with transforming the ROIs to the right part of the split view on a Mac system. We used the same parameters as the instruction, but all the coordinates disappeared after doing Transform ROIs. But it worked well on a windows system.\n\n(3) On a Mac system, after running peak tracer or molecular integrator, we were not able to generate a GUI interface containing the actual output, but a console saying the analysis is successful.\n\n3. It\u2019s very confusing that the output file of the converted FRET data is a composite image of two channels. It is not explained what each of the channels is until explaining the output file of the molecular integrator step. Echoing my point 1, it is necessary to explain to the users the f\u2019rmat of the output files. The composite image makes it appear that two channels are the s\u2019me without any explanation, and each channel is the sum of the red and green signal.\n",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7220c796-82b2-4be4-a07c-0fff69160d1c",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C1",
+      "claim": "New imaging approaches are generating larger and more complex datasets, revealing the time evolution of individual cells and biomolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid development of new imaging approaches is generating larger and more complex datasets, revealing the time evolution of individual cells and biomolecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field presented in the abstract without specific experimental data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "5ff66810-81c8-443d-a878-841c1055dd29",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C2",
+      "claim": "Single-molecule techniques provide access to rare intermediates in complex, multistage molecular pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule techniques, in particular, provide access to rare intermediates in complex, multistage molecular pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about single-molecule techniques in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "2b21138c-37b5-4db5-8e53-c2a920cd8345",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C3",
+      "claim": "Few standards exist for processing single-molecule datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, few standards exist for processing these information-rich datasets, posing challenges for wider dissemination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "7e6a0491-2d3d-4f8c-bd87-9db5d97a661c",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C4",
+      "claim": "Mars is an open-source platform for storing and processing image-derived properties of biomolecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present Mars, an open-source platform for storing and processing image-derived properties of biomolecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the software presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "dd877654-dd91-48ba-b7e8-5a2d4fac75b0",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C5",
+      "claim": "Mars provides Fiji/ImageJ2 commands written in Java for common single-molecule analysis tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Mars provides Fiji/ImageJ2 commands written in Java for common single-molecule analysis tasks using a Molecule Archive architecture that is easily adapted to complex, multistep analysis workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of Mars as presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "e0998f64-a169-4824-acd7-26c8155a9768",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C6",
+      "claim": "Mars uses a Molecule Archive architecture that is easily adapted to complex, multistep analysis workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "Mars provides Fiji/ImageJ2 commands written in Java for common single-molecule analysis tasks using a Molecule Archive architecture that is easily adapted to complex, multistep analysis workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the architecture of Mars as presented in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "35e97422-c87a-4c5a-9636-f999645ef2f8",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C7",
+      "claim": "The Mars graphical user interface is written in JavaFX.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive graphical user interface written in JavaFX enhances biomolecule feature exploration by providing charting, tagging, region highlighting, scriptable dashboards, and interactive image views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical implementation of the Mars GUI.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "56a828c4-1450-42bf-922a-8fffe0892d87",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C8",
+      "claim": "The Mars GUI provides charting, tagging, region highlighting, scriptable dashboards, and interactive image views.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive graphical user interface written in JavaFX enhances biomolecule feature exploration by providing charting, tagging, region highlighting, scriptable dashboards, and interactive image views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists the features of the Mars GUI as described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "a9605c3f-03bf-4bac-9e38-83c177daf466",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C9",
+      "claim": "Molecule Archives can be opened in Python using PyImageJ.",
+      "claim_type": "EXPLICIT",
+      "source": "The interoperability of ImageJ2 ensures Molecule Archives can easily be opened in multiple environments, including those written in Python using PyImageJ, for interactive scripting and visualization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interoperability features of Mars.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "ca230ceb-8eaf-4b5b-a68f-ef578ab4de95",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C10",
+      "claim": "Reproducible analysis of bioimaging data is a major challenge slowing scientific progress.",
+      "claim_type": "EXPLICIT",
+      "source": "Reproducible analysis of bioimaging data is a major challenge slowing scientific progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general problem in the field in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "aae1cc5f-50b3-4485-9b2f-fd09c4da5c66",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C11",
+      "claim": "New imaging techniques generate datasets with increasing complexity that must be efficiently analyzed, classified, and shared.",
+      "claim_type": "EXPLICIT",
+      "source": "New imaging techniques generate datasets with increasing complexity that must be efficiently analyzed, classified, and shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of imaging technology in the Introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "63844ea8-b2f7-4ad6-ba5c-fb5169100600",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C12",
+      "claim": "The challenge of reproducible bioimaging analysis has gained wide recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenge has gained wide recognition (Carpenter et al., 2012; Eliceiri et al., 2012; Lerner et al., 2021; Meijering et al., 2016; Ouyang and Zimmer, 2017), which has led to the development of software frameworks for curating images (Allan et al., 2012; Kvilekval et al., 2010) and analysis workflows (Rubens et al., 2020), metadata reporting standards (Goldberg et al., 2005) and the creation of public archives to increase data availability (Williams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "3e79fd7c-f8a5-472c-ab95-cf5c8152e48b",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C13",
+      "claim": "Software frameworks have been developed for curating images and analysis workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenge has gained wide recognition (Carpenter et al., 2012; Eliceiri et al., 2012; Lerner et al., 2021; Meijering et al., 2016; Ouyang and Zimmer, 2017), which has led to the development of software frameworks for curating images (Allan et al., 2012; Kvilekval et al., 2010) and analysis workflows (Rubens et al., 2020), metadata reporting standards (Goldberg et al., 2005) and the creation of public archives to increase data availability (Williams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific software frameworks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "c7076914-9cef-4ca6-841f-60d362c52477",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C14",
+      "claim": "Metadata reporting standards have been developed for bioimaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenge has gained wide recognition (Carpenter et al., 2012; Eliceiri et al., 2012; Lerner et al., 2021; Meijering et al., 2016; Ouyang and Zimmer, 2017), which has led to the development of software frameworks for curating images (Allan et al., 2012; Kvilekval et al., 2010) and analysis workflows (Rubens et al., 2020), metadata reporting standards (Goldberg et al., 2005) and the creation of public archives to increase data availability (Williams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Goldberg et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "32237f95-e7da-46a7-9f5f-c790329db554",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C15",
+      "claim": "Public archives have been created to increase data availability.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenge has gained wide recognition (Carpenter et al., 2012; Eliceiri et al., 2012; Lerner et al., 2021; Meijering et al., 2016; Ouyang and Zimmer, 2017), which has led to the development of software frameworks for curating images (Allan et al., 2012; Kvilekval et al., 2010) and analysis workflows (Rubens et al., 2020), metadata reporting standards (Goldberg et al., 2005) and the creation of public archives to increase data availability (Williams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Williams et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "f2aed97c-af04-473c-b9d9-c25bba776349",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C16",
+      "claim": "Few standards exist for the reproducible analysis and reuse of image-derived properties.",
+      "claim_type": "EXPLICIT",
+      "source": "However, few standards exist for the reproducible analysis and reuse of image-derived properties and those that have been developed for single molecule fluorescence (Greenfeld et al., 2015; Ingargiola et al., 2016) offer limited options for adaption to other experimental configurations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field with citations to existing standards.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "0c03d19b-faa1-4064-aafa-679086da89ed",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C17",
+      "claim": "Existing standards for single molecule fluorescence offer limited options for adaptation to other experimental configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, few standards exist for the reproducible analysis and reuse of image-derived properties and those that have been developed for single molecule fluorescence (Greenfeld et al., 2015; Ingargiola et al., 2016) offer limited options for adaption to other experimental configurations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of existing standards with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "84e39d31-948d-4f46-be92-b123c7dbfca4",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C18",
+      "claim": "Multicolor fluorescence imaging has revealed the conformational dynamics of membrane transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicolor fluorescence imaging has revealed the conformational dynamics of membrane transport (Akyuz et al., 2013; Erkens et al., 2013), molecular states underlying assembly and transcription by RNA polymerase (Baek et al., 2021; Duchi et al., 2016), and DNA replication dynamics (Duderstadt et al., 2016; Scherr et al., 2018; Ticau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "ff648af9-6080-410c-b681-857b0d7d1509",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C19",
+      "claim": "Multicolor fluorescence imaging has revealed molecular states underlying assembly and transcription by RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicolor fluorescence imaging has revealed the conformational dynamics of membrane transport (Akyuz et al., 2013; Erkens et al., 2013), molecular states underlying assembly and transcription by RNA polymerase (Baek et al., 2021; Duchi et al., 2016), and DNA replication dynamics (Duderstadt et al., 2016; Scherr et al., 2018; Ticau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "28d10f65-2441-46ba-a016-69a600767f57",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C20",
+      "claim": "Multicolor fluorescence imaging has revealed DNA replication dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Multicolor fluorescence imaging has revealed the conformational dynamics of membrane transport (Akyuz et al., 2013; Erkens et al., 2013), molecular states underlying assembly and transcription by RNA polymerase (Baek et al., 2021; Duchi et al., 2016), and DNA replication dynamics (Duderstadt et al., 2016; Scherr et al., 2018; Ticau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "4373d5b2-91b5-404c-aff8-092b34214e19",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C21",
+      "claim": "Single-molecule imaging approaches combined with spatial tracking have clarified how exchange events and conformational changes modulate the function of motor proteins and replication, transcription, and DNA repair machineries.",
+      "claim_type": "EXPLICIT",
+      "source": "These approaches have been combined with spatial tracking on biological structures to clarify how exchange events and conformational changes modulate the function of motor proteins, as well as replication, transcription, and DNA repair machineries (Crickard et al., 2020; Lewis et al., 2020; Niekamp et al., 2021; Scherr et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "39db714d-d4cf-474b-a2ad-6fd1957a5b8f",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C22",
+      "claim": "Biological macromolecules are routinely attached to microspheres for controlled studies of forces and torques involved in basic biological reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological macromolecules are routinely attached to microspheres which allow for controlled studies of the forces and torques involved in basic biological reactions (Agarwal and Duderstadt, 2020; Dulin et al., 2013; Neuman and Nagy, 2008; Revyakin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "3daa2549-5e2b-4c16-9322-cd132c718c8b",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C23",
+      "claim": "Improvements in camera sensor sensitivity, fluorophore brightness, and new illumination strategies have enabled time-resolved studies of biological processes in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "And finally, improvements in the sensitivity of camera sensors, fluorophore brightness, and new illumination strategies Gao et al., 2012; Tokunaga et al., 2008 have enabled time-resolved studies of biological processes in live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific technological developments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "394e3dc9-ade2-4bed-b207-7d9c61c694db",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C24",
+      "claim": "Single-molecule studies have revealed frequent exchange of factors during normal operation of replisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These developments have revealed frequent exchange of factors during normal operation of replisomes (Beattie et al., 2017; Kapadia et al., 2020) and the dynamics of the transcription-factor target site search (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "465c8275-2f01-4189-ae59-e5c82df12856",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C25",
+      "claim": "Single-molecule studies have revealed the dynamics of the transcription-factor target site search.",
+      "claim_type": "EXPLICIT",
+      "source": "These developments have revealed frequent exchange of factors during normal operation of replisomes (Beattie et al., 2017; Kapadia et al., 2020) and the dynamics of the transcription-factor target site search (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "00c7c004-6e73-41b8-b535-731d624858e2",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C26",
+      "claim": "Discovery of new biological phenomena from single-molecule observations depends on long, multistage image analysis workflows, followed by careful grouping and feature classification.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of new biological phenomena from these multidimensional observations, depends on long, multistage image analysis workflows, followed by careful grouping and feature classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the requirements for single-molecule analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "f2335415-7b2a-4a3f-8ef7-edd535ee9f6f",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C27",
+      "claim": "Molecule Archives contain three record types: Properties, Metadata, and Molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecule Archives contain three record types: Properties, Metadata, and Molecule (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structure of Molecule Archives as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "c2c69260-3709-46fe-8c80-00b7ce90bcd7",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C28",
+      "claim": "All Molecule and Metadata records are assigned universally unique ids (uids) upon creation.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify the mechanics of record retrieval and the process of dataset merging, all Molecule and Metadata records are assigned human-readable, base58-encoded universally uids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of the Molecule Archive architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "621edbcf-abad-4277-a11e-4e75193486ac",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C29",
+      "claim": "UIDs are base58-encoded.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify the mechanics of record retrieval and the process of dataset merging, all Molecule and Metadata records are assigned human-readable, base58-encoded universally uids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the encoding format of UIDs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "8ceeb0ef-4874-403c-81c1-a091a7af6591",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C30",
+      "claim": "Storing records using uids reduces indexing requirements and facilitates scalable processing using uid-to-record maps that support multithreaded operations.",
+      "claim_type": "EXPLICIT",
+      "source": "Storing records using uids reduces indexing requirements, facilitates scalable processing using uid-to-record maps that support multithreaded operations, and ensures the traceability of records through analysis workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benefits of using UIDs in the architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "e906eeda-06b6-4f18-8dfe-672bbe685f04",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C31",
+      "claim": "UIDs ensure the traceability of records through analysis workflows.",
+      "claim_type": "EXPLICIT",
+      "source": "Storing records using uids reduces indexing requirements, facilitates scalable processing using uid-to-record maps that support multithreaded operations, and ensures the traceability of records through analysis workflows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of using UIDs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "6b8beccd-9e6d-4f26-8c8d-2b568efcaefc",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C32",
+      "claim": "Molecule Archives contain a single Properties record with the type of the Molecule Archive and global information about the Molecule Archive contents.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecule Archives contain a single Properties record with the type of the Molecule Archive and global information about the Molecule Archive contents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Properties record structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "b5140221-d3fd-4c55-9bf5-f5085e9ed570",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C33",
+      "claim": "Metadata records contain experimental information about the images used for biomolecule analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Metadata records contain experimental information about the images used for biomolecule analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Metadata record structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "af899d9c-4b55-4331-80d3-65cf7a295730",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C34",
+      "claim": "Image metadata is stored in OME format.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure compatibility with the broadest set of image formats and maximum reusability, image dimensionality, timepoints, channels, filters, camera settings, and other microscope information are stored in OME format (Goldberg et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the format used for storing image metadata with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "065abb0d-b557-4096-848f-af0e23ce717d",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C35",
+      "claim": "Molecule Archives do not store the raw images, only the image-derived properties and the source directory containing the project.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecule Archives do not store the raw images, only the image-derived properties and the source directory containing the project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what is stored in Molecule Archives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "22ffbdde-7494-483a-a0aa-167686a0bfa2",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C36",
+      "claim": "Interactive image views linked to molecule records are supported through big data viewer (BDV) integration with HD5 and N5 formatted images.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, interactive image views linked to molecule records are supported through big data viewer (BDV) integration (Pietzsch et al., 2015) with HD5 and N5 (Stephan Saalfeld et al., 2022) formatted images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image viewing capabilities with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "8cad2a0b-222a-43ea-8711-df3bd30f0197",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C37",
+      "claim": "Molecule records contain a table that typically contains the position and intensity over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecule records contain fields for convenient storage of common image-derived properties of biomolecules. This includes a table that typically contains the position and intensity over time, the uid of the Metadata record containing the primary experimental information, and the index of the image containing the biomolecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of Molecule records.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "175b1a4c-d2cf-4dbb-b13e-c9a126d8cf7a",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C38",
+      "claim": "Mars comes with kinetic change point (KCP) commands for unbiased identification of distinct linear regimes and steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Mars comes with kinetic change point (KCP) commands for unbiased identification of distinct linear regimes and steps (e.g. polymerase synthesis rate, FRET states, and dye bleaching) (Hill et al., 2018), which are stored in segment tables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of Mars with a citation to the algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "b551ec57-cee5-4e19-9731-4c458f7bc5c3",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C39",
+      "claim": "Molecule Archives are saved in JSON format.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecule Archives are saved in JSON format using the field schema outlined in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the file format used for saving Molecule Archives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "532d2067-2ebd-4e1a-adb6-284b2de028db",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C40",
+      "claim": "By default, Molecule Archives are written to single files with a yama extension using smile encoding and compression of molecule table data to reduce file size.",
+      "claim_type": "EXPLICIT",
+      "source": "By default, Molecule Archives are written to single files with a yama extension using smile encoding and compression of molecule table data to reduce file size, but can also be saved and reopened in plaintext JSON.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the default file format and compression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "650601bd-13e0-4e3c-8127-af8c404617d1",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C41",
+      "claim": "Mars supports processing of very large datasets that typically do not fit in physical memory using a virtual storage mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Mars supports processing of very large datasets, that typically do not fit in physical memory using a virtual storage mode in which records are retrieved only on-demand supported by a simple filesystem-backed record hierarchy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of Mars for handling large datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "48a3023d-de4e-4c96-a912-c416c58026ce",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C42",
+      "claim": "The Mars Rover is a user interface in JavaFX that provides access to all information stored in Molecule Archives.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify this process, we developed a user interface in JavaFX, called the Mars Rover, that provides access to all information stored in Molecule Archives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Mars Rover user interface.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "55c3629d-1e58-45f0-8895-170fd6f0a0c2",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C43",
+      "claim": "The Mars Rover is integrated into Fiji with windows available for all open Molecule Archives.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mars Rover is integrated into Fiji with windows available for all open Molecule Archives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the integration of Mars Rover with Fiji.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "db8449ca-0cc5-4fa9-bb1d-d6b95522a604",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C44",
+      "claim": "Mars comes with a collection of several dozen Fiji/ImageJ2 commands for common single-molecule image processing and analysis tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Mars comes with a collection of several dozen Fiji/ImageJ2 commands for common single-molecule image processing and analysis tasks (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the commands available in Mars as shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "25c40174-2421-46b0-90bd-4af964978b84",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C45",
+      "claim": "Mars has commands devoted to interoperability with other common formats including TrackMate, single molecule dataset (SMD), and LUMICKS h5 files.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Mars has commands devoted to interoperability with other common formats. This includes importers for TrackMate (see the next section), single molecule dataset (SMD) (Greenfeld et al., 2015), and LUMICKS h5 files from optical tweezers experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interoperability features of Mars with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "ea631e3c-4553-4153-a55a-0db1a8b232b8",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C46",
+      "claim": "An action was developed to export TrackMate results to Molecule Archive format.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate how this interoperability can be further extended, we developed an action to export TrackMate results to Molecule Archive format (Source code available at https://github.com/duderstadt-lab/mars-trackmate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific integration developed for Mars.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "9aef1acb-b8d3-4b7d-a24a-bfe49773f126",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C47",
+      "claim": "TrackMate is a Fiji plugin for single-particle tracking that offers several tracking algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "TrackMate is a Fiji plugin for single-particle tracking that offers several tracking algorithms with a powerful user interface with many spot filtering and track editing tools (Tinevez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes TrackMate with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "629a6bdb-8eb8-47e4-b62c-12da22b9f135",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C48",
+      "claim": "In workflow 1, RNA polymerase transcription on 21 kb DNA molecules was tracked to determine transcription rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first workflow, we determine the rate of transcription of single RNA polymerases by tracking their position as a function of time on long DNAs based on Scherr et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the first workflow application with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "9e20900c-0bda-4f09-8903-1d0e6c971d75",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C49",
+      "claim": "The observed transcription rate from workflow 1 was 53\u00b13.6 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Concluding the analysis, data exploration revealed a population-specific rate distribution (Figure 3B, right) showing an observed transcription rate of 53\u00b13.6 nt/s which is well in line with previous studies reporting transcription rates between 40\u201380 nt/s (Thomen et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the first workflow shown in Figure 3B with a citation for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "cf7b6730-9ecf-4881-927f-a0356ac296c1",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C50",
+      "claim": "Previous studies have reported transcription rates between 40\u201380 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Concluding the analysis, data exploration revealed a population-specific rate distribution (Figure 3B, right) showing an observed transcription rate of 53\u00b13.6 nt/s which is well in line with previous studies reporting transcription rates between 40\u201380 nt/s (Thomen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous literature with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "f3db5658-d076-4cf6-91d8-3af692ed323d",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C51",
+      "claim": "In workflow 2, single-molecule FRET was used to measure intramolecular distances in DNA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second workflow, we demonstrate how to accurately analyze images containing observations of single-molecule FRET based on Hellenkamp et al., 2018 and dynamic FRET arising from conformational switching of Holiday junctions (Hyeon et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the second workflow application with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "ed4d2af4-390e-4c12-80e0-49b944bfe4cc",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C52",
+      "claim": "The average corrected FRET efficiency values obtained for 1-lo and 1-mid samples were E1-lo = 0.16 \u00b1 0.11 and E1-mid = 0.53 \u00b1 0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "The average corrected E values obtained for 1-lo and 1-mid were E1-lo = 0.16 \u00b1 0.11 and E1-mid = 0.53 \u00b1 0.13 (mean \u00b1 SD) with 246 and 250 accepted molecules included in the final calculations, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the second workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "dc85f3dd-f512-41c4-9c82-6650d8eca27d",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C53",
+      "claim": "The FRET efficiency values obtained are in agreement with the results of the multilab study by Hellenkamp et al.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are in agreement with the results of the multilab study by Hellenkamp et al. (E1-lo = 0.15 \u00b1 0.02 and E1-mid = 0.56 \u00b1 0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to published benchmark values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "2a0332cd-f32a-48f6-9145-1127278f704f",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C54",
+      "claim": "Holliday junctions exhibit frequent transitions between high and low FRET states corresponding to iso-I and iso-II conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequent transitions between high and low FRET states are observed from Holliday junctions switching between iso-I and iso-II conformations (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the dynamic FRET workflow shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "537d1da1-fd09-4233-888c-f96874f29f00",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C55",
+      "claim": "The FRET efficiencies for Holliday junction conformations were Eiso-I=0.16 \u00b1 0.12 and Eiso-II=0.64 \u00b1 0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "A scatterplot of stoichiometry vs FRET efficiency for all accepted molecules has two well-defined populations (Figure 5C) which we fit with a double Gaussian distribution to obtain Eiso-I=0.16 \u00b1 0.12 and Eiso-II=0.64 \u00b1 0.13 (mean \u00b1 SD, for n=601 molecules).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the dynamic FRET workflow shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "a2352b9e-930a-436a-bb6c-c5e1b7b292b2",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C56",
+      "claim": "The transition timescales for Holliday junction conformations were \u03c4iso-I = 0.31 \u00b1 0.03 seconds and \u03c4iso-II = 0.37 \u00b1 0.04 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we determined the dwell time distributions using a simple threshold-based two state model from which we obtained the transition timescales \u03c4iso-I = 0.31 \u00b1 0.03 seconds and \u03c4iso-II = 0.37 \u00b1 0.04 seconds (mean \u00b1 standard error) (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the dynamic FRET workflow shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "b82f640f-b092-49a1-b6ce-491c1fbe7231",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C57",
+      "claim": "In workflow 3, flow magnetic tweezers were used to study DNA gyrase behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the advantages offered by Mars in the analysis of these types of data, we present a workflow studying the behavior of DNA gyrase, a topoisomerase from E. coli (N\u00f6llmann et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the third workflow application with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "d6e56005-995f-4e35-8401-c1cd5a528eaf",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C58",
+      "claim": "A positive burst rate of 1.59 cycles/s and a negative burst rate of 0.80 cycles/s were found for DNA gyrase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A positive burst rate of 1.59 cycles/s, as well as a negative burst rate of 0.80 cycles/s, were found in this experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the third workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "a9b155e1-5dcf-47c2-a9b3-5bdd11ac3ef8",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C59",
+      "claim": "The gyrase burst rates found are in agreement with those reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are in agreement with those reported previously (N\u00f6llmann et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous literature with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "c2d1c4dc-a244-43a1-892c-dc819c5f0ba7",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C60",
+      "claim": "Mars is developed open source and freely available as a collection of SciJava commands distributed through a Fiji update site.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure Mars is accessible to a large community, Mars is developed open source and freely available as a collection of SciJava commands distributed through a Fiji update site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution and accessibility of Mars.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "0a458ec5-7854-4404-a0a7-52940b366936",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C61",
+      "claim": "The Mars project is a member of the Scientific Community Image Forum.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mars project is a member of the Scientific Community Image Forum (Rueden et al., 2019) which provides a vibrant platform for new users to get help and for advanced users to find solutions to difficult image analysis problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the community support for Mars with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "9ab4cd9e-3b63-467c-aa83-6028aec87cc5",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C62",
+      "claim": "Mars uses the SCIFIO framework to convert different image formats into OME format.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Mars uses the SCIFIO framework (Hiner et al., 2016) to convert different image formats into OME format and includes a specialized image reader for more comprehensive support of images recorded using Micromanager (Edelstein et al., 2010) frequently used for single-molecule imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the image format handling capabilities of Mars with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "6c545199-a4b8-489b-9d6c-37c04d0cb30d",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C63",
+      "claim": "Mars includes a specialized image reader for images recorded using Micromanager.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Mars uses the SCIFIO framework (Hiner et al., 2016) to convert different image formats into OME format and includes a specialized image reader for more comprehensive support of images recorded using Micromanager (Edelstein et al., 2010) frequently used for single-molecule imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific feature of Mars with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "ac1f71e5-b3a1-40ec-b324-3f3372c3cf1a",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C64",
+      "claim": "Molecule Archives can be opened in Python environments by directly loading them as JSON files or using PyImageJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Molecule Archives can easily be opened in Python environments by directly loading them as JSON files or using PyImageJ (Curtis Rueden et al., 2021), which provides access to many other data manipulation and visualization libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the Python interoperability of Mars with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "e641efec-59a4-4093-8ef6-4e6cf65026fd",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C65",
+      "claim": "Raw images together with a record of the processing history for reproduction are rarely provided in single-molecule studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, data reporting standards have lagged far behind. Raw images together with a record of the processing history for reproduction are rarely provided.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current practices in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "a8e30baa-0cff-46d7-a4d8-ebb9ec1a3431",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C67",
+      "claim": "The accuracy of machine learning classifiers depends on robust training datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning algorithms are now offering the possibility to automate these tasks (Kapadia et al., 2021; Thomsen et al., 2020), but their accuracy depends on robust training datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about machine learning requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "7dea63a6-8488-4c2e-ada5-dae66e99387f",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "claim_id": "C68",
+      "claim": "Mars provides tools for the creation of large training datasets for machine learning based classifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "The powerful record tagging tools provided with Mars provide the ideal platform for the creation of large training datasets for machine learning based classifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential application of Mars features.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff28755c-cf89-43b3-9ceb-4bb6267af259",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mars is an open-source platform for storing and processing single-molecule image-derived data using a Molecule Archive architecture. The platform provides Fiji/ImageJ2 commands, a JavaFX-based graphical user interface (Mars Rover), and supports interoperability with other formats including TrackMate, SMD, and LUMICKS h5 files, with cross-platform accessibility through Python/PyImageJ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C46, C60-C64 collectively describe the Mars software architecture, features, and accessibility. The manuscript provides detailed technical descriptions of the Molecule Archive structure (C27-C41), user interface components (C42-C43), available commands (C44), interoperability features (C45-C47, C62-C64), and distribution methods (C60-C61). These are implementation details directly verifiable from the software itself and are consistently described throughout the manuscript with supporting figures (Figures 1-2, Table 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "7e0e7c6e-f901-4707-a735-eaf2f33c956b",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Workflow 1 demonstrates Mars capability for tracking RNA polymerase transcription on DNA molecules, yielding a measured transcription rate of 53\u00b13.6 nt/s, which agrees with previously reported rates of 40-80 nt/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe the first application workflow with experimental results shown in Figure 3B. The measured transcription rate (C49) is reported with error estimates and sample size, and is appropriately benchmarked against published literature (C50, Thomen et al., 2008). The workflow demonstrates the software's tracking capabilities with quantitative validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "4e5aced7-4325-4083-9811-134e6e89bf9d",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Workflow 2 demonstrates Mars capability for analyzing static single-molecule FRET data, yielding FRET efficiency values (E1-lo = 0.16 \u00b1 0.11 and E1-mid = 0.53 \u00b1 0.13) that agree with benchmark values from a multilab study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 describe the static FRET workflow with results benchmarked against the Hellenkamp et al. multilab study. The measured FRET efficiencies (C52) are reported with appropriate statistics (mean \u00b1 SD, n=246 and 250 molecules) and show good agreement with published benchmark values (C53). The workflow includes detailed correction procedures described in the Methods section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "cd832abe-3d50-4ccd-b1d4-e93747fc3a53",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mars can analyze dynamic FRET from Holliday junctions, identifying two conformational states with FRET efficiencies (Eiso-I=0.16 \u00b1 0.12 and Eiso-II=0.64 \u00b1 0.13) and transition timescales (\u03c4iso-I = 0.31 \u00b1 0.03 s and \u03c4iso-II = 0.37 \u00b1 0.04 s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe the dynamic FRET workflow with quantitative results shown in Figure 5. The FRET efficiencies (C55) and transition timescales (C56) are reported with appropriate error estimates and sample sizes (n=601 molecules for FRET, n=4,095 and 4,179 dwells for timescales). The two-state model is appropriately applied based on prior knowledge of the system, and validation criteria are provided in Figure 5\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "3b6662ce-55da-4855-bcd4-6c8f11dbea23",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Workflow 3 demonstrates Mars capability for analyzing flow magnetic tweezers data to study DNA gyrase, yielding burst rates (1.59 cycles/s positive, 0.80 cycles/s negative) that agree with previously reported values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 describe the third application workflow with results shown in Figure 6. The measured gyrase burst rates (C58) are appropriately benchmarked against published literature (C59, N\u00f6llmann et al., 2007). The workflow demonstrates Mars's virtual storage capability for large datasets (2,406 molecules) and includes detailed classification procedures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript identifies a gap in the field: while single-molecule imaging techniques are generating increasingly complex datasets that provide access to rare intermediates, few standards exist for reproducible analysis and reuse of image-derived properties, and existing standards offer limited adaptability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C10-C11, C16-C17, C26, and C65 collectively establish the motivation for Mars by describing current challenges in single-molecule data analysis. These claims about the state of the field are supported by citations to relevant literature (C16-C17) and represent generally accepted knowledge in the bioimaging community. The gap identified is reasonable and provides appropriate context for the software development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "4b4da952-4f9c-4bf4-a142-aaa605fa8e4e",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The challenge of reproducible bioimaging analysis has gained recognition, leading to development of software frameworks, metadata standards, and public archives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 describe prior work in the field with appropriate citations to established software frameworks (Allan et al., 2012; Kvilekval et al., 2010; Rubens et al., 2020), metadata standards (Goldberg et al., 2005), and public archives (Williams et al., 2017). These claims accurately represent the cited work and provide appropriate context for understanding the contribution of Mars.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single-molecule imaging techniques have revealed diverse biological phenomena including membrane transport dynamics, RNA polymerase assembly, DNA replication dynamics, motor protein function, and transcription factor search dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C25 describe applications of single-molecule techniques with appropriate citations to published studies. These claims accurately represent the cited literature and provide context for the types of experiments Mars is designed to analyze. The claims are supported by multiple independent studies in each area.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "e9c87390-3b69-42a9-9f8e-ca7e6e3f490c",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TrackMate is a Fiji plugin for single-particle tracking that offers several tracking algorithms with a powerful user interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 accurately describes TrackMate based on the cited reference (Tinevez et al., 2017). This is an accurate representation of existing software that Mars integrates with, providing context for the interoperability features described in C46.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    },
+    {
+      "id": "6cf16b29-4a5d-4544-89fa-08b562bad276",
+      "content_id": "0d2c3a07-1d74-4e2a-87b0-8f50e0a7ea30",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mars provides tools for creating training datasets for machine learning classifiers, which depend on robust training data for accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C67 correctly states that machine learning classifier accuracy depends on robust training datasets (supported by citations). However, C68 claims Mars provides an \"ideal platform\" for creating training datasets based on its tagging tools, but this is speculative. No machine learning workflows are demonstrated, no training datasets are created, and no validation of Mars's suitability for this purpose is provided. This represents potential future work rather than a demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:35:59.378735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7e6a0491-2d3d-4f8c-bd87-9db5d97a661c",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "dd877654-dd91-48ba-b7e8-5a2d4fac75b0",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "e0998f64-a169-4824-acd7-26c8155a9768",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "35e97422-c87a-4c5a-9636-f999645ef2f8",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "56a828c4-1450-42bf-922a-8fffe0892d87",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "f2335415-7b2a-4a3f-8ef7-edd535ee9f6f",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "c2c69260-3709-46fe-8c80-00b7ce90bcd7",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "621edbcf-abad-4277-a11e-4e75193486ac",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "8ceeb0ef-4874-403c-81c1-a091a7af6591",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "e906eeda-06b6-4f18-8dfe-672bbe685f04",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "6b8beccd-9e6d-4f26-8c8d-2b568efcaefc",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "b5140221-d3fd-4c55-9bf5-f5085e9ed570",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "af899d9c-4b55-4331-80d3-65cf7a295730",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "065abb0d-b557-4096-848f-af0e23ce717d",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "22ffbdde-7494-483a-a0aa-167686a0bfa2",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "8cad2a0b-222a-43ea-8711-df3bd30f0197",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "175b1a4c-d2cf-4dbb-b13e-c9a126d8cf7a",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "b551ec57-cee5-4e19-9731-4c458f7bc5c3",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "532d2067-2ebd-4e1a-adb6-284b2de028db",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "650601bd-13e0-4e3c-8127-af8c404617d1",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "48a3023d-de4e-4c96-a912-c416c58026ce",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "55c3629d-1e58-45f0-8895-170fd6f0a0c2",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "db8449ca-0cc5-4fa9-bb1d-d6b95522a604",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "25c40174-2421-46b0-90bd-4af964978b84",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "ea631e3c-4553-4153-a55a-0db1a8b232b8",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "c2d1c4dc-a244-43a1-892c-dc819c5f0ba7",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "0a458ec5-7854-4404-a0a7-52940b366936",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "9ab4cd9e-3b63-467c-aa83-6028aec87cc5",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "6c545199-a4b8-489b-9d6c-37c04d0cb30d",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "ac1f71e5-b3a1-40ec-b324-3f3372c3cf1a",
+      "result_id": "ff28755c-cf89-43b3-9ceb-4bb6267af259"
+    },
+    {
+      "claim_id": "629a6bdb-8eb8-47e4-b62c-12da22b9f135",
+      "result_id": "7e0e7c6e-f901-4707-a735-eaf2f33c956b"
+    },
+    {
+      "claim_id": "9e20900c-0bda-4f09-8903-1d0e6c971d75",
+      "result_id": "7e0e7c6e-f901-4707-a735-eaf2f33c956b"
+    },
+    {
+      "claim_id": "cf7b6730-9ecf-4881-927f-a0356ac296c1",
+      "result_id": "7e0e7c6e-f901-4707-a735-eaf2f33c956b"
+    },
+    {
+      "claim_id": "f3db5658-d076-4cf6-91d8-3af692ed323d",
+      "result_id": "4e5aced7-4325-4083-9811-134e6e89bf9d"
+    },
+    {
+      "claim_id": "ed4d2af4-390e-4c12-80e0-49b944bfe4cc",
+      "result_id": "4e5aced7-4325-4083-9811-134e6e89bf9d"
+    },
+    {
+      "claim_id": "dc85f3dd-f512-41c4-9c82-6650d8eca27d",
+      "result_id": "4e5aced7-4325-4083-9811-134e6e89bf9d"
+    },
+    {
+      "claim_id": "2a0332cd-f32a-48f6-9145-1127278f704f",
+      "result_id": "cd832abe-3d50-4ccd-b1d4-e93747fc3a53"
+    },
+    {
+      "claim_id": "537d1da1-fd09-4233-888c-f96874f29f00",
+      "result_id": "cd832abe-3d50-4ccd-b1d4-e93747fc3a53"
+    },
+    {
+      "claim_id": "a2352b9e-930a-436a-bb6c-c5e1b7b292b2",
+      "result_id": "cd832abe-3d50-4ccd-b1d4-e93747fc3a53"
+    },
+    {
+      "claim_id": "b82f640f-b092-49a1-b6ce-491c1fbe7231",
+      "result_id": "3b6662ce-55da-4855-bcd4-6c8f11dbea23"
+    },
+    {
+      "claim_id": "d6e56005-995f-4e35-8401-c1cd5a528eaf",
+      "result_id": "3b6662ce-55da-4855-bcd4-6c8f11dbea23"
+    },
+    {
+      "claim_id": "a9b155e1-5dcf-47c2-a9b3-5bdd11ac3ef8",
+      "result_id": "3b6662ce-55da-4855-bcd4-6c8f11dbea23"
+    },
+    {
+      "claim_id": "7220c796-82b2-4be4-a07c-0fff69160d1c",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "5ff66810-81c8-443d-a878-841c1055dd29",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "2b21138c-37b5-4db5-8e53-c2a920cd8345",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "ca230ceb-8eaf-4b5b-a68f-ef578ab4de95",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "aae1cc5f-50b3-4485-9b2f-fd09c4da5c66",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "f2aed97c-af04-473c-b9d9-c25bba776349",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "0c03d19b-faa1-4064-aafa-679086da89ed",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "00c7c004-6e73-41b8-b535-731d624858e2",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "e641efec-59a4-4093-8ef6-4e6cf65026fd",
+      "result_id": "96bcaa7c-06d1-431d-a4da-7a42b2f8229b"
+    },
+    {
+      "claim_id": "63844ea8-b2f7-4ad6-ba5c-fb5169100600",
+      "result_id": "4b4da952-4f9c-4bf4-a142-aaa605fa8e4e"
+    },
+    {
+      "claim_id": "3e79fd7c-f8a5-472c-ab95-cf5c8152e48b",
+      "result_id": "4b4da952-4f9c-4bf4-a142-aaa605fa8e4e"
+    },
+    {
+      "claim_id": "c7076914-9cef-4ca6-841f-60d362c52477",
+      "result_id": "4b4da952-4f9c-4bf4-a142-aaa605fa8e4e"
+    },
+    {
+      "claim_id": "32237f95-e7da-46a7-9f5f-c790329db554",
+      "result_id": "4b4da952-4f9c-4bf4-a142-aaa605fa8e4e"
+    },
+    {
+      "claim_id": "84e39d31-948d-4f46-be92-b123c7dbfca4",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "ff648af9-6080-410c-b681-857b0d7d1509",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "28d10f65-2441-46ba-a016-69a600767f57",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "4373d5b2-91b5-404c-aff8-092b34214e19",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "39db714d-d4cf-474b-a2ad-6fd1957a5b8f",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "3daa2549-5e2b-4c16-9322-cd132c718c8b",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "394e3dc9-ade2-4bed-b207-7d9c61c694db",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "465c8275-2f01-4189-ae59-e5c82df12856",
+      "result_id": "73927183-2d9a-4e45-9cd3-dadc47cf9c23"
+    },
+    {
+      "claim_id": "9aef1acb-b8d3-4b7d-a24a-bfe49773f126",
+      "result_id": "e9c87390-3b69-42a9-9f8e-ca7e6e3f490c"
+    },
+    {
+      "claim_id": "a8e30baa-0cff-46d7-a4d8-ebb9ec1a3431",
+      "result_id": "6cf16b29-4a5d-4544-89fa-08b562bad276"
+    },
+    {
+      "claim_id": "7dea63a6-8488-4c2e-ada5-dae66e99387f",
+      "result_id": "6cf16b29-4a5d-4544-89fa-08b562bad276"
+    }
+  ],
+  "comparisons": []
+}

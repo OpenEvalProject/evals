@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Lifespan variability among genetically identical individuals is comparable to that in outbred populations and is largely determined by non-genetic, non-environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C12 establish that genetically identical C. elegans show lifespan variability comparable to humans (CV 0.19-0.23 vs 0.17-0.21), supported by multiple citations. Claims C8-C11 document that genetics accounts for <10-30% of human lifespan variation, with the remainder attributed to non-genetic, non-environmental factors. These claims collectively provide strong support from both model organism data and human twin studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C79",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "Expression of 10 out of 22 microRNA promoter::GFP reporters predicts individual lifespan, explaining 17-33% of lifespan variability among genetically identical C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27, C79, and C82 consistently report that 10 of 22 (nearly half) of the tested reporters predict lifespan with R\u00b2 \u2265 0.15, explaining 17-33% of lifespan variation. This is supported by extensive data in Table 2 and Figure 2. Claims C86-C87 provide interpretive context that this is a common property among miRNA promoters. The statistical threshold (R\u00b2 \u2265 0.15) is justified as empirically robust across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "22 PmiRNA::GFP reporter strains were selected based solely on detectability and monitored longitudinally in a high-density culture system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 describe the experimental design: 22 reporters selected from 73 strains based only on fluorescence detectability (C19-C20), most with no known lifespan phenotype (C21), crossed into sterile background (C22), and imaged every 4 hours from hatch to death (C23). This unbiased selection criterion strengthens the finding that lifespan prediction is common. The methodology is clearly described and appropriate for the study goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Most PmiRNA::GFP reporters decrease with age, consistent with sequencing data, though three reporters unusually increase over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 states the majority of reporters decrease with age, supported by Figure 1c and citations to microarray and sequencing studies. Claims C25-C26 identify three reporters (Pmir-51, Pmir-242, Pmir-240-786) that increase with age, also confirmed by sequencing data. This validates that the reporters reflect endogenous miRNA transcription patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Lifespan prediction is not a generic property of all GFP transgenes but is specific to certain promoters, indicating transcriptional rather than post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C88 show that 12 of 22 miRNA reporters and two non-miRNA reporters (Pmyo-2::GFP, Pcpna-2::GFP) did not predict lifespan, supported by Figure 2\u2014supplement 1 and Table S3. Claims C89-C91 infer that this specificity rules out generic GFP expression capacity or post-transcriptional mechanisms as explanations. The logic is sound: if post-transcriptional processes were responsible, all GFP reporters would behave similarly. Claim C28 correctly defines R\u00b2 as the fraction of lifespan variation explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C83"
+    ],
+    "result": "Extended lifespan is associated with retention of youthful gene expression patterns, with most predictive reporters showing positive correlation and one showing negative correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C83 describe the pattern: reporters that decrease with age correlate positively with lifespan (high expression = long life), while Pmir-240-786::GFP increases with age and correlates negatively (low expression = long life). This is supported by data in Figures 1 and 2. Claim C31 notes that optimal time windows vary between reporters, suggesting different phases of aging. The pattern is internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Reporter expression becomes predictive of lifespan at mid-to-late adulthood, coinciding with population die-off, despite consistent inter-individual variability throughout life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 show that predictivity begins at mid-to-late adulthood and peaks with population die-off (Figure 3). Claims C37-C38 demonstrate this is not simply imminent death, as excluding individuals dying within 24-48 hours maintains predictivity (Figure 3\u2014supplement 1). Claim C39 shows no correlation before 5 days post-hatch. Claims C40-C41 reveal that inter-individual variability exists throughout life but only becomes coupled to lifespan at mid-adulthood (Figure 1\u2014supplements 2-3). This temporal pattern is well-characterized and suggests late-life commitment to lifespan trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Autofluorescence and PmiRNA::GFP expression predict lifespan at similar times but provide largely non-redundant information, suggesting they report on distinct aging processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 shows autofluorescence becomes predictive at similar times as most reporters (Figure 3\u2014supplement 2). Claims C43-C44 demonstrate near-additivity of correlation coefficients in joint regression (Table S5), indicating non-redundancy. The inference that they report on distinct processes is logical and supported by the statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Pmir-47::GFP and Pmir-243::GFP remain predictive of lifespan in miRNA knockout mutants, and the miRNAs themselves do not affect lifespan, indicating reporters act as bystanders to upstream regulatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 show that correlation with lifespan persists (or increases) in mir-47 and mir-243 mutants (Figure 4b-c). Claim C47 shows no lifespan difference in mutants. Claims C48-C50 conclude that the miRNAs don't directly determine lifespan and that reporters reflect upstream transcriptional regulators. This supports the 'Bystander Correlation' model over 'Direct Causation'. The logic is sound and the data clearly support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Pmir-47::GFP and Pmir-243::GFP predict lifespan independently of daf-16, unlike previously characterized reporters, indicating a DAF-16-independent lifespan-determining pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C102-C105 establish that DAF-16 is commonly required for lifespan extension and that Psod-3::GFP and Pmir-71::GFP require daf-16 for lifespan prediction. Claims C53-C55 show that Pmir-47::GFP and Pmir-243::GFP remain predictive in daf-16 mutants (R\u00b2 = 0.24-0.37 and 0.18-0.37, respectively; Figure 5). Claims C56-C57 note slightly reduced peak expression in daf-16 mutants, suggesting minor transcriptional regulation by DAF-16. Claim C106 concludes these reporters reflect DAF-16-independent processes. This is a significant finding that expands beyond the IIS-centric view of lifespan determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Pmir-47::GFP and Pmir-793::GFP are redundant predictors of lifespan, with Pmir-47::GFP providing strictly more information, suggesting a hierarchical relationship in reporting on a single lifespan-determining pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 establish that correlation coefficients sum to >1, necessitating redundancy. Claims C60-C61 show strong correlation between the two reporters and that joint regression yields R\u00b2 = 0.38, no better than Pmir-47::GFP alone (R\u00b2 = 0.37; Figure 6b). Claims C62-C63 show Pmir-793::GFP is fully redundant with Pmir-47::GFP via semipartial correlation, but not vice versa. Claims C64-C65 infer they report on a single pathway with Pmir-47::GFP more downstream or integrative. The statistical analysis is appropriate and the hierarchical interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pmir-240-786::GFP is wholly redundant with Pmir-47::GFP, with Pmir-47::GFP providing strictly more information, suggesting Pmir-47::GFP is the most downstream or integrative reporter examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 shows both reporters individually predict lifespan (R\u00b2 = 0.46 and 0.15) but joint R\u00b2 = 0.47 (Figure 6c). Claim C67 shows Pmir-240-786::GFP is wholly redundant with Pmir-47::GFP via semipartial correlation. Claim C68 infers Pmir-47::GFP integrates most broadly or is most downstream. This extends the hierarchical pattern and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pmir-240-786::GFP is almost wholly redundant with Pmir-793::GFP, with Pmir-793::GFP providing more information, establishing a three-level hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 shows individual R\u00b2 = 0.13 and 0.24, joint R\u00b2 = 0.25 (Figure 6d). Claim C70 shows Pmir-240-786::GFP is almost wholly redundant with Pmir-793::GFP (save ~4% unique variance). Claim C71 infers Pmir-793::GFP is downstream of or more integrative than Pmir-240-786::GFP. This completes the three-level hierarchy and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Pmir-47::GFP, Pmir-793::GFP, and Pmir-240-786::GFP form an informational hierarchy reporting on a single, global, cell non-autonomous, DAF-16-independent lifespan-determining process affecting multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 synthesize the hierarchical redundancy pattern: Pmir-47::GFP > Pmir-793::GFP > Pmir-240-786::GFP in information content, with bulk correlation due to a single process (Figure 6e). Claims C75-C76 note these reporters are expressed in distinct tissues with different temporal patterns yet are correlated. Claim C77 infers this requires inter-tissue information flow, likely cell non-autonomous signaling. Claim C78 concludes they report on a global, cell non-autonomous, DAF-16-independent process. This is a major integrative finding, though the specific molecular identity of the process remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C117",
+      "C118"
+    ],
+    "result": "At least 3 and potentially all 10 predictive reporters redundantly report on a single, cell non-autonomous, IIS-independent organismal state highly connected to many aspects of biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 notes no clear pattern distinguishes predictive vs non-predictive reporters by tissue or temporal expression, suggesting many transgenes report on fewer processes. Claims C81 and C117 state that at least one (and potentially 3-10, or 15-50% of reporters) report on a DAF-16-independent, cell non-autonomous state. Claim C118 infers this state is highly connected to organismal biology. This is supported by the redundancy analysis (Figure 6) and DAF-16 independence (Figure 5). However, the claim that 'potentially all 10' are redundant is speculative\u2014only 3 were tested in dual-reporter experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The difference between lifespan-predictive and non-predictive reporters must be at the level of transcriptional regulation, not post-transcriptional processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 infer that because all reporters produce identical GFP mRNA transcripts, post-transcriptional processes (mRNA degradation, translation, protein folding, degradation, photobleaching) cannot explain differential lifespan prediction. The salient difference must be transcriptional regulation. This is a logical inference based on the experimental design and is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Most predictive reporters correspond to miRNAs with no known lifespan phenotype, though lin-4, mir-228, and mir-246 have been previously associated with longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 states most predictive reporters have no published lifespan phenotype (Table 1). Claims C95-C97 note that lin-4, mir-228, and mir-246 have been associated with longevity, with lin-4 and mir-246 correlating positively as expected, but mir-228 surprisingly correlating positively despite being reported as a negative regulator. This discrepancy is noted but not fully explained. The data are clearly presented in Table 1 and Table 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Pmir-243::GFP and Pmir-47::GFP likely act as indirect reporters of upstream lifespan-determining processes, potentially involving transcription factors PQM-1, ELT-4, HLH-30, and ZTF-8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 infers that the reporters act as indirect reporters of upstream processes, supported by the miRNA knockout data (Figure 4). Claims C100-C101 cite yeast one-hybrid data suggesting potential transcription factor binding. However, these are speculative hypotheses based on database searches, not experimental validation in this study. The inference is reasonable but requires further experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Pmir-47::GFP expression from the vulva provides unique lifespan-predictive information beyond shared processes, potentially reflecting tissue-specific vulval integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 states that vulva-specific Pmir-47::GFP expression provides information not captured by Pmir-793::GFP or Pmir-240-786::GFP (Figure 6). Claim C109 infers this may reflect tissue-specific processes in addition to shared cell non-autonomous processes. Claim C110 cites that vulval integrity is important for C. elegans health and survival. This is a reasonable interpretation supported by the data, though the specific contribution of vulval-specific expression is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Individuals with distinct future lifespans can be distinguished by gene-regulatory states set relatively late in life, not during development or early adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 summarizes that individuals can be distinguished by gene-regulatory states. Claims C112-C114 infer that these states are set late in life (not before ~day 3 of adulthood), based on the timing of when reporters become predictive (Figure 3). Claim C115 notes that reporters remain predictive even excluding individuals dying within 24-48 hours (Figure 3\u2014supplement 1), suggesting they don't simply reflect imminent death. This temporal pattern is well-characterized and supports a late-life commitment model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Not all genes that change with age are predictive of lifespan; 12 of 22 reporters showed no relationship between expression maintenance and lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 note that 12 of 22 reporters did not predict lifespan despite changing with age (Table 2). This is an important negative result that demonstrates specificity and rules out the hypothesis that any age-related gene expression change predicts lifespan. The data clearly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Genes that alter population mean lifespan when perturbed are not necessarily those that determine inter-individual lifespan variation in unperturbed populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is a general conceptual statement about interpreting genetic perturbation experiments. This is a well-established principle in genetics (regulatory feedback, buffering, etc.) and is appropriately invoked to explain the discrepancy between mir-228's reported negative regulatory role and its positive correlation with lifespan. This is sound reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "A single state of 'biological resilience' emerges from interactions of multiple lifespan-determining genes/processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 cites Stroustrup, 2016 for the concept of biological resilience emerging from densely-interlinked processes. This is cited as context for interpreting the redundancy findings. The citation is appropriate and the concept is relevant to the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "It is common for microRNA-promoter::GFP transgene expression to predict individual lifespan at mid-to-late adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 summarizes the main finding that ~45% (10/22) of miRNA promoters predict lifespan. This is a well-supported summary statement based on the extensive data presented (Table 2, Figure 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has identified several genes whose expression correlates with and/or functionally determines lifespan in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 cite prior work on hsp-16.2, sod-3, mir-71, mir-246, and mir-239 as lifespan predictors and/or functional determinants. These are appropriately cited to provide context for the current study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  }
+]

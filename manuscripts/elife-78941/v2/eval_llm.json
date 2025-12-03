@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Chemical kinetics modeling predicts that H2O2 reactions with biomolecules are substantially faster at 25\u00b0C than at 20\u00b0C. The Fenton reaction with DNA-bound Fe(II) is predicted to be 40% faster, oxidation of regular cysteines in proteins more than twofold faster, free cysteines 62% faster, very reactive cysteines (e.g., GAPDH) up to 56% faster, and the most reactive cysteines of hydroperoxidases 17% faster at 25\u00b0C compared to 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by established chemical kinetics principles (Arrhenius, Eyring-Polanyi equations) and literature-derived activation enthalpies for specific reactions. The modeling approach is sound and the predicted rate increases are consistent with fundamental thermochemistry. Figure 1 provides visual support for these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "H2O2 lethality to C. elegans increases with temperature. Nematodes grown and assayed at 25\u00b0C survived 30% shorter in 6 mM tBuOOH compared to those at 20\u00b0C (1.6 days vs ~1.1 days). Similarly, nematodes were less likely to survive E. faecium supernatant at 25\u00b0C than at 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C32-C34 are well-supported by survival assay data in Figures 2A and 2B. The experimental design appropriately controls for temperature effects, with adequate sample sizes (n>200) and statistical analysis. The results are consistent with the chemical kinetics predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C107"
+    ],
+    "result": "C. elegans preemptively induce peroxide defenses at high temperature. Nematodes grown at 25\u00b0C showed 54-57% longer survival in peroxide compared to those grown at 20\u00b0C, even when assayed at 20\u00b0C. This induction requires 2 days at 25\u00b0C and persists for days after temperature downshift, indicating slow induction of long-lasting defenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C35-C41, C107 are strongly supported by temperature-shift experiments in Figures 2C-E and Figure 2\u2014figure supplement 1. The experimental design elegantly separates growth temperature effects from assay temperature effects. Sample sizes are adequate (n>130-250) and statistical analyses are appropriate. The persistence of the effect after temperature downshift is particularly compelling evidence for preemptive defense induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "AFD sensory neurons regulate peroxide resistance in a temperature-dependent manner. AFD ablation increased peroxide resistance by >2-fold at 20\u00b0C but only 31-49% at 25\u00b0C. AFD-ablated nematodes grown at 25\u00b0C showed similar resistance to wild-type nematodes grown at 25\u00b0C, suggesting AFD neurons normally repress defenses more strongly at lower temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C42-C50, C108-C110 are well-supported by genetic ablation experiments (Figures 3D-I) and tax-4 mutant analysis (Figures 3B-C). The temperature-dependent effect of AFD ablation is convincingly demonstrated. However, the genetic ablation approach has limitations\u2014it's a complete loss-of-function that may not fully recapitulate physiological temperature sensing. The interpretation that AFD neurons reduce their repressive activity at high temperature (rather than switching to activation) is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Temperature perception by AFD via receptor guanylate cyclases GCY-8, GCY-18, and GCY-23 regulates peroxide resistance. The gcy-23 gcy-8 gcy-18 triple mutant showed 43% increased resistance at 20\u00b0C but 12% decreased resistance at 25\u00b0C. Single mutants showed non-redundant contributions (10-51% increases at 20\u00b0C), though AFD ablation had stronger effects than the triple mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C111-C113 are supported by genetic experiments in Figures 3J-L. The temperature-dependent reversal of the triple mutant phenotype is striking. However, the incomplete phenocopy of AFD ablation by the gcy triple mutant (C113) indicates additional mechanisms exist. The single mutant analysis (C53) shows non-additivity, suggesting complex interactions. Statistical analyses appear appropriate though sample sizes are not explicitly stated for these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C114",
+      "C115"
+    ],
+    "result": "High temperature (25\u00b0C) and AFD ablation induce overlapping changes in gene expression. Temperature altered 3,255 genes (2,446 down, 809 up) while AFD ablation altered 4,302 genes (2,077 down, 2,225 up). The changes were positively correlated (R\u00b2=9%, p<0.0001) with disproportionate enrichment of genes co-regulated in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C114-C115 are supported by mRNA-seq data in Figures 4A-D. The transcriptomic analysis appears technically sound with appropriate statistical thresholds (q<0.01) and batch correction. However, the correlation is weak (R\u00b2=9%), suggesting substantial divergence between the two interventions. The categorical analysis (Figure 4D) provides stronger evidence for overlap than the correlation alone. The claim of 'overlapping' changes is supported, but the extent of overlap is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C117"
+    ],
+    "result": "Both high temperature and AFD ablation coordinately downregulate reproduction/germline genes and upregulate defense/immune response and intestinal genes. WormCat analysis showed positively correlated changes in gene sets affecting similar biological processes (R\u00b2=24%, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C117 are supported by GO term enrichment (Figures 4E-F) and WormCat analysis (Figure 4\u2014figure supplement 3). The functional enrichment analysis is appropriate and the convergence on similar biological processes strengthens the case for a common regulatory mechanism. The R\u00b2=24% for gene set correlation is stronger than the individual gene correlation (9%), suggesting coordinated regulation at the pathway level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "High temperature and AFD ablation pre-induce peroxide-responsive genes and catalase expression. Both interventions increased expression of genes induced by tBuOOH exposure. Specifically, ctl-1 expression increased 46% and ctl-2 increased 73-89% with temperature or AFD ablation, suggesting nematodes are better prepared for peroxide stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C118-C120 are supported by gene set enrichment analysis (Figure 4\u2014figure supplement 4) and specific catalase expression data (Figure 4G). The pre-induction of peroxide-responsive genes in the absence of peroxide exposure is compelling evidence for anticipatory defense. However, C119 (nematodes are 'better prepared') is somewhat speculative\u2014while gene expression changes are documented, the functional link to the observed survival phenotypes could be stronger. The catalase data provide the most direct mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C121",
+      "C122"
+    ],
+    "result": "AFD ablation broadly induces stress-response genes while high temperature specifically induces peroxide defenses. Growth at 25\u00b0C did not induce genes responsive to acrylamide, formaldehyde, benzene, metals, or radiation, but AFD ablation at 20\u00b0C induced all these gene sets, suggesting AFD neurons broadly repress stress responses while temperature specifically regulates peroxide defenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C121-C122 are supported by comprehensive gene set enrichment analysis (Figure 4\u2014figure supplement 5A-I). This specificity analysis is important for distinguishing temperature-specific peroxide defense induction from general stress responses. The differential effects of temperature vs. AFD ablation suggest AFD has broader regulatory roles beyond temperature sensing. However, the interpretation assumes these gene sets accurately represent functional responses to the respective stressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C123",
+      "C124"
+    ],
+    "result": "The insulin/IGF1 hormone INS-39 is expressed exclusively in AFD neurons and its expression is temperature-regulated via TAX-4. INS-39 expression was higher at 20\u00b0C than 25\u00b0C, and a tax-4 null mutation nearly abolished ins-39 expression at both temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C123-C124 are supported by CRISPR-engineered reporter analysis (Figures 5B-E). The exclusive AFD expression (C68) is convincingly demonstrated by co-localization with AFD markers. The temperature-dependent expression (C69) is quantified with adequate sample sizes (n\u226525) and statistical significance. The TAX-4 dependence (C70) is clear, though the near-complete loss of expression in tax-4 mutants raises questions about whether there are TAX-4-independent mechanisms for basal ins-39 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "INS-39 from AFD neurons represses peroxide resistance in a temperature-dependent manner. The ins-39 null mutation increased resistance 26-29% at 20\u00b0C but not in nematodes grown at 25\u00b0C. AFD-specific rescue eliminated the resistance increase, demonstrating gene-dose dependent regulation. At 20\u00b0C, INS-39 represses defenses; at 25\u00b0C, lower INS-39 expression de-represses defenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C125-C129 are supported by genetic analysis (Figures 5F-G) and tissue-specific rescue experiments. The temperature-dependent effect of ins-39 mutation (C74) is particularly important for the model. The AFD-specific rescue (C72) provides strong evidence for cell-autonomous function. However, the incomplete phenocopy of AFD ablation by ins-39 mutation suggests other AFD-derived signals contribute (C129), which is acknowledged. The model in C127-C128 is a reasonable interpretation but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C131"
+    ],
+    "result": "High temperature and AFD ablation increase expression of DAF-16/FOXO target genes, suggesting reduced AFD signaling might induce peroxide defenses by increasing DAF-16 activity in target tissues. Both interventions increased expression of genes directly upregulated by DAF-16 and genes upregulated in a daf-16-dependent manner in daf-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C131 are supported by gene set enrichment analysis (Figures 6A-B, Figure 6\u2014figure supplement 1A-B). The enrichment of DAF-16 target genes is statistically significant and provides a mechanistic link to insulin/IGF1 signaling. However, C131 ('might induce') is appropriately cautious\u2014this is correlative evidence that requires functional validation. The subsequent genetic experiments (C78-C84) provide this validation, but those are evaluated separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C132"
+    ],
+    "result": "DAF-16/FOXO is required for temperature- and AFD-dependent regulation of peroxide resistance. The daf-16 null mutation reduced resistance more strongly in nematodes grown at 25\u00b0C (35% reduction) than at 20\u00b0C (21% reduction), and more strongly in AFD-ablated nematodes (58% reduction) than wild-type (18% reduction) at 20\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C132 are supported by genetic epistasis experiments (Figures 6C-D). The differential requirement for daf-16 under different conditions is compelling evidence for its role in the temperature-sensing pathway. Sample sizes appear adequate and statistical analyses are appropriate. The partial dependence on daf-16 (rather than complete) suggests additional factors contribute, which is consistent with the SKN-1 results discussed later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C133",
+      "C134",
+      "C135",
+      "C23"
+    ],
+    "result": "DAF-16 functions in the intestine to mediate temperature-dependent regulation of peroxide resistance. Intestine-specific daf-16 rescue in AFD-ablated daf-16 mutants restored resistance to near wild-type levels. In non-ablated nematodes, intestinal daf-16 increased resistance by 15% at 20\u00b0C but 39% when grown at 25\u00b0C, showing temperature-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84, C133-C135, C23 are supported by tissue-specific rescue experiments (Figures 6E-F). The intestine-specific rescue is convincing evidence for the site of DAF-16 action. The temperature-dependent effect of intestinal daf-16 (C84, C135) is particularly important for the model. However, the rescue is partial ('almost comparable' in C82), suggesting either incomplete rescue or contributions from other tissues. The experimental design is sound but would benefit from additional tissue-specific rescues to rule out other sites of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "SKN-1/NRF collaborates with DAF-16 to increase peroxide resistance in AFD-ablated nematodes. SKN-1 target genes were induced by AFD ablation but not by high temperature. skn-1 RNAi reduced resistance more in AFD-ablated nematodes (58%) than wild-type (27%), and reduced resistance in AFD-ablated daf-16 mutants, suggesting non-overlapping roles for DAF-16 and SKN-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90, C139-C142 are supported by gene set enrichment analysis (Figure 7A) and RNAi experiments (Figures 7B-C). The differential induction by AFD ablation vs. temperature is interesting and suggests SKN-1 responds to AFD signals but not temperature per se. The genetic epistasis (C89-C90) provides evidence for independent contributions of DAF-16 and SKN-1. However, RNAi has limitations (incomplete knockdown, potential off-target effects) and the residual resistance in double-compromised animals (C142) suggests additional factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C143",
+      "C146",
+      "C147"
+    ],
+    "result": "DAF-16 potentiates gene expression changes induced by AFD ablation. In wild-type nematodes at 20\u00b0C, daf-16 loss affected only 2 genes, but in AFD-ablated nematodes, it affected 669 genes. The effect of AFD ablation on gene expression was systematically smaller (slope=0.67) in daf-16 mutants than wild-type (R\u00b2=79-86%), indicating DAF-16 determines response magnitude but not direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95, C143, C146-C147 are supported by comprehensive epistasis analysis of mRNA-seq data (Figures 8B-C, 8G, Figure 8\u2014figure supplement 2). The genome-wide epistasis approach is sophisticated and appropriate. The finding that daf-16 loss has minimal effects in wild-type but large effects in AFD-ablated nematodes (C91-C92) is striking. The systematic reduction in AFD ablation effects in daf-16 mutants (C93-C94, slope=0.67) is compelling evidence for potentiation rather than simple epistasis. The simulation analysis to account for uncertainty strengthens confidence in the slope estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C96",
+      "C97",
+      "C98",
+      "C136",
+      "C137",
+      "C148"
+    ],
+    "result": "C. elegans uses an integrated temperature-sensing mechanism to regulate peroxide defenses. AFD neurons sense temperature via receptor guanylate cyclases, regulate INS-39 insulin hormone expression, which signals to intestinal DAF-16/FOXO to control peroxide defense gene expression. This enables nematodes to better cope with H2O2 from pathogenic E. faecium at high temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C96-C98, C136-C137, C148 represent the integrated model supported by the collective evidence. The pathway from temperature sensing (AFD/GCY genes) \u2192 hormone signaling (INS-39) \u2192 transcription factor activation (DAF-16 in intestine) \u2192 defense gene expression (catalases) \u2192 phenotypic outcome (survival) is well-supported by multiple lines of evidence. The E. faecium survival data (C19, Figure 2E) provides ecological relevance. This is a major conceptual advance in understanding how organisms integrate environmental sensing with stress defense.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C149",
+      "C157"
+    ],
+    "result": "This work represents the first example of 'enhancer sensing'\u2014a multicellular organism inducing defenses to a chemical by sensing an inherent enhancer of that chemical's reactivity. The strategy is expected to provide evolutionarily optimal defense levels across ecologically relevant temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C149, C157 make strong novelty and evolutionary optimality claims. C24's assertion of being 'the first example' in multicellular organisms is difficult to verify without exhaustive literature review, though the authors cite examples in other organisms (C150-C154) that may represent similar strategies. C149's claim of 'evolutionary optimality' is speculative and would require fitness measurements across temperature ranges and ecological contexts. The 'enhancer sensing' framework is conceptually novel and well-articulated, but the optimality claim goes beyond the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "AFD neurons at 20\u00b0C repress not only genes induced at higher temperature (25\u00b0C) but also genes induced at lower temperature (15\u00b0C) and by heat shock (30\u00b0C), suggesting broad temperature-responsive gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by gene set enrichment analysis comparing AFD ablation effects to published temperature-responsive gene sets (Figure 4\u2014figure supplement 2). This finding suggests AFD neurons have complex regulatory roles across the temperature range, not just at the extremes. However, the analysis relies on gene sets from other studies with different experimental conditions, which may introduce some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C75"
+    ],
+    "result": "AFD neurons regulate peroxide resistance independently of serotonin signaling. The tph-1 null mutation (blocking serotonin synthesis) did not affect peroxide resistance of AFD-ablated nematodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130, C75 are supported by genetic experiments with tph-1 mutants (Figure 5\u2014figure supplement 1B). This negative result is important for ruling out serotonin as the AFD-derived signal, distinguishing this pathway from the serotonin-dependent heat shock response. The experiment is straightforward and the conclusion is warranted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C138"
+    ],
+    "result": "Unlike ASI neurons (which signal via DAF-3/coSMAD), AFD neurons do not regulate peroxide resistance through DAF-3. The daf-3 null mutation did not affect resistance of AFD-ablated nematodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C138 are supported by genetic experiments (Figure 6\u2014figure supplement 1C). This negative result helps distinguish the AFD pathway from the previously characterized ASI pathway. The comparison to ASI neurons provides useful context for understanding the specificity of different neuronal inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156"
+    ],
+    "result": "Resistance to toxic chemicals (acrylamide, formaldehyde, benzene, metals) is not expected to increase with pre-exposure to 25\u00b0C, though other temperature ranges sensed by AFD might regulate resistance to these chemicals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C156 are speculative predictions based on gene expression data (Figure 4\u2014figure supplement 5). While the gene expression analysis supports the prediction that 25\u00b0C doesn't induce these stress responses, the claims would require direct testing with survival assays in the presence of these chemicals. The speculation about other temperature ranges (C156) is reasonable but untested.",
+    "result_type": "MINOR"
+  }
+]

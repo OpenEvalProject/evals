@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ten patients carrying seven novel heterozygous TRPM3 missense variants were identified, presenting with a broad spectrum of neurodevelopmental symptoms including global developmental delay, intellectual disability, epilepsy, musculo-skeletal anomalies, altered pain/heat perception, and notably, a cerebellar phenotype with ataxia or severe hypotonia, nystagmus, and progressive cerebellar atrophy in more than half of patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C35 provide comprehensive clinical characterization of 10 patients with detailed phenotypic data including motor milestones, cognitive assessments, neurological findings, and MRI evidence of cerebellar atrophy. The data are systematically presented in Table 1 and Figure 2, with longitudinal MRI demonstrating progressive cerebellar atrophy. The clinical observations are well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "All seven novel TRPM3 variants are absent from gnomAD, predicted pathogenic by multiple algorithms, located in highly conserved regions across species, and cluster at the interface between the transmembrane domain and cytosol in the TRPM3 structure, with D614V positioned adjacent to the G\u03b2\u03b3 interaction site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by database searches (gnomAD), computational predictions (Table 3), sequence alignment analysis (Figure 1\u2014figure supplement 3), and structural mapping using cryo-EM data (Figure 1\u2014figure supplement 2). The structural localization provides mechanistic insight, though C41 regarding D614V affecting G\u03b2\u03b3 regulation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RNA-seq analysis of human cerebellum reveals that the majority of TRPM3 transcripts use exon 2 as first exon (85%), have a short pore loop (>98%), and do not undergo intron retention in exon 28 (82%). A construct lacking exon 8 (NM_001366145.2) yields functional channels, while one including exon 8 (NM_001366147.2) does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are based on RNA-seq data analysis from human cerebellum (Figure 1A) and functional validation experiments (Figure 1\u2014figure supplement 1). The splice variant analysis is quantitative and the functional characterization using calcium imaging and patch-clamp provides clear evidence for differential functionality of splice variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "When expressed alone in HEK293T cells, all newly identified TRPM3 variants except L769V exhibited significantly elevated basal calcium levels compared to wild-type, with most variants showing reduction upon primidone treatment. Pregnenolone sulfate responses were increased for D614V, N1126D, and S1133P variants but reduced for L769V, V1002G, V1002L, and G1007S variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by calcium imaging experiments (Figure 3, Figure 3\u2014figure supplements 1-2) with appropriate controls (non-transfected and wild-type). Statistical analyses are provided with p-values, and data are from at least 3 independent experiments. The mixed PS responses suggest variant-specific mechanisms, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Under heterozygous conditions (1:1 co-expression of wild-type and variant TRPM3), all variants except P1102Q and N1126D showed significantly elevated basal calcium levels. Primidone reduced basal calcium for all variants with elevated levels, and all variants consistently exhibited larger pregnenolone sulfate-induced calcium responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by co-transfection experiments (Figure 4, Figure 3\u2014figure supplements 1-2, Figure 4\u2014figure supplements 1-2) that model the patient heterozygous condition. The data demonstrate dominant gain-of-function effects with appropriate statistical analysis. This is critical evidence linking variants to disease mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Patch-clamp electrophysiology revealed that L769V alone produces no functional currents, but co-expression with wild-type yields robust outwardly rectifying currents and an increased inward current component. G1007S shows functional currents both alone and with wild-type, with the heterozygous condition exhibiting a leftward shift in pregnenolone sulfate concentration-response curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by whole-cell patch-clamp experiments (Figure 4\u2014figure supplement 3, Figure 3\u2014figure supplement 3) with appropriate voltage protocols and dose-response analysis. The L769V data reveal a unique trafficking-dependent mechanism, while G1007S shows enhanced agonist sensitivity in the heterozygous state. Statistical comparisons are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C62"
+    ],
+    "result": "All patient variants are dominant gain-of-function mutations causing increased basal activity and cellular calcium overload, with elevated calcium levels attributed to increased channel activity rather than increased protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C62 represent integrative conclusions supported by the combined calcium imaging, electrophysiology, and YFP fluorescence data (C42-C61). The YFP analysis (Figure 3\u2014figure supplement 4) controls for expression levels, demonstrating that gain-of-function is due to altered channel properties rather than increased expression for most variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "YFP fluorescence measurements reveal that most variants (V1002L, G1007S, N1126D, S1133P) show normal expression levels, L769V shows reduced expression alone but normal with wild-type co-expression, while D614V and V1002G show increased expression. When normalized for expression, D614V and V1002G still exhibit higher basal calcium levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by YFP fluorescence measurements (Figure 3\u2014figure supplement 4) with appropriate normalization and statistical analysis. The analysis of basal calcium versus YFP fluorescence for individual cells provides strong evidence that gain-of-function is not simply due to increased expression, particularly for D614V and V1002G.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Reanalysis of single-cell RNA-seq datasets reveals robust TRPM3 expression in different cell types of developing and adult cerebellum and adult cortex, with highest expression in layer 5/6 cortical neurons, cerebellar granule cells, Purkinje neurons, and cells of the rhombic lip in developing cerebellum. Low expression was detected in muscle types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by reanalysis of published single-cell RNA-seq datasets (Figure 5, Figure 5\u2014figure supplements 1-2) from multiple sources (Aldinger et al. 2021, Lake et al. 2018, Velmeshev et al. 2019). The expression patterns are visualized through UMAP plots and dot plots showing cell-type specificity and developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The expression data suggest that hypotonia in patients is likely caused by malfunctioning neuronal innervation of skeletal muscles related to cerebellar defects, and TRPM3 plays an important role in specific brain regions during both developmental and adult stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 represent inferences from expression data. While C68 shows low TRPM3 expression in muscle and C63-C67 show high cerebellar expression, the causal link to hypotonia (C69) is speculative without functional studies. C70 is a reasonable inference but requires validation through functional experiments in relevant brain regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cerebellar atrophy can be progressive in patients with clinically non-progressive disorder. Possible genotype-phenotype correlations suggest p.(Gly1007Ser) is associated with milder phenotype and p.(Asn1126Asp) with more severe phenotype, though these require confirmation in larger series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by longitudinal MRI data (Figure 2, C33). However, C72-C73 regarding genotype-phenotype correlations are based on limited patient numbers (3 patients with G1007S, 2 with N1126D) and show clinical variability even within families. The authors appropriately note these correlations need confirmation in larger cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Disease-associated variants occur in different parts of TRPM3 (N-terminus, transmembrane, C-terminus) suggesting distinct mechanisms. Increased protein expression is excluded as the mechanism, and affected residues L769, V1002, G1007, N1126, and S1133 cluster at the transmembrane-cytosol interface in a region critical for gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by structural mapping (Figure 1\u2014figure supplement 2), YFP expression data (C57-C61), and functional characterization showing variant-specific effects. The structural clustering provides mechanistic insight, though the exact mechanisms for each variant remain to be fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "L769V exhibits no functional activity when expressed alone but causes gain-of-function with wild-type subunits. This may be explained by the N-terminus variation affecting trafficking of homotetrameric channels, with the deficit rescued by heteromeric channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is strongly supported by functional data (C51-C52, C58-C59). Claim C84 is a reasonable mechanistic hypothesis based on the trafficking pattern and YFP data, though it remains speculative without direct trafficking experiments. The hypothesis is appropriately presented as a possibility requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Primidone blocks increased basal channel activity and calcium levels in all disease-associated variants. Plasma levels in subjects taking primidone are expected to be sufficient for TRPM3 inhibition, warranting evaluation of whether primidone can alleviate symptoms in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by experimental data (C9, C43, C45, C49). Claim C86 is based on pharmacokinetic knowledge and reasonable inference. Claim C87 is appropriately framed as a proposal for future clinical evaluation rather than an established therapeutic benefit. The therapeutic potential is supported by mechanism but requires clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C88",
+      "C89"
+    ],
+    "result": "Gain-of-function of TRPM3 causes a spectrum of autosomal dominant neurodevelopmental disorders with frequent cerebellar involvement. TRPM3 should be added to NGS panels for epilepsy, ID, and congenital ataxia diagnosis. Increased channel activity leading to neuronal hyperexcitability and calcium overload underlies TRPM3 channelopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C88, and C89 represent the main conclusions integrating clinical (C4-C35), genetic (C36-C41), and functional (C42-C56) data. The evidence strongly supports gain-of-function as the disease mechanism and the autosomal dominant inheritance pattern. The recommendation for NGS panel inclusion (C88) is justified by the clinical findings. The mechanistic model (C89) is well-supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information establishing TRPM3 as a temperature- and neurosteroid-sensitive channel expressed in various tissues including CNS, with prior reports of de novo variants in patients with developmental and epileptic encephalopathy showing gain-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C18 represent established knowledge and prior work appropriately cited from the literature. These provide essential context for the current study and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background on cerebellar function, prior findings on V1002M variant's reduced G\u03b2\u03b3 sensitivity, and known GNB mutations causing neurodevelopmental disorders, with speculation that GNB phenotypes could involve TRPM3 dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C79-C81 represent established knowledge appropriately cited. Claim C82 is appropriately framed as speculation about potential mechanistic links between GNB mutations and TRPM3, based on known interactions but requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "TRPM3 antagonists are supported as potential therapy for TRPM3-related disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by the primidone data (C9, C85) showing effective blockade of mutant channel activity. However, this represents a therapeutic hypothesis requiring clinical validation. The support is mechanistic rather than clinical, which is appropriately acknowledged in the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

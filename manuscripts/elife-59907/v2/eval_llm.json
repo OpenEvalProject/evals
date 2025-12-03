@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C63",
+      "C82",
+      "C87"
+    ],
+    "result": "Humans use two computationally cheap exploration heuristics\u2014value-free random exploration and novelty exploration\u2014in addition to more demanding strategies. Both heuristics are deployed in a goal-directed manner, with increased usage when exploration is strategically beneficial (long vs. short horizon conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C7, C63, C82, and C87 converge on demonstrating that humans employ both value-free random and novelty exploration heuristics alongside complex strategies. The behavioral data (horizon effects), computational modeling (winning model includes both heuristics), and parameter recovery analyses provide strong, multi-method evidence for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C75",
+      "C88"
+    ],
+    "result": "Propranolol (noradrenaline \u03b2-receptor antagonist) specifically reduces value-free random exploration, as evidenced by decreased selection of low-value bandits and increased choice consistency. Amisulpride (dopamine D2/D3 antagonist) shows no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C46-C49, C53, C75, and C88 provide converging behavioral and computational evidence that propranolol selectively attenuates value-free random exploration. The statistical comparisons show significant differences between propranolol and both placebo and amisulpride groups (p=0.005 and p=0.034 respectively for low-value bandit selection), with no difference between amisulpride and placebo. Model-based analyses confirm these effects on the \u03b5-greedy parameter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C85"
+    ],
+    "result": "Neither dopamine (amisulpride) nor noradrenaline (propranolol) blockade significantly affected novelty exploration in this task, though dopamine blockade showed a trend toward increased exploitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C85 report null findings for drug effects on novelty exploration and marginal effects on exploitation. The statistical analyses found no significant drug effects on novel bandit selection (F(2,54)=1.498, p=0.233), supporting the conclusion. The trend-level exploitation effect is appropriately characterized as marginal and relegated to supplementary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C79",
+      "C107"
+    ],
+    "result": "A computational model combining Thompson sampling (uncertainty-driven exploration) with value-free random exploration (\u03b5-greedy) and novelty exploration best explained human choice behavior, outperforming models with complex strategies alone. The model achieved 55.25% prediction accuracy on held-out data and showed good parameter recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C79, and C107 describe the model comparison results. The winning model's superiority is demonstrated through cross-validation (55.25% accuracy vs. 33.33% chance), individual-level model fits, and parameter recovery analyses. The finding that adding heuristics improved fit over complex strategies alone (C60-C61) provides strong evidence for the computational framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Drug groups differed in baseline mood (PANAS negative affect) and marginally in intellectual abilities (WASI), which were controlled for as covariates in all analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 report demographic differences between groups that were appropriately identified and controlled for statistically. The manuscript explicitly states these were included as covariates in ANOVAs and provides both corrected and uncorrected results in appendices, demonstrating appropriate methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C35"
+    ],
+    "result": "The study employed a double-blind, placebo-controlled design with three groups: 40mg propranolol (\u03b2-adrenoceptor antagonist), 400mg amisulpride (D2/D3 antagonist), and placebo, administered at different times to account for pharmacokinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 and C35 describe the pharmacological manipulation protocol. The design is clearly specified with appropriate drug doses, timing (60 min for propranolol, 90 min for amisulpride), and placebo controls. The drug specificity is supported by pharmacological knowledge (C35) and citations to previous studies using the same protocol (C95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Maggie's Farm task presented subjects with three-armed bandits varying in initial samples (0-3) and mean rewards, with trials repeated to assess consistency. Subjects chose between bandits in short (1 draw) or long (6 draws) horizon conditions to manipulate exploration incentives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 comprehensively describe the task design. The methodology is clearly specified with appropriate detail about bandit types, reward distributions, horizon manipulations, and trial structure. The design rationale (C104) for presenting only three of four bandit types is explicitly justified to allow different exploration strategies to manifest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work and theoretical considerations establish that exploration-exploitation trade-offs are typically solved using computationally demanding algorithms (UCB, Thompson sampling), but human cognitive constraints (capacity, metabolic costs, demand avoidance) motivate the search for cheaper heuristic strategies like value-free random exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 establish the theoretical and empirical background for the study. These claims are well-supported by appropriate citations to the computational (C9-C13) and cognitive science (C14-C19) literature. The logical inference about value-free random exploration being computationally minimal (C20-C21) follows from established principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior evidence suggests exploration strategies depend on dissociable neural mechanisms, with noradrenaline implicated in uncertainty signaling and behavioral reset, and dopamine implicated in novelty processing. Animal studies show noradrenaline manipulations affect random behavior and choice consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 review prior neurobiological evidence supporting the study's hypotheses. Each claim is appropriately supported by citations to relevant animal and human studies. The evidence provides a plausible mechanistic framework for the pharmacological manipulations, though the authors appropriately note complexity and alternative interpretations in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C83"
+    ],
+    "result": "Tracking summary statistics for multiple options is computationally demanding (requiring six statistics for three bandits). Novelty exploration can be viewed as an efficient simplification of UCB, and value-free random exploration operates even when accounting for value-based random exploration strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C80, and C83 provide computational justification for why heuristics would be beneficial. The argument about computational demands (C76-C77) is supported by citation and logical inference. The relationship between novelty exploration and UCB (C78) is appropriately characterized as an inference supported by citations. The demonstration that value-free exploration is distinct from value-based exploration (C83) is supported by modeling and simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C90"
+    ],
+    "result": "The long horizon condition promotes exploration by allowing information gained to be exploited in subsequent choices, consistent with prior studies. Sample size was determined by power calculations based on previous studies using the same drug manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C90 describe methodological aspects. The horizon manipulation (C84) is well-established in the literature (Wilson et al., 2014) and confirmed by the study's findings. The sample size justification (C90) is appropriately based on prior effect sizes from studies using identical drug protocols, demonstrating sound experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C89"
+    ],
+    "result": "The lack of dopamine effects is unlikely due to ineffective dosing, as previous studies found neurocognitive effects with the same amisulpride dose. The findings suggest distinct exploration strategies may be under specific neuromodulator control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C89 address the null dopamine findings. While C86 provides citations supporting the drug dose effectiveness, the inference in C89 about specific neuromodulator control is based primarily on the positive noradrenaline finding and negative dopamine finding. The conclusion is reasonable but would benefit from additional evidence, particularly given the D2/D3 vs. D1 receptor limitation discussed in the manuscript. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Value-free random exploration, while computationally efficient, comes at the cost of sub-optimality due to occasional selection of low-value options, but has neurobiological plausibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 present logical inferences about the trade-offs of value-free random exploration. The sub-optimality cost (C23) is a straightforward logical consequence of random selection. The neurobiological plausibility (C24) is elaborated with supporting evidence in subsequent claims about noradrenaline function, making this a reasonable assertion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "One subject from the amisulpride group was excluded from analysis due to lack of task engagement and chance-level performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 describes a single subject exclusion with appropriate justification (chance-level performance indicating non-engagement). This is a standard and appropriate exclusion criterion for behavioral studies.",
+    "result_type": "MINOR"
+  }
+]

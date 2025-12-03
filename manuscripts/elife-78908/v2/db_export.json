@@ -1,0 +1,303 @@
+{
+  "submission": {
+    "id": "f7235374-df7b-49ee-8285-8e32c4bd6694",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:37:39.810988Z",
+    "updated_at": "2025-12-03T19:37:39.810988Z"
+  },
+  "content": [
+    {
+      "id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "submission_id": "f7235374-df7b-49ee-8285-8e32c4bd6694",
+      "content_type": "manuscript",
+      "content_text": "# Emergent periodicity in the collective synchronous flashing of fireflies\n\n## Authors\n\n- Raphael Sarfati<sup>1</sup> \u2020\n- Kunaal Joshi<sup>2</sup> ([ORCID: 0000-0002-8001-1230](https://orcid.org/0000-0002-8001-1230)) \u2020\n- Owen Martin<sup>1</sup>\n- Julie C Hayes<sup>3</sup>\n- Srividya Iyer-Biswas<sup>2</sup> \u2020\n- Orit Peleg<sup>1</sup> ([ORCID: 0000-0001-9481-7967](https://orcid.org/0000-0001-9481-7967)) \u2020\n\n### Affiliations\n\n1. BioFrontiers Institute University of Colorado Boulder Boulder United States\n2. Department of Physics and Astronomy Purdue University West Lafayette West Lafayette United States\n3. Department of Computer Science University of New Mexico Albuquerque United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn isolation from their peers, Photinus carolinus fireflies flash with no intrinsic period between successive bursts. Yet, when congregating into large mating swarms, these fireflies transition into predictability, synchronizing with their neighbors with a rhythmic periodicity. Here we propose a mechanism for emergence of synchrony and periodicity, and formulate the principle in a mathematical framework. Remarkably, with no fitting parameters, analytic predictions from this simple principle and framework agree strikingly well with data. Next, we add further sophistication to the framework using a computational approach featuring groups of random oscillators via integrate-and-fire interactions controlled by a tunable parameter. This agent-based framework of P. carolinus fireflies interacting in swarms of increasing density also shows quantitatively similar phenomenology and reduces to the analytic framework in the appropriate limit of the tunable coupling strength. We discuss our findings and note that the resulting dynamics follow the style of a decentralized follow-the-leader synchronization, where any of the randomly flashing individuals may take the role of the leader of any subsequent synchronized flash burst.\n",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "69525334-c70b-4593-af9d-1fbaa3f82aac",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C1",
+      "claim": "Photinus carolinus fireflies flash with no intrinsic period between successive bursts when in isolation from their peers.",
+      "claim_type": "EXPLICIT",
+      "source": "In isolation from their peers, Photinus carolinus fireflies flash with no intrinsic period between successive bursts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed characteristic of isolated P. carolinus fireflies in the abstract.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "ca5f2fea-e31b-4554-8811-0c6392743ea8",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C2",
+      "claim": "Photinus carolinus fireflies transition into predictability and synchronize with their neighbors with rhythmic periodicity when congregating into large mating swarms.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, when congregating into large mating swarms, these fireflies transition into predictability, synchronizing with their neighbors with a rhythmic periodicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed behavior of P. carolinus fireflies in swarms in the abstract.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "7820da85-f230-412c-9cd6-32bffc0b63b6",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C3",
+      "claim": "A mechanism for emergence of synchrony and periodicity in P. carolinus fireflies can be formulated in a mathematical framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we propose a mechanism for emergence of synchrony and periodicity, and formulate the principle in a mathematical framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state they have developed a mathematical framework for the observed phenomenon.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "48895f24-7f66-4843-acf2-57bfaf7da0b0",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C4",
+      "claim": "Analytic predictions from the proposed mathematical framework agree strikingly well with data without using fitting parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, with no fitting parameters, analytic predictions from this simple principle and framework agree strikingly well with data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors claim their analytical model predictions match experimental data without parameter fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "2d7ea9da-c594-4582-bee1-a18adc056ce4",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C5",
+      "claim": "An agent-based computational framework featuring groups of random oscillators via integrate-and-fire interactions controlled by a tunable parameter can model P. carolinus firefly interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we add further sophistication to the framework using a computational approach featuring groups of random oscillators via integrate-and-fire interactions controlled by a tunable parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe their computational modeling approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "3ad85590-4c78-464c-bf04-d6f1ab53fa4d",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C6",
+      "claim": "The agent-based framework of P. carolinus fireflies interacting in swarms of increasing density shows quantitatively similar phenomenology to the observed behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This agent-based framework of P. carolinus fireflies interacting in swarms of increasing density also shows quantitatively similar phenomenology and reduces to the analytic framework in the appropriate limit of the tunable coupling strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state their computational model reproduces the observed phenomena quantitatively.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "de82bd32-ed50-4994-8ac4-5140259ac2d9",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C7",
+      "claim": "The agent-based framework reduces to the analytic framework in the appropriate limit of the tunable coupling strength.",
+      "claim_type": "EXPLICIT",
+      "source": "This agent-based framework of P. carolinus fireflies interacting in swarms of increasing density also shows quantitatively similar phenomenology and reduces to the analytic framework in the appropriate limit of the tunable coupling strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state that their computational model converges to their analytical model under specific parameter conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "0370a3e5-6bc7-4b2f-b52d-c1255422857b",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C8",
+      "claim": "The resulting dynamics of P. carolinus firefly synchronization follow the style of a decentralized follow-the-leader synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "We discuss our findings and note that the resulting dynamics follow the style of a decentralized follow-the-leader synchronization, where any of the randomly flashing individuals may take the role of the leader of any subsequent synchronized flash burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors characterize the synchronization mechanism as decentralized follow-the-leader based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "a1f995f9-7e06-4e87-8895-55e239c498ed",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C9",
+      "claim": "Any randomly flashing individual P. carolinus firefly may take the role of the leader of any subsequent synchronized flash burst.",
+      "claim_type": "EXPLICIT",
+      "source": "We discuss our findings and note that the resulting dynamics follow the style of a decentralized follow-the-leader synchronization, where any of the randomly flashing individuals may take the role of the leader of any subsequent synchronized flash burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors describe the leadership role in synchronization as non-fixed and potentially assumed by any individual.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "6709983b-506a-4436-842b-2e04072b4720",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C10",
+      "claim": "Synchrony and periodicity in P. carolinus fireflies are emergent properties that arise from collective behavior.",
+      "claim_type": "IMPLICIT",
+      "source": "In isolation from their peers, Photinus carolinus fireflies flash with no intrinsic period between successive bursts. Yet, when congregating into large mating swarms, these fireflies transition into predictability, synchronizing with their neighbors with a rhythmic periodicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The contrast between isolated and collective behavior implies that synchrony and periodicity emerge from group interactions rather than being intrinsic properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "e657a3ed-6fca-4e72-8d9a-5a91468abf97",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C11",
+      "claim": "Firefly density affects the synchronization behavior in P. carolinus swarms.",
+      "claim_type": "IMPLICIT",
+      "source": "This agent-based framework of P. carolinus fireflies interacting in swarms of increasing density also shows quantitatively similar phenomenology and reduces to the analytic framework in the appropriate limit of the tunable coupling strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The mention of 'swarms of increasing density' as a variable in the model implies that density is a factor affecting synchronization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "8ff4089e-06f1-42d3-9349-ab1bd7fe2341",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "claim_id": "C12",
+      "claim": "The synchronization of P. carolinus fireflies occurs in the context of mating behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, when congregating into large mating swarms, these fireflies transition into predictability, synchronizing with their neighbors with a rhythmic periodicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly states that the swarms where synchronization occurs are mating swarms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1c47505-2d6d-4453-9e1f-3f074fb56729",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Photinus carolinus fireflies exhibit no intrinsic periodicity when isolated but develop synchronized, rhythmic flashing when congregating in mating swarms. This demonstrates that synchrony and periodicity are emergent properties arising from collective behavior rather than intrinsic individual characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1 and C2 describe contrasting behaviors between isolated and swarming fireflies, supporting emergence (C10). However, the abstract provides no details about sample sizes, experimental controls, statistical analysis, or quantitative measurements of 'no intrinsic period' versus 'rhythmic periodicity.' Without access to the methodology and data supporting these behavioral observations, the empirical foundation cannot be fully evaluated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "12424d17-5280-4782-9c0c-38075c0d2e18",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An analytical mathematical framework was developed to model the emergence of synchrony and periodicity in P. carolinus fireflies, with predictions agreeing well with experimental data without fitting parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C4 asserts 'striking' agreement between model predictions and data with no fitting parameters, which would be remarkable. However, the abstract provides no details about the mathematical framework, what predictions were tested, how agreement was quantified, or what data were used for comparison. The claim of parameter-free prediction requires rigorous validation including goodness-of-fit metrics, which are not presented in the abstract.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "aeb5c869-bd8b-4a3a-b973-8f2523ae3b67",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An agent-based computational model using integrate-and-fire oscillators with tunable coupling reproduces the observed phenomenology quantitatively across varying swarm densities and reduces to the analytical framework at appropriate coupling limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5-C7 describe a computational model that allegedly shows 'quantitatively similar phenomenology' and mathematical consistency with the analytical framework. However, without details on model validation, parameter choices, sensitivity analysis, or quantitative metrics comparing simulations to data, the degree of agreement cannot be assessed. The claim that the model 'reduces to' the analytical framework (C7) requires mathematical proof not provided in the abstract.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    },
+    {
+      "id": "062577bb-5271-46db-88ed-66a5a5237bc0",
+      "content_id": "c62a0e3c-97de-4291-a261-ca61369ac23f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The synchronization mechanism in P. carolinus fireflies operates as a decentralized follow-the-leader system where any individual can assume the leader role for subsequent synchronized bursts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8 and C9 propose a specific mechanistic interpretation of the synchronization dynamics. However, this characterization appears to be an inference from model behavior rather than direct experimental observation. The abstract provides no evidence demonstrating that individual fireflies actually take turns as leaders, no tracking data showing leadership transitions, and no experimental tests distinguishing this mechanism from alternative synchronization mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:37:39.810988Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69525334-c70b-4593-af9d-1fbaa3f82aac",
+      "result_id": "f1c47505-2d6d-4453-9e1f-3f074fb56729"
+    },
+    {
+      "claim_id": "ca5f2fea-e31b-4554-8811-0c6392743ea8",
+      "result_id": "f1c47505-2d6d-4453-9e1f-3f074fb56729"
+    },
+    {
+      "claim_id": "6709983b-506a-4436-842b-2e04072b4720",
+      "result_id": "f1c47505-2d6d-4453-9e1f-3f074fb56729"
+    },
+    {
+      "claim_id": "8ff4089e-06f1-42d3-9349-ab1bd7fe2341",
+      "result_id": "f1c47505-2d6d-4453-9e1f-3f074fb56729"
+    },
+    {
+      "claim_id": "7820da85-f230-412c-9cd6-32bffc0b63b6",
+      "result_id": "12424d17-5280-4782-9c0c-38075c0d2e18"
+    },
+    {
+      "claim_id": "48895f24-7f66-4843-acf2-57bfaf7da0b0",
+      "result_id": "12424d17-5280-4782-9c0c-38075c0d2e18"
+    },
+    {
+      "claim_id": "2d7ea9da-c594-4582-bee1-a18adc056ce4",
+      "result_id": "aeb5c869-bd8b-4a3a-b973-8f2523ae3b67"
+    },
+    {
+      "claim_id": "3ad85590-4c78-464c-bf04-d6f1ab53fa4d",
+      "result_id": "aeb5c869-bd8b-4a3a-b973-8f2523ae3b67"
+    },
+    {
+      "claim_id": "de82bd32-ed50-4994-8ac4-5140259ac2d9",
+      "result_id": "aeb5c869-bd8b-4a3a-b973-8f2523ae3b67"
+    },
+    {
+      "claim_id": "e657a3ed-6fca-4e72-8d9a-5a91468abf97",
+      "result_id": "aeb5c869-bd8b-4a3a-b973-8f2523ae3b67"
+    },
+    {
+      "claim_id": "0370a3e5-6bc7-4b2f-b52d-c1255422857b",
+      "result_id": "062577bb-5271-46db-88ed-66a5a5237bc0"
+    },
+    {
+      "claim_id": "a1f995f9-7e06-4e87-8895-55e239c498ed",
+      "result_id": "062577bb-5271-46db-88ed-66a5a5237bc0"
+    }
+  ],
+  "comparisons": []
+}

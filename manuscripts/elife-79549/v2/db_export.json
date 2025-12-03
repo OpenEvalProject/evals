@@ -1,0 +1,1626 @@
+{
+  "submission": {
+    "id": "844c96f8-1970-49e3-a970-37a60be95165",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T14:46:00.283735Z",
+    "updated_at": "2025-12-03T14:46:00.283735Z"
+  },
+  "content": [
+    {
+      "id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "submission_id": "844c96f8-1970-49e3-a970-37a60be95165",
+      "content_type": "manuscript",
+      "content_text": "# The evolution of a counter-defense mechanism in a virus constrains its host range\n\n## Authors\n\n- Sriram Srikant<sup>1</sup> ([ORCID: 0000-0003-3904-0336](https://orcid.org/0000-0003-3904-0336))\n- Chantal K Guegler<sup>1</sup> ([ORCID: 0000-0003-0818-4222](https://orcid.org/0000-0003-0818-4222))\n- Michael T Laub<sup>1</sup> ([ORCID: 0000-0002-8288-7607](https://orcid.org/0000-0002-8288-7607)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n2. Department of Biology, Howard Hughes Medical Institute, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria use diverse immunity mechanisms to defend themselves against their viral predators, bacteriophages. In turn, phages can acquire counter-defense systems, but it remains unclear how such mechanisms arise and what factors constrain viral evolution. Here, we experimentally evolved T4 phage to overcome a phage-defensive toxin-antitoxin system, toxIN, in Escherichia coli. Through recombination, T4 rapidly acquires segmental amplifications of a previously uncharacterized gene, now named tifA, encoding an inhibitor of the toxin, ToxN. These amplifications subsequently drive large deletions elsewhere in T4\u2019s genome to maintain a genome size compatible with capsid packaging. The deleted regions include accessory genes that help T4 overcome defense systems in alternative hosts. Thus, our results reveal a trade-off in viral evolution; the emergence of one counter-defense mechanism can lead to loss of other such mechanisms, thereby constraining host range. We propose that the accessory genomes of viruses reflect the integrated evolutionary history of the hosts they infected.\n\n## Introduction\n\nBacteria face the frequent threat of phage predation and have consequently evolved a diverse arsenal of anti-phage defense systems (Bernheim and Sorek, 2020; Tal and Sorek, 2022; Wein and Sorek, 2022). These defense systems have, in turn, driven the selection of counter-defense mechanisms in phage, underscoring the intense arms race between phages and their bacterial hosts (Samson et al., 2013; Hampton et al., 2020). There are several well-characterized examples of anti-restriction modification (RM) and anti-CRISPR proteins (Stanley and Maxwell, 2018). However, there is an ever-growing inventory of phage defense mechanisms in bacteria and how phages counteract these diverse systems is poorly understood (Samson et al., 2013). More generally, it remains unclear how phages can rapidly acquire resistance when confronted with a new defense system and what types of mutations and mechanisms are responsible. Probing how phage overcome bacterial defense systems will help reveal the molecular basis of bacteria\u2013phage coevolution and may inform efforts to develop phage therapies for treating antibiotic-resistant bacterial infections.\n\nAn emerging class of potent phage defense genes are toxin\u2013antitoxin (TA) systems, which typically comprise a protein toxin that is directly neutralized by its cognate antitoxin (Harms et al., 2018). For defensive TA systems, phage infection activates or triggers the release of the toxin, which can then block phage development (Guegler and Laub, 2021). Although the initially infected cell typically does not survive, particularly if the toxin also inhibits host cell processes during infection, these defensive TA systems prevent the release of new, mature virions, thereby preventing spread of an infection through a population.\n\nHow can a phage evolve to overcome a defensive TA system? There are three general possibilities: (1) a phage prevents activation of the TA system, (2) a phage becomes resistant to the action of the toxin, or (3) a phage acquires or modifies a factor that can inhibit or degrade the toxin. As TA systems may be activated by and target core phage processes, the latter is a potentially powerful mechanism because it does not require mutations in essential phage genes. Notably, like eukaryotic viruses, phages often harbor many \u2018accessory genes\u2019 that are not formally required for phage propagation in a na\u00efve host in permissive conditions. For instance, T4 encodes nearly 300 proteins, only 62 of which are required to produce a new virion in common laboratory conditions (Miller et al., 2003). The remaining genes are mostly of unknown function, but their presence in many related T4-like phages suggests they may play key roles in host specificity by overcoming host defense systems or enabling replication in specific growth conditions.\n\nThere are several examples of phage-encoded anti-TA factors. The T4 gene dmd encodes a direct inhibitor of the RnlA toxin from the Escherichia coli K12 type II TA system RnlAB (Otsuka and Yonesaki, 2012; Wan et al., 2016). Consequently, RnlAB only protects E. coli against T4 phage lacking dmd (gene 61.5). More recently, T-even phages including T4 were shown to encode an inhibitor (AdfA, encoded by gene 61.2 in T4) of DarT toxins (LeRoux et al., 2022). In Pectobacterium atrosepticum, the type III TA system toxIN, involving an endoribonuclease toxin and RNA antitoxin, protects against infection by several phages, including \u03a6TE and \u03a6A2. Selection for \u03a6TE mutants that overcome the P. atrosepticum toxIN system identified phages that either expressed additional copies of a locus resembling the toxI antitoxin or that had acquired toxI from the toxIN system directly (Blower et al., 2012). This study indicates that phages may be poised to readily evolve mechanisms to overcome defensive TA systems.\n\nHere, we evolved T4 phage to overcome a toxIN homolog from a natural plasmid in an environmental E. coli isolate that can provide E. coli MG1655 with potent defense (Fineran et al., 2009; Guegler and Laub, 2021). Using an experimental evolution approach adapted from that used in early phage therapy initiatives (Appelmans, 1921; Burrowes et al., 2019), we find that T4 can rapidly overcome toxIN through the segmental amplification and increased expression of tifA (previously 61.4), which encodes a protein inhibitor of ToxN. Strikingly, these segmental amplifications led to T4 genome instability, likely because an increased genome size is incompatible with the fixed capsid size of T4. The evolved phages subsequently acquired compensatory deletions that restored genome size, with the set of deleted genes varying among replicate evolved populations. These deletions compromise the ability of T4 to infect other strains of E. coli, often because the lost genes encode factors that overcome other, strain-specific defense systems. In sum, our work reveals the genome dynamics underlying the emergence of an anti-defense mechanism in T4 and demonstrates an evolutionary trade-off in which selection to infect one host can compromise infection of others.\n\n## Results\n\n### T4 can evolve to overcome toxIN-mediated defense in E. coli\n\nWe previously identified and characterized toxINEc (hereafter toxIN for simplicity), a type III TA system from an environmental isolate of E. coli that strongly protects E. coli MG1655 against T4 infection (Figure 1A; Guegler and Laub, 2021). To evolve T4 to overcome toxIN, we adapted the Appelmans protocol originally developed in phage therapy to evolve phage to replicate on resistant pathogenic hosts (Appelmans, 1921; Burrowes et al., 2019; Mapes et al., 2016). Briefly, our approach involved replicating T4 on both a sensitive host (-toxIN), which maintains the phage population size and generates diversity, and on a resistant host (+toxIN) to select for phages that can overcome the defense system (Figure 1B). During each round of evolution, serial dilutions of the phage population (six serial tenfold dilutions producing a range of 107\u2013101 phage) were each inoculated with 105 host cells to produce a range of multiplicities of infection (MOIs, defined as the ratio of phages to bacteria) from 102 to 10\u20134 in 96-well plates and then grown for 16\u201320 hr. This protocol allows phage to evolve by a combination of point mutations and recombination events within a phage genome, as well as recombination between co-infecting phage. The clearing of cultures across MOIs provided a visual readout of the phage population evolving to infect the resistant host (Figure 1B, Figure 1\u2014figure supplement 1A). Throughout the evolution protocol, the T4 population titer remained at 105\u2013106 pfu/\u00b5L, with an estimated 1\u20133 phage infection generations occurring in wells from high to low MOI within a single round of evolution (see \u2018Materials and methods\u2019). We set up five replicate evolutions of T4 to overcome toxIN carried on a medium-copy plasmid in E. coli MG1655 (+toxIN), and a control population replicating only on -toxIN cells (MG1655 with an empty vector) (Figure 1\u2014figure supplement 1A). We plated serial dilutions of the phage populations after each round on lawns of +toxIN cells to identify toxIN-resistant phage clones as they arose and fixed (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig1-v2.jpg)\n\n**Figure 1.:** (A) T4 is restricted by +toxIN E. coli. Serial dilution plaquing assay of T4 spotted on -toxIN and +toxIN cells. (B) Phage evolution protocol to select for T4 that overcomes toxIN-mediated defense. Serial dilutions of T4 are used to infect +toxIN and -toxIN cells at multiple multiplicities of infection (MOIs). The ancestral T4 only clears wells containing -toxIN cells. Phage from all cleared wells, and the last uncleared well, are pooled and used to inoculate the next round of evolution. As the population evolves, it can also infect and clear +toxIN cells. Phage populations from each round are saved to maintain a fossil record; individual clones are isolated on +toxIN cells and sequenced to identify mutations, leading to toxIN resistance. (C) Comparison of plaquing efficiency for ancestral T4 and T4 isolates from one of the evolved populations after five rounds on -toxIN and +toxIN cells. (D) Read coverage at the dmd-tifA(61.4) locus following genome sequencing of multiple clones from one of the evolved populations. Primer pairs used in panel (E) to interrogate the segmental amplification are shown below the locus map. (E) PCR products using the primer pairs indicated in panel (D) for ancestral T4 and evolved clones. (F) Schematic of segmental amplification of dmd-tifA locus in evo 3 clones highlighting binding of primer pair 2 producing a cross-repeat product.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experimental evolutions were performed in 96-well plates. Pairs of rows were used for each evolving population and contain -toxIN or +toxIN cells in consecutive rows except for the control evolution, which has -toxIN cells in both rows. Plates were imaged after overnight growth with clearing in wells indicating successful phage replication. The plate shown corresponds to round 5. (B) Serial dilutions of evolving populations spotted on -toxIN (left) and +toxIN (right) cells after five rounds of evolution shown as an example of how population size and ability to infect +toxIN cells were monitored.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Serial dilutions (top left, replicated from Figure 1C) and plaque assays (top right) of plaque clone isolates 1 and 2 from evo 3 after round 5 show dramatic plaque size variability compared to the T4 ancestor. (Below) Fold coverage of evolved clones (red lines) compared to T4 ancestor (black line) highlighting genomic differences across clones and deletions that arise in subpopulations during amplification from a single plaque. (B) Schematic representing generation of laddered products from PCR amplification of template with tandem repeats (step 1). Polymerase extension from an annealed primer generates a complementary strand to the template of length depending on the processivity of the polymerase. With purified polymerases and sufficient extension time, most products cover a large part of the repeated region, but some events generate smaller fragments containing fewer repeats (step 2). These smaller fragments can serve as primers in subsequent rounds of amplification by efficiently annealing to the template, but at mismatched repeats (step 3). This generates all sizes of products differing in the number of repeats with flanking primer annealing sites.\n\nFor one of the populations (evo 3), phage that could form plaques on lawns of +toxIN cells arose after five rounds of evolution, an estimated 5\u201315 infection generations. From this population, we isolated phages from four individual plaques on +toxIN lawns and confirmed that these evolved phages plaque as efficiently on +toxIN cells as on the control strain -toxIN (Figure 1C). To identify the mutations responsible for overcoming toxIN, we fully sequenced the genomes of these four evolved clones. No individual gene was mutated in all of the evolved clones. However, our sequencing revealed increased read coverage of a two-gene locus in the genome of each evolved clone (Figure 1D). This locus consists of two genes, dmd (61.5) and 61.4, driven by an early T4 promoter (Liebig and R\u00fcger, 1989; Miller et al., 2003). As noted above, Dmd is an inhibitor of the RnlA toxin of the RnlAB TA system (Otsuka and Yonesaki, 2012) and 61.4 encodes a putative 85 amino acid protein of unknown function, which we have renamed tifA (ToxN inhibitory factor A) based on the studies below.\n\nThe increased read coverage of the dmd-tifA locus could indicate the presence of multiple copies of this locus scattered throughout the T4 genome or a local, segmental amplification of this locus. PCR using primers flanking this locus produced a ladder of products, indicating a segmental amplification generating tandem repeats (Figure 1E,F, Figure 1\u2014figure supplement 2B). PCR using divergent primers in the middle of the amplified region generated a band for the evolved clones but not the T4 ancestor (Figure 1E). This band is produced by primers annealing to neighboring repeats and thus reflects the size of a single repeat in the amplification.\n\n### TifA is a protein inhibitor of ToxN\n\nWe hypothesized that the segmental amplifications in our T4 escape mutants led to increased expression of either dmd or tifA, allowing the phage to overcome toxIN. To determine which gene was responsible, we cloned dmd and tifA separately into a vector containing an inducible promoter and transformed each plasmid into +toxIN cells. We then infected both strains with the ancestral, wild-type T4 in the presence of inducer and compared their efficiency of plaquing (EOP) (Figure 2A). The ability of toxIN to inhibit T4 infection was completely lost following induction of tifA, suggesting that this gene was sufficient to prevent ToxN-mediated defense. Overexpressing dmd did not allow T4 to replicate in the presence of toxIN, indicating that this gene did not contribute to escape, but was likely included in the segmental amplification as the promoter for tifA lies upstream of dmd (Figure 1D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig2-v2.jpg)\n\n**Figure 2.:** (A) Serial dilution plaquing assay of T4 ancestor spotted on +toxIN cells also harboring a plasmid containing dmd or tifA(61.4), or an empty plasmid. Anhydrotetracycline was added to the plates to induce dmd or tifA. (B, C) Representative plating assay (B) and growth curves (C) showing TifA rescue of ToxN. Plasmids harboring toxN and tifA under arabinose- and IPTG-inducible promoters, respectively, were transformed into E. coli MG1655. ToxN, ToxN, and TifA, or neither were induced as indicated. For growth curves in (C), data are the average of three technical replicates each of four biological replicates, with shaded areas indicating standard deviation. (D) Serial dilution plaquing assay of T4 ancestor spotted on +toxIN cells containing plasmids expressing the tifA variants indicated. (E) Western blot of ToxN-His6 and TifA-FLAG (or untagged controls) following an anti-FLAG coimmunoprecipitation of T4-infected cells co-producing ToxN and TifA. The arrowhead highlights the band with a molecular weight matching that expected for TifA-FLAG. The identity of the band below is unknown but may represent a processed or truncated portion of TifA-FLAG. (F) Serial dilution plaquing assay of T4 ancestor and two tifA mutants on E. coli MG1655 with chromosomally encoded toxIN or toxIN(K55A), which harbors an active-site mutation in ToxN.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Serial dilutions of T4 ancestor on lawns of E. coli MG1655 containing toxIN or toxI-toxN-His6 and co-expressing tifA or tifA-FLAG, or carrying an empty vector, as indicated.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** T4 mutant clones with mutations in tifA. (Left) Sanger sequencing chromatograms of tifA in T4(bgt(II/5-6\u0394)), tifA-1 (98 bp deletion), and tifA-2 (5 bp insertion). (Right) Serial dilutions of T4(bgt(II/5-6\u0394)) and tifA mutants on MG1655 and MG1655 expressing Cas9 with the tifA[cr4] guide-RNA shown above the chromatograms.\n\nOur results suggested that tifA is a phage-encoded factor that, upon overexpression, can offset ToxN activity during T4 infection. To test whether tifA encodes an antitoxin for ToxN, we cloned toxN into a vector that allowed for its inducible expression and co-transformed this plasmid into E. coli MG1655 with a plasmid containing tifA controlled by a separate, inducible promoter. As expected for a bacteriostatic toxin, inducing ToxN in uninfected cells inhibited the growth of E. coli. Co-induction of tifA was sufficient to partially rescue this toxicity, on both solid media and in culture (Figure 2B,C), indicating that tifA is a T4-encoded antitoxin for ToxN.\n\nGiven that the native antitoxin toxI is an untranslated RNA that binds and neutralizes ToxN, we sought to determine whether tifA encodes a protein or an RNA antitoxin of ToxN (Figure 2D). Expressing a version of tifA in which the start codon was deleted (tifA \u0394ATG) could no longer restore T4 infection of cells harboring toxIN, suggesting that tifA must be translated to function. Additionally, we found that a recoded variant of tifA that has a different mRNA sequence (55 of 258 nucleotides changed) but produces the same protein sequence could still restore T4 infection of +toxIN cells, indicating that the protein product of tifA was sufficient for ToxN inhibition. Finally, to verify that the tifA mRNA does not act as a competitive substrate for inhibition of ToxN, an endoribonuclease, we ablated a putative ToxN cleavage site at the 3\u2032 end of tifA. Expression of this variant did not interfere with inhibition of ToxN, confirming that it is the protein product, and not the mRNA, of tifA that counters toxIN in our evolved T4 clones. It is these results that prompted us to rename gene 61.4 to tifA.\n\n### TifA interacts with ToxN in vivo\n\nTo test whether TifA interacts directly with ToxN, we generated a strain producing ToxN from the toxIN locus with a C-terminal His6 tag and TifA with a C-terminal FLAG tag. We first verified that these tags did not affect activity of either protein (Figure 2\u2014figure supplement 1). We then infected cells with T4, lysed the cells, and performed an immunoprecipitation with anti-FLAG antibodies to isolate TifA and any interacting proteins. Western blotting with an anti-FLAG antibody confirmed that TifA was present, as expected, and blotting with an anti-His6 antibody demonstrated that ToxN was also recovered (Figure 2E). These results suggest that TifA interacts with ToxN, either directly or indirectly, in vivo.\n\nIf T4 encodes an inhibitor of ToxN, why is toxIN normally able to defend against wild-type T4? We reasoned that, because toxIN is encoded on a medium-copy (~20/cell) plasmid in our system, the single, native copy of tifA in T4 might not be sufficient to overcome ToxN. To test this idea, we introduced either toxIN or toxIN(K55A), which produces an enzymatically dead ToxN, into the E. coli MG1655 chromosome and infected both strains with T4 (Figure 2F). In this case, toxIN was no longer sufficient to protect against wild-type T4 infection. To confirm that this infection requires tifA, we used a CRISPR-Cas9 system to generate two mutant strains of T4 (see \u2018Materials and methods\u2019) containing either a 98 bp deletion or 5 bp insertion disrupting the tifA open-reading frame (Figure 2\u2014figure supplement 2). Both T4 mutant strains exhibited an ~100-fold decrease in plaquing efficiency on a strain containing chromosomal toxIN, but were comparable to the wild-type T4 when tested on a toxIN(K55A) control strain (Figure 2F). These results suggest that native tifA expression is sufficient to overcome ToxN produced from the chromosome and that the segmental amplification that arose during our evolution experiments reflects a pressure to overcome the stronger expression of plasmid-borne toxIN.\n\n### TifA homologs from other T4-like coliphage inhibit ToxN\n\nHomologs of tifA are found adjacent to dmd homologs in the genomes of the coliphage T2, T6, and RB69, all of which are closely related to T4 (Figure 3A), and in other types of phages that infect a diverse set of bacterial hosts (Figure 3\u2014figure supplement 1). TifA homologs share a common architecture, with a central region containing a cluster of positively charged residues (Figure 3B, Figure 3\u2014figure supplement 1). Although the T2, T4, and T6 homologs are nearly identical to one another, RB69 TifA is more divergent (56% identity) and lacks the C-terminal extension shared by the other three (Figure 3B). Interestingly, plasmid-borne toxIN strongly protects E. coli against T2, T4, and T6 infection, but offers substantially less protection against RB69, as measured by plaquing efficiency and cell death in shaking cultures (Figure 3B, C, Figure 3\u2014figure supplement 2A, B). Thus, we hypothesized that the more divergent TifA from RB69 may be a more potent inhibitor of ToxN.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of syntenic region containing tifA in closely related T-even phages. Homologous genes are aligned vertically and colored by % identity to the homolog in T4. (B) (Left) Serial dilution plaquing assays of T4, T2, T6, RB69 on +toxIN cells. (Right) Multiple-sequence alignment of TifA homologs from T4, T2, T6, and RB69. (C) Growth curves following infection of +toxIN cells with T4, T2, T6, or RB69 phage, each at a multiplicity of infection (MOI) of 10\u20133. Data are the average of three biological replicates, with shaded areas indicating standard deviation. (D) Serial dilutions of T4 ancestor spotted on +toxIN cells expressing tifA homologs from T2, T4, T6, RB69, or harboring an empty vector. (E) Serial dilutions of E. coli cells expressing toxN and the tifA homolog from T2, T4, T6, or RB69, toxI, or alone.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Multiple-sequence alignment of 57 TifA proteins found across sequenced phage genomes. TifA homologs have a conserved central region (highlighted by darker shades of gray) with varied N- and C-terminal regions. Groups of similar sequences, as judged by the tree (left), are shaded with the same color. Sequences were identified by jackhmmer, aligned by MUSCLE, and a pseudo-maximum likelihood tree built with FastTree.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Serial dilution plaquing assays of T4, T2, T6, and RB69 from Figure 3B on -toxIN cells. (B) Growth curves following infection of -toxIN cells with T4, T2, T6, or RB69, each at a multiplicity of infection (MOI) of 10\u20133. Data are the average of three biological replicates, with shaded areas indicating standard deviation. (C) Serial dilutions of T2 spotted on +toxIN cells expressing tifA homologs from T2, T4, T6, RB69, or harboring an empty vector.\n\nTo test this hypothesis, we cloned each tifA homolog from T2, T4, T6, and RB69 into a plasmid with an inducible promoter and transformed those plasmids into +toxIN cells. We then compared the ability of wild-type T4 to infect each strain (Figure 3C). Overexpressing any of the four TifA variants allowed T4 to form plaques on +toxIN lawns (Figure 3D), with cells producing RB69 TifA producing the clearest plaques. We also tested each variant for protection against T2 infection, again finding that RB69 TifA produced the clearest plaques and led to the highest EOP on +toxIN lawns (Figure 3\u2014figure supplement 2C). Finally, we expressed each tifA homolog in uninfected cells ectopically producing ToxN and found that all the TifA homologs rescued cells from ToxN-mediated toxicity to some extent (Figure 3E). We conclude that the TifA homolog from each of these T-even phages is a ToxN inhibitor, but that RB69 may encode a more potent inhibitor, enabling RB69 phage to be least affected by the toxIN system we tested.\n\n### T4 genome evolution proceeds through frequent recombination events\n\nFor the phages from population 3 that were initially isolated and sequenced after five rounds of evolution, we noticed that individual plaques exhibited substantial variability in size (Figure 1\u2014figure supplement 2A), suggestive of some genomic variation during isolation. We therefore continued the evolution for this and the other four replicate populations for 20 additional rounds, maintaining selection for infection of +toxIN cells. By plating serial dilutions of the evolving populations on +toxIN lawns, we could track, as they arose, T4 clones that could infect +toxIN cells in each population (Figure 4A\u2013C, Figure 4\u2014figure supplement 1). ToxIN-resistant phages emerged at a different round in each population, but with comparable levels of resistance stabilizing after 25 rounds (Figure 4A ,B, Figure 4\u2014figure supplement 1). We then sequenced the genome of one phage clone isolated from each population (Figure 4C). There were no point mutations in common across all five evolved phage clones. However, as with the first clones sequenced (Figure 1D), each of these sequenced genomes had an amplification of the dmd-tifA locus, as manifested by an approximately tenfold increase in read counts in this region (Figure 4D, Figure 4\u2014figure supplement 2A). For the clone from population 5, dmd is included in the amplification but not the promoter upstream. However, in this case there is a promoter downstream of tifA that ends up oriented in a manner that would allow it to drive expression of the dmd-tifA cistron following amplification (Figure 4\u2014figure supplement 2B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig4-v2.jpg)\n\n**Figure 4.:** (A) Serial dilutions of evolving populations (one control evolution and five replicate populations) after rounds 1, 5, 10, 15, and 25 spotted on +toxIN cells. (B) Heat map summarizing the titer of toxIN-resistant T4 as they arise in the independent evolving populations. Titer was estimated by serial dilutions of evolving populations spotted on +toxIN cells (as in panel A). (C) Serial dilutions of isolated clones from evolved populations spotted on -toxIN and +toxIN cells. (D) Fold coverage from genome sequencing of evolved T4 isolates around dmd and tifA. (E) PCR with divergent primers, indicated in panel (D), used to map the size of the repeated unit in the tandem segmental amplifications. (F) Schematic of segmental amplification of dmd-tifA locus in evo clones highlighting binding of primer pair 2 producing a cross-repeat product that depends on the specific location of the microhomology.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Population size of replicate evolving T4 populations is determined by the titer estimated on -toxIN lawns and remains roughly constant (105\u2013106 pfu/\u00b5L) over 25 rounds. Serial dilutions of evolving populations (control evo, evo 1 to evo 5, top to bottom in each image) spotted on -toxIN and +toxIN lawns. These data were quantified to generate the heat map in Figure 4B; round 0 data replicated from Figure 1A.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) PCR products with divergent primers (primer pair 2, used similar to Figure 1) confirm the presence of contiguous repeats in clones isolated from each evolving population (but not in clones from control evo or the T4 ancestor), with different sizes confirming unique repeating units in each evolving population\u2019s amplification. (B) Schematic of repeats in evolved clones that link either the T4 early promoter upstream of dmd-tifA (evo 4, middle) or the T4 early promoter downstream of dmd-tifA (evo 5, bottom) to ensure expression of operon in all repeats. (C) Schematics of recombination events that can lead to segmental amplifications (left) or genome deletions (right). T4 is known to rely on recombination during genome replication at late times and is also used in the concatenation of genomes to enable processive genome packaging. Recombination between short identical sequence repeats, or regions of microhomology (green or red), across or within genome molecules can generate a segmental copy or loss of the intervening region, respectively.\n\nThe precise boundaries of the segmental amplification differed in each evolved population. This finding indicates that the same adaptive solution, the amplification of the dmd-tifA locus, occurred independently in each evolved population. We performed a PCR with divergent primers that would only amplify a product following a segmental amplification to confirm the size of the amplified region in each population (Figure 4D\u2013F). The different sizes of the band in clones from different populations confirmed that the repeat region was unique in clones of each population (Figure 4\u2014figure supplement 2A). Sanger sequencing of the PCR products revealed that the boundaries of each segmental amplification coincided with unique, short (typically 6\u201310 bp) regions of microhomology that normally flank the dmd-tifA locus (Figure 4D, Figure 4\u2014figure supplement 2C). In the evolved clones, only one of the two regions of microhomology remain between neighboring repeats (Figure 4\u2014figure supplement 2C). Thus, the segmental amplifications observed likely arose through homologous recombination between these regions of microhomology, as also seen previously in T4 (Kumagai et al., 1993; Mosig, 1987; Wu et al., 1991; Wu et al., 2021).\n\nStrikingly, in addition to an amplification of the dmd-tifA locus, each evolved clone of T4 also had large deletions elsewhere in its genome (Figure 5A and B). Individual deletions were different in each clone and ranged from 0.7 to 6 kb in length, for a total of 5\u201311 kb lost in each genome (Figure 5C). We confirmed the absence of each deletion by PCR using primers that flank the deleted region inferred by genome sequencing (Figure 5\u2014figure supplement 1A). These deletions likely enable T4 to maintain a constant genome size by acquiring deletions that compensate for the amplifications selected during evolution. The T4 genome is packaged by a headful mechanism in which 172 kb from a genomic concatemer is inserted into a pro-head. The inserted DNA represents 102% of the T4 genome (168 kb), with ~3.3 kb of terminal redundancy (Grossi et al., 1983; Kim and Davidson, 1974; Rao and Black, 2005). To ensure stable packaging and inheritance of the genome, the segmental amplifications that arose following selection on +toxIN cells likely required the genome to contract elsewhere. Consistent with this interpretation, the size of the deleted region in each evolved clone was roughly proportional to the size of the segmental amplification, as estimated from the increased read coverage across the dmd-tifA region (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fold coverage calculated from genome sequencing of clones from replicate evolved populations plotted across the entire genome, showing regions of increased coverage (dmd-tifA locus) and large genomic deletions manifesting as a loss of coverage. Genes are colored based on their regulation during the phage life cycle; early (green), middle (magenta), and late (cyan). (B) Summary of deleted regions in each evolved clone showing the flanking regions of microhomology (gray rectangles). (C) Scatter plot of increase in genome size estimated from fold coverage across dmd-tifA repeat region (circle represents median and triangles represent interquartile range of coverage) against the size of genome deletion in clones from each population.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) (Top) Summary of mutations and deletions identified by genome sequencing of isolated clones from each population after 25 rounds of evolution. Boundaries of the deletion, which are short regions of microhomology, are listed along with the deleted genes. (Bottom) PCR with primers flanking each of the deleted regions, to confirm smaller products generated from the corresponding evolved clone compared to T4 ancestor (or clone from control evo). (B) Fold coverage calculated from genome sequencing of clones isolated from populations 3 and 5 after various rounds of evolution (5, 15, 25) to follow amplifications and deletions that arise in evo 3 (left) and evo 5 (right). (C) PCR with primers flanking the deleted regions of evolving populations 3 (left) and 5 (right) performed on evolved clones isolated from rounds of evolution (5, 10, 15, 25) to trace genome configurations over evolutionary time.\n\nOur results indicate that T4 rapidly evolves through recombination between short regions of microhomology within its genome (Kumagai et al., 1993; Mosig, 1987; Wu et al., 2021). To overcome the toxIN system, such recombination events cause the segmental amplification of dmd and tifA. The resulting genome is then likely too big to be stably maintained, giving rise to the variability in genome coverage seen during intermediate rounds of our evolution, with different individual plaques containing different deletions that restore genome size (Figure 1\u2014figure supplement 2A, Figure 5\u2014figure supplement 1B). At later rounds, one of these genome configurations rises to a high frequency in the population (Figure 5, Figure 5\u2014figure supplement 1B, C).\n\n### Genome deletions prevent T4 from infecting other strains of E. coli\n\nNone of the 62 genes that are essential for producing new virions during infection of E. coli in rich media at 37\u00b0C (Figure 6\u2014figure supplement 1A) were included in the deletions identified in our evolved clones (Miller et al., 2003). However, we hypothesized that the genes lost in our evolved clones may compromise infection of other strains of E. coli.\n\nOne of the deletions that arose in evolved phage population 3 (evo 3) contained the rII locus (Figure 5B). The rIIA and rIIB genes allow T4 to replicate in E. coli strains harboring a \u03bb-lysogen (Benzer, 1955). The RexAB system of \u03bb allows it to exclude T4 rII mutants by a mechanism that remains poorly characterized (Wong et al., 2021). As predicted, the T4 clones that have deletions spanning rII lost the ability to replicate on a \u03bb-lysogen of MG1655 (Figure 6A, Figure 6\u2014figure supplement 1B). Spot assays and whole-genome sequencing of clones isolated from different time points during the evolution confirmed that this population of phage first acquired the ability to infect +toxIN cells and then subsequently lost the ability to replicate in a \u03bb-lysogen once the genomic deletions including rII had fixed in the population (Figure 5\u2014figure supplement 1A\u2013C, Figure 6\u2014figure supplement 1B). Expressing rIIA and rIIB from plasmids in a MG1655 \u03bb-lysogen partially restored the infectivity of an evolved T4 clone, confirming the causal nature of the rII deletion (Figure 6A). These results suggest that the genes lost to compensate for dmd-tifA amplification may include genes that help T4 overcome other defense and exclusion mechanisms, like RexAB.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig6-v2.jpg)\n\n**Figure 6.:** (A) (Top) Fold coverage map for rIIA and rIIB locus in a clone from population 3 (evo 3). (Bottom) Serial dilutions of the T4 ancestor and evo 3 clone 1 on the strains indicated. (B) Heat map quantifying the relative efficiency of plaquing (EOP) of each evolved clone compared to the T4 ancestor for the indicated E. coli strains evaluated as the average of three biological replicates. (C) Fold coverage maps for the IPIII gene in the indicated clones of T4 from evolved populations evo 1, 2, and 5, with the corresponding serial dilutions of each clone on ECOR17. (D) Serial dilutions of evolved isolates with IPIII deletions on ECOR17 and ECOR17 +IPIII cells. (E) (Top) Serial dilutions of T4 ancestor and evo 3 clone 1 on ECOR17, ECOR17 \u0394dsr1, and MG1655 lawns. (Bottom) Serial dilutions of T4 ancestor and evo 3 clone 1 on MG1655 with plasmid-borne dsr1ECOR17 also harboring a plasmid expressing nrdC.5T4 or empty vector.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Genome map of T4 with all annotated T4 genes (yellow), highlighting essential (red) and auxiliary (blue) genes. Genome deletions identified in evolved populations do not contain any essential genes. (B) Serial dilutions of T4 evolved clones isolated from evo 3 after various rounds of evolution (5, 10, 15, 25) spotted on MG1655,+toxIN, and \u03bb-lysogen lawns. (C) Serial dilutions of T4 evolved clones (from control evo and evo 1 to evo 5) after round 25 and T4 ancestor spotted on E. coli strains sensitive to T4 ancestor. These data (performed in triplicate) were quantified to generate the heat map in Figure 6A. (D) Serial dilutions of T4 evolved clones isolated from evo 5 after various rounds of evolution (5, 10, 15, 25) spotted on MG1655,+toxIN, and ECOR17 lawns. (E) Serial dilutions of T4 evolved clones and ancestor spotted on ECOR17, ECOR17 expressing IPIII, ECOR17 expressing IPIII(\u0394CTS) (mutant that can no longer be packaged into new virions) and MG1655 lawns (data from same experiment as Figure 6D). (F) Serial dilutions of T4 evolved clones (from control evo, evo 1\u20135) after round 25 and T4 ancestor spotted on lawns of ECOR17 with deletions of computationally annotated phage defense systems (RM type I, RM type III, Abi2, Dsr1, Hhe, CRISPR-Cas type I).\n\nThe rII deletions were only found in clones from one of the five evolved populations and specifically affect infection of \u03bb-lysogens. We therefore tested the evolved T4 clones for their ability to infect strains from the ECOR collection, a set of E. coli strains isolated from diverse environments that have similar core genomes but widely varying accessory genomes (Ochman and Selander, 1984). We focused on strains that can be infected by our ancestral T4 phage, which included four strains from this collection, ECOR13, ECOR16, ECOR17, and ECOR71, as well as E. coli str. C (Figure 6B, Figure 6\u2014figure supplement 1C). Clones from populations 1, 2, 3, and 5 (evo 1, 2, 3, and 5) failed to infect ECOR17 and clones from populations 1 and 3 (evo 1 and 3) failed to infect ECOR71 (Figure 6B). The loss-of-replication phenotype arose in each population after they had acquired the ability to overcome toxIN, indicating that deletions that compensate for the segmental amplifications led to the loss of genes required for infecting these hosts (Figure 6\u2014figure supplement 1B and D).\n\nTo identify the gene(s) responsible for loss-of-replication, we asked which phage gene deletions correlated with the inability to infect ECOR17. The only gene lost in common across clones in evo 1, 2, and 5 was ipIII, implying that it enables T4 to infect ECOR17 (Figure 5B and Figure 6C). T-even phages encode a set of proteins \u2013 including IPIII \u2013 called internal proteins: they contain a sequence motif that drives packaging into mature virions such that the proteins are injected into a host with the phage genome (Kutter et al., 1995; Leiman et al., 2003; Mullaney and Black, 1996). IPI inhibits the restriction-modification system gmrSD (Bair and Black, 2007), but the function of the other internal proteins is not known. We hypothesized that IPIII may also be an anti-defense protein that targets a host defense system. Indeed, providing ipIIIT4 on a plasmid in ECOR17 restored the ability of clones from evo 2 and 5 to infect this host (Figure 6D). We also found that having the host cells express a variant of IPIII lacking the capsid-targeting sequence (ipIIIT4\u0394CTS) restored infectivity of clones from evo 2 and 5, indicating that IPIII functions in the cytoplasm of ECOR17 to enable T4 replication (Figure 6\u2014figure supplement 1E). For the clone from evo 1, ipIII on a plasmid did not restore infectivity, suggesting that phages in this population lack an additional gene required to infect ECOR17.\n\nTo identify the relevant host defense systems in ECOR17, we used available annotation pipelines (Payne et al., 2021; Tesson et al., 2022) to predict phage-defensive operons in the ECOR17 genome, finding six potential systems, which we deleted, individually, from ECOR17 (Figure 6\u2014figure supplement 1F). None of these deletions restored the infectivity of phage that lack IPIII, suggesting that an unknown defense system exists in ECOR17 and that IPIII enables T4 to overcome this system. Though the evo 3 clone also lost the ability to infect ECOR17, its deletions do not include IPIII. For this clone, a disruption of dsr1 in ECOR17 restored infection (Figure 6E, Figure 6\u2014figure supplement 1F). Dsr1 contains a Sirtuin domain and likely blocks phage replication by disrupting cytoplasmic NAD+ levels (Garb et al., 2021). Expression of the ECOR17 dsr1 gene from its native promoter on a medium-copy plasmid conferred protection to MG1655 against the evo 3 clone (Figure 6E). Thus, a T4 gene deleted in the evo 3 clone must overcome Dsr1 in the context of T4 ancestor infection. Expressing the uncharacterized T4 early gene nrdC.5 under an inducible promoter restored infectivity of the evo 3 clone on MG1655 carrying dsr1 (Figure 6E). Thus, the T4 genome contains multiple genes (including ipIII and nrdC.5) that enable the infection of multiple hosts by overcoming the suite of defense systems in these hosts. Our results support the notion that phage genomes are flexible and can rapidly amplify genetic material allowing them to overcome a specific defense system, but at the cost of losing genes that enable infection of other hosts (Figure 6B).\n\n## Discussion\n\n### TifA and an anti-TA island in T4-like phage\n\nBacteria and phages are locked in an ongoing coevolutionary battle, with extant genomes of each reflecting the outcomes of the underlying molecular arms race (Hampton et al., 2020; Koskella and Brockhurst, 2014). Given the fast generation times of bacteria and phages, experimental evolution offers an opportunity to study this arms race as it unfolds. Here, using an adapted version of Appelmans protocol (Appelmans, 1921; Burrowes et al., 2019; Mapes et al., 2016), we evolved T4 to overcome the type III TA system toxIN. Genome sequencing of evolved clones identified a two-gene operon dmd-tifA that was independently amplified in five replicate populations. We demonstrated that tifA, which encodes an 85 amino acid protein, inhibits ToxN, and that the amplification of tifA allows T4 to overcome plasmid-borne toxIN (Figure 7). Homologs of TifA are found in many T4-like phage, suggesting that these phages may frequently encounter hosts harboring toxIN-like systems. However, these homologs vary in both their sequence and their ability to inhibit ToxN, suggesting that each TifA may be \u2018tuned\u2019 to inhibit a particular, cognate ToxN of an ecologically relevant host.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/79549/elife-79549-fig7-v2.jpg)\n\n**Figure 7.:** The genome of T4 contains a number of accessory genes (tifA, nrdC.5, etc.) that enable infection of hosts by overcoming hosts defenses (toxIN, dsr1, etc.). T4 ancestor is unable to infect +toxIN cells due to inability to inhibit the action of ToxN but can infect an alternate host (ECOR17) using nrdC.5 to overcome the bacterial defense gene dsr1. Experimental evolution to infect +toxIN cells produce T4 evolved clones that have segmental amplifications of the tifA locus and compensatory deletions of nonessential genes like accessory genes needed to infect alternate hosts. A T4 evolved clone can thus infect +toxIN cells by having enough TifA to inhibit ToxN, but has lost nrdC.5 in a deletion, and thus lost the ability to infect ECOR17.\n\nTifA is analogous to the co-operonic gene dmd, which encodes a direct inhibitor of RnlA, the toxin of the rnlAB system in E. coli. Additionally, the nearby and conserved gene 61.2 (now adfA) was recently found to overcome the type IV TA system darTG (LeRoux et al., 2022). Thus, this region of the T4 genome may be an anti-TA island, similar to the anti-RM and anti-CRISPR islands found in other phages (Pinilla-Redondo et al., 2020). Other genes in this region of the T4 genome are attractive anti-toxin candidates.\n\n### Recombination-mediated amplifications and deletions drive T4 genome evolution\n\nT4 evolved to overcome toxIN by amplifying dmd-tifA, likely via recombination between short homologous sequences that flank this locus. These recombination events may arise during replication of the T4 genome or during the repair of DNA breaks. The unique amplifications that arose independently in our five replicates highlight the high rates of recombination-based mutagenesis in phage evolution. Similar recombination events between short (2\u201310 bp) regions of homology in T4 have been seen previously in studies of the rII locus (Kumagai et al., 1993), genes 16\u201318 (Wu et al., 1991), and escape from CRISPR-Cas defense (Wu et al., 2021).\n\nOur work also indicates that T4 can undergo large genomic changes through recombination between short regions of homology, leading to loss of the intervening region (Figure 5A, Figure 5\u2014figure supplement 1A). Genome packaging in T4 proceeds via a headful mechanism (Rao and Black, 2005), so any substantial gain in DNA must be offset by comparably sized losses. Thus, the gains in genetic material resulting from amplification of dmd-tifA likely necessitated the loss of other, nonessential DNA to maintain a genome that could be fully packaged into the head. A similar pattern of gene amplification in the 16\u201318 region of T4 followed by deletion of the gene alt was previously reported (Wu et al., 1991).\n\nGene amplification is a major source of evolutionary innovation. For instance, antibiotic resistance in bacteria frequently arises through gene amplification. Seminal studies of Salmonella demonstrated that spontaneous tandem duplications arise frequently in bacterial genomes and can be present in as much as 3% of a population (Anderson and Roth, 1981; Anderson and Roth, 1977). Gene duplications can provide intrinsic advantages, as with antibiotic resistance genes or in our case of tifA. Additionally, duplications create additional copies of a gene and hence provide a larger target for point mutations; if a beneficial mutation arises in any copy of the gene, it can provide a selective advantage and be maintained while other copies are lost by subsequent recombination. Such a scenario explains the apparently high rates of lac- reversions measured by Cairns and Foster when selecting for restoration of LacZ activity in strains harboring a point mutation in lacZ (Andersson et al., 1998; Cairns and Foster, 1991; Hendrickson et al., 2002). Similarly, a selection for poxviruses that can overcome the host restriction factor protein kinase R revealed an initial segmental amplification of the anti-host factor K3L, followed by subsequent acquisition of a beneficial point mutation in one copy K3L and subsequent loss of additional copies of the gene (Elde et al., 2012).\n\nIn the case of tifA, the entire T4 ancestor population likely contains a single copy of the dmd-tifA locus, which is insufficient to overcome plasmid-borne toxIN. Thus, the segmental amplifications that increase tifA copy number could not have been identified through a direct, one-step selection for escape mutants. However, the recombination events leading to these amplifications arose within several rounds in each of our replicate populations, indicating that this is a readily available pathway to overcoming toxIN. We did not observe point mutations in tifA early on that improve its inhibition of ToxN, likely because segmental amplifications via recombination arise more frequently. We also did not observe beneficial point mutations arising after the segmental amplifications, leading to subsequent collapse of the amplification, as with protein kinase R. We speculate that the fitness gains and number of beneficial point mutations in tifA are likely too small to arise and fix.\n\n### The evolution of phage host range\n\nThe genes deleted in our evolved T4 phage are all nonessential for infection of E. coli MG1655 grown in laboratory conditions but may be crucial for T4 to infect other hosts. Indeed, we found that the deletions in four of our five replicate populations compromised infection of other strains of E. coli. The loss of rII led to an inability to infect \u03bb lysogens, consistent with prior work showing that rII is required to neutralize the \u03bb-encoded anti-T4 system RexAB. Similarly, we found that IPIII, which was lost in three populations, is required for T4 to infect E. coli strain ECOR17. Internal proteins, including IPIII, are packaged with and then subsequently injected with the T4 genome. These proteins likely act against \u2018first-response\u2019 defense systems like RM systems in each host. For instance, IPI is known to inhibit the E. coli type IV RM system gmrSD. Which defense system IPIII inhibits remains to be determined.\n\nThe accessory genomes of phages likely include a broad range of anti-defense genes that profoundly influence their host ranges. The set of anti-defense genes in a phage genome at a given time will reflect, in part, those that have recently been selected for based on the hosts that phage has infected. As our experimental evolution demonstrates, if selection to infect a host and overcome its defense systems is not maintained, the corresponding anti-defense genes, which are not essential for phage replication, can be lost following pressure to infect new and different hosts (Figure 7). Such genome dynamics, which stem from the relentless coevolution of phage with their hosts, may help to explain the staggering diversity of accessory genes within phage genomes (Pope et al., 2015) and their sometimes narrow host ranges across hosts with varied and dynamic immune profiles (Hussain et al., 2021; Kauffman et al., 2022).\n\n### Concluding remarks\n\nOur experimental evolution approach enabled the identification of new anti-phage defense and phage counter-defense mechanisms. In addition to finding TifA as a novel inhibitor of ToxN, the characterization of our evolved T4 isolates indicated that IPIII likely antagonizes a novel, as-yet unknown defense system in ECOR17. Additionally, we discovered a homolog of the recently identified Dsr1 system in ECOR17 that can be counteracted by the nonessential gene nrdC.5 in wild-type T4. Collectively, these findings underscore how much remains to be discovered about the molecular arms race between bacteria and phages, which has profoundly shaped the genomes of both.\n\nPhages evolve rapidly, but the forces and mechanisms that drive this evolution are poorly understood. Experimental evolution helps to reveal the tempo and mutations critical to phage genome evolution. Efforts to dissect how phages evolve to overcome a range of host barriers, including different defense systems, promise to provide further insights into how phage evolution occurs and the mechanisms responsible. In addition, such studies may also inform practical efforts to engineer phages and develop phage therapeutics.\n\n## Materials and methods\n\n### Strains and growth conditions\n\nAll strains, plasmids, and primers used in this study are listed in Supplementary file 1. For all phage experiments in liquid media and all phage spotting experiments, E. coli MG1655 strains were grown in Luria broth (LB) medium. For pBAD33-ToxN induction experiments, cells were grown in M9 (10\u00d7 stock made with 64 g/L Na2HPO4-7H2O, 15 g/L KH2PO4, 2.5 g/L NaCl, 5.0 g/L NH4Cl) medium supplemented with 0.1% casamino acids, 0.4% glycerol, 0.4% glucose, 2 mM MgSO4, and 0.1 mM CaCl2 (M9-glucose). For plasmid construction, E. coli DH5\u03b1 and TOP10 cells were grown in LB medium. Antibiotics were used at the following concentrations (liquid; plates): carbenicillin (50 \u03bcg/mL; 100 \u03bcg/mL) and chloramphenicol (20 \u03bcg/mL; 30 \u03bcg/mL).\n\n### Plasmid construction\n\n#### pKVS45-tifA and pKVS45-dmd\n\nT4 tifA and dmd were individually PCR-amplified from purified T4 genomic DNA with primer pairs SS-5/SS-6 and SS-7/SS-8, respectively, which also add flanking BamHI and KpnI sites. These PCR products were then cloned into the BamHI and KpnI sites of the anhydrotetracycline (aTc)-inducible pKVS45 vector (pKVS45-tifA and pKVS45-dmd). pKVS45-tifA-FLAG was constructed via round-the-horn PCR on pKVS45-tifA using the primer pair SS-9/10. pKVS45-tifA \u0394ATG was constructed via round-the-horn PCR on pKVS45-tifA using the primer pairs SS-31/32 followed by blunt-end ligation. pKVS45-tifA ablated ToxN-site was constructed via round-the-horn PCR on pKVS45-tifA using the primer pairs SS-33/34 followed by Gibson Assembly using the 2\u00d7 HiFi DNA Assembly Master Mix (NEB E2621). TifA codons were recoded using Geneious and ordered as a gene-block fragment from IDT (with 46 of 85 codons recoded with 55 nucleotide changes) and cloned into pKVS45 by Gibson Assembly at the same site as pKVS45-tifA. For pKVS45-tifA-homologs, tifA homologs from T2, T6, and RB69 were each PCR-amplified from purified phage genomic DNA with primer pairs SS-11/12, SS-13/14, and SS-15/16, respectively, which also add sequences that overlap the aTc-inducible pKVS45 vector. pKVS45 was digested with BamHI and KpnI, and then the PCR-amplified tifA variants were inserted into the digested plasmid using Gibson assembly.\n\n#### pEXT20-tifA\n\nThe tifA homologs from T2, T4, T6, and RB69 were each PCR-amplified from purified phage genomic DNA with primer pairs SS-17/18, SS-19/20, SS-21/22, and SS-23/24, respectively, which also add sequences that overlap the isopropylthio-\u03b2-galactoside (IPTG)-inducible pEXT20 vector. pEXT20 was digested with SacI and SalI, and then the PCR-amplified tifA variants were inserted into the digested plasmid using Gibson Assembly.\n\n#### pEXT20-ipIIIT4\n\nThe ipIIIT4 gene was PCR-amplified from T4 genomic DNA with primer pair SS-35/36, which add sequences that overlap the IPTG-inducible pEXT20 vector. pEXT20 was digested with SacI and SalI, and ipIIIT4 was inserted into the digested plasmid using Gibson Assembly.\n\n#### pBR322-rIIAT4\n\nThe rIIA gene including the upstream native promoter was PCR-amplified from T4 genomic DNA with primer pair SS-37/38, which add sequences that overlap with the pBR322 vector. The pBR322 backbone was amplified with primer pair SS-39/40, and the rIIA gene was inserted using Gibson Assembly.\n\n#### pKVS45-rIIBT4\n\nThe rIIB gene (only the coding sequence) was PCR-amplified from T4 genomic DNA with primer pair SS-41/42, which add flanking BamHI and KpnI sites. This PCR product was then cloned into the BamHI and KpnI sites of the aTc-inducible pKVS45 vector.\n\n#### pBR322-Dsr1ECOR17\n\nThe Dsr1ECOR17 gene including the upstream promoter (300 bp) was PCR-amplified from ECOR17 genomic DNA with primer pair SS-43/44, which add sequences that overlap with the pBR322 vector. The pBR322 backbone was amplified with primer pair SS-39/40, and the Dsr1ECOR17 gene was inserted using Gibson Assembly.\n\n#### pKVS45-nrdC.5T4\n\nThe nrdC.5T4 gene (only the coding sequence) was PCR-amplified from T4 genomic DNA with primer pair SS-45/46, which add flanking BamHI and KpnI sites. This PCR product was then cloned into the BamHI and KpnI sites of the aTc-inducible pKVS45 vector.\n\n### Strain construction\n\n#### E. coli MG1655 attB\u03bb::toxIN and E. coli MG1655 attB\u03bb::toxIN(K55A)\n\nTo construct these strains, toxIN or toxIN(K55A) was inserted into the E. coli MG1655 chromosome using the CRIM system (Haldimann and Wanner, 2001). The toxIN locus, along with its native promoter and transcription terminators, was PCR-amplified from pBR322-toxIN with the primer pair SS-25/26. The CRIM plasmid pAH150 was linearized using PCR with SS-27/28 to remove the araBAD promoter and rrnB T1 and rrnB T2 terminators. toxIN was then inserted into linearized pAH150 using Gibson Assembly to yield pAH150-toxIN. pAH150-toxIN(K55A) was then constructed via round-the-horn PCR of pAH150-toxIN with SS-29/30. CRIM insertion of these plasmids into the attB\u03bb locus of E. coli MG1655 was then performed as previously described (Haldimann and Wanner, 2001) using the pINT-ts helper plasmid. Single insertions were confirmed by PCR and Sanger sequencing.\n\n#### ECOR17 gene deletions\n\nTo construct these strains, the open-reading frames of the candidate defense systems (RM-typeI, RM-typeIII, abi2, hhe, dsr1, cas3) were designed to be replaced by a kanamycin resistance cassette (kanR) using the \u03bb-red recombinase system (Datsenko and Wanner, 2000). Briefly, >70 bp homologous regions flanking the ORFs were added to the resistance cassette and electroporated into ECOR17 containing pKD46 plasmid that expresses the \u03bb-red recombinase genes. Deletion of the ORFs was confirmed by PCR across the locus.\n\n#### Phage T4 tifA gene disruptions\n\nT4 mutants were generated using a CRISPR-Cas system for targeted mutagenesis described previously (Duong et al., 2020). Briefly, sequences for RNA guides to target Cas9-mediated cleavage in the tifA open-reading frame (but nowhere else in the T4 genome) were designed using the toolbox in Geneious Prime 2021.2.2. Guides were chosen based on a high activity score that may have a loose correlation with their efficiency of cutting of the T4 genome (Duong et al., 2020). The guides were inserted into the pCas9 plasmid (Addgene #42876) and tested for their ability to target the T4 genome by measuring the restriction of T4 spotting (Figure 2\u2014figure supplement 2). Specifically, though wild-type T4 is not strongly restricted by any of the guides, a clone of T4 with a mutation in the \u03b2-glucosyltransferase gene, bgt(II/5-6\u0394), showed strong sensitivity to one of the guides. We expect the deletion to cause a deficiency in \u03b2-glucosyltransferase activity, leading to the loss of \u03b2-glucose modification of about 30% of the hydroxymethylcytosines (Lehman and Pratt, 1960). pCas9-containing guide tifAT4-cr4 (AATTCCACTCGACCAAATGGAGG, constructed with primers SS-47/48) was selected because it had the strongest effect on plaquing efficiency of T4(bgt(II/5-6\u0394)) (Figure 2\u2014figure supplement 2). Escape plaques were isolated by plating T4(bgt(II/5-6\u0394)) at high titer onto a lawn of MG1655 harboring the plasmid pCas9-tifAT4-cr4. The tifA locus from escape plaques was then PCR-amplified and Sanger-sequenced to identify two unique clones that had a 98 bp deletion and a 5 bp insertion in tifA that disrupt its coding sequence (Figure 2\u2014figure supplement 2). Finally, the clones were isolated to purity and submitted for whole-genome sequencing to confirm that no other mutations were present.\n\n### Phage experiments in solid and liquid media\n\nPhage spotting assays were conducted as described in Guegler and Laub, 2021 and were conducted at least three times independently, with representative experiments shown in the figures. Briefly, phage stocks isolated from single plaques were propagated in E. coli MG1655 at 37\u00b0C in LB. To titer phage, stocks were mixed with E. coli MG1655 and melted LB + 0.5% agar and spread on LB + 1.2% agar plates at 37\u00b0C. For phage spotting assays, the bacterial strain of interest was mixed with LB + 0.5% agar and spread on an LB + 1.2% agar + antibiotic plate. For experiments in which expression of tifA was induced with aTc (Ptet-tifA), 100 ng/\u03bcL aTc was added to LB + 0.5% agar at a final concentration of 100 ng/mL prior to mixing with bacterial cells. For the experiment inducing rIIA and rIIB, aTc was added to 10 ng/mL to minimize the toxicity of the rII system. For experiments in which expression of genes was induced with IPTG (Plac-genes), 100 mM IPTG was added to LB + 0.5% agar to a final concentration of 100 \u03bcM prior to mixing with bacterial cells. Phage stocks were then serially diluted in 1\u00d7 FM buffer (20 mM Tris\u2013HCl pH 7.4, 100 mM NaCl, 10 mM MgSO4), and 2\u20133 \u03bcL of each dilution was spotted on the bacterial lawn. Plates were then grown at room temperature or 37\u00b0C overnight and plaques quantified the following day. EOP was calculated by comparing the ability of the phage to form plaques on an experimental strain relative to the control strain.\n\nPhage experiments in liquid culture were conducted at 37\u00b0C. Single colonies were grown overnight in LB. Overnight cultures were back-diluted to OD600 = 0.01 and grown to OD600 = 0.3 in fresh LB such that cells re-entered exponential growth. Cultures were then back-diluted to OD600 = 0.01 in fresh LB, and phage was added to each culture. Growth following phage infection was measured in 24-well plates at 15 min intervals with orbital shaking at 37\u00b0C on a plate reader (BioTek). Data points reported are the mean of three independent biological replicate growth curve experiments. Raw data are provided on GitHub.\n\n### High-throughput evolution of T4 to infect resistant E. coli\n\nPhage populations are evolved to infect resistant hosts using a modification of the Appelmans protocol originally developed to generate phage therapy cocktails (Appelmans, 1921). This protocol was more recently used to modify the host range of phage (Burrowes et al., 2019; Mapes et al., 2016). Briefly, a population of phage is propagated on a sensitive host to maintain phage population size and generate genetic diversity, and also a resistant host to select for phage that can infect the novel host. In our experiment, the resistant host was MG1655 with a toxIN-containing plasmid (ML3328), and the sensitive host was MG1655 with an empty plasmid (ML3330). Thus, T4 needs to overcome the defense conferred by toxIN to successfully invade the resistant host. To visually track the progress of evolution, the evolution experiment was setup in 96-well plates with phage populations inoculated with host cells at a range of MOI (Figure 1\u2014figure supplement 1). A phage blank well was also maintained to confirm there is no cross-contamination during the setup of each round of evolution.\n\nT4 (106 pfu/\u00b5L) lysate prepared in MG1655 was then serial-diluted tenfold in FM buffer to generate inoculum samples from 106 to 1 pfu/\u00b5L. 10 \u00b5L of each the phage inoculums were added to the corresponding wells in a row. Each well contains 100 \u00b5L of supplemented LB (LB + 15 \u00b5g/mL l-tryptophan + 5 \u00b5g/mL thiamine) with 105 bacterial cells. Bacterial culture was back-diluted from overnight growth of single colonies in LB (or M9) at 37\u00b0C using OD600 of 1 as an estimated cell density of 7 \u00d7 108 cells/mL. The bacterial cells are ML3328 (+toxIN) and ML3330 (-toxIN) in two separate rows. The first wells of each row are inoculated with only 10 \u00b5L of FM buffer as a no-phage control check against phage cross-contamination during the setup of evolution plate. The second to eighth wells of each row receive inoculum from the phage serial dilutions to setup wells with phage-to-bacteria rations (MOI) of 102 to 10\u20134. Each pair of rows correspond to an independent evolving population, with the top two rows in the plate being a control evolution with T4 infecting two rows of ML3330 to identify mutations that arise when T4 is passaged on just MG1655 with no toxIN. The remaining rows on the plate accommodate five independent evolving populations of T4. For the first round, the same clonal population of T4 is used to start all the evolving populations. After inoculating the cell culture with phage, the evolution plate is sealed with breathable film and incubated at 37\u00b0C on a plate shaker at 1000 RPM overnight (16\u2013 20 hr). The plate is harvested by pooling all cleared wells and the first uncleared well (up to a total of five wells per row from the highest MOI) in every pair of rows to generate the population of phage at the end of the round. In a round of evolution, phage in the highest MOI well lyse all cells in a single infection generation, while at the lowest MOI (one phage particle inoculated into 105 bacteria) about three rounds of phage infection (with an estimated T4 burst of 100) are needed to lyse all the bacteria. Thus, a phage population after a round of evolution contains particles that have gone through 1\u20133 infection generations from a phage at the start of the round. The cell debris and unlysed cells in pooled samples were pelleted (4000 RPM at 4\u00b0C for 25 min) and the supernatant phage lysate was transferred to 96-deep-well blocks for long-term storage (with 40 \u00b5L chloroform to prevent bacterial growth). Pooled samples generated six populations \u2013 five replicate populations evolving on ML3328 and ML3330, and one control population evolving on ML3330 alone. Twenty-five rounds of evolution were performed saving a total of 150 populations (six populations at each of 25 rounds of evolution). The evolution was performed in supplemented LB for the first 18 rounds and was then switched to supplemented M9 for 7 rounds to increase the selective pressure of toxIN on T4 replication. Evolving populations were stored as lysates at 4\u00b0C, and also as glycerol stocks of infected hosts snap-frozen and left at \u201380\u00b0C.\n\nEvolved clones were isolated by plating to single plaques from the evolved populations on lawns of ML3328 for T4 that can overcome toxIN. These evolved clones were saved as phage lysates at 4\u00b0C and as glycerol stocks of infected hosts for long-term storage.\n\n### ToxN and TifA overexpression plating assays on solid media\n\nOverexpression plating assays were conducted as described in Guegler and Laub, 2021. Briefly, single colonies were grown to saturation overnight in M9-glucose. 1 mL of each overnight culture was then pelleted by centrifugation at 4000 \u00d7 g for 5 min, washed twice in 1\u00d7 phosphate-buffered saline (PBS), and resuspended in 500 \u03bcL 1\u00d7 PBS. Cultures were then serially diluted tenfold in 1\u00d7 PBS and spotted on M9L plates (M9-glycerol supplemented with 5% LB [v/v]) further supplemented with 0.4% glucose (toxin-repressing), 0.2% arabinose (toxin inducing), or 0.2% arabinose and 100 \u03bcM IPTG (toxin and antitoxin inducing). Plates were then incubated at 37\u00b0C for 48 hr before imaging. Images shown are representative of at least three independent biological replicates.\n\n### ToxN and TifA overexpression growth curves in liquid culture\n\nSingle colonies of E. coli MG1655 harboring pBAD33-toxN and pEXT20-tifAT4 were grown to saturation overnight in M9-glucose. These cultures were then back-diluted 100-fold in fresh M9-glycerol supplemented with 0.8% glucose and grown to OD600 ~ 0.3 at 37\u00b0C in a shaking water bath; additional glucose was added to these cultures to suppress leaky toxicity of ToxN. Cells were pelleted by centrifugation at 4\u00b0C and 4000 \u00d7 g for 5 min. Pellets were washed twice in ice-cold M9-glycerol and then resuspended in fresh M9-glycerol. Cells were then back-diluted in fresh M9-glycerol to OD600 = 0.2; for cultures in which TifA expression was induced, 100 \u03bcM IPTG was also added at this point. Cultures were then grown for an additional 45 min at 37\u00b0C in a shaking water bath before being back-diluted to OD600 = 0.1 in fresh M9-glycerol. To these back-diluted cultures, 100 \u03bcM IPTG and 0.2% arabinose were added to induce TifA and ToxN, respectively, when appropriate. Growth was then measured in 24-well plates at 15 min intervals with orbital shaking at 37\u00b0C on a plate reader (Bio-Tek). Data reported are the mean of three technical replicates each of four independent growth curve experiments.\n\n### ToxN\u2013TifA interaction assays with co-immunoprecipitation (co-IP)\n\n50 mL cultures of E. coli MG1655 containing pBR322-toxIN(+/-His6) and pKVS45-tifA(+/-FLAG) were grown to OD600 = 0.4 at 37\u00b0C in LB supplemented with 15 \u03bcg/mL l-tryptophan and 1 \u03bcg/mL thiamine in a water bath shaker and infected with T4 at MOI = 5. To induce expression of TifA, aTc was added to each culture at a final concentration of 100 ng/mL 30 min prior to phage infection. Then, 15 min post-T4 infection, 40 mL of cells from each culture were pelleted by centrifugation at 4000 \u00d7 g for 5 min at 4\u00b0C. Pellets were then flash-frozen and stored at \u201380\u00b0C.\n\nFor anti-FLAG co-IP experiments, each cell pellet was resuspended in 500 \u03bcL of lysis buffer (25 mM Tris\u2013HCl pH 8, 150 mM NaCl, 1 mM EDTA pH 8, 1% Triton X-100, cOmplete Protease Inhibitor Cocktail [Roche], 1 \u03bcL/mL ReadyLyse [Novagen], 1 \u03bcL/mL DNase I [TakaraBio], 5% glycerol). Cells were lysed by two freeze\u2013thaw cycles, followed by incubation at 30\u00b0C for 1 hr. Lysates were clarified by centrifugation at 14,000 \u00d7 g for 10 min at 4\u00b0C and then incubated with anti-FLAG-M2 magnetic beads (Sigma) on an end-to-end rotor for 1 hr at 4\u00b0C. Beads were then washed three times with 400 \u03bcL wash buffer (25 mM Tris\u2013HCl pH 8, 150 mM NaCl, 1 mM EDTA pH 8, cOmplete Protease Inhibitor Cocktail [Roche], 5% glycerol). To elute protein, beads were incubated with 40 \u03bcL of 1\u00d7 Laemmli buffer, vortexed briefly, and boiled at 95\u00b0C for 5 min.\n\nSamples from co-IP experiments were analyzed by Western blot as described previously (Guegler and Laub, 2021). Briefly, samples were resolved by 4\u201320% SDS-PAGE and transferred to a PVDF membrane. Membranes were then incubated with rabbit anti-His6 and anti-FLAG primary antibodies (from Abcam and Cell Signaling Technologies, respectively) at a final concentration of 1:5000 to avoid cross-reactivity with the anti-FLAG-M2 beads. Next, membranes were incubated with horseradish peroxidase (HRP)-conjugated anti-rabbit secondary antibodies (Thermo Fisher) at a final concentration of 1:5000. Blots were developed using the SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher Scientific) and imaged with a FluorChem R Imager (ProteinSimple). Blots shown are representative of three independent replicates.\n\n### Phage genome isolation, Illumina library preparation, and analysis\n\nPhage genomes were prepared by treating high titer lysates (>106 pfu/\u00b5L) with DNAse I (0.001 U/\u00b5L) and RNAse A (0.05 mg/mL) at 37\u00b0C for 30 min to hydrolyze any host nucleic acid that remains in the lysate. EDTA is added to a final of 10 mM to inactivate nucleases. The lysate is then incubated with Proteinase K at 50\u00b0C for 30 min to disrupt phage capsids and release genomes. The phage genomes are recovered by ethanol precipitation. Briefly, NaOAc pH 5.2 was added to 300 mM followed by 100% ethanol to a final volume fraction of 70%. The samples were left at \u201380\u00b0C for 2 hr to precipitate genomic material. The genomic material was pelleted at 21,000 \u00d7 g for 15 min, and the supernatant is discarded. The pellet was washed in series with 100 \u00b5L isopropanol, and 200 \u00b5L 70% (v/v) ethanol by pelleting and discarding supernatants for each wash. The pellet was air-dried at room temperature for 30 min and then resuspended in 20\u2013100 \u00b5L TE (10 mM Tris\u2013HCl, 0.1 mM EDTA, pH 8) overnight at room temperature. Genomic material was resuspended by flicking the Eppendorf, and concentration was measured using a NanoDrop spectrophotometer.\n\nIllumina sequencing libraries were prepared starting from 100 to 200 ng of genomic DNA (gDNA). Briefly, the gDNA was sheared by sonication in a Bioruptor. Fragmented gDNA was purified using AmpureXP beads, followed by sequential enzymatic reactions for end repair, 3\u2032 adenylation, and adapter ligation. Barcodes were added to both 5\u2032 and 3\u2032 ends by PCR-amplifying with primers that anneal to the Illumina PE adapters. The libraries were cleaned by Ampure XP clean up using a double cut to elute fragment sizes matching the read lengths of the sequencing run. Libraries were sequenced on either an Illumina MiSeq or NextSeq at the MIT BioMicroCenter after qPCR and fragment analyzer quality control for concentration and size distribution.\n\nIllumina reads were analyzed using custom Python scripts provided on GitHub along with assembled reference genomes. Briefly, the reads were cleaned of adapter sequences using Cutadapt before they are aligned to a reference genome using BWA and SAMtools. Per-position coverage maps were generated using SAMtools depth, and variant single-nucleotide polymorphisms were called using BCFtools. Coverage maps in figures were plotted by using a moving window average of per-nucleotide coverage, with the window size defined as the read length of sequencing run. The ancestral T4 was sequenced to generate a reference genome against which all evolved clones were compared. Illumina reads were also assembled to reference genomes using the assembly pipeline in Geneious Prime 2021.2.2 for cross-checks and visual inspection.\n\n### Homology search and alignment of TifA\n\nHomologs of TifA were first identified by jackhmmer using a Hidden Markov Model built on a small subset of TifA homologs among reference proteomes on UniProt. The overwhelming majority of homologs with full query coverage were in viruses that are members of the phage clade Caudovirales. These 57 sequences were aligned using MUSCLE (with default settings), and a maximum likelihood phylogenetic tree was constructed with FastTree. The Tree separated TifA homologs from different phage genomes into clusters by similarity (color coded, Figure 3\u2014figure supplement 1).\n",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e60c5a64-a5a2-4ff3-8264-5e2c4f72a368",
+      "submission_id": "844c96f8-1970-49e3-a970-37a60be95165",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Melanie Blokesch, https://ror.org/02s376052 Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79549.sa0](https://doi.org/10.7554/eLife.79549.sa0)\n\nThis manuscript will be of interest to researchers in the phage-microbial host interaction field. Notably, the interplay between bacteria and their viral predators has regained broad interest in recent years given the discovery of numerous innate immunity-like phage defense systems. The identification of phage-mediated counter-defense strategies is therefore not only of prime importance for our basic understanding of predator-prey arms races but also for medical applications such as phage therapy.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Melanie Blokesch, https://ror.org/02s376052 Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.79549.sa1](https://doi.org/10.7554/eLife.79549.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The evolution of a counter-defense mechanism in a virus constrains its host range\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Melanie Blokesch as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Gisela Storz as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. Please note that no additional experiments will be required (the reviewer group agreed that the short reads combined with the distinctive PCR amplification pattern and Sanger sequencing are sufficient to support the claim of this study and that the suggested experiment to further increase ToxN abundance would be a nice add-on but isn't strictly required).\n\nEssential revisions:\n\n1) Figures need revisions for clarity (missing labels, low resolution, etc).\n\n2) The authors should carefully update their Materials and methods section.\n\n3) A few points need better discussion.\n\n4) The accessibility of raw data on github, as stated in the manuscript, should be double-checked.\n\nReviewer #2 (Recommendations for the authors):\n\nThe manuscript is well written and the storyline is easy to follow. We also appreciate the schemes to explain more difficult points (e.g. Figure S1D and Figure S4D).\n\nWe find it remarkable that the acquisition of resistance in the toxin-expressing host was acquired in 5 evolved clones through segmental amplification of the dmd-tifA locus (versus mutations in the promoter sequence to increase transcription levels for example). This illustrates the extent of recombination within phage genomes thanks to regions of microhomology, in comparison to the pervasiveness of point mutations in bacterial genomes.\n\nInterestingly, tifA is surrounded by further genes encoding anti-TA systems suggesting the clustering in anti-TA islands \u2013 an observation that could guide further investigations.\n\nOverall, this is without question an interesting example, but it describes a very specific phenomenon, namely the adaptation of phage T4 to an E. coli strain expressing a plasmid-based toxN. Their results also show that native tifA expression is sufficient to overcome ToxN production from the chromosome.\n\n1. It is puzzling that the control evolved clone (without toxin) showed no resistance clones appearing, even after 25 rounds of infection (figure S4A). Is the emergence of resistance so rare in T4?\n\n2. It would be maybe advisable to be precise that RnlAB is a type II TA system. This was not clear in the manuscript.\n\n3. The relative amounts of ToxN and TifA seem to be a strong determinant of the success of infection. Would the evolved clones still show infection of an E. coli expressing toxN on higher copies?\n\nl. 27-38, insights in bacterial immune systems are currently exploding. Therefore, I would suggest citing some even more recent literature (e.g. doi: 10.1038/s41577-022-00705-4, doi: 10.1016/j.cell.2021.12.029)\n\nReviewer #3 (Recommendations for the authors):\n\nThe authors show plenty of agarose gel electrophoresis pictures. However, the ladder and the size of the expected PCR products are not annotated.\n\nThe data points of the growth curves should be ba accessible at github. However, I cannot find them. The authors should add clear titles to the datasets to improve data transparency.\n\nFigure S3A has a poor resolution which hampers readability.\n",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "841e5bc8-e425-4c2a-9f33-01caa5b90f56",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C1",
+      "claim": "Bacteria use diverse immunity mechanisms to defend themselves against their viral predators, bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria use diverse immunity mechanisms to defend themselves against their viral predators, bacteriophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about bacterial defense mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "58b944f6-11e1-4777-af2f-98a7818055d4",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C2",
+      "claim": "Phages can acquire counter-defense systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, phages can acquire counter-defense systems, but it remains unclear how such mechanisms arise and what factors constrain viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of phage-bacteria interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "f26a935f-2286-463b-ac65-e220ae32b397",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C3",
+      "claim": "T4 phage was experimentally evolved to overcome a phage-defensive toxin-antitoxin system, toxIN, in Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we experimentally evolved T4 phage to overcome a phage-defensive toxin-antitoxin system, toxIN, in Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "62d0efdc-9688-44ec-ae17-99c63ace8e88",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C4",
+      "claim": "T4 rapidly acquires segmental amplifications of tifA through recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Through recombination, T4 rapidly acquires segmental amplifications of a previously uncharacterized gene, now named tifA, encoding an inhibitor of the toxin, ToxN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome sequencing data showing increased read coverage at the tifA locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "01b50c78-6ea3-4ad6-b7df-0467521ee6e0",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C5",
+      "claim": "tifA encodes an inhibitor of the toxin ToxN.",
+      "claim_type": "EXPLICIT",
+      "source": "Through recombination, T4 rapidly acquires segmental amplifications of a previously uncharacterized gene, now named tifA, encoding an inhibitor of the toxin, ToxN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that tifA expression allows T4 to overcome toxIN-mediated defense.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "f9bb169e-02d1-422a-a54c-18e48c73c825",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C6",
+      "claim": "Segmental amplifications of tifA drive large deletions elsewhere in T4's genome to maintain a genome size compatible with capsid packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "These amplifications subsequently drive large deletions elsewhere in T4's genome to maintain a genome size compatible with capsid packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome sequencing data showing deletions in evolved clones and the correlation between amplification size and deletion size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "4daf1c1c-6c60-47e0-a500-ca8b224494c3",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C7",
+      "claim": "The deleted regions in evolved T4 include accessory genes that help T4 overcome defense systems in alternative hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The deleted regions include accessory genes that help T4 overcome defense systems in alternative hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that evolved clones lost the ability to infect certain E. coli strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "702d9faa-5460-4ab2-a840-863af2b28f86",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C8",
+      "claim": "The emergence of one counter-defense mechanism can lead to loss of other such mechanisms, thereby constraining host range.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results reveal a trade-off in viral evolution; the emergence of one counter-defense mechanism can lead to loss of other such mechanisms, thereby constraining host range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that evolved phages gained the ability to infect toxIN-containing hosts but lost the ability to infect other E. coli strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "47a7b9f6-64c3-4f64-9b3b-b5caaebd9ee6",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C9",
+      "claim": "The accessory genomes of viruses reflect the integrated evolutionary history of the hosts they infected.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the accessory genomes of viruses reflect the integrated evolutionary history of the hosts they infected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the findings of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a966dc44-96e3-4f00-aac0-24d81ebf8197",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C10",
+      "claim": "Bacteria have evolved a diverse arsenal of anti-phage defense systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria face the frequent threat of phage predation and have consequently evolved a diverse arsenal of anti-phage defense systems (Bernheim and Sorek, 2020; Tal and Sorek, 2022; Wein and Sorek, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "2830ad42-1f32-403b-be06-2f2873eefba7",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C11",
+      "claim": "Bacterial defense systems have driven the selection of counter-defense mechanisms in phage.",
+      "claim_type": "EXPLICIT",
+      "source": "These defense systems have, in turn, driven the selection of counter-defense mechanisms in phage, underscoring the intense arms race between phages and their bacterial hosts (Samson et al., 2013; Hampton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "ccbdfa4d-a5eb-4f69-9ee1-713b0479be24",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C12",
+      "claim": "There are several well-characterized examples of anti-restriction modification (RM) and anti-CRISPR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several well-characterized examples of anti-restriction modification (RM) and anti-CRISPR proteins (Stanley and Maxwell, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "38d1e7e9-f6a9-4b65-aa7b-116756d351cc",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C13",
+      "claim": "Toxin-antitoxin (TA) systems are an emerging class of potent phage defense genes.",
+      "claim_type": "EXPLICIT",
+      "source": "An emerging class of potent phage defense genes are toxin\u2013antitoxin (TA) systems, which typically comprise a protein toxin that is directly neutralized by its cognate antitoxin (Harms et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a352c03f-f8c1-4693-8e00-417af278b387",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C14",
+      "claim": "For defensive TA systems, phage infection activates or triggers the release of the toxin, which can then block phage development.",
+      "claim_type": "EXPLICIT",
+      "source": "For defensive TA systems, phage infection activates or triggers the release of the toxin, which can then block phage development (Guegler and Laub, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3b4d5d17-7d73-43aa-97d5-f32c16362011",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C15",
+      "claim": "T4 encodes nearly 300 proteins, only 62 of which are required to produce a new virion in common laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, T4 encodes nearly 300 proteins, only 62 of which are required to produce a new virion in common laboratory conditions (Miller et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "f73d4d92-2fde-4dc4-8505-e15d2bc05243",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C16",
+      "claim": "The T4 gene dmd encodes a direct inhibitor of the RnlA toxin from the Escherichia coli K12 type II TA system RnlAB.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4 gene dmd encodes a direct inhibitor of the RnlA toxin from the Escherichia coli K12 type II TA system RnlAB (Otsuka and Yonesaki, 2012; Wan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "6cbac95d-d794-403e-9d0f-5988cc9a70a0",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C17",
+      "claim": "T-even phages including T4 encode an inhibitor (AdfA, encoded by gene 61.2 in T4) of DarT toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, T-even phages including T4 were shown to encode an inhibitor (AdfA, encoded by gene 61.2 in T4) of DarT toxins (LeRoux et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "240b4155-6a86-4b98-9549-b1ddd73b0fbf",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C18",
+      "claim": "T4 is restricted by +toxIN E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) T4 is restricted by +toxIN E. coli. Serial dilution plaquing assay of T4 spotted on -toxIN and +toxIN cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A with plaquing assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3cfee987-3429-4a93-8daf-c6f6ade428c0",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C19",
+      "claim": "Phage that could form plaques on lawns of +toxIN cells arose after five rounds of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For one of the populations (evo 3), phage that could form plaques on lawns of +toxIN cells arose after five rounds of evolution, an estimated 5\u201315 infection generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations during the evolution experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "7de3d9a5-15e3-43b4-b765-592c35dc3bfd",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C20",
+      "claim": "Evolved phages plaque as efficiently on +toxIN cells as on the control strain -toxIN.",
+      "claim_type": "EXPLICIT",
+      "source": "From this population, we isolated phages from four individual plaques on +toxIN lawns and confirmed that these evolved phages plaque as efficiently on +toxIN cells as on the control strain -toxIN (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with plaquing assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e03aba64-dcc0-466f-9ca3-33ced6e22002",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C21",
+      "claim": "Genome sequencing revealed increased read coverage of a two-gene locus (dmd and 61.4) in the genome of each evolved clone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our sequencing revealed increased read coverage of a two-gene locus in the genome of each evolved clone (Figure 1D). This locus consists of two genes, dmd (61.5) and 61.4, driven by an early T4 promoter (Liebig and R\u00fcger, 1989; Miller et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e362693e-61fd-4fd0-9d7e-bc453b889b41",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C22",
+      "claim": "The increased read coverage of the dmd-tifA locus indicates a local, segmental amplification of this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR using primers flanking this locus produced a ladder of products, indicating a segmental amplification generating tandem repeats (Figure 1E,F, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCR data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "668cc9b2-4913-4971-95f9-c2a64dd53d53",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C23",
+      "claim": "The ability of toxIN to inhibit T4 infection was completely lost following induction of tifA.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of toxIN to inhibit T4 infection was completely lost following induction of tifA, suggesting that this gene was sufficient to prevent ToxN-mediated defense.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "2fbadd60-63cc-4c31-8a57-d94ff07807c6",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C24",
+      "claim": "Overexpressing dmd did not allow T4 to replicate in the presence of toxIN.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing dmd did not allow T4 to replicate in the presence of toxIN, indicating that this gene did not contribute to escape, but was likely included in the segmental amplification as the promoter for tifA lies upstream of dmd (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a2de8fbc-661e-45ed-8b41-6c6035208b4d",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C25",
+      "claim": "Co-induction of tifA was sufficient to partially rescue toxicity of ToxN in uninfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-induction of tifA was sufficient to partially rescue this toxicity, on both solid media and in culture (Figure 2B,C), indicating that tifA is a T4-encoded antitoxin for ToxN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth assays shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "918e432c-fc2e-46d2-981d-ecdee3cf7443",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C26",
+      "claim": "tifA encodes a protein antitoxin rather than an RNA antitoxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing a version of tifA in which the start codon was deleted (tifA \u0394ATG) could no longer restore T4 infection of cells harboring toxIN, suggesting that tifA must be translated to function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "51a2abcc-affb-4a41-bd0b-cb064167263d",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C27",
+      "claim": "A recoded variant of tifA that has a different mRNA sequence but produces the same protein sequence could still restore T4 infection of +toxIN cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that a recoded variant of tifA that has a different mRNA sequence (55 of 258 nucleotides changed) but produces the same protein sequence could still restore T4 infection of +toxIN cells, indicating that the protein product of tifA was sufficient for ToxN inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "489debd3-504a-4efa-9151-85fdcca2e7d2",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C28",
+      "claim": "TifA interacts with ToxN in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting with an anti-FLAG antibody confirmed that TifA was present, as expected, and blotting with an anti-His6 antibody demonstrated that ToxN was also recovered (Figure 2E). These results suggest that TifA interacts with ToxN, either directly or indirectly, in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on co-immunoprecipitation experiments shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "aa9c3876-9d92-4905-9793-0abe40b9f06e",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C29",
+      "claim": "Native tifA expression is sufficient to overcome ToxN produced from the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that native tifA expression is sufficient to overcome ToxN produced from the chromosome and that the segmental amplification that arose during our evolution experiments reflects a pressure to overcome the stronger expression of plasmid-borne toxIN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "be31ff87-76b0-407c-bc09-9d040fbad931",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C30",
+      "claim": "Homologs of tifA are found adjacent to dmd homologs in the genomes of the coliphage T2, T6, and RB69.",
+      "claim_type": "EXPLICIT",
+      "source": "Homologs of tifA are found adjacent to dmd homologs in the genomes of the coliphage T2, T6, and RB69, all of which are closely related to T4 (Figure 3A), and in other types of phages that infect a diverse set of bacterial hosts (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome comparisons shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "6ced05c5-0f40-44ee-8f1a-dfaea5029099",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C31",
+      "claim": "Plasmid-borne toxIN strongly protects E. coli against T2, T4, and T6 infection, but offers substantially less protection against RB69.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, plasmid-borne toxIN strongly protects E. coli against T2, T4, and T6 infection, but offers substantially less protection against RB69, as measured by plaquing efficiency and cell death in shaking cultures (Figure 3B, C, Figure 3\u2014figure supplement 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays and growth curves shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "9c5ff0d5-b26b-4d32-96d3-5fc03717414e",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C32",
+      "claim": "All TifA homologs from T2, T4, T6, and RB69 can rescue cells from ToxN-mediated toxicity to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we expressed each tifA homolog in uninfected cells ectopically producing ToxN and found that all the TifA homologs rescued cells from ToxN-mediated toxicity to some extent (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on growth assays shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "6a1d20f6-2704-453a-b0b3-984225d7c5dc",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C33",
+      "claim": "ToxIN-resistant phages emerged at a different round in each population.",
+      "claim_type": "EXPLICIT",
+      "source": "ToxIN-resistant phages emerged at a different round in each population, but with comparable levels of resistance stabilizing after 25 rounds (Figure 4A ,B, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on serial dilution plaquing assays shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "25d78136-3063-47dd-af03-b881330e6080",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C34",
+      "claim": "Each sequenced genome from evolved populations had an amplification of the dmd-tifA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as with the first clones sequenced (Figure 1D), each of these sequenced genomes had an amplification of the dmd-tifA locus, as manifested by an approximately tenfold increase in read counts in this region (Figure 4D, Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "54f35ccc-3f0f-4be1-a726-0b850c052a44",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C35",
+      "claim": "The precise boundaries of the segmental amplification differed in each evolved population.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise boundaries of the segmental amplification differed in each evolved population. This finding indicates that the same adaptive solution, the amplification of the dmd-tifA locus, occurred independently in each evolved population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome sequencing and PCR data shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "ae0b2bd4-1579-498c-a0ed-60f0eb4372b7",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C36",
+      "claim": "The boundaries of each segmental amplification coincided with unique, short (typically 6\u201310 bp) regions of microhomology that normally flank the dmd-tifA locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing of the PCR products revealed that the boundaries of each segmental amplification coincided with unique, short (typically 6\u201310 bp) regions of microhomology that normally flank the dmd-tifA locus (Figure 4D, Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Sanger sequencing of PCR products.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a751fc66-4d29-4bd5-b36f-ddf6e6a5612e",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C37",
+      "claim": "The segmental amplifications observed likely arose through homologous recombination between regions of microhomology.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the segmental amplifications observed likely arose through homologous recombination between these regions of microhomology, as also seen previously in T4 (Kumagai et al., 1993; Mosig, 1987; Wu et al., 1991; Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sequencing data and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3a7a56bb-7c4a-46b6-a4d1-f8ed6b1abace",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C38",
+      "claim": "Each evolved clone of T4 had large deletions elsewhere in its genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in addition to an amplification of the dmd-tifA locus, each evolved clone of T4 also had large deletions elsewhere in its genome (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "2020ee94-d688-449c-8e17-bd90ce344ce3",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C39",
+      "claim": "Individual deletions were different in each clone and ranged from 0.7 to 6 kb in length, for a total of 5\u201311 kb lost in each genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual deletions were different in each clone and ranged from 0.7 to 6 kb in length, for a total of 5\u201311 kb lost in each genome (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "39902149-1389-4225-b3d8-b8f48b206799",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C40",
+      "claim": "The size of the deleted region in each evolved clone was roughly proportional to the size of the segmental amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, the size of the deleted region in each evolved clone was roughly proportional to the size of the segmental amplification, as estimated from the increased read coverage across the dmd-tifA region (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "c871483e-070b-469d-ae80-72a67e81d71e",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C41",
+      "claim": "None of the 62 genes that are essential for producing new virions during infection of E. coli in rich media at 37\u00b0C were included in the deletions identified in evolved clones.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the 62 genes that are essential for producing new virions during infection of E. coli in rich media at 37\u00b0C (Figure 6\u2014figure supplement 1A) were included in the deletions identified in our evolved clones (Miller et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of deletion regions with known essential genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e74cd20d-673f-424f-8695-4fcb27a1094c",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C42",
+      "claim": "The T4 clones that have deletions spanning rII lost the ability to replicate on a \u03bb-lysogen of MG1655.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, the T4 clones that have deletions spanning rII lost the ability to replicate on a \u03bb-lysogen of MG1655 (Figure 6A, Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "52e753be-e3c0-4c60-b83c-26933ddb4900",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C43",
+      "claim": "Expressing rIIA and rIIB from plasmids in a MG1655 \u03bb-lysogen partially restored the infectivity of an evolved T4 clone.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing rIIA and rIIB from plasmids in a MG1655 \u03bb-lysogen partially restored the infectivity of an evolved T4 clone, confirming the causal nature of the rII deletion (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a5e77aca-090d-4f0c-ad4e-fd9a09a3ecd2",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C44",
+      "claim": "Clones from populations 1, 2, 3, and 5 failed to infect ECOR17.",
+      "claim_type": "EXPLICIT",
+      "source": "Clones from populations 1, 2, 3, and 5 (evo 1, 2, 3, and 5) failed to infect ECOR17 and clones from populations 1 and 3 (evo 1 and 3) failed to infect ECOR71 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "cc63fc93-fc70-4c42-8beb-62fc14180918",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C45",
+      "claim": "The only gene lost in common across clones in evo 1, 2, and 5 was ipIII.",
+      "claim_type": "EXPLICIT",
+      "source": "The only gene lost in common across clones in evo 1, 2, and 5 was ipIII, implying that it enables T4 to infect ECOR17 (Figure 5B and Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of deletion regions across evolved clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "d416b59f-e981-4afa-8a87-2519399aa3d3",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C46",
+      "claim": "Providing ipIIIT4 on a plasmid in ECOR17 restored the ability of clones from evo 2 and 5 to infect this host.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, providing ipIIIT4 on a plasmid in ECOR17 restored the ability of clones from evo 2 and 5 to infect this host (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "6892fbba-5d90-4b16-824b-98eeccbf103b",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C47",
+      "claim": "A disruption of dsr1 in ECOR17 restored infection by the evo 3 clone.",
+      "claim_type": "EXPLICIT",
+      "source": "For this clone, a disruption of dsr1 in ECOR17 restored infection (Figure 6E, Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "ce544249-e98d-42e9-a9ae-2c8a25071133",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C48",
+      "claim": "Expressing the T4 early gene nrdC.5 under an inducible promoter restored infectivity of the evo 3 clone on MG1655 carrying dsr1.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing the uncharacterized T4 early gene nrdC.5 under an inducible promoter restored infectivity of the evo 3 clone on MG1655 carrying dsr1 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "2c654565-0062-4177-936b-73034ac4a1ba",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C49",
+      "claim": "TifA is analogous to the co-operonic gene dmd, which encodes a direct inhibitor of RnlA.",
+      "claim_type": "EXPLICIT",
+      "source": "TifA is analogous to the co-operonic gene dmd, which encodes a direct inhibitor of RnlA, the toxin of the rnlAB system in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about dmd function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "5d1699b2-6c89-47c8-8781-cf8de3ca3975",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C50",
+      "claim": "The nearby and conserved gene 61.2 (now adfA) was recently found to overcome the type IV TA system darTG.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the nearby and conserved gene 61.2 (now adfA) was recently found to overcome the type IV TA system darTG (LeRoux et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "b4d6fea5-4f54-4c5a-a3ce-5528e6fb5797",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C51",
+      "claim": "This region of the T4 genome may be an anti-TA island.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this region of the T4 genome may be an anti-TA island, similar to the anti-RM and anti-CRISPR islands found in other phages (Pinilla-Redondo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of multiple anti-TA genes in this region and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "9b15e260-9c67-42d4-81ea-3e3286e3ca1b",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C52",
+      "claim": "T4 evolved to overcome toxIN by amplifying dmd-tifA, likely via recombination between short homologous sequences that flank this locus.",
+      "claim_type": "EXPLICIT",
+      "source": "T4 evolved to overcome toxIN by amplifying dmd-tifA, likely via recombination between short homologous sequences that flank this locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome sequencing data showing amplifications with boundaries at regions of microhomology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3d52004c-480b-4024-9bd0-08c13f8c72b6",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C53",
+      "claim": "T4 can undergo large genomic changes through recombination between short regions of homology, leading to loss of the intervening region.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work also indicates that T4 can undergo large genomic changes through recombination between short regions of homology, leading to loss of the intervening region (Figure 5A, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genome sequencing data showing deletions with boundaries at regions of microhomology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "5ce1fd98-2239-4c52-a4e7-7d2e06a91ad1",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C54",
+      "claim": "Genome packaging in T4 proceeds via a headful mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome packaging in T4 proceeds via a headful mechanism (Rao and Black, 2005), so any substantial gain in DNA must be offset by comparably sized losses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "b5c8e575-70fc-494c-a22b-6edccb45eb49",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C55",
+      "claim": "The gains in genetic material resulting from amplification of dmd-tifA likely necessitated the loss of other, nonessential DNA to maintain a genome that could be fully packaged into the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the gains in genetic material resulting from amplification of dmd-tifA likely necessitated the loss of other, nonessential DNA to maintain a genome that could be fully packaged into the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that amplification size correlates with deletion size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "2027195b-30aa-4c6b-baf9-e93e841b225d",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C56",
+      "claim": "The accessory genomes of phages likely include a broad range of anti-defense genes that profoundly influence their host ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "The accessory genomes of phages likely include a broad range of anti-defense genes that profoundly influence their host ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings that deletion of accessory genes compromised infection of certain hosts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a0dfeb08-0453-4aeb-9760-229c587de049",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C57",
+      "claim": "If selection to infect a host and overcome its defense systems is not maintained, the corresponding anti-defense genes can be lost following pressure to infect new and different hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "As our experimental evolution demonstrates, if selection to infect a host and overcome its defense systems is not maintained, the corresponding anti-defense genes, which are not essential for phage replication, can be lost following pressure to infect new and different hosts (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the experimental evolution results showing loss of anti-defense genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "98b05961-1823-4fb6-b94b-29e54abdf577",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C58",
+      "claim": "The characterization of evolved T4 isolates indicated that IPIII likely antagonizes a novel, as-yet unknown defense system in ECOR17.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to finding TifA as a novel inhibitor of ToxN, the characterization of our evolved T4 isolates indicated that IPIII likely antagonizes a novel, as-yet unknown defense system in ECOR17.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that IPIII is required for infection of ECOR17 but the target defense system is unknown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "55830107-1d3f-4a1f-9401-c7c5a6adf4e0",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C59",
+      "claim": "A homolog of the recently identified Dsr1 system in ECOR17 can be counteracted by the nonessential gene nrdC.5 in wild-type T4.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we discovered a homolog of the recently identified Dsr1 system in ECOR17 that can be counteracted by the nonessential gene nrdC.5 in wild-type T4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing that nrdC.5 expression restores infection in the presence of dsr1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "64e6b95e-7e44-46cb-b98d-a6ca01cb4c9c",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C60",
+      "claim": "The T4 genome is packaged by a headful mechanism in which 172 kb from a genomic concatemer is inserted into a pro-head.",
+      "claim_type": "EXPLICIT",
+      "source": "The T4 genome is packaged by a headful mechanism in which 172 kb from a genomic concatemer is inserted into a pro-head. The inserted DNA represents 102% of the T4 genome (168 kb), with ~3.3 kb of terminal redundancy (Grossi et al., 1983; Kim and Davidson, 1974; Rao and Black, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a0c1174e-db94-4911-8090-cb331786f218",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C61",
+      "claim": "The segmental amplifications that arose following selection on +toxIN cells likely required the genome to contract elsewhere to ensure stable packaging and inheritance of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure stable packaging and inheritance of the genome, the segmental amplifications that arose following selection on +toxIN cells likely required the genome to contract elsewhere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the headful packaging mechanism and the observation of compensatory deletions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "a1d1918b-81ba-4f0c-ab39-1104f0b58b51",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C62",
+      "claim": "The RexAB system of \u03bb allows it to exclude T4 rII mutants by a mechanism that remains poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "The RexAB system of \u03bb allows it to exclude T4 rII mutants by a mechanism that remains poorly characterized (Wong et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e96187a6-43ea-499e-b8a7-c538d0f26dd9",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C63",
+      "claim": "IPI inhibits the restriction-modification system gmrSD.",
+      "claim_type": "EXPLICIT",
+      "source": "IPI inhibits the restriction-modification system gmrSD (Bair and Black, 2007), but the function of the other internal proteins is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "963cbca2-5c86-4503-be34-bcd051af1dbe",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C64",
+      "claim": "Dsr1 contains a Sirtuin domain and likely blocks phage replication by disrupting cytoplasmic NAD+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Dsr1 contains a Sirtuin domain and likely blocks phage replication by disrupting cytoplasmic NAD+ levels (Garb et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "0d5e6698-2c6b-43f6-a4c6-e48759cfa9e3",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C65",
+      "claim": "T-even phages encode a set of proteins called internal proteins that contain a sequence motif that drives packaging into mature virions such that the proteins are injected into a host with the phage genome.",
+      "claim_type": "EXPLICIT",
+      "source": "T-even phages encode a set of proteins \u2013 including IPIII \u2013 called internal proteins: they contain a sequence motif that drives packaging into mature virions such that the proteins are injected into a host with the phage genome (Kutter et al., 1995; Leiman et al., 2003; Mullaney and Black, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "37be494e-0462-4ec4-ab2d-8e3f8e18c239",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C66",
+      "claim": "IPIII functions in the cytoplasm of ECOR17 to enable T4 replication.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that having the host cells express a variant of IPIII lacking the capsid-targeting sequence (ipIIIT4\u0394CTS) restored infectivity of clones from evo 2 and 5, indicating that IPIII functions in the cytoplasm of ECOR17 to enable T4 replication (Figure 6\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e0b20e97-1a77-42b8-b433-1c1534bcdbf3",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C67",
+      "claim": "The T4 population titer remained at 105\u2013106 pfu/\u00b5L throughout the evolution protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the evolution protocol, the T4 population titer remained at 105\u2013106 pfu/\u00b5L, with an estimated 1\u20133 phage infection generations occurring in wells from high to low MOI within a single round of evolution (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations during the evolution experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3e0b9872-16e8-4a16-83ce-31898debb870",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C68",
+      "claim": "An estimated 1\u20133 phage infection generations occurred in wells from high to low MOI within a single round of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the evolution protocol, the T4 population titer remained at 105\u2013106 pfu/\u00b5L, with an estimated 1\u20133 phage infection generations occurring in wells from high to low MOI within a single round of evolution (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations described in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "41c5fd4e-0e02-4b7e-8c79-5b43d9d9cc33",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C69",
+      "claim": "toxIN was previously identified and characterized as a type III TA system from an environmental isolate of E. coli that strongly protects E. coli MG1655 against T4 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified and characterized toxINEc (hereafter toxIN for simplicity), a type III TA system from an environmental isolate of E. coli that strongly protects E. coli MG1655 against T4 infection (Figure 1A; Guegler and Laub, 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "eeb28b6f-8825-49cd-8b15-029c5d31b56c",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C70",
+      "claim": "The Appelmans protocol was originally developed in phage therapy to evolve phage to replicate on resistant pathogenic hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "To evolve T4 to overcome toxIN, we adapted the Appelmans protocol originally developed in phage therapy to evolve phage to replicate on resistant pathogenic hosts (Appelmans, 1921; Burrowes et al., 2019; Mapes et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "cb64eceb-1bcf-424d-b8cb-c5590f24b62a",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C71",
+      "claim": "The native antitoxin toxI is an untranslated RNA that binds and neutralizes ToxN.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the native antitoxin toxI is an untranslated RNA that binds and neutralizes ToxN, we sought to determine whether tifA encodes a protein or an RNA antitoxin of ToxN (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the toxIN system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "5fc69da7-3184-4442-9976-4298435b05fd",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C72",
+      "claim": "TifA homologs share a common architecture, with a central region containing a cluster of positively charged residues.",
+      "claim_type": "EXPLICIT",
+      "source": "TifA homologs share a common architecture, with a central region containing a cluster of positively charged residues (Figure 3B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment data shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "9e24fc08-eb87-4038-88f1-29cd4e4fe8c8",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C73",
+      "claim": "The T2, T4, and T6 TifA homologs are nearly identical to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the T2, T4, and T6 homologs are nearly identical to one another, RB69 TifA is more divergent (56% identity) and lacks the C-terminal extension shared by the other three (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "e533345a-c4a0-408f-9304-6ced212f9152",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C74",
+      "claim": "RB69 TifA is more divergent (56% identity) and lacks the C-terminal extension shared by T2, T4, and T6 TifA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the T2, T4, and T6 homologs are nearly identical to one another, RB69 TifA is more divergent (56% identity) and lacks the C-terminal extension shared by the other three (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "822fed43-a1ac-4d51-899a-393b663d8d40",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C75",
+      "claim": "RB69 TifA may be a more potent inhibitor of ToxN.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesized that the more divergent TifA from RB69 may be a more potent inhibitor of ToxN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that RB69 is less affected by toxIN than other T-even phages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "d580884f-528e-4f81-82cb-00487a954dc8",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C76",
+      "claim": "RB69 TifA produced the clearest plaques when overexpressed in +toxIN cells infected with T4.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpressing any of the four TifA variants allowed T4 to form plaques on +toxIN lawns (Figure 3D), with cells producing RB69 TifA producing the clearest plaques.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on plaquing assays shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "5b94fc7e-562c-4591-bfb1-dbcccbb67342",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C77",
+      "claim": "Similar recombination events between short (2\u201310 bp) regions of homology in T4 have been seen previously in studies of the rII locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar recombination events between short (2\u201310 bp) regions of homology in T4 have been seen previously in studies of the rII locus (Kumagai et al., 1993), genes 16\u201318 (Wu et al., 1991), and escape from CRISPR-Cas defense (Wu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "40f091ca-bed6-4426-b3da-3d22cec86d17",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C78",
+      "claim": "A similar pattern of gene amplification in the 16\u201318 region of T4 followed by deletion of the gene alt was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern of gene amplification in the 16\u201318 region of T4 followed by deletion of the gene alt was previously reported (Wu et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "6f072db1-8255-4952-a4c0-8861a94ecc30",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C79",
+      "claim": "Gene amplification is a major source of evolutionary innovation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene amplification is a major source of evolutionary innovation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "d527b83a-40d4-4237-b7e2-0aa60b3e0d9c",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C80",
+      "claim": "Antibiotic resistance in bacteria frequently arises through gene amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, antibiotic resistance in bacteria frequently arises through gene amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in microbiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "1c3bbeee-3149-42f8-9112-efa17c26a67f",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C81",
+      "claim": "Spontaneous tandem duplications arise frequently in bacterial genomes and can be present in as much as 3% of a population.",
+      "claim_type": "EXPLICIT",
+      "source": "Seminal studies of Salmonella demonstrated that spontaneous tandem duplications arise frequently in bacterial genomes and can be present in as much as 3% of a population (Anderson and Roth, 1981; Anderson and Roth, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "5c53498f-89aa-4e16-a5d9-974092d71340",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C82",
+      "claim": "Selection for poxviruses that can overcome the host restriction factor protein kinase R revealed an initial segmental amplification of the anti-host factor K3L, followed by subsequent acquisition of a beneficial point mutation in one copy K3L and subsequent loss of additional copies of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a selection for poxviruses that can overcome the host restriction factor protein kinase R revealed an initial segmental amplification of the anti-host factor K3L, followed by subsequent acquisition of a beneficial point mutation in one copy K3L and subsequent loss of additional copies of the gene (Elde et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "55a21fce-d260-45d5-b1a0-33e7fc5cc0ec",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C83",
+      "claim": "The entire T4 ancestor population likely contains a single copy of the dmd-tifA locus, which is insufficient to overcome plasmid-borne toxIN.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of tifA, the entire T4 ancestor population likely contains a single copy of the dmd-tifA locus, which is insufficient to overcome plasmid-borne toxIN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that wild-type T4 cannot infect +toxIN cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "3fad033d-d9b6-4f65-ab8e-fed44a341baa",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C84",
+      "claim": "The segmental amplifications via recombination arose within several rounds in each of the replicate populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the recombination events leading to these amplifications arose within several rounds in each of our replicate populations, indicating that this is a readily available pathway to overcoming toxIN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations during the evolution experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "33262c78-a22e-4685-92fd-e9acedfa8ee6",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C85",
+      "claim": "Point mutations in tifA that improve its inhibition of ToxN were not observed early on.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe point mutations in tifA early on that improve its inhibition of ToxN, likely because segmental amplifications via recombination arise more frequently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome sequencing data from evolved clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "b8b6a8cc-c712-4a91-872d-1226fed41aa8",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "claim_id": "C86",
+      "claim": "Beneficial point mutations arising after the segmental amplifications, leading to subsequent collapse of the amplification, were not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not observe beneficial point mutations arising after the segmental amplifications, leading to subsequent collapse of the amplification, as with protein kinase R.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome sequencing data from evolved clones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7feb3fc8-8309-47f0-a99e-318f919b74fc",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "T4 phage was experimentally evolved to overcome the toxIN defense system in E. coli. Through recombination, T4 rapidly acquired segmental amplifications of the tifA gene, which encodes a protein inhibitor of the ToxN toxin. The amplification of tifA, but not the co-amplified dmd gene, was sufficient to restore T4 infection of toxIN-containing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C29 and C69-C70 collectively demonstrate that T4 evolved to overcome toxIN through segmental amplification of tifA. The experimental evolution approach (C3, C70), genome sequencing showing amplifications (C4, C21, C22), functional validation showing tifA but not dmd restores infection (C23, C24), and characterization of TifA as a protein antitoxin (C25-C27) provide converging evidence. The co-immunoprecipitation data (C28) and chromosomal toxIN experiments (C29) further support the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "c1452352-1d2e-487a-afce-a9a626f6d04d",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The same adaptive solution\u2014amplification of the dmd-tifA locus\u2014occurred independently in all five replicate evolved populations. The segmental amplifications arose through homologous recombination between short (6-10 bp) regions of microhomology flanking the locus, with different boundaries in each population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37, C52, and C84 demonstrate convergent evolution across replicates. Genome sequencing (C34) and PCR data (C35) show amplifications in all populations with unique boundaries (C35, C36). Sanger sequencing identified microhomology at boundaries (C36), supporting the recombination mechanism (C37, C52). The rapid emergence within several rounds (C84) indicates this is a readily accessible evolutionary pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "eba0a631-e9a7-4540-b181-c53ebc38426f",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Segmental amplifications of tifA drove compensatory deletions elsewhere in the T4 genome to maintain a genome size compatible with the headful packaging mechanism. The size of deletions was roughly proportional to the size of amplifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38-C40, and C54-C55, C60-C61 establish the compensatory deletion mechanism. Genome sequencing shows large deletions (C38, C39) with sizes correlating to amplification sizes (C40). The headful packaging constraint (C54, C60) provides a mechanistic explanation for why amplifications necessitate deletions (C55, C61). The correlation between amplification and deletion size (C40) strongly supports this constraint-driven mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "30a5db4b-15ff-4148-9c07-ba577ea610ee",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The deleted regions in evolved T4 clones included accessory genes that enable infection of alternative E. coli hosts, revealing an evolutionary trade-off where gaining the ability to overcome one defense system (toxIN) led to loss of genes needed to overcome other defense systems in different hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C41-C48, and C56-C57 demonstrate the host range trade-off. No essential genes were deleted (C41), but evolved clones lost the ability to infect specific E. coli strains (C44). Complementation experiments identified specific genes (rII, ipIII, nrdC.5) required for infecting different hosts (C42-C43, C45-C48). This supports the conclusion that evolution to overcome toxIN constrained host range (C8, C57) by deleting accessory anti-defense genes (C7, C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "9aa56cdf-6930-4675-865c-024169855339",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TifA homologs are found in related T-even phages (T2, T6, RB69) and share a conserved architecture with a central positively charged region. All TifA homologs can inhibit ToxN to some extent, but RB69 TifA appears more potent, correlating with RB69's greater resistance to toxIN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C72-C76 establish the conservation and functional variation of TifA. Genome comparisons show tifA homologs in related phages (C30), with shared architecture (C72) but sequence divergence in RB69 (C73, C74). Functional assays show all homologs inhibit ToxN (C32), with RB69 TifA producing clearest plaques (C76), supporting the hypothesis of greater potency (C75) and correlating with RB69's resistance to toxIN (C31).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "c72291a8-cc48-41ce-9ae9-457ef2aa513a",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The genomic region containing tifA, dmd, and adfA may constitute an anti-TA island in T4, analogous to anti-RM and anti-CRISPR islands found in other phages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 propose the anti-TA island concept. The co-localization of three anti-toxin genes (dmd inhibits RnlA, adfA inhibits DarT, tifA inhibits ToxN) in the same genomic region (C49, C50) supports the inference that this region functions as an anti-TA island (C51), by analogy to other characterized anti-defense islands.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Characterization of evolved T4 isolates revealed that IPIII likely antagonizes an unknown defense system in ECOR17, and that nrdC.5 counteracts the Dsr1 defense system. IPIII functions in the cytoplasm after injection with the phage genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C63-C66 identify new anti-defense mechanisms. IPIII is required for ECOR17 infection (C45-C46) but the target defense is unknown (C58), though IPIII functions cytoplasmically (C66) consistent with internal protein biology (C65). The nrdC.5 gene restores infection in the presence of dsr1 (C48, C59), identifying it as a Dsr1 inhibitor. The characterization of Dsr1 mechanism (C64) and IPI function (C63) provide context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "7cbcfebb-c779-483c-ad56-a47653e8afed",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T4 can undergo large genomic changes through recombination between short regions of homology. Similar recombination-mediated amplifications and deletions have been observed previously in T4 evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C77, and C78 establish recombination-mediated genome plasticity as a general feature of T4 evolution. Genome sequencing shows deletions with microhomology boundaries (C53), and citations document similar events in other T4 studies (C77, C78), indicating this is a recurring mechanism in T4 evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "0cc09a77-70bc-4333-912c-310683f74613",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene amplification is a major source of evolutionary innovation in diverse systems. In the case of tifA, segmental amplifications arose rapidly because the ancestral single copy was insufficient to overcome plasmid-borne toxIN, and amplifications via recombination arose more frequently than beneficial point mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83, C85-C86 contextualize the tifA amplification within broader evolutionary principles. General knowledge about gene amplification (C79-C82) supports the mechanism observed. The inference that ancestral tifA copy number is insufficient (C83) is supported by the inability of wild-type T4 to infect +toxIN cells. The absence of early point mutations (C85) and lack of amplification collapse (C86) are consistent with amplification being the most accessible evolutionary solution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "f42a7119-6d2d-4b97-953d-8be23dd20957",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The accessory genomes of viruses reflect the integrated evolutionary history of the hosts they infected. Selection to infect new hosts can lead to loss of anti-defense genes for previously encountered hosts, constraining host range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C56, and C57 propose a general principle about viral accessory genome evolution. While the experimental data (C57) demonstrate that selection for toxIN resistance led to loss of genes for infecting other hosts, the broader proposal (C9) that accessory genomes reflect integrated evolutionary history is speculative and not directly tested. The principle is plausible based on the findings but requires additional validation across diverse virus-host systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    },
+    {
+      "id": "ff9d427a-78cf-44ed-9307-2d80c1425243",
+      "content_id": "fc1c9568-5caf-4510-ae26-f439a37e944d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Throughout the evolution protocol, the T4 population titer remained at 10^5-10^6 pfu/\u00b5L, with an estimated 1-3 phage infection generations occurring within a single round of evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 describe the experimental evolution parameters. These are directly measured (C67) or calculated (C68) values that characterize the evolution protocol and are necessary for interpreting the evolutionary dynamics observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T14:46:00.283735Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f26a935f-2286-463b-ac65-e220ae32b397",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "62d0efdc-9688-44ec-ae17-99c63ace8e88",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "01b50c78-6ea3-4ad6-b7df-0467521ee6e0",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "240b4155-6a86-4b98-9549-b1ddd73b0fbf",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "3cfee987-3429-4a93-8daf-c6f6ade428c0",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "7de3d9a5-15e3-43b4-b765-592c35dc3bfd",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "e03aba64-dcc0-466f-9ca3-33ced6e22002",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "e362693e-61fd-4fd0-9d7e-bc453b889b41",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "668cc9b2-4913-4971-95f9-c2a64dd53d53",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "2fbadd60-63cc-4c31-8a57-d94ff07807c6",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "a2de8fbc-661e-45ed-8b41-6c6035208b4d",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "918e432c-fc2e-46d2-981d-ecdee3cf7443",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "51a2abcc-affb-4a41-bd0b-cb064167263d",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "489debd3-504a-4efa-9151-85fdcca2e7d2",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "aa9c3876-9d92-4905-9793-0abe40b9f06e",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "41c5fd4e-0e02-4b7e-8c79-5b43d9d9cc33",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "eeb28b6f-8825-49cd-8b15-029c5d31b56c",
+      "result_id": "7feb3fc8-8309-47f0-a99e-318f919b74fc"
+    },
+    {
+      "claim_id": "6a1d20f6-2704-453a-b0b3-984225d7c5dc",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "25d78136-3063-47dd-af03-b881330e6080",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "54f35ccc-3f0f-4be1-a726-0b850c052a44",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "ae0b2bd4-1579-498c-a0ed-60f0eb4372b7",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "a751fc66-4d29-4bd5-b36f-ddf6e6a5612e",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "9b15e260-9c67-42d4-81ea-3e3286e3ca1b",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "3fad033d-d9b6-4f65-ab8e-fed44a341baa",
+      "result_id": "c1452352-1d2e-487a-afce-a9a626f6d04d"
+    },
+    {
+      "claim_id": "f9bb169e-02d1-422a-a54c-18e48c73c825",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "3a7a56bb-7c4a-46b6-a4d1-f8ed6b1abace",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "2020ee94-d688-449c-8e17-bd90ce344ce3",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "39902149-1389-4225-b3d8-b8f48b206799",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "5ce1fd98-2239-4c52-a4e7-7d2e06a91ad1",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "b5c8e575-70fc-494c-a22b-6edccb45eb49",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "64e6b95e-7e44-46cb-b98d-a6ca01cb4c9c",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "a0c1174e-db94-4911-8090-cb331786f218",
+      "result_id": "eba0a631-e9a7-4540-b181-c53ebc38426f"
+    },
+    {
+      "claim_id": "4daf1c1c-6c60-47e0-a500-ca8b224494c3",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "702d9faa-5460-4ab2-a840-863af2b28f86",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "c871483e-070b-469d-ae80-72a67e81d71e",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "e74cd20d-673f-424f-8695-4fcb27a1094c",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "52e753be-e3c0-4c60-b83c-26933ddb4900",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "a5e77aca-090d-4f0c-ad4e-fd9a09a3ecd2",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "cc63fc93-fc70-4c42-8beb-62fc14180918",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "d416b59f-e981-4afa-8a87-2519399aa3d3",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "6892fbba-5d90-4b16-824b-98eeccbf103b",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "ce544249-e98d-42e9-a9ae-2c8a25071133",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "2027195b-30aa-4c6b-baf9-e93e841b225d",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "a0dfeb08-0453-4aeb-9760-229c587de049",
+      "result_id": "30a5db4b-15ff-4148-9c07-ba577ea610ee"
+    },
+    {
+      "claim_id": "be31ff87-76b0-407c-bc09-9d040fbad931",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "6ced05c5-0f40-44ee-8f1a-dfaea5029099",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "9c5ff0d5-b26b-4d32-96d3-5fc03717414e",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "5fc69da7-3184-4442-9976-4298435b05fd",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "9e24fc08-eb87-4038-88f1-29cd4e4fe8c8",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "e533345a-c4a0-408f-9304-6ced212f9152",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "822fed43-a1ac-4d51-899a-393b663d8d40",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "d580884f-528e-4f81-82cb-00487a954dc8",
+      "result_id": "9aa56cdf-6930-4675-865c-024169855339"
+    },
+    {
+      "claim_id": "2c654565-0062-4177-936b-73034ac4a1ba",
+      "result_id": "c72291a8-cc48-41ce-9ae9-457ef2aa513a"
+    },
+    {
+      "claim_id": "5d1699b2-6c89-47c8-8781-cf8de3ca3975",
+      "result_id": "c72291a8-cc48-41ce-9ae9-457ef2aa513a"
+    },
+    {
+      "claim_id": "b4d6fea5-4f54-4c5a-a3ce-5528e6fb5797",
+      "result_id": "c72291a8-cc48-41ce-9ae9-457ef2aa513a"
+    },
+    {
+      "claim_id": "98b05961-1823-4fb6-b94b-29e54abdf577",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "55830107-1d3f-4a1f-9401-c7c5a6adf4e0",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "e96187a6-43ea-499e-b8a7-c538d0f26dd9",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "963cbca2-5c86-4503-be34-bcd051af1dbe",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "0d5e6698-2c6b-43f6-a4c6-e48759cfa9e3",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "37be494e-0462-4ec4-ab2d-8e3f8e18c239",
+      "result_id": "cdd5aeae-d67d-4eaf-af6e-f48c1f152b32"
+    },
+    {
+      "claim_id": "3d52004c-480b-4024-9bd0-08c13f8c72b6",
+      "result_id": "7cbcfebb-c779-483c-ad56-a47653e8afed"
+    },
+    {
+      "claim_id": "5b94fc7e-562c-4591-bfb1-dbcccbb67342",
+      "result_id": "7cbcfebb-c779-483c-ad56-a47653e8afed"
+    },
+    {
+      "claim_id": "40f091ca-bed6-4426-b3da-3d22cec86d17",
+      "result_id": "7cbcfebb-c779-483c-ad56-a47653e8afed"
+    },
+    {
+      "claim_id": "6f072db1-8255-4952-a4c0-8861a94ecc30",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "d527b83a-40d4-4237-b7e2-0aa60b3e0d9c",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "1c3bbeee-3149-42f8-9112-efa17c26a67f",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "5c53498f-89aa-4e16-a5d9-974092d71340",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "55a21fce-d260-45d5-b1a0-33e7fc5cc0ec",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "33262c78-a22e-4685-92fd-e9acedfa8ee6",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "b8b6a8cc-c712-4a91-872d-1226fed41aa8",
+      "result_id": "0cc09a77-70bc-4333-912c-310683f74613"
+    },
+    {
+      "claim_id": "47a7b9f6-64c3-4f64-9b3b-b5caaebd9ee6",
+      "result_id": "f42a7119-6d2d-4b97-953d-8be23dd20957"
+    },
+    {
+      "claim_id": "2027195b-30aa-4c6b-baf9-e93e841b225d",
+      "result_id": "f42a7119-6d2d-4b97-953d-8be23dd20957"
+    },
+    {
+      "claim_id": "a0dfeb08-0453-4aeb-9760-229c587de049",
+      "result_id": "f42a7119-6d2d-4b97-953d-8be23dd20957"
+    },
+    {
+      "claim_id": "e0b20e97-1a77-42b8-b433-1c1534bcdbf3",
+      "result_id": "ff9d427a-78cf-44ed-9307-2d80c1425243"
+    },
+    {
+      "claim_id": "3e0b9872-16e8-4a16-83ce-31898debb870",
+      "result_id": "ff9d427a-78cf-44ed-9307-2d80c1425243"
+    }
+  ],
+  "comparisons": []
+}

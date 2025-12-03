@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C15",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Image3C is a novel multimodal image-based method for single-cell analysis that does not require species-specific reagents or pre-existing knowledge about the sample. It combines image-based flow cytometry with unbiased clustering and CNN integration to perform de novo cell composition analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C15, C60-C62, and C64 collectively establish the core capabilities and novelty of Image3C. The method is demonstrated to work without antibodies or prior knowledge (C4, C15, C60-C62), combines multiple technical components (C5, C64), and expands applicability to organisms lacking species-specific reagents (C7). These claims are consistently supported throughout the manuscript with experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Image3C successfully identified 16 distinct cell clusters in zebrafish whole kidney marrow tissue based on intrinsic morphological and fluorescent features, distinguishing major cell classes including dead cells, debris, neutrophils, and other myelomonocytes, with results comparable to classical histological approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 demonstrate Image3C's ability to recapitulate known cell populations in zebrafish WKM. The identification of 16 clusters (C28), distinction of major cell classes (C29), identification of dead cells (C30), neutrophils (C31), and comparable M/L ratio to classical methods (C32, 1.59 vs 1.35) provide converging evidence. Sample size (n=8) and comparison with published data support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Image3C identified 4 clusters of professional phagocytes in zebrafish WKM (3 granulocyte clusters and 1 monocytic cluster) with relative abundance of 5-10%, consistent with previous studies, and confirmed the absence of phagocytic lymphocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate Image3C's ability to identify functional cell populations. The identification of 4 phagocyte clusters (C33), their relative abundance matching published estimates (C34, 5-10%), and confirmation of no phagocytic B-cells (C35) are all supported by data in Figure 3 and comparison with cited literature (n=6 samples).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Image3C revealed that cytochalasin B (CCB) selectively affects cell viability based on cell identity, causing near-complete loss of erythrocytes and increased dead/apoptotic cells, representing effects beyond phagocytosis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe a novel finding about CCB's non-specific effects. The selective impact on cell viability (C36), significantly higher erythrocyte counts in control vs CCB samples (C37), and near-absence of erythrocytes with CCB treatment (C38) are supported by statistical analysis (Figure 3B, Supplementary files 3 and 5). This represents a new observation enabled by Image3C's comprehensive analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Low temperature inhibition of phagocytosis only affects adhesive neutrophils (cluster Dr12_P), while CCB blocks phagocytosis in all professional phagocytes, revealing different phagocytosis mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by comparative analysis of inhibition methods shown in Figure 3C and Supplementary files 5-6. The cell type-specific effect of temperature vs. broad effect of CCB provides mechanistic insight into phagocytosis pathways. Statistical analysis with n=6 samples supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Image3C identified 9 cell clusters in P. canaliculata hemolymph that were consistent with published classifications obtained by classical morphological methods, with remarkably similar relative abundances (e.g., small blast-like cells: 14.0% classical vs 13.8% Image3C), representing an unprecedented increase in accuracy over traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 demonstrate Image3C's validation in an emerging research organism. The identification of 9 clusters (C40), consistency with published classifications (C41), and highly similar relative abundances across multiple cell types (C42-C44) provide strong validation. The claim of unprecedented accuracy (C45) is supported by analyzing 10,000 events with 25 features vs. hundreds of cells with 2 features in traditional methods (n=5 samples).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Image3C identified two clusters of professional phagocytes in P. canaliculata hemolymph (Pc5_P and Pc17_P) with different ROS responses, and revealed that EDTA is a more effective and generalized inhibitor of phagocytosis than low temperature, which only affects cluster Pc17_P.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 demonstrate Image3C's ability to identify functional heterogeneity in phagocytes. The identification of two phagocyte clusters (C46) with different DHR signals (C47), differential effects of EDTA (C48) vs. temperature (C49), and the conclusion about inhibitor effectiveness (C50) are supported by statistical analysis in Figure 5 and supplementary files (n=4-5 samples).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A CNN classifier based on DenseNet architecture was trained using over 35,000 images from P. canaliculata hemolymph, achieving a weighted average f1-score of 0.75, with training and test sets following similar accuracy and loss trends indicating proper generalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C68-C73 describe the CNN implementation and performance. The training dataset size (C51), f1-score of 0.75 (C52), architectural details (C68-C71), training parameters (C72), and validation of generalization (C73) are all explicitly stated with appropriate technical detail. The f1-score is noted as comparable to other studies (Blasi et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The CNN classifier assigned phagocytes primarily to Group II hemocyte clusters (59.4% Pc1_CT, 6.2% Pc6_CT, 9.2% Pc7_CT), confirming previously published results, with 17.2% assigned to doublets/dead cells likely due to microaggregate formation during in vitro phagocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate CNN validation through comparison with published results. The specific percentages (C53), confirmation of Group II hemocytes as primary phagocytes (C54), low percentage in Group I (C55), and explanation for doublet assignment (C56) are supported by Figure 6E and citation to Accorsi et al., 2013. The microaggregate explanation is supported by citation to Walters, 1970.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Image3C with CNN analysis revealed significant sex-based differences in P. canaliculata hemocyte composition, with cluster Pc1_CT more abundant in females (53% vs 38%) and clusters Pc7_CT and Pc6_CT more abundant in males, differences not detected by prior manual classification studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate Image3C's ability to detect subtle differences missed by traditional methods. The identification of significantly different clusters (C57), specific quantification of differences (C58), and comparison with prior negative findings (C59) are supported by Figure 6F and statistical analysis (n=5). This highlights the advantage of high-throughput unbiased analysis over manual counting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Image3C can identify different cell populations through de novo clustering, detect changes in cell type abundance caused by experimental or natural perturbations, and enable bias-free high-throughput analysis of large datasets across multiple experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 summarize the demonstrated capabilities of Image3C. These conclusions are supported by the experimental results in zebrafish (identifying phagocytes, detecting CCB effects) and P. canaliculata (identifying cell types, detecting sex differences). The versatility claim (C27) is supported by successful application to two different organisms with different tissue types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "X-Shift clustering was selected for Image3C based on published comparisons, representing an optimal trade-off for identifying low-frequency populations, accurately identifying true clusters, not requiring a priori knowledge of cluster numbers, and having reasonable runtimes, while K-means was insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 justify the methodological choice of clustering algorithm. The selection based on published analysis (C74, Weber and Robinson, 2016), rationale for X-shift advantages (C75), and rejection of K-means (C76) are explicitly stated. However, the K-means comparison is noted as unpublished (data not shown), which slightly weakens this justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Statistical analysis in Image3C uses negative binomial regression for comparing cell counts per cluster between samples, and one-way ANOVA with FDR correction for comparing hemolymph composition between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 describe the statistical methods used. The use of negative binomial regression with edgeR package (C77) and one-way ANOVA with FDR correction (C78) are explicitly stated with appropriate citations. These methods are appropriate for count data and multiple testing correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The number of clusters increases drastically when including treatments that influence cell morphology (9 clusters in na\u00efve hemolymph vs 20 in phagocytosis experiment), partly due to morphological changes in professional phagocytes upon pathogen detection, with ImageStreamX Mark II providing highly reproducible images across experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe important observations about clustering behavior. The increase in cluster number with treatment (C65) is demonstrated with specific examples (9 vs 20 clusters). The explanation involving phagocyte morphology changes (C66) is supported by citation (Pali\u0107 et al., 2007). The reproducibility of ImageStreamX Mark II (C67) is stated but not directly validated with data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Image3C can optionally integrate species-specific reagents and prior knowledge to be combined with transcriptomic datasets, providing complementary information based on cell morphology and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 describes a potential capability of Image3C but is not demonstrated in the manuscript. While the statement is reasonable given the method's design, no experimental validation of integration with transcriptomic data or use of species-specific reagents is provided. This represents a future direction rather than a validated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Detailed experimental protocols are provided for zebrafish WKM and P. canaliculata hemolymph collection, staining, phagocytosis assays, and image acquisition on ImageStreamX Mark II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 describe experimental methods in detail. These are explicitly stated in the Materials and methods section with specific parameters (animal ages, concentrations, incubation times, sample sizes). The protocols are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Image3C data processing includes feature correlation analysis with trimming at \u22650.85 correlation, outlier sample removal at <0.85 correlation, logicle transformation of fluorescence features, DNA normalization, feature scaling to 1 SD, and k-value selection using elbow point method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe data processing steps with specific parameters. These are explicitly stated in the methods with appropriate citations (Caicedo et al., 2017; Ellis et al., 2018; Hahne et al., 2009, 2018). The thresholds (0.85 correlation) and methods are clearly specified and supported by supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "FCS Express Plus was used because it is currently the only platform that works with Amnis DAF and CIF files while running R-driven transformations, though ImageJ Bio-Formats can read these files but has a bug causing incorrect pixel values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 justify software choices and note limitations. The justification for FCS Express Plus (C95) is stated as a practical necessity. The ImageJ bug (C96) is noted as a technical limitation. However, the manuscript also notes that similar results can be obtained with IDEAS software, providing a free alternative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CNN training involved cropping/padding images to 32\u00d732 pixels, random splitting into 80% training/10% testing/10% validation sets, and using Adam optimizer with learning rate 0.0006 and 1% decay per step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe CNN training parameters. These are explicitly stated in the methods section with specific values and appropriate citation (van der Walt et al., 2011 for NumPy). The parameters are standard for CNN training and adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background context establishes that while image-based cell classification and CNNs are valuable tools, current methods are limited to organisms with species-specific reagents, and traditional manual methods suffer from limited features and observer bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C8-C13 provide background context supported by multiple citations. These establish the motivation for Image3C by describing current capabilities (C2, C8-C10, C12) and limitations (C3, C11, C13) of existing methods. The claims are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Table 1 comparison shows Image3C was tested on zebrafish WKM and apple snail hemolymph using commercially available hardware (ImageStream) and mostly free/open source software, while other methods require prior knowledge, specific reagents, or have other limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 describe comparative features from Table 1. Image3C characteristics (C14-C17) and limitations of other methods (C18-C23) are explicitly stated in the table with appropriate citations. This provides clear positioning of Image3C relative to existing methods.",
+    "result_type": "MINOR"
+  }
+]

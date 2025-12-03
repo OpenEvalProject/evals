@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C117"
+    ],
+    "result": "CD169+ macrophages in the bone marrow take up Plasmodium yoelii-infected red blood cells (Py-iRBCs) preferentially over uninfected RBCs. Two subpopulations of CD169+ MPs (F4/80hi CD169int and F4/80int CD169hi) were identified, both showing ~10-fold higher uptake of Py-iRBCs compared to uninfected RBCs as early as 6 hours post-transfer, confirmed by both FACS and intravital microscopy (IVM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C117 are well-supported by FACS analysis (Figure 1A) and IVM imaging (Figure 1B) demonstrating preferential uptake of labeled Py-iRBCs by both CD169+ MP subsets. Control experiments (C50) ruled out interference from antibody labeling. The quantitative data showing ~10-fold increased uptake is clearly presented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Plasmacytoid dendritic cells (pDCs) do not directly take up Py-iRBCs in the bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by FACS analysis (Figure 1\u2014figure supplement 2A) showing no detectable TAMRA-Red+ signal in pDCs following transfer of labeled Py-iRBCs. This negative result is important for establishing that CD169+ MPs, not pDCs, are the primary cells taking up parasite-infected RBCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C152"
+    ],
+    "result": "CD169+ macrophages in the bone marrow undergo significant loss (>50-60%) and robust activation during Py infection. Between 30-36 hours post-infection, both F4/80hi and CD169hi MP subsets are lost, while surviving MPs show increased expression of activation markers Sca-1, CD80, and ICAM-1, and decreased CD11a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C152 are supported by FACS analysis (Figure 1C, E, F) and IVM imaging (Figure 1D) showing quantitative loss of both MP subsets and significant changes in activation marker expression. The temporal dynamics (30-36 hr) and magnitude of changes are clearly documented with statistical significance indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C42"
+    ],
+    "result": "pDCs exhibit distinct motility patterns in naive versus Py-infected bone marrow. In uninfected mice, pDCs are highly motile with track velocity of 7.14 \u03bcm/min and displacement rate of 1.5 \u03bcm/min, exploring ~1350 \u03bcm\u00b2/hr of tissue. Following Py infection (36 hr), pDC motility is significantly reduced (TV: 5.13 \u03bcm/min, DR: 0.93 \u03bcm/min), indicating arrest. CD169+ MPs remain sessile in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C42, and C60 are well-supported by quantitative IVM analysis (Figure 2A-D) using PTCRA-EGFP reporter mice. Multiple metrics (track velocity, displacement rate, mean square displacement) consistently demonstrate pDC arrest upon infection. The data include individual cell tracking and averaged values across multiple mice with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CD169+ macrophages control pDC dynamics during Py infection, and pDC arrest is linked to their ability to initiate type I IFN production. Depletion of CD169+ MPs using diphtheria toxin in siglec1DTR mice prevents pDC arrest, with pDC displacement rate and MSD significantly increased (~50%) compared to non-depleted infected mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by IVM experiments (Figure 2E-G) in CD169+ MP-depleted mice showing restoration of pDC motility during infection. The use of both direct siglec1DTR mice and bone marrow chimeras strengthens the conclusion. The inference linking arrest to type I IFN production (C66) is reasonable given prior work showing CD169+ MPs are required for pDC activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "TLR7 signaling intrinsic to pDCs is required for their arrest during Py infection. In Tlr7\u2212/y mice, pDCs fail to arrest upon infection and continue migrating with speeds similar to uninfected mice (TV: 7.05 \u03bcm/min, DR: 1.55 \u03bcm/min), contrasting with WT pDCs that show 31-45% reduction in motility. Bone marrow chimera experiments confirm this is a cell-intrinsic requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 and C75 are strongly supported by IVM analysis of Tlr7\u2212/y mice (Figure 3A-D) and mixed bone marrow chimeras (Figure 3E-F). The use of chimeras definitively establishes cell-intrinsic TLR7 requirement. Multiple motility metrics consistently show failure of Tlr7\u2212/y pDCs to arrest. The observation of tonic TLR7 signaling in steady state (C68) is an interesting inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "TLR7-dependent pDC arrest correlates with increased contact duration with CD169+ MPs. WT pDCs significantly increase contact time with CD169+ MPs during infection (from ~2 to 16 min), while Tlr7\u2212/y pDCs maintain short contact times (~4-5 min) regardless of infection status. This suggests CD169+ MPs provide TLR7 ligands to pDCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by quantitative contact duration analysis using Kiss and Run algorithm (Figure 3G) in chimeric mice. The dramatic 8-fold increase in WT pDC contact time during infection versus minimal change in Tlr7\u2212/y pDCs provides strong evidence for TLR7-dependent interactions. The inference that MPs provide TLR7 ligands (C76) is logical given both CD169+ MPs and TLR7 are required for arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TLR7 signaling regulates expression of chemokine receptors and adhesion molecules on pDCs during Py infection. CCR9 and CX3CR1 are upregulated in WT but not Tlr7\u2212/y mice; CXCR3 is downregulated in both genotypes but to different extents (90% vs 50%); ICAM-1 upregulation is substantially greater in WT (~3-fold difference); and VCAM-1 reduction is less pronounced in Tlr7\u2212/y mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by comprehensive FACS analysis (Figure 3\u2014figure supplement 1C) comparing WT and Tlr7\u2212/y mice. The differential expression patterns across multiple markers provide strong evidence that TLR7 signaling regulates pDC surface molecule expression. The conclusion (C82) that these changes may contribute to pDC motility and arrest is a reasonable inference, though causality is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "G\u03b1i-protein-dependent chemotaxis is required for pDC arrest and maximal type I IFN production. Pertussis toxin (PT) treatment causes stronger pDC immobilization with distinct morphological changes (round vs elongated shape) and results in 80% reduction in type I IFN-expressing pDCs. Despite immobilization, PT-treated pDCs still modulate some but not all activation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are supported by IVM analysis (Figure 4A-D) and FACS analysis using IfnbYFP/YFP reporter mice (Figure 4E). The dramatic morphological changes and reduced type I IFN production provide strong evidence for chemotaxis requirement. However, PT has pleiotropic effects, so the specific chemotactic pathways remain incompletely defined. The differential effects on various markers (C88-C89) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Specific blockade of individual chemokine receptors (CXCR3, CXCL9) or adhesion molecules (LFA-1, VLA-4) fails to recapitulate pertussis toxin effects on pDC activation. This suggests pDC chemotaxis involves redundant pathways with multiple receptors contributing to homing and functional interactions with CD169+ MPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 and C134-C136 are supported by antibody blocking experiments (Figure 4F) showing no significant reduction in type I IFN production with various blocking antibodies. The conclusion of redundancy (C92, C134) is a reasonable inference given that pDCs express multiple chemokine receptors and single/combined blockade was insufficient. However, the negative results limit mechanistic insight into specific pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C102"
+    ],
+    "result": "STING signaling is not required for pDC arrest during Py infection. In Sting1Gt/Gt mice, pDCs still arrest upon infection despite showing confined migration patterns. WT pDCs transferred into Sting1Gt/Gt hosts also arrest normally, demonstrating that pDC-extrinsic STING-dependent signals do not control pDC homing and arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C102 are supported by IVM analysis of Sting1Gt/Gt mice and bone marrow chimeras (Figure 5A-F). While pDC displacement rate and MSD are reduced in infected Sting1Gt/Gt mice, track velocity remains elevated, indicating confined rather than arrested migration. The chimera experiments definitively show STING is not required for arrest, which was unexpected given STING's role in full pDC activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C138",
+      "C139"
+    ],
+    "result": "STING deficiency leads to larger pDC clusters and increased pDC retention in the bone marrow. In Sting1Gt/Gt mice, pDC clusters are 3-fold larger on average (up to 10-fold in some cases), and pDC numbers in BM are significantly increased compared to WT. Despite increased numbers, type I IFN-expressing pDCs are reduced, and chemokine receptor modulation is blunted, suggesting pDCs fail to receive signals for egress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103, C138-C139 are well-supported by IVM cluster volume quantification (Figure 5G-H) and FACS analysis (Figure 5I, Figure 5\u2014figure supplement 1). The combination of larger clusters, increased pDC numbers, reduced IFN production, and altered chemokine receptor expression provides strong converging evidence that STING regulates pDC egress from BM. The inference about failed egress signals (C101, C103) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112",
+      "C118"
+    ],
+    "result": "STING signaling specifically in CD169+ macrophages is required for pDC initiation of type I IFN production. Using conditional knockout mice (siglec1Cre/WTSting1Gt/F), deletion of STING in CD169+ MPs results in ~60% reduction in type I IFN-expressing pDCs and ~1.5-fold increase in pDC numbers in BM, similar to whole-body STING deficiency and CD169+ MP depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107, C111-C112, and C118 are strongly supported by FACS analysis of conditional knockout mice (Figure 6A-B). The use of cell-type-specific deletion definitively establishes that STING in CD169+ MPs (not pDCs or other cells) is required for optimal pDC activation. The similar phenotypes across different genetic models (whole-body KO, conditional KO, MP depletion) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C153"
+    ],
+    "result": "STING-mediated pDC activation is uncoupled from CD169+ MP loss. In whole-body Sting1Gt/Gt mice, CD169hi MPs are partially protected from loss (~50%), but in conditional knockout mice where only CD169+ MPs lack STING, both MP populations undergo normal loss. MP activation markers remain comparable across genotypes, ruling out general activation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110, C113-C114, and C153 are supported by FACS analysis comparing MP numbers and activation markers across genotypes (Figure 6C, Figure 6\u2014figure supplement 1B). The differential MP loss patterns between whole-body and conditional knockouts provide important mechanistic insight. The conclusion that STING-mediated pDC activation is independent of MP loss (C114) is well-supported by the observation that pDCs fail to activate even when MP loss is normal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C120",
+      "C122",
+      "C123",
+      "C163",
+      "C164"
+    ],
+    "result": "A functional interaction between CD169+ macrophages and pDCs in the bone marrow is required for pDC priming and type I IFN production during malaria infection. This interaction requires pDC motility, homing, and arrest, establishing that CD169+ MPs act as first-line responders that are non-redundant and uniquely capable of activating pDCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116, C120, C122-C123, C163-C164 represent the main conclusions of the study, synthesizing results from multiple experimental approaches (MP depletion, TLR7 KO, STING KO, IVM). The convergence of evidence from genetic, pharmacological, and imaging studies strongly supports the existence and functional importance of the CD169+ MP-pDC interaction. The characterization of this interaction as direct or indirect remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C76",
+      "C124",
+      "C125"
+    ],
+    "result": "CD169+ macrophages are proposed to be the source of TLR7 ligands for pDC activation, and TLR7 ligands are not freely diffusing in the bone marrow. This is inferred from the requirement for both CD169+ MPs and TLR7 for pDC arrest, and the observation that pDCs do not directly take up Py-iRBCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C53, C76, C124-C125 represent inferences rather than direct demonstrations. While the logic is sound (both CD169+ MPs and TLR7 required for arrest; MPs take up iRBCs; pDCs don't), direct evidence that MPs present TLR7 ligands to pDCs is lacking. The manuscript acknowledges uncertainty about whether the interaction is direct or indirect. Additional experiments (e.g., transfer of MP-derived materials, imaging of ligand transfer) would be needed to definitively establish this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C139",
+      "C141",
+      "C142"
+    ],
+    "result": "STING signaling in CD169+ MPs regulates pDC egress from the bone marrow after priming. Larger pDC clusters and increased pDC retention in STING-deficient conditions suggest pDCs are not fully activated and remain docked awaiting additional signals, indicating that pDC priming is spatially segregated and activation signals are not freely diffusing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C139, C141-C142 are supported by the cluster size and pDC number data (Figure 5G-I), though the mechanistic interpretation involves some speculation. The observation of increased retention is clear, but whether this reflects failed egress signals, incomplete activation, or altered clustering dynamics requires further investigation. The inference about spatial segregation (C142) is reasonable given the clustering patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "Proper clustering and arrest of pDCs is a TLR7-guided process that requires TLR7 for arrest, type I IFN production, and extensive remodeling of chemokine receptor and adhesion molecule expression to promote stable contacts with activated CD169+ MPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 synthesize multiple observations about TLR7's role in pDC behavior. The data clearly show TLR7 is required for arrest (Figure 3), type I IFN production (prior work + current data), and surface molecule remodeling (Figure 3\u2014figure supplement 1C). The conclusion that these changes promote stable MP contacts is a reasonable inference supported by the contact duration data (Figure 3G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C147",
+      "C154",
+      "C165",
+      "C166"
+    ],
+    "result": "The identity of STING-dependent signals from CD169+ MPs to pDCs remains unknown. Type I IFN itself, other cytokines via NF\u03baB, or STING-driven autophagy providing parasite-derived materials are proposed as possibilities. Whether the pDC-MP interaction is direct or indirect also requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143, C147, C154, C165-C166 acknowledge key limitations and unknowns in the study. These represent speculation about mechanisms rather than tested hypotheses. The manuscript appropriately identifies these as areas requiring future investigation. The proposals are reasonable based on known STING biology, but no experimental evidence is provided to distinguish among the possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The current study's findings that STING in CD169+ MPs (not pDCs) is required for pDC activation, and that STING deficiency does not increase type I IFN or improve survival, are discrepant with a prior study (Yu et al., 2016). The authors attribute this to likely genetic differences between Py YM strains used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 appropriately address discrepancies with prior literature. The current study's data clearly show STING acts in MPs not pDCs (C158-C160), contradicting Yu et al. 2016. The proposed explanation of strain differences (C161) is reasonable speculation. The conclusion that their results align with broader consensus about type I IFN being detrimental in malaria (C162) is supported by multiple citations.",
+    "result_type": "MINOR"
+  }
+]

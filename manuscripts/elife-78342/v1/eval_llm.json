@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C8",
+      "C114",
+      "C118"
+    ],
+    "result": "Lhx2 is a multilevel, cell-autonomous regulator of Shh signaling during early retinal neurogenesis that establishes signaling competence in retinal progenitor cells (RPCs) and tailors the pathway to meet the demands of early retina formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by convergent evidence from multiple experimental approaches including RNA-seq showing altered expression of Shh pathway genes (C52-C56), ChIP-seq and ATAC-seq demonstrating direct and indirect regulation (C80-C83), functional assays with purmorphamine and Shh-N showing pathway responsiveness (C90, C125), co-culture experiments demonstrating intact Shh bioavailability (C144), and genetic rescue experiments with Cdon/Gas1 overexpression (C5, C125). The cell-autonomous nature is supported by conditional knockout experiments and the temporal analysis of pathway activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C82",
+      "C83",
+      "C122",
+      "C123",
+      "C125",
+      "C145"
+    ],
+    "result": "Cdon and Gas1 are candidate direct targets of Lhx2 that mediate Shh pathway activation through ligand reception, as evidenced by Lhx2 binding at their loci, differential chromatin accessibility, and functional rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple lines of evidence: ChIP-seq data showing Lhx2 binding at Cdon and Gas1 loci (C82), ATAC-seq showing differential chromatin accessibility (C83), rapid loss of expression upon Lhx2 inactivation (C123), and functional rescue with Cdon/Gas1 overexpression restoring Gli1 expression in Lhx2-deficient RPCs (C125). The temporal expression patterns (C99-C100) further support their role specifically in pathway activation rather than maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C146"
+    ],
+    "result": "Lhx2 promotes sustained Shh signaling through regulation of multiple pathway components including Smo, Gli2, and Gli1, likely through indirect mechanisms, as pathway activity is reduced when Lhx2 is inactivated after co-receptor downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by qPCR data showing reduced expression of Gli1, Gli2, and Smo when Lhx2 is inactivated at E14.5 (C101, C152), after Cdon and Gas1 are downregulated (C99). The lack of direct Lhx2 binding at these loci (C80) combined with differential chromatin accessibility (C81) supports indirect regulation. The model of subtle regulation of multiple components (C103) is consistent with the absence of strong haploinsufficiency for individual genes (C105) and the context-specific effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C117",
+      "C150"
+    ],
+    "result": "Lhx2 has a contextual role linking the Shh pathway to downstream targets during early retinal neurogenesis, as evidenced by the failure of Ptch1 inactivation to rescue the Lhx2 CKO phenotype despite increased Shh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by the genetic double knockout experiment showing that while Ptch1 inactivation increases Shh pathway readout genes (Gli1, Ptch1, Hhip, Ptch2) in the Lhx2 CKO background, it fails to rescue the retinal developmental phenotype including RPC maintenance and tissue organization defects. This suggests Lhx2 functions beyond simply regulating Shh signaling levels and is required to link pathway activity to appropriate developmental outcomes, consistent with its known role as a broad regulator of RPC genes (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "Gli1 expression is markedly reduced in the Lhx2 CKO retina at both protein and mRNA levels, and Shh signaling is identified as an inhibited pathway in transcriptomic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary methods: Western blot showing reduced Gli1 protein (C46), in situ hybridization showing reduced Gli1 mRNA across the retina (C47), qPCR validation (C49, C51), and unbiased pathway analysis identifying Shh signaling as inhibited with ~35% of pathway genes differentially expressed (C63, C64). The consistency across methods and the demonstration that Lhx2 reduction precedes Gli1 reduction (C51) support a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C86",
+      "C87",
+      "C144"
+    ],
+    "result": "Shh bioavailability is intact in the Lhx2 CKO retina, as Shh expression is maintained and functional Shh is present as demonstrated by co-culture assays with open-loop reporter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by in situ hybridization showing similar Shh expression patterns between control and CKO (C48), qPCR showing no significant change in Shh levels (C50), RNA-seq showing Shh did not meet DEG criteria (C86), and critically, the co-culture assay demonstrating that CKO retinal explants can activate mCitrine expression in open-loop reporter cells, indicating functional Shh is present and available (C144, C111). The observation that CKO explants actually produced more mCitrine+ cells at 96hr (C111) further supports intact or even increased Shh availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C96",
+      "C97",
+      "C98",
+      "C142",
+      "C143"
+    ],
+    "result": "Recombinant Shh-N can induce Gli1 expression across the Lhx2 CKO retina, possibly by bypassing co-receptor requirements through direct Ptch1 binding, unlike endogenous lipidated Shh which requires co-receptors for efficient signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation that Shh-N induces Gli1 in CKO explants is well-documented (C90), the mechanistic explanation remains speculative (C91, C98). The claims about differential requirements for recombinant vs. endogenous Shh are based on literature about Shh processing and presentation (C92-C97) but are not directly tested in this study. The persistence of some Cdon expression in dorsal retina (C89) could also explain the results. Additional experiments specifically testing co-receptor dependence of recombinant vs. endogenous Shh would be needed to definitively support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "RNA-seq analysis identified 2,210 differentially expressed features (2,161 protein-coding genes) in the Lhx2 CKO retina, with qPCR validation confirming the trends except for Lhx2 itself, which showed more pronounced reduction by qPCR due to primer location in the deleted exon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis is well-documented with appropriate statistical methods (DESeq2, FDR cutoff of 0.001) and clear reporting of results (C52-C56). The qPCR validation confirms the RNA-seq trends for multiple genes (C57), and the discrepancy for Lhx2 is well-explained by the technical detail that qPCR primers are in the deleted exon while RNA-seq detects the mutant transcript (C58, C59). The coverage plot (C59) provides visual confirmation of this explanation. Sample sizes appear adequate (n=4 per genotype for RNA-seq).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "Pathway analysis identified 12 significantly altered canonical pathways including Shh signaling as inhibited, with activated pathways associated with neuronal differentiation and inhibited pathways with cell cycle progression, consistent with the known Lhx2 CKO phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway analyses are appropriately conducted using established tools (IPA Canonical Pathways and clusterProfiler) with clearly defined cutoffs (C61). The identification of Shh signaling as the only pathway meeting criteria in both analyses (C66) strengthens confidence in this finding. The general pattern of pathway changes (C62) is consistent with previous phenotypic characterization, providing biological validation. The methods are adequately described and the results are presented with appropriate statistical measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Multiple Shh pathway genes show altered expression in the Lhx2 CKO, with changes in Gas1, Cdon, Gli3, and Gsk3b likely independent of reduced signaling, while changes in Ptch1 and Ptch2 are likely secondary to reduced pathway activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by RNA-seq data showing differential expression of multiple pathway components (C67-C68) combined with logical inference based on known gene functions and regulatory relationships. The distinction between primary (Lhx2-dependent) and secondary (signaling-dependent) changes (C78-C79) is well-reasoned based on the known roles of these genes as pathway readouts (Ptch1, Ptch2) versus pathway activators/modulators (Gas1, Cdon, Gli3, Gsk3b). The integration with ChIP-seq and ATAC-seq data (discussed in other results) further supports these interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Lhx2 binding was not detected at Gli1, Gli2, Gsk3b, Ptch2, or Smo loci by ChIP-seq, but differential chromatin accessibility was observed at Gli1, Gli2, and Gsk3b, suggesting indirect regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by integration of ChIP-seq and ATAC-seq datasets from E14.5 RPCs. The absence of Lhx2 binding peaks at these loci (C80) combined with the presence of differentially accessible regions (C81) provides evidence for indirect regulation. The methods for ChIP-seq and ATAC-seq analysis are described in detail including appropriate quality control measures (MAPQ filtering, blacklist exclusion, peak calling with Genrich). The criteria for associating peaks with genes (within introns or 10kb of gene body) are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "At E15.5, four days after tamoxifen treatment at E11.5, the Lhx2 CKO retina shows reduced eye size and decreased Hes1 expression, but proliferating RPCs remain abundant and tissue organization is not yet severely disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by immunohistological data showing PCNA and EdU labeling of proliferating cells (C42), absence of Lhx2 protein confirming successful knockout (C43), and expression patterns of multiple markers (Hes1, Cyclin D1, Pou4f2, Otx2) indicating that while some changes are present (reduced Hes1), overall tissue organization is maintained at this timepoint (C44-C45). This temporal characterization is important for interpreting the RNA-seq data collected at this stage, as it indicates the tissue is not yet severely disrupted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The temporally distinct interactions between Lhx2 and Shh signaling in retinal development (optic vesicle patterning vs. early neurogenesis) and the tissue-specific differences (retina vs. limb) illustrate how transcription factors and signaling pathways adapt to meet context-dependent requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretive claim (C9, C121) is supported by the comparison between the current findings showing Lhx2 regulates pathway competence in RPCs and previous work (C2) showing Lhx2 links the pathway to downstream targets during optic vesicle patterning without regulating the pathway itself. The comparison to limb development (C119-C120) where Lhx2 regulates Shh expression rather than responsiveness further illustrates context-specificity. However, this is primarily a synthesis and interpretation of findings rather than a novel experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Cdon has complex roles in early eye development including both promoting and inhibiting Shh signaling depending on context, and Lhx2 is proposed to establish RPC signaling competence by promoting Cdon and Gas1 expression, countered by Lrp2 in the ciliary epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the claims about Cdon's dual roles (C127-C132) and Lrp2's inhibitory function (C133-C135) are supported by citations to published literature, the proposed model integrating these findings with the current study (C136) is speculative. The model is logical and consistent with available data, but direct experimental evidence for the proposed spatial regulation (Lhx2 promoting Cdon/Gas1 throughout retina, Lrp2 countering in periphery) is limited. The observation that Gas1 and Cdon are downregulated in peripheral retina at E15.5 in the CKO supports part of this model, but more direct testing would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Gas1 is expressed in nascent RPE during optic vesicle patterning and Gas1 KO mice show RPE to neural retina transformation, but this phenotype does not clearly phenocopy direct Shh signaling disruption, leaving the relationship between Gas1 and Shh signaling in early eye development unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims accurately represent published findings about Gas1 expression and function during early eye development (C137-C140), supported by appropriate citations. The acknowledgment of uncertainty (C141) is appropriate given the discrepancies between Gas1 KO phenotypes and direct Shh manipulation phenotypes. This represents a fair assessment of the literature and identifies an area requiring further investigation. However, this is primarily a literature review rather than a novel finding from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Individual genetic reductions in Smo or Gli2 do not show haploinsufficiency, but their combined reduction could cause synthetic haploinsufficiency, and Gli1 inactivation alone has minimal developmental effects, suggesting Lhx2's subtle regulation of multiple components could confer optimal signaling levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about individual gene haploinsufficiency (C105, C108) are supported by appropriate citations to published literature. The speculation about synthetic haploinsufficiency (C106) is reasonable and supported by the example of Gli2 heterozygotes showing increased sensitivity to Smo inhibition (C107). The data showing no effect of Gli1 KO on pathway gene expression (C108, Figure 9B) supports the context-specific nature of Gli1's role. The synthesis into a model of subtle multi-component regulation (C109) is a reasonable interpretation of the collective data, though direct experimental testing of this specific hypothesis would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The canonical Shh signaling pathway involves Shh binding to Patched receptor, relieving Smoothened inhibition, leading to Gli2/Gli3 conversion from repressors to activators, with Gli1 contributing to feedback regulation and pathway readout genes serving as indicators of signaling activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established knowledge about the Shh signaling pathway, appropriately cited to authoritative reviews and primary literature (C10-C20). The description is accurate and provides necessary background for interpreting the experimental findings. The inclusion of pathway diagram (Figure 1A) aids understanding. This background information is appropriately presented and accurately represents the current understanding of Shh signaling mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "In retinal development, Shh signaling is initially required for optic vesicle patterning, then occurs in RPCs at neurogenesis onset as a central-to-peripheral wave coupled to RGC production, with the coupling maintained even when RGC production is delayed, indicating Shh availability sets timing because RPCs are competent prior to exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about the two phases of Shh signaling in eye development (C21-C22) are well-supported by citations to published literature. The observation about maintained coupling when RGC production is delayed (C23) and the inference about RPC competence (C24) are appropriately cited and provide important context for the current study's focus on how this competence is established. This background effectively motivates the research question addressed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Lhx2 is a multifunctional regulator of retinal development with roles in optic vesicle patterning, lens specification, optic cup morphogenesis, and Muller glia formation, acting through interactions with multiple signaling pathways and dynamic chromatin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide comprehensive background on Lhx2 function, appropriately supported by extensive citations to published literature (C25-C35). The description of Lhx2's multifunctional nature, its expression pattern, its various developmental roles, and its interactions with signaling pathways (BMP, FGF, Notch) in retina and other tissues provides essential context for understanding the current study. The emphasis on contextual and dynamic chromatin interactions (C35) is particularly relevant for interpreting the ChIP-seq and ATAC-seq data presented in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Previous work showed that RPC-directed Lhx2 inactivation causes reduced proliferation, progenitor pool depletion, and RGC overproduction, phenotypes similar to Shh signaling inhibition, motivating investigation of a connection between Lhx2 and Shh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite previous work by the authors (C36, C40) and others (C37) to establish the rationale for the current study. The observation that Lhx2 CKO phenotypes resemble Shh inhibition phenotypes (C37) provides strong motivation for investigating a functional connection. The background on Gli1 as a Shh-dependent but functionally dispensable gene (C38-C39) justifies its use as a pathway readout. This effectively establishes the scientific rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C51",
+      "C97"
+    ],
+    "result": "A biologically constrained computational model of turtle visual cortex was constructed with 100,000 neurons (93% excitatory, 7% inhibitory) in a 2\u00d72 mm network. Model parameters including membrane properties, spatial connectivity profiles, and synaptic strength distributions were fitted to experimental data from turtle cortex, with excitatory synaptic conductances following a lognormal distribution resulting in approximately two strong connections per excitatory neuron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C51, and C97 collectively describe a well-constrained model with parameters systematically fitted to experimental measurements from Hemberger et al., 2019. The fitting procedures are explicitly described, distributions are shown in figures, and the model architecture is clearly specified. The approach of constraining to biological data while maintaining otherwise random connectivity is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C55",
+      "C17",
+      "C88"
+    ],
+    "result": "The biologically constrained model generates reliable sequences from single spike triggers in 94.6% of 6000 simulations without fine-tuning. The probability of generating inhibitory followers in low-activity simulations (74% for \u22651 follower, 19% for \u226510 followers) matches experimental data (77% and 20%, respectively), and the model captures the experimental finding that 80% of excitatory neurons trigger sequences when activated in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C55, C17, and C88 demonstrate strong quantitative agreement between model predictions and experimental observations. The high success rate (94.6%) across 6000 simulations with different network instantiations and activity levels, combined with close matching to experimental probabilities, provides robust evidence that the model captures key biological phenomena. Statistical comparisons to experimental data strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C27",
+      "C58",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "Strong connections (top 0.3% of distribution) are necessary and sufficient for sequence propagation, while weak connections modulate reliability. Excitatory spikes are primarily driven by single strong connections in one-to-one spike transfers, whereas inhibitory spikes result from convergence of multiple weak connections. Networks with only strong connections produce sequences but with excess followers, while weak-only networks require much stronger drive and produce no sequences (0% probability of \u226510 followers vs. 75% for strong-only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C22-C27, C56-C61, and C63 are supported by systematic ablation experiments comparing full, strong-only, and weak-only connectivity models. The motif analysis (C22-C23) provides mechanistic insight, and the distribution analysis (C24) shows over-representation of strong connections in spike transfers. The input-output curve analysis (C60-C61) quantifies how weak connections modulate network dynamics. The convergence of multiple independent analyses strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Sequence properties vary systematically with spontaneous activity levels. Follower count peaks at low firing rates (0.007 spk/s), with sequences lasting >150 ms and reaching network boundaries (2\u00d72 mm). Excitatory-to-excitatory spike transfers show 6-8 ms delays matching experimental measurements, while excitatory-to-inhibitory transfers show consistently shorter delays. In high-activity regimes, inhibitory followers display near-random temporal jitter. Approximately 18% of model followers fall outside the experimental recording frame (1.3\u00d71.3 mm MEA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 describe detailed temporal and spatial characteristics of sequences with specific quantitative measurements. The spike transfer delays (C20) match experimental data from Hemberger et al., 2019, providing validation. The prediction about followers outside the MEA frame (C14) is a reasonable inference from the model's spatial extent. The systematic variation with activity level (C15-C16) is well-documented across 6000 simulations. The temporal jitter observation (C19) is directly measured from simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C54",
+      "C62",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Sequences decompose into sub-sequences corresponding to sub-networks of strongly connected neurons that emerge without hand-tuning. Strong connections (top 0.3%) are more frequent within than between sub-networks. The exact spiking composition varies trial-to-trial, with entropy analysis showing two equally likely outcomes (full failure or partial propagation) at low firing rates, rising toward maximum entropy (2 bits) at higher activity where all four outcomes become equally likely. The network state can selectively activate or deactivate sub-sequences independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C54, C62, C64-C65, C67-C69 describe emergent sub-network structure identified through k-modes clustering based solely on activity patterns, then validated by mapping onto connectivity. The finding that strong connections are enriched within clusters (C28) provides mechanistic support. The entropy analysis (C67-C68) quantifies the flexibility of sub-network activation. The emergence without fine-tuning (C65) is important for generalizability. The clustering methodology is appropriate for binary activation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C52",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "External inputs to gate neurons (defined as neurons with shortest median spike delay within each sub-network) can effectively control sequence propagation. A single external inhibitory spike halves sub-network activation probability in 74% of simulations and completely halts it in 26%. A single external excitatory spike doubles activation probability in 55% of simulations. Halting is most effective in a narrower temporal window (70 ms) than facilitation (100 ms), with the halting window having a sharp boundary determined by the gate's expected spike time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C52, C70-C72 demonstrate effective gating with specific quantitative effects across 2000 simulations. The operational definition of gate neurons (C70) is clear and activity-based. The temporal window measurements (C71-C72) are well-characterized across multiple networks. The high effectiveness of single spikes (C29-C30) is remarkable and well-documented. The asymmetry between halting and facilitation windows (C71-C72) provides mechanistic insight into adaptive dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C53",
+      "C77",
+      "C78"
+    ],
+    "result": "Sequences from different trigger neurons rarely share followers (3.12% probability for \u22651 shared follower, 0% for \u226511), but interact reliably when coactivated. Coactivation produces sub-linear summation of followers, with combination-specific followers representing approximately half of all followers. Core followers fire early in sequences while combination-specific followers activate later. These interactions are reliable across trials, defining groups of followers specific to combined trigger activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C53, C77-C78 describe systematic analysis of multi-trigger interactions across 5000 random pairs. The low overlap probability (C31) combined with reliable interactions (C32, C78) demonstrates specificity. The sub-linear summation (C32) is quantified with slope 0.85. The temporal segregation of core vs. combination-specific followers (C34) is measured across 532,208 pooled followers. The reliability across trials (C78) is central to the computational interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Contextual neurons can selectively route activity between sub-networks. Testing 2000 contextual neurons revealed that 87.8% cause lateral inhibition of both sub-networks, 6.7% cause lateral excitation, and approximately 6% can selectively determine which sub-network becomes active. This suggests that approximately 5000 contextual neurons in the 2\u00d72 mm network can influence propagation paths, enabling a large reservoir for computation through routing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C74-C76, C79 describe systematic testing of contextual neuron effects with clear quantitative results. The predominance of lateral inhibition (C35, 87.8%) is well-documented. The small percentage of selective routing neurons (C36, ~6%) is precisely measured. The extrapolation to ~5000 influential neurons (C37) is a reasonable calculation based on network size. The symmetry observation (C76) and its interpretation as reflecting random connectivity is appropriate. The routing interpretation (C79) follows logically from the selective effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The model predicts that sequences should be detectable in vivo in turtle cortex at higher firing rates, but mainly within the pyramidal layer. In high-activity conditions, sequences are predicted to be composed mainly of excitatory followers, while inhibitory followers produce less reliable and temporally jittered responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are predictions based on model simulations at different activity levels. The prediction about pyramidal layer detection (C40) follows from the observation of high temporal jitter in inhibitory followers at high activity (C19). The prediction about sequence existence in vivo (C41) is based on systematic exploration of activity levels. These are testable predictions that follow logically from model results, though they remain to be experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Despite single spikes reliably triggering many others, the model never exhibits explosive amplification. Multiple excitatory spikes produce sub-linear summation of responses, likely reflecting frequent lateral inhibition. This suggests sequences operate in a regime where local inhibition balances excitatory signals, reminiscent of 'precise balance' within short temporal windows, though this balance was not explicitly constructed in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe emergent balance properties observed across all simulations. The absence of runaway excitation (C83) is a robust observation. The sub-linear summation (C84) is quantified in Figure 6D with slope 0.85. The interpretation as balanced regime (C85) is reasonable given the lateral inhibition data (Figure 6H). The connection to 'precise balance' theory (C86) appropriately cites Bhatia et al., 2019 and notes this emerged without explicit construction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C108"
+    ],
+    "result": "The model makes functional predictions about orientation tuning in turtle cortex: like-tuned neurons should share strong connections, and neuronal tuning may be expressed as logical operations on tuning properties of other neurons in the recurrent circuit. The model mechanistically explains experimental observations of non-additive effects from multiple-trigger activation as interactions between sub-networks of strong connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C105, C108 make predictions about functional properties (orientation tuning) that were not directly modeled. While C105 provides a mechanistic explanation for experimental observations (Hemberger et al., 2019), the predictions about orientation tuning (C103) and logical operations (C108) are speculative extensions. The model does not include orientation selectivity, so these predictions, while plausible, require experimental validation. The mechanistic explanation (C105) is better supported by the sub-network analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The model suggests that reliable propagation may involve far fewer neurons than predicted by synfire models, and that sequences share properties with neuronal avalanches while enabling reliable, fine-grained routing rather than stochastic population-level mechanisms. Network states that remain constant across trials should produce sequence statistics differing from pure branching-process statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C89, C92-C93 make theoretical connections to synfire chains and avalanche frameworks. The contrast with synfire chains (C87) is supported by the sparse connectivity findings (\u22642 strong connections). The connection to avalanches (C89) is appropriate given the single-spike triggering without runaway excitation. The prediction about deviations from branching statistics (C92) follows logically from the gating results. Claims C90-C91 cite relevant experimental work on criticality and avalanches in turtle cortex, providing context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C94",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104"
+    ],
+    "result": "The manuscript cites extensive prior experimental work documenting single-spike effects in various cortical systems, long-tailed distributions of connection strengths across species, and functional roles of strong connections in sensory processing and coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13, C38-C39, C43-C49, C94, C99-C102, C104 appropriately cite relevant prior work to contextualize the study. These citations appear accurate and relevant, covering single-neuron effects (C9-C10, C38-C39), turtle cortex anatomy and physiology (C11-C12, C102), sequences in various systems (C13), and long-tailed connectivity distributions (C43-C47). The citations support the biological plausibility of model assumptions and relate findings to broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C80",
+      "C81",
+      "C82",
+      "C109",
+      "C110"
+    ],
+    "result": "The model establishes a mechanistic link between sparse firing, spiking sequences, and long-tailed connection strength distributions, providing a computational interpretation of sequences as reliable but flexible routing of single spikes over strongly connected neurons. This mechanism may underlie flexible trajectory sequence generation in hippocampus and suggests cortical computations rely on reliable yet specific recurrent interactions between sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C80-C82, C109-C110 synthesize the main conceptual contributions. The mechanistic link (C109) is well-supported by the convergence of findings about strong connections, sub-networks, and gating. The computational interpretation (C110) follows from the routing results. The connection to hippocampal replay (C81) is speculative but plausible. The proposed routing mechanism (C82) is supported by the gating experiments. These represent appropriate synthesis of the findings into broader computational principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "The model acknowledges limitations including species-specific variations, unexplored connectivity features (motifs, layer-specific probabilities), and potential nonrandom features in turtle cortex (axonal projection biases, dendritic connectivity gradients, plasticity-derived structures) that might affect sequence propagation and routing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C98 appropriately acknowledge model limitations and simplifications. The recognition of species differences (C95), unexplored connectivity features (C96), and potential structured connectivity (C98) demonstrates appropriate scientific caution. These limitations are clearly stated and appropriately qualified, noting that the model's random connectivity beyond spatial profiles and lognormal distributions is a simplification of biological reality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The temporal windows for effective gating (approximately 100 ms) are about twice the standard deviation of follower spike times (approximately 50 ms), suggesting that parallel running sequences may have sufficient temporal precision to interact consistently across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 make a quantitative observation about temporal scales and draw a reasonable inference. The 2:1 ratio between gating windows and spike time variability (C106) is directly measured from simulations. The prediction about parallel sequence interactions (C107) is a logical extension supported by the temporal precision measurements, though it cites mouse auditory cortex work (Dechery and MacLean, 2017) as an example where this might be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Sub-network interactions do not follow any particular trend, suggesting they depend on the particular realization of random connectivity in the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 describes the variability in sub-network interactions observed across different network instantiations. This is consistent with the model's random connectivity and is appropriately interpreted as reflecting the stochastic nature of network structure. The observation is supported by Figure 5\u2014figure supplement 1C showing variable interaction patterns.",
+    "result_type": "MINOR"
+  }
+]

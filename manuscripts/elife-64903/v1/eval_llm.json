@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "unc-42 is expressed in 40 neurons across 15 distinct neuron classes in the adult C. elegans nervous system, with expression initiating during embryonic development and maintained throughout larval and adult stages. Expression is restricted to the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C16 are supported by comprehensive expression analysis using CRISPR-tagged reporters and NeuroPAL landmark strains (Figure 1). The temporal and spatial expression patterns are well-documented with quantitative data across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "All 15 unc-42-expressing neuron classes are synaptically interconnected more than expected by chance, despite lacking obvious lineage relationships or exclusive localization to a single nerve ring stratum. This enrichment is statistically significant (p=5.78\u00d710\u207b\u2075) by NDGE analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C23 are supported by connectome analysis, statistical testing using two independent methods (Arnatkevi\u010di\u016bt\u0117 approach and NDGE), and anatomical data (Figures 1D-F). The statistical significance is rigorously established with appropriate null models accounting for membrane adjacency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "unc-42(e419) mutants display behavioral defects matching those observed after functional disruption of unc-42(+) neurons, demonstrating that unc-42 is essential for proper neuronal function. The mutants are not completely immobile, showing selective behavioral deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by WormTracker behavioral analysis (Figure 2, Supplementary file 4) showing specific locomotory defects that phenocopy neuron-specific ablations. The comprehensive behavioral profiling demonstrates both affected and unaffected locomotory components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Loss of unc-42 affects expression of neurotransmitter pathway genes (unc-17/VAChT, glutamate receptors, cholinergic receptors, tyramine-gated channels) in a cell type-specific manner across unc-42(+) neurons. Effects are often partially penetrant, indicating unc-42 is not the sole determinant of these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by extensive reporter expression analysis (Figures 3-5) with statistical testing. The partial penetrance is appropriately acknowledged and quantified, suggesting cooperative regulation with other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "unc-42 controls expression of multiple neuropeptides and neuropeptide receptors in the unc-42(+) circuit. Loss of specific neuropeptides/receptors (flp-18, nlp-15, npr-9, npr-11, flp-21, ntr-2) phenocopies unc-42 behavioral defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 are supported by reporter expression analysis (Figure 6) and behavioral phenocopying experiments (Figure 7). The connection between molecular defects and behavioral phenotypes is strengthened by previous literature on these neuropeptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "All unc-42-expressing neurons are generated normally in unc-42 null mutants, express panneuronal markers normally, and are positioned correctly relative to wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by NeuroPAL analysis with quantitative assessment of soma positions (Figure 8, Figure 8\u2014figure supplement 1). The statistical analysis shows no significant differences in neuronal positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "unc-42 is required for proper axon pathfinding in multiple neuron types, including both unc-42(+) neurons (AVH, ASH) and some unc-42(-) neurons (OLL, AWA, AWB, HSN, PVQ, PVP). The non-autonomous effects may be explained by unc-42 control of unc-6/Netrin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by confocal imaging data (Figure 8) showing axon extension defects. The non-autonomous effects are documented with appropriate controls, and the unc-6/Netrin hypothesis is supported by later experimental data (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Electron microscopy analysis reveals that while neuronal process adjacency is maintained in unc-42 mutants, chemical synaptic connectivity is severely reduced in unc-42(+) neurons. The synaptic defects cannot be explained by loss of adjacency alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by detailed electron microscopy reconstruction (Figure 9) with quantitative analysis of both adjacency and synaptic contacts. The comparison between wild-type and mutant demonstrates specific synaptic defects despite maintained process positioning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "unc-42 controls expression of multiple innexin gap junction proteins (inx-18a, inx-19, unc-7, inx-6) in unc-42(+) neurons. Loss of innexins phenocopies unc-42 behavioral defects, indicating disrupted electrical synaptic connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by reporter expression analysis (Figure 10) and behavioral phenocopying (Figure 7). The convergence of molecular and behavioral evidence strongly supports the conclusion about electrical synapse disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "unc-42 controls expression of the unc-6/Netrin guidance cue in command interneurons. unc-6 null mutants show axon outgrowth defects similar to unc-42 mutants, potentially explaining non-autonomous unc-42 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by reporter expression analysis (Figure 11A) and phenotypic comparison between unc-6 and unc-42 mutants. The mechanistic link between unc-42, unc-6 expression, and axon guidance is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "unc-42 controls expression of ten cell surface molecules with roles in axon pathfinding and synapse formation. Loss of specific molecules (nlg-1, rig-6, ncam-1, rig-3) phenocopies subsets of unc-42 locomotory defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 are supported by comprehensive reporter expression analysis (Figure 11) and behavioral phenocopying (Figure 7). The cell-type-specific expression patterns and behavioral correlations strengthen the functional relevance of these targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "UNC-42 binding sites are enriched in the cellular transcriptomes of all 15 unc-42-expressing neuron classes, including genes shown to be unc-42-dependent. This strongly suggests UNC-42 directly activates terminal gene batteries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by computational analysis combining single-cell transcriptomics and phylogenetic footprinting (Figure 12A). The enrichment analysis uses appropriate statistical testing (hypergeometric test) and is consistent with direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "UNC-42 requires neuron-type-specific cofactors (UNC-3, CFI-1, FAX-1) to activate distinct gene batteries in different command interneuron types. Binding site co-enrichment and genetic interactions support cooperative regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C103 are supported by binding site co-enrichment analysis (Figure 12B) and genetic interaction experiments (Figure 3) showing synergistic effects in double mutants. The combinatorial code model is well-supported by both computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "unc-42 and lim-4 cooperate to control cholinergic fate in RMF and RMH neurons. Single mutants show mild defects, while double mutants show strongly enhanced defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by genetic interaction analysis (Figure 3) showing synergistic effects in unc-42; lim-4 double mutants. The enhancement in double mutants demonstrates cooperative function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "unc-42 cooperates with hlh-34 to specify AVH neuron identity. hlh-34 single mutants phenocopy unc-42 defects, and double mutants show enhanced phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by CRISPR-engineered hlh-34 mutant analysis (Figure 13A-C) showing AVH differentiation defects and genetic enhancement in double mutants. The exclusive expression of hlh-34 in AVH strengthens the specificity of this interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "unc-62/Meis and ceh-20/Pbx cooperate with unc-42 in AIB neurons. Mutants in these genes phenocopy unc-42 AIB differentiation defects, including loss of glutamatergic identity and innexin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by expression pattern analysis and phenotypic characterization (Figure 13D-I). The co-expression exclusively in AIB and phenocopying of multiple unc-42-dependent features support cooperative function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "ceh-24 cooperates with unc-42 in SIB neurons and is expressed in SMB (not SMD as previously reported). ceh-24 mutants show SMB differentiation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by NeuroPAL-based cell identification and phenotypic analysis (Figure 13\u2014figure supplement 1). The correction of previous misidentification demonstrates the value of improved cell identification tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "UNC-42 activity specificity is determined by cell-type-specific cofactor collaboration. Some cofactors (ceh-24, cfi-1, unc-3, fax-1) are themselves regulated by unc-42, while others (hlh-34, unc-62, ceh-20) are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 are supported by comprehensive cofactor expression analysis (Figure 13\u2014figure supplement 2, Figure 14). The differential regulation of cofactors suggests both feedforward and parallel regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Several unc-42 cofactors (ceh-24, lim-4, unc-3) are also expressed in synaptically connected neurons beyond the unc-42(+) circuit. These factors show statistically significant enrichment in interconnected neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 are supported by expression pattern analysis combined with connectome analysis (Supplementary file 1, Figure 1F). The statistical significance of connectivity enrichment for multiple transcription factors suggests a general principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "The C. elegans connectome can be deconstructed into overlapping groups of interconnected neurons defined by 'circuit organizer transcription factors'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 is a conceptual synthesis supported by the comprehensive analysis of multiple transcription factors (unc-42, ceh-24, lim-4, unc-3) showing enrichment in synaptically connected neurons (Figure 14). This represents a novel organizing principle for understanding circuit assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "unc-42 acts as a terminal selector in each neuron type where it is expressed, controlling terminal differentiation without affecting neuron generation or panneuronal features. Loss of unc-42 or its targets phenocopies neuron-specific ablations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by comprehensive molecular and behavioral analysis throughout the manuscript. The terminal selector function is demonstrated by control of multiple identity features, continuous expression, and behavioral consequences matching ablation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "unc-42 interacts with different cofactors in different neuron types to specify distinct target genes. Effects show variable penetrance and expressivity, with enhancement in double mutants, reflecting distinct transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 are supported by genetic interaction data (Figures 3, 13) and quantitative analysis of marker expression defects. The variable penetrance is appropriately documented and interpreted as evidence for cooperative regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "UNC-42 may act through cooperative DNA binding with cofactors (like TTX-3/CEH-10) or as part of a transcription factor collective (like in dopaminergic neurons). The variable penetrance suggests UNC-42 acts as a collective in most neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C144 present mechanistic hypotheses based on analogy to other systems. While the variable penetrance data (C137) supports the collective model, direct evidence for the mechanism of UNC-42 action (cooperative vs. collective binding) is not provided. This remains an inference requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "unc-42 may facilitate intra-strata connectivity in the nerve ring and coordinates both circuit assembly and signaling within the unc-42(+) circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 are supported by the observation that unc-42(+) neurons traverse distinct nerve ring strata yet are interconnected (C20), combined with the comprehensive demonstration of unc-42 effects on both wiring (C4, C66) and signaling molecules (C3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Multiple transcription factors show enriched expression in synaptically connected neurons and act as terminal selectors. Examples include unc-3 and unc-42 defining overlapping pathways from sensory input to motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 are supported by statistical analysis of transcription factor expression patterns (C23, C125, C127) and circuit diagrams showing overlapping expression domains (Figure 14B). The integration of multiple terminal selectors into circuit organization is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Association of transcription factors with synaptic connectivity is evident across nervous systems (invertebrates to vertebrates). Examples include HOX genes, Hoxc8, Shox2, Otx2, Dbx1, Phox2, and Fruitless. Most are homeobox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C161 are supported by citations to published literature demonstrating similar principles in other organisms. The comparative analysis strengthens the generality of the circuit organizer concept, though the depth of analysis varies across examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C24",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57",
+      "C62",
+      "C70",
+      "C71",
+      "C79",
+      "C80",
+      "C93",
+      "C96",
+      "C97",
+      "C105",
+      "C115",
+      "C120"
+    ],
+    "result": "Background information on unc-42 and related genes from previous literature, including isolation, homology, expression patterns, and functions of various genes in the circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C11, C24, C37, C39-C41, C46, C48-C53, C57, C62, C70-C71, C79-C80, C93, C96-C97, C105, C115, C120) are appropriately supported by citations to previous literature. They provide essential context for the current work.",
+    "result_type": "MINOR"
+  }
+]

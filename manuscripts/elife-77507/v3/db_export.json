@@ -1,0 +1,1306 @@
+{
+  "submission": {
+    "id": "13c7cdcf-d4d1-487c-8b5a-25a9a0af9c3e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:38:07.991067Z",
+    "updated_at": "2025-12-03T19:38:07.991067Z"
+  },
+  "content": [
+    {
+      "id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "submission_id": "13c7cdcf-d4d1-487c-8b5a-25a9a0af9c3e",
+      "content_type": "manuscript",
+      "content_text": "# Interrogating the precancerous evolution of pathway dysfunction in lung squamous cell carcinoma using XTABLE\n\n## Authors\n\n- Matthew Roberts<sup>1</sup>\n- Julia Ogden<sup>2</sup>\n- AS Mukarram Hossain<sup>1</sup>\n- Anshuman Chaturvedi<sup>2</sup>\n- Alastair RW Kerr<sup>1</sup> ([ORCID: 0000-0001-9207-6050](https://orcid.org/0000-0001-9207-6050))\n- Caroline Dive<sup>1</sup>\n- Jennifer Ellen Beane<sup>5</sup>\n- Carlos Lopez-Garcia<sup>2</sup> ([ORCID: 0000-0001-9848-8216](https://orcid.org/0000-0001-9848-8216)) \u2020\n\n### Affiliations\n\n1. Cancer Biomarker Centre, Cancer Research UK Manchester Institute, The University of Manchester Macclesfield United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))\n2. Cancer Research UK Lung Cancer Centre of Excellence Alderley Park United Kingdom\n3. Translational Lung Cancer Biology Laboratory, Cancer Research UK Manchester Institute, University of Manchester Macclesfield United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))\n4. Department of Histopathology, The Christie Hospital Manchester United Kingdom ([ROR:03nd63441](https://ror.org/03nd63441))\n5. Boston University School of Medicine Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLung squamous cell carcinoma (LUSC) is a type of lung cancer with a dismal prognosis that lacks adequate therapies and actionable targets. This disease is characterized by a sequence of low- and high-grade preinvasive stages with increasing probability of malignant progression. Increasing our knowledge about the biology of these premalignant lesions (PMLs) is necessary to design new methods of early detection and prevention, and to identify the molecular processes that are key for malignant progression. To facilitate this research, we have designed XTABLE (Exploring Transcriptomes of Bronchial Lesions), an open-source application that integrates the most extensive transcriptomic databases of PMLs published so far. With this tool, users can stratify samples using multiple parameters and interrogate PML biology in multiple manners, such as two- and multiple-group comparisons, interrogation of genes of interests, and transcriptional signatures. Using XTABLE, we have carried out a comparative study of the potential role of chromosomal instability scores as biomarkers of PML progression and mapped the onset of the most relevant LUSC pathways to the sequence of LUSC developmental stages. XTABLE will critically facilitate new research for the identification of early detection biomarkers and acquire a better understanding of the LUSC precancerous stages.\n\n## Introduction\n\nLung squamous cell carcinoma (LUSC) is a type of non-small cell lung cancer that accounts for 20\u201330% of all lung cancer cases (Chen et al., 2014; Sung et al., 2021; Bray et al., 2021). Despite being the second most frequent type of lung cancer (Torre et al., 2016), our knowledge regarding the biology of this disease as well as the therapeutic modalities to treat it remain far behind the most frequent type of lung cancer, lung adenocarcinoma (LUAD) (Hirsch et al., 2016; Khuder, 2001).\n\nLUAD genetics is dominated by mutations (that are often druggable) that activate the RTK/RAS pathway, including EGFR and KRAS mutations (The Cancer Genome Atlas Research Network, 2012; Jamal-Hanjani et al., 2017). However, the genetic landscape of LUSC is more complex, with multiple pathways altered in subsets of patients and a lack of actionable mutations (Campbell et al., 2016; The Cancer Genome Atlas Research Network, 2012; Kim et al., 2014), precluding the development of new therapies. Hence, the only pharmacological therapies available to treat LUSC patients are immune checkpoint inhibitor monotherapy or in combination with chemotherapy (Mok et al., 2019; Paz-Ares et al., 2018; Weinberg and Gadgeel, 2019). Furthermore, the National Lung Cancer Matrix Trial and The Lung Master Protocol, the largest personalized medicine trials in lung cancer, have not shown clear therapeutic benefits with targeted agents in LUSC (; Middleton et al., 2020; Redman et al., 2020). LUSC also has a worse prognosis than LUAD independent of stage at detection, with a 5-year overall survival (OS) of 6.2% for patients diagnosed with distant metastasis (9.5% for LUAD). However, patients diagnosed with localized disease are eligible for curative surgery and the 5-year OS is 50% (National Cancer Institute and DCCPS, 2018). Therefore, early detection is currently the most valuable tool to prevent deaths by LUSC as evidenced by several ongoing programmes of lung cancer early detection (Crosbie et al., 2019a; Crosbie et al., 2019b; Aberle et al., 2011). These initiatives make use of low-dose CT scans in high-risk populations, but in spite of the frequent detection of localized lung cancer eligible for resection with curative intent, 40% of early diagnosed patients die within 5 years.\n\nLUSC progresses through a series of premalignant stages characterized by alterations of the normal bronchial epithelium (Figure 1; Ishizumi et al., 2010; Kadara et al., 2016; Thakrar et al., 2017; Pennycuick et al., 2020). These endobronchial premalignant lesions (PMLs) are classified as low-grade (squamous metaplasia, mild and moderate dysplasia) and high-grade (severe dysplasia, and carcinomas in situ [CIS]) (Figure 1). However, not all PMLs progress to LUSC. Although obvious differences exist between the multiple studies published on the topic, high-grade PMLs have a higher risk of progression than low grade, and high levels of chromosomal instability (CIN) are also predictive of progressive PMLs (Thakrar et al., 2017; van Boerdonk et al., 2014; Teixeira et al., 2019; Merrick et al., 2016). This potential role of CIN as biomarker of PMLs progression has been observed in low- and high-grade PMLs (van Boerdonk et al., 2014; Teixeira et al., 2019). These reports showed that high levels of copy number variations was the best predictor of progressive PMLs (van Boerdonk et al., 2014; Teixeira et al., 2019) and that immune response is the most likely cause of regression as these lesions contained higher levels of immune infiltration (Pennycuick et al., 2020; Beane et al., 2019). These results are supported by transcriptomic analysis of PMLs that indicate immune evasion in the transition to invasiveness (Mascaux et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig1-v3.jpg)\n\n**Figure 1.:** PMLs are typically classified as normal epithelium (including hyperplasia), low-grade and high-grade. Two studies (Mascaux et al., 2019, and Beane et al., 2019) carried out gene expression analysis of multiple developmental stages, whereas Merrick et al., 2018, and Teixeira et al., 2019, focused on dysplasias (blue boxes) and carcinomas in situ (CIS) (pink boxes), respectively. The most relevant findings of each article are summarized in the figure. Error bars=50 \u00b5m.\n\nThe detection of PMLs cannot be carried out by routine patient imaging techniques such as CT or PET scans as the morphological change that they cause in the airway does not result in radiological contrast. Alternatively, ablation of high-grade PMLs detected by autofluorescence bronchoscopy using minimally invasive endoscopic procedures in high-risk populations is an innovative and interesting strategy to prevent LUSC (Guibert et al., 2016). Nonetheless autofluorescence bronchoscopy is an expensive and complex technique of limited use in large screening programmes. Therefore, simpler, more cost effective, and scalable methods of high-grade PML detection are needed to prevent deaths by LUSC. Improving the detection of PMLs requires a better understanding of their biology and the validation of adequate biomarkers of progressive lesions that can be translated into new technologies for large screening initiatives. Cell surface proteins, metabolites, nasal-based biomarkers, blood and sputum/bronchoalveolar lavage biomarkers are examples of biomarkers that can be used to improve and/or complement current diagnostic techniques (such as CT and PET scans) or develop new ones. A user-friendly application to interrogate gene expression from studies focusing on precancerous LUSC stages will enhance the advances in PML biology. However, such application does not exist.\n\nRecently, scientific interest in the biology of preinvasive LUSC stages has motivated the publication of several articles characterizing PML transcriptomes from various perspectives (Figure 1). Two reports published by Beane et al., 2019, and Mascaux et al., 2019, showed stage-by-stage gene expression analyses of PMLs. These studies provided the most detailed transcriptomic characterization of all PML stages so far and identified changes in the immune microenvironment associated with invasive transformation. Additionally, longitudinal studies by Beane et al., 2019, Merrick et al., 2018, and Teixeira et al., 2019, contained samples with known progression potential. Beane et al., 2019, identified molecular subtypes with specific biological traits whereas articles published by Merrick et al., 2018, and Teixeira et al., 2019 focused on gene expression of specific preinvasive stages (dysplasias and CIS, respectively) with the objective of identifying predictors of PML progression and the biomolecular processes involved (Figure 1). These studies provide a valuable source of gene expression data to identify candidate biomarkers for the detection of high-risk PMLs and/or early stage LUSC as well as to investigate the biology of premalignant LUSC progression.\n\nTransparent and straightforward accessibility to transcriptomic databases is a key requirement for the open science philosophy. Applications that integrate multiple databases focusing on the same biological and clinical problem, such as camcAPP (Dunning et al., 2017), allow cross-comparisons between independent studies, strengthen the robustness of results obtained, and allow the selection of high-confidence data. In this report, we provide an overall description of XTABLE (Exploring Transcriptomes of Bronchial Lesions) and provide examples of its functions. XTABLE is a new open-source application that will enable scientists to interrogate currently four LUSC PML transcriptomic datasets in a versatile manner that can be adapted to the needs of each researcher. Specifically, LUSC prevention and diagnosis are the main areas that can benefit the most from XTABLE, but its versatility and multiple functions lend themselves to the exploration of a variety of research questions. Without XTABLE, researchers would have to put together all the packages, data processing steps themselves for each analysis they wished to run. In this report, we provide an overall explanation of all the functions of XTABLE as well as a detailed description of the most important analysis modules, including two-group comparisons, gene-of-interest analyses, and interrogation of transcriptional signatures. Additionally, we explored the use of CIN-related signatures as a biomarker of progressive PMLs and mapped the onset of the most important LUSC pathways to its developmental stages.\n\n## Results\n\n### Description of the studies included in XTABLE\n\nFour datasets originating from four independent PML transcriptomic studies have been included in the XTABLE application (Figure 1, Table 1). Two datasets, GSE109743 (Beane et al., 2019) and GSE33479 (Mascaux et al., 2019), provide gene expression data of the developmental LUSC stages (with and without progression status information, respectively), whereas the remaining studies, GSE114489 (Merrick et al., 2018) and GSE108124 (Teixeira et al., 2019), focus on analysing specific PML stages (dysplasias and CIS, respectively) that have been followed up to establish their progressive, persistent, or regressive potential.\n\n**Table 1.**\n Description of the four cohorts included in XTABLE (Exploring Transcriptomes of Bronchial Lesions).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>GEO accession</th>\n      <th>PMID</th>\n      <th>Stages</th>\n      <th>Progression status known</th>\n      <th>Number of samples</th>\n      <th>Sample type</th>\n      <th>Transcriptome</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GSE33479</td>\n      <td>31243362</td>\n      <td>Multiple</td>\n      <td>No</td>\n      <td>122</td>\n      <td>Whole biopsies</td>\n      <td>Microarray</td>\n    </tr>\n    <tr>\n      <td>GSE109743</td>\n      <td>31015447</td>\n      <td>Multiple*</td>\n      <td>Yes</td>\n      <td>448Discovery cohort (197 Bx, 91 Br)Validation cohort (111Bx, 49 Br)</td>\n      <td>Whole biopsies and brushings</td>\n      <td>RNAseq</td>\n    </tr>\n    <tr>\n      <td>GSE114489</td>\n      <td>29997230</td>\n      <td>Dysplasias normal</td>\n      <td>Yes</td>\n      <td>63</td>\n      <td>Whole biopsies</td>\n      <td>Microarray</td>\n    </tr>\n    <tr>\n      <td>GSE108124</td>\n      <td>30664780</td>\n      <td>CIS</td>\n      <td>Yes</td>\n      <td>33</td>\n      <td>Microdissected</td>\n      <td>Microarray</td>\n    </tr>\n  </tbody>\n</table>\n\n_Bx: biopsies; Br: brushings.*This cohort includes neither carcinomas in situ (CIS) nor invasive carcinomas._\n\nDataset GSE33479 (Mascaux et al., 2019) comprises expression microarray analyses of 122 endobronchial biopsies of unknown progression status. Samples were obtained following autofluorescence bronchoscopy and as no enrichment or microdissection of the biopsy epithelium was carried out, variable levels of stromal component are present in samples. Although this results in dilution of epithelial signals, it has the advantage of providing information about the microenvironment as well as insights into the infiltrated immune cells. Dataset GSE109743 (Beane et al., 2019) consists of a transcriptomic analysis of whole PML biopsies with no purification of the epithelial compartment as well as bronchial brushings obtained from adjacent normal regions of the bronchial mucosa. Unlike GSE33479, GSE109743 used RNAseq and more importantly, includes the progression status for some lesions established by serial biopsies. Samples were classified as \u2018normal-stable\u2019 when they changed between normal, hyperplasia, and metaplasia, \u2018regressive\u2019 when they regress from dysplasia to a less severe dysplastic grade, or from dysplasia to normal/hyperplasia/metaplasia. Remaining samples were considered persistent/progressive. One advantage of this dataset is the large number of samples divided into a discovery and a validation cohort (Figure 1, Table 1). However, the representation of each PML stage is not homogeneous and CIS samples are not included.\n\nDatasets GSE114489 (Merrick et al., 2018) and GSE108124 (Teixeira et al., 2019) constitute a different type of study. Both make use of sequential biopsies to classify lesions according to their progression potential, but they differ in the stages included, the classification of progression status and sample processing. In GSE114489, the authors collected 63 baseline bronchial biopsies (with corresponding follow-up biopsies) and classified samples in four groups: 23 persistent dysplasias (dysplastic lesions with the same or higher severity scores in follow-up biopsies), 15 regressive dysplasias (dysplasias progressing to lower severity scores), 9 progressive non-dysplasias (biopsies with normal or hyperplastic morphologies that progress to more severe morphologies), and 16 stable non-dysplasias (normal or hyperplastic pathology that remains stable in follow-up biopsies). Microarray analysis of gene expression was performed on whole biopsies. The study published by Teixeira et al., 2019 (GSE108124) also makes use of follow-up biopsies to classify the progression potential of PMLs, but unlike GSE114489, GSE108124 focuses on CIS and progression is defined as the transition to invasive carcinomas in follow-up biopsies. RNA for gene expression microarray analysis was extracted from microdissected FFPE samples to enrich the epithelial component.\n\n### XTABLE access, interface, and functions\n\nXTABLE download can be carried out from https://gitlab.com/cruk-mi/xtable (copy archived at Roberts, 2022) following the instructions in the Materials and methods section and Video 1. XTABLE has been designed using the shiny app interface (see Materials and methods section) and its functions have been divided into 11 interrelated tabs that contain a specific function to interrogate each dataset separately (Figure 2A).\n\n![Video 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-video1.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-v3.jpg)\n\n**Figure 2.:** (A) Organization of all the functions in the XTABLE interface. The functions are interrelated and completing certain analyses requires the use of several functions. For instance, the GSEA and PA functions operate with gene lists obtained with the DEG function. (B) Workflow to obtain differentially expressed genes between two groups using the DEG function. The example shows groups of samples arranged by developmental stage to compare low-grade and high-grade premalignant lesions (PMLs) in the GSE33479 cohort. (C and D) Workflow to obtain differentially expressed genes between two groups using the DEG function. The two groups have been arranged by progression status using in the GSE114489 and GSE108124 cohorts, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp1-v3.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The example shows CIN70 scores in GSE109743 cohort. The CIN signature can be changed in the \u2018Pick signature\u2019 option and the sample classification used in the x-axis can be selected with the \u2018Plot x-axis\u2019 option.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig2-figsupp3-v3.jpg)\n\n#### Introduction\n\nDetailed description of the four studies, analyses performed in each tab, output formats, links to the four articles used in the application, bioinformatic packages used in the different functions and additional references.\n\n##### Dataset tab\n\nExplanation of the differences in methodology and progression status definitions between the four studies.\n\n### Load tab\n\nIn this tab, the user selects the database (GSE114489, GSE108124, GSE109743, or GSE33479) for subsequent interrogation. Due to specific differences between the four studies, only one dataset can be interrogated at a time. Since dataset GSE109743 contains a discovery and a validation cohort, as well as biopsies and brushings, preselection of the cohort and type of sample has to be carried out (Figure 2\u2014figure supplement 1).\n\n### CIN-score tab\n\nCIN has been identified as a good predictor of PML progression. Except for Teixeira et al., 2019, the other three studies do not provide genomic analyses that provide an estimate of the level of chromosomal alterations in the samples. Several gene expression signatures that correlate with CIN (CIN-scores) have been described in the literature (Teixeira et al., 2019; Carter et al., 2006). This CIN-score function returns a list of several CIN-scores (CIN70, CIN25, and CIN5, depending on the number of genes included in the signature) for all samples included in the study and a graph depicting CIN-scores in different sample types classified according to the sample classification defined in the study. A line marking a selected CIN-score threshold can be added for visualization purpose and to help determine appropriate thresholds for additional CIN-related analyses (Figure 2\u2014figure supplement 2).\n\n### DEG tab\n\nFunction to identify differentially expressed genes in comparisons of two groups of samples determined by the user. This function allows the selection of p-value and fold-change cutoffs for the analysis. Additionally, AUC is calculated for each gene to provide further confidence to the differentially expressed gene results and additional gene IDs are added at this stage that have been sourced from two separate datasets to maximize identification and discrepancies manually reviewed to improve downstream enrichment and pathway analyses.\n\n### GSEA and PA\n\nIn these two tabs, the user can carry out gene set and pathway enrichment analyses using multiple tools (goseq/ideal, fgsea/MSigDB, enrichR, gage/gageData, kegga/pathview, ReactomePA, Progeny, and Dorothea). This function operates with the list of differentially expressed genes obtained with the DEG function.\n\n### Signature\n\nThis function returns the gene expression values of a user-defined gene list. Lists can be manually entered or uploaded from a .csv file.\n\n### Deconvolution\n\nEstimation of immune and stromal component in samples from gene expression data using the ESTIMATE tool.\n\n### ROC\n\nThis function returns receiver operating characteristic (ROC) curves in a user-defined comparison of two groups of samples stratified by the expression of a gene or by CIN-scores.\n\n### Heatmap\n\nReturns a gene expression heatmap for genes selected by variance, user-defined gene signatures, and differentially expressed genes in the DEG tab.\n\n### PCA\n\nPrincipal component analysis (PCA) of all the samples included in each study. Several sample characteristics can be highlighted in the PCA plot including CIN signatures, progression status, and PML stage.\n\n### Gene\n\nStatistical analysis of expression of individual genes selected by the user. Several options for sample groupings are available.\n\n### Two-group differential expression analysis\n\nThe discovery of candidate biomarkers for the detection of PMLs at high risk of malignant progression and the interrogation of PML biology depends greatly on the comparison of gene expression profiles between lesions with known progressive or regressive potential. The four databases included in XTABLE contain different types of information which influence how users can interrogate these databases. To facilitate the interrogation of the four transcriptomic databases in a manner that allows the versatile stratification of samples, we have designed a module in XTABLE named DEG (Figure 2B\u2013D), that returns the differentially expressed genes in two user-defined groups of samples stratified by PML stage (GSE33479 and GSE109743), by known progression status (GSE109743, GSE114489, and GSE108124) or by CIN-score thresholds. In XTABLE, we have included three CIN-scores, named CIN70, CIN25 (Carter et al., 2006), and CIN5 (Teixeira et al., 2019). CIN70 and CIN25 have been reported in the literature, with the former containing the greatest number of genes for interrogation. CIN5 is derived from the signature used by Teixeira et al., 2019, and is reported to show a good correlation with progression in CIS lesions.\n\nSetting contrast groups by stage using DEG allows the comparison of two individual PML stages or the grouping of multiples stages into two groups. For instance, to compare the differential expression between low-grade and high-grade PMLs, we can define two contrast groups, one including metaplasia, low and moderate dysplasia (low-grade) and one including severe dysplasia and CIS (high-grade) using cohort GSE33479 (Figure 2B). After selection of the cohort and setting up the groups (Figure 2B), the application returns a downloadable list of differentially expressed genes with associated statistical information (Figure 2B), including AUC inferred by ROC analysis. ROC curves associated with each gene in a two-group comparison, useful for biomarker discovery, can be downloaded using the ROC tab (Figure 2\u2014figure supplement 3). Straightforward grouping of progressive and regressive samples can also be carried out by selecting the \u2018Progression\u2019 contrast in studies that provide this information (Figure 2C and D). To carry out two-group comparison by CIN signatures, the CIN-score tab provides a graphic visualization of the three CIN-scores for all samples to guide the selection of a CIN-score threshold for sample stratification (Figure 3A). A .csv file containing the CIN-scores of all samples can be downloaded. The selected CIN threshold can be used in the DEG tab to stratify CIN-high and low samples and retrieve a list of differentially expressed genes (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig3-v3.jpg)\n\n**Figure 3.:** The CIN-score function allows the graphic visualization of CIN-scores for all samples in a study. A CIN-score threshold selected by the user can be depicted on the graph (red dotted line). The CIN-score threshold selected by the user can be used in the DEG tab to define the two-group comparison. Stages 1\u20139 represent the nine developmental stages of LUSC as described in Mascaux et al., 2019 (GSE33479). CIN70, CIN25, and CIN5 can be used in the DEG tab. Sample sizes: n=12 (stage 7), n=13 (stages 1, 5, 6 and 8), n=14 (stages 2 and 9), n=15 (stages 3 and 4). Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\nThe list of differentially expressed genes obtained in the DEG tab can be automatically used in the GSEA and PA tabs to carry out gene set enrichment and pathway analyses. The GSEA tab allows the user to select the gene set enrichment tool (goseq, fgsea/MSigDB, enrichR, and gage), p-value cutoff, and the gene sets to analyse (Figure 4A). For instance, using the goseq function enables us to select one of the three Gene Ontology domains (biological process, cellular compartment, and molecular function) to consider for analysis (Figure 4A). Similarly, with the fgsea/MSigDB tool, the user can select the gene set of interest (Figure 4B). The PA tab operates in a similar manner using four pathway analysis tools (kegga/pathview, ReactomePA, Progeny, and Dorothea) (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig4-v3.jpg)\n\n**Figure 4.:** (A) Gene set enrichment analysis using the goseq tool of a list of differentially expressed genes obtained in the DEG tab. One of the three main Gene Ontologies (GO) can be selected for analysis at a time. After selection of a p-value, XTABLE (Exploring Transcriptomes of Bronchial Lesions) returns a downloadable list of GO with associated statistics. (B) Gene set enrichment analysis using the fgsea/MSigDB tool. This tool allows the selection of any collection included in MSigDB and returns a list of signatures with associated statistics. The example shows the selection of the C3_TFT_GTRD collection (Transcription Factor Targets annotated in the Gene Transcription Regulation Database).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig4-figsupp1-v3.jpg)\n\n### Gene-centred analysis and user-defined transcriptional signatures\n\nUsers can investigate their own gene or group of genes of interest in the application. To facilitate this type of gene-centred analyses, we have included the Genes and Signature functions in XTABLE.\n\nIn the Genes tab, the user can analyse the expression of one gene of interest. This tab is divided in three tools. The \u2018Expr\u2019 tool returns a downloadable list of the maximum (if multiple probes map to the same gene symbol) normalized expression values for the gene of interest in all samples (Figure 5A). The \u2018Indv_Contrast\u2019 function returns the differentially expressed gene analysis results including fold-change and statistical significance values for a given gene in all groups of samples compared with a predetermined reference group (Figure 5B). Sample grouping and reference group depend on the study. The \u2018Mult_Contrast\u2019 function works similarly to the \u2018Indv_Contrast\u2019 function but allows merging of up to four groups of samples and the reference group for statistical analysis can be determined by the user. The example in Figure 5C shows the evolution of MYC expression in four groups of samples that represent normal, low-grade PMLs, high-grade PMLs, and invasive carcinomas (Figure 5C). The fold-changes and p-values are the result with the comparison with the \u2018normal\u2019 group (normal normofluorescent, normal hypofluorescent, and hyperplasia) as the reference group (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig5-v3.jpg)\n\n**Figure 5.:** (A) The \u2018Expr\u2019 function (under the Gene tab) retrieves the normalized expression values for a gene of interest in all samples. (B) The \u2018Indiv_Contrast\u2019 tool compares the expression of a gene of interest in groups of samples with a predetermined group. In the example, the function compares the expression of MYC in all stages with the normal normofluorescent group in GSE33479. (C) The \u2018Mult_Contrast\u2019 tool enables the grouping of samples in up to four groups (contrasts) and statistical comparison with a reference group determined by the user. The example shows the analysis of MYC expression in four groups of samples from the GSE33479 cohort (normal, low-grade, high-grade, and invasive carcinomas). The \u2018normal\u2019 group is set as reference group for statistical analysis. (D) Example of the use of the Heatmap tab to interrogate to visualize the expression of gene sets in premalignant lesions (PMLs). Gene sets can be defined by the user (as in the example) and are shown using the stage classification and entered manually or from a .csv file. Alternatively, the heatmap can be generated from a list of differentially expressed genes from the DEG tab or a selected number of genes filtered by variance. The three options can be selected in the scroll-down menu. In the example shown, the heatmap shows all microarray probes associated to each gene symbol. p-Values calculated using Welch\u2019s t-test.\n\nTo facilitate the interrogation of biological processes driving PML progression, XTABLE also allows the interrogation of transcriptomic signatures using multiple functions. The Signature tab returns a list of normalized expression values and a graph with the signature scores (sum of log-normalized expression values) for a gene set determined by the user in all samples of the selected study.\n\nThe Heatmap tab returns a heatmap that displays the expression values in all samples in a selected study. The gene set shown in the heatmap can be selected using three options from the scroll-down menu. With the \u2018Signature\u2019 option, the user can manually enter or upload a list of genes. The example in Figure 5D shows a heatmap generated from the GSE33479 dataset with five transcriptional targets of SOX2, an important LUSC driver. The \u2018DEG\u2019 option automatically selects the list of genes differentially expressed in the DEG tab. Finally, the \u2018Variance\u2019 option selects genes using a user-defined number of genes with the highest variance.\n\n### Assessment of the correlation between CIN signatures and progression potential\n\nTwo studies have highlighted the potential role of CIN as predictor of low-grade (van Boerdonk et al., 2014) and high-grade (Teixeira et al., 2019) PMLs progression in LUSC. XTABLE can be used to explore this correlation in the four cohorts, identify genes and pathways altered by CIN, and involved in driving it. Furthermore, XTABLE enables the user to carry out cross-comparisons between cohorts to identify high-confidence signals. One interesting example of this cross-comparisons is the correlation between CIN-scores and progression in different cohorts using the CIN-score and ROC tabs. Cohort GSE108124 focuses on CIS lesions with known progressive potential. As reported in that study (Teixeira et al., 2019), we found that the CIN5 signature segregates progressive and regressive lesions (AUC = 1) (Figure 6A, Figure 6\u2014figure supplement 1), whereas CIN70 and CIN25 signatures are somewhat poorer predictors of progression (Figure 6\u2014figure supplement 2) (AUC = 0.82 and 0.81, respectively). Apart from the varied performance of different CIN-scores, this difference can also be attributed to the lack of data about some of the genes in the sequencing output. Furthermore, cohort GSE114489, which also contains dysplastic samples with known progression potential, demonstrates that although signatures are elevated in persistent dysplasias, neither CIN5 (AUC = 0.72) (Figure 6B, Figure 6\u2014figure supplement 3) nor CIN70 (AUC = 0.74) and CIN25 (AUC = 0.73) (Figure 6\u2014figure supplement 4) could accurately segregate persistent from regressive samples as efficiently as CIN5 in the GSE108124 cohort. Similarly, CIN-scores did not accurately segregate regressive from persistent/progressive samples by progression status in the discovery cohort of GSE109743 (Figure 6C, Figure 6\u2014figure supplement 5). A similar result was found with the validation cohort of GSE109743 (Figure 6\u2014figure supplement 6). However, in cohorts with multiple stages represented (GSE109743 and GSE33479), there was a clear increase in CIN-scores with increasing PML grade (Figure 6D and E, Figure 6\u2014figure supplement 7), which is consistent with the increased risk of malignant progression in high-grade lesions. In summary, we found that CIN-scores (specifically CIN5) are good predictors of malignant progression in CIS (GSE108124). In GSE114489, we observed an increase in the CIN5 score in persistent dysplasias but the discrimination between persistent and regressive dysplasias was poorer. In GSE109743, we did not observe significant differences between progressive/persistent PMLs and regressive lesions. This different performance of CIN-scores in different cohorts can be attributed to multiple factors both technical and biological. The most important differences are the differing definitions of progression status, and that GSE108124 focuses on CIS lesions, a high-grade precursor of invasive LUSC, whereas the other cohorts focus on earlier lesions (GSE114489) or combinations of different stages (GSE109743). Additionally, microarray analysis was carried out with RNA extracted from microdissected PMLs in cohort GSE108124 providing an enriched epithelial signal.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-v3.jpg)\n\n**Figure 6.:** (A) CIN5 score in regressive (Re) and progressive (Pr) carcinomas in situ (CIS) lesions from cohort GSE108124. (B) CIN5 scores in stable non-dysplasias (StND), progressive non-dysplasias (PrND), regressive dysplasias (ReD), and persistent dysplasias (PerD) from cohort GSE114489. (C) CIN5 scores in Re, normal-stable (NSt), and progressive/persistent (Pr/Per) premalignant lesions (PMLs) from cohort GSE109743. (D and E) Evolution of CIN-scores in lung squamous cell carcinoma (LUSC) developmental stages for cohorts GSE109743 and GSE33479. N: normal; NN: normal normofluorescent; NH: normal hypofluorescent; Hy: hyperplasia; Me:metaplasia; MD: mild dysplasia; MoD: moderate dysplasia; SeD: severe dysplasia; CIS: carcinoma in situ; IC: invasive carcinoma. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp1-v3.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Sample size: regressive n=16, progressive n=17. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp3-v3.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp4-v3.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Sample size: StND n=16, PrND n=9, ReD n=15, PerD=23. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp5-v3.jpg)\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp6-v3.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Sample size: Regressive n=18, Normal Stable n=35, Progressive/Persistent n=20. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig6-figsupp7-v3.jpg)\n\n**Figure 6\u2014figure supplement 7.:** Sample size: N n=23, Hy n=31, MD n=13, MoD n=20, SeD n=4. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\n### Mapping the evolution of the most relevant pathways involved in LUSC using XTABLE\n\nInactivation of the tumour suppressor genes TP53 and CDKN2A (Figure 7A) are the most frequent somatic events in LUSC (Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012). Other somatic alterations in driver genes are found at a lower frequency but often target the same pathways in different ways (Figure 7A; Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012). The squamous differentiation, PI3K/Akt, and oxidative stress response are the most frequently targeted pathways in LUSC (The Cancer Genome Atlas Research Network, 2012). The most frequent alteration targeting the squamous differentiation pathway is SOX2 amplification, although inactivations of NOTCH proteins have also been proposed to target this pathway as they are mutually exclusive with SOX2 amplification. A similar pattern of mutually exclusive somatic alterations targeting the same pathway has also been observed in the PI3K/Akt and oxidative stress response pathways (Figure 7A; The Cancer Genome Atlas Research Network, 2012). The role of these pathways in the transition between the LUSC developmental stages has not been addressed to date. The main reason for this is the paucity of genomic characterizations of PMLs and the lack of preclinical models of PMLs. Using XTABLE (Signature tab) to interrogate published transcriptional signatures correlated with these pathways can shed information about the stages at which they become active, and therefore what their potential role is in LUSC progression. To map changes in the activation of these three pathways to LUSC developmental stages, we use pre-designed transcriptional signatures from the MSigDB collections (Subramanian et al., 2005; Liberzon et al., 2011; Liberzon et al., 2015). Namely, the SOX2_BENPORATH (squamous differentiation) (Ben-Porath et al., 2008), HALLMARK_PI3K_AKT_MTOR_PATHWAY (PI3k/AKT pathway), and WP_NRF2_PATHWAY (oxidative stress response) signatures (Figure 7B, C and D, respectively). When GSE33479 was interrogated, the signature scores of the three pathways increased significantly in either moderate or severe dysplasias when compared with normal normofluorescent mucosa. No significant increases were detected in mild dysplasias or earlier lesions. Similar results were observed with the GSE109743 cohort except for the WP_NRF2_PATHWAY (Figure 7\u2014figure supplement 1). In this pathway, an increase of the signature was detected only in mild dysplasias compared with normal samples, and no significant changes were detected in any other PMLs stages.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig7-v3.jpg)\n\n**Figure 7.:** (A) Diagram showing the most important pathways involved in LUSC and the genes involved in such pathways that are found genetically altered in LUSC tumours. (B) Evolution of the SOX2 (the most frequent driver of the squamous differentiation pathway) transcriptional signature (SOX2_BENPORATH) during LUSC progression (GSE33479 cohort). (C) Evolution of the PI3K/Akt pathway during LUSC progression (HALLMARK_PI3K_AKT_MTOR_SIGNALING). (D) Evolution of the NRF2 (WP_NRF2_PATHWAY) transcriptional signature (correlated with the oxidative stress response) during LUSC progression. (E) Evolution of a transcriptional signature correlated with cyclin-D1 and CDK4 (MOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN) during LUSC progression. CDKN2A alterations in LUSC lead to the inactivation of the p16INK4a, a CDK4 inhibitor. (F) Evolution of the expression of E2F targets (HALLMARK_E2F_TARGETS). Sample size: NN n=13, NH n=14, Hy n=15, Me n=15, MD n=13, MoD n=13, SeD n=12, CIS n=13, IC n=14. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR. *p<0.05, **p<0.01, ***p<0.001, p<0.0001 (Welch\u2019s t-test).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77507/elife-77507-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Sample size: N n=61, Hy n=61, Me n=60, MD n=34, MoD n=34, SeD n=17. Boxplots show median and upper/lower quartile. Whiskers show the smallest and largest observations within 1.5\u00d7 IQR.\n\nWe also interrogated the MSigDB collection to investigate the stages wherein the activation of CDK4/cyclin-D1 activity is detected using an associated transcriptional signature. The CDK4/cyclin-D1 axis controls the transition through the G1-phase of the cell cycle and is frequently altered in LUSC by multiple mechanisms such as CDKN2A inactivation (which encodes the p16INK4a tumour suppressor and inhibits the activity of the CDK4/cyclin-D1 complexes and E2F transcriptional activity), and cyclin-D1 amplification. Activation of transcriptional signatures associated with these cell cycle regulators (MOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN and HALLMARK_E2F_TARGETS) can be used to monitor CDK4/cyclin-D1 dysregulation (Molenaar et al., 2008). The CDK4/cyclin-D1 signature showed a significant increase in moderate dysplasias and later stages in cohort GSE33479 (Figure 7E) and in mild dysplasias and later stages in the GSE109743 (Figure 7\u2014figure supplement 1). The increase of E2F signature was already detectable in metaplasias and later stages (Figure 7F) in the GSE33479 cohort, whereas in the GSE109743 cohort the increase in the E2F signature was observed starting in mild dysplasias (Figure 7\u2014figure supplement 1).\n\nOverall, these results show that the activity of squamous differentiation, PI3K/Akt, and pathways start in the transition between high- and low-grade lesions (Figure 1), typically moderate and severe dysplasias, indicating a role of these pathways in this transition, whereas their function in earlier stages (e.g., transition from normal epithelium to low-grade PMLs) is likely to be more limited. Our observations with the CDK4/cyclin-D1 and E2F signatures indicate that the onset of this pathways start in earlier stages (metaplasias and mild dysplasias).\n\n## Discussion\n\nIn this report, we have described XTABLE, an open source bioinformatic tool to explore gene expression in LUSC PMLs using four different transcriptomic datasets. The most novel aspect of this application is the emphasis on preinvasive disease (to our knowledge, the first bioinformatic tool focusing on PMLs), and the possibility of multiple sample stratifications by parameters that correlate with high risk of malignant progression (stage, progression status, and CIN). Treating lung cancer is complex. Chemotherapies, radiotherapy, targeted therapies, and immunotherapies save lives. However, the progress in lung cancer patient survival during the last 20 years is disappointing (National Cancer Institute and DCCPS, 2018). Redirecting research efforts to prevent lung cancer and to detect its more treatable premalignant stages is the most efficient way to prevent lung cancer deaths to date. XTABLE offers researchers the possibility of accessing the most relevant transcriptomic databases on LUSC PMLs to assist in the understanding of PML biology and identify biomarkers for LUSC early detection. Biomarker identification, investigating the evolution of signalling pathways in multiple developmental LUSC stages, identification of immunomodulatory signals, changes in transcriptional signatures, and exploring the causes and consequences of CIN in PMLs are amongst the multiple examples of promising applications of XTABLE for basic and translational biologists.\n\nWhereas multiple open-source applications for generic processing of transcriptomic data have been developed since the advent of microarray and RNAseq technologies, none of those applications integrate analysis capabilities directed to prevention and early detection discovery research. Furthermore, these applications lack versatility for downstream analysis, automatically apply data transformation (log-transformation) to dataset that do not require it, lack of update for years, compatibility issues with current operating systems, require reformatting and renaming of expression datasets (not practical for large sample numbers), and do not evaluate the diagnostic performance of classifiers such as ROC analysis. XTABLE overcomes these limitations and unifies different packages in a manner that facilitates precancerous biology, prevention, and early detection research.\n\nXTABLE also contributes to a more open, accessible, and inclusive science. Research laboratories often have restricted access to bioinformatic support due to funding constraints or lack of adequate collaborations. This limitation can be a major hurdle in the competitiveness of research groups as it may prevent hypothesis generation, validation of experimental results in patient cohorts, or acquisition of preliminary results. XTABLE and similar applications can contribute to addressing those disadvantages with an accessible and versatile platform for gene expression analysis. This application also contributes to the open science philosophy as it promotes the dissemination of data, accessibility, and transparency. Although XTABLE is unlikely to offer all the possibilities of analysis required by the scientific community, the code can be obtained by the users to adapt it to their research questions. Additionally, XTABLE allows the download of results that can be subject to additional downstream analyses.\n\nAlthough integrative analyses of two or more datasets as well as integration of other genomic platforms would be desirable capabilities of XTABLE, the different nature of the studies, methodologies, and platforms make these integrations hardly achievable. For instance, stratifications that apply to all datasets and setting up the same thresholds for ROC analysis is not possible. Moreover, implementing separate analyses is the most scientifically sound alternative to prevent wrong conclusions. Nevertheless, by analysing the four datasets under a unified interface, and at the same time, implementing analyses on individual datasets, XTABLE achieves an optimal balance between clarity, speed of analysis, user friendliness, and scientific rigor while avoiding overcomplications. Additionally, only one study (GSE108105) also published genomic and epigenomic data.\n\nAnother potential limitation of XTABLE is that it cannot be used to interrogate future datasets in a simple manner for non-computational scientists. This limitation arises from the fact that the characteristics of future studies are hardly predictable, which hampers the design of stratification and analysis options. However, the open-source nature of this application allows the future modification of the code to add new datasets by other users. Moreover, the analysis modules for each of the current databases provide a template that will be re-coded to integrate future databases.\n\nOur analysis of CIN signatures and their correlation with the known progression potential of PMLs is one of the examples of the use of XTABLE to obtain a wider view of LUSC PML biology. CIN5 was a good predictor of CIS progression in the GSE108124 study, as already described by the authors of the study (Teixeira et al., 2019). However, CIN5 did not perform as well in other studies. Conceivably, the most plausible reason for this discrepancy is the different definition of progression status in the four studies. Whereas GSE108124 provides a binary classification of PMLs (progressive and regressive), the other studies show a more complex classification that includes progressive and persistent lesions under the same category. The endpoint in the definition of the progression status also differs between studies. Specifically, the endpoint in GSE108124 is progression to invasive LUSC whereas the other studies define progression as transition to a higher grade. Conceivably, CIN might not play the same role in the transition between PMLs as it does in malignant transformation. Additionally, GSE108124 focuses on CIS, the precursor lesions of invasive carcinomas, and uses microdissected samples. The other two studies with progression status information focus on different stages and do not perform enrichment of the tumour component. GSE114489 investigates dysplasias, an earlier LUSC stage and lacks further subdivision into mild, moderate, and severe dysplasic lesions. This limitation might result in data with more noise and poorer correlation with progression status. Nevertheless, this cohort did show an increase in CIN5 signature in persistent dysplasias when compared with regressive lesions, a difference that is not observed in GSE109743 (a cohort that does not separate PMLs by stage). These discrepancies point at several limitations of the use of CIN and its associated signatures as surrogates of progression potential. The use of CIN and more specifically CIN-scores as a bona fide predictor of progression might be limited to microdissected samples and CIS lesions. For example, the presence of tumour stroma could result in an underestimated CIN-score. Additionally, CIS lesions are the most advanced premalignant stage and show the highest levels of CIN5 signatures, thereby contributing to a higher CIN-related signal. Comparisons with microdissected PMLs of earlier stages are necessary to address the extent of these limitations.\n\nRegardless, CIN gene expression signatures present a very robust correlation with genomic instability indexes in cancer, and specifically in lung cancer (Carter et al., 2006). Although we have shown that the correlation of CIN signatures with progression potential varies between databases, they can be used to investigate other biological questions such as identification of CIN-tolerance and CIN-driver genes, identification of changes in the immune microenvironment associated with CIN (in light of the new role of CIN in modulating tumour immunity Tijhuis et al., 2019), and interrogation of genes of interest for the user in CIN-high vs. CIN-low PMLs.\n\nUsing XTABLE, we have mapped the most important signalling pathways targeted in LUSC to the developmental stages. We found that the onset activation of squamous differentiation, PI3K/Akt pathways occur in the transition from low- to high-grade PMLs. Comprehensive genomic characterizations of PMLs have not been undertaken so far, and therefore, we are not able to map the onset of LUSC pathways with the genomic profiles of each premalignant stage. However, our observations suggest that the genomic alterations targeting those pathways should be more frequent in high-grade PMLs than low-grade. Another explanation is that those mutations are present in low-grade PMLs but their effect on the pathways is only unleashed in the transition to high-grade lesions. Co-ocurring somatic alterations and microenvironment changes could explain this. Nevertheless, our results strongly indicate that squamous differentiation and PI3K/Akt pathways are unlikely to play a role in the earliest developmental stages (hyperplasias, metaplasias, and mild dysplasias). On the other hand, our observations with the CDK4/cyclin-D1 and E2F signatures indicate an earlier onset (metaplasias and moderate dysplasias). Both signatures can be influenced by CDKN2A inactivation and cyclin-D1 (CCND1) amplification, two alterations frequently observed in LUSC, and known to override oncogene-induced senescence (Serrano et al., 1997). It is conceivable that CDKN2A inactivation and CCND1 amplification occur earlier than activation of oncogenic in order to prevent oncogene-induced senescence. For instance, SOX2 overexpression has a negative effect in cell fitness in multiple experimental scenarios (Cho et al., 2013; Correia et al., 2017; Cox et al., 2012; Wuebben et al., 2016). Early activation of the CDK4/cyclin-D1 pathway could be key to avoid this toxicity in LUSC. A similar scenario is also likely to occur with PI3K/Akt signalling, as this pathway needs to be exquisitely regulated to avoid senescence (Astle et al., 2012). However, mechanisms that modify CDK4/cyclin-D1 and E2F activities independently of CDKN2A inactivation cannot be ruled out as multiple oncogenic pathways can regulate the cell cycle. Furthermore, the existence of CDKN2A inactivation in low-grade PML is not known.\n\nThe activation of the squamous differentiation, PI3K/Akt pathways in high-grade PMLs could be very useful as biomarkers to develop new modalities of early detection using multiple approaches. High-grade PMLs frequently undergo malignant progression (Ishizumi et al., 2010) and therefore, detection of these lesions and removal is an optimal strategy to prevent deaths by LUSC. Design of appropriate molecular probes and theragnostic technologies that identify lesions with high-level pathway activation, and secreted proteins that are associated with those pathways are amongst the strategies to exploit pathway activation in early detection.\n\nFinally, the aim of this article is not to prioritize any of the studies included in XTABLE, but to provide a tool for the simple and quick analysis of a large amount of biologically relevant data on PML biology. Each study has its own advantages and limitations. Therefore, the user is ultimately responsible for choosing the datasets that are more adequate to interrogate their research questions, compare results between databases considering the different scientific contexts of each study, and interpret them in light of the different designs of each study.\n\n## Materials and methods\n\n### XTABLE download and installation\n\nXTABLE can be downloaded from the GitLab repository (https://gitlab.com/cruk-mi/XTABLE) and it requires the previous installation of RStudio. Copy the commands, paste them on the RStudio console, and run the command (Video 1).\n\n### XTABLE packages and construction\n\nBioconductor package GEOquery (2.54.1) was used to retrieve the data and the Bioconductor package Biobase (2.46.0) used to extract the gene expression values for microarray datasets. The Bioconductor package limma (3.42.2) was used to generate differentially expressed gene analysis results. Bioconductor packages AnnotationDbi (1.48.0) and org.Hs.eg.db (3.10.0) were used to retrieve additional gene IDs. Additional gene IDs were retrieved from Ensembl BioMart website (https://www.ensembl.org/biomart/martview/) with Ensembl Genes 104 dataset and Human Genes GRCh38.p13 to generate four mapping files with the following attributes: \u2018Gene stable ID\u2019 and \u2018AGILENT WholeGenome 4\u00d744k v1 probe\u2019; \u2018Gene stable ID\u2019 and \u2018Transcript stable ID\u2019; \u2018Gene stable ID\u2019 and \u2018Gene name\u2019; \u2018Gene stable ID\u2019 and \u2018NCBI gene (formerly Entrezgene) ID\u2019 for GSE33479. For GSE114489, a file containing the attributes \u2018Gene stable ID\u2019 and \u2018AFFY HuGene 1 0 st v1 probe\u2019 was downloaded. The Bioconductor package edgeR (3.28.1) was used to calculate CPM values. R package pROC (1.17.0.1) was used to calculate AUC and generate ROC curves. Gene set enrichment analysis and pathway analysis were performed using Bioconductor packages ideal (1.10.0), fgsea (1.14) with MSigDB (https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp) gene set collections (7.1), limma (3.42.2), pathview (1.26.0), enrichR (3.0), gage (2.36.0) with gageData (2.24.0), ReactomePA (1.30), progeny (1.8.0), and dorothea (0.99.0).\n\nDeconvolution analysis was performed for microarray data using estimate (1.0.11) and for RNAseq data using imsig (1.1.3). imsig requires filtering out genes with low variance which was performed with the package matrixStats (0.59.0). R package stats (3.6.0) used to generate PCA data. ggplot2 (3.3.3), pheatmap (1.0.12), RColorBrewer (1.1\u20132) were used for making plots and ggpubr (0.4.0) was used to perform Welch\u2019s t-test. tidyr (1.1.3), tibble (3.1.2), dplyr (2.0.6), and magrittr (2.0.1) were used for general data processing and formatting. Code was written using RStudio Workbench (1.4.1717.3) using R (4.0.3).\n\n### Transcriptional signatures\n\nTo investigate the evolution of LUSC pathways, we downloaded the following gene sets from the Molecular Signatures Database (MSigDB v7.5.1):\n\nBENPORATH_SOX2_TARGETS (https://www.gsea-msigdb.org/gsea/msigdb/cards/BENPORATH_SOX2_TARGETS.html).\n\nHALLMARK_PI3K_AKT_MTOR_SIGNALING (https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_PI3K_AKT_MTOR_SIGNALING.html).\n\nWP_NRF2_PATHWAY (https://www.gsea-msigdb.org/gsea/msigdb/cards/WP_NRF2_PATHWAY.html).\n\nMOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN (https://www.gsea-msigdb.org/gsea/msigdb/cards/MOLENAAR_TARGETS_OF_CCND1_AND_CDK4_DN.html).\n\nHALLMARK_E2F_TARGETS (https://www.gsea-msigdb.org/gsea/msigdb/cards/HALLMARK_E2F_TARGETS.html).\n\nThe signatures were manually curated to replace unrecognized gene symbols with alternative symbols used in each cohort. The signature scores returned by the XTABLE were calculated as the sum of log-normalized expression values in each cohort.\n",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "713fe2bc-d5a4-4404-93fc-d9afa01a144d",
+      "submission_id": "13c7cdcf-d4d1-487c-8b5a-25a9a0af9c3e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- W Kimryn Rathmell, https://ror.org/05dq2gs74 Vanderbilt University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77507.sa0](https://doi.org/10.7554/eLife.77507.sa0)\n\nThe authors have created a resource tool that is valuable in assessing precancerous lesions in the lung, which may serve as a tool for investigators working in this area, and as an example for additional similar resources. The accessibility of the tool is a concern but does not diminish the quality of the product.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- W Kimryn Rathmell, https://ror.org/05dq2gs74 Vanderbilt University Medical Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77507.sa1](https://doi.org/10.7554/eLife.77507.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Interrogating the Precancerous Evolution of Pathway Dysfunction in Lung Squamous Cell Carcinoma Using XTABLE\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife. There was different opinion among the reviewers, and we sought a third outside opinion to make a final decision. The principal reason is the lack of novelty in this work, the lack of possibility of integration of other datasets of precancerous lesions, and the existence of many other similar applications that are user-friendly. Curation of an early cancer database across multiple cancer types, which provides a user-friendly application to perform integrative analyses across datasets, we suspect would be beyond the scope of this study, and would be necessary to have the user-friendliness of this application carry the novelty. We have included reviewers' comments.\n\nReviewer #2 (Recommendations for the authors):\n\nSome of the referencing needs careful proofreading. We notice for example that reference 25, Teixeira et al., is labelled as 2019 in the bibliography, 2020 in the text (line 86), and 2018 in Figure 1.\n\nLine 153 \u2013 this study used whole genome, not whole exome sequencing.\n\nFigure 2A appears to be an old screenshot as the app is titled \"NSCLC\" rather than \"XTABLE\".\n",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4fb76afc-1101-4dc6-8ac5-9ba68fea2547",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C1",
+      "claim": "Lung squamous cell carcinoma (LUSC) accounts for 20\u201330% of all lung cancer cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Lung squamous cell carcinoma (LUSC) is a type of non-small cell lung cancer that accounts for 20\u201330% of all lung cancer cases (Chen et al., 2014; Sung et al., 2021; Bray et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by three citations to published literature (Chen et al., 2014; Sung et al., 2021; Bray et al., 2021).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "80589936-d938-47ed-82a9-0c5e6354d7ea",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C2",
+      "claim": "LUSC is the second most frequent type of lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite being the second most frequent type of lung cancer (Torre et al., 2016), our knowledge regarding the biology of this disease as well as the therapeutic modalities to treat it remain far behind the most frequent type of lung cancer, lung adenocarcinoma (LUAD) (Hirsch et al., 2016; Khuder, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Torre et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "8213f451-bfc1-4810-a5ba-fe174d1c9727",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C3",
+      "claim": "LUAD genetics is dominated by mutations that activate the RTK/RAS pathway, including EGFR and KRAS mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "LUAD genetics is dominated by mutations (that are often druggable) that activate the RTK/RAS pathway, including EGFR and KRAS mutations (The Cancer Genome Atlas Research Network, 2012; Jamal-Hanjani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two published studies (The Cancer Genome Atlas Research Network, 2012; Jamal-Hanjani et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "7b37a0f2-04ad-41e9-8180-fb44dfc6be46",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C4",
+      "claim": "The genetic landscape of LUSC is more complex than LUAD, with multiple pathways altered in subsets of patients and a lack of actionable mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the genetic landscape of LUSC is more complex, with multiple pathways altered in subsets of patients and a lack of actionable mutations (Campbell et al., 2016; The Cancer Genome Atlas Research Network, 2012; Kim et al., 2014), precluding the development of new therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies (Campbell et al., 2016; The Cancer Genome Atlas Research Network, 2012; Kim et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "c66b756f-2daa-4679-bf01-e9d479bfec5f",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C5",
+      "claim": "The only pharmacological therapies available to treat LUSC patients are immune checkpoint inhibitor monotherapy or in combination with chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the only pharmacological therapies available to treat LUSC patients are immune checkpoint inhibitor monotherapy or in combination with chemotherapy (Mok et al., 2019; Paz-Ares et al., 2018; Weinberg and Gadgeel, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to three published studies (Mok et al., 2019; Paz-Ares et al., 2018; Weinberg and Gadgeel, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "ae3ccdb5-d004-450e-a946-398c434546a4",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C6",
+      "claim": "The National Lung Cancer Matrix Trial and The Lung Master Protocol have not shown clear therapeutic benefits with targeted agents in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the National Lung Cancer Matrix Trial and The Lung Master Protocol, the largest personalized medicine trials in lung cancer, have not shown clear therapeutic benefits with targeted agents in LUSC (; Middleton et al., 2020; Redman et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two published studies (Middleton et al., 2020; Redman et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "b437f6cc-9626-4424-81c2-c6822f7a4c6d",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C7",
+      "claim": "LUSC has a worse prognosis than LUAD independent of stage at detection.",
+      "claim_type": "EXPLICIT",
+      "source": "LUSC also has a worse prognosis than LUAD independent of stage at detection, with a 5-year overall survival (OS) of 6.2% for patients diagnosed with distant metastasis (9.5% for LUAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific survival statistics provided in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "eaf23840-8ebb-4d80-acf9-f18bebe8296e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C8",
+      "claim": "The 5-year overall survival for LUSC patients diagnosed with distant metastasis is 6.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "LUSC also has a worse prognosis than LUAD independent of stage at detection, with a 5-year overall survival (OS) of 6.2% for patients diagnosed with distant metastasis (9.5% for LUAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific survival data presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "0cf5c2e8-b038-4c1e-9b07-26b176f44274",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C9",
+      "claim": "The 5-year overall survival for LUAD patients diagnosed with distant metastasis is 9.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "LUSC also has a worse prognosis than LUAD independent of stage at detection, with a 5-year overall survival (OS) of 6.2% for patients diagnosed with distant metastasis (9.5% for LUAD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific survival data presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "e94ac17d-aa72-428f-b948-0e36ecc396c5",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C10",
+      "claim": "The 5-year overall survival for LUSC patients diagnosed with localized disease is 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, patients diagnosed with localized disease are eligible for curative surgery and the 5-year OS is 50% (National Cancer Institute and DCCPS, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific survival data and a citation to National Cancer Institute and DCCPS, 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "d49a2aed-b773-4e5f-8871-df5a0f20148d",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C11",
+      "claim": "40% of early diagnosed LUSC patients die within 5 years despite detection of localized lung cancer eligible for resection with curative intent.",
+      "claim_type": "EXPLICIT",
+      "source": "These initiatives make use of low-dose CT scans in high-risk populations, but in spite of the frequent detection of localized lung cancer eligible for resection with curative intent, 40% of early diagnosed patients die within 5 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific mortality data presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "9c8d477a-bee0-450c-9e14-f4b711f795f9",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C12",
+      "claim": "LUSC progresses through a series of premalignant stages characterized by alterations of the normal bronchial epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "LUSC progresses through a series of premalignant stages characterized by alterations of the normal bronchial epithelium (Figure 1; Ishizumi et al., 2010; Kadara et al., 2016; Thakrar et al., 2017; Pennycuick et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to four published studies (Ishizumi et al., 2010; Kadara et al., 2016; Thakrar et al., 2017; Pennycuick et al., 2020) and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "ab92af04-cee5-4a05-a0b0-cbdc006360f1",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C13",
+      "claim": "Endobronchial premalignant lesions (PMLs) are classified as low-grade (squamous metaplasia, mild and moderate dysplasia) and high-grade (severe dysplasia, and carcinomas in situ [CIS]).",
+      "claim_type": "EXPLICIT",
+      "source": "These endobronchial premalignant lesions (PMLs) are classified as low-grade (squamous metaplasia, mild and moderate dysplasia) and high-grade (severe dysplasia, and carcinomas in situ [CIS]) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the text description and reference to Figure 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "09dda152-3011-4fdb-95ba-aff0dfc4f096",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C14",
+      "claim": "Not all PMLs progress to LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not all PMLs progress to LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "d58e6a30-93e4-4ce7-aaa5-f0f75734b27f",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C15",
+      "claim": "High-grade PMLs have a higher risk of progression than low grade.",
+      "claim_type": "EXPLICIT",
+      "source": "Although obvious differences exist between the multiple studies published on the topic, high-grade PMLs have a higher risk of progression than low grade, and high levels of chromosomal instability (CIN) are also predictive of progressive PMLs (Thakrar et al., 2017; van Boerdonk et al., 2014; Teixeira et al., 2019; Merrick et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four published studies (Thakrar et al., 2017; van Boerdonk et al., 2014; Teixeira et al., 2019; Merrick et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "e93dbb57-b7cd-400e-8e61-e9e00347b312",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C16",
+      "claim": "High levels of chromosomal instability (CIN) are predictive of progressive PMLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although obvious differences exist between the multiple studies published on the topic, high-grade PMLs have a higher risk of progression than low grade, and high levels of chromosomal instability (CIN) are also predictive of progressive PMLs (Thakrar et al., 2017; van Boerdonk et al., 2014; Teixeira et al., 2019; Merrick et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four published studies (Thakrar et al., 2017; van Boerdonk et al., 2014; Teixeira et al., 2019; Merrick et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "af901f2f-f273-4327-87c2-d2138a201ef3",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C17",
+      "claim": "CIN has been observed as a potential biomarker of PMLs progression in both low- and high-grade PMLs.",
+      "claim_type": "EXPLICIT",
+      "source": "This potential role of CIN as biomarker of PMLs progression has been observed in low- and high-grade PMLs (van Boerdonk et al., 2014; Teixeira et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two published studies (van Boerdonk et al., 2014; Teixeira et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "f548ad61-5b61-4e48-bdcf-c6306e4a9f41",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C18",
+      "claim": "High levels of copy number variations was the best predictor of progressive PMLs.",
+      "claim_type": "EXPLICIT",
+      "source": "These reports showed that high levels of copy number variations was the best predictor of progressive PMLs (van Boerdonk et al., 2014; Teixeira et al., 2019) and that immune response is the most likely cause of regression as these lesions contained higher levels of immune infiltration (Pennycuick et al., 2020; Beane et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two published studies (van Boerdonk et al., 2014; Teixeira et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "d175f334-66f5-4ace-b495-aac416d0167b",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C19",
+      "claim": "Immune response is the most likely cause of PML regression as these lesions contained higher levels of immune infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "These reports showed that high levels of copy number variations was the best predictor of progressive PMLs (van Boerdonk et al., 2014; Teixeira et al., 2019) and that immune response is the most likely cause of regression as these lesions contained higher levels of immune infiltration (Pennycuick et al., 2020; Beane et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to two published studies (Pennycuick et al., 2020; Beane et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a673f116-5582-46b5-9dc3-624f3417fcc1",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C20",
+      "claim": "Transcriptomic analysis of PMLs indicates immune evasion in the transition to invasiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are supported by transcriptomic analysis of PMLs that indicate immune evasion in the transition to invasiveness (Mascaux et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mascaux et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "414db4a1-c088-4183-8766-2c1fed5e9e8c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C21",
+      "claim": "The detection of PMLs cannot be carried out by routine patient imaging techniques such as CT or PET scans.",
+      "claim_type": "EXPLICIT",
+      "source": "The detection of PMLs cannot be carried out by routine patient imaging techniques such as CT or PET scans as the morphological change that they cause in the airway does not result in radiological contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact based on the physical properties of PMLs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "7a3c4ed4-8a54-4cfa-9546-a7ca4aa37b49",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C22",
+      "claim": "Ablation of high-grade PMLs detected by autofluorescence bronchoscopy using minimally invasive endoscopic procedures in high-risk populations is an innovative strategy to prevent LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, ablation of high-grade PMLs detected by autofluorescence bronchoscopy using minimally invasive endoscopic procedures in high-risk populations is an innovative and interesting strategy to prevent LUSC (Guibert et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Guibert et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "b14097f7-0631-428d-b969-8af44fe41aa6",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C23",
+      "claim": "Autofluorescence bronchoscopy is an expensive and complex technique of limited use in large screening programmes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless autofluorescence bronchoscopy is an expensive and complex technique of limited use in large screening programmes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact about the practical limitations of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "00bd67df-d2ce-43cd-a018-aeec3de1e8cf",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C24",
+      "claim": "Dataset GSE33479 comprises expression microarray analyses of 122 endobronchial biopsies of unknown progression status.",
+      "claim_type": "EXPLICIT",
+      "source": "Dataset GSE33479 (Mascaux et al., 2019) comprises expression microarray analyses of 122 endobronchial biopsies of unknown progression status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset characteristics and is supported by citation to Mascaux et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "6fbba6bc-2cd6-4633-9b85-3bae9fe5b8d0",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C25",
+      "claim": "Dataset GSE109743 consists of a transcriptomic analysis of whole PML biopsies and bronchial brushings obtained from adjacent normal regions of the bronchial mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Dataset GSE109743 (Beane et al., 2019) consists of a transcriptomic analysis of whole PML biopsies with no purification of the epithelial compartment as well as bronchial brushings obtained from adjacent normal regions of the bronchial mucosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset characteristics and is supported by citation to Beane et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "f2efad37-4d25-4f0d-81eb-2bcbd1fa87f5",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C26",
+      "claim": "Dataset GSE109743 used RNAseq and includes the progression status for some lesions established by serial biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike GSE33479, GSE109743 used RNAseq and more importantly, includes the progression status for some lesions established by serial biopsies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "ace7ec53-5393-4366-9ba8-4c4cc22b7095",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C27",
+      "claim": "In dataset GSE109743, samples were classified as 'normal-stable' when they changed between normal, hyperplasia, and metaplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were classified as 'normal-stable' when they changed between normal, hyperplasia, and metaplasia, 'regressive' when they regress from dysplasia to a less severe dysplastic grade, or from dysplasia to normal/hyperplasia/metaplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the classification criteria used in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "b65bf644-0701-4503-aa51-6da912d8d149",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C28",
+      "claim": "In dataset GSE109743, samples were classified as 'regressive' when they regress from dysplasia to a less severe dysplastic grade, or from dysplasia to normal/hyperplasia/metaplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were classified as 'normal-stable' when they changed between normal, hyperplasia, and metaplasia, 'regressive' when they regress from dysplasia to a less severe dysplastic grade, or from dysplasia to normal/hyperplasia/metaplasia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the classification criteria used in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "66faf4a2-4de2-4169-83d4-d20e6975eba3",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C29",
+      "claim": "Dataset GSE114489 collected 63 baseline bronchial biopsies with corresponding follow-up biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "In GSE114489, the authors collected 63 baseline bronchial biopsies (with corresponding follow-up biopsies) and classified samples in four groups: 23 persistent dysplasias (dysplastic lesions with the same or higher severity scores in follow-up biopsies), 15 regressive dysplasias (dysplasias progressing to lower severity scores), 9 progressive non-dysplasias (biopsies with normal or hyperplastic morphologies that progress to more severe morphologies), and 16 stable non-dysplasias (normal or hyperplastic pathology that remains stable in follow-up biopsies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "cc26d8c3-f619-4e13-b07d-e61a1c526761",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C30",
+      "claim": "Dataset GSE108124 focuses on CIS and progression is defined as the transition to invasive carcinomas in follow-up biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "The study published by Teixeira et al., 2019 (GSE108124) also makes use of follow-up biopsies to classify the progression potential of PMLs, but unlike GSE114489, GSE108124 focuses on CIS and progression is defined as the transition to invasive carcinomas in follow-up biopsies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset characteristics and is supported by citation to Teixeira et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "00034a14-9e11-466e-96a7-669c44d5d4c4",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C31",
+      "claim": "In dataset GSE108124, RNA for gene expression microarray analysis was extracted from microdissected FFPE samples to enrich the epithelial component.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA for gene expression microarray analysis was extracted from microdissected FFPE samples to enrich the epithelial component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "2bea0110-e80c-4aad-bca9-2963875e0d66",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C32",
+      "claim": "CIN5 segregates progressive and regressive CIS lesions in cohort GSE108124 with an AUC of 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort GSE108124 focuses on CIS lesions with known progressive potential. As reported in that study (Teixeira et al., 2019), we found that the CIN5 signature segregates progressive and regressive lesions (AUC = 1) (Figure 6A, Figure 6\u2014figure supplement 1), whereas CIN70 and CIN25 signatures are somewhat poorer predictors of progression (Figure 6\u2014figure supplement 2) (AUC = 0.82 and 0.81, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures, and citation to Teixeira et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a73bd9b7-0e19-4da0-b5a8-e5b806c33846",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C33",
+      "claim": "CIN70 and CIN25 signatures are poorer predictors of progression in cohort GSE108124 with AUC values of 0.82 and 0.81, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohort GSE108124 focuses on CIS lesions with known progressive potential. As reported in that study (Teixeira et al., 2019), we found that the CIN5 signature segregates progressive and regressive lesions (AUC = 1) (Figure 6A, Figure 6\u2014figure supplement 1), whereas CIN70 and CIN25 signatures are somewhat poorer predictors of progression (Figure 6\u2014figure supplement 2) (AUC = 0.82 and 0.81, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "539d8a59-3529-4db8-a05d-3b616079850c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C34",
+      "claim": "In cohort GSE114489, CIN5 has an AUC of 0.72 for segregating persistent from regressive dysplasias.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cohort GSE114489, which also contains dysplastic samples with known progression potential, demonstrates that although signatures are elevated in persistent dysplasias, neither CIN5 (AUC = 0.72) (Figure 6B, Figure 6\u2014figure supplement 3) nor CIN70 (AUC = 0.74) and CIN25 (AUC = 0.73) (Figure 6\u2014figure supplement 4) could accurately segregate persistent from regressive samples as efficiently as CIN5 in the GSE108124 cohort.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "9a53868a-dea8-4978-89c2-598e0fc3f0e8",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C35",
+      "claim": "In cohort GSE114489, CIN70 and CIN25 have AUC values of 0.74 and 0.73, respectively, for segregating persistent from regressive dysplasias.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, cohort GSE114489, which also contains dysplastic samples with known progression potential, demonstrates that although signatures are elevated in persistent dysplasias, neither CIN5 (AUC = 0.72) (Figure 6B, Figure 6\u2014figure supplement 3) nor CIN70 (AUC = 0.74) and CIN25 (AUC = 0.73) (Figure 6\u2014figure supplement 4) could accurately segregate persistent from regressive samples as efficiently as CIN5 in the GSE108124 cohort.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "73107ba5-b48c-4006-93aa-ebc194abce7e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C36",
+      "claim": "CIN-scores did not accurately segregate regressive from persistent/progressive samples by progression status in the discovery cohort of GSE109743.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, CIN-scores did not accurately segregate regressive from persistent/progressive samples by progression status in the discovery cohort of GSE109743 (Figure 6C, Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "cd7ae55f-a92f-4ad7-ac27-26b5f60f71c9",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C37",
+      "claim": "In cohorts with multiple stages represented (GSE109743 and GSE33479), there was a clear increase in CIN-scores with increasing PML grade.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in cohorts with multiple stages represented (GSE109743 and GSE33479), there was a clear increase in CIN-scores with increasing PML grade (Figure 6D and E, Figure 6\u2014figure supplement 7), which is consistent with the increased risk of malignant progression in high-grade lesions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "239a2aa3-7f13-47b8-aae5-a3f591e7fc49",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C38",
+      "claim": "Inactivation of the tumour suppressor genes TP53 and CDKN2A are the most frequent somatic events in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of the tumour suppressor genes TP53 and CDKN2A (Figure 7A) are the most frequent somatic events in LUSC (Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to two published studies (Jamal-Hanjani et al., 2017; The Cancer Genome Atlas Research Network, 2012) and reference to Figure 7A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "21645ea0-d0e4-4743-8594-8382b911d42a",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C39",
+      "claim": "The squamous differentiation, PI3K/Akt, and oxidative stress response are the most frequently targeted pathways in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "The squamous differentiation, PI3K/Akt, and oxidative stress response are the most frequently targeted pathways in LUSC (The Cancer Genome Atlas Research Network, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to The Cancer Genome Atlas Research Network, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a3a165dd-45f2-4e31-9f49-5f67c0383895",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C40",
+      "claim": "The most frequent alteration targeting the squamous differentiation pathway is SOX2 amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequent alteration targeting the squamous differentiation pathway is SOX2 amplification, although inactivations of NOTCH proteins have also been proposed to target this pathway as they are mutually exclusive with SOX2 amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact about LUSC genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "0761840c-c472-42f4-9b71-5c64b0722d6e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C41",
+      "claim": "Inactivations of NOTCH proteins are mutually exclusive with SOX2 amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequent alteration targeting the squamous differentiation pathway is SOX2 amplification, although inactivations of NOTCH proteins have also been proposed to target this pathway as they are mutually exclusive with SOX2 amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a fact about LUSC genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "537bc0c4-c57a-4dbe-9910-2d6f3f1da750",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C42",
+      "claim": "The signature scores of the squamous differentiation, PI3K/Akt, and oxidative stress response pathways increased significantly in either moderate or severe dysplasias when compared with normal normofluorescent mucosa in cohort GSE33479.",
+      "claim_type": "EXPLICIT",
+      "source": "When GSE33479 was interrogated, the signature scores of the three pathways increased significantly in either moderate or severe dysplasias when compared with normal normofluorescent mucosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the GSE33479 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "b0662c4a-5d45-4901-a4f8-5ed47eddd3ea",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C43",
+      "claim": "No significant increases in squamous differentiation, PI3K/Akt, and oxidative stress response pathway signatures were detected in mild dysplasias or earlier lesions in cohort GSE33479.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant increases were detected in mild dysplasias or earlier lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the GSE33479 cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a36943ff-5815-4d25-a2ad-e42ff022f98c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C44",
+      "claim": "The CDK4/cyclin-D1 signature showed a significant increase in moderate dysplasias and later stages in cohort GSE33479.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDK4/cyclin-D1 signature showed a significant increase in moderate dysplasias and later stages in cohort GSE33479 (Figure 7E) and in mild dysplasias and later stages in the GSE109743 (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "cf880fa2-1b0c-46a1-9227-1e9f1d2deb58",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C45",
+      "claim": "The CDK4/cyclin-D1 signature showed a significant increase in mild dysplasias and later stages in cohort GSE109743.",
+      "claim_type": "EXPLICIT",
+      "source": "The CDK4/cyclin-D1 signature showed a significant increase in moderate dysplasias and later stages in cohort GSE33479 (Figure 7E) and in mild dysplasias and later stages in the GSE109743 (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "86477cab-d2b4-4de1-b892-afa288781f58",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C46",
+      "claim": "The increase of E2F signature was detectable in metaplasias and later stages in the GSE33479 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of E2F signature was already detectable in metaplasias and later stages (Figure 7F) in the GSE33479 cohort, whereas in the GSE109743 cohort the increase in the E2F signature was observed starting in mild dysplasias (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "421467ae-f080-4a8c-b3dc-0156da9a92af",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C47",
+      "claim": "The increase in the E2F signature was observed starting in mild dysplasias in the GSE109743 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase of E2F signature was already detectable in metaplasias and later stages (Figure 7F) in the GSE33479 cohort, whereas in the GSE109743 cohort the increase in the E2F signature was observed starting in mild dysplasias (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results presented in the text and Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "e4c71f6b-3503-4e78-b595-bc419e49919c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C48",
+      "claim": "The activity of squamous differentiation, PI3K/Akt, and oxidative stress response pathways start in the transition between high- and low-grade lesions, typically moderate and severe dysplasias.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results show that the activity of squamous differentiation, PI3K/Akt, and pathways start in the transition between high- and low-grade lesions (Figure 1), typically moderate and severe dysplasias, indicating a role of these pathways in this transition, whereas their function in earlier stages (e.g., transition from normal epithelium to low-grade PMLs) is likely to be more limited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results and inference from the observed patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "88b60e19-b9ea-433d-a3bf-02f06f6471a8",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C49",
+      "claim": "The function of squamous differentiation, PI3K/Akt, and oxidative stress response pathways in earlier stages (e.g., transition from normal epithelium to low-grade PMLs) is likely to be more limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results show that the activity of squamous differentiation, PI3K/Akt, and pathways start in the transition between high- and low-grade lesions (Figure 1), typically moderate and severe dysplasias, indicating a role of these pathways in this transition, whereas their function in earlier stages (e.g., transition from normal epithelium to low-grade PMLs) is likely to be more limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed data patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "6b487004-690d-4ae4-868a-03debaf44807",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C50",
+      "claim": "The onset of CDK4/cyclin-D1 and E2F pathways start in earlier stages (metaplasias and mild dysplasias).",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations with the CDK4/cyclin-D1 and E2F signatures indicate that the onset of this pathways start in earlier stages (metaplasias and mild dysplasias).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "56a3f04b-77ad-4df2-a85c-a3171b526a28",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C51",
+      "claim": "XTABLE is the first bioinformatic tool focusing on premalignant lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The most novel aspect of this application is the emphasis on preinvasive disease (to our knowledge, the first bioinformatic tool focusing on PMLs), and the possibility of multiple sample stratifications by parameters that correlate with high risk of malignant progression (stage, progression status, and CIN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated by the authors based on their knowledge of existing tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a949fec0-e32b-4cb5-8740-76d573232b65",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C52",
+      "claim": "XTABLE allows multiple sample stratifications by parameters that correlate with high risk of malignant progression (stage, progression status, and CIN).",
+      "claim_type": "EXPLICIT",
+      "source": "The most novel aspect of this application is the emphasis on preinvasive disease (to our knowledge, the first bioinformatic tool focusing on PMLs), and the possibility of multiple sample stratifications by parameters that correlate with high risk of malignant progression (stage, progression status, and CIN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the functionality of XTABLE as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "f4b74a3c-95f8-4e30-9980-e8783829deef",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C53",
+      "claim": "The progress in lung cancer patient survival during the last 20 years is disappointing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the progress in lung cancer patient survival during the last 20 years is disappointing (National Cancer Institute and DCCPS, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to National Cancer Institute and DCCPS, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "27f83666-9cf9-4532-95cd-ada7c58861a5",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C54",
+      "claim": "CIN might not play the same role in the transition between PMLs as it does in malignant transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceivably, CIN might not play the same role in the transition between PMLs as it does in malignant transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation from the observed data patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "84e9dd20-139d-40b0-8dc9-002a9f5f6a2e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C55",
+      "claim": "The use of CIN and CIN-scores as a bona fide predictor of progression might be limited to microdissected samples and CIS lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of CIN and more specifically CIN-scores as a bona fide predictor of progression might be limited to microdissected samples and CIS lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation from the observed data patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "c2f93286-1427-47b6-a505-0f228544a47a",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C56",
+      "claim": "The presence of tumour stroma could result in an underestimated CIN-score.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the presence of tumour stroma could result in an underestimated CIN-score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about potential confounding factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "03c912eb-8b2a-4d9c-bea2-a5728309953e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C57",
+      "claim": "CIN gene expression signatures present a very robust correlation with genomic instability indexes in cancer, and specifically in lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, CIN gene expression signatures present a very robust correlation with genomic instability indexes in cancer, and specifically in lung cancer (Carter et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Carter et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "d68e415f-7005-4594-8e30-2f7d447a2fd0",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C58",
+      "claim": "SOX2 overexpression has a negative effect in cell fitness in multiple experimental scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, SOX2 overexpression has a negative effect in cell fitness in multiple experimental scenarios (Cho et al., 2013; Correia et al., 2017; Cox et al., 2012; Wuebben et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to four published studies (Cho et al., 2013; Correia et al., 2017; Cox et al., 2012; Wuebben et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "d851562d-de9c-4662-9e37-66fbc27c9db5",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C59",
+      "claim": "Early activation of the CDK4/cyclin-D1 pathway could be key to avoid SOX2 overexpression toxicity in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Early activation of the CDK4/cyclin-D1 pathway could be key to avoid this toxicity in LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation from the observed data patterns and known biology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "2de4e4c7-9d39-4c17-b327-f1d85df1f1cd",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C60",
+      "claim": "PI3K/Akt signalling needs to be exquisitely regulated to avoid senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar scenario is also likely to occur with PI3K/Akt signalling, as this pathway needs to be exquisitely regulated to avoid senescence (Astle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Astle et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "a00e182a-0019-44ef-b09b-1cbc7a625cab",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C61",
+      "claim": "High-grade PMLs frequently undergo malignant progression.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade PMLs frequently undergo malignant progression (Ishizumi et al., 2010) and therefore, detection of these lesions and removal is an optimal strategy to prevent deaths by LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ishizumi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "91e1e6da-8295-4551-b710-f990ed2e419e",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C62",
+      "claim": "Detection of high-grade PMLs and removal is an optimal strategy to prevent deaths by LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "High-grade PMLs frequently undergo malignant progression (Ishizumi et al., 2010) and therefore, detection of these lesions and removal is an optimal strategy to prevent deaths by LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the fact that high-grade PMLs frequently undergo malignant progression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "63e0282a-4ca0-46a6-b28d-6680f4e6b6cd",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C63",
+      "claim": "XTABLE integrates the most extensive transcriptomic databases of PMLs published so far.",
+      "claim_type": "EXPLICIT",
+      "source": "To facilitate this research, we have designed XTABLE (Exploring Transcriptomes of Bronchial Lesions), an open-source application that integrates the most extensive transcriptomic databases of PMLs published so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated by the authors about their application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "5e2b1bea-ab9b-46c5-aa95-a2a4a7211d7c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "claim_id": "C64",
+      "claim": "XTABLE allows users to stratify samples using multiple parameters and interrogate PML biology in multiple manners, such as two- and multiple-group comparisons, interrogation of genes of interests, and transcriptional signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "With this tool, users can stratify samples using multiple parameters and interrogate PML biology in multiple manners, such as two- and multiple-group comparisons, interrogation of genes of interests, and transcriptional signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the functionality of XTABLE as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LUSC is the second most common lung cancer type (20-30% of cases) with worse prognosis than LUAD, including lower 5-year survival rates for both metastatic (6.2% vs 9.5%) and localized disease (50%), and 40% of early-diagnosed patients die within 5 years despite curative-intent resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C11 provide consistent epidemiological data supported by multiple citations. The survival statistics are specific and sourced from authoritative databases (National Cancer Institute). Claim C53 about disappointing progress is supported by citation, though it represents an interpretive statement about trends.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "79bdf7a5-a59d-4c68-816b-cfcaae045024",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LUSC has a more complex genetic landscape than LUAD, lacking actionable mutations like EGFR/KRAS that dominate LUAD, resulting in limited therapeutic options restricted to immune checkpoint inhibitors with or without chemotherapy, with major personalized medicine trials showing no clear benefit from targeted agents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 are well-supported by multiple citations to peer-reviewed literature and major clinical trials. The contrast between LUAD's druggable RTK/RAS pathway mutations and LUSC's complex, multi-pathway alterations is clearly established with appropriate references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LUSC progresses through a series of premalignant stages (low-grade: metaplasia, mild/moderate dysplasia; high-grade: severe dysplasia, CIS), though not all PMLs progress. High-grade PMLs and high chromosomal instability (CIN) predict progression, while immune infiltration is associated with regression and immune evasion with transition to invasiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20 describe established PML biology supported by multiple citations. The classification system, progression patterns, and role of CIN and immune response are consistently referenced across multiple studies. These represent prior knowledge being summarized rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "db80c906-d1ca-4c91-b921-f6a7e6908897",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PMLs cannot be detected by routine CT or PET imaging due to lack of radiological contrast, but autofluorescence bronchoscopy can detect high-grade PMLs for ablation as a prevention strategy, though this technique is expensive and complex with limited scalability for large screening programs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 accurately describe the technical limitations of current imaging modalities and the practical constraints of autofluorescence bronchoscopy. C22 is supported by citation (Guibert et al., 2016), while C21 and C23 represent established knowledge about imaging physics and healthcare economics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "ae88185d-ccb0-4295-a5be-95189c7bd905",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Four transcriptomic datasets are integrated in XTABLE: GSE33479 (122 biopsies, unknown progression, microarray), GSE109743 (448 samples with progression status, RNAseq, discovery/validation cohorts), GSE114489 (63 dysplasias with follow-up, microarray), and GSE108124 (33 CIS with progression to invasive carcinoma, microdissected FFPE, microarray).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 accurately describe the four datasets integrated into XTABLE, with appropriate citations and clear descriptions of sample numbers, methodologies, and progression status definitions. These are factual descriptions of existing published datasets that can be verified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "e61ae906-7d1c-4b9a-bd3b-3f5ce04ddeb0",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "XTABLE is the first bioinformatic tool focusing on premalignant lesions, integrating the most extensive transcriptomic databases of PMLs published to date, allowing multiple sample stratifications by stage, progression status, and CIN, with capabilities for two- and multiple-group comparisons, gene interrogation, and transcriptional signature analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C63-C64 describe the novel features and capabilities of XTABLE. The claim of being 'first' (C51) is qualified with 'to our knowledge' showing appropriate caution. The functional capabilities described are demonstrated throughout the manuscript with examples and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "adbdfe30-4883-4c58-963c-2f3e24d8229c",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CIN signatures show variable performance across cohorts: CIN5 perfectly segregates progressive/regressive CIS in GSE108124 (AUC=1.0), but performs moderately in dysplasias in GSE114489 (AUC=0.72) and poorly in GSE109743 (no accurate segregation). However, CIN-scores consistently increase with PML grade across cohorts with multiple stages (GSE109743, GSE33479).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 present specific AUC values with supporting figures and appropriate statistical analysis. The variable performance across cohorts is clearly demonstrated with quantitative metrics. The stage-dependent increase in CIN-scores is shown in Figures 6D-E with appropriate sample sizes reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "b9372052-48a9-4685-a63e-8caf02de8037",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors speculate that CIN may play different roles in PML-to-PML transitions versus malignant transformation, and that CIN-scores as progression predictors may be limited to microdissected samples and CIS lesions, potentially due to tumor stroma causing underestimated CIN-scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 are explicitly speculative interpretations (using 'conceivably,' 'might,' 'could') attempting to explain the variable CIN-score performance. While reasonable hypotheses based on the data, these lack direct experimental validation and represent discussion points rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "c1e042ff-405d-4af7-9ad6-1a8ca9a76508",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TP53 and CDKN2A inactivation are the most frequent somatic events in LUSC, with squamous differentiation (primarily SOX2 amplification, mutually exclusive with NOTCH inactivation), PI3K/Akt, and oxidative stress response being the most frequently targeted pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 summarize established LUSC genetics supported by citations to TCGA and TRACERx studies. These represent prior knowledge being used as context for the pathway analysis, with Figure 7A providing visual summary. The mutual exclusivity pattern is established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "68fb8e19-1bb7-42f0-993a-f381b6087b31",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Squamous differentiation, PI3K/Akt, and oxidative stress response pathway signatures increase significantly in moderate/severe dysplasias (high-grade PMLs) but not in earlier lesions, indicating activation during the low-to-high grade transition. In contrast, CDK4/cyclin-D1 and E2F signatures show earlier activation in metaplasias and mild dysplasias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50 present pathway signature analysis across PML stages using established MSigDB signatures. The data are shown in Figure 7B-F with statistical comparisons (Welch's t-test, p-values reported). The differential timing of pathway activation is consistently observed across two independent cohorts (GSE33479 and GSE109743).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "ad0dee3e-94e3-4bc2-ab67-f43a6424e9b0",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite variable performance as progression predictors, CIN gene expression signatures robustly correlate with genomic instability in cancer. The authors speculate that early CDK4/cyclin-D1 activation may be necessary to avoid toxicity from SOX2 overexpression and PI3K/Akt-induced senescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is supported by citation (Carter et al., 2006) and C58 and C60 are supported by multiple citations. However, C59 is speculative ('could be key') connecting these observations without direct experimental validation. The speculation is reasonable but represents hypothesis generation rather than demonstrated mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    },
+    {
+      "id": "18a3d3cf-afaa-433e-b187-50faeb5903da",
+      "content_id": "ef5073fd-4209-4cd0-887b-58bb6dac49ec",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High-grade PMLs frequently undergo malignant progression, making their detection and removal an optimal strategy to prevent LUSC deaths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by citation (Ishizumi et al., 2010). Claim C62 represents a logical inference from C61 - if high-grade PMLs frequently progress to cancer, then removing them should prevent cancer deaths. This is a reasonable clinical conclusion supported by the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:38:07.991067Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4fb76afc-1101-4dc6-8ac5-9ba68fea2547",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "80589936-d938-47ed-82a9-0c5e6354d7ea",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "b437f6cc-9626-4424-81c2-c6822f7a4c6d",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "eaf23840-8ebb-4d80-acf9-f18bebe8296e",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "0cf5c2e8-b038-4c1e-9b07-26b176f44274",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "e94ac17d-aa72-428f-b948-0e36ecc396c5",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "d49a2aed-b773-4e5f-8871-df5a0f20148d",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "f4b74a3c-95f8-4e30-9980-e8783829deef",
+      "result_id": "f9982bf2-da11-4b00-b9a3-e57fece5dda3"
+    },
+    {
+      "claim_id": "8213f451-bfc1-4810-a5ba-fe174d1c9727",
+      "result_id": "79bdf7a5-a59d-4c68-816b-cfcaae045024"
+    },
+    {
+      "claim_id": "7b37a0f2-04ad-41e9-8180-fb44dfc6be46",
+      "result_id": "79bdf7a5-a59d-4c68-816b-cfcaae045024"
+    },
+    {
+      "claim_id": "c66b756f-2daa-4679-bf01-e9d479bfec5f",
+      "result_id": "79bdf7a5-a59d-4c68-816b-cfcaae045024"
+    },
+    {
+      "claim_id": "ae3ccdb5-d004-450e-a946-398c434546a4",
+      "result_id": "79bdf7a5-a59d-4c68-816b-cfcaae045024"
+    },
+    {
+      "claim_id": "9c8d477a-bee0-450c-9e14-f4b711f795f9",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "ab92af04-cee5-4a05-a0b0-cbdc006360f1",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "09dda152-3011-4fdb-95ba-aff0dfc4f096",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "d58e6a30-93e4-4ce7-aaa5-f0f75734b27f",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "e93dbb57-b7cd-400e-8e61-e9e00347b312",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "af901f2f-f273-4327-87c2-d2138a201ef3",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "f548ad61-5b61-4e48-bdcf-c6306e4a9f41",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "d175f334-66f5-4ace-b495-aac416d0167b",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "a673f116-5582-46b5-9dc3-624f3417fcc1",
+      "result_id": "eea4bcfc-3c84-4a04-8392-e77d51f4bcf9"
+    },
+    {
+      "claim_id": "414db4a1-c088-4183-8766-2c1fed5e9e8c",
+      "result_id": "db80c906-d1ca-4c91-b921-f6a7e6908897"
+    },
+    {
+      "claim_id": "7a3c4ed4-8a54-4cfa-9546-a7ca4aa37b49",
+      "result_id": "db80c906-d1ca-4c91-b921-f6a7e6908897"
+    },
+    {
+      "claim_id": "b14097f7-0631-428d-b969-8af44fe41aa6",
+      "result_id": "db80c906-d1ca-4c91-b921-f6a7e6908897"
+    },
+    {
+      "claim_id": "00bd67df-d2ce-43cd-a018-aeec3de1e8cf",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "6fbba6bc-2cd6-4633-9b85-3bae9fe5b8d0",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "f2efad37-4d25-4f0d-81eb-2bcbd1fa87f5",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "ace7ec53-5393-4366-9ba8-4c4cc22b7095",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "b65bf644-0701-4503-aa51-6da912d8d149",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "66faf4a2-4de2-4169-83d4-d20e6975eba3",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "cc26d8c3-f619-4e13-b07d-e61a1c526761",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "00034a14-9e11-466e-96a7-669c44d5d4c4",
+      "result_id": "ae88185d-ccb0-4295-a5be-95189c7bd905"
+    },
+    {
+      "claim_id": "56a3f04b-77ad-4df2-a85c-a3171b526a28",
+      "result_id": "e61ae906-7d1c-4b9a-bd3b-3f5ce04ddeb0"
+    },
+    {
+      "claim_id": "a949fec0-e32b-4cb5-8740-76d573232b65",
+      "result_id": "e61ae906-7d1c-4b9a-bd3b-3f5ce04ddeb0"
+    },
+    {
+      "claim_id": "63e0282a-4ca0-46a6-b28d-6680f4e6b6cd",
+      "result_id": "e61ae906-7d1c-4b9a-bd3b-3f5ce04ddeb0"
+    },
+    {
+      "claim_id": "5e2b1bea-ab9b-46c5-aa95-a2a4a7211d7c",
+      "result_id": "e61ae906-7d1c-4b9a-bd3b-3f5ce04ddeb0"
+    },
+    {
+      "claim_id": "2bea0110-e80c-4aad-bca9-2963875e0d66",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "a73bd9b7-0e19-4da0-b5a8-e5b806c33846",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "539d8a59-3529-4db8-a05d-3b616079850c",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "9a53868a-dea8-4978-89c2-598e0fc3f0e8",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "73107ba5-b48c-4006-93aa-ebc194abce7e",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "cd7ae55f-a92f-4ad7-ac27-26b5f60f71c9",
+      "result_id": "adbdfe30-4883-4c58-963c-2f3e24d8229c"
+    },
+    {
+      "claim_id": "27f83666-9cf9-4532-95cd-ada7c58861a5",
+      "result_id": "b9372052-48a9-4685-a63e-8caf02de8037"
+    },
+    {
+      "claim_id": "84e9dd20-139d-40b0-8dc9-002a9f5f6a2e",
+      "result_id": "b9372052-48a9-4685-a63e-8caf02de8037"
+    },
+    {
+      "claim_id": "c2f93286-1427-47b6-a505-0f228544a47a",
+      "result_id": "b9372052-48a9-4685-a63e-8caf02de8037"
+    },
+    {
+      "claim_id": "239a2aa3-7f13-47b8-aae5-a3f591e7fc49",
+      "result_id": "c1e042ff-405d-4af7-9ad6-1a8ca9a76508"
+    },
+    {
+      "claim_id": "21645ea0-d0e4-4743-8594-8382b911d42a",
+      "result_id": "c1e042ff-405d-4af7-9ad6-1a8ca9a76508"
+    },
+    {
+      "claim_id": "a3a165dd-45f2-4e31-9f49-5f67c0383895",
+      "result_id": "c1e042ff-405d-4af7-9ad6-1a8ca9a76508"
+    },
+    {
+      "claim_id": "0761840c-c472-42f4-9b71-5c64b0722d6e",
+      "result_id": "c1e042ff-405d-4af7-9ad6-1a8ca9a76508"
+    },
+    {
+      "claim_id": "537bc0c4-c57a-4dbe-9910-2d6f3f1da750",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "b0662c4a-5d45-4901-a4f8-5ed47eddd3ea",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "a36943ff-5815-4d25-a2ad-e42ff022f98c",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "cf880fa2-1b0c-46a1-9227-1e9f1d2deb58",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "86477cab-d2b4-4de1-b892-afa288781f58",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "421467ae-f080-4a8c-b3dc-0156da9a92af",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "e4c71f6b-3503-4e78-b595-bc419e49919c",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "88b60e19-b9ea-433d-a3bf-02f06f6471a8",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "6b487004-690d-4ae4-868a-03debaf44807",
+      "result_id": "68fb8e19-1bb7-42f0-993a-f381b6087b31"
+    },
+    {
+      "claim_id": "03c912eb-8b2a-4d9c-bea2-a5728309953e",
+      "result_id": "ad0dee3e-94e3-4bc2-ab67-f43a6424e9b0"
+    },
+    {
+      "claim_id": "d68e415f-7005-4594-8e30-2f7d447a2fd0",
+      "result_id": "ad0dee3e-94e3-4bc2-ab67-f43a6424e9b0"
+    },
+    {
+      "claim_id": "d851562d-de9c-4662-9e37-66fbc27c9db5",
+      "result_id": "ad0dee3e-94e3-4bc2-ab67-f43a6424e9b0"
+    },
+    {
+      "claim_id": "2de4e4c7-9d39-4c17-b327-f1d85df1f1cd",
+      "result_id": "ad0dee3e-94e3-4bc2-ab67-f43a6424e9b0"
+    },
+    {
+      "claim_id": "a00e182a-0019-44ef-b09b-1cbc7a625cab",
+      "result_id": "18a3d3cf-afaa-433e-b187-50faeb5903da"
+    },
+    {
+      "claim_id": "91e1e6da-8295-4551-b710-f990ed2e419e",
+      "result_id": "18a3d3cf-afaa-433e-b187-50faeb5903da"
+    }
+  ],
+  "comparisons": []
+}

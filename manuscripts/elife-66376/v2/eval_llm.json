@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "MprF is a conserved bifunctional enzyme in bacterial pathogens that synthesizes and flips lysyl-phosphatidylglycerol (LysPG), conferring resistance to cationic antimicrobial peptides (CAMPs) and antibiotics like daptomycin, and is crucial for virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C20 establish MprF's known function and importance based on established literature citations. These background claims provide well-supported context for the study's experimental work on MprF inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Multiple monoclonal antibodies (M-C1, M-C7.1, M-C7.3, M-C9.1, M-C13.1, M-C13.2) specifically bind to extracellular loops of MprF in S. aureus, including the previously controversial loop 7, confirming its accessibility from outside the bacterial membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by experimental ELISA data in Figure 1B showing specific binding of antibodies to MprF-expressing versus MprF-deficient strains. The topology predictions are supported by prior work (C21-C22) and the antibody binding data confirms loop accessibility (C23-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C83",
+      "C84"
+    ],
+    "result": "M-C7.1 binds to MprF in live S. aureus cells, forming a complex that migrates at approximately 900 kDa, suggesting binding to higher-order MprF multimers that may represent the active lipid translocating state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C83-C84 are supported by blue native PAGE Western blot data in Figure 2A showing the 900 kDa complex. The interpretation that this represents higher-order multimers is reasonable given prior evidence of MprF oligomerization (C14, C69), though the functional significance (C84) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C4"
+    ],
+    "result": "MprF loop 7 is accessible from both the inner and outer surfaces of the bacterial membrane, suggesting mobility that may reflect the lipid translocation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C4 are supported by SCAM experimental data in Figure 2B showing cysteine labeling from both membrane surfaces. The methodology appears sound with appropriate controls (A99C for inside, T480C for outside). The interpretation of mobility (C29) is a reasonable inference from the dual accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C5",
+      "C34",
+      "C35",
+      "C6",
+      "C37"
+    ],
+    "result": "M-C7.1 sensitizes S. aureus to multiple antimicrobial agents including nisin, LL-37, and daptomycin in a dose-dependent manner, and can reduce daptomycin MIC in both wild-type and daptomycin-resistant strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by extensive experimental data in Figure 3 showing increased susceptibility to various antimicrobials. The experiments include appropriate controls (isotype antibody L-1) and test multiple strains including daptomycin-resistant isolates. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The MprF segment targeted by M-C7.1 is not prone to rapidly occurring escape mutations during serial passaging with antibody and/or daptomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by experimental evidence showing no mutations in mprF after several days of passaging with M-C7.1 and/or subinhibitory daptomycin. However, the timeframe is relatively short and longer-term studies would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C60",
+      "C61"
+    ],
+    "result": "M-C7.1 specifically inhibits the flippase function of MprF without affecting the synthase function, as demonstrated by unchanged LysPG synthesis but increased binding of cytochrome C and annexin V, indicating loop 7 plays a crucial role in lipid translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C60-C61 are supported by complementary experimental approaches: TLC showing unchanged lipid patterns (Figure 4A) and cytochrome C/annexin V binding assays showing increased negative charge at the membrane surface (Figure 4B-C). The conclusion that M-C7.1 specifically inhibits flippase function is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C7",
+      "C53"
+    ],
+    "result": "M-C7.1 treatment does not affect phagocytosis rates but significantly enhances PMN-mediated killing of S. aureus USA300, impairing bacterial survival in human phagocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C7, and C53 are supported by experimental data in Figure 5 showing differential killing kinetics without altered phagocytosis rates. The experiments use appropriate controls and are consistent with prior findings on mprF mutants (C45). Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C44",
+      "C29"
+    ],
+    "result": "Loop 7 and adjacent transmembrane segments may change position within the MprF protein complex, moving between membrane surfaces to accomplish LysPG translocation, potentially representing the center of the flippase mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64, C44, and C29 present mechanistic speculation based on the dual accessibility of loop 7. While the SCAM data (C28) supports dual accessibility, the specific mechanistic models proposed remain speculative. Alternative explanations (unique positioning allowing access from both sides, C63) are also presented but not distinguished experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The recently reported crystal structure of Rhizobium tropici MprF confirms that the region corresponding to S. aureus loop 7 forms a gate between protein cavities accessible from both membrane surfaces, supporting the functional importance of this region and explaining why M-C7.1 binding requires live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 accurately cite and interpret structural data from Song et al., 2021 that corroborates the functional findings of this study. The structural model provides independent validation of the loop 7 accessibility and functional importance demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Conserved amino acids in loop 7 and adjacent transmembrane segments, including the negatively charged D254, are essential for flippase function and are sites of mutations conferring daptomycin resistance, potentially through altered substrate translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C73-C74 are supported by citations to prior work (Ernst et al., 2015, 2018). Claims C71-C72 about D254 are stated as knowledge and speculation, respectively. The integration of prior mutation studies with the current antibody inhibition data strengthens the functional importance of this region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "An antibody targeting loop 13 (M-C13.1) also sensitizes S. aureus to nisin, though less effectively than M-C7.1, suggesting loop 13 may also play a critical role in MprF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by experimental data in Figure 3A showing statistically significant but less pronounced sensitization compared to M-C7.1. This suggests multiple loops may contribute to MprF function, though loop 7 appears most critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Cysteine-deficient MprF mutant proteins retain functionality as demonstrated by decreased daptomycin susceptibility, though they confer lower resistance levels than wild-type protein, likely due to less efficient folding or stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by experimental data in Figure 2\u2014figure supplement 1 showing functional complementation with reduced efficiency. This validates the SCAM approach by demonstrating that cysteine substitutions don't completely abolish function, though the interpretation of reduced efficiency (C82) is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C85"
+    ],
+    "result": "M-C7.1 may potentially overcome daptomycin resistance during therapy, reduce bacterial persistence in infections, and represents a recommended approach for antivirulence therapy against MRSA and other pathogens by promoting host defense clearance and increasing antibiotic susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C48-C49, C54-C55, and C85 represent therapeutic speculation and recommendations based on the experimental findings. While the in vitro data (MIC reduction, PMN killing) support the concept, clinical efficacy and therapeutic potential remain undemonstrated. These are reasonable extrapolations but require in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Despite controversy about antibody penetration through the S. aureus cell wall, specific antibodies can reach membrane-associated epitopes, possibly through large irregular pores, and M-C7.1 functions effectively even in the presence of protein A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 address a potential technical concern about antibody accessibility. C56-C58 cite relevant literature on both sides of the controversy. C59 is supported by the successful use of wild-type strains with intact protein A in later experiments (Figures 3B-G, 5), demonstrating that protein A doesn't interfere with M-C7.1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MprF represents an advantageous therapeutic target because essential parts are exposed at the membrane surface and it's found in many pathogens, while limited conservation of loop 7 would minimize impact on microbiome and resistance selection pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 present strategic advantages of targeting MprF. C77 is supported by the experimental demonstration of antibody binding (C23-C25). C78 is supported by citation (Ernst et al., 2009). C79-C80 about limited conservation are stated as knowledge and reasonable inference, providing rationale for therapeutic development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C50",
+      "C51"
+    ],
+    "result": "Antibiotic resistance is increasing, MRSA causes significant infections, no new antibiotic classes have entered clinical use since 2003, and while therapeutic antibodies have proven efficacy against bacterial toxins, antibodies targeting cellular mechanisms have been underexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C50-C51 provide well-cited background context establishing the clinical need and gap in therapeutic approaches. All claims are supported by appropriate literature citations and represent accurate characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C39"
+    ],
+    "result": "Antibody M-C7.1 targets a specific loop in the flippase domain of MprF at the junction between the synthase and flippase domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C39 accurately describe the M-C7.1 binding site based on the peptide antigen design (loop 7, Supplementary file 1a) and topology model (Figure 1A). This is supported by the binding data (C23-C25) and SCAM results (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "S. aureus mprF mutants are more susceptible to PMN killing than parental strains while phagocytosis remains unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 cites prior work (Peschel et al., 2001; Kristian et al., 2003) establishing the phenotype of mprF mutants. This provides important context for interpreting the M-C7.1 effects on PMN killing (C46-C47) and validates the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

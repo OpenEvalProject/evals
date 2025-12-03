@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C8",
+      "C9"
+    ],
+    "result": "Quarantine is a fundamental non-pharmaceutical intervention for COVID-19 control that prevents substantial pre-symptomatic and asymptomatic transmission. The appropriate quarantine length depends on incubation period and temporal infectiousness profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6, C8-C9 establish quarantine as a key intervention supported by multiple citations (Kucharski et al., Ashcroft et al., Buitrago-Garcia et al., Ferretti et al., He et al., Salath\u00e9 et al.). The mechanistic rationale and dependence on disease dynamics are logically sound and well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C19"
+    ],
+    "result": "RT-PCR tests have low sensitivity in early infection, testing capacity is limited, and multiple testing provides little benefit, precluding widespread testing as an alternative to quarantine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C19 are supported by citations to Kucirka et al., 2020 and Clifford, 2020. These limitations justify the focus on quarantine strategies rather than testing-only approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Quarantine has high economic, societal, and psychological costs and restricts individual freedoms, though these restrictions are generally judged proportionate given COVID-19 severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by citations (Nicola et al., Brooks et al., Parmet and Sinha). The proportionality judgment (C14) is presented as general knowledge rather than empirical finding, which is appropriate for policy context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Individuals are quarantined either as traced contacts of confirmed cases or as returning travelers, with travelers having lower infection probability and less precise exposure timing information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 describe the two quarantine scenarios analyzed in the study, supported by WHO citation. The logical inference about differences between groups is reasonable and forms the basis for separate analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C59",
+      "C66",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The model uses empirically-derived distributions for generation time (Weibull: shape=3.277, scale=6.127), incubation period (meta-log-normal), and infectivity profile (shifted Student's t) from Ferretti et al. 2020b combining multiple transmission pair studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C59, C66, C78-C80 establish the model's epidemiological foundation with appropriate citations to Ferretti et al. 2020b and underlying studies. The parameter values are explicitly stated and the distributions are shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RT-PCR false-negative rates vary by days post-infection: 100% (days 0-1), 67% (day 4), 38% (day 5), 25% (day 6), 21% (day 7), 20% (day 8), 21% (day 9), rising to 66% (day 21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 report test sensitivity data from Kucirka et al., 2020. These values are critical model inputs and are appropriately cited, though the model assumes these apply to asymptomatic cases (C89) which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C39",
+      "C44",
+      "C118"
+    ],
+    "result": "For traced contacts, 10-day quarantine (with 3-day delay) prevents 90.8% [95% CI: 79.6%, 97.6%] of transmission, with release on day 10 preventing 90.1% [CI: 76.0%, 97.5%]. Extending beyond 10 days provides negligible additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C39, C44, C118 present core model results for standard quarantine of traced contacts. The quantitative estimates with confidence intervals are based on the mathematical model with empirically-derived parameters. The diminishing returns finding is well-supported by the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C26",
+      "C27"
+    ],
+    "result": "For traced contacts, test-and-release strategies can achieve similar efficacy to 10-day quarantine with shorter duration: rapid test on day 6 (80.5% efficacy) matches testing day 5/releasing day 7 (82.3% efficacy) while reducing quarantine by 1 day. Testing day 5/releasing day 7 has relative utility 1.53 [CI: 1.45, 1.62]; rapid test day 6 has relative utility 1.90 [CI: 1.83, 1.98].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C26-C27 present key test-and-release results with quantitative estimates and confidence intervals from the model. The comparison between rapid and delayed testing is well-justified by the trade-off between test sensitivity and quarantine duration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C43",
+      "C114",
+      "C115"
+    ],
+    "result": "Shortening quarantine from 10 to 5 days without testing requires nearly 3-fold adherence increase (relative adherence 2.90 [CI: 2.15, 4.36]); shortening to 7 days requires 30% increase (1.30 [CI: 1.08, 1.55]). With test-and-release, 5-6 day quarantine can match 10-day efficacy with 30% adherence increase, but <5 days is infeasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C43, C114-C115 quantify adherence requirements for shortened quarantine. The model-based calculations are sound and the conclusion about infeasibility of very short quarantine is well-supported by the steep adherence requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C116"
+    ],
+    "result": "In fully asymptomatic populations, 10-day quarantine prevents 90.1% [CI: 76.0%, 97.5%] of transmission. With 25% asymptomatic cases, quarantine prevents only 50.8% [CI: 42.8%, 56.5%] while self-isolation prevents 39.3%. Prevention increases with asymptomatic fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C116 quantify how symptom status affects quarantine efficacy. The model appropriately accounts for self-isolation of symptomatic cases. However, the authors acknowledge this likely overestimates quarantine efficacy (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C41"
+    ],
+    "result": "For travelers from 7-day trips, maximum local transmission is 73.3% [CI: 65.7%, 80.3%]. Standard 10-day quarantine prevents 99.9% [CI: 98.0%, 100.0%] of local transmission. Testing day 5/releasing day 7 prevents 98.5% [CI: 95.5%, 99.6%]; testing/releasing day 6 prevents 97.8% [CI: 94.4%, 99.0%]. Results are independent of travel duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C41 present model results for returning travelers with quantitative estimates and confidence intervals. The distinction between total and local transmission is appropriate given the uniform exposure assumption during travel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Testing on arrival is ineffective: testing/releasing day 0 prevents only 35.2% [CI: 35.1%, 35.3%] of local transmission; testing arrival/releasing day 2 prevents 54.1% [CI: 49.5%, 59.4%]. Testing should be postponed as late as possible; rapid tests could be crucial if performance is acceptable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C55-C57 demonstrate the poor performance of early testing due to high false-negative rates early in infection. The recommendation to delay testing is a logical inference from the model results and test sensitivity profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C109"
+    ],
+    "result": "For travelers from 7-day trips, shortening quarantine from 10 to 5 days requires 20% adherence increase (relative adherence 1.20 [CI: 1.12, 1.35]). Required adherence increase depends on travel duration, with shorter trips requiring greater increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C109 quantify adherence requirements for travelers. The model-based calculations are sound and the dependence on travel duration follows logically from the uniform exposure assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C117",
+      "C119",
+      "C54"
+    ],
+    "result": "Reducing delay between exposure and quarantine start increases preventable transmission and maximum quarantine efficacy. Further reducing this delay and test-to-result delay allows shorter average quarantine durations with increased benefit-to-cost ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C117, C119, C54 identify operational improvements that enhance quarantine effectiveness. These findings are well-supported by the model structure where earlier quarantine prevents pre-quarantine transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C120"
+    ],
+    "result": "Maximal utility strategies exist at 6-8 days quarantine for traced contacts. Under the utility metric, infection fraction doesn't affect optimal duration, making the argument to shorten quarantine due to low infection probability misguided without testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C120 present the utility optimization results. The mathematical analysis showing independence from infection fraction for standard quarantine is correct (Equation 5). This is an important policy insight about the utility metric used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C123"
+    ],
+    "result": "Test-and-release leads to lower average quarantine duration across infected and non-infected individuals, prevents more transmission than releasing without testing, increases utility, and benefits from reduced test-to-result delay. Testing-and-releasing before day 10 always increases utility compared to standard 10-day quarantine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C123 establish the advantages of test-and-release strategies. These conclusions follow logically from the model structure and are supported by the quantitative results shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C112",
+      "C113"
+    ],
+    "result": "Reinforcing prevention measures post-quarantine is effective for short quarantine periods. A 50% reduction in post-quarantine transmission leads to large efficacy and utility increases for early testing strategies, with diminishing returns as release approaches day 10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C112-C113 explore an extension where post-quarantine behavior is modified. The model results (Figure 2\u2014figure supplement 2, Figure 4\u2014figure supplement 2) support these findings, though the 50% reduction is a modeling assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Test-and-release quarantine strategies perform almost as well as standard 10-day quarantine from an epidemiological viewpoint, but with fewer person-days in quarantine. Findings apply to both travelers and contacts, but specifics depend on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 summarize the main conclusion of the study. This is well-supported by the comprehensive model results for both traced contacts and travelers across multiple scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Travelers infected on short journeys retain more infectivity potential upon return than those on long journeys. Total preventable transmission by 10-day quarantine is greater for short trips, but shorter quarantine durations impact long trips more when considering local transmission fraction. Optimal quarantine duration depends on travel duration, with shorter journeys requiring longer quarantine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe counterintuitive results arising from the uniform exposure assumption during travel. The logic is sound: earlier average exposure on long trips means less remaining infectivity upon return. Results are supported by Figure 4\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C110",
+      "C111"
+    ],
+    "result": "Under test-and-release, average quarantine duration and utility depend on infection fraction, increasing linearly with infected fraction. Relative utility of test-and-release versus standard 10-day quarantine decreases toward 1 as infection fraction increases, so test-and-release may not benefit high-prevalence scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122, C124-C125, C110-C111 analyze how infection prevalence affects test-and-release utility. The mathematical analysis (Equation 3) correctly shows linear dependence, and the inference about high-prevalence scenarios is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The model assumes: 100% adherence unless stated; no false-positives; immediate self-isolation at symptom onset; uniform infection probability during travel; isolation until 10 days post-exposure; same test sensitivity regardless of delay; false-negative profile applies to asymptomatic cases; contact infected at last exposure; post-quarantine transmission equals non-quarantined; transmission prevented by quarantine attributed to quarantine; binary adherence; no utility contribution from post-release measures; immediate self-isolation at symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C96 document model assumptions. These are clearly stated in the manuscript and are reasonable for the modeling framework, though several are acknowledged as limitations (e.g., C89, C90, C93).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Model limitations include: multiple contacts may cause earlier transmission than assumed, overestimating efficacy; any delay between symptom onset and self-isolation increases transmission prevented by quarantine; the model likely overestimates efficacy by counting transmission preventable by symptom-based isolation; lower test sensitivity for asymptomatic cases would further reduce efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C97-C99 acknowledge important model limitations. The authors appropriately recognize these limitations and their directional effects on results. This strengthens confidence in the conservative interpretation of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Model limitations include that distributions may change throughout the epidemic depending on behavioral responses to symptoms, and distributions and test sensitivity may differ between asymptomatic and symptomatic individuals, leading to overestimation of transmission prevented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 identify potential limitations supported by citations (Ali et al., Buitrago-Garcia et al.). The authors appropriately acknowledge uncertainty in parameter stability and differences between symptomatic/asymptomatic cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C17",
+      "C58"
+    ],
+    "result": "No published surveillance data directly assess quarantine duration impact on SARS-CoV-2 transmission. The findings align with recent simulation studies on quarantine for travelers (Clifford, 2020) and traced contacts (Quilty et al., 2021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C58 establish the gap in empirical evidence and position the work relative to other modeling studies. The citations appropriately support both the gap and the alignment with similar work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C42",
+      "C52",
+      "C53"
+    ],
+    "result": "Any decrease in quarantine duration increases transmission. Bringing reproductive number below 1 requires combined measures including isolation, distancing, hygiene, tracing, and quarantine. Effective quarantine requires efficient contact tracing and surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C52-C53 state fundamental principles about quarantine and epidemic control. C42 is a logical consequence of the model structure. C52-C53 are supported by citation (Kucharski et al.) and logical inference about operational requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Lengthy quarantine deters travel to high-risk areas. Shortening quarantine may increase travel volume, potentially causing compounded disease transmission increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is supported by IATA citation, but C63 is speculative about behavioral responses to policy changes. The authors appropriately label this as speculation, but the magnitude and direction of this effect are uncertain and could significantly impact policy conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "For 7-day trips, there is an almost-linear response between quarantine duration and relative utility of standard quarantine. Trips <7 days have maximum relative utility at 4-7 days; trips >7 days have maximum utility for maximally shortened quarantine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe how optimal quarantine duration varies with travel duration. The results are supported by model calculations (Figure 4B, Figure 4\u2014figure supplement 1D), though the authors note the linear response for 7-day trips is coincidental.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Current laboratory RT-PCR tests have 24-48 hr turnaround. Rapid antigen tests provide same-day results but with lower sensitivity and specificity than RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe testing technologies supported by citations (Quilty et al., 2021; Guglielmi, 2020). These establish the context for analyzing different test-to-result delays in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Infection fraction among quarantined individuals may vary with disease prevalence at destination and travel duration. Travelers from long stays in high-risk countries likely have higher infection fraction than those from short stays in low-risk countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are logical inferences about factors affecting infection prevalence among travelers. These considerations are important for interpreting the utility analyses that depend on infection fraction.",
+    "result_type": "MINOR"
+  }
+]

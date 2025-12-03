@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A two-step computational approach combining SNR-based detection with CNN training enables amplitude-invariant spindle detection across diverse recording modalities. The SNR algorithm generates high-quality training data by detecting spindles while minimizing false positives, and the resulting subject-specific CNN models can sensitively detect both large and small amplitude spindles across ECoG, EEG, and iEEG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 and C87-C90 collectively describe a methodological framework that is well-validated through multiple control analyses (Figure 1 supplements 1-12, Supplementary file 1). The approach is demonstrated to work across three very different recording types with appropriate validation controls including PSD analysis (C37-C38), time-shifted averaging (C42-C43), and simulated data testing. The method's generalizability and the availability of open-source tools (C89) further support this methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "CNN-detected spindles exhibit characteristic spectral and morphological properties consistent with established spindle definitions. Detected spindles show increased power in the 11-15 Hz range, have durations of 0.69-0.87 seconds across recording types, and display well-formed oscillatory structure in time-shifted averaging, while the CNN detects a broader amplitude range compared to amplitude threshold methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 provide converging validation evidence from multiple independent analyses (PSD, morphology, duration, time-shifted averaging) shown in Figures 1b, 1d, and supplements. The statistical comparisons with AT methods (C44) are appropriately conducted with p-values reported. The consistency with previously reported durations (C40-C41) and standard morphology (C39) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "Multi-area spindles occur 1.5-10 times more frequently than previously estimated by amplitude threshold approaches, with spindles distributed across approximately 60% of recorded cortical regions. The CNN approach reveals significantly more multi-area spindles compared to local spindles across all recording types (p<0.001-0.02), with the largest increase observed in high-resolution iEEG recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C33, C46-C49, C51, C54-C55 present the core spatial extent findings with appropriate statistical testing (Wilcoxon signed-rank tests with reported p-values) shown in Figure 2 and supplements. The finding is consistent across three independent recording modalities (ECoG, EEG, iEEG), and the largest effect in highest-resolution iEEG (C51) provides internal consistency. The comparison accounts for different spatial sampling across subjects (C47, Figure 2 supplement 1a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Following high-load visual memory tasks, regional and multi-area spindles increase significantly (p<0.038 and p<0.026 respectively) compared to low-load conditions, while local spindles show no change. This effect is detected by both CNN and SNR methods but not by amplitude threshold approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C59-C63 describe a memory-load dependent modulation of spindle spatial extent with appropriate statistical testing (paired Wilcoxon signed-rank tests) shown in Figure 3b and supplements. The control that spindle amplitudes did not differ between conditions (C59) rules out amplitude confounds. Convergent evidence from both CNN and SNR methods (C62) with failure of AT to detect the effect (C63) validates the sensitivity advantage of the new approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Electrode participation during spindles increases significantly in high-load versus low-load visual memory conditions across cortical lobes, with the largest increase in occipital lobe and smallest in frontal lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe lobe-specific modulation patterns shown in Figure 3 supplement 2b with statistical significance reported (p<1\u00d710^-9 to 1\u00d710^-10). The gradient from occipital to frontal lobes is consistent with the visual nature of the memory task, providing face validity to the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C82"
+    ],
+    "result": "Multi-area spindles are organized into rotating waves that shift significantly toward the temporal\u2192frontal\u2192parietal (TFP) direction under high memory load conditions (p<0.003-0.007). This directional shift is specific to multi-area spindles and disappears when analyzing only local spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C67-C70, C82 describe spatiotemporal wave organization with appropriate statistical testing (paired Wilcoxon signed-rank tests) shown in Figure 4 and Video 1. The control analysis restricted to local spindles (C68) demonstrates specificity to multi-area events. The validation using simulated data (Figure 4 supplement 1) supports the measurement approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C76",
+      "C77",
+      "C81",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors propose that rotating spindle waves traveling at speeds matching axonal conduction (2-5 m/s) could align spikes across distributed cortical areas to enable synaptic plasticity for memory consolidation, with TFP waves potentially reflecting top-down influence from higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C21, C76-C77, C81, C84, C86 present mechanistic interpretations that are speculative (as indicated by evidence_type including SPECULATION and INFERENCE). While the wave propagation speeds (C19-C20) match known axonal conduction speeds, the causal link to synaptic plasticity and memory consolidation is not directly tested. The interpretation of TFP waves as top-down influence (C84) is plausible but remains speculative without additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "iEEG has the highest spatial resolution among recording types studied and shows the largest increase in multi-area spindles with CNN versus AT detection. In ECoG, the CNN detects fewer local/regional spindles than AT due to threshold variability in one subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe recording-specific observations with appropriate citations (C50) and data-based explanations (C52-C53, Figure 2c). The explanation for the ECoG anomaly (C53) is transparent and demonstrates careful analysis of potential confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Three datasets were analyzed: NHP ECoG (128 electrodes, 1 kHz sampling), human scalp EEG (20 participants, 64 electrodes, stage 2 NREM sleep), and human iEEG (5 epilepsy patients, 9-15 depth electrodes). Four EEG subjects were excluded due to insufficient sleep or noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 describe the datasets with appropriate technical specifications and citations to data sources. The exclusion criteria (C95) are clearly stated. The diversity of recording types strengthens the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The SNR algorithm measures the ratio of power in 9-18 Hz to rest of spectrum (1-100 Hz) over 500 ms windows, with threshold set at 99th percentile and duration constraints of 0.5-3 seconds. Validation using awake-state cortical model data showed SNR values uniformly below 0 dB, confirming specificity for spindle detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe the SNR algorithm implementation with clear technical specifications and validation using ground-truth data (C104). The use of a spiking network model without thalamic components provides appropriate negative control validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The CNN architecture consists of five convolutional layers (32-256 filters) and four fully connected layers, tailored to recording sampling rates. Subject-specific models were trained on ~1500 windows using 500 ms sliding windows with 100 ms steps, classifying spindles as local (1-2 sites), regional (3-10 sites), or multi-area (>10 sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 provide detailed technical specifications of the CNN implementation. The architecture choices are validated through sensitivity analysis (Figure 1 supplement 9, Supplementary file 3) showing robustness to hyperparameter variations. The classification scheme is clearly defined and consistently applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript contextualizes the work within the historical debate about spindle spatial extent, noting that early recordings suggested widespread spindles while recent intracranial work reported local spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C14 accurately represent the scientific literature with appropriate citations. These claims establish the motivation for the study by identifying the discrepancy between early and recent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C15",
+      "C16",
+      "C17",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The manuscript reviews established knowledge about memory consolidation, synaptic plasticity, and the role of sleep spindles, noting that while spindles causally contribute to memory consolidation, the mechanism for coordinating activity across distributed cortical areas remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17, C71-C74 accurately represent established knowledge with appropriate citations. These background claims are well-supported by the cited literature and establish the scientific context and knowledge gap addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous work identified that spindles organize into rotating waves traveling at 2-5 m/s, matching axonal conduction speeds, with theoretical work suggesting relative phase between populations affects STDP balance. Thalamocortical circuits may set the rhythm while corticocortical connections shape waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C75, C78-C80 accurately represent prior work with appropriate citations, primarily to Muller et al. 2016 and related theoretical studies. These claims establish the mechanistic framework motivating the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Spindle amplitudes vary across cortical regions and recording sites due to both biological and technical factors, leading to the hypothesis that amplitude threshold methods may underestimate spatial extent by detecting only largest-amplitude events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 present the methodological motivation with appropriate citations (C22-C23). The reasoning about AT limitations (C24) is logical and subsequently validated by the empirical findings (C32-C33, C44-C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C57",
+      "C58"
+    ],
+    "result": "Manual expert scoring of sleep recordings is expensive and subjective, and while increased spindle density after memory tasks is well-established, the effect on spindle co-occurrence was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C57-C58 accurately characterize current practices and knowledge gaps in the field with appropriate citations (C57). These claims establish the practical motivation for automated methods and identify the specific novel question addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C85"
+    ],
+    "result": "The observed TFP wave direction is opposite to the dominant TPF direction in previous work, and prior studies found spindles can occur broadly with low synchrony, which traveling waves could explain through systematic phase offsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85 accurately represent prior findings with appropriate citations. The comparison to previous work (C83) is data-based (Figure 4), and the interpretation connecting to prior observations (C85-C86) is reasonable though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "For iEEG electrode localization, semi-automatic contact localization was performed using 3D Slicer SEEGA module, and the CerebrA atlas was used for anatomical labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 describe standard neuroimaging analysis procedures with appropriate citations to the software and atlas used. The methods are clearly specified and reproducible.",
+    "result_type": "MINOR"
+  }
+]

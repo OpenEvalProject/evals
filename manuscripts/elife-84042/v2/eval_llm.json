@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Manual quantification of mouse scratching behavior is the current standard practice in the field but is labor-intensive, time-consuming, introduces human errors and bias, and limits large-scale genetic or drug screenings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C18-C20 establish the motivation for the study by describing current practice and its limitations. These are well-established facts in the field supported by common knowledge and logical inference about manual methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Previous automated methods for quantifying mouse scratching behavior exist but have not been widely adopted due to uncertain performance in different lab environments, requirement of specialized equipment, and inadequate evaluation in different mouse itch models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 describe prior work and its limitations, supported by citations and reasonable inferences about why these methods have not been adopted. This provides context for the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A custom-designed videotaping box was developed with specific dimensions and bottom-view recording at 30 fps that clearly captures key body parts involved in scratching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C32-C36 describe the videotaping system design with specific measurements and recording parameters. The design is well-documented with figures and represents a methodological contribution to ensure reproducible recording conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C48"
+    ],
+    "result": "Forty scratching videos from 10 mice were recorded using the CQ acute nape itch model, and scratching behavior was characterized into four phases with specific temporal dynamics, with manual annotation performed by 10 human observers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 and C48 describe the dataset creation and behavioral characterization. The methodology is clearly described with appropriate sample sizes and detailed behavioral definitions supported by figures showing the scratching phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A convolutional recurrent neural network (CRNN) was designed combining ResNet-18 CNN for extracting static features, bidirectional GRU RNN for extracting dynamic features, and a fully connected classifier layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C44-C46 describe the neural network architecture. The design is well-documented with appropriate citations and figures showing the network structure. The combination of CNN and RNN is appropriate for capturing both spatial and temporal features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The 40 videos were split 80/20 into training and test sets, and models were trained with input lengths ranging from 3-45 frames, achieving >0.98 accuracy after 10 epochs with slight improvement as input length increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C49-C52 describe the training methodology and results. The data splitting and training parameters are clearly described, and the results are supported by figures showing training curves. The plateau after 10 epochs demonstrates efficient training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The best trained network (N=45, videos 1-32) achieved 97.6% recall and 96.9% precision on test videos, with cross-validation showing F1 scores above 0.9 for all training/test combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C53-C55 present the main performance results. The cross-validation approach strengthens the findings by ruling out specific dataset effects. The high performance metrics are well-documented with figures showing consistent results across different data splits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model's performance (97.6% recall, 96.9% precision, 1.9% discrepancy, 0.98 correlation) was comparable to or slightly better than manual annotation (95.1% recall, 94.2% precision, 2.1% discrepancy, 0.98 correlation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 compare model performance to manual annotation. The comparison is appropriate and well-documented with figures. The similar or better performance compared to manual annotation is a key finding supporting the system's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Saliency map analysis revealed that the trained neural network focused on the scratching hind paw to recognize mouse scratching behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by saliency map analysis shown in figures. This provides interpretability to the model's decision-making process and confirms it learned biologically relevant features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Detailed error analysis showed the model's dominant error was Type 3 (blurred boundary, ~3%), with the model outperforming manual annotation in boundary detection (2.2 vs 11.5 frame start shift, 7.0 vs 12.8 frame end shift) but missing some short scratching trains (<30 frames).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 provide comprehensive error analysis with specific quantification of different error types. The analysis is thorough and well-documented with supplementary figures. The comparison to manual annotation errors provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Scratch-AID reliably identified scratching behavior in the acute cheek model with 93.4% recall, 94.8% precision, 0.941 F1 score, and 0.9926 correlation, comparable to manual annotation performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C71-C74 demonstrate generalization to the cheek model. The performance metrics are well-documented with figures and show the model trained on nape scratching can generalize to a different body location, which is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Scratch-AID reliably identified scratching behavior in the histaminergic model with 96.6% recall, 90.91% precision, 0.936 F1 score, and 0.9707 correlation, outperforming manual annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C75-C78 demonstrate generalization to a different pruritogen (histamine vs chloroquine). The performance metrics are well-documented and show the model can generalize across different itch-inducing agents, supporting broad applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Scratch-AID identified scratching behavior in a chronic itch model (SADBE) with 84.1% recall, 88.5% precision, 0.862 F1 score, and 0.9845 correlation, despite different scratching dynamics (shorter trains, less total time), outperforming manual annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C79-C83 demonstrate generalization to chronic itch with different behavioral dynamics. The lower but still good performance is appropriately contextualized by the different scratching characteristics. This is a strong test of generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C84",
+      "C85"
+    ],
+    "result": "Scratch-AID detected significant differences in scratching behavior between control and Benadryl-treated mice in a drug screening paradigm, with results similar to manual annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C84, and C85 demonstrate practical application in drug screening. The significant difference detected by both methods validates the system's utility for pharmacological studies. Statistical significance is appropriately reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The Scratch-AID system can automatically identify and quantify mouse scratching behavior with high accuracy and broad generalization, representing the first deep learning-based system to achieve such performance, and is ready to replace manual quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C91-C93 present the main conclusions. These are well-supported by the comprehensive experimental data showing high accuracy across multiple itch models and comparable or better performance than manual annotation. The claim of being 'first' is qualified appropriately ('as far as we are aware').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Variable video recording conditions are a major barrier to adoption of trained neural networks by different laboratories, as models typically do not perform well with videos recorded under different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 discuss a known limitation in the field based on established knowledge about machine learning model generalization. This motivates the custom videotaping box design and is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The CRNN architecture combining ResNet and GRU is highly efficient for analyzing animal behaviors, achieving accuracy plateau after only 10 epochs, with performance positively correlating with training dataset size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 discuss the neural network design and training efficiency. C88 represents established machine learning knowledge, while C89-C90 are supported by the experimental results showing rapid convergence and good performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Chronic itch affects 13-17% of the population and severely worsens quality of life, with limited treatment options. Mice are widely used for studying itch mechanisms and developing anti-itch drugs, with scratching behavior serving as a proxy for itch intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 provide background context supported by citations. These establish the clinical significance and rationale for the research, representing well-established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CNNs are widely used for visual recognition tasks and RNNs for temporal analysis, with applications like DeepLabCut for body part tracking and DeepEthogram for behavior recognition in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide background on deep learning methods supported by citations. This establishes the technical foundation and precedent for the approach used in the study.",
+    "result_type": "MINOR"
+  }
+]

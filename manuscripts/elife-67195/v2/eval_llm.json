@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C89"
+    ],
+    "result": "The TCR extracellular (EC) domain exhibits substantial orientational variability with tilt angles ranging from 15\u00b0 to 55\u00b0 relative to the membrane normal, with a mean of 33.4\u00b0 and standard deviation of 8.9\u00b0 in equilibrated simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C41, and C89 collectively demonstrate the tilt angle variability through simulation data. The range (15-55\u00b0) is consistently reported, and statistical measures (mean 33.4\u00b0, SD 8.9\u00b0) from 6000 equilibrated structures provide quantitative support. The equilibration analysis (C32) validates the sampling adequacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C90"
+    ],
+    "result": "The tilt angle of the TCR EC domain is coupled to its rotation angle, with rotation angles varying from 0\u00b0 to 55\u00b0 and showing tilt-dependent distributions where higher tilt angles correlate with increased rotation angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C45, and C90 demonstrate coupling between tilt and rotation through the two-dimensional probability distribution (Figure 3c). The specific angle relationships (e.g., 40\u00b0 tilt \u2192 32\u00b0 rotation) are quantitatively supported by simulation data with appropriate statistical measures (mean 26.1\u00b0, SD 15.1\u00b0).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C48",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "The tilt angle of the TCR EC domain is coupled to characteristic changes in extracellular domain contacts, specifically a decrease in C\u03b2 FG loop contacts (from ~30 to ~0) and an increase in V\u03b1 domain contacts (to ~2) with increasing tilt angle from 15\u00b0 to 50\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C48-C50, and C53 are supported by quantitative contact analysis shown in Figure 3d. The inverse relationship between tilt angle and C\u03b2 FG loop contacts, and the positive relationship with V\u03b1 contacts occurring only above 30\u00b0 tilt, are clearly demonstrated with error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C51",
+      "C52",
+      "C54"
+    ],
+    "result": "The tilt angle of the TCR EC domain is coupled to changes in transmembrane helix orientations, with TCR\u03b1 TM helix inclination decreasing from ~11.5\u00b0 to ~8.5\u00b0 and CD3\u03b3 TM helix inclination increasing from ~15.5\u00b0 to ~24\u00b0 as tilt increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C51-C52, and C54 are supported by quantitative analysis in Figure 3e showing systematic changes in TM helix inclination angles correlated with TCR EC domain tilt. The measurements include error estimates and show statistically significant trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MD simulations reveal significantly more residue-residue contacts in the TCR-CD3 complex compared to the cryo-EM structure, including extensive C\u03b2 FG loop contacts and novel V\u03b1 domain contacts with CD3\u03b5\u03b4 occurring in 75 of 120 trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C37-C40 are supported by contact map analysis (Figure 2) showing contacts with >0.5% probability across 6000 structures. The V\u03b1-CD3\u03b4 contacts, though low probability (<3%), occur in 75/120 trajectories, demonstrating robustness. The comparison to cryo-EM structure is explicit and quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C107"
+    ],
+    "result": "The concerted motions of the membrane-embedded TCR-CD3 complex revealed in simulations provide atomistic insights on conformational changes in response to tilt-inducing forces on antigen-bound TCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C107 are supported by the comprehensive simulation data showing coupled tilt-rotation-contact-TM helix changes. While the connection to force-induced changes involves inference, it is reasonable given the demonstrated coupling between tilt and structural changes throughout the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The TCR\u03b1\u03b2 EC domain is structurally stable and rigid within the TCR-CD3 complex, with small RMSD (~2 \u00c5) relative to cryo-EM structure and minimal variation in internal domain geometry (angle between axes A and B: mean 86.5\u00b0, SD 1.9\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by RMSD analysis (Figure 4-supplement 1) and angle distribution statistics. The small standard deviation (1.9\u00b0) for the internal angle and low RMSD values demonstrate domain rigidity, while the inference about stability is reasonable given these quantitative measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C23"
+    ],
+    "result": "The main structural variations of the TCR-CD3 complex arise from orientational variations of the TCR\u03b1\u03b2 EC domain relative to the membrane rather than from internal domain deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C23 are supported by the combination of large tilt/rotation angle variations (SD 8.9\u00b0 and 15.1\u00b0) versus small internal domain angle variation (SD 1.9\u00b0) and low RMSD values. This inference is well-justified by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Contact clusters show positive correlations that reflect coupling to TCR EC domain tilt: clusters 1-4 (V\u03b1-CD3\u03b4 interactions) correlate because they only occur at high tilt angles, while clusters 13-21 (C\u03b2 FG loop interactions) correlate because they decrease with tilt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by correlation analysis (Figure 2-supplement 1) combined with tilt-dependent contact data (Figure 3d). The mechanistic explanation linking correlations to tilt-dependent contact formation/breaking is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "Beyond concerted tilt-coupled motions, the majority of EC domain contact clusters show weak correlations indicating independent motions, with some negative correlations pointing to alternative, mutually exclusive contact configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 and C108 are supported by the correlation analysis showing predominantly weak correlations and specific negative correlations (e.g., clusters 13-21 vs 22). The inference about independent motions and alternative contacts is reasonable given the correlation patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C74"
+    ],
+    "result": "The 120 simulation trajectories of 1 \u03bcs each equilibrate within 0.5 \u03bcs and provide cumulative sampling on timescales exceeding individual trajectory lengths, yielding equilibrated conformational and orientational distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C74 are supported by equilibration analysis (Figure 4) showing convergence of tilt/rotation angles and contact numbers within 0.5 \u03bcs. The cumulative sampling claim is supported by citations to established methods (Pande et al., No\u00e9 et al.) and demonstrated equilibration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study employed 120 \u03bcs cumulative atomistic MD simulations using Amber99SB-ILDN protein and Lipid14 membrane force fields at 30\u00b0C, with the TCR-CD3 complex embedded in a POPC/cholesterol membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C28-C31 describe the computational methodology. These are straightforward methodological statements that are internally consistent and follow standard MD simulation practices. The force field choices are appropriate for the system studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The cryo-EM structure of the TCR-CD3 complex has a tilt angle of 31.2\u00b10.4\u00b0 and rotation angle of 14.7\u00b10.7\u00b0 when aligned to simulation conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by structural alignment analysis with appropriate error estimates from 120 alignments. The values place the cryo-EM structure within the simulated distribution, providing validation of the simulation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C57"
+    ],
+    "result": "The C\u03b1 AB loop, implicated in TCR triggering, shows decreased contacts with CD3\u03b5\u03b3 with increasing tilt angle of the TCR\u03b1\u03b2 EC domain, similar to the C\u03b2 FG loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C57 are supported by simulation data (Figure 3-supplement 1) showing tilt-dependent contact decrease. The citation to Beddoe et al. 2009 for the functional implication is appropriate background, and the simulation result is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The TCR\u03b1 TM helix remains intact on microsecond timescales without breaking at a hinge, though larger conformational rearrangements observed in NMR may occur on longer timescales or depend on membrane composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by direct observation in simulations. Claims C77-C78 are appropriately qualified as speculation about processes beyond the simulation timescale. The acknowledgment of limitations and citation to NMR data (C76, Brazin et al.) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Membrane thickness does not change significantly with increasing tilt angle of the TCR\u03b1\u03b2 EC domain within statistical accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by membrane thickness analysis (Figure 3-supplement 3b) with appropriate error estimates. This negative result is important for ruling out membrane deformation as a confounding factor in the observed structural changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on TCR-CD3 complex: T cells recognize MHC-peptide antigens via the TCR complex, where TCR\u03b1\u03b2 binds antigen and CD3 dimers contain signaling motifs; the complex stoichiometry was known for two decades before the structure was solved by cryo-EM in 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 provide established background knowledge supported by appropriate citations to the literature. These are well-established facts in the field and the citations (Call et al. 2002, Dong et al. 2019, etc.) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The cryo-EM structure determination by Dong et al. involved chemical crosslinking and detergent replacement, revealing EC domain contacts that explain cooperative binding, though the C\u03b2 FG loop shows limited contacts despite its proposed role in activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 accurately describe the Dong et al. cryo-EM structure and its features, with appropriate citations. The observation about limited C\u03b2 FG loop contacts in the cryo-EM structure (C18) sets up the motivation for the current simulation study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Discussion of force-based mechanisms: MHC molecules have more flexible membrane anchoring than TCR-CD3; transversal forces up to 5 pN are physiologically relevant; force-induced tilt may affect CD45 segregation and other receptor-ligand segregation phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C66, C69-C71 provide appropriate context from the literature with proper citations. The structural comparison between MHC and TCR-CD3 anchoring (C60-C61) provides reasonable justification for the modeling assumptions, though the assumption itself requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Methodological justification: Atomistic force fields were chosen over coarse-grained models due to limitations in describing low-affinity interactions and disordered segments; recent related studies used coarse-grained (25 \u03bcs) and atomistic (4 \u03bcs) approaches for different aspects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C79-C81 provide appropriate methodological justification with citations. The rationale for choosing atomistic simulations is sound given the importance of low-affinity EC domain interactions, and the comparison to other recent studies provides context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Analysis and simulation parameters: Contacts defined as <0.45 nm separation, analyzed from 6000 structures at 10 ns intervals; simulations used Langevin thermostat, Berendsen barostat, and hydrogen mass repartitioning allowing 4 fs timestep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C85-C88 describe standard analysis methods and simulation parameters. The contact definition (0.45 nm) is reasonable, the sampling (6000 structures) is adequate, and the simulation parameters follow established best practices for MD simulations.",
+    "result_type": "MINOR"
+  }
+]

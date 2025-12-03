@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Deforestation is associated with short-term increases (1-2 years) and long-term decreases (3-5 years) in malaria incidence in Lao PDR. These associations are specific to deforestation within 30 km of villages, with no associations found at 1 km or 10 km spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C83-C86 provide converging evidence from spatio-temporal modeling with specific effect estimates and confidence intervals. The analysis controlled for treatment-seeking probability, environmental covariates, and spatio-temporal structure. The findings show statistically significant IRRs at 30 km (e.g., IRR=1.16 [1.10-1.22] at 1 year, IRR=0.94 [0.91-0.97] at 5 years in the south) but null associations at smaller spatial scales, providing strong support for the spatial and temporal specificity of the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The associations between deforestation and malaria are driven by deforestation in densely forested areas (tree crown cover >87%) rather than less forested areas, with effect sizes becoming more pronounced when restricting analysis to denser forests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C93-C96 demonstrate that IRRs increase from 1.16 to 1.28 for short-term effects and decrease from 0.94 to 0.83 for long-term effects when restricting to areas with >87% tree crown cover. This dose-response relationship strengthens the inference that deforestation in deep, dense forests is more closely associated with malaria incidence, though confidence intervals widen at the highest forest density threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C107"
+    ],
+    "result": "The deforestation-malaria associations are more pronounced for P. falciparum than P. vivax. P. falciparum shows strong short-term increases (IRR=1.27 [1.18-1.36] at 1 year) and long-term decreases (IRR=0.83 [0.80-0.87] at 5 years), while P. vivax shows attenuated short-term increases (IRR=1.07 [1.01-1.13]) and no long-term decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C87-C92 provide species-specific analyses showing clear differential patterns. The P. falciparum associations mirror the overall pattern with stronger effect sizes, while P. vivax shows weaker short-term associations and no long-term protective effects. This is biologically plausible given P. vivax's relapsing capability (C109), which decouples transmission from incidence. The species-specific findings are well-supported by data from the co-endemic southern region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C105",
+      "C106"
+    ],
+    "result": "The study found an earlier inflection point (1-3 years) compared to the Amazon's frontier malaria hypothesis (6-8 years), likely due to different human processes: established forest-fringe communities making regular forest trips in the GMS versus new settlements in the Amazon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 and C105-C106 provide interpretation of the temporal patterns, but the mechanistic explanation is largely speculative (C105, C106 explicitly marked as speculation/inference). While the temporal pattern is well-documented in the data, the proposed mechanism about forest-going populations and exposure patterns lacks direct empirical validation. The comparison to the Amazon is reasonable but the causal pathway remains uncertain without data on actual forest-going behavior or mosquito exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study regions differed substantially in forest characteristics, population density, altitude, and climate. The north had denser forest cover, higher deforestation rates (2.5% vs 1% within 10 km in 2015), lower population density, higher altitude, and lower precipitation/temperature than the south.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 describe baseline characteristics of the study regions based on analysis of forest data (Figure 1), census data, elevation data, and climate data. These descriptive statistics are well-documented and provide important context for interpreting regional differences in malaria-deforestation associations. The data sources are appropriate and the characterizations are straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study collected 63,040 patient records from the south (October 2013-October 2016) and 1,754 from the north (January 2013-December 2016). Testing rates were high (>91%) in both regions, with test positivity of 33.2% in the south and 23.8% in the north. The regions differed in species composition, incidence levels, and patient demographics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C77 provide detailed descriptive statistics of the malaria surveillance data. The large sample sizes, high testing rates, and comprehensive demographic data support the robustness of the dataset. The regional differences in species composition (P. vivax dominant in north, co-endemic in south) and patient characteristics (age, gender, occupation) are well-documented and provide important epidemiological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "88.1% of malaria records were successfully geo-referenced to study villages. Excluded records (11.7% south, 17.3% north) were due to ambiguous village names or administrative changes. Test positivity was similar between matched and unmatched records in the south but differed in the north.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 document the geo-referencing process and data quality. The high matching rate (88.1%) and similar test positivity between matched/unmatched records in the south suggest minimal selection bias. The difference in the north (26.5% vs 10.5% test positivity) raises some concern about potential bias, though the overall low incidence in the north limits the impact on main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Treatment-seeking probability was modeled as a function of travel time to health facilities. Predicted probabilities were 0.87 (north) and 0.78 (south) for villages at health facilities, with odds ratios of 0.79 (north) and 0.76 (south) per hour increase in travel time, though not reaching statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C60 describe the treatment-seeking model used to adjust incidence estimates. While the approach is methodologically sound, the wide confidence intervals (crossing 1.0) indicate the associations with travel time did not reach statistical significance. This raises questions about whether the correction for treatment-seeking adequately addresses potential bias from differential health facility access, though the sensitivity analysis (mentioned but not detailed) may address this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study's findings are consistent with three previous Southeast Asian studies (Garg 2015, Pattanayak et al. 2010, Fornace et al. 2016) that found positive associations between deforestation and malaria, though those studies had limitations including coarse spatial resolution and different malaria species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 accurately summarize prior literature and position the current study's findings in context. The comparison is fair and acknowledges both consistencies and differences (spatial resolution, species studied). This strengthens the current study by showing convergent evidence across multiple settings while highlighting methodological improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The attenuated P. vivax associations compared to P. falciparum are consistent with findings from the Amazon and are explained by P. vivax's ability to relapse months or years after infection, which decouples transmission from incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 provide a biologically plausible explanation for the species-specific differences, supported by citation to MacDonald and Mordecai 2019 and established knowledge about P. vivax biology. The relapsing capability of P. vivax is well-documented and provides a mechanistic explanation for why temporal associations with environmental exposures would be weaker for P. vivax than P. falciparum.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The Hansen forest data used in the study has been criticized for not distinguishing tropical forests from agroforestry or man-made from natural causes of deforestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 acknowledge important limitations of the forest data source. These are legitimate concerns that could affect interpretation of results, as different types of forest loss (e.g., agricultural clearing vs. logging) may have different implications for malaria transmission. The authors appropriately acknowledge these limitations, though they do not fully address how this might bias their findings.",
+    "result_type": "MINOR"
+  }
+]

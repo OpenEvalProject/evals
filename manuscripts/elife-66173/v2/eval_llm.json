@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "FED3 is a compact, battery-powered, open-source device for measuring food intake and operant behavior in rodent home-cages. It contains two nose-pokes, a pellet dispenser, audiovisual stimuli, a programmable output with <200 \u00b5s timing precision, and costs ~$200 in electronics, making it >10\u00d7 cheaper than commercial alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C20, C65-C66, C71-C72, and C88-C93 provide comprehensive technical specifications and design details that are well-documented with figures and methods. The hardware specifications, cost estimates, and open-source nature are explicitly stated with supporting evidence from the design and construction sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FED3 accurately measures food intake in free-feeding mode with ~3% error rate (R\u00b2=0.97) compared to manual weighing, detects expected circadian rhythms, and maintains stable mouse body weight over 6+ days. The device has low jamming rates due to an angled pellet hopper design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 are well-supported by experimental data from 10 mice over 6 days (Figures 2B-E). The accuracy validation using regression analysis (R\u00b2=0.97) and stable body weights provide strong evidence. The low jamming claim is supported by design features and extended use data, though quantitative jamming rates are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C100",
+      "C101"
+    ],
+    "result": "FED3VIZ is an open-source Python-based analysis program that provides multiple visualization options for FED3 data including pellet retrieval, poke accuracy, retrieval time, inter-pellet intervals, meal size, and progressive ratio breakpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C100-C101 describe the FED3VIZ software with clear documentation of its capabilities and implementation. The software is demonstrated in Figure 2F and is available as open-source code, providing adequate support for these methodological claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C102",
+      "C103"
+    ],
+    "result": "FED3 enables meal pattern analysis by recording pellet removal timestamps. Using inter-pellet interval histograms, meals were defined as pellets consumed within 1 minute of each other (minimum 5 pellets). Analysis revealed mice eat fewer meals during the light cycle but similar pellets per meal across cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C102-C103 are supported by data in Figure 3 showing inter-pellet interval distributions and meal patterns. The meal definition is data-driven based on observed distributions, and the circadian differences in meal number (but not meal size) are statistically significant (p<0.0001, Figure 3B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In FR1 operant testing, both active and inactive pokes were higher during the dark cycle, but poke efficiency (% active pokes) was slightly higher during the light cycle, suggesting more efficient operant responding during the light phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by data from 10 mice over 6 days (Figure 4B-E). Statistical analysis shows significant interaction effects (F(1,792)=85.225, p<0.0001) and the poke efficiency difference is significant (p=0.0001). However, the interpretation of 'efficiency' (C42) is inferential and could have alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Multi-site study of 122 mice from seven laboratories showed variable pellet acquisition across sites but overall Gaussian distribution. Retrieval time, active poke count, and poke efficiency improved over time, with learning rates equivalent between 16 daily 1-hour sessions and one 16-hour overnight session, suggesting cumulative interaction time drives FR1 task acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 are supported by extensive multi-site data (Figure 5). Statistical tests confirm significant group effects (F(6,115)=6.4223, p<0.0001) and time effects on learning metrics. The comparison between training schedules (C48) shows no significant difference in learning rates, supporting the cumulative time hypothesis (C49-C50), though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Magazine training (1-3 days of free-feeding exposure) resulted in significantly higher (~2\u00d7) pellet acquisition during the first FR1 session compared to non-magazine trained mice, leading to the recommendation that magazine training speeds up acquisition of nose-poking tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by comparison of 24 magazine-trained mice to 122 non-trained mice (Figure 6B-C). The difference is statistically significant (p=0.0001, Student's t-test) with a clear effect size (~2\u00d7). The recommendation (C52) is a reasonable inference from this data, though based on a single comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In closed-economy progressive ratio testing, mice maintained stable body weight while earning all calories, with equal pellets earned across light/dark cycles but higher nose-poking rates and pokes per pellet during the dark phase. A ~3-hour window of enhanced poking after dark onset coincides with reported peaks in striatal dopamine and mouse activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are well-supported by data from 7 mice over 4 days (Figure 7). Stable weights (C53) support the inference that mice earned sufficient calories (C54). Statistical tests confirm significant differences in pokes (p=0.0044) and pokes per pellet (p=0.0007) between cycles. The correlation with dopamine/activity peaks (C60-C61) is supported by citations but represents cross-study comparison rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "FED3 can perform optogenetic self-stimulation experiments. Three Drd1-Cre mice with ChR2 expressed in dorsomedial striatum showed significantly greater active versus inactive pokes when active pokes triggered 1-second trains of 475nm light at 20Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64 and C95-C99 describe the optogenetic experiment with appropriate methods. However, the sample size is very small (n=3 mice), no statistical test or p-value is reported for the 'significantly greater' claim (C63), and no control conditions (e.g., non-ChR2 expressing mice) are described. While the data trend supports the capability claim (C64), the evidence is insufficient for strong conclusions about the behavioral effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "FED3 and its predecessor FED have been adopted by multiple research groups and used in published studies examining neural circuit manipulations, weight-loss effects on motivation, stress susceptibility, and synchronized with various recording modalities including fiber-photometry, electrophysiology, optogenetics, and video tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C73-C76 are supported by multiple citations to published work using FED/FED3. These represent independent validation of the device's utility across different laboratories and applications. The claims are appropriately attributed to prior published work rather than data presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FED3 has several acknowledged limitations: animals can hoard pellets without consuming them (<10% of mice), granular bedding can interfere with pellet detection, the device is not waterproof, and it cannot identify individual mice in group-housed environments, requiring single housing for data collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 transparently describe device limitations with appropriate caveats and recommendations. The hoarding frequency estimate (C78) is based on authors' experience rather than systematic quantification. These limitations are honestly reported and represent important considerations for experimental design, though they do not undermine the primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C104"
+    ],
+    "result": "Experiments used 159 C57Bl/6 mice housed in 12-hour light/dark cycles with ad libitum food and water. All procedures were approved by institutional animal care committees at five institutions. Statistical significance was set at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C104 describe standard methodological details that are appropriately documented. Ethical approval from multiple institutions is stated, and the statistical threshold is conventional. These represent necessary methodological information rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

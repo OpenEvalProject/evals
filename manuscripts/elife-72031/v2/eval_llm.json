@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study identified 259 CpGs (SoC-CpGs) showing consistent associations between season of conception and DNA methylation across three datasets from two independent Gambian child cohorts. These SoC-CpGs exhibit heterogeneous year-round methylation patterns with peaks in August-September (rainy season) and nadirs in February-April (dry season), show increased seasonal amplitudes compared to controls, are enriched for metastable epialleles, and demonstrate highly correlated timing of methylation maxima across cohorts despite different confounding structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C57 collectively provide strong, converging evidence from multiple independent datasets (ENID 2yr, ENID 5-7yr, EMPHASIS 7-9yr) with different confounding structures. The statistical analyses using Fourier regression are appropriate, effect sizes are substantial (>4% amplitude threshold), correlations across cohorts are highly significant (rho=0.7, p=1.0\u00d710\u207b\u2078), and controls show no such patterns. The consistency across datasets with different sample collection times strengthens causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "SoC effects on DNA methylation are most apparent in early infancy (2 years) and show significant attenuation by mid-childhood (7-9 years), with the effect being most marked at metastable epialleles (4.1% median decrease at MEs vs 1.9% at non-ME CpGs, both p<10\u207b\u2076). This attenuation is specific to SoC-CpGs and not observed in matched or random controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C48, C49, C50, C53 are well-supported by cross-cohort comparisons and longitudinal data from the same individuals. The statistical evidence is strong (Wilcoxon p=6.7\u00d710\u207b\u00b9\u00b2 for longitudinal comparison), effect sizes are substantial and specific to SoC-CpGs, and the differential attenuation at MEs vs non-MEs provides mechanistic insight. The use of both cross-sectional and longitudinal designs strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SoC-associated CpGs show strong enrichment for metastable epialleles identified in previous studies (21-fold enrichment, p=3.0\u00d710\u207b\u00b2\u00b3), with 24 SoC-CpGs directly overlapping previously identified MEs and 49 (19%) falling within 100 bp of an ME. The majority of overlapping MEs were identified through systemic interindividual variation screens rather than epigenetic supersimilarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41, C68-C72 demonstrate strong statistical enrichment with appropriate controls. The enrichment is highly significant even after cluster adjustment (17-fold, p=3.1\u00d710\u207b\u00b9\u00b9), and the lack of ME overlap with matched controls (C72) rules out artifacts from methylation distribution matching. The distinction between SIV and ESS identification methods (C71) provides mechanistic insight into timing of establishment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SoC-associated CpGs show strong enrichment for parent-of-origin-specific methylation (18-fold enrichment, p=3.0\u00d710\u207b\u2078), driven primarily by a large PofOm region spanning 6 CpGs at IGF1R on chromosome 15, plus two singleton PofOm SoC-CpGs near PARD6G and in the Prader-Willi syndrome-associated imprinted region near MAGEL2. No enrichment was observed at matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C87 are supported by significant enrichment analysis with appropriate controls and comparison to published PofOm data from Zink et al., 2018. The identification of specific genomic regions (IGF1R, PARD6G, MAGEL2) provides biological plausibility, and the lack of enrichment in matched controls rules out artifacts. However, the enrichment is driven by a small number of regions, which somewhat limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "SoC-associated CpGs show strong enrichment for oocyte germline differentially methylated regions (6.2-fold enrichment, p=2.3\u00d710\u207b\u00b9\u2076), with 14% (36/259) of SoC-CpGs overlapping oo-gDMRs that cluster into 19 distinct regions. However, the majority of SoC-CpGs hypomethylated in sperm are not oo-gDMRs, suggesting that factors associated with regional sperm hypomethylation rather than differential gametic methylation may be key drivers of periconceptional environmental sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C92 are well-supported by enrichment analysis with published gDMR data from Sanchez-Delgado et al., 2016, including cluster adjustment. The observation that most sperm-hypomethylated SoC-CpGs are not oo-gDMRs (C92) is an important mechanistic insight supported by Figure 5C and 5D. The inference about sperm hypomethylation as a driver is reasonable but remains somewhat speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C93",
+      "C94"
+    ],
+    "result": "Approximately half of all SoC-CpGs overlap sites with predicted transcriptional or regulatory function in H1 embryonic stem cells and fetal tissues, with relatively few overlapping constitutive heterochromatic regions, suggesting potential functional significance in early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C93, C94 are supported by chromatin state analysis using Roadmap Epigenomics data (Figure 6). The analysis appropriately focuses on H1 ESCs and fetal tissues relevant to early development. However, chromatin state predictions are computational and the functional significance remains to be experimentally validated. The enrichment for regulatory regions is consistent with the hypothesis of periconceptional environmental influence but does not prove causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Half of SoC-associated CpGs are influenced by measured genetic variants (mQTL), with 92% of these mQTL acting in cis. However, the genetic variants are independent of season of conception (no significant SoC-mQTL associations after multiple testing correction), and the variance explained by mQTL is similar between SoC-CpGs and controls, indicating that SoC-methylation associations are not confounded by genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C100-C104 are well-supported by comprehensive mQTL analysis in the EMPHASIS cohort with appropriate multiple testing correction. The finding that mQTL are not associated with SoC (C103) and occur primarily in cis (C101) while being genome-wide distributed (C58) provides strong evidence against genetic confounding. The similar variance explained across CpG sets (C102, Figure 7B) further supports this conclusion. The inference in C104 is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SoC-CpGs exhibit intermediate methylation states compared to array background, tend to fall within CpG islands, and show highly correlated pairwise methylation states across individuals in both cohorts. These correlations are not driven by clustering of SoC-CpGs and are absent in controls. SoC-CpGs also show excellent reliability (median ICC=0.76) compared to good reliability for matched controls (ICC=0.68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67, C73-C77 are supported by appropriate statistical analyses (Figure 4B-D, Appendix 1-figure 8) and comparison with published reliability data from Sugden et al., 2020. The intermediate methylation and CpG island enrichment are consistent with ME characteristics. The high inter-individual correlation across genome-wide distributed loci (C73) is a striking finding that suggests common regulatory mechanisms, though the biological basis remains unclear. The reliability analysis (C76, C77) strengthens confidence in the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83"
+    ],
+    "result": "SoC-CpGs show a distinctive pattern of increased incidence of intermediate methylation states in post-gastrulation embryonic liver tissue, contrasting with genome-wide hyper- and hypomethylation trends. SoC-CpGs also tend to be hypomethylated in sperm, yet intermediate methylation states are preserved in both Gambian cohorts irrespective of sperm methylation status. Similar patterns of intermediate methylation in embryonic liver were observed at matched controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C79, C82, C83 are based on analysis of public embryo RRBS and sperm WGBS data. While the intermediate methylation pattern in embryonic liver (C78) supports early establishment, the observation that matched controls show similar patterns (C79) weakens the specificity of this finding to SoC-CpGs. The sperm hypomethylation (C82) is well-supported, but the preservation of intermediate states irrespective of sperm methylation (C83) is more complex to interpret. The use of non-African reference data for gamete/embryo comparisons is a limitation. More data are needed to establish whether these patterns are specific to environmentally sensitive loci.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "SoC-CpGs are enriched for proximity to ERV1 endogenous retroviral elements but not ERVK elements, and show enrichment for proximal ZFP57 binding sites within 2 kbp. No evidence was found for enrichment of proximal CTCF or TRIM28 binding sites in this array-based study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by enrichment analysis with appropriate controls (Figure 7A, Appendix 1-figure 11). The ERV1 enrichment (C95) and ZFP57 binding site enrichment (C97) are consistent with previous findings at MEs and provide mechanistic insight. The lack of CTCF/TRIM28 enrichment (C98, C99) is appropriately attributed to array coverage limitations. However, the functional significance of these enrichments requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SoC-CpGs are distributed throughout the genome and cluster together in several regions, with 56 distinct clusters and 105 singletons identified using a 5 kbp distance threshold (59% of SoC-CpGs in clusters). SoC effect amplitudes and cross-cohort correlations are greater at clustered SoC-CpGs than singletons. The largest cluster spans 872 bp at IGF1R covering 7 CpGs, with 6 of 7 significantly associated with SoC in the older EMPHASIS cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by appropriate clustering analysis with sensitivity to distance threshold (Appendix 1-figure 5). The genome-wide distribution (C58) combined with clustering (C59) is well-documented. The observation that clustered CpGs show stronger effects (C62, C63) is biologically plausible and statistically supported (Appendix 1-figure 6). The IGF1R cluster (C64, C65) is a specific example with replication across cohorts, strengthening the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "There is a small but statistically significant effect of increased methylation in rainy vs. dry season conceptions at LINE1 elements (0.02% increase, p<2.2\u00d710\u207b\u00b9\u2076) and Alu elements (0.01% increase, p<2.2\u00d710\u207b\u00b9\u2076), suggesting a season of conception effect on global methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81 are supported by analysis using REMP to predict methylation at repetitive elements. The statistical significance is very strong despite extremely small effect sizes (0.01-0.02%). While the p-values are highly significant, the biological significance of such small changes is questionable. The authors appropriately note this as evidence for global methylation effects, but the clinical or functional relevance is unclear. The finding is consistent with genomic inflation (lambda=1.33) noted in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "No gene-environment (season of conception) interactions were identified after correcting for multiple testing in analyses testing for GxE effects in both cis and trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 reports a negative finding from GxE analysis. While the analysis was performed with appropriate multiple testing correction, the authors acknowledge in the discussion that the study likely lacked power to detect GxE interactions. The absence of detected interactions does not rule out their existence, and the study design may not have been adequately powered for this analysis. This limits the interpretation of this negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Eighty percent of the study population are of Mandinka ethnicity with most of the remainder Fula. Sensitivity analysis adjusting for genetic ancestry (using genetic PCs in EMPHASIS and village as proxy in ENID) showed results not materially different from the main analysis, indicating that genetic ancestry does not confound the season of conception associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C107 are supported by citation to Hennig et al., 2017 for population composition and by sensitivity analysis shown in Appendix 1-figure 13. The use of village as a proxy for genetic ancestry in ENID is reasonable given the PCA results in EMPHASIS showing a distinct cluster from a predominantly Fula village. The consistency of results after adjustment strengthens confidence that findings are not confounded by population structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "None of 57 previously identified nutrition-related loci from a review by James et al., 2018b that overlapped array background were within 1 kbp of a SoC-CpG. However, one CpG (cg17434309) at IGF2, not meeting the 4% amplitude threshold, was within 1 kbp of loci previously linked to maternal vitamin B12 and gestational famine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C109 are supported by systematic comparison with previously published loci. The lack of overlap (C108) is notable and suggests that SoC-CpGs represent a largely novel set of environmentally sensitive loci. The single IGF2 CpG (C109) that shows proximity to previously identified loci but didn't meet the amplitude threshold is appropriately reported. This suggests that the 4% amplitude threshold may have excluded some true positives, but also that the identified SoC-CpGs are largely distinct from previously reported nutrition-sensitive loci.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "167 of 259 SoC-CpGs have published associations in the EWAS Catalog, with 109 associated with sex, 45 with gestational age, 16 with maternal smoking, and 6 with maternal folate. In the ENID cohort, multiple significant associations with infant sex were confirmed at SoC-CpGs, but not with gestational age or maternal folate at conception. Sensitivity analyses indicate that SoC associations were not driven by confounding due to sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 are supported by comparison with the EWAS Catalog and replication analysis in the ENID cohort. The strong enrichment for sex-associated loci (C111) is notable and appropriately investigated. The sensitivity analyses (C115) including pre-adjustment for sex and checking for associations between sex and covariates provide strong evidence against sex confounding. However, the biological mechanism underlying the enrichment for sex-associated loci remains unclear and warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Eleven SoC-CpGs mapped to SNPs associated with eight unique traits in the GWAS Catalog, including two SoC-CpGs linked to childhood obesity traits and one linked to QRS traits associated with cardiovascular mortality in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by comparison with the GWAS Catalog. The identification of SoC-CpGs near SNPs associated with childhood obesity (C117) and cardiovascular traits (C118) is consistent with the developmental programming hypothesis. However, proximity to GWAS SNPs does not establish that DNA methylation mediates these genetic associations, and the functional relationships remain to be determined. The small number of overlaps (11 of 259) limits the generalizability of this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establishing the biological context: DNA methylation plays important roles in mammalian development including cell differentiation, X-inactivation, genomic imprinting, and transposable element silencing. The human methylome undergoes extensive remodeling in the early embryo with erasure of gametic marks, potentially creating a window of environmental sensitivity during the periconceptional period. Previous studies have linked periconceptional exposures including maternal folate and famine to DNA methylation changes, though causal pathways are difficult to establish in observational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C30 provide established background knowledge supported by appropriate citations to the literature. These claims establish the biological plausibility of the study and are well-supported by scientific consensus and prior work. They provide essential context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Study design and population characteristics: The study exploited seasonal variation in rural Gambia, where repeating annual patterns of dry and rainy seasons are accompanied by significant changes in energy balance, diet composition, nutrient status, and infection rates. The study assessed seasonality effects on DNA methylation in two Gambian child cohorts using longitudinal data and statistical models (Fourier regression) that make no prior assumptions about specific seasonal windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C38 describe the study design and are supported by citations to previous work characterizing the Gambian population and by the methods section. The use of Fourier regression (C38) is a methodological strength that distinguishes this work from previous studies. These claims establish the study framework and are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The enrichment of SoC-associated CpGs for metastable epialleles, parent-of-origin-specific methylation, and germline differentially methylated regions supports a periconceptional environmental influence on DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is an interpretive claim that synthesizes the enrichment findings from C6, C7, and C8. The inference is well-supported by the strong statistical enrichments and is consistent with the known biology of these genomic features. However, this remains an inference rather than direct proof of periconceptional establishment, as alternative explanations (e.g., selection, later modification) cannot be completely ruled out without direct observation of methylation establishment in early embryos.",
+    "result_type": "MAJOR"
+  }
+]

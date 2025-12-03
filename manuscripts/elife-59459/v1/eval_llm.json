@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "MSCs (Gli1+) and TACs (Axin2+/Ki67+) are spatially distinct but adjacent populations in the adult mouse incisor, suggesting potential for cell-cell interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the anatomical foundation using multiple markers (Gli1, Axin2, Ki67) with immunofluorescence and in situ data (Figure 1). The mutual exclusivity of Gli1+ and Axin2+ populations is clearly demonstrated, and their proximity is well-documented. This provides solid groundwork for studying interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C33",
+      "C73"
+    ],
+    "result": "TACs and MSCs have distinct transcriptional programs identified by RNA-seq, with TACs enriched for proliferation pathways (WNT/\u03b2-catenin, mTOR, EIF2, cell cycle) and MSCs enriched for growth factor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C33, C73 present RNA-seq pathway analysis showing clear differential enrichment (Figure 2A). The findings are internally consistent with known TAC biology (high proliferation) and provide molecular distinction between cell types. However, the manuscript lacks details on RNA-seq quality metrics, replicate numbers, and statistical thresholds for pathway enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "IGF signaling components are differentially expressed: IGF ligands (Igf2, Igfbp3) are enriched in MSCs while the receptor (Igf1r) is expressed in the TAC region, suggesting MSC-to-TAC paracrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 combine RNA-seq data (C7) with spatial validation by RNAscope ISH (C8-C10, Figure 2C-H). The complementary expression pattern of ligands in MSCs and receptor in TACs supports the proposed signaling direction. The spatial resolution of RNAscope provides strong evidence, though C11 remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Loss of Igf1r in Axin2+ TACs (Axin2-CreERT2;Igf1rfl/fl) reduces TAC proliferation and causes premature differentiation (thicker dentin) at 3 weeks, suggesting IGF signaling regulates TAC proliferation-differentiation balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 present loss-of-function phenotypes with quantification (Figure 3C-E). The reduction in Ki67+ TACs and increased dentin thickness are clearly demonstrated. However, C15-C16 involve interpretation: thicker dentin is inferred to indicate premature differentiation, which is reasonable but could benefit from additional differentiation markers beyond Dspp at the 3-week timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Temporal analysis shows mesenchymal TAC loss precedes epithelial TAC loss in Axin2-CreERT2;Igf1rfl/fl mice, establishing that the primary effect is in the mesenchyme with secondary epithelial-mesenchymal interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 use temporal analysis (1 week vs 3 weeks) to establish causality (Figure 3\u2014supplement 1). At 1 week, mesenchymal TACs and differentiation are affected while epithelial TACs remain normal, supporting the conclusion that mesenchymal effects are primary. This is critical for interpreting the Axin2-CreERT2 model given its activity pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Loss of Igf1r in TACs reduces canonical WNT signaling (Axin2, c-Myc, active \u03b2-catenin), indicating that IGF signaling acts upstream of WNT signaling in an IGF-WNT cascade regulating TACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 demonstrate reduced WNT pathway activity following Igf1r deletion using RNAscope (C23, Figure 3F-G), immunofluorescence, and Western blot (C25, Figure 3\u2014supplement 2). The data support an IGF\u2192WNT signaling hierarchy. However, the mechanism linking IGF to WNT activation is not explored, and alternative explanations (e.g., indirect effects through cell state changes) are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The Igf1r deletion phenotype persists at 5 months, indicating long-term disruption of tissue homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 demonstrates phenotype persistence (Figure 3\u2014supplement 3), supporting the conclusion that IGF signaling is required for sustained homeostasis. This strengthens the biological significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Comprehensive analysis of WNT ligand expression reveals that TACs, not MSCs, are the primary source of both canonical (Wnt10a) and non-canonical (Wnt5a) WNT ligands in the incisor mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 present RNA-seq data (C28) validated by extensive RNAscope ISH for Wnt10a, Wnt5a (C29-C30, Figure 4B-E), and 17 other WNT ligands (C31, Figure 4\u2014supplement 1). This comprehensive survey is a strength. The conclusion that WNTs are TAC-derived is well-supported, though Wnt10a and Wnt5a are also expressed in odontoblasts and epithelium, complicating interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Non-canonical NFAT signaling is enriched in MSCs based on pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 presents pathway analysis (Figure 4F) showing NFAT enrichment in MSCs. This supports the hypothesis that MSCs respond to non-canonical WNT signals, though functional validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Loss of WNT secretion from odontoblasts (Dmp1-Cre;Wlsfl/fl) does not affect MSC or TAC numbers, excluding odontoblasts as a WNT source for these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 uses a negative control experiment (Figure 4\u2014supplement 2) to exclude odontoblast-derived WNTs. This is important given that Wnt10a and Wnt5a are expressed in odontoblasts. The lack of phenotype supports the conclusion that TAC-derived WNTs are functionally relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Loss of WNT secretion from Axin2+ TACs (Axin2-CreERT2;Wlsfl/fl) causes shorter incisors, loss of TACs (Ki67, Fgf10), and reduction of Gli1+ MSCs, indicating that TAC-derived WNTs regulate both TAC maintenance (autocrine) and MSC maintenance (paracrine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 present a complex phenotype with multiple readouts (Figure 4\u2014supplement 3). The shorter incisors (C36), loss of TACs (C38-C39), and reduced MSCs (C40) are well-documented. The dual role of TAC-derived WNTs (autocrine for TACs, paracrine for MSCs) is supported, though the relative contributions are not quantified. The use of Fgf10 as a TAC marker (C39) adds validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TACs express the canonical WNT receptor Lrp5 but not Fzd2/4/6, and loss of WNT secretion from TACs affects TACs themselves, indicating tissue-autonomous canonical WNT signaling in TACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 combine receptor expression analysis (Figure 4\u2014supplement 4) with functional data from Wls deletion. The expression of Lrp5 in TACs and the autocrine requirement for WNT secretion support tissue-autonomous signaling. However, the role of other Frizzled receptors is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The reduction of Gli1+ MSCs in Axin2-CreERT2;Wlsfl/fl mice suggests TAC-derived WNTs act on MSCs via paracrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 propose paracrine signaling based on the MSC phenotype in the Wls deletion model. While C46 is supported by data, C47 is explicitly stated as a hypothesis. The paracrine mechanism is plausible but requires further validation, particularly identification of which WNT ligand(s) mediate this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Deletion of Wnt5a in Axin2+ TACs (Axin2-CreERT2;Wnt5afl/fl) reduces Gli1+ MSCs without affecting TACs at 3 weeks, indicating Wnt5a acts as a paracrine signal from TACs to MSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate efficient Wnt5a deletion (C51, Figure 5\u2014supplement 1) and selective MSC loss without TAC loss at 3 weeks (C52-C53, Figure 5A-H). This temporal and cell-type specificity strongly supports Wnt5a as a paracrine TAC\u2192MSC signal. The quantification is clear and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Loss of Wnt5a reduces label-retaining cells (LRCs) in the MSC region, confirming MSC depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 uses LRCs as an independent stem cell marker (Figure 5\u2014supplement 2), providing orthogonal validation of MSC loss. This strengthens the conclusion that Wnt5a regulates MSC maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "At later stages (6 weeks, 5 months), Axin2-CreERT2;Wnt5afl/fl mice show thicker dentin and diminished TACs, indicating secondary disruption of tissue homeostasis following MSC loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 show long-term consequences (Figure 5\u2014supplement 3). The eventual TAC loss is consistent with MSC depletion affecting TAC supply. This temporal progression (MSC loss \u2192 TAC loss) supports the hierarchical relationship between these populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Ror2, a receptor for Wnt5a, is highly expressed in the MSC region, consistent with Wnt5a/Ror2-mediated non-canonical WNT signaling regulating MSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 demonstrate Ror2 expression in MSCs by RNAscope (Figure 6A). The spatial complementarity of Wnt5a (TACs) and Ror2 (MSCs) supports the proposed signaling axis, though C59 is inferential pending functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Deletion of Ror2 in Gli1+ MSCs (Gli1-CreERT2;Ror2fl/fl) reduces MSC numbers, demonstrating that Ror2-mediated non-canonical WNT signaling is required for MSC maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 complete the Wnt5a/Ror2 signaling axis with receptor loss-of-function. Efficient Ror2 deletion (C60, Figure 6B) and MSC reduction (C61-C62, Figure 6C-G) with LRC validation (C63, Figure 6\u2014supplement 1) provide strong evidence. This is a critical result linking ligand and receptor functionally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64",
+      "C76",
+      "C97",
+      "C105"
+    ],
+    "result": "Non-canonical WNT signaling mediated by Wnt5a (from TACs) and Ror2 (on MSCs) constitutes a feedback mechanism from TACs to MSCs that regulates MSC maintenance and tissue homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C76, C97, C105 synthesize the Wnt5a/Ror2 findings into a coherent feedback model. The combination of ligand expression, receptor expression, and dual loss-of-function phenotypes (Wnt5a and Ror2 deletions both reduce MSCs) provides strong support. This is a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C103",
+      "C26"
+    ],
+    "result": "MSCs feedforward to TACs through an IGF-WNT signaling cascade where MSC-derived Igf2 activates Igf1r on TACs, which then activates canonical WNT signaling to regulate TAC proliferation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C103, C26 integrate the IGF and WNT findings into a feedforward model. The evidence includes: (1) complementary expression of Igf2 (MSCs) and Igf1r (TACs), (2) loss of Igf1r reduces TAC proliferation, (3) loss of Igf1r reduces WNT signaling in TACs. The cascade is well-supported, though the molecular mechanism linking IGF to WNT is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C104",
+      "C45"
+    ],
+    "result": "TAC fate is controlled by tissue-autonomous canonical WNT signaling, as TACs express canonical WNT receptors and require their own WNT secretion for maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C104, C45 establish TAC autonomy through receptor expression (Lrp5) and Wls deletion phenotype. The autocrine requirement is clear, though the specific WNT ligand(s) mediating autocrine signaling are not definitively identified (Wnt10a is a candidate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C106",
+      "C111"
+    ],
+    "result": "Canonical and non-canonical WNT signaling pathways work in concert through bidirectional MSC-TAC interactions to maintain tissue homeostasis in the mouse incisor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C101, C106, C111 present the overarching model of reciprocal interaction. The evidence from multiple genetic models (Igf1r, Wls, Wnt5a, Ror2 deletions) with complementary phenotypes strongly supports coordinated bidirectional signaling. This represents a significant conceptual advance in understanding mesenchymal tissue homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C107"
+    ],
+    "result": "The identified mechanisms may apply to other organs where MSC-TAC interactions regulate tissue homeostasis and regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C107 propose broader applicability. While the mouse incisor provides a tractable model, these claims are speculative without evidence from other tissues. The generalizability remains to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C102"
+    ],
+    "result": "Differential expression of WNT receptors and intracellular mediators determines whether canonical or non-canonical WNT signaling is activated, creating a local ecosystem for stem cell regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99, C102 propose mechanistic and conceptual frameworks. While receptor expression patterns support differential signaling (Lrp5 in TACs, Ror2 in MSCs), the claim that this determines pathway choice is speculative. The 'local ecosystem' concept (C102) is a reasonable interpretation but goes beyond the data.",
+    "result_type": "MINOR"
+  }
+]

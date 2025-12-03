@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "2badba93-4212-456b-b2f1-ae1e1fe78886",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T17:07:17.698648Z",
+    "updated_at": "2025-12-03T17:07:17.698648Z"
+  },
+  "content": [
+    {
+      "id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "submission_id": "2badba93-4212-456b-b2f1-ae1e1fe78886",
+      "content_type": "manuscript",
+      "content_text": "# Mcm2 promotes stem cell differentiation via its ability to bind H3-H4\n\n## Authors\n\n- Xiaowei Xu<sup>1</sup> ([ORCID: 0000-0001-6050-9536](https://orcid.org/0000-0001-6050-9536))\n- Xu Hua<sup>1</sup> ([ORCID: 0000-0002-9775-4129](https://orcid.org/0000-0002-9775-4129))\n- Kyle Brown<sup>5</sup>\n- Xiaojun Ren<sup>5</sup> ([ORCID: 0000-0002-3931-7625](https://orcid.org/0000-0002-3931-7625))\n- Zhiguo Zhang<sup>1</sup> ([ORCID: 0000-0002-9451-2685](https://orcid.org/0000-0002-9451-2685)) \u2020\n\n### Affiliations\n\n1. Institute for Cancer Genetics, Columbia University Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n2. Herbert Irving Comprehensive Cancer Center, Columbia University Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n3. Department of Pediatrics, Columbia University Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n4. Department of Genetics and Development, Columbia University Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))\n5. Department of Chemistry, University of Colorado Denver Denver United States ([ROR:02hh7en24](https://ror.org/02hh7en24))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMcm2, a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) helicase best known for its role in DNA replication, contains a histone binding motif that facilitates the transfer of parental histones following DNA replication. Here, we show that Mcm2 is important for the differentiation of mouse embryonic stem (ES) cells. The Mcm2-2A mutation defective in histone binding shows defects in silencing of pluripotent genes and the induction of lineage-specific genes. The defects in the induction of lineage-specific genes in the mutant cells are likely, at least in part, due to reduced binding to Asf1a, a histone chaperone that binds Mcm2 and is important for nucleosome disassembly at bivalent chromatin domains containing repressive H3K27me3 and active H3K4me3 modifications during differentiation. Mcm2 localizes at transcription starting sites and the binding of Mcm2 at gene promoters is disrupted in both Mcm2-2A ES cells and neural precursor cells (NPCs). Reduced Mcm2 binding at bivalent chromatin domains in Mcm2-2A ES cells correlates with decreased chromatin accessibility at corresponding sites in NPCs. Together, our studies reveal a novel function of Mcm2 in ES cell differentiation, likely through manipulating chromatin landscapes at bivalent chromatin domains.\n\n## Introduction\n\nEmbryonic stem (ES) cells (ESCs) are pluripotent cells that possess both the ability to self-renew and the potential to differentiate into lineage-specific cell types (De Los Angeles et al., 2015). The ability of ESCs to differentiate into specific lineage cell type both in vivo and in vitro opens exciting opportunities to study the events regulating the earliest stages of lineage specification during development (Keller, 2005). During mouse ESC differentiation, pluripotency genes such as Pou5f1, Sox2, and Nanog are silenced, whereas lineage-specific genes are up-regulated (Sha and Boyer, 2008). These dynamic changes in gene expression are regulated by transcription factors as well as chromatin factors (Young, 2011). For instance, the silencing of pluripotency genes (Pou5f1, Sox2, and Nanog) is associated with both a dramatic reduction of tri-methylation of histone H3 lysine 4 (H3K4me3), a histone modification associated with active gene transcription, and an increase in H3K27me3, a repressive histone modification (Atlasi and Stunnenberg, 2017; Mikkelsen et al., 2007). In contrast, the promoters of lineage-specific genes, which are marked by both repressive H3K27me3 and active H3K4me3 marks, needs to be resolved for silencing and/or induction of lineage-specific genes during differentiation (Bernstein et al., 2006; Harikumar and Meshorer, 2015). Although significant processes have been made to understand these dynamic changes in chromatin states during differentiation, the regulation of these dynamic changes remains underexplored.\n\nHistone chaperones, a group of proteins best known for their roles in the assembly of DNA into nucleosomes following DNA replication and gene transcription, have been found to play multiple roles in stem cell maintenance and differentiation. For instance, chromatin assembly factor 1 (CAF-1), a histone chaperone involved in the deposition of newly synthesized H3-H4 onto replicating DNA, is important for cell fate maintenance (Ishiuchi et al., 2015; Smith and Stillman, 1989). Depletion of subunits of the CAF-1 complex in embryonic fibroblasts results in increased reprogramming efficiency into iPSC cells (Cheloufi et al., 2015). In ESCs, CAF-1 depletion leads to an increase in the percentage of 2C-like cells (2-cell-stage embryos), as well as defects in differentiation (Cheng et al., 2019; Ishiuchi et al., 2015). The role of CAF-1 in differentiation and the 2C-like state is linked to the function of CAF-1 in DNA replication-coupled nucleosome assembly. In contrast, Asf1a, a histone chaperone involved in the delivery of newly synthesized H3-H4 to CAF-1 in replication-coupled nucleosome assembly, as well as to HIRA, a histone chaperone involved in replication-independent (RI) nucleosome assembly (De Koning et al., 2007; English et al., 2006; Tagami et al., 2004), regulates the disassembly of nucleosomes at bivalent chromatin domains for the induction of lineage-specific genes (Gao et al., 2018). Moreover, histone chaperone CAF-1 promotes the formation of H3K27me3-mediated silencing at pluripotent genes (Cheng et al., 2019), whereas HIRA facilitates the PRC2 silencing complex at developmental loci during differentiation (Banaszynski et al., 2013; Ray-Gallet et al., 2002). The H3.3-HIRA pathway also safeguards identities of differentiated cells, indicating its bimodal role in cell fate transition (Fang et al., 2018). Therefore, histone chaperones involved in deposition of newly synthesized H3-H4 play multiple roles in ESC differentiation and maintenance.\n\nIn addition to histone chaperones involved in the deposition of newly synthesized histones, we and others have also uncovered a group of proteins that function in recycling parental histone H3-H4 following DNA replication. Pole3 and Pole4, two subunits of leading strand DNA polymerase \u03b5, interact with H3-H4 and facilitate the transfer of parental histones to leading strands of DNA replication forks in both yeast and mouse ESCs (Li et al., 2020; Yu et al., 2018). On the other hand, Mcm2, a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) complex that plays an essential role in DNA replication as the replicative helicase (Tye, 1999), contains a histone binding domain (HBD) (Huang et al., 2015). Mutations at HBDs (Y81A and Y90A) of Mcm2 (Mcm2-2A) in both yeast and mouse ESCs leads to defects in the transfer of parental histones to lagging strands of DNA replication forks (Gan et al., 2018; Li et al., 2020; Petryk et al., 2018). Moreover, Mcm2 interacts with Asf1 that is bridged by H3-H4 proteins (Groth et al., 2007). Besides its functions in DNA replication and histone deposition, Mcm2 also interacts with the carboxyl-terminal domain of RNA Pol II in Xenopus oocytes, and the Mcm2-7 complex is required for RNA Pol II-mediated transcription at some settings in mammalian cells (Snyder et al., 2009; Yankulov et al., 1999), indicating a possible role of Mcm2 in gene transcription.\n\nMouse ESCs with deletion of Pole3 and Pole4 or mutations at the HBD of Mcm2 grow normally and maintain stemness. As parental histones with their histone modifications are the blueprint for the recapitulation of the epigenetic landscape during cell division (Corpet and Almouzni, 2009), we investigated the roles of these parental histone chaperone proteins during differentiation of mouse ESCs. We found that Mcm2, relying on its HBD, promotes mouse ESC differentiation. The Mcm2-2A mutant ESCs show defects both in silencing of pluripotent genes and induction of lineage-specific genes during differentiation. The defects in induction of lineage-specific genes are associated with reduced Asf1a binding in Mcm2-2A mutant cells. Mcm2 localizes at transcription starting sites (TSS) and that this localization is dramatically reduced in Mcm2-2A cells, which correlates with reduced chromatin accessibility at bivalent chromatin domains during differentiation. Together, these studies reveal a novel role for Mcm2 and its ability to bind H3-H4 in the differentiation of mouse ESCs.\n\n## Results\n\n### Mcm2, Pole3, and Pole4 are required for the differentiation of mouse ESCs\n\nCAF-1, Asf1a, and HIRA are histone chaperones involved in deposition of newly synthesized H3-H4, whereas Mcm2, Pole3, and Pole4 are involved in parental histone transfer and recycling (Serra-Cardona and Zhang, 2018). It is known that CAF-1, Asf1a, and HIRA function in stem cell differentiation through distinct mechanisms (Banaszynski et al., 2013; Cheloufi et al., 2015; Cheng et al., 2019; Gao et al., 2018). We therefore asked whether histone chaperones involved in parental histone transfer are also important in this process. To do this, we first monitored the formation of embryoid bodies (EBs), which mimics the formation of three germ layers in vitro, in Pole3 KO, Pole4 KO, Mcm2-2A single and double mutant mouse ESCs (Li et al., 2020; Figure 1\u2014figure supplement 1A). Briefly, three-dimensional colonies (EBs) were formed in hanging drops without leukemia inhibiting factor (LIF) for 3 days. Then, EBs were cultured in suspension and collected at different times during differentiation for the evaluation of morphology and expression of selected genes involved in stemness and lineage specification (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig1-v2.jpg)\n\n**Figure 1.:** See also Figure 1\u2014source data 1. (A) A diagram showing the embryoid body (EB) formation assay. (B) Representative images of wild type (WT) and Mcm2-2A cells during the process of EB formation. Scale bar: 20 \u00b5m. (C) RT-PCR analysis of the expression of Pou5f1 (a gene involved in pluripotency) and three lineage-specific genes in WT and Mcm2-2A cells during EB formation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. (D) Representative immunofluorescence images for detection of Pou5f1 and MERVL-Gag proteins in WT and Mcm2-2A mouse ESCs. Scale bar: 20 \u00b5m. (E) Quantification of Gag+ Pou5f1- cells in (D). At least n=1500 cells were counted for each cell line. Data are presented as means \u00b1 SD from three independent experiments. Statistical analysis in C and E was performed by two-tailed unpaired Student\u2019s t test with p values marked on the graphs (N.S., no significant difference).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** See also Figure 1\u2014figure supplement 1\u2014source data 1. (A) Representative images of wild type (WT), Pole3 KO, Pole4 KO, Mcm2-2A, Mcm2-2A + Pole3 KO, and Mcm2-2A + Pole4 KO cells during the process of EB formation. Scale bar: 20 \u00b5m. (B) RT-PCR analysis of expression of Pou5f1 (a gene involved in pluripotency) and four lineage-specific genes (Nestin, Gata4, Cdx2, and Brachyury) in WT, Pole3 KO, Pole4 KO, Mcm2-2A, Mcm2-2A + Pole3 KO, and Mcm2-2A+ Pole4 KO cells during EB formation. The relative expression of each gene against house-keeping gene GAPDH is presented as means \u00b1 SD from three independent experiments. Statistical analysis was performed by two-tailed unpaired Student\u2019s t test (*p<0.05; **p<0.01; ***p<0.001).\n\nWe observed that all mutants exhibited reduced EB size at day 9 compared to wild type (WT) cells, with Mcm2-2A, Mcm2-2A Pole3 KO, Mcm2-2A Pole4 KO double mutant cells exhibiting dramatic defects based on morphology (Figure 1B, Figure 1\u2014figure supplement 1A). Similarly, we observed that the silencing of Pou5f1, a gene involved in pluripotency, was compromised in all the mutant cells, with the Mcm2-2A Pole3 KO and Mcm2-2A Pole4 KO double mutant cells showing larger effects than either single mutant alone (Figure 1C, Figure 1\u2014figure supplement 1B). Finally, the transcription of several lineage-specific genes, representing three germ layers, was delayed in all the mutant cells, with the double mutants showing the strongest defects (Figure 1C, Figure 1\u2014figure supplement 1B). Together, these studies indicate that Mcm2-2A, Pole3 KO, and Pole4 KO mutations, while having little impacts on the stemness of mouse ESCs, have a profound effect on their differentiation.\n\nDepletion of CAF-1 results in an increase in totipotent 2C-like cells, which are marked by reduced expression of Pou5f1 and increased expression of the endogenous retrovirus MERVL (Ishiuchi et al., 2015). We thus assessed whether Mcm2-2A mutants altered cellular plasticity in ESCs by analyzing the expression of Pou5f1 and MERVL-Gag using immunofluorescence. We found that Mcm2-2A mutant and WT cells showed similarly low frequencies of 2C-like cells (Figure 1D and E), indicating that ESC plasticity is not altered in Mcm2-2A mutant cells. Together, these results suggest that the ability of Mcm2 to bind histone H3-H4 plays an important role during mouse ESC differentiation.\n\n### Mcm2-2A mutation compromises mouse ESC differentiation into neural lineages\n\nTo further study the function of Mcm2 and Pole4 during ESC differentiation, we differentiated WT, Mcm2-2A, and Pole4 KO single and double mutant ESCs into neural lineage cells as previously described (Gao et al., 2018). We then compared expression levels of two pluripotency genes (Pou5f1 and Nanog) and two neural lineage-specific genes (Sox21 and Pax6) in WT, Mcm2-2A, Pole4 KO, and Mcm2-2A Pole4 KO double mutant cells. Consistent with the EB formation assays, Mcm2-2A and double mutant (Mcm2-2A and Pole4 KO) cells exhibited compromised silencing of Pou5f1 and Nanog as well as defects in the induction of Sox21 and Pax6 expression (Figure 2A, Figure 2\u2014figure supplement 1A). In contrast, Pole4 KO had no significant effects on the expression of pluripotency genes or neural lineage genes compared with WT cells during neural differentiation (Figure 2\u2014figure supplement 1A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig2-v2.jpg)\n\n**Figure 2.:** See also Figure 2\u2014source data 1, Figure 2\u2014source data 2, Figure 2\u2014source data 3 and Figure 2\u2014source data 4. (A) RT-PCR analysis of expression of two genes involved in pluripotency (Pou5f1, Nanog) and two neural lineage-specific genes (Pax6, Sox21) in wild type (WT) and Mcm2-2A cells during neural differentiation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. (B) Representative images of WT and Mcm2-2A cells during neural differentiation. The expression of EGFP is driven by the Pou5f1 distal enhancer. Scale bar: 20 \u00b5m. (C) FACS analysis of the percentage of GFP+ cells in WT and Mcm2-2A cells during neural differentiation. Data are presented as means \u00b1 SD from three independent experiments. (D) WB analysis of Pou5f1 and Nanog in WT and Mcm2-2A cells of both ESCs and neural precursor cells (NPCs). Tubulin was used as a loading control. (E) WB analysis of Mcm2-GFP expression in WT and Mcm2-2A ESCs. pWPXL empty vector (EV) was used as the control. Tubulin was used as a loading control. (F) Representative images of EV or Mcm2-GFP expressing WT and Mcm2-2A cells during neural differentiation. Scale bar: 100 \u00b5m. (G) RT-PCR analysis of expression of Pou5f1, Pax6, and Sox21 in EV or Mcm2-GFP expressing WT and Mcm2-2A cells during neural differentiation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. Statistical analysis in A, C, and G was performed by two-tailed unpaired Student\u2019s t test with p values marked on the graphs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See also Figure 2\u2014figure supplement 1\u2014source data 1. (A) RT-PCR analysis of expression of one pluripotency gene (Pou5f1) and two neural lineage-specific genes (Pax6, Sox21) in wild type (WT), Pole4 KO, and Mcm2-2A + Pole4 KO cells during neural differentiation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. Statistical analysis was performed by two-tailed unpaired Student\u2019s t test with p values marked on the graphs (N.S., not significant). (B) FACS analysis of the percentage of GFP+ cells in WT and Mcm2-2A cells during neural differentiation. The expression of EGFP is driven by the Pou5f1 distal enhancer.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** See also Figure 2\u2014figure supplement 2\u2014source data 1 and 2. (A) WB analysis of Flag-Asf1a expression in wild type (WT) and Mcm2-2A embryonic stem cells (ESCs). Tubulin was used as a loading control. pWPXL empty vector (EV) was used as a control. (B) Representative images of pWPXL EV or Asf1a expressing from the pWPXL vector WT and Mcm2-2A cells during neural differentiation. Scale bar: 100 \u00b5m. (C\u2013E) RT-PCR analysis of expression of Pou5f1, Pax6, and Sox21 in EV or Asf1a expressing WT and Mcm2-2A cells during neural differentiation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. (F) Sanger sequencing results of two different Asf1a KO or Mcm2-2A Asf1a KO clones showing frame-shift insertion at Asf1a loci. (G) WB analysis of Asf1a expression in two independent Asf1a KO or Mcm2-2A Asf1a KO ES cell clones. Tubulin was used as a loading control. (H) Representative images of WT, Asf1a KO, Mcm2-2A, and Mcm2-2A Asf1a KO cells during neural differentiation. Scale bar: 100 \u00b5m. (I) RT-PCR analysis of expression of Pou5f1, Pax6, Sox21, and Zfpm2 in WT, Asf1a KO, Mcm2-2A, and Mcm2-2A Asf1a KO cells during neural differentiation. GAPDH was used for normalization. Data are presented as means \u00b1 SD from three independent experiments. Statistical analysis in C\u2013E and I was performed by two-tailed unpaired Student\u2019s t test with p values marked on the graphs.\n\nBecause Mcm2-2A mutant ESCs showed consistent defects in differentiation in both EB formation and neural differentiation assays, we focused the remaining studies on this mutant. First, we monitored morphology changes and silencing of the EGFP reporter gene driven by the Pou5f1 distal enhancer during neural differentiation in WT and Mcm2-2A cells (Hotta et al., 2009). The silencing of EGFP reporter and the cell morphologies were comparable between WT and Mcm2-2A cells from day 2 to day 6 (Figure 2B and C; Figure 2\u2014figure supplement 1B). Interestingly, from day 7 to day 9, we observed a dramatic loss of GFP expression in WT cells, whereas ~30% of Mcm2-2A cells preserved GFP signals at day 9 (Figure 2B and C; Figure 2\u2014figure supplement 1B). Accordingly, we detected higher expression level of Pou5f1 and Nanog proteins in Mcm2-2A cells compared to WT cells after differentiation (Figure 2D). Finally, Mcm2-2A cells upon differentiation did not exhibit neural cell morphology like WT cells (Figure 2B), providing additional support to the idea that the Mcm2-2A mutation compromises the differentiation of mouse ESCs.\n\nNext, we tested whether exogenous expression of Mcm2 might rescue defects in differentiation of Mcm2-2A mutant cells (Figure 2E). Upon differentiation, we observed that the Mcm2-2A mutant cells expressing WT Mcm2 exhibited typical neural cell morphology similar to that of neural precursor cells (NPCs) generated from WT ESCs (Figure 2F). Gene expression analysis by RT-PCR indicated that expression of WT Mcm2 in Mcm2-2A cells led to silencing of Pou5f1 to a similar degree as WT cells. Interestingly, expression of Mcm2 partially rescued the defects in the expression of lineage-specific genes in Mcm2-2A (Figure 2G). These results indicate that defects in differentiation in Mcm2-2A mutant cells can be at least partially rescued by the expression of Mcm2 exogenously.\n\n### Mcm2 and Asf1a function in the same pathway for the induction of lineage-specific genes\n\nMcm2 interacts with histone chaperone Asf1, which is bridged by H3-H4 (Huang et al., 2015). Consequently, the Mcm2-Asf1 interaction is reduced in Mcm2-2A cells. We have shown that deletion of Asf1a, but not Asf1b, in mouse ESCs impairs the induction of lineage-specific genes (Gao et al., 2018). To understand how Mcm2-2A affects differentiation, we first overexpressed Asf1a in Mcm2-2A cells and found that Asf1a overexpression could not rescue the defects in differentiation of Mcm2-2A cells based on analysis of cell morphology (Figure 2\u2014figure supplement 2A, B) and the expression of Pou5f1 and lineage-specific genes (Sox21 and Pax6) (Figure 2\u2014figure supplement 2C\u2013E). Next, we knocked out Asf1a in either WT cells or Mcm2-2A mutant cells using CRISPR/Cas9 (Figure 2\u2014figure supplement 2F, G) and compared the effects of Asf1a KO, Mcm2-2A, and Mcm2-2A Asf1a KO on neural differentiation. We observed that Mcm2-2A Asf1a KO double mutant exhibited similar morphology as Mcm2-2A cells but not Asf1a KO cells after differentiation (Figure 2\u2014figure supplement 2H). As reported, Asf1a KO dramatically reduced the induction of lineage-specific genes, while having little effects on the silencing of Pou5f1 (Gao et al., 2018). In contrast, both Mcm2-2A cell line and Mcm2-2A Asf1a KO double mutant cell line showed compromised silencing of Pou5f1 (Figure 2\u2014figure supplement 2I). On the other hand, while significant defects in the induction of neural lineage gene expression (Pax6 and Sox21) were detected in either Mcm2-2A cells or Asf1a KO cells, Mcm2-2A Asf1a KO double mutant cells did not show additional defects in the induction of lineage-specific genes compared with Mcm2-2A or Asf1a KO single mutant alone (Figure 2\u2014figure supplement 2I), Interestingly, we observed that Mcm2-2A mutant suppressed the defects in the induction of another neural lineage marker, Zfpm2 in Asf1a KO cells (Figure 2\u2014figure supplement 2I). These results indicate that Mcm2 likely have two roles during differentiation, silencing of pluripotent genes and induction of lineage-specific genes, the latter of which is mediated, at least in part, through Mcm2-H3-H4-Asf1a interaction. This idea was further supported by transcriptome analysis described below.\n\n### Mcm2-2A mutation perturbs transcription globally during differentiation\n\nTo understand how the Mcm2-2A mutation affects ESC differentiation, we used RNA sequencing (RNA-seq) and analyzed the transcriptome of WT and Mcm2-2A mouse ESCs as well as NPCs collected on day 9 of neural differentiation. In general, the Mcm2-2A mutation caused greater gene expression changes in NPCs than in ESCs, with 54 differentially expressed genes (DEGs) between WT and Mcm2-2A ESCs and 609 DEGs between WT and Mcm2-2A NPCs (false discovery rate<0.01, |log2 fold change|>1) (Figure 3A), providing an explanation for the observation that the Mcm2-2A mutation does not affect stemness or proliferation of mouse ESCs dramatically. Inspection of RNA-seq data confirmed that the silencing of pluripotency gene Pou5f1 as well as the induction of two neural lineage genes (Sox21 and Pax6) in Mcm2-2A NPCs was compromised compared to WT NPCs (Figure 3B). Unsupervised cluster analysis separated the 648 DEGs identified in Mcm2-2A cells into four groups (Figure 3C). Gene ontology (GO) analysis of 352 down-regulated genes in Mcm2-2A NPCs were enriched in neurodevelopment, such as forebrain/hindbrain development and neural nucleus development (Figure 3D), whereas 238 up-regulated genes compared to WT ESCs were related to stem cell population maintenance (Figure 3E). Of note, the differential effects of Mcm2-2A mutant on the expression of genes in NPCs compared to ESCs likely reflect the role of Mcm2 in the differentiation process, but not necessarily due to differential effects of Mcm2 on ESCs and NPCs. Nonetheless, the Mcm2-2A mutation shows defects in both silencing of pluripotent genes and the induction of lineage-specific genes during differentiation, which in turn contributes to the differentiation defects observed in the mutant cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig3-v2.jpg)\n\n**Figure 3.:** (A) Volcano plot of differentially expressed genes (DEGs) between wild type and Mcm2-2A mutant ES cells (left) and NPCs (right) from two independent replicates, with numbers of significantly up-regulated and down-regulated genes (red dots, p<0.01, |log2 fold change|>1) shown. (B) RNA sequencing (RNA-seq) tracks showing the sequence read density at Pou5f1, Sox21, and Pax6 locus in wild type (WT) and Mcm2-2A ES cells and NPCs. (C) The hierarchical clustering analysis of the DEGs between WT and Mcm2-2A cells. RNA expression values (RPKM, reads per kilobase per million reads) are represented by z-score across samples. (D and E) Gene ontology (GO) analysis of the group 1 and group 4 genes in (C) with the top 15 significant GO terms and p value displayed.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The overlap of genes up-regulated in Mcm2-2A and Asf1a KO mutant embryonic stem (ES) cells. (B) The overlap of genes down-regulated in Mcm2-2A and Asf1a KO mutant ES cells. (C) The overlap of genes up-regulated in Mcm2-2A and Asf1a KO mutant neural precursor cells (NPCs). (D) The overlap of genes down-regulated in Mcm2-2A NPCs and Asf1a KO mutant NPCs. (E) Ratio-wise distribution of bivalent genes and non-bivalent genes among the group of overlapped down-regulated genes shown in (D) or the group of rest coding genes. Fisher test p<2.2e-16, odds ratio = 10.46256. (A\u2013D) The numbers of significantly up-regulated and down-regulated genes (p<0.01, |log2 fold change|>1) were shown.\n\nTo provide additional insight into defects in gene transcription of Mcm2-2A cells during differentiation, we compared the transcriptome changes caused by Mcm2-2A with those by Asf1a KO in ESCs and NPCs based on published datasets. In both ESCs and NPCs, the number of genes affected by Asf1a KO far exceeded those induced by Mcm2-2A mutation (Figure 3\u2014figure supplement 1A\u2013D). Furthermore, the genes whose expression affected by Asf1a KO did not overlap with those affected by Mcm2-2A mutations in ESCs (Figure 3\u2014figure supplement 1A, B, ), suggesting that Asf1a likely affects gene expression in ESCs independent of Mcm2. Interestingly, we observed that most of the down-regulated genes in Mcm2-2A mutant NPCs (62% of total), which represent those genes showing defects in induction compared to WT NPC, were overlapped with the down-regulated genes in Asf1a KO NPCs (Figure 3\u2014figure supplement 1D), and most of these genes were bivalent genes (Figure 3\u2014figure supplement 1E). In contrast, most of the up-regulated genes in Mcm2-2A NPCs compared to WT NPC did not overlapped with those in Asf1a KO cells (Figure 3\u2014figure supplement 1C). These results support the idea that Mcm2 and Asf1a function together for the induction of lineage-specific genes expression during differentiation. Collectively, these results suggest that Mcm2\u2019s function in promoting ESC differentiation is partially dependent on Asf1a. However, Mcm2 and Asf1a also have independent roles in gene regulation, with Mcm2, but not Asf1a, participating in the silencing of pluripotency genes during differentiation.\n\n### Mcm2-2A mutation disrupts the epigenetic landscape in differentiated cells\n\nDuring differentiation, histone modification landscapes are rewired (Mikkelsen et al., 2007). For instance, bivalent domains that are enriched with both active markers (H3K4me3) and silencing markers (H3K27me3), which are associated with lineage-specific genes, are resolved either through the removal of repressive marker H3K27me3 for gene activation or removal of active marker H3K4me3 for gene silencing (Voigt et al., 2013). In addition, pluripotency genes are silenced through gain of H3K27me3 and loss of H3K4me3 at promoters (Bernstein et al., 2006; Harikumar and Meshorer, 2015). Therefore, we analyzed the impact of the Mcm2-2A mutation on the total levels of H3K27me3 and H3K4me3 during neural differentiation. We observed that in both WT and Mcm2-2A mutant NPCs, the H3K27me3 level was reduced compared to their corresponding ESCs, with a modest reduction of H3K27me3 in Mcm2-2A NPCs compared to WT NPCs (Figure 4A). In contrast, the Mcm2-2A mutation did not have an effect on H3K4me3 levels during differentiation (Figure 4A). Next, we determined genome-wide distributions of H3K4me3 and H3K27me3 in WT and Mcm2-2A ESCs as well as NPCs using H3K4me3 and H3K27me3 CUT&RUN (Figure 4B). Similar to the transcriptome changes, the effects of Mcm2-2A on the chromatin binding of H3K4me3 or H3K27me3 in ESCs were much less pronounced than that in NPCs (Figure 4B). Globally, H3K4me3 CUT&RUN density was similar in Mcm2-2A ESCs compared to WT ESCs at TSS of both down-regulated and up-regulated genes in Mcm2-2A ESCs (Figure 4\u2014figure supplement 1A, B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig4-v2.jpg)\n\n**Figure 4.:** See also Figure 4\u2014source data 1. (A) WB analysis of Mcm2, Ezh2, Nanog, Pou5f1, H3K4me3, and H3K27me3 expression in wild type (WT) and Mcm2-2A cells of both embryonic stem (ES) cells and neural precursor cells (NPCs). Tubulin was used as loading control. (B) Heatmaps surrounding CUT&RUN peaks of H3K4me3 and H3K27me3 [\u20133k, 3k] in WT and Mcm2-2A ES cells and NPCs. n: peak number. Color scale represents reads per million. (C) H3K4me3 and H3K27me3 CUT&RUN sequencing density surrounding Pou5f1 and Pax6 loci in WT and Mcm2-2A ES cells and NPCs. Shadows indicate CUT&RUN peak signals around the transcription starting site (TSS). (D and E) Average of H3K4me3 (D) and H3K27me3 (E) CUT&RUN density in WT and Mcm2-2A NPCs at the promoters ([\u20133k, 3k] of TSS) of down-regulated and up-regulated genes in Mcm2-2A NPCs (Figure 3A, right). The Y-axis represents the log2 ratio of CUT&RUN density (reads per kilobase per million reads [RPKM]). The p values were calculated using Wilcoxon signed-rank test. The average of two independent replicates is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A and B) Average of H3K4me3 (A) and H3K27me3 (B) CUT&RUN density in wild type (WT) and Mcm2-2A embryonic stem (ES) cells at the promoters ([\u20133k, 3k] around transcription starting site [TSS]) of down-regulated and up-regulated genes in Mcm2-2A ES cells compared to WT ES cells (Figure 3A, left). The Y-axis represents the log2 ratio of CUT&RUN density (reads per kilobase per million reads [RPKM]). The p values were calculated using Wilcoxon signed-rank test from two independent replicates. (C and D) Heatmap of H3K4me3 (C) and H3K27me3 (D) CUT&RUN density at the promoters ([\u20133k, 3k] around TSS) of up-regulated, down-regulated, and non-differential genes in Mcm2-2A neural precursor cells (NPCs) (Figure 3A, right). Two independent replicates were shown for each cell line. The CUT&RUN density (RPM, reads per million) are z-scored across samples.\n\nIn NPCs, we observed that H3K4me3 CUT&RUN density at the Pou5f1 gene promoter was dramatically reduced compared to WT ESCs, whereas the level of H3K4me3 at the promoter of Pax6 was dramatically increased in WT NPCs compared to WT ESCs. These results are consistent with the silencing of Pou5f1 and induction of Pax6 during differentiation in WT ESCs. In Mcm2-2A mutant cells, both the reduction of H3K4me3 at the promoter of Pou5f1 and the increase of this mark at the promoter of Pax6 were compromised, consistent with the compromised silencing of Pou5f1 and the induction of Pax6 in Mcm2-2A mutant cells during differentiation (Figure 4C). Furthermore, the average levels of H3K4me3 at the TSS of down-regulated genes in Mcm2-2A mutant NPCs were significantly lower than those of WT NPCs and higher at the TSS of up-regulated genes (Figure 4D, Figure 4\u2014figure supplement 1C). Together, these results indicate that the gene expression changes in Mcm2-2A mutant NPCs correlate with changes in H3K4me3 levels at gene promoters.\n\nWhile we observed far more increased H3K27me3 peaks than reduced H3K27me3 peaks in Mcm2-2A mutant NPCs compared to WT NPCs (Figure 4B), the changes in gene expression in Mcm2-2A NPCs also correlated with changes of H3K27me3. Specifically, H3K27me3 density at the Pax6 promoter was higher in Mcm2-2A than WT NPCs, whereas H3K27me3 density at the Pou5f1 promoter was similar (Figure 4C). On average, H3K27me3 density at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly higher than WT NPCs. In contrast, H3K27me3 density at the TSS of up-regulated genes was similar between WT and Mcm2-2A NPCs (Figure 4E, Figure 4\u2014figure supplement 1D), suggesting that the reduced expression of genes in Mcm2-2A NPCs likely was due to the retention of this repressive mark during differentiation. Collectively, these results indicate that the gene expression alterations in Mcm2-2A mutant NPCs compared to WT NPCs correlate with the changes of both H3K4me3 and H3K27me3 levels at gene promoters.\n\n### Mcm2 is enriched at actively transcribed regions in both ESCs and NPCs\n\nTo further explore the mechanisms underlying the transcriptome and epigenetic changes in Mcm2-2A mutant cells, we performed Mcm2 CUT&RUN in both WT and Mcm2-2A ESCs and NPCs. Initial studies of Mcm2 CUT&RUN using antibodies against Mcm2 or against the Flag epitope fused to Mcm2 and Mcm2-2A proteins in ESCs (Xu et al., 2022) indicate that Mcm2 antibody and Flag antibody CUT&RUN profiles, each of which had two independent repeats, were highly correlated with each other. Using p=0.0001 as a cutoff, we identified 13742 Mcm2 CUT&RUN peaks in WT ESCs, demonstrating the reproducibility and reliability of Mcm2 CUT&RUN datasets. These peaks likely reflect Mcm2 association with chromatin because control samples (IgG CUT&RUN or Flag CUT&RUN in untagged cells) identified far fewer peaks with the same cutoff, with a large fraction of these peaks did not overlap with Mcm2 CUT&RUN peaks or Flag-Mcm2 CUT&RUN peaks (Figure 5\u2014figure supplement 1A\u2013C). We also noticed the relatively low signal-to-noise ratio for the Mcm2 and Flag-Mcm2 CUT&RUN peaks. Once loaded on chromatin during G1 phase of the cell cycle, it is known that the CMG helicase travels along with DNA replication forks (Prioleau and MacAlpine, 2016). On the other hand, Mcm2 CUT&RUN experiments were performed using asynchronous ESCs. Therefore, the relatively low signal-to-noise ratio of Mcm2 CUT&RUN peaks likely reflect the dynamic nature of chromatin binding of the CMG helicase during the cell cycle progression. Nonetheless, because of low signal-to-noise ratio, cautions should be made for the interpretation of Mcm2 CUT&RUN results described below.\n\nTo gain insight into these Mcm2 CUT&RUN peaks, we aligned and clustered these Mcm2 CUT&RUN peaks based on their overlaps with H3K4me3 and H3K27me3 CUT&RUN signals and ATAC-seq peaks in ESCs (Figure 5A). We observed that the majority of Mcm2 CUT&RUN peaks were enriched with H3K4me3 CUT&RUN signals and ATAC-seq peaks. A small number of Mcm2 CUT&RUN peaks were found at bivalent chromatin domains (H3K4me3+ and H3K27me3+), with far fewer peaks co-localizing with H3K27me3 markers (H3K4me3-, H3K27me3+) in ESCs (Figure 5A, left). However, when taking into consideration of total number of H3K4me3, H3K27me3, and bivalent domains in ESCs, we observed that over 26% bivalent domains had at least one Mcm2 peaks nearby compared with 21% H3K4me3 peaks having a Mcm2 peak (Figure 5B). We also performed similar analysis on 2686 of Mcm2 peaks identified in WT NPCs and observed that almost all the Mcm2 peaks co-localized with H3K4me3 and ATAC-seq peaks (H3K4me3+, H3K27me3-) (Figure 5A, right). These results indicate that the chromatin binding of Mcm2 peaks is rewired during differentiation. Moreover, Mcm2 CUT&RUN signals were enriched at the TSS of highly transcribed genes compared to the TSS of lowly transcribed genes in both ESCs and NPCs (Figure 5C, Figure 5\u2014figure supplement 1D), indicating that the majority of Mcm2 localizes at actively transcribed regions and that Mcm2 may function in gene transcription in a manner independent of its role in DNA replication.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative heatmaps of Mcm2, H3K4me3, H3K27me3 CUT&RUN, and ATAC-seq peaks in wild type (WT) embryonic stem (ES) cells (left) and neural precursor cells (NPCs) (right). The density of H3K4me3 and H3K27me3 CUT&RUN and ATAC-seq surrounding Mcm2 CUT&RUN peaks [\u20135k, 5k] was calculated. Color scales represent reads per million. (B) Peak distribution of H3K4me3, H3K27me3, and bivalent domains based on their co-localization with Mcm2 peaks. The percentile of \u2018with Mcm2 peaks\u2019 for each marker were labeled on top. Y-axis represents the peak number. (C) Density profiles of Mcm2 CUT&RUN (RPM, reads per million) surrounding transcription starting sites (TSS) and transcription termination sites (TTS). Genes were separated into four groups based on their expression in mouse ES cells or NPCs (Q1=lowest quartile, Q4=highest quartile). (D) Volcano plot of differential Mcm2 protein CUT&RUN peaks between WT Mcm2 and Mcm2-2A ES cells (left) and NPCs (right) from two independent replicates, with the total number of significantly up-regulated and down-regulated peaks (|log2 fold change|>1) shown. (E) Mcm2 CUT&RUN density in WT and Mcm2-2A ES cells at the reduced and increased Mcm2 CUT&RUN peaks in Mcm2-2A NPCs identified in D. (F) Mcm2 CUT&RUN density in WT and Mcm2-2A ES cells at the promoters ([\u20133k, 3k] of TSS) of down-regulated and up-regulated genes in Mcm2-2A mutant ESCs (ES cells) identified in Figure 3A, left. (G) Mcm2 CUT&RUN density in WT and Mcm2-2A NPCs at the promoters ([\u20133k, 3k] of TSS) of down-regulated and up-regulated genes in Mcm2-2A mutant NPCs (Figure 3A, right). (H) Mcm2 CUT&RUN density in WT and Mcm2-2A ES cells at the promoters ([\u20133k, 3k] of TSS) of down-regulated genes in Mcm2-2A mutant NPCs (Figure 3A, right). (E\u2013H) The Y-axis represents the log2 ratio of CUT&RUN density (reads per kilobase per million reads [RPKM]), with p values calculated using Wilcoxon signed-rank test from two independent replicates. (I) Snapshots displaying Mcm2 CUT&RUN density at Pou5f1 and Pax6 loci of WT and Mcm2-2A ES cells and NPCs. One representative result from two independent replicates is shown. Shadows indicate CUT&RUN signals around the TSS.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Genome-wide correlations of Mcm2 CUT&RUN datasets generated using antibodies against the Flag epitope fused to Mcm2 or Mcm2-2A or antibodies against Mcm2, each with two independent repeats using a 5 kb sliding window. (B) The overlap of peaks between IgG/Flag CUT&RUN and Mcm2/Flag-Mcm2 CUT&RUN. p=0.0001 was set as cutoff for peak calling. (C) Snapshots displaying IgG CUT&RUN, Flag-Mcm2 CUT&RUN, and Mcm2 CUT&RUN density at Pou5f1 and Pax6 loci of Flag-Mcm2 tagged wild type (WT) and Mcm2-2A embryonic stem (ES) cells. One representative result from two independent replicates was shown. Shadows indicate CUT&RUN signals around the transcription starting site (TSS). (D) Representative heatmaps of Mcm2 CUT&RUN (RPM, reads per million) density surrounding TSS and transcription termination sites (TTS) from highly expressed to lowly expressed genes in WT and Mcm2-2A ES cells (left) and neural precursor cells (NPCs) (right). Genes were separated into four groups based on their expression in mouse ES cells (Q1=lowest quartile, Q4=highest quartile). Color scale represents reads per million. (E) Relative enrichment of increased, reduced and non-differential peaks of Mcm2-2A in ES cells (left) and NPCs (right) at different genomic annotations. The Y-axis represents the log2 ratio of the Mcm2 enrichment after normalized to expected ratio of each genomic annotation. Reduced peaks are enriched at active promoters, strong enhancers, and bivalent chromatin domains.\n\nNext, we compared Mcm2 WT and Mcm2-2A mutant CUT&RUN profiles in both ESCs and NPCs. We observed far more reduced Mcm2 CUT&RUN peaks than increased peaks in both Mcm2-2A mutant ESCs and NPCs compared with their WT counterparts (Figure 5D; Figure 5\u2014figure supplement 1C). Most of these Mcm2 reduced peaks occurred at active promoters and bivalent chromatin regions, whereas increased peaks showed no specific enrichment (Figure 5\u2014figure supplement 1E). Because of dramatic changes of Mcm2 localization in both Mcm2-2A ESCs and NPCs, we first asked whether the changes of Mcm2 CUT&RUN peaks in ESCs correlated with those in NPCs. We observed that at the reduced Mcm2 peaks in Mcm2-2A NPCs, Mcm2 CUT&RUN density in Mcm2-2A ESCs was also dramatically decreased compared to WT ESCs, whereas at increased Mcm2-2A CUT&RUN peaks in Mcm2-2A NPCs, Mcm2 density in Mcm2-2A ESCs was higher than in WT ESCs (Figure 5E). Together, these results suggest that alterations in chromatin binding of Mcm2-2A mutant proteins at ESCs likely contribute to its altered chromatin binding in NPCs.\n\nWe also asked whether the changes in Mcm2 binding in ESCs and NPCs correlated with changes in gene expression in ESCs and in NPCs. We found that the average level of Mcm2-2A density at the TSS of down-regulated genes in ESCs was significantly lower than that in WT ESCs, but Mcm2 density at up-regulated genes was similar between WT and Mcm2-2A mutant ESCs (Figure 5F). Similar results were obtained in NPCs (Figure 5G). In addition, Mcm2 CUT&RUN density in Mcm2-2A mutant ESCs was reduced at the down-regulated genes in NPCs (Figure 5H), as exemplified at the promoter of neural lineage gene Pax6, where Mcm2 CUT&RUN density was down-regulated in mutant NPCs compared to WT NPCs (Figure 5I). This finding suggests that the reduced association of Mcm2 with chromatin in Mcm2-2A ESCs likely contributes to the reduced expression of these genes during differentiation to NPCs. Taken together, these results indicate that Mcm2 localizes at the TSS of actively transcribed regions in both ESCs and NPCs and that the histone binding of Mcm2 is important for its chromatin binding in ESCs and NPCs. Furthermore, the reduced chromatin binding of Mcm2-2A in ESCs, while having minor effects on gene expression in ESCs, may render these genes susceptible to deregulation during differentiation.\n\n### Mcm2 facilitates chromatin accessibility during mouse ESC differentiation\n\nThe landscape of chromatin accessibility dynamically changes during the development (Trevino et al., 2020). Given the high correlation of Mcm2 CUT&RUN peaks with ATAC-seq signals in ESCs (Figure 5A), we analyzed chromatin accessibility in WT and Mcm2-2A mutant ESCs and NPCs using ATAC-seq. The ATAC-seq repeats in both ESCs or NPCs were highly correlated with each other (Figure 6\u2014figure supplement 1A, B). Volcano plot analysis and genome-wide correlation revealed that in ESCs, the Mcm2-2A mutation did not markedly change ATAC-seq profiles (Figure 6\u2014figure supplement 1A, C). In contrast, ATAC-seq profiles in Mcm2-2A mutant NPCs were dramatically altered compared to WT NPCs (Figure 6\u2014figure supplement 1B, D). These results are consistent with the observations that the Mcm2-2A mutation had little impact on gene expression in ESCs, but markedly altered gene expression in NPCs. Importantly, ATAC-seq signals, which reflect chromatin accessibility, in NPCs were highly correlated with gene expression levels. For instance, we observed an increase and a reduction of ATAC-seq signals at the promoters of Pou5f1 and Pax6, respectively, in Mcm2-2A NPCs (Figure 6A). Moreover, the average level of ATAC-seq signals at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly lower than WT NPCs. The opposite was true for up-regulated genes (Figure 6B, Figure 6\u2014figure supplement 2A). These results are consistent with the idea that chromatin accessibility, as detected by ATAC-seq, is linked to gene transcription.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig6-v2.jpg)\n\n**Figure 6.:** (A) ATAC-seq tracks displaying ATAC-seq density at the Pou5f1 and Pax6 loci in wild type (WT) and Mcm2-2A ES cells and neural precursor cells (NPCs). Shadows indicate CUT&RUN signals around the transcription starting site (TSS). (B) ATAC-seq density in wild type (WT) and Mcm2-2A NPCs at the promoters ([\u20133k, 3k] of TSS) of down-regulated and up-regulated genes in Mcm2-2A NPCs (Figure 3A, right). (C) Heatmap of ATAC-seq density (right) surrounding Mcm2 CUT&RUN peaks (left, |log2 fold change|>1) in WT and Mcm2-2A NPCs. One representative result from two independent replicates is shown. Color scales represent reads per million. (D) The average of ATAC-seq density in WT and Mcm2-2A NPCs at the reduced and increased Mcm2 CUT&RUN peaks in Mcm2-2A NPCs shown in C. (E) Representative heatmap of ATAC-seq peaks in WT and Mcm2-2A NPCs at four groups of Mcm2 peaks identified in WT ES cells (Figure 5A) based on their co-localization with H3K27me3 and H3K4me3: Group 1: H3K4me3+ and H3K27me3+ (bivalent domain); Group 2: H3K4me3+ and H3K27me3- (active promoters); Group 3: H3K4me3- and H3K27me3+ (repressive promoters); and Group 4: H3K4me3- and H3K27me3-. Color scales represent reads per million. (F) Average ATAC-seq density in WT and Mcm2-2A NPCs at each of the four groups shown in E. (B, D, and F) The Y-axis represents the log2 ratio of ATAC-seq density (reads per kilobase per million reads [RPKM]). The p values were calculated using Wilcoxon signed-rank test. The average of two independent replicates is shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A and B) Genome-wide correlation of ATAC-seq density in WT and Mcm2-2A mutant embryonic stem (ES) cells (A) and NPCs (B) using a 5 kb window. Two independent replicates were shown for each cell line. (C and D) Volcano plot of differential ATAC-seq peaks between WT and Mcm2-2A mutant ES cells (C) and NPCs (D), with the number of significantly up-regulated and down-regulated peaks (p<0.05, |log2 fold change|>1) from two independent replicates shown.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/80917/elife-80917-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Heatmap of ATAC-seq density at the promoters ([\u20133k, 3k] around transcription starting site [TSS]) of up-regulated, down-regulated, and non-differential genes in Mcm2-2A neural precursor cells (NPCs) (Figure 3A, right). Two independent replicates were shown for each cell line. The ATAC-seq density (RPM, reads per million) are z-scored across samples. (B) Representative heatmap of ATAC-seq density (left) surrounding Mcm2 CUT&RUN peaks (right, |log2 fold change|>1) in wild type (WT) and Mcm2-2A embryonic stem (ES) cells. One representative result from two independent replicates was shown. Color scales represent reads per million. (C) Average ATAC-seq density in WT and Mcm2-2A ES cells at the reduced and increased Mcm2 CUT&RUN peaks in Mcm2-2A ES cells shown in B. (D) Average Mcm2 CUT&RUN density in WT and Mcm2-2A ES cells at each of the four groups of Mcm2 peaks classified in ES cells shown in main Figure 5A. (E) Representative heatmap of ATAC-seq peaks in WT and Mcm2-2A ES cells at four groups of Mcm2 peaks classified in Figure 5A. Color scale represents reads per million. (F) Average ATAC-seq density in WT and Mcm2-2A ES cells at each of the four groups of Mcm2 peaks classified in Figure 5A. (G) Representative heatmap of Mcm2 CUT&RUN peaks in WT and Mcm2-2A NPCs at four groups of Mcm2 peaks classified in Figure 5A. Color scale represents reads per million. (H) Average Mcm2 CUT&RUN density in WT and Mcm2-2A NPCs at each of the four groups of Mcm2 peaks classified in Figure 5A. (C, D, F, and H) The Y-axis represents the log2 ratio of ATAC-seq density (C and F, reads per kilobase per million reads [RPKM]) or Mcm2 CUT&RUN density (D and H, RPKM). The p values were calculated using Wilcoxon signed-rank test. The average of two independent replicates is shown.\n\nNext, we explored the correlation between Mcm2 binding and ATAC-seq density. Based on Figure 5D, we first separated Mcm2-2A CUT&RUN peaks in ESCs and in NPCs into three categories (increased, reduced, and non-differential Mcm2 peaks compared to WT Mcm2 ESCs and NPCs, respectively) and calculated ATAC-seq density at each group of Mcm2 peaks. We observed a dramatic reduction of ATAC-seq density at the reduced Mcm2 peak group in Mcm2-2A mutant NPCs, along with a slight increase of ATAC-seq density at increased Mcm2 peak groups (Figure 6C and D). Of note, ATAC-seq signals at increased Mcm2 peaks were very low (Figure 6C and D). In ESCs, ATAC-seq density at down-regulated Mcm2 peaks in Mcm2-2A mutant cells was also reduced, but to a far lesser extent than in NPCs (Figure 6\u2014figure supplement 2B, C). These results support the idea that Mcm2 is important for chromatin accessibility in both ESCs and potentially in NPCs.\n\nSince Mcm2 binding in ESCs likely affects gene expression during differentiation (Figure 5), we further analyzed the correlation of Mcm2 binding in ESCs with chromatin accessibility during differentiation. Because Mcm2 peaks in ESCs can be classified into four groups based on their co-localization with H3K27me3 and H3K4me3, we analyzed ATAC-seq signals at each group in WT and Mcm2-2A ESCs and NPCs. In ESCs, while Mcm2 CUT&RUN density in Mcm2-2A mutant cells was reduced in all four groups (Figure 6\u2014figure supplement 2D), ATAC-seq signals were slightly reduced in Group 2 (H3K4me3+, H3K27me3-) (Figure 6\u2014figure supplement 2E, F), suggesting that the reduced Mcm2 binding does not affect chromatin accessibility dramatically. In NPCs, Mcm2 CUT&RUN density in Mcm2-2A mutant cells was reduced in both Group 1 and Group 2, with Group 1 showing a larger reduction than Group 2 (Figure 6\u2014figure supplement 2G, H). Importantly, ATAC-seq signals in Mcm2-2A NPCs at Group 1 and Group 2 Mcm2 peaks were significantly reduced compared to WT NPCs, with a larger reduction in Group 1 than in Group 2, whereas ATAC-seq signals in Mcm2-2A NPCs were increased slightly at Group 3 and Group 4 Mcm2 peaks (Figure 6E and F). As Mcm2 Group 1 peaks co-localize with bivalent chromatin domains (H3K4me3+ and H3K27me3+), these results indicate that a reduction of Mcm2 binding in Mcm2-2A mutant ESCs, while having little effects on chromatin accessibility in ESCs, perturbs chromatin changes at bivalent chromatin domains during differentiation. Together, these results support the idea that Mcm2 binding at bivalent chromatin domains in ESCs is important for the resolution of these regions for subsequent gene activation during differentiation.\n\n## Discussion\n\nWe and others have previously shown that Mcm2, Pole3, and Pole4, three replisome components first known for their roles in DNA replication, function in the transfer of parental H3-H4 following DNA replication in yeast and mouse ESCs (Gan et al., 2018; Li et al., 2020; Petryk et al., 2018; Xu et al., 2022; Yu et al., 2018). Remarkably, mouse ESCs with deletion of Pole3, Pole4, or with mutations at the histone binding motif of Mcm2 (Mcm2-2A) largely grow normally. Here, we found that these mutant cells all exhibit defects in differentiation, revealing a novel role of these proteins in ES differentiation.\n\nMcm2 is a subunit of MCM helicase consisting of Mcm2-7. The MCM helicase is loaded on chromatin at the G1/S transition and serves as the core of the CMG replicative helicase to unwind double-stranded DNA for DNA synthesis during the S phase of the cell cycle (Tye, 1999). The N-terminus of Mcm2 contains a conserved histone binding motif that interacts with H3-H4 (Huang et al., 2015). Mutations at this histone binding motif (Mcm2-2A) that impair Mcm2\u2019s ability to bind H3-H4 lead to a dramatic enrichment of parental H3-H4 at leading strands compared to lagging strands of DNA replication forks during early S phase of the cell cycle (Gan et al., 2018; Li et al., 2020; Petryk et al., 2018). Using two different in vitro differentiation assays, we observed that Mcm2-2A mutant mouse ESCs, while growing normally, showed dramatic defects during differentiation. Furthermore, we found that the Mcm2-2A mutation induces global changes in gene expression, chromatin accessibility, and histone modifications during differentiation. Together, these studies reveal a novel role of Mcm2, through its interaction with H3-H4, during differentiation.\n\nPreviously, we have shown that deletion of two histone chaperones involved in deposition of newly synthesized H3-H4, Asf1a and the p150 subunit of the CAF-1 complex, also impairs differentiation of mouse ESCs (Cheng et al., 2019; Gao et al., 2018). Compared to CAF-1 p150 KO and Asf1a KO cells, the Mcm2-2A mutation exhibited distinct defects in differentiation. p150 KO mutant ESCs show defects in both the silencing of pluripotent genes and induction of lineage-specific genes during differentiation, with defects in the former much more pronounced (Cheng et al., 2019). In contrast, Asf1a KO ESCs minimally impact the silencing of pluripotent genes and dramatically affect the induction of lineage-specific genes (Gao et al., 2018). Silencing of pluripotent genes and induction of lineage-specific genes are both defective in Mcm2-2A cells, with the defects in the latter more pronounced. These results suggest that CAF-1, Mcm2, and Asf1a likely perform non-overlapping functions during differentiation.\n\nFirst, our results indicate that Mcm2 and Asf1a function in the same pathway for the induction of lineage-specific genes. For instance, we found that Mcm2-2A Asf1a KO double mutant cells showed similar defects in induction of lineage-specific gene as Mcm2-2A and Asf1a KO single mutant alone, suggesting that Mcm2 and Asf1a function in the same pathway for the induction of lineage-specific genes during differentiation. Second, transcriptome analysis by RNA-seq indicate that a large fraction of genes defective in induction during differentiation were overlapped between Mcm2-2A and Asf1a KO cells. Previously, it has been shown that Asf1 interacts with Mcm2 and this interaction, bridged by H3-H4, is reduced in Mcm2-2A mutant cells (Huang et al., 2015). Furthermore, we found that Asf1a is important to resolve bivalent chromatin domains through its ability for nucleosome disassembly (Gao et al., 2018). Consistent with this idea, chromatin accessibility at bivalent chromatin domains is reduced the most in Mcm2-2A mutant cells during differentiation, and this reduction is linked to the reduced Mcm2 at bivalent chromatin domains in ESCs, indicating that in addition to its role in parental histone transfer, Mcm2 also has a role in dynamic changes in chromatin during cell fate transition. Therefore, we suggest that Mcm2 and Asf1a function together at bivalent chromatin domains for the induction of lineage-specific genes during differentiation.\n\nSecond, our results indicate that Mcm2-2A mutant ESCs also show defects in differentiation in Asf1a-independent manner. For instance, silencing of pluripotent genes such as Pou5f1 and Nanog was defective in Mcm2-2A, but not Asf1a KO cells. Furthermore, Mcm2-2A Asf1a KO double mutant cells also display defects in silencing of Pou5f1 similar to Mcm2-2A cells. In addition to reduced binding to Asf1a, Mcm2-2A mutant cells are also defective in the transfer of parental H3-H4 to lagging strands of DNA replication forks (Huang et al., 2015; Li et al., 2020; Petryk et al., 2018) in ESCs. Therefore, the defects in silencing of pluripotent genes in Mcm2-2A mutant cells may be due to defects in the recycling of parental H3 during differentiation. Consistent with this idea, mutations at Pole3 and Pole4, two other genes involved in recycling both parental H3.3 and H3.1 in mouse ESCs following DNA replication (Xu et al., 2022), also result in defects in differentiation. Currently, the fate of parental histones at different chromatin domains during mouse ESC differentiation is largely unknown. It is possible that the ability of Mcm2 to recycle both parental H3.1 and H3.3 contributes to dynamic changes in chromatin states during differentiation. Alternatively, it is possible that Mcm2, via its ability to bind H3-H4, regulates gene expression directly during differentiation. Supporting this idea, we have shown that Mcm2 localizes at gene promoters of actively transcribed genes in both ESCs and NPCs. Furthermore, MCM2-7 proteins are associated with RNA Pol II in Xenopus and HeLa cells (Snyder et al., 2009; Yankulov et al., 1999), and Mcm2 and Mcm5 are required for Pol II-mediated transcription (Snyder et al., 2009). Finally, it is possible that defects in silencing of pluripotent genes in Mcm2-2A mutant cells are associated with firing of dormant origins. It is known that excessive amounts of MCM2-7 complexes than active origins are loaded on chromatin during G1 phase of the cell cycle. Dormant origins provide a first line of defense for the genome under replication stress. ESCs contain more dormant origins than progenitor cells such as NPCs (Ge et al., 2015). Consistent with this idea, we detected 13742 and 2686 Mcm2 CUT&RUN peaks, respectively, in WT ESCs and NPCs. Furthermore, activation of dormant origins is impaired in Mcm2 depleted cells (Ibarra et al., 2008), and that partial depletion of Mcm4 and Mcm5 does not affect ESCs self-renewal but impairs their differentiation, including toward the neural lineage (Ge et al., 2015). However, unlike depletion of MCM subunits in these studies, Mcm2-2A mutation in yeast and mouse ESCs has little impacts on the response to replication stress. Therefore, it is unlikely that defects in differentiation in Mcm2-2A mutant cells are largely due to its impact on firing of dormant origins. Nonetheless, future studies are needed to address whether Mcm2\u2019s role in differentiation, in particular its role in silencing of pluripotent genes during differentiation is linked to its ability to bind H3-H4.\n\nIn summary, our results indicate that Mcm2, through its interaction with H3-H4, likely regulates differentiation through multiple mechanisms, one of which involves in the resolution of bivalent chromatin domains through its interaction with Asf1a bridged by H3-H4.\n\n## Materials and methods\n\n### Materials availability statement\n\nFurther information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Zhiguo Zhang (zz2401@cumc.columbia.edu).\n\n### Cell culture and cell lines\n\nThe mouse E14 ESC line (RRID:CVCL_C320) was kindly provided by Dr Tom Fazzio (University of Massachusetts Medical School) and tested negative for mycoplasma. The stemness of ESCs were analyzed by testing the expression of Pou5f1, Sox2, and Nanog, as well as alkaline phosphatase staining. In addition, the karyotype of E14 ESCs was also monitored. Cells were grown in DMEM (Corning) medium supplemented with 15% (v/v) fetal bovine serum (GeminiBio), 1% penicillin/streptomycin (Gibco), 1 mM sodium pyruvate (Gibco), 2 mM L-glutamine (Gibco), 1% MEM non-essential amino acids (Gibco), 55 \u00b5M \u03b2-mercaptoethanol (Gibco), and 10 ng/ml mouse LIF (mLIF) on gelatin-coated dishes in the presence of 5% CO2 atmosphere at 37\u00b0C.\n\nMcm2-2A mutant E14 cell lines were generated as described before (Xu et al., 2022). To generate Asf1a KO cell lines, sgRNA (5\u2019-GATCACCTTCGAGTGCATCG-3\u2019) targeting Asf1a was cloned into the PX459 vector. Targeting plasmids were transfected into mouse ESCs by using Lipofectamine 3000. Clones were identified by Surveyor nuclease assays and the knockout confirmed by Sanger sequencing.\n\nTo generate pluripotency EGFP reporter mouse E14 WT and Mcm2-2A ESC line, the lentivirus-based EGFP reporter vector PL-SIN-EOS-C(3+)-EGFP plasmid (21318, Addgene) was used for infection. After selection, single cells were seeded and individual clones were then isolated, expanded, and confirmed under fluorescence microscope.\n\nTo generate mouse E14 WT and Mcm2-2A ESC lines expression Mcm2 or Asf1a ectopically, the lentivirus-based vector pWPXL empty vector, pWPXL-Mcm2, or pWPXL-Asf1a plasmids were used for infection. After selection, single cells were seeded and individual clones were then isolated, expanded, and confirmed using Western blot.\n\n### Antibodies\n\nAntibodies used in this study were: anti-MERVL-gag (A-2801, Epigentek), anti-Pou5f1 (sc-5279; Santa Cruz Biotechnology), anti-Nanog (A300-397A, Bethyl), anti-Tubulin (12G10, DSHB), anti-Ezh2 (5246, Cell Signaling), anti-H3K4me3 (ab8580, Abcam), anti-H3K27me3 (9733, Cell Signaling), anti-Flag (F1804, Sigma-Aldrich), anti-Mcm2 (ab4461, Abcam), and anti-Flag (F1804, Sigma).\n\n### EB assay\n\nMouse ESCs were disaggregated and suspended in ESC medium without LIF. EBs were formed using the hanging drop method (300 cells per drop) on dish lids for 3 days. EBs were then collected and cultured in 10 cm low attachment Petri dish in ESC culture medium without LIF, and the medium was changed every other day. Samples were collected at the indicated time points for analysis of gene expression.\n\n### Immunofluorescence\n\nCells were seeded on coverslip coated with 1% gelatin, and then fixed in 4% of formaldehyde for 15 min at room temperature (RT). After washing with PBS, fixed cells were permeabilized with 0.1% Triton X-100 in PBS (PBST) for 10 min and blocked for 1 hr with 5% normal goat serum (NGS) in PBST at RT. Cells were incubated with primary antibodies diluted in 1% NGS in PBST overnight at 4\u00b0C. Cells were then washed with PBST and incubated with fluorophore-labeled secondary antibodies for 1 hr at RT. DNA were stained with DAPI. Images were captured by Nikon 80i Fluorescence Microscope.\n\n### RT-PCR analysis\n\nTotal RNA was isolated from 1\u00d7106 cells using RNeasy Plus kit (74104, Qiagen); 0.5 \u03bcg of total RNA were used for cDNA synthesis with random hexamers (18080-051, Invitrogen). Quantitative PCR was performed in 12 \u03bcL reactions containing 0.1 \u03bcM primers and SYBR Green PCR Master Mix (Bio-Rad Laboratories). Primers used are listed below.\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligo name</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gapdh RT</td>\n      <td>CTGACGTGCCGCCTGGAGAAAC</td>\n      <td>CCCGGCATCGAAGGTGGAAGAGT</td>\n    </tr>\n    <tr>\n      <td>Pou5f1 RT</td>\n      <td>CCCGAAGCCCTCCCTACAGCAGAT</td>\n      <td>TGGGGGCAGAGGAAAGGATACAGC</td>\n    </tr>\n    <tr>\n      <td>Nanog RT</td>\n      <td>CCTTCCCTCGCCATCACACT</td>\n      <td>AGAGGAAGGGCGAGGAGAGG</td>\n    </tr>\n    <tr>\n      <td>Cdx2 RT</td>\n      <td>GCGGCTGGAGCTGGAGAAGGAGTT</td>\n      <td>CGGCGGCTGTGGAGGCTGTTGT</td>\n    </tr>\n    <tr>\n      <td>Brachyury RT</td>\n      <td>TCCCGGTGCTGAAGGTAAATGTGT</td>\n      <td>TTGGGCGAGTCTGGGTGGATGTAG</td>\n    </tr>\n    <tr>\n      <td>Nestin RT</td>\n      <td>TCGGGAGAGTCGCTTAGAG</td>\n      <td>AGTTGCTGCCCACCTTCC</td>\n    </tr>\n    <tr>\n      <td>Pax6 RT</td>\n      <td>TACCAGTGTCTACCAGCCAAT</td>\n      <td>TGCACGAGTATGAGGAGGTCT</td>\n    </tr>\n    <tr>\n      <td>Sox21 RT</td>\n      <td>GCGGTGCTTTACGATACGTTG</td>\n      <td>CCGAACATCAGAACCGAGCT</td>\n    </tr>\n    <tr>\n      <td>Gata4 RT</td>\n      <td>CGCCGCCTGTCCGCTTCC</td>\n      <td>TTGGGCTTCCGTTTTCTGGTTTGA</td>\n    </tr>\n    <tr>\n      <td>Zfpm2 RT</td>\n      <td>TGAAGACAACTCGCATCAGG</td>\n      <td>TAGCTCCCTCTGGGTCTGAA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Neural differentiation assay\n\nThe neural differentiation of ESCs was performed as previously described with some modifications (Gao et al., 2018; Ying et al., 2003). Briefly, ESCs (day 1) were seeded at high density (2\u00d7106 cells/60 mm dish) onto gelatin-coated dish in standard mES medium with LIF for 24 hr. The differentiation was initiated by seeding ESCs (day 2) in N2B27 medium at a density of 3\u00d7105 cells per 60 mm dish. The N2B27 medium was changed every day up to day 6. Cells were cultured continuously in N2B27 medium supplied with EGF (10 ng/ml, R&D) and FGF-2 (10 ng/ml, R&D) for 3 more days with medium changed every day. Neural precursors were collected at day 9 for analysis.\n\n### FACS analysis of GFP ratio\n\nFor GFP ratio analysis, exponentially growing mouse ESCs expressing EGFP reporter gene driven by Pou5f1 distal enhancer were collected and washed in PBS. Samples were analyzed by Attune NxT software of Attune flow cytometer (Thermo Fisher Scientific). Data were analyzed by FCS Express (version 7).\n\n### CUT&RUN\n\nCUT&RUN was performed by following a published protocol with some modifications (Skene et al., 2018). Cells were fixed in 0.5% PFA for 2 min and washed three times with washing buffer (20 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 1% Triton X-100, 0.05% SDS, 0.5 mM spermidine and 1\u00d7 proteinase inhibitor cocktail) and immobilized to concanavalin A-coated magnetic beads. Cells were then incubated overnight at 4\u00b0C with primary antibody (1:400 for Mcm2, 1:1000 for Flag, 1:1000 for H3K4me3, and 1:400 for H3K27me3) in antibody binding buffer (20 mM HEPES-NaOH pH = 7.5, 150 mM NaCl, 0.5 mM spermidine, 1% Triton X-100, 0.05% SDS, 2 mM EDTA, 0.04% digitonin, and 1\u00d7 proteinase inhibitor cocktail). After washing with dig-wash buffer (0.04% digitonin in washing buffer), cells were incubated with pre-assembled second antibody + pA-MNase complex in dig-wash buffer for 1 hr at 4\u00b0C. After washing unbound pA-MNase, 2 mM CaCl2 was added to initiate digestion at 0\u00b0C for 30 min. Reactions were stopped by mixing with 2\u00d7 Stop buffer (340 mM NaCl, 20 mM EDTA, 4 mM EGTA, 0.05% digitonin, 25 \u03bcL 100 \u00b5g/ml RNase A, 1% Triton X-100, and 0.05% SDS) followed by incubation at 37\u00b0C for 30 min. DNA in supernatant was mixed with same volume of 2\u00d7 elution buffer (20 mM Tris-HCl pH = 8.0, 20 mM EDTA, 300 mM NaCl, 10 mM DTT, and 2% SDS) and reverse crosslinked at 65\u00b0C overnight. DNA was purified using the QIAquick PCR Purification Kit (28104, Qiagen) and used for library preparation with the AccelNGS 1S Plus DNA library kit (Swift Bioscience, 10096). Each of the library DNAs was sequenced using paired-end sequencing by Illumina NextSeq 500 platforms at the Columbia University Genome Center.\n\n### ATAC-seq\n\nCells were collected, washed once with cold PBS, and lysed in cell lysis buffer (10 mM Tris-HCl pH 7.5, 10 mM NaCl, 3 mM MgCl2, 0.1% NP-40, 0.1% Tween-20, 0.01% digitonin). After incubating on ice for 3 min, cells were washed once in wash buffer (10 mM Tris-HCl pH 7.5, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20), and centrifuge at 500\u00d7 g for 10 min. Cell pellets were then incubated in transposition reaction buffer (10 mM Tris-HCl pH 7.6, 5 mM MgCl2, 10% dimethylformamide, 0.1% Tween-20, 0.01% digitonin, 33% 1\u00d7 PBS) with 1.5 \u00b5l pAG-Tn5 (15-1017, EpiCypher) at 37\u00b0C for 30 min. DNA was purified using the QIAquick PCR Purification Kit (28104, Qiagen). Library PCR was performed using standard Illumina Nextera Dual Indexing primers. Libraries were sequenced using paired-end sequencing on Illumina NextSeq 500 platforms at the Columbia University Genome Center.\n\n### CUT&RUN and ATAC-seq analysis\n\nCUT&RUN and ATAC libraries were constructed and sequenced using paired-end method on Illumina platforms. Adaptor sequences of all raw reads were removed by Cutadapt (Marcel, 2011) and reads <10 nt were removed. CUT&RUN and ATAC-seq data were then mapped to mouse (mm10) reference genome by Bowtie2 (Langmead and Salzberg, 2012). Multi-mapped reads were removed using SAMtools (MAPQ <40) (Li et al., 2009) and duplicate reads were removed using Sambamba software (Tarasov et al., 2015). Read coverage in a bin of 1 bp was calculated from filtered bam files by deepTools2 (Ram\u00edrez et al., 2016) and then normalized with total filtered reads number into reads per million. Genome-wide correlation was performed by deepTools2 (Ram\u00edrez et al., 2016) in a bin of 5000 bp. Peaks were called by MACS (Zhang et al., 2008) by parameters \u2018macs2 callpeak -g mm -f BAMPE -p 1e-04 --broad --broad-cutoff 1e-04 --llocal 10000 \u2013nolambda\u2019 and the cutoff of peak was p=0.0001.\n\nRead density level surrounding gene promoters ([\u20133kb, 3kb] of TSS) or MCM2 peaks was calculated by featureCounts (Liao et al., 2014) and then normalized to reads per kilobase per million reads (RPKM). Heatmap clustering was performed by \u201cward.D2\u201d (Murtagh and Legendre, 2014) method based on z score of log10(RPKM). To identify differential CUT&RUN peaks, peaks from both WT and mutant cells were first merged to a union pool and then read counts were calculated in the merged peaks by featureCounts (Liao et al., 2014). DESeq2 (Love et al., 2014) was then used to identify differential peaks by |log2 fold change|>1.\n\n### RNA-seq analysis\n\nTotal RNA from WT and Mcm2-2A ESCs and NPCs were isolated from 1\u00d7106 cells using RNeasy Plus Mini kit (74136, Qiagen). RNA-seq libraries were prepared and deep sequenced in Columbia University Genome Center. Two replicates for each sample were sequenced. RNA-seq libraries were sequenced using paired-end method on Illumina platforms. The paired-end reads of WT and Asf1a KO ESCs and NPCs were downloaded from GSE114424. Adaptor sequences of all raw reads were removed by Cutadapt (Marcel, 2011) and reads <10 nt were removed. RNA-seq data were mapped to the mouse (mm10) reference genome by STAR software (Dobin et al., 2013). Gene expression levels were first calculated by featureCounts (Liao et al., 2014) to obtain read counts and then normalized with total mapped reads into RPKM. Differential expressed genes were identified by DESeq2 (Love et al., 2014) by using adjusted p-value <0.01 and |log2 fold change|>1. GO enrichment analysis was performed by \u2018cluserProfiler\u2019 (Yu et al., 2012) in a level 4 of \u2018biological process\u2019 functions.\n\n### Statistical analyses\n\nData are presented as means \u00b1 SD. Differences between groups were evaluated using two-tailed unpaired Student\u2019s t test (noted in figure legends). Statistical analysis was performed in GraphPad Prism software (version 7). All tests were considered significant at p<0.05. For all the sequenced data analysis, the statistical test was performed using R software. Difference test between groups was evaluated by Wilcoxon signed-rank test. The center line is the medians of all data points, with the limits corresponding to the upper and the lower quartiles, respectively, and the whiskers representing the largest and smallest values. Where outliers were removed for plotting purposes, the removed data points were still used for statistical analyses.\n",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "7734a462-155c-476b-8711-43a343007882",
+      "submission_id": "2badba93-4212-456b-b2f1-ae1e1fe78886",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Weiwei Dang, https://ror.org/02pttbw34 Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80917.sa0](https://doi.org/10.7554/eLife.80917.sa0)\n\nThis manuscript reports a novel role of Mcm2 licensing factor and helicase subunit of the Mcm2-Mcm7 complex in the differentiation of embryonic stem cells into neuronal lineages. A series of compelling experimental manipulations dissect the abnormalities in the formation of heterochromatin at pluripotent genes and the resolution of bivalent chromatin domains at lineage-specific genes in differentiation in response to mutation of the histone binding domain of Mcm2. These findings provide new insights into the replication-independent roles of Mcm2, and will be of interest to scientists working on development and embryonal cell differentiation.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Weiwei Dang, https://ror.org/02pttbw34 Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80917.sa1](https://doi.org/10.7554/eLife.80917.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mcm2 promotes stem cell differentiation via its ability to bind H3-H4\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Further control data, analysis, and discussion on Mcm2 CUT&RUN experiments as suggested by both reviewers.\n\n2. Clarification on the differences in Mcm2-2A mutant phenotype between ESCs and NPCs.\n\n3. Potential redundancy between Mcm2 and histone chaperones.\n\n4. Clarification on how Mcm2 may regulate deposition of newly synthesized or recycled histones.\n\n5. Clarification on the role of reduced dormant origins reflected in the reduced density of Mcm2 at the origins in the differentiation to neuronal lineages.\n\n6. The reviewers concur that investigating the mechanism of Mcm2 differential engagement with the bivalent chromatin domains in ESCs vs NPCs is an open question and may require extended experiments. It is recommended for authors to provide additional discussions on this issue if it is not feasible to be addressed experimentally in a revision.\n\nReviewer #1 (Recommendations for the authors):\n\nAs noted in the \"Public Review\" section, there is some concern about the low signal to noise of the Mcm2 CUT&RUN data that potentially impacts some of the conclusions. To resolve the concerns with these data, I suggest the following:\n\n(1) Include negative control (IgG, etc) experiments in the figures and analyses. This may allow the authors to better determine which peaks are real.\n\n(2) Attempt more stringent peak calling (e.g., SEACR). SEACR was designed specifically for CUT&RUN and can better deal with some of the issues (e.g., sparse background model) that can lead to artifacts in peak calling.\n\n(3) Appropriately discuss/caveat these weaknesses in the conclusions regarding this data. To be clear, the authors' efforts to use a different antibody (FLAG) are admirable, and the similar results for Mcm2 and FLAG antibodies suggest the issue may be biological (i.e., Mcm2 binds broadly throughout chromatin and is not highly enriched at many loci). If that is the case, the other findings in the manuscript are still of considerable interest, but the Mcm2 binding data may need appropriate caveats.\n\nOther recommendations:\n\n(1) The scale bars for all heatmaps need better labels. For example, in Figure 3C, I assume the colors represent z-scores, but this is not clear. In Figure 4B, all of the heatmaps appear to share a color key, suggesting similar enrichment, but in other figures (such as Figure 5A), the scales are different for different proteins/histone modifications. Are these all expressed in reads per million or are different figures scaled differently?\n\n(2) The authors should either go into greater detail to explain the surprising finding that Mcm2 is not enriched at origins but is enriched ~300 kb from origins, or these results should be omitted. As of now, the data are not well explained and somewhat distracting.\n\n(3) The figure legend for Figure 6C contains a typo: it describes the ATAC-seq data to the left and CUT&RUN to the right. It is the opposite in the figure.\n",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "19e3a9fb-d11c-4fc8-b48e-d6f8a62cfab8",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C1",
+      "claim": "Mcm2 is a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) helicase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2, a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) helicase best known for its role in DNA replication, contains a histone binding motif that facilitates the transfer of parental histones following DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is established knowledge about Mcm2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "e22ebdce-ed0c-41a0-8a7a-d7339b3daf7c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C2",
+      "claim": "Mcm2 contains a histone binding motif that facilitates the transfer of parental histones following DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2, a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) helicase best known for its role in DNA replication, contains a histone binding motif that facilitates the transfer of parental histones following DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by citations in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "6578c9b3-e734-4fb6-bf58-2563b79abcdc",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C3",
+      "claim": "Mcm2 is important for the differentiation of mouse embryonic stem (ES) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Mcm2 is important for the differentiation of mouse embryonic stem (ES) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "f0cbb6ee-6aee-4ea5-9092-ff12471e258a",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C4",
+      "claim": "The Mcm2-2A mutation defective in histone binding shows defects in silencing of pluripotent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mcm2-2A mutation defective in histone binding shows defects in silencing of pluripotent genes and the induction of lineage-specific genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by RT-PCR and RNA-seq data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "3183eceb-9043-4e9d-a0d3-e2bfc264d56f",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C5",
+      "claim": "The Mcm2-2A mutation shows defects in the induction of lineage-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The Mcm2-2A mutation defective in histone binding shows defects in silencing of pluripotent genes and the induction of lineage-specific genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by RT-PCR and RNA-seq data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "44eec40d-5639-4a64-8503-85eea6691eb1",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C6",
+      "claim": "The defects in the induction of lineage-specific genes in Mcm2-2A mutant cells are likely, at least in part, due to reduced binding to Asf1a.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects in the induction of lineage-specific genes in the mutant cells are likely, at least in part, due to reduced binding to Asf1a, a histone chaperone that binds Mcm2 and is important for nucleosome disassembly at bivalent chromatin domains containing repressive H3K27me3 and active H3K4me3 modifications during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by genetic epistasis experiments and transcriptome analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "bbec3f56-a089-4468-818d-063920e72c58",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C7",
+      "claim": "Asf1a is a histone chaperone that binds Mcm2.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects in the induction of lineage-specific genes in the mutant cells are likely, at least in part, due to reduced binding to Asf1a, a histone chaperone that binds Mcm2 and is important for nucleosome disassembly at bivalent chromatin domains containing repressive H3K27me3 and active H3K4me3 modifications during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by previous literature cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "e30b7067-dcb2-4be9-9412-030c088901cb",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C8",
+      "claim": "Asf1a is important for nucleosome disassembly at bivalent chromatin domains containing repressive H3K27me3 and active H3K4me3 modifications during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects in the induction of lineage-specific genes in the mutant cells are likely, at least in part, due to reduced binding to Asf1a, a histone chaperone that binds Mcm2 and is important for nucleosome disassembly at bivalent chromatin domains containing repressive H3K27me3 and active H3K4me3 modifications during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by previous work cited in the manuscript (Gao et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "4daa3154-ec7e-4762-8af8-1b644fa09007",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C9",
+      "claim": "Mcm2 localizes at transcription starting sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2 localizes at transcription starting sites and the binding of Mcm2 at gene promoters is disrupted in both Mcm2-2A ES cells and neural precursor cells (NPCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by CUT&RUN data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "49894ad1-7395-41fb-b6bd-666e613a1590",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C10",
+      "claim": "The binding of Mcm2 at gene promoters is disrupted in both Mcm2-2A ES cells and neural precursor cells (NPCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2 localizes at transcription starting sites and the binding of Mcm2 at gene promoters is disrupted in both Mcm2-2A ES cells and neural precursor cells (NPCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by CUT&RUN data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "fc2f49d2-fe89-429b-9b65-b84adeb29522",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C11",
+      "claim": "Reduced Mcm2 binding at bivalent chromatin domains in Mcm2-2A ES cells correlates with decreased chromatin accessibility at corresponding sites in NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced Mcm2 binding at bivalent chromatin domains in Mcm2-2A ES cells correlates with decreased chromatin accessibility at corresponding sites in NPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by CUT&RUN and ATAC-seq data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "9a9af53d-5720-4c4f-9543-48e5b11b6d2a",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C12",
+      "claim": "ES cells are pluripotent cells that possess both the ability to self-renew and the potential to differentiate into lineage-specific cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryonic stem (ES) cells (ESCs) are pluripotent cells that possess both the ability to self-renew and the potential to differentiate into lineage-specific cell types (De Los Angeles et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "86814265-eab5-4f7f-81ed-c1eb16b108cc",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C13",
+      "claim": "During mouse ESC differentiation, pluripotency genes such as Pou5f1, Sox2, and Nanog are silenced.",
+      "claim_type": "EXPLICIT",
+      "source": "During mouse ESC differentiation, pluripotency genes such as Pou5f1, Sox2, and Nanog are silenced, whereas lineage-specific genes are up-regulated (Sha and Boyer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "a23649cd-7e28-42cf-9903-572acbb0c872",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C14",
+      "claim": "During mouse ESC differentiation, lineage-specific genes are up-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "During mouse ESC differentiation, pluripotency genes such as Pou5f1, Sox2, and Nanog are silenced, whereas lineage-specific genes are up-regulated (Sha and Boyer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "fd13bd0a-91e4-4cfd-be35-887b78be7ad0",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C15",
+      "claim": "The silencing of pluripotency genes (Pou5f1, Sox2, and Nanog) is associated with both a dramatic reduction of tri-methylation of histone H3 lysine 4 (H3K4me3) and an increase in H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the silencing of pluripotency genes (Pou5f1, Sox2, and Nanog) is associated with both a dramatic reduction of tri-methylation of histone H3 lysine 4 (H3K4me3), a histone modification associated with active gene transcription, and an increase in H3K27me3, a repressive histone modification (Atlasi and Stunnenberg, 2017; Mikkelsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "c56ce117-7758-4b73-8506-481bce6ce13a",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C16",
+      "claim": "H3K4me3 is a histone modification associated with active gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the silencing of pluripotency genes (Pou5f1, Sox2, and Nanog) is associated with both a dramatic reduction of tri-methylation of histone H3 lysine 4 (H3K4me3), a histone modification associated with active gene transcription, and an increase in H3K27me3, a repressive histone modification (Atlasi and Stunnenberg, 2017; Mikkelsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "afd6b9af-c84f-416c-8c9e-812b839bb855",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C17",
+      "claim": "H3K27me3 is a repressive histone modification.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the silencing of pluripotency genes (Pou5f1, Sox2, and Nanog) is associated with both a dramatic reduction of tri-methylation of histone H3 lysine 4 (H3K4me3), a histone modification associated with active gene transcription, and an increase in H3K27me3, a repressive histone modification (Atlasi and Stunnenberg, 2017; Mikkelsen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d1e98796-6171-4e96-8385-2653456e1c9b",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C18",
+      "claim": "The promoters of lineage-specific genes are marked by both repressive H3K27me3 and active H3K4me3 marks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the promoters of lineage-specific genes, which are marked by both repressive H3K27me3 and active H3K4me3 marks, needs to be resolved for silencing and/or induction of lineage-specific genes during differentiation (Bernstein et al., 2006; Harikumar and Meshorer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "12816f39-6d79-46e8-81a5-011a058bf4fe",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C19",
+      "claim": "CAF-1 is a histone chaperone involved in the deposition of newly synthesized H3-H4 onto replicating DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, chromatin assembly factor 1 (CAF-1), a histone chaperone involved in the deposition of newly synthesized H3-H4 onto replicating DNA, is important for cell fate maintenance (Ishiuchi et al., 2015; Smith and Stillman, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "269b8058-0291-4edf-9042-abcbfb4f7f29",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C20",
+      "claim": "CAF-1 is important for cell fate maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, chromatin assembly factor 1 (CAF-1), a histone chaperone involved in the deposition of newly synthesized H3-H4 onto replicating DNA, is important for cell fate maintenance (Ishiuchi et al., 2015; Smith and Stillman, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "0077b6a6-4d88-4a4a-a06a-f8890108d55c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C21",
+      "claim": "Depletion of subunits of the CAF-1 complex in embryonic fibroblasts results in increased reprogramming efficiency into iPSC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of subunits of the CAF-1 complex in embryonic fibroblasts results in increased reprogramming efficiency into iPSC cells (Cheloufi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "6d295c41-adff-4072-a779-de62cb7d5299",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C22",
+      "claim": "In ESCs, CAF-1 depletion leads to an increase in the percentage of 2C-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In ESCs, CAF-1 depletion leads to an increase in the percentage of 2C-like cells (2-cell-stage embryos), as well as defects in differentiation (Cheng et al., 2019; Ishiuchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "acab3468-b4ce-40de-8eae-7551c0b345c6",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C23",
+      "claim": "In ESCs, CAF-1 depletion leads to defects in differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In ESCs, CAF-1 depletion leads to an increase in the percentage of 2C-like cells (2-cell-stage embryos), as well as defects in differentiation (Cheng et al., 2019; Ishiuchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "03001697-f963-4a67-8eff-65b42b6eda92",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C24",
+      "claim": "Asf1a regulates the disassembly of nucleosomes at bivalent chromatin domains for the induction of lineage-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Asf1a, a histone chaperone involved in the delivery of newly synthesized H3-H4 to CAF-1 in replication-coupled nucleosome assembly, as well as to HIRA, a histone chaperone involved in replication-independent (RI) nucleosome assembly (De Koning et al., 2007; English et al., 2006; Tagami et al., 2004), regulates the disassembly of nucleosomes at bivalent chromatin domains for the induction of lineage-specific genes (Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "ab0e7909-8bfe-4e86-9eda-2956c27a6e27",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C25",
+      "claim": "Histone chaperone CAF-1 promotes the formation of H3K27me3-mediated silencing at pluripotent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, histone chaperone CAF-1 promotes the formation of H3K27me3-mediated silencing at pluripotent genes (Cheng et al., 2019), whereas HIRA facilitates the PRC2 silencing complex at developmental loci during differentiation (Banaszynski et al., 2013; Ray-Gallet et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "6c44a757-7f07-4225-bab3-543a5735ec0f",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C26",
+      "claim": "HIRA facilitates the PRC2 silencing complex at developmental loci during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, histone chaperone CAF-1 promotes the formation of H3K27me3-mediated silencing at pluripotent genes (Cheng et al., 2019), whereas HIRA facilitates the PRC2 silencing complex at developmental loci during differentiation (Banaszynski et al., 2013; Ray-Gallet et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "fd57df2e-3323-4b2e-9083-24d16ee348c5",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C27",
+      "claim": "Pole3 and Pole4 are two subunits of leading strand DNA polymerase \u03b5 that interact with H3-H4 and facilitate the transfer of parental histones to leading strands of DNA replication forks in both yeast and mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pole3 and Pole4, two subunits of leading strand DNA polymerase \u03b5, interact with H3-H4 and facilitate the transfer of parental histones to leading strands of DNA replication forks in both yeast and mouse ESCs (Li et al., 2020; Yu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d1d70e6c-e49a-4845-b5c1-81cdc1d1698a",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C28",
+      "claim": "Mcm2 contains a histone binding domain (HBD).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Mcm2, a subunit of the minichromosome maintenance proteins 2\u20137 (Mcm2-7) complex that plays an essential role in DNA replication as the replicative helicase (Tye, 1999), contains a histone binding domain (HBD) (Huang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "87867b23-e7ca-4fc5-a4b9-191d9130ab5c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C29",
+      "claim": "Mutations at HBDs (Y81A and Y90A) of Mcm2 (Mcm2-2A) in both yeast and mouse ESCs leads to defects in the transfer of parental histones to lagging strands of DNA replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at HBDs (Y81A and Y90A) of Mcm2 (Mcm2-2A) in both yeast and mouse ESCs leads to defects in the transfer of parental histones to lagging strands of DNA replication forks (Gan et al., 2018; Li et al., 2020; Petryk et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "7b0db388-9ff6-4c9c-a76c-c42b3996da32",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C30",
+      "claim": "Mcm2 interacts with Asf1 that is bridged by H3-H4 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Mcm2 interacts with Asf1 that is bridged by H3-H4 proteins (Groth et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "233662ca-64c7-422d-91d9-f474e39c10ca",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C31",
+      "claim": "Mcm2 interacts with the carboxyl-terminal domain of RNA Pol II in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides its functions in DNA replication and histone deposition, Mcm2 also interacts with the carboxyl-terminal domain of RNA Pol II in Xenopus oocytes, and the Mcm2-7 complex is required for RNA Pol II-mediated transcription at some settings in mammalian cells (Snyder et al., 2009; Yankulov et al., 1999), indicating a possible role of Mcm2 in gene transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "5eae5545-6ac9-4d72-bd80-55453f86ed83",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C32",
+      "claim": "The Mcm2-7 complex is required for RNA Pol II-mediated transcription at some settings in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides its functions in DNA replication and histone deposition, Mcm2 also interacts with the carboxyl-terminal domain of RNA Pol II in Xenopus oocytes, and the Mcm2-7 complex is required for RNA Pol II-mediated transcription at some settings in mammalian cells (Snyder et al., 2009; Yankulov et al., 1999), indicating a possible role of Mcm2 in gene transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d5f7b7fa-837f-47ce-b20d-4557b0a6575d",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C33",
+      "claim": "Mouse ESCs with deletion of Pole3 and Pole4 or mutations at the HBD of Mcm2 grow normally and maintain stemness.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse ESCs with deletion of Pole3 and Pole4 or mutations at the HBD of Mcm2 grow normally and maintain stemness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "ff84ae1e-d267-4af4-bed1-0d5b5128ddb2",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C34",
+      "claim": "All mutants (Pole3 KO, Pole4 KO, Mcm2-2A, Mcm2-2A Pole3 KO, Mcm2-2A Pole4 KO) exhibited reduced EB size at day 9 compared to wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that all mutants exhibited reduced EB size at day 9 compared to wild type (WT) cells, with Mcm2-2A, Mcm2-2A Pole3 KO, Mcm2-2A Pole4 KO double mutant cells exhibiting dramatic defects based on morphology (Figure 1B, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by images in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "cc778fcb-b032-4245-836f-e87129de1a75",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C35",
+      "claim": "Mcm2-2A, Mcm2-2A Pole3 KO, Mcm2-2A Pole4 KO double mutant cells exhibited dramatic defects in EB formation based on morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that all mutants exhibited reduced EB size at day 9 compared to wild type (WT) cells, with Mcm2-2A, Mcm2-2A Pole3 KO, Mcm2-2A Pole4 KO double mutant cells exhibiting dramatic defects based on morphology (Figure 1B, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by images in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "7ed463b3-4015-4b6d-a187-fb4317688b20",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C36",
+      "claim": "The silencing of Pou5f1 was compromised in all the mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed that the silencing of Pou5f1, a gene involved in pluripotency, was compromised in all the mutant cells, with the Mcm2-2A Pole3 KO and Mcm2-2A Pole4 KO double mutant cells showing larger effects than either single mutant alone (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "4822b45c-4563-40b6-b36a-b08feaa236ea",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C37",
+      "claim": "The Mcm2-2A Pole3 KO and Mcm2-2A Pole4 KO double mutant cells showed larger effects on Pou5f1 silencing than either single mutant alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed that the silencing of Pou5f1, a gene involved in pluripotency, was compromised in all the mutant cells, with the Mcm2-2A Pole3 KO and Mcm2-2A Pole4 KO double mutant cells showing larger effects than either single mutant alone (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "3e65b623-8131-4ca2-80ef-061e7d97dabf",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C38",
+      "claim": "The transcription of several lineage-specific genes was delayed in all the mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the transcription of several lineage-specific genes, representing three germ layers, was delayed in all the mutant cells, with the double mutants showing the strongest defects (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "1860a935-a31a-496d-b976-3d788eed8072",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C39",
+      "claim": "The double mutants (Mcm2-2A Pole3 KO and Mcm2-2A Pole4 KO) showed the strongest defects in transcription of lineage-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the transcription of several lineage-specific genes, representing three germ layers, was delayed in all the mutant cells, with the double mutants showing the strongest defects (Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 1C and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "ee2b64cb-ece7-4b65-b638-0c3d4de727b2",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C40",
+      "claim": "Mcm2-2A mutant and WT cells showed similarly low frequencies of 2C-like cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Mcm2-2A mutant and WT cells showed similarly low frequencies of 2C-like cells (Figure 1D and E), indicating that ESC plasticity is not altered in Mcm2-2A mutant cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by immunofluorescence data in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "31526e18-a63b-431e-a44b-5664398462f6",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C41",
+      "claim": "ESC plasticity is not altered in Mcm2-2A mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Mcm2-2A mutant and WT cells showed similarly low frequencies of 2C-like cells (Figure 1D and E), indicating that ESC plasticity is not altered in Mcm2-2A mutant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and inferred from the 2C-like cell frequency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "9fb8f9d6-1e22-4101-a9ae-ef473b5dbe48",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C42",
+      "claim": "Mcm2-2A and double mutant (Mcm2-2A and Pole4 KO) cells exhibited compromised silencing of Pou5f1 and Nanog during neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the EB formation assays, Mcm2-2A and double mutant (Mcm2-2A and Pole4 KO) cells exhibited compromised silencing of Pou5f1 and Nanog as well as defects in the induction of Sox21 and Pax6 expression (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "2ed8f3fc-56f7-4f67-8fbc-e0a6767c8047",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C43",
+      "claim": "Mcm2-2A and double mutant (Mcm2-2A and Pole4 KO) cells exhibited defects in the induction of Sox21 and Pax6 expression during neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the EB formation assays, Mcm2-2A and double mutant (Mcm2-2A and Pole4 KO) cells exhibited compromised silencing of Pou5f1 and Nanog as well as defects in the induction of Sox21 and Pax6 expression (Figure 2A, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "9f74c6ad-591b-42f2-a366-385b06b60e14",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C44",
+      "claim": "Pole4 KO had no significant effects on the expression of pluripotency genes or neural lineage genes compared with WT cells during neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Pole4 KO had no significant effects on the expression of pluripotency genes or neural lineage genes compared with WT cells during neural differentiation (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "846cd5f2-ae95-43d3-971f-f79c059a5354",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C45",
+      "claim": "From day 7 to day 9 of neural differentiation, a dramatic loss of GFP expression was observed in WT cells, whereas ~30% of Mcm2-2A cells preserved GFP signals at day 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, from day 7 to day 9, we observed a dramatic loss of GFP expression in WT cells, whereas ~30% of Mcm2-2A cells preserved GFP signals at day 9 (Figure 2B and C; Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by FACS analysis in Figure 2B and C and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "f56b9e22-a305-4241-bf98-39cb18fba4cd",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C46",
+      "claim": "Higher expression level of Pou5f1 and Nanog proteins were detected in Mcm2-2A cells compared to WT cells after differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we detected higher expression level of Pou5f1 and Nanog proteins in Mcm2-2A cells compared to WT cells after differentiation (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "fa509aca-3404-43ac-96fd-f4ddce07f7a0",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C47",
+      "claim": "Mcm2-2A cells upon differentiation did not exhibit neural cell morphology like WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Mcm2-2A cells upon differentiation did not exhibit neural cell morphology like WT cells (Figure 2B), providing additional support to the idea that the Mcm2-2A mutation compromises the differentiation of mouse ESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by images in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "a89adff9-359f-40ee-86f2-785fc2338c0e",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C48",
+      "claim": "Expression of WT Mcm2 in Mcm2-2A cells led to silencing of Pou5f1 to a similar degree as WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression analysis by RT-PCR indicated that expression of WT Mcm2 in Mcm2-2A cells led to silencing of Pou5f1 to a similar degree as WT cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "90f5e7da-cd96-44bc-b9c9-a038723bafc2",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C49",
+      "claim": "Expression of Mcm2 partially rescued the defects in the expression of lineage-specific genes in Mcm2-2A.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, expression of Mcm2 partially rescued the defects in the expression of lineage-specific genes in Mcm2-2A (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "57637b9b-f611-4ccc-9c57-284c936511be",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C50",
+      "claim": "The Mcm2-Asf1 interaction is reduced in Mcm2-2A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mcm2 interacts with histone chaperone Asf1, which is bridged by H3-H4 (Huang et al., 2015). Consequently, the Mcm2-Asf1 interaction is reduced in Mcm2-2A cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "af92ddba-91a5-4937-a85f-7fd86f792aee",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C51",
+      "claim": "Deletion of Asf1a, but not Asf1b, in mouse ESCs impairs the induction of lineage-specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that deletion of Asf1a, but not Asf1b, in mouse ESCs impairs the induction of lineage-specific genes (Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "df0453bc-4c0b-4b9e-b775-0140be188e43",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C52",
+      "claim": "Asf1a overexpression could not rescue the defects in differentiation of Mcm2-2A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand how Mcm2-2A affects differentiation, we first overexpressed Asf1a in Mcm2-2A cells and found that Asf1a overexpression could not rescue the defects in differentiation of Mcm2-2A cells based on analysis of cell morphology (Figure 2\u2014figure supplement 2A, B) and the expression of Pou5f1 and lineage-specific genes (Sox21 and Pax6) (Figure 2\u2014figure supplement 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by data in Figure 2\u2014figure supplement 2A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "79a28e1e-ed13-432b-bcc4-3317c1481cf5",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C53",
+      "claim": "Mcm2-2A Asf1a KO double mutant exhibited similar morphology as Mcm2-2A cells but not Asf1a KO cells after differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Mcm2-2A Asf1a KO double mutant exhibited similar morphology as Mcm2-2A cells but not Asf1a KO cells after differentiation (Figure 2\u2014figure supplement 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by images in Figure 2\u2014figure supplement 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "07ea7604-761d-487a-a270-641d99967dc9",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C54",
+      "claim": "Asf1a KO dramatically reduced the induction of lineage-specific genes, while having little effects on the silencing of Pou5f1.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, Asf1a KO dramatically reduced the induction of lineage-specific genes, while having little effects on the silencing of Pou5f1 (Gao et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "97aece63-65e4-422e-8ba8-f8ad741784d8",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C55",
+      "claim": "Both Mcm2-2A cell line and Mcm2-2A Asf1a KO double mutant cell line showed compromised silencing of Pou5f1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both Mcm2-2A cell line and Mcm2-2A Asf1a KO double mutant cell line showed compromised silencing of Pou5f1 (Figure 2\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "adb7de18-9824-4b81-a17e-d905ca045aff",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C56",
+      "claim": "Mcm2-2A Asf1a KO double mutant cells did not show additional defects in the induction of lineage-specific genes compared with Mcm2-2A or Asf1a KO single mutant alone.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, while significant defects in the induction of neural lineage gene expression (Pax6 and Sox21) were detected in either Mcm2-2A cells or Asf1a KO cells, Mcm2-2A Asf1a KO double mutant cells did not show additional defects in the induction of lineage-specific genes compared with Mcm2-2A or Asf1a KO single mutant alone (Figure 2\u2014figure supplement 2I),",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "6ca7da3f-5b13-4b6a-b0ba-96cb91519c03",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C57",
+      "claim": "Mcm2-2A mutant suppressed the defects in the induction of Zfpm2 in Asf1a KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that Mcm2-2A mutant suppressed the defects in the induction of another neural lineage marker, Zfpm2 in Asf1a KO cells (Figure 2\u2014figure supplement 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RT-PCR data in Figure 2\u2014figure supplement 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "8cce40e8-a30b-4764-b4e1-1426c70bc263",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C58",
+      "claim": "The Mcm2-2A mutation caused greater gene expression changes in NPCs than in ESCs, with 54 differentially expressed genes (DEGs) between WT and Mcm2-2A ESCs and 609 DEGs between WT and Mcm2-2A NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the Mcm2-2A mutation caused greater gene expression changes in NPCs than in ESCs, with 54 differentially expressed genes (DEGs) between WT and Mcm2-2A ESCs and 609 DEGs between WT and Mcm2-2A NPCs (false discovery rate<0.01, |log2 fold change|>1) (Figure 3A), providing an explanation for the observation that the Mcm2-2A mutation does not affect stemness or proliferation of mouse ESCs dramatically.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by RNA-seq data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "07527a06-f2fb-4bf0-a473-f5ac930d4138",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C59",
+      "claim": "352 down-regulated genes in Mcm2-2A NPCs were enriched in neurodevelopment, such as forebrain/hindbrain development and neural nucleus development.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis of 352 down-regulated genes in Mcm2-2A NPCs were enriched in neurodevelopment, such as forebrain/hindbrain development and neural nucleus development (Figure 3D), whereas 238 up-regulated genes compared to WT ESCs were related to stem cell population maintenance (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by GO analysis in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "5ccf5914-152c-4f7a-a4a8-01a83e3a8c86",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C60",
+      "claim": "238 up-regulated genes in Mcm2-2A NPCs compared to WT ESCs were related to stem cell population maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO) analysis of 352 down-regulated genes in Mcm2-2A NPCs were enriched in neurodevelopment, such as forebrain/hindbrain development and neural nucleus development (Figure 3D), whereas 238 up-regulated genes compared to WT ESCs were related to stem cell population maintenance (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by GO analysis in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "078c2c0e-080a-4caa-88ce-41bb09e4507f",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C61",
+      "claim": "Most of the down-regulated genes in Mcm2-2A mutant NPCs (62% of total) were overlapped with the down-regulated genes in Asf1a KO NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that most of the down-regulated genes in Mcm2-2A mutant NPCs (62% of total), which represent those genes showing defects in induction compared to WT NPC, were overlapped with the down-regulated genes in Asf1a KO NPCs (Figure 3\u2014figure supplement 1D), and most of these genes were bivalent genes (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Venn diagram analysis in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "4b31e8ee-3a13-484a-84f1-367925db8a0d",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C62",
+      "claim": "Most of the overlapped down-regulated genes in Mcm2-2A and Asf1a KO NPCs were bivalent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that most of the down-regulated genes in Mcm2-2A mutant NPCs (62% of total), which represent those genes showing defects in induction compared to WT NPC, were overlapped with the down-regulated genes in Asf1a KO NPCs (Figure 3\u2014figure supplement 1D), and most of these genes were bivalent genes (Figure 3\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by analysis in Figure 3\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "bb2823f8-6eaa-48ce-8854-1b8d6de848f3",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C63",
+      "claim": "In both WT and Mcm2-2A mutant NPCs, the H3K27me3 level was reduced compared to their corresponding ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in both WT and Mcm2-2A mutant NPCs, the H3K27me3 level was reduced compared to their corresponding ESCs, with a modest reduction of H3K27me3 in Mcm2-2A NPCs compared to WT NPCs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "bb46d68d-759d-40ff-b086-5b9164b12e3e",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C64",
+      "claim": "There was a modest reduction of H3K27me3 in Mcm2-2A NPCs compared to WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in both WT and Mcm2-2A mutant NPCs, the H3K27me3 level was reduced compared to their corresponding ESCs, with a modest reduction of H3K27me3 in Mcm2-2A NPCs compared to WT NPCs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "80a56386-e9b2-41d5-91e6-0abb464364c8",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C65",
+      "claim": "The Mcm2-2A mutation did not have an effect on H3K4me3 levels during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Mcm2-2A mutation did not have an effect on H3K4me3 levels during differentiation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by Western blot data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "4c9a7de7-a84d-476a-916d-a1dbc1da9800",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C66",
+      "claim": "The effects of Mcm2-2A on the chromatin binding of H3K4me3 or H3K27me3 in ESCs were much less pronounced than that in NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the transcriptome changes, the effects of Mcm2-2A on the chromatin binding of H3K4me3 or H3K27me3 in ESCs were much less pronounced than that in NPCs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "8bcb331e-bc6a-4ecd-b78a-30b46b201cf4",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C67",
+      "claim": "Both the reduction of H3K4me3 at the promoter of Pou5f1 and the increase of this mark at the promoter of Pax6 were compromised in Mcm2-2A mutant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Mcm2-2A mutant cells, both the reduction of H3K4me3 at the promoter of Pou5f1 and the increase of this mark at the promoter of Pax6 were compromised, consistent with the compromised silencing of Pou5f1 and the induction of Pax6 in Mcm2-2A mutant cells during differentiation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d17efc79-50fa-4dfa-8f62-1b540639ab6f",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C68",
+      "claim": "The average levels of H3K4me3 at the TSS of down-regulated genes in Mcm2-2A mutant NPCs were significantly lower than those of WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the average levels of H3K4me3 at the TSS of down-regulated genes in Mcm2-2A mutant NPCs were significantly lower than those of WT NPCs and higher at the TSS of up-regulated genes (Figure 4D, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "63ab612f-021c-460a-a7c3-79a901487904",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C69",
+      "claim": "H3K27me3 density at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly higher than WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, H3K27me3 density at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly higher than WT NPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "70b2294f-6cb3-4848-9a12-cb73cce7acca",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C70",
+      "claim": "H3K27me3 density at the TSS of up-regulated genes was similar between WT and Mcm2-2A NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H3K27me3 density at the TSS of up-regulated genes was similar between WT and Mcm2-2A NPCs (Figure 4E, Figure 4\u2014figure supplement 1D), suggesting that the reduced expression of genes in Mcm2-2A NPCs likely was due to the retention of this repressive mark during differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d6b35da6-56e1-4af1-a36f-51f1a0a500d3",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C71",
+      "claim": "Using p=0.0001 as a cutoff, 13742 Mcm2 CUT&RUN peaks were identified in WT ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using p=0.0001 as a cutoff, we identified 13742 Mcm2 CUT&RUN peaks in WT ESCs, demonstrating the reproducibility and reliability of Mcm2 CUT&RUN datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and based on CUT&RUN data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "b5937824-72b2-4c34-80fb-ebaa2c659b6c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C72",
+      "claim": "The majority of Mcm2 CUT&RUN peaks were enriched with H3K4me3 CUT&RUN signals and ATAC-seq peaks in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the majority of Mcm2 CUT&RUN peaks were enriched with H3K4me3 CUT&RUN signals and ATAC-seq peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN and ATAC-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "60ae8e51-4424-44ab-a195-352fcc06a9fa",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C73",
+      "claim": "Over 26% bivalent domains had at least one Mcm2 peak nearby compared with 21% H3K4me3 peaks having a Mcm2 peak.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when taking into consideration of total number of H3K4me3, H3K27me3, and bivalent domains in ESCs, we observed that over 26% bivalent domains had at least one Mcm2 peaks nearby compared with 21% H3K4me3 peaks having a Mcm2 peak (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "6fafc0b7-869e-4fc4-b37a-b8acd100d6a1",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C74",
+      "claim": "Almost all the Mcm2 peaks in WT NPCs co-localized with H3K4me3 and ATAC-seq peaks (H3K4me3+, H3K27me3-).",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed similar analysis on 2686 of Mcm2 peaks identified in WT NPCs and observed that almost all the Mcm2 peaks co-localized with H3K4me3 and ATAC-seq peaks (H3K4me3+, H3K27me3-) (Figure 5A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN and ATAC-seq data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "81c25090-cf60-48f3-8547-9431afce8b8c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C75",
+      "claim": "Mcm2 CUT&RUN signals were enriched at the TSS of highly transcribed genes compared to the TSS of lowly transcribed genes in both ESCs and NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Mcm2 CUT&RUN signals were enriched at the TSS of highly transcribed genes compared to the TSS of lowly transcribed genes in both ESCs and NPCs (Figure 5C, Figure 5\u2014figure supplement 1D), indicating that the majority of Mcm2 localizes at actively transcribed regions and that Mcm2 may function in gene transcription in a manner independent of its role in DNA replication.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "c78887d8-9db8-46f1-b22d-e82d74d1c2a7",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C76",
+      "claim": "Far more reduced Mcm2 CUT&RUN peaks than increased peaks were observed in both Mcm2-2A mutant ESCs and NPCs compared with their WT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed far more reduced Mcm2 CUT&RUN peaks than increased peaks in both Mcm2-2A mutant ESCs and NPCs compared with their WT counterparts (Figure 5D; Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "23902c77-d2f2-4150-8139-0210bbcca70a",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C77",
+      "claim": "Most of the Mcm2 reduced peaks occurred at active promoters and bivalent chromatin regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these Mcm2 reduced peaks occurred at active promoters and bivalent chromatin regions, whereas increased peaks showed no specific enrichment (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by genomic annotation analysis in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "f3d7530a-e719-4417-b7ed-360368ccb69e",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C78",
+      "claim": "The average level of Mcm2-2A density at the TSS of down-regulated genes in ESCs was significantly lower than that in WT ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the average level of Mcm2-2A density at the TSS of down-regulated genes in ESCs was significantly lower than that in WT ESCs, but Mcm2 density at up-regulated genes was similar between WT and Mcm2-2A mutant ESCs (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "b52c6e0f-2f6a-4866-b41c-57c111639fea",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C79",
+      "claim": "Mcm2 CUT&RUN density in Mcm2-2A mutant ESCs was reduced at the down-regulated genes in NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Mcm2 CUT&RUN density in Mcm2-2A mutant ESCs was reduced at the down-regulated genes in NPCs (Figure 5H), as exemplified at the promoter of neural lineage gene Pax6, where Mcm2 CUT&RUN density was down-regulated in mutant NPCs compared to WT NPCs (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by CUT&RUN data in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d07ff4d4-a5cf-466d-9be3-a120cb18e0a3",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C80",
+      "claim": "In ESCs, the Mcm2-2A mutation did not markedly change ATAC-seq profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Volcano plot analysis and genome-wide correlation revealed that in ESCs, the Mcm2-2A mutation did not markedly change ATAC-seq profiles (Figure 6\u2014figure supplement 1A, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ATAC-seq data in Figure 6\u2014figure supplement 1A, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "886089cd-112b-4b22-8c2d-542607988204",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C81",
+      "claim": "ATAC-seq profiles in Mcm2-2A mutant NPCs were dramatically altered compared to WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ATAC-seq profiles in Mcm2-2A mutant NPCs were dramatically altered compared to WT NPCs (Figure 6\u2014figure supplement 1B, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ATAC-seq data in Figure 6\u2014figure supplement 1B, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "081df90c-9a7d-4d3e-b4ff-078fbaef5a31",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C82",
+      "claim": "The average level of ATAC-seq signals at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly lower than WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the average level of ATAC-seq signals at the TSS of down-regulated genes in Mcm2-2A mutant NPCs was significantly lower than WT NPCs. The opposite was true for up-regulated genes (Figure 6B, Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ATAC-seq data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "ac1ca746-9c88-47b0-9414-6cd51cea9f95",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C83",
+      "claim": "A dramatic reduction of ATAC-seq density was observed at the reduced Mcm2 peak group in Mcm2-2A mutant NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dramatic reduction of ATAC-seq density at the reduced Mcm2 peak group in Mcm2-2A mutant NPCs, along with a slight increase of ATAC-seq density at increased Mcm2 peak groups (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ATAC-seq data in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "dada84b5-af86-432d-bb64-4ec2e0aa8f47",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C84",
+      "claim": "ATAC-seq signals in Mcm2-2A NPCs at Group 1 and Group 2 Mcm2 peaks were significantly reduced compared to WT NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, ATAC-seq signals in Mcm2-2A NPCs at Group 1 and Group 2 Mcm2 peaks were significantly reduced compared to WT NPCs, with a larger reduction in Group 1 than in Group 2, whereas ATAC-seq signals in Mcm2-2A NPCs were increased slightly at Group 3 and Group 4 Mcm2 peaks (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results and supported by ATAC-seq data in Figure 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "1661c40d-d6b1-4f6f-a9d1-99b82ea91671",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C85",
+      "claim": "A reduction of Mcm2 binding in Mcm2-2A mutant ESCs perturbs chromatin changes at bivalent chromatin domains during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "As Mcm2 Group 1 peaks co-localize with bivalent chromatin domains (H3K4me3+ and H3K27me3+), these results indicate that a reduction of Mcm2 binding in Mcm2-2A mutant ESCs, while having little effects on chromatin accessibility in ESCs, perturbs chromatin changes at bivalent chromatin domains during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and inferred from ATAC-seq and CUT&RUN data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "5ea341c2-af0e-4f97-ac74-4ab11acff5e0",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C86",
+      "claim": "Mcm2, Pole3, and Pole4 function in the transfer of parental H3-H4 following DNA replication in yeast and mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously shown that Mcm2, Pole3, and Pole4, three replisome components first known for their roles in DNA replication, function in the transfer of parental H3-H4 following DNA replication in yeast and mouse ESCs (Gan et al., 2018; Li et al., 2020; Petryk et al., 2018; Xu et al., 2022; Yu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "76aae350-183b-4100-9e47-68e11270a1fa",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C87",
+      "claim": "Mouse ESCs with deletion of Pole3, Pole4, or with mutations at the histone binding motif of Mcm2 (Mcm2-2A) largely grow normally.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, mouse ESCs with deletion of Pole3, Pole4, or with mutations at the histone binding motif of Mcm2 (Mcm2-2A) largely grow normally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "f351c059-2598-4a8e-bd52-4ecb3f96e1ca",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C88",
+      "claim": "Mcm2-2A mutation in yeast and mouse ESCs has little impacts on the response to replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike depletion of MCM subunits in these studies, Mcm2-2A mutation in yeast and mouse ESCs has little impacts on the response to replication stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and based on previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "7f53252a-5a8a-41c0-9e9d-ca7266434d5b",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C89",
+      "claim": "It is unlikely that defects in differentiation in Mcm2-2A mutant cells are largely due to its impact on firing of dormant origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is unlikely that defects in differentiation in Mcm2-2A mutant cells are largely due to its impact on firing of dormant origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and inferred from the data and previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "c63a6517-f2b7-4dfa-8f49-f7137dfe685c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "claim_id": "C90",
+      "claim": "Mcm2, through its interaction with H3-H4, likely regulates differentiation through multiple mechanisms, one of which involves in the resolution of bivalent chromatin domains through its interaction with Asf1a bridged by H3-H4.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results indicate that Mcm2, through its interaction with H3-H4, likely regulates differentiation through multiple mechanisms, one of which involves in the resolution of bivalent chromatin domains through its interaction with Asf1a bridged by H3-H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and summarizes the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation impairs mouse ESC differentiation. The Mcm2-2A mutation, which disrupts histone binding, causes defects in both silencing of pluripotent genes (Pou5f1) and induction of lineage-specific genes during embryoid body (EB) formation. Double mutants (Mcm2-2A with Pole3 KO or Pole4 KO) show more severe defects than single mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C34-C39 collectively demonstrate that Mcm2-2A mutation impairs differentiation through multiple assays (EB formation, RT-PCR, morphology). The data show consistent defects in pluripotent gene silencing and lineage-specific gene induction, with genetic interactions supporting the phenotype. The evidence is robust with multiple replicates and statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "3ad6fa61-2c13-4aa2-b569-82e6d824fd6c",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation does not alter ESC plasticity. Mcm2-2A mutant and WT cells show similar low frequencies of 2C-like cells, indicating that ESC plasticity is not affected by the mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by immunofluorescence data showing no significant difference in 2C-like cell frequency between WT and Mcm2-2A cells. This distinguishes the Mcm2-2A phenotype from CAF-1 depletion effects and supports the specificity of the differentiation defect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "992da463-93d4-4f3b-b810-7976918484ad",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation compromises neural differentiation. During neural differentiation, Mcm2-2A cells show defects in silencing pluripotency genes (Pou5f1, Nanog) and inducing neural lineage genes (Sox21, Pax6), with ~30% of Mcm2-2A cells retaining GFP expression at day 9 compared to WT. Mcm2-2A cells fail to exhibit proper neural cell morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by multiple complementary assays (RT-PCR, FACS, Western blot, morphology) showing consistent defects in neural differentiation. The GFP reporter data provides quantitative evidence, and protein-level validation strengthens the findings. Statistical significance is demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "f693dd2b-b483-4497-addc-56cd80fa4b40",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Exogenous expression of WT Mcm2 partially rescues differentiation defects in Mcm2-2A cells. Expression of WT Mcm2 restores Pou5f1 silencing to WT levels and partially rescues lineage-specific gene expression defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by rescue experiments showing that exogenous Mcm2 expression can restore some aspects of differentiation. The partial rescue of lineage-specific genes suggests additional complexity, but the data support that the Mcm2-2A mutation is causative for the observed defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "2eea5387-f808-4397-8915-b50ebdec32de",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mcm2 and Asf1a function in the same pathway for induction of lineage-specific genes but have distinct roles in pluripotent gene silencing. Mcm2-2A Asf1a KO double mutants show no additional defects in lineage-specific gene induction compared to single mutants, indicating epistasis. However, Mcm2-2A, but not Asf1a KO, shows defects in Pou5f1 silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 are supported by genetic epistasis experiments showing that Mcm2-2A and Asf1a KO do not have additive effects on lineage-specific gene induction, consistent with functioning in the same pathway. The differential effects on pluripotent gene silencing support distinct roles. The data are consistent with the proposed model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation causes greater transcriptome changes in NPCs than ESCs. RNA-seq analysis reveals 54 DEGs in ESCs versus 609 DEGs in NPCs. Down-regulated genes in Mcm2-2A NPCs are enriched for neurodevelopment functions, while up-regulated genes relate to stem cell maintenance. 62% of down-regulated genes in Mcm2-2A NPCs overlap with Asf1a KO NPCs, and most are bivalent genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR<0.01, |log2FC|>1). GO analysis and overlap with Asf1a KO data strengthen the interpretation. The enrichment of bivalent genes among overlapping down-regulated genes supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation disrupts the epigenetic landscape during differentiation. H3K27me3 levels are modestly reduced in Mcm2-2A NPCs compared to WT NPCs, while H3K4me3 levels are unchanged. CUT&RUN analysis shows that H3K4me3 and H3K27me3 changes at gene promoters correlate with gene expression changes in Mcm2-2A NPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 are supported by Western blot and CUT&RUN data showing histone modification changes that correlate with gene expression. The data demonstrate that down-regulated genes have lower H3K4me3 and higher H3K27me3, while up-regulated genes show opposite patterns. Statistical significance is demonstrated using Wilcoxon signed-rank test.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "b1c7d485-7599-4460-9473-fa3303e33813",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mcm2 localizes at transcription start sites of actively transcribed genes. CUT&RUN identified 13,742 Mcm2 peaks in WT ESCs and 2,686 in NPCs. The majority of Mcm2 peaks co-localize with H3K4me3 and ATAC-seq peaks. Over 26% of bivalent domains have Mcm2 peaks nearby in ESCs. Mcm2 is enriched at TSS of highly transcribed genes in both ESCs and NPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C75 are supported by CUT&RUN data, but the authors acknowledge relatively low signal-to-noise ratios and caution in interpretation. The correlation with active transcription is consistent, but the dynamic nature of CMG helicase binding during the cell cycle complicates interpretation. Control experiments (IgG, untagged cells) show some background, raising concerns about specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "d8f12fdf-dc5f-409e-a6d7-167b5ed52c39",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mcm2 binding at gene promoters is disrupted in Mcm2-2A cells. Far more reduced than increased Mcm2 peaks are observed in Mcm2-2A ESCs and NPCs. Reduced peaks occur at active promoters and bivalent chromatin regions. Mcm2 density at TSS of down-regulated genes is significantly lower in Mcm2-2A cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by CUT&RUN data showing consistent reduction of Mcm2 binding in Mcm2-2A cells. The correlation between reduced Mcm2 binding and gene expression changes supports a functional role. However, the low signal-to-noise ratio noted by the authors warrants caution in interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mcm2-2A mutation reduces chromatin accessibility at bivalent domains during differentiation. ATAC-seq shows minimal changes in ESCs but dramatic alterations in NPCs. ATAC-seq signals at down-regulated genes are significantly lower in Mcm2-2A NPCs. Reduced Mcm2 binding at bivalent domains in ESCs correlates with decreased chromatin accessibility at these sites in NPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 are supported by ATAC-seq data showing that chromatin accessibility changes correlate with Mcm2 binding and gene expression. The specific reduction at bivalent domains (Group 1 peaks) supports the proposed mechanism. Statistical significance is demonstrated, and the correlation between ESC Mcm2 binding and NPC chromatin accessibility is compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "4722e17c-dcec-48ce-9917-006eed843e0b",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mcm2 regulates differentiation through multiple mechanisms, including resolution of bivalent chromatin domains via interaction with Asf1a. The defects in lineage-specific gene induction are at least partially due to reduced Mcm2-Asf1a interaction, which is bridged by H3-H4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C90 summarize the main mechanistic conclusion supported by genetic epistasis (C50-C57), transcriptome overlap (C61-C62), and chromatin accessibility data (C80-C85). The model is consistent with the data, though the authors acknowledge that Mcm2 likely has additional roles beyond Asf1a interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "aa25c244-a7f0-4ee6-8359-0a4da94f0f70",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mouse ESCs with Mcm2-2A, Pole3 KO, or Pole4 KO mutations grow normally and maintain stemness. These mutants do not show defects in proliferation or stemness markers in undifferentiated conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C87 are supported by the observation that these mutants can be maintained as ESC lines and show minimal transcriptome changes in ESCs (C58). This distinguishes the differentiation defects from general growth or viability issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "8ead2981-1455-4ab0-b614-61a32d928337",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Defects in differentiation in Mcm2-2A cells are unlikely to be primarily due to impaired firing of dormant origins. Unlike MCM depletion studies, Mcm2-2A mutation has little impact on replication stress response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 are supported by prior literature showing that Mcm2-2A does not affect replication stress response, distinguishing it from MCM depletion phenotypes. This helps rule out an alternative mechanism and supports the histone-binding-dependent role in differentiation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    },
+    {
+      "id": "7830868d-2a07-4972-b6f5-c411e99309f9",
+      "content_id": "e0e9660f-0f14-4a1b-a7b9-a2250c1f1753",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and context claims about Mcm2, histone chaperones, and ESC differentiation. These claims establish the biological context and prior knowledge supporting the study, including the roles of Mcm2, Asf1a, CAF-1, HIRA, Pole3, and Pole4 in histone dynamics and differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C8, C12-C32, and C86 are background claims supported by citations to prior literature. These establish the context for the current study and are appropriately referenced. They are not novel findings but provide necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T17:07:17.698648Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6578c9b3-e734-4fb6-bf58-2563b79abcdc",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "f0cbb6ee-6aee-4ea5-9092-ff12471e258a",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "3183eceb-9043-4e9d-a0d3-e2bfc264d56f",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "ff84ae1e-d267-4af4-bed1-0d5b5128ddb2",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "cc778fcb-b032-4245-836f-e87129de1a75",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "7ed463b3-4015-4b6d-a187-fb4317688b20",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "4822b45c-4563-40b6-b36a-b08feaa236ea",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "3e65b623-8131-4ca2-80ef-061e7d97dabf",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "1860a935-a31a-496d-b976-3d788eed8072",
+      "result_id": "5b3f3a1f-5225-49e8-a845-ed7b1978a60d"
+    },
+    {
+      "claim_id": "ee2b64cb-ece7-4b65-b638-0c3d4de727b2",
+      "result_id": "3ad6fa61-2c13-4aa2-b569-82e6d824fd6c"
+    },
+    {
+      "claim_id": "31526e18-a63b-431e-a44b-5664398462f6",
+      "result_id": "3ad6fa61-2c13-4aa2-b569-82e6d824fd6c"
+    },
+    {
+      "claim_id": "9fb8f9d6-1e22-4101-a9ae-ef473b5dbe48",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "2ed8f3fc-56f7-4f67-8fbc-e0a6767c8047",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "9f74c6ad-591b-42f2-a366-385b06b60e14",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "846cd5f2-ae95-43d3-971f-f79c059a5354",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "f56b9e22-a305-4241-bf98-39cb18fba4cd",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "fa509aca-3404-43ac-96fd-f4ddce07f7a0",
+      "result_id": "992da463-93d4-4f3b-b810-7976918484ad"
+    },
+    {
+      "claim_id": "a89adff9-359f-40ee-86f2-785fc2338c0e",
+      "result_id": "f693dd2b-b483-4497-addc-56cd80fa4b40"
+    },
+    {
+      "claim_id": "90f5e7da-cd96-44bc-b9c9-a038723bafc2",
+      "result_id": "f693dd2b-b483-4497-addc-56cd80fa4b40"
+    },
+    {
+      "claim_id": "57637b9b-f611-4ccc-9c57-284c936511be",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "af92ddba-91a5-4937-a85f-7fd86f792aee",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "df0453bc-4c0b-4b9e-b775-0140be188e43",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "79a28e1e-ed13-432b-bcc4-3317c1481cf5",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "07ea7604-761d-487a-a270-641d99967dc9",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "97aece63-65e4-422e-8ba8-f8ad741784d8",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "adb7de18-9824-4b81-a17e-d905ca045aff",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "6ca7da3f-5b13-4b6a-b0ba-96cb91519c03",
+      "result_id": "2eea5387-f808-4397-8915-b50ebdec32de"
+    },
+    {
+      "claim_id": "8cce40e8-a30b-4764-b4e1-1426c70bc263",
+      "result_id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f"
+    },
+    {
+      "claim_id": "07527a06-f2fb-4bf0-a473-f5ac930d4138",
+      "result_id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f"
+    },
+    {
+      "claim_id": "5ccf5914-152c-4f7a-a4a8-01a83e3a8c86",
+      "result_id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f"
+    },
+    {
+      "claim_id": "078c2c0e-080a-4caa-88ce-41bb09e4507f",
+      "result_id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f"
+    },
+    {
+      "claim_id": "4b31e8ee-3a13-484a-84f1-367925db8a0d",
+      "result_id": "1c095e2b-36f3-4bf4-9b32-62860e4b972f"
+    },
+    {
+      "claim_id": "bb2823f8-6eaa-48ce-8854-1b8d6de848f3",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "bb46d68d-759d-40ff-b086-5b9164b12e3e",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "80a56386-e9b2-41d5-91e6-0abb464364c8",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "4c9a7de7-a84d-476a-916d-a1dbc1da9800",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "8bcb331e-bc6a-4ecd-b78a-30b46b201cf4",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "d17efc79-50fa-4dfa-8f62-1b540639ab6f",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "63ab612f-021c-460a-a7c3-79a901487904",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "70b2294f-6cb3-4848-9a12-cb73cce7acca",
+      "result_id": "bc7fe9eb-5766-411d-9b12-4514e2e69d0d"
+    },
+    {
+      "claim_id": "d6b35da6-56e1-4af1-a36f-51f1a0a500d3",
+      "result_id": "b1c7d485-7599-4460-9473-fa3303e33813"
+    },
+    {
+      "claim_id": "b5937824-72b2-4c34-80fb-ebaa2c659b6c",
+      "result_id": "b1c7d485-7599-4460-9473-fa3303e33813"
+    },
+    {
+      "claim_id": "60ae8e51-4424-44ab-a195-352fcc06a9fa",
+      "result_id": "b1c7d485-7599-4460-9473-fa3303e33813"
+    },
+    {
+      "claim_id": "6fafc0b7-869e-4fc4-b37a-b8acd100d6a1",
+      "result_id": "b1c7d485-7599-4460-9473-fa3303e33813"
+    },
+    {
+      "claim_id": "81c25090-cf60-48f3-8547-9431afce8b8c",
+      "result_id": "b1c7d485-7599-4460-9473-fa3303e33813"
+    },
+    {
+      "claim_id": "c78887d8-9db8-46f1-b22d-e82d74d1c2a7",
+      "result_id": "d8f12fdf-dc5f-409e-a6d7-167b5ed52c39"
+    },
+    {
+      "claim_id": "23902c77-d2f2-4150-8139-0210bbcca70a",
+      "result_id": "d8f12fdf-dc5f-409e-a6d7-167b5ed52c39"
+    },
+    {
+      "claim_id": "f3d7530a-e719-4417-b7ed-360368ccb69e",
+      "result_id": "d8f12fdf-dc5f-409e-a6d7-167b5ed52c39"
+    },
+    {
+      "claim_id": "b52c6e0f-2f6a-4866-b41c-57c111639fea",
+      "result_id": "d8f12fdf-dc5f-409e-a6d7-167b5ed52c39"
+    },
+    {
+      "claim_id": "d07ff4d4-a5cf-466d-9be3-a120cb18e0a3",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "886089cd-112b-4b22-8c2d-542607988204",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "081df90c-9a7d-4d3e-b4ff-078fbaef5a31",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "ac1ca746-9c88-47b0-9414-6cd51cea9f95",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "dada84b5-af86-432d-bb64-4ec2e0aa8f47",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "1661c40d-d6b1-4f6f-a9d1-99b82ea91671",
+      "result_id": "cf69919e-0d97-4ca7-8b67-8b4caf0eb091"
+    },
+    {
+      "claim_id": "44eec40d-5639-4a64-8503-85eea6691eb1",
+      "result_id": "4722e17c-dcec-48ce-9917-006eed843e0b"
+    },
+    {
+      "claim_id": "c63a6517-f2b7-4dfa-8f49-f7137dfe685c",
+      "result_id": "4722e17c-dcec-48ce-9917-006eed843e0b"
+    },
+    {
+      "claim_id": "d5f7b7fa-837f-47ce-b20d-4557b0a6575d",
+      "result_id": "aa25c244-a7f0-4ee6-8359-0a4da94f0f70"
+    },
+    {
+      "claim_id": "76aae350-183b-4100-9e47-68e11270a1fa",
+      "result_id": "aa25c244-a7f0-4ee6-8359-0a4da94f0f70"
+    },
+    {
+      "claim_id": "f351c059-2598-4a8e-bd52-4ecb3f96e1ca",
+      "result_id": "8ead2981-1455-4ab0-b614-61a32d928337"
+    },
+    {
+      "claim_id": "7f53252a-5a8a-41c0-9e9d-ca7266434d5b",
+      "result_id": "8ead2981-1455-4ab0-b614-61a32d928337"
+    },
+    {
+      "claim_id": "19e3a9fb-d11c-4fc8-b48e-d6f8a62cfab8",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "e22ebdce-ed0c-41a0-8a7a-d7339b3daf7c",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "bbec3f56-a089-4468-818d-063920e72c58",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "e30b7067-dcb2-4be9-9412-030c088901cb",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "9a9af53d-5720-4c4f-9543-48e5b11b6d2a",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "86814265-eab5-4f7f-81ed-c1eb16b108cc",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "a23649cd-7e28-42cf-9903-572acbb0c872",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "fd13bd0a-91e4-4cfd-be35-887b78be7ad0",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "c56ce117-7758-4b73-8506-481bce6ce13a",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "afd6b9af-c84f-416c-8c9e-812b839bb855",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "d1e98796-6171-4e96-8385-2653456e1c9b",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "12816f39-6d79-46e8-81a5-011a058bf4fe",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "269b8058-0291-4edf-9042-abcbfb4f7f29",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "0077b6a6-4d88-4a4a-a06a-f8890108d55c",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "6d295c41-adff-4072-a779-de62cb7d5299",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "acab3468-b4ce-40de-8eae-7551c0b345c6",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "03001697-f963-4a67-8eff-65b42b6eda92",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "ab0e7909-8bfe-4e86-9eda-2956c27a6e27",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "6c44a757-7f07-4225-bab3-543a5735ec0f",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "fd57df2e-3323-4b2e-9083-24d16ee348c5",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "d1d70e6c-e49a-4845-b5c1-81cdc1d1698a",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "87867b23-e7ca-4fc5-a4b9-191d9130ab5c",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "7b0db388-9ff6-4c9c-a76c-c42b3996da32",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "233662ca-64c7-422d-91d9-f474e39c10ca",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "5eae5545-6ac9-4d72-bd80-55453f86ed83",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    },
+    {
+      "claim_id": "5ea341c2-af0e-4f97-ac74-4ab11acff5e0",
+      "result_id": "7830868d-2a07-4972-b6f5-c411e99309f9"
+    }
+  ],
+  "comparisons": []
+}

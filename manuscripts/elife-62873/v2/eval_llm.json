@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "BioID-proximity labeling identified 140 putative TWIST1 interactors in neural crest cells, including 4 known interactors (TCF3, TCF4, TCF12, GLI3), with significant enrichment for chromatin organization, cranial skeletal development, and ribosome biogenesis functions. Network propagation analysis prioritized functional modules and key NCC regulators among these interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide converging evidence from BioID mass spectrometry (C18, C19, C20), validation experiments (C21-C23), and network analysis (C24, C25). The statistical thresholds are clearly defined (p<0.05, FC>3, PSM#>2), controls are appropriate (GFP-BirA*), and known interactors were recovered at significant enrichment (odds ratio=18.05, p=0.0005), validating the approach. The methodology is well-established and properly applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Co-immunoprecipitation and GST pull-down assays demonstrated that CHD7, CHD8, PRRX1, PRRX2, and DVL1 physically interact with TWIST1, with CHD7, CHD8, and WHSC1 binding preferentially to the TWIST1 N-terminus, while TCF dimerization partners bind the bHLH domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by direct biochemical evidence from co-IP (C26, C27) and domain mapping experiments (C28-C30). The experiments include appropriate controls (TFE3 and SMARCE1 negative controls in C27) and are consistent with prior knowledge (C31 regarding CBP/P300). The domain-specific interactions provide mechanistic insight into TWIST1-CRM assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Compound heterozygous mouse embryos (Twist1+/-;Chd7+/-, Twist1+/-;Chd8+/-, Twist1+/-;Whsc1+/-) displayed severe craniofacial abnormalities including expanded neuroepithelium, reduced NCC populations (TFAP2\u03b1+), upregulated SOX2 expression, and hypoplastic cranial nerves, demonstrating genetic interaction of TWIST1 with chromatin regulators in NCC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 present consistent in vivo phenotypic data from chimeric embryos with quantification (C34, C35, C37, C38). The compound heterozygous phenotypes are more severe than single-gene mutants (C32, C33), supporting genetic interaction. However, a limitation is acknowledged: no parallel comparison of multiple mutant cell lines to rule out off-target effects. Despite this, the consistency across multiple gene combinations and phenotypic measures supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ChIP-seq analysis revealed significant genome-wide co-occupancy of TWIST1, CHD7, and CHD8 at active chromatin regions (H3K27ac+, H3K4me3+, H3K27me3-), with TWIST1 sharing 63% of target genes with CHD8 and 18% with CHD7. Co-occupied regions were enriched for neural tube patterning, cell migration, and BMP signaling pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are supported by comprehensive ChIP-seq analysis with appropriate statistical tests (Fisher's exact test, Chi-squared test with highly significant p-values). The correlation with active histone marks (C41, C44, C45) is consistent with transcriptional activation. The observation about H3K36me3 (C46) is appropriately presented as speculative. The integration with published datasets and GO analysis (C47) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Analysis of single-cell RNA-seq data from E8.5-E10.5 mouse NCCs revealed that Twist1 displays stage-specific dynamics peaking in early migratory NCCs, while Chd7, Chd8, and Whsc1 are expressed ubiquitously. TWIST1-module binding sites correlate best with early migratory NCC profiles, where they appear to repress neural tube genes (Sox2, Foxb1, Jag1, En1, Zic3, Dll3) while 62% of early migratory genes are repressed in the neural tube.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 integrate published scRNA-seq data with the ChIP-seq results to provide temporal context. The expression patterns (C48, C49) and correlation analysis (C50) are data-driven. The mutual exclusivity of gene expression between neural tube and early migratory stages (C51, C52) with specific percentages provides quantitative support. The inference about gene repression (C53) is appropriately qualified as 'appeared to repress' and is supported by ChIP-seq binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "ChIP-qPCR experiments demonstrated that TWIST1 binding is a prerequisite for CHD8 recruitment to target genes, as partial loss of Twist1 reduced both TWIST1 and CHD8 binding, while loss of CHD8 only affected its own binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by ChIP-qPCR data from multiple target genes (Sox2, Epha3, Pdgfra, Vegfa) showing consistent hierarchical recruitment. The asymmetric effect of Twist1 vs. Chd8 mutations (C55, C56) provides strong evidence for the proposed mechanism. Statistical significance is indicated in the referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cell migration assays and gene expression analysis in mutant NECs and siRNA-treated O9-1 cells demonstrated that TWIST1-CHD8/WHSC1 activity is required for cell motility and ectomesenchyme differentiation. Combined knockdowns showed stronger effects than single knockdowns, with reduced expression of EMT/ectomesenchyme markers and upregulation of autonomic neuron markers (Sox2, Sox8, Sox10, Tubb3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 present consistent functional data from multiple experimental systems (mutant cells and siRNA knockdowns) with quantitative measurements. The synergistic effects of compound mutations/knockdowns (C58, C60, C62) support functional interaction. The gene expression changes (C61, C63) are appropriately interpreted in the context of cell fate decisions. Knockdown efficiency is validated (referenced in supplementary data).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "During neurogenic differentiation of ESCs to NECs, compound loss-of-function of TWIST1-CRM components led to reduced NCC specifier expression, upregulation of NSC markers (Sox2, Pax6, Olig2, Foxa2, Cited2), and attenuation of dorsal NSC markers. TWIST1, CHD7, and CHD8 directly bind promoters of these genes, suggesting TWIST1-CRM promotes NCC fate by counteracting SOX2 and NSC transcription factors, with loss-of-function causing reversion to neural-tube-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 integrate differentiation studies with ChIP-seq data to demonstrate cell fate regulation. The PCA analysis (C65) shows all lines follow the same trajectory, validating the system. The gene expression changes (C67-C70) are quantified and statistically significant. The direct binding evidence (C71) mechanistically links the factors to target genes. The interpretation (C72, C73) is appropriately qualified and supported by the data, though C73 acknowledges this 'may underpin' the embryo phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "This study identified novel roles for CHD8 and WHSC1 in neural crest development, demonstrating that CHD8 (previously associated only with autism spectrum disorder) affects NCC migration and trigeminal nerve formation in a Twist1-dependent manner, with TWIST1 occupancy required for CHD8 recruitment. CHD7, previously implicated in CHARGE syndrome, was shown to interact with TWIST1 to promote NCC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 appropriately contextualize the findings relative to prior knowledge. The novelty claims (C75, C76) are supported by the in vivo and molecular data presented. The mechanistic insights (C77, C79, C81) are supported by the ChIP and functional studies. The speculative mechanism for CHD8 recruiting WHSC1 (C78) is appropriately qualified with 'may' and cites supporting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Sox2 expression is continuously repressed in the NCC lineage, likely through direct binding and inhibition by TWIST1-CHD8 at the Sox2 promoter. In Twist1+/-;Chd8+/- mutant embryos, aberrant Sox2 upregulation correlated with NCC deficiency and expanded neuroepithelium, consistent with prior studies showing Sox2 overexpression blocks NCC production and Sox2 knockout causes ectopic NCC production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 integrate current findings with prior literature to build a coherent model. The repression of Sox2 in NCCs (C82) is supported by multiple citations. The proposed mechanism (C83) is supported by ChIP-seq data showing TWIST1-CHD8 binding at the Sox2 promoter. The correlation in mutant embryos (C84) is data-driven. The cited prior studies (C85-C87) provide independent validation of the Sox2-NCC relationship, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Based on prior studies of Twist1 null mutants showing neural tube thickening, doubled cell numbers (not due to proliferation/death changes), expanded Wnt1-Cre expression, and NCC accumulation near neuroepithelium, combined with current knockout NEC data, the authors propose that loss of Twist1 impairs cellular delamination, leading to NCC progenitor retention in the neuroepithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 appropriately synthesize prior phenotypic observations (C88-C91, all cited) with current molecular data to propose a mechanism (C92). The interpretation is appropriately qualified as 'possible' and represents a reasonable integration of multiple lines of evidence. However, this is primarily a synthesis of prior work with current data rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study proposes a phasic model of TWIST1-CRM activity: early activity (delamination to early migratory stage) stabilizes early NCC genes and prevents reversion to NSC fate, while later activity (post-migratory stage) promotes ectomesenchyme propensity and represses autonomic neuron fate. CHD7 activity was not connected with EMT, suggesting a different role from CHD8 and WHSC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize the temporal expression data, functional studies, and cell fate analyses into a coherent developmental model. The timing (C93) is supported by expression data. The early function (C94, C95) is supported by the NEC differentiation studies. The late function (C96) is supported by the O9-1 knockdown studies. The distinction for CHD7 (C97) is appropriately noted based on the EMT marker data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Integration of prior Twist1 overexpression and knockout studies with current in vitro data shows that TWIST1-module activity regulates the balance between ectomesenchyme and autonomic neuron fates. Overexpression disrupts sympathetic ganglia formation, knockout causes ectopic autonomic-like neurons in cardiac outflow tract, and in vitro loss-of-function shows mesenchyme to autonomic trans-differentiation with sensory markers remaining repressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 integrate prior in vivo studies (C98-C100, cited) with current in vitro findings (C101) to support a model of cell fate regulation. The consistency between prior gain/loss-of-function studies and current molecular data strengthens the interpretation. The specificity for autonomic vs. sensory fates (C100, C101) provides mechanistic detail. The heterozygote phenotype (C102) is appropriately noted as distinct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The TWIST1-chromatin regulators and NSC regulators coordinate molecular cross-talk between ectomesenchyme and neurogenic progenitors of the central and peripheral nervous systems, which are often affected concurrently in human congenital diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 represents the overarching conclusion synthesizing all the findings. It is supported by the demonstrated genetic and functional interactions, the opposing effects on NCC vs. NSC fates, and the connection to disease phenotypes shown throughout the study. This represents a well-supported integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes prior knowledge about TWIST1 function in NCCs, including associations with human diseases (craniosynostosis, cerebral vasculature defects), requirements for craniofacial development in mouse, NCC developmental processes (pre-EMT markers, temporal expression), and known protein interactions with bHLH factors and other transcription factors. BioID methodology is established as capable of capturing transient interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17 represent background knowledge appropriately cited from prior literature. These are not new findings but establish the context and rationale for the study. All claims are supported by appropriate citations. C17 correctly describes the capabilities of BioID methodology based on cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The abstract claims that combinatorial perturbation of TWIST1-CRM components resulted in abnormal NCC differentiation and compromised craniofacial patterning, that low TWIST1-CRM activity stabilizes early NCC signatures by repressing NSC programs, that high activity commits cells to ectomesenchyme, and that the study revealed functional interdependency of TWIST1 and neurocristopathy factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are high-level summary statements from the abstract that are supported by the detailed experimental results presented in the manuscript. C2 is supported by the embryo studies (C32-C39), C3 by the NEC differentiation studies (C65-C73), C4 by the O9-1 knockdown studies (C57-C64), and C5 by the overall demonstration of genetic and functional interactions throughout the study.",
+    "result_type": "MAJOR"
+  }
+]

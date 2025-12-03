@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C13",
+      "C14",
+      "C45",
+      "C46",
+      "C64",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "BonVision is an open-source software package built on the Bonsai graphical programming language that provides visual stimulus presentation capabilities for both 2D and 3D environments. The software is freely available under the MIT license and can be downloaded through the Bonsai package manager.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C13, C14, C45, C46, C64, C79, C80, and C81 collectively establish BonVision as an open-source tool with clear technical foundations and accessibility. The architectural basis (Bonsai), licensing (MIT), and distribution method (package manager) are explicitly stated with verifiable details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C88",
+      "C19",
+      "C15",
+      "C47"
+    ],
+    "result": "BonVision unifies 2D and 3D visual presentation by mapping 2D retino-centric coordinates onto a 3D sphere using Mercator projection, then using cube mapping to project 360\u00b0 environments onto arbitrary viewpoints. This architecture separates stimulus definition from display hardware, enabling replication across different display configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C88, C19, C15, and C47 describe a coherent technical approach supported by Figure 1 and supplementary figures. The Mercator projection and cube mapping methodology is explicitly stated and illustrated, and the independence of stimulus definition from hardware is demonstrated across multiple display types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C16",
+      "C61"
+    ],
+    "result": "BonVision features semi-automated display calibration using photographs of experimental setups with fiducial markers. Image processing algorithms estimate marker positions to fully specify the display environment, enabling automatic calibration of the relationship between observer and display.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C16, and C61 are supported by explicit descriptions and Figure 2 with supplementary figures showing the calibration process. The use of ArUco markers and the automated detection process are documented with visual evidence of successful calibration across different configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C89",
+      "C103",
+      "C104"
+    ],
+    "result": "BonVision's closed-loop latency averaged 2.11 \u00b1 0.78 frames (35.26 \u00b1 13.07 ms) at 60 Hz, which was slightly shorter than PsychToolbox (p<10\u207b\u2078\u2070). Latency decreased with higher refresh rates (90 Hz: 28.45 \u00b1 7.22 ms; 144 Hz: 18.49 \u00b1 10.1 ms), though the number of frames between event and presentation remained similar across refresh rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C31, C89, C103, and C104 present quantitative benchmarking data with statistical testing (Welch's t-test, n=1000). The measurements are supported by Figure 4A and methodological details describing the HARP device measurement system. The consistency of frame counts across refresh rates supports the interpretation that display hardware is the primary constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C90"
+    ],
+    "result": "BonVision rendered up to 576 independent elements and eight overlapping textures at 60 Hz without dropping frames, broadly matching PsychToolbox and PsychoPy. BonVision achieved slightly fewer overlapping textures than PsychoPy because it lacks the option to trade off texture/mask resolution for performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, and C90 provide comparative benchmarking data supported by Figure 4B-C. The performance metrics are quantified and the explanation for the difference in overlapping texture performance is explicitly stated, providing transparency about current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C91"
+    ],
+    "result": "BonVision supports video playback through preloading or streaming from disk. Streaming mode can display standard definition (480p) and full HD (1080p) at 60 Hz on standard computers. At higher frame rates, Full HD performance is impaired but improved by buffering and fully restored by preloading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C91 describe video playback capabilities with specific performance metrics shown in Figure 4D. The hardware specifications are provided, and the effects of different buffering strategies are quantified, supporting the performance claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C92",
+      "C93"
+    ],
+    "result": "BonVision's rendering speed and timing accuracy are sufficient for neurophysiological experiments. Receptive fields were successfully recovered from electrophysiological measurements in mouse superior colliculus and primary visual cortex using sparse noise stimuli, which are sensitive to timing errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C39, C92, and C93 demonstrate neurophysiological validation through successful receptive field mapping shown in Figure 5B-C and supplementary figures. The sparse noise stimulus is appropriately characterized as timing-sensitive, and successful receptive field recovery using both photodiode and BonVision logging validates timing accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C115",
+      "C116"
+    ],
+    "result": "All four human observers successfully identified which of two cubes at different virtual depths was larger in a head-mounted display experiment, demonstrating BonVision's capability to support depth perception tasks requiring depth-dependent cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C115, and C116 describe a human psychophysics validation with explicit sample size (n=4 males), hardware specifications, and results shown in Figure 5D-E. However, the small sample size and lack of quantitative performance metrics (e.g., accuracy rates, confidence intervals) limit the strength of this validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mice in virtual reality showed increased locomotion speed with repeated exposure and modulated their speed based on location within a 100 cm virtual platform. Five male C57BL6 mice spontaneously ran on the treadmill without reward after habituation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, C105, C106, C107, and C108 describe mouse virtual reality behavior with explicit experimental details and results shown in Figure 5F-G. The sample size (n=5), habituation protocol, and behavioral observations are clearly documented, supporting the conclusion that BonVision can elicit and respond to animal behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C69",
+      "C70"
+    ],
+    "result": "Visual stimuli presented in BonVision primarily elicited freezing responses in freely moving mice, consistent with previous studies. Freezing was defined as speed below 2 cm/s for >0.1 s, and flight as speed above 40 cm/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C69, and C70 describe innate defensive behavior with explicit operational definitions and citation to prior work (De Franceschi et al., 2016). Results are shown in Figure 5H-I. The consistency with previous findings and clear methodological definitions support this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C74",
+      "C75",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "BonVision can define observer-display relationships in real-time using deep neural networks for pose estimation. Using DeepLabCut with ResNet-50, animal position was updated at 40 frames/s, with potential improvement to 80 frames/s at lower resolution or using MobileNetV2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C26, C74, C75, C112, C113, and C114 describe real-time augmented reality capabilities with specific technical details (network architecture, frame rates, hardware). Figure 3 and video demonstrate the capability. The performance metrics and optimization strategies are explicitly stated with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "BonVision includes a library of pre-defined 3D structures (planes, spheres, cubes) and can import standard format 3D files (OBJ, Blender). It supports multiple image formats (PNG, JPG, BMP, TIFF, GIF) and video containers (AVI, MP4, OGG, OGV, WMV) with standard codecs (H264, MPEG4, MPEG2, DIVX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C82, C83, C84, C85, C86, and C87 enumerate tested capabilities with explicit format lists. The reliance on industry-standard libraries (FFmpeg, Assimp) is documented. These are straightforward technical specifications that are verifiable and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "BonVision is capable of rendering visual environments near hardware limits due to Bonsai's just-in-time compiler architecture, which minimizes computational overhead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by the benchmarking results in Figure 4 and the technical explanation of Bonsai's architecture. The performance data demonstrating rendering at high frame rates with minimal dropped frames substantiates the claim of near-hardware-limit performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C2"
+    ],
+    "result": "BonVision provides sufficient rendering performance to support human and animal visual behavior, having been tested on humans and mice across multiple experimental paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C2 are supported by the collective experimental validations including neurophysiology (C37-C39), human psychophysics (C40), mouse virtual reality (C41-C42), and innate behavior (C43). The diversity of successful applications across species and paradigms supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C14"
+    ],
+    "result": "BonVision includes a library of workflows and operators to standardize stimulus construction, and its modular structure enables development and exchange of custom nodes without constructing complete experimental paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C14 describe software architecture features illustrated in Figure 1\u2014figure supplement 2. The modular workflow structure is visually demonstrated, and the description of pre-built shaders and resources is consistent with the documented capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "BonVision is based on Bonsai, which has a large user base, active developer community, and is widely used in neuroscience applications including video processing, optogenetics, photometry, electrophysiology, and calcium imaging. While Bonsai requires initial familiarization, it subsequently reduces time for real-time programming and hardware interfacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 and C94-C96 describe Bonsai's ecosystem with multiple citations supporting its widespread use. The characterization of the learning curve (C94-C96) is stated explicitly. The integration capabilities are well-documented with specific examples and citations, supporting the claim of broad applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "BonVision combines capabilities for both complex 3D environments and retinotopically defined 2D stimuli in a single framework, distinguishing it from existing platforms that focus on either 2D stimuli (PsychToolbox, PsychoPy, STYTRA, RigBox) or virtual reality (FreemoVR, ratCAVE, ViRMEn). Unique features include automatic display calibration and real-time control using deep neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 position BonVision relative to existing tools with appropriate citations. The unique features (automatic calibration, deep neural network integration) are demonstrated in the results. The comparison is fair and supported by the documented capabilities, though direct head-to-head comparisons are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "BonVision benchmarking was performed on Windows 10 Pro using standard (Dell Latitude 7480) and gaming (ASUS ROG Zephyrus GX501GI) laptops with HARP devices for measurement. BonVision is also capable of running on Linux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C99, C100, C101, and C102 provide explicit hardware and software specifications for benchmarking. The Linux compatibility claim (C36) is stated but not demonstrated with benchmarking data, representing a minor limitation in validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "All animal experiments were performed in accordance with UK regulations (Animals Scientific Procedures Act 1986) and approved by UCL Animal Welfare Ethical Review Board (Project License 70/8637). C57BL6 wild-type mice were used, with recordings during the dark phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C67, and C68 provide explicit ethical approval details and experimental conditions. These are standard methodological statements that are appropriately documented for reproducibility and ethical compliance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Neural recordings used 32-channel multi-electrode arrays with Open Ephys acquisition on a separate computer. Data was processed with Kilosort 1 or 2, synchronized using photodiode signals, with firing rates sampled at 60 Hz and smoothed with 300 ms Gaussian filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C73, C109, C110, and C111 provide detailed methodological information for neurophysiology experiments. The equipment, software, and analysis parameters are explicitly stated with appropriate citations, enabling reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C117"
+    ],
+    "result": "BonVision is compatible with head-mounted displays (Oculus Rift, HTC Vive) by receiving projection and view matrices from the headset and generating separate textures for each eye. Onboard computations handle lens distortion corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C77, C78, and C117 describe the technical implementation for VR headset compatibility. The approach is standard for VR applications, and successful human experiments (C40) demonstrate functional implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C97",
+      "C98"
+    ],
+    "result": "BonVision enables easy implementation of closed-loop experiments with real-time interaction with deep neural networks and hardware devices. It can be integrated into pre-existing frameworks via command line, making it accessible to the wider community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C97, and C98 describe integration capabilities supported by demonstrations of closed-loop experiments (C24-C26, C41-C42) and the documented command-line interface. The accessibility claim is supported by open-source licensing and documentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Gaming-driven platforms have advanced visual environments but lack egocentric coordinate specification and hardware integration. Traditional vision research uses 2D stimuli (PsychToolbox, PsychoPy), while newer platforms (STYTRA, ratCAVE, FreemoVR, ViRMEn) provide specialized solutions but lack generalized frameworks for standard stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide context for BonVision's development with appropriate citations. These are characterizations of the existing landscape supported by cited literature, establishing the motivation for BonVision's unified approach.",
+    "result_type": "MINOR"
+  }
+]

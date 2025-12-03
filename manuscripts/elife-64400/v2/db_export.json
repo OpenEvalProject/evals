@@ -1,0 +1,1399 @@
+{
+  "submission": {
+    "id": "11552eff-6992-4793-b212-fcdab0d5ca72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:23:52.664654Z",
+    "updated_at": "2025-12-03T02:23:52.664654Z"
+  },
+  "content": [
+    {
+      "id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "submission_id": "11552eff-6992-4793-b212-fcdab0d5ca72",
+      "content_type": "manuscript",
+      "content_text": "# A critical residue in the \u03b11M2\u2013M3 linker regulating mammalian GABAA receptor pore gating by diazepam\n\n## Authors\n\n- Joseph W Nors<sup>1</sup>\n- Shipra Gupta<sup>1</sup>\n- Marcel P Goldschen-Ohm<sup>1</sup> ([ORCID: 0000-0003-1466-9808](https://orcid.org/0000-0003-1466-9808)) \u2020\n\n### Affiliations\n\n1. University of Texas at Austin, Department of Neuroscience Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBenzodiazepines (BZDs) are a class of widely prescribed psychotropic drugs that modulate activity of GABAA receptors (GABAARs), neurotransmitter-gated ion channels critical for synaptic transmission. However, the physical basis of this modulation is poorly understood. We explore the role of an important gating domain, the \u03b11M2\u2013M3 linker, in linkage between the BZD site and pore gate. To probe energetics of this coupling without complication from bound agonist, we use a gain of function mutant (\u03b11L9'T\u03b22\u03b32L) directly activated by BZDs. We identify a specific residue whose mutation (\u03b11V279A) more than doubles the energetic contribution of the BZD positive modulator diazepam (DZ) to pore opening and also enhances DZ potentiation of GABA-evoked currents in a wild-type background. In contrast, other linker mutations have little effect on DZ efficiency, but generally impair unliganded pore opening. Our observations reveal an important residue regulating BZD-pore linkage, thereby shedding new light on the molecular mechanism of these drugs.\n\n## Introduction\n\nBenzodiazepines (BZDs) (e.g. Valium, Xanax) are one of the most widely prescribed psychotropic drugs today. An estimated nearly 100 million adults in the United States are prescribed a BZD annually (Agarwal and Landon, 2019; Bachhuber et al., 2016; Olfson et al., 2015). Their anxiolytic and sedative properties are used as therapies for conditions including anxiety, panic, insomnia, seizures, muscle spasms, pain, and alcohol withdrawal (M\u00f6hler et al., 2002). Although largely effective, BZDs have undesirable effects, including tolerance, addiction, dependence, and\u00a0withdrawal symptoms, and are often co-abused with alcohol and opioids (Fluyau et al., 2018; Schmitz, 2016; Jones and McAninch, 2015; Jones et al., 2010). Novel therapies with reduced risks are imperative for safer long-term treatment options.\n\nThe therapeutic effects of BZDs are conferred upon binding to and modulating the activity of GABAARs, which are the primary inhibitory neurotransmitter-gated ion channels in the central nervous system (Smart and Stephenson, 2019). GABAARs are part of the Cys-loop superfamily of pentameric ligand-gated ion channels (pLGICs) including homologous glycine (Gly), nicotinic acetylcholine (nACh), serotonin type 3 (5-HT3), and zinc-activated receptors as well as prokaryotic homologs (Pless and Sivilotti, 2018; Nemecz et al., 2016; Tasneem et al., 2004; Connolly and Wafford, 2004). Each pentameric GABAAR is comprised of subtype-specific combinations of five homologous but nonidentical subunits (\u03b11-6, \u03b21-3, \u03b31-3, \u03b4, \u03b5, \u03c0, \u03b8, \u03c11-3) that together form a central chloride conducting pore (Figure 1; Olsen and Sieghart, 2008). The most prominent subtype at synapses is comprised of \u03b11, \u03b2n, and \u03b32 subunits (Sieghart and Sperk, 2002). GABAARs provide a critical balance with excitatory signaling for normal neural function, and not surprisingly, their dysfunction is related to disorders such as epilepsy, autism spectrum disorder, intellectual disability, schizophrenia, and neurodevelopmental disorders such as fragile X syndrome (Hernandez and Macdonald, 2019; Gao et al., 2018; Mahdavi et al., 2018; Braat and Kooy, 2015; Vien et al., 2015; Rudolph and M\u00f6hler, 2014; Limon et al., 2012; Ramamoorthi and Lin, 2011; Sol\u00eds-A\u00f1ez et al., 2007). Although pharmacological manipulation of GABAARs is a powerful approach to tuning neural signaling, the rational design of novel therapies is challenged by a lack of understanding of the molecular mechanism by which drugs such as BZDs modulate channel behavior.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig1-v2.jpg)\n\n**Figure 1.:** (A,B) View from the extracellular space (A) and parallel to the membrane plane (B). Bound GABA and DZ are shown as gold and lavender spheres, respectively. The 9' pore residue from each subunit is shown in stick representation, all leucine except for the mutation \u03b11L9'T, which was generated in PyMol as a visualization aid. One of the two \u03b11M2\u2013M3 linkers is shown as cyan spheres in (B). (C) Same view as in (A) for a slice through the transmembrane domains indicated by the solid box in (B). (D) Detail for the dashed box\u00a0in\u00a0(B). The \u03b11M2\u2013M3 linker (L276-T283; rat numbering) is colored cyan with side\u00a0chains shown in stick representation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Position of M2 and M3 helices are indicated above the sequences. The pore gate L9' residue and mutated M2\u2013M3 linker residues are shown in bold.\n\nIn conjunction with structural models of mostly homomeric pLGICs, recent cryo-EM models of heteromeric GABAARs with bound neurotransmitter and BZD provide an important conceptual aid to understand the mechanism of action of these drugs (Kim et al., 2020; Masiulis et al., 2019; Laverty et al., 2019; Phulera et al., 2018; Zhu et al., 2018). Consistent with earlier functional studies (Sigel and Ernst, 2018; Sigel and L\u00fcscher, 2011; Sigel, 2002; Wagner and Czajkowski, 2001; Kucken et al., 2000; McKernan et al., 1998; Pritchett et al., 1989; Gibbs et al., 1985), they show that\u00a0BZDs are\u00a0bound at a specific recognition site in the extracellular domain between \u03b1 and \u03b3 subunits (Figure 1). However, these structures have\u00a0yet to clarify the mechanism by which BZDs modulate channel activity.\n\nKinetic models of interacting domains and thermodynamic linkage analysis can be used to estimate the energy of interaction between binding sites and the pore gate from bulk measures of ensemble average activity (Goldschen-Ohm et al., 2014; Chowdhury and Chanda, 2013; Wyman and Gill, 1990). Coupled with mutagenesis or other perturbations, these interactions can be probed to elucidate their physical basis. However, these approaches are challenged for BZDs because they do not evoke robust channel opening by themselves, but instead modulate responses to an agonist such as GABA. Thus, typical experimental measures reflect channels with both agonist and BZD bound. This makes it difficult to dissect whether the drug has altered either agonist binding or channel gating as the two processes are intimately coupled (Colquhoun, 1998). This challenge has contributed to differing conclusions postulating that BZDs alter either agonist binding (Goldschen-Ohm et al., 2010; Perrais and Ropert, 1999; Mellor and Randall, 1997; Rogers et al., 1994; Vicini et al., 1987), pore gating (Li et al., 2013; Downing et al., 2005; Campo-Soria et al., 2006; R\u00fcsch and Forman, 2005), or an intermediate preactivation step (Goldschen-Ohm et al., 2014; Gielen et al., 2012). The ability of BZDs to potentiate current responses to saturating concentrations of partial agonists, and also to directly gate gain of function mutants, implies that the drug\u2019s effect is not due to changes in binding alone. A combination of effects on both binding and gating as predicted by changes in intermediate gating steps energetically coupled with\u00a0both binding sites and the pore gate is plausible (Goldschen-Ohm et al., 2014). However, the molecular identity of any such intermediate states remains unclear.\n\nHere we examined linkage between the BZD site and pore gate in isolation from any effect of the drug on agonist binding using a spontaneously active gain of function mutant (\u03b11L9'T\u03b22\u03b32L) that is directly gated by BZDs alone (Scheller and Forman, 2002; Chang and Weiss, 1999). In the \u03b11L9'T background, we serially mutated each residue in the \u03b11M2\u2013M3 linker to alanine and assessed the effect on modulation of the channel pore by the BZD positive modulator DZ (Valium) in the absence of agonist. The M2\u2013M3 linker is a loop following the pore lining M2 helix that together with several other important interfacial loops defines the region connecting extracellular ligand binding and transmembrane domains known to be crucially involved in the gating process of pLGICs (Figure 1). Structural models show that agonist binding is associated with an outward displacement of the M2\u2013M3 linker from the central pore axis (Nemecz et al., 2016). Mutations in the linker generally impair gating by agonists (Kash et al., 2003; O'Shea and Harrison, 2000), and some are associated with genetic diseases such as epilepsy in GABAARs (Hales et al., 2006; Hernandez and Macdonald, 2019) or hyperekplexia in GlyRs (Bode and Lynch, 2014). However, the role of the M2\u2013M3 linker in drug modulation by BZDs is less understood.\n\nWe show that alanine substitutions throughout the \u03b11M2\u2013M3 linker generally impair unliganded pore gating, whereas they have little effect on the efficiency by which chemical energy from DZ binding is transmitted to the pore gate. The notable exception is \u03b11V279A, which more than doubles DZ\u2019s energetic contribution to pore opening, whereas larger side chains at this site do not. In a wild-type background, \u03b11V279A enhances DZ\u00a0potentiation of currents evoked by even saturating GABA, consistent with a direct effect on the pore closed/open equilibrium. Our observations identify an important residue in the \u03b11M2\u2013M3 linker regulating the efficiency of BZD\u00a0modulation in GABAARs.\n\n## Results\n\n### Alanine substitutions in the \u03b11M2\u2013M3 linker generally impair unliganded gating\n\nWe use the gain of function mutation \u03b11L9'T that confers spontaneous channel gating in the absence of agonist that can be further modulated by BZDs (Scheller and Forman, 2002; Chang and Weiss, 1999). The primary purpose for this mutation is to enable macroscopic current responses to report on pore gating by a BZD in the absence of agonist. Initially, we examine unliganded and GABA-evoked gating and in later sections turn to BZDs. In the \u03b11L9'T\u03b22\u03b32L (\u03b11L9'T or L9'T) gain of function background, we assessed the effects of alanine substitutions in the \u03b11M2\u2013M3 linker on unliganded and GABA-evoked channel activity. We restricted the scan primarily to the flexible loop between helical regions associated with M2 and M3 from \u03b11L276-T283 (Figure 1; Figure 1\u2014figure supplement 1). Two of these positions, \u03b11A280 and \u03b11A282, are natively alanine and were not mutated. Briefly, Xenopus laevis oocytes were co-injected with mRNA for \u03b1, \u03b2, and \u03b3 subunits in a 1:1:10 ratio, and current responses to microfluidic application of ligands were recorded in two-electrode voltage clamp. Each recording consisted of a series of 10 second pulses of GABA at various concentrations bookended by 10 second pulses of 1 mM picrotoxin (PTX) (Figure 2). Current block by the pore blocker PTX was used to assess the amount of spontaneous activity and to correct for drift or rundown over the course of the experiment (see Figure 2\u2014figure supplement 1). In comparison, wild-type receptors have little to no PTX-sensitive spontaneous activity (Figure 2\u2014figure supplement 3). Normalized concentration\u2013response relationships for the additional GABA-evoked current above the spontaneous current baseline in the L9'T background are shown in Figure 2. As compared to \u03b11L9'T, all of the alanine mutations exhibited an increase in the EC50 and/or steepness of the GABA concentration\u2013response relationship (Figure 2; Figure 2\u2014figure supplement 2). The increased EC50 is generally consistent with previous reports of \u03b11M2\u2013M3 linker mutations in a wild-type background (O'Shea and Harrison, 2000) and implies that side chain interactions in this region are important for channel gating by agonists. The steepness of the concentration\u2013response relationship for \u03b11L9'T was fairly shallow, with a hill slope slightly below one. This could reflect an increased efficiency of mono-liganded gating in the gain of function background. In such a case, the steeper hill slopes conferred by \u03b11L276A, \u03b11V279A, and \u03b11Y281A may be due to a reduction in the efficiency of mono- vs di-liganded gating, although this was not verified.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig2-v2.jpg)\n\n**Figure 2.:** (Left) Summary of normalized GABA concentration\u2013response relationships for GABA-evoked currents with the zero current baseline set to the level of spontaneous activity. Solid line is a fit of the pooled data across oocytes to Equation 1, and the dashed line is the fit for the L9'T background. Fit parameters are EC50, hill slope (# oocytes): L9'T\u00a0=\u00a00.25 \u03bcM, 0.83 (7); L9'T/L276A\u00a0=\u00a01.53 \u03bcM, 1.51 (4); L9'T/P277A\u00a0=\u00a01.48 \u03bcM, 0.80 (3); L9'T/K278A\u00a0=\u00a00.99 \u03bcM, 0.79 (5); L9'T/V279A\u00a0=\u00a00.23 \u03bcM, 1.44 (4); L9'T/Y281A\u00a0=\u00a00.42 \u03bcM, 1.23 (5); L9'T/T283A\u00a0=\u00a01.08 \u03bcM, 0.67 (5). Parameters for fits to individual oocytes are summarized in Figure 2\u2014figure supplement 2. (Right) Example currents in response to 10 second pulses of the pore blocker PTX (1 mM) or GABA (concentration in micromolar indicated above each pulse). Responses to GABA were bookended by application of PTX to assess the amount of spontaneous current and to normalize any drift or rundown during the experiment (see Figure 2\u2014figure supplement 1).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Raw two-electrode voltage clamp current recording from \u03b11L9'T/K278A\u03b22\u03b32L receptors expressed in a Xenopus laevis oocyte. Responses to 10 second pulses of increasing concentrations of GABA (0.1, 1, 10, 100, and 1000 \u03bcM) were bookended by 10 second pulses of 1 mM PTX as shown in Figure 2. (B) Baseline drift was corrected by subtracting a spline fit to selected segments of baseline (dashed line in A). (C) Current rundown was corrected by linearly scaling the current record, so that the bookending PTX responses were of equal amplitude (dotted line in B). The resulting current trace was shifted, so that zero current coincides with the peak response to block by PTX.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Gray box plots indicate the median and 25th and 75th percentiles. The vertical dashed line is the mean for L9'T.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig2-figsupp3-v2.jpg)\n\nThe level of unliganded channel activity was determined from the ratio of the spontaneous current amplitude as assessed by block with PTX (IPTX) to the maximal current amplitude evoked with saturating GABA (IGABA-max) (Figure 3A). The unliganded open probability was estimated as the product of the ratio IPTX/IGABA-max and the open probability in saturating GABA (Po-GABA-max). Under the assumption that Po-GABA-max is similar for all constructs, all \u03b11M2\u2013M3 linker mutations except for \u03b11P277A reduced the unliganded open probability by approximately two-fold (Figure 3B, Table 1). Po-GABA-max is\u00a0~0.85 in wild-type channels (Keramidas and Harrison, 2010), and likely to be closer to 1.0 in a gain of function background such as \u03b11L9'T that is further known to desensitize much more slowly than wild-type (Scheller and Forman, 2002). This assumption was verified for single L9'T/V279A receptors (Figure 7\u2014figure supplement 1). Thus, any reduction in Po-GABA-max for the linker mutations should only further reduce their estimated unliganded open probability. In summary, these data show that alanine mutations in the \u03b11M2\u2013M3 linker generally impair channel gating by increasing GABA EC50 and/or reducing unliganded pore opening. This suggests that \u03b11M2\u2013M3 linker side chain interactions play an important role in the closed vs. open pore equilibrium even in the absence of agonist.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig3-v2.jpg)\n\n**Figure 3.:** (A) Example currents from \u03b11L9'T/V279A\u03b22\u03b32L receptors elicited by 10 second pulses of either 1 mM PTX or 10 \u03bcM GABA. (B) Summary of the ratio of PTX-sensitive to maximal GABA-evoked current amplitude for individual oocytes. Gray box plots indicate the median and 25th and 75th percentiles. The vertical dashed line is the mean for L9'T. These ratios were estimated as being approximately proportional to the unliganded open probability by a factor that is the open probability in saturating GABA.\n\n### All but one alanine substitution in the \u03b11M2\u2013M3 linker have little effect on activation by DZ relative to unliganded activity\n\nBZD positive modulators alone evoke channel opening with extremely low probability (Campo-Soria et al., 2006), thus necessitating coapplication with an agonist to obtain robust currents from wild-type receptors (Germann et al., 2019). However, dissecting the effects of BZDs on either agonist binding or channel gating is severely challenged in the presence of an agonist because the two processes are intimately coupled (Colquhoun, 1998). To isolate effects on gating apart from any effects on agonist binding, we examined the effect of alanine substitutions in the \u03b11M2\u2013M3 linker on DZ-evoked currents in the background of the gain of function mutation \u03b11L9'T in the absence of agonist. Concentration\u2013response relationships for currents evoked by 10 second pulses of DZ were bookended by 10 second pulses of 1 mM PTX to assess spontaneous activity (Figure 4). Drift or rundown was corrected as described for GABA-evoked currents (Figure 2\u2014figure supplement 1). Normalized concentration\u2013response relationships for the additional DZ-elicited current above the spontaneous current baseline were fit to Equation 1. Alanine substitutions in the \u03b11M2\u2013M3 linker have no obvious effect on DZ concentration\u2013response relationships with the exception of \u03b11L276A that\u00a0confers a right\u00a0shift and reduction in steepness (Figure 4; Figure 4\u2014figure supplement 1). Reports for the EC50 of DZ potentiation in wild-type receptors are similar to the DZ EC50 for \u03b11L9'T receptors reported here and in previous studies (Li et al., 2013; Campo-Soria et al., 2006; R\u00fcsch and Forman, 2005; Walters et al., 2000).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig4-v2.jpg)\n\n**Figure 4.:** (Left) Summary of normalized DZ concentration\u2013response relationships for DZ-evoked currents with the zero current baseline set to the level of spontaneous activity. Solid line is a fit of the pooled data across oocytes to Equation 1, and the dashed line is the fit for the L9'T background. Reduced peak responses to 10 \u03bcM DZ for L9'T/Y281A and L9'T/T283A were omitted from the fits. Fit parameters are EC50, hill slope (# oocytes): L9'T\u00a0=\u00a085 nM, 1.10 (5); L9'T/L276A\u00a0=\u00a0380 nM, 0.61 (8); L9'T/P277A\u00a0=\u00a067 nM, 1.24 (5); L9'T/K278A\u00a0=\u00a072 nM, 0.97 (4); L9'T/V279A\u00a0=\u00a0110 nM, 0.98 (5); L9'T/Y281A\u00a0=\u00a056 nM, 1.14 (4); L9'T/T283A\u00a0=\u00a060 nM, 1.42 (6). Parameters for fits to individual oocytes are summarized in Figure 4\u2014figure supplement 1. (Right) Example currents in response to 10 second pulses of the pore blocker PTX (1 mM) or DZ (concentration in micromolar indicated above each pulse). Responses to DZ were bookended by application of PTX to assess the amount of spontaneous current and to normalize any drift or rundown during the experiment (see Figure 2\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Gray box plots indicate the median and 25th and 75th percentiles. The vertical dashed line is the mean for L9'T.\n\nThe ratio of the maximal DZ-evoked current amplitude (IDZ-max) to PTX-sensitive current amplitude (IPTX) is a measure for how well DZ activates the channel relative to its spontaneous unliganded activity. This ratio is largely independent of alanine substitution in the \u03b11M2\u2013M3 linker with the notable exception of \u03b11V279A (Figure 5,\u00a0Table\u00a01). Thus, apart from \u03b11V279A, DZ-evoked currents are predictably proportional to the amount of unliganded activity. This suggests that \u03b11V279 has a unique role in DZ\u00a0modulation, whereas side chains of other linker residues are involved little or not at all.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example currents from \u03b11L9'T/K278A\u03b22\u03b32L receptors elicited by 10 second pulses of either 1 mM PTX or 1 \u03bcM DZ. (B) Summary of the ratio of maximal DZ-evoked to PTX-sensitive current amplitude for individual oocytes. Gray box plots indicate the median and 25th and 75th percentiles. The vertical dashed line is the mean for L9'T. These ratios were used as estimates for the approximate fold-change in open probability upon DZ binding.\n\n### Dependence of DZ\u00a0gating on charge and volume at \u03b11V279\n\nThe M2\u2013M3 linker has both high sequence and structural similarity in pLGICs. The valine at position 279 in the GABAAR \u03b11 subunit is located near the center of the linker and is nearly always an aliphatic residue in different GABAAR subunits as well as in subunits of other pLGICs, with the exception of AChR, where it is a threonine. Even where sequences differ, structural models of the M2\u2013M3 linker for multiple pLGICs are highly similar. To explore the side chain properties relevant to DZ\u00a0gating, we examined the effect of introducing a charged aspartate or bulky tryptophan at position 279 in the \u03b11L9'T background. We recorded unliganded PTX-sensitive and GABA- or DZ-evoked currents as described above and compared their relative current amplitudes and concentration\u2013response relationships (Figure 6). The negative charge introduced by \u03b11V279D severely inhibits unliganded gating, exhibiting very little PTX-sensitive current in relation to robust currents evoked with saturating GABA. In contrast, addition of the bulky side chain \u03b11V279W only slightly impairs unliganded gating to a similar degree as substitution with alanine. These data suggest that side chain volume at this position is less critical for unliganded gating, whereas introduction of a negative charge nearly abolishes spontaneous activity despite the \u03b11L9'T pore mutation. Consistent with impaired pore gating, \u03b11V279D increases the GABA EC50 by\u00a0~100-fold.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig6-v2.jpg)\n\n**Figure 6.:** (A) Summary of normalized GABA concentration\u2013response relationships for GABA-evoked currents with the zero current baseline set to the level of spontaneous activity (left). Solid line is a fit of the combined data across oocytes to Equation 1, and the dashed line is the fit for the L9'T background. Fit parameters are EC50, hill slope (# oocytes): L9'T/V279D\u00a0=\u00a013 \u03bcM, 0.68 (3); L9'T/V279W\u00a0=\u00a01.4 \u03bcM, 0.65 (2). Example currents in response to 10 second pulses of the pore blocker PTX (1 mM) or GABA (concentration in micromolar indicated above each pulse) (right). (B) Same as in (A) except for DZ-evoked currents. Responses from L9'T/V279D to 10 \u03bcM DZ were excluded from the fit. Fit parameters are EC50, hill slope (# oocytes): L9'T/V279D\u00a0=\u00a00.88 \u03bcM, 0.58 (3); L9'T/V279W\u00a0=\u00a00.23 \u03bcM, 0.90 (3). (C) Summary of the ratios of PTX-sensitive and either maximal GABA- or DZ-evoked current amplitudes for individual oocytes. Gray box plots indicate the median and 25th and 75th percentiles. The vertical dashed line is the mean for L9'T. These ratios were used as estimates for the approximate fold-change in open probability upon DZ binding.\n\nThe ratio of DZ-evoked to PTX-sensitive current amplitude is only slightly increased by \u03b11V279W, whereas it is further increased by \u03b11V279D, albeit not to the extent of \u03b11V279A (Figure 6C). However, we were unable to reach saturation for DZ-evoked currents from \u03b11V279D due to a reduction in peak current amplitude at higher DZ concentrations consistent with occupation of a secondary lower affinity inhibitory site (Figure 6B). Thus, our observations for \u03b11V279D reflect a lower limit on channel activity evoked by DZ binding. Even if \u03b11V279D has an appreciable effect on the ratio of DZ-evoked to unliganded current, the overall effect of this mutation on channel function is likely to be dominated by its inhibition of pore gating. In contrast, \u03b11V279W has similar effects to alanine substitutions at other linker residues. These data suggest that DZ\u00a0gating is specifically enhanced by a reduction of side chain volume at position 279.\n\n### The mutation \u03b11V279A increases DZ\u2019s energetic contribution to pore gating\n\nTo estimate the amount of chemical energy from DZ binding that is transmitted to the pore gate, we employed a simple model of channel gating between closed (C) and open (O) pore states in both unliganded and DZ-bound conditions (Figure 7A). The model assumes that gating can be approximated with a single closed and open states in each liganded condition. The free energy differences for pore gating in unliganded (\u0394G0) and DZ-bound (\u0394G1) conditions were calculated according to Equations 2\u20133 under the assumption that Po-GABA-max\u00a0~\u00a01. A comparison of \u0394G0 versus \u0394G1 shows that DZ binding confers a uniform \u0394\u0394GDZ = \u0394G1\u2212 \u0394G0\u00a0= \u22120.4 kcal/mol to the pore gating equilibrium independent of \u03b11M2\u2013M3 linker mutation with the notable exception f \u03b11V279A that more than doubles \u0394\u0394GDZ (Figure 7B,C\u00a0and\u00a0Table 1). Importantly, this result is largely independent of our assumption for Po-GABA-max (see bold vs. light gray symbols in Figure 7B). Nonetheless, we verified that single L9'T/V279A channels in saturating GABA open with high probability to a similar maximal conductance level as wild-type and L9'T channels (Figure 7\u2014figure supplement 1). These observations suggest that coupling between the BZD site and pore gate is relatively independent of individual \u03b11M2\u2013M3 linker side chain interactions except for \u03b11V279, which natively hinders DZ\u00a0gating as compared to its substitution with alanine. Strikingly, introduction of a bulky tryptophan or charged aspartate at position 279 have much smaller effects on \u0394\u0394GDZ, consistent with the idea that the small side chain volume of alanine is the most relevant factor for increased DZ efficiency.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig7-v2.jpg)\n\n**Figure 7.:** (A) A simple model approximating channel gating between closed (C) and open (O) pore states in both unliganded and DZ-bound conditions. (B) Relationship between gating free energy in unliganded (\u0394G0) and DZ-bound (\u0394G1) conditions for \u03b11L9'T\u03b22\u03b32L receptors and \u03b11M2\u2013M3 linker mutations assuming\u00a0Po\u2013GABA\u2013max\u00a0=\u00a01 (bold symbols) or Po\u2013GABA\u2013max\u00a0=\u00a00.5 (light gray symbols) (Equations 2\u20133). \u0394G values are the change in energy from closed to open states, such that negative values favor opening. To illustrate this, we indicate the direction of increasing open probability (Po) along each axis. Points are the mean across oocytes. The dashed line of symmetry reflects \u0394G0 = \u0394G1 where DZ would have no effect on pore gating. The solid line is a fit to \u0394G1\u00a0=\u00a0\u0394G0\u00a0+\u00a0\u0394\u0394GDZ for all of the data points except the outlier \u03b11V279A given Po-GABA-max\u00a0=\u00a01. The good description of the data suggests that DZ\u2019s energetic contribution to pore gating is the same for all of the constructs on this line, estimated as \u0394\u0394GDZ\u00a0=\u00a0\u22120.4\u00a0kcal/mol. In contrast, \u03b11V279A more than doubles the energy that DZ binding transmits to the pore gate. A comparison of the bold and light gray symbols shows that reducing Po\u2013GABA\u2013max to 0.5 primarily shifts the data points along the fitted line with only minor changes in \u0394\u0394GDZ, indicating that our assumption for the value of Po\u2013GABA\u2013max is not critical for interpretation of \u0394\u0394GDZ. Nonetheless, we verified that single L9'T/V279A receptors open with high probability (Figure 7\u2014figure supplement 1). (C) Summary of \u0394\u0394GDZ for individual oocytes. Negative values of \u0394\u0394GDZ increase channel open probability. Gray box plots indicate the median and 25th and 75th percentiles. The vertical line is the position of linear fit in (B) corresponding to \u22120.4\u00a0kcal/mol.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (Left) Single-channel recording for an \u03b11L9'T/V279A\u03b22\u03b32L receptor in 100 \u03bcM GABA.\u00a0Dashed lines indicate fully closed (C) and fully open (O) current levels. Bottom trace shows the portion of the top trace indicated by the black bar on an expanded timescale. At least one subconductance level was observed, although it was relatively infrequent as compared to the maximal conductance level. Trace was low-pass filtered at 1 kHz for display only. (Right) Histogram of current amplitudes from the trace on the left. Solid line is a fit to a mixture of three Gaussian components, and dashed lines show individual components. Components mean \u00b1 standard deviation (weight): \u22122.4\u00a0\u00b1\u00a00.3 (0.86), \u22121.8\u00a0\u00b1\u00a00.5 (0.07), 0.0\u00a0\u00b1\u00a00.2 (0.07).\n\n### The mutation \u03b11V279A enhances DZ\u00a0potentiation of GABA-evoked currents in a wild-type background\n\nIf gating in the \u03b11L9'T background is relevant to neurotransmitter-driven gating in native receptors, then the mutation \u03b11V279A should both impair gating by GABA and enhance DZ\u00a0potentiation of GABA-evoked currents in a wild-type background. To test this, we compared GABA-evoked current responses in \u03b11\u03b22\u03b32L (wild-type) and \u03b11V279A\u03b22\u03b32L (V279A) receptors, as well as the ability of 1 \u03bcM DZ to potentiate these responses. First, GABA EC50 is increased by \u03b11V279A, consistent with impaired unliganded gating (Figure 8A). This effect is similar, although slightly larger than previously observed in \u03b12\u03b21\u03b32S receptors (O'Shea and Harrison, 2000). Second, DZ potentiates GABA-evoked peak current responses to a greater extent in V279A than in wild-type receptors, consistent with enhanced coupling between the BZD site and pore gate in the mutant (Figure 8B,C). In contrast to wild-type, DZ also potentiates V279A currents evoked with a saturating concentration of GABA. Together, these data suggest that the additional DZ\u00a0modulation conferred by \u03b11V279A is both independent of agonist association and additive to DZ\u00a0potentiation in wild-type receptors.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig8-v2.jpg)\n\n**Figure 8.:** (A) Normalized GABA concentration\u2013response relationships for WT (circles, three oocytes) and V279A (squares, four oocytes). Solid lines are fits to Equation 1 for all oocytes combined. Fit parameters are EC50, hill slope (# oocytes): WT\u00a0=\u00a028 \u03bcM, 1.2 (3); V279A\u00a0=\u00a0222 \u03bcM, 0.7 (4). (B) Potentiation of current amplitudes evoked by 10 second pulses of either subsaturating EC20-25 (WT: 10 \u03bcM, V279A: 30 \u03bcM) or saturating EC100 (WT: 3 mM, V279A: 3\u201330 mM) GABA by 1 \u03bcM DZ. (C) Summary of potentiation as shown in (B) for individual oocytes. For V279A EC100, squares indicate 3 or 10 mM GABA and diamonds 30 mM GABA.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Pair of current responses to 10 second pulses of ~EC20-25 GABA (WT: 10 \u03bcM, V279A: 30 \u03bcM) followed by a pair of responses to ~EC20-25 GABA + 1 \u03bcM FG-7142. (B) Summary of the ratio of peak currents as shown in (A) in the presence and absence of FG-7142 for individual oocytes. Gray box plots indicate the median and 25th and 75th percentiles.\n\nIn addition to the BZD positive modulator DZ, we examined the effect of the \u03b11V279A mutation on the BZD negative modulator FG-7142 (Im et al., 1995). Responses to ~EC20-25 GABA were reduced in the presence of FG-7142 in both WT and V279A receptors, but to a slightly lesser extent in V279A (Figure 8\u2014figure supplement 1). Distinct mechanisms for BZD positive and negative modulation could explain the observed reduction in negative modulation as compared to enhancement of positive modulation conferred by \u03b11V279A. Alternatively, our observations are also consistent with the idea that \u03b11V279A stabilizes an open channel configuration specifically in the BZD-bound complex and that this stabilization works in concert with positive modulators but hinders negative modulators.\n\n### \u03b11L9'T and \u03b11V279A have independent and additive effects on the pore-gating equilibrium\n\nTo further explore the idea that \u03b11V279A confers its effects primarily by altering pore gating in DZ-bound receptors, we asked whether a simple Monod\u2013Wyman\u2013Changeux (MWC) model of receptor behavior can account for our observations (Figure 9A). This model has been widely used to describe pseudo-steady-state behavior in GABAA receptors (Steinbach and Akk, 2019; R\u00fcsch and Forman, 2005; Chang and Weiss, 1999). For comparison with model simulations, we estimated open probability (Po) as a function of GABA or DZ concentration (black curves in Figure 9B) from fits of Equation 1 to the data shown in Figures 2, 4, and 8 where the minimum and maximum Po were scaled according to our observed PTX-sensitive and GABA- or DZ-evoked current amplitudes. In the \u03b11L9'T background, the maximum GABA-evoked Po was allowed to vary during optimization, and the minimum unliganded Po was scaled relative to the maximum by the observed mean ratio of IPTX/IGABA-max (Figure 3). The maximum DZ-evoked Po was scaled relative to the minimum unliganded Po by the observed mean ratio of IDZ-max/IPTX (Figure 5). The maximal Po was set to 0.85 for \u03b11\u03b22\u03b32L receptors (Keramidas and Harrison, 2010) and allowed to vary for \u03b11V279A\u03b22\u03b32L receptors.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig9-v2.jpg)\n\n**Figure 9.:** (A) The model depicts channel gating between closed (C) and open (O) states with independent binding of two GABA (G) and one DZ (D) molecule. L is the ratio of closed to open state probabilities in the absence of ligand, KG and KD are the respective dissociation constants for GABA or DZ, and c and d are the respective factors by which GABA or DZ binding influence channel opening. The probability to be in an open state is given by Equation 4. (B) Estimated open probability (Po) from the data in Figures 2\u20135 (black) overlaid with model simulations (Equation 4, red). See main text for a detailed description. Model parameters are: LL9'T = 1.8; LL9'T/V279A = 4.4; LWT\u00a0=\u00a018000; KG\u00a0=\u00a053 \u03bcM; KD\u00a0=\u00a0180 nM; c\u00a0=\u00a00.0031; d\u00a0=\u00a00.59; dV279A = 0.20. (C) The model\u2019s prediction for potentiation of WT and V279A GABA-evoked responses by 1\u03bcM DZ.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64400/elife-64400-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) Model fits assuming mutations have identical affinities for GABA (KG\u00a0=\u00a0190 \u03bcM, c constrained to 0.003). L9'T: L\u00a0=\u00a01.5; L9'T/L276A: L\u00a0=\u00a00.9; L9'T/P277A: L\u00a0=\u00a01.3; L9'T/K278A: L\u00a0=\u00a03.9; L9'T/V279A: L\u00a0=\u00a00.7; L9'T/Y281A: L\u00a0=\u00a02.6; L9'T/T283A: L\u00a0=\u00a06.3. (B) Model fits with constraints L\u00a0=(1\u00a0\u2013\u00a0Po\u2013unliganded)/Po\u2013unliganded and c\u00a0=\u00a00.003. L9'T: KG\u00a0=\u00a090 \u03bcM; L9'T/L276A: KG\u00a0=\u00a0390 \u03bcM; L9'T/P277A: KG\u00a0=\u00a0670 \u03bcM; L9'T/K278A: KG\u00a0=\u00a0240 \u03bcM; L9'T/V279A: KG\u00a0=\u00a050 \u03bcM; L9'T/Y281A: KG\u00a0=\u00a0120 \u03bcM; L9'T/T283A: KG\u00a0=\u00a0180 \u03bcM. (C)\u00a0Same as (B) except c was allowed to vary. L9'T: KG\u00a0=\u00a0270 \u03bcM, c\u00a0=\u00a00.001; L9'T/L276A: KG\u00a0=\u00a0250 \u03bcM, c\u00a0=\u00a00.005; L9'T/P277A: KG\u00a0=\u00a0500 \u03bcM, c\u00a0=\u00a00.004; L9'T/K278A: KG\u00a0=\u00a08 \u03bcM, c\u00a0=\u00a00.07; L9'T/V279A: KG\u00a0=\u00a03 \u03bcM, c\u00a0=\u00a00.04; L9'T/Y281A: KG\u00a0=\u00a0270 \u03bcM, c\u00a0=\u00a00.001; L9'T/T283A: KG\u00a0=\u00a05 \u03bcM, c\u00a0=\u00a00.07.\n\n**Table 1.**\n Summary of peak current ratios and \u0394\u0394GDZ for mutations in the L9'T background.Data are mean \u00b1 standard deviation (# oocytes), and individual data points are shown in Figures 3B, 5B, 6C, and 7C.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>IPTX /IGABA-max</th>\n      <th>IDZ-max /IPTX</th>\n      <th>\u0394\u0394GDZ (kcal/mol)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>L9'T</td>\n      <td>0.36\u00a0\u00b1\u00a00.04 (5)</td>\n      <td>1.35\u00a0\u00b1\u00a00.05 (5)</td>\n      <td>\u22120.31\u00a0\u00b1\u00a00.04 (5)</td>\n    </tr>\n    <tr>\n      <td>L9'T/L276A</td>\n      <td>0.22\u00a0\u00b1\u00a00.09 (4)</td>\n      <td>1.62\u00a0\u00b1\u00a00.07 (5)</td>\n      <td>\u22120.45\u00a0\u00b1\u00a00.04 (5)</td>\n    </tr>\n    <tr>\n      <td>L9'T/P277A</td>\n      <td>0.45\u00a0\u00b1\u00a00.03 (3)</td>\n      <td>1.41\u00a0\u00b1\u00a00.17 (5)</td>\n      <td>\u22120.46\u00a0\u00b1\u00a00.20 (5)</td>\n    </tr>\n    <tr>\n      <td>L9'T/K278A</td>\n      <td>0.20\u00a0\u00b1\u00a00.06 (5)</td>\n      <td>1.67\u00a0\u00b1\u00a00.15 (4)</td>\n      <td>\u22120.44\u00a0\u00b1\u00a00.08 (4)</td>\n    </tr>\n    <tr>\n      <td>L9'T/V279A</td>\n      <td>0.17\u00a0\u00b1\u00a00.04 (4)</td>\n      <td>3.30\u00a0\u00b1\u00a00.70 (5)</td>\n      <td>\u22121.11\u00a0\u00b1\u00a00.30 (5)</td>\n    </tr>\n    <tr>\n      <td>L9'T/V279D</td>\n      <td>0.02\u00a0\u00b1\u00a00.005 (3)</td>\n      <td>2.31\u00a0\u00b1\u00a00.08 (3)</td>\n      <td>\u22120.52\u00a0\u00b1\u00a00.02 (3)</td>\n    </tr>\n    <tr>\n      <td>L9'T/V279W</td>\n      <td>0.16\u00a0\u00b1\u00a00.05 (2)</td>\n      <td>1.96\u00a0\u00b1\u00a00.23 (3)</td>\n      <td>\u22120.53\u00a0\u00b1\u00a00.10 (3)</td>\n    </tr>\n    <tr>\n      <td>L9'T/Y281A</td>\n      <td>0.25\u00a0\u00b1\u00a00.07 (5)</td>\n      <td>1.59\u00a0\u00b1\u00a00.11 (4)</td>\n      <td>\u22120.42\u00a0\u00b1\u00a00.07 (4)</td>\n    </tr>\n    <tr>\n      <td>L9'T/T283A</td>\n      <td>0.11\u00a0\u00b1\u00a00.03 (5)</td>\n      <td>1.71\u00a0\u00b1\u00a00.10 (6)</td>\n      <td>\u22120.38\u00a0\u00b1\u00a00.04 (6)</td>\n    </tr>\n  </tbody>\n</table>\n\nThe model assumes independent GABA and DZ binding. Model parameters were optimized by globally minimizing the sum of squared residuals between simulated (Equation 4) and estimated Po as a function of GABA or DZ concentration for \u03b11L9'T\u03b22\u03b32L, \u03b11L9'T/V279A\u03b22\u03b32L, and \u03b11\u03b22\u03b32L receptors (Figure 9B). Responses to \u03b11V279A\u03b22\u03b32L receptors were not considered during optimization and treated as a model prediction. The mutations \u03b11L9'T and \u03b11V279A were allowed to perturb the parameter L with the assumption that their effects are independent in the L9'T/V279A double mutant. For wild-type receptors, L was fixed according to its approximate relation with EC50 as $L_{WT}=L_{L9T}EC_{50,WT}/EC_{50,L9T}^{2}$ (Steinbach and Akk, 2019; Akk et al., 2018; Scheller and Forman, 2002; Chang and Weiss, 1999). The value of d was assumed to be the same for L9'T and wild-type receptors and allowed to vary in the presence of the \u03b11V279A mutation. The resulting optimized model parameters (Figure 9 caption) were highly constrained by the data (i.e. estimated Po), and the model does a fairly good job of describing our observed responses to either GABA or DZ, differing somewhat in the steepness of their concentration dependence (Figure 9B). Furthermore, the model qualitatively accounts for observations from \u03b11V279A\u03b22\u03b32L receptors even though they were not considered during optimization. The model\u2019s predicted maximum Po approached 1.0 in the \u03b11L9'T background, consistent with a gain of function phenotype. In contrast, maximal Po was reduced in \u03b11V279A\u03b22\u03b32L as compared to wild-type receptors, as expected for a reduction in unliganded activity. These results suggest that \u03b11L9'T and \u03b11V279A have independent and additive effects on the gating equilibrium, and that for \u03b11V279A, this effect depends on DZ occupancy.\n\nAlthough responses to GABA or DZ alone are largely explained by this model, DZ\u00a0potentiation of GABA-evoked responses in a wild-type background is\u00a0either underestimated or overestimated for subsaturating or saturating GABA concentrations, respectively (Figure 9C). Previous applications of this model to BZD\u00a0modulation in gain of function backgrounds predict a larger left\u00a0shift of the Po curve in the presence of drug more similar to that observed, in part due to a smaller value of d (Campo-Soria et al., 2006; Downing et al., 2005; R\u00fcsch and Forman, 2005). However, reducing d also enhances the predicted potentiation of responses to saturating GABA, contrary to that observed for wild-type receptors. Thus, the model is either too simplistic or its assumptions too strict to describe all aspects of DZ\u00a0potentiation in wild-type channels that both\u00a0rapidly desensitize and may involve drug modulation of agonist binding and/or intermediate gating steps (Goldschen-Ohm et al., 2014; Gielen et al., 2012). Nonetheless, the model does predict an increase in DZ\u00a0potentiation of responses evoked by both subsaturating and saturating GABA for \u03b11V279A, qualitatively similar to that observed. For responses to saturating GABA in V279A, 42% of the predicted potentiation is accounted for by the lower Po-GABA-max as compared to WT, and the remainder reflects the mutations enhancement of DZ\u00a0gating.\n\n### Effects of alanine mutations on gating by GABA\n\nTo explore the\u00a0effects of the mutations on gating by GABA, we fit estimated open probability versus GABA concentration relationships using the model in Figure 9A (front face only in the absence of DZ). Estimated open probabilities from fits\u00a0of\u00a0Equation 1 to the data in Figure 2 were scaled according to the assumption that Po-GABA-max\u00a0=\u00a01 as described above. We first asked whether all of the mutations could be explained solely by differences in their intrinsic closed\u2013open equilibrium (parameter L). Figure 9\u2014figure supplement 1A shows model predictions where all constructs share identical affinities for GABA (i.e. parameters KG and c). The overall rough qualitative agreement with the data suggests that differences in unliganded open probability are likely to account for much of the observed effects. For comparison, we next constrained L based on the estimated unliganded Po as L\u00a0=\u00a0(1\u00a0\u2212\u00a0Po)/Po and allowed GABA affinity to differ across constructs. The resulting model fits were slightly improved to a nearly equivalent extent regardless of whether the relative affinity for closed versus open states (parameter c) was held constant (Figure 9\u2014figure supplement 1B) or allowed to vary (Figure 9\u2014figure supplement 1C). Thus, the simplest conclusion is that mutations with right-shifted EC50s reduce GABA affinity for the closed state, although we cannot rule out compensatory changes in affinity for closed and open states.\n\n## Discussion\n\nThe main conclusions of this study are as follows: First, in the \u03b11L9'T gain of function background alanine substitutions in the \u03b11M2\u2013M3 linker generally impair unliganded pore opening, indicating that side chain interactions with the linker are important for gating even in the absence of bound agonist. Second, the same mutations have no effect on the amount of chemical energy from DZ binding transmitted to the pore gate, except for \u03b11V279A which more than doubles DZ\u2019s energetic contribution to pore gating. Thus, \u03b11V279 plays a crucial role to natively hinder drug modulation as compared to its substitution with alanine. Third, introduction of a bulky tryptophan or charged aspartate at position 279 is less favorable than the smaller alanine, suggesting that DZ\u00a0modulation is inhibited by side chain interactions at the center of the linker. Fourth, \u03b11V279D severely impairs unliganded gating. Fifth, \u03b11V279A similarly enhances DZ\u00a0potentiation of GABA-evoked currents in a wild-type background. Sixth, the effects of \u03b11V279A in both \u03b11L9'T and wild-type backgrounds are explained by specific changes in the pore gating equilibrium and its coupling to DZ binding at the BZD site.\n\nThe use of gain of function mutations to study modulatory or weakly activating ligands is well appreciated (Germann et al., 2019; Akk et al., 2018; Campo-Soria et al., 2006; Downing et al., 2005; R\u00fcsch and Forman, 2005; Findlay et al., 2001). Single-channel gating dynamics for combinations of gain of function mutations in AChR suggest that the unliganded and agonist-bound gating mechanisms are similar if not identical and also that they are similarly affected by mutations (Purohit and Auerbach, 2009). Consistent with this idea, MWC models of pseudo steady-state GABAAR function have been largely successful in describing the effects of gain of function mutations with changes to the pore gating equilibrium independent of agonist binding (Steinbach and Akk, 2019; Downing et al., 2005; Campo-Soria et al., 2006; R\u00fcsch and Forman, 2005; Chang and Weiss, 1999). The model reported here in Figure 9 supports this conclusion.\n\nAlthough the effects of \u03b11V279A can also be explained by specific changes to the pore-gating equilibrium, they are dependent on DZ occupation of the BZD site. From the model in Figure 9A,\u00a0we compute an efficiency for GABA of $\u03b7_{GABA}=[1\u2212log(K_{G})/log(cK_{G})]\\times100%=37%$, similar to that reported previously (Nayak et al., 2019). In contrast, DZ efficiency is $\u03b7_{DZ}=[1\u2212log(K_{D})/log(dK_{D})]\\times100%=3%$. Whereas \u03b11V279A decreases unliganded pore opening, it also increases DZ efficiency ($\u03b7_{DZ,V279A}=9%$) to the extent that DZ\u00a0binding overcomes its intrinsic inhibitory effect and results in similar or even enhanced activation as compared to wild\u00a0type (Figure 9). Interestingly, an M2\u2013M3 linker mutation in the \u03b32 subunit was similarly observed to impair activation by GABA and enhance modulation by the general anesthetic propofol (O'Shea et al., 2009).\n\nOur estimates for the energetic effect of DZ binding on pore gating (\u22120.4\u00a0kcal/mol) are similar to prior estimates from direct gating in L9'S/T backgrounds and from kinetic models (Goldschen-Ohm et al., 2014; Gielen et al., 2012; Downing et al., 2005; R\u00fcsch and Forman, 2005). This is approximately 10-fold less than the energy derived from binding each molecule of GABA (Goldschen-Ohm et al., 2014; Maksay, 1994; Jackson, 1992). However, it is sufficient to produce a relevant change in open probability in channels with small free energy differences between closed and open states, such as conferred by single bound agonists, partial agonists, other allosteric modulators, or gain of function mutations. From a clinical perspective, such small perturbations are likely to be more easily tolerated in patients. Given that the M2\u2013M3 linker is associated with early movements during AChR activation (Purohit et al., 2013), it is possible that biasing the linker toward its active conformation in the \u03b11L9'T background could limit our ability to observe its full range of motion. In this case, our observed effects of linker mutations on DZ\u00a0modulation may underestimate their effects on the full activation pathway.\n\nThe interface between the extracellular agonist- and BZD-binding domains and the transmembrane helices is formed largely by several loops including the M2\u2013M3 linker, Cys loop, \u03b21\u2013\u03b22 loop and \u03b28\u2013\u03b29 linker, and pre-M1 segment from neighboring subunits (Figure 1). Mutagenesis suggests that interactions between these domains are important for channel gating by agonists (Kash et al., 2003; O'Shea and Harrison, 2000) thought to involve an outward radial displacement of the M2\u2013M3 linker (Nemecz et al., 2016). Rate versus free energy linear relationships in AChR suggest that the M2\u2013M3 linker moves early during channel activation, similar to rearrangements at agonist binding sites (Purohit et al., 2013). Consistent with these observations, mutant cycle analysis indicates strong long-range coupling between residues in the M2\u2013M3 linker and agonist binding sites (Gupta et al., 2017). Given the homology between the BZD site at the \u03b1/\u03b3 interface and agonist sites at \u03b2/\u03b1 interfaces, interactions between the M2\u2013M3 linker and BZD site are reasonable, although they need not be very strong given the relatively small energy DZ contributes to pore gating. As with agonist sites, such interactions could be mediated by global backbone conformational fluctuations or via distinct structural components, or both. Either way, side chain interactions at position 279 in the \u03b11 subunit play an important role in coupling between the BZD site and pore gate.\n\nIn structural models, the M2\u2013M3 linker adopts a C-shaped conformation with \u03b11V279 oriented inwards toward the center of the arc (Figure 1D; Kim et al., 2020; Laverty et al., 2019; Masiulis et al., 2019; Phulera et al., 2018; Zhu et al., 2018). We hypothesize that the side chain at position 279 is centrally involved in steric interactions between linker residues near the top of the M2 and M3 helices. Removing this obstruction (\u03b11V279A) would allow the linker to become more compact and bring the M2 and M3 helices closer together. In contrast, similar or larger side chains (\u03b11V279D/W) would sterically inhibit such a conformational change. In this case, we speculate that the closer proximity of the M3 helix could impair unliganded pore gating by hindering radial expansion of the pore lining M2 helix. Conversely, a more compact transmembrane domain may also enhance coupling with the BZD site (Kim et al., 2020). Valine and threonine residues in GlyR and AchR aligning with V279 (Figure 1\u2014figure supplement 1) adopt a similar conformation (Kumar et al., 2020; Nemecz et al., 2016; Du et al., 2015), suggesting that this residue has a conserved role in other pLGICs.\n\nAlternatively, removing most of the central side chain may simply alter linker flexibility. Linker flexibility has been suggested to be inversely correlated with gating, where stabilizing interactions between \u03b11R19' (located just below \u03b11V279) and the linker backbone may promote coupling between extracellular and intracellular domains (Masiulis et al., 2019). Thus, the strong inhibition of unliganded opening conferred by \u03b11V279D could reflect competition for \u03b11R19', thereby weakening its interaction with the linker backbone and increasing linker flexibility. However, this does not provide a simple explanation for the opposing effects of \u03b11V279A on unliganded versus DZ-bound gating. Regardless, it is important to keep in mind that the energetic changes that we observe for DZ\u00a0gating are on the order of a hydrogen bond or two, and thus can be accounted for by relatively subtle changes.\n\nThe \u03b28-\u03b29 linker and pre-M1 in the neighboring \u03b32 subunit come in close proximity to the \u03b11M2\u2013M3 linker and are known to be important for BZD modulation, with the \u03b28-\u03b29 linker also contributing to the BZD-binding site (Hanson and Czajkowski, 2011; Hanson and Czajkowski, 2008). In AChR strong coupling with\u00a0the adjacent \u03b28-\u03b29 linker and pre-M1 segment of the neighboring subunit occurs primarily via the threonine aligning with \u03b11V279 in GABAAR and its neighboring serine (Gupta et al., 2017). A reorientation of the linker due to removal of steric interactions near its center could alter coupling to the BZD site via interactions with the \u03b32 \u03b28-\u03b29 linker and/or pre-M1. For example, a compression of the ends of the M2\u2013M3 linker would cause the middle of the linker to be squeezed outward toward the neighboring \u03b32 subunit, potentially enhancing intersubunit coupling. Comparison of GlyR structures in apo or antagonist-bound versus agonist-bound conformations indicates that intersubunit interactions between the M2\u2013M3 linker in the vicinity of the valine aligning with V279 and the following serine, and the top of the M1 helix in the adjacent subunit are weakened during channel activation (Du et al., 2015; Kumar et al., 2020). Thus, a stronger intersubunit coupling in this area could potentially both reduce unliganded opening and enhance coupling with rearrangements of the \u03b32 subunit upon BZD binding. However, other regions including the \u03b24-\u03b25 linker in the channel\u2019s outer vestibule also affect BZD modulation of agonist-evoked currents (Pflanz et al., 2018; Venkatachalan and Czajkowski, 2012). Thus, BZD modulation likely involves larger domain fluctuations in addition to any specific molecular pathways involving \u03b11V279.\n\nRecent structures of \u03b1\u03b2\u03b3 receptors show DZ bound not only at the classical \u03b1/\u03b3 site in the extracellular domain, but also in the transmembrane domain below the M2\u2013M3 linker at \u03b2/\u03b1 and \u03b3/\u03b2 intersubunit interfaces (Kim et al., 2020; Masiulis et al., 2019). Thus, it is intriguing to speculate that enhanced DZ\u00a0gating as conferred by \u03b11V279A may involve occupation of a transmembrane site. However, these structures were solved in the presence of 100\u2013200 \u03bcM DZ, and the relevance of these transmembrane sites to high affinity binding of\u00a0~1 \u03bcM DZ at the classical site is unclear (Walters et al., 2000). Also, DZ binding in the transmembrane domain was not observed at \u03b1/\u03b3 or \u03b1/\u03b2 interfaces. Therefore, we favor the interpretation that our observed effects reflect altered functional coupling with the classical site.\n\nOur observations reveal a critical residue V279 in the \u03b11M2\u2013M3 linker, which regulates energetic coupling between the BZD site and the pore gate, whereas other linker side chains contribute little or not at all. These data shed new light on the molecular basis for GABAAR modulation by one of the most widely prescribed classes of psychotropic drugs.\n\n## Materials and methods\n\n### Mutagenesis and expression in oocytes\n\nDNA for wild-type GABAAR rat \u03b11, \u03b22, and \u03b32L subunits were a gift from Dr. Cynthia Czajkowski. Single alanine substitutions were introduced throughout the \u03b11M2\u2013M3 linker from L276-T283 in addition to the gain of function \u03b11L9'T pore mutation (rat \u03b11L263T) (QuikChange II, Qiagen). Mutations V279D and V279W were introduced similarly. Each construct was verified by forward and reverse sequencing of the entire gene. mRNA for each construct was generated (mMessage mMachine T7, Ambion) for expression in X. laevis oocytes (EcoCyte Bioscience, Austin, TX). Oocytes were injected with 27\u201354 ng of total mRNA for \u03b1, \u03b2, and \u03b3 subunits in a 1:1:10 ratio (Boileau et al., 2002) (Nanoject, Drummond Scientific). Oocytes were incubated in ND96 (in mM: 96 NaCl, 2 KCl, 1 MgCl2, 1.8 CaCl2, 5 HEPES, pH 7.2) with 100 mg/ml gentamicin at 18\u00b0C.\n\n### Two-electrode voltage clamp recording and analysis\n\nCurrents from expressed channels 1\u20133 days post-injection were recorded in two-electrode voltage clamp (Dagan TEV-200, HEKA ITC and Patchmaster software). Oocytes were held at \u221280 mV and perfused continuously with buffer (ND96) or buffer containing PTX, GABA, or DZ. PTX was diluted from a 1\u00a0M stock solution in DMSO. DZ was diluted from a 10 mM stock solution in DMSO. Fresh PTX and DZ stock solutions were tested several times with no change in results. GABA was dissolved directly from powder. A microfluidic pump (Elveflow OB1 MK3+) and rotary valve (Elveflow MUX Distributor) provided consistent and repeatable perfusion and solution exchange across experiments, which limited solution exchange variability to primarily differences between oocytes only. Ten\u00a0second pulses of PTX, GABA, or DZ were followed by 3\u20136 min in buffer to allow currents to return to baseline. Recorded currents were analyzed with custom scripts in MATLAB (Mathworks). Recordings of concentration\u2013response relationships were bookended by pulses of PTX to correct for any drift or rundown during the experiment. Briefly, currents were baseline subtracted to correct for drift and then scaled by a linear fit to the peak of each PTX response to correct for rundown (Figure 2\u2014figure supplement 1). The amount of current rundown was variable across oocytes, with no clear relation to specific constructs. Concentration\u2013response relationships were fit to the Hill equation:\n\n$$\n\\frac{I}{I_{max}}=\\frac{1}{1+\\frac{EC_{50}}{X}^{n}}\n$$\n\nwhere $I$ is the peak current response, $X$ is ligand concentration, $EC_{50}$ is the concentration eliciting a half-maximal response, and $n$ is the Hill slope.\n\n### Single-channel recording\n\nHEK293T cells were transfected with DNA for rat \u03b11L9'T/V279A, \u03b22 and \u03b32L subunits in a 1:1:1 ratio. Single-channel currents were recorded 16\u201332 hr post-transfection from excised inside-out patches clamped at \u221280 mV. Currents were acquired at 20 kHz and low-pass filtered at 2 kHz (Axopatch 200A, HEKA ITC, and PatchMaster software). Extracellular (pipet) solution was (in mM): 145 NaCl, 2.5 KCl, 2 CaCl2, 1 MgCl2, 10 HEPES, 4 Dextrose, pH 7.3 with NaOH. Intracellular (bath) solution was (in mM): 140 KCl, 10 EGTA, 10 HEPES, 2 MgATP, pH 7.3 with KOH. GABA was dissolved in the extracellular solution.\n\n### DZ-gating model\n\nFor the model in Figure 7A, the free energy difference for unliganded (\u0394G0) and DZ-bound (\u0394G1) gating was estimated as\u00a0follows:\n\n$$\n\u0394G_{0}=\u2212kTln(\\frac{P_{open}}{P_{closed}})_{unliganded}\u2248\u2212kTln(\\frac{P_{o\u2212GABA\u2212max}(I_{PTX}/I_{GABA\u2212max})}{1\u2212P_{o\u2212GABA\u2212max}(I_{PTX}/I_{GABA\u2212max})})\n$$\n\n\n\n$$\n\u0394G_{1}=\u2212kTln(\\frac{P_{open}}{P_{closed}})_{DZ\u2212bound}\u2248\u2212kTln(\\frac{P_{o\u2212GABA\u2212max}(I_{DZ\u2212max}/I_{GABA\u2212max})}{1\u2212P_{o\u2212GABA\u2212max}(I_{DZ\u2212max}/I_{GABA\u2212max})})\n$$\n\nwhere $I_{PTX}$, $I_{GABA-max}$, and $I_{DZ-max}$ are as shown in Figures 3 and 5, k is the Boltzmann constant, T is temperature, and $P_{o-GABA-max}$ is the open probability in saturating GABA, which was assumed to be approximately 1. Importantly, even if this assumption is incorrect, the effect on DZ\u2019s energetic contribution to pore gating should be minimal and our overall conclusion unchanged (see Figure 7B). Also, this assumption was verified for single L9'T/V279A receptors (Figure 7\u2014figure supplement 1).\n\n### MWC model\n\nFor the model in Figure 9A, the probability to be in an open (O) state is given by:\n\n$$\nP_{o}=1+L\\frac{1+\\frac{[DZ]}{K_{D}}1+\\frac{[GABA]}{K_{G}}^{2}}{1+\\frac{[DZ]}{dK_{D}}1+\\frac{[GABA]}{cK_{G}}^{2}}^{-1}\n$$\n\nwhere L is the ratio of closed (C) to open (O) state probabilities in the absence of ligand, KG and KD are the respective dissociation constants for GABA or DZ, and c and d are the respective factors by which GABA or DZ binding influence pore opening.\n",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e8717315-5fac-4c72-a676-a8cb9c2b03e0",
+      "submission_id": "11552eff-6992-4793-b212-fcdab0d5ca72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64400.sa1](https://doi.org/10.7554/eLife.64400.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this work, the authors make use of a gain of function mutant in the GABA-A receptor to study the mechanism of action of benzodiazepines (BDZ), not actual activators, but allosteric modulators of the function of the receptor. This work is important because the action of allosteric modulators is often difficult to study in the absence of a full ligand, which makes studying allosteric coupling extremely difficult. Since BDZ have important clinical applications, this work should further our understanding of the mechanisms of these important drugs. The work identifies a critical amino acid residue which regulates the actions of BDZs. This is an important finding, which opens new avenues to understand the molecular biophysics of GABA receptors.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A critical residue in the \u03b11M2-M3 linker regulating GABAA receptor pore gating by diazepam\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Kenton Swartz as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ryan E Hibbs (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nNors et al. have investigated the effects of mutations to the M2-M3 linker in the \u03b11 subunit on \u03b11\u03b22\u03b32 GABA-A receptor gating by GABA and diazepam. For simplicity, the experiments were conducted on the L9'T background that enhances unliganded gating and enables measurement of current in the presence of diazepam alone. Replacement of each individual residue (6 in total) by alanine indicated that the V279A enhances gating efficacy by diazepam while other substitutions were largely without effect. Comparison of alanine, tryptophan and aspartate substitutions at V279 suggested that side chain volume at this position is critical to gating by diazepam. Overall, the experiments are expertly conducted and support major conclusions. The manuscript is very well organized and written, but it raises questions that could be easily addressed in the confounds of this study.\n\nA major conclusion of the present manuscript suggests that another class of ligands binding in the intersubunit interface in the extracellular domain employs the M2-M3 linker in energy transduction. This finding is interesting but not unexpected. Furthermore, the finding is not particularly well studied. However, the study includes important advances that will be of interest to the LGIC community, but could be improved through consideration of additional experiments, and more careful pruning of hypotheses presented in the Discussion after looking at GlyR (or other) structures.\n\nEssential revisions:\n\n1) Why were not all M2-M3 linker residues mutated? Specifically, the 280 and 282 positions, but beyond these the M2-M3 linker extends as far as F288. Also, please provide a sequence alignment for the M2-M3 linker region for \u03b11, \u03b22, and \u03b32 subunits.\n\n2) The authors should test the effect of V279A on BZD negative modulators. Is inverse agonism similarly affected?\n\n3) Testing a few key positions in the \u03b3 subunit M2-M3 linker would make the story stronger. Many questions are left unanswered \u2013 does the \u03b3 subunit M2-M3 linker affect gating by diazepam? Does it affect gating by GABA? In any case, the effects of the Ala substitutions in the \u03b1 subunit should be formally analyzed for gating by GABA. These data are already available, just no analysis was done.\n\n4) If V279 is so important for gating and energy transduction, its interacting counterpart should be defined. Molecular modeling should help determine the nearby residues in ECD, then mutate V279 and the counterparts individually and in combination, followed by double mutant cycle analysis.\n\n5) A main assumption in this work is that all mutants will have the same or very similar open probability to the background channels and to WT channels gated by GABA. This assumption might seem reasonable but should be checked experimentally through single channel recording, especially for the 279A channels.\n\n6) It is important to fully justify the two corrections applied to the data that are shown in Figure 2\u2014figure supplement 1. Do all channels show a constant reduction of current size during the experiment? If not, is there evidence of gating mode-shifting during the recording period? What is the reason that in the second linear scaling, the size of the last current is chosen as the normalizing factor?\n\n7) Subsection \u201c\u03b11L9\u2019T and \u03b11V279A have independent and additive effects on the pore gating equilibrium\u201d: the model assumes independent GABA and DZP binding. Is this reasonable? Their binding is cooperative, isn't it, with DZP binding shifting the affinity for GABA a few fold to the left (higher affinity)?\n\n8) Setting up the first section in the Results with a clear rationale for looking at unliganded gating would improve readability.\n\n9) Some direct experimental comparison of WT and L9'T, including extent of ptx-sensitive leak, would be helpful.\n\n10) Discussion: it may be worthwhile to look at structures of the related glycine receptor, which have been obtained in resting, open and closed conformational states- is the V279 \u201cobstruction\u201d doing something interesting that you can make more broadly relevant, as well as place it in the context of experimental structures? Do the mutagenesis results (Trp, Asp mutants) make sense in the context of state changes in these comparable structures? Or are the GlyR structures not useful for refining hypotheses on this topic?\n",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f2922436-b07f-4217-8fef-912f12efb4a1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C1",
+      "claim": "Nearly 100 million adults in the United States are prescribed a benzodiazepine annually.",
+      "claim_type": "EXPLICIT",
+      "source": "An estimated nearly 100 million adults in the United States are prescribed a BZD annually (Agarwal and Landon, 2019; Bachhuber et al., 2016; Olfson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Agarwal and Landon, 2019; Bachhuber et al., 2016; Olfson et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "d7d6a7aa-6c58-44f1-9646-4e43425a0328",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C2",
+      "claim": "Benzodiazepines have anxiolytic and sedative properties used as therapies for conditions including anxiety, panic, insomnia, seizures, muscle spasms, pain, and alcohol withdrawal.",
+      "claim_type": "EXPLICIT",
+      "source": "Their anxiolytic and sedative properties are used as therapies for conditions including anxiety, panic, insomnia, seizures, muscle spasms, pain, and alcohol withdrawal (M\u00f6hler et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (M\u00f6hler et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "ed71d911-af57-419c-806c-70ded2390cb0",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C3",
+      "claim": "Benzodiazepines have undesirable effects including tolerance, addiction, dependence, and withdrawal symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "Although largely effective, BZDs have undesirable effects, including tolerance, addiction, dependence, and withdrawal symptoms, and are often co-abused with alcohol and opioids (Fluyau et al., 2018; Schmitz, 2016; Jones and McAninch, 2015; Jones et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Fluyau et al., 2018; Schmitz, 2016; Jones and McAninch, 2015; Jones et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5dc156fe-c95c-4a3c-a1c8-8fa0d2d6122d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C4",
+      "claim": "Benzodiazepines are often co-abused with alcohol and opioids.",
+      "claim_type": "EXPLICIT",
+      "source": "Although largely effective, BZDs have undesirable effects, including tolerance, addiction, dependence, and withdrawal symptoms, and are often co-abused with alcohol and opioids (Fluyau et al., 2018; Schmitz, 2016; Jones and McAninch, 2015; Jones et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Fluyau et al., 2018; Schmitz, 2016; Jones and McAninch, 2015; Jones et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "1226a7dd-8516-4c7f-a76d-9903288d11af",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C5",
+      "claim": "The therapeutic effects of benzodiazepines are conferred upon binding to and modulating the activity of GABAA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The therapeutic effects of BZDs are conferred upon binding to and modulating the activity of GABAARs, which are the primary inhibitory neurotransmitter-gated ion channels in the central nervous system (Smart and Stephenson, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Smart and Stephenson, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "532d694c-ef8a-4ea2-ba0b-9314eee0b555",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C6",
+      "claim": "GABAA receptors are the primary inhibitory neurotransmitter-gated ion channels in the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The therapeutic effects of BZDs are conferred upon binding to and modulating the activity of GABAARs, which are the primary inhibitory neurotransmitter-gated ion channels in the central nervous system (Smart and Stephenson, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Smart and Stephenson, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "cc04dc3c-fdec-4625-bb9e-36b7fe6c9401",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C7",
+      "claim": "GABAA receptors are part of the Cys-loop superfamily of pentameric ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAARs are part of the Cys-loop superfamily of pentameric ligand-gated ion channels (pLGICs) including homologous glycine (Gly), nicotinic acetylcholine (nACh), serotonin type 3 (5-HT3), and zinc-activated receptors as well as prokaryotic homologs (Pless and Sivilotti, 2018; Nemecz et al., 2016; Tasneem et al., 2004; Connolly and Wafford, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Pless and Sivilotti, 2018; Nemecz et al., 2016; Tasneem et al., 2004; Connolly and Wafford, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "8348eab7-72ea-4124-936b-19eb686bc13d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C8",
+      "claim": "Each pentameric GABAA receptor is comprised of subtype-specific combinations of five homologous but nonidentical subunits that together form a central chloride conducting pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Each pentameric GABAAR is comprised of subtype-specific combinations of five homologous but nonidentical subunits (\u03b11-6, \u03b21-3, \u03b31-3, \u03b4, \u03b5, \u03c0, \u03b8, \u03c11-3) that together form a central chloride conducting pore (Figure 1; Olsen and Sieghart, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to published literature (Olsen and Sieghart, 2008) and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "7d242696-d5cb-46d8-8907-8435b1b3d4d1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C9",
+      "claim": "The most prominent GABAA receptor subtype at synapses is comprised of \u03b11, \u03b2n, and \u03b32 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent subtype at synapses is comprised of \u03b11, \u03b2n, and \u03b32 subunits (Sieghart and Sperk, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Sieghart and Sperk, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "18612ba1-dd86-41ce-a8dc-5a7e48326f3b",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C10",
+      "claim": "GABAA receptor dysfunction is related to disorders such as epilepsy, autism spectrum disorder, intellectual disability, schizophrenia, and neurodevelopmental disorders such as fragile X syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAARs provide a critical balance with excitatory signaling for normal neural function, and not surprisingly, their dysfunction is related to disorders such as epilepsy, autism spectrum disorder, intellectual disability, schizophrenia, and neurodevelopmental disorders such as fragile X syndrome (Hernandez and Macdonald, 2019; Gao et al., 2018; Mahdavi et al., 2018; Braat and Kooy, 2015; Vien et al., 2015; Rudolph and M\u00f6hler, 2014; Limon et al., 2012; Ramamoorthi and Lin, 2011; Sol\u00eds-A\u00f1ez et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Hernandez and Macdonald, 2019; Gao et al., 2018; Mahdavi et al., 2018; Braat and Kooy, 2015; Vien et al., 2015; Rudolph and M\u00f6hler, 2014; Limon et al., 2012; Ramamoorthi and Lin, 2011; Sol\u00eds-A\u00f1ez et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4b9f3624-7a23-4683-89ce-e37d8ddc34ca",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C11",
+      "claim": "Recent cryo-EM models of heteromeric GABAA receptors with bound neurotransmitter and benzodiazepine show that benzodiazepines are bound at a specific recognition site in the extracellular domain between \u03b1 and \u03b3 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In conjunction with structural models of mostly homomeric pLGICs, recent cryo-EM models of heteromeric GABAARs with bound neurotransmitter and BZD provide an important conceptual aid to understand the mechanism of action of these drugs (Kim et al., 2020; Masiulis et al., 2019; Laverty et al., 2019; Phulera et al., 2018; Zhu et al., 2018). Consistent with earlier functional studies (Sigel and Ernst, 2018; Sigel and L\u00fcscher, 2011; Sigel, 2002; Wagner and Czajkowski, 2001; Kucken et al., 2000; McKernan et al., 1998; Pritchett et al., 1989; Gibbs et al., 1985), they show that BZDs are bound at a specific recognition site in the extracellular domain between \u03b1 and \u03b3 subunits (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to published literature (Kim et al., 2020; Masiulis et al., 2019; Laverty et al., 2019; Phulera et al., 2018; Zhu et al., 2018; Sigel and Ernst, 2018; Sigel and L\u00fcscher, 2011; Sigel, 2002; Wagner and Czajkowski, 2001; Kucken et al., 2000; McKernan et al., 1998; Pritchett et al., 1989; Gibbs et al., 1985) and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e30a7b74-c269-4459-ae0f-35b73b72d89b",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C12",
+      "claim": "Benzodiazepines do not evoke robust channel opening by themselves, but instead modulate responses to an agonist such as GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these approaches are challenged for BZDs because they do not evoke robust channel opening by themselves, but instead modulate responses to an agonist such as GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about BZD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "b3a1e620-662f-4444-9933-2bb379fe9c8e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C13",
+      "claim": "The ability of benzodiazepides to potentiate current responses to saturating concentrations of partial agonists, and also to directly gate gain of function mutants, implies that the drug's effect is not due to changes in binding alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of BZDs to potentiate current responses to saturating concentrations of partial agonists, and also to directly gate gain of function mutants, implies that the drug's effect is not due to changes in binding alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "61e109b1-3477-41b4-ace9-9bf199271016",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C14",
+      "claim": "The gain of function mutant \u03b11L9'T\u03b22\u03b32L is spontaneously active and directly gated by benzodiazepines alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we examined linkage between the BZD site and pore gate in isolation from any effect of the drug on agonist binding using a spontaneously active gain of function mutant (\u03b11L9'T\u03b22\u03b32L) that is directly gated by BZDs alone (Scheller and Forman, 2002; Chang and Weiss, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Scheller and Forman, 2002; Chang and Weiss, 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4dbe5d23-6ca1-4500-8f92-b71a94097919",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C15",
+      "claim": "The M2\u2013M3 linker is a loop following the pore lining M2 helix that together with several other important interfacial loops defines the region connecting extracellular ligand binding and transmembrane domains known to be crucially involved in the gating process of pentameric ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The M2\u2013M3 linker is a loop following the pore lining M2 helix that together with several other important interfacial loops defines the region connecting extracellular ligand binding and transmembrane domains known to be crucially involved in the gating process of pLGICs (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Draws from established scientific knowledge and reference to Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "2949bcfb-e355-42c2-b43b-d7c1638048e6",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C16",
+      "claim": "Structural models show that agonist binding is associated with an outward displacement of the M2\u2013M3 linker from the central pore axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural models show that agonist binding is associated with an outward displacement of the M2\u2013M3 linker from the central pore axis (Nemecz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Nemecz et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "6e938d36-34f7-423f-ba26-e3c9ff78918b",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C17",
+      "claim": "Mutations in the M2\u2013M3 linker generally impair gating by agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the linker generally impair gating by agonists (Kash et al., 2003; O'Shea and Harrison, 2000), and some are associated with genetic diseases such as epilepsy in GABAARs (Hales et al., 2006; Hernandez and Macdonald, 2019) or hyperekplexia in GlyRs (Bode and Lynch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Kash et al., 2003; O'Shea and Harrison, 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4f511b6b-7641-4815-b23a-994ee5a83275",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C18",
+      "claim": "Some M2\u2013M3 linker mutations are associated with genetic diseases such as epilepsy in GABAA receptors or hyperekplexia in glycine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the linker generally impair gating by agonists (Kash et al., 2003; O'Shea and Harrison, 2000), and some are associated with genetic diseases such as epilepsy in GABAARs (Hales et al., 2006; Hernandez and Macdonald, 2019) or hyperekplexia in GlyRs (Bode and Lynch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Hales et al., 2006; Hernandez and Macdonald, 2019; Bode and Lynch, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5c3ce817-b715-4b15-9b32-7c339ac9b5b6",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C19",
+      "claim": "Alanine substitutions throughout the \u03b11M2\u2013M3 linker generally impair unliganded pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that alanine substitutions throughout the \u03b11M2\u2013M3 linker generally impair unliganded pore gating, whereas they have little effect on the efficiency by which chemical energy from DZ binding is transmitted to the pore gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figures 2, 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "89d07252-f244-4b81-8f50-992a1e4592b7",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C20",
+      "claim": "Alanine substitutions throughout the \u03b11M2\u2013M3 linker have little effect on the efficiency by which chemical energy from diazepam binding is transmitted to the pore gate.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that alanine substitutions throughout the \u03b11M2\u2013M3 linker generally impair unliganded pore gating, whereas they have little effect on the efficiency by which chemical energy from DZ binding is transmitted to the pore gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figures 4, 5, 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "c8942532-54d7-42e9-8f9e-76faadfa6a3b",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C23",
+      "claim": "All alanine mutations in the \u03b11M2\u2013M3 linker exhibited an increase in the EC50 and/or steepness of the GABA concentration\u2013response relationship compared to \u03b11L9'T.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to \u03b11L9'T, all of the alanine mutations exhibited an increase in the EC50 and/or steepness of the GABA concentration\u2013response relationship (Figure 2; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e6df6c77-2786-4316-a3de-3811b7575623",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C24",
+      "claim": "The increased EC50 for GABA in \u03b11M2\u2013M3 linker mutations is generally consistent with previous reports in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased EC50 is generally consistent with previous reports of \u03b11M2\u2013M3 linker mutations in a wild-type background (O'Shea and Harrison, 2000) and implies that side chain interactions in this region are important for channel gating by agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (O'Shea and Harrison, 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "550217cc-7627-4af4-9b90-843999c47af7",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C25",
+      "claim": "Side chain interactions in the \u03b11M2\u2013M3 linker region are important for channel gating by agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased EC50 is generally consistent with previous reports of \u03b11M2\u2013M3 linker mutations in a wild-type background (O'Shea and Harrison, 2000) and implies that side chain interactions in this region are important for channel gating by agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations and prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "04dab91d-8c31-4176-8823-a05a3c33cd8d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C26",
+      "claim": "All \u03b11M2\u2013M3 linker mutations except for \u03b11P277A reduced the unliganded open probability by approximately two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the assumption that Po-GABA-max is similar for all constructs, all \u03b11M2\u2013M3 linker mutations except for \u03b11P277A reduced the unliganded open probability by approximately two-fold (Figure 3B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e5b3afea-4ccc-4595-ad19-9077af5b8ad7",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C27",
+      "claim": "The open probability in saturating GABA (Po-GABA-max) is approximately 0.85 in wild-type channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Po-GABA-max is ~0.85 in wild-type channels (Keramidas and Harrison, 2010), and likely to be closer to 1.0 in a gain of function background such as \u03b11L9'T that is further known to desensitize much more slowly than wild-type (Scheller and Forman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Keramidas and Harrison, 2010; Scheller and Forman, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "a57f1c4c-dbea-4ce0-83d3-d30cb0ab274b",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C28",
+      "claim": "Alanine substitutions in the \u03b11M2\u2013M3 linker have no obvious effect on diazepam concentration\u2013response relationships with the exception of \u03b11L276A that confers a right shift and reduction in steepness.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine substitutions in the \u03b11M2\u2013M3 linker have no obvious effect on DZ concentration\u2013response relationships with the exception of \u03b11L276A that confers a right shift and reduction in steepness (Figure 4; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "fe91e056-36eb-4f44-8cae-e8030808056a",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C29",
+      "claim": "Reports for the EC50 of diazepam potentiation in wild-type receptors are similar to the diazepam EC50 for \u03b11L9'T receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Reports for the EC50 of DZ potentiation in wild-type receptors are similar to the DZ EC50 for \u03b11L9'T receptors reported here and in previous studies (Li et al., 2013; Campo-Soria et al., 2006; R\u00fcsch and Forman, 2005; Walters et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Li et al., 2013; Campo-Soria et al., 2006; R\u00fcsch and Forman, 2005; Walters et al., 2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "ad2e04ed-a87e-4915-9623-da92aa7e4960",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C30",
+      "claim": "The ratio of maximal diazepam-evoked current amplitude to PTX-sensitive current amplitude is largely independent of alanine substitution in the \u03b11M2\u2013M3 linker with the notable exception of \u03b11V279A.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of the maximal DZ-evoked current amplitude (IDZ-max) to PTX-sensitive current amplitude (IPTX) is a measure for how well DZ activates the channel relative to its spontaneous unliganded activity. This ratio is largely independent of alanine substitution in the \u03b11M2\u2013M3 linker with the notable exception of \u03b11V279A (Figure 5, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "ff2bc2a5-02ec-48b4-9d04-5ad7ec7ca823",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C31",
+      "claim": "\u03b11V279 has a unique role in diazepam modulation, whereas side chains of other linker residues are involved little or not at all.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that \u03b11V279 has a unique role in DZ modulation, whereas side chains of other linker residues are involved little or not at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "d9613476-d2a7-4fb6-9bd8-c3dfd9e0963d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C32",
+      "claim": "The valine at position 279 in the GABAA receptor \u03b11 subunit is located near the center of the M2\u2013M3 linker and is nearly always an aliphatic residue in different GABAA receptor subunits as well as in subunits of other pentameric ligand-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The valine at position 279 in the GABAAR \u03b11 subunit is located near the center of the linker and is nearly always an aliphatic residue in different GABAAR subunits as well as in subunits of other pLGICs, with the exception of AChR, where it is a threonine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequence analysis and structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5a5aac45-d20e-4172-8c1c-7bcd0535c646",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C33",
+      "claim": "The mutation \u03b11V279D severely inhibits unliganded gating, exhibiting very little PTX-sensitive current in relation to robust currents evoked with saturating GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative charge introduced by \u03b11V279D severely inhibits unliganded gating, exhibiting very little PTX-sensitive current in relation to robust currents evoked with saturating GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "0baa9d5d-abde-4284-8b1e-d7e6a5f2e87d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C34",
+      "claim": "The mutation \u03b11V279W only slightly impairs unliganded gating to a similar degree as substitution with alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, addition of the bulky side chain \u03b11V279W only slightly impairs unliganded gating to a similar degree as substitution with alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "80588183-d366-4dbc-b4b2-7202c5bc2d3e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C35",
+      "claim": "Side chain volume at position 279 is less critical for unliganded gating, whereas introduction of a negative charge nearly abolishes spontaneous activity despite the \u03b11L9'T pore mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that side chain volume at this position is less critical for unliganded gating, whereas introduction of a negative charge nearly abolishes spontaneous activity despite the \u03b11L9'T pore mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "541755ba-1bf0-4e64-b9e2-a77528041086",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C36",
+      "claim": "The mutation \u03b11V279D increases the GABA EC50 by approximately 100-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with impaired pore gating, \u03b11V279D increases the GABA EC50 by ~100-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "3d3086ce-f029-48d3-aa92-c4ec633a332f",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C37",
+      "claim": "The ratio of diazepam-evoked to PTX-sensitive current amplitude is only slightly increased by \u03b11V279W.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of DZ-evoked to PTX-sensitive current amplitude is only slightly increased by \u03b11V279W, whereas it is further increased by \u03b11V279D, albeit not to the extent of \u03b11V279A (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "427ba654-bb28-4229-8180-afd007288cbb",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C38",
+      "claim": "Diazepam gating is specifically enhanced by a reduction of side chain volume at position 279.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that DZ gating is specifically enhanced by a reduction of side chain volume at position 279.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "a9b65216-0f8f-4cac-b4f0-24ccb0334120",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C39",
+      "claim": "Diazepam binding confers a uniform \u0394\u0394GDZ = \u0394G1\u2212 \u0394G0 = \u22120.4 kcal/mol to the pore gating equilibrium independent of \u03b11M2\u2013M3 linker mutation with the notable exception of \u03b11V279A that more than doubles \u0394\u0394GDZ.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of \u0394G0 versus \u0394G1 shows that DZ binding confers a uniform \u0394\u0394GDZ = \u0394G1\u2212 \u0394G0 = \u22120.4 kcal/mol to the pore gating equilibrium independent of \u03b11M2\u2013M3 linker mutation with the notable exception f \u03b11V279A that more than doubles \u0394\u0394GDZ (Figure 7B,C and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B, 7C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "43156421-5132-48f8-bb90-c908fe21e89d",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C40",
+      "claim": "Coupling between the benzodiazepine site and pore gate is relatively independent of individual \u03b11M2\u2013M3 linker side chain interactions except for \u03b11V279, which natively hinders diazepam gating as compared to its substitution with alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that coupling between the BZD site and pore gate is relatively independent of individual \u03b11M2\u2013M3 linker side chain interactions except for \u03b11V279, which natively hinders DZ gating as compared to its substitution with alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "7c6ebf7c-3283-4246-b227-32b1a35466a9",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C41",
+      "claim": "Introduction of a bulky tryptophan or charged aspartate at position 279 have much smaller effects on \u0394\u0394GDZ than alanine substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, introduction of a bulky tryptophan or charged aspartate at position 279 have much smaller effects on \u0394\u0394GDZ, consistent with the idea that the small side chain volume of alanine is the most relevant factor for increased DZ efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "746c304c-13e2-4fee-af2d-28e7bd2ead86",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C42",
+      "claim": "GABA EC50 is increased by \u03b11V279A in a wild-type background.",
+      "claim_type": "EXPLICIT",
+      "source": "First, GABA EC50 is increased by \u03b11V279A, consistent with impaired unliganded gating (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "28c0881c-2157-4fa3-9219-0808d3663845",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C43",
+      "claim": "Diazepam potentiates GABA-evoked peak current responses to a greater extent in V279A than in wild-type receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, DZ potentiates GABA-evoked peak current responses to a greater extent in V279A than in wild-type receptors, consistent with enhanced coupling between the BZD site and pore gate in the mutant (Figure 8B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8B and 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "65e7a226-5ade-4d82-9b68-86e2f705bdbc",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C44",
+      "claim": "Diazepam potentiates V279A currents evoked with a saturating concentration of GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type, DZ also potentiates V279A currents evoked with a saturating concentration of GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript (Figure 8).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "bd244155-3940-4552-b10d-bcb2a40f6c86",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C45",
+      "claim": "The additional diazepam modulation conferred by \u03b11V279A is both independent of agonist association and additive to diazepam potentiation in wild-type receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the additional DZ modulation conferred by \u03b11V279A is both independent of agonist association and additive to DZ potentiation in wild-type receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "960690e0-d4cf-43b3-a79f-aa60471049d1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C46",
+      "claim": "Responses to approximately EC20-25 GABA were reduced in the presence of FG-7142 in both wild-type and V279A receptors, but to a slightly lesser extent in V279A.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses to ~EC20-25 GABA were reduced in the presence of FG-7142 in both WT and V279A receptors, but to a slightly lesser extent in V279A (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "83cce4b4-01ed-440d-9556-d09240b89c76",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C47",
+      "claim": "\u03b11L9'T and \u03b11V279A have independent and additive effects on the pore-gating equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that \u03b11L9'T and \u03b11V279A have independent and additive effects on the gating equilibrium, and that for \u03b11V279A, this effect depends on DZ occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from model simulations and experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "100053fa-66e8-47bd-9514-45b8a33de2b6",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C48",
+      "claim": "The model's predicted maximum open probability approached 1.0 in the \u03b11L9'T background, consistent with a gain of function phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The model's predicted maximum Po approached 1.0 in the \u03b11L9'T background, consistent with a gain of function phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model simulations and inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "750d1c23-8c0d-4a5b-953c-26f9ab4fdf38",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C49",
+      "claim": "Maximal open probability was reduced in \u03b11V279A\u03b22\u03b32L as compared to wild-type receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, maximal Po was reduced in \u03b11V279A\u03b22\u03b32L as compared to wild-type receptors, as expected for a reduction in unliganded activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model simulations and inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "1be79727-529d-4f1b-97bb-d50f0abeba7e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C50",
+      "claim": "Estimates for the energetic effect of diazepam binding on pore gating (\u22120.4 kcal/mol) are similar to prior estimates from direct gating in L9'S/T backgrounds and from kinetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates for the energetic effect of DZ binding on pore gating (\u22120.4 kcal/mol) are similar to prior estimates from direct gating in L9'S/T backgrounds and from kinetic models (Goldschen-Ohm et al., 2014; Gielen et al., 2012; Downing et al., 2005; R\u00fcsch and Forman, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Goldschen-Ohm et al., 2014; Gielen et al., 2012; Downing et al., 2005; R\u00fcsch and Forman, 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "558abee7-d654-44d4-8706-af56d20ea5d2",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C51",
+      "claim": "The energetic effect of diazepam binding on pore gating is approximately 10-fold less than the energy derived from binding each molecule of GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is approximately 10-fold less than the energy derived from binding each molecule of GABA (Goldschen-Ohm et al., 2014; Maksay, 1994; Jackson, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Goldschen-Ohm et al., 2014; Maksay, 1994; Jackson, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "c6f39e2c-b006-4b21-b7d1-3d89e19921e1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C52",
+      "claim": "The M2\u2013M3 linker is associated with early movements during acetylcholine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the M2\u2013M3 linker is associated with early movements during AChR activation (Purohit et al., 2013), it is possible that biasing the linker toward its active conformation in the \u03b11L9'T background could limit our ability to observe its full range of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Purohit et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "07723463-c083-4399-9bf3-f1a4ad55aa55",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C53",
+      "claim": "The interface between the extracellular agonist- and benzodiazepine-binding domains and the transmembrane helices is formed largely by several loops including the M2\u2013M3 linker, Cys loop, \u03b21\u2013\u03b22 loop and \u03b28\u2013\u03b29 linker, and pre-M1 segment from neighboring subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface between the extracellular agonist- and BZD-binding domains and the transmembrane helices is formed largely by several loops including the M2\u2013M3 linker, Cys loop, \u03b21\u2013\u03b22 loop and \u03b28\u2013\u03b29 linker, and pre-M1 segment from neighboring subunits (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Draws from established structural knowledge and reference to Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "ba82e967-7007-4b3f-b48a-b881f437f25e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C54",
+      "claim": "Mutagenesis suggests that interactions between extracellular and transmembrane domains are important for channel gating by agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis suggests that interactions between these domains are important for channel gating by agonists (Kash et al., 2003; O'Shea and Harrison, 2000) thought to involve an outward radial displacement of the M2\u2013M3 linker (Nemecz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Kash et al., 2003; O'Shea and Harrison, 2000; Nemecz et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "2ed181f2-a09c-4560-b95b-886ec72efafa",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C55",
+      "claim": "Rate versus free energy linear relationships in acetylcholine receptor suggest that the M2\u2013M3 linker moves early during channel activation, similar to rearrangements at agonist binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate versus free energy linear relationships in AChR suggest that the M2\u2013M3 linker moves early during channel activation, similar to rearrangements at agonist binding sites (Purohit et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Purohit et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "58c720a5-c900-4748-90c1-6407d7327ebd",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C56",
+      "claim": "Mutant cycle analysis indicates strong long-range coupling between residues in the M2\u2013M3 linker and agonist binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these observations, mutant cycle analysis indicates strong long-range coupling between residues in the M2\u2013M3 linker and agonist binding sites (Gupta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Gupta et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "3b6fceaa-b556-479d-8797-6e6ee7048970",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C57",
+      "claim": "In structural models, the M2\u2013M3 linker adopts a C-shaped conformation with \u03b11V279 oriented inwards toward the center of the arc.",
+      "claim_type": "EXPLICIT",
+      "source": "In structural models, the M2\u2013M3 linker adopts a C-shaped conformation with \u03b11V279 oriented inwards toward the center of the arc (Figure 1D; Kim et al., 2020; Laverty et al., 2019; Masiulis et al., 2019; Phulera et al., 2018; Zhu et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to published literature (Kim et al., 2020; Laverty et al., 2019; Masiulis et al., 2019; Phulera et al., 2018; Zhu et al., 2018) and reference to Figure 1D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "52c5be8f-ccf8-4343-b296-a118784c38b0",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C58",
+      "claim": "The side chain at position 279 is centrally involved in steric interactions between linker residues near the top of the M2 and M3 helices.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the side chain at position 279 is centrally involved in steric interactions between linker residues near the top of the M2 and M3 helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves hypothetical reasoning based on structural and functional data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "81ce9f25-2830-4043-91a6-2770800362c1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C59",
+      "claim": "Removing the obstruction at position 279 (\u03b11V279A) would allow the linker to become more compact and bring the M2 and M3 helices closer together.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing this obstruction (\u03b11V279A) would allow the linker to become more compact and bring the M2 and M3 helices closer together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves hypothetical reasoning based on structural considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "a23df1f5-5a0c-4321-869c-75dc1e2eb9c1",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C60",
+      "claim": "A more compact transmembrane domain may enhance coupling with the benzodiazepine site.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a more compact transmembrane domain may also enhance coupling with the BZD site (Kim et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Involves speculative reasoning supported by citation to published literature (Kim et al., 2020).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "b978c36f-ae5c-4955-a273-2539eb5b7c98",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C61",
+      "claim": "Valine and threonine residues in glycine receptor and acetylcholine receptor aligning with V279 adopt a similar conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Valine and threonine residues in GlyR and AchR aligning with V279 (Figure 1\u2014figure supplement 1) adopt a similar conformation (Kumar et al., 2020; Nemecz et al., 2016; Du et al., 2015), suggesting that this residue has a conserved role in other pLGICs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to published literature (Kumar et al., 2020; Nemecz et al., 2016; Du et al., 2015) and reference to Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "b3e80b70-0531-410d-880b-2a1b7cddbf6a",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C62",
+      "claim": "The \u03b28-\u03b29 linker and pre-M1 in the neighboring \u03b32 subunit come in close proximity to the \u03b11M2\u2013M3 linker and are known to be important for benzodiazepine modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b28-\u03b29 linker and pre-M1 in the neighboring \u03b32 subunit come in close proximity to the \u03b11M2\u2013M3 linker and are known to be important for BZD modulation, with the \u03b28-\u03b29 linker also contributing to the BZD-binding site (Hanson and Czajkowski, 2011; Hanson and Czajkowski, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Hanson and Czajkowski, 2011; Hanson and Czajkowski, 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "7d4a5007-9750-49f6-a489-37fbccd60796",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C63",
+      "claim": "In acetylcholine receptor strong coupling with the adjacent \u03b28-\u03b29 linker and pre-M1 segment of the neighboring subunit occurs primarily via the threonine aligning with \u03b11V279 in GABAA receptor and its neighboring serine.",
+      "claim_type": "EXPLICIT",
+      "source": "In AChR strong coupling with the adjacent \u03b28-\u03b29 linker and pre-M1 segment of the neighboring subunit occurs primarily via the threonine aligning with \u03b11V279 in GABAAR and its neighboring serine (Gupta et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published literature (Gupta et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "58858c8d-4920-404a-997e-5b0b07785da8",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C64",
+      "claim": "Comparison of glycine receptor structures in apo or antagonist-bound versus agonist-bound conformations indicates that intersubunit interactions between the M2\u2013M3 linker in the vicinity of the valine aligning with V279 and the following serine, and the top of the M1 helix in the adjacent subunit are weakened during channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of GlyR structures in apo or antagonist-bound versus agonist-bound conformations indicates that intersubunit interactions between the M2\u2013M3 linker in the vicinity of the valine aligning with V279 and the following serine, and the top of the M1 helix in the adjacent subunit are weakened during channel activation (Du et al., 2015; Kumar et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Du et al., 2015; Kumar et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5a706181-e644-4c68-943a-339509428572",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C65",
+      "claim": "Recent structures of \u03b1\u03b2\u03b3 receptors show diazepam bound not only at the classical \u03b1/\u03b3 site in the extracellular domain, but also in the transmembrane domain below the M2\u2013M3 linker at \u03b2/\u03b1 and \u03b3/\u03b2 intersubunit interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structures of \u03b1\u03b2\u03b3 receptors show DZ bound not only at the classical \u03b1/\u03b3 site in the extracellular domain, but also in the transmembrane domain below the M2\u2013M3 linker at \u03b2/\u03b1 and \u03b3/\u03b2 intersubunit interfaces (Kim et al., 2020; Masiulis et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published literature (Kim et al., 2020; Masiulis et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4841ae6b-e9b8-4122-8f2f-e1b270365ffc",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C66",
+      "claim": "The relevance of transmembrane diazepam binding sites to high affinity binding of approximately 1 \u03bcM diazepam at the classical site is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these structures were solved in the presence of 100\u2013200 \u03bcM DZ, and the relevance of these transmembrane sites to high affinity binding of ~1 \u03bcM DZ at the classical site is unclear (Walters et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from structural data and citation to published literature (Walters et al., 2000).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "cbb2ac89-e950-45e7-a354-40d06c6c191f",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C67",
+      "claim": "Diazepam binding in the transmembrane domain was not observed at \u03b1/\u03b3 or \u03b1/\u03b2 interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, DZ binding in the transmembrane domain was not observed at \u03b1/\u03b3 or \u03b1/\u03b2 interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural data from cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e054b71e-f4af-4750-b4e9-b4408b30ef57",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C68",
+      "claim": "The observed effects of \u03b11V279A reflect altered functional coupling with the classical benzodiazepine site.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we favor the interpretation that our observed effects reflect altered functional coupling with the classical site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from experimental observations and structural considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5861d192-f6f0-4298-9540-871e3bc2fac6",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "claim_id": "C69",
+      "claim": "The residue V279 in the \u03b11M2\u2013M3 linker regulates energetic coupling between the benzodiazepine site and the pore gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations reveal a critical residue V279 in the \u03b11M2\u2013M3 linker, which regulates energetic coupling between the BZD site and the pore gate, whereas other linker side chains contribute little or not at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on benzodiazepines (BZDs) and GABAA receptors (GABAARs), including their clinical use, side effects, structural composition, and the location of BZD binding sites based on prior literature and structural models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 are all supported by citations to published literature and established structural knowledge. These claims provide essential background context for the study and are well-documented in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "7de5ef93-f1e6-482e-b7d3-4e8a11abf8a4",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors justify their experimental approach by noting that BZDs do not robustly activate channels alone but modulate agonist responses, and that the gain of function mutant \u03b11L9'T\u03b22\u03b32L is spontaneously active and directly gated by BZDs, allowing isolation of BZD effects on gating from effects on agonist binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are supported by established knowledge (C12), logical inference (C13), and citations to prior work (C14). The rationale for using the gain of function mutant is sound and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "98f88dc9-c86c-45d2-89ea-f2ee9404a92c",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The M2\u2013M3 linker is a structurally and functionally important region connecting extracellular and transmembrane domains in pentameric ligand-gated ion channels, with mutations generally impairing agonist gating and some associated with genetic diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by citations to published literature and established structural knowledge. This provides important context for why the M2\u2013M3 linker was chosen as the focus of mutagenesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Alanine substitutions throughout the \u03b11M2\u2013M3 linker generally impair unliganded pore gating and increase GABA EC50, suggesting that side chain interactions in this region are important for channel gating even in the absence of agonist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C23, C24, C25, C26 are supported by experimental data in Figures 2, 3, and Table 1, and are consistent with prior literature (C24, C27). The conclusion that side chain interactions are important for gating is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "84c54f03-550f-4931-ae05-98759d567fca",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Alanine substitutions in the \u03b11M2\u2013M3 linker have little effect on diazepam (DZ) concentration\u2013response relationships or the efficiency of DZ gating relative to unliganded activity, with the notable exception of \u03b11V279A, which shows a markedly increased ratio of DZ-evoked to spontaneous current.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C28, C29, C30 are supported by experimental data in Figures 4, 5, and Table 1. The inference that \u03b11V279 has a unique role in DZ modulation (C31) is well-supported by the data showing a specific effect of the V279A mutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The side chain properties at position 279 differentially affect unliganded gating and DZ modulation: introducing a negative charge (V279D) severely impairs unliganded gating and increases GABA EC50 ~100-fold, while a bulky tryptophan (V279W) has effects similar to alanine, suggesting that DZ gating is specifically enhanced by reduced side chain volume at this position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are supported by experimental data in Figure 6. The inference that side chain volume is the critical factor for DZ gating enhancement (C38) is reasonable given the differential effects of V279A, V279W, and V279D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "6422578f-d001-4655-a41e-1557ab16a51e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Thermodynamic analysis reveals that DZ binding confers a uniform energetic contribution (\u0394\u0394GDZ = \u22120.4 kcal/mol) to pore gating for most \u03b11M2\u2013M3 linker mutations, but \u03b11V279A more than doubles this energetic contribution, and this effect is specific to reduced side chain volume rather than charge or bulk.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by experimental data and thermodynamic calculations shown in Figure 7 and Table 1. The analysis appropriately accounts for assumptions about Po-GABA-max and verifies key assumptions with single-channel data (Figure 7\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "d509dda6-5d6b-47f6-bfc6-bcb8f9d3003c",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In a wild-type background, \u03b11V279A increases GABA EC50 and enhances DZ potentiation of GABA-evoked currents at both subsaturating and saturating GABA concentrations, suggesting that the additional DZ modulation is independent of agonist association and additive to wild-type DZ potentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by experimental data in Figure 8. The observation that DZ potentiates currents evoked by saturating GABA in V279A but not wild-type is particularly compelling evidence for a direct effect on pore gating.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "5c418d52-8a8f-4baf-875d-e92ee75ae256",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The BZD negative modulator FG-7142 reduces GABA-evoked responses in both wild-type and V279A receptors, but to a slightly lesser extent in V279A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by experimental data in Figure 8\u2014figure supplement 1. This provides additional evidence that V279A affects BZD modulation, though the effect is smaller for negative modulators.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4dcf7f2d-24b2-4c64-8a3b-448a88fe5834",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Monod-Wyman-Changeux (MWC) modeling suggests that \u03b11L9'T and \u03b11V279A have independent and additive effects on the pore-gating equilibrium, with the effect of \u03b11V279A depending on DZ occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by model simulations and experimental data shown in Figure 9. The model provides a reasonable framework for interpreting the data, though the authors acknowledge limitations in fully capturing all aspects of DZ potentiation in wild-type channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "b8eb1c55-0e78-4758-ad2d-d15ae6b4bdba",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The estimated energetic effect of DZ binding on pore gating (\u22120.4 kcal/mol) is consistent with prior estimates and is approximately 10-fold less than the energy from GABA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by citations to published literature and comparison with the current study's estimates. This contextualizes the magnitude of DZ's effect on gating.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript discusses structural and functional context for the M2\u2013M3 linker, including its role in early gating movements, coupling with agonist binding sites, structural conformation, conservation across pLGICs, and interactions with neighboring subunit domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57, C61-C64 are all supported by citations to published literature and structural knowledge. These provide important context for interpreting the functional effects of mutations at position 279.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "62cdcf4d-7818-4f31-958a-897cd6733f4e",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors hypothesize that the side chain at position 279 is centrally involved in steric interactions within the M2\u2013M3 linker, and that removing this obstruction (V279A) allows the linker to become more compact, potentially enhancing coupling with the BZD site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60 are explicitly speculative hypotheses based on structural considerations and functional data. While plausible, these mechanistic interpretations require further structural or computational validation to be definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "f08f93b3-dfab-4ae6-a44a-a0c06a4c7587",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss recent structural evidence for DZ binding in transmembrane domains but argue that the observed effects of \u03b11V279A likely reflect altered functional coupling with the classical extracellular BZD site rather than effects on transmembrane binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by citations to structural literature (C65) and logical inference from the experimental conditions and structural data (C66-C68). The interpretation favoring the classical site is reasonable given the experimental context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    },
+    {
+      "id": "e0e6826e-af13-4bb1-a26c-e3f0a9a17d89",
+      "content_id": "5fbc9c3c-9b7d-4a3a-b2d4-0c7cffc348bb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study identifies V279 in the \u03b11M2\u2013M3 linker as a critical residue regulating energetic coupling between the BZD site and the pore gate, with other linker side chains contributing little or not at all.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is the main conclusion of the study and is well-supported by the comprehensive experimental data presented throughout the manuscript, including mutagenesis, electrophysiology, and thermodynamic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:23:52.664654Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f2922436-b07f-4217-8fef-912f12efb4a1",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "d7d6a7aa-6c58-44f1-9646-4e43425a0328",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "ed71d911-af57-419c-806c-70ded2390cb0",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "5dc156fe-c95c-4a3c-a1c8-8fa0d2d6122d",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "1226a7dd-8516-4c7f-a76d-9903288d11af",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "532d694c-ef8a-4ea2-ba0b-9314eee0b555",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "cc04dc3c-fdec-4625-bb9e-36b7fe6c9401",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "8348eab7-72ea-4124-936b-19eb686bc13d",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "7d242696-d5cb-46d8-8907-8435b1b3d4d1",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "18612ba1-dd86-41ce-a8dc-5a7e48326f3b",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "4b9f3624-7a23-4683-89ce-e37d8ddc34ca",
+      "result_id": "4a5281da-0bb7-4b50-8ea2-070d1a53c474"
+    },
+    {
+      "claim_id": "e30a7b74-c269-4459-ae0f-35b73b72d89b",
+      "result_id": "7de5ef93-f1e6-482e-b7d3-4e8a11abf8a4"
+    },
+    {
+      "claim_id": "b3a1e620-662f-4444-9933-2bb379fe9c8e",
+      "result_id": "7de5ef93-f1e6-482e-b7d3-4e8a11abf8a4"
+    },
+    {
+      "claim_id": "61e109b1-3477-41b4-ace9-9bf199271016",
+      "result_id": "7de5ef93-f1e6-482e-b7d3-4e8a11abf8a4"
+    },
+    {
+      "claim_id": "4dbe5d23-6ca1-4500-8f92-b71a94097919",
+      "result_id": "98f88dc9-c86c-45d2-89ea-f2ee9404a92c"
+    },
+    {
+      "claim_id": "2949bcfb-e355-42c2-b43b-d7c1638048e6",
+      "result_id": "98f88dc9-c86c-45d2-89ea-f2ee9404a92c"
+    },
+    {
+      "claim_id": "6e938d36-34f7-423f-ba26-e3c9ff78918b",
+      "result_id": "98f88dc9-c86c-45d2-89ea-f2ee9404a92c"
+    },
+    {
+      "claim_id": "4f511b6b-7641-4815-b23a-994ee5a83275",
+      "result_id": "98f88dc9-c86c-45d2-89ea-f2ee9404a92c"
+    },
+    {
+      "claim_id": "5c3ce817-b715-4b15-9b32-7c339ac9b5b6",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "c8942532-54d7-42e9-8f9e-76faadfa6a3b",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "e6df6c77-2786-4316-a3de-3811b7575623",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "550217cc-7627-4af4-9b90-843999c47af7",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "04dab91d-8c31-4176-8823-a05a3c33cd8d",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "e5b3afea-4ccc-4595-ad19-9077af5b8ad7",
+      "result_id": "0121d2d2-6fae-48c7-8dcd-73f4b0602992"
+    },
+    {
+      "claim_id": "89d07252-f244-4b81-8f50-992a1e4592b7",
+      "result_id": "84c54f03-550f-4931-ae05-98759d567fca"
+    },
+    {
+      "claim_id": "a57f1c4c-dbea-4ce0-83d3-d30cb0ab274b",
+      "result_id": "84c54f03-550f-4931-ae05-98759d567fca"
+    },
+    {
+      "claim_id": "fe91e056-36eb-4f44-8cae-e8030808056a",
+      "result_id": "84c54f03-550f-4931-ae05-98759d567fca"
+    },
+    {
+      "claim_id": "ad2e04ed-a87e-4915-9623-da92aa7e4960",
+      "result_id": "84c54f03-550f-4931-ae05-98759d567fca"
+    },
+    {
+      "claim_id": "ff2bc2a5-02ec-48b4-9d04-5ad7ec7ca823",
+      "result_id": "84c54f03-550f-4931-ae05-98759d567fca"
+    },
+    {
+      "claim_id": "d9613476-d2a7-4fb6-9bd8-c3dfd9e0963d",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "5a5aac45-d20e-4172-8c1c-7bcd0535c646",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "0baa9d5d-abde-4284-8b1e-d7e6a5f2e87d",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "80588183-d366-4dbc-b4b2-7202c5bc2d3e",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "541755ba-1bf0-4e64-b9e2-a77528041086",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "3d3086ce-f029-48d3-aa92-c4ec633a332f",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "427ba654-bb28-4229-8180-afd007288cbb",
+      "result_id": "91e01fca-ff37-4571-81c2-aaf4a5133dcb"
+    },
+    {
+      "claim_id": "a9b65216-0f8f-4cac-b4f0-24ccb0334120",
+      "result_id": "6422578f-d001-4655-a41e-1557ab16a51e"
+    },
+    {
+      "claim_id": "43156421-5132-48f8-bb90-c908fe21e89d",
+      "result_id": "6422578f-d001-4655-a41e-1557ab16a51e"
+    },
+    {
+      "claim_id": "7c6ebf7c-3283-4246-b227-32b1a35466a9",
+      "result_id": "6422578f-d001-4655-a41e-1557ab16a51e"
+    },
+    {
+      "claim_id": "746c304c-13e2-4fee-af2d-28e7bd2ead86",
+      "result_id": "d509dda6-5d6b-47f6-bfc6-bcb8f9d3003c"
+    },
+    {
+      "claim_id": "28c0881c-2157-4fa3-9219-0808d3663845",
+      "result_id": "d509dda6-5d6b-47f6-bfc6-bcb8f9d3003c"
+    },
+    {
+      "claim_id": "65e7a226-5ade-4d82-9b68-86e2f705bdbc",
+      "result_id": "d509dda6-5d6b-47f6-bfc6-bcb8f9d3003c"
+    },
+    {
+      "claim_id": "bd244155-3940-4552-b10d-bcb2a40f6c86",
+      "result_id": "d509dda6-5d6b-47f6-bfc6-bcb8f9d3003c"
+    },
+    {
+      "claim_id": "960690e0-d4cf-43b3-a79f-aa60471049d1",
+      "result_id": "5c418d52-8a8f-4baf-875d-e92ee75ae256"
+    },
+    {
+      "claim_id": "83cce4b4-01ed-440d-9556-d09240b89c76",
+      "result_id": "4dcf7f2d-24b2-4c64-8a3b-448a88fe5834"
+    },
+    {
+      "claim_id": "100053fa-66e8-47bd-9514-45b8a33de2b6",
+      "result_id": "4dcf7f2d-24b2-4c64-8a3b-448a88fe5834"
+    },
+    {
+      "claim_id": "750d1c23-8c0d-4a5b-953c-26f9ab4fdf38",
+      "result_id": "4dcf7f2d-24b2-4c64-8a3b-448a88fe5834"
+    },
+    {
+      "claim_id": "1be79727-529d-4f1b-97bb-d50f0abeba7e",
+      "result_id": "b8eb1c55-0e78-4758-ad2d-d15ae6b4bdba"
+    },
+    {
+      "claim_id": "558abee7-d654-44d4-8706-af56d20ea5d2",
+      "result_id": "b8eb1c55-0e78-4758-ad2d-d15ae6b4bdba"
+    },
+    {
+      "claim_id": "c6f39e2c-b006-4b21-b7d1-3d89e19921e1",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "07723463-c083-4399-9bf3-f1a4ad55aa55",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "ba82e967-7007-4b3f-b48a-b881f437f25e",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "2ed181f2-a09c-4560-b95b-886ec72efafa",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "58c720a5-c900-4748-90c1-6407d7327ebd",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "3b6fceaa-b556-479d-8797-6e6ee7048970",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "b978c36f-ae5c-4955-a273-2539eb5b7c98",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "b3e80b70-0531-410d-880b-2a1b7cddbf6a",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "7d4a5007-9750-49f6-a489-37fbccd60796",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "58858c8d-4920-404a-997e-5b0b07785da8",
+      "result_id": "4e8616a6-97e7-4bc3-b3dd-851294d43f2e"
+    },
+    {
+      "claim_id": "52c5be8f-ccf8-4343-b296-a118784c38b0",
+      "result_id": "62cdcf4d-7818-4f31-958a-897cd6733f4e"
+    },
+    {
+      "claim_id": "81ce9f25-2830-4043-91a6-2770800362c1",
+      "result_id": "62cdcf4d-7818-4f31-958a-897cd6733f4e"
+    },
+    {
+      "claim_id": "a23df1f5-5a0c-4321-869c-75dc1e2eb9c1",
+      "result_id": "62cdcf4d-7818-4f31-958a-897cd6733f4e"
+    },
+    {
+      "claim_id": "5a706181-e644-4c68-943a-339509428572",
+      "result_id": "f08f93b3-dfab-4ae6-a44a-a0c06a4c7587"
+    },
+    {
+      "claim_id": "4841ae6b-e9b8-4122-8f2f-e1b270365ffc",
+      "result_id": "f08f93b3-dfab-4ae6-a44a-a0c06a4c7587"
+    },
+    {
+      "claim_id": "cbb2ac89-e950-45e7-a354-40d06c6c191f",
+      "result_id": "f08f93b3-dfab-4ae6-a44a-a0c06a4c7587"
+    },
+    {
+      "claim_id": "e054b71e-f4af-4750-b4e9-b4408b30ef57",
+      "result_id": "f08f93b3-dfab-4ae6-a44a-a0c06a4c7587"
+    },
+    {
+      "claim_id": "5861d192-f6f0-4298-9540-871e3bc2fac6",
+      "result_id": "e0e6826e-af13-4bb1-a26c-e3f0a9a17d89"
+    }
+  ],
+  "comparisons": []
+}

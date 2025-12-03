@@ -1,0 +1,1707 @@
+{
+  "submission": {
+    "id": "eafbdb6a-0bca-427b-ba31-e320b62cacfa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:29:26.118650Z",
+    "updated_at": "2025-12-03T07:29:26.118650Z"
+  },
+  "content": [
+    {
+      "id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "submission_id": "eafbdb6a-0bca-427b-ba31-e320b62cacfa",
+      "content_type": "manuscript",
+      "content_text": "# Microbiome-pathogen interactions drive epidemiological dynamics of antibiotic resistance: A modeling study applied to nosocomial pathogen control\n\n## Authors\n\n- David RM Smith<sup>1</sup> ([ORCID: 0000-0002-7330-4262](https://orcid.org/0000-0002-7330-4262)) \u2020\n- Laura Temime<sup>3</sup> ([ORCID: 0000-0002-8850-5403](https://orcid.org/0000-0002-8850-5403))\n- Lulla Opatowski<sup>1</sup>\n\n### Affiliations\n\n1. Institut Pasteur, Epidemiology and Modelling of Antibiotic Evasion (EMAE) Paris France\n2. Universit\u00e9 Paris-Saclay, UVSQ, Inserm, CESP, Anti-infective evasion and pharmacoepidemiology team Montigny-Le-Bretonneux France\n3. Mod\u00e9lisation, \u00e9pid\u00e9miologie et surveillance des risques sanitaires (MESuRS), Conservatoire national des arts et m\u00e9tiers Paris France\n4. PACRI unit, Institut Pasteur, Conservatoire national des arts et m\u00e9tiers Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe human microbiome can protect against colonization with pathogenic antibiotic-resistant bacteria (ARB), but its impacts on the spread of antibiotic resistance are poorly understood. We propose a mathematical modeling framework for ARB epidemiology formalizing within-host ARB-microbiome competition, and impacts of antibiotic consumption on microbiome function. Applied to the healthcare setting, we demonstrate a trade-off whereby antibiotics simultaneously clear bacterial pathogens and increase host susceptibility to their colonization, and compare this framework with a traditional strain-based approach. At the population level, microbiome interactions drive ARB incidence, but not resistance rates, reflecting distinct epidemiological relevance of different forces of competition. Simulating a range of public health interventions (contact precautions, antibiotic stewardship, microbiome recovery therapy) and pathogens (Clostridioides difficile, methicillin-resistant Staphylococcus aureus, multidrug-resistant Enterobacteriaceae) highlights how species-specific within-host ecological interactions drive intervention efficacy. We find limited impact of contact precautions for Enterobacteriaceae prevention, and a promising role for microbiome-targeted interventions to limit ARB spread.\n\n## Introduction\n\nBacteria are fundamental drivers of human health and disease. On one hand, bacterial pathogens are leading causes of global infectious disease burden, with antibiotic-resistant and healthcare-associated infections posing significant risks to patient safety and public health\u00a0(Cassini et al., 2019; Cassini et al., 2016; Friedman et al., 2016; Naylor et al., 2018). On the other, the bacterial microbiome \u2013 the trillions of individual bacteria that collectively inhabit the human body \u2013 provides support to development and homeostasis, facilitates core physiological processes like digestion, and protects against diseases ranging from colitis to cancer\u00a0(B\u00e4ckhed et al., 2005; Kamada et al., 2013b; Lynch and Pedersen, 2016; Round and Mazmanian, 2009; Roy and Trinchieri, 2017). The microbiome can also protect against colonization with infectious bacterial pathogens, a phenomenon known as colonization resistance, limiting their capacities to establish colonies, grow, persist, and transmit\u00a0(B\u00e4umler and Sperandio, 2016; Buffie and Pamer, 2013). This is perhaps best exemplified by the canonical Clostridioides difficile: growth within the intestine is inhibited by secondary metabolites of commensal gut bacteria, protecting colonized hosts from disease and limiting propagation of the infectious spores that drive between-host transmission\u00a0(Kamada et al., 2013a; Pamer, 2016). The human microbiome is purported to play a defensive role against a range of bacterial pathogens, but the mechanistic nature and epidemiological consequences of within-host microbiome-pathogen interactions are poorly understood.\n\nThis relationship between microbiome ecology and bacterial epidemiology is important in the context of widespread antibiotic use and global dissemination of high-risk pathogenic antibiotic-resistant bacteria (ARB). When prescribed appropriately, antibiotics target particular bacterial pathogens, but co-colonizing microbiota are also exposed\u00a0(Tedijanto et al., 2018). This can unintentionally destabilize healthy microbial communities, resulting in dysbiosis, a state of population dynamic disequilibrium\u00a0(Bhalodi et al., 2019; Coyte et al., 2015; Dethlefsen and Relman, 2011). Microbiome dysbiosis is associated with reduced abundance and diversity of commensal bacteria, impaired host immune responses, and loss of colonization resistance, altogether increasing host susceptibility to ARB colonization\u00a0(Kim et al., 2017; Sorbara and Pamer, 2019; Zhang et al., 2015). Antibiotic-induced dysbiosis may further result in elevated expression of antibiotic resistance genes, increased rates of horizontal transfer of such genes, and ecological release, whereby subdominant ARB are released from competition via clearance of drug-sensitive bacteria, growing out into dominant colonies\u00a0(Doan et al., 2019; Letten et al., 2021; Rupp\u00e9 et al., 2019; Stecher et al., 2013). These associations may be particularly relevant for healthcare settings, where antibiotic use is widespread, and where microbiome dysbiosis is increasingly recognized as a key driver of ARB colonization and infection\u00a0(Baggs et al., 2018; Prescott et al., 2015; Ravi et al., 2019). From a clinical perspective, this motivates a need for public health interventions that minimize or reverse harm to patient microbiota, from antibiotic stewardship, to fecal microbiota transplantation, to microbiome protective therapies.\u00a0(de Gunzburg et al., 2018; Relman and Lipsitch, 2018).\n\nIn the face of uncertainty, mathematical modeling is a useful tool to analyze epidemiological dynamics of antibiotic resistance and evaluate control measures\u00a0(Heesterbeek et al., 2015; Opatowski et al., 2011). However, an incomplete understanding of key eco-evolutionary principles is highlighted as a limitation to using modeling to predict future trends and inform decision-making\u00a0(Birkeg\u00e5rd et al., 2018; Knight et al., 2019). Disruption of the host microbiome is a long-standing theory explaining how antibiotics select for the spread of resistance at both the individual and population levels\u00a0(Lipsitch and Samore, 2002), but most epidemiological models consider just one species of bacteria at a time, under the traditional assumption that antibiotic selection for resistance results from intraspecific competition between co-circulating strains\u00a0(Blanquart, 2019; Ramsay et al., 2018; Spicknall et al., 2013). This simple framework has been particularly useful for bacteria like Streptococcus pneumoniae and Staphylococcus aureus, in which different strains \u2013 sometimes conceptualized as drug-sensitive vs. drug-resistant, or community-associated vs. healthcare-associated \u2013 are believed to be in close ecological competition\u00a0(Blanquart, 2019; Domenech de Cell\u00e8s et al., 2011; Karda\u015b-S\u0142oma et al., 2011; Pressley et al., 2010; van Kleef et al., 2013).\n\nAccounting for other forms of complexity in epidemiological models \u2013 from treatment intensity, to age-assortative contact behavior, to hospital referral networks, to animal-human interactions, to genetic linkage between resistance and non-resistance genes \u2013 has helped to unravel the many, disparate forces that contribute to drive the spread of resistance\u00a0(Blanquart et al., 2018; Cobey et al., 2017; Colijn and Cohen, 2015; Donker et al., 2017; Lehtinen et al., 2017; van Bunnik and Woolhouse, 2017). Nevertheless, within-host bacterial competition remains a key mechanism of selection for antibiotic resistance dissemination, and an active area of research at the forefront of resistance modeling\u00a0(Lipsitch and Samore, 2002; Mulberry et al., 2020; Spicknall et al., 2013). For instance, the \u2018mixed-carriage\u2019 model by Davies et al. demonstrates how intraspecific competition results in negative frequency-dependent selection for either of two competing strains, and provides a satisfying mechanistic explanation for widespread strain coexistence at the population level\u00a0(Davies et al., 2019). However, contemporary work has stopped short of evaluating consequences of between-species competition on resistance epidemiology. Yet for many ARB, including emerging high-priority multidrug-resistant bacteria like extended-spectrum beta-lactamase (ESBL) producing Enterobacteriaceae, interactions with the host microbiome may be important mediators of nosocomial colonization dynamics\u00a0(Kim et al., 2017; Lerminiaux and Cameron, 2019; Pilmis et al., 2020).\n\nHere, we use mathematical modeling to evaluate how microbiome ecology and antibiotic consumption combine to drive the spread and control of antibiotic-resistant bacteria in the healthcare setting. This is presented in two parts. First, we propose a modeling framework for ARB colonization dynamics, accounting for different within-host ecological interactions \u2013 including intraspecific pathogen strain competition, interspecific microbiome-pathogen competition, and horizontal gene transfer (HGT) \u2013 in the context of antibiotic treatment. Synthesizing these into a final model, we show how different combinations of ecological interactions drive antibiotic selection for the spread of resistance, with heterogeneous impacts on classic epidemiological indicators. Second, using parameter estimates from the literature, we apply this framework to simulate the nosocomial epidemiology of four high-risk ARB: C. difficile, methicillin-resistant S. aureus (MRSA), ESBL-producing Escherichia coli (ESBL-EC) and carbapenemase-producing Klebsiella pneumoniae (CP-KP). Expert elicitation interviews were conducted to characterize the clinical relevance of microbiome dysbiosis for each species, and to qualify and quantify interaction coefficients with uncertainty. By simulating a range of different public health interventions, we demonstrate the theoretical importance of microbiome-pathogen interactions as mediators of ARB epidemiology, and determining factors in the control of resistance dissemination.\n\n## Model and results\n\n### Part 1: A modeling framework for antibiotic resistance epidemiology in healthcare settings\n\nWe propose a series of five models describing colonization dynamics of an antibiotic-resistant bacterial pathogen, denoted PR, among hospital inpatients in an acute care setting. Each model accounts for different within-host ecological interactions between PR and other bacteria. Models are described using systems of ordinary differential equations (ODEs), and are evaluated deterministically using numerical integration. Across models, three primary epidemiological outcomes are calculated at steady-state equilibrium: PR prevalence (the proportion of patients colonized), PR incidence (the daily rate of colonization acquisition within the hospital), and the pathogen resistance rate (the proportion of patients colonized with the focal antibiotic-resistant strain PR relative to a competing drug-sensitive strain PS). We also derive and evaluate the basic reproduction number R0 for PR, an indicator of pathogen epidemicity representing the average number of patients expected to acquire a novel pathogen from an initial index patient. See Materials\u00a0and\u00a0methods for technical details, and the supplementary appendix for the complete modeling framework and assumptions (Appendix Equation A1).\n\n#### A simple transmission model for bacterial colonization\n\nWe start with a Susceptible-Colonized transmission model (Figure 1A) representing a population of N hospital patients as either susceptible to colonization (S) or colonized (CR) by PR, the focal strain or species:\n\n$$\n\\frac{dS}{dt}=N\\times(1\u2212f)\\times\\mu\u2212S\\times(\\lambda_{R}+\\alpha_{R}+\\mu)+C^{R}\\times(\\gamma_{R}+\\sigma_{R})\\frac{dC^{R}}{dt}=N\\timesf\\times\\mu+S\\times(\\lambda_{R}+\\alpha_{R})\u2212C^{R}\\times(\\gamma_{R}+\\sigma_{R}+\\mu)\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig1-v2.jpg)\n\n**Figure 1.:** For all models, ODEs are integrated numerically using the same parameter values representing a generic nosocomial pathogen PR (see Appendix 1\u2014table 1). (A,B,C) Compartmental model diagrams representing corresponding ODE systems from the main text (A: Equation 1; B: Equation 3; C: Equation 4). (D,E,F) Pathogen colonization prevalence as a function of antibiotic exposure prevalence ($a$), assuming partial antibiotic resistance (rR = 0.8). For (E) PS and PR circulate simultaneously, assuming strain-specific differences in antibiotic resistance (rS = 0, rR = 0.8), natural clearance (\u03b3S = 0.03 day\u22121, \u03b3R = 0.06 day\u22121) and transmission (\u03bbS = \u03b2 \u00d7 CS/N, \u03bbR = \u03b2 \u00d7 CR/N). For (F), epidemiological dynamics are evaluated independently for each interaction and superimposed (\u03b5 = colonization resistance; \u03b7 = resource competition; \u03d5 = ecological release); shaded intervals represent outcomes across the range of values considered for each interaction (see Figure 2); and antibiotics are assumed to induce dysbiosis after 1 day (\u03b8m = 1 day\u22121), from which microbiome stability recovers after 7 days (\u03b4 = 1/7 day\u22121). Dashed vertical arrows denote the levels of antibiotic use that maximize PR prevalence (the sum of colonized compartments CR). (G,H,I) Numerical evaluation of the basic reproduction number (R0) of PR as a function of $a$ and rR. White contour lines indicate R0 = 1, above which a single colonized patient admitted to a na\u00efve hospital population is expected to trigger an outbreak. For I, all three microbiome-pathogen interactions are applied simultaneously using baseline values (\u03b5 = 0.5; \u03b7 = 0.5; \u03d5 = 5).\n\nThis model is adapted from classic colonization models of antibiotic-resistant bacteria\u00a0(Austin et al., 1997), includes no ecological interactions with non-focal bacteria, and reflects a suite of common assumptions relevant to the healthcare setting, including: (i) a symmetric rate of patient admission and discharge \u03bc, holding N constant; (ii) a proportion of patients colonized upon admission f, reflecting pathogen prevalence in the community; (iii) a dynamic rate of colonization acquisition \u03bbR=\u03b2\u00d7CR/N, for host-to-host transmission; (iv) a static rate of acquisition \u03b1R, for endogenous routes of acquisition; (v) a rate of natural clearance \u03b3R; and (vi) a rate of effective antibiotic treatment \u03c3R. Note that all state variables are functions of time t, though this is omitted from ODEs for brevity.\n\nEfficacy of antibiotic treatment is assumed to depend both on the distribution of antibiotics consumed in the hospital and on the intrinsic antibiotic resistance profile of PR. We express this as\n\n$$\n\\sigma_{R}=a\\times(1-r_{R})\\times\\theta_{C}\n$$\n\nwhere $a$ is the hospital population\u2019s antibiotic exposure prevalence (the proportion of patients exposed to antibiotics at any t), \u03b8C is the antibiotic-induced clearance rate (the rate at which effective antibiotics clear pathogen colonization), and rR is the antibiotic resistance level (the proportion of antibiotics that are ineffective against PR). Modeling the latter as a continuous proportion reflects that bacteria are not necessarily fully drug-sensitive (rR = 0) nor -resistant (rR = 1), but can range in their sensitivity to different antibiotics (0 \u2264 rR \u2264 1). The resistance level rR is thus a model input interpreted as an overall measure of the pathogen\u2019s innate degree of resistance to the particular antibiotics to which it is exposed.\n\nFollowing models build upon these assumptions, representing the same pathogen PR, but altering its ecological interactions with other bacteria from one model to the next. Models were evaluated over the same generic parameter space, to isolate impacts of model structure on epidemiological outcomes in the context of antibiotic use (see parameters in Appendix 1\u2014table 1).\n\n#### Antibiotic selection for resistance: the role of strain competition\n\nAntibiotic consumption selects for the epidemiological spread of antibiotic-resistant bacteria\u00a0(Chatterjee et al., 2018). To explain this mechanistically, a classic modeling assumption is that selection results from intraspecific competition between two or more drug-sensitive strains PS and drug-resistant strains PR\u00a0(Spicknall et al., 2013). The reasoning goes: strains of the same species occupy the same ecological niche, so colonization with one strain inhibits colonization with another. In turn, antibiotics that preferentially clear PS render the within-host niche available to potential colonization with co-circulating PR, indirectly favouring PR spread through the host population. A simple two-strain \u2018exclusive colonization\u2019 model (Figure 1B) can be written as:\n\n$$\n\\frac{dS}{dt}=\u2212S\\times(\\lambda_{S}+\\lambda_{R}+\\alpha_{S}+\\alpha_{R})+C^{S}\\times(\\gamma_{S}+\\sigma_{S})+C^{R}\\times(\\gamma_{R}+\\sigma_{R})+\u0394_{S}\\frac{dC^{S}}{dt}=S\\times(\\lambda_{S}+\\alpha_{S})\u2212C^{S}\\times(\\gamma_{S}+\\sigma_{S})+\u0394_{C^{S}}\\frac{dC^{R}}{dt}=S\\times(\\lambda_{R}+\\alpha_{R})\u2212C^{R}\\times(\\gamma_{R}+\\sigma_{R})+\u0394_{C^{R}}\n$$\n\nwhere patients can be colonized (CS, CR) by either strain (PS, PR). Subscripts S and R denote strain-specific rates, accounting for ecological differences between strains (e.g. antibiotic resistance levels, fitness costs of resistance; see Appendix Equations 3\u20137). Strains are labeled as sensitive or resistant, but here this is interpreted as relative (rS < rR). For simplicity, patient demography (admission and discharge) is given as \u0394j for each compartment j.\n\nUnlike the single-strain Susceptible-Colonized model (Figure 1D and G), the strain competition model can explain how antibiotic consumption selects for the spread of resistance (Figures 1E,H). When PR is resistant to all antibiotics (rR = 1), its prevalence increases monotonically with increasing antibiotic exposure (Appendix 1\u2014figure 1). When resistance is partial \u2013 when PR is still cleared by antibiotics, but at a lower rate than PS (rS < rR < 1) \u2013 selection for resistance can peak at intermediate antibiotic exposure, owing to a trade-off in how antibiotics both clear and facilitate PR. As such, R0 for PR tends to increase with antibiotic use when PR is highly resistant to antibiotics (high rR), but decrease when still largely sensitive (low rR).\n\nMost contemporary antibiotic resistance models are variants of this typology\u00a0(Blanquart, 2019; Spicknall et al., 2013), but intraspecific strain competition is not the only mechanism by which antibiotic consumption can drive ARB spread\u00a0(Lipsitch and Samore, 2002), and may have limited relevance for certain species, settings, timescales and epidemiological indicators.\n\n#### Antibiotic selection for resistance: the role of microbiome competition\n\nAntibiotic-induced microbiome dysbiosis is an alternative mechanism by which antibiotics may select for the spread of resistance. We propose a model in which (i) bacterial pathogens and commensal microbiota compete ecologically within the host, and (ii) antibiotic-induced dysbiosis disrupts these interactions, predisposing hosts to pathogen colonization. We consider three competitive within-host microbiome-pathogen interactions and conceptualize how they affect pathogen epidemiology (Figure 2;\u00a0Buffie et al., 2015; Hooper et al., 2003; Kamada et al., 2013a). First, a stable microbiome can act as a barrier preventing introduced pathogens from establishing colonies. We modeled this colonization resistance (\u03b5) as a reduced rate of pathogen transmission (\u03b2) to hosts with stable microbiota, \u03b2\u03b5 = (1 \u2013 \u03b5) \u00d7 \u03b2. Second, co-colonizing bacteria can compete for space, nutrients and other limited resources within the host. In this case, antibiotics that reduce the density of potential competitors may favour pathogen persistence. We modeled this resource competition (\u03b7) as a reduced rate of pathogen clearance (\u03b3) among hosts undergoing dysbiosis, \u03b3\u03b7 = (1 \u2013 \u03b7) \u00d7 \u03b3. Lastly, microbiome dysbiosis can favor the emergence or outgrowth of subdominant pathogen colonies, and this ecological release (\u03d5) was modeled as an increased rate of endogenous pathogen acquisition (\u03b1) upon dysbiosis, \u03b1\u03d5 = \u03d5 \u00d7 \u03b1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig2-v2.jpg)\n\n**Figure 2.:** To illustrate the latter: sub-dominant, non-transmissible PR colonies inhibited by microbiota are represented by small cartoon pathogens, which can grow into dominant, transmissible colonies (large cartoon pathogens) via endogenous acquisition. Microbiome-pathogen interactions are assumed to differ between hosts with a stable microbiome at population dynamic equilibrium (left) and hosts experiencing antibiotic-induced microbiome dysbiosis (right). Interaction coefficients can be interpreted as terms explaining variation in host susceptibility to pathogen colonization, as depending on their recent history of antibiotic exposure. For interaction coefficient parameter values, broad intervals are assumed for the baseline analysis.\n\nWe integrate the microbiome, these three interactions, and antibiotic-induced microbiome dysbiosis into Equation 1. The resulting \u2018microbiome competition model\u2019 (Figure 1C) is given by\n\n$$\n\\frac{dS_{e}}{dt}=\u2212S_{e}\\times(\\lambda_{R,\\epsilon}+\\alpha_{R}+\\sigma_{m})+S_{d}\\times\\delta+C_{e}^{R}\\times(\\gamma_{R}+\\sigma_{R})+\u0394_{S_{e}}\\frac{dS_{d}}{dt}=S_{e}\\times\\sigma_{m}\u2212S_{d}\\times(\\lambda_{R}+\\alpha_{R,\u03d5}+\\delta)+C_{d}^{R}\\times(\\gamma_{R,\u03b7}+\\sigma_{R})+\u0394_{S_{d}}\\frac{dC_{e}^{R}}{dt}=S_{e}\\times(\\lambda_{R,\\epsilon}+\\alpha_{R})\u2212C_{e}^{R}\\times(\\gamma_{R}+\\sigma_{m}+\\sigma_{R})+C_{d}^{R}\\times\\delta+\u0394_{C_{e}^{R}}\\frac{dC_{d}^{R}}{dt}=S_{d}\\times(\\lambda_{R}+\\alpha_{R,\u03d5})+C_{e}^{R}\\times\\sigma_{m}\u2212C_{d}^{R}\\times(\\gamma_{R,\u03b7}+\\delta+\\sigma_{R})+\u0394_{C_{d}^{R}}\n$$\n\ndescribing colonization (CR) with a single pathogen strain (PR) across two host types: patients with a microbiome at dynamic equilibrium (subscript e) and those undergoing dysbiosis (subscript d). Antibiotics induce dysbiosis at a rate \u03c3m given by\n\n$$\n\\sigma_{m}=a\\times\\theta_{m}\n$$\n\nsuch that microbiome dysbiosis depends on both antibiotic exposure prevalence ($a$) and the rate at which antibiotic exposure causes dysbiosis (\u03b8m). Accordingly, the same level of antibiotic exposure ($a$) can have asymmetric effects on microbiome stability (via \u03b8m) and PR colonization (via (1 \u2013 rR) \u00d7 \u03b8c, as in Equation 2). Dysbiosis can result in long-term changes to microbiome composition, but ecological function and population dynamic stability tend to recover in the days or weeks following antibiotic therapy\u00a0(Lozupone et al., 2012), represented here by microbiome recovery rate \u03b4.\n\nIncluded microbiome-pathogen interactions predict in different ways how antibiotic consumption selects for the epidemiological spread of antibiotic-resistant bacterial pathogens (Figure 1F). Like strain competition, microbiome competition underlies a trade-off in antibiotic selection: PR prevalence and R0 increase monotonically with antibiotic exposure when PR is completely antibiotic-resistant (rR = 1) (Appendix 1\u2014figure 1), but can peak at intermediate antibiotic exposure when resistance is partial (0 < rR < 1) because antibiotics simultaneously clear pathogen colonization and induce greater host susceptibility through dysbiosis (Figure 1I). This trade-off is more pronounced when multiple interactions are combined: when microbiota simultaneously limit multiple colonization processes (transmission, emergence, persistence), patients with stable microbiota are more protected from PR colonization, but antibiotic use is predicted to have greater epidemiological costs, selecting more strongly for PR spread (Appendix 1\u2014figure 2).\n\n#### Antibiotic selection for resistance: combining strain and microbiome competition\n\nStrain competition and microbiome competition are not mutually exclusive: when combined in a two-strain \u2018microbiome-strain competition\u2019 model, different strains of the same pathogen species compete for hosts whose microbiota and history of antibiotic consumption influence susceptibility to colonization. We assume that microbiome-pathogen interactions are species- and not strain-specific, that\u00a0is that \u03b5, \u03b7 and \u03d5 apply equally to PS and PR. This is given by:\n\n$$\n\\frac{dS_{e}}{dt}=\u2212S_{e}\\times(\\lambda_{S,\\epsilon}+\\lambda_{R,\\epsilon}+\\alpha_{S}+\\alpha_{R}+\\sigma_{m})+S_{d}\\times\\delta+C_{e}^{S}\\times(\\gamma_{S}+\\sigma_{S})+C_{e}^{R}\\times(\\gamma_{R}+\\sigma_{R})+\u0394_{S_{e}}\\frac{dS_{d}}{dt}=\u2212S_{d}\\times(\\lambda_{S}+\\lambda_{R}+\\alpha_{S,\u03d5}+\\alpha_{R,\u03d5}+\\delta)+S_{e}\\times\\sigma_{m}+C_{d}^{S}\\times(\\gamma_{S,\u03b7}+\\sigma_{S})+C_{d}^{R}\\times(\\gamma_{R,\u03b7}+\\sigma_{R})+\u0394_{S_{d}}\\frac{dC_{e}^{S}}{dt}=S_{e}\\times(\\lambda_{S,\\epsilon}+\\alpha_{S})+C_{d}^{S}\\times\\delta\u2212C_{e}^{S}\\times(\\gamma_{S}+\\sigma_{S}+\\sigma_{m})+\u0394_{C_{e}^{S}}\\frac{dC_{d}^{S}}{dt}=S_{d}\\times(\\lambda_{S}+\\alpha_{S,\u03d5})+C_{e}^{S}\\times\\sigma_{m}\u2212C_{d}^{S}\\times(\\delta+\\gamma_{S,\u03b7}+\\sigma_{S})+\u0394_{C_{d}^{S}}\\frac{dC_{e}^{R}}{dt}=S_{e}\\times(\\lambda_{R,\\epsilon}+\\alpha_{R})+C_{d}^{R}\\times\\delta\u2212C_{e}^{R}\\times(\\gamma_{R}+\\sigma_{R}+\\sigma_{m})+\u0394_{C_{e}^{R}}\\frac{dC_{d}^{R}}{dt}=S_{d}\\times(\\lambda_{R}+\\alpha_{R,\u03d5})+C_{e}^{R}\\times\\sigma_{m}\u2212C_{d}^{R}\\times(\\delta+\\gamma_{R,\u03b7}+\\sigma_{R})+\u0394_{C_{d}^{R}}\n$$\n\nIntroducing a drug-sensitive strain PS to the microbiome model dampens R0 of the focal strain PR, because fewer patients are susceptible to colonization when the competing strain co-circulates in the population (Appendix 1\u2014figure 3). However, antibiotic use makes way for PR not only through preferential clearance of PS, but remaining PR also benefit from increased host susceptibility to colonization when antibiotics cause dysbiosis. Accordingly, antibiotics that both disrupt host microbiota and clear drug-sensitive pathogen strains tend to select more strongly for the spread of resistant strains than antibiotics that only target one or the other (Figure 3). Overall, antibiotics with stronger impacts on pathogen clearance (higher \u03b8C) lead to increased resistance rates, while consequences for PR colonization prevalence are modest and depend on potential interactions with the microbiome. Conversely, antibiotics with stronger impacts on microbiome stability (higher \u03b8m) lead to higher prevalence, with only modest effects on resistance rates. Further, impacts of antibiotic treatment on resistance rates are greater when PR resists a greater share of antibiotics (higher rR), while impacts on prevalence are greater when microbiome-pathogen interactions are stronger (higher \u03b5, \u03b7, \u03d5) (Appendix 1\u2014figure 4). Different microbiome-pathogen interactions also underlie distinct dynamic responses to theoretical public health interventions. For the same generic pathogen PR, antibiotic stewardship interventions generally, but do not always prevent colonization, with predictions depending on the ecological interactions in effect (e.g. strain competition, microbiome competition), the impact of the intervention (e.g. reduced microbiome disruption, reduced overall prescribing), and the epidemiological outcome considered (e.g. colonization prevalence, resistance rate) (Appendix 1\u2014figure 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig3-v2.jpg)\n\n**Figure 3.:** In a mixed microbiome-strain competition model (Equation 6), colonization prevalence of PR (CR; circle size) and the pathogen\u2019s resistance rate (CR/(CS + CR); color) depend on the relative rates at which antibiotics disrupt microbiota (\u03b8m) and clear pathogen colonization (\u03b8c). Antibiotics with a stronger effect on pathogen clearance (higher \u03b8c) increase the resistance rate, while antibiotics with a stronger effect on microbiota (higher \u03b8m) increase prevalence.\n\n#### Antibiotic selection for resistance: introducing interspecific horizontal gene transfer\n\nHorizontal transfer of resistance-encoding genes may also contribute to hospital resistance dynamics\u00a0(Evans et al., 2020; Lerminiaux and Cameron, 2019). We extend our model to include interspecific HGT, conceptualized as two-way within-host transfer of a focal resistance gene, either from a resistant pathogen strain PR to co-colonizing microbiota, or from resistance-bearing microbiota to a co-colonizing drug-sensitive pathogen strain PS. (See final model and assumptions, Appendix Equations A1\u2013A11). Overall, an increasing rate of within-host HGT (\u03c7) is found to drive increasing PR prevalence (CR), regardless of other microbiome-pathogen interactions (Figure 4). Under our modeling assumptions, HGT-driven gains in CR result from symmetric declines in CS, such that HGT\u2019s potential impact depends on the presence of both sufficient resistance donors and sufficient recipients. This results in non-linear feedbacks between HGT and other processes that drive strain prevalence (Appendix 1\u2014figure 7). For instance, impacts of HGT on CR are greatest at intermediate antibiotic exposure ($a$). This is linked to another antibiotic selection trade-off: higher $a$ affords a selective advantage to PR relative to PS, increasing the potential impact of HGT on CR; but higher $a$ also reduces the pool of recipient CS, ultimately limiting HGT\u2019s ability to drive CR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig4-v2.jpg)\n\n**Figure 4.:** Allowing a resistance gene to transfer horizontally increases prevalence (top row) of the strain PR that bears the gene, as well as its resistance rate (bottom row). The relative impact of HGT depends on the gene\u2019s rate of transfer (\u03c7, line type), antibiotic exposure prevalence ($a$, x-axis), competitive interactions between pathogen strains and host microbiota (colors), the level of resistance conferred by the gene (rR, columns), and any other parameters that drive the dynamics of donor and recipient strains. We assume that \u03c7d/\u03c7e = 10, such that the low HGT rate corresponds to {\u03c7e=0.01 day\u22121, \u03c7d=0.1 day\u22121} and the high rate to {\u03c7e=0.1 day\u22121, \u03c7d=1 day\u22121}. Impacts of HGT on colonization incidence are shown in Appendix 1\u2014figure 6. Alternative HGT assumptions are explored in Appendix 1\u2014figure 7A.\n\n### Part 2: Model application to high-risk nosocomial pathogens\n\nWe applied this modeling framework to simulate colonization dynamics of four nosocomial pathogens in the hospital setting: C. difficile, methicillin-resistant S. aureus (MRSA), extended-spectrum beta-lactamase-producing E. coli (ESBL-EC), and carbapenemase-producing K. pneumoniae (CP-KP). Data from the literature were used to parameterize the model to each pathogen (Appendix 1\u2014figure 5, Appendix 1\u2014table 2\u20136). Literature estimates for microbiome-pathogen interaction coefficients are scarce, and the species-specific relevance of different within-host interactions (intraspecific strain competition, microbiome competition, HGT) in the hospital environment are not well-defined. To characterize ecological interactions for each species and inform model structure, we conducted interviews with a panel of subject-matter experts in medical microbiology and antibiotic resistance epidemiology (details in Materials\u00a0and\u00a0methods). Based on their beliefs, all pathogens were assumed to compete with microbiota; MRSA, ESBL-EC and CP-KP were further assumed to compete intra-specifically with non-focal strains, for simplicity characterized as methicillin-sensitive S. aureus (MSSA), E. coli (EC), and K. pneumoniae (KP); and both ESBL resistance and carbapenem resistance were assumed to be borne by plasmids capable of horizontal transfer between patient microbiota and, respectively, EC and KP (Figure 5A). To quantify species-specific strengths of microbiome-pathogen interactions, within-host ecological parameters were translated into clinical parameters (Appendix 1\u2014table 7), and experts were asked to quantify these using standardized expert elicitation methodology (Figure 5B, Appendix 1\u2014figures 8\u201310).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig5-v2.jpg)\n\n**Figure 5.:** (A) Model structure: the within-host ecological interactions assumed for each pathogen, based on expert elicitation. (B) Simulation inputs: 95% distributions for selected model parameters drawn stochastically over 10,000 runs (all parameter distributions in Appendix 1\u2014table 2\u20136). (C) The distribution of antibiotic classes consumed in French hospitals in 2016\u00a0(Agence nationale de s\u00e9curit\u00e9 du m\u00e9dicament et des produits de sant\u00e9, 2017), shaded by their assumed impact on intestinal microbiome dysbiosis. Inset: the cumulative impact of each antibiotic class (given as ATC codes, see Appendix 1\u2014table 8 for corresponding names) on dysbiosis (aj \u00d7 e-k, see Equation 7); circle size represents each class\u2019s contribution to exposure prevalence (aj). (D) Antibiograms for each pathogen strain and antibiotic class, adapted from the Therapeutics Education Collaboration\u00a0(McCormack and Lalji, 2015).\n\nColonization dynamics for each ARB were modeled against a common backdrop of antibiotic consumption. This was parameterized at the level of antibiotic class, using national data from French hospitals in 2016 (Appendix 1\u2014table 8;\u00a0Agence nationale de s\u00e9curit\u00e9 du m\u00e9dicament et des produits de sant\u00e9, 2017). Using data from the literature, antibiotic classes were assumed to vary in their impact on microbiome dysbiosis (very low, low, medium, or high rate of inducing dysbiosis) and on each pathogen strain (classified as sensitive, intermediate, or resistant) (Figure 5C and D;\u00a0Baggs et al., 2018; Brown et al., 2013; McCormack and Lalji, 2015). For each of 10,000 Monte Carlo simulations, in which parameter values were sampled randomly from their respective probability distributions, epidemiological outcomes were evaluated at population dynamic equilibrium. For all outcomes, we compare results from simulations that include microbiome-pathogen interactions and dysbiosis (\u2018microbiome simulations\u2019) and those that exclude them (\u2018single-species simulations\u2019). Multivariate sensitivity analyses were also conducted, using partial rank correlation coefficients (PRCCs) to evaluate impacts of parameter uncertainty on model outcomes (details in Methods).\n\n#### Species-specific hospital colonization dynamics\n\nAcross simulations, C. difficile was the most prevalent pathogen (Figure 6A), MRSA had the highest resistance rate (Figure 6B), and ESBL-EC had the highest rate of incidence within the hospital (Figure 6C). CP-KP had the lowest prevalence, resistance rate and incidence, but was the pathogen most favoured by the hospital environment, its prevalence increasing by approximately 5.4-fold (95% uncertainty interval: 2.1\u201310.9) among hospital patients relative to baseline prevalence in the community (Appendix 1\u2014figure 12A). For pathogens subject to intraspecific strain competition, resistance rates in the hospital also tended to exceed rates in the community (Appendix 1\u2014figure 12B). Patient-to-patient transmission was the primary route of MRSA acquisition, while endogenous acquisition was the primary route for the enteric pathogens C. difficile, ESBL-EC and CP-KP (Appendix 1\u2014figure 13). HGT played a potentially important but highly uncertain role for ESBL-EC and CP-KP, accounting for 8.7% (<0.01\u201349.7%) and 2.1% (<0.01\u201322.8%) of acquisition events, respectively. In multivariate sensitivity analysis, community prevalence (fC for C. difficile, fR for others) and rates of endogenous acquisition (\u03b1R) had overall the strongest positive impacts (highest PRCCs) on hospital colonization prevalence across ARB, while rates of hospital admission/discharge (\u03bc) and microbiome recovery (\u03b4) had the strongest negative impacts (lowest PRCCs; Appendix 1\u2014figure 14A). For resistance rates, parameters with the strongest positive impacts (highest PRCCs) were community prevalence (fR), the rate of endogenous acquisition (\u03b1R) and the rate of antibiotic-induced pathogen clearance\u00a0(\u03b8C). Parameters with the strongest negative impacts (lowest PRCCs) were rates of hospital admission/discharge (\u03bc) and endogenous acquisition of competing drug-sensitive strains (\u03b1S) (Appendix 1\u2014figure 14B). Across ARB, prevalence estimates, but not resistance rates, were generally sensitive to microbiome parameters.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig6-v2.jpg)\n\n**Figure 6.:** (A) Colonization prevalence, the percentage of patients colonized with the focal strain. Dashed lines (model inputs) represent assumed community prevalence, that\u00a0is the proportion of patients already colonized upon hospital admission (see Appendix 1\u2014table 3\u20136). Solid lines represent simulated prevalence within the hospital, as resulting from both importation from the community and within-hospital epidemiology. (B) Resistance rates, the proportion of S. aureus carriers bearing methicillin-resistant strains, E. coli carriers bearing ESBL-producing strains, and K. pneumoniae carriers bearing carbapenemase-producing strains. As in panel A, dashed lines (model inputs) represent assumed community resistance rates, and solid lines represent simulated resistance rates within the hospital. (C) Pathogen incidence (daily rate of within-hospital colonization acquisition), stratified by route of acquisition. Points (in panels A and B) and bar height (panel C) represent medians, and error bars represent 95% uncertainty intervals across 10,000 Monte Carlo simulations. For comparison, the same information for single-species simulations excluding the microbiome is presented in Appendix 1\u2014figure 11.\n\n#### Microbiome ecology underlies epidemiological responses to public health interventions\n\nWe simulated three types of public health intervention, each across three levels of intervention compliance: (i) contact precautions, which reduced transmission rates of all strains by 20%, 35%, or 50%; (ii) antibiotic stewardship interventions, which reduced or modified hospital antibiotic consumption patterns by 20%, 35%, or 50%; and (iii) a theoretical \u2018microbiome recovery therapy\u2019 intervention that facilitates recovery from dysbiosis. We assumed a mean 2 day delay to microbiome recovery, and compliance levels corresponding to use among 10%, 30%, or 50% of antibiotic-exposed patients (see Materials\u00a0and\u00a0methods). Intervention efficacy was evaluated using: reduction in colonization incidence, 1 \u2013 IRR (where IRR is the incidence rate ratio of post-intervention to pre-intervention incidence); and reduction in the resistance rate, 1 \u2013 RRR (where RRR is the resistance rate ratio, the ratio of the post-intervention to pre-intervention resistance rate).\n\nEfficacies of simulated interventions varied considerably by pathogen and type of intervention (Figure 7). Contact precautions were highly effective for reducing MRSA incidence, of intermediate efficacy for C. difficile, and minimally effective for ESBL-EC and CP-KP. Contact precautions had comparatively little impact on resistance rates, with a median 2\u20134% reduction across simulations and compliance levels for MRSA, 0\u20132% for CP-KP and negligible impact for ESBL-EC (Appendix 1\u2014figure 15). These interventions were overall less effective in microbiome simulations, which tended to limit the role of between-host transmission (via colonization resistance) and favor the role of endogenous acquisition (via ecological release) in the hospital environment when compared to single-species simulations (Appendix 1\u2014figure 13).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68764/elife-68764-fig7-v2.jpg)\n\n**Figure 7.:** Top panels show results from simulations using classical \u2018single-species models\u2019 that only account for the focal pathogen species (including intraspecific strain competition for MRSA, ESBL-EC and CP-KP); bottom panels show simulation results when models also include microbiome-pathogen interactions and antibiotic-induced microbiome dysbiosis. For each intervention, three levels of intervention compliance (shading) are simulated. For antibiotic stewardship, simulation results are pooled across three different types of stewardship (see Appendix 1\u2014figure 17). Points correspond to medians, and bars to 95% uncertainty intervals across 10,000 Monte Carlo simulations.\n\nAntibiotic stewardship interventions led to substantial reductions in nosocomial incidence for all pathogens, but only when the microbiome was taken into account (Figure 7). Unlike contact precautions, which only reduced incidence via transmission, stewardship reduced incidence through all acquisition routes, including HGT (Appendix 1\u2014figure 16). Overall efficacy estimates and species-specific responses were similar across three types of stewardship considered (Appendix 1\u2014figure 17). Pooling these together under intermediate compliance, colonization incidence was reduced by a median 20% for CP-KP, 18% for C. difficile, 15% for ESBL-EC, and 10% for MRSA. Single-species simulations excluding microbiome competition predicted negligible efficacy of all stewardship interventions for reducing incidence, and non-efficacy for C. difficile. Stewardship interventions also had a substantial impact on resistance rates, with overall greater reductions for CP-KP than MRSA and ESBL-EC, and similar outcomes across microbiome and single-species simulations (Appendix 1\u2014figure 15).\n\nLastly, microbiome recovery therapy was potentially highly effective for limiting pathogen incidence, but efficacy varied greatly across different levels of intervention compliance (Figure 7). This intervention was most effective against C. difficile, of similar efficacy against ESBL-EC and CP-KP, and comparatively least effective against MRSA. Across pathogens, microbiome recovery therapy reduced incidence through all acquisition routes,(Appendix 1\u2014figure 16) but had no clear impact on resistance rates (Appendix 1\u2014figure 15).\n\n## Discussion\n\nAntibiotics are essential medicines for the treatment and prevention of bacterial infections, but their use selects for the spread of pathogenic antibiotic-resistant bacteria (ARB), and can inadvertently disrupt the host microbiome and its associated immune function\u00a0(Buffie and Pamer, 2013; Chatterjee et al., 2018; Kim et al., 2017). Within-host ecological interactions between co-colonizing bacteria can have important consequences for their colonization dynamics, which likely extend to influence the epidemiology of human pathogens in clinical settings. Yet microbiome ecology remains largely absent from the epidemiological modeling of antibiotic resistance (Assab et al., 2017; Birkeg\u00e5rd et al., 2018; Blanquart, 2019; Niewiadomska et al., 2019), suggesting a need to better understand within-host competition between ARB and the host microbiome, its potential epidemiological consequences, and more broadly how antibiotics exert selection pressure on resistant bacteria\u00a0(Knight et al., 2019). We present a modeling framework that includes within-host ecological costs of antibiotic use in the form of microbiome dysbiosis, incorporating a leading hypothesis for antibiotic selection into classical models of resistance epidemiology\u00a0(Austin et al., 1997; Lipsitch and Samore, 2002). We formalize three examples of microbiome-pathogen competition potentially affected by dysbiosis, and show how they, either separately or in combination with other forces of selection, help explain how antibiotic use drives the spread of ARB in healthcare settings. We use probabilistic simulations to apply this framework across a panel of characteristic nosocomial pathogens and compare results to a traditional strain-based framework, demonstrating utility of a microbiome-oriented approach for modeling antibiotic resistance epidemiology and associated interventions.\n\nMRSA, C. difficile and ESBL-producing Enterobacteriaceae are leading causes of antibiotic-resistant and healthcare-associated infection, while carbapenemase-producing Enterobacteriaceae represent emerging threats of particular concern due to limited therapeutic options for effective treatment of invasive infection\u00a0(Cassini et al., 2019; Jernigan et al., 2020; Miller et al., 2011; Rodr\u00edguez-Ba\u00f1o et al., 2018). Antibiotic stewardship is a core component of public health efforts to limit the emergence and spread of these ARB in clinical settings\u00a0(Baur et al., 2017), and an important focus of antibiotic resistance modeling\u00a0(Niewiadomska et al., 2019). Different antibiotics vary in which organisms they intrinsically target, as well as pharmacodynamic factors like route of administration (e.g. oral vs. systemic), clearance mechanism (e.g. biliary vs. renal excretion) and site of absorption (e.g. small vs. large intestine). These differences affect the degree to which bacteria in different host niches are exposed to and cleared by different antibiotics, and are increasingly well described\u00a0(Bhalodi et al., 2019; Kim et al., 2017; Zhang et al., 2015). Our findings suggest that asymmetric impacts of different antibiotics on competing commensal and pathogenic bacteria can drive antibiotic-driven selection for these high-risk ARB, with important consequences for resistance dynamics and stewardship efficacy.\n\nFindings also suggest promise for interventions that effectively restore microbiome stability and associated colonization resistance as a means to control ARB spread. Fecal microbiota transplantation is already used to treat recurrent C. difficile infection, and is under investigation for multidrug-resistant Enterobacteriaceae decolonization\u00a0(Davido et al., 2019a; Kassam et al., 2013; Saha et al., 2019). However, its appropriateness for dysbiosis recovery in the absence of other clinical indications is unclear. Transplantation requires rigorous donor screening and close longitudinal follow-up, and cases of donor stool contaminated with toxicogenic and multidrug-resistant bacteria highlight non-negligible risks\u00a0(Gupta et al., 2021; Zellmer et al., 2021). Alternative microbiome protective therapies now exist, like DAV132, a novel activated-charcoal product currently undergoing clinical trials. When co-administered with antibiotics by the oral route, DAV132 has been shown to absorb antibiotic residues in the colon and preserve the richness and composition of intestinal microbiota, while maintaining systemic antibiotic exposure\u00a0(de Gunzburg et al., 2018;\u00a0de Gunzburg et al., 2015; Pinquier et al., 2021). Modeling has been used previously to evaluate impacts of such microbiome-oriented interventions at the within-host level\u00a0(Guittar et al., 2021; Guk et al., 2021), but knock-on impacts on ARB transmission dynamics and epidemiological burden are unknown. Our simulations were limited to a select few ARB, but our framework and findings likely have relevance for other bacteria known to interact with the microbiome, including vancomycin-resistant Enterococci and other multidrug-resistant Enterobacteriaceae\u00a0(Davido et al., 2019b; Stecher et al., 2013). and could be further extended to explore impacts of the microbiome on resistance dynamics and intervention efficacy beyond healthcare settings.\n\nOur simulations predicted colonization dynamics broadly consistent with previous findings from the literature. Input from the community was the main driver of hospital prevalence, and both prevalence and resistance rates tended to increase in the hospital relative to the community, as estimated in previous modeling studies (Knight et al., 2018; MacFadden et al., 2019). Findings reflected an important role for between-host nosocomial transmission for MRSA, as observed clinically\u00a0(Khader et al., 2019; Nadimpalli et al., 2020), and a comparatively important role for endogenous acquisition for enteric ARB, as estimated elsewhere (Bootsma et al., 2007; Gurieva et al., 2018). Our estimates of intervention efficacy were more consistent with previous findings from the literature when microbiome interactions were taken into account. Contact precautions were effective for reducing incidence of MRSA and to a lesser extent C. difficile, but had limited impact against Enterobacteriaceae, consistent with clinical trials and modeling estimates.\u00a0(Khader et al., 2021; Luangasanatip et al., 2015; Maechler et al., 2020). By contrast, simulated antibiotic stewardship interventions were broadly effective for reducing incidence across all included ARB. This is consistent with findings from a meta-analysis of clinical trials evaluating the efficacy of hospital antibiotic stewardship interventions for reducing incidence of ARB colonization and infection\u00a0(Baur et al., 2017), which we updated to exclude studies co-implementing stewardship with alternative interventions (Appendix 1\u2014figure 18). In comparison to our findings, estimates from the meta-analysis were associated with greater uncertainty across more heterogeneous interventions, but predicted the same rank order of efficacy across included ARB, and similar mean efficacy for C. difficile (19% from n=seven studies, vs. 18% under intermediate compliance in our simulations), ESBL-EC (18% from n=four studies, vs. 15%) and MRSA (12% from n=10 studies, vs. 10%), but higher efficacy for CP-KP (54% from n=one study, vs. 20%).\n\nWhen excluding microbiome interactions, simulations predicted negligible efficacy of antibiotic stewardship interventions for controlling ARB incidence. Previous models have predicted efficacy using predominantly strain-based approaches, but often focus on resistance rates as the primary outcome, and in many cases assume that patient-to-patient transmission is the only route of colonization acquisition\u00a0(Niewiadomska et al., 2019). Here, microbiome competition was found to have a large impact on incidence but comparatively little impact on resistance rates \u2013 both for the theoretical pathogen evaluated in Part 1 (Figures 3 and 4) and for the four ARB simulated in Part 2 (Appendix 1\u2014figures 12 and 14) \u2013 underlying why stewardship interventions were of similar efficacy for reducing resistance rates across single-species and microbiome simulations (Appendix 1\u2014figure 15). This reflects the importance of different forces of antibiotic selection for different epidemiological outcomes: while strain-based competition explains relative ecological dynamics of co-circulating strains, microbiome interactions may be better suited to explain how increasing antibiotic use favours ARB incidence, and how antibiotic stewardship and microbiome recovery interventions can help prevent colonization acquisition.\n\nUnder strain competition, pathogen colonization is limited by closely related strains sharing an ecological niche, with the same approximate epidemiological profile and transmission characteristics. Competition against ARB is assumed to depend on the epidemic spread of competing strains, and removal of drug-sensitive strains releases antibiotic selection for resistance. By contrast, microbiome population structure is inherently stable, depending less on the epidemiological transmission of particular taxa, and more on host factors like diet, maternal inheritance, genetics, and antibiotic exposure\u00a0(Brito and Alm, 2016). Despite great inter-individual diversity in microbiome composition, there is functional redundancy from one host to the next, such that colonization resistance and other forms of microbiome competition are shared across healthy hosts colonized with different taxa\u00a0(Bashan et al., 2016; Kim et al., 2017). For these reasons, microbiome stability is modeled as a host trait reflecting the functional ecology of the microbiome in different population dynamic states, as opposed to a more traditional bacterial colonization process governed by rates of acquisition and clearance. This is clearly an oversimplification of real microbiome dynamics and complexity\u00a0(Hooks and O\u2019Malley, 2017), but is a useful approximation for the needs of epidemiological modeling, particularly in the absence of data, and reflects the universality of both human microbiome function and of the ecological impacts that antibiotics have on microbiome stability\u00a0(Bashan et al., 2016).\n\nPrevious studies have modeled antibiotic exposure as a risk factor for ARB colonization, which can be interpreted as indirectly accounting for microbiome dysbiosis. In transmission models of C. difficile, ESBL-EC and Pseudomonas aeruginosa, among others, patients undergoing antibiotic therapy are assumed to be at greater risk of colonization and/or infection\u00a0(Gingras et al., 2016; Hurford et al., 2012; MacFadden et al., 2019). An alternative approach has been to use antibiotic exposure as a coefficient on epidemiological parameters (e.g. transmission, endogenous acquisition), allowing ARB colonization rates to scale with antibiotic use\u00a0(Knight et al., 2018). These strategies reflect widespread recognition that antibiotic use favours ARB acquisition, through erosion of colonization resistance or other supposed mechanisms, and independent of potential competition with other strains. The present work formalizes examples of the microbiome-pathogen interactions that underlie these assumptions, demonstrating their relevance to various epidemiological outcomes, distinguishing them from strain-based selection, and providing a framework for their application.\n\nThis study has a number of limitations. First, hospitals and healthcare settings are heterogeneous environments with non-random contact patterns and relatively small population sizes. Stochastic, individual-based models accounting for these factors reproduce more realistic nosocomial transmission dynamics than deterministic ODE simulations, allowing for local extinction events, super-spreaders, and other inherently random epidemiological phenomena. Nonetheless, our goal was to study how ecological mechanisms impact average epidemiological outcomes in the context of different model assumptions and parameter uncertainty, and in this context, ODE modeling was the more appropriate tool, particularly for widely endemic ARB like C. difficile, MRSA and ESBL-EC. Still, further insights could certainly be gained by accounting for additional complexity and stochastic heterogeneity in future work, from within-host spatial organization\u00a0(Estrela et al., 2015), to patient and staff contact behavior\u00a0(Duval et al., 2019), to inter-institutional or inter-ward meta-population dynamics\u00a0(Shapiro et al., 2020). These distinctions may be particularly important for rare or non-endemic ARB (e.g. CP-KP in some regions). Second, our evaluation of strain competition was limited to exclusive colonization, a widely used approach (an estimated 12% of published strain competition models allow co-colonization or -infection)\u00a0(Niewiadomska et al., 2019). Yet alternative models predict unique impacts on resistance dynamics\u00a0(Spicknall et al., 2013), and explicit consideration of higher\u00a0resolution within-host population dynamics has been shown to better reproduce empirical findings in previous work\u00a0(Davies et al., 2019). Further, our exclusive colonization approach precluded assessment of intraspecific HGT, which may have different impacts on resistance dynamics than interspecific HGT.\n\nThird, Monte Carlo simulations were limited by the availability of species-specific model parameters from the literature, in some instances necessitating use of previous modeling results, approximations, or estimates from small studies in specific locations, making the generalizability of results unclear. For instance, Khader et al. estimated a four-fold difference in MRSA transmission rates between hospitals and nursing homes\u00a0(Khader et al., 2019). Such differences could have a substantial impact on dynamics and estimated intervention efficacy, with higher transmission rates favouring use of contact precautions, and higher rates of endogenous acquisition favouring antibiotic stewardship (in the context of a high ecological release coefficient). Uncertainty in endogenous acquisition rates may be particularly important: in multivariate sensitivity analyses, this parameter emerged as a key driver of both colonization prevalence and resistance rates across ARB (Appendix 1\u2014figure 14). Further, data used to estimate class-specific rates of microbiome dysbiosis are specific to the gut; class-specific data for dysbiosis of the skin, the preferred niche of S. aureus, were not available. This may over-estimate impacts of dysbiosis on MRSA colonization dynamics.\n\nFinally, the nature of microbiome-pathogen interactions and their epidemiological consequences remain poorly understood and largely unquantified. We show in theory why these interactions matter at the population level, but empirical data were unavailable to inform their parameterization. Instead, we translated microbiome-pathogen competition coefficients into clinical parameters, designed a structured expert elicitation protocol, and conducted interviews allowing subject-matter experts to quantify their beliefs. Although these estimates are subject to substantial bias and uncertainty, they facilitated species-specific characterization of the epidemiological impact of microbiome dysbiosis, and represent useful proxy measures in the absence of clinical data. More broadly, our characterizations of microbiome-pathogen interactions are conceptual, and were mapped mechanistically to particular colonization processes (transmission, clearance, endogenous acquisition), but we note that in other contexts terms like colonization resistance, resource competition and ecological release may map to specific biochemical processes that could affect epidemiological parameters in different ways.\n\nDespite data limitations, epidemiological conclusions from Monte Carlo simulations were largely consistent with empirical findings (discussed above), suggesting that final parameter distributions were reasonable approximations. Uncertainty in parameter inputs translated to uncertainty in model outputs, reflecting the knowledge gaps underlying our simulations (Appendix 1\u2014figure 14). This is exemplified by HGT and its highly uncertain role in driving colonization incidence; to date, HGT modeling has largely been limited to within-host dynamics, and impacts on epidemiological dynamics are only just beginning to come to light\u00a0(Evans et al., 2020; Leclerc et al., 2019; Lerminiaux and Cameron, 2019). Increasing availability and synthesis of high-quality within-host microbiological data will help to further characterize epidemiological impacts of microbiome-pathogen interactions. Studies are needed that describe ecological impacts of antibiotic exposure on microbiome population structure across control and treatment groups, with longitudinal follow-up evaluating subsequent nosocomial ARB colonization risk. In the absence of clinical data, insights from experiments and within-host models nonetheless suggest that antibiotic disruption of microbiome-pathogen competition is a key driver of selection for resistance\u00a0(Baumgartner et al., 2020; Estrela and Brown, 2018; O\u2019Brien et al., 2021; Shaw et al., 2019; Stein et al., 2013; Tepekule et al., 2019). The present work highlights the importance of extending these within-host concepts to the population level. Links between within- and between-host dynamics have been widely studied in various contexts, including the theory underlying the evolution of parasite life history and antimicrobial resistance\u00a0(Day et al., 2011; Greischar et al., 2019; zur Wiesch et al., 2011), but remain largely absent from clinical models of antibiotic resistance\u00a0(Blanquart, 2019). A clear extension of the present work is to explicitly account for simultaneous within- and between-host processes using nested models\u00a0(Birkeg\u00e5rd et al., 2018; Niewiadomska et al., 2019). However, such models do not necessarily provide more epidemiological clarity, especially when data are lacking and simple heuristic parameters can capture epidemiological consequences of within-host processes\u00a0(Gog et al., 2015; Mideo et al., 2008).\n\nIn conclusion, we have proposed a mathematical modeling framework for the epidemiology of antibiotic-resistant bacteria that accounts for their potential interactions with the host microbiome. This model simplifies into accessible epidemiological parameters what are in reality highly complex ecological systems, comprising a staggering diversity of microbes and interactions among them. We demonstrate that accounting for at least some of this ecological complexity may help to explain how antibiotics select for the epidemiological spread of resistance, how antibiotic stewardship works to reduce pathogen colonization incidence, and how interventions favouring healthy microbiome function may help to mitigate the epidemiological burden of antibiotic resistance.\n\n## Materials and methods\n\n### Mathematical models of bacterial colonization\n\nWe evaluated ODE systems describing colonization dynamics of bacterial pathogens in the healthcare setting. The final model, comprising pathogen colonization (Equation 1), intraspecific strain competition (Equation 3), microbiome-pathogen competition (Equation 4), and horizontal gene transfer (HGT), is given alongside all assumptions in the supplementary appendix (Appendix Equation A1). ODEs were integrated numerically to calculate steady-state epidemiological outcomes for nosocomial PR colonization: colonization prevalence (the sum of all compartments CR), colonization incidence (the daily rate of CR acquisition), and the resistance rate (CR/(CS + CR)). (See Appendix 1 for technical details, and R and Mathematica files available online at https://github.com/drmsmith/microbiomeR [Smith, 2021; copy archived at swh:1:rev:a3682a24970d79e4f748952ecc49fcdb16adf48f].) For each model, outcomes were evaluated over the same parameter space representing a generic pathogen PR (parameters in Appendix 1\u2014table 1), while varying specific parameters through univariate and bivariate analysis to assess their impacts on dynamic equilibria in the context of different modeling assumptions. We focused on impacts of the patient population\u2019s antibiotic exposure prevalence ($a$), rates of antibiotic-induced pathogen clearance (\u03b8c) and microbiome dysbiosis (\u03b8m), the focal pathogen\u2019s intrinsic antibiotic resistance level (rR), and mediating impacts of microbiome-pathogen competition (\u03b5, \u03b7, \u03d5) and horizontal gene transfer (\u03c7e, \u03c7d).\n\n### Monte Carlo simulations over parameter distributions\n\nWe applied the final model to simulate epidemiological dynamics of four high-risk nosocomial pathogens, varying the within-host ecological interactions in effect for each (Figure 5A). For MRSA, ESBL-EC and CP-KP, the focal pathogen was taken as the \u2018drug-resistant\u2019 strain PR, while the \u2018drug-sensitive\u2019 strain PS was taken to represent all other co-circulating strains of the same species. We simulated colonization dynamics using these model characterizations and accounted for parameter uncertainty using Monte Carlo methods. Specifically, 10,000 unique parameter vectors \u03a9 were created by drawing random values for each parameter from its respective probability distribution (parameters in Appendix 1\u2014table 2\u20136). For each \u03a9, epidemiological outcomes (prevalence, incidence, resistance rate) were calculated as above. Final outcome distributions were reported as the median and 95% uncertainty interval, that\u00a0is the 50th (2.5th\u201397.5th) percentiles across all simulations.\n\n### Parameterizing models for application to specific nosocomial pathogens\n\nModels were parameterized using estimates from the literature, prioritizing clinical studies from the French hospital setting where available. We used expert elicitation to inform model structure and quantify parameter values for microbiome-pathogen interactions. This involved development of a protocol and questionnaire (provided separately), designed using established expert elicitation methodologies for quantitative estimation of unknown parameter values\u00a0(Johnson et al., 2010). To facilitate more reliable parameter interpretation, microbiome-pathogen coefficients were translated into clinical parameters, for\u00a0example relative risks of pathogen colonization among hospital patients undergoing dysbiosis relative to those with stable microbiota (Appendix 1\u2014table 7). Expert estimates were quantified with uncertainty using the MATCH Uncertainty Elicitation Tool\u00a0(Morris et al., 2014), and final parameter distributions were generated by pooling their individual distributions while maintaining estimated species rank order (Appendix 1\u2014figure 8\u201310).\n\n### Characterizing ecological impacts of antibiotic consumption\n\nAntibiotic exposure prevalence was quantified at the level of antibiotic class using nationally representative antibiotic consumption data from French hospitals in 2016\u00a0(Agence nationale de s\u00e9curit\u00e9 du m\u00e9dicament et des produits de sant\u00e9, 2017). A study from American hospitals in 2006\u20132012 was used to further stratify antibiotics with ATC code J01F into J01FA and J01FF, J01X into J01XA and J01XD, and J01DD+DE into J01DD and J01DE\u00a0(Baggs et al., 2016). Final antibiotic consumption data are presented in Appendix 1\u2014table 8. To simulate class-specific rates of microbiome dysbiosis, we used a four-point log-linear scale of intestinal microbiome disruption from Brown et al., 2013. For interpretation, we present classes as inducing dysbiosis at a high, medium, low, or very low rate. This scale was supplemented with data for additional antibiotic classes from Baggs et al., 2018. Applied to our model, the rate that antibiotic treatment induces dysbiosis (\u03c3m) is given by\n\n$$\n\\sigma_{m}=a\\times\\theta_{m}\\times\\sumk=03(a_{k}\\timese^{-k})\n$$\n\nwhere ak is the proportion of antibiotics consumed of each group k, and where the most ecologically disruptive group (k=0) causes dysbiosis a mean 12 hr after antibiotic exposure (\u03b8m = 2 day\u22121), with classes in less disruptive groups (k=1,2,3) causing dysbiosis at successively slower rates (Figure 5C).\n\nTo characterize class-specific effects on pathogen clearance, characteristic antibiograms for all strains were adapted from an online compendium from the Therapeutics Education Collaboration (Figure 5D;\u00a0McCormack and Lalji, 2015). Each strain i was classified as sensitive (ri,j = 0), of intermediate sensitivity (0 < ri,j < 1), or resistant (ri,j = 1) to each antibiotic class j. Overall, the rate that antibiotic treatment clears each strain is given by:\n\n$$\n\\sigma_{i}=a\\times\\theta_{C}\\times\\sumj=118(a_{j}\\timesr_{i,j})\n$$\n\nacross the included classes. Under these assumptions, MRSA was resistant to the greatest proportion of antibiotics consumed in hospital (median rR = 94.5%), followed by C. difficile (94.3%), CP-KP (91.7%) and ESBL-EC (84.8%); competing \u2018drug-sensitive\u2019 strains bore considerably less resistance median rS = 33.0% for MSSA and 23.0% for both E. coli and K. pneumoniae.\n\n### Sensitivity analyses\n\nTwo distinct sensitivity analyses were conducted. First, to evaluate the impact of microbiome competition on model outcomes, a second lot of \u2018single-species simulations\u2019 was run after removing microbiome-pathogen interactions from all \u03a9 (\u03b5 = 0, \u03b7 = 0, \u03d5 = 1, \u03c7 = 0). Second, the impact of parameter uncertainty on model outcomes was evaluated. For each pathogen, model parameter values were re-sampled from their distributions (Appendix 1\u2014table 2\u20136) using Latin Hypercube Sampling over 10,000 iterations, epidemiological outcomes were re-calculated at population dynamic equilibrium, and partial rank correlation coefficients were calculated between each parameter and the pathogen\u2019s (i) colonization prevalence and (ii) resistance rate (using the R package pse)\u00a0(Chalom and Prado, 2013; Marino et al., 2008).\n\n### Public health interventions\n\nThree public health interventions were incorporated into the final model (see Appendix Equations A12\u2013A15). First, contact precautions were assumed to represent physical or behavioral barriers that block opportunities for transmission, reducing transmission rates by the same fraction \u03c4ipc across all pathogens relative to baseline. Second, antibiotic stewardship programmes were assumed to alter antibiotic consumption patterns in the hospital. Two main types were considered: antibiotic reduction, which limits overall antibiotic prescribing by a fraction \u03c4asp, and antibiotic restriction, which adjusts the distribution of antibiotic classes consumed in the hospital by the same fraction. We considered two types of restriction, the first favouring classically narrow-spectrum antibiotics (e.g. macrolides) over broad-spectrum (e.g. quinolones), and the second favouring antibiotics that cause dysbiosis at very low or low rates (k={3,2}) over those causing dysbiosis at medium or high rates (k={1,0}) (see Appendix 1\u2014table 8 for antibiotic classification). Third, microbiome recovery therapy was assumed to trigger recovery at rate 0.5 day\u22121 and was apportioned to the fraction \u03c4pbt of patients. Overall, different values assumed for intervention parameters (\u03c4ipc, \u03c4asp, \u03c4pbt) are interpreted as different levels of compliance to the respective interventions. Intervention efficacy was evaluated using the IRR and RRR (defined in Model and Results). Outcomes were matched across Monte Carlo simulations, such that IRRs and RRRs were calculated for each intervention and compliance level for each \u03a9. The distribution of outcomes is expressed as the median and 95% uncertainty interval.\n",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "1d74bae5-2585-47dd-b668-0113dc75c682",
+      "submission_id": "eafbdb6a-0bca-427b-ba31-e320b62cacfa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gwenan M Knight, London School of Hygiene and Tropical Medicine United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68764.sa1](https://doi.org/10.7554/eLife.68764.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper provides a mathematical modelling framework for a stepwise incorporation of ecological complexity up to the effects of host microbiome on the spread of antibiotic-resistance. This provides a key first step in our understanding of the heterogeneous impact of the host microbiome on the spread of resistance, as demonstrated by the author's application of the model to four key pathogens.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Microbiome-pathogen interactions drive epidemiological dynamics of antibiotic resistance: modelling insights for infection control\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and George Perry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Esther van Kleef (Reviewer #1); Erik S Wright (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers agreed that the approach is thoughtful, and the analysis performed is well complemented by simulations using relevant parameters in healthcare settings in hospitals. The big problem with this area, which is stressed by the authors, is the lack of information to support parameter choice. Despite being stressed, it was often not completely clear how and why parameters were chosen. Further clarity is required to support publication of this work which does offer a rational framework for linking the epidemiology and the microbiome, with an important hypothesis for antibiotic resistance.\n\nEssential revisions:\n\nThe main revisions required are\n\n\u2013 A restructuring of the methods to provide greater clarity of model structures and justification of parameter choices (is there no data? why was this chosen if so?). The driving force behind this should be the reproducibility of the work and the exploration of the results based on the parameter choices.\n\n\u2013 A rewriting of the introduction and discussion to include more context of prior modelling work as well as to provide justification for the focus of the work\n\n\u2013 In line with (1), all reviewers were in agreement that this work needs a clear single model description: a formal description of the model framework in one place. This could be in the supplementary, but it needs to be a well referenced place.\n\n1) In general, the model the authors use is highly parameterized. There is a worry about circular reasoning when modelling. Parameters are derived from observations, then a model is constructed to recapitulate this observation. Then similar observations are used to show the model's validity. How did the authors ensure this type of bias was not incorporated into their modelling? This can become a bigger issue with more highly parameterized models, and that is why simpler models are preferable. Another approach is to use cross-validation, although we are not sure how that would work here.\n\nAbstract\n\n2) The Abstract is vague and somewhat convoluted as written. It did not do the best job of selling the paper and does not convey any specific information.\n\nIntroduction\n\n3) The authors need to tailor this to their specific question: where is the knowledge gap? We recommend that the authors think carefully about the statements they are making and consider revising the Introduction to include a more thorough analysis of prior modelling work, which is largely absent from the Introduction.\n\n4) The study focuses on four particular pathogens, however, no motivation of why they are chosen is provided, nor the relevance of their analysis in a more general overview is discussed. The authors could expand on how their results could be extended to other contexts/species in which the role of microbiome on resistance is also relevant. This could also be included in the discussion.\n\n5) The authors conclude that disruption of the microbiome on an individual level (due to antibiotics) can result in selection for AMR on a population level. In a way, the work is, at least in part, a model-based implementation of the theoretical perspective of Lipsitch and Samore 2002 EID doi: 10.3201/eid0804.010312 (which describes how antibiotic effects on an individual, within-host level, can affect population level transmission dynamics). Could the comparison to Lipsitch and Samore and the novelty of the improved data-driven approach (although still limited) be further discussed?\n\n6) Antibiotic stewardship is treated a single entity, whereas in reality there are countless types of stewardship interventions and a concomitant variety of outcomes. Comparing the model's results directly to an analysis of previous stewardship interventions and attempting to show alignment does not make sense to me. How were these stewardship interventions reflective of the model? Why would we expect agreement or disagreement a priori? The fact that there was agreement with the model was somewhat concerning given the complexity of many stewardship interventions.\n\nMethods\n\n7) In attempting to replicate this study, it became intractably difficult to recreate the ODEs because the equations and variables are interspersed throughout the main text and supplementary appendix. For example, in Figure 1e the authors mention differences in resistance levels (\u03b3) and not transmission rate (\u03bb, related to \u03b2 as in Equation (3)), the value of which could not be found anywhere in the text. Similarly, where is patient demography (\u0394) incorporated into equations 3 or 4? There are certainly answers to these questions, but it would have been helpful to have the model more clearly presented in a central location. Finding the parameters and making sense of them was extremely challenging, if not infeasible. Therefore, we were unable to replicate the results to any extent.\n\n8) It is unclear how the authors arrived at their parameter values throughout the manuscript. For example, colonization resistance (epsilon) as it is formulated is not compelling, and where did the value of this parameter come from? It is listed in Table S5 as being drawn from a Cauchy distribution. Why? Where did these numbers come from? Some of the parameters seem justified by literature, but the rest are perhaps debatable. This might be inevitable with a complex model, but the authors should minimally provide a robustness analysis to each of their less-supported parameter choices. What would be the outcome if the sampled distributions had been wider (e.g., if the true value had been different by an order of magnitude)?\n\n9) The inclusion of the 'r' parameter, allowing for partial resistance in the resistant strain, is interesting (and innovative for modelling frameworks to our knowledge). Nonetheless, it is not clear why the authors use a baseline of r = 0.8 to illustrate the trade-off between antibiotic induced clearance and selection for Cr (Figure 1F), whereas in figure 2, the authors use r=0.4, i.e. higher levels of sensitivity in Cr. I suppose with a lower r, strain coexistence is more likely, and thus higher likelihood of Horizontal Gene Transfer (HGT) (?), but it would be, for consistency and comparison of the different within-host dynamics, more transparent to use the same baseline parameter values, unless the authors can provide a good reason why different values of r are assumed at baseline between Figure 1 and Figure 2B?\n\n10) The model presented in Eq. (1) needs a better introduction. Is this a new model or based on other models previously studied? This is explained later in the text citing references (30) and (31), but we recommend to introduce them earlier. It would be also good to point the reader earlier in the main text to the first sections of the supplement for a better understanding of the model assumptions and parameters employed.\n\n11) Also, should the parameters be more consistently labelled across frameworks? For example, we recommend writing \u03bb(N,C), or something similar, in all the equations to explicitly state it depends on these parameters. The way it is written gives the impression that \u03bb is a constant parameter.\n\n12) The r vs resistance rate (Cr/Cr+Cs) caused some confusion. This as a resistance rate of Cr = 0.8 but an r = 0.4 could actually mean that 0.8*0.4 = 0.08 of pathogens carried are fully resistant against the antibiotic, while this is 0.64 when r=0.8. Can the same baseline values for r be used in Figure 1 and Figure 2 or the differences justified?\n\n13) Furthermore, in figure 1F: this is representing a one strain model. Is the Ce+Cd strain similar to the Cr? Can this be clarified?\n\n14) In line with this. In Figure S3, R0 seems to represent the R0 of Cr. However, for Figure 1H and 1I, how should R0 be interpreted respectively? And for Figure S2? Please clarify how similar Cr (Figure 1H) and the one strain modelled (which could be similar to the Cr strain of Figure 1H) for figure 1I are\n\n15) Figure 2A, the minimum resistance rate is 0.35 (see legend, and this appeared the case when no antibiotic induced clearance nor antibiotic induced microbiome disruption). This seems rather high. In particular as in Figure 2B, minimum levels of less than 0.1 are shown. Could the authors explain where this discrepancy is coming from and to what extend these high baseline resistance rates are representative?\n\n16) For parameterisation of the models for the different pathogens, estimates from literature, notably existing modelling studies are chosen. However, these estimates, at least for C. difficile and MRSA, are coming from models that don't incorporate endogenous acquisition explicitly (for the Enterobacterieacia, model estimates from Gurieva are used, which do use a modelling framework incorporating an exo- and endogenous acquisition). Therefore, the acquisition rates may be overestimated for these gram-positives, in particular for C. diff the endogenous acquisition, which is listed as the main acquisition route (pp 14 line 330).\n\nThis may affect the estimated intervention effectiveness (in particular for antibiotic stewardship (less effective) and contact precautions (more effective)) under assumptions of the microbiome model. Could the authors use more realistic estimates (not sure models with explicit exo- and endogenous acquisition exist for MRSA and C. diff), or at least, reflect on how different values of \u03b1 and \u03b2 affect the model results?\n\n17) It would be helpful to explicitly say how the simulations were performed, i.e., mention that the ODEs where integrated. My first impression was that the authors performed stochastic simulations using the processes illustrated in panels A, B, C from Figure 1. This is probably an issue that only mathematical modellers would have, but could the authors please add this clarification.\n\nDiscussion\n\n18) The model is described by a set of differential equations. This means the model ignores stochasticity of the population size dynamics of each strain. The authors could expand a bit more on the assumptions of the model and why fluctuations are ignored.\n\n19) Also, spatial structure is particularly important when taking into account interactions between microbiome and pathogens, but it is also neglected in the model. It would be useful if the authors could discuss this as well.\n\n20) The results shown often focus on steady-state quantities (such as colonisation prevalence), but the temporal evolution of the model is not discussed. It would be interesting if the authors could investigate the timescale of the different interactions taken into account, and how relevant they may be in the healthcare settings they investigate. Is the temporal evolution of the model any relevant for their conclusions?\n\n21) Can the authors please add examples of the hypothetical microbiome recovery interventions they have in mind? Are the authors thinking of things like faecal transplantation? Please add, also to provide more practical interpretation of the work.\n\nReviewer #1:\n\nThe authors use a theoretical dynamic transmission modelling framework, incorporating both between and within-host dynamics of antimicrobial resistant (AMR) pathogens, to stress the importance of the microbiome in the transmission dynamics of bacterial species. The work considered five different colonisation models, comprising different variations of 'traditional' epidemiological models, which, according to the authors, often do not include within-host microbiome-pathogen interactions, and add such interactions. With regards to the latter, three different within-host microbiome-pathogen interactions, as well as horizontal gene transfer are considered, and their effect on population transmission as well as interventions, evaluated.\n\nThe authors have done an extensive amount of work, and have done a great job in documenting all the model assumptions, data used and methods employed. Also, visualisations and illustrations are nice and informative.\n\nHowever, the main difficulty with incorporating within-host dynamics of AMR pathogens in a human-to-human transmission modelling framework is the lack of data to inform key parameters. The authors stress this limitation is also part of their work. The authors emphasise that they aimed to show in theory the importance of microbiome-pathogen interactions, and have conducted an expert elicitation to partly inform parameters representing these dynamics.\n\nThe authors conclude that disruption of the microbiome on an individual level (due to antibiotics) can result in selection for AMR on a population level. In a way, the work is, at least in part, a model-based implementation of the theoretical perspective of Lipsitch and Samore 2002 EID doi: 10.3201/eid0804.010312 (which similar to here, describes how antibiotic effects on an individual, within-host level, can affect population level transmission dynamics). Therefore, I am somewhere inclined to think, are the main points made by the authors new? As this work here does, similar to this earlier work, not provide a data-driven approach (although tries to some extend). On the other hand, the work does, in contrast to Lipsitch and Samore, provide a framework for how to model these interactions, and illustrate to some extend which parameter values require what data, as well as which dynamics are most likely at play for which pathogens. Moreover, what is new, is that the authors try to illustrate how such interactions may affect the effectiveness of interventions, which is an interesting and, to the best of my knowledge, a novel component. My comments are largely requests for clarification.\n\nReviewer #2:\n\nHere the authors tackle the important challenge of incorporating the microbiome into a traditional susceptible-colonized transmission model. The microbiome acts as a third party in infections, with roles in supplying or suppressing antibiotic resistance. The authors found that microbiome interventions hold the promise of avoiding antibiotic resistance dissemination. This theoretical work encourages continued research into how the microbiome could be used to mitigate antibiotic resistance. However, I am skeptical of the translatability of the model's predictions to real infections. The model is heavily parameterized, without clear reasoning for some parameter choices. The work's greatest contribution, in my opinion, is that it offers a rational framework for how the microbiome could be incorporated into epidemiology, and provides an intriguing hypothesis that the microbiome could play a substantial role in combating antibiotic resistance.\n\nI would like to say the authors clearly did a good job of conceptualizing infections and resistance dissemination. This was a substantial body of work and the manuscript was interesting to read. My biggest concern is that some of the results intuitively reflect parameters of the model, suggesting they might be artifacts of the approach rather than independent results.\n\nReviewer #3:\n\nThis manuscript by Smith et al. proposes a novel mathematical framework that contributes to the understanding of the role of microbiome on the resistance colonisation of bacterial pathogen populations exposed to antibiotics. The model proposed incorporates microbiome competition and takes into account dysbiosis effects on the population dynamics. Extended versions of this model that incorporates strain-microbiome competition and horizontal gene transfer contributions are also presented. The model is simple to understand and takes into account important considerations in healthcare settings usually ignored in the literature. The simulations performed use parameters of four pathogens obtained carefully from a panel of experts. The fact they used these parameters makes the implications of their analysis quite relevant in clinical infections. Different assumptions on the interactions of each of the pathogens are incorporated in the model, and different public health interventions are analysed. The study performed is quite complete and supports the authors objectives. Their work demonstrate how relevant is the accounting for microbiome interactions for the understanding of antibiotics incidence on antibiotic resistance. This is particularly relevant for future work on mathematical modelling of resistance.\n\nEven though the work presented is well supported by the analysis performed, there are certain aspects regarding the model that need to expanded. In particular:\n\n1) The study focuses on four particular pathogens, however, no motivation of why they are chosen is provided, nor the relevance of their analysis in a more general overview is discussed. The authors could expand on how their results could be extended to other contexts/species in which the role of microbiome on resistance is also relevant.\n\n2) The model is described by a set of differential equations. This means the model ignores stochasticity of the population size dynamics of each strain. The authors could expand a bit more on the assumptions of the model and why fluctuations are ignored. Also, spatial structure is particularly important when taking into account interactions between microbiome and pathogens, but it is also neglected in the model. It would be useful if the authors could discuss this as well.\n\n3) The results shown often focus on steady-state quantities (such as colonisation prevalence), but the temporal evolution of the model is not discussed. It would be interesting if the authors could investigate the timescale of the different interactions taken into account, and how relevant they may be in the healthcare settings they investigate. Is the temporal evolution of the model any relevant for their conclusions?\n",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f7db6fd-c55e-4867-9c8e-e6397501d600",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C1",
+      "claim": "Bacterial pathogens are leading causes of global infectious disease burden, with antibiotic-resistant and healthcare-associated infections posing significant risks to patient safety and public health.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria are fundamental drivers of human health and disease. On one hand, bacterial pathogens are leading causes of global infectious disease burden, with antibiotic-resistant and healthcare-associated infections posing significant risks to patient safety and public health (Cassini et al., 2019; Cassini et al., 2016; Friedman et al., 2016; Naylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published literature on infectious disease burden and antibiotic resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "cda292ff-148b-45d8-a009-66bf8fad19e6",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C2",
+      "claim": "The bacterial microbiome provides support to development and homeostasis, facilitates core physiological processes like digestion, and protects against diseases ranging from colitis to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other, the bacterial microbiome \u2013 the trillions of individual bacteria that collectively inhabit the human body \u2013 provides support to development and homeostasis, facilitates core physiological processes like digestion, and protects against diseases ranging from colitis to cancer (B\u00e4ckhed et al., 2005; Kamada et al., 2013b; Lynch and Pedersen, 2016; Round and Mazmanian, 2009; Roy and Trinchieri, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to published research on microbiome functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "93bdbb89-c9a1-4b6d-a796-ff068af21531",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C3",
+      "claim": "The microbiome can protect against colonization with infectious bacterial pathogens through colonization resistance, limiting their capacities to establish colonies, grow, persist, and transmit.",
+      "claim_type": "EXPLICIT",
+      "source": "The microbiome can also protect against colonization with infectious bacterial pathogens, a phenomenon known as colonization resistance, limiting their capacities to establish colonies, grow, persist, and transmit (B\u00e4umler and Sperandio, 2016; Buffie and Pamer, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on colonization resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ef934fdf-55cc-4bbe-a228-3e37fc0ca08f",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C4",
+      "claim": "Growth of Clostridioides difficile within the intestine is inhibited by secondary metabolites of commensal gut bacteria, protecting colonized hosts from disease and limiting propagation of infectious spores.",
+      "claim_type": "EXPLICIT",
+      "source": "This is perhaps best exemplified by the canonical Clostridioides difficile: growth within the intestine is inhibited by secondary metabolites of commensal gut bacteria, protecting colonized hosts from disease and limiting propagation of the infectious spores that drive between-host transmission (Kamada et al., 2013a; Pamer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on C. difficile and microbiome interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "c2e3a9a4-1371-4a69-b4c8-7926f2413205",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C5",
+      "claim": "Antibiotics can unintentionally destabilize healthy microbial communities when prescribed, resulting in dysbiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "When prescribed appropriately, antibiotics target particular bacterial pathogens, but co-colonizing microbiota are also exposed (Tedijanto et al., 2018). This can unintentionally destabilize healthy microbial communities, resulting in dysbiosis, a state of population dynamic disequilibrium (Bhalodi et al., 2019; Coyte et al., 2015; Dethlefsen and Relman, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on antibiotic effects on microbiota.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ef7dbe35-6208-4b34-9937-83221d7c47cb",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C6",
+      "claim": "Microbiome dysbiosis is associated with reduced abundance and diversity of commensal bacteria, impaired host immune responses, and loss of colonization resistance, increasing host susceptibility to ARB colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbiome dysbiosis is associated with reduced abundance and diversity of commensal bacteria, impaired host immune responses, and loss of colonization resistance, altogether increasing host susceptibility to ARB colonization (Kim et al., 2017; Sorbara and Pamer, 2019; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on dysbiosis and ARB susceptibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "66702cfe-6768-44f8-912c-e48d9d71f85d",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C7",
+      "claim": "Antibiotic-induced dysbiosis may result in elevated expression of antibiotic resistance genes, increased rates of horizontal transfer of such genes, and ecological release of subdominant ARB.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic-induced dysbiosis may further result in elevated expression of antibiotic resistance genes, increased rates of horizontal transfer of such genes, and ecological release, whereby subdominant ARB are released from competition via clearance of drug-sensitive bacteria, growing out into dominant colonies (Doan et al., 2019; Letten et al., 2021; Rupp\u00e9 et al., 2019; Stecher et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on dysbiosis effects on resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "e5833e2c-6ee2-4e7e-9bc9-5622a1957b88",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C8",
+      "claim": "Microbiome dysbiosis is increasingly recognized as a key driver of ARB colonization and infection in healthcare settings where antibiotic use is widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "These associations may be particularly relevant for healthcare settings, where antibiotic use is widespread, and where microbiome dysbiosis is increasingly recognized as a key driver of ARB colonization and infection (Baggs et al., 2018; Prescott et al., 2015; Ravi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on healthcare-associated infections and dysbiosis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "e27760b3-ea96-4359-9bdc-04b426dc8138",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C9",
+      "claim": "Most epidemiological models consider just one species of bacteria at a time, under the assumption that antibiotic selection for resistance results from intraspecific competition between co-circulating strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of the host microbiome is a long-standing theory explaining how antibiotics select for the spread of resistance at both the individual and population levels (Lipsitch and Samore, 2002), but most epidemiological models consider just one species of bacteria at a time, under the traditional assumption that antibiotic selection for resistance results from intraspecific competition between co-circulating strains (Blanquart, 2019; Ramsay et al., 2018; Spicknall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published modeling literature and theoretical frameworks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ff089d2b-ed27-4077-b1d8-54fdc0a57bca",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C10",
+      "claim": "The simple strain competition framework has been particularly useful for bacteria like Streptococcus pneumoniae and Staphylococcus aureus, where different strains are believed to be in close ecological competition.",
+      "claim_type": "EXPLICIT",
+      "source": "This simple framework has been particularly useful for bacteria like Streptococcus pneumoniae and Staphylococcus aureus, in which different strains \u2013 sometimes conceptualized as drug-sensitive vs. drug-resistant, or community-associated vs. healthcare-associated \u2013 are believed to be in close ecological competition (Blanquart, 2019; Domenech de Cell\u00e8s et al., 2011; Karda\u015b-S\u0142oma et al., 2011; Pressley et al., 2010; van Kleef et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published modeling studies on specific bacterial species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "9348fb9b-5eb9-4ee7-b8a7-c2ce1bd4f857",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C11",
+      "claim": "Within-host bacterial competition remains a key mechanism of selection for antibiotic resistance dissemination and an active area of research in resistance modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, within-host bacterial competition remains a key mechanism of selection for antibiotic resistance dissemination, and an active area of research at the forefront of resistance modeling (Lipsitch and Samore, 2002; Mulberry et al., 2020; Spicknall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on within-host competition and resistance modeling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "5d3a4fda-ee75-433f-a7a1-0138a89e76c9",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C12",
+      "claim": "The 'mixed-carriage' model by Davies et al. demonstrates how intraspecific competition results in negative frequency-dependent selection for either of two competing strains and provides a mechanistic explanation for widespread strain coexistence at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the 'mixed-carriage' model by Davies et al. demonstrates how intraspecific competition results in negative frequency-dependent selection for either of two competing strains, and provides a satisfying mechanistic explanation for widespread strain coexistence at the population level (Davies et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to a specific published model by Davies et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "2f539589-5fb1-4d16-84d7-0a63d0d2337c",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C13",
+      "claim": "Contemporary work has stopped short of evaluating consequences of between-species competition on resistance epidemiology.",
+      "claim_type": "EXPLICIT",
+      "source": "However, contemporary work has stopped short of evaluating consequences of between-species competition on resistance epidemiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the authors' assessment of the current state of the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ff895920-9239-4a53-b672-06692bbfd1c0",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C14",
+      "claim": "For many ARB, including ESBL-producing Enterobacteriaceae, interactions with the host microbiome may be important mediators of nosocomial colonization dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet for many ARB, including emerging high-priority multidrug-resistant bacteria like extended-spectrum beta-lactamase (ESBL) producing Enterobacteriaceae, interactions with the host microbiome may be important mediators of nosocomial colonization dynamics (Kim et al., 2017; Lerminiaux and Cameron, 2019; Pilmis et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on Enterobacteriaceae and microbiome interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "891ebc93-76fc-432b-a6b8-68fea4d44449",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C15",
+      "claim": "When PR is resistant to all antibiotics (rR = 1), its prevalence increases monotonically with increasing antibiotic exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the single-strain Susceptible-Colonized model (Figure 1D and G), the strain competition model can explain how antibiotic consumption selects for the spread of resistance (Figures 1E,H). When PR is resistant to all antibiotics (rR = 1), its prevalence increases monotonically with increasing antibiotic exposure (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "644ef63d-238d-456e-8d6a-14dc2e5870b7",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C16",
+      "claim": "When resistance is partial (0 < rR < 1), selection for resistance can peak at intermediate antibiotic exposure, owing to a trade-off in how antibiotics both clear and facilitate PR.",
+      "claim_type": "EXPLICIT",
+      "source": "When resistance is partial \u2013 when PR is still cleared by antibiotics, but at a lower rate than PS (rS < rR < 1) \u2013 selection for resistance can peak at intermediate antibiotic exposure, owing to a trade-off in how antibiotics both clear and facilitate PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results and mechanistic reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "fd0bac4f-8053-4d4c-b414-ce8fe41bacc7",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C17",
+      "claim": "R0 for PR tends to increase with antibiotic use when PR is highly resistant to antibiotics (high rR), but decrease when still largely sensitive (low rR).",
+      "claim_type": "EXPLICIT",
+      "source": "As such, R0 for PR tends to increase with antibiotic use when PR is highly resistant to antibiotics (high rR), but decrease when still largely sensitive (low rR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by model results and mechanistic reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "88485239-c69f-4b97-82c1-56848d93ca45",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C18",
+      "claim": "A stable microbiome can act as a barrier preventing introduced pathogens from establishing colonies through colonization resistance (\u03b5).",
+      "claim_type": "EXPLICIT",
+      "source": "First, a stable microbiome can act as a barrier preventing introduced pathogens from establishing colonies. We modeled this colonization resistance (\u03b5) as a reduced rate of pathogen transmission (\u03b2) to hosts with stable microbiota, \u03b2\u03b5 = (1 \u2013 \u03b5) \u00d7 \u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research and formalized in the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "2da17dd0-0363-40af-b437-0c7892f6fc61",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C19",
+      "claim": "Co-colonizing bacteria can compete for space, nutrients and other limited resources within the host through resource competition (\u03b7).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, co-colonizing bacteria can compete for space, nutrients and other limited resources within the host. In this case, antibiotics that reduce the density of potential competitors may favour pathogen persistence. We modeled this resource competition (\u03b7) as a reduced rate of pathogen clearance (\u03b3) among hosts undergoing dysbiosis, \u03b3\u03b7 = (1 \u2013 \u03b7) \u00d7 \u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research and formalized in the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "4d0bf6f2-278a-439a-abc4-d430a40941fb",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C20",
+      "claim": "Microbiome dysbiosis can favor the emergence or outgrowth of subdominant pathogen colonies through ecological release (\u03d5).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, microbiome dysbiosis can favor the emergence or outgrowth of subdominant pathogen colonies, and this ecological release (\u03d5) was modeled as an increased rate of endogenous pathogen acquisition (\u03b1) upon dysbiosis, \u03b1\u03d5 = \u03d5 \u00d7 \u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research and formalized in the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "5a92dcea-51dc-4fb5-9a43-242f93150f15",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C21",
+      "claim": "Microbiome competition underlies a trade-off in antibiotic selection where PR prevalence and R0 increase monotonically with antibiotic exposure when PR is completely antibiotic-resistant (rR = 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Like strain competition, microbiome competition underlies a trade-off in antibiotic selection: PR prevalence and R0 increase monotonically with antibiotic exposure when PR is completely antibiotic-resistant (rR = 1) (Appendix 1\u2014figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "17e53c69-f34e-461f-bfc7-480db25cc801",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C22",
+      "claim": "PR prevalence and R0 can peak at intermediate antibiotic exposure when resistance is partial (0 < rR < 1) because antibiotics simultaneously clear pathogen colonization and induce greater host susceptibility through dysbiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "but can peak at intermediate antibiotic exposure when resistance is partial (0 < rR < 1) because antibiotics simultaneously clear pathogen colonization and induce greater host susceptibility through dysbiosis (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 1I and mechanistic reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "720ed594-59a3-492c-ac22-699baa9ec6a7",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C23",
+      "claim": "When microbiota simultaneously limit multiple colonization processes (transmission, emergence, persistence), patients with stable microbiota are more protected from PR colonization, but antibiotic use has greater epidemiological costs, selecting more strongly for PR spread.",
+      "claim_type": "EXPLICIT",
+      "source": "This trade-off is more pronounced when multiple interactions are combined: when microbiota simultaneously limit multiple colonization processes (transmission, emergence, persistence), patients with stable microbiota are more protected from PR colonization, but antibiotic use is predicted to have greater epidemiological costs, selecting more strongly for PR spread (Appendix 1\u2014figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "5d1977ba-9888-403e-82e5-39dae85cce4d",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C24",
+      "claim": "An increasing rate of within-host HGT (\u03c7) drives increasing PR prevalence (CR), regardless of other microbiome-pathogen interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, an increasing rate of within-host HGT (\u03c7) is found to drive increasing PR prevalence (CR), regardless of other microbiome-pathogen interactions (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by model results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "9cc6566e-128a-4958-81f1-00854a8cc981",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C25",
+      "claim": "Under the modeling assumptions, HGT-driven gains in CR result from symmetric declines in CS, such that HGT's potential impact depends on the presence of both sufficient resistance donors and sufficient recipients.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our modeling assumptions, HGT-driven gains in CR result from symmetric declines in CS, such that HGT's potential impact depends on the presence of both sufficient resistance donors and sufficient recipients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the specific assumptions and structure of the model developed in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "fafef763-e3cf-4f44-98ae-edbdccebac74",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C28",
+      "claim": "Across simulations, C. difficile was the most prevalent pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Across simulations, C. difficile was the most prevalent pathogen (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "adebf2a8-9f7c-4e72-9b9b-c660fc5006ec",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C29",
+      "claim": "MRSA had the highest resistance rate among the simulated pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "MRSA had the highest resistance rate (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "9e259a8a-4c46-478c-979b-89a38b8a591d",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C30",
+      "claim": "ESBL-EC had the highest rate of incidence within the hospital among the simulated pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "and ESBL-EC had the highest rate of incidence within the hospital (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "30717f93-2388-4e09-8a6b-0063023e2fe0",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C31",
+      "claim": "CP-KP had the lowest prevalence, resistance rate and incidence among the simulated pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "CP-KP had the lowest prevalence, resistance rate and incidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "1d9f867c-ad6f-4688-8293-93ee6566f339",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C32",
+      "claim": "CP-KP was the pathogen most favoured by the hospital environment, with its prevalence increasing by approximately 5.4-fold (95% uncertainty interval: 2.1\u201310.9) among hospital patients relative to baseline prevalence in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "but was the pathogen most favoured by the hospital environment, its prevalence increasing by approximately 5.4-fold (95% uncertainty interval: 2.1\u201310.9) among hospital patients relative to baseline prevalence in the community (Appendix 1\u2014figure 12A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "71b9018e-682b-472c-a008-efc1a0f87840",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C33",
+      "claim": "For pathogens subject to intraspecific strain competition, resistance rates in the hospital tended to exceed rates in the community.",
+      "claim_type": "EXPLICIT",
+      "source": "For pathogens subject to intraspecific strain competition, resistance rates in the hospital also tended to exceed rates in the community (Appendix 1\u2014figure 12B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "294f2532-4638-4691-bc16-738e21d6e578",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C34",
+      "claim": "Patient-to-patient transmission was the primary route of MRSA acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Patient-to-patient transmission was the primary route of MRSA acquisition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a39f1ed6-c98e-4559-a25a-815c63416054",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C35",
+      "claim": "Endogenous acquisition was the primary route for the enteric pathogens C. difficile, ESBL-EC and CP-KP.",
+      "claim_type": "EXPLICIT",
+      "source": "while endogenous acquisition was the primary route for the enteric pathogens C. difficile, ESBL-EC and CP-KP (Appendix 1\u2014figure 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "15277580-bab3-4434-b484-d70a8536cffd",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C36",
+      "claim": "HGT accounted for 8.7% (<0.01\u201349.7%) of ESBL-EC acquisition events.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT played a potentially important but highly uncertain role for ESBL-EC and CP-KP, accounting for 8.7% (<0.01\u201349.7%) and 2.1% (<0.01\u201322.8%) of acquisition events, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulation results with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "83910f12-1fd0-4a40-b6d8-00368c5b4d3c",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C37",
+      "claim": "HGT accounted for 2.1% (<0.01\u201322.8%) of CP-KP acquisition events.",
+      "claim_type": "EXPLICIT",
+      "source": "HGT played a potentially important but highly uncertain role for ESBL-EC and CP-KP, accounting for 8.7% (<0.01\u201349.7%) and 2.1% (<0.01\u201322.8%) of acquisition events, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on simulation results with uncertainty intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "551b0352-b2db-4dd6-b100-96c1283e23e2",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C38",
+      "claim": "In multivariate sensitivity analysis, community prevalence and rates of endogenous acquisition had overall the strongest positive impacts on hospital colonization prevalence across ARB.",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate sensitivity analysis, community prevalence (fC for C. difficile, fR for others) and rates of endogenous acquisition (\u03b1R) had overall the strongest positive impacts (highest PRCCs) on hospital colonization prevalence across ARB",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on multivariate sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "6a0c05f8-f28c-4df7-a086-dcaea19a1d84",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C39",
+      "claim": "Rates of hospital admission/discharge (\u03bc) and microbiome recovery (\u03b4) had the strongest negative impacts on hospital colonization prevalence across ARB.",
+      "claim_type": "EXPLICIT",
+      "source": "while rates of hospital admission/discharge (\u03bc) and microbiome recovery (\u03b4) had the strongest negative impacts (lowest PRCCs; Appendix 1\u2014figure 14A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on multivariate sensitivity analysis results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "9a8d5b34-d062-4d29-a632-aba53ed64b1f",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C40",
+      "claim": "For resistance rates, parameters with the strongest positive impacts were community prevalence (fR), the rate of endogenous acquisition (\u03b1R) and the rate of antibiotic-induced pathogen clearance (\u03b8C).",
+      "claim_type": "EXPLICIT",
+      "source": "For resistance rates, parameters with the strongest positive impacts (highest PRCCs) were community prevalence (fR), the rate of endogenous acquisition (\u03b1R) and the rate of antibiotic-induced pathogen clearance (\u03b8C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on multivariate sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "6322ade8-3dd5-40f0-b1e2-9222325edd92",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C41",
+      "claim": "Parameters with the strongest negative impacts on resistance rates were rates of hospital admission/discharge (\u03bc) and endogenous acquisition of competing drug-sensitive strains (\u03b1S).",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters with the strongest negative impacts (lowest PRCCs) were rates of hospital admission/discharge (\u03bc) and endogenous acquisition of competing drug-sensitive strains (\u03b1S) (Appendix 1\u2014figure 14B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on multivariate sensitivity analysis results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "e3113bf6-c828-478b-b43f-84313a060703",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C42",
+      "claim": "Across ARB, prevalence estimates, but not resistance rates, were generally sensitive to microbiome parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Across ARB, prevalence estimates, but not resistance rates, were generally sensitive to microbiome parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sensitivity analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "fe3b807b-0b12-4efb-acd8-8645e7289b75",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C43",
+      "claim": "Contact precautions were highly effective for reducing MRSA incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Contact precautions were highly effective for reducing MRSA incidence",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on intervention simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "55adffed-9f68-4932-ab3c-46c11c70932b",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C44",
+      "claim": "Contact precautions were of intermediate efficacy for C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "of intermediate efficacy for C. difficile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on intervention simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "686d50db-7c75-4078-b3f0-bcdbe13d2120",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C45",
+      "claim": "Contact precautions were minimally effective for ESBL-EC and CP-KP.",
+      "claim_type": "EXPLICIT",
+      "source": "and minimally effective for ESBL-EC and CP-KP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on intervention simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "72e75cff-dda9-4371-9327-a3a090189ea0",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C46",
+      "claim": "Contact precautions had comparatively little impact on resistance rates, with a median 2\u20134% reduction across simulations and compliance levels for MRSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Contact precautions had comparatively little impact on resistance rates, with a median 2\u20134% reduction across simulations and compliance levels for MRSA, 0\u20132% for CP-KP and negligible impact for ESBL-EC (Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "2a0435aa-ad25-4687-8a3a-6c7fbaa58da1",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C47",
+      "claim": "Contact precautions were overall less effective in microbiome simulations compared to single-species simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These interventions were overall less effective in microbiome simulations, which tended to limit the role of between-host transmission (via colonization resistance) and favor the role of endogenous acquisition (via ecological release) in the hospital environment when compared to single-species simulations (Appendix 1\u2014figure 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of simulation results between different model types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a1a591e2-407f-4def-87e9-90c852916748",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C48",
+      "claim": "Antibiotic stewardship interventions led to substantial reductions in nosocomial incidence for all pathogens, but only when the microbiome was taken into account.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic stewardship interventions led to substantial reductions in nosocomial incidence for all pathogens, but only when the microbiome was taken into account (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "c4820831-f5c1-4209-8b6d-60cbbc0ce5a2",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C49",
+      "claim": "Stewardship reduced incidence through all acquisition routes, including HGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike contact precautions, which only reduced incidence via transmission, stewardship reduced incidence through all acquisition routes, including HGT (Appendix 1\u2014figure 16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a3cec5e6-306c-4cda-9def-abda003fe2fa",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C50",
+      "claim": "Pooling stewardship types together under intermediate compliance, colonization incidence was reduced by a median 20% for CP-KP, 18% for C. difficile, 15% for ESBL-EC, and 10% for MRSA.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling these together under intermediate compliance, colonization incidence was reduced by a median 20% for CP-KP, 18% for C. difficile, 15% for ESBL-EC, and 10% for MRSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on intervention simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "cf966fa9-292b-4b6a-ac33-7a35542fcafe",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C51",
+      "claim": "Single-species simulations excluding microbiome competition predicted negligible efficacy of all stewardship interventions for reducing incidence, and non-efficacy for C. difficile.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-species simulations excluding microbiome competition predicted negligible efficacy of all stewardship interventions for reducing incidence, and non-efficacy for C. difficile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of simulation results between different model types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a0750d31-32b8-4d6d-97b1-4cb075e4731f",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C52",
+      "claim": "Stewardship interventions had a substantial impact on resistance rates, with overall greater reductions for CP-KP than MRSA and ESBL-EC.",
+      "claim_type": "EXPLICIT",
+      "source": "Stewardship interventions also had a substantial impact on resistance rates, with overall greater reductions for CP-KP than MRSA and ESBL-EC, and similar outcomes across microbiome and single-species simulations (Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "3b90f380-c652-4a01-9c0e-a641afd82869",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C53",
+      "claim": "Microbiome recovery therapy was potentially highly effective for limiting pathogen incidence, but efficacy varied greatly across different levels of intervention compliance.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, microbiome recovery therapy was potentially highly effective for limiting pathogen incidence, but efficacy varied greatly across different levels of intervention compliance (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "e5ad523a-3cb5-433a-999d-bfd1b1e11525",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C54",
+      "claim": "Microbiome recovery therapy was most effective against C. difficile, of similar efficacy against ESBL-EC and CP-KP, and comparatively least effective against MRSA.",
+      "claim_type": "EXPLICIT",
+      "source": "This intervention was most effective against C. difficile, of similar efficacy against ESBL-EC and CP-KP, and comparatively least effective against MRSA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on intervention simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ad7090b1-f0c3-406f-9fee-1bcff68f6d8d",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C55",
+      "claim": "Microbiome recovery therapy reduced incidence through all acquisition routes but had no clear impact on resistance rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Across pathogens, microbiome recovery therapy reduced incidence through all acquisition routes,(Appendix 1\u2014figure 16) but had no clear impact on resistance rates (Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on intervention simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "3a74b85c-641f-44a8-97bd-e00a4bb2b2a8",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C56",
+      "claim": "Simulation results were broadly consistent with previous findings from the literature when microbiome interactions were taken into account.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations predicted colonization dynamics broadly consistent with previous findings from the literature. Input from the community was the main driver of hospital prevalence, and both prevalence and resistance rates tended to increase in the hospital relative to the community, as estimated in previous modeling studies (Knight et al., 2018; MacFadden et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published modeling studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "47f4fb30-6941-4cb5-be8f-5e7978b9b782",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C57",
+      "claim": "Findings reflected an important role for between-host nosocomial transmission for MRSA, as observed clinically.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings reflected an important role for between-host nosocomial transmission for MRSA, as observed clinically (Khader et al., 2019; Nadimpalli et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published clinical observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "33db1dd0-c90a-4087-96a3-84d5838dbdf6",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C58",
+      "claim": "Findings reflected a comparatively important role for endogenous acquisition for enteric ARB, as estimated elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "and a comparatively important role for endogenous acquisition for enteric ARB, as estimated elsewhere (Bootsma et al., 2007; Gurieva et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published estimates.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "4bf7b4ba-7892-4709-8291-dc7a16f42109",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C59",
+      "claim": "Contact precautions were effective for reducing incidence of MRSA and to a lesser extent C. difficile, but had limited impact against Enterobacteriaceae, consistent with clinical trials and modeling estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Contact precautions were effective for reducing incidence of MRSA and to a lesser extent C. difficile, but had limited impact against Enterobacteriaceae, consistent with clinical trials and modeling estimates. (Khader et al., 2021; Luangasanatip et al., 2015; Maechler et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison to published clinical trials and modeling studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "26a14aee-c112-49ff-8338-b6c613612e33",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C60",
+      "claim": "Simulated antibiotic stewardship interventions were broadly effective for reducing incidence across all included ARB, consistent with findings from a meta-analysis of clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, simulated antibiotic stewardship interventions were broadly effective for reducing incidence across all included ARB. This is consistent with findings from a meta-analysis of clinical trials evaluating the efficacy of hospital antibiotic stewardship interventions for reducing incidence of ARB colonization and infection (Baur et al., 2017), which we updated to exclude studies co-implementing stewardship with alternative interventions (Appendix 1\u2014figure 18).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison to published meta-analysis of clinical trials.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "3ada2455-2010-4a59-aeec-14da39b4f590",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C61",
+      "claim": "Estimates from the meta-analysis predicted the same rank order of efficacy across included ARB as the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison to our findings, estimates from the meta-analysis were associated with greater uncertainty across more heterogeneous interventions, but predicted the same rank order of efficacy across included ARB",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison between simulation results and meta-analysis findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "8ebe0704-ce72-4c13-bb56-ae8bb3d236dd",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C62",
+      "claim": "Meta-analysis estimates showed similar mean efficacy for C. difficile (19% from n=seven studies, vs. 18% under intermediate compliance in simulations), ESBL-EC (18% from n=four studies, vs. 15%) and MRSA (12% from n=10 studies, vs. 10%), but higher efficacy for CP-KP (54% from n=one study, vs. 20%).",
+      "claim_type": "EXPLICIT",
+      "source": "and similar mean efficacy for C. difficile (19% from n=seven studies, vs. 18% under intermediate compliance in our simulations), ESBL-EC (18% from n=four studies, vs. 15%) and MRSA (12% from n=10 studies, vs. 10%), but higher efficacy for CP-KP (54% from n=one study, vs. 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison between simulation results and meta-analysis findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "0b9aadf5-0841-49d6-b0b1-b09c031a1d26",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C63",
+      "claim": "When excluding microbiome interactions, simulations predicted negligible efficacy of antibiotic stewardship interventions for controlling ARB incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "When excluding microbiome interactions, simulations predicted negligible efficacy of antibiotic stewardship interventions for controlling ARB incidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of simulation results between different model types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "82df5ebc-d482-4dbf-81ee-3bdd62bd4b88",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C64",
+      "claim": "Microbiome competition was found to have a large impact on incidence but comparatively little impact on resistance rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, microbiome competition was found to have a large impact on incidence but comparatively little impact on resistance rates \u2013 both for the theoretical pathogen evaluated in Part 1 (Figures 3 and 4) and for the four ARB simulated in Part 2 (Appendix 1\u2014figures 12 and 14)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "f0e3e174-6379-4bd9-9eca-b98626530ae5",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C65",
+      "claim": "Stewardship interventions were of similar efficacy for reducing resistance rates across single-species and microbiome simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "underlying why stewardship interventions were of similar efficacy for reducing resistance rates across single-species and microbiome simulations (Appendix 1\u2014figure 15).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of simulation results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "2be68be3-5da5-45ed-81a6-8cf576864b17",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C66",
+      "claim": "Strain-based competition explains relative ecological dynamics of co-circulating strains, while microbiome interactions may be better suited to explain how increasing antibiotic use favours ARB incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects the importance of different forces of antibiotic selection for different epidemiological outcomes: while strain-based competition explains relative ecological dynamics of co-circulating strains, microbiome interactions may be better suited to explain how increasing antibiotic use favours ARB incidence, and how antibiotic stewardship and microbiome recovery interventions can help prevent colonization acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from simulation results and mechanistic reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "617eaef6-4b53-4646-80d4-3a4a5c28661f",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C67",
+      "claim": "Microbiome population structure is inherently stable, depending less on the epidemiological transmission of particular taxa, and more on host factors like diet, maternal inheritance, genetics, and antibiotic exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, microbiome population structure is inherently stable, depending less on the epidemiological transmission of particular taxa, and more on host factors like diet, maternal inheritance, genetics, and antibiotic exposure (Brito and Alm, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published research on microbiome stability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "7c52dc4f-2d10-40ad-97a4-022b36f4c29e",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C68",
+      "claim": "Despite great inter-individual diversity in microbiome composition, there is functional redundancy from one host to the next, such that colonization resistance and other forms of microbiome competition are shared across healthy hosts colonized with different taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite great inter-individual diversity in microbiome composition, there is functional redundancy from one host to the next, such that colonization resistance and other forms of microbiome competition are shared across healthy hosts colonized with different taxa (Bashan et al., 2016; Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on microbiome functional redundancy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "3eef7e21-14c7-47f7-9b96-3b9b9fb1d37c",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C69",
+      "claim": "Fecal microbiota transplantation is already used to treat recurrent C. difficile infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal microbiota transplantation is already used to treat recurrent C. difficile infection, and is under investigation for multidrug-resistant Enterobacteriaceae decolonization (Davido et al., 2019a; Kassam et al., 2013; Saha et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "d30c8370-5423-4302-a691-4756155d690f",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C70",
+      "claim": "Fecal microbiota transplantation is under investigation for multidrug-resistant Enterobacteriaceae decolonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Fecal microbiota transplantation is already used to treat recurrent C. difficile infection, and is under investigation for multidrug-resistant Enterobacteriaceae decolonization (Davido et al., 2019a; Kassam et al., 2013; Saha et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "ff81d235-f8aa-4a78-ad8a-ee32854a9755",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C71",
+      "claim": "Cases of donor stool contaminated with toxicogenic and multidrug-resistant bacteria highlight non-negligible risks of fecal microbiota transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Transplantation requires rigorous donor screening and close longitudinal follow-up, and cases of donor stool contaminated with toxicogenic and multidrug-resistant bacteria highlight non-negligible risks (Gupta et al., 2021; Zellmer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published case reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "cdd5c85f-212e-47de-9b55-8cc4594372e0",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C72",
+      "claim": "DAV132, when co-administered with antibiotics by the oral route, has been shown to absorb antibiotic residues in the colon and preserve the richness and composition of intestinal microbiota, while maintaining systemic antibiotic exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "When co-administered with antibiotics by the oral route, DAV132 has been shown to absorb antibiotic residues in the colon and preserve the richness and composition of intestinal microbiota, while maintaining systemic antibiotic exposure (de Gunzburg et al., 2018; de Gunzburg et al., 2015; Pinquier et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published clinical studies on DAV132.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "bbf678b1-4658-4202-8aad-b11431e0ab43",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C73",
+      "claim": "MRSA, C. difficile and ESBL-producing Enterobacteriaceae are leading causes of antibiotic-resistant and healthcare-associated infection.",
+      "claim_type": "EXPLICIT",
+      "source": "MRSA, C. difficile and ESBL-producing Enterobacteriaceae are leading causes of antibiotic-resistant and healthcare-associated infection, while carbapenemase-producing Enterobacteriaceae represent emerging threats of particular concern due to limited therapeutic options for effective treatment of invasive infection (Cassini et al., 2019; Jernigan et al., 2020; Miller et al., 2011; Rodr\u00edguez-Ba\u00f1o et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published epidemiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "de703ddb-356a-4203-8bd9-d6f71835af13",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C74",
+      "claim": "Carbapenemase-producing Enterobacteriaceae represent emerging threats of particular concern due to limited therapeutic options for effective treatment of invasive infection.",
+      "claim_type": "EXPLICIT",
+      "source": "MRSA, C. difficile and ESBL-producing Enterobacteriaceae are leading causes of antibiotic-resistant and healthcare-associated infection, while carbapenemase-producing Enterobacteriaceae represent emerging threats of particular concern due to limited therapeutic options for effective treatment of invasive infection (Cassini et al., 2019; Jernigan et al., 2020; Miller et al., 2011; Rodr\u00edguez-Ba\u00f1o et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published epidemiological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a2f7f750-a71a-410b-9645-d2b8e2bdbdb2",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C75",
+      "claim": "Antibiotic stewardship is a core component of public health efforts to limit the emergence and spread of ARB in clinical settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic stewardship is a core component of public health efforts to limit the emergence and spread of these ARB in clinical settings (Baur et al., 2017), and an important focus of antibiotic resistance modeling (Niewiadomska et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published public health and modeling literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "abceabfe-1883-49a4-9896-101f24eddabe",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C76",
+      "claim": "Different antibiotics vary in which organisms they intrinsically target, as well as pharmacodynamic factors like route of administration, clearance mechanism and site of absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "Different antibiotics vary in which organisms they intrinsically target, as well as pharmacodynamic factors like route of administration (e.g. oral vs. systemic), clearance mechanism (e.g. biliary vs. renal excretion) and site of absorption (e.g. small vs. large intestine).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established pharmacological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "0ba04a43-6de1-4ee9-8a58-0eb451dc68c6",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C77",
+      "claim": "Differences in antibiotic properties affect the degree to which bacteria in different host niches are exposed to and cleared by different antibiotics, and are increasingly well described.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences affect the degree to which bacteria in different host niches are exposed to and cleared by different antibiotics, and are increasingly well described (Bhalodi et al., 2019; Kim et al., 2017; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published research on antibiotic effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "fbdb84c4-c41b-4c02-91cf-8be22d6e9e38",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C78",
+      "claim": "Asymmetric impacts of different antibiotics on competing commensal and pathogenic bacteria can drive antibiotic-driven selection for high-risk ARB, with important consequences for resistance dynamics and stewardship efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that asymmetric impacts of different antibiotics on competing commensal and pathogenic bacteria can drive antibiotic-driven selection for these high-risk ARB, with important consequences for resistance dynamics and stewardship efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "f0a9de67-5e31-45be-bc42-8f092131d1c4",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C79",
+      "claim": "Antibiotics that both disrupt host microbiota and clear drug-sensitive pathogen strains tend to select more strongly for the spread of resistant strains than antibiotics that only target one or the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, antibiotics that both disrupt host microbiota and clear drug-sensitive pathogen strains tend to select more strongly for the spread of resistant strains than antibiotics that only target one or the other (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "3889aee0-8c46-4d5d-9408-3fa60e659844",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C80",
+      "claim": "Antibiotics with stronger impacts on pathogen clearance (higher \u03b8C) lead to increased resistance rates, while consequences for PR colonization prevalence are modest and depend on potential interactions with the microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, antibiotics with stronger impacts on pathogen clearance (higher \u03b8C) lead to increased resistance rates, while consequences for PR colonization prevalence are modest and depend on potential interactions with the microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model results and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "e1237f11-3504-4d9f-b318-bf12b100880b",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C81",
+      "claim": "Antibiotics with stronger impacts on microbiome stability (higher \u03b8m) lead to higher prevalence, with only modest effects on resistance rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, antibiotics with stronger impacts on microbiome stability (higher \u03b8m) lead to higher prevalence, with only modest effects on resistance rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model results and analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "bc97c63b-c607-4d52-8c41-94ca417f999c",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C82",
+      "claim": "Impacts of antibiotic treatment on resistance rates are greater when PR resists a greater share of antibiotics (higher rR).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, impacts of antibiotic treatment on resistance rates are greater when PR resists a greater share of antibiotics (higher rR), while impacts on prevalence are greater when microbiome-pathogen interactions are stronger (higher \u03b5, \u03b7, \u03d5) (Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "85fdbbe3-b90d-40aa-b591-9ce6dba00018",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "claim_id": "C83",
+      "claim": "Impacts of antibiotic treatment on prevalence are greater when microbiome-pathogen interactions are stronger (higher \u03b5, \u03b7, \u03d5).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, impacts of antibiotic treatment on resistance rates are greater when PR resists a greater share of antibiotics (higher rR), while impacts on prevalence are greater when microbiome-pathogen interactions are stronger (higher \u03b5, \u03b7, \u03d5) (Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model results shown in referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "97ce666a-7994-4cd4-9fb4-1c806d851ba7",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about bacterial pathogens, the microbiome, and colonization resistance. Claims C1-C4 describe the dual role of bacteria in human health: as pathogens causing disease burden (C1) and as beneficial microbiota supporting health (C2), with specific mechanisms like colonization resistance (C3) exemplified by C. difficile inhibition (C4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by multiple citations to published literature and represent established knowledge in the field. They provide appropriate context for the modeling work but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "9d8dbe4e-e0d3-4848-86bb-e10de93749a5",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Antibiotic use can destabilize the microbiome, leading to dysbiosis (C5) characterized by reduced bacterial diversity, impaired immunity, and loss of colonization resistance (C6). This dysbiosis can result in elevated resistance gene expression, increased horizontal gene transfer, and ecological release of subdominant ARB (C7), with particular relevance in healthcare settings (C8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations to published research and represent established understanding of antibiotic-microbiome interactions. They provide essential background for the modeling framework but are not original findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Most epidemiological models use single-species strain competition frameworks (C9-C10) which remain important (C11-C12), but contemporary work has not evaluated between-species competition (C13) despite its potential importance for ARB like ESBL-producing Enterobacteriaceae (C14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately characterize the state of the modeling literature with appropriate citations and identify a clear gap (C13) that motivates the current work. The assessment of the literature appears accurate and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "99061a5b-8e4d-42db-9957-c59225031e8e",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the strain competition model, when PR is fully resistant (rR=1), prevalence increases monotonically with antibiotic exposure (C15). With partial resistance (0<rR<1), selection peaks at intermediate exposure due to trade-offs (C16). R0 increases with antibiotic use for highly resistant PR but decreases for sensitive PR (C17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by model results shown in referenced figures and represent logical consequences of the strain competition framework. The mathematical relationships are clearly derived from the model structure and parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "a3ca9d47-5f45-44a5-b10e-e180e3e6f26e",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors formalize three microbiome-pathogen interactions: colonization resistance (\u03b5) reducing pathogen transmission (C18), resource competition (\u03b7) reducing pathogen clearance during dysbiosis (C19), and ecological release (\u03d5) increasing endogenous acquisition during dysbiosis (C20).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the core conceptual framework of the model, supported by citations and formalized mathematically. The three interactions are clearly defined and mechanistically justified, though their quantification relies on expert elicitation rather than empirical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "938c4eb5-1110-44be-a327-9aa1acb320db",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Microbiome competition creates trade-offs in antibiotic selection: PR prevalence and R0 increase monotonically with exposure when fully resistant (C21), but can peak at intermediate exposure with partial resistance (C22). Multiple simultaneous interactions amplify both protection and selection pressure (C23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by model results in referenced figures and represent key theoretical predictions of the microbiome competition framework. The trade-off mechanism is clearly demonstrated through the model dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "647c1c6f-4fc1-478b-a951-0f47cbef7cae",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Increasing within-host HGT rates drive increasing PR prevalence regardless of other interactions (C24). HGT-driven gains in CR result from symmetric declines in CS, requiring both sufficient donors and recipients (C25).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by model results in Figure 4. Claim C25 is a logical inference from the model structure but depends on specific modeling assumptions about HGT symmetry that may not hold universally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "5db78211-ec67-4f15-9b42-1da3e6d61efc",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations of four pathogens showed C. difficile had highest prevalence (C28), MRSA highest resistance rate (C29), ESBL-EC highest incidence (C30), while CP-KP had lowest values overall (C31) but showed greatest hospital enrichment (5.4-fold increase, C32). Hospital resistance rates exceeded community rates for strain-competing pathogens (C33).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by simulation results shown in Figure 6 and referenced appendix figures. The quantitative estimates include appropriate uncertainty intervals from Monte Carlo simulations. Results appear consistent with the model structure and parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "eb9672ce-f479-4bb0-98fa-8b58ecbbabe8",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Patient-to-patient transmission was the primary MRSA acquisition route (C34), while endogenous acquisition dominated for enteric pathogens (C35). HGT accounted for 8.7% (<0.01-49.7%) of ESBL-EC acquisitions (C36) and 2.1% (<0.01-22.8%) of CP-KP acquisitions (C37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by simulation results, though the very wide uncertainty intervals for HGT (C36-C37) reflect substantial parameter uncertainty. The distinction between transmission-dominated (MRSA) and endogenous-dominated (enteric) acquisition is consistent with the model structure and biological expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "08a0d204-d46c-4d48-970e-9b7281dd259a",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sensitivity analysis identified community prevalence and endogenous acquisition as strongest positive drivers of hospital prevalence (C38), with admission/discharge and microbiome recovery as strongest negative drivers (C39). For resistance rates, community prevalence, endogenous acquisition, and antibiotic clearance had strongest positive impacts (C40), while admission/discharge and competing strain acquisition had strongest negative impacts (C41). Prevalence but not resistance rates were sensitive to microbiome parameters (C42).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by multivariate sensitivity analysis using PRCCs. The finding that microbiome parameters affect prevalence but not resistance rates (C42) is particularly important for understanding different forces of selection and is well-supported by the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Contact precautions were highly effective for MRSA (C43), intermediately effective for C. difficile (C44), and minimally effective for ESBL-EC and CP-KP (C45). Impact on resistance rates was modest (2-4% for MRSA, C46). Microbiome simulations predicted lower efficacy than single-species models (C47).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by intervention simulation results shown in Figure 7 and appendix figures. The pathogen-specific differences in efficacy are consistent with the relative importance of transmission vs. endogenous acquisition for each pathogen. The comparison between model types (C47) is particularly valuable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Antibiotic stewardship substantially reduced nosocomial incidence for all pathogens, but only in microbiome simulations (C48). Stewardship reduced incidence through all routes including HGT (C49), with median reductions of 20% (CP-KP), 18% (C. difficile), 15% (ESBL-EC), and 10% (MRSA) under intermediate compliance (C50). Single-species simulations predicted negligible efficacy (C51). Stewardship substantially impacted resistance rates, with similar outcomes across model types (C52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are strongly supported by simulation results in Figure 7 and appendix figures. The critical finding that stewardship efficacy depends on including microbiome interactions (C48, C51) is a major result with important implications for modeling and policy. The quantitative estimates include appropriate uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "70966f09-4714-4ef3-a5a4-ab72d2c6560b",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Microbiome recovery therapy was potentially highly effective but with variable efficacy across compliance levels (C53). It was most effective against C. difficile, similarly effective against ESBL-EC and CP-KP, and least effective against MRSA (C54). It reduced incidence through all routes but had no clear impact on resistance rates (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by simulation results in Figure 7 and appendix figures. The pathogen-specific differences in efficacy are consistent with the relative importance of microbiome interactions for each pathogen. However, this intervention is theoretical and lacks empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "740ddf57-19b3-4874-8dbe-1d109f75c918",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Simulation results were broadly consistent with literature when microbiome interactions were included (C56), including transmission importance for MRSA (C57) and endogenous acquisition for enteric ARB (C58). Contact precautions efficacy matched clinical trials (C59). Stewardship efficacy matched meta-analysis findings (C60-C62), with same rank order and similar mean efficacy for most pathogens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims demonstrate model validation through comparison with published studies and meta-analyses. The consistency between simulations and empirical findings (particularly C60-C62) strengthens confidence in the model, though the authors appropriately note greater uncertainty in meta-analysis estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "410efec4-9d4b-453f-a37a-23307485a0e0",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Excluding microbiome interactions predicted negligible stewardship efficacy for incidence (C63). Microbiome competition had large impact on incidence but little impact on resistance rates (C64), explaining similar stewardship efficacy for resistance across model types (C65). Strain competition explains relative strain dynamics while microbiome interactions explain how antibiotic use favors ARB incidence (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims synthesize key findings about different forces of selection and their epidemiological consequences. The distinction between impacts on incidence vs. resistance rates (C64) is well-supported by results across both theoretical and applied models. Claim C66 represents an important conceptual insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "dc835c5c-5ff5-4f7e-9fc8-9a4492c23bf6",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Microbiome population structure is inherently stable, depending on host factors rather than transmission (C67). Despite compositional diversity, functional redundancy means colonization resistance is shared across healthy hosts (C68).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations and justify the modeling approach of treating microbiome stability as a host trait rather than a traditional colonization process. This conceptual framework is important for the model but represents established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "f4cb586a-fa4f-4dbf-a2fe-f6ad09487004",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Fecal microbiota transplantation is used for recurrent C. difficile (C69) and under investigation for Enterobacteriaceae decolonization (C70), but has non-negligible risks (C71). DAV132 preserves intestinal microbiota while maintaining systemic antibiotic exposure (C72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations to clinical literature and provide context for microbiome-targeted interventions. They represent established clinical knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "1cf5c050-5831-437a-a05d-3ce36866f862",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "MRSA, C. difficile, and ESBL-producing Enterobacteriaceae are leading causes of healthcare-associated infection (C73), while carbapenemase-producing Enterobacteriaceae are emerging threats (C74). Antibiotic stewardship is a core public health component (C75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations and establish the public health importance of the pathogens studied. They provide essential context but represent established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "619b6659-dfcd-44a8-bb7b-5db2892c8a5c",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Different antibiotics vary in target organisms and pharmacodynamic properties (C76), affecting bacterial exposure in different niches (C77). Asymmetric impacts on commensal and pathogenic bacteria can drive selection for ARB with consequences for resistance dynamics and stewardship efficacy (C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 represent established pharmacological knowledge supported by citations. Claim C78 is an inference from simulation results and represents an important conclusion about antibiotic-specific selection pressures, though it requires empirical validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    },
+    {
+      "id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5",
+      "content_id": "dece793d-7f3f-4494-9a78-1acd78be8b2c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Antibiotics that both disrupt microbiota and clear sensitive strains select more strongly for resistance (C79). Higher pathogen clearance rates (\u03b8C) increase resistance rates with modest prevalence effects (C80), while higher microbiome disruption (\u03b8m) increases prevalence with modest resistance effects (C81). Resistance rate impacts increase with higher rR (C82), while prevalence impacts increase with stronger microbiome interactions (C83).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by model results in Figure 3 and appendix figures. They represent important theoretical predictions about how different antibiotic properties drive different epidemiological outcomes. The asymmetric effects on prevalence vs. resistance rates are particularly insightful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:29:26.118650Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f7db6fd-c55e-4867-9c8e-e6397501d600",
+      "result_id": "97ce666a-7994-4cd4-9fb4-1c806d851ba7"
+    },
+    {
+      "claim_id": "cda292ff-148b-45d8-a009-66bf8fad19e6",
+      "result_id": "97ce666a-7994-4cd4-9fb4-1c806d851ba7"
+    },
+    {
+      "claim_id": "93bdbb89-c9a1-4b6d-a796-ff068af21531",
+      "result_id": "97ce666a-7994-4cd4-9fb4-1c806d851ba7"
+    },
+    {
+      "claim_id": "ef934fdf-55cc-4bbe-a228-3e37fc0ca08f",
+      "result_id": "97ce666a-7994-4cd4-9fb4-1c806d851ba7"
+    },
+    {
+      "claim_id": "c2e3a9a4-1371-4a69-b4c8-7926f2413205",
+      "result_id": "9d8dbe4e-e0d3-4848-86bb-e10de93749a5"
+    },
+    {
+      "claim_id": "ef7dbe35-6208-4b34-9937-83221d7c47cb",
+      "result_id": "9d8dbe4e-e0d3-4848-86bb-e10de93749a5"
+    },
+    {
+      "claim_id": "66702cfe-6768-44f8-912c-e48d9d71f85d",
+      "result_id": "9d8dbe4e-e0d3-4848-86bb-e10de93749a5"
+    },
+    {
+      "claim_id": "e5833e2c-6ee2-4e7e-9bc9-5622a1957b88",
+      "result_id": "9d8dbe4e-e0d3-4848-86bb-e10de93749a5"
+    },
+    {
+      "claim_id": "e27760b3-ea96-4359-9bdc-04b426dc8138",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "ff089d2b-ed27-4077-b1d8-54fdc0a57bca",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "9348fb9b-5eb9-4ee7-b8a7-c2ce1bd4f857",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "5d3a4fda-ee75-433f-a7a1-0138a89e76c9",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "2f539589-5fb1-4d16-84d7-0a63d0d2337c",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "ff895920-9239-4a53-b672-06692bbfd1c0",
+      "result_id": "c5a7abdd-d85c-435b-8ad1-95a8e5f3fecb"
+    },
+    {
+      "claim_id": "891ebc93-76fc-432b-a6b8-68fea4d44449",
+      "result_id": "99061a5b-8e4d-42db-9957-c59225031e8e"
+    },
+    {
+      "claim_id": "644ef63d-238d-456e-8d6a-14dc2e5870b7",
+      "result_id": "99061a5b-8e4d-42db-9957-c59225031e8e"
+    },
+    {
+      "claim_id": "fd0bac4f-8053-4d4c-b414-ce8fe41bacc7",
+      "result_id": "99061a5b-8e4d-42db-9957-c59225031e8e"
+    },
+    {
+      "claim_id": "88485239-c69f-4b97-82c1-56848d93ca45",
+      "result_id": "a3ca9d47-5f45-44a5-b10e-e180e3e6f26e"
+    },
+    {
+      "claim_id": "2da17dd0-0363-40af-b437-0c7892f6fc61",
+      "result_id": "a3ca9d47-5f45-44a5-b10e-e180e3e6f26e"
+    },
+    {
+      "claim_id": "4d0bf6f2-278a-439a-abc4-d430a40941fb",
+      "result_id": "a3ca9d47-5f45-44a5-b10e-e180e3e6f26e"
+    },
+    {
+      "claim_id": "5a92dcea-51dc-4fb5-9a43-242f93150f15",
+      "result_id": "938c4eb5-1110-44be-a327-9aa1acb320db"
+    },
+    {
+      "claim_id": "17e53c69-f34e-461f-bfc7-480db25cc801",
+      "result_id": "938c4eb5-1110-44be-a327-9aa1acb320db"
+    },
+    {
+      "claim_id": "720ed594-59a3-492c-ac22-699baa9ec6a7",
+      "result_id": "938c4eb5-1110-44be-a327-9aa1acb320db"
+    },
+    {
+      "claim_id": "5d1977ba-9888-403e-82e5-39dae85cce4d",
+      "result_id": "647c1c6f-4fc1-478b-a951-0f47cbef7cae"
+    },
+    {
+      "claim_id": "9cc6566e-128a-4958-81f1-00854a8cc981",
+      "result_id": "647c1c6f-4fc1-478b-a951-0f47cbef7cae"
+    },
+    {
+      "claim_id": "fafef763-e3cf-4f44-98ae-edbdccebac74",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "adebf2a8-9f7c-4e72-9b9b-c660fc5006ec",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "9e259a8a-4c46-478c-979b-89a38b8a591d",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "30717f93-2388-4e09-8a6b-0063023e2fe0",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "1d9f867c-ad6f-4688-8293-93ee6566f339",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "71b9018e-682b-472c-a008-efc1a0f87840",
+      "result_id": "5db78211-ec67-4f15-9b42-1da3e6d61efc"
+    },
+    {
+      "claim_id": "294f2532-4638-4691-bc16-738e21d6e578",
+      "result_id": "eb9672ce-f479-4bb0-98fa-8b58ecbbabe8"
+    },
+    {
+      "claim_id": "a39f1ed6-c98e-4559-a25a-815c63416054",
+      "result_id": "eb9672ce-f479-4bb0-98fa-8b58ecbbabe8"
+    },
+    {
+      "claim_id": "15277580-bab3-4434-b484-d70a8536cffd",
+      "result_id": "eb9672ce-f479-4bb0-98fa-8b58ecbbabe8"
+    },
+    {
+      "claim_id": "83910f12-1fd0-4a40-b6d8-00368c5b4d3c",
+      "result_id": "eb9672ce-f479-4bb0-98fa-8b58ecbbabe8"
+    },
+    {
+      "claim_id": "551b0352-b2db-4dd6-b100-96c1283e23e2",
+      "result_id": "08a0d204-d46c-4d48-970e-9b7281dd259a"
+    },
+    {
+      "claim_id": "6a0c05f8-f28c-4df7-a086-dcaea19a1d84",
+      "result_id": "08a0d204-d46c-4d48-970e-9b7281dd259a"
+    },
+    {
+      "claim_id": "9a8d5b34-d062-4d29-a632-aba53ed64b1f",
+      "result_id": "08a0d204-d46c-4d48-970e-9b7281dd259a"
+    },
+    {
+      "claim_id": "6322ade8-3dd5-40f0-b1e2-9222325edd92",
+      "result_id": "08a0d204-d46c-4d48-970e-9b7281dd259a"
+    },
+    {
+      "claim_id": "e3113bf6-c828-478b-b43f-84313a060703",
+      "result_id": "08a0d204-d46c-4d48-970e-9b7281dd259a"
+    },
+    {
+      "claim_id": "fe3b807b-0b12-4efb-acd8-8645e7289b75",
+      "result_id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79"
+    },
+    {
+      "claim_id": "55adffed-9f68-4932-ab3c-46c11c70932b",
+      "result_id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79"
+    },
+    {
+      "claim_id": "686d50db-7c75-4078-b3f0-bcdbe13d2120",
+      "result_id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79"
+    },
+    {
+      "claim_id": "72e75cff-dda9-4371-9327-a3a090189ea0",
+      "result_id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79"
+    },
+    {
+      "claim_id": "2a0435aa-ad25-4687-8a3a-6c7fbaa58da1",
+      "result_id": "4923be71-f0d4-469e-8eb0-873ffe6d8e79"
+    },
+    {
+      "claim_id": "a1a591e2-407f-4def-87e9-90c852916748",
+      "result_id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce"
+    },
+    {
+      "claim_id": "c4820831-f5c1-4209-8b6d-60cbbc0ce5a2",
+      "result_id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce"
+    },
+    {
+      "claim_id": "a3cec5e6-306c-4cda-9def-abda003fe2fa",
+      "result_id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce"
+    },
+    {
+      "claim_id": "cf966fa9-292b-4b6a-ac33-7a35542fcafe",
+      "result_id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce"
+    },
+    {
+      "claim_id": "a0750d31-32b8-4d6d-97b1-4cb075e4731f",
+      "result_id": "4106b8e7-f9e1-4d6e-a469-33402cd315ce"
+    },
+    {
+      "claim_id": "3b90f380-c652-4a01-9c0e-a641afd82869",
+      "result_id": "70966f09-4714-4ef3-a5a4-ab72d2c6560b"
+    },
+    {
+      "claim_id": "e5ad523a-3cb5-433a-999d-bfd1b1e11525",
+      "result_id": "70966f09-4714-4ef3-a5a4-ab72d2c6560b"
+    },
+    {
+      "claim_id": "ad7090b1-f0c3-406f-9fee-1bcff68f6d8d",
+      "result_id": "70966f09-4714-4ef3-a5a4-ab72d2c6560b"
+    },
+    {
+      "claim_id": "3a74b85c-641f-44a8-97bd-e00a4bb2b2a8",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "47f4fb30-6941-4cb5-be8f-5e7978b9b782",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "33db1dd0-c90a-4087-96a3-84d5838dbdf6",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "4bf7b4ba-7892-4709-8291-dc7a16f42109",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "26a14aee-c112-49ff-8338-b6c613612e33",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "3ada2455-2010-4a59-aeec-14da39b4f590",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "8ebe0704-ce72-4c13-bb56-ae8bb3d236dd",
+      "result_id": "740ddf57-19b3-4874-8dbe-1d109f75c918"
+    },
+    {
+      "claim_id": "0b9aadf5-0841-49d6-b0b1-b09c031a1d26",
+      "result_id": "410efec4-9d4b-453f-a37a-23307485a0e0"
+    },
+    {
+      "claim_id": "82df5ebc-d482-4dbf-81ee-3bdd62bd4b88",
+      "result_id": "410efec4-9d4b-453f-a37a-23307485a0e0"
+    },
+    {
+      "claim_id": "f0e3e174-6379-4bd9-9eca-b98626530ae5",
+      "result_id": "410efec4-9d4b-453f-a37a-23307485a0e0"
+    },
+    {
+      "claim_id": "2be68be3-5da5-45ed-81a6-8cf576864b17",
+      "result_id": "410efec4-9d4b-453f-a37a-23307485a0e0"
+    },
+    {
+      "claim_id": "617eaef6-4b53-4646-80d4-3a4a5c28661f",
+      "result_id": "dc835c5c-5ff5-4f7e-9fc8-9a4492c23bf6"
+    },
+    {
+      "claim_id": "7c52dc4f-2d10-40ad-97a4-022b36f4c29e",
+      "result_id": "dc835c5c-5ff5-4f7e-9fc8-9a4492c23bf6"
+    },
+    {
+      "claim_id": "3eef7e21-14c7-47f7-9b96-3b9b9fb1d37c",
+      "result_id": "f4cb586a-fa4f-4dbf-a2fe-f6ad09487004"
+    },
+    {
+      "claim_id": "d30c8370-5423-4302-a691-4756155d690f",
+      "result_id": "f4cb586a-fa4f-4dbf-a2fe-f6ad09487004"
+    },
+    {
+      "claim_id": "ff81d235-f8aa-4a78-ad8a-ee32854a9755",
+      "result_id": "f4cb586a-fa4f-4dbf-a2fe-f6ad09487004"
+    },
+    {
+      "claim_id": "cdd5c85f-212e-47de-9b55-8cc4594372e0",
+      "result_id": "f4cb586a-fa4f-4dbf-a2fe-f6ad09487004"
+    },
+    {
+      "claim_id": "bbf678b1-4658-4202-8aad-b11431e0ab43",
+      "result_id": "1cf5c050-5831-437a-a05d-3ce36866f862"
+    },
+    {
+      "claim_id": "de703ddb-356a-4203-8bd9-d6f71835af13",
+      "result_id": "1cf5c050-5831-437a-a05d-3ce36866f862"
+    },
+    {
+      "claim_id": "a2f7f750-a71a-410b-9645-d2b8e2bdbdb2",
+      "result_id": "1cf5c050-5831-437a-a05d-3ce36866f862"
+    },
+    {
+      "claim_id": "abceabfe-1883-49a4-9896-101f24eddabe",
+      "result_id": "619b6659-dfcd-44a8-bb7b-5db2892c8a5c"
+    },
+    {
+      "claim_id": "0ba04a43-6de1-4ee9-8a58-0eb451dc68c6",
+      "result_id": "619b6659-dfcd-44a8-bb7b-5db2892c8a5c"
+    },
+    {
+      "claim_id": "fbdb84c4-c41b-4c02-91cf-8be22d6e9e38",
+      "result_id": "619b6659-dfcd-44a8-bb7b-5db2892c8a5c"
+    },
+    {
+      "claim_id": "f0a9de67-5e31-45be-bc42-8f092131d1c4",
+      "result_id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5"
+    },
+    {
+      "claim_id": "3889aee0-8c46-4d5d-9408-3fa60e659844",
+      "result_id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5"
+    },
+    {
+      "claim_id": "e1237f11-3504-4d9f-b318-bf12b100880b",
+      "result_id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5"
+    },
+    {
+      "claim_id": "bc97c63b-c607-4d52-8c41-94ca417f999c",
+      "result_id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5"
+    },
+    {
+      "claim_id": "85fdbbe3-b90d-40aa-b591-9ce6dba00018",
+      "result_id": "d4bc13e5-7a19-42c4-933c-5ff6233561f5"
+    }
+  ],
+  "comparisons": []
+}

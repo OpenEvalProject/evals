@@ -1,0 +1,1778 @@
+{
+  "submission": {
+    "id": "b7e5c750-3137-400a-b9ea-fa71b884ecb2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:56:05.622217Z",
+    "updated_at": "2025-12-03T11:56:05.622217Z"
+  },
+  "content": [
+    {
+      "id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "submission_id": "b7e5c750-3137-400a-b9ea-fa71b884ecb2",
+      "content_type": "manuscript",
+      "content_text": "# Proper migration of lymphatic endothelial cells requires survival and guidance cues from arterial mural cells\n\n## Authors\n\n- Di Peng<sup>1</sup> ([ORCID: 0000-0002-7166-730X](https://orcid.org/0000-0002-7166-730X))\n- Koji Ando<sup>2</sup> ([ORCID: 0000-0002-4152-5706](https://orcid.org/0000-0002-4152-5706)) \u2020\n- Melina Hu\u00dfmann<sup>3</sup>\n- Marleen Gloger<sup>1</sup> ([ORCID: 0000-0002-3319-7642](https://orcid.org/0000-0002-3319-7642))\n- Renae Skoczylas<sup>1</sup> ([ORCID: 0000-0002-8570-7368](https://orcid.org/0000-0002-8570-7368))\n- Naoki Mochizuki<sup>4</sup>\n- Christer Betsholtz<sup>5</sup>\n- Shigetomo Fukuhara<sup>2</sup>\n- Stefan Schulte-Merker<sup>3</sup>\n- Nathan D Lawson<sup>7</sup> ([ORCID: 0000-0001-7788-9619](https://orcid.org/0000-0001-7788-9619))\n- Katarzyna Koltowska<sup>1</sup> ([ORCID: 0000-0002-6841-8900](https://orcid.org/0000-0002-6841-8900)) \u2020\n\n### Affiliations\n\n1. Uppsala University, Immunology Genetics and Pathology Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n2. Department of Molecular Pathophysiology, Institute of Advanced Medical Sciences, Nippon Medical School Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))\n3. Institute of Cardiovascular Organogenesis and Regeneration, Faculty of Medicine, WWU M\u00fcnster M\u00fcnster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))\n4. Department of Cell Biology, National Cerebral and Cardiovascular Center Research Institute Suita Japan ([ROR:01v55qb38](https://ror.org/01v55qb38))\n5. Department of Immunology, Genetics and Pathology, Rudbeck Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))\n6. Department of Medicine Huddinge (MedH), Karolinska Institutet, Campus Flemingsberg Huddinge Sweden ([ROR:056d84691](https://ror.org/056d84691))\n7. Department of Molecular, Cellular, and Cancer Biology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe migration of lymphatic endothelial cells (LECs) is key for the development of the complex and vast lymphatic vascular network that pervades most tissues in an organism. In zebrafish, arterial intersegmental vessels together with chemokines have been shown to promote lymphatic cell migration from the horizontal myoseptum (HM). We observed that emergence of mural cells around the intersegmental arteries coincides with lymphatic departure from HM which raised the possibility that arterial mural cells promote LEC migration. Our live imaging and cell ablation experiments revealed that LECs migrate slower and fail to establish the lymphatic vascular network in the absence of arterial mural cells. We determined that mural cells are a source for the C-X-C motif chemokine 12 (Cxcl12a and Cxcl12b), vascular endothelial growth factor C (Vegfc) and collagen and calcium-binding EGF domain-containing protein 1 (Ccbe1). We showed that chemokine and growth factor signalling function cooperatively to induce robust LEC migration. Specifically, Vegfc-Vegfr3 signalling, but not chemokines, induces extracellular signal-regulated kinase (ERK) activation in LECs, and has an additional pro-survival role in LECs during the migration. Together, the identification of mural cells as a source for signals that guide LEC migration and survival will be important in the future design for rebuilding lymphatic vessels in disease contexts.\n\n## Introduction\n\nThe lymphatic vessel network spans across the whole body to balance tissue fluid homeostasis, coordinate the immune responses, and enable dietary fat absorption in the intestine. The robustness of the formation and reproducibility of the vascular tree is dependent on molecular dynamics and tissue-tissue interaction required for the precision and fine-tuning of lymphatic endothelial cell (LEC) migration. Although multiple previous studies have uncovered important signals and cells guiding lymphatic vessel formation (Bussmann et al., 2010; Cha et al., 2012; Jafree et al., 2021), recent technological developments and new transgenic lines (Ando et al., 2016; Wang et al., 2020) have opened up opportunities to identify further regulators of LEC migration.\n\nVEGFC-mediated signalling through the vascular endothelial growth factor receptor 3 (VEGFR3) is essential for multiple steps of lymphatic vessels formation, including LEC proliferation, differentiation, and migration. In vitro cell culture experiments have demonstrated that VEGFC-VEGFR3 and \u03b21 integrin to promote LEC migration (M\u00e4kinen et al., 2001; Wang et al., 2001). Studies using a vegfc zebrafish reporter line have uncovered multiple sources of vegfc, including fibroblasts and neurons, which contribute to the initial sprouting and migration of lymphatic vessel into the HM (early migration) (Wang et al., 2020). The requirement of Vegfc-Vegfr3 and its source(s) in the LEC migration out of the HM (late migration) remains to be defined. Mechanistically, transcription factor MAFB, which regulates LEC migration but not proliferation, has been shown to act downstream of VEGFC-VEGFR3 signalling (Dieterich et al., 2015; Koltowska et al., 2015b). A genome-wide analysis further indicated the presence of a transcriptional network controlling LEC migration, through the induction of chemokine receptors that promote chemotaxis in migrating LECs (Williams et al., 2017). Although migratory regulators have been identified, the upstream cellular source of the signals initiating the migration is unknown.\n\nIn zebrafish trunk, lymphatic vessel specification is marked by the expression of transcription factor Prox1 in ECs around 32 hours post fertilization (hpf) in response to Vegfc-Vegfr3 signalling (Koltowska et al., 2015a). Around 34 hpf, venous-derived Prox1-positive cells sprout from the posterior cardinal vein (PCV) and migrate to the horizontal myoseptum (HM), establishing parachordal lymphatic endothelial cells (PLs) (Hogan and Schulte-Merker, 2017). After about 10 hours the PLs move out from the HM region and migrate dorsally or ventrally, and by 5 days post fertilization (dpf) give raise to the main trunk lymphatic vessels, including dorsal longitudinal lymphatic vessel (DLLV), intersegmental lymphatic vessel (ISLV), and thoracic duct (TD) (K\u00fcchler et al., 2006; Yaniv et al., 2006). During this later migration, the vast majority of the LECs are associated with the arterial intersegmental vessels (aISVs) (Bussmann et al., 2010). Given that PLs remain in the HM, and subsequently the lymphatic network formation is compromised in mutant embryos lacking aISVs (plcyt26480 and kdrlhu5088 mutants), the aISVs are instrumental in LEC migration (Bussmann et al., 2010). On the molecular level, arterial ECs (aECs) reportedly secrete Cxcl12b to guide this LECs migration via the Cxcr4 receptor expressed in LECs (Cha et al., 2012). Yet, whether other tissues or cells cooperate with aECs to support this migration remains unknown. Simultaneous with LEC development described above, vascular mural cells (MCs) are formed de novo along aISVs and beneath the dorsal aorta. aISVs play a critical role in this process, and MC emergence is completely abolished in the absence of aECs (Ando et al., 2016). The spatio-temporal similarity of MC and lymphatic vessel development around aISVs raises the question about a possible interaction between MCs and LECs in this region.\n\nHere, we took advantage of transgenic zebrafish reporters which allowed us to visualize MCs and LECs simultaneously at high spatio-temporal resolution in vivo, and to investigate their communication during lymphangiogenesis. We found that MCs emergence precedes LEC migration along aISV and that LECs interact with MCs residing at the aISVs. Moreover, in the absence of MCs, LEC migration was inhibited, and lymphatic vessel formation was compromised. We further determined that MCs produce lymphangiogenic factors including vegfc, cxcl12a, and cxcl12b. Thus, this study uncovers a close interaction between MC and LEC, which is of a functional importance for lymphatic vessel formation in the zebrafish trunk.\n\n## Results\n\n### MCs and LECs interact during LEC migration\n\nTo address a potential interaction between MCs and LECs around arteries, we examined their distribution around aISVs, using the reporter lines Tg(lyve1b:DsRed);Tg(flt1:YFP);Tg(pdgfrb:GFP), where lyve labels veins and lymphatics, flt1 arteries and pdgfrb high expression the MCs (Figure 1A\u2013B and Figure 1\u2014figure supplement 1). We found the spatial proximity, with MCs being sandwiched between the aISV and the migrating LEC at 4 dpf (Figure 1A). Subsequently, to identify the temporal sequence of LEC migration and appearance of MC along intersegmental vessels, we performed time-lapse imaging using the above reporter lines. We have observed that LECs migrated out from HM immediately after the emergence of pdgfrb+ MCs (Figure 1B and C, Figure 1\u2014video 1). We confirmed these observations by time-lapse imaging of MCs and LECs, and blood vessels, respectively, in Tg(lyve1b:DsRed);Tg(kdrl:TagBFP);Tg(pdgfrb:GFP) transgenic lines that allows separation of lymphatic, only labelled by lyve, from veins which are co-labelled by lyve and kdrl (Figure 1\u2014figure supplement 1, Figure 1\u2014video 2), and in Tg(dab2:GAL4FF);Tg(UAS:GFP);Tg(pdgfrb:mCherry) where dab2 is expressed in LECs and venous endothelial cells (Figure 1\u2014figure supplement 1, Figure 1\u2014video 3). Utilizing these reporters, we found that in approximately 90% of the cases, LEC migrated towards and interacted with the MC residing on aISV (n = 21 Figure 1D\u2013E, Figure 1\u2014video 5, Figure 1\u2014video 6). The number of MCs was not changed before and after the LEC migration (Figure 1). When LECs migrated out from the HM region, we noticed that LECs dynamically extended and regressed protrusions and actively reach towards the MCs (Figure 1E, Figure 1\u2014video 4), while MCs appeared still on aISV (Figure 1\u2014figure supplement 1). To understand the biological significance of the interaction between LECs and MCs, we quantified the velocity of LEC migration along aISV and found that the LECs in contact with the MCs migrated two times faster than LECs migrating along aISV without MCs (Figure 1G). These observations suggest that MCs might provide directional cues to promote robust LEC migration.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-v3.jpg)\n\n**Figure 1.:** (A) Confocal stack image of trunk aISV in 4 dpf Tg(flt1:YFP); Tg(-5.2lyve1b:DsRed2);TgBAC(pdgfrb:GFP) of lymphatic endothelial cells (grey, LEC), arterial intersegments vessels (magenta, aISV) and mural cells (green, MC). Scale bar; 10 \u03bcm. (B) Confocal stack images from time-lapse images in the trunk of 2 dpf Tg(flt1:YFP); Tg(-5.2lyve1b:DsRed2); TgBAC(pdgfrb:GFP) embryos (LECs in grey). Boxed regions are enlarged (right panels). Arrowheads indicate pdgfrb+ MCs (green) next to aISVs (magenta during LEC migration). Scale bars; 100 \u03bcm or 50 \u03bcm (enlarged image). (C) Quantification of aISVs with (n=10) or without (n=3) MCs presence from n=7 embryos when LECs left HM for time lapse videos as in (E). (D) Quantification of LEC and MC interaction during migration (n=10 embryos, with four somites counted per embryo). Migrating following MC n=18, migrating not following MC n=3 from time lapse videos in (E). (E) Confocal stack images from time lapse movies of LEC migration. TgBAC(pdgfrb:GAL4FF);(UAS:GFP) in green and Tg(-5.2lyve1b:DsRed2) in grey. Scale bar: 50 \u03bcm (F) Quantification of MC number around aISVs (n=14) from n=7 embryos at the start and end of the migration, quantified from time lapse videos in (E). Data are presented as mean \u00b1 SEM, unpaired two-tailed Student\u2019s t-test was used. Ns, no significance. (G) Quantification of duration of LEC migration with (n=5) or without (n=3) contacting MCs from n=6 embryos. Data are presented as mean \u00b1 SEM. unpaired two-tailed Student\u2019s t-test was used. **p<0.005 (H) Confocal stack images of Tg(pdgfrb:GAL4FF); Tg(UAS:GFP) (green) and Tg(-5.2lyve1b:DsRed2) (grey) in the trunk of sibling (top) and pdgfrbum148 mutant (bottom) embryos at 5 dpf. Lymphatic vessle are rendered using lyve1b:DsRed2 channel in IMARIS s structure is rendered with lyve1b:DsRed2 channel in IMARIS (right panel). Scale bar: 100 \u03bcm. (I) Quantification of pdgfrb+ mural cell numbers around ISVs in siblings (n=20) and pdgfrbum148 mutants (n=10). Data are presented as mean \u00b1 SEM, Mann Whitney test was used. ***p<0.0001. (J) Quantification of surface area of lymphatic vasculature in siblings (n=20) and pdgfrbum148 mutants (n=10). Data are presented as mean \u00b1 SEM, unpaired two-tailed Student\u2019s t-test was used. *p<0.05.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Heatmap generated with confocal z-stack images from time-lapse images in the trunk of 2 days post fertilization (dpf) Tg(dab2:GALFF);Tg(UAS:GFP); Tg(pdgfrb:mCherry) embryos. Heatmap was generated based on the intensity of mCherry. Arrow indicates pdgfrbhigh MC around aISV. (B) Confocal z-stack images from time-lapse images in the trunk of 2 dpf Tg(lyve1b: mCherry);Tg(kdrl:TagBFP);TgBAC(pdgfrb:GFP) embryo. Boxed regions are enlarged in the bottom. Arrowheads indicate pdgfrb+ MCs (green) around aISV (magenta) prior to (bottom left) and during (bottom middle and right) LEC (grey) migration. Scale bars: 50 or 30 \u03bcm (enlarged image). (C) Confocal z-stack images from time-lapse images in the trunk of Tg(dab2:GALFF);Tg(UAS:GFP) (grey);Tg(pdgfrb:mCherry) (green) in left panels and TgBAC(pdgfrb:GAL4FF);(UAS:GFP) in right panels (green) and Tg(dab2:GALFF);Tg(UAS:GFP) (grey) in middle panels. White arrow heads, MCs appear around aISV. Arrow, sprouting front of migrating LEC. Scale bar: 100 \u03bcm. (D) Quantification of MC (n = 30) movement from n = 7 embryos as still (n = 26) and mobile (n = 4) during the time-lapse videos as in (Figure 1E). Data are presented as ratio of total number of cells counted.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Confocal z-stack images of 5 dpf Tg(fli1a:nEGFP);(\u20135.2lyve1b:DsRed2) treated with 20 \u03bcM PDGFR inhibitor AG1296 (n = 15) or DMSO (n = 15) from 48 hours post fertilization (hpf). Scale bar: 100 \u03bcm. (B) Quantification of total lymphatic endothelial cell (LEC) number in (C). Data are presented as mean \u00b1 SEM, Mann-Whitney test was used. ***p < 0.0005.\n\n### MCs promote lymphatic vessel formation\n\nWe next asked if pdgfrb-positive MCs are necessary for lymphatic vessels formation. PDGFR\u03b2 is known to be essential for MC development, especially their proliferation and migration (Ando et al., 2016; Gaengel et al., 2009). The pdgfrbum148 mutant zebrafish (Kok et al., 2015) showed a 30% reduction of MC number around aISVs (Figure 1H\u2013I). Coincidently, trunk lymphatic vasculature formation in pdgfrbum148 mutant zebrafish revealed slight reduction in the network formation. The rendering of lyve:DsRed labelled lymphatic vessels, as a measurement of lymphatic vessels density, revealed on average an area of 1 mm2 in the sibling vs. 0.7 mm2 in the pdgfrbum148 mutants (Figure 1H and J). Treatment with a PDGFR\u03b2 inhibitor, AG1296 from 48 hpf onwards, led to a greater reduction in MC coverage and LECs number (Figure 1\u2014figure supplement 2A-B). Together, although it cannot be excluded that inhibitor treatment directly affected lymphatic vessels development, these observations suggest a requirement of pdgfrb+ MC for lymphatic development.\n\nAs both mutant and AG1296-treated larvae retained a substantial proportion of their MCs, we decided to eliminate pdgfrb+ MCs utilizing MC-selective nitroreductases (NTR) and metorodinazole (MTZ) ablation system (NTR-MTZ ablation system) (Curado et al., 2008), TgBAC(pdgfrb:Gal4FF);Tg(14xUAS:3xFLAG-NTR, NLS-mCherry), to confirm the involvement of MCs in lymphatic vessel formation. In this transgenic line, MTZ is converted to its cytotoxic form by NTR expressed in pdgfrb+ MCs, which leads to selective MC death (Figure 2\u2014figure supplement 1A). When ablating MCs just prior to LEC migration out from HM region by utilizing this MC-selective NTR-MTZ ablation system, LEC migration along aISV and subsequently TD formation were severely compromised (Figure 2A\u2013C, Figure 2\u2014figure supplement 1B). To further determine if MCs are necessary for LEC migration, we ablated MCs locally by two-photon laser just after LEC migrated out of the HM region (Figure 2D\u2013G). To ensure that we did not damage the aISV during the ablations, we recorded the transmitted light videos and observed unperturbed blood flow in the aISV before and after ablation, suggesting that the vessel remained undamaged and intact (Figure 2\u2014figure supplement 2A, Figure 2\u2014videos 3; 4). As a control we targeted the tissue adjacent to the MCs in the same embryo (Figure 2). The time-lapse imaging over 5 hours post ablation (hpa) confirmed that LEC migration was dramatically inhibited in the MC-ablated group compared to the control non-MC-ablated group (Figure 2F and H, Figure 2\u2014video 1, Figure 2\u2014video 2). We also imaged the same embryos 1 day later and observed that 40% of the larvae receiving MC ablation failed to form DLLV completely, while all control larvae form DLLVs (Figure 2G and I). Together, these data demonstrate an important role of arterial-associated MCs for the robust LEC migration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-v3.jpg)\n\n**Figure 2.:** (A) Work flow of cell ablation by the nitroreductases (NTR)-metorodinazole (MTZ) system. Tg(pdgfrb:Gal4FF);Tg(14xUAS:3xFLAG-NTR,NLS-mCherry) (red) and Tg(fli1a:GFP) (grey) were imaged at 120 hours post fertilization (hpf) after treatment with DMSO or 5 mM MTZ from 48 hpf, and the formation of thoracic duct (TD) was analysed. (B) Confocal stack images of the trunk in 5 days post fertilization (dpf) embryos treated as described in (A). Arrows indicates TD forming beneath dorsal aorta. Asterisks indicate the absence of TD. Scale bar: 100 \u03bcm. (C) Quantification of (B). Embryos were scored as fully (completely connected TD), partially (partially formed TD) and hardly (almost or no TD visible) formed based on the TD development. In the NTR- MTZ+ group (n = 36), n = 21 embryos with fully formed TD, n = 7 embryos with partly formed TD, n = 8 embryos with hardly formed TD were identified. In the NTR+ MTZ+ group (n = 34), n = 1 embryo with fully formed TD, n = 2 embryos with partly formed TD, n = 31 embryos with hardly formed TD were identified. Data were presented as ratio to total number of embryos analysed. (D) Work flow of cell ablation by multi-photon microscopy. Mural cells (MCs, green) labelled by TgBAC(pdgfrb:GAL4FF; UAS:GFP) and lymphatic endothelial cells (LECs) by Tg(\u20135.2lyve1b:DsRed2) (grey). MCs on intersegmental vessel in proximity to sprouting LEC were ablated at 57 hpf. For analysis, ablation was either followed by time-lapse imaging or confocal imaging at 3 dpf. (E) Confocal stack images before and after ablation. Control ablation (dashed box) in the adjacent region of GFP+ MCs and GFP+ MC on arterial intersegmental vessel (aISV) (solid grey box) was performed in the same embryos. Arrows indicate ablated GFP-positive cells. Scale bar: 100 \u03bcm. Middle and right panels, zoom-in images cropped in z-stacks. (F) Live imaging of lymphatic endothelial cell migration in the context of control (top images) and GFP+ MC on aISV (bottom images) after ablation, with confocal stack images from time lapse at selected timepoints from 0 to 4.96 hpa. Scale bar: 50 \u03bcm. (G) Confocal stack images of 3 dpf embryos in (E). Dashed box, control ablation. Solid grey box, MC ablation. DLLV, dorsal longitudinal lymphatic vessel; ISLV, intersegmental lymphatic vessel. Scale bar: 100 \u03bcm. (H) Quantification of migration distance from time-lapse videos corresponding to (F). Distance was calculated as both T0-T1 and the perpendicular distance between the T1 and HM for embryos with (n = 4) or without (control, n = 3) ablation. T0, the sprouting front of LECs at the start of video; T1, sprouting front of LECs at the end of video. Data are presented as mean \u00b1 SEM, unpaired two-tailed Student\u2019s t-test or Mann-Whitney test was used on two types of measurements respectively. *p < 0.05. (I) Quantification of DLLV formation at 3 dpf. DLLV forming (n = 3), not forming (n = 2) in the ablated group and DLLV forming (n = 5) in the control group.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative confocal stack images of 5 days post fertilization (dpf) TgBAC(pdgfrb:Gal4FF);Tg(14xUAS:3xFlag-NTR, NLS-mCherry);Tg(fli1:GFP) treated with 5 mM MTZ or vehicle for 16 hr. NTR expression was highly selective on mural cells (MCs) population. MCs were ablated after 16 hours of 5 mM MTZ treatment. Arrows indicate floorplate (FP) and hyperchord (HP) were not ablated by the treatment despite the expression of NTR. Scale bar: 100 \u03bcm. (B) Confocal stack images from Tg(fli1a:Myr-GFP) in control and ablated embryos described in Figure 2A post injection of Qtracker 705 vascular labels (shown in grey) into common cardinal vein. Arrows indicate lymphatic vessels labelled by leaked dye when injected or during the circulation in the control but not in the MC-ablated larva. Scale bar: 100 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Confocal stack images with transmitted light channel as in Figure 2F. Black arrows indicate erythrocytes in the blood flow, white arrowheads indicate the ablating sites. Scale bar: 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Confocal stack images from time-lapse post multi-photon laser ablation in 2 days post fertilization (dpf) Tg(flt1:YFP) (magenta); TgBAC(pdgfrb:GFP) (green) and Tg(\u20135.2lyve1b:DsRed2) (grey) embryos. Arrowheads indicate remained GFP+ MCs without arterial intersegmental vessel (aISV). White arrows indicate the ablated site of aISV. Scale bar: 50 \u03bcm (Figure 2\u2014figure supplement 2); arterial endothelial cell (aEC) ablation with multi-photon laser. (A\u2013B) Quantification of lymphatic endothelial cell (LEC) (n = 4) and aISV (n = 4) migration distance post two-photon laser ablation.\n\nArterial ISVs have been previously shown to be necessary for LEC migration (Bussmann et al., 2010), thus MC might be a link for a direct interaction between the two cell types or an indirect effect mediated via aISVs. Importantly, the absence of MCs does not affect arterial identity at early stages in zebrafish (Ando et al., 2019), arguing that the importance of MC in LEC development is not simply to regulate aEC presence or abundance. Therefore, we directly tested if aEC function is critical for MC-dependent LEC migration along aISVs. We ablated ECs in aISV after the emergence of MCs using the two-photon laser system (Figure 2\u2014video 5). We observed that even in the absence of aECs, but remaining presence of MCs, LEC migration progressed (Figure 2\u2014figure supplement 3), suggesting that signals from MCs are sufficient to promote LEC migration. Thus, the previously reported strong inhibition of LEC development in aISV-depleted mutants (Bussmann et al., 2010) might include the effects of MC loss as aISVs ECs are essential for MC formation (Ando et al., 2016). However, as the aISV rapidly regrow following laser ablation system (Figure 2\u2014figure supplement 3B), the long-term effects cannot be assessed, and it remains to be determined to what extend the molecular signals from MC act in synergy with aECs to promote LEC migration.\n\n### Pdgfrb-positive pericytes express pro-lymphangiogenic factors\n\nOur results suggest that pdgfrb-positive MCs play a direct role in guiding LEC migration along aISVs. To gain a better understanding of MC populations and pro-lymphatic factors that contribute to this process, we took advantage of recently published scRNA-seq data from TgBAC(pdgfrb:egfp) larvae at 5 dpf (Shih et al., 2021). We focused on prospective MC populations by re-clustering previously identified pericyte and smooth muscle cell types (Figure 3A; Figure 3\u2014figure supplement 1). From this analysis we found two clusters that express a previously identified pericyte gene signature (e.g. high levels of notch3, pdgfrb, and ndufa4l2a; Figure 3B; Figure 3\u2014figure supplement 1), as well as pericyte-like cells that lacked the definitive pericyte marker, ndufa4l2a (Shih et al., 2021). We also noted fibroblasts marked by pdgfra, along with smooth muscle cell clusters expressing high levels of desmb, myocd, cnn1b, and tagln, respectively (Figure 3B). Additional clusters included pharyngeal arch mesenchymal cells and the cells from bulbus arteriosus (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-v3.jpg)\n\n**Figure 3.:** (A) Uniform Manifold Approximation and Projection (UMAP) plot of smooth muscle cells and pericytes subclustered from 5 days post fertilization (dpf) pdgfrb:egfp-positive cells. bulbArt \u2013 bulbous arteriosus, fib \u2013 fibroblast, peri \u2013 pericyte, peri-like \u2013 pericyte-like, phArch \u2013 pharyngeal arch mesenchymal cell, smc \u2013 smooth muscle cell. (B) Violin plot showing markers for pericytes (pdgfrb, ndufa4l2a), smooth muscle (myocd), fibroblasts (pdgfra), bulbous arteriosus (elnb), and pharyngeal arch mesenchyme (nkx3.2, tbx1, dlx4a). (C) Violin plot showing expression of known non-autonomous pro-lymphatic factors. Expression level values are log2 normalized across all cells. (D) Illustration of fluorescence activated cell sorting (FACS) and qPCR analysis on 3 dpf embryos. (E) qRT-qPCR of cxcl12a, cxcl12b, vegfc, ccbe1, and dll4 in FACS sorted trunk arterial endothelial cells (aECs) and MCs cells at 3 dpf as described in (D). Graph represents gene expression relative to geometric average of rpl13 and \u03b2-actin from three biological repeats (mean \u00b1 SEM). Unpaired two-tailed Student\u2019s t-test or Mann-Whitney test was used. No significance (ns), p \u2265 0.5. *p < 0.05, ***p < 0.0005, ****p < 0.0001. (F) Confocal z-projections for immunohistochemistry of fluorescent proteins in trunks of Tg(vegfc:Gal4; UAS:RFP; pdgfrb:GFP) and confocal image of Tg(ccbe1:YFP;pdgfrb:Gal4; UAS:NTRmcherry) embryos at 3 dpf. Scale bar: 100 \u03bcm; 50 \u03bcm in enlarged images. (G) Left panel, quantification of colocalization of vegfc+ and pdgfrb+ cells based on immunohistochemistry in (F). Right panel, quantification of colocalization of ccbe1+ and pdgfrb+ cells based on confocal images in (F), data presented as double positive ratio (mean \u00b1 SEM). Ns, no significance. (H) Confocal z-projections for immunohistochemistry of endogenous pERK (cyan, right) in migrating lymphatic endothelial cells (LECs) in trunks of Tg(\u20135.2lyve1b:venus) embryos (\u03b1-GFP, grey, middle) (n = 10) at 3 dpf. Scale bar: 100 \u03bcm; 50 \u03bcm in enlarged images.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Re-clustering of prospective mural cells from published pdgfrb:egfp scRNA-seq. (A) Uniform Manifold Approximation and Projection (UMAP) plot of previously described clustering for cells isolated from TgBAC(pdgfrb:egfp) cells at 5 days post fertilization (dpf). Highlighted cells are those used for re-clustering. Adjacent text summarizes steps used for re-clustering. See Materials and methods section of additional details. (B) UMAP plot following analysis of cell highlighted in (A). (C) Violin plot showing markers used to assign cell identity to clusters identified in (B). (D) Violin plot showing expression of genes encoding receptors for Vegfc and Cxc12. Also shown are definitive markers for perivascular fibroblasts identified in previous studies.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Confocal z-projections of Tg(svep1:Gal4;UAS:RFP); Tg(pdgfrb:GFP) at 3 days post fertilization (dpf). Scale bar: 100 \u03bcm. (B) Quantification of colocalization of pdgfrb-positive and svep1-positive cells based on confocal images from (A). Data presented as mean \u00b1 SEM. Unpaired two-tailed Student\u2019s t-test was used. ****p < 0.0001.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Illustration of FACS and qPCR analysis on 3 days post fertilization (dpf) Tg(prox1a:TagRFP; fli1a:nGFP) embryos. (B) (Left) Gating strategy for FACS sort of Tg(prox1a:TagRFP; fli1a:nGFP) as described in Figure 3\u2014figure supplement 3A. Sorting was performed on all singlet, alive cells according to their expression of DsRed (red, 561 nm) and GFP/ YFP (green, 488 nm). (Right) RT-qPCR of cxcr4a, cxcr4b, and ackr3b expression in trunk LECs at 3 dpf. Graph represents gene expression relative to geometric average of kdrl and \u03b2-actin from three biological repeats (mean \u00b1 SEM). Unpaired two-tailed Student\u2019s t-test or Mann-Whitney test was used. *p < 0.05, **p < 0.001. Ns, no significance. (C) Gating strategy for FACS sort of Tg(flt1:YFP) and Tg (abcc9:Gal;UAS:GFP) as described in Figure 3D. Sorting was performed on all singlet, alive cells according to their expression of GFP/ YFP (green, 488 nm).\n\nWe next assessed expression of known non-autonomous regulators of lymphatic growth, including vegfc and the essential Vegfc-processing factors: ccbe1, adamts3, and adamts14 (Bui et al., 2016; Hogan et al., 2009a; Janssen et al., 2016; Jeltsch et al., 2014). We also surveyed expression of svep1, a putative ligand for LEC-expressed itga9, and the chemokines cxcl12a and cxcl12b, which have been implicated in trunk lymphatic vessel patterning (Figure 3B; Cha et al., 2012; Karpanen et al., 2017). We observed prominent vegfc expression in pericyte and pericyte-like cells, with lower levels detectable in several smooth muscle cell clusters (Figure 3B). However, only peri-like cells expressed ccbe1. Similarly, only a single SMC cluster expressed adamts3 while adamts14 was not detected in any clusters (Figure 3B). We observed svep1 transcript at low levels in two smooth muscle cell clusters. We confirmed absence of svep1 in MCs by analysis of pdgfrb and svep1 transgenic reporters (Figure 3\u2014figure supplement 2A-B). Similar to vegfc, cxcl12a was seen in multiple cell types with prominent expression in pericytes, as well as the two vegfc-expressing smooth muscle cell clusters (Figure 3B). By contrast, prospective trunk MC clusters were largely devoid of genes encoding functional receptors for Vegfc (kdr, kdrl, and flt4) or Cxcl12 (cxcr4). Interestingly, putative pericytes expressed ackr3b, the atypical receptor for Cxcl12 (Figure 3\u2014figure supplement 1). To assess the expression of the chemokines receptors in LECs, we sorted double positive cells for TagRFP and nEGFP from TgBAC(prox1a:KalTA4-4xUAS-ADV.E1b:TagRFP);Tg(fli1a:nEGFP) embryos at 3 dpf (Figure 3\u2014figure supplement 3A). We observed expression of ackr3b but low levels of cxcr4a and cxcr4b (Figure 3\u2014figure supplement 3B), thus supporting previously reported expression of chemokine receptors in LECs (Cha et al., 2012).\n\nPrevious studies have identified perivascular fibroblast populations that contribute to blood or lymphatic vessel development in the zebrafish trunk (Rajan et al., 2020; Wang et al., 2020). Rajan et al. have described a pdgfrblow perivascular fibroblast that expresses nkx3-1 and appears to be required for vessel stability. Similarly, a pdgfra-positive fibroblast population that expresses vegfc, ccbe1, adamt3, and adamts14 can contribute to lymphatic vessel patterning in the trunk. This pro-lymphatic fibroblast population can be uniquely defined within pdgfra-positive fibroblasts by expression of the Engrailed paralogs, en1a and -b (Wang et al., 2020). To determine whether MCs identified in our current study overlapped with either of these populations, we investigated expression of nkx3-1, en1a, and en1b in our scRNA-seq data. Despite identification of two distinct fibroblast clusters from pdgfrb-positive cells, neither exhibited expression of nkx3-1, en1a, or en1b, suggesting that pro-lymphatic MCs identified in our study are distinct from those previously reported perivascular fibroblasts.\n\nThe pdgfrb:egfp cells used in Shih et al. were from whole embryos, and the pericytes noted above were therefore not necessarily associated with trunk blood vessels (Shih et al., 2021). Therefore, we determined expression of vegfc, ccbe1, and cxcl12a in (MC-enriched) EGFP-positive cells isolated from micro-dissected trunks of TgBAC(abcc9:Gal4FF);Tg(UAS:EGFP) larvae at 3 dpf, in comparison to negative cells (Figure 3D\u2013E, Figure 3\u2014figure supplement 3C; Ando et al., 2021). To assess the expression level of these genes in arteries, we also sorted aECs from micro-dissected trunks of Tg(flt1;YFP) line (Figure 3D\u2013E, Figure 3\u2014figure supplement 3C). We confirmed purity of MC in our sort by assessing dll4 gene expression in both aEC and MC, where we observed clear enrichment of dll4 in aEC (Figure 3E). Consistent with our scRNA-seq analysis, we found that abcc9-positive cells from dissociated trunks show significantly higher expression of cxcl12a, vegfc, and ccbe1 compared to EGFP-negative cells isolated in parallel. We also detected cxcl12a, cxcl12b, and vegfc in arteries, but not ccbe1 (Figure 3E). To confirm that vegfc and ccbe1 is expressed in the MCs, we used immunostaining of BAC-transgenic lines Tg(vegfc:Gal4; UAS:RFP; pdgfrb:GFP) and Tg(ccbe1:YFP;pdgfrb:Gal4; UAS:NTRmcherry), and observed a trend of enrichment of vegfc and ccbe1 expression in the pdgfrbhigh MCs on aISV compared to the rest of the pdgfrblow mesenchyme around aISV (Figure 3F\u2013G). Subsequently, we determined that migrating LECs are positive for phospho(p)-ERK (Figure 3H), which is known to be activated downstream of Vegfc-Vegfr3 or Cxcl12-Cxcr4 signalling (Spinosa et al., 2019; Xing et al., 2017). Taken together, our molecular analysis suggests that MCs on aISVs, annotated as trunk pericytes in the transcriptomic dataset, can provide a source for essential pro-lymphangiogenic factors.\n\n### Chemokines guide LEC migration\n\nChemokines have been shown to be important for LEC migration with LECs being attracted by mosaic overexpression of cxcl12b, whereas the cxcl12a, cxcl12b, and cxcr4a mutants show defects in TD formation (Cha et al., 2012). To understand if signalling mediated by these ligands is essential for LEC migration during the timepoints harmonized with MC emergence, we took advantage of temporal administration of a Cxcr4 inhibitor, AMD3100, to the embryos (Figure 4A\u2013B, Figure 4\u2014figure supplement 1A, Figure 4\u2014videos 1\u20134). We added the drug at 51 hpf, after the PL had reached the HM but before continuing to move dorsally and ventrally (Figure 4A). Time-lapse imaging revealed that in AMD3100-treated embryos, LECs migrated shorter distances with decreased velocity compared with the controls (Figure 4B\u2013D). We also investigated the filopodia formation as an indicator for proper sensing of guidance cues (Meyen et al., 2015), in the AMD3100-treated embryos in the Tg(fli1a:lifeact-EGFP) background. We found an increased number of filopodia reaching statistical significance 7.5 hours after exposure (Figure 4E\u2013F, Figure 4\u2014videos 5\u20138). We observed filopodia formation extended not only towards the migrating front but also laterally in AMD3100-treated embryos, implying the compromised directional migration of LECs. While, we did not observe the LEC apoptosis in the AMD3100-treated embryos. Together our data show that chemoattractants drive LEC migration.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-v3.jpg)\n\n**Figure 4.:** (A) Work flow of Cxcr4 inhibitor treatment. Tg(fli1:GFP);Tg(lyve1b:mCherry) embryos were grown in PTU (1-phenyl 2-thiourea) from 24 hours post fertilization (hpf) to prevent pigment formation, then changed to 20 \u03bcM AMD3100 or E3 water (embryo medium) at 51 hpf. (B) Confocal stack images from time-lapse imaging of Tg(fli1a:GFP; lyve1b:mCherry) embryos as indicated in (A). Scale bar: 50 \u03bcm. (C) (Left) Quantification of dorso-ventral migration showing individual tracks for the sprouting LECs in embryos (n = 6) in E3 water or embryos (n = 10) in AMD3100. (Right) Quantification of dorso-ventral migration showing average (mean from single tracks; left) of tracks in E3 and AMD3100-treated groups. Data are presented as mean \u00b1 SEM, unpaired two-tailed Student\u2019s t-test was used. **p < 0.005. (D) Quantification of velocity of dorso-ventral migration from time-lapse video described in (B). Sprouting front of LECs in E3 water (n = 6) and AMD3100- (n = 10) treated embryos were tracked and the distance between starting and end position of sprouting front was measured and subsequently divided by duration. Data are presented as mean \u00b1 SEM. Unpaired two-tailed Student\u2019s t-test was used. Ns, no significance, p > 0.1. (E) Confocal stack images from time-lapse imaging of Tg(fli1a:lifeact-EGFP);Tg(kdrl:mCherry) as indicated in (A). Arrows indicate dynamic filopodia formation during LEC migration. Scale bar: 50 \u03bcm. (F) Quantification of frequency of filopodia formation from time-lapse video from (E). Number of protrusions in LEC sprouts were counted and normalized to the sprout length, control (E3, sprouts n = 8 from 8 embryos) and treated (AMD3100, n = 12 from 10 embryos) embryos. Data are presented as mean \u00b1 SEM. Unpaired two-tailed Student\u2019s t-test was used. ***p < 0.0005. (G) Work flow of MEK inhibitor treatment. Tg(fli1:GFP);Tg(lyve1b:mCherry) embryos were grown in PTU from 24 hpf, then changed to 10 \u03bcM SL327, a MEK inhibitor, or DMSO at 51 hpf. Time-lapse imaging was started at 57 hpf. (H) Confocal z-stack images from time lapse of 57 hpf Tg(fli1a:nEGFP)y7 (green) and Tg(\u20135.2lyve1b:DsRed2) (grey) embryos treated with DMSO or 10 \u03bcM SL327 from 51 hpf. Grey arrowheads indicate cell death. Scale bar: 50 \u03bcm. (I) (Left) Quantification of dorso-ventral migration showing individual cell tracks for nuclei of sprouting LECs in DMSO- (embryos, n = 10; left panel) and SL327- (embryos, n = 9; right panel) treated embryos as described in (H). Red cross indicates cell death at the end of tracking. (Right) Average (mean) of tracks in DMSO- and SL327-treated groups. Data are presented as mean \u00b1 SEM, unpaired two-tailed Student\u2019s t-test was used. ****p < 0.0001. (J) Quantification of total LEC numbers at beginning (T0) and end (T1) of the time lapse of embryos (n = 10) in DMSO- and SL327-treated embryos (n = 9); data are presented as mean \u00b1 SEM. T0 DMSO vs. T1 SL327 p < 0.0001, T0 SL327 vs. T1 SL327 p < 0.0001, T1 DMSO vs. T1 SL327 p < 0.0001. Other comparisons were ns. One-way ANOVA with Tukey\u2019s post hoc test for statistical analysis. ****p < 0.0001. (K) Quantification of cell proliferation in DMSO (n = 9) and SL327-treated (n = 13) embryos as described in (E). Nuclear marker in green was used to count cell division events. Data are presented as mean \u00b1 SEM, Mann-Whitney test was used. ****p < 0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Confocal z-stack images of embryos as described in Figure 3A treated with 20\u03bcM AMD3100 or E3 water from 51 to 120 hpf. Scale bar: 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Confocal z-stack images of embryos as described in Figure 4G treated with 4 \u03bcM SL327 or DMSO from 51 to 120 hours post fertilization (hpf). Scale bar: 100 \u03bcm. (B) Confocal z-stack image of embryos treated with DMSO or SL327 as described in Figure 4G. Embryos were fixed at 3 days post fertilization (dpf) and used for TUNEL (cyan) and \u03b1-DsRed staining (grey). Zoom-in single slice images of TUNEL staining in merged and TUNEL channel showing the colocalization of the signal. Scale bar: 100 \u03bcm, 30 \u03bcm (enlarged images). (C) Corresponding quantification of TUNEL signal from (C). In SL327-treated group (n = 45), lymphatic endothelial cell (LEC) showed a positive TUNEL staining rate of 15.56% while it was 0% in DMSO-treated group (n = 45).\n\n### ERK activation promotes LEC migration and survival\n\nTo search for the downstream signalling of chemokines needed for proper LEC migration, we decided to assess if ERK activation is required for the LEC migration from HM, as we observed ERK activation in migrating LECs. We treated embryos with MEK inhibitor, SL327, at 51 hpf just prior to their migration and observed defects in LEC formation at 5 dpf (Figure 4G, Figure 4\u2014figure supplement 2A). We assessed the phenotypes by time-lapse imaging (Figure 4G\u2013H, Figure 4\u2014videos 9\u201312). Tracing the migration distance revealed a reduced number of migrating cells and increased number of cells that stalled or regressed their migration in SL327-treated embryos (n = 5) (Figure 4H\u2013I). In addition, we found a dramatic decrease of LEC division from 25% in controls to 1.5% in SL327-treated embryos (Figure 4J\u2013K), which is in agreement with the known necessary role of Vegfc-Vegfr3 in cell proliferation (Cao et al., 1998). SL327 treatment induced cell death in 7 out of 12 cells, which was further confirmed by TUNEL staining (Figure 4\u2014figure supplement 2B-C), suggesting that during this lymphatic developmental window ERK activation acts as a LEC pro-survival factor. Together, these results indicate that ERK activation plays vital roles in lymphatic vessel formation. While, effects of SL327 were much greater than that of AMD3100, which may imply that other pathway such as Vegfc-Vegfr3 functions together in addition to Cxcl12-Cxcr4 signalling. It has been reported that ERK activation is primarily induced by Vegfc during the LEC specification and sprouting from the PCV (Karkkainen et al., 2004; Koltowska et al., 2015a), our results showed that Vegfc-Vegfr3 signalling also instructs LEC in the subsequent migratory events from HM to establish the lymphatic vessel network in the trunk.\n\n### Chemokine and growth factor signalling together coordinate LEC migration\n\nAs it is speculated that both Vegfc-Vegfr3 and Cxcl12-Cxcr4 signalling to be necessary for LEC migration, albeit with nuances in cellular outputs in response to these signalling cascades, we decided to investigate the interaction between these molecular entities. By utilizing the temporally controlled Vegfc trapping by expression of soluble Flt4 (Vegfr3) in conjunction with AMD3100 chemical inhibition, we first assessed the migration phenotypes (Figure 5A). To assess the robustness of LEC migration in chemical-treated and heat-shocked embryos, we started the treatment at 60 hpf and time-lapse imaging from 62 hpf (Figure 5\u2014videos 1\u20133). Embryos treated with soluble Flt4 showed severe impairments in LEC migration (Figure 5B\u2013D, Figure 5\u2014figure supplement 1A). In addition, we observed no difference in LEC survival between in heatshock only and the combinatory-treated group (Figure 5\u2014figure supplement 1B). The combinatory treatment further decreased the LEC migrating distance, but only marginally. Interestingly we observed no additive effects on the velocity of migrating LEC by the combinatory treatment, suggesting cooperation rather than mechanistic interaction of these two signalling pathways in the coordination of LEC migration. ERK activation has been shown to be induced by Vegfc-Vegfr3 but also by Cxcl12-Cxcr4 signalling (Kukreja et al., 2005; Shin et al., 2016). To assess if the cooperation of these two singling cascades is required for activation of ERK during LEC migration, we assessed ERK activation in embryos treated with soluble Flt4 or AMD3100 or a combination of both treatments. As expected, we observed a dramatic reduction in LEC numbers and ERK activation upon soluble Flt4 treatment or combinatory treatment but not in AMD3100-treated group (Figure 5E\u2013G). Surprisingly, we overserved no change in ERK activation in AMD3100 treatment alone (Figure 5E, Figure 5\u2014figure supplement 2A). Thus, these data indicate that ERK activation may be induced mainly via Vegfc-Vegfr3 signalling rather than Cxcl12-Cxcr4 signalling during LEC migration. Together, our data provide evidence that these signalling pathways cooperate to promote proper LEC migration (Figure 5H).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-v3.jpg)\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Confocal z-stack images from time-lapse imaging as described in Figure 5A, wildtype with heatshock. Scale bar in 50 \u03bcm. (B) Quantification of LEC death from time-lapse video in Figure 5B. Data are presented as ratio to total LECs.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/74094/elife-74094-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Endogenous pERK (cyan) in migrating lymphatic endothelial cell (LEC) in trunk of 3 dpf Tg(hsp70l;sflt4, cryaa:Cerulean) and Tg(flt1:YFP;lyve1b:DsRed2) embryos (\u03b1-DsRed2, grey) with treatment as described in Figure 5A. Box indicates enlarged area. Scale bar: 100 \u03bcm; 50 \u03bcm in enlarged images.\n\n## Discussion\n\nOur study identified a new cellular source for essential signals to promote LEC migration. The formation of lymphatic vessels in a developing embryo is a complex process where multiple tissues and cell types interact and influence each other to form a perfectly shaped and sized functional tissue. Yet, in zebrafish, only a few tissues have been identified to supply LECs with molecular cues and promote LEC migration, among them arteries, fibroblasts, and neurons (Bussmann et al., 2010; Cha et al., 2012; Wang et al., 2020). With the development of transgenic lines illuminating the cellular complexity during lymphangiogenesis, new cell types become interesting targets to study the tissue-tissue interactions and instructive signals that guide LECs to progress through the embryo to their final destination. Here, we found that MCs are the source of Cxcl12, Vegfc, Ccbe1, which are necessary for Cxcl12-Cxcr4 and the Vegfc-Vegfr3 signalling pathways. Our cell ablation experiment has shown that MCs act as an accelerator which speeds up the LEC migration and in the absence of MCs the lymphatic network is incomplete. We speculate that MCs provided a signalling threshold for LECs robustly migrate from the HM region and progress dorsally across the trunk of the embryo. Interestingly, our data show that the majority of the LECs interact with MCs. Based on observations from Wang et al. and Karpanen et al., which uncovered cellular constituents for lymphangiogenic factors at earlier stages of LEC development (Karpanen et al., 2017; Wang et al., 2020) and our study revealing role for MC in LEC migration, thus it becomes evident that multiple cellular sources work together to establish the favourable levels of signalling for LEC migration.\n\nMechanistically our work has identified that chemokines and the Vegfc-Vegfr3 signalling pathways are specifically required during the migration of LECs across the embryo. The combinatorial treatments inhibiting both signalling pathways revealed minor additive effects suggesting that these pathways act collectively to ensure that proper lymphatic vessel formation proceeds. We have uncovered that ERK activation was mainly induced via Vegfc-Vegfr3 signalling rather than chemokine signalling. It is important to note that in the embryos exposed to soluble Flt4 we still observed residual expression of phospho-ERK in some cells. This may either indicate moderate efficiency of the soluble Flt4 transgenic tools or that additional growth factors or morphogens are also involved in the activation of the ERK pathway. However, this remains to be uncovered.\n\nWe have determined that chemokines are necessary for the progression of LEC migration and in their absence migrating cells show an increased number of filopodia, suggesting a loss in directionality. Whereas inhibition of Vegfc-Vegfr3 signalling lead to more severe phenotypes where disrupted LEC migration was accompanied by reduced proliferation and increased cell death. This uncovers that during the LEC migration Vegfc-Vegfr3 signalling has a dual role in guiding lymphatic and promoting their survival. It is important to note that the published migratory phenotypes in the cxcl12a, cxcl12b, and cxcr4a mutants are milder (Cha et al., 2012) to the ones observed in the SL327 drug treatment experiment or the cell ablation experiments. Thus, additional chemokine receptors might act together to regulate LEC migration. We have observed higher levels of atypical receptor ackr3b (cxcr7) than cxcr4 in LECs. The role of this receptor has been suggested to either act as a scavenger receptor to lower the signalling and ensure for correct directionality of lateral line migration (Dona et al., 2013) as well as it refining LEC migration in mice (Klein et al., 2014). The precise details of how the chemokine receptors come together to regulate LEC migration in zebrafish remains to be further characterized. Our work provides supporting evidence for chemokines and growth factor signalling pathways to come together and orchestrate proper LEC migration.\n\nIn summary, we demonstrate MC-LEC interaction at high spatio-temporal resolution during lymphatic development. We further uncovered an important role for artery-associated MCs in guidance of LECs, which is mediated by their secretion of chemoattractants including Cxcl12 and Vegfc (Figure 5H). Since other sources of Cxcl12 and Vegfc have already been demonstrated in the zebrafish embryonic trunk (Cha et al., 2012; Wang et al., 2020), we propose that colonization of the aISV by MCs may provide the signalling needed for robust LEC migration after moving away the HM region and migration along the aISVs. Our study underscores the importance of spatial and temporal control of the guidance cues and mitogens to promote and refine the migratory path and survival of LECs. Our finding of MC as a molecular source for lymphangiogenic factors should have relevance to future designs aiming at re-establishing lymphatic vessels in disease contexts.\n\n## Materials and methods\n\n### Zebrafish\n\nZebrafish were maintained in the Genome Engineering Zebrafish National Facility, Uppsala University, using standard husbandry conditions (Alestr\u00f6m et al., 2020). Animal experiments were carried out under ethical approval from the Swedish Board of Agriculture (5.2.18-7558/14). Previously published transgenic lines used were Tg(fli1a:nEGFP)y7, Tg(\u20135.2lyve1b:DsRed2)nz101 (Okuda et al., 2012), Tg(5xUAS:GFP) (Asakawa et al., 2008), TgBAC(pdgfrb:Gal4FF)ncv24, (Ando et al., 2016) TgBAC(pdgfrb:GFP) ncv22 (Ando et al., 2016), TgBAC(abcc9:GAL4FF)ncv34 (Ando et al., 2019), Tg(flt1:YFP)hu4881 (Hogan et al., 2009b), Tg(fli1a:GFP)y1 (Lawson and Weinstein, 2002), Tg(\u20137kdrl:DsRed2)pd27 (Kikuchi et al., 2011), pdgfrbum148 (Kok et al., 2015), Tg(kdrl:TagBFP)mu293Tg (Matsuoka et al., 2016), Tg(fli1a:Myr-GFP)ncv2Tg (Fukuhara et al., 2014), Tg(dab2:GFP)ncv67Tg (Shin et al., 2019), Tg(hsp70l:flt4, cryaa:Cerulean)bns82 (Matsuoka et al., 2016), Tg(UAS:RFP)nkuasrfp1a (Asakawa et al., 2008), Tg(vegfc:Gal4FF)mu402 (Wang et al., 2020), Tg(svep1:Gal4;UAS:RFP)hu4767/hu4767 (Karpanen et al., 2017), Tg(ccbe1:mCitrine)hu6741 (Wang et al., 2020) (referred to as Tg(ccbe1:YFP)), Tg(UAS-E1b:NfsB-mCherry)c264 (Davison et al., 2007) (referred to as Tg(UAS:NTR-mcherry)). Tg(lyve1:mCherry)ncv87Tg and Tg(14xUAS:3xFLAG-NTR,NLS-mCherry)ncv514Tg were generated in this study.\n\n### Genotyping\n\nFor pdgfrbum148 the following primers were used for PCR:\n\nThe PCR product was digested with Mbo1 restriction enzyme at 37\u00b0C for 1 hr. The digested product was run on 2% agarose gel. The cut of wildtype fragment results in two bands of 200 and 300 bps long; while the fragment from pdgfrbum148 mutants is not cut, resulting in 500 bps band; fragments from a heterozygous pdgfrbum148 is a combination of three fragments with bands sizes of 200, 300, and 500 bps.\n\n### Immunohistochemistry\n\nImmunohistochemistry was performed according to a previously published protocol (Le Guen et al., 2014; Shin et al., 2016) with the following modifications. After acetone treatment embryos were treated with Proteinase K at 10 mg/ml diluted in PBST for 35 min. Antibodies used were chicken \u03b1-GFP (1:400, ab13970 Abcam), rabbit \u03b1-DsRed (1:400, Living colors, 632,496 Takara Bio), rabbit \u03b1-Phospho-p44/42 MAPK (1:250, #4370 Cell Signaling Technology), and \u03b1-rabbit IgG-HRP (1:1000, #7074 Cell Signaling Technology). TUNEL staining was performed with In Situ Cell Death Detection Kit, Fluorescein (Merck, 11684795910) with the instruction provided by the manufacturer.\n\n### Image acquisition\n\nEmbryos were anaesthetized and mounted in 1% low-melting agarose on a 35-mm diameter glass-base dish (627870 or 627861 Greiner). Confocal images were obtained using a Leica TCS SP8 confocal microscope (Leica Microsystems) equipped with water immersion 25\u00d7 (Fluotar VISR, 0.95 NA) objective, water immersion 40\u00d7 (HC PL APO CS2, 1.1 NA) objective and glycerol immersion 63\u00d7 (HC PL APO CS2, 1.3 NA) objective or FluoView FV1000/FV1200/FV3000 confocal upright microscope (Olympus) equipped with a water immersion 20\u00d7 (XLUMPlanFL, 1.0 NA) lens. The 473 nm (for GFP), 559 nm (for mCherry), and 633 nm (for Qdot 655) laser lines in FluoView FV1000/FV1200/FV3000 confocal microscope and the 488 nm (for GFP) and 587 nm (for mCherry) in Leica TCS SP8 confocal microscope were employed, and 488 and 651 nm on the Zeiss NLO710, respectively.\n\n### Image analysis\n\nImage quantification was performed using z-stacks in ImageJ 2.0.0 (Schindelin et al., 2012), Olympus Fluoview (FV10-ASW, FV31S-SW), or IMARISx64 9.5.1 software (Bitplane). Total LEC number was counted manually using the overlay of DsRed and GFP channels over five somites in the trunk. Lymphatic vessel area was calculated by rendering the surface using DsRed channel, the non-lymphatic structures were manually removed. Measurements of surface area were exported directly from Imaris (Bitplane).\n\n### Cell Tracking\n\nTo quantify the migrating distance, the centre of PL nuclei in Figure 4H was manually tracked until either cell died or disappeared from the view in Imaris (Bitplane). The individual cell track was generated by \u2018spot\u2019 and \u2018cell track\u2019 function and then manually edited if needed. The data were exported to GraphPad for plotting and statistical analysis.\n\n### Distance measurement\n\nThe migrating distance in all figures was measured in three dimensions using the spot function in Imaris (Bitplane), see cell tracking. In Figure 3B\u2013C, the sprouting front of PL just migrating away from the HM region was chosen as start point (T0) and the migrating front at the end of the time-lapse video was chosen as the end point (T1), respectively. A direct line was used to connect the dots and the length of the line segment was measured. In Figure 2H, the perpendicular distance between point T1 and HM was also measured in addition to the measurement above.\n\n### Chemical treatment\n\nTo inhibit Cxcr4 signalling, the embryos were treated in 20 \u00b5M antagonist AMD3100 (Merk) diluted in E3 water (embryo medium) (Westerfield, 1993) from 51 to 72 hpf. To block phosphorylation and activation of ERK1/2, embryos were treated in 10 \u00b5M SL327 (EMD Millipore) diluted in E3 water with 1% DMSO, from 51 to 72 hpf. Embryos were anaesthetized and mounted in 1% low-melting agarose in a two-well slide with separate chambers, which allows spontaneous imaging of both groups. The prepared chemical solution (3 ml) was added on top of the agarose layer in one chamber and control medium (E3 water or 1% DMSO in E3 water) (3 ml) to the other chamber.\n\n### FACS and qPCR analysis\n\nEmbryos of Tg(flt1:YFP) and Tg(abcc9:Gal; UAS:GFP) were collected at 3 dpf and screened as described in Figure 3D, dissociation was performed as previously described (Kartopawiro et al., 2014). The dissociated cells were sorted using a fluorescence activated cell sorting (FACS) Aria III (BD Biosciences) into 300 \u03bcl TRIzol LS Reagent (Thermo Fisher). Total RNA was extracted using the Quick-RNA Microprep kit (Cambridge Bioscience) following the manufacturer\u2019s instructions. RNA quality and concentration were determined using 2100 Bioanalyser Instrument (Agilent) together with Bioanalyzer High Sensitivity RNA Analysis Kit (Agilent). One ng of RNA template was subjected to cDNA synthesis using SuperScript VILO cDNA Synthesis Kit (Thermo Fisher). The synthesized cDNAs were amplified in parallel using SsoAdvanced PreAmp Supermix (Biorad), and both of the amplified samples were included for further analysis. The qPCR analysis was performed using the primers in Table S1 on CFX384 Touch Real-Time PCR Detection System (BioRad). Data were analysed using the CFX Maestro Software (BioRad). The geometric average of rpl13 and \u03b2-actin or kdrl and \u03b2-actin expression was used as a reference to calculate relative gene expression of target genes with the ddCT method and the values were presented as log or normalized log fold. Primer sequences listed in the below table.\n\n<table>\n  <thead>\n    <tr>\n      <th>Target gene</th>\n      <th>Forward primer sequence 5\u2019\u20133\u2019</th>\n      <th>Forward primer sequence 5\u2019\u20133\u2019</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b2-actin</td>\n      <td>CGAGCTGTCTTCCCATCCA</td>\n      <td>TCACCAACGTAGCTGTCTTT</td>\n      <td>Designed for this study</td>\n    </tr>\n    <tr>\n      <td>rpl13</td>\n      <td>CATCTCTGTTGACTCACGTCG</td>\n      <td>CATCTTGAGCTCCTCCTCAGTAC</td>\n      <td>Designed for this study</td>\n    </tr>\n    <tr>\n      <td>cxcr4a</td>\n      <td>CATGACAGACAAGTACCGTCT</td>\n      <td>TGCTGTACAAGTTTACCGTGTA</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>cxcr4b</td>\n      <td>TGCTAACATTCCTGATAAGACC</td>\n      <td>GTACTTTTATTGCCAGACCTAAAGG</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>cxcl12a</td>\n      <td>GCAAGTGCTTTGACACAAAAAG</td>\n      <td>TTTGTTTGGCAAAGTAACCCTG</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>cxcl12b</td>\n      <td>GATCGTGATAGCTTTGTGAACC</td>\n      <td>AATGTTAACAATGCTTGGCCTC</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>vegfc</td>\n      <td>TCTTAAAAGGGAGACGGTTTCA</td>\n      <td>TACATTTCCTTCTCTTGGGGTC</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>ccbe1</td>\n      <td>AGTGTCTGAAATGATCTACCCG</td>\n      <td>ACTTCTCTGTCTACATCCTCCT</td>\n      <td>qPrimerDB</td>\n    </tr>\n    <tr>\n      <td>dll4</td>\n      <td>GGACAAATGCACCAGTATGC</td>\n      <td>GTTTGCGCAGTCGTTAATGT</td>\n      <td>Ando et al., 2019</td>\n    </tr>\n    <tr>\n      <td>ackr3b</td>\n      <td>TGAACTTCTCAACTCTTGACGA</td>\n      <td>TACAGGTGAGTCTCATAACGTG</td>\n      <td>qPrimerDB</td>\n    </tr>\n  </tbody>\n</table>\n\n### Ablation with multi-photon microscopy\n\nFor MCs ablation, embryos of Tg(\u20135.2lyve1b:DsRed2);Tg(pdgfrb:GFP) were laterally mounted in 1% low-melting point agarose at 57 hpf. An aISV with migrating LEC was chosen randomly, a GFP-positive MC was identified using 488 nm laser. MCs located ahead of migrating route were ablated using a two-photon laser at 790 nm (Mai Tai, Spectr-Physics Millenia PRO). Control ablations were performed as above but the adjacent area to the pdgfrb+ cell targeted with the two-photon laser. For aISV ablation, Tg(\u20135.2lyve1b:DsRed2);Tg(flt:YFP);Tg(pdgfrb:GFP) embryos were prepared as described above and an aISV, with LEC migrating along, was ablated using the two-photon laser targeting the connection point of dorsal longitudinal anastomotic vessel and aISV as well as proximal end of the aISV at the connection point to the DA. Larvae were imaged before and after ablation with a Zeiss LSM 710 FCS confocal microscope, which was followed by either time-lapse imaging for around 5 hours or follow-up confocal imaging at 3 dpf.\n\n### Ablation with NTR-MTZ system\n\nEmbryos from TgBAC(pdgfrb:Gal4FF);Tg(UAS:NTR, mCherry);Tg(fli1a:GFP) were collected and screened as described in Figure 2A. The embryos were treated with E3 medium containing either 5 mM MTZ or DMSO from 48 hpf and the media was replaced daily with fresh ones. The TD was imaged at 120 hpf above the yolk extension spanning across eight to nine somites and the quantification of TD was performed by categorizing the extend of formed TD into three groups: fully (completely connected TD), partially (partially formed TD), and hardly (almost or no TD visible). The category percentages for all embryos per treatment group were calculated.\n\n### Dye injections\n\nQtracker 705 Vascular Labels (ThermoFisher) diluted with (1:1) was injected into the common cardinal vein using a small capillary needle. Circulating Qtraceker 705 fluorescent dye in the blood vessels was visualized soon after the injection by confocal microscopy. Over time, in addition to blood vessels, lymphatic vessels were labelled by Qtracker 705 fluorescent dye.\n\n### scRNA-seq analysis to assess MC expression of pro-lymphatic factors\n\nTo assess expression of known pro-lymphatic genes in MCs, we re-analysed previously published scRNA-seq data from TgBAC(pdgfrb:egfp)ncv22 larvae at 5 dpf. Originally processed Cell Ranger outputs from this dataset are available at GEO (GSE176129). To identify cells for re-analysis, we used the RData object from previous clustering (Shih et al., 2021). All of the following analysis was performed in RStudio running R4.0.5 and using Seurat 4.0.3 (Hao et al., 2021). The following is an overview and we refer readers to Figure 3\u2014source code 1 for accompanying annotated commands used for this analysis. We first manually selected clusters expected to contain prospective MC populations. These were named as follows in the original clustering: \u201839-pericyte\u2019,\u201914-smc\u2019, \u201852-smc\u2019, \u201817-smc\u2019, \u201851-smc\u2019, \u201853-smc\u2019, \u20186-smc\u2019. We subsequently generated a list of barcodes comprising cells in these clusters and used those to obtain the original raw count data for these cells. We then performed normalization, identification of variable features, scaling, and clustering as described previously (Shih et al., 2021; Figure 3\u2014figure supplement 1A-B). Previously identified genes for pericytes, smooth muscle cells, and fibroblasts were initially used to assign cell cluster identities. To classify remaining clusters (pharyngeal arch, bulbus arteriosus), we identified all cluster-specific markers and used these to find remaining lineage-defining genes.\n\n### Heatshock treatment\n\nEmbryos of Tg(hsp70l:flt4, cryaa:Cerulean)bns82; Tg(flt1:GFP; lyve1b:DsRed2) were raised at 28.5\u00b0C and then subjected to 37\u00b0C heatshock for 1 hour by replacing the E3 water plus PTU with fresh pre-warmed (37\u00b0C) one and then kept in a 37\u00b0C incubator. For the non-heatshock-treated group, embryos were kept at 28.5\u00b0C for the whole time (Figure 5A).\n\n### Statistical analysis\n\nStatistical analysis was performed using Prism software (GraphPad). Gaussian distribution of samples was tested with Shapiro-Wilk normality test. Student\u2019s t-test was used for comparison of two means. For not normal distributed data, Mann-Whitney test was used for comparison of two means. One-way ANOVA with post hoc test was used for multiple comparison as stated in corresponding figure legend.\n",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "19b3e0cb-fc2a-40c2-b22d-73f52427b46b",
+      "submission_id": "b7e5c750-3137-400a-b9ea-fa71b884ecb2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gou Young Koh, https://ror.org/05apxxy63 Institute of Basic Science and Korea Advanced Institute of Science and Technology (KAIST) Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74094.sa0](https://doi.org/10.7554/eLife.74094.sa0)\n\nUtilizing the zebrafish models and the state-of-art approaches, this study clearly identifies that the arterial mural cells serve as the source for the chemokines and growth factors, which are key factors not only for the migration and survival of lymphatic endothelial cells but also for the building of lymphatic networks in most organs during embryonic development. The findings and conclusion would be an important platform in the future design for rebuilding lymphatic vessels in treating lymphatic-deficient diseases including lymphedema.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gou Young Koh, https://ror.org/05apxxy63 Institute of Basic Science and Korea Advanced Institute of Science and Technology (KAIST) Republic of Korea\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.74094.sa1](https://doi.org/10.7554/eLife.74094.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d9384862-aa35-492c-ad9f-921acd714c0b",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C1",
+      "claim": "In zebrafish, arterial intersegmental vessels together with chemokines promote lymphatic cell migration from the horizontal myoseptum (HM).",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, arterial intersegmental vessels together with chemokines have been shown to promote lymphatic cell migration from the horizontal myoseptum (HM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "aa48aac4-0cda-4bd7-b75a-9bf96b4d0c97",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C2",
+      "claim": "Emergence of mural cells around the intersegmental arteries coincides with lymphatic departure from HM.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that emergence of mural cells around the intersegmental arteries coincides with lymphatic departure from HM which raised the possibility that arterial mural cells promote LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data from live imaging experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5e6b2d1b-bdff-436d-9be8-044b25eca635",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C3",
+      "claim": "LECs migrate slower in the absence of arterial mural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our live imaging and cell ablation experiments revealed that LECs migrate slower and fail to establish the lymphatic vascular network in the absence of arterial mural cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from live imaging and cell ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ca9e562b-1e9c-42de-99f4-717c54657345",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C4",
+      "claim": "LECs fail to establish the lymphatic vascular network in the absence of arterial mural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our live imaging and cell ablation experiments revealed that LECs migrate slower and fail to establish the lymphatic vascular network in the absence of arterial mural cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from live imaging and cell ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5fcc09e4-463c-4493-a914-27a6d34165b4",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C5",
+      "claim": "Mural cells are a source for C-X-C motif chemokine 12 (Cxcl12a and Cxcl12b).",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that mural cells are a source for the C-X-C motif chemokine 12 (Cxcl12a and Cxcl12b), vascular endothelial growth factor C (Vegfc) and collagen and calcium-binding EGF domain-containing protein 1 (Ccbe1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular analysis including qPCR and scRNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5cfd5b61-b4b6-4b6e-9db6-3809b9451ea9",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C6",
+      "claim": "Mural cells are a source for vascular endothelial growth factor C (Vegfc).",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that mural cells are a source for the C-X-C motif chemokine 12 (Cxcl12a and Cxcl12b), vascular endothelial growth factor C (Vegfc) and collagen and calcium-binding EGF domain-containing protein 1 (Ccbe1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular analysis including qPCR and scRNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "60cf15ac-e02c-4f33-907f-694774474c15",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C7",
+      "claim": "Mural cells are a source for collagen and calcium-binding EGF domain-containing protein 1 (Ccbe1).",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that mural cells are a source for the C-X-C motif chemokine 12 (Cxcl12a and Cxcl12b), vascular endothelial growth factor C (Vegfc) and collagen and calcium-binding EGF domain-containing protein 1 (Ccbe1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular analysis including qPCR and scRNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "be5eb715-51ea-4547-aafe-3f6c1217df67",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C8",
+      "claim": "Chemokine and growth factor signalling function cooperatively to induce robust LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that chemokine and growth factor signalling function cooperatively to induce robust LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data using combinatorial inhibition approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "4cb2b078-213e-4c5f-be70-66839b6aa26a",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C9",
+      "claim": "Vegfc-Vegfr3 signalling, but not chemokines, induces extracellular signal-regulated kinase (ERK) activation in LECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Vegfc-Vegfr3 signalling, but not chemokines, induces extracellular signal-regulated kinase (ERK) activation in LECs, and has an additional pro-survival role in LECs during the migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data showing pERK activation and inhibitor experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "b0a4413b-de8c-40c3-8fd5-6d55f994b613",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C10",
+      "claim": "Vegfc-Vegfr3 signalling has a pro-survival role in LECs during migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Vegfc-Vegfr3 signalling, but not chemokines, induces extracellular signal-regulated kinase (ERK) activation in LECs, and has an additional pro-survival role in LECs during the migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TUNEL staining and cell death quantification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "c6794fd8-8951-4139-b5b6-750bb5363844",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C11",
+      "claim": "VEGFC-mediated signalling through VEGFR3 is essential for LEC proliferation, differentiation, and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "VEGFC-mediated signalling through the vascular endothelial growth factor receptor 3 (VEGFR3) is essential for multiple steps of lymphatic vessels formation, including LEC proliferation, differentiation, and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "088e396c-5866-4481-946f-400605b5a506",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C12",
+      "claim": "In vitro cell culture experiments have demonstrated that VEGFC-VEGFR3 and \u03b21 integrin promote LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro cell culture experiments have demonstrated that VEGFC-VEGFR3 and \u03b21 integrin to promote LEC migration (M\u00e4kinen et al., 2001; Wang et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior in vitro studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "83e72a2b-e95b-472c-b8f3-ba010221e99c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C13",
+      "claim": "Studies using a vegfc zebrafish reporter line have uncovered multiple sources of vegfc, including fibroblasts and neurons, which contribute to the initial sprouting and migration of lymphatic vessel into the HM.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using a vegfc zebrafish reporter line have uncovered multiple sources of vegfc, including fibroblasts and neurons, which contribute to the initial sprouting and migration of lymphatic vessel into the HM (early migration) (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a prior study using reporter lines.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "1b64a12b-a17e-44e0-a620-90b0157c620a",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C14",
+      "claim": "Transcription factor MAFB regulates LEC migration but not proliferation and acts downstream of VEGFC-VEGFR3 signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, transcription factor MAFB, which regulates LEC migration but not proliferation, has been shown to act downstream of VEGFC-VEGFR3 signalling (Dieterich et al., 2015; Koltowska et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior mechanistic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "2fa0d084-e87c-4f3e-8587-37b47e406f5c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C15",
+      "claim": "A genome-wide analysis indicated the presence of a transcriptional network controlling LEC migration through the induction of chemokine receptors that promote chemotaxis in migrating LECs.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide analysis further indicated the presence of a transcriptional network controlling LEC migration, through the induction of chemokine receptors that promote chemotaxis in migrating LECs (Williams et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a genome-wide analysis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "f7cf95e5-eef4-4179-b082-dbcefc66ba6c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C16",
+      "claim": "In zebrafish trunk, lymphatic vessel specification is marked by the expression of transcription factor Prox1 in ECs around 32 hours post fertilization (hpf) in response to Vegfc-Vegfr3 signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish trunk, lymphatic vessel specification is marked by the expression of transcription factor Prox1 in ECs around 32 hours post fertilization (hpf) in response to Vegfc-Vegfr3 signalling (Koltowska et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior developmental studies in zebrafish.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "c1ffeab7-a7e4-4ddc-83cd-9841ee398953",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C17",
+      "claim": "Around 34 hpf, venous-derived Prox1-positive cells sprout from the posterior cardinal vein (PCV) and migrate to the horizontal myoseptum (HM), establishing parachordal lymphatic endothelial cells (PLs).",
+      "claim_type": "EXPLICIT",
+      "source": "Around 34 hpf, venous-derived Prox1-positive cells sprout from the posterior cardinal vein (PCV) and migrate to the horizontal myoseptum (HM), establishing parachordal lymphatic endothelial cells (PLs) (Hogan and Schulte-Merker, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior developmental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "16a8db83-06ad-4b7c-a31a-96fef79da824",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C18",
+      "claim": "After about 10 hours the PLs move out from the HM region and migrate dorsally or ventrally, and by 5 days post fertilization (dpf) give rise to the main trunk lymphatic vessels, including dorsal longitudinal lymphatic vessel (DLLV), intersegmental lymphatic vessel (ISLV), and thoracic duct (TD).",
+      "claim_type": "EXPLICIT",
+      "source": "After about 10 hours the PLs move out from the HM region and migrate dorsally or ventrally, and by 5 days post fertilization (dpf) give raise to the main trunk lymphatic vessels, including dorsal longitudinal lymphatic vessel (DLLV), intersegmental lymphatic vessel (ISLV), and thoracic duct (TD) (K\u00fcchler et al., 2006; Yaniv et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior developmental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "7263a4b4-15e8-4dd4-8a27-1da63e13fb4a",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C19",
+      "claim": "During later migration, the vast majority of the LECs are associated with the arterial intersegmental vessels (aISVs).",
+      "claim_type": "EXPLICIT",
+      "source": "During this later migration, the vast majority of the LECs are associated with the arterial intersegmental vessels (aISVs) (Bussmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior observational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "62dd8291-848c-4ee7-8fe8-a9658a96304a",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C20",
+      "claim": "PLs remain in the HM in mutant embryos lacking aISVs (plcyt26480 and kdrlhu5088 mutants).",
+      "claim_type": "EXPLICIT",
+      "source": "Given that PLs remain in the HM, and subsequently the lymphatic network formation is compromised in mutant embryos lacking aISVs (plcyt26480 and kdrlhu5088 mutants), the aISVs are instrumental in LEC migration (Bussmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "6820473f-a970-42b3-9e61-9d9467073718",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C21",
+      "claim": "Lymphatic network formation is compromised in mutant embryos lacking aISVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that PLs remain in the HM, and subsequently the lymphatic network formation is compromised in mutant embryos lacking aISVs (plcyt26480 and kdrlhu5088 mutants), the aISVs are instrumental in LEC migration (Bussmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5681ce09-b868-4cbb-9e48-4327d62aff75",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C22",
+      "claim": "The aISVs are instrumental in LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that PLs remain in the HM, and subsequently the lymphatic network formation is compromised in mutant embryos lacking aISVs (plcyt26480 and kdrlhu5088 mutants), the aISVs are instrumental in LEC migration (Bussmann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and inference from genetic studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "1d7af02b-777f-4714-afd6-627d6f58ee33",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C23",
+      "claim": "Arterial ECs (aECs) secrete Cxcl12b to guide LEC migration via the Cxcr4 receptor expressed in LECs.",
+      "claim_type": "EXPLICIT",
+      "source": "On the molecular level, arterial ECs (aECs) reportedly secrete Cxcl12b to guide this LECs migration via the Cxcr4 receptor expressed in LECs (Cha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior molecular studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "91b0e9b4-68a7-40df-b8b1-509ee849bc03",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C24",
+      "claim": "Vascular mural cells (MCs) are formed de novo along aISVs and beneath the dorsal aorta simultaneous with LEC development.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous with LEC development described above, vascular mural cells (MCs) are formed de novo along aISVs and beneath the dorsal aorta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data and established developmental knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "6e108ac6-82f6-4a0c-af10-098f219c3781",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C25",
+      "claim": "aISVs play a critical role in MC formation, and MC emergence is completely abolished in the absence of aECs.",
+      "claim_type": "EXPLICIT",
+      "source": "aISVs play a critical role in this process, and MC emergence is completely abolished in the absence of aECs (Ando et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies on MC development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "a610ad25-8897-48df-9561-ed5dfddc4164",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C26",
+      "claim": "MCs are sandwiched between the aISV and the migrating LEC at 4 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the spatial proximity, with MCs being sandwiched between the aISV and the migrating LEC at 4 dpf (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by confocal imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "230500fc-87b7-4396-aee0-ee44b273e508",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C27",
+      "claim": "LECs migrated out from HM immediately after the emergence of pdgfrb+ MCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have observed that LECs migrated out from HM immediately after the emergence of pdgfrb+ MCs (Figure 1B and C, Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "c6e3cf54-32a3-4f43-a167-0ffa4905d99e",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C28",
+      "claim": "In approximately 90% of the cases, LEC migrated towards and interacted with the MC residing on aISV.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing these reporters, we found that in approximately 90% of the cases, LEC migrated towards and interacted with the MC residing on aISV (n = 21 Figure 1D\u2013E, Figure 1\u2014video 5, Figure 1\u2014video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of imaging data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5e693ee9-a9fa-46f8-bed4-a5b242893876",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C29",
+      "claim": "The number of MCs was not changed before and after the LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of MCs was not changed before and after the LEC migration (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "a276a445-edc3-47a5-b493-c9bfff5e84b6",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C30",
+      "claim": "LECs dynamically extended and regressed protrusions and actively reach towards the MCs when migrating out from the HM region.",
+      "claim_type": "EXPLICIT",
+      "source": "When LECs migrated out from the HM region, we noticed that LECs dynamically extended and regressed protrusions and actively reach towards the MCs (Figure 1E, Figure 1\u2014video 4), while MCs appeared still on aISV (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging observations shown in Figure 1E and supplementary videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5a8e7432-5e27-459b-b321-8d78c6847a4e",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C31",
+      "claim": "MCs appeared still on aISV during LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "When LECs migrated out from the HM region, we noticed that LECs dynamically extended and regressed protrusions and actively reach towards the MCs (Figure 1E, Figure 1\u2014video 4), while MCs appeared still on aISV (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging observations shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "db353bd4-9a07-4e9d-8f77-9df3a5a243f5",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C32",
+      "claim": "LECs in contact with the MCs migrated two times faster than LECs migrating along aISV without MCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the biological significance of the interaction between LECs and MCs, we quantified the velocity of LEC migration along aISV and found that the LECs in contact with the MCs migrated two times faster than LECs migrating along aISV without MCs (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative velocity measurements shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "280088f3-0ddc-4a27-aacb-3ae89a7ccd3b",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C33",
+      "claim": "The pdgfrbum148 mutant zebrafish showed a 30% reduction of MC number around aISVs.",
+      "claim_type": "EXPLICIT",
+      "source": "The pdgfrbum148 mutant zebrafish (Kok et al., 2015) showed a 30% reduction of MC number around aISVs (Figure 1H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of MC numbers in mutants shown in Figure 1H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ef195d2d-606c-47cf-b7b0-7adaabc11e21",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C34",
+      "claim": "Trunk lymphatic vasculature formation in pdgfrbum148 mutant zebrafish revealed slight reduction in the network formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidently, trunk lymphatic vasculature formation in pdgfrbum148 mutant zebrafish revealed slight reduction in the network formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by imaging and quantification data shown in Figure 1H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "33427084-98c9-4e5b-acb4-a52abcdaf95f",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C35",
+      "claim": "The rendering of lyve:DsRed labelled lymphatic vessels revealed on average an area of 1 mm2 in the sibling vs. 0.7 mm2 in the pdgfrbum148 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The rendering of lyve:DsRed labelled lymphatic vessels, as a measurement of lymphatic vessels density, revealed on average an area of 1 mm2 in the sibling vs. 0.7 mm2 in the pdgfrbum148 mutants (Figure 1H and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative surface area measurements shown in Figure 1H and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "55db5b07-1f44-4b78-a062-7b6d3d12952a",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C36",
+      "claim": "Treatment with a PDGFR\u03b2 inhibitor, AG1296 from 48 hpf onwards, led to a greater reduction in MC coverage and LECs number.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with a PDGFR\u03b2 inhibitor, AG1296 from 48 hpf onwards, led to a greater reduction in MC coverage and LECs number (Figure 1\u2014figure supplement 2A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from inhibitor treatment shown in Figure 1\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "2b6274bf-132d-4d4c-98a9-6b9a3321be61",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C37",
+      "claim": "When ablating MCs just prior to LEC migration out from HM region, LEC migration along aISV and subsequently TD formation were severely compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "When ablating MCs just prior to LEC migration out from HM region by utilizing this MC-selective NTR-MTZ ablation system, LEC migration along aISV and subsequently TD formation were severely compromised (Figure 2A\u2013C, Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell ablation experiments shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e910499f-6c23-4720-b698-6f212f6ad525",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C38",
+      "claim": "LEC migration was dramatically inhibited in the MC-ablated group compared to the control non-MC-ablated group over 5 hours post ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-lapse imaging over 5 hours post ablation (hpa) confirmed that LEC migration was dramatically inhibited in the MC-ablated group compared to the control non-MC-ablated group (Figure 2F and H, Figure 2\u2014video 1, Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging data following laser ablation shown in Figure 2F and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "eb62a3ae-31dd-4ede-ad7f-21faaea7a384",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C39",
+      "claim": "40% of the larvae receiving MC ablation failed to form DLLV completely, while all control larvae form DLLVs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also imaged the same embryos 1 day later and observed that 40% of the larvae receiving MC ablation failed to form DLLV completely, while all control larvae form DLLVs (Figure 2G and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by follow-up imaging and quantification shown in Figure 2G and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "0bc8a577-cab3-4fcc-a636-7d15faea4af9",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C40",
+      "claim": "The absence of MCs does not affect arterial identity at early stages in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the absence of MCs does not affect arterial identity at early stages in zebrafish (Ando et al., 2019), arguing that the importance of MC in LEC development is not simply to regulate aEC presence or abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies on arterial development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "33a29f03-6f0c-4f95-96f4-2819deeb37de",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C41",
+      "claim": "Even in the absence of aECs, but remaining presence of MCs, LEC migration progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that even in the absence of aECs, but remaining presence of MCs, LEC migration progressed (Figure 2\u2014figure supplement 3), suggesting that signals from MCs are sufficient to promote LEC migration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by laser ablation experiments shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "688e8b4f-c625-475f-8881-1040b301ed7b",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C42",
+      "claim": "Signals from MCs are sufficient to promote LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that even in the absence of aECs, but remaining presence of MCs, LEC migration progressed (Figure 2\u2014figure supplement 3), suggesting that signals from MCs are sufficient to promote LEC migration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the observation that LEC migration continues without aECs but with MCs present.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "95eef47a-bf3a-446e-9e73-0602d987865e",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C43",
+      "claim": "Two clusters express a previously identified pericyte gene signature (e.g. high levels of notch3, pdgfrb, and ndufa4l2a).",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis we found two clusters that express a previously identified pericyte gene signature (e.g. high levels of notch3, pdgfrb, and ndufa4l2a; Figure 3B; Figure 3\u2014figure supplement 1), as well as pericyte-like cells that lacked the definitive pericyte marker, ndufa4l2a (Shih et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq analysis shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "8df9d658-a305-4f9e-bd76-2dba5da68a47",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C44",
+      "claim": "Pericyte-like cells lacked the definitive pericyte marker, ndufa4l2a.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis we found two clusters that express a previously identified pericyte gene signature (e.g. high levels of notch3, pdgfrb, and ndufa4l2a; Figure 3B; Figure 3\u2014figure supplement 1), as well as pericyte-like cells that lacked the definitive pericyte marker, ndufa4l2a (Shih et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq analysis shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5ca620ef-9a39-4c30-b16e-cc5589ae4881",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C45",
+      "claim": "Vegfc expression is prominent in pericyte and pericyte-like cells, with lower levels detectable in several smooth muscle cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed prominent vegfc expression in pericyte and pericyte-like cells, with lower levels detectable in several smooth muscle cell clusters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq expression analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5d3c3a06-9022-4438-aa71-1d65d380ebcd",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C46",
+      "claim": "Only peri-like cells expressed ccbe1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only peri-like cells expressed ccbe1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq expression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "1ed69b7e-a161-4267-86fa-27499b25ad55",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C47",
+      "claim": "Only a single SMC cluster expressed adamts3 while adamts14 was not detected in any clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, only a single SMC cluster expressed adamts3 while adamts14 was not detected in any clusters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq expression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "0e20b105-a96c-4720-93a5-813b9003f3a6",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C48",
+      "claim": "Cxcl12a was seen in multiple cell types with prominent expression in pericytes, as well as the two vegfc-expressing smooth muscle cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to vegfc, cxcl12a was seen in multiple cell types with prominent expression in pericytes, as well as the two vegfc-expressing smooth muscle cell clusters (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq expression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ed1e6a5b-b1c6-4819-97d5-be0a0785b946",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C50",
+      "claim": "Putative pericytes expressed ackr3b, the atypical receptor for Cxcl12.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, putative pericytes expressed ackr3b, the atypical receptor for Cxcl12 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by scRNA-seq expression analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "d85a4a61-b83d-4285-8843-8dd756522d66",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C51",
+      "claim": "LECs express ackr3b but low levels of cxcr4a and cxcr4b.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed expression of ackr3b but low levels of cxcr4a and cxcr4b (Figure 3\u2014figure supplement 3B), thus supporting previously reported expression of chemokine receptors in LECs (Cha et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR analysis of sorted LECs shown in Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ab25de6c-5e02-4638-b7d0-ec9356daddec",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C52",
+      "claim": "Abcc9-positive cells from dissociated trunks show significantly higher expression of cxcl12a, vegfc, and ccbe1 compared to EGFP-negative cells isolated in parallel.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our scRNA-seq analysis, we found that abcc9-positive cells from dissociated trunks show significantly higher expression of cxcl12a, vegfc, and ccbe1 compared to EGFP-negative cells isolated in parallel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qPCR analysis of FACS-sorted cells shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "b94e926a-3a63-4e4a-8cd4-12feb079c59f",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C53",
+      "claim": "Cxcl12a, cxcl12b, and vegfc were detected in arteries, but not ccbe1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected cxcl12a, cxcl12b, and vegfc in arteries, but not ccbe1 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR analysis of sorted arterial ECs shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "7c8cc41c-0b93-4824-92cb-3f0de12ac816",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C54",
+      "claim": "There is a trend of enrichment of vegfc and ccbe1 expression in the pdgfrbhigh MCs on aISV compared to the rest of the pdgfrblow mesenchyme around aISV.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that vegfc and ccbe1 is expressed in the MCs, we used immunostaining of BAC-transgenic lines Tg(vegfc:Gal4; UAS:RFP; pdgfrb:GFP) and Tg(ccbe1:YFP;pdgfrb:Gal4; UAS:NTRmcherry), and observed a trend of enrichment of vegfc and ccbe1 expression in the pdgfrbhigh MCs on aISV compared to the rest of the pdgfrblow mesenchyme around aISV (Figure 3F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunostaining and quantification shown in Figure 3F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "3ed02505-f41d-45eb-8672-89dfac44e17d",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C55",
+      "claim": "Migrating LECs are positive for phospho(p)-ERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we determined that migrating LECs are positive for phospho(p)-ERK (Figure 3H), which is known to be activated downstream of Vegfc-Vegfr3 or Cxcl12-Cxcr4 signalling (Spinosa et al., 2019; Xing et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "15a0fd7b-d762-41df-8947-10242e92c06b",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C56",
+      "claim": "pERK is known to be activated downstream of Vegfc-Vegfr3 or Cxcl12-Cxcr4 signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we determined that migrating LECs are positive for phospho(p)-ERK (Figure 3H), which is known to be activated downstream of Vegfc-Vegfr3 or Cxcl12-Cxcr4 signalling (Spinosa et al., 2019; Xing et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior signaling studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "dc366251-c814-4bd9-b766-73bccf4149db",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C57",
+      "claim": "Chemokines have been shown to be important for LEC migration with LECs being attracted by mosaic overexpression of cxcl12b.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemokines have been shown to be important for LEC migration with LECs being attracted by mosaic overexpression of cxcl12b, whereas the cxcl12a, cxcl12b, and cxcr4a mutants show defects in TD formation (Cha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies on chemokine function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "a1a51c56-b9c3-4559-9768-6e9834b073c3",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C58",
+      "claim": "The cxcl12a, cxcl12b, and cxcr4a mutants show defects in TD formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemokines have been shown to be important for LEC migration with LECs being attracted by mosaic overexpression of cxcl12b, whereas the cxcl12a, cxcl12b, and cxcr4a mutants show defects in TD formation (Cha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "d55faecf-0d90-4433-8887-d263710e6e8c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C59",
+      "claim": "In AMD3100-treated embryos, LECs migrated shorter distances with decreased velocity compared with the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse imaging revealed that in AMD3100-treated embryos, LECs migrated shorter distances with decreased velocity compared with the controls (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging and quantification shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "893f7eab-d5b2-4550-9141-e7be4b645fc3",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C60",
+      "claim": "An increased number of filopodia was found in AMD3100-treated embryos reaching statistical significance 7.5 hours after exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an increased number of filopodia reaching statistical significance 7.5 hours after exposure (Figure 4E\u2013F, Figure 4\u2014videos 5\u20138).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of filopodia formation shown in Figure 4E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "a288e0d7-ebee-433b-bc2f-0286f5153697",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C61",
+      "claim": "Filopodia formation extended not only towards the migrating front but also laterally in AMD3100-treated embryos, implying the compromised directional migration of LECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed filopodia formation extended not only towards the migrating front but also laterally in AMD3100-treated embryos, implying the compromised directional migration of LECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of filopodia orientation in treated embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "7ca31399-15fe-4f71-94c4-a2541690c1bb",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C62",
+      "claim": "LEC apoptosis was not observed in the AMD3100-treated embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "While, we did not observe the LEC apoptosis in the AMD3100-treated embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "4094248d-9275-408b-9519-44dcaa12fc3b",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C63",
+      "claim": "Tracing the migration distance revealed a reduced number of migrating cells and increased number of cells that stalled or regressed their migration in SL327-treated embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracing the migration distance revealed a reduced number of migrating cells and increased number of cells that stalled or regressed their migration in SL327-treated embryos (n = 5) (Figure 4H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell tracking analysis shown in Figure 4H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "45222835-79bc-4b65-af16-e9174cbf1f72",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C64",
+      "claim": "A dramatic decrease of LEC division from 25% in controls to 1.5% in SL327-treated embryos was found.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a dramatic decrease of LEC division from 25% in controls to 1.5% in SL327-treated embryos (Figure 4J\u2013K), which is in agreement with the known necessary role of Vegfc-Vegfr3 in cell proliferation (Cao et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification of cell division shown in Figure 4J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "f7a71caf-0e8c-4555-96e6-ba2cbd3e511d",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C65",
+      "claim": "Vegfc-Vegfr3 has a known necessary role in cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a dramatic decrease of LEC division from 25% in controls to 1.5% in SL327-treated embryos (Figure 4J\u2013K), which is in agreement with the known necessary role of Vegfc-Vegfr3 in cell proliferation (Cao et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies on Vegfc-Vegfr3 signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "9bb84bae-8092-4771-a88e-90bdfca5faf1",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C66",
+      "claim": "SL327 treatment induced cell death in 7 out of 12 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "SL327 treatment induced cell death in 7 out of 12 cells, which was further confirmed by TUNEL staining (Figure 4\u2014figure supplement 2B-C), suggesting that during this lymphatic developmental window ERK activation acts as a LEC pro-survival factor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by TUNEL staining data shown in Figure 4\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "518e873c-d3c8-4a1c-9eff-ffd43d99b025",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C67",
+      "claim": "During this lymphatic developmental window ERK activation acts as a LEC pro-survival factor.",
+      "claim_type": "EXPLICIT",
+      "source": "SL327 treatment induced cell death in 7 out of 12 cells, which was further confirmed by TUNEL staining (Figure 4\u2014figure supplement 2B-C), suggesting that during this lymphatic developmental window ERK activation acts as a LEC pro-survival factor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that ERK inhibition leads to cell death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "54a67f5a-a908-4ee9-b1ec-47760227a720",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C68",
+      "claim": "ERK activation is primarily induced by Vegfc during the LEC specification and sprouting from the PCV.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that ERK activation is primarily induced by Vegfc during the LEC specification and sprouting from the PCV (Karkkainen et al., 2004; Koltowska et al., 2015a), our results showed that Vegfc-Vegfr3 signalling also instructs LEC in the subsequent migratory events from HM to establish the lymphatic vessel network in the trunk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies on ERK activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e9d84915-dd55-4277-978b-6cfeb11e15f5",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C69",
+      "claim": "Vegfc-Vegfr3 signalling instructs LEC in the subsequent migratory events from HM to establish the lymphatic vessel network in the trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that ERK activation is primarily induced by Vegfc during the LEC specification and sprouting from the PCV (Karkkainen et al., 2004; Koltowska et al., 2015a), our results showed that Vegfc-Vegfr3 signalling also instructs LEC in the subsequent migratory events from HM to establish the lymphatic vessel network in the trunk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing ERK activation and migration defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "5c350c29-2d78-4a77-bdde-d0244cb483da",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C70",
+      "claim": "Embryos treated with soluble Flt4 showed severe impairments in LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos treated with soluble Flt4 showed severe impairments in LEC migration (Figure 5B\u2013D, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by time-lapse imaging data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "d1e92443-61ab-4911-b650-a79ebfb2ee0c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C71",
+      "claim": "No difference in LEC survival was observed between heatshock only and the combinatory-treated group.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed no difference in LEC survival between in heatshock only and the combinatory-treated group (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantification shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "2ce62d8e-c3cc-4d34-8e61-6853db7ff845",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C72",
+      "claim": "The combinatory treatment further decreased the LEC migrating distance, but only marginally.",
+      "claim_type": "EXPLICIT",
+      "source": "The combinatory treatment further decreased the LEC migrating distance, but only marginally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of migration distance in combinatorial treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "bbdd90fe-271c-4dbc-83a6-9cce331c7fc8",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C73",
+      "claim": "No additive effects on the velocity of migrating LEC were observed by the combinatory treatment, suggesting cooperation rather than mechanistic interaction of these two signalling pathways in the coordination of LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly we observed no additive effects on the velocity of migrating LEC by the combinatory treatment, suggesting cooperation rather than mechanistic interaction of these two signalling pathways in the coordination of LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of additive effects in combinatorial inhibition experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "6e12b1a3-2a20-4c39-81dc-e6a97959f3db",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C74",
+      "claim": "A dramatic reduction in LEC numbers and ERK activation was observed upon soluble Flt4 treatment or combinatory treatment but not in AMD3100-treated group.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a dramatic reduction in LEC numbers and ERK activation upon soluble Flt4 treatment or combinatory treatment but not in AMD3100-treated group (Figure 5E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry and quantification shown in Figure 5E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "fd558b85-52c8-417e-b6ab-f60c858dd4cd",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C75",
+      "claim": "No change in ERK activation was observed in AMD3100 treatment alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we overserved no change in ERK activation in AMD3100 treatment alone (Figure 5E, Figure 5\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 5E and Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "6fae7f0e-3d8e-44c7-ae43-cb17102df164",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C76",
+      "claim": "ERK activation may be induced mainly via Vegfc-Vegfr3 signalling rather than Cxcl12-Cxcr4 signalling during LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these data indicate that ERK activation may be induced mainly via Vegfc-Vegfr3 signalling rather than Cxcl12-Cxcr4 signalling during LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of Vegfr3 and Cxcr4 inhibition on ERK activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "d778d4cf-98b0-42dc-9df8-3ec13e00ebf4",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C77",
+      "claim": "Chemokine and Vegfc-Vegfr3 signalling pathways cooperate to promote proper LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data provide evidence that these signalling pathways cooperate to promote proper LEC migration (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the combinatorial inhibition experiments showing cooperation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ec325d6b-0245-432d-9c86-b927b2c97e28",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C78",
+      "claim": "MCs provide a signalling threshold for LECs to robustly migrate from the HM region and progress dorsally across the trunk of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that MCs provided a signalling threshold for LECs robustly migrate from the HM region and progress dorsally across the trunk of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "395efe3b-92dc-4250-a118-57cf8a017db5",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C79",
+      "claim": "Multiple cellular sources work together to establish the favourable levels of signalling for LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on observations from Wang et al. and Karpanen et al., which uncovered cellular constituents for lymphangiogenic factors at earlier stages of LEC development (Karpanen et al., 2017; Wang et al., 2020) and our study revealing role for MC in LEC migration, thus it becomes evident that multiple cellular sources work together to establish the favourable levels of signalling for LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from integration of current findings with prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "52683a53-bbb8-4fcb-8b76-a804b7c76558",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C80",
+      "claim": "Chemokines are necessary for the progression of LEC migration and in their absence migrating cells show an increased number of filopodia, suggesting a loss in directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "We have determined that chemokines are necessary for the progression of LEC migration and in their absence migrating cells show an increased number of filopodia, suggesting a loss in directionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from AMD3100 treatment experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "c2c1684a-d761-44ae-8376-1810e2b98a2d",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C81",
+      "claim": "Inhibition of Vegfc-Vegfr3 signalling leads to more severe phenotypes where disrupted LEC migration was accompanied by reduced proliferation and increased cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas inhibition of Vegfc-Vegfr3 signalling lead to more severe phenotypes where disrupted LEC migration was accompanied by reduced proliferation and increased cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from soluble Flt4 and SL327 treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "8bd30cc4-42f2-4bfa-9124-6de72d2c47b7",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C82",
+      "claim": "During the LEC migration Vegfc-Vegfr3 signalling has a dual role in guiding lymphatic and promoting their survival.",
+      "claim_type": "EXPLICIT",
+      "source": "This uncovers that during the LEC migration Vegfc-Vegfr3 signalling has a dual role in guiding lymphatic and promoting their survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of both migration and survival defects upon Vegfc-Vegfr3 inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "f6386d61-dce1-494b-ab58-fbccbca530eb",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C83",
+      "claim": "The published migratory phenotypes in the cxcl12a, cxcl12b, and cxcr4a mutants are milder to the ones observed in the SL327 drug treatment experiment or the cell ablation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that the published migratory phenotypes in the cxcl12a, cxcl12b, and cxcr4a mutants are milder (Cha et al., 2012) to the ones observed in the SL327 drug treatment experiment or the cell ablation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of current experimental results with published mutant phenotypes.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "101ad396-2d09-4d39-bc61-423d42d2d8fc",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C84",
+      "claim": "Additional chemokine receptors might act together to regulate LEC migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, additional chemokine receptors might act together to regulate LEC migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the discrepancy between mutant and inhibitor phenotypes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ac600b2f-9655-4531-802c-62f60e0a14fc",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C85",
+      "claim": "Higher levels of atypical receptor ackr3b (cxcr7) than cxcr4 were observed in LECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have observed higher levels of atypical receptor ackr3b (cxcr7) than cxcr4 in LECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on qPCR analysis of sorted LECs shown in Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "ab33591b-6b4b-421e-991c-bd6fdf56f956",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C86",
+      "claim": "The role of ackr3b has been suggested to either act as a scavenger receptor to lower the signalling and ensure for correct directionality of lateral line migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of this receptor has been suggested to either act as a scavenger receptor to lower the signalling and ensure for correct directionality of lateral line migration (Dona et al., 2013) as well as it refining LEC migration in mice (Klein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies on ackr3b function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "9707947d-4451-47c2-8e7a-354258e004ef",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C87",
+      "claim": "Ackr3b has been suggested to refine LEC migration in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of this receptor has been suggested to either act as a scavenger receptor to lower the signalling and ensure for correct directionality of lateral line migration (Dona et al., 2013) as well as it refining LEC migration in mice (Klein et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior studies on ackr3b function in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e94d2258-5611-4de1-b962-110204003db4",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C88",
+      "claim": "Colonization of the aISV by MCs may provide the signalling needed for robust LEC migration after moving away the HM region and migration along the aISVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since other sources of Cxcl12 and Vegfc have already been demonstrated in the zebrafish embryonic trunk (Cha et al., 2012; Wang et al., 2020), we propose that colonization of the aISV by MCs may provide the signalling needed for robust LEC migration after moving away the HM region and migration along the aISVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on integration of current findings with prior studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e103fd6c-5d56-4a5c-afbe-0911ea36ea37",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C89",
+      "claim": "PDGFR\u03b2 is essential for MC development, especially their proliferation and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "PDGFR\u03b2 is known to be essential for MC development, especially their proliferation and migration (Ando et al., 2016; Gaengel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies on PDGFR\u03b2 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "03187e2e-32e9-41d6-a59e-e1e504342436",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C90",
+      "claim": "Rajan et al. have described a pdgfrblow perivascular fibroblast that expresses nkx3-1 and appears to be required for vessel stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Rajan et al. have described a pdgfrblow perivascular fibroblast that expresses nkx3-1 and appears to be required for vessel stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on perivascular fibroblasts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e8ca75da-ddd6-4d74-83f6-87a24d400ab5",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C91",
+      "claim": "A pdgfra-positive fibroblast population that expresses vegfc, ccbe1, adamt3, and adamts14 can contribute to lymphatic vessel patterning in the trunk.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a pdgfra-positive fibroblast population that expresses vegfc, ccbe1, adamt3, and adamts14 can contribute to lymphatic vessel patterning in the trunk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on fibroblast populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "9aeb80e9-cb84-4b62-b718-dfa4b856ed2c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C92",
+      "claim": "This pro-lymphatic fibroblast population can be uniquely defined within pdgfra-positive fibroblasts by expression of the Engrailed paralogs, en1a and -b.",
+      "claim_type": "EXPLICIT",
+      "source": "This pro-lymphatic fibroblast population can be uniquely defined within pdgfra-positive fibroblasts by expression of the Engrailed paralogs, en1a and -b (Wang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work defining fibroblast populations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "dd091f63-682a-4d48-a2f3-34d844a13a33",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "claim_id": "C93",
+      "claim": "Pro-lymphatic MCs identified in this study are distinct from previously reported perivascular fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite identification of two distinct fibroblast clusters from pdgfrb-positive cells, neither exhibited expression of nkx3-1, en1a, or en1b, suggesting that pro-lymphatic MCs identified in our study are distinct from those previously reported perivascular fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of expression of fibroblast markers in the MC clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "362dfdd0-144e-418c-800c-d7a06caade32",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mural cells (MCs) emerge around arterial intersegmental vessels (aISVs) coincident with lymphatic endothelial cell (LEC) migration from the horizontal myoseptum (HM). LECs migrate toward and interact with MCs in approximately 90% of cases, with LECs in contact with MCs migrating twice as fast as those without MC contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C32 provide converging evidence from time-lapse imaging (Figure 1B-E) showing temporal correlation between MC emergence and LEC migration, spatial proximity of MCs between aISVs and LECs (Figure 1A), and quantitative velocity measurements (Figure 1G) demonstrating functional significance. The high frequency of LEC-MC interaction (90%, n=21) and consistent MC numbers before/after migration support the robustness of these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "9db64cc3-219c-4e27-b367-fae93535e09e",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genetic and pharmacological reduction of MCs impairs LEC migration and lymphatic network formation. The pdgfrbum148 mutant shows 30% MC reduction and decreased lymphatic vessel area, while MC ablation severely compromises LEC migration along aISVs and thoracic duct formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C33-C39 are supported by multiple complementary approaches: genetic mutant analysis (Figure 1H-J), pharmacological inhibition (Figure 1\u2014figure supplement 2), and both NTR-MTZ ablation (Figure 2A-C) and laser ablation (Figure 2D-I) experiments. The convergence of phenotypes across different methods strengthens the conclusion. However, the pdgfrbum148 mutant shows only partial MC reduction and mild lymphatic defects, while ablation experiments show more severe phenotypes, suggesting dose-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "59463ceb-01eb-42e0-ac1c-8734448cfc73",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mural cells express pro-lymphangiogenic factors including Cxcl12a, Cxcl12b, Vegfc, and Ccbe1. scRNA-seq analysis identifies pericyte and pericyte-like cell clusters expressing these factors, confirmed by qPCR of FACS-sorted MC-enriched populations and immunostaining of transgenic reporter lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C43-C48, C52-C54 are supported by multiple orthogonal approaches: scRNA-seq re-analysis (Figure 3A-C), qPCR validation of sorted cells (Figure 3D-E), and immunostaining (Figure 3F-G). The convergence of transcriptomic and validation data strengthens these findings. However, C54 notes only a 'trend' of enrichment in immunostaining, suggesting spatial heterogeneity or technical limitations. The distinction between pdgfrbhigh MCs on aISVs versus pdgfrblow mesenchyme requires more rigorous quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "6773a16b-4e98-46a7-a996-65deba1da041",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Signals from MCs are sufficient to promote LEC migration even in the absence of arterial endothelial cells (aECs), as demonstrated by laser ablation experiments where LEC migration progressed when MCs remained present after aEC ablation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 are based on laser ablation experiments (Figure 2\u2014figure supplement 3) showing LEC migration continues without aECs but with MCs present. However, the authors acknowledge that aISVs rapidly regrow following laser ablation, limiting assessment of long-term effects. The sample size and duration of observation are not clearly specified, and the claim of 'sufficiency' is strong given that the experiment only demonstrates migration can proceed, not that it proceeds normally. Additional controls and longer-term analysis would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "aa8b05b6-f22d-422d-9966-461a5555583c",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chemokine signaling via Cxcr4 is necessary for proper LEC migration directionality. AMD3100 treatment (Cxcr4 inhibitor) reduces LEC migration distance and velocity, increases filopodia formation with loss of directionality, but does not induce LEC apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62, C80 are supported by time-lapse imaging with AMD3100 treatment (Figure 4A-F) showing quantitative defects in migration distance, velocity, and filopodia formation. The observation of increased lateral filopodia (C61) supports the inference of compromised directionality. The lack of apoptosis (C62) distinguishes chemokine function from Vegfc-Vegfr3 signaling. However, C57-C58 rely on prior literature citations, and the current study's findings with AMD3100 are more severe than published mutant phenotypes (C83), suggesting potential off-target effects or redundancy among chemokine receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "bd62378a-b269-4423-b57d-a13c5b232baf",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Vegfc-Vegfr3 signaling induces ERK activation in migrating LECs and has dual roles in promoting both LEC migration and survival. MEK inhibitor (SL327) treatment reduces LEC migration, dramatically decreases proliferation (25% to 1.5%), and induces cell death, while chemokine inhibition does not affect ERK activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C55-C56, C63-C64, C66-C69, C81-C82 are supported by immunohistochemistry showing pERK in migrating LECs (Figure 3H), time-lapse imaging with SL327 treatment (Figure 4G-K), and TUNEL staining (Figure 4\u2014figure supplement 2B-C). The dramatic effects on proliferation and survival distinguish Vegfc-Vegfr3 from chemokine signaling. However, the inference that ERK activation is a 'pro-survival factor' (C67, C82) is based on correlation between ERK inhibition and cell death, which could reflect indirect effects. The claim that Vegfc-Vegfr3 'instructs' subsequent migration (C69) is an inference from the data rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "822196f2-86e6-4161-a11d-353a657b1724",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chemokine and Vegfc-Vegfr3 signaling pathways cooperate to promote LEC migration. Combinatorial inhibition with soluble Flt4 and AMD3100 shows non-additive effects on migration velocity, and ERK activation is induced mainly via Vegfc-Vegfr3 rather than Cxcl12-Cxcr4 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C70-C77 are supported by combinatorial inhibition experiments (Figure 5A-G) showing that combined treatment does not produce additive effects on velocity (C73), suggesting cooperation rather than independent pathways. The differential effects on ERK activation (C74-C76) provide mechanistic insight. However, the interpretation of 'cooperation' versus 'mechanistic interaction' (C73) is somewhat ambiguous and could benefit from more precise definition. The claim that ERK is induced 'mainly' via Vegfc-Vegfr3 (C76) is an inference from the lack of ERK reduction with AMD3100 alone, but residual pERK after soluble Flt4 treatment suggests additional complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "d872d2a2-3013-4bc9-81fb-bd0388ba8342",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Pro-lymphatic MCs identified in this study are distinct from previously reported perivascular fibroblasts, as MC clusters lack expression of fibroblast markers nkx3-1, en1a, and en1b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is supported by scRNA-seq analysis (Figure 3\u2014figure supplement 1) showing absence of fibroblast markers in MC clusters. This distinction is important for establishing MCs as a novel cellular source of pro-lymphangiogenic factors. However, the analysis relies on re-clustering of published data from whole embryos, and the absence of marker expression could reflect technical limitations (e.g., low expression below detection threshold) rather than true biological distinction. Spatial validation would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "e6e39ac0-5cd0-46a8-b2ee-a877d83ea246",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple cellular sources including MCs, fibroblasts, and neurons work together to establish favorable signaling levels for LEC migration, with MCs providing a signaling threshold for robust migration from the HM region along aISVs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79, C88 are explicitly speculative (C78 states 'we speculate') and represent integration of current findings with prior literature. While the model is reasonable given the data, it lacks direct experimental support for the concept of a 'signaling threshold' or quantitative assessment of how multiple sources integrate. The claims are more appropriately characterized as discussion/interpretation rather than demonstrated results. Additional experiments measuring local concentrations of factors or testing predictions of the threshold model would be needed to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about lymphatic development, VEGFC-VEGFR3 signaling, arterial vessel roles, mural cell development, and previously identified fibroblast populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C25, C40, C65, C89-C92 are supported by citations to established literature and represent accurate summaries of prior work. These provide necessary context for the current study but are not novel findings. C11 and C65 regarding VEGFC-VEGFR3's role in proliferation are well-established and cited appropriately. Claims about zebrafish lymphatic development (C16-C22) and MC development (C24-C25, C89) are similarly well-supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "a77b1637-ad43-4cf4-93f9-a48ccd0624d0",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LECs express the atypical chemokine receptor ackr3b at higher levels than cxcr4a and cxcr4b, and putative pericytes also express ackr3b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51, C85 are supported by scRNA-seq data (Figure 3\u2014figure supplement 1) and qPCR of sorted LECs (Figure 3\u2014figure supplement 3B). The expression pattern is consistent and suggests potential roles for ackr3b in regulating chemokine signaling. However, the functional significance of ackr3b expression is not tested experimentally in this study, and the discussion of its potential roles (C86-C87) relies on citations to other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    },
+    {
+      "id": "0075ce19-1f2f-44da-af00-520a612b96c7",
+      "content_id": "0d0fad8b-92d0-40b2-8977-f1242732bc46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Published mutant phenotypes for cxcl12a, cxcl12b, and cxcr4a are milder than those observed with pharmacological inhibition, suggesting additional chemokine receptors might act together to regulate LEC migration, potentially including ackr3b which has been implicated in migration in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C84, C86-C87 represent comparative analysis and speculation. C83 is a valid observation comparing current results to published data, but C84 is explicitly speculative ('might act together'). C86-C87 cite prior work on ackr3b function in other systems but do not test its role in the current context. These claims identify important questions for future work but lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:56:05.622217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "aa48aac4-0cda-4bd7-b75a-9bf96b4d0c97",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "a610ad25-8897-48df-9561-ed5dfddc4164",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "230500fc-87b7-4396-aee0-ee44b273e508",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "c6e3cf54-32a3-4f43-a167-0ffa4905d99e",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "5e693ee9-a9fa-46f8-bed4-a5b242893876",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "a276a445-edc3-47a5-b493-c9bfff5e84b6",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "5a8e7432-5e27-459b-b321-8d78c6847a4e",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "db353bd4-9a07-4e9d-8f77-9df3a5a243f5",
+      "result_id": "362dfdd0-144e-418c-800c-d7a06caade32"
+    },
+    {
+      "claim_id": "5e6b2d1b-bdff-436d-9be8-044b25eca635",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "ca9e562b-1e9c-42de-99f4-717c54657345",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "280088f3-0ddc-4a27-aacb-3ae89a7ccd3b",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "ef195d2d-606c-47cf-b7b0-7adaabc11e21",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "33427084-98c9-4e5b-acb4-a52abcdaf95f",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "55db5b07-1f44-4b78-a062-7b6d3d12952a",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "2b6274bf-132d-4d4c-98a9-6b9a3321be61",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "e910499f-6c23-4720-b698-6f212f6ad525",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "eb62a3ae-31dd-4ede-ad7f-21faaea7a384",
+      "result_id": "9db64cc3-219c-4e27-b367-fae93535e09e"
+    },
+    {
+      "claim_id": "5fcc09e4-463c-4493-a914-27a6d34165b4",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "5cfd5b61-b4b6-4b6e-9db6-3809b9451ea9",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "60cf15ac-e02c-4f33-907f-694774474c15",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "95eef47a-bf3a-446e-9e73-0602d987865e",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "8df9d658-a305-4f9e-bd76-2dba5da68a47",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "5ca620ef-9a39-4c30-b16e-cc5589ae4881",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "5d3c3a06-9022-4438-aa71-1d65d380ebcd",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "1ed69b7e-a161-4267-86fa-27499b25ad55",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "0e20b105-a96c-4720-93a5-813b9003f3a6",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "ab25de6c-5e02-4638-b7d0-ec9356daddec",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "b94e926a-3a63-4e4a-8cd4-12feb079c59f",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "7c8cc41c-0b93-4824-92cb-3f0de12ac816",
+      "result_id": "59463ceb-01eb-42e0-ac1c-8734448cfc73"
+    },
+    {
+      "claim_id": "33a29f03-6f0c-4f95-96f4-2819deeb37de",
+      "result_id": "6773a16b-4e98-46a7-a996-65deba1da041"
+    },
+    {
+      "claim_id": "688e8b4f-c625-475f-8881-1040b301ed7b",
+      "result_id": "6773a16b-4e98-46a7-a996-65deba1da041"
+    },
+    {
+      "claim_id": "dc366251-c814-4bd9-b766-73bccf4149db",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "a1a51c56-b9c3-4559-9768-6e9834b073c3",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "d55faecf-0d90-4433-8887-d263710e6e8c",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "893f7eab-d5b2-4550-9141-e7be4b645fc3",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "a288e0d7-ebee-433b-bc2f-0286f5153697",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "7ca31399-15fe-4f71-94c4-a2541690c1bb",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "52683a53-bbb8-4fcb-8b76-a804b7c76558",
+      "result_id": "aa8b05b6-f22d-422d-9966-461a5555583c"
+    },
+    {
+      "claim_id": "4cb2b078-213e-4c5f-be70-66839b6aa26a",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "3ed02505-f41d-45eb-8672-89dfac44e17d",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "15a0fd7b-d762-41df-8947-10242e92c06b",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "4094248d-9275-408b-9519-44dcaa12fc3b",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "45222835-79bc-4b65-af16-e9174cbf1f72",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "9bb84bae-8092-4771-a88e-90bdfca5faf1",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "518e873c-d3c8-4a1c-9eff-ffd43d99b025",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "54a67f5a-a908-4ee9-b1ec-47760227a720",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "e9d84915-dd55-4277-978b-6cfeb11e15f5",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "c2c1684a-d761-44ae-8376-1810e2b98a2d",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "8bd30cc4-42f2-4bfa-9124-6de72d2c47b7",
+      "result_id": "bd62378a-b269-4423-b57d-a13c5b232baf"
+    },
+    {
+      "claim_id": "be5eb715-51ea-4547-aafe-3f6c1217df67",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "5c350c29-2d78-4a77-bdde-d0244cb483da",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "d1e92443-61ab-4911-b650-a79ebfb2ee0c",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "2ce62d8e-c3cc-4d34-8e61-6853db7ff845",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "bbdd90fe-271c-4dbc-83a6-9cce331c7fc8",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "6e12b1a3-2a20-4c39-81dc-e6a97959f3db",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "fd558b85-52c8-417e-b6ab-f60c858dd4cd",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "6fae7f0e-3d8e-44c7-ae43-cb17102df164",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "d778d4cf-98b0-42dc-9df8-3ec13e00ebf4",
+      "result_id": "822196f2-86e6-4161-a11d-353a657b1724"
+    },
+    {
+      "claim_id": "dd091f63-682a-4d48-a2f3-34d844a13a33",
+      "result_id": "d872d2a2-3013-4bc9-81fb-bd0388ba8342"
+    },
+    {
+      "claim_id": "ec325d6b-0245-432d-9c86-b927b2c97e28",
+      "result_id": "e6e39ac0-5cd0-46a8-b2ee-a877d83ea246"
+    },
+    {
+      "claim_id": "395efe3b-92dc-4250-a118-57cf8a017db5",
+      "result_id": "e6e39ac0-5cd0-46a8-b2ee-a877d83ea246"
+    },
+    {
+      "claim_id": "e94d2258-5611-4de1-b962-110204003db4",
+      "result_id": "e6e39ac0-5cd0-46a8-b2ee-a877d83ea246"
+    },
+    {
+      "claim_id": "b0a4413b-de8c-40c3-8fd5-6d55f994b613",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "f7a71caf-0e8c-4555-96e6-ba2cbd3e511d",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "c6794fd8-8951-4139-b5b6-750bb5363844",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "088e396c-5866-4481-946f-400605b5a506",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "83e72a2b-e95b-472c-b8f3-ba010221e99c",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "1b64a12b-a17e-44e0-a620-90b0157c620a",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "2fa0d084-e87c-4f3e-8587-37b47e406f5c",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "f7cf95e5-eef4-4179-b082-dbcefc66ba6c",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "c1ffeab7-a7e4-4ddc-83cd-9841ee398953",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "16a8db83-06ad-4b7c-a31a-96fef79da824",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "7263a4b4-15e8-4dd4-8a27-1da63e13fb4a",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "62dd8291-848c-4ee7-8fe8-a9658a96304a",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "6820473f-a970-42b3-9e61-9d9467073718",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "5681ce09-b868-4cbb-9e48-4327d62aff75",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "1d7af02b-777f-4714-afd6-627d6f58ee33",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "91b0e9b4-68a7-40df-b8b1-509ee849bc03",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "6e108ac6-82f6-4a0c-af10-098f219c3781",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "0bc8a577-cab3-4fcc-a636-7d15faea4af9",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "e103fd6c-5d56-4a5c-afbe-0911ea36ea37",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "03187e2e-32e9-41d6-a59e-e1e504342436",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "e8ca75da-ddd6-4d74-83f6-87a24d400ab5",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "9aeb80e9-cb84-4b62-b718-dfa4b856ed2c",
+      "result_id": "3ef2dfe7-69b2-4a81-84d9-70ae37871cd1"
+    },
+    {
+      "claim_id": "ed1e6a5b-b1c6-4819-97d5-be0a0785b946",
+      "result_id": "a77b1637-ad43-4cf4-93f9-a48ccd0624d0"
+    },
+    {
+      "claim_id": "d85a4a61-b83d-4285-8843-8dd756522d66",
+      "result_id": "a77b1637-ad43-4cf4-93f9-a48ccd0624d0"
+    },
+    {
+      "claim_id": "ac600b2f-9655-4531-802c-62f60e0a14fc",
+      "result_id": "a77b1637-ad43-4cf4-93f9-a48ccd0624d0"
+    },
+    {
+      "claim_id": "f6386d61-dce1-494b-ab58-fbccbca530eb",
+      "result_id": "0075ce19-1f2f-44da-af00-520a612b96c7"
+    },
+    {
+      "claim_id": "101ad396-2d09-4d39-bc61-423d42d2d8fc",
+      "result_id": "0075ce19-1f2f-44da-af00-520a612b96c7"
+    },
+    {
+      "claim_id": "ab33591b-6b4b-421e-991c-bd6fdf56f956",
+      "result_id": "0075ce19-1f2f-44da-af00-520a612b96c7"
+    },
+    {
+      "claim_id": "9707947d-4451-47c2-8e7a-354258e004ef",
+      "result_id": "0075ce19-1f2f-44da-af00-520a612b96c7"
+    }
+  ],
+  "comparisons": []
+}

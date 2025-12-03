@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C83"
+    ],
+    "result": "Acral melanoma (AM) exhibits high incidence in Asian populations (approximately 70% of melanomas) and shows poor response to current immunotherapy approaches compared to cutaneous melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 are supported by appropriate citations establishing the epidemiological context. Claims C2 and C83 describe known clinical limitations of immunotherapy for AM. These background claims provide well-established context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Single-cell RNA sequencing of 8 AM tissue samples (4 primary lesions, 3 adjacent tissues, 1 lymph gland metastasis) from 6 patients yielded 61,726 high-quality cells after quality control, with malignant cells identified by CNV analysis and other cell types annotated by marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C94-C103) describe standard scRNA-seq procedures with appropriate quality control metrics. Cell identification claims (C10-C13) are supported by established computational methods (CopyKAT, SingleR) and marker gene expression. The sample size is small but adequate for exploratory single-cell analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Comparison with published cutaneous melanoma (CM) data revealed that AM primary lesions have higher proportions of malignant cells and CAFs but lower lymphocyte infiltration, with distinct cell-cell interaction patterns favoring stromal interactions in AM versus immune interactions in CM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are based on comparative analysis with published CM datasets (GSE115978, GSE72056) using appropriate computational methods. The findings are consistent with the hypothesis that AM has distinct microenvironmental characteristics. However, batch effects between datasets and differences in tissue processing could confound these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Cell-cell communication analysis revealed tissue-specific signaling pathways, with primary tissues showing the strongest overall interactions and distinct pathway activation (KIT/WNT in adjacent tissues, NT/ncWNT/IL1/GDF in primary lesions, Chemerin/NRG/PSAP in lymph gland metastases), and increased malignant cell interaction capabilities in metastatic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are based on CellChat analysis, a validated method for inferring cell-cell communication from scRNA-seq data. The identification of tissue-specific signaling pathways is data-driven and supported by referenced figures. However, these are computational predictions of interactions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Pseudotime analysis of malignant cells identified TWIST1 as highly expressed in terminal differentiation states, with TWIST1 target genes enriched in EMT and ECM organization pathways. Experimental validation showed TWIST1 overexpression activated EMT proteins and enhanced A375 cell migration and invasion. TWIST1-high malignant cells showed stronger interactions with stromal cells through collagen-integrin pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational analysis (C23-C28, C31-C32) uses appropriate trajectory inference and gene regulatory network methods. Experimental validation (C29) with western blot, wound-healing, and Transwell assays provides direct evidence for TWIST1's functional role. The mechanistic interpretation (C34) integrating computational and experimental findings with known biology (C30, C33) is well-reasoned. However, experiments used A375 cells (not AM-derived), which may not fully recapitulate AM biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C80",
+      "C81"
+    ],
+    "result": "Macrophages in AM were predominantly M2-type, with M2 polarization driven by specific transcription factor motifs. EREG was highly expressed in M2 cells and associated with poor patient survival. EREG-high M2 cells expressed CD44, received MIF signals from malignant cells, showed reduced migration capacity but enhanced tumor-promoting functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell type identification (C35-C36) and transcriptional characterization (C37, C41) are based on standard marker genes and SCENIC analysis. The survival association (C42) uses TCGA data appropriately. The mechanistic interpretation linking EREG expression to CD44, MIF signaling, and functional consequences (C43-C47, C81) is logical but largely inferential. The claim about reduced migration (C46, C81) is inferred from pathway enrichment rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "B cells were classified into four subtypes (naive, memory, germinal center, plasma cells) with germinal center B cells and plasma cells at trajectory endpoints. Bidirectional MIF-CD74 signaling between malignant cells and B cells suggests B-cell infiltration primarily inhibits cancer cells in AM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "B cell classification (C48-C49) is based on standard markers and pseudotime analysis. The ligand-receptor interactions (C50-C51) are computationally predicted. The functional interpretation (C53) that B cells inhibit cancer is speculative and not directly tested. The cited function of MIF/CD74 pathway (C52) supports B cell survival and antigen presentation, but the net effect on tumor progression is unclear without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "T cell analysis revealed CD4+ T cells differentiating into Tregs (FOXP3+) and CD8+ T cells progressing to exhausted states (LAG3+). Compared to CM, AM showed higher TNFRSF9 expression but lower PDCD1/CTLA4 expression in exhausted T cells. Malignant cells interact with exhausted T cells through TNFSF9-TNFRSF9, suggesting TNFRSF9 as a potential immunotherapy target for AM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "T cell annotation (C54) uses ProjecTILs, a validated reference-based method. Trajectory analysis (C55, C57-C59) and gene expression patterns are data-driven. The comparison with CM (C62-C63) is based on published data and shows clear differential expression. The ligand-receptor analysis (C60-C61, C64) is computational. The therapeutic speculation (C65, C87) is reasonable given the expression patterns and cited literature (C85-C86) but requires experimental validation. The claim is appropriately hedged as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "CAFs were classified into three subtypes including a novel CTGF+ CAF population enriched in metastatic tissues. CTGF+ CAFs are regulated by NFATC4 transcription factor, with NFATC4 target gene expression associated with poor patient survival. CTGF treatment enhanced A375 cell colony formation and migration. CTGF+ CAFs interact with malignant cells and M2 macrophages through specific ligand-receptor pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CAF classification (C66-C69) is based on marker genes and functional enrichment. SCENIC analysis (C70-C74, C91) identifies NFATC4 as a key regulator. Survival analysis (C75, C92) uses TCGA data appropriately. The increased CTGF+ CAF proportion in metastases (C76) supports a functional role. Experimental validation (C78) demonstrates CTGF's pro-tumorigenic effects, though again using A375 cells rather than AM-derived cells. The mechanistic interpretation (C77, C79, C90, C93) integrating computational and experimental findings with known CAF biology (C88-C89) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The study identifies TWIST1, EREG, TNFRSF9, and CTGF as key drivers of TME deregulation, and proposes MIF-CD44 and TNFSF9-TNFRSF9 interactions as potential immunotherapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C3-C4) are supported by the detailed analyses of each gene/pathway described in the other result groups. TWIST1, EREG, CTGF, and TNFRSF9 are each supported by computational analysis, expression patterns, and in some cases experimental validation. The therapeutic speculation (C4) is appropriately hedged and based on the observed molecular interactions, though clinical validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C82"
+    ],
+    "result": "Background epidemiological and clinical context for melanoma and current immunotherapy approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5-C7, C82) provide standard background information supported by appropriate citations. They establish the clinical context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Computational methods including RNA velocity/pseudotime analysis (Monocle2, scVelo), gene regulatory network analysis (SCENIC), cell-cell communication analysis (CellChat), and survival analysis (TCGA data) were applied. A375 cell line was authenticated and used for validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims describe standard, well-established computational approaches with appropriate tool citations. The A375 cell line authentication (C108) follows best practices. These are necessary methodological details but not novel findings.",
+    "result_type": "MINOR"
+  }
+]

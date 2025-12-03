@@ -1,0 +1,407 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors engineered a confinable split-drive HomeR system in Drosophila targeting the essential gene PolG2. The system incorporates four design features: targeting the 3' coding sequence of an essential gene, encoding a dominant rescue, using an exogenous 3' UTR, and exploiting lethal biallelic mosaicism (LBM). Multiple independent transgenic lines were generated and validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C34, and C40-C61 collectively demonstrate successful engineering of the HomeR system. The experimental data shows precise HDR-mediated insertions confirmed by sequencing (C61), viable homozygous stocks demonstrating functional rescue (C60), and the strategic design targeting PolG2, an essential gene with known lethal LOF phenotype (C40-C45). The design features are well-documented and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Two gRNAs targeting PolG2 were tested for cleavage efficiency. gRNA#1PolG2 induced complete lethality in both males and females with Act5C-Cas9 and nos-Cas9, while gRNA#2PolG2 showed partial lethality. Both gRNA target sequences are devoid of SNPs in DGRP2. The lethality mechanism involves lethal biallelic mosaicism (LBM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by experimental data showing differential lethality between the two gRNAs (C47-C50), sequencing confirmation of mutations (C51), and analysis of DGRP2 data (C46). The inference that gRNA#1PolG2 is more potent is well-supported by the complete lethality observed across multiple genetic backgrounds (C48, C53).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PolG2HomeR exhibits super-Mendelian transmission in trans-heterozygous females with various Cas9 promoters (99.5\u00b10.6% with nos-Cas9), but males show only modest bias (60-75%). The efficiency of gRNA#1PolG2 contributes to higher transmission rates compared to gRNA#2PolG2 (68.7\u00b16.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C81 are strongly supported by experimental data with statistical analysis (Figure 1D, Figure 1\u2014figure supplement 3). The sex-specific differences in transmission are consistently demonstrated across multiple Cas9 promoters. The inference about gRNA efficiency (C66) is well-supported by comparing transmission rates between the two HomeR constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HomeR biases transmission predominantly through homing (allelic conversion) rather than destruction of wildtype alleles via LBM. Egg hatching was reduced by only 5.6% in trans-heterozygous females, and egg-to-adult survival showed no significant differences, indicating minimal embryo killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are supported by experimental data on hatching rates (C70-C71) and survival rates (C72). The inference that homing is the primary mechanism (C75) is well-justified by the high transmission rate (99.5%) without corresponding high lethality, distinguishing HomeR from TA drives like ClvR and TARE (C74). The logic is sound and data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101"
+    ],
+    "result": "In multigenerational cage populations, functional non-silent R1 resistant alleles were identified but did not impede drive invasion. Nine GFP-negative flies sampled at generations 2-3 harbored R1 alleles, but none were found after generation 3. At generation 10, sequencing revealed multiple R1 and R2 alleles persisting but rescued by PolG2HomeR. Importantly, no silent R1 mutations were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 and C101 are supported by experimental data from population cage experiments and extensive sequencing analysis (nearly 150,000 reads). The absence of GFP-negative flies after generation 3 (C91) and the persistence of resistant alleles masked by HomeR rescue (C95-C96) are well-documented. The finding that all in-frame alleles were non-silent (C101) is significant and well-supported by sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "PolG2HomeR spread efficiently in population cage experiments with nos-Cas9, reaching 96.7\u00b14.4% carrier frequency by generation 4 and fixing in 4 of 5 populations by generation 10. Control populations without Cas9 showed only drift (60.8\u00b13.8%), demonstrating Cas9-dependence. The HomeR allele showed minimal fitness costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 and C156-C158 are strongly supported by experimental data with statistical analysis (Figure 2B). The comparison between drive and control populations clearly demonstrates Cas9-dependent spread. The persistence of HomeR in control populations at >50% frequency (C158) supports the inference of minimal fitness costs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C162",
+      "C164",
+      "C165"
+    ],
+    "result": "Functional R1 alleles imposed fitness costs on female carriers. Seven GFP-negative females sampled from drive populations died within 3 days without producing progeny, while males remained fertile. Four non-silent R1 alleles were identified in these females, each changing at least one amino acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 and C162-C165 are supported by experimental data from fertility assays and genotyping (Figure 2\u2014figure supplement 1C). The sex-specific fitness effects are clearly demonstrated. The inference that these fitness costs limit R1 accumulation (C165) is reasonable given the experimental observations, though long-term population data would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Mathematical modeling fitted to cage data estimated cleavage efficiencies of 99.2% (females) and 99.6% (males), HDR frequencies of 99.5% (females) and 9.6% (males), 2.9% in-frame resistant alleles, and negligible fitness cost (0.3%) for HomeR carriers. Parameters are consistent with individual pair crossing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by mathematical modeling fitted to experimental data using MCMC methods. The credible intervals are provided, and the consistency with individual crossing data (C106) validates the model. However, the model assumptions should be carefully considered, particularly the treatment of LOF alleles as completely unviable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C171"
+    ],
+    "result": "The nos-Cas9 frequency declined from 69.1% to 9.9% or from 36.4% to 4.0% over six generations, indicating significant fitness costs. This limits HomeR spread, suggesting a single release would be insufficient for fixation at the tested introduction thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 and C171 are supported by experimental data (Figure 2C). The decline in Cas9 frequency is clearly documented, and the inference about fitness costs (C108) is well-justified. The conclusion about single-release insufficiency (C109) is a reasonable inference from the data, though it's specific to the tested conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Mathematical modeling comparing one-locus gene drive systems shows HomeR outperforms ClvR, TARE, and HGD in speed of spread and reaches near fixation for the widest range of fitness and transmission rate parameters. HomeR drives to high frequencies when transmission rate exceeds fitness cost, while ClvR and TARE are strongly dependent on fitness cost (<20% tolerance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 are supported by comprehensive mathematical modeling (Figure 3A-B). The comparisons are systematic and well-documented. The mechanistic explanations for performance differences (C113, C120) are logical. However, the modeling relies on idealized parameters and assumptions that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Two-locus (split-drive) simulations show reduced speed of introgression and slightly reduced efficacy compared to one-locus systems due to independent assortment of Cas9 and drive elements. HomeR demonstrates the widest range of achieving efficacy in two-locus configurations, while TARE and ClvR perform significantly worse when split.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 are supported by modeling results (Figure 3C-D). The reduced efficacy in split configurations is well-explained by fitness costs on the separated Cas9 locus (C128). The comparisons with published results for ClvR and TARE (C125-C126) add validation. The modeling approach is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Multi-release modeling shows one-locus ClvR, TARE, and HomeR can reach 95% female carrier frequency, with HomeR maintaining this threshold for over 100 days. Two-locus designs require more and larger releases. HGD never reached 95% due to R2 allele build-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 are supported by modeling using an overlapping generation framework (Figure 4). The multi-release scenarios are ecologically relevant. The finding that HomeR is the only drive to maintain >95% for >100 days (C132) is significant. However, these are modeling predictions that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "HomeR combines confinability, high transmission of HGDs, and resilience to EJ-generated resistant alleles. The system demonstrates stability and resilience across a range of parameter combinations in both linked and split-drive forms, overcoming a significant hurdle for current HGD designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 and C176-C178 are summary statements supported by the collective experimental and modeling results. The integration of experimental data (population cages) and modeling predictions provides strong support. However, the claim about overcoming resistance (C178) should be tempered by the fact that silent R1 mutations were not observed but remain theoretically possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Reduced homing in Drosophila males is congruent with previous studies and likely correlates with achiasmatic meiosis and weak HDR activity. Multiple Cas9 lines tested did not achieve high male homing rates as reported in mosquitoes, which have chiasmatic meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 are supported by experimental data and citations to published work. The mechanistic explanation linking achiasmatic meiosis to reduced HDR (C153) is a reasonable inference supported by citation. The recommendation for other species (C155) is appropriate but speculative. The comparison to mosquitoes provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "HomeR's design features distinguish it from previous drives (TARE, haplolethal HGD, A. stephensi HGD, ClvR). HomeR uses the endogenous promoter, targets the 3' end to minimize re-coding, uses an exogenous 3' UTR to prevent recombination, and exploits LBM. Previous designs suffered from instability due to recombination, maternal carryover issues, or targeting non-essential genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C150 provide a comprehensive comparison of HomeR to other drive systems, supported by citations to published work. The design advantages are clearly articulated and well-justified. The criticisms of other systems (C140-C146) are supported by citations and logical analysis. This comparative analysis strengthens the case for HomeR's novelty and advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C163",
+      "C166"
+    ],
+    "result": "LOF alleles are slowly eliminated by HGDs targeting non-essential genes. Functional R1 alleles are a universal problem for gene drives. No silent R1 mutations were identified in this study. Multiplexing with additional gRNAs may further reduce functional resistant alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 and C163 are supported by experimental data and citations. The absence of silent R1 mutations (C163) is an important finding but limited by sample size. The suggestion about multiplexing (C166) is speculative but supported by citations to published work. The claim about slow elimination (C160) is well-supported by modeling and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The split-drive design provides molecular containment through independent assortment of Cas9 and HomeR, acting as a genetic brake. The system resembles high-threshold drives requiring high introduction rates for local spread. Multiple releases can enable spread despite fitness costs. HomeR could be converted to a non-localized drive if desired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C175 are supported by experimental data (C171) and modeling results (C172). The containment mechanism is well-explained (C168-C169). The comparison to high-threshold drives (C170) is supported by citations. The reversibility claim (C173) and conversion possibility (C174) are speculative but reasonable. The overall assessment of safety and confinability (C175) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C179"
+    ],
+    "result": "Given the simplicity of the HomeR design, it could be adapted to other species including human disease vectors in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39 and C179 are speculative statements about future applications. While the design simplicity is demonstrated in Drosophila, adaptation to other species would require addressing species-specific challenges such as identifying suitable essential genes, optimizing gRNA efficiency, and validating rescue function. No experimental data supports cross-species applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on gene drives: CRISPR/Cas9 homing-based gene drives have been proposed for population modification and suppression but suffer from resistant allele formation through mutagenic repair. Toxin-antidote drives were developed to overcome resistance accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 provide background context supported by extensive citations to published literature. These are established facts in the gene drive field and provide necessary context for understanding the HomeR system. The claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Targeting an essential gene enables spread by biasing transmission while inhibiting LOF resistant alleles through Mendelian selection and LBM. However, functional R1 alleles (non-silent and silent) can still be generated. Non-silent R1 alleles may impose fitness costs, while silent R1 alleles would be fitness neutral and problematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 present the theoretical framework for HomeR's resistance management strategy. The logic is sound and supported by the experimental design. The distinction between non-silent and silent R1 alleles (C84-C85) is important and well-articulated. The acknowledgment that R1 alleles remain a shared problem (C86) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Efficient cleavage and rescue are requisites for nearly 100% transmission of HomeR in the presence of Cas9, accomplished mostly by homing in trans-heterozygous females. Multigenerational experiments demonstrate long-term stability and Cas9-dependent drive. Mathematical modeling shows HomeR can outperform contemporary systems across wide parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are high-level summary statements supported by the detailed experimental and modeling results discussed in other claim groups. These represent the main conclusions of the paper and are well-supported by the collective evidence.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establish T1D as an autoimmune disease with genetic and environmental risk factors. Approximately 60 genomic loci have been associated with T1D risk, showing enrichment in immune-related pathways such as cytokine signaling and T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by appropriate citations to prior work (Atkinson et al., 2014; Rewers and Ludvigsson, 2016; Cabrera et al., 2016; Hundhausen et al., 2016; Barrett et al., 2009; Cooper et al., 2008). These are standard background claims establishing the context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The 300DM cohort consists of 243 T1D patients (215 after QC) of Dutch/Caucasian descent, aged 20-84 years (median 53.5), with median diabetes duration of 28 years. The study measured 269 immune-cell traits and 10 cytokines in response to stimulations. After merging with 500FG controls and quality control, 4,304,387 SNPs and 666 individuals remained for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 and C95-C100 describe the cohort characteristics and data processing steps with specific numbers that are internally consistent. The methodology follows previously published protocols (Aguirre-Gamboa et al., 2016; Li et al., 2016). Sample sizes, quality control procedures, and demographic data are clearly stated and appear appropriate for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Cytokines were classified as monocyte-derived (IL-1\u03b2, IL-6, TNF-\u03b1, IL-8, IL-10, IL-1Ra, MCP-1, measured at 24h) or T cell-derived (IFN-\u03b3, IL-17, IL-22, measured at 7 days) based on previous definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by citation to Li et al., 2016, which established these definitions. The classification is biologically reasonable, though it should be noted that this is a simplification as some cytokines can be produced by multiple cell types. The temporal distinction (24h vs 7 days) is appropriate for the different kinetics of innate vs adaptive responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Age, gender, and seasonal effects significantly associated with numerous immune-cell traits and cytokine traits. Age associated with 129/269 immune-cell traits and 12/55 cytokine traits; gender with 59/269 immune-cell traits and 5/55 cytokine traits; seasonal effects with 121/269 immune-cell traits and 38/55 cytokine traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 report specific numbers of significant associations with covariates, supported by Figure 4\u2014figure supplement 1. The statistical approach (Spearman correlation and linear regression with FDR < 0.05) is appropriate. These covariates were appropriately included in subsequent QTL analyses. The large number of associations with age and seasonal effects is consistent with known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Nonmetric MDS analysis reveals that B cell subpopulations cluster separately from T cell, monocyte, and NK cell populations, suggesting greater interplay among T cells, monocytes, and NK cells at baseline. Cytokine features cluster based on cellular origins with partial overlap between monocyte-derived and T cell-derived cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe clustering patterns observed in Figure 1B-C. The interpretation that separate clustering indicates less interplay (C24) is reasonable but somewhat inferential. The observation is consistent with findings in the 500FG cohort (Aguirre-Gamboa et al., 2016), providing validation. The partial overlap between monocyte and T cell cytokine clusters (C26) is clearly visible in Figure 1C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Correlation analysis reveals positive correlations between monocyte lineages and monocyte-derived cytokines, and between T cell subsets and T cell-derived cytokines. Negative correlations exist between monocyte-derived cytokine production and lymphocyte counts. These patterns are similar between T1D patients and healthy individuals and are consistent with prior findings that high adaptive immune cell abundance associates with lower monocyte-derived cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe correlation patterns shown in Figure 1D with appropriate statistical support (FDR < 0.05). The positive correlations between cell types and their corresponding cytokines (C27-C28) are biologically expected. The negative correlation between lymphocyte counts and monocyte cytokines (C29) is supported by citation to Kim et al., 2007 (C31). The similarity between T1D and healthy cohorts (C30, C32-C33) is demonstrated by Figure 1\u2014figure supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Of 63 independent T1D GWAS loci present in the study data, 13 were associated with T1D susceptibility at nominal significance (p < 0.05) in the case-control comparison between 300DM and 500FG cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C35 report that only 13/63 known T1D GWAS loci replicated at nominal significance. This low replication rate is concerning and could reflect: (1) limited power due to small sample size (N=215 cases, 451 controls), (2) population differences, or (3) winner's curse in original GWAS. The use of only nominal significance (p<0.05) without multiple testing correction is noted. The authors acknowledge this limitation but the result raises questions about the representativeness of the cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "T1D GWAS SNPs show enrichment for association with T cell traits (permutation p=0.007). The 63 T1D GWAS loci explain significantly more variance in 27 cell sub-proportions and 15 cytokine production traits compared to random SNP sets (p<0.05). Nearly all immune phenotypes (261/269 immune-cell, 53/55 cytokine) show suggestive associations (p<0.05) with at least one T1D GWAS locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 use appropriate permutation-based statistical approaches to test enrichment, avoiding issues with multiple testing. The enrichment for T cell traits (C36, p=0.007) is statistically significant and biologically plausible given T1D pathophysiology. The variance explained analysis (C39-C40) uses proper controls (random SNP sets). However, the widespread suggestive associations (C37-C38, p<0.05) should be interpreted cautiously as many would not survive multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The T1D risk allele rs11574435-T (in LD r\u00b2=0.95 with rs113010081) associates with higher CCR5+ CD4+ T cell proportions and lower CCR5- CD4+ T cell proportions. The minor allele T of rs35092096 associates with higher CCR6+CCR7-CCR5+ Treg proportions. Colocalization analysis (H3=0.95) strongly supports shared regulatory regions between CCR6+CCR7-CCR5+ Tregs and T1D. Expression analysis shows significant changes in CCR5, CCL5, and CCL4 in T1D patients, supporting a role for the CCR region in Treg function in T1D pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 present converging evidence from multiple analyses: QTL mapping (C41, C44), LD analysis (C42), transcriptome analysis (C43), and colocalization (C45, H3=0.95). The colocalization posterior probability of 0.95 is strong evidence for shared causal variants. The integration of expression data from public databases (Planas et al., 2010; Yang et al., 2015) showing differential expression of CCR5, CCL5, and CCL4 in T1D provides orthogonal validation. The conclusion about CCR region involvement in Treg function (C46) is well-supported by the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C101",
+      "C102"
+    ],
+    "result": "T1D GWAS loci influence immune-cell proportion and cytokine production capacity, with T cell alteration largely driven by T1D genetics while B cells show no significant association with T1D GWAS loci. This provides evidence for a direct link between T1D genetic susceptibility and immune functionality, particularly through T cell subpopulations. The association between CCR5+ Tregs and T1D through CCR genes suggests cumulative genetic effects on immune function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C73-C76, C101-C102 synthesize findings from multiple analyses showing preferential association of T1D GWAS loci with T cell traits. The enrichment analysis (C36, p=0.007) and variance explained analysis (C39-C40) support these conclusions. The lack of B cell associations (C75) is notable given the presence of autoantibodies in T1D, though this is acknowledged in the discussion. The interpretation of cumulative effects (C76) is reasonable given the small individual effect sizes observed (C86-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Genome-wide QTL mapping in 300DM identified 9 significant loci (p<5\u00d710\u207b\u2078) for immune-cell proportion (including 4 for T cells expressing chemokine receptors) and 6 loci for cytokine production. Cell proportion QTLs are enriched in chemokine/cytokine signaling pathways (FDR<0.05), while cytokine production QTLs are enriched in TLR-related pathways (FDR<0.05). The missense variant rs5743618 in TLR1 affects IL-6 production in response to S. pneumoniae, consistent with TLR function in pathogen detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 report genome-wide significant QTLs (p<5\u00d710\u207b\u2078) with appropriate pathway enrichment analysis (FDR<0.05). The enrichment in chemokine/cytokine signaling for cell proportion QTLs and TLR pathways for cytokine QTLs is biologically coherent. The TLR1 missense variant (C53) is a strong functional candidate. The consistency with previous findings in 500FG (C54, Li et al., 2016) provides validation. Lambda values (0.977-1.026) indicate no major inflation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C77",
+      "C78",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Meta-analysis of 300DM and 500FG identified 13 additional novel loci (10 for cell proportion, 3 for cytokine production), bringing the total to 28 genome-wide significant loci. Notably, 12 of these 28 loci have never been reported in healthy population studies and were not identified in 500FG alone (p<0.05), suggesting disease-specific genetic regulation. Among the 28 loci, 11 contain known drug targets including CCR family genes, ROR2, IL-10, IL-6, STK33, CD5, and TLR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C65, C77-C78, C103-C105 report novel QTLs from meta-analysis. The identification of 12 'T1D-specific' loci is intriguing but requires careful interpretation. The claim that these loci were 'never reported in healthy populations' (C64, C104) is based on PhenoScanner V2 search (p<1\u00d710\u207b\u2075) and absence in 500FG (p<0.05). However, absence of evidence is not evidence of absence\u2014these loci may simply not have been detected in smaller healthy cohorts due to power limitations. The claim of 'disease-specific genetic regulation' (C91, C105) is inferential and would require direct statistical testing of effect size differences between T1D and healthy cohorts. The identification of druggable targets (C62-C63, C78) is interesting but preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The T1D-specific locus rs4744112 on chromosome 9 influences CCR6+CXCR3+CCR4- Th1-like helper cell proportion, with the minor allele G decreasing these cells relative to major allele T. This SNP is located within transcriptional start site and enhancer regions of ROR2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe a specific example of a T1D-specific QTL with clear effect direction shown in Figure 4B-C. The location within regulatory regions of ROR2 (C68, supported by Kundaje et al., 2015) suggests a plausible mechanism. However, the designation as 'T1D-specific' relies on the absence of detection in 500FG, which could reflect power limitations rather than true disease-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SNPs within the 28 immune parameter QTLs are predominantly located in intergenic and intronic regions, suggesting regulatory rather than protein-coding effects. Seven of the 28 loci influence gene expression in blood (eQTLs), including FCGR2B/FCRLB, CCR1/CCR3, ROR2/SPTLC1, TRIM66, C11orf21, IL10, and AC091814.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by genomic annotation analysis (Figure 4\u2014figure supplement 3) and eQTL database searches (Carithers and Moore, 2015; Westra et al., 2013). The predominance of non-coding variants (C69) is typical for complex trait GWAS and the inference of regulatory effects (C70) is reasonable. The identification of eQTLs (C71) provides functional support for 7/28 loci, though the mechanism for the remaining loci remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Correlation between baseline immune-cell populations and ex vivo cytokine production suggests that steady-state immune-cell abundance affects immune response. This implies that immune response variability could be partly explained by steady-state variations and that treatment of steady-state immune cells before stimulation could influence post-stimulation immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C79 are well-supported by the correlation analyses (Figure 1D). However, C80-C81 are more inferential. While C80 (variability explained by steady state) is a reasonable interpretation of the correlations, C81 (treatment effects) is speculative and marked as such in the evidence. The causal direction of the correlations cannot be definitively established from this observational data, though the interpretation is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Prior studies show immune-related genes are located in T1D loci or differentially expressed, with T cell immunity being important in T1D pathology. The authors speculate that auto-antibodies in T1D may have limited pathophysiological relevance and serve merely as markers of a T cell-driven autoimmune process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 appropriately summarize prior literature with citations. However, C84 is explicitly speculative ('tempting to speculate') and represents an interpretation of the finding that B cells show no significant association with T1D GWAS loci (C75). While this interpretation is consistent with the data, it is provocative and would require additional functional studies to validate. The speculation is appropriately qualified and supported by citation to Martin et al., 2001.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The effects of different GWAS loci on immune phenotypes vary substantially. The CCR locus shows strong effects (mean absolute effect sizes = 0.017 for cell proportion, 0.15 for cytokine production), while other T1D GWAS loci show much weaker individual effects (mean = 0.0060 for cell proportion, 0.10 for cytokine production). This suggests T1D-associated variants may alter immune function through cumulative effects and that variants affecting immune functions differ from those affecting immune-cell proportions and cytokine production capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by effect size analysis shown in Figure 2C and Figure 2\u2014figure supplement 2. The quantitative effect sizes are clearly stated (C86-C88). The interpretation of cumulative effects (C89) is reasonable given the small individual effect sizes and the significant cumulative variance explained (C39-C40). The observation that different variants affect different immune parameters (C90) is an interesting finding, though the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The identification of 12 immune phenotype QTLs specific to 300DM suggests distinct regulatory mechanisms in disease versus health. While the study uses circulating blood cells, islet-infiltrating immune cells originate from circulation and circulating chemokines/cytokines are important for immune cell activation and recruitment, making circulating immune parameters probably relevant for local tissue immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 about 'distinct regulatory mechanisms' is inferential and based on absence of detection in healthy cohorts, which could reflect power limitations rather than true disease-specificity (as discussed for C64-C65). Claims C92-C94 acknowledge a limitation of the study (use of PBMCs rather than tissue) but argue for relevance. While C92-C93 are established biological facts, the inference in C94 ('probably relevant') is reasonable but not directly demonstrated. Direct comparison of effect sizes between T1D and healthy cohorts would strengthen the disease-specificity claim.",
+    "result_type": "MINOR"
+  }
+]

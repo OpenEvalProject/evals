@@ -1,0 +1,1382 @@
+{
+  "submission": {
+    "id": "e4d7b283-c27a-43c9-8d78-a4190c108446",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T05:37:15.700119Z",
+    "updated_at": "2025-12-03T05:37:15.700119Z"
+  },
+  "content": [
+    {
+      "id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "submission_id": "e4d7b283-c27a-43c9-8d78-a4190c108446",
+      "content_type": "manuscript",
+      "content_text": "# Control of tissue development and cell diversity by cell cycle-dependent transcriptional filtering\n\n## Authors\n\n- Maria Abou Chakra<sup>1</sup> ([ORCID: 0000-0002-4895-954X](https://orcid.org/0000-0002-4895-954X))\n- Ruth Isserlin<sup>1</sup>\n- Thinh N Tran<sup>1</sup>\n- Gary D Bader<sup>1</sup> ([ORCID: 0000-0003-0185-8861](https://orcid.org/0000-0003-0185-8861)) \u2020\n\n### Affiliations\n\n1. The Donnelly Centre, University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell cycle duration changes dramatically during development, starting out fast to generate cells quickly and slowing down over time as the organism matures. The cell cycle can also act as a transcriptional filter to control the expression of long gene transcripts, which are partially transcribed in short cycles. Using mathematical simulations of cell proliferation, we identify an emergent property that this filter can act as a tuning knob to control gene transcript expression, cell diversity, and the number and proportion of different cell types in a tissue. Our predictions are supported by comparison to single-cell RNA-seq data captured over embryonic development. Additionally, evolutionary genome analysis shows that fast-developing organisms have a narrow genomic distribution of gene lengths while slower developers have an expanded number of long genes. Our results support the idea that cell cycle dynamics may be important across multicellular animals for controlling gene transcript expression and cell fate.\n\n## Introduction\n\nA fundamental question in biology is how a single eukaryotic cell (e.g., zygote, stem cell) produces the complexity required to develop into an organism. A single cell will divide and generate many progeny, diversifying in a controlled and timely manner (Mueller et al., 2015) to generate cells with very different functions than the parent, all with the same genome (Wilmut et al., 1997). Many regulatory mechanisms coordinate this process, but much remains to be discovered about how it works (Zoller et al., 2018). Here, we explore how cell cycle regulation can control gene transcript expression timing and cell fate during tissue development.\n\nThe canonical view of the cell cycle is a timely stepwise process. Typically, the complete cell cycle is divided into four phases: first gap phase (G1), synthesis phase (S), second gap phase (G2), and mitotic phase (M). The length of each phase determines how much time a cell allocates for processes associated with growth and division. However, the amount of time that is spent in each phase frequently differs from one cell type to another within the same organism. For example, some cells experience fast cell cycles, especially in early embryogenesis. Organisms such as the fruit fly (Drosophila melanogaster) and the worm (Caenorhabditis elegans) exhibit cell cycle durations as short as 8\u201310 min (Edgar et al., 1994; Foe, 1989). Cell cycle duration also changes over development (Figure 1 and Supplementary file 1). For example, it increases in mouse (Mus musculus) brain development from an average of 8 hr at embryonic day 11 (E11) to an average of 18 hr by E17 (Furutachi et al., 2015; Takahashi et al., 1995a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig1-v2.jpg)\n\n**Figure 1.:** The data was curated from several publications (PubMed identifiers: 5859018, 14105210, 5760443, 5542640, 4041905, 7666188, 12151540, 18164540), shown in the legend as authors and (year). For other species and tissues, see Supplementary file 1.\n\nInterestingly, cell cycle duration can act as a transcriptional filter that constrains transcription (Rothe et al., 1992; Shermoen and O'Farrell, 1991). In particular, if the cell cycle progresses relatively fast, transcription of long genes will be interrupted. In typical cells, the gene transcription rate is between 1.4\u00a0and\u00a03.6 kb per minute (Ardehali and Lis, 2009). Thus, an 8 min cell cycle would only allow transcription of the shortest genes, on the order of 10 kb measured by genomic length, including introns and exons, whereas a 10 hr cell cycle would allow transcription of genes as long as a megabase on the genome.\n\nCell cycle-dependent transcriptional filtering has been proposed to be important in cell fate control (Bryant and Gardiner, 2016; Swinburne and Silver, 2008). Most multicellular eukaryotic animals start embryogenesis with short cell cycle durations and a limited transcription state (O'Farrell et al., 2004) with typically short zygotic transcripts (Heyn et al., 2014). These cells allocate the majority of their cycle time to S-phase (synthesis), where transcription is inhibited (Newport and Kirschner, 1982a), and M-phase (division), with little to no time for transcription in the gap phases. However, as the cell cycle slows down, time available for transcription increases (Edgar et al., 1986; Newport and Kirschner, 1982a; Newport and Kirschner, 1982b), enabling longer genes to be transcribed (Djabrayan et al., 2019; Shermoen and O'Farrell, 1991; Yuan et al., 2016).\n\nWe asked what effects cell cycle-dependent transcriptional filtering may have over early multicellular organism development. Through extensive mathematical simulations of developmental cell lineages, we identify the novel and unexpected finding that a cell cycle-dependent transcriptional filter can directly influence the generation of cell diversity and can provide fine-grained control of cell numbers and cell-type ratios in a developing tissue. Our computational model operates at single-cell resolution, enabling comparison to single-cell RNA-seq (scRNA-seq)\u00a0data captured over development, supporting our model by showing similar trends. Our model also predicts genomic gene length distribution and gene transcript expression patterns that are consistent with a range of independent data. Our work provides new insight into how cell cycle parameters may be important regulators of cell-type diversity over development.\n\n## Results\n\n### Computational model of multicellular development\n\nWe model multicellular development starting from a single totipotent cell that gives rise to many progeny, each with its own transcriptome (Figure 2). We developed a single-cell resolution agent-based computational model to simulate this process (see Materials and methods). Each cell behaves according to a set of rules, and cells are influenced solely by intrinsic factors (e.g., number of genes in the genome, gene length, transcript levels, and transcription rate). We intentionally start with a simple set of rules, adding more rules as needed to test specific mechanisms. Our analysis is limited to pre-mRNA transcript expression, and we do not consider other gene expression-related factors, such as splicing, translation, or gene-gene interactions. We also omit external cues (e.g., intercellular signaling or environmental gradients) to focus on the effects of intrinsic factors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig2-v2.jpg)\n\n**Figure 2.:** (A) A single cell is defined by a given number of genes in its genome as well as their gene lengths (e.g., three genes, gene1 < gene2 < gene3). Cell cycle duration defines the time a cell has available to transcribe a gene. (B) For example, a cell with cell cycle duration = 1 hr will only enable transcription of gene1; cell cycle duration = 2 hr will enable transcription of gene1 and gene2; cell cycle duration = 3 hr enables transcription of all three genes. (C) Our model assumes that\u00a0transcripts passed from parental cell to its progeny will be randomly distributed during division (M-phase). (D) Each cell is characterized by its transcriptome, represented as a vector.\n\nIn our model, each cell is characterized by a fixed genome containing a set of G genes ($gene_{1},gene_{2},\u2026.gene_{G}$) shown in (Figure 2A). Each $gene_{i}$\u00a0is defined by a length, Li (in kb), and in all our simulations each gene is assigned a different length (L1 < L2 <\u2026\u00a0LG). Since each $gene_{i}$ has a unique length, Li, we label genes by their length ($gene_{i}^{L_{i}}$=$gene^{L_{i}}$; e.g., gene3 is a gene of length 3 kb). We assume transcription time for $gene_{i}$\u00a0is directly proportional to its length, Li. In the model, each cellj is initialized with a cell cycle duration (\u0393cell), which represents the total time available for gene transcription (see Materials and methods). For example, we can initialize cell1 with a three-gene genome $(gene^{1},gene^{2},gene^{3}),whereL=(1kb,2kb,3kb)$\u00a0and a cell cycle duration \u03931 of 1 hr. We fix transcription rate, \u03bb, to 1 kb/hr for all genes (though this assumption can be relaxed without changing our results; Figure 3 and Figure 3\u2014figure supplement 1). As transcription progresses for all genes, cell1 will only express\u00a0$gene^{1}$. Increasing cell cycle duration, \u0393cell, will allocate more time for transcription, allowing longer genes to be transcribed. For example, if we initialize cell2 with a cell cycle duration \u03932\u00a0=\u00a03 hr, cell2 will express all three genes, with time to make three copies of $gene^{1}$ (Figure 2B). We assume that\u00a0RNA polymerase II re-initiation occurs along the gene, a distance $\u03a9$\u00a0apart (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig3-v2.jpg)\n\n**Figure 3.:** The transcriptome for each cell is subdivided into short, medium, and long gene bins, and transcript counts are averaged per bin per cell. (A) Simulations predict that short gene transcripts will be more highly expressed than long gene transcripts, irrespective of the genome size. Simulation results are shown for cell cycle durations of 1, 5, and 10 hr and gene lengths (geneL1-L10); see Figure 3\u2014figure supplement 3 for additional simulations (other parameters ploidy\u00a0=\u00a01, one cell division, iterations = 5,000,000, genome G = 10, geneL1-L10, transcription rate, \u03bb = 1 kb/hr, RNA polymerase II re-initiation,\u00a0$\u03a9=0.25kb$). Bins are defined such that genes are evenly distributed across them. (B) Single-cell microglia data obtained from GSE134707 (Geirsdottir et al., 2019) displaying expected patterns where short genes (lengths <10 kb) have a higher transcript expression than both medium genes (lengths > 10\u00a0kb) and longer genes (lengths >25 kb) \u2013 Kolmogorov\u2013Smirnov test p <\u00a010\u221216, the upper bound p-value for all short-medium and short-long comparisons \u2013 across nine different species (age): Macaca fascicularis (3 years), Callithrix jacchus (7 years), Mus musculus (8\u201316 weeks), Rattus norvegicus (11\u201314 weeks), Mesocricetus auratus (8\u201316 weeks), Nannospalax galili (2-4 years), Ovis aries (18\u201320 months), Gallus gallus (24 weeks), and Danio rerio (4\u20135 months). The top part of the plot shows the total number\u00a0of genes possible in each bin, given the gene length distribution of each genome. Bins are defined such that they are both consistent across all species and also approximately evenly filled with genes.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Simulations exploring the effects of cell cycle duration and RNA polymerase II (rnaPol II) for different re-initiation distances, $\u03a9$,\u00a0and transcription rates, \u03bb.(A) We conducted simulations for different re-initiation distances (default assumes that re-initiation only occurs once rnaPol II reaches the end of the gene). (B) We conducted simulations for different transcription rate. Rates were randomized using a Gaussian distribution (mean\u00a0=\u00a0\u03bb, standard deviation\u00a0=\u00a0\u03bb) such that transcription time T\u00a0=\u00a0\u0393\u03bb/L. We generally assumed a fixed rate \u03bb\u00a0=\u00a01, where all genes exhibit the same rate. Changing parameters in (A) and (B) does not alter the overall trend we observe, that short genes produce more transcripts than longer genes. Other parameters for panels (A)\u00a0and\u00a0(B) were ploidy\u00a0=\u00a01, Li\u00a0=\u00a0{1,2,3,4,5,6,7,8,9} and G\u00a0=\u00a09, one cell division, iterations\u00a0=\u00a01000. We also show in the case where all genes are the same length, L\u00a0=\u00a09, and cell cycle duration is constant (C,\u00a0D) that when cell cycle durations are short, \u0393\u00a0=\u00a01 hr, only high transcription rates can quench the constraint of short cell cycle. (E,\u00a0F) When cell cycle duration is long, \u0393\u00a0=\u00a010 hr, changing transcription parameters can directly affect transcript number. Other parameters for panels (C\u2013F) were ploidy\u00a0=\u00a01, Li\u00a0=\u00a0{9}, G\u00a0=\u00a09, genome\u00a0=\u00a0{gene19, gene29 \u2026, gene99}, one cell division, iterations\u00a0=\u00a01000 per panel.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Simulation of expected transcript count when cells are initiated without maternal transcripts in comparison to cells with maternal transcripts. Parameters: gene lengths (geneL1-L10), ploidy\u00a0=\u00a01, one cell division, 10 hr cell cycle duration, iterations\u00a0=\u00a010,000. (B) Simulation of expected transcript count where a proportion (zero or half) of inherited parental transcripts remain after each cell division. Parameters: gene lengths (geneL1-L10), ploidy\u00a0=\u00a01, two cell divisions, 10 hr cell cycle duration, iterations\u00a0=\u00a01000.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** We find that short genes produce more transcripts than longer genes. We conducted simulations for different gene numbers (10, 100, and 1000;\u00a0panels\u00a0A,\u00a0B,\u00a0and\u00a0C,\u00a0respectively) and distributions across various cell cycle durations (1\u201310 hr), always resulting in the same overall trend being observed. The transcriptome for each cell is subdivided into short, medium, and long gene bins. Transcript counts in each bin are averaged for each cell. Prediction from simulation shows that cells will have higher expression of short gene transcripts and longer genes irrespective of\u00a0the number of genes in each bin. However, simulation shows that longer cycle durations will increase relative transcript count per cell (other parameters ploidy\u00a0=\u00a01, one cell division, iterations\u00a0=\u00a01000, RNA polymerase II re-initiation,\u00a0$\u03a9$ occurs at the end of the gene).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** We find that short genes produce more transcripts than longer genes. (A) Xenopus tropicalis (Xenopus) single-cell data obtained from GSE113074 (Lib2), (B) Danio rerio (zebrafish) single-cell data obtained from GSE112294,\u00a0and (C) Mus musculus (mouse) cortex single-cell data obtained from GSE107122, displaying predicted patterns where short genes have a higher average transcript expression than longer genes.\n\nOnce transcription is complete, the cell enters M-phase, during which it divides, and expressed transcripts are randomly distributed to the two progeny cells (Figure 2C). This is the main stochastic component in our model. We assume that transcription begins anew at the start of the cell cycle (i.e., all transcripts from a gene that cannot be finished in one cycle are eliminated), modeling the known degradation of incomplete nascent transcripts in M-phase (Shermoen and O'Farrell, 1991). Relaxing our assumption to include parental transcript inheritance and decay (Sharova et al., 2009), where a proportion of inherited parental transcripts remain after each cell division, does not change our overall results (Figure 3\u2014figure supplement 2). All individual cells and their transcriptomes are tracked over the course of the simulation, enabling single-cell resolution analysis. Transcriptomes are stored as vectors containing the total number of transcripts per gene. For instance, cell2 may have a transcriptome of (3,1,1), indicating that three genes are expressed, with gene1 expressed at three transcripts per cell and the other two genes expressed at one transcript per cell (Figure 2D).\n\n### Model prediction: cell cycle duration influences transcript count \u2013 short genes generate more transcripts than longer genes\n\nWe begin by examining how a transcriptional filter impacts transcript counts, as controlled by cell cycle duration. Shorter cell cycles will interrupt long gene transcription, resulting in relatively high expression of short gene transcripts and low expression of long gene transcripts. Our computational simulations generate this expected pattern (Figure 3A). Each simulated cell transcriptome is divided into three bins containing short, medium, and long genes, and then each bin is summarized with an average transcript count. In simulations, bins with short genes exhibit the highest average transcript count levels. As cell cycle duration increases, more cells show an increase in transcript count of longer genes; the trend is consistent for various genome sizes and gene length distributions (Figure 3A and Figure 3\u2014figure supplement 3).\n\nscRNA-seq has recently been used to profile mRNA expression of thousands of cells for one cell type (microglia) across multiple species (Geirsdottir et al., 2019) or for multiple embryonic developmental time points in one species, such as Xenopus tropicalis (Briggs et al., 2018) and Danio rerio (Kimmel et al., 1995; Wagner et al., 2018), or tissue, such as mouse neural cortex (Yuzwa et al., 2017). We analyzed these data in the same manner as our model (Figure 3B and Figure 3\u2014figure supplement 4) and found that, in general, short genes have a higher mRNA expression level than longer genes within a cell. Thus, gene mRNA expression patterns from a range of scRNA-seq data sets, including developmental time courses, are compatible with our model prediction.\n\n### Model prediction: cell cycle duration can control cell diversity\n\nWe next asked how three major model parameters (cell cycle duration, maximum gene length, and number of genes in the genome) can influence the generation and control of cell diversity observed during normal multicellular development. We conducted simulations for a single-cell division step for simplicity, but these were repeated thousands of times to model cell population effects. We compute cell diversity in two ways; first, as the number of distinct transcriptomes in the cell population (transcriptome diversity); and second, as the number of distinct transcriptomic clusters, as defined using standard single-cell transcriptomic analysis techniques (Satija et al., 2015) (see Materials\u00a0and\u00a0methods). Both measures model real cell types and states that are distinguished by their transcriptomes, with transcriptome diversity as an upper bound on cell-type number, and cluster number approximating a lower bound. We first ran simulations with an active transcriptional filter by varying only the cell cycle duration, \u0393, for a genome with 10 genes, with genes ranging in size from 1 to 10 kb, such that it satisfies\u00a0$L_{1}=1\\leq...\u0393...\\leqL_{G}=10$. Short cell cycle duration parameter values generated a homogenous population of cells because only short transcripts can be transcribed. As cell cycle duration was increased, transcriptome diversity also increased. Longer cell cycle duration values generated heterogeneous populations because a range of transcripts can be expressed (Figure 4A, brown line). Interestingly, cell cluster diversity peaks at intermediate cell cycle duration parameter values (Figure 4B, brown line; Figure 4C) because new genes are introduced with increasing cell cycle lengths, but eventually long cell cycles provide sufficient time for cells to make all transcripts, which leads to reduced variance between the progeny. We next repeat this experiment by turning off the transcriptional filter by reducing the maximum gene length such that\u00a0$L_{G}<\u0393$ (Figure 4A, B, blue line). In this case, cell diversity can be generated, but it quickly saturates (Figure 4B, blue line), as all transcripts are expressed, given a cycle duration allowing the expression of the longest transcript. Thus, while cellular diversity can be generated with an active or inactive transcriptional filter, diversity is more easily controlled by cell cycle duration when the transcriptional filter is active.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig4-v2.jpg)\n\n**Figure 4.:** Simulations explore the effects of cell cycle duration, \u0393, gene number, G, and gene length distribution. (A) Simulations show that cell diversity (transcriptome diversity) increases as a function of cell cycle duration. Short cell cycle durations can constrain the effects of gene number as long as a transcriptional filter is active (gene length distributions are broad,\u00a0$L_{1}<\u2026(\u0393\u2217\\lambda)\u2026<L_{G}$). When\u00a0$L_{G}<(\u0393\u2217\\lambda)$, cell cycle duration does not control cell diversity. Cell cycle duration effects are relative to the gene length distribution in the genome. (B) We use Seurat to cluster the simulated single-cell transcriptomes (10,000 cells) using default parameters and report the number of cell clusters over the simulations. This shows that cell diversity increases with gene number, but the number of clusters identified decreases when all the gene transcripts can be expressed similarly among all cells. (C) Representative examples (10,000 cells) of t-SNE visualizations (RunTSNE using Seurat version 3.1.2) are shown for simulations with cell cycle durations 2, 6, and 10 hr (genome G = 10, geneL1-L10, ploidy n = 1, and transcription rate, \u03bb = 1 kb/hr, RNA polymerase II re-initiation,\u00a0$\u03a9=0.25kb$).\n\nIn general, transcriptome diversity increases as a function of cell cycle duration (\u0393), transcription rate (\u03bb), and number of genes in the genome (G). In particular, transcriptome diversity = n\u00a0$\\prodi=1G(T/L_{i}+1),$ where n is the genome ploidy level, T\u00a0= $\\suma=0\\frac{Li}{\u03a9}\u22121f(a),\u2200f(a)\\geq0,f(a)=\u0393\u2217\\lambda\u2212\\frac{a\u03a9}{\\lambda}$ (i.e., the maximum transcribed gene length, T, is restricted by the product of cell cycle duration, \u0393, transcription rate, \u03bb, and RNA polymerase II re-initiation,\u00a0$\u03a9$), and Li is the length of genei. This analytical solution of cell transcriptome diversity was validated by comparing it to simulations (Supplementary file 2). While the number of genes and their length distribution can change over the course of evolution, these numbers are constant for a given species, and transcription rate is likely highly constrained (Ardehali and Lis, 2009), leaving only cell cycle duration as a controllable parameter of cell diversity during development, according to our model.\n\n### Model prediction: varying cell cycle duration over developmental time controls tissue cell proportions and number\n\nDuring multicellular organism development, it is essential to generate the correct numbers of cells and cell types. Cell cycle duration changes dramatically during development, generally starting out fast to generate cells quickly and slowing down over time as the organism matures (Supplementary file 1 and Figure 1; Farrell and O'Farrell, 2014; O'Farrell et al., 2004). Clearly, cells with short cell cycles generate more progeny compared to those with longer cell cycles. However, we propose that a tradeoff exists, balancing the generation of diversity (longer cell cycle durations) with the fast generation of cells (shorter cell cycle durations; Figure 4B). To study this tradeoff, we simulated cell propagation under a \u2018mixed lineage\u2019 scenario where, after the first division, one child cell and its progeny maintains a constant cell cycle duration (\u03931 = 1 hr) and the second child cell and its progeny maintains an equal or longer constant cell cycle duration over a lineage with 20 cell division events (Figure 5, gray and blue lineages, respectively). We initialize the starting cell with no prior transcripts (na\u00efve theoretical state) and a genome containing five genes ranging from length 1 to 2 kb (gene1, gene1.25, gene1.5, gene1.75, gene2), setting cell cycle duration in the second lineage to range between 1 and 2, controlling the transcriptional filter threshold in this lineage only. We considered three scenarios: (1) both cell lineages cycle at the same rate (Fast-Fast, Figure 5A); (2) the first (blue) lineage is slower than the second (gray) (Slow-Fast, Figure 5B);\u00a0and (3) both slow and fast lineages divide asymmetrically, producing one slow and one fast cell (Slow-Fast, Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig5-v2.jpg)\n\n**Figure 5.:** Simulations start with two cells and run for 18 divisions (generating 219 cells when cell cycles are the same). Cell1 is initialized with cell cycle duration \u03931 = 1 hr, Cell2 has cell cycle duration, \u03932, ranging from 1 to 2 hr. All progeny are tracked based on their cell cycle duration (lineage \u03931 =\u00a01 cell cycle duration, gray, or lineage \u03932 cell cycle duration, blue). Tree plot depicting lineages when the cell cycle duration (A) is the same, \u03931\u00a0=\u00a0\u03932 (scenario 1), or (B,\u00a0C) differs, \u03931\u00a0<\u00a0\u03932 (scenarios 2 and 3). Scenario 2 captures a situation when the cell cycle is determined by the parental lineage, while scenario 3 captures a situation when a cell splits asymmetrically into a fast and slow cell, resulting with the fast lineage having just one cell. (D\u2013F) M\u00fcller visualizations show that when the cell cycle duration is the same, both cells contribute the same number of progeny and cell proportions (%) are 50:50 (bottom left panel). The visualization is stacked, down-scaling the blue lineage slightly to reduce occlusion of the gray lineage. Cells with longer cell cycle duration (blue lineage) generate fewer progeny with respect to the cells with a short cell cycle duration of 1 hr (gray lineage). However, the slower cells contribute more to the diversity observed in the population, shown as the blue and gray transcriptome diversity bars. Thus, increasing cell cycle duration increases cell diversity, but also limits the number of progeny generated. The system can overcome the limit on cell number by using scenario 3, where more slow cells can be generated (other parameters G\u00a0=\u00a05, gene lengths (geneL1-L2), genome\u00a0=\u00a0{1,1.25,1.5,1.75,2} and ploidy =\u00a01, RNA polymerase II re-initiation,\u00a0$\u03a9=0.25kb$).\n\nIn the simulation where both cell lineages cycle at the same rate (Figure 5A), both lineages generate the same number of progeny with the same level of diversity (Figure 5D). When cell cycle duration for the second (blue) lineage is increased across simulations (Figure 5E), the transcriptional filter acts to generate more diverse progeny, but with fewer cell numbers and progressively smaller population proportions due to the slower cell cycle (Figure 5E, blue bars). Meanwhile, the short cell cycle lineage maintains a steady, low level of diversity generation (Figure 5E, gray bars). When a fast cell can divide asymmetrically, generating one slow and one fast cell at each division, the number of slow cells in the population can increase; however, this comes with a reduction of the number of fast cells in the population (Figure 5F). Thus, our simulations show how the cell cycle duration parameter can impose a tradeoff between cell proportion and diversity generation, and mixing lineages with different cell cycle durations can generate mixed cell populations each with their own diversity levels.\n\nTo more faithfully simulate multicellular animal development where cell cycle duration increases over time, we next allowed progeny cells to differ in their cell cycle duration from their parents in each generation (Figure 6A). Increasing the cell cycle duration over time reveals that cell cycle dynamics can alter the number and proportions of cells as a function of time (cell generations; Figure 6B and Figure 6\u2014figure supplement 1). To compare with a real system, we explore single-cell transcriptomics data measured over four time\u00a0points of mouse cortex development (Yuzwa et al., 2017). Average cell cycle duration over mouse neural cortex development is known to increase from 8 hr at embryonic day 11 (E11) to an average of 18 hr by E17 (Furutachi et al., 2015; Takahashi et al., 1995a). Within this range, progenitor cells are, in general, expected to be characterized by fast cycles with short G1 duration and neurons by slower cell cycles with long G1 duration (Calegari et al., 2005). In our analysis of the mouse cortex scRNA-seq data, we find that\u00a0genes with increasing transcript expression across the time course (E11.5 < E13.5 < E15.5 < E17.5) are associated with neural developmental (maturing cell) pathways, whereas the genes with decreasing transcript expression across time (E11.5 > E13.5 >\u00a0E15.5 > E17.5) are associated with transcription and proliferation (stem and progenitor cell) pathways (Figure 6\u2014figure supplement 2). Furthermore, we observe an overall pattern of an increasing number of cells with long cell cycle duration and a decrease in fast cycling cells (Figure 6C) following the same general trend as observed in our simulations (Figure 6A), supporting the idea that cell cycle duration dynamics could play a role in controlling cell proportions and cell diversity in a developing tissue.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig6-v2.jpg)\n\n**Figure 6.:** (A) Cell cycle duration increases after each cell division, with amount of increase defined using a Gaussian distribution. (B) Simulation of gradually increasing cell cycle duration over time, such that \u0393\u00a0=\u00a0Gaussian (mean \u0393parent \u00b1 6, standard deviation \u03c3\u00a0=\u00a00.06), affects the relative proportion of cells with different cell cycle durations (pie charts). All cell progeny are labeled based on their cell cycle duration (inherited from parent). See Figure 6\u2014figure supplement 1 for results using other increment rates. Parameters: genome\u00a0=\u00a010, gene lengths (geneL1-L10), \u03bb\u00a0=\u00a01 kb/hr, 18 cell divisions, iterations\u00a0= 500, ploidy n\u00a0=\u00a01, RNA polymerase II re-initiation,\u00a0$\u03a9=0.25kb$. (C) Single-cell transcriptomics data from GSE107122 (Yuzwa et al., 2017) for embryonic mouse cortex development, known to exhibit increasing cell cycle duration over time. This data includes identified cell types, is a time series, and we know the average cell cycle duration at each time point; at E11.5, the average cell cycle duration is 8 hr and by E17.5 it is 18 hr (Furutachi et al., 2015; Takahashi et al., 1995a). Cells were defined as relatively fast cycling cells (apical progenitors), relatively medium cycling (intermediate progenitors), and relatively slow cycling (neurons), with cell-type annotation based on cell clustering analyses conducted in (Yuzwa et al., 2017). We show how cell proportions (pie charts) change across time, with apical progenitors (relatively fast cycling cells) decreasing in frequency as the average cell cycle duration increases.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** All cell progeny are labeled based on their cell cycle duration (inherited from parent). Each line represents a different rate of increase in average cell cycle duration, following rate increments 0 (shallowest constant curve), 1, 3, 6, and 9 (steepest curve). Cell cycle duration increases after each division using a Gaussian distribution, such that \u0393\u00a0=\u00a0Gaussian\u00a0(mean \u0393 parent \u00b1 rate increment, standard deviation \u03c3\u00a0=\u00a00.06). Gradual cell cycle duration changes affect the relative proportion of cells with different cell cycle durations (pie charts). Parameters genome\u00a0=\u00a010, gene lengths (geneL1-L10), \u03bb\u00a0=\u00a01 kb/hr, 15 cell divisions, iterations\u00a0=\u00a0500, ploidy n=1, RNA polymerase II re-initiation,\u00a0$\u03a9=0.25kb$.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** We used the mouse cortex time-series single-cell transcriptomics data, obtained from GSE107122 (Yuzwa et al., 2017), to identify gene transcripts that increase or decrease in expression level over development (with gene transcript expression following the pattern: E11.5 < E13.5 < E15.5 < E17.5 for increasing and E11.5 > E13.5 >\u00a0E15.5 > E17.5 for decreasing genes). To summarize pathway annotation information for each gene, we identified all corresponding Gene Ontology biological process terms for each gene from the Ensembl genome database and visualized term frequencies as word clouds using Mathematica. We find that\u00a0the genes (n\u00a0=\u00a02186) that increase across time are associated with neural developmental (brain, neuron, and synapse) pathways, whereas the genes (n\u00a0=\u00a01834) that decrease across time are associated with DNA-repair and proliferation pathways.\n\n### Hypothesis: a cell cycle-dependent transcriptional filter may help control cell proportion and diversity in tissue development\n\nOur theoretical model and agreement with general trends in scRNA-seq data supports the hypothesis that a cell cycle-dependent transcriptional filter has the potential to control cell proportion and diversity in tissue development. In this section, we use the model to generate specific questions that can be checked in real data, further supporting our model.\n\n### Organismal level\n\nOur model suggests that organisms with long genes will need to maintain long cell cycle durations during development. Cell cycle duration measurements are not widely available, which makes directly testing this hypothesis difficult. Instead, we explored related questions. We started by asking if organisms with longer genes would also take longer to develop. We analyze gene length distributions for 12 genomes spanning budding yeast to human with a diverse range of developmental durations, as shown in Figure 7 and Supplementary file 3\u00a0(Gilbert and Barresi, 2016; Jukam et al., 2017). Non-mammalian species that we analyze are relatively fast developing, ranging from approximately 2 hr (e.g., Saccharomyces cerevisiae) to a few days (e.g., X. tropicalis and D. rerio), while mammals (M. musculus, Sus scrofa, Macaca mulatta, and Home sapiens) are relatively slow developing (20, 114, 168, and 280 days, respectively, Supplementary file 3). These species also have different gene length distributions; to illustrate this quantitatively, using a typical transcription rate of 1.5 kb/min (Ardehali and Lis, 2009), a cell cycle duration of 1 hr can exclude up to 20% total genes found in relatively slow developers and not exclude any genes in fast developers (Figure 7A). In agreement with our hypothesis, the gene length distribution is narrower and left shifted (shorter genes) for fast developers and broader and right shifted (longer genes) for slower developing species. Interestingly, one seeming exception to the overall gene length distribution trend in multicellular animals is the tunicate Oikopleura dioica, which has relatively short genes, but also has a rapid gestation period of 4 hr to hatched tadpole (approximately twice as fast as C. elegans and six times faster than D. melanogaster), supporting our analysis. Broadening this analysis to 101 species, we again find an association (r\u00a0=\u00a00.74) between estimated developmental time and median gene length (Figure 7B and Figure 7\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig7-v2.jpg)\n\n**Figure 7.:** (A) Model organisms exhibit a large diversity in gene length distributions over their genomes. Species that have narrower gene length distributions tend to develop faster, while slow developers (mammals) exhibit broad and right-shifted gene length distributions. Demarcating a 1 hr cell cycle duration using an average transcription rate of 1.5 kb/min illustrates the proportion of genes that would be interrupted before transcript completion for each organism. Saccharomyces cerevisiae (budding yeast), Caenorhabditis elegans (worm), Drosophila melanogaster (fruit fly), Oikopleura dioica (tunicate), Danio rerio (zebrafish), Takifugu rubripes (fugu), Xenopus tropicalis (frog), Gallus gallus (chicken), Mus musculus (mouse), Sus scrofa (pig), Macaca mulatta (monkey),\u00a0and Homo sapiens (human). (B) There is a clear positive correlation between developmental time and median gene length (101 species, Figure 7\u2014figure supplement 1). Estimated developmental time was curated from the\u00a0Encyclopedia of Life or articles found in PubMed (Supplementary file 3). We used gestation time for mammals and hatching time for species who lay eggs (since it is difficult to accurately define a comparative stage for all species). We analyzed the data using a Pearson correlation test, shown as r. For each species, we calculated median gene length: all protein coding genes were downloaded from Ensembl version 95 (Yates et al., 2016) using the R Biomart package (Durinck et al., 2009; Durinck et al., 2005). The length of each gene was calculated using start_position and end_position for each gene as extracted from Ensembl data.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The association between number of cell types and species appearance in the fossil record according to Valentine et al., 1994. (B) The association between median gene length and emergence time. (C) The association between median gene length and developmental time across 12 species taxonomy classes (Saccharomycetes, Chromadorea, Ascidiacea, Insecta, Hyperoartia, Amphibia, Actinopterugii, Aves, Reptilia, Mammalia, Sarcopterygii, and Myxini). For each species, we calculated median gene length: the length of each gene was calculated using start and end positions for each gene as extracted from the Ensembl genome database (version 95). Estimated developmental time was curated from the Encyclopedia of Life or articles found in PubMed (Supplementary file 3). We used gestation time for mammals and hatching time for species who lay eggs (since it is difficult to accurately define a comparative stage for all species). We analyzed the data using a Pearson correlation test shown as r.\n\nOur model suggests that short genes will be enriched in pathways that can function independently from long genes, and that long genes may be enriched in pathways related to mature, differentiated cell types with slower cell cycles (Figure 8B). We examined the functions of short and long genes by conducting a pathway enrichment analysis on all genes in a genome ranked by their length. In the human genome, the longest genes are enriched in processes such as neural development, muscle control, cytoskeleton, cell polarity, and extracellular matrix, and the shortest genes are enriched in processes that presumably need to be quickly activated transcriptionally (e.g., immune, translation, and environment sensing; Figure 8\u2014figure supplement 1). We performed a similar pathway analysis for human (Figure 8 and Figure 8\u2014figure supplements 2 and 3) and 12 other species (Figure 9) and found general agreement with these patterns, finding the longest genes (gene length in the 95% quantile) enriched for genes involved in mature cell-related processes (e.g., brain and muscle development), whereas the shortest genes (gene length in the 5% quantile) are enriched for genes involved in core processes (e.g., immune, RNA processing, and olfactory receptors).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig8-v2.jpg)\n\n**Figure 8.:** The plot shows the H. sapiens gene length distribution. We selected the shortest 5% quantile as a list of short genes and the 95% quantile as a list of long genes. Short genes < 1.6 kb (n=1124) are involved in immune defense, environment-sensing, and olfactory, and long genes >243\u00a0kb (n\u00a0=\u00a01125) are represented in processes involving muscle and brain development, as well as morphogenesis. For each gene group, we identified all corresponding Gene Ontology (Ashburner et al., 2000) biological process terms downloaded from the Ensembl genome database version 100 (Yates et al., 2016), grouped the terms into themes (Supplementary files 5 and 6), and visualized the resulting term frequencies as word clouds using Mathematica. Refer to Figure 8\u2014figure supplements 2\u00a0and\u00a03 for a more detailed analysis of the themes across all gene groups.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Enrichment map (Merico et al., 2010) showing the pathways enriched in short genes compared to long gene. Circles represent pathway gene sets. Lines connecting circles represent overlap between pathways. Similar pathways are grouped in larger bubbles and manually labeled using the AutoAnnotate (Kucera et al., 2016), Cytoscape app (Reimand et al., 2019), and custom scripts (Supplementary file 4). Blue pathways (nodes) are enriched in long genes, and red pathways are enriched in short genes (p-value<0.05, FDR < 0.01, Jaccard coefficient > 0.25). Long genes were enriched in many more functional groups than short genes with 798 and 152 enriched pathways, respectively.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** The plot shows the H. sapiens genes divided into 20 groups from shortest genes to the longest genes. For each gene group, we identified all corresponding Gene Ontology (Ashburner et al., 2000) biological process terms downloaded from the Ensembl genome database version 100 (Yates et al., 2016), grouped the terms into themes (Supplementary files 5 and 6), and visualized the resulting term frequencies as word clouds using Mathematica.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** H. sapiens genes were divided into 20 groups from shortest genes to longest genes. For each gene group, we identified all corresponding Gene Ontology (Ashburner et al., 2000) biological process terms downloaded from the Ensembl genome database version 100 (Yates et al., 2016) and grouped the terms into themes (Supplementary files 5 and 6). We calculated a moving average to explore the trend across gene groups by theme. For example, we identified the 15 most frequent themes between the shortest (blue) and longest (black) gene groups. We found that\u00a0themes such as \u2018environment-sensing,\u2019 \u2018immune,\u2019 and \u2018olfactory\u2019 show a trend with a decreasing average and are found only in the shortest gene group (blue). On the other hand, themes such as \u2018brain,\u2019\u00a0\u2018muscle,\u2019 \u2018neuron,\u2019 and \u2018synapse\u2019 show an increasing trend and are found only in the longest genes group (black).\n\n![Figure 8\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig8-figsupp4-v2.jpg)\n\n**Figure 8\u2014figure supplement 4.:** The plot shows the H. sapiens genes divided into 20 groups from shortest genes to the longest genes. For each gene group, we identified all corresponding Gene Ontology (Ashburner et al., 2000) biological process terms downloaded from the Ensembl genome database version 100 (Yates et al., 2016), grouped the terms into themes (Supplementary files 5 and 6), and visualized the resulting term relative frequencies in a matrix plot using Mathematica. Darker shading indicates higher term frequency.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig9-v2.jpg)\n\n**Figure 9.:** We selected the shortest 5% quantile as a list of short genes (top panels in blue) and genes above the 95% quantile to define a list of long genes (bottom panels in gray). Saccharomyces cerevisiae (short\u00a0<\u00a00.24\u00a0kb, long\u00a0>\u00a03.5\u00a0kb), Ashbya gossypii (short\u00a0<\u00a00.36\u00a0kb, long\u00a0>\u00a03.5\u00a0kb), Komagataella pastoris (short\u00a0<\u00a00.37\u00a0kb, long\u00a0>\u00a03.3kb), Yarrowia lipolytica (short\u00a0<\u00a00.39\u00a0kb, long\u00a0>\u00a03.5\u00a0kb), Caenorhabditis elegans (short\u00a0<\u00a00.47\u00a0kb, long\u00a0>\u00a09.6\u00a0kb), Drosophila melanogaster (short\u00a0<\u00a00.56\u00a0kb, long\u00a0>\u00a029\u00a0kb), Danio rerio (short\u00a0<\u00a01.3\u00a0kb, long\u00a0>\u00a0127\u00a0kb), Takifugu rubripes (short\u00a0<\u00a00.72\u00a0kb, long\u00a0>\u00a027\u00a0kb), Xenopus tropicalis (short\u00a0<\u00a00.93\u00a0kb, long\u00a0>\u00a083\u00a0kb), Gallus gallus (short\u00a0<\u00a00.67\u00a0kb, long\u00a0>\u00a0104\u00a0kb), Mus musculus (short\u00a0<\u00a01.2\u00a0kb, long\u00a0>\u00a0183\u00a0kb), and\u00a0Sus scrofa (short\u00a0<\u00a00.57\u00a0kb, long\u00a0>\u00a0197\u00a0kb). For each gene group, we identified all corresponding Gene Ontology biological process terms from the Ensembl genome database (100) and visualized the resulting term frequencies as word clouds using Mathematica.\n\n### Spatial level\n\nWithin an organism, cell cycle duration and transcript expression vary across many factors, including spatially. We hypothesize that spatial transcript expression patterns can be initially organized by gene length. To explore this, we study the developing fruit fly embryo (D. melanogaster) where the average cell cycle rates differ spatially (Foe, 1989). At the onset of cell cycle 14, cells in different embryo regions start to divide at different rates, caused by an increase in their gap phase length, varying from 30 min to 170 min (Foe, 1989; Foe and Alberts, 1983). Cell cycle duration lengthening is spatially organized, with anterior regions dividing faster than posterior regions, with the mid-ventral region being the slowest (Figure 10). The embryo also exhibits spatial segregation patterns due to Hoxd gene family transcript expression (Mallo and Alonso, 2013). Overlaying the spatial patterns of hox gene family transcript expression and cell cycle duration obtained from independent studies, we observe that fast cycling regions express the shortest hox genes (Dfd 10.6 kb, lab 17.2 kb) and slow cycling regions express the longest hox genes (Ubx 77.8 kb and Antp 103.0 kb)\u00a0(Foe, 1989; Lemons and McGinnis, 2006) in agreement with our model.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/64951/elife-64951-fig10-v2.jpg)\n\n**Figure 10.:** Drosophila Hoxd family genes are each represented by a colored rectangle, containing the length of the gene in base pairs. Spatial expression of a gene transcript is marked by its corresponding color on the Drosophila embryo map. Hoxd gene length is correlated with the cell cycle duration of the embryo location where the gene transcript is expressed, with short Hox gene transcripts expressed in regions with short mitotic cycles and long Hox gene transcripts expressed in regions of long mitotic cycles. Spatial map of cell cycle duration from Foe, 1989; Foe and Alberts, 1983 and gene transcript expression from Mallo and Alonso, 2013.\n\n## Discussion\n\nHow cellular processes support the carefully orchestrated timing of tissue development that results in a viable multicellular organism is still unclear. While a combination of many potential cell autonomous and non-autonomous mechanisms, such as cytoplasmic molecules and gradients, cell-cell communication, microenvironment signals, and effective cell size (Edgar et al., 1986; Mukherjee et al., 2020; Tabansky et al., 2013; Yoon et al., 2017), are likely important, one hypothesis is that gene length can be used as a mechanism to control transcription time in this process (Artieri and Fraser, 2014; Gubb, 1986; Keane and Seoighe, 2016; Swinburne et al., 2008). Bryant and Gardiner further hypothesize that cell cycle duration may play a role in filtering genes that influence pattern formation and regeneration (Bryant and Gardiner, 2018; Ohsugi et al., 1997) as cell cycle lengthens over development (Figure 1 and Supplementary file 1; Foe, 1989; Foe and Alberts, 1983; Newport and Kirschner, 1982b; Takahashi et al., 1995b). Early experiments using embryos suggested that cell cycle duration has a role in transcription initiation; however, these experiments lacked the temporal resolution necessary to dissociate the effects of cell cycle duration and transcriptional control from other mechanisms (Edgar et al., 1986; Edgar et al., 1994; Kimelman et al., 1987; Newport and Kirschner, 1982b; Newport and Kirschner, 1982a). It is also well known that cell cycle length changes can control cell fate and development (Coronado et al., 2013; Mummery et al., 1987; Pauklin and Vallier, 2013; Singh et al., 2013); however, this has remained observational and not linked to a mechanism. To help address these limitations, we developed an in silico cell growth model to directly study the relationship between cell cycle duration and gene transcription in a developmental context. The new discovery we make is that a transcriptional filter can be controlled by cell cycle duration and used to simultaneously control the generation of cell diversity, the overall cell growth rate, and cellular proportions during development (defining an emergent property of our computational model \u2013 see Appendix\u00a01). Genomic information (gene number and gene length distribution) and cell cycle duration are critical parameters in this model. Across evolutionary time scales, cell diversity can be achieved by altering gene length (Keane and Seoighe, 2016); however, in terms of developmental time scales, we propose that cell cycle duration is an important factor that may control cell diversity and proportions within a tissue.\n\nWe predict that increasing the gene length distribution across a genome over evolution can provide more cell cycle-dependent transcriptional control in a developing system, leading to increased cellular diversity. Examining a range of genomes and associated data provides support for this novel idea. We observe that fast-developing organisms have shorter median gene lengths relative to the broad distributions, including many long genes, exhibited by slow developers (mammals). This aspect of genome structure may help explain the observed rates of cell diversity and organism complexity, as measured by number of different cell types, over a wide range of species (Figure 7\u2014figure supplement 1; Valentine et al., 1994; Vogel and Chothia, 2006).\n\nWhile we hypothesize that a cell cycle-dependent transcriptional filter is a fundamental regulatory mechanism operating during development (because gene length is fixed in the genome and transcription rate is expected to lie in a narrow range), multiple other regulatory mechanisms could modulate its effects. Furthermore, exploring these mechanisms may even result in similar conclusions as it can be evolutionary advantageous to have multiple paths to the same outcome; these include, but are not limited to, silencing or deactivating genes, gene regulatory networks, blocking gene clusters, for\u00a0example, Hoxd (Rodr\u00edguez-Carballo et al., 2019) changing the transcription or re-initiation rate of RNA polymerase II (Figure 3\u2014figure supplement 1), or inheriting long transcripts maternally at the zygote stage (Figure 3\u2014figure supplement 2). Our current model only explores the effects of transcription and re-initiation rates of RNA polymerase II, mRNA transcript degradation rates, and maternally introduced transcripts. For the latter mechanism, we expect longer transcripts to be major contributors during the early maternal phase (Jukam et al., 2017), which agrees with zebrafish (D. rerio) experiments showing that maternal transcripts are longer and have evolutionary conserved functions (Heyn et al., 2014). Indeed, if we add maternal transcript inheritance to our model, we see the same pattern of a small number of long transcripts present early, as expected (Figure 3\u2014figure supplement 2). Future work would entail curating experimental data about more regulatory mechanisms in cell systems and testing their association with cell cycle duration.\n\nOur analysis raises interesting directions for future work. We focus on development, but transcriptional filtering may be important in any process involving cell cycle dynamics, such as regeneration (Bryant and Gardiner, 2018), wound repair, immune activation, and cancer. We must also more carefully consider cell cycle phase as transcription mainly occurs in the gap phases (Bertoli et al., 2013; Newport and Kirschner, 1982b). Experiments indicate that a cell will have different fates depending on its phase (Dalton, 2013; Pauklin and Vallier, 2013; Vallier, 2015). This agrees with our model as a cell at the start of its cell cycle will have a different transcriptome in comparison to the end of the cell cycle. Induced pluripotent cell state is also associated with cell cycle phases (Dalton, 2015), and efficient reprogramming is only seen in cell subsets with fast cell cycles (Guo et al., 2014). Our model could explain these observations as slower cycling cells could express long genes that push a cell to differentiate rather than reprogram. However, our model is limited to total transcription duration for interphase (G1, S, and G2), thus a future direction would be to explore different durations for each cell cycle phase. Collecting more experimental data about cell phase in developing systems will help explore these effects. Further, it will be important to explore how cell cycle duration is controlled. Molecular mechanisms of cell cycle and cell size (Liu et al., 2018) control could be added to our model to provide a more biochemically realistic perspective on this topic. Ultimately, a better appreciation of the effects of cell cycle dynamics will help improve our understanding of a cell\u2019s decision-making process during differentiation and may prove useful for the advancement of tools to control development, regeneration, and cancer. Finally, it is important to note that we have not provided experimental model support, only analyses that do not disagree with model predictions. We have also not proven the generality of the results across species. However, we hope that\u00a0the hypotheses we explore here motivate new experimental studies to directly test the validity and generality of our model.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>Wolfram, 2017</td>\n      <td></td>\n      <td>Mathematica (Wolfram Research Inc, Mathematica Versions 11.0\u201312, Champlain, IL, 2017) http://www.wolfram.com/mathematica/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell developmental modelhttps://github.com/BaderLab/Cell_Cycle_Theory</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:25867923 Satija et al., 2015</td>\n      <td></td>\n      <td>Seurat (3.1.2) https://satijalab.org/seurat/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:26687719 Yates et al., 2016</td>\n      <td></td>\n      <td>Ensembl (95) and (100) https://useast.ensembl.org/index.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:10802651 Ashburner et al., 2000</td>\n      <td></td>\n      <td>Gene Ontology http://geneontology.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:16082012 Durinck et al., 2005</td>\n      <td></td>\n      <td>BioMart (3.10) http://useast.ensembl.org/biomart/martview/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:21085593 Merico et al., 2010</td>\n      <td></td>\n      <td>Enrichment Map software (3.3.0) https://www.baderlab.org/Software/EnrichmentMap</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:14597658 Kucera et al., 2016</td>\n      <td></td>\n      <td>AutoAnnotate App https://baderlab.org/Software/AutoAnnotate</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:14597658 Shannon et al., 2003</td>\n      <td></td>\n      <td>Cytoscape (3.8.0) https://cytoscape.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td></td>\n      <td>PMID:30664679 Reimand et al., 2019</td>\n      <td></td>\n      <td>Baderlab pathway resource (updated June 1,\u00a02020) http://download.baderlab.org/EM_Genesets/</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mathematical model\n\nOur mathematical model is agent and rule-based. A single cell behaves and interacts according to a fixed set of rules. Our major rule involves a gene\u00a0length mechanism, where each cell is defined by a genome and a cell cycle duration. The cell cycle duration determines which gene transcripts are expressed within the cell, based on the transcription rate. All decisions are based on a cell\u2019s autonomous information, and we omit external factors. We deliberately choose to consider this simple baseline setup to clarify the contribution of cell cycle duration to overall cell population growth.\n\nEach cell is defined by a genome G (containing a set of genes), cell cycle duration in hours, and the transcripts inherited or recently transcribed. In the genome, each gene is defined by a length, geneLength. For example, in a genome with three genes, (gene1, gene2, gene3) represents genes of length 1, 2, and\u00a03 kb, respectively.\n\nEach cell can divide and make two progeny cells. This process can continue many times to simulate the growth of a cell population, and we keep track of the entire simulated cell lineage. For each cell division (one time step in the simulation): each Celli will transcribe its genes based on the time available, defined by the cell cycle duration. We assume that\u00a0the time it takes to transcribe a gene depends on its length and a fixed transcription rate; although a simplification, there are examples where this occurs, for instance,\u00a0the human dystrophin gene is 2,241,765 bp long and takes about 16 hr to transcribe (Tennyson et al., 1995). Once a cell cycle is finished, the cell divides. When cells are synchronized, the first cell division T\u00a0= \u0393i. When the cells are asynchronized, then the algorithm identifies the time allocated as the shortest cell cycle duration in the population as the time step and each cell division will have a different duration. In this case, we keep track of the exact duration such that cells with short cell cycles, for example, \u0393\u00a0=\u00a01 hr, will register 10 divisions in 10 hr while cells with long cell cycles, for example, \u0393\u00a0=\u00a010 hr, will register one division in over the same time. We limited the model to two modes of division, symmetric (where the cell gives rise to identical cells, e.g., Figure 5A) and asymmetric (where the cell gives rise to a fast and slow cell, e.g., Figure 5C). We do not consider mechanisms that reduce cell numbers (cell death). For certain experiments (e.g., Figure 6), the cell cycle duration for each progeny is allowed to diverge from the parental duration using a monotonic function (increasing or decreasing) and a stochastic variable based on a Gaussian distribution with a mean equal to \u0393i (parental cell cycle duration). This models a more realistic noisy distribution of cell cycle durations in the simulated cell population. The cell cycle and division rules are repeated for all cells in the population until a set number of cell divisions have been reached.\n\nDuring a cycle, each cell contains a certain number of transcripts. The number of transcripts for each gene is calculated by a function of cell cycle duration, \u0393, transcription rate, \u03bb, re-initiation distance, $\u03a9$, and gene length, L:$\\suma=0\\frac{gene^{L_{i}}}{\u03a9}\u22121\u0393\u2217\\lambda\u2212\\frac{a\u03a9}{\\lambda}$. If the cell does not divide, then the number of transcripts reflects the current cell cycle phase, which is computed and stored. If the cell can divide within the time T\u00a0=\u00a0$(\u0393\u2217\\lambda)$, then it will randomly, according to a uniform distribution, assign its transcripts between its two progeny cells. Typically, simulations were conducted with \u03bb=1,\u00a0simplifying the analysis to\u00a0$(\u0393-a\u03a9)/gene^{L_{i}}$; however, we also explored the effects of transcript re-initiation and transcription rate on the system as shown in Figure 3\u2014figure supplement 1.\n\nOur model tracks single cells, with each cell identified by a transcriptome and cell cycle duration. The transcriptome data resemble a scRNA-seq matrix to aid comparison between simulation and experimental data. We allow cells without any transcripts, for\u00a0example, (0,0,0) to exist \u2013 due to the low numbers of genes considered in our simplified model and results, and that parental transcripts are distributed between progeny, there is a probability of 2/(the total number of transcripts) that all the transcripts will end up in only one of the new cells, leaving the other one empty (Zhou et al., 2011). Theoretically we have no reason to omit these cells, and they may represent the most na\u00efve theoretical state of a cell without any prior information. Early embryos, such as in Xenopus stages that lack zygotic transcription, may be similar real systems to such a state (Newport and Kirschner, 1982b).\n\nParameters tracked for each celli\u00a0= (number of divisions, current cell cycle phase, current time in cell cycle, length until next division, relative time passed, total cell cycle duration, transcriptome list, cell name, and lineage history). All cells are set with the same genome, ploidy level, and RNA polymerase II transcription rate and RNA polymerase II re-initiation distance.\n\nOur model was developed and simulated using Mathematica (Wolfram, 2017).\n\n### Quantification and statistical analysis\n\n#### Gene length analysis\n\nAll protein coding genes were downloaded from Ensembl genome database version 95 or 100 (Yates et al., 2016) using the R (3.6.1) Biomart package version 3.10 (Durinck et al., 2005). The length of each gene was calculated using start_position and end_position for each gene, as extracted from the Ensembl database (Yates et al., 2016).\n\n### Single-cell analysis pipeline\n\nSimulated data sets were preprocessed and clustered in R using the standard workflow implemented in the Seurat package version 3.1.2 (Satija et al., 2015). We used default parameters unless otherwise stated. Data were log-normalized and scaled before principal component analysis (PCA) was used to reduce the dimensionality of each data set. Due to the small number of simulated genes in our experiments, the maximum number of PCs (one fewer than the number of genes dims\u00a0=\u00a01:3) was calculated and used in clustering. FindVariableFeatures was used with loess.span set to 0.3 unless the number of genes was less than 5, then (0.4, 0.7, and 1 were used for simulations with 4, 3, and 2 genes, respectively). Cells were clustered using a shared nearest neighbor (SNN)-based \u2018Louvain\u2019 algorithm implemented in Seurat with reduction set as \u2018pca.\u2019\u00a0The clustering resolution was set to 1 for all experiments, and all calculated PCs were used in the downstream clustering process using the Louvain algorithm accessed via Seurat. Data was visualized with t-SNE after clustering.\n\n### Developmental time curation\n\nEstimated developmental time was curated from\u00a0the Encyclopedia of Life or PubMed accessible articles (Supplementary file 3). We used gestation time for mammals and hatching time for species who lay eggs (since it is difficult to accurately define a comparative stage for all species). Species were grouped based on their taxonomic class and their developmental time was estimated by calculating the average number of days from zygote to birth or hatching.\n\n### Pathway enrichment analysis\n\nWe used Gene Set Enrichment Algorithm (GSEA version 4.0.2), in pre-ranked analysis mode, to identify pathways enriched among all genes in a genome ranked by gene length (Subramanian et al., 2005). Gene ranks started at (number of genes)/2 to its negative equivalent and were normalized such that we generated a ranked list from 1 to \u22121, with 1 specifying the shortest gene and \u22121 the longest. The ranked gene length list was analyzed for pathway enrichment GSEA with parameters set to 1000 gene set permutations and gene set size between 15 and 200. Pathways used for the analysis were from Gene Ontology biological process (Ashburner et al., 2000), MSigDB c2 (Ashburner et al., 2000), WikiPathways (Slenter et al., 2017), Panther (Mi, 2004), Reactome (Croft et al., 2011), NetPath (Kandasamy et al., 2010), and Pathway Interaction database (Schaefer et al., 2009) downloaded from the Bader lab pathway resource (http://baderlab.org/GeneSets). An enrichment map, created using the EnrichmentMap Cytoscape app version 3.3.0 (Merico et al., 2010), was generated using Cytoscape (version 3.8.0) using only enriched pathways with p-value of 0.05 and FDR threshold of 0.01 (Reimand et al., 2019). Cross-talk (shared genes) between pathways was filtered by Jaccard similarity greater than 0.25. Pathways were automatically summarized using the AutoAnnotate App to assign pathways to themes (Kucera et al., 2016). Themes were further summarized by grouping pathways into more general themes with a mixture of automatic classification using key words and manual identification.\n\n### Pathway word cloud analysis\n\nAll Gene Ontology pathways (GO biological processes) were\u00a0downloaded from the Ensembl genome database, version 100 (Yates et al., 2016), using the R Biomart package version 3.5 (Durinck et al., 2005). We restricted analysis to pathways with at least three genes. We grouped genes based on their gene length (see Gene length analysis for details) and identified the pathways associated with each gene. The description of each pathway was collected and the frequency of each word within the pathway name was calculated. We defined themes (Supplementary files 5 and 6) for all H. sapiens available pathways (using only GO biological processes). Common, generic, and uniformly distributed themes (such as cellular\u00a0response, metabolic\u00a0biosynthesis, protein\u00a0processes, signaling, and transcription) were manually removed from the list. The frequencies were visualized as word clouds using Mathematica (Wolfram, 2017).\n\n### Data and code availability\n\nOur simulation code is available at https://github.com/BaderLab/Cell_Cycle_Theory (Chakra, 2021\u00a0copy archived at swh:1:rev:7eb38b679e917ba8522b17edae5498990a221ffc).\n",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "a61e6c69-16d4-4670-8ad8-eeaf5eab425c",
+      "submission_id": "e4d7b283-c27a-43c9-8d78-a4190c108446",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64951.sa1](https://doi.org/10.7554/eLife.64951.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nCell cycle duration acting as a filter that constrains transcription is an idea proposed 30 years ago. Here, authors propose that a very simple model can produce results that qualitatively echo single-cell RNA seq data published by other labs. Overall, this study suggests that the slowing down of the cell cycle during development can act to allow longer genes to be transcribed and more cell types to be generated. Experimental test of this hypothesis are needed for future work.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Control of tissue development by cell cycle dependent transcriptional filtering\" for consideration by eLife. Your article has been reviewed by 4 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David M Suter (Reviewer #2).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAlthough there was some support for your work, the amount of time required for revision will likely exceed two months. It is the policy of eLife that a manuscript requiring substantial revision should be rejected. We do invite you to resubmit if you feel that you have addressed reviewers comments.\n\nReviewer #1:\n\nAbou Chakra et al. posed the hypothesis that cell cycle transcriptional filtering \u2013 the transcribing of long genes only when cell cycle slows down \u2013 might help control tissue development and the generation of diverse cell fates. This study is based on simple math modeling and comparing model predictions to single-cell RNA seq data.\n\nFrom an outsider's point of view, the article is interesting, although very speculative. Thus, I suggest softening your statements throughout. For example, the current title can be changed to \"Cell cycle dependent transcription filtering can potentially contribute to tissue development\".\n\nScientifically, I would like to see an analysis of whether transcripts specific to development (e.g. neuronal development) tend to be longer.\n\nReviewer #2:\n\nThis study addresses the important and exciting topic of how the cell cycle duration gates gene expression diversity at the single cell level by limiting the expression of long genes. This work intersects between genetics, gene expression, developmental and evolutionary biology, and should therefore be of broad interest to the readership of eLife. The manuscript is well written and structured, and the findings are interesting. I have some technical and conceptual concerns about the causality links made by the authors.\n\n1. In general the authors should provide more details about the implementation of their method in the manuscript. While Figure 1 is very clear and allows non-specialists to grasp the concept, a more detailed explanation of the model would be useful.\n\nIn particular, how is transcription re-initiation modelled ? This is important for the following reason. If a gene takes 10 hours to be transcribed and the cell cycle is 10 hours, only 1 transcript can be made. However, if the cell cycle is longer, the maximum number of transcripts will depend on the distance between successive polymerases (thus depending on initiation rate), and could thus rapidly increase. The number of transcripts generated in 11 hours will thus scale with initiation rate, or inversely with the distance between polymerases on the gene. Also, how does transcriptional bursting affect their modelling ?\n\n2. The authors show that short genes tend to be expressed at higher levels than long genes. They use this data to support that elongation rates * cell cycle duration limits the expression of long genes. In this scenario, one would expect that long genes are more depleted in pol II at the end of the gene, while short genes would not. The authors could look into Pol II footprinting/ChIP-seq datasets to confirm this, and also to exclude that short genes are expressed at higher levels because of their higher initiation rates.\n\n3. The authors mention that cell cycle duration should be broadly correlated with development time. But cell sizes and organism size will also impact this correlation. Why do the authors not consider these parameters ?\n\n4. The authors should provide an analysis of which classes of genes are enriched into different genes length bins. According to their results, more specialised genes, i.e. expressed in terminally differentiated, non-dividing cells should be longer on average.\n\n5. Figure 6A: How can the average cell cycle duration become higher than the max cell cycle duration at the single cell level (shown as color code) ?\n\n6. What is the relative contribution of introns vs exons in long vs short genes ? Could the longer cell cycle of some species allow to accumulate more/longer introns to increase splice isoform diversity/regulatory potential ?\n\n7. Linked to 5., one challenge here is to understand causality links. The cell cycle could be used by organisms to gate cell diversity during development, but longer cell cycles could also allow to accumulate longer genes on evolutionary time scales. The authors should comment on this.\n\nReviewer #3:\n\nWe've known for a very long time that cells in many animal embryos have very fast cell cycles, and that the duration of cell cycle increases as cells differentiate into progeny with specialized function. However, whether cell cycle duration directly impacts cell fate decisions via filtering transcriptional activity is not clear. Certainly it has been proposed on multiple occasions, and the ability of mitosis and DNA replication to interrupt and abort transcription has been demonstrated. This study presents an interesting attempt to address this topic via mathematically modeling the relationship of cell cycle length and the diversity of transcriptome. The authors utilized a simplified model to simulate how cell cycle length, gene length, number of genes and transcription rate affect resulting transcriptomes in cell populations. Not unexpectedly, the simulations show that increasing the length of the cell cycle can increase the proportion of mRNAs from long genes, and also the complexity of the transcriptome and (more interestingly) the diversity of transcriptomes between different cells in a population. The model is clever and the demonstration is useful, if highly over-simplified. Importantly the authors also analyze some real transcriptome data to see if it supports their conclusions. At some levels there is support, but overall the real data from single cell sequence don't align well with their hypothesis and fall short of a compelling experimental validation. Overall we felt the study was interesting in concept and could be a valuable addition to the literature devoted to cell cycle and development, but that it could be much better with comprehensive revisions as discussed below.\n\n1. The simulations in Figure 2A show that increasing cell cycle duration will allow more relative transcription of longer genes. Unfortunately the real data from Xenopus and Danio (Figure 2B, S2) don't appear to show this same trend. The authors should check this more carefully by comparing proportions of transcripts of different lengths at the different developmental times. If there is not change in proportions then the real data may not validate the simulation's predictions. At issue might be the \"contamination\" of the real data with maternal transcripts. Perhaps the authors should try to remove maternal transcripts and analyze only zygotic transcripts. Furthermore, the timepoints shown for Xenopus in Figure 2B are probably too late and too closely spaced to see a trend. They should compare transcripts for very early and very late in development.\n\n2. I was not convinced by the simulations and arguments about the generation of cell diversity. It seems that this might only occur with very low numbers of transcripts per cell; i.e. when stochastic variation came into effect. This may not be the case for real cells.\n\n3. Figure 6AB really baffled me. Transcriptome diversity seems not to be graphed at all (check the axis labels and key), even though diversity is the point of the figure. Either it is mis-labeled or it needs more explanation. Figure 6C also requires more explanation, both within the figure and in the text (lines 219-227), which is opaque.\n\n4. Figure 5 states that slower cell cycles would increase cell type diversity at the price of fewer progeny number. However, the real data in Figure 6 don't support this idea. Slower cell cycle actually increased differentiated progenies, this suggests that the authors' simulation settings failed to capture a critical aspect of the regulation of transcription.\n\n5. We suggest that the authors also look into the Oikopleura dioica genome (see Danks et al. 2012 \"OikoBase: a genomics and developmental transcriptomics resource for the urochordate Oikopleura dioica\"). This could be very interesting because this organism develops exceptionally fast (embryogenesis last 4-5 hours before hatching a tadpole), and they have an incredibly compact genome (most introns are no longer than 100 bp). There is also good transcriptome data from Drosophila that could be informative, especially if maternal transcripts could somehow be subtracted out. Overall, the analysis of real transcriptome data is superficial, and much more could be done here, that might support the authors' conclusions much better that what is presented.\n\n6. In the introduction (line 47), the authors should state how they envision the \"transcriptional filter\" works. By abortion of transcription at M phase? Or during S phase? There is data on both mechanisms and these should be cited and described explicitly. This also comes up in the discussion (line 269). The authors should be aware that the attenuation of transcription during S-phase is limited to interactions with replication forks. In fact there is a great deal of transcription in most S phases.\n\n7. We were uncomfortable with the assumption that appears to be made on lines 86-92 and Figure 2, where the number of transcripts made during a period of time equals: synthesized transcripts=time/time to make one transcript. Does this assumption fail to take into account that multiple RNA transcription bubbles may exist on the same gene once transcription starts, thus speeding up transcript production once the first transcript in finished? If so it is inaccurate.\n\nReviewer #4:\n\nThis manuscript presents a theoretical model that explains potential contribution of cell cycle, as a transcription filter, to organism development. The hypothesis is not entirely new. The main contribution is that the authors defined a math/simulation framework and compared it with some real data (gene size distribution in various organisms and single-cell transcriptomic data obtained from several organisms/processes) for justification. Overall, I do not feel this work adds much new to current understanding. Real data did not strongly validate the proposed model, nor led to refinement in knowledge/hypotheses.\n\n1. Page 4. Algorithms and parameters used in simulation were not described in sufficient detail. For example, how were single-cell RNA-seq data simulated? Was noise considered?\n\n2. Figure 2, the trends between A and B are similar but the actual distributions are not: either mean average transcript count per cell, or the extent of spread look quite different. One could also argue the dissimilarity between the two figures. Does it reveal that the model lacks necessary accuracy? This needs to be further discussed/explained.\n\n3. Figure 3A. The authors should be able to derive analytical solutions for the transcriptome diversity, directly from the model defined in Figure A. Not sure why they need to show these relations indirectly from simulation (Page 5). Perhaps it is the order/logic of the presentation.\n\n4. Figure 3C. Unclear how many cells are there under each condition (when does the simulation stop?) and how do #cell affect the clustering results. Also, #cluster, as a metric is quite misleading (not comparable across conditions) without specifying the total #cell and the clustering algorithms/parameters used.\n\n5. Page 6, the authors stated that \"we expect faster developing organisms to have short cell cycles and genes whereas slower developing organisms will have longer cell cycles and genes\". This is very rough. Can it be quantified and then supported by the proposed model?\n\n6. Figure 4. How were the 11 genomes selected? Why not select more? Are there genomes that do not follow the trend, i.e., having large genome but relatively shorter genes? Also, it is unclear in what order the organisms are listed. Particularly, Fugu and zebra-fish did not follow the monotonic trend in means. Some distributions do not look statistically significantly different.\n\n7. Figure 6. E15.5 and E17.5 has a slightly reversed trend.\n\nIn general, there needs to be more real data used to back up the theoretical models.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Control of tissue development and cell diversity by cell cycle dependent transcriptional filtering\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David M Suter (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision letter to help you prepare a revised submission.\n\nEssential revisions:\n\nThe decision has taken a long time because as you will see, the three reviewers have disagreements. Upon further discussions, we have reached an agreement. We feel that although experiments are always desired, there should be a place in science for extracting information from published datasets, despite the varying quality of datasets. We will waive the requirements for experiments, but we do request you to address comments not related to experiments, and be very careful in stressing the limitations of the datasets you used and the conclusions you drew. For example, your model suggests a mechanism, but does not exclude other mechanisms.\n\nReviewer #1:\n\n1. Figure 4: It may be more meaningful to model stem-cell like behavior where a fast cell always gives birth to a slow and a fast cell, whereas a slow cell always gives rise to two slow cells. I believe that the cell # patterns will look more realistic under this assumption.\n\n2. Figure 7: I am not sold about this figure and the associated text. \"Sensory\" and \"perception\" (short genes) seem to be related to neural-development (long genes). Also, the main text said \"shortest genes\u2026 enriched for genes involved in core processes (e.g\u2026. transcription\u2026), whereas in Figure 7, \"transcription\" is associated with long genes.\n\nReviewer #2:\n\nI found the revised version of this manuscript improved, and the authors have adequately addressed most of the points I raised.\n\nNotably, they now describe more in detail their methodology, and also assess how their model behaves when assuming that several RNA Pol II can be present on the same gene. I would suggest to use this as a first assumption rather than \"We assume RNA polymerase II re-initiation occurs once a transcript is complete\". To me the latter one is not supported by what we know about transcription that occurs in bursts that can generate large number of RNA molecules within minutes. Also see Tantale et al., Nature Communications 2016, who show evidence of RNA Pol II convoys on actively transcribed genes.\n\nReviewer #3:\n\nIn this manuscript the authors use mathematical modeling to address whether cell cycle length determines cell fate using a correlation of gene transcript length. Since a longer cell cycle time, allows transcription of longer genes, it could affect the cell fate of the progeny. If longer transcripts are needed for highly differentiated cells, there would be a need for longer cell cycle times. Since it has been shown in stem cells that lengthening of the G1 phase is correlated with increased differentiation of cells, this hypothesis could make a lot of sense.\n\nUsing mathematical modeling is a great approach to answer this question and is definitely one of the strengths of this manuscript. This manuscript is trying to address an important and fundamental question that has been on the minds of scientists for a long time.\n\nThe drawback of the manuscript is that validation of the hypothesis is only partially or poorly confirmed by the experimental data. Essentially, the data does not contradict the hypothesis of the authors. This is great but is it good enough? Should the data not univocally prove that the hypothesis is correct? One of the major issues is that the authors use publicly available data, which originates from different organisms, different developmental time points, and have been acquired using different platforms. Therefore, the underlying data may not be solid enough.\n\nRather than trying to find universal rules that apply to all organisms, tissues, and developmental time points, it may be more useful to stick to one organism. If the authors could prove that their hypothesis is correct even in only one specific cell types, this would be an important step. Sometimes taking a small step can be more important than making a giant leap that is not well supported by the data.\n\nThis manuscript is interesting and contains good hypotheses but for sure the authors had to use a number of simplifications. Whether this still allows to generalize the conclusions of this manuscript is up for debate.\n\nI am not a mathematician and therefore I am not able to check the mathematical models that were used. Nevertheless, I will assess if the conclusions make sense in real biology.\n\nMy conclusion after reading this manuscript is that of interest but remains speculative. What I mean by this is that the mathematical predictions would need to be verified by experiments. Although the authors use a number of datasets, they are assembled from different organisms and different developmental timepoints. As the authors mention, the data does not contradict their hypotheses. This is ok but maybe not good enough? Should the data not univocally support the mathematical hypotheses in order that the readers will buy them?\n\nHere are the main reasons:\n\n1. Line 128: \"in general, cells express more short genes than longer genes over multiple developmental time points.\" Although there may be a trend, I am not entirely convinced of this statement. There seems to be a lot of noise (variation), which may not support this conclusion.\n\n2. Line 223: \"While cell cycle duration measurements are not widely available, we instead ask if organisms with longer genes would also take longer to develop.\" Although this is understandable, I am not sure that this is a correct surrogate. The duration of development must not necessarily be dependent on cell cycle length. Nevertheless, I agree the cell cycle duration measurements are not widely available.\n\n3. The authors use data from different organisms and from different developmental time points. Of course, the idea is that there are universal rules that apply across species. This would be ideal but is there any proof of that? The unwanted side effect is that it becomes really confusing and the authors may compare apples to oranges.\n\n4. Then there is the issue of splicing and introns. It is not surprising that larger genes contain more introns. To some degree splice isoforms could also explain the differences between stem cells and differentiated cells. Nevertheless, I feel this is a distraction. Therefore, analyzing organisms that contain few introns would be more useful. Budding yeast is such an organism.\n\n5. The pathway analysis of the short and long genes is not thorough enough. In addition, the authors should use random sets of genes (same number) from the intermediate genes, which are the majority of genes.\n\n6. The time it takes to transcribe a gene is not only dependent on its size and a fixed speed. This is an oversimplification.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Control of tissue development and cell diversity by cell cycle dependent transcriptional filtering\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: David M Suter (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease revise your writing to address Reviewer 1 and 3's critiques.\n\nReviewer #1:\n\nAuthors have mainly addressed my comments.\n\nFigure 9: I wonder whether you can make further statements. For example, if immune cells have short cell cycle, then its enrichment for short genes will make more sense. Also, might olfactory short genes be related to environmental sensing genes which in turn involve signal transduction pathways also used in fast-growing cells?\n\nFigure 5 legend: 220 should be 219.\n\nReviewer #2:\n\nI am happy to see that the authors successfully integrated RNA Pol II re-initiation in their model, which did not affect their conclusions. The authors have addressed my concerns adequately, and the manuscript should be ready for publication.\n\nReviewer #3:\n\nThe authors have invested efforts to address the issues that were raised by the reviewers. The story of this manuscript has not fundamentally changed (which probably was also not expected) and there remain shortcomings. One aspect that I wish would improve is to use more understatement rather than claiming things that the authors cannot prove.\n\nHere are a few examples, there the manuscript could be improved:\n\n1. Line 128/129: \"found that, in general, short genes have a higher expression level than longer genes within a cell.\" When I was reading this, I had trouble believing it but in Figure 3B, the authors show mRNA expression. This is though not mentioned in the text and the reader can be misled that this also applies to protein expression. It would be desirable that the authors are precise without using generalizations.\n\n2. Line 179: \"second child cell\" I believe these are usually referred to as \"daughter cells\".\n\n3. Line 233: \"We started by asking if organisms with longer genes would also take longer to develop.\" I apologize but this question (or hypothesis) does not make a lot of sense to me. There are a million reasons why an organism takes a certain amount of time to develop and this may be also dependent on the environment. Reducing it to the length of the genes is surely only one of many reasons. In their conclusion on line 249, the authors call it \"strong relationship\", which probably is an association and we all know that associations are weak (remember the one about the amount of chocolate consumption and that chance to win the Nobel prize?).\n\n4. Line 266-278: I am not sure if I get the point here \"cell cycle duration and gene expression vary spatially.\". Not only spatially but also dependent on age, environment, nutrition, and many more factors.\n\n5. In the discussion, the limitations (some of which are mentioned) should be discussed much more honestly.\n\n6. In several figures (for example Figure 6\u2014figure supplement 2 but there are others), the authors use a representation (word clouds) that are not very helpful. The authors should find a better way to bring across the point that they are trying to make.\n",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce23ae4e-4946-4e87-ab6c-1cc9c3b12abd",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C1",
+      "claim": "Cell cycle duration changes dramatically during development, starting out fast to generate cells quickly and slowing down over time as the organism matures.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle duration changes dramatically during development, starting out fast to generate cells quickly and slowing down over time as the organism matures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to Figure 1 and Supplementary file 1, which present curated data from multiple publications showing cell cycle duration changes across development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "22c8d487-7667-4160-bb76-e208e1442e06",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C2",
+      "claim": "The cell cycle can act as a transcriptional filter to control the expression of long gene transcripts, which are partially transcribed in short cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell cycle can also act as a transcriptional filter to control the expression of long gene transcripts, which are partially transcribed in short cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Rothe et al., 1992; Shermoen and O'Farrell, 1991) and is a foundational premise of the computational model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "487e8679-7ae4-4495-bfe9-9167f471a860",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C3",
+      "claim": "Cell cycle-dependent transcriptional filtering can act as a tuning knob to control gene transcript expression, cell diversity, and the number and proportion of different cell types in a tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mathematical simulations of cell proliferation, we identify an emergent property that this filter can act as a tuning knob to control gene transcript expression, cell diversity, and the number and proportion of different cell types in a tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations described in the manuscript and comparison to single-cell RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "7c72adda-13f0-449e-a7eb-3195b2c3ab76",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C4",
+      "claim": "Fast-developing organisms have a narrow genomic distribution of gene lengths while slower developers have an expanded number of long genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, evolutionary genome analysis shows that fast-developing organisms have a narrow genomic distribution of gene lengths while slower developers have an expanded number of long genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genome analysis across multiple species presented in Figure 7 and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "20415b3a-3afc-40b5-b67c-a18ef4544e6f",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C5",
+      "claim": "Cell cycle dynamics may be important across multicellular animals for controlling gene transcript expression and cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support the idea that cell cycle dynamics may be important across multicellular animals for controlling gene transcript expression and cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement based on the computational model predictions and their agreement with various data sources.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "930e1efa-e655-49bf-9cdb-abd22ab1823f",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C6",
+      "claim": "Organisms such as Drosophila melanogaster and Caenorhabditis elegans exhibit cell cycle durations as short as 8\u201310 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Organisms such as the fruit fly (Drosophila melanogaster) and the worm (Caenorhabditis elegans) exhibit cell cycle durations as short as 8\u201310 min (Edgar et al., 1994; Foe, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "c937436e-7a54-4c70-b487-4e845a72bf6f",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C7",
+      "claim": "Cell cycle duration increases in mouse brain development from an average of 8 hr at embryonic day 11 (E11) to an average of 18 hr by E17.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it increases in mouse (Mus musculus) brain development from an average of 8 hr at embryonic day 11 (E11) to an average of 18 hr by E17 (Furutachi et al., 2015; Takahashi et al., 1995a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies on mouse brain development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "497d6d19-907c-49bb-9db0-c3e0c7ada813",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C8",
+      "claim": "The gene transcription rate is between 1.4 and 3.6 kb per minute in typical cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In typical cells, the gene transcription rate is between 1.4 and 3.6 kb per minute (Ardehali and Lis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "1e1a0ea6-d721-4148-b4d2-6e560c5b5b1e",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C9",
+      "claim": "An 8 min cell cycle would only allow transcription of the shortest genes, on the order of 10 kb measured by genomic length.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an 8 min cell cycle would only allow transcription of the shortest genes, on the order of 10 kb measured by genomic length, including introns and exons, whereas a 10 hr cell cycle would allow transcription of genes as long as a megabase on the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the transcription rate and cell cycle duration.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "eb4a06da-7868-4669-9fdb-db116e413260",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C10",
+      "claim": "A 10 hr cell cycle would allow transcription of genes as long as a megabase on the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an 8 min cell cycle would only allow transcription of the shortest genes, on the order of 10 kb measured by genomic length, including introns and exons, whereas a 10 hr cell cycle would allow transcription of genes as long as a megabase on the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the transcription rate and cell cycle duration.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "2ebd3913-bbca-4ea1-878d-0b534108a203",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C11",
+      "claim": "Most multicellular eukaryotic animals start embryogenesis with short cell cycle durations and a limited transcription state.",
+      "claim_type": "EXPLICIT",
+      "source": "Most multicellular eukaryotic animals start embryogenesis with short cell cycle durations and a limited transcription state (O'Farrell et al., 2004) with typically short zygotic transcripts (Heyn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "708fc57c-bbf5-40d1-a539-b25ca5d4d026",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C12",
+      "claim": "Early embryonic cells allocate the majority of their cycle time to S-phase (synthesis), where transcription is inhibited, and M-phase (division), with little to no time for transcription in the gap phases.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells allocate the majority of their cycle time to S-phase (synthesis), where transcription is inhibited (Newport and Kirschner, 1982a), and M-phase (division), with little to no time for transcription in the gap phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "0866446e-153a-4b01-b187-1c6114591829",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C13",
+      "claim": "As the cell cycle slows down, time available for transcription increases, enabling longer genes to be transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the cell cycle slows down, time available for transcription increases (Edgar et al., 1986; Newport and Kirschner, 1982a; Newport and Kirschner, 1982b), enabling longer genes to be transcribed (Djabrayan et al., 2019; Shermoen and O'Farrell, 1991; Yuan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "326f0065-d8a1-4a05-a493-9f413290c8e5",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C14",
+      "claim": "A cell cycle-dependent transcriptional filter can directly influence the generation of cell diversity and can provide fine-grained control of cell numbers and cell-type ratios in a developing tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Through extensive mathematical simulations of developmental cell lineages, we identify the novel and unexpected finding that a cell cycle-dependent transcriptional filter can directly influence the generation of cell diversity and can provide fine-grained control of cell numbers and cell-type ratios in a developing tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "22292acb-2349-4a18-a48d-8c1b7490d60b",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C15",
+      "claim": "Short genes generate more transcripts than longer genes in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations predict that short gene transcripts will be more highly expressed than long gene transcripts, irrespective of the genome size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b5c3b779-afe8-40b9-b895-b351880ea6f3",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C16",
+      "claim": "In single-cell microglia data from nine different species, short genes have a higher transcript expression than both medium genes and longer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell microglia data obtained from GSE134707 (Geirsdottir et al., 2019) displaying expected patterns where short genes (lengths <10 kb) have a higher transcript expression than both medium genes (lengths > 10 kb) and longer genes (lengths >25 kb) \u2013 Kolmogorov\u2013Smirnov test p < 10\u221216, the upper bound p-value for all short-medium and short-long comparisons \u2013 across nine different species (age): Macaca fascicularis (3 years), Callithrix jacchus (7 years), Mus musculus (8\u201316 weeks), Rattus norvegicus (11\u201314 weeks), Mesocricetus auratus (8\u201316 weeks), Nannospalax galili (2-4 years), Ovis aries (18\u201320 months), Gallus gallus (24 weeks), and Danio rerio (4\u20135 months).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of single-cell RNA-seq data with statistical testing (Kolmogorov-Smirnov test).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "f0dffbd5-2777-4e51-a942-1428395c0410",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C19",
+      "claim": "Cell diversity increases with gene number, but the number of clusters identified decreases when all the gene transcripts can be expressed similarly among all cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We use Seurat to cluster the simulated single-cell transcriptomes (10,000 cells) using default parameters and report the number of cell clusters over the simulations. This shows that cell diversity increases with gene number, but the number of clusters identified decreases when all the gene transcripts can be expressed similarly among all cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "63e7f02b-a485-4c69-be2d-be598b5fd92c",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C20",
+      "claim": "Transcriptome diversity increases as a function of cell cycle duration (\u0393), transcription rate (\u03bb), and number of genes in the genome (G).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, transcriptome diversity increases as a function of cell cycle duration (\u0393), transcription rate (\u03bb), and number of genes in the genome (G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement derived from the mathematical model and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "9921407f-7e59-4f58-b544-2c9c4f23f6c6",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C21",
+      "claim": "Cell cycle duration is the only controllable parameter of cell diversity during development according to the model, as gene number, gene length distribution, and transcription rate are constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of genes and their length distribution can change over the course of evolution, these numbers are constant for a given species, and transcription rate is likely highly constrained (Ardehali and Lis, 2009), leaving only cell cycle duration as a controllable parameter of cell diversity during development, according to our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the model and citation to transcription rate constraints.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b001f2ff-ee5f-43e1-ad0e-d4c5fe51cce6",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C22",
+      "claim": "A tradeoff exists between the generation of diversity (longer cell cycle durations) and the fast generation of cells (shorter cell cycle durations).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we propose that a tradeoff exists, balancing the generation of diversity (longer cell cycle durations) with the fast generation of cells (shorter cell cycle durations; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4B and Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "5bc7c850-2580-43cd-be80-557d7840d812",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C23",
+      "claim": "Cells with longer cell cycle duration generate fewer progeny with respect to cells with a short cell cycle duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells with longer cell cycle duration (blue lineage) generate fewer progeny with respect to the cells with a short cell cycle duration of 1 hr (gray lineage).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "96d21f9c-1104-44a8-ba32-ea336dbf2f40",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C24",
+      "claim": "Slower cycling cells contribute more to the diversity observed in the population compared to faster cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the slower cells contribute more to the diversity observed in the population, shown as the blue and gray transcriptome diversity bars.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "9a9d8ce2-b409-41ee-b132-3f71b0989882",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C25",
+      "claim": "Cell cycle dynamics can alter the number and proportions of cells as a function of time (cell generations).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the cell cycle duration over time reveals that cell cycle dynamics can alter the number and proportions of cells as a function of time (cell generations; Figure 6B and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 6B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b1c7c596-fd5f-42cc-9935-f97b68cb4e68",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C26",
+      "claim": "In mouse cortex development, genes with increasing transcript expression across the time course are associated with neural developmental (maturing cell) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis of the mouse cortex scRNA-seq data, we find that genes with increasing transcript expression across the time course (E11.5 < E13.5 < E15.5 < E17.5) are associated with neural developmental (maturing cell) pathways, whereas the genes with decreasing transcript expression across time (E11.5 > E13.5 > E15.5 > E17.5) are associated with transcription and proliferation (stem and progenitor cell) pathways (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of single-cell RNA-seq data from mouse cortex development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "1710f84f-474b-4001-aa42-cee883bb48cb",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C27",
+      "claim": "Genes with decreasing transcript expression across mouse cortex development time are associated with transcription and proliferation (stem and progenitor cell) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis of the mouse cortex scRNA-seq data, we find that genes with increasing transcript expression across the time course (E11.5 < E13.5 < E15.5 < E17.5) are associated with neural developmental (maturing cell) pathways, whereas the genes with decreasing transcript expression across time (E11.5 > E13.5 > E15.5 > E17.5) are associated with transcription and proliferation (stem and progenitor cell) pathways (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of single-cell RNA-seq data from mouse cortex development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "5fadb995-fbb9-4471-b65a-277a13474450",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C28",
+      "claim": "In mouse cortex development, there is an overall pattern of an increasing number of cells with long cell cycle duration and a decrease in fast cycling cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observe an overall pattern of an increasing number of cells with long cell cycle duration and a decrease in fast cycling cells (Figure 6C) following the same general trend as observed in our simulations (Figure 6A), supporting the idea that cell cycle duration dynamics could play a role in controlling cell proportions and cell diversity in a developing tissue.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of single-cell RNA-seq data from mouse cortex development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "c7103594-66e2-443d-87c7-8c33a5055833",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C29",
+      "claim": "Organisms with longer genes will need to maintain long cell cycle durations during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that organisms with long genes will need to maintain long cell cycle durations during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "7b990a0f-1894-4d76-8f0c-c51498e996fa",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C30",
+      "claim": "Organisms with longer genes would also take longer to develop.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we explored related questions. We started by asking if organisms with longer genes would also take longer to develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested by analyzing gene length distributions across species with different developmental times.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "c173ffd1-c667-4b19-be9a-2964482cdf8d",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C31",
+      "claim": "A cell cycle duration of 1 hr can exclude up to 20% total genes found in relatively slow developers and not exclude any genes in fast developers.",
+      "claim_type": "EXPLICIT",
+      "source": "These species also have different gene length distributions; to illustrate this quantitatively, using a typical transcription rate of 1.5 kb/min (Ardehali and Lis, 2009), a cell cycle duration of 1 hr can exclude up to 20% total genes found in relatively slow developers and not exclude any genes in fast developers (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of gene length distributions across species shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "e28de362-ea87-44b9-a8c5-f57213cb99f0",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C32",
+      "claim": "The gene length distribution is narrower and left shifted (shorter genes) for fast developers and broader and right shifted (longer genes) for slower developing species.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our hypothesis, the gene length distribution is narrower and left shifted (shorter genes) for fast developers and broader and right shifted (longer genes) for slower developing species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of gene length distributions shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "ce9768f9-8893-41dd-af79-240bbdae0da6",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C33",
+      "claim": "The tunicate Oikopleura dioica has relatively short genes and a rapid gestation period of 4 hr to hatched tadpole.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one seeming exception to the overall gene length distribution trend in multicellular animals is the tunicate Oikopleura dioica, which has relatively short genes, but also has a rapid gestation period of 4 hr to hatched tadpole (approximately twice as fast as C. elegans and six times faster than D. melanogaster), supporting our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data on gene length distribution and developmental time for O. dioica.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "130a13bb-7910-4a24-8aef-d401adf28f65",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C34",
+      "claim": "There is an association (r = 0.74) between estimated developmental time and median gene length across 101 species.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadening this analysis to 101 species, we again find an association (r = 0.74) between estimated developmental time and median gene length (Figure 7B and Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of developmental time and gene length across 101 species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "05e15843-b0c9-4e8e-a06d-022df0365a43",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C35",
+      "claim": "Short genes will be enriched in pathways that can function independently from long genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that short genes will be enriched in pathways that can function independently from long genes, and that long genes may be enriched in pathways related to mature, differentiated cell types with slower cell cycles (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model tested by pathway enrichment analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "7a85f6ef-6302-4750-800a-ab4420e2ded1",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C36",
+      "claim": "Long genes may be enriched in pathways related to mature, differentiated cell types with slower cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model suggests that short genes will be enriched in pathways that can function independently from long genes, and that long genes may be enriched in pathways related to mature, differentiated cell types with slower cell cycles (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the model tested by pathway enrichment analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "249849be-e90f-4f97-a27e-0e3805d7395e",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C37",
+      "claim": "In the human genome, the longest genes are enriched in processes such as neural development, muscle control, cytoskeleton, cell polarity, and extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human genome, the longest genes are enriched in processes such as neural development, muscle control, cytoskeleton, cell polarity, and extracellular matrix, and the shortest genes are enriched in processes that presumably need to be quickly activated transcriptionally (e.g., immune, translation, and environment sensing; Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis of human genes ranked by length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "4d93960f-9baa-4fbd-88e3-d3614666da8b",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C38",
+      "claim": "In the human genome, the shortest genes are enriched in processes that presumably need to be quickly activated transcriptionally (e.g., immune, translation, and environment sensing).",
+      "claim_type": "EXPLICIT",
+      "source": "In the human genome, the longest genes are enriched in processes such as neural development, muscle control, cytoskeleton, cell polarity, and extracellular matrix, and the shortest genes are enriched in processes that presumably need to be quickly activated transcriptionally (e.g., immune, translation, and environment sensing; Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis of human genes ranked by length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "69949fc7-657e-4af5-a872-b4d468de1e72",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C39",
+      "claim": "The longest genes (gene length in the 95% quantile) are enriched for genes involved in mature cell-related processes (e.g., brain and muscle development) across 13 species.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a similar pathway analysis for human (Figure 8 and Figure 8\u2014figure supplements 2 and 3) and 12 other species (Figure 9) and found general agreement with these patterns, finding the longest genes (gene length in the 95% quantile) enriched for genes involved in mature cell-related processes (e.g., brain and muscle development), whereas the shortest genes (gene length in the 5% quantile) are enriched for genes involved in core processes (e.g., immune, RNA processing, and olfactory receptors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis across multiple species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "18cb8808-4e6d-487b-a7fc-e4ab7e902c1d",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C40",
+      "claim": "The shortest genes (gene length in the 5% quantile) are enriched for genes involved in core processes (e.g., immune, RNA processing, and olfactory receptors) across 13 species.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a similar pathway analysis for human (Figure 8 and Figure 8\u2014figure supplements 2 and 3) and 12 other species (Figure 9) and found general agreement with these patterns, finding the longest genes (gene length in the 95% quantile) enriched for genes involved in mature cell-related processes (e.g., brain and muscle development), whereas the shortest genes (gene length in the 5% quantile) are enriched for genes involved in core processes (e.g., immune, RNA processing, and olfactory receptors).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis across multiple species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "334b21bf-f5d7-4e4f-a9ba-bedf3858eb41",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C41",
+      "claim": "At the onset of cell cycle 14 in Drosophila embryo, cells in different embryo regions start to divide at different rates, caused by an increase in their gap phase length, varying from 30 min to 170 min.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of cell cycle 14, cells in different embryo regions start to divide at different rates, caused by an increase in their gap phase length, varying from 30 min to 170 min (Foe, 1989; Foe and Alberts, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies on Drosophila development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "89f2867b-1eae-48a6-bc23-a9ba2f6b6864",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C42",
+      "claim": "Cell cycle duration lengthening in Drosophila embryo is spatially organized, with anterior regions dividing faster than posterior regions, with the mid-ventral region being the slowest.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell cycle duration lengthening is spatially organized, with anterior regions dividing faster than posterior regions, with the mid-ventral region being the slowest (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to experimental studies and Figure 10.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "e4b56af5-b0d8-41f9-a6b7-fff791530432",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C43",
+      "claim": "Fast cycling regions in Drosophila embryo express the shortest hox genes (Dfd 10.6 kb, lab 17.2 kb) and slow cycling regions express the longest hox genes (Ubx 77.8 kb and Antp 103.0 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "Overlaying the spatial patterns of hox gene family transcript expression and cell cycle duration obtained from independent studies, we observe that fast cycling regions express the shortest hox genes (Dfd 10.6 kb, lab 17.2 kb) and slow cycling regions express the longest hox genes (Ubx 77.8 kb and Antp 103.0 kb) (Foe, 1989; Lemons and McGinnis, 2006) in agreement with our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integration of data from independent studies on cell cycle duration and hox gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "573c89a8-6468-4c4d-9569-c4dd41bfb324",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C44",
+      "claim": "Transcription of long genes will be interrupted if the cell cycle progresses relatively fast.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, if the cell cycle progresses relatively fast, transcription of long genes will be interrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational premise of the transcriptional filter mechanism, supported by prior experimental work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "0197ace0-0fb1-40a7-b4f1-c31108497820",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C45",
+      "claim": "Transcription is inhibited during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells allocate the majority of their cycle time to S-phase (synthesis), where transcription is inhibited (Newport and Kirschner, 1982a), and M-phase (division), with little to no time for transcription in the gap phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "d082ef29-0f5d-404a-8942-822f1ab0e5cb",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C46",
+      "claim": "Incomplete nascent transcripts are degraded in M-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that transcription begins anew at the start of the cell cycle (i.e., all transcripts from a gene that cannot be finished in one cycle are eliminated), modeling the known degradation of incomplete nascent transcripts in M-phase (Shermoen and O'Farrell, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "4cf247e6-7a64-418f-b941-3dbe5bde158d",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C47",
+      "claim": "Relaxing the assumption to include parental transcript inheritance and decay does not change the overall results of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Relaxing our assumption to include parental transcript inheritance and decay (Sharova et al., 2009), where a proportion of inherited parental transcripts remain after each cell division, does not change our overall results (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b478757e-6f6e-4e6e-9c3d-67533d9b8292",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C48",
+      "claim": "Maternal transcripts are longer and have evolutionary conserved functions in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, if we add maternal transcript inheritance to our model, we see the same pattern of a small number of long transcripts present early, as expected (Figure 3\u2014figure supplement 2). Future work would entail curating experimental data about more regulatory mechanisms in cell systems and testing their association with cell cycle duration. Our analysis raises interesting directions for future work. We focus on development, but transcriptional filtering may be important in any process involving cell cycle dynamics, such as regeneration (Bryant and Gardiner, 2018), wound repair, immune activation, and cancer. We must also more carefully consider cell cycle phase as transcription mainly occurs in the gap phases (Bertoli et al., 2013; Newport and Kirschner, 1982b). Experiments indicate that a cell will have different fates depending on its phase (Dalton, 2013; Pauklin and Vallier, 2013; Vallier, 2015). This agrees with our model as a cell at the start of its cell cycle will have a different transcriptome in comparison to the end of the cell cycle. Induced pluripotent cell state is also associated with cell cycle phases (Dalton, 2015), and efficient reprogramming is only seen in cell subsets with fast cell cycles (Guo et al., 2014). Our model could explain these observations as slower cycling cells could express long genes that push a cell to differentiate rather than reprogram. However, our model is limited to total transcription duration for interphase (G1, S, and G2), thus a future direction would be to explore different durations for each cell cycle phase. Collecting more experimental data about cell phase in developing systems will help explore these effects. Further, it will be important to explore how cell cycle duration is controlled. Molecular mechanisms of cell cycle and cell size (Liu et al., 2018) control could be added to our model to provide a more biochemically realistic perspective on this topic. Ultimately, a better appreciation of the effects of cell cycle dynamics will help improve our understanding of a cell's decision-making process during differentiation and may prove useful for the advancement of tools to control development, regeneration, and cancer. Finally, it is important to note that we have not provided experimental model support, only analyses that do not disagree with model predictions. We have also not proven the generality of the results across species. However, we hope that the hypotheses we explore here motivate new experimental studies to directly test the validity and generality of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to experimental work on zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "f66cda0f-6d97-477f-9910-cef1a4053972",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C49",
+      "claim": "Transcription mainly occurs in the gap phases of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We must also more carefully consider cell cycle phase as transcription mainly occurs in the gap phases (Bertoli et al., 2013; Newport and Kirschner, 1982b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "67542a89-1bcc-44eb-952c-9dc2bc8638de",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C50",
+      "claim": "A cell will have different fates depending on its cell cycle phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments indicate that a cell will have different fates depending on its phase (Dalton, 2013; Pauklin and Vallier, 2013; Vallier, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "38a453c0-779d-4f68-a29d-12abd905392c",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C51",
+      "claim": "Induced pluripotent cell state is associated with cell cycle phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Induced pluripotent cell state is also associated with cell cycle phases (Dalton, 2015), and efficient reprogramming is only seen in cell subsets with fast cell cycles (Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "d359b539-276c-4796-b00a-02a8c10d2c96",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C52",
+      "claim": "Efficient reprogramming is only seen in cell subsets with fast cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Induced pluripotent cell state is also associated with cell cycle phases (Dalton, 2015), and efficient reprogramming is only seen in cell subsets with fast cell cycles (Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "eb11ca8b-691d-48d6-9d75-d3dd40241403",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C53",
+      "claim": "Slower cycling cells could express long genes that push a cell to differentiate rather than reprogram.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model could explain these observations as slower cycling cells could express long genes that push a cell to differentiate rather than reprogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "431a6b08-c058-48b9-9221-414aff736634",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C54",
+      "claim": "Cell cycle length changes can control cell fate and development.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also well known that cell cycle length changes can control cell fate and development (Coronado et al., 2013; Mummery et al., 1987; Pauklin and Vallier, 2013; Singh et al., 2013); however, this has remained observational and not linked to a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "936e4433-9fb9-4db0-967b-202bbca5f26b",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C55",
+      "claim": "Increasing the gene length distribution across a genome over evolution can provide more cell cycle-dependent transcriptional control in a developing system, leading to increased cellular diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that increasing the gene length distribution across a genome over evolution can provide more cell cycle-dependent transcriptional control in a developing system, leading to increased cellular diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "5c533c7d-9724-47b9-a4f1-8a4c17322994",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C56",
+      "claim": "Fast-developing organisms have shorter median gene lengths relative to the broad distributions, including many long genes, exhibited by slow developers (mammals).",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that fast-developing organisms have shorter median gene lengths relative to the broad distributions, including many long genes, exhibited by slow developers (mammals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of gene length distributions across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "200e31d9-a75b-4959-a843-bb05d9f3edf8",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C57",
+      "claim": "Genome structure may help explain the observed rates of cell diversity and organism complexity, as measured by number of different cell types, over a wide range of species.",
+      "claim_type": "EXPLICIT",
+      "source": "This aspect of genome structure may help explain the observed rates of cell diversity and organism complexity, as measured by number of different cell types, over a wide range of species (Figure 7\u2014figure supplement 1; Valentine et al., 1994; Vogel and Chothia, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the model and supported by citations to studies on cell type diversity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "1c4a6e86-e428-4cdc-ae46-736efa442430",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C58",
+      "claim": "A cell cycle-dependent transcriptional filter is a fundamental regulatory mechanism operating during development.",
+      "claim_type": "EXPLICIT",
+      "source": "While we hypothesize that a cell cycle-dependent transcriptional filter is a fundamental regulatory mechanism operating during development (because gene length is fixed in the genome and transcription rate is expected to lie in a narrow range), multiple other regulatory mechanisms could modulate its effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the model and reasoning about constraints on gene length and transcription rate.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b49a51b7-edf2-46dd-83e8-f7b82a2ccd78",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C59",
+      "claim": "The human dystrophin gene is 2,241,765 bp long and takes about 16 hr to transcribe.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that the time it takes to transcribe a gene depends on its length and a fixed transcription rate; although a simplification, there are examples where this occurs, for instance, the human dystrophin gene is 2,241,765 bp long and takes about 16 hr to transcribe (Tennyson et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "9f3f7f64-b6f7-44b4-a546-e0791412e732",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C60",
+      "claim": "Progenitor cells are characterized by fast cycles with short G1 duration and neurons by slower cell cycles with long G1 duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this range, progenitor cells are, in general, expected to be characterized by fast cycles with short G1 duration and neurons by slower cell cycles with long G1 duration (Calegari et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "e67392a8-d74b-48ba-b0e9-bb365a5037aa",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C61",
+      "claim": "The model operates at single-cell resolution, enabling comparison to single-cell RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational model operates at single-cell resolution, enabling comparison to single-cell RNA-seq (scRNA-seq) data captured over development, supporting our model by showing similar trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model's capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "05f395f2-7c64-445e-b74c-39990ef4f147",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C62",
+      "claim": "The model predicts genomic gene length distribution and gene transcript expression patterns that are consistent with a range of independent data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model also predicts genomic gene length distribution and gene transcript expression patterns that are consistent with a range of independent data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's predictions and their validation against data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "9ca2fa04-79ba-471d-a8e2-bc6f89336cd9",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C63",
+      "claim": "The model intentionally starts with a simple set of rules, adding more rules as needed to test specific mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We intentionally start with a simple set of rules, adding more rules as needed to test specific mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "4bfe7cd0-8698-42d0-9a93-887737d31f51",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C64",
+      "claim": "The analysis is limited to pre-mRNA transcript expression and does not consider other gene expression-related factors, such as splicing, translation, or gene-gene interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis is limited to pre-mRNA transcript expression, and we do not consider other gene expression-related factors, such as splicing, translation, or gene-gene interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope and limitations of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "b445d099-a369-439e-ac26-8e6b5aa5b8de",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C65",
+      "claim": "The model omits external cues (e.g., intercellular signaling or environmental gradients) to focus on the effects of intrinsic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We also omit external cues (e.g., intercellular signaling or environmental gradients) to focus on the effects of intrinsic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope and limitations of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "2e3559bb-a954-414a-bf81-2ac51ac2a5a9",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C66",
+      "claim": "Transcripts passed from parental cell to its progeny are randomly distributed during division (M-phase) in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model assumes that transcripts passed from parental cell to its progeny will be randomly distributed during division (M-phase).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a key assumption of the model shown in Figure 2C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "ece4ccc8-9ae3-41cc-a2ac-cc60e4866fd0",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C68",
+      "claim": "Changing RNA polymerase II re-initiation distance and transcription rate parameters does not alter the overall trend that short genes produce more transcripts than longer genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing parameters in (A) and (B) does not alter the overall trend we observe, that short genes produce more transcripts than longer genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "f3cfe44b-0524-4e61-b5ca-37edf89a8ac9",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "claim_id": "C70",
+      "claim": "The analytical solution of cell transcriptome diversity was validated by comparing it to simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This analytical solution of cell transcriptome diversity was validated by comparing it to simulations (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison between analytical solution and simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "af21777b-9885-4253-882a-fd2e203c8f6a",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell cycle duration changes dramatically during development across multiple organisms, starting fast and slowing over time. Examples include 8-10 min cycles in D. melanogaster and C. elegans, and increases from 8 hr to 18 hr in mouse brain development (E11 to E17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, and C7 are well-supported by citations to published experimental studies and curated data presented in Figure 1 and Supplementary file 1. The pattern is documented across multiple species and developmental contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The cell cycle acts as a transcriptional filter: transcription rate is 1.4-3.6 kb/min, transcription is inhibited during S-phase, incomplete transcripts are degraded in M-phase, and short cell cycles interrupt long gene transcription while long cycles permit transcription of genes up to a megabase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8, C44, C45, and C46 are supported by citations to prior experimental work establishing the transcriptional filter mechanism. Claims C9 and C10 are logical calculations based on cited transcription rates and are mathematically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "8fd7f474-99c6-4c5f-a068-aa196830f03c",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Computational simulations predict that cell cycle-dependent transcriptional filtering controls gene expression, cell diversity, and cell-type ratios. Short genes generate more transcripts than long genes in simulations, and this pattern is validated in single-cell RNA-seq data from multiple species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, and C15 are supported by computational simulations (Figures 3-5). Claim C16 provides strong empirical validation using scRNA-seq data from nine species with statistical testing (Kolmogorov-Smirnov test p < 10^-16), supporting the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cell diversity increases with cell cycle duration, transcription rate, and gene number. Cell cycle duration is the only controllable parameter during development. A tradeoff exists between diversity generation (longer cycles) and rapid cell generation (shorter cycles). An analytical solution for transcriptome diversity was validated against simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, and C22 are supported by simulation results (Figure 4). Claim C21 is a logical inference based on the model and constraints on other parameters. Claim C70 confirms analytical validation. However, the claim that cell cycle duration is the 'only' controllable parameter (C21) may be overstated given biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "bc03c7c8-48bf-4348-ba53-dc5f24a64a82",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In mixed lineage simulations, cells with longer cell cycle durations generate fewer progeny but contribute more to population diversity. Cell cycle dynamics can alter cell numbers and proportions over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C25 are directly supported by simulation results shown in Figures 5 and 6. The tradeoff between cell number and diversity is clearly demonstrated through the computational model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "3ef74835-7cfa-48be-a126-531d0e3d61cf",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In mouse cortex development, genes with increasing expression are associated with neural developmental pathways, genes with decreasing expression are associated with proliferation pathways, and there is an increasing proportion of slow-cycling cells over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, and C28 are supported by analysis of single-cell RNA-seq data from mouse cortex development (GSE107122). The pathway enrichment analysis and cell proportion trends align with model predictions, though causality is not established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fast-developing organisms have narrower, left-shifted gene length distributions while slow developers have broader, right-shifted distributions with more long genes. A 1 hr cell cycle can exclude up to 20% of genes in slow developers. There is a correlation (r=0.74) between developmental time and median gene length across 101 species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31, C32, C33, C34, and C56 are supported by genome analysis across multiple species (Figure 7, Supplementary file 3). The correlation analysis is appropriately conducted. However, correlation does not establish causation, and confounding factors (e.g., genome size, evolutionary history) are not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "305f95ff-e3da-4a68-827f-70a9076d1fad",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Short genes are enriched in pathways requiring rapid transcriptional activation (immune, translation, environment sensing) while long genes are enriched in pathways related to mature, differentiated cell types (neural development, muscle control, cytoskeleton). This pattern holds across 13 species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are supported by pathway enrichment analysis across multiple species (Figures 8-9). The analysis uses appropriate methods (GSEA, Gene Ontology) and shows consistent patterns. However, the interpretation that short genes 'need to be quickly activated' (C38) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "26e88c83-8bd8-450b-85d5-2c63df8b6513",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Drosophila embryo at cell cycle 14, spatial organization of cell cycle duration correlates with Hox gene expression patterns: fast-cycling anterior regions express short Hox genes (Dfd 10.6 kb, lab 17.2 kb) while slow-cycling regions express long Hox genes (Ubx 77.8 kb, Antp 103.0 kb).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, and C43 are supported by integration of independent published data on cell cycle duration and Hox gene expression patterns in Drosophila (Figure 10). This provides spatial-level validation of the model, though the data are from separate studies and direct experimental validation is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "e1eeeacb-6850-487d-93dd-04cfb1c2156e",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Model robustness: Including parental transcript inheritance and decay does not change overall results. Varying RNA polymerase II re-initiation distance and transcription rate parameters does not alter the trend that short genes produce more transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C68 are supported by sensitivity analyses shown in supplementary figures (Figure 3\u2014figure supplements 1 and 2). These robustness checks strengthen confidence in the model's core predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "c5fab6e9-daaa-4499-90a6-dca5707637e9",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background biological knowledge: Most multicellular animals start with short cell cycles and limited transcription. Early embryonic cells allocate time to S-phase (transcription inhibited) and M-phase. As cycles slow, transcription time increases. Transcription mainly occurs in gap phases. Examples include the human dystrophin gene (2.2 Mb, 16 hr transcription) and cell-type differences (progenitors: fast cycles, neurons: slow cycles).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C12, C13, C49, C59, and C60 are well-supported by citations to published experimental studies. These establish the biological foundation for the computational model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "c719cd5e-16f3-432f-a15d-398014423193",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work shows cell fate depends on cell cycle phase, induced pluripotent state is associated with cell cycle phases, efficient reprogramming occurs in fast-cycling cells, and cell cycle length changes can control cell fate and development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, C52, and C54 are supported by citations to experimental studies. These provide context for the model's relevance to cell fate decisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "fad389eb-2503-4128-8f8f-0377d4923e2c",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Hypotheses and predictions: Cell cycle dynamics may be important for controlling gene expression and cell fate across multicellular animals. Organisms with longer genes need longer cell cycles. Slower cycling cells could express long genes promoting differentiation over reprogramming. Increasing gene length distribution over evolution can provide more transcriptional control and cellular diversity. A cell cycle-dependent transcriptional filter is a fundamental regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C29, C30, C53, C55, C57, and C58 are speculative hypotheses and predictions from the model. While the model and supporting data are consistent with these ideas, they lack direct experimental validation. The authors acknowledge this limitation in the Discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "2410113a-4fdc-42de-b7b9-598a0bf85d0c",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Maternal transcripts are longer and have evolutionary conserved functions in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by a citation to experimental work on zebrafish (Heyn et al., 2014). This provides additional context for the model's treatment of maternal transcripts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    },
+    {
+      "id": "834f64df-efce-4315-b649-9dcaaf970e1e",
+      "content_id": "161a2043-aea5-4144-91c3-4196ddcee91e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Model design and scope: The model intentionally starts with simple rules, is limited to pre-mRNA transcript expression, omits external cues to focus on intrinsic factors, and assumes random transcript distribution during cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C64, C65, and C66 accurately describe the model's design choices and limitations. These are clearly stated methodological decisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T05:37:15.700119Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ce23ae4e-4946-4e87-ab6c-1cc9c3b12abd",
+      "result_id": "af21777b-9885-4253-882a-fd2e203c8f6a"
+    },
+    {
+      "claim_id": "930e1efa-e655-49bf-9cdb-abd22ab1823f",
+      "result_id": "af21777b-9885-4253-882a-fd2e203c8f6a"
+    },
+    {
+      "claim_id": "c937436e-7a54-4c70-b487-4e845a72bf6f",
+      "result_id": "af21777b-9885-4253-882a-fd2e203c8f6a"
+    },
+    {
+      "claim_id": "22c8d487-7667-4160-bb76-e208e1442e06",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "497d6d19-907c-49bb-9db0-c3e0c7ada813",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "1e1a0ea6-d721-4148-b4d2-6e560c5b5b1e",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "eb4a06da-7868-4669-9fdb-db116e413260",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "573c89a8-6468-4c4d-9569-c4dd41bfb324",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "0197ace0-0fb1-40a7-b4f1-c31108497820",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "d082ef29-0f5d-404a-8942-822f1ab0e5cb",
+      "result_id": "34cea2e5-d473-40f9-a5ad-bb7e6f07f960"
+    },
+    {
+      "claim_id": "487e8679-7ae4-4495-bfe9-9167f471a860",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "326f0065-d8a1-4a05-a493-9f413290c8e5",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "22292acb-2349-4a18-a48d-8c1b7490d60b",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "b5c3b779-afe8-40b9-b895-b351880ea6f3",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "e67392a8-d74b-48ba-b0e9-bb365a5037aa",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "05f395f2-7c64-445e-b74c-39990ef4f147",
+      "result_id": "8fd7f474-99c6-4c5f-a068-aa196830f03c"
+    },
+    {
+      "claim_id": "f0dffbd5-2777-4e51-a942-1428395c0410",
+      "result_id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6"
+    },
+    {
+      "claim_id": "63e7f02b-a485-4c69-be2d-be598b5fd92c",
+      "result_id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6"
+    },
+    {
+      "claim_id": "9921407f-7e59-4f58-b544-2c9c4f23f6c6",
+      "result_id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6"
+    },
+    {
+      "claim_id": "b001f2ff-ee5f-43e1-ad0e-d4c5fe51cce6",
+      "result_id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6"
+    },
+    {
+      "claim_id": "f3cfe44b-0524-4e61-b5ca-37edf89a8ac9",
+      "result_id": "276a7bdd-2b43-4ca8-bf10-53231569a0a6"
+    },
+    {
+      "claim_id": "5bc7c850-2580-43cd-be80-557d7840d812",
+      "result_id": "bc03c7c8-48bf-4348-ba53-dc5f24a64a82"
+    },
+    {
+      "claim_id": "96d21f9c-1104-44a8-ba32-ea336dbf2f40",
+      "result_id": "bc03c7c8-48bf-4348-ba53-dc5f24a64a82"
+    },
+    {
+      "claim_id": "9a9d8ce2-b409-41ee-b132-3f71b0989882",
+      "result_id": "bc03c7c8-48bf-4348-ba53-dc5f24a64a82"
+    },
+    {
+      "claim_id": "b1c7c596-fd5f-42cc-9935-f97b68cb4e68",
+      "result_id": "3ef74835-7cfa-48be-a126-531d0e3d61cf"
+    },
+    {
+      "claim_id": "1710f84f-474b-4001-aa42-cee883bb48cb",
+      "result_id": "3ef74835-7cfa-48be-a126-531d0e3d61cf"
+    },
+    {
+      "claim_id": "5fadb995-fbb9-4471-b65a-277a13474450",
+      "result_id": "3ef74835-7cfa-48be-a126-531d0e3d61cf"
+    },
+    {
+      "claim_id": "7c72adda-13f0-449e-a7eb-3195b2c3ab76",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "c173ffd1-c667-4b19-be9a-2964482cdf8d",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "e28de362-ea87-44b9-a8c5-f57213cb99f0",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "ce9768f9-8893-41dd-af79-240bbdae0da6",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "130a13bb-7910-4a24-8aef-d401adf28f65",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "5c533c7d-9724-47b9-a4f1-8a4c17322994",
+      "result_id": "0ff6b157-6ced-466f-847f-e87dd99fd9a5"
+    },
+    {
+      "claim_id": "05e15843-b0c9-4e8e-a06d-022df0365a43",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "7a85f6ef-6302-4750-800a-ab4420e2ded1",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "249849be-e90f-4f97-a27e-0e3805d7395e",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "4d93960f-9baa-4fbd-88e3-d3614666da8b",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "69949fc7-657e-4af5-a872-b4d468de1e72",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "18cb8808-4e6d-487b-a7fc-e4ab7e902c1d",
+      "result_id": "305f95ff-e3da-4a68-827f-70a9076d1fad"
+    },
+    {
+      "claim_id": "334b21bf-f5d7-4e4f-a9ba-bedf3858eb41",
+      "result_id": "26e88c83-8bd8-450b-85d5-2c63df8b6513"
+    },
+    {
+      "claim_id": "89f2867b-1eae-48a6-bc23-a9ba2f6b6864",
+      "result_id": "26e88c83-8bd8-450b-85d5-2c63df8b6513"
+    },
+    {
+      "claim_id": "e4b56af5-b0d8-41f9-a6b7-fff791530432",
+      "result_id": "26e88c83-8bd8-450b-85d5-2c63df8b6513"
+    },
+    {
+      "claim_id": "4cf247e6-7a64-418f-b941-3dbe5bde158d",
+      "result_id": "e1eeeacb-6850-487d-93dd-04cfb1c2156e"
+    },
+    {
+      "claim_id": "ece4ccc8-9ae3-41cc-a2ac-cc60e4866fd0",
+      "result_id": "e1eeeacb-6850-487d-93dd-04cfb1c2156e"
+    },
+    {
+      "claim_id": "2ebd3913-bbca-4ea1-878d-0b534108a203",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "708fc57c-bbf5-40d1-a539-b25ca5d4d026",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "0866446e-153a-4b01-b187-1c6114591829",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "f66cda0f-6d97-477f-9910-cef1a4053972",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "b49a51b7-edf2-46dd-83e8-f7b82a2ccd78",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "9f3f7f64-b6f7-44b4-a546-e0791412e732",
+      "result_id": "c5fab6e9-daaa-4499-90a6-dca5707637e9"
+    },
+    {
+      "claim_id": "67542a89-1bcc-44eb-952c-9dc2bc8638de",
+      "result_id": "c719cd5e-16f3-432f-a15d-398014423193"
+    },
+    {
+      "claim_id": "38a453c0-779d-4f68-a29d-12abd905392c",
+      "result_id": "c719cd5e-16f3-432f-a15d-398014423193"
+    },
+    {
+      "claim_id": "d359b539-276c-4796-b00a-02a8c10d2c96",
+      "result_id": "c719cd5e-16f3-432f-a15d-398014423193"
+    },
+    {
+      "claim_id": "431a6b08-c058-48b9-9221-414aff736634",
+      "result_id": "c719cd5e-16f3-432f-a15d-398014423193"
+    },
+    {
+      "claim_id": "20415b3a-3afc-40b5-b67c-a18ef4544e6f",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "c7103594-66e2-443d-87c7-8c33a5055833",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "7b990a0f-1894-4d76-8f0c-c51498e996fa",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "eb11ca8b-691d-48d6-9d75-d3dd40241403",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "936e4433-9fb9-4db0-967b-202bbca5f26b",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "200e31d9-a75b-4959-a843-bb05d9f3edf8",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "1c4a6e86-e428-4cdc-ae46-736efa442430",
+      "result_id": "fad389eb-2503-4128-8f8f-0377d4923e2c"
+    },
+    {
+      "claim_id": "b478757e-6f6e-4e6e-9c3d-67533d9b8292",
+      "result_id": "2410113a-4fdc-42de-b7b9-598a0bf85d0c"
+    },
+    {
+      "claim_id": "9ca2fa04-79ba-471d-a8e2-bc6f89336cd9",
+      "result_id": "834f64df-efce-4315-b649-9dcaaf970e1e"
+    },
+    {
+      "claim_id": "4bfe7cd0-8698-42d0-9a93-887737d31f51",
+      "result_id": "834f64df-efce-4315-b649-9dcaaf970e1e"
+    },
+    {
+      "claim_id": "b445d099-a369-439e-ac26-8e6b5aa5b8de",
+      "result_id": "834f64df-efce-4315-b649-9dcaaf970e1e"
+    },
+    {
+      "claim_id": "2e3559bb-a954-414a-bf81-2ac51ac2a5a9",
+      "result_id": "834f64df-efce-4315-b649-9dcaaf970e1e"
+    }
+  ],
+  "comparisons": []
+}

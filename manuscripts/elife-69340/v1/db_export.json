@@ -1,0 +1,2203 @@
+{
+  "submission": {
+    "id": "7749e9aa-c13b-4224-88a6-68063ee399c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:16:47.258473Z",
+    "updated_at": "2025-12-03T06:16:47.258473Z"
+  },
+  "content": [
+    {
+      "id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "submission_id": "7749e9aa-c13b-4224-88a6-68063ee399c4",
+      "content_type": "manuscript",
+      "content_text": "# Revisiting the guidelines for ending isolation for COVID-19 patients\n\n## Authors\n\n- Yong Dam Jeong<sup>1</sup> ([ORCID: 0000-0002-3970-7690](https://orcid.org/0000-0002-3970-7690))\n- Keisuke Ejima<sup>3</sup> ([ORCID: 0000-0002-1185-3987](https://orcid.org/0000-0002-1185-3987)) \u2020\n- Kwang Su Kim<sup>1</sup>\n- Shoya Iwanami<sup>1</sup>\n- Ana I Bento<sup>3</sup>\n- Yasuhisa Fujita<sup>1</sup>\n- Il Hyo Jung<sup>2</sup>\n- Kazuyuki Aihara<sup>4</sup>\n- Koichi Watashi<sup>5</sup>\n- Taiga Miyazaki<sup>8</sup>\n- Takaji Wakita<sup>5</sup>\n- Shingo Iwami<sup>1</sup> ([ORCID: 0000-0002-1780-350X](https://orcid.org/0000-0002-1780-350X)) \u2020\n- Marco Ajelli<sup>3</sup>\n\n### Affiliations\n\n1. interdisciplinary Biology Laboratory (iBLab), Division of Biological Science, Graduate School of Science, Nagoya University Nagoya Japan\n2. Department of Mathematics, Pusan National University Busan Republic of Korea\n3. Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington Bloomington United States\n4. International Research Center for Neurointelligence, The University of Tokyo Tokyo Japan\n5. Department of Virology II, National Institute of Infectious Diseases Tokyo Japan\n6. Research Center for Drug and Vaccine Development, National Institute of Infectious Diseases Tokyo Japan\n7. Department of Applied Biological Science, Tokyo University of Science Noda Japan\n8. Department of Infectious Diseases, Nagasaki University Graduate School of Biomedical Sciences Nagasaki Japan\n9. Division of Respirology, Rheumatology, Infectious Diseases, and Neurology, Department of Internal Medicine, Faculty of Medicine, University of Miyazaki Miyazaki Japan\n10. Institute of Mathematics for Industry, Kyushu University Fukuoka Japan\n11. Institute for the Advanced Study of Human Biology (ASHBi), Kyoto University Kyoto Japan\n12. NEXT-Ganken Program, Japanese Foundation for Cancer Research (JFCR) Tokyo Japan\n13. Science Groove Inc Fukuoka Japan\n14. Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSince the start of the COVID-19 pandemic, two mainstream guidelines for defining when to end the isolation of SARS-CoV-2-infected individuals have been in use: the one-size-fits-all approach (i.e. patients are isolated for a fixed number of days) and the personalized approach (i.e. based on repeated testing of isolated patients). We use a mathematical framework to model within-host viral dynamics and test different criteria for ending isolation. By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, we estimated that the risk of releasing an individual who is still infectious is low (0\u20136.6%). However, this policy entails lengthy unnecessary isolations (4.8\u20138.3 days). In contrast, by using a personalized strategy, similar low risks can be reached with shorter prolonged isolations. The obtained findings provide a scientific rationale for policies on ending the isolation of SARS-CoV-2-infected individuals.\n\n## Introduction\n\nSince the first case of a novel coronavirus (SARS-CoV-2) was identified in China in December of 2019, its associated disease, COVID-19, spread quickly around the world, with the number of cases reaching 80 million by the end of 2020. During this time, nonpharmaceutical interventions (NPIs) were used on a massive scale to suppress or mitigate SARS-CoV-2 transmission (Cowling et al., 2020). As of January 2021, several countries had started vaccination campaigns aimed at controlling SARS-CoV-2 spread (Centers for Disease Control and Prevention, 2021). Still, until such vaccination programs reach a sizable fraction of the population, NPIs will likely continue to play a crucial role for epidemic control (Yang et al., 2021a).\n\nA simple but effective NPI is the isolation of SARS-CoV-2-infected individuals. This can be done either in the infected person\u2019s place of residence (as is the case for most Western countries [European Centre for Disease Prevention and Control, 2020b]) or in dedicated facilities (as is the case in China [Burki, 2020]). In both cases, a criterion for determining when to end the isolation phase is needed. Although a longer isolation period may decrease the chance of transmission, it also entails both a higher burden on the mental and physical health of the patient (Mian et al., 2021) and cause higher economic loss (Ash et al., 2021). Scientifically sound guidelines for determining when to end isolation are thus warranted.\n\nSo far, two main approaches have been adopted by countries around the globe. The first approach is to isolate patients for a fixed time period (i.e. a one-size-fits-all approach). For example, the Centers for Disease Control and Prevention (CDC) created guidelines for health care practitioners concerning the discontinuation of transmission-based precautions for COVID-19 patients in health care settings that are based on the time since symptom onset or disappearance (i.e. symptom-based strategy) (Centers for Disease Control and Prevention, 2020a). In the CDC guidelines, those with mild to moderate illness can end isolation (or precautions) when the following three conditions are met: \u2018At least 10 days have passed since symptoms first appeared,\u2019 \u2018At least 24 hr have passed since last fever without the use of fever-reducing medications,\u2019 and \u2018Symptoms (e.g. cough, shortness of breath) have improved.\u2019 However, such a one-size-fits-all approach does not account for the individual variability in viral load (Iwanami et al., 2020), which is associated with both severity (Zheng et al., 2020) and persistence of symptoms (Long et al., 2020), and may thus not fully prevent further transmission.\n\nThe second approach is based on the assessment of the viral load of each isolated patient (i.e. personalized approach), and isolation ends when the viral load drops below a certain threshold value, which is associated with a low risk of further spreading the pathogen (He et al., 2020). The viral load can be measured by reverse transcription polymerase chain reaction (PCR), which can be used not only for diagnosing infection but also in determining when to end the isolation period. As an example, the CDC recommends using PCR testing in particular circumstances, such as for patients with severe immunodeficiency. The guidelines include both the resolution of symptoms and PCR test results, that\u00a0is, \u2018Results are negative from at least two consecutive respiratory specimens collected \u226524 hr apart\u2019 (Centers for Disease Control and Prevention, 2020a).\n\nThe purpose of this study was to assess whether the personalized approach based on PCR test results minimizes the length of the isolation period while limiting the risk of prematurely releasing infectious individuals as compared with the one-size-fits-all approach. Moreover, we define best practices for the use of a PCR-based personalized approach. To do so, we developed a mathematical model of SARS-CoV-2 viral load dynamics (Ejima et al., 2020; Iwanami et al., 2020) that accounts for individual heterogeneity and is calibrated on longitudinal viral load data.\n\n## Results\n\n### Descriptive statistics\n\nWe identified four papers meeting the inclusion criteria (Kim et al., 2020a; W\u00f6lfel et al., 2020; Young et al., 2020; Zou et al., 2020). Among the patients reported in these four studies, 30 patients (approximately 60% of the participants in the original studies) met our inclusion criteria (Table 1). Three studies were from Asia and one was from Europe. The lowest and highest detection limit among those studies were 15.3 copies/mL and 68 copies/mL, respectively. These are relatively lower than the commonly used threshold values (the median was 100 copies/mL [Fung et al., 2020; Giri et al., 2021; van Kasteren et al., 2020]). The data were collected by February of 2020, which was during the early phase of the COVID-19 pandemic. Participants were hospitalized patients of ages ranging from 28 to 78 years; the sex ratio was mostly even.\n\n**Table 1.**\n Summary of the viral load data used for modeling.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Source</th>\n      <th>Country</th>\n      <th># of included (excluded) patients</th>\n      <th>Sampling site</th>\n      <th>Reporting unit</th>\n      <th>Detection limit (copies/mL)</th>\n      <th>Symptom onset of patients</th>\n      <th>Age\u2021</th>\n      <th>Sex (M:F)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Young et al.</td>\n      <td>Singapore</td>\n      <td>12 (6)</td>\n      <td>nasopharynx</td>\n      <td>cycle threshold*</td>\n      <td>68.0</td>\n      <td>1/21 - 1/30</td>\n      <td>37.5 (31\u201356)</td>\n      <td>6:6</td>\n    </tr>\n    <tr>\n      <td>Zou et al.</td>\n      <td>China</td>\n      <td>8 (8)</td>\n      <td>nose</td>\n      <td>cycle threshold*</td>\n      <td>15.3</td>\n      <td>1/11 - 1/26</td>\n      <td>52.5 (28\u201378)</td>\n      <td>3:5</td>\n    </tr>\n    <tr>\n      <td>Kim et al.</td>\n      <td>Korea</td>\n      <td>2 (7)</td>\n      <td>nasopharynx and oropharynx</td>\n      <td>cycle threshold*</td>\n      <td>68.0</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>W\u00f6lfel et al.</td>\n      <td>Germany</td>\n      <td>8 (1)</td>\n      <td>pharynx</td>\n      <td>viral load (copies/swab)\u2020</td>\n      <td>33.3</td>\n      <td>1/23 - 2/4</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Viral load was calculated from cycle threshold values using the conversion formula: log10\u2061(Viral \\ load \\ [copies/mL])=\u22120.32\u00d7Ct \\ values \\ [cycles]+14.11 (Peiris et al., 2003).\u2020 One swab = 3 mL (W\u00f6lfel et al., 2020).\u2021 Median (range)._\n\n### Model fitting\n\nThree models were fitted to the data: the baseline model, the \u2018eclipse phase\u2019 model, and the \u2018innate immune response\u2019 model. The estimated model parameters, the estimated (mean) curves and the individual fitted curves are reported in Supplementary file 1, Figure 1, respectively. Although all the three models lead to similar results (Figure 1), the baseline model shows a longer tail than the two other models, due to the lower estimated death rate of infected cells (Supplementary file 1). Further, the three models showed similar values of the Akaike information criterion (AIC) and the Bayesian information criterion (BIC) (Supplementary file 2). Unless otherwise stated, the results presented in thereafter refer to the baseline model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig1-v1.jpg)\n\n**Figure 1.:** The solid lines are the estimated viral load curves of the three models for the best fit parameters (Blue: baseline model, Green: \u2018ecliplse phase\u2019 model, Yellow: \u2018innate immune response\u2019 model). The shaded regions correspond to 95% predictive intervals. The 95% predictive interval was created using bootstrap approach.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The dots and curves represent the observed and estimated viral load (Blue: baseline model, Green: \u2018ecliplse phase\u2019 model, Yellow: \u2018innate immune response\u2019 model), respectively. The detection limit for each patient is shown as dotted horizontal line.\n\n### One-size-fits-all approach\n\nBy considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, the probability of releasing patients who are still infectious was estimated to be 0.9% (95%CI: 0.6 to 1.2), with a lengthy prolonged isolation of 6.8 days (95% empirical CI: 1 to 8) when considering 105 copies/mL as the infectiousness threshold value (Figure 2AB). The estimated probability of prematurely ending isolation becomes 6.6% (95%CI: 5.8 to 7.4) and 0% with a prolonged isolation of 4.8 days (95% empirical CI: \u22122 to 8) and 8.3 days (95% empirical CI: 6 to 10) if we consider 104.5 and 105.5 copies/mL as infectiousness threshold values, respectively (Figure 2A). To guarantee a probability lower than 5%, we estimated that patients need to be isolated for 7 days, 11 days, and 5 days for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively (Figure 2A). In this case, again, the length of the prolonged isolation was estimated to be substantial (Figure 2B): 3.8 days (95% empirical CI: \u22122 to 5), 5.8 days (95% empirical CI: \u22122 to 8), and 3.3 days (95% empirical CI: 0 to 4) for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively. In sum, to guarantee low probabilities to prematurely end the isolation and thus release patients who are still infectious, the associate cost is to have unnecessary long isolations for the majority of patients.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig2-v1.jpg)\n\n**Figure 2.:** (A) Probability of prematurely ending the isolation of infectious patients for different lengths of the isolation period and for different infectiousness threshold values. (B) Mean length of unnecessarily prolonged isolation for different lengths of the isolation period and for different infectiousness threshold values. Color keys and symbols apply to both panels. Note that the symbols correspond to the shortest isolation periods when the condition is met.\n\n### Personalized approach using PCR test results\n\nBy considering two consecutive negative test results repeated at an interval of 1 day as the criterion for ending isolation, the probability of prematurely ending isolation was estimated to be 8.1% (95%CI: 7.2 to 9.0) with a negligible length of prolonged isolation of 1.2 days (95% empirical CI: \u22121 to 3) when considering 105.0 copies/mL as the infectiousness threshold value (Figure 3A). By acting on the testing strategy, we can control both the probability of prematurely ending isolation and the length of prolonged isolation. The probability of ending isolation of infectious patients decreased with a longer interval between testing and more consecutive negative results (the upper panel in Figure 3A). However, the length of prolonged isolation increased at the same time (the lower panel in Figure 3A). If a 5% or lower risk of prematurely ending isolation is considered, three consecutive negative test results with the tests performed every day minimizes the length of unnecessary isolation (2.3 days [95% empirical CI: 0 to 5]) (Figure 3A). We repeated the same analyses using different infectiousness threshold values (104.5 and 105.5 copies/mL). Both the probability of prematurely ending isolation and the length of prolonged isolation were not much influenced by infectiousness threshold values, because the viral load is directly measured in the personalized approach (Figure 3B,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig3-v1.jpg)\n\n**Figure 3.:** (A) Probability of prematurely ending isolation (upper panels) and mean length of unnecessarily prolonged isolation (lower panels) for different values of the interval between PCR tests and the number of consecutive negative results necessary to end isolation; the infectiousness threshold value is set to 105.0 copies/mL. The areas surrounded by purple and pink dotted lines are those with 1% or 5% or lower of risk of prematurely ending isolation of infectious patients, respectively, and the triangles and circles correspond to the conditions which realize the shortest prolonged isolation within each area. (B) Same as A, but for an infectiousness threshold value of 104.5 copies/mL. (C) Same as A, but for an infectiousness threshold value of 105.5 copies/mL. Color keys and symbols apply to all panels.\n\n### Comparison between the one-size-fits-all and the personalized approach\n\nTo highlight the differences between the one-size-fits-all and the personalized approaches, we systematically compared the two approaches by looking at the length of the prolonged isolation for a 5% or lower (Figure 4A) or 1% or lower (Figure 4B) risk of prematurely ending isolation. For the personalized approach, the best combination of the number of consecutive negative test results and the interval of tests was selected for each infectiousness threshold value. The personalized approach was not influenced by the infectiousness threshold values and yielded to shorter prolonged isolation compared with the one-size-fits-all approach. However, because the prolonged isolation for the one-size-fits-all approach was influenced by infectiousness threshold values, the difference between the one-size-fits-all and personalized approaches in prolonged isolation became smaller with higher infectiousness threshold values.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.\n\n### Influence of model selection\n\nFigure 5 shows the length of the prolonged isolation for a 5% or lower or 1% or lower risk of prematurely ending the isolation for all the analyzed models. Regardless of the considered models, the personalized approach allows shorted length of unnecessarily isolation. Nonetheless, it is important to remark that the length of prolonged isolation is slightly different among the analyzed models. For example, under the one-size-fits-all approach, it was longer for the \u2018innate immune response\u2019 model as compared with the other two; this is due to larger variability in viral load especially at the late phase of the infection (Figure 1). Under the personalized approach, the length of prolonged isolation was longer in the baseline model as compared to the two alternative models (Figure 1). In summary, by comparing the three models, we can conclude that the one-size-fits-all approach is sensitive to the variability of the viral load curve, whereas the personalized approach is sensitive to the decay speed of the viral load.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig5-v1.jpg)\n\n**Figure 5.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation and for the three analyzed models. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.\n\n## Discussion\n\nGuidelines for ending the isolation of COVID-19 patients that balance the risk of prematurely ending isolation with the burden of prolonged isolation are a crucial topic of discussion. Here, we propose a highly flexible modeling framework to quantify both viral dynamics and measurement errors. Using this approach, we tested alternative policies regulating the isolation of SARS-CoV-2-infected individuals by accounting for individual variability in the immune response. We estimated the probability of prematurely ending isolation and the length of unnecessarily prolonged isolation with two approaches: the one-size-fits-all approach and the personalized approach using PCR test results.\n\nBy considering a risk of 5% or lower of prematurely ending the isolation of a SARS-CoV-2-infected individual, our central estimate for the one-size-fits-all approach requires an isolation period of 7 days after symptom onset, with a prolonged isolation phase lasting about 4 days, depending on the threshold for infectiousness considered. On the other hand, the personalized approach entails a prolonged isolation phase of approximately 2 days, independently of the considered infectiousness threshold values. The better performance of the personalized approach is not surprising. In this approach, viral load is observed directly and is compared against the threshold by using PCR test results. By contrast, the one-size-fits-all approach considers only the time since symptom onset and does not refer to viral load, which has substantial interindividual variation. Further, the personalized approach can be optimized by choosing the best testing schedule (i.e. interval of testing and the number of consecutive negative test results). However, it should be noted that the personalized approach is more costly, due to the need for performing multiple PCR tests, thus entailing logistic challenges because patients need to be tested by health care professionals. The logistics of testing isolated patients is particularly challenging in Western countries, where patients not requiring hospital care are isolated in their place of residence (European Centre for Disease Prevention and Control, 2020b), in contrast with countries like China, where they are isolated in dedicated facilities (Burki, 2020). The development of PCR tests using saliva samples may help to overcome some of these challenges, promising to decrease the work burden and lower the risk of infection for health care workers (Azzi et al., 2020; Tu et al., 2020; Wyllie et al., 2020). Indeed, the viral load measured from saliva is comparable to or slightly higher than that from nasopharyngeal samples, which guarantees a similar level of sensitivity (Tu et al., 2020; Wyllie et al., 2020).\n\nIn this study, we used PCR tests to define the end of an isolation period in the personalized approach. PCR tests provides quantitative viral load estimates, which can be directly compared against the infectiousness threshold. Meanwhile, reverse transcription loop-mediated isothermal amplification (RT-LAMP) tests and rapid antigen tests for SARS-CoV-2 have been developed and recommended for repeated screenings, given that they are less expensive and with a shorter turnaround time than PCR tests (less than an hour vs. a day or two) (Butler et al., 2021; Dao Thi et al., 2020; Larremore et al., 2021; Yang et al., 2021b). Although these tests have lower sensitivity (the detection limit is about 105.0 copies/mL; Butler et al., 2021; Dao Thi et al., 2020; Miyakawa et al., 2021; Yang et al., 2021b) than PCR tests, they can help mitigating SARS-CoV-2 transmission when used for population screenings (Larremore et al., 2021) and contact tracing (Quilty et al., 2021); in fact, the viral load threshold of infectiousness is considered to be higher than the detection limits of RT-LAMP tests and rapid antigen tests. Epidemiological studies are needed to assess whether isolation strategies based on RT-LAMP or rapid tests have a similar mitigation effect to those based on PCR testing.\n\nTwo guidelines for ending isolation were considered in this study. In most countries, the one-size fits-all approach is employed; however, the duration is slightly different among countries. The WHO recommends isolation for 10 days after symptom onset or a positive test for asymptomatic individuals (World Health Organization, 2020). The ECDC recommends isolation of 10 or 20 days for mild/moderate or severe cases, respectively, whereas for asymptomatic individuals, 10 days isolation after a positive test is recommended (European Centre for Disease Prevention and Control, 2020a). However, these durations actually vary from 7 to 14 days depending on each member state of the European Union (European Comission, 2020).\n\nWe submit that our approach can be used as a scientific backup or to adjust isolation guidelines currently in use in different countries. Nonetheless, the following limitations should be kept in mind. First, the number of samples analyzed were relatively small (30 patients), they did not cover all age groups, and pertained to symptomatic hospitalized patients only. This did not allow us to test whether the duration of the isolation is influenced by the severity of the disease. In particular, the duration may be shorter than that predicted in this study, as the analyzed samples were composed by hospitalized patients. Guidelines considering fixed durations of the isolation depending on disease severity may be easier to implement and limit the length of unnecessary prolonged isolations. Still concerning the analyzed sample, it is important to stress that patients were infected in the early stages of the pandemic and thus likely infected by the historical SARS-CoV-2 lineages. To what extent our findings can be generalized to other categories of individuals (e.g. asymptomatic infections) and SARS-CoV-2 variants remains to be seen. The confidence intervals reported in this paper need to be cautiously interpreted as the extent and quality of relevant viral load data is unfortunately quite limited. Further, should the input data be non-representative, this could have caused a bias in our estimates of the duration of the isolation period. It is, however, important to stress that exactly in light of this scarcity of longitudinal data, model-based simulations are a powerful tool for properly integrating temporal trends in the collected data and for assessing individual variabilities. Second, we did not explicitly model the longitudinal clinical course of symptoms in SARS-CoV-2-infected individuals because of the lack of data associating the clinical course with viral load. Further research in this direction is warranted (He et al., 2020), especially as several countries (including the US) consider the presence or absence of symptoms among the criteria for ending isolation. Third, a deeper knowledge of the association between the viral load and the transmission risk would be a key to narrow the uncertainty surrounding the minimum viral load level that still allows SARS-CoV-2 transmission. Specifically, 104.5, 105.0, and 105.5 copies/mL were used and were based on epidemiological observations of transmission events from contact tracing data (Hu et al., 2020; Sun et al., 2021). Other studies used a different perspective to approach the same research question and investigated the threshold relying on experimental virological data (i.e. culturability). For example, van Kampen et al., 2021; W\u00f6lfel et al., 2020 found that the virus was culturable if the viral load is above 106.0 copies/mL. Such uncertainty is reflected in the high variability in the results obtained for the one-size-fits-all approach; on the other hand, the personalized approach provided stable results with respect to the infectiousness threshold values. Fourth, we considered arbitrary values for the risk of prematurely ending isolation (namely, 1% or 5%). Whether such risks are acceptable depends on several factors such as the epidemiological context (e.g. the prevalence of the infection and disease burden), the aim of the adopted policies (e.g. suppression of transmission, mitigation of disease burden), propensity to take risks. Nonetheless, it is worth remarking that, if for a certain level of risk, the difference between the personalized and one-size-fits-all approaches is small, the fixed duration approach may have the advantage in terms of simplicity, cost, and resources. We also note that in the personalized approach, we used qualitative PCR test results only (i.e. whether the viral load is above or below a given threshold). The use of quantitative PCR test results may enable us to predict the optimal day to end isolation for each patient. Finally, although some of patients were tested (and isolated) before symptom onset or a few days after symptom onset, in this study, we assumed the testing starts immediately after symptom onset. As this analysis primarily focuses on the time when the viral load crosses the infectiousness threshold, we do not expect that the timing of the first test does not influence much our findings. However, starting the tests too early since isolation (or symptom onset) might be impractical and it should be determined based on operational and cost constraints. Future research could be dedicated to examining whether the starting day of testing could be defined on the basis of disease severity.\n\nThe guidelines regulating the length of isolation of COVID-19 patients require further updating following new epidemiologic and clinical knowledge, patient characteristics, and the capability of health sectors, such as test availability. Indeed, in several countries, these guidelines have been updated several times throughout the course of the pandemic (Centers for Disease Control and Prevention, 2020a; European Centre for Disease Prevention and Control, 2020a; Public Health England, 2020) and the emergence of new variants can spark new adjustments in the future as well. Our proposed modeling framework is very flexible and could be easily adapted to simulate the immune response and effect of antiviral therapies as well as to the study of other infectious diseases. In particular, it might prove quite relevant should new SARS-CoV-2 variants show different temporal infectiousness profiles than the historical lineage (Davies et al., 2021).\n\nIn conclusion, until the vaccination effort successfully suppresses the widespread circulation of SARS-CoV-2, nonpharmaceutical interventions, and patient isolation in particular, will continue to be a primary tool for mitigating SARS-CoV-2 spread. Understanding when isolated patients may be released will thus remain a key component in the fight against COVID-19.\n\n## Materials and methods\n\n### Viral load data\n\nWe searched PubMed and Google Scholar for papers reporting longitudinal viral load data of COVID-19 patients. We set five inclusion criteria: (1) multiple observations of the viral load were reported per patient (if cycle thresholds were reported instead of viral load, they were transformed to viral load by using the following conversion formula [Zou et al., 2020]:\u00a0$log_{10}\u2061(Viral load [copies/mL])=\u22120.32\\timesCt values [cycles]+14.11$); (2) viral load was measured from upper respiratory specimens (i.e. nose, pharynx) for consistency; (3) viral load along with the time since symptom onset was reported; (4) the patients were not under antiviral treatment (antiviral therapy can directly influence the viral dynamics); and (5) patients were symptomatic (because we used the time since symptom onset as the time scale). We used the de-identified secondary data from published studies, and thus ethics approval for this study was not necessary.\n\n### Modeling SARS-CoV-2 viral dynamics\n\nWe developed a mathematical model of SARS-CoV-2 viral dynamics (Ikeda et al., 2016; Kim et al., 2020b; Perelson, 2002). The model is composed of two components: (1) the ratio between the number of uninfected target cells at time $t$ and the number of uninfected target cells at time 0 ($t=0$ corresponds to the time of symptom onset),$\u00a0f(t)$; and (2) the amount of virus per unit in sample specimen (copies/mL) at time $t$, $V(t)$. $V(t)$ exponentially increases since infection, reaches a peak, and starts declining because of the depletion of target cells, which is consistent with the observed viral dynamics. Model parameters were calibrated by fitting the longitudinal data with a mixed-effect model. Details on the model and the fitting procedure are reported in Appendix 1. To account for individual variability in the viral dynamics, we simulated $V(t)$ for 1000 patients by sampling from the posterior distributions of the model parameters. To simulate the viral load measured by a PCR test,$\u00a0V^(t)$, we added a measurement error to $V(t)$ (see Appendix 1 for details). The model used here (baseline model) is one of the simplest models for viruses causing acute respiratory infection. Given that the biological infection process has not been fully understood yet, we believe using a simple model represents an appropriate baseline choice. Specifically in the literature of SAS-CoV-2 studies, several different models have been used including the baseline model (Gon\u00e7alves et al., 2020; Goyal et al., 2020; Goyal et al., 2021; Kim et al., 2020b). Nonetheless, to investigate to what extent the model choice affects our findings, we considered two alternative models: the \u2018eclipse phase\u2019 model (Baccam et al., 2006; Gon\u00e7alves et al., 2020) and the \u2018innate immune response\u2019 model (Baccam et al., 2006). The detailed description of the analyzed models is reported in Appendix 1.\n\n### Assessment and comparison of the one-size-fits-all and the personalized approach\n\nIn the one-size-fits-all approach, we assumed isolation to end after a fixed time since symptom onset, whereas in the personalized approach using PCR tests, isolation ends after obtaining a given number of consecutive negative test results (with a given time interval between the tests). As the baseline scenario for the one-size-fits-all approach (here referred to as the \u2018symptom-based strategy\u2019), we considered a fixed time of 10 days. As the baseline scenario for the personalized approach (here referred to as the \u2018test-based strategy\u2019), we considered two consecutive negative test results repeated at a daily interval (in agreement with the CDC guidelines [Centers for Disease Control and Prevention, 2020a]). Here, we assumed the testing starts immediately after symptom onset.\n\nEpidemiological studies based on contact tracing data suggest that infectiousness nearly disappears 8 days after symptom onset (Hu et al., 2020; Sun et al., 2021). According, to Kim et al., 2020b, the 97.5 percentile of the viral load 8 days after symptom onset is 105.0 copies/mL (Kim et al., 2021). We thus use 105.0 copies/mL as threshold to define whether a patient is still infectious (i.e. able to transmit the infection). All the obtained results are reported also by considering viral load threshold values of 104.5 copies/mL and 105.5 copies/mL as sensitivity analyses.\n\nTo evaluate the different strategies, we computed two metrics based on the simulated viral loads: the probability of prematurely ending isolation and the length of unnecessarily prolonged isolation. The probability of prematurely ending isolation is the chance that infected patients are released from isolation while they are still infectious. The length of prolonged isolation is defined as the difference between the time at which a patient is no longer infectious and the time when her or his isolation ends. Note that when the prolonged isolation is negative, it means that the isolation period has ended when the patient is still infectious.\n\nAs sensitivity analyses, we considered the length of isolation in the range of 2 to 20 days for the one-size-fits-all approach. For the personalized approach, the frequency of testing (i.e. the interval between consecutive tests) was considered to vary between 1 and 5 days and the number of consecutive negative test results to vary between 1 and 5. Details about the performed analyses are reported in Appendix 1 and a schematic of the methodology is shown in Figure 6.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig6-v1.jpg)\n",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e7410177-5235-45c8-8e56-b9a5c86ec886",
+      "submission_id": "7749e9aa-c13b-4224-88a6-68063ee399c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joshua T Schiffer, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69340.sa1](https://doi.org/10.7554/eLife.69340.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper uses a simulation approach to demonstrate that a personalized viral load based testing approach has the potential to limit the duration of unnecessary isolation among infected people while not increasing the risk of releasing an infectious person. This work could influence policies regarding duration of isolation is hospitals and at home.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Revisiting the guidelines for ending isolation for COVID-19 patients\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Joshua T Schiffer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor.\n\nAs is customary in eLife, the reviewers have discussed their critiques with one another and with the editors. What follows below is the Reviewing Editor's edited compilation of the essential and ancillary points provided by reviewers in their critiques and in their interaction post-review. Please submit a revised version that addresses these concerns directly.\n\nEssential Revisions:\n\n1) Please enhance the literature review to discuss the relevance of this paper in light of new, less expensive testing strategies including rapid antigen testing. Please also discuss more specifically how different countries around the world are differing in terms of isolation policies.\n\n2) Please test different intra-host models against the data using residuals and AIC and see if different models alter conclusions about optimal isolation guidelines in anyway.\n\nReviewer #1:\n\n1) Overall, the paper is under referenced and state of the art testing approaches are not described in sufficient detail in the intro or discussion. A brief review of national practices that incorporate one strategy or the other to inform the reader of the current standard would be helpful to highlight the importance of the work.\n\n2) There is no mention of the use of antigen tests which are less sensitive for viral RNA but more specific for infectious virus. These are far less expensive, have far less turnaround and are now widely used in many countries. Antigen tests should be contextualized given the results of this modeling. Saliva testing is also widespread in many places. Modeling of both approaches is available in the literature and should be cited.\n\n3) Several groups have published intra-host viral dynamic models (the Guedj and Schiffer groups) with slightly different mechanistic assumptions. These models should be discussed and in particular it should be mentioned whether their slightly different structures could alter the paper's conclusions. Similarly, a couple of research groups have made estimates of viral load thresholds required for transmission and these should be referenced as well.\n\n4) The model is fit to very little data (as very little is available) and while the posterior sampling method to generate 1000 in silico patients is reasonable, it is no substitute for real data. The authors should acknowledge that confidence intervals reported in the paper are quite speculative in the sense that the extent and quality of relevant viral load data for intra-host modeling is unfortunately quite limited. If the model is misclassified based on non-representative input data, then estimations about duration of isolation could be biased.\n\n5) For the test-based strategy, are there any assumptions about when the first test might occur? Can this only occur after development of symptoms or after a certain number of days of infection? This section of the methods should provide more detail.\n\nReviewer #2:\n\nJeong et al., examined the important question of the guidelines for ending the isolation of COVID-19 patients. Two types of guidelines are commonly used: 1) A fixed duration (10 days or 2 weeks) of isolation following the development of symptoms, which the authors call 'one-size-fits-all'. 2) Two successive RT/PCR negative test results separated by 24 hours for ending isolation, which the authors term 'personalized'. In the former, a long duration would lead to unnecessarily long isolation periods, whereas a short duration may end up releasing individuals still able to transmit the disease. The latter avoids these pitfalls, but requires multiple tests, increasing costs and the burden on healthcare staff. To identify which of these strategies is better, the authors develop a mathematical model of within-host SARS-CoV-2 dynamics and apply it to data of viral load changes post infection from untreated patients. Using the parameters estimated, they create a pool of 1000 virtual patients and simulate dynamics in these patients and assess the consequences of the two isolation ending approaches by calculating the probability that a patient released is still able to transmit and the excess or unwarranted duration of isolation. They find that in general the personalized approach fares better on both metrics.\n\nThe question is important and timely given the raging COVID-19 pandemic. The conceptual approach developed is novel and is also likely to be applicable beyond the current pandemic. The application of the approach and the resulting inferences drawn, however, need stronger justification. My reasons are below.\n\n1. In the personalized approach, where RT/PCR tests are used, the chance that a person who is infectious is declared non-infectious (or vice versa) is due to measurement error. This error is estimated in the study as the variance of the normal distribution fit to the residuals of the best-fits of the mathematical model to the patient data of viral load changes (see lines 464 and 473). The error is thus strongly dependent on the model. One could use a model with more parameters and obtain a 'better' fit to the data, with smaller residuals, which could then presumably change the inferences above. Indeed, many other models have been developed to describe SARS-CoV-2 dynamics and have been applied to some of the datasets the present study has used.\n\n2. A second concern, which the authors too recognize, is that the data used is all from hospitalized patients, which may not be representative of the vast fraction of infected individuals undergoing (home or institutional, but not hospital) isolation following mild/moderate symptoms. The required durations of isolation may then be even shorter than predicted. Would guidelines that account for this heterogeneity in disease severity be easier to implement? In other words, individuals could be categorized into disease severity classes (say asymptomatic, mild, moderate, or severe) and have fixed but different durations of isolation for each class. For personalized treatments, one could still use these categories to decide when to start measurements. In the present study, when to start measurements in the personalized approach is not mentioned and it appears that measurements are assumed to be made daily from the time of isolation, which may be unnecessary and impractical.\n\n3. Finally, the two approaches are compared at 5% and 1% probabilities of ending isolation prematurely (Figure 4). While 1% appears small, whether it is small enough from an epidemiological perspective remains to be addressed. In other words, whether 1% 'leakage' of infectious individuals from isolation is tolerable would depend on the setting, particularly, the population density and the propensity for risky behavior. If at an epidemiologically identified threshold, the difference between the two approaches is small, the fixed duration approach may have the advantage of simplicity and of doing away with additional tests.\n\n1. One way to address comment 1 above could be to compare alternative models and identify the best model based on estimates of AIC, or other such metrics, and use it to estimate the measurement error. Alternatively, if experimental uncertainties in RT/PCR measurements are known, using them instead of the variance of the normal distribution fit to residuals could provide an independent verification of the inferences.\n\n2. The authors should show fits of the model to the data and list the model parameter values estimated; this would help appreciate the inferences drawn better.\n",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c0b84c26-c65e-4b53-8530-bd4513ce714a",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C1",
+      "claim": "Since the start of the COVID-19 pandemic, two mainstream guidelines for defining when to end the isolation of SARS-CoV-2-infected individuals have been in use: the one-size-fits-all approach (i.e. patients are isolated for a fixed number of days) and the personalized approach (i.e. based on repeated testing of isolated patients).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the start of the COVID-19 pandemic, two mainstream guidelines for defining when to end the isolation of SARS-CoV-2-infected individuals have been in use: the one-size-fits-all approach (i.e. patients are isolated for a fixed number of days) and the personalized approach (i.e. based on repeated testing of isolated patients).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about existing guidelines, supported by the context of the manuscript and general knowledge of COVID-19 policies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "ebfa0c17-1abc-4e43-8168-cacb47dd64a7",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C2",
+      "claim": "By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, the risk of releasing an individual who is still infectious is low (0\u20136.6%).",
+      "claim_type": "EXPLICIT",
+      "source": "By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, we estimated that the risk of releasing an individual who is still infectious is low (0\u20136.6%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results presented in the manuscript, specifically from the analysis of the one-size-fits-all approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "a260ba12-6f22-4bcd-b89d-99c4839fc06a",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C3",
+      "claim": "A fixed isolation period of 10 days entails lengthy unnecessary isolations (4.8\u20138.3 days).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this policy entails lengthy unnecessary isolations (4.8\u20138.3 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results showing the duration of prolonged isolation under the one-size-fits-all approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "07693cb0-db0f-41f5-917f-737d85a26006",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C4",
+      "claim": "By using a personalized strategy, similar low risks can be reached with shorter prolonged isolations compared to the one-size-fits-all approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, by using a personalized strategy, similar low risks can be reached with shorter prolonged isolations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analysis of the two approaches presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f7b6094c-875d-47dc-9682-8069b10137f5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C5",
+      "claim": "The number of COVID-19 cases reached 80 million by the end of 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the first case of a novel coronavirus (SARS-CoV-2) was identified in China in December of 2019, its associated disease, COVID-19, spread quickly around the world, with the number of cases reaching 80 million by the end of 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the number of COVID-19 cases, which is established knowledge from public health records.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "7e2fa432-3017-4631-8239-59a78bab7ed9",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C6",
+      "claim": "Nonpharmaceutical interventions (NPIs) were used on a massive scale to suppress or mitigate SARS-CoV-2 transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "During this time, nonpharmaceutical interventions (NPIs) were used on a massive scale to suppress or mitigate SARS-CoV-2 transmission (Cowling et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cowling et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "4ca1d045-d413-49c8-89af-0810240c5daf",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C7",
+      "claim": "As of January 2021, several countries had started vaccination campaigns aimed at controlling SARS-CoV-2 spread.",
+      "claim_type": "EXPLICIT",
+      "source": "As of January 2021, several countries had started vaccination campaigns aimed at controlling SARS-CoV-2 spread (Centers for Disease Control and Prevention, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Centers for Disease Control and Prevention, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f29a07e1-dbb2-47be-93d8-8201a5caaa28",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C8",
+      "claim": "Until vaccination programs reach a sizable fraction of the population, NPIs will likely continue to play a crucial role for epidemic control.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, until such vaccination programs reach a sizable fraction of the population, NPIs will likely continue to play a crucial role for epidemic control (Yang et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2021a and represents a projection based on epidemiological reasoning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "140cda2f-4d50-49f3-a74f-f576667fac6f",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C9",
+      "claim": "A simple but effective NPI is the isolation of SARS-CoV-2-infected individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple but effective NPI is the isolation of SARS-CoV-2-infected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established public health knowledge about infection control.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2a179914-fc67-4c07-a9b1-edce657fe9d4",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C10",
+      "claim": "In most Western countries, isolation is done in the infected person's place of residence.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be done either in the infected person's place of residence (as is the case for most Western countries [European Centre for Disease Prevention and Control, 2020b]) or in dedicated facilities (as is the case in China [Burki, 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to European Centre for Disease Prevention and Control, 2020b and Burki, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9d42b37c-19ef-4b62-9eee-1fa7ed9086d4",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C11",
+      "claim": "In China, isolation is done in dedicated facilities.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be done either in the infected person's place of residence (as is the case for most Western countries [European Centre for Disease Prevention and Control, 2020b]) or in dedicated facilities (as is the case in China [Burki, 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Burki, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "1707eeb8-7521-4528-8382-eaa10aff6021",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C12",
+      "claim": "A longer isolation period may decrease the chance of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a longer isolation period may decrease the chance of transmission, it also entails both a higher burden on the mental and physical health of the patient (Mian et al., 2021) and cause higher economic loss (Ash et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between isolation duration and transmission risk.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8d434edd-c227-4e9e-b710-829192cafbab",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C13",
+      "claim": "Longer isolation entails a higher burden on the mental and physical health of the patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a longer isolation period may decrease the chance of transmission, it also entails both a higher burden on the mental and physical health of the patient (Mian et al., 2021) and cause higher economic loss (Ash et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mian et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f7d4b97d-d93f-402d-a311-c379905ae6eb",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C14",
+      "claim": "Longer isolation causes higher economic loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a longer isolation period may decrease the chance of transmission, it also entails both a higher burden on the mental and physical health of the patient (Mian et al., 2021) and cause higher economic loss (Ash et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ash et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5bcb2aff-a433-4eba-ae2a-0341e6780da5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C15",
+      "claim": "The CDC created guidelines for health care practitioners concerning the discontinuation of transmission-based precautions for COVID-19 patients in health care settings that are based on the time since symptom onset or disappearance.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Centers for Disease Control and Prevention (CDC) created guidelines for health care practitioners concerning the discontinuation of transmission-based precautions for COVID-19 patients in health care settings that are based on the time since symptom onset or disappearance (i.e. symptom-based strategy) (Centers for Disease Control and Prevention, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Centers for Disease Control and Prevention, 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "88fb7983-6236-4347-8fb1-47cfc783fdc6",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C16",
+      "claim": "In the CDC guidelines, those with mild to moderate illness can end isolation when at least 10 days have passed since symptoms first appeared, at least 24 hr have passed since last fever without the use of fever-reducing medications, and symptoms have improved.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CDC guidelines, those with mild to moderate illness can end isolation (or precautions) when the following three conditions are met: 'At least 10 days have passed since symptoms first appeared,' 'At least 24 hr have passed since last fever without the use of fever-reducing medications,' and 'Symptoms (e.g. cough, shortness of breath) have improved.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of CDC guidelines, which is established knowledge from official public health guidance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "780f7615-9be0-4b87-8110-528ac40bc96d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C17",
+      "claim": "The one-size-fits-all approach does not account for the individual variability in viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such a one-size-fits-all approach does not account for the individual variability in viral load (Iwanami et al., 2020), which is associated with both severity (Zheng et al., 2020) and persistence of symptoms (Long et al., 2020), and may thus not fully prevent further transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Iwanami et al., 2020, Zheng et al., 2020, and Long et al., 2020, and represents an inference about the limitations of the approach.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2f6d8641-5469-4c0f-8ff0-6e5df19a109f",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C18",
+      "claim": "Individual variability in viral load is associated with both severity and persistence of symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such a one-size-fits-all approach does not account for the individual variability in viral load (Iwanami et al., 2020), which is associated with both severity (Zheng et al., 2020) and persistence of symptoms (Long et al., 2020), and may thus not fully prevent further transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zheng et al., 2020 and Long et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "96b399a7-5f55-4a9f-a838-1b8f8e9a4f58",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C19",
+      "claim": "The one-size-fits-all approach may not fully prevent further transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such a one-size-fits-all approach does not account for the individual variability in viral load (Iwanami et al., 2020), which is associated with both severity (Zheng et al., 2020) and persistence of symptoms (Long et al., 2020), and may thus not fully prevent further transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of the one-size-fits-all approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "1c2efb1f-7d7a-4156-9758-27c610d57063",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C20",
+      "claim": "The personalized approach is based on the assessment of the viral load of each isolated patient, and isolation ends when the viral load drops below a certain threshold value associated with a low risk of further spreading the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "The second approach is based on the assessment of the viral load of each isolated patient (i.e. personalized approach), and isolation ends when the viral load drops below a certain threshold value, which is associated with a low risk of further spreading the pathogen (He et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to He et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "ee83e2c2-4ebe-40d4-a746-381d2c2f3013",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C21",
+      "claim": "The viral load can be measured by reverse transcription polymerase chain reaction (PCR).",
+      "claim_type": "EXPLICIT",
+      "source": "The viral load can be measured by reverse transcription polymerase chain reaction (PCR), which can be used not only for diagnosing infection but also in determining when to end the isolation period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCR testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f5908dd3-9ab9-4b84-a64e-a55aaf388013",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C22",
+      "claim": "PCR can be used not only for diagnosing infection but also in determining when to end the isolation period.",
+      "claim_type": "EXPLICIT",
+      "source": "The viral load can be measured by reverse transcription polymerase chain reaction (PCR), which can be used not only for diagnosing infection but also in determining when to end the isolation period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the applications of PCR testing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "bd5dd7cf-c7b5-4cc8-a9f6-5e520b5c168f",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C23",
+      "claim": "The CDC recommends using PCR testing in particular circumstances, such as for patients with severe immunodeficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the CDC recommends using PCR testing in particular circumstances, such as for patients with severe immunodeficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of CDC recommendations, which is established knowledge from official guidance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "6106481d-773a-4760-bc0f-ba56c5c80ae6",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C24",
+      "claim": "The CDC guidelines for PCR-based testing include both the resolution of symptoms and PCR test results showing negative results from at least two consecutive respiratory specimens collected \u226524 hr apart.",
+      "claim_type": "EXPLICIT",
+      "source": "The guidelines include both the resolution of symptoms and PCR test results, that is, 'Results are negative from at least two consecutive respiratory specimens collected \u226524 hr apart' (Centers for Disease Control and Prevention, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Centers for Disease Control and Prevention, 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5eef3bd0-8294-435a-89ca-3bc6e3bcc418",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C25",
+      "claim": "Four papers meeting the inclusion criteria were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified four papers meeting the inclusion criteria (Kim et al., 2020a; W\u00f6lfel et al., 2020; Young et al., 2020; Zou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data collection process for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "77d7c197-f15e-482e-97a2-1c0f20b99cb3",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C26",
+      "claim": "Among the patients reported in the four studies, 30 patients (approximately 60% of the participants in the original studies) met the inclusion criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the patients reported in these four studies, 30 patients (approximately 60% of the participants in the original studies) met our inclusion criteria (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "39b8c7eb-cfb3-4359-b99a-03e4408c1cb5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C27",
+      "claim": "Three studies were from Asia and one was from Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "Three studies were from Asia and one was from Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the geographic distribution of the studies used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8c1e5686-d946-41cb-9bd3-029b681d426c",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C28",
+      "claim": "The lowest and highest detection limit among those studies were 15.3 copies/mL and 68 copies/mL, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest and highest detection limit among those studies were 15.3 copies/mL and 68 copies/mL, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the detection limits in the studies used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5a42c48b-8ae7-44c6-b9af-cca5269b7d3e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C29",
+      "claim": "The detection limits in the analyzed studies are relatively lower than the commonly used threshold values (the median was 100 copies/mL).",
+      "claim_type": "EXPLICIT",
+      "source": "These are relatively lower than the commonly used threshold values (the median was 100 copies/mL [Fung et al., 2020; Giri et al., 2021; van Kasteren et al., 2020]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fung et al., 2020; Giri et al., 2021; van Kasteren et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "d52f0382-38cb-4c96-b494-8695992090c8",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C30",
+      "claim": "The data were collected by February of 2020, which was during the early phase of the COVID-19 pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were collected by February of 2020, which was during the early phase of the COVID-19 pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the timing of data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "fff41c53-b3d7-4757-8f94-d9e8536ee0e8",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C31",
+      "claim": "Participants were hospitalized patients of ages ranging from 28 to 78 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were hospitalized patients of ages ranging from 28 to 78 years; the sex ratio was mostly even.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the patient demographics in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e69a487c-81f1-4c6d-a7bb-33356be07c80",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C32",
+      "claim": "The sex ratio of participants was mostly even.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were hospitalized patients of ages ranging from 28 to 78 years; the sex ratio was mostly even.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the patient demographics in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "4bebab3b-606b-4b90-80e1-58ec1255d5d9",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C33",
+      "claim": "Three models were fitted to the data: the baseline model, the 'eclipse phase' model, and the 'innate immune response' model.",
+      "claim_type": "EXPLICIT",
+      "source": "Three models were fitted to the data: the baseline model, the 'eclipse phase' model, and the 'innate immune response' model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "491115b1-f982-474e-8904-530b378da642",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C34",
+      "claim": "All three models lead to similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all the three models lead to similar results (Figure 1), the baseline model shows a longer tail than the two other models, due to the lower estimated death rate of infected cells (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison of model results shown in Figure 1 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "00b4800e-0b1b-4826-85c9-0bfd86feffde",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C35",
+      "claim": "The baseline model shows a longer tail than the two other models, due to the lower estimated death rate of infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all the three models lead to similar results (Figure 1), the baseline model shows a longer tail than the two other models, due to the lower estimated death rate of infected cells (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model comparison and parameter estimates in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "88dc9eda-0afb-48c3-abd1-42d88b177140",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C36",
+      "claim": "The three models showed similar values of the Akaike information criterion (AIC) and the Bayesian information criterion (BIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the three models showed similar values of the Akaike information criterion (AIC) and the Bayesian information criterion (BIC) (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model comparison statistics in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "c7bb55e1-e709-488d-94d0-b83ddabacc19",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C37",
+      "claim": "By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, the probability of releasing patients who are still infectious was estimated to be 0.9% (95%CI: 0.6 to 1.2), with a lengthy prolonged isolation of 6.8 days (95% empirical CI: 1 to 8) when considering 10^5 copies/mL as the infectiousness threshold value.",
+      "claim_type": "EXPLICIT",
+      "source": "By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, the probability of releasing patients who are still infectious was estimated to be 0.9% (95%CI: 0.6 to 1.2), with a lengthy prolonged isolation of 6.8 days (95% empirical CI: 1 to 8) when considering 105 copies/mL as the infectiousness threshold value (Figure 2AB).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 2AB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "064ca54b-395d-4f32-a75f-f01831130aed",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C38",
+      "claim": "The estimated probability of prematurely ending isolation becomes 6.6% (95%CI: 5.8 to 7.4) and 0% with a prolonged isolation of 4.8 days (95% empirical CI: \u22122 to 8) and 8.3 days (95% empirical CI: 6 to 10) if we consider 10^4.5 and 10^5.5 copies/mL as infectiousness threshold values, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated probability of prematurely ending isolation becomes 6.6% (95%CI: 5.8 to 7.4) and 0% with a prolonged isolation of 4.8 days (95% empirical CI: \u22122 to 8) and 8.3 days (95% empirical CI: 6 to 10) if we consider 104.5 and 105.5 copies/mL as infectiousness threshold values, respectively (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "55d9d709-21ca-4be7-900e-aa3cf33accdc",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C39",
+      "claim": "To guarantee a probability lower than 5%, patients need to be isolated for 7 days, 11 days, and 5 days for infectiousness threshold values of 10^5.0, 10^4.5, and 10^5.5 copies/mL, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To guarantee a probability lower than 5%, we estimated that patients need to be isolated for 7 days, 11 days, and 5 days for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "b0bbce75-fb9d-45bd-9f79-2b202653f63e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C40",
+      "claim": "The length of the prolonged isolation for a <5% risk was estimated to be 3.8 days (95% empirical CI: \u22122 to 5), 5.8 days (95% empirical CI: \u22122 to 8), and 3.3 days (95% empirical CI: 0 to 4) for infectiousness threshold values of 10^5.0, 10^4.5, and 10^5.5 copies/mL, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, again, the length of the prolonged isolation was estimated to be substantial (Figure 2B): 3.8 days (95% empirical CI: \u22122 to 5), 5.8 days (95% empirical CI: \u22122 to 8), and 3.3 days (95% empirical CI: 0 to 4) for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "6c17396f-2d8c-42b9-81a0-3e1377578071",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C41",
+      "claim": "By considering two consecutive negative test results repeated at an interval of 1 day as the criterion for ending isolation, the probability of prematurely ending isolation was estimated to be 8.1% (95%CI: 7.2 to 9.0) with a negligible length of prolonged isolation of 1.2 days (95% empirical CI: \u22121 to 3) when considering 10^5.0 copies/mL as the infectiousness threshold value.",
+      "claim_type": "EXPLICIT",
+      "source": "By considering two consecutive negative test results repeated at an interval of 1 day as the criterion for ending isolation, the probability of prematurely ending isolation was estimated to be 8.1% (95%CI: 7.2 to 9.0) with a negligible length of prolonged isolation of 1.2 days (95% empirical CI: \u22121 to 3) when considering 105.0 copies/mL as the infectiousness threshold value (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "b44b1bb5-01b2-4d71-86a4-db536020da16",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C42",
+      "claim": "The probability of ending isolation of infectious patients decreased with a longer interval between testing and more consecutive negative results.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of ending isolation of infectious patients decreased with a longer interval between testing and more consecutive negative results (the upper panel in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "c4434d6d-b866-4770-b999-2ac71c35c671",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C43",
+      "claim": "The length of prolonged isolation increased with a longer interval between testing and more consecutive negative results.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the length of prolonged isolation increased at the same time (the lower panel in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "7f729f16-9b70-4d53-a453-fee1286b6d6e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C44",
+      "claim": "If a 5% or lower risk of prematurely ending isolation is considered, three consecutive negative test results with the tests performed every day minimizes the length of unnecessary isolation (2.3 days [95% empirical CI: 0 to 5]).",
+      "claim_type": "EXPLICIT",
+      "source": "If a 5% or lower risk of prematurely ending isolation is considered, three consecutive negative test results with the tests performed every day minimizes the length of unnecessary isolation (2.3 days [95% empirical CI: 0 to 5]) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e42155d8-ec1b-47f3-89ef-34cad399ea7d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C45",
+      "claim": "Both the probability of prematurely ending isolation and the length of prolonged isolation were not much influenced by infectiousness threshold values in the personalized approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the probability of prematurely ending isolation and the length of prolonged isolation were not much influenced by infectiousness threshold values, because the viral load is directly measured in the personalized approach (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the modeling results shown in Figure 3B,C and represents an inference about why the personalized approach is robust to threshold values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "ed05cf6b-c869-43db-b344-f57186696e6c",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C46",
+      "claim": "The personalized approach was not influenced by the infectiousness threshold values and yielded to shorter prolonged isolation compared with the one-size-fits-all approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The personalized approach was not influenced by the infectiousness threshold values and yielded to shorter prolonged isolation compared with the one-size-fits-all approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analysis of the two approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2ec8d787-f201-4f57-b50a-dbbf38fd89f5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C47",
+      "claim": "The prolonged isolation for the one-size-fits-all approach was influenced by infectiousness threshold values.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the prolonged isolation for the one-size-fits-all approach was influenced by infectiousness threshold values, the difference between the one-size-fits-all and personalized approaches in prolonged isolation became smaller with higher infectiousness threshold values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analysis of the two approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "4c428aaa-d53a-4ef2-95c6-f01e00713dbc",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C48",
+      "claim": "The difference between the one-size-fits-all and personalized approaches in prolonged isolation became smaller with higher infectiousness threshold values.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because the prolonged isolation for the one-size-fits-all approach was influenced by infectiousness threshold values, the difference between the one-size-fits-all and personalized approaches in prolonged isolation became smaller with higher infectiousness threshold values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparative analysis shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "7faa2c34-3361-4db0-9d08-b5fc5e71ee5a",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C49",
+      "claim": "Regardless of the considered models, the personalized approach allows shorter length of unnecessarily isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the considered models, the personalized approach allows shorted length of unnecessarily isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of models shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9558ee4f-8951-4a1b-86b1-9051e9b325d8",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C50",
+      "claim": "The length of prolonged isolation is slightly different among the analyzed models.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is important to remark that the length of prolonged isolation is slightly different among the analyzed models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison of models shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "54c7c6d5-ea60-470b-8a9e-292c9a39f0e5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C51",
+      "claim": "Under the one-size-fits-all approach, the length of prolonged isolation was longer for the 'innate immune response' model as compared with the other two models, due to larger variability in viral load especially at the late phase of the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, under the one-size-fits-all approach, it was longer for the 'innate immune response' model as compared with the other two; this is due to larger variability in viral load especially at the late phase of the infection (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model comparison shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "ef94480f-7ceb-4d2f-8061-b4c28617281c",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C52",
+      "claim": "Under the personalized approach, the length of prolonged isolation was longer in the baseline model as compared to the two alternative models.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the personalized approach, the length of prolonged isolation was longer in the baseline model as compared to the two alternative models (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the model comparison shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "bcd54e75-5500-4802-b53e-f37e0b28021d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C53",
+      "claim": "The one-size-fits-all approach is sensitive to the variability of the viral load curve.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, by comparing the three models, we can conclude that the one-size-fits-all approach is sensitive to the variability of the viral load curve, whereas the personalized approach is sensitive to the decay speed of the viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of the three models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "df19243e-776b-4313-b701-dcfa95e8a01d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C54",
+      "claim": "The personalized approach is sensitive to the decay speed of the viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, by comparing the three models, we can conclude that the one-size-fits-all approach is sensitive to the variability of the viral load curve, whereas the personalized approach is sensitive to the decay speed of the viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of the three models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "eabcd3ad-007d-4cb5-b6ca-55e7819b731d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C55",
+      "claim": "The central estimate for the one-size-fits-all approach requires an isolation period of 7 days after symptom onset, with a prolonged isolation phase lasting about 4 days, when considering a risk of 5% or lower of prematurely ending the isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "By considering a risk of 5% or lower of prematurely ending the isolation of a SARS-CoV-2-infected individual, our central estimate for the one-size-fits-all approach requires an isolation period of 7 days after symptom onset, with a prolonged isolation phase lasting about 4 days, depending on the threshold for infectiousness considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e9be86ba-3482-4259-86e0-4dfe1cc43d38",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C56",
+      "claim": "The personalized approach entails a prolonged isolation phase of approximately 2 days, independently of the considered infectiousness threshold values.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the personalized approach entails a prolonged isolation phase of approximately 2 days, independently of the considered infectiousness threshold values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "3c70204a-1c12-4b8f-aee2-8ea0b0c580ec",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C57",
+      "claim": "In the personalized approach, viral load is observed directly and is compared against the threshold by using PCR test results.",
+      "claim_type": "EXPLICIT",
+      "source": "In this approach, viral load is observed directly and is compared against the threshold by using PCR test results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the personalized approach works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "d6e71877-6700-48d6-80ac-ec1f739eaba3",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C58",
+      "claim": "The one-size-fits-all approach considers only the time since symptom onset and does not refer to viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the one-size-fits-all approach considers only the time since symptom onset and does not refer to viral load, which has substantial interindividual variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the one-size-fits-all approach works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "102fd862-183a-49ff-9062-941e284f1509",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C59",
+      "claim": "Viral load has substantial interindividual variation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the one-size-fits-all approach considers only the time since symptom onset and does not refer to viral load, which has substantial interindividual variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about viral load variability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "3f510b66-b632-4d8d-8d4e-e0c21f048974",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C60",
+      "claim": "The personalized approach can be optimized by choosing the best testing schedule (i.e. interval of testing and the number of consecutive negative test results).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the personalized approach can be optimized by choosing the best testing schedule (i.e. interval of testing and the number of consecutive negative test results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis of different testing schedules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "4b18b158-7036-4638-871e-00285e3f45da",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C61",
+      "claim": "The personalized approach is more costly, due to the need for performing multiple PCR tests.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that the personalized approach is more costly, due to the need for performing multiple PCR tests, thus entailing logistic challenges because patients need to be tested by health care professionals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical implications of the personalized approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "82cbd9d5-844c-41fa-9025-7d7ac30cd9d2",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C62",
+      "claim": "The logistics of testing isolated patients is particularly challenging in Western countries, where patients not requiring hospital care are isolated in their place of residence.",
+      "claim_type": "EXPLICIT",
+      "source": "The logistics of testing isolated patients is particularly challenging in Western countries, where patients not requiring hospital care are isolated in their place of residence (European Centre for Disease Prevention and Control, 2020b), in contrast with countries like China, where they are isolated in dedicated facilities (Burki, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to European Centre for Disease Prevention and Control, 2020b and Burki, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5a3e7c36-17ce-42ff-b928-84652d279ee8",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C63",
+      "claim": "The development of PCR tests using saliva samples may help to overcome some of the logistic challenges of the personalized approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of PCR tests using saliva samples may help to overcome some of these challenges, promising to decrease the work burden and lower the risk of infection for health care workers (Azzi et al., 2020; Tu et al., 2020; Wyllie et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Azzi et al., 2020; Tu et al., 2020; Wyllie et al., 2020 and represents speculation about future developments.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8283effd-de3f-4bd0-98cd-722f9d890d1d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C64",
+      "claim": "The viral load measured from saliva is comparable to or slightly higher than that from nasopharyngeal samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the viral load measured from saliva is comparable to or slightly higher than that from nasopharyngeal samples, which guarantees a similar level of sensitivity (Tu et al., 2020; Wyllie et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tu et al., 2020; Wyllie et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9ceb4070-e03b-44c2-969e-631692d35b90",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C65",
+      "claim": "RT-LAMP tests and rapid antigen tests for SARS-CoV-2 have been developed and recommended for repeated screenings, given that they are less expensive and with a shorter turnaround time than PCR tests (less than an hour vs. a day or two).",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, reverse transcription loop-mediated isothermal amplification (RT-LAMP) tests and rapid antigen tests for SARS-CoV-2 have been developed and recommended for repeated screenings, given that they are less expensive and with a shorter turnaround time than PCR tests (less than an hour vs. a day or two) (Butler et al., 2021; Dao Thi et al., 2020; Larremore et al., 2021; Yang et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Butler et al., 2021; Dao Thi et al., 2020; Larremore et al., 2021; Yang et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "3c4ae105-d97e-4adb-9c46-56443013ba97",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C66",
+      "claim": "RT-LAMP tests and rapid antigen tests have lower sensitivity (the detection limit is about 10^5.0 copies/mL) than PCR tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these tests have lower sensitivity (the detection limit is about 105.0 copies/mL; Butler et al., 2021; Dao Thi et al., 2020; Miyakawa et al., 2021; Yang et al., 2021b) than PCR tests, they can help mitigating SARS-CoV-2 transmission when used for population screenings (Larremore et al., 2021) and contact tracing (Quilty et al., 2021); in fact, the viral load threshold of infectiousness is considered to be higher than the detection limits of RT-LAMP tests and rapid antigen tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Butler et al., 2021; Dao Thi et al., 2020; Miyakawa et al., 2021; Yang et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "34a7153f-0c8a-4e74-a82c-361a79f78ac0",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C67",
+      "claim": "RT-LAMP tests and rapid antigen tests can help mitigating SARS-CoV-2 transmission when used for population screenings.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these tests have lower sensitivity (the detection limit is about 105.0 copies/mL; Butler et al., 2021; Dao Thi et al., 2020; Miyakawa et al., 2021; Yang et al., 2021b) than PCR tests, they can help mitigating SARS-CoV-2 transmission when used for population screenings (Larremore et al., 2021) and contact tracing (Quilty et al., 2021); in fact, the viral load threshold of infectiousness is considered to be higher than the detection limits of RT-LAMP tests and rapid antigen tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Larremore et al., 2021 and Quilty et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9a018ccd-4888-4715-b8e1-72dae7b3382c",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C68",
+      "claim": "The viral load threshold of infectiousness is considered to be higher than the detection limits of RT-LAMP tests and rapid antigen tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these tests have lower sensitivity (the detection limit is about 105.0 copies/mL; Butler et al., 2021; Dao Thi et al., 2020; Miyakawa et al., 2021; Yang et al., 2021b) than PCR tests, they can help mitigating SARS-CoV-2 transmission when used for population screenings (Larremore et al., 2021) and contact tracing (Quilty et al., 2021); in fact, the viral load threshold of infectiousness is considered to be higher than the detection limits of RT-LAMP tests and rapid antigen tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between viral load and infectiousness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "376a2b40-db00-4abd-9981-69f110a0c896",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C69",
+      "claim": "The WHO recommends isolation for 10 days after symptom onset or a positive test for asymptomatic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "The WHO recommends isolation for 10 days after symptom onset or a positive test for asymptomatic individuals (World Health Organization, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to World Health Organization, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8232b762-6e8d-4adb-abae-641b5231c86a",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C70",
+      "claim": "The ECDC recommends isolation of 10 or 20 days for mild/moderate or severe cases, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The ECDC recommends isolation of 10 or 20 days for mild/moderate or severe cases, respectively, whereas for asymptomatic individuals, 10 days isolation after a positive test is recommended (European Centre for Disease Prevention and Control, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to European Centre for Disease Prevention and Control, 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e29888e9-000e-479c-a494-5671e1aef2e7",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C71",
+      "claim": "For asymptomatic individuals, the ECDC recommends 10 days isolation after a positive test.",
+      "claim_type": "EXPLICIT",
+      "source": "The ECDC recommends isolation of 10 or 20 days for mild/moderate or severe cases, respectively, whereas for asymptomatic individuals, 10 days isolation after a positive test is recommended (European Centre for Disease Prevention and Control, 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to European Centre for Disease Prevention and Control, 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f5674aa4-ab82-4813-afae-c79ed64715fb",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C72",
+      "claim": "The isolation durations actually vary from 7 to 14 days depending on each member state of the European Union.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these durations actually vary from 7 to 14 days depending on each member state of the European Union (European Comission, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to European Comission, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "3a9f1f8a-89e1-4e98-a7c1-a2b773171d67",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C73",
+      "claim": "The number of samples analyzed were relatively small (30 patients).",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of samples analyzed were relatively small (30 patients), they did not cover all age groups, and pertained to symptomatic hospitalized patients only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "7a1b6251-049a-4a53-a3ac-c412fc249d22",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C74",
+      "claim": "The analyzed samples did not cover all age groups.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of samples analyzed were relatively small (30 patients), they did not cover all age groups, and pertained to symptomatic hospitalized patients only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2a829817-245f-4a86-8a62-d46c0afbbf8b",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C75",
+      "claim": "The analyzed samples pertained to symptomatic hospitalized patients only.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the number of samples analyzed were relatively small (30 patients), they did not cover all age groups, and pertained to symptomatic hospitalized patients only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "afca10d6-9a0e-490d-864d-efb2834b82ff",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C76",
+      "claim": "The analyzed data did not allow testing whether the duration of the isolation is influenced by the severity of the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This did not allow us to test whether the duration of the isolation is influenced by the severity of the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "b3b76bd0-6707-48a6-831b-5940c7be5681",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C77",
+      "claim": "The duration of isolation may be shorter than that predicted in this study, as the analyzed samples were composed by hospitalized patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the duration may be shorter than that predicted in this study, as the analyzed samples were composed by hospitalized patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how the findings might differ for other patient populations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "a1391a61-9670-4790-abaa-c5f5a81c34f4",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C78",
+      "claim": "Patients were infected in the early stages of the pandemic and thus likely infected by the historical SARS-CoV-2 lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Still concerning the analyzed sample, it is important to stress that patients were infected in the early stages of the pandemic and thus likely infected by the historical SARS-CoV-2 lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the timing of data collection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "7a42c75b-ae33-4a7b-b08b-70d97be627cb",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C79",
+      "claim": "The authors did not explicitly model the longitudinal clinical course of symptoms in SARS-CoV-2-infected individuals because of the lack of data associating the clinical course with viral load.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we did not explicitly model the longitudinal clinical course of symptoms in SARS-CoV-2-infected individuals because of the lack of data associating the clinical course with viral load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "6a141a2e-adb2-48f8-866c-cacc864bb4a8",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C80",
+      "claim": "10^4.5, 10^5.0, and 10^5.5 copies/mL were used as infectiousness threshold values and were based on epidemiological observations of transmission events from contact tracing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 104.5, 105.0, and 105.5 copies/mL were used and were based on epidemiological observations of transmission events from contact tracing data (Hu et al., 2020; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hu et al., 2020; Sun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "af14ee86-b9d5-4ed3-8c40-2a25811bb4b3",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C81",
+      "claim": "Other studies found that the virus was culturable if the viral load is above 10^6.0 copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, van Kampen et al., 2021; W\u00f6lfel et al., 2020 found that the virus was culturable if the viral load is above 106.0 copies/mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to van Kampen et al., 2021; W\u00f6lfel et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5e001dcd-136f-4ef3-aca9-19849f2443ea",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C82",
+      "claim": "The uncertainty in the infectiousness threshold is reflected in the high variability in the results obtained for the one-size-fits-all approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Such uncertainty is reflected in the high variability in the results obtained for the one-size-fits-all approach; on the other hand, the personalized approach provided stable results with respect to the infectiousness threshold values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how uncertainty in the threshold affects the two approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e38762c6-6a45-497f-8ed3-1a186faf3aee",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C83",
+      "claim": "The personalized approach provided stable results with respect to the infectiousness threshold values.",
+      "claim_type": "EXPLICIT",
+      "source": "Such uncertainty is reflected in the high variability in the results obtained for the one-size-fits-all approach; on the other hand, the personalized approach provided stable results with respect to the infectiousness threshold values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the robustness of the personalized approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f68fe1e3-4575-4041-87cb-f504db756ed7",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C84",
+      "claim": "Arbitrary values for the risk of prematurely ending isolation (namely, 1% or 5%) were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, we considered arbitrary values for the risk of prematurely ending isolation (namely, 1% or 5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological choice in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "4d2ed05e-11eb-42d6-85bc-48216f574fa9",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C85",
+      "claim": "Whether such risks are acceptable depends on several factors such as the epidemiological context, the aim of the adopted policies, and propensity to take risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether such risks are acceptable depends on several factors such as the epidemiological context (e.g. the prevalence of the infection and disease burden), the aim of the adopted policies (e.g. suppression of transmission, mitigation of disease burden), propensity to take risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the context-dependent nature of risk acceptability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "458f33ae-237c-4fa5-9e8f-67d116eeb5fa",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C86",
+      "claim": "If for a certain level of risk, the difference between the personalized and one-size-fits-all approaches is small, the fixed duration approach may have the advantage in terms of simplicity, cost, and resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is worth remarking that, if for a certain level of risk, the difference between the personalized and one-size-fits-all approaches is small, the fixed duration approach may have the advantage in terms of simplicity, cost, and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the practical trade-offs between the two approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "18205c43-3f63-4f06-a16f-5846e45cbdf7",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C87",
+      "claim": "In the personalized approach, qualitative PCR test results only (i.e. whether the viral load is above or below a given threshold) were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that in the personalized approach, we used qualitative PCR test results only (i.e. whether the viral load is above or below a given threshold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological choice in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "ad15108d-0284-4154-877d-c60edf09080e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C88",
+      "claim": "The use of quantitative PCR test results may enable prediction of the optimal day to end isolation for each patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of quantitative PCR test results may enable us to predict the optimal day to end isolation for each patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential improvements to the personalized approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9a4f3268-9042-461a-b4ca-56d90198c876",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C89",
+      "claim": "The timing of the first test does not influence much the findings, as this analysis primarily focuses on the time when the viral load crosses the infectiousness threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "As this analysis primarily focuses on the time when the viral load crosses the infectiousness threshold, we do not expect that the timing of the first test does not influence much our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the robustness of the findings to the timing of testing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "b66a6be4-7ba8-42a3-a498-524bd4afffb5",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C90",
+      "claim": "Starting the tests too early since isolation (or symptom onset) might be impractical and it should be determined based on operational and cost constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "However, starting the tests too early since isolation (or symptom onset) might be impractical and it should be determined based on operational and cost constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about practical considerations for implementing the personalized approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "0e2a5544-c0b3-4d65-b483-9c0bfb904059",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C91",
+      "claim": "The guidelines regulating the length of isolation of COVID-19 patients require further updating following new epidemiologic and clinical knowledge, patient characteristics, and the capability of health sectors.",
+      "claim_type": "EXPLICIT",
+      "source": "The guidelines regulating the length of isolation of COVID-19 patients require further updating following new epidemiologic and clinical knowledge, patient characteristics, and the capability of health sectors, such as test availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the need for ongoing updates to guidelines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "200dc9fa-0642-4146-a435-b6c6da11b95b",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C92",
+      "claim": "In several countries, isolation guidelines have been updated several times throughout the course of the pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in several countries, these guidelines have been updated several times throughout the course of the pandemic (Centers for Disease Control and Prevention, 2020a; European Centre for Disease Prevention and Control, 2020a; Public Health England, 2020) and the emergence of new variants can spark new adjustments in the future as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Centers for Disease Control and Prevention, 2020a; European Centre for Disease Prevention and Control, 2020a; Public Health England, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "25b21367-cf0a-4fb8-8781-3479995f75fb",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C93",
+      "claim": "The emergence of new variants can spark new adjustments to isolation guidelines in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in several countries, these guidelines have been updated several times throughout the course of the pandemic (Centers for Disease Control and Prevention, 2020a; European Centre for Disease Prevention and Control, 2020a; Public Health England, 2020) and the emergence of new variants can spark new adjustments in the future as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "d649dced-df43-469a-ae6a-b658b4a2dada",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C94",
+      "claim": "The proposed modeling framework is very flexible and could be easily adapted to simulate the immune response and effect of antiviral therapies as well as to the study of other infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposed modeling framework is very flexible and could be easily adapted to simulate the immune response and effect of antiviral therapies as well as to the study of other infectious diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the modeling framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e552f49d-d312-4166-a11f-2ba9944bcf32",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C95",
+      "claim": "The modeling framework might prove quite relevant should new SARS-CoV-2 variants show different temporal infectiousness profiles than the historical lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it might prove quite relevant should new SARS-CoV-2 variants show different temporal infectiousness profiles than the historical lineage (Davies et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Davies et al., 2021 and represents speculation about future applications.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2e7269bc-ebd2-4d5e-9f71-5a9ab6ff4d1d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C96",
+      "claim": "Until the vaccination effort successfully suppresses the widespread circulation of SARS-CoV-2, nonpharmaceutical interventions, and patient isolation in particular, will continue to be a primary tool for mitigating SARS-CoV-2 spread.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, until the vaccination effort successfully suppresses the widespread circulation of SARS-CoV-2, nonpharmaceutical interventions, and patient isolation in particular, will continue to be a primary tool for mitigating SARS-CoV-2 spread.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the continued importance of NPIs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5f55768c-7cec-450a-9d5a-40c7f99b922e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C99",
+      "claim": "The study used de-identified secondary data from published studies, and thus ethics approval for this study was not necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the de-identified secondary data from published studies, and thus ethics approval for this study was not necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the ethical considerations for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "108ad480-3a99-4eed-912c-c59e9906f267",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C100",
+      "claim": "A mathematical model of SARS-CoV-2 viral dynamics was developed.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a mathematical model of SARS-CoV-2 viral dynamics (Ikeda et al., 2016; Kim et al., 2020b; Perelson, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ikeda et al., 2016; Kim et al., 2020b; Perelson, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "df9ef1f8-e1fd-41d0-8446-eaa10c44b47d",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C103",
+      "claim": "Model parameters were calibrated by fitting the longitudinal data with a mixed-effect model.",
+      "claim_type": "EXPLICIT",
+      "source": "Model parameters were calibrated by fitting the longitudinal data with a mixed-effect model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "0730a5de-b582-4c29-b645-4c116bb6ef44",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C106",
+      "claim": "The baseline model is one of the simplest models for viruses causing acute respiratory infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The model used here (baseline model) is one of the simplest models for viruses causing acute respiratory infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "d6266db2-77e1-4a78-b6f9-f3cc103a80a3",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C107",
+      "claim": "Using a simple model represents an appropriate baseline choice given that the biological infection process has not been fully understood yet.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the biological infection process has not been fully understood yet, we believe using a simple model represents an appropriate baseline choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the appropriateness of the model choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "abe225fe-6bd7-48d2-ae12-e8cf0a9fe004",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C108",
+      "claim": "Several different models have been used in the literature of SARS-CoV-2 studies including the baseline model.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically in the literature of SAS-CoV-2 studies, several different models have been used including the baseline model (Gon\u00e7alves et al., 2020; Goyal et al., 2020; Goyal et al., 2021; Kim et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gon\u00e7alves et al., 2020; Goyal et al., 2020; Goyal et al., 2021; Kim et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "cda8e858-a926-4af7-acf9-676ec66a4bc6",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C109",
+      "claim": "Two alternative models were considered: the 'eclipse phase' model and the 'innate immune response' model.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, to investigate to what extent the model choice affects our findings, we considered two alternative models: the 'eclipse phase' model (Baccam et al., 2006; Gon\u00e7alves et al., 2020) and the 'innate immune response' model (Baccam et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Baccam et al., 2006; Gon\u00e7alves et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "74377702-d117-4c0a-89e3-07d9ac3bc3c0",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C110",
+      "claim": "In the one-size-fits-all approach, isolation was assumed to end after a fixed time since symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "In the one-size-fits-all approach, we assumed isolation to end after a fixed time since symptom onset, whereas in the personalized approach using PCR tests, isolation ends after obtaining a given number of consecutive negative test results (with a given time interval between the tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8de62ed6-05c9-4189-9c05-71cf67a85c4c",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C111",
+      "claim": "In the personalized approach using PCR tests, isolation ends after obtaining a given number of consecutive negative test results (with a given time interval between the tests).",
+      "claim_type": "EXPLICIT",
+      "source": "In the one-size-fits-all approach, we assumed isolation to end after a fixed time since symptom onset, whereas in the personalized approach using PCR tests, isolation ends after obtaining a given number of consecutive negative test results (with a given time interval between the tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "757b95d6-c038-4f1b-b6bd-38d3daee6145",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C112",
+      "claim": "As the baseline scenario for the one-size-fits-all approach, a fixed time of 10 days was considered.",
+      "claim_type": "EXPLICIT",
+      "source": "As the baseline scenario for the one-size-fits-all approach (here referred to as the 'symptom-based strategy'), we considered a fixed time of 10 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "6f311fac-3115-4feb-ba2d-e748f18f5822",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C113",
+      "claim": "As the baseline scenario for the personalized approach, two consecutive negative test results repeated at a daily interval were considered.",
+      "claim_type": "EXPLICIT",
+      "source": "As the baseline scenario for the personalized approach (here referred to as the 'test-based strategy'), we considered two consecutive negative test results repeated at a daily interval (in agreement with the CDC guidelines [Centers for Disease Control and Prevention, 2020a]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Centers for Disease Control and Prevention, 2020a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "c172bdae-53f4-4a8c-b5f3-54208bc2e754",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C114",
+      "claim": "Testing was assumed to start immediately after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we assumed the testing starts immediately after symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "a86640b5-6dbc-4d85-8818-089c80c62b08",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C115",
+      "claim": "Epidemiological studies based on contact tracing data suggest that infectiousness nearly disappears 8 days after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological studies based on contact tracing data suggest that infectiousness nearly disappears 8 days after symptom onset (Hu et al., 2020; Sun et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hu et al., 2020; Sun et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "0a9f2d51-c83d-4da7-86f8-0259235e4a2b",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C116",
+      "claim": "According to Kim et al., 2020b, the 97.5 percentile of the viral load 8 days after symptom onset is 10^5.0 copies/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "According, to Kim et al., 2020b, the 97.5 percentile of the viral load 8 days after symptom onset is 105.0 copies/mL (Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kim et al., 2020b and Kim et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "65c7c5ed-861d-4e0e-9317-1d880f2a9cc6",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C117",
+      "claim": "10^5.0 copies/mL was used as threshold to define whether a patient is still infectious.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus use 105.0 copies/mL as threshold to define whether a patient is still infectious (i.e. able to transmit the infection).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "0a2b6827-c44c-4ae3-ae80-fc3cffa4e854",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C118",
+      "claim": "Two metrics were computed to evaluate the different strategies: the probability of prematurely ending isolation and the length of unnecessarily prolonged isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate the different strategies, we computed two metrics based on the simulated viral loads: the probability of prematurely ending isolation and the length of unnecessarily prolonged isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "447677bd-dfc2-41f3-97a0-e158e933a5c9",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C119",
+      "claim": "The probability of prematurely ending isolation is the chance that infected patients are released from isolation while they are still infectious.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of prematurely ending isolation is the chance that infected patients are released from isolation while they are still infectious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of one of the metrics used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "1d79e2a1-053a-4a2a-bec2-46b25eede49e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C120",
+      "claim": "The length of prolonged isolation is defined as the difference between the time at which a patient is no longer infectious and the time when her or his isolation ends.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of prolonged isolation is defined as the difference between the time at which a patient is no longer infectious and the time when her or his isolation ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of one of the metrics used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "9ef9e9fd-f58b-47c1-b8d9-4e6224b71075",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C121",
+      "claim": "When the prolonged isolation is negative, it means that the isolation period has ended when the patient is still infectious.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that when the prolonged isolation is negative, it means that the isolation period has ended when the patient is still infectious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how to interpret the metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "31dbf8c8-75d3-487a-a727-06b23988eb6e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C122",
+      "claim": "As sensitivity analyses, the length of isolation in the range of 2 to 20 days was considered for the one-size-fits-all approach.",
+      "claim_type": "EXPLICIT",
+      "source": "As sensitivity analyses, we considered the length of isolation in the range of 2 to 20 days for the one-size-fits-all approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "5299b5f8-912d-4193-8e36-52a739b54b5e",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "claim_id": "C123",
+      "claim": "For the personalized approach, the frequency of testing was considered to vary between 1 and 5 days and the number of consecutive negative test results to vary between 1 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "For the personalized approach, the frequency of testing (i.e. the interval between consecutive tests) was considered to vary between 1 and 5 days and the number of consecutive negative test results to vary between 1 and 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed longitudinal viral load data from 30 hospitalized COVID-19 patients (ages 28-78, even sex ratio) collected from four published studies (three from Asia, one from Europe) during the early pandemic phase (by February 2020). Detection limits ranged from 15.3 to 68 copies/mL, lower than commonly used thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 provide a clear description of the data collection and patient characteristics. The data sources, inclusion criteria, sample size, demographics, and detection limits are explicitly stated and supported by citations to the original studies and Table 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three mathematical models of SARS-CoV-2 viral dynamics were developed and fitted to the data: a baseline model, an 'eclipse phase' model, and an 'innate immune response' model. All three models produced similar results with comparable AIC and BIC values, though the baseline model showed a longer tail due to lower estimated death rate of infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 and C100-C109 describe the modeling approach and model comparison. The claims are supported by Figure 1, Supplementary files 1-2, and citations to prior modeling work. The model selection is justified given uncertainty about biological mechanisms, and the sensitivity analysis across models strengthens the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Under the one-size-fits-all approach with 10 days isolation since symptom onset, the risk of releasing infectious patients was 0.9% (95%CI: 0.6-1.2) with 6.8 days (95% CI: 1-8) of prolonged isolation at the 10^5 copies/mL threshold. The risk varied from 0-6.6% depending on the infectiousness threshold (10^4.5 to 10^5.5 copies/mL), with prolonged isolation ranging from 4.8-8.3 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C37-C40, C55 present the main findings for the one-size-fits-all approach and are supported by modeling results shown in Figure 2. The methodology (C110, C112, C114, C117-C120, C122) is clearly described. Confidence intervals are provided, though the small sample size (30 patients) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "d05ec0fa-9178-4061-9260-91faee21ee22",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under the personalized approach using PCR testing, two consecutive negative tests at 1-day intervals yielded 8.1% (95%CI: 7.2-9.0) risk of premature release with only 1.2 days (95% CI: -1 to 3) prolonged isolation at the 10^5 copies/mL threshold. Three consecutive daily negative tests minimized prolonged isolation (2.3 days, 95% CI: 0-5) while maintaining <5% risk. The personalized approach was robust to infectiousness threshold values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C45, C56 present the main findings for the personalized approach, supported by Figure 3. The methodology (C111, C113, C123) is clearly described. The finding that the personalized approach is less sensitive to threshold values (C45) is logical given direct viral load measurement, though this remains model-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "2cb3e26b-7253-495d-be4d-29104d98f350",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Comparison across approaches and models showed that the personalized approach consistently yielded shorter prolonged isolation than the one-size-fits-all approach and was not influenced by infectiousness threshold values. The one-size-fits-all approach was sensitive to viral load variability, while the personalized approach was sensitive to viral load decay speed. Model choice affected prolonged isolation duration but not the relative advantage of the personalized approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C54 present the comparative analysis between approaches and across models, supported by Figures 4-5. The sensitivity analysis across three models (C49-C52) strengthens the conclusions. The mechanistic explanations for differential sensitivity (C53-C54) are logical inferences from the model structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "f14ef9e9-8e97-44e2-a850-dd231b824f01",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study had several data limitations: small sample size (30 patients), lack of coverage across all age groups, inclusion of only symptomatic hospitalized patients, and data from early pandemic (likely historical SARS-CoV-2 lineages). These limitations prevented testing whether isolation duration is influenced by disease severity and may mean actual isolation durations could be shorter than predicted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 transparently acknowledge important study limitations. These are valid concerns that appropriately qualify the generalizability of the findings. The authors correctly note that hospitalized patients may have longer viral shedding than non-hospitalized patients (C77), and that results may not apply to newer variants (C78).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "766afa67-e79a-42b7-b3fe-0a1b218e7347",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Additional methodological limitations include: lack of explicit modeling of symptom course, uncertainty in infectiousness threshold values (10^4.5-10^5.5 copies/mL based on epidemiological data vs. 10^6 copies/mL from culturability studies), arbitrary risk thresholds (1% or 5%), use of qualitative rather than quantitative PCR results, and assumptions about testing timing. The personalized approach's advantage depends on the acceptable risk level and practical constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C90 provide additional important limitations and caveats. The uncertainty in infectiousness thresholds (C80-C83) is a fundamental challenge acknowledged by the authors. The discussion of arbitrary risk thresholds (C84-C86) and potential improvements (C87-C90) appropriately contextualizes the findings and suggests future research directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Two mainstream isolation guidelines exist: the one-size-fits-all approach (fixed duration, e.g., CDC's 10 days since symptom onset) and the personalized approach (based on repeated PCR testing until viral load drops below threshold). The one-size-fits-all approach does not account for individual variability in viral load, which is associated with disease severity and symptom persistence. International guidelines vary (WHO: 10 days; ECDC: 10-20 days depending on severity; EU member states: 7-14 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C24, C69-C72 provide background on existing isolation guidelines and their limitations. These claims are well-supported by citations to official guidance documents (CDC, WHO, ECDC) and prior research on viral load variability. This contextualizes the study's motivation and relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "COVID-19 reached 80 million cases by end of 2020. NPIs including patient isolation were used extensively and will remain important until vaccination reaches sufficient coverage. Longer isolation decreases transmission risk but increases mental/physical health burden and economic costs. Isolation practices vary by country (home-based in Western countries vs. dedicated facilities in China).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C14 and C96 provide epidemiological and public health context supported by appropriate citations. These establish the importance of the research question and the trade-offs involved in isolation policies. The claims are factually accurate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "8e475473-2f08-46e4-87f0-fada04c485a3",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The personalized approach directly measures viral load via PCR, while the one-size-fits-all approach relies only on time since symptom onset and ignores substantial interindividual viral load variation. The personalized approach can be optimized by adjusting testing schedules but is more costly and logistically challenging, especially in Western countries with home-based isolation. Alternative tests (RT-LAMP, rapid antigen) may help overcome logistic challenges, and saliva-based PCR testing shows promise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C68 discuss practical implementation considerations and are supported by appropriate citations. The discussion of logistic challenges (C61-C62) and potential solutions (C63-C68) is realistic and well-referenced. However, the speculation about future developments (C63) should be validated by future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Isolation guidelines require ongoing updates based on new epidemiological and clinical knowledge, patient characteristics, and health sector capabilities. Guidelines have been updated multiple times during the pandemic and may require further adjustments for new variants. The modeling framework is flexible and could be adapted for other applications including immune response simulation, antiviral therapy effects, and other infectious diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 discuss the need for ongoing guideline updates and potential future applications of the modeling framework. These are reasonable inferences supported by citations documenting guideline evolution (C92) and variant emergence (C93, C95). The claims about framework flexibility (C94-C95) are speculative but plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    },
+    {
+      "id": "1537cc1a-42e8-47cd-a1d9-1359cb6b8f08",
+      "content_id": "a620f803-c076-486b-8439-755267f7ea4e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used de-identified secondary data requiring no ethics approval. The infectiousness threshold of 10^5.0 copies/mL was based on epidemiological studies showing infectiousness nearly disappears 8 days after symptom onset, when the 97.5 percentile of viral load is 10^5.0 copies/mL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99, C115-C116 describe ethical considerations and the rationale for the infectiousness threshold. The threshold choice is supported by citations to epidemiological contact tracing studies (C115) and viral load data (C116), though uncertainty remains as acknowledged elsewhere in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:16:47.258473Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5eef3bd0-8294-435a-89ca-3bc6e3bcc418",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "77d7c197-f15e-482e-97a2-1c0f20b99cb3",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "39b8c7eb-cfb3-4359-b99a-03e4408c1cb5",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "8c1e5686-d946-41cb-9bd3-029b681d426c",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "5a42c48b-8ae7-44c6-b9af-cca5269b7d3e",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "d52f0382-38cb-4c96-b494-8695992090c8",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "fff41c53-b3d7-4757-8f94-d9e8536ee0e8",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "e69a487c-81f1-4c6d-a7bb-33356be07c80",
+      "result_id": "83283c67-2d60-4643-a4ec-bfc5fa2c8509"
+    },
+    {
+      "claim_id": "4bebab3b-606b-4b90-80e1-58ec1255d5d9",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "491115b1-f982-474e-8904-530b378da642",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "00b4800e-0b1b-4826-85c9-0bfd86feffde",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "88dc9eda-0afb-48c3-abd1-42d88b177140",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "108ad480-3a99-4eed-912c-c59e9906f267",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "df9ef1f8-e1fd-41d0-8446-eaa10c44b47d",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "0730a5de-b582-4c29-b645-4c116bb6ef44",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "d6266db2-77e1-4a78-b6f9-f3cc103a80a3",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "abe225fe-6bd7-48d2-ae12-e8cf0a9fe004",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "cda8e858-a926-4af7-acf9-676ec66a4bc6",
+      "result_id": "6b4432c2-9492-47e5-9b51-7bfd098e8d7f"
+    },
+    {
+      "claim_id": "ebfa0c17-1abc-4e43-8168-cacb47dd64a7",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "a260ba12-6f22-4bcd-b89d-99c4839fc06a",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "c7bb55e1-e709-488d-94d0-b83ddabacc19",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "064ca54b-395d-4f32-a75f-f01831130aed",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "55d9d709-21ca-4be7-900e-aa3cf33accdc",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "b0bbce75-fb9d-45bd-9f79-2b202653f63e",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "eabcd3ad-007d-4cb5-b6ca-55e7819b731d",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "74377702-d117-4c0a-89e3-07d9ac3bc3c0",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "757b95d6-c038-4f1b-b6bd-38d3daee6145",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "c172bdae-53f4-4a8c-b5f3-54208bc2e754",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "65c7c5ed-861d-4e0e-9317-1d880f2a9cc6",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "0a2b6827-c44c-4ae3-ae80-fc3cffa4e854",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "447677bd-dfc2-41f3-97a0-e158e933a5c9",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "1d79e2a1-053a-4a2a-bec2-46b25eede49e",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "31dbf8c8-75d3-487a-a727-06b23988eb6e",
+      "result_id": "dd80f821-eb84-423a-ade2-5f2bfcd8d547"
+    },
+    {
+      "claim_id": "07693cb0-db0f-41f5-917f-737d85a26006",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "6c17396f-2d8c-42b9-81a0-3e1377578071",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "b44b1bb5-01b2-4d71-86a4-db536020da16",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "c4434d6d-b866-4770-b999-2ac71c35c671",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "7f729f16-9b70-4d53-a453-fee1286b6d6e",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "e42155d8-ec1b-47f3-89ef-34cad399ea7d",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "e9be86ba-3482-4259-86e0-4dfe1cc43d38",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "8de62ed6-05c9-4189-9c05-71cf67a85c4c",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "6f311fac-3115-4feb-ba2d-e748f18f5822",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "5299b5f8-912d-4193-8e36-52a739b54b5e",
+      "result_id": "d05ec0fa-9178-4061-9260-91faee21ee22"
+    },
+    {
+      "claim_id": "ed05cf6b-c869-43db-b344-f57186696e6c",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "2ec8d787-f201-4f57-b50a-dbbf38fd89f5",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "4c428aaa-d53a-4ef2-95c6-f01e00713dbc",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "7faa2c34-3361-4db0-9d08-b5fc5e71ee5a",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "9558ee4f-8951-4a1b-86b1-9051e9b325d8",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "54c7c6d5-ea60-470b-8a9e-292c9a39f0e5",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "ef94480f-7ceb-4d2f-8061-b4c28617281c",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "bcd54e75-5500-4802-b53e-f37e0b28021d",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "df19243e-776b-4313-b701-dcfa95e8a01d",
+      "result_id": "2cb3e26b-7253-495d-be4d-29104d98f350"
+    },
+    {
+      "claim_id": "3a9f1f8a-89e1-4e98-a7c1-a2b773171d67",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "7a1b6251-049a-4a53-a3ac-c412fc249d22",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "2a829817-245f-4a86-8a62-d46c0afbbf8b",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "afca10d6-9a0e-490d-864d-efb2834b82ff",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "b3b76bd0-6707-48a6-831b-5940c7be5681",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "a1391a61-9670-4790-abaa-c5f5a81c34f4",
+      "result_id": "f14ef9e9-8e97-44e2-a850-dd231b824f01"
+    },
+    {
+      "claim_id": "7a42c75b-ae33-4a7b-b08b-70d97be627cb",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "6a141a2e-adb2-48f8-866c-cacc864bb4a8",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "af14ee86-b9d5-4ed3-8c40-2a25811bb4b3",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "5e001dcd-136f-4ef3-aca9-19849f2443ea",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "e38762c6-6a45-497f-8ed3-1a186faf3aee",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "f68fe1e3-4575-4041-87cb-f504db756ed7",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "4d2ed05e-11eb-42d6-85bc-48216f574fa9",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "458f33ae-237c-4fa5-9e8f-67d116eeb5fa",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "18205c43-3f63-4f06-a16f-5846e45cbdf7",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "ad15108d-0284-4154-877d-c60edf09080e",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "9a4f3268-9042-461a-b4ca-56d90198c876",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "b66a6be4-7ba8-42a3-a498-524bd4afffb5",
+      "result_id": "766afa67-e79a-42b7-b3fe-0a1b218e7347"
+    },
+    {
+      "claim_id": "c0b84c26-c65e-4b53-8530-bd4513ce714a",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "5bcb2aff-a433-4eba-ae2a-0341e6780da5",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "88fb7983-6236-4347-8fb1-47cfc783fdc6",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "780f7615-9be0-4b87-8110-528ac40bc96d",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "2f6d8641-5469-4c0f-8ff0-6e5df19a109f",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "96b399a7-5f55-4a9f-a838-1b8f8e9a4f58",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "1c2efb1f-7d7a-4156-9758-27c610d57063",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "ee83e2c2-4ebe-40d4-a746-381d2c2f3013",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "f5908dd3-9ab9-4b84-a64e-a55aaf388013",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "bd5dd7cf-c7b5-4cc8-a9f6-5e520b5c168f",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "6106481d-773a-4760-bc0f-ba56c5c80ae6",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "376a2b40-db00-4abd-9981-69f110a0c896",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "8232b762-6e8d-4adb-abae-641b5231c86a",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "e29888e9-000e-479c-a494-5671e1aef2e7",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "f5674aa4-ab82-4813-afae-c79ed64715fb",
+      "result_id": "e23c0fa1-5faa-4def-a7ed-93caa7b1b1a1"
+    },
+    {
+      "claim_id": "f7b6094c-875d-47dc-9682-8069b10137f5",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "7e2fa432-3017-4631-8239-59a78bab7ed9",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "4ca1d045-d413-49c8-89af-0810240c5daf",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "f29a07e1-dbb2-47be-93d8-8201a5caaa28",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "140cda2f-4d50-49f3-a74f-f576667fac6f",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "2a179914-fc67-4c07-a9b1-edce657fe9d4",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "9d42b37c-19ef-4b62-9eee-1fa7ed9086d4",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "1707eeb8-7521-4528-8382-eaa10aff6021",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "8d434edd-c227-4e9e-b710-829192cafbab",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "f7d4b97d-d93f-402d-a311-c379905ae6eb",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "2e7269bc-ebd2-4d5e-9f71-5a9ab6ff4d1d",
+      "result_id": "32e4b225-7d57-41d6-ad1b-16d05eb72ab1"
+    },
+    {
+      "claim_id": "3c70204a-1c12-4b8f-aee2-8ea0b0c580ec",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "d6e71877-6700-48d6-80ac-ec1f739eaba3",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "102fd862-183a-49ff-9062-941e284f1509",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "3f510b66-b632-4d8d-8d4e-e0c21f048974",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "4b18b158-7036-4638-871e-00285e3f45da",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "82cbd9d5-844c-41fa-9025-7d7ac30cd9d2",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "5a3e7c36-17ce-42ff-b928-84652d279ee8",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "8283effd-de3f-4bd0-98cd-722f9d890d1d",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "9ceb4070-e03b-44c2-969e-631692d35b90",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "3c4ae105-d97e-4adb-9c46-56443013ba97",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "34a7153f-0c8a-4e74-a82c-361a79f78ac0",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "9a018ccd-4888-4715-b8e1-72dae7b3382c",
+      "result_id": "8e475473-2f08-46e4-87f0-fada04c485a3"
+    },
+    {
+      "claim_id": "0e2a5544-c0b3-4d65-b483-9c0bfb904059",
+      "result_id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9"
+    },
+    {
+      "claim_id": "200dc9fa-0642-4146-a435-b6c6da11b95b",
+      "result_id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9"
+    },
+    {
+      "claim_id": "25b21367-cf0a-4fb8-8781-3479995f75fb",
+      "result_id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9"
+    },
+    {
+      "claim_id": "d649dced-df43-469a-ae6a-b658b4a2dada",
+      "result_id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9"
+    },
+    {
+      "claim_id": "e552f49d-d312-4166-a11f-2ba9944bcf32",
+      "result_id": "bd184f73-500b-4a76-ac54-b1da2e8f5ba9"
+    },
+    {
+      "claim_id": "5f55768c-7cec-450a-9d5a-40c7f99b922e",
+      "result_id": "1537cc1a-42e8-47cd-a1d9-1359cb6b8f08"
+    },
+    {
+      "claim_id": "a86640b5-6dbc-4d85-8818-089c80c62b08",
+      "result_id": "1537cc1a-42e8-47cd-a1d9-1359cb6b8f08"
+    },
+    {
+      "claim_id": "0a9f2d51-c83d-4da7-86f8-0259235e4a2b",
+      "result_id": "1537cc1a-42e8-47cd-a1d9-1359cb6b8f08"
+    }
+  ],
+  "comparisons": []
+}

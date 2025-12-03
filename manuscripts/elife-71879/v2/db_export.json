@@ -1,0 +1,1979 @@
+{
+  "submission": {
+    "id": "e13eef0d-f5ee-4d4e-af77-120827f254d8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:59:52.247753Z",
+    "updated_at": "2025-12-03T07:59:52.247753Z"
+  },
+  "content": [
+    {
+      "id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "submission_id": "e13eef0d-f5ee-4d4e-af77-120827f254d8",
+      "content_type": "manuscript",
+      "content_text": "# Microglia and CD206+ border-associated mouse macrophages maintain their embryonic origin during Alzheimer\u2019s disease\n\n## Authors\n\n- Xiaoting Wu<sup>1</sup> ([ORCID: 0000-0002-0281-8717](https://orcid.org/0000-0002-0281-8717))\n- Takashi Saito<sup>2</sup>\n- Takaomi C Saido<sup>3</sup>\n- Anna M Barron<sup>4</sup>\n- Christiane Ruedl<sup>1</sup> ([ORCID: 0000-0002-5599-6541](https://orcid.org/0000-0002-5599-6541)) \u2020\n\n### Affiliations\n\n1. School of Biological Sciences, Nanyang Technological University Singapore Singapore\n2. Department of Neurocognitive Science, Institute of Brain Science, Nagoya City University Graduate School of Medical Sciences Nagoya Japan\n3. Laboratory for Proteolytic Neuroscience, RIKEN Center for Brain Science Wako-Shi Japan\n4. Lee Kong Chian School of Medicine, Nanyang Technological University Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain microglia and border-associated macrophages (BAMs) display distinct spatial, developmental, and phenotypic features. Although at steady state, the origins of distinct brain macrophages are well-documented, the dynamics of their replenishment in neurodegenerative disorders remain elusive, particularly for activated CD11c+ microglia and BAMs. In this study, we conducted a comprehensive fate-mapping analysis of murine microglia and BAMs and their turnover kinetics during Alzheimer\u2019s disease (AD) progression. We used a novel inducible AD mouse model to investigate the contribution of bone marrow (BM) cells to the pool of fetal-derived brain macrophages during the development of AD. We demonstrated that microglia remain a remarkably stable embryonic-derived population even during the progression of AD pathology, indicating that neither parenchymal macrophage subpopulation originates from, nor is replenished by, BM-derived cells. At the border-associated brain regions, bona fide CD206+ BAMs are minimally replaced by BM-derived cells, and their turnover rates are not accelerated by AD. In contrast, all other myeloid cells are swiftly replenished by BM progenitors. This information further elucidates the turnover kinetics of these cells not only at steady state, but also in neurodegenerative diseases, which is crucial for identifying potential novel therapeutic targets.\n\n## Introduction\n\nMicroglia are brain parenchymal macrophages that are unique among tissue-resident macrophages due to their primitive yolk sack origin, self-renewal properties (Ajami et al., 2007), and independence from adult hematopoiesis (Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015). These cells are essential for normal neuronal development, brain function, and central nervous system (CNS) homeostasis, and dysfunction is associated with severe brain neuropathologies (Leng and Edison, 2021; Sevenich, 2018). In neurodegenerative diseases, such as Alzheimer\u2019s disease (AD), microglia form a barrier around amyloid plaques, thereby protecting against the neurotoxicity of aggregated beta-amyloid (A\u03b2) (Condello et al., 2015). Disruption of microglial activity, which is often related to aging and inflammation, can promote this neurotoxicity (Salter and Stevens, 2017) and affect the clearance of A\u03b2 aggregates (Floden and Combs, 2011). The resulting increase in plaque formation (Spangenberg et al., 2019) leads to the progression of pathogenesis.\n\nIn several neurodegenerative diseases, the gradual appearance of a subpopulation of CD11c+ activated microglia, also known as disease-associated microglia or neurodegenerative microglia, correlates with the progression of disease pathology (Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017). In AD, the accumulation of these highly phagocytic cells around the A\u03b2 deposits (Kamphuis et al., 2016; Yin et al., 2017) mitigates A\u03b2-associated tau seeding and spreading (Gratuze et al., 2021). These activated microglia may play a protective role in neurodegeneration, thus implicating targeted manipulation as a therapeutic strategy. Although the origin of the myeloid cells that accumulate around the A\u03b2 deposits is controversial, early studies indicated selective migration of monocytic cells toward the A\u03b2 plaques (Hohsfield and Humpel, 2015), while more recent research suggests that these cells are derived from resident embryonic-derived microglia (Reed-Geaghan et al., 2020; Shukla et al., 2019).\n\nIn addition to the macrophages in brain parenchyma, microglia-independent macrophages are also found at the border regions, such as the subdural meninges (SDM), including the pia and arachnoid mater, the dura mater (DM), and the choroid plexus (CP) (Brioschi et al., 2020; Utz et al., 2020). Single-cell RNAseq analysis revealed that these border-associated macrophages (BAMs) represent a family of different subpopulations (Van Hove et al., 2019). However, the contributions of BAMs to CNS integrity and neurodegeneration remain to be elucidated.\n\nTo investigate the influence of AD on the macrophage CNS landscape, we analyzed the phenotype and turnover kinetics of different myeloid cells in the brain parenchyma and border-associated tissues. We used a novel AD mouse model generated by back-crossing AppNL-G-F knock-in (APP-KI) mice (Saito et al., 2014) with a KitMerCreMer/R26YFP fate-mapping mouse strain (Sheng et al., 2015) to monitor bone marrow (BM)-driven replenishment of brain myeloid cells during disease progression. We also investigated the origins of CD11c+ microglia since the ontogeny of \u2018activated\u2019 microglia in AD is still a matter of debate.\n\n## Results and discussion\n\nIn this study, we conducted a comprehensive fate-mapping analysis of murine brain microglia and BAMs and their turnover kinetics during the progression of AD.\n\nMouse models of AD have been instrumental in clarifying the cellular and molecular mechanisms underlying this irreversible brain disorder. Transgenic mice overexpressing proteins linked to familial AD (5xFAD), single mutant amyloid precursors (APP), or double mutant APP and presenilin (APP-PS1) have been used in many studies (Sasaguri et al., 2017). In our study, we exploited an APP-KI mouse strain expressing a mutant form of humanized APP, the parent protein of A\u03b2, knocked in under the control of the endogenous promoter. This model avoids some disadvantages associated with transgenic APP models, including artifacts caused by overexpression of other APP fragments in addition to A\u03b2, non-physiological cell-type expression, and potential insertion site disruption (Saito et al., 2014). The APP-KI mouse line expresses three human AD-associated mutations that promote the progressive accumulation of A\u03b2 through its increased production of A\u03b2, particularly the more toxic A\u03b242 form, as well as increasing A\u03b2 aggregation and reducing degradation. APP-KI mice develop progressive A\u03b2 accumulation from 2 months of age, thus mimicking several aspects of human AD, including microgliosis and synaptic loss (Figure 1\u2014figure supplement 1A).\n\nFirst, we characterized the myeloid cell landscape in different brain regions of healthy young WT and APP-KI mice (2 months) as well as aged WT and APP-KI mice (12 months) (Figure 1\u2014figure supplement 2). In our multiparameter flow cytometry and uniform manifold approximation and projection analyses, we included a panel of myeloid markers to delineate microglia, activated CD11c+ microglia, monocyte-derived macrophages (MdCs), F4/80intCD11a+ infiltrating macrophages (Shukla et al., 2019), border-associated macrophages (BAMs), neutrophils, monocytes and, eosinophils.\n\nP2RY12+ microglia were the main CD45int F4/80hi cell population in the brain parenchyma of all mice and their absolute numbers are significantly enhanced in brains of 12-month-old APP-KI mice due to microgliosis occurring during the development of AD (Sevenich, 2018). AD mice showed also a substantial increase in the absolute numbers of P2RY12lowCD11c+ activated microglia, which were absent in the brain of young mice and constituted only a minor fraction in aged mice (Figure 1A\u2013C and E). Immunofluorescent analysis showed that CD11c+ activated microglia aggregate around A\u03b2 amyloid plaques (Figure 1D) In accordance with reports of the appearance of activated microglia during neurodegeneration in other AD transgenic mouse models, such as 5xFAD and APP/PS1 (Keren-Shaul et al., 2017; Mrdjen et al., 2018), this phenotype was recapitulated in APP-KI mice in our study (Figure 1\u2014figure supplement 1B,C). The remaining myeloid cell subsets detected in the brain parenchyma, such as neutrophils (Ly6G+), monocytes (Ly6Chi), F4/80int Ly6CnegMHCIIhi MdCs, peripheral-derived myeloid F4/80intMHCII\u2212CD11a+ cells (Shukla et al., 2019), eosinophils (Siglec-F+), and cDCs (CD11chiMHCIIhi), were mainly restricted to the CD45hi gate (Figure 1A). Surprisingly, we did not observe an enhanced infiltration of BM-derived inflammatory cells in the brain during disease progression. Even in aged APP-KI mice, the infiltration by Ly6Chi monocytes and Ly6G+ neutrophils was comparable to that in age-matched controls (Figure 1A\u2013B and E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative gating strategy used to visualize distinct myeloid cell subpopulations in young WT (aged 2 months), WT (aged 12 months), and diseased APP-KI (aged 12 months) mice. Microglia: CD45intF4/80hiP2RY12+CD11c\u2212; activated microglia: CD45intF4/80hiP2RY12lowCD11c+; cDCs: CD45hiCD11chiMHCII+; neutrophils: CD45hiCD11bhiLy6G+; monocytes: CD45hiF4/80intCD11bintLy6C+MHCII\u2212; monocyte-derived macrophages (MdCs): CD45hiF4/80intCD11bintLy6C\u2212MHCII+; CD11a+ cells: CD45hiF4/80intCD11bintLy6C\u2212MHCII\u2212CD11a+ and eosinophils: CD45hiF4/80intCD11bintSiglec-F+. (B) UMAP analysis displaying 30,000 randomly sampled cells from young WT, aged WT, and APP-KI mouse brains analyzed by multicolor flow cytometry (n=3 mice/group). (C) Heatmap demonstrating the mean fluorescent intensity of 10 myeloid lineage markers across eight different brain parenchyma myeloid cell populations. The color in the heatmap varies from blue for lower expression to red for higher expression. (D) Representative confocal image of Iba-1+ (red), CD11c+ (green) microglia accumulating around A\u03b2 plaques (white) in a 12-month-old APP-KI mouse brain. Blue visualizes DAPI positive nuclei. Scale bar, 20 \u03bcm. (E) Bar charts with individual dots illustrating the absolute numbers of different myeloid cell populations within the total parenchymal brain CD45+ cell population. Each dot represents the percentage of cells obtained from one brain (n=4 mice/group). Young mice: gray, aged mice: blue, and APP-KI mice: red. Samples were analyzed by two-way ANOVA. **p<0.01; ***p<0.001; ****p<0.0001. For clarity, non-significant values are not shown. AD, Alzheimer\u2019s disease.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of distinct stages during the progression of AD in the experimental APP-KINL-G-F transgenic mouse model. (B) Representative flow cytometric analysis showing disease-associated microglia at different stages of AD progression (3, 6, and 9 months) in WT and APP-KI mice. Dot plots showing CD11c on the x-axis and PR2Y12 on the y-axis. (C) Bar charts with individual data points representing activated CD11c+ microglia obtained from WT mice (red dots) and APP-KI mice (blue dots) aged 3, 6, and 9 months. Statistical significance was determined using unpaired Student\u2019s t-test; ****p<0.0001. AD, Alzheimer\u2019s disease.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative gating strategy used to visualize distinct myeloid cell subpopulations in young APP-KI (aged 2 months). Microglia: CD45intF4/80hiP2RY12+CD11c\u2212; activated microglia: CD45intF4/80hiP2RY12lowCD11c+; cDCs: CD45hiCD11chiMHCII+; neutrophils: CD45hiCD11bhiLy6G+; monocytes: CD45hiF4/80intCD11bintLy6C+MHCII\u2212; monocyte-derived macrophages (MdCs): CD45hiF4/80intCD11bintLy6C\u2212MHCII+; CD11a+ cells: CD45hiF4/80intCD11bintLy6C\u2212MHCII\u2212CD11a+ and eosinophils: CD45hiF4/80intCD11bintSiglec-F+. (B) Bar charts with individual dots illustrating the absolute numbers of different myeloid cell populations within the total parenchymal brain CD45+ cell population of young WT and APP-KI (2 months). Each dot represents the percentage of cells obtained from one brain (n=5 mice/group). Statistical significance was determined using unpaired Student\u2019s t-test; For clarity, non-significant values are not shown.\n\nIn all three separately analyzed CNS border-associated tissues, a predominant F4/80hiCD206+ BAM fraction could be further separated into MHCII+ and MHCIIlow subpopulations, which is consistent with previous reports (Van Hove et al., 2019; Figure 2A\u2013D, Figure 2\u2014figure supplement 1). A large population of CD206+MHCIIlow BAMs was preferentially localized in the SDM and CP, whereas these cells were less abundant in the DM. Interestingly, a significant transition from CD206+MHCIIlow to CD206+MHCII+ BAMs was observed with aging and AD progression (Figure 2B and C). Similarly, increased MHCII+ CNS-associated macrophages were also observed during EAE induced neuroinflammation (Jordao et al., 2019). All other myeloid cell populations, including neutrophils, monocytes, MdCs, CD11a+ cells, eosinophils, and DCs, were present in each tissue, although at different frequencies (Figure 2A\u2013D, Figure 2\u2014figure supplements 1 and 2). Similar to the brain parenchyma, monocyte and neutrophil frequencies were not augmented in any of the three border regions of the aged WT and APP-KI mice, which excludes the possibility that an enhanced inflammatory cell infiltration is caused by aging or neurodegenerative disease progression (Figure 2A\u2013C, Figure 2\u2014figure supplements 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative gating strategy used to visualize distinct myeloid cell subpopulations in the dura mater (DM), subdural meninges (SDM), and choroid plexus (CP). Young WT mice (aged 2 months) were analyzed. Cell classification as shown in the legend of Figure 1. (B) UMAP analysis displaying 8500 (DM), 13,000 (SDM), and 3700 (CP) randomly sampled cells from young WT, aged WT, and aged APP-KI DM, SDM, and CP analyzed by multicolor flow cytometry (n=9 mice). (C) Violin plots with individual dots illustrating the frequency of BAMs (CD206+MHCIIlow and CD206+MHCII+), Mdc, and monocytes within the total non-parenchymal CD45+ cell population of the DM, SDM, and CP. Young mice: gray, aged mice: blue, and APP-KI mice: red. Each dot represents the percentage of cells obtained from pooled border regions (n=2\u20133 pooled mice). Samples were analyzed by two-way ANOVA. *p<0.05; **p<0.01. For clarity, non-significant values are not shown. (D) Heatmap demonstrating the mean fluorescent intensity of 10 myeloid lineage markers across eight different myeloid cell populations in DM, SDM, and CP. The colour in the heatmap varies from blue for lower expression to red for higher expression. AD, Alzheimer\u2019s disease; UMAP, uniform manifold approximation and projection.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative gating strategy used to visualize distinct myeloid cells subpopulations in the dura mater (DM), subdural meninges (SDM), and choroid plexus (CP) of WT and APP-KI mice aged 12 months. Cell classification as shown in the legend of Figure 1. AD, Alzheimer\u2019s disease.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Young mice: gray, aged mice: blue, and APP-KI mice: red. Each dot represents the percentage of cells obtained from pooled border regions (n=2\u20133 pooled mice). Samples were analyzed by two-way ANOVA. *p<0.05; For clarity, non-significant values are not shown. CP, choroid plexus; DM, dura mater; SDM, subdural meninges.\n\nTo investigate the origins and replenishment kinetics of distinct brain macrophage subpopulations, we crossed the APP-KI mouse line with the KitMerCreMer/R26YFP fate-mapping mouse strain. The resulting APP-KI/KitMerCreMer/R26YFP inducible adult fate-mapping mouse model allowed us to irreversibly label Kit-expressing BM-progenitors and trace them in different brain regions during the progression of AD. To induce the YFP label in Kit-expressing BM progenitor cells, APP-KI/KitMerCreMer/R26YFP mice and the corresponding KitMerCreMer/R26YFP controls were administered TAM at 2, 4, 6, and 8 months of age. Parenchymal and non-parenchymal brain cells were isolated separately and analyzed by multicolor flow cytometry.\n\nIn the parenchyma of 10-month-old mice, a strong YFP signal was limited to CD45hi cells and was barely detectable in the CD45int fraction, which included the microglia and activated CD11c+ microglia, in both WT and AD mice (Figure 3A\u2013C). In fact, microglia showed minimal YFP-labeling, which further confirmed their embryonic origin and BM-independence (Sheng et al., 2015). During AD progression, microglial YFP-labeling remained minimal, indicating that the ongoing neurodegeneration did not promote their replenishment by BM-derived cells. Similarly, activated CD11c+ microglia, which were increasingly formed during AD progression (Figure 1\u2014figure supplement 1B-C), maintained a low YFP-labeling profile, suggesting that despite their phenotypic shift, these cells preserved their embryonic signature and were not replaced by BM-derived cells during evolution of the disease (Figure 3A\u2013C). Differently, the kinetics of monocyte replacement was extremely rapid, with all monocytes YFP-labeled 2 months after induction, indicating that these cells are exclusively BM-derived (Figure 3A and B, lower panel, middle). In contrast, fetal-derived MdCs were gradually replaced by BM-derived cells over time and were fully replenished at 8 months post-induction, with no significant difference between WT and AD mice (Figure 3A and B, lower panel, left). Likewise, CD11a+ macrophages were clearly BM-derived and showed high YFP-labeling and turnover kinetics comparable to monocytes and neutrophils (Figure 3A and B, lower panel, right).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig3-v2.jpg)\n\n**Figure 3.:** KitMerCreMer/R26YFP and APP-KI/ KitMerCreMer/R26YFP mice (aged 2, 4, 6, and 8 months) received 4 mg tamoxifen (TAM) by oral gavage for 5 consecutive days and were sacrificed at 10 months of age. (A) Representative flow cytometry contour plots indicating the YFP-labeling of parenchymal microglia, activated CD11c+ microglia, MdCs, CD11a+ cells, monocytes, and neutrophils obtained from KitMerCreMer/R26YFP and APP-KI/KitMerCreMer/R26YFP mice ( 8-month labeled mice). (B) Bar charts with individual data points showing the percentage of YFP+ parenchymal microglia, activated CD11c+ microglia, MdCs, monocytes, and CD11a+ cells obtained from KitMerCreMer/R26YFP (red bars) and APP-KI/KitMerCreMer/R26YFP mice (blue bars) after normalization to the percentage of YFP+ neutrophils. Data represent the mean\u00b1 SD (n=5 mice). Student\u2019s t-test (two-tailed). For clarity, non-significant values are not shown. (C) UMAP representation showing the YFP-labeled myeloid cell populations in green and the YFP-negative fraction in blue. (D) Embryonic fate-mapping. A single pulse of tamoxifen was administered to APP-KI/KitMercreMer/R26YFP pregnant mice at E7.5. Offspring were analyzed at 9 months of age. Bar charts with individual data show the percentages of YFP-labeled parenchymal microglia, activated CD11c+ microglia, MdCs, monocytes, CD11a+ cells and neutrophils. Data represent the mean\u00b1 SD (n=4 mice). UMAP, uniform manifold approximation and projection.\n\nTo verify whether activated CD11c+ microglia retained their fetal lineage, we performed E7.5 embryonic labeling of APP-KI/KitMerCreMer/R26YFP mice and analyzed microglia and activated CD11c+ microglia obtained from disease-affected offspring aged 9 months. Despite the AD-associated pathology, we not only confirmed that activated CD11c+ microglia maintained their embryonic origin, but showed that microglia and activated CD11c+ microglia share the same yolk sac origin, whereas all other tested myeloid cells (monocytes, Mdc, CD11a+ macrophages, and neutrophils) did not arise from embryonic progenitors of the yolk sac (Figure 3D).\n\nUsing our fate-mapping mouse model, we then analyzed myeloid cells residing in distinct CNS border-associated regions. In adult fate-mapping, non-parenchymal monocytes, MdCs, and CD11a+ macrophages were swiftly replaced by BM cells, with 100% YFP-positivity at 2 months post-induction (Figure 4, right, Figure 4\u2014figure supplement 1). In contrast, both CD206+ BAM subpopulations showed weaker YFP-labeling compared to other macrophages such as MdCs, which were already fully replenished within 2 months in all three regions (Figure 4). In the DM, YFP-labeling was significantly higher in CD206+MHCII+ BAMs than that in CD206+MHCIIlow BAMs (Figure 4, upper panel). Dural CD206+MHCII+ BAMs were characterized by a slow, but consistent BM-cell replacement over time, reaching approximately 35% YFP-positivity by 8 months post-induction. In contrast, the turnover rate of both BAM populations located in the SDM was markedly slower (Figure 4, middle panel), which suggests that their niche is less accessible to BM-dependent replenishment. With its fenestrated blood vessels, the DM has a greater capacity to support peripheral cell traffic. In addition, skull BM-derived monocytes, which seed DM through tiny vascular connecting corridors (Cugurra et al., 2021), can also contribute to the refilling of dural BAMs. In contrast, the strong tight junctions of the blood vessels in the SDM limit cell exchange with the periphery (Mastorakos and McGavern, 2019). Previous studies have shown a rapid BAM turnover in the CP supported by partial input from the circulation (Goldmann et al., 2016; Van Hove et al., 2019). However, although both MHCIIlow and MHCII+CD206+ BAMs displayed a dual origin in our fate-mapping mouse model, their replenishment from BM-derived cells was extremely slow, with the YFP signal reaching only 10\u201315% by 8 months after induction. More than 85% of CP BAMs retained their embryonic phenotype (Figure 4, lower panel). Consistent with the lowest levels of YFP labeling observed in MHCIIlowCD206+ BAMs located in SDM and CP (Figure 4, left panels) we found a significantly increased YFP labeling only in this particular BAM subpopulation obtained from the progeny of E7.5 TAM-treated mice (SDM MHCIIlowCD206+ BAMs: 10%; CP MHCIIlowCD206+ BAMs: 15%) (Figure 4\u2014figure supplement 2). These data indicate that some of these SDM and CP MHCIIlowCD206+ BAMs are descendants of yolk sac precursors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig4-v2.jpg)\n\n**Figure 4.:** Mice were treated and analyzed as described in the legend of Figure 3. Bar charts with individual data points showing the percentages of YFP+ non-parenchymal BAMs (CD206+MHCIIlow and CD206+MHCII+ cells) and MdCs obtained from KitMerCreMer/R26YFP (red bars) and APP-KI/KitMerCreMer/R26YFP mice (blue bars) after normalization to the percentage of YFP+ neutrophils. Upper panel: DM; middle panel: SDM; and lower panel: CP. Data represent the mean\u00b1 SD (n=4 samples of 2\u20133 pooled mice). Student\u2019s t-test (two-tailed). For clarity, non-significant values are not shown. AD, Alzheimer\u2019s disease; CP, choroid plexus; DM, dura mater; MdC, monocyte-derived macrophage; SDM, subdural meninges.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Data represent the mean\u00b1 SD (n=4 samples of 2\u20133 pooled mice). Student\u2019s t-test (two-tailed). For clarity, non-significant values are not shown. Mice were treated and analyzed as described in the legend of Figure 3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71879/elife-71879-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Bar charts with individual data show the percentages of YFP-labeled non-parenchymal BAMs (CD206+MHCIIlow and CD206+MHCII+ cells), MdCs, CD11a+ cells, monocytes, and neutrophils. Data represent the mean\u00b1 SD (n=4 samples of 2\u20133 pooled mice). Samples were analyzed by two-way ANOVA. *p<0.05; **p<0.01; ***p<0.001. For clarity, non-significant values are not shown. BAM, border-associated macrophage; MdC, monocyte-derived macrophage.\n\nThe lack of a significant difference in the YFP-labeling profiles of BAMs from healthy or AD mice indicates that the development of AD neither supports nor accelerates BAM replacement by BM-progenitors (Figure 4).\n\nThe contribution of monocytes to the pool of microglia is still unclear. The monocyte-to-microglia transition occurs in the brain, but only under certain conditions of inflammation or injury, such as meningitis (Djukic et al., 2006) and neonatal stroke (Chen et al., 2020). However, the original yolk sac embryonic microglia identity is preserved during experimental autoimmune encephalomyelitis (Ajami et al., 2011; Jordao et al., 2019), although infiltrating monocytes are recruited to the brain during the progression of this neuroinflammatory disease. In an elegant parabiosis experiment using two different mouse models of AD (APPPS1-21 and 5xFAD), it was shown that peripheral monocytes do not contribute to the microglial pool surrounding the A\u03b2plaques (Wang et al., 2016). Here, we extended our analysis and demonstrated that, in the steady state, microglia, activated CD11c+ microglia and BAMs are a remarkably stable embryonic-derived population and their turnover remains unaffected in AD; the progression of this neurodegenerative disease does not promote or sustain their replacement by BM-derived progenitors. Furthermore, we confirmed that the transformation from homeostatic microglia to activated CD11c+ microglia is not mediated by infiltrating inflammatory BM-marrow derived cells, but imprinted by the local brain microenvironment that is severely perturbed by the AD pathology. This new understanding will be valuable in manipulating the transition of microglia to activated microglia as a therapeutic strategy in AD.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD45(rat, monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 748719; RRID:AB_2873123</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Siglec-F(rat, monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 746668; RRID:AB_2743940</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11b(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 101226; RRID:AB_830642</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11b(rat, monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 565976; RRID:AB_2738276</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-F4/80(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 123110; RRID:AB_893486</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-F4/80 (rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 123114; RRID:AB_893490</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ly6c(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 128030; RRID:AB_2562617</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-I-A/I-E(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 107636; RRID:AB_2734168</td>\n      <td>FACS (1:1000; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11c(hamster, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 117318; RRID:AB_493568</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11c(hamster, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 117336; RRID:AB_2565268</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-P2RY12(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 848006; RRID:AB_2721469</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11a(rat, monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: 48-0111-82; RRID:AB_11064445</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD206(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 141734; RRID:AB_2629637</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ly6G(rat, monoclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 127606; RRID:AB_1236494</td>\n      <td>FACS (1:600; 100 \u03bcl per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Iba-1(rabbit, polyclonal)</td>\n      <td>Fujifilm Wako Shibayagi</td>\n      <td>Cat#: 019-19741; RRID:AB_839504</td>\n      <td>IHC (1:200; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD11c(hamster, monoclonal)</td>\n      <td>Self-made</td>\n      <td>N/A</td>\n      <td>IHC (1:100; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-amyloid beta (mouse, monoclonal)</td>\n      <td>IBL-Immuno-Biological-Laboratories Co.</td>\n      <td>Cat#: 10323; RRID:AB_10707424</td>\n      <td>IHC (1:200; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IgG(goat, polyclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 405502RRID:AB_315020</td>\n      <td>IHC (1:200; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IgG(donkey, polyclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 406418RRID:AB_2563306</td>\n      <td>IHC (1:200; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-IgG(goat, polyclonal)</td>\n      <td>BioLegend</td>\n      <td>Cat#: 405308RRID:AB_315011</td>\n      <td>IHC (1:200; 100 \u00b5l per test)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti CD16/32(rat, monoclonal)</td>\n      <td>Self-made</td>\n      <td>N/A</td>\n      <td>Blocking step (1:100; 1000 \u03bcl per sample)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: D1306</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Collagenase D</td>\n      <td>Roche</td>\n      <td>Cat#: 11088882001</td>\n      <td>1 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dispase II</td>\n      <td>Gibco</td>\n      <td>Cat#: 17105041</td>\n      <td>2 U/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DNase</td>\n      <td>Roche</td>\n      <td>Cat#: 04536282001</td>\n      <td>2 U/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, drug</td>\n      <td>Percoll</td>\n      <td>Merck</td>\n      <td>Cat#: P4937-500ML</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Progesterone</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: P0130</td>\n      <td>1 mg/mouse</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tamoxifen</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: T5648</td>\n      <td>For adult labeling, 4 mg TAM for 5 consecutive days by oral gavage; For embryo labeling, pregnant mice (E7.5) were injected via oral gavage once with 2 mg TAM</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IMDM</td>\n      <td>ThermoFisher Scientific</td>\n      <td>Cat#: 12440046</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo</td>\n      <td>TreeStar</td>\n      <td>FlowJo 10.6RRID:SCR_008520</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>GraphPad Software</td>\n      <td>GraphPad 9.0RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>APPNL-G-F(called APP-KI)</td>\n      <td>Japan Saito et al., 2014</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>KitMerCreMer/Rosa26-LSL-eYFP (called KitMerCreMer/R26YFP)</td>\n      <td>Nanyang Technological University, Singapore Sheng et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>APP-KI/ KitMerCreMer/R26YFP</td>\n      <td>Nanyang Technological University, Singapore</td>\n      <td>Described here</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mice\n\nFate-mapping KitMerCreMer/R26YFP mice were generated as previously described (Sheng et al., 2015). The KitMerCreMer/R26YFP fate-mapping mouse line was crossed with the AD mouse model (APPNL-G-F), a knock-in mouse line that co-expresses the Swedish (KM670/671 NL), Beyreuther/Iberian (I716F), and Arctic (E693G) mutations and mimics AD-associated pathologies, including amyloid plaques, synaptic loss, and microgliosis as well as astrocytosis (Saito et al., 2014); the generated mouse line was designated APP-KI/KitMerCreMer/R26YFP. Mice were bred and maintained in a specific pathogen-free animal facility at the Nanyang Technological University (Singapore). All animal studies were carried out according to the recommendations of the National Advisory Committee for Laboratory Animal Research and ARF SBS/NIE 18081, and 19093 protocols were approved by the Institutional Animal Care and Use Committee of the Nanyang Technological University.\n\n### Tamoxifen-inducible embryonic and adult fate-mapping mouse model\n\nKitMerCreMer/R26YFP and APP-KI/KitMerCreMer/R26YFP fate-mapping mice were used to determine the turnover rates of distinct brain macrophages under normal steady-state or diseased conditions. For adult labeling, a total of 4 mg tamoxifen (TAM) (Sigma-Aldrich, St. Louis, MO) per mouse was administered for 5 consecutive days by oral gavage as previously described (Sheng et al., 2015). Mice were sacrificed at different time points for brain collection, subsequent cell isolation, and multiparameter flow cytometric cell analysis. For embryonic labeling, KitMerCreMer/R26YFP and APP-KI/KitMerCreMer/R26YFP fate-mapping mice were mated overnight and separated early the next morning. Pregnant mice (E 7.5) received one dose of 2 mg TAM with 1 mg progesterone via oral gavage.\n\n### Isolation of microglia and border-associated macrophages\n\nBrains were removed and DM, SDM, and CP were carefully separated from the brain parenchyma. For the DM isolation, the dorsal part of the skull was removed and the dura was peeled away from the skull cap and placed in 2% fetal bovine serum (FBS) in Iscove\u2019s modified Dulbecco\u2019s medium (IMDM). The SDM was micro-dissected using micro suture forceps and placed on ice-cold 2% FBS IMDM. For collection of the CP, the ventricles were exposed and the CP was carefully micro-dissected from the lateral ventricles and placed on 2% FBS IMDM.\n\nAll tissues were cut into small pieces, which were subsequently incubated with digestion buffer (IMDM supplemented with 2% FBS, 1 mg/ml Collagenase D [Roche], 2 U/ml DNase I [Life Technologies], and Dispase II [Roche]). The digested brain parenchyma, DM, SDM, and CP were separately homogenized with a syringe and the resulting homogenous cell suspensions were filtered through a 40 \u03bcm cell strainer. Only the parenchyma cells were resuspended in a 40% Percoll (GE Healthcare Life Sciences) and centrifuged at 700\u00d7g for 10 min. All obtained cell pellets were resuspended in 0.89% NH4CL lysis buffer for 5 min at room temperature (RT) to remove contaminating red blood cells. After centrifugation at 350\u00d7g for 5 min, the supernatant was discarded and cell pellets were collected for flow cytometry staining.\n\n### Flow cytometry staining\n\nIsolated cells were pre-incubated with 10 \u03bcg/ml anti-Fc receptor antibody (2.4G2) on ice for 20 min. Subsequently, cells were stained with different antibodies for 20 min on ice. After washing, cells were further stained with DAPI to exclude dead cells. Finally, cells were washed and resuspended in PBS/2% FBS for analysis on a five-laser flow cytometer (FACSymphony A3 Cell Analyser, BD Biosciences, San Jose, CA). Data were analyzed with FlowJo software (TreeStar, Ashland, OR).\n\n### Immunofluorescence staining and microscopy\n\nMice were perfused with 10 ml 1\u00d7 PBS and 20 ml 4% paraformaldehyde (PFA). After extraction, the brains were post-fixed with 4% PFA for 24 hr. Tissues were then transferred to 15% sucrose solution for 24 hr, followed by immersion in 30% sucrose solution for another 24 hr. After that, the brains were then embedded in the Optimal cutting temperature compound and cut into 5 \u03bcm thick sections. For the immunofluorescence staining, sections were dried at 37\u00b0C for 10 min, then wash with 1\u00d7 PBS at RT for 5 min. Sections were incubated with 5% BSA at RT for 30 min, followed by primary antibody staining at 4\u00b0C for overnight (mouse anti-82E1 [1:200], hamster anti-CD11c [1:100], and rabbit anti-Iba-1 [1:200]), three times washings with 1\u00d7 PBS and an incubation with the correspondent secondary antibodies (Goad anti-hamster FITC [1:200], Donkey anti-rabbit Alexa Fluor 594 [1:200], and Goat anti-mouse APC [1:200]). Stained sections were then incubated with DAPI for 10 min and mounted with fluorescence mounting medium and visualized by fluorescent microscopy (Zeiss). Images were post-processed by Zen software.\n\n### Statistical analysis\n\nStatistical analysis was performed using GraphPad Prism 9.0.1 software (GraphPad Software, La Jolla, CA). All values were expressed as the mean\u00b1 standard deviation as indicated in the figure legends. Samples were analyzed by Student\u2019s t-test (two-tailed) or two-way ANOVA. A p-value <0.05 was considered to indicate statistical significance. The number of animals used per group is indicated in the figure legends as \u2018n\u2019.\n",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "a09de21d-fad0-4da1-afe4-da1a24408f5a",
+      "submission_id": "e13eef0d-f5ee-4d4e-af77-120827f254d8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Simon Yona, The Hebrew University of Jerusalem Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71879.sa1](https://doi.org/10.7554/eLife.71879.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nWu et al., describe for the first time the fate and lineage of brain myeloid cells in a model of amyloid Alzheimer's disease. In addition, the study demonstrates the low turnover of \"border associated macrophages\" in the brain under steady-state and pathology. This study will be of interest to immunologists, neurologists and clinicians.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Microglia and border-associated mouse macrophages maintain their embryonic origin during Alzheimer's disease\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Carla Rothlin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions\n\n1. One limitation of this study is the exclusive reliance on flow cytometry and the absence of histological data. How do the authors know which cells are plaque-associated? Could it be that this is a minority of cells that might escape the bulk analysis because they escape isolation? Please provide complementary histological analysis to exclude this option. Furthermore, do P2RY12lo CD11c+ colocalize with plaques?\n\n2. The term monocyte-derived cells (MdC) is defined in the text as F4/80int MHC2+ or F4/80int CD11a+ cells. These markers are unusual for the analysis of CNS macrophages. What are these cells? perivascular cells? or are they located within the parenchyma? The inclusion of the more general CD45 / CD11b profiling would help. Here, histological analysis is warranted, both in steady-state and during pathology, with a focus on plaques.\n\n3. Nomenclature: The author's term P2RY12lo CD11c+ cells DAM, standing for 'disease-associated microglia', and refer to an earlier study. In their scRNAseq-based study, Keren-Shaul and colleagues introduced the term based on a comprehensive gene signature, not a two marker-based phenotype. However, this definition has been challenged, since the expression of many of the genes is observed in any activated microglia, irrespective of disease context. The community hence recommends abstaining from the too generic DAM term. The problem is highlighted on page 7, line 224, 'in the steady-state, microglia, DAMs and BAMs are a remarkably stable population'. How can disease-associated microglia exist in a steady state? To avoid confusion please use the term 'activated microglia' or best give the P2RY12lo CD11c+ phenotype. CD11c expression and P2RY12 loss is also a feature of ageing microglia, as can f.i. be seen in the 1yr old mice analysed in Figure 1A.\n\n4. The authors could discuss the recently published Science paper (Cugurra et al., 2021) about the replenishment of meningeal monocytes from skull BM. These authors suggested that the meningeal Ly6C+ monocytes are supplied by skull bone marrow and experience a comparable high turnover rate to blood monocytes. This seems contradictory from what is proposed here: most BAMs retained the embryonic phenotype and mostly were not replaced by monocytes derived from BM including skull BM. If true, skull BM-derived Ly6C+ monocytes may in fact enter into the circulation instead of refilling the pool of BAMs. One wonders if these BAMs are ki67+ or whether they have a life-long survival.\n\nFigures 1 and 2\n\n5. Please include APP-KI samples at 2 months for comparison although the myeloid cell profiles in APP-KI mice would presumably retain patterns similar to WT at 2 months.\n\n6. What is the population with CD45high/Ly6Glow/Ly6Clow/MHC IIlow/CD11a-/Siglec-F- in figure 1A? It is also specifically enriched in APP-KI.\n\n7. Eosinophils only increased in 12-month-old WT but not in APP-KI (Figure 1C). However, according to Mrdjen et al., 2018, eosinophils were reduced in aged WT (18 months). Do the authors have an explanation for this discrepancy?\n\n8. Have the authors stained CD3+ cells to examine the infiltration of T cells in the CD11b- population?\n\n9. In line 139, according to supplemental Figure 1, please mention that the total population of microglia was also increased, as previously reported microgliosis with the amyloid pathology. Moreover, compared with the quantitative data (Figure 1C), does it suggest that the homeostatic microglia remain the same during ageing and amyloid pathology?\n\n10. In Figure. 1A-C, is this analysis performed of brains without meninges and choroid plexus or total on the brain including all the borders?\n\n11. The authors state that P2ry12+ microglia were the main CD45intF4/80hi population in the brain parenchyma. Can they show also F4/80?\n\n12. Figure.1B and 2B, For all the different UMAPs, a heatmap of the mean marker expression for the different populations in the UMAP should be shown.\n\nFigures 3 and 4\n\n13. What are the Cd11a+ cells? Can this be discussed in the text?\n\n14. In Figure 3, it appears that these mice were not perfused according to the methods and the purpose of this experiment. If the mice were perfused, please add that information in the methods.\n\n15. In Figure 3A, please state which mice were used in these two representative flow plots?\n\n16. In Figure 3B, the authors need to clarify that the normalization of YFP+ cells was done with neutrophils or see comment below:\n\n17. In Figures 3 and 4, please show the percentage labelling for each population including monocytes rather than the normalization to neutrophils.\n\n18. In Figure 3D, have they also analysed BAMs upon embryonic labelling?\n\n19. In Figure 4, MHC II+ BAMs seem to have a significantly higher turnover rate than MHC IIlow BAM. Do the authors have an explanation for that?\n\n20. The authors may discuss/consider that the slow turnover kinetics of BAM may be model dependent compared to other models where AD is accelerated.\n\nOther points that need to be addressed\n\n21. In line 153, the authors might want to cite Jord\u00e3o et al., 2019, who characterized a similar increase of MHC II+ CNS-associated macrophages in an EAE model with neuroinflammation.\n\n22. In line 172, it would be better to mention that these mice were harvested at 10 months of age.\n\n23. The MerCreMer labelling is not 100%, but around 80%. Is this a technical constraint that the authors should bring it up in their discussion as a caveat?\n",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a8fe535e-1f51-43c7-b8bc-4fb3052b7a1d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C1",
+      "claim": "Microglia are brain parenchymal macrophages that originate from the primitive yolk sac.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia are brain parenchymal macrophages that are unique among tissue-resident macrophages due to their primitive yolk sack origin, self-renewal properties (Ajami et al., 2007), and independence from adult hematopoiesis (Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research (Ajami et al., 2007; Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "36202322-b978-4e93-a869-298bf2cb99b3",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C2",
+      "claim": "Microglia have self-renewal properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia are brain parenchymal macrophages that are unique among tissue-resident macrophages due to their primitive yolk sack origin, self-renewal properties (Ajami et al., 2007), and independence from adult hematopoiesis (Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ajami et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2c430d74-b9ca-435e-9cb8-45bf96c70704",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C3",
+      "claim": "Microglia are independent from adult hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia are brain parenchymal macrophages that are unique among tissue-resident macrophages due to their primitive yolk sack origin, self-renewal properties (Ajami et al., 2007), and independence from adult hematopoiesis (Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "20d92748-2a8e-4925-8223-f2634cc5d18a",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C4",
+      "claim": "Microglia are essential for normal neuronal development, brain function, and central nervous system homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are essential for normal neuronal development, brain function, and central nervous system (CNS) homeostasis, and dysfunction is associated with severe brain neuropathologies (Leng and Edison, 2021; Sevenich, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leng and Edison, 2021 and Sevenich, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "41e49d5c-d819-47fc-b533-aeca6e18b9b5",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C5",
+      "claim": "Microglial dysfunction is associated with severe brain neuropathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are essential for normal neuronal development, brain function, and central nervous system (CNS) homeostasis, and dysfunction is associated with severe brain neuropathologies (Leng and Edison, 2021; Sevenich, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leng and Edison, 2021 and Sevenich, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "8ad65abc-663b-4fbc-833b-d5bf28be69bf",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C6",
+      "claim": "In Alzheimer's disease, microglia form a barrier around amyloid plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurodegenerative diseases, such as Alzheimer's disease (AD), microglia form a barrier around amyloid plaques, thereby protecting against the neurotoxicity of aggregated beta-amyloid (A\u03b2) (Condello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Condello et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "335b6cfd-ae3d-4d74-9727-eb79015bdce7",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C7",
+      "claim": "Microglia protect against the neurotoxicity of aggregated beta-amyloid by forming a barrier around amyloid plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In neurodegenerative diseases, such as Alzheimer's disease (AD), microglia form a barrier around amyloid plaques, thereby protecting against the neurotoxicity of aggregated beta-amyloid (A\u03b2) (Condello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Condello et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "f0bf26d6-a92f-43d4-ad99-72a286418384",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C8",
+      "claim": "Disruption of microglial activity can promote neurotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of microglial activity, which is often related to aging and inflammation, can promote this neurotoxicity (Salter and Stevens, 2017) and affect the clearance of A\u03b2 aggregates (Floden and Combs, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Salter and Stevens, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "41164f03-c2fd-4bf4-a319-e359eeaae87f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C9",
+      "claim": "Disruption of microglial activity is often related to aging and inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of microglial activity, which is often related to aging and inflammation, can promote this neurotoxicity (Salter and Stevens, 2017) and affect the clearance of A\u03b2 aggregates (Floden and Combs, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Salter and Stevens, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "55846f9f-222e-4302-a226-903cb4668600",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C10",
+      "claim": "Disruption of microglial activity affects the clearance of A\u03b2 aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of microglial activity, which is often related to aging and inflammation, can promote this neurotoxicity (Salter and Stevens, 2017) and affect the clearance of A\u03b2 aggregates (Floden and Combs, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Floden and Combs, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "645c4f73-2b8d-4587-878f-814e4a79fda4",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C11",
+      "claim": "Disruption of microglial activity leads to increased plaque formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increase in plaque formation (Spangenberg et al., 2019) leads to the progression of pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Spangenberg et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2fac2bc9-78b8-4c99-ae8c-955a3c28fefc",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C12",
+      "claim": "Increased plaque formation leads to the progression of pathogenesis in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increase in plaque formation (Spangenberg et al., 2019) leads to the progression of pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Spangenberg et al., 2019 and logical inference from the context.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "62bee581-7a97-4d29-b52d-3c663905930d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C13",
+      "claim": "A subpopulation of CD11c+ activated microglia appears gradually in several neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "In several neurodegenerative diseases, the gradual appearance of a subpopulation of CD11c+ activated microglia, also known as disease-associated microglia or neurodegenerative microglia, correlates with the progression of disease pathology (Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2dabf0d5-0977-4170-97cd-653fd2d16418",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C14",
+      "claim": "CD11c+ activated microglia are also known as disease-associated microglia or neurodegenerative microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "In several neurodegenerative diseases, the gradual appearance of a subpopulation of CD11c+ activated microglia, also known as disease-associated microglia or neurodegenerative microglia, correlates with the progression of disease pathology (Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "75897837-82ad-4a9d-b81c-e7fb2bfe460f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C15",
+      "claim": "The appearance of CD11c+ activated microglia correlates with the progression of disease pathology in neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "In several neurodegenerative diseases, the gradual appearance of a subpopulation of CD11c+ activated microglia, also known as disease-associated microglia or neurodegenerative microglia, correlates with the progression of disease pathology (Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "99da868b-c2c6-4062-abe2-2966683459a1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C16",
+      "claim": "In Alzheimer's disease, highly phagocytic CD11c+ activated microglia accumulate around A\u03b2 deposits.",
+      "claim_type": "EXPLICIT",
+      "source": "In AD, the accumulation of these highly phagocytic cells around the A\u03b2 deposits (Kamphuis et al., 2016; Yin et al., 2017) mitigates A\u03b2-associated tau seeding and spreading (Gratuze et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kamphuis et al., 2016 and Yin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "de6b9170-1b93-46bc-94c8-63249825da7f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C17",
+      "claim": "CD11c+ activated microglia are highly phagocytic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In AD, the accumulation of these highly phagocytic cells around the A\u03b2 deposits (Kamphuis et al., 2016; Yin et al., 2017) mitigates A\u03b2-associated tau seeding and spreading (Gratuze et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kamphuis et al., 2016 and Yin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "5d9a7832-1de6-4f14-a47f-c9af75bf80e6",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C18",
+      "claim": "Accumulation of CD11c+ activated microglia around A\u03b2 deposits mitigates A\u03b2-associated tau seeding and spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "In AD, the accumulation of these highly phagocytic cells around the A\u03b2 deposits (Kamphuis et al., 2016; Yin et al., 2017) mitigates A\u03b2-associated tau seeding and spreading (Gratuze et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Gratuze et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "c5d58c04-5789-45f2-81f7-62ce62aa92c1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C19",
+      "claim": "Activated microglia may play a protective role in neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These activated microglia may play a protective role in neurodegeneration, thus implicating targeted manipulation as a therapeutic strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the preceding discussion about the mitigating effects of activated microglia on tau pathology.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "334ef607-3ddc-4bae-b17c-9d8d4d553c0e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C20",
+      "claim": "Early studies indicated selective migration of monocytic cells toward A\u03b2 plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the origin of the myeloid cells that accumulate around the A\u03b2 deposits is controversial, early studies indicated selective migration of monocytic cells toward the A\u03b2 plaques (Hohsfield and Humpel, 2015), while more recent research suggests that these cells are derived from resident embryonic-derived microglia (Reed-Geaghan et al., 2020; Shukla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hohsfield and Humpel, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2570e4e7-b6b4-41c6-b231-eedb621d5c34",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C21",
+      "claim": "More recent research suggests that myeloid cells accumulating around A\u03b2 deposits are derived from resident embryonic-derived microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the origin of the myeloid cells that accumulate around the A\u03b2 deposits is controversial, early studies indicated selective migration of monocytic cells toward the A\u03b2 plaques (Hohsfield and Humpel, 2015), while more recent research suggests that these cells are derived from resident embryonic-derived microglia (Reed-Geaghan et al., 2020; Shukla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Reed-Geaghan et al., 2020 and Shukla et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "c9d66d21-c270-4274-8e4c-79184bef7219",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C22",
+      "claim": "The origin of myeloid cells that accumulate around A\u03b2 deposits is controversial.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the origin of the myeloid cells that accumulate around the A\u03b2 deposits is controversial, early studies indicated selective migration of monocytic cells toward the A\u03b2 plaques (Hohsfield and Humpel, 2015), while more recent research suggests that these cells are derived from resident embryonic-derived microglia (Reed-Geaghan et al., 2020; Shukla et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated and supported by contrasting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "31d4d14e-5ba9-4907-ac4b-546342e1f124",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C23",
+      "claim": "Microglia-independent macrophages are found at border regions including the subdural meninges, dura mater, and choroid plexus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the macrophages in brain parenchyma, microglia-independent macrophages are also found at the border regions, such as the subdural meninges (SDM), including the pia and arachnoid mater, the dura mater (DM), and the choroid plexus (CP) (Brioschi et al., 2020; Utz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Brioschi et al., 2020 and Utz et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "808ea1ef-83dd-4c6b-96e8-396971340d57",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C24",
+      "claim": "Border-associated macrophages represent a family of different subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNAseq analysis revealed that these border-associated macrophages (BAMs) represent a family of different subpopulations (Van Hove et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Van Hove et al., 2019 and mentions single-cell RNAseq analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "81e4ea52-9222-41c6-b087-9882b8fcd64d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C25",
+      "claim": "The contributions of BAMs to CNS integrity and neurodegeneration remain to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the contributions of BAMs to CNS integrity and neurodegeneration remain to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated as a knowledge gap.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "b88e9a68-a2b2-4ab8-9a25-cd99b431759c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C26",
+      "claim": "APP-KI mice express three human AD-associated mutations that promote progressive accumulation of A\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The APP-KI mouse line expresses three human AD-associated mutations that promote the progressive accumulation of A\u03b2 through its increased production of A\u03b2, particularly the more toxic A\u03b242 form, as well as increasing A\u03b2 aggregation and reducing degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mouse model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2e2d68af-eaac-4e26-a442-b49270da7c5c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C27",
+      "claim": "APP-KI mice develop progressive A\u03b2 accumulation from 2 months of age.",
+      "claim_type": "EXPLICIT",
+      "source": "APP-KI mice develop progressive A\u03b2 accumulation from 2 months of age, thus mimicking several aspects of human AD, including microgliosis and synaptic loss (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and references Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "8cef0c39-7d96-4a95-9d3f-e62ff93ba842",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C28",
+      "claim": "APP-KI mice mimic several aspects of human AD, including microgliosis and synaptic loss.",
+      "claim_type": "EXPLICIT",
+      "source": "APP-KI mice develop progressive A\u03b2 accumulation from 2 months of age, thus mimicking several aspects of human AD, including microgliosis and synaptic loss (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated and references Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "6fa878c0-6486-47bc-a665-6a7d13455a52",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C29",
+      "claim": "P2RY12+ microglia are the main CD45int F4/80hi cell population in the brain parenchyma of all mice.",
+      "claim_type": "EXPLICIT",
+      "source": "P2RY12+ microglia were the main CD45int F4/80hi cell population in the brain parenchyma of all mice and their absolute numbers are significantly enhanced in brains of 12-month-old APP-KI mice due to microgliosis occurring during the development of AD (Sevenich, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the study and citation to Sevenich, 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "0e00d894-bdd2-4985-92e7-ccb039e2ea9e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C30",
+      "claim": "The absolute numbers of P2RY12+ microglia are significantly enhanced in brains of 12-month-old APP-KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "P2RY12+ microglia were the main CD45int F4/80hi cell population in the brain parenchyma of all mice and their absolute numbers are significantly enhanced in brains of 12-month-old APP-KI mice due to microgliosis occurring during the development of AD (Sevenich, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the study and citation to Sevenich, 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "af2def51-f3ab-4203-885d-61370c48d100",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C31",
+      "claim": "Enhanced numbers of P2RY12+ microglia in 12-month-old APP-KI mice are due to microgliosis occurring during the development of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "P2RY12+ microglia were the main CD45int F4/80hi cell population in the brain parenchyma of all mice and their absolute numbers are significantly enhanced in brains of 12-month-old APP-KI mice due to microgliosis occurring during the development of AD (Sevenich, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sevenich, 2018 and inference from the data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "4f4aa808-0c8a-4559-92e3-9141045c97ff",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C32",
+      "claim": "AD mice show a substantial increase in the absolute numbers of P2RY12lowCD11c+ activated microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "AD mice showed also a substantial increase in the absolute numbers of P2RY12lowCD11c+ activated microglia, which were absent in the brain of young mice and constituted only a minor fraction in aged mice (Figure 1A\u2013C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A\u2013C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "71ea8e52-59e0-47cf-9c65-34ada3658d81",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C33",
+      "claim": "P2RY12lowCD11c+ activated microglia are absent in the brain of young mice.",
+      "claim_type": "EXPLICIT",
+      "source": "AD mice showed also a substantial increase in the absolute numbers of P2RY12lowCD11c+ activated microglia, which were absent in the brain of young mice and constituted only a minor fraction in aged mice (Figure 1A\u2013C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A\u2013C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "7ea64f3a-7a75-4961-8b58-73428ccdbe4b",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C34",
+      "claim": "P2RY12lowCD11c+ activated microglia constitute only a minor fraction in aged mice.",
+      "claim_type": "EXPLICIT",
+      "source": "AD mice showed also a substantial increase in the absolute numbers of P2RY12lowCD11c+ activated microglia, which were absent in the brain of young mice and constituted only a minor fraction in aged mice (Figure 1A\u2013C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A\u2013C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "74fce705-47ad-4d6c-97bc-91799ca296f1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C35",
+      "claim": "CD11c+ activated microglia aggregate around A\u03b2 amyloid plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescent analysis showed that CD11c+ activated microglia aggregate around A\u03b2 amyloid plaques (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescent analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "b8cd38db-f542-423c-9eac-490968c9f7b4",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C36",
+      "claim": "The appearance of activated microglia during neurodegeneration in APP-KI mice is consistent with reports from other AD transgenic mouse models such as 5xFAD and APP/PS1.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with reports of the appearance of activated microglia during neurodegeneration in other AD transgenic mouse models, such as 5xFAD and APP/PS1 (Keren-Shaul et al., 2017; Mrdjen et al., 2018), this phenotype was recapitulated in APP-KI mice in our study (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Keren-Shaul et al., 2017 and Mrdjen et al., 2018, and data shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "df52b3e4-791f-43a6-9cf2-7fb469fdd95c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C37",
+      "claim": "Enhanced infiltration of BM-derived inflammatory cells in the brain during disease progression was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we did not observe an enhanced infiltration of BM-derived inflammatory cells in the brain during disease progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "0aa2a5af-e2a2-48de-83fe-ab120a3bb8b1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C38",
+      "claim": "In aged APP-KI mice, the infiltration by Ly6Chi monocytes and Ly6G+ neutrophils is comparable to that in age-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in aged APP-KI mice, the infiltration by Ly6Chi monocytes and Ly6G+ neutrophils was comparable to that in age-matched controls (Figure 1A\u2013B and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A\u2013B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "edcd342e-d0ed-44b7-95e2-a10b073a9e83",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C39",
+      "claim": "A predominant F4/80hiCD206+ BAM fraction can be further separated into MHCII+ and MHCIIlow subpopulations in all three CNS border-associated tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three separately analyzed CNS border-associated tissues, a predominant F4/80hiCD206+ BAM fraction could be further separated into MHCII+ and MHCIIlow subpopulations, which is consistent with previous reports (Van Hove et al., 2019; Figure 2A\u2013D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A\u2013D and Figure 2\u2014figure supplement 1, and citation to Van Hove et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "be648c93-8c1c-4ad3-880f-46bb909a6639",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C40",
+      "claim": "A large population of CD206+MHCIIlow BAMs is preferentially localized in the SDM and CP.",
+      "claim_type": "EXPLICIT",
+      "source": "A large population of CD206+MHCIIlow BAMs was preferentially localized in the SDM and CP, whereas these cells were less abundant in the DM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "e552ca2f-2b37-49f7-b78f-3ced69d5fd92",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C41",
+      "claim": "CD206+MHCIIlow BAMs are less abundant in the DM.",
+      "claim_type": "EXPLICIT",
+      "source": "A large population of CD206+MHCIIlow BAMs was preferentially localized in the SDM and CP, whereas these cells were less abundant in the DM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "327db2f5-9c39-4e06-8298-3974e48ab35a",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C42",
+      "claim": "A significant transition from CD206+MHCIIlow to CD206+MHCII+ BAMs was observed with aging and AD progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a significant transition from CD206+MHCIIlow to CD206+MHCII+ BAMs was observed with aging and AD progression (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "f389f034-21c9-4604-8c45-2f7c6dad367c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C43",
+      "claim": "Increased MHCII+ CNS-associated macrophages were observed during EAE induced neuroinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, increased MHCII+ CNS-associated macrophages were also observed during EAE induced neuroinflammation (Jordao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Jordao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "ec81e8a1-8cc2-41d7-b4a9-7aea7f64dde1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C44",
+      "claim": "Monocyte and neutrophil frequencies were not augmented in any of the three border regions of aged WT and APP-KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the brain parenchyma, monocyte and neutrophil frequencies were not augmented in any of the three border regions of the aged WT and APP-KI mice, which excludes the possibility that an enhanced inflammatory cell infiltration is caused by aging or neurodegenerative disease progression (Figure 2A\u2013C, Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A\u2013C and Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "02b0a78e-f8ee-480a-98a3-c5e6a21f2f01",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C45",
+      "claim": "Enhanced inflammatory cell infiltration is not caused by aging or neurodegenerative disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the brain parenchyma, monocyte and neutrophil frequencies were not augmented in any of the three border regions of the aged WT and APP-KI mice, which excludes the possibility that an enhanced inflammatory cell infiltration is caused by aging or neurodegenerative disease progression (Figure 2A\u2013C, Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data shown in Figure 2A\u2013C and Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "e057647e-5285-46c9-ac41-a0ca28249b1d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C46",
+      "claim": "In the parenchyma of 10-month-old mice, a strong YFP signal was limited to CD45hi cells in both WT and AD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the parenchyma of 10-month-old mice, a strong YFP signal was limited to CD45hi cells and was barely detectable in the CD45int fraction, which included the microglia and activated CD11c+ microglia, in both WT and AD mice (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "cd10a85f-a293-439a-a971-0c6b1b3dcbca",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C47",
+      "claim": "YFP signal was barely detectable in the CD45int fraction, which included microglia and activated CD11c+ microglia, in both WT and AD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the parenchyma of 10-month-old mice, a strong YFP signal was limited to CD45hi cells and was barely detectable in the CD45int fraction, which included the microglia and activated CD11c+ microglia, in both WT and AD mice (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "8c0ebd75-f3ad-4c9a-8c4e-84eb4ea4d5d3",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C48",
+      "claim": "Microglia show minimal YFP-labeling, confirming their embryonic origin and BM-independence.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, microglia showed minimal YFP-labeling, which further confirmed their embryonic origin and BM-independence (Sheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in the study and citation to Sheng et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "5264583d-9ddc-46d8-b609-882c3b34f30c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C49",
+      "claim": "During AD progression, microglial YFP-labeling remained minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "During AD progression, microglial YFP-labeling remained minimal, indicating that the ongoing neurodegeneration did not promote their replenishment by BM-derived cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "97ee3c1c-31fd-4701-b960-0865375d6f34",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C50",
+      "claim": "Ongoing neurodegeneration during AD progression does not promote microglial replenishment by BM-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During AD progression, microglial YFP-labeling remained minimal, indicating that the ongoing neurodegeneration did not promote their replenishment by BM-derived cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data showing minimal YFP-labeling in microglia during AD progression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "9f4c44fa-3886-40ec-b4d6-5a23070aac40",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C51",
+      "claim": "Activated CD11c+ microglia maintained a low YFP-labeling profile during AD progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activated CD11c+ microglia, which were increasingly formed during AD progression (Figure 1\u2014figure supplement 1B-C), maintained a low YFP-labeling profile, suggesting that despite their phenotypic shift, these cells preserved their embryonic signature and were not replaced by BM-derived cells during evolution of the disease (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A\u2013C and Figure 1\u2014figure supplement 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "4563fc94-9f72-46b8-95c3-0eb552e77ccc",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C52",
+      "claim": "Activated CD11c+ microglia preserve their embryonic signature despite their phenotypic shift.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activated CD11c+ microglia, which were increasingly formed during AD progression (Figure 1\u2014figure supplement 1B-C), maintained a low YFP-labeling profile, suggesting that despite their phenotypic shift, these cells preserved their embryonic signature and were not replaced by BM-derived cells during evolution of the disease (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data showing low YFP-labeling in activated CD11c+ microglia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2527b2fb-1909-4796-b763-46e583ebd600",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C53",
+      "claim": "Activated CD11c+ microglia are not replaced by BM-derived cells during evolution of AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activated CD11c+ microglia, which were increasingly formed during AD progression (Figure 1\u2014figure supplement 1B-C), maintained a low YFP-labeling profile, suggesting that despite their phenotypic shift, these cells preserved their embryonic signature and were not replaced by BM-derived cells during evolution of the disease (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data showing low YFP-labeling in activated CD11c+ microglia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "92182fb9-c504-4acf-b2c8-c294c4682752",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C54",
+      "claim": "All monocytes are YFP-labeled 2 months after induction, indicating they are exclusively BM-derived.",
+      "claim_type": "EXPLICIT",
+      "source": "Differently, the kinetics of monocyte replacement was extremely rapid, with all monocytes YFP-labeled 2 months after induction, indicating that these cells are exclusively BM-derived (Figure 3A and B, lower panel, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "91c4bd52-27f8-46b4-9bd2-043b53260049",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C55",
+      "claim": "Fetal-derived MdCs are gradually replaced by BM-derived cells over time and are fully replenished at 8 months post-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fetal-derived MdCs were gradually replaced by BM-derived cells over time and were fully replenished at 8 months post-induction, with no significant difference between WT and AD mice (Figure 3A and B, lower panel, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "1d98ded3-e394-40b7-b448-f492e075bf64",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C56",
+      "claim": "There is no significant difference in MdC replenishment between WT and AD mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, fetal-derived MdCs were gradually replaced by BM-derived cells over time and were fully replenished at 8 months post-induction, with no significant difference between WT and AD mice (Figure 3A and B, lower panel, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "f342ff33-a856-49cd-9a84-63b2fdbb7955",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C57",
+      "claim": "CD11a+ macrophages are BM-derived and show high YFP-labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, CD11a+ macrophages were clearly BM-derived and showed high YFP-labeling and turnover kinetics comparable to monocytes and neutrophils (Figure 3A and B, lower panel, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "dd3d1d73-311b-45e7-8c05-17c35a872379",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C58",
+      "claim": "CD11a+ macrophages have turnover kinetics comparable to monocytes and neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, CD11a+ macrophages were clearly BM-derived and showed high YFP-labeling and turnover kinetics comparable to monocytes and neutrophils (Figure 3A and B, lower panel, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "5cc46d93-5dee-4d74-902f-02de04895b4d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C59",
+      "claim": "Activated CD11c+ microglia maintain their embryonic origin in E7.5 embryonic labeling experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify whether activated CD11c+ microglia retained their fetal lineage, we performed E7.5 embryonic labeling of APP-KI/KitMerCreMer/R26YFP mice and analyzed microglia and activated CD11c+ microglia obtained from disease-affected offspring aged 9 months. Despite the AD-associated pathology, we not only confirmed that activated CD11c+ microglia maintained their embryonic origin, but showed that microglia and activated CD11c+ microglia share the same yolk sac origin, whereas all other tested myeloid cells (monocytes, Mdc, CD11a+ macrophages, and neutrophils) did not arise from embryonic progenitors of the yolk sac (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3D from E7.5 embryonic labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "bad2fee8-6cca-4b14-a8f1-05480b4dada9",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C60",
+      "claim": "Microglia and activated CD11c+ microglia share the same yolk sac origin.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify whether activated CD11c+ microglia retained their fetal lineage, we performed E7.5 embryonic labeling of APP-KI/KitMerCreMer/R26YFP mice and analyzed microglia and activated CD11c+ microglia obtained from disease-affected offspring aged 9 months. Despite the AD-associated pathology, we not only confirmed that activated CD11c+ microglia maintained their embryonic origin, but showed that microglia and activated CD11c+ microglia share the same yolk sac origin, whereas all other tested myeloid cells (monocytes, Mdc, CD11a+ macrophages, and neutrophils) did not arise from embryonic progenitors of the yolk sac (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3D from E7.5 embryonic labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "2ec14036-1725-4127-b2c3-3129d2e2e602",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C61",
+      "claim": "Monocytes, MdCs, CD11a+ macrophages, and neutrophils do not arise from embryonic progenitors of the yolk sac.",
+      "claim_type": "EXPLICIT",
+      "source": "To verify whether activated CD11c+ microglia retained their fetal lineage, we performed E7.5 embryonic labeling of APP-KI/KitMerCreMer/R26YFP mice and analyzed microglia and activated CD11c+ microglia obtained from disease-affected offspring aged 9 months. Despite the AD-associated pathology, we not only confirmed that activated CD11c+ microglia maintained their embryonic origin, but showed that microglia and activated CD11c+ microglia share the same yolk sac origin, whereas all other tested myeloid cells (monocytes, Mdc, CD11a+ macrophages, and neutrophils) did not arise from embryonic progenitors of the yolk sac (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3D from E7.5 embryonic labeling experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "3d740610-9894-4a1d-8092-663283e30684",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C62",
+      "claim": "Non-parenchymal monocytes, MdCs, and CD11a+ macrophages are swiftly replaced by BM cells, with 100% YFP-positivity at 2 months post-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult fate-mapping, non-parenchymal monocytes, MdCs, and CD11a+ macrophages were swiftly replaced by BM cells, with 100% YFP-positivity at 2 months post-induction (Figure 4, right, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "3a463e4b-c377-47e5-b8df-04fbc223adfe",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C63",
+      "claim": "Both CD206+ BAM subpopulations show weaker YFP-labeling compared to other macrophages such as MdCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both CD206+ BAM subpopulations showed weaker YFP-labeling compared to other macrophages such as MdCs, which were already fully replenished within 2 months in all three regions (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "5eca7e15-d3a8-4140-ae90-91b777371dae",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C64",
+      "claim": "In the DM, YFP-labeling is significantly higher in CD206+MHCII+ BAMs than in CD206+MHCIIlow BAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DM, YFP-labeling was significantly higher in CD206+MHCII+ BAMs than that in CD206+MHCIIlow BAMs (Figure 4, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4, upper panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "fe06cbbb-058c-4dad-b62f-54c2cc91e43b",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C65",
+      "claim": "Dural CD206+MHCII+ BAMs are characterized by slow but consistent BM-cell replacement over time, reaching approximately 35% YFP-positivity by 8 months post-induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Dural CD206+MHCII+ BAMs were characterized by a slow, but consistent BM-cell replacement over time, reaching approximately 35% YFP-positivity by 8 months post-induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "26bd006b-d2ff-4683-8392-41436d3306cb",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C66",
+      "claim": "The turnover rate of both BAM populations located in the SDM is markedly slower than in the DM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the turnover rate of both BAM populations located in the SDM was markedly slower (Figure 4, middle panel), which suggests that their niche is less accessible to BM-dependent replenishment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4, middle panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "e002301b-17e6-4683-8ddd-1a7486a877f7",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C67",
+      "claim": "The SDM niche is less accessible to BM-dependent replenishment than the DM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the turnover rate of both BAM populations located in the SDM was markedly slower (Figure 4, middle panel), which suggests that their niche is less accessible to BM-dependent replenishment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data showing slower turnover rates in SDM BAMs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "745fddb3-f069-4e8d-a5c6-82819d98bbbb",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C68",
+      "claim": "The DM has a greater capacity to support peripheral cell traffic due to its fenestrated blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "With its fenestrated blood vessels, the DM has a greater capacity to support peripheral cell traffic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about DM vascular structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "91f05c64-7960-4080-a42f-291bd7729d3f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C69",
+      "claim": "Skull BM-derived monocytes seed DM through tiny vascular connecting corridors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, skull BM-derived monocytes, which seed DM through tiny vascular connecting corridors (Cugurra et al., 2021), can also contribute to the refilling of dural BAMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Cugurra et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "752b03e8-6b30-4a9e-9151-bf3a8619bf07",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C70",
+      "claim": "Skull BM-derived monocytes can contribute to the refilling of dural BAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, skull BM-derived monocytes, which seed DM through tiny vascular connecting corridors (Cugurra et al., 2021), can also contribute to the refilling of dural BAMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data and citation to Cugurra et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "7524a2fb-dd6b-46d0-99e6-69889b1abd8b",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C71",
+      "claim": "The strong tight junctions of blood vessels in the SDM limit cell exchange with the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the strong tight junctions of the blood vessels in the SDM limit cell exchange with the periphery (Mastorakos and McGavern, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mastorakos and McGavern, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "86d81061-f8af-4ea6-af95-8b22b77321b0",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C72",
+      "claim": "Previous studies have shown rapid BAM turnover in the CP supported by partial input from the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown a rapid BAM turnover in the CP supported by partial input from the circulation (Goldmann et al., 2016; Van Hove et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Goldmann et al., 2016 and Van Hove et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "954fcaa7-4fcd-4407-941a-a5a3e1186f88",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C73",
+      "claim": "Both MHCIIlow and MHCII+CD206+ BAMs in the CP display a dual origin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although both MHCIIlow and MHCII+CD206+ BAMs displayed a dual origin in our fate-mapping mouse model, their replenishment from BM-derived cells was extremely slow, with the YFP signal reaching only 10\u201315% by 8 months after induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "e4f8b23b-cf8b-4b92-855f-19e9b67d636b",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C74",
+      "claim": "CP BAM replenishment from BM-derived cells is extremely slow, with YFP signal reaching only 10\u201315% by 8 months after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although both MHCIIlow and MHCII+CD206+ BAMs displayed a dual origin in our fate-mapping mouse model, their replenishment from BM-derived cells was extremely slow, with the YFP signal reaching only 10\u201315% by 8 months after induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "d7b8031e-d907-4833-af4a-538b5d89c302",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C75",
+      "claim": "More than 85% of CP BAMs retain their embryonic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 85% of CP BAMs retained their embryonic phenotype (Figure 4, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4, lower panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "4d35a0bd-6de5-4880-a391-76f1620c33fc",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C76",
+      "claim": "Some SDM and CP MHCIIlowCD206+ BAMs are descendants of yolk sac precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the lowest levels of YFP labeling observed in MHCIIlowCD206+ BAMs located in SDM and CP (Figure 4, left panels) we found a significantly increased YFP labeling only in this particular BAM subpopulation obtained from the progeny of E7.5 TAM-treated mice (SDM MHCIIlowCD206+ BAMs: 10%; CP MHCIIlowCD206+ BAMs: 15%) (Figure 4\u2014figure supplement 2). These data indicate that some of these SDM and CP MHCIIlowCD206+ BAMs are descendants of yolk sac precursors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data shown in Figure 4 and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "77fd5b4a-29cd-4fc7-9a81-16b64c86675f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C77",
+      "claim": "The development of AD neither supports nor accelerates BAM replacement by BM-progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of a significant difference in the YFP-labeling profiles of BAMs from healthy or AD mice indicates that the development of AD neither supports nor accelerates BAM replacement by BM-progenitors (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "3a790079-290f-42ee-a949-2c1dec4f5d9c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C78",
+      "claim": "The monocyte-to-microglia transition occurs in the brain under certain conditions of inflammation or injury, such as meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "The monocyte-to-microglia transition occurs in the brain, but only under certain conditions of inflammation or injury, such as meningitis (Djukic et al., 2006) and neonatal stroke (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Djukic et al., 2006 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "50e32e29-1f25-4e86-8566-45b2bff4bd51",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C79",
+      "claim": "The monocyte-to-microglia transition occurs in the brain under certain conditions of inflammation or injury, such as neonatal stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "The monocyte-to-microglia transition occurs in the brain, but only under certain conditions of inflammation or injury, such as meningitis (Djukic et al., 2006) and neonatal stroke (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Djukic et al., 2006 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "68693144-eaa8-4b7c-89f2-6d8e02fc38ee",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C80",
+      "claim": "The original yolk sac embryonic microglia identity is preserved during experimental autoimmune encephalomyelitis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the original yolk sac embryonic microglia identity is preserved during experimental autoimmune encephalomyelitis (Ajami et al., 2011; Jordao et al., 2019), although infiltrating monocytes are recruited to the brain during the progression of this neuroinflammatory disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ajami et al., 2011 and Jordao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "7f90d81d-d184-4ed7-87ef-3918c50afb75",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C81",
+      "claim": "Infiltrating monocytes are recruited to the brain during the progression of experimental autoimmune encephalomyelitis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the original yolk sac embryonic microglia identity is preserved during experimental autoimmune encephalomyelitis (Ajami et al., 2011; Jordao et al., 2019), although infiltrating monocytes are recruited to the brain during the progression of this neuroinflammatory disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ajami et al., 2011 and Jordao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "175785ec-c2ce-4c22-be2c-89cce2015c4c",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C82",
+      "claim": "In parabiosis experiments using APPPS1-21 and 5xFAD mouse models of AD, peripheral monocytes do not contribute to the microglial pool surrounding A\u03b2 plaques.",
+      "claim_type": "EXPLICIT",
+      "source": "In an elegant parabiosis experiment using two different mouse models of AD (APPPS1-21 and 5xFAD), it was shown that peripheral monocytes do not contribute to the microglial pool surrounding the A\u03b2plaques (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "bee5acc7-1995-4a91-a91f-e4fdcf41ff1e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C83",
+      "claim": "Microglia, activated CD11c+ microglia, and BAMs are a remarkably stable embryonic-derived population in the steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we extended our analysis and demonstrated that, in the steady state, microglia, activated CD11c+ microglia and BAMs are a remarkably stable embryonic-derived population and their turnover remains unaffected in AD; the progression of this neurodegenerative disease does not promote or sustain their replacement by BM-derived progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "44e4033d-319c-4c62-a9f0-b55c8782b81a",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C84",
+      "claim": "The turnover of microglia, activated CD11c+ microglia, and BAMs remains unaffected in AD.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we extended our analysis and demonstrated that, in the steady state, microglia, activated CD11c+ microglia and BAMs are a remarkably stable embryonic-derived population and their turnover remains unaffected in AD; the progression of this neurodegenerative disease does not promote or sustain their replacement by BM-derived progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "15bc3494-49d0-48be-964c-9767742937a0",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C85",
+      "claim": "The progression of AD does not promote or sustain the replacement of microglia, activated CD11c+ microglia, and BAMs by BM-derived progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we extended our analysis and demonstrated that, in the steady state, microglia, activated CD11c+ microglia and BAMs are a remarkably stable embryonic-derived population and their turnover remains unaffected in AD; the progression of this neurodegenerative disease does not promote or sustain their replacement by BM-derived progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "744f5276-d138-4233-aac0-46a2241b973e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C86",
+      "claim": "The transformation from homeostatic microglia to activated CD11c+ microglia is not mediated by infiltrating inflammatory BM-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed that the transformation from homeostatic microglia to activated CD11c+ microglia is not mediated by infiltrating inflammatory BM-marrow derived cells, but imprinted by the local brain microenvironment that is severely perturbed by the AD pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "1a1facef-497c-4d24-a79e-55afed4bd6a4",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C87",
+      "claim": "The transformation from homeostatic microglia to activated CD11c+ microglia is imprinted by the local brain microenvironment that is severely perturbed by AD pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed that the transformation from homeostatic microglia to activated CD11c+ microglia is not mediated by infiltrating inflammatory BM-marrow derived cells, but imprinted by the local brain microenvironment that is severely perturbed by the AD pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "f8de9a6a-a8fe-4220-a2bb-0295a512984d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C88",
+      "claim": "APP-KI mice avoid disadvantages associated with transgenic APP models, including artifacts caused by overexpression of other APP fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "This model avoids some disadvantages associated with transgenic APP models, including artifacts caused by overexpression of other APP fragments in addition to A\u03b2, non-physiological cell-type expression, and potential insertion site disruption (Saito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "bb0431c0-52fa-4cdf-9275-601ac607e4d5",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C89",
+      "claim": "APP-KI mice avoid disadvantages associated with transgenic APP models, including non-physiological cell-type expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This model avoids some disadvantages associated with transgenic APP models, including artifacts caused by overexpression of other APP fragments in addition to A\u03b2, non-physiological cell-type expression, and potential insertion site disruption (Saito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "290b1dbd-3ee8-4744-99f3-a4650522e0e1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C90",
+      "claim": "APP-KI mice avoid disadvantages associated with transgenic APP models, including potential insertion site disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "This model avoids some disadvantages associated with transgenic APP models, including artifacts caused by overexpression of other APP fragments in addition to A\u03b2, non-physiological cell-type expression, and potential insertion site disruption (Saito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "52844142-8d0e-456d-b0d7-1334c23ae7b3",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C91",
+      "claim": "The APP-KI mouse line expresses three human AD-associated mutations that increase production of A\u03b2, particularly the more toxic A\u03b242 form.",
+      "claim_type": "EXPLICIT",
+      "source": "The APP-KI mouse line expresses three human AD-associated mutations that promote the progressive accumulation of A\u03b2 through its increased production of A\u03b2, particularly the more toxic A\u03b242 form, as well as increasing A\u03b2 aggregation and reducing degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mouse model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "54f61e1e-0cb0-474d-be60-cfa599063496",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C92",
+      "claim": "The APP-KI mouse line expresses three human AD-associated mutations that increase A\u03b2 aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "The APP-KI mouse line expresses three human AD-associated mutations that promote the progressive accumulation of A\u03b2 through its increased production of A\u03b2, particularly the more toxic A\u03b242 form, as well as increasing A\u03b2 aggregation and reducing degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mouse model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "21e12074-4071-4824-8093-3cf4fdd5f4d2",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C93",
+      "claim": "The APP-KI mouse line expresses three human AD-associated mutations that reduce A\u03b2 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The APP-KI mouse line expresses three human AD-associated mutations that promote the progressive accumulation of A\u03b2 through its increased production of A\u03b2, particularly the more toxic A\u03b242 form, as well as increasing A\u03b2 aggregation and reducing degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text describing the mouse model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "e653b0e7-df03-4089-9b05-55a075c9b61f",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C94",
+      "claim": "Neither parenchymal microglia nor activated CD11c+ microglia originate from or are replenished by BM-derived cells during AD.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that microglia remain a remarkably stable embryonic-derived population even during the progression of AD pathology, indicating that neither parenchymal macrophage subpopulation originates from, nor is replenished by, BM-derived cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "086a2694-3026-4fbd-b07e-13e9c1f20196",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C95",
+      "claim": "Bona fide CD206+ BAMs are minimally replaced by BM-derived cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the border-associated brain regions, bona fide CD206+ BAMs are minimally replaced by BM-derived cells, and their turnover rates are not accelerated by AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "b3ddbdb9-987b-4e15-a541-43787d01dddd",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C96",
+      "claim": "The turnover rates of CD206+ BAMs are not accelerated by AD.",
+      "claim_type": "EXPLICIT",
+      "source": "At the border-associated brain regions, bona fide CD206+ BAMs are minimally replaced by BM-derived cells, and their turnover rates are not accelerated by AD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "ef00e416-8e1b-4da0-8f86-a6e049880377",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "claim_id": "C97",
+      "claim": "All other myeloid cells besides microglia, activated CD11c+ microglia, and CD206+ BAMs are swiftly replenished by BM progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, all other myeloid cells are swiftly replenished by BM progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dd65b8a4-95c2-49c7-abf3-afd62fe0a3f0",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microglia are brain parenchymal macrophages with unique properties including primitive yolk sac origin, self-renewal capacity, and independence from adult hematopoiesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 describe established background knowledge about microglia characteristics, supported by multiple citations to prior research (Ajami et al., 2007; Ginhoux et al., 2010; Schulz et al., 2012; Sheng et al., 2015). These are well-accepted facts in the field rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "c46e2fda-ed78-44a0-ba27-0daecef61989",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Microglia are essential for normal neuronal development, brain function, and CNS homeostasis, and their dysfunction is associated with severe brain neuropathologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 represent established background knowledge supported by citations (Leng and Edison, 2021; Sevenich, 2018). These are contextual claims setting up the study's rationale rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "8639250c-b71a-4990-9d36-6f0ac4375790",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In Alzheimer's disease, microglia form protective barriers around amyloid plaques, but disruption of microglial activity (related to aging and inflammation) can promote neurotoxicity, affect A\u03b2 clearance, increase plaque formation, and lead to disease progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12 describe established knowledge about microglial function in AD, supported by multiple citations (Condello et al., 2015; Salter and Stevens, 2017; Floden and Combs, 2011; Spangenberg et al., 2019). These provide background context rather than novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "9e089b40-116b-47a9-82ea-dcf012963da0",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CD11c+ activated microglia (disease-associated microglia) appear gradually in neurodegenerative diseases, correlate with disease progression, are highly phagocytic, accumulate around A\u03b2 deposits, and mitigate A\u03b2-associated tau pathology, suggesting a protective role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 describe prior knowledge about activated microglia in neurodegeneration, supported by citations (Deczkowska et al., 2018; Keren-Shaul et al., 2017; Krasemann et al., 2017; Kamphuis et al., 2016; Yin et al., 2017; Gratuze et al., 2021). Claim C19 includes speculation about therapeutic implications but is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "ff0a16de-c86b-44a4-a268-84125e136d13",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The origin of myeloid cells accumulating around A\u03b2 deposits is controversial, with early studies suggesting monocyte migration and recent research suggesting derivation from resident embryonic microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 accurately describe a controversy in the field, supported by contrasting citations (Hohsfield and Humpel, 2015 vs. Reed-Geaghan et al., 2020; Shukla et al., 2019). This sets up the rationale for the current study's investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "cf339d83-3013-4db2-addc-276db802708e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Border-associated macrophages (BAMs) are microglia-independent macrophages found at CNS border regions (subdural meninges, dura mater, choroid plexus) that represent different subpopulations, but their contributions to CNS integrity and neurodegeneration remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 describe established knowledge about BAMs (Brioschi et al., 2020; Utz et al., 2020; Van Hove et al., 2019) and identify a knowledge gap (C25) that motivates the current study. This provides appropriate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "48f795b8-4d30-4e73-b635-e78810570c48",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The APP-KI mouse model expresses three human AD-associated mutations under endogenous promoter control, develops progressive A\u03b2 accumulation from 2 months, mimics human AD features including microgliosis and synaptic loss, and avoids artifacts of transgenic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C88-C93 describe the APP-KI mouse model characteristics, supported by citation (Saito et al., 2014) and reference to Figure 1\u2014figure supplement 1A. This establishes the validity of the experimental model used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In APP-KI mice, P2RY12+ microglia are the main parenchymal population with significantly enhanced numbers at 12 months due to microgliosis. P2RY12lowCD11c+ activated microglia show substantial increase in AD mice, are absent in young mice, constitute a minor fraction in aged mice, and aggregate around A\u03b2 plaques, consistent with other AD models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 present flow cytometry and immunofluorescence data (Figures 1A-E, 1D, Figure 1\u2014figure supplement 1B-C) characterizing microglial populations in the APP-KI model. The data clearly demonstrate microgliosis and activated microglia accumulation around plaques, with appropriate statistical analysis and comparison to other AD models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "7002f656-f2e9-4917-92e1-85e34bf279a4",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Enhanced infiltration of BM-derived inflammatory cells (Ly6Chi monocytes and Ly6G+ neutrophils) in the brain during AD progression was not observed, with levels comparable to age-matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 present negative findings from flow cytometry data (Figure 1A-B, E) showing no increase in peripheral immune cell infiltration during AD progression. This is an important finding that challenges potential expectations and is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "F4/80hiCD206+ BAMs can be separated into MHCII+ and MHCIIlow subpopulations across CNS border tissues, with CD206+MHCIIlow BAMs preferentially in SDM and CP. A significant transition from MHCIIlow to MHCII+ BAMs occurs with aging and AD progression. Monocyte and neutrophil frequencies are not augmented in border regions, excluding enhanced inflammatory infiltration from aging or AD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 present comprehensive flow cytometry characterization of BAM populations (Figures 2A-D, Figure 2\u2014figure supplements 1-2) across different CNS border regions. The data show clear phenotypic shifts with aging/AD and absence of inflammatory infiltration, with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In adult fate-mapping experiments, YFP signal in 10-month-old mice was limited to CD45hi cells with minimal labeling in CD45int microglia and activated CD11c+ microglia in both WT and AD mice. During AD progression, microglial YFP-labeling remained minimal, indicating no BM-derived cell replenishment. Activated CD11c+ microglia maintained low YFP-labeling, preserving their embryonic signature despite phenotypic shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 present key fate-mapping data (Figure 3A-C) demonstrating that microglia and activated microglia maintain embryonic origin during AD. The data clearly show minimal YFP labeling in these populations compared to other myeloid cells, supporting the conclusion that AD does not promote BM-derived replacement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "88798c9f-d659-4c3f-961a-65a9fc483f79",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In adult fate-mapping, monocytes show rapid replacement (100% YFP+ at 2 months), MdCs are gradually replaced (fully replenished at 8 months with no WT/AD difference), and CD11a+ macrophages show high YFP-labeling with turnover kinetics comparable to monocytes and neutrophils.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 present fate-mapping data (Figure 3A-B) showing differential turnover kinetics of various myeloid populations. The data clearly demonstrate rapid BM-derived replacement of these populations in contrast to microglia, with appropriate quantification and statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "a38a645b-cfed-468d-a00a-fe7be58c4b0d",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "E7.5 embryonic labeling experiments confirmed that activated CD11c+ microglia maintain embryonic origin and share yolk sac origin with microglia, while monocytes, MdCs, CD11a+ macrophages, and neutrophils do not arise from yolk sac progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 present critical embryonic fate-mapping data (Figure 3D) definitively establishing the yolk sac origin of both microglia and activated CD11c+ microglia. This is a key finding addressing the controversy about activated microglia origin, with clear experimental evidence from E7.5 labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "6530185a-c3ff-4937-8b60-3eda685f2aa1",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In border regions, non-parenchymal monocytes, MdCs, and CD11a+ macrophages show swift BM replacement (100% YFP+ at 2 months). CD206+ BAM subpopulations show weaker YFP-labeling than MdCs. In DM, CD206+MHCII+ BAMs show higher YFP-labeling than MHCIIlow BAMs with slow consistent replacement (~35% at 8 months). SDM BAM turnover is markedly slower, suggesting less accessible niche.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 present detailed fate-mapping analysis of BAM populations (Figure 4, Figure 4\u2014figure supplement 1) showing region-specific turnover kinetics. The data demonstrate differential replacement rates across border regions with appropriate quantification, though the inference about niche accessibility (C67) is reasonable but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "0a563a59-e6e5-4443-b01c-6c9c0690f6d4",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The DM has greater capacity for peripheral cell traffic due to fenestrated blood vessels, and skull BM-derived monocytes can contribute to dural BAM refilling. In contrast, strong tight junctions in SDM blood vessels limit peripheral cell exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 provide mechanistic interpretation of the differential BAM turnover rates. C68 and C71 cite established anatomical knowledge, while C69-C70 cite recent work (Cugurra et al., 2021). These interpretations are reasonable but represent inferences rather than direct experimental findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Despite previous reports of rapid CP BAM turnover, both MHCIIlow and MHCII+ CD206+ BAMs in CP show extremely slow BM-derived replenishment (10-15% YFP at 8 months), with >85% retaining embryonic phenotype. E7.5 labeling indicates some SDM and CP MHCIIlowCD206+ BAMs are yolk sac descendants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 present surprising findings about CP BAM turnover (Figure 4, Figure 4\u2014figure supplement 2) that contrast with prior studies (Goldmann et al., 2016; Van Hove et al., 2019). The data clearly show minimal BM replacement, and E7.5 labeling provides evidence for partial yolk sac origin. The discrepancy with prior work is acknowledged but not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "f08cd47c-c654-4d74-b6c1-479e027a901e",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The development of AD neither supports nor accelerates BAM replacement by BM-progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 presents a key negative finding based on comparison of YFP-labeling profiles between healthy and AD mice (Figure 4). The lack of significant differences across multiple timepoints and BAM populations supports this conclusion, though statistical comparisons are not explicitly shown for all populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "5ca014cb-b289-42da-b39b-eaca40a02beb",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Monocyte-to-microglia transition occurs only under specific inflammatory conditions (meningitis, neonatal stroke), while yolk sac embryonic microglia identity is preserved during EAE despite monocyte recruitment. Parabiosis experiments in AD models show peripheral monocytes do not contribute to microglial pools around A\u03b2 plaques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 summarize prior literature (Djukic et al., 2006; Chen et al., 2020; Ajami et al., 2011; Jordao et al., 2019; Wang et al., 2016) establishing context for the current findings. These appropriately frame the study's results within existing knowledge about microglial origin and stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "a70f088f-abc2-459a-b881-297dcd8b58b0",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Microglia, activated CD11c+ microglia, and BAMs are remarkably stable embryonic-derived populations whose turnover remains unaffected in AD. AD progression does not promote or sustain their replacement by BM-derived progenitors. The transformation from homeostatic to activated CD11c+ microglia is not mediated by infiltrating BM-derived cells but imprinted by the local brain microenvironment perturbed by AD pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 present the study's main conclusions synthesizing the fate-mapping data. The conclusions are well-supported by the comprehensive experimental evidence showing minimal BM contribution to these populations during AD. The mechanistic interpretation (C87) is a reasonable inference from the data, though not directly tested experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    },
+    {
+      "id": "ecc22dc4-1030-4d4c-a07d-1527c05352f9",
+      "content_id": "60ee98fe-1484-4b02-b166-57679f8c5e3f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Neither parenchymal microglia nor activated CD11c+ microglia originate from or are replenished by BM-derived cells during AD. CD206+ BAMs are minimally replaced by BM-derived cells with turnover rates not accelerated by AD. All other myeloid cells are swiftly replenished by BM progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C97 restate the study's core findings from the abstract/conclusion. These summary statements are well-supported by the comprehensive fate-mapping data presented throughout the manuscript, clearly distinguishing stable embryonic-derived populations from rapidly replaced BM-derived populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:59:52.247753Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a8fe535e-1f51-43c7-b8bc-4fb3052b7a1d",
+      "result_id": "dd65b8a4-95c2-49c7-abf3-afd62fe0a3f0"
+    },
+    {
+      "claim_id": "36202322-b978-4e93-a869-298bf2cb99b3",
+      "result_id": "dd65b8a4-95c2-49c7-abf3-afd62fe0a3f0"
+    },
+    {
+      "claim_id": "2c430d74-b9ca-435e-9cb8-45bf96c70704",
+      "result_id": "dd65b8a4-95c2-49c7-abf3-afd62fe0a3f0"
+    },
+    {
+      "claim_id": "20d92748-2a8e-4925-8223-f2634cc5d18a",
+      "result_id": "c46e2fda-ed78-44a0-ba27-0daecef61989"
+    },
+    {
+      "claim_id": "41e49d5c-d819-47fc-b533-aeca6e18b9b5",
+      "result_id": "c46e2fda-ed78-44a0-ba27-0daecef61989"
+    },
+    {
+      "claim_id": "8ad65abc-663b-4fbc-833b-d5bf28be69bf",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "335b6cfd-ae3d-4d74-9727-eb79015bdce7",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "f0bf26d6-a92f-43d4-ad99-72a286418384",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "41164f03-c2fd-4bf4-a319-e359eeaae87f",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "55846f9f-222e-4302-a226-903cb4668600",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "645c4f73-2b8d-4587-878f-814e4a79fda4",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "2fac2bc9-78b8-4c99-ae8c-955a3c28fefc",
+      "result_id": "8639250c-b71a-4990-9d36-6f0ac4375790"
+    },
+    {
+      "claim_id": "62bee581-7a97-4d29-b52d-3c663905930d",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "2dabf0d5-0977-4170-97cd-653fd2d16418",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "75897837-82ad-4a9d-b81c-e7fb2bfe460f",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "99da868b-c2c6-4062-abe2-2966683459a1",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "de6b9170-1b93-46bc-94c8-63249825da7f",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "5d9a7832-1de6-4f14-a47f-c9af75bf80e6",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "c5d58c04-5789-45f2-81f7-62ce62aa92c1",
+      "result_id": "9e089b40-116b-47a9-82ea-dcf012963da0"
+    },
+    {
+      "claim_id": "334ef607-3ddc-4bae-b17c-9d8d4d553c0e",
+      "result_id": "ff0a16de-c86b-44a4-a268-84125e136d13"
+    },
+    {
+      "claim_id": "2570e4e7-b6b4-41c6-b231-eedb621d5c34",
+      "result_id": "ff0a16de-c86b-44a4-a268-84125e136d13"
+    },
+    {
+      "claim_id": "c9d66d21-c270-4274-8e4c-79184bef7219",
+      "result_id": "ff0a16de-c86b-44a4-a268-84125e136d13"
+    },
+    {
+      "claim_id": "31d4d14e-5ba9-4907-ac4b-546342e1f124",
+      "result_id": "cf339d83-3013-4db2-addc-276db802708e"
+    },
+    {
+      "claim_id": "808ea1ef-83dd-4c6b-96e8-396971340d57",
+      "result_id": "cf339d83-3013-4db2-addc-276db802708e"
+    },
+    {
+      "claim_id": "81e4ea52-9222-41c6-b087-9882b8fcd64d",
+      "result_id": "cf339d83-3013-4db2-addc-276db802708e"
+    },
+    {
+      "claim_id": "b88e9a68-a2b2-4ab8-9a25-cd99b431759c",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "2e2d68af-eaac-4e26-a442-b49270da7c5c",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "8cef0c39-7d96-4a95-9d3f-e62ff93ba842",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "f8de9a6a-a8fe-4220-a2bb-0295a512984d",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "bb0431c0-52fa-4cdf-9275-601ac607e4d5",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "290b1dbd-3ee8-4744-99f3-a4650522e0e1",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "52844142-8d0e-456d-b0d7-1334c23ae7b3",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "54f61e1e-0cb0-474d-be60-cfa599063496",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "21e12074-4071-4824-8093-3cf4fdd5f4d2",
+      "result_id": "48f795b8-4d30-4e73-b635-e78810570c48"
+    },
+    {
+      "claim_id": "6fa878c0-6486-47bc-a665-6a7d13455a52",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "0e00d894-bdd2-4985-92e7-ccb039e2ea9e",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "af2def51-f3ab-4203-885d-61370c48d100",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "4f4aa808-0c8a-4559-92e3-9141045c97ff",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "71ea8e52-59e0-47cf-9c65-34ada3658d81",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "7ea64f3a-7a75-4961-8b58-73428ccdbe4b",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "74fce705-47ad-4d6c-97bc-91799ca296f1",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "b8cd38db-f542-423c-9eac-490968c9f7b4",
+      "result_id": "73cef3ad-b189-4fb4-9387-bf0fe2d187aa"
+    },
+    {
+      "claim_id": "df52b3e4-791f-43a6-9cf2-7fb469fdd95c",
+      "result_id": "7002f656-f2e9-4917-92e1-85e34bf279a4"
+    },
+    {
+      "claim_id": "0aa2a5af-e2a2-48de-83fe-ab120a3bb8b1",
+      "result_id": "7002f656-f2e9-4917-92e1-85e34bf279a4"
+    },
+    {
+      "claim_id": "edcd342e-d0ed-44b7-95e2-a10b073a9e83",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "be648c93-8c1c-4ad3-880f-46bb909a6639",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "e552ca2f-2b37-49f7-b78f-3ced69d5fd92",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "327db2f5-9c39-4e06-8298-3974e48ab35a",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "f389f034-21c9-4604-8c45-2f7c6dad367c",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "ec81e8a1-8cc2-41d7-b4a9-7aea7f64dde1",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "02b0a78e-f8ee-480a-98a3-c5e6a21f2f01",
+      "result_id": "4c0a75ce-eec0-4a1d-a7fe-4a3e877bd2b2"
+    },
+    {
+      "claim_id": "e057647e-5285-46c9-ac41-a0ca28249b1d",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "cd10a85f-a293-439a-a971-0c6b1b3dcbca",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "8c0ebd75-f3ad-4c9a-8c4e-84eb4ea4d5d3",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "5264583d-9ddc-46d8-b609-882c3b34f30c",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "97ee3c1c-31fd-4701-b960-0865375d6f34",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "9f4c44fa-3886-40ec-b4d6-5a23070aac40",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "4563fc94-9f72-46b8-95c3-0eb552e77ccc",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "2527b2fb-1909-4796-b763-46e583ebd600",
+      "result_id": "fb92597d-212c-4ac8-b019-4dbd95fcdc85"
+    },
+    {
+      "claim_id": "92182fb9-c504-4acf-b2c8-c294c4682752",
+      "result_id": "88798c9f-d659-4c3f-961a-65a9fc483f79"
+    },
+    {
+      "claim_id": "91c4bd52-27f8-46b4-9bd2-043b53260049",
+      "result_id": "88798c9f-d659-4c3f-961a-65a9fc483f79"
+    },
+    {
+      "claim_id": "1d98ded3-e394-40b7-b448-f492e075bf64",
+      "result_id": "88798c9f-d659-4c3f-961a-65a9fc483f79"
+    },
+    {
+      "claim_id": "f342ff33-a856-49cd-9a84-63b2fdbb7955",
+      "result_id": "88798c9f-d659-4c3f-961a-65a9fc483f79"
+    },
+    {
+      "claim_id": "dd3d1d73-311b-45e7-8c05-17c35a872379",
+      "result_id": "88798c9f-d659-4c3f-961a-65a9fc483f79"
+    },
+    {
+      "claim_id": "5cc46d93-5dee-4d74-902f-02de04895b4d",
+      "result_id": "a38a645b-cfed-468d-a00a-fe7be58c4b0d"
+    },
+    {
+      "claim_id": "bad2fee8-6cca-4b14-a8f1-05480b4dada9",
+      "result_id": "a38a645b-cfed-468d-a00a-fe7be58c4b0d"
+    },
+    {
+      "claim_id": "2ec14036-1725-4127-b2c3-3129d2e2e602",
+      "result_id": "a38a645b-cfed-468d-a00a-fe7be58c4b0d"
+    },
+    {
+      "claim_id": "3d740610-9894-4a1d-8092-663283e30684",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "3a463e4b-c377-47e5-b8df-04fbc223adfe",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "5eca7e15-d3a8-4140-ae90-91b777371dae",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "fe06cbbb-058c-4dad-b62f-54c2cc91e43b",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "26bd006b-d2ff-4683-8392-41436d3306cb",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "e002301b-17e6-4683-8ddd-1a7486a877f7",
+      "result_id": "6530185a-c3ff-4937-8b60-3eda685f2aa1"
+    },
+    {
+      "claim_id": "745fddb3-f069-4e8d-a5c6-82819d98bbbb",
+      "result_id": "0a563a59-e6e5-4443-b01c-6c9c0690f6d4"
+    },
+    {
+      "claim_id": "91f05c64-7960-4080-a42f-291bd7729d3f",
+      "result_id": "0a563a59-e6e5-4443-b01c-6c9c0690f6d4"
+    },
+    {
+      "claim_id": "752b03e8-6b30-4a9e-9151-bf3a8619bf07",
+      "result_id": "0a563a59-e6e5-4443-b01c-6c9c0690f6d4"
+    },
+    {
+      "claim_id": "7524a2fb-dd6b-46d0-99e6-69889b1abd8b",
+      "result_id": "0a563a59-e6e5-4443-b01c-6c9c0690f6d4"
+    },
+    {
+      "claim_id": "86d81061-f8af-4ea6-af95-8b22b77321b0",
+      "result_id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd"
+    },
+    {
+      "claim_id": "954fcaa7-4fcd-4407-941a-a5a3e1186f88",
+      "result_id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd"
+    },
+    {
+      "claim_id": "e4f8b23b-cf8b-4b92-855f-19e9b67d636b",
+      "result_id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd"
+    },
+    {
+      "claim_id": "d7b8031e-d907-4833-af4a-538b5d89c302",
+      "result_id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd"
+    },
+    {
+      "claim_id": "4d35a0bd-6de5-4880-a391-76f1620c33fc",
+      "result_id": "d8dc37a9-84b8-4383-b264-d8b1fb3af1bd"
+    },
+    {
+      "claim_id": "77fd5b4a-29cd-4fc7-9a81-16b64c86675f",
+      "result_id": "f08cd47c-c654-4d74-b6c1-479e027a901e"
+    },
+    {
+      "claim_id": "3a790079-290f-42ee-a949-2c1dec4f5d9c",
+      "result_id": "5ca014cb-b289-42da-b39b-eaca40a02beb"
+    },
+    {
+      "claim_id": "50e32e29-1f25-4e86-8566-45b2bff4bd51",
+      "result_id": "5ca014cb-b289-42da-b39b-eaca40a02beb"
+    },
+    {
+      "claim_id": "68693144-eaa8-4b7c-89f2-6d8e02fc38ee",
+      "result_id": "5ca014cb-b289-42da-b39b-eaca40a02beb"
+    },
+    {
+      "claim_id": "7f90d81d-d184-4ed7-87ef-3918c50afb75",
+      "result_id": "5ca014cb-b289-42da-b39b-eaca40a02beb"
+    },
+    {
+      "claim_id": "175785ec-c2ce-4c22-be2c-89cce2015c4c",
+      "result_id": "5ca014cb-b289-42da-b39b-eaca40a02beb"
+    },
+    {
+      "claim_id": "bee5acc7-1995-4a91-a91f-e4fdcf41ff1e",
+      "result_id": "a70f088f-abc2-459a-b881-297dcd8b58b0"
+    },
+    {
+      "claim_id": "44e4033d-319c-4c62-a9f0-b55c8782b81a",
+      "result_id": "a70f088f-abc2-459a-b881-297dcd8b58b0"
+    },
+    {
+      "claim_id": "15bc3494-49d0-48be-964c-9767742937a0",
+      "result_id": "a70f088f-abc2-459a-b881-297dcd8b58b0"
+    },
+    {
+      "claim_id": "744f5276-d138-4233-aac0-46a2241b973e",
+      "result_id": "a70f088f-abc2-459a-b881-297dcd8b58b0"
+    },
+    {
+      "claim_id": "1a1facef-497c-4d24-a79e-55afed4bd6a4",
+      "result_id": "a70f088f-abc2-459a-b881-297dcd8b58b0"
+    },
+    {
+      "claim_id": "e653b0e7-df03-4089-9b05-55a075c9b61f",
+      "result_id": "ecc22dc4-1030-4d4c-a07d-1527c05352f9"
+    },
+    {
+      "claim_id": "086a2694-3026-4fbd-b07e-13e9c1f20196",
+      "result_id": "ecc22dc4-1030-4d4c-a07d-1527c05352f9"
+    },
+    {
+      "claim_id": "b3ddbdb9-987b-4e15-a541-43787d01dddd",
+      "result_id": "ecc22dc4-1030-4d4c-a07d-1527c05352f9"
+    },
+    {
+      "claim_id": "ef00e416-8e1b-4da0-8f86-a6e049880377",
+      "result_id": "ecc22dc4-1030-4d4c-a07d-1527c05352f9"
+    }
+  ],
+  "comparisons": []
+}

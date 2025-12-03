@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70",
+      "C71",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors constructed a data-driven computational model of hippocampal area CA3 containing 8000 pyramidal cells (PCs) and 150 parvalbumin-containing basket cells (PVBCs), with parameters fit to experimental data. During a simulated exploration phase, place cell activity was modeled and recurrent PC-PC connections were modified via a symmetric spike-timing-dependent plasticity (STDP) rule, resulting in a structured weight matrix with strong connections between cells with overlapping place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22, C70-C71, and C111-C113 collectively describe the model construction and learning phase. The model size is justified by citations to slice physiology (C17, C111), cell-type-specific parameters were fit to in vitro recordings (C19, C71), and the symmetric STDP rule is based on experimental data from Mishra et al., 2016 (C21, C78). The resulting weight matrix structure (C22) is demonstrated in Figure 1C. The methodological approach is well-documented and experimentally constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The model spontaneously generates sharp wave-ripple (SWR) events during simulated rest periods, characterized by alternating low and high activity states, ripple frequency oscillations in the estimated LFP, and bidirectional replay of place cell sequences. Single-cell dynamics show balanced excitation/inhibition during SWRs with ripple-frequency modulation of inhibitory currents, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C35 describe the core emergent dynamics of the model and are supported by simulation data shown in Figures 1D, 2A-B, and supplementary figures. The model reproduces key experimental features including bidirectional replay (C27), ripple oscillations (C24-C25), balanced E/I (C30), and single-cell firing patterns (C33-C34) that match in vitro and in vivo recordings (C35). The claim that simultaneous forward and backward replay never occurs (C28) is an important prediction. These results represent the primary validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52"
+    ],
+    "result": "Ripple oscillations originate from the recurrently connected PVBC network and require sufficient excitatory drive (>2 Hz PC firing rate). Recurrent inhibitory connections between PVBCs are both necessary and sufficient for ripple generation via the fast inhibitory neuronal oscillation (FINO) mechanism, and can be dissociated from sequence replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C45-C48, and C52 describe the mechanism of ripple generation, supported by model manipulations shown in Figures 6F and 8. The isolated PVBC network simulations (C46-C47, Figure 8A-B) and removal of PVBC-PVBC connections (C48, Figure 8C-E) provide causal evidence. These findings are consistent with previous modeling and experimental studies (C48, C52), strengthening the conclusions. The dissociation of ripples from replay (C45) is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C50"
+    ],
+    "result": "The symmetric STDP rule in combination with cellular adaptation in PCs is necessary and sufficient for bidirectional replay. When an asymmetric STDP rule is used, only forward replay occurs. When adaptation is removed from the PC model, replay is abolished and replaced by stationary activity bumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C43-C44, and C50 describe critical model manipulations that identify the mechanisms underlying bidirectional replay. The asymmetric STDP manipulation (Figure 5) demonstrates necessity of the symmetric rule for backward replay (C40-C41). The removal of adaptation (Figure 7) shows its necessity for any replay (C43). The combination of these manipulations (C44, C50) provides strong causal evidence for the proposed mechanism. These are well-controlled computational experiments with clear outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C49",
+      "C51",
+      "C58",
+      "C59"
+    ],
+    "result": "The fine structure of learned recurrent excitatory connections, rather than overall weight statistics, is critical for both sequence replay (coding) and the generation of sharp waves and ripple oscillations (population dynamics). This demonstrates an intimate interconnection between memory storage/recall and hippocampal oscillatory patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C49, C51, C58-C59 present the main conceptual conclusion of the study. The binarized weight matrix manipulation (Figure 6A-C) shows that weight structure, not distribution, is critical (C42, C51). The shuffled weight matrix manipulation (Figure 6D-F) demonstrates necessity of the structured pattern (C51). These manipulations, combined with the baseline model behavior, support the conclusion that learned weights govern both coding and dynamics (C49, C58-C59). This represents a novel unifying framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The model can store representations of multiple environments in the weight matrix, and during spontaneous activity, replays sequences from either environment in different SWR events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 describe an extension of the model shown in Figure 4. The simulation demonstrates that learning two environments leads to a modified weight matrix that supports replay of both environments during different SWR events (C39, Figure 4B-C). This is a straightforward extension of the baseline model and demonstrates robustness of the mechanism. However, no detailed analysis of how the network selects which environment to replay is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The model makes several testable experimental predictions, including: (1) selective blocking of PVBC-PVBC connections should eliminate ripples but not replay; (2) blocking PC-PC recurrent connections should eliminate all SWR phenomena; (3) the content of replay depends on activity patterns during exploration; (4) manipulations during exploration should affect replay content and SWR properties; (5) factors affecting STDP symmetry should alter the balance of forward/backward replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C69 present predictions based on the model. While these predictions logically follow from the model manipulations (C60-C61 from Figures 6F and 8; C62-C67 from the model framework; C68-C69 from Figure 5), they remain untested experimentally. Some predictions are more specific and testable (C60-C61, C69) than others (C63-C64, C66-C67). The predictions are reasonable extrapolations from the model but require experimental validation. The claim about optogenetic manipulation (C66) acknowledges technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Under normal conditions, ripples are coupled to sharp waves and sequence replay. Experimental optogenetic studies have shown ripples can be decoupled from sharp waves by directly activating PVBCs. The model reproduces this coupling, with ripples requiring >2 Hz PC population firing rate, which occurs during sharp wave events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe the relationship between ripples, sharp waves, and replay in both experiments and the model. The experimental findings (C53-C55) are well-cited. The model behavior (C56-C57) is demonstrated through simulations and the isolated PVBC network analysis. This provides a mechanistic explanation for the experimental observations and validates the model against optogenetic manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 10% PC-PC connection probability used in the model is based on classical views of CA3 as highly interconnected. While recent slice studies report <1% connectivity, virtual slicing experiments and axonal loss estimates suggest in vivo connectivity is considerably higher.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 address a potential criticism of the model's connectivity assumptions. The classical view (C72) is cited, and the authors acknowledge conflicting recent data (C73) but argue that axonal loss in slices (C74) means in vivo connectivity is higher (C75). However, the inference in C75 is not strongly quantified - 'considerably higher than 1%' could still be much lower than 10%. This represents an acknowledged limitation where the model parameter may not precisely match in vivo values, though the authors provide reasonable justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C92",
+      "C93"
+    ],
+    "result": "The model focuses on CA3 because in vitro studies show this region can generate SWRs autonomously with PCs and PVBCs as key players. However, the larger in vivo network and additional cell types likely modify quantitative aspects of SWRs, and other regions (CA2, subiculum, entorhinal cortex) are involved in SWR initiation under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C92-C93 acknowledge the scope and limitations of the model. The focus on CA3 is justified by experimental evidence (C76, C92), but the authors appropriately note that the simplified model may not capture all in vivo quantitative features (C77) and that other regions are involved (C93). This represents appropriate scientific caution about the model's scope and generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model uses the symmetric STDP rule from Mishra et al., 2016, but the authors note that the exact details of the plasticity rule may not be critical as long as it strengthens connections between approximately co-active cells. Plasticity is also known to be modulated by brain state and may be weaker during offline states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 discuss the plasticity rule and its potential variations. The use of the Mishra et al. 2016 rule is well-justified (C78), and the authors appropriately note that other rules with similar properties might work (C79-C80). The acknowledgment of state-dependent plasticity modulation (C81) is important for interpreting the model's assumption of no plasticity during the offline phase. This represents appropriate discussion of model assumptions and their robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SWR duration in the model (up to 800 ms) exceeds typical in vivo durations (40-100 ms), though learning tasks can produce longer SWRs. The model likely lacks mechanisms for SWR termination, possibly including short-term depression or a second interneuron population providing delayed inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 identify and discuss a quantitative discrepancy between model and experiment. The experimental durations are well-cited (C82-C83), the model behavior is documented (C84-C85), and the discrepancy with Davidson et al. 2009 is noted (C86). The authors appropriately acknowledge this limitation (C87) and discuss potential mechanisms that could address it (C88-C91), including citing relevant models and experiments. This represents honest assessment of a model limitation with constructive discussion of solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The present model is compared to several previous models of hippocampal replay and SWRs. Key distinctions include: the use of experimentally observed symmetric STDP (vs. asymmetric in most prior models), autonomous SWR generation, bidirectional replay, and fitting of single-cell models to experimental data. The model is claimed to be the first spiking network model using symmetric STDP to autonomously generate SWRs and replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C107 provide detailed comparison to prior work, particularly models by Jahnke et al. 2015 (C94-C97), Malerba and Bazhenov 2019 (C98-C100), Nicola and Clopath 2019 (C101-C103), and Haga and Fukai 2018 (C105-C106). The comparisons are specific and cite key differences. The novelty claim (C104) is appropriately qualified ('to our best knowledge') and the methodological novelty claim (C107) is reasonable. These comparisons help position the work in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The results highlight previously neglected interactions between population dynamics, coding, and plasticity. Structured network interactions from learning lead to specific activity patterns (replay) that are critical for physiological population activity (sharp waves and ripples). This suggests synaptic structure may have greater control over network activity modes than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 present the broader conceptual implications of the work. These are supported by the collective findings from the model manipulations, particularly the demonstrations that learned weight structure affects both coding (replay) and dynamics (SWRs, ripples). This represents a synthesis of the main findings into a general principle about neural network function. The claims are appropriately framed as suggestions for future consideration rather than definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction reviews established knowledge about hippocampal function, including the role of place cells, theta sequences, sharp wave-ripples, replay, and the importance of area CA3. This provides context for the modeling study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 summarize well-established findings from the hippocampal literature, all supported by appropriate citations. These are background claims that provide context and motivation for the study rather than novel findings. They are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The model assumes mossy fiber input to PCs at 15 Hz mean rate, though physiological dentate gyrus granule cell firing is sparse and low-frequency, and each PC receives input from only a few mossy fibers. The authors acknowledge the actual physiological rate is likely lower but argue that other inputs (entorhinal cortex, recurrent collaterals) provide additional depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 identify a potential discrepancy between the model's external input and known physiology. The authors acknowledge this (C114-C115 are cited facts) and provide a justification based on other input sources. However, this justification is somewhat speculative and the 15 Hz rate may be higher than physiologically realistic. This represents a modeling choice that may affect quantitative aspects of the results, though the authors argue it approximates the total depolarizing drive to PCs.",
+    "result_type": "MINOR"
+  }
+]

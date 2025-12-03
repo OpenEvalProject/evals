@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Initiator IDRs (Cdt1, Orc1, Cdc6) have a unique amino acid composition characterized by uniform distribution across amino acids (lacking highly enriched residues like serine, proline, or glycine common in other phase-separating proteins) and high sequence complexity (score = 2.7), placing them among the most complex phase-separating sequences analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by the sequence heatmap analysis (Figure 1A) and complexity calculations presented in the manuscript. The data clearly show that initiator IDRs lack the enrichment patterns typical of other phase-separating proteins and have complexity scores higher than 14 of 17 other condensate-forming IDRs analyzed. The proteome-wide comparison provides appropriate context for these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Initiator phase separation (Cdt1, ORC, Cdc6) is resistant to 1,6-hexanediol treatment and does not require aromatic residues, which represent <3% of initiator IDR amino acids. Mutating all phenylalanine residues to leucine or alanine had no detectable effect on phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C55-C58 are well-supported by experimental data from depletion assays (Figure 1C) and microscopy (Figures 1B, 1F, 1G). The 1,6-HD resistance and aromatic dispensability are demonstrated for Cdt1, ORC, and Cdc6 (Figure 1\u2014figure supplement 2). The conclusion that aromaticity is dispensable for initiator LLPS in general (C129) is reasonably inferred from the low aromatic content across all three initiators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Electrostatic interactions drive DNA-dependent phase separation by Cdt1, as demonstrated by salt sensitivity (loss of condensation above 150 mM KGlutamate) and the ability of diverse polyanions (dsDNA, ssDNA, dsRNA, heparin, poly-glutamate) to equally induce phase separation, indicating nonspecific electrostatic interactions are a significant driving force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by salt titration experiments (Figure 2A) and polyanion experiments (Figure 2B). The equal propensity of structurally diverse polyanions to induce phase separation strongly supports the conclusion that nonspecific electrostatic interactions, rather than specific DNA-protein contacts, drive this process. The experimental design appropriately tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Multivalent counterions (di- and tribasic phosphate) can induce Cdt1 phase separation while monovalent counterions cannot, demonstrating that counterions contribute an adhesive force by bridging between IDRs of different Cdt1 protomers. The physiochemistry of the polyanion shapes condensate properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by the counterion experiment (Figure 2D) showing valency-dependent phase separation. The inability of monobasic phosphate to induce LLPS up to 625 mM, contrasted with the effectiveness of tribasic phosphate, provides strong evidence for a bridging mechanism rather than simple charge shielding. The morphological differences observed with tribasic phosphate further support the conclusion about polyanion physiochemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Charge patterning in Cdt1 IDR is not strictly required for phase separation, but the native distribution (with similar kappa values [0.20-0.29], FCR [0.22-0.32], and pI [9.4-11.1] across metazoan initiators) favors lower critical concentrations and increased salt resistance. A uniformly distributed charge variant (Cdt1Uniform) still phase separates but with reduced critical concentration (1 \u00b5M vs 200 nM) and altered conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C81 are supported by NCPR analysis (Figure 2E), kappa value calculations (Table 2), and phase diagram experiments (Figures 2F-G). The Cdt1Uniform mutant provides a critical test of the role of charge patterning, showing that while not strictly required, the native distribution optimizes phase separation properties. The size exclusion chromatography data (Figure 2H) provides additional support for conformational differences. The conservation of these properties across metazoan initiators but not yeast strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Intermolecular Cdt1-Cdt1 interactions can drive phase separation in the absence of DNA when induced by molecular crowding (PEG-3350). Deletion analysis shows that the C-terminal third of the IDR (residues 201-297) contributes more strongly to PEG-induced LLPS than the N-terminal or middle thirds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by PEG titration experiments (Figure 3B) and microscopy (Figure 3C) demonstrating DNA-independent phase separation. The deletion analysis (Figures 3E-F) provides evidence for differential contributions of IDR regions, though the effect is modest (~50% reduction for \u0394201-297). This establishes that inter-IDR interactions contribute to phase separation independently of DNA-bridging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The Cdt1 IDR lacks repetitive motifs, and a fully scrambled IDR variant (Cdt1ScrIDR) retains robust phase separation capacity with equivalent critical concentration (200 nM at 150 mM KGlutamate) and can recruit wild-type Cdt1, demonstrating that amino acid composition, not sequence order, is essential for self-associative capacity and heteromeric inter-IDR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 are strongly supported by dotplot analysis (Figure 3G) showing absence of repetitive motifs, and phase separation experiments with Cdt1ScrIDR (Figures 3I-J). The scrambled variant's ability to phase separate over a broader range of conditions and recruit wild-type Cdt1 (Figure 3\u2014figure supplement 3) provides compelling evidence that composition drives LLPS. The reduced recruitment efficiency suggests sequence patterns may fine-tune interactions (C95), which is appropriately noted as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Inter-IDR interactions driving PEG-induced phase separation are salt-insensitive (unaffected by 300 mM KGlutamate), while DNA-induced phase separation is salt-sensitive, demonstrating that charge-charge interactions are not a major contributor to inter-IDR interactions. This mechanism is conserved across metazoan Cdt1, Cdc6, and ORC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by salt sensitivity experiments comparing DNA- and PEG-induced phase separation (Figure 4A, Figure 4\u2014figure supplement 1). The differential salt sensitivity provides clear evidence that inter-IDR interactions are not primarily electrostatic. The extension to ORC and Cdc6 (Figure 4\u2014figure supplement 1) supports the generalization to metazoan initiators, though the data are less extensive than for Cdt1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Initiator IDRs are enriched in branched hydrophobic residues (Leu, Ile, Val) compared to other disordered domains (fraction-L,I,V in top 25% proteome-wide), with these residues distributed throughout the sequence. Mutating half or all Ile/Leu to Ala (Cdt1Ile/Leu(0.5) and Cdt1Ile/Leu(1.0)) severely impaired PEG-induced phase separation, demonstrating these residues mediate cohesive inter-IDR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 are well-supported by proteome-wide composition analysis (Figures 4B-D) and mutagenesis experiments (Figure 4F). The enrichment of branched hydrophobics is clearly demonstrated, and the distribution analysis (Figure 4E) shows they are well-dispersed. The Ile/Leu mutants show dramatic loss of PEG-induced phase separation (only 27% and 19% depletion vs nearly 100% for WT), providing strong evidence for their role in inter-IDR interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Cdt1Ile/Leu(0.5) and Cdt1Ile/Leu(1.0) are separation-of-function mutants that bind DNA with wild-type affinity (Kd ~67-106 nM vs 69 nM for WT) but show marked reduction in DNA-induced phase separation (63-73% protein retention vs 8% for WT), with 25-fold increased critical concentration and >60% reduction in droplet DNA content, demonstrating that cohesive inter-IDR interactions are critical for phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are strongly supported by EMSA data (Figure 5A) showing preserved DNA binding, and phase separation assays (Figures 5B-F) showing severely impaired LLPS despite normal DNA binding. This separation-of-function phenotype provides compelling evidence that inter-IDR interactions, not DNA binding per se, are the primary driver of phase separation. The quantitative measurements of critical concentration and droplet composition strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Phase separation by Cdt1 results from synergy between electrostatic DNA-bridging interactions and hydrophobic inter-IDR contacts. Both depend on sequence composition (not order), are resistant to 1,6-hexanediol, and do not depend on aromaticity. Inter-IDR interactions serve as the primary driving force, with DNA-mediated bridging playing a secondary but facilitative role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C42-C44 represent the central findings of the manuscript, synthesizing results from multiple experimental approaches. The synergistic mechanism is supported by: (1) salt sensitivity showing electrostatic DNA interactions (Figure 2A), (2) polyanion experiments showing bridging (Figure 2B), (3) PEG experiments showing inter-IDR interactions (Figure 3), (4) hydrophobic residue enrichment (Figure 4), and (5) separation-of-function mutants showing inter-IDR interactions are primary (Figure 5). The comprehensive experimental evidence strongly supports this two-component mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "DNA is required to induce initiator phase separation at physiological conditions (without crowding agents), serving as an essential nucleating factor that restricts LLPS to chromatin context. Other anionic biopolymers (RNA, heparin) can also induce phase separation, showing scaffold promiscuity similar to other LLPS systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by prior work (C122, citation to Parker et al., 2019) and the polyanion experiments (C124, Figure 2B). The conclusion about DNA as a nucleating factor (C123) is a reasonable inference from the requirement for DNA at physiological conditions combined with the ability of inter-IDR interactions to drive LLPS under crowding. The comparison to fibrillarin (C125) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Interactions between Cdt1 IDRs are facilitated by branched hydrophobic residues, distinguishing initiators from other phase-separating systems. Unlike NICD (which relies primarily on aromatics) or elastin (which has repetitive hydrophobic motifs and doesn't require counterions), initiator IDRs have distributed hydrophobics and require counterion-mediated interactions, suggesting weaker inter-IDR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 provide important comparative context for the findings. The distinctions from NICD (C131-C132, supported by citations) and elastin (C133-C136, supported by data and citations) are well-documented. The speculation about weaker inter-IDR interactions in initiators (C137) is appropriately labeled as such and represents a reasonable interpretation of the requirement for counterions despite similar hydrophobic content to elastin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The Cdt1 IDR can be fully scrambled without losing condensate-forming ability, and scrambled condensates can recruit wild-type Cdt1. This demonstrates the importance of sequence composition (not order) in driving phase separation and facilitating partner protein interactions, consistent with the 'like-recruits-like' concept where proteins with similar compositional features but no sequence homology can cocondense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 synthesize the scrambling experiments (Figures 3I-J, Figure 3\u2014figure supplement 3) with broader implications for LLPS mechanisms. The experimental support is strong for Cdt1, and the comparison to NICD and transcription factors (C140-C141, supported by citations) provides appropriate context. The connection to the 'like-recruits-like' concept (C142-C144) is well-supported by the cocondensation of Cdt1, ORC, and Cdc6 despite lack of sequence homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Metazoan Cdt1 orthologs have no identifiable sequence identity across disordered domains but share similar amino acid composition, and the capacity to phase-separate is conserved across metazoan initiators (confirmed for human Cdt1, Orc1, and Cdc6), suggesting certain classes of disordered domains can have conserved functionality without linear sequence identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 are supported by sequence analysis (Figure 5\u2014figure supplement 2A-B) and citations to prior work demonstrating phase separation in human initiators. The conclusion about conserved functionality without sequence identity (C149) is a reasonable inference from the combination of compositional similarity and functional conservation. This represents an important conceptual advance in understanding IDR evolution and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "While amino acid composition is the primary determinant of initiator LLPS, short sequence motifs (particularly CDK phosphorylation sites) play critical roles in modulating condensation. Sequence conservation within Drosophila genus indicates evolutionary pressure on sequence order. CDK phosphorylation sites are conserved across metazoan Cdt1s, and phosphorylation abrogates condensate formation, suggesting phospho-tunable phase separation is a broadly conserved regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C158 are supported by sequence conservation analysis (Figure 5\u2014figure supplement 2C-E) and citations to prior work on CDK regulation. The conservation of CDK sites across metazoans (C156-C157) is clearly demonstrated, and the functional importance of phosphorylation (C154-C155) is supported by citations. The prediction about broad conservation of phospho-tunable LLPS (C158) is a reasonable inference from the sequence conservation data, though it remains to be tested experimentally in most species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C166"
+    ],
+    "result": "The identification of separation-of-function mutants (scrambled IDR that supports LLPS in vitro, and Ile/Leu mutants that bind DNA but don't phase separate) provides tools to investigate the molecular grammar of initiator LLPS and test the impact of phase separation in vivo, with implications for understanding chromatin association kinetics and MCM recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 and C166 appropriately identify the significance of the mutants generated in this study for future work. The scrambled IDR (Figure 3) and Ile/Leu mutants (Figure 5) represent valuable tools for dissecting LLPS mechanisms in vivo. The statement about implications (C160) is reasonable given the demonstrated separation-of-function phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Mitotic chromosomes are rigid structures, and initiators are predicted to condense on their surface without altering shape. A switch-like transition in initiator localization during anaphase is predicted to result from phosphorylation-dependent control of self-assembly, producing a dense replication-competent zone for genome-wide MCM loading in late mitosis when transcriptional conflicts are minimized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C165 combine established knowledge about mitotic chromosomes (C161, C163, C165 supported by citations) with predictions about initiator behavior (C162, C164). While the predictions are reasonable given the in vitro data and prior observations of initiator localization, they remain to be directly tested. The model is plausible but lacks direct experimental support for the predicted mechanism in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The Drosophila Dbf4 homolog Chiffon contains an IDR (residues 903-1209) with compositional similarity to initiator-type IDRs, suggesting such sequences may be present in chromatin-associated factors beyond replication licensing components, and that DNA-dependent phase separation may have broad utility for chromatin-localized factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C170 are based on sequence analysis (Figure 5\u2014figure supplement 3) showing compositional similarity between Chiffon and initiator IDRs. While the observation is interesting, the functional significance remains speculative (C169-C170). No experimental data are provided to test whether Chiffon undergoes phase separation or copartitions with initiators. This represents an interesting hypothesis for future work but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C171"
+    ],
+    "result": "The mechanism described for Cdt1 phase separation likely extends to the other replication initiation factors, ORC and Cdc6, based on high IDR compositional homology and ability to form comingled phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C171 is supported by compositional analysis showing similar IDR properties across initiators (Table 2, Figure 1A), and prior work showing comingled phase formation (citation to Parker et al., 2019). While the detailed mechanistic studies focused on Cdt1, key experiments with ORC and Cdc6 (1,6-HD resistance, PEG-induced LLPS, salt sensitivity) support the generalization. The conclusion is reasonable given the available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background claims establishing the field context: LLPS of IDRs drives membraneless compartment formation with compositional specificity; condensates can be spherical or non-spherical depending on scaffolds; protein multivalency and IDRs contribute to LLPS; many condensates are sensitive to 1,6-HD and rely on aromatic residues; charged residues can facilitate phase separation; and membraneless organelles have compositional bias suggesting a molecular sorting code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C16, C28-C29, C32-C38 represent established knowledge in the LLPS field, supported by appropriate citations to prior work. These provide necessary context for the current study and are accurately represented. The citations appear appropriate and the statements align with current understanding of LLPS mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C39"
+    ],
+    "result": "Prior work on initiator LLPS: Metazoan replication initiators (ORC, Cdc6, Cdt1) undergo DNA-dependent LLPS in vitro and bind chromosomes in vivo; initiator IDRs are required for chromatin binding and viability but dispensable for ATP-dependent DNA binding and MCM loading in vitro; initiator condensates selectively recruit replication partners; and LLPS may enhance helicase loading kinetics during a narrow cell cycle window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C17-C27, C31, C39 summarize prior work by the authors and others, appropriately supported by citations. These establish the foundation for the current mechanistic study. The statements accurately represent the cited work and provide necessary context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C45"
+    ],
+    "result": "Concluding claims: The findings demonstrate that distinct sets of interactions drive condensate formation and specificity across different phase-separating systems, and reinforce that biomolecular condensates can form by a variety of different molecular interaction types, advancing efforts to predict IDR LLPS propensity and partner selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C45 represent appropriate conclusions from the experimental findings. The demonstration that initiator LLPS uses a distinct mechanism (hydrophobic inter-IDR interactions + electrostatic DNA bridging, without aromatic residues or 1,6-HD sensitivity) compared to many other systems supports the conclusion about diversity of LLPS mechanisms. This advances the field's understanding of the molecular grammar of phase separation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Insect compound eyes have a fundamentally different structure from mammalian visual systems, consisting of ommatidia with fixed optical properties that vary across eye regions, castes, and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish well-documented background knowledge about insect vision and compound eye structure. All claims are supported by appropriate citations to established literature (Wiederman et al., 2017; Wehner, 2020; Land and Nilsson, 2002; etc.) and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous compound eye models have demonstrated benefits of wide field of view and non-visible light sensing, but all contemporary models sample from a single viewpoint, unlike real compound eyes which provide multi-viewpoint information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 accurately summarize prior work on compound eye models and identify a key limitation. The claims are well-supported by multiple citations and the inference about single-viewpoint sampling (C15) is reasonable given the cited literature. The contrast with real multi-viewpoint systems (C16) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous high-fidelity compound eye rendering engines existed but were not widely adopted due to slow rendering speeds, though modern GPU ray-tracing hardware now enables high-speed multi-location visual data capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 establish the technological context and motivation for the work. The claims about previous systems being slow (C18) and not widely adopted (C17) are supported by citations, and the emergence of dedicated ray-tracing hardware (C19) is well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C77",
+      "C78"
+    ],
+    "result": "CompoundRay achieves rendering speeds of over 3000 frames per second for bee eyes with 6000 ommatidia and rendered 3.3 million training images in 2 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C77, and C78 report specific performance metrics that are supported by experimental data presented in the manuscript (particularly Figure 10). The performance claims are concrete, measurable, and consistent with the benchmarking results shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Ray-casting methods are more suitable than polygon projection for compound eye rendering because compound eyes form multiple imaging points, though ray-based approaches are computationally complex. Modern GPU ray-tracing hardware addresses this complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 establish the technical rationale for using ray-casting over projection-based rendering. The reasoning is sound and supported by both established knowledge of rendering techniques and appropriate citations. The inference about projection methods struggling with multiple imaging points (C23, C30) is logically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CompoundRay uses Monte Carlo integration with stochastic frame-by-frame sampling modulated by a Gaussian function to estimate light intensity, which reduces structured aliasing compared to static sampling patterns used in previous works.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 describe the core sampling methodology. The approach is clearly explained with appropriate citations (Kajiya, 1986; Collins, 1998; Polster et al., 2018). The advantage of stochastic over static sampling (C36-C37) is demonstrated in Figure 3. The trade-off of frame-to-frame variation (C39) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CompoundRay is implemented in C++ and CUDA, uses glTF file format for scene storage, and employs two rendering pipelines (ommatidial and display) built on Nvidia's Optix framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 describe the software architecture and implementation details. These are explicit statements about the software design supported by Figure 4 and appropriate citations (Robinet et al., 2014; Parker et al., 2010). The technical details are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Three virtual eye models (real, split, single) were created from Apis mellifera scans and compared using an MLP network trained to localize a point as a proxy for spatial awareness, chosen because direct comparison between dissimilar eye designs is challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 describe the experimental design. The methodology is clearly explained with appropriate citations (Baird and Taylor, 2017; van Praagh et al., 1980; etc.). The rationale for using indirect comparison via a proxy task (C54-C55) is well-justified. The MLP architecture (C58) and dataset size (C59) are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Performance was benchmarked in a lab environment and a natural environment constructed from drone photogrammetry over rural Harpenden, UK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe the benchmarking environments. The lab environment is appropriately cited (Ofstad et al., 2011) and the natural environment methodology is clearly described. The data source for the natural environment is identified though noted as subject to upcoming publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CompoundRay supports arbitrary ommatidial arrangements and heterogeneous optical properties, which are important for avoiding blind spots and oversampling while minimizing ommatidial count.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 demonstrate key software capabilities. Support for arbitrary arrangements (C62) and heterogeneous properties (C63) is clearly shown in Figures 6 and 7. The importance of heterogeneous configurations (C64) is demonstrated visually in Figure 7, though the inference could benefit from quantitative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The required sampling rate is positively correlated with visual complexity, and a 1% standard deviation threshold was used to determine minimum sample counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe the sampling rate determination methodology. The correlation with visual complexity (C65) is demonstrated in Figures 8-9. The 1% threshold (C66) is explicitly stated and justified. The approach is reasonable though somewhat arbitrary in threshold choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RTX series GPUs significantly outperform older cards in larger environments and at higher ray counts, though older cards perform better in small environments at low ray counts, possibly due to RT core overhead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report performance comparisons supported by Figure 10 data. However, C69's explanation of the counterintuitive result is explicitly speculative and lacks supporting evidence. The performance data itself is solid, but the mechanistic explanation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 'real' eye design achieved lower validation error than 'split' and 'single' designs in point localization. Differences between 'real' and 'single' models appear at field-of-view edges due to parallax, while 'real' vs 'split' differences occur in forward-facing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 report experimental results supported by Figure 11. The performance differences (C70-C71) are clearly shown in Figure 11a. The spatial patterns of differences (C72, C74) are visible in Figure 11b-c. The mechanistic explanations (C73, C75) are reasonable inferences though not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "CompoundRay addresses the need for fast compound eye rendering and enables new investigations into eye design benefits, integration of real eye scans with mapped environments, and modeling of microsaccadic sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C79-C81 discuss the software's impact and potential applications. C76 is well-supported by the demonstrated performance. However, C79-C81 are largely speculative about future applications, supported by citations but not demonstrated in this work. These represent potential rather than realized capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Direct comparison between eye designs with dissimilar surfaces is fundamentally difficult unless surfaces are affine transformations of one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 makes a valid geometric argument about the difficulty of comparing non-affinely-equivalent surfaces. This is a reasonable inference from geometric principles and helps justify the indirect comparison methodology used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CompoundRay currently outputs 8-bit color images but uses 32-bit floating-point internally, and could be extended to support UV lighting, polarization, and more realistic photoreceptor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe current limitations and future extensions. C84-C85 accurately describe the current implementation. C83 discusses potential extensions supported by appropriate citations, though these are speculative future work rather than current capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "CompoundRay is provided as an open-source library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is an explicit statement about software availability with a GitHub URL provided. This is directly verifiable and represents an important contribution to the field.",
+    "result_type": "MINOR"
+  }
+]

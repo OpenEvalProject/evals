@@ -1,0 +1,543 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study identified 7024 active cerebellar enhancers through ChIP-seq profiling of H3K27ac and H3K4me1 at E12, P0, and P9, with high reproducibility between biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 demonstrate technical reproducibility (C1, C2) and provide clear quantitative results for enhancer identification (C3, C4). The methodology is standard for the field and the numbers are explicitly stated with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Identified enhancers show correlation with expression of known cerebellar developmental genes (Ascl1 and Pax6), validating the enhancer identification approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide validation examples showing correspondence between enhancer activity (H3K27ac signal) and gene expression patterns for two well-characterized cerebellar genes. This correlation analysis supports the biological relevance of identified enhancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The identified cerebellar enhancers show substantial overlap (>90% for some comparisons) with previously published enhancer datasets, with H3K27ac peaks showing higher predictive value than chromatin accessibility data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 demonstrate validation through comparison with multiple independent datasets (Frank et al., Gorkin et al., EnhancerAtlas, VISTA). The high overlap percentages and comparative analysis support the quality of the enhancer calls, though claim C15 about predictive superiority is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "89% of cerebellar enhancers show dynamic, temporally-specific activity patterns, classified as Early (embryonic, n=4432) or Late (postnatal, n=1273) active enhancers, with P0 showing limited stage-specific activity potentially due to technical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 present differential binding analysis with appropriate statistical thresholds (adjusted p\u22640.05). The temporal classification is well-supported by data (C22-C24), though the authors appropriately acknowledge potential technical limitations at P0 (C20-C21) that may affect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Early enhancers show broad activity across multiple brain regions (69.8% active in hindbrain, midbrain, and forebrain), while Late enhancers are more cerebellum-specific, with 467 enhancers (6.7%) active exclusively in cerebellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 demonstrate systematic comparison with ENCODE brain region data. The overlap analysis is quantitative and shows clear temporal differences in regional specificity. The finding of cerebellum-specific enhancers (C31-C32) is well-supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "90.1% of robust cerebellar enhancers overlap with CREs identified by snATAC-seq, with predicted cell-type activity showing Early enhancers in progenitors and Late enhancers in granule cells, validated by chromatin accessibility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 integrate bulk ChIP-seq data with single-cell chromatin accessibility data (Sarropoulos et al., 2021). The high overlap (C36) and cell-type predictions (C37-C39) are supported by accessibility dynamics (C40-C42) that match expected temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Motif enrichment analysis reveals distinct transcription factor binding sites in Early versus Late enhancers, with TF expression patterns correlating with enhancer activity timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 describe standard motif enrichment analysis (HOMER) with appropriate statistical thresholds (adjusted p<1E-11). The correlation between TF expression and enhancer activity (C47-C50) provides validation, though the causal relationship (C50) is appropriately stated as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Early enhancers are enriched for motifs of known cerebellar TFs (Ascl1, Meis2, Atoh1) and novel TFs (Sox4, Lhx2, Rfx4, Pou3f1, Pax3), while Late enhancers show enrichment for differentiation-related TFs (Neurod1, Nfia/b/x, NF1) and proliferation-related TFs (Pax6, Smad4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 identify specific enriched motifs with known (C52, C56, C57) and novel (C53-C54) roles in cerebellar development. The distinction between Early and Late TF functions is supported by literature citations and represents a coherent biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pax3 is identified as a novel marker for GABAergic progenitors and interneuron precursors, showing robust expression in the ventricular zone with 50% colocalization with Ptf1a and 76-91% colocalization with Pax2, peaking at E12 and declining postnatally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C76 provide comprehensive characterization of Pax3 through immunofluorescence (C60-C71), expression profiling (C72), and single-cell data (C73-C74). The quantitative colocalization data support the GABAergic identity, though discrepancies with single-cell data (C75) are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Target gene prediction identified 2261 genes for 70.61% of enhancers (average r=0.86), with significant enrichment for cerebellar phenotype genes (p=0.0405), validating the correlation-based approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe a correlation-based target gene prediction method with appropriate validation through permutation analysis (C81). The high correlation coefficients (C78) and enrichment of known cerebellar genes (C80-C81) support the validity of predictions, though correlation does not prove direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Early enhancer target genes cluster into 4 groups with distinct spatial expression patterns and GO enrichments, including Cluster 1 enriched for axonogenesis and Purkinje cell development, and Clusters 3-4 showing ventricular zone and nuclear transitory zone expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 present k-means clustering with spatial validation through ISH data (C85-C87) and functional validation through GO enrichment (C88-C90). The integration of expression patterns with known gene functions provides strong support for spatially-specific enhancer regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "1111 Early enhancers contain Pax3 motifs with 923 having predicted target genes enriched for neural progenitor functions, including known GABAergic genes Ascl1 and Neurog2 with similar spatial expression to Pax3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 link Pax3 motif presence to target gene function through GO enrichment (C94) and spatial expression validation (C96). This provides functional context for Pax3's role identified in earlier claims, with appropriate literature support (C95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Late enhancer target genes cluster into 4 groups with distinct spatial patterns (granule cell genes in Clusters 1/3, Purkinje cell genes in Clusters 2/4), with combined GO enrichment for postnatal neuronal processes including neuron death, neurotransmitter transport, and synaptic vesicle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 show parallel analysis to Early enhancers with spatial validation (C99-C101). The lack of cluster-specific GO terms (C102) but presence of combined enrichment (C103) suggests shared postnatal functions across clusters, which is a reasonable biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Filtering Late Cluster 1 genes by Atoh1 binding and differential expression in Atoh1-null mice reduced candidates from 254 to 26 genes, identifying 4 novel genes (Bhlhe22, Purb, Klf13, Sox18) and 11 known granule cell genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 describe a rational filtering strategy using published Atoh1 ChIP-seq and knockout data. The presence of 11 known genes (C110-C111) validates the approach, making the 4 novel genes (C112) credible candidates for further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Bhlhe22 is identified as a novel granule cell gene with an Atoh1-bound enhancer (r=0.98 with expression), showing expression in differentiating (98% Neurod1+), maturing (82% NeuN+), and migrating (95% Dcx+) granule cells, with high expression in mouse and human granule cells by scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 provide comprehensive characterization through enhancer-expression correlation (C115), immunofluorescence colocalization (C118-C120), and single-cell validation (C121-C122). The high correlation and colocalization percentages strongly support Bhlhe22's role in granule cell development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Bhlhe22 knockdown in granule cell cultures reduces expression by 50%, impairs migration by 50% (54.2 vs ~100 \u00b5m), and decreases expression of cell adhesion molecules (Efnb1, Efnb2, Tag1, Cdh2, Astn2) and Dcx, revealing a novel role in regulating granule cell migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130 present in vitro functional validation with appropriate controls and quantification. The 50% knockdown (C123) produces specific migration defects (C125-C127) without affecting neurite outgrowth (C124), and the reduction in migration-related genes (C128-C129) provides a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "ASD-associated SNPs are significantly enriched in cerebellar enhancers (p=2.34E-03) and H3K27ac peaks at all three ages (p=1.29E-03 to 1.42E-04), with no enrichment for chronic kidney disease SNPs (negative control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 use GREGOR enrichment analysis with appropriate negative control (C133). The significant p-values across multiple datasets (C131-C132) and lack of enrichment in the negative control support specific association with ASD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "13 cerebellar enhancers contain ASD-associated SNPs with 12 predicted target genes, including 3 SFARI ASD risk genes (PAX6, TCF4, ZMIZ1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 identify specific enhancer-gene associations with validation through the SFARI database. The presence of known ASD risk genes (C135) supports the biological relevance of the enrichment analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "De novo mutations (SNVs and indels) in cerebellar enhancers and H3K27ac peaks show enrichment in ASD-affected individuals (OR=1.04-1.10), with statistical significance achieved when datasets are combined (OR=1.06, p=0.0043).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 analyze DNMs from large cohorts (MSSNG and SSC). While individual datasets lack significance (C137), the combined analysis reaches significance with modest effect size, which is typical for complex disorders. The approach is statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "An ~11 kb de novo deletion overlaps a cerebellar enhancer predicted to regulate CDC42BPB (previously implicated in neurodevelopmental disorders), with the enhancer conserved between mouse and human, and CDC42BPB expressed in lateral cerebellar granule cells and glutamatergic cerebellar nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C145 identify a candidate ASD-associated CNV through multiple lines of evidence: visual validation (C141), conservation (C142), and relevant expression pattern (C143-C145). While a single case, the convergence of evidence and prior association with neurodevelopmental disorders (C140) make this a strong candidate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The study provides a comprehensive atlas of 7024 cerebellar enhancers with temporal activity patterns, TF binding sites, target genes, and cell-type predictions, made available through an online resource (Developmental Cerebellum Enhancer Atlas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C153 summarize the main contributions of the study. The creation of a publicly accessible resource (C150-C152) with comprehensive annotations enhances the impact and utility of the work, as demonstrated by the Pax3 and Bhlhe22 discoveries (C153).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The findings support temporally-specific enhancer activity during neuronal development, consistent with previous studies showing distinct enhancer signatures between neural progenitors and mature neurons in terms of histone modifications, DNA methylation, and chromatin conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C162 place the results in context of prior literature (Bonev et al., Lister et al.). The agreement with previous findings in other brain regions (C155-C160) strengthens the interpretation of temporal specificity in cerebellar development (C161-C162).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Pax3 and Bhlhe22 exemplify temporally-specific enhancer regulation, with Pax3 previously linked to cerebellar disorders (upregulated by BDNF/NGF, downregulated in Group 3 medulloblastomas, associated with Dandy-Walker Syndrome) and Bhlhe22 showing similar regulatory patterns to cortical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C168 connect the novel findings to existing literature on both genes. The prior associations with cerebellar phenotypes (C163-C165) and cortical development (C167) support the biological relevance of the discoveries, though these are primarily literature-based contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Enhancer activity shows cell-type specificity, with Early enhancer target genes showing sharp spatial boundaries between glutamatergic and GABAergic lineages (Clusters 3/4) and Late enhancers distinguishing granule cells from Purkinje cells (Clusters 1/3 vs 2/4), similar to patterns in telencephalon development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C177 integrate the results with single-cell chromatin accessibility data (C170, C172) and compare to other brain regions (C176). The spatial specificity of target gene expression (C174-C175, C177) supports cell-type-specific enhancer function, consistent with adult brain studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Cell-type-specific enhancer signatures are reflected in GO term enrichments and target gene functions, consistent with adult brain studies showing region-specific and cell-type-specific enhancer-promoter interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C183 synthesize the functional annotation results with literature on adult brain enhancers (Blankvoort et al., Nott et al.). The GO enrichment patterns (C181) support cell-type specificity, and the framework for gene placement (C182) represents a useful resource for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The bulk tissue approach preferentially identifies enhancers in abundant cell types (progenitors for Early, granule cells for Late), with the authors acknowledging this limitation and suggesting single-cell histone modification approaches for rare cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C188 provide appropriate critical assessment of the methodology's limitations (C186) and suggest future directions (C187-C188). This transparent discussion of technical constraints strengthens the overall evaluation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Early enhancers show pleiotropic activity across brain regions, consistent with previous studies showing 52% of enhancers active in multiple organs and context-dependent TF binding site usage, with future single-cell studies needed to fully characterize cross-cell-type enhancer function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C197 contextualize the multi-region activity findings with extensive literature on pleiotropic enhancers (Nord et al., Preger-Ben Noon et al., Hiller et al.). The discussion appropriately identifies knowledge gaps (C196-C197) requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "Cerebellar enhancers are enriched for ASD-associated variants, with target genes including PAX6 (SFARI ASD risk gene), which causes aberrant glutamatergic cell development in mouse cerebellum, shows autistic-like behavior in animal models, and is linked to WAGR syndrome (ASD comorbidity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C204 connect the enrichment analysis to specific genes with strong prior evidence for ASD association (C200-C203). The convergence of genetic, developmental, and behavioral evidence for PAX6 (C201-C203) supports the biological relevance of the enhancer enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "CDC42BPB, a target of an enhancer deleted by a de novo CNV, has been recently associated with neurodevelopmental disorders including ASD, encodes a regulator of cytoskeletal reorganization and cell migration, and shows expression in lateral cerebellar granule cells associated with cognitive functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C209 provide detailed characterization of a candidate ASD-associated gene. The recent association with neurodevelopmental disorders (C206), relevant molecular function (C207), complete enhancer deletion (C208), and expression in cognitively-relevant regions (C209) make this a compelling candidate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "The study provides an atlas of active enhancers during cerebellar development, demonstrates utility through discovery of novel TF functions (Pax3, Bhlhe22), and offers an online resource for confirmatory and discovery purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C212 summarize the overall contributions. The demonstration of utility through novel discoveries (C211) and creation of a public resource (C212) represent significant contributions to the field, though claim C212 about future utility is somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

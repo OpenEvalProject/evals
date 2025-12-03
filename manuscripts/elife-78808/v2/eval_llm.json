@@ -1,0 +1,435 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "FIO1 is required for m6A modification of U6 snRNA in Arabidopsis. This was demonstrated through m6A immunopurification experiments showing that U6 snRNA is enriched in anti-m6A immunoprecipitates from wild-type plants but significantly depleted in fio1 mutants, while U2 snRNA enrichment remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by multiple independent experiments using two different anti-m6A antibodies (C81-C83) and RT-qPCR quantification (C80). The specificity is demonstrated by the unchanged U2 snRNA enrichment (C82), serving as an appropriate control. The findings are consistent with recent reports (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "A two-step mutant screen identified fio1 mutants that show early flowering and increased MAF2 intron 3 retention at low temperature. The causal mutation was mapped to AT2G21070 (FIO1), encoding the Arabidopsis METTL16 orthologue, through bulk segregant analysis and confirmed by allelism testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic mapping is well-executed with appropriate controls (C63: 100% vs 0% early flowering in crosses). Multiple independent alleles (fio1-1, fio1-3, fio1-4) show consistent phenotypes (C64-C66), strengthening the conclusion. The identification is supported by both molecular mapping (C60-C61) and functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "FIO1-dependent m6A sites in poly(A)+ mRNA are rare or absent. LC-MS/MS showed only a 6.7% decrease in m6A levels in fio1-1 compared to 81.8% in fip37-4. Nanopore DRS analysis revealed that only 7.6% of modification sites were altered in fio1-1, with 85.8% of these also altered in fip37-4, indicating indirect effects through the METTL3-like writer complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion is well-supported by orthogonal approaches (LC-MS/MS and nanopore DRS) with appropriate controls (fip37-4). The miCLIP validation (C74-C75) strengthens the interpretation that most fio1-1-specific sites are false positives. The lack of FIO1-dependent methylation in SAM synthetase transcripts (C76) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C98",
+      "C99"
+    ],
+    "result": "Widespread changes in pre-mRNA splicing occur in fio1 mutants, with alternative 5'SS usage being more prominent (34.4%) than in temperature-dependent splicing (18.6%). The predominant molecular phenotype is major disruption to splicing patterns in a manner mostly independent of temperature, with 2369 changes in 5'SS choice identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis is well-powered with 6 biological replicates and deep sequencing (3.6 billion mapped read pairs total). The statistical analysis using GLMs and appropriate multiple testing correction (5% FDR) is rigorous. The temperature-independence of most splicing changes (C88: 64.2%) is clearly demonstrated, though some temperature-sensitive effects exist (C89-C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Alternative 5'SS selection in fio1-3 can be explained by sequence features at U5 and U6 snRNA interaction sites. 5'SSs with //GURAG motifs (U6 recognition) are sensitive to FIO1 loss, while alternative 5'SSs with AG//GU motifs (U5 recognition) are preferentially used. Remarkably, 78.6% of 5'SS changes can be separated by the presence/absence of A at the +4 position, with 61.8% showing A\u2192B+4 switches (58.8% being A\u2192U+4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis is comprehensive and statistically rigorous (G-test p<1\u00d710^-16 for base composition differences). The mechanistic interpretation is supported by structural data from human spliceosomes (C114) and consistent with known U5/U6 recognition patterns (C103, C105). The suppression of effects by strong U5 interactions (C124) demonstrates cooperative roles. The high predictive power of the +4 position (78.6%) is remarkable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C142"
+    ],
+    "result": "Changes in intron retention in fio1-3 follow the same sequence rules as alternative 5'SS selection. Introns with increased retention (55.8%) have A+4 and weaker U5 interactions, while introns with decreased retention (44.2%) have U+4 and stronger U5 interactions, suggesting that loss of m6A from U6 snRNA increases splicing efficiency of introns with U+4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of 2576 introns with altered retention is well-supported by both Illumina RNA-seq and orthogonal nanopore DRS validation (C130). The sequence analysis (C129, C132) is consistent with the 5'SS selection rules. The inference about U+4 introns being more efficiently spliced without m6A (C133) is logical but could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Exon skipping patterns in fio1-3 are explained by differential 5'SS recognition at upstream and downstream introns. When exon skipping increases, downstream introns have more A+4 5'SSs while upstream introns have stronger U5 interactions. Conversely, when exon inclusion increases, upstream introns have A+4 while downstream introns have U+4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of 442 exons with altered skipping is supported by sequence analysis and specific examples (MAF3, PTB1). However, the mechanistic interpretation regarding exon definition (C141) is speculative. The patterns are consistent with the overall model of U5/U6 cooperation, but the causal relationship between 5'SS strength and exon definition could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "U6 snRNA interactions at 5'SSs influence 3'SS choice. When U6 recognition of 5'SS is favored (m6A:A+4 in WT or A:U+4 in fio1-3), distal 3'SSs are preferentially used. When U6/5'SS interaction is weaker, upstream 3'SSs are more likely used. This effect is independent of 3'SS motif composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of 1484 alternative 3'SS events is comprehensive, with orthogonal validation by nanopore DRS (C149). The demonstration that the effect is independent of 3'SS motif (C153-C154) through careful stratification strengthens the conclusion. However, the mechanistic link between 5'SS/U6 interaction strength and 3'SS selection is inferred rather than directly demonstrated. The model is plausible but would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Reanalysis of three independent published datasets confirms widespread splicing disruption in fio1 mutants. The previous failures to detect splicing changes are explained by under-powered datasets and methodological limitations. Reanalysis identified 384-947 alternative 5'SS events across different studies, with 82.4% overlap between datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reanalysis is thorough and identifies specific technical issues (low replicate numbers, PCR bias in Wang et al.). The high overlap between independent datasets (82.4% for common events between fio1-1 and fio1-5) validates the findings. The orthogonal confirmation using nanopore DRS from multiple sources strengthens the conclusion. This effectively addresses contradictory prior claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C10",
+      "C11"
+    ],
+    "result": "Two major classes of 5'SS exist in diverse eukaryotes: //GURAG (strong U6 interaction) and AG//GU (strong U5 interaction). U5 and U6 PSSM scores are negatively correlated in Arabidopsis (\u03c1=-0.36), C. elegans (\u03c1=-0.38), D. melanogaster (\u03c1=-0.30), D. rerio (\u03c1=-0.36), and H. sapiens (\u03c1=-0.17), all with p<1\u00d710^-16. These classes occur with approximately equal frequency in metazoan genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational analysis across five species is rigorous with highly significant correlations. The PSSM approach is appropriate for quantifying interaction potential. The consistency across diverse eukaryotes (despite varying correlation strengths) supports the generality of the finding. The equal frequency of the two classes in metazoans (C170) is an important observation. However, the weaker correlation in humans (\u03c1=-0.17) suggests species-specific differences that warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C212"
+    ],
+    "result": "Alternative 5'SS pairs show complementary U5 and U6 interaction strengths. In Arabidopsis, U5 and U6 PSSM log-odds ratios for alternative 5'SS pairs are negatively correlated (\u03c1=-0.25, p<1\u00d710^-16), with stronger correlation in humans (\u03c1=-0.40) but weaker in C. elegans (\u03c1=-0.15) and absent in D. rerio (\u03c1=-0.01). This suggests that changing relative favorability of U5/U6 interactions could contribute to alternative splicing regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of annotated alternative 5'SS pairs is well-executed with appropriate statistical testing. The species-specific differences in correlation strength are interesting but complicate the generalization. The absence of correlation in D. rerio (C174) suggests this mechanism may not be universal. The conclusion that this could contribute to alternative splicing (C175) is reasonable but somewhat speculative without experimental manipulation of U5/U6 interaction strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The early flowering phenotype of fio1 results from splicing changes affecting multiple floral regulators. FT and SOC1 (flowering promoters) are increased, while FLM, MAF2, MAF3, MAF4, MAF5, and FLC (floral repressors) are reduced. MAF2 intron 3 retention is increased but remains temperature-responsive, indicating FIO1 is not the thermosensor. Splicing changes also affect circadian modulators (LHY, WNK1) and AtSAR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene expression changes are well-documented by RNA-seq with appropriate replication. The temperature-responsiveness of MAF2 intron 3 in fio1 mutants (C177) is an important control showing FIO1 is not the thermosensor. However, the causal link between splicing changes and the flowering phenotype is largely correlative. The reduction in FLC sense and antisense transcripts without splicing changes (C95) suggests additional regulatory mechanisms. Genetic epistasis experiments would strengthen the causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C189",
+      "C8",
+      "C12"
+    ],
+    "result": "The major effect of FIO1 occurs through m6A modification of U6 snRNA and its interaction with 5'SSs. The vast majority of fio1-sensitive splicing events can be explained by simple sequence rules: when U6 is m6A-modified, 5'SSs with A+4 are favored; without m6A, 5'SSs with U+4 and/or stronger U5 interactions are favored. Almost 80% of FIO1-dependent 5'SS choices can be separated by the +4 position identity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central conclusion of the paper, well-supported by multiple lines of evidence including m6A immunopurification, RNA-seq analysis, sequence analysis, and cross-species comparisons. The high predictive power of the +4 position (80%) is remarkable. The simple rules (C186-C187) are supported by extensive data. However, the 20% of events not explained by +4 position alone indicate additional complexity. The mechanistic basis for m6A:A+4 preference is inferred from structural and biophysical data rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C58"
+    ],
+    "result": "Findings in Arabidopsis are similar to S. pombe mtl16\u0394 strains, where U5 and U6 snRNAs have cooperative and compensatory roles in 5'SS selection dependent on sequence. In both species, most splicing changes can be explained by m6A modification impact on U6 recognition of 5'SS+4 or relative U5/U6 interaction strength. S. pombe experiments show defective splicing can be rescued by strengthening U5 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to S. pombe strengthens the conclusions by demonstrating conservation across distant species. The rescue experiments in S. pombe (C192) provide direct experimental support for the cooperative/compensatory model. However, the diversity of splicing events is greater in Arabidopsis than S. pombe, suggesting some species-specific differences. The generalization to other eukaryotes (C58) is reasonable but requires validation in additional systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Structural and biophysical analysis suggests m6A stabilizes the U6/5'SS helix through stacking interactions. In B complex, U6 m6A faces 5'SS A+4 in a trans Hoogsteen interaction that stabilizes the helix by capping. m6A-modified U6 pairs less readily with U+4 5'SSs because m6A-U base pairs are destabilizing in short helices. Without m6A, U+4 5'SSs are preferred due to stronger Watson-Crick A-U pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural analysis of cryo-EM structures is appropriate, but the mechanistic interpretations are largely inferred rather than directly tested. The biophysical data on m6A:U destabilization comes from model RNAs (C200-C201), not from spliceosomal complexes. The proposed capping mechanism (C195) is plausible but speculative. Direct biophysical measurements of U6/5'SS helix stability with and without m6A, and with different +4 bases, would be needed to support these claims definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211"
+    ],
+    "result": "U6 snRNA m6A may influence 3'SS selection through stabilization of the 3'SS receptor during C to C* transition. A strong U6/5'SS+4 interaction stabilizes the receptor formed by continuous helix stacking, enabling distal 3'SSs to compete more efficiently with proximal 3'SSs. A more stable receptor could allow Prp22 to promote more efficient sampling of distal 3'SSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a mechanistic model for how 5'SS/U6 interactions influence 3'SS choice, based on structural data and the observed splicing patterns. However, the model is largely speculative (C206, C210). The structural basis from human spliceosomes (C207) is established, but the functional consequences for 3'SS selection are inferred. The comparison to S. cerevisiae (C211) provides some support, but direct experimental testing of the receptor stability hypothesis is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "Alternative splicing could potentially be regulated by modulating U6 snRNA m6A levels through methyltransferase activity or demethylase action. There is precedent for splicing control via U6 modifications (pseudouridylation in S. cerevisiae). Human UsnRNAs are targeted by demethylases like FTO. GWAS studies have identified FIO1 locus variants associated with flowering time variation in Arabidopsis ecotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This section is largely speculative about regulatory potential. The precedent from S. cerevisiae pseudouridylation (C214) and FTO activity (C215) provide some support for the concept. The GWAS associations (C217) are interesting but don't demonstrate that FIO1 variation affects U6 m6A levels or splicing. The speculation about regulated m6A modification (C213) is reasonable but lacks direct evidence. This represents interesting future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on alternative splicing and developmental complexity. Alternative splicing is associated with developmental complexity and is the foremost genomic predictor of complexity. In complex eukaryotes, most genes have introns with degenerate cis-elements, facilitating alternative splicing that regulates mRNA expression and produces different protein isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, appropriately cited (C16, C17). This provides necessary context for the study but represents background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on spliceosome mechanism and U6 snRNA. The spliceosome comprises >100 proteins and 5 snRNAs, catalyzes two transesterification reactions, and involves sequential recognition by U1, U2, and U4/U6.U5 snRNPs. U6 snRNA is highly conserved and its ACAGA sequence is m6A-modified in some species (S. pombe, V. faba, human) but not others (S. cerevisiae).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about splicing mechanisms, appropriately cited. This provides essential background but represents existing knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background on METTL16 function in other organisms. In humans, METTL16 methylates U6 snRNA and MAT2A mRNA, regulating SAM homeostasis. In C. elegans, METT-10 methylates U6 and sams genes. In S. pombe, MTL16 targets U6 snRNA, and mtl16 mutants show intron retention for introns with A+4, partially suppressed by strong U5 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from prior work, appropriately cited (C36-C45). This provides important context for interpreting the Arabidopsis results but represents existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background on temperature-responsive splicing in Arabidopsis flowering control. Alternative splicing regulates flowering in response to ambient temperature. At cooler temperatures, FLM and MAF2 are efficiently spliced and repress flowering. At elevated temperatures, splicing is adjusted, reducing active repressor levels and enabling flowering. MAF2 intron 3 retention increases progressively with temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings about temperature-responsive flowering control in Arabidopsis, appropriately cited (C46-C53). This provides the biological context for the mutant screen but represents existing knowledge.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Rats possess a rod-dominated retina (1% cones) with rods ~100\u00d7 more sensitive than cones, enabling low-light vision with peak rhodopsin absorption at 498 nm. Rats have dichromatic color vision based on UV (358-359 nm) and green (509-510 nm) cones, but perform poorly at discriminating nearby wavelengths compared to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide well-cited background on rat visual anatomy and physiology from established literature. These are standard characterizations of rodent vision supported by multiple independent studies and serve as the foundation for understanding the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C37",
+      "C38"
+    ],
+    "result": "Prior ERG studies show conflicting results: Rocha et al. (2016) found no significant response above 620 nm in Wistar rats, while Niklaus et al. (2020) demonstrated significant scotopic and photopic ERG responses to red light (656\u00b110 nm) in both Brown Norway and Wistar rats. Whether photoreceptor activation by red light leads to functionally meaningful behavioral signals remained unestablished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C37-C38 accurately summarize contradictory findings from prior ERG studies and identify the knowledge gap this study addresses. The citations are appropriate and the conflict in the literature is clearly stated, establishing the rationale for behavioral testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Four male Long-Evans rats were trained to categorize grating orientations (0-45\u00b0 as horizontal, 45-90\u00b0 as vertical) under various illumination conditions including white LED and monochrome LEDs (626, 652, 729, 854, 930 nm). The experimental apparatus included appropriate controls to prevent tactile cues, and stimulus parameters were designed to be within rats' visual acuity (~1 cpd) and binocular field (40-110\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C82 provide comprehensive methodological details with appropriate experimental controls. The spatial frequency (0.075 cpd) is well below the reported acuity limit (~1 cpd), and the 117\u00b0 stimulus appropriately covers the binocular field. Dark adaptation (20-30 min) and spectral characterization of LEDs are properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C21"
+    ],
+    "result": "All four rats performed well under white LED illumination with average performance of 87\u00b12% correct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C21 establish baseline performance under white light conditions. The performance level (87\u00b12%) demonstrates that rats learned the task well, providing a valid comparison for performance under different wavelengths. Figure 1E shows consistent performance across all four rats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C22",
+      "C23",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Dark-adapted rats performed the visual categorization task under 626 nm (84\u00b13%, p=0.158) and 652 nm (86\u00b12%, p=0.419) illumination with accuracy statistically equivalent to white light, refuting the common belief of functional blindness under red light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C22-C23, C86-C87, C91 present the core finding with appropriate statistical testing. The non-significant p-values (0.158 and 0.419) support equivalence to white light performance. Bootstrap testing (Figure 2\u2014figure supplement 1) provides appropriate statistical methodology. This directly contradicts the prevailing assumption in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C88"
+    ],
+    "result": "Rats performed well under 729 nm (far-red) illumination with 72\u00b13% accuracy, though performance was significantly diminished compared to white light (p=0.00).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C24, C88 show that visual capacity extends into far-red wavelengths but with degraded performance. The significant difference from white light (p=0.00) is appropriately documented. Performance remains well above chance, indicating functional vision at this wavelength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C25",
+      "C26",
+      "C89",
+      "C90"
+    ],
+    "result": "Rats performed at chance levels under infrared illumination at 854 nm (53\u00b12%, p=0.257 vs. chance) and 930 nm (50\u00b11%, p=0.316 vs. chance), indicating no functional vision at these wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C25-C26, C89-C90 demonstrate the upper wavelength limit for rat vision. Performance at both wavelengths is statistically indistinguishable from chance (50%), with appropriate statistical comparisons. This establishes the boundary between functional and non-functional vision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C82"
+    ],
+    "result": "Visual acuity under red LEDs (626 and 652 nm) cannot be explained by spectral leakage toward shorter wavelengths, as infrared LEDs (854 and 930 nm) emitted 2-50\u00d7 higher intensity at wavelengths <580 nm yet produced chance-level performance. Performance is better explained by absorption of red light itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C82 provide critical control analysis ruling out the alternative explanation of short-wavelength contamination. The logic is sound: if leakage explained red-light performance, infrared LEDs with greater short-wavelength emission should produce better performance, but they did not. This strengthens the conclusion that rats genuinely see red light.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C83",
+      "C84",
+      "C85",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Long-Evans rats demonstrate substantial visual form capacity under red and far-red illumination (626-729 nm), with discrimination degrading from 652 to 729 nm and becoming nil at 854 nm. This challenges the notion of red-light blindness and indicates that 850 nm illumination can be used for video documentation while preventing visual cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C83-C85, C92-C94 synthesize the main findings and their implications. The wavelength-dependent performance gradient is well-documented, and the practical recommendation for 850 nm illumination follows logically from the data. The conclusion appropriately challenges prevailing assumptions in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Red light is commonly assumed to place rodents in dark conditions in behavioral experiments, place-cell studies, developmental studies, and animal husbandry settings. However, animals may acquire more visual input under red light than previously believed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 document widespread use of red light in rodent research with the assumption of darkness, supported by numerous citations. The inference that animals may acquire more visual input (C34) is justified by the study's findings, though this represents an implication rather than direct evidence from cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "Rodents lack red cones, but the inability to see red as a color does not necessarily preclude absorption of red light through the rod-dominated retina to support form vision. Excitation of retinal receptors does not by itself indicate behavioral availability of the signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C39 present sound logical reasoning distinguishing color perception from form vision and receptor activation from behavioral function. C35 is well-supported by citations. The logical inference in C36 is valid and addresses a common misconception. C39 appropriately frames the gap between physiology and behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Red light might act to entrain circadian rhythms unconsciously, and red illumination in optogenetic protocols can evoke behavioral artifacts in mice. Mechanisms must exist for converting miniscule receptor activation into meaningful signals, possibly through cross-retina population codes or two-photon activation, though the intensities used here are orders of magnitude lower than in two-photon studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C42-C43 are explicitly speculative about mechanisms. C41 is supported by citation but involves optogenetic stimulation, not natural vision. C44 appropriately notes that two-photon mechanisms are unlikely given the intensity differences. These represent reasonable speculation but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Rats and mice are the most frequently used laboratory mammals, ideal for studying spatial navigation, tactile, and olfactory processing. There is growing interest in using rodents for vision research, as they demonstrate high-level visual perception including object recognition across views. Complete understanding of rat visual processing is important for experimental design and animal welfare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 provide well-cited context for the importance of understanding rodent vision. The statements about rodent use in research (C49-C52) and their visual capabilities (C54-C57) are supported by appropriate citations. The importance for experimental design and welfare (C58-C59) represents reasonable inference from the findings.",
+    "result_type": "MINOR"
+  }
+]

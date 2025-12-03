@@ -1,0 +1,1789 @@
+{
+  "submission": {
+    "id": "2bd38d81-01b3-46e9-a472-eefee9dccf5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:58:52.327869Z",
+    "updated_at": "2025-12-03T19:58:52.327869Z"
+  },
+  "content": [
+    {
+      "id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "submission_id": "2bd38d81-01b3-46e9-a472-eefee9dccf5e",
+      "content_type": "manuscript",
+      "content_text": "# PTPN22 R620W gene editing in T cells enhances low-avidity TCR responses\n\n## Authors\n\n- Warren Anderson<sup>1</sup> ([ORCID: 0000-0002-9315-5233](https://orcid.org/0000-0002-9315-5233))\n- Fariba Barahmand-pour-Whitman<sup>2</sup>\n- Peter S Linsley<sup>2</sup> ([ORCID: 0000-0002-8960-4307](https://orcid.org/0000-0002-8960-4307))\n- Karen Cerosaletti<sup>2</sup> ([ORCID: 0000-0002-7403-6239](https://orcid.org/0000-0002-7403-6239))\n- Jane H Buckner<sup>2</sup>\n- David J Rawlings<sup>3</sup> ([ORCID: 0000-0002-0810-1776](https://orcid.org/0000-0002-0810-1776)) \u2020\n\n### Affiliations\n\n1. Center for Immunity and Immunotherapies, Seattle Children's Research Institute Seattle United States ([ROR:02jqc0m91](https://ror.org/02jqc0m91))\n2. Benaroya Research Institute at Virginia Mason Seattle United States\n3. Department of Pediatrics and Immunology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nA genetic variant in the gene PTPN22 (R620W, rs2476601) is strongly associated with increased risk for multiple autoimmune diseases and linked to altered TCR regulation and T cell activation. Here, we utilize Crispr/Cas9 gene editing with donor DNA repair templates in human cord blood-derived, naive T cells to generate PTPN22 risk edited (620W), non-risk edited (620R), or knockout T cells from the same donor. PTPN22 risk edited cells exhibited increased activation marker expression following non-specific TCR engagement, findings that mimicked PTPN22 KO cells. Next, using lentiviral delivery of T1D patient-derived TCRs against the pancreatic autoantigen, islet-specific glucose-6 phosphatase catalytic subunit-related protein (IGRP), we demonstrate that loss of PTPN22 function led to enhanced signaling in T cells expressing a lower avidity self-reactive TCR, but not a high-avidity TCR. In this setting, loss of PTPN22 mediated enhanced proliferation and Th1 skewing. Importantly, expression of the risk variant in association with a lower avidity TCR also increased proliferation relative to PTPN22 non-risk T cells. Together, these findings suggest that, in primary human T cells, PTPN22 rs2476601 contributes to autoimmunity risk by permitting increased TCR signaling and activation in mildly self-reactive T cells, thereby potentially expanding the self-reactive T cell pool and skewing this population toward an inflammatory phenotype.\n\n## Introduction\n\nPreventing inappropriate immune responses is critical to the maintenance of peripheral tolerance and the prevention of autoimmunity. The risk of autoimmunity stems from a complex interplay of genetic and environmental factors (Theofilopoulos et al., 2017; Cho and Feldman, 2015). While the greatest risk factor for most autoimmune disease is HLA haplotype (Todd et al., 2007; Bonifacio et al., 2018), an individual\u2019s total genetic risk is determined by a combination of gene variants (Sharma et al., 2018; Cotsapas et al., 2011), many of which cluster near genes responsible for regulating immune responses (Farh et al., 2015). A leading example of such an autoimmune risk variant is found in the gene protein tyrosine phosphatase non-receptor 22 (PTPN22).\n\nWhile the phosphatase encoded by PTPN22 can function to modulate a range of immune signaling programs, it has been best studied in lymphocyte antigen receptor regulation (Cohen et al., 1999; Wu et al., 2006; Hill et al., 2002). An arginine to tryptophan substitution (R620W) resulting from a single nucleotide polymorphism (SNP; rs2476601) within PTPN22 is broadly associated with a large number of autoimmune diseases (Zheng et al., 2012; Tizaoui et al., 2019). PTPN22 R620W, hereafter referred to as the PTPN22 risk variant, is one of the strongest, non-HLA, genetic risk factors for autoimmune diseases, nearly doubling a carrier\u2019s risk of type 1 diabetes, systemic lupus erythematosus, or rheumatoid arthritis (Bottini et al., 2004; Begovich et al., 2004; Kyogoku et al., 2004). As PTPN22 plays a role in multiple autoimmune diseases, it has been argued that this SNP potentially highlights a common pathway that alters immune tolerance and might serve as a potential point of intervention to prevent and/or delay disease (Rawlings et al., 2015).\n\nIn T cells, PTPN22 functions to dephosphorylate key activating tyrosine residues within the proximal tyrosine kinase effectors, LCK and ZAP70, in the TCR signaling pathway (Wu et al., 2006; Bottini et al., 2004). This function is mediated in concert with activity through PTPN22\u2019s binding partner, C-terminal Src kinase (CSK), which also regulates LCK activity (Cloutier and Veillette, 1999). Co-association of PTPN22 and CSK results in residence of both proteins within the cytosolic plasma membrane of resting T cells through the association of CSK with another TCR inhibitory protein, PAG (Davidson et al., 2016; Simoncelli et al., 2020). The R620W substitution in PTPN22 is located within a proline rich, C-terminal domain and reduces the interaction of PTPN22 with CSK leading to altered localization of PTPN22 (Bottini et al., 2004). The functional outcome of disrupted PTPN22 protein interactions has led to significant debate as to the mechanism by which the PTPN22 risk variant contributes to altered T cell function and self-tolerance, namely whether the human PTPN22 risk variant mediates a gain- vs. a loss-of-function impact on TCR regulation.\n\nPrimary T cells isolated from carriers of the PTPN22 risk variant display significantly weaker responses to TCR engagement, as measured by calcium flux, cytokine release, and other metrics (Rieck et al., 2007; Vang et al., 2005; Arechiga et al., 2009; Vang et al., 2013). However, in murine models, expression of the risk variant leads to enhanced TCR responses, as measured by the same metrics in addition to increased T cell proliferation and survival (Zhang et al., 2011; Dai et al., 2013; Lin et al., 2016). In contrast, genetic ablation of PTPN22 in both mouse and human primary T cells results in enhanced TCR signaling relative to PTPN22 wild type cells; findings similar to murine risk model yet opposite of the phenotypes described in human carriers of the risk variant (Hasegawa et al., 2004; Anderson et al., 2019). Furthermore, genetic ablation of ptpn22 in a fixed TCR murine model has shown that loss of PTPN22 preferentially impacts T cells responses to low-avidity antigens, but not high-avidity antigens (Salmond et al., 2014); driving increased proliferation and skewing toward a Th1 phenotype in ptpn22 KO T cells. While these observations suggest an important potential mechanism for how the PTPN22 risk variant promotes autoimmunity, this concept has not been tested in primary human T cells.\n\nBoth human carriers and murine models of the PTPN22 risk variant share important traits. For instance, the risk variant is associated with an increase in memory lymphocyte populations and expanded pro-inflammatory/Th1 T cells and both exhibit increased risk of autoimmune manifestations (Vang et al., 2013; Dai et al., 2013; Sanchez-Blanco et al., 2018). Thus, it remains surprising that murine and human carriers exhibit these key similarities despite the published differences in the TCR signaling responses described human vs. mouse T cells. Notably, the murine and human T cell populations used for previous studies exhibit fundamental differences. First, most data for human PTPN22 risk variant phenotype have utilized mature T cells isolated from adult donors, while T cells from murine studies utilize donor mice with minimal environmental exposures. Studies of PTPN22 using human cord blood-derived T cells have been limited (Rawlings et al., 2015). Also, murine models of the ptpn22 risk variant are conducted in genetically homogenous, autoimmune-prone strains or models with a fixed TCR repertoire (Dai et al., 2013; Lin et al., 2016; Salmond et al., 2014; Maine et al., 2016), conditions difficult to mimic in a primary human T cell setting. Further, in vitro human T cell line models of the PTPN22 risk variant lead to discrepant results, indicating that the impact(s) of the variant are context dependent, further complicating efforts to study the variant in human T cells (Vang et al., 2005; Zikherman et al., 2009).\n\nRecently, Crispr/Cas9 gene editing has allowed for precise manipulation of genetic loci in primary human T cells. Delivery of recombinant ribonucleoproteins (RNPs [Anderson et al., 2019; Schumann et al., 2015; Okamoto et al., 2019] containing Cas9 complexed with sequence specific guide RNA sequences) via electroporation into primary T cells efficiently mediates site-specific DNA double stranded breaks (DSBs) near a protospacer adjacent motif (PAM) site (Jinek et al., 2012). Such DNA breaks trigger a series of events driving 5\u2019 to 3\u2019 exonuclease activity at the broken DNA ends as the cell prepares to mend the break through potential repair pathways (Scully et al., 2019; Xue and Greene, 2021). When DSBs are generated in the presence of a single stranded oligo deoxynucleotides (ssODNs) (co-delivered with RNP), DNA repair pathways can utilize regions of homology within an ssODN as a repair template for precise genetic modification by homology directed repair (HDR) (Richardson et al., 2016; Richardson et al., 2018). This approach has previously been used to integrate a premature stop codon in the PTPN22 locus of primary human T cells with high efficiency (Anderson et al., 2019).\n\nIn this study, we utilized a combination of HDR-based gene editing and TCR co-delivery in na\u00efve cord blood T cells to establish a platform to better understand the role of the PTPN22 risk variant in primary human T cells. Through Crispr/Cas9 gene editing we find the PTPN22 risk variant T cells mimicked PTPN22 KO T cells, with enhanced expression of surface activation markers in response to TCR stimulation. Further, using transgenic TCR stimulation in concert with gene edited cells, we found that the PTPN22 risk variant accentuates the response of low-avidity primary human T cells to antigen, implying a key role for these events in the progressive loss of T cell tolerance in human autoimmune diseases associated with this risk allele.\n\n## Results\n\n### Generation of PTPN22 risk and non-risk edited T cells with Crispr/Cas9 gene editing\n\nIn this study, we sought to identify methods to utilize HDR-based gene editing to study alternative PTPN22 alleles within identical populations of primary human T cells. Notably, previous work has shown that altering expression levels of PTPN22 and/or its regulatory proteins can produce potentially contradictory results (Vang et al., 2005; Zikherman et al., 2009). Additionally, PTPN22 contains several splice variants that might modulate the impact of the risk variant (Ronninger et al., 2012). Therefore, we sought to utilize an editing platform that would permit us to introduce either a control, risk, or knockout (KO) sequence via direct modulation of the endogenous SNP locus, without the addition of exogenous promoters or selection agents that may alter natural PTPN22 expression. To accomplish this goal, we expanded on previously reported methods to generate PTPN22 gene disrupted primary human T cells (Anderson et al., 2019) to establish an HDR-based editing platform. We combined delivery of Crispr/Cas9 with ssODN HDR templates designed to alter the coding region of exon 14 of PTPN22. Use of Crispr/Cas9 RNPs with short ssODN repair templates to alter the DNA of primary cells has been shown to be highly efficient, provided the nuclease cuts near the desired edit site (Meitlis et al., 2020). A naturally existing Crispr/Cas9 gRNA PAM site is positioned in exon 14 of PTPN22 to allow an RNP induced DSB immediately 5\u2019 of the SNP nucleotide (Figure 1A). Also, previous work has shown that homology arm design of ssODN repair templates may impact editing rates when used with a Crispr/Cas9 RNP (Richardson et al., 2016). We tested several ssODN repair template designs with our PTPN22 RNP for optimized introduction of a 2 bp coding alteration to generate the PTPN22 risk variant (Figure 1A; Figure 1\u2014figure supplement 1A). Importantly, this 2 bp edit blocks subsequent binding of the RNP, preventing cleavage of the repaired locus. We found that in adult peripheral blood CD4 T cells, a 120 bp ssODN design with a long 5\u2019 homology arm (ssODN V3, 5\u2019 arm 89 bp/3\u2019 arm 29 bp) efficiently introduced the desired coding sequence alterations (Figure 1\u2014figure supplement 1B), in line with previous findings (Richardson et al., 2016). Using this design, we created three ssODN repair templates that worked efficiently in association with the PTPN22 RNP to produce three gene editing outcomes: non-risk edited PTPN22, risk edited PTPN22, and a PTPN22 KO ssODN that seamlessly introduces a stop codon into all three reading frames of the RNP cut site (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig1-v2.jpg)\n\n**Figure 1.:** CD4 T cells were isolated from human umbilical cord blood for Crispr/Cas9 gene editing. (A) ssODN repair templates electroporated with PTPN22 targeting Crispr/Cas9 RNP resulting in differently coded alleles upon HDR. Underlined nucleotides in major allele sequence indicate RNP protospacer adjacent motif (PAM) site. PTPN22 coding alterations for each population denoted with bolded/colored nucleotides, resulting changes to amino acid sequence displayed below. (B) Workflow used to produce and assay PTPN22 edited CD4 T cells and corresponding controls. (C) ddPCR analysis of editing outcomes in PTPN22 edited cells using corresponding ssODN repair templates or RNP alone. n=4 independent human donors. (D) Representative western blot of PTPN22 expression in mock edited, PTPN22 non-risk edited, PTPN22 risk edited, and PTPN22 knockout edited cord blood CD4 T cells from the same human donor. (E) Quantified PTPN22 protein expression relative to actin and normalized to unedited values from the same T cell donor. n=3 independent human donors, matched one-way ANOVA with Tukey\u2019s correction. For summary graphs, lines and error bars represent mean \u00b1 SEM. RNP \u2013 ribonucleoprotein, ODN or ssODN \u2013 single stranded oligo deoxynucleotide, NHEJ \u2013 non-homologous end joining, HDR \u2013 homology directed repair. All data is from at least two independent experiments. ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) ssODN repair template designs tested to introduce PTPN22 risk SNP at rs2476601 site in non-risk T cells. Cells were electroporated with a PTPN22 targeting Crispr/Cas9 RNP (Figure 1A), and one of five ssODN variants, all introducing a 2 bp edit resulting in producing the R620W variant and blocking further binding of the Crispr/Cas9 RNP. All ssODN variants are complementary to the non-target strand of the RNP. (B) Average HDR rates resulting in the PTPN22 risk variant achieved with ssODN variants. CD4 T cells were edited as in Figure 1B and processed for gDNA 2 days post editing. Rates of HDR were determined by ddPCR analysis (n=2\u20134 independent donors, and 1\u20132 independent experiments). For ssODN design optimization CD4 T cells were derived from human adult PBMCs. (C) After editing with optimized ssODN templates, cord blood CD4 T cells were expanded in IL-2 for 7 days. At 2 days post editing, cells were stained with viability dye and assessed via flow cytometry. Percent viable reflects the percent of events collected from each culture that were identified as single, live, lymphocytes. n=4, independent human donors. For summary graphs lines and error bars represent mean \u00b1 SEM. Analyzed by matched one-way ANOVA with Tukey\u2019s correction. RNP \u2013 ribonucleoprotein, ssODN \u2013 single stranded oligo deoxynucleotide, NHEJ \u2013 non-homologous end joining, HDR \u2013 homology directed repair. ***p<0.001.\n\nNatural carriers of the PTPN22 risk variant have altered peripheral T cell responses, and mouse models indicate that variant expression impacts thymic T cell selection as well as peripheral T cell activation and function (Dai et al., 2013). Thus, human T cells isolated from subjects with the risk variant are likely to be previously impacted by diverse developmental, age-related and environmental exposures (Rawlings et al., 2015). Therefore, we reasoned that using na\u00efve, cord blood-derived CD4 T cells isolated from non-risk human donors, which are minimally impacted by previous environmental events, would provide the most relevant cell population for our study and generate the most informative dataset with respect to impact(s) of the variant on human T cell function. Using our PTPN22 RNP and ssODN repair templates with a gene editing workflow (Figure 1B), we edited human cord blood-derived na\u00efve CD4 T cells from multiple PTPN22 non-risk donors to concurrently model the PTPN22 risk variant, control edited, and KO edited cells. Comparing edited populations to mock edited cells (which received Cas9 without gRNA and PTPN22 KO ssODN), all gene edited populations showed similar viability, regardless of editing reagents used, with a slight reduction in viability observed in all T cell populations receiving electroporation (Figure 1\u2014figure supplement 1C). Droplet digital PCR (ddPCR) analysis demonstrated nearly identical gene editing rates in cells edited with the PTPN22 non-risk vs. risk ssODN (Figure 1C). Both edited populations exhibited average HDR rates of ~50%, and no detectable editing was present in mock edited populations. HDR rates in PTPN22 KO edited cells were slightly higher, likely due to a lack of nucleotide mismatches between the ssODN template and the digested PTPN22 locus. As expected, beyond HDR events, NHEJ events accounted for most of the remaining editing outcomes in cells modified in the presence of ssODNs. NHEJ events were absent or dominant, in mock and RNP-only edited populations, respectively. Western blot analysis confirmed that, PTPN22 non-risk and risk edited populations retained equivalent expression levels of PTPN22 (with a reduction in total PTPN22 protein compared with mock edited cells reflecting the NHEJ-mediated loss of protein expression in the absence of successful HDR). As expected, PTPN22 KO populations exhibited near total absence of protein expression (Figure 1D\u2013E).\n\nWild type PTPN22 alleles were nearly undetectable in edited populations (<1% of total alleles), indicating that resulting genotypes of edited T cells can be assumed to a mixture of biallelic HDR, biallelic NHEJ (PTPN22 KO), or HDR and NHEJ on opposite alleles (hemizygous). RNP based editing can induce large deletions that may bias sequencing of editing outcomes (Kosicki et al., 2018), making accurate single cell profiling challenging. As HDR rates in our approach were identified using probe based ddPCR detection, this data is resistant to this type of bias. With ~50% HDR rates and ~50% NHEJ rates, the edited populations would, at a minimum, be 50% biallelically edited and 50% full PTPN22 KO. Of note, previous single cell studies in primary cell types (Park et al., 2019; Mocciaro et al., 2018) including primary T cells (Mocciaro et al., 2018), demonstrate that monoallelic HDR is far more frequent than biallelic HDR. Therefore, it is reasonable to assume the predominant editing outcome in our studies is hemizygosity with an undetermined frequency of biallelic editing events. However, as an independent edited control population is utilized in all our analyses, the effects of PTPN22 KO alleles (monoallelic or biallelic) are accounted for when PTPN22 risk edited cells are compared to non-risk edited populations. This control assures that our findings regarding the PTPN22 risk variant can be attributed to the expression of differently coded PTPN22 variants, and not differences caused by disruption of PTPN22 alleles.\n\n### PTPN22 risk edited T cells mimic PTPN22 KO cells\n\nFollowing generation of T cells expressing equivalent levels of the PTPN22 risk, non-risk, or PTPN22 KO T cells from the same donor, we tested how alterations in PTPN22 coding impacted responses to TCR stimulation. After gene editing and expansion, T cells were stimulated with plate bound anti-CD3 for 6\u201348 hr and sequentially evaluated for expression levels of key surface activation markers. As all PTPN22 edits produced some loss of PTPN22 expression, and PTPN22 is responsible for restraining TCR activation, it was unsurprising to find that mock edited cells had significantly less expression of the activation markers CD69, CD25, and CD71 compared with gene edited populations (Figure 2A\u2013C). However, it was striking that, while PTPN22 KO populations expressed the highest levels of these activation markers, the PTPN22 risk edited cells, in comparison with non-risk edited cells, also exhibited increased expression of CD25 and CD71 at 48 hr post stimulation and a trend toward increased CD69 expression as early as 6 hr post stimulation (Figure 2A\u2013C). Together, this data strongly suggests that TCR signaling strength is increased in cells expressing the PTPN22 risk variant, and, that this phenotype is most similar to PTPN22 KO T cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig2-v2.jpg)\n\n**Figure 2.:** Cord blood CD4 T cells from human donors were gene edited as described in Figure 1, then stimulated with plate bound anti-CD3 for up to 48 hr. (A\u2013C) Representative flow overlays for CD69 (A), CD25 (B), and CD71 (C) with summary data for different editing conditions from the same donor. CD69 summary data reflects mean fluorescent intensity at 6 hr post CD3 stimulation, while CD25 and CD71 represent median values at 48 hr post stimulation. For all summary data n=4 independent donors (shapes correspond to individual donors), matched one-way ANOVA with Tukey\u2019s correction. Lines and error bars represent mean \u00b1 SEM. All data is from two independent experiments. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Cord blood CD4 T cells from human donors were edited as described in Figure 1, then stimulated with plate bound anti-CD3 for 3 days in either Th1 skewing media (IL-12, anti-IL-4, IL-2, and soluble anti-CD28) or non-skewing media (IL-2 and soluble anti-CD28). Cells were then stimulated with PMA and ionomycin with monensin for 5 hr, then fixed and stained for flow cytometry assessment of cytokine production of (A) IFN\u03b3 and (B) IL-2. n=4 independent donors (shapes correspond to individual donors), lines and error bars represent mean \u00b1 SEM. All data is from two independent experiments.\n\nThe PTPN22 risk variant has been reported to modulate CD4 T cell populations, with some studies suggesting increased proportions of Th1 (Vang et al., 2013; Salmond et al., 2014; Sanchez-Blanco et al., 2018) populations in risk carriers. To examine if an altered PTPN22 status is sufficient to modulate CD4 T cell skewing outcomes, PTPN22 edited cord blood T cells were cultured with plate bound anti-CD3, soluble anti-CD28, and IL-12 to produce Th1 CD4 T cells. Three days after stimulation we found most cells producing Th1 associated cytokines, however no differences in the number of cells producing IFN\u03b3 or IL-2 were observed based upon edits made to PTPN22 (Figure 2\u2014figure supplement 1A\u2013B). This lack of difference in Th1 skewing is consistent with findings in a similar study using the murine ptpn22 risk variant model (Sanchez-Blanco et al., 2018).\n\n### PTPN22 regulates signaling from low-avidity TCRs in human T cells\n\nPTPN22 is a key regulator of TCR signaling and in murine models it plays a critical role in repressing T cell activation mediated by weak TCR agonists, but has been found to be dispensable in regulating responses to strong TCR agonists (Salmond et al., 2014). These findings suggested that perturbations in PTPN22 activity might impact autoimmune risk via enriching T cells expressing low-avidity self-reactive TCRs that escaped deletion during thymic development and remain capable of recognizing self-antigens. Thus, as our gene editing model indicated that the PTPN22 risk variant produces a phenotype similar to a PTPN22 KO, we next examined whether PTPN22 KO modified the response of human T cells expressing TCRs with differing avidity for an identical self-antigen.\n\nPrevious work has detailed the sequencing of multiple TCRs from T1D patients that are reactive against the pancreatic autoantigen, islet-specific glucose-6 phosphatase catalytic subunit-related protein, IGRP (Cerosaletti et al., 2017; Linsley et al., 2021). Recent work has also shown that gene edited primary human T cells can be rendered antigen specific through the lentiviral delivery of TCRs prior to electroporation with RNPs (Yang et al., 2021). To study the impact of PTPN22 loss of function on antigen specific TCR responses, we transduced human cord blood CD4 T cells with lentiviral vectors (LV) encoding for alternative TCRs that respond to the same 20mer epitope of IGRP when presented by HLA-DRB1 04:01; and subsequently modified these LV transduced populations using HDR-based gene editing (Figure 3A). Addition of LV transduction prior to gene editing did not impact gene editing outcomes or rates of HDR (Figure 3\u2014figure supplement 1A). Transgenic TCR chains were engineered to utilize the murine constant regions allowing staining with murine TCR specific antibodies (Cerosaletti et al., 2017) and limiting potential cross pairing with endogenous TCR chains. To track LV transduced cells, constructs were modified to express cis-linked GFP simultaneously with TCR expression. LV transduction was performed using a multiplicity of infection (MOI) of 5 in an effort to transduce <25% of the T cell population. This approach led to an average of 5\u201315% marking (depending on donor and LV product), ensuring low viral copy number per transduced cell and similar levels of TCR expression within experimental groups. After gene editing, expansion, and rest, gene edited/TCR+ T cells were stimulated via addition of irradiated PBMCs from an allogeneic HLA-DRB1 04:01 donor that had been pre-incubated with cognate IGRP peptide (Figure 3B). Following stimulation of TCR+ cord blood T cells with peptide loaded APCs, the alternative self-reactive TCRs responded to IGRP peptide at markedly different magnitudes. The two TCRs, that we term: \u2018lower avidity TCR\u2019 or L-TCR, and \u2018higher avidity TCR\u2019 or H-TCR, triggered different rates of proliferation over 3 days (based on either dye dilution or direct cell counts), consistent with their reported avidity (Figure 3C and D; Linsley et al., 2021). Notably, upon combining antigen specific stimulation with PTPN22 KO gene editing, we found that L-TCR+ PTPN22 KO cells had significantly increased proliferation relative to mock edited L-TCR cells across a range of peptide doses (Figure 3C\u2013E). In contrast, H-TCR + expressing edited T cells showed similar proliferation rates in response to multiple antigen doses, regardless of PTPN22 genotype (Figure 3D and F; Figure 3\u2014figure supplement 2A). As the highest peptide dose (25 ng/ml) reliably produced efficient proliferation in all donors tested, this dose was used for further assessments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig3-v2.jpg)\n\n**Figure 3.:** Cord blood CD4 T cells from human donors were transduced with lentivirus coding for antigen specific TCRs prior to gene editing as described in Figure 1, then stimulated with cognate peptide. (A) Workflow shown in Figure 1, modified to allow both gene editing of the PTPN22 locus and lentiviral delivery of antigen specific TCRs. (B) Representative flow plot of H-TCR+ T cell proliferation after 3 days of peptide stimulation. (C) Representative flow overlay of 3-day peptide induced proliferation caused by either H-TCR stimulation or L-TCR stimulation in T cells from the same donor. (D) Summary data of 3-day T cell proliferation (fold change over input cell number) at various peptide doses in cells expressing transgenic TCRs with and without PTPN22 knockout (KO) editing. Proliferation induced by TCRs was compared by computing area under the curve (AUC) for each TCR/editing combination for all peptide doses tested, then performing a paired t test on the computed areas. (E) Representative flow overlay of proliferation in L-TCR+/ PTPN22 gene edited cells from the same donor and summary data of T cell proliferation (fold change over input cell number), n=7 independent donors (shapes correspond to individual donors). (F) Representative flow overlay of proliferation in H-TCR+/ PTPN22 gene edited cells from the same donor and summary data of T cell proliferation (fold change over input cell number), n=7 independent donors (shapes correspond to individual donors). (G) Representative flow overlay of different editing conditions from the same donor expressing L-TCR and summary data of flow values for phosphorylated S6 kinase in edited cells expressing transgenic TCRs, n=6 independent donors (shapes correspond to individual donors), paired t test by TCR expressed. Columns and error bars represent mean \u00b1 SEM. All data is from three or four independent experiments. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Droplet digital PCR (ddPCR) analysis of PTPN22 editing in human cord blood CD4 T cells using a knockout (KO) single stranded oligo deoxynucleotides (ssODN) repair template (Figure 1A) after lentiviral (LV) delivery of antigen specific TCRs (Figure 3A). n=4\u20136 independent donors, columns and error bars represent mean \u00b1 SEM. Figure reflects data compiled across five independent experiments, with each column representing data from two to three independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Summary data of area under the curves generated by peptide doses in Figure 3D. (B\u2013C) Cord blood CD4 T cells from human donors were transduced with lentivirus coding for L-TCR prior to gene editing as described in Figures 1 and 3, then stimulated with cognate peptide loaded APCs for 24 hr. Data represents flow values for phosphorylated S6 kinase (B) and phosphorylated 4E-BP1 (C) in edited cells expressing the L-TCR, n=4 independent donors. (A) Analyzed by paired t test and (B\u2013C) analyzed by paired one-way ANOVA with Tukey\u2019s multiple comparison test. Columns and error bars represent mean \u00b1 SEM, and shapes correspond to individual human donors. All data is from two to three independent experiments. *p<0.05, **p<0.01.\n\nTo examine how loss of PTPN22 enhanced L-TCR induced proliferation, we assessed TCR-mediated, downstream phosphorylation events via flow cytometry. Unfortunately, stimulation of cells through antigen presentation in this model proved incompatible with examining early phosphorylation events (in contrast to stimulation using non-antigen-specific methods). T cells stimulated via peptide loaded APCs showed no consistent increase in pErk 1/2, pAKT, or total pTyr compared to cells stimulated with non-loaded APCs over the first 6 hr of co-culture (data not shown). However, intracellular signaling differences were present at 24 hr post peptide stimulation. In cells expressing L-TCR, the loss of PTPN22 resulted in significantly greater proportion of phosphorylated S6 kinase positive cells, while cells expressing H-TCR, PTPN22 KO showed no impact on the relative percentage of pS6+ cells (Figure 3G).\n\nWe next determined if the early signaling differences found in PTPN22 KO cells expressing L-TCR (vs. H-TCRs) led to differences in activation phenotype. Two days post peptide stimulation, L-TCR expressing PTPN22 KO T cells, in comparison to mock edited T cells from the same cord blood donor also expressing L-TCR, expressed higher levels of activation markers including CD69, CD25, and CD71 (Figure 4A\u2013C). In contrast, H-TCR expressing PTPN22 KO T cells exhibited no differences in comparison to control T cells. Together, these results demonstrate that loss of PTPN22 activity preferentially permits enhanced signaling in response to low-avidity TCR engagement in primary human T cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig4-v2.jpg)\n\n**Figure 4.:** Cord blood CD4 T cells from human donors were edited as described in Figure 3, then stimulated with peptide loaded APCs for up to 48 hr. (A\u2013C) Representative flow overlays and summary data for CD69 (A), CD25 (B), and CD71 (C) expression in mock edited and PTPN22 KO populations from the same donor expressing the L-TCR. CD69 summary data reflects mean fluorescent intensity at 24 hr post peptide stimulation, while CD25 and CD71 represent median values at 48 hr post stimulation. For all summary data n=7 independent donors (shapes correspond to individual donors), paired t test by TCR expressed. Columns and error bars represent mean \u00b1 SEM. All data is from four independent experiments. *p<0.05, **p<0.01.\n\nTo further explore the impact of PTPN22 editing in this setting, we generated PTPN22 mock, control edited, risk edited, and KO cells (as in Figures 1 and 2) expressing the L-TCR construct. After 24hr of peptide stimulation, we observed a significant increase in pS6 kinase and similar trend in p4E-BP1 in PTPN22 KO cells (Figure 3\u2014figure supplement 2B\u2013C). However, while we observed a similar trend in PTPN22 risk edited cells, this data did not reach statistical significance (Figure 3\u2014figure supplement 2B\u2013C); suggesting this approach was not adequate to quantify subtle signaling changes in response to cognate antigen.\n\n### PTPN22 deficiency promotes proliferation and IFN\u03b3 secretion by low-avidity T cells\n\nA common feature of autoimmunity is inappropriate generation of pro-inflammatory cytokines, that drive diverse pathologies in various tissues. While PTPN22 loss had no impact on generation of an IL-12 driven Th1 phenotype in association with CD3/CD28 engagement (Figure 2\u2014figure supplement 1A\u2013B), we next tested whether PTPN22 editing might impact the generation of a Th1 phenotype in association with TCR stimulation. We transduced and edited cord blood CD4 T cells, stimulated the edited populations with peptide loaded APCs for 3 days, and assessed the production of IFN\u03b3 and IL-2 by intracellular flow cytometry. We restricted our analysis to cells that had proliferated in response to stimulation to ensure the data was not impacted by changes in proliferation rates induced by PTPN22 editing (Figure 3D). H-TCR+ PTPN22 KO T cells exhibited no difference in frequency of IFN\u03b3 or IL-2 producing cells relative to mock edited cells (Figure 5\u2014figure supplement 1A-C). In contrast, the proportion of L-TCR+ cells that generated IFN\u03b3 were increased by loss of PTPN22 and risk edited cells exhibited a similar trend though not significant (Figure 5A). Notably, PTPN22 risk edited cells contained a significantly higher proportion of IL-2 producing cells (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig5-v2.jpg)\n\n**Figure 5.:** Cord blood CD4 T cells from human donors were edited as described in Figure 3, then stimulated with peptide loaded APCs for 3 days. (A\u2013B) Representative flow plots of IFNy (A) and IL-2 (B) expression in mock edited or PTPN22 KO cells transduced with L-TCR and summary data of %L-TCR+ cells that secrete IFNy (A) or IL-2 (B) grouped by gene edit. N=5\u20137 independent donors (shapes correspond to individual donors). All summary data analyzed by paired t test. Columns and error bars represent mean \u00b1 SEM. All data is from four independent experiments. *p<0.05, ***p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cord blood CD4 T cells from human donors were edited as described in Figure 3, then stimulated with peptide loaded APCs for 3 days. (A) Flow cytometry gating strategy used to identify antigen specific TCR+ cells for cytokine production analysis. (B\u2013C) Representative flow plots of IFNy (B) and IL-2 (C) expression using the flow gating strategy demonstrated in (A) with PTPN22 gene edited cells transduced with the IGRP reactive H-TCR, followed by summary data of %IFNy (B) or %IL-2 (C) secreting cells (n=3 independent human donors, from two independent experiments). Summary data analyzed by paired t test. Columns and error bars represent mean \u00b1 SEM, and shapes correspond to individual human donors.\n\nBecause PTPN22 risk variant edited T cells exhibited a phenotype resembling PTPN22 KO T cells in response to anti-CD3 stimulation, we next determined whether risk variant edited cells exhibited increased proliferation in response to cognate antigen. Generation of PTPN22 risk edited cells leads to a reduction in PTPN22 expression due to competing HDR and NHEJ events (Figure 1). Thus, to control for levels of HDR edited vs. gene disrupted PTPN22 alleles, we designed our experiments to assess the functional outcome of TCR engagement within a pool of risk vs. non-risk edited cells. To achieve this comparison, cord blood T cells were LV transduced to deliver the L-TCR and subsequently edited (as in Figure 1A and Figure 3A) to generate PTPN22 risk edited or non-risk edited populations, each expressing L-TCR (Figure 6A). Next, edited populations were mixed in equal proportions, and labeled with a proliferation dye. This mixed population was then used to test the hypothesis that, in response to stimulation with cognate antigen, PTPN22 risk edited cells would become the dominant genotype within the proliferating cell population. gDNA based ddPCR analysis on FAC sorted TCR+ cells prior to stimulation demonstrated equal proportions of PTPN22 risk and non-risk edited alleles (Figure 6B\u2013C). The mixed population was stimulated using peptide loaded APCs for 3 days and proliferating vs. non-proliferating cells were isolated by FAC sorting (Figure 6B; Figure 6\u2014figure supplement 1A\u2013B). ddPCR revealed nearly twice as many PTPN22 risk edited over non-risk edited alleles within the proliferating cell population (Figure 6B\u2013C). Together, this data supports a hypothesized model (Figure 6A) wherein human T cells expressing the PTPN22 risk variant exhibit increased proliferation in response to low-avidity TCR engagement. Interestingly, gDNA taken from stimulated but non-proliferating TCR+ cells also showed a partial increase in PTPN22 risk edited alleles relative to input. While this difference was less robust than among proliferating cells (Figure 6\u2014figure supplement 1A\u2013B), it suggests that increased TCR signal strength in risk variant T cells may promote enhanced cell survival, a finding that will require additional study.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig6-v2.jpg)\n\n**Figure 6.:** Cord blood CD4 T cells from human donors were transduced with L-TCR lentivirus prior to gene editing into two populations (as described in Figure 1): PTPN22 risk edited, or non-risk edited, then stimulated with cognate peptide. (A) Workflow shown in Figure 3, depicting the use of PTPN22 single nucleotide polymorphism (SNP) locus editing DNA repair templates and an experimental model describing how the PTPN22 R620W coding sequence\u2019s impact on proliferation was predicted and would be assessed. (B) A representative FACS plot showing gating of L-TCR+ populations before peptide stimulation and 3 days post peptide stim. (C) Droplet digital PCR (ddPCR) analysis of edited PTPN22 alleles in FACS sorted populations. n=4 independent human donors (shapes correspond to individual donors). All summary data analyzed by paired t test. *p<0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/81577/elife-81577-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Cord blood CD4 T cells from human donors were transduced with L-TCR lentivirus prior to gene editing as described in Figure 1 and Figure 6 and mixed in equal proportions as shown in Figure 6A, then stimulated with cognate peptide. (A) Representative FACS plot showing gating of L-TCR+ populations before peptide stimulation and 3 days post peptide stim to sort non-proliferating events. (B) Droplet digital PCR (ddPCR) analysis of edited PTPN22 alleles in FACS sorted populations. n=4 independent human donors (shapes correspond to individual donors). All summary data analyzed by paired t test. *p<0.05.\n\n## Discussion\n\nIn this paper we utilized a robust gene editing platform in primary human cord blood CD4 T cells to efficiently alter PTPN22 non-risk T cells to express the PTPN22 R620W risk variant as well as relevant control, non-risk, or KO edited cell populations. This gene editing approach should be applicable to many cell types and broadly applicable to study the impact of candidate disease associated alleles (identified by GWAS or other sequencing strategies) within primary human cell populations. Notably, our data clearly demonstrate that PTPN22 risk variant expressing T cells exhibit a phenotype similar to PTPN22 KO T cells, leading to increased expression of TCR induced activation responses markers. Further, using transgenic TCR delivery and cognate peptide-mediated activation, in tandem with our gene editing platform, we show that PTPN22 deficiency predominantly impacts T cells activated in response to low-avidity TCR engagement. In contrast, PTPN22 function is largely dispensable in T cells receiving a high-avidity TCR signal. Together, these data suggest that the PTPN22 risk variant may contribute to autoimmune responses, at least in part, by selectively expanding the pool of lower avidity, self-reactive T cells and skewing such cells toward a pro-inflammatory phenotype. Our findings are consistent with previous work in a fixed TCR murine model that also found loss of ptpn22 to preferentially impact low-avidity TCR stimulation (Salmond et al., 2014). Importantly, our study models function of the PTPN22 regulatory pathway in a fully human gene edited primary cell setting.\n\nOur editing platform utilizes a designer nuclease that generates a dsDNA break in close proximity to the target site for HDR editing. This combined approach allows for: (a) generation of edited cells with high rates of HDR; (b) equivalent HDR rates for alternative coding changes within the target gene via use of a series of ssODN donors; and (c) achieving editing outcomes while controlling for the overall HDR/NHEJ ratio. An additional strength is that the location and small editing footprint allows for physiological expression via use of the endogenous promoter, local enhancers, and 3\u2019 UTR. Also, editing in this location is unlikely to disrupt the formation of natural PTPN22 splice variants. Of note, PTPN22 risk and non-risk ssODNs, while producing identical HDR rates, demonstrated reduced HDR relative to editing using the PTPN22 KO ssODN. This modest difference likely reflects the requirement to replace endogenous nucleotides immediately 5\u2019 and 3\u2019 to the DNA cut site to achieve risk or non-risk edits, while the KO ssODN only required insertion of new nucleotides. These minor differences aside, our editing platform should be readily adaptable for the study of multiple loci across the genome in future studies of human primary cell populations.\n\nWe demonstrate that expression of the PTPN22 risk variant can increase proliferation of primary human T cells expressing a low-avidity TCR, findings that mimic PTPN22 KO T cells. Furthermore, we show that loss of PTPN22 regulation promotes the development of a pro-inflammatory phenotype in T cells using a low-avidity TCR. These combined findings are consistent with in vivo functional impacts observed in human and mouse studies. Indeed, while previous human data and mouse models have led to contradictory conclusions regarding the impact of the risk variant on proximal TCR signaling, both humans and mice with the PTPN22 risk variant exhibit expanded memory T cell and Th1 populations (Rieck et al., 2007; Vang et al., 2013; Dai et al., 2013; Salmond et al., 2014). Importantly, PTPN22 is expressed in multiple immune and hematopoietic subsets and has been shown to have multiple functions (Rawlings et al., 2015; Stanford and Bottini, 2014; Armitage et al., 2021). Therefore, our dataset informs on a single signaling program and PTPN22 may contribute to autoimmune disease via other pathways.\n\nWhile our editing design provides a useful means to address questions related to TCR engagement, this approach has limitations including assessing early intracellular signaling events. While gene edited cells exhibited proximal phosphorylation changes in response to antibody-based stimulation, biochemical changes were not detected until 24 hr post peptide-based stimulation. Future work may find a path around this technical challenge allowing better insight into early signaling events. Also, while our findings provide an important bridge between inconsistencies connecting PTPN22 to autoimmune risk in previous mouse vs. primary human cell data, it should not be viewed as a replacement for mouse models. Our study relies on ex vivo culturing of T cells, outside of optimal physiological conditions and supportive niches, features that may have key impacts on protein tyrosine phosphatase functions. Also, though our gene KO model reached 100% as measured by ddPCR, western quantification data (Figure 1E) may suggest residual expression of PTPN22, a consideration not of relevant for mouse models. Finally, as our model is restricted to peripheral mature T cells, it is inadequate to assess the role for PTPN22 in T cell development. For example, while mouse models suggest that the PTPN22 risk variant alters thymic selection (Dai et al., 2013) others have shown that PTPN22 KO has no impact on the TCR repertories (Hasegawa et al., 2004; Salmond et al., 2014; Sanchez-Blanco et al., 2018; Maine et al., 2012). Because our study shows the risk variant functions similarly in human T cells in comparison with published murine models, it suggests that returning to these models to investigate specific contexts where PTPN22 might impact selection and tolerance is likely to be informative and critical for full understanding of this variant.\n\nWhile T cells expressing a lower avidity TCR were primarily impacted in our studies, we cannot eliminate potential alternative impacts of the TCRs studied in our models. The TCRs evaluated exhibited distinct differences in both EC50 (Linsley et al., 2021) and triggered proliferative response to an identical IGRP derived peptide (Figure 3C; Linsley et al., 2021). However, while these data points support a working hypothesis of TCR avidity determining the functional impact, we cannot rule out the role for possible differences in TCR disassociation rates and/or overall duration of TCR engagement. Further, while our approach provides a robust system to assess the impact of the risk variant in primary human T cells, our findings are derived from a comparison of only two specific TCRs. The identification of similar pairs of \u2018higher\u2019 and \u2018lower\u2019 avidity TCRs recognizing identical self-peptides will be useful in assessing our model and its interpretation across a broader pool of TCR interactions. Notably, in this study we explored the impacts of the PTPN22 risk variant and KO specifically in cord blood CD4 T cells. CD4 T cells were chosen for this study based on well-documented use in gene editing models and likely key roles in PTPN22 associated autoimmune diseases (Zheng et al., 2012). Cord blood was used to minimize differences in environmental impact between T cell donors. Although previous work has revealed similar findings regarding the phenotype of PTPN22 KO in adult T cells (Anderson et al., 2019), it remains possible that similar risk variant editing experiments using adult peripheral blood may yield different results.\n\nConsistent with our findings, recent work using lentiviral-based overexpression in primary human T cells also revealed hypomorphic function of the PTPN22 risk variant (Perry et al., 2021). Further, that study and others Sanchez-Blanco et al., 2018; Burn et al., 2016 have suggested that PTPN22 may modulate pathways other than the TCR including LFA-1-mediated integrin signals, stabilizing immunological synapses that promote T cell proliferation and Th1 skewing. Our data using low dose CD3 stimulation (Figure 2) support the conclusion that both the variant and PTPN22 KO can impact T cell activation through altered regulation of the TCR. Notably, our CD3 studies were performed in the absence of co-stimulation to better mimic sub-optimal TCR engagement. Thus, the relevance of our findings based on endogenous-level expression compared to lentiviral-based PTPN22 over-expression in association with CD3/CD28 co-stimulation are difficult to compare. Together, our findings that the risk variant preferentially modulates low avidity TCR engagement, with the observations of these previous studies suggests that the PTPN22 risk variant may exert its impact on T cells both via altering TCR signaling and by modulating additional signals including LFA-1 pathway regulation.\n\nThrough gene editing we demonstrate that PTPN22 risk variant expression in human T cells mediates at least a partial loss of function phenotype that mirrors findings derived from mouse models. This data, however, does not explain the marked differences in T cell responses described in mouse models vs. natural carriers of the PTPN22 risk variant. Natural carriers of the risk variant exhibit hyporesponsive T cells, with reduced TCR induced activation, and reduced cytokine responses (Rieck et al., 2007; Vang et al., 2005). In previous work, we showed that loss of function in another key negative regularity pathway in T cells leads to overexpression of functionally related proteins to maintain homeostasis. For example, KO of the IL-2 regulatory gene, PTPN2, in primary human T cells results in a transient increase in IL-2 signaling, but expansion of PTPN2 KO cells in high cytokine media leads to reduced IL-2 responses due to overexpression of the regulatory protein SOCS3 (Anderson et al., 2019). Similar compensatory events may be operable in T cells in carriers of the PTPN22 risk variant, where reduced proximal negative regulatory events might lead to expression of alternative regulatory proteins. Recent work using optogenically controlled TCR signaling has shown that T cell activation is dynamic, requiring optimal frequencies of TCR engagement relative to cessation of signal to mediate CD69 expression and subsequent activation; however, events that limit T cell responses may be more static, with expression of TIM3, for example, increasing regardless of signaling frequency (O\u2019Donoghue et al., 2021). As loss of PTPN22 function specifically augments low-avidity TCR signaling, it is possible that tonic TCR signaling is also impacted and may drive additional events that function to limit TCR signals in carriers of the risk variant over time. Finally, it is important to highlight the environmental differences between murine models and primary human T cell donors. As opportunity for exposure to antigen increases, this may drive T cells from human carriers toward a reduced responsiveness to TCR engagement via impacts that are not operative in SPF murine models.\n\nIn summary, the data presented within this study supports a model where the PTPN22 R620W risk variant impacts human T cell function via a reduction in negative regulation of TCR signaling; findings similar to murine models, but in contrast to the T cell signaling phenotype in carriers with the risk variant. In association with previous human studies, our findings suggest that the impact of the risk variant on T cell function is likely dynamic, leading to the generation of populations of hyperresponsive T cells, but also allowing for secondary impacts on T cell gene expression that may lead to hyporesponsive T cells over time or after environmental exposures. This would help explain how PTPN22 could influence risk of diverse autoimmune diseases such as type 1 diabetes and rheumatoid arthritis, diseases with distinct ages of onset and tissue targets. Taken together, these observations suggest that PTPN22 contributes to autoimmunity by establishing temporal windows of risk for specific diseases that coincide with periods of altered T cell responsiveness.\n\n## Materials and methods\n\n### Primary T cell isolation and culturing\n\nPBMCs were collected from whole (peripheral or cord) blood of consenting donors and cryopreserved. Upon thaw, naive CD4+ T cells were isolated by negative selection (Na\u00efve CD4 T Cell Isolation Kit II, Miltenyi Biotech) and cultured in Roswell Park Memorial Institute (RPMI) 1640 media supplemented with 20% FBS, 1\u00d7 Glutamax (Gibco), and 1 mM HEPES (Gibco). Unless otherwise noted, cells were cultured in 5 ng/ml recombinant IL-2 (Peprotech). After thaw, cells were counted and cultured at 1 million/ml in flat bottom culture plates.\n\n### CRISPR/Cas9 and ssODN reagents\n\nCRISPR gRNAs targeting PTPN22 exon 14 were commercially synthesized by Synthego (CRISPRevolution sgRNA). ssODNs were commercially synthesized by Integrated DNA Technologies (IDT; Ultramer DNA Oligonucleotides) with phosphorothioate linkages between the first and final three base pair sequences. gRNA complexes were mixed with Cas9 nuclease (IDT) at a 1.2:1 ratio and delivered with or without ssODNs into cells by electroporation. PTPN22 targeting 20 bp gRNA sequence used for all editing: AATGATTCAGGTGTCCGTAC.\n\n### Antigen specific TCR LV\n\nThe islet antigen-specific TCRs utilized in this study have been previously described (Cerosaletti et al., 2017; Linsley et al., 2021). These TCRs each recognize the identical peptide derived from the islet autoantigen, IGRP. T1D2 TCR herein described as L-TCR exhibits an EC50 of 0.97 \u03bcg/ml and T1D5-2 TCR herein described as H-TCR, exhibits an EC50 0.09 \u03bcg/ml. TCR coding sequences were cloned into lentiviral backbones using InFusion HD (Takara), with oligonucleotides synthesized by IDT, and a cis-linked (T2A) eGFP was inserted into the 3\u2019 end of the alpha constant region. LV-TCR plasmids were based on the pRRL backbone derived from pRRLSIN.cPPT.PGK-GFP.WPRE (plasmid #12252, Addgene). The DNA sequences of all plasmids were verified by Sanger sequencing performed by GENEWIZ. Methods for LV production have been previously described (Seymour et al., 2021). Lentivirus stocks were tittered by rtPCR.\n\n### Gene editing\n\nAfter thaw, cells were activated with CD3/CD28 Activator Beads (Gibco). After 2 days, beads were magnetically removed and cells re-plated without changing media or adjusting cell number. One day later, cells were electroporated with editing reagents.\n\nPrior to electroporation, cells were washed with PBS and resuspended in Lonza P3 buffer. Five \u03bcg of complexed RNP and 100 pmol ssODN per 1\u00d7106 cells was added to the resuspension so that the final cell density was 5\u00d7107 cells/ml. Cells were electroporated with a Lonza 4-D Nucleofector, using program DN-102 with 16-well 20 \u00b5l Nucleocuvette strips or 100 \u00b5l Nucleocuvette vessels, and then transferred into pre-warmed cell culture medium with IL-2 (unless otherwise noted). For samples transduced with lentivirus, virus was added to the culture 1 day after bead stim addition at an MOI of 5. After editing, cells were maintained in media identical to pre-editing conditions (unless otherwise noted). Cells were counted at least every 2 days using Count Bright absolute counting beads (Thermo Fisher Scientific) and split to maintain cell density of 1\u20132 million/ml. Following expansion cells were counted, washed two times with PBS, and rested at 1.5 million/ml for 24 hr in cytokine free media consisting of RPMI 1640 media with 10% FBS, 1\u00d7 Glutamax (Thermo Fisher Scientific), and 1 mM HEPES. Cells were re-counted prior to stimulation. For some experiments, cells were frozen after 24 hr cytokine free rest, then thawed/counted prior to stimulation.\n\n### ddPCR\n\nQuantification of HDR and NHEJ rates in edited human CD4+ T cells was obtained using a ddPCR, dual-probe competition assay. All probes were ordered from Sigma-Aldrich with a 3\u2019 Black Hole 1 Quencher. Probes specific to sequences generated by HDR insertion of SNP edits or stop codons were labeled with a 5\u2019 FAM reporter and used in tandem with a 5\u2019 HEX labeled probe specific to wild type (WT) sequences. Editing was measured after generating droplets with 50 ng of genomic DNA (gDNA), both HDR-FAM and WT-HEX probes, and primers to the editing locus producing amplicons of <500 bp (1\u00d7 assay, 900 nM primers, and 250 nM probe) using ddPCR supermix for probes (no deoxyuridine triphosphate) (Bio-Rad). Reference reactions were simultaneously performed using a 5\u2019 HEX labeled probe/primer combination targeting the housekeeping gene B2M. Droplets were generated with the QX200 Droplet Generator (Bio-Rad) and amplified. All samples were run in triplicate and averaged. Fluorescence was measured using the QX200 Droplet reader (Bio-Rad) and analyzed using Quantasoft software. Editing rates were calculated as the relative frequency (%) of FAM+ corresponding to %HDR, HEX+ corresponding to %No Event, and reference \u2013 (FAM+HEX) corresponding to %NHEJ.\n\nFor ddPCR analysis of co-cultured PTPN22 risk/non-risk edited cells HDR (risk) -FAM and HDR (non-risk) -HEX probes with locked nucleic acid (LNA) modifications were utilized. LNA modified nucleotides were integrated at the SNP nucleotide and the adjacent 5\u2019 and 3\u2019 nucleotides to increased probe discrimination. Risk/non-risk probe reads were compared to a B2M reference reaction as above.\n\n### Western blotting\n\nAll western blots were performed on lysates from human umbilical cord blood-derived CD4 T cells that had been either mock edited or gene edited, expanded 7 days in cytokine supplemented media, and subjected to 24 hr rest in cytokine free media. Cells were lysed in 1\u00d7 RIPA lysis buffer on ice for 10 min then clarified by centrifugation. Concentration of clarified lysate was determined by BCA assay (Pierce), diluted, and suspended in 1\u00d7 LDS Sample Buffer (Invitrogen). Ten \u03bcg of lysate was run on 4\u201312% Bis-Tris NuPAGE gels in 1\u00d7 MOPS buffer (Invitrogen). Protein was transferred to nitrocellulose in 1\u00d7 Transfer Buffer (Invitrogen) and 10% methanol. Non-specific binding was minimized with a 1 hr room temperature (RT) incubation in Odyssey LI-COR Blocking Buffer. Primary antibodies were stained at 1:1000. PTPN22 primary stain was for at least 12 hr at 4\u00b0C and actin was stained at RT for 40 min. Primary antibodies used were from Cell Signaling Technology: PTPN22 (D6D1H, Cat# 3700, RRID:AB_2798575) and actin (8H10D10, Cat# 14693, RRID:AB_2242334). After primary stain membranes were washed with 1\u00d7 TBST and incubated with secondary antibodies at 1:10,000 for 30 min at RT. Stained blots were washed and imaged on an Odyssey Infrared Imaging System (LI-COR Biotech.). Western blot quantifications were performed with ImageJ software.\n\n### Plate bound anti-CD3 stimulation and Th1 skewing\n\nStimulation plates were made in 96-well flat bottom culture plate. One-hundred \u00b5l of PBS supplemented with LEAF purified anti-CD3 (OKT3, Biolegend, Cat# 317326, RRID:AB_11150592) at 0.25 \u00b5g/ml was added to each well and incubated at least 12 hr at 4\u00b0C. The plate was then emptied, and wells were given 100 \u00b5l of cytokine free T cell media. After cells were edited, expanded for 7 days, and rested 24 hr in cytokine free media, 100 \u00b5l of cells at 2 million/ml were added to each well. Plates were incubated at 37\u00b0C for up to 48 hr.\n\nFor Th1 skewing of edited T cells, cells that had been edited and rested were transferred to 96-well flat bottom culture plates, coated with anti-CD3 as discussed above. These cells were cultured for 3 days in media containing 20 ng/ml IL-12 (Peprotech), 50 ng/ml IL-2, 40 \u03bcg/ml anti-IL-4 (MP4-25D2, eBioscience Cat# 14-7048-81, RRID:AB_468414), and 500 ng/ml soluble anti-CD28 (CD28.2, BioXcell Cat# BE0291, RRID:AB_2687814) to promote a Th1 phenotype. Non-skewed controls were cultured in media that contained IL-2, anti-CD3, and anti-CD28 only.\n\n### Peptide stimulation of antigen specific edited T cells\n\nLV-TCRs used in this study are HLA-DRB1 04:01 restricted and recognize the 20-mer peptide sequence: QLYHFLQIPTHEEHLFYVLS (IGRP- p39 position 305\u2013324). For stimulation of cells expressing LV-TCRs, antigen presenting cells (APCs) were PBMCs from an allogeneic HLA-DRB1 04:01 donor irradiated with 5000 rads. APCs were then mixed with peptide diluted in complete media (final peptide concentration 50 ng/ml) for 2 hr. Co-cultures were incubated in 96-well U-bottom plates with 200 K APCs and 50 K T cells per well at 37\u00b0C for up to 3 days in complete media containing no exogenous cytokines. APCs for all experiments were from the same PBMC donor.\n\n### Flow cytometry and gating strategies\n\nFlow cytometric analysis was performed on an LSR II flow cytometer (BD Biosciences) and data was analyzed using FlowJo software (Tree Star). Cells were stained with LIVE/DEAD Fixable Near-IR Dead Cell Stain Kit (Fisher Sci), as per the manufacturer\u2019s instructions and cells were stained with fluorescence labeled antibodies for 30 min on ice. In this study, flow cytometry antibodies used are from Biolegend: CD3 (UCHT1, Cat# 300434, RRID:AB_10962690), CD4 (RPA-T4, Cat# 300556, RRID:AB_2564391), CD69 (FN50, Cat# 310910, RRID:AB_314845), CD25 (M-A251, Cat# 356112, RRID:AB_2561979), CD71 (CY1G4, Cat# 334112, RRID:AB_2563119), IFN\u03b3 (4S.B3, Cat# 502526, RRID:AB_961355), and anti-mouse TCR-\u03b2 (H57-597, Cat# 109212, RRID:AB_1 313435), from Thermo Fisher Scientific: IL-2 (MQ1-17H12, Cat# 25-7029-42, RRID:AB_2573518), and from Cell Signaling: phospho-S6 kinase (D57.2.2E, Cat# 5316, RRID:AB_10694989).\n\nAll surface antibodies were used at a dilution of 1:100, antibodies against cytokines were used at a dilution of 1:200, and those staining phospho-sites were used at a dilution of 1:50. Gating order proceeded: lymphocytes\u2192 singlets\u2192live cells. Surface stains of other markers were subsequently gated on CD4+/TCR+ cells, then the marker of interest. For pS6 staining, cells were fixed with a final concentration of 2% PFA for 12 min at 37\u00b0C. Cells were then washed and permeabilized with BD Perm Buffer III for at least 30 min at \u201320\u00b0C. Cells were then washed and stained as described above. For cytokine staining, after 3 days of stimulation cells were stimulated with 50 ng/ml PMA, 1 \u00b5g/ml ionomycin, and 1 \u00b5g/ml monensin for 5 hr, then fixed/permed with BD Cytofix/Cytoperm prior to staining for cytokine production. For assessment of proliferation, peptide stimulated antigen specific T cells were labeled with CellTrace Violet proliferation dye (Fisher Science) prior to co-culturing with APCs; number of antigen specific T cells in each edited sample was determined daily by addition of Countbright Absolute Counting Beads (Fisher Science) in flow cytometry samples.\n\n### Experimental design\n\nAll cells used in this study are primary human cells. With the exception of Figure 1\u2014figure supplement 1B all data depicts experiments performed using umbilical cord blood-derived T cells, isolated within 36 hr of birth. Sex of donor was not held constant, and all figures reflect data generated with male and female derived materials, and ethnicity data was not collected. Once blood was confirmed to be homozygous for the non-risk (620R) PTPN22 variant to allow efficient gene editing, no exclusion criteria were applied. All experiments were performed two to four times as independent experiments (indicated in each figure legend), and N is indicated in each figure legend, and as each data point represents an independent human sample all data points meet the definition of \u2018biological replicates\u2019, with the exception of Figure 1\u2014figure supplement 1B, which was performed in a single experiment with two independent human donors and three technical replicates per donor.\n\n### Statistics\n\nStatistical analyses were performed using GraphPad Prism 9 (GraphPad). For all testing of gene edited cells, due to the low variability in culturing conditions and lack of obvious skewing, data was assumed to maintain a normal distribution. p-Values in multiple comparisons were calculated using one-way ANOVA with the Tukey\u2019s correction; p-values in comparisons between two groups were calculated using a paired two-tailed t test. Values from combined independent experiments are shown as mean \u00b1 SEM.\n\n### Study approval (human subjects)\n\nFor gene editing experiments using adult PBMCs, human donor leukopacks were purchased from the Fred Hutchinson Cancer Research Center, which were obtained from consenting donors under an IRB-approved protocol and cryopreserved. For gene editing experiments using umbilical cord blood-derived PBMCs, cord units were purchased from the Bloodworks Northwest, which were obtained with consent under an IRB-approved protocol and cryopreserved. After collection, all samples were de-identified for the protection of human blood donors.\n",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "06739212-7321-45a8-bf7a-d0366fc13551",
+      "submission_id": "2bd38d81-01b3-46e9-a472-eefee9dccf5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bernard Malissen, https://ror.org/035xkbk20 Centre d'Immunologie de Marseille-Luminy, Aix Marseille Universit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81577.sa0](https://doi.org/10.7554/eLife.81577.sa0)\n\nAlthough the experimental system is limiting in addressing intracellular signaling parameters, the overall conclusions of the paper are important in that they further our understanding of the mechanisms through which the PTPN22 R620W variant, associated with multiple autoimmune diseases, contributes to breech of peripheral T cell tolerance. Moreover, this work greatly advances and clarifies ongoing confusion about whether PTPN22 SNP(620W) is a Loss Of Function mutant.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Bernard Malissen, https://ror.org/035xkbk20 Centre d'Immunologie de Marseille-Luminy, Aix Marseille Universit\u00e9 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.81577.sa1](https://doi.org/10.7554/eLife.81577.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"PTPN22 R620W gene editing in T cells enhances low avidity TCR responses\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Cope (Reviewer #1); Andrew C. Chan (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nTwo issues need to be addressed. First, some additional assessment of intracellular signaling parameters to distinguish between total or hypomorphic LOF. Second, as Reviewers 1 and 3 note, ligand titration of the high-affinity TCR is needed to better support the lack of phenotype for PTPN22 loss for high-afifnity interactions.\n\nReviewer #1 (Recommendations for the authors):\n\nThis reviewer commends the authors on the near Hereculean efforts undertaken to generate the range of genetically modified cord blood T cells for study.\n\nGeneral comments:\n\nIt might be worth mentioning the specificity of the TCRs in the abstract just to give the story context. It took this reviewer a while to find this info, buried in methods. The Results section reads a bit like a discussion or even review paper, focused on the nuances of gene editing. This reviewer would suggest keeping the narrative of the results focused on describing the experimental findings, and confining technological limitations and challenges to the discussion. This is a somewhat stylistic issue, but would make for a better read.\n\nReviewer #2 (Recommendations for the authors):\n\nOverall, this conclusion is well funded based on the experiments shown, with only a few issues or questions (see below).\n\n1) In the figures the different symbols represents different donors, which is clearly marked. However, the data in all experiments are from different experiments, it would be helpful if it could be marked also which symbols belong to which experiment (maybe using different colors) to get a grip on the interexperimental variation ( I understood the values are not normalized?).\n\n2) The reference list is dominated by reviews. It is important to refer to original publications not only because it is more fair but also to prevent false statements going into circuits. Pls take away most, or preferably all, of these references and replace with original when needed.\n\n3) In the discussion regarding different outcomes in mouse versus human it is pointed out that the mouse is in SPF conditions and are genetically more homogenous. This is true but there are likely even more important issues regarding experimental settings. Just to mention taking out T cells from their normal biological context, put them in an incubator with atmospheric oxygen pressure represent a shock and dramatically changes the context. This is of particular importance for PTPs, including PTPN22, which are profoundly redox regulated. There are numerous differences and usually the most important differences are the experimental settings and I think it should be pointed out and discussed in a better way. For future studies, the mouse is absolutely needed, for example, the lymphocyte selection, both T and B, needs to be addressed and I guess experimental mice are critically needed to solve this. Thus, the main conclusion from this paper is that it provides good arguments to improve the animal models to solve the functional genetics of PTPN22 (and most likely other SNPs).\n\nReviewer #3 (Recommendations for the authors):\n\nThis work employs an experimental system that minimizes human donor heterogeneity and developmental skewing. The authors demonstrate that PTPN22 plays an inhibitory role on TCR regulated effector functions in low, but not high, avidity TCR interactions. The work builds on a report by Salmond et al. (Nature Immunology, 15:875, 2014) using the murine OT-I TCR system that PTPN22 restrains TCR signaling induced by lower affinity agonists (T4 or G4 peptides) than the higher affinity N4 agonist. In the present work, the authors demonstrate further in human T cells that PTPN22 KO or SNP edited cells demonstrate similar enhanced TCR-mediated functions when compared to PTPN22 wildtype T cells. The authors should consider the following:\n\n1. As the highest peptide dose was utilized in the signaling studies in Figures 4-6 since this dose produced efficient proliferation, the authors should consider performing a dose-titration with the H-TCR studies to fully support their conclusion that there are no differences in H-TCR signaling in the presence or absence of PTPN22.\n\n2. Page 19, line 439- the level of TCR expression in the transduced cells should be shown.\n\n3. The conclusions of the Salmond et al. study mentioned above describing differences in low vs high affinity agonists should be provided greater description as background.\n\n4. The authors should also discuss how their conclusions compare with the recent study of Perry et al. (Journal of Immunology, 207:849, 2021) where using an overexpression system, they conclude that the PTPN22(620W) SNP is hypomorphic in human CD4+ T cells rather than a full loss-of-function.\n",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "30cb9901-f617-4984-ac00-d0d55b1f06df",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C1",
+      "claim": "A genetic variant in the gene PTPN22 (R620W, rs2476601) is strongly associated with increased risk for multiple autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "A genetic variant in the gene PTPN22 (R620W, rs2476601) is strongly associated with increased risk for multiple autoimmune diseases and linked to altered TCR regulation and T cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information about PTPN22 R620W.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "11d8fbf3-d1c2-43cc-9bc0-3b2f1ca977b6",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C2",
+      "claim": "PTPN22 R620W is linked to altered TCR regulation and T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "A genetic variant in the gene PTPN22 (R620W, rs2476601) is strongly associated with increased risk for multiple autoimmune diseases and linked to altered TCR regulation and T cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "3ebc5b63-c613-4863-aa14-7044dc80565b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C3",
+      "claim": "PTPN22 risk edited cells exhibited increased activation marker expression following non-specific TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "PTPN22 risk edited cells exhibited increased activation marker expression following non-specific TCR engagement, findings that mimicked PTPN22 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "b2afe96e-caf5-4b7f-9026-0fbec7f3fc67",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C4",
+      "claim": "PTPN22 risk edited cells mimicked PTPN22 KO cells in activation marker expression.",
+      "claim_type": "EXPLICIT",
+      "source": "PTPN22 risk edited cells exhibited increased activation marker expression following non-specific TCR engagement, findings that mimicked PTPN22 KO cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "3b60c851-c223-42e4-a13b-01cad71bfd93",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C5",
+      "claim": "Loss of PTPN22 function led to enhanced signaling in T cells expressing a lower avidity self-reactive TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, using lentiviral delivery of T1D patient-derived TCRs against the pancreatic autoantigen, islet-specific glucose-6 phosphatase catalytic subunit-related protein (IGRP), we demonstrate that loss of PTPN22 function led to enhanced signaling in T cells expressing a lower avidity self-reactive TCR, but not a high-avidity TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "a7494489-b3a2-41b0-877f-96bddc80552b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C6",
+      "claim": "Loss of PTPN22 function did not enhance signaling in T cells expressing a high-avidity TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, using lentiviral delivery of T1D patient-derived TCRs against the pancreatic autoantigen, islet-specific glucose-6 phosphatase catalytic subunit-related protein (IGRP), we demonstrate that loss of PTPN22 function led to enhanced signaling in T cells expressing a lower avidity self-reactive TCR, but not a high-avidity TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "334a77ab-bcc1-4189-925e-c05abca44739",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C7",
+      "claim": "Loss of PTPN22 mediated enhanced proliferation in T cells expressing a lower avidity TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, loss of PTPN22 mediated enhanced proliferation and Th1 skewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "4bc515d1-b6f5-4c77-81bd-587a28aabd29",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C8",
+      "claim": "Loss of PTPN22 mediated Th1 skewing in T cells expressing a lower avidity TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, loss of PTPN22 mediated enhanced proliferation and Th1 skewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d9526a2b-f35c-4681-ac4a-d8373f4a8f1c",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C9",
+      "claim": "Expression of the PTPN22 risk variant in association with a lower avidity TCR increased proliferation relative to PTPN22 non-risk T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of the risk variant in association with a lower avidity TCR also increased proliferation relative to PTPN22 non-risk T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by experimental data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "ddca69d7-45fc-4dd4-bc42-fb8220096a6f",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C10",
+      "claim": "PTPN22 rs2476601 contributes to autoimmunity risk by permitting increased TCR signaling and activation in mildly self-reactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that, in primary human T cells, PTPN22 rs2476601 contributes to autoimmunity risk by permitting increased TCR signaling and activation in mildly self-reactive T cells, thereby potentially expanding the self-reactive T cell pool and skewing this population toward an inflammatory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fe850143-8df0-4d68-bfcc-0c2d20beffff",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C11",
+      "claim": "PTPN22 rs2476601 potentially expands the self-reactive T cell pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that, in primary human T cells, PTPN22 rs2476601 contributes to autoimmunity risk by permitting increased TCR signaling and activation in mildly self-reactive T cells, thereby potentially expanding the self-reactive T cell pool and skewing this population toward an inflammatory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "69ad7250-b0b5-4bbe-bfa3-82b8f1c60208",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C12",
+      "claim": "PTPN22 rs2476601 skews self-reactive T cells toward an inflammatory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that, in primary human T cells, PTPN22 rs2476601 contributes to autoimmunity risk by permitting increased TCR signaling and activation in mildly self-reactive T cells, thereby potentially expanding the self-reactive T cell pool and skewing this population toward an inflammatory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings presented in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "0911b317-539d-46c1-aace-00b4359394b4",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C13",
+      "claim": "The greatest risk factor for most autoimmune disease is HLA haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "While the greatest risk factor for most autoimmune disease is HLA haplotype (Todd et al., 2007; Bonifacio et al., 2018), an individual's total genetic risk is determined by a combination of gene variants (Sharma et al., 2018; Cotsapas et al., 2011), many of which cluster near genes responsible for regulating immune responses (Farh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Todd et al., 2007 and Bonifacio et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "daa4db1f-569f-473c-9a09-108e69ee8918",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C14",
+      "claim": "An individual's total genetic risk for autoimmune disease is determined by a combination of gene variants.",
+      "claim_type": "EXPLICIT",
+      "source": "While the greatest risk factor for most autoimmune disease is HLA haplotype (Todd et al., 2007; Bonifacio et al., 2018), an individual's total genetic risk is determined by a combination of gene variants (Sharma et al., 2018; Cotsapas et al., 2011), many of which cluster near genes responsible for regulating immune responses (Farh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sharma et al., 2018 and Cotsapas et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fd7a9f67-9171-41bf-8bea-105f791727cd",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C15",
+      "claim": "Many autoimmune risk gene variants cluster near genes responsible for regulating immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "While the greatest risk factor for most autoimmune disease is HLA haplotype (Todd et al., 2007; Bonifacio et al., 2018), an individual's total genetic risk is determined by a combination of gene variants (Sharma et al., 2018; Cotsapas et al., 2011), many of which cluster near genes responsible for regulating immune responses (Farh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Farh et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "eeb6c876-3349-4b11-9b49-7d7b3cff4885",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C16",
+      "claim": "PTPN22 can function to modulate a range of immune signaling programs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the phosphatase encoded by PTPN22 can function to modulate a range of immune signaling programs, it has been best studied in lymphocyte antigen receptor regulation (Cohen et al., 1999; Wu et al., 2006; Hill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cohen et al., 1999; Wu et al., 2006; Hill et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1719f779-c127-4ae0-9f8b-dc47499ec3c0",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C17",
+      "claim": "PTPN22 has been best studied in lymphocyte antigen receptor regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While the phosphatase encoded by PTPN22 can function to modulate a range of immune signaling programs, it has been best studied in lymphocyte antigen receptor regulation (Cohen et al., 1999; Wu et al., 2006; Hill et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cohen et al., 1999; Wu et al., 2006; Hill et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f5a6a159-c48f-44d6-89f1-4c7435b1c752",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C18",
+      "claim": "PTPN22 R620W is broadly associated with a large number of autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "An arginine to tryptophan substitution (R620W) resulting from a single nucleotide polymorphism (SNP; rs2476601) within PTPN22 is broadly associated with a large number of autoimmune diseases (Zheng et al., 2012; Tizaoui et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zheng et al., 2012 and Tizaoui et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "8799660b-dfd1-41e6-a78d-c2d5a09f0b40",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C19",
+      "claim": "PTPN22 R620W is one of the strongest, non-HLA, genetic risk factors for autoimmune diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "PTPN22 R620W, hereafter referred to as the PTPN22 risk variant, is one of the strongest, non-HLA, genetic risk factors for autoimmune diseases, nearly doubling a carrier's risk of type 1 diabetes, systemic lupus erythematosus, or rheumatoid arthritis (Bottini et al., 2004; Begovich et al., 2004; Kyogoku et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bottini et al., 2004; Begovich et al., 2004; Kyogoku et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c6d77d5d-baaf-451b-9c4c-a6d903d2b076",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C20",
+      "claim": "PTPN22 R620W nearly doubles a carrier's risk of type 1 diabetes, systemic lupus erythematosus, or rheumatoid arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "PTPN22 R620W, hereafter referred to as the PTPN22 risk variant, is one of the strongest, non-HLA, genetic risk factors for autoimmune diseases, nearly doubling a carrier's risk of type 1 diabetes, systemic lupus erythematosus, or rheumatoid arthritis (Bottini et al., 2004; Begovich et al., 2004; Kyogoku et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bottini et al., 2004; Begovich et al., 2004; Kyogoku et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "69225ebf-fcfb-44e2-9c00-372e4d868d81",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C21",
+      "claim": "In T cells, PTPN22 functions to dephosphorylate key activating tyrosine residues within LCK and ZAP70 in the TCR signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In T cells, PTPN22 functions to dephosphorylate key activating tyrosine residues within the proximal tyrosine kinase effectors, LCK and ZAP70, in the TCR signaling pathway (Wu et al., 2006; Bottini et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wu et al., 2006 and Bottini et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "11c8b833-46ec-47d9-8a6d-65464890374a",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C22",
+      "claim": "PTPN22 function is mediated in concert with activity through PTPN22's binding partner, C-terminal Src kinase (CSK).",
+      "claim_type": "EXPLICIT",
+      "source": "This function is mediated in concert with activity through PTPN22's binding partner, C-terminal Src kinase (CSK), which also regulates LCK activity (Cloutier and Veillette, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cloutier and Veillette, 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "0c67712e-7272-43a4-9ffa-7f80ed878f72",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C23",
+      "claim": "CSK regulates LCK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This function is mediated in concert with activity through PTPN22's binding partner, C-terminal Src kinase (CSK), which also regulates LCK activity (Cloutier and Veillette, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cloutier and Veillette, 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "00024c32-1b44-4315-9507-5469b9b81d38",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C24",
+      "claim": "Co-association of PTPN22 and CSK results in residence of both proteins within the cytosolic plasma membrane of resting T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-association of PTPN22 and CSK results in residence of both proteins within the cytosolic plasma membrane of resting T cells through the association of CSK with another TCR inhibitory protein, PAG (Davidson et al., 2016; Simoncelli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davidson et al., 2016 and Simoncelli et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "63db1da8-a7cc-43cb-b157-21a861f3cf28",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C25",
+      "claim": "The R620W substitution in PTPN22 is located within a proline rich, C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The R620W substitution in PTPN22 is located within a proline rich, C-terminal domain and reduces the interaction of PTPN22 with CSK leading to altered localization of PTPN22 (Bottini et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bottini et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "87ed999e-cf3e-4fd9-9836-9986c46fb995",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C26",
+      "claim": "The R620W substitution reduces the interaction of PTPN22 with CSK leading to altered localization of PTPN22.",
+      "claim_type": "EXPLICIT",
+      "source": "The R620W substitution in PTPN22 is located within a proline rich, C-terminal domain and reduces the interaction of PTPN22 with CSK leading to altered localization of PTPN22 (Bottini et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bottini et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "0c92170b-616a-4285-bca5-38af613cf88f",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C27",
+      "claim": "Primary T cells isolated from carriers of the PTPN22 risk variant display significantly weaker responses to TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary T cells isolated from carriers of the PTPN22 risk variant display significantly weaker responses to TCR engagement, as measured by calcium flux, cytokine release, and other metrics (Rieck et al., 2007; Vang et al., 2005; Arechiga et al., 2009; Vang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rieck et al., 2007; Vang et al., 2005; Arechiga et al., 2009; Vang et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f7c1a83c-ee24-462c-8884-6bddb42261de",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C28",
+      "claim": "In murine models, expression of the PTPN22 risk variant leads to enhanced TCR responses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in murine models, expression of the risk variant leads to enhanced TCR responses, as measured by the same metrics in addition to increased T cell proliferation and survival (Zhang et al., 2011; Dai et al., 2013; Lin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2011; Dai et al., 2013; Lin et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "291e7acd-ea75-46fd-b5e3-673746167daf",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C29",
+      "claim": "Genetic ablation of PTPN22 in both mouse and human primary T cells results in enhanced TCR signaling relative to PTPN22 wild type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genetic ablation of PTPN22 in both mouse and human primary T cells results in enhanced TCR signaling relative to PTPN22 wild type cells; findings similar to murine risk model yet opposite of the phenotypes described in human carriers of the risk variant (Hasegawa et al., 2004; Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hasegawa et al., 2004 and Anderson et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "3205deda-c9ca-4ace-b2d7-c759fd9e2831",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C30",
+      "claim": "Genetic ablation of ptpn22 in a fixed TCR murine model showed that loss of PTPN22 preferentially impacts T cells responses to low-avidity antigens, but not high-avidity antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genetic ablation of ptpn22 in a fixed TCR murine model has shown that loss of PTPN22 preferentially impacts T cells responses to low-avidity antigens, but not high-avidity antigens (Salmond et al., 2014); driving increased proliferation and skewing toward a Th1 phenotype in ptpn22 KO T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Salmond et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "bc838548-007e-4534-a329-d28209c31086",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C31",
+      "claim": "Loss of ptpn22 drives increased proliferation and skewing toward a Th1 phenotype in ptpn22 KO T cells in a fixed TCR murine model.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, genetic ablation of ptpn22 in a fixed TCR murine model has shown that loss of PTPN22 preferentially impacts T cells responses to low-avidity antigens, but not high-avidity antigens (Salmond et al., 2014); driving increased proliferation and skewing toward a Th1 phenotype in ptpn22 KO T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Salmond et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c45958d4-d7d9-4d1b-a357-ac94ac12b78c",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C32",
+      "claim": "The PTPN22 risk variant is associated with an increase in memory lymphocyte populations.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the risk variant is associated with an increase in memory lymphocyte populations and expanded pro-inflammatory/Th1 T cells and both exhibit increased risk of autoimmune manifestations (Vang et al., 2013; Dai et al., 2013; Sanchez-Blanco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vang et al., 2013; Dai et al., 2013; Sanchez-Blanco et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1e0749e1-b035-4c8d-a321-9ddb46cab3b1",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C33",
+      "claim": "The PTPN22 risk variant is associated with expanded pro-inflammatory/Th1 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the risk variant is associated with an increase in memory lymphocyte populations and expanded pro-inflammatory/Th1 T cells and both exhibit increased risk of autoimmune manifestations (Vang et al., 2013; Dai et al., 2013; Sanchez-Blanco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vang et al., 2013; Dai et al., 2013; Sanchez-Blanco et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d1687058-db06-47e1-b762-87391d28e9a0",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C34",
+      "claim": "A 120 bp ssODN design with a long 5' homology arm (ssODN V3, 5' arm 89 bp/3' arm 29 bp) efficiently introduced the desired coding sequence alterations in adult peripheral blood CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in adult peripheral blood CD4 T cells, a 120 bp ssODN design with a long 5' homology arm (ssODN V3, 5' arm 89 bp/3' arm 29 bp) efficiently introduced the desired coding sequence alterations (Figure 1\u2014figure supplement 1B), in line with previous findings (Richardson et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B and citation to Richardson et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "0195522d-b765-4281-884d-0bbdf8bb87e5",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C35",
+      "claim": "PTPN22 non-risk and risk edited populations exhibited average HDR rates of ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Both edited populations exhibited average HDR rates of ~50%, and no detectable editing was present in mock edited populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fcfb8611-0d19-4e07-a4eb-8844caad24e2",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C36",
+      "claim": "No detectable editing was present in mock edited populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both edited populations exhibited average HDR rates of ~50%, and no detectable editing was present in mock edited populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "293f49de-f497-44b8-805e-c7197bff2b7b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C37",
+      "claim": "PTPN22 non-risk and risk edited populations retained equivalent expression levels of PTPN22.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis confirmed that, PTPN22 non-risk and risk edited populations retained equivalent expression levels of PTPN22 (with a reduction in total PTPN22 protein compared with mock edited cells reflecting the NHEJ-mediated loss of protein expression in the absence of successful HDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "366d58b4-fd02-410b-a8ba-560f9302b9ec",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C38",
+      "claim": "PTPN22 KO populations exhibited near total absence of protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, PTPN22 KO populations exhibited near total absence of protein expression (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "8482a4b2-655b-43e4-9861-942b20b0a0c7",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C39",
+      "claim": "Wild type PTPN22 alleles were nearly undetectable in edited populations (<1% of total alleles).",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type PTPN22 alleles were nearly undetectable in edited populations (<1% of total alleles), indicating that resulting genotypes of edited T cells can be assumed to a mixture of biallelic HDR, biallelic NHEJ (PTPN22 KO), or HDR and NHEJ on opposite alleles (hemizygous).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from ddPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "b616b29d-fe5f-4feb-a2f7-15eb52631c14",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C40",
+      "claim": "Mock edited cells had significantly less expression of the activation markers CD69, CD25, and CD71 compared with gene edited populations.",
+      "claim_type": "EXPLICIT",
+      "source": "As all PTPN22 edits produced some loss of PTPN22 expression, and PTPN22 is responsible for restraining TCR activation, it was unsurprising to find that mock edited cells had significantly less expression of the activation markers CD69, CD25, and CD71 compared with gene edited populations (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "7d32a02f-77c5-492e-9e35-7467974e48bd",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C41",
+      "claim": "PTPN22 KO populations expressed the highest levels of activation markers CD69, CD25, and CD71.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was striking that, while PTPN22 KO populations expressed the highest levels of these activation markers, the PTPN22 risk edited cells, in comparison with non-risk edited cells, also exhibited increased expression of CD25 and CD71 at 48 hr post stimulation and a trend toward increased CD69 expression as early as 6 hr post stimulation (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d385c93c-223f-43a8-ad80-d1fe16814e7f",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C42",
+      "claim": "PTPN22 risk edited cells exhibited increased expression of CD25 and CD71 at 48 hr post stimulation compared with non-risk edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was striking that, while PTPN22 KO populations expressed the highest levels of these activation markers, the PTPN22 risk edited cells, in comparison with non-risk edited cells, also exhibited increased expression of CD25 and CD71 at 48 hr post stimulation and a trend toward increased CD69 expression as early as 6 hr post stimulation (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "e216d7cf-38f5-4065-ae3f-cf1118cf0da6",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C43",
+      "claim": "PTPN22 risk edited cells showed a trend toward increased CD69 expression as early as 6 hr post stimulation compared with non-risk edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was striking that, while PTPN22 KO populations expressed the highest levels of these activation markers, the PTPN22 risk edited cells, in comparison with non-risk edited cells, also exhibited increased expression of CD25 and CD71 at 48 hr post stimulation and a trend toward increased CD69 expression as early as 6 hr post stimulation (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "54200c7d-764a-4951-9f71-15582ff4785b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C44",
+      "claim": "TCR signaling strength is increased in cells expressing the PTPN22 risk variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data strongly suggests that TCR signaling strength is increased in cells expressing the PTPN22 risk variant, and, that this phenotype is most similar to PTPN22 KO T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "bd1fdcd1-4b74-498a-a7d1-8570d15ea020",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C45",
+      "claim": "The phenotype of PTPN22 risk variant cells is most similar to PTPN22 KO T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data strongly suggests that TCR signaling strength is increased in cells expressing the PTPN22 risk variant, and, that this phenotype is most similar to PTPN22 KO T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1e8c7b8d-ace4-4346-919a-1148a42c9d49",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C46",
+      "claim": "No differences in the number of cells producing IFN\u03b3 or IL-2 were observed based upon edits made to PTPN22 in Th1 skewing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Three days after stimulation we found most cells producing Th1 associated cytokines, however no differences in the number of cells producing IFN\u03b3 or IL-2 were observed based upon edits made to PTPN22 (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "359482bd-a7f2-466b-a2d6-390e06962a73",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C47",
+      "claim": "Addition of LV transduction prior to gene editing did not impact gene editing outcomes or rates of HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of LV transduction prior to gene editing did not impact gene editing outcomes or rates of HDR (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "a7656be2-d00a-4c67-9b70-348dcc8707dc",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C48",
+      "claim": "The two TCRs (L-TCR and H-TCR) triggered different rates of proliferation over 3 days, consistent with their reported avidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following stimulation of TCR+ cord blood T cells with peptide loaded APCs, the alternative self-reactive TCRs responded to IGRP peptide at markedly different magnitudes. The two TCRs, that we term: 'lower avidity TCR' or L-TCR, and 'higher avidity TCR' or H-TCR, triggered different rates of proliferation over 3 days (based on either dye dilution or direct cell counts), consistent with their reported avidity (Figure 3C and D; Linsley et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and D and citation to Linsley et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "903b8fc3-f492-4b42-aa46-ca40cb16ecb9",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C49",
+      "claim": "L-TCR+ PTPN22 KO cells had significantly increased proliferation relative to mock edited L-TCR cells across a range of peptide doses.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, upon combining antigen specific stimulation with PTPN22 KO gene editing, we found that L-TCR+ PTPN22 KO cells had significantly increased proliferation relative to mock edited L-TCR cells across a range of peptide doses (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "9d640edc-449b-4d01-a564-ba691f404fad",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C50",
+      "claim": "H-TCR+ expressing edited T cells showed similar proliferation rates in response to multiple antigen doses, regardless of PTPN22 genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H-TCR + expressing edited T cells showed similar proliferation rates in response to multiple antigen doses, regardless of PTPN22 genotype (Figure 3D and F; Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D, F, and Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "517f255c-3a3d-4e2a-9790-cf538cec5741",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C51",
+      "claim": "In cells expressing L-TCR, the loss of PTPN22 resulted in significantly greater proportion of phosphorylated S6 kinase positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing L-TCR, the loss of PTPN22 resulted in significantly greater proportion of phosphorylated S6 kinase positive cells, while cells expressing H-TCR, PTPN22 KO showed no impact on the relative percentage of pS6+ cells (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "79836cf5-afd3-4dc8-af27-dc491990050d",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C52",
+      "claim": "In cells expressing H-TCR, PTPN22 KO showed no impact on the relative percentage of pS6+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing L-TCR, the loss of PTPN22 resulted in significantly greater proportion of phosphorylated S6 kinase positive cells, while cells expressing H-TCR, PTPN22 KO showed no impact on the relative percentage of pS6+ cells (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1f0f8406-8e2e-46f3-983a-3f71a437381d",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C53",
+      "claim": "L-TCR expressing PTPN22 KO T cells expressed higher levels of activation markers including CD69, CD25, and CD71 compared to mock edited T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Two days post peptide stimulation, L-TCR expressing PTPN22 KO T cells, in comparison to mock edited T cells from the same cord blood donor also expressing L-TCR, expressed higher levels of activation markers including CD69, CD25, and CD71 (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "026cd26f-ee0e-4bac-8bf6-f787984035f4",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C54",
+      "claim": "H-TCR expressing PTPN22 KO T cells exhibited no differences in activation marker expression in comparison to control T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H-TCR expressing PTPN22 KO T cells exhibited no differences in comparison to control T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "e3cbb7a1-146c-4738-9f84-946dae89a464",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C55",
+      "claim": "Loss of PTPN22 activity preferentially permits enhanced signaling in response to low-avidity TCR engagement in primary human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that loss of PTPN22 activity preferentially permits enhanced signaling in response to low-avidity TCR engagement in primary human T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f5a86270-187b-47de-872b-a8b4bb10f20c",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C56",
+      "claim": "H-TCR+ PTPN22 KO T cells exhibited no difference in frequency of IFN\u03b3 or IL-2 producing cells relative to mock edited cells.",
+      "claim_type": "EXPLICIT",
+      "source": "H-TCR+ PTPN22 KO T cells exhibited no difference in frequency of IFN\u03b3 or IL-2 producing cells relative to mock edited cells (Figure 5\u2014figure supplement 1A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1f0d310b-4cf9-4428-870c-f697c6b04987",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C57",
+      "claim": "The proportion of L-TCR+ cells that generated IFN\u03b3 were increased by loss of PTPN22.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proportion of L-TCR+ cells that generated IFN\u03b3 were increased by loss of PTPN22 and risk edited cells exhibited a similar trend though not significant (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "b367bf37-f152-4820-b065-84b69d591612",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C58",
+      "claim": "PTPN22 risk edited cells contained a significantly higher proportion of IL-2 producing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, PTPN22 risk edited cells contained a significantly higher proportion of IL-2 producing cells (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "3c0dab80-8ba0-45e3-aaa7-235481ae4283",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C59",
+      "claim": "gDNA based ddPCR analysis on FAC sorted TCR+ cells prior to stimulation demonstrated equal proportions of PTPN22 risk and non-risk edited alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "gDNA based ddPCR analysis on FAC sorted TCR+ cells prior to stimulation demonstrated equal proportions of PTPN22 risk and non-risk edited alleles (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "8d84996a-daa4-4778-ac7a-802770457ab2",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C60",
+      "claim": "ddPCR revealed nearly twice as many PTPN22 risk edited over non-risk edited alleles within the proliferating cell population after peptide stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "ddPCR revealed nearly twice as many PTPN22 risk edited over non-risk edited alleles within the proliferating cell population (Figure 6B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "959477bf-b911-467e-811a-338373e73742",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C61",
+      "claim": "Human T cells expressing the PTPN22 risk variant exhibit increased proliferation in response to low-avidity TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this data supports a hypothesized model (Figure 6A) wherein human T cells expressing the PTPN22 risk variant exhibit increased proliferation in response to low-avidity TCR engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "e0de07cf-b747-4615-8cdb-90cab965ca46",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C62",
+      "claim": "gDNA taken from stimulated but non-proliferating TCR+ cells showed a partial increase in PTPN22 risk edited alleles relative to input.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, gDNA taken from stimulated but non-proliferating TCR+ cells also showed a partial increase in PTPN22 risk edited alleles relative to input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "a83e1197-9da1-4cdf-b7db-13a23496c7a7",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C63",
+      "claim": "Increased TCR signal strength in risk variant T cells may promote enhanced cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "While this difference was less robust than among proliferating cells (Figure 6\u2014figure supplement 1A\u2013B), it suggests that increased TCR signal strength in risk variant T cells may promote enhanced cell survival, a finding that will require additional study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data shown in Figure 6\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fe431b3a-3db5-40a8-975f-cf1b946b21e0",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C64",
+      "claim": "PTPN22 risk variant expressing T cells exhibit a phenotype similar to PTPN22 KO T cells, leading to increased expression of TCR induced activation responses markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our data clearly demonstrate that PTPN22 risk variant expressing T cells exhibit a phenotype similar to PTPN22 KO T cells, leading to increased expression of TCR induced activation responses markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from Figures 2-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "0268aee9-558d-4276-ae0a-b4df0db42b10",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C65",
+      "claim": "PTPN22 deficiency predominantly impacts T cells activated in response to low-avidity TCR engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, using transgenic TCR delivery and cognate peptide-mediated activation, in tandem with our gene editing platform, we show that PTPN22 deficiency predominantly impacts T cells activated in response to low-avidity TCR engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from Figures 3-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "2e64c2c8-5fe1-4613-867f-6338a95219e2",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C66",
+      "claim": "PTPN22 function is largely dispensable in T cells receiving a high-avidity TCR signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PTPN22 function is largely dispensable in T cells receiving a high-avidity TCR signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from Figures 3-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c30b506b-3266-4f55-8359-ab545753e3ab",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C67",
+      "claim": "The PTPN22 risk variant may contribute to autoimmune responses by selectively expanding the pool of lower avidity, self-reactive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the PTPN22 risk variant may contribute to autoimmune responses, at least in part, by selectively expanding the pool of lower avidity, self-reactive T cells and skewing such cells toward a pro-inflammatory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f4a80f80-7852-49a3-8a64-6c82df4a7beb",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C68",
+      "claim": "The PTPN22 risk variant may contribute to autoimmune responses by skewing lower avidity, self-reactive T cells toward a pro-inflammatory phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the PTPN22 risk variant may contribute to autoimmune responses, at least in part, by selectively expanding the pool of lower avidity, self-reactive T cells and skewing such cells toward a pro-inflammatory phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "e94a9bb0-829a-4a92-ab4e-bc751db41a36",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C69",
+      "claim": "The findings are consistent with previous work in a fixed TCR murine model that found loss of ptpn22 to preferentially impact low-avidity TCR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with previous work in a fixed TCR murine model that also found loss of ptpn22 to preferentially impact low-avidity TCR stimulation (Salmond et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current findings with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "a67083c2-f14d-4d77-be96-9e5a36e28767",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C70",
+      "claim": "The editing platform utilizes a designer nuclease that generates a dsDNA break in close proximity to the target site for HDR editing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our editing platform utilizes a designer nuclease that generates a dsDNA break in close proximity to the target site for HDR editing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "947012af-9291-4b0e-b828-10b53d05429e",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C71",
+      "claim": "The editing platform allows for generation of edited cells with high rates of HDR.",
+      "claim_type": "EXPLICIT",
+      "source": "This combined approach allows for: (a) generation of edited cells with high rates of HDR; (b) equivalent HDR rates for alternative coding changes within the target gene via use of a series of ssODN donors; and (c) achieving editing outcomes while controlling for the overall HDR/NHEJ ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "292fc0e6-dbf9-4342-89dc-55684fe6de97",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C72",
+      "claim": "The editing platform allows for equivalent HDR rates for alternative coding changes within the target gene via use of a series of ssODN donors.",
+      "claim_type": "EXPLICIT",
+      "source": "This combined approach allows for: (a) generation of edited cells with high rates of HDR; (b) equivalent HDR rates for alternative coding changes within the target gene via use of a series of ssODN donors; and (c) achieving editing outcomes while controlling for the overall HDR/NHEJ ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d54a7354-c069-48b3-afcc-a7f58d639da4",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C73",
+      "claim": "The editing platform allows for achieving editing outcomes while controlling for the overall HDR/NHEJ ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "This combined approach allows for: (a) generation of edited cells with high rates of HDR; (b) equivalent HDR rates for alternative coding changes within the target gene via use of a series of ssODN donors; and (c) achieving editing outcomes while controlling for the overall HDR/NHEJ ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of the methodology used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "34807376-839a-4ad0-8168-30759a241514",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C74",
+      "claim": "Expression of the PTPN22 risk variant can increase proliferation of primary human T cells expressing a low-avidity TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that expression of the PTPN22 risk variant can increase proliferation of primary human T cells expressing a low-avidity TCR, findings that mimic PTPN22 KO T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1783e915-417e-4afc-926d-7b05a83a2cde",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C75",
+      "claim": "Loss of PTPN22 regulation promotes the development of a pro-inflammatory phenotype in T cells using a low-avidity TCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that loss of PTPN22 regulation promotes the development of a pro-inflammatory phenotype in T cells using a low-avidity TCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "7c69088b-be0a-4d20-95f5-5f49aff62d98",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C76",
+      "claim": "Both humans and mice with the PTPN22 risk variant exhibit expanded memory T cell and Th1 populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while previous human data and mouse models have led to contradictory conclusions regarding the impact of the risk variant on proximal TCR signaling, both humans and mice with the PTPN22 risk variant exhibit expanded memory T cell and Th1 populations (Rieck et al., 2007; Vang et al., 2013; Dai et al., 2013; Salmond et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rieck et al., 2007; Vang et al., 2013; Dai et al., 2013; Salmond et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "43cff3f1-c511-4620-92c6-0cae814da846",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C77",
+      "claim": "PTPN22 is expressed in multiple immune and hematopoietic subsets and has multiple functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PTPN22 is expressed in multiple immune and hematopoietic subsets and has been shown to have multiple functions (Rawlings et al., 2015; Stanford and Bottini, 2014; Armitage et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rawlings et al., 2015; Stanford and Bottini, 2014; Armitage et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "221581dc-cd28-4300-85db-659a8676cce0",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C78",
+      "claim": "Gene edited cells exhibited proximal phosphorylation changes in response to antibody-based stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While gene edited cells exhibited proximal phosphorylation changes in response to antibody-based stimulation, biochemical changes were not detected until 24 hr post peptide-based stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "1077914d-e14c-43a3-83c8-f49263a2ed4a",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C79",
+      "claim": "Biochemical changes were not detected until 24 hr post peptide-based stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While gene edited cells exhibited proximal phosphorylation changes in response to antibody-based stimulation, biochemical changes were not detected until 24 hr post peptide-based stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "eda50c5e-f36f-4554-94cb-ba3adb221726",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C80",
+      "claim": "The findings provide an important bridge between inconsistencies connecting PTPN22 to autoimmune risk in previous mouse vs. primary human cell data.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, while our findings provide an important bridge between inconsistencies connecting PTPN22 to autoimmune risk in previous mouse vs. primary human cell data, it should not be viewed as a replacement for mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d4ada7ac-1d5a-4950-a0de-6b092474600a",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C81",
+      "claim": "The study is restricted to peripheral mature T cells and is inadequate to assess the role for PTPN22 in T cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as our model is restricted to peripheral mature T cells, it is inadequate to assess the role for PTPN22 in T cell development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fc1762af-d250-4797-8205-d9867a9d32a2",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C82",
+      "claim": "Recent work using lentiviral-based overexpression in primary human T cells revealed hypomorphic function of the PTPN22 risk variant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings, recent work using lentiviral-based overexpression in primary human T cells also revealed hypomorphic function of the PTPN22 risk variant (Perry et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perry et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d5d72a68-29d8-4761-842a-e34dc989c8f7",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C83",
+      "claim": "PTPN22 may modulate pathways other than the TCR including LFA-1-mediated integrin signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, that study and others Sanchez-Blanco et al., 2018; Burn et al., 2016 have suggested that PTPN22 may modulate pathways other than the TCR including LFA-1-mediated integrin signals, stabilizing immunological synapses that promote T cell proliferation and Th1 skewing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sanchez-Blanco et al., 2018 and Burn et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "d219c998-12e3-494d-9804-ed6de39d847b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C84",
+      "claim": "The PTPN22 risk variant may exert its impact on T cells both via altering TCR signaling and by modulating additional signals including LFA-1 pathway regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings that the risk variant preferentially modulates low avidity TCR engagement, with the observations of these previous studies suggests that the PTPN22 risk variant may exert its impact on T cells both via altering TCR signaling and by modulating additional signals including LFA-1 pathway regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation combining the current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "9b9dbca4-9db9-4d68-80dc-ddc5aad02a2b",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C85",
+      "claim": "PTPN22 risk variant expression in human T cells mediates at least a partial loss of function phenotype that mirrors findings derived from mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Through gene editing we demonstrate that PTPN22 risk variant expression in human T cells mediates at least a partial loss of function phenotype that mirrors findings derived from mouse models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "69a8fe2d-93f6-4557-bd43-62cce24145e3",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C86",
+      "claim": "Natural carriers of the risk variant exhibit hyporesponsive T cells, with reduced TCR induced activation, and reduced cytokine responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural carriers of the risk variant exhibit hyporesponsive T cells, with reduced TCR induced activation, and reduced cytokine responses (Rieck et al., 2007; Vang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rieck et al., 2007 and Vang et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "bc2a3969-6087-450b-a371-3c02d7117781",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C87",
+      "claim": "KO of the IL-2 regulatory gene, PTPN2, in primary human T cells results in a transient increase in IL-2 signaling, but expansion of PTPN2 KO cells in high cytokine media leads to reduced IL-2 responses due to overexpression of the regulatory protein SOCS3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, KO of the IL-2 regulatory gene, PTPN2, in primary human T cells results in a transient increase in IL-2 signaling, but expansion of PTPN2 KO cells in high cytokine media leads to reduced IL-2 responses due to overexpression of the regulatory protein SOCS3 (Anderson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Anderson et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "435cc443-138d-470b-82cc-44b8b93fa555",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C88",
+      "claim": "Loss of PTPN22 function specifically augments low-avidity TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "As loss of PTPN22 function specifically augments low-avidity TCR signaling, it is possible that tonic TCR signaling is also impacted and may drive additional events that function to limit TCR signals in carriers of the risk variant over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f9352555-2a36-461e-9c21-b1312130badd",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C89",
+      "claim": "The data supports a model where the PTPN22 R620W risk variant impacts human T cell function via a reduction in negative regulation of TCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the data presented within this study supports a model where the PTPN22 R620W risk variant impacts human T cell function via a reduction in negative regulation of TCR signaling; findings similar to murine models, but in contrast to the T cell signaling phenotype in carriers with the risk variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings and their interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f643df93-79f4-459a-84d8-4663301af7ae",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C90",
+      "claim": "The impact of the risk variant on T cell function is likely dynamic, leading to the generation of populations of hyperresponsive T cells, but also allowing for secondary impacts on T cell gene expression that may lead to hyporesponsive T cells over time or after environmental exposures.",
+      "claim_type": "EXPLICIT",
+      "source": "In association with previous human studies, our findings suggest that the impact of the risk variant on T cell function is likely dynamic, leading to the generation of populations of hyperresponsive T cells, but also allowing for secondary impacts on T cell gene expression that may lead to hyporesponsive T cells over time or after environmental exposures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation combining the current findings with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c38811f0-398e-4e3c-8981-575fc1c3cc52",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "claim_id": "C91",
+      "claim": "PTPN22 contributes to autoimmunity by establishing temporal windows of risk for specific diseases that coincide with periods of altered T cell responsiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these observations suggest that PTPN22 contributes to autoimmunity by establishing temporal windows of risk for specific diseases that coincide with periods of altered T cell responsiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "29500de6-a23c-4a63-8825-327048a631f4",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a CRISPR/Cas9-based HDR gene editing platform that efficiently introduces PTPN22 risk, non-risk, and knockout variants in primary human cord blood CD4 T cells with ~50% HDR rates while maintaining equivalent protein expression between risk and non-risk edited populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 and C70-C73 collectively demonstrate successful development and validation of the gene editing methodology. The ddPCR data (C35, C39), Western blot analysis (C37-C38), and methodological descriptions (C70-C73) provide converging evidence that the platform achieves high HDR rates with controlled editing outcomes. The approach is well-characterized and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "f9933b29-4e40-4ea9-b980-1b703860885d",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PTPN22 risk variant edited T cells exhibit increased activation marker expression (CD69, CD25, CD71) following non-specific TCR engagement, mimicking the phenotype of PTPN22 knockout cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C40-C45 are supported by flow cytometry data in Figure 2 showing statistically significant increases in activation markers. The comparison between risk, non-risk, and KO populations from the same donors provides strong internal controls. Claim C64 appropriately summarizes these findings. Statistical analyses appear appropriate with matched one-way ANOVA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c9f3e411-330e-412f-b7a8-a27d7287efa5",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of PTPN22 function preferentially enhances signaling, proliferation, and activation marker expression in T cells expressing a lower avidity self-reactive TCR (L-TCR) but not a high-avidity TCR (H-TCR) in response to cognate antigen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C48-C55 are well-supported by data in Figures 3-4 showing differential effects based on TCR avidity. The use of patient-derived TCRs with documented EC50 values (C48) provides a strong foundation. Proliferation assays (C49-C50), phospho-S6 measurements (C51-C52), and activation marker analysis (C53-C54) converge on the same conclusion. The experimental design with matched controls is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of PTPN22 regulation promotes enhanced proliferation and Th1 skewing (increased IFN\u03b3 and IL-2 production) in T cells expressing a low-avidity TCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C57-C58 are supported by intracellular cytokine staining data in Figure 5. The analysis was appropriately restricted to proliferating cells to avoid confounding by differential proliferation rates. Statistical significance is demonstrated for IL-2 production (C58), though IFN\u03b3 shows a trend (C57). The findings are consistent with prior murine studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Expression of the PTPN22 risk variant increases proliferation of primary human T cells expressing a low-avidity TCR relative to non-risk edited cells, as demonstrated by competitive proliferation assays showing nearly twice as many risk-edited alleles in the proliferating population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C59-C61, and C74 are supported by the competitive proliferation experiment in Figure 6. The experimental design is elegant, mixing equal proportions of risk and non-risk edited cells (C59) and measuring allele frequencies by ddPCR after peptide stimulation (C60). The ~2-fold enrichment of risk alleles in proliferating cells provides direct evidence for the functional impact of the risk variant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "30700ad2-f125-4f4b-b201-93f89e7c093a",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The PTPN22 R620W risk variant contributes to autoimmunity risk by permitting increased TCR signaling in mildly self-reactive T cells, potentially expanding the self-reactive T cell pool and skewing toward an inflammatory phenotype, with dynamic temporal windows of altered T cell responsiveness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10-C12 and C67-C68 represent interpretations and mechanistic models based on the experimental data. While the data support increased signaling and proliferation in low-avidity T cells (previous results), the claims about expanding the self-reactive pool (C11) and establishing temporal windows of risk (C91) are speculative extrapolations. Claims C90-C91 acknowledge this uncertainty with language like 'likely' and 'may.' The model is plausible but requires in vivo validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "95bad820-5bb0-4a92-8c6c-de1b3d72f7da",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PTPN22 editing does not affect Th1 cytokine production (IFN\u03b3 or IL-2) under strong Th1 skewing conditions with CD3/CD28 stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by data in Figure 2\u2014figure supplement 1A-B showing no differences in IFN\u03b3 or IL-2 production under Th1 skewing conditions. This negative result is important as it demonstrates that PTPN22's effects are context-dependent and not simply a global enhancement of all T cell responses. The experimental design with IL-12 and anti-IL-4 is appropriate for Th1 skewing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "7c198d82-496c-4b1b-a0d5-96cf6d37c779",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lentiviral transduction prior to gene editing does not impact gene editing outcomes or HDR rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by data in Figure 3\u2014figure supplement 1A. This is an important technical control demonstrating that the combined approach of lentiviral TCR delivery and gene editing is compatible. The finding validates the experimental design used for TCR-specific experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "b9ec34cd-b854-4647-b264-65ee6d100344",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Non-proliferating but stimulated T cells expressing the PTPN22 risk variant show a partial increase in risk-edited alleles, suggesting that increased TCR signal strength may promote enhanced cell survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 are based on data in Figure 6\u2014figure supplement 1A-B. While C62 reports an observation, C63 is explicitly speculative ('suggests,' 'may promote') and the authors acknowledge it 'will require additional study.' The effect is less robust than in proliferating cells, and alternative explanations (e.g., differential activation thresholds) are not fully excluded. Additional experiments are needed to distinguish survival from other mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "2c1b67f9-9587-4e49-8f74-187266bf9bfa",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gene edited cells exhibited proximal phosphorylation changes in response to antibody-based stimulation, but biochemical changes were not detected until 24 hr post peptide-based stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 describe a methodological limitation acknowledged by the authors. This is an honest assessment of the temporal resolution of their peptide-based stimulation assay. The 24-hour timepoint for detecting phosphorylation changes (e.g., pS6 in Figure 3G) is later than typical for proximal TCR signaling events, which limits mechanistic insights into early signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "6a5cbc4b-03cc-4d23-a938-bad64a411627",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings demonstrate that PTPN22 risk variant expression in human T cells mediates a partial loss-of-function phenotype similar to mouse models, providing a bridge between previous mouse and human studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C80, C82, and C85 appropriately contextualize the current findings relative to prior work. The consistency with murine ptpn22 KO studies (C69, citing Salmond et al., 2014) and recent human overexpression studies (C82, citing Perry et al., 2021) strengthens the conclusions. The authors appropriately note this bridges inconsistencies between mouse models and natural human carriers (C80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "115c90af-864d-4e5d-a6aa-df61553e65af",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study is restricted to peripheral mature T cells and cannot assess the role of PTPN22 in T cell development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is an appropriate acknowledgment of a study limitation. The use of cord blood-derived mature T cells precludes assessment of thymic selection and developmental impacts. This is a recognized limitation that the authors transparently discuss, noting that mouse models remain necessary for studying developmental effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about PTPN22 function, the R620W variant's association with autoimmune diseases, and prior findings in human carriers and mouse models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C13-C33 represent established background knowledge supported by appropriate citations. These claims accurately summarize prior literature on PTPN22's role in TCR signaling, the R620W variant's association with autoimmunity, and the apparent contradictions between human carrier studies and mouse models. The citations appear appropriate and the characterizations are consistent with the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    },
+    {
+      "id": "c071f288-295e-40a7-8fe4-4624d15aa084",
+      "content_id": "fefe91b8-4e3a-4578-a6f0-6b6317cb27e4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The PTPN22 risk variant may exert its impact through both altered TCR signaling and modulation of additional pathways including LFA-1-mediated integrin signals, and tonic TCR signaling may drive compensatory regulatory mechanisms over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84 and C88 are speculative interpretations that extend beyond the direct experimental evidence. While the authors cite relevant studies on LFA-1 regulation (C83), their own experiments focused on TCR signaling and did not directly test integrin pathway involvement. The hypothesis about tonic signaling and compensatory mechanisms (C88) is plausible but lacks direct experimental support. These represent reasonable speculation for future work but are not demonstrated by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:58:52.327869Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1687058-db06-47e1-b762-87391d28e9a0",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "0195522d-b765-4281-884d-0bbdf8bb87e5",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "fcfb8611-0d19-4e07-a4eb-8844caad24e2",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "293f49de-f497-44b8-805e-c7197bff2b7b",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "366d58b4-fd02-410b-a8ba-560f9302b9ec",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "8482a4b2-655b-43e4-9861-942b20b0a0c7",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "a67083c2-f14d-4d77-be96-9e5a36e28767",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "947012af-9291-4b0e-b828-10b53d05429e",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "292fc0e6-dbf9-4342-89dc-55684fe6de97",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "d54a7354-c069-48b3-afcc-a7f58d639da4",
+      "result_id": "29500de6-a23c-4a63-8825-327048a631f4"
+    },
+    {
+      "claim_id": "3ebc5b63-c613-4863-aa14-7044dc80565b",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "b2afe96e-caf5-4b7f-9026-0fbec7f3fc67",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "b616b29d-fe5f-4feb-a2f7-15eb52631c14",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "7d32a02f-77c5-492e-9e35-7467974e48bd",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "d385c93c-223f-43a8-ad80-d1fe16814e7f",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "e216d7cf-38f5-4065-ae3f-cf1118cf0da6",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "54200c7d-764a-4951-9f71-15582ff4785b",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "bd1fdcd1-4b74-498a-a7d1-8570d15ea020",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "fe431b3a-3db5-40a8-975f-cf1b946b21e0",
+      "result_id": "f9933b29-4e40-4ea9-b980-1b703860885d"
+    },
+    {
+      "claim_id": "3b60c851-c223-42e4-a13b-01cad71bfd93",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "a7494489-b3a2-41b0-877f-96bddc80552b",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "a7656be2-d00a-4c67-9b70-348dcc8707dc",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "903b8fc3-f492-4b42-aa46-ca40cb16ecb9",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "9d640edc-449b-4d01-a564-ba691f404fad",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "517f255c-3a3d-4e2a-9790-cf538cec5741",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "79836cf5-afd3-4dc8-af27-dc491990050d",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "1f0f8406-8e2e-46f3-983a-3f71a437381d",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "026cd26f-ee0e-4bac-8bf6-f787984035f4",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "e3cbb7a1-146c-4738-9f84-946dae89a464",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "0268aee9-558d-4276-ae0a-b4df0db42b10",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "2e64c2c8-5fe1-4613-867f-6338a95219e2",
+      "result_id": "c9f3e411-330e-412f-b7a8-a27d7287efa5"
+    },
+    {
+      "claim_id": "334a77ab-bcc1-4189-925e-c05abca44739",
+      "result_id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0"
+    },
+    {
+      "claim_id": "4bc515d1-b6f5-4c77-81bd-587a28aabd29",
+      "result_id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0"
+    },
+    {
+      "claim_id": "1f0d310b-4cf9-4428-870c-f697c6b04987",
+      "result_id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0"
+    },
+    {
+      "claim_id": "b367bf37-f152-4820-b065-84b69d591612",
+      "result_id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0"
+    },
+    {
+      "claim_id": "1783e915-417e-4afc-926d-7b05a83a2cde",
+      "result_id": "9c677cc8-4922-4c12-97a1-354ba41b5eb0"
+    },
+    {
+      "claim_id": "d9526a2b-f35c-4681-ac4a-d8373f4a8f1c",
+      "result_id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2"
+    },
+    {
+      "claim_id": "3c0dab80-8ba0-45e3-aaa7-235481ae4283",
+      "result_id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2"
+    },
+    {
+      "claim_id": "8d84996a-daa4-4778-ac7a-802770457ab2",
+      "result_id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2"
+    },
+    {
+      "claim_id": "959477bf-b911-467e-811a-338373e73742",
+      "result_id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2"
+    },
+    {
+      "claim_id": "34807376-839a-4ad0-8168-30759a241514",
+      "result_id": "000bf442-1c80-404d-8ca7-cbc3a4006cd2"
+    },
+    {
+      "claim_id": "ddca69d7-45fc-4dd4-bc42-fb8220096a6f",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "fe850143-8df0-4d68-bfcc-0c2d20beffff",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "69ad7250-b0b5-4bbe-bfa3-82b8f1c60208",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "c30b506b-3266-4f55-8359-ab545753e3ab",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "f4a80f80-7852-49a3-8a64-6c82df4a7beb",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "f9352555-2a36-461e-9c21-b1312130badd",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "f643df93-79f4-459a-84d8-4663301af7ae",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "c38811f0-398e-4e3c-8981-575fc1c3cc52",
+      "result_id": "30700ad2-f125-4f4b-b201-93f89e7c093a"
+    },
+    {
+      "claim_id": "1e8c7b8d-ace4-4346-919a-1148a42c9d49",
+      "result_id": "95bad820-5bb0-4a92-8c6c-de1b3d72f7da"
+    },
+    {
+      "claim_id": "359482bd-a7f2-466b-a2d6-390e06962a73",
+      "result_id": "7c198d82-496c-4b1b-a0d5-96cf6d37c779"
+    },
+    {
+      "claim_id": "e0de07cf-b747-4615-8cdb-90cab965ca46",
+      "result_id": "b9ec34cd-b854-4647-b264-65ee6d100344"
+    },
+    {
+      "claim_id": "a83e1197-9da1-4cdf-b7db-13a23496c7a7",
+      "result_id": "b9ec34cd-b854-4647-b264-65ee6d100344"
+    },
+    {
+      "claim_id": "221581dc-cd28-4300-85db-659a8676cce0",
+      "result_id": "2c1b67f9-9587-4e49-8f74-187266bf9bfa"
+    },
+    {
+      "claim_id": "1077914d-e14c-43a3-83c8-f49263a2ed4a",
+      "result_id": "2c1b67f9-9587-4e49-8f74-187266bf9bfa"
+    },
+    {
+      "claim_id": "e94a9bb0-829a-4a92-ab4e-bc751db41a36",
+      "result_id": "6a5cbc4b-03cc-4d23-a938-bad64a411627"
+    },
+    {
+      "claim_id": "eda50c5e-f36f-4554-94cb-ba3adb221726",
+      "result_id": "6a5cbc4b-03cc-4d23-a938-bad64a411627"
+    },
+    {
+      "claim_id": "fc1762af-d250-4797-8205-d9867a9d32a2",
+      "result_id": "6a5cbc4b-03cc-4d23-a938-bad64a411627"
+    },
+    {
+      "claim_id": "9b9dbca4-9db9-4d68-80dc-ddc5aad02a2b",
+      "result_id": "6a5cbc4b-03cc-4d23-a938-bad64a411627"
+    },
+    {
+      "claim_id": "d4ada7ac-1d5a-4950-a0de-6b092474600a",
+      "result_id": "115c90af-864d-4e5d-a6aa-df61553e65af"
+    },
+    {
+      "claim_id": "30cb9901-f617-4984-ac00-d0d55b1f06df",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "11d8fbf3-d1c2-43cc-9bc0-3b2f1ca977b6",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "0911b317-539d-46c1-aace-00b4359394b4",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "daa4db1f-569f-473c-9a09-108e69ee8918",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "fd7a9f67-9171-41bf-8bea-105f791727cd",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "eeb6c876-3349-4b11-9b49-7d7b3cff4885",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "1719f779-c127-4ae0-9f8b-dc47499ec3c0",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "f5a6a159-c48f-44d6-89f1-4c7435b1c752",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "8799660b-dfd1-41e6-a78d-c2d5a09f0b40",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "c6d77d5d-baaf-451b-9c4c-a6d903d2b076",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "69225ebf-fcfb-44e2-9c00-372e4d868d81",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "11c8b833-46ec-47d9-8a6d-65464890374a",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "0c67712e-7272-43a4-9ffa-7f80ed878f72",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "00024c32-1b44-4315-9507-5469b9b81d38",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "63db1da8-a7cc-43cb-b157-21a861f3cf28",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "87ed999e-cf3e-4fd9-9836-9986c46fb995",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "0c92170b-616a-4285-bca5-38af613cf88f",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "f7c1a83c-ee24-462c-8884-6bddb42261de",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "291e7acd-ea75-46fd-b5e3-673746167daf",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "3205deda-c9ca-4ace-b2d7-c759fd9e2831",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "bc838548-007e-4534-a329-d28209c31086",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "c45958d4-d7d9-4d1b-a357-ac94ac12b78c",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "1e0749e1-b035-4c8d-a321-9ddb46cab3b1",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "7c69088b-be0a-4d20-95f5-5f49aff62d98",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "43cff3f1-c511-4620-92c6-0cae814da846",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "d5d72a68-29d8-4761-842a-e34dc989c8f7",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "69a8fe2d-93f6-4557-bd43-62cce24145e3",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "bc2a3969-6087-450b-a371-3c02d7117781",
+      "result_id": "fc4f6dc9-df47-4e9a-b9b5-636d5a55f58c"
+    },
+    {
+      "claim_id": "d219c998-12e3-494d-9804-ed6de39d847b",
+      "result_id": "c071f288-295e-40a7-8fe4-4624d15aa084"
+    },
+    {
+      "claim_id": "435cc443-138d-470b-82cc-44b8b93fa555",
+      "result_id": "c071f288-295e-40a7-8fe4-4624d15aa084"
+    }
+  ],
+  "comparisons": []
+}

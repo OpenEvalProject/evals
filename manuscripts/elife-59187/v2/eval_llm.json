@@ -1,0 +1,451 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C16"
+    ],
+    "result": "3DeeCellTracker is a deep learning-based pipeline that integrates 3D U-Net for segmentation and a novel feedforward network (FFN) for tracking cells in 3D+T images. The pipeline requires only one volume of training data with manual correction in the first volume, uses synthetic data (>500 million points) to train the FFN, and combines FFN with PR-GLS for accurate cell position prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C29-C44, and C16 collectively describe the core methodology of 3DeeCellTracker. The use of 3D U-Net for segmentation is well-established (C30-C31, C39-C41), the FFN approach for tracking is novel and addresses the training data problem through synthetic data generation (C42-C44, C16), and the integration with PR-GLS is demonstrated (C34-C35). The method is described in detail in the materials and methods section and demonstrated across multiple datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "3DeeCellTracker successfully tracked ~100-164 neurons in semi-immobilized C. elegans brains (datasets worm #1a and #1b) with 100% accuracy across 171-240 volumes, using only one volume for training and one initial correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, C50-C51, C54-C55 are supported by detailed experimental results shown in Figure 3 and Figure 3\u2014figure supplement 1. The tracking accuracy of 100% is explicitly stated and demonstrated through visual inspection of all volumes. The datasets had relatively small relative movements (RM \u22640.5 for most cells, C54), making this a successful but not maximally challenging test case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "3DeeCellTracker achieved 100% tracking accuracy on dataset worm #2 (101 neurons), detecting more neurons than the original method (~90 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by experimental results in Figure 3\u2014figure supplement 2 and comparison with the cited original study (Nguyen et al., 2016). The improved detection demonstrates the method's superior segmentation capability, though the comparison is limited by relying on a citation rather than direct head-to-head testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "3DeeCellTracker correctly tracked 171/175 neurons (98%) in dataset worm #3, which had larger movements (3x), lower resolution (half in x-y), and more challenging conditions than worm #1 and #2. This performance was comparable to the original report (171/198 neurons tracked).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by experimental results in Figure 3\u2014figure supplement 3 and Table 2. The dataset characteristics are clearly documented (C58-C59), the tracking accuracy is explicitly stated (C60), and comparison with the original study is provided (C61). The method required parameter modifications (Table 2) but maintained high accuracy despite more challenging conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "3DeeCellTracker tracked neurons in freely moving worm brains (dataset worm #4) with very large movements (RM \u22650.5 for many cells). In single mode, 66/90 cells (73%) were correctly tracked; in ensemble mode, 44,905/45,000 cell movements (99.8%) were correctly tracked, comparable to the original method that required a high-performance computing cluster with up to 200 cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 describe a challenging tracking scenario and the development of ensemble mode to address it. The single mode performance (C69) was acceptable but not ideal, motivating the ensemble mode innovation (C70). The ensemble mode results (C71-C72) are well-documented in Figure 6 and demonstrate performance comparable to the original study (C72) but with much lower computational requirements. However, ensemble mode requires 5x longer runtime (C74), representing a trade-off. The straightening preprocessing (C65) is a dependency that limits the method's full autonomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "3DeeCellTracker tracked cells in a naturally beating zebrafish heart imaged with SCAPE microscopy. Among 98 manually confirmed cells, 26/30 larger cells (87%) and 66/98 total cells (67%) were correctly tracked across 1000 volumes, despite challenges including photobleaching, weak intensity cells, and rapid 3D movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C75-C83 describe successful tracking in a substantially different imaging modality (SCAPE vs. spinning disk confocal) with unique challenges. The results are documented in Figure 7 and Tables 2-3. The lower overall accuracy (67%) compared to worm datasets reflects the difficulty of tracking small, weak-intensity cells with photobleaching (C75-C77). The method was not optimized for this dataset (C82), suggesting potential for improvement. The tracked movements showed expected oscillatory patterns consistent with heartbeat (C83), providing biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "3DeeCellTracker tracked ~900 cells (869/894 correctly tracked, 97%) in a 3D cultured tumor spheroid imaged with two-photon microscopy over 31 volumes, successfully handling a much larger number of cells than other datasets and excluding cells that underwent division or death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C85-C90 demonstrate the method's scalability to larger cell numbers (~900 vs ~100-200 in other datasets). The results are documented in Figure 8. The 97% accuracy (C89) is high despite the larger scale. The method's handling of cell division and death by manual exclusion (C87, C176) is a limitation rather than a capability, as noted in the discussion (C115). The biological observation of spheroid movement (C90) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "3DeeCellTracker demonstrated robustness to noise in degenerated datasets. With added Poisson noise (sd=60), the method achieved 97% accuracy (6/175 errors); even with severe noise (sd=140), it achieved 91% accuracy (16/175 errors). The tracking error rate was much lower than segmentation error rate (16/175 vs 57/175), indicating FFN-based tracking can compensate for segmentation errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C91-C93 demonstrate robustness through systematic degradation experiments on worm #3 dataset. The results in Figure 9 and Figure 9\u2014figure supplement 1 show maintained performance under challenging noise conditions. The key finding that tracking errors are lower than segmentation errors (C93) validates the FFN approach's ability to use spatial patterns to overcome local segmentation failures. The noise levels tested (sd=140) represent severe degradation compared to original images (sd=4.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "3DeeCellTracker maintained acceptable accuracy with reduced temporal sampling: 92% correct (14/175 errors) at 1/3 sampling and 86% correct (25/175 errors) at 1/5 sampling of worm #3 dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by results in Figure 9F-L showing performance under reduced temporal sampling. The 1/3 sampling result (92% accuracy) is described as acceptable, while 1/5 sampling (86% accuracy) is described as relatively high error rate. These experiments test the method's ability to handle larger inter-frame movements, which is relevant for optimizing imaging protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "3DeeCellTracker successfully tracked cells with cross-layer movements along the z-axis in multiple datasets (5, 16, 25, and 668 cells in worm #1a, #1b, #3, and tumor spheroid, respectively). Even with reduced z-resolution (2x binning) in zebrafish data, the method tracked 80% of larger cells and 53% of all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 demonstrate the method's capability to handle 3D movements despite anisotropic resolution (z-resolution typically 5-10x lower than x-y). The results are documented in Figure 9\u2014figure supplement 2 and Table 3. The successful tracking of cross-layer movements validates the 3D nature of the approach, though performance degrades with further z-resolution reduction (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "3DeeCellTracker outperformed DeepCell 2.0 (~10% accuracy on worm datasets) and Toyoshima's method (90% on original worm #3 but only 10% on degraded 1/5 sampling; 46% on zebrafish vs 86% for 3DeeCellTracker). Runtime was comparable to or better than both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C99-C103 provide comparative evaluation documented in Figure 11, Tables 4-5, and Figure 11\u2014figure supplement 1. The comparisons are fair in that precise segmentations were provided to DeepCell 2.0 to isolate tracking performance (C148). However, the poor performance of DeepCell 2.0 (C99) is explained as optimization for cell division rather than deforming organs, making it an imperfect comparison. Toyoshima's method performed well on original data but poorly on degraded data (C100), demonstrating 3DeeCellTracker's superior robustness. The zebrafish comparison (C101-C102) shows both detection and tracking advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C84"
+    ],
+    "result": "Using tracked cell positions, 3DeeCellTracker extracted cellular dynamics: worm neurons exhibited complex activity patterns, zebrafish heart cells showed calcium signals synchronized with beating cycles, and tumor spheroid cells exhibited spontaneous activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C84 describe biological insights enabled by accurate tracking. The results are shown in Figures 5, 7H-I, and 8F. The zebrafish calcium-heartbeat synchronization (C27, C84) is particularly well-documented with phase analysis (Figure 7I). These results validate the biological utility of the tracking method, though they represent applications rather than methodological validation per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "FFN generates more accurate initial matchings than FPFH, and FFN+PR-GLS generates more accurate cell position predictions than FPFH+PR-GLS or affine alignment. Positions are further refined using accurate correction based on 3D U-Net output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by comparative analysis in Figure 2\u2014figure supplement 3 and Figure 2\u2014figure supplement 4. The FFN vs FPFH comparison (C45) shows 26% vs 89% error rates. The FFN+PR-GLS combination (C46) shows superior performance to alternatives. The accurate correction step (C47) addresses residual errors by incorporating local intensity information. These comparisons validate the design choices in the pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "3DeeCellTracker tracked 90-100% of cells in most cases across diverse datasets with only minor modifications. Under constant imaging conditions, the method can be reused without modifying parameters except noise level. The number of parameters requiring manual determination is much smaller than conventional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C105-C107 summarize the method's flexibility and ease of use, supported by results across all datasets and Table 1 comparison. The 90-100% accuracy claim (C5) is generally supported except for zebrafish (67% all cells) and worm #4 single mode (73%). The parameter comparison (C107, Table 1) shows 5 parameters vs 12 for Toyoshima's method. However, the claim of \"only minor modifications\" (C105) understates the need for dataset-specific 3D U-Net training and parameter tuning (Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "The method's high accuracy and robustness is attributed to FFN with post-processing. Manual annotation takes 2-3 hours for 150-200 cells, network training takes 1-2 hours on desktop PC with single GPU, and parameters can be modified within 1 hour following provided guides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C108-C109 describe the method's efficiency and usability. The attribution to FFN+post-processing (C104) is supported by comparative analysis (Figure 2\u2014figure supplement 3). The time estimates (C108-C109) are stated but not systematically validated. These represent practical considerations for adoption but are based on authors' experience rather than formal user studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C115"
+    ],
+    "result": "The method has limitations: weak intensity and photobleaching remain unsolved problems, and the method cannot track cells undergoing division, fusion, or many cells entering the field of view during recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110, C115 acknowledge important limitations. The photobleaching issue (C110) is evident in zebrafish results (Figure 7\u2014figure supplement 1). The inability to handle division/fusion (C115) is a fundamental limitation of the matching-based approach, requiring manual exclusion (C176). These limitations are honestly reported and represent areas for future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "3DeeCellTracker was developed mainly using semi-immobilized worm datasets but successfully generalized to zebrafish SCAPE data (87% of large cells) despite substantial differences in optical systems. The authors consider this the first pipeline to efficiently and flexibly track moving cells across multiple substantially different 3D+T datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114, C116 describe the method's generalization capability and novelty claim. The successful application to SCAPE data (C112, C114) despite being developed on spinning disk confocal data (C111) demonstrates generalization, though with reduced performance (87% vs 98-100% in worm datasets). The novelty claim (C116) is supported by the breadth of datasets analyzed but is difficult to verify comprehensively without exhaustive literature review. The claim of \"first\" should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Detailed methodological specifications are provided including computational environment (desktop PC with i7 CPU, 16GB RAM, GTX 1080 GPU), preprocessing (local contrast normalization), 3D U-Net training (6 networks, one volume each, binary cross-entropy loss, data augmentation), FFN training (576,000 synthetic pairs, binary cross-entropy loss), PR-GLS implementation, ensemble mode (averaging up to 20 predictions), manual correction procedures (2-3 hours for 100-200 cells), and evaluation metrics (visual inspection, relative movement RM definition).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C146 provide comprehensive methodological details documented in the Materials and Methods section. These specifications enable reproducibility and are generally well-documented. The computational requirements (C117-C118) are modest (desktop PC with single GPU). The preprocessing (C119) and network architectures (C120-C124, Figure 2\u2014figure supplement 1) are clearly described. The synthetic data generation (C133-C134) is a key innovation. The manual correction time estimates (C141) and evaluation procedures (C142) are practical considerations. The RM metric definition (C143-C144) provides a useful measure of tracking difficulty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Comparison methodology: DeepCell 2.0 was tested on 2D layers (z=9, z=16) from worm #3 with precise segmentations provided; Toyoshima's software was tested on two worm datasets and zebrafish (100 volumes only due to long runtime). The FFN initial matching has O(n\u00b2) time complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 describe comparison methodology. Providing precise segmentations to DeepCell 2.0 (C148) is appropriate for isolating tracking performance. Testing only 100 zebrafish volumes with Toyoshima's method (C150) due to runtime is a practical limitation but may not fully represent performance. The O(n\u00b2) complexity (C151) is a potential scalability concern for very large cell numbers, acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Detailed experimental specifications are provided for all datasets including worm strains, microscopy systems (spinning disk confocal, SCAPE, two-photon), imaging parameters (resolution, frame rates, volumes), sample preparation, and data handling procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C176 provide comprehensive experimental details in Materials and Methods. The worm strains (C152-C156) are properly documented with citations. The microscopy systems are well-described: custom OSB3D spinning disk confocal (C159-C167), SCAPE (C168-C170), and two-photon (C171-C175). The imaging parameters are clearly specified. The manual exclusion of cells undergoing division/death (C176) is a necessary data handling step given the method's limitations. These details support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Code and data availability: Original code (3DeeCellTracker 0.2) and updated version (0.4.0) are available on GitHub and SSBD. The updated version improved runtime by 1.7-6.8x through vectorization, simplified the interface to Jupyter notebooks, and added functions to display intermediate results for parameter guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C186 describe code availability and improvements documented in the Note in Proof. The runtime improvements (C182-C183, Table 6) are substantial, especially for ensemble mode (6.8x) and large cell numbers. The interface simplification (C184-C185) and intermediate result visualization (C186) improve usability. The availability of code, pre-trained weights, and demo data supports reproducibility and adoption. The post-publication improvements demonstrate ongoing development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C43",
+      "C48",
+      "C49"
+    ],
+    "result": "Background and motivation: Processing 3D+T images is difficult, especially for cells in deforming organs with large movements. Previous methods are optimized for specific conditions and require extensive parameter tuning. Deep learning offers flexibility but has not been used for tracking due to difficulty preparing training data. C. elegans whole brain imaging is an established model system with existing tracking software from multiple laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14, C43, C48-C49 provide background context supported by appropriate citations. The challenges in 3D+T image processing (C6-C11) are well-established. The advantages of deep learning (C12-C13) and barriers to its use in tracking (C14, C43) motivate the synthetic data approach. The C. elegans background (C48-C49) establishes the biological context. These claims provide appropriate framing but are not novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C21"
+    ],
+    "result": "Implementation details: 3DeeCellTracker was implemented on a desktop PC to track cells over hundreds of volumes under highly divergent optical conditions. SCAPE microscopy is a novel oblique light sheet system for very rapid 3D+T imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C21 describe implementation and imaging technology. The desktop PC implementation (C17) is validated by the computational specifications (C117-C118) and represents an advantage over cluster-based methods. The SCAPE description (C21) is supported by citations and provides context for the zebrafish experiments. These are factual statements about the method and imaging technology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Methodological rationale: When RM is small, searching for the closest cell is the simplest tracking method. However, this approach may lead to errors when RM \u22650.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide methodological rationale illustrated in Figure 4. The RM=0.5 threshold (C53) is a logical boundary where the closest cell in the next frame may not be the same cell. This motivates the need for more sophisticated tracking methods like FFN+PR-GLS that consider spatial patterns rather than just proximity. The reasoning is sound and well-illustrated.",
+    "result_type": "MINOR"
+  }
+]

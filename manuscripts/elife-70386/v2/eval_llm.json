@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C30",
+      "C36",
+      "C37",
+      "C43"
+    ],
+    "result": "Higher vigorous and moderate physical activity are causally associated with lower BMI and body fat percentage. Using the CAUSE method, vigorous physical activity showed a causal effect on BMI (\u03b2=-0.16, p=3.8\u00d710\u207b\u2074) and moderate physical activity showed a causal effect on BMI (\u03b2=-0.18, p=0.006). Similar effects were observed for body fat percentage. The analyses indicated minimal horizontal pleiotropy (median shared effect -0.01 to 0, q values 0.18-0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 provide statistically significant causal estimates with appropriate p-values. Claims C19-C22 and C30 demonstrate that pleiotropy was adequately assessed and controlled for using multiple metrics (shared effect, q values, outlier analysis, genetic correlation). Claims C36-C37 show consistency across different adiposity measures. The convergence of evidence supports the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C18",
+      "C28",
+      "C29",
+      "C38",
+      "C95"
+    ],
+    "result": "More sedentary time is causally associated with higher BMI and body fat percentage. Using the CAUSE method, sedentary time showed a causal effect on BMI (\u03b2=0.11, p=0.02) and body fat percentage (p=0.009). Each one hour daily decrease in sedentary time causally decreased BMI by approximately 0.14 kg/m\u00b2 (~0.4 kg). Pleiotropy assessment showed minimal bias (median shared effect=0, q=0.18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C95, and C38 provide statistically significant causal estimates across multiple adiposity measures. Claims C28-C29 demonstrate adequate control for horizontal pleiotropy. Claim C18 provides clinically interpretable effect sizes. The evidence consistently supports a causal effect of sedentary time on adiposity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C96"
+    ],
+    "result": "There is bidirectional causality between sedentary time and BMI. Higher BMI causally increases sedentary time (\u03b2=0.13, p=6.3\u00d710\u207b\u2074), with each kg/m\u00b2 (~3 kg) increase in BMI associated with a 3.5 min increase in sedentary time per day. Combined with the reverse direction showing sedentary time increases BMI, this demonstrates bidirectional causality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C96 provide statistically significant evidence for BMI causing increased sedentary time. When combined with claims from Result 2 showing sedentary time causes higher BMI, claims C26-C27 appropriately conclude bidirectional causality. The effect sizes are modest but statistically robust and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C94"
+    ],
+    "result": "There is no causal effect of BMI on physical activity levels (vigorous or moderate). The CAUSE method found no evidence for causality (p=0.35 for vigorous PA, p=0.31 for moderate PA), with the sharing model fitting better than the causal model, indicating that observed associations are due to horizontal pleiotropy rather than causation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 report non-significant p-values and appropriate model comparison results from CAUSE. Claim C94 correctly interprets these findings as indicating horizontal pleiotropy rather than causation. The absence of evidence for causation in this direction, contrasted with significant effects in the opposite direction, is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Physical activity and sedentary time show no causal relationship with measures of central adiposity (waist circumference and waist-hip ratio adjusted for BMI). CAUSE analyses found no evidence of causal effects on WCadjBMI or WHRadjBMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 report null findings for central adiposity measures adjusted for BMI. These negative results are appropriately reported and contrast with the positive findings for overall adiposity measures (BMI, body fat percentage), suggesting specificity in the causal relationships. The null findings are supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Due to limited genome-wide significant loci for physical activity traits, a less stringent threshold (p<5\u00d710\u207b\u2077) was used for traditional MR methods, yielding 5, 3, and 5 independent loci for vigorous PA, moderate PA, and sedentary time respectively. Traditional MR methods (IVW, Egger, weighted median, weighted mode) showed directionally consistent but weaker evidence compared to CAUSE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 document a methodological decision necessitated by limited genetic instruments. Claim C35 appropriately compares results across methods. The use of a less stringent threshold is a limitation but is transparently reported. The consistency in direction across methods provides some reassurance, though the weaker evidence with traditional methods may reflect limited statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C62",
+      "C64",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study utilized large-scale GWAS data including accelerometer-based physical activity and sedentary time data from 91,105 UK Biobank participants and BMI data from 806,834 individuals (GIANT Consortium + UK Biobank). Accelerometers were worn for 72 hours to 7 days. The CAUSE method was used to leverage full genome-wide data while correcting for sample overlap, and traditional MR methods used non-overlapping samples to avoid bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C72-C82 comprehensively document the data sources, sample sizes, measurement protocols, and analytical approaches. The use of objective accelerometer measures (C62, C73-C76) and large sample sizes provides strong statistical power. The methodological decision to use non-overlapping samples for traditional MR methods (C78) appropriately addresses known biases. The data sources are well-documented and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The CAUSE method was selected because few genome-wide significant loci exist for physical activity traits (n=1-4), and CAUSE improves statistical power by using full genome-wide summary statistics, corrects for sample overlap, and distinguishes causal effects from correlated horizontal pleiotropy. The method was implemented with strict q priors (q_alpha=1, q_beta=2) to minimize false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 provide detailed methodological justification for using CAUSE. The rationale is sound given the limited number of genome-wide significant variants (C83). Claims C84-C92 accurately describe CAUSE's methodological advantages and theoretical basis. Claim C93 documents a conservative analytical choice to reduce false positives. The methodological approach is well-justified and appropriately implemented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The study's findings are consistent with prior observational and interventional research. A 10-year observational study found bidirectional associations with similar effect sizes (1 hr less sedentary time associated with ~0.3 kg weight decrease; 3 kg higher weight associated with ~2 min more sedentary time). Meta-analyses of RCTs show weight losses of 0.3-1.8 kg from physical activity interventions lasting 2-52 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 appropriately contextualize the current findings within prior literature. The effect sizes from the current MR study closely match those from observational studies (C46-C47) and fall within ranges reported in RCT meta-analyses (C49), providing external validation. The consistency across different study designs strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "MR estimates represent lifelong genetic effects and are not directly comparable to time-limited interventions. Physical activity interventions may operate through different pathways than those affected by genetic variants. The causal effect of adiposity on sedentary time has not been tested in RCTs due to ethical and practical limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 appropriately acknowledge important limitations in comparing MR estimates to intervention studies. This is established methodological knowledge about MR interpretation. Claim C52 correctly notes the absence of relevant RCTs and provides plausible reasons. These caveats are important for proper interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Previous MR studies showed mixed results. An adult study found bidirectional causality but with uncontrolled pleiotropy. Two pediatric studies showed BMI causes more sedentary time, with inconsistent findings for physical activity. Differences may reflect methodological limitations (weak instrument bias in smaller samples) or genuine age-related differences in how physical activity is engaged (spontaneous play in children vs. structured activities in adults).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 accurately summarize prior MR studies, but claims C57-C61 offer speculative explanations for discrepancies. While the speculation is reasonable (weak instrument bias, developmental differences in activity patterns), these remain untested hypotheses. The comparison highlights that the current study addresses pleiotropy more rigorously than prior work, but the reasons for age-related differences remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Study limitations include potential measurement bias (observer effect, 7-day measurement period may not represent long-term habits), limited statistical power due to few genome-wide significant loci for physical activity, lack of generalizability across age groups and populations, and need for future research at various BMI thresholds and with larger samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 appropriately acknowledge multiple limitations. The 7-day measurement period (C65-C66) is a genuine limitation of the source data. Limited genetic instruments (C67) is transparently reported and partially addressed through CAUSE methodology. Lack of generalizability (C69) and need for future research (C68, C70) are appropriately cautious. These limitations are honestly reported and do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44",
+      "C71",
+      "C97",
+      "C98"
+    ],
+    "result": "The bidirectional causal relationship between sedentary time and BMI implies that decreasing sedentary time is beneficial for weight management, and that reducing adiposity may lead to additional health benefits by reducing sedentary time. The causal effect of physical activity on BMI supports preventive programs for increasing physical activity and decreasing sedentary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C97-C98 draw reasonable public health implications from the bidirectional causality finding. Claims C44 and C71 appropriately extend the causal findings for physical activity to support preventive interventions. While these are implications rather than direct findings, they are logical extensions of the demonstrated causal relationships and are appropriately qualified as suggestions rather than definitive recommendations.",
+    "result_type": "MAJOR"
+  }
+]

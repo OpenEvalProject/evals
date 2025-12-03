@@ -1,0 +1,1258 @@
+{
+  "submission": {
+    "id": "849fca01-4ef6-4d96-8916-a5b89fa13dc2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:02:43.109720Z",
+    "updated_at": "2025-12-03T09:02:43.109720Z"
+  },
+  "content": [
+    {
+      "id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "submission_id": "849fca01-4ef6-4d96-8916-a5b89fa13dc2",
+      "content_type": "manuscript",
+      "content_text": "# Mutation saturation for fitness effects at human CpG sites\n\n## Authors\n\n- Ipsita Agarwal<sup>1</sup> ([ORCID: 0000-0001-8537-0008](https://orcid.org/0000-0001-8537-0008)) \u2020\n- Molly Przeworski<sup>1</sup> ([ORCID: 0000-0002-5369-9009](https://orcid.org/0000-0002-5369-9009)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Columbia University New York United States\n2. Department of Systems Biology, Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhole exome sequences have now been collected for millions of humans, with the related goals of identifying pathogenic mutations in patients and establishing reference repositories of data from unaffected individuals. As a result, we are approaching an important limit, in which datasets are large enough that, in the absence of natural selection, every highly mutable site will have experienced at least one mutation in the genealogical history of the sample. Here, we focus on CpG sites that are methylated in the germline and experience mutations to T at an elevated rate of ~10-7 per site per generation; considering synonymous mutations in a sample of 390,000 individuals, ~ 99 % of such CpG sites harbor a C/T polymorphism. Methylated CpG sites provide a natural mutation saturation experiment for fitness effects: as we show, at current sample sizes, not seeing a non-synonymous polymorphism is indicative of strong selection against that mutation. We rely on this idea in order to directly identify a subset of CpG transitions that are likely to be highly deleterious, including ~27 % of possible loss-of-function mutations, and up to 20 % of possible missense mutations, depending on the type of functional site in which they occur. Unlike methylated CpGs, most mutation types, with rates on the order of 10-8 or 10-9, remain very far from saturation. We discuss what these findings imply for interpreting the potential clinical relevance of mutations from their presence or absence in reference databases and for inferences about the fitness effects of new mutations.\n\n## Introduction\n\nA central goal of human genetics is to identify pathogenic mutations and predict how likely they are to cause disease. To this end, exome sequencing in cases and controls is often used to help identify variants with potentially large effects on disease risk (Rauch et al., 2012; Sanders et al., 2012; Need et al., 2012; Akbari et al., 2021). Even where this approach yields an enrichment of variants in cases, however, the specific subset of mutations that contributes to disease often remains unknown; similarly, in individual patients, sequencing habitually yields candidate mutations of which the significance is unclear (Richards et al., 2015; Harrison et al., 2021).\n\nNumerous scores have therefore been developed to help prioritize among candidate mutations, based on protein structure, functional annotations, evolutionary patterns, or other features (Cooper et al., 2005; Adzhubei et al., 2010; Pollard et al., 2010; McLaren et al., 2016; Ioannidis et al., 2016; Rentzsch et al., 2019). In particular, a common approach to pinpoint sites at which mutations are likely to be pathogenic is to examine whether they appear to be under purifying selection. For instance, comparisons of sequences across species have been widely used to identify highly conserved genomic regions maintained by selection over millions of years, presumably because of their functional importance (Cooper et al., 2005; Pollard et al., 2010; Boffelli et al., 2003; Siepel et al., 2005).\n\nThe same general approach is also useful when applied within humans, where information about purifying selection is contained in whether or not a site is segregating a mutation and at what frequency (Sawyer and Hartl, 1992; Eyre-Walker and Keightley, 2007; Boyko et al., 2008; Williamson et al., 2005; Lek et al., 2016; Karczewski et al., 2020; Yi et al., 2010). For this application, however, the low diversity levels in the genome pose a major difficulty, as a site may be monomorphic simply by chance, that is when mutations at that site have no fitness consequences at all or, at the other extreme, because the mutations are embryonically lethal. In particular, because most sites are monomorphic in samples of hundreds or even thousands of humans, there is little information to distinguish sites under strong selection from those at which mutations are only weakly deleterious.\n\nWith a view to capturing natural variation at a larger number of sites in the genome and identifying more mutations with large effects on disease risk, there have been extensive efforts to collate available exome sequences from hundreds of thousands of individuals (Lek et al., 2016; Karczewski et al., 2020; Dewey et al., 2016; Szustakowski, 2020; Van Hout et al., 2020; Taliun et al., 2021). These efforts were also motivated by the idea that public repositories composed of relatively healthy adults not ascertained for a specific severe disease can serve as reference datasets, such that seeing a variant of unknown function in these datasets is indicative of it being benign (Lek et al., 2016; Claussnitzer et al., 2020; Ghouse et al., 2018). The validity of that assumption remains to be evaluated, however, especially as the repositories grow in size.\n\nBeyond their utility in human genetics, these datasets provide an unprecedented opportunity to learn about the fitness effects of new mutations. Modeling the distribution of fitness effects (DFE) has a long history in population genetics (Sawyer and Hartl, 1992; Eyre-Walker and Keightley, 2007; Otto, 2000), but until recently, inferences were based on genetic variation in samples of at most a couple of thousand chromosomes (Eyre-Walker and Keightley, 2007; Boyko et al., 2008; Williamson et al., 2005; Eyre-Walker et al., 2006; Kim et al., 2017). As is well appreciated, the fitness effects at the few sites segregating at such sample sizes are a small and biased draw from the DFE and thus the inferred distribution of fitness effects is unlikely to recapitulate the true DFE in the genome. Moreover, for lack of sufficient information with which to distinguish weakly from strongly selected mutations, a number of approaches have relied on a specific and arbitrary parametric form for the distribution of fitness effects across sites. In that regard, not only do inferences based on small samples result in relatively noisy parameter estimates, the results can be misleading, especially about the fraction of sites under strong selection (Kim et al., 2017). Current samples in humans may allow for these limitations to start to be overcome.\n\nMotivated by these considerations, we focus on a class of mutations known to experience mutations an order of magnitude more frequently than other types of sites in the human genome: CpG sites that are methylated in the germline (Duncan and Miller, 1980; Nachman and Crowell, 2000; Kong et al., 2012; Figure 1\u2014figure supplement 1). We use these sites as a test case for what can be learned about selection when neutral sites are saturated, i.e., have all experienced at least one mutation in the history of the sample, and draw out implications for the interpretation of mutations as pathogenic and for inferences about fitness effects.\n\n## Results\n\n### Mutation saturation at CpGs\n\nAn attractive feature of methylated CpG (mCpG) sites is that a single mechanism, the spontaneous deamination of methyl-cytosine, is believed to underlie the uniquely high rate of C > T mutations at these sites (Duncan and Miller, 1980); thus, germline methylation at CpG sites is strongly predictive of their mutability (Kong et al., 2012; J\u00f3nsson et al., 2017; Gao et al., 2019; Figure 1\u2014figure supplement 2). Here, we define \u2018methylated\u2019 CpG sites in exons as those that are methylated \u226565 % of the time in both testes and ovaries. For these ~1.1 million sites (of 1.8 million total CpG sites in sequenced exons), we calculate a mean haploid, autosomal C > T mutation rate of 1.17 \u00d7 10\u20137 per generation using de novo mutations (DNMs) in a sample of ~2900 sequenced parent-offspring trios (Materials and methods, Figure 1\u2014figure supplements 1\u20132, Halldorsson et al., 2019).\n\nAlthough methylation levels are the dominant predictor of mutation rates at CpG sites, they are not the only influence. Notably, CpG transitions differ somewhat in their mutation rates based on their trinucleotide context (Figure 1\u2014figure supplement 3a; Aggarwala and Voight, 2016); even so, they are consistently an order of magnitude higher than the genome average (Kong et al., 2012). Broader scale features, such as replication timing, have also been reported to shape mutation rates (Stamatoyannopoulos et al., 2009; Smith et al., 2018). Nonetheless, considering methylated CpGs inside and outside exons, which differ in a number of these features, there is no appreciable difference in average DNM rates (Fisher Exact Test (FET) p-value = 0.1, Figure 1\u2014figure supplement 4a). Similarly, the rate at which two DNMs occur at the same site, a summary statistic that reflects the variance in mutation rates, is not significantly different for methylated CpGs inside versus outside exons (FET p-value = 0.35; Figure 1\u2014figure supplement 4b). Thus, while there is some variation in mutability per site among methylated CpGs, it appears to be small relative to the mean mutation rate across all methylated CpGs.\n\nConsidering all such CpG sites therefore, we ask what fraction are segregating at existing sample sizes. To this end, we collate polymorphism data made public by gnomAD (Karczewski et al., 2020), the UK Biobank (Szustakowski, 2020), and the DiscovEHR collaboration between the Regeneron Genetics Center and Geisinger Health System (Dewey et al., 2016) in order to ascertain whether both C and T alleles are present in a sample of ~390K individuals (Materials and methods).\n\nTo focus on the subset of genic changes most likely to be neutrally-evolving, we consider the ~350,000 methylated CpG sites at which C > T mutations do not change the amino acid. At these sites, 94.7 % of all possible synonymous CpG transitions are observed in the gnomAD data alone, and 98.8 % in the combined sample including all three datasets (Figure 1). In other words, nearly every methylated CpG site where a mutation to T is putatively neutral has experienced at least one such mutation in the history of the sample of 390K individuals. Even in the least mutable CpG trinucleotide context, 98 % of putatively neutral sites are segregating in current samples (Figure 1\u2014figure supplement 3b). These observations imply that in the absence of selection, almost every methylated CpG site would be segregating a T at current sample sizes--and further that not seeing a T provides strong evidence it was removed by selection.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig1-v3.jpg)\n\n**Figure 1.:** The combined dataset encompasses three non-overlapping data sources: gnomAD (v2.1), the UK Biobank (UKB), and the DiscovEHR cohort. \u2018European\u2019 samples include the populations designated as \u2018EUR\u2019 in 1000 Genomes, \u2018Non-Finnish European\u2019 subsets of exome and whole genome datasets in gnomAD, as well as the UK Biobank and DiscovEHR, which have >90% samples labeled as of European ancestry.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** \u2018mCpG\u2019 refers to a CpG site with methylation level \u226565 % in both testes and ovaries, and \u2018other CpG\u2019 to a CpG site with methylation level <65% in either testes or ovaries. Error bars reflect the 95 % Poisson confidence interval around mutation counts for each type.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) De novo mutation rate by average methylation levels in testes (b) De novo mutation rate by average methylation levels in ovaries. Error bars reflect the 95 % Poisson confidence interval around mutation counts in each group (the minimum number of DNMs in each bin is 5).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Exonic de novo mutation rates at methylated CpG sites, by trinucleotide context. Error bars reflect the 95% Poisson confidence interval around mutation counts for each context. (b) Fraction of possible synonymous C > T mutations at methylated CpG sites that are observed in a sample of given size, by trinucleotide context.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) DNM rates for CpG transitions at methylated sites in exons (exonic regions obtained from Gencode V19; see Materials and methods) vs. non-exons, with 95 % Poisson confidence intervals. (b) The rate of single hits (one DNM at a site) and double hits (two DNMs at a site) in exons vs non-exons, rescaled to the average rate of single and double hits in the genome, with 95 % Poisson confidence intervals.\n\n### Testing a neutral model for individual sites\n\nThe mutation saturation at methylated CpG sites provides a robust approach to identify individual sites that are not neutrally-evolving. One way to view it is in terms of a p-value: under a null model with no selection, from which we assume that synonymous sites are drawn, all but 1.2 % of neutral sites are segregating in a sample of 390K individuals. Therefore, if a given non-synonymous site, say, is invariant in a sample of \u2265390K individuals, we can reject the neutral null model for this site at a significance level of 0.012. Similarly, we can ask about the probability that an invariant non-synonymous site is neutral, using a false discovery rate (FDR) approach: given that 1.2 % of neutral sites are invariant, whereas 7.4 % of non-synonymous sites are, the FDR is 1.2/7.4 = 16%. Thus, at current sample sizes, there is a substantial amount of information about whether individual CpG transitions are deleterious. By contrast, in a smaller sample with only 10 % of putatively neutral sites segregating, there is almost no information about selection in observing individual sites to be invariant (p \u2264 0.9).\n\nThis approach implicitly assumes that synonymous and non-synonymous sites do not differ in their distributions of mutation rates and that their distributions of genealogical histories are also the same, i.e.,, that the two types of sites are subject to comparable effects of linked selection. While we cannot examine whether the distributions of mutation rates are identical for lack of data, we verify that the mean de novo mutation rates do not differ for synonymous sites and for various non-synonymous annotations (Figure 2a); we also check that the distributions of methylation levels (conditional on \u226565%), an important determinant of mutation rates, are similar for synonymous and non-synonymous sites (with a significant but small shift towards higher methylation and thus presumably higher mutation rates for non-synonymous sites; Figure 2\u2014figure supplement 1). In turn, the standard assumption of similar distributions of genealogical histories seems sensible, given that the sites are interdigitated within genic regions (McDonald and Kreitman, 1991). Under these few and at least somewhat testable assumptions, the approach based on mutation saturation at methylated CpG sites then enables us to directly pinpoint individual sites that are not neutrally evolving. We note further that if synonymous sites are not all neutral and instead some fraction are under selection, the same idea would apply, but the null model would have to be modified accordingly.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-v3.jpg)\n\n**Figure 2.:** (a) DNM rates for CpG transitions at highly methylated sites by annotation class, rescaled by the total DNM rate in exons. Fisher exact tests (FETs) of the proportion of sites with DNMs in each annotation compared to all other annotations yield p-values > 0.1 in all cases. (b) Fraction of highly methylated CpG sites that are segregating as a C/T polymorphism in an annotation class, relative to the fraction of synonymous sites segregating. Error bars are 95 % confidence intervals assuming the number of segregating sites is binomially distributed (FET p-values << 10\u20135 for comparisons of all annotations with synonymous sites). LOF variants are defined as stop-gained and splice donor/acceptor variants that do not fall near the end of the transcript, and meet the other criteria to be classified as \u2018high-confidence\u2019 loss-of-function in the gnomAD data (see Materials and Methods). (c) The amount of data for synonymous and missense changes involving highly methylated CpG transitions by the type of functional protein site. (d) The proportion of synonymous and missense segregating C/T polymorphisms in different classes of functional sites. Error bars are 95 % confidence intervals assuming the number of segregating sites is binomially distributed (FET p-values << 10\u20135 for comparisons of all missense annotations with synonymous sites; Materials and methods). All annotations are obtained using the canonical transcripts of protein coding genes (see Materials and methods).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The distribution of methylation levels in testes (chi-squared test p-value << 10\u20135) (b) The distribution of methylation levels in ovaries (chi-squared test p-value << 10\u20135). The small but significant shift towards higher methylation for non-synonymous sites compared to synonymous ones suggests a small shift towards higher mutation rates at these sites compared to synonymous sites, which should be conservative with regard to identifying non-synonymous sites under selection.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Cumulative distribution of the B-statistic from McVicker et al., 2009 for all possible CpG transitions at methylated sites by annotation class. (b) Fraction of methylated CpG sites that are segregating as a C/T polymorphism in an annotation class, relative to the fraction of synonymous sites segregating, after matching the distribution of the B-statistic across annotations. The fraction segregating without matching for B-statistics (shown in Figure 2b) is denoted by crosses, to enable comparison. Regulatory variants include non-LOF splice region variants and UTRs. (c) Cumulative distribution of the B-statistic for all possible CpG transitions at methylated sites by functional class. (d) The proportion of synonymous and missense segregating C/T polymorphisms for four functional classes, after matching the distribution of the B-statistic across categories. Error bars are 95 % confidence intervals assuming the number of segregating sites is binomially distributed. The fraction segregating without matching for B-statistics (shown in Figure 2d) is denoted by crosses, to enable comparison.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) DNM rates for synonymous and LOF CpG transitions at methylated sites in exons that constitute the first vs. second halves of canonical protein coding transcripts, rescaled to the total DNM rate in exons, with 95 % Poisson confidence intervals. (b) Fraction of methylated CpG sites that are segregating as a synonymous or LOF C/T polymorphism in exons that constitute the first vs. second halves of canonical protein coding transcripts, relative to the fraction of all synonymous sites segregating. Error bars are 95 % confidence intervals assuming the number of segregating sites is binomially distributed (see Methods). LOF variants are defined as stop-gained and splice donor/acceptor variants that do not fall near the end of the transcript, and meet the other criteria to be classified as \u2018high-confidence\u2019 loss-of-function in gnomAD (Karczewski et al., 2020).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The order of preference by which functional sites are assigned to a single category is detailed in Materials and methods. (a) DNM rates for CpG transitions at methylated sites by annotation class, rescaled by the total DNM rate in exons, with 95 % Poisson confidence intervals (b) Fraction of methylated CpG sites that are segregating as a C/T polymorphism in an annotation class, relative to the fraction of synonymous sites segregating. Error bars are 95 % confidence intervals assuming the number of segregating sites is binomially distributed. LOF variants are defined as stop-gained and splice donor/acceptor variants that do not fall near the end of the transcript, and meet the other criteria to be classified as \u201chigh-confidence\u201d loss-of-function in gnomAD. (c) The number of opportunities for synonymous and missense changes involving methylated CpG transitions by the type of functional protein site. (d) The proportion of synonymous and missense segregating C/T polymorphisms in different classes of functional sites.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a) De novo C > T mutation rate at methylated CpGs in deciles of CADD scores in exons, rescaled by the total rate of methylated CpG transitions in exons. Error bars reflect the 95 % Poisson confidence interval around mutation counts in each group. (b) Fraction of methylated CpG sites that are segregating as a C/T polymorphism in a CADD score decile, relative to the fraction of synonymous sites segregating. (c) The same as (a) but for C > T mutations at all CpG sites, including unmethylated and less methylated CpGs as well as methylated ones. (d) The same as (b) but for C > T mutations at all CpG sites. Higher CADD scores reflect stronger predicted constraint.\n\n### Comparing the fraction of segregating sites across annotations\n\nUnder these same weak assumptions, it is also possible to compare the proportion of methylated CpG sites polymorphic for a transition across annotations. Here, we consider the fraction of sites segregating a transition in each annotation class in a sample of 780K chromosomes, rescaled by the fraction segregating at synonymous sites. All categories of missense, loss-of-function, and regulatory variants show a significant depletion in the fraction of segregating sites compared to synonymous variants (Figure 2b). The deficit for a given annotation is an indicator of the deleteriousness of de novo mutations in that annotation. Specifically, in our sample of 780K, the deficit for each annotation reflects sites for which we can reject neutrality at a significance level of 0.012.\n\nThese data therefore suggest that there are ~27 % fewer loss-of-function variants than would be expected under neutrality; at invariant sites within this annotation, neutrality can be rejected at an FDR of only 4.4 % ( = 1.2/27). A 27 % deficit of loss-of-function variants is again seen if we match the sites to synonymous mutational opportunities with the same predicted level of linked selection, i.e., with similar genealogical histories (McVicker et al., 2009; Figure 2\u2014figure supplement 2a). Supporting the widely used assumption that LOF mutations within a gene are equivalent (after filtering for those at the end of transcripts; Karczewski et al., 2020; Cassa et al., 2017), when we compare the set of CpG sites at which mutations are annotated as leading to protein-truncation in the first versus the second half of transcripts, approximately the same number are missing mutations relative to synonymous sites in both subsets (Figure 2\u2014figure supplement 3; FET p-value = 0.9). By comparison, the fraction of missense mutations and splice region variants not observed in current samples is only about 5.3%, and the FDR 22.6 % ( = 1.2/5.3) (whether or not we match for the effects of linked selection; see Figure 2\u2014figure supplement 2a).\n\nWhile LOF and missense annotation classes are most commonly used in determinations of variant pathogenicity, any two sets of methylated CpGs with similarly-distributed mutation rates can be ranked in this manner. As one example, we stratify missense mutations by the type of functional site in which they occur. For the subset of sites at which missense mutations may disrupt or alter binding, particularly DNA-binding, there is a ~ 12\u201320% deficit in segregating sites relative to what is seen at synonymous sites, in contrast, say, to the much smaller deficit at missense changes within trans-membrane regions (Figure 2c\u2013d, Figure 2\u2014figure supplement 4; Figure 2\u2014figure supplement 2b). In other words, observing a DNA-binding missense site that is invariant provides stronger statistical evidence that it is deleterious than observing an invariant missense site with no additional functional information (e.g. the FDR is ~1/20 vs. ~1/5).\n\nWe can also check that the fraction of sites segregating is inversely proportional to the predicted functional importance of the sites using CADD scores (Rentzsch et al., 2019), widely used measures of constraint that incorporate functional annotations and measures of conservation. Across deciles, mean de novo transition rates at methylated CpGs are similar (Figure 2\u2014figure supplement 5a) and, as expected, the fraction of segregating sites decreases with increasing CADD scores (Figure 2\u2014figure supplement 5b). We note, however, that mutation rates may not always be similar across comparison groups: considering all CpG sites in exons (i.e. not only highly methylated ones), for example, de novo mutation rates are much more variable across CADD deciles (Figure 2\u2014figure supplement 5c). Consequently, the depletion of segregating sites no longer has a simple interpretation (Figure 2\u2014figure supplement 5d), instead reflecting a combination of differences in mutation rates and fitness effects. By implication, while CADD scores are meant to isolate the effects of selection, they will in some cases classify sites that have high mutation rates as less constrained, and vice versa.\n\n### What can be learned about other mutation types?\n\nGiven that current exome samples are informative about selection on transitions at methylated CpGs, a natural question is to ask to what extent there is also information for less mutable types, with mutation rates on the order of 10\u20138 or 10\u20139 per site per generation. For sites with mutation rate on the order of 10\u20139, which is the case for the vast majority of non-CpGs, the fraction of possible synonymous sites that segregate in a sample of 780K chromosomes is very low: for instance, it is 5 % for T > A mutations, which occur at an average rate of 1.2 \u00d7 10\u20139 (Figure 1\u2014figure supplement 1) and 27 % even for other C > T mutations, which occur at a rate of 0.9 \u00d7 10\u20138 per site (Figure 1\u2014figure supplement 1), compared to ~99 % for C > T mutations at methylated CpGs (Figure 3a). For invariant sites of these less mutable types, there is little information with which to evaluate the fit to the neutral null in current samples. Reflecting this lack of information, in the p-value formulation, monomorphic sites would be assigned p \u2264 0.95 for T > A sites and p \u2264 0.73 for C > T sites.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig3-v3.jpg)\n\n**Figure 3.:** (a) Fraction of possible synonymous C > T mutations at CpG sites methylated in the germline and at all other C sites, and the fraction of possible synonymous T > A mutations that are observed in a sample of given size. (b) Fraction of sites segregating in simulations, assuming neutrality, a specific demographic model and a given mutation rate (see Materials and methods).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The expected number of neutral mutations at a site, for three mutation rates and varying sample sizes, calculated as the expected length of the genealogy (sum of branch lengths, averaged over 20 simulations) multiplied by the mutation rate, for a CEU population with a recent Ne of 10 million for the last 50 generations (see Materials and Methods). (b) A comparison of mean genealogy lengths for the standard Schiffels-Durbin demographic model for a CEU population and three variations with increased current Ne, namely, CEU demographic history for 50,000 generations with a recent Ne of 10 million or 100 million for the last 50 generations, and CEU demographic history with 4.5 % exponential growth for the past ~200 generations. (c) A comparison of mean genealogy lengths for samples from YRI and CEU populations, and samples from a structured population derived from an ancestral population 2000 generations ago.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) k, the number of T sites per bin, such that the average T > A mutation rate per bin is the same as the average transition rate at a single methylated CpG site in that annotation (b) Fraction of bins of synonymous T sites that have at least one T/A polymorphism. A cross is indicated for the corresponding fraction at synonymous methylated CpG sites. As expected if synonymous sites are neutral and the mutation rate for a bin matches that of methylated CpGs, the two fractions are very similar. (c) Fraction of bins that have at least one T/A polymorphism, by non-synonymous annotation. A cross is indicated for the corresponding fraction at methylated CpG sites. Error bars are 95 % confidence intervals assuming the number of segregating bins is binomially distributed. For bins including sites under selection the fractions for CpG sites and other mutation types are not expected to match, depending on the extent of variation in mutation rates and fitness effects across sites within a bin (see Materials and methods).\n\nHow large samples have to be for other mutation types to reach saturation depends on the length of the genealogy that relates sampled individuals, i.e., the sum of the branch lengths, which corresponds to the number of generations over which mutations could have arisen at the site. For a mutation that occurs at rate 1.17 \u00d7 10\u20137 per generation, the average length of the genealogy would have to be greater than 8.5 million (1/1.17 \u00d7 10\u20137) generations for at least one such mutation to be expected at a site. That synonymous CpG sites are close to saturation when they experience mutations to T at this rate suggests that this is in fact the case. Indeed, given that more than one mutation has occurred at a substantial fraction of sites (Karczewski et al., 2020; Harpak et al., 2016), the average length of the genealogy relating the 390K individuals is expected to be substantially longer: about 39 million generations (calculated from the probability of at least one mutation under a Poisson distribution; see Materials and methods). The observation that mutation types with rates on the order of 10\u20138 are far from saturation further indicates that the average length of the genealogy for these 390K individuals is substantially shorter than 100 million generations. These rough calculations thus provide a sense of the length of the genealogical history represented by these 390K individuals.\n\nTo explicitly examine the relationship between sample size, mutation rate and the amount of variation at a locus, we simulate neutral evolution at a single site with the three different mutation rates above, under a variant of the widely-used Schiffels-Durbin demographic model for population growth in Europe (Schiffels and Durbin, 2014), in which we set the effective population size Ne equal to 10 million for the past 50 generations (Methods). While this model is clearly an oversimplification, it recapitulates observed diversity levels for synonymous mutations reasonably well (Figure 3). Consistent with the rough estimate above, under our choice of demographic model, a sample of 780K chromosomes has a genealogy spanning an average of 34 million generations (Figure 3\u2014figure supplement 1a,b).\n\nFrom first principles, the length of the genealogy is expected to increase much more slowly than linearly with the number of samples (Hudson, 1990; Nelson et al., 2012). Indeed, increasing the number of samples by a factor of 12 only increases the average tree length ~3.3 x (Figure 3b, Figure 3\u2014figure supplement 1a,b); thus, a site that mutates at rate 10\u20139 per generation is expected to have experienced ~0.04 mutations in the genealogical history of a sample of ~1 million, and 0.1 mutations in a sample of 10 million. The implication is that saturation for mutation rates of 10\u20138 or 10\u20139 per site per generation may not be achievable any time soon.\n\nQuantitative predictions of our model are subject to the considerable uncertainty about the demographic history and in particular about the recent effective population size in humans (Figure 3\u2014figure supplement 1b). Moreover, for simplicity, we model one or at most two populations, when samples that combine individuals from more diverse genetic ancestries have longer genealogical histories (Figure 3\u2014figure supplement 1c; see Figure 1) and thus capture more variation. Perhaps most importantly, for the very large sample sizes considered here, the multiple merger coalescent is a more appropriate model (Nelson et al., 2012; Bhaskar et al., 2014). Nonetheless, the qualitative statement that less mutable types will remain very far from saturation in the foreseeable future should hold.\n\nIn the absence of information about single sites for most mutational types in the genome, it is still possible to learn to a limited degree about selection using bins of sites. If we construct a bin of K synonymous sites with the same average mutation rate per bin as a single methylated CpG, then at least one site per bin is polymorphic in ~99 % of bins (see Figure 3\u2014figure supplement 2 for an example with T > A mutations and K~100), just as ~99 % of individual methylated CpG sites are segregating. Thus, if a bin of K non-synonymous sites with the same average mutation rate is invariant, the p-value associated with the bin is 0.01, indicating that one or more sites in the bin is likely to be under selection.\n\n### How strong is the selection that leads to invariant methylated CpG sites?\n\nLeveraging saturation to identify a subset of sites that are not neutrally-evolving makes appealingly few assumptions, but provides no information about how strong selection is at those sites. To learn about the strength of selection consistent with methylated CpG sites being monomorphic, a series of strong assumptions are needed: we require a demographic model, a prior distribution on hs and a mutation rate distribution across sites. Here, we assume a relatively uninformative log-uniform prior on the selection coefficient s ranging from 10\u20137 to 1 and fix the dominance coefficient h = 0.5 (as for autosomal mutations with fitness effects in heterozygotes, we only need to specify the compound parameter hs; reviewed in Fuller et al., 2019), as well as a fixed mutation rate of 1.2 \u00d7 10\u20137 per site per generation. We rely on the demographic model for population growth in Europe described above (Schiffels and Durbin, 2014); as is standard (Sawyer and Hartl, 1992; Boyko et al., 2008; Williamson et al., 2005; Eyre-Walker et al., 2006; Kim et al., 2017; Cassa et al., 2017; Simons et al., 2014), we also assume that hs is fixed over time, even as the effective population size changes dramatically. Under these assumptions, we estimate the posterior distribution of hs at a site, given that the site is monomorphic, segregating with 10 or fewer derived copies of the T allele, or segregating with more than 10 copies (Figure 4a and b, Methods). These posterior distributions are estimates of the DFE at an individual mCpG site conditional on seeing 0 copies, 1\u201310 copies or >10 copies of the T allele.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-v3.jpg)\n\n**Figure 4.:** (a) Prior and Posterior log densities of hs for a C > T mutation at a methylated CpG site observed at 0, 1\u201310, or >10 copies at various sample sizes. (b) Bayes odds (i.e. posterior odds divided by prior odds) of s > 0.001 for a C > T mutation at a methylated CpG site observed at 0, 1\u201310, or >10 copies, at various sample sizes. (c) Probability of a methylated CpG site segregating a T allele in simulations, if the mutation has no fitness effects (hs = 0) and if it is deleterious (with a heterozygote selection coefficient hs = 0.05%) or highly deleterious (with a heterozygote selection coefficient hs = 5%).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The prior on hs (left column) and Bayes odds that s > 10\u20133 given that a mutation at a site is observed at 0, 1\u201310, or >10 copies, for various sample sizes (right column). h is fixed at 0.5 (see Materials and methods). The odds are calculated using 10,000 draws from the prior and posterior distributions. (a) Nes ~ Gamma(shape = 0.23, scale = 425/0.23), with Ne = 10,000, the parameters inferred in Eyre-Walker et al., 2006. (b) log(s)~N(\u20136,2) (c) s~Beta(alpha = 0.001,beta = 0.1). Values below 10\u201310 are binned as 10\u201310.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The odds for invariant sites are calculated as the ratio of p(pathogenic | 0 copies) / p(benign | 0 copies) and p(pathogenic)/p(benign) (see Methods). In DDD, variants that fall in 380 \u2018consensus\u2019 genes (Kaplanis et al., 2020), for which there is strong evidence of being causal for developmental disorders are considered \u2018pathogenic\u2019, and variants in all other genes \u2018benign\u2019. In ClinVar, variants classified as \u2018likely pathogenic\u2019 are assumed to be pathogenic; these are compared to two sets of benign variants, one limited to variants classified in ClinVar as \u2018likely benign\u2019, and the other inclusive of variants for which the evidence is uncertain or inconclusive. Note that since both ClinVar classifications and the identification of consensus genes in DDD rely in part on whether a site is segregating in datasets like ExAC, the degree of enrichment is hard to interpret.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The prior distribution of s is log-uniform over [10\u20137,1]. The odds are calculated from 15,000 draws from the prior and posterior distributions. (a) At a site with mutation rate ~10\u20139 (b) At a site with mutation rate ~10\u20138.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) Fraction of mutational opportunities for methylated-CpG transitions vs. all other mutational opportunities in exons by their putative functional effect. The difference is statistically significant for missense, regulatory, and synonymous categories (Fisher exact test p-value << 10\u20135) but not for the LOF class (p-value = 0.06). (b) Cumulative distribution of the B-statistic from McVicker et al., 2009 for methylated CpG sites vs. all other types of sites in exons (Kolmogorov-Smirnov test p-value << 10\u20135). (c) Distribution of CADD scores at mutational opportunities for methylated-CpG transitions vs. all other mutational opportunities in exons (p-value from a Kolmogorov-Smirnov test <<10\u20135); some skew towards lower values may be expected from the behavior of CADD scores in the presence of mutation rate variation. Despite these significant differences, these statistics are overall pretty similar for methylated CpG sites and other mutation types.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/71513/elife-71513-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (a) Posterior log densities of hs for a C>T mutation at a methylated CpG site that is observed at 0 or >0 copies, in sample sizes of 15K and 780K, given a log-uniform prior on s and h=0.5 (see Methods). (b) The DFEs estimated by weighting the posterior densities in (a) by the fraction of LOF mCpG sites that are segregating (73% at 780K; 9% at 15K) and invariant (27% and 91% respectively). (c) Posterior log densities of hs for a C>T mutation at a methylated CpG site that is observed at 0 or >0 copies, in sample sizes of 15k and 780k, given a gamma prior with parameters inferred in Eyre-Walker et al., 2006 (see Methods). (d) The DFEs estimated by weighting the posterior densities in (c) by the fraction of LOF mCpG sites that are segregating (73% at 780K; 9% at 15K) and invariant (27% and 91% respectively). For the sample size of 15K, the posterior distribution recapitulates the prior, because there is little information about selection in whether a site is observed to be segregating or invariant, and particularly about strong selection. In the sample of 780K, there is more information about selection in a site being invariant and therefore, there is a shift towards stronger selection coefficients regardless of the prior.\n\nBecause Bayes odds provide a natural way to summarize the strength of statistical evidence that comes from the observation at a single site, we consider the Bayes odds that a mutation is subject to hs > 0.5 x 10\u20133, i.e., is under strong selection (see Materials and methods). In small samples, in which most sites are monomorphic, being monomorphic is consistent with both neutrality and very strong selection (Figure 4a) and the Bayes odds are close to 1, reflecting the fact that the observation barely shifts our prior assumptions (Figure 4b). In contrast, with larger sample sizes, in which putatively neutral CpG sites reach saturation, the posterior distribution for invariant sites is highly peaked\u2013what is not segregating is likely strongly deleterious\u2013and accordingly the Bayes odds become substantially greater than 1. Notably, at current sample sizes of 390K individuals, there is still some dependence on the prior (Figure 4\u2014figure supplement 1), but the Bayes odds of hs > 0.5 x 10\u20133 at an invariant methylated CpG are large. Given our choice of prior, the odds are 15:1 (Figure 4b), which suggests that most (~15/16) of the ~27 % of LOF mutations and ~6 % of missense mutations not seen in current samples are subject to this degree of selection.\n\nWhile the relationship of selection strengths to clinical pathogenicity is not straight-forward, selection coefficients on that order are likely to be of relevance to determinations of pathogenicity in clinical settings (Cassa et al., 2017; Kaplanis et al., 2020). Indeed, mutations with hs > 0.5 \u00d7 10\u20133 may be highly deleterious to some individuals that carry them, enough to produce clinically visible effects, but vary substantially in their penetrance. Accordingly, mutations classified as pathogenic in ClinVar (Landrum et al., 2018) or identified as underlying severe developmental disabilities in the Deciphering Developmental Disorders (DDD) cohort (Kaplanis et al., 2020) are 6-fold to 51-fold enriched at sites invariant in 390K individuals compared to those classified as benign (Figure 4\u2014figure supplement 2). This analysis comes with important caveats\u2013notably that the classifications of pathogenicity rely in part on the presence or absence of mutations in reference databases\u2013but it suggests an enrichment on par with estimated Bayes odds of strong selection.\n\n## Discussion\n\n### Interpreting polymorphic sites in current reference databases\n\nIn a sufficiently large sample, even a segregating site can be subject to strong selection (Figure 4a and b). For instance, in current exome sample sizes, a C > T mutation at a methylated CpG site with hs = 0.5 \u00d7 10\u20133 is almost always observed segregating (Figure 4c). This follows from the expectation under mutation-selection-drift balance (Gillespie, 1998): in a constant population size, a mutation that arises at rate 1.2 \u00d7 10\u20137 per generation and is removed by selection at rate hs = 0.05% per generation has an expected population frequency of 2.4 \u00d7 10\u20134; in a sample of 780K, the mean number of copies is 187. Even with substantial variation due to genetic drift and sampling error, such a site should almost always be segregating at that sample size. In fact, even a mutation with hs of 5 % would quite often be observed. Thus, segregating sites in large samples are a mixture of neutral, weakly selected and strongly selected sites. An implication is that, although large reference repositories such as gnomAD were partly motivated by the possibility of excluding deleterious variants, as samples grow in size, it cannot simply be assumed that clinically relevant variants are absent from reference datasets. In principle, the only mutations never seen as samples grow in size would be the ones that are embryonically lethal.\n\nMore generally, any interpretation of variants of unknown function by reference to repositories such as gnomAD or disease cohorts enriched for deleterious variation (Taliun et al., 2021), whether the goal is to exclude benign variants or identify likely pathogenic ones, is implicitly reliant on assumptions that change with sample size and dramatically differ by mutation type. At current sample sizes, invariant methylated CpGs are likely highly deleterious; for less mutable types, the information content at invariant sites is very limited at even the largest sample sizes considered (Figure 4\u2014figure supplement 3). Similarly, learning about the fitness consequences of segregating mutations from their observed frequencies is contingent on assumptions about the mutation rate, and the demographic history of the sample.\n\n### The distribution of fitness effects in human genes\n\nAs we show, a typical site in the genome, with a mutation rate of 10\u20138 per generation, does not provide much information about selection (Figure 4\u2014figure supplement 3), because the average length of the genealogy is likely substantially less than 108 generations. One exception, which is a special case, is gene loss: each gene can be conceived of as a single locus at which many possible LOF mutations have the same fitness impact (Karczewski et al., 2020; Cassa et al., 2017; Fuller et al., 2019; Weghorn et al., 2019; Agarwal, Fuller, Przeworski, in prep.). The mutation rate to LOF, calculated by summing rates of individual LOF mutations, is ~10\u20136 per gene per generation on average (Karczewski et al., 2020), such that in the absence of selection, many LOF mutations are expected in most genes. At this special subset of sites, the distribution of fitness effects can be inferred by binning loss-of-function variants within genes (Karczewski et al., 2020; Cassa et al., 2017; Weghorn et al., 2019; Agarwal, Fuller, Przeworski, in prep.).\n\nAn analogous strategy to overcome sample size limitations at other types of sites is to infer selection in bins of sites (Dukler et al., 2021); however, if sites within a bin vary in their fitness effects, inferences based on these bins are not straight-forward. Indeed, the mutation frequency in a bin reflects the harmonic mean of hs across sites in the bin weighted by (unknown) mutation rates across sites (see Materials and methods).\n\nGiven these limitations, individual methylated CpG sites can provide a useful point of entry to understanding the DFE in humans. Although methylated CpG sites appear under somewhat less constraint than other sites, the differences are subtle (Figure 4\u2014figure supplement 4), and what we learn at these sites can tell us what to expect more generally. As a first step, we can obtain a DFE across non-synonymous mCpG sites by weighting the densities for segregating and invariant sites (Figure 4a) by the proportion of sites in each category (an example for possible LOF mutations is shown in Figure 4\u2014figure supplement 5, for sample sizes of 15K and 780K) . In current samples, the posterior odds for invariant methylated CpGs having hs \u2265 0.5 \u00d7 10\u20133 are 92 % under our model, whereas they are 37 % for segregating methylated CpGs. Considering possible LOF mutations at methylated CpGs, of which 27 % are not observed in current samples, these odds imply that the fraction of de novo LOF mutations with hs \u2265 0.5 \u00d7 10\u20133 is roughly 52 % ( = 0.27 \u00d7 0.92 + 0.73 \u00d7 0.37).\n\nWe can use a similar approach to estimate the minimum fraction of de novo mutations that lead to a deleterious non-synonymous change. For missense sites, given the same uninformative prior on hs as for LOF mutational opportunities, the fraction estimated to be highly deleterious is 40 % ( = 0.05 \u00d7 0.92 + 0.95 \u00d7 0.37). Since ~0.97 % of all de novo point mutations are missense and ~0.07 % lead to a LOF (see Methods), these estimates translate into roughly a 1 in 236 chance ( = 40%x0.97% + 52% x0.07%) that a de novo mutation has an effect hs \u22650.5 \u00d7 10\u20133. Assuming, finally, that each individual inherits 70 new mutations (Kong et al., 2012; J\u00f3nsson et al., 2017), these estimates imply that one out of every 3.4 individuals is born with a new and potentially highly deleterious, non-synonymous mutation. This calculation is based on only two frequency categories, however, discarding the information contained in allele frequencies at segregating sites, and only point mutations are taken into account. Thus, the true fraction is likely substantially higher.\n\n### Outlook\n\nMoving forward, we should soon have substantial information not only about the DFE but the strength of selection at individual CpG sites (Figure 4). Inferences based on them, or indeed any sites, will need to rely on an accurate demographic model, particularly for the recent past of most relevance for deleterious mutations; this problem should be surmountable, given the tremendous recent progress in our reconstruction of population structure and changes in humans (Schiffels and Durbin, 2014; Kelleher et al., 2019; Speidel et al., 2019). Inferences will also require a good characterization of mutation rate variation across CpG sites, as is emerging from human pedigree studies and other sources (J\u00f3nsson et al., 2017; Poulos et al., 2017; V\u00f6hringer et al., 2020; Seplyarskiy and Sunyaev, 2021), and careful consideration of the effects of multiple hits (Harpak et al., 2016) and biased gene conversion (Gl\u00e9min et al., 2015). It will also be of interest to revisit the standard assumptions that go into inferring a DFE, including that all mutations are at least partially dominant in their fitness effects; that the DFE remains fixed even as the effective population size changes by orders of magnitude; and that the distribution is bounded above at 0, when some of the mutations segregating in large samples are likely to be weakly beneficial. Putting these elements together, robust inference of the fitness effects of mutations in human genes should finally be within reach, through the lens of CpG sites.\n\n## Materials and methods\n\n### Processing de novo mutation data\n\nWe focused on ~190,000 published de novo mutations in a sample of 2976 parent-offspring trios that were whole genome sequenced (Halldorsson et al., 2019). To date, this is the largest publicly available set of trios that, to our knowledge, have not been sampled on the basis of a disease phenotype. Unless otherwise specified, we used these DNMs to calculate mutation rates, as described in later sections. We converted hg38 coordinates to hg19 coordinates using UCSC Liftover. We excluded indels, and all DNMs that occur outside the ~2.8 billion sites covered by gnomAD v2.1.1 whole genome sequences. We obtained the immediately adjacent 5\u2019 and 3\u2019 bases at each position from the hg19 reference genome, so that we had each de novo mutation within its trinucleotide context; we used this information to identify CpG sites. Where such data were available (for 89 % of CpG de novo mutations), we also annotated each site with its methylation status measured by bisulfite sequencing in testis sperm cells and ovaries (see Appendix 1\u2014table 1).\n\nWe annotated DNMs with their variant consequences using Variant effect predictor (v87, Gencode V19) and the hg19 LOFTEE tool (Karczewski et al., 2020) to flag high-confidence (\u2018HC\u2019) loss-of-function variants. We obtained the fraction of DNMs in the genome that occured at sites annotated as missense or LOF in the \u2018canonical\u2019 protein-coding transcript for each gene provided by Gencode.\n\n### Processing polymorphism data\n\nWe downloaded publicly available polymorphism data from gnomAD (Karczewski et al., 2020), the UK Biobank (Szustakowski, 2020), the DiscovEHR collaboration between the Regeneron Genetics Center and Geisinger Health System (Dewey et al., 2016), and 1000 Genomes Phase 3 (Auton et al., 2015). Where needed, we lifted over coordinates to the hg19 reference assembly using the UCSC LiftOver tool. Salient characteristics of these samples are as follows:\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>RegionsSequenced</th>\n      <th>Individuals</th>\n      <th>Variants</th>\n      <th>Populations sampled</th>\n      <th>Original alignment</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1000 genomes Phase 3(also included in gnomAD)</td>\n      <td>Genomes</td>\n      <td>2504</td>\n      <td>84 million</td>\n      <td>mixture</td>\n      <td>hg19-b37</td>\n    </tr>\n    <tr>\n      <td>gnomAD v2.1.1</td>\n      <td>Exomes</td>\n      <td>125,748</td>\n      <td>15 million</td>\n      <td>mixture</td>\n      <td>hg19</td>\n    </tr>\n    <tr>\n      <td>gnomAD v2.1.1</td>\n      <td>Genomes</td>\n      <td>15,708</td>\n      <td>230 million</td>\n      <td>mixture</td>\n      <td>hg19</td>\n    </tr>\n    <tr>\n      <td>UK Biobank</td>\n      <td>Exomes</td>\n      <td>199,932</td>\n      <td>16 million</td>\n      <td>~93 % European ancestry</td>\n      <td>hg38</td>\n    </tr>\n    <tr>\n      <td>DiscovEHR</td>\n      <td>Exomes</td>\n      <td>50,726</td>\n      <td>8 million</td>\n      <td>~98 % European ancestry</td>\n      <td>hg19-b37</td>\n    </tr>\n  </tbody>\n</table>\n\nFor the gnomAD data, we obtained the allele frequency for each variant in the full exome and genome samples, as well as their Non-Finnish European (\u2018NFE\u2019) subsets from the VCF files (in hg19 coordinates) provided. For each sample, we obtained the set of segregating sites (i.e. the set of variants that pass gnomAD quality filters and have an allele frequency >0 in the sample). For the 1000 Genomes Phase-3 data, we obtained the set of variant positions similarly. Note that the 1000 Genomes samples are also contained within the gnomAD sample. For the DiscovEHR sample, allele frequencies are available where MAF >0.001 (and set equal to 0.001 for lower values > 0); we can thus determine the set of sites segregating in this sample, but we do not have access to any other information about individual variants.\n\nFor the UK Biobank exome sequencing data, additional processing was required. We downloaded the population-level plink files with exome-wide genotype information for ~200,000 individuals. We excluded exome samples that did not pass variant or sample quality control criteria in the previously released genotyping array data. Specifically, we excluded samples that have a discrepancy between reported sex and inferred sex from genotype data, a large number of close relatives in the database, or are outliers based on heterozygosity and missing rate, as detailed in Bycroft et al., 2018. Finally, we excluded individuals who withdrew from the UK Biobank by the end of 2020. This left us with 199,932 exome samples that overlap with the high-quality subset of the genotyped samples. We additionally limited our analysis to the list of ~39 million exonic sites with an average of 20X sequence coverage provided by UK Biobank (Szustakowski, 2020). We transformed the processed plink files into the standard variant call format, polarized variants to the hg38 reference assembly, and obtained the frequency of the non-reference allele in the sample. We then lifted over the coordinates from hg38 to hg19 using the UCSC LiftOver tool. We excluded the few positions where the reference alleles were mismatched or swapped between the two assemblies.\n\nAll but 12 % of segregating mCpG transitions were shared across at least two non-overlapping datasets. Of segregating variants seen in one of the gnomAD or UK Biobank datasets, all but two variants had at least 5 % of individuals (and typically on the order of ~100 K) sequenced at that position. Thus, we think it highly unlikely that we misclassified invariant sites as segregating, or vice versa. For ~9000 variants that are seen only once in the GHS data, we unfortunately did not have access to variant quality metrics. Excluding these sites only very slightly affects our results and does not change any qualitative conclusions.\n\n### Identifying and annotating mutational opportunities in the exome\n\nFor all possible mutational opportunities in sequenced exons, we collated a variety of functional annotations. To this end, we first generated a list of all possible SNV mutational opportunities in the exome. We obtained the list of sites that fall in exons or within 50 base pairs (bp) of exons in Gencode v19 genes and that are among the ~2.8 billion sites covered by gnomAD v2.1.1 whole genome sequences. For each position, we extracted the reference allele from the hg19 assembly and generated the three possible single-nucleotide derived alleles. We also obtained the immediately adjacent 5\u2019 and 3\u2019 bases at each position from the hg19 reference genome, so that we had each mutational opportunity within its trinucleotide context; we used this information to identify CpG sites. Where such data were available, we also annotated each site with its methylation status in testis sperm cells and ovaries.\n\nTo identify sites at which variants or de novo mutations could be confidently assayed by whole-exome sequencing methods, we obtained regions targeted in whole exome sequencing from gnomAD and the UK Biobank. We limited our analysis to sites that were covered at 20X or more in the exome sequencing subsets of both gnomAD and UK Biobank (that lifted over correctly to the hg19 assembly), which we refer to as \u2018accessible sites\u2019.\n\nWe then annotated the ~90 million mutational opportunities (at 30 million sites) with CADD scores and variant consequences using Variant effect predictor (v87, Gencode V19) and the hg19 LOFTEE tool (Karczewski et al., 2020) to flag high-confidence (\u2018HC\u2019) loss-of-function variants. For loss-of-function variants, we also noted their location in the gene by exon number (e.g. in exon 10 of 12 exons in the gene). We used a published database of curated protein features derived from Refseq proteins (Stanek et al., 2020) to annotate all sites in protein coding genes that were associated with a particular type of functional activity (detailed functional annotations were available for about 60,000 of 1.1 million methylated CpG sites). At each site, we used either the primary \u2018site-type\u2019 annotation, or when that was missing or listed as \u2018other\u2019, we extracted the annotation from the more detailed \u2018notes\u2019 field where this information was provided.\n\nBecause there are multiple transcripts for each variant, we limited our analysis to the \u2018canonical\u2019 protein-coding transcript for each gene provided by Gencode to obtain a single annotation for each variant. For 10\u201320% of variants, this approach still yielded multiple possible consequences per variant, for instance, where there are multiple canonical transcripts due to overlapping genes. For these cases, we assigned one of the \u2018canonical\u2019 transcripts to the variant at random, to avoid making assumptions about their relative importance. Further overlaps within the same gene, for example, a missense variant that is also a splice variant in the same transcript, or a DNA-binding site that also undergoes a particular post-translational modification, were resolved in the same manner.\n\nAs an alternative approach, we obtained the worst consequence in all protein-coding transcripts for each variant, using the ranks of variant consequences by severity provided by Ensembl (Appendix 1\u2014table 1). In the absence of systematic ranking criteria for the protein function annotations, we used the following order: sites that were designated as having catalytic activity (\u2018active\u2019 sites) were given highest priority in overlaps, followed by DNA-binding sites, followed by other types of binding (to metal, polypeptides, ions), and finally by sites that are known to undergo post-translational or other regulatory modifications, and trans-membrane sites. Thus, a transmembrane site with regulatory activity is classified as a regulatory site, while a regulatory site with DNA-binding activity is classified as DNA-binding. Using these alternate criteria to group sites does not affect our conclusions (Figure 2\u2014figure supplement 4).\n\nAll sources of annotation data are listed in Appendix 1\u2014table 1. A list of CpG sites and annotations is provided as additional data.\n\n### Comparing fitness effects across sets of mutational opportunities\n\nTo assess whether the set of 1.1 million C > T mutational opportunities at methylated CpG sites are systematically different from the other ~90 million exonic mutational opportunities in their potential fitness effects, we compared the distribution of CADD scores in the two groups using a Kolmogorov-Smirnov test. We note that this comparison is likely to be somewhat confounded by differences in mutation rates, given our finding that CADD scores do not perfectly isolate the effects of selection from those of variability in mutation rates (Figure 2\u2014figure supplement 5c). Since the mutation rate for methylated CpG sites is higher than for other types, this may lead them to appear somewhat less constrained than they actually are.\n\nWe further compared the fraction of C > T mutational opportunities at methylated CpGs in an annotation class vs. the fraction of other mutational opportunities in that class. We used a Fisher exact test (with a Bonferroni correction for four tests) to determine whether the two sets of mutational opportunities were differently distributed across synonymous, missense, regulatory, and LOF variant classes.\n\n### Obtaining mean de novo mutation rates by mutation type and annotation\n\nWe counted the total number of de novo mutations in sequenced exons (~91 million mutational opportunities) for eight classes of mutations: two transitions and a transversion each at C and T sites, transitions at CpG sites with relatively low levels of methylation (defined here as <65%), and transitions at CpG sites with high levels of methylation ( \u2265 65%). To obtain the mutation rate per site per generation, we divided the counts by the haploid sample size (2 \u00d7 2976 individuals; see section 1) and the number of mutational opportunities of each type. We report 95 % confidence intervals assuming a Poisson distribution for mutation counts. The rates obtained (Figure 1\u2014figure supplement 1) are similar to previous ones (Kong et al., 2012; J\u00f3nsson et al., 2017; Gao et al., 2019) and roughly consistent with the rates predicted by the gnomAD mutation model (Karczewski et al., 2020).\n\nTo evaluate the impact of methylation status on the mutation rate at CpG sites, we obtained the mean mutation rate for C > T mutations at CpG sites in each methylation bin as described above, separately for methylation levels in ovaries and testes. While there is a limited amount of data, especially for some low-methylation bins, our choice of cutoff for \u2018methylated\u2019 seems sensible (Figure 1\u2014figure supplement 2).\n\nWe then calculated the mean mutation rate for methylated CpG transitions, for different compartments in the genome, namely in (a) exons and non-exons, (b) four variant consequence categories: synonymous, missense, regulatory, and LOF variants, (c) CADD score deciles, and (d) in exons that constitute the first half vs the second half of genes. We also calculated the mean mutation rate for methylated CpG transitions in four trinucleotide contexts (ACG, CCG, GCG, and TCG). In each case, we obtained the total number of de novo mutations and the Poisson 95 % confidence interval around mutation counts in each group, and divided by the number of mutational opportunities in the group. We tested if the proportion of methylated CpG sites with de novo C > T mutations in each non-synonymous compartment was different from the proportion of synonymous methylated CpGs with de novo C > T mutations, accounting for multiple tests.\n\n### Variance in mutation rate at methylated CpGs\n\nAlthough current samples of DNM data are large enough to compare the mean mutation rate at methylated CpGs across the annotation classes examined here, there is not enough data to directly compare variances in mutation rates. To learn how much broad scale features beyond methylation and the immediate trinucleotide context shape variation in mutation rates at methylated CpGs, we therefore relied on a broader set of regions for example those that fall inside and outside exons. Exonic and non-exonic regions differ considerably in epigenetic features and replication timing (Stamatoyannopoulos et al., 2009); yet, there is no discernable difference in average de novo mutation rates at methylated CpGs inside and outside sequenced exons (FET p-value = 0.10, Figure 1\u2014figure supplement 4a). We also compared the number of double and single de novo hits in exons and non-exons using a Fisher exact test (p-value = 0.35, Figure 1\u2014figure supplement 4b). Since the number of double hits reflects the variance in mutation rates across sites, these results lend some support to there being limited variation due to broad scale genomic features in transition rates at methylated CpGs.\n\n### Calculating the fraction of sites segregating by annotation\n\nFor each methylated CpG site in the exome, there are three mutational opportunities (C > A, C > G, C > T); we focused only on the opportunities for C > T mutations. For each methylated CpG site then, we noted whether or not it was segregating, or in other words if there was a C > T variant in samples of individuals from gnomAD (Karczewski et al., 2020), the UK Biobank (Szustakowski, 2020), the DiscovEHR dataset (Dewey et al., 2016), and 1000 Genomes Phase 3 (Auton et al., 2015), processed as described above, or a combined sample of 390 K non-overlapping individuals.\n\nWithin the set of methylated CpG sites where C > T mutations are synonymous, we calculated the fraction segregating in each sample of interest. Similarly, for different subsets of methylated CpGs, namely those in (a) four variant consequence categories: synonymous, missense, regulatory, and LOF variants, (c) CADD score deciles, (d) functional site categories (e.g. trans-membrane vs catalytic sites in proteins), and (e) the first half vs the second half of genes, we calculated the fraction segregating in the combined sample of 390 K individuals. We rescaled the fraction of sites segregating in each annotation by the fraction of synonymous sites segregating in the sample.\n\nWe verified that the differences in the fraction of sites segregating across annotations are not due to variable impacts of linked selection across annotations. To do so, we calculated the fraction of sites segregating with sites in different annotations matched for B-statistics McVicker et al., 2009; we obtained very similar results with this approach (Figure 2\u2014figure supplement 2).\n\nWe assumed that conditional on the number of mutational opportunities and a fixed probability of segregating for each site in a compartment, the number of sites segregating is binomially distributed, and obtained 95 % confidence intervals on that basis. We tested if the proportion of sites segregating in each compartment is different from the proportion segregating at putatively neutral (here, synonymous) sites using a Fisher exact test, accounting for multiple tests.\n\nWe also calculated the fraction of other types of synonymous sites segregating in each sample size of interest (specifically, for T > A variants, and C > Ts not at methylated CpG sites).\n\n### Frequency of mutant alleles in bins of K sites\n\nWithin each annotation of interest, with an average mutation rate of u per site, we construct bins of k sites, such that k = U/u, where U is the mean mutation rate of a transition at methylated CpG site in that annotation class. The mean mutation rates are calculated for each mutation type within each annotation, as described in Section five above. We then count the fraction of bins in which no such mutations are observed. As an example, for T > A mutations, k is on the order of 100 (Figure 3\u2014figure supplement 2a).\n\nSince each bin can be treated as being comparable to a single neutral methylated CpG site, bins that contain only neutral sites are expected to contain at least one mutation in 99 % of bins; this is indeed the case for bins of synonymous sites (Figure 3\u2014figure supplement 2b).\n\nWhen considering sites that contain a mixture of neutral and selected sites, bins of k sites are no longer as readily comparable to methylated CpG sites, however (Figure 3\u2014figure supplement 2c). If sites within a bin are under varying degrees of selection, then the mutation count reflects the harmonic mean of the strength of selection acting on individual sites. Specifically, under a deterministic model of mutation-selection balance, if qi is the allele frequency at the ith site in a bin of k sites:\n\n$$\nq_{bin}=\\sumi=1kq_{i}\n$$\n\nthen\n\n$$\nq_{bin}=\\sumi=1k\\frac{u_{i}}{hs_{i}}\n$$\n\nAssuming ui = u = U/k,\n\n$$\nq_{bin}=\\sumi=1k\\frac{(U/k)}{hs_{i}}=(\\frac{U}{k}).\\sumi=1k\\frac{1}{hs_{i}}\n$$\n\nthat is, qbin is a function of the harmonic mean of hs at the k sites.\n\n### Forward simulations\n\nWe used a forward simulation framework initially described in Simons et al., 2014, and modified in Fuller et al., 2019. Briefly, we modeled evolution at a single non-recombining bi-allelic site, which undergoes mutations each generation at rate 2Neu in a panmictic diploid population of effective population size Ne. Each generation is formed by Wright-Fisher sampling with selection, where fitness is reduced by hs in heterozygotes and s in homozygotes for the T allele. We fixed the dominance coefficient h as 0.5, and we chose one value of the selection coefficient s from a log-uniform prior ranging from 10\u20137 to 1 for each simulation (for autosomal mutations with fitness effects in heterozygotes, we only need to specify the compound parameter hs; reviewed in Fuller et al., 2019). Given a mutation rate and a demographic model that specifies Ne in each generation, we simulated the evolution of a site forward in time to determine whether the site is segregating in a sample of size n at present.\n\nWe used u = 1.2 x 10\u20137 per site per generation to model CpG> TpG mutation at a methylated CpG site. The simulation framework allows for recurrent mutations, which are expected to arise often at this mutation rate. We also allowed for TpG> CpG back mutations at the rate of 5 \u00d7 10\u20139 (calculated from de novo mutation data, as CpG> TpG mutations). To model T > A mutations, we used u = 1.2 x 10\u20139 per site per generation, with a back mutation rate of 1.2 \u00d7 10\u20139 per site per generation; for C > T mutations not at methylated CpG sites, we used u = 0.9 x 10\u20138 per site per generation, with a back mutation rate of 5 \u00d7 10\u20139 per site per generation (Figure 1\u2014figure supplement 1). We note that, since the mutation rate increases with paternal and maternal ages, an implicit assumption is that the distribution of parental ages in the trio data is representative of the parental ages over the evolutionary history of exome samples.\n\nFor the demographic model, we relied on the Schiffels-Durbin model for population size changes in Europe over the past ~55,000 generations, preceded by a ~ 10 Ne generation burn-in period of neutral evolution at an initial population size Ne of 14,448 following ref (Simons et al., 2014). In the last generation, that is at present, we sampled n individuals from the simulated population, to match the size of the sample of interest.\n\nWe calculated the probability that a site with the fixed mutation rate u is segregating for a given value of hs (with s = 0 under neutrality) as the proportion of simulations with those parameters in which the site is segregating for different sample sizes at present.\n\nIn comparing the output of these simulations to data, we considered two scenarios where we may either undercount or overcount segregating CpG sites in the data relative to the simulations. First, because we conditioned on the human reference allele being a CpG in data, we did not count sites where the CpG is the ancestral but not the reference allele. To check how often this is expected to occur, we mimicked this scenario in simulations, sampling a single chromosome at the end of the simulation as the mock haploid reference genome. The proportion of simulations in which CpG is the ancestral but not the reference allele is ~0.1%, that is, approximately the heterozygosity levels in humans. The second case is that for a subset of the CpG> TpG variants observed at present, the CpG mutation is the reference allele but is not ancestral. To mimic this scenario in our simulations, we simulated a site that starts as TpG (with a mutation rate of 5 \u00d7 10\u20139 to CpG, and a back mutation rate ~1.2 x 10\u20137 to TpG) forward in time. Then, as above, we drew a single chromosome from the sample at the end of the simulation and set it as the reference. We obtained the proportion of simulations in which the C allele is the reference, starting from a TpG background. Reassuringly, this occurs in only 0.0014 % of simulations. We note that there is in principle a third scenario to consider, in which ApG or GpG sites is ancestral and a C/T polymorphism is found in the sample at present as a result of two mutations, one to T and one to C. Given the various mutation rates involved (all less than 5 \u00d7 10\u20139), this double mutation case will be even less likely than the one in which TpG was ancestral. These rare scenarios should not have any substantive effect on our comparison of data to simulations, particularly when we only used such comparisons to examine qualitative trends.\n\n### Inferring the strength of selection in simulations\n\nWe proposed s from a prior distribution (with h fixed at 0.5) and inferred the posterior distribution of hs for a site with a T allele at 0 copies using a simple Approximate Bayesian Computation (ABC) approach. Specifically, we proposed s such that log10(s)~Uniform(\u20137,0); we simulated expected T allele counts under our model for 10 million proposals from the prior. We accepted the subset of the proposed values of s where simulations yield 0 copies of the T allele in the sample at present; this set of s values is a sample from the posterior distribution of s given that the site is monomorphic. We calculated the Bayes odds of s > 10\u20133 as the ratio of the posterior odds of s > 10\u20133 and the prior odds of s > 10\u20133:\n\n$$\n\\frac{p(hs>0.5\\times10^{\u22123}\u2223copiesofT=0)/p(hs\\leq0.5\\times10^{\u22123}\u2223copiesofT=0)}{p(hs>0.5\\times10^{\u22123})/p(hs\\leq0.5\\times10^{\u22123})}\n$$\n\nWe similarly obtained posterior distributions of hs for sites that are segregating at 0, 1\u201310 copies, or >10 copies, in samples of different sizes, and for three different choices of priors on s, namely: s ~ Beta(\u03b1 = 0.001, \u03b2 = 0.1); log(s)~ N(\u20136,2); and Nes ~ Gamma(k = 0.23, \u03b8 = 425/0.23), with Ne = 10,000, based on the parameters inferred in Eyre-Walker et al., 2006. These are shown in Figure 4\u2014figure supplement 1.\n\n### Calculating odds of being pathogenic in ClinVar and DDD\n\nWe downloaded de novo mutation data for ~35 K individuals with developmental disorders (Kaplanis et al., 2020). We also obtained a list of 380 \u2018consensus\u2019 genes from the same study; for these genes, there is evidence from multiple sources that LOF or missense mutations are causal in developmental disorders, such that they are used as part of diagnostic criteria in the clinic.\n\nWe downloaded ClinVar variants and excluded those that were not associated with at least one disease. We obtained the \u2018CLNSIG\u2019 annotation, which classifies each variant as benign or likely benign, pathogenic or likely pathogenic, or as having uncertain status or conflicting evidence.\n\nWe limited both DDD and ClinVar variants to non-synonymous C > T mutations at the subset of methylated CpG sites considered. Using variants in ClinVar and DDD at sites that are invariant in our sample of 780K, we calculated the odds that an invariant site is pathogenic (vs. benign) as follows:\n\n$$\n\\frac{p(pathogenic\u2223copiesofT=0)/p(benign\u2223copiesofT=0)}{p(pathogenic)/p(benign)}\n$$\n\nwhere p(pathogenic) refers to the proportion of sites classified as such, and p(benign) is defined analogously.\n\nIn DDD, we considered mutations that fall in 380 consensus genes \u2018pathogenic\u2019, and mutations in all other genes benign; thus our \u2018benign\u2019 category likely contains some genes in which mutations are in fact pathogenic. In ClinVar, variants classified as \u2018pathogenic\u2019 or \u2018likely pathogenic\u2019 are assumed to be pathogenic; these are compared to two sets of benign variants, one limited strictly to variants classified in ClinVar as \u2018benign\u2019 or \u2018likely benign\u2019, and the other inclusive of variants for which the evidence is uncertain or inconclusive. The results are shown in Figure 4\u2014figure supplement 2.\n\nWe note that since both ClinVar classifications and the identification of consensus genes in DDD rely in part on whether a site is segregating in datasets like ExAC, the degree of enrichment in Figure 4\u2014figure supplement 2 is hard to interpret.\n\n### Calculating the average length of the genealogy of a sample in which methylated CpGs are saturated\n\nMethylated CpG sites experience mutations to T at the rate of 1.17 \u00d7 10\u20137 per generation; 99 % of such sites are segregating in a sample of 390 K individuals. Then the average length (L) of the genealogy relating the 390 K individuals can be calculated from the probability under a Poisson distribution of at least one mutation at 99 % of sites as 1-exp(\u20131.17 \u00d7 10\u20137 x L) = 0.99, which gives L = 39 million generations.\n\n### Coalescent simulations to obtain the length of genealogy of large samples\n\nWe simulated the genealogy of a sample of varying sizes using msprime (Kelleher et al., 2016) under different demographic histories, modifying the standard Schiffels-Durbin model (Schiffels and Durbin, 2014) as follows:\n\nIn each case, we recorded the mean genealogy length over 20 iterations.\n\nThe code for implementing these different demographic models in msprime is available on the project github repository.\n",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "6393d806-f454-4297-b599-c30aca8a04fa",
+      "submission_id": "849fca01-4ef6-4d96-8916-a5b89fa13dc2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeffrey Ross-Ibarra, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.71513.sa1](https://doi.org/10.7554/eLife.71513.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mutation saturation for fitness effects at human CpG sites\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Patricia Wittkopp as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. All three reviewers were very enthusiastic about the manuscript, and with some revision it will clearly be suitable for publication in eLife.\n\nThe main revision reviewers agreed would be important to incorporate is the issue of multiple testing (highlighted by Reviewer #2).\n\nWhile all the reviewers were enthusiastic about the manuscript as written, and none felt that additional analyses were necessary, there were a number of additional analyses suggested that reviewers felt could strengthen the paper if they were relatively straightforward to incorporate. These included:\n\n1) Comparison of the nonsynonymous genome-wide DFE from smaller samples to the 780K, perhaps only focusing on methylated nonsynomous sites.\n\n2) Comparison of overlap between these invariant sites and Clinvar or databases of patients with known developmental disorders.\n\n3) Comparison of results under a different parameterization of human demography.\n\nReviewers had a number of additional suggestions that we felt would improve the manuscript. Perhaps first among these was a general feeling of \"to be continued\" in the discussion with multiple citations to another manuscript in prep. While reviewers were not against this strategy by any means, efforts to address the novelty of the current paper in the discussion (rather than simply hinting at exciting results in the forthcoming work) would be worthwhile.\n\nPlease do review and respond to the individual reviewer comments as well.\n\nReviewer #1:\n\nAgarwal and Przeworski have performed a very timely and interesting study of the distribution of fitness effects (DFE) of new mutations. This study is timely because modern human population genetic datasets have finally achieved sample sizes for which a certain class of nucleotide sites, i.e. methylated CpG sites, when neutrally evolving, should approach near complete polymorphism saturation. If every neutral site is expected to carry at least one variant, the classic problem of distinguishing sites that are monomorphic due to chance (no mutation) versus sites that are monomorphic due to selective constraint (removed mutations) is greatly simplified. The point at which population genomic datasets are saturated with polymorphisms should represent a major advance in understanding the DFE at individual sites and is what immediately piqued my interest.\n\nOverall, this manuscript is a thorough and thoughtful examination of this topic; to my enjoyment there were several times where a question came to mind that was addressed shortly later in the paper. I believe the authors have made a compelling case for why methylated CpG sites provide an entry point for understanding the site-specific DFE. I found the section \"Interpreting monomorphic and polymorphic sites in current reference databases\" particularly insightful as a guide to thinking about future datasets; similarly, I thought the comparison with CADD scores (Figure S9) provided important food for thought regarding confounders to maps of constraint generated from vast numbers of species using modern genomic datasets.\n\nWhile the study is addressing an interesting topic, I also felt this manuscript was limited in novel findings to take away. Certainly the study clearly shows that substitution saturation is achieved at synonymous CpG sites. However, subsequent main analyses do not really show anything new: the depletion of segregating sites in functional versus neutral categories (Figure 2) has been extensively shown in the literature and polymorphism saturation is not a necessary condition for observing this pattern. Similarly, the diminishing returns on sampling new variable sites has been shown in previous studies, for example the first \"large\" human datasets ca. 2012 (e.g. Figure 2 in Nelson et al., 2012, Science) have similar depictions as Figure 3B although with smaller sample sizes and different approaches (projection vs simulation in this study). There are some simulations presented in Figure 4, but this is more of a hypothetical representation of the site-specific DFE under simulation conditions roughly approximating human demography than formal inference on single sites. Again, these all describe the state of the field quite well, but I was disappointed by the lack of a novel finding derived from exploiting the mutation saturation properties at methylated CpG sites.\n\nSimilarly, I felt the authors posed a very important point about limitations of DFE inference methods in the Introduction but ended up not really providing any new insights into this problem. The authors argue (rightly so) that currently available DFE estimates are limited by both the sparsity of polymorphisms and limited flexibility in parametric forms of the DFE. However, the nonsynonymous human DFE estimates in the literature appear to be surprisingly robust to sample size: older estimates (Eyre-Walker et al., 2006 Genetics, Boyko et al., 2008 PLOS Genetics) seem to at least be somewhat consistent with newer estimates (assuming the same mutation rate) from samples that are orders of magnitude larger (Kim et al., 2017 Genetics). Whether a DFE inferred under polymorphism saturation conditions with different methods is different, and how it is different, is an issue of broad and immediate relevance to all those conducting population genomic simulations involving purifying selection. The analyses presented as Figure 4A and 4B kind of show this, but they are more a demonstration of what information one might have at 1M+ sample sizes rather than an analysis of whether genome-wide nonsynonymous DFE estimates are accurate. In other words, this manuscript makes it clear that a problem exists, that it is a fundamental and important problem in population genetics, and that with modern datasets we are now poised to start addressing this problem with some types of sites, but all of this is already very well-appreciated except for perhaps the last point.\n\nAt least a crude analysis to directly compare the nonsynonymous genome-wide DFE from smaller samples to the 780K sample would be helpful, but it should be noted that these kinds of analyses could be well beyond the scope of the current manuscript. For example, if methylated nonsynonymous CpG sites are under a different level of constraint than other nonsynonymous sites (Figure S14) then comparing results to a genome-wide nonsynonymous DFE might not make sense and any new analysis would have to try and infer a DFE independently from synonymous/nonsynonymous methylated CpG sites.\n\nAbstract: where it says \"Here, we focus on putatively-neutral, synonymous CpG sites\u2026\" I thought the phrase \"putatively-neutral, synonymous\" could be clearer to the reader if moved to \"\u2026 not seeing a polymorphism [at putatively-neutral, synonymous sites] is indicative of strong\u2026\".\n\nPage 3 \u2013 \"DNM\" and \"FET\" were not defined before the first usage of the acronyms.\n\nPage 7 \u2013 \"That synonymous sites are close to saturation\u2026\": Here, wouldn't the expected length of the genealogy such that 1 mutation is expected per synonymous CpG site be a pretty drastic underestimate of the length of the genealogy such that saturation is observed (99% of synonymous CpG sites w/mutation)? Wouldn't a more precise estimate be something like 39 million generations, [1-Pois(0|1.17e-7*39e6)] ~ 99% of sites?\n\nReviewer #2:\n\nThis manuscript presents a simple and elegant argument that neutrally evolving CpG sites are now mutationally saturated, with each having a 99% probability of containing variation in modern datasets containing hundreds of thousands of exomes. The authors make a compelling argument that for CpG sites where mutations would create genic stop codons or impair DNA binding, about 20% of such mutations are strongly deleterious (likely impairing fitness by 5% or more). Although it is not especially novel to make such statements about the selective constraint acting on large classes of sites, the more novel aspect of this work is the strong site-by-site prediction it makes that most individual sites without variation in UK Biobank are likely to be under strong selection.\n\nThe authors rightly point out that since 99% of neutrally evolving CpG sites contain variation in the data they are looking at, a CpG site without variation is likely evolving under constraint with a p value significance of 0.01. However, a weakness of their argument is that they do not discuss the associated multiple testing problem-in other words, how likely is it that a given non synonymous CpG site is devoid of variation but actually not under strong selection? Since one of the most novel and useful deliverables of this paper is single-base-pair-resolution predictions about which sites are under selection, such a multiple testing correction would provide important \"error bars\" for evaluating how likely it is that an individual CpG site is actually constrained, not just the proportion of constrained sites within a particular functional category.\n\nThe paper provides a comparison of their functional predictions to CADD scores, an older machine-learning-based attempt at identifying site by site constraint at single base pair resolution. While this section is useful and informative, I would have liked to see a discussion of the degree to which the comparison might be circular due to CADD's reliance on information about which sites are and are not variable. I had trouble assessing this for myself given that CADD appears to have used genetic variation data available a few years ago, but obviously did not use the biobank scale datasets that were not available when that work was published.\n\nReading this paper left me excited about the possibility of examining individual invariant CpG sites and deducing how many of them are already associated with known disease phenotypes. I believe the paper does not mention how many of these invariant sites appear in Clinvar or in databases of patients with known developmental disorders, and I wondered how close to saturation disease gene databases might be given that individuals with developmental disorders are much more likely to have their exomes sequenced compared to healthy individuals. One could imagine some such analyses being relatively low hanging fruit that could strengthen the current paper, but the authors also make several reference to a companion paper in preparation that deals more directly with the problem of assessing clinical variant significance. This is a reasonable strategy, but it does give the Discussion section of the paper somewhat of a \"to be continued\" feel.\n\nI think the paper could be strengthened by calculating the proportion of non-variable CpG sites in teach category are likely to be truly under constraint, making use of some kind of multiple testing correction. This would build upon the intuition that a non-variable CpG is likely functional with a non-corrected p value of 0.01.\n\nMy point about the possible circularity of comparison to CADD could be addressed with further discussion of the degree to which CADD is informed by patterns of human genetic variation and how incorporation of genetic variation into CADD scores might affect the conclusions of this section. As an additional point in the CADD section, it's not totally clear whether the statement \"Mean transition rates at methylated CpGs are similar across CADD deciles\" is based on de novo mutation data or some other data source.\n\nAnother addition that would add a lot to the paper, though is not strictly necessary, would be to comment on the overlap between sites identified as under selection by the current paper and sites where mutations are already annotated as clinically relevant or suspected to be so based on their occurrence in a disease cohort.\n\nReviewer #3:\n\nAgarwal et al., combine a few well-known ideas in population genetics \u2013 diminishing returns in sampling new alleles with increasing sample size and the enrichment of invariant sites for sites under strong purifying selection \u2013 and point out the exciting result that sample sizes of modern human data sets are sufficiently large that, for highly mutable sites, saturation mutation has been reached. This is my favorite kind of result \u2013 one that is strikingly obvious in retrospect but that I had never considered (and probably wouldn't have). The manuscript is well written, and a number of my concerns or questions while reading were resolved directly by the authors later on. I have no major concerns, but a few potential suggestions that might strengthen the presentation.\n\nThe authors emphasize several times how important an accurate demographic model is. While we may be close to a solid demographic model for humans, this is certainly not the case for many other organisms. Yet we are not far off from sufficient sample sizes in a number of species to begin to reach saturation. I found myself wondering how different the results/inference would be under a different model of human demographic history. Though likely the results would be supplemental, it would be nice in the main text to be able to say something about whether results are qualitatively different under a somewhat different published model.\n\nOn a similar note, while a fixed hs simplifies much of the analysis, I wondered how results would differ for (1) completely recessive mutations and (2) under a distribution of dominance coefficients, especially one in which the most deleterious alleles were more recessive. Again, though I think it would strengthen the manuscript by no means do I feel this is a necessary addition, though some discussion of variation in dominance would be an easy and helpful add.\n\nThere's some discussion of population structure, but I also found myself wondering about GxE. That is, another reason a variant might be segregating is that it's conditionally neutral in some populations and only deleterious in a subset. I think no analysis to be done here, but perhaps some discussion?\n\nMaybe I missed it, but I don't think the acronym DNM is explained anywhere. While it was fairly self-explanatory, I did have a moment of wondering whether it was methylation or mutation and can't hurt to be explicit.\n",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3148e92-7b12-442f-9db3-59cb5a444228",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C1",
+      "claim": "Whole exome sequences have now been collected for millions of humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole exome sequences have now been collected for millions of humans, with the related goals of identifying pathogenic mutations in patients and establishing reference repositories of data from unaffected individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a factual statement about the current state of data collection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "1714c83e-fa21-4d14-9cef-e4c9bd58df15",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C2",
+      "claim": "CpG sites that are methylated in the germline experience mutations to T at an elevated rate of ~10-7 per site per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on CpG sites that are methylated in the germline and experience mutations to T at an elevated rate of ~10-7 per site per generation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mutation rate is stated in the abstract and supported by de novo mutation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "bf892e2b-fc3e-4a16-9246-1c6822a26449",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C3",
+      "claim": "Approximately 99% of methylated CpG sites harbor a C/T polymorphism when considering synonymous mutations in a sample of 390,000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "considering synonymous mutations in a sample of 390,000 individuals, ~ 99 % of such CpG sites harbor a C/T polymorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by polymorphism data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "cf2d51ca-f291-4cea-83af-a954a5c034fe",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C4",
+      "claim": "At current sample sizes, not seeing a non-synonymous polymorphism at a methylated CpG site is indicative of strong selection against that mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylated CpG sites provide a natural mutation saturation experiment for fitness effects: as we show, at current sample sizes, not seeing a non-synonymous polymorphism is indicative of strong selection against that mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key inference drawn from the saturation observation and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "dbd660a3-6998-49c3-b894-749b799a0dcf",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C5",
+      "claim": "Approximately 27% of possible loss-of-function mutations at methylated CpG sites are likely to be highly deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "We rely on this idea in order to directly identify a subset of CpG transitions that are likely to be highly deleterious, including ~27 % of possible loss-of-function mutations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the analysis of segregating vs. invariant sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "1366d923-e353-4b94-9374-2dfc712165c6",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C6",
+      "claim": "Up to 20% of possible missense mutations at methylated CpG sites are likely to be highly deleterious, depending on the type of functional site in which they occur.",
+      "claim_type": "EXPLICIT",
+      "source": "and up to 20 % of possible missense mutations, depending on the type of functional site in which they occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by functional site analysis in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "a5e3c887-2b2a-4149-9e91-036e0e6702a6",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C7",
+      "claim": "Most mutation types, with rates on the order of 10-8 or 10-9, remain very far from saturation at current sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike methylated CpGs, most mutation types, with rates on the order of 10-8 or 10-9, remain very far from saturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through simulation and data analysis in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d9bfbb37-48aa-463c-a11e-4792b685eb1a",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C8",
+      "claim": "The spontaneous deamination of methyl-cytosine underlies the uniquely high rate of C > T mutations at methylated CpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "An attractive feature of methylated CpG (mCpG) sites is that a single mechanism, the spontaneous deamination of methyl-cytosine, is believed to underlie the uniquely high rate of C > T mutations at these sites (Duncan and Miller, 1980)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Duncan and Miller, 1980.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "adb2ea15-ddb9-48b0-b48d-dc4a34588fd2",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C9",
+      "claim": "Germline methylation at CpG sites is strongly predictive of their mutability.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, germline methylation at CpG sites is strongly predictive of their mutability (Kong et al., 2012; J\u00f3nsson et al., 2017; Gao et al., 2019; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "5a9eb9a9-8fa9-4f77-bc8d-71830962686c",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C10",
+      "claim": "The mean haploid, autosomal C > T mutation rate at methylated CpG sites is 1.17 \u00d7 10\u20137 per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "For these ~1.1 million sites (of 1.8 million total CpG sites in sequenced exons), we calculate a mean haploid, autosomal C > T mutation rate of 1.17 \u00d7 10\u20137 per generation using de novo mutations (DNMs) in a sample of ~2900 sequenced parent-offspring trios (Materials and methods, Figure 1\u2014figure supplements 1\u20132, Halldorsson et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from de novo mutation data from Halldorsson et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "0c1537d9-5ec9-46fc-9398-ce95ca01f5f4",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C11",
+      "claim": "CpG transitions differ somewhat in their mutation rates based on their trinucleotide context.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, CpG transitions differ somewhat in their mutation rates based on their trinucleotide context (Figure 1\u2014figure supplement 3a; Aggarwala and Voight, 2016)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1\u2014figure supplement 3a and citation to Aggarwala and Voight, 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "e2c7d369-ce5b-4bdf-970b-b2a7089241c5",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C12",
+      "claim": "CpG transitions are consistently an order of magnitude higher in mutation rate than the genome average.",
+      "claim_type": "EXPLICIT",
+      "source": "even so, they are consistently an order of magnitude higher than the genome average (Kong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kong et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "41f35173-999a-4b03-8606-ef0ce7277481",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C13",
+      "claim": "There is no appreciable difference in average DNM rates between methylated CpGs inside and outside exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, considering methylated CpGs inside and outside exons, which differ in a number of these features, there is no appreciable difference in average DNM rates (Fisher Exact Test (FET) p-value = 0.1, Figure 1\u2014figure supplement 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical test (FET p-value = 0.1) and Figure 1\u2014figure supplement 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "25b627cb-6945-4d58-bb18-8b399b540542",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C14",
+      "claim": "The rate at which two DNMs occur at the same methylated CpG site is not significantly different for sites inside versus outside exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the rate at which two DNMs occur at the same site, a summary statistic that reflects the variance in mutation rates, is not significantly different for methylated CpGs inside versus outside exons (FET p-value = 0.35; Figure 1\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical test (FET p-value = 0.35) and Figure 1\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "ebb90095-b62b-4ff5-b2b4-e1708f637804",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C15",
+      "claim": "94.7% of all possible synonymous CpG transitions at methylated sites are observed in the gnomAD data alone.",
+      "claim_type": "EXPLICIT",
+      "source": "At these sites, 94.7 % of all possible synonymous CpG transitions are observed in the gnomAD data alone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly calculated from gnomAD polymorphism data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "60ac85dc-4edf-42e7-92f2-fd012a04bb4e",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C16",
+      "claim": "98.8% of all possible synonymous CpG transitions at methylated sites are observed in the combined sample including gnomAD, UK Biobank, and DiscovEHR datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "and 98.8 % in the combined sample including all three datasets (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly calculated from combined polymorphism data and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "45779b0b-5d6a-40cd-ae70-4bdd7c3c7b0b",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C17",
+      "claim": "Even in the least mutable CpG trinucleotide context, 98% of putatively neutral sites are segregating in current samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the least mutable CpG trinucleotide context, 98 % of putatively neutral sites are segregating in current samples (Figure 1\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "9a894d4b-f8fd-43c5-8158-f377f3d27430",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C18",
+      "claim": "In the absence of selection, almost every methylated CpG site would be segregating a T at current sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations imply that in the absence of selection, almost every methylated CpG site would be segregating a T at current sample sizes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the high saturation levels observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "f2b6dbb9-e67a-40f4-95fb-bd7580c7df5a",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C19",
+      "claim": "Not seeing a T allele at a methylated CpG site provides strong evidence it was removed by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "and further that not seeing a T provides strong evidence it was removed by selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the saturation observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "681adffd-826f-406d-8638-76d064429b2f",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C20",
+      "claim": "At current sample sizes, there is a substantial amount of information about whether individual CpG transitions are deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, at current sample sizes, there is a substantial amount of information about whether individual CpG transitions are deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the saturation analysis and FDR calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "3a0532f5-f1ca-4d52-bff6-9c4dd8b0f6dc",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C21",
+      "claim": "In a smaller sample with only 10% of putatively neutral sites segregating, there is almost no information about selection in observing individual sites to be invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in a smaller sample with only 10 % of putatively neutral sites segregating, there is almost no information about selection in observing individual sites to be invariant (p \u2264 0.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical calculation demonstrating the importance of sample size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "249202d2-a21c-4ee7-a41f-83b430a78c3f",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C22",
+      "claim": "The mean de novo mutation rates do not differ for synonymous sites and for various non-synonymous annotations at methylated CpG sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot examine whether the distributions of mutation rates are identical for lack of data, we verify that the mean de novo mutation rates do not differ for synonymous sites and for various non-synonymous annotations (Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is verified through analysis shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "451ec1b6-b4b5-4f4a-b407-20f0b2fd384c",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C23",
+      "claim": "The distributions of methylation levels are similar for synonymous and non-synonymous sites, with a significant but small shift towards higher methylation for non-synonymous sites.",
+      "claim_type": "EXPLICIT",
+      "source": "we also check that the distributions of methylation levels (conditional on \u226565%), an important determinant of mutation rates, are similar for synonymous and non-synonymous sites (with a significant but small shift towards higher methylation and thus presumably higher mutation rates for non-synonymous sites; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "b1771f20-ca67-4322-a716-03b93d31e360",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C24",
+      "claim": "All categories of missense, loss-of-function, and regulatory variants show a significant depletion in the fraction of segregating sites compared to synonymous variants.",
+      "claim_type": "EXPLICIT",
+      "source": "All categories of missense, loss-of-function, and regulatory variants show a significant depletion in the fraction of segregating sites compared to synonymous variants (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2b with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "7791f7ad-9b1e-4a4f-8bc3-968da1e4a63b",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C25",
+      "claim": "There is approximately a 27% deficit of loss-of-function variants at methylated CpG sites compared to what would be expected under neutrality.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore suggest that there are ~27 % fewer loss-of-function variants than would be expected under neutrality",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "dbe36629-ae71-4469-8f56-ee82695f9f43",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C26",
+      "claim": "At invariant sites within the LOF annotation, neutrality can be rejected at an FDR of only 4.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "at invariant sites within this annotation, neutrality can be rejected at an FDR of only 4.4 % ( = 1.2/27).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the deficit of LOF variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "52f11bb5-1bb7-4237-853d-73a42034a839",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C27",
+      "claim": "A 27% deficit of loss-of-function variants is seen even when sites are matched for predicted level of linked selection.",
+      "claim_type": "EXPLICIT",
+      "source": "A 27 % deficit of loss-of-function variants is again seen if we match the sites to synonymous mutational opportunities with the same predicted level of linked selection, i.e., with similar genealogical histories (McVicker et al., 2009; Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 2a after matching for B-statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "9e23aec8-e22d-432f-958b-ba8120d78abd",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C28",
+      "claim": "When comparing CpG sites at which mutations lead to protein-truncation in the first versus the second half of transcripts, approximately the same number are missing mutations relative to synonymous sites in both subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the widely used assumption that LOF mutations within a gene are equivalent (after filtering for those at the end of transcripts; Karczewski et al., 2020; Cassa et al., 2017), when we compare the set of CpG sites at which mutations are annotated as leading to protein-truncation in the first versus the second half of transcripts, approximately the same number are missing mutations relative to synonymous sites in both subsets (Figure 2\u2014figure supplement 3; FET p-value = 0.9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3 with FET p-value = 0.9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "3c1d0357-17ad-482c-9bba-f7525e572a10",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C29",
+      "claim": "The fraction of missense mutations and splice region variants not observed in current samples is about 5.3%, with an FDR of 22.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, the fraction of missense mutations and splice region variants not observed in current samples is only about 5.3%, and the FDR 22.6 % ( = 1.2/5.3) (whether or not we match for the effects of linked selection; see Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the data and shown in Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "ddc63010-dbb7-483f-8d26-eafd2b37fcff",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C30",
+      "claim": "For missense mutations at sites that may disrupt or alter DNA-binding, there is a ~12\u201320% deficit in segregating sites relative to synonymous sites.",
+      "claim_type": "EXPLICIT",
+      "source": "For the subset of sites at which missense mutations may disrupt or alter binding, particularly DNA-binding, there is a ~ 12\u201320% deficit in segregating sites relative to what is seen at synonymous sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2c-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "b0f65307-4fa3-43df-8a36-9bf4ad2fa69a",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C31",
+      "claim": "The fraction of sites segregating is inversely proportional to the predicted functional importance of the sites using CADD scores.",
+      "claim_type": "EXPLICIT",
+      "source": "We can also check that the fraction of sites segregating is inversely proportional to the predicted functional importance of the sites using CADD scores (Rentzsch et al., 2019), widely used measures of constraint that incorporate functional annotations and measures of conservation. Across deciles, mean de novo transition rates at methylated CpGs are similar (Figure 2\u2014figure supplement 5a) and, as expected, the fraction of segregating sites decreases with increasing CADD scores (Figure 2\u2014figure supplement 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 5a and 5b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "0fcea791-dfd0-45ce-be87-82146805cb26",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C32",
+      "claim": "For sites with mutation rate on the order of 10-9, the fraction of possible synonymous sites that segregate in a sample of 780K chromosomes is very low (5% for T > A mutations).",
+      "claim_type": "EXPLICIT",
+      "source": "For sites with mutation rate on the order of 10\u20139, which is the case for the vast majority of non-CpGs, the fraction of possible synonymous sites that segregate in a sample of 780K chromosomes is very low: for instance, it is 5 % for T > A mutations, which occur at an average rate of 1.2 \u00d7 10\u20139 (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3a and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "bbb4de96-16c8-4e46-86aa-184f0a92e46c",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C33",
+      "claim": "For C > T mutations not at methylated CpGs (rate 0.9 \u00d7 10\u20138), 27% of synonymous sites segregate in a sample of 780K chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "and 27 % even for other C > T mutations, which occur at a rate of 0.9 \u00d7 10\u20138 per site (Figure 1\u2014figure supplement 1), compared to ~99 % for C > T mutations at methylated CpGs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3a and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "37572883-d270-4904-9d86-d3a8650d0d2e",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C34",
+      "claim": "For invariant sites of less mutable types, there is little information with which to evaluate the fit to the neutral null in current samples.",
+      "claim_type": "EXPLICIT",
+      "source": "For invariant sites of these less mutable types, there is little information with which to evaluate the fit to the neutral null in current samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the low saturation levels for these mutation types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "6e0acc28-e71f-4411-9872-4d3269d72683",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C36",
+      "claim": "The average length of the genealogy for 390K individuals is substantially shorter than 100 million generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that mutation types with rates on the order of 10\u20138 are far from saturation further indicates that the average length of the genealogy for these 390K individuals is substantially shorter than 100 million generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of saturation for these mutation types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d467715d-de3c-4baa-bb52-d2b8cf24c626",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C37",
+      "claim": "Under a demographic model with Ne = 10 million for the past 50 generations, a sample of 780K chromosomes has a genealogy spanning an average of 34 million generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the rough estimate above, under our choice of demographic model, a sample of 780K chromosomes has a genealogy spanning an average of 34 million generations (Figure 3\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from simulations shown in Figure 3\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "eab44640-a0a0-4985-8e5d-aecdbe6ff96c",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C38",
+      "claim": "Increasing the number of samples by a factor of 12 only increases the average tree length approximately 3.3 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, increasing the number of samples by a factor of 12 only increases the average tree length ~3.3 x (Figure 3b, Figure 3\u2014figure supplement 1a,b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations in Figure 3b and Figure 3\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d0d204fc-e928-4b4f-84ac-c708fe8e1251",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C39",
+      "claim": "A site that mutates at rate 10-9 per generation is expected to have experienced ~0.04 mutations in the genealogical history of a sample of ~1 million.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, a site that mutates at rate 10\u20139 per generation is expected to have experienced ~0.04 mutations in the genealogical history of a sample of ~1 million, and 0.1 mutations in a sample of 10 million.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the genealogy length and mutation rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "82fc21cb-a3de-4885-b705-b31bcf666bb9",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C40",
+      "claim": "Saturation for mutation rates of 10-8 or 10-9 per site per generation may not be achievable any time soon.",
+      "claim_type": "EXPLICIT",
+      "source": "The implication is that saturation for mutation rates of 10\u20138 or 10\u20139 per site per generation may not be achievable any time soon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the slow growth of genealogy length with sample size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "04eb7c6b-d7ea-45db-8501-50edb4d340a5",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C41",
+      "claim": "Samples that combine individuals from more diverse genetic ancestries have longer genealogical histories.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for simplicity, we model one or at most two populations, when samples that combine individuals from more diverse genetic ancestries have longer genealogical histories (Figure 3\u2014figure supplement 1c; see Figure 1) and thus capture more variation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "ea17fdd0-39db-4298-88e3-48263336913c",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C42",
+      "claim": "In current samples of 780K chromosomes, the posterior odds for invariant methylated CpGs having hs \u2265 0.5 \u00d7 10\u20133 are 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "In current samples, the posterior odds for invariant methylated CpGs having hs \u2265 0.5 \u00d7 10\u20133 are 92 % under our model, whereas they are 37 % for segregating methylated CpGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from Bayesian inference using simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "86303673-cbf6-44d9-bd6d-23ecb0ef9bc2",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C43",
+      "claim": "The fraction of de novo LOF mutations at methylated CpGs with hs \u2265 0.5 \u00d7 10\u20133 is roughly 52%.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering possible LOF mutations at methylated CpGs, of which 27 % are not observed in current samples, these odds imply that the fraction of de novo LOF mutations with hs \u2265 0.5 \u00d7 10\u20133 is roughly 52 % ( = 0.27 \u00d7 0.92 + 0.73 \u00d7 0.37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by weighting posterior odds by the fraction of segregating and invariant sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d7dbbd2a-a25a-4751-a37a-b5af1cb99a51",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C44",
+      "claim": "The fraction of de novo missense mutations at methylated CpGs estimated to be highly deleterious is 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "For missense sites, given the same uninformative prior on hs as for LOF mutational opportunities, the fraction estimated to be highly deleterious is 40 % ( = 0.05 \u00d7 0.92 + 0.95 \u00d7 0.37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by weighting posterior odds by the fraction of segregating and invariant sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "51404344-4636-4461-a0cc-c96d955fb2cf",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C45",
+      "claim": "Approximately 0.97% of all de novo point mutations are missense and ~0.07% lead to a LOF.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ~0.97 % of all de novo point mutations are missense and ~0.07 % lead to a LOF (see Methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from de novo mutation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "bf74ca16-6e81-444b-84a4-5e54605f2b03",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C46",
+      "claim": "There is roughly a 1 in 236 chance that a de novo mutation has an effect hs \u22650.5 \u00d7 10\u20133.",
+      "claim_type": "EXPLICIT",
+      "source": "these estimates translate into roughly a 1 in 236 chance ( = 40%x0.97% + 52% x0.07%) that a de novo mutation has an effect hs \u22650.5 \u00d7 10\u20133.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the fractions of deleterious missense and LOF mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "0b17bf2f-56c2-4ff3-b523-2dcee011efe3",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C47",
+      "claim": "Assuming each individual inherits 70 new mutations, one out of every 3.4 individuals is born with a new and potentially highly deleterious, non-synonymous mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming, finally, that each individual inherits 70 new mutations (Kong et al., 2012; J\u00f3nsson et al., 2017), these estimates imply that one out of every 3.4 individuals is born with a new and potentially highly deleterious, non-synonymous mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the probability of a deleterious mutation and the number of mutations per individual.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "26978173-3777-4f94-90a3-735aba295984",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C48",
+      "claim": "In a sufficiently large sample, even a segregating site can be subject to strong selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In a sufficiently large sample, even a segregating site can be subject to strong selection (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulations shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "2f3cf001-4e86-4790-8fcb-7513be38104d",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C49",
+      "claim": "In current exome sample sizes, a C > T mutation at a methylated CpG site with hs = 0.5 \u00d7 10\u20133 is almost always observed segregating.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in current exome sample sizes, a C > T mutation at a methylated CpG site with hs = 0.5 \u00d7 10\u20133 is almost always observed segregating (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through simulations in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "99670a03-0c78-42a2-8c18-858d41a2008f",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C50",
+      "claim": "Under mutation-selection-drift balance in a constant population size, a mutation that arises at rate 1.2 \u00d7 10\u20137 per generation and is removed by selection at rate hs = 0.05% per generation has an expected population frequency of 2.4 \u00d7 10\u20134.",
+      "claim_type": "EXPLICIT",
+      "source": "This follows from the expectation under mutation-selection-drift balance (Gillespie, 1998): in a constant population size, a mutation that arises at rate 1.2 \u00d7 10\u20137 per generation and is removed by selection at rate hs = 0.05% per generation has an expected population frequency of 2.4 \u00d7 10\u20134",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from mutation-selection-drift balance theory.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "3636519d-7f86-41ce-8bd0-af43b365c0f0",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C51",
+      "claim": "In a sample of 780K, a mutation with hs = 0.05% has a mean number of 187 copies.",
+      "claim_type": "EXPLICIT",
+      "source": "in a sample of 780K, the mean number of copies is 187.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the expected population frequency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "96cc1b6d-404d-42bd-a2c3-9ca33ae89cb2",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C52",
+      "claim": "Segregating sites in large samples are a mixture of neutral, weakly selected and strongly selected sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, segregating sites in large samples are a mixture of neutral, weakly selected and strongly selected sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mutation-selection-drift balance analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "8ab4cb35-a9a5-498c-8c43-bd6735a2d8af",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C53",
+      "claim": "As samples grow in size, it cannot simply be assumed that clinically relevant variants are absent from reference datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "An implication is that, although large reference repositories such as gnomAD were partly motivated by the possibility of excluding deleterious variants, as samples grow in size, it cannot simply be assumed that clinically relevant variants are absent from reference datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that strongly selected mutations can segregate in large samples.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d91e5f5b-6e76-4086-9528-4ac0e0c14ffd",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C54",
+      "claim": "The only mutations never seen as samples grow in size would be the ones that are embryonically lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "In principle, the only mutations never seen as samples grow in size would be the ones that are embryonically lethal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about the limit of large sample sizes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "d06fb674-dff6-40d2-aea9-24d231ff7b00",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C55",
+      "claim": "At current sample sizes, invariant methylated CpGs are likely highly deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "At current sample sizes, invariant methylated CpGs are likely highly deleterious",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the saturation analysis and Bayesian inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "c590d9ea-f3bf-43b4-8bb2-3a92af1de5cd",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C56",
+      "claim": "For less mutable types, the information content at invariant sites is very limited at even the largest sample sizes considered.",
+      "claim_type": "EXPLICIT",
+      "source": "for less mutable types, the information content at invariant sites is very limited at even the largest sample sizes considered (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "3e02090d-32b3-4761-b751-05a41d3924c8",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C57",
+      "claim": "Mutations classified as pathogenic in ClinVar or identified as underlying severe developmental disabilities in the DDD cohort are 6-fold to 51-fold enriched at sites invariant in 390K individuals compared to those classified as benign.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mutations classified as pathogenic in ClinVar (Landrum et al., 2018) or identified as underlying severe developmental disabilities in the Deciphering Developmental Disorders (DDD) cohort (Kaplanis et al., 2020) are 6-fold to 51-fold enriched at sites invariant in 390K individuals compared to those classified as benign (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2 using ClinVar and DDD data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "7b1bbfa9-1de2-4051-9821-de3d81d53cfc",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C58",
+      "claim": "The de novo mutation data used in this study comes from ~190,000 published de novo mutations in a sample of 2976 parent-offspring trios that were whole genome sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on ~190,000 published de novo mutations in a sample of 2976 parent-offspring trios that were whole genome sequenced (Halldorsson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "1634de58-946e-43c0-8f54-0e780b69e68b",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C59",
+      "claim": "The trio dataset used is the largest publicly available set of trios that have not been sampled on the basis of a disease phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, this is the largest publicly available set of trios that, to our knowledge, have not been sampled on the basis of a disease phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "68afeff7-9fd9-49be-b9f0-531a7b0acf16",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C60",
+      "claim": "Methylated CpG sites are defined as those that are methylated \u226565% of the time in both testes and ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we define 'methylated' CpG sites in exons as those that are methylated \u226565 % of the time in both testes and ovaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the operational definition used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "efa85076-4850-44a6-bd8f-a29db6b3d23f",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C61",
+      "claim": "There are approximately 1.1 million methylated CpG sites out of 1.8 million total CpG sites in sequenced exons.",
+      "claim_type": "EXPLICIT",
+      "source": "For these ~1.1 million sites (of 1.8 million total CpG sites in sequenced exons)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "6baba0d4-bee4-4a6e-8d73-8996ef0fd8a5",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C62",
+      "claim": "All but 12% of segregating mCpG transitions were shared across at least two non-overlapping datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "All but 12 % of segregating mCpG transitions were shared across at least two non-overlapping datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section as a quality check.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "12d84fa2-9697-47df-8232-83a37b7063ae",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "claim_id": "C63",
+      "claim": "Of segregating variants seen in one of the gnomAD or UK Biobank datasets, all but two variants had at least 5% of individuals sequenced at that position.",
+      "claim_type": "EXPLICIT",
+      "source": "Of segregating variants seen in one of the gnomAD or UK Biobank datasets, all but two variants had at least 5 % of individuals (and typically on the order of ~100 K) sequenced at that position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section as a quality check.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Methylated CpG sites experience C>T mutations at an elevated rate of ~1.17\u00d710\u207b\u2077 per generation, approximately 10-fold higher than the genome average. In a sample of 390,000 individuals, ~99% of synonymous sites at methylated CpGs harbor a C/T polymorphism, indicating near-saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C10 provide the core mutation rate and saturation data, supported by de novo mutation analysis from ~2900 trios (C10, C58) and polymorphism data from multiple large datasets (C15, C16). The mechanistic basis (spontaneous deamination of methyl-cytosine, C8) and predictive value of methylation (C9) are well-established. Mutation rate consistency across exonic and non-exonic regions (C13, C14) and trinucleotide contexts (C11, C17) supports the robustness of these estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "At current sample sizes (~390K individuals), the absence of a non-synonymous polymorphism at a methylated CpG site provides strong statistical evidence of purifying selection, with substantial information to distinguish selected from neutral sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The saturation of synonymous sites (C3, C15-C17) provides the neutral baseline. Claims C18-C20 logically follow: if neutral sites are nearly all segregating, invariant sites are likely under selection. The contrast with smaller samples (C21) demonstrates the sample-size dependence of this inference. The statistical framework (p-values, FDR calculations in C26, C29) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "c0775e8d-dfda-407b-a118-3a855a941a3e",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Approximately 27% of possible loss-of-function mutations at methylated CpG sites are not observed in current samples and are likely highly deleterious, with neutrality rejected at an FDR of 4.4% for invariant LOF sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 report the observed depletion of LOF variants relative to synonymous sites, supported by Figure 2b. The FDR calculation (C26) appropriately accounts for the 1.2% of neutral sites expected to be invariant. Robustness checks controlling for linked selection (C27) and position within transcripts (C28) strengthen the conclusion. The statistical tests are appropriate (Fisher exact tests with p<<10\u207b\u2075).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "f5f52c05-cd7e-40ea-ba92-bd3fb443d104",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Between 5-20% of possible missense mutations at methylated CpG sites are likely highly deleterious, with the fraction varying by functional site type. DNA-binding sites show ~12-20% depletion, while overall missense sites show ~5.3% depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 report observed depletions for different missense categories, supported by Figure 2b-d. The stratification by functional site type (C30, C31) demonstrates biologically meaningful variation. The inverse relationship with CADD scores (C31) provides external validation. However, the higher FDR for missense sites (22.6%, C29) compared to LOF sites (4.4%, C26) indicates greater uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "e6227417-246f-4f23-9d1f-740929a132cf",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutation types with rates of 10\u207b\u2078 or 10\u207b\u2079 per site per generation remain far from saturation at current sample sizes. The genealogy of 390K individuals spans ~34-39 million generations, and saturation for these mutation types may not be achievable in the foreseeable future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 document low saturation levels for less mutable types (5% for T>A, 27% for non-mCpG C>T), supported by Figure 3a. The genealogy length estimates (C36-C37) are derived from both empirical saturation data and coalescent simulations. The slow growth of genealogy length with sample size (C38) is theoretically sound and simulation-supported. Claims C39-C40 logically follow from the genealogy length and mutation rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "bc79d220-8b5c-459f-be75-e008cfbf68dd",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mean de novo mutation rates at methylated CpG sites do not differ significantly between synonymous and non-synonymous annotations, though methylation levels show a small but significant shift toward higher values for non-synonymous sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by Figure 2a showing no significant differences in mean DNM rates across annotations. Claim C23 acknowledges a small but significant difference in methylation distributions (Figure 2\u2014figure supplement 1), which the authors note should be conservative for identifying selection. This validates a key assumption of the saturation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using Bayesian inference with simulations, the authors estimate that ~52% of de novo LOF mutations and ~40% of missense mutations at methylated CpGs have hs\u22650.5\u00d710\u207b\u00b3. This translates to approximately 1 in 236 de novo mutations being highly deleterious, or 1 in 3.4 individuals born with such a mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The Bayesian framework (C42-C44) relies on strong assumptions: a specific demographic model, a log-uniform prior on selection coefficients, fixed dominance (h=0.5), and constant selection over time. While the posterior odds are calculated correctly given these assumptions, the results are sensitive to prior choice (Figure 4\u2014figure supplement 1). The translation to per-individual mutation burden (C46-C47) compounds these uncertainties. The approach is methodologically sound but the quantitative estimates should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "c4cd3303-d306-4630-a15b-498f878e3861",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In sufficiently large samples, even strongly selected mutations (hs=0.5\u00d710\u207b\u00b3) can be observed segregating. Under mutation-selection-drift balance, such mutations are expected at ~187 copies in a sample of 780K chromosomes. This implies that clinically relevant variants cannot be excluded simply by their presence in reference databases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by simulations (Figure 4c) and mutation-selection-drift balance theory. The expected frequency calculation (C50) is standard population genetics. Claim C52 logically follows: large samples contain a mixture of neutral, weakly, and strongly selected variants. The clinical implication (C53) is a reasonable inference, though the relationship between selection strength and clinical relevance is complex. Claim C54 about embryonic lethality is theoretically sound but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "a1414073-3847-4f81-abdc-5c2c123937cb",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At current sample sizes, invariant methylated CpGs are likely highly deleterious, while less mutable types provide limited information. Pathogenic mutations from ClinVar and DDD show 6-51 fold enrichment at invariant sites compared to benign variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 follows from the saturation analysis and Bayesian inference (C42). Claim C56 is supported by Figure 4\u2014figure supplement 3. The enrichment analysis (C57) provides external validation, though the authors appropriately note that ClinVar classifications themselves rely partly on presence/absence in reference databases, creating potential circularity. The wide range of enrichment (6-51 fold) reflects different comparison groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study uses de novo mutation data from ~2900 parent-offspring trios and polymorphism data from ~390,000 individuals across multiple datasets (gnomAD, UK Biobank, DiscovEHR). Quality control shows high concordance across datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe the DNM dataset, appropriately characterized as the largest unascertained trio dataset. Claims C62-C63 document quality control measures showing high concordance (88% shared across datasets, >95% coverage for most variants). These data quality checks support the reliability of the saturation estimates. Claim C1 provides context about the scale of available exome data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    },
+    {
+      "id": "25bfe9c0-6065-4354-baa8-9db1d292c7be",
+      "content_id": "ccacd9ba-fbb5-4f3b-9d5b-4a20ab4f66d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the gnomAD dataset alone, 94.7% of possible synonymous CpG transitions at methylated sites are observed; this increases to 98.8% in the combined sample of 390K individuals. Even the least mutable CpG trinucleotide context shows 98% saturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims directly report the observed saturation levels from the polymorphism data, supported by Figure 1. The progression from 94.7% (gnomAD alone) to 98.8% (combined) demonstrates the effect of increasing sample size. The consistency across trinucleotide contexts (C17, Figure 1\u2014figure supplement 3b) strengthens the conclusion that saturation is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:02:43.109720Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1714c83e-fa21-4d14-9cef-e4c9bd58df15",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "bf892e2b-fc3e-4a16-9246-1c6822a26449",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "d9bfbb37-48aa-463c-a11e-4792b685eb1a",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "adb2ea15-ddb9-48b0-b48d-dc4a34588fd2",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "5a9eb9a9-8fa9-4f77-bc8d-71830962686c",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "0c1537d9-5ec9-46fc-9398-ce95ca01f5f4",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "e2c7d369-ce5b-4bdf-970b-b2a7089241c5",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "41f35173-999a-4b03-8606-ef0ce7277481",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "25b627cb-6945-4d58-bb18-8b399b540542",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "68afeff7-9fd9-49be-b9f0-531a7b0acf16",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "efa85076-4850-44a6-bd8f-a29db6b3d23f",
+      "result_id": "9ffbb350-96e6-44ef-abea-b86991bb5dc7"
+    },
+    {
+      "claim_id": "cf2d51ca-f291-4cea-83af-a954a5c034fe",
+      "result_id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858"
+    },
+    {
+      "claim_id": "9a894d4b-f8fd-43c5-8158-f377f3d27430",
+      "result_id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858"
+    },
+    {
+      "claim_id": "f2b6dbb9-e67a-40f4-95fb-bd7580c7df5a",
+      "result_id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858"
+    },
+    {
+      "claim_id": "681adffd-826f-406d-8638-76d064429b2f",
+      "result_id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858"
+    },
+    {
+      "claim_id": "3a0532f5-f1ca-4d52-bff6-9c4dd8b0f6dc",
+      "result_id": "a6d45e48-e957-4d20-868b-dd3a8a0a1858"
+    },
+    {
+      "claim_id": "dbd660a3-6998-49c3-b894-749b799a0dcf",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "b1771f20-ca67-4322-a716-03b93d31e360",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "7791f7ad-9b1e-4a4f-8bc3-968da1e4a63b",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "dbe36629-ae71-4469-8f56-ee82695f9f43",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "52f11bb5-1bb7-4237-853d-73a42034a839",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "9e23aec8-e22d-432f-958b-ba8120d78abd",
+      "result_id": "c0775e8d-dfda-407b-a118-3a855a941a3e"
+    },
+    {
+      "claim_id": "1366d923-e353-4b94-9374-2dfc712165c6",
+      "result_id": "f5f52c05-cd7e-40ea-ba92-bd3fb443d104"
+    },
+    {
+      "claim_id": "3c1d0357-17ad-482c-9bba-f7525e572a10",
+      "result_id": "f5f52c05-cd7e-40ea-ba92-bd3fb443d104"
+    },
+    {
+      "claim_id": "ddc63010-dbb7-483f-8d26-eafd2b37fcff",
+      "result_id": "f5f52c05-cd7e-40ea-ba92-bd3fb443d104"
+    },
+    {
+      "claim_id": "b0f65307-4fa3-43df-8a36-9bf4ad2fa69a",
+      "result_id": "f5f52c05-cd7e-40ea-ba92-bd3fb443d104"
+    },
+    {
+      "claim_id": "a5e3c887-2b2a-4149-9e91-036e0e6702a6",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "0fcea791-dfd0-45ce-be87-82146805cb26",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "bbb4de96-16c8-4e46-86aa-184f0a92e46c",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "37572883-d270-4904-9d86-d3a8650d0d2e",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "6e0acc28-e71f-4411-9872-4d3269d72683",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "d467715d-de3c-4baa-bb52-d2b8cf24c626",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "eab44640-a0a0-4985-8e5d-aecdbe6ff96c",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "d0d204fc-e928-4b4f-84ac-c708fe8e1251",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "82fc21cb-a3de-4885-b705-b31bcf666bb9",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "04eb7c6b-d7ea-45db-8501-50edb4d340a5",
+      "result_id": "e6227417-246f-4f23-9d1f-740929a132cf"
+    },
+    {
+      "claim_id": "249202d2-a21c-4ee7-a41f-83b430a78c3f",
+      "result_id": "bc79d220-8b5c-459f-be75-e008cfbf68dd"
+    },
+    {
+      "claim_id": "451ec1b6-b4b5-4f4a-b407-20f0b2fd384c",
+      "result_id": "bc79d220-8b5c-459f-be75-e008cfbf68dd"
+    },
+    {
+      "claim_id": "ea17fdd0-39db-4298-88e3-48263336913c",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "86303673-cbf6-44d9-bd6d-23ecb0ef9bc2",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "d7dbbd2a-a25a-4751-a37a-b5af1cb99a51",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "51404344-4636-4461-a0cc-c96d955fb2cf",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "bf74ca16-6e81-444b-84a4-5e54605f2b03",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "0b17bf2f-56c2-4ff3-b523-2dcee011efe3",
+      "result_id": "448c68c0-e777-40b8-ad3e-38e6c92d0d44"
+    },
+    {
+      "claim_id": "26978173-3777-4f94-90a3-735aba295984",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "2f3cf001-4e86-4790-8fcb-7513be38104d",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "99670a03-0c78-42a2-8c18-858d41a2008f",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "3636519d-7f86-41ce-8bd0-af43b365c0f0",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "96cc1b6d-404d-42bd-a2c3-9ca33ae89cb2",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "8ab4cb35-a9a5-498c-8c43-bd6735a2d8af",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "d91e5f5b-6e76-4086-9528-4ac0e0c14ffd",
+      "result_id": "c4cd3303-d306-4630-a15b-498f878e3861"
+    },
+    {
+      "claim_id": "d06fb674-dff6-40d2-aea9-24d231ff7b00",
+      "result_id": "a1414073-3847-4f81-abdc-5c2c123937cb"
+    },
+    {
+      "claim_id": "c590d9ea-f3bf-43b4-8bb2-3a92af1de5cd",
+      "result_id": "a1414073-3847-4f81-abdc-5c2c123937cb"
+    },
+    {
+      "claim_id": "3e02090d-32b3-4761-b751-05a41d3924c8",
+      "result_id": "a1414073-3847-4f81-abdc-5c2c123937cb"
+    },
+    {
+      "claim_id": "e3148e92-7b12-442f-9db3-59cb5a444228",
+      "result_id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8"
+    },
+    {
+      "claim_id": "7b1bbfa9-1de2-4051-9821-de3d81d53cfc",
+      "result_id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8"
+    },
+    {
+      "claim_id": "1634de58-946e-43c0-8f54-0e780b69e68b",
+      "result_id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8"
+    },
+    {
+      "claim_id": "6baba0d4-bee4-4a6e-8d73-8996ef0fd8a5",
+      "result_id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8"
+    },
+    {
+      "claim_id": "12d84fa2-9697-47df-8232-83a37b7063ae",
+      "result_id": "efb01ee3-7f6b-4f54-9a06-aa97ff78e2c8"
+    },
+    {
+      "claim_id": "ebb90095-b62b-4ff5-b2b4-e1708f637804",
+      "result_id": "25bfe9c0-6065-4354-baa8-9db1d292c7be"
+    },
+    {
+      "claim_id": "60ac85dc-4edf-42e7-92f2-fd012a04bb4e",
+      "result_id": "25bfe9c0-6065-4354-baa8-9db1d292c7be"
+    },
+    {
+      "claim_id": "45779b0b-5d6a-40cd-ae70-4bdd7c3c7b0b",
+      "result_id": "25bfe9c0-6065-4354-baa8-9db1d292c7be"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Validation of statistical methods using simulated neural data shows that conventional t-tests produce inflated false positive rates for action-value neurons (>10%), but four surrogate data-based methods (session permutation, pseudosession, FPR, and AAFT) all yield appropriate false positive rates (~5%) that are not significantly different from chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide comprehensive simulation results demonstrating that conventional methods inflate false positives while the four surrogate-based methods maintain appropriate Type I error rates. The binomial tests with specific p-values and the systematic comparison across methods provide strong statistical support for these methodological findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Session permutation and pseudosession methods show substantial correlations in trial-by-trial action values between original and resampled behavioral sessions due to similar block structures across sessions, suggesting these methods may be too stringent (high false negative rate) for block-design experiments, while chosen values show only weak correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 document a critical limitation of certain resampling methods for block-design experiments. The correlation analysis (Figure 2C) and the logical inference about false negative rates are well-supported. The differential behavior of action values versus chosen values strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Application of validated statistical methods to actual neural data from rats reveals significant action-value signals in multiple brain regions (DMS, VS, OFC, ACC, mPFC, M2, CA1) except DLS, and significant chosen-value signals in all tested brain structures, demonstrating that these signals cannot be explained by serial correlations alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present the core empirical findings from actual neural recordings. Multiple statistical methods converge on significant action-value and chosen-value encoding across brain regions (Figure 3), with appropriate binomial tests (p<0.05). The consistency across methods and the exception of DLS for action values add credibility to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Neurons in rat and monkey brain regions show mixed selectivity for multiple value signals rather than categorical encoding, with action value-responsive neurons also encoding \u03a3Q (25.8-62.5%), \u0394Q (13.2-42.9%), or both (6.3-25%), and similar patterns observed in monkey DLPFC and striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 demonstrate mixed selectivity across brain regions using regression analyses with transformed value signals (Figure 4B,C). The quantitative percentages across different brain areas and the consistency between rat and monkey data provide strong support for distributed, mixed encoding rather than categorical representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C92",
+      "C93"
+    ],
+    "result": "In rats, all tested brain regions show significantly stronger encoding of \u03a3Q than \u0394Q signals (positive vertical component of mean resultant vector), with regional variations: VS shows stronger \u03a3Q encoding than DMS/DLS in striatum, and OFC, mPFC, ACC show stronger \u03a3Q encoding than M2 in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C64, C92-C93 present vector analysis results showing systematic regional differences in value signal encoding. The Wilcoxon rank-sum tests and ANOVA with Bonferroni post-hoc tests (referenced in Supplementary file 1) provide appropriate statistical support for these regional differences in signal strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C96"
+    ],
+    "result": "In monkeys, DLPFC shows significantly stronger encoding of \u0394DV than \u03a3DV signals (negative vertical component), while VS encodes \u03a3DV more strongly than DLPFC and CD, suggesting DLPFC function is more related to policy/action selection than state value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C65, C96 demonstrate species-specific and region-specific differences in value encoding. The statistical tests (Wilcoxon rank-sum) support the quantitative findings, and the functional interpretation is reasonable given the pattern of results, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In rat VS, OFC, mPFC, ACC, and M2, signals related to \u03a3Q and \u0394Q are more strongly represented than action-value signals of individual choices (significantly negative horizontal component of mean resultant vector after 4\u03b8 transformation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 use the 4\u03b8 transformation analysis to demonstrate that combined value signals (\u03a3Q, \u0394Q) dominate over individual action values in specific brain regions. The Wilcoxon rank-sum tests and the geometric transformation approach provide appropriate statistical support for this regional specialization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Action-value signals in block-design studies cannot be entirely attributed to autocorrelations; session permutation and pseudosession methods may be too stringent for block designs, while FPR and AAFT methods provide more accurate estimates, and adding AR terms ameliorates serial correlation problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 synthesize methodological insights from both simulations and actual data analyses. The comparison of methods, the identification of limitations in specific approaches for block designs, and the recommendation of alternative methods are well-supported by the empirical results presented in Figures 2-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Neurons in striatum, frontal cortical areas, and hippocampus show random mixed selectivity rather than categorical representation of value signals, with relative weights varying continuously across individual neurons and encoding patterns varying across brain structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide a high-level interpretation of the mixed selectivity findings. The conclusion is well-supported by the detailed analyses in C51-C67 and is consistent with cited literature on mixed selectivity (Hirokawa et al., 2019; Raposo et al., 2014). The continuous variation in weights is evident from the scatter plots in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "OFC, mPFC, ACC, and VS may mainly process signals related to expected rewards in a given state (state value), while M2 may be more concerned with policy and action selection, based on differential encoding of \u03a3Q signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 offer functional interpretations based on the differential encoding patterns. While the encoding differences are well-documented (C92-C93), the functional interpretations are speculative and rely on citations to prior work (Bari et al., 2019; Sul et al., 2011). The claims appropriately use tentative language ('might'), but direct functional evidence is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The differential encoding patterns between rat mPFC (stronger \u03a3Q) and monkey DLPFC (stronger \u0394DV) are at odds with functional homology between these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 raises an important comparative neuroanatomy issue, but the interpretation is complicated by differences in task design between rat and monkey experiments. The rat task used a block design while the monkey task randomized values across trials (C25), which could contribute to the observed differences independent of true functional differences between regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Stronger representation of signals related to sum of action values in VS compared to CD in monkeys is consistent with the proposal that striatal subdivisions correspond to distinct cortico-basal ganglia loops serving different functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 document a finding in monkey striatum that parallels the rat findings and is consistent with established theories of striatal organization (cited: Devan et al., 2011; Ito and Doya, 2011; Redgrave et al., 2010; Yin and Knowlton, 2006). The finding is supported by the data, though the functional interpretation relies on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study analyzed neural activity from 8 brain regions in 27 rats (383 sessions) performing a dynamic foraging task and 3 brain regions in 3 monkeys performing an intertemporal choice task, with specific analysis windows and inclusion criteria (\u22651 Hz firing rate) for different value signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 describe the dataset and analysis parameters. The sample sizes, brain regions, number of neurons, and analysis windows are clearly specified. The inclusion criterion of \u22651 Hz is reasonable for ensuring adequate signal. The monkey task design (C25) appropriately eliminates temporal correlations, providing a useful comparison to the rat block-design data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Rats performed a modified T-maze task with free choice between targets for water reward, 2-3s delays, and block-structured reward probabilities; action values were computed using Q-learning (TAB task) or stacked-probability (DAWH task) models with softmax action selection and maximum likelihood parameter estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C109 provide methodological details about the behavioral task and computational modeling. The task design is clearly described with reference to Figure 1, and the computational models are appropriately cited (Sutton and Barto, 1998; Huh et al., 2009). Trial duration statistics provide useful context. These are standard methods in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FPR and AAFT methods yielded similar results in this study, but AAFT maintains the original spike count distribution while FPR produces normally distributed data, suggesting AAFT may be more reliable when neural signals are influenced by non-Gaussian or discrete properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 compare two surrogate data methods and make a reasonable recommendation. The empirical similarity (C83) is documented, the methodological difference (C84) is accurate, and the inference about reliability (C85) is logical given that spike counts are inherently discrete and often non-Gaussian.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Neural activity is almost always serially correlated, making it difficult to select appropriate statistical methods for identifying encoding of serially correlated variables; it is prudent to examine false positive and negative rates using null data that captures important features of the actual dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide general methodological guidance based on the study's findings. The observation about ubiquitous serial correlation (C86) is well-established and confirmed here (C72). The recommendation (C88) is a reasonable best practice that follows from the study's demonstration of method-dependent false positive rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior literature has established that action-value signals are found in multiple brain regions and bias choices toward higher rewards, and that reinforcement learning theory provides a framework for understanding value-based decision making, with neural/hemodynamic signals correlated with action value found especially in the frontal cortex-basal ganglia loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C12 summarize established knowledge from prior literature with appropriate citations. These background claims accurately represent the state of the field and provide context for the current study's contributions. The claims are appropriately attributed to prior work rather than presented as novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has raised concerns that action-value signals might be inflated by serial correlations in neural activity and by activity related to other decision variables, with specific studies (Elber-Dorozko & Loewenstein, 2018; Harris, 2020) demonstrating these issues in striatum and in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C13-C18 accurately summarize the methodological concerns raised in prior literature that motivated the current study. The citations are appropriate and the characterization of the prior findings (e.g., C15-C16) appears accurate. These claims establish the rationale for the current reanalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The current study reanalyzed previous data using methods designed to account for temporal correlations, including surrogate data approaches, and tested whether action-value neurons merely encode policy or state value rather than action value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 describe the study's approach and are directly supported by the methods and results presented. The reanalysis strategy is clearly implemented and the multiple approaches (permutation, surrogate data, value transformation analyses) are all executed as described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C48",
+      "C70",
+      "C71"
+    ],
+    "result": "The study's main conclusions are that previously identified action-value signals cannot be entirely accounted for by serial correlations, neural activity related to action value is intermixed with other decision variables, and there is broadly distributed neural representation of action value throughout the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C22, C48, C70-C71 represent the study's primary conclusions and are well-supported by the comprehensive analyses presented. The convergence of evidence from multiple statistical methods (C30-C48), the mixed selectivity analyses (C51-C67), and the regional distribution findings (C44-C47) all support these overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Action values are monotonically related to policy (choice probability), making it difficult to distinguish neural activity related to these quantities, and individual neurons likely encode multiple variables simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 state theoretical considerations that motivate the value transformation analyses. C49 is a well-established property of reinforcement learning models, and C50 is supported by citation (Rigotti et al., 2013) and is consistent with the mixed selectivity findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Previous studies have not clearly resolved the confounding of autocorrelations in value signals and neural activity or the superposition of different value signal types; neural spikes are often correlated across trials due to intrinsic non-stationarity and/or relationships with action value; optimal analysis methods may vary depending on data structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C72-C73, C75 provide context and caveats for interpreting the findings. The observation about unresolved issues in prior work (C68-C69) is accurate and motivates the study. The documentation of serial correlation (C72) is empirically supported. The methodological caveat (C75) is a reasonable conclusion from the method comparison results.",
+    "result_type": "MINOR"
+  }
+]

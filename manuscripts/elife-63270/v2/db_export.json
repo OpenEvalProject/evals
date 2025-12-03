@@ -1,0 +1,2152 @@
+{
+  "submission": {
+    "id": "6bb2696f-c43b-436c-b12d-d22be4b47f6b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:36:07.025874Z",
+    "updated_at": "2025-12-03T02:36:07.025874Z"
+  },
+  "content": [
+    {
+      "id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "submission_id": "6bb2696f-c43b-436c-b12d-d22be4b47f6b",
+      "content_type": "manuscript",
+      "content_text": "# Dissecting phenotypic transitions in metastatic disease via photoconversion-based isolation\n\n## Authors\n\n- Yogev Sela<sup>1</sup>\n- Jinyang Li<sup>1</sup> ([ORCID: 0000-0001-8125-6603](https://orcid.org/0000-0001-8125-6603))\n- Paola Kuri<sup>2</sup>\n- Allyson J Merrell<sup>1</sup>\n- Ning Li<sup>5</sup>\n- Chris Lengner<sup>2</sup>\n- Pantelis Rompolas<sup>2</sup>\n- Ben Z Stanger<sup>1</sup> ([ORCID: 0000-0003-0410-4037](https://orcid.org/0000-0003-0410-4037)) \u2020\n\n### Affiliations\n\n1. Department of Medicine, University of Pennsylvania Philadelphia, PA United States\n2. Department of Cell and Developmental Biology, University of Pennsylvania Philadelphia, PA United States\n3. Abramson Family Cancer Research Institute, University of Pennsylvania Philadelphia, PA United States\n4. Department of Dermatology, University of Pennsylvania Philadelphia, PA United States\n5. Department of Biomedical Sciences, School of Veterinary Medicine Philadelphia, PA United States\n6. Institute for Regenerative Medicine, University of Pennsylvania Philadelphia, PA United States\n7. Abramson Cancer Center, University of Pennsylvania Philadelphia, PA United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer patients often harbor occult metastases, a potential source of relapse that is targetable only through systemic therapy. Studies of this occult fraction have been limited by a lack of tools with which to isolate discrete cells on spatial grounds. We developed PIC-IT, a photoconversion-based isolation technique allowing efficient recovery of cell clusters of any size \u2013 including single-metastatic cells \u2013 which are largely inaccessible otherwise. In a murine pancreatic cancer model, transcriptional profiling of spontaneously arising microcolonies revealed phenotypic heterogeneity, functionally reduced propensity to proliferate and enrichment for an inflammatory-response phenotype associated with NF-\u03baB/AP-1 signaling. Pharmacological inhibition of NF-\u03baB depleted microcolonies but had no effect on macrometastases, suggesting microcolonies are particularly dependent on this pathway. PIC-IT thus enables systematic investigation of metastatic heterogeneity. Moreover, the technique can be applied to other biological systems in which isolation and characterization of spatially distinct cell populations is not currently feasible.\n\n## Introduction\n\nMetastasis is the primary cause of cancer-associated mortality and remains a significant therapeutic challenge. A considerable fraction of metastasis is occult (Haeno et al., 2012; Vanharanta and Massagu\u00e9, 2013) and thus serves a potential source for residual disease and recurrence (Sosa et al., 2014; Tohme et al., 2017). While fluorescent reporters allow detection of metastatic colonies in pre-clinical models (Aiello et al., 2016; Fluegen et al., 2017), an inability to recover pure micron-scale colonies has precluded systematic phenotypic analysis of early-stage metastases. Several methods have been developed to isolate cells from specific compartments in vivo, laser-capture microdissection representing the most widely used platform (Basnet et al., 2019; Espina et al., 2006; Lovatt et al., 2014; Tang et al., 2009). However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability;\u00a0and (5) lack of control over population composition. Spatial transcriptomics methods continue to improve and can distinguish local patterns across large tumor regions (Moncada et al., 2020), but resolution limits and low representation of small metastatic colonies in the tissue hinders their isolation. Photoactivable and photoconvertible proteins provide a promising alternative for targeted cell isolation (Medaglia et al., 2017; Nicenboim et al., 2015). However, existing systems require specialized equipment and extended handling times, thus limiting scalability and precluding effective acquisition of rare or sporadic cells from multiple compartments\u00a0such as microcolonies. Here, we report \u2018PIC-IT\u2019 (\u2018Photomark and Isolate Cells If Tiny\u2019), which enables unbiased and efficient isolation of size-defined metastatic colonies from live tissues through photoconversion-based marking (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the PIC-IT protocol. (B) Photoconversion of Dendra2 in microcolonies spontaneously arising in the liver of a pancreatic cancer tumor model. Left to right: Microscopic views acquired through a 4\u00d7 objective with region of interest containing three\u00a0cell clusters destined for photoconversion located in the marked area (arrows denote the three\u00a0cells of interest, scale bar\u00a0=\u00a0250 \u00b5m). Focus on the marked area with 40\u00d7 objective (scale bar\u00a0=\u00a025 \u00b5m). Field-stop-confined FOV within the 40\u00d7 objective region, encircling the targeted three\u00a0cell focus prior to photoconversion (\u2018Preconversion\u2019). In boxes, images representing individual green and red channels for the field-stop FOV. Field-stop image of a photoconversion session (violet light exposure, \u2018Photoconversion\u2019). Field-stop confined FOV of an 40\u00d7 objective following photoconversion (\u2018Postconversion\u2019). The 40\u00d7 region with a full FOV demonstrating specificity of photoconversion to field-stop confined area. (C) Experimental scheme utilized for photoconversion-based isolation of metastatic cells from liver fragments. Orthotopic tumors derived from Dendra2-expressing cells produce liver metastasis. In different fragments, microcolonies (\u00b5Col) or macrometastases are photoconverted. Dissociated tissue from each group are pooled and sorted for subsequent applications. (D) Flow cytometry charts showing expression of Dendra2-green (X-axis) and Dendra2-red (Y-axis) in converted tumor cells and non-converted controls. (E) Seeding efficiency of photoconverted tumor cells, calculated as the fraction of cells counted in tissue culture plates 24 hr post-isolation relative to the number sorted by FACS (n\u00a0=\u00a04). (F) UMI profiles indicate expression of the markers Krt19 and Dendra2 in the sorted cells but no expression of other lineage markers (N\u00a0=\u00a0361). (G, H) High prevalence of RNA-seq transcripts of CLCA3A1 (G,\u00a0N\u00b5Col\u00a0=\u00a094, Nmacro\u00a0=\u00a0111) and the corresponding CLCA1 protein expression (H) determined by flow cytometry on macrometastasis-derived vs. microcolonies (n\u00a0=\u00a04). (I, J) Concordance between elevated transcription (UMI per million) of BNIP3 in RNA-seq (I) and (J) BNIP3 MFIs in (left) immunostained microcolonies and macrometastases populating the livers of 6419c5-YFP tumor-bearing mice (N\u00b5Col =\u00a053, Nmacro\u00a0=\u00a060). On the right, representative images of microcolonies and macrometastases immunostained for BNIP3 (red), YFP (green), and DAPI (blue). Scale bar\u00a0=\u00a050 \u00b5m. Bars represent mean \u00b1 SEM in all graphs. p-values were calculated by unpaired two-tailed Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Photoconversion of cultured PDA tumor cells. Representative images of pancreatic tumor cells preconversion and following 30 s exposure mercury lamp-generated violet light in vitro (10\u00d7 objective, scale bar\u00a0=\u00a0100 \u00b5m). (B) Photoconversion of Dendra2 in spontaneously arising macrometastases. Left to right: Low magnification microscopic view of a Dendra2-positive macrometastasis before conversion (4\u00d7 objective, scale bar\u00a0=\u00a0250 \u00b5m). FOV of the lesion prior to photoconversion (10\u00d7 objective, scale bar\u00a0=\u00a0100 \u00b5m). In boxes, images representing individual green and red channels for the field-stop FOV. Image acquired during photoconversion session. FOV of the macrometastasis following photoconversion. (C) Spatial resolution of photoconversion. Representative confocal microscopy image of a precision slice from a liver metastasis photoconverted in one maximally confined FOV using a 10\u00d7 objective (left, scale bar\u00a0=\u00a0100 \u00b5m) and radial intensity profile derived (n\u00a0=\u00a010) for Dendra2-red channel of the photoconverted FOV (right).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Size distribution of microcolonies collected in isolation sessions. Metastatic foci of 1\u201310 cells were binned according to size and the frequency of each size plotted as a percentage of the total across 10 independent experiments. (B) Average fold-change in red signal over background of non-converted samples in metastatic and primary tumors (n\u00a0=\u00a010 independent experiments). (C) Fold-change increase in Dendra2-red in photoconverted primary tumor cells as a function of time of exposure (seconds) to violet light. Data represents an average of three\u00a0technical replicates per time\u00a0point. (D) Recovery of tumor cells from microcolonies foci calculated as the ratio of the number of photoconverted cells recovered by flow cytometry to the number of cells photoconverted in each microscopy session (n\u00a0=\u00a016 sessions). (E) Average number of tumor cells recovered from microcolonies per hour photoconversion session (n\u00a0=\u00a016). (F) Stability of Dendra2-red in photoconverted metastatic tumor cells. Ratios of Dendra2-green and Dendra2-red intensities between macrometastasis-derived photoconverted cells processed and analyzed by flow cytometry 7 hr and 5 min post-conversion. Ratio of fractions of Dendra2-red cells at 7 hr and 5 min (n\u00a0=\u00a02) independent experiments. Bars represent mean \u00b1 SEM in all graphs.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Evaluation of DNA integrity of isolated metastatic cells. Immunostaining for \u03b3-H2AX staining intensity (MFI, mean fluorescence intensity) in tumor cells at 24 hr post-isolation (n\u00a0=\u00a02). (B) Comparison of colony formation ex vivo of photoconverted and non-converted cells derived from macrometastases or primary tumors 6 days post-seeding (n\u00a0=\u00a02 independent experiments and six technical replicates for each group). A colony was defined as a cell cluster\u00a0>\u00a010 cells.\n\n## Results\n\n### Photoconversion-based isolation of size-specific metastatic colonies\n\nPhotoconvertible proteins comprise a class of fluorescent proteins whose emission switches from green to red upon exposure to blue light. For these studies, we used a version of the photoconvertible protein Dendra2 fused to H2B (H2B\u2013Dendra2). As shown in Figure 1\u2014figure supplement 1A,\u00a0exposure of H2B\u2013Dendra2-expressing pancreatic tumor cells (5074 cell line) to a mercury lamp-generated violet light (400\u2013450 nm) for 30 s efficiently marks all cells within the field of view (FOV). Next, we engineered a highly metastatic pancreatic cancer cell line (6419 c5) to express H2B\u2013Dendra2. Use of a clonal cell line was chosen to minimize genetic-based contribution to metastatic heterogeneity (Hunter et al., 2018). To generate metastasis, 104\u00a06419c5\u2013H2B\u2013Dendra2 cells were injected into the pancreas of immune competent C57BL/6 mice, and tumors were allowed to grow for 3\u20135 weeks, at which point livers were examined under a standard widefield microscope.\n\nImaging revealed metastatic foci of various sizes, ranging from solitary tumor cells to micrometastases and larger macrometastases (Figure 1B, left). Importantly, strong nuclear fluorescence in all tumor cells enabled easy detection of metastatic foci of a particular size even with a low magnification 4\u00d7 objective, allowing for rapid identification of regions of interest. To test whether region-specific photoconversion could be achieved using a widefield microscope in unsectioned, intact tissue specimens, we confined the FOV using the field-stop element (Figure 1B, \u2018Preconversion\u2019) and exposed cells to 400\u2013450 nm light (Figure 1B, \u2018Photoconversion\u2019). Exposure for\u00a0<5 s (40\u00d7 objective, N.A.\u00a0=\u00a00.75) led to a robust induction of red fluorescence in all cancer cells within the boundaries of the limited FOV (Figure 1B, \u2018Postconversion\u2019). In a different FOV, using a 10\u00d7 objective, we rapidly photoconverted (15 s, N.A.\u00a0=\u00a00.4) hundreds of cancer cells within a macrometastasis (Figure 1\u2014figure supplement 1B). Spatial precision of labeling was achieved even when a low magnification objective was used, with a rapid drop-off of photoconversion outside the FOV boundary (Figure 1\u2014figure supplement 1C). Importantly, background red fluorescence in non-converted Dendra2\u2013H2B+ cells was low, indicating minimal spontaneous conversion in our experimental model (Figure 1B,D, top left). These results demonstrate that both small and large metastatic lesions can be efficiently photoconverted using a widefield microscope by adjusting the FOV, exposure time, and numerical aperture.\n\nWe next tested whether we could recover photoconversion-marked metastatic cells for flow cytometry-based applications. To maximize accessibility to metastatic foci, we dissected the liver into millimeter-sized fragments and photoconverted cells within each fragment separately (Figure 1C). Subsequently, each liver fragment was designated for photoconversion of microcolonies (\u00b5Col,\u00a0Figure 1C, top) or macrometastases (Figure 1C, middle). In parallel, cells in the primary tumor were also photoconverted (Figure 1C, bottom). This strategy allowed samples to remain chilled throughout the procedure, with exposure to ambient temperatures only during the photoconversion process itself (<6 min). Microcolonies were defined as collections of 10 or fewer metastatic cells, with the majority being one\u00a0or two\u00a0cells (Figure 1\u2014figure supplement 2A), while macrometastases were defined as lesions of\u00a0>400 \u00b5m in diameter. Following flow sorting, photoconverted cells derived from the different groups showed strong, comparable increases (~30-fold) in red fluorescence intensity (Figure 1D,\u00a0Figure 1\u2014figure supplement 2B). Although red fluorescence increased with longer exposure times, 5 s was sufficient to permit detection of photoconverted cells (Figure 1\u2014figure supplement 2C). These results indicate that tissue resident H2B\u2013Dendra2-expressing tumor cells can be readily detected by flow cytometry following brief photoconversion and tissue dissociation.\n\nBecause low throughput has been one of the key limitations impeding studies of microcolonies, we next sought to quantify the throughput of our method. To this end, we photoconverted 200\u2013400 microcolonies in each of 16 different isolation sessions (~2.5 hr per session) and determined the yield of photoconverted tumor cells by flow cytometry. Across these sessions, recovery of photoconverted microcolonies (Dendra-red+ cells detected by flow cytometry as a % of total photoconverted cells quantified by microscopy) averaged at 38% (Figure 1\u2014figure supplement 2D). Thus, a moderate output of 80\u2013170 cells can be acquired per hour using this experimental setup (Figure 1\u2014figure supplement 2E). Notably, we typically used less than 30% of the liver in our marking sessions; consequently, cell yield could potentially be improved with longer sessions, as there was minimal decay in the red signal up to 7 hr post-photoconversion (Figure 1\u2014figure supplement 2F). Cells remained viable after flow sorting, with a\u00a0~70% seeding efficiency measured 24 hr after plating (Figure 1E). Importantly, cells sorted following photoconversion showed no evidence of DNA damage (Figure 1\u2014figure supplement 3A) or impairment of colony formation (Figure 1\u2014figure supplement 3B). Overall, these results demonstrate robust acquisition of hundreds of live cells from size-defined metastatic foci within a practical timeframe.\n\nSingle-cell RNA sequencing of 361 metastatic and primary tumor cells via Cel-seq2 (Hashimshony et al., 2016) revealed expression of dendra2 and Krt19 but not markers of hepatocytes, endothelial cells, immune cells, and fibroblasts (Figure 1F), confirming the purity of the isolated cell populations. To further validate this RNA-seq expression analysis, we identified two genes \u2013 Clca3a1 and Bnip3 \u2013 whose expression was predicted to be significantly higher in macrometastases than microcolonies. We then confirmed this difference in expression by flow cytometry and immunostaining (Figure 1G\u2013J). Taken together, our findings suggest that PIC-IT enables efficient, pure isolation of size-defined metastatic colonies, thereby enabling discovery of genes whose expression differs in the two populations.\n\n### PIC-IT identifies enrichment for a pro-inflammatory phenotype in liver microcolonies\n\nIn various experimental settings, colonizing metastatic cells have been associated with physiological adaptations related to cellular state preceding dissemination (Fluegen et al., 2017) and/or the surrounding microenvironment (Linde et al., 2016; Milette et al., 2017). However, a systematic analysis of the phenotypic diversity of spontaneously arising microcolonies is currently lacking. We thus examined the transcriptional profiles of PIC-IT-extracted microcolonies and macrometases by Seurat clustering analysis (Stuart et al., 2019) and visualized their features by UMAP dimensional reduction (McInnes et al., 2018). At a global level, the distribution of microcolony- and macrometastatic-transcriptomes broadly overlapped (Figure 2A). UMAP further identified three clusters in microcolonies and macrometastases, annotated as proliferative, inflammatory, or hypoxic/stressed, suggesting that microcolonies are phenotypically diverse (Figure 2B, Figure 2\u2014figure supplement 1A). Notably, the inflammatory cluster, defined by elevated IFN-\u03b3 response and complement activity (Figure 2B,\u00a0Figure 2\u2014figure supplement 1B), was enriched in microcolonies compared to macrometastases (30% vs. 16%). In contrast, both the inflammatory and hypoxic clusters displayed decreased abundance of proliferation-related transcripts including CCNA2, TOP2A, CDK1, Ki-67, and PCNA (Figure 2\u2014figure supplement 1C), consistent with previous observations on growth arrest mediated by hypoxia in colonizing metastatic cells (Fluegen et al., 2017). Next, we conducted a differential gene analysis using EdgeR (Robinson et al., 2010), comparing the transcriptomes of 94 microcolonies to 111 macrometastatic cells. This revealed 500 genes that were more highly expressed in microcolonies and 366 genes that were more highly expressed in macrometastases (p<0.05, Figure 2C). Functional annotation of the microcolony-associated genes revealed a strong signal for TNF-\u03b1-related NF-\u03baB signaling and a prominent increase in inflammatory cytokine secretion (Figure 2D). Likewise, an IFN-\u03b3-response signature was enriched in microcolonies, consistent with a pattern of enriched inflammatory gene expression. Furthermore, transcription factor motif analysis (HOMER) revealed enrichment of pro-inflammatory DNA regulatory elements in microcolonies (Figure 2E). In addition to the known inflammation-related transcription factors NF-\u03baB, JUN/AP-1, and STAT, motif analysis also revealed enrichment of binding sites for MAFK, which has\u00a0recently been demonstrated to enhance the transcriptional response to NF-\u03baB (Hwang et al., 2013). In line with this enrichment of TNF-related NF-\u03baB signaling, 29 genes associated with the Hallmark \u2018TNF-\u03b1-signaling-via-NF-\u03baB\u2019 gene set were expressed at significantly higher levels in microcolonies compared to macrometastastic cells (Figure 2F,\u00a0Figure 2\u2014figure supplement 1D). Taken together, transcriptional profiling suggests that pancreatic microcolonies in the liver manifest a strong pro-inflammatory phenotype associated with increase in NF-\u03baB and AP-1 signaling.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig2-v2.jpg)\n\n**Figure 2.:** (A) Transcriptome distribution visualized by UMAP. (B) Distribution of metastatic cells for the different clusters functionally annotated by GSEA msGDMIB (p<0.05, 200 highest fold-change genes). On the right, proportions of clusters in microcolonies and macrometastases. (C) Volcano plot of differentially expressed genes in microcolonies and large metastasis derived from differential gene analysis (EdgeR). (D) Functional annotation of genes upregulated in macrometastasis. GSEA msGDMIB for Hallmark and canonical pathways (p<0.05, 200 highest fold-change genes). (E) Motif analysis of potential transcriptional regulator using HOMER with \u22121000 bp to +300 bp as scanning region and p<0.05, 200 highest fold-change genes as input (showing known\u00a0results with p<0.01).\u00a0(F) Fold-change increase (microcolonies vs. macrometastases) in differentially expressed genes (p<0.05) associated with Hallmark TNF-\u03b1-signaling-via-NF-\u03baB signaling category derived from GSEA msGDMIB analysis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Microcolony and macrometastasis clustering visualized by UMAP. (B) Functional annotation for Hallmark and canonical pathways via GSEA msGDMIB (p<0.05, 200 highest fold-change genes in each cluster). (C) UMAP plots displaying transcript abundance of proliferation markers in Seurat-stratified clusters of microcolonies. (D) Abundance of transcripts in RNA-seq for transcriptional targets of NF-\u03baB significantly upregulated in microcolonies. (N\u00b5Col\u00a0=\u00a094, Nmacro\u00a0=\u00a0110). p-values were calculated by unpaired two-tailed Student\u2019s t-test.\n\n### Microcolonies exhibit reduced propensity to proliferate\n\nWe next turned our attention to the genes with low expression in microcolonies relative to macrometastases. Intriguingly, functional annotation indicated enrichment for cell cycle and cholesterol biosynthesis pathways in the macrometastases (Figure 3A), with elevated expression of a number of mitosis\u00a0regulators such as Nek2 (Fry et al., 2012), Sapcd2 (Xu et al., 2007), and Ttk (Dominguez-Brauer et al., 2015,\u00a0Figure 3B). Consistent with this, microcolonies exhibited higher expression of negative regulators of cell cycle progression including Ceacam1 (Sappino et al., 2012), Stard13 (Jaafar et al., 2020), and Mir22hg (Xu et al., 2020,\u00a0Figure 3B), predicting an overall hypo-proliferative state for microcolonies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig3-v2.jpg)\n\n**Figure 3.:** (A) Functional annotation of genes downregulated in microcolonies/higher in macrometastases. GSEA msGDMIB for Hallmark and canonical pathways (p<0.05, 200 highest fold-change genes). (B) Abundance of transcripts in RNA-seq for genes associated with cell cycle arrest (Top) and positive regulation of mitosis (Bottom). (N\u00b5Col\u00a0=\u00a094, Nmacro\u00a0=\u00a0111). Fraction of Ki-67-positive cells (C) and phosphorylated-histone H3-positive cells (D) in microcolonies and macrometastases as determined by immunostaining (n\u00a0=\u00a05 samples per group). (E) Representative confocal images of microcolonies and macrometastases from livers of 6419 c5 mice stained with anti-phospho-Rb (pRB; Ser807/811). Scale bar\u00a0=\u00a050 \u00b5m. (F) Fraction of pRB+ microcolonies and macrometastases, and (G) RB phosphorylation levels in pRB-positive cells normalized to average MFI in each mouse (n\u00a0=\u00a05 samples per group). (H) Fraction of p21+ cells in microcolonies and macrometastases as determined by immunostaining (n\u00a0=\u00a05 samples per group). (I) Schematic for ex vivo proliferation assay. Microcolonies and macrometastases are extracted via PIC-IT, seeded at 45 cells/96\u00a0wells and colony growth is monitored via microscopy over 72 hr. (J) Colony size distribution of metastatic cells over the first 72 hr after isolation. Left panel, colonies derived from microcolonies. Right panel, colonies derived from macrometastases (n\u00a0=\u00a03 independent experiments). (K) Fraction of isolated metastatic cells residing as solitary cells at 24, 48 and 72 hr post-isolation (n\u00a0=\u00a03 independent experiments). Bars represent mean \u00b1 SEM in all graphs. p-values were calculated by unpaired two-tailed Student\u2019s t-test.\n\nTo determine the proliferative state of the cells, we profiled microcolonies and macrometastases for expression of cell cycle markers by immunofluorescence. Ki-67 immunostaining revealed no measurable difference in the percentage of positive cells in microcolonies vs. macrometastases (Figure 3C), consistent with our previously reported findings (Aiello et al., 2016). However, the frequency of phosphorylated-histone H3-positive cells was lower in microcolonies (Figure 3D), suggesting fewer mitotic events. Examination of cell cycle suppressors indicated comparable frequencies of pRB-positive cells across metastatic stages (Figure 3E,F). However, expression levels of pRB were consistently higher in macrometastatic cells, indicating higher propensity for cell cycle progression in these cells (Figure 3G). Additional staining revealed a trend toward higher prevalence of p21 in microcolonies (Figure 3H). Taken together, these findings suggest that the cycling fractions are similar in microcolonies in macrometastatic cells, but rate of transit through the cell cycle may be slower in microcolonies.\n\nWe hypothesized that cells in larger metastatic lesions may be inherently \u2018poised\u2019 to proliferate more readily than those in smaller metastatic lesions, a difference that can be challenging to test in vivo. We therefore exploited PIC-IT\u2019s capacity to isolate live cells and functionally measured the proliferative potential of the different metastatic groups. Specifically, microcolony- and macrometastasis-derived cells were extracted from mice bearing 6419c5-H2B-Dendra2 tumors, seeded at a density of 45 cells/well, and monitored daily for colony growth (Figure 3I). While cells derived from microcolonies and macrometastases expanded to a similar extent after 24 hr, colonies derived from macrometastases were larger at 48 hr and 72 hr (Figure 3J,K). These results support our molecular profiling results and suggest that macrometastatic cells are primed for cell division (or, conversely, that microcolonies are primed for cell cycle arrest).\n\n### Microcolonies require NF-\u03baB /AP-1 signaling\n\nWe previously reported that solitary pancreatic tumor cells exhibit resistance to standard-of-care chemotherapy (gemcitabine + nab-paclitaxel) in autochthonous KPCY mice (Aiello et al., 2016). Consequently, we sought to identify vulnerabilities that might be specific to tumor cells in the earliest stages of colonization. As our profiling experiments indicated enrichment of a pro-survival inflammatory response in microcolonies, we hypothesized that this pathway \u2013 driven by NF-\u03baB and/or AP-1 \u2013 might be important for the persistence of these cells in vivo. First, we performed NF-\u03baB-p65 staining in the 6419 c5 implanted cell line model and the KPCY autochthonous model. These two models confirmed that microcolonies exhibit higher levels of nuclear NF-\u03baB-p65 compared to macrometastases (Figure 4A,B). In addition, and as suggested from our motif analysis, phospho-c-Jun-positive cells were more prevalent in microcolonies than in\u00a0macrometastases in both models (Figure 4\u2014figure supplement 1A,B). Expression of NF-\u03baB-p65, and to a lesser degree phospho-c-Jun, was also enhanced in microcolonies of KPCY mice lacking overt metastatic disease (Figure 4\u2014figure supplement 1B,C), suggesting that the pro-inflammatory phenotype does not depend on the presence of large metastases. These findings suggest that the enhanced inflammatory signatures identified through PIC-IT-enabled RNA sequencing reflect true signaling differences in small and large metastases.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative confocal images of microcolonies and macrometastases from livers of KPCY mice stained with NF-\u03baB (red) and YFP (green) antibodies. Scale Bar\u00a0=\u00a050 \u00b5m. On the bottom, higher magnification inset showing nuclear signal of NF-\u03baB in 1 \u00b5m z-section, with NF-\u03baB (red) and DAPI (blue). Scale bar\u00a0=\u00a05 \u00b5m. (B) Quantification of mean nuclear intensity of NF-\u03baB in microcolonies and macrometastases of orthotopic 6419c5-YFP (top) and KPCY mice (bottom). Each dot represents one animal. (C) Experimental scheme for targeting NF-\u03baB /AP-1 in established tumors with triptolide (TPL). (D\u2013G) Quantification of metastatic colonies in livers of TPL- and vehicle-treated mice. (D) Percentage area of liver occupied by macrometastases. (E) Absolute number of microcolonies per unit area in liver sections. (F) Ratio of microcolony frequency to macrometastatic area. (G) Ratio of metastatic single-cell frequency to macrometastatic area. (For D\u2013G, n\u00a0=\u00a06 animals per group, 10 liver sections sampled for each animal.) Bars represent mean \u00b1 SEM in all graphs. p-values were calculated by unpaired two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63270/elife-63270-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative confocal images of microcolonies and macrometastases from livers of KPCY mice stained with phosphorylated c-Jun (red) and YFP (green) antibodies. Scale bar\u00a0=\u00a050 \u00b5m. On the bottom, individual channels. (B) Fraction of Ser73-phosphorylated c-Jun-positive cells in microcolonies and macrometastases of orthotopic 6419c5-YFP (top) and KPCY mice (Bottom). (n\u00a0=\u00a03 animals per group). Early \u00b5Col denotes early microcolonies (microcolonies in KPCY mice that did not harbor macrometastases). (C) Comparison of mean nuclear intensity of NF-kB between microcolonies, macrometastases, and early microcolonies. Bars represent mean \u00b1 SEM in all graphs. p-values were calculated by unpaired two-tailed Student\u2019s t-test. One-way ANOVA was used for comparison of multiple groups with Tukey\u2019s test for multiple comparisons.\n\nTo functionally test whether this pro-inflammatory response is required for microcolony viability, we tested the activity of triptolide (TPL), a potent anti-inflammatory agent that inhibits both pathways (Yuan et al., 2019). We inoculated 6419c5-YFP cells into the pancreas and allowed implants to grow for 21 days (Figure 4C), a time point at which\u00a0>95% of mice develop macrometastases (data not shown). Animals were then randomized to receive either triptolide (0.2 mg/kg) or vehicle by intraperitoneal injection (7\u00a0d) followed by quantification of microcolonies and macrometastases by immunohistology (Figure 4C). Although the total liver area occupied by metastases (dominated by macrometastases) was similar in the two treatment groups (Figure 4D), triptolide treatment led to a significant reduction in the relative frequency of microcolonies (Figure 4E) and the ratio of microcolonies or single-metastatic cells to macrometastases (Figure 4F,G). These results are in line with a recent report highlighting the potential of neoadjuvant treatment with NF-kB-targeting therapy in PDAC (Saito et al., 2019) and suggest that microcolonies are more susceptible to inhibition of inflammatory signaling than macrometastases.\n\n## Discussion\n\nStudying the occult fraction of metastatic disease is challenging due to the rarity of cells comprising micrometastatic lesions and a lack of efficient tools to isolate and study them. PIC-IT overcomes these challenges and permits the isolation and systematic characterization of cells comprising both large and small metastatic lesions. Our experiments reveal that microcolonies are a diverse cell population enriched with cells manifesting a pro-inflammatory response. Our findings further highlight a specific role for NF-\u03baB/AP-1-regulated inflammatory pathways in microcolonies not shared by the majority of metastatic cells (macrometastases), demonstrating the utility of our approach in identifying susceptibilities of a micro-fraction of the metastatic population that drives disease recurrence and mortality. Inflammation plays a key role in tumor initiation and progression in PDAC and has also been implicated in metastasis formation (Stone and Beatty, 2019). Non-uniform NF-kB signaling across the metastatic spectrum in our study is somewhat surprising and could potentially reflect altered levels of TNF-\u03b1 in the microenvironment of a growing metastasis (Milette et al., 2017) or a pre-existing \u2018NF-kB\u2019 activity associated with tumor dissemination. Of note, this latter possibility is hinted at by marked upregulation of TNF-\u03b1-NF-kB signaling in PDAC CTCs (Ting et al., 2014). Nonetheless, as isolated microcolonies may originate in either primary tumor or metastasis, it remains to be determined whether the pro-inflammatory profile reflects the pre-metastatic state of the \u2018seed\u2019 or an acquired adaptation to the \u2018soil\u2019.\n\nOur study also indicated differences in proliferation propensity between tumor cells of microcolonies and macrometastases. Transcriptional profiles and immunohistochemistry profiling together with direct measurement of proliferation capacity ex vivo enabled by PIC-IT, suggested that macrometastases are more \u2018poised\u2019 for proliferation compared to microcolonies. Comparable rates of Ki-67 and pRB staining suggest that microcolonies and macrometastatic cells do not differ in their commitment for cell cycle entry. Rather, as implicated by their characteristically lower pRB phosphorylation levels and phospho-histone H3+ fractions, cells in microcolonies are less committed to cell cycle progression and mitosis. Although the mechanism underlying reduced pRB phosphorylation and hypo-proliferative state in microcolonies is unclear, a recent study demonstrated that TNF-\u03b1-mediated NF-kB signaling can specifically attenuate cell cycle transition through the G1/S boundary (Ankers et al., 2016).\n\nWhile the current study used PIC-IT to isolate cells at different stages of metastasis, the method has many potential applications. For example, it could be used to isolate cells in different \u2018niches\u2019 of the tumor microenvironment (e.g. cells in well perfused vs. poorly perfused regions), thus paving the way for testing functional features such as proliferation, migration, metabolic characteristics, and drug resistance in heterogeneous tumor cell populations. As our identification of CLCA1 shows, the technique can be used to identify protein markers \u2013 particularly those residing on the cell surface \u2013 with which to prospectively isolate cells of interest by flow cytometry. Finally, the technique is particularly well suited to the isolation of spatially\u00a0defined rare cells \u2013 such as stem cells \u2013 in malignant and benign conditions.\n\n## Materials and methods\n\n### Cell culture\n\nPancreatic tumor cells were isolated from late-stage primary tumors from C57BL/6 background KPCY mice and generated by limiting dilution as described (Li et al., 2018). All mouse pancreatic tumor cell clones were tested by the Research Animal Diagnostic Laboratory (RADIL) at the University of Missouri, using the Infectious Microbe PCR Amplification Test (IMPACT) II. Tumor cells were cultured in Dulbecco\u2019s modified Eagle\u2019s medium\u00a0(DMEM) (high glucose without sodium pyruvate) with 10% fetal bovine serum\u00a0(FBS) (Gibco) and glutamine (2 mM). The clones were regularly tested using the MycoAlert Mycoplasma Detection Kit (Lonza).\n\n### Genetic modification of tumor cells\n\n6419c5-YFP cells were transduced with a sgRNA targeting endogenous YFP to remove its expression (sgRNA sequence: GGGCGAGGAGCTGTTCACCG). Subsequentially, 6419 c5 and 5074 cells were transduced with a lentiviral expression vector of h2b-dendra2 (Addgene #51005). Single-cell clones expressing Dendra2-H2B were derived by FACS sorting.\n\n### Animals\n\nWild-type C57BL/6 were purchased from The Jackson Laboratory and/or bred at the University of Pennsylvania. For tumor-bearing mice, end\u00a0point criteria included severe cachexia, weakness, and inactivity.\n\n### Orthotopic implantation of tumor cells\n\nTumor cells were dissociated into single cells with 0.25% trypsin (Gibco), washed with serum-free DMEM twice, and counted in preparation for orthotopic implantations. Three thousand to 10,000 tumor cells were implanted orthotopically into 6\u20138 week old female or male C57BL/6 mice. Tumors were harvested 3\u20135 weeks following implantation.\n\n### Triptolide treatment\n\nTen\u00a0thousand\u00a06419c5-YFP tumor cells were implanted orthotopically, and tumors were allowed to grow for 3 weeks. Mice were randomized into two groups and injected intraperitoneally with either 0.2 mg/kg triptolide (HY-32735, Medchem Express) or vehicle (10% DMSO, 40% PEG300, 5% Tween-80, 45% saline) for seven consecutive days. Livers were sectioned, and microcolony frequency represents 10 sections per mouse. Macrometastatic area and total liver area were measured using imageJ.\n\n### PIC-IT\n\nTumor-bearing mice were sacrificed, and livers or tumors were removed and fragmented using scissors to small pieces (~2\u20135 mm in diameter) and kept in flow buffer (HBSS) on ice. Fragments were further flattened and mounted on top of a Petri dish, covered with a drop of flow buffer (HBSS, 2.5 mM HEPES 5% FBS, 2 mM glutamine, 1% penicillin/streptomycin, 1% non-essential amino acids, 0.5%fungizone, 0.3%\u00a0glucose, 20 mM MgCl2, 1 mM\u00a0sodium pyruvate) and examined under a BX60 Olympus upright microscope using a \u00d710 objective unless otherwise specified. Metastasis were identified, and FOV was confined around metastatic foci of choice using the field-stop element. Cells were then photoconverted by illumination with a wavelength of 400\u2013450 nm using mercury lamp and a 451/106 nm BrightLine Full Spectrum Blocking single-band bandpass filter (FF01-451/106-25, Avro Inc), and red fluorescence was confirmed. Photoconverted specimen of each metastatic group was pooled and transferred to a C-column (130-093-237, Miltentyi Biotech) and digested by incubation with 2 mg/ml collagenase IV+DNase I (Sigma) in DMEM using the mLIDK program of a gentleMACS (Miltentyi Biotech). Cells were mashed on 100 \u00b5m MESH strainer, pelleted, and dissociated to single cells using Accutase (07922, Stemcell Technologies) for 5\u2032\u00a0and countered, pelleted,\u00a0and incubated for 3\u2032 with ACK lysis buffer\u00a0(10-548E, Lonza) to remove red blood cells. Pelleted cells were resuspended with flow buffer containing 1 \u00b5g/ml DAPI +\u00a0DNase I, incubated for 5\u2032 in 37\u00b0C, filtered through 100 \u00b5m mesh strainer, and either analyzed by LSR-II or sorted using a FACSaria. Isolation experiments represent independent experiments performed on different days.\n\n### Spatial analysis\n\nFor spatial analysis, primary tumors were processed through a VT1200S vibratome (Leica Biosystems) to 200 \u00b5m slices. One maximally confined FOV of \u00d710 objective was photoconverted per slice, and Z-stacks were acquired by a LEICA TCS SP8 microscope. Sum intensity projections from each sample were analyzed by ImageJ using the radial profile plugin.\n\n### Flow cytometry and cell sorting\n\nFor flow cytometric analyses, dissociated livers were stained with Armenian hamster anti-CLCA1 1:5 (10.1.1, Iowa Hybridoma bank) for 25\u2032 following ACK lysis. Samples were then washed and stained with an APC-conjugated secondary antibody and PE-Cy7-CD45 antibody (103114, Biolegend) and then analyzed by flow cytometry using BD FACS LSR-II (BD Biosciences) and analyzed FlowJo software (Treestar).\n\nFor cell sorting, digested organs were sorted into 96\u00a0wells prepped for cel-seq2 or 96-well culture dishes for re-culturing experiments using FACSariaII equipped with a green laser through a 100 \u00b5m nozzle. Isolation experiments represent three experiments performed on different days.\n\n### Cel-seq2 profiling\n\nLibrary preparation was performed by adhering to the developer\u2019s protocol using the original barcodes described (Hashimshony et al., 2016\u00a0in\u00a0Genome Biology). Libraries were quantified using qubit (ThermoFisher), and library fragmentation was assessed via tapestation (Agilent). Libraries were prepared for sequencing using Illumina 75 cycles high output kit v2.0 (20024096, Illumna) and sequenced on a NextSeq 500/550 with 26 bases on read\u00a01 (R1), 8 bases for the Illumna index, and 41 bases for read 2 (R2).\n\n### Immunofluorescent and immunohistochemistry staining\n\nFor immunostaining, tissues were fixed in Zn-formalin for 24 hr and embedded in paraffin. Sections were deparaffinized, rehydrated, and prepared by antigen retrieval for 6 min each, and then blocked in 5% donkey serum for 1 hr at room temperature, incubated with either Rabbit anti-BNIP3 antibody at 1:100 (A5683, Abclonal), Rabbit anti-NF-kB-p65 1:400 (8242S, Cell Signaling Technology), Rabbit anti-Phospho-c-jun 1:200 (3270S, Cell Signaling Technology), Rat anti-ki67 1:100 (14-5698-82, ebiosciences), Rabbit anti-pRB-Ser807/811 1:400 (8516, Cell Signaling Technology), anti-p21 1:1000 (ZRB1141, Sigma), Rat anti-Phospho H3 1:1000 (H9908, Sigma), or Goat anti-GFP (ab6673, Abcam) at 1:250 overnight at 4\u00b0C, washed, incubated with secondary antibody AF594-anti-rabbit (A-21207, Invitrogen), Alexa594 anti-rat (A-21209, Invitrogen), and Alexa488 anti-goat (11055, Invitrogen) antibodies at 1:200 for 1 hr at room temperature, counterstained with DAPI, washed, and mounted. Slides were visualized and imaged using an Olympus IX71 inverted multicolor fluorescent microscope and a DP71 camera using \u00d7400 magnification. MFI was calculated by measuring average intensity over a fixed threshold for all images. NF-kB staining was imaged via Zeiss LSM880 confocal microscope using \u00d763 oil-immersion objective, and intensity was measured on 0.8 \u00b5m z-sections.\n\n### Computational analysis\n\nFastq files were generated from bcl files using bcl2fastq tool from illumina. Reads were then trimmed to 12 bp for forward sequencing (R1) and 36 bp for reverse sequencing (R2), using cutadapt software (https://cutadapt.readthedocs.io/en/stable/). Trimmed reads were first debarcoded using UMI_tools with \u2018extract\u2019 function and default settings (https://github.com/CGATOxford/UMI-tools)\u00a0and then aligned to mm10 genome using STAR (https://github.com/alexdobin/STAR). Aligned reads were counted using featureCounts (http://subread.sourceforge.net) and output as bam files. Generated bam files were then sorted and indexed using samtools. Molecules were counted using UMI_tools with \u2018count\u2019 function and default settings to generate UMI tables. The merged UMI table was subsequently imported into R-studio (R version 3.3.3) and used as input for edgeR analysis to assess differentially expressed genes. Samples with more than 5,000 UMI were used for differential gene expression analysis. Differentially expressed genes were also used as input file for online GSEA following provided instruction. Detailed Scripts and parameters used for each steps of analysis could be provided by reasonable request to the authors. Gene signatures were extracted by performing edgeR analysis.\n\nFor visualization of the single cell RNA-seq results, we used the Seurat package. We performed SCT transformation for data normalization and integration. We then performed linear dimensional reduction using PCA, followed by clustering using K-nearest-neighbor graph-based clustering and Louvain modularity optimization (with dimensions\u00a0=\u00a01:15 and resolution\u00a0=\u00a01), and non-linear dimensional reduction using UMAP method. Markers for each identified clusters were generated using Seurat with default settings and used as input for function pathway analysis, including online GSEA using the molecular signatures database.\n\nFor motif analysis, top differentially expressed genes were used as input for HOMER (\u22121000 bp to +300 bp as scanning region) for identification of motifs of potential transcriptional regulators.\n\n### Ex vivo culture assay and colony formation\n\nSorted tumor cells were seeded at a density of 45 cells per 96\u00a0wells on growth factor-reduced Matrigel (BD) and allowed to grow for up to 6 days under standard culture conditions (see Cell culture). Retention was estimated 24 hr post-seeding. For colony size quantifications, cultures were evaluated daily, and the number of cells was manually counted per colony. Isolation experiments represent three experiments performed on different days.\n\n### Software and statistical analysis\n\nPRISM software and R were used for data processing, statistical analysis, and result visualization (http://www.graphpad.com). The R language and environment for graphics (https://www.r-project.org) was used in this study for the bioinformatics analysis RNA-seq. The R packages used for all analyses described in this manuscript were from the Bioconductor and CRAN. Statistical comparisons between two groups were performed using Student\u2019s unpaired t-test. For comparisons between multiple groups, one-way ANOVA with Tukey\u2019s HSD post-test was used. On graphs, bars represent either range or standard error of mean (SEM), as indicated in legends. For all figures, p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "3844b1ac-4807-4e29-b7b8-104b2557c9f7",
+      "submission_id": "6bb2696f-c43b-436c-b12d-d22be4b47f6b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- C Daniela Robles-Espinoza, International Laboratory for Human Genome Research Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63270.sa1](https://doi.org/10.7554/eLife.63270.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this short report, Sela, Li and collaborators describe an innovative methodology to track and isolate metastatic cells, be them single (which they call microcolonies) or within macrometastasis, after injection into an in vivo model. The method consists in the use of a photoconvertible protein which changes emission from green to red when put under blue light. The authors then use their method to describe the biological characteristics of microcolonies and macrometastasis in a murine pancreatic cancer model. This methodology is elegant and has high potential to be adopted by the scientific community due to its easiness and accessibility.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Dissecting phenotypic transitions in metastatic disease via photoconversion-based isolation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including C Daniela Robles-Espinoza as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard White as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Patricia A Possik (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nIn this short report, Sela, Li and collaborators describe an innovative methodology that uses photoconversion of H2B-Dendra2, selective tissue processing and FACS to compare solitary disseminated tumor cells (DTCs) and macrometastasis (mainly) in a model of pancreatic cancer (PanC) metastasis to the liver. The reviewers agree that the manuscript is interesting and the work presented is generally sound. However, there are a number of issues that they have raised that would need to be addressed before it can be published. If the suggested experiments cannot be performed at this stage, then the conclusions and interpretation would need to be adjusted to address these comments.\n\nMajor points\n\n(1) The authors isolate disseminated tumor cells (DTC) and metastasis from tissues where these cells co-exist. It is assumed but not proven that the solitary DTCs came there from the pancreas and remained solitary while others grew out to form the profiled metastasis. However, the profiled DTCs could have separated from the neighboring metastasis large or small. PanC cells can be quite motile as shown by the senior author before and can move long distances (Nature. 2018 Sep;561(7722):201-205.). Further, a caveat for the interpretation of the profiles is that the presence of large metastasis may already alter the micro-environment explaining why the Seurat analysis cannot separate solitary and met populations \u2013 it is highly unusual that DTCs and metastasis do not differ in some PCA analysis. Without an exclusive solitary DTC state analysis the true nature of the DTCs may not be accurately resolved.\n\nTo solve the above issue, the authors should perform two controls: (1) take advantage from the label retaining utility of Dendra2 or H2B-Dendra 2 (some papers are cited where this advantage was utilized) and photoconvert the cells in primary lesion. Then they could track and isolate red and green DTCs and later only green clusters and profile those using the same methods. (2) Option 1 is the best as it uses fate mapping reporting on quiescence and proliferation. But an alternative option is that the authors excise livers earlier and photoconvert solitary DTCs when there are still no metastasis. This would be very informative to distinguish the profiles of solitary DTCs in the context of low burden and more homeostatic liver vs. a high burden disease liver. If there are no differences between the DTCs then the isolation of stage IV-like DTCs becomes useful to profile those even in patients. But if there are differences then it may reveal how an earlier stage liver differs in the DTC populations from a late progression liver, information that would be very useful. Such analysis would enhance the paper as it remains limited in mechanism identification and strength of the data and phenotypes described.\n\n(2) About the proliferative phenotype attributed to DTCs. Although single cell analysis suggests a non-proliferative phenotype for DTCs, no difference is observed in Ki67 staining. Then the authors show that isolated cells proliferate at different rates depending on their origin: DTCs were slower in increasing the number of cells in their colonies compared to cells isolated from metastatic colonies. On this single experiment, DTCs exhibit reduced propensity to proliferate, which for the authors was sufficient to suggest that these cells may be primed for cell cycle arrest. This conclusion needs more supporting information since no other marker of cell cycle arrest is observed. The authors see an increase cell cycle signatures in macrometastasis, but no evidence of cell cycle arrest, whether in gene signatures or cell culture experiments, is shown. What about phospho-histone 3 or P-Rb (by IF) or p27, p21, p16, p57 (IF or qPCR)? The re-culturing, while a nice assay, really shows no striking differences. There is a short lag difference that could be explained by adaptation or resolving DNA damage or alterations in the actin cytoskeleton as hinted from the ceacam and stard13 upregulation. The genes shown in Figure 3 are interesting but not classical negative regulators of growth.\n\n(3) Application of DTC and macrometastasis scores to TCGA data and survival. This is an unusual comparison. The primary tumor is already a growing proliferative mass with a strong stromal component in a different microenvironment. The comparison reveals probably only proliferation in the pancreas or in overt metastasis, which appears to be true as the curves only separate in the first 20 months arguing that the authors are looking at effects on growth regardless of the DTC or macro-metastasis state. Perhaps metastasis free proportion over time should be tested but more importantly the signatures from the requested experiments should be tested. Is there RNAseq from metastasis available to explore these mechanisms? One would assume that the profiles of the DTCs may not appear there but the macro-metastasis would?\n\nRegarding the survival analyses: Were these controlled for other patient characteristics? How do the authors explain that enrichment of DTC-associated genes predicts poor survival in patients as opposed to those genes enriched in macromets? One may think the alternative is more likely. This seems to agree with the finding that DTCs seem to have an hypoproliferative phenotype compared to macromets \u2013 so how do they influence survival?\n\n(4) Figure 4: This experiment is negatively affected by the same issues as in Point 1. The DTCs could be derived from the metastasis and not really true originally arrived DTCs. This experiment would be more impactful showing that H2B-dendra photoconverted cells from the primary site are eliminated by Abs to the chemokines or knock-down of its receptors. This would be useful and one could imagine how patients with PCa may receive prophylactic treatments to reduce DTCs based on unique biology. In stage IV disease it is probably meaningless unless some drug causes massive reduction in overt metastatic disease.\n",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75a8d073-6215-4a0a-ba0a-2c49bfe6fd3a",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C1",
+      "claim": "Cancer patients often harbor occult metastases, a potential source of relapse that is targetable only through systemic therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer patients often harbor occult metastases, a potential source of relapse that is targetable only through systemic therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f15ea6ff-561e-455b-b39e-3cf41c6da84a",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C2",
+      "claim": "Studies of occult metastases have been limited by a lack of tools with which to isolate discrete cells on spatial grounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of this occult fraction have been limited by a lack of tools with which to isolate discrete cells on spatial grounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of the field and is supported by the context of existing methodological limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "a5f8657e-944b-4598-bd46-b6b119c6af46",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C3",
+      "claim": "PIC-IT is a photoconversion-based isolation technique allowing efficient recovery of cell clusters of any size.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed PIC-IT, a photoconversion-based isolation technique allowing efficient recovery of cell clusters of any size \u2013 including single-metastatic cells \u2013 which are largely inaccessible otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented throughout the manuscript demonstrating the technique's capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b9c9ea21-385f-48a1-8572-646ac784bf70",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C4",
+      "claim": "PIC-IT enables recovery of single-metastatic cells which are largely inaccessible otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed PIC-IT, a photoconversion-based isolation technique allowing efficient recovery of cell clusters of any size \u2013 including single-metastatic cells \u2013 which are largely inaccessible otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing isolation of microcolonies of 1-10 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b0edae72-0bd3-4045-8b56-e3a326952839",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C5",
+      "claim": "Transcriptional profiling of spontaneously arising microcolonies in a murine pancreatic cancer model revealed phenotypic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a murine pancreatic cancer model, transcriptional profiling of spontaneously arising microcolonies revealed phenotypic heterogeneity, functionally reduced propensity to proliferate and enrichment for an inflammatory-response phenotype associated with NF-\u03baB/AP-1 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data and UMAP clustering analysis showing multiple distinct clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "18dc972e-de7a-47a4-a096-860067227277",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C6",
+      "claim": "Microcolonies have functionally reduced propensity to proliferate compared to macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "In a murine pancreatic cancer model, transcriptional profiling of spontaneously arising microcolonies revealed phenotypic heterogeneity, functionally reduced propensity to proliferate and enrichment for an inflammatory-response phenotype associated with NF-\u03baB/AP-1 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ex vivo proliferation assays, immunostaining for cell cycle markers, and transcriptional profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "657cd6e3-2a70-41b3-a1c8-3351a99f2327",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C7",
+      "claim": "Microcolonies show enrichment for an inflammatory-response phenotype associated with NF-\u03baB/AP-1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In a murine pancreatic cancer model, transcriptional profiling of spontaneously arising microcolonies revealed phenotypic heterogeneity, functionally reduced propensity to proliferate and enrichment for an inflammatory-response phenotype associated with NF-\u03baB/AP-1 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing enrichment of TNF-\u03b1-NF-\u03baB signaling genes, motif analysis, and immunostaining for NF-\u03baB-p65 and phospho-c-Jun.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "a96b7b76-ba42-4e9e-86b0-0466cebd0edb",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C8",
+      "claim": "Pharmacological inhibition of NF-\u03baB depleted microcolonies but had no effect on macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of NF-\u03baB depleted microcolonies but had no effect on macrometastases, suggesting microcolonies are particularly dependent on this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from triptolide treatment experiments showing differential effects on microcolonies versus macrometastases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "53a31774-73fa-455c-b1ac-da026787083d",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C9",
+      "claim": "Microcolonies are particularly dependent on the NF-\u03baB pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of NF-\u03baB depleted microcolonies but had no effect on macrometastases, suggesting microcolonies are particularly dependent on this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential response to NF-\u03baB inhibition between microcolonies and macrometastases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "093a07be-4cdb-4ac4-b60f-cc95328ee4ee",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C10",
+      "claim": "Metastasis is the primary cause of cancer-associated mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Metastasis is the primary cause of cancer-associated mortality and remains a significant therapeutic challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b970d2f4-4de2-42fd-aecc-ac7a6e28d860",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C11",
+      "claim": "Metastasis remains a significant therapeutic challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Metastasis is the primary cause of cancer-associated mortality and remains a significant therapeutic challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the current state of cancer treatment and is widely accepted in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "723c22f9-8d98-4de5-a56c-d8850bbe121f",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C12",
+      "claim": "A considerable fraction of metastasis is occult.",
+      "claim_type": "EXPLICIT",
+      "source": "A considerable fraction of metastasis is occult (Haeno et al., 2012; Vanharanta and Massagu\u00e9, 2013) and thus serves a potential source for residual disease and recurrence (Sosa et al., 2014; Tohme et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "55721b71-d9d9-4948-9ca5-96eb3fdcd93c",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C13",
+      "claim": "Occult metastasis serves as a potential source for residual disease and recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "A considerable fraction of metastasis is occult (Haeno et al., 2012; Vanharanta and Massagu\u00e9, 2013) and thus serves a potential source for residual disease and recurrence (Sosa et al., 2014; Tohme et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "ea8bb62f-4602-4ee1-9646-b5a939d34d75",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C14",
+      "claim": "Fluorescent reporters allow detection of metastatic colonies in pre-clinical models.",
+      "claim_type": "EXPLICIT",
+      "source": "While fluorescent reporters allow detection of metastatic colonies in pre-clinical models (Aiello et al., 2016; Fluegen et al., 2017), an inability to recover pure micron-scale colonies has precluded systematic phenotypic analysis of early-stage metastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies using fluorescent reporters.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5db240ae-b591-46fd-93b9-c64352528356",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C15",
+      "claim": "An inability to recover pure micron-scale colonies has precluded systematic phenotypic analysis of early-stage metastases.",
+      "claim_type": "EXPLICIT",
+      "source": "While fluorescent reporters allow detection of metastatic colonies in pre-clinical models (Aiello et al., 2016; Fluegen et al., 2017), an inability to recover pure micron-scale colonies has precluded systematic phenotypic analysis of early-stage metastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the methodological gap that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "6f2e93cf-4fb6-44da-aee1-a79e3b99e7eb",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C16",
+      "claim": "Laser-capture microdissection is the most widely used platform for isolating cells from specific compartments in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Several methods have been developed to isolate cells from specific compartments in vivo, laser-capture microdissection representing the most widely used platform (Basnet et al., 2019; Espina et al., 2006; Lovatt et al., 2014; Tang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies using laser-capture microdissection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "93f83b4f-7f88-40a0-9bb2-0f6f7a5b5797",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C17",
+      "claim": "Laser-capture microdissection has limitations including contamination by undesired cells within the capture field.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability; and (5) lack of control over population composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects known limitations of laser-capture microdissection based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c305d8c2-a973-4dcc-84d6-24d7f60e6dae",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C18",
+      "claim": "Laser-capture microdissection has low throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability; and (5) lack of control over population composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects known limitations of laser-capture microdissection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "671fd73d-f242-47a8-9506-85121a65f0b9",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C19",
+      "claim": "Laser-capture microdissection requires expensive and temperamental hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability; and (5) lack of control over population composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects known limitations of laser-capture microdissection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "2dc80363-543b-469f-8ec2-56e356f60633",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C20",
+      "claim": "Laser-capture microdissection results in loss of cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability; and (5) lack of control over population composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects known limitations of laser-capture microdissection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f65a7622-de89-4968-ab5e-ccc2a472775b",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C21",
+      "claim": "Laser-capture microdissection lacks control over population composition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the use of these methods is restricted to compartments of particular size and only for specific applications due to several limitations, including (1) contamination by undesired cells within the capture field; (2) low throughput; (3) a need for expensive and temperamental hardware; (4) loss of cell viability; and (5) lack of control over population composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects known limitations of laser-capture microdissection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "165611b0-2bcb-4b1a-a91a-5f3b65124696",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C22",
+      "claim": "Spatial transcriptomics methods can distinguish local patterns across large tumor regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial transcriptomics methods continue to improve and can distinguish local patterns across large tumor regions (Moncada et al., 2020), but resolution limits and low representation of small metastatic colonies in the tissue hinders their isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on spatial transcriptomics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "608611ea-e998-4afe-a937-ca34805d4817",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C23",
+      "claim": "Resolution limits and low representation of small metastatic colonies in tissue hinders isolation by spatial transcriptomics methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial transcriptomics methods continue to improve and can distinguish local patterns across large tumor regions (Moncada et al., 2020), but resolution limits and low representation of small metastatic colonies in the tissue hinders their isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects current limitations of spatial transcriptomics technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "be9051df-536a-4a50-a7b4-dd22c7c806dd",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C24",
+      "claim": "Photoactivable and photoconvertible proteins provide a promising alternative for targeted cell isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoactivable and photoconvertible proteins provide a promising alternative for targeted cell isolation (Medaglia et al., 2017; Nicenboim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies using photoconvertible proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "7aff93fd-7388-42de-b6b6-5a07237ed529",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C25",
+      "claim": "Existing photoconversion systems require specialized equipment and extended handling times.",
+      "claim_type": "EXPLICIT",
+      "source": "However, existing systems require specialized equipment and extended handling times, thus limiting scalability and precluding effective acquisition of rare or sporadic cells from multiple compartments such as microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects limitations of existing photoconversion-based methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f3423efa-1d0d-4652-8161-a1208882df58",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C26",
+      "claim": "Existing photoconversion systems limit scalability and preclude effective acquisition of rare or sporadic cells from multiple compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, existing systems require specialized equipment and extended handling times, thus limiting scalability and precluding effective acquisition of rare or sporadic cells from multiple compartments such as microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects limitations of existing photoconversion-based methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "7f224ca9-f2a4-4706-86b0-c8d808b3fd9d",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C27",
+      "claim": "Exposure of H2B-Dendra2-expressing pancreatic tumor cells to mercury lamp-generated violet light for 30 seconds efficiently marks all cells within the field of view.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1\u2014figure supplement 1A, exposure of H2B\u2013Dendra2-expressing pancreatic tumor cells (5074 cell line) to a mercury lamp-generated violet light (400\u2013450 nm) for 30 s efficiently marks all cells within the field of view (FOV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "84c3ff02-4f1f-46a0-a436-200378aed5f7",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C28",
+      "claim": "Orthotopic injection of 10^4 6419c5-H2B-Dendra2 cells into the pancreas of C57BL/6 mice generates metastases after 3-5 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate metastasis, 104 6419c5\u2013H2B\u2013Dendra2 cells were injected into the pancreas of immune competent C57BL/6 mice, and tumors were allowed to grow for 3\u20135 weeks, at which point livers were examined under a standard widefield microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used to generate the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5a2913fb-9161-4c9c-93f2-f81e37305e17",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C29",
+      "claim": "Metastatic foci in the liver range from solitary tumor cells to micrometastases and larger macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging revealed metastatic foci of various sizes, ranging from solitary tumor cells to micrometastases and larger macrometastases (Figure 1B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8c01ba8b-bc6f-4515-82cb-d3d899ddb7c4",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C30",
+      "claim": "Strong nuclear fluorescence in all tumor cells enables easy detection of metastatic foci with a low magnification 4\u00d7 objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, strong nuclear fluorescence in all tumor cells enabled easy detection of metastatic foci of a particular size even with a low magnification 4\u00d7 objective, allowing for rapid identification of regions of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the imaging data and experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "19f2f589-5cc9-4e89-8b44-80698ee0f27e",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C31",
+      "claim": "Exposure to 400-450 nm light for less than 5 seconds using a 40\u00d7 objective leads to robust induction of red fluorescence in all cancer cells within the boundaries of the limited FOV.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure for <5 s (40\u00d7 objective, N.A. = 0.75) led to a robust induction of red fluorescence in all cancer cells within the boundaries of the limited FOV (Figure 1B, 'Postconversion').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c404b2f4-2f55-4af1-ae2d-5ce550efd7bf",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C32",
+      "claim": "Hundreds of cancer cells within a macrometastasis can be rapidly photoconverted in 15 seconds using a 10\u00d7 objective.",
+      "claim_type": "EXPLICIT",
+      "source": "In a different FOV, using a 10\u00d7 objective, we rapidly photoconverted (15 s, N.A. = 0.4) hundreds of cancer cells within a macrometastasis (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "23e67a98-b6a3-468b-9afd-6541d11fde9d",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C33",
+      "claim": "Spatial precision of photoconversion labeling is achieved even when a low magnification objective is used, with a rapid drop-off of photoconversion outside the FOV boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial precision of labeling was achieved even when a low magnification objective was used, with a rapid drop-off of photoconversion outside the FOV boundary (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "2bad6b10-96dd-4f84-a2db-2d55bcca0a68",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C34",
+      "claim": "Background red fluorescence in non-converted Dendra2-H2B+ cells is low, indicating minimal spontaneous conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, background red fluorescence in non-converted Dendra2\u2013H2B+ cells was low, indicating minimal spontaneous conversion in our experimental model (Figure 1B,D, top left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1B and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "038dd50b-bd45-4e65-8473-62bd97cedae3",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C35",
+      "claim": "Photoconverted cells derived from microcolonies and macrometastases show strong, comparable increases (~30-fold) in red fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following flow sorting, photoconverted cells derived from the different groups showed strong, comparable increases (~30-fold) in red fluorescence intensity (Figure 1D, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1D and Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "94d5a542-64cf-492e-bf66-2a7e98b75e43",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C36",
+      "claim": "Red fluorescence increases with longer exposure times, but 5 seconds is sufficient to permit detection of photoconverted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although red fluorescence increased with longer exposure times, 5 s was sufficient to permit detection of photoconverted cells (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "bcb6947a-7d9f-4e19-8bdf-8fd081c2b5ab",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C37",
+      "claim": "Recovery of photoconverted microcolonies averaged at 38% across 16 isolation sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Across these sessions, recovery of photoconverted microcolonies (Dendra-red+ cells detected by flow cytometry as a % of total photoconverted cells quantified by microscopy) averaged at 38% (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "a6563774-c26e-42dc-8ee9-8b856802c276",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C38",
+      "claim": "A moderate output of 80-170 cells can be acquired per hour using the PIC-IT experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a moderate output of 80\u2013170 cells can be acquired per hour using this experimental setup (Figure 1\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the experimental data shown in Figure 1\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b9e878f4-7791-4ea4-861a-bb6083530190",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C39",
+      "claim": "There is minimal decay in the red signal up to 7 hours post-photoconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we typically used less than 30% of the liver in our marking sessions; consequently, cell yield could potentially be improved with longer sessions, as there was minimal decay in the red signal up to 7 hr post-photoconversion (Figure 1\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "ff9148ad-b9c5-4843-a3af-5fc3c2ab3d28",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C40",
+      "claim": "Cells remain viable after flow sorting, with a ~70% seeding efficiency measured 24 hours after plating.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells remained viable after flow sorting, with a ~70% seeding efficiency measured 24 hr after plating (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8f85eac3-d2c2-4f44-8fc3-5e09f9ec2cd1",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C41",
+      "claim": "Cells sorted following photoconversion show no evidence of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells sorted following photoconversion showed no evidence of DNA damage (Figure 1\u2014figure supplement 3A) or impairment of colony formation (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by \u03b3-H2AX staining data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b313b66a-1730-4fdb-b382-1148c7ace828",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C42",
+      "claim": "Cells sorted following photoconversion show no impairment of colony formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells sorted following photoconversion showed no evidence of DNA damage (Figure 1\u2014figure supplement 3A) or impairment of colony formation (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by colony formation assay data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "cb60f181-8291-4f60-b588-6ba394a450ec",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C43",
+      "claim": "Single-cell RNA sequencing of 361 metastatic and primary tumor cells revealed expression of dendra2 and Krt19 but not markers of hepatocytes, endothelial cells, immune cells, and fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing of 361 metastatic and primary tumor cells via Cel-seq2 (Hashimshony et al., 2016) revealed expression of dendra2 and Krt19 but not markers of hepatocytes, endothelial cells, immune cells, and fibroblasts (Figure 1F), confirming the purity of the isolated cell populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell RNA-seq data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c733679b-438c-48ae-9564-2e7a5eeb76bb",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C44",
+      "claim": "The RNA-seq expression analysis confirms the purity of the isolated cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing of 361 metastatic and primary tumor cells via Cel-seq2 (Hashimshony et al., 2016) revealed expression of dendra2 and Krt19 but not markers of hepatocytes, endothelial cells, immune cells, and fibroblasts (Figure 1F), confirming the purity of the isolated cell populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the absence of contaminating cell markers in the RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8825aaeb-4fff-468d-bc0e-9a0903fb9e5c",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C45",
+      "claim": "Clca3a1 expression is significantly higher in macrometastases than microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate this RNA-seq expression analysis, we identified two genes \u2013 Clca3a1 and Bnip3 \u2013 whose expression was predicted to be significantly higher in macrometastases than microcolonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 1G and flow cytometry data in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "459788ee-6257-4256-8d1e-d8f95c7abbbd",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C46",
+      "claim": "Bnip3 expression is significantly higher in macrometastases than microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "To further validate this RNA-seq expression analysis, we identified two genes \u2013 Clca3a1 and Bnip3 \u2013 whose expression was predicted to be significantly higher in macrometastases than microcolonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 1I and immunostaining data in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "4c2ef460-2362-4a0f-ad43-042b580b0cb1",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C47",
+      "claim": "The difference in Clca3a1 expression between macrometastases and microcolonies was confirmed by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We then confirmed this difference in expression by flow cytometry and immunostaining (Figure 1G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5d4e720e-8011-4255-890d-412bf0e6106d",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C48",
+      "claim": "The difference in Bnip3 expression between macrometastases and microcolonies was confirmed by immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "We then confirmed this difference in expression by flow cytometry and immunostaining (Figure 1G\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "4a9df526-1e55-473a-86a6-ac12043b8899",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C49",
+      "claim": "At a global level, the distribution of microcolony- and macrometastatic-transcriptomes broadly overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "At a global level, the distribution of microcolony- and macrometastatic-transcriptomes broadly overlapped (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by UMAP visualization shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5d20f8b5-d553-473c-a80f-39d2e98d1138",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C50",
+      "claim": "UMAP identified three clusters in microcolonies and macrometastases, annotated as proliferative, inflammatory, or hypoxic/stressed.",
+      "claim_type": "EXPLICIT",
+      "source": "UMAP further identified three clusters in microcolonies and macrometastases, annotated as proliferative, inflammatory, or hypoxic/stressed, suggesting that microcolonies are phenotypically diverse (Figure 2B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by UMAP clustering analysis shown in Figure 2B and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "1792059e-9be1-4212-bf40-bb21028ed361",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C51",
+      "claim": "Microcolonies are phenotypically diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "UMAP further identified three clusters in microcolonies and macrometastases, annotated as proliferative, inflammatory, or hypoxic/stressed, suggesting that microcolonies are phenotypically diverse (Figure 2B, Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the presence of multiple distinct clusters within microcolonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "74dcbe1c-d48b-4516-aed7-c01319db2fbf",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C52",
+      "claim": "The inflammatory cluster is enriched in microcolonies compared to macrometastases (30% vs. 16%).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the inflammatory cluster, defined by elevated IFN-\u03b3 response and complement activity (Figure 2B, Figure 2\u2014figure supplement 1B), was enriched in microcolonies compared to macrometastases (30% vs. 16%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by clustering analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "e2d21a05-8b53-4d7d-956d-a35dc6cd9055",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C53",
+      "claim": "The inflammatory cluster is defined by elevated IFN-\u03b3 response and complement activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the inflammatory cluster, defined by elevated IFN-\u03b3 response and complement activity (Figure 2B, Figure 2\u2014figure supplement 1B), was enriched in microcolonies compared to macrometastases (30% vs. 16%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2B and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8a534f2c-1e9e-4d23-b44a-8ceeac4a0e2f",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C54",
+      "claim": "Both the inflammatory and hypoxic clusters display decreased abundance of proliferation-related transcripts including CCNA2, TOP2A, CDK1, Ki-67, and PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both the inflammatory and hypoxic clusters displayed decreased abundance of proliferation-related transcripts including CCNA2, TOP2A, CDK1, Ki-67, and PCNA (Figure 2\u2014figure supplement 1C), consistent with previous observations on growth arrest mediated by hypoxia in colonizing metastatic cells (Fluegen et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcript abundance data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "a3d93dc1-4523-4e12-87a6-02a95889c313",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C55",
+      "claim": "The decreased abundance of proliferation-related transcripts in inflammatory and hypoxic clusters is consistent with previous observations on growth arrest mediated by hypoxia in colonizing metastatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both the inflammatory and hypoxic clusters displayed decreased abundance of proliferation-related transcripts including CCNA2, TOP2A, CDK1, Ki-67, and PCNA (Figure 2\u2014figure supplement 1C), consistent with previous observations on growth arrest mediated by hypoxia in colonizing metastatic cells (Fluegen et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to a previous study and comparison with current data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "927c8c81-bb46-4548-ab15-c06c1d133db8",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C56",
+      "claim": "Differential gene analysis revealed 500 genes that were more highly expressed in microcolonies and 366 genes that were more highly expressed in macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we conducted a differential gene analysis using EdgeR (Robinson et al., 2010), comparing the transcriptomes of 94 microcolonies to 111 macrometastatic cells. This revealed 500 genes that were more highly expressed in microcolonies and 366 genes that were more highly expressed in macrometastases (p<0.05, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential gene expression analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "87914e10-a901-4a09-9c2b-f75d22c468a8",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C57",
+      "claim": "Functional annotation of microcolony-associated genes revealed a strong signal for TNF-\u03b1-related NF-\u03baB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of the microcolony-associated genes revealed a strong signal for TNF-\u03b1-related NF-\u03baB signaling and a prominent increase in inflammatory cytokine secretion (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "d059a0c3-2023-4516-8e1f-a582f4f3a614",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C58",
+      "claim": "Functional annotation of microcolony-associated genes revealed a prominent increase in inflammatory cytokine secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotation of the microcolony-associated genes revealed a strong signal for TNF-\u03b1-related NF-\u03baB signaling and a prominent increase in inflammatory cytokine secretion (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "0f58d97d-d9ed-4803-8819-22f0874f31f5",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C59",
+      "claim": "An IFN-\u03b3-response signature is enriched in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, an IFN-\u03b3-response signature was enriched in microcolonies, consistent with a pattern of enriched inflammatory gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional annotation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "28d5aae0-84ee-411b-8d2d-421b2c729898",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C60",
+      "claim": "Transcription factor motif analysis revealed enrichment of pro-inflammatory DNA regulatory elements in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, transcription factor motif analysis (HOMER) revealed enrichment of pro-inflammatory DNA regulatory elements in microcolonies (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HOMER motif analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "e1219c1e-34e1-4039-ab2b-c068df530552",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C61",
+      "claim": "Motif analysis revealed enrichment of binding sites for NF-\u03baB, JUN/AP-1, and STAT in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the known inflammation-related transcription factors NF-\u03baB, JUN/AP-1, and STAT, motif analysis also revealed enrichment of binding sites for MAFK, which has recently been demonstrated to enhance the transcriptional response to NF-\u03baB (Hwang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HOMER motif analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "581372c9-37f3-4ebf-8830-be32cc194bd2",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C62",
+      "claim": "Motif analysis revealed enrichment of binding sites for MAFK in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the known inflammation-related transcription factors NF-\u03baB, JUN/AP-1, and STAT, motif analysis also revealed enrichment of binding sites for MAFK, which has recently been demonstrated to enhance the transcriptional response to NF-\u03baB (Hwang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HOMER motif analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c5f2de44-7d70-44de-b88f-548ea5f58bd9",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C63",
+      "claim": "MAFK has been demonstrated to enhance the transcriptional response to NF-\u03baB.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the known inflammation-related transcription factors NF-\u03baB, JUN/AP-1, and STAT, motif analysis also revealed enrichment of binding sites for MAFK, which has recently been demonstrated to enhance the transcriptional response to NF-\u03baB (Hwang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "e0b111da-0628-4e53-a090-e038dc22d821",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C64",
+      "claim": "29 genes associated with the Hallmark 'TNF-\u03b1-signaling-via-NF-\u03baB' gene set were expressed at significantly higher levels in microcolonies compared to macrometastatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this enrichment of TNF-related NF-\u03baB signaling, 29 genes associated with the Hallmark 'TNF-\u03b1-signaling-via-NF-\u03baB' gene set were expressed at significantly higher levels in microcolonies compared to macrometastastic cells (Figure 2F, Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 2F and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "acbc158d-e987-458b-8a92-9b9c58782c7f",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C65",
+      "claim": "Transcriptional profiling suggests that pancreatic microcolonies in the liver manifest a strong pro-inflammatory phenotype associated with increase in NF-\u03baB and AP-1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, transcriptional profiling suggests that pancreatic microcolonies in the liver manifest a strong pro-inflammatory phenotype associated with increase in NF-\u03baB and AP-1 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on multiple lines of evidence from RNA-seq, motif analysis, and functional annotation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "fe629ad8-6e53-4b22-86de-09d8d0d54422",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C66",
+      "claim": "Functional annotation indicated enrichment for cell cycle and cholesterol biosynthesis pathways in macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "We next turned our attention to the genes with low expression in microcolonies relative to macrometastases. Intriguingly, functional annotation indicated enrichment for cell cycle and cholesterol biosynthesis pathways in the macrometastases (Figure 3A), with elevated expression of a number of mitosis regulators such as Nek2 (Fry et al., 2012), Sapcd2 (Xu et al., 2007), and Ttk (Dominguez-Brauer et al., 2015, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GSEA analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "048daf16-942f-4796-9ccb-6e4f58cd15ef",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C67",
+      "claim": "Macrometastases show elevated expression of mitosis regulators such as Nek2, Sapcd2, and Ttk.",
+      "claim_type": "EXPLICIT",
+      "source": "We next turned our attention to the genes with low expression in microcolonies relative to macrometastases. Intriguingly, functional annotation indicated enrichment for cell cycle and cholesterol biosynthesis pathways in the macrometastases (Figure 3A), with elevated expression of a number of mitosis regulators such as Nek2 (Fry et al., 2012), Sapcd2 (Xu et al., 2007), and Ttk (Dominguez-Brauer et al., 2015, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 3B and citations to studies characterizing these genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "17202946-627d-49bb-b9d0-02523cb29754",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C68",
+      "claim": "Microcolonies exhibit higher expression of negative regulators of cell cycle progression including Ceacam1, Stard13, and Mir22hg.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, microcolonies exhibited higher expression of negative regulators of cell cycle progression including Ceacam1 (Sappino et al., 2012), Stard13 (Jaafar et al., 2020), and Mir22hg (Xu et al., 2020, Figure 3B), predicting an overall hypo-proliferative state for microcolonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression data shown in Figure 3B and citations to studies characterizing these genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "59d62c8a-e889-43d7-bc21-876c627c15a5",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C69",
+      "claim": "The gene expression pattern predicts an overall hypo-proliferative state for microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, microcolonies exhibited higher expression of negative regulators of cell cycle progression including Ceacam1 (Sappino et al., 2012), Stard13 (Jaafar et al., 2020), and Mir22hg (Xu et al., 2020, Figure 3B), predicting an overall hypo-proliferative state for microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gene expression patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8b109bff-4c34-4e90-ac62-b79c3a748986",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C70",
+      "claim": "Ki-67 immunostaining revealed no measurable difference in the percentage of positive cells in microcolonies vs. macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the proliferative state of the cells, we profiled microcolonies and macrometastases for expression of cell cycle markers by immunofluorescence. Ki-67 immunostaining revealed no measurable difference in the percentage of positive cells in microcolonies vs. macrometastases (Figure 3C), consistent with our previously reported findings (Aiello et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c956a65b-adbd-4143-b034-93c27137b389",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C71",
+      "claim": "The finding of no difference in Ki-67 staining between microcolonies and macrometastases is consistent with previously reported findings.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the proliferative state of the cells, we profiled microcolonies and macrometastases for expression of cell cycle markers by immunofluorescence. Ki-67 immunostaining revealed no measurable difference in the percentage of positive cells in microcolonies vs. macrometastases (Figure 3C), consistent with our previously reported findings (Aiello et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "d61c2f56-a40e-42fc-b872-e41a1f245e09",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C72",
+      "claim": "The frequency of phosphorylated-histone H3-positive cells is lower in microcolonies than macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of phosphorylated-histone H3-positive cells was lower in microcolonies (Figure 3D), suggesting fewer mitotic events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "2554c62c-9a29-467f-9323-885bc9fe4879",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C73",
+      "claim": "Lower frequency of phosphorylated-histone H3-positive cells in microcolonies suggests fewer mitotic events.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the frequency of phosphorylated-histone H3-positive cells was lower in microcolonies (Figure 3D), suggesting fewer mitotic events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phospho-histone H3 staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "bba2b40b-c8b8-43dd-8a12-f78df5a943a3",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C74",
+      "claim": "The frequency of pRB-positive cells is comparable across metastatic stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of cell cycle suppressors indicated comparable frequencies of pRB-positive cells across metastatic stages (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "afed325b-4476-4141-a74a-147628ad3267",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C75",
+      "claim": "Expression levels of pRB are consistently higher in macrometastatic cells than in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression levels of pRB were consistently higher in macrometastatic cells, indicating higher propensity for cell cycle progression in these cells (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "1d52dcb4-e238-4f6c-834c-15ce9d38dd19",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C76",
+      "claim": "Higher pRB expression levels in macrometastatic cells indicate higher propensity for cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expression levels of pRB were consistently higher in macrometastatic cells, indicating higher propensity for cell cycle progression in these cells (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pRB staining data and knowledge of pRB's role in cell cycle regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "d1b3802a-c070-4775-835a-4ae11e61e641",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C77",
+      "claim": "There is a trend toward higher prevalence of p21 in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional staining revealed a trend toward higher prevalence of p21 in microcolonies (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "90c71da4-2c02-4a2c-b8ac-f0f7093b4bde",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C78",
+      "claim": "The cycling fractions are similar in microcolonies and macrometastatic cells, but rate of transit through the cell cycle may be slower in microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that the cycling fractions are similar in microcolonies in macrometastatic cells, but rate of transit through the cell cycle may be slower in microcolonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of Ki-67, phospho-histone H3, and pRB staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "897a4a63-4074-40c7-adf6-c0add6b069bc",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C79",
+      "claim": "Cells derived from microcolonies and macrometastases expanded to a similar extent after 24 hours in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells derived from microcolonies and macrometastases expanded to a similar extent after 24 hr, colonies derived from macrometastases were larger at 48 hr and 72 hr (Figure 3J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ex vivo proliferation assay data shown in Figure 3J and 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "6df5e739-9a51-4c53-8fc0-a67f5d80c215",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C80",
+      "claim": "Colonies derived from macrometastases were larger than those from microcolonies at 48 hours and 72 hours in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "While cells derived from microcolonies and macrometastases expanded to a similar extent after 24 hr, colonies derived from macrometastases were larger at 48 hr and 72 hr (Figure 3J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ex vivo proliferation assay data shown in Figure 3J and 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f31fa1d3-ff9f-40a2-8c09-057fea1169c4",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C81",
+      "claim": "The ex vivo proliferation results support the molecular profiling results and suggest that macrometastatic cells are primed for cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our molecular profiling results and suggest that macrometastatic cells are primed for cell division (or, conversely, that microcolonies are primed for cell cycle arrest).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of molecular profiling and functional proliferation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b6939e1a-122e-478e-bf84-bbe50c64c4a5",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C82",
+      "claim": "Microcolonies are primed for cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support our molecular profiling results and suggest that macrometastatic cells are primed for cell division (or, conversely, that microcolonies are primed for cell cycle arrest).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of molecular profiling and functional proliferation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "02b09551-651f-43f2-ab18-04d2af3e1d2a",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C83",
+      "claim": "Solitary pancreatic tumor cells exhibit resistance to standard-of-care chemotherapy (gemcitabine + nab-paclitaxel) in autochthonous KPCY mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that solitary pancreatic tumor cells exhibit resistance to standard-of-care chemotherapy (gemcitabine + nab-paclitaxel) in autochthonous KPCY mice (Aiello et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "4b93cc86-7f7b-4a50-910a-34c69fb3a739",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C84",
+      "claim": "Microcolonies in the 6419c5 implanted cell line model exhibit higher levels of nuclear NF-\u03baB-p65 compared to macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we performed NF-\u03baB-p65 staining in the 6419 c5 implanted cell line model and the KPCY autochthonous model. These two models confirmed that microcolonies exhibit higher levels of nuclear NF-\u03baB-p65 compared to macrometastases (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b548ff02-c6f7-4e90-ad8f-f808f5ef17c0",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C85",
+      "claim": "Microcolonies in the KPCY autochthonous model exhibit higher levels of nuclear NF-\u03baB-p65 compared to macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we performed NF-\u03baB-p65 staining in the 6419 c5 implanted cell line model and the KPCY autochthonous model. These two models confirmed that microcolonies exhibit higher levels of nuclear NF-\u03baB-p65 compared to macrometastases (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "50243953-2321-4497-a698-db5cd412fbf3",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C86",
+      "claim": "Phospho-c-Jun-positive cells are more prevalent in microcolonies than in macrometastases in both the 6419c5 and KPCY models.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, and as suggested from our motif analysis, phospho-c-Jun-positive cells were more prevalent in microcolonies than in macrometastases in both models (Figure 4\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4\u2014figure supplement 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "4c130993-81d3-43b3-85f6-87a4c7db1a05",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C87",
+      "claim": "Expression of NF-\u03baB-p65 is enhanced in microcolonies of KPCY mice lacking overt metastatic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of NF-\u03baB-p65, and to a lesser degree phospho-c-Jun, was also enhanced in microcolonies of KPCY mice lacking overt metastatic disease (Figure 4\u2014figure supplement 1B,C), suggesting that the pro-inflammatory phenotype does not depend on the presence of large metastases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4\u2014figure supplement 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "fb950b3f-1f68-4c67-9a08-96f2c8e61b10",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C88",
+      "claim": "Phospho-c-Jun expression is enhanced to a lesser degree in microcolonies of KPCY mice lacking overt metastatic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of NF-\u03baB-p65, and to a lesser degree phospho-c-Jun, was also enhanced in microcolonies of KPCY mice lacking overt metastatic disease (Figure 4\u2014figure supplement 1B,C), suggesting that the pro-inflammatory phenotype does not depend on the presence of large metastases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 4\u2014figure supplement 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "3cf88036-50ed-404a-ab00-372499df1db7",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C89",
+      "claim": "The pro-inflammatory phenotype in microcolonies does not depend on the presence of large metastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of NF-\u03baB-p65, and to a lesser degree phospho-c-Jun, was also enhanced in microcolonies of KPCY mice lacking overt metastatic disease (Figure 4\u2014figure supplement 1B,C), suggesting that the pro-inflammatory phenotype does not depend on the presence of large metastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that microcolonies show enhanced NF-\u03baB-p65 even in the absence of macrometastases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "9107665b-7f73-4a79-9c14-f37d9ea8637b",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C90",
+      "claim": "The enhanced inflammatory signatures identified through PIC-IT-enabled RNA sequencing reflect true signaling differences in small and large metastases.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the enhanced inflammatory signatures identified through PIC-IT-enabled RNA sequencing reflect true signaling differences in small and large metastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the concordance between RNA-seq data and protein-level validation by immunostaining.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f8e3133a-bb7f-4dbd-b7d6-7e5930dc19a5",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C91",
+      "claim": "Triptolide is a potent anti-inflammatory agent that inhibits both NF-\u03baB and AP-1 pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "To functionally test whether this pro-inflammatory response is required for microcolony viability, we tested the activity of triptolide (TPL), a potent anti-inflammatory agent that inhibits both pathways (Yuan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study characterizing triptolide's mechanism of action.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "4ba28918-28ef-4466-9391-ddc497a5dfb7",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C92",
+      "claim": "The total liver area occupied by metastases was similar in triptolide-treated and vehicle-treated groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the total liver area occupied by metastases (dominated by macrometastases) was similar in the two treatment groups (Figure 4D), triptolide treatment led to a significant reduction in the relative frequency of microcolonies (Figure 4E) and the ratio of microcolonies or single-metastatic cells to macrometastases (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "fcdccdcb-c863-4cc0-b74b-ced4d1804b5a",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C93",
+      "claim": "Triptolide treatment led to a significant reduction in the relative frequency of microcolonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the total liver area occupied by metastases (dominated by macrometastases) was similar in the two treatment groups (Figure 4D), triptolide treatment led to a significant reduction in the relative frequency of microcolonies (Figure 4E) and the ratio of microcolonies or single-metastatic cells to macrometastases (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "bb8e4f01-e91b-49ce-9c3d-64ea546245c6",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C94",
+      "claim": "Triptolide treatment led to a significant reduction in the ratio of microcolonies to macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the total liver area occupied by metastases (dominated by macrometastases) was similar in the two treatment groups (Figure 4D), triptolide treatment led to a significant reduction in the relative frequency of microcolonies (Figure 4E) and the ratio of microcolonies or single-metastatic cells to macrometastases (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "3d5c7fde-ea51-4b58-b518-77ec219c76b8",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C95",
+      "claim": "Triptolide treatment led to a significant reduction in the ratio of single-metastatic cells to macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the total liver area occupied by metastases (dominated by macrometastases) was similar in the two treatment groups (Figure 4D), triptolide treatment led to a significant reduction in the relative frequency of microcolonies (Figure 4E) and the ratio of microcolonies or single-metastatic cells to macrometastases (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "f4f6ed6f-793e-43ec-932d-da19fa401810",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C96",
+      "claim": "The triptolide results are in line with a recent report highlighting the potential of neoadjuvant treatment with NF-kB-targeting therapy in PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with a recent report highlighting the potential of neoadjuvant treatment with NF-kB-targeting therapy in PDAC (Saito et al., 2019) and suggest that microcolonies are more susceptible to inhibition of inflammatory signaling than macrometastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "2f4a425b-8f62-47f9-a461-9f94119b6f58",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C97",
+      "claim": "Microcolonies are more susceptible to inhibition of inflammatory signaling than macrometastases.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with a recent report highlighting the potential of neoadjuvant treatment with NF-kB-targeting therapy in PDAC (Saito et al., 2019) and suggest that microcolonies are more susceptible to inhibition of inflammatory signaling than macrometastases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential response to triptolide treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c6f89545-fac1-450e-b654-d98157ce56f4",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C98",
+      "claim": "PIC-IT permits the isolation and systematic characterization of cells comprising both large and small metastatic lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying the occult fraction of metastatic disease is challenging due to the rarity of cells comprising micrometastatic lesions and a lack of efficient tools to isolate and study them. PIC-IT overcomes these challenges and permits the isolation and systematic characterization of cells comprising both large and small metastatic lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data demonstrating the technique's capabilities throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5feda8a8-cc56-473e-853d-791c0fddb089",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C99",
+      "claim": "Microcolonies are a diverse cell population enriched with cells manifesting a pro-inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments reveal that microcolonies are a diverse cell population enriched with cells manifesting a pro-inflammatory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the clustering analysis and gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "1cd4a77d-3900-4039-9721-0be37f863b8f",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C100",
+      "claim": "NF-\u03baB/AP-1-regulated inflammatory pathways play a specific role in microcolonies not shared by the majority of metastatic cells (macrometastases).",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings further highlight a specific role for NF-\u03baB/AP-1-regulated inflammatory pathways in microcolonies not shared by the majority of metastatic cells (macrometastases), demonstrating the utility of our approach in identifying susceptibilities of a micro-fraction of the metastatic population that drives disease recurrence and mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differential response to NF-\u03baB inhibition and the gene expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "174fa238-3665-466e-8328-85ad549307bf",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C101",
+      "claim": "Inflammation plays a key role in tumor initiation and progression in PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammation plays a key role in tumor initiation and progression in PDAC and has also been implicated in metastasis formation (Stone and Beatty, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c4b7c2b9-5716-4123-870a-7ccc2cf5ea62",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C102",
+      "claim": "Inflammation has been implicated in metastasis formation in PDAC.",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammation plays a key role in tumor initiation and progression in PDAC and has also been implicated in metastasis formation (Stone and Beatty, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "560361ff-2ae0-4ed2-b06e-700ae5a8b661",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C103",
+      "claim": "Non-uniform NF-kB signaling across the metastatic spectrum could potentially reflect altered levels of TNF-\u03b1 in the microenvironment of a growing metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-uniform NF-kB signaling across the metastatic spectrum in our study is somewhat surprising and could potentially reflect altered levels of TNF-\u03b1 in the microenvironment of a growing metastasis (Milette et al., 2017) or a pre-existing 'NF-kB' activity associated with tumor dissemination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citation to a relevant study.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "27002768-4839-428f-b055-5e02c3c7e4d6",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C104",
+      "claim": "Non-uniform NF-kB signaling across the metastatic spectrum could potentially reflect a pre-existing 'NF-kB' activity associated with tumor dissemination.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-uniform NF-kB signaling across the metastatic spectrum in our study is somewhat surprising and could potentially reflect altered levels of TNF-\u03b1 in the microenvironment of a growing metastasis (Milette et al., 2017) or a pre-existing 'NF-kB' activity associated with tumor dissemination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "6c9bf28a-6255-453b-8dae-1f120c09ae93",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C105",
+      "claim": "Marked upregulation of TNF-\u03b1-NF-kB signaling has been observed in PDAC CTCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this latter possibility is hinted at by marked upregulation of TNF-\u03b1-NF-kB signaling in PDAC CTCs (Ting et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on circulating tumor cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "b015e2ea-d5d1-4655-a85f-ad2d7cd4a306",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C106",
+      "claim": "It remains to be determined whether the pro-inflammatory profile in microcolonies reflects the pre-metastatic state of the 'seed' or an acquired adaptation to the 'soil'.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, as isolated microcolonies may originate in either primary tumor or metastasis, it remains to be determined whether the pro-inflammatory profile reflects the pre-metastatic state of the 'seed' or an acquired adaptation to the 'soil'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges an unresolved question about the origin of the observed phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "8a853b8b-38f8-4d43-95f0-a91e7d55c6d2",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C107",
+      "claim": "TNF-\u03b1-mediated NF-kB signaling can specifically attenuate cell cycle transition through the G1/S boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the mechanism underlying reduced pRB phosphorylation and hypo-proliferative state in microcolonies is unclear, a recent study demonstrated that TNF-\u03b1-mediated NF-kB signaling can specifically attenuate cell cycle transition through the G1/S boundary (Ankers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on NF-kB signaling and cell cycle regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "ec9a0344-78e3-4a88-ac1b-3eef51991dec",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C108",
+      "claim": "PIC-IT could be used to isolate cells in different 'niches' of the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "While the current study used PIC-IT to isolate cells at different stages of metastasis, the method has many potential applications. For example, it could be used to isolate cells in different 'niches' of the tumor microenvironment (e.g. cells in well perfused vs. poorly perfused regions), thus paving the way for testing functional features such as proliferation, migration, metabolic characteristics, and drug resistance in heterogeneous tumor cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "59122ae0-f49c-4553-9640-9deeced3e1bd",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C109",
+      "claim": "PIC-IT could enable testing functional features such as proliferation, migration, metabolic characteristics, and drug resistance in heterogeneous tumor cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "While the current study used PIC-IT to isolate cells at different stages of metastasis, the method has many potential applications. For example, it could be used to isolate cells in different 'niches' of the tumor microenvironment (e.g. cells in well perfused vs. poorly perfused regions), thus paving the way for testing functional features such as proliferation, migration, metabolic characteristics, and drug resistance in heterogeneous tumor cell populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "cb922269-1863-4d8f-bb13-9658e328fbfe",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C110",
+      "claim": "PIC-IT can be used to identify protein markers with which to prospectively isolate cells of interest by flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "As our identification of CLCA1 shows, the technique can be used to identify protein markers \u2013 particularly those residing on the cell surface \u2013 with which to prospectively isolate cells of interest by flow cytometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental demonstration of CLCA1 as a marker differentially expressed between microcolonies and macrometastases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "d80571a1-fd48-4ea5-a5a0-878456c74e42",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C111",
+      "claim": "PIC-IT is particularly well suited to the isolation of spatially defined rare cells such as stem cells in malignant and benign conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the technique is particularly well suited to the isolation of spatially defined rare cells \u2013 such as stem cells \u2013 in malignant and benign conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "435a1359-78a5-434d-8617-4ec8a593d3cd",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C112",
+      "claim": "The majority of microcolonies collected were 1-2 cells in size.",
+      "claim_type": "IMPLICIT",
+      "source": "Microcolonies were defined as collections of 10 or fewer metastatic cells, with the majority being one or two cells (Figure 1\u2014figure supplement 2A), while macrometastases were defined as lesions of >400 \u00b5m in diameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the size distribution data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "6209f2a3-087d-4f0d-a6a1-407bdcb8d9d1",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C113",
+      "claim": "Macrometastases were defined as lesions of >400 \u00b5m in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Microcolonies were defined as collections of 10 or fewer metastatic cells, with the majority being one or two cells (Figure 1\u2014figure supplement 2A), while macrometastases were defined as lesions of >400 \u00b5m in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the operational definition used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "5430a482-d5eb-4245-97ee-6e46f72c3149",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "claim_id": "C114",
+      "claim": "Over 95% of mice develop macrometastases by 21 days after orthotopic implantation of 6419c5-YFP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We inoculated 6419c5-YFP cells into the pancreas and allowed implants to grow for 21 days (Figure 4C), a time point at which >95% of mice develop macrometastases (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental model, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "12c8ed56-abea-474b-a7ac-d527b95dec81",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PIC-IT is a photoconversion-based technique that enables efficient isolation of metastatic cell clusters of any size, including single cells and microcolonies (1-10 cells), from intact tissue. The method achieves spatial precision, maintains cell viability (~70% seeding efficiency), causes no DNA damage or impairment of colony formation, and yields 80-170 cells per hour with 38% recovery efficiency. Single-cell RNA-seq confirms high purity of isolated populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C44 collectively demonstrate the technical capabilities of PIC-IT through multiple lines of experimental evidence including photoconversion efficiency data (C27, C31-C36), recovery metrics (C37-C38), viability assays (C40-C42), and purity validation by RNA-seq (C43-C44). The data from multiple figures consistently support the method's performance characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcriptional profiling of microcolonies reveals phenotypic heterogeneity with three distinct clusters (proliferative, inflammatory, hypoxic/stressed). The inflammatory cluster is enriched in microcolonies (30% vs. 16% in macrometastases) and characterized by elevated TNF-\u03b1-NF-\u03baB signaling, IFN-\u03b3 response, and enrichment of NF-\u03baB, JUN/AP-1, STAT, and MAFK transcription factor binding motifs. Differential gene analysis identified 500 genes more highly expressed in microcolonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C65, and C99 are supported by comprehensive RNA-seq analysis including UMAP clustering (C50), differential gene expression (C56), functional annotation (C57-C59), and motif analysis (C60-C62). The data consistently demonstrate enrichment of inflammatory signatures in microcolonies with appropriate statistical analysis (p<0.05) and multiple complementary analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Microcolonies exhibit reduced proliferative capacity compared to macrometastases. While Ki-67 staining shows similar cycling fractions, microcolonies have lower phospho-histone H3+ cells (fewer mitotic events), lower pRB phosphorylation levels, and higher expression of cell cycle suppressors (Ceacam1, Stard13, Mir22hg). Ex vivo proliferation assays confirm that macrometastasis-derived cells form larger colonies at 48 and 72 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C66-C82 are supported by convergent evidence from transcriptional profiling (C66-C69), immunostaining for multiple cell cycle markers (C70-C77), and functional ex vivo proliferation assays (C79-C80). The combination of molecular and functional data consistently demonstrates reduced proliferative propensity in microcolonies, though the interpretation that cells are 'primed' for different states (C81-C82) involves some inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microcolonies show enrichment for NF-\u03baB/AP-1 signaling at the protein level. Immunostaining confirms higher nuclear NF-\u03baB-p65 levels in microcolonies compared to macrometastases in both the 6419c5 implanted model and KPCY autochthonous model. Phospho-c-Jun is also more prevalent in microcolonies. This pro-inflammatory phenotype is present even in mice lacking overt metastatic disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C84-C90 provide protein-level validation of the RNA-seq findings through immunostaining in two independent mouse models (C84-C86). The observation that the phenotype persists in early microcolonies without macrometastases (C87-C89) strengthens the conclusion that this is an intrinsic property of microcolonies rather than a response to the presence of large metastases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "76edcaec-e89a-45af-bf43-48e68b1731cb",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pharmacological inhibition of NF-\u03baB with triptolide selectively depletes microcolonies without affecting macrometastases. While total liver metastatic area remained similar between treatment groups, triptolide significantly reduced microcolony frequency and the ratio of microcolonies/single cells to macrometastases, demonstrating that microcolonies are particularly dependent on NF-\u03baB/AP-1 signaling for survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C91-C95, C97, and C100 are supported by in vivo drug treatment experiments showing differential effects on microcolonies versus macrometastases (C92-C95). The selective depletion of microcolonies while macrometastatic burden remains unchanged provides functional evidence for pathway dependence. However, the study uses only one inhibitor and lacks mechanistic validation of on-target effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "946c2e4c-59f1-461e-aa7f-279c205e5721",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PIC-IT enables identification of protein markers differentially expressed between microcolonies and macrometastases. RNA-seq predictions for Clca3a1 and Bnip3 being higher in macrometastases were validated by flow cytometry and immunostaining, demonstrating that the technique can identify markers for prospective cell isolation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 and C110 demonstrate successful validation of RNA-seq findings at the protein level using orthogonal methods (flow cytometry and immunostaining). This validates both the RNA-seq data quality and demonstrates a practical application of PIC-IT for marker discovery, though only two markers were tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "9e2a10e2-9f82-4be2-8884-6d5aad901771",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Occult metastases represent a significant clinical challenge as a source of disease recurrence, but systematic study has been limited by lack of tools to isolate discrete cells on spatial grounds. Existing fluorescent reporter systems allow detection but not pure isolation of micron-scale colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C15 establish the clinical and scientific context for the study. These are well-established concepts in cancer biology supported by appropriate citations and represent accepted knowledge in the field rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "2416bc6e-8b28-490b-a9f4-752d2d39d121",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Existing methods for spatial cell isolation have significant limitations. Laser-capture microdissection suffers from contamination, low throughput, expensive hardware, loss of viability, and lack of population control. Spatial transcriptomics has resolution limits. Existing photoconversion systems require specialized equipment and extended handling times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C26 accurately describe limitations of existing technologies based on established knowledge and appropriate citations. These claims provide context for the development of PIC-IT but do not represent novel experimental findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "35d474ef-7be7-4479-852e-f1702a88b624",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work has established that solitary pancreatic tumor cells are resistant to standard chemotherapy, inflammation plays a key role in PDAC progression and metastasis, TNF-\u03b1-NF-\u03baB signaling is upregulated in PDAC CTCs, and NF-\u03baB-targeting therapy shows potential in PDAC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C96, C101-C102, and C105 cite prior published work to provide context for the current findings. These are appropriately attributed to previous studies and represent established knowledge rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "c6cea9ae-3eeb-46d3-9828-727e559e04d2",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PIC-IT has potential applications beyond metastasis staging, including isolation of cells from different tumor microenvironment niches, testing functional features in heterogeneous populations, and isolation of spatially defined rare cells such as stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98, C108-C109, and C111 are speculative statements about potential future applications. While C98 is supported by the demonstrated capabilities in this study, C108-C109 and C111 represent proposed but untested applications. These are reasonable extrapolations but lack experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "a6036e09-56b5-4d36-99af-5de7b23b34b1",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mechanistic basis for differential NF-\u03baB signaling across metastatic stages remains unclear and could reflect altered TNF-\u03b1 levels in the microenvironment, pre-existing NF-\u03baB activity associated with dissemination, or TNF-\u03b1-mediated cell cycle attenuation. The origin of the pro-inflammatory profile (seed vs. soil) is undetermined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C104, C106-C107 are explicitly speculative statements by the authors about potential mechanisms. C107 cites a relevant study but the connection to the observed phenotype is hypothetical. These represent important open questions rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    },
+    {
+      "id": "708efee1-0afd-4f6e-acc3-bdd2b29229f5",
+      "content_id": "e26be952-4c5b-4d68-a679-139704166ff0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Over 95% of mice develop macrometastases by 21 days after orthotopic implantation of 6419c5-YFP cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C114 states that data supporting this assertion are not shown in the manuscript. While this may be an accurate characterization of the model based on the authors' experience, the lack of presented data makes this claim uncertain in the context of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:36:07.025874Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a5f8657e-944b-4598-bd46-b6b119c6af46",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "b9c9ea21-385f-48a1-8572-646ac784bf70",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "7f224ca9-f2a4-4706-86b0-c8d808b3fd9d",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "84c3ff02-4f1f-46a0-a436-200378aed5f7",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "5a2913fb-9161-4c9c-93f2-f81e37305e17",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "8c01ba8b-bc6f-4515-82cb-d3d899ddb7c4",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "19f2f589-5cc9-4e89-8b44-80698ee0f27e",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "c404b2f4-2f55-4af1-ae2d-5ce550efd7bf",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "23e67a98-b6a3-468b-9afd-6541d11fde9d",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "2bad6b10-96dd-4f84-a2db-2d55bcca0a68",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "038dd50b-bd45-4e65-8473-62bd97cedae3",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "94d5a542-64cf-492e-bf66-2a7e98b75e43",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "bcb6947a-7d9f-4e19-8bdf-8fd081c2b5ab",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "a6563774-c26e-42dc-8ee9-8b856802c276",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "b9e878f4-7791-4ea4-861a-bb6083530190",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "ff9148ad-b9c5-4843-a3af-5fc3c2ab3d28",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "8f85eac3-d2c2-4f44-8fc3-5e09f9ec2cd1",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "b313b66a-1730-4fdb-b382-1148c7ace828",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "cb60f181-8291-4f60-b588-6ba394a450ec",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "c733679b-438c-48ae-9564-2e7a5eeb76bb",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "435a1359-78a5-434d-8617-4ec8a593d3cd",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "6209f2a3-087d-4f0d-a6a1-407bdcb8d9d1",
+      "result_id": "12c8ed56-abea-474b-a7ac-d527b95dec81"
+    },
+    {
+      "claim_id": "b0edae72-0bd3-4045-8b56-e3a326952839",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "4a9df526-1e55-473a-86a6-ac12043b8899",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "5d20f8b5-d553-473c-a80f-39d2e98d1138",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "1792059e-9be1-4212-bf40-bb21028ed361",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "74dcbe1c-d48b-4516-aed7-c01319db2fbf",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "e2d21a05-8b53-4d7d-956d-a35dc6cd9055",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "8a534f2c-1e9e-4d23-b44a-8ceeac4a0e2f",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "a3d93dc1-4523-4e12-87a6-02a95889c313",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "927c8c81-bb46-4548-ab15-c06c1d133db8",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "87914e10-a901-4a09-9c2b-f75d22c468a8",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "d059a0c3-2023-4516-8e1f-a582f4f3a614",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "0f58d97d-d9ed-4803-8819-22f0874f31f5",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "28d5aae0-84ee-411b-8d2d-421b2c729898",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "e1219c1e-34e1-4039-ab2b-c068df530552",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "581372c9-37f3-4ebf-8830-be32cc194bd2",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "e0b111da-0628-4e53-a090-e038dc22d821",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "acbc158d-e987-458b-8a92-9b9c58782c7f",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "5feda8a8-cc56-473e-853d-791c0fddb089",
+      "result_id": "95f957d2-b7b2-453a-9a6e-10fd30b367f3"
+    },
+    {
+      "claim_id": "18dc972e-de7a-47a4-a096-860067227277",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "fe629ad8-6e53-4b22-86de-09d8d0d54422",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "048daf16-942f-4796-9ccb-6e4f58cd15ef",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "17202946-627d-49bb-b9d0-02523cb29754",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "59d62c8a-e889-43d7-bc21-876c627c15a5",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "8b109bff-4c34-4e90-ac62-b79c3a748986",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "c956a65b-adbd-4143-b034-93c27137b389",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "d61c2f56-a40e-42fc-b872-e41a1f245e09",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "2554c62c-9a29-467f-9323-885bc9fe4879",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "bba2b40b-c8b8-43dd-8a12-f78df5a943a3",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "afed325b-4476-4141-a74a-147628ad3267",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "1d52dcb4-e238-4f6c-834c-15ce9d38dd19",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "d1b3802a-c070-4775-835a-4ae11e61e641",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "90c71da4-2c02-4a2c-b8ac-f0f7093b4bde",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "897a4a63-4074-40c7-adf6-c0add6b069bc",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "6df5e739-9a51-4c53-8fc0-a67f5d80c215",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "f31fa1d3-ff9f-40a2-8c09-057fea1169c4",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "b6939e1a-122e-478e-bf84-bbe50c64c4a5",
+      "result_id": "60157ee9-d03a-4cd4-bd71-3256e4e0ecea"
+    },
+    {
+      "claim_id": "657cd6e3-2a70-41b3-a1c8-3351a99f2327",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "4b93cc86-7f7b-4a50-910a-34c69fb3a739",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "b548ff02-c6f7-4e90-ad8f-f808f5ef17c0",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "50243953-2321-4497-a698-db5cd412fbf3",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "4c130993-81d3-43b3-85f6-87a4c7db1a05",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "fb950b3f-1f68-4c67-9a08-96f2c8e61b10",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "3cf88036-50ed-404a-ab00-372499df1db7",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "9107665b-7f73-4a79-9c14-f37d9ea8637b",
+      "result_id": "33b64607-c7c7-4f62-aee1-e9e9ba87c24e"
+    },
+    {
+      "claim_id": "a96b7b76-ba42-4e9e-86b0-0466cebd0edb",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "53a31774-73fa-455c-b1ac-da026787083d",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "f8e3133a-bb7f-4dbd-b7d6-7e5930dc19a5",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "4ba28918-28ef-4466-9391-ddc497a5dfb7",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "fcdccdcb-c863-4cc0-b74b-ced4d1804b5a",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "bb8e4f01-e91b-49ce-9c3d-64ea546245c6",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "3d5c7fde-ea51-4b58-b518-77ec219c76b8",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "2f4a425b-8f62-47f9-a461-9f94119b6f58",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "1cd4a77d-3900-4039-9721-0be37f863b8f",
+      "result_id": "76edcaec-e89a-45af-bf43-48e68b1731cb"
+    },
+    {
+      "claim_id": "8825aaeb-4fff-468d-bc0e-9a0903fb9e5c",
+      "result_id": "946c2e4c-59f1-461e-aa7f-279c205e5721"
+    },
+    {
+      "claim_id": "459788ee-6257-4256-8d1e-d8f95c7abbbd",
+      "result_id": "946c2e4c-59f1-461e-aa7f-279c205e5721"
+    },
+    {
+      "claim_id": "4c2ef460-2362-4a0f-ad43-042b580b0cb1",
+      "result_id": "946c2e4c-59f1-461e-aa7f-279c205e5721"
+    },
+    {
+      "claim_id": "5d4e720e-8011-4255-890d-412bf0e6106d",
+      "result_id": "946c2e4c-59f1-461e-aa7f-279c205e5721"
+    },
+    {
+      "claim_id": "cb922269-1863-4d8f-bb13-9658e328fbfe",
+      "result_id": "946c2e4c-59f1-461e-aa7f-279c205e5721"
+    },
+    {
+      "claim_id": "75a8d073-6215-4a0a-ba0a-2c49bfe6fd3a",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "f15ea6ff-561e-455b-b39e-3cf41c6da84a",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "093a07be-4cdb-4ac4-b60f-cc95328ee4ee",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "b970d2f4-4de2-42fd-aecc-ac7a6e28d860",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "723c22f9-8d98-4de5-a56c-d8850bbe121f",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "55721b71-d9d9-4948-9ca5-96eb3fdcd93c",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "ea8bb62f-4602-4ee1-9646-b5a939d34d75",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "5db240ae-b591-46fd-93b9-c64352528356",
+      "result_id": "9e2a10e2-9f82-4be2-8884-6d5aad901771"
+    },
+    {
+      "claim_id": "6f2e93cf-4fb6-44da-aee1-a79e3b99e7eb",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "93f83b4f-7f88-40a0-9bb2-0f6f7a5b5797",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "c305d8c2-a973-4dcc-84d6-24d7f60e6dae",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "671fd73d-f242-47a8-9506-85121a65f0b9",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "2dc80363-543b-469f-8ec2-56e356f60633",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "f65a7622-de89-4968-ab5e-ccc2a472775b",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "165611b0-2bcb-4b1a-a91a-5f3b65124696",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "608611ea-e998-4afe-a937-ca34805d4817",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "be9051df-536a-4a50-a7b4-dd22c7c806dd",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "7aff93fd-7388-42de-b6b6-5a07237ed529",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "f3423efa-1d0d-4652-8161-a1208882df58",
+      "result_id": "2416bc6e-8b28-490b-a9f4-752d2d39d121"
+    },
+    {
+      "claim_id": "02b09551-651f-43f2-ab18-04d2af3e1d2a",
+      "result_id": "35d474ef-7be7-4479-852e-f1702a88b624"
+    },
+    {
+      "claim_id": "f4f6ed6f-793e-43ec-932d-da19fa401810",
+      "result_id": "35d474ef-7be7-4479-852e-f1702a88b624"
+    },
+    {
+      "claim_id": "174fa238-3665-466e-8328-85ad549307bf",
+      "result_id": "35d474ef-7be7-4479-852e-f1702a88b624"
+    },
+    {
+      "claim_id": "c4b7c2b9-5716-4123-870a-7ccc2cf5ea62",
+      "result_id": "35d474ef-7be7-4479-852e-f1702a88b624"
+    },
+    {
+      "claim_id": "6c9bf28a-6255-453b-8dae-1f120c09ae93",
+      "result_id": "35d474ef-7be7-4479-852e-f1702a88b624"
+    },
+    {
+      "claim_id": "c6f89545-fac1-450e-b654-d98157ce56f4",
+      "result_id": "c6cea9ae-3eeb-46d3-9828-727e559e04d2"
+    },
+    {
+      "claim_id": "ec9a0344-78e3-4a88-ac1b-3eef51991dec",
+      "result_id": "c6cea9ae-3eeb-46d3-9828-727e559e04d2"
+    },
+    {
+      "claim_id": "59122ae0-f49c-4553-9640-9deeced3e1bd",
+      "result_id": "c6cea9ae-3eeb-46d3-9828-727e559e04d2"
+    },
+    {
+      "claim_id": "d80571a1-fd48-4ea5-a5a0-878456c74e42",
+      "result_id": "c6cea9ae-3eeb-46d3-9828-727e559e04d2"
+    },
+    {
+      "claim_id": "560361ff-2ae0-4ed2-b06e-700ae5a8b661",
+      "result_id": "a6036e09-56b5-4d36-99af-5de7b23b34b1"
+    },
+    {
+      "claim_id": "27002768-4839-428f-b055-5e02c3c7e4d6",
+      "result_id": "a6036e09-56b5-4d36-99af-5de7b23b34b1"
+    },
+    {
+      "claim_id": "b015e2ea-d5d1-4655-a85f-ad2d7cd4a306",
+      "result_id": "a6036e09-56b5-4d36-99af-5de7b23b34b1"
+    },
+    {
+      "claim_id": "8a853b8b-38f8-4d43-95f0-a91e7d55c6d2",
+      "result_id": "a6036e09-56b5-4d36-99af-5de7b23b34b1"
+    },
+    {
+      "claim_id": "5430a482-d5eb-4245-97ee-6e46f72c3149",
+      "result_id": "708efee1-0afd-4f6e-acc3-bdd2b29229f5"
+    }
+  ],
+  "comparisons": []
+}

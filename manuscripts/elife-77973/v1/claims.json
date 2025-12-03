@@ -1,0 +1,3963 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Single-board computers such as the Raspberry Pi make it easy to control hardware setups for laboratory experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "Single-board computers such as the Raspberry Pi make it easy to control hardware setups for laboratory experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the capabilities of single-board computers in laboratory settings, drawing on established knowledge about these devices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "LabNet is a C++ optimized control layer software to give access to the Raspberry Pi connected hardware over a simple network protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet is a C++ optimized control layer software to give access to the Raspberry Pi connected hardware over a simple network protocol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of what LabNet is, representing the authors' characterization of their own software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "LabNet was developed to be suitable for time-critical operations.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet was developed to be suitable for time-critical operations, and to be simple to expand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal of the software development.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "LabNet was developed to be simple to expand.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet was developed to be suitable for time-critical operations, and to be simple to expand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal of the software development.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "LabNet leverages the actor model to simplify multithreading programming and to increase modularity.",
+    "claim_type": "EXPLICIT",
+    "source": "It leverages the actor model to simplify multithreading programming and to increase modularity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an architectural choice and its intended benefits.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The message protocol is implemented in Protobuf.",
+    "claim_type": "EXPLICIT",
+    "source": "The message protocol is implemented in Protobuf and offers performance, small message size, and supports a large number of programming languages on the client side.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the implementation technology used.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Protobuf offers performance, small message size, and supports a large number of programming languages on the client side.",
+    "claim_type": "EXPLICIT",
+    "source": "The message protocol is implemented in Protobuf and offers performance, small message size, and supports a large number of programming languages on the client side.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the benefits of using Protobuf, based on established knowledge about this technology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "LabNet shows good performance compared to locally executed tools like Bpod, pyControl, or Autopilot.",
+    "claim_type": "EXPLICIT",
+    "source": "It shows good performance compared to locally executed tools like Bpod, pyControl, or Autopilot and reaches sub-millisecond range in network communication latencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance evaluation data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "LabNet reaches sub-millisecond range in network communication latencies.",
+    "claim_type": "EXPLICIT",
+    "source": "It shows good performance compared to locally executed tools like Bpod, pyControl, or Autopilot and reaches sub-millisecond range in network communication latencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance measurements shown in the figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "LabNet can monitor and react simultaneously to up to 14 pairs of digital inputs, without increasing latencies.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet can monitor and react simultaneously to up to 14 pairs of digital inputs, without increasing latencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test results presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "LabNet itself does not provide support for the design of experimental tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet itself does not provide support for the design of experimental tasks. This is left to the client.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about what LabNet does not do, describing its scope.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "LabNet can be used for general automation in experimental laboratories with its control PC located at some distance.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet can be used for general automation in experimental laboratories with its control PC located at some distance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a use case for LabNet based on its network-based architecture.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "LabNet is open source and under continuing development.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet is open source and under continuing development.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the software's licensing and development status.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The combination of open-source software, low cost microcontroller electronics, and the easy access to digital fabrication have led to a plethora of open-source solutions for animal behaviour experimental systems.",
+    "claim_type": "EXPLICIT",
+    "source": "The combination of open-source software, low cost microcontroller electronics, and the easy access to digital fabrication have led to a plethora of open-source solutions for animal behaviour experimental systems (Open Behaviour [Laubach et al., 2021], Bpod [Sanders, 2021], Autopilot [Saunders and Wehr, 2019], pyControl [Akam et al., 2022], MiniScope [Cai et al., 2016], Bonsai [Lopes et al., 2015], Whisker [Cardinal and Aitken, 2010], OpenEphys GUI [Siegle et al., 2017]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to multiple open-source systems.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The authors have 10 years of experience with the Raspberry Pi for animal behaviour experimental control.",
+    "claim_type": "EXPLICIT",
+    "source": "Using our 10-year experience with the Rasperry Pi for animal behaviour experimental control and after two decades with different self-developed embedded control approaches, we have developed in C++ a new, powerful, and highly versatile platform for hardware control via the Raspberry Pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' background and experience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The authors have two decades of experience with different self-developed embedded control approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Using our 10-year experience with the Rasperry Pi for animal behaviour experimental control and after two decades with different self-developed embedded control approaches, we have developed in C++ a new, powerful, and highly versatile platform for hardware control via the Raspberry Pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' background and experience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The platform has to be suitable for time-critical operations.",
+    "claim_type": "EXPLICIT",
+    "source": "We had two major goals: the platform has to be suitable for time-critical operations and be easy to extend.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The platform has to be easy to extend.",
+    "claim_type": "EXPLICIT",
+    "source": "We had two major goals: the platform has to be suitable for time-critical operations and be easy to extend.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "LabNet had to support a wide variety of hardware components.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, LabNet had to support a wide variety of hardware components and we wanted to simultaneously control multiple animal behaviour experimental operant boxes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a requirement for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The authors wanted to simultaneously control multiple animal behaviour experimental operant boxes.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, LabNet had to support a wide variety of hardware components and we wanted to simultaneously control multiple animal behaviour experimental operant boxes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a requirement for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "When conducting automated behavioural experiments, it is advantageous to test many animals in parallel with identical or, if necessary, individually specific experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "When conducting automated behavioural experiments, it is advantageous to test many animals in parallel with identical or, if necessary, individually specific experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about experimental design based on established practice.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Testing many animals in parallel is the only way to obtain complete data sets quickly and can only be achieved through automation.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the only way to obtain complete data sets quickly and can only be achieved through automation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the benefits of parallel testing and automation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Figure 1 shows examples of operant conditioning cages (Skinner boxes) as controlled by LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 1 shows examples of operant conditioning cages (Skinner boxes; Skinner, 1938) as controlled by LabNet.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This references Figure 1 which displays the experimental setups.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The authors' intention was not to create a completely new ecosystem like Autopilot.",
+    "claim_type": "EXPLICIT",
+    "source": "Our intention was not to create a completely new ecosystem like Autopilot.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the authors' design philosophy.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The authors wanted to simplify communication with hardware for projects using their coding language of choice on the PC.",
+    "claim_type": "EXPLICIT",
+    "source": "We wanted to simplify communication with hardware for projects using their coding language of choice on the PC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The authors wanted to remain general so that LabNet can become a general platform for experimental laboratory automation.",
+    "claim_type": "EXPLICIT",
+    "source": "Also, we wanted to remain general so that LabNet can become a general platform for experimental laboratory automation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a design goal for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The Raspberry Pi is low cost.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected the Raspberry Pi because it is low cost, powerful, has a wide selection of I/O add-ons and software components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Raspberry Pi pricing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The Raspberry Pi is powerful.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected the Raspberry Pi because it is low cost, powerful, has a wide selection of I/O add-ons and software components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Raspberry Pi capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The Raspberry Pi has a wide selection of I/O add-ons and software components.",
+    "claim_type": "EXPLICIT",
+    "source": "We selected the Raspberry Pi because it is low cost, powerful, has a wide selection of I/O add-ons and software components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the Raspberry Pi ecosystem.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "To keep signal lines short, each experimental setup was given its own Raspberry Pi.",
+    "claim_type": "EXPLICIT",
+    "source": "To keep signal lines short, we gave each experimental setup its own Raspberry Pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "All systems are connected to the Ethernet network and are manageable via a central instance.",
+    "claim_type": "EXPLICIT",
+    "source": "All systems are connected to the Ethernet network and are manageable via a central instance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network architecture of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The central instance can be a normal PC and be located outside of the laboratory.",
+    "claim_type": "EXPLICIT",
+    "source": "This instance can be a normal PC and be located outside of the laboratory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The condition of experimental states and the animals can be monitored at any time, even without entering the laboratory.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the condition of experimental states and the animals can be monitored at any time, even without entering the laboratory.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the network-based architecture allowing remote access.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Autopilot also uses a swarm of Raspberry Pis.",
+    "claim_type": "EXPLICIT",
+    "source": "Autopilot also uses a swarm of Raspberry Pis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about Autopilot's architecture, which can be verified from Autopilot documentation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Autopilot implements a hierarchy where each Raspberry Pi can take a different role.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it implements a hierarchy where each Raspberry Pi can take a different role.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about Autopilot's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Autopilot's hierarchical approach requires an additional configuration step and can complicate troubleshooting.",
+    "claim_type": "EXPLICIT",
+    "source": "This requires an additional configuration step and can complicate troubleshooting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the consequences of Autopilot's hierarchical design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Each Raspberry Pi in the LabNet system runs the same software.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the reason why each of our Raspberry Pis runs the same software and overall experimental control is executed by the central instance that is for example run from a PC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design choice for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Overall experimental control is executed by the central instance that is run from a PC.",
+    "claim_type": "EXPLICIT",
+    "source": "This is the reason why each of our Raspberry Pis runs the same software and overall experimental control is executed by the central instance that is for example run from a PC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The separation of control determined the network architecture of the entire system.",
+    "claim_type": "EXPLICIT",
+    "source": "This separation also determined the network architecture of the entire system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about how design decisions influenced architecture.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The local instances on the Raspberry Pi are servers.",
+    "claim_type": "EXPLICIT",
+    "source": "The local instances on the Raspberry Pi are servers, and the central instance is the client.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The central instance is the client.",
+    "claim_type": "EXPLICIT",
+    "source": "The local instances on the Raspberry Pi are servers, and the central instance is the client.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There can be one client to control experiments on all systems or multiple clients each controlling an experiment on one or more systems.",
+    "claim_type": "EXPLICIT",
+    "source": "There can be one client to control experiments on all systems or multiple clients each controlling an experiment on one or more systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "At least so far, not multiple clients can be connected to one server.",
+    "claim_type": "EXPLICIT",
+    "source": "But, at least so far, not multiple clients connected to one server.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a current limitation of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "LabNet was designed as a distributed system (network) where LabNet presents a node running on a RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "We designed LabNet as a distributed system (network) where LabNet presents a node running on a RasPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Openness means that each node can control an experimental chamber on its own or together with a number of other nodes.",
+    "claim_type": "EXPLICIT",
+    "source": "Openness means that each node can control an experimental chamber on its own or together with a number of other nodes (for experimental system examples, see Figure 1 and 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines what 'openness' means in the context of the system design, referencing van Steen and Tanenbaum, 2017.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Scalability means that there can be any number of nodes and thus experimental chambers in the system.",
+    "claim_type": "EXPLICIT",
+    "source": "Scalability means that there can be any number of nodes and thus experimental chambers in the system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This defines what 'scalability' means in the context of the system design, referencing van Steen and Tanenbaum, 2017.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "A node or a chamber has to be removable from the system without adjustments on the other nodes.",
+    "claim_type": "EXPLICIT",
+    "source": "However, a node or a chamber has to be removable from the system without adjustments on the other nodes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design requirement for the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Each node in the system is controlled by a RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "To ensure this, each node in our system is controlled by a RasPi, each RasPi is configured in the same way and controlled by the same software.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Each RasPi is configured in the same way and controlled by the same software.",
+    "claim_type": "EXPLICIT",
+    "source": "To ensure this, each node in our system is controlled by a RasPi, each RasPi is configured in the same way and controlled by the same software.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "At most one experimental system can be connected to each RasPi to be removable without electrical adjustments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this also comes with the restriction that at most one experimental system can be connected to each RasPi to be removable without electrical adjustments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design constraint.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "LabNet only needs to accept a single connection and does not need resource management for multiple connections.",
+    "claim_type": "EXPLICIT",
+    "source": "But this also means a simplification: LabNet only needs to accept a single connection and does not need resource management for multiple connections, because only one experiment runs on one system and the hardware is not shared.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the design decision to have one system per RasPi.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The network of LabNet nodes represents the distributed system and offers, as servers, the hardware resources in the network.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the network of LabNet nodes represents the distributed system and offers, as servers, the hardware resources in the network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Hardware control in the context of the experiments is the responsibility of clients and not a LabNet duty.",
+    "claim_type": "EXPLICIT",
+    "source": "However, hardware control in the context of the experiments is the responsibility of clients and not a LabNet duty.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the division of responsibilities in the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "LabNet does not decide about an output pin state, but LabNet knows how to switch the state and performs it at the client's request.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, LabNet does not decide about an output pin state, but LabNet knows how to switch the state and performs it at the client's request.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the division of responsibilities between LabNet and clients.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "One client could take the control over of the entire LabNet distributed system or divide the nodes among several clients.",
+    "claim_type": "EXPLICIT",
+    "source": "One client could take the control over of the entire LabNet distributed system or divide the nodes among several clients.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of the system architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "A flexible and fast message protocol using Protobuf was developed for communication between LabNet and client.",
+    "claim_type": "EXPLICIT",
+    "source": "For communication between LabNet and client a flexible and fast message protocol using Protobuf was developed (section Message protocol).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a component of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The clients can be implemented in any language with Protobuf support, for example, Python, C#, C++, etc.",
+    "claim_type": "EXPLICIT",
+    "source": "The clients can be implemented in any language with Protobuf support, for example, Python, C#, C++, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability enabled by using Protobuf.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The Raspberry Pi runs 'Raspberry Pi OS': a Debian-based Linux distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the Raspberry Pi is a single-board computer, it runs 'Raspberry Pi OS': a Debian-based Linux distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the Raspberry Pi operating system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The Raspberry Pi OS allows a large freedom in the choice of programming language and software tools.",
+    "claim_type": "EXPLICIT",
+    "source": "This allows a large freedom in the choice of programming language and software tools.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the fact that it runs a Linux distribution.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "All interpreted programming languages have a disadvantage in execution speed compared to compiled languages.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, all interpreted programming languages have a disadvantage in execution speed compared to compiled languages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about programming language performance.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Many of the tools developed recently, such as Autopilot and pyControl, use Python.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, many of the tools developed recently, such as Autopilot and pyControl, use Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about other tools that can be verified.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Python is a simple language and provides many packages for all purposes.",
+    "claim_type": "EXPLICIT",
+    "source": "Python is a simple language and provides many packages for all purposes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Python.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The authors decided to use C++ because execution speed was of primary importance.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because execution speed was of primary importance we decided to use C++.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Extensions with new functionalities is generally possible in two ways: software adaption with recompilation in case of compiled languages and a plug-in system.",
+    "claim_type": "EXPLICIT",
+    "source": "Extensions with new functionalities is generally possible in two ways: (i) software adaption with recompilation in case of compiled languages and (ii) a plug-in system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about software extensibility.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "In the current LabNet version, recompilation is used for extensions.",
+    "claim_type": "EXPLICIT",
+    "source": "In the current LabNet version, we use recompilation but our road map also includes a future plug-in system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current state of the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The road map includes a future plug-in system.",
+    "claim_type": "EXPLICIT",
+    "source": "In the current LabNet version, we use recompilation but our road map also includes a future plug-in system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future plans for the software.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Since its version 2 the Raspberry Pi has 4 cores.",
+    "claim_type": "EXPLICIT",
+    "source": "Since its version 2 the Raspberry Pi has 4 cores.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about Raspberry Pi hardware specifications.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Most of the Raspberry Pi's hardware controllers, such as USB or Ethernet, operate asynchronously.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, most of its hardware controllers, such as USB or Ethernet, operate asynchronously, thus they do not require CPU capacity because of DMA (Direct Memory Access), and they report their work completion via interrupt messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Raspberry Pi hardware architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The Raspberry Pi's hardware controllers do not require CPU capacity because of DMA (Direct Memory Access).",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, most of its hardware controllers, such as USB or Ethernet, operate asynchronously, thus they do not require CPU capacity because of DMA (Direct Memory Access), and they report their work completion via interrupt messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about DMA technology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The Raspberry Pi's hardware controllers report their work completion via interrupt messages.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, most of its hardware controllers, such as USB or Ethernet, operate asynchronously, thus they do not require CPU capacity because of DMA (Direct Memory Access), and they report their work completion via interrupt messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about interrupt-driven I/O.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "LabNet needed an architecture that optimally leverages the already available hardware asynchrony for parallel execution.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet needed an architecture that optimally leverages this already available hardware asynchrony for parallel execution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design requirement for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Handling GPIO lines is fast, but accessing a UART may lead to considerable delays in sequentially executed software.",
+    "claim_type": "EXPLICIT",
+    "source": "Handling GPIO lines is fast, but accessing a UART may lead to considerable delays in sequentially executed software.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about hardware I/O performance characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Programming with many parallel threads is a very error-prone and time-consuming task.",
+    "claim_type": "EXPLICIT",
+    "source": "Since programming with many parallel threads is a very error-prone and time-consuming task, we decided to develop an actor-based software (see sections Actor model and SObjectizer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about concurrent programming challenges.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The authors decided to develop an actor-based software.",
+    "claim_type": "EXPLICIT",
+    "source": "Since programming with many parallel threads is a very error-prone and time-consuming task, we decided to develop an actor-based software (see sections Actor model and SObjectizer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Actor-based software provides higher flexibility and software modularity.",
+    "claim_type": "EXPLICIT",
+    "source": "This also provides higher flexibility and software modularity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of the actor model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The median for C# in the set out test was between 0.36 ms for RasPi 4 and 1.01 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "The median for C# was between 0.36 ms for 4 and 1.01 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The median for Python in the set out test was 0.32 ms on RasPi 4 and 0.80 ms on RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For Python 0.32 on RasPi 4 and 0.80 on RasPi 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The median for C++ in the set out test was 0.26 ms on RasPi 4 and 0.80 ms on RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For C++ 0.26 on RasPi 4 and 0.80 on RasPi 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "For C# the median in the read and set GPIO test was 0.89 ms for RasPi 4 and 1.23 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For C# the median was 0.89 ms for 4 and 1.23 ms for 2 and mean values were 0.9\u00b10.19 ms for 4 and 1.24\u00b10.18 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "For C# the mean values in the read and set GPIO test were 0.9\u00b10.19 ms for RasPi 4 and 1.24\u00b10.18 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For C# the median was 0.89 ms for 4 and 1.23 ms for 2 and mean values were 0.9\u00b10.19 ms for 4 and 1.24\u00b10.18 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "For Python the median in the read and set GPIO test was 0.89 ms for RasPi 4 and 1.28 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For Python the median was 0.89 ms for 4 and 1.28 ms for 2 and mean values were 0.88\u00b10.18 ms for 4 and 1.24\u00b10.16 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "For Python the mean values in the read and set GPIO test were 0.88\u00b10.18 ms for RasPi 4 and 1.24\u00b10.16 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For Python the median was 0.89 ms for 4 and 1.28 ms for 2 and mean values were 0.88\u00b10.18 ms for 4 and 1.24\u00b10.16 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "For C++ the median in the read and set GPIO test was 0.93 ms for RasPi 4 and 1.12 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For C++, the median was 0.93 ms for 4 and 1.12 ms for 2 and mean values were 0.92\u00b10.15 ms for 4 and 1.12\u00b10.07 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "For C++ the mean values in the read and set GPIO test were 0.92\u00b10.15 ms for RasPi 4 and 1.12\u00b10.07 ms for RasPi 2.",
+    "claim_type": "EXPLICIT",
+    "source": "For C++, the median was 0.93 ms for 4 and 1.12 ms for 2 and mean values were 0.92\u00b10.15 ms for 4 and 1.12\u00b10.07 ms for 2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "LabNet uses a polling mechanism to detect changes in digital inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet uses a polling mechanism to detect changes in digital inputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical implementation detail of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "By default, LabNet runs at 4 kHz polling.",
+    "claim_type": "EXPLICIT",
+    "source": "By default, LabNet runs at 4 kHz polling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a configuration parameter of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Mean values for 1 kHz polling were 1.23\u00b10.16 ms for C# on RasPi 4.",
+    "claim_type": "EXPLICIT",
+    "source": "Mean values in case of 1 kHz were 1.23\u00b10.16 and 0.75\u00b10.13 ms for non-stop for C#.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Mean values for non-stop polling were 0.75\u00b10.13 ms for C# on RasPi 4.",
+    "claim_type": "EXPLICIT",
+    "source": "Mean values in case of 1 kHz were 1.23\u00b10.16 and 0.75\u00b10.13 ms for non-stop for C#.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Four kHz polling with 0.9 \u00b1 0.19 ms offers slightly worse results compared to non-stop polling, but only utilizes 10% of the capacity of one CPU core.",
+    "claim_type": "EXPLICIT",
+    "source": "Four kHz with 0.9 \u00b1 0.19 ms offers slightly worse results compared to non-stop polling, but on the other hand only utilizes 10% of the capacity of one CPU core.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data and represents a trade-off analysis.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The compiler optimization flags did not influence any of the tests.",
+    "claim_type": "EXPLICIT",
+    "source": "As a further result, the compiler optimization flags did not influence any of the tests.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The compiler optimization flags not influencing the tests indicates that LabNet has no performance issues on the RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that LabNet has no performance issues on the RasPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the observation that optimization flags had no effect.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The 1 GigE update of the RaspberryPi 4 causes a performance increase over models 2 and 3.",
+    "claim_type": "EXPLICIT",
+    "source": "The 1 GigE update of the RasberryPi 4 causes a performance increase over models 2 and 3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data comparing different RasPi models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Despite the differences in implementation, all clients are relatively close with their performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the differences in implementation, all clients are relatively close with their performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data comparing different client languages.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The language used at the client side is not important, at least for the simple cases considered.",
+    "claim_type": "EXPLICIT",
+    "source": "The results also show that the language used at the client side is not important, at least for the simple cases considered here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the performance test results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "LabNet can monitor and control up to 14 pairs of IO-pins in parallel without any loss in performance.",
+    "claim_type": "EXPLICIT",
+    "source": "The results in Figure 2c show that LabNet can monitor and control up to 14 pairs of IO-pins in parallel without any loss in performance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by the stress test results shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The latencies went down slightly for two test signals, but then remained at that level.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the latencies went down slightly for two test signals, but then remained at this level; the median for C# was 0.89 ms for one signal and 0.70 ms for two.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The median for C# in the stress test was 0.89 ms for one signal and 0.70 ms for two signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the latencies went down slightly for two test signals, but then remained at this level; the median for C# was 0.89 ms for one signal and 0.70 ms for two.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "The latency decrease with two signals probably has to do with the polling in LabNet and the parallel test execution of the second RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "This probably has to do with the polling in LabNet and the parallel test execution of the second RasPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about the cause of the observed latency decrease.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "With two signals, it is more likely that LabNet will notice the pin state change within shorter delay.",
+    "claim_type": "EXPLICIT",
+    "source": "With two signals, it is more likely that LabNet will notice the pin state change within shorter delay.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the effect of multiple signals on polling detection.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "With a single test signal the second RasPi could execute just over 400 events per second.",
+    "claim_type": "EXPLICIT",
+    "source": "With a single test signal this was just over 400 events per second.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "With the maximum of 14 tests each single pin switched only 200 but all pins together a total of 2800 times per second.",
+    "claim_type": "EXPLICIT",
+    "source": "With the maximum of 14 tests each single pin switched only 200 but all pins together a total of 2800 times per second.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The drop in the number of events per second from 400 for a single IO-pin occurs as soon as more than 4 IO-pin pairs are handled.",
+    "claim_type": "EXPLICIT",
+    "source": "The drop in the number of events per second from 400 for a single IO-pin occurs as soon as more than 4 IO-pin pairs are handled.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The drop in events per second is a consequence of the four CPU cores on the RaspberryPi.",
+    "claim_type": "EXPLICIT",
+    "source": "This is a consequence of the four CPU cores on the RasberryPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the cause of the performance drop.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "As soon as the test signal has been set, the software continuously monitors the state of the response pin, which keeps one CPU core fully busy and prevents the execution of the other test threads.",
+    "claim_type": "EXPLICIT",
+    "source": "As soon as the test signal has been set, the software continuously monitors the state of the response pin. This keeps one CPU core fully busy and prevents the execution of the other test threads.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the behavior of the test software.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "LabNet has no problems to process several thousand messages per second in each direction.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this performance evaluation also shows that LabNet has no problems to process several thousand messages per second in each direction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the stress test results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "An adapted version of the 'read and set' test was implemented for Autopilot, Bpod, and pyControl to achieve measurement comparability.",
+    "claim_type": "EXPLICIT",
+    "source": "We implemented an adapted version of the 'read and set' test for Autopilot, Bpod, and pyControl to achieve measurement comparability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology for the comparison.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The latency measurements for comparison tools were performed in exactly the same way as previously with LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "The latency measurements were performed in exactly the same way as previously with LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology for the comparison.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Tests were repeated 10,000 times for the comparison.",
+    "claim_type": "EXPLICIT",
+    "source": "Tests were repeated 10,000 times.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the methodology for the comparison.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "Different from LabNet all comparison tools ran locally and did not send commands over the wire in the network.",
+    "claim_type": "EXPLICIT",
+    "source": "Different from LabNet all tools ran locally and did not send commands over the wire in the network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key difference in the comparison setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "In Whisker, the communication occurs over the network; however, both Whisker and all task clients usually run on the same PC.",
+    "claim_type": "EXPLICIT",
+    "source": "In Whisker, the communication occurs over the network; however, both Whisker and all task clients usually run on the same PC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the typical setup for Whisker.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Communication in Whisker when running on the same PC is extremely fast and is reported by the Whisker authors to require only 0.066 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Such communication is extremely fast and is also reported by the Whisker authors (Cardinal and Aitken, 2010) to require only 0.066 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Cardinal and Aitken, 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The 1 ms latency for Whisker comes from Whisker's internal 1 kHz polling frequency for processing incoming commands.",
+    "claim_type": "EXPLICIT",
+    "source": "The 1 ms latency comes from Whisker's internal 1 kHz polling frequency for processing incoming commands.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from Whisker's design as reported in the literature.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The measured mean latency for Autopilot was 0.93 \u00b1 0.08 ms on RasPi 4.",
+    "claim_type": "EXPLICIT",
+    "source": "The measured mean latency was 0.93 \u00b1 0.08 ms on RasPi 4.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The mean latency for pyControl is 0.66 \u00b1 0.11 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean latency is 0.66 \u00b1 0.11 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The pyControl latency of 0.66 \u00b1 0.11 ms is comparable with reported results 0.56\u00b10.02 ms from Akam et al., 2022.",
+    "claim_type": "EXPLICIT",
+    "source": "This is comparable with reported results 0.56\u00b10.02 ms from Akam et al., 2022.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This compares the measured data with published results.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The Bpod state machine runs at 10 kHz.",
+    "claim_type": "EXPLICIT",
+    "source": "Since the Bpod state machine runs at 10 kHz, we expected it to perform best which was the case.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about Bpod's specifications.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "The mean latency for Bpod was 0.1 \u00b1 0.002 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "The mean latency was 0.1 \u00b1 0.002 ms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "According to the measurements, LabNet achieves latency times comparable to locally executed applications, even despite client control of LabNet over the network via TCP/IP.",
+    "claim_type": "EXPLICIT",
+    "source": "According to these measurements, LabNet achieves latency times comparable to locally executed applications, even despite client control of LabNet over the network via TCP/IP.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the comparison test results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "The version of LabNet presented here is not the authors' first solution of distributed experimental hardware control.",
+    "claim_type": "EXPLICIT",
+    "source": "With LabNet we present a C++ optimized control layer software to control Raspberry Pi connected hardware over a simple network protocol. LabNet can be used for general automation in experimental laboratories. And the controlling PC can be located at some distance. The version of LabNet presented here is not our first solution of distributed experimental hardware control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' prior work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "The authors initially used PC digital IO boards for 760 parallel IO lines.",
+    "claim_type": "EXPLICIT",
+    "source": "After initially using PC digital IO boards for 760 parallel IO lines (Winter and Stich, 2005), we moved to a custom developed microcontroller board connected to the PC initially via UART and later via Ethernet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Winter and Stich, 2005.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "The authors moved to a custom developed microcontroller board connected to the PC initially via UART and later via Ethernet.",
+    "claim_type": "EXPLICIT",
+    "source": "After initially using PC digital IO boards for 760 parallel IO lines (Winter and Stich, 2005), we moved to a custom developed microcontroller board connected to the PC initially via UART and later via Ethernet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' prior work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "In 2015 the authors switched to the Raspberry Pi avoiding own hardware development.",
+    "claim_type": "EXPLICIT",
+    "source": "In 2015 we switched to the Rasberry Pi avoiding own hardware development.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' prior work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The authors used a prior version of LabNet for 5 years before rebuilding the current version.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a prior version of LabNet for 5 years before rebuilding over the past 2 years from the ground up the current highly optimized version of LabNet using our prior experience with laboratory experimental control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the development history of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "For experiments with nectar-feeding bats the authors controlled a system of up to 76 artificial sugar water feeders (artificial flowers).",
+    "claim_type": "EXPLICIT",
+    "source": "For our experiments with nectar-feeding bats we controlled a system of up to 76 artificial sugar water feeders (artificial flowers) each of which included a nose-poke sensor, an LED, a motorized swivel arm to close the flower and two valves for reward (Winter and Stich, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Winter and Stich, 2005.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Each artificial flower included a nose-poke sensor, an LED, a motorized swivel arm to close the flower and two valves for reward.",
+    "claim_type": "EXPLICIT",
+    "source": "For our experiments with nectar-feeding bats we controlled a system of up to 76 artificial sugar water feeders (artificial flowers) each of which included a nose-poke sensor, an LED, a motorized swivel arm to close the flower and two valves for reward (Winter and Stich, 2005).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Winter and Stich, 2005.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Later the flowers were extended with RFID readers for the individual identification of ID chipped bats.",
+    "claim_type": "EXPLICIT",
+    "source": "Later the flowers were extended with RFID readers for the individual identification of ID chipped bats and has been used with freely ranging bats both in the rainforest (Nachev et al., 2017) and in the laboratory (Wintergerst et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Nachev et al., 2017 and Wintergerst et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "The extended flower system has been used with freely ranging bats both in the rainforest and in the laboratory.",
+    "claim_type": "EXPLICIT",
+    "source": "Later the flowers were extended with RFID readers for the individual identification of ID chipped bats and has been used with freely ranging bats both in the rainforest (Nachev et al., 2017) and in the laboratory (Wintergerst et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Nachev et al., 2017 and Wintergerst et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "In the earlier systems the authors used a UART-to-Ethernet converter from Perle Systems to receive RFID data.",
+    "claim_type": "EXPLICIT",
+    "source": "While in the earlier systems we used a UART-to-Ethernet converter from Perle Systems to receive RFID data, we now use a custom 32-channel UART HAT for the Rasperry Pi with LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' prior work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The authors now use a custom 32-channel UART HAT for the Raspberry Pi with LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "While in the earlier systems we used a UART-to-Ethernet converter from Perle Systems to receive RFID data, we now use a custom 32-channel UART HAT for the Rasperry Pi with LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The stepper-motor nectar pumps and the rest of the hardware are now connected to the RasPi and controlled via LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "Also the stepper-motor nectar pumps and the rest of the hardware (nose-poke sensor, LED, valves, etc.) are now connected to the RasPi and controlled via LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "In the case of individually kept animals, each flower had its own RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "As to the network, in the case of individually kept animals, each flower had its own RasPi while in flower fields, several flowers shared one RasPi, depending the distance between experimental units.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network architecture used in the experiments.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "In flower fields, several flowers shared one RasPi, depending the distance between experimental units.",
+    "claim_type": "EXPLICIT",
+    "source": "As to the network, in the case of individually kept animals, each flower had its own RasPi while in flower fields, several flowers shared one RasPi, depending the distance between experimental units.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network architecture used in the experiments.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C133",
+    "claim": "In a study on rational choice by mice, ID chipped mice in a group home cage could choose between four water dispensers.",
+    "claim_type": "EXPLICIT",
+    "source": "In a study on rational choice by mice, ID chipped mice in a group home cage could choose between four water dispensers built very similar to our artificial bat flowers, with nose-poke sensor, a valve, an RFID reader, and a syringe pump to deliver the water.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The water dispensers were built very similar to the artificial bat flowers, with nose-poke sensor, a valve, an RFID reader, and a syringe pump to deliver the water.",
+    "claim_type": "EXPLICIT",
+    "source": "In a study on rational choice by mice, ID chipped mice in a group home cage could choose between four water dispensers built very similar to our artificial bat flowers, with nose-poke sensor, a valve, an RFID reader, and a syringe pump to deliver the water.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "In the water dispenser setup, all hardware was connected to RasPi and controlled with LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, all hardware was connected to RasPi and controlled with LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "The authors have used LabNet in connection with commercially available experimental chambers.",
+    "claim_type": "EXPLICIT",
+    "source": "We have also used LabNet in connection with commercially available experimental chambers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes an application of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "The touchscreen system for rats from Campden Instruments was extended using LabNet that controlled a gating system (ID sorter) to automatically perform experiments with group housed rats.",
+    "claim_type": "EXPLICIT",
+    "source": "An example is the touchscreen system for rats from Campden Instruments that we extended using LabNet that controlled a gating system (ID sorter) to automatically perform experiments with group housed rats (Marion et al., 2017) (see Figure 4 and more below).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Marion et al., 2017 and reference to Figure 4.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C138",
+    "claim": "The program for the sorting procedure on the PC started the experiment in the touchscreen chamber via a TCP/IP protocol implemented in collaboration with Campden Instruments every time a new animal was sorted in.",
+    "claim_type": "EXPLICIT",
+    "source": "The program for the sorting procedure on the PC started the experiment in the touchscreen chamber via a TCP/IP protocol implemented in collaboration with Campden Instruments every time a new animal was sorted in.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation of the experimental system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C139",
+    "claim": "The integration with Campden Instruments' system allowed the authors to conduct the experiments with multiple animals automatically and unsupervised.",
+    "claim_type": "EXPLICIT",
+    "source": "This allowed us to conduct the experiments with multiple animals automatically and unsupervised.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of the system integration.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C140",
+    "claim": "The authors have implemented an experimental touchscreen system for group housed mice that is fully under RasPi and LabNet control.",
+    "claim_type": "EXPLICIT",
+    "source": "More recently we have implemented an experimental touchscreen system for group housed mice that is fully under RasPi and LabNet control (Figure 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by reference to Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C141",
+    "claim": "The touchscreen system for mice consists of a touchscreen system, a sorter, and a home cage.",
+    "claim_type": "EXPLICIT",
+    "source": "This consists of a touchscreen system, a sorter, and a home cage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the components of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C142",
+    "claim": "The touchscreen system has a monitor with an IR touch frame, a pellet magazine with pose-poke sensor, a row of LEDs, and a tone generator.",
+    "claim_type": "EXPLICIT",
+    "source": "The touchscreen system has a monitor with an IR touch frame, a pellet magazine with pose-poke sensor, a row of LEDs, and a tone generator.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the components of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C143",
+    "claim": "All components of the touchscreen system are connected to a RasPi with LabNet control.",
+    "claim_type": "EXPLICIT",
+    "source": "All components are connected to a RasPi with LabNet control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the implementation of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C144",
+    "claim": "The sorter has three RFID readers, two motorized doors, and two hall effect sensors, all connected to a RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "The sorter has three RFID readers, two motorized doors, and two hall effect sensors, all connected to a RasPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the components of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C145",
+    "claim": "The readers connect via UART-USB converters, motors are controlled via UART, and the hall effect sensors for door state connect to IO ports.",
+    "claim_type": "EXPLICIT",
+    "source": "The readers connect via UART-USB converters, motors are controlled via UART, and the hall effect sensors for door state connect to IO ports.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C146",
+    "claim": "The sorting procedure is realized by the PC, the client.",
+    "claim_type": "EXPLICIT",
+    "source": "The sorting procedure, that is, when which door goes up or down, is realized by the PC, the client.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the division of responsibilities in the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C147",
+    "claim": "The animals live inside the home cage and participate voluntarily and unsupervised in the experiments in the touchscreen chamber.",
+    "claim_type": "EXPLICIT",
+    "source": "The animals live inside the home cage and participate voluntarily and unsupervised in the experiments in the touchscreen chamber.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the experimental protocol.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C148",
+    "claim": "The authors had up to four touchscreen systems connected and controlled by one PC.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 4 shows only one system, but we had up to four systems connected and controlled by one PC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the scale of the experimental setup.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C149",
+    "claim": "In order to control more systems, they were simply connected to the network without further adjustments.",
+    "claim_type": "EXPLICIT",
+    "source": "In order to control more systems, they were simply connected to the network without further adjustments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This demonstrates the scalability of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C150",
+    "claim": "With identical systems, the same experiments could run everywhere at the same time.",
+    "claim_type": "EXPLICIT",
+    "source": "With identical systems, the same experiments could run everywhere at the same time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C151",
+    "claim": "LabNet is a very versatile distributed system which allows to control the hardware in laboratory and field experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet is a very versatile distributed system which allows to control the hardware in laboratory and field experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about LabNet's capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C152",
+    "claim": "LabNet achieves almost real-time hardware control despite the network communication.",
+    "claim_type": "EXPLICIT",
+    "source": "It achieves almost real-time hardware control despite the network communication.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the performance test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C153",
+    "claim": "The stress test measurements have shown that thousands of Ethernet messages can be handled by LabNet per second.",
+    "claim_type": "EXPLICIT",
+    "source": "Our stress test measurements have shown that thousands of Ethernet messages can be handled by LabNet per second.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the stress test data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C154",
+    "claim": "The bottleneck is the client and its ability to process and react to LabNet messages.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the bottleneck here is the client and its ability to process and react to LabNet messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the performance test results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C155",
+    "claim": "None of the authors' systems had reached the number of messages per second as in the stress test and they never had performance issues.",
+    "claim_type": "EXPLICIT",
+    "source": "However, none of our systems had reached the number of messages per second as in the stress test and we never had performance issues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' experience with the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C156",
+    "claim": "Very large messages in the network communication, for example, video data, could significantly worsen the latency of other messages.",
+    "claim_type": "EXPLICIT",
+    "source": "The only problem could be very large messages in the network communication, for example, video data. These could significantly worsen the latency of other messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about a potential limitation.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C157",
+    "claim": "There is the possibility to put RasPis with cameras into another network and on the PC receive the data via another network card.",
+    "claim_type": "EXPLICIT",
+    "source": "But, there is the possibility to put RasPis with cameras into another network and on the PC receive the data via another network card.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a potential solution to the video data problem.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C158",
+    "claim": "LabNet can also execute multiple tasks on one RasPi at the same time.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet can also execute multiple tasks on one RasPi at the same time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C159",
+    "claim": "In the touchscreen system experiments the authors observed inputs, generated multiple pulse trains, played sound, and displayed visual stimuli, all at the same time but never reached performance limits on the RasPi.",
+    "claim_type": "EXPLICIT",
+    "source": "In our experience with the touchscreen system we observed inputs, generated multiple pulse trains, played sound, and displayed visual stimuli, all at the same time but never reached performance limits on the RasPi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the authors' experience with the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C160",
+    "claim": "The LabNet architecture with actors explicitly targets the execution of multiple tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "The LabNet architecture with actors explicitly targets the execution of multiple tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design goal of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C161",
+    "claim": "Raspberry Pi as the hardware platform allows connecting a wide variety of readily available sensors and actuators.",
+    "claim_type": "EXPLICIT",
+    "source": "Raspberry Pi as the hardware platform allows connecting a wide variety of readily available sensors and actuators.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the Raspberry Pi ecosystem.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C162",
+    "claim": "LabNet supports already a range of hardware modules which can thus be addressed via network.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet supports already a range of hardware modules which can thus be addressed via network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current capabilities of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C163",
+    "claim": "LabNet supports GPIOs, communication via the UARTs, sound output via a headphone jack or HDMI, and some Raspberry Pi HATs developed in-house.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, GPIOs, communication via the UARTs, sound output via a headphone jack or HDMI, and some Raspberry Pi HATs developed in-house.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current capabilities of LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C164",
+    "claim": "LabNet can also be used with hardware adaptors with available modules for operant experiments from open source such as Bpod and pyControl or commercial systems from MedAssociates or Coulbourn Instruments.",
+    "claim_type": "EXPLICIT",
+    "source": "LabNet can also be used with hardware adaptors with available modules for operant experiments from open source such as Bpod and pyControl or commercial systems from MedAssociates or Coulbourn Instrumentsor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the compatibility of LabNet with other systems.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C165",
+    "claim": "LabNet can be integrated into existing systems, as shown with a Campden Instruments' system.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, LabNet can be integrated into existing systems, as shown above with a Campden Instruments' system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the earlier description of the Campden Instruments integration.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C166",
+    "claim": "The next version in progress will support the display of visual stimuli, touchscreen support, and communication via I2C.",
+    "claim_type": "EXPLICIT",
+    "source": "The next version in progress will support the display of visual stimuli, touchscreen support, and communication via I2C.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future plans for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C167",
+    "claim": "The next version will also include a complete API documentation.",
+    "claim_type": "EXPLICIT",
+    "source": "This version will also include a complete API documentation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future plans for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C168",
+    "claim": "The support for a Raspberry Pi-based configuration file is also planned.",
+    "claim_type": "EXPLICIT",
+    "source": "The support for a Raspberry Pi-based configuration file is also planned.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future plans for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C169",
+    "claim": "A Raspberry Pi-based configuration file would make configuration via the network no longer necessary and LabNet could already initialize the hardware correctly on Raspberry Pi start.",
+    "claim_type": "EXPLICIT",
+    "source": "This would make configuration via the network no longer necessary and LabNet could already initialize the hardware correctly on Raspberry Pi start.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of the planned configuration file feature.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C170",
+    "claim": "In the future, the authors plan to implement a software plug-in system.",
+    "claim_type": "EXPLICIT",
+    "source": "In the future, we plan to implement a software plug-in system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future plans for LabNet.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C171",
+    "claim": "A plug-in system will make it possible to support new hardware without LabNet recompiling.",
+    "claim_type": "EXPLICIT",
+    "source": "This will make it possible to support new hardware without LabNet recompiling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of the planned plug-in system.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C172",
+    "claim": "The plug-in system will require a rework of the current LabNet API.",
+    "claim_type": "EXPLICIT",
+    "source": "This will require a rework of the current LabNet API.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a consequence of implementing the plug-in system.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C173",
+    "claim": "The reworked API will support messages that are unknown at LabNet compile time.",
+    "claim_type": "EXPLICIT",
+    "source": "This will then support messages that are unknown at LabNet compile time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the planned plug-in system.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C174",
+    "claim": "Hewitt, Bishop, and Steiger proposed the actor model in 1973.",
+    "claim_type": "EXPLICIT",
+    "source": "Hewitt, Bishop, and Steiger (Hewitt et al., 1973) proposed in 1973 with their actor model one of the first message-passing systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Hewitt et al., 1973.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C175",
+    "claim": "Actors are active objects that communicate only over messages.",
+    "claim_type": "EXPLICIT",
+    "source": "Actors are active objects that communicate only over messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the actor model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C176",
+    "claim": "Each actor has only knowledge about itself and its own functioning (shared-nothing principle).",
+    "claim_type": "EXPLICIT",
+    "source": "Each actor has only knowledge about itself and its own functioning (shared-nothing principle).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the actor model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C177",
+    "claim": "No global state exists in an actor system.",
+    "claim_type": "EXPLICIT",
+    "source": "No global state exists in an actor system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the actor model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C178",
+    "claim": "Messages do not block the sender (fire-and-forget principle).",
+    "claim_type": "EXPLICIT",
+    "source": "Messages also do not block the sender (fire-and-forget principle).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the actor model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C179",
+    "claim": "The actor model avoids problems such as race conditions or dead-locks.",
+    "claim_type": "EXPLICIT",
+    "source": "This avoids problems such as race conditions or dead-locks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about the benefits of the actor model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C180",
+    "claim": "In the late 1980s, Ericsson developed Erlang, an actor-based programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "In the late 1980s, Ericsson developed Erlang (Armstrong, 1996), an actor-based programming language, and successfully used it in ATM network switches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Armstrong, 1996.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C181",
+    "claim": "Ericsson successfully used Erlang in ATM network switches.",
+    "claim_type": "EXPLICIT",
+    "source": "In the late 1980s, Ericsson developed Erlang (Armstrong, 1996), an actor-based programming language, and successfully used it in ATM network switches.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Armstrong, 1996.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C182",
+    "claim": "The Akka actors framework was released in 2009 for Java and Scala.",
+    "claim_type": "EXPLICIT",
+    "source": "The Akka (Lightbend, 2021) actors framework was released in 2009 for Java and Scala.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Lightbend, 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C183",
+    "claim": "The authors chose SObjectizer from several actor model libraries available for C++.",
+    "claim_type": "EXPLICIT",
+    "source": "From the several actor model libraries that are available for C++ such as the C++ Actor Framework (CAF) (Charousset et al., 2013), SObjectizer (Stiffstream, 2021), or Theron (Mason, 2019) we chose SObjectizer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C184",
+    "claim": "In SObjectizer a class or struct is sufficient to define a message.",
+    "claim_type": "EXPLICIT",
+    "source": "In SObjectizer a class or struct is sufficient to define a message.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C185",
+    "claim": "Actors in SObjectizer are normal classes derived from an agent_t base class.",
+    "claim_type": "EXPLICIT",
+    "source": "Actors are also normal classes derived from an agent_t base class.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C186",
+    "claim": "Actors in SObjectizer automatically have a 'message box' (Mbox), through which messages can be received.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, actors automatically have a 'message box' (Mbox), through which messages can be received, and also methods that are automatically called, for example, before an actor is started or stopped.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C187",
+    "claim": "An Mbox can receive messages of all possible types.",
+    "claim_type": "EXPLICIT",
+    "source": "An Mbox can receive messages of all possible types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C188",
+    "claim": "The Mbox of an actor has no name and must be communicated to other actors.",
+    "claim_type": "EXPLICIT",
+    "source": "The Mbox of an actor has no name and must be communicated to other actors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C189",
+    "claim": "Named Mboxes can also exist in SObjectizer.",
+    "claim_type": "EXPLICIT",
+    "source": "However, named Mboxes can also exist.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C190",
+    "claim": "A reference to a named Mbox can be created anytime via its name.",
+    "claim_type": "EXPLICIT",
+    "source": "A reference to such an Mbox can be created anytime via its name.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C191",
+    "claim": "Named Mboxes are used in LabNet to access important actors that always exist.",
+    "claim_type": "EXPLICIT",
+    "source": "This practical feature is used in LabNet to access important actors that always exist.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how LabNet uses SObjectizer features.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C192",
+    "claim": "It is possible to mix actors with other paradigms in SObjectizer.",
+    "claim_type": "EXPLICIT",
+    "source": "It is also possible to mix actors with other paradigms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C193",
+    "claim": "Mboxes can still be used for communication with actors from the outside.",
+    "claim_type": "EXPLICIT",
+    "source": "Mboxes can still be used for communication with actors from the outside.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C194",
+    "claim": "For communication with code from outside the actor world, the so-called MChain are used.",
+    "claim_type": "EXPLICIT",
+    "source": "For communication with code from outside the actor world, the so-called MChain are used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C195",
+    "claim": "An MChain looks like a queue: actors can place messages there and threads can pull them at a later time.",
+    "claim_type": "EXPLICIT",
+    "source": "An MChain looks like a queue: actors can place messages there and threads can pull them at a later time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's API.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C198",
+    "claim": "One important feature of SObjectizer is the built-in support for hierarchical state machines (HSMs).",
+    "claim_type": "EXPLICIT",
+    "source": "One important feature of SObjectizer is the built-in support for hierarchical state machines (HSMs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's features.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C199",
+    "claim": "All actors in SObjectizer are state machines.",
+    "claim_type": "EXPLICIT",
+    "source": "All actors in SObjectizer are state machines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C200",
+    "claim": "Actors in SObjectizer can pass through several states in their lives and react to incoming messages depending on their current state.",
+    "claim_type": "EXPLICIT",
+    "source": "They can pass through several states in their lives and react to incoming messages depending on their current state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's state machine capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C201",
+    "claim": "An interface actor in LabNet goes through several states: hardware initialization, operation, error, etc.",
+    "claim_type": "EXPLICIT",
+    "source": "An interface actor in LabNet (see Implementation section) goes through several states: hardware initialization, operation, error, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how LabNet uses SObjectizer's state machine features.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C202",
+    "claim": "Dispatchers are another important cornerstone of SObjectizer.",
+    "claim_type": "EXPLICIT",
+    "source": "Dispatchers are another important cornerstone of SObjectizer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C203",
+    "claim": "Dispatchers provide an actor with the working context.",
+    "claim_type": "EXPLICIT",
+    "source": "Dispatchers provide an actor with the working context.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's dispatchers.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C204",
+    "claim": "Dispatchers manage all message queues and execute the actors if there are messages in the queue (Mbox).",
+    "claim_type": "EXPLICIT",
+    "source": "They manage all message queues and execute the actors if there are messages in the queue (Mbox).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's dispatchers.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C205",
+    "claim": "The authors have chosen the dispatcher with a thread pool.",
+    "claim_type": "EXPLICIT",
+    "source": "We have chosen the dispatcher with a thread pool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C206",
+    "claim": "The thread pool dispatcher provides a good compromise between thread management overhead and parallelism.",
+    "claim_type": "EXPLICIT",
+    "source": "It provides a good compromise between thread management overhead and parallelism.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of the chosen dispatcher.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C207",
+    "claim": "It is possible to use other dispatcher types without having to adapt the actors.",
+    "claim_type": "EXPLICIT",
+    "source": "But it is still possible to use other dispatcher types (e.g. one with one thread per actor) without having to adapt the actors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about SObjectizer's flexibility.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C208",
+    "claim": "The criteria for choosing the serialization tool were good performance, small message size, and support in as many programming languages as possible.",
+    "claim_type": "EXPLICIT",
+    "source": "Our criteria for choosing the serialization tool were good performance, small message size, and support in as many programming languages as possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design criteria used by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C209",
+    "claim": "Text-based serialization formats, such as XML, JSON, or ASCII-based plain-text, have the advantage of being human-readable.",
+    "claim_type": "EXPLICIT",
+    "source": "Text-based serialization formats, such as XML, JSON, or ASCII-based plain-text, have the advantage of being human-readable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about serialization formats.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C210",
+    "claim": "The Whisker server uses an ASCII-based format.",
+    "claim_type": "EXPLICIT",
+    "source": "The Whisker server uses an ASCII-based format (Cardinal and Aitken, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Cardinal and Aitken, 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C211",
+    "claim": "The disadvantages of text-based formats are the message size, higher computing requirements, and, at least for the ASCII version, a custom message parser.",
+    "claim_type": "EXPLICIT",
+    "source": "The disadvantages are the message size, higher computing requirements, and, at least for the ASCII version, a custom message parser.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about serialization formats.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C212",
+    "claim": "For the application, a binary format is a better solution.",
+    "claim_type": "EXPLICIT",
+    "source": "For our application, a binary format is a better solution, and we chose Protobuf Google, 2021.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision made by the authors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C213",
+    "claim": "Protobuf is very popular and offers support for many programming languages.",
+    "claim_type": "EXPLICIT",
+    "source": "It is very popular and offers support for many programming languages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Protobuf.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C214",
+    "claim": "Protobuf has some disadvantages.",
+    "claim_type": "EXPLICIT",
+    "source": "However, Protobuf has some disadvantages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about Protobuf's limitations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C215",
+    "claim": "Protobuf is not the most memory or computationally efficient tool.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, it is not the most memory or computationally efficient tool.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about serialization tool performance.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C216",
+    "claim": "Libraries such as Flatbuffers, Cap'n Proto, or Simple Binary Encoding (SBE) are more efficient than Protobuf.",
+    "claim_type": "EXPLICIT",
+    "source": "Libraries such as Flatbuffers, Cap'n Proto, or Simple Binary Encoding (SBE) are more efficient.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about serialization tool performance.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C217",
+    "claim": "The negative aspects of Protobuf only become critical when sending extremely large messages (some MBytes) or at a very high rate (millions per second).",
+    "claim_type": "EXPLICIT",
+    "source": "However, these negative aspects of Protobuf only become critical when sending extremely large messages (some MBytes) or at a very high rate (millions per second) .",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about when Protobuf's limitations become significant.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C218",
+    "claim": "Sending extremely large messages or at a very high rate is typically not the case in experiments that focus on actions of animal behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "This is typically not the case in experiments that focus on actions of animal behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the typical requirements of behavioral experiments.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C219",
+    "claim": "Protobuf uses a special meta-language to define messages.",
+    "claim_type": "EXPLICIT",
+    "source": "Protobuf uses a special meta-language to define messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Protobuf.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C220",
+    "claim": "With protoc-generator, it is possible to create message protocols for each supported programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "With protoc-generator, it is possible to create these message protocols for each supported programming language.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Protobuf tooling.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C221",
+    "claim": "Files with message definitions are a part of the Git repository.",
+    "claim_type": "EXPLICIT",
+    "source": "Files with message definitions are a part of the Git repository.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what is included in the LabNet repository.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C222",
+    "claim": "A serialized Protobuf message contains no information about the byte length nor the message type.",
+    "claim_type": "EXPLICIT",
+    "source": "One Protobuf disadvantage must be mentioned. A serialized Protobuf message contains no information about the byte length nor the message type.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Protobuf's limitations.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C223",
+    "claim": "Protobuf leaves byte length and message type information to the transmission medium.",
+    "claim_type": "EXPLICIT",
+    "source": "Protobuf leaves this information to the transmission medium.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on established knowledge about Protobuf's design.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C224",
+    "claim": "Each message in LabNet begins with two pieces of information: type and size.",
+    "claim_type": "EXPLICIT",
+    "source": "We have solved this simply: each message begins with two pieces of information: type and size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how LabNet handles Protobuf's limitation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C225",
+    "claim": "Type and size are encoded as a number in Protobuf's varint notation.",
+    "claim_type": "EXPLICIT",
+    "source": "Both are encoded as a number in Protobuf's varint notation and are easy to parse with the Protobuf API.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C226",
+    "claim": "The approach of encoding type and size in varint notation is the officially recommended approach.",
+    "claim_type": "EXPLICIT",
+    "source": "This is also the officially recommended approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge about Protobuf best practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C227",
+    "claim": "The current implementation does not contain configuration files for LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "The current implementation does not contain configuration files for LabNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the current implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C228",
+    "claim": "The hardware initialization is exclusively performed through client messages.",
+    "claim_type": "EXPLICIT",
+    "source": "The hardware initialization is exclusively performed through client messages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how LabNet currently handles initialization.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C229",
+    "claim": "The network communication runs over TCP/IP.",
+    "claim_type": "EXPLICIT",
+    "source": "The network communication runs over TCP/IP.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the network protocol used.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C230",
+    "claim": "The server in LabNet is implemented in Boost ASIO.",
+    "claim_type": "EXPLICIT",
+    "source": "The server in LabNet is implemented in Boost ASIO (Boost, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C231",
+    "claim": "The implementation is hidden behind the server actor.",
+    "claim_type": "EXPLICIT",
+    "source": "The implementation is hidden behind the server actor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the software architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C232",
+    "claim": "The server actor can send and receive the Protobuf messages and also informs the actor world about the connection state.",
+    "claim_type": "EXPLICIT",
+    "source": "This actor can send and receive the Protobuf messages and also informs the actor world about the connection state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the responsibilities of the server actor.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C233",
+    "claim": "If the connection is lost, the actors can stop their work and automatically continue it later at the same point on a reconnection.",
+    "claim_type": "EXPLICIT",
+    "source": "If the connection is lost, the actors can stop their work and automatically continue it later at the same point on a reconnection.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C234",
+    "claim": "At the beginning, no single interface actor to communicate with the hardware exists.",
+    "claim_type": "EXPLICIT",
+    "source": "At the beginning, no single interface actor to communicate with the hardware exists.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the initial state of the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C235",
+    "claim": "Interface actors combine all the possibilities for the hardware control.",
+    "claim_type": "EXPLICIT",
+    "source": "These actors combine all the possibilities for the hardware control: for example, initialization, set or get digital pin state, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of interface actors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C236",
+    "claim": "Interface actors are automatically created and started by the interface manager.",
+    "claim_type": "EXPLICIT",
+    "source": "They are automatically created and started by the interface manager.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how interface actors are managed.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C237",
+    "claim": "Each 'interface' actor must request the resources from the resource manager.",
+    "claim_type": "EXPLICIT",
+    "source": "Each 'interface' actor must request the resources from the resource manager.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the resource management mechanism.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C238",
+    "claim": "Requesting resources from the resource manager is one of the first steps during the interface initialization state.",
+    "claim_type": "EXPLICIT",
+    "source": "This is one of the first steps during the interface initialization state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the initialization process.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C239",
+    "claim": "The 'interfaces' with digital outputs offer only the possibility to switch the output pin state.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'interfaces' with digital outputs offer only the possibility to switch the output pin state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the capabilities of digital output interfaces.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C240",
+    "claim": "More complex procedures are implemented by the digital out helper actor.",
+    "claim_type": "EXPLICIT",
+    "source": "More complex procedures are implemented by the digital out helper actor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the division of responsibilities in the system.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C241",
+    "claim": "The digital out helper actor can automatically turn off a pin after a defined time or generate pulses by specifying the on/off duration and number of pulses.",
+    "claim_type": "EXPLICIT",
+    "source": "This actor can automatically turn off a pin after a defined time or generate pulses by specifying the on/off duration and number of pulses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the capabilities of the digital out helper actor.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C242",
+    "claim": "A group of pins can be automatically switched on and off together in a loop.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, a group of pins can be automatically switched on and off together in a loop.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of the digital out helper actor.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C243",
+    "claim": "Most of the comparable software control tools published for behavioural experiments are more general packages.",
+    "claim_type": "EXPLICIT",
+    "source": "Most of the comparable software control tools published for behavioural experiments are more general packages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about other tools in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C244",
+    "claim": "In addition to hardware control, comparable tools offer a more or less powerful tool for creating experiments, a user interface and a possibility to visualize the data.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to hardware control, they offer a more or less powerful tool for creating experiments, a user interface and a possibility to visualize the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general observation about other tools in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C245",
+    "claim": "The development of Whisker control suite started in 1999 by Cardinal and Aitken at the Department of Experimental Psychology, University of Cambridge.",
+    "claim_type": "EXPLICIT",
+    "source": "The development of Whisker control suite started in 1999 by Cardinal and Aitken at the Department of Experimental Psychology, University of Cambridge, and is ongoing (Cardinal and Aitken, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Cardinal and Aitken, 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C246",
+    "claim": "Whisker operates as the server and controls the hardware.",
+    "claim_type": "EXPLICIT",
+    "source": "This was solved by an additional software layer where Whisker operates as the server and controls the hardware.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Whisker's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C247",
+    "claim": "The clients in Whisker must connect to the server over TCP/IP, and each one controls an experiment in one of the chambers.",
+    "claim_type": "EXPLICIT",
+    "source": "The clients must connect to the server over TCP/IP, and each one controls an experiment in one of the chambers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Whisker's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C248",
+    "claim": "The clients in Whisker can be written in any programming language.",
+    "claim_type": "EXPLICIT",
+    "source": "The clients themselves can be written in any programming language.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of Whisker.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C249",
+    "claim": "Communication in Whisker occurs through a plain-text protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "Communication occurs through a plain-text protocol.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Whisker's communication protocol.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C250",
+    "claim": "Whisker's approach is similar to LabNet's because of the outsourcing of the experiments to the clients.",
+    "claim_type": "EXPLICIT",
+    "source": "Because of the outsourcing of the experiments to the clients, Whisker's approach is similar to ours.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between Whisker and LabNet.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C251",
+    "claim": "Due to the flexibility in implementing the clients, complex experiments can be realized with Whisker.",
+    "claim_type": "EXPLICIT",
+    "source": "Due to the flexibility in implementing the clients, complex experiments can be realized with Whisker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about Whisker's capabilities.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C252",
+    "claim": "Whisker hardware support includes digital I/O devices (National Instruments, Advantech, etc.), visual stimuli on computer monitors, touchscreens, audio, and more.",
+    "claim_type": "EXPLICIT",
+    "source": "Hardware support includes digital I/O devices (National Instruments, Advantech, etc.), visual stimuli on computer monitors, touchscreens, audio, and more.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Whisker's hardware support.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C253",
+    "claim": "Whisker is commercially used in 'ABET II' by Campden Instruments Ltd.",
+    "claim_type": "EXPLICIT",
+    "source": "Whisker is commercially used in 'ABET II' by Campden Instruments Ltd.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Whisker's commercial use.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C254",
+    "claim": "pyControl is an open-source hardware and software framework for controlling behavioural experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "pyControl (Akam et al., 2022) is an open-source hardware and software framework for controlling behavioural experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Akam et al., 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C255",
+    "claim": "The pyControl hardware is based on the MicroPython microcontroller that typically controls a single experimental box each.",
+    "claim_type": "EXPLICIT",
+    "source": "The hardware is based on the MicroPython microcontroller that typically controls a single experimental box each.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's hardware architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C256",
+    "claim": "Several pyControl breakout boards can connect to a PC via USB.",
+    "claim_type": "EXPLICIT",
+    "source": "Several pyControl breakout boards can connect to a PC via USB.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's connectivity.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C257",
+    "claim": "Each pyControl board has six so-called behaviour ports and four BNC ports.",
+    "claim_type": "EXPLICIT",
+    "source": "Each board has six so-called behaviour ports and four BNC ports.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's hardware specifications.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C258",
+    "claim": "Each pyControl port can be connected to a module: to drive LEDs, nose-poke sensors, stepper motors, and speakers.",
+    "claim_type": "EXPLICIT",
+    "source": "Each port can be connected to a module: to drive LEDs, nose-poke sensors, stepper motors, and speakers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's hardware capabilities.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C259",
+    "claim": "Two pyControl behaviour ports have I2C internally and can drive a port expander module to increase the number of ports.",
+    "claim_type": "EXPLICIT",
+    "source": "Two behaviour ports have I2C internally and can drive a port expander module to increase the number of ports.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's expandability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C260",
+    "claim": "Tasks on the MicroPython microcontroller and pyControl on the PC use Python.",
+    "claim_type": "EXPLICIT",
+    "source": "Tasks on the MicroPython microcontroller and pyControl on the PC use Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the programming language used by pyControl.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C261",
+    "claim": "A task in pyControl is defined as a finite-state machine.",
+    "claim_type": "EXPLICIT",
+    "source": "A task is defined as a finite-state machine.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's task definition approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C262",
+    "claim": "A pyControl task comprises a collection of states and events that cause the switch between states.",
+    "claim_type": "EXPLICIT",
+    "source": "It comprises a collection of states and events that cause the switch between states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's task structure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C263",
+    "claim": "In pyControl data management, all events and state changes are stored with timestamps.",
+    "claim_type": "EXPLICIT",
+    "source": "In data management, all events and state changes are stored with timestamps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes pyControl's data management approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C264",
+    "claim": "pyControl provides sufficient I/O ports to realize most tasks on a system.",
+    "claim_type": "EXPLICIT",
+    "source": "pyControl provides sufficient I/O ports to realize most tasks on a system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of pyControl's capabilities.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C265",
+    "claim": "For the hardware types in pyControl, users are limited to the firmware capabilities and available modules, although free wiring is also possible.",
+    "claim_type": "EXPLICIT",
+    "source": "However, for the hardware types, we are limited to the firmware capabilities and available modules, although free wiring is also possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of pyControl.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C266",
+    "claim": "The mandatory requirement to define the task as a state machine in pyControl can be useful but may also become a limitation.",
+    "claim_type": "EXPLICIT",
+    "source": "The mandatory requirement to define the task as a state machine can be useful but may also become a limitation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of pyControl's design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C267",
+    "claim": "Bpod was originally developed in the Brody lab.",
+    "claim_type": "EXPLICIT",
+    "source": "Bpod Sanders, 2021 was originally developed in the Brody lab and is now maintained by Josh Sanders (Sanworks LLC.).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Sanders, 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C268",
+    "claim": "Bpod is now maintained by Josh Sanders (Sanworks LLC.).",
+    "claim_type": "EXPLICIT",
+    "source": "Bpod Sanders, 2021 was originally developed in the Brody lab and is now maintained by Josh Sanders (Sanworks LLC.).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Sanders, 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C269",
+    "claim": "Bpod has been expanded to PyBpod as a python port of the Bpod MATLAB project by members of the Champalimaud Foundation.",
+    "claim_type": "EXPLICIT",
+    "source": "It also has been expanded to PyBpod as a python port of the Bpod MATLAB project by members of the Champalimaud Foundation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about Bpod's development.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C270",
+    "claim": "Bpod offers only four I/O ports but has additional module ports that each provide an interface to Arduino-powered modules.",
+    "claim_type": "EXPLICIT",
+    "source": "Bpod offers only four I/O ports but has additional module ports that each provide an interface to Arduino-powered modules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's hardware architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C271",
+    "claim": "Bpod gains additional flexibility through Arduino-powered modules: analog I/O, I2C, Ethernet, and more can be accessed via these modules.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, Bpod gains additional flexibility: analog I/O, I2C, Ethernet, and more can be accessed via these modules.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's expandability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C272",
+    "claim": "A MATLAB package is offered to write experimental tasks for Bpod.",
+    "claim_type": "EXPLICIT",
+    "source": "A MATLAB package is offered to write experimental tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's software support.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C273",
+    "claim": "The Bpod package documentation is limited.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, the package documentation is limited.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of Bpod's documentation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C274",
+    "claim": "The tasks in Bpod are also defined as finite-state machines.",
+    "claim_type": "EXPLICIT",
+    "source": "The tasks are also defined as finite-state machines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's task definition approach.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C275",
+    "claim": "After starting the task in Bpod, the state machine is transferred to the Bpod.",
+    "claim_type": "EXPLICIT",
+    "source": "After starting the task, the state machine is transferred to the Bpod.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's operation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C276",
+    "claim": "From the Bpod hardware, it communicates with the MATLAB frontend.",
+    "claim_type": "EXPLICIT",
+    "source": "From there, it communicates with the MATLAB frontend.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Bpod's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C277",
+    "claim": "Bpod's design results in the restriction that only a single Bpod can be controlled per MATLAB session.",
+    "claim_type": "EXPLICIT",
+    "source": "This design results in the restriction that only a single Bpod can be controlled per MATLAB session.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about a limitation of Bpod's design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C278",
+    "claim": "Bpod is much more limited regarding software than pyControl or Whisker.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, Bpod is much more limited regarding software than pyControl or Whisker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative assessment of Bpod.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C279",
+    "claim": "Multiple Bpod systems cannot run simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple systems cannot run simultaneously, and the functionality is limited by the firmware and the state machine.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of Bpod.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C280",
+    "claim": "Bpod's functionality is limited by the firmware and the state machine.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiple systems cannot run simultaneously, and the functionality is limited by the firmware and the state machine.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of Bpod.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C281",
+    "claim": "Autopilot is an open-source framework for behavioural experiments developed in the Wehr Lab at the University of Oregon.",
+    "claim_type": "EXPLICIT",
+    "source": "Autopilot Saunders and Wehr, 2019 is an open-source framework for behavioural experiments developed in the Wehr Lab at the University of Oregon.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Saunders and Wehr, 2019.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C282",
+    "claim": "Autopilot uses Python.",
+    "claim_type": "EXPLICIT",
+    "source": "It uses Python, and the target platform is the Raspberry Pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's implementation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C283",
+    "claim": "The target platform for Autopilot is the Raspberry Pi.",
+    "claim_type": "EXPLICIT",
+    "source": "It uses Python, and the target platform is the Raspberry Pi.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's target platform.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C284",
+    "claim": "The focus of Autopilot from the beginning has been the ability to control multiple systems.",
+    "claim_type": "EXPLICIT",
+    "source": "The focus of Autopilot from the beginning has been the ability to control multiple systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's design goal.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C285",
+    "claim": "The basic unit in the software architecture of Autopilot is an agent.",
+    "claim_type": "EXPLICIT",
+    "source": "The basic unit in the software architecture of Autopilot is an agent.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C286",
+    "claim": "Each agent in Autopilot runs on its own Raspberry Pi and can communicate with other agents.",
+    "claim_type": "EXPLICIT",
+    "source": "Each agent runs on its own Raspberry Pi and can communicate with other agents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C287",
+    "claim": "Currently, three types of agents exist in Autopilot: terminal, pilot, and child.",
+    "claim_type": "EXPLICIT",
+    "source": "Currently, three types of agents exist: terminal, pilot, and child.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's agent types.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C288",
+    "claim": "Terminal agents are the only user-oriented agents in Autopilot with a graphical user interface.",
+    "claim_type": "EXPLICIT",
+    "source": "Terminal agents are the only user-oriented with a graphical user interface.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of terminal agents in Autopilot.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C289",
+    "claim": "Terminal agents are responsible for data logging and visualization.",
+    "claim_type": "EXPLICIT",
+    "source": "They are responsible for data logging and visualization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the responsibilities of terminal agents.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C290",
+    "claim": "The experimental tasks in Autopilot are managed by terminal agents and transferred to the pilots.",
+    "claim_type": "EXPLICIT",
+    "source": "The experimental tasks are also managed here and transferred to the pilots, which are also responsible for experimental task execution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the workflow in Autopilot.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C291",
+    "claim": "The pilots in Autopilot are responsible for experimental task execution.",
+    "claim_type": "EXPLICIT",
+    "source": "The experimental tasks are also managed here and transferred to the pilots, which are also responsible for experimental task execution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of pilots in Autopilot.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C292",
+    "claim": "The pilots in Autopilot communicate with the external hardware that is connected to the Raspberry Pi and forward the experimental data to the terminals for logging or visualization.",
+    "claim_type": "EXPLICIT",
+    "source": "The pilots communicate with the external hardware that is connected to the Raspberry Pi and forward the experimental data to the terminals for logging or visualization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of pilots in Autopilot.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C293",
+    "claim": "Each pilot in Autopilot can also have several child agents.",
+    "claim_type": "EXPLICIT",
+    "source": "Each pilot can also have several child agents.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C294",
+    "claim": "Child agents in Autopilot can take over a part of a task if the task has been configured accordingly.",
+    "claim_type": "EXPLICIT",
+    "source": "Child agents can take over a part of a task if the task has been configured accordingly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the role of child agents in Autopilot.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C295",
+    "claim": "The child agents in Autopilot are invisible to the terminals and communicate only with their parent pilot.",
+    "claim_type": "EXPLICIT",
+    "source": "The child agents are invisible to the terminals and communicate only with their parent pilot.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's architecture.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C296",
+    "claim": "Among all tools discussed, Autopilot offers most flexibility.",
+    "claim_type": "EXPLICIT",
+    "source": "Among all tools discussed here, Autopilot offers most flexibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative assessment of Autopilot.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C297",
+    "claim": "Autopilot already supports a whole range of hardware including digital I/O, audio, cameras, and some sensors such as temperature.",
+    "claim_type": "EXPLICIT",
+    "source": "It already supports a whole range of hardware. This includes digital I/O, audio, cameras, and some sensors such as temperature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's hardware support.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C298",
+    "claim": "Since Autopilot is open-source, support for additional hardware can be added.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, since it is open-source, support for additional hardware can be added.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about Autopilot's extensibility.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C299",
+    "claim": "New behavioural experiments can be implemented in Autopilot.",
+    "claim_type": "EXPLICIT",
+    "source": "New behavioural experiments can also be implemented.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes Autopilot's capability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C300",
+    "claim": "In Autopilot, users are limited to Python for both adding hardware support and implementing new experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in both cases, we are limited to Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of Autopilot.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C301",
+    "claim": "The source code of LabNet is available over the GitHub repository under a GPL-3.0 license.",
+    "claim_type": "EXPLICIT",
+    "source": "The source code of LabNet is available over the GitHub repository under a GPL-3.0 license.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about LabNet's availability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C302",
+    "claim": "Data of the performance measurements, the source code for Autopilot, Bpod and pyControl tasks, and the source code for the graphs are accessible via the GitHub repository.",
+    "claim_type": "EXPLICIT",
+    "source": "Data of the performance measurements, the source code for Autopilot, Bpod and pyControl tasks, and the source code for the graphs are also accessible via the GitHub repository, (copy archived at swh:1:rev:d52e52c51e3f7c5b0e12f95829b8cf4886bb3379; Schatz and Winter, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about data availability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C303",
+    "claim": "There are instructions for two possible compilation paths for LabNet.",
+    "claim_type": "EXPLICIT",
+    "source": "There are instructions for two possible compilation paths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what is included in the repository.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C304",
+    "claim": "The first compilation path is on the Raspberry Pi with Visual Studio Code and CMake.",
+    "claim_type": "EXPLICIT",
+    "source": "The first is on the Raspberry Pi with Visual Studio Code and CMake.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a compilation option.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C305",
+    "claim": "The second compilation path is with Visual Studio 2019 and Docker.",
+    "claim_type": "EXPLICIT",
+    "source": "The second is with Visual Studio 2019 and Docker.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a compilation option.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C306",
+    "claim": "The archive contains the source code of all tests from Performance evaluation under 'examples'.",
+    "claim_type": "EXPLICIT",
+    "source": "The archive also contains the source code of all tests from Performance evaluation under 'examples'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes what is included in the repository.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  }
+]

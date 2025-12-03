@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Songbirds provide a powerful model system for studying sensory-motor learning, but many analyses require time-consuming manual annotation of song elements called syllables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C13 establish the scientific context and motivation for the work. These are well-supported by established knowledge in the field and appropriate citations to prior work (Mooney 2009, Fee and Scharff 2010, Brainard and Doupe 2002).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Current annotation methods follow a two-step process of segmentation and labeling, which is time-consuming and limits the scalability of birdsong analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C14-C22 describe the current state of annotation methods and their limitations. These are supported by citations to relevant literature (Thompson et al. 2012, Kershenbaum et al. 2016) and established practices in the field, providing clear motivation for developing improved methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Standard segmentation algorithms fail for complex songs like canary song, and existing machine learning approaches have limitations including reliance on pre-defined features and inability to capture temporal dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C34 identify specific limitations of existing methods, demonstrated in Figure 1B for canary song and supported by citations. The claim that no prior work exists for automated canary annotation (C32) is an inference but reasonable given the lack of citations. These claims effectively motivate the need for TweetyNet.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C49",
+      "C51"
+    ],
+    "result": "TweetyNet is a single end-to-end neural network that learns to segment spectrograms into annotated syllables without requiring cleanly segmented audio or hand-engineered features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C35-C39, C43-C46, C49, C51 describe the TweetyNet architecture and design goals. The architecture is clearly described in Figure 2 and the Methods section, with appropriate citations to relevant deep learning literature. The design choices are well-justified by prior work in speech recognition and event detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Post-processing network outputs with two simple transformations (removing short segments and majority voting) significantly reduces syllable error rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe the post-processing approach, which is clearly illustrated in Figure 2A and demonstrated to be effective in Figure 5. The methods are simple and well-described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C98",
+      "C99"
+    ],
+    "result": "TweetyNet mitigates limitations of methods that rely on segmented audio, performing comparably to SVM models on manually cleaned data while significantly outperforming SVM on raw or semi-cleaned segmented audio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54-C60, C98-C99 are supported by the comparison experiments in Figure 3 with appropriate statistical tests (Wilcoxon signed-rank test, Levene's test). The experimental design properly simulates realistic use cases by comparing models on raw, semi-cleaned, and manually cleaned data. Statistical significance is properly reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "TweetyNet performs well across multiple individuals from two species (Bengalese finches and canaries), achieving mean syllable error rates of 0.9% for Bengalese finches and an estimated asymptotic rate of 3.1% for canaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C61-C66 are supported by the learning curves in Figure 4 showing performance across 8 Bengalese finches and 3 canaries. The benchmarking follows good machine learning practices with multiple training replicates and held-out test sets. The error rates are clearly quantified with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C101",
+      "C102"
+    ],
+    "result": "Post-processing greatly reduces syllable error rate with minimal effect on frame error, and TweetyNet performance depends on well-chosen hyperparameters (window size and hidden state size) that enable learning of local features and temporal dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75, C101-C102 are supported by systematic experiments in Figure 5 and supplementary figures. The analysis properly distinguishes between frame error and syllable error rate, and the hyperparameter experiments demonstrate the importance of context and recurrent layer capacity. The conclusions about how the model works are reasonable inferences from the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TweetyNet can accurately annotate large datasets of Bengalese finch song spanning multiple days, and annotations predicted by TweetyNet replicate the key finding that branch point transition probabilities are stable across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C76-C81 are supported by analysis of multi-day recordings in Figure 6. The replication of Warren et al. 2012 findings is validated with appropriate statistical tests (Bonferroni-corrected pairwise bootstrap test). The syllable error rates remain low (1-5%) across entire days of song, demonstrating practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "TweetyNet annotations of canary song have sufficient accuracy to extract long-range syntactic structure using probabilistic suffix trees, with models trained on as little as 2.2% of data producing syntax models comparable to those from 600 manually annotated songs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by the PST analysis in Figure 7. The comparison between PSTs built from TweetyNet predictions and manual annotations demonstrates that the automated annotations capture the complex syntax structure. The validation against fully manually annotated datasets (1764 songs) provides strong evidence for accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Larger annotated datasets enable more detailed syntax models with improved precision, and using TweetyNet saved 95-97.5% of labor compared to manual annotation while enabling analysis of datasets orders of magnitude larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by the analysis in Figure 8 showing the relationship between dataset size and PST precision, and by direct comparison of annotation times. The labor savings are quantified across five human annotators, providing strong evidence for practical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TweetyNet predictions are well-behaved when faced with rare vocal variants, but like any supervised learning model, it can introduce errors when vocalizations cannot be cleanly categorized into discrete classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by examples in Figure 9 showing how TweetyNet handles edge cases. The authors appropriately acknowledge this as a limitation of supervised learning approaches in general, not specific to TweetyNet. The examples demonstrate that the model assigns high probability to relevant labels rather than unrelated classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Koumura 2016 evaluated pipelines combining CNNs with additional sequence models, but TweetyNet differs by being a single end-to-end network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 accurately describes prior work by Koumura 2016 based on the citation. This provides appropriate context for positioning TweetyNet's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The syllable error rate is an edit distance normalized by sequence length that can exceed 100% if predicted sequences have many more labels than the original.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide a clear definition of the syllable error rate metric used throughout the paper. This is standard methodology from speech recognition adapted appropriately to birdsong.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Alternative approaches using improved segmentation and non-neural network models would lack the flexibility and expressiveness of deep learning models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is speculation about alternative approaches. While the reasoning is plausible, this has not been empirically tested. The authors appropriately frame this as speculation ('we believe'), but it remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Future work should test whether networks can be trained to better segment without post-processing, potentially by incorporating syllable error rate directly into the loss function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 are suggestions for future work supported by citation to Lea et al. 2017. These are reasonable directions but have not been tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "TweetyNet could be integrated with unsupervised models in various ways, extended to other vocalizations, used to annotate higher-level structures, and leveraged for uncertainty estimation and similarity measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C114 describe potential future applications and integrations with other methods. While these are reasonable suggestions supported by relevant citations, they are speculative and have not been demonstrated in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The approach makes automated syllable-level annotation possible for many of the 4500+ songbird species, enabling researchers to automate annotation of very large datasets required for addressing central questions of sensorimotor learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 provide concluding statements about the broader impact of the work. These are supported by the demonstrated performance across two species with different song complexity (Bengalese finches and canaries), though generalization to all 4500+ species remains to be tested. The conclusions are appropriately qualified ('suggest', 'confident') rather than overstated.",
+    "result_type": "MAJOR"
+  }
+]

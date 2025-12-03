@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C95"
+    ],
+    "result": "The manuscript establishes the context that traditional preclinical models, including rodent models and 2D in vitro systems, fail to predict TCB-mediated toxicities in humans, particularly on-target, off-tumor toxicities arising from low-level antigen expression in healthy tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13-C21, and C95 collectively establish well-documented limitations of existing preclinical models through citations to published literature (C14, C15, C16, C17, C18) and general knowledge about TCB biology (C2, C13, C20, C21). These background claims provide appropriate context for the study and are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FOLR1(Hi) TCB caused severe lung toxicity in cynomolgus monkeys characterized by respiratory inflammation, elevated pro-inflammatory cytokines (IL-6, IL-2, IL-8), and leukocytic infiltrates, despite low FOLR1 expression in lung tissue. Similar FOLR1 expression patterns were observed in human lung tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by in vivo toxicity data from cynomolgus studies (Figure 1A, histopathology), IHC analysis of FOLR1 expression (Figures 1B-F), and cytokine measurements. The comparison between cynomolgus and human FOLR1 expression patterns (C32) is supported by IHC data in Figure 1E,F, establishing the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Alveolus Lung-Chip expresses FOLR1 at physiologically relevant levels (~10,000 molecules per cell) that are stable over time and substantially lower than tumor cell expression (~450,000 molecules per cell in HeLa cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by multiple orthogonal measurements: RNA-seq (Figure 1H, C33), immunofluorescence (Figure 1I, C34), and flow cytometry quantification (Figures 1J and 2\u2014figure supplement 1B, C35-C36). The consistency across methods and the clear differential between healthy and tumor tissue expression strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The Alveolus Lung-Chip recapitulates FOLR1(Hi) TCB-mediated toxicity observed in cynomolgus monkeys, showing increased epithelial apoptosis, T-cell activation, cytokine release (IFN\u03b3, granzyme B, IL-6), and immune cell attachment in a target-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by multiple readouts from the Lung-Chip experiments (Figures 2B-F): apoptosis quantification, flow cytometry for T-cell activation, multiplex cytokine analysis, and immunofluorescence quantification of immune cell attachment. The target-dependence is demonstrated by controls (C39, NT TCB and PBMC-only controls). Claim C43 appropriately concludes that the chip replicates aspects of in vivo toxicity based on concordance of readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C107"
+    ],
+    "result": "The Lung-Chip demonstrates a therapeutic window for FOLR1(Hi) TCB, with tumor cells (HeLa) responding at much lower concentrations (EC50 ~1.1 pM, starting from 2 ng/mL) than healthy lung epithelium, showing a 1000-fold difference in required TCB concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C107 are supported by dose-response data in HeLa-seeded chips (Figure 2\u2014figure supplement 2) and comparison to healthy lung chips. The EC50 value (C46) is quantitatively determined and matches 2D assay results (2.2 pM), providing validation. The 1000-fold therapeutic window (C107) is directly measured and represents a key finding for drug development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A lower-affinity FOLR1(Lo) TCB shows reduced toxicity in the Alveolus Lung-Chip compared to FOLR1(Hi) TCB, responding only at the highest concentration (20 \u03bcg/mL) with lower magnitude. This safer profile predicted by the chip was confirmed in cynomolgus toxicology studies where FOLR1(Lo) TCB caused no lung inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 demonstrate the chip's predictive capability. The differential responses between high and low affinity TCBs are supported by dose-response data (Figures 3A-D, C48-C49), demonstrating sensitivity to antibody affinity (C50). Critically, the in vivo validation (C51-C52, Figure 3E showing no inflammation with FOLR1(Lo) TCB in cynomolgus) confirms the chip's predictive value, representing a major validation of the platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C93"
+    ],
+    "result": "The Alveolus Lung-Chip demonstrates superior performance compared to transwell-based approaches, showing more specific TCB responses and better concordance with in vivo outcomes. Transwells failed to distinguish between FOLR1(Hi) and FOLR1(Lo) TCB toxicity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by direct comparison data (Figure 3\u2014figure supplement 2) showing that transwells failed to capture differences in immune cell attachment, apoptosis, and showed inconsistent cytokine responses that did not match in vivo outcomes. The conclusion (C55, C93) that the Lung-Chip is superior is justified by the concordance with in vivo validation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CEA-targeting TCBs (CEA(Hi) and CEA(Lo)) are efficacious against tumors in vitro and in vivo but target a human-specific epitope. CEA is expressed in the gastrointestinal tract with high expression in colon and lower expression in small intestine, enriched on the apical surface, and the TCBs lack cross-reactivity to cynomolgus CEA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 establish the CEA-TCB system and rationale for using Intestine-Chips. Efficacy is supported by in vitro and in vivo data (Figures 4\u2014figure supplement 1B-C, C57-C58). CEA expression patterns are supported by IHC of human tissues (Figure 4A, C60-C61) and citations (C56, C59). The lack of cynomolgus cross-reactivity (C62, Figure 4\u2014figure supplement 1E) justifies the need for human-relevant models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The Intestine-Chip recapitulates physiologically relevant CEA expression patterns with regional differences (high in colon, low in duodenum) and apical enrichment, which are more accurate than 3D organoids (non-polarized expression) or 2D models (patchy, weak expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 are supported by multiple characterization methods: immunofluorescence (Figures 4B, 4\u2014figure supplement 3B, C63-C64, C69-C70), flow cytometry (Figure 4C, C65, C67, C73), and IHC (Figure 4\u2014figure supplement 3C, C72). The comparison to organoids and 2D models demonstrates the Intestine-Chip's superior physiological relevance. The citation support for enhanced maturation (C71) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Both CEA(Hi) and CEA(Lo) TCBs induce dose-dependent PBMC attachment, activation (CD69 upregulation), and cytokine release (granzyme B, IFN\u03b3, IL-6) in the Colon Intestine-Chip, with CEA(Hi) showing higher responses. The effects are target-dependent and mode-of-action dependent, as demonstrated by lack of response to non-targeting TCB or PBMC-only controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by comprehensive functional data from Colon Intestine-Chips: quantification of PBMC attachment (Figure 4D, C74), flow cytometry for T-cell activation (Figure 4E, C75), and multiplex cytokine analysis (Figure 4F, C76). The affinity-dependent differences (C77-C78) and appropriate controls (C79-C80, Figure 4\u2014figure supplement 3E) demonstrate specificity and validate the model's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Intestine-Chip demonstrates target expression-dependent toxicity: responses to both TCBs were attenuated in the Duodenum-Chip compared to Colon-Chip. CEA(Lo) TCB showed minimal response in duodenum, while CEA(Hi) TCB retained significant activity even at low target expression, suggesting potential safety risks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by comparative data between Colon and Duodenum chips (Figures 4G-H) showing differential responses correlating with target expression levels. The inference about safety risks of high-affinity molecules in low-expressing tissues (C85) is appropriately cautious and supported by the data pattern observed with both FOLR1 and CEA systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "The study demonstrates that Organ-Chip platforms (Lung-Chip and Intestine-Chip) can recapitulate TCB-mediated toxicities, predict safety profiles of engineered molecules, distinguish target-mediated from CD3-only effects, and show superior physiological relevance compared to conventional models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 and C94 represent the main conclusions of the study. These are well-supported by the comprehensive experimental data: Lung-Chip recapitulation and prediction validated in vivo (C86-C87), Intestine-Chip capturing human-specific antigen toxicity (C88), sensitivity to affinity and target expression (C89-C90), mechanistic insights from controls (C91), and comparative advantages over conventional models (C94). The integration of multiple lines of evidence across two organ systems strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The Organ-Chips detect clinically relevant biomarkers of TCB toxicity, specifically IFN\u03b3 and IL-6, which have been associated with severe cytokine release syndrome in CAR-T therapy, demonstrating the translational value of the platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 connect the chip findings to clinical relevance. The detection of IFN\u03b3 and IL-6 in response to high-affinity TCBs (C104) is supported by the cytokine data throughout the manuscript. The clinical relevance (C103) is supported by citations to CAR-T literature. The conclusion about translational value (C105) is appropriately drawn from this concordance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on cancer immunotherapy, TCB mechanism of action, and Organ-on-Chip technology, establishing the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 and C22-C23 provide appropriate background information supported by citations to published literature. These contextual claims establish the rationale for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C101",
+      "C102",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript discusses potential future applications of the Organ-Chip platforms, including early-stage antibody design, biomarker discovery, therapeutic window assessment, combined efficacy-safety testing, applicability to CAR-T therapy, and extension to other immunotherapies like checkpoint inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C114 represent speculative statements about future applications and potential developments. While these are reasonable extrapolations based on the demonstrated capabilities (C96, C97, C101, C102), they are not directly tested in the current study. Claims about specific future implementations (C106, C108, C112, C113, C114) are appropriately framed as possibilities but lack experimental validation. These represent discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The manuscript cites published examples of CAR-T therapy toxicity and affinity-tuning strategies, drawing parallels to the TCB work presented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 accurately cite published work on Her2 CAR-T therapy toxicity and affinity-tuning approaches. These citations are appropriately used to contextualize the current findings and demonstrate broader applicability of the affinity-tuning strategy.",
+    "result_type": "MINOR"
+  }
+]

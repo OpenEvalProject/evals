@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Full-length CAMSAP2 constructs (with and without GFP-tag) were purified and characterized by size exclusion chromatography and multi-angle light scattering (MALS), showing single peaks and a molecular mass of 122 \u00b1 1.1 kDa, suggesting CAMSAP2-FL exists as a monomer in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by chromatography data (Figure 1B, C) and MALS measurements (Figure 1\u2014figure supplement 1). The inference that CAMSAP2-FL exists as a monomer is reasonable given the measured mass (122 kDa) is closer to the theoretical monomer mass (167 kDa) than a dimer would be, though the discrepancy suggests the protein may be elongated or have anomalous migration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "GFP-CAMSAP2-FL binds preferentially to microtubule minus-ends, confirming that the purified CAMSAP2 proteins retain their original minus-end binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by TIRF microscopy data (Figure 1D) showing preferential minus-end binding, consistent with previous reports. This validates the functional integrity of the purified protein constructs used in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "CAMSAP2 drastically reduces the microtubule nucleation barrier from ~20 \u00b5M to 1-2 \u00b5M tubulin concentration, approaching the theoretical limit for microtubule polymerization. This effect persists under physiological salt conditions (100 mM KCl), though with reduced efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 are well-supported by pelleting assay data (Figure 2A-E). The experiments demonstrate that CAMSAP2 reduces the critical concentration for nucleation from >20 \u00b5M to 1-2 \u00b5M, with dose-dependent effects of CAMSAP2 concentration (250-1000 nM) and salt concentration. The reversibility of co-precipitation upon cooling validates the assay methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CAMSAP2 undergoes liquid-liquid phase separation (LLPS) to form condensates with liquid-like properties. CAMSAP2 contains a long disordered region and can form droplets at physiologically relevant concentrations (10 nM) under appropriate salt conditions (<400 mM), similar to TPX2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by PONDR predictions (Figure 3A), phase diagrams (Figure 3C, D), fusion observations (Figure 3E, Video 1), and FRAP data (Figure 3F, G). The slow fluorescence recovery suggests high viscosity. The comparison to TPX2 is appropriate given similar phase behavior. However, the claim that 10 nM is physiological (C62) requires validation from the cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Tubulin alone does not form droplets under physiological conditions but forms co-condensates with GFP-CAMSAP2-FL, indicating CAMSAP2 recruits tubulin into condensates via phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by microscopy data (Figure 3H) showing co-condensation only in the presence of CAMSAP2. This demonstrates CAMSAP2's ability to recruit tubulin into phase-separated condensates under physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "CAMSAP2 and tubulin co-condense to form aster-like structures (Cam2-asters) with microtubules radiating from condensates. Aster formation is concentration-dependent, detectable above 250 nM CAMSAP2, though this is higher than putative physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by fluorescence microscopy (Figure 4A, B) and quantification (Figure 4C). The concentration dependence is well-documented. The authors appropriately note the discrepancy between in vitro concentrations required (250-1000 nM) and physiological estimates (tens of nM), though they provide context about local concentration at cellular structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fixed CAMSAP2 foci can nucleate microtubules when supplemented with soluble CAMSAP2, with 50 nM soluble CAMSAP2 being sufficient for efficient polymerization. This suggests both fixed CAMSAP2-containing foci and soluble CAMSAP2 are required for microtubule polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are supported by TIRF microscopy experiments with fixed CAMSAP2 foci (Figure 4D-I, Videos 3-4). The data show tubulin incorporation into foci without polymerization (C79-C80), followed by microtubule formation upon addition of soluble CAMSAP2 (C81-C83). The 50 nM threshold is closer to physiological concentrations, strengthening the biological relevance. Dynamic microtubule behavior at foci (C85) is documented in time-lapse imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Electron microscopy reveals spherical CAMSAP2 condensates from which microtubule bundles radiate, forming dense meshworks. CAMSAP3 also exhibits aster-forming ability, suggesting this is a common function among CAMSAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by negative stain EM (Figure 5A, B) and supplementary data for CAMSAP3 (Figure 5\u2014figure supplement 1). The structural observations confirm the aster-like organization seen by fluorescence microscopy. The inference that aster formation is common among CAMSAPs (C91) is reasonable but based on limited data (only CAMSAP2 and CAMSAP3 tested).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Cam2-aster formation is tubulin concentration-dependent (observed at 2 \u00b5M and 10 \u00b5M tubulin) and salt-sensitive. Cryo-EM confirms aster formation with radially connected microtubule bundles, with minimal microtubule formation in tubulin-only controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by negative stain EM (Figure 5\u2014figure supplement 2) and cryo-EM (Figure 5C, Figure 5\u2014figure supplement 3). The controls showing no microtubules with tubulin alone at 30 \u00b5M (which exceeds CcMT nucleation) are critical for demonstrating CAMSAP2's specific effect. Salt sensitivity is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Domain mapping reveals that CC3-CKK is the minimum requirement for Cam2-aster formation, with the CKK domain being essential. The N-terminal region preceding CC3 is vital for condensate formation. GFP-CKK alone does not form asters, and deletion of CKK abolishes aster formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 are supported by TIRF microscopy (Figure 6B, C) and negative stain EM (Figure 6D, Figure 6\u2014figure supplements 2-3) of deletion constructs. The systematic deletion analysis clearly identifies functional domains. The conclusion that CC3-CKK is the minimum requirement (C109) is well-supported by the data showing GFP-CC3-CKK can form asters (though less efficiently than longer constructs), while GFP-CKK alone cannot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Time-course negative stain EM reveals that CAMSAP2 induces formation of ~50 nm diameter tubulin rings on ice, which decrease in number as microtubules form and grow upon warming to 37\u00b0C, suggesting rings are utilized in microtubule growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are supported by time-course negative stain EM (Figure 7A, B). The quantification shows inverse correlation between ring numbers and microtubule formation. The inference that rings are utilized for microtubule growth (C116) is reasonable but indirect\u2014the authors appropriately use cautious language ('suggesting'). Direct observation of ring incorporation was not captured (acknowledged in C158).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Cryo-EM reveals diverse tubulin structures with CAMSAP2: rings, crescent-shaped oligomers, sheets, and intermediates between rings and sheets. 2D classification shows the rings are formed by longitudinal tubulin contacts (protofilament rings) rather than lateral contacts like \u03b3-TuRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 are supported by cryo-EM data (Figure 8A-F, Figure 8\u2014figure supplements 2-3). The controls showing no rings with tubulin alone (C117-C118) are essential. The 2D classification (Figure 8D, E) clearly distinguishes the longitudinal protofilament rings from lateral contact rings like \u03b3-TuRC (C125), supported by comparison with published structures. This is a key mechanistic distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Time-course cryo-EM shows that warming to 37\u00b0C stimulates tubulin sheet formation and condensation of intermediates with CAMSAP2, forming denser nucleation centers that develop into Cam2-asters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by time-course cryo-EM (Figure 8A) and tomography (Figure 8\u2014figure supplement 1, Video 5). The progression from dispersed intermediates on ice to condensed centers at 37\u00b0C is well-documented. The inference about mechanism (C130) is reasonable based on the structural observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Developing aster centers contain tubulin rings, ring-sheet intermediates, sheets, and short microtubules. Rings align along growing microtubules and sheets, with microtubule ends showing partially curved sheet-like structures characteristic of growth rather than depolymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 are supported by detailed cryo-EM analysis (Figure 8C, Figure 8\u2014figure supplements 2D, 3). The observation of partially curved (growing) rather than fully curved (depolymerizing) ends (C135-C136) provides evidence for active growth. The alignment of rings along growing structures (C132) supports their role in polymerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "CAMSAP2 functions as a microtubule nucleator in vitro by reducing the nucleation barrier from 20 \u00b5M to 1-2 \u00b5M through LLPS-mediated condensate formation and efficient production of nucleation intermediates. This mechanism likely operates at physiological conditions in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 represent the main conclusions synthesizing multiple experimental results. The in vitro nucleation function (C137-C139) is well-supported by pelleting assays and EM data. The LLPS mechanism (C140) is supported by phase separation experiments. The physiological relevance (C141-C143) is supported by experiments at near-physiological concentrations with fixed foci, though the extrapolation to in vivo conditions (C143) is speculative and appropriately qualified by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "While Cam2-asters morphologically resemble centrosomal asters, the molecular mechanisms are entirely different. CAMSAP2 condensates produce longitudinal protofilament rings rather than the lateral contact rings of \u03b3-TuRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 are supported by the structural comparison between Cam2-asters and \u03b3-TuRC-mediated nucleation. The morphological similarity (C144) is evident from microscopy, while the mechanistic differences (C145, C147) are demonstrated by 2D classification showing longitudinal vs. lateral tubulin contacts. CAMSAP2 localization in condensates (C148) is confirmed by fluorescence microscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The molecular mechanism by which CAMSAP2 binds tubulin to produce rings and sheets remains unclear. While the CKK domain bridges tubulin dimers in neighboring protofilaments, this binding pattern doesn't obviously support single ring formation. Multiple CAMSAP2 molecules might connect tubulins longitudinally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C152 acknowledge limitations and propose speculative mechanisms. C149 appropriately identifies gaps in understanding. C150-C151 correctly cite established knowledge about CKK binding. C152 is highly speculative, proposing a mechanism by analogy to TPX2 without direct evidence. The authors appropriately identify this as requiring future high-resolution structural studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "CAMSAP2 induces tubulin ring formation on ice, which decrease as sheets and microtubules increase upon warming. While rings might serve as material for microtubule formation through dynamic fluctuation among rings, curved sheets, sheets, and microtubules, direct incorporation was not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C160 are supported by time-course EM data showing inverse correlation between rings and microtubules. The authors appropriately acknowledge they did not capture direct ring incorporation (C158) and propose dynamic fluctuation as a mechanism (C160). The speculation is reasonable given the structural observations of intermediates (C159) but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors propose a model where CAMSAP2 induces longitudinal tubulin stacking into protofilament rings (on ice), followed by temperature-induced co-condensation that stimulates nucleation intermediate formation. Microtubules radiate from these centers while CAMSAP2 decorates growing lattices, ultimately forming interconnected meshworks. CAMSAP2 thus plays a dual role as both organizer and stabilizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C170 present the proposed mechanistic model (Figure 9) integrating all experimental observations. The model is well-supported by the collective data: ring formation on ice (C162-C163), temperature-dependent condensation (C164), intermediate production (C165), aster formation (C167), lattice decoration (C168), and meshwork formation (C169). The dual role conclusion (C170) appropriately synthesizes the findings. However, C166 acknowledges uncertainty about how intermediates become critical nuclei.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "At physiological CAMSAP2 concentrations (50 nM), CAMSAP2 binds microtubule minus-ends but doesn't induce polymerization in vitro. However, when CAMSAP2 condensates are fixed to surfaces, 50 nM soluble CAMSAP2 sufficiently induces polymerization, suggesting both fixed foci and soluble CAMSAP2 are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176 are supported by comparing behavior at 50 nM in different contexts (Figures 1C, 3, 4). This reconciles the concentration discrepancy between in vitro requirements and physiological levels, providing insight into how CAMSAP2 might function in vivo where it's concentrated at specific cellular structures. The inference (C176) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "While CAMSAPs typically decorate single microtubules in vertebrate cells, Patronin clusters can radiate multiple microtubules simultaneously, suggesting Cam2-aster formation may not be purely in vitro. The mechanism might operate in vivo through smaller CAMSAP/tubulin complexes, with excess clustering potentially regulated by unidentified physiological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C177-C179 appropriately cite known in vivo behavior and draw parallels to in vitro observations. However, C180-C181 are highly speculative about in vivo regulation and scaling. While the speculation is reasonable and appropriately qualified, there is no direct evidence for the proposed regulatory mechanisms or minimal functional units. This represents an important direction for future research but cannot be considered supported by the current data.",
+    "result_type": "MINOR"
+  }
+]

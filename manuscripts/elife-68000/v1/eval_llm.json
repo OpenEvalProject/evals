@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C109"
+    ],
+    "result": "The authors successfully adapted the 4i (iterative indirect immunofluorescence imaging) technique from cultured cells to tissue sections, enabling simultaneous detection of 18 proteins in adult mouse brain, human embryonic stem cell-derived organoids, and embryonic mouse brain. The method preserves antigenicity across multiple cycles for most antibodies tested and allows 3D reconstruction of tissue volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C25-C30, and C109 collectively demonstrate successful methodological development. The data in Figures 1A-E show effective tissue adhesion using PDL coating across multiple tissue types, strong correlation of fluorescence intensities before and after elution for most antibodies, and capability for 3D reconstruction. The method is well-validated with appropriate controls and reproducibility testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The antigenicity preservation test revealed that ID4 and MT3 antibodies showed poor correlation between staining rounds, with ID4 staining being impaired and MT3 showing improved quality after elution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report negative/mixed results from the antigenicity test, which are appropriately documented. The observation that MT3 improved after elution while ID4 failed is clearly stated and represents important methodological limitations. These findings are transparently reported as exceptions to the general success of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Age-related changes in cell populations within the dentate gyrus include significant reductions in R cell density and DCX+ immature neurons at 12 months, decreased total KI67+ proliferating cells with age, and reduced S100\u03b2+ astrocytes in aged animals. No significant changes were observed in microglia or oligodendrocyte precursor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 describe quantitative cell population changes supported by data in Figures 3A-C. The findings are consistent with cited literature (C36 references Denoth-Lippuner and Jessberger, 2021) and show appropriate statistical analysis. The sample size (n=3 per age group, C116) is modest but adequate for these well-established age-related changes. The null findings for microglia and OPCs are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "R cells in 12-month-old mice show increased fluorescent intensities of quiescence markers HOPX and MT3 compared to younger animals, while classical astrocytes do not show altered expression of these markers with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by quantitative fluorescence intensity data in Figure 4A-C. The findings are consistent with cited literature on age-associated R cell quiescence (Kalamakis et al., 2019; Harris et al., 2021). The cell-type specificity (R cells vs. astrocytes) strengthens the interpretation. However, the small sample size (n=3) and the fact that MT3 showed poor correlation in the antigenicity test (C32) raises some concern about the robustness of the MT3 findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "LaminB1 expression is reduced in R cells and DCX+ immature neurons between 2 and 12 months of age, while microglia, astrocytes, and parvalbumin-labeled interneurons show no significant age-related changes in LaminB1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by data in Figure 4D-E and confirm previous reports (Bedrosian et al., 2021; Bin Imtiaz et al., 2021). The cell-type specific analysis demonstrates the power of 4i to measure multiple cell types in the same section. Statistical tests were appropriately chosen (Welch's t-test for unequal variances). This validates the 4i approach while confirming known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "Vascular density decreases with age starting at 6 months. While total vasculature coverage remains stable, the cellular composition of the blood-brain barrier changes with age: pericyte coverage decreases at 6 months, GFAP+ astrocyte coverage increases, microglia-vessel contact increases significantly at 12 months, R cell contribution decreases, and OPC contact remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C56-C58, C60-C62, and C64 describe comprehensive vascular changes supported by data in Figures 5A-D. The findings confirm known age-related vascular decline (C52, C53) while providing novel cellular detail about BBB composition changes. The compensatory increase in astrocyte coverage (C60) is appropriately labeled as speculative. Statistical analyses appear appropriate with one-way ANOVAs and post-hoc tests. The interpretation of 'compensatory' increase is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The decrease in R cell contribution to vasculature coverage is attributed to the overall decrease in R cell population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides a reasonable inference linking the decreased R cell-vasculature contact (C62) to the documented decrease in R cell density (C36). This is a logical interpretation supported by the data, though it remains correlative rather than mechanistically proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Microniche-based analysis reveals age-related changes in local cellular composition: vascular and pericyte densities decrease by 6 months, Nestin decreases by 6 months while GFAP remains stable (indicating astrocyte contribution), SOX2 progressively decreases, IBA1+ microglia sequentially increase, and OPCs show a transient increase at 6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 describe spatially-resolved changes within 50 \u03bcm radius microniches, supported by data in Figure 6A-B. The randomized sampling approach is methodologically sound. The inference that stable GFAP with decreased Nestin indicates astrocyte contribution (C68) is reasonable. Statistical analyses used Games-Howell's correction for large group sizes, which is appropriate. This analysis provides novel spatial resolution of age-related changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Principal component analysis and k-means clustering of microniches reveal that 2-month-old animals contain both 'young' (64.5%) and 'old' (35.5%) phenotype niches, with 'young' niches showing higher volumes of neurogenic and vascular markers. The 'aged' phenotype becomes pronounced by 6 months, with 6- and 12-month samples clustering together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe unsupervised clustering analysis supported by data in Figures 6C-E. The finding that 'aged' niches exist even in young animals (C76) is novel and interesting. However, the k-means clustering with k=2 is somewhat arbitrary, and the biological significance of the 'young' vs 'old' classification requires further validation. The analysis is technically sound but the interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In 6- and 12-month-old mice, microniches with high Nestin content show elevated CollagenIV (vasculature) and IBA1 (microglia) compared to low Nestin niches, while no such differences exist at 2 months. Proliferating cell niches do not show this pattern, suggesting vasculature and microglia may support quiescent stem cell maintenance but not proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 present an interesting spatial association between Nestin+ niches and vasculature/microglia in aged animals (Figure 6F). However, the interpretation that this indicates a 'role in maintenance of quiescent stem cells' (C82) is highly speculative and not mechanistically tested. The correlation is intriguing but causality is not established. The threshold for 'high Nestin' (top three quartiles, >0.4% coverage) appears arbitrary. The contrast with Ki67+ niches (C80) strengthens the interpretation but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Radial processes from R cells show increased proximity to vasculature, pericytes, and microglia in 12-month-old animals compared to younger mice. R cell processes preferentially localize to areas with low pericyte coverage, but pericyte colocalization increases at 12 months. Proximity to OPCs remains unchanged with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe age-related changes in R cell process contacts supported by data in Figure 7A-B. The analysis uses colocalization as a proxy for proximity (~1 \u03bcm resolution), which is appropriate given optical limitations. The finding that R cells preferentially contact low-pericyte areas (C85) is consistent with cited literature (Licht et al., 2020). Statistical analyses using one-way ANOVAs are appropriate. The increased pericyte contact at 12 months despite preference for low-pericyte areas is interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Targeted niche mapping reveals that vascular density is reduced in the immediate vicinity (<15 \u03bcm) of R cell processes at 6 months but comparable between 2 and 12 months across all distances. Microglia volume around R cells increases at 6 and 12 months across all distances. Around proliferating cells, vascular density is reduced in aged animals while microglia remain unchanged, suggesting microglia maintain the niche but do not directly affect proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C95 describe distance-dependent changes in niche composition around R cells and proliferating cells (Figure 7C-D). The data show clear spatial patterns, and the mixed-effects model analysis is appropriate. However, the interpretation that microglia 'maintain the niche but do not directly affect cell proliferation' (C95) is highly speculative and not mechanistically tested. The differential association with R cells vs. proliferating cells is interesting but the functional interpretation goes beyond the correlative data. The finding that 6-month vascular density around R cells is reduced but 12-month is not (C89, C91) is somewhat puzzling and not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C96",
+      "C104"
+    ],
+    "result": "The authors conclude that reorganization of the dentate gyrus niche, including alterations in NSC-vasculature contact sites, occurs relatively early in life (by 6 months in mice), paralleling the decline in neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C24, C96, and C104 represent the main conclusions of the study. These are well-supported by the comprehensive cellular and spatial analyses presented (vascular changes by 6 months, microniche alterations, contact site changes). The conclusion that changes occur 'relatively early' is supported by the 6-month data. However, the causal relationship between niche changes and neurogenesis decline is not established\u2014the data show correlation and temporal association but not mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C97",
+      "C98",
+      "C106"
+    ],
+    "result": "The authors identify changes in blood-brain barrier cell-type composition and microenvironments surrounding NSCs as putative regulators of neurogenic permissiveness throughout life, with vascular density and distribution of microglia and oligodendroglia associated with stem cell maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6, C97-C98, and C106 represent major interpretive conclusions about the functional significance of observed changes. While the spatial associations are well-documented, the causal role as 'regulators of neurogenic permissiveness' is not established. The authors appropriately use 'putative' (C97, C98) but the abstract claims these changes 'play a pivotal role' (C5, C6), which overstates the evidence. The data are correlative and descriptive; functional validation is acknowledged as needed (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors acknowledge that whether cellular alterations are truly responsible for age-related changes in neurogenesis remains to be tested, and that additional alterations may have been missed due to the limited marker set used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 appropriately acknowledge key limitations: the correlative nature of the findings and the limited marker panel that cannot capture cell states or subtypes. This transparent discussion of limitations is important and appropriate. The acknowledgment that functional validation is needed (C107) is critical given the mechanistic interpretations made elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "The authors propose that 4i can be scaled up beyond 18 antibodies when required, may be especially useful for limited tissue samples, and will overcome technical limitations in clonal lineage tracing experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 and C114 are speculative statements about future applications. While C110 is reasonable given the original 4i paper's demonstration of >40 proteins (C14), the specific applications to limited samples (C111) and lineage tracing (C114) are not demonstrated in this study. These are reasonable projections but remain untested hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The aging study used C57BL/6J males at 2, 6, and 12 months of age with n=3 per group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 describes the experimental design. While clearly stated, the sample size of n=3 per age group is modest for the extensive quantitative analyses performed. This is a limitation for statistical power, particularly for detecting subtle effects or interactions. The use of only males is also a limitation not discussed. However, for well-established age-related changes and methodological validation, n=3 may be adequate.",
+    "result_type": "MINOR"
+  }
+]

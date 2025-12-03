@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21"
+    ],
+    "result": "Nuclear localization of fluorescent proteins (H2B-mScarlet and H2B-mGreenLantern) significantly enhanced detection of retrogradely labeled supraspinal neurons in cleared brain tissue compared to cytoplasmic localization, with H2B-mGreenLantern showing superior performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C21 provide converging quantitative evidence from multiple fluorophores showing 2-fold to >10-fold improvements in detection with nuclear localization. Statistical significance is demonstrated (p<0.01, two-way ANOVA), and the findings are supported by both imaging data and spot detection quantification across multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Bilateral spinal injections produced symmetric retrograde labeling in both brain hemispheres, and labeling reached plateau by 2 weeks post-injection without further increase at 4 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 demonstrate technical validation of the injection methodology through quantitative bilateral symmetry and temporal stability data. These controls are essential for establishing the reliability of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C30",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C40",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "A comprehensive brain-wide mapping identified 31,219 supraspinal neurons (average) distributed across 69 brain regions following lumbar spinal cord injection, with detailed anatomical localization to specific nuclei throughout the medulla, pons, midbrain, and forebrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C23, and C24-C49 collectively provide extensive anatomical mapping data validated by both automated registration (cellfinder/brainreg) and concordance with prior literature. The quantitative counts and regional assignments are supported by 3D imaging and are consistent with established neuroanatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Injection site variation (L1 vs. L4 vs. T10) produced minimal differences in supraspinal neuron counts, with only modest changes in CST and GRN populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 demonstrates methodological robustness through comparison across injection sites. The finding of consistency validates the reproducibility of the approach, though the biological interpretation of the modest differences observed requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Brain-wide analysis revealed that only 26.5% of supraspinal neurons project to lumbar spinal cord, with region-specific patterns showing dorsal brainstem populations predominantly targeting cervical levels while ventral populations project to both cervical and lumbar regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 provide quantitative data on cervical vs. lumbar projection patterns using dual-color retrograde labeling. The findings reveal topographic organization supported by both whole-brain quantification and consistency with prior anatomical knowledge (C55, C57, C59-C61 cite supporting literature).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Dual retrograde labeling revealed region-specific patterns of collateralization, with deep cerebellar nuclei (8.5%) and red nucleus (14.4%) showing minimal dual innervation, while lateral hypothalamus (54.8%) and gigantocellular reticular formation (48.5%) showed extensive dual cervical-lumbar projections. Corticospinal neurons showed 53% dual labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 and C72 provide quantitative co-localization data from confocal microscopy with cellular resolution. The findings are internally consistent and supported by control experiments. Claims C64-C65 provide mechanistic interpretation supported by prior work, though the inference about AAV2-retro uptake mechanism relies partly on cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Dual-labeled corticospinal neurons showed significantly dimmer cervical fluorescence compared to cervical-only neurons, while lumbar fluorescence remained bright. This pattern suggests sparse cervical collateralization by lumbar-projecting neurons, with viral uptake potentially proportional to synapse density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 provide quantitative data on differential fluorescence intensity in dual-labeled neurons. However, C77-C78 present a speculative mechanistic model. While the model is consistent with recent anterograde tracing studies (C78 cites supporting work), alternative explanations for dim labeling are not fully excluded. The interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Lumbar-projecting corticospinal neurons are concentrated in a medial-caudal subregion of M1, completely surrounded by cervical-projecting neurons, representing a nested rather than segregated topographic organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe the spatial organization of CST neurons with support from both experimental data and recent literature (C68-C69, C71 cite concordant studies). The nested organization model is well-supported by the imaging data showing the rim of cervical label surrounding lumbar neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "AAV2-retro effectively transduces diverse supraspinal neuron populations in chronic spinal cord injury (6 weeks post-injury), with cell counts comparable to uninjured animals across all brain regions examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 demonstrate maintained viral transduction efficacy in chronic injury through quantitative comparison with uninjured controls. This finding has important translational implications and is supported by comprehensive brain-wide quantification showing no significant regional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Graded spinal cord crush injuries produced variable astrocytic bridging (92.5% mild, 32.2% moderate, <1% severe) and corresponding differences in supraspinal neuron sparing, with region-specific vulnerability patterns (CST <20% sparing in mild injury vs. pontine central gray 83.3% sparing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 provide quantitative characterization of injury severity using both histological (astrocytic bridging) and functional (retrograde labeling) measures. Statistical analysis is appropriate (ANOVA with post-hoc tests), and the data reveal both injury-dependent and region-specific patterns of sparing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Sparing of pedunculopontine nucleus neurons and cervical propriospinal neurons correlated significantly with recovery of plantar stepping (BMS \u22655), with non-overlapping ranges between impaired and high-performing animals, while other regions showed overlapping sparing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 demonstrate correlation between region-specific sparing and functional recovery using appropriate statistical comparisons. The finding of non-overlapping ranges for PPN and cervical propriospinal neurons provides strong correlational evidence, though causation is not established. The analysis appropriately acknowledges this is correlational (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The pedunculopontine nucleus, part of the mesencephalic locomotor region, shows direct lumbar spinal projections and correlation with locomotor recovery, generating the hypothesis that PPN-spinal projections may contribute to functional recovery after spinal injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 appropriately frame the PPN findings as hypothesis-generating based on correlational data. C93 establishes the known role of MLR in locomotion through citations, C94 notes the gap in SCI research, and C95 explicitly presents this as a hypothesis requiring further testing. The reasoning is sound and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors acknowledge several methodological limitations: the crush model does not mimic human contusion injuries, AAV2-retro shows limited tropism for serotonergic neurons, and image registration obscures region-specific volumetric changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 represent appropriate acknowledgment of methodological limitations, each supported by citations to relevant literature. These caveats are important for proper interpretation of the results and demonstrate scientific rigor in self-assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The supraspinal connectome consists of multiple cell types distributed through brainstem, midbrain, and motor cortex, with each type projecting to specific spinal levels and cell types. This organization is highly conserved across mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C6 establish foundational knowledge about supraspinal organization, supported by citations to classical neuroanatomical literature. These claims provide essential context for the experimental work but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior supraspinal research has focused predominantly on major motor pathways (corticospinal, rubrospinal, raphespinal, reticulospinal), with fragmented and non-standardized information about dozens of other descending populations. Traditional methods are laborious and require high expertise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7-C14 establish the rationale for the study by documenting limitations of prior approaches and gaps in current knowledge. These claims are well-supported by citations to relevant literature and accurately characterize the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C29",
+      "C31",
+      "C34",
+      "C37",
+      "C38",
+      "C41",
+      "C43",
+      "C44",
+      "C48",
+      "C50"
+    ],
+    "result": "Specific supraspinal nuclei identified in the mapping have established functional roles based on prior literature, including locomotion initiation (PGRNl), blood pressure regulation (PGRNl, PBN), respiration control (solitary nucleus), micturition (Barrington's), and pain modulation (LHA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C28-C29, C31, C34, C37-C38, C41, C43-C44, C48, C50 cite prior literature to establish functional roles of identified nuclei. These claims appropriately integrate the current anatomical findings with established functional knowledge, though they represent synthesis of prior work rather than novel functional discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Detection of deep cerebellar nuclei was low and highly variable between animals despite known projections to lumbar spinal cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 acknowledges a technical limitation in detecting DCN neurons. The authors appropriately note this limitation and exclude DCN from automated quantification, demonstrating appropriate quality control. This represents a methodological caveat rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Medullary reticular formations showing predominantly cervical projections have been recently implicated in forelimb-reaching behavior, consistent with their projection pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 appropriately connects the observed cervical-predominant projection pattern with recent functional studies on forelimb control. This represents integration of current findings with emerging literature, providing functional context for the anatomical observations.",
+    "result_type": "MINOR"
+  }
+]

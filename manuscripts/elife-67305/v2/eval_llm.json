@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CPSF30 depletion causes widespread transcriptional read-through downstream of protein-coding genes, demonstrating its essential role in polyadenylation signal (PAS) recognition and transcriptional termination. This is consistent with established knowledge that CPSF30 binds the AAUAAA signal as the first step of PAS recognition, leading to cleavage by CPSF73 and termination by XRN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C43-C47 collectively establish CPSF30's role in transcriptional termination. C1 is directly supported by RNA-seq data (Figure 1C) showing profound read-through following CPSF30 depletion. C43-C47 provide established mechanistic context from prior literature that is consistent with the observed phenotype. The experimental evidence and mechanistic framework are mutually reinforcing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "ZC3H4 and ZC3H6 are metazoan-enriched paralogues that were identified as the most depleted factors after CPSF complex components in proximity labeling experiments following CPSF30 depletion. ZC3H4 interacts with WDR82, a known termination factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 are well-supported by complementary lines of evidence. C2 is supported by mass spectrometry data (Figure 1F), C3 by co-IP experiments (Figure 1\u2014figure supplement 2D) and prior literature, and C4 by phylogenetic analysis (Figure 1\u2014figure supplement 3A-B). The convergence of proteomics, biochemical validation, and evolutionary analysis provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C28",
+      "C29",
+      "C69"
+    ],
+    "result": "ZC3H4 restricts non-coding transcription, particularly at PROMPT and enhancer RNA (eRNA) loci. ZC3H4 depletion causes profound upregulation and extension of these transcripts, with PROMPTs extending over 100 kb and eRNAs at super-enhancers showing similar effects. This suggests ZC3H4 drives early transcriptional termination at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C28-C29, and C69 are strongly supported by RNA-seq data showing dramatic effects on PROMPT and eRNA transcripts following ZC3H4 depletion (Figures 2C-F). The comparison with DIS3 depletion (C68) demonstrates that the extended transcripts result from aberrant transcription rather than just stabilization. The magnitude and specificity of effects, combined with ZC3H4's greater impact than ZC3H6 (C5), provide compelling evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C30",
+      "C31",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "ZC3H4 and Integrator have distinct but overlapping functions in restricting non-coding transcription. ZC3H4 has more substantial effects on PROMPT regions and super-enhancers compared to Integrator depletion, and the two factors affect largely non-overlapping sets of protein-coding genes (~1000 genes each with minimal overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C30-C31, C75-C76, and C81 are supported by comparative RNA-seq analysis (Figures 3D-H). The bioinformatic analysis showing minimal overlap between affected genes (C75, Figure 3D) and the differential effects on PROMPTs and eRNAs (C8-C9, Figures 3F-H) provide strong evidence for distinct pathways. The consistency with published HeLa cell data (C76) strengthens the conclusion. This establishes an important conceptual advance in understanding termination pathway diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C82"
+    ],
+    "result": "Rapid ZC3H4 depletion using the DHFR degron system (4 hours) recapitulates the effects observed by RNAi, and these effects are rapidly reversible upon ZC3H4 re-expression. This demonstrates that the observed transcriptional effects are direct consequences of ZC3H4 loss rather than compensatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C82 are supported by qRT-PCR data from the DHFR degron system (Figure 4D) and Pol II ChIP data (Figure 4\u2014figure supplement 1A). The rapid onset (4 hr) and reversibility of effects argue strongly against indirect or compensatory mechanisms. The demonstration that extended PROMPTs result from aberrant transcription (C12) rather than just RNA stabilization is particularly important. This addresses a critical concern about the RNAi experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C58",
+      "C60"
+    ],
+    "result": "WDR82 and its associated PP1/PNUTS complex, but not SETD1A/B, functionally overlap with ZC3H4 in restricting PROMPT and super-enhancer transcripts. Co-depletion of ZC3H4 and WDR82 shows no synergistic effect, suggesting they act in the same pathway at tested loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by qRT-PCR data following depletion of WDR82, PNUTS, and SETD1A/B (Figure 4G, Figure 4\u2014figure supplement 1C-E). The lack of synergy between ZC3H4 and WDR82 depletion (C14) is consistent with a linear pathway. The differential effects of PNUTS versus SETD1A/B depletion (C15) help define which WDR82 complex is relevant. This connects ZC3H4 to established termination machinery and is supported by prior literature (C58, C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C84",
+      "C85"
+    ],
+    "result": "ZC3H4 occupies a subset of Pol II-bound genes with enrichment at promoter regions and super-enhancers. ZC3H4 occupies a broader promoter region than Pol II, and the width of ZC3H4 peaks corresponds to the normal extent of PROMPT and eRNA transcription. This pattern is conserved in HEPG2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C84-C85 are supported by ChIP-seq data in HCT116 cells (Figures 5A-F) and validation with ENCODE data from HEPG2 cells (Figure 5G). The broader ZC3H4 occupancy compared to Pol II (C18) and the correspondence between ZC3H4 peak width and transcript extent (C84) provide mechanistic insight. The selective occupancy (C17) is consistent with the selective effects on transcription. The convergence of data from two cell lines and two antibodies (endogenous and flag-tagged) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C41"
+    ],
+    "result": "ZC3H4 directly crosslinks to RNA in cells, as demonstrated by UV-dependent recovery in XRNAX experiments. This suggests ZC3H4 may directly interact with its target transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C41 are supported by XRNAX data showing UV-dependent recovery of ZC3H4 with RNA (Figure 5\u2014figure supplement 1A). The use of appropriate positive (EXOSC10) and negative (TCF4) controls strengthens the conclusion. This provides important mechanistic insight into how ZC3H4 might recognize its targets, though the specific RNA sequences bound remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C88"
+    ],
+    "result": "Tethering ZC3H4 to a reporter RNA via the MS2 system is sufficient to suppress reporter expression. This effect is specific (no effect on reporters lacking MS2 hairpins or from endogenous ZC3H4) and occurs on nascent, chromatin-associated RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C88 are supported by qRT-PCR data from MS2 tethering experiments on total RNA (Figure 6B) and chromatin-associated RNA (Figure 6C). The appropriate controls (MS2-GFP, ZC3H4-GFP, reporter without MS2 hairpins, endogenous ZC3H4 depletion) demonstrate specificity. The detection of effects on chromatin-associated RNA (C25) is particularly important for establishing that ZC3H4 acts co-transcriptionally. This is a key gain-of-function experiment that complements the loss-of-function studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C87",
+      "C91"
+    ],
+    "result": "Recruited ZC3H4 promotes the release of RNA that is subsequently degraded by the exosome component DIS3. The ratio of upstream to downstream reporter RNA increases with ZC3H4-MS2 tethering, especially after DIS3 depletion, consistent with ZC3H4 promoting early termination followed by exosome degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C87, and C91 are supported by qRT-PCR data showing increased upstream/downstream RNA ratio with ZC3H4-MS2 tethering that is enhanced by DIS3 depletion (Figure 6D). This provides mechanistic insight into how ZC3H4 restricts transcription\u2014by promoting termination and enabling exosome access. The inference is reasonable given the known fate of PROMPTs and eRNAs (C87, C91), though direct evidence for ZC3H4-exosome interaction is lacking (acknowledged in C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Loss of ZC3H4 causes reduced colony size in colony formation assays, demonstrating its importance for cell growth and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by colony formation assay data (Figure 6F) showing smaller colonies in the absence of ZC3H4. This establishes the biological relevance of ZC3H4 function. However, the mechanism linking ZC3H4 loss to reduced proliferation is not explored, and it's unclear whether this is due to specific effects on particular genes or a more general consequence of widespread transcriptional dysregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "ZC3H4 has been proposed as functionally equivalent to Drosophila Suppressor of Sable (Su(s)), with which it shares structural features (zinc fingers flanked by disordered regions) and similar effects on transcription. Both factors may be recruited via WDR82 binding to Ser5-phosphorylated Pol II, and their function may involve recognition of cryptic splice sites, though U1 snRNA inhibition alone does not fully recapitulate ZC3H4 effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32-C40 synthesize prior literature on Su(s) with the current findings on ZC3H4. While the structural similarities (C33) and functional parallels (C34) are supported by data and citations, the mechanistic proposals regarding WDR82 recruitment (C36-C37) and splice site recognition (C38-C40) are more speculative. The observation that U1 snRNA inhibition causes PROMPT stabilization but not extension (C40) suggests additional mechanisms beyond splice site recognition. The recent publication cited in C38 (Austenaa et al., 2021) provides some support but was not fully integrated into the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C61",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript provides extensive background on transcriptional termination mechanisms, including the roles of XRN2, CPSF73, Integrator, WDR82, PNUTS/PP1, and various factors controlling premature cleavage and polyadenylation (PCPA). This context establishes that non-coding transcription termination is less well understood than termination at protein-coding genes, and that multiple pathways exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57, C59, C61, C66-C67, C70-C74, C79-C80 provide background knowledge from prior literature that is well-supported by appropriate citations. These claims establish the scientific context for the study and are generally accurate representations of the field. However, they are primarily literature review rather than new findings. The claim that PROMPTs susceptible to ZC3H4 have slightly lower PAS density (C72) is a new observation supported by bioinformatic analysis (Figure 2\u2014figure supplement 2F).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C83"
+    ],
+    "result": "Transcripts upregulated following ZC3H4 or Integrator loss are normally expressed at lower levels than unaffected genes, consistent with repression by these factors. Some mRNAs are immediately upregulated following rapid ZC3H4 depletion, demonstrating direct transcriptional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C83 are supported by expression analysis (Figure 3E) and qRT-PCR on chromatin-associated RNA following rapid ZC3H4 depletion (Figure 4E). The observation that affected transcripts are normally expressed at lower levels (C77) is consistent with active repression (C78), though alternative explanations (e.g., these genes are inherently more prone to premature termination) are not fully excluded. The rapid upregulation of specific mRNAs (C83) provides strong evidence for direct effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript provides accurate background on genome-wide transcription, long non-coding RNA classification and degradation, and technical aspects of chromatin-associated RNA purification and poly(A) site cleavage timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C68, C89-C90 provide accurate background knowledge and technical context. C68 is a new observation comparing DIS3 and ZC3H4 depletion effects (Figure 2C-D) that helps distinguish stabilization from transcriptional extension. The other claims are well-established facts from the literature that provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript includes extensive speculation about ZC3H4 mechanism and function, including potential phase separation properties, catalytic activity, recruitment mechanisms, specificity determinants, and biological roles in development. Multiple early termination pathways may contribute to conditional gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42, C92-C103 are explicitly speculative (marked as SPECULATION in evidence_type) or represent future research directions. While these speculations are reasonable given the data, they lack direct experimental support. C104 is a more grounded inference from the observation that Integrator and ZC3H4 affect different gene sets. The speculation about phase separation (C42) is based only on the presence of disordered regions. The speculation about catalytic activity (C96-C97) acknowledges the lack of evidence. These claims are appropriately presented as hypotheses rather than conclusions.",
+    "result_type": "MINOR"
+  }
+]

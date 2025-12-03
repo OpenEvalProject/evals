@@ -1,0 +1,526 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C29",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors developed a novel geometric model that incorporates two key factors: the time required for prey to turn (T1(|\u03b1|)) and the endpoint of the predator attack (Dattack). The model optimizes escape trajectory (ET) by maximizing the time difference (Tdiff) between prey and predator arrival at the safety zone edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C29, C42, C43, C45, and C46 collectively describe the novel model structure and optimization criterion. The model formulation is mathematically defined with clear equations (Equations 1-10 in text) and illustrated in Figure 2B. The two-phase escape model (fast-start and constant speed) is validated by experimental data (C48, Figure 4\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pagrus major exhibited multimodal escape trajectories that varied systematically with initial orientation. At small initial orientations (0-30\u00b0), two peaks were observed at ~100\u00b0 and ~-80\u00b0. As initial orientation increased, the peak at -80\u00b0 disappeared, a new peak emerged at ~170\u00b0, and at large orientations (150-180\u00b0), two similar-sized peaks appeared at ~130\u00b0 and 180-200\u00b0. Overall, three peaks were confirmed at 120-130\u00b0, 170-180\u00b0, and ~-80\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe experimental observations of multimodal ET patterns shown in Figure 3. Statistical analyses confirm significant effects of initial orientation on ET (C56: GAMM F=214.81, p<0.01 for away; F=373.92, p<0.01 for toward responses). The three-peak pattern is validated by Gaussian mixture model analysis (C59). Sample size is adequate (n=264 from 23 individuals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C130"
+    ],
+    "result": "Predator speed had no significant effect on escape trajectory or turn angle in the experimental range tested. The model assumes prey optimize ETs based on a fixed predator speed, which is supported by the lack of speed effects in experiments and worse model fits when using actual dummy predator speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 report non-significant effects of predator speed on ET and |\u03b1| (GAMM p=0.82-0.93, Levene's test p=0.09-0.88). C67 shows follow-up analysis with per-trial speeds yielded worse fits (Table 3\u2014source data 1, Figure 5\u2014figure supplement 1). However, the predator speed range tested (0.13-1.88 m/s) may not capture all ecologically relevant scenarios (C131), limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "The time required for prey to turn (T1(|\u03b1|)) exhibits a piecewise linear relationship with turn angle: constant up to ~44\u00b0 of |\u03b1|, then linearly increasing. This pattern is explained by initial velocity after stage 1 turn, which increases linearly up to ~45\u00b0 then plateaus. The constant-speed phase velocity (Uprey) was estimated as 1.04 m/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C80 describe kinematic measurements validated by statistical analyses. The 15 mm cutoff for fast-start phase is justified by velocity plateau analysis (C69: paired t-test with Bonferroni correction, all p=1.00). Piecewise linear regression had lowest WAIC (C77, Table 2). Sensitivity analysis confirms results are robust to cutoff distance changes of 10-20 mm (C75). The change points for T1(|\u03b1|) and initial velocity relationships are not significantly different (C80: 1.70\u00b118.01\u00b0).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Model parameters were determined through a combination of direct measurement (Dwidth=18mm, Rdevice=199mm), kinematic analysis (D1, Uprey, T1(|\u03b1|)), and optimization (Dattack=34.73mm, Upred=1.54 m/s). The optimized values are at the upper limit of or higher than empirical data from previous studies, suggesting prey may overestimate predator threat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C88 describe parameter estimation methods. Direct measurements are clearly defined (C62). Optimization procedure uses ranking index to minimize mean difference between predicted and observed ETs (C64). Validation against independent data (Kimura and Kawabata, 2018) shows estimated Dattack at upper limit and Upred higher than observed means (C85-C87, Figure 5\u2014figure supplement 2), supporting the overestimation interpretation (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C108"
+    ],
+    "result": "The geometric model successfully predicts the observed multimodal ET patterns in P. major. The model predicts optimal and suboptimal ETs that shift with initial orientation, matching experimental observations. Monte Carlo simulations show no significant differences from observed ET distributions in 971 of 1000 simulations (median p=0.44), with 41%, 76%, and 94% of observed ETs within top 10%, 25%, and 40% quantiles of theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C89-C96, and C108 demonstrate model-data agreement. Quantitative comparisons show good fit (C90, C96: Kuiper test median V=0.11, p=0.44 in 971/1000 simulations). Qualitative patterns match across initial orientation ranges (C91-C94, Figures 5 and 6). The model captures the three-peak structure (C95, Figure 5C vs. Figure 3C). Statistical validation is appropriate for circular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C112",
+      "C113",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Prey strategically adjust use of optimal vs. suboptimal ETs based on the optimal ET advantage. When advantage is negligible (<2ms, 46% of orientations), prey use optimal ET only 55% of the time. When advantage is high (>6ms), optimal ET usage increases to 81%. This pattern is consistent with the matching law, where choice probability is proportional to survival chances (Tdiff).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 report experimental findings with statistical support (C99: mixed-effects logistic regression \u03c7\u00b2=10.72, p<0.01, n=247). Claims C112-C113 and C120-C122 interpret these results through the matching law framework. The interpretation is reasonable given the data pattern, though the matching law connection is inferential (C121-C122 cite supporting literature). The Bernoulli distribution model for binary choice is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C110"
+    ],
+    "result": "Both model components (Dattack and T1(|\u03b1|)) are necessary for accurate ET predictions. Models with only one factor or neither factor (null model) show significantly different ET distributions from observations (median p<0.01). The null model shows unimodal patterns, while single-factor models show multimodal patterns but with incorrect peak values and heights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 and C110 describe model comparison results shown in Table 3 and Figure 5\u2014figure supplements 4-6. Statistical tests (Kuiper test) consistently reject alternative models (median p<0.01 for all three). The comparison demonstrates that both factors are required, not just one. This is a strong result supporting the model's mechanistic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "By varying parameters within realistic ranges, the model can reproduce diverse ET patterns observed in other species: unimodal ETs at ~180\u00b0 (small Upred), unimodal ETs at ~90\u00b0 (large Upred), and bimodal ETs at small and large angles (predator can adjust approach path with large Dattack).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C103-C107 describe model generalization shown in Figure 7. The model produces qualitatively similar patterns to empirical data from other species (C103: crickets, grasshoppers, frogs). Parameter variations are within realistic ranges based on cited literature. However, quantitative validation against these other species' data is not provided\u2014only qualitative pattern matching. This limits the strength of the generalization claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C114",
+      "C148"
+    ],
+    "result": "Multimodal ET patterns arise from two distinct escape routes: moving sideways to depart from the predator's strike path or moving opposite to the predator's direction to outrun it. Prey combine optimal and protean tactics by using multiple preferred ETs, maximizing time difference while maintaining unpredictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111, C114, and C148 provide mechanistic interpretation illustrated in Figure 8. The two-route explanation is logically consistent with the model geometry\u2014intermediate trajectories toward the danger zone corner require longer travel distances. The combination of optimal and protean tactics is supported by the observation that prey use both optimal and suboptimal ETs with frequencies related to their survival advantages (C97-C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Unpredictability at initial orientations near 0\u00b0 and 180\u00b0 is consistent with toward-away indecision at orientations nearly perpendicular to the threat. At orientations 110-180\u00b0, unpredictability relates to similarly advantageous choices between ETs at ~140\u00b0 and ~180\u00b0, reached by toward and away responses respectively. The overlap in ETs between toward and away responses suggests toward responses are not tactical mistakes but strategies to reach optimal or suboptimal ETs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 interpret experimental patterns with support from previous literature (C115-C116 cite Nair et al. 2017, Domenici and Blake 1993, Domenici and Batty 1997). The interpretation that toward responses are strategic rather than mistakes (C119) is supported by the overlap in ET distributions (Figure 3) and the model predictions showing both responses can achieve similar Tdiff values at certain orientations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The matching law, previously demonstrated mainly in unnatural reinforcement learning paradigms or human behaviors, is applicable to animal behavior in realistic predator-prey contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 extend the matching law to a new context. While C123 correctly characterizes previous matching law studies (with citations), C124's claim of applicability to realistic contexts is based on pattern similarity rather than direct demonstration. The study shows prey behavior is consistent with matching law predictions, but does not test alternative hypotheses or demonstrate the underlying mechanisms. The inference is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Previous neural circuit models assume prey always escape at 180\u00b0 irrespective of initial orientation, but this study shows animals use both optimal and suboptimal ETs that change nonlinearly with initial orientation. New neurophysiological models are needed to understand how neural circuits generate multiple preferred ETs, potentially through Mauthner cell activation following Bernoulli probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 accurately characterize limitations of previous neural models (with citations) and contrast with current findings. C128 is speculative (labeled as such in evidence_type) about neural mechanisms. C129's call for new models is justified given the demonstrated complexity of ET patterns. However, no neural data are presented\u2014this is purely behavioral work with implications for neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The ecological relevance of the fixed predator speed assumption is supported by: (1) predator speeds used are within the range observed in previous studies with the same species, (2) previous work shows ET choice matters most at intermediate predator speeds, and (3) differences in ET variability compared to zebrafish studies may relate to different Mauthner cell involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 provide context for the fixed speed assumption. C136 validates the speed range used (citing Kimura and Kawabata 2018). C135 explains why the intermediate speed range is most relevant (citing Soto et al. 2015). C132-C134 acknowledge potential species differences in speed sensitivity related to neural mechanisms. The reasoning is sound, though the Mauthner cell speculation (C134) lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The piecewise linear relationship between turn angle and turn time (constant up to ~45\u00b0, then increasing) is attributable to C-start kinematics and hydrodynamics, as initial velocity increases linearly up to ~45\u00b0 then plateaus. This pattern is consistent with previous findings on swimming efficiency during acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 provide mechanistic interpretation of the kinematic data (Figure 4). The explanation linking turn time to initial velocity is logical and supported by the data. C140 cites independent support from Akanyeti et al. 2017 on swimming efficiency, strengthening the hydrodynamic interpretation. The explanation is plausible and consistent with fish locomotion biomechanics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "While the empirical data come from one species of hatchery-reared fish at a specific life stage with no predator experience, similar multiple preferred ETs have been observed across many fish species and other taxa with varying origins and life stages, suggesting the model is broadly applicable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 acknowledge limitations following the STRANGE framework (Webster and Rutz 2020). C143-C144 argue for generalizability based on widespread occurrence of similar patterns (citing Domenici et al. 2011b review). The acknowledgment of limitations is appropriate, and the argument for generalizability is reasonable given the comparative evidence, though direct testing in other species would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "The model assuming in-line predator attacks predicts single or multiple ETs at 90-150\u00b0 and ~180\u00b0, consistent with observations of prey escaping from ambush predators. The model assuming predators can adjust approach paths predicts multiple ETs at small and large angles, consistent with observations of prey escaping from pursuit predators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 connect model predictions to predator hunting strategies with appropriate citations. The distinction between ambush (in-line attack) and pursuit (adjustable path) predators is ecologically meaningful. The predictions match general patterns in the literature (citing multiple empirical studies). However, this is qualitative pattern matching rather than quantitative validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C20"
+    ],
+    "result": "Previous geometric models predict a single ET based on relative speeds and other factors, but many species show multimodal ETs within limited angular sectors (especially 90-180\u00b0). The combination of optimal and protean tactics cannot explain these complex distributions, and the reasons for specific multiple preferred ETs remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C12, C16, C17, C18, and C20 establish the knowledge gap addressed by the study. These claims are well-supported by citations to previous models and empirical observations (Arnott et al. 1999, Weihs and Webb 1984, Domenici 2002, Domenici et al. 2011b). The characterization of the problem is accurate and sets up the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Previous geometric models assumed prey could instantaneously escape in any direction and predators moved infinitely at constant speed. However, turning requires time during which predators can approach, and many real predator attacks end at a certain distance from prey's initial position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 identify specific limitations of previous models with appropriate citations (Arnott et al. 1999, Weihs and Webb 1984, Domenici 2002 for C25 and C27; Webb and Skadsen 1980, Fouts and Nelson 1999, Anderson 1993 for C28). C26 is supported by citation and logical inference. These claims accurately characterize previous model assumptions and their limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors revised Domenici's and Corcoran's models, which are related (Domenici's is a special case of Corcoran's with infinite turning radius). These models apply to horizontal plane escapes in fish, terrestrial, benthic, and aerial species. For P. major, the predator does not adjust strike path during attack (adjusted angle = 1.0\u00b16.6\u00b0, n=5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 describe the modeling framework and its applicability. The relationship between models is correctly characterized (C38). Applicability to various taxa is supported by citations (C39-C40). C41 provides empirical justification for using Domenici's model variant with data from Kimura and Kawabata 2018 (Figure 2\u2014figure supplement 1). The characterization is accurate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The overall results are insensitive to changes in the cut-off distance for the fast-start phase (10, 15, or 20 mm), as confirmed by repeating all statistical analyses with different cutoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 reports sensitivity analysis results (Table 2\u2014source data 1, Table 3\u2014source data 2). This demonstrates robustness of findings to a key methodological choice. The analysis is appropriate and strengthens confidence in the main results. However, the supplementary data are not shown in the main text, limiting direct evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Fish with small turn angles (<<45\u00b0) turn quickly but achieve lower velocity; fish with intermediate angles (~45\u00b0) take longer to turn but achieve higher velocity; fish with large angles (>>45\u00b0) take still longer to turn but achieve similar velocity to intermediate angles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 interpret the piecewise linear relationships shown in Figure 4. The interpretation is directly supported by the data showing the breakpoint at ~45\u00b0 for both turn time and initial velocity. The trade-off between turn time and velocity is a reasonable biomechanical interpretation consistent with C-start kinematics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C147",
+      "C149",
+      "C150"
+    ],
+    "result": "The work represents a major advancement in understanding ET variability. Because multimodal ETs are found in many fish species and other taxa, this behavioral phenotype may result from convergent evolution in phylogenetically distant animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 asserts major advancement (citing Domenici et al. 2011b review). C149 notes widespread occurrence of multimodal ETs. C150 speculates about convergent evolution. While the model is novel and explains previously unexplained patterns, the \"major advancement\" claim is self-assessment. The convergent evolution hypothesis (C150) is reasonable speculation but lacks phylogenetic or comparative analysis to test it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Escape trajectory plays a major role in avoiding predation, along with flight initiation distance. Two escape tactics have been proposed: the optimal tactic (maximizing distance) and the protean tactic (maximizing unpredictability). Many models exist for flight initiation distance, and both behavioral traits largely determine predator evasion success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, C11, C13, C14, and C15 provide background knowledge well-supported by citations (Cooper and Blumstein 2015, Walker et al. 2005, Jensen 2018, Domenici et al. 2011a, and others). These establish the conceptual framework for the study. The characterization of previous work is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Multiple preferred ETs can result from animals choosing among multiple behavioral options. The matching law proposes that behavior probability relates to reward proportion, contrasting with purely optimal tactics. This framework can be applied to predator-prey interactions where prey choose among multiple ET options based on survival chances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 introduce the matching law framework with appropriate citations (Reed and Kaplan 2011, Poling et al. 2011, McDowell 2013, Houston et al. 2021, Fawcett et al. 2013). C21 and C24 are theoretical proposals by the authors. The application of matching law to ET choice is novel and reasonable, though it remains to be empirically validated beyond pattern similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The assumption that prey escape time (Tprey) is divided into fast-start and constant speed phases is consistent with previous studies and supported by the current experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 validates a key model assumption with citations (Domenici and Blake 1991, Danos and Lauder 2012, Fleuren et al. 2018) and experimental data (Figure 4\u2014figure supplement 1). The two-phase model is standard in fish escape response literature and is empirically justified here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Methodological definitions: Initial orientation ranges from 0\u00b0 (attacked from front) to 180\u00b0 (attacked from behind). Away and toward responses are defined by first detectable movement direction. Turn angles are assigned positive (away) or negative (toward) values. No asymmetry was found in directionality or ET distribution between left and right sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 define methodological conventions. C155-C156 report statistical tests justifying pooling left and right sides (Fisher's exact test p=1.00, Kuiper test V=0.14, p=0.61, n=264). The definitions follow standard practices in the field (citing Domenici et al. 2011b). The methodology is clearly described and statistically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Experimental methods: 65 hatchery-reared juvenile P. major were used (sex not determined due to bisexual juvenile stage). Fish were in good nutritional condition (Fulton's factor 30.64\u00b12.43). No selection bias for behavioral types. Dummy predator was a cast of S. marmoratus. Each fish was stimulated 5-23 times with \u226515 min intervals. After exclusions, 264 escape responses from 23 individuals were analyzed. Procedures were ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C166 describe experimental methods. Sample size is adequate for the analyses performed. Exclusion criteria are clearly stated (C164: 33/297 trials excluded for valid reasons). Fulton's condition factor indicates healthy fish (C159, citing Miyajima-taga et al. 2014, Kudoh et al. 2002). Ethical approval is documented (C166). Methods are clearly described and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C8",
+      "C19"
+    ],
+    "result": "Escape responses in many invertebrate and lower vertebrate species are controlled by giant neurons ensuring short response time. Some researchers have hypothesized mechanical/sensory constraints to explain discrepancies between model predictions and empirical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C19 provide background context with appropriate citations (Bullock 1984 for C8; Domenici et al. 2011a, 2008 for C19). These accurately characterize previous work and alternative hypotheses in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study had three objectives: (1) test whether the model predicts multimodal ETs in fish, (2) investigate how prey choose ETs by calculating survival chances, and (3) test whether the model predicts other ET patterns by extending it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 clearly state the study objectives, which are addressed in the Results section. The objectives are logical and build on the identified knowledge gap. All three objectives are successfully addressed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "ETs from left and right sides were pooled and treated as though stimulated from the right side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 describes a methodological decision justified by the lack of asymmetry (C155-C156). This is standard practice in the field and is appropriately applied here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "It is possible that predator speeds outside the experimental range may affect escape trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 acknowledges a limitation of the study. This is appropriate scientific caution. The experimental range (0.13-1.88 m/s) covers the natural range for the species studied (C136, C162), but extrapolation beyond this range is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "The findings open new avenues to investigate how animals determine ETs from multiple options with specific probabilities modulated by initial orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 identifies future research directions. This is a reasonable conclusion given the demonstrated complexity of ET choice and the probabilistic framework established. The claim is appropriately framed as opening avenues rather than providing definitive answers.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Plasma membrane profiling (PMP) of SARS-CoV-2 infected AAT cells identified 4953 proteins, including 2227 plasma membrane proteins, with 914 showing significant changes. The analysis detected five viral proteins including spike, ORF3A, and membrane, and confirmed ACE2 downregulation while TMPRSS2 remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic methodology is well-established (C43 cites previous validation), infection efficiency is demonstrated (C40), and the data quality metrics are appropriate. The findings are directly supported by the mass spectrometry data presented in figures and supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Interferon-stimulated genes were upregulated only at 48 hours post-infection, after viral replication is complete, indicating SARS-CoV-2 evades or suppresses IFN signaling until after virus egress. IFNAR1 downregulation at the plasma membrane represents a novel mechanism to prevent exogenous IFN signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal clustering analysis clearly shows interferon response genes in cluster 5 (48hr upregulation), and the viral replication cycle timing is supported by citation (C51). The IFNAR1 downregulation is directly observed in the proteomic data, though the functional consequence is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "SARS-CoV-2 infection causes downregulation of heparan sulfate proteoglycans (syndecans, glypicans, neuropilins), which may facilitate viral egress and prevent superinfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The downregulation is clearly shown in the proteomic data (C55), and the role of NRP1 and heparan sulfate binding is supported by citations (C56, C57). However, the proposed mechanism (C58) is speculative and not directly tested, though it is reasonably inferred by comparison to other viruses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "SARS-CoV-2 infection causes downregulation of activating NK ligands MICA, ULBP2, B7-H6, and Nectin1, while MHC-I proteins (HLA-B to HLA-E) are upregulated at 48 hours, likely due to late IFN response. The NK ligand downregulation was confirmed by flow cytometry in multiple cell types and was dependent on active viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic data clearly shows NK ligand downregulation in cluster 1 (C63), confirmed by flow cytometry in multiple cell types (C65). The replication-dependence is demonstrated by heat-inactivation controls (C66). The MHC-I upregulation timing and IFN-mediated mechanism (C62) is reasonably inferred from the data and known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "NK ligand downregulation occurs at the level of protein synthesis rather than through intracellular retention or post-translational degradation. EndoH digestion showed no change in glycosylation patterns, proteasomal/lysosomal inhibitors did not restore NK ligand levels, and cycloheximide treatment caused rapid loss of NK ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical experiments provide converging evidence: EndoH sensitivity patterns are unchanged (C67), proteasomal inhibition (MG132) has no effect (C69), lysosomal inhibition (Leupeptin) shows only constitutive turnover (C70), and cycloheximide causes rapid loss (C72). These experiments collectively support synthesis-level targeting, though the mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Nsp1 and Nsp14 mediate NK ligand downregulation. Transfection of individual SARS-CoV-2 ORFs showed only Nsp1 and Nsp14 reduced NK ligand expression, with Nsp14 having stronger effects on MICA and ULBP2. Both proteins are known to inhibit host protein translation, suggesting NK ligands are highly susceptible to synthesis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ORF screen is systematic and clearly identifies Nsp1 and Nsp14 (C73-C75). The connection to known translation inhibition functions is supported by citations (C76). However, the experiments use overexpression rather than infection context, which may not fully recapitulate the physiological mechanism. The inference about NK ligand susceptibility (C77) is reasonable but not directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "NK ligand downregulation correlates with reduced NK cell activation against SARS-CoV-2 infected cells. Functional assays showed significantly reduced degranulation (CD107a), IFN\u03b3 production, and TNF\u03b1 production by NK cells when co-cultured with infected versus mock-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional NK cell assays provide direct evidence of reduced activation across multiple markers (C79-C81). The experiments include appropriate controls and multiple donors. However, the correlation between ligand downregulation and functional outcome (C7) is not definitively proven to be causal - other viral factors could contribute to reduced NK activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Strong antibody-dependent NK cell activation (ADNKA) develops following SARS-CoV-2 infection, leading to high levels of degranulation and pro-inflammatory cytokine production (TNF\u03b1 and IFN\u03b3). These responses were sustained for at least 6 months in most patients, were dependent on active viral replication, and resulted from direct NK cell stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ADNKA responses are clearly demonstrated across multiple donors and timepoints (C84, C10). The replication-dependence (C85) and direct NK stimulation (C86-C87) are shown by appropriate controls (heat-inactivated virus, purified NK cells vs PBMC). The longitudinal data (C10) is well-documented in Figure 5G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ADNKA responses were generally stronger in individuals with more severe disease and remained detectable for 150-200 days. In mild disease, strong initial responses were maintained while weaker responses declined. There was moderate correlation (R\u00b2=0.7) between neutralization and ADNKA, suggesting the antibodies mediating these responses may not be identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The longitudinal serum analysis clearly shows disease severity-dependent patterns (C92-C94) in Figure 5G. The correlation analysis (C95) is appropriately performed and the R\u00b2 value supports the conclusion that neutralizing and ADNKA antibodies are related but not identical (C96). However, the sample size for longitudinal analysis could be better specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Multiple SARS-CoV-2 proteins are detected on the infected cell surface and can mediate ADNKA. PMP detected spike, membrane, nucleocapsid, ORF3a, and ORF1ab, though ORF1ab was at very low levels. Transfection experiments showed spike, ORF3a, membrane, and nucleocapsid can all prime ADNKA, while NSPs cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic detection is direct evidence (C97-C98), and the low abundance of ORF1ab (C99) supports the conclusion that NSPs are not surface-exposed (C100). The functional transfection experiments (C102-C104) clearly demonstrate which proteins can mediate ADNKA. However, transfection may not fully recapitulate infection context, as the authors themselves note.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Nucleocapsid protein is present on the surface of SARS-CoV-2 infected cells despite being previously assumed intracellular. Surface nucleocapsid levels were much higher on infected cells than transfected cells, detection was replication-dependent, occurred across multiple cell types, and was confirmed by immunofluorescence of non-permeabilized cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is supported by multiple orthogonal approaches: flow cytometry showing higher levels on infected vs transfected cells (C108), replication-dependence (C109), multiple cell types (C110), and immunofluorescence of non-permeabilized cells (C111). This converging evidence strongly supports the surprising finding of surface nucleocapsid, though the mechanism of surface localization is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Monoclonal anti-spike antibodies are poor mediators of ADNKA against infected cells despite binding efficiently. Of 26 human anti-spike mAbs tested, only 5 triggered degranulation at dramatically lower levels than polyclonal serum. Many mAbs that failed against infected cells induced potent ADNKA against spike-transfected cells, indicating spike is a relatively poor ADCC target during natural infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic testing of 26 mAbs with diverse epitope specificities (C113) provides strong evidence. The binding data (C114) rules out lack of antibody binding as an explanation. The stark difference between infected and transfected cells (C117-C119) is clearly demonstrated and supports the conclusion (C120). However, the panel may not capture all possible spike epitopes, and the use of IgG1 constructs may not reflect natural antibody glycosylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Spike-specific antibodies dominate the neutralizing response but play only a minor role in ADNKA following natural infection. Depletion of spike antibodies from naturally infected sera eliminated neutralization activity but had no effect on ADNKA activity across multiple donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antibody depletion experiments are well-controlled with ELISA confirmation of depletion (C121) and clear demonstration of neutralization loss (C122) but no ADNKA loss (C123). The consistency across multiple donors strengthens the conclusion (C124). This is a key finding that challenges previous assumptions about spike as the dominant ADCC target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Antibodies to nucleocapsid, ORF3a, and potentially membrane are major contributors to ADNKA during natural infection. A nucleocapsid-specific mAb activated ADNKA better than the best anti-spike mAb. Sequential depletion of spike and nucleocapsid antibodies significantly reduced ADNKA, and deletion of ORF3a from the virus further reduced ADNKA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence is strong: nucleocapsid mAb outperforms spike mAb (C125-C126), sequential antibody depletion shows additive effects (C127-C128), and viral deletion of ORF3a reduces ADNKA (C131). The conclusion about nucleocapsid and ORF3a (C132) is well-supported, though the membrane contribution (C133) is inferred from remaining activity rather than directly demonstrated. The experiments are technically sound but the ORF3a deletion has confounding effects on other viral protein levels (C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "ADNKA following spike vaccination is focused solely on spike, is significantly weaker than after natural infection, and is not boosted by the second dose. In contrast, neutralization activity is dramatically increased after the second dose and comparable to severe COVID-19 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The vaccine sera experiments clearly show spike-dependence of ADNKA (C137), weakness compared to natural infection (C138), and lack of boost after second dose (C17, C138). The contrast with neutralization (C139-C140) is striking and well-demonstrated. However, the study only examines one vaccine type (BNT162b2), limiting generalizability. The timing of sample collection relative to vaccination could also be better specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "SARS-CoV-2 host-shutoff antagonizes innate immunity through a novel mechanism involving downregulation of multiple cell surface immune ligands. This indicates that shutdown of host transcription and translation plays a broader role in establishing infection than previously appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a synthesis claim drawing together the NK ligand downregulation, mechanism via protein synthesis inhibition, and functional consequences. The evidence from the proteomic analysis (C143), mechanism studies (C5, C71), and functional assays (C7) collectively support this conclusion. However, the claim of novelty (C8) should be tempered - while the specific mechanism for NK ligands is new, host shutoff as an immune evasion strategy is well-known.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The ability of monoclonal spike antibodies to bind infected cells does not correlate with ADNKA activity, indicating that epitope, position, or binding angle is critical. Notably, 4/5 ADNKA-activating anti-spike antibodies bound the NTD, suggesting this site may be structurally advantageous for Fc-mediated responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of correlation between binding and function (C175) is clearly demonstrated in the data. The observation about NTD-binding antibodies (C177) is factual, though the sample size is small (5 antibodies). The inference about structural advantage (C178) is reasonable speculation but not proven. This result provides important insights for antibody therapeutic development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C181",
+      "C182"
+    ],
+    "result": "This work identifies a potential functional role for antibodies targeting nucleocapsid, ORF3a, and membrane during natural SARS-CoV-2 infection for the first time, suggesting these immunodominant targets are major contributors to ADCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional experiments clearly demonstrate ADCC activity mediated by antibodies to these proteins (C14, C132). The claim of novelty (C182) appears justified as previous ADCC studies focused on spike. However, the authors should acknowledge that antibody responses to these proteins were already known to exist - the novelty is in demonstrating their functional role in ADCC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Viral immune evasion of NK cells can be overcome through antibody-dependent mechanisms, suggesting SARS-CoV-2 antibodies may aid virus clearance through ADCC in addition to neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data clearly show that ADNKA can overcome the NK ligand downregulation (C88 is supported), the speculation about aiding virus clearance (C89) is not directly tested. The study demonstrates ADNKA activity in vitro but does not provide evidence for actual viral clearance or in vivo relevance. This would require additional experiments such as viral load measurements or animal studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C186",
+      "C187",
+      "C190",
+      "C191"
+    ],
+    "result": "ADNKA may contribute to immunopathology in severe COVID-19 through high levels of TNF\u03b1 and IFN\u03b3 production, activation of myeloid cells and complement. TNF\u03b1 and IFN\u03b3 correlate with severe disease, and critically ill patients have higher proportions of afucosylated antibodies that may promote stronger ADCC. A skewed spike:nucleocapsid antibody ratio is associated with severe disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about immunopathology (C165, C187, C190) is based on observed cytokine production and correlations from the literature (C166, C167, C186) but is not directly tested in this study. The authors appropriately present this as speculation, but the causal relationship between ADNKA and disease severity is not established. The observation that all mild/asymptomatic patients also developed strong ADNKA (C192) actually argues against a simple pathogenic role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Virus variants may evolve to evade ADCC responses as mutations in membrane, ORF3a, and nucleocapsid can reduce antibody binding. Including nucleocapsid in vaccines could engage broader immune effector pathways and improve efficacy against viral variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that variants contain mutations in ADCC target proteins (C193-C194) is factual and cited. However, the speculation about immune evasion (C195) and vaccine improvement (C196-C198) is not tested. While the logic is sound, demonstrating that these mutations actually reduce ADCC and that nucleocapsid inclusion would improve vaccine efficacy would require additional experiments. This represents reasonable future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

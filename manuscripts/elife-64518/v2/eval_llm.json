@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors developed and validated a computational screening workflow using structure-based virtual screening (SBVS) with molecular docking and molecular dynamics simulations. The closed conformation of the M20 loop (PDB 1RX3) was selected as the optimal target structure for screening, recovering the largest proportion of known inhibitors. The computational models showed high correlation with experimental binding affinities (R=0.942 for E. coli WT DHFR, R=0.953 for TMP against WT and mutants, R=0.895 and R=0.839 for L. grayi and C. muridarum respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C46-C53 collectively demonstrate a well-validated computational approach. The selection of the closed M20 loop conformation is justified by systematic comparison of docking performance across different conformations (C14-C15), and the predictive models show strong correlations with experimental data across multiple DHFR variants and species (C50-C53). The structural rationale for selecting the closed conformation is supported by citations to established literature (C46-C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "From 40 computationally selected compounds, the authors identified CD15 and CD17 as hits showing >30% inhibition against WT and all three TMP-resistant DHFR mutants (P21L, A26T, L28R) at 200 \u00b5M. CD15 showed Ki values <5 \u00b5M against all tested variants, with particularly strong activity against the L28R mutant (Ki=1.0 \u00b5M), which is a strong TMP escape variant. CD15 also showed activity against double mutants and WT DHFR from L. grayi and C. muridarum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 present a coherent progression from computational screening to experimental validation. The in vitro enzymatic assays (C20-C23) demonstrate broad-spectrum inhibition, with quantitative Ki measurements supporting the claim of activity against resistant variants. The particularly strong activity against L28R (C23-C24) is significant given its role as a gateway mutation for resistance evolution, as supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CD15-3, an optimized derivative of CD15 with a naphthalene group, showed improved cellular activity with IC50 values 50-75 \u00b5M against WT and TMP-resistant E. coli strains. CD15-3 demonstrated 2.4-fold better efficacy than TMP against the L28R variant strain and showed no inhibitory activity against human DHFR. Structural analysis revealed that both CD15 and CD15-3 form hydrogen bonds with Asp27, and the naphthalene group of CD15-3 extends further into the binding pocket than TMP's trimethoxybenzene, potentially explaining its potency against L28R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C54-C56 demonstrate successful compound optimization with improved selectivity. The cellular activity data (C27-C30) show meaningful improvement over the parent compound and competitive activity with TMP against resistant variants. The lack of human DHFR inhibition (C31-C32) addresses a critical selectivity concern. The structural rationale (C33, C55-C56) provides mechanistic insight, though C56 is labeled as inference. The exclusion of CD17 series based on PAINS filter (C54) demonstrates appropriate quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Target validation experiments demonstrated that DHFR is an intracellular target of CD15-3. Overexpression of WT DHFR partially rescued growth inhibition by CD15-3, while overexpression of inactive D27F mutant showed no rescue. Similarly, metabolic supplementation with folA mix partially rescued CD15-3-treated cells. However, rescue was only partial at higher CD15-3 concentrations, suggesting potential additional targets besides DHFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C57-C60 provide converging evidence for DHFR as a target through multiple complementary approaches (overexpression, inactive mutant control, metabolic supplementation). The partial rescue observed (C34, C36) and the acknowledgment of potential off-target effects at high concentrations (C60) demonstrate appropriate scientific caution. The parallel experiments with TMP (C57-C58) serve as positive controls, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In vitro evolution experiments showed dramatically delayed resistance development to CD15-3 compared to TMP. CD15-3-evolved strains showed only 2.7-fold increase in IC50 at early stages with no further increase, while TMP-evolved strains showed 8- to 200-fold increases. Sanger sequencing revealed folA mutations in all TMP trajectories but none in CD15-3 trajectories. In plate-based selection experiments, none of 18 colonies from CD15-3 plates showed folA mutations, while 10 of 18 from TMP plates did. CD15-3-resistant colonies showed only 1.7-2.3-fold higher IC50 than WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C39, and C61-C63 present compelling evidence for constrained evolutionary escape from CD15-3. The automated evolution experiment (C37-C38) provides quantitative comparison with TMP, and the absence of folA mutations (C39-C40, C61) is confirmed by both Sanger sequencing and whole genome sequencing. The plate-based experiments (C61-C63) provide independent validation. The modest resistance levels observed (C37, C63) contrast sharply with TMP resistance evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73"
+    ],
+    "result": "Whole genome sequencing of CD15-3-evolved strains revealed no mutations in the folA locus. Instead, resistance arose through duplication of an 81 KB genomic segment containing efflux pump genes (including the cus-efflux system), transporter genes, and other genes. Efflux genes comprised 38% of the duplicated segment. LC-MS analysis showed CD15-3 abundance decreased to ~10% after 4 hours of treatment in evolved strains, consistent with efflux-mediated resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C40-C42, C64-C67, and C73 provide a mechanistic explanation for the weak resistance observed. The whole genome sequencing data (C4, C40-C41, C64) identifies the specific resistance mechanism, and the LC-MS metabolic data (C42) provides functional validation of efflux activity. The background information on cus-efflux systems (C65-C67) is appropriately cited. The finding that resistance occurs through a generic, non-specific mechanism rather than target modification supports the evolution drug concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C68",
+      "C69"
+    ],
+    "result": "CD15-3-evolved cells showed cross-resistance to other antibiotics, with approximately threefold higher IC50 for TMP and sulfamethoxazole. CD15-3 also inhibited TMP escape mutants D27E and P21L with IC50 close to WT, and showed less than twofold higher IC50 against W30R and W30C mutants compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C68-C69 demonstrate both the non-specific nature of efflux-mediated resistance (C43) and the broad activity of CD15-3 against various TMP escape mutants (C68-C69). The cross-resistance data (C43) is consistent with the efflux mechanism identified in the genomic analysis. The activity against additional TMP escape mutants (C68-C69) extends beyond the originally targeted variants, suggesting broader utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C70",
+      "C71",
+      "C72",
+      "C78"
+    ],
+    "result": "DIC imaging showed that CD15-3 treatment induced cellular filamentation in WT cells, with median cell length more than doubling (from 1.07 \u00b5m to 2.34 \u00b5m). In contrast, evolved cells showed minimal morphological changes after CD15-3 treatment (median length 1.26 \u00b5m vs 1.07 \u00b5m untreated), with statistically significant differences between WT and evolved cell responses. Cellular filamentation is a known hallmark of stress responses to folate pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C70-C72, and C78 provide phenotypic evidence consistent with DHFR inhibition and efflux-mediated resistance. The filamentation phenotype in WT cells (C44, C71) is appropriately contextualized by citation to established literature (C78). The statistical analysis (C70, C72) supports the significance of observed differences. The reduced morphological response in evolved cells (C45, C72) is consistent with efflux-mediated drug depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The manuscript provides extensive background on antibiotic resistance as a global challenge, DHFR as a drug target, mechanisms of TMP resistance, and the evolutionary dynamics of resistance development. This includes information on ESKAPE pathogens, classical and non-classical DHFR inhibitors, the role of folA mutations in resistance, and the specific properties of key resistance mutations (P21L, A26T, L28R).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C13, and C79-C84 establish the scientific context and rationale for the study. These claims are appropriately supported by citations to established literature and represent accurate summaries of current knowledge in the field. They provide essential background for understanding the significance of the experimental work but do not constitute novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The L28R mutation is stabilizing, showing a 6\u00b0C increase in Tm above WT DHFR, and cancels out destabilization from P21L and A26T mutations. L28R also shows improved compactness based on reduced bis-ANS binding. The authors interpret L28R as serving as a stability 'reservoir' providing a gateway to multiple evolutionary trajectories leading to resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide important context for understanding why L28R is a critical target for evolution drug design. The biophysical properties (C74-C76) are supported by citation to prior work (Rodrigues et al., 2016). The interpretation of L28R as a 'stability reservoir' (C77) is labeled as inference and represents a reasonable interpretation of the cited biophysical data, though it is not directly tested in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

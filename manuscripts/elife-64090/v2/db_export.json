@@ -1,0 +1,1507 @@
+{
+  "submission": {
+    "id": "7d239403-8886-4396-8089-de066c976e25",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:31:51.512868Z",
+    "updated_at": "2025-12-03T01:31:51.512868Z"
+  },
+  "content": [
+    {
+      "id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "submission_id": "7d239403-8886-4396-8089-de066c976e25",
+      "content_type": "manuscript",
+      "content_text": "# Single-cell chromatin accessibility profiling of glioblastoma identifies an invasive cancer stem cell population associated with lower survival\n\n## Authors\n\n- Paul Guilhamon<sup>1</sup> ([ORCID: 0000-0001-8276-5987](https://orcid.org/0000-0001-8276-5987))\n- Charles Chesnelong<sup>2</sup>\n- Michelle M Kushida<sup>2</sup>\n- Ana Nikolic<sup>3</sup>\n- Divya Singhal<sup>3</sup>\n- Graham MacLeod<sup>6</sup> ([ORCID: 0000-0001-6401-9307](https://orcid.org/0000-0001-6401-9307))\n- Seyed Ali Madani Tonekaboni<sup>1</sup>\n- Florence MG Cavalli<sup>2</sup>\n- Christopher Arlidge<sup>1</sup>\n- Nishani Rajakulendran<sup>6</sup>\n- Naghmeh Rastegar<sup>2</sup>\n- Xiaoguang Hao<sup>3</sup> ([ORCID: 0000-0003-2695-0111](https://orcid.org/0000-0003-2695-0111))\n- Rozina Hassam<sup>3</sup>\n- Laura J Smith<sup>10</sup>\n- Heather Whetstone<sup>2</sup>\n- Fiona J Coutinho<sup>2</sup>\n- Bettina Nadorp<sup>1</sup>\n- Katrina I Ellestad<sup>3</sup>\n- H Artee Luchman<sup>3</sup>\n- Jennifer Ai-wen Chan<sup>3</sup>\n- Molly S Shoichet<sup>10</sup> ([ORCID: 0000-0003-1830-3475](https://orcid.org/0000-0003-1830-3475))\n- Michael D Taylor<sup>2</sup>\n- Benjamin Haibe-Kains<sup>1</sup>\n- Samuel Weiss<sup>3</sup>\n- Stephane Angers<sup>6</sup> ([ORCID: 0000-0001-7241-9044](https://orcid.org/0000-0001-7241-9044))\n- Marco Gallo<sup>3</sup>\n- Peter B Dirks<sup>2</sup> \u2020\n- Mathieu Lupien<sup>1</sup> ([ORCID: 0000-0003-0929-9478](https://orcid.org/0000-0003-0929-9478)) \u2020\n\n### Affiliations\n\n1. Princess Margaret Cancer Centre, University Health Network Toronto Canada\n2. Developmental and Stem Cell Biology Program and Arthur and Sonia Labatt Brain tumor Research Centre, The Hospital for Sick Children Toronto Canada\n3. Clark Smith Brain Tumour Centre, Arnie Charbonneau Cancer Institute, University of Calgary Calgary Canada\n4. Alberta Children\u2019s Hospital Research Institute, University of Calgary Calgary Canada\n5. Department of Biochemistry and Molecular Biology, Cumming School of Medicine, University of Calgary Calgary Canada\n6. Leslie Dan Faculty of Pharmacy, University of Toronto Toronto Canada\n7. Department of Medical Biophysics, University of Toronto Toronto Canada\n8. Hotchkiss Brain Institute, University of Calgary Calgary Canada\n9. Department of Cell Biology & Anatomy, University of Calgary Calgary Canada\n10. Institute of Biomaterials and Biomedical Engineering, University of Toronto Toronto Canada\n11. Department of Pathology and Laboratory Medicine, University of Calgary Calgary Canada\n12. Division of Neurosurgery, University of Toronto Toronto Canada\n13. Departments of Molecular Genetics and Surgery, University of Toronto Toronto Canada\n14. Department of Computer Science, University of Toronto Toronto Canada\n15. Ontario Institute for Cancer Research Toronto Canada\n16. Vector Institute Toronto Canada\n17. Department of Physiology & Pharmacology, University of Calgary Calgary Canada\n18. Department of Biochemistry, Faculty of Medicine, University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromatin accessibility discriminates stem from mature cell populations, enabling the identification of primitive stem-like cells in primary tumors, such as glioblastoma (GBM) where self-renewing cells driving cancer progression and recurrence are prime targets for therapeutic intervention. We show, using single-cell chromatin accessibility, that primary human GBMs harbor a heterogeneous self-renewing population whose diversity is captured in patient-derived glioblastoma stem cells (GSCs). In-depth characterization of chromatin accessibility in GSCs identifies three GSC states: Reactive, Constructive, and Invasive, each governed by uniquely essential transcription factors and present within GBMs in varying proportions. Orthotopic xenografts reveal that GSC states associate with survival, and identify an invasive GSC signature predictive of low patient survival, in line with the higher invasive properties of Invasive state GSCs compared to Reactive and Constructive GSCs as shown by in vitro and in vivo assays. Our chromatin-driven characterization of GSC states improves prognostic precision and identifies dependencies to guide combination therapies.\n\n## Introduction\n\nGlioblastoma (GBM) is a lethal form of brain cancer with standard surgery and radiation giving a median survival of only 12.6 months\u00a0(Carlsson et al., 2014). The addition of temozolomide chemotherapy provides only an additional 2.5 months in the small subset of responsive patients\u00a0(Stupp et al., 2005). Despite extensive characterization and stratification of the bulk primary tumors, no targeted therapies have been successfully developed\u00a0(Carlsson et al., 2014; von Neubeck et al., 2015). GBM tumors are rooted in self-renewing tumor-initiating cells commonly referred to as glioblastoma stem cells (GSCs)\u00a0(Venere et al., 2011) that drive disease progression in vivo\u00a0(Chen et al., 2012; Gallo et al., 2015) and display resistance to chemo- and radiotherapy leading to disease recurrence\u00a0(Bao et al., 2006). The promise of therapeutically targeting self-renewing tumor-initiating cancer cells depends on our capacity to capture the full range of heterogeneity within this population from individual tumors. Intratumoral heterogeneity within primary GBM has recently been documented through single-cell RNA-seq experiments and revealed a continuum between four cellular states\u00a0(Neftel et al., 2019): neural-progenitor-like (NPC), oligodendrocyte-progenitor-like (OPC), astrocyte-like (AC), and mesenchymal-like (MES)\u00a0(Neftel et al., 2019). A subsequent study\u00a0(Wang et al., 2019) using single-cell gene-centric enrichment analysis placed GBM cells along a single axis of variation from proneural to mesenchymal transcriptional profiles, with cells expressing stem-associated genes lying at the extremes of this axis. Hence, primary GBM consists of distinct states, across which stem-like cells appear to be found. Whether these stem-like cells found across GBM states represent functionally distinct GSC populations with tumor-initiating properties and unique dependencies remains to be established to guide therapeutic progress. To address this issue, we combined single-cell technologies to define GSC composition in primary GBM with functional assays to reveal the unique dependencies across GSCs, reflective of invasive, constructive, and reactive states that relate to patient outcome.\n\n## Results\n\nChromatin accessibility readily discriminates stem from mature cell populations\u00a0(Stergachis et al., 2013), which can be resolved at the single-cell level through single-cell ATAC-seq\u00a0(Buenrostro et al., 2018; Corces et al., 2016), taking into account non-gene centric features, such as accessibility of noncoding elements and total amount of accessible DNA sequences. Applying single-cell chromatin accessibility profiling (scATAC-seq) across four primary adult GBM tumors (3797 cells), wild\u00a0type for both IDH1 and IDH2, revealed seven to nine accessibility modules in each tumor based on unsupervised clustering (Figure 1A). We assigned cells to each of the four scRNA-seq-derived cellular states\u00a0(Neftel et al., 2019) based on individual cells\u2019 chromatin accessibility enrichment scores for the promoter regions of each state\u2019s signature genes. Across the four tumors, 35\u201355.2% of the cells were significantly enriched for at least one state\u2019s signature genes (Figure 1\u2014figure supplement 1A). The MES state reported from scRNA-seq\u00a0(Neftel et al., 2019) dominates the identity of two or more modules reported from chromatin accessibility in every tumor (Figure 1B,C, Figure 1\u2014figure supplement 1B). In contrast, the NPC and OPC states are mixed within the same module defined based on chromatin accessibility, dominating over the other states typically in at least two modules. Cells assigned to the AC state did not preferentially cluster within a single module reported from chromatin accessibility (Figure 1B,C, Figure 1\u2014figure supplement 1B). Collectively, our results suggest that chromatin accessibility reflects a greater stratification of the MES state\u00a0and\u00a0detects similarities between the OPC and NPC states and heterogeneity within the AC state.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig1-v2.jpg)\n\n**Figure 1.:** (A) UMAP (Uniform Manifold Approximation and Projection)\u00a0representation of chromatin accessibility across four primary GBM. (B) UMAPs with tumor cells assigned to cellular states. (C) UMAP modules are grouped by dominant cellular state. (D) UMAPs with cancer stem cells highlighted based on the enrichment of GBM cancer stem transcription factor promoters. (E) Distribution of cancer stem cells across the modules dominated by each cellular state.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Percentage of each tumor\u2019s cells significantly enriched with each state\u2019s signature genes. (B) Number of tumors with at least one UMAP module dominated by a given cell state.\n\nTo identify putative cancer stem cells within each primary tumor, we next focused on the level of chromatin accessibility at promoters of 19 transcription factors previously associated with self-renewal and tumor-propagating capacity in GBM\u00a0(Suv\u00e0 et al., 2014; Figure 1D). Individual cells scoring as putative cancer stem cells were not restricted to a unique module defined by chromatin accessibility but were distributed across a subset of modules, suggesting heterogeneity across cancer stem cells in primary GBM, in agreement with reports relying on single GBM cell labeling\u00a0(Corces et al., 2016; Gallo et al., 2015; Lan et al., 2017; Liau et al., 2017; Meyer et al., 2015; Miller et al., 2017; Orzan et al., 2017; Park et al., 2017; Rheinbay et al., 2013; Stergachis et al., 2013; Suv\u00e0 et al., 2014), assessing the heterogeneity of self-renewing tumor-initiating cells. Putative cancer stem cells identified in primary GBM through scATAC-seq were found in modules ascribed to every one of the four cellular states defined by gene expression\u00a0(Neftel et al., 2019), predominantly within NPC and OPC containing modules and a smaller fraction (<10%) in MES-specific modules across all four tumors (Figure 1E). This suggests that the core transcriptional unit of cancer stem cells in primary GBM\u00a0(Suv\u00e0 et al., 2014) is not restricted to a unique population defined by its global transcriptional or chromatin accessibility profile with the resolution achieved with current single-cell technologies.\n\nTo further probe the heterogeneity in chromatin accessibility within the GBM cancer stem cell pool, we derived GSC populations from 27 adult IDH wild-type GBM tumors\u00a0(Pollard et al., 2009) and profiled their chromatin accessibility by bulk ATAC-seq (Figure 2A). Each patient-derived GSC showed a similar enrichment for accessible chromatin regions in promoters and 5\u2032UTRs, and depletion in introns and distal intergenic regions (Figure 2B). Collectively, we uncovered 92% of the total predicted regions of accessible chromatin (255,891 regions) within GSCs based on a saturation analysis using a self-starting non-linear regression model across the 27 samples (Figure 2C). We next assessed the similarity between these GSCs and the putative cancer stem cells found by scATAC-seq in the four primary GBMs. GSCs were identified within each tumor by calculating the enrichment of accessible chromatin regions shared by a majority of GSCs (>14/27) in each tumor cell (Figure 2D). On average, 11.3% of cells in each primary GBM were labeled as GSCs. Comparing the distribution of GSCs across the seven\u00a0to\u00a0nine modules defined by scATAC-seq to that of the 19 transcription factor-derived cancer stem cell signature demonstrates concordance between the two signatures (Figure 2E). Moreover, the enrichment z-scores for both cancer stem signatures (i.e. stem transcription factors signature and GSC chromatin accessibility signature) are significantly correlated across cells in all four tumors (p\u22641.6\u00d710\u22125) (Figure 2F). The overlap in cells significantly enriched for either stem signatures across the four tumors is also significant (hypergeometric test p-value=8.8\u00d710\u22128) Additionally, an average of 91.2% (85.1\u2013100%) of the cells identified by either signature display the hallmark GBM copy number changes at chromosomes 7 and 10, confirming their neoplastic status (Figure 2\u2014figure supplement 1). Collectively, these results demonstrate that the patient-derived GSC populations reflect the chromatin identity of putative cancer stem cells found in primary brain tumors, highlighting the value of these GSCs as models to deepen our understanding of individual cells within primary GBM with features found in self-renewing tumor-initiating cells. Accordingly, spectral clustering of the 27 patient-derived GSC ATAC profiles identifies three distinct states of self-renewing tumor-initiating cells (Figure 3A). Expression profiling of these 27 GSCs by RNA-seq reveals GSCs significantly enriched for the signatures of each of the three TCGA GBM subtypes (proneural, classical, and mesenchymal)\u00a0(Wang et al., 2017; Figure 3B). However, the assignment of the proneural, classical, and mesenchymal subtypes across GSCs did not match the three clusters identified from ATAC-seq (Figure 3B). Conversely, clustering the GSCs by gene expression, independently of their chromatin accessibility, did largely recapitulate the GSC states defined by chromatin accessibility (Figure 3B). This suggests that the mismatch between the GSC cluster from chromatin accessibility profiles and TCGA expression subtypes is not mainly due to differences between chromatin accessibility and gene expression. Potential alternative causes for this observed mismatch include the absence of a tumor microenvironment in the GSC populations or that given the TCGA subtypes were determined from bulk GBM, they may not fully capture the nature of rarer populations found within a tumor, such as the cancer stem cell populations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic representation of the GSC derivation process, from patient tumor to GSC-enriched population. (B) Genomic feature enrichment of accessible chromatin peaks. (C) Saturation curve for the 27 GSCs. (D) UMAPs with GSCs highlighted based on the enrichment of shared accessible regions across GSCs. (E) Proportion of UMAP modules assigned to cancer stem cells and GSCs. (F) Correlation of z-scores for each signature for each cell in each primary GBM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013D) UMAPs showing cells confirmed to be GBM tumor cells, with gains of chr7 or losses of chr10. A: G4218, B:\u00a0G4250, C:\u00a0G4275; D: G4349.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig3-v2.jpg)\n\n**Figure 3.:** (A) Spectral clustering of ATAC-seq signal across peaks in 27 GSCs. (B) Spectral clustering of gene expression across GSCs and comparison to chromatin-derived GSC states. Enrichment of TCGA subtypes across GSCs and comparison to GSC states as determined by ATAC. The GSEA (Gene Set Enrichment Analysis)\u00a0gene sets each contained 50 genes and the enrichment scores ranged from 0.16 to 0.73. (C) Gene set enrichment analysis in each GSC state. All displayed terms are significantly enriched (q-value\u00a0<\u00a00.05). (D) Copy number alterations\u00a0(CNAs) across GSCs identified from DNA methylation array data cluster GSCs into five subgroups. (E) Number and percentage of peaks unique and shared in each GSC state. (F) Saturation analysis of each individual state.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Overlaid ATAC signal tracks for the 27 GSCs at the 92 most differentially accessible regions between GSC states as determined by pairwise Wilcoxon test and a median signal fold change equal or greater than 2.\u00a0The region coordinates can be found in the Supplementary file 2. (A) Most accessible in Reactive state GSCs. (B) Most accessible in Constructive state GSCs. (C) Most accessible in Invasive state GSCs.\n\nGene set enrichment analysis with GSEA\u00a0(Gene Set Enrichment Analysis)\u00a0(Subramanian et al., 2005) and g:profiler\u00a0(Reimand et al., 2016) using genes exclusively enriched for both expression and promoter chromatin accessibility in each subtype reported significantly enriched terms defining the largest GSC state as a Reactive state, with terms related to immune cells and response (Figure 3C, top panel). A second GSC state was enriched for Constructive gene sets involved in brain, neuron, and glial cell development (Figure 3C, middle panel). The third and smallest GSC state presented an Invasive state characterized by terms relating to the extracellular matrix and angiogenesis (Figure 3C, bottom panel). We next mapped copy number alterations (CNAs) across the 27 GSCs by applying the molecular neuropathology classifier tool\u00a0(Capper et al., 2018) to DNA methylation data from the GSCs (Figure 3D). While common GBM CNAs, including EGFR gains and CDKN2A/B loss, were observed, the CNA-based classification of GSCs failed to match the three chromatin accessibility-derived states, suggesting the three GSC states are not defined by somatic copy number events (Figure 3D). Further comparison of the accessible chromatin in each GSC state reveals that only a small subset of accessible chromatin regions drives the three GSC states (Figure 3E, Figure 3\u2014figure supplement 1). Our ability to discriminate GSC state-specific regions of accessible chromatin is reflective of the comprehensiveness of our cohort to saturate the detection of accessible regions to 93%, 88%, and 71% across the Reactive (n\u00a0=\u00a013), Constructive (n\u00a0=\u00a09), and Invasive (n\u00a0=\u00a05) state GSCs, respectively (Figure 3F).\n\nConsidering that regions of accessible chromatin serve as binding sites for transcription factors engaging in gene expression regulation, we next tested for DNA recognition motif family enrichment across regions exclusively accessible in Reactive, Constructive, or Invasive GSC states (Figure 4A, Figure 4\u2014figure supplement 1A). The most enriched DNA recognition motif families in each state were either depleted or showed low-level enrichment in the other states. Specifically, the DNA recognition motifs for the interferon-regulatory factor (IRF) and Cys2-His2 zinc finger (C2H2 ZF) transcription factor families were enriched in the Reactive state (Figure 4A, top panel). Regulatory factor X (RFX) and basic helix-loop-helix (bHLH) DNA recognition motifs were enriched in the Constructive state (Figure 4A, middle panel), while the Forkhead motif family was enriched in the Invasive state (Figure 4A, bottom panel). Genome-wide CRISPR/Cas9 essentiality screens (Figure 4\u2014figure supplement 1B) in three Reactive, two Constructive and one Invasive GSC\u00a0(MacLeod et al., 2019) revealed the preferential requirement for expressed transcription factors (Figure 4\u2014figure supplement 1C\u2013E) recognizing the enriched DNA recognition motif in a state-specific manner (Figure 4B). Specifically, the SP1 regulatory network is preferentially essential in the Reactive state GSCs (Figure 4B, top panel), ASCL1, OLIG2, AHR, and NPAS3 are uniquely essential in the Constructive state GSCs (Figure 4B, middle panel) and FOXD1 is essential only in the Invasive state GSC (Figure 4B, bottom panel). Notably, SP1 itself is exclusively essential in only one Reactive GSC (G564). However, of the 36 transcription factors from the Reactive-enriched families (IRF and C2H2 ZF) that were essential in at least one Reactive GSC and not in any of the Constructive or Invasive GSCs, 13 are directly regulated by SP1 (Figure 4\u2014figure supplement 1C), thus suggesting that the SP1 regulatory network as a whole, rather than SP1 on its own, is key in the Reactive GSC state. Notably, all six transcription factors display significantly higher expression in GBM compared to normal brain\u00a0(Tang et al., 2017; Figure 4\u2014figure supplement 1F), further supporting their function as key regulators of tumor initiation and development. An additional gene set enrichment analysis combining genes exclusively essential to each state with the putative targets of the key transcription factors outlined above identifies additional enriched terms supporting the identities of the three GSC states as Reactive, Constructive, and Invasive (Figure 4\u2014figure supplement 1G).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig4-v2.jpg)\n\n**Figure 4.:** (A) Motif family enrichment in each cluster; log2(fold enrichment)\u00a0>\u00a00.5 threshold selected based on the distribution of values in each cluster (Figure 2\u2014figure supplement 1). (B) Z-score distribution of key essential genes in each cluster. Red line corresponds to the empirically determined threshold for essentiality in each tested line, scaled, and adjusted to zero. Boxplot whiskers in this case extend to data extremes. Side barplots show the total count of the key cluster-specific regulators found essential in each subtype. (C) UMAPs with GSCs from each state highlighted based on the enrichment of the top differentially accessible regions in each GSC state.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The log2(fold enrichment) for all motif families were ordered and plotted. A cut-off threshold to select families for follow-up was selected based on the steep inflection of the curve above 0.5. (B) Schematic of drop-out essentiality screen using GSCs stably expressing Cas9 and gRNA libraries. (C\u2013E) The expression values determined by RNA-seq for all transcription factors whose motif is enriched in each GSC state and exclusively essential in at least one GSC of each state is plotted. Bold colors highlight factors essential in all tested GSCs in that state. In the case of the Reactive state, blue boxplots correspond to SP1 and members of its regulatory network. (F) Expression levels of key transcription factors in tumor and normal samples analyzed and displayed using GEPIA\u00a0(Tang et al., 2017). (G) Gene enrichment analysis of subtype-specific essential genes (Essentiality), upregulated and differentially accessible genes (ATAC and RNA combined), and putative targets of key transcription factors.\n\nPrevious work suggests that GBM tumors harbor a heterogeneous population of GSCs\u00a0(Lan et al., 2017; Meyer et al., 2015; Patel et al., 2014). We therefore quantified the presence of Reactive, Constructive, and Invasive cancer stem cells in our four primary GBM based on their scATAC-seq profiles. The Constructive state was dominant in every primary tumor, ranging from 9\u00a0to\u00a021% of all cells captured by scATAC-seq (Figure 4C). The Reactive and Invasive states accounted for only 0\u20139% of all cells, in varying proportions from one tumor to another (Figure 4C). Collectively, our results further support the heterogeneous nature of cancer stem cells that populate primary tumors.\n\nWhile various classifications of GBMs and/or their constitutive bulk and stem tumor cells have been reported, with some associating with patient survival\u00a0(Neftel et al., 2019; Patel et al., 2014; Cancer Genome Atlas Research Network et al., 2010; Wang et al., 2017; Yin et al., 2019; Zuo et al., 2019), molecular signatures in adult GBM stratifying the poorer prognosis IDH wild-type patients by survival are lacking. We performed intracranial xenografts of 37 IDH wild-type GSC populations and classified the transplanted cells by their GSC state to perform a differential survival analysis (Figure 5A). The overall survival times of the transplanted mice grouped by GSC state were significantly different (LogRank test p=0.041), with the Invasive state GSCs leading to the worst prognosis. Relative to the mice injected with Reactive state GSCs, mice with Constructive state GSCs and Invasive state GSCs had hazard ratios of 1.3 (95% confidence\u00a0interval\u00a0[CI]: 0.57\u20132.97) and 3.5 (95% CI: 1.2\u201310.49), respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig5-v2.jpg)\n\n**Figure 5.:** (A) Kaplan\u2013Meier plot for orthotopic xenografts grouped by GSC state. For each of the 37 GSCs used in the xenograft survival analysis, the median survival value was used from multiple mice injected with cells from each GSC (average number of mice injected/GSC\u00a0=\u00a05). The dotted lines indicate median survival. The pairwise p-values are also significant for Invasive vs Reactive (p=0.02) and Invasive vs Constructive (p=0.045) but not for Reactive vs Constructive (p=0.45). (B) Invaded area over time normalized to t0 by three\u00a0to\u00a0four representative GSCs of each GSC state and human fetal neural stem cells\u00a0(hfNSCs) used as controls. See Figure 5\u2014figure supplement 1A for individual GSC invasion. (C) Invasion images of representative hfNSCs and GSCs at t0, 6 hr, and 12 hr. Scale bar is 150 \u00b5m. (D) TCGA samples ordered by increasing concordance with Invasive GSCs and grouped into three subgroups:\u00a0<1, 1\u20131.65,\u00a0>1.65. (E) Kaplan\u2013Meier plot for TCGA samples grouped by concordance with Invasive GSCs. The dotted line indicates median survival. When considering pairwise comparisons, only the Invasive-high and Invasive-low subgroups were significantly different (p=0.0043). Further subgrouping of the TCGA samples into smaller intervals of concordance z-score yielded no benefit, preserving the Invasive-high subgroup as the only one with significantly poorer prognosis (Figure 5\u2014figure supplement 2B,C).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Invaded area over time normalized to t0 by three\u00a0to\u00a0four representative GSCs of each GSC state and hfNSCs used as controls. For the most invasive GSCs, data collection was stopped when invasion from neighboring spheres converged. (B\u2013C) Human-specific staining of mouse brains injected with Invasive GSCs G411 (B) and G837 (C) with higher magnification (black inset) at the mass boundaries.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64090/elife-64090-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Kaplan\u2013Meier plot for TCGA samples grouped by GSC state. The dotted lines indicate median survival.\u00a0(B) TCGA samples ordered by increasing concordance with Invasive GSCs and grouped into eight subgroups. (C) Kaplan\u2013Meier plot for TCGA samples grouped by concordance with Invasive GSCs. The dotted line indicates median survival. (D) Kaplan\u2013Meier plot for TCGA samples from both RNA-seq and microarray-based expression grouped by GSC state. The dotted lines indicate median survival. (E) Kaplan\u2013Meier plot for TCGA samples from both RNA-seq and microarray-based expression grouped by concordance with Invasive GSCs. The dotted line indicates median survival.\n\nIn light of this finding, we sought to evaluate the invasive properties of the Invasive GSC state population. To that end, we conducted an invasion assay\u00a0(Restall et al., 2018) wherein neurospheres from representative GSCs of each state (four Reactive, three\u00a0Constructive, and\u00a0three Invasive; three independent biological replicates for each GSC) are embedded in a collagen matrix and invasion is monitored in real time (Figure 5B,C,\u00a0Figure 5\u2014figure supplement 1A). GSCs of the Invasive state invaded strikingly faster and further into the collagen matrix and overall displayed a three times greater invasive ability than that of the Reactive and Constructive states. This invasiveness was further confirmed in vivo through human-specific staining of mouse brains injected with Invasive-state GSCs (Figure 5\u2014figure supplement 1B\u2013C).\n\nNext, we investigated the prognostic value of the GSC states using the TCGA GBM cohort (IDH1 and IDH2 wild\u00a0type, n\u00a0=\u00a0144). When classified by dominant GSC state, TCGA tumors display the same trend as the xenografts with Invasive state-dominated tumors showing the lowest survival (Figure 5\u2014figure supplement 2A). However, with only two tumors classified as Invasive-dominant, the difference in survival between the three patient groups was not statistically significant (p=0.3) (Figure 5\u2014figure supplement 2A). We proceeded to rank the TCGA tumors solely by their concordance to Invasive GSCs and classified the patient tumors into Invasive-low (z-score\u00a0<\u00a01), Invasive-mid (z-score =\u00a01\u20131.65), and Invasive-high (z-score\u00a0\u2265\u00a01.65) groups (Figure 5D). With this stratification method, median patient survival per group not only decreased with increasing Invasive GSC score, but we also identified an Invasive-high subset of tumors with significantly lower survival (p=0.019, HR\u00a0(Hazard Ratio)\u00a0=\u00a02.8, 95% CI: [1.3\u20135.81]) (Figure 5E). This was further validated using an additional cohort of TCGA samples with microarray gene expression (Figure 5\u2014figure supplement 2D\u2013E). These results show that cancer stem cell states defined based on the chromatin accessibility in GSCs can identify transcriptional programs associated with poor prognosis and can serve as a signature to identify high-risk patients in IDH wild-type GBM.\n\n## Discussion\n\nDefining the nature of self-renewing tumor-initiating cells in primary GBM is required to identify vulnerabilities for therapeutic intervention. Quantifying their heterogeneity within tumors can guide treatment strategies and assist in predicting the course of disease progression. Here we show that chromatin accessibility assays capture a heterogeneity across self-renewing tumor-initiating cells in primary GBM that extends beyond their genetic diversity and underlies the heterogeneity in bulk progeny\u00a0(Meyer et al., 2015). This heterogeneity aligns with diversity in the three-dimensional genome organization of GSCs\u00a0(Johnston et al., 2019) and agrees with how the three-dimensional genome organization instructs cis-regulatory plexuses underlying gene regulation\u00a0(Bailey et al., 2016; Kim et al., 2016; Sallari et al., 2017; Schmitt et al., 2016; Zheng and Xie, 2019). While the chromatin accessibility signature derived from GSCs robustly identified cancer stem cells across the four primary GBM tumors used in this study, a larger cohort will be required to establish whether this signature is always sufficient to capture all cancer stem cells in primary GBMs.\n\nWe further reveal a specific cancer stem state that is significantly predictive of patient survival and can be used as a signature to identify high-risk patients. Specifically, the Invasive GSC signature draws from a population with enhanced ability to invade and spread compared to other GSC states. Collectively, our results argue for distinct GSC populations whose composition in tumors impacts survival.\n\nOur results also highlight dependencies unique to each cancer stem state. Specifically, the Reactive GSC state-associated transcription factor SP1 and its regulatory partners are involved in cellular differentiation and growth, apoptosis, response to DNA damage, chromatin remodeling\u00a0(O'Connor et al., 2016), stimulation of TERT expression in cancer stem cells\u00a0(Liu et al., 2016), and increased stemness and invasion in GBM\u00a0(Lee et al., 2014). In contrast, the Constructive GSC state relies on transcription factors including OLIG2, a known GSC marker\u00a0(Tr\u00e9pant et al., 2015); AHR involved in tumor microenvironment responses and metabolic adaptation\u00a0(Gabriely et al., 2017); NPAS3, a regulator of Notch signaling and neurogenesis\u00a0(Michaelson et al., 2017); and ASCL1, a critical regulator of GSC differentiation and marker of sensitivity to Notch inhibition in GSCs\u00a0(Park et al., 2017; Rajakulendran et al., 2019). Finally, the Invasive GSC state relies on FOXD1, a pluripotency regulator and determinant of tumorigenicity in GSCs regulating expression of the aldehyde dehydrogenase ALDH1A3, a functional marker for invasive GSCs\u00a0(Cheng et al., 2016; Koga et al., 2014). These results support developing combination therapy using targeting agents against each GSC state, such as Notch inhibitors\u00a0(Park et al., 2017) and small molecule inhibitors of ALDH\u00a0(Cheng et al., 2016), to eradicate self-renewing tumor-initiating cells with the hope to cure GBM patients.\n\n## Materials and methods\n\n### Patient samples and cell culture\n\nAll tissue samples were obtained following informed consent from patients, and all experimental procedures were performed in accordance with the Research Ethics Board at The Hospital for Sick Children (Toronto, Canada), the University of Calgary Ethics Review Board, and the Health Research Ethics Board of Alberta \u2013 Cancer Committee (HREBA). Approval to pathological data was obtained from the respective institutional review boards. Patient tumor tissue samples were dissociated in artificial cerebrospinal fluid followed by treatment with enzyme cocktail at 37\u00b0C. Patient tumor-derived GSCs were grown as adherent monolayer cultures in serum-free medium\u00a0(SFM) as previously described\u00a0(Pollard et al., 2009). Briefly, cells were grown adherently on culture plates coated with poly-l-ornithine and laminin. Serum-free NS cell self-renewal media (NS media) consisted of Neurocult NS-A Basal media, supplemented with 2 mmol/L l-glutamine, N2 and B27 supplements, 75 \u03bcg/mL bovine serum albumin, 10 ng/mL recombinant human EGF (rhEGF), 10 ng/mL basic fibroblast growth factor (bFGF), and 2 \u03bcg/mL heparin. A subset (22/37) of the GSCs used for orthotopic xenografts were grown as non-adherent spheres prior to single-cell dissociation and injection into the mice. Briefly, SFM was used to initiate GSC cultures. Non-adherent spheres formed after 7\u201321 days in culture and were expanded, then cryopreserved in 10% dimethyl sulfoxide (DMSO; Sigma-Aldrich) in SFM until used in experiments.\n\n### ATAC-seq\n\nATAC-seq was used to profile the accessible chromatin landscape of 27 patient tumor-derived GSCs. Fifty\u00a0thousand cells were processed from each sample as previously described\u00a0(Buenrostro et al., 2013; Corces et al., 2017). The resulting libraries were sequenced with 50 bp single-end reads, which were mapped to hg19. Reads were filtered to remove duplicates, unmapped or poor-quality (Q\u00a0<\u00a030) reads, mitochondrial reads, chrY reads, and those overlapping the ENCODE blacklist. Following alignment, accessible chromatin regions/peaks were called using MACS2. Default parameters were used except for the following: --keep-dup all -B --nomodel --SPMR -q 0.05 --slocal 6250 --llocal 6250. The signal intensity was calculated as the fold enrichment of the signal per million reads in a sample over a modeled local background using the bdgcmp function in MACS2. Spectral clustering implemented in the SNFtool package\u00a0(Wang et al., 2014) was run on the SNF-fused similarity matrix to obtain the groups corresponding to k\u00a0=\u00a02\u201312. Enrichment for genomic features was calculated using CEAS\u00a0(Shin et al., 2009). The GSC state labels for each sample can be found in Supplementary file 1, and the coordinates of discriminating ATAC regions for each GSC state are in Supplementary file 2.\n\nA hypergeometric test was used to determine whether there was any sex bias within the three GSC states. All tests resulted in p-value>0.05 except in the Invasive cluster where three out of five patients are female, giving a p-value=0.047. Given the small size of the Invasive group and the impossibility of obtaining an even number of males and females in a group of 5, this result was not considered to indicate sex bias within the cohort.\n\nA given chromatin region was considered exclusive to one of the clusters if it was called as a peak in any of the cluster\u2019s samples using a q-value filter of 0.05 and was not called as a peak in any of the other samples using a q-value filter of 0.2, in order to ensure stringency of exclusivity.\n\nThe ATAC-seq saturation analysis was performed by randomizing the order of samples and successively calculating the number of additional peaks discovered with the addition of each new sample. This process was repeated 10,000 times and averaged. A self-starting non-linear regression model was then fitted to the data to estimate the level of saturation reached.\n\nFor the xenograft survival analysis, 11/37 GSCs used overlap with the cohort of 27 described above. The other 26/37 GSCs were profiled by ATAC-seq independently following the same protocol described above and assigned to a GSC state as described below. Similarly, samples G432, G440, and G472 used in the essentiality gene analysis were profiled by ATAC-seq independently following the same protocol described above and assigned to a GSC state as follows: the signal obtained from MACS2 for each sample was mapped to the peak catalog of the original cohort of 27 GSCs. Each sample was then allocated to a GSC state through unsupervised hierarchical clustering with the original cohort of 27 GSCs.\n\n### Single-cell ATAC-seq\n\nThe four tumors used were G4218 (primary GBM, IDH wt, male, 64 years), G4250 (primary GBM, IDH wt, male, 73 years), G4275 (primary GBM, IDH wt, female, 52 years), and\u00a0G4349 (primary GBM, IDH wt, male, 62 years). Fragments of tumor were received fresh from the operating room, and blunt dissected into individual fragments of approximately 0.3\u20130.7 cm3. Each fragment was placed in 1 mL of freezing media (400 \u03bcL of NeuroCult NS-A Basal medium with proliferation supplement (StemCell Technologies; #05751) containing 20 \u03bcg/mL rhEGF (Peprotech, AF-100\u201315), 10 \u03bcg/mL bFGF (StemCell Technologies, #78003), and 2 \u03bcg/mL heparin (StemCell Technologies, #07980); 500 \u03bcL of 25% bovine serum albumin\u00a0(BSA) (Millipore-Sigma; A9647) in Dulbecco's modified Eagle's medium, and 100 \u03bcL DMSO (Millipore-Sigma; D2650) in a 2 mL cryotube, and placed at \u221280 C in a CoolCell for at least 24 hr. Samples were then stored at \u221280C until use. Cryopreserved primary GBM samples were washed at 1000 RPM for 5 min in phosphate-buffered saline\u00a0(PBS) to remove DMSO, and then transferred to 1.5 mL tubes. Samples were resuspended in cold ATAC resuspension buffer (10 mM Tris\u2013HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 1% BSA in PBS) on ice and dissociated using a wide-bore P1000 pipette tip and vortexing, followed by 10 min of incubation on ice. Cells were spun down at 500\u00a0x g for 5 min at 4\u00b0C, washed in the ATAC resuspension buffer, spun down again, and resuspended in ATAC-Tween wash buffer (10 mM Tris\u2013HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20, 1% BSA in PBS), then passed through a cell strainer top FACS tube (Falcon; #38030) to remove debris. Nuclei quality and quantity was evaluated using trypan blue on an Invitrogen Countess II device in duplicate, and a subset of nuclei was spun down in a fresh tube and resuspended in 10\u00d7 sample dilution buffer. Nuclei were then used for single-cell ATAC-seq library construction using the Chromium Single Cell ATAC Solution v1.0 kit (10\u00d7 Genomics) on a Chromium controller. Completed libraries were further quality checked for fragment size and distribution using an Agilent TapeStation prior to sequencing. Single-cell ATAC-seq samples were sequenced on a NextSeq 500 (Illumina) instrument with 50 bp paired-end reads at the Centre for Health Genomics and Informatics (CHGI) at the University of Calgary.\n\nThe raw sequencing data was demultiplexed using cellranger-atac mkfastq (Cell Ranger ATAC, version 1.0.0, 10\u00d7 Genomics). Single-cell ATAC-seq reads were aligned to the hg19 reference genome (hg19, version 1.1.0, 10\u00d7 Genomics) and quantified using cellranger-atac count function with default parameters (Cell Ranger ATAC, version 1.1.0, 10\u00d7 Genomics). The resulting data were analyzed using the chromVAR\u00a0(Schep et al., 2017) and Signac\u00a0(Stuart et al., 2019) R packages (v1.4.1). The number of accessibility modules in each sample was determined using the ElbowPlot method implemented in Signac. Similarity between individual cells and GSC states was assessed using the deviation scores calculated by chromVAR within the single-cell data for significantly differentially accessible sets of peaks (fold change signal difference\u00a0>\u00a02 and Wilcoxon test q-value\u00a0\u2264\u00a00.05) between the states as determined by bulk ATAC-seq. Similarity between individual cells and the expression-derived cellular states was assessed using the deviation scores calculated by chromVAR within the single-cell data for promoter regions of the signature genes of each of the cellular states\u00a0(Neftel et al., 2019). A twofold cut-off was used to determine the\u00a0dominance of a UMAP module by an individual or group of cellular states. Similarity between individual cells and the GBM cancer stem cell signatures was assessed using the deviation scores calculated by chromVAR within the single-cell data for either promoter regions of the 19 transcription factors identified as markers of cancer stem cells in GBM\u00a0(Suv\u00e0 et al., 2014) or accessible chromatin regions shared by a majority of GSCs (>14/27). An average of 11.3% of cells in each tumor was identified as a GSC: G4218: 11.3%, G4250: 8.6%, G4275: 8.1%, G4349: 17.4%.\n\nCopy number variants in single cells were determined using CONICSmat\u00a0(M\u00fcller et al., 2018) with default parameters using the gene activity matrix generated by Signac as input. We focused on chr7 gains and chr10 losses as they are hallmark chromosomal changes in GBM and found the following fractions of cells carrying these CNVs, on average across the four tumors: 76% of all cells, 88% of cells allocated to scRNA-seq cellular states\u00a0(Neftel et al., 2019), 95% of cancer stem cells based on the 19 gene signature, 91% of GSCs based on shared accessible regions between 14/27 GSC populations, and\u00a094% of GSCs identified based on the state-specific signatures.\n\n### DNA methylation arrays\n\nBisulfite conversion of DNA for methylation profiling was performed using the EZ DNA Methylation kit (Zymo Research) on 500 ng genomic DNA from all 27 samples. Conversion efficiency was quantitatively assessed by quantitative PCR (qPCR). The Illumina Infinium MethylationEPIC BeadChips were processed as per manufacturer\u2019s recommendations. The R package ChAMP v2.6.4\u00a0(Morris et al., 2014) was used to process and analyze the data. For the copy number analysis, the raw IDAT files were uploaded to the MNP tool\u00a0(Capper et al., 2018), which directly compares the copy number profile estimated from the probe intensities on the methylation array to the distribution observed across thousands of brain tumors in its database.\n\n### RNA-seq\n\nRNA was extracted from GSCs using the Qiagen RNeasy Plus kit. RNA sample quality was measured by Qubit (Life Technologies) for concentration and by Agilent Bioanalyzer for RNA integrity. All samples had RIN above 9. Libraries were prepared using the TruSeq Stranded mRNA kit (Illumina). Two hundred nanograms from each sample were purified for polyA tail containing mRNA molecules using poly-T oligo attached magnetic beads, then fragmented post-purification. The cleaved RNA fragments were copied into first strand cDNA using reverse transcriptase and random primers. This is followed by second strand cDNA synthesis using RNase H and DNA Polymerase I. A single \u2018A\u2019 base was added and adapter ligated followed by purification and enrichment with PCR to create cDNA libraries. Final cDNA libraries were verified by the Agilent Bioanalyzer for size and concentration quantified by qPCR. All libraries were pooled to a final concentration of 1.8 nM, clustered, and sequenced on the Illumina NextSeq500 as a pair-end 75 cycle sequencing run using v2 reagents to achieve a minimum of\u00a0~40 million reads per sample. Reads were aligned to hg19 using the STAR aligner v2.4.2a (Dobin et al., 2013), and transcripts were quantified using RSEM v1.2.21\u00a0(Li and Dewey, 2011) or vst transformed using DESeq2\u00a0(Anders and Huber, 2010).\n\n### Motif enrichment\n\nRegions exclusively accessible in one of the GSC states and not the others were used as input sequences for the motif enrichment, while the full ATAC-seq catalog served as the background set when running HOMER v4.7 to detect enrichments of transcription factor binding motifs. Enriched motifs were then grouped into families based on similarities in DNA-binding domains using the CIS-BP database\u00a0(Weirauch et al., 2014). Each family was assigned the fold-enrichment value of the most enriched motif within the family.\n\nThe transcription factors whose motifs were found enriched in Reactive-exclusive accessible regions were run together through GSEA\u00a0(Subramanian et al., 2005), and the gene set corresponding to genes potentially regulated by SP1 was identified as significantly enriched (GSEA gene set GGGCGGR_SP1_Q6). The expression levels of key transcription factors in tumor and normal samples were analyzed and displayed using GEPIA\u00a0(Tang et al., 2017).\n\n### Gene essentiality screen\n\nIllumina sequencing reads from genome-wide TKOv1 CRISPR screens in patient-derived GSCs\u00a0(MacLeod et al., 2019) were mapped using MAGECK\u00a0(Li et al., 2014) and analyzed using the BAGEL algorithm with version two reference core essential genes/non-essential genes\u00a0(Hart et al., 2017; Hart et al., 2015). Resultant raw Bayes factor (BF) statistics were used to determine essentiality of transcription factor genes using a minimum BF of 3 and a 5% false discovery rate cut-off. For visualization purposes only, the essentiality scores were scaled and the individual GSC essentiality thresholds subtracted from each score to obtain a common threshold at 0 across GSCs. In the GSEA analysis of essentiality genes, only those genes found essential only in a given GSC state were used, giving sets of 12, 29, and 235 genes for the Reactive, Constructive, and Invasive GSC states, respectively.\n\n### Orthotopic xenografts\n\nAll animal procedures were performed according to and approved by the Animal Care Committee of the Hospital for Sick Children or the University of Calgary. All attempts are made to minimize the handling time during surgery and treatment so as not to unduly stress the animals. Animals are observed daily after surgery to ensure there are no unexpected complications. For intracranial xenografts, 100,000 GSC cells were stereotactically injected into the frontal cortex of 6\u20138 weeks old female NOD/SCID or C17/SCID mice. Mice were monitored and euthanized once neurological symptoms were observed or at the experimental end\u00a0point of 12 months.\n\n### Invasion assay\n\nGSCs and human fetal neural stem cells (hfNSCs; used as controls) were seeded in flasks maintained vertically to limit adherence and incubated at 37\u00b0C, 5% CO2 until the average neurosphere size reached approximately 150 \u03bcm. Neurospheres were then collected and allowed to settle by gravity to the bottom of a prechilled 1.5 mL conical tubes for 5 min on ice. Following aspiration of the supernatant, spheres were re-suspended in 0.4 mg/mL type I collagen (Cultrex Rat Collagen I, Trevigen, 3440\u2013005) on ice. The suspended spheres were dispensed in prechilled 96-well plates (100 \u03bcL/well). The plates were maintained on ice for 5 min to allow spheres to settle at the same level at the bottom of the well and then transferred to the incubator at 37\u00b0C for 15 min to allow polymerization of the collagen. Plates were then placed in an IncuCyte (Essen Bioscience, Ann Arbor, MI), and invasion was monitored every hour for 12 hr. To quantify invasion of the cells from the embedded spheres into the collagen matrix, the area of the spheres at each time point was normalized to the area of the spheres at T0. Invasion experiments were performed at least in triplicates for each GSC and hfNSC lines. For each replicate, invasion was measured based on a minimum of three spheres.\n\n### Immunohistochemistry\n\nTissue samples were formalin fixed and paraffin embedded. Serial sections deparaffinized\u00a0and rehydrated through an alcohol gradient to water, and antigen retrieval in citrate buffer pH 6.0 was used for the human nucleolin antibody at 5.0 g/mL (ab13541) (Abcam, Cambridge, MA). Endogenous peroxide activity and nonspecific binding were blocked with 3%(vol/vol) peroxide and 2% (vol/vol) normal horse serum. Primary antibody and anti-mouse ImmPRESS-HRP secondary antibody were incubated for 1 hr and visualized using 3,3\u2032-diaminobenzidine (Vectorlabs, Burlingame, CA). Normal horse serum or monoclonal IgM was used in control sections.\n\n### Survival analysis\n\nSurvival analysis on xenografts and TCGA data was performed using R packages survival\u00a0(Therneau, 2015) and survminer\u00a0(\u2018Drawing Survival Curves using \u2018ggplot2\u2019 [R package survminer, 2020]\u2019, n.d.). The LogRank test was used in every analysis. See ATAC-seq section for details on how each GSC used in the orthotopic xenografts was assigned to a GSC state. For each of the 37 GSCs used in the xenograft survival analysis, the median survival value was used from multiple mice injected with each GSC. Each GSC was injected into one to six mice (mean number of mice used\u00a0=\u00a05; only one GSC has a single replicate: G489, a Constructive state GSC).\n\nTCGA samples for this analysis\u00a0were selected as follows: 144 IDH-wt adult GBM samples for which RNA-seq, IDH mutation status, and survival information were available. TCGA samples were assigned to individual GSC states in the following ways. (1) Using the unsupervised clustering of RNA-seq data presented in Figure 3B, the 23/27 GSCs that displayed matched GSC state assignments by RNA-seq and ATAC-seq were used in this analysis. (2) Genes preferentially enriched in each GSC state were determined using DEseq2\u00a0(Anders and Huber, 2010) (q\u00a0\u2264\u00a00.05 and fold change \u2265 2). (3) The mean log2(FPKM+1) value for each of these genes over all GSCs in each state was calculated to obtain a single representative value for each gene in each of the three GSC states. (4) The concordance index was then calculated between each TCGA sample and each GSC state, and individual TCGA samples were assigned to the GSC state with the highest score. Similarly, to assign TCGA samples to the three Invasive groups (Invasive-low, -mid, and -high), the concordance to Invasive GSCs as calculated above was used. The z-score for each sample was then used to classify each TCGA sample into the three subgroups of Invasive-low (Invasive z-score\u00a0<\u00a01), Invasive-mid (Invasive z-score =\u00a01\u20131.65), and Invasive-high (Invasive z-score\u00a0\u2265\u00a01.65). When changing the Invasive z-score thresholds for grouping the TCGA samples, the most Invasive-high subgroup remains associated with the lowest survival (Figure 5\u2014figure supplement 2B,C).\n\nA further 158 samples that did not overlap with the RNA-seq set for which microarray expression data, survival information, and IDH status were available were used in a validation set. Individual samples were assigned to GSC clusters or C3 score classes as described above. The scores were then combined with those of the RNA-seq set for the survival analysis shown in Figure 5\u2014figure supplement 2D\u2013E.\n",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "7cff6b9e-af5d-4d0e-9f2a-505b56bdde05",
+      "submission_id": "7d239403-8886-4396-8089-de066c976e25",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lynne-Marie Postovit, University of Alberta Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64090.sa1](https://doi.org/10.7554/eLife.64090.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe current manuscript by Guilhamon et al. uses single cell sequencing technologies to identify and then characterize heterogeneities among glioblastoma (GBM) stem cells (GSC), which extend beyond current disease classifications. This is the first study to apply single cell sequencing specifically to GSCs with the goal of identifying GSC subtypes using primarily chromatin accessibility signatures. Moreover, the use of chromatin accessibility signatures in combination with TF motif prediction to guide identification of transcriptional dependencies is novel in the context of GSC studies.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Single-cell chromatin accessibility in glioblastoma delineates cancer stem cell heterogeneity predictive of survival\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Roel Verhaak (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife, due to the need for revisions that would likely take longer than 2-3 months. We would however encourage resubmission once the revisions are completed.\n\nSummary\n\nThe current manuscript by Guilhamon et al. uses single cell sequencing technologies to identify and then characterize heterogeneities among glioblastoma (GBM) stem cells (GSC), which extend beyond current disease classifications. The paper was reviewed by three experts, who all agreed that the work will add meaningful knowledge to the field; but that more experimentation would be needed to better support the claims as made. The reviewers agreed that this is the first study to apply single cell sequencing specifically to GSCs with the goal of identifying GSC subtypes using primarily chromatin accessibility signatures. In particular, the use of chromatin accessibility signatures in combination with TF motif prediction to guide identification of transcriptional dependencies is novel in the context of GSC studies. However, it was felt that a number of enhancements would be needed, including greater validation of the cell samples, the inclusion of additional samples, and clarification of some of the methodologies employed. We encourage resubmission once these issues have been addressed.\n\nMajor concerns:\n\n1) The tumor cell and GSC population enrichment should be validated using functional and genomic methods (including evidence for either Chr7 amplification or Chr10 deletion), and additional patient samples should be analyzed, preferably without extended culture times. Indeed, there appeared to be a low correlation between GBM stem TF enrichment and GSC signature enrichment and the degree of concordance between samples was not fully developed. It would be important to have more samples for many reasons, including the idea presented by the authors of differences between tumors in the dominant cell type. GBM has significant variation spatially, as well, so having only 4 tumors seems underpowered.\n\n2) Details about the tumor collection should be included as should full information about tumor genetics, patient information, and treatment for each sample.\n\n3) Figure 1 should be revised to clarify cells which fail to classify and to signify whether shared chromatin states exist across patients.\n\n4) Figure 3 should be revised. Data pertaining to GSCs should be compared to the published GBM scRNAseq data to check the subtypes (Neftel et al., 2019, etc.). In addition, the top and bottom panels could be combined, and the sample assignment of TCGA subtypes, chromatin clusters and expression clusters should be better presented in the sankey diagram. The GSC samples and color bars showing chromatin clusters should be kept consistent between the top and the bottom panels. Figure 3A is missing a legend as there is no indication of what the intensity values represent. For Figure 3B, please clearly indicate an associated P-value testing for the enrichment of TCGA subtypes among the GSC ATAC states. Figure 3C should present cut-offs for what was considered statistically significant (i.e., a dotted line). Importantly, \"Figure 3\u2014figure supplement 1\" presents the most differentially accessible regions between GSC states. Notably, ChrX is present in all. Chromatin accessibility read-outs might be significantly impacted by the presence of an inactive X chromosome. Hence an imbalance in the sex distribution in the GSC states might pick up sex-specific and not tumor-specific differences. Thus, the authors should show that these regions do not vary with patient sex. Finally, the evidence that \"GSC states are not genetically defined (Figure 3D)\" is derived from DNA methylation copy number, and a signature of selected genes. Bona fide GBM genes such as PDGFRA, NF1, AKT3, QKI should also be included in this analysis and the possibility that the GSC states cluster by frequent chromosome arm-level events (chr7, chr19, chr20 gains and chr10 loss) should be entertained. If they still do not cluster by GSC state, then it is perhaps more accurate to say that \"GSC states are not defined by somatic copy number events\" since there is no gene mutation data presented for these samples.\n\n5) The validation of the states in the TCGA data are not strong. The cut-offs seem arbitrary and most of the samples seem to fall into a single group. Is this due to sampling bias? There is no connection to tumor genetics. Also, the bulk GBM ATACseq tumor profiles were generated in the TCGA datasets that presumably have accompanying RNA, DNA, and methylation data (Corces et al., Science 2018). While this represents a small dataset, it would be advantageous to incorporate analysis of these more complex tissue samples alongside the already presented data to provide confidence in generalizability. The concordance between RNA-seq and ATAC-seq data for the paired datasets should also be presented.\n\n6) Invasion assays should include all subtypes in order to highlight properties of the invasive subtype.\n\n7) In order to support the claim that the \"Invasive-high\" group confers a worse prognosis, a multivariate analysis should be employed if possible.\n\n8) There are a number of clerical errors that should be addressed:\n\n\u2013 Figure 4\u2014figure supplement 3A is blank\n\n\u2013 Please double check all sample names, in Figure 3B, G613 changes from invasive to reactive and there are several instances where the sample names do not match up.\n\n\u2013 If other samples (outside of the 27 discussed in Figure 3) were used in Figure 4, it should be made clear. G472, G440, and G473 are not in Figure 3\n\n\u2013 A table with all the sample names, GSC subtype identified through ATAC-seq, and validation of GSC should be included\n\n\u2013 Figure 4\u2014figure supplement 1 G is missing labels\n\n\u2013 Please include the GSEA gene set size.\n\n\u2013 Describe how many essentiality genes were included for GSEA genes\n\n\u2013 Figure 4D should be revised to better represent the number of mice were used. A detailed experimental design and the survival curve analysis should also be provided.\n\n\u2013 Figure 2\u2014figure supplement 1 lacks sample annotation in both the image and the figure legend.\n\n\u2013 Figure 4\u2014figure supplement 3 was blacked out in the version provided for review.\n\n\u2013 There appears to be a typographical error at the start of Results paragraph five, \"FOXD1 is essential only in the Reactive state [\u2026]\". This seems like it should be, \"Invasive\".\n\nReviewer #1:\n\nThe current manuscript by Guilhamon et al. uses single cell sequencing technologies to identify and then characterize heterogeneities among glioblastoma (GBM) stem cells (GSC), which extend beyond current disease classifications. Single cell technologies have already been applied to GBM in various publications. The identification of an invasive GSC subtype associated with poor survival is not novel, as it largely complements the previously identified mesenchymal GSC subtype. However, as far as I'm aware this is the first study to apply single cell sequencing specifically to glioblastoma stem cells (GSCs) with the goal of identifying GSC subtypes using primarily chromatin accessibility signatures. In particular, the use of chromatin accessibility signatures in combination with TF motif prediction to guide identification of transcriptional dependencies is novel in the context of GSC studies. Thus, this manuscript would constitute a meaningful contribution to the field of GBM and epigenetics.\n\n\u2013 Validation of GSC population enrichment should be done and shown. Particularly because despite what is described in the text, Figure 2F show low correlation between GBM stem TF enrichment and GSC signature enrichment. 2 out of 4 primary GBM show very little correlation. Therefore, GSC enrichment should be validated with other methods, such as staining for known neural stem cell markers or clustering/enrichment/scoring based on validated GSC gene sets.\n\n\u2013 Chromatin accessibility scores at promoter regions is used as a surrogate for gene expression for numerous analyses. What is the concordance between RNA-seq and ATAC-seq for the paired datasets? Particularly, what is the concordance for the subtype specific peaks? The concordance of gene expression and chromatin accessibility feels particularly important when exclusive peaks only account for ~5-15% of all peaks.\n\n\u2013 Invasion assays should include all subtypes in order to highlight properties of the invasive subtype. Additionally, the author's conclusions would be strengthened by the combination of FOXD1 knockdown/inhibition with the invasion assays.\n\n\u2013 Figure 4\u2014figure supplement 3A is blank.\n\n\u2013 Please double check all sample names, in Figure 3B, G613 changes from invasive to reactive. There are several instances where the sample names do not match up.\n\n\u2013 If other samples (outside of the 27 discussed in Figure 3) were used in Figure 4, it should be made clear. G472, G440, and G473 are not in Figure 3.\n\n\u2013 Please include table with all the sample names, GSC subtype identified through ATAC-seq, and validation of GSC.\n\n\u2013 Figure 4\u2014figure supplement 1 G is missing labels.\n\nReviewer #2:\n\nIn this manuscript, Guilhamon et al. describe a single cell ATACseq study in GBM patient tissues and bulk ATACseq in a panel of patient-derived GBM stem cell cultures. Using this dataset, the authors studied the three states in glioblastoma stem cell cultures, which presents some interesting findings to the biology of GBM. The dataset generated in this study is useful to the field. There are some concerns to be addressed:\n\nThe single cell data would seem to be potentially the most important, but the number of samples is small and the degree of concordance between samples was not fully developed. It would be important to have more samples for many reasons, including the idea presented by the authors of differences between tumors in the dominant cell type. GBM has significant variation spatially, as well, so having only 4 tumors seems underpowered.\n\nThere are missing details about the tumor collection. The three groups are designated to include reactive, which has immune cell signatures, and invasive. Often the tumor does not include areas of necrosis and invasion in most surgical specimens.\n\nWhy were the GSC cultured for 5-12 passages? This would seem to induce potential selection or change the cells. If the laminin conditions are optimal, why weren't the GSC studied immediately? It would be helpful to include support for the LDAs and xenograft studies for each of the lines.\n\nPlease include the full information about tumor genetics, patient information, and treatment for each sample.\n\nThere are many very strong statements made. It would seem premature to call single cells GSC only based on transcription. I am not aware that any profile is validated to claim absolutely to identify GSC. This is but one of the leaps that were made. I would ask the authors to be more careful and simply identify exactly what was measured.\n\nThere is no direct comparison of GBM tissues and GSC cultures. The conclusion that GSCs \"reflect the chromatin identity of putative cancer stem cells found in primary brain tumors\" should be supported by more evidence. For examples, direct comparison of some important drivers or markers at the chromatin level should be provided.\n\nThe analysis of GBM cancer stem cell signature and 4 cellular states is interesting. Can the authors explain why the putative cancer stem cells were under-represented in MES cell state? Did the authors consider or separate transcription factors or markers for cancer stem cells of different types in GBM? Is there any difference between stem and non-stem cells from the same cellular state?\n\nIs there overlap between 4 GBM tissues with scATAC data and patients with GSC culture?\n\nThe description of the mismatch between chromatin and TCGA subtype is confusing (Figure 3B). According to the description, GSCs are believed to be a relatively pure population, can the authors compare GSCs to the published GBM scRNAseq data to check the subtypes (Neftel et al., 2019, etc.)? In addition, the top and bottom panels could be combined, and the sample assignment of TCGA subtypes, chromatin clusters and expression clusters should be better presented in the sankey plot. The GSC samples and color bars showing chromatin clusters are not consistent between the top and the bottom panels, making it really difficult to understand.\n\nIt's interesting that many GSCs express immune cell related genes, which should be further explained, as the enrichment significance (FDR) is not very strong.\n\nThe differentially expressed gene analysis between three GSC states should be performed to provide state markers to have a better understanding of cellular states.\n\nFigure 4D is difficult to understand. What's the meaning of the n? How many mice were used in the experiment? A detailed experimental design and the survival curve analysis should be provided.\n\nThe CRISPR screen would be beneficial to validate, including additional direct studies of specific targets in a larger cohort of the GSC.\n\nThe validation of the states in the TCGA data are not strong. The cutoffs seem arbitrary and most of the samples seem to fall into a single group. Is this due to sampling bias? There is no connection to tumor genetics.\n\nReviewer #3:\n\nGuilhamon et al. performed single-cell ATACseq in four primary IDH-wildtype glioblastomas to derive chromatin accessibility signatures of heterogeneous glioma stem cell populations. The scATACseq primary tumor analysis suggested the existence of three major modules: Reactive, Constructive, and Invasive that define glioma stem populations and are present to varying degrees within a single tumor. The module/cell state relevance is supported by leveraging new and existing functional assay data in sets of patient-derived GSC populations. The authors then demonstrate that transcription factors nominated by DNA recognition motif enrichment in each GSC state are preferentially essential through analysis of a recently published genome-wide CRISPR/Cas9 essentiality screen. Finally, evidence is presented to suggest that these chromatin signatures are associated with survival in a xenograft model and TCGA subjects.\n\nOverall, this study addresses an important biological question of glioblastoma stem cell heterogeneity and is one of the earliest papers investigating scATAC glioblastoma profiles. However, the conclusions drawn are not fully supported by the results and in some cases the technical details of the experiment/analysis are lacking. The following suggestions are intended to help strengthen this work.\n\n1) The clarity of the paper would be aided by additional technical descriptions throughout the manuscript. For example:\n\na) The four GBM samples profiled using scATACseq were classified using the Neftel signatures, on the basis of accessibility of signature gene promoters. This approach will bin individual cells whether the classification is accurate, or not. How can we be sure that this approach accurately provides Neftel classification?\n\nb) The same classification method is suggested to result in greater stratification of the Neftel MES category. This result may be confounded by the presence of tumor-associated microglia that will be classified as mesenchymal. Were all classified cells tumor cells and how was this validated?\n\nc) It was not fully explained why single cells without evidence for either Chr7 amplification or Chr10 deletion were included in further analyses regarding glioma stem cell populations. The cells that were not labelled by \"GBM CNV+\" (Figure 2\u2014figure supplement 1) also seem to less frequently be classified as \"STEM\" (Figure 1D, especially G4250 and G4275). Are these cells of poorer quality or do they represent non-tumor cell types? It would also be helpful to know whether the authors enriched for tumor cells during the dissociation process (otherwise one would expect non-tumor cells too), the number of nuclei that were loaded for 10X, basic quality control metrics for each sample, and if cells identified as non-tumor were excluded from construction of the chromatin modules.\n\n2) Figure 1 was challenging to follow with the multiple annotations of the patient UMAPs. For instance, in panels 1B and 1D the original numbered clusters remain for some not all cells. Are these cells that failed to confidently classify as cell states (i.e., AC, MES, NPC, OPC) or stem states? Perhaps consider \"graying\" out cells that fail to classify and explain why not all tumor cells might have a cell state classification would benefit the audience. I could not find mention of this in the Results or Materials and methods sections. Also, what happens when all cells from the four subjects are analyzed together in a single analysis? Do shared chromatin states that exist across patients emerge or is there highly specific patient clustering that reflects inter-patient heterogeneity? Panel C in this figure was also difficult to understand. None of the modules equal to 100%, is this because some cells failed to classify?\n\n3) Bulk GBM ATACseq tumor profiles were generated in the TCGA dataset that presumably have accompanying RNA, DNA, and methylation data (Corces et al. Science 2018). While this represents a small dataset, it would be advantageous to incorporate analysis of these more complex tissue samples alongside the already presented data to provide confidence in generalizability.\n\n4) Figure 3 appears to be missing some critical information. Figure 3A is missing a legend as there is no indication what the intensity values represent. For Figure 3B, is there an associated P-value testing for the enrichment of TCGA subtypes among the GSC ATAC states? Figure 3C could present cut-offs for what was considered statistically significant (i.e., a dotted line). Importantly, \"Figure 3\u2014figure supplement 1\" presents the most differentially accessible regions between GSC states. While it is difficult to read the all the regions it's notable that ChrX is present in all. I imagine that chromatin accessibility read-outs might be significantly impacted by the presence of an inactive X chromosome. If there is an imbalance in the sex distribution in the GSC states, then this might skew to picking up sex-specific and not tumor-specific differences. Have the authors shown that these regions do not vary with patient sex.\n\n5) The set of GSCs making up the Invasive subtype are all classified as Mesenchymal by gene expression (Figure 3B), consider calling it as such for consistency?\n\n6) The evidence that \"GSC states are not genetically defined (Figure 3D)\" is derived from DNA methylation copy number, and a signature of selected genes. Is this sufficient? What about bona fide glioblastoma genes such as PDGFRA, NF1, AKT3, QKI? Did DNA copy number profiles align with transcriptional subtypes? Do the GSC states cluster by frequent chromosome arm-level events (chr7, chr19, chr20 gains and chr10 loss)? If they still do not cluster by GSC state, then it is perhaps more accurate to say that \"GSC states are not defined by somatic copy number events\" since there is no gene mutation data presented for these samples.\n\n7) More than one publication has speculated to be able to stratify IDH wild type glioblastoma into prognostically relevant groups, i.e. PMID 30753603. For a tumor type with a single treatment that is not very effective, it is unclear that predicting prognosis has relevance.\n\n8) In a multi-variate model that includes known prognostic factors (i.e., subject age and MGMT promoter methylation status) does the \"Invasive-high\" group still confer a worse prognosis? This would aid the author's claim that the signature is \"predictive of low patient survival\" independent on known prognostic factors.\n\n9) Single-nucleus ATACseq of IDH mutant glioma has been reported (PMID 31806013) and there is some overlap in the gene sets that were identified to associate with cell states and survival, and it would be appropriate to cite this literature.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Single-cell chromatin accessibility of glioblastoma identifies invasive cancer stem cell linked to lower survival\" for further consideration by eLife. Your revised article has been evaluated by Kevin Struhl (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe current manuscript by Guilhamon et al. uses single cell sequencing technologies to identify and then characterize heterogeneities among glioblastoma (GBM) stem cells (GSC), which extend beyond current disease classifications. The paper will add meaningful knowledge to the field and revisions have enhanced this manuscript. For example, validation of the cells was provided, methodologies were clarified, and impressive data related to the invasive subtype was provided. Additional samples would have enhanced the study, but were difficult to obtain given the COVID-19 pandemic. Overall, though, this would be the first study to apply single cell sequencing specifically to GSCs with the goal of identifying GSC subtypes using primarily chromatin accessibility signatures. Moreover, the use of chromatin accessibility signatures in combination with TF motif prediction to guide identification of transcriptional dependencies is novel in the context of GSC studies. These strengths overcome weaknesses associated with small sample numbers.\n\n1) Please clarify what percentage of cells were estimated to be stem cells, among the scATACseq datasets.\n\n2) Please modify the statement \"A more likely possibility is that given the TCGA subtypes were determined from bulk GBM, they may not fully capture the nature of rarer populations found within a tumor, such as the cancer stem cell populations.\" Due to the amount of testing needed to test this, please modify this explanation to be broader and to also include the possibility that this is due at least in part to differences in microenvironments.\n\n3) Please modify the statement \"No molecular signature in GBM has so far been reported that can significantly stratify the poorer prognosis IDH wild-type patients by survival.\" This is incorrect. DNA methylation profiling classifies IDH wild type tumors into several categories including Mesenchymal-like (Ceccarelli et al., Cell, 2016), which shows significantly worse outcomes even among only MGMT-unmethylated tumors.\n\n4) Regarding the statement \"Using the TCGA IDH wild type cohort (n=144)\", please clarify that: a) this cohort relates to the subset of GBM IDH wildtype cases with available RNAseq data (presumably); and b) that the GSC states were converted from a chromatin accessibility signature to a RNA expression signature.\n\n5) There is no obvious reason why the TCGA IDH wildtype cohort could not also be classified on the basis of the available Affymetrix microarray data, which would enable analysis of a substantially larger cohort in pursuit of a survival difference (n=400). Please include this analysis.\n\n6) Please include a small paragraph in the Discussion about the limitations of the study; particularly as they relate to a potentially small samples size.\n\nReviewer #3:\n\nA few remaining comments with respect to the revision:\n\n1) It would be helpful to clarify what percentage of cells were estimated to be stem cells, among the scATACseq datasets.\n\n2) \"A more likely possibility is that given the TCGA subtypes were determined from bulk GBM, they may not fully capture the nature of rarer populations found within a tumor, such as the cancer stem cell populations.\" While in this reviewer's opinion the most likely explanation is the presence/absence of a tumor microenvironment, we won\u2019t know without a substantial amount of extra testing, which is beyond the scope. Please modify as to keep the explanations broad.\n\n3) \"No molecular signature in GBM has so far been reported that can significantly stratify the poorer prognosis IDH wild-type patients by survival.\" This is incorrect. DNA methylation profiling classifies IDH wild type tumors into several categories including Mesenchymal-like (Ceccarelli et al., Cell, 2016), which shows significantly worse outcomes even among only MGMT-unmethylated tumors.\n\n4) \"Using the TCGA IDH wild type cohort (n=144)\" it would help to clarify that a. this cohort relates to the subset of GBM IDH wildtype cases with available RNAseq data (presumably); and b. that the GSC states were converted from a chromatin accessibility signature to a RNA expression signature.\n\n5) There is no obvious reason why the TCGA IDH wildtype cohort could not also be classified on the basis of the available Affymetrix microarray data, which would enable analysis of a substantially larger cohort in pursuit of a survival difference (n=400).\n",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "559f9c1d-a6ef-41a5-9712-efe4254c2a86",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C1",
+      "claim": "Standard surgery and radiation for glioblastoma gives a median survival of only 12.6 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Glioblastoma (GBM) is a lethal form of brain cancer with standard surgery and radiation giving a median survival of only 12.6 months (Carlsson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Carlsson et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "7c960800-4b51-4a45-be76-bfca4da000ec",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C2",
+      "claim": "The addition of temozolomide chemotherapy provides only an additional 2.5 months in the small subset of responsive patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of temozolomide chemotherapy provides only an additional 2.5 months in the small subset of responsive patients (Stupp et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stupp et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "c6f1ef19-e5e4-49d5-a748-d3173f3f0f42",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C3",
+      "claim": "No targeted therapies have been successfully developed for glioblastoma despite extensive characterization and stratification of the bulk primary tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive characterization and stratification of the bulk primary tumors, no targeted therapies have been successfully developed (Carlsson et al., 2014; von Neubeck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Carlsson et al., 2014 and von Neubeck et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "32afe35e-2223-48bb-905d-86143ef2dc8d",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C4",
+      "claim": "GBM tumors are rooted in self-renewing tumor-initiating cells commonly referred to as glioblastoma stem cells (GSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "GBM tumors are rooted in self-renewing tumor-initiating cells commonly referred to as glioblastoma stem cells (GSCs) (Venere et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Venere et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "0645b4e9-9fc3-4d79-8923-94fbe2586bac",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C5",
+      "claim": "Glioblastoma stem cells drive disease progression in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "GBM tumors are rooted in self-renewing tumor-initiating cells commonly referred to as glioblastoma stem cells (GSCs) (Venere et al., 2011) that drive disease progression in vivo (Chen et al., 2012; Gallo et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2012 and Gallo et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "cb72de38-e212-425a-9eda-4be71540ac94",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C6",
+      "claim": "Glioblastoma stem cells display resistance to chemo- and radiotherapy leading to disease recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "GBM tumors are rooted in self-renewing tumor-initiating cells commonly referred to as glioblastoma stem cells (GSCs) (Venere et al., 2011) that drive disease progression in vivo (Chen et al., 2012; Gallo et al., 2015) and display resistance to chemo- and radiotherapy leading to disease recurrence (Bao et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bao et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "64f9f256-e57b-43c8-9036-cd6fe42b9cee",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C7",
+      "claim": "Primary GBM consists of four cellular states: neural-progenitor-like (NPC), oligodendrocyte-progenitor-like (OPC), astrocyte-like (AC), and mesenchymal-like (MES).",
+      "claim_type": "EXPLICIT",
+      "source": "Intratumoral heterogeneity within primary GBM has recently been documented through single-cell RNA-seq experiments and revealed a continuum between four cellular states (Neftel et al., 2019): neural-progenitor-like (NPC), oligodendrocyte-progenitor-like (OPC), astrocyte-like (AC), and mesenchymal-like (MES) (Neftel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Neftel et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "3518e2c6-b2e9-49df-b64c-ca3434fc0fe2",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C8",
+      "claim": "GBM cells lie along a single axis of variation from proneural to mesenchymal transcriptional profiles, with cells expressing stem-associated genes lying at the extremes of this axis.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent study (Wang et al., 2019) using single-cell gene-centric enrichment analysis placed GBM cells along a single axis of variation from proneural to mesenchymal transcriptional profiles, with cells expressing stem-associated genes lying at the extremes of this axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f8493a25-7a33-4306-8e09-10f15b0883ed",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C9",
+      "claim": "Chromatin accessibility readily discriminates stem from mature cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin accessibility readily discriminates stem from mature cell populations (Stergachis et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stergachis et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "6c55beb7-e413-464f-b52f-c2d68701a842",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C10",
+      "claim": "Single-cell chromatin accessibility profiling across four primary adult GBM tumors revealed seven to nine accessibility modules in each tumor based on unsupervised clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying single-cell chromatin accessibility profiling (scATAC-seq) across four primary adult GBM tumors (3797 cells), wild type for both IDH1 and IDH2, revealed seven to nine accessibility modules in each tumor based on unsupervised clustering (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from scATAC-seq experiments and referenced in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "6004f058-92da-4990-a889-6978a77947a7",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C11",
+      "claim": "Across the four tumors, 35\u201355.2% of the cells were significantly enriched for at least one state's signature genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the four tumors, 35\u201355.2% of the cells were significantly enriched for at least one state's signature genes (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f570bc6d-c464-43ef-b7c2-90b81b9a0c35",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C12",
+      "claim": "The MES state dominates the identity of two or more modules reported from chromatin accessibility in every tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "The MES state reported from scRNA-seq (Neftel et al., 2019) dominates the identity of two or more modules reported from chromatin accessibility in every tumor (Figure 1B,C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1B, 1C, and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "e1034f7b-75de-4871-93fb-a456176e2403",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C13",
+      "claim": "The NPC and OPC states are mixed within the same module defined based on chromatin accessibility, dominating over the other states typically in at least two modules.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the NPC and OPC states are mixed within the same module defined based on chromatin accessibility, dominating over the other states typically in at least two modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the chromatin accessibility analysis described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "427d15f7-3438-4441-873a-0763f4440dce",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C14",
+      "claim": "Cells assigned to the AC state did not preferentially cluster within a single module reported from chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells assigned to the AC state did not preferentially cluster within a single module reported from chromatin accessibility (Figure 1B,C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1B, 1C, and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "a6bd2bfb-daed-4528-a573-240cce602a8d",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C15",
+      "claim": "Chromatin accessibility reflects a greater stratification of the MES state and detects similarities between the OPC and NPC states and heterogeneity within the AC state.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results suggest that chromatin accessibility reflects a greater stratification of the MES state and detects similarities between the OPC and NPC states and heterogeneity within the AC state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the chromatin accessibility analysis results described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "56d29306-1b43-4e50-9c00-019b3f8f2d41",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C16",
+      "claim": "Individual cells scoring as putative cancer stem cells were not restricted to a unique module defined by chromatin accessibility but were distributed across a subset of modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual cells scoring as putative cancer stem cells were not restricted to a unique module defined by chromatin accessibility but were distributed across a subset of modules, suggesting heterogeneity across cancer stem cells in primary GBM, in agreement with reports relying on single GBM cell labeling (Corces et al., 2016; Gallo et al., 2015; Lan et al., 2017; Liau et al., 2017; Meyer et al., 2015; Miller et al., 2017; Orzan et al., 2017; Park et al., 2017; Rheinbay et al., 2013; Stergachis et al., 2013; Suv\u00e0 et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study and citations to multiple previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "193e2634-eb21-4e64-b7bd-97dd7295ad17",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C17",
+      "claim": "Putative cancer stem cells identified in primary GBM through scATAC-seq were found in modules ascribed to every one of the four cellular states defined by gene expression, predominantly within NPC and OPC containing modules and a smaller fraction (<10%) in MES-specific modules across all four tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Putative cancer stem cells identified in primary GBM through scATAC-seq were found in modules ascribed to every one of the four cellular states defined by gene expression (Neftel et al., 2019), predominantly within NPC and OPC containing modules and a smaller fraction (<10%) in MES-specific modules across all four tumors (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "7f7e3083-1f3e-4f56-92fc-f7b755f59c14",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C18",
+      "claim": "The core transcriptional unit of cancer stem cells in primary GBM is not restricted to a unique population defined by its global transcriptional or chromatin accessibility profile with the resolution achieved with current single-cell technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the core transcriptional unit of cancer stem cells in primary GBM (Suv\u00e0 et al., 2014) is not restricted to a unique population defined by its global transcriptional or chromatin accessibility profile with the resolution achieved with current single-cell technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the data and supported by a citation to Suv\u00e0 et al., 2014.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "4c8d794c-c8a4-43e9-a25c-1817847c8180",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C19",
+      "claim": "Each patient-derived GSC showed a similar enrichment for accessible chromatin regions in promoters and 5\u2032UTRs, and depletion in introns and distal intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each patient-derived GSC showed a similar enrichment for accessible chromatin regions in promoters and 5\u2032UTRs, and depletion in introns and distal intergenic regions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f966f3ee-0147-4394-86b8-5c73ec4864cd",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C20",
+      "claim": "92% of the total predicted regions of accessible chromatin (255,891 regions) within GSCs were uncovered based on a saturation analysis using a self-starting non-linear regression model across the 27 samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, we uncovered 92% of the total predicted regions of accessible chromatin (255,891 regions) within GSCs based on a saturation analysis using a self-starting non-linear regression model across the 27 samples (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from saturation analysis presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "cef5127a-2208-4cd7-af79-02093bf47381",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C21",
+      "claim": "On average, 11.3% of cells in each primary GBM were labeled as GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 11.3% of cells in each primary GBM were labeled as GSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the GSC identification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "bda62fa9-18cb-4f35-9826-d6f89ebf84fa",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C22",
+      "claim": "The enrichment z-scores for both cancer stem signatures (i.e. stem transcription factors signature and GSC chromatin accessibility signature) are significantly correlated across cells in all four tumors (p\u22641.6\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the enrichment z-scores for both cancer stem signatures (i.e. stem transcription factors signature and GSC chromatin accessibility signature) are significantly correlated across cells in all four tumors (p\u22641.6\u00d710\u22125) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and data presented in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "84f4bdcb-4512-47e4-bf7f-ee74dc89814a",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C23",
+      "claim": "The overlap in cells significantly enriched for either stem signatures across the four tumors is significant (hypergeometric test p-value=8.8\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap in cells significantly enriched for either stem signatures across the four tumors is also significant (hypergeometric test p-value=8.8\u00d710\u22128)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using a hypergeometric test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "32a0954d-cb94-4d9a-942c-2dbc43ec240b",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C24",
+      "claim": "An average of 91.2% (85.1\u2013100%) of the cells identified by either signature display the hallmark GBM copy number changes at chromosomes 7 and 10, confirming their neoplastic status.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, an average of 91.2% (85.1\u2013100%) of the cells identified by either signature display the hallmark GBM copy number changes at chromosomes 7 and 10, confirming their neoplastic status (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by copy number analysis data presented in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "7f8e398f-2d57-4358-bcda-e1f71a5de760",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C25",
+      "claim": "Patient-derived GSC populations reflect the chromatin identity of putative cancer stem cells found in primary brain tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results demonstrate that the patient-derived GSC populations reflect the chromatin identity of putative cancer stem cells found in primary brain tumors, highlighting the value of these GSCs as models to deepen our understanding of individual cells within primary GBM with features found in self-renewing tumor-initiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the concordance between GSC signatures and cancer stem cells in primary tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "456e4753-9cab-46c4-a9a6-45c506e61490",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C26",
+      "claim": "Spectral clustering of the 27 patient-derived GSC ATAC profiles identifies three distinct states of self-renewing tumor-initiating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, spectral clustering of the 27 patient-derived GSC ATAC profiles identifies three distinct states of self-renewing tumor-initiating cells (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by spectral clustering analysis presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "a62323c2-f5d4-4e26-a7ea-87aed8377ef4",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C27",
+      "claim": "Expression profiling of the 27 GSCs by RNA-seq reveals GSCs significantly enriched for the signatures of each of the three TCGA GBM subtypes (proneural, classical, and mesenchymal).",
+      "claim_type": "EXPLICIT",
+      "source": "Expression profiling of these 27 GSCs by RNA-seq reveals GSCs significantly enriched for the signatures of each of the three TCGA GBM subtypes (proneural, classical, and mesenchymal) (Wang et al., 2017; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data and citation to Wang et al., 2017, presented in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "a66600d0-0cca-4f97-b29f-78d700067b56",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C28",
+      "claim": "The assignment of the proneural, classical, and mesenchymal subtypes across GSCs did not match the three clusters identified from ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the assignment of the proneural, classical, and mesenchymal subtypes across GSCs did not match the three clusters identified from ATAC-seq (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of ATAC-seq and RNA-seq data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "3a214df6-4e33-4bf4-ba3e-4c9dcc87ff20",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C29",
+      "claim": "Clustering the GSCs by gene expression, independently of their chromatin accessibility, did largely recapitulate the GSC states defined by chromatin accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, clustering the GSCs by gene expression, independently of their chromatin accessibility, did largely recapitulate the GSC states defined by chromatin accessibility (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clustering analysis presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "64726f96-1258-4e1f-98cf-88a8cbdc1af6",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C30",
+      "claim": "The largest GSC state is a Reactive state, with terms related to immune cells and response.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set enrichment analysis with GSEA (Gene Set Enrichment Analysis) (Subramanian et al., 2005) and g:profiler (Reimand et al., 2016) using genes exclusively enriched for both expression and promoter chromatin accessibility in each subtype reported significantly enriched terms defining the largest GSC state as a Reactive state, with terms related to immune cells and response (Figure 3C, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis and presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "a041226c-c5e7-4b95-be67-57c9d35962e9",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C31",
+      "claim": "A second GSC state was enriched for Constructive gene sets involved in brain, neuron, and glial cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "A second GSC state was enriched for Constructive gene sets involved in brain, neuron, and glial cell development (Figure 3C, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis and presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f743032f-7d5f-45ff-a881-72ee5a57ad13",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C32",
+      "claim": "The third and smallest GSC state presented an Invasive state characterized by terms relating to the extracellular matrix and angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The third and smallest GSC state presented an Invasive state characterized by terms relating to the extracellular matrix and angiogenesis (Figure 3C, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene set enrichment analysis and presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "348563be-729c-4b79-aba9-b7f892ba4927",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C33",
+      "claim": "The CNA-based classification of GSCs failed to match the three chromatin accessibility-derived states, suggesting the three GSC states are not defined by somatic copy number events.",
+      "claim_type": "EXPLICIT",
+      "source": "While common GBM CNAs, including EGFR gains and CDKN2A/B loss, were observed, the CNA-based classification of GSCs failed to match the three chromatin accessibility-derived states, suggesting the three GSC states are not defined by somatic copy number events (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by copy number analysis presented in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "fea4fe19-b98f-4a09-bd22-3d9570118dce",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C34",
+      "claim": "Only a small subset of accessible chromatin regions drives the three GSC states.",
+      "claim_type": "EXPLICIT",
+      "source": "Further comparison of the accessible chromatin in each GSC state reveals that only a small subset of accessible chromatin regions drives the three GSC states (Figure 3E, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by chromatin accessibility analysis presented in Figure 3E and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "2fc926d7-868e-45e2-8c27-d069870384fe",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C35",
+      "claim": "The comprehensiveness of the cohort saturated the detection of accessible regions to 93%, 88%, and 71% across the Reactive (n = 13), Constructive (n = 9), and Invasive (n = 5) state GSCs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ability to discriminate GSC state-specific regions of accessible chromatin is reflective of the comprehensiveness of our cohort to saturate the detection of accessible regions to 93%, 88%, and 71% across the Reactive (n = 13), Constructive (n = 9), and Invasive (n = 5) state GSCs, respectively (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by saturation analysis presented in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "771977e2-81bd-4192-bdc3-973cec032ee6",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C36",
+      "claim": "The DNA recognition motifs for the interferon-regulatory factor (IRF) and Cys2-His2 zinc finger (C2H2 ZF) transcription factor families were enriched in the Reactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the DNA recognition motifs for the interferon-regulatory factor (IRF) and Cys2-His2 zinc finger (C2H2 ZF) transcription factor families were enriched in the Reactive state (Figure 4A, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif enrichment analysis presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "d7f97a03-061c-4f86-b672-be19649833d7",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C37",
+      "claim": "Regulatory factor X (RFX) and basic helix-loop-helix (bHLH) DNA recognition motifs were enriched in the Constructive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory factor X (RFX) and basic helix-loop-helix (bHLH) DNA recognition motifs were enriched in the Constructive state (Figure 4A, middle panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif enrichment analysis presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f7035515-89dd-4725-aad8-d015b580697c",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C38",
+      "claim": "The Forkhead motif family was enriched in the Invasive state.",
+      "claim_type": "EXPLICIT",
+      "source": "while the Forkhead motif family was enriched in the Invasive state (Figure 4A, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by motif enrichment analysis presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "788697ae-3a33-434f-8ac5-6e58e55e8822",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C39",
+      "claim": "The SP1 regulatory network is preferentially essential in the Reactive state GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the SP1 regulatory network is preferentially essential in the Reactive state GSCs (Figure 4B, top panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR/Cas9 essentiality screen data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "94fb1915-9fac-48d6-82a5-6330045c7c4f",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C40",
+      "claim": "ASCL1, OLIG2, AHR, and NPAS3 are uniquely essential in the Constructive state GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "ASCL1, OLIG2, AHR, and NPAS3 are uniquely essential in the Constructive state GSCs (Figure 4B, middle panel)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR/Cas9 essentiality screen data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f5808e6f-3fe1-4c4b-9da1-9102c78dd312",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C41",
+      "claim": "FOXD1 is essential only in the Invasive state GSC.",
+      "claim_type": "EXPLICIT",
+      "source": "and FOXD1 is essential only in the Invasive state GSC (Figure 4B, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by CRISPR/Cas9 essentiality screen data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "2c4870a2-27d7-40b1-8453-5ae8b2d1b2da",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C42",
+      "claim": "Of the 36 transcription factors from the Reactive-enriched families (IRF and C2H2 ZF) that were essential in at least one Reactive GSC and not in any of the Constructive or Invasive GSCs, 13 are directly regulated by SP1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, of the 36 transcription factors from the Reactive-enriched families (IRF and C2H2 ZF) that were essential in at least one Reactive GSC and not in any of the Constructive or Invasive GSCs, 13 are directly regulated by SP1 (Figure 4\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of transcription factor regulation presented in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "90287c76-20b1-44f9-9c47-240cb14752cd",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C43",
+      "claim": "All six key transcription factors (SP1, ASCL1, OLIG2, AHR, NPAS3, FOXD1) display significantly higher expression in GBM compared to normal brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, all six transcription factors display significantly higher expression in GBM compared to normal brain (Tang et al., 2017; Figure 4\u2014figure supplement 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression data from Tang et al., 2017 and presented in Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "85ed96dc-982f-4fba-be3f-c84b49fa3c7b",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C44",
+      "claim": "The Constructive state was dominant in every primary tumor, ranging from 9 to 21% of all cells captured by scATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "The Constructive state was dominant in every primary tumor, ranging from 9 to 21% of all cells captured by scATAC-seq (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scATAC-seq data presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "c996680b-1843-45d4-a053-6d06d60199aa",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C45",
+      "claim": "The Reactive and Invasive states accounted for only 0\u20139% of all cells, in varying proportions from one tumor to another.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reactive and Invasive states accounted for only 0\u20139% of all cells, in varying proportions from one tumor to another (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scATAC-seq data presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "790eef2f-71d8-4ecb-89a4-342d602a308d",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C46",
+      "claim": "The overall survival times of mice transplanted with GSCs grouped by GSC state were significantly different (LogRank test p=0.041).",
+      "claim_type": "EXPLICIT",
+      "source": "The overall survival times of the transplanted mice grouped by GSC state were significantly different (LogRank test p=0.041), with the Invasive state GSCs leading to the worst prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of xenograft survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "5981405f-4a55-4660-96e1-346f70a4ceca",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C47",
+      "claim": "Relative to the mice injected with Reactive state GSCs, mice with Constructive state GSCs and Invasive state GSCs had hazard ratios of 1.3 (95% confidence interval [CI]: 0.57\u20132.97) and 3.5 (95% CI: 1.2\u201310.49), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the mice injected with Reactive state GSCs, mice with Constructive state GSCs and Invasive state GSCs had hazard ratios of 1.3 (95% confidence interval [CI]: 0.57\u20132.97) and 3.5 (95% CI: 1.2\u201310.49), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of xenograft survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "d45222ee-cc74-463f-801a-ba0940db5a03",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C48",
+      "claim": "GSCs of the Invasive state invaded strikingly faster and further into the collagen matrix and overall displayed a three times greater invasive ability than that of the Reactive and Constructive states.",
+      "claim_type": "EXPLICIT",
+      "source": "GSCs of the Invasive state invaded strikingly faster and further into the collagen matrix and overall displayed a three times greater invasive ability than that of the Reactive and Constructive states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by invasion assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "d1ef12cd-514b-4898-8903-c1473c885657",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C49",
+      "claim": "An Invasive-high subset of TCGA tumors has significantly lower survival (p=0.019, HR (Hazard Ratio) = 2.8, 95% CI: [1.3\u20135.81]).",
+      "claim_type": "EXPLICIT",
+      "source": "With this stratification method, median patient survival per group not only decreased with increasing Invasive GSC score, but we also identified an Invasive-high subset of tumors with significantly lower survival (p=0.019, HR (Hazard Ratio) = 2.8, 95% CI: [1.3\u20135.81]) (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival analysis of TCGA data presented in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "251d9654-3cd6-4b9f-a5df-2e0fbe42d540",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C50",
+      "claim": "Cancer stem cell states defined based on the chromatin accessibility in GSCs can identify transcriptional programs associated with poor prognosis and can serve as a signature to identify high-risk patients in IDH wild-type GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that cancer stem cell states defined based on the chromatin accessibility in GSCs can identify transcriptional programs associated with poor prognosis and can serve as a signature to identify high-risk patients in IDH wild-type GBM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the survival analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "588d65a3-fe59-4afd-b7ca-b01f752a5164",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C51",
+      "claim": "Chromatin accessibility assays capture a heterogeneity across self-renewing tumor-initiating cells in primary GBM that extends beyond their genetic diversity and underlies the heterogeneity in bulk progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that chromatin accessibility assays capture a heterogeneity across self-renewing tumor-initiating cells in primary GBM that extends beyond their genetic diversity and underlies the heterogeneity in bulk progeny (Meyer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's findings and a citation to Meyer et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "578c518f-65d4-407c-b42c-4da9cb86829c",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C52",
+      "claim": "This heterogeneity aligns with diversity in the three-dimensional genome organization of GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterogeneity aligns with diversity in the three-dimensional genome organization of GSCs (Johnston et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Johnston et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "3fd50ae9-ea19-45eb-99f1-95bdb5fc2bab",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C53",
+      "claim": "The three-dimensional genome organization instructs cis-regulatory plexuses underlying gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and agrees with how the three-dimensional genome organization instructs cis-regulatory plexuses underlying gene regulation (Bailey et al., 2016; Kim et al., 2016; Sallari et al., 2017; Schmitt et al., 2016; Zheng and Xie, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "fc8e72b4-04b6-4bb2-aa32-f7e55ae92780",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C54",
+      "claim": "The Invasive GSC signature draws from a population with enhanced ability to invade and spread compared to other GSC states.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Invasive GSC signature draws from a population with enhanced ability to invade and spread compared to other GSC states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by invasion assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f36809f0-6e3c-4ab9-9b2d-2a1ee4abd15a",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C55",
+      "claim": "SP1 and its regulatory partners are involved in cellular differentiation and growth, apoptosis, response to DNA damage, chromatin remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the Reactive GSC state-associated transcription factor SP1 and its regulatory partners are involved in cellular differentiation and growth, apoptosis, response to DNA damage, chromatin remodeling (O'Connor et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to O'Connor et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "ca4a5f24-6f02-4a38-9c8e-497c29ff6027",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C56",
+      "claim": "SP1 is involved in stimulation of TERT expression in cancer stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "stimulation of TERT expression in cancer stem cells (Liu et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "31706e8b-bfe1-4db8-af49-9b2ad4e28ef2",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C57",
+      "claim": "SP1 is involved in increased stemness and invasion in GBM.",
+      "claim_type": "EXPLICIT",
+      "source": "and increased stemness and invasion in GBM (Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "4d68e964-1e4a-47ad-b36d-2912ad935ba9",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C58",
+      "claim": "OLIG2 is a known GSC marker.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Constructive GSC state relies on transcription factors including OLIG2, a known GSC marker (Tr\u00e9pant et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tr\u00e9pant et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "d388e6e6-78ca-4cb2-90f4-5c0bfaf88a68",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C59",
+      "claim": "AHR is involved in tumor microenvironment responses and metabolic adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "AHR involved in tumor microenvironment responses and metabolic adaptation (Gabriely et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gabriely et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "10856d9f-7dcf-496c-979d-d947144fea03",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C60",
+      "claim": "NPAS3 is a regulator of Notch signaling and neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "NPAS3, a regulator of Notch signaling and neurogenesis (Michaelson et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Michaelson et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "4f4d88bc-9f57-400c-b298-2967dad201b8",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C61",
+      "claim": "ASCL1 is a critical regulator of GSC differentiation and marker of sensitivity to Notch inhibition in GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "and ASCL1, a critical regulator of GSC differentiation and marker of sensitivity to Notch inhibition in GSCs (Park et al., 2017; Rajakulendran et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Park et al., 2017 and Rajakulendran et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "720cd369-262a-43ca-9379-8484eddcc9c1",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C62",
+      "claim": "FOXD1 is a pluripotency regulator and determinant of tumorigenicity in GSCs regulating expression of the aldehyde dehydrogenase ALDH1A3, a functional marker for invasive GSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the Invasive GSC state relies on FOXD1, a pluripotency regulator and determinant of tumorigenicity in GSCs regulating expression of the aldehyde dehydrogenase ALDH1A3, a functional marker for invasive GSCs (Cheng et al., 2016; Koga et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cheng et al., 2016 and Koga et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "1e3c216d-d7cf-4bf6-a4e5-af0b3d795ae4",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C63",
+      "claim": "Primary human GBMs harbor a heterogeneous self-renewing population whose diversity is captured in patient-derived glioblastoma stem cells (GSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "We show, using single-cell chromatin accessibility, that primary human GBMs harbor a heterogeneous self-renewing population whose diversity is captured in patient-derived glioblastoma stem cells (GSCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's single-cell chromatin accessibility data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "07141ee3-0931-4213-b1b4-a183a54cc2b0",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C64",
+      "claim": "In-depth characterization of chromatin accessibility in GSCs identifies three GSC states: Reactive, Constructive, and Invasive, each governed by uniquely essential transcription factors and present within GBMs in varying proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "In-depth characterization of chromatin accessibility in GSCs identifies three GSC states: Reactive, Constructive, and Invasive, each governed by uniquely essential transcription factors and present within GBMs in varying proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's chromatin accessibility and essentiality screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "336d91cf-b0db-46d1-a3fc-a77f0cfbd752",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C65",
+      "claim": "GSC states associate with survival in orthotopic xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Orthotopic xenografts reveal that GSC states associate with survival",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by xenograft survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "6c32b774-4e90-48de-9c1e-0f02a452a645",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C66",
+      "claim": "An invasive GSC signature is predictive of low patient survival.",
+      "claim_type": "EXPLICIT",
+      "source": "and identify an invasive GSC signature predictive of low patient survival",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by TCGA survival analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "f7bf156b-6526-4685-b7fd-2ef0db9fb39d",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "claim_id": "C67",
+      "claim": "Invasive state GSCs have higher invasive properties compared to Reactive and Constructive GSCs as shown by in vitro and in vivo assays.",
+      "claim_type": "EXPLICIT",
+      "source": "in line with the higher invasive properties of Invasive state GSCs compared to Reactive and Constructive GSCs as shown by in vitro and in vivo assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by invasion assay and xenograft data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "15909d53-19be-4be9-9d77-96431baea0d1",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Glioblastoma (GBM) has poor prognosis with current treatments, and is driven by glioblastoma stem cells (GSCs) that are resistant to therapy and drive disease progression and recurrence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 establish the clinical context and biological basis for the study through citations to prior work. These background claims are well-supported by appropriate references and provide the rationale for investigating GSC heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "04eaffe6-6d83-4bd5-b3cd-c11f6f24c456",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior single-cell RNA-seq studies identified four cellular states in primary GBM (NPC, OPC, AC, MES) that lie along a proneural-to-mesenchymal axis, with stem-associated genes at the extremes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 accurately summarize prior scRNA-seq findings from Neftel et al., 2019 and Wang et al., 2019, providing essential context for comparing chromatin accessibility patterns to transcriptional states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell chromatin accessibility profiling of four primary GBM tumors reveals that chromatin accessibility stratifies the MES state into multiple modules, mixes NPC and OPC states together, and shows heterogeneity within the AC state, differing from the four-state model defined by gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are supported by scATAC-seq data from 3,797 cells across four tumors (Figure 1). The clustering analysis and state assignments are methodologically sound, though the interpretation relies on enrichment scores for signature genes from prior studies rather than direct measurement of gene expression in the same cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "01dc228c-1f47-4e26-9378-d5c20227fa4e",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Putative cancer stem cells identified by chromatin accessibility at stem transcription factor promoters are distributed across multiple modules and cellular states, suggesting that cancer stem cells in primary GBM are not restricted to a unique population defined by global chromatin accessibility profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by the distribution analysis shown in Figure 1E, demonstrating that cells with accessible chromatin at stem TF promoters are found across NPC, OPC, and MES modules. The conclusion about heterogeneity is consistent with the data and prior literature, though it acknowledges the resolution limitations of current technologies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "3c2305d3-74d7-46d7-88e7-102e7f84e7be",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ATAC-seq profiling of 27 patient-derived GSCs shows consistent enrichment patterns across genomic features and achieves 92% saturation of accessible chromatin regions, with an average of 11.3% of cells in primary tumors identified as GSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by the ATAC-seq data and saturation analysis (Figure 2B-C). The saturation modeling using non-linear regression is appropriate, and the genomic feature enrichment patterns validate the quality of the ATAC-seq data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "dba3e6e3-7d8c-4104-b4b6-1cc4eaab051b",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Two independent signatures for identifying cancer stem cells (stem transcription factor promoters and GSC chromatin accessibility) show significant correlation and overlap in primary tumors, and cells identified by either signature display hallmark GBM copy number alterations, validating that patient-derived GSCs reflect the chromatin identity of cancer stem cells in primary tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are well-supported by statistical analyses (p\u22641.6\u00d710\u207b\u2075 for correlation, p=8.8\u00d710\u207b\u2078 for overlap) and copy number validation (91.2% of identified cells show chr7/10 alterations). The convergence of two independent methods strengthens the conclusion that GSC models capture primary tumor stem cell features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "b1880e1d-18c1-4432-81bb-4110b6dc2176",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spectral clustering of 27 GSC ATAC profiles identifies three distinct states that do not match TCGA GBM subtypes (proneural, classical, mesenchymal), but clustering by gene expression largely recapitulates the chromatin accessibility-defined states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by the clustering analyses (Figure 3A-B). The mismatch between chromatin-defined states and TCGA subtypes is clearly demonstrated, and the authors appropriately discuss potential explanations including the absence of tumor microenvironment in GSC cultures and the bulk nature of TCGA classifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "ceda33a3-58af-447a-8e00-8bbb62b12533",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Gene set enrichment analysis identifies three GSC states with distinct functional characteristics: Reactive (immune-related), Constructive (brain/neuron development), and Invasive (extracellular matrix/angiogenesis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by GSEA and g:profiler analyses using genes enriched for both expression and promoter accessibility (Figure 3C). The functional annotations are statistically significant (q<0.05) and biologically coherent, providing meaningful biological interpretation of the chromatin-defined states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "ab1a70f2-d53d-4c39-be9a-6fa5c9256ad1",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Copy number alteration patterns do not define the three GSC states, suggesting the states are not determined by somatic copy number events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by DNA methylation array-based CNA analysis (Figure 3D). While common GBM CNAs are observed, the CNA-based clustering does not match the chromatin accessibility-derived states, appropriately ruling out genetic alterations as the primary driver of state differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "5ab16d7e-6e01-47bd-97c4-d0b6a47cf6dd",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A small subset of accessible chromatin regions drives the three GSC states, with saturation analysis showing 93%, 88%, and 71% coverage for Reactive, Constructive, and Invasive states respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are supported by differential accessibility analysis and saturation curves (Figure 3E-F). The lower saturation for the Invasive state (71%) reflects the smaller sample size (n=5) and suggests additional sampling may be needed to fully characterize this state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "fb98ff7c-25c2-4e80-aab7-ed5b0dcd8443",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Motif enrichment analysis reveals state-specific transcription factor binding motif families: IRF and C2H2 ZF in Reactive, RFX and bHLH in Constructive, and Forkhead in Invasive states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by HOMER motif enrichment analysis on state-exclusive accessible regions (Figure 4A). The use of appropriate background sets and fold-enrichment thresholds (>0.5) based on data distribution strengthens the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "7eb8e757-d42f-48c8-b6bd-3c6e8c527cd7",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9 essentiality screens identify state-specific essential transcription factors: SP1 regulatory network in Reactive, ASCL1/OLIG2/AHR/NPAS3 in Constructive, and FOXD1 in Invasive states, with 13 of 36 Reactive-essential TFs directly regulated by SP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by genome-wide CRISPR screens in 6 GSCs (Figure 4B, Figure 4\u2014supplement 1). The essentiality analysis using BAGEL with appropriate thresholds (BF\u22653, 5% FDR) is rigorous. However, the limited number of GSCs tested per state (3 Reactive, 2 Constructive, 1 Invasive) and the fact that SP1 itself is essential in only 1/3 Reactive GSCs warrant caution in generalizing these dependencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "ba13e825-9466-4d92-a46b-939404d41be9",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "All six key state-specific transcription factors (SP1, ASCL1, OLIG2, AHR, NPAS3, FOXD1) show significantly higher expression in GBM compared to normal brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by GEPIA analysis of TCGA data (Figure 4\u2014supplement 1F). The differential expression in tumor versus normal tissue supports the relevance of these factors to GBM biology, though the claim would be strengthened by reporting specific p-values and effect sizes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "884a6e2c-cd5b-4888-8018-a7f0902d2eeb",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Quantification of GSC states in primary tumors shows the Constructive state is dominant (9-21% of cells), while Reactive and Invasive states are rarer (0-9% of cells), with varying proportions across tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by applying state signatures to the scATAC-seq data from four primary tumors (Figure 4C). The analysis demonstrates intertumoral heterogeneity in state composition, though the small number of tumors (n=4) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "b4172640-8512-4e3e-9245-554ec1ec25b8",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Orthotopic xenografts of 37 GSCs show significantly different survival by state (LogRank p=0.041), with Invasive state GSCs conferring the worst prognosis (HR=3.5, 95% CI: 1.2-10.49 vs Reactive).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by xenograft survival analysis (Figure 5A). The use of median survival values from multiple mice per GSC (average n=5) is appropriate, though one GSC has only a single replicate. The significant overall difference and hazard ratios provide strong evidence for functional differences between states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "321ea5eb-d5a5-44a3-941b-a9dded4d92d0",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Invasive state GSCs display three times greater invasive ability than Reactive and Constructive states in collagen matrix invasion assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by quantitative invasion assays with 3-4 GSCs per state in triplicate (Figure 5B-C, Figure 5\u2014supplement 1). The real-time monitoring and normalization to t0 provide robust quantification, and the in vivo validation (Figure 5\u2014supplement 1B-C) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "74af56a0-3476-4edd-8be8-c081932c349e",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "An Invasive-high subset of TCGA tumors (z-score \u22651.65) identified by concordance with Invasive GSC signatures shows significantly lower survival (p=0.019, HR=2.8, 95% CI: 1.3-5.81), demonstrating that GSC states can identify high-risk patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by survival analysis of 144 TCGA IDH-wt GBM samples (Figure 5D-E) with validation in an additional 158 samples (Figure 5\u2014supplement 2D-E). The stratification method using concordance scores is appropriate, though the Invasive-high group is small (n=10), and the choice of z-score thresholds (1 and 1.65) appears somewhat arbitrary and may benefit from independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "82a3215e-9e62-40be-bcce-695a1cdd9e4f",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Chromatin accessibility captures GSC heterogeneity that extends beyond genetic diversity, aligns with 3D genome organization, and underlies bulk tumor heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 synthesize the study's findings with appropriate citations to prior work. The conclusion that chromatin accessibility captures non-genetic heterogeneity is supported by the CNA analysis (C33), and the alignment with 3D genome organization is appropriately cited to Johnston et al., 2019.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "232877f8-e6d6-467b-80fe-a002b2d2d6de",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The Invasive GSC signature identifies a population with enhanced invasive ability compared to other GSC states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is directly supported by the invasion assay data (C48) and xenograft survival data (C46-C47), providing convergent functional evidence for the biological significance of the Invasive state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "2d6bfbc7-7a74-4677-b1e2-95435fe653ac",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "SP1, the key Reactive state transcription factor, is involved in cellular differentiation, growth, apoptosis, DNA damage response, chromatin remodeling, TERT expression in cancer stem cells, and increased stemness and invasion in GBM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by appropriate citations to prior literature (O'Connor et al., 2016; Liu et al., 2016; Lee et al., 2014). These claims provide biological context for the functional role of SP1 in the Reactive state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "08f0cd15-f5c0-4fde-b595-aa1b715621ad",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The Constructive state relies on transcription factors OLIG2 (GSC marker), AHR (tumor microenvironment/metabolic adaptation), NPAS3 (Notch signaling/neurogenesis), and ASCL1 (GSC differentiation/Notch inhibition sensitivity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by appropriate citations to prior literature (Tr\u00e9pant et al., 2015; Gabriely et al., 2017; Michaelson et al., 2017; Park et al., 2017; Rajakulendran et al., 2019). These claims provide biological context for the Constructive state transcription factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "b37efe31-2afe-4fb0-93df-2047123a8fb1",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The Invasive state relies on FOXD1, a pluripotency regulator and determinant of tumorigenicity that regulates ALDH1A3, a functional marker for invasive GSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by appropriate citations to prior literature (Cheng et al., 2016; Koga et al., 2014), providing biological context for FOXD1's role in the Invasive state and connecting it to known invasive GSC markers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    },
+    {
+      "id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c",
+      "content_id": "f7fd98e7-ec2c-4fa5-9cb3-aa15a460dbc8",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Primary GBMs harbor heterogeneous self-renewing populations captured in patient-derived GSCs, which exist in three states (Reactive, Constructive, Invasive) governed by unique transcription factors, associate with survival in xenografts, and include an invasive signature predictive of poor patient survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 represent the main conclusions of the study, synthesizing findings from chromatin accessibility profiling, essentiality screens, functional assays, and survival analyses. These conclusions are well-supported by the convergent evidence from multiple experimental approaches, though some limitations exist (small tumor cohort for scATAC-seq, limited GSCs tested in CRISPR screens, small Invasive-high patient group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:31:51.512868Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "559f9c1d-a6ef-41a5-9712-efe4254c2a86",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "7c960800-4b51-4a45-be76-bfca4da000ec",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "c6f1ef19-e5e4-49d5-a748-d3173f3f0f42",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "32afe35e-2223-48bb-905d-86143ef2dc8d",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "0645b4e9-9fc3-4d79-8923-94fbe2586bac",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "cb72de38-e212-425a-9eda-4be71540ac94",
+      "result_id": "15909d53-19be-4be9-9d77-96431baea0d1"
+    },
+    {
+      "claim_id": "64f9f256-e57b-43c8-9036-cd6fe42b9cee",
+      "result_id": "04eaffe6-6d83-4bd5-b3cd-c11f6f24c456"
+    },
+    {
+      "claim_id": "3518e2c6-b2e9-49df-b64c-ca3434fc0fe2",
+      "result_id": "04eaffe6-6d83-4bd5-b3cd-c11f6f24c456"
+    },
+    {
+      "claim_id": "6c55beb7-e413-464f-b52f-c2d68701a842",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "6004f058-92da-4990-a889-6978a77947a7",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "f570bc6d-c464-43ef-b7c2-90b81b9a0c35",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "e1034f7b-75de-4871-93fb-a456176e2403",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "427d15f7-3438-4441-873a-0763f4440dce",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "a6bd2bfb-daed-4528-a573-240cce602a8d",
+      "result_id": "e8a1f5c3-a669-4534-9a13-6bade21c2d8c"
+    },
+    {
+      "claim_id": "56d29306-1b43-4e50-9c00-019b3f8f2d41",
+      "result_id": "01dc228c-1f47-4e26-9378-d5c20227fa4e"
+    },
+    {
+      "claim_id": "193e2634-eb21-4e64-b7bd-97dd7295ad17",
+      "result_id": "01dc228c-1f47-4e26-9378-d5c20227fa4e"
+    },
+    {
+      "claim_id": "7f7e3083-1f3e-4f56-92fc-f7b755f59c14",
+      "result_id": "01dc228c-1f47-4e26-9378-d5c20227fa4e"
+    },
+    {
+      "claim_id": "4c8d794c-c8a4-43e9-a25c-1817847c8180",
+      "result_id": "3c2305d3-74d7-46d7-88e7-102e7f84e7be"
+    },
+    {
+      "claim_id": "f966f3ee-0147-4394-86b8-5c73ec4864cd",
+      "result_id": "3c2305d3-74d7-46d7-88e7-102e7f84e7be"
+    },
+    {
+      "claim_id": "cef5127a-2208-4cd7-af79-02093bf47381",
+      "result_id": "3c2305d3-74d7-46d7-88e7-102e7f84e7be"
+    },
+    {
+      "claim_id": "bda62fa9-18cb-4f35-9826-d6f89ebf84fa",
+      "result_id": "dba3e6e3-7d8c-4104-b4b6-1cc4eaab051b"
+    },
+    {
+      "claim_id": "84f4bdcb-4512-47e4-bf7f-ee74dc89814a",
+      "result_id": "dba3e6e3-7d8c-4104-b4b6-1cc4eaab051b"
+    },
+    {
+      "claim_id": "32a0954d-cb94-4d9a-942c-2dbc43ec240b",
+      "result_id": "dba3e6e3-7d8c-4104-b4b6-1cc4eaab051b"
+    },
+    {
+      "claim_id": "7f8e398f-2d57-4358-bcda-e1f71a5de760",
+      "result_id": "dba3e6e3-7d8c-4104-b4b6-1cc4eaab051b"
+    },
+    {
+      "claim_id": "456e4753-9cab-46c4-a9a6-45c506e61490",
+      "result_id": "b1880e1d-18c1-4432-81bb-4110b6dc2176"
+    },
+    {
+      "claim_id": "a62323c2-f5d4-4e26-a7ea-87aed8377ef4",
+      "result_id": "b1880e1d-18c1-4432-81bb-4110b6dc2176"
+    },
+    {
+      "claim_id": "a66600d0-0cca-4f97-b29f-78d700067b56",
+      "result_id": "b1880e1d-18c1-4432-81bb-4110b6dc2176"
+    },
+    {
+      "claim_id": "3a214df6-4e33-4bf4-ba3e-4c9dcc87ff20",
+      "result_id": "b1880e1d-18c1-4432-81bb-4110b6dc2176"
+    },
+    {
+      "claim_id": "64726f96-1258-4e1f-98cf-88a8cbdc1af6",
+      "result_id": "ceda33a3-58af-447a-8e00-8bbb62b12533"
+    },
+    {
+      "claim_id": "a041226c-c5e7-4b95-be67-57c9d35962e9",
+      "result_id": "ceda33a3-58af-447a-8e00-8bbb62b12533"
+    },
+    {
+      "claim_id": "f743032f-7d5f-45ff-a881-72ee5a57ad13",
+      "result_id": "ceda33a3-58af-447a-8e00-8bbb62b12533"
+    },
+    {
+      "claim_id": "348563be-729c-4b79-aba9-b7f892ba4927",
+      "result_id": "ab1a70f2-d53d-4c39-be9a-6fa5c9256ad1"
+    },
+    {
+      "claim_id": "fea4fe19-b98f-4a09-bd22-3d9570118dce",
+      "result_id": "5ab16d7e-6e01-47bd-97c4-d0b6a47cf6dd"
+    },
+    {
+      "claim_id": "2fc926d7-868e-45e2-8c27-d069870384fe",
+      "result_id": "5ab16d7e-6e01-47bd-97c4-d0b6a47cf6dd"
+    },
+    {
+      "claim_id": "771977e2-81bd-4192-bdc3-973cec032ee6",
+      "result_id": "fb98ff7c-25c2-4e80-aab7-ed5b0dcd8443"
+    },
+    {
+      "claim_id": "d7f97a03-061c-4f86-b672-be19649833d7",
+      "result_id": "fb98ff7c-25c2-4e80-aab7-ed5b0dcd8443"
+    },
+    {
+      "claim_id": "f7035515-89dd-4725-aad8-d015b580697c",
+      "result_id": "fb98ff7c-25c2-4e80-aab7-ed5b0dcd8443"
+    },
+    {
+      "claim_id": "788697ae-3a33-434f-8ac5-6e58e55e8822",
+      "result_id": "7eb8e757-d42f-48c8-b6bd-3c6e8c527cd7"
+    },
+    {
+      "claim_id": "94fb1915-9fac-48d6-82a5-6330045c7c4f",
+      "result_id": "7eb8e757-d42f-48c8-b6bd-3c6e8c527cd7"
+    },
+    {
+      "claim_id": "f5808e6f-3fe1-4c4b-9da1-9102c78dd312",
+      "result_id": "7eb8e757-d42f-48c8-b6bd-3c6e8c527cd7"
+    },
+    {
+      "claim_id": "2c4870a2-27d7-40b1-8453-5ae8b2d1b2da",
+      "result_id": "7eb8e757-d42f-48c8-b6bd-3c6e8c527cd7"
+    },
+    {
+      "claim_id": "90287c76-20b1-44f9-9c47-240cb14752cd",
+      "result_id": "ba13e825-9466-4d92-a46b-939404d41be9"
+    },
+    {
+      "claim_id": "85ed96dc-982f-4fba-be3f-c84b49fa3c7b",
+      "result_id": "884a6e2c-cd5b-4888-8018-a7f0902d2eeb"
+    },
+    {
+      "claim_id": "c996680b-1843-45d4-a053-6d06d60199aa",
+      "result_id": "884a6e2c-cd5b-4888-8018-a7f0902d2eeb"
+    },
+    {
+      "claim_id": "790eef2f-71d8-4ecb-89a4-342d602a308d",
+      "result_id": "b4172640-8512-4e3e-9245-554ec1ec25b8"
+    },
+    {
+      "claim_id": "5981405f-4a55-4660-96e1-346f70a4ceca",
+      "result_id": "b4172640-8512-4e3e-9245-554ec1ec25b8"
+    },
+    {
+      "claim_id": "d45222ee-cc74-463f-801a-ba0940db5a03",
+      "result_id": "321ea5eb-d5a5-44a3-941b-a9dded4d92d0"
+    },
+    {
+      "claim_id": "d1ef12cd-514b-4898-8903-c1473c885657",
+      "result_id": "74af56a0-3476-4edd-8be8-c081932c349e"
+    },
+    {
+      "claim_id": "251d9654-3cd6-4b9f-a5df-2e0fbe42d540",
+      "result_id": "74af56a0-3476-4edd-8be8-c081932c349e"
+    },
+    {
+      "claim_id": "588d65a3-fe59-4afd-b7ca-b01f752a5164",
+      "result_id": "82a3215e-9e62-40be-bcce-695a1cdd9e4f"
+    },
+    {
+      "claim_id": "578c518f-65d4-407c-b42c-4da9cb86829c",
+      "result_id": "82a3215e-9e62-40be-bcce-695a1cdd9e4f"
+    },
+    {
+      "claim_id": "3fd50ae9-ea19-45eb-99f1-95bdb5fc2bab",
+      "result_id": "82a3215e-9e62-40be-bcce-695a1cdd9e4f"
+    },
+    {
+      "claim_id": "fc8e72b4-04b6-4bb2-aa32-f7e55ae92780",
+      "result_id": "232877f8-e6d6-467b-80fe-a002b2d2d6de"
+    },
+    {
+      "claim_id": "f36809f0-6e3c-4ab9-9b2d-2a1ee4abd15a",
+      "result_id": "2d6bfbc7-7a74-4677-b1e2-95435fe653ac"
+    },
+    {
+      "claim_id": "ca4a5f24-6f02-4a38-9c8e-497c29ff6027",
+      "result_id": "2d6bfbc7-7a74-4677-b1e2-95435fe653ac"
+    },
+    {
+      "claim_id": "31706e8b-bfe1-4db8-af49-9b2ad4e28ef2",
+      "result_id": "2d6bfbc7-7a74-4677-b1e2-95435fe653ac"
+    },
+    {
+      "claim_id": "4d68e964-1e4a-47ad-b36d-2912ad935ba9",
+      "result_id": "08f0cd15-f5c0-4fde-b595-aa1b715621ad"
+    },
+    {
+      "claim_id": "d388e6e6-78ca-4cb2-90f4-5c0bfaf88a68",
+      "result_id": "08f0cd15-f5c0-4fde-b595-aa1b715621ad"
+    },
+    {
+      "claim_id": "10856d9f-7dcf-496c-979d-d947144fea03",
+      "result_id": "08f0cd15-f5c0-4fde-b595-aa1b715621ad"
+    },
+    {
+      "claim_id": "4f4d88bc-9f57-400c-b298-2967dad201b8",
+      "result_id": "08f0cd15-f5c0-4fde-b595-aa1b715621ad"
+    },
+    {
+      "claim_id": "720cd369-262a-43ca-9379-8484eddcc9c1",
+      "result_id": "b37efe31-2afe-4fb0-93df-2047123a8fb1"
+    },
+    {
+      "claim_id": "1e3c216d-d7cf-4bf6-a4e5-af0b3d795ae4",
+      "result_id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c"
+    },
+    {
+      "claim_id": "07141ee3-0931-4213-b1b4-a183a54cc2b0",
+      "result_id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c"
+    },
+    {
+      "claim_id": "336d91cf-b0db-46d1-a3fc-a77f0cfbd752",
+      "result_id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c"
+    },
+    {
+      "claim_id": "6c32b774-4e90-48de-9c1e-0f02a452a645",
+      "result_id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c"
+    },
+    {
+      "claim_id": "f7bf156b-6526-4685-b7fd-2ef0db9fb39d",
+      "result_id": "d5fd6e56-6af1-4771-8387-f9ac94cd9a9c"
+    }
+  ],
+  "comparisons": []
+}

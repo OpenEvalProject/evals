@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes a paradox in the literature: while many studies show that perceptual performance improvements correlate with decreased mean correlated variability in sensory cortex (C1, C7), theoretical work predicts that optimal decoders should be minimally affected by such changes in correlated variability (C2, C9, C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7 are well-supported by extensive citations to prior empirical work. Claims C2, C9, and C10 accurately represent theoretical predictions from multiple cited studies. The paradox is clearly articulated and forms the motivation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors propose the 'general decoder hypothesis': that observers use a single set of neuronal weights to decode any stimuli, and that such general decoders would be inextricably linked to mean correlated variability because both depend on tuning similarity across all stimulus features (C11, C13, C33-C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The hypothesis is logically constructed from established knowledge about correlated variability (C12, C36) and follows from reasonable inferences about decoder properties (C33-C35, C37). The theoretical framework is internally consistent and provides a testable prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Electrophysiological recordings from V4 in two monkeys performing an orientation change detection task revealed that attention strongly affected the monkey's decoder performance but had minimal effects on the specific decoder performance (C15, C16), with the monkey's strategy qualitatively matching a general decoder (C17, C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are directly supported by data shown in Figure 3A. The comparison to the modeled general decoder (C17) is supported by Figure 3B. However, the claim that the monkey's strategy was 'most qualitatively matched' (C18) is somewhat subjective and based on visual comparison rather than quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The performance of the monkey's decoder was significantly more strongly related to mean correlated variability than the specific decoder in both physiological data (C19, C72-C75) and in the circuit model (C20), supporting the general decoder hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses are appropriate (Williams' procedure for comparing correlations) and show significant differences between decoders for both monkeys (C72, C73). The findings hold within individual attention conditions (C74, C75) and are replicated in the model (C20). Figure 3C and 3D provide clear visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C70",
+      "C71"
+    ],
+    "result": "Analysis of decoders with varying levels of generality showed that more general decoders (trained on more orientation changes) had performance more correlated with the monkey's decoder (C21, C70) and better predicted the monkey's trial-by-trial choices (C22, C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gradient analysis provides additional support for the general decoder hypothesis. Statistical significance is reported for both correlations (C70: r=0.25, p=0.016; C71: r=0.44, p=0.016). Figure 3F and 3G illustrate the trends clearly. This provides converging evidence beyond the binary specific vs. general comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C40",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A three-layer excitatory/inhibitory cortical circuit model extending from V1 to V4 successfully reproduced key features of the physiological data, including attention effects on firing rates, correlated variability, covariance eigenspectrum, and the relationship between noise and signal correlations (C24, C40, C63-C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is well-described (C60-C62) and Figure 2D-F shows good qualitative agreement with physiological data. The model's ability to reproduce the noise-signal correlation relationship (C64) and its modulation by attention (C65) is particularly important for testing the general decoder hypothesis. The claim that it 'more than captured' effects (C63) is somewhat imprecise but supported by the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C23",
+      "C29"
+    ],
+    "result": "The study concludes that general decoders optimized for broad sets of stimuli better matched the animals' decoding strategy and were more related to correlated variability than specific decoders, explaining the inverse relationship between perceptual performance and correlated variability (C4-C6, C23, C29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims accurately reflect the convergent evidence from the electrophysiological experiments (C19, C21-C22) and modeling (C20). The conclusion (C6, C29) is appropriately cautious, noting this explains the relationship rather than claiming definitive proof. The evidence supports the hypothesis within the constraints of the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The authors claim their circuit model is the only model that captures the effects of attention on correlated variability observed in electrophysiological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors cite Huang et al., 2019 to support this claim, the assertion that it is 'the only model' is difficult to verify without comprehensive knowledge of all existing models. The qualifier 'to our knowledge' appropriately acknowledges uncertainty, but this remains a strong claim that may not account for all relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior work from the authors' lab found that attention reshapes neuronal population activity to align with a fixed readout mechanism rather than changing decoder weights (C26-C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize findings from Ruff and Cohen, 2019, which is appropriately cited. The interpretation (C28) follows logically from the cited results. This provides important context for the current study's focus on general decoders.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The model showed that differences in attentional effects between general and specific decoders decreased with larger population sizes (C66), suggesting monkeys operated in a regime below saturation where attention could have large effects (C67-C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by Figure 3B (right plot). The inferences about the monkeys' operating regime (C67-C68) are reasonable interpretations of the data, though they remain somewhat speculative. The authors appropriately note this is an observation rather than a central claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Trial-shuffling analysis showed that removing correlations resulted in linear growth of Fisher information with neuron number and made general and specific decoders behave similarly (C42, C76-C78), with performance then dominated by attention-related firing rate gains (C43-C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trial-shuffling analysis is well-executed and appropriately interpreted. Claims C42, C76-C78 are supported by Figure 3\u2014figure supplement 2A-C. The interpretation that decoder performance becomes dominated by firing rate gains (C43-C44) is reasonable and supported by citations. This control analysis strengthens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript contextualizes the study within broader literature, noting that change detection tasks frequently show relationships between performance and correlated variability (C14, C30), while some discrimination studies suggest specific decoders cannot explain this relationship (C31), though high precision is achievable under certain circumstances (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize relevant prior literature with appropriate citations. They provide important context for understanding when general vs. specific decoding strategies might be employed. The nuanced presentation acknowledges complexity in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The authors conclude that constraining analyses of neuronal data by behavior can provide important insights into neurobiological mechanisms underlying perception and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological conclusion is well-supported by the study's approach of comparing the monkey's decoder (constrained by behavior) to theoretical decoders. The study demonstrates the value of this approach by resolving the paradox between theoretical predictions and empirical observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C80",
+      "C81"
+    ],
+    "result": "The methods section describes the experimental subjects (two male rhesus monkeys, C46), ethical approvals (C47), recording techniques (C48-C49), behavioral task design (C50-C54), and data analysis procedures (C55-C59), with data from 46 and 28 recording days for the two monkeys (C80) and code availability (C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are described in appropriate detail for replication. Sample sizes (C49, C80) are reasonable for this type of study. Ethical approvals are documented (C47). The exclusion of two outlier points (C57) is justified using the Tukey method. Code availability (C81) supports reproducibility. No major methodological concerns are apparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The V4 neuronal population representations of the limited range of stimulus orientations tested were reasonably approximated by a line, justifying the use of linear decoders for the physiological dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This justification is supported by Figure 3E, which shows the population responses in PC space. The claim appropriately notes that while complex estimators were needed for the full orientation range in the model, linear methods were sufficient for the limited range tested physiologically. This is a reasonable methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "A strong relationship between noise and signal correlations was observed in both recorded neurons and modeled data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by Figure 2\u2014figure supplement 1A (physiological data) and 1B (model data). The relationship is well-established in the literature (Cohen and Maunsell, 2009; Cohen and Kohn, 2011) and its reproduction in the model is important for validating the model's relevance to the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Previous work by the authors found that the axis explaining the most mean correlated variability explains virtually all choice-predictive signals in V4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately summarizes findings from Ni et al., 2018, which is appropriately cited. This prior finding provides important motivation for the current study's focus on the relationship between correlated variability and decoding strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C41"
+    ],
+    "result": "The manuscript reviews established knowledge about attention effects on neuronal activity (C39) and the theoretical prediction that differential correlations dominate decoding performance limits (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims accurately represent established knowledge with appropriate citations. C39 is supported by extensive empirical literature, and C41 is supported by theoretical work (Moreno-Bote et al., 2014; Kohn et al., 2016). These provide necessary background for interpreting the study's findings.",
+    "result_type": "MINOR"
+  }
+]

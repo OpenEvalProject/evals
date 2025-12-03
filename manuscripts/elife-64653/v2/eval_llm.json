@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "T-REX successfully identified rhinovirus-specific CD4+ T cells by detecting regions of \u226595% expansion that were enriched for tetramer+ virus-specific cells in the majority of infected subjects (4/6 at 95% cutoff, 5/6 at 85% cutoff). The algorithm was blinded to tetramer data during analysis, and identified cells displayed phenotypes consistent with activated memory T cells (CD45RO+ CD38+) with early memory/stem-like signatures (TCF1+ CD27+) and expression of CCR5 and CXCR3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17-C20, C64, and C74-C77 provide converging evidence that T-REX identified biologically relevant virus-specific cells. The algorithm was properly blinded to tetramer data (C64), identified regions with \u226595% change that were enriched for tetramer+ cells in most subjects (C17), captured the majority of virus-specific cells (C20), and the phenotype matched known rhinovirus-specific T cell characteristics (C18). The quantitative thresholds were empirically validated (C74-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C78",
+      "C79"
+    ],
+    "result": "A virtual FACS sorting strategy based on T-REX and MEM results successfully enriched for rhinovirus tetramer+ cells from very low precursor frequencies (0.0004-0.04% of CD4+ T cells) to 0.89-9.25% in all infected subjects. A minimal panel of 10 markers was sufficient for maximal enrichment, and the strategy showed specificity by failing to enrich in uninfected subjects or with control tetramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C78-C79 demonstrate that T-REX results translate to practical FACS applications. The virtual sort achieved substantial enrichment (C21) from extremely rare starting frequencies (C22), required only 10 markers (C23), showed appropriate specificity controls (C24), and worked even for subjects where T-REX itself failed to identify hotspots (C78). This validates the biological relevance and practical utility of T-REX findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The optimal k-value for KNN analysis in T-REX was determined through systematic optimization based on tetramer enrichment curves, with k=70 optimal for RV001, k-values ranging from 30-80 across subjects, and k=60 chosen as a standard value for all analyses across datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C71-C73 describe a systematic approach to k-value optimization. The inflection point method for determining optimal k is clearly described (C71), variation across subjects was assessed (C72), and a compromise value was selected for consistency (C73). This represents sound parameter optimization, though the choice of k=60 as a universal value may not be optimal for all datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "T-REX analysis quantified immune changes using two metrics: degree of change (sum of cells in 5th and 95th percentile hotspots) and direction of change (ratio of expansion to contraction, ranging from -1 to +1). Rhinovirus infections showed small degree of change (median 0.019%) with large directionality (median 0.029), while COVID-19 samples showed variable degree of change (<1% to 68%, median 6.86%) with near-zero directionality (median -0.00880).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C65-C68 present clearly defined metrics with quantitative results. The definitions of degree and direction of change are mathematically sound (C65-C68), and the reported values for rhinovirus (C25-C26) and COVID-19 (C27-C29) are directly stated with appropriate statistical measures (medians and IQRs). These metrics provide a useful framework for comparing immune responses across disease contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "COVID-19 patients displayed heterogeneous immune trajectories, with some showing magnitude and direction of change comparable to AML patients undergoing complete response to chemotherapy, while others displayed patterns similar to rhinovirus infection or melanoma checkpoint inhibitor therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by the comparative analysis presented in Figure 6 showing degree and direction of change across disease types. The heterogeneity in COVID-19 responses is evident from the data (C27-C29), and the comparison to other disease contexts provides useful biological context. However, the specific patient-level correlations would benefit from more detailed statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C52",
+      "C54"
+    ],
+    "result": "T-REX analysis of COVID-19 patients revealed that 5 of 10 patients had CD4+ T cell hotspots, with 4 of these 5 sharing a consistent phenotype enriched for CD147, CD99, CD29, and other markers. CD147 was highly expressed on many cells that changed during infection. Manual gating using MEM-identified markers enriched CD4+ T cells from 5.5-14.0% to 49.6-83.3%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C52, and C54 describe consistent findings across COVID-19 patients. The identification of a shared CD4+ T cell phenotype in 4/5 patients with hotspots (C32) is well-supported, and the enrichment achieved through manual gating (C33) validates the computational findings. The observation about CD147 expression (C52) is interesting but requires more mechanistic investigation. The citation to the original study (C54) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "T-REX analysis of melanoma and AML datasets showed that melanoma patients had small degree of change (median 0.58%) with varying directionality, while AML patients showed large degree of change (median 81.0%) with little directionality. AML patients with >80% change had high blast counts and complete response to treatment, with MEM labels showing contracting cells were AML blasts and emerging cells were non-malignant immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C80-C84 demonstrate T-REX performance across different disease contexts. The quantitative metrics for melanoma (C34) and AML (C35) are clearly stated, and the correlation with clinical outcomes (C36, C82) provides biological validation. The MEM analysis identifying blast contraction and immune cell emergence (C83) is particularly compelling. The MB-009 case (C80-C81) shows T-REX can detect changes not solely driven by blast emergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "T-REX using UMAP outperformed alternative approaches in speed and accuracy. T-REX with UMAP ran in 0.35 hr and identified 22% tetramer+ clusters, while t-SNE took 23 hr with comparable accuracy. KNN on original features was slower (1.7 hr) and less accurate. SPADE, Phenograph, FlowSOM, and Citrus either failed to identify regions of \u226595% change or identified fewer tetramer+ hotspots. Methods that identified >85% change clusters had comparable phenotypes (RMSD 97.1-98.7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide comprehensive benchmarking of T-REX against established methods. The performance comparisons are quantitative (runtime, tetramer enrichment) and use appropriate metrics. The finding that most existing algorithms failed to identify rare virus-specific cells (C40-C43) is consistent with prior literature (C85-C86). The phenotype similarity across successful methods (C44) validates that different approaches converge on the same biological populations when they work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C60"
+    ],
+    "result": "T-REX demonstrated stability across subsampling, consistently identifying tetramer+ hotspots across 10 subsamples each containing 10% of cells from RV001, with detection maintained even at 100,000 cells per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C60 demonstrate algorithmic robustness through systematic subsampling analysis. The consistency across 10 independent subsamples (C45) and maintenance of performance with reduced cell numbers (C60) are important validations. This addresses concerns about algorithm stability and minimum cell number requirements, though the manuscript notes that <1000 cells may be problematic (C59).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "The rhinovirus challenge study enrolled healthy adult volunteers (ages 18-40) who were seronegative to RV-A16 (titer \u22641:2), inoculated them with 100 TCID50 of RV-A16 on day 0, and determined that 6 of 8 subjects became infected. The study was approved by the University of Virginia Human Investigations Committee and registered as NCT02796001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C50 describe the experimental design and regulatory compliance for Dataset 1. These are straightforward methodological details that are clearly stated and include appropriate ethical oversight information. The infection rate (6/8 subjects) is important context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Dataset 2 consisted of mass cytometry data from 12 COVID-19 patients with at least two blood samples over time, derived from a larger study of 39 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 describes the composition of Dataset 2 with appropriate citation. This is a straightforward description of the dataset used for analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "After rhinovirus challenge, expanded regions identified by T-REX displayed molecular signatures consistent with activated memory (CD45RO+ CD38+) and tissue trafficking (CCR5 enrichment) that aligned with previous findings using manual gating methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 demonstrates consistency between T-REX results and prior knowledge. The phenotypes identified match expectations from previous studies (cited), which validates the biological relevance of T-REX findings. This represents an important confirmation that the algorithm identifies known cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "CD147 has been proposed as a binding partner for SARS-CoV-2 spike protein and potential mechanism of cellular entry, though this hypothesis is controversial and requires additional evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 appropriately presents a controversial hypothesis from the literature with appropriate caveats. The authors correctly note this is speculative and requires evidence. This claim is about prior work rather than the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "T-REX is designed for paired sample comparisons and requires hundreds of thousands to millions of cells for optimal performance. The algorithm is sensitive to batch effects, which must be addressed before analysis. User-adjustable parameters include k-value, markers for UMAP, markers for MEM, and DBSCAN settings. MEM labels enable quantitative comparison across batches and instruments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 and C61 describe design considerations and limitations of T-REX. These are appropriately stated caveats about algorithm performance and requirements. The batch effect sensitivity (C56) is an important limitation, and the cell number requirements (C58-C59) are supported by the subsampling analysis. The advantage of MEM labels for cross-batch comparison (C57) is based on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "T-REX combines UMAP, KNN, and MEM in a rapid, unsupervised workflow for paired samples from one individual, with a specific focus on regions of great difference between samples that contrasts with prior approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 describe the core algorithmic design of T-REX. The combination of methods is clearly described, and the focus on regions of great difference is a distinguishing feature validated by the comparative analysis with other algorithms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Analysis scripts and data are publicly available, with code on GitHub and Dataset 1 on FlowRepository (FR-FCM-Z2VX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 describe data and code availability, which is essential for reproducibility. The provision of transparent analysis scripts and public data repositories is a strength of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Single cell analysis tools struggle to reveal rare cells under 0.1% of the population, yet viral immune and cancer immunotherapy responses can include mechanistically important T cells that exist as <0.1% of blood CD3+ T cells. Existing cytometry tools like SPADE, FlowSOM, Phenograph, Citrus, and RAPID work best for cell subsets >1% of the sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 describe known limitations of existing tools based on prior literature and are supported by appropriate citations. These claims establish the motivation for developing T-REX and are validated by the comparative analysis in the manuscript (C40-C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Adults have stable blood cell abundances over weeks to months in the absence of perturbations such as disease or infection, forming the basis for T-REX's design hypothesis that short-term dramatic changes identify cells associated with immunogenic agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 describes the biological rationale for T-REX design and is supported by multiple citations to prior studies. This represents a sound biological foundation for the algorithm's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Spectral flow cytometry generates data comparable to mass cytometry but collects cells at ~10-fold higher rate. Mass cytometry allows 44 antibodies per cell, while established spectral flow panels measure ~30 features with excellent resolution, with capacity expected to double in coming years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 describe technical characteristics of the cytometry platforms used in the study. These are supported by appropriate citations and represent accurate descriptions of current technology capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Severe COVID-19 is linked to cytokine storm with crucial cellular immune responses, host factors determine T cell response degree in both rhinovirus and COVID-19, and rhinovirus infection induces expansion of circulating virus-specific CD4+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe established knowledge about viral infections and immune responses, supported by appropriate citations. These provide biological context for the study but are not novel findings of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior algorithm benchmarking showed over half of tested algorithms had poor F1 scores for detecting populations at 0.8% or 0.03% frequency, with FlowSOM performing better. The phenotypic similarity within CD4+ T cells makes the 0.02% virus-specific cells less apparent, but T-REX's threshold removing cells without \u226595% change makes virus-specific cells appear as separate clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide context from prior work (C85-C86) and explain why T-REX succeeds where other methods fail (C87-C88). The explanation that thresholding removes the majority of cells and reveals rare populations is logical and supported by the comparative analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "EpiSC and aCSC were isolated from mouse hearts 5 days post-MI using a combined collagenase perfusion and bathing technique, yielding transcriptional profiles of 13,796 EpiSC, 24,470 aCSC, and 24,781 CSC after quality control. Day 5 was selected based on prior literature showing maximal epicardial layer dimension and re-expression of fetal epicardial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the experimental design and cell isolation methodology. The timing (C1, C2, C3) is justified by citations to prior work showing epicardial layer expansion and gene re-expression. The cell numbers (C4) are explicitly reported as quality-controlled data. The methodology is well-documented and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Single-cell RNA sequencing identified 11 transcriptionally distinct EpiSC populations with characteristic gene expression patterns: epithelial/epicardial genes in EpiSC-1 and -7, mesenchymal markers in EpiSC-3 and -4, ECM proteins in EpiSC-2, -3, -5, -6, and -8, contractile proteins in EpiSC-2, Wnt pathway genes in EpiSC-6 and -10, interferon response genes in EpiSC-11, and cell cycle/mitosis genes in EpiSC-9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 describe the identification and characterization of 11 EpiSC populations based on differential gene expression patterns. The data are presented with appropriate visualization (UMAP plots, dot plots, heat maps) and specific marker genes are listed for each population. The characterization is consistent with established biological knowledge about cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "RNA velocity analysis separated EpiSC populations into three hierarchical groups (Group I: EpiSC-7, -1; Group II: EpiSC-2, -4, -8, -11; Group III: EpiSC-6, -5, -3, -9, -10), with each group containing proliferating cell clusters expressing G2/M and S phase genes (EpiSC-1 subpopulation in Group I, EpiSC-2 subpopulation in Group II, and EpiSC-9 in Group III).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe trajectory inference and cell cycle analysis results. RNA velocity is an established computational method for inferring cell state transitions. The identification of proliferating clusters is supported by cell cycle scoring showing G2/M and S phase gene expression. The data are visualized in referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Group III EpiSC expressed fewer genes per cell compared to Groups I and II, which may indicate terminal differentiation based on the correlation between expressed genes per cell and developmental potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C20 describe differential gene expression levels and infer terminal differentiation. While C18 reports observed data (lower gene counts in Group III), claims C19-C20 rely on a single citation (Gulati et al., 2020) to infer terminal differentiation. This interpretation is speculative without direct functional validation or additional markers of differentiation state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "CellPhoneDB analysis predicted the highest numbers of cell-cell interactions between Groups I and II, with ligand-receptor pairs including IGF1, TGF-\u03b22, and Wnt4 signaling potentially mediating these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe computational prediction of cell-cell interactions using CellPhoneDB, an established tool for ligand-receptor analysis. The results are visualized in Figure 1I and supplementary figures. However, these are predictions based on gene expression and require experimental validation to confirm functional interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Epicardial marker genes showed distinct spatial patterns: Wt1 was highly enriched in Group I populations (EpiSC-1, -7, -8), Sema3d, Aldh1a2, and Gata5 were predominantly in Group I with highest levels in EpiSC-7, Tbx18 was broadly distributed across Groups I and II, while Tcf21 was strongly expressed in Group III with no overlap with Wt1-expressing populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe the spatial distribution of established epicardial marker genes across identified populations. The expression patterns are supported by feature plots and violin plots (Figure 2A). The findings challenge the assumption that Wt1 marks all epicardial cells, revealing heterogeneity in marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "RNA in situ hybridization revealed spatial organization within the post-MI epicardium: Msln (EpiSC-7) and Wt1 (EpiSC-7, -1, -8) were localized to outer epicardial layers, Cd44 (EpiSC-4) was in the outer part, Ifit3 (EpiSC-11) was in deeper epicardial layers and myocardium, while Group III markers (Sfrp2, Dkk3, Pcsk6) were homogeneously dispersed throughout the epicardium and infarct border zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe spatial localization of population markers using RNA in situ hybridization. The data are presented in Figure 2B with representative images. The spatial patterns are consistent with the proposed hierarchical organization of epicardial populations and support the concept of epicardial compartmentalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Lineage tracing using Wt1CreERT2RosatdTomato mice showed complete overlap between tdTomato and Wt1 expression at day 5 post-MI, suggesting that WT1+ cells did not contribute to Wt1-negative EpiSC populations during early epicardial activation and expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe lineage tracing results showing no contribution of WT1+ cells to Wt1-negative populations by day 5 post-MI. The data are presented in Figure 2E with scRNAseq analysis of tdTomato+ cells. This is a critical finding that challenges assumptions about epicardial cell lineage relationships, though it is limited to the 5-day timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Wt1-expressing EpiSC-8 highly expressed thymosin \u03b24 (Tmsb4x) and BRG1 (Smarca4), along with key cardiogenic factors including MESP1 (marking early cardiovascular progenitor specification), GATA4 (which with MEF2C and TBX5 facilitates cardiomyogenesis), and HOX family members (e.g., Hoxa5) that are downstream effectors of retinoic acid signaling required for cardiac progenitor differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe expression of cardiogenic factors in Wt1-expressing populations. The gene expression data are presented in Figure 3A-B. The functional roles of these factors are supported by appropriate citations. However, gene expression alone does not demonstrate cardiogenic function\u2014this would require differentiation assays or fate mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A second set of cardiogenic factors (MEF2C, Nkx-2.5, BMP2, BMP4) was found in Group III populations (EpiSC-3, -5, -6, -9, -10), along with low expression of muscle structural proteins (Myl2, -4, -6, Tnnt2, Ttn, Nebl) in EpiSC-7 and -9. Notch target genes were highest in Wt1-negative populations, especially EpiSC-10. The expression of cardiac specification markers and sarcomeric proteins in EpiSC-7 and -9 suggests cardiomyogenic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C46 describe a second set of cardiogenic factors and infer cardiomyogenic potential. While the gene expression data are presented (Figure 3A), the inference of cardiomyogenic potential (C46) is based solely on marker expression without functional validation. The low expression of contractile proteins and the unexpected Notch expression pattern add complexity that is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Groups I and II EpiSC populations showed enriched expression of Hif1a and HIF-1-responsive glycolytic genes (including Ldha and Slc16a3), with GO enrichment for glycolytic process, glucose metabolic process, and pyruvate biosynthetic process. This differential expression pattern suggests that EpiSC populations reside in microenvironments with different oxygen levels within the post-MI epicardium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe HIF-1 signaling and glycolytic gene expression patterns. The data are supported by heat maps, violin plots (Figure 3C-D), and GO enrichment analysis with reported FDR q-values. The inference of differential oxygen levels (C51) is reasonable based on the transient, oxygen-dependent nature of HIF-1 response, though direct oxygen measurements were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "EpiSC populations expressed various paracrine factors: Group II showed enriched chemokine expression (MCP1/Ccl2, MCP3/Ccl7 in EpiSC-11; IP-10/Cxcl10 with anti-fibrotic effects in EpiSC-11; neutrophil recruitment chemokines in EpiSC-2, -4, -1, -7; SDF-1/Cxcl12 in EpiSC-2). Proangiogenic factors (Angpt1, FGF2, IL-6, VEGFA, VEGFC) were not limited to Wt1-expressing populations. The most highly expressed factors were TGF-\u03b21 (attenuates ischemia-reperfusion injury), IGF-1 (prevents ventricular remodeling), and MYDGF (mediates tissue repair).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 describe paracrine factor expression across EpiSC populations. The gene expression data are presented in Figure 3E-F with appropriate citations for functional roles. This is a key finding showing that paracrine factor secretion is not exclusive to WT1+ cells. However, gene expression does not confirm protein secretion or functional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Clustering analysis identified 11 transcriptionally distinct aCSC populations that are consistent with previously identified cardiac fibroblast populations in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 describe aCSC population identification and comparison to published literature. The manuscript provides detailed characterization of aCSC populations in supplementary figures and compares them to populations identified by Farbehi et al., 2019 and Forte et al., 2020. The consistency with prior work validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CCA space alignment revealed that CCA clusters A, D, and F were mainly composed of EpiSC (EpiSC-1, -4, -7, -8), while clusters B, C, H, I, J, and O were dominated by aCSC. Wt1-negative EpiSC-2, -6, and -9 carried expression signatures of genuine aCSC populations (aCSC-1, -2, -3, -4, -5, -10) to variable degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe CCA analysis comparing EpiSC and aCSC transcriptional profiles. The data are presented in Figure 4A-B. The finding that some Wt1-negative EpiSC populations share transcriptional signatures with aCSC is important for understanding epicardial-fibroblast relationships, though the manuscript notes significant differences remain within clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparative analysis showed that epithelial/epicardial genes were generally higher in EpiSC while mesenchymal/fibroblast genes were more dominant in aCSC. Cardiogenic factors set I was preferentially expressed in EpiSC while set II was preferentially in aCSC. Cardiac contractile proteins, HIF-1-responsive glycolytic enzymes, and multiple chemokines were predominantly expressed in EpiSC compared to aCSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe systematic comparison of gene expression between EpiSC and aCSC. The data are presented in Figure 4C-H as log2 fold changes. This comparative analysis establishes distinct molecular identities for epicardial versus myocardial stromal cells while also revealing shared features consistent with their developmental relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "SCENIC gene regulatory network analysis showed that EpiSC and aCSC exhibited distinct patterns of transcription factor activity, emphasizing their different cellular identities and functions. Both post-MI fractions showed major differences in network activity compared to CSC from uninjured hearts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 describe SCENIC analysis results presented in Figure 4I-K. Gene regulatory network analysis provides complementary evidence for distinct cellular identities beyond simple gene expression comparisons. The comparison to uninjured CSC establishes the activation state of post-MI populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Clustering analysis of CSC from uninjured hearts identified 12 populations, including CSC-12 which highly expressed epithelial/epicardial genes (Msln, Upk3b, Nkain4, Krt19) and was the only Wt1-expressing population, likely representing the epicardial monolayer of the uninjured heart. The majority of CSC correlated with EpiSC Group III populations (EpiSC-3, -5, -6) in CCA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe CSC characterization from uninjured hearts. The identification of CSC-12 as likely representing the quiescent epicardial monolayer is supported by marker gene expression and Wt1 expression. The correlation with Group III EpiSC suggests these represent similar cell states. The manuscript acknowledges technical limitations in isolating the monolayer separately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Comparison of EpiSC to CSC showed generally higher expression of HIF-1-responsive genes and proliferation-associated genes in EpiSC, consistent with increased epicardial hypoxia and proliferation in the infarcted heart. Direct comparison of epithelial populations EpiSC-7 and CSC-12 confirmed upregulation of HIF-1-responsive/glycolysis genes (Eno1, Gale, Ldha, Slc16a3) and proliferation genes (Calm, Cenpe, Ran, Ranbp1, Spc25, Ube2c) in post-MI EpiSC-7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe comparative analysis between post-MI EpiSC and control CSC. The data are presented in supplementary Figure 4-7 with log2 fold changes and volcano plots. The upregulation of HIF-1 and proliferation genes in post-MI epicardium is consistent with the expected response to ischemic injury and epicardial activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C96",
+      "C98",
+      "C106",
+      "C116"
+    ],
+    "result": "Quantitative analysis revealed that Wt1-expressing Group I cells (EpiSC-1, -7, -8) accounted for only 26% of the EpiSC fraction, meaning about two-thirds of epicardial cells were Wt1-negative. Group II represented 40% and Group III represented 34% of all EpiSC, with Groups II and III constituting the majority of post-MI epicardial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C96, C98, C106, C116 provide quantitative distribution of EpiSC groups. The proportions are calculated from cell counts presented in the data. This is a critical finding that challenges the field's reliance on Wt1 as a universal epicardial marker and shows that the majority of activated epicardial cells are Wt1-negative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Paracrine factor secretion appears to be a general feature of both epicardial and myocardial stromal cells that can contribute to cardioprotection. Chemokine expression involved in monocyte and neutrophil attraction was a general feature of EpiSC compared to aCSC, pointing to a role of epicardial cells in modulating the innate immune response post-MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97, C99, C100 synthesize findings about paracrine factor expression across cell types. The inference that both EpiSC and aCSC contribute to cardioprotection is supported by the widespread expression of paracrine factors (Figure 4H). The role in immune modulation is inferred from chemokine expression patterns and supported by citation to prior work on adaptive immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Groups I and II were generally prevalent in EpiSC compared to aCSC and shared high expression of HIF-1-responsive glycolytic enzymes. The pronounced expression of cardiogenic factors and contractile proteins in Group I, along with parallel expression of WT1 and thymosin \u03b24, suggests cardiogenic potential. This supports the epicardium being a hypoxic niche and is consistent with epicardial HIF-1 signaling being an important trigger for cardioprotection in the ischemic heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 synthesize multiple findings to infer functional properties. While the gene expression data supporting Groups I/II prevalence and HIF-1 expression are solid (C101, C103), the inferences about cardiogenic potential (C102) and the role of HIF-1 signaling in cardioprotection (C105) are speculative. The concept of an epicardial hypoxic niche (C104) is supported by one citation showing dispersed HIF-1\u03b1+ cells but lacks direct oxygen measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Group III EpiSC were localized throughout the activated epicardium and in the myocardium, with transcriptional profiles similar to major aCSC and CSC populations, exhibiting a fibroblast-like phenotype. Group III showed the lowest numbers of predicted cell-cell interactions and expressed fewer genes, suggesting a less active cell state. Cardiogenic factors in Group III were prevalently expressed in aCSC, consistent with the postulated cardiogenic potential of cardiac fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 characterize Group III EpiSC populations. The spatial localization (C107) is supported by in situ hybridization (Figure 2B), transcriptional similarity to fibroblasts (C108) by CCA analysis (Figure 4A-B), and the fibroblast-like phenotype (C109) is a reasonable inference. The lower interaction numbers (C110) and gene counts (C111) are data-driven, though the inference of 'less active' state (C111) is interpretive. The connection to fibroblast cardiogenic potential (C112) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "EpiSC and aCSC have different and genuine cellular identities supported by distinct expression of epicardial versus mesenchymal/fibroblast genes and individual patterns in transcription factor activity. However, direct comparison also revealed many transcriptional similarities, which is not surprising given their close developmental relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 synthesize findings about EpiSC-aCSC relationships. The distinct cellular identities are supported by CCA analysis (Figure 4C) and SCENIC analysis (Figure 4I-J). The acknowledgment of transcriptional similarities and their developmental basis (C114) is appropriately cited and provides important context for interpreting the differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Spatial and lineage analysis revealed compartmentalization of the epicardial layer: Wt1-expressing Group I cells were located in the outmost part, while Group III cells were in close proximity to the myocardium. Lineage tracing showed that until day 5 post-MI, WT1+ cells had not contributed to Wt1-negative populations. Group I cells appeared spatially restricted to surface layers, while major epicardial expansion seemed driven by Wt1-negative EpiSC of Groups II and III. Group III fibroblast-like cells may represent myocardial stromal cells that migrated into the epicardial layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C117-C122 describe spatial organization and lineage relationships. The spatial localization is supported by in situ hybridization (Figure 2B), and lineage tracing data (Figure 2E) directly demonstrate lack of WT1+ contribution to Wt1-negative populations by day 5. The inferences about spatial restriction (C120) and source of expansion (C121) are logical based on the data. The speculation about Group III origin (C122) is appropriately presented as conceivable rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The notion of compartmentalization of the epicardial multi-cell layer is supported by differential expression of hypoxia/HIF-1-responsive glycolytic genes among EpiSC populations, suggesting exposition to different local oxygen levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 synthesizes findings about epicardial compartmentalization. The differential HIF-1-responsive gene expression across spatially distinct populations provides indirect but reasonable evidence for oxygen gradients within the epicardial layer. This is consistent with the spatial organization data and the known oxygen-dependent regulation of HIF-1 signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "A deeper understanding of adult epicardial hierarchy may help decipher signaling mechanisms by which individual epicardial cell populations interact to specifically stimulate cardiac repair processes originating in the epicardium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is a forward-looking statement about the potential impact of the findings. This is appropriately speculative and represents a reasonable conclusion about the significance of characterizing epicardial heterogeneity for understanding cardiac repair mechanisms. It does not make unsupported claims about current findings.",
+    "result_type": "MINOR"
+  }
+]

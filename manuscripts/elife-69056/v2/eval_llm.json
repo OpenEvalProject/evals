@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Intrathecal CSF1 administration induces pain hypersensitivity and microglial activation in male but not female mice. Male mice show amoeboid microglial morphology, increased microglial numbers, and elevated CD11b/CD45 expression, while female microglia maintain homeostatic ramified morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C25 are well-supported by converging behavioral (von Frey), morphological (Scholl analysis), and flow cytometry data (Figures 1A-H). Statistical tests are appropriate (repeated measures ANOVA, one-way ANOVA) with adequate sample sizes (n=3-10 per group) and significant p-values reported. The sex-specific effect is robust and reproducible across multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Female mice with sensory neuron-specific CSF1 deletion (AvilCre:Csf1fl/fl) develop normal mechanical hypersensitivity after peripheral nerve injury, unlike males where hypersensitivity is CSF1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by behavioral data (Figure 1\u2014figure supplement 1A,B) with appropriate controls and statistical testing (unpaired t-test). The contrast with male phenotype (C17) is well-established by cited literature. However, the conclusion (C18) is limited to the injury model tested and may not generalize to all pain mechanisms in females.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38"
+    ],
+    "result": "RNA-sequencing reveals that CSF1 induces an 8.3-fold greater transcriptomic response in male versus female microglia (1350 vs 165 DEGs), with males showing upregulation of disease-associated microglia (DAM) genes and inflammatory pathways despite equivalent CSF1R expression between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C38 are supported by comprehensive RNA-seq analysis with appropriate bioinformatics (DESeq2, adjusted p<0.01). The differential response is striking and well-documented (Figure 2A-D). CSF1R equivalence (C31) rules out receptor expression as explanation. Gene ontology analysis appropriately identifies functional pathways. One sample was excluded post-hoc, which is justified but should be noted as potential bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C60"
+    ],
+    "result": "Intrathecal CSF1 induces marked expansion of meningeal lymphocytes (6.5-fold in males, 9-fold in females) with preferential expansion of regulatory T-cells and NK cells in females compared to males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C46, C60 are supported by comprehensive flow cytometry analysis (Figure 3B-C, Figure 3\u2014figure supplement 1B-C). The female-specific Treg expansion is statistically significant (p=0.0229) with adequate sample sizes (n=4-5). The finding that lymphocytes expand in meninges but not parenchyma (C60) is important for mechanistic interpretation and supported by immunohistochemistry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Treg depletion in female mice restores CSF1-induced microglial activation and pain hypersensitivity to male-equivalent levels. This effect is specific to females, phenocopied by Rag1-/- and CD4+ T-cell depletion, and demonstrates that Tregs actively suppress the inflammatory response rather than T-cells directly mediating pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C47-C53 are strongly supported by converging evidence from genetic (FoxP3DTR), immunological (Rag1-/-), and antibody depletion approaches (Figure 3D-K). The 33% increase in hypersensitivity (C49, p=0.01) and restoration of male-specific gene expression (C48) provide mechanistic support. Male-specific lack of effect (C51) strengthens the sex-specific interpretation. Statistical tests are appropriate with adequate replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Sexual dimorphism in microglial contribution to pain results from Treg-mediated suppression of microglial activation in females. Female microglia are competent to induce pain when Treg suppression is removed, demonstrating that CSF1-mediated cross-talk between microglia and lymphocytes can either amplify or suppress pain phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56-C58 represent the main conclusions and are well-supported by the totality of evidence from behavioral, transcriptomic, and immunological experiments. The competence of female microglia (C57) is demonstrated by Treg depletion experiments. The bidirectional modulation concept (C58) is supported by male vs. female phenotypes. However, the precise molecular mechanisms remain incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "The spinal cord meninges contain diverse immune cells that expand after CSF1 treatment. Lymphocytes are rarely detected in spinal cord parenchyma even after injury, but meningeal lymphocytes likely impact microglial function and nociceptors via secreted cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 is supported by flow cytometry and citation. C59 is supported by immunohistochemistry (Figure 3\u2014figure supplement 2) but contradicts prior literature (Costigan et al., 2009) without detailed reconciliation. Claims C61-C62 about cytokine-mediated mechanisms are reasonable inferences but remain speculative without direct evidence of cytokine measurements or blocking experiments. The spatial separation between meninges and parenchyma raises questions about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C54",
+      "C55"
+    ],
+    "result": "CSF1-stimulated myeloid cells recruit other immune cells that release cytokines to impact microglial function, with the balance tipping toward pro-inflammatory signaling in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39, C54-C55 are reasonable mechanistic models based on the observed immune cell expansion and sex-specific outcomes. However, these remain inferences without direct evidence of cytokine measurements, blocking experiments, or demonstration of causal relationships between recruited cells and microglial activation. The model is plausible but requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Female mice show preferential expansion of NK cells in response to CSF1. While NK cells are classically pro-inflammatory, recent studies suggest diverse functions including anti-inflammatory effects and negative correlation with pain in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by flow cytometry data. Claims C64-C67 accurately cite relevant literature on NK cell functions. However, the functional role of expanded NK cells in this model is not experimentally tested. The discussion appropriately acknowledges this limitation and presents NK cells as an area for future investigation rather than a definitive finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "CSF1 receptor (CSF1R) expression levels do not differ between male and female microglia at protein or transcriptomic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by both flow cytometry (Figure 2\u2014figure supplement 1A) and RNA-seq data (Figure 2\u2014figure supplement 1B). This is an important control that rules out differential receptor expression as the mechanism for sex-specific responses. Statistical analysis (two-way ANOVA, p=0.3858 for sex effect) with n=4 per group is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Modulating meningeal immunity represents a potential therapeutic avenue for neuropathic pain management, supported by human genetic studies indicating Treg and cytokine contributions to pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 is speculative, extrapolating from the finding that intrathecal CSF1 activates meningeal immunity to potential therapeutic applications. While the logic is reasonable, no therapeutic interventions are tested. Claim C70 appropriately cites human genetic studies, but the translational relevance remains uncertain. These represent reasonable future directions rather than supported conclusions from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C35",
+      "C36",
+      "C68",
+      "C71",
+      "C72"
+    ],
+    "result": "Background context establishing that neuropathic pain involves microglial activation, microglia show sexual dimorphism across multiple conditions, and CSF1 signaling from injured neurons to microglia contributes to pain in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15, C17, C35-C36, C68, C71-C72 represent established knowledge appropriately cited from literature. These provide necessary context for the current work. The citations appear accurate and relevant. C1 and C10 are general knowledge claims that are well-established in the field.",
+    "result_type": "MINOR"
+  }
+]

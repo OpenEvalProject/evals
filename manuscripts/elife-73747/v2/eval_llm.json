@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C85",
+      "C86"
+    ],
+    "result": "PIP5K and PIP4K exhibit distinct oligomerization states when binding to PI(4,5)P2-containing membranes. Single-molecule photobleaching and molecular brightness analysis demonstrate that PIP4KB binds as a constitutive dimer (two-step photobleaching, bimodal brightness distribution), while PIP5KB predominantly binds as a monomer at low protein densities (single-step photobleaching, unimodal brightness distribution). This is supported by SEC elution profiles and diffusion coefficient measurements showing PIP4KB moves more slowly (0.04 \u00b5m\u00b2/s) than PIP5K homologs (0.15-0.18 \u00b5m\u00b2/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple complementary experimental approaches including SEC (C21-C23), single-molecule photobleaching (C24-C29), molecular brightness distributions (C27-C29), and diffusion measurements (C30). The data consistently show that PIP4KB is a constitutive dimer while PIP5KB exists predominantly as a monomer at low densities, with quantitative measurements provided in Figures 1 and supporting tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C87"
+    ],
+    "result": "PIP5K undergoes membrane-mediated dimerization in a protein density-dependent manner. At low densities (1-5 pM), Ax647-PIP5KB exhibits a single exponential dwell time (~0.45 s). However, increasing the concentration of unlabeled PIP5KB (>1 nM) results in a second population of long-dwelling molecules requiring a two-species model fit, accompanied by decreased diffusion coefficients, indicating density-dependent dimerization on membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide strong quantitative evidence from single-molecule tracking experiments showing concentration-dependent changes in both dwell times and diffusion coefficients (Figure 2B-C, Table 1). The transition from single to two-species models at higher protein densities directly supports the membrane-mediated dimerization hypothesis (C87). The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PIP5KB exhibits cooperative membrane binding dependent on both PI(4,5)P2 density and protein concentration. The density of membrane-bound Ax647-PIP5KB increases dramatically with PI(4,5)P2 concentration, and higher solution concentrations promote cooperative binding. Fitting with a concerted cooperativity model yields dissociation constants of 212 nM (2% PI(4,5)P2) and 52 nM (4% PI(4,5)P2) with Hill coefficients indicating positive cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cooperative binding behavior is well-documented in Figure 2F with quantitative measurements across multiple PI(4,5)P2 concentrations. The Hill equation fitting provides specific Kd values and cooperativity coefficients. However, the manuscript does not provide error estimates for these fitted parameters or discuss the quality of the fits, which would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The D51R mutation disrupts PIP5KB dimerization without affecting cooperative PI(4,5)P2 binding at low protein densities. At low density (~0.01 molecule/\u00b5m\u00b2), PIP5KB(D51R) binds cooperatively to PI(4,5)P2 indistinguishably from wild-type. However, at high density (~100 molecules/\u00b5m\u00b2), wild-type PIP5KB shows increased dwell time and decreased diffusion coefficient in the presence of 50 nM unlabeled protein, while the D51R mutant does not, confirming that dimerization is separable from cooperative lipid binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The separation-of-function analysis using the D51R mutant is well-executed with appropriate controls at both low and high densities (Figure 3C-F, Table 2). The data clearly demonstrate that cooperative PI(4,5)P2 binding (C38-C39) is independent of dimerization, while the density-dependent changes in dwell time and diffusion (C40-C41) require an intact dimer interface. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Direct visualization of PIP5KB dimerization on membranes reveals that monomers can associate and form transient dimers. At high membrane densities (0.2 kinases/\u00b5m\u00b2), wild-type mNG-PIP5KB shows a fivefold higher frequency of dimers (4.8%) compared to the D51R mutant (0.9%), with stepwise photobleaching confirming dimer formation. Time-lapse imaging captures monomers diffusing, merging to form dimers that persist for 1-2 seconds before dissociating or photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct visualization experiments (Figure 4) provide compelling evidence for membrane-mediated dimerization with multiple lines of support: SEC profiles showing distinct oligomerization states (C98), molecular brightness distributions at different densities (C99-C102), stepwise photobleaching (C103), and real-time observation of dimerization dynamics (C104). The low frequency of apparent dimers for D51R (C106) is appropriately interpreted as transient encounters rather than stable dimers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Dimerization enhances PIP5KB catalytic activity but is not essential for PI(4,5)P2 generation. The D51R mutant shows reduced but not abolished activity compared to wild-type, and the compensatory D51R/R254D double mutant restores activity to wild-type levels. Quantitative analysis reveals that D51R has a constant rate of 2.3\u00d710\u207b\u2074 lipids/\u00b5m\u00b2\u00b7s per enzyme, while wild-type transitions from slow to fast kinetics (2.7\u00d710\u207b\u00b3 lipids/\u00b5m\u00b2\u00b7s), representing a ~12-fold enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic measurements (Figure 5A-D, G) clearly demonstrate that dimerization enhances but is not required for catalysis. The rescue experiment with D51R/R254D (C43) is a critical control showing the D51R phenotype is due to disrupted dimerization rather than misfolding. The per-molecule rate calculations (C45-C46) account for differences in membrane recruitment (C44), providing strong evidence that dimerization directly enhances catalytic efficiency independent of membrane avidity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C67"
+    ],
+    "result": "Dimerization is responsible for higher-order positive feedback in PIP5KB. Feedback analysis reveals that wild-type PIP5KB requires a second-order term (k\u2080+k\u2081x+k\u2082x\u00b2) to fit the reaction kinetics, while the D51R dimer mutant displays only linear positive feedback (k\u2080+k\u2081x), demonstrating that dimerization generates the nonlinear component of the feedback mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The feedback analysis (Figure 5H) provides clear mathematical evidence that dimerization creates higher-order feedback. The requirement for a quadratic term for wild-type but only a linear term for D51R directly supports the conclusion. However, the manuscript could better explain the mechanistic basis for how dimerization generates the x\u00b2 term and provide statistical justification for the model selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PIP5KB dimerization is required for stable bistable PIP compositional pattern formation in kinase-phosphatase competition. At 50 nM, wild-type PIP5KB and the D51R/R254D rescue mutant form stable patterns, while D51R shows strongly impaired activity. Even at 20-fold higher concentration (1 \u00b5M), D51R-generated patterns are only transiently stable and are consumed within minutes. Membrane density measurements show D51R reaches higher peak density than wild-type but cannot maintain patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pattern formation experiments (Figure 6B-D) convincingly demonstrate that dimerization is critical for pattern stability. The rescue with D51R/R254D (C50) confirms specificity, and the transient nature of D51R patterns even at high concentration (C51) shows that increased membrane recruitment alone cannot compensate for loss of dimerization. The membrane density measurements (C52-C53) provide mechanistic insight into why D51R fails despite high recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Dimerization enhances reaction trajectory variation and expands the range of bistability in geometrically confined reactions. Under 5 \u00b5m \u00d7 5 \u00b5m confinement, wild-type PIP5KB shows high kinetic heterogeneity while D51R shows little heterogeneity. Wild-type exhibits robust bistability across a substantially wider range of competing phosphatase concentrations than D51R, demonstrating that dimerization ensures bistable responses over a broad range of opposing phosphatase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The geometric confinement experiments (Figure 7A-E) provide strong evidence for dimerization-enhanced stochasticity and bistability. The direct comparison of trajectory heterogeneity (C54-C55) and the titration of phosphatase concentration (C56) clearly show that dimerization expands the parameter space for bistability. The conclusion (C57) is well-supported by the data, though the manuscript could better quantify the heterogeneity and bistability ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C89"
+    ],
+    "result": "Dimerization enhances PIP5KB catalytic efficiency through a mechanism consistent with allosteric regulation, independent of membrane avidity. The combined effects of cooperative PI(4,5)P2 binding and membrane-mediated dimerization synergistically increase PI(4,5)P2 production through both enhanced localization and increased catalytic efficiency (kcat).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that dimerization acts through allosteric regulation (C5, C59) is supported by the demonstration that catalytic enhancement occurs independent of membrane recruitment differences (Figure 5F-G). The per-molecule rate calculations account for membrane density differences, showing a direct effect on kcat. The synergistic mechanism (C58) is supported by the combined data on cooperative binding and dimerization-enhanced catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C66",
+      "C91",
+      "C92"
+    ],
+    "result": "Dimerization amplifies stochastic variation in PIP5KB reaction velocity and strengthens stochastic geometry sensing. The combination of cooperative PI(4,5)P2 binding, membrane-mediated dimerization, and low molecular copy number provides multiple mechanisms for enhancing stochasticity, with dimerization being responsible for the higher-order positive feedback that contributes to robust stochastic geometry sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about enhanced stochasticity are supported by the trajectory variation data (Figure 7A-B) and the expanded bistability range (Figure 7D-E). The connection to stochastic geometry sensing builds on previous work (C65) and is supported by the current findings. However, the manuscript could provide more quantitative analysis of the stochastic effects and their relationship to system size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The mechanism by which dimerization enhances processivity may involve both kinase domains engaging the membrane and toggling between catalysis and membrane binding states. The authors propose that both subunits can engage the membrane based on enhanced dwell time and slower diffusion at high protein density, contrasting with previous models suggesting only one domain engages substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the enhanced dwell time and decreased diffusion at high density (C63) support membrane engagement of dimers, the specific mechanism of how both subunits engage the membrane and toggle between states (C61-C62) remains speculative. The data do not directly visualize or measure the proposed toggling mechanism. The contrast with Amos et al.'s model (C60) is noted but not experimentally resolved. Additional structural or single-molecule studies would be needed to definitively establish this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript distinguishes between intrinsic (non-stochastic) bistability arising from nonlinear feedback and stochastic bistability in systems lacking two stable steady states. Wild-type PIP5KB with higher-order feedback exhibits intrinsic bistability, while the D51R mutant with only linear feedback shows transient stochastic bistability. Dimerization is hypothesized to expand bistability beyond intrinsic boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework distinguishing intrinsic and stochastic bistability (C93-C95) is well-grounded in cited literature and consistent with the experimental observations. The interpretation that wild-type shows intrinsic bistability while D51R shows stochastic bistability (C94-C95) aligns with the feedback analysis (Figure 5H) and pattern stability data (Figure 6B). The hypothesis about expanded bistability range (C96) is reasonable but could benefit from more quantitative modeling to test predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on PIP5K function and PI(4,5)P2 biology: PIP5K generates the majority of PI(4,5)P2 at the plasma membrane (~2% of total membrane composition), which regulates receptor activation, ion channels, endocytosis, and actin nucleation. Two kinase classes produce PI(4,5)P2: PIP5K (phosphorylates PI(4)P) and PIP4K (phosphorylates PI(5)P), with PIP5K being the major contributor due to higher PI(4)P abundance. Yeast express one PIP5K (Mss4) while humans have three paralogs (A, B, C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C14) are well-established facts supported by appropriate citations to the literature. They provide necessary context for the study but do not represent novel findings. The claims accurately represent current knowledge about PIP5K function, substrate specificity, and evolutionary conservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work on PIP5K regulation: Multiple mechanisms regulate PIP5K membrane docking including substrate recognition, electrostatic interactions, and amphipathic helix binding. Previous single-molecule studies revealed cooperative PI(4,5)P2 binding and positive feedback. While PIP5K can homodimerize in solution and zebrafish PIP5KA dimerization was shown to be required for activity, it remained unclear whether dimerization regulates membrane docking, ATP binding, or catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work with appropriate citations (C15-C18, C20) and identify the knowledge gap (C19) that motivates the current study. The summary is accurate and provides proper context for the novel findings. These are not new results but rather literature review establishing the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Discussion of PIP5K cellular context and regulation: The cellular concentration of PIP5K is estimated at 10-20 nM, suggesting predominantly monomeric cytoplasmic localization, though receptor activation could shift localization to favor dimerization. Multiple factors complicate interpretation including interactions with other lipids, potential heterodimer formation, and the role of basic residues. PIP5K localizes to synaptic vesicles and focal adhesions, though the molecular requirements are unclear. Various enzymes including phosphatases, PI3K, and phospholipases regulate PI(4,5)P2 levels and could modulate PIP5K activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points (C69-C84) appropriately contextualize the in vitro findings within cellular biology, citing relevant literature. The speculative elements (C71) are appropriately qualified. The discussion identifies important unknowns (C77) and complicating factors (C72-C73, C80) that affect interpretation. However, these are primarily literature synthesis and speculation rather than experimental results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C68"
+    ],
+    "result": "The mechanism of PIP5K membrane binding creates a broad dynamic range of lipid kinase activities coupled to PI(4,5)P2 and kinase density, with potential to strongly influence plasma membrane signaling in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C7, C68) is well-supported by the collective experimental findings showing density-dependent dimerization, enhanced catalysis, and expanded bistability. The broad dynamic range is demonstrated by the ~12-fold difference in catalytic rates between monomeric and dimeric states, and the wide range of conditions supporting bistability. The speculation about cellular implications (C68) is reasonable but appropriately qualified as potential rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Previous work showed that stochastic PIP5K binding/unbinding fluctuations can drive the system to a PI(4,5)P2 state even with high opposing phosphatase activity sufficient to drive the system to PI(4)P in bulk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately summarizes previous work by the authors (Hansen et al., 2019) and provides important context for understanding how the current findings on dimerization enhance this stochastic geometry sensing mechanism. This is background rather than a new result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study screened approximately 450 DNA repair protein-Cas9 fusions using a GFP reporter system in HEK293T cells, selecting 52 top-performing fusions for validation based on >4% GFP+ cells or >2-fold HDR improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C37-C41 describe the experimental design and screening methodology. The approach is clearly documented with appropriate selection criteria, reporter system design, and validation strategy. The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C96",
+      "C97"
+    ],
+    "result": "The majority of DNA repair protein fusions showed modest, locus- and cell-type-specific improvements in HDR editing, with several polymerases (POLD3, POLD2, POLR2H, POLE2) and replication factor C subunits (RFC4, RFC5) among better performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C33, C42, C44-C46, C48, C96-C97 are well-supported by screening data in Figures 1-2 showing variable performance across cell types and loci. The identification of polymerase and RFC subunits as top performers is documented with appropriate statistical analysis and multiple validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C99"
+    ],
+    "result": "Cas9-POLD3 fusion was identified as a novel HDR enhancer that accelerates the initiation of DNA repair by speeding up Cas9 DNA binding and dissociation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34-C36, C99 are supported by time-course experiments (Figure 3) showing earlier HDR peak (24hr vs 72hr), increased early \u03b3H2AX foci, and accelerated NHEJ kinetics. The mechanistic interpretation is consistent with the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cas9-POLD3 exhibits distinct editing kinetics compared to Cas9WT and other fusions, with earlier HDR peak (24hr), elevated early \u03b3H2AX foci, and increased early NHEJ, suggesting rapid DNA repair initiation in a locus-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56-C63 are supported by comprehensive time-course data (Figure 3b-i) showing differential kinetics. The \u03b3H2AX foci data (n=5 images) and ddPCR quantification across multiple loci provide strong evidence. However, the mechanistic interpretation (C58, C61) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors propose that POLD3 fusion improves editing by accelerating Cas9 removal from the cut site, similar to RNA polymerase-mediated removal, with best performance in slowly proliferating BJ-5ta cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52, C98, C100-C104 present a mechanistic hypothesis supported by citations and consistent with experimental observations. However, direct evidence for the proposed mechanism (accelerated Cas9 removal by POLD3) is lacking. The hypothesis is plausible but requires additional validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "AP-MS experiments identified 76 Cas9-POLD3 interactions (none previously reported), with notable absence of polymerase \u03b4 subunits due to use of short POLD3 isoform 3, and enrichment for helicases (MCM, RUVB1-2) and RNA-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C67-C69, C71-C76 are supported by AP-MS data (Figure 4) with biological duplicates. The absence of polymerase \u03b4 subunits is explained by the isoform used (C68, supported by citation). The interaction landscape differs from endogenous proteins, which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The identified helicase interactions (MCM, RUVB1-2) may aid editing by opening DNA for Cas9 binding and dislodging Cas9 post-cutting to facilitate DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79 present speculative mechanistic explanations for the observed helicase interactions. While C77 is supported by citations about helicase function, C78-C79 are hypothetical and lack direct experimental validation. The speculation is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Cas9-POLD3 does not significantly alter off-target cutting specificity, indel profiles, or trigger prolonged DNA damage response compared to Cas9WT, based on GUIDE-Seq, deep sequencing, and p21 expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C86-C87 are supported by GUIDE-Seq data (Figure 5a-b, n=1), deep sequencing (Figure 5c-h), and p21 expression (Figure 5-supplement 1, n=3). However, the authors acknowledge (C88) that larger experiments are needed for comprehensive assessment, limiting the strength of these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Indel profiles are sequence-dependent, with NHEJ (1bp deletion) dominating at RNF2 and MMEJ (23bp deletion) dominating at ELANE locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by deep sequencing data (Figure 5g-h) showing distinct indel patterns at different loci. This observation is well-documented and consistent with known sequence-dependent repair outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95"
+    ],
+    "result": "Cas9-POLD3 performance is comparable to published fusions (Cas9-HMGB1, Cas9-CtIP, Cas9-DN1S, Cas9-Geminin) in reporter cells, with locus- and cell-type-dependent effects, and less pronounced benefit in hESCs and PBMCs compared to RPE-1 and fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C94-C95 are supported by comparative data (Figure 6a-c, Figure 6-supplement 2). The experiments include multiple cell types, delivery modes, and loci. The reduced benefit in hESCs/PBMCs (C94-C95) is documented but the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Differences in transfection efficiency and fusion protein folding cannot be excluded as confounding factors in RNP experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 appropriately acknowledges potential confounding factors in the RNP experiments. This is a reasonable limitation given the complexity of protein production and delivery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C120",
+      "C121",
+      "C127",
+      "C128"
+    ],
+    "result": "DNA repair protein fusions to Cas9 require optimization for specific cell types and genomic sites, underscoring the importance of testing editing strategies in end-user applications due to the challenge of finding universally effective fusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C120-C121, C127-C128 represent the main conclusion drawn from the comprehensive screening and validation data. The locus- and cell-type-specificity is consistently demonstrated across multiple experiments, supporting this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The overall editing enhancement for Cas9 fusions was up to twofold (~20% total HDR) in the models used, with performance in fully optimized conditions remaining to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 accurately summarize the magnitude of editing improvement observed and appropriately acknowledge the limitation that fully optimized conditions have not been tested. This is a fair assessment of the study's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "A larger experiment is necessary for comprehensive mapping of Cas9-POLD3 specificity and repair outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 appropriately acknowledges the limitation of the off-target analysis (n=1 for GUIDE-Seq). This is a reasonable statement about future work needed to fully characterize the fusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C118",
+      "C119"
+    ],
+    "result": "The authors speculate that POLD3 fusion effects might be enhanced by using individual protein domains, combining with other editing-enhancing mechanisms, or optimizing the linker sequence between Cas9 and fusion protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109, C118-C119 are speculative statements about potential optimization strategies. While reasonable based on the data, these remain untested hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Rapid and efficient gene editing would be particularly useful for primary stem cells and medical applications using diseased patient cells sensitive to DNA damage signaling alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 present reasonable applications for the technology based on the demonstrated rapid editing kinetics. While speculative about specific applications, the logic is sound given the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study confirms that rapid CRISPR complex removal from cut sites and improved chromatin accessibility can locally promote HDR outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 represent conclusions supported by the experimental data. The rapid removal mechanism is supported by kinetics data (Figure 3), and chromatin accessibility effects are supported by HMGB1 performance (consistent with prior literature).",
+    "result_type": "MAJOR"
+  }
+]

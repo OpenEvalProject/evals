@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors developed Geomic, a novel computational approach based on shape deformation formalism, which is completely data-driven and uses permutation analysis to ensure reliability. The approach precisely identifies cell-type-specific and temporal features of molecular responses to mutant huntingtin in mouse brain, demonstrating high biological accuracy in modeling high-dimensional genomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C86-C89, C121-C122 collectively establish the development and validation of the Geomic method. The methodology is well-described with appropriate validation steps including permutation analysis (C88), stringency assessment (C89), and demonstration of biological precision through homogeneous GDS clusters (C106-C107). The approach successfully integrates multiple datasets and produces biologically meaningful results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C96",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "The authors demonstrate that neuronal death in HD is primarily driven by the loss of homeostatic/compensatory responses rather than increased pathogenic mechanisms. The majority of both pathogenic (73% in Drd1-MSNs, 83% in Drd2-MSNs, 64% in astrocytes) and compensatory responses (69% in Drd1-MSNs, 80% in Drd2-MSNs, 69% in astrocytes) are reduced over time, with strong reduction being more frequent in compensatory responses (34%) compared to pathogenic responses (25%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C36-C39, C96, C98-C99, C102 present a coherent and well-supported finding based on integration of RNA-seq data with functional screening data. The quantitative data showing temporal dynamics of molecular responses across cell types provides strong evidence for the main conclusion. The inference that loss of homeostatic responses drives neuronal death is logically derived from the observation that compensatory responses are more frequently and strongly reduced over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41"
+    ],
+    "result": "Different cell types lose similar homeostatic processes in HD, specifically endosome biogenesis and mitochondrial quality control in Drd1-expressing neurons and astrocytes, as evidenced by Rab7 and Clasp1 (both HTT protein interactors) being retained in the 'compensatory response/increased then reduced overtime' class for both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C41 identify a specific pattern of shared molecular responses across cell types. The identification of Rab7 and Clasp1 as HTT interactors that show similar temporal dynamics in both Drd1-MSNs and astrocytes provides strong evidence for convergent pathogenic mechanisms affecting endosome biogenesis and mitochondrial quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Geomic analysis successfully mapped 1,390 whole-striatum gene deregulation surfaces to at least one cell type, with 747 mapped to Drd1-MSNs, 167 to Drd2-MSNs, 156 to ChAT cholinergic interneurons, and 321 to astrocytes. The difference in assignments between MSN populations reflects greater CAG length-dependent transcriptional dysregulation in Drd1-MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 present quantitative results from the Geomic analysis with specific numbers of gene assignments to cell types. The data is internally consistent and the interpretation regarding differential dysregulation in Drd1-MSNs versus Drd2-MSNs is supported by citation to previous work (C25). The methodology for assignment is described in detail in the Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Integration of GDS cluster data with functional screening identified 103 genes underlying compensatory responses (56 in Drd1-MSNs, 10 in Drd2-MSNs, 11 in ChAT interneurons, 23 in astrocytes) and 136 genes underlying pathogenic responses (75 in Drd1-MSNs, 18 in Drd2-MSNs, 12 in ChAT interneurons, 31 in astrocytes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 present quantitative results from integrating multiple data types. The numbers are specific and the methodology for classification (combining GDS clusters with shRNA screening data) is clearly described. This represents a key step in distinguishing compensatory from pathogenic responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C106",
+      "C107"
+    ],
+    "result": "Surface deformation analysis identified 5-10 GDS clusters per cell type (mostly in Drd1-MSNs and astrocytes), containing 2-135 genes with a median of ~35 genes per cluster. These clusters implicate stress response pathways in all cell types, with DNA repair altered in all four cell types and cytosolic DNA sensing pathways altered in both MSNs and astroglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C31-C33, C106-C107 describe the clustering results and their biological interpretation. The clusters show biological homogeneity (C106) suggesting high precision of the method (C107). The pathway analysis implicating stress response and DNA repair is based on KEGG and GO analysis, providing biological validation of the computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Network convergence analysis of increased-pathogenic and reduced-compensatory responses identified signaling systems primarily affected by HD over time in Drd1-MSNs, including proteasome-mediated protein catabolism (p=5.93\u00d710\u207b\u2076\u00b2), cell cycle regulation (p=2.47\u00d710\u207b\u2075), senescence-associated secretory phenotypes (p=8.32\u00d710\u207b\u00b9\u2077), DNA repair (p=9.01\u00d710\u207b\u2075), TGF-\u03b2 signaling (p=0.0019), and Rab-dependent vesicle trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 present network analysis results with statistical significance values. The p-values are extremely small for several pathways, indicating strong statistical support. The convergence analysis approach (identifying first-degree neighbors common to both pathogenic and compensatory responses) is methodologically sound for identifying key affected systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C85"
+    ],
+    "result": "HD relevance of the findings is validated through overlaps with multiple datasets: 9 genes overlap with Drosophila HD modifiers (non-significant), 34 genes overlap with C. elegans touch response modifiers (p=5\u00d710\u207b\u2074 for group II), 6 genes overlap with human HD onset modifiers (including Golga4, Tcerg1, Farp2, Bag1), and significant overlaps with genes dysregulated in human prodromal HD brains (p<0.053 for group I, p<0.0039 for group II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49-C57, C59, C72-C75, C85 demonstrate validation across multiple model systems and human data. While some overlaps are not statistically significant (C50), others show strong significance (C54, C72). The pattern of ~45% of overlapping genes showing similar effects across phenotypes (C55) provides meaningful biological validation. The integration of GWAS data, model organism data, and human brain data strengthens the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Geomic analysis provided detailed information primarily for Drd1-MSNs and astrocytes, with limited information for Drd2-MSNs. Despite similar proportions of compensatory (42% vs 35%) and pathogenic (58% vs 65%) changes between Drd1-MSNs and Drd2-MSNs, the smaller number (10 vs 56) and weaker efficacy of compensatory responses in Drd2-MSNs suggests these cells are unable to activate proper compensatory responses, consistent with their known vulnerability in HD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 present a coherent interpretation of differential responses between MSN subtypes. The quantitative data (C112-C113) shows similar proportions but different absolute numbers (C115), and the differential temporal dynamics of TOR signaling/autophagy (C116-C117) provides mechanistic insight. The inference about Drd2-MSN vulnerability (C111, C115) is supported by citation to prior work on cell-type-specific vulnerability (C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TCERG1, previously identified as a huntingtin partner protein and potential HD onset modifier, shows up-regulation corresponding to a compensatory response that increases over time in Drd1-MSNs. TCERG1 expression rescues striatal cell death in HD models and acts in association with FOXO signaling, which protects against neuronal dysfunction in multiple HD models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 integrate prior work on TCERG1 (C60-C62, C64-C66) with new Geomic analysis results (C63). The convergence of evidence from multiple model systems (C. elegans, mouse cells, rat models) and the connection to FOXO signaling provides strong support. However, C67 is speculative about therapeutic potential and represents a future direction rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Golga4 is up- and then down-regulated in astrocytes, promoting a pathogenic response that transitions to a compensatory response as mice develop behavioral symptoms. Golgi stress responses and golgins are associated with HD pathogenesis and huntingtin-mediated retrograde transport to the endoplasmic reticulum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 identify Golga4 as a target with dynamic temporal response patterns. The Geomic analysis data (C68) is supported by prior work on Golgi stress in HD (C69) and golgin function (C70). However, C71 is speculative about therapeutic potential. The identification of response inversion (pathogenic to compensatory) is a novel finding from the Geomic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Shape deformation analysis can reduce data inconsistency across data points. The level of cell-type-specific gene deregulation can vary between Q170 and Q175 (particularly in glial cells), suggesting threshold effects, which the deformation distance addresses by reducing the weight of LFC changes between these data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe how the method handles data quality issues. The observation of threshold effects (C93) is data-driven, and the methodological solution (C94) is clearly described. This demonstrates the robustness and adaptability of the approach to real-world data challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C100"
+    ],
+    "result": "Geomic analysis detects temporal subtypes of pathogenic and compensatory responses that evolve in a mostly monotonic manner as mice become symptomatic. In rare instances, molecular responses can be lost over time with transitions from pathogenic to compensatory responses (and vice versa) detected in striatal astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97, C100 describe the capability of Geomic to detect different temporal patterns. The identification of response inversions (C97, C100) is noted as rare but represents a novel finding. The data supporting these patterns comes from the integration of temporal RNA-seq data with functional screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Geomic analysis captured cell-type-specific features for a large number of the 4,310 genes analyzed, whether or not significantly dysregulated in Q170-Q175 mice. However, in several instances, gene dysregulation was not assigned to the same cell type as in the original TRAP-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 acknowledge both the scope and limitations of the analysis. The discrepancies with original TRAP-seq assignments (C105) are honestly reported and explained in the Discussion as relating to the stringent threshold used in Geomic. This transparency strengthens confidence in the overall approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Literature review of strongly dysregulated genes (LFC>0.5) identified in molecular responses reveals prior evidence for HD relevance, including Penk, Htr1b, Chtf18, Kcnh4, Ppp1r1a in pathogenic responses and Ppp1ca, Foxo1, Ppp1r16b, Kcng1, Nfe2l3 in compensatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 provide literature-based validation for specific genes identified in the analysis. Each claim cites prior work connecting the gene to HD or related neurodegenerative processes. This provides biological plausibility for the computational findings, though the evidence strength varies across genes (e.g., C80 notes Ppp1r1a is not formally linked to HD phenotypes).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "In astrocytes, mutant HTT may up-regulate cytosolic DNA sensing pathways, suggesting that release of nucleic acids in astrocyte cytosol might be associated with HD pathogenesis. This is validated by recent findings on mitochondrial RNA release in MSNs and cellular senescence in human HD cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 make an inference from GDS cluster analysis (C108) that is supported by recent validation in related contexts (citations to Lee et al., 2020 and Voisin et al., 2020). The inference is reasonable but represents a hypothesis that would benefit from direct experimental validation in astrocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C123",
+      "C124"
+    ],
+    "result": "The data identify temporal dynamics of cell-type-specific compensatory and pathogenic responses for neuronal survival in HD knock-in mice, providing a blueprint for selecting therapeutic targets to re-instate neuronal resilience and biomarkers to monitor drug efficacy. The findings identify previously undetected molecular patterns and rules underlying decreased neural circuit capacity to cope with HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120, C123-C124 summarize the main contributions and potential applications of the work. C119 and C123 are well-supported by the data presented. C120 and C124 describe potential future applications rather than demonstrated results, but are reasonable extrapolations from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Loss of cellular homeostasis is implicated in neurodegenerative diseases, but the molecular mechanisms remain poorly understood on a systems level. Clinical studies show disease progression is associated with loss of compensatory processes, though the dynamics are poorly characterized. Multidimensional datasets are increasingly available for studying these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C10 establish the background and motivation for the study. These are supported by general knowledge (C1-C2, C9) and citations to clinical studies (C8) and recent genomic studies (C10). These claims appropriately frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Huntington's disease is caused by CAG repeat expansion in HTT and characterized by large gene expression changes in striatum and cortex. Drd2-expressing MSNs show enhanced vulnerability to HD. The allelic series of HD knock-in mice represents the largest RNA-seq reference dataset for studying molecular responses in HD models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 provide established background on HD and describe the datasets used. These are well-supported by citations to prior work and accurately describe the input data for the Geomic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "GDS clusters may be viewed as blocks of genes under the same transcriptional control in assigned cell types. The Geomic workflow can be adapted to detect cancellation effects where compensatory responses in one cell type are accompanied by pathogenic responses in another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe interpretations and potential extensions of the method. C90 is a reasonable interpretation of the clustering results. C91 describes adaptability of the method with examples provided, though this represents a potential extension rather than a fully developed feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The rules for molecular response dynamics (frequent reduction of responses over time, rare inversions) may reflect temporal dynamics of chromatin remodeling in response to HD in mouse striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is explicitly speculative (\"we speculate\") and acknowledges limitations of the tools used (\"tools such as Enrichr may lack precision for striatal cell types\"). While the speculation is reasonable and cites prior work on chromatin remodeling, it lacks direct evidence and represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The finding that neuronal death is primarily driven by loss of homeostatic responses corroborates, on a molecular systems level, the importance of autophagy in HD as previously supported by HTT's role as a scaffold protein in autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 connects the main finding to prior mechanistic work on autophagy in HD. The connection is logical and supported by multiple citations (Ochaba et al., 2014; Rui et al., 2015; Croce and Yamamoto, 2019). This provides mechanistic context for the systems-level findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "The Drd1-MSNs data may document consequences of loss of cortico-striatal terminals, which may mostly affect Drd1-MSNs in Q140 knock-in mice prior to overt motor symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is speculative (\"may document\") and cites prior work on cortico-striatal terminal loss. However, the current study does not directly measure synaptic connectivity or provide evidence specifically linking the observed gene expression changes to terminal loss. This represents a plausible interpretation but lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Using machine learning classification of adhesion trajectories, the authors identified nine distinct adhesion classes based on kinetic and kinematic behaviors. Five classes represent nascent adhesions (NAs) with different properties, three represent focal adhesions (FAs), and one represents noise. The maturing NA subgroup (G2) showed the highest traction magnitude shortly after assembly, while other NA groups exhibited different force transmission patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification approach is well-documented with validation accuracy of 70-80% (C85), and the distinct mechanical behaviors of different adhesion classes are supported by traction force microscopy data (C30-C34). The methodology includes appropriate controls and the results are consistent across different adhesion proteins (talin, vinculin, paxillin).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In non-maturing NAs, talin, vinculin, and paxillin are recruited sequentially (~18s, ~8s, and ~4s before force transmission, respectively), whereas in maturing NAs, all three proteins are recruited concurrently ~4s before force transmission. This concurrent recruitment pattern was confirmed by direct two-channel imaging of talin and vinculin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal recruitment patterns are measured using event-based time-series analysis (C35-C36) and directly confirmed with two-channel imaging (C68-C71). The statistical significance of differences is established, and the findings are consistent across independent measurement approaches. Nearly 100% of both non-maturing and maturing NAs generate force (C38), validating the force detection methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C3",
+      "C4"
+    ],
+    "result": "Vinculin shows a ~fivefold higher assembly rate in maturing NAs compared to non-maturing NAs, while talin and paxillin show no such differences. This differential vinculin recruitment is accompanied by faster traction force increase over longer timescales (2 min), though not in the initial 10 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential assembly rates are quantified from fluorescence intensity slopes (C39) and supported by traction force measurements (C40-C41, C3-C4). The time-dependent nature of force development is appropriately characterized at multiple timescales. The specificity to vinculin (not talin or paxillin) strengthens the conclusion about vinculin's unique role in NA maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C5",
+      "C7"
+    ],
+    "result": "The talin R8 domain contains a threonine belt (T1502, T1542, T1562) that when mutated to valines (R8vvv) increases the domain's thermal stability from 56\u00b0C to 82\u00b0C and substantially reduces vinculin binding in vitro, while maintaining binding to other LD-motif proteins like RIAM and DLC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The biochemical characterization is rigorous, using circular dichroism to measure thermal stability (C43-C44), analytical gel filtration to quantify vinculin binding (C45), and fluorescence polarization to confirm specificity (C46). The R8vvv mutation specifically disrupts vinculin binding without affecting other protein interactions, providing a clean tool for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C6",
+      "C77"
+    ],
+    "result": "Cells expressing talin R8vvv mutant show increased NA density, reduced FA size and density, decreased traction forces, faster edge dynamics, and reduced NA-to-FA maturation compared to wild-type talin rescue. This phenotype is consistent across ChoK1 knockdown/rescue and talin1/2 double knockout IMCD cells, confirming that the R8 domain is required for NA maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular phenotype is comprehensively characterized across multiple parameters (C47-C51) and validated in two independent cell systems (C55-C57). Controls for endogenous talin expression are appropriate (C52-C54), and the consistency of results across different experimental systems strengthens the conclusions. The phenotype directly supports the proposed role of R8-mediated vinculin binding in NA maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In R8vvv mutant cells, talin recruitment timing is unchanged, but traction growth rates are reduced in both non-maturing and maturing NAs. Critically, the differential traction growth between maturing and non-maturing NAs observed in wild-type cells is abolished in R8vvv cells, where both NA types show similar force growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-series analysis comparing R8vvv and wild-type conditions (C58-C63) demonstrates that the R8 mutation specifically affects force development without altering talin recruitment timing. The loss of differential force growth between NA types (C62-C63) is a key mechanistic finding. The paradoxical increase in talin assembly rate in R8vvv cells (C64) is noted but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C8"
+    ],
+    "result": "Two-channel imaging reveals that in R8vvv mutant cells, vinculin assembly rates become indistinguishable between non-maturing and maturing NAs, whereas wild-type cells show significantly higher vinculin rates in maturing NAs. Maturing NAs in R8vvv cells have shorter lifetimes than in wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct two-channel imaging (C65-C66) provides the most rigorous test of the hypothesis that R8-mediated vinculin binding is required for differential vinculin recruitment. The observation that vinculin continues to accumulate while talin remains flat in wild-type maturing NAs (C67) supports tension-mediated exposure of additional VBSs. The reduced lifetime of maturing NAs in R8vvv cells (C72) demonstrates functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C9"
+    ],
+    "result": "The authors conclude that NA maturation depends on concurrent early recruitment of talin and vinculin without tension, mediated by the talin R8 domain. This pre-complexation immediately establishes a strong integrin-F-actin link, promotes efficient talin unfolding under fast loading, exposes additional VBSs, and enables further vinculin recruitment and NA maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the combined experimental evidence from classification studies, temporal recruitment analysis, biochemical characterization of R8, and functional studies with R8vvv mutant. The model coherently explains the observed differences between maturing and non-maturing NAs. However, some mechanistic details (C75) remain speculative and would benefit from additional direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Maturing G2 NAs represent only 3.5\u00b11.6% of all NAs, compared to 28.8\u00b13.5% for non-maturing G1 NAs. However, nearly all G2 NAs (~100%) mature to focal complexes, and ~32% mature into focal adhesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These quantitative findings are directly measured from classification data (C79-C80) and provide important context for understanding the rarity of successful NA maturation events. The low frequency of G2 NAs is consistent with the proposed model requiring rare pre-complexation events. The high maturation efficiency of G2 NAs validates the classification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ChoK1 cells were selected as the experimental system because they form stable footprints suitable for TIRF microscopy and display slow adhesion assembly progression. Cells expressing different fluorescent adhesion proteins showed indistinguishable spreading and traction force generation, with forces directed from periphery to center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological justification is appropriate and supported by citations (C81-C82). The validation that different protein tags don't affect cell behavior (C84) and that traction vectors show expected directionality (C83) are important controls. These claims establish the validity of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The introduction establishes background knowledge about cell-matrix adhesions, nascent adhesion dynamics, talin and vinculin mechanosensitivity, and prior evidence suggesting talin-vinculin pre-complexation. This includes established knowledge about adhesion structure, force transmission, protein mechanosensitivity, and previous findings from the authors and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge appropriately cited from the literature (C1, C10-C27). The prior work is accurately represented and provides necessary context for the current study. Claim C27 specifically highlights the gap in knowledge that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The R8 domain also binds LD-motif proteins including RIAM and DLC1. Expression levels of R8vvv-talin were slightly less than endogenous talin in wild-type cells but more than remaining talin in knockdown cells. Paxillin's concurrent recruitment in maturing NAs is associated with the talin-vinculin precomplex, and paxillin levels correlate most strongly with traction forces among the three proteins studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These supporting observations (C89-C92) provide additional context and validation. The R8 domain's binding to other proteins (C89) is established knowledge. Expression level validation (C90) is important for interpreting rescue experiments. The paxillin findings (C91-C92) are appropriately tentative and supported by prior literature.",
+    "result_type": "MINOR"
+  }
+]

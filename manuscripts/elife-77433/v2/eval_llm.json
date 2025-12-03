@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors developed three orthogonal yeast-based high-throughput assays (FRET, transcription factor, and growth-based) to measure Mpro function across a comprehensive library of 6,120 single amino acid variants covering all 306 positions of Mpro. Each variant was barcoded with 20-40 unique sequences and functional scores were quantified by deep sequencing after selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C66-C69, C93-C106 collectively describe the experimental design, library construction, barcoding strategy, and scoring methodology. The three assays are well-validated with appropriate controls (C84, C87, C89), show strong replicate correlation (C107, R\u00b2>0.98), and successfully distinguish functional from non-functional variants (C108). The barcoding approach achieved 96% coverage with \u226510 barcodes per variant (C99), and pre-selection controls confirmed minimal bias (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C107",
+      "C108",
+      "C112",
+      "C115",
+      "C116",
+      "C200"
+    ],
+    "result": "The functional scores from all three screens (FRET, TF, and growth) were strongly correlated (R\u00b2>0.98 between replicates), indicating that they capture the same fundamental biophysical and biochemical constraints critical to Mpro function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C107-C108, C112, C115-C116, C200 demonstrate strong correlation between screens through multiple lines of evidence: high replicate correlation (R\u00b2>0.98), clear separation of WT from stop codons, correlation of average scores per position across screens, and validation against known critical residues (C117-C119). The convergence of three independent assays measuring different aspects of Mpro function strongly supports that they report on core functional properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Stop codons showed narrow distribution of functional scores across the Mpro sequence except at the last seven C-terminal positions (300-306), which are dispensable for Mpro activity, while residue Q299 is important for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by data showing consistent null-like scores for stop codons throughout the protein except at positions 300-306, which is consistent with prior work (Lin et al., 2008) showing these C-terminal residues are dispensable. This provides internal validation of the assays and confirms known structural biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The growth screen showed a stronger linear relationship (R\u00b2=0.86) with previously measured catalytic rates compared to the FRET (R\u00b2=0.93 non-linear) and TF (R\u00b2=0.81 non-linear) screens, indicating the growth screen more fully captures the dynamic range of mutations with small functional defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 compare functional scores to published catalytic rates and demonstrate that the growth screen exhibits more linear behavior while FRET/TF screens show non-linear (saturation-like) relationships. The analysis appropriately fits both linear and non-linear models and provides R\u00b2 values. This is supported by the observation that the growth screen likely integrates cleavage across multiple substrates (C114), providing a more comprehensive functional readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Clinical variants of Mpro observed in human SARS-CoV-2 sequences are predominantly functional, with 290 variants observed >100 times showing WT-like function (only 9 below WT distribution), indicating Mpro is under strong purifying selection in the human population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C126-C132 analyze clinical variant data from >5 million SARS-CoV-2 sequences. The finding that abundant clinical variants are highly functional while rare variants show wider functional range is well-supported. The observation of stop codons in clinical data (C129) is appropriately interpreted as sequencing error (C130) given Mpro's essential function. The enrichment for functional variants provides strong evidence for purifying selection (C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "All 12 amino acid differences between SARS-CoV-1 and SARS-CoV-2 Mpro are WT-like in the screens, and among 1,207 amino acid changes from 852 diverse coronavirus Mpro homologs, only 6% showed functional scores below the WT range, demonstrating enrichment for functional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 validate the functional scores against natural evolutionary variation. The finding that SARS-CoV-1 differences are all functional (C134) provides strong validation given 96% sequence identity. The analysis of 852 homologs with 47% average homology showing 94% functional variants (C137) demonstrates the screens capture evolutionarily relevant functional constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144",
+      "C145"
+    ],
+    "result": "Twenty-four positions of Mpro exhibited extreme mutation intolerance (\u226517 substitutions with null-like function), including catalytic residues (H41, C145), substrate-contacting residues (H163, D187), and dimer interface residues (P9, S10, G11, E14, E290) that cannot be altered without complete loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142, C144-C145 identify mutation-intolerant positions using a clear criterion (\u226517 null-like substitutions). The identification of known critical residues (catalytic dyad, dimer interface) validates the approach. The finding that dimer interface residues are completely intolerant to mutation (C145) is consistent with extensive prior work showing dimerization is essential (C143), providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "A cluster of mutation-intolerant residues (R131, D197, N203, D289, E290) at the Domain II/III interface forms a distal regulatory communication network, including a dynamic salt bridge between R131 and D289, making this surface a favorable target for mutation-resistant inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C146-C149 identify a novel mutation-sensitive surface distal to the active site. The structural location at the domain interface and dimer interface (C146), combined with extreme mutation sensitivity (C148), supports the inference of a regulatory network. The identification is supported by prior structural modeling studies (Bhat et al., 2021; Weng et al., 2021) suggesting this as a potential drug binding pocket (C146). However, the claim that this is 'favorable for inhibitor design' (C10, C149) is speculative and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "A physically interacting chain of mutation-sensitive residues (H163\u2192S147\u2192L115\u2192S10) bridges the active site to the dimerization interface, suggesting these residues mediate critical allosteric communication between the active sites of both subunits in the Mpro dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C150-C156 identify an allosteric communication network based on: (1) physical proximity of mutation-sensitive residues, (2) prior work showing E166 and S147 mutations disrupt dimerization despite being distal to the dimer interface (C152), and (3) strong conservation of these residues (C155). The structural and functional data support the existence of this network, though the mechanistic claim of 'mediating communication' (C156) is an inference that would benefit from additional biophysical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "All 24 mutation-intolerant residues are highly conserved among Mpro homologs, but many conserved residues are mutation-tolerant in the screens, indicating that functional hotspots predict conservation but conservation does not predict functional hotspots due to differences in selection strength between experimental and natural evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C164 address the relationship between experimental function and evolutionary conservation. The observation that functional hotspots are conserved but many conserved sites are mutation-tolerant (C158-C159) is well-supported by data and consistent with prior work on other proteins (C160). The explanation invoking differences in selection strength (C161-C162) is theoretically sound and appropriately cited (Ohta, 1973). The interpretation that experimental screens capture catalytically critical mutations while evolution detects more subtle fitness effects (C163) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C172",
+      "C175",
+      "C176"
+    ],
+    "result": "Substrate-contacting positions show dramatic variability in mutation tolerance: residues G143, H163, D187, Q192 are extremely sensitive, while N142, E166, Q189 are highly tolerant despite forming direct hydrogen bonds with substrates, indicating these tolerant positions have high potential for developing inhibitor resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C168, C172, C175-C176 identify mutation-tolerant substrate-contacting residues with strong experimental support. The finding that N142, E166, and Q189 form hydrogen bonds with substrates (C172-C174) yet tolerate mutations is surprising and well-documented in the functional data. The inference that these positions are 'readily available to resistance evolution' (C176) is logical given their functional tolerance, though actual resistance would need to be demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Analysis of 233 Mpro-inhibitor crystal structures shows that residues N142, E166, Q189 form hydrogen bonds with many inhibitors and tolerate mutations, while H41, S144, C145, H163, H172 are mutation-sensitive and conserved, making them ideal anchor points for resistance-resistant inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C181 integrate structural data from Cho et al., 2021 with the functional screens to identify positions for drug design. The analysis appropriately combines inhibitor-contact information with mutation tolerance data. The recommendation to target mutation-sensitive positions (C181) is logical, though the claim these would have 'reduced likelihood of resistance' requires validation with actual inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Three mutations (Q189E, E166A, E166Q) were identified as potential resistance mutations against the FDA-authorized inhibitor PF-07321332 based on WT-like function, predicted decreased binding (>1 kcal/mol), single nucleotide accessibility, and location where the inhibitor protrudes from the substrate envelope. Q189E is a natural variant in pandemic-concern coronaviruses HKU15 CoV and avian infectious bronchitis virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C183-C188 predict resistance mutations using reasonable criteria (functional tolerance, binding energy, genetic accessibility, substrate envelope). However, the binding energy predictions are computational (PremPLI) and not experimentally validated. The identification of Q189E in other coronaviruses (C186-C187) is well-supported by citation, but the speculation that PF-07321332 'may have reduced efficacy' (C188) against these viruses is not tested. Experimental validation of resistance is needed to support these predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Position N142 warrants attention as a potential resistance contributor because it is mutation-tolerant, located in a flexible loop over the P1 substrate position where PF-07321332's lactam ring protrudes beyond the substrate envelope, suggesting mutations could influence loop conformation and disrupt inhibitor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C189-C195 identify N142 as a position of interest based on: mutation tolerance (C192), structural location (C192), and inhibitor protrusion from substrate envelope (C193). The reasoning is logical and integrates multiple data types. However, the claims about conformational changes (C189, C194) are speculative and the statement that 'in-depth structural analyses will be important' (C190) acknowledges this limitation. Experimental validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A Ub-Mpro fusion system was developed to express Mpro with its authentic N-terminus in yeast, controlled by the LexA-ER-AD inducible transcription factor regulated by \u03b2-estradiol, with Western blot confirmation of Ub removal and titration to optimize expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe the expression system development with appropriate controls. The Ub-fusion approach is well-established (C73, Bachmair et al., 1986), the inducible system is characterized (C75-C76, Ottoz et al., 2014), and Western blot data confirms proper processing (C77). The \u03b2-estradiol titration (C78) demonstrates optimization to balance expression and toxicity. This is solid methodological development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The FRET screen using YPet-CyPet fluorescent proteins linked by the Nsp4/5 cleavage site provides a 20-fold signal change upon cleavage, directly reports on cleavage of a specific cut-site, and shows \u03b2-estradiol-dependent signal decrease that requires functional Mpro (abolished by C145A mutation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe and validate the FRET assay. The YPet-CyPet pair is well-characterized (C79, Nguyen and Daugherty, 2005), the Nsp4/5 site is standard (C81), and appropriate controls demonstrate specificity (C84: C145A abolishes signal). The advantage of direct readout (C82) is valid. This is a well-validated assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The split transcription factor screen provides signal amplification but has an indirect relationship between fluorescent signal and cutting efficiency, showing \u03b2-estradiol-dependent GFP decrease requiring functional Mpro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe the TF assay with appropriate acknowledgment of its advantages (amplification, C85) and limitations (indirect readout, C86). Validation with appropriate controls (C87) demonstrates specificity. The recognition of the indirect relationship (C86) is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The growth screen leverages Mpro toxicity to yeast (likely from cleaving essential proteins) where increasing \u03b2-estradiol correlates with decreased growth in a Mpro-dependent manner, with growth at 2 \u00b5M \u03b2-estradiol tightly coupled to Mpro function and likely reporting on cleavage of multiple cellular targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe the growth assay with appropriate caveats. The toxicity is documented (C88, Alalam et al., 2021), dose-response is demonstrated (C89), and the coupling to function at high expression is shown (C90). The acknowledgment that substrates are unknown (C91) and the inference about multiple targets (C91-C92) are appropriately cautious. This is a reasonable functional readout despite mechanistic uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The screens correctly identify known critical residues: catalytic dyad mutations (C145, H41) inactivate the protease as expected, and dimer interface residues (S10, G11, E14) essential for SARS-CoV-1 Mpro are also deleterious in SARS-CoV-2, validating the functional scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 validate the screens against established biology. The identification of catalytic residues (C117, Hegyi et al., 2002) and dimer interface residues (C118-C119, Chen et al., 2008) as critical provides strong validation. The inference that SARS-CoV-1 results translate to SARS-CoV-2 (C120) is reasonable given 96% identity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The study has limitations: the relationship between Mpro biochemical function and viral fitness is not fully understood, function-fitness relationships are likely non-linear, the FRET/TF screens measure only one cleavage site, and the fitness landscape captures only single mutations without epistasis information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C210 appropriately acknowledge study limitations. The uncertainty about function-fitness relationships (C201-C205) is honest and supported by theory (C203, citations to Heinrich, Kacser, Jiang). The limitation to single mutations (C207) is clearly stated. The observation that screen similarity suggests they capture fundamental properties (C209) and that natural variant functionality supports generalizability (C210) appropriately balances limitations with strengths.",
+    "result_type": "MINOR"
+  }
+]

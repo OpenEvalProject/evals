@@ -1,0 +1,443 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C30",
+      "C41",
+      "C42",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "High-resolution multi-shell diffusion MRI was acquired from 140 fetuses (70 male, 70 female) between 21-37 gestational weeks as part of the Developing Human Connectome Project, with appropriate ethical approval and consent. The acquisition used a SAFE sequence at 2mm isotropic resolution with multi-shell encoding (b=0, 400, 1000 s/mm\u00b2) on a 3T Philips system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C30, C41-C42, C163-C171 collectively describe the study cohort, acquisition parameters, and ethical framework. The sample size (n=140), age range (21-37 weeks), sex distribution (equal male/female), imaging parameters, and ethical approvals are clearly documented with appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C148",
+      "C149"
+    ],
+    "result": "Fetal dMRI data underwent extensive preprocessing including motion correction, distortion correction using SAFE information, denoising, and quality control, resulting in 140 high-quality datasets from 300 initially acquired. Despite these corrections, some residual motion and distortion artifacts remain in the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C148-C149, C172-C179 describe comprehensive preprocessing and quality control procedures with appropriate citations to methods. The acknowledgment of residual artifacts (C149) demonstrates appropriate transparency. The 47% retention rate (140/300) after quality control is documented but raises questions about potential selection bias that is not addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Individual subject ODFs were computed using MSMT-CSD with cohort-specific response functions, compiled into weekly templates, registered to a T2-weighted atlas, and used to generate anatomically constrained whole-brain connectomes of 100M streamlines per gestational week, filtered to 10M using SIFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C180-C191 describe a comprehensive and well-documented analysis pipeline using established methods (MSMT-CSD, SIFT) with appropriate citations. The use of cohort-specific response functions from the oldest 20 subjects (C183) is methodologically sound. However, the choice to use only the oldest subjects for white matter response functions could introduce bias toward more mature tissue properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Five thalamocortical pathways were delineated using tractography with atlas-defined cortical regions (primary motor, sensory, posterior parietal, dorsolateral prefrontal, and primary visual cortex) and the thalamus. These pathways were selected because they are at a critical developmental stage and vulnerable to external influences during the second to third trimester.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C48-C53 describe the tract selection and delineation methodology with appropriate anatomical specificity and citations supporting the developmental vulnerability of these pathways (C49). The grouping into 2-weekly intervals (C53) is justified for consistency. The methods are reproducible with the cited atlas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "Tract density imaging revealed symmetrical topographical representation of cortical regions in the thalamus across all ages, with distinct thalamic regions connecting to different cortical areas in a pattern that spatially corresponds to adult thalamic nuclei organization. The anterior thalamus connected to prefrontal cortex, ventral thalamus to motor/sensory areas, and posterior thalamus to parietal and visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C54-C63, C192-C194 describe a novel in vivo fetal thalamic parcellation based on structural connectivity. The findings are supported by data (tract density maps) and comparison to adult studies (C56). However, the authors acknowledge important limitations: streamline-based parcellation is prone to spurious detection in fetuses (C104-C105), and the method may overrepresent tracts in younger subjects due to dense connectomes with few coherent bundles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The fetal thalamic connectivity parcellation resembles adult thalamic nuclei topology as early as 23 weeks gestation and is consistent with functionally-derived neonatal parcellations, supporting an early structure-function association in thalamocortical circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C101-C103 present a key finding comparing fetal structural connectivity to adult anatomy and neonatal function. The consistency across developmental stages and modalities (structure/function) is well-supported by citations. However, the comparison relies on visual/qualitative assessment rather than quantitative metrics, and the acknowledged limitations of tractography in young fetuses (C104-C105) temper confidence in the earliest timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Whole-tract average tissue and fluid fractions showed second-order polynomial (U-shaped) relationships with gestational age for all tracts except AT fluid fraction (linear), with no significant sex differences. Diffusion tensor metrics showed similar polynomial trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe tract-averaged diffusion metrics with appropriate statistical model selection (Akaike criterion, C67) and sex comparison (p>0.1, C69). The U-shaped trends replicate previous findings (C111). However, whole-tract averaging obscures compartment-specific changes (acknowledged in C115), motivating the along-tract analysis. The lack of sex differences should be interpreted cautiously given the relatively small sample per gestational week.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Tissue and fluid fractions were sampled at 100 equidistant points along tracts between thalamus and cortex, with values scaled to be approximately reciprocal using a cubic polynomial model. Subjects were grouped into three developmental windows (early: 21-25.5w, mid: 26-31.5w, late: 32-36w) matching histological classifications, and tracts were overlaid on atlas-derived fetal compartment boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C195-C199 describe the along-tract sampling methodology with appropriate technical detail. The grouping into developmental windows (C73) is justified by gradual trajectory changes (C72) and alignment with histological studies. The reciprocal scaling of tissue/fluid fractions (C71) is a key methodological choice that constrains interpretation but is appropriate for the MSMT-CSD model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Along-tract analysis revealed that motor, sensory, and parietal tracts shared similar microstructural trajectories, while AT and OR were more distinct. Tissue fraction increased with age in deep grey matter and cortical plate (most marked in superior tracts), decreased in ventricular/intermediate zones between early and mid prenatal periods, and showed tract-specific changes in subplate. Statistical testing confirmed significant age correlations after multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C87 present detailed compartment-specific findings from along-tract analysis. The statistical testing (C86-C87) with multiple comparison correction strengthens confidence. The tract-specific patterns (C81-C84) are well-documented. However, the interpretation relies heavily on alignment with atlas-derived compartment boundaries, which may not perfectly match individual subject anatomy. The standard deviation bars in figures suggest substantial inter-subject variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Along-tract sampling of diffusion metrics captures temporal and compartmental differences reflecting known developmental processes: early prenatal shows high tissue fraction in middle tract (radial scaffold), mid prenatal shows decreased middle tract tissue fraction (scaffold dissipation) with increased cortical plate tissue fraction (neuronal maturation), and late prenatal shows highest tissue fraction at tract endpoints (pre-myelination). These spatiotemporal changes in dMRI signal are consistent with post-mortem histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C88-C93 present the main interpretive findings linking MRI observations to neurobiology. The correspondence with histological knowledge is well-supported by citations throughout. However, the interpretation is largely correlative - the dMRI changes are consistent with but do not directly demonstrate the proposed biological mechanisms. The study provides a normative reference but cannot definitively establish causal relationships between specific cellular processes and MRI signal changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Age-related changes in tissue and fluid fraction along tracts concur with histological observations: early prenatal (22-25.5w) shows high tissue fraction in VZ/IZ (radial glial scaffold) and low in subplate (extracellular matrix); mid prenatal (26-31.5w) shows increased cortical plate tissue fraction (thalamocortical innervation, synaptogenesis) and increased subplate tissue fraction (coherent axonal fibers), with decreased VZ/IZ tissue fraction (scaffold dissipation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 provide detailed biological interpretation of early and mid prenatal findings with extensive histological citations. The correspondence between MRI observations and known cellular processes is compelling. However, the interpretation assumes that tissue fraction directly reflects cellular density/organization, which is plausible but not validated in this study. The reliance on animal studies (C120) for some interpretations introduces uncertainty about human applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "From mid to late prenatal period, marked tissue fraction increase in the last third of the thalamus-cortex axis reflects oligodendrocyte precursor cell ensheathment commencing pre-myelination and cortical plate lamination. High tissue fraction at tract endpoints suggests co-maturation of ascending and descending pathways (\"handshake hypothesis\"), with predicted continued increase in middle tract regions into the neonatal period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 interpret late prenatal findings with appropriate citations to histology and developmental theory. The \"handshake hypothesis\" (C132-C133) provides a compelling framework. However, C134 is explicitly speculative (hypothesis about neonatal continuation), and the inference about co-maturation (C131) is based on spatial patterns rather than direct evidence of ascending/descending pathway interactions. The study acknowledges inability to distinguish these pathways (C150-C151).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Tract-specific differences were observed: AT shows high IZ tissue fraction (hypothesized due to densely packed bundles in anterior internal capsule); OR shows smoother compartment transitions (likely due to parallel trajectory to tissue interfaces); regional differences may reflect variation in subplate remnants, with visual cortex subplate disappearing by term, somatosensory persisting to term, and prefrontal persisting 6 months postnatally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C143 explain tract-specific variations with anatomical and developmental rationales. The explanations are plausible and supported by citations (C140-C142). However, C135 and C138 are explicitly hypotheses, and C143 is speculative. The timeline ambiguity for thalamocortical/corticothalamic projection intermingling (C136) is appropriately acknowledged. These interpretations would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study replicated previous findings of U-shaped (second-order polynomial) maturational trends in fetal white matter diffusion metrics, with an inflection point around 29-30 weeks hypothesized to reflect radial glial scaffold dissipation followed by pre-myelination. Previous studies showed HARDI sensitivity to radial structures corresponds to radial glial fibers transitioning to cortico-cortical fibers around 30 weeks. However, whole-tract averaging cannot establish precise effects of different neurodevelopmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 contextualize findings within prior literature and acknowledge methodological limitations. The replication of U-shaped trends (C111) strengthens confidence, and the hypothesis about the inflection point (C112) is supported by citations. The acknowledgment that whole-tract averaging obscures compartment-specific effects (C115) appropriately motivates the along-tract approach. The interpretation relies on correlative evidence from combined MRI-histology studies (C113-C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Fetal dMRI faces inherent challenges including low signal-to-noise ratio, motion artifacts, unpredictable fetal movement, maternal breathing, and variable positioning causing unique bias fields. These limitations prevent distinguishing ascending from descending thalamic projections and make streamline counts unreliable for quantifying fiber morphology. Therefore, tractography was used only to delineate regions of interest, with microstructure quantified from diffusion signal contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C154 provide transparent discussion of methodological limitations with appropriate citations. The decision to use tractography only for ROI delineation rather than quantitative morphology (C154) is justified given the acknowledged limitations (C152-C153). The inability to distinguish projection directionality (C150-C151) is an important constraint on interpretation. These limitations are appropriately acknowledged but do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The thalamic parcellation has limitations: it depends on streamline counts which are prone to spurious detection in fetuses, potentially overrepresenting tracts in youngest subjects due to dense connectomes with few coherent bundles. Additionally, thalamic nuclei topography is not static during development (pulvinar enlarges, lateral geniculate shifts position), but study resolution and timespan limit visualization of these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide critical self-assessment of the thalamic parcellation findings with appropriate citations to developmental anatomy. The acknowledgment of age-dependent biases (C105) and inability to capture dynamic changes in nuclei positions (C109) demonstrates scientific rigor. These limitations are important for interpreting the parcellation results but do not negate the overall finding of early topographic organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The methods enable direct study of subplate and intermediate zone maturation, which are critical substrates for synaptogenesis and thalamocortical axon guidance. Damage to these structures has been implicated in developmental disorders and altered thalamic connectivity in preterm infants. The study provides a normative reference of MR signal changes to help identify effects of preterm birth or perinatal injury, with data made publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C162 articulate the clinical and scientific significance of the work with extensive citations to pathology literature (C157-C158). The provision of normative reference data (C161) and public data sharing (C162) enhance impact. However, the utility for identifying pathology (C161) remains to be demonstrated in future studies - this is a normative baseline rather than a diagnostic tool. The significance claims are appropriate but somewhat aspirational.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work establishes that thalamocortical connections guide cortical differentiation and sensory integration, with disruptions implicated in schizophrenia, bipolar disorder, and autism. Altered thalamocortical connectivity in preterm infants predicts cognitive outcomes, highlighting vulnerability during the second to third trimester. Despite studies in animals and post-mortem tissue, little is known about in vivo white matter maturation during fetal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C11 provide appropriate background context with extensive citations. The knowledge gap (C11) is clearly established, motivating the study. However, these are literature review claims rather than study findings. The characterization of prior work appears accurate based on the citations provided, though the reviewer cannot verify all cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "White matter development between 21-37 weeks involves precisely timed biological processes in transient fetal compartments, including neuronal migration, thalamocortical axon accumulation, cortical innervation, radial glial conversion to astrocytes, and axonal ensheathment. Tractography has characterized fetal white matter evolution, with advanced methods enabling tissue/fluid compartment estimation. Previous work identified non-linear trends with tissue fraction decreasing 22-29 weeks (possibly radial scaffold disassembly) then increasing 30-36 weeks (possibly fiber organization/ensheathment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C26 provide biological and methodological background with appropriate citations. The previous findings (C22-C26) from the authors' prior work establish the foundation for the current study. However, C24 and C26 are explicitly speculative interpretations (\"could be due to\", \"potentially linked to\") that the current study aims to test. The background appropriately motivates the need for compartment-specific analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Based on histological knowledge that early/mid prenatal subplate is water-rich with extracellular matrix while cortical plate and deep grey matter are cell-dense, the authors predicted tissue fraction would be higher in deep grey matter and cortical plate and lower in subplate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 present a clear, testable hypothesis based on established histology (C27-C28 with citation). The prediction (C29) logically follows from the tissue properties and the assumption that tissue fraction reflects cellular density. This hypothesis is subsequently tested and confirmed in the results (C77-C85). The reasoning is sound, though the relationship between MRI tissue fraction and histological properties is assumed rather than validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "MSMT-CSD was applied to derive tissue and fluid fractions, charting tract-specific maturational profiles over the second to third trimester. Tracts were overlaid on an atlas of fetal compartments to correlate dMRI signal changes with neurodevelopmental processes like subplate dissolution and cortical plate lamination. These maturational trajectories provide a normative reference to complement histological knowledge and facilitate future pathophysiology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C40 summarize the study approach and significance. The methodology is well-described and the significance appropriately stated. However, C40 is somewhat aspirational - while the normative reference is provided, its utility for understanding pathophysiology remains to be demonstrated. The correlation with neurodevelopmental processes (C37) is interpretive rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior work in rodents and humans shows that embryonic thalamic patterning establishes a topographic template for thalamic nuclei, with characteristic cortical connectivity existing at arrival: anterior-posterior cortical movement maps to medial-lateral thalamus, and ventral-dorsal cortical movement maps to anterior-posterior thalamus. Thalamocortical tracts emerge as the thalamus parcellates into specialized nuclei. Despite embryonic establishment of this topography, no in vivo fetal thalamic parcellation had been published prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide developmental neuroscience background with appropriate citations to rodent and human studies. The knowledge gap (C100) is clearly stated and motivates the thalamic parcellation analysis. The topographic principles from rodent studies (C95-C97) provide a framework for interpreting the fetal human findings. However, cross-species extrapolation should be interpreted cautiously given known differences in developmental timing.",
+    "result_type": "MINOR"
+  }
+]

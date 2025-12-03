@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C38",
+      "C40",
+      "C97"
+    ],
+    "result": "Mouse rods at resting membrane potential (-40 mV) in darkness exhibit coordinated multivesicular release events consisting of approximately 17 vesicles per event, with these events occurring more regularly than predicted by Poisson statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C29, C38, C40, and C97 collectively demonstrate through experimental measurements (IA(glu) recordings) and statistical analysis that multivesicular release dominates at -40 mV with ~17 vesicles per event and exhibits regularity exceeding Poisson predictions. The bimodal amplitude distribution (C40) and direct measurements (C97) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C34",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C124"
+    ],
+    "result": "At hyperpolarized membrane potentials (-70 mV), vesicle release from rods follows Poisson statistics with Ca2+-independent spontaneous release events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C46-C50 provide robust statistical evidence (R\u00b2 = 0.97 \u00b1 0.04 for exponential fits, R\u00b2 = 0.94 \u00b1 0.07 for Poisson fits, n=9 rods) that release at -70 mV obeys Poisson statistics. The unimodal amplitude distribution (C34) and Ca2+-independence (C45, C50) are well-documented. Statistical tests show predicted and observed rates match (p=0.83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C104",
+      "C126",
+      "C129"
+    ],
+    "result": "Multivesicular release events at -40 mV exhibit temporal regularity consistent with an Erlang distribution with factors ranging from 3-12 (average k=6.2), rather than Poisson statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C56-C60, C63, C104, C126, and C129 demonstrate through multiple statistical approaches that multivesicular events cannot be fit by Poisson models (negative R\u00b2 values) but are well-fit by Gaussian functions (R\u00b2=0.84\u00b10.12) with CV=0.43\u00b10.09, consistent with Erlang factors of 3-12. The bimodal distribution (C57) and failed Poisson fits (C58) provide strong negative evidence against Poisson release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C84",
+      "C85",
+      "C105"
+    ],
+    "result": "Small hyperpolarizing voltage changes (1-3.5 mV) mimicking single-photon responses nearly abolish multivesicular release probability, with a rebound increase following stimulus offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C77-C79, C81, C84-C85, and C105 provide converging experimental evidence from voltage-clamp experiments showing that hyperpolarizations as small as 1 mV produce appreciable pauses in release. Statistical significance is demonstrated (p<0.0001, n=9 rods for 3.5 mV steps), and the rebound overshoot (~50% increase) is quantified. The consistency across different voltage step sizes strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C106"
+    ],
+    "result": "Computational modeling with ideal observer analysis demonstrates that the observed multivesicular release dynamics can account for rod-bipolar cell flash sensitivity, with detection thresholds matching published measurements (0.1-0.3 Rh*/rod).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C32, C92-C95, and C106 show that simulations using empirically-determined release parameters reproduce rod-bipolar cell detection sensitivity. The model achieves 75% correct detection between 0.1-0.2 Rh*/rod (C92), matching published thresholds of 0.1-0.3 Rh*/rod (C93). The convergence of model predictions with experimental measurements provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C98",
+      "C99",
+      "C100",
+      "C123"
+    ],
+    "result": "The multivesicular release strategy is more efficient than Poisson release, achieving greater sensitivity while requiring only ~34 vesicles/s compared to the 80-100 vesicles/s predicted for Poisson release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33, C98-C100, and C123 demonstrate through comparative modeling that multivesicular release (2 events/s \u00d7 17 vesicles = 34 v/s) outperforms Poisson release at the same vesicle budget. The comparison to theoretical predictions requiring 80-100 v/s for Poisson release (C16, C122, C123) provides context for the efficiency claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "White noise analysis reveals that rod terminals preferentially respond to slow voltage changes (5 Hz cutoff) with a characteristic depolarizing excursion preceding multivesicular events, while filtering out higher frequency noise (20 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 demonstrate through event-triggered averaging that multivesicular events are preceded by specific voltage waveforms resembling single-photon response termination. The frequency-dependent response (5 Hz vs 20 Hz cutoff) provides evidence for temporal filtering. However, the sample size is modest (n=4 rods), which slightly limits confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Light adaptation state does not significantly alter multivesicular release statistics, with no significant differences in vesicles per event or interevent intervals between light-adapted and dark-adapted conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide statistical comparisons showing no significant differences in vesicles per event (16.7\u00b15.8 vs 17\u00b17, p=0.74) or intervals (2.0\u00b10.54 vs 2.3\u00b10.64 s, p=0.34) between dark-adapted and light-adapted preparations. The statistical tests support the conclusion, though the caveat about outer segment removal (C68) is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C121"
+    ],
+    "result": "Patch-clamp recording induces rundown of multivesicular release, with interevent intervals at patch rupture approximately half the overall average, suggesting true in vivo rates may be twice the measured average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 and C121 document systematic rundown with significant linear increases in interevent intervals over time (all slopes significantly non-zero, n=5 rods). The y-intercept analysis (1.23\u00b10.45 s vs mean 2.26\u00b10.60 s) supports the inference of ~2\u00d7 higher initial rates. This is important for interpreting physiological release rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Elevating temperature from room temperature to 35\u00b0C significantly shortens multivesicular release intervals from 2.3\u00b10.64 s to 1.13\u00b10.67 s (p<0.0001), with multiple lines of evidence converging on a physiological rate of approximately 2 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 provide statistical evidence for temperature effects (p<0.0001, n=5 at 35\u00b0C vs n=16 at room temp) and integrate multiple corrections (rundown, temperature) to estimate physiological rates. The convergence of different analytical approaches strengthens the ~2 Hz estimate, though uncertainty remains about exact in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C120"
+    ],
+    "result": "At -40 mV, rods exhibit release rates of 4-5 vesicles/s at room temperature, which doubles to ~11 v/s/ribbon at 35\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C120 document temperature-dependent release rates with consistent measurements across studies. The doubling of both release rates and ICa with temperature increase provides internal consistency. These measurements form the basis for subsequent efficiency calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C53"
+    ],
+    "result": "Unitary events at -40 mV follow Poisson statistics (R\u00b2=0.90\u00b10.07), appearing to emerge independently from multivesicular events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C53 show that unitary events maintain Poisson statistics even at -40 mV where multivesicular events dominate. The inference of independence (C53) is reasonable given the different statistical properties, though direct mechanistic evidence for independence is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C101",
+      "C102"
+    ],
+    "result": "Model detection thresholds are robust over reasonable parameter ranges, with Erlang factors above 9 showing diminishing returns on detection performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C101, and C102 demonstrate through parameter sensitivity analysis that detection thresholds remain consistent with rod-bipolar cell measurements across parameter variations. The identification of Erlang factor ~4-9 as optimal range is well-supported by the modeling data (Figure 8B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Voltage stimuli do not truncate ongoing multivesicular events, with events continuing during stimuli having the same number of quanta as prior events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 provides statistical evidence (p=0.53, n=5 rods) that ongoing events are not interrupted by voltage changes. This is important for interpreting the mechanism of voltage sensitivity, though the sample size is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C54",
+      "C55"
+    ],
+    "result": "Glutamate transporters in rods (EAAT5) are linked to anion conductance and are not saturated during normal release, allowing IA(glu) to provide a linear, pre-synaptic measure of glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27, C54-C55 establish the methodological foundation for using IA(glu) as a release assay. The evidence for non-saturation (C24-C25, C54) and linearity (C26) is well-cited and critical for interpreting all release measurements. This is primarily methodological validation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C64",
+      "C65",
+      "C136"
+    ],
+    "result": "Multivesicular release events involve rapid sequential release of 10-20 vesicles triggered by Ca2+ influx from a pool of ribbon-associated vesicles shared with evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C64-C65, and C136 describe the mechanistic basis of multivesicular release, primarily citing previous work (Hays et al., 2020b). While well-supported by citations, this represents background information rather than new findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C137"
+    ],
+    "result": "The cumulative wait times for vesicle replenishment at the ribbon base may provide a mechanism for achieving Erlang-like temporal regularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130 and C137 propose a mechanistic explanation for Erlang statistics but are explicitly speculative. No direct experimental evidence is provided for this mechanism. While plausible, this remains a hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C119"
+    ],
+    "result": "Multivesicular release may help maintain glutamate saturation at individual synapses and contribute to synchrony among AII amacrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116 and C119 propose functional roles for multivesicular release but are explicitly speculative. While consistent with known synaptic mechanisms (C114-C115, C117-C118), no direct experimental evidence is provided in this study to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C107"
+    ],
+    "result": "Background on single-photon detection: Rods can detect single photons producing 1-3.5 mV hyperpolarizations from -40 mV resting potential, signaling via decreased glutamate release, but Poisson release statistics pose a signal detection problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C15, and C107 establish the scientific context and problem motivation through well-cited prior work. These are established facts in the field rather than new findings, but they are accurately represented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C122",
+      "C128",
+      "C131"
+    ],
+    "result": "Prior theoretical work predicted that Poisson release would require ~100 vesicles/s for reliable single-photon detection, but measured rates are only 10-20 v/s, leading to proposals for Erlang processes and ribbon involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C122, C128, and C131 accurately summarize prior theoretical and experimental work establishing the problem and proposed solutions. The citations are appropriate and the discrepancy between predicted and measured rates is well-documented. This provides important context but is not a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background on synaptic processing: Non-linear thresholding at rod-to-rod-bipolar synapses requires glutamate receptor saturation and excludes 40-90% of single-photon responses, with extensive convergence (20-100,000 rods) enabling detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 provide well-cited background on post-synaptic processing mechanisms. These are established findings from prior work that contextualize the current study's focus on pre-synaptic release mechanisms. The citations are appropriate and the information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Spontaneous release can arise from Ca2+-independent fusion or chance Ca2+ channel openings, with evidence for Ca2+-independent release in rods at -70 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe mechanisms of spontaneous release with appropriate citations. The evidence for Ca2+-independent release in rods (C45) is cited from previous work (Hays et al., 2020b) rather than being a new finding in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76",
+      "C80",
+      "C83"
+    ],
+    "result": "Single-photon voltage responses in mouse rods average ~3.5 mV (primate rods ~1 mV), with kinetics characterized by 245 ms rise time and 2.5 s decay time constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C80, and C83 provide well-cited parameters for single-photon responses used in modeling. These are established measurements from prior work (Cangiano et al., 2012; Schneeweis and Schnapf, 1995) that inform the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Lengthening of release intervals by small voltage changes could potentially improve signaling of single-photon responses by distinguishing genuine photon-evoked reductions from stochastic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is explicitly speculative ('could potentially') and represents an interpretation of the experimental findings (C77-C81) rather than a directly tested hypothesis. While plausible and consistent with the data, this functional interpretation requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "AII amacrine cells show synchronized currents from synchronous rod inputs, with two rod-bipolar dendrites terminating beneath each rod ribbon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 cite established anatomical and physiological findings that provide context for interpreting the functional significance of multivesicular release. These are well-documented prior findings rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C125",
+      "C127"
+    ],
+    "result": "Historical context: Poisson release statistics were established by Bernard Katz in the 1950s; Erlang processes reduce variability by accumulating multiple Poisson intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125 and C127 provide accurate historical and mathematical context. These are well-established facts that frame the current findings but do not represent new discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "While overall release rate parallels ICa changes, small hyperpolarizations cause release probability to drop nearly to zero rather than declining only 20-25% as predicted from ICa reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 highlight the non-linear relationship between voltage and release probability, showing greater sensitivity than expected from Ca2+ current changes alone. This observation is well-supported by the experimental data (C84) but the mechanism remains unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C135",
+      "C138",
+      "C139"
+    ],
+    "result": "Recent Ribeye knockout studies show modest deficits; rod spherules contain 5800-7500 vesicles that would deplete in ~1 minute at 100 v/s release rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C138-C139 cite recent findings on ribbon function and provide calculations about vesicle pool constraints. These establish context for the efficiency argument but are primarily citations and calculations rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "Overall conclusion: Temporally regular multivesicular release provides an efficient encoding strategy meeting both release rate constraints and signaling reliability requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 synthesizes the major findings (C2-C7, C99-C100, C132) into an overarching conclusion. This is well-supported by the convergence of experimental and modeling evidence, though it represents a summary rather than a distinct result.",
+    "result_type": "MAJOR"
+  }
+]

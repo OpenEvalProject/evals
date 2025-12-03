@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C82",
+      "C83",
+      "C12"
+    ],
+    "result": "Both honey bee hosts and their gut microbiota contribute to amygdalin metabolism. In microbiota-deprived bees, amygdalin is partially degraded to prunasin which accumulates in the gut, while in microbiota-colonized bees, amygdalin is further degraded and prunasin does not accumulate, suggesting complete degradation to hydrogen cyanide by the microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C39-C40, C82-C83 are supported by in vivo LC-MS data (Figure 8) showing prunasin accumulation only in microbiota-deprived bees and reduced amygdalin levels in microbiota-colonized bees. The conclusion (C12) that host and microbiota act together is well-supported by converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Amygdalin degradation by bee gut bacteria is strain-specific, not genus- or species-specific. Specific strains of Bifidobacterium (wkB204), Bombilactobacillus (BI-1.1, BI-2.5), and Gilliamella (wkB112) can degrade amygdalin, with different degradation mechanisms: some strains produce prunasin as an intermediate (wkB204, BI-1.1) while others do not (BI-2.5, wkB112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C41-C56 are well-supported by in vitro growth assays and LC-MS data (Figures 1-2) showing strain-level variation in amygdalin degradation capacity and mechanism. The data clearly demonstrate that degradation ability varies within genera and that different strains use different pathways (prunasin intermediate vs. direct cleavage).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Bifidobacterium wkB204 fully degrades amygdalin and overexpresses/secretes several carbohydrate-degrading enzymes when grown with amygdalin, including a glycoside hydrolase family 3 (GH3) enzyme (WP_254476944) detected only in amygdalin-grown cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C57-C63 are supported by growth data (Figure 1), biochemical assays showing degradation in spent medium (Figure 3), SDS-PAGE (Figure 4B), and proteomics analysis (Figure 4C) identifying 107 upregulated proteins including the GH3 enzyme. The convergence of multiple lines of evidence strongly supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C77",
+      "C78",
+      "C100"
+    ],
+    "result": "A GH3 enzyme from Bifidobacterium wkB204 (WP_254476944) contributes to amygdalin degradation. When expressed in E. coli, cell lysates degraded amygdalin and produced prunasin, though to a lesser extent than the native host. The GH3 gene is highly expressed in wkB204 when grown with amygdalin but not in related strain wkB344.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C63, C65-C68, C77-C78, C100 are supported by qPCR data (Figure 5B), heterologous expression experiments (Figure 7D-E), and genomic analysis (Figure 5). The heterologous expression provides direct evidence for GH3 involvement, though the lower activity in E. coli (C100) suggests additional factors may be required for full activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "All three Bifidobacterium strains tested (wkB204, wkB344, wkB338) can degrade prunasin at 0.1 mM concentration. Additionally, wkB344 can degrade 0.1 mM amygdalin, though it cannot degrade higher concentrations (10-100 mM), suggesting concentration-dependent toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by growth and LC-MS data (Figure 6). The data clearly show all strains degrade prunasin and that wkB344 can degrade amygdalin at lower concentrations. The inference about concentration-dependent toxicity (C76) is reasonable given the contrasting results at different concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The wkB204 GH3 (WP_254476944) is encoded in an operon with four other genes including a transporter, another glycoside hydrolase, and a beta-galactosidase, all overexpressed with amygdalin. The wkB344 GH3 operon contains only a beta-galactosidase. wkB204 encodes 10 distinct GH3s while wkB344 and wkB338 each encode 5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by genomic analysis (Figure 5C) and proteomics data showing operon gene overexpression. The dbCAN annotation provides the GH3 counts. This genomic context helps explain differential regulation and activity between strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C105"
+    ],
+    "result": "Amygdalin was detected in multiple bee body compartments (midgut, hindgut, body carcass) after oral exposure, indicating systemic absorption. Amygdalin concentration was significantly lower in conventionalized and wkB204-monocolonized bees compared to controls, and was not detected in hindguts of these groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C105 are supported by LC-MS data from in vivo experiments (Figure 8B-C). The detection of amygdalin in body carcasses without gut provides direct evidence for systemic absorption. The differential distribution across treatment groups supports microbiota-dependent degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C112"
+    ],
+    "result": "Honey bees exposed to field-relevant concentrations of amygdalin (0.01-1 mM) did not exhibit increased mortality or changes in gut microbiota composition or abundance. This was true for both microbiota-colonized and microbiota-deprived bees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C112 are supported by survival data (Figure 9A-B, Figure 9\u2014figure supplement 1), 16S rRNA amplicon sequencing (Figure 9C-D), and qPCR (Figure 9E). The lack of adverse effects at field-relevant concentrations is well-documented and consistent with prior studies (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C88"
+    ],
+    "result": "Amygdalin is a cyanogenic glycoside found in almond nectar (~0.01 mM) and pollen (~4 mM). It is degraded through prunasin and mandelonitrile to produce toxic hydrogen cyanide. Bees can tolerate concentrations up to 219 \u03bcM without mortality effects, though higher doses cause malaise symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C25, C88 are supported by citations to established literature. These provide essential background context for the study. The degradation pathway (C18-C20) is well-established biochemistry, and bee tolerance data (C23-C24) comes from prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Bee genomes have lower detoxification gene diversity than other insects but encode some xenobiotic-metabolizing enzymes including cytochrome P450s, glutathione transferases, and glycoside hydrolases. Honey bees secrete a GH from hypopharyngeal glands that may catalyze initial glycoside breakdown in the midgut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C31-C33 are supported by citations to genomic studies. This provides important context for why bees may rely on microbiota for detoxification (C14), though C14 itself is an inference rather than a directly tested hypothesis in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Amygdalin toxicity occurs after ingestion but not injection into hemolymph, suggesting gut enzymes convert it to hydrogen cyanide. The dominant bee gut bacterial species produce diverse glycoside hydrolases. Amygdalin itself shows no antibacterial effects and does not significantly affect the bee gut microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by citations (C34, C36-C37) and the authors' own data (C38, Figure 9). The inference about gut enzyme involvement (C35) is reasonable given the route-dependent toxicity, though the specific enzymes were not directly identified in the cited study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "High doses of amygdalin cause acute malaise symptoms and reduced survivorship in bees, while lower doses can also reduce survivorship in lab trials. However, colony-level amygdalin exposure may protect against parasites like Lotmaria passim and reduce viral titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by citations to prior studies. This provides important context about the dual nature of amygdalin effects (toxic at high doses, potentially protective at lower doses), though these are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Bacterial and fungal GH3 enzymes from various organisms (Cellulomonas fimi, Rhizomucor miehei, Talaromyces leycettanus, Aspergillus niger, and mammalian gut-associated Bifidobacterium) can degrade amygdalin, as demonstrated in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C96-C99 are supported by citations to prior literature. This provides important comparative context showing that amygdalin-degrading GH3s are found across diverse organisms, supporting the plausibility of the authors' findings in bee gut bacteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Dietary compounds can be metabolized by both host and microbiota, affecting toxicity. Studies in rats show microbiota-dependent amygdalin degradation to hydrogen cyanide, paralleling the bee findings. The microbiota lowers gut pH to ~5, which can favor spontaneous chemical degradation of amygdalin through prunasin to mandelonitrile and hydrogen cyanide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C104, C106-C111 are supported by citations to prior studies. The comparison to rat studies (C90, C106-C108) strengthens the interpretation of the bee data. The pH-dependent degradation mechanism (C109-C111) provides an alternative or complementary explanation to enzymatic degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Bee gut microbiota members produce diverse carbohydrate-degrading enzymes for food processing and detoxification. Gilliamella produces pectin lyases and glycoside hydrolases for pollen cell wall metabolism and toxic sugar degradation. Bombilactobacillus and Lactobacillus produce mannose metabolism enzymes. Bifidobacterium strains have more glycoside hydrolases but lack pectin lyases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by citations to prior genomic and functional studies. This provides important context about the broader role of the microbiota in carbohydrate metabolism and detoxification, situating amygdalin degradation within a larger functional framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The lower amygdalin degradation activity in E. coli expressing the GH3 compared to native Bifidobacterium may be due to other contributing enzymes or posttranslational modifications not achieved in E. coli. The GH3 appears to be secreted by wkB204 but was expressed without a signal sequence in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 are speculative explanations for the lower activity in heterologous expression. While C103 is supported by data showing degradation in spent medium (Figure 3B), C101-C102 are reasonable hypotheses but lack direct experimental support. Additional experiments would be needed to test these explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Plant secondary metabolites can improve pollinator health by controlling parasites, and insects including bees use toxic metabolites for therapeutic or prophylactic self-medication. However, effectiveness depends on the specific metabolite, concentration, and target parasite. For example, amygdalin reduces Lotmaria passim but not Crithidia in bees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C124 are supported by citations to prior studies. This provides important ecological and evolutionary context for understanding why bees might tolerate and even benefit from amygdalin exposure despite its potential toxicity. The examples from other insects (monarchs, fruit flies) illustrate broader patterns of insect self-medication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Host and microbiota can modulate plant metabolite activity through glycosylation/deglycosylation. Examples include callunene (prophylactic but not therapeutic due to host inactivation), tiliaside (requires deglycosylation for activity), and unedone (glycosylated/inactivated in midgut, then deglycosylated/reactivated in hindgut). Bee gut bacteria can metabolize flavonoid glycosides and encode diverse glycoside hydrolases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 are supported by citations to recent studies. This provides important comparative context showing that the amygdalin findings fit within a broader pattern of host-microbiota cooperation in metabolizing plant glycosides, with spatial and temporal regulation of activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Strain-level variation in microbiome metabolism could affect parasite establishment, and microbiota perturbation by pesticides or heavy metals could indirectly affect parasites through altered secondary metabolite metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C135 are speculative inferences from the study's findings about strain variation. While C134 is a reasonable inference from the demonstrated strain-specific metabolism, C135 is highly speculative and would require substantial additional research to test. These represent potential future research directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Bee gut microbiota interactions with pathogens are widespread, with the core microbiota protecting against viruses, bacterial infections, and Nosema. Mechanisms may involve host immunity and/or direct microbial interactions. Microbial metabolism of dietary components is one mechanism through which microbiota impact hosts or co-resident microbes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 are supported by citations to prior studies establishing microbiota-pathogen interactions. Claim C142 is the main conclusion of the current study, supported by the experimental data. This situates the amygdalin findings within the broader context of microbiota-mediated protection.",
+    "result_type": "MINOR"
+  }
+]

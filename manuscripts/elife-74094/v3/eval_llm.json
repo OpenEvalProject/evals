@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mural cells (MCs) emerge around arterial intersegmental vessels (aISVs) coincident with lymphatic endothelial cell (LEC) migration from the horizontal myoseptum (HM). LECs migrate toward and interact with MCs in approximately 90% of cases, with LECs in contact with MCs migrating twice as fast as those without MC contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C32 provide converging evidence from time-lapse imaging (Figure 1B-E) showing temporal correlation between MC emergence and LEC migration, spatial proximity of MCs between aISVs and LECs (Figure 1A), and quantitative velocity measurements (Figure 1G) demonstrating functional significance. The high frequency of LEC-MC interaction (90%, n=21) and consistent MC numbers before/after migration support the robustness of these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Genetic and pharmacological reduction of MCs impairs LEC migration and lymphatic network formation. The pdgfrbum148 mutant shows 30% MC reduction and decreased lymphatic vessel area, while MC ablation severely compromises LEC migration along aISVs and thoracic duct formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C33-C39 are supported by multiple complementary approaches: genetic mutant analysis (Figure 1H-J), pharmacological inhibition (Figure 1\u2014figure supplement 2), and both NTR-MTZ ablation (Figure 2A-C) and laser ablation (Figure 2D-I) experiments. The convergence of phenotypes across different methods strengthens the conclusion. However, the pdgfrbum148 mutant shows only partial MC reduction and mild lymphatic defects, while ablation experiments show more severe phenotypes, suggesting dose-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mural cells express pro-lymphangiogenic factors including Cxcl12a, Cxcl12b, Vegfc, and Ccbe1. scRNA-seq analysis identifies pericyte and pericyte-like cell clusters expressing these factors, confirmed by qPCR of FACS-sorted MC-enriched populations and immunostaining of transgenic reporter lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C43-C48, C52-C54 are supported by multiple orthogonal approaches: scRNA-seq re-analysis (Figure 3A-C), qPCR validation of sorted cells (Figure 3D-E), and immunostaining (Figure 3F-G). The convergence of transcriptomic and validation data strengthens these findings. However, C54 notes only a 'trend' of enrichment in immunostaining, suggesting spatial heterogeneity or technical limitations. The distinction between pdgfrbhigh MCs on aISVs versus pdgfrblow mesenchyme requires more rigorous quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Signals from MCs are sufficient to promote LEC migration even in the absence of arterial endothelial cells (aECs), as demonstrated by laser ablation experiments where LEC migration progressed when MCs remained present after aEC ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 are based on laser ablation experiments (Figure 2\u2014figure supplement 3) showing LEC migration continues without aECs but with MCs present. However, the authors acknowledge that aISVs rapidly regrow following laser ablation, limiting assessment of long-term effects. The sample size and duration of observation are not clearly specified, and the claim of 'sufficiency' is strong given that the experiment only demonstrates migration can proceed, not that it proceeds normally. Additional controls and longer-term analysis would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C80"
+    ],
+    "result": "Chemokine signaling via Cxcr4 is necessary for proper LEC migration directionality. AMD3100 treatment (Cxcr4 inhibitor) reduces LEC migration distance and velocity, increases filopodia formation with loss of directionality, but does not induce LEC apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C80 are supported by time-lapse imaging with AMD3100 treatment (Figure 4A-F) showing quantitative defects in migration distance, velocity, and filopodia formation. The observation of increased lateral filopodia (C61) supports the inference of compromised directionality. The lack of apoptosis (C62) distinguishes chemokine function from Vegfc-Vegfr3 signaling. However, C57-C58 rely on prior literature citations, and the current study's findings with AMD3100 are more severe than published mutant phenotypes (C83), suggesting potential off-target effects or redundancy among chemokine receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C55",
+      "C56",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C81",
+      "C82"
+    ],
+    "result": "Vegfc-Vegfr3 signaling induces ERK activation in migrating LECs and has dual roles in promoting both LEC migration and survival. MEK inhibitor (SL327) treatment reduces LEC migration, dramatically decreases proliferation (25% to 1.5%), and induces cell death, while chemokine inhibition does not affect ERK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C55-C56, C63-C64, C66-C69, C81-C82 are supported by immunohistochemistry showing pERK in migrating LECs (Figure 3H), time-lapse imaging with SL327 treatment (Figure 4G-K), and TUNEL staining (Figure 4\u2014figure supplement 2B-C). The dramatic effects on proliferation and survival distinguish Vegfc-Vegfr3 from chemokine signaling. However, the inference that ERK activation is a 'pro-survival factor' (C67, C82) is based on correlation between ERK inhibition and cell death, which could reflect indirect effects. The claim that Vegfc-Vegfr3 'instructs' subsequent migration (C69) is an inference from the data rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Chemokine and Vegfc-Vegfr3 signaling pathways cooperate to promote LEC migration. Combinatorial inhibition with soluble Flt4 and AMD3100 shows non-additive effects on migration velocity, and ERK activation is induced mainly via Vegfc-Vegfr3 rather than Cxcl12-Cxcr4 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C70-C77 are supported by combinatorial inhibition experiments (Figure 5A-G) showing that combined treatment does not produce additive effects on velocity (C73), suggesting cooperation rather than independent pathways. The differential effects on ERK activation (C74-C76) provide mechanistic insight. However, the interpretation of 'cooperation' versus 'mechanistic interaction' (C73) is somewhat ambiguous and could benefit from more precise definition. The claim that ERK is induced 'mainly' via Vegfc-Vegfr3 (C76) is an inference from the lack of ERK reduction with AMD3100 alone, but residual pERK after soluble Flt4 treatment suggests additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Pro-lymphatic MCs identified in this study are distinct from previously reported perivascular fibroblasts, as MC clusters lack expression of fibroblast markers nkx3-1, en1a, and en1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by scRNA-seq analysis (Figure 3\u2014figure supplement 1) showing absence of fibroblast markers in MC clusters. This distinction is important for establishing MCs as a novel cellular source of pro-lymphangiogenic factors. However, the analysis relies on re-clustering of published data from whole embryos, and the absence of marker expression could reflect technical limitations (e.g., low expression below detection threshold) rather than true biological distinction. Spatial validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C88"
+    ],
+    "result": "Multiple cellular sources including MCs, fibroblasts, and neurons work together to establish favorable signaling levels for LEC migration, with MCs providing a signaling threshold for robust migration from the HM region along aISVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79, C88 are explicitly speculative (C78 states 'we speculate') and represent integration of current findings with prior literature. While the model is reasonable given the data, it lacks direct experimental support for the concept of a 'signaling threshold' or quantitative assessment of how multiple sources integrate. The claims are more appropriately characterized as discussion/interpretation rather than demonstrated results. Additional experiments measuring local concentrations of factors or testing predictions of the threshold model would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C65",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C40",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background claims establishing prior knowledge about lymphatic development, VEGFC-VEGFR3 signaling, arterial vessel roles, mural cell development, and previously identified fibroblast populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C25, C40, C65, C89-C92 are supported by citations to established literature and represent accurate summaries of prior work. These provide necessary context for the current study but are not novel findings. C11 and C65 regarding VEGFC-VEGFR3's role in proliferation are well-established and cited appropriately. Claims about zebrafish lymphatic development (C16-C22) and MC development (C24-C25, C89) are similarly well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C85"
+    ],
+    "result": "LECs express the atypical chemokine receptor ackr3b at higher levels than cxcr4a and cxcr4b, and putative pericytes also express ackr3b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C85 are supported by scRNA-seq data (Figure 3\u2014figure supplement 1) and qPCR of sorted LECs (Figure 3\u2014figure supplement 3B). The expression pattern is consistent and suggests potential roles for ackr3b in regulating chemokine signaling. However, the functional significance of ackr3b expression is not tested experimentally in this study, and the discussion of its potential roles (C86-C87) relies on citations to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "Published mutant phenotypes for cxcl12a, cxcl12b, and cxcr4a are milder than those observed with pharmacological inhibition, suggesting additional chemokine receptors might act together to regulate LEC migration, potentially including ackr3b which has been implicated in migration in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84, C86-C87 represent comparative analysis and speculation. C83 is a valid observation comparing current results to published data, but C84 is explicitly speculative ('might act together'). C86-C87 cite prior work on ackr3b function in other systems but do not test its role in the current context. These claims identify important questions for future work but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

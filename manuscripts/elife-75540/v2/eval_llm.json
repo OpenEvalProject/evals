@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C85",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Using ultrahigh field fMRI at 10.5 T in nine macaque monkeys, the authors replicated electrophysiological INT hierarchies from multiple prior studies (Murray et al. 2014, Cavanagh et al. 2016, Cirillo et al. 2018, Fascianelli et al. 2019, Maisson et al. 2021, Nougaret et al. 2021) within the same species, demonstrating within-species consistency between fMRI-based and electrophysiology-based INTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C43-C48, and C85 collectively demonstrate that fMRI-based INT hierarchies closely match those from electrophysiology within macaques (Figure 1). The methodological details (C138-C142) support the technical rigor. Minor deviations are acknowledged and attributed to heterogeneity (C49, C86-C87), which is reasonable. This within-species validation is a critical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors extended existing INT hierarchies to whole-brain topographies, revealing a previously uncharacterized hierarchy of INTs in the dorsal visual pathway that follows functional specialization and connectivity predictions, with INTs gradually increasing from primary visual areas to prefrontal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C58, and C100-C101 describe the novel extension of INT hierarchies to the dorsal visual pathway (Figure 2). The hierarchical organization matches anatomical and functional predictions from prior work (Kravitz et al. 2011), providing convergent evidence. This demonstrates the value of whole-brain fMRI coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C80",
+      "C102",
+      "C105",
+      "C106",
+      "C143"
+    ],
+    "result": "INTs are topographically organized along spatial gradients that closely match FC gradient topographies across the whole brain. In the frontal lobe, INTs correlated with the second FC gradient (r=0.47 within-area, r=-0.26 fronto-parietal); in the parietal lobe, INTs correlated with the first FC gradient (r=0.56 within-area, r=0.47 fronto-parietal). At the whole-cortex level, INTs correlated with the second FC gradient (r=0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C59-C72, C80, C102, and C105-C106 collectively demonstrate strong correlations between INT and FC gradient topographies across multiple brain regions (Figures 3-4). The correlations are substantial (r=0.35-0.70) and consistent across different levels of analysis. The methodological approach using BrainSpace (C143) is appropriate. This is a major finding linking temporal and spatial dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C133"
+    ],
+    "result": "Striatal INTs and FC gradients follow cortico-striatal anatomical connectivity patterns. The striatal INT map correlated with the FC gradient from cortico-striatal connectivity (r=0.38), and striatal INTs correlated with reconstructed cortico-striatal INT maps (r=0.45). At the voxel level, striatal INT values matched the average INTs of their top 10 strongest cortical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 and C133 demonstrate that cortico-striatal INTs and FC gradients track anatomical connectivity (Figure 5). The correlations (r=0.38-0.45) are moderate but consistent with the hypothesis. The voxel-level analysis (C79) provides additional granular support. The correspondence with tract-tracing studies (C74) validates the FC gradients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C99",
+      "C107"
+    ],
+    "result": "The authors conclude that intrinsic timescales are a unifying organizational principle of neural processing across the whole brain, with temporal hierarchies being a general principle of organization irrespective of the method used to estimate them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C81, C99, and C107 represent the main conclusion integrating all findings. The conclusion is supported by the replication of electrophysiological hierarchies (Result 1), extension to new regions (Result 2), and demonstration of INT-FC gradient relationships across the brain (Results 3-4). The evidence converges to support this broad organizational principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The lag-1 ACF values and 0-crossing lag were linearly related to INTs, and temporal hierarchies are not driven solely by heterogeneity in ACF magnitude. The hierarchical ordering based on 0-crossing lag is consistent with that based on the INT measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 address a methodological concern about whether INT hierarchies reflect magnitude or timescale. The analysis (Figure 1\u2014figure supplement 1-2) shows that both components are related but that hierarchies are consistent when using 0-crossing lag alone, supporting the interpretation that timescale, not just magnitude, drives the hierarchies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The present findings are in agreement with human fMRI-EEG validation studies, finding slower INTs in frontoparietal areas and faster INTs in sensory-related areas, pointing toward cross-species homologies in cortical INTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 compare the current macaque findings with prior human work (Watanabe et al. 2019). The qualitative agreement in the pattern of INTs across species supports cross-species homology, though direct quantitative comparison is not provided. This supports translational potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Minor deviations from electrophysiological INTs may be attributable to high INT heterogeneity within individual anatomical regions, suggesting that averaging INTs within anatomical regions might not provide a full description of macroscale organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C86-C88 acknowledge and interpret observed deviations. The explanation is reasonable given prior reports of heterogeneity (Cirillo et al. 2018, Nougaret et al. 2021). The stability analysis (Figure 1\u2014figure supplement 3) supports the robustness of the main findings despite these deviations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study could not resolve the exact correspondence between time constants estimated from spiking activity and BOLD. Hemodynamic timescales are more likely to reflect LFP timescales rather than spiking activity, and the relationship may not be linear. The authors hypothesize that hemodynamic timescales generally increase monotonically with electrophysiological timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C98 discuss the relationship between BOLD and neural signals. While the authors provide a reasonable discussion based on prior work (Logothetis et al. 2001, Watanabe et al. 2019), they acknowledge this as an unresolved empirical question (C95). The hypothesis (C96) is speculative. This represents a limitation rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "There are methodological differences between gradient and INT estimation approaches that could lead to underestimation of the FC-INT relationship. The gradient pipeline includes noise reduction steps and bilateral estimation, while INTs are calculated from individual voxels without extra noise reduction. B1 inhomogeneities at ultrahigh fields may introduce asymmetries in INT maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C117 describe methodological considerations and potential limitations. The authors transparently discuss how their methodological choices (bilateral gradient estimation to address B1 inhomogeneities) may affect results. The acknowledgment that FC-INT correlations may be underestimated is appropriate given the higher variability in INT maps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The anesthesia protocol used demonstrates no observable biases to whole-brain connectivity analysis and has relatively low impact on reproducibility. The largest effect of isoflurane is an overall blunting of responses counteracted by ultrahigh field MRI. Anesthesia may remove the confound of subjects engaging in various cognitive processes, though future research should replicate results to exclude possible anesthesia effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 address the use of anesthesia. While prior work (Yacoub et al. 2020, Autio et al. 2021) supports the protocol, the authors acknowledge this as a limitation requiring future replication (C122). The potential advantage of removing cognitive confounds (C121) is speculative. This represents an important caveat to the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Resting-state fMRI in NHPs using ultrahigh field strengths (10.5 T) in combination with high channel count receiver arrays overcomes the challenge of acquiring high-resolution, high SNR whole-brain data in macaques, enabling investigation of FC and INTs across both cortical and subcortical structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 describe the technical contribution of the study. The use of 10.5 T fMRI with specialized coils (C139) enabled high-resolution whole-brain imaging in macaques, which is supported by the data quality and coverage demonstrated throughout the manuscript. This methodological advance is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior to this study, there were no whole-brain, noninvasive investigations into timescales of neural processing in animal models. Traditional electrophysiology is not suited for whole-brain dynamics and is challenging to collect in humans for large datasets. fMRI offers advantages but required within-species validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C34 establish the gap in the literature that the study addresses. The claim that there were no prior whole-brain noninvasive INT investigations in animal models (C2) may be overstated but is reasonable given the cited literature. The rationale for using fMRI and the need for within-species validation is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "INTs, like anatomical connectivity (AC) and functional connectivity (FC), characterize brain organization. AC, FC, and INTs are related, with AC establishing pathways for FC signals and longer TRWs built through cascaded processing. The space of potential INTs is constrained by both AC and FC, though the precise relationships remain somewhat speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C137 discuss the conceptual relationships between AC, FC, and INTs. While the authors provide a reasonable framework and some supporting evidence (C132-C133), they acknowledge the relationships are speculative (C131, C136). The proposed mechanisms (C134-C135) are plausible but not directly tested. This represents a conceptual framework rather than a tested result.",
+    "result_type": "MINOR"
+  }
+]

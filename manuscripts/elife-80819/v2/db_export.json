@@ -1,0 +1,1951 @@
+{
+  "submission": {
+    "id": "486e155e-8d7b-4d2b-9c03-95e5e15b746b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:35:34.464374Z",
+    "updated_at": "2025-12-03T19:35:34.464374Z"
+  },
+  "content": [
+    {
+      "id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "submission_id": "486e155e-8d7b-4d2b-9c03-95e5e15b746b",
+      "content_type": "manuscript",
+      "content_text": "# Reducing societal impacts of SARS-CoV-2 interventions through subnational implementation\n\n## Authors\n\n- Mark M Dekker<sup>1</sup> ([ORCID: 0000-0002-3543-6889](https://orcid.org/0000-0002-3543-6889)) \u2020\n- Luc E Coffeng<sup>4</sup> ([ORCID: 0000-0002-4425-2264](https://orcid.org/0000-0002-4425-2264))\n- Frank P Pijpers<sup>5</sup> ([ORCID: 0000-0001-7572-9435](https://orcid.org/0000-0001-7572-9435))\n- Debabrata Panja<sup>1</sup> ([ORCID: 0000-0003-2141-9735](https://orcid.org/0000-0003-2141-9735))\n- Sake J de Vlas<sup>4</sup> ([ORCID: 0000-0002-1830-5668](https://orcid.org/0000-0002-1830-5668))\n\n### Affiliations\n\n1. Department of Information and Computing Sciences, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n2. Centre for Complex Systems Studies, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))\n3. PBL Netherlands Environmental Assessment Agency The Hague Netherlands ([ROR:052x1hs80](https://ror.org/052x1hs80))\n4. Department of Public Health, Erasmus MC, University Medical Center Rotterdam Rotterdam Netherlands ([ROR:018906e22](https://ror.org/018906e22))\n5. Statistics Netherlands The Hague Netherlands ([ROR:0408v4c28](https://ror.org/0408v4c28))\n6. Korteweg-de Vries Institute for Mathematics, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo curb the initial spread of SARS-CoV-2, many countries relied on nation-wide implementation of non-pharmaceutical intervention measures, resulting in substantial socio-economic impacts. Potentially, subnational implementations might have had less of a societal impact, but comparable epidemiological impact. Here, using the first COVID-19 wave in the Netherlands as a case in point, we address this issue by developing a high-resolution analysis framework that uses a demographically stratified population and a spatially explicit, dynamic, individual contact-pattern based epidemiology, calibrated to hospital admissions data and mobility trends extracted from mobile phone signals and Google. We demonstrate how a subnational approach could achieve similar level of epidemiological control in terms of hospital admissions, while some parts of the country could stay open for a longer period. Our framework is exportable to other countries and settings, and may be used to develop policies on subnational approach as a better strategic choice for controlling future epidemics.\n\n## Introduction\n\nAs in many countries around the world (Brauner et al., 2021; Liu et al., 2021), control of the first COVID-19 pandemic wave in the Netherlands was largely based on nation-wide implementation of a variety of non-pharmaceutical intervention measures (e.g. lockdown, social distancing, or reduced mobility). Their associated societal burden affected all areas in the country equally, while infections and the healthcare burden, in contrast, were distributed heterogeneously across space and time. This brings in focus the question whether the pandemic could have been controlled equally well with interventions specifically tailored to subnational regions, such as municipalities or provinces. In addition to preventing the unnecessary broader societal burden of interventions in (largely unaffected) parts of a country, such tailored strategies potentially have several additional advantages: (1) more efficient use of resources, such as test kits and mobile laboratories; (2) reduced economic losses due to interventions; (3) reducing intervention-adherence fatigue in the population.\n\nEpidemiological analyses can help to explore the value of such strategies (Walker et al., 2020). However, the challenge therein lies in the fact that epidemiological dynamics cannot easily be untangled from human behavior, which varies strongly across societies and cultures (Walker et al., 2020), and are highly heterogeneous even within a population living in a certain geographic region (Marks et al., 2021; Davies et al., 2020). For this reason, such an epidemiological analysis not only needs to capture the spatio-temporal heterogeneities in both transmission and control of an infectious disease, but also \u2018to embed itself locally\u2019 (Vos et al., 2020; Eggo et al., 2021): the demographic composition of the population and how people travel, interact and mingle, across different demographic groups and subnational regions (Lloyd-Smith et al., 2005; Prem et al., 2017; Mossong et al., 2008). Building a corresponding analysis framework that takes all this into account is however not only highly complex, but also requires rich data at high resolutions.\n\nSuch challenges have left their vivid marks in the first COVID-19 wave. By and large, intervention measures deployed in spring 2020 were not enough to spatially contain the virus: the worldwide spread of SARS-CoV-2 along the backbones of globalized travel was too fast to allow continuation of travel as usual. Reliable data (specifically, near-real time data needed for policy-informing epidemiology) on community-transmission were not readily available to researchers and policy makers during most part of the first wave. For setting intervention policies in such a situation, large parts of the world used epidemiological insights that were emerging from other countries that experienced the epidemic earlier, notably China (Li et al., 2020; Zhang et al., 2020). First, this meant that local embedding was being missed (Eggo et al., 2021). Second, by the time reliable data started to become available, national policies in many countries, for example, the Netherlands (RIVM, 2021a) or the UK (Kucharski et al., 2020), were mostly informed by models considering populations that were demographically but not spatio-temporally heterogeneous (Press and Levin, 2020).\n\nHere, using the Netherlands as a case in point, and supported by a combination of rich data sources (demography, mobility, mixing, hospitalization and seroprevalence), we develop an epidemiological analysis of the first COVID-19 wave by building a dynamic proxy network of people\u2019s contacts to embed into the local context as well as to account for high-resolution spatio-temporal heterogeneities (Cevik and Baral, 2021). The wave covers the period February 27, 2020 (the first tested case of COVID-19 in the Netherlands) till June 1, 2020 (lifting of most intervention measures). In relation to the celebration of Carnaval, an annual festivity preceding Lent that is heavily celebrated in the south of the country and is associated with large group gatherings and movement of people, the outbreak started mainly in the south of the Netherlands. In this timeline, there are four distinguishable periods in terms of the policy landscape, which we refer to as phases: (i) Phase 1 (Feb 27 - Mar 11) when transmission of the pathogen progressed unchecked, (ii) Phase 2 (Mar 12 - Mar 22) with minor interventions involving a working-from-home policy, cancellation of large events, some social distancing and face mask advice in specific buildings such as hospitals, (iii) Phase 3 (Mar 23 - May 11) involving a strict nation-wide lockdown with closed schools and event centers, mandated social distancing and working-from-home policies, and (iv) Phase 4 (May 11 - May 31) involving a gradual lifting of all measures. The analysis not only allows us to individually assess the efficacy of the (national) non-pharmaceutical intervention measures that were implemented in the Netherlands, but it also allows us to investigate to what extent subnational implementation of interventions during the first wave of COVID-19 would have led to poorer or comparable control of the pandemic in the country as a whole. In larger countries the most appropriate subnational resolution could be at the level of counties, provinces, or any other existing administrative regions to make best use of clear lines of communication and responsibilities; in a small, densely populated country like the Netherlands, municipalities are the most appropriate ones. Our analysis can be exported to any other country provided comparably rich datasets, capturing the local embedding for the analysis, are available.\n\n## Results\n\n### Analysis framework\n\nTaking an agent-based approach, we build our framework in two parts: (i) demography, mobility and mixing considerations that provide a high-degree of local embedding, and (ii) transmission and interventions, each consisting of four steps (1\u20134 and 5\u20138, respectively in Figure 1). The key steps for the epidemiological dynamics are summarized below; additional details can be found in the methods section and Appendix 1.1-1.8 (one Appendix 1 section per step).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/80819/elife-80819-fig1-v2.jpg)\n\n**Figure 1.:** See Appendix 2.1 for a description of the data used in steps 2 and 5. Processes in steps 2, 3, and 6 are stochastic in nature.\n\nIn the first part, we define the agents and their movements. In the first step, using registry data available at the Dutch national statistics agency (CBS, Statistics Netherlands), we stratify the Dutch population into 11 demographic categories and 380 municipalities. With about 17 million Dutch residents, we define an agent to represent approximately 100 Dutch residents. We distribute the agents across municipalities proportionally to population sizes. The second step is to define the probability that an agent moves between municipalities. This process is constructed using Dirichlet distributions for the probability of an agent\u2019s location, quantified based on anonymized mobile phone signals. In the third step, we draw the agent\u2019s locations and movements at hourly time resolution. The fourth step is to define the mixing of agents present within the same municipality, which depends on the demographic category of the agent, time of day and the type of activity that the agent is engaged in: \u2018home\u2019, \u2018school\u2019, \u2018work\u2019, and \u2018other\u2019. The corresponding mixing matrices were based on existing surveys (Prem et al., 2017). Together, the four steps establish a dynamic proxy network of people\u2019s contacts throughout the entire country at municipality-level, with hourly resolution over the full period of analysis.\n\nThe second part of the analysis covers transmission and interventions. Here, the fifth step concerns the initialization of the epidemic transmission model, which was based on observed hospital admissions, which initially occurred mainly in the south of the country. The sixth step was to define transmission, based on the SEIR model for agent-to-agent pathogen transmission, which means that every agent at any time has one of the following four labels: susceptible ($S$), exposed ($E$), infectious ($I$) and recovered ($R$). Every 1-hr time step, susceptible agents may move to the exposed compartment as a result of the force of infection that they experience as a function of the prevalence of infectious cases in each demographic category in the same municipality, expected contact rates between the agent and the different demographic categories, and their respective infectiousness. The seventh step concerns the quantification of changes across the first COVID-19 wave: (i) behavioral measures that reduce contact rates, (ii) mobility reductions, and (iii) school closure. Mobility changes were computed using Google Mobility data and mixing changes were based on survey data (Backer et al., 2021) conducted during this period. The effect of behavioral measures were calibrated to reproduce the epidemic trend over time. In the final step, we simulate transmission and the effect of changes in interventions over time. Predicted trends in infection numbers were translated to incident and prevalent hospital admission using a simple cohort model (de Vlas and Coffeng, 2021) that accounts for the delay between initial infection and admission as well as the duration of admission. This cohort model was quantified based on hospitalization data from the Dutch National Intensive Care Evaluation (NICE) registration. (Henceforth, at any point of time, we refer to individuals that have been exposed in the past as \u2018affected\u2019, so that at that point in time, they are either exposed, infectious, or recovered.)\n\nA summary of the analysis itself can be found in the Methods section.\n\n### Reproducing the first COVID-19 wave\n\nEven for a geographically heterogeneous analysis it is necessary to verify that the national trends are reproduced, which serves to calibrate and validate the relevant parameters in our simulations. The results of the calibration process, carried out by means of an ensemble of 40 stochastic simulations, is shown Figure 2(a\u2013b). The calibration is performed by means of four transmission-related parameters \u2014 $\\beta_{1}$ through $\\beta_{4}$, one for each phase of the first wave \u2014 to reproduce the total national hospital admissions data spanning approximately three months [panel (a)], including the (initial) doubling time [panel (b)]. Hospital admissions were the most reliable source of data during the first wave, and are shown in Figure 2 as a thick black line in both panels, with the red line and its margins showing the range produced by our simulations. The curves in other colors in panel (a) denote the numbers of infectious and exposed people, obtained from simulations. See Materials and methods for the $\\beta_{t}$-parameter values, and Appendix 1.8 for the details of the calibration process.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/80819/elife-80819-fig2-v2.jpg)\n\n**Figure 2.:** Panel (a), left axis: the daily number of new infections and exposures in yellow and green, respectively. Right axis: daily hospital admissions from analysis output (red) and observed data (black). Background colors and vertical black lines denote the four phases (arbitrary coloring). Uncertainty intervals mark the minima and the maxima in the ensemble of realizations used in the analysis; the same holds for panels (b), (c) and (e). Panel (b): Hospitalization doubling time over the period March 13 - March 27, 2020 (shaded gray shaded time domain) in analysis (red, 4.6 days) and observed data (black, 4.61 days). Panel (c): % affected agents (i.e., $E$, $I$ or $R$) per demographic group for March 12 (dashed) and March 23 (solid). Panel (d): % affected agents per municipality on two days (March 5, May 25). Blue circles indicate the geographical locations of the three example municipalities shown in panel (e). Panel (e): Infectious agents (yellow) and hospital-admitted agents (analysis in red, and observed data in black) in three municipalities: Eindhoven, The Hague and Groningen. Analysis data correspond to an ensemble of 10 independent realizations.\n\nAge stratification in our analysis reveals how the first wave likely played out nationally across demographic groups, with non-studying adolescents, middle-age working people, and students as the most affected demographic groups [Figure 2(c)]. The model predicts similar patterns for seroprevalence levels across age as was observed in June 2020 [Appendix 2\u2014figure 1]. It also predicts that the epidemic geographically spread from the south (where COVID-19 is introduced in the analysis) to the north of the country via major cities in the west [Figure 2(d)]. This geographic pattern approximately reflects the actual spread in the Netherlands, although we should not expect the analysis to perfectly reproduce given the high variability in the ensemble runs (see Appendix 2.4). Finally, in panel 2(e) the hospitalization data over time are compared for three different locations in the Netherlands: the first Dutch outbreak site in the South (Eindhoven), a location in the West (The Hague) where the epidemic spread relatively quickly, and a site in the North (Groningen) which was affected less and also later. That only four (national-level $\\beta_{t}$-) parameters leads to realistic geographical spread across 380 individual municipalities over time serves to validate our approach for a geographically heterogeneous analysis (next section).\n\nAfter the satisfactory calibration process above, we use the analysis to unravel the impact of individual lockdown components (behavior, mobility, school closure). Figure 3(a), again a 40-member strong ensemble, shows how reductions in mobility contributed most to epidemic control; without mobility restrictions (red), case numbers would have approximately doubled. Behavioral changes (blue) have also had a considerable impact, albeit lower than mobility. (Determining the impact of the behavioral intervention measures is fairly straightforward: rather than varying the values of the transmission-related parameters $\\beta_{1}$-$\\beta_{4}$, we simply keep all at the same value as for the very first phase.) Our analysis also predicts school closure [yellow, Figure 3(a)] to have had little impact. On this, we note that due to political debate, the Dutch schools were closed relatively late (March 16, while the first confirmed case was on Feb 27) and therefore have contributed little to epidemic control in our analysis (logically, earlier closure of schools should have had a positive epidemiological impact, see Appendix 2.3). The individual lockdown components contributed similarly to spatial spread [Figure 3(b)], which quantifies the geographic spread of the COVID-19 pandemic in the Netherlands by following the number of municipalities affected substantially (for this, we use the measure of having $>0.08$% of population hospital admitted).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/80819/elife-80819-fig3-v2.jpg)\n\n**Figure 3.:** In both panels, observed data are shown in black, the reference in green, and the impacts of (i) no behavioral changes like wearing masks, enhanced hygiene and social distancing in blue, (ii) no mobility reduction in red and (iii) no closing of schools in yellow. Bandwidths indicate the minima and maxima around the mean of a simulation ensemble of 40 realizations. Panel (a): Cumulative national hospital admissions. Panel (b): Geographical spread of hospital admissions, measured by the fraction of municipalities that have at least 0.08% of the population admitted to the hospital.\n\n### Effects of subnational implementation of interventions\n\nNext, we evaluate the potential of subnational interventions, which in the Dutch case concerns non-pharmaceutical interventions issued at the level of municipalities. For a fair comparison across scenarios and with hospital admission data during the first wave, we implement subnational interventions in our simulations following the national trend. This means that we initiate lockdown in a municipality when the simulated prevalence of infectious cases within that municipality has passed a certain threshold \u2014 a fraction of the municipality\u2019s population \u2014 where the exact intervention measures are synchronous those issued in reality on a national scale (Appendix 1.9). Choosing the value of this threshold poses a trade-off: a lower threshold ensures implementation of local interventions in an early stage of the COVID-19 wave which would suppress hospital admission counts, but could unnecessarily shut down economic and social activity in some parts of the country that are less affected by the disease. Vice versa, a higher threshold would target municipalities where the epidemic has progressed most, but could pose the risk of starting control too late, resulting in more hospital admissions. To show the effect of different thresholds for prevalence of infectious cases, we choose a wide range of 3%, 1%, 0.33%, and 0.1%. Our choice to use prevalence of infectious cases for local decision-making is motivated by the following premise. Even though testing and case reporting were not yet at a sufficient scale to inform local decisions during the first wave, since then they were significantly scaled up. Moreover, with emerging methods and technologies such as sewage monitoring, fast identification of disease biology (e.g. time until symptoms) and live tracking of infections by mass testing (Pavelka et al., 2021) and using apps, number of infections in future will be proxy-estimated with progressively greater accuracy and speed, facilitating faster decision-making on subnational intervention measures (such as, in the Netherlands, starting or scaling down lockdowns at the level of municipalities).\n\nThe results are shown in Figure 4. In panel (a), the epidemiological impact of subnational interventions is quantified in terms of the number of hospital admissions, while the societal impact is quantified in panel (b) by the number of municipalities that are undergoing interventions. In panel (a), the lockdown as implemented in the Netherlands is represented by the black (observed) and green lines (prediction), which resulted in approximately 13 thousand hospital admissions up to 1 June 2020. Higher thresholds for deciding to implement a local lockdown clearly result in higher numbers of cumulative hospital admissions [panel (a)] and correspondingly a lower number of municipalities affected [panel (b)], and vice versa. A decision-making threshold of 3% (dark red) can be seen to be too high; although it only selects a few municipalities to go into lockdown directly at March 12th (185 million additional person-days intervention-free over the full wave), which could be considered a benefit of this approach, it results in a 157% increase in number of admissions ($\u223c19$ thousand). The more stringent thresholds of 1.0% and 0.33% result in numbers of hospital admissions closer to a national lockdown (4670 and 410 additional admissions, respectively), but at a more modest societal benefit: 268 and 167 municipalities initialize interventions later than in the national approach, respectively. This translates to 103 million and 36 million additional person-days free from interventions over the full period. Interestingly, at the lower threshold of 0.33% (orange), approximately 6% of the municipalities never undergo interventions. Even closer to the fully national approach, we also tested a threshold of 0.1% (yellow), which yields only a few additional hospital admissions, and still 18 municipalities remaining intervention-free for over 5 weeks. The maps [Figure 4(c\u2013d)] show the corresponding geographical distribution of percentages of affected people [panel (c)] and the societal benefits of subnational interventions in terms of the fraction of simulation-ensemble realizations in which a municipality remains without interventions [panel (d)]. Municipalities that remain free of interventions are mainly located in the north and east of the country, as can be most clearly seen for the 0.33% threshold scenario. From a mobility perspective, these municipalities belong to the more rural, isolated, and less densely populated subnational regions of the country.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/80819/elife-80819-fig4-v2.jpg)\n\n**Figure 4.:** Panel (a): Cumulative hospital admissions for different scenarios. Panel (b): Fraction of municipalities that do not have any interventions in place. Panel (c): Cumulative fraction of infection cases per municipality for the three local intervention thresholds. The additional number and percentage growth in hospital admissions as compared to the observed national interventions is indicated. Panel (d): Geographical indication of which municipalities have undergone interventions and which ones not. The number of municipalities that do not is shown in panel (b).\n\nDuring the first COVID-19 wave, the Dutch government did not implement subnational intervention measures, aside from bringing out an early advice to work from home in the south of the country, the epicenter for the first wave. The reasoning was that once COVID-19 cases were discovered locally, most likely, the pathogen would have already spread throughout the entire country. This is generally in line with observations that the Netherlands is spatially well-connected in terms of people\u2019s mobility patterns, facilitated by a robust public transport system and a high population density, with the caveat that hospital admission data during the first wave did suggest that provinces in the north and east of the country were substantially less affected. Our results show that when combined with live tracking of local infections in sufficient detail, implementation of interventions could be postponed or tailored towards local contexts, without causing too much additional health burden. (This would of course require local governments to be mandated appropriately and that local populations adhere to local measures.)\n\n## Discussion\n\nUsing the Netherlands as a case in point, we have evaluated the contribution of different interventions to the total effect of the lockdown, and explored to what extent subnational implementations of intervention measures might have had less of a societal impact, but comparable epidemiological impact. To this end, we have developed a highly detailed geographically- and demographically stratified analysis framework based on a dynamic proxy network of people\u2019s contacts throughout the entire country at municipality-level, with hourly resolution, which in turn utilizes human mobility between municipalities based on mobile phone signal data. We found that in the Netherlands, mobility reductions during the first wave contributed most to epidemic control; without them, we predict that a doubling of hospital admissions would have occurred. Our analysis, albeit based on a small country, shows that subnational (translated to be at the municipality-level) implementation of interventions strategies is worth considering, provided that means to monitor infection levels are available (via sewage surveillance [Mallapaty, 2020]), can substantially reduce the societal burden of interventions. The benefits of such an approach are expected to be even greater for larger and more populated countries. Moreover, similar or even higher gains can be expected by considering a subnational approach for also lifting interventions at a subnational level: analogous to initializing interventions, the reduction of the disease\u2019s prevalence across municipalities is not synchronous and, depending on the chosen prevalence threshold, some will be able to lift earlier than was done nationally.\n\nEven though the methodology proposed in this paper comprises demographic and geographic stratification, and distinguishes multiple circumstances of mixing, there are still forms of granularity that we omit (e.g. households), which limits our ability to evaluate the impact of specific interventions with higher precision (Lee et al., 2020). For instance, when incorporating the effect of school closures, the effect of interacting only with family members instead of schoolmates has been captured at the level of a municipality as a whole (i.e. a different mixing pattern between demographic groups combined with an overall lower transmission rate). As such, our framework cannot provide insights into the role of households and household-level interventions, which have for instance been shown to play a critical role in the geographical spread of infection between schools (Munday et al., 2021; Lessler et al., 2021). Another limitation is that mobility in our framework is quantified based on mobile phone signal data that only provide anonymized movements between pairs of locations. As such, the data do not provide identifiers to link multiple movements into one itinerary, which means that in our analysis, agent movements are somewhat shorter on average than in reality, but agents also visit more different locations than in reality. We further assume that agent movements vary randomly day-by-day, whereas in reality commuting means that an agent would repeatedly travel to the same location. However, the impact of this simplifying assumption is limited as, at the start of an epidemic, the distribution of movement over agents is of relatively low importance, especially in the case of a relatively small and highly connected country as the Netherlands. This is in contrast to situations towards the tail of an epidemic or in larger geographies (e.g. Brazil [Castro et al., 2021; de Souza et al., 2020] and India [Laxminarayan et al., 2020]), where the transmission potential of \u2018high-mobility corridors\u2019 can eventually dry up as a result of rising immunity among high-mobility individuals. Finally, we adopted data on national patterns in mobility (Google mobility), meaning that it was not possible to account for changes in mobility by geography or demographic group. The geographical aspects could be addressed by using longitudinal mobile phone signal data or individual-level self-reported data via mobile phone apps (Drew et al., 2020; Oliver et al., 2020; Ferretti et al., 2020). This would require that such data are stored in a useful and accessible format in a General Data Protection Regulation (GDPR)-compliant manner, which may be challenging indeed.\n\nIn this study, we investigated only one of the several potential uses of our framework in a specific country. With appropriate data sources, the framework can be adapted to other countries and settings of similar or larger geographical scale. Importantly, the framework can also address other policy questions that involve a geographical or social dimension. For instance, we explored the potential impact of specifically isolating affected subnational areas (i.e. banning all mobility into and out of a municipality for the Netherlands), which could reduce hospital admissions by about 30%, compared to the actual national lockdown (Appendix 2.3). With further expansions, the framework could address questions related to, for instance, closing or limiting specific (public) transport routes (Quilty et al., 2020) and banning specific mass events (Herng et al., 2022; Moritz et al., 2021; Lemieux et al., 2021) \u2014 for both of which much more fine-grained (temporal and geographical) data would be required. Evaluating pharmaceutical interventions such as vaccination, too, is possible to capture within this framework, upon coupling data sources associated with age-stratified vaccination rollout, as well as types of vaccines used.\n\nIn conclusion, we have demonstrated the potential added value of subnational implementation of interventions which, with appropriate information about infection levels in subnational areas, may significantly reduce the societal burden of lockdowns to control infectious disease. For the Dutch case, we calculate explicitly how many municipalities could have remained open with limited additional hospital admissions: 167 at the start and 12 still open after five weeks, with only 3.4% more hospital admissions. Of course, these numbers cannot be directly projected in subsequent COVID-19 waves in the Netherlands, or for that matter, to any waves in other countries or other variants and diseases. Nevertheless, there are several merits of this study for a broader context to mention. First, the policy relevance of our study is that we highlight the potential of subnational interventions. The Netherlands has a high population density and is highly interlinked in terms of mobility, but even there a subnational approach would have benefited the intervention strategy \u2014 which does create high expectations of similar approaches in other countries. Second, on a meta-level, the results yield an important message to policymaking to rethink how and at which level mandates are distributed across institutions in epidemic situations and to at least consider the potential benefits of providing regional institutions such as provinces or municipalities with the possibility to apply differentiated action. The results feed the more general discussion on the balance of societal impact of lockdowns and pressure on the health system. Third, in terms of methodology, the main merit of our approach lies in the fact that it captures the local context by coupling empirical data sources on demography, mobility, and spatial clustering of the population and link this to disease transmission. This makes the approach itself, rather than the specific numbers, exportable to other settings. Additionally, we show how to decouple individual interventions in Figure 3, which is made possible by capturing the local context: mobility reduction and behavioral changes cannot be separated if mobility and behavior are not explicitly modeled. (Even though we note that even at our high resolution level, there are limits to which such interventions can be fully distinguished, as mentioned above.) In Appendix 2.3, we have also added hypothetical scenarios on closing municipality borders, closing schools earlier and initializing the epidemic in Amsterdam \u2014 all of which can be studied using a framework such as that described here. Building on these points, we believe this paper adds to the discussion on intervention approaches in any future epidemic beyond the case study.\n\nThat said, whether subnational implementation of interventions is sufficient to successfully control an epidemic should be expected to vary across countries and cultures, as its effectiveness depends on its timeliness and feasibility, and it being sufficiently supported and/or enforceable. For example, subnational control measures worked (to some extent) in China due to high enforcement and feasibility (sheer man power), and in New Zealand and Australia due natural long distances between subpopulations and relative isolation from the rest of the globe (Sachs et al., 2022). In contrast, during the initial wave in Northern Italy which is a highly connected region, the regional lockdown was implemented too late to curb further geographical spread (Waitzberg et al., 2022).\n\n## Materials and methods\n\nThis section is devoted to discuss a few of the core concepts of the methods. For a detailed step-by-step explanation, see Appendix 1.1-1.8.\n\n### Agents and their mobility patterns\n\nThe basis for the mobility patterns is anonymized mobile phone signal data gathered by a commercial data provider, resulting in numbers of daily travels by people living in municipality $i$ to municipality $j$, split into frequent, regular and incidental movements. Additionally, the demographic data provided by Statistics Netherlands (CBS) allowed us to distinguish 170,721 agents (with roughly 17 million residents, this means that each agent represents about 100 of them) with demographic details (Appendix 1.1). For each agent, we determine movements by drawing from mobility distributions computed from the mobile phone signal data, in which we distinguish frequent from incidental and regular movements by making assumptions about the reasons of moving (work and school versus other activity). More specifically, the generated mobility distributions are Dirichlet distributions, using the (normalized) movements data as shape parameters. From these distributions, we independently draw fractions of the day spent in each municipality (i.e. resulting in 380 fractions for each of the 380 municipalities), that are subsequently converted into integer hours spent in municipalities. More detailed information on the computing of the agents\u2019 movements can be found in Appendix 1.2 and Appendix 1.3.\n\n### Pathogen transmission\n\nTransmission from susceptible ($S$) to exposed ($E$) in this stochastic SEIR-based model is based on a \u2018force of infection\u2019 $\\lambda$, which is translated to an hourly infection probability. The idea behind $\\lambda$ exerted on a susceptible agent is that each demographic category contributes to the chance of transmission of the pathogen to this agent, weighted by the expected mixing between the agent and this category, as well as on the fraction infectious in this category. The full equation for $\\lambda$ for people from demographic group $g$ in municipality $m$ at time $t$, involving a summation over all demographic groups $g^{\u2032}$ adding to the force of infection, is as follows.\n\n$$\n\\lambda(g,m,t)=h(g)\u23dfSusceptibilityofg\u22c5\\beta_{t}\u22c5s\u00af(t)\u23dfPhase&dailycycle\u22c5\\sumGroupg\u2032n_{g,g\u2032}\u22c5\\frac{I(g\u2032,m,t)}{N(g\u2032,m,t)}\u23dfMixingwithgroupsg\u2032.\n$$\n\nThe first part on the right hand side of the equation involves a parameter $h\u2062(g)$ that reflects the susceptibility of an agent belonging to demographic group $g$ to the disease (see Appendix 1.1). The second part ($\\beta_{t}\u22c5s\u00af\u2062(t)$) contains the behavioral parameter $\\beta_{t}$ (such as wearing face masks and maintaining social distance) depending on the phase of the wave (leading to $\\beta_{1}$-$\\beta_{4}$, see Appendix 1\u2014table 1) and a daily cycle parameter $s\u00af\u2062(t)$ (see Appendix 1.6); for example, ensuring that agents barely have any contacts in the middle of the night. The third part involves the mixing with the eleven different demographic groups: $n_{g,g^{\u2032}}$ is the expected number of contacts that group $g$ has with group $g^{\u2032}$, based on the mixing matrix that reflects the situation (i.e. \u2018home\u2019, \u2018school\u2019, \u2018work\u2019 or \u2018other\u2019). The fraction $\\frac{I\u2062(g^{\u2032},m,t)}{N\u2062(g^{\u2032},m,t)}$ is the fraction of the total number ($N$) of agents belonging to group $g^{\u2032}$ in municipality $m$ that are infectious ($I$).\n\nThe time scales of transitions from exposed ($E$) to infectious ($I$) and from infectious ($I$) to recovered ($R$) \u2013 expressed in an incubation and an infection time scale, respectively \u2013 differ per case and are drawn from Weibull distributions with mean time scales of 4.6 and 5 days, respectively (de Vlas and Coffeng, 2021; Appendix 1.5).\n\n### National-level interventions\n\nThe first COVID-19 wave in the Netherlands lasted over the period February 27 (first reported case) to June 1, 2020. Based on the interventions that took place, we split this period into four phases, for which we analyze the epidemiological impacts of changes in mobility, mixing, behavior and school closure. Details about these phases are shown in Table 1.\n\n**Table 1.**\n Overview of how the four phases in the first wave of COVID-19 in the Netherlands are implemented in our analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Phase</th>\n      <th>Start</th>\n      <th>End</th>\n      <th>Travel</th>\n      <th>Mixing</th>\n      <th>Behavior</th>\n      <th>Schools</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Feb 27</td>\n      <td>Mar 11</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u03b21=0.135</td>\n      <td>Open</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Mar 12</td>\n      <td>Mar 22</td>\n      <td>\u201331.7%</td>\n      <td>Reduced as per Apr 2020</td>\n      <td>\u03b22=0.11</td>\n      <td>Closed halfway*</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Mar 23</td>\n      <td>May 10</td>\n      <td>\u201342.4%</td>\n      <td>Reduced as per Apr 2020</td>\n      <td>\u03b23=0.09</td>\n      <td>Closed*</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>May 11</td>\n      <td>Jun 1</td>\n      <td>\u201320.1%</td>\n      <td>Reduced as per Jun 2020</td>\n      <td>\u03b24=0.11</td>\n      <td>Open</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Schools were closed in the period March 16 \u2013 May 10, which is also what we use in our analysis._\n\nIn our analysis, we capture these changes in the following manner. First, we reduce inter-municipality mobility as reported by Google, 2021 in the four phases of the first wave in the Netherlands. The dominant contribution to this travel reduction, by far, was due to a working-from-home policy recommended by the Dutch government; we implement it in our analysis by placing the reported percentage of agents, randomly drawn from the working categories, at home. Secondly, we address changes in mixing patterns by determining percentage changes in the mixing among different age groups from Dutch survey data (Backer et al., 2021) in the months February, April, and June 2020, and applying these changes element-wise to the mixing matrices used in our analysis. Thirdly, we represent behavioral changes by variations in $\\beta_{t}$ in Equation 1 across the four phases of the first wave. Fourth and finally, we implement school closing by placing school-going agents (i.e. primary school children, secondary school children and students) as well as the parents of primary school children at home, both in terms of the home locations of the agents and in terms of its implications on mixing (see Appendix 1.5).\n",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "3a3dbd00-4017-460f-ae4d-a5eb8234a581",
+      "submission_id": "486e155e-8d7b-4d2b-9c03-95e5e15b746b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80819.sa0](https://doi.org/10.7554/eLife.80819.sa0)\n\nThis useful study, based on simulations from an agent-based model of SARS-CoV-2 transmission in the first wave in the Netherlands, provides solid evidence that a subnational implementation of non-pharmaceutical interventions, with control measures varying in response to local variations in infection prevalence, would have the potential to achieve similar levels of epidemiological control to a nationally homogeneous response while reducing negative societal impacts. The work will be of interest to communicable disease epidemiologists and those involved in policy responses to epidemics.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ben S Cooper, https://ror.org/052gg0110 University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.80819.sa1](https://doi.org/10.7554/eLife.80819.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Reducing societal impacts of SARS-CoV-2 interventions through subnational implementation\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Ben S Cooper as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Neil Ferguson as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. Sensitivity analysis to explore the impact of the 1:100 population scale assumption is needed along with clarification of why and how this approach was used.\n\n2. Further descriptive analysis of the mobility data set (possibly as supplementary info) should be added and the authors should illustrate how that drives the local diffusion process. In particular, we strongly encourage expanding the use of the Mezuro data set beyond the short period in March 2019 to estimate effects of lockdowns on travel patterns. Further explanation of the analysis presented and categorisation into frequent, regular and incidental is also needed.\n\n3. Additional analysis is needed to explore the consequences of decoupling the introduction of individual interventions; for example, prioritising keeping schools open longer, even as behavioural changes are introduced.\n\n4. Additional sensitivity analyses are needed to include consideration of the impact of (i) imperfect surveillance (eg, due to asymptomatic transmission, reporting delays, etc); (ii) non-compliance, which could potentially differ for subnational versus national interventions; (iii) pathogens/variants with transmission/severity characteristics different from the original SARS-CoV-2 strain; (iv) different assumptions about the introduction of the pathogen (currently the text says it was introduced only in the south).\n\n5. Check that numbers reported in the text and Figure 4 are in agreement.\n\n6. Use consistent definitions throughout eg for \"affected people\".\n\n7. Expand the discussion of local lockdowns to reflect experience elsewhere e.g. in Northern Italy and China, as well as a wider consideration of practical and ethical concerns including potential unintended consequences and feasibility of messaging.\n\n8. Revise figure 2c so it is possible to distinguish the lines. The caption and legend for figure 2 are also inconsistent.\n\n9. There are also several places where the SI needs attention either to improve clarity or to correct errors.\n\nReviewer #2 (Recommendations for the authors):\n\nI would suggest to provide a much more detailed statistical analysis of the Mezuro data set and how this can explain the early dynamics observed in the Netherlands, with less focus on effectiveness of local lockdowns as a possible intervention.\n\nReviewer #3 (Recommendations for the authors):\n\nAnalysis:\n\nAs noted above, there are several key questions that I think warrant further analyses to increase the general relevance of the work (expanding on points raised in the Public Review):\n\n1. The study includes three intervention types (school closure, behavioural change, and mobility restrictions) which are implemented as a package. Given the varied impact of these measures on epidemiological outcomes, it would be interesting to explore the consequences of decoupling the introduction of individual interventions; for example, prioritising keeping schools open longer, even as behavioural changes are introduced.\n\n2. At the time of the first wave, the extent of asymptomatic transmission of SARS-CoV-2 was not well understood. Surveillance systems (in many countries) took time to establish and scale up in response to the first wave of COVID with implications for timely reporting of case numbers. This work does not currently consider the impact of imperfect surveillance on the effectiveness of subnational interventions.\n\n3. There is an implicit (but I would consider strong) assumption that subnational interventions in a location will be as effective as national lockdown. This work does not currently consider that populations subject to localised lockdowns may be less compliant, and the extent to which this may decrease the impact of subnational lockdowns. While there is obviously limited data in the context of the Netherlands to inform such analyses, subnational interventions were deployed in other countries, such as the United Kingdom and Australia, over the last 2.5 years, providing some opportunity to observe how such interventions were managed, along with successes and challenges associated with such approaches.\n\n4. As it stands, the scenarios demonstrate the potential effectiveness of an approach that could have been taken in response to the first wave of SARS-CoV-2 in the Netherlands. The relevance of the paper would be greatly increased by expanding the analyses to explore how effectiveness of subnational interventions may vary in the context of a different pathogen/ variant (ie, with respect to transmissibility, severity, asymptomatic infection, etc).\n\nDiscussion:\n\nWhile I think there is considerable opportunity to use the model described in this manuscript to also explore the other issues mentioned above (discussion of unintended consequences, etc), I recognise that these may be considered beyond the scope of a single paper. I do feel that the discussion would be much richer if it considered some of these issues, however.\n\nThe parenthetical comment \"(This would of course require local governments to be mandated appropriately and that local populations adhere to local measures)\" suggests the authors are aware of issues associated with implementation issues associated with subnational interventions; however, I think a much richer discussion of this is warranted.\n",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7c2043c-7b60-447a-828e-2055d479635f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C1",
+      "claim": "Many countries relied on nation-wide implementation of non-pharmaceutical intervention measures to curb the initial spread of SARS-CoV-2, resulting in substantial socio-economic impacts.",
+      "claim_type": "EXPLICIT",
+      "source": "To curb the initial spread of SARS-CoV-2, many countries relied on nation-wide implementation of non-pharmaceutical intervention measures, resulting in substantial socio-economic impacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting intervention measures across countries.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "9074bab7-87c7-4f57-b298-4be990993769",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C2",
+      "claim": "Control of the first COVID-19 pandemic wave in the Netherlands was largely based on nation-wide implementation of a variety of non-pharmaceutical intervention measures.",
+      "claim_type": "EXPLICIT",
+      "source": "As in many countries around the world (Brauner et al., 2021; Liu et al., 2021), control of the first COVID-19 pandemic wave in the Netherlands was largely based on nation-wide implementation of a variety of non-pharmaceutical intervention measures (e.g. lockdown, social distancing, or reduced mobility).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on intervention measures and established knowledge about Dutch COVID-19 policy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c7f5ad31-f0e2-4936-8b7c-d6b078597926",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C3",
+      "claim": "The societal burden of interventions affected all areas in the Netherlands equally, while infections and healthcare burden were distributed heterogeneously across space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Their associated societal burden affected all areas in the country equally, while infections and the healthcare burden, in contrast, were distributed heterogeneously across space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of national interventions versus localized disease spread.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "9f4436df-5489-4efd-8c41-289a0dccdd8e",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C4",
+      "claim": "Tailored subnational intervention strategies could prevent unnecessary broader societal burden in largely unaffected parts of a country.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to preventing the unnecessary broader societal burden of interventions in (largely unaffected) parts of a country, such tailored strategies potentially have several additional advantages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential benefits of subnational strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "ec7997dc-854e-4e7e-b12d-10e5f2922601",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C5",
+      "claim": "Subnational intervention strategies could enable more efficient use of resources, such as test kits and mobile laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) more efficient use of resources, such as test kits and mobile laboratories",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential advantages of subnational approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "bc445a98-c110-4e82-b4ff-5a53fc9602ad",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C6",
+      "claim": "Subnational intervention strategies could reduce economic losses due to interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) reduced economic losses due to interventions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential economic benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "1ad8d88d-4250-4c58-904a-f92229aeb7bb",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C7",
+      "claim": "Subnational intervention strategies could reduce intervention-adherence fatigue in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) reducing intervention-adherence fatigue in the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential behavioral benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f67f439e-ffe5-41e5-8278-367e8c3f1802",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C8",
+      "claim": "Epidemiological dynamics cannot easily be untangled from human behavior, which varies strongly across societies and cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the challenge therein lies in the fact that epidemiological dynamics cannot easily be untangled from human behavior, which varies strongly across societies and cultures (Walker et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Walker et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "54dd3bbe-b96c-4933-ba30-638abaf43ddb",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C9",
+      "claim": "Human behavior is highly heterogeneous even within a population living in a certain geographic region.",
+      "claim_type": "EXPLICIT",
+      "source": "and are highly heterogeneous even within a population living in a certain geographic region (Marks et al., 2021; Davies et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Marks et al., 2021 and Davies et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "03316594-f28f-4cb3-a89a-2395ceeab9db",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C10",
+      "claim": "Epidemiological analysis needs to capture spatio-temporal heterogeneities in both transmission and control of an infectious disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, such an epidemiological analysis not only needs to capture the spatio-temporal heterogeneities in both transmission and control of an infectious disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the complexity of epidemiological dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "e575486f-f254-43b6-b8fd-be97125ab79b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C11",
+      "claim": "Epidemiological analysis needs to embed itself locally by considering demographic composition and how people travel, interact and mingle across different demographic groups and subnational regions.",
+      "claim_type": "EXPLICIT",
+      "source": "but also 'to embed itself locally' (Vos et al., 2020; Eggo et al., 2021): the demographic composition of the population and how people travel, interact and mingle, across different demographic groups and subnational regions (Lloyd-Smith et al., 2005; Prem et al., 2017; Mossong et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on local embedding and demographic mixing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "d12467b0-05ea-4a53-936e-adef3a571aa5",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C12",
+      "claim": "Intervention measures deployed in spring 2020 were not enough to spatially contain the virus.",
+      "claim_type": "EXPLICIT",
+      "source": "By and large, intervention measures deployed in spring 2020 were not enough to spatially contain the virus",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the global spread of COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8dd7cbfa-aa99-4c64-8995-15e605d999ac",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C13",
+      "claim": "The worldwide spread of SARS-CoV-2 along the backbones of globalized travel was too fast to allow continuation of travel as usual.",
+      "claim_type": "EXPLICIT",
+      "source": "the worldwide spread of SARS-CoV-2 along the backbones of globalized travel was too fast to allow continuation of travel as usual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about early COVID-19 spread patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "5954fbf0-9394-482d-ac76-f9c1281cb8d2",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C14",
+      "claim": "Reliable data on community-transmission were not readily available to researchers and policy makers during most part of the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliable data (specifically, near-real time data needed for policy-informing epidemiology) on community-transmission were not readily available to researchers and policy makers during most part of the first wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about data availability during early COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4168a170-1989-47bd-80f4-c413f3f7410d",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C15",
+      "claim": "Large parts of the world used epidemiological insights emerging from China for setting intervention policies.",
+      "claim_type": "EXPLICIT",
+      "source": "For setting intervention policies in such a situation, large parts of the world used epidemiological insights that were emerging from other countries that experienced the epidemic earlier, notably China (Li et al., 2020; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Li et al., 2020 and Zhang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f163446b-541d-43fd-b133-dd158defd598",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C16",
+      "claim": "National policies in the Netherlands were mostly informed by models considering populations that were demographically but not spatio-temporally heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "by the time reliable data started to become available, national policies in many countries, for example, the Netherlands (RIVM, 2021a) or the UK (Kucharski et al., 2020), were mostly informed by models considering populations that were demographically but not spatio-temporally heterogeneous (Press and Levin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to RIVM, 2021a, Kucharski et al., 2020, and Press and Levin, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "fba74fec-9b33-4a53-a765-9ae05f0362cc",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C17",
+      "claim": "The first COVID-19 wave in the Netherlands covers the period February 27, 2020 to June 1, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The wave covers the period February 27, 2020 (the first tested case of COVID-19 in the Netherlands) till June 1, 2020 (lifting of most intervention measures).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the timeline of COVID-19 in the Netherlands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "25f1d5d7-937c-4090-bf04-1ecc158e64be",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C18",
+      "claim": "The outbreak in the Netherlands started mainly in the south of the country in relation to the celebration of Carnaval.",
+      "claim_type": "EXPLICIT",
+      "source": "In relation to the celebration of Carnaval, an annual festivity preceding Lent that is heavily celebrated in the south of the country and is associated with large group gatherings and movement of people, the outbreak started mainly in the south of the Netherlands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the early COVID-19 outbreak in the Netherlands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "a8a6e1bf-a875-4555-be8f-667e21c53c73",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C19",
+      "claim": "Phase 1 (Feb 27 - Mar 11) involved transmission of the pathogen progressing unchecked.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) Phase 1 (Feb 27 - Mar 11) when transmission of the pathogen progressed unchecked",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the early phase of COVID-19 in the Netherlands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4b74e221-51b8-462f-8687-21baf3d64e6f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C20",
+      "claim": "Phase 2 (Mar 12 - Mar 22) involved minor interventions including working-from-home policy, cancellation of large events, some social distancing and face mask advice in specific buildings such as hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) Phase 2 (Mar 12 - Mar 22) with minor interventions involving a working-from-home policy, cancellation of large events, some social distancing and face mask advice in specific buildings such as hospitals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "73259e18-9f87-4d73-b4ea-35cea0bd1fae",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C21",
+      "claim": "Phase 3 (Mar 23 - May 11) involved a strict nation-wide lockdown with closed schools and event centers, mandated social distancing and working-from-home policies.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) Phase 3 (Mar 23 - May 11) involving a strict nation-wide lockdown with closed schools and event centers, mandated social distancing and working-from-home policies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "a07ab13a-8314-4cce-aea3-2054187ab2c7",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C22",
+      "claim": "Phase 4 (May 11 - May 31) involved a gradual lifting of all measures.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) Phase 4 (May 11 - May 31) involving a gradual lifting of all measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8a14b99d-b81f-44ec-ba32-f116a10c4df7",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C23",
+      "claim": "The analysis framework uses an agent-based approach with demography, mobility and mixing considerations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking an agent-based approach, we build our framework in two parts: (i) demography, mobility and mixing considerations that provide a high-degree of local embedding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "e637fac5-48c1-4783-bdab-ef014257c801",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C24",
+      "claim": "The Dutch population was stratified into 11 demographic categories and 380 municipalities using registry data from CBS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first step, using registry data available at the Dutch national statistics agency (CBS, Statistics Netherlands), we stratify the Dutch population into 11 demographic categories and 380 municipalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c06192e8-8568-4e9e-a50f-a0df8555289b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C25",
+      "claim": "An agent represents approximately 100 Dutch residents.",
+      "claim_type": "EXPLICIT",
+      "source": "With about 17 million Dutch residents, we define an agent to represent approximately 100 Dutch residents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modeling approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "98b727c7-2b46-458c-9699-9044231d8e8a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C26",
+      "claim": "Agent movements between municipalities were constructed using Dirichlet distributions based on anonymized mobile phone signals.",
+      "claim_type": "EXPLICIT",
+      "source": "The second step is to define the probability that an agent moves between municipalities. This process is constructed using Dirichlet distributions for the probability of an agent's location, quantified based on anonymized mobile phone signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c649b1eb-774d-4335-ba10-7f286351e290",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C27",
+      "claim": "Agent locations and movements were drawn at hourly time resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the third step, we draw the agent's locations and movements at hourly time resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal resolution of the modeling approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "468927fb-18d3-40ec-b61f-18953bf13175",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C28",
+      "claim": "Mixing of agents depends on demographic category, time of day, and type of activity (home, school, work, and other).",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth step is to define the mixing of agents present within the same municipality, which depends on the demographic category of the agent, time of day and the type of activity that the agent is engaged in: 'home', 'school', 'work', and 'other'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mixing model used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f6a6cd56-4fd5-4db4-a1aa-c561c3551119",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C29",
+      "claim": "Mixing matrices were based on existing surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding mixing matrices were based on existing surveys (Prem et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Prem et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "87b8d38a-5f52-4881-a5e7-3c2cb7cba90d",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C30",
+      "claim": "The framework establishes a dynamic proxy network of people's contacts throughout the entire country at municipality-level with hourly resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the four steps establish a dynamic proxy network of people's contacts throughout the entire country at municipality-level, with hourly resolution over the full period of analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the output of the modeling framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6e038caf-8032-43c7-9615-d4db98c1f218",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C31",
+      "claim": "Initialization of the epidemic transmission model was based on observed hospital admissions, which initially occurred mainly in the south of the country.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the fifth step concerns the initialization of the epidemic transmission model, which was based on observed hospital admissions, which initially occurred mainly in the south of the country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for model initialization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "40069f78-7fc6-488c-ab5f-47971532be56",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C33",
+      "claim": "Mobility changes were computed using Google Mobility data.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility changes were computed using Google Mobility data",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for quantifying mobility changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "0e32f3ed-f3d6-44be-b1e3-7087e0464b9b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C34",
+      "claim": "Mixing changes were based on survey data conducted during the first wave period.",
+      "claim_type": "EXPLICIT",
+      "source": "and mixing changes were based on survey data (Backer et al., 2021) conducted during this period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Backer et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "358d961e-2996-43bb-a5bf-eeae90cc392c",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C35",
+      "claim": "The effect of behavioral measures were calibrated to reproduce the epidemic trend over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of behavioral measures were calibrated to reproduce the epidemic trend over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calibration approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "3e16ca8a-cec1-4195-abb6-e61c8fbb318f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C36",
+      "claim": "Predicted trends in infection numbers were translated to incident and prevalent hospital admission using a simple cohort model.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted trends in infection numbers were translated to incident and prevalent hospital admission using a simple cohort model (de Vlas and Coffeng, 2021) that accounts for the delay between initial infection and admission as well as the duration of admission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Vlas and Coffeng, 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "7d820040-3890-47ec-bebd-4f17d4d1910f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C37",
+      "claim": "The cohort model was quantified based on hospitalization data from the Dutch National Intensive Care Evaluation (NICE) registration.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort model was quantified based on hospitalization data from the Dutch National Intensive Care Evaluation (NICE) registration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for the cohort model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6a15f508-3841-4114-9a43-030d9b65954a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C38",
+      "claim": "The calibration process was carried out by means of an ensemble of 40 stochastic simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the calibration process, carried out by means of an ensemble of 40 stochastic simulations, is shown Figure 2(a\u2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used for calibration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "0062abdf-a473-4308-9d74-52ab94ae8ea8",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C40",
+      "claim": "The calibration reproduced the total national hospital admissions data spanning approximately three months.",
+      "claim_type": "EXPLICIT",
+      "source": "to reproduce the total national hospital admissions data spanning approximately three months [panel (a)], including the (initial) doubling time [panel (b)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2(a-b).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c8857009-dacf-4faf-820b-c06898fcd379",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C41",
+      "claim": "Hospital admissions were the most reliable source of data during the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Hospital admissions were the most reliable source of data during the first wave",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about data availability during early COVID-19.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "ba092ab7-0ac7-47b5-b9a1-2dcb868c2207",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C42",
+      "claim": "The model predicts that non-studying adolescents, middle-age working people, and students were the most affected demographic groups during the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Age stratification in our analysis reveals how the first wave likely played out nationally across demographic groups, with non-studying adolescents, middle-age working people, and students as the most affected demographic groups [Figure 2(c)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model predictions shown in Figure 2(c).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "b5f17077-0184-4e30-a7ae-9a4e48ee374d",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C43",
+      "claim": "The model predicts similar patterns for seroprevalence levels across age as was observed in June 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts similar patterns for seroprevalence levels across age as was observed in June 2020 [Appendix 2\u2014figure 1].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison between model predictions and observed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6de55c67-4357-4a01-93b5-a40fd822eec7",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C44",
+      "claim": "The model predicts that the epidemic geographically spread from the south to the north of the country via major cities in the west.",
+      "claim_type": "EXPLICIT",
+      "source": "It also predicts that the epidemic geographically spread from the south (where COVID-19 is introduced in the analysis) to the north of the country via major cities in the west [Figure 2(d)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model predictions shown in Figure 2(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c9e27ff0-e05c-4575-8758-9f30625f265a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C45",
+      "claim": "The geographic pattern of spread approximately reflects the actual spread in the Netherlands.",
+      "claim_type": "EXPLICIT",
+      "source": "This geographic pattern approximately reflects the actual spread in the Netherlands, although we should not expect the analysis to perfectly reproduce given the high variability in the ensemble runs (see Appendix 2.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison between model predictions and observed patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4197abf0-cc0e-40fd-a7ef-3164dcd98dae",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C46",
+      "claim": "Reductions in mobility contributed most to epidemic control during the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3(a), again a 40-member strong ensemble, shows how reductions in mobility contributed most to epidemic control; without mobility restrictions (red), case numbers would have approximately doubled.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 3(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "716f9b6b-6742-44bd-8eb9-7994ff67317e",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C47",
+      "claim": "Without mobility restrictions, case numbers would have approximately doubled.",
+      "claim_type": "EXPLICIT",
+      "source": "without mobility restrictions (red), case numbers would have approximately doubled.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 3(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c5fcd549-5fdc-47ce-86db-b4295266afea",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C48",
+      "claim": "Behavioral changes had a considerable impact on epidemic control, albeit lower than mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Behavioral changes (blue) have also had a considerable impact, albeit lower than mobility.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6f8d37b0-4c2b-498a-9735-c119df79a97f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C49",
+      "claim": "School closure had little impact on epidemic control during the first wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also predicts school closure [yellow, Figure 3(a)] to have had little impact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 3(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "0a318401-ab22-4255-8ba1-b5a7e5c9791a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C50",
+      "claim": "Dutch schools were closed relatively late (March 16) due to political debate.",
+      "claim_type": "EXPLICIT",
+      "source": "On this, we note that due to political debate, the Dutch schools were closed relatively late (March 16, while the first confirmed case was on Feb 27)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy timeline.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "25382c0a-643e-45f0-a994-350a3e1ef161",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C51",
+      "claim": "Earlier closure of schools should have had a positive epidemiological impact.",
+      "claim_type": "EXPLICIT",
+      "source": "(logically, earlier closure of schools should have had a positive epidemiological impact, see Appendix 2.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from model simulations shown in Appendix 2.3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "2691fec8-6803-4e31-b617-6a411d194371",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C52",
+      "claim": "Subnational interventions were implemented following the national trend by initiating lockdown when simulated prevalence of infectious cases within a municipality passed a certain threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that we initiate lockdown in a municipality when the simulated prevalence of infectious cases within that municipality has passed a certain threshold \u2014 a fraction of the municipality's population \u2014 where the exact intervention measures are synchronous those issued in reality on a national scale (Appendix 1.9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for simulating subnational interventions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "2786f0c2-5192-46ec-b256-7af246593ad8",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C53",
+      "claim": "A lower threshold for subnational interventions ensures early implementation but could unnecessarily shut down economic and social activity in less affected areas.",
+      "claim_type": "EXPLICIT",
+      "source": "a lower threshold ensures implementation of local interventions in an early stage of the COVID-19 wave which would suppress hospital admission counts, but could unnecessarily shut down economic and social activity in some parts of the country that are less affected by the disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the trade-offs of different threshold choices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "88fee718-7838-4ea4-b032-2a150c576182",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C54",
+      "claim": "A higher threshold for subnational interventions would target municipalities where the epidemic has progressed most but could pose the risk of starting control too late.",
+      "claim_type": "EXPLICIT",
+      "source": "Vice versa, a higher threshold would target municipalities where the epidemic has progressed most, but could pose the risk of starting control too late, resulting in more hospital admissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the trade-offs of different threshold choices.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "b6afc2aa-a58d-4111-be4e-d00a75780c3f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C55",
+      "claim": "Thresholds of 3%, 1%, 0.33%, and 0.1% prevalence of infectious cases were tested for subnational interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "To show the effect of different thresholds for prevalence of infectious cases, we choose a wide range of 3%, 1%, 0.33%, and 0.1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scenarios tested in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4b89b06f-ba42-4875-a449-c42aac7a8929",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C56",
+      "claim": "The national lockdown as implemented in the Netherlands resulted in approximately 13 thousand hospital admissions up to 1 June 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In panel (a), the lockdown as implemented in the Netherlands is represented by the black (observed) and green lines (prediction), which resulted in approximately 13 thousand hospital admissions up to 1 June 2020.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observed data and model predictions shown in Figure 4(a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "a9f6cdc9-de47-4aa2-b93f-08789831b332",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C58",
+      "claim": "A threshold of 3% for subnational interventions provided 185 million additional person-days intervention-free over the full wave.",
+      "claim_type": "EXPLICIT",
+      "source": "(185 million additional person-days intervention-free over the full wave)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "07e08389-e394-4389-9f80-d92e2436f022",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C59",
+      "claim": "Thresholds of 1.0% and 0.33% for subnational interventions resulted in 4670 and 410 additional hospital admissions, respectively, compared to the national lockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "The more stringent thresholds of 1.0% and 0.33% result in numbers of hospital admissions closer to a national lockdown (4670 and 410 additional admissions, respectively)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "317313a0-29bc-42e6-8b9e-6797f84fe0a3",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C60",
+      "claim": "Thresholds of 1.0% and 0.33% for subnational interventions resulted in 268 and 167 municipalities initializing interventions later than in the national approach, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "but at a more modest societal benefit: 268 and 167 municipalities initialize interventions later than in the national approach, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "bc13e82f-c7e1-4324-831b-27ade3c2b5ca",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C61",
+      "claim": "Thresholds of 1.0% and 0.33% for subnational interventions provided 103 million and 36 million additional person-days free from interventions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This translates to 103 million and 36 million additional person-days free from interventions over the full period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "2e400d65-185c-40ff-8d38-b909811e1c70",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C62",
+      "claim": "At the 0.33% threshold, approximately 6% of municipalities never undergo interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at the lower threshold of 0.33% (orange), approximately 6% of the municipalities never undergo interventions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "9a04da8f-1fa8-48ce-8720-a90be331dbc6",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C63",
+      "claim": "A threshold of 0.1% for subnational interventions yields only a few additional hospital admissions with 18 municipalities remaining intervention-free for over 5 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Even closer to the fully national approach, we also tested a threshold of 0.1% (yellow), which yields only a few additional hospital admissions, and still 18 municipalities remaining intervention-free for over 5 weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f26016c8-55e7-49e8-9629-006166326550",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C64",
+      "claim": "Municipalities that remain free of interventions are mainly located in the north and east of the country.",
+      "claim_type": "EXPLICIT",
+      "source": "Municipalities that remain free of interventions are mainly located in the north and east of the country, as can be most clearly seen for the 0.33% threshold scenario.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on model simulations shown in Figure 4(d).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4beee379-4e9c-4df7-bf00-9cda67e3805c",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C65",
+      "claim": "From a mobility perspective, municipalities remaining free of interventions belong to the more rural, isolated, and less densely populated subnational regions.",
+      "claim_type": "EXPLICIT",
+      "source": "From a mobility perspective, these municipalities belong to the more rural, isolated, and less densely populated subnational regions of the country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the geographic distribution of municipalities and mobility patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4db837ae-900d-4b64-bb4b-0bc84a99a7fa",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C66",
+      "claim": "During the first COVID-19 wave, the Dutch government did not implement subnational intervention measures aside from an early advice to work from home in the south.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first COVID-19 wave, the Dutch government did not implement subnational intervention measures, aside from bringing out an early advice to work from home in the south of the country, the epicenter for the first wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f05a33af-53e9-4a5b-9744-84bc6ec787c6",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C67",
+      "claim": "The Dutch government's reasoning for not implementing subnational measures was that once COVID-19 cases were discovered locally, the pathogen would have likely already spread throughout the entire country.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasoning was that once COVID-19 cases were discovered locally, most likely, the pathogen would have already spread throughout the entire country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale behind Dutch policy decisions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "cb5d9feb-5845-47b9-9c86-13e24e1941fe",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C68",
+      "claim": "The Netherlands is spatially well-connected in terms of people's mobility patterns, facilitated by a robust public transport system and a high population density.",
+      "claim_type": "EXPLICIT",
+      "source": "This is generally in line with observations that the Netherlands is spatially well-connected in terms of people's mobility patterns, facilitated by a robust public transport system and a high population density",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch infrastructure and demographics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "5096d417-c793-4ee4-bf7e-08d8c20a146d",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C69",
+      "claim": "Hospital admission data during the first wave suggested that provinces in the north and east of the Netherlands were substantially less affected.",
+      "claim_type": "EXPLICIT",
+      "source": "with the caveat that hospital admission data during the first wave did suggest that provinces in the north and east of the country were substantially less affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observed hospital admission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "61ebd7de-9832-4bd9-903c-02db46e33641",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C70",
+      "claim": "When combined with live tracking of local infections, implementation of interventions could be postponed or tailored towards local contexts without causing too much additional health burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that when combined with live tracking of local infections in sufficient detail, implementation of interventions could be postponed or tailored towards local contexts, without causing too much additional health burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "5614a2b1-50b3-46bb-a35c-e7a570cbe3c8",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C71",
+      "claim": "Subnational implementation of interventions would require local governments to be mandated appropriately and local populations to adhere to local measures.",
+      "claim_type": "EXPLICIT",
+      "source": "(This would of course require local governments to be mandated appropriately and that local populations adhere to local measures.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about requirements for implementing subnational interventions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "04758a72-ccb6-461b-8b1a-daa4e300011b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C72",
+      "claim": "The framework does not provide insights into the role of households and household-level interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our framework cannot provide insights into the role of households and household-level interventions, which have for instance been shown to play a critical role in the geographical spread of infection between schools (Munday et al., 2021; Lessler et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors, with citations to relevant studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "52743680-7dde-43c8-abc3-ce3a562c491e",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C73",
+      "claim": "Mobile phone signal data do not provide identifiers to link multiple movements into one itinerary.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the data do not provide identifiers to link multiple movements into one itinerary, which means that in our analysis, agent movements are somewhat shorter on average than in reality, but agents also visit more different locations than in reality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the data source used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "e7adfb6a-e3aa-402d-8611-027b97a79533",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C74",
+      "claim": "The impact of the simplifying assumption about agent movements is limited at the start of an epidemic, especially in a relatively small and highly connected country.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the impact of this simplifying assumption is limited as, at the start of an epidemic, the distribution of movement over agents is of relatively low importance, especially in the case of a relatively small and highly connected country as the Netherlands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the impact of modeling assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8677807f-f60a-4dd5-bb5c-3d3eeeef19cc",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C75",
+      "claim": "The transmission potential of 'high-mobility corridors' can eventually dry up as a result of rising immunity among high-mobility individuals in larger geographies.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to situations towards the tail of an epidemic or in larger geographies (e.g. Brazil [Castro et al., 2021; de Souza et al., 2020] and India [Laxminarayan et al., 2020]), where the transmission potential of 'high-mobility corridors' can eventually dry up as a result of rising immunity among high-mobility individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies in Brazil and India.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "569553e6-fce3-4d56-bebe-b5d03ac1599d",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C76",
+      "claim": "The study adopted data on national patterns in mobility, meaning it was not possible to account for changes in mobility by geography or demographic group.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we adopted data on national patterns in mobility (Google mobility), meaning that it was not possible to account for changes in mobility by geography or demographic group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the data source used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "75f32b2d-f4e5-4c1a-b92b-3f07ed8b2f98",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C77",
+      "claim": "Geographical aspects of mobility could be addressed by using longitudinal mobile phone signal data or individual-level self-reported data via mobile phone apps.",
+      "claim_type": "EXPLICIT",
+      "source": "The geographical aspects could be addressed by using longitudinal mobile phone signal data or individual-level self-reported data via mobile phone apps (Drew et al., 2020; Oliver et al., 2020; Ferretti et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8c4d8de0-19c2-4d8e-9535-929814585513",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C78",
+      "claim": "With appropriate data sources, the framework can be adapted to other countries and settings of similar or larger geographical scale.",
+      "claim_type": "EXPLICIT",
+      "source": "With appropriate data sources, the framework can be adapted to other countries and settings of similar or larger geographical scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the generalizability of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "1fa7e050-3cb9-4ecc-a5eb-a66e388722da",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C79",
+      "claim": "Specifically isolating affected subnational areas could reduce hospital admissions by about 30% compared to the actual national lockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we explored the potential impact of specifically isolating affected subnational areas (i.e. banning all mobility into and out of a municipality for the Netherlands), which could reduce hospital admissions by about 30%, compared to the actual national lockdown (Appendix 2.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model simulations shown in Appendix 2.3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "a7dd41eb-3e5a-4417-8862-063b8528373f",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C80",
+      "claim": "With further expansions, the framework could address questions related to closing or limiting specific transport routes.",
+      "claim_type": "EXPLICIT",
+      "source": "With further expansions, the framework could address questions related to, for instance, closing or limiting specific (public) transport routes (Quilty et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, with citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "54905fd9-6606-4f12-9ae6-5d7d03d8d714",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C81",
+      "claim": "The framework could address questions related to banning specific mass events.",
+      "claim_type": "EXPLICIT",
+      "source": "and banning specific mass events (Herng et al., 2022; Moritz et al., 2021; Lemieux et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6a8b3bac-1b43-484c-b184-4e28e0552b91",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C82",
+      "claim": "Evaluating pharmaceutical interventions such as vaccination is possible within this framework upon coupling data sources associated with age-stratified vaccination rollout and types of vaccines used.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating pharmaceutical interventions such as vaccination, too, is possible to capture within this framework, upon coupling data sources associated with age-stratified vaccination rollout, as well as types of vaccines used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "d0ac8aeb-d885-42b0-bd3c-bfcb835d1560",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C83",
+      "claim": "For the Dutch case, 167 municipalities could have remained open at the start with only 3.4% more hospital admissions, with 12 still open after five weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Dutch case, we calculate explicitly how many municipalities could have remained open with limited additional hospital admissions: 167 at the start and 12 still open after five weeks, with only 3.4% more hospital admissions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "10145129-bba3-43e6-bc1f-e99553b9fcfa",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C84",
+      "claim": "The Netherlands has a high population density and is highly interlinked in terms of mobility, but even there a subnational approach would have benefited the intervention strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "The Netherlands has a high population density and is highly interlinked in terms of mobility, but even there a subnational approach would have benefited the intervention strategy \u2014 which does create high expectations of similar approaches in other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model results and characteristics of the Netherlands.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "352f5335-bf8a-45d6-a3c4-c20624f6a59b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C85",
+      "claim": "The results create high expectations that similar subnational approaches would benefit other countries.",
+      "claim_type": "EXPLICIT",
+      "source": "which does create high expectations of similar approaches in other countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the study results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "3603a3dc-9df9-4220-8baa-b62cc00f6afe",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C86",
+      "claim": "The main merit of the approach lies in capturing the local context by coupling empirical data sources on demography, mobility, and spatial clustering of the population and linking this to disease transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, in terms of methodology, the main merit of our approach lies in the fact that it captures the local context by coupling empirical data sources on demography, mobility, and spatial clustering of the population and link this to disease transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "650c7262-8c93-4b74-b204-15aa29b6d3cb",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C87",
+      "claim": "The approach makes it possible to decouple individual interventions such as mobility reduction and behavioral changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show how to decouple individual interventions in Figure 3, which is made possible by capturing the local context: mobility reduction and behavioral changes cannot be separated if mobility and behavior are not explicitly modeled.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "b42ba323-4ea3-44f5-84bc-6e48fe378e99",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C88",
+      "claim": "Whether subnational implementation of interventions is sufficient to successfully control an epidemic should be expected to vary across countries and cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "That said, whether subnational implementation of interventions is sufficient to successfully control an epidemic should be expected to vary across countries and cultures, as its effectiveness depends on its timeliness and feasibility, and it being sufficiently supported and/or enforceable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "2660e4a3-9abb-4b17-9259-5ba539998e07",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C89",
+      "claim": "Subnational control measures worked in China due to high enforcement and feasibility.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, subnational control measures worked (to some extent) in China due to high enforcement and feasibility (sheer man power)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sachs et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "04971bab-8dcf-4a37-bc6b-8659b0a4f67a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C90",
+      "claim": "Subnational control measures worked in New Zealand and Australia due to natural long distances between subpopulations and relative isolation from the rest of the globe.",
+      "claim_type": "EXPLICIT",
+      "source": "and in New Zealand and Australia due natural long distances between subpopulations and relative isolation from the rest of the globe (Sachs et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sachs et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6def74c4-6a10-40f0-b1aa-4f957d48c627",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C91",
+      "claim": "During the initial wave in Northern Italy, the regional lockdown was implemented too late to curb further geographical spread.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, during the initial wave in Northern Italy which is a highly connected region, the regional lockdown was implemented too late to curb further geographical spread (Waitzberg et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Waitzberg et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "cd21e14b-40e9-4c3a-b5a3-8bc97cd55cd8",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C93",
+      "claim": "Demographic data provided by Statistics Netherlands allowed distinguishing 170,721 agents with demographic details.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the demographic data provided by Statistics Netherlands (CBS) allowed us to distinguish 170,721 agents (with roughly 17 million residents, this means that each agent represents about 100 of them) with demographic details (Appendix 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and agent representation used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8a39d868-1037-4ecf-a848-59db7f418520",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C94",
+      "claim": "Generated mobility distributions are Dirichlet distributions using normalized movements data as shape parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, the generated mobility distributions are Dirichlet distributions, using the (normalized) movements data as shape parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for mobility modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f0fd26f1-2b83-4c39-ac84-88a1be1436e5",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C97",
+      "claim": "The first COVID-19 wave in the Netherlands lasted from February 27 to June 1, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The first COVID-19 wave in the Netherlands lasted over the period February 27 (first reported case) to June 1, 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the timeline of COVID-19 in the Netherlands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c7491614-01f0-46fc-b44b-1c9aded39dcb",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C98",
+      "claim": "Phase 2 involved a 31.7% reduction in travel.",
+      "claim_type": "EXPLICIT",
+      "source": "\u201331.7%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "50b94b2b-5a03-425b-93e1-8d78cc5ddefd",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C99",
+      "claim": "Phase 3 involved a 42.4% reduction in travel.",
+      "claim_type": "EXPLICIT",
+      "source": "\u201342.4%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "267033d0-ba79-433b-9d35-4c9501e4ed29",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C100",
+      "claim": "Phase 4 involved a 20.1% reduction in travel.",
+      "claim_type": "EXPLICIT",
+      "source": "\u201320.1%",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "eaefa6fe-9346-470b-a00b-f3b6e70786a6",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C102",
+      "claim": "The dominant contribution to travel reduction was due to a working-from-home policy recommended by the Dutch government.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant contribution to this travel reduction, by far, was due to a working-from-home policy recommended by the Dutch government",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Dutch COVID-19 policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c967a8de-cd7a-4f14-91a0-ca93230fe074",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C103",
+      "claim": "Changes in mixing patterns were determined from Dutch survey data in February, April, and June 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, we address changes in mixing patterns by determining percentage changes in the mixing among different age groups from Dutch survey data (Backer et al., 2021) in the months February, April, and June 2020",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Backer et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "b40f5c8f-eb69-4e4b-945e-b557d879b647",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "claim_id": "C104",
+      "claim": "School closing was implemented by placing school-going agents and parents of primary school children at home in terms of location and mixing implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth and finally, we implement school closing by placing school-going agents (i.e. primary school children, secondary school children and students) as well as the parents of primary school children at home, both in terms of the home locations of the agents and in terms of its implications on mixing (see Appendix 1.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for implementing school closure in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d2dc5af-eed6-403a-8ea6-7447af4a8f6b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The first COVID-19 wave in the Netherlands was controlled through nation-wide non-pharmaceutical interventions that affected all areas equally, despite heterogeneous spatial and temporal distribution of infections and healthcare burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the context of national interventions in the Netherlands and globally. These are well-supported by citations (C1, C2) and established knowledge about COVID-19 policy (C2, C3). The observation about heterogeneous disease distribution versus uniform intervention burden (C3) is a reasonable inference based on the nature of national policies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "98a8a863-451a-4cc3-a198-4795abd530f9",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Subnational intervention strategies could potentially reduce societal burden while maintaining epidemiological control, with benefits including more efficient resource use, reduced economic losses, and decreased intervention-adherence fatigue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4-C7 are entirely speculative statements about potential benefits of subnational approaches made in the introduction. These represent hypotheses to be tested rather than demonstrated results. The actual evidence for these claims is provided later in the manuscript through modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "aaf3d316-481f-4725-a6b8-db44eb5169d7",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Epidemiological analysis of infectious disease control requires capturing spatio-temporal heterogeneities and local embedding, including demographic composition, mobility patterns, and mixing behaviors across different groups and regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 establish methodological requirements for epidemiological modeling. These are well-supported by multiple citations to relevant literature (C8, C9, C11) and represent established principles in the field. The inference about analytical needs (C10) follows logically from the cited complexity of epidemiological dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During the first COVID-19 wave, intervention measures were insufficient to spatially contain the virus, reliable real-time data were unavailable, and national policies were informed by models lacking spatio-temporal heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 describe the context and limitations of early COVID-19 response. These are supported by established knowledge about the pandemic's spread (C12-C14) and appropriate citations documenting policy-informing models (C15, C16). The characterization of data availability and modeling approaches is consistent with documented early pandemic conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The first COVID-19 wave in the Netherlands (February 27 - June 1, 2020) started in the south related to Carnaval celebrations and progressed through four distinct policy phases with escalating then relaxing interventions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 establish the timeline and policy context for the study. These are based on established knowledge about Dutch COVID-19 history and policy, representing well-documented facts about the pandemic timeline, outbreak origins, and intervention phases in the Netherlands.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "a45022ee-209e-4da0-bec4-e053881c23fa",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The analysis framework uses an agent-based model with 170,721 agents (each representing ~100 residents) stratified by 11 demographic categories and 380 municipalities, with mobility based on mobile phone data and mixing based on surveys, creating a dynamic contact network at hourly resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 describe the core methodology. These are well-supported by clear descriptions of data sources (CBS registry data, mobile phone signals, survey data from Prem et al. 2017) and modeling approaches. The framework is methodologically sound with appropriate data sources and reasonable modeling choices for the stated objectives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "c50ea171-b847-4025-9e10-c9ab4474416b",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The epidemic transmission model was initialized using hospital admissions data, incorporated mobility changes from Google data and mixing changes from surveys, calibrated behavioral parameters to match epidemic trends, and used a cohort model to translate infections to hospitalizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 describe the transmission modeling and calibration approach. These are supported by appropriate data sources (hospital admissions, Google Mobility, survey data from Backer et al. 2021, NICE registration) and citations (C34, C36). The use of 40 stochastic simulations for calibration (C38) is methodologically appropriate for capturing uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The calibrated model successfully reproduced national hospital admissions over three months including doubling time, predicted demographic patterns consistent with observed seroprevalence, and captured geographic spread from south to north via western cities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 describe model validation results shown in Figure 2. The model successfully reproduces hospital admissions (C40), which were the most reliable data source (C41). Predictions for demographic patterns (C42) and seroprevalence (C43) match observations. Geographic spread patterns (C44-C45) approximately reflect reality, with appropriate caveats about ensemble variability. This represents strong model validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mobility reductions contributed most to epidemic control (preventing approximate doubling of cases without them), behavioral changes had considerable but lower impact, and school closure had little impact due to late implementation (March 16), though earlier closure would have been beneficial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe intervention effectiveness results from Figure 3. The findings about mobility (C46-C47) and behavioral changes (C48) are based on model simulations with clear counterfactuals. The limited impact of school closure (C49) is appropriately contextualized by the late closure date (C50, established knowledge) and inference about earlier closure benefits (C51, supported by Appendix 2.3 simulations).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "ff87120a-8b59-4a7c-b66b-23c3cc06b539",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Subnational interventions were simulated by initiating municipality-level lockdowns when local infectious prevalence exceeded thresholds (3%, 1%, 0.33%, 0.1%), with lower thresholds ensuring earlier implementation but potentially unnecessary restrictions, and higher thresholds risking delayed control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe the subnational intervention simulation methodology. The approach (C52) is clearly defined and appropriate for comparing scenarios. The trade-offs described (C53-C54) are logical inferences about threshold choices. The range of thresholds tested (C55) is appropriately wide for exploring the parameter space.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Subnational interventions at 0.33% threshold resulted in only 410 additional hospital admissions (3.4% increase) compared to national lockdown, with 167 municipalities delaying interventions and 36 million additional person-days intervention-free, with intervention-free municipalities mainly in rural northern and eastern regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 present the main subnational intervention results from Figure 4. The quantitative findings are clearly presented with specific numbers for different thresholds. The 0.33% threshold scenario (C59-C62) shows a favorable balance between health burden and societal benefit. Geographic patterns (C64) are shown in Figure 4(d), and the characterization of these areas as rural/isolated (C65) is a reasonable inference from mobility data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Dutch government did not implement subnational measures during the first wave, reasoning that the virus would have already spread nationally once detected locally, but model results show that with live infection tracking, subnational interventions could have been postponed or tailored without excessive health burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 contextualize the findings with actual policy decisions. The description of Dutch policy (C66-C67) and rationale (C68) are based on established knowledge. Hospital data showing differential regional impact (C69) supports the potential for subnational approaches. The conclusion (C70) is appropriately qualified as requiring live infection tracking, with realistic caveats about implementation requirements (C71).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "dc43694e-4156-443a-8fd9-2b06f4d40369",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The framework has limitations including inability to model household-level dynamics, mobile phone data lacking individual itineraries (causing shorter average movements but more locations visited), and use of national mobility patterns, though these limitations have limited impact for small, highly connected countries at epidemic start.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 acknowledge important methodological limitations. The household limitation (C72) is appropriately cited with relevant studies. The mobile phone data limitation (C73) is clearly described with its implications. The assessment that these limitations have limited impact in the Dutch context (C74) is a reasonable inference, appropriately contrasted with larger geographies (C75, with citations). Suggestions for addressing limitations (C77) are constructive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "96655403-6286-4fba-a151-b5b3f3939aee",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The framework can be adapted to other countries with appropriate data sources and extended to address additional policy questions including isolating affected areas (potentially reducing admissions by 30%), transport route restrictions, mass event bans, and vaccination strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C82 are largely speculative about future applications. The adaptability claim (C78) is reasonable but undemonstrated. The 30% reduction from area isolation (C79) is based on Appendix 2.3 simulations, providing some support. However, claims about transport routes (C80), mass events (C81), and vaccination (C82) are speculative suggestions for future work rather than demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "6b906848-0cba-4e35-96f0-2b6d1773377a",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "For the Netherlands, 167 municipalities could have remained open initially with only 3.4% more hospital admissions, and since the Netherlands is highly connected and densely populated, similar subnational approaches would likely benefit other countries even more.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 present the main policy conclusion. The specific numbers (C83) are directly from model results. The inference that subnational approaches would benefit the Netherlands despite high connectivity (C84) is supported by the modeling results. The extrapolation to other countries (C85) is appropriately qualified as creating 'expectations' rather than certainty, representing a reasonable inference from the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "87c00f20-1118-42e7-9654-4ac5d60a2b47",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The methodological merit of the approach lies in capturing local context through coupling empirical data on demography, mobility, and spatial clustering with disease transmission, enabling decoupling of individual interventions like mobility reduction and behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 describe the methodological contribution. The characterization of the approach's merit (C86) is a reasonable inference from the demonstrated capabilities. The ability to decouple interventions (C87) is demonstrated in Figure 3 and represents a genuine capability enabled by the explicit modeling of mobility and behavior, with appropriate caveats about limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "4daa5ca0-ff3c-4caf-90bc-fb46b9ed5336",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The effectiveness of subnational interventions varies across countries and cultures depending on timeliness, feasibility, and enforcement, with examples of success in China (high enforcement), New Zealand/Australia (geographic isolation), and failure in Northern Italy (implemented too late).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 provide important context about generalizability. The inference about variability (C88) is appropriately cautious. The examples of China, New Zealand/Australia (C89-C90), and Northern Italy (C91) are all supported by citation to Sachs et al. 2022 and Waitzberg et al. 2022, providing evidence for the claim that context matters for subnational intervention effectiveness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    },
+    {
+      "id": "26aa3d16-af45-405a-ba75-15ab626728c0",
+      "content_id": "adc0c787-36c8-4e8b-bd74-08266e2246b6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The model implementation used 170,721 agents with Dirichlet distributions for mobility, covered February 27 - June 1, 2020, incorporated phase-specific travel reductions (31.7%, 42.4%, 20.1% for phases 2-4) primarily from work-from-home policies, mixing changes from survey data, and school closure by relocating students and parents to home.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C104 provide methodological details. Agent numbers and Dirichlet distributions (C93-C94) are clearly described. Timeline (C97) is established knowledge. Travel reductions (C98-C100) are shown in Table 1. Work-from-home as primary driver (C102) is established knowledge. Mixing changes (C103) are supported by citation to Backer et al. 2021. School closure implementation (C104) is clearly described. All details are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:35:34.464374Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7c2043c-7b60-447a-828e-2055d479635f",
+      "result_id": "7d2dc5af-eed6-403a-8ea6-7447af4a8f6b"
+    },
+    {
+      "claim_id": "9074bab7-87c7-4f57-b298-4be990993769",
+      "result_id": "7d2dc5af-eed6-403a-8ea6-7447af4a8f6b"
+    },
+    {
+      "claim_id": "c7f5ad31-f0e2-4936-8b7c-d6b078597926",
+      "result_id": "7d2dc5af-eed6-403a-8ea6-7447af4a8f6b"
+    },
+    {
+      "claim_id": "9f4436df-5489-4efd-8c41-289a0dccdd8e",
+      "result_id": "98a8a863-451a-4cc3-a198-4795abd530f9"
+    },
+    {
+      "claim_id": "ec7997dc-854e-4e7e-b12d-10e5f2922601",
+      "result_id": "98a8a863-451a-4cc3-a198-4795abd530f9"
+    },
+    {
+      "claim_id": "bc445a98-c110-4e82-b4ff-5a53fc9602ad",
+      "result_id": "98a8a863-451a-4cc3-a198-4795abd530f9"
+    },
+    {
+      "claim_id": "1ad8d88d-4250-4c58-904a-f92229aeb7bb",
+      "result_id": "98a8a863-451a-4cc3-a198-4795abd530f9"
+    },
+    {
+      "claim_id": "f67f439e-ffe5-41e5-8278-367e8c3f1802",
+      "result_id": "aaf3d316-481f-4725-a6b8-db44eb5169d7"
+    },
+    {
+      "claim_id": "54dd3bbe-b96c-4933-ba30-638abaf43ddb",
+      "result_id": "aaf3d316-481f-4725-a6b8-db44eb5169d7"
+    },
+    {
+      "claim_id": "03316594-f28f-4cb3-a89a-2395ceeab9db",
+      "result_id": "aaf3d316-481f-4725-a6b8-db44eb5169d7"
+    },
+    {
+      "claim_id": "e575486f-f254-43b6-b8fd-be97125ab79b",
+      "result_id": "aaf3d316-481f-4725-a6b8-db44eb5169d7"
+    },
+    {
+      "claim_id": "d12467b0-05ea-4a53-936e-adef3a571aa5",
+      "result_id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7"
+    },
+    {
+      "claim_id": "8dd7cbfa-aa99-4c64-8995-15e605d999ac",
+      "result_id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7"
+    },
+    {
+      "claim_id": "5954fbf0-9394-482d-ac76-f9c1281cb8d2",
+      "result_id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7"
+    },
+    {
+      "claim_id": "4168a170-1989-47bd-80f4-c413f3f7410d",
+      "result_id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7"
+    },
+    {
+      "claim_id": "f163446b-541d-43fd-b133-dd158defd598",
+      "result_id": "3ec9d8e5-b20f-4c85-971c-4b53860ab9d7"
+    },
+    {
+      "claim_id": "fba74fec-9b33-4a53-a765-9ae05f0362cc",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "25f1d5d7-937c-4090-bf04-1ecc158e64be",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "a8a6e1bf-a875-4555-be8f-667e21c53c73",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "4b74e221-51b8-462f-8687-21baf3d64e6f",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "73259e18-9f87-4d73-b4ea-35cea0bd1fae",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "a07ab13a-8314-4cce-aea3-2054187ab2c7",
+      "result_id": "8658c18c-3fe6-4841-b0ac-dc4fde26822b"
+    },
+    {
+      "claim_id": "8a14b99d-b81f-44ec-ba32-f116a10c4df7",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "e637fac5-48c1-4783-bdab-ef014257c801",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "c06192e8-8568-4e9e-a50f-a0df8555289b",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "98b727c7-2b46-458c-9699-9044231d8e8a",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "c649b1eb-774d-4335-ba10-7f286351e290",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "468927fb-18d3-40ec-b61f-18953bf13175",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "f6a6cd56-4fd5-4db4-a1aa-c561c3551119",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "87b8d38a-5f52-4881-a5e7-3c2cb7cba90d",
+      "result_id": "a45022ee-209e-4da0-bec4-e053881c23fa"
+    },
+    {
+      "claim_id": "6e038caf-8032-43c7-9615-d4db98c1f218",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "40069f78-7fc6-488c-ab5f-47971532be56",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "0e32f3ed-f3d6-44be-b1e3-7087e0464b9b",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "358d961e-2996-43bb-a5bf-eeae90cc392c",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "3e16ca8a-cec1-4195-abb6-e61c8fbb318f",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "7d820040-3890-47ec-bebd-4f17d4d1910f",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "6a15f508-3841-4114-9a43-030d9b65954a",
+      "result_id": "c50ea171-b847-4025-9e10-c9ab4474416b"
+    },
+    {
+      "claim_id": "0062abdf-a473-4308-9d74-52ab94ae8ea8",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "c8857009-dacf-4faf-820b-c06898fcd379",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "ba092ab7-0ac7-47b5-b9a1-2dcb868c2207",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "b5f17077-0184-4e30-a7ae-9a4e48ee374d",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "6de55c67-4357-4a01-93b5-a40fd822eec7",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "c9e27ff0-e05c-4575-8758-9f30625f265a",
+      "result_id": "f0a18e61-ff08-4185-bf6c-0356bd07ae02"
+    },
+    {
+      "claim_id": "4197abf0-cc0e-40fd-a7ef-3164dcd98dae",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "716f9b6b-6742-44bd-8eb9-7994ff67317e",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "c5fcd549-5fdc-47ce-86db-b4295266afea",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "6f8d37b0-4c2b-498a-9735-c119df79a97f",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "0a318401-ab22-4255-8ba1-b5a7e5c9791a",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "25382c0a-643e-45f0-a994-350a3e1ef161",
+      "result_id": "865a09f5-acdc-4744-a74c-02bd6a3f12cc"
+    },
+    {
+      "claim_id": "2691fec8-6803-4e31-b617-6a411d194371",
+      "result_id": "ff87120a-8b59-4a7c-b66b-23c3cc06b539"
+    },
+    {
+      "claim_id": "2786f0c2-5192-46ec-b256-7af246593ad8",
+      "result_id": "ff87120a-8b59-4a7c-b66b-23c3cc06b539"
+    },
+    {
+      "claim_id": "88fee718-7838-4ea4-b032-2a150c576182",
+      "result_id": "ff87120a-8b59-4a7c-b66b-23c3cc06b539"
+    },
+    {
+      "claim_id": "b6afc2aa-a58d-4111-be4e-d00a75780c3f",
+      "result_id": "ff87120a-8b59-4a7c-b66b-23c3cc06b539"
+    },
+    {
+      "claim_id": "4b89b06f-ba42-4875-a449-c42aac7a8929",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "a9f6cdc9-de47-4aa2-b93f-08789831b332",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "07e08389-e394-4389-9f80-d92e2436f022",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "317313a0-29bc-42e6-8b9e-6797f84fe0a3",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "bc13e82f-c7e1-4324-831b-27ade3c2b5ca",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "2e400d65-185c-40ff-8d38-b909811e1c70",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "9a04da8f-1fa8-48ce-8720-a90be331dbc6",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "f26016c8-55e7-49e8-9629-006166326550",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "4beee379-4e9c-4df7-bf00-9cda67e3805c",
+      "result_id": "e008d884-a3ac-42b9-a8d2-d3eb8275baae"
+    },
+    {
+      "claim_id": "4db837ae-900d-4b64-bb4b-0bc84a99a7fa",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "f05a33af-53e9-4a5b-9744-84bc6ec787c6",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "cb5d9feb-5845-47b9-9c86-13e24e1941fe",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "5096d417-c793-4ee4-bf7e-08d8c20a146d",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "61ebd7de-9832-4bd9-903c-02db46e33641",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "5614a2b1-50b3-46bb-a35c-e7a570cbe3c8",
+      "result_id": "3c44a1cc-4f4f-4aed-b6cd-712d54f5de11"
+    },
+    {
+      "claim_id": "04758a72-ccb6-461b-8b1a-daa4e300011b",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "52743680-7dde-43c8-abc3-ce3a562c491e",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "e7adfb6a-e3aa-402d-8611-027b97a79533",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "8677807f-f60a-4dd5-bb5c-3d3eeeef19cc",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "569553e6-fce3-4d56-bebe-b5d03ac1599d",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "75f32b2d-f4e5-4c1a-b92b-3f07ed8b2f98",
+      "result_id": "dc43694e-4156-443a-8fd9-2b06f4d40369"
+    },
+    {
+      "claim_id": "8c4d8de0-19c2-4d8e-9535-929814585513",
+      "result_id": "96655403-6286-4fba-a151-b5b3f3939aee"
+    },
+    {
+      "claim_id": "1fa7e050-3cb9-4ecc-a5eb-a66e388722da",
+      "result_id": "96655403-6286-4fba-a151-b5b3f3939aee"
+    },
+    {
+      "claim_id": "a7dd41eb-3e5a-4417-8862-063b8528373f",
+      "result_id": "96655403-6286-4fba-a151-b5b3f3939aee"
+    },
+    {
+      "claim_id": "54905fd9-6606-4f12-9ae6-5d7d03d8d714",
+      "result_id": "96655403-6286-4fba-a151-b5b3f3939aee"
+    },
+    {
+      "claim_id": "6a8b3bac-1b43-484c-b184-4e28e0552b91",
+      "result_id": "96655403-6286-4fba-a151-b5b3f3939aee"
+    },
+    {
+      "claim_id": "d0ac8aeb-d885-42b0-bd3c-bfcb835d1560",
+      "result_id": "6b906848-0cba-4e35-96f0-2b6d1773377a"
+    },
+    {
+      "claim_id": "10145129-bba3-43e6-bc1f-e99553b9fcfa",
+      "result_id": "6b906848-0cba-4e35-96f0-2b6d1773377a"
+    },
+    {
+      "claim_id": "352f5335-bf8a-45d6-a3c4-c20624f6a59b",
+      "result_id": "6b906848-0cba-4e35-96f0-2b6d1773377a"
+    },
+    {
+      "claim_id": "3603a3dc-9df9-4220-8baa-b62cc00f6afe",
+      "result_id": "87c00f20-1118-42e7-9654-4ac5d60a2b47"
+    },
+    {
+      "claim_id": "650c7262-8c93-4b74-b204-15aa29b6d3cb",
+      "result_id": "87c00f20-1118-42e7-9654-4ac5d60a2b47"
+    },
+    {
+      "claim_id": "b42ba323-4ea3-44f5-84bc-6e48fe378e99",
+      "result_id": "4daa5ca0-ff3c-4caf-90bc-fb46b9ed5336"
+    },
+    {
+      "claim_id": "2660e4a3-9abb-4b17-9259-5ba539998e07",
+      "result_id": "4daa5ca0-ff3c-4caf-90bc-fb46b9ed5336"
+    },
+    {
+      "claim_id": "04971bab-8dcf-4a37-bc6b-8659b0a4f67a",
+      "result_id": "4daa5ca0-ff3c-4caf-90bc-fb46b9ed5336"
+    },
+    {
+      "claim_id": "6def74c4-6a10-40f0-b1aa-4f957d48c627",
+      "result_id": "4daa5ca0-ff3c-4caf-90bc-fb46b9ed5336"
+    },
+    {
+      "claim_id": "cd21e14b-40e9-4c3a-b5a3-8bc97cd55cd8",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "8a39d868-1037-4ecf-a848-59db7f418520",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "f0fd26f1-2b83-4c39-ac84-88a1be1436e5",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "c7491614-01f0-46fc-b44b-1c9aded39dcb",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "50b94b2b-5a03-425b-93e1-8d78cc5ddefd",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "267033d0-ba79-433b-9d35-4c9501e4ed29",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "eaefa6fe-9346-470b-a00b-f3b6e70786a6",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "c967a8de-cd7a-4f14-91a0-ca93230fe074",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    },
+    {
+      "claim_id": "b40f5c8f-eb69-4e4b-945e-b557d879b647",
+      "result_id": "26aa3d16-af45-405a-ba75-15ab626728c0"
+    }
+  ],
+  "comparisons": []
+}

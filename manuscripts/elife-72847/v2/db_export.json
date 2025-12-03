@@ -1,0 +1,1637 @@
+{
+  "submission": {
+    "id": "d0163053-37a2-4d7e-8da2-434e34cab4af",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T15:59:48.251045Z",
+    "updated_at": "2025-12-03T15:59:48.251045Z"
+  },
+  "content": [
+    {
+      "id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "submission_id": "d0163053-37a2-4d7e-8da2-434e34cab4af",
+      "content_type": "manuscript",
+      "content_text": "# Resurrecting essential amino acid biosynthesis in mammalian cells\n\n## Authors\n\n- Julie Trolle<sup>1</sup> ([ORCID: 0000-0002-2497-3531](https://orcid.org/0000-0002-2497-3531))\n- Ross M McBee<sup>2</sup> ([ORCID: 0000-0003-1926-2863](https://orcid.org/0000-0003-1926-2863))\n- Andrew Kaufman<sup>3</sup>\n- Sudarshan Pinglay<sup>1</sup>\n- Henri Berger<sup>1</sup>\n- Sergei German<sup>1</sup>\n- Liyuan Liu<sup>3</sup>\n- Michael J Shen<sup>1</sup>\n- Xinyi Guo<sup>5</sup>\n- J Andrew Martin<sup>1</sup>\n- Michael E Pacold<sup>6</sup> ([ORCID: 0000-0003-3688-2378](https://orcid.org/0000-0003-3688-2378))\n- Drew R Jones<sup>7</sup>\n- Jef D Boeke<sup>1</sup> ([ORCID: 0000-0001-5322-4946](https://orcid.org/0000-0001-5322-4946)) \u2020\n- Harris H Wang<sup>3</sup> ([ORCID: 0000-0003-2164-4318](https://orcid.org/0000-0003-2164-4318)) \u2020\n\n### Affiliations\n\n1. Institute for Systems Genetics, Department of Biochemistry and Molecular Pharmacology, NYU Langone Health New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))\n2. Department of Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n3. Department of Systems Biology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n4. Department of Internal Medicine, NYU Langone Health New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))\n5. Department of Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n6. Department of Radiation Oncology, NYU Langone Health New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))\n7. Department of Biochemistry and Molecular Pharmacology, NYU Langone Health New York United States ([ROR:005dvqh91](https://ror.org/005dvqh91))\n8. Department of Biomedical Engineering, NYU Tandon School of Engineering Brooklyn United States ([ROR:0190ak572](https://ror.org/0190ak572))\n9. Department of Pathology and Cell Biology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMajor genomic deletions in independent eukaryotic lineages have led to repeated ancestral loss of biosynthesis pathways for nine of the twenty canonical amino acids. While the evolutionary forces driving these polyphyletic deletion events are not well understood, the consequence is that extant metazoans are unable to produce nine essential amino acids (EAAs). Previous studies have highlighted that EAA biosynthesis tends to be more energetically costly, raising the possibility that these pathways were lost from organisms with access to abundant EAAs. It is unclear whether present-day metazoans can reaccept these pathways to resurrect biosynthetic capabilities that were lost long ago or whether evolution has rendered EAA pathways incompatible with metazoan metabolism. Here, we report progress on a large-scale synthetic genomics effort to reestablish EAA biosynthetic functionality in mammalian cells. We designed codon-optimized biosynthesis pathways based on genes mined from Escherichia coli. These pathways were de novo synthesized in 3 kilobase chunks, assembled in yeasto and genomically integrated into a Chinese hamster ovary (CHO) cell line. One synthetic pathway produced valine at a sufficient level for cell viability and proliferation. 13C-tracing verified de novo biosynthesis of valine and further revealed build-up of pathway intermediate 2,3-dihydroxy-3-isovalerate. Increasing the dosage of downstream ilvD boosted pathway performance and allowed for long-term propagation of second-generation cells in valine-free medium at 3.2 days per doubling. This work demonstrates that mammalian metabolism is amenable to restoration of ancient core pathways, paving a path for genome-scale efforts to synthetically restore metabolic functions to the metazoan lineage.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>TransforMax EPI300</td>\n      <td>Lucigen</td>\n      <td>C300C105</td>\n      <td>Chemically competent</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>NEB 10-beta</td>\n      <td>New England Biolabs</td>\n      <td>C3020K</td>\n      <td>Electrocompetent</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO Flp-In</td>\n      <td>ThermoFisher</td>\n      <td>R75807</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pMTIV</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in J.D.Boeke lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pCtrl</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in J.D.Boeke lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pMTIV-ilvD+</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in J.D.Boeke lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pCtrl-ilvD+</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in J.D.Boeke lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pPro</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in H.H.Wang lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (C. griseus)</td>\n      <td>CHO pCtrl-mCh</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Cell line maintained in H.H.Wang lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pJTR0381 (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Encodes Ec ilvD transcription units for lentiviral transduction</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-2A peptide (mouse monoclonal)</td>\n      <td>Novus Biologicals</td>\n      <td>NBP2-59627</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b1/\u03b2-tubulin (rabbit polyclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>2148</td>\n      <td>1:1000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 800CW Anti-mouse IgG (goat polyclonal)</td>\n      <td>LI-COR</td>\n      <td>926\u201332210</td>\n      <td>1:20000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>IRDye 680 RD Anti-rabbit IgG (goat polyclonal)</td>\n      <td>LI-COR</td>\n      <td>926\u201368071</td>\n      <td>1:20000 dilution</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PrestoBlue Cell Viability Reagent</td>\n      <td>ThermoFisher</td>\n      <td>A13261</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext poly(A) mRNA Magnetic Isolation module</td>\n      <td>New England Biolabs</td>\n      <td>E7490</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Ultra RNA Library Prep Kit for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>E7770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>F-12K medium without amino acids, powder base</td>\n      <td>US Biological</td>\n      <td>N8545</td>\n      <td>Dropout medium base</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>RPMI 1640 without amino acids &amp; glucose, powder base</td>\n      <td>US Biological</td>\n      <td>R9010-01</td>\n      <td>Dropout medium base</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gibco fetal bovine serum, dialyzed</td>\n      <td>Fisher Scientific</td>\n      <td>26400044</td>\n      <td>Lot 2140178</td>\n    </tr>\n  </tbody>\n</table>\n\n_CHO: Chinese hamster ovary._\n\n### Pathway completeness analysis\n\nFor pathway completeness analysis, the EC numbers of each enzyme in each amino acid biosynthesis pathway (excluding pathways annotated as only occurring in prokaryotes) were collected from the MetaCyc database (Supplementary file 4). Variant biosynthetic routes to the same amino acid were considered as separate pathways, generating distinct EC number lists. The resulting per-pathway EC number lists were checked against the KEGG, Entrez Gene, Entrez Nucleotide, and Uniprot databases using their respective web APIs for each listed organism. If the combination of all databases contained at least one complete EC numbers list, corresponding to an end-to-end complete biosynthetic pathway, the organism was considered \u2018complete\u2019 for that essential amino acid.\n\n### Cell lines and media\n\nCHO Flp-In cells (ThermoFisher, R75807) were used in all experiments. All cell lines tested negative for mycoplasma. For growth assays involving amino acid dropout formulations, medium was prepared from an amino acid-free Ham\u2019s F-12 (Kaighn\u2019s) powder base (US Biological, N8545), and custom combinations of amino acids were added back in as needed to match the standard amino acid concentrations for Ham\u2019s F-12 (Kaighn\u2019s) medium or as specified. Custom amino acid dropout medium was adjusted to a pH of 7.3, sterile filtered, and supplemented with 10% dialyzed Fetal Bovine Serum (Fisher Scientific, 26400044) and Penicillin-Streptomycin (100 U/mL) prior to use. For metabolomics experiments, medium was prepared from an amino acid-free and glucose-free RPMI 1640 powder base (US Biological, R9010-01), and custom combinations of amino acids and isotopically heavy glucose and sodium pyruvate were added in to match the standard amino acid concentrations for RPMI 1640 or as specified. pH was adjusted to 7.3, sterile filtered and supplemented with 10% dialyzed Fetal Bovine Serum and Penicillin-Streptomycin (100 U/mL) prior to use. Where specified, cells were cultured on plates coated with 0.1% gelatin (EMD Millipore, ES-006-B) for 30 min at room temperature. Plates were washed with PBS prior to use.\n\n### Cell counting and quantification\n\nFor evaluating effects of amino acid dropout on cell growth curves, cells were seeded at 1\u00d7104 into 6-well plates into F12-K media with lowered amino acid concentrations relative to typical F12-K media and then allowed to grow for 5 days. Media was then aspirated off and replaced with PBS with Hoechst 33342 live nuclear stain for automated imaging and counting using a DAPI filter set on an Eclipse Ti2 automated inverted microscope. To count, an automated microscopy routine was used to Figure 5 random locations within each well at 10\u00d7 magnification, and then the cells present in imaged frames counted using automatic cell segregation and counting software. Given differences in cell response to starvation, segregation and counting parameters were tuned in each experiment, but kept constant between starvation conditions and cells with and without the pathway. For synthetic prototroph pathway tests, raw cell counts were performed using the Countess II Automated Cell Counter (ThermoFisher, A27977) in accordance with the manufacturer\u2019s protocol, or using the Scepter 2.0 Handheld Automated Cell Counter (Millipore Sigma, C85360) in accordance with the manufacturer\u2019s protocol. Where indicated, relative cell quantification was measured using PrestoBlue Cell Viability Reagent (ThermoFisher, A13261) in accordance with the manufacturer\u2019s protocol.\n\n### Cell culture in conditioned medium\n\nConditioned medium was generated by seeding 1\u00d7106 pMTIV cells into 10 mL complete F12-K medium on 10 cm plates and replacing the medium with 10 mL freshly prepared valine-free F12-K medium the next day following a PBS wash step. Cells conditioned the medium for 2 days at which point the medium was collected, centrifuged at 300\u00d7g for 3 mins to remove potential cell debris, sterile filtered, and collected in 150 mL vats to reduce batch-to-batch variation. This 100% conditioned medium was subsequently mixed in a 1:1 ratio with freshly prepared, unconditioned valine-free medium to generate so-called 50% conditioned valine-free medium, which was used throughout the long-term culturing process of synthetic prototrophic cells without exogenous supply of valine where specified.\n\n### DNA assembly, recovery and amplification\n\nIntegrated constructs were synthesized de novo in 3 kb DNA segments with each segment overlapping neighboring segments by 80 bp. Assembly was conducted in yeasto by co-transformation of segments into S. cerevisiae strain BY4741 made competent by the LiOAc method (Pan et al., 2007). After 2 days of selection at 30\u00b0C on SC\u2013Ura medium, individual colonies were picked and cultured overnight. 1.5 mL of each resulting yeast culture was resuspended in 250 \u00b5l P1 resuspension buffer (Qiagen, 19051) containing RNase. Glass beads were added to each resuspension and the mixture was vortexed for 10 mins to mechanically shear the cells. Next, cells were subject to alkaline lysis by adding 250 \u00b5l of P2 lysis buffer (Qiagen, 19052) for 5 mins and then neutralized by addition of Qiagen N3 neutralization buffer (Qiagen, 19053). Subsequently, cell debris was spun down and plasmid DNA was collected using the Zymo Zyppy plasmid preparation kit (Zymo Research, D4036) according to the manufacturer\u2019s instructions. Plasmid DNA was eluted in Zyppy Elution buffer and subsequently transformed into TransforMax EPI300 chemically competent E. coli in accordance with the manufacturer\u2019s protocols (Lucigen, C300C105) for plasmid amplification.\n\n### Protein extraction and western blot\n\nCell were lysed in SKL Triton lysis buffer (50 mM Hepes pH7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 10% glycerol, 1% Triton X-100, 25 mM NaF, 10 \u03bcM ZnCl2) supplemented with protease inhibitor (Sigma 11873580001). NuPAGE LDS sample buffer (ThermoFisher, NP0007) supplemented with 1.43 \u2009M \u03b2-mercaptoethanol was added to samples prior to heating at 70\u00b0C for 10 mins. Gel electrophoresis was performed using 4\u201312% Bis-Tris gels (ThermoFisher, NP0326BOX) and run in NuPAGE MOPS running buffer (ThermoFisher, NP0001). Proteins were then transferred onto a PVDF membrane (Milipore Sigma, IPFL00010) using the Biorad Trans-Blot Turbo system in accordance with the manufacturer\u2019s instructions. The transfer membrane was blocked in Odyssey blocking buffer (LI-COR, 927\u201340000) for 1 hr at room temperature prior to incubation in primary antibody (Novus Biologicals, NBP2-59627 [1:1000 dilution]; Cell Signaling Technology, 2148 [1:1000 dilution]) solubilized in a 1:1 mixture of Odyssey blocking buffer and TBS-T buffer (50 \u2009mM Tris Base, 154 \u2009mM NaCl, 0.1% Tween20) overnight at 4\u00b0C. Secondary antibodies (LI-COR, 926\u201332210 [1:20,000 dilution]; LI-COR, 926\u201368071 [1:20,000 dilution]),were also solubilized in Odyssey blocking buffer / TBS-T buffer. The membrane was incubated in the secondary antibody solution for 1.5 hr at room temperature.\n\n### Metabolomics\n\nCells were cultured in RPMI medium containing 13C-glucose and/or 13C-sodium pyruvate were indicated prior to cell harvest. Cell pellets were generated by trypsinization, followed by low speed centrifugation, and the pellet was frozen at \u201380\u00b0C until further processing. A metabolite extraction was carried out on each sample with an extraction ratio of 1e6 cells per mL (80% methanol containing internal standards, 500 nM), according to a previously described method (Pacold et al., 2016). The LC column was a Millipore ZIC-pHILIC (2.1\u00d7150 mm, 5 \u03bcm) coupled to a Dionex Ultimate 3000 system and the column oven temperature was set to 25\u00b0C for the gradient elution. A flow rate of 100 \u03bcL/min was used with the following buffers; (A) 10 mM ammonium carbonate in water, pH 9.0, and (B) neat acetonitrile. The gradient profile was as follows; 80\u201320%B (0\u201330 min), 20\u201380%B (30\u201331 min), 80\u201380%B (31\u201342 min). Injection volume was set to 1 \u03bcL for all analyses (42 min total run time per injection). MS analyses were carried out by coupling the LC system to a Thermo Q Exactive HF mass spectrometer operating in heated electrospray ionization mode (HESI). Method duration was 30 min with a polarity switching data-dependent Top 3 method for both positive and negative modes, and targeted MS2 scans for the monoisotopic, U-13C, and U-13C/U-15N valine m/z values. Spray voltage for both positive and negative modes was 3.5 kV and capillary temperature was set to 320\u00b0C with a sheath gas rate of 35, aux gas of 10, and max spray current of 100 \u03bcA. The full MS scan for both polarities utilized 120,000 resolution with an AGC target of 3e6 and a maximum IT of 100 ms, and the scan range was from 67 to 1000 m/z. Tandem MS spectra for both positive and negative mode used a resolution of 15,000, AGC target of 1e5, maximum IT of 50ms, isolation window of 0.4 m/z, isolation offset of 0.1 m/z, fixed first mass of 50 m/z, and 3-way multiplexed normalized collision energies (nCE) of 10, 35, 80. The minimum AGC target was 1e4 with an intensity threshold of 2e5. All data were acquired in profile mode. All valine data were processed using Thermo XCalibur Qualbrowser for manual inspection and annotation of the resulting spectra and peak heights referring to authentic valine standards and labeled internal standards as described.\n\n### RNA Seq\n\nRNA was extracted from cells using the Qiagen RNeasy Kit (Qiagen, 74104) according to the manufacturer\u2019s protocol. QIAshredder homogenizer columns (Qiagen, 79654) were used to disrupt the cell lysates. mRNA was purified using the NEBNext poly(A) mRNA Magnetic Isolation module (New England Biolabs, E7490) in accordance with the manufacturer\u2019s protocol. Libraries were prepared using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs, E7770), and sequenced on a NextSeq 550 single-end 75 cycles high output with v2.5 chemistry. Reads were adapter and quality trimmed with fastP using default parameters and psuedoaligned to the GCF_003668045.1_CriGri-PICR Chinese hamster genome assembly using kallisto. Differential gene enrichment analysis was performed with in R with DESeq2 and GO enrichment performed and visualized with clusterProfiler against the org.Mm.eg.db database, with further visualization with the pathview, GoSemSim, eulerr packages. Differentially expressed were considered to be statistically significant if their DEseq2 corrected expression was than or equal to the package default of p\u22640.05. GO categories were considered to be statistically significantly regulated if their de/enrichment was calculated as a multiple testing corrected value of p\u22640.05. For mTOR-related genes, all genes present in all GO categories containing the keyword \u2018TOR\u2019 were tested for significance with a multiple testing corrected value of p\u22640.05. For ISR genes, a manually curated list of genes consisting of Eif2ak4, Eif2ak2, Atf4, Ddit3, Asns, Trib3, Nlrp1, Map1lc3b, Atg3, Atg5, Atg7, Atg10, Atg12, Atg16, Becn1, Gabarap, Gabarapl2, Sqstm1, Ddit4, Nupr1, Bcl2l11, Bbc3, Atf5, Pmaip1, Txnip were tested using a corrected value of p\u22640.05.\n\n### Lentiviral packaging\n\nTarget plasmid was maintained in and purified from NEB 10-beta electrocompetent E. coli (New England Biolabs, C3020K). Lentivirus was packaged by plating 4\u00d7106 HEK293T cells on 10 cm2 and incubating cells overnight at 37\u00b0C. Cells were transfected with a plasmid mix consisting of 3.5 \u00b5g of the target plasmid, 6.0 \u00b5g psPAX2 (Addgene, 12260), and 3.0 \u00b5g pMD2.G (Addgene, 12259) using Lipofectamine 2000 (ThermoFisher Scientific, 11668019) in accordance with the manufacturer\u2019s instructions. Transfected HEK293T cells were incubated for 48 hr, before medium was collected, and centrifuged at 200\u00d7g for 5 mins. The resulting supernatant was filtered using a 0.45 \u00b5m filter before infection. CHO cells were plated at 20\u201330% confluency in and incubated overnight prior to infection. The packaged virus was applied to cells for 24 hr before the medium was exchanged for fresh medium. After another 24 hr of incubation, the medium was exchanged for fresh medium containing 10 \u00b5g/ml puromycin for 8 days.\n\n### qPCR\n\ngDNA and RNA were extracted from cells using the QIAamp DNA Kit (Qiagen, 51304) the Qiagen RNeasy Kit (Qiagen, 74104), respectively, in accordance with the manufacturer\u2019s protocol. For RNA extraction, QIAshredder homogenizer columns (Qiagen, 79654) were used to disrupt the cell lysates. cDNA was generated from RNA using Invitrogen SuperScript IV Reverse Transcriptase (Invitrogen, 18090200) and oligo(dT) primers. Each qPCR reaction was performed using SYBR Green Master I (Roche, 04707516001) on a Light Cycler 480 (Roche, 05015243001) using the recommended cycling conditions. Primers were designed to amplify amplicons 150\u2013200 bp in size.\n",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "89d98aa8-01c0-4f1a-a901-00d5e1c5f179",
+      "submission_id": "d0163053-37a2-4d7e-8da2-434e34cab4af",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Topisirovic, https://ror.org/056jjra10 Jewish General Hospital Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72847.sa0](https://doi.org/10.7554/eLife.72847.sa0)\n\nIn this report, the authors devised synthetic genomic strategies to introduce essential amino-acid biosynthetic pathways into mammalian cells. While the functionalization of methionine, threonine, and isoleucine synthesis was unsuccessful, restoration of valine synthesis rendered mammalian cells partially independent of exogenous valine. Moreover, transcriptomes of the valine-prototrophic cell mirrored transcriptomes captured during recovery from valine deprivation in parental, valine-auxotrophic counterparts. Altogether, this work was found to be of substantial interest as it provides pioneering evidence that mammalian systems may be permissive to the restoration of essential amino acid biosynthetic pathways and is thus anticipated to have a broad impact in the fields of synthetic biology, biotechnology and beyond.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ivan Topisirovic, https://ror.org/056jjra10 Jewish General Hospital Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72847.sa1](https://doi.org/10.7554/eLife.72847.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Resurrecting essential amino acid biosynthesis in a mammalian cell\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Ivan Topisirovic as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Philip Cole as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Ran Kafri (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) CHO cells engineered to biosynthesize valine exhibited gradual increase in doubling time and reduction in valine production. Based on this, it was thought that more evidence is required to demonstrate that the introduction of valine biosynthetic pathway into CHO cells results in sustained proliferation and survival in the absence of valine supplementation. Accordingly, it was deemed that the authors should monitor long-term ability of engineered CHO cells to sustain valine production and proliferate in valine-free media.\n\n2) Characterization of valine synthesizing CHO cells was found to be incomplete. To this end, monitoring flux via valine biosynthetic and degradation pathways, transcriptome and mTOR signaling at early and late time points was thought to be warranted.\n\n3) Some technical issues were also observed. These include lack of clarity pertinent to the rationale behind using \"conditioned-medium\" in the experiments. Moreover, potential utilization of other sources of valine (e.g., proteins from the serum, autophagy) should be excluded.\n\n4) More deliberation on the failure of the attempts to functionalize other essential amino acid biosynthesis in CHO cells should be considered.\n\n5) The manuscript requires careful editing.\n\nReviewer #1 (Recommendations for the authors):\n\nSpecific comments:\n\n\u2013 The extent of rescue of proliferation of CHO cells prototrophic for valine appears to be modest. It was appreciated that the latter cells survive in valine-free media, but it seems that their proliferation is significantly lower than in valine containing media. Moreover, it seems that after 6 passages only a fraction of the detected valine is synthesized de novo. Would this fraction further decrease in subsequent passages? Related to this, it is not clear what is the efficiency of valine biosynthesis in CHO cells vs. a prototrophic organism. Perhaps comparing the rates of valine synthesis in cell free extracts of CHO cells vs. those derived from a prototrophic organism may be helpful to address this.\n\n\u2013 Another concern is that serum proteins, autophagy of proteasome may act as sources of valine, which should be excluded.\n\n\u2013 Notwithstanding that monitoring steady-state mRNA levels was appreciated, further characterization of valine-prototrophic CHO cells appears to be warranted. This in particular relates to amino-acid sensing pathways (e.g., mTOR) that signal amino-acid availability to the proliferation/growth machinery.\n\n\u2013 The authors should also elaborate on the failure to functionalize other tested pathways. Was this due to the altered stoichiometry and/or inadequate expression of the enzymes belonging to these pathways (which may occur post-transcriptionally)? Were the enzymes mislocalized? Are there other regulatory factors involved? Moreover, considering that the overarching tenet is that metazoans lost the ability to produce essential amino acids due to energetic restraints, it may be worthwhile noting that culturing conditions and potential differences in energy resources may impact on functionalization of essential amino acid biosynthetic pathways.\n\n\u2013 Notwithstanding that this may be seen as too elaborate, including additional cell lines may be beneficial to exclude potential cell-line related biases.\n\nReviewer #2 (Recommendations for the authors):\n\nThe results put forth in this manuscript suggest the authors were marginally successful in introducing a valine biosynthetic pathway into CHO cells, but fall short of demonstrating a robust, self-sustaining engineered cell line under reasonable culture conditions. This milestone should be met prior to final acceptance at eLife. Additionally, the following revisions should be carried out prior to acceptance.\n\n1) To substantiate the authors' major claims, follow up experiments demonstrating long-term homeostasis in the engineered cell line over multiple passages should be performed.\n\n\u2013 It is possible residual valine from complete medium may help pCTRL and pMTIV cells survive at early timepoints. The authors should identify the timepoint at which pCTRL cells are no longer viable in dropout medium. The authors should then compare transcriptional profiles of the pMTIV cells at that timepoint to the that of pMTIV cells harvested at 4hr and 48hr.\n\n\u2013 Similar to the point above, authors should include data examining pCTRL viability/ proliferation when fed with the conditioned medium regimen.\n\n2) Metabolic flux should be more rigorously quantified for the pMTIV strain by performing the 13C6 tracer experiments and measuring 2-acetolactate, 2,3-dihydroxy-isovalerate, and 2-oxoisovalerate levels over time. Doing so may help identify key bottlenecks in the pathway. If a bottleneck can be identified, authors should attempt to make the pathway more efficient, either by modifying expression strategy of that enzyme or testing homologs from other hosts. The pathway should be optimized until the major revision 1 above is achieved.\n\n3) Unsuccessful efforts to produce methionine, threonine, and isoleucine are distracting to the rest of the manuscript. For clarity, these sections should be de-emphasized in writing and figures for clarity.\n\n4) Introducing heterologous pathways into new hosts can cause toxicity, especially when the donor and recipient are phylogenetically divergent. Authors should either experimentally test or comment on whether pathway intermediates/byproducts could have off-target effects.\n\nReviewer #3 (Recommendations for the authors):\n\nThe task that Wang et al., has undertaken is adventurous and the successful accomplishment can prove important in generating many unexpected insights once the CHO cell lines are shared with the wider community.\n\nThe authors have a few grammatical and spelling errors that should be corrected, including in the title \"in a mammalian cell\" --> \"in mammalian cells\".\n",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ac44fa55-4005-4af1-8dd4-5ec84d12b43a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C1",
+      "claim": "Major genomic deletions in independent eukaryotic lineages have led to repeated ancestral loss of biosynthesis pathways for nine of the twenty canonical amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Major genomic deletions in independent eukaryotic lineages have led to repeated ancestral loss of biosynthesis pathways for nine of the twenty canonical amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about evolutionary history presented in the abstract without specific experimental data from this study, relying on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "cdad1c01-aa11-4ed7-8aaf-784b97b27871",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C2",
+      "claim": "The evolutionary forces driving polyphyletic deletion events of essential amino acid biosynthesis pathways are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While the evolutionary forces driving these polyphyletic deletion events are not well understood, the consequence is that extant metazoans are unable to produce nine essential amino acids (EAAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a gap in scientific understanding, representing established knowledge about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "85365b0d-65e7-4b3b-87bd-7234795adb2a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C3",
+      "claim": "Extant metazoans are unable to produce nine essential amino acids (EAAs).",
+      "claim_type": "EXPLICIT",
+      "source": "While the evolutionary forces driving these polyphyletic deletion events are not well understood, the consequence is that extant metazoans are unable to produce nine essential amino acids (EAAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological fact about metazoan metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "ee8a9082-de9b-4dd9-a388-2b8c03b3c17f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C4",
+      "claim": "Previous studies have highlighted that EAA biosynthesis tends to be more energetically costly.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have highlighted that EAA biosynthesis tends to be more energetically costly, raising the possibility that these pathways were lost from organisms with access to abundant EAAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous studies without specific citations in this sentence, representing knowledge from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "b16a5ab5-b249-4e3d-8c10-c70423261824",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C5",
+      "claim": "EAA biosynthesis pathways may have been lost from organisms with access to abundant EAAs due to their energetic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have highlighted that EAA biosynthesis tends to be more energetically costly, raising the possibility that these pathways were lost from organisms with access to abundant EAAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possibility or hypothesis ('raising the possibility'), representing speculative reasoning about evolutionary pressures.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "4d2a9578-9c34-4ce3-b2d2-5eef07c87b97",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C6",
+      "claim": "It is unclear whether present-day metazoans can reaccept EAA biosynthesis pathways to resurrect biosynthetic capabilities that were lost long ago.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether present-day metazoans can reaccept these pathways to resurrect biosynthetic capabilities that were lost long ago or whether evolution has rendered EAA pathways incompatible with metazoan metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a research question that the study aims to address, representing a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "c502ba47-f9f1-4448-b725-028cc62cc944",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C7",
+      "claim": "Evolution may have rendered EAA pathways incompatible with metazoan metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear whether present-day metazoans can reaccept these pathways to resurrect biosynthetic capabilities that were lost long ago or whether evolution has rendered EAA pathways incompatible with metazoan metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an alternative hypothesis to be tested, representing speculative reasoning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "05968cc4-e9c9-4d44-91ea-714b2d739fd0",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C8",
+      "claim": "The authors designed codon-optimized biosynthesis pathways based on genes mined from Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed codon-optimized biosynthesis pathways based on genes mined from Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f87e04e8-d4c5-4624-999c-d3b65c62912d",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C9",
+      "claim": "The synthetic pathways were de novo synthesized in 3 kilobase chunks.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were de novo synthesized in 3 kilobase chunks, assembled in yeasto and genomically integrated into a Chinese hamster ovary (CHO) cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "513b4888-3fa4-48d8-be76-a83174bc5a8c",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C10",
+      "claim": "The synthetic pathways were assembled in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were de novo synthesized in 3 kilobase chunks, assembled in yeasto and genomically integrated into a Chinese hamster ovary (CHO) cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "8911c639-8dec-49a0-9762-77f01752118d",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C11",
+      "claim": "The synthetic pathways were genomically integrated into a Chinese hamster ovary (CHO) cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "These pathways were de novo synthesized in 3 kilobase chunks, assembled in yeasto and genomically integrated into a Chinese hamster ovary (CHO) cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "523c4841-0869-4f74-8323-f1c8b00e65bf",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C12",
+      "claim": "One synthetic pathway produced valine at a sufficient level for cell viability and proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "One synthetic pathway produced valine at a sufficient level for cell viability and proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "883f9be2-23ef-48ea-8521-0869d3ab639b",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C13",
+      "claim": "13C-tracing verified de novo biosynthesis of valine.",
+      "claim_type": "EXPLICIT",
+      "source": "13C-tracing verified de novo biosynthesis of valine and further revealed build-up of pathway intermediate 2,3-dihydroxy-3-isovalerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental data obtained using isotope tracing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "91792f04-1eaa-44eb-bcb5-40b60d76d994",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C14",
+      "claim": "13C-tracing revealed build-up of pathway intermediate 2,3-dihydroxy-3-isovalerate.",
+      "claim_type": "EXPLICIT",
+      "source": "13C-tracing verified de novo biosynthesis of valine and further revealed build-up of pathway intermediate 2,3-dihydroxy-3-isovalerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental data obtained using isotope tracing methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "024affdc-56ed-4cfe-a6e2-57cea639ae2b",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C15",
+      "claim": "Increasing the dosage of downstream ilvD boosted pathway performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the dosage of downstream ilvD boosted pathway performance and allowed for long-term propagation of second-generation cells in valine-free medium at 3.2 days per doubling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental manipulation and its observed effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "fb021e49-0036-4c7a-b0d9-b3ec34d8ed59",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C16",
+      "claim": "Increasing ilvD dosage allowed for long-term propagation of second-generation cells in valine-free medium at 3.2 days per doubling.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the dosage of downstream ilvD boosted pathway performance and allowed for long-term propagation of second-generation cells in valine-free medium at 3.2 days per doubling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental results showing cell growth characteristics under specific conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f54550cc-81e0-4add-9e1e-4d895e24be26",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C17",
+      "claim": "Mammalian metabolism is amenable to restoration of ancient core pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that mammalian metabolism is amenable to restoration of ancient core pathways, paving a path for genome-scale efforts to synthetically restore metabolic functions to the metazoan lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "ff3c4b51-8c7e-4489-b9ba-8af1c6f4d21a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C18",
+      "claim": "This work paves a path for genome-scale efforts to synthetically restore metabolic functions to the metazoan lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that mammalian metabolism is amenable to restoration of ancient core pathways, paving a path for genome-scale efforts to synthetically restore metabolic functions to the metazoan lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the implications of the work, representing inference about future applications.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "44a14f85-40c1-458d-aa70-f1004b4cf4dd",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C19",
+      "claim": "EC numbers of each enzyme in each amino acid biosynthesis pathway were collected from the MetaCyc database.",
+      "claim_type": "EXPLICIT",
+      "source": "For pathway completeness analysis, the EC numbers of each enzyme in each amino acid biosynthesis pathway (excluding pathways annotated as only occurring in prokaryotes) were collected from the MetaCyc database (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source and methodology for pathway completeness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "0d249129-e3d8-49f4-b981-aa6b589730e7",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C20",
+      "claim": "Pathways annotated as only occurring in prokaryotes were excluded from the pathway completeness analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For pathway completeness analysis, the EC numbers of each enzyme in each amino acid biosynthesis pathway (excluding pathways annotated as only occurring in prokaryotes) were collected from the MetaCyc database (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "df124a3e-ce64-49e2-8f5e-903c0e982efa",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C21",
+      "claim": "Variant biosynthetic routes to the same amino acid were considered as separate pathways, generating distinct EC number lists.",
+      "claim_type": "EXPLICIT",
+      "source": "Variant biosynthetic routes to the same amino acid were considered as separate pathways, generating distinct EC number lists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in pathway completeness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "3ed809a9-631d-4f83-bfab-466ad1daa7c1",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C22",
+      "claim": "Per-pathway EC number lists were checked against the KEGG, Entrez Gene, Entrez Nucleotide, and Uniprot databases using their respective web APIs for each listed organism.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting per-pathway EC number lists were checked against the KEGG, Entrez Gene, Entrez Nucleotide, and Uniprot databases using their respective web APIs for each listed organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology used for pathway completeness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "4f281c15-76d7-45d2-8cab-31de9e73e676",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C23",
+      "claim": "If the combination of all databases contained at least one complete EC numbers list, corresponding to an end-to-end complete biosynthetic pathway, the organism was considered 'complete' for that essential amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "If the combination of all databases contained at least one complete EC numbers list, corresponding to an end-to-end complete biosynthetic pathway, the organism was considered 'complete' for that essential amino acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the criteria used to classify organisms in the pathway completeness analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "79958ac7-ab04-4ef0-92fb-a17f9caa72f4",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C24",
+      "claim": "CHO Flp-In cells (ThermoFisher, R75807) were used in all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "CHO Flp-In cells (ThermoFisher, R75807) were used in all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell line used as the experimental model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "a9bed189-cb37-49fb-8cbd-02760b0c80f7",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C25",
+      "claim": "All cell lines tested negative for mycoplasma.",
+      "claim_type": "EXPLICIT",
+      "source": "All cell lines tested negative for mycoplasma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality control measure for the cell lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "6cf7ded4-6809-4755-a3db-1473c008d813",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C26",
+      "claim": "For growth assays involving amino acid dropout formulations, medium was prepared from an amino acid-free Ham's F-12 (Kaighn's) powder base (US Biological, N8545).",
+      "claim_type": "EXPLICIT",
+      "source": "For growth assays involving amino acid dropout formulations, medium was prepared from an amino acid-free Ham's F-12 (Kaighn's) powder base (US Biological, N8545), and custom combinations of amino acids were added back in as needed to match the standard amino acid concentrations for Ham's F-12 (Kaighn's) medium or as specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for preparing culture media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "44f98d80-7072-413b-871c-d41ad0790368",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C27",
+      "claim": "Custom combinations of amino acids were added back to the amino acid-free medium to match the standard amino acid concentrations for Ham's F-12 (Kaighn's) medium or as specified.",
+      "claim_type": "EXPLICIT",
+      "source": "For growth assays involving amino acid dropout formulations, medium was prepared from an amino acid-free Ham's F-12 (Kaighn's) powder base (US Biological, N8545), and custom combinations of amino acids were added back in as needed to match the standard amino acid concentrations for Ham's F-12 (Kaighn's) medium or as specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for preparing culture media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "9a75bc16-b271-49a5-b976-eb11d9c1652e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C28",
+      "claim": "Custom amino acid dropout medium was adjusted to a pH of 7.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom amino acid dropout medium was adjusted to a pH of 7.3, sterile filtered, and supplemented with 10% dialyzed Fetal Bovine Serum (Fisher Scientific, 26400044) and Penicillin-Streptomycin (100 U/mL) prior to use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for preparing culture media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "5f881eea-3e5a-4c4d-ac55-ff48a4db5d57",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C29",
+      "claim": "Custom amino acid dropout medium was supplemented with 10% dialyzed Fetal Bovine Serum and Penicillin-Streptomycin (100 U/mL) prior to use.",
+      "claim_type": "EXPLICIT",
+      "source": "Custom amino acid dropout medium was adjusted to a pH of 7.3, sterile filtered, and supplemented with 10% dialyzed Fetal Bovine Serum (Fisher Scientific, 26400044) and Penicillin-Streptomycin (100 U/mL) prior to use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for preparing culture media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "5ca2f4a6-eb4f-4626-88f1-75828100d923",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C30",
+      "claim": "For metabolomics experiments, medium was prepared from an amino acid-free and glucose-free RPMI 1640 powder base (US Biological, R9010-01).",
+      "claim_type": "EXPLICIT",
+      "source": "For metabolomics experiments, medium was prepared from an amino acid-free and glucose-free RPMI 1640 powder base (US Biological, R9010-01), and custom combinations of amino acids and isotopically heavy glucose and sodium pyruvate were added in to match the standard amino acid concentrations for RPMI 1640 or as specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for metabolomics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "d3a89518-a62e-4877-93d6-4fdafd94d01f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C31",
+      "claim": "Custom combinations of amino acids and isotopically heavy glucose and sodium pyruvate were added to the RPMI 1640 base to match the standard amino acid concentrations for RPMI 1640 or as specified.",
+      "claim_type": "EXPLICIT",
+      "source": "For metabolomics experiments, medium was prepared from an amino acid-free and glucose-free RPMI 1640 powder base (US Biological, R9010-01), and custom combinations of amino acids and isotopically heavy glucose and sodium pyruvate were added in to match the standard amino acid concentrations for RPMI 1640 or as specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for metabolomics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "3eaf9914-b213-4fb1-9e9f-9481c4eddbe1",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C32",
+      "claim": "Where specified, cells were cultured on plates coated with 0.1% gelatin (EMD Millipore, ES-006-B) for 30 min at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Where specified, cells were cultured on plates coated with 0.1% gelatin (EMD Millipore, ES-006-B) for 30 min at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental condition used in some experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "db0efa2e-ce19-4820-ace6-c2f7c3dd6c43",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C33",
+      "claim": "For evaluating effects of amino acid dropout on cell growth curves, cells were seeded at 1\u00d710^4 into 6-well plates into F12-K media with lowered amino acid concentrations relative to typical F12-K media and then allowed to grow for 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For evaluating effects of amino acid dropout on cell growth curves, cells were seeded at 1\u00d7104 into 6-well plates into F12-K media with lowered amino acid concentrations relative to typical F12-K media and then allowed to grow for 5 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for growth curve assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "7833ce03-9222-43a0-b6a6-f7e7bb038ea6",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C34",
+      "claim": "Media was aspirated off and replaced with PBS with Hoechst 33342 live nuclear stain for automated imaging and counting using a DAPI filter set on an Eclipse Ti2 automated inverted microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Media was then aspirated off and replaced with PBS with Hoechst 33342 live nuclear stain for automated imaging and counting using a DAPI filter set on an Eclipse Ti2 automated inverted microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for cell counting in growth assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "2a874998-d002-4f50-8ad5-9cd383db4945",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C35",
+      "claim": "An automated microscopy routine was used to image 5 random locations within each well at 10\u00d7 magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "To count, an automated microscopy routine was used to Figure 5 random locations within each well at 10\u00d7 magnification, and then the cells present in imaged frames counted using automatic cell segregation and counting software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "80d7b5e5-035c-4bd4-94ee-6dacd4b7de0f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C36",
+      "claim": "Cells present in imaged frames were counted using automatic cell segregation and counting software.",
+      "claim_type": "EXPLICIT",
+      "source": "To count, an automated microscopy routine was used to Figure 5 random locations within each well at 10\u00d7 magnification, and then the cells present in imaged frames counted using automatic cell segregation and counting software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for automated cell counting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f926712b-fe84-4f40-9705-6d7f21bcfe6e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C37",
+      "claim": "Segregation and counting parameters were tuned in each experiment, but kept constant between starvation conditions and cells with and without the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Given differences in cell response to starvation, segregation and counting parameters were tuned in each experiment, but kept constant between starvation conditions and cells with and without the pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for ensuring consistency in cell counting across experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "bd2d9c5d-ce8b-48c1-a9a9-5e6c7b37e056",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C38",
+      "claim": "For synthetic prototroph pathway tests, raw cell counts were performed using the Countess II Automated Cell Counter (ThermoFisher, A27977) or using the Scepter 2.0 Handheld Automated Cell Counter (Millipore Sigma, C85360).",
+      "claim_type": "EXPLICIT",
+      "source": "For synthetic prototroph pathway tests, raw cell counts were performed using the Countess II Automated Cell Counter (ThermoFisher, A27977) in accordance with the manufacturer's protocol, or using the Scepter 2.0 Handheld Automated Cell Counter (Millipore Sigma, C85360) in accordance with the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for cell counting in prototroph pathway tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "bd5896de-f641-42f1-9ecd-f8eaed9de64d",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C39",
+      "claim": "Where indicated, relative cell quantification was measured using PrestoBlue Cell Viability Reagent (ThermoFisher, A13261).",
+      "claim_type": "EXPLICIT",
+      "source": "Where indicated, relative cell quantification was measured using PrestoBlue Cell Viability Reagent (ThermoFisher, A13261) in accordance with the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative methodology for cell quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "8edf63af-7cfb-424e-9019-49920de92fc7",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C40",
+      "claim": "Conditioned medium was generated by seeding 1\u00d710^6 pMTIV cells into 10 mL complete F12-K medium on 10 cm plates and replacing the medium with 10 mL freshly prepared valine-free F12-K medium the next day following a PBS wash step.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditioned medium was generated by seeding 1\u00d7106 pMTIV cells into 10 mL complete F12-K medium on 10 cm plates and replacing the medium with 10 mL freshly prepared valine-free F12-K medium the next day following a PBS wash step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for generating conditioned medium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "58c2efbb-3e73-4993-aed7-56e02264c907",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C41",
+      "claim": "Cells conditioned the medium for 2 days at which point the medium was collected, centrifuged at 300\u00d7g for 3 mins to remove potential cell debris, sterile filtered, and collected in 150 mL vats to reduce batch-to-batch variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells conditioned the medium for 2 days at which point the medium was collected, centrifuged at 300\u00d7g for 3 mins to remove potential cell debris, sterile filtered, and collected in 150 mL vats to reduce batch-to-batch variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for processing conditioned medium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "67ba5e23-41d5-4a63-9da2-c468b765a40f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C42",
+      "claim": "100% conditioned medium was subsequently mixed in a 1:1 ratio with freshly prepared, unconditioned valine-free medium to generate 50% conditioned valine-free medium.",
+      "claim_type": "EXPLICIT",
+      "source": "This 100% conditioned medium was subsequently mixed in a 1:1 ratio with freshly prepared, unconditioned valine-free medium to generate so-called 50% conditioned valine-free medium, which was used throughout the long-term culturing process of synthetic prototrophic cells without exogenous supply of valine where specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for preparing diluted conditioned medium.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "07f54db9-e4f8-4bbe-9481-bdaf239524e8",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C43",
+      "claim": "50% conditioned valine-free medium was used throughout the long-term culturing process of synthetic prototrophic cells without exogenous supply of valine where specified.",
+      "claim_type": "EXPLICIT",
+      "source": "This 100% conditioned medium was subsequently mixed in a 1:1 ratio with freshly prepared, unconditioned valine-free medium to generate so-called 50% conditioned valine-free medium, which was used throughout the long-term culturing process of synthetic prototrophic cells without exogenous supply of valine where specified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for long-term culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "b69a1a89-4e54-49ae-a36d-99f33c9fab4a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C44",
+      "claim": "Integrated constructs were synthesized de novo in 3 kb DNA segments with each segment overlapping neighboring segments by 80 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrated constructs were synthesized de novo in 3 kb DNA segments with each segment overlapping neighboring segments by 80 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for DNA synthesis and assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "5c57c5b2-a330-4742-82ce-2d3994d9e49d",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C45",
+      "claim": "Assembly was conducted in yeast by co-transformation of segments into S. cerevisiae strain BY4741 made competent by the LiOAc method.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly was conducted in yeasto by co-transformation of segments into S. cerevisiae strain BY4741 made competent by the LiOAc method (Pan et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for DNA assembly, with reference to a published protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "729aad97-63f0-43d4-b14a-7ce52271f46e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C46",
+      "claim": "After 2 days of selection at 30\u00b0C on SC\u2013Ura medium, individual colonies were picked and cultured overnight.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2 days of selection at 30\u00b0C on SC\u2013Ura medium, individual colonies were picked and cultured overnight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for selecting and culturing yeast transformants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "610d197d-8861-4e07-b366-45e4c2199828",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C47",
+      "claim": "Plasmid DNA was collected using the Zymo Zyppy plasmid preparation kit (Zymo Research, D4036) according to the manufacturer's instructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, cell debris was spun down and plasmid DNA was collected using the Zymo Zyppy plasmid preparation kit (Zymo Research, D4036) according to the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for plasmid DNA purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "545ae170-bc1f-4c55-b757-5512aa4fe36a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C48",
+      "claim": "Plasmid DNA was transformed into TransforMax EPI300 chemically competent E. coli for plasmid amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmid DNA was eluted in Zyppy Elution buffer and subsequently transformed into TransforMax EPI300 chemically competent E. coli in accordance with the manufacturer's protocols (Lucigen, C300C105) for plasmid amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for amplifying plasmid DNA in bacteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "e3970f5d-5253-415a-8ac8-c4a2cc276ce5",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C49",
+      "claim": "Cells were lysed in SKL Triton lysis buffer supplemented with protease inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell were lysed in SKL Triton lysis buffer (50 mM Hepes pH7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 10% glycerol, 1% Triton X-100, 25 mM NaF, 10 \u03bcM ZnCl2) supplemented with protease inhibitor (Sigma 11873580001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for protein extraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f786a9ad-2705-4031-8810-afe439614948",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C50",
+      "claim": "NuPAGE LDS sample buffer supplemented with 1.43 M \u03b2-mercaptoethanol was added to samples prior to heating at 70\u00b0C for 10 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "NuPAGE LDS sample buffer (ThermoFisher, NP0007) supplemented with 1.43  M \u03b2-mercaptoethanol was added to samples prior to heating at 70\u00b0C for 10 mins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for preparing protein samples for western blot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "19613496-f8fc-4c8d-992c-da1950def42e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C51",
+      "claim": "Gel electrophoresis was performed using 4\u201312% Bis-Tris gels and run in NuPAGE MOPS running buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Gel electrophoresis was performed using 4\u201312% Bis-Tris gels (ThermoFisher, NP0326BOX) and run in NuPAGE MOPS running buffer (ThermoFisher, NP0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for protein gel electrophoresis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "4a1a5b7b-e9cd-40c3-881a-320e25de7dfa",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C52",
+      "claim": "Proteins were transferred onto a PVDF membrane using the Biorad Trans-Blot Turbo system.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins were then transferred onto a PVDF membrane (Milipore Sigma, IPFL00010) using the Biorad Trans-Blot Turbo system in accordance with the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for protein transfer in western blotting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "0024214f-38b7-4913-bf6b-cf136e08bf0f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C53",
+      "claim": "The transfer membrane was blocked in Odyssey blocking buffer for 1 hr at room temperature prior to incubation in primary antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfer membrane was blocked in Odyssey blocking buffer (LI-COR, 927\u201340000) for 1 hr at room temperature prior to incubation in primary antibody (Novus Biologicals, NBP2-59627 [1:1000 dilution]; Cell Signaling Technology, 2148 [1:1000 dilution]) solubilized in a 1:1 mixture of Odyssey blocking buffer and TBS-T buffer (50  mM Tris Base, 154  mM NaCl, 0.1% Tween20) overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for western blot membrane blocking and antibody incubation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "d2d9917d-2c13-457e-966c-aa767f5b038a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C54",
+      "claim": "Primary antibody was solubilized in a 1:1 mixture of Odyssey blocking buffer and TBS-T buffer and incubated overnight at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfer membrane was blocked in Odyssey blocking buffer (LI-COR, 927\u201340000) for 1 hr at room temperature prior to incubation in primary antibody (Novus Biologicals, NBP2-59627 [1:1000 dilution]; Cell Signaling Technology, 2148 [1:1000 dilution]) solubilized in a 1:1 mixture of Odyssey blocking buffer and TBS-T buffer (50  mM Tris Base, 154  mM NaCl, 0.1% Tween20) overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for primary antibody incubation in western blotting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "5d727c10-f810-4565-a4be-64b41c89ee65",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C55",
+      "claim": "Secondary antibodies were solubilized in Odyssey blocking buffer / TBS-T buffer and the membrane was incubated in the secondary antibody solution for 1.5 hr at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary antibodies (LI-COR, 926\u201332210 [1:20,000 dilution]; LI-COR, 926\u201368071 [1:20,000 dilution]),were also solubilized in Odyssey blocking buffer / TBS-T buffer. The membrane was incubated in the secondary antibody solution for 1.5 hr at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for secondary antibody incubation in western blotting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "b14d8f39-2b6b-4e50-b758-2d13f83f3e3e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C56",
+      "claim": "Cells were cultured in RPMI medium containing 13C-glucose and/or 13C-sodium pyruvate prior to cell harvest for metabolomics experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were cultured in RPMI medium containing 13C-glucose and/or 13C-sodium pyruvate were indicated prior to cell harvest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for isotope labeling in metabolomics experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "2e503d48-d22a-4c6a-8f9c-1266255f28d8",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C57",
+      "claim": "Cell pellets were generated by trypsinization, followed by low speed centrifugation, and the pellet was frozen at \u201380\u00b0C until further processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell pellets were generated by trypsinization, followed by low speed centrifugation, and the pellet was frozen at \u201380\u00b0C until further processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for sample preparation for metabolomics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "381ea4d4-5a3b-444c-961c-8c42617b1192",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C58",
+      "claim": "A metabolite extraction was carried out on each sample with an extraction ratio of 1e6 cells per mL (80% methanol containing internal standards, 500 nM), according to a previously described method.",
+      "claim_type": "EXPLICIT",
+      "source": "A metabolite extraction was carried out on each sample with an extraction ratio of 1e6 cells per mL (80% methanol containing internal standards, 500 nM), according to a previously described method (Pacold et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for metabolite extraction, referencing a published protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "e47702ba-7e3d-45fb-a634-77a73ddcf1c5",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C59",
+      "claim": "The LC column was a Millipore ZIC-pHILIC (2.1\u00d7150 mm, 5 \u03bcm) coupled to a Dionex Ultimate 3000 system and the column oven temperature was set to 25\u00b0C for the gradient elution.",
+      "claim_type": "EXPLICIT",
+      "source": "The LC column was a Millipore ZIC-pHILIC (2.1\u00d7150 mm, 5 \u03bcm) coupled to a Dionex Ultimate 3000 system and the column oven temperature was set to 25\u00b0C for the gradient elution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for liquid chromatography in metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "c0bf671f-e810-40ae-b43f-8beabeba4cc4",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C60",
+      "claim": "MS analyses were carried out by coupling the LC system to a Thermo Q Exactive HF mass spectrometer operating in heated electrospray ionization mode (HESI).",
+      "claim_type": "EXPLICIT",
+      "source": "MS analyses were carried out by coupling the LC system to a Thermo Q Exactive HF mass spectrometer operating in heated electrospray ionization mode (HESI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for mass spectrometry in metabolomics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f8823182-a371-4ad5-acdd-f3aa90d004bc",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C61",
+      "claim": "All valine data were processed using Thermo XCalibur Qualbrowser for manual inspection and annotation of the resulting spectra and peak heights referring to authentic valine standards and labeled internal standards.",
+      "claim_type": "EXPLICIT",
+      "source": "All valine data were processed using Thermo XCalibur Qualbrowser for manual inspection and annotation of the resulting spectra and peak heights referring to authentic valine standards and labeled internal standards as described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for processing and analyzing valine metabolomics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "ef8ecfe7-2f55-4f13-bb6c-b06d5dd0da4b",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C62",
+      "claim": "RNA was extracted from cells using the Qiagen RNeasy Kit (Qiagen, 74104) according to the manufacturer's protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA was extracted from cells using the Qiagen RNeasy Kit (Qiagen, 74104) according to the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for RNA extraction for RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "62a45bb7-5551-4bfa-b9da-fb5d51b81d90",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C63",
+      "claim": "mRNA was purified using the NEBNext poly(A) mRNA Magnetic Isolation module (New England Biolabs, E7490).",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA was purified using the NEBNext poly(A) mRNA Magnetic Isolation module (New England Biolabs, E7490) in accordance with the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for mRNA purification for RNA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "05ffbcbf-fdea-4c6f-b16e-a92cb23b20e4",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C64",
+      "claim": "Libraries were prepared using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs, E7770), and sequenced on a NextSeq 550 single-end 75 cycles high output with v2.5 chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Libraries were prepared using the NEBNext Ultra RNA Library Prep Kit for Illumina (New England Biolabs, E7770), and sequenced on a NextSeq 550 single-end 75 cycles high output with v2.5 chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for RNA-seq library preparation and sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "b5636864-e3b9-4f17-88f6-b41fe46ec7cb",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C65",
+      "claim": "Reads were adapter and quality trimmed with fastP using default parameters and psuedoaligned to the GCF_003668045.1_CriGri-PICR Chinese hamster genome assembly using kallisto.",
+      "claim_type": "EXPLICIT",
+      "source": "Reads were adapter and quality trimmed with fastP using default parameters and psuedoaligned to the GCF_003668045.1_CriGri-PICR Chinese hamster genome assembly using kallisto.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for RNA-seq data processing and alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "8998cdf6-a294-4daf-9b79-cbb5a55c6789",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C66",
+      "claim": "Differential gene enrichment analysis was performed with in R with DESeq2 and GO enrichment performed and visualized with clusterProfiler against the org.Mm.eg.db database.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential gene enrichment analysis was performed with in R with DESeq2 and GO enrichment performed and visualized with clusterProfiler against the org.Mm.eg.db database, with further visualization with the pathview, GoSemSim, eulerr packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "54625eba-104b-420c-b6f9-843c03ee319a",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C67",
+      "claim": "Differentially expressed genes were considered to be statistically significant if their DEseq2 corrected expression was p\u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentially expressed were considered to be statistically significant if their DEseq2 corrected expression was than or equal to the package default of p\u22640.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical criteria used for identifying differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "1e3aaa28-7024-46ed-b30b-e8935ff84a6d",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C68",
+      "claim": "GO categories were considered to be statistically significantly regulated if their de/enrichment was calculated as a multiple testing corrected value of p\u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "GO categories were considered to be statistically significantly regulated if their de/enrichment was calculated as a multiple testing corrected value of p\u22640.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical criteria used for GO enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "d875ebeb-addd-4a49-b8b9-092291e442a7",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C69",
+      "claim": "For mTOR-related genes, all genes present in all GO categories containing the keyword 'TOR' were tested for significance with a multiple testing corrected value of p\u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "For mTOR-related genes, all genes present in all GO categories containing the keyword 'TOR' were tested for significance with a multiple testing corrected value of p\u22640.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for analyzing mTOR-related gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "71902588-008c-479e-8d6e-f3063cdf9070",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C70",
+      "claim": "Target plasmid was maintained in and purified from NEB 10-beta electrocompetent E. coli (New England Biolabs, C3020K).",
+      "claim_type": "EXPLICIT",
+      "source": "Target plasmid was maintained in and purified from NEB 10-beta electrocompetent E. coli (New England Biolabs, C3020K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for plasmid maintenance and purification for lentiviral packaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "79cb19f8-801b-45e6-b01b-2e7ee0edc4d6",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C71",
+      "claim": "Lentivirus was packaged by plating 4\u00d710^6 HEK293T cells on 10 cm2 and incubating cells overnight at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentivirus was packaged by plating 4\u00d7106 HEK293T cells on 10 cm2 and incubating cells overnight at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for lentiviral packaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "ba5f2fbc-5cc7-4614-992e-bf896d7e1d23",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C72",
+      "claim": "Cells were transfected with a plasmid mix consisting of 3.5 \u00b5g of the target plasmid, 6.0 \u00b5g psPAX2 (Addgene, 12260), and 3.0 \u00b5g pMD2.G (Addgene, 12259) using Lipofectamine 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were transfected with a plasmid mix consisting of 3.5 \u00b5g of the target plasmid, 6.0 \u00b5g psPAX2 (Addgene, 12260), and 3.0 \u00b5g pMD2.G (Addgene, 12259) using Lipofectamine 2000 (ThermoFisher Scientific, 11668019) in accordance with the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for transfecting cells for lentiviral production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "c4c00737-0dac-4148-87d0-4d8166695b0c",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C73",
+      "claim": "Transfected HEK293T cells were incubated for 48 hr, before medium was collected, and centrifuged at 200\u00d7g for 5 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfected HEK293T cells were incubated for 48 hr, before medium was collected, and centrifuged at 200\u00d7g for 5 mins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for collecting lentiviral supernatant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "16524195-33c7-40e3-9566-57efead0cc66",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C74",
+      "claim": "The resulting supernatant was filtered using a 0.45 \u00b5m filter before infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting supernatant was filtered using a 0.45 \u00b5m filter before infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for preparing lentiviral supernatant for infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "f2084104-da37-4b81-8e65-e7fe61493e02",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C75",
+      "claim": "CHO cells were plated at 20\u201330% confluency and incubated overnight prior to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "CHO cells were plated at 20\u201330% confluency in and incubated overnight prior to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for preparing CHO cells for lentiviral infection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "456e84f1-1514-4b95-8f7f-7e923a1a3cb9",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C76",
+      "claim": "The packaged virus was applied to cells for 24 hr before the medium was exchanged for fresh medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The packaged virus was applied to cells for 24 hr before the medium was exchanged for fresh medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for lentiviral infection of CHO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "59bc263d-dbe8-4708-a668-9287886e7afe",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C77",
+      "claim": "After another 24 hr of incubation, the medium was exchanged for fresh medium containing 10 \u00b5g/ml puromycin for 8 days.",
+      "claim_type": "EXPLICIT",
+      "source": "After another 24 hr of incubation, the medium was exchanged for fresh medium containing 10 \u00b5g/ml puromycin for 8 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for selecting lentivirally transduced cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "a754d49b-1d37-4f4f-8f5a-92f262604a58",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C78",
+      "claim": "gDNA and RNA were extracted from cells using the QIAamp DNA Kit (Qiagen, 51304) and the Qiagen RNeasy Kit (Qiagen, 74104), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "gDNA and RNA were extracted from cells using the QIAamp DNA Kit (Qiagen, 51304) the Qiagen RNeasy Kit (Qiagen, 74104), respectively, in accordance with the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for extracting nucleic acids for qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "663f183a-bc90-432a-8563-4d6b0efb9a05",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C79",
+      "claim": "cDNA was generated from RNA using Invitrogen SuperScript IV Reverse Transcriptase (Invitrogen, 18090200) and oligo(dT) primers.",
+      "claim_type": "EXPLICIT",
+      "source": "cDNA was generated from RNA using Invitrogen SuperScript IV Reverse Transcriptase (Invitrogen, 18090200) and oligo(dT) primers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for cDNA synthesis for qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "2501e2a0-bf7b-4617-aba0-b4c960240726",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C80",
+      "claim": "Each qPCR reaction was performed using SYBR Green Master I (Roche, 04707516001) on a Light Cycler 480 (Roche, 05015243001) using the recommended cycling conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each qPCR reaction was performed using SYBR Green Master I (Roche, 04707516001) on a Light Cycler 480 (Roche, 05015243001) using the recommended cycling conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for performing qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "98b51709-db8f-49dd-99ca-d81ffbb87edf",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "claim_id": "C81",
+      "claim": "Primers were designed to amplify amplicons 150\u2013200 bp in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Primers were designed to amplify amplicons 150\u2013200 bp in size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design criteria for qPCR primers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2c9ab9c1-825c-4f1a-922a-a79856652955",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors designed and constructed codon-optimized biosynthesis pathways from E. coli genes, synthesized them in 3 kb segments, assembled them in yeast, and genomically integrated them into CHO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 and C44-C48 describe a coherent methodological pipeline for pathway construction. The approach is well-documented with specific technical details including segment sizes, assembly methods, and host organisms. This represents standard synthetic biology methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "12e3ecb9-48a9-4687-bbc0-6bd848c07634",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A synthetic valine biosynthesis pathway produced sufficient valine for CHO cell viability and proliferation, verified by 13C-tracing which also revealed accumulation of the pathway intermediate 2,3-dihydroxy-3-isovalerate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 provide converging evidence for functional valine biosynthesis. Cell viability demonstrates biological function (C12), 13C-tracing provides direct chemical verification of de novo synthesis (C13), and intermediate accumulation (C14) indicates pathway activity with a potential bottleneck. The isotope tracing is particularly strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "839c2ea8-1849-4f48-9a03-7b736719f86f",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Increasing ilvD gene dosage improved pathway performance and enabled long-term propagation of cells in valine-free medium with a doubling time of 3.2 days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 demonstrate rational pathway optimization. The observation that increasing ilvD dosage improves performance is consistent with the intermediate accumulation observed in C14, suggesting ilvD was rate-limiting. The specific doubling time provides quantitative evidence of sustained growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "160e424d-cafd-493e-88e9-ab0f73b1a2db",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mammalian metabolism is amenable to restoration of ancient core metabolic pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 is directly supported by the successful functional integration of the valine biosynthesis pathway (C12-C16). The demonstration that a mammalian cell line can accept and functionally express a complete bacterial amino acid biosynthesis pathway provides proof-of-concept for this broader conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "7d9ffbaa-8b36-49c0-92a8-3a9870ee6d6e",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "This work enables future genome-scale efforts to synthetically restore metabolic functions to metazoans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C18 is forward-looking and speculative. While the successful restoration of one pathway (valine) suggests feasibility, the manuscript only demonstrates success for a single amino acid out of nine EAAs. Scalability to genome-scale restoration remains unproven and would require addressing pathway-specific challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A computational pathway completeness analysis was performed by mining EC numbers from MetaCyc and checking for complete pathways across multiple databases (KEGG, Entrez, Uniprot).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 describe a systematic bioinformatics approach for assessing pathway completeness across organisms. The methodology is clearly defined with specific databases and criteria. However, the manuscript does not present results from this analysis, limiting assessment of its execution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CHO Flp-In cells were used with custom amino acid dropout media prepared from defined powder bases, with appropriate quality controls including mycoplasma testing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 describe standard cell culture methodology with appropriate quality controls. The use of defined media from amino acid-free bases is essential for testing amino acid prototrophy. Mycoplasma testing (C25) is an important quality control measure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell growth and quantification were performed using automated microscopy with nuclear staining or automated cell counters, with parameters kept consistent across experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 describe multiple complementary methods for cell quantification. The consistency measures (C37) are important for valid comparisons. However, the manuscript notes that parameters were 'tuned in each experiment,' which could introduce variability between experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "0cd93112-e2b8-4bab-bd05-7305c706e43b",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Conditioned medium was prepared from pMTIV cells and used at 50% concentration for long-term culture of synthetic prototrophic cells in valine-free conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe the conditioned medium methodology. While the protocol is detailed, the rationale for using conditioned medium is not explained in these claims. This suggests cells may require additional factors beyond valine, which could complicate interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "6d2f6342-b54c-43d2-90b9-891c87933e2b",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Western blot analysis was performed using standard protein extraction, gel electrophoresis, and immunodetection protocols with anti-2A peptide and anti-tubulin antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C55 describe standard western blot methodology with appropriate primary and secondary antibodies. The anti-2A peptide antibody suggests the constructs used 2A peptide sequences, likely for polycistronic expression. Methods are adequately detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "48db521b-e255-4f9b-8574-1bc1e81537b2",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Metabolomics analysis was performed using 13C-labeled substrates, HILIC chromatography, and high-resolution mass spectrometry with manual data processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 describe comprehensive metabolomics methodology appropriate for isotope tracing. The use of authentic standards (C61) is important for accurate identification. However, manual inspection (C61) could introduce subjectivity; automated peak integration would be more rigorous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "ebd27c8b-0639-4130-90c4-1f25a115ef10",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "RNA-seq was performed with standard library preparation and analyzed using DESeq2 for differential expression and clusterProfiler for GO enrichment, with p\u22640.05 as the significance threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C69 describe standard RNA-seq methodology and analysis. The statistical thresholds (C67-C69) are appropriate with multiple testing correction. However, C66 notes pseudoalignment to Chinese hamster genome but GO analysis against mouse database (org.Mm.eg.db), which may introduce annotation errors due to species mismatch.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "3419ae00-7212-4eca-83aa-d930ca9c24f2",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lentiviral transduction was used to deliver additional ilvD copies to CHO cells, with standard packaging in HEK293T cells and puromycin selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 describe standard lentiviral production and transduction methodology. This approach was used to increase ilvD dosage (related to C15-C16). The methods are adequately detailed and follow established protocols.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "28a1059a-7d5c-40f7-a38d-d6f6ed2bb8a3",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "qPCR was performed using standard RNA and DNA extraction, cDNA synthesis, and SYBR Green detection with primers designed for 150-200 bp amplicons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe standard qPCR methodology. The primer design criteria (C81) are appropriate for qPCR. However, the manuscript does not present qPCR results in the provided text, limiting assessment of how this method was applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    },
+    {
+      "id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed",
+      "content_id": "1446d5f7-c435-41c3-947c-03afe75b37a5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Metazoans lost biosynthesis pathways for nine essential amino acids through ancestral genomic deletions, possibly due to energetic costs when EAAs were abundant, but it remains unclear whether these pathways can be restored or are incompatible with modern metazoan metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 establish the biological context and research question. C1-C4 represent established knowledge about EAA pathway loss and energetic costs. C5-C7 frame the central question addressed by the study. These claims appropriately set up the motivation for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T15:59:48.251045Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "05968cc4-e9c9-4d44-91ea-714b2d739fd0",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "f87e04e8-d4c5-4624-999c-d3b65c62912d",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "513b4888-3fa4-48d8-be76-a83174bc5a8c",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "8911c639-8dec-49a0-9762-77f01752118d",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "b69a1a89-4e54-49ae-a36d-99f33c9fab4a",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "5c57c5b2-a330-4742-82ce-2d3994d9e49d",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "729aad97-63f0-43d4-b14a-7ce52271f46e",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "610d197d-8861-4e07-b366-45e4c2199828",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "545ae170-bc1f-4c55-b757-5512aa4fe36a",
+      "result_id": "2c9ab9c1-825c-4f1a-922a-a79856652955"
+    },
+    {
+      "claim_id": "523c4841-0869-4f74-8323-f1c8b00e65bf",
+      "result_id": "12e3ecb9-48a9-4687-bbc0-6bd848c07634"
+    },
+    {
+      "claim_id": "883f9be2-23ef-48ea-8521-0869d3ab639b",
+      "result_id": "12e3ecb9-48a9-4687-bbc0-6bd848c07634"
+    },
+    {
+      "claim_id": "91792f04-1eaa-44eb-bcb5-40b60d76d994",
+      "result_id": "12e3ecb9-48a9-4687-bbc0-6bd848c07634"
+    },
+    {
+      "claim_id": "024affdc-56ed-4cfe-a6e2-57cea639ae2b",
+      "result_id": "839c2ea8-1849-4f48-9a03-7b736719f86f"
+    },
+    {
+      "claim_id": "fb021e49-0036-4c7a-b0d9-b3ec34d8ed59",
+      "result_id": "839c2ea8-1849-4f48-9a03-7b736719f86f"
+    },
+    {
+      "claim_id": "f54550cc-81e0-4add-9e1e-4d895e24be26",
+      "result_id": "160e424d-cafd-493e-88e9-ab0f73b1a2db"
+    },
+    {
+      "claim_id": "ff3c4b51-8c7e-4489-b9ba-8af1c6f4d21a",
+      "result_id": "7d9ffbaa-8b36-49c0-92a8-3a9870ee6d6e"
+    },
+    {
+      "claim_id": "44a14f85-40c1-458d-aa70-f1004b4cf4dd",
+      "result_id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70"
+    },
+    {
+      "claim_id": "0d249129-e3d8-49f4-b981-aa6b589730e7",
+      "result_id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70"
+    },
+    {
+      "claim_id": "df124a3e-ce64-49e2-8f5e-903c0e982efa",
+      "result_id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70"
+    },
+    {
+      "claim_id": "3ed809a9-631d-4f83-bfab-466ad1daa7c1",
+      "result_id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70"
+    },
+    {
+      "claim_id": "4f281c15-76d7-45d2-8cab-31de9e73e676",
+      "result_id": "eb1ebd7e-5abf-4ba3-93da-0382958b9c70"
+    },
+    {
+      "claim_id": "79958ac7-ab04-4ef0-92fb-a17f9caa72f4",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "a9bed189-cb37-49fb-8cbd-02760b0c80f7",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "6cf7ded4-6809-4755-a3db-1473c008d813",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "44f98d80-7072-413b-871c-d41ad0790368",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "9a75bc16-b271-49a5-b976-eb11d9c1652e",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "5f881eea-3e5a-4c4d-ac55-ff48a4db5d57",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "5ca2f4a6-eb4f-4626-88f1-75828100d923",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "d3a89518-a62e-4877-93d6-4fdafd94d01f",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "3eaf9914-b213-4fb1-9e9f-9481c4eddbe1",
+      "result_id": "e0353c20-d5a1-4af4-81ed-75f0c19e1481"
+    },
+    {
+      "claim_id": "db0efa2e-ce19-4820-ace6-c2f7c3dd6c43",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "7833ce03-9222-43a0-b6a6-f7e7bb038ea6",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "2a874998-d002-4f50-8ad5-9cd383db4945",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "80d7b5e5-035c-4bd4-94ee-6dacd4b7de0f",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "f926712b-fe84-4f40-9705-6d7f21bcfe6e",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "bd2d9c5d-ce8b-48c1-a9a9-5e6c7b37e056",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "bd5896de-f641-42f1-9ecd-f8eaed9de64d",
+      "result_id": "a89cb2eb-cd20-4d0e-8b8e-7d942f06c1e0"
+    },
+    {
+      "claim_id": "8edf63af-7cfb-424e-9019-49920de92fc7",
+      "result_id": "0cd93112-e2b8-4bab-bd05-7305c706e43b"
+    },
+    {
+      "claim_id": "58c2efbb-3e73-4993-aed7-56e02264c907",
+      "result_id": "0cd93112-e2b8-4bab-bd05-7305c706e43b"
+    },
+    {
+      "claim_id": "67ba5e23-41d5-4a63-9da2-c468b765a40f",
+      "result_id": "0cd93112-e2b8-4bab-bd05-7305c706e43b"
+    },
+    {
+      "claim_id": "07f54db9-e4f8-4bbe-9481-bdaf239524e8",
+      "result_id": "0cd93112-e2b8-4bab-bd05-7305c706e43b"
+    },
+    {
+      "claim_id": "e3970f5d-5253-415a-8ac8-c4a2cc276ce5",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "f786a9ad-2705-4031-8810-afe439614948",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "19613496-f8fc-4c8d-992c-da1950def42e",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "4a1a5b7b-e9cd-40c3-881a-320e25de7dfa",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "0024214f-38b7-4913-bf6b-cf136e08bf0f",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "d2d9917d-2c13-457e-966c-aa767f5b038a",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "5d727c10-f810-4565-a4be-64b41c89ee65",
+      "result_id": "6d2f6342-b54c-43d2-90b9-891c87933e2b"
+    },
+    {
+      "claim_id": "b14d8f39-2b6b-4e50-b758-2d13f83f3e3e",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "2e503d48-d22a-4c6a-8f9c-1266255f28d8",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "381ea4d4-5a3b-444c-961c-8c42617b1192",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "e47702ba-7e3d-45fb-a634-77a73ddcf1c5",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "c0bf671f-e810-40ae-b43f-8beabeba4cc4",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "f8823182-a371-4ad5-acdd-f3aa90d004bc",
+      "result_id": "48db521b-e255-4f9b-8574-1bc1e81537b2"
+    },
+    {
+      "claim_id": "ef8ecfe7-2f55-4f13-bb6c-b06d5dd0da4b",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "62a45bb7-5551-4bfa-b9da-fb5d51b81d90",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "05ffbcbf-fdea-4c6f-b16e-a92cb23b20e4",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "b5636864-e3b9-4f17-88f6-b41fe46ec7cb",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "8998cdf6-a294-4daf-9b79-cbb5a55c6789",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "54625eba-104b-420c-b6f9-843c03ee319a",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "1e3aaa28-7024-46ed-b30b-e8935ff84a6d",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "d875ebeb-addd-4a49-b8b9-092291e442a7",
+      "result_id": "ebd27c8b-0639-4130-90c4-1f25a115ef10"
+    },
+    {
+      "claim_id": "71902588-008c-479e-8d6e-f3063cdf9070",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "79cb19f8-801b-45e6-b01b-2e7ee0edc4d6",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "ba5f2fbc-5cc7-4614-992e-bf896d7e1d23",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "c4c00737-0dac-4148-87d0-4d8166695b0c",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "16524195-33c7-40e3-9566-57efead0cc66",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "f2084104-da37-4b81-8e65-e7fe61493e02",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "456e84f1-1514-4b95-8f7f-7e923a1a3cb9",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "59bc263d-dbe8-4708-a668-9287886e7afe",
+      "result_id": "3419ae00-7212-4eca-83aa-d930ca9c24f2"
+    },
+    {
+      "claim_id": "a754d49b-1d37-4f4f-8f5a-92f262604a58",
+      "result_id": "28a1059a-7d5c-40f7-a38d-d6f6ed2bb8a3"
+    },
+    {
+      "claim_id": "663f183a-bc90-432a-8563-4d6b0efb9a05",
+      "result_id": "28a1059a-7d5c-40f7-a38d-d6f6ed2bb8a3"
+    },
+    {
+      "claim_id": "2501e2a0-bf7b-4617-aba0-b4c960240726",
+      "result_id": "28a1059a-7d5c-40f7-a38d-d6f6ed2bb8a3"
+    },
+    {
+      "claim_id": "98b51709-db8f-49dd-99ca-d81ffbb87edf",
+      "result_id": "28a1059a-7d5c-40f7-a38d-d6f6ed2bb8a3"
+    },
+    {
+      "claim_id": "ac44fa55-4005-4af1-8dd4-5ec84d12b43a",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "cdad1c01-aa11-4ed7-8aaf-784b97b27871",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "85365b0d-65e7-4b3b-87bd-7234795adb2a",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "ee8a9082-de9b-4dd9-a388-2b8c03b3c17f",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "b16a5ab5-b249-4e3d-8c10-c70423261824",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "4d2a9578-9c34-4ce3-b2d2-5eef07c87b97",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    },
+    {
+      "claim_id": "c502ba47-f9f1-4448-b725-028cc62cc944",
+      "result_id": "4db53b66-0acb-47b8-9274-5174d1a2f5ed"
+    }
+  ],
+  "comparisons": []
+}

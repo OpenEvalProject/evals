@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the anatomical context of mouse visual cortex, citing prior work showing that V1 projects to multiple secondary visual areas (LM, AL, RL, PM) as well as frontal cortex and basal ganglia, and that optogenetic silencing of V1 impairs visually guided behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C6-C10) are well-supported by citations to established anatomical and functional studies. The authors appropriately reference prior work to establish the known connectivity patterns and functional importance of V1, providing necessary background for their experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C53"
+    ],
+    "result": "Optogenetic inhibition of secondary visual areas (LM/AL and RL) produces behavioral deficits in contrast-change detection comparable to or larger than V1 inhibition, while PM inhibition produces weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data (C3, C17-C19, C21-C22, C53) demonstrate clear differential effects across areas using quantitative measures (100% crossing points). The experimental design includes appropriate controls, multiple animals, and statistical analysis. The finding that lateral areas show effects as large as V1 while PM shows weaker effects is consistently demonstrated across multiple measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Electrophysiological recordings demonstrate that optogenetic inhibition of secondary visual areas primarily suppresses local neural activity rather than acting through feedback to V1, with LM showing moderate feedback effects (39% V1 suppression) while PM shows negligible feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data (C4, C20, C23-C25, C30, C36-C39, C42-C44) provide strong evidence with quantitative measurements, confidence intervals, and appropriate controls. The comparison of direct versus feedback suppression at matched intensities (C41, C43-C44) is particularly compelling. However, recordings were performed during passive viewing rather than during behavior, which could potentially affect the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C54",
+      "C55"
+    ],
+    "result": "Behavioral effects are primarily due to changes in perceptual sensitivity (d\u2032) rather than response bias, indicating that information must pass through secondary visual areas rather than being directly decoded from V1 by downstream areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The signal detection theory analysis (C26) and the inference about information flow (C27, C54-C55) are well-supported by the behavioral data showing minimal changes in false alarm rates and lapse rates. The conclusion that information passes through secondary areas is a reasonable inference from the pattern of behavioral effects, though alternative parallel processing models are acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study employed VGAT-ChR2-EYFP transgenic mice with hemodynamic intrinsic-signal imaging to identify visual areas, along with appropriate surgical procedures and viral injections for calcium imaging experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details (C28-C29, C68-C78) are clearly described with appropriate mouse lines, sample sizes, and procedural specifications. The use of hemodynamic imaging to identify areas is justified given the YFP expression in the transgenic line that would interfere with calcium imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The spatial extent of optogenetic suppression was characterized, showing that the half-max radius of suppression (0.73 mm) was slightly larger than the light spot radius, and that direct V1 suppression was stronger than feedback suppression from LM/AL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial characterization (C31, C49-C52) is supported by electrophysiological recordings and calcium imaging with quantitative measurements and confidence intervals. The comparison of direct versus feedback spatial patterns strengthens the conclusion that behavioral effects are due to local suppression rather than feedback.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Visual response properties differ across areas: V1 and lateral areas show similar peak response magnitudes (both larger than PM), with V1 showing the shortest latency (65 ms), lateral areas showing intermediate latency (73 ms), and PM showing notably longer latency (90 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological characterization of visual responses (C32-C35) provides quantitative measurements with confidence intervals. These findings are consistent with known hierarchical organization and provide important context for interpreting the behavioral effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Widefield calcium imaging during LM inhibition showed that V1 responses were unchanged when LM was suppressed, and that LM stimulation at intensities producing similar V1 suppression as low-intensity V1 stimulation produced much larger behavioral deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging data (C40-C41) provide direct evidence that behavioral effects of LM inhibition are not mediated by V1 suppression. The comparison of behavioral effects at matched V1 suppression levels is a strong experimental design. However, the imaging data come from a single animal (N=1), which limits the generalizability of this specific finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Control experiments showed that behavioral effects were not due to motor impairments (ipsilateral vs contralateral paw produced similar results) or stimulus position (varying stimulus azimuth in PM produced similar weak effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments (C45-C46) appropriately address alternative explanations for the observed effects. The ipsilateral paw control demonstrates that effects are primarily sensory, and the stimulus position control confirms that weak PM effects are not due to retinotopic mismatch.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Spatial specificity controls demonstrated that distance from V1 representation did not predict effect size, and that moving the light spot between V1 and LM/AL produced dramatic falloff in behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial specificity analyses (C47-C48) provide important controls showing that effects are due to inhibition at the targeted location rather than spread to V1. The within-subject control (C48) is particularly strong evidence for spatial specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes that V1 carries substantial information about visual contrast that is linearly decodable, providing the rationale for why secondary areas might not be necessary for the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C11-C15) are well-supported by citations to prior physiological and computational studies. This background appropriately motivates the central question of whether secondary areas are necessary despite V1 containing sufficient information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work, noting that lateral and medial areas encode different stimulus features, that PM does not appear involved in simple perceptual tasks, and comparing results to Jin and Glickfeld 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately cites and compares to prior work (C56-C62). The comparison to Jin and Glickfeld 2020 is particularly important as it shows consistency in sensitivity findings while noting differences in false alarm rate effects, which the authors attribute to task design differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The discussion considers alternative models of information flow, citing evidence that premotor cortex processes sensory signals, that decision signals are found in frontal/premotor cortex and striatum, and that parallel pathways including the superior colliculus may contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately considers alternative interpretations (C63-C66) and cites relevant prior work. The acknowledgment of parallel processing models and SC involvement demonstrates appropriate scientific caution about inferring sequential processing from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The behavioral task and optogenetic stimulation parameters are described in detail, including trial structure, stimulus parameters, response windows, reward amounts, session lengths, fiber optic specifications, light spot measurements, and LED timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details (C82-C94) are comprehensively described with specific quantitative parameters. The inclusion/exclusion criteria for sessions (C93-C94) are clearly stated. These details support reproducibility of the experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Electrophysiological recording methods are described, including electrode specifications, insertion procedures, stimulus parameters, reward delivery to maintain alertness, and unit quality metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiology methods (C95-C100) are well-described with appropriate technical details. The SNR values for single units (3.5 \u00b1 0.36) and the exclusion of multiunits (C100) indicate good recording quality. The 30-60 min waiting period (C96) to reduce drift is a good practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "GCaMP imaging methods are described, including frame rates, stimulus presentations, reward delivery, and PCA-based analysis to remove global fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging methods (C79-C81) are appropriately described. The PCA approach to remove global fluctuations (C81) is a standard preprocessing step. However, the imaging data for some key findings come from very small sample sizes (N=1 animal for some experiments).",
+    "result_type": "MINOR"
+  }
+]

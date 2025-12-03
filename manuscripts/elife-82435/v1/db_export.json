@@ -1,0 +1,1265 @@
+{
+  "submission": {
+    "id": "645c0d91-b10a-42b1-9f97-60d5f99b4c9e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T20:22:50.317263Z",
+    "updated_at": "2025-12-03T20:22:50.317263Z"
+  },
+  "content": [
+    {
+      "id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "submission_id": "645c0d91-b10a-42b1-9f97-60d5f99b4c9e",
+      "content_type": "manuscript",
+      "content_text": "# Mechanical basis and topological routes to cell elimination\n\n## Authors\n\n- Siavash Monfared<sup>1</sup> ([ORCID: 0000-0002-7629-7977](https://orcid.org/0000-0002-7629-7977)) \u2020\n- Guruswami Ravichandran<sup>1</sup>\n- Jos\u00e9 Andrade<sup>1</sup>\n- Amin Doostmohammadi<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Division of Engineering and Applied Science, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))\n2. Niels Bohr Institute, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell layers eliminate unwanted cells through the extrusion process, which underlines healthy versus flawed tissue behaviors. Although several biochemical pathways have been identified, the underlying mechanical basis including the forces involved in cellular extrusion remains largely unexplored. Utilizing a phase-field model of a three-dimensional cell layer, we study the interplay of cell extrusion with cell\u2013cell and cell\u2013substrate interactions in a flat monolayer. Independent tuning of cell\u2013cell versus cell\u2013substrate adhesion forces reveals that extrusion events can be distinctly linked to defects in nematic and hexatic orders associated with cellular arrangements. Specifically, we show that by increasing relative cell\u2013cell adhesion forces the cell monolayer can switch between the collective tendency towards fivefold, hexatic, disclinations relative to half-integer, nematic, defects for extruding a cell. We unify our findings by accessing three-dimensional mechanical stress fields to show that an extrusion event acts as a mechanism to relieve localized stress concentration.\n\n## Introduction\n\nThe ability of cells to self-organize and collectively migrate drives numerous physiological processes including morphogenesis (Chiou and Collins, 2018; Vafa and Mahadevan, 2022), epithelial\u2013mesenchymal transition (Barriga et al., 2018), wound healing (Brugu\u00e9s et al., 2014), and tumor progression (De Pascalis and Etienne-Manneville, 2017). Advanced experimental techniques have linked this ability to mechanical interactions between cells (Maskarinec et al., 2009; Ladoux, 2009; Ladoux and M\u00e8ge, 2017). Specifically, cells actively coordinate their movements through mechanosensitive adhesion complexes at the cell\u2013substrate interface and cell\u2013cell junctions. Moreover, cell\u2013cell and cell\u2013substrate adhesions seem to be coupled (Balasubramaniam et al., 2021), further complicating the interplay of mechanics with biochemistry.\n\nWhile advances in experimental techniques are followed by more nuanced theoretical and computational developments, a majority of current approaches to simulate multicellular layers are limited to two-dimensional systems, hindering in-depth exploration of intrinsically three-dimensional nature of the distinct forces that govern cell\u2013cell and cell\u2013substrate interactions. Furthermore, some of the most fundamental processes in cell biology such as cell extrusion \u2013 responsible for tissue integrity \u2013 are inherently three-dimensional. Thus, studying the underlying mechanisms necessitates access to both in-plane and out-of-plane forces in the cell layers.\n\nCell extrusion refers to the process of removal of excess cells to prevent accumulation of unnecessary or pathological cells (Rosenblatt et al., 2001). This process can get initiated through apoptotic signaling (Rosenblatt et al., 2001), oncogenic transformation (Hogan et al., 2009), and overcrowding of cells (Marinari et al., 2012; Eisenhoffer et al., 2012; Levayer et al., 2016) or induced by replication stress (Dwivedi et al., 2021). Most importantly, cell extrusion plays an important role in developmental (Toyama et al., 2008), homeostatic (Eisenhoffer et al., 2012; Le et al., 2021), and pathological processes (Slattum and Rosenblatt, 2014), including cancer metastasis. However, the underlying mechanisms that facilitate cell extrusion are still unclear.\n\nThe similarities between cellular systems and liquid crystals, studied both theoretically and experimentally, featuring both nematic order (Saw et al., 2017; Kawaguchi et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2018; Tan et al., 2020; Zhang et al., 2021) and hexatic order (Classen et al., 2005; Sugimura and Ishihara, 2013; Pasupalak et al., 2020; Maitra et al., 2020; Hoffmann et al., 2022) with the two phases potentially coexisting (Armengol-Collado et al., 2022) and interacting provide a fresh perspective for understanding cellular processes. The fivefold disclinations in hexatic arrangement of cells are numerically shown to favor overlaps between the cells in two-dimensions (Loewe et al., 2020), potentially contributing to the cell extrusion in three-dimensions. In this vein, it is shown that a net positive charge associated with hexatic disclinations can be associated with the maximum curvature of dome-like structures in model organoids and in epithelial cell layers (Rozman et al., 2020; Rozman et al., 2021; Hoffmann et al., 2022). Moreover, in cellular monolayers, comet- and trefoil-shaped half-integer topological defects, corresponding to +1/2 and -1/2 charges, respectively, are prevalent (Doostmohammadi et al., 2015; Doostmohammadi et al., 2016). These are singular points in cellular alignment that mark the breakdown of orientational order (de Genne and Prost, 1998). Recent experiments on epithelial monolayers found a strong correlation between extrusion events and the position of a subset of +1/2 defects in addition to a relatively weaker correlation with -1/2 defects (Saw et al., 2017). These recently introduced purely mechanical routes to cell extrusion have opened the door to new questions on the nature of forces that are involved in eliminating cells from the monolayer and challenge the purely biological consensus that an extruding cell sends a signal to its neighbor that activates its elimination process (Rosenblatt et al., 2001). Nevertheless, it is not clear whether these different mechanisms are related, and whether, depending on the mechanical features of the cells, the cell layers actively switch between different routes to eliminate the unwanted cells. Since all the existing studies so far have only focused on effective two-dimensional models of the cell layers, fundamental questions about the three-dimensional phenomenon of cell extrusion and its connection to the interplay between cell-generated forces at the interface between cells and the substrate, with multicellular force transmission across the cell layer, remain unanswered.\n\nIn this article, we explore three-dimensional collective cell migration in cellular monolayers. Based on large-scale simulations, we examine (i) the underlying mechanisms responsible for cell extrusion, including any correlations with \u00b11/2 topological defects and fivefold disclinations, and (ii) the interplay of cell\u2013cell and cell\u2013substrate adhesion with extrusion events in cellular systems. Moreover, by mapping the full three-dimensional mechanical stress field across the entire monolayer, we identify localized stress concentration as the unifying factor that governs distinct topological routes to cell extrusion.\n\n## Results and discussion\n\n### Topological routes to cell extrusion: Nematic and hexatic disclinations\n\nIn the absence of self-propulsion forces, the initial configuration tends to equilibrate into a hexagonal lattice (see Appendix 1\u2014figure 11 in Appendix 1 for an example). As we introduce self-propulsion forces associated with front-rear cell polarity (see \u2018Materials and methods\u2019 for polarization dynamics), the system is pushed away from its equilibrium hexagonal configuration, resulting in defects manifested as fivefold and sevenfold disclinations, as shown in Figure 2b. Figure 1a shows a simulation snapshot with two extrusion events taking place. An extrusion event is detected if the vertical displacement of a cell, relative to other cells in the monolayer, exceeds $R_{0}/2$, where R0 is the initial cell radius. Figure 1b displays the out-of-plane normalized velocity profile, $v~\u2192_{z}=(v\u2192\u2062(x\u2192)\u22c5e\u2192_{z})/v_{z}^{max}$ where $v_{z}^{max}$ is the maximum value of the velocity component in $e\u2192_{z}$ direction in the displayed cross-section of the monolayer, clearly marking the extruding cells as they get expelled from the monolayer and lose contact with the substrate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/82435/elife-82435-fig1-v1.jpg)\n\n**Figure 1.:** (a) A representative simulation snapshot (cell\u2013substrate adhesion $\\omega_{cw}=0.0025$ and relative cell\u2013cell adhesion $\u03a9=\\omega_{cc}/\\omega_{cw}=0.4$) of a three-dimensional cell monolayer. Two cells are visibly extruding. (b) A cross-section (dotted yellow line $\u1d49-\u1d49^{^{\u2032}}$) of the cell monolayer highlighting the two extruding cells via the normalized out-of-plane velocity ($v~_{z}=(v\u2192\u22c5e\u2192_{z})/v_{z}^{max}$), where $v_{z}^{max}$ is the maximum value of the vz component of the velocity field $v\u2192$ in the shown cross-section.\n\nIn order to probe the possible mechanical routes to cell extrusion, we begin by characterizing topological defects in cell orientation field and disclinations in cellular arrangements. To this end, we first map the orientation field of the cells from the 2D projected cell shape profile on $x\u2062y-$ plane ($z=0$, i.e., the basal side) and identify topological defects as the singularities in the orientation field. The results (example snapshot in Figure 2a) show the continuous emergence of half-integer (\u00b11/2), nematic, topological defects that spontaneously nucleate in pairs and follow chaotic trajectories before annihilation (see Appendix 1\u2014figure 9 in Appendix 1 for energy spectra characterization). It is noteworthy that unlike previous studies of active nematic behavior in 2D cell layers (Mueller et al., 2019; Wenzel and Voigt, 2021), the nematic defects here emerge in the absence of any active dipolar stress or subcellular fields as the only active driving in these simulations is the polar force that the cells generate. Therefore, although the cells are endowed with polarity in terms of their self-propulsion, the emergent symmetry in terms of their orientational alignment is nematic, which is in line with experimental observations in cell monolayers (Saw et al., 2017; Blanch-Mercader et al., 2018), discrete models of self-propelled rods (B\u00e4r et al., 2020; Meacock et al., 2021), and recently proposed continuum model of polar active matter (Amiri et al., 2022).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/82435/elife-82435-fig2-v1.jpg)\n\n**Figure 2.:** A representative analysis corresponding to the configuration shown in Figure 1a and projected into $x\u2062y-$ plane ($z=0$, i.e., the basal side). (a) A coarse-grained director field with coarse-graining length of one cell size $\u2113_{dir.}=R_{0}$ and +1/2 (filled circles with the line indicating orientation) and -1/2 (three connected lines with threefold symmetry) nematic defects. (b) Number of neighbors $z$ for each cell, including fivefold and sevenfold disclinations mapped into the monolayer. The symbol + denotes the center of mass for two extruding cells. (c, d) Probability densities of the normalized minimum distance between extruding cells and the nearest \u00b11/2 defect, $d~_{min}=d_{min}/R_{0}$, for varying cell\u2013cell to cell\u2013substrate adhesion ratios $\u03a9$ for (c) -1/2 and (d) +1/2 topological defects (inset: distribution mean $m=\u27e8d~_{min}^{+1/2}\u27e9$ vs. $\u03a9$). (e) The probability density of average coordination number $z\u00af$ for an extruding cell during $t~=(t/\\tau_{0})\\in[t~_{e}-2.5,t~_{e}+0.3125]$, where $t~_{e}$ denotes extrusion time, $\\tau_{0}=\u03be\u2062R_{0}/\\alpha$ and for varying cell\u2013substrate to cell\u2013cell adhesion ratios $\u03a9$. The data in (c\u2013e) corresponds to four different realizations.\n\nRemarkably, in accordance with experimental observations (Saw et al., 2017), we find that the extrusion events can be correlated with the position of both +1/2 comet-shaped and -1/2 trefoil-shaped topological defects. To quantify this, Figure 2c and d display the probability density of the normalized minimum distance $d~_{min}^{\\pm1/2}=d_{min}^{\\pm1/2}/R_{0}$ between an extruding cell and \u00b11/2 topological defects in the interval $t~\\in[t~_{e}-5.625,t~_{e}+0.625]$, where $t~=t/\\tau_{0}$ is the normalized time, $\\tau_{0}=\u03be\u2062R_{0}/\\alpha$, $\u03be$ corresponds to cell\u2013substrate friction, $\\alpha$ denotes the strength of polarity force, and $t~_{e}$ is the (normalized) extrusion time. This temporal window is chosen based on the first moment of a defect\u2019s lifetime distribution (see Appendix 1\u2014figure 5 in Appendix 1). The data in Figure 2c and d is based on four distinct realizations and for varying cell\u2013substrate to cell\u2013cell adhesion ratios, $\u03a9=\\omega_{cc}/\\omega_{cw}$. For both defect types, the probability density peaks in the vicinity of the eliminated cell ($\u22481.5\u2062R_{0}$), at a much smaller distance relative to a typical distance between two defects (see Appendix 1\u2014figure 7 in Appendix 1), and falls off to nearly zero for $d_{min}^{\\pm1/2}\u20625\u2062R_{0}(=40)$. Furthermore, laser ablation experiments have established that an induced extrusion event does not favor the nucleation of a pair of nematic defects (Saw et al., 2017).\n\nIn a hypothesis-testing approach, we check whether these peaks in the minimum distance represent a correlation between extrusion events and nematic defects. To this end, we set out to falsify the hypothesis that the extrusion events are uncorrelated with the nematic defects. We utilize a Poisson point process to randomly generate positions for extrusion events and quantify the minimum distance between each event and the nearest half-integer nematic defect. For each simulation, we generate five different realizations for the extrusion events using a Poisson point process with the intensity set equal to the number of extrusions in that particular simulation. The extrusion time is also a random variable described by a uniform distribution, $t_{e}\u223cU\u2062(1,n_{sim})$, where $n_{sim}=29,000$ is total number of time steps. As an example, Figure 3a shows probability density function for $d~_{min}^{+1/2}$ for $\u03a9=0.4$ using simulation data as well as data randomly generated with Poisson point process. Finally, a Kolmogorov\u2013Smirnov (KS) test is used to measure if the two samples, one based on our simulations and one based on randomly generated extrusion events, belong to the same distribution. The results of the KS test reject this (see Appendix 1\u2014table 1 and Appendix 1\u2014figure 1 in Appendix 1) and thus falsify the hypothesis that simulation-based extrusion events are uncorrelated with the half-integer nematic defects.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/82435/elife-82435-fig3-v1.jpg)\n\n**Figure 3.:** (a) Probability density functions for normalized minimum distance between an extrusion event and a +1/2 defect, $d~_{min}^{+1/2}$, based on simulation results and randomly generated through a Poisson point process and for $\u03a9=0.4$. (b) Comparison of Lewis\u2019s linear and quadratic relations with our simulations. $A\u00af_{z}$ is the average area for cells with $z$ neighbors and $A\u00af$ is the average area of all cells. The color bar indicates simulation time step, and the data correspond to the case $\\omega_{cw}=0.0025$ and $\u03a9=0.4$.\n\nNext, we explore the other possible mechanical route to cell extrusion based on the disclinations in cellular arrangement. To this end, we compute the coordination number of each cell based on their phase-field interactions and identify the fivefold and sevenfold disclinations (see Figure 2b). To quantify the relation between extrusion events and the disclinations, the probability density of the coordination number of an extruding cell ($d~_{min}=0$) averaged over the time interval, $t~\\in[t~_{e}-5.625,t~_{e}+0.625]$, $z\u00af$, for all the realizations is shown in Figure 2e, clearly exhibiting a sharp peak near $z\u00af=5$. The coordination number is determined based on the interactions of cells (see Appendix 1) and this property is independent of apical or basal considerations (Kaliman et al., 2021), unlike geometrical structures called scutoids that have been identified in curved epithelial tubes (G\u00f3mez-G\u00e1lvez et al., 2018). In our setup, the asymmetric interactions of cells with apical and basal sides are captured by varying the strength of cell\u2013substrate adhesion. In our simulations, increasing cell\u2013substrate adhesion leads to lower extrusion events (see Appendix 1\u2014figure 8 in Appendix 1).\n\nThus far, our results suggest topological rather than geometrical routes to cell extrusion. To probe the role of geometrical constraints further, we investigate the existence of any correlation between cell area and its number of neighbors. The best known such a correlation \u2013 for cellular matter with no gaps between them, that is, confluent state \u2013 is a linear one and it is due to Lewis, 1928 with other types of relations, for example, quadratic, proposed since his work (Kokic et al., 2019). We compare our simulation results against both the linear ($A\u00af_{z}/A\u00af=(z-2)/4$ where $A\u00af_{z}$ is the average area of cell with $z$ neighbors and $A\u00af$ is the average area of all cells) and quadratic relations ($A\u00af_{z}/A\u00af=(z/6)^{2}$) and find the agreement poor, as shown for the case of $\\omega_{cw}=0.0025$ and $\u03a9=0.4$ in Figure 3b (see also Appendix 1\u2014figures 3 and 4 in Appendix 1). While in our simulations the cell monolayers are not always confluent due to the extrusion events, other studies with confluent cellular layers have also found such relations to not be valid (Kim et al., 2014; Wenzel et al., 2019). In our simulations, the projected area of an extruding cell decreases prior to extrusion, but the number of interacting neighbors generally does not change in that time frame (see Appendix 1\u2014figure 4 in Appendix 1). Together, these results suggest mechanical rather than geometrical routes to cell extrusion. Specifically, in our approach cell extrusion emerges as a consequence of cells pushing and pulling on their neighbors due to their intrinsic activity. This contrasts with inherently threshold-based vertex models (see, e.g., Okuda and Fujimoto, 2020) for both cellular rearrangements (T1 transitions) and extrusions (T2 transitions).\n\n### Mechanical stress localization unifies distinct topological routes to cell extrusion\n\nThe correlation between disclinations and extrusion events is also related to the mechanical stress localization at the fivefold disclinations: The occurrence of disclinations in a flat surface produces local stress concentration (Irvine et al., 2010). Generally, it is energetically favorable to bend a flat surface, rather than to compress or to stretch it (Landau et al., 1986). Thus, the local stress concentration can lead to a fivefold (positive Gaussian curvature) or a sevenfold (negative Gaussian curvature) disclination (Seung and Nelson, 1988; Guitter and Kardar, 1990). In our set-up and given that we consider a rigid substrate, fivefold disclinations are much more likely to provide relief for the high local stress concentration. This can change if the rigidity of substrate is relaxed or extrusion in three-dimensional spheroids are considered. Since we conjecture that both topological defect- and disclination-mediated extrusion mechanisms are closely linked with stress localization, we characterize the in-plane and out-of-plane stresses associated with the simulated monolayer. We compute a coarse-grained stress field (Christoffersen et al., 1981; Li et al., 2022), $\\sigma_{i\u2062j}=(1/(2\u2062V_{cg}))\u2062\\sum_{m\\inV_{cg}}(T\u2192_{i}\u2062(x\u2192_{m})\u2297e\u2192_{j}^{n}+T\u2192_{j}\u2062(x\u2192_{m})\u2297e\u2192_{i}^{n})$, where $x\u2192_{0}$ represents the center of the coarse-grained volume, $V_{cg}=\u2113_{stress}^{3}$, corresponding to coarse-grained length $\u2113_{stress}$ and unit vector $e\u2192_{i}^{n}=(x\u2192_{0}-x\u2192_{m})/|x\u2192_{0}-x\u2192_{m}|$. Herein, the stress fields are computed using $\u2113_{stress}=R_{0}/4$.\n\nFor the example simulation snapshot displayed in Figure 1a, at the onset of two extrusion events, we visualize normalized isotropic stress $\\sigma~^{iso}\u2062(x\u2192)=\\sigma^{iso}\u2062(x\u2192)/\\sigma_{max}^{iso}$ and out-of-plane shear $\\sigma~_{xz}\u2062(x\u2192)=\\sigma_{xz}\u2062(x\u2192)/\\sigma_{xz}^{max}$, where $\\sigma_{max}^{iso}$ and $\\sigma_{x\u2062z}^{max}$ are the maximum values in their corresponding fields (see Figure 4a and b). We observe a high, out-of-plane, shear stress concentration (Figure 4b) as well as tensile and compressive stress pathways (Figure 4a) reminiscent of force chains in granular systems (Majmudar and Behringer, 2005).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/82435/elife-82435-fig4-v1.jpg)\n\n**Figure 4.:** A representative analysis corresponding to the configuration shown in Figure 1a and projected into $x\u2062y-$ plane ($z=0$, i.e., the basal side). (a) Normalized isotropic stress field $\\sigma~^{iso}\u2062(x\u2192)=\\sigma^{iso}\u2062(x\u2192)/\\sigma_{max}^{iso}$, where $\\sigma_{max}^{iso}$ is the maximum value of the isotropic stress field, and (b) normalized shear stress field, $\\sigma~_{xz}\u2062(x\u2192)=\\sigma_{xz}\u2062(x\u2192)/\\sigma_{xz}^{max}$, where $\\sigma_{xz}^{max}$ is the maximum value of $\\sigma_{xz}\u2062(x\u2192)$ field. The symbol + denotes the center of mass for two extruding cells. (c) Cell (spatially) averaged normalized isotropic stress $\\sigma~\u00af_{i}^{iso}\u2062(t~)=\u27e8\\sigma^{iso}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b_{i}}/\u27e8\\sigma^{iso}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b}$ and (d) shear stress $\\sigma~\u00af_{x\u2062z}^{i}\u2062(t~)=\u27e8\\sigma_{x\u2062z}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b_{i}}/\u27e8\\sigma_{x\u2062z}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b}$ for an extruding cell $i$ during $t~=(t/\\tau_{0})\\in[t~_{e}-2.5,t~_{e}+0.3125]$, where $t~_{e}$ denotes extrusion time and $\\tau_{0}=\u03be\u2062R_{0}/\\alpha$. The data shown in (c, d) correspond to all the considered parameters for cell\u2013substrate ($\\omega_{cw}$) and relative cell\u2013cell adhesions ($\u03a9$) and for four distinct realizations. Each gray line in the background represents an extruding cell, and the red line shows the mean and the standard deviation of the normalized stresses.\n\nFigure 4c shows the evolution of spatially averaged normalized isotropic stress for extruding cell $i$, $\\sigma~\u00af_{i}^{iso}\u2062(t~)=\u27e8\\sigma^{iso}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b_{i}}/\u27e8\\sigma^{iso}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b}$, demonstrating a clear stress build-up, followed by a drop near $t~-t~_{e}=0$, as a cell detaches the substrate and loses contact with other cells, where $t~_{e}$ is detected by our stress-independent criterion, $\u211b=\u22c3_{i=1}^{N}\u211b_{i}$ and $\u211b_{i}$ is the domain associated with cell i, $\u211b_{i}:={x\u2192|\u03d5_{i}\u2062(x\u2192)\\geq0.5}$.\n\nSimilarly, Figure 4d displays the spatially averaged normalized out-of-plane shear stress, $\\sigma~\u00af_{x\u2062z}^{i}\u2062(t~)=\u27e8\\sigma_{x\u2062z}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b_{i}}/\u27e8\\sigma_{x\u2062z}\u2062(x\u2192,t~)\u27e9_{x\u2192\\in\u211b}$, prior to a cell extrusion and for all extrusion events in our simulations, that is, nine cases and four realizations for each case. The shear stress prior to extrusion exhibits oscillations with large magnitudes relative to the mean field, a stark departure from their non-extruding counterparts (see Appendix 1\u2014figure 4 in Appendix 1). This may indicate a hindrance to cell movement as we explore further next.\n\nInterestingly, the association of cell extrusion events with regions of high out-of-plane shear stress has parallels with the phenomenon of plithotaxis, where it was shown that cells collectively migrate along the orientation of the minimal in-plane intercellular shear stress (Tambe et al., 2011). In this context, based on the association of cell extrusion events with regions of high out-of-plane shear stress, we conjecture that high shear stress concentration hinders collective cell migration with cell extrusion providing a mechanism to re-establish the status quo. This is also consistent with the observation we made earlier about large oscillations in $\\sigma~\u00af_{x\u2062z}^{i}$ prior to an extrusion event for all extruding cells (Figure 4d).\n\n### Shifting tendencies towards extrusion at nematic and hexatic disclinations\n\nThe results so far clearly demonstrate the existence of mechanical routes for cell removal that are associated with nematic and hexatic disclinations and are governed by the in-plane and out-of-plane mechanical stress patterns in the cell assembly. The relative strength of cell\u2013cell to cell\u2013substrate adhesion, $\u03a9$, further alters the likelihood of an extrusion event being associated with a +1/2 defect or a fivefold disclination. This is clearly observed in Figure 2d, which shows the first moment of the distribution for $d~_{min}^{+1/2}$, $m=\u27e8d~_{min}^{+1/2}\u27e9$, increases with $\u03a9=\\omega_{cc}/\\omega_{cw}$ (see inset) while the peak of the probability density decreases with increasing $\u03a9$. At the same time, the probability of an extrusion occurring at a fivefold disclination increases with increasing $\u03a9$, as displayed in Figure 2e. However, nematic and hexatic order parameters do not show any clear trends with $\u03a9$ (see Appendix 1\u2014figure 10 in Appendix 1). To better understand this tendency, we characterize the average isotropic stress fields around a +1/2 defect. This involves tracking each +1/2 defect starting from its nucleation and mapping the isotropic stress field, for each time step during the defect\u2019s lifetime, in a square domain of size $L\u22481.5\u2062R_{0}$ centered on the defect location and accounting for its orientation, where $L$ is chosen based on the peak in $d~_{min}^{+1/2}$ (see Figure 2d). An example for the normalized average isotropic stress field corresponding to $\\omega_{cw}=0.0025$ and $\u03a9=0.4$ is shown in Figure 5c, where $\\sigma\u00af~^{iso}\u2062(x\u2192)=\\sigma\u00af^{iso}\u2062(x\u2192)/\\sigma\u00af_{max}^{iso}$, with $\\sigma\u00af^{iso}$ representing the average field during defect lifetime, for all nucleated defects, and $\\sigma\u00af_{max}^{iso}$ is the maximum of the average field. This is in agreement with experimental measurements on epithelial monolayers (Saw et al., 2017; Balasubramaniam et al., 2021), with a compressive stress region near the head of the defect and a tensile region near the tail. Interestingly, there is an asymmetry in the intensity of stress in the compressive region at the head of the comet as opposed to the tensile region at the tail (\u22485\u00d7 higher). To expand on this observation, we focus on the probability density function for $\\sigma\u00af~^{iso}$ and various $\u03a9$. Remarkably, as shown in Figure 5a, with increasing $\u03a9$, the peak of the probability density function decreases and the shoulders become wider, that is, the stress localization becomes more spread. At the same time, it is worth noting that the probability for the occurrence of a fivefold disclination increases as $\u03a9$ is increased, as shown in Figure 5b, while no clear trend is observed for the density of half-integer defects (see Appendix 1\u2014figure 6 in Appendix 1). Therefore, the more spread localized stress is more likely to only clear the lower energetic barrier associated with buckling of a fivefold disclination (Seung and Nelson, 1988; Guitter and Kardar, 1990) \u2013 forming a positive Gaussian curvature \u2013 as opposed to cells with six neighbors. Furthermore, for a single disclination, this energy is higher for a sevenfold disclination (Deem and Nelson, 1996) and in our case the rigid substrate defies any attempts by a sevenfold disclination to buckle and form a negative Gaussian curvature. Together, these results provide a potential explanation for why as $\u03a9$ is increased, cells collectively have a tendency towards leveraging fivefold disclinations instead of +1/2 defects for extruding an unwanted cell.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/82435/elife-82435-fig5-v1.jpg)\n\n**Figure 5.:** (a) Probability density function for the normalized, ensemble average of isotropic stress field, $\\sigma\u00af~^{iso}$, projected into $x\u2062y$ -plane with $z=0$, that is, the basal side, around +1/2 defects for various cell\u2013cell to cell\u2013substrate adhesion ratios $\u03a9$ (colors correspond to legend in [a]). (b) Probability density function for the number of neighbors $z$ and various $\u03a9$, for all cells and simulation time steps. (c) Normalized, ensemble average of isotropic stress field, $\\sigma\u00af~^{iso}\u2062(x\u2192)=\\sigma\u00af^{iso}\u2062(x\u2192)/\\sigma\u00af_{max}^{iso}$, with $\\sigma\u00af^{iso}$ representing the average field during defect life time, for nucleated defects, and $\\sigma\u00af_{max}^{iso}$ is the maximum of the average field, for the case $\\omega_{cw}=0.0025$ and $\u03a9=0.4$.\n\nFurthermore, one may naively think that only the distance between a half-integer nematic defect and an extrusion site is of importance. Such a view implicitly assumes the statistics we have presented (e.g., $d~_{min}^{\\pm1/2}$, $\\sigma\u00af~^{iso}$) correspond to independent events, disregarding the highly heterogeneous nature of such a complex, active system. This heterogeneous nature manifests in stress fields, as shown in Figure 5a and c for the normalized ensemble average around a +1/2 defect. Therefore, the distance between a defect and an extrusion site, the intensity and the extent of the stress fields around that defect all play a role and are embedded in the statistics that we present in this work. In the future, it can be illuminating to study the effect of heterogeneity in the apical\u2013basal mechanical response due to different mechanical properties and/or the nature of activity.\n\n### Conclusions\n\nOur study presents a three-dimensional model of the collective migration-mediated cell elimination. Importantly, this framework allows for cell\u2013substrate and cell\u2013cell adhesion forces to be tuned independently. Our findings indeed suggest that varying the relative strength of cell\u2013cell and cell\u2013substrate adhesion can allow cells to switch between distinct mechanical pathways \u2013 leveraging defects in nematic and hexatic phases \u2013 to eliminate unwanted cells through: (i) cell extrusion at \u00b11/2 topological defects in the cell orientation field, consistent with experimental observations (Saw et al., 2017); and (ii) cell extrusion at fivefold disclinations in cell arrangement, where our results show a direct role of these disclinations in extruding the cells. Focusing on the extruded cells, the results demonstrate that increasing relative cell\u2013cell adhesion increases the probability of an extruded cell being a fivefold disclination while weakening the correlation with +1/2 topological defects. This seems to emerge with a confluence of factors at play: (i) higher likelihood for a cell to be a fivefold disclination as $\u03a9=\\omega_{cc}/\\omega_{cw}$ is increased, (ii) more spread stress concentration around a +1/2 defect with increasing $\u03a9$, and (iii) a higher likelihood for such a diffused local stress field to only reach the lower energy barrier associated with buckling a fivefold disclination (forming a positive Gaussian curvature) as opposed to cells with six neighbors as well as sevenfold disclinations. In the latter case, in addition to higher energy barrier, the rigid substrate denies a sevenfold disclination to create any negative Gaussian curvatures.\n\nAdditionally, the presented framework provides access to the local stress field, including the out-of-plane shear components. Access to this information led us to conjecture that high shear stress concentration frustrates collective cell migration with cell extrusion providing a pathway to re-establish the status quo. We expect these results to trigger further experimental studies of the mechanical routes to live cell elimination and probing the impact of tuning cell\u2013cell and cell\u2013substrate interactions, for example, by molecular perturbations of E-cadherin adhesion complexes between the cells and/or focal adhesion between cells and substrate, as performed recently in the context of topological defect motion in cell monolayers (Balasubramaniam et al., 2021). In this study, we intentionally narrowed our focus to the interplay of cell\u2013cell and cell\u2013substrate adhesion, without accounting for cell proliferation. In its absence, simulations with high extrusion events may lose confluency. However, the identified mechanical routes to extrusion prevail in cases with both high and low number of extrusions, where confluency is maintained.\n\nFinally, we anticipate that this modeling framework opens the door to several interesting and unresolved problems in studying three-dimensional features of cell layers. In particular, the mechanics can be coupled with biochemistry to study a wider range of mechanisms that affect live cell elimination. Additionally, using our framework the substrate rigidity can be relaxed in the future studies to further disentangle the impacts of cell\u2013substrate adhesion from substrate deformation due to cell generated forces. Similarly, three-dimensional geometries, such as spheroids or cysts, can be examined. The links between collective cell migration and granular physics, in terms of force chains and liquid-to-solid transition, as well as probing the impact of three-dimensionality and out-of-plane deformations on these processes, are exciting directions for future studies. Lastly, the coexistence of nematic and hexatic phases, their potential interactions, and their interplay with curved surfaces are promising avenues for extending the work presented here.\n\n## Materials and methods\n\nWe consider a cellular monolayer consisting of $N=400$ cells on a substrate with its surface normal $e\u2192_{n}(=e\u2192_{z})=e\u2192_{x}\\timese\u2192_{y}$ and periodic boundaries in both $e\u2192_{x}$ and $e\u2192_{y}$, where $(e\u2192_{x},e\u2192_{y},e\u2192_{z})$ constitute the global orthonormal basis (Figure 1). Cells are initiated on a two-dimensional simple cubic lattice and inside a cuboid of size $L_{x}=L_{y}=320$, $L_{z}=64$, grid size $a_{0}=1$ and with radius $R_{0}=8$. The cell\u2013cell and cell\u2013substrate interactions have contributions from both adhesion and repulsion, in addition to self-propulsion forces associated with cell polarity. To this end, each cell $i$ is modeled as an active deformable droplet in three-dimensions using a phase-field, $\u03d5_{i}=\u03d5_{i}\u2062(x\u2192)$. The interior and exterior of cell i corresponds to $\u03d5_{i}=1$ and $\u03d5_{i}=0$, respectively, with a diffuse interface of length $\\lambda$ connecting the two regions and the midpoint, $\u03d5_{i}=0.5$, delineating the cell boundary. A three-dimensional extension of the 2D free energy functional (Palmieri et al., 2015; Aranson, 2016; Camley and Rappel, 2017; Mueller et al., 2019) is considered with additional contributions to account for cell\u2013cell and cell\u2013substrate adhesions:\n\n$$\nF=\\sumiN\\frac{\\gamma}{\\lambda}\\intdx\u2192{4\u03d5_{i}^{2}(1\u2212\u03d5_{i})^{2}+\\lambda^{2}(\u2207\u2192\u03d5_{i})^{2}}+\\sumiN\\mu(1\u2212\\frac{1}{V_{0}}\\intdx\u2192\u03d5_{i}^{2})^{2}+\\sumiN\\sumj\\neqi\\frac{\u03ba_{cc}}{\\lambda}\\intdx\u2192\u03d5_{i}^{2}\u03d5_{j}^{2}+\\sumiN\\sumj\\neqi\\frac{\\omega_{cc}}{\\lambda^{2}}\\intdx\u2192\u2207\u2192\u03d5_{i}\u22c5\u2207\u2192\u03d5_{j}+\\sumiN\\frac{\u03ba_{cw}}{\\lambda}\\intdx\u2192\u03d5_{i}^{2}\u03d5_{w}^{2}+\\sumiN\\frac{\\omega_{cw}}{\\lambda^{2}}\\intdx\u2192\u2207\u2192\u03d5_{i}\u22c5\u2207\u2192\u03d5_{w},\n$$\n\nwhere $\u2131$ contains a contribution due to the Cahn\u2013Hilliard free energy (Cahn and Hilliard, 1958), which stabilizes the cell interface, followed by a soft constraint for cell volume around $V_{0}(=(4/3)\u2062\\pi\u2062R_{0}^{3})$, such that cells \u2013 each initiated with radius R0 \u2013 are compressible. Additionally, $\u03ba$ and $\\omega$ capture repulsion and adhesion between cell\u2013cell (subscript $c\u2062c$) and cell\u2013substrate (subscript $c\u2062w$), respectively. Moreover, $\\gamma$ sets the cell stiffness and \u00b5 captures cell compressibility and $\u03d5_{w}$ denotes a static phase-field representing the substrate. This approach resolves the cellular interfaces and provides access to intercellular forces. The dynamics for field $\u03d5_{i}$ can be defined as:\n\n$$\n\\partial_{t}\u2061\u03d5_{i}+v\u2192_{i}\u22c5\\nabla\u2192\u2062\u03d5_{i}=-\\frac{\\delta\u2062\u2131}{\\delta\u2062\u03d5_{i}},i=1,\u2026,N,\n$$\n\nwhere $\u2131$ is defined in Equation (1), and $v\u2192_{i}$ is the total velocity of cell $i$. To resolve the forces generated at the cellular interfaces, we consider the following over-damped dynamics for cells:\n\n$$\nt\u2192_{i}=\u03bev\u2192_{i}\u2212F\u2192_{i}^{sp}=\\intdx\u2192\u03d5_{i}\u2207\u2192\u22c5\u03a0^{int},\n$$\n\nwhere $t\u2192_{i}$ denotes traction as defined for Bayesian Inversion Stress Microscopy in Saw et al., 2017, $\u03be$ is substrate friction, and $F\u2192_{i}^{sp}=\\alpha\u2062p\u2192_{i}$ represents self-propulsion forces due to polarity, constantly pushing the system out-of-equilibrium. In this vein, $\\alpha$ characterizes the strength of polarity force and $\u03a0^{int}=(\\sumi\u2212(\\deltaF/\\delta\u03d5_{i}))1$. While only passive interactions are considered here, active nematic interactions can be readily incorporated in this framework (Mueller et al., 2019; Balasubramaniam et al., 2021). To complete the model, the dynamics of front-rear cell polarity is introduced based on contact inhibition of locomotion (CIL) (Abercrombie and Heaysman, 1954; Abercrombie, 1979) by aligning the polarity of the cell to the direction of the total interaction force acting on the cell (Smeets et al., 2016; Peyret et al., 2019). As such, the polarization dynamics is given by\n\n$$\n\\partial_{t}\u2061\\theta_{i}=-J\u2062|t\u2192_{i}|\u2062\u0394\u2062\\theta_{i}+D_{r}\u2062\u03b7,\n$$\n\nwhere $\\theta_{i}\\in[-\\pi,\\pi]$ is the angle associated with polarity vector, $p\u2192_{i}=(cos\u2061\\theta_{i},sin\u2061\\theta_{i},0)$, and $\u03b7$ is the Gaussian white noise with zero mean, unit variance, $D_{r}$ is rotational diffusivity, $\u0394\u2062\\theta_{i}$ is the angle between $p\u2192_{i}$ and $t\u2192_{i}$, and positive constant $J$ sets the alignment time scale. It is worth noting that the self-propulsion forces, $F\u2192_{i}^{sp}$, associated with cell polarity, $p\u2192_{i}$, act in-plane but can induce out-of-plane components in force and velocity fields as a cell described by $\u03d5_{i}\u2062(x\u2192)$ deforms in three-dimensions (see Equation 3).\n\nWe perform large-scale simulations with a focus on the interplay of cell\u2013cell and cell\u2013substrate adhesion strengths and its impact on cell expulsion from the monolayer. To this end, we set the cell\u2013substrate adhesion strength $\\omega_{cw}\\in{0.0015,0.002,0.0025}$ and vary the cell\u2013substrate to cell\u2013cell adhesion ratio in the range $\u03a9=\\omega_{cc}/\\omega_{cw}\\in{0.2,0.4,0.6}$. For each case in this study (total of nine), we simulate four distinct realizations with a total of $n_{sim}=29,000$ time steps. All results are reported in dimensionless units, introduced throughout the text, and the simulation parameters are chosen within the range that was previously shown to reproduce defect flow fields in epithelial layers (Balasubramaniam et al., 2021; see Appendix 1).\n",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "667a29bb-c50a-40e2-bc08-db84888b5ed3",
+      "submission_id": "645c0d91-b10a-42b1-9f97-60d5f99b4c9e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/02feahw73 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82435.sa0](https://doi.org/10.7554/eLife.82435.sa0)\n\nIn this work, Monfared et al. construct a valuable three-dimensional phase-field model for cell monolayers and use this to investigate the relationship between single-cell extrusion events and topological defects in cellular arrangement. The extension of existing 2D phase field models to three dimensions is an important contribution of this paper, which will be of general interest to the theoretical modelling of epithelial monolayers. Here the model is used to study the importance of cell-cell and cell-substrate interaction in extrusion from cell monolayers, which will be of practical interest to biologists and physicists working on this process. This paper presents convincing evidence that extrusion events are distinctly linked to defects in nematic and hexatic orders in the cell monolayer.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/02feahw73 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.82435.sa1](https://doi.org/10.7554/eLife.82435.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Mechanical Basis and Topological Routes to Cell Elimination\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers found that the 3D phase field model you developed is a very valuable improvement over existing 2D models, but that your claims of how extrusion is linked to topological parameters was insufficiently justified.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Substantiate the claim that the three-dimensional phase field model is crucial for understanding cell extrusion as compared to 2D models. This should include in depth analysis of necessarily 3D parameters, such as basal and apical cell surfaces.\n\n2) Provide a better statistics of the topological parameters and their fluctuations in normal (non extruding) cells to better assess their change during extrusion.\n\n3) Improve the characterisation of the extrusion points, e.g. by improving the representation and discussion of the stress (Figure 4).\n\n4) Provide a point-by-point answer to the criticism of all three reviewers and appropriately amend the paper.\n\nReviewer #1 (Recommendations for the authors):\n\n1. The authors say \"The similarities between cellular systems and liquid crystals featuring both nematic order (Saw et al., 2017; Kawaguchi et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2018; Tan et al., 2020; Zhang et al., 2021) and hexatic order (Pasupalak et al., 2020; Maitra et al., 2020; Hoffmann et al., 2022) with the two phases potentially coexisting (Armengol-Collado et al., 2022) and interacting provide a fresh perspective for understanding cellular processes.\" Do the authors also find that the two phases coexist? I find this rather difficult to understand.\n\n2. The 1/2 defects are defined using a nematic order parameter (I guess the positions of the defects are identified as the positions of zeros in this order parameter and the sign is assigned by looking at the orientation field around that). However, I think it will make the work more self-contained and easier to understand if the authors explicitly explain how they obtain a nematic order parameter field from a map of projected 2d cell shapes.\n\n3. I am guessing that the 1/6 defects are defined purely using the co-ordination number of the cells (or do the authors construct a hexatic field and use the zeros of that to identify the hexatic disclinations?). But the probability density of average coordination number from Figure 2e seems to be peaked at 5 rather than 6. Therefore, I don't understand the rationale for considering hexatic defects (or hexatic order). Also, would it be possible to define a hexatic order parameter the same way the authors (presumably) defined a nematic order parameter (and director field) and obtain the defects explicitly as singularities in this field?\n\n4. The authors say \"Figure 4(c) shows the evolution of spatially averaged normalized isotropic stress for extruding cell\u2026. demonstrating a clear stress build up, followed by a drop near t~\u2212t~e=0\". Maybe I am missing something, but I do not see this drop. Instead, the mean (red line) increases monotonically.5. The authors say that the out-of-plane shear stress \"prior to extrusion exhibits oscillations with large magnitudes relative to the mean field.\" However, since they don't present any data on the usual fluctuation of the out-of-plane shear stress (i.e. for non-extruding cells), the reader has no way to judge whether this is atypical. Surprisingly, the standard deviation seems to be larger at earlier times (i.e., away from the extrusion event). Could the authors compare the standard deviation of the shear stress fluctuations of extruding and non-extruding cells?\n\n6. If the earlier point is not clarified, it is not really clear to me what new information is obtained from a 3d model of the cell layer that couldn't be obtained from a 2d phase field model. (I do understand that their criteria for identifying extrusion is only available in the 3d model, but in a 2d model, one could choose a different criterion -- shrinkage of the (2d projected) area of a cell below a critical value or cell overlap for instance -- which would probably lead to similar results).\n\n7. The cells in the authors' model move in the direction of the cell polarisation. It would be useful if the authors could comment how this cell polarisation is determined.\n\n8. In the same vein, the cell polarisation doesn't directly affect the cellular structure (i.e., there is no term involving the polarisation in the free energy in Eq. 1). Is that assumption correct?\n\n9. The authors say \"Interestingly, the association of cell extrusion events with regions of high out-of-plane shear stress has parallels with the phenomenon of plithotaxis, where it was shown that cells collectively migrate along the orientation of the minimal in-plane intercellular shear stress (Tambe et al., 2011). In this context, based on the association of cell extrusion events with regions of high out-of-plane shear stress, we conjecture that high shear stress concentration hinders collective cell migration with cell extrusion providing a mechanism to re-establish the status-quo.\" I don't see clear evidence of high out-of-plane shear stress in 4b. Figure 4b has two extrusion sites, one of which certainly displays high out-of-plane shear stress, but the other, not so much. Could the authors quantify their claim that extrusion events are statistically associated with high out-of-plane shear stress?\n\n10. The authors claim that the probability of extrusion at \"nematic and hexatic disclinations \" changes depending on cell-cell and cell-substrate adhesion. Is this a secondary consequence of the structure of the cell layer changing depending on those parameters (i.e., going from a predominantly nematic-like organisation to a more hexatic organsiation)?\n\n11. If I understand correctly, the cells are extruded at -1/2 disclinations as well, which I find puzzling.\n\nReviewer #2 (Recommendations for the authors):\n\nI would like to point out:\n\n\u2013 The identification of defects, as shown in Figure 2, sensitively depends on various thresholds. The cell with 4 neighbors in Figure 2b could easily be also considered as a cell with 8 neighbors. How sensitive are the results with respect to the thresholds used?\n\n\u2013 Why is the approach to find correlations between defects and extruding cells different for positional and orientational defects? I would find it more natural to also average over various runs and time intervals to identify such correlations for the positional defects.\n\n\u2013 In the conclusion it is argued that negative Gaussian curvature cannot form due to the rigid substrate. This somehow indicates that the basal side is considered, for which I understand this argument. For the apical side I don't! As I assume that the experimental data in Saw et al. show the apical side, I wonder what the relation is?\n\nReviewer #3 (Recommendations for the authors):\n\nThis work explores the linkage between extrusion and topological defects in cell monolayers. To better understand this linkage, the authors used cutting-edge numerical simulations that were developed by some of the authors in Mueller et al. 2019. I have some major concerns regarding some theoretical analyses and interpretations of results (see major point 1 and minor points). I cannot recommend the publication of the present manuscript before these concerns are addressed.\n\n1. Linkage between topological defects and extrusion events.\n\n1.1. In line 104 to 108, it is suggested that the state in Figure 1a is an active nematic turbulent state based on the nucleation and dynamics of nematic defects. However, an active turbulent state is also characterized by specific statistical features of flows. Are the flows in simulation compatible with an active nematic turbulent state?\n\n1.2. In line 117-124, it is suggested that extrusions in Saw et.al. 2017 correlate with the position of + and -1/2 defects. Unless I am mistaken, their observations showed spatiotemporal correlations only for +1/2 defects. Can the authors comment on this point? If this is the case, how do the authors interpret the fact that -1/2 defects also correlate with cell extrusion in their simulations? Is the mechanism for cell extrusion in -1/2 defects of mechanical origin? Adding the average isotropic stress near -1/2 defects would help to clarify this point.\n\n1.3. In lines 124-128, the authors define a time interval around an extrusion event, but I could not understand the reason for the choice of the lower and upper values (5.625 and 0.625). How did the authors choose these values? In the Figure 4, the stress build-up occurs within a time interval of less 1 unit of time, and in Figure 8, the change in the coordination number and the area seem to occur over time intervals of 10-100 units of time. Can the authors discuss the separation of these time scales? Another relevant time scale is the mean life-time of nematic topological defects in their simulations, can discuss show the distribution of life-times of nematic defects and discuss how this is related to the other time scales?\n\n1.4. The authors observed that extrusion preferentially occur near + and -1/2 defects. However, in Figure 2a, there are two extrusion events and tens of defects, which seems to indicate that many defects are non-functional because they do not generate an extrusion event. Is it the case? Can the authors provide an estimate of the fraction of defects that are non-functional? Along these lines, a question that remains unaddressed is whether an extrusion event can favor the nucleation of a pair of nematic defects. Can the authors comment on this?\n\n1.5. In Figure 2a it seems that the typical separation between nematic defects is approximately 6 cell sizes. In the case that extrusion events occur randomly, I would have expected d_min to be below 3. However, in Figure 3a, d_min can reach 25 cell sizes. Can the author comment on these differences? Can the authors include the distributions of density of nematic defects in their simulation?\n\nBesides, can the authors add numerical details in Methods on how were the extrusion events generated in the hypothesis-testing approach? For example, were cells pulled upwards with a constant force or at a constant speed?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mechanical Basis and Topological Routes to Cell Elimination\" for further consideration by eLife. Your revised article has been evaluated by Jonathan Cooper (Senior Editor) and a Reviewing Editor. The referees did acknowledge that the manuscript has been significantly improved, but there remain a number of serious criticism that must be answered.\n\nModel assumptions: Many possible 3D features that could be responsible for complex 3D cell shapes are not included in the model. This needs to be explicitly discussed in the manuscript. These include:\n\n1) You present a 3D model and claim that it is essential to understand cell extrusion, but most of the analysis is done on 2D quantities. The results regarding the isotropic and out-of-plane shear stress are certainly interesting but do not constitute such an explanation for the extrusion process. Furthermore, a number of assumptions of the model relate to 2D features. For instance, the polarity appears to be a 2D quantity defined by an angle (probably in the x-y plane, this should be specified). This seems to exclude active out-of-plane relative movement between cells which could participate in the extrusion process in real systems. Is there any reason for the RHS of Eq. 3. to be a two-dimensional vector or is the cell velocity not strictly in the plane? This should be clarified, and the limitations of the model clearly discussed\n\n2) Furthermore, the magnitude of the polarity vector is set to unity, which precludes fluctuations of activity among cells, a feature that is often associated with local rearrangement processes such as extrusion. This is a strong assumption that is not discussed.\n\n2) Extrusion has often been described as the result of different mechanical properties in the basal and apical sides on the epithelia. You say in your rebuttal that this is just one element of the 3D complexity on which you choose not to focus. It is acceptable not to include this in a model in order to focus on other effects, however, this possibility should be mentioned as a relevant process in the manuscript.\n\n3) Scutoids. It does not appear to be clearly demonstrated that scutoids are a feature of curved epithelia only, and it is quite possible that such arrangement might be relevant to the extrusion process even in flat epithelia. While a model such as the present one that does not include this possibility is certainly valuable, the text should not give the impression that they are irrelevant.\n\nAnalysis:\n\n4) Most of the analysis is done on projected quantities, but how the projection is obtained is not clearly explained. What does the 2D representation (such as Figure 2 for instance) exactly show? Is it a cut through the epithelia at fixed z, or some kind of maximum intensity projection? This must be specified.\n\n5) in Figure 2a, it seems that the director field (red bars) around blue +1/2 defects correspond to -1/2 defects, and vice-versa the director field around green -1/2 defects correspond to +1/2 defects. This feature is clearer for defects that are far from others. If this is indeed the case, it should be corrected.\n\n6) In the new Figure 12, the probability density of pairwise distance between defects is presented. It is unclear whether this distance corresponds to the minimal distance between pairs of +1/2 defects or rather the distance between half-integer defects. To compare with the results from Figure 2 the former seems more appropriate. Please comment on this point and include the former distribution if necessary.\n\n7) Some new results presented in the revised version are confusing, or insufficiently discussed. For instance the new Figure 6 in the rebuttal. If one holds cell-substrate adhesion fixed, the mean number of extrusions has a clear maximum at a particular cell-cell adhesion. However, no other quantity that the authors present seems to show a similar maximum. Maybe the origin of this is hiding in the plot of nematic defect density for different adhesions (Figure 5 of the rebuttal). If so, that plot should be improved and both that and the Figure 6 of the rebuttal should be brought to the main text, as this seems an important feature of the problem\n\nDiscussion:\n\n8) Threshold: In your response and in the manuscript (l.192), you seem to suggest that your method does not suffer from the arbitrariness of setting a threshold to defined extrusion events, but it appears (l.99) that extrusion also involves thresholding (of the cell vertical displacement \u2013 l.99) in your case. How would this threshold influence the results?\n",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d751016-fa70-4b7a-a84d-2910e9958bf8",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C1",
+      "claim": "Cell layers eliminate unwanted cells through the extrusion process, which underlines healthy versus flawed tissue behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell layers eliminate unwanted cells through the extrusion process, which underlines healthy versus flawed tissue behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cell extrusion that draws from established scientific understanding of tissue biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "aec51e28-16a6-42de-a7fd-1d73704aba66",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C2",
+      "claim": "The underlying mechanical basis including the forces involved in cellular extrusion remains largely unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "Although several biochemical pathways have been identified, the underlying mechanical basis including the forces involved in cellular extrusion remains largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, based on inference from existing literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b9458236-1b01-49c9-9c07-8153a74781f8",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C3",
+      "claim": "By increasing relative cell\u2013cell adhesion forces the cell monolayer can switch between the collective tendency towards fivefold, hexatic, disclinations relative to half-integer, nematic, defects for extruding a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we show that by increasing relative cell\u2013cell adhesion forces the cell monolayer can switch between the collective tendency towards fivefold, hexatic, disclinations relative to half-integer, nematic, defects for extruding a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data presented in the manuscript showing the relationship between adhesion forces and extrusion mechanisms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "12c14c9d-ddc1-41ad-b902-cd679ff2b3a9",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C4",
+      "claim": "An extrusion event acts as a mechanism to relieve localized stress concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We unify our findings by accessing three-dimensional mechanical stress fields to show that an extrusion event acts as a mechanism to relieve localized stress concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by stress field analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "6519cb9e-cd56-48f9-aee1-fdc58d02f8d4",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C5",
+      "claim": "Cells actively coordinate their movements through mechanosensitive adhesion complexes at the cell\u2013substrate interface and cell\u2013cell junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Advanced experimental techniques have linked this ability to mechanical interactions between cells (Maskarinec et al., 2009; Ladoux, 2009; Ladoux and M\u00e8ge, 2017). Specifically, cells actively coordinate their movements through mechanosensitive adhesion complexes at the cell\u2013substrate interface and cell\u2013cell junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "f8cd89d7-904d-492c-8cb4-4652c83f5183",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C6",
+      "claim": "Cell\u2013cell and cell\u2013substrate adhesions seem to be coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cell\u2013cell and cell\u2013substrate adhesions seem to be coupled (Balasubramaniam et al., 2021), further complicating the interplay of mechanics with biochemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "61b6af15-f6a7-4aed-a662-fed3b1e9d2a2",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C7",
+      "claim": "A majority of current approaches to simulate multicellular layers are limited to two-dimensional systems.",
+      "claim_type": "EXPLICIT",
+      "source": "While advances in experimental techniques are followed by more nuanced theoretical and computational developments, a majority of current approaches to simulate multicellular layers are limited to two-dimensional systems, hindering in-depth exploration of intrinsically three-dimensional nature of the distinct forces that govern cell\u2013cell and cell\u2013substrate interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of computational modeling in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "cc72172c-6862-4bee-bfbc-4098b3ca25a8",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C8",
+      "claim": "Cell extrusion is inherently three-dimensional.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some of the most fundamental processes in cell biology such as cell extrusion \u2013 responsible for tissue integrity \u2013 are inherently three-dimensional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established understanding of the nature of cell extrusion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "aa04321b-4632-4ee4-834e-589ddc6ea429",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C9",
+      "claim": "Cell extrusion refers to the process of removal of excess cells to prevent accumulation of unnecessary or pathological cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell extrusion refers to the process of removal of excess cells to prevent accumulation of unnecessary or pathological cells (Rosenblatt et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "a28d1e10-ee48-4bb0-ab98-3c8aee2fa1bc",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C10",
+      "claim": "Cell extrusion can get initiated through apoptotic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This process can get initiated through apoptotic signaling (Rosenblatt et al., 2001), oncogenic transformation (Hogan et al., 2009), and overcrowding of cells (Marinari et al., 2012; Eisenhoffer et al., 2012; Levayer et al., 2016) or induced by replication stress (Dwivedi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "1b1f53cb-4463-4930-a392-a6f641bde59a",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C11",
+      "claim": "Cell extrusion can get initiated through oncogenic transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This process can get initiated through apoptotic signaling (Rosenblatt et al., 2001), oncogenic transformation (Hogan et al., 2009), and overcrowding of cells (Marinari et al., 2012; Eisenhoffer et al., 2012; Levayer et al., 2016) or induced by replication stress (Dwivedi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "be13f57b-334c-4654-adc1-db92c683050d",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C12",
+      "claim": "Cell extrusion can get initiated through overcrowding of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This process can get initiated through apoptotic signaling (Rosenblatt et al., 2001), oncogenic transformation (Hogan et al., 2009), and overcrowding of cells (Marinari et al., 2012; Eisenhoffer et al., 2012; Levayer et al., 2016) or induced by replication stress (Dwivedi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "c6e03d88-6471-4f54-ac97-7ac301c6f833",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C13",
+      "claim": "Cell extrusion can be induced by replication stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This process can get initiated through apoptotic signaling (Rosenblatt et al., 2001), oncogenic transformation (Hogan et al., 2009), and overcrowding of cells (Marinari et al., 2012; Eisenhoffer et al., 2012; Levayer et al., 2016) or induced by replication stress (Dwivedi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "3a026c46-f347-40f5-8a50-1c095901be97",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C14",
+      "claim": "Cell extrusion plays an important role in developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, cell extrusion plays an important role in developmental (Toyama et al., 2008), homeostatic (Eisenhoffer et al., 2012; Le et al., 2021), and pathological processes (Slattum and Rosenblatt, 2014), including cancer metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b2eacb79-937c-4cf0-a8e6-674f31a02ab0",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C15",
+      "claim": "Cell extrusion plays an important role in homeostatic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, cell extrusion plays an important role in developmental (Toyama et al., 2008), homeostatic (Eisenhoffer et al., 2012; Le et al., 2021), and pathological processes (Slattum and Rosenblatt, 2014), including cancer metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "277b5e76-df4f-4fd0-b318-f9429487e607",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C16",
+      "claim": "Cell extrusion plays an important role in pathological processes including cancer metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, cell extrusion plays an important role in developmental (Toyama et al., 2008), homeostatic (Eisenhoffer et al., 2012; Le et al., 2021), and pathological processes (Slattum and Rosenblatt, 2014), including cancer metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "78f4892b-caa1-4ba3-abfa-b3ac8e0381ee",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C17",
+      "claim": "The underlying mechanisms that facilitate cell extrusion are still unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the underlying mechanisms that facilitate cell extrusion are still unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "10945014-f7c4-4402-b9f4-d2fc0df61eb5",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C18",
+      "claim": "Cellular systems feature nematic order.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarities between cellular systems and liquid crystals, studied both theoretically and experimentally, featuring both nematic order (Saw et al., 2017; Kawaguchi et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2018; Tan et al., 2020; Zhang et al., 2021) and hexatic order (Classen et al., 2005; Sugimura and Ishihara, 2013; Pasupalak et al., 2020; Maitra et al., 2020; Hoffmann et al., 2022) with the two phases potentially coexisting (Armengol-Collado et al., 2022) and interacting provide a fresh perspective for understanding cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "9a4148e5-2258-4be8-a1b4-b110faf32b45",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C19",
+      "claim": "Cellular systems feature hexatic order.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarities between cellular systems and liquid crystals, studied both theoretically and experimentally, featuring both nematic order (Saw et al., 2017; Kawaguchi et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2018; Tan et al., 2020; Zhang et al., 2021) and hexatic order (Classen et al., 2005; Sugimura and Ishihara, 2013; Pasupalak et al., 2020; Maitra et al., 2020; Hoffmann et al., 2022) with the two phases potentially coexisting (Armengol-Collado et al., 2022) and interacting provide a fresh perspective for understanding cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "2dc2fc02-2965-4d82-a424-e6016aeffa9a",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C20",
+      "claim": "Nematic and hexatic phases can potentially coexist in cellular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarities between cellular systems and liquid crystals, studied both theoretically and experimentally, featuring both nematic order (Saw et al., 2017; Kawaguchi et al., 2017; Duclos et al., 2018; Blanch-Mercader et al., 2018; Tan et al., 2020; Zhang et al., 2021) and hexatic order (Classen et al., 2005; Sugimura and Ishihara, 2013; Pasupalak et al., 2020; Maitra et al., 2020; Hoffmann et al., 2022) with the two phases potentially coexisting (Armengol-Collado et al., 2022) and interacting provide a fresh perspective for understanding cellular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b1655516-0623-4f10-ae59-9518510b22c1",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C21",
+      "claim": "Fivefold disclinations in hexatic arrangement of cells favor overlaps between the cells in two-dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The fivefold disclinations in hexatic arrangement of cells are numerically shown to favor overlaps between the cells in two-dimensions (Loewe et al., 2020), potentially contributing to the cell extrusion in three-dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous numerical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "35920889-f65f-4af2-926a-e2792d633634",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C22",
+      "claim": "A net positive charge associated with hexatic disclinations can be associated with the maximum curvature of dome-like structures in model organoids and in epithelial cell layers.",
+      "claim_type": "EXPLICIT",
+      "source": "In this vein, it is shown that a net positive charge associated with hexatic disclinations can be associated with the maximum curvature of dome-like structures in model organoids and in epithelial cell layers (Rozman et al., 2020; Rozman et al., 2021; Hoffmann et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "751577de-1152-4fb2-9320-e62799e369c4",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C23",
+      "claim": "In cellular monolayers, comet- and trefoil-shaped half-integer topological defects, corresponding to +1/2 and -1/2 charges, respectively, are prevalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in cellular monolayers, comet- and trefoil-shaped half-integer topological defects, corresponding to +1/2 and -1/2 charges, respectively, are prevalent (Doostmohammadi et al., 2015; Doostmohammadi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "be634b0c-07d4-40e4-b1a7-9a71ccf33a12",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C24",
+      "claim": "Half-integer topological defects are singular points in cellular alignment that mark the breakdown of orientational order.",
+      "claim_type": "EXPLICIT",
+      "source": "These are singular points in cellular alignment that mark the breakdown of orientational order (de Genne and Prost, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work on liquid crystals.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "1be88bad-4f66-45a1-94e7-ff73045289ca",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C25",
+      "claim": "Recent experiments on epithelial monolayers found a strong correlation between extrusion events and the position of a subset of +1/2 defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments on epithelial monolayers found a strong correlation between extrusion events and the position of a subset of +1/2 defects in addition to a relatively weaker correlation with -1/2 defects (Saw et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b8732b35-117d-4070-b7fd-064580caa9d2",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C26",
+      "claim": "Recent experiments on epithelial monolayers found a relatively weaker correlation between extrusion events and -1/2 defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experiments on epithelial monolayers found a strong correlation between extrusion events and the position of a subset of +1/2 defects in addition to a relatively weaker correlation with -1/2 defects (Saw et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "c4061967-a5d6-4ff2-aad2-c0c855c25308",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C27",
+      "claim": "The purely biological consensus is that an extruding cell sends a signal to its neighbor that activates its elimination process.",
+      "claim_type": "EXPLICIT",
+      "source": "These recently introduced purely mechanical routes to cell extrusion have opened the door to new questions on the nature of forces that are involved in eliminating cells from the monolayer and challenge the purely biological consensus that an extruding cell sends a signal to its neighbor that activates its elimination process (Rosenblatt et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "7543cc34-be0b-47b8-8f3a-70a78c7f0f92",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C28",
+      "claim": "In the absence of self-propulsion forces, the initial configuration tends to equilibrate into a hexagonal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of self-propulsion forces, the initial configuration tends to equilibrate into a hexagonal lattice (see Appendix 1\u2014figure 11 in Appendix 1 for an example).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data shown in the appendix.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "f2d1df44-1908-4d3e-95ce-ea79a53d4a37",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C29",
+      "claim": "As self-propulsion forces associated with front-rear cell polarity are introduced, the system is pushed away from its equilibrium hexagonal configuration, resulting in defects manifested as fivefold and sevenfold disclinations.",
+      "claim_type": "EXPLICIT",
+      "source": "As we introduce self-propulsion forces associated with front-rear cell polarity (see 'Materials and methods' for polarization dynamics), the system is pushed away from its equilibrium hexagonal configuration, resulting in defects manifested as fivefold and sevenfold disclinations, as shown in Figure 2b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "53c3dac6-1bfc-487d-a339-bc7e81de2189",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C31",
+      "claim": "The simulations show the continuous emergence of half-integer (\u00b11/2), nematic, topological defects that spontaneously nucleate in pairs and follow chaotic trajectories before annihilation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results (example snapshot in Figure 2a) show the continuous emergence of half-integer (\u00b11/2), nematic, topological defects that spontaneously nucleate in pairs and follow chaotic trajectories before annihilation (see Appendix 1\u2014figure 9 in Appendix 1 for energy spectra characterization).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2a and Appendix 1\u2014figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "f24ab416-c5f2-40a2-ab01-d83670adf2dd",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C32",
+      "claim": "The nematic defects emerge in the absence of any active dipolar stress or subcellular fields as the only active driving in these simulations is the polar force that the cells generate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that unlike previous studies of active nematic behavior in 2D cell layers (Mueller et al., 2019; Wenzel and Voigt, 2021), the nematic defects here emerge in the absence of any active dipolar stress or subcellular fields as the only active driving in these simulations is the polar force that the cells generate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the simulation setup and its distinction from previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "d03596f7-9a7e-4ec9-80b7-9b83aaf6a661",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C33",
+      "claim": "Although the cells are endowed with polarity in terms of their self-propulsion, the emergent symmetry in terms of their orientational alignment is nematic.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, although the cells are endowed with polarity in terms of their self-propulsion, the emergent symmetry in terms of their orientational alignment is nematic, which is in line with experimental observations in cell monolayers (Saw et al., 2017; Blanch-Mercader et al., 2018), discrete models of self-propelled rods (B\u00e4r et al., 2020; Meacock et al., 2021), and recently proposed continuum model of polar active matter (Amiri et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data and citations to previous experimental and theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "0634a266-b9bd-4f9f-b830-7abb76c87c7b",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C34",
+      "claim": "Extrusion events can be correlated with the position of both +1/2 comet-shaped and -1/2 trefoil-shaped topological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in accordance with experimental observations (Saw et al., 2017), we find that the extrusion events can be correlated with the position of both +1/2 comet-shaped and -1/2 trefoil-shaped topological defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation data and citation to previous experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "612282c1-9255-47c4-b2ec-86f736a95232",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C36",
+      "claim": "Laser ablation experiments have established that an induced extrusion event does not favor the nucleation of a pair of nematic defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, laser ablation experiments have established that an induced extrusion event does not favor the nucleation of a pair of nematic defects (Saw et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "45168bf7-2092-4480-ba8c-e39b86b0caa3",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C37",
+      "claim": "A Kolmogorov\u2013Smirnov test rejects the hypothesis that simulation-based extrusion events are uncorrelated with the half-integer nematic defects.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the KS test reject this (see Appendix 1\u2014table 1 and Appendix 1\u2014figure 1 in Appendix 1) and thus falsify the hypothesis that simulation-based extrusion events are uncorrelated with the half-integer nematic defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "e46bb19d-b7f4-4435-b4c6-45b7505f932b",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C39",
+      "claim": "The coordination number is independent of apical or basal considerations.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination number is determined based on the interactions of cells (see Appendix 1) and this property is independent of apical or basal considerations (Kaliman et al., 2021), unlike geometrical structures called scutoids that have been identified in curved epithelial tubes (G\u00f3mez-G\u00e1lvez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b20fa9fc-7b03-4daf-a33b-6f3b68ea0461",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C40",
+      "claim": "Increasing cell\u2013substrate adhesion leads to lower extrusion events.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, increasing cell\u2013substrate adhesion leads to lower extrusion events (see Appendix 1\u2014figure 8 in Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Appendix 1\u2014figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "9681c321-9b9b-49ec-95c9-8083507ba424",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C42",
+      "claim": "Other studies with confluent cellular layers have also found Lewis's relations to not be valid.",
+      "claim_type": "EXPLICIT",
+      "source": "While in our simulations the cell monolayers are not always confluent due to the extrusion events, other studies with confluent cellular layers have also found such relations to not be valid (Kim et al., 2014; Wenzel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "34330f21-af79-4dfe-8e5d-81d4f11735fa",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C43",
+      "claim": "The projected area of an extruding cell decreases prior to extrusion, but the number of interacting neighbors generally does not change in that time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, the projected area of an extruding cell decreases prior to extrusion, but the number of interacting neighbors generally does not change in that time frame (see Appendix 1\u2014figure 4 in Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "75fe33ab-0bb6-45b6-8e72-33c8540890d1",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C44",
+      "claim": "Cell extrusion emerges as a consequence of cells pushing and pulling on their neighbors due to their intrinsic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest mechanical rather than geometrical routes to cell extrusion. Specifically, in our approach cell extrusion emerges as a consequence of cells pushing and pulling on their neighbors due to their intrinsic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "21dd4708-8794-4c08-9fc2-23d56101c669",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C45",
+      "claim": "The approach contrasts with inherently threshold-based vertex models for both cellular rearrangements (T1 transitions) and extrusions (T2 transitions).",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with inherently threshold-based vertex models (see, e.g., Okuda and Fujimoto, 2020) for both cellular rearrangements (T1 transitions) and extrusions (T2 transitions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous modeling approaches supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "d8f2e512-a75a-4c07-a5a5-40e493e1ad22",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C46",
+      "claim": "The occurrence of disclinations in a flat surface produces local stress concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between disclinations and extrusion events is also related to the mechanical stress localization at the fivefold disclinations: The occurrence of disclinations in a flat surface produces local stress concentration (Irvine et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "b9c04cb6-6e03-4f32-9bb2-d62b16e54ada",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C47",
+      "claim": "It is energetically favorable to bend a flat surface, rather than to compress or to stretch it.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, it is energetically favorable to bend a flat surface, rather than to compress or to stretch it (Landau et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "c63ea807-fa3a-4321-917a-b3237bac2f43",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C48",
+      "claim": "Local stress concentration can lead to a fivefold (positive Gaussian curvature) or a sevenfold (negative Gaussian curvature) disclination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the local stress concentration can lead to a fivefold (positive Gaussian curvature) or a sevenfold (negative Gaussian curvature) disclination (Seung and Nelson, 1988; Guitter and Kardar, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "a55b4dee-c82c-4e65-ab35-8ab941e0baa5",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C49",
+      "claim": "Given a rigid substrate, fivefold disclinations are much more likely to provide relief for the high local stress concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In our set-up and given that we consider a rigid substrate, fivefold disclinations are much more likely to provide relief for the high local stress concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation setup and theoretical understanding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "c008c19a-490d-489f-a6d8-c7a96bce8fb5",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C50",
+      "claim": "High, out-of-plane, shear stress concentration is observed at extrusion sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a high, out-of-plane, shear stress concentration (Figure 4b) as well as tensile and compressive stress pathways (Figure 4a) reminiscent of force chains in granular systems (Majmudar and Behringer, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by stress field data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "353878b4-a336-43bf-929d-d19dd03c0857",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C51",
+      "claim": "Tensile and compressive stress pathways reminiscent of force chains in granular systems are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a high, out-of-plane, shear stress concentration (Figure 4b) as well as tensile and compressive stress pathways (Figure 4a) reminiscent of force chains in granular systems (Majmudar and Behringer, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by stress field data shown in Figure 4a and comparison with previous work on granular systems.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "c5742e6d-0756-4600-a8ab-15a17b3f8fa1",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C53",
+      "claim": "The shear stress prior to extrusion exhibits oscillations with large magnitudes relative to the mean field, a stark departure from non-extruding counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "The shear stress prior to extrusion exhibits oscillations with large magnitudes relative to the mean field, a stark departure from their non-extruding counterparts (see Appendix 1\u2014figure 4 in Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by stress field data shown in Figure 4d and Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "494cf628-3aa8-4d96-95a4-727a95c13d08",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C54",
+      "claim": "Cells collectively migrate along the orientation of the minimal in-plane intercellular shear stress (plithotaxis).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the association of cell extrusion events with regions of high out-of-plane shear stress has parallels with the phenomenon of plithotaxis, where it was shown that cells collectively migrate along the orientation of the minimal in-plane intercellular shear stress (Tambe et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "21c3f8f1-f4f3-44e4-90c0-5c3e000b47ba",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C55",
+      "claim": "High shear stress concentration hinders collective cell migration with cell extrusion providing a mechanism to re-establish the status quo.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, based on the association of cell extrusion events with regions of high out-of-plane shear stress, we conjecture that high shear stress concentration hinders collective cell migration with cell extrusion providing a mechanism to re-establish the status quo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conjecture based on the simulation data and comparison with plithotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "4109b113-26d9-4858-9238-56e132b9522e",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C61",
+      "claim": "There is an asymmetry in the intensity of stress in the compressive region at the head of the comet as opposed to the tensile region at the tail (\u22485\u00d7 higher).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is an asymmetry in the intensity of stress in the compressive region at the head of the comet as opposed to the tensile region at the tail (\u22485\u00d7 higher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of stress field data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "68c8dd8c-c6ec-4ae5-935c-7a8e823be75a",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C65",
+      "claim": "For a single disclination, the energy is higher for a sevenfold disclination than a fivefold disclination.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for a single disclination, this energy is higher for a sevenfold disclination (Deem and Nelson, 1996) and in our case the rigid substrate defies any attempts by a sevenfold disclination to buckle and form a negative Gaussian curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "4bbf95a1-325b-4d44-a626-f7f6b31e3c22",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C66",
+      "claim": "The rigid substrate defies any attempts by a sevenfold disclination to buckle and form a negative Gaussian curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for a single disclination, this energy is higher for a sevenfold disclination (Deem and Nelson, 1996) and in our case the rigid substrate defies any attempts by a sevenfold disclination to buckle and form a negative Gaussian curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "18d9a4f5-7fcd-46af-9ac4-8647c8baf556",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C68",
+      "claim": "The framework allows for cell\u2013substrate and cell\u2013cell adhesion forces to be tuned independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study presents a three-dimensional model of the collective migration-mediated cell elimination. Importantly, this framework allows for cell\u2013substrate and cell\u2013cell adhesion forces to be tuned independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling framework capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "e0f81d1a-5917-4913-b036-b3c66383651b",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C69",
+      "claim": "Varying the relative strength of cell\u2013cell and cell\u2013substrate adhesion can allow cells to switch between distinct mechanical pathways to eliminate unwanted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indeed suggest that varying the relative strength of cell\u2013cell and cell\u2013substrate adhesion can allow cells to switch between distinct mechanical pathways \u2013 leveraging defects in nematic and hexatic phases \u2013 to eliminate unwanted cells through: (i) cell extrusion at \u00b11/2 topological defects in the cell orientation field, consistent with experimental observations (Saw et al., 2017); and (ii) cell extrusion at fivefold disclinations in cell arrangement, where our results show a direct role of these disclinations in extruding the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the simulation data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "6b9bed85-8675-4b4d-ae93-c26422e8d90d",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C70",
+      "claim": "Increasing relative cell\u2013cell adhesion increases the probability of an extruded cell being a fivefold disclination while weakening the correlation with +1/2 topological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on the extruded cells, the results demonstrate that increasing relative cell\u2013cell adhesion increases the probability of an extruded cell being a fivefold disclination while weakening the correlation with +1/2 topological defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by the simulation data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "f9a210cc-d0e7-4797-85df-a19823720868",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C71",
+      "claim": "The presented framework provides access to the local stress field, including the out-of-plane shear components.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the presented framework provides access to the local stress field, including the out-of-plane shear components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling framework capabilities demonstrated by the stress field data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "0a33d7bb-8f2f-4792-8c27-c78f9f29b879",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C72",
+      "claim": "In simulations with high extrusion events, confluency may be lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we intentionally narrowed our focus to the interplay of cell\u2013cell and cell\u2013substrate adhesion, without accounting for cell proliferation. In its absence, simulations with high extrusion events may lose confluency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the simulation behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "45592d4c-fc1c-43f8-8f0a-2fbbd4b72a6c",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C73",
+      "claim": "The identified mechanical routes to extrusion prevail in cases with both high and low number of extrusions, where confluency is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the identified mechanical routes to extrusion prevail in cases with both high and low number of extrusions, where confluency is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the findings across different simulation conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "3b932041-bc83-4bbc-8ff9-8b842d8fb56e",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C76",
+      "claim": "The polarization dynamics is based on contact inhibition of locomotion (CIL) by aligning the polarity of the cell to the direction of the total interaction force acting on the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "To complete the model, the dynamics of front-rear cell polarity is introduced based on contact inhibition of locomotion (CIL) (Abercrombie and Heaysman, 1954; Abercrombie, 1979) by aligning the polarity of the cell to the direction of the total interaction force acting on the cell (Smeets et al., 2016; Peyret et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the modeling approach supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "e4e6b647-b9ca-471c-b428-c918599b0434",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "claim_id": "C78",
+      "claim": "The simulation parameters are chosen within the range that was previously shown to reproduce defect flow fields in epithelial layers.",
+      "claim_type": "EXPLICIT",
+      "source": "All results are reported in dimensionless units, introduced throughout the text, and the simulation parameters are chosen within the range that was previously shown to reproduce defect flow fields in epithelial layers (Balasubramaniam et al., 2021; see Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about parameter selection supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e4856bea-8d28-4838-9afe-a216a40d8453",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell extrusion is a fundamental biological process for removing unwanted cells from tissues, initiated by various triggers including apoptotic signaling, oncogenic transformation, overcrowding, and replication stress. Despite its importance in developmental, homeostatic, and pathological processes including cancer metastasis, the underlying mechanical mechanisms remain unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C16 establish the biological context and importance of cell extrusion through citations to established literature. Claim C17 accurately identifies the knowledge gap regarding mechanical mechanisms. These are well-supported background claims from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "16a62224-69f2-41d7-ba88-05161df0dc9f",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Current computational approaches to studying cell extrusion are limited by their two-dimensional nature, which fails to capture the inherently three-dimensional mechanical forces involved in this process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C7, and C8 collectively establish the motivation for the study by identifying limitations in current modeling approaches. These claims are supported by general knowledge of the field and accurately characterize the state of computational modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "a63b3cde-55cc-4776-b053-f408435f49f2",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cellular systems exhibit liquid crystal-like properties including nematic and hexatic order, with topological defects (\u00b11/2 defects and fivefold disclinations) that have been experimentally correlated with cell extrusion events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C18-C27 establish the theoretical framework by citing extensive prior experimental and theoretical work on liquid crystal properties in cellular systems and their relationship to extrusion. These background claims are well-supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "91d31e6e-561a-4e35-94a5-ac956326cb38",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The 3D phase-field simulations show that introducing self-propulsion forces pushes the system away from hexagonal equilibrium, generating half-integer nematic topological defects that spontaneously nucleate in pairs and follow chaotic trajectories, with emergent nematic symmetry despite polar cell propulsion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 describe simulation observations supported by data in Figures 2a-b and Appendix figures. The emergence of nematic defects from polar forces is validated against experimental observations and other models through appropriate citations. The characterization appears sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "059be5bd-bd12-467b-a754-cd9c108946fa",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulation results demonstrate that extrusion events are statistically correlated with both +1/2 and -1/2 topological defects, with Kolmogorov-Smirnov tests rejecting the null hypothesis of no correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C37 are supported by statistical analysis shown in Figure 2c-d and Appendix 1. The KS test provides appropriate statistical validation. The correlation is consistent with experimental observations (Saw et al., 2017), strengthening the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "a985a023-9942-4b92-b88a-c811127b2d58",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell extrusion in the simulations follows mechanical rather than geometrical routes, emerging from cells pushing and pulling on neighbors due to intrinsic activity, with coordination number remaining constant while projected area decreases prior to extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 establish that extrusion is mechanically driven rather than geometrically constrained. The findings that Lewis's law doesn't hold (C42-C43, Figure 3b) and that coordination number remains constant (C43) support this interpretation. The contrast with vertex models (C45) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "99dbd1b1-7bef-4ded-bee7-8ce651536d62",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "By increasing the relative cell-cell to cell-substrate adhesion ratio (\u03a9), the cell monolayer switches between two distinct mechanical pathways for extrusion: from half-integer nematic defects at low \u03a9 to fivefold hexatic disclinations at high \u03a9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C69, and C70 describe the central finding regarding adhesion-dependent switching between extrusion mechanisms. This is supported by data in Figures 2d-e showing the shift in probability distributions with varying \u03a9. The result represents a novel prediction from the 3D model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "650bf8a3-877c-4b63-872f-56cb64c59415",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fivefold disclinations are energetically favored for stress relief on rigid substrates because they can form positive Gaussian curvature through buckling, while sevenfold disclinations require negative Gaussian curvature that the rigid substrate prevents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49, C65-C66 provide the theoretical explanation for why fivefold disclinations are preferred. The reasoning is supported by citations to established theory (Irvine et al., Landau et al., Seung and Nelson, etc.) and is consistent with the simulation setup.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "838c02f1-346a-4057-b9a0-baf4f377207f",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cell extrusion acts as a mechanism to relieve localized stress concentration, with high out-of-plane shear stress and force chain-like stress pathways observed at extrusion sites, exhibiting large oscillations prior to extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C50-C51, C53 describe stress field observations supported by data in Figure 4a-d. The 3D stress field analysis is a key capability of the model. The observation of force chains and stress oscillations is well-documented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "e211a0bc-e6e8-4e49-b8cc-0f0d003d6a38",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High out-of-plane shear stress concentration hinders collective cell migration, with cell extrusion providing a mechanism to re-establish normal migration patterns, analogous to plithotaxis where cells migrate along minimal in-plane shear stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 accurately cites prior work on plithotaxis. However, C55 is explicitly labeled as a conjecture by the authors. While the analogy is interesting and the association with high shear stress is demonstrated, the causal claim that extrusion 're-establishes the status quo' lacks direct validation and remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "97a1b020-b795-46f6-ac15-d11bc0274f16",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is a 5-fold asymmetry in stress intensity between the compressive region at the head of +1/2 defects compared to the tensile region at the tail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by stress field analysis data shown in Figure 5c. The quantitative asymmetry measurement provides specific characterization of the stress distribution around nematic defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "9748d3ed-1598-41f0-a6d5-fcd91b00582e",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study presents a 3D phase-field modeling framework that independently tunes cell-cell and cell-substrate adhesion forces, provides access to full 3D stress fields including out-of-plane components, and uses polarization dynamics based on contact inhibition of locomotion with parameters validated against epithelial layer data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C71, C76, C78 describe the modeling framework and methodology. The capabilities are demonstrated throughout the results. Parameter validation against prior work (C78, citing Balasubramaniam et al., 2021) provides appropriate justification for parameter choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    },
+    {
+      "id": "57806bcd-66a2-4b4c-8dbf-4bc2906a5a4f",
+      "content_id": "42b636ec-7af1-474d-9245-d9c70d5f900a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While simulations without cell proliferation may lose confluency at high extrusion rates, the identified mechanical routes to extrusion remain valid across both high and low extrusion conditions where confluency is maintained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 acknowledge a limitation of the model (lack of proliferation) while asserting robustness of the main findings. This is an appropriate caveat that doesn't undermine the core results, as the mechanisms are shown to operate across different conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T20:22:50.317263Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8d751016-fa70-4b7a-a84d-2910e9958bf8",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "aa04321b-4632-4ee4-834e-589ddc6ea429",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "a28d1e10-ee48-4bb0-ab98-3c8aee2fa1bc",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "1b1f53cb-4463-4930-a392-a6f641bde59a",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "be13f57b-334c-4654-adc1-db92c683050d",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "c6e03d88-6471-4f54-ac97-7ac301c6f833",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "3a026c46-f347-40f5-8a50-1c095901be97",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "b2eacb79-937c-4cf0-a8e6-674f31a02ab0",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "277b5e76-df4f-4fd0-b318-f9429487e607",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "78f4892b-caa1-4ba3-abfa-b3ac8e0381ee",
+      "result_id": "e4856bea-8d28-4838-9afe-a216a40d8453"
+    },
+    {
+      "claim_id": "aec51e28-16a6-42de-a7fd-1d73704aba66",
+      "result_id": "16a62224-69f2-41d7-ba88-05161df0dc9f"
+    },
+    {
+      "claim_id": "61b6af15-f6a7-4aed-a662-fed3b1e9d2a2",
+      "result_id": "16a62224-69f2-41d7-ba88-05161df0dc9f"
+    },
+    {
+      "claim_id": "cc72172c-6862-4bee-bfbc-4098b3ca25a8",
+      "result_id": "16a62224-69f2-41d7-ba88-05161df0dc9f"
+    },
+    {
+      "claim_id": "6519cb9e-cd56-48f9-aee1-fdc58d02f8d4",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "f8cd89d7-904d-492c-8cb4-4652c83f5183",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "10945014-f7c4-4402-b9f4-d2fc0df61eb5",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "9a4148e5-2258-4be8-a1b4-b110faf32b45",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "2dc2fc02-2965-4d82-a424-e6016aeffa9a",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "b1655516-0623-4f10-ae59-9518510b22c1",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "35920889-f65f-4af2-926a-e2792d633634",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "751577de-1152-4fb2-9320-e62799e369c4",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "be634b0c-07d4-40e4-b1a7-9a71ccf33a12",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "1be88bad-4f66-45a1-94e7-ff73045289ca",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "b8732b35-117d-4070-b7fd-064580caa9d2",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "c4061967-a5d6-4ff2-aad2-c0c855c25308",
+      "result_id": "a63b3cde-55cc-4776-b053-f408435f49f2"
+    },
+    {
+      "claim_id": "7543cc34-be0b-47b8-8f3a-70a78c7f0f92",
+      "result_id": "91d31e6e-561a-4e35-94a5-ac956326cb38"
+    },
+    {
+      "claim_id": "f2d1df44-1908-4d3e-95ce-ea79a53d4a37",
+      "result_id": "91d31e6e-561a-4e35-94a5-ac956326cb38"
+    },
+    {
+      "claim_id": "53c3dac6-1bfc-487d-a339-bc7e81de2189",
+      "result_id": "91d31e6e-561a-4e35-94a5-ac956326cb38"
+    },
+    {
+      "claim_id": "f24ab416-c5f2-40a2-ab01-d83670adf2dd",
+      "result_id": "91d31e6e-561a-4e35-94a5-ac956326cb38"
+    },
+    {
+      "claim_id": "d03596f7-9a7e-4ec9-80b7-9b83aaf6a661",
+      "result_id": "91d31e6e-561a-4e35-94a5-ac956326cb38"
+    },
+    {
+      "claim_id": "0634a266-b9bd-4f9f-b830-7abb76c87c7b",
+      "result_id": "059be5bd-bd12-467b-a754-cd9c108946fa"
+    },
+    {
+      "claim_id": "45168bf7-2092-4480-ba8c-e39b86b0caa3",
+      "result_id": "059be5bd-bd12-467b-a754-cd9c108946fa"
+    },
+    {
+      "claim_id": "e46bb19d-b7f4-4435-b4c6-45b7505f932b",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "b20fa9fc-7b03-4daf-a33b-6f3b68ea0461",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "9681c321-9b9b-49ec-95c9-8083507ba424",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "34330f21-af79-4dfe-8e5d-81d4f11735fa",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "75fe33ab-0bb6-45b6-8e72-33c8540890d1",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "21dd4708-8794-4c08-9fc2-23d56101c669",
+      "result_id": "a985a023-9942-4b92-b88a-c811127b2d58"
+    },
+    {
+      "claim_id": "b9458236-1b01-49c9-9c07-8153a74781f8",
+      "result_id": "99dbd1b1-7bef-4ded-bee7-8ce651536d62"
+    },
+    {
+      "claim_id": "e0f81d1a-5917-4913-b036-b3c66383651b",
+      "result_id": "99dbd1b1-7bef-4ded-bee7-8ce651536d62"
+    },
+    {
+      "claim_id": "6b9bed85-8675-4b4d-ae93-c26422e8d90d",
+      "result_id": "99dbd1b1-7bef-4ded-bee7-8ce651536d62"
+    },
+    {
+      "claim_id": "d8f2e512-a75a-4c07-a5a5-40e493e1ad22",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "b9c04cb6-6e03-4f32-9bb2-d62b16e54ada",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "c63ea807-fa3a-4321-917a-b3237bac2f43",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "a55b4dee-c82c-4e65-ab35-8ab941e0baa5",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "68c8dd8c-c6ec-4ae5-935c-7a8e823be75a",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "4bbf95a1-325b-4d44-a626-f7f6b31e3c22",
+      "result_id": "650bf8a3-877c-4b63-872f-56cb64c59415"
+    },
+    {
+      "claim_id": "12c14c9d-ddc1-41ad-b902-cd679ff2b3a9",
+      "result_id": "838c02f1-346a-4057-b9a0-baf4f377207f"
+    },
+    {
+      "claim_id": "c008c19a-490d-489f-a6d8-c7a96bce8fb5",
+      "result_id": "838c02f1-346a-4057-b9a0-baf4f377207f"
+    },
+    {
+      "claim_id": "353878b4-a336-43bf-929d-d19dd03c0857",
+      "result_id": "838c02f1-346a-4057-b9a0-baf4f377207f"
+    },
+    {
+      "claim_id": "c5742e6d-0756-4600-a8ab-15a17b3f8fa1",
+      "result_id": "838c02f1-346a-4057-b9a0-baf4f377207f"
+    },
+    {
+      "claim_id": "494cf628-3aa8-4d96-95a4-727a95c13d08",
+      "result_id": "e211a0bc-e6e8-4e49-b8cc-0f0d003d6a38"
+    },
+    {
+      "claim_id": "21c3f8f1-f4f3-44e4-90c0-5c3e000b47ba",
+      "result_id": "e211a0bc-e6e8-4e49-b8cc-0f0d003d6a38"
+    },
+    {
+      "claim_id": "4109b113-26d9-4858-9238-56e132b9522e",
+      "result_id": "97a1b020-b795-46f6-ac15-d11bc0274f16"
+    },
+    {
+      "claim_id": "18d9a4f5-7fcd-46af-9ac4-8647c8baf556",
+      "result_id": "9748d3ed-1598-41f0-a6d5-fcd91b00582e"
+    },
+    {
+      "claim_id": "f9a210cc-d0e7-4797-85df-a19823720868",
+      "result_id": "9748d3ed-1598-41f0-a6d5-fcd91b00582e"
+    },
+    {
+      "claim_id": "3b932041-bc83-4bbc-8ff9-8b842d8fb56e",
+      "result_id": "9748d3ed-1598-41f0-a6d5-fcd91b00582e"
+    },
+    {
+      "claim_id": "e4e6b647-b9ca-471c-b428-c918599b0434",
+      "result_id": "9748d3ed-1598-41f0-a6d5-fcd91b00582e"
+    },
+    {
+      "claim_id": "0a33d7bb-8f2f-4792-8c27-c78f9f29b879",
+      "result_id": "57806bcd-66a2-4b4c-8dbf-4bc2906a5a4f"
+    },
+    {
+      "claim_id": "45592d4c-fc1c-43f8-8f0a-2fbbd4b72a6c",
+      "result_id": "57806bcd-66a2-4b4c-8dbf-4bc2906a5a4f"
+    }
+  ],
+  "comparisons": []
+}

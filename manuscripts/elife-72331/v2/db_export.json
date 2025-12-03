@@ -1,0 +1,2525 @@
+{
+  "submission": {
+    "id": "cbb776a9-9f97-418f-848c-4d6e53781ef0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:35:50.690221Z",
+    "updated_at": "2025-12-03T10:35:50.690221Z"
+  },
+  "content": [
+    {
+      "id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "submission_id": "cbb776a9-9f97-418f-848c-4d6e53781ef0",
+      "content_type": "manuscript",
+      "content_text": "# Virtual mouse brain histology from multi-contrast MRI via deep learning\n\n## Authors\n\n- Zifei Liang<sup>1</sup>\n- Choong H Lee<sup>1</sup>\n- Tanzil M Arefin<sup>1</sup>\n- Zijun Dong<sup>1</sup>\n- Piotr Walczak<sup>2</sup>\n- Song-Hai Shi<sup>3</sup>\n- Florian Knoll<sup>1</sup>\n- Yulin Ge<sup>1</sup>\n- Leslie Ying<sup>4</sup>\n- Jiangyang Zhang<sup>1</sup> ([ORCID: 0000-0003-0740-2662](https://orcid.org/0000-0003-0740-2662)) \u2020\n\n### Affiliations\n\n1. Bernard and Irene Schwartz Center for Biomedical Imaging, Department of Radiology, New York University School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n2. Department of Diagnostic Radiology and Nuclear Medicine, University of Maryland Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))\n3. Developmental Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))\n4. Departments of Biomedical Engineering, Electrical Engineering, University at Buffalo, the State University of New York Buffalo United States ([ROR:01y64my43](https://ror.org/01y64my43))\n\n\u2020 Corresponding author\n\n## Abstract\n\n1H MRI maps brain structure and function non-invasively through versatile contrasts that exploit inhomogeneity in tissue micro-environments. Inferring histopathological information from magnetic resonance imaging (MRI) findings, however, remains challenging due to absence of direct links between MRI signals and cellular structures. Here, we show that deep convolutional neural networks, developed using co-registered multi-contrast MRI and histological data of the mouse brain, can estimate histological staining intensity directly from MRI signals at each voxel. The results provide three-dimensional maps of axons and myelin with tissue contrasts that closely mimic target histology and enhanced sensitivity and specificity compared to conventional MRI markers. Furthermore, the relative contribution of each MRI contrast within the networks can be used to optimize multi-contrast MRI acquisition. We anticipate our method to be a starting point for translation of MRI results into easy-to-understand virtual histology for neurobiologists and provide resources for validating novel MRI techniques.\n\n## Introduction\n\nMagnetic resonance imaging (MRI) is one of a few techniques that can image the brain non-invasively and without ionizing radiation, and this advantage is further augmented by a large collection of versatile tissue contrasts. While MRI provides unparalleled insight into brain structures and functions at the macroscopic level (Lerch et al., 2017), inferring the spatial organization of microscopic structures (e.g., axons and myelin) and their integrity from MR signals remains a challenging inverse problem. Without a thorough understanding of the link between MR signals and specific cellular structures, uncertainty often arises when determining the exact pathological events and their severities. The lack of specificity hinders direct translation of MRI findings into histopathology and limits its diagnostic value.\n\nTremendous efforts have been devoted to developing new mechanisms to amplify the affinity of MRI signals to target cellular structures in order to improve sensitivity and specificity. Recent progress in multi-modal MRI promises enhanced specificity by integrating multiple MR contrasts that target distinct aspects of a cellular structure (Mangeat et al., 2015). For example, magnetization transfer (MT), T2, and diffusion MRI are sensitive to the physical and chemical compositions of myelin, and combining them can lead to more specific myelin measurements than individual contrast (Cercignani and Bouyagoub, 2018). Progress in this front, however, has been hindered by the lack of realistic tissue models for inference and ground truth histological data for validation.\n\nThe objective of this study is to test whether deep convolutional neural networks (CNNs), developed using co-registered histology and MRI data, can bypass the above-mentioned obstacles and enhance our ability to map key cellular structures from MR signals. With its capability to bridge data acquired with different modalities (Christiansen et al., 2018; Leynes et al., 2018; Ounkomol et al., 2018), the deep learning framework (LeCun et al., 2015) has certain advantages over existing modeling approaches, as it is data-driven and not limited by particular models and associated assumptions. As MR signals are the ensemble average of all spins within each voxel, a typical set of three-dimensional (3D) MRI data, with millions of voxels, thus provides ample instances to train deep CNNs. Through training, the networks can potentially reconstruct the link between MR signals and cellular structures in co-registered histology and translate multi-contrast MRI data into maps that mimic histology. Our results demonstrate that this approach offers enhanced specificity for detecting axons and myelin compared to existing MRI-based markers. Furthermore, adding perturbations to the networks allows us to probe the relative contribution of individual MR contrast, which can be used to optimize multi-contrast MRI strategy and evaluate novel imaging contrasts.\n\n## Results\n\n### Prediction of auto-fluorescence images of the mouse brain from MR images using deep learning\n\nWe first demonstrated our method using co-registered 3D MRI and auto-fluorescence (AF) data. MRI dataset from ex vivo C57BL/6 mouse brain (P60, n = 6), each contained 67 3D MR (T2, MT, and diffusion) images, were spatially normalized to the Allen Reference Atlas (ARA) (Ng et al., 2009; Figure 1A). We then selected 100 AF datasets from the Allen Mouse Brain Connectivity Atlas (AMBCA) (Oh et al., 2014) with minimal amounts of tracer signals in the forebrain. The contrast in the AF data is not specific to a particular structure, but a majority of hypo-intense regions co-localized with myelinated white matter tracts (Christensen et al., 2014). These 3D AF data had already been normalized to the ARA and were down-sampled to the resolution of the MRI data (0.06 mm isotropic). Mismatches between the MRI and AF images were mostly within one to two voxels (Figure 1\u2014figure supplement 1A-B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig1-v2.jpg)\n\n**Figure 1.:** (A) T2-weighted (T2W), magnetization transfer ratio (MTR), and diffusion-weighted images (DWIs) were registered to the Allen Reference Atlas (ARA) space, from which 100 already registered AF data were selected and down-sampled to the same resolution of the MRI data. Parameter maps derived from DWI, for example, fractional anisotropy (FA) and mean kurtosis (MK), were also included in this study. (B) The deep convolutional neural network (CNN) contained 64 layers (two layers for each residual block \u00d7 30 residual blocks plus four additional layers at the input and output ends) and was trained using multiple 3 \u00d7 3 MRI patches as inputs and corresponding 3 \u00d7 3 patches from histology as targets. (C) The CNN was trained using the MRI data (n = 6) and different amounts of randomly selected AF data (i\u2013v). The results generated by applying the CNN to a separate set of MRI data (n = 4) were shown on the right for visual comparison with the reference (Ref: average AF data from 1675 subject). (D\u2013E) Quantitative evaluation of the results in C with respect to the reference using root mean square error (RMSE) and structural similarity indices (SSIM). The error bars indicate the standard deviations due to random selections of AF data used to train the network. (F) The receiver operating characteristic (ROC) curves of the results in C in identifying hypo-intense structures in the reference and their areas under the curve (AUCs). The ROC curves from 25 separate experiments in (iii) (light green) show the variability with respect to the mean ROC curve (dark green) due to inter-subject variations in AF intensity. (G) The distribution of randomly selected 3 \u00d7 3 MRI patches in the network\u2019s two-dimensional (2D) feature space, defined using the t-SNE analysis based on case (iii) in C, shows three clusters of patches based on the intensity of their corresponding patches in the reference AF data (turquoise: hyper-intense, orange: hypo-intense; gray: brain surfaces). (H) MRI signals from two representative patches with hyper-intense AF signals (turquoise) and two patches with hypo-intense AF signals (orange). The orange profiles show higher DWI signals and larger oscillation among them than the turquoise profiles (both at b = 2000 and 5000 s/mm2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The overall registration accuracy was visually examined by overlaying a set of landmarks on AF and average diffusion-weighted (DWI) images. (B) Distribution of pixel displacement due to mismatches between AF and MRI data was estimated using image mapping. Overall, 70% of the pixel displacements are within one pixel (0.0625 mm) and 95% within two pixels (0.125 mm). (C) A convolutional neural network with a similar architecture as the one in the main text was trained using DWIs of ex vivo mouse brains as inputs and corresponding maps of fractional anisotropy (FA), generated by fitting the DWIs to a diffusion tensor model, as targets. In this case, the inputs and targets are perfectly co-registered. (D) Comparisons of FA maps generated from model fitting and from the convolutional neural network (deep learning). Overall, the deep learning results show good agreement with the reference from perfectly registered input and target data. The 3 \u00d7 3 patch size used by the network caused smoothing in the deep learning results. (E) Smoothed curves of mean square error loss (left) and root mean square error (RMSE) (right) with respect to the reference FA maps during training measured on the training (blue) and validation (yellow) datasets. Each epoch is 300 iterations. (F) Two-dimensional random displacement fields with the same distribution as shown in A were introduced to deform FA maps in C. The white arrows in the horizontal images indicated the misalignments introduced by this method compared to the original FA maps. Notice the zip-zagged boundaries in the deformed FA map compared to the smooth boundaries in the original FA map. (G) Deep learning results generated using different patch sizes. Larger patch size was able to accommodate more mismatches between input and target data but also increased image smoothing in the results. For the amounts of residual mismatches shown in A, the 3 \u00d7 3 patch size was robust to the mismatches with minimal smoothing effects. (H) RMSE and structural similarity index (SSIM) values of results generated using different patch sizes. There were significant differences between different patch sizes (t-test, p < 0.00001).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Smoothed curves of mean square error loss (A, C) and root mean square error (RMSE) (B, D) with respect to the reference during training measured on the training (blue) and validation (yellow) datasets. Each epoch is 300 iterations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Visual inspection showed no apparent differences between results generated using original patches and those using patches with uniform values. (B) Receiver operating characteristic (ROC) analysis showed a slight decrease in area under the curve (AUC) for the MRH-AF results generated using patches with uniform values (dashed purple curve) compared to the original (solid black curve). (C) Correlation between MRH-AF using modified 3 \u00d7 3 patches as inputs and reference AF signals (purple open circles) was slightly lower than the original (black open circles).\n\nA deep CNN, named MRH-AF, which contained 30 residual blocks, was trained using multiple 3 \u00d7 3 patches from the forebrain region of each MRI data (40,000 patches, N = 6) as inputs and their corresponding patches in the co-registered AF data as targets (Figure 1B) (details on the network and training can be found in the Materials and methods section). In order to determine the amount of training data sufficient to capture the relationship between these two modalities, we performed separate training sessions with target AF data ranging from randomly selected 60 subjects (i), 6 subjects (ii), single subject data (iii), down to 5000 and 1000 3 \u00d7 3 patches randomly selected within a single subject data (iv and v) (Figure 1C). The 3 \u00d7 3 patch size was shown to accommodate residual mismatches between MRI and AF data (Figure 1\u2014figure supplement 1F-H), and we chose such a small patch size instead of the entire image for training because we aimed to define the local relationship between cellular structures within an MRI voxel and corresponding ensemble-averaged MRI signals.\n\nThe performance of MRH-AF was evaluated using the average 3D AF data in the ARA (CCF version 3, average of 1675 mouse brains)(Oh et al., 2014) as the reference and MRI data from a separate group of mice (P60, n = 4) as the inputs. The MRH-AF results trained with 60-subject AF data as training targets (i) showed good agreement with the reference (Figure 1D) and strong voxel-wise signal correlation (R2 = 0.71, p < 0.001, Figure 1\u2014figure supplement 3C). The agreement was maintained for (ii) and (iii) both visually and quantitatively, as measured by the root mean square errors (RMSEs) and structural similarity index (SSIM) (Figure 1D\u2013E). The specificity to hypo-intense regions in the reference defined by optimal thresholding was evaluated using receiver operating characteristic (ROC) analysis. The MRH-AFs trained with 60- and 6-subject AF data (i and ii) showed high specificity with areas under curve (AUCs) greater than 0.94, and the MRH-AF trained with 1-subject data (iii) had a slightly reduced average AUC of 0.937 (Figure 1F). The variation in the ROC curves in (iii), caused by the inter-subject variations in AF signals among subjects chosen for training, was relatively small. Further reducing the size of training data (iv and v) resulted in declined performances (Figure 1D\u2013F), emphasizing the need for sufficient training data.\n\nThe way that MRH-AF in (iii) translated individual 3 \u00d7 3 MR patches into AF signals was visualized in a 2D feature space derived by t-distributed stochastic neighbor embedding (t-SNE) analysis (van der Maaten and Hinton, 2008; Figure 1G). Patches in the MRI data that were assigned with hypo-intense AF signals (orange) mostly clustered at the lower right corner, well separated from patches that were assigned with hyper-intense AF signals (turquoise) or near the brain surface (gray). Representative patches from the first two categories showed distinctive signal profiles (Figure 1H). Switching the network inputs to modified 3 \u00d7 3 patches, in which all voxels were assigned the same MR signals as the center voxel, resulted in no apparent loss in sensitivity and specificity and still produced strong voxel-wise signal correlation with the reference AF maps (R2 = 0.68, p < 0.001, Figure 1\u2014figure supplement 3), suggesting that MRH-AF primarily relied on multi-contrast MR signals, not patterns within patches, to generate its predictions. Overall, the result demonstrates that the ability of MRH-AF to translate multi-contrast MRI data into maps that mimic the tissue AF contrast in the AMBCA.\n\nReducing the number of residual blocks from 30 to 10 resulted in a slight reduction in quality of the predicted AF map (Figure 2A\u2013B) with significantly increased RMSEs but no significant change in SSIM (Figure 2B). MRH-AF outperformed first- and second-order polynomial fittings (Figure 2A\u2013B, case i vs. case iv, case iii vs. cases v and vi), potentially due to the network\u2019s ability to accommodate remaining mismatch between AF and MRI data. Replacing the 67 rawdata with five commonly used MR parameter maps (T2, MTR, FA, MD, and MK) as inputs to train the network produced less accurate AF predictions, for example, the loss of contrasts in the thalamus (Figure 2A) as well as significantly increased RMSEs and decreased SSIMs (Figure 2B). This suggests that the five MR parameters, although reflecting key tissue properties, do not contain all the information available from the 67 rawdata. However, using empirical or model-based MR parameters as inputs to the network has the advantage of broader applicability without requiring particular acquisition protocols and instruments, and a carefully selected and comprehensive set of such parameters will likely improve the predictions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig2-v2.jpg)\n\n**Figure 2.:** (A) MRH-AF results generated under different conditions (top panel) compared to polynomial fitting results (lower panel). (B) Root mean square error (RMSEs) and structural similarity indices (SSIMs) of the predicted AF maps shown in A with respect to the reference AF map. (C) Plots of the relative contribution of individual MRI images, normalized by the total contribution of all MR images, measured by RMSE. Images displayed on the outer ring (light blue, MRH-AF) show the network outcomes after adding 10% random noises to a specific MR image on the inner ring (light yellow). (D) The relative contributions of all 67 MR images arranged in descending order and their cumulative contribution. The images on the right show the MRH-AF results with the network trained using only the top 4, 17, 38, and all images as inputs. (E) RMSE measurements of images in D(n = 4) with respect to the reference AF data. Lower RMSE values indicate better image quality. * indicates statistically significant difference (p = 0.028, t-test). (F) Receiver operating characteristic (ROC) curves of MRH-AF results in D and the area under the curve (AUC) values.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Adding noises to T2-weighted (T2W) and magnetization transfer (MT) images made the network outputs noticeably noisier compared to the output with noisy-free inputs. In comparison, similar level of noises added to two diffusion-weighted images (DWI#1 and DWI#3) produced less apparent changes in the output.\n\nBased on the local ensemble average property of MR signals, we added random noises to each of the 67 MR images, one at a time, as perturbations to the network (Olden et al., 2004) and measured the effect on network outcomes with respect to noise-free results (Figure 2C), which reflected how each MR image influenced the outcome of MRH-AF or its relative contribution in the network. Similar information can also be obtained by training the networks with different subsets of the MRI contrasts and comparing the network predictions, but the perturbation method allows us to probe the existing network without retraining. We found that adding noises to a few images (e.g., T2 and MT images) produced noticeably larger effects, in terms of output image quality and the ability of the network to separate different tissue types, than adding a comparable level of noises to other images (Figure 2\u2014figure supplement 1), potentially due to redundant information shared among the 60 rawdata in the diffusion MRI dataset. This noise perturbation result can be used to accelerate MRI acquisition by prioritizing the acquisition of images or contrasts with high relative contributions. The top 4, 17, and 38 images ranked based on their contributions accounted for 28%, 50%, and 75% of the total contribution to the final result, respectively (Figure 2D). Results from training the network with the top 38 MR images as inputs showed comparable visual quality (Figure 2D\u2013E) and diagnostic power (Figure 2F) as the results based on the full dataset, but only required 57% the imaging time.\n\n### Use deep learning to generate virtual maps of axon and myelin and enhance specificity\n\nNext, we trained our network using serial histological sections immuno-stained for neurofilament (NF) and myelin basic protein (MBP), two commonly used markers for axons and myelin, from the Allen mouse brain atlas. These images were down-sampled, normalized to the ARA (Figure 3\u2014figure supplement 1). Part of the images were used for training and the rest were used as references. Due to limited histological images stained for myelin and axons, we adopted the transfer learning strategy (Weiss et al., 2016). Using the MRH-AF network as a starting point, we fixed most of its network layers while leaving the last three convolutional layers as trainable with MBP and NF-stained histological images.\n\nThe MRH results (Figure 3A) showed closer visual congruence with the histological references than commonly used MRI-based markers for axons (fractional anisotropy [FA]) and myelin (magnetization transfer ratio [MTR] and radial diffusivity [Song et al., 2002], DR) as well as linear fitting results using the five parameters as in Figure 2. Even though MRH was trained using coronal sections, it can generate maps along other axes when applied to 3D MRI data (Figure 3B). The MRH-NF/MBP results also showed strong signal correlations with the reference data (R2 = 0.61/0.73, respectively, Figure 3\u2014figure supplement 2). ROC analyses (Figure 3C) on detecting axon and myelin-rich structures demonstrate improved specificity compared to any single MRI-based markers or 5-parameters linear fitting, while t-SNE analyses visualize how the two networks separate the patches in MRI data that corresponded to NF- and MBP-rich structures from the rest (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparisons of MRH-NF/MBP results with reference histology and MRI-based markers that are commonly used to characterize axon and myelin in the brain (MTR: magnetization transfer ratio; FA: fractional anisotropy; DR: radial diffusivity) as well as linear prediction of NF and MBP (fitting-NF/MBP) based on five MRI parameter maps (T2, MTR, FA, MD, and MK). (B) Even though MRH-NF/MBP were trained using coronal sections, they were able to generate maps for other orthogonal sections (e.g., horizontal sections shown here) from three-dimensional (3D) MRI, as expected from the local ensemble average property. The results show general agreements with structures in comparable horizontal MTR, FA, and five-parameter linear fitting maps. (C) Receiver operating characteristic (ROC) analyses of MRH-NF and MRH-MBP show enhanced specificity to their target structures defined in the reference data than MTR, FA, DR, and five-parameter linear fittings. Here, DR values from diffusion-weighted images (DWIs) with b-values of 2000 and 5000 s/mm2 are examined separately. (D) The distribution of randomly selected 3 \u00d7 3 MRI patches in the network\u2019s 2D feature spaces of MRH-NF and MRH-MBP defined using the t-distributed stochastic neighbor embedding (t-SNE) analyses. (E\u2013F) Enlarged maps of the cortical (E) and hippocampal (F) regions of normal C57BL6 mouse brains comparing the tissue contrasts in MRH-NF/MBP with histology and MRI. In (E), white arrows point to a layer structure in the hippocampus. ROC analyses performed within the cortex and hippocampus show that MRH-NF/MBP have higher specificity than FA, MTR, and DR, but with lower areas under the curve (AUCs) than in C due to distinct tissue properties. (G) Relative contributions of T2-weighted (T2W), MT, diffusion MRI (DWI-L: b = 2000 s/mm2; DWI-H: b = 5000 s/mm2) for the whole brain, white matter, and cortex/hippocampus. *: p < 0.005 (paired t-test, n = 4, from left to right, p = 0.0043/0.000021/0.00072/0.0014 for NF, p = 0.000058/0.000035/0.000002/0.00392 for MBP, respectively). Details on the contributions of each MRI contrast can be found in Figure 3\u2014figure supplement 3.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Two types of common artifacts in neurofilament (NF)-stained images were repaired, and the ventricular spaces were filled with the average intensity values of the cortex. (B) Examples of co-registered histological and MRI data. Both NF-stained histological images and ex vivo MRI data were aligned to the space defined by Allen Reference Atlas (ARA). Manually placed landmarks were overlaid to show the overall registration quality. The fractional anisotropy (FA) maps are shown here because white matter structures usually have high FA values due to the coherently arranged axons.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** p Values for all these tests are less than 0.001.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** T2-weighted (T2) and magnetization transfer (MT) images show the highest contributions in both cases. In both plots, the contributions are normalized by the total contribution of all MR images. Images displayed on the outer ring (light blue, MRH-NF/MBP) show the network outcomes after adding 10% random noises to a specific MR image on the inner ring (light yellow).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The top row shows the actual images and the bottom row shows the deconvolution analysis results. The estimated resolutions were computed by dividing the nominal resolution (62.5 \u00b5m/pixel) by the highest normalized spatial frequency detected in the images (indicated by the vertical lines). (D) The resolutions of input MRI and histological data were higher than the resolutions of MRH outputs based on the deconvolution analysis (paired t-test, p < 0.000001). In this case, the histological data had been first down-sampled to 0.1 mm/pixel.\n\nThe MRH results, in combination with the structural labels in ARA, provided insights into how the networks balanced multiple MRI contrasts to map axons and myelin in brain regions with distinct microstructural compositions. In the cortex, MRH-NF and MTR showed similar contrasts and comparable specificities to axons (Figure 3E), while in the whole brain, MTR had a noticeable lower specificity than MRH-NF and FA (Figure 3C). This suggests that MRH-NF assigned additional weightings on MTR when processing cortical patches. Similarly, in ROC analysis for voxels within the hippocampus, the curve of MRH-MBP closely followed the curve of DR at b = 5000 s/mm2, in a departure from the whole brain result (Figure 3C). Visual inspections of the MRH-MBP results revealed a layer structure in the hippocampus, which was not obvious in the MTR map but visible in the radial diffusivity (DR) map at b = 5000 s/mm2 (Figure 3F). Relative contributions of T2-weighted (T2W) and MT signals were significantly higher in the cortex and hippocampus than in white matter regions for both MRH-NF and MRH-MBP (Figure 3G).\n\nApplying the MRH-MBP network to MRI data, collected from dysmyelinating shiverer and control mouse brains (n = 5/5) and not included in training MRH-MBP, generated maps that resembled the MBP-stained histology (Figure 4A). In the corpus callosum, the MRH-MBP results showed similar contrasts between shiverer and control moue brains as MTR (Figure 4B). Voxel-wise correlation between MRH-MBP predictions and co-registered MTR and MBP signals from the shiverer and control mice showed a slightly stronger correlation (Figure 4C) and small improvement in myelin specificity than MTR (Figure 4D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative MRH-MBP results from dysmyelinated shiverer and control mouse brains show better agreement with histology than maps of magnetization transfer ratio (MTR), fractional anisotropy (FA), and DR. (B) Differences in MRH-MBP, MTR, and DR values of the corpus callosum (t-test, n = 5 in each group, p = 0.00018/0.0061/0.475, respectively). (C) Voxel-wise analysis showed a slightly stronger correlation between MRH-MBP and actual MBP signals than MTR (R2 = 0.91 vs. 0.81). (D) MRH-MBP showed slightly improved sensitivity and specificity for MBP-positive regions than MTR in the shiverer and control mouse brains. Scale bar = 1 mm.\n\n### Use deep learning to generate maps that mimic Nissl staining\n\nMRH networks can also be extended to other types of MR contrasts and histology. To demonstrate this, we used MRH to test whether cellularity in the mouse brain can be inferred from diffusion MRI signals, as our previous studies suggest that oscillating gradient spin echo (OGSE) (Does et al., 2003) diffusion MRI can generate a contrast similar to Nissl staining in both normal and injured mouse brains (Aggarwal et al., 2014; Aggarwal et al., 2012). We separated the down-sampled single subject 3D Nissl data from ARA into two parts. One was used as the training target, and the rest was used as the reference for testing (Figure 5A). The inputs to the so-called MRH-Nissl network included conventional pulsed gradient spin echo (PGSE) and recently developed OGSE diffusion MRI data. In the testing regions, the network that utilized all OGSE and PGSE data as inputs generated maps with good agreement with the ground truth Nissl data (Figure 5A), showing higher sensitivity and specificity than PGSE (Figure 5B). In the 2D feature space from t-SNE analysis (Figure 5C), the patches that correspond to regions with low Nissl signals were separated from other patches that correspond to regions with strong Nissl signals. Representative signal profiles from the three categories (Figure 5D) revealed that signals in the high Nissl signal patches decreased as the oscillating frequency increased, whereas the other two types of patches showed no such pattern. Detailed analysis of contrast contribution showed that PGSE and OGSE data contribute equally (Figure 5E), indicating the importance of OGSE data in generating the target tissue contrast. The MRH-Nissl map of the sas4-/-p53-/- mouse brain, which contains a band of heterotopia consists of undifferentiated neurons (Insolera et al., 2014), produced image contrasts that matched Nissl-stained histology (Figure 5F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72331/elife-72331-fig5-v2.jpg)\n\n**Figure 5.:** (A) Comparisons of reference Nissl histology and MRH-Nissl results with pulsed gradient spin echo (PGSE), oscillating gradient spin echo (OGSE), combined PGSE and OGSE diffusion MRI data in both training and testing datasets. The entire datasets consist of PGSE and OGSE data acquired with oscillating frequencies of 50, 100, and 150 Hz, a total of 42 images. (B) Receiver operating characteristic (ROC) curves of MRH-Nissl show enhanced specificity for structures with high cellularity (strong Nissl staining) when both PGSE and OGSE data were included in the inputs than PGSE only. (C) The distribution of randomly selected 3 \u00d7 3 MRI patches in the network\u2019s 2D feature spaces of MRH-Nissl defined using t-distributed stochastic neighbor embedding (t-SNE) analyses. Green and orange dots correspond to regions with high and low cellularity, respectively, and gray dots represent patches on the brain surface. (D) Representative signal profiles from different groups in C. (E) Relative contributions of PGSE and three OGSE diffusion MRI datasets (F) Representative MRH-Nissl results from sas4-/-p53-/- and control mouse brains compared with Nissl-stained sections. The location of the cortical heterotopia, consists of undifferentiated neurons, is indicated by the dashed lines in the mutant mouse brain image.\n\n## Discussion\n\nThe present study focused on inferring maps of key cellular structures in the mouse brain from multi-contrast MRI data. Previous works on this problem include: new MRI contrasts that capture specific aspects of cellular structures of interest (Stikov et al., 2015; Veraart et al., 2020); carefully constructed tissue models for MR signals (Jelescu and Budde, 2017); statistical methods to extract relevant information from multi-contrast MRI (Mangeat et al., 2015); and techniques to register histology and MRI data (Tward et al., 2020; Xiong et al., 2018) for validation (Schilling et al., 2018; Stolp et al., 2018). Here, we built on these efforts by demonstrating that deep learning networks trained by co-registered histological and MRI data can improve our ability to detect target cellular structures.\n\nPrevious studies on the relationship between histology and MRI signals focused on correlating histological and MRI markers as co-registered MRI and histological data as well as realistic tissue models are scarce (Jelescu and Budde, 2017; Novikov et al., 2018). Adopting similar approaches described by recent reports (Christiansen et al., 2018; Ounkomol et al., 2018) on using deep learning to generate histological labels from unlabeled light microscopy images, we demonstrate a proof of concept of using deep learning to solve the inverse problem of inferring histological information from MRI signals. Even though the resolution of the virtual histology is inevitably limited by the resolution of the input MRI data (~100 \u03bcm/voxel) (Figure 3\u2014figure supplement 4), the presented approach has many potential applications in biomedical research involving MRI. It can enhance our ability to accurately map selected cellular structures and their pathology in mouse models of diseases using non-invasive MRI, with contrasts familiar to neurobiologists. Although the networks cannot be applied to human MRI directly due to vast differences in tissue properties and scanning protocols, understanding how the networks improve specificity based on given MRI contrasts will guide the development of optimal imaging strategy in the clinics. In addition, the co-registered histology and MRI dataset provide a testbed for developing new MRI strategies. As it is relatively easy to normalize any new MRI data to our 3D multi-contrast MRI data and co-registered histology, the sensitivity and specificity of a new MRI contrast to target cellular structures can be evaluated. With quantitative information on the contributions of different MR contrasts, it is now straightforward to design accurate and efficient multi-contrast MRI strategy.\n\nPerfect co-registration between MRI and histology is highly challenging, as conventional tissue preparations inevitably introduce tissue deformation and damages. In addition, differences in tissue contrasts between histology and MRI also limit the accuracy of registration. Serial two-photon tomography used by the Allen Institute and similar methods allow 3D uniform sampling of the entire brain, which facilitate registration using established registration pipelines (Kuan et al., 2015). We expect recent advances in tissue clearing techniques can assist in this aspect once issues such as tissue shrinkage and penetration of antibodies for more target cellular structures are resolved. Remaining mismatches can be accommodated by choosing the appropriate patch size in the network as shown in our results and earlier studies (Rivenson et al., 2019).\n\nThere are several directions to further improve our work. First, it is important to curate a training dataset that covers a broad spectrum of normal and pathological conditions and, ideally, with MRI and histology data acquired from the same animal. The data included in this study were adult mouse brain and most white matter structures are myelinated. As a result, the network to predict axons place a substantial weight on MRI contrasts that reflect myelin content (e.g., MT). With the inclusion of unmyelinated embryonic or neonatal mouse brains, we anticipate that the contribution of myelin will be reduced. Inclusion of pathological examples, such as shiverer mouse brain data, for training will likely improve our ability to characterize pathological conditions. The result from the shiverer data, while demonstrating the usage of the tool, does not tell us whether it will work for cases with more complex pathology, which will require further investigation. Second, the CNNs constructed in this study involved several common building blocks of deep learning, and new advances on network architecture design (e.g., Goodfellow et al., 2014; Zhu et al., 2017) could further enhance the performance. While CNNs have been commonly treated as black boxes, several recently reported approaches, such as deep Taylor decomposition (Montavon et al., 2017) and Grad-CAM (Selvaraju et al., 2017), can help explain the inner working. Third, developing similar networks for in vivo MRI data and potential clinical application will require additional effort. The MRI data used in this study were collected from post-mortem mouse brain specimens, which are different from in vivo mouse brains due to death and chemical fixation. Differences in tissue properties between human and mouse brains also require additional steps. MRI parameters, either empirical or model based, may help to bridge this gap as they are translatable and less dependent on acquisition settings. As demonstrated in Figure 2, networks trained using well-selected MRI parameters can predict tissue histology with reasonable accuracy. Finally, deep learning cannot replace the good understanding of the physics involved in MRI contrasts and the development of new MRI contrast that targets specific cellular structures.\n\n## Materials and methods\n\n### Animals and ex vivo MRI\n\nAll animal experiments have been approved by the Institute Animal Care and Use Committee at New York University, Memorial Sloan Kettering Cancer Center, and Johns Hopkins University. Adult C57BL/6 mice (P60, n = 10, Charles River, Wilmington, MA), sas4-/-p53-/- (Insolera et al., 2014) and littermate controls (n = 4/4, P28), rag2-/- shiverer and littermate controls (n = 5/5, P50) were perfusion fixed with 4% paraformaldehyde (PFA) in PBS. The samples were preserved in 4% PFA for 24 hr before transferring to PBS. Ex vivo MRI of mouse brain specimens was performed on a horizontal 7 T MR scanner (Bruker Biospin, Billerica, MA) with a triple-axis gradient system. Images were acquired using a quadrature volume excitation coil (72 mm inner diameter) and a receive-only four-channel phased array cryogenic coil. The specimens were imaged with the skull intact and placed in a syringe filled with Fomblin (perfluorinated polyether, Solvay Specialty Polymers USA, LLC, Alpharetta, GA) to prevent tissue dehydration (Arefin et al., 2021). Three-dimensional diffusion MRI data were acquired using a modified 3D diffusion-weighted gradient- and spin-echo sequence (Wu et al., 2013) with the following parameters: echo time (TE)/repetition time (TR) = 30/400 ms; two signal averages; field of view (FOV) = 12.8 mm \u00d7 10 mm \u00d7 18 mm, resolution = 0.1 mm \u00d7 0.1 mm \u00d7 0.1 mm; two non-DWIs (b0s); 30 diffusion encoding directions; and b = 2000 and 5000 s/mm2, total 60 diffusion-weighted images (DWIs). Co-registered T2W and MT MRI data were acquired using a rapid acquisition with relaxation enhancement sequence with the same FOV, resolution, and signal averages as the diffusion MRI acquisition and the following parameters: T2: TE/TR = 50/3000 ms; MT: TE/TR = 8/800 ms, one baseline non-MT-weighted (M0) image and one MT-weighted (Mt) images with offset frequency/power = \u20133 KHz/20 \u03bcT were acquired. The total imaging time was approximately 12 hr for each specimen. For the sas4-/-p53-/- and littermate controls (n = 4/4, P28), PGSE and OGSE diffusion MRI data were acquired with the protocol described in Aggarwal et al., 2012 and a spatial resolution of 0.1 mm \u00d7 0.1 mm \u00d7 0.1 mm. All 3D MRI data were interpolated to a numerical resolution of 0.06 mm \u00d7 0.06 mm \u00d7 0.06 mm to match the resolution of our MRI-based atlas (Chuang et al., 2011).\n\nMTR images were generated as MTR=(M0\u2212Mt)/M0. From the diffusion MRI data, diffusion tensors were calculated using the log-linear fitting method implemented in MRtrix (http://www.mrtrix.org) at each voxel, and maps of mean and radial diffusivities and FA were generated, The mouse brain images were spatial normalized to an ex vivo MRI template (Chuang et al., 2011) using the large deformation diffeomorphic metric mapping (LDDMM) method (Ceritoglu et al., 2009) implemented in the DiffeoMap software (https://www.mristudio.org). The template images had been normalized to the ARA using landmark-based image mapping and LDDMM.\n\n### Histological data\n\nFrom the Allen moue brain atlas, single subject 3D Nissl data and 3D AF data (n = 100), which were already registered to the ARA space, were down-sampled to 0.06 mm isotropic resolution. The sas4-/-p53-/-, rag2-/- shiverer and control mouse brains were cryopreserved and cut into 30 \u03bcm coronal sections and processed for Nissl and immunofluorescence. For immunofluorescence, sections were first washed with PBS, blocked with 5% bovine serum albumin, and incubated overnight at 4\u00b0C with primary antibodies: anti-MBP (AbD Serotec, MCA4095). Sections were rinsed with PBS and incubated with Alexa Fluor secondary antibodies (Invitrogen) cover-slipped with anti-fade mounting medium containing DAPI (Vectrolabs, H-1200). Images were obtained and tile-stitched using an inverted microscope (Zeiss, Axio Observer.Z1) equipped with a motorized table.\n\n### Registration of MRI and histological data\n\nGroup average 3D MRI data in our previously published mouse brain atlas (Chuang et al., 2011) were first spatially normalized to the ARA space. Briefly, 14 major brain structures (e.g., cortex, hippocampus, striatum) in the atlas MRI data were manually segmented following the structural delineations in the ARA. Voxels that belong to these structures in the MRI and average 3D AF data in the ARA (down-sampled to 0.06 mm isotropic resolution) were assigned distinct intensity values, and a diffeomorphic mapping between the discretized atlas MRI and ARA AF data was computed using LDDMM. The mapping was then applied to the original atlas MRI data to generate an MRI template registered to the ARA space. Using dual-channel LDDMM (Ceritoglu et al., 2009) based on tissue contrasts in the average DWI and FA images and the MRI template, the 3D MRI data acquired in this study were accurately normalized to the ARA space.\n\nNF- and MBP-stained images of the C57BL/6 mouse brain were downloaded from the ARA reference dataset. Images with major artifacts or tissue loss were excluded. Small tissue tearing and staining artifacts were removed using the inpainting feature implemented in the photoshop heading brush tool (https://www.adobe.com), and dark voxels in the ventricles were replaced by the average intensity values of the cortex to match MRI data (Figure 3\u2014figure supplement 1). The repaired images were down-sampled to an in-plane resolution of 0.06 mm/voxel. For each 2D histological image, the best-matching MRI section in the MRI template was identified, and a coarse-to-fine alignment from histology to MRI using affine transform and landmark-based image warping tool in ImageJ (https://imageJ.nete/BUnwarpJ). The aligned 2D sections were then assembled into a 3D volume and mapped to the MRI template using LDDMM (between NF/MBP and FA) to further improve the quality of registration.\n\n### Evaluation of image resolution\n\nThe resolution of MRI, histological images, were evaluated using a parameter-free decorrelation analysis method (Descloux et al., 2019), without the initial edge apodization step.\n\n### Design and training of the MRH networks\n\nMRH networks are constructed using a CNN model with convolutions from the MRI to histology space. The networks were implemented using the deep learning toolbox in Matlab (https://www.mathworks.com) using the directed acyclic graph architecture. To accommodate residual mismatches between MRI and histological data, the network consistently applied convolutional layers until the end layer that computed the distance loss to the target histology. The number of layers and neurons in each layer was determined empirically to balance performance and the risk of overfitting. We chose 64 hidden layers (60 layers in 30 residual blocks plus four layers at the input and output ends), each with 64 neurons, which applied a filter size of 3 \u00d7 3 and included a rectified linear unit (ReLu). Most of the hidden layers utilized skip connections to jump over layers to avoid vanishing gradients (He et al., 2016). The network was initialized with orthogonal random weights and was trained using a stochastic gradient descent optimizer to minimize voxel-level absolute distance loss (Figure 1\u2014figure supplement 2A-B). Several choices of mini batch sizes were tested and the size was set to 128 to attain a balance between training speed and performance. Stochastic gradient descent with a momentum beta of 0.9 was used for stochastic optimization, with an initial learning rate of 0.1 and a learning rate factor of 0.1. During training, the learning rate was reduced by a factor of 0.1 every 10 epochs. Maximum epoch number was set at 60, but early stopping was employed if the validation set loss did not decrease in five epochs. During hyper-parameter tuning, 1000 3 \u00d7 3 patches were randomly held out to as the validation dataset and isolated from the training dataset. The weights from the epoch with the lowest validation loss were selected for final testing.\n\nWhen retraining the MRH-AF neural network using MBP/NF data, we refined the last three layers\u2019 parameters while leaving the parameters in other layers untouched in the Matlab deep learning toolbox using the directed acyclic graph architecture. The hyperparameters and training patches are the same as MRH-AF. Specifically, the network training initial learning rate was 0.0001, while learning rate factor was 0.1 to accomplish transfer learning. Using the stochastic gradient descent optimizer, our transfer learning converged as shown in Figure 1\u2014figure supplement 2C-D.\n\n### t-SNE analysis\n\nThe t-SNE cluster was performed using the Matlab t-SNE analysis function on the network prediction based on values in 2000 randomly selected 3 \u00d7 3 patches in the mouse brain MRI data.\n\n### Contribution analysis\n\nFollowing the perturbation method described by Olden et al., 2004, Rician noises were added to one input MR image to the pre-trained MRH networks, and RMSE between the noise contaminated outputs and the original output without noise was recorded. By repeating this procedure for all MR images, the sensitivities of MRH to each of the 67 input MR image or their contributions were obtained.\n\n### Evaluate the effect of voxel mismatches\n\nIn the experiment that used the DWI and FA data of the mouse brains to train an MRH network, simulated voxel displacements were used to deform the FA data (target), which were perfectly co-registered to the DWI data (inputs), to test the effect of voxel mismatches between input and target data on network prediction. Gaussian random displacement fields were generated for pixels on a 1 mm by 1 mm grid in the coronal plane and propagated to other voxels by B-spline interpolations. The displacement fields followed a Chi distribution with 2 degrees of freedom and were adjusted to match the level of voxel mismatches observed between MRI and histological data.\n\n### Statistical analysis\n\nStatistical significance was determined using unpaired Student\u2019s t-test with threshold set at 0.05. All statistical tests were performed with Prism (GraphPad). All values in bar graphs indicate mean + standard deviation.\n",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "559af032-a428-4149-a219-8bc18f229c00",
+      "submission_id": "cbb776a9-9f97-418f-848c-4d6e53781ef0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Saad Jbabdi, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72331.sa0](https://doi.org/10.7554/eLife.72331.sa0)\n\nThis paper demonstrates how MRI can be used to mimic histological measures. This is something that the field of MRI has dubbed virtual histology (or MR-histology) for a while, but this paper is the first convincing demonstration that it can be achieved.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Saad Jbabdi, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72331.sa1](https://doi.org/10.7554/eLife.72331.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Virtual Mouse Brain Histology from Multi-contrast MRI via Deep Learning\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, including Saad Jbabdi as Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Floris de Lange as the Senior Editor.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) As per reviewer #2, please include some quantitative evaluations of the model predictions in the cases where MRI and histology are available in the same animals (e.g. in the mutant mice).\n\n2) Please make sure to address reviewer #1's points on the added value of a deep net , the concerns on the generalisability of the method, and the validity of the noise contamination experiments.\n\nReviewer #2 (Recommendations for the authors):\n\nI would advocate two additional sets of experiments; in the simple form, align the existing histology maps (from, for example, the shiverer mice) to the MRIs from the same animals to provide direct quantifiable estimates of where the predicted histology slices deviate from the actual histology slices.\n\nMore broadly, this paper would greatly benefit from an enhanced training set consisting of MRI and histology from the same animals co-aligned. This would both provide better training and, importantly, better evaluation of the trained maps.\n",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "68ee837c-9938-458b-b91a-e7132cee296b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C1",
+      "claim": "1H MRI maps brain structure and function non-invasively through versatile contrasts that exploit inhomogeneity in tissue micro-environments.",
+      "claim_type": "EXPLICIT",
+      "source": "1H MRI maps brain structure and function non-invasively through versatile contrasts that exploit inhomogeneity in tissue micro-environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the general capabilities of MRI based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "cf2cfd23-d045-4220-9ca3-9359722c1782",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C2",
+      "claim": "Inferring histopathological information from magnetic resonance imaging (MRI) findings remains challenging due to absence of direct links between MRI signals and cellular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring histopathological information from magnetic resonance imaging (MRI) findings, however, remains challenging due to absence of direct links between MRI signals and cellular structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known limitation in the field, representing established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "c07b2ed4-28c4-4e68-adc7-9c95016864b7",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C3",
+      "claim": "Deep convolutional neural networks, developed using co-registered multi-contrast MRI and histological data of the mouse brain, can estimate histological staining intensity directly from MRI signals at each voxel.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that deep convolutional neural networks, developed using co-registered multi-contrast MRI and histological data of the mouse brain, can estimate histological staining intensity directly from MRI signals at each voxel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "da23af24-d6e5-4702-9400-7e0732e8ffc4",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C4",
+      "claim": "The deep learning results provide three-dimensional maps of axons and myelin with tissue contrasts that closely mimic target histology.",
+      "claim_type": "EXPLICIT",
+      "source": "The results provide three-dimensional maps of axons and myelin with tissue contrasts that closely mimic target histology and enhanced sensitivity and specificity compared to conventional MRI markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by visual comparisons and quantitative analyses shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "168757cd-7d89-424b-80bf-00b2a05f7bf4",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C5",
+      "claim": "The deep learning results show enhanced sensitivity and specificity compared to conventional MRI markers.",
+      "claim_type": "EXPLICIT",
+      "source": "The results provide three-dimensional maps of axons and myelin with tissue contrasts that closely mimic target histology and enhanced sensitivity and specificity compared to conventional MRI markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ROC analyses shown in Figures 1F, 2F, 3C, and other quantitative comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "35af1567-599a-40b4-b0d6-07ae52c04e10",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C6",
+      "claim": "The relative contribution of each MRI contrast within the networks can be used to optimize multi-contrast MRI acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relative contribution of each MRI contrast within the networks can be used to optimize multi-contrast MRI acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the perturbation analysis in Figure 2C-D showing that imaging time can be reduced to 57% while maintaining comparable quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "095a1e43-4c8e-46e8-aef0-b5893742d50c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C7",
+      "claim": "MRI provides unparalleled insight into brain structures and functions at the macroscopic level.",
+      "claim_type": "EXPLICIT",
+      "source": "While MRI provides unparalleled insight into brain structures and functions at the macroscopic level (Lerch et al., 2017), inferring the spatial organization of microscopic structures (e.g., axons and myelin) and their integrity from MR signals remains a challenging inverse problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lerch et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "f20f8ff9-fc95-412d-b84a-7d55db695ecb",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C8",
+      "claim": "Inferring the spatial organization of microscopic structures (e.g., axons and myelin) and their integrity from MR signals remains a challenging inverse problem.",
+      "claim_type": "EXPLICIT",
+      "source": "While MRI provides unparalleled insight into brain structures and functions at the macroscopic level (Lerch et al., 2017), inferring the spatial organization of microscopic structures (e.g., axons and myelin) and their integrity from MR signals remains a challenging inverse problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about limitations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "57f2e383-206b-4261-9899-0b038aa101ad",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C9",
+      "claim": "Without a thorough understanding of the link between MR signals and specific cellular structures, uncertainty often arises when determining the exact pathological events and their severities.",
+      "claim_type": "EXPLICIT",
+      "source": "Without a thorough understanding of the link between MR signals and specific cellular structures, uncertainty often arises when determining the exact pathological events and their severities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of the lack of specificity in MRI.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e06ef177-eb66-4c74-bb3b-1605c4858f56",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C10",
+      "claim": "The lack of specificity hinders direct translation of MRI findings into histopathology and limits its diagnostic value.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of specificity hinders direct translation of MRI findings into histopathology and limits its diagnostic value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the impact of MRI limitations on clinical applications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "17ecc53d-3843-4e00-991d-df139c2c4d89",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C11",
+      "claim": "Recent progress in multi-modal MRI promises enhanced specificity by integrating multiple MR contrasts that target distinct aspects of a cellular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent progress in multi-modal MRI promises enhanced specificity by integrating multiple MR contrasts that target distinct aspects of a cellular structure (Mangeat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mangeat et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "441bdd4a-c4fa-4b50-9710-3f1bfa97ea94",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C12",
+      "claim": "Magnetization transfer (MT), T2, and diffusion MRI are sensitive to the physical and chemical compositions of myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, magnetization transfer (MT), T2, and diffusion MRI are sensitive to the physical and chemical compositions of myelin, and combining them can lead to more specific myelin measurements than individual contrast (Cercignani and Bouyagoub, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cercignani and Bouyagoub, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0e43f23d-6b47-4b5f-9dc9-3e91d8c3ef5e",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C13",
+      "claim": "Combining MT, T2, and diffusion MRI can lead to more specific myelin measurements than individual contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, magnetization transfer (MT), T2, and diffusion MRI are sensitive to the physical and chemical compositions of myelin, and combining them can lead to more specific myelin measurements than individual contrast (Cercignani and Bouyagoub, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cercignani and Bouyagoub, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "708432fa-b9b3-4f51-81ae-ce119aaf984e",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C14",
+      "claim": "Progress in multi-modal MRI has been hindered by the lack of realistic tissue models for inference and ground truth histological data for validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress in this front, however, has been hindered by the lack of realistic tissue models for inference and ground truth histological data for validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about limitations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0879a9cd-3500-44e2-9a88-d2dec7889b4b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C15",
+      "claim": "Deep convolutional neural networks can bypass obstacles in developing realistic tissue models and obtaining ground truth histological data.",
+      "claim_type": "IMPLICIT",
+      "source": "The objective of this study is to test whether deep convolutional neural networks (CNNs), developed using co-registered histology and MRI data, can bypass the above-mentioned obstacles and enhance our ability to map key cellular structures from MR signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis being tested in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9e7c8c42-3b24-44dd-8c8f-c56fc02558a2",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C16",
+      "claim": "The deep learning framework has certain advantages over existing modeling approaches because it is data-driven and not limited by particular models and associated assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "With its capability to bridge data acquired with different modalities (Christiansen et al., 2018; Leynes et al., 2018; Ounkomol et al., 2018), the deep learning framework (LeCun et al., 2015) has certain advantages over existing modeling approaches, as it is data-driven and not limited by particular models and associated assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple papers on deep learning applications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9504f976-62ac-4c44-8bb7-ab9ff5a60f56",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C17",
+      "claim": "MR signals are the ensemble average of all spins within each voxel.",
+      "claim_type": "EXPLICIT",
+      "source": "As MR signals are the ensemble average of all spins within each voxel, a typical set of three-dimensional (3D) MRI data, with millions of voxels, thus provides ample instances to train deep CNNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the physics of MRI.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0ca9eebc-9231-4a8b-b7dc-d1bd76138b9b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C18",
+      "claim": "A typical set of three-dimensional (3D) MRI data, with millions of voxels, provides ample instances to train deep CNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "As MR signals are the ensemble average of all spins within each voxel, a typical set of three-dimensional (3D) MRI data, with millions of voxels, thus provides ample instances to train deep CNNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of MRI data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "861a060f-e8b3-494f-b187-73a9b00018aa",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C19",
+      "claim": "Through training, the networks can potentially reconstruct the link between MR signals and cellular structures in co-registered histology and translate multi-contrast MRI data into maps that mimic histology.",
+      "claim_type": "EXPLICIT",
+      "source": "Through training, the networks can potentially reconstruct the link between MR signals and cellular structures in co-registered histology and translate multi-contrast MRI data into maps that mimic histology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis of the study, which is then tested with experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a21d20fb-f903-4b72-8800-5010b65780de",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C20",
+      "claim": "The deep learning approach offers enhanced specificity for detecting axons and myelin compared to existing MRI-based markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that this approach offers enhanced specificity for detecting axons and myelin compared to existing MRI-based markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ROC analyses in Figure 3C showing higher AUC values for MRH-NF and MRH-MBP compared to conventional markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "220a30d8-b54e-45eb-9f95-7e4294f6850b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C21",
+      "claim": "Adding perturbations to the networks allows probing the relative contribution of individual MR contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, adding perturbations to the networks allows us to probe the relative contribution of individual MR contrast, which can be used to optimize multi-contrast MRI strategy and evaluate novel imaging contrasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the perturbation analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1a4d6b8c-28a9-4631-98b4-cd9c01fdbf85",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C22",
+      "claim": "The relative contribution analysis can be used to optimize multi-contrast MRI strategy and evaluate novel imaging contrasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, adding perturbations to the networks allows us to probe the relative contribution of individual MR contrast, which can be used to optimize multi-contrast MRI strategy and evaluate novel imaging contrasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by showing that 38 of 67 images can maintain comparable quality while reducing imaging time to 57%.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2a80a8ff-f008-4d05-bc2c-954b8babe1ed",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C23",
+      "claim": "MRI dataset from ex vivo C57BL/6 mouse brain (P60, n = 6) each contained 67 3D MR (T2, MT, and diffusion) images.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI dataset from ex vivo C57BL/6 mouse brain (P60, n = 6), each contained 67 3D MR (T2, MT, and diffusion) images, were spatially normalized to the Allen Reference Atlas (ARA) (Ng et al., 2009; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3ef954d1-af5e-461e-bfbc-0db04b3dca19",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C24",
+      "claim": "100 AF datasets from the Allen Mouse Brain Connectivity Atlas (AMBCA) with minimal amounts of tracer signals in the forebrain were selected.",
+      "claim_type": "EXPLICIT",
+      "source": "We then selected 100 AF datasets from the Allen Mouse Brain Connectivity Atlas (AMBCA) (Oh et al., 2014) with minimal amounts of tracer signals in the forebrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0e2dbb8d-0e1d-446d-a371-4e14558ef862",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C25",
+      "claim": "The contrast in the AF data is not specific to a particular structure, but a majority of hypo-intense regions co-localized with myelinated white matter tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "The contrast in the AF data is not specific to a particular structure, but a majority of hypo-intense regions co-localized with myelinated white matter tracts (Christensen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Christensen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "70517454-80c1-412c-ae8d-fca9b8c70722",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C26",
+      "claim": "The 3D AF data had already been normalized to the ARA and were down-sampled to the resolution of the MRI data (0.06 mm isotropic).",
+      "claim_type": "EXPLICIT",
+      "source": "These 3D AF data had already been normalized to the ARA and were down-sampled to the resolution of the MRI data (0.06 mm isotropic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "89d11fc6-71c4-43c9-b3a4-facbae9c4d16",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C27",
+      "claim": "Mismatches between the MRI and AF images were mostly within one to two voxels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mismatches between the MRI and AF images were mostly within one to two voxels (Figure 1\u2014figure supplement 1A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the distribution analysis shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b162f0fa-0663-4b37-898a-0a930dcc6431",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C28",
+      "claim": "The deep CNN named MRH-AF contained 30 residual blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "A deep CNN, named MRH-AF, which contained 30 residual blocks, was trained using multiple 3 \u00d7 3 patches from the forebrain region of each MRI data (40,000 patches, N = 6) as inputs and their corresponding patches in the co-registered AF data as targets (Figure 1B) (details on the network and training can be found in the Materials and methods section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the network architecture used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "f4444ca5-8adb-457b-82b8-5c3435150e56",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C29",
+      "claim": "The MRH-AF network was trained using 40,000 3 \u00d7 3 patches from the forebrain region of each MRI data (N = 6) as inputs and their corresponding patches in the co-registered AF data as targets.",
+      "claim_type": "EXPLICIT",
+      "source": "A deep CNN, named MRH-AF, which contained 30 residual blocks, was trained using multiple 3 \u00d7 3 patches from the forebrain region of each MRI data (40,000 patches, N = 6) as inputs and their corresponding patches in the co-registered AF data as targets (Figure 1B) (details on the network and training can be found in the Materials and methods section).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "49c7742e-a3e8-460b-bd2d-5518adca6f55",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C30",
+      "claim": "The 3 \u00d7 3 patch size was shown to accommodate residual mismatches between MRI and AF data.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3 \u00d7 3 patch size was shown to accommodate residual mismatches between MRI and AF data (Figure 1\u2014figure supplement 1F-H), and we chose such a small patch size instead of the entire image for training because we aimed to define the local relationship between cellular structures within an MRI voxel and corresponding ensemble-averaged MRI signals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 1\u2014figure supplement 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b2b016b0-5f25-4a7f-9650-41ddcd13c62b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C31",
+      "claim": "The MRH-AF results trained with 60-subject AF data as training targets showed good agreement with the reference.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-AF results trained with 60-subject AF data as training targets (i) showed good agreement with the reference (Figure 1D) and strong voxel-wise signal correlation (R2 = 0.71, p < 0.001, Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparison in Figure 1D and quantitative correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "6e64c70d-8a43-46f5-8a34-8f9aa4a99a98",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C32",
+      "claim": "The MRH-AF results trained with 60-subject AF data showed strong voxel-wise signal correlation (R2 = 0.71, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-AF results trained with 60-subject AF data as training targets (i) showed good agreement with the reference (Figure 1D) and strong voxel-wise signal correlation (R2 = 0.71, p < 0.001, Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement of correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5268d5d5-8d4c-481b-9ca8-56f785519136",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C33",
+      "claim": "The MRH-AFs trained with 60- and 6-subject AF data showed high specificity with areas under curve (AUCs) greater than 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-AFs trained with 60- and 6-subject AF data (i and ii) showed high specificity with areas under curve (AUCs) greater than 0.94, and the MRH-AF trained with 1-subject data (iii) had a slightly reduced average AUC of 0.937 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ROC analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "226efb62-539f-48ba-8cc7-48392d60bb1a",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C34",
+      "claim": "The MRH-AF trained with 1-subject data had a slightly reduced average AUC of 0.937.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-AFs trained with 60- and 6-subject AF data (i and ii) showed high specificity with areas under curve (AUCs) greater than 0.94, and the MRH-AF trained with 1-subject data (iii) had a slightly reduced average AUC of 0.937 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ROC analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "4105b576-ec13-4667-9290-74260d82e1b9",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C35",
+      "claim": "Further reducing the size of training data resulted in declined performances.",
+      "claim_type": "EXPLICIT",
+      "source": "Further reducing the size of training data (iv and v) resulted in declined performances (Figure 1D\u2013F), emphasizing the need for sufficient training data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the quantitative analyses shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "ad656493-7816-4bbc-b16b-df403785c5de",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C36",
+      "claim": "Patches in the MRI data that were assigned with hypo-intense AF signals mostly clustered at the lower right corner in the t-SNE feature space, well separated from patches that were assigned with hyper-intense AF signals or near the brain surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Patches in the MRI data that were assigned with hypo-intense AF signals (orange) mostly clustered at the lower right corner, well separated from patches that were assigned with hyper-intense AF signals (turquoise) or near the brain surface (gray).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the t-SNE analysis in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "22b6d9f6-cef0-4a08-ac22-22b75bc4f7f9",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C37",
+      "claim": "Switching the network inputs to modified 3 \u00d7 3 patches, in which all voxels were assigned the same MR signals as the center voxel, resulted in no apparent loss in sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching the network inputs to modified 3 \u00d7 3 patches, in which all voxels were assigned the same MR signals as the center voxel, resulted in no apparent loss in sensitivity and specificity and still produced strong voxel-wise signal correlation with the reference AF maps (R2 = 0.68, p < 0.001, Figure 1\u2014figure supplement 3), suggesting that MRH-AF primarily relied on multi-contrast MR signals, not patterns within patches, to generate its predictions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7381ed5e-384a-4c1d-b8b2-0652806c0c1d",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C38",
+      "claim": "MRH-AF primarily relied on multi-contrast MR signals, not patterns within patches, to generate its predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching the network inputs to modified 3 \u00d7 3 patches, in which all voxels were assigned the same MR signals as the center voxel, resulted in no apparent loss in sensitivity and specificity and still produced strong voxel-wise signal correlation with the reference AF maps (R2 = 0.68, p < 0.001, Figure 1\u2014figure supplement 3), suggesting that MRH-AF primarily relied on multi-contrast MR signals, not patterns within patches, to generate its predictions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experiment with modified patches showing similar performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "acae77bf-d38a-4d72-9824-93b48042f7e7",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C39",
+      "claim": "Reducing the number of residual blocks from 30 to 10 resulted in a slight reduction in quality of the predicted AF map.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the number of residual blocks from 30 to 10 resulted in a slight reduction in quality of the predicted AF map (Figure 2A\u2013B) with significantly increased RMSEs but no significant change in SSIM (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b63c3da1-f581-44f1-b1f6-9e7f6d70ef3a",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C40",
+      "claim": "MRH-AF outperformed first- and second-order polynomial fittings.",
+      "claim_type": "EXPLICIT",
+      "source": "MRH-AF outperformed first- and second-order polynomial fittings (Figure 2A\u2013B, case i vs. case iv, case iii vs. cases v and vi), potentially due to the network's ability to accommodate remaining mismatch between AF and MRI data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual and quantitative comparisons in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a7b5c988-0a31-4d94-9ee9-632271c353b8",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C41",
+      "claim": "Replacing the 67 raw data with five commonly used MR parameter maps (T2, MTR, FA, MD, and MK) as inputs to train the network produced less accurate AF predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing the 67 rawdata with five commonly used MR parameter maps (T2, MTR, FA, MD, and MK) as inputs to train the network produced less accurate AF predictions, for example, the loss of contrasts in the thalamus (Figure 2A) as well as significantly increased RMSEs and decreased SSIMs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3754e510-e6e8-4954-85ff-9074f995adf1",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C42",
+      "claim": "The five MR parameters (T2, MTR, FA, MD, and MK), although reflecting key tissue properties, do not contain all the information available from the 67 raw data.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the five MR parameters, although reflecting key tissue properties, do not contain all the information available from the 67 rawdata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that using 5 parameters produces less accurate results than using 67 raw images.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "adf08be5-b119-43e3-afa9-d4594a4fbd71",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C43",
+      "claim": "Using empirical or model-based MR parameters as inputs to the network has the advantage of broader applicability without requiring particular acquisition protocols and instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using empirical or model-based MR parameters as inputs to the network has the advantage of broader applicability without requiring particular acquisition protocols and instruments, and a carefully selected and comprehensive set of such parameters will likely improve the predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential advantages of using MR parameters.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "efe11e30-bd79-43d0-8605-bd06f6a1674a",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C44",
+      "claim": "Adding noises to a few images (e.g., T2 and MT images) produced noticeably larger effects than adding a comparable level of noises to other images.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that adding noises to a few images (e.g., T2 and MT images) produced noticeably larger effects, in terms of output image quality and the ability of the network to separate different tissue types, than adding a comparable level of noises to other images (Figure 2\u2014figure supplement 1), potentially due to redundant information shared among the 60 rawdata in the diffusion MRI dataset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the perturbation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "ef39d184-d39a-4e03-b582-47539d783b9b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C45",
+      "claim": "The top 4, 17, and 38 images ranked based on their contributions accounted for 28%, 50%, and 75% of the total contribution to the final result, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 4, 17, and 38 images ranked based on their contributions accounted for 28%, 50%, and 75% of the total contribution to the final result, respectively (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the cumulative contribution analysis in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "f4522037-94e5-4a0e-862a-3e95062a1eca",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C46",
+      "claim": "Results from training the network with the top 38 MR images as inputs showed comparable visual quality and diagnostic power as the results based on the full dataset, but only required 57% the imaging time.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from training the network with the top 38 MR images as inputs showed comparable visual quality (Figure 2D\u2013E) and diagnostic power (Figure 2F) as the results based on the full dataset, but only required 57% the imaging time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparisons shown in Figure 2D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1261d80e-5682-44ec-b803-6033fcdbe101",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C47",
+      "claim": "Serial histological sections immuno-stained for neurofilament (NF) and myelin basic protein (MBP) are commonly used markers for axons and myelin.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we trained our network using serial histological sections immuno-stained for neurofilament (NF) and myelin basic protein (MBP), two commonly used markers for axons and myelin, from the Allen mouse brain atlas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "8fec6c8f-349e-45f9-88f4-e9849c6fc32f",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C48",
+      "claim": "Transfer learning strategy was adopted due to limited histological images stained for myelin and axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to limited histological images stained for myelin and axons, we adopted the transfer learning strategy (Weiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach taken in the study, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e1c32ef1-81f3-4193-9fb0-090d81837a96",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C49",
+      "claim": "Using the MRH-AF network as a starting point, most of its network layers were fixed while leaving the last three convolutional layers as trainable with MBP and NF-stained histological images.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the MRH-AF network as a starting point, we fixed most of its network layers while leaving the last three convolutional layers as trainable with MBP and NF-stained histological images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transfer learning procedure used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b4b6d90f-010d-40f5-bff4-fd9270539028",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C50",
+      "claim": "The MRH results showed closer visual congruence with the histological references than commonly used MRI-based markers for axons (fractional anisotropy [FA]) and myelin (magnetization transfer ratio [MTR] and radial diffusivity [DR]).",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH results (Figure 3A) showed closer visual congruence with the histological references than commonly used MRI-based markers for axons (fractional anisotropy [FA]) and myelin (magnetization transfer ratio [MTR] and radial diffusivity [Song et al., 2002], DR) as well as linear fitting results using the five parameters as in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparisons in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0ae98b55-7943-4856-b472-08f0691fdcef",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C51",
+      "claim": "Even though MRH was trained using coronal sections, it can generate maps along other axes when applied to 3D MRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though MRH was trained using coronal sections, it can generate maps along other axes when applied to 3D MRI data (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 3B showing horizontal sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a025c2de-ec72-4c46-b5f6-f76c408dedf0",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C52",
+      "claim": "The MRH-NF/MBP results showed strong signal correlations with the reference data (R2 = 0.61/0.73, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-NF/MBP results also showed strong signal correlations with the reference data (R2 = 0.61/0.73, respectively, Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation analysis in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0dbcf83a-f35c-421a-84b5-aa82dcb8572e",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C53",
+      "claim": "ROC analyses demonstrate improved specificity of MRH-NF and MRH-MBP compared to any single MRI-based markers or 5-parameters linear fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "ROC analyses (Figure 3C) on detecting axon and myelin-rich structures demonstrate improved specificity compared to any single MRI-based markers or 5-parameters linear fitting, while t-SNE analyses visualize how the two networks separate the patches in MRI data that corresponded to NF- and MBP-rich structures from the rest (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ROC curves shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b41428d2-c858-4298-b0a4-d905ece3c113",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C54",
+      "claim": "In the cortex, MRH-NF and MTR showed similar contrasts and comparable specificities to axons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, MRH-NF and MTR showed similar contrasts and comparable specificities to axons (Figure 3E), while in the whole brain, MTR had a noticeable lower specificity than MRH-NF and FA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ROC analysis in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2b715cb1-d6c2-4dda-8689-7f02c6e495c3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C55",
+      "claim": "In the whole brain, MTR had a noticeable lower specificity than MRH-NF and FA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, MRH-NF and MTR showed similar contrasts and comparable specificities to axons (Figure 3E), while in the whole brain, MTR had a noticeable lower specificity than MRH-NF and FA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the ROC analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "dbcfd8bf-d72c-4c22-8c7c-354a3c87570b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C56",
+      "claim": "MRH-NF assigned additional weightings on MTR when processing cortical patches.",
+      "claim_type": "IMPLICIT",
+      "source": "In the cortex, MRH-NF and MTR showed similar contrasts and comparable specificities to axons (Figure 3E), while in the whole brain, MTR had a noticeable lower specificity than MRH-NF and FA (Figure 3C). This suggests that MRH-NF assigned additional weightings on MTR when processing cortical patches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that MRH-NF and MTR show similar performance in cortex but different performance in whole brain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a5fc39e0-cac2-42f5-9f81-d1d8b7ab6f98",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C57",
+      "claim": "In ROC analysis for voxels within the hippocampus, the curve of MRH-MBP closely followed the curve of DR at b = 5000 s/mm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in ROC analysis for voxels within the hippocampus, the curve of MRH-MBP closely followed the curve of DR at b = 5000 s/mm2, in a departure from the whole brain result (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ROC analysis in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9126c4d0-3a1c-4d43-885a-03a559bf1496",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C58",
+      "claim": "Visual inspections of the MRH-MBP results revealed a layer structure in the hippocampus, which was not obvious in the MTR map but visible in the radial diffusivity (DR) map at b = 5000 s/mm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspections of the MRH-MBP results revealed a layer structure in the hippocampus, which was not obvious in the MTR map but visible in the radial diffusivity (DR) map at b = 5000 s/mm2 (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3F with white arrows pointing to the layer structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3c8f022d-691c-40f2-9edb-a12cff3b0744",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C59",
+      "claim": "Relative contributions of T2-weighted (T2W) and MT signals were significantly higher in the cortex and hippocampus than in white matter regions for both MRH-NF and MRH-MBP.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative contributions of T2-weighted (T2W) and MT signals were significantly higher in the cortex and hippocampus than in white matter regions for both MRH-NF and MRH-MBP (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the bar graphs in Figure 3G with statistical significance indicated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "555728cb-3a6c-47a7-b4af-85031817199d",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C60",
+      "claim": "Applying the MRH-MBP network to MRI data from dysmyelinating shiverer and control mouse brains generated maps that resembled the MBP-stained histology.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the MRH-MBP network to MRI data, collected from dysmyelinating shiverer and control mouse brains (n = 5/5) and not included in training MRH-MBP, generated maps that resembled the MBP-stained histology (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the visual comparison in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3962e920-a623-4840-973d-ef76c649af18",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C61",
+      "claim": "In the corpus callosum, the MRH-MBP results showed similar contrasts between shiverer and control mouse brains as MTR.",
+      "claim_type": "EXPLICIT",
+      "source": "In the corpus callosum, the MRH-MBP results showed similar contrasts between shiverer and control moue brains as MTR (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantitative comparison in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2bd54cc5-2b91-4ea0-9f22-4197a88edd91",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C62",
+      "claim": "Voxel-wise correlation between MRH-MBP predictions and co-registered MBP signals from the shiverer and control mice showed a slightly stronger correlation than MTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Voxel-wise correlation between MRH-MBP predictions and co-registered MTR and MBP signals from the shiverer and control mice showed a slightly stronger correlation (Figure 4C) and small improvement in myelin specificity than MTR (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the correlation plot in Figure 4C (R2 = 0.91 vs. 0.81).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "67792857-5d7a-4213-a4ba-42cf3164ed0a",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C63",
+      "claim": "MRH-MBP showed small improvement in myelin specificity than MTR in shiverer and control mouse brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Voxel-wise correlation between MRH-MBP predictions and co-registered MTR and MBP signals from the shiverer and control mice showed a slightly stronger correlation (Figure 4C) and small improvement in myelin specificity than MTR (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ROC analysis in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2f9b6647-5825-4e6f-8034-ae54bf51d28b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C64",
+      "claim": "Previous studies suggest that oscillating gradient spin echo (OGSE) diffusion MRI can generate a contrast similar to Nissl staining in both normal and injured mouse brains.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate this, we used MRH to test whether cellularity in the mouse brain can be inferred from diffusion MRI signals, as our previous studies suggest that oscillating gradient spin echo (OGSE) (Does et al., 2003) diffusion MRI can generate a contrast similar to Nissl staining in both normal and injured mouse brains (Aggarwal et al., 2014; Aggarwal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies (Aggarwal et al., 2014; Aggarwal et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "718bc7e6-3173-45be-9045-085ed4124636",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C65",
+      "claim": "The network that utilized all OGSE and PGSE data as inputs generated maps with good agreement with the ground truth Nissl data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the testing regions, the network that utilized all OGSE and PGSE data as inputs generated maps with good agreement with the ground truth Nissl data (Figure 5A), showing higher sensitivity and specificity than PGSE (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the visual comparison in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "f99d3ce8-2161-466e-9f27-e8b127fc6579",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C66",
+      "claim": "The MRH-Nissl network showed higher sensitivity and specificity than PGSE alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In the testing regions, the network that utilized all OGSE and PGSE data as inputs generated maps with good agreement with the ground truth Nissl data (Figure 5A), showing higher sensitivity and specificity than PGSE (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the ROC analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "007c8959-d251-4f7f-96b2-5ae49d027a78",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C67",
+      "claim": "Signals in the high Nissl signal patches decreased as the oscillating frequency increased, whereas the other two types of patches showed no such pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative signal profiles from the three categories (Figure 5D) revealed that signals in the high Nissl signal patches decreased as the oscillating frequency increased, whereas the other two types of patches showed no such pattern.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the signal profiles in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "dfe85434-cf68-4dce-b24e-98cb119a7924",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C68",
+      "claim": "PGSE and OGSE data contribute equally to the MRH-Nissl network output.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis of contrast contribution showed that PGSE and OGSE data contribute equally (Figure 5E), indicating the importance of OGSE data in generating the target tissue contrast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the contribution analysis in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "4ed45802-5f25-44b3-92c1-319c35b47af4",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C69",
+      "claim": "The MRH-Nissl map of the sas4-/-p53-/- mouse brain, which contains a band of heterotopia consists of undifferentiated neurons, produced image contrasts that matched Nissl-stained histology.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRH-Nissl map of the sas4-/-p53-/- mouse brain, which contains a band of heterotopia consists of undifferentiated neurons (Insolera et al., 2014), produced image contrasts that matched Nissl-stained histology (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the comparison in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5ac5758c-b27b-4072-8776-040aeb817398",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C70",
+      "claim": "Previous works on inferring cellular structures from MRI include new MRI contrasts that capture specific aspects of cellular structures of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous works on this problem include: new MRI contrasts that capture specific aspects of cellular structures of interest (Stikov et al., 2015; Veraart et al., 2020); carefully constructed tissue models for MR signals (Jelescu and Budde, 2017); statistical methods to extract relevant information from multi-contrast MRI (Mangeat et al., 2015); and techniques to register histology and MRI data (Tward et al., 2020; Xiong et al., 2018) for validation (Schilling et al., 2018; Stolp et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a46d0024-1a08-4fde-8161-bdd3466fcf69",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C71",
+      "claim": "Previous studies on the relationship between histology and MRI signals focused on correlating histological and MRI markers as co-registered MRI and histological data as well as realistic tissue models are scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on the relationship between histology and MRI signals focused on correlating histological and MRI markers as co-registered MRI and histological data as well as realistic tissue models are scarce (Jelescu and Budde, 2017; Novikov et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "88c87b7c-0875-41b1-91b8-4070fdbbedf8",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C72",
+      "claim": "The resolution of the virtual histology is inevitably limited by the resolution of the input MRI data (~100 \u03bcm/voxel).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the resolution of the virtual histology is inevitably limited by the resolution of the input MRI data (~100 \u03bcm/voxel) (Figure 3\u2014figure supplement 4), the presented approach has many potential applications in biomedical research involving MRI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the resolution analysis in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "730ff959-aaae-47ab-9825-7eea86d29893",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C73",
+      "claim": "The presented approach can enhance our ability to accurately map selected cellular structures and their pathology in mouse models of diseases using non-invasive MRI, with contrasts familiar to neurobiologists.",
+      "claim_type": "EXPLICIT",
+      "source": "It can enhance our ability to accurately map selected cellular structures and their pathology in mouse models of diseases using non-invasive MRI, with contrasts familiar to neurobiologists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1b5d3771-9dad-4f55-9e8d-be8c9b3cf887",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C74",
+      "claim": "The networks cannot be applied to human MRI directly due to vast differences in tissue properties and scanning protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the networks cannot be applied to human MRI directly due to vast differences in tissue properties and scanning protocols, understanding how the networks improve specificity based on given MRI contrasts will guide the development of optimal imaging strategy in the clinics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the limitations of direct translation to human applications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0540f858-d12b-4a75-8a24-54226e32f584",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C75",
+      "claim": "Understanding how the networks improve specificity based on given MRI contrasts will guide the development of optimal imaging strategy in the clinics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the networks cannot be applied to human MRI directly due to vast differences in tissue properties and scanning protocols, understanding how the networks improve specificity based on given MRI contrasts will guide the development of optimal imaging strategy in the clinics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "10222685-517c-4207-bb20-d6cf4126e567",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C76",
+      "claim": "The co-registered histology and MRI dataset provide a testbed for developing new MRI strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the co-registered histology and MRI dataset provide a testbed for developing new MRI strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential uses of the dataset.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "b04b5b2b-c2a6-4316-bc5a-32071d9e0d70",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C77",
+      "claim": "It is relatively easy to normalize any new MRI data to the 3D multi-contrast MRI data and co-registered histology.",
+      "claim_type": "EXPLICIT",
+      "source": "As it is relatively easy to normalize any new MRI data to our 3D multi-contrast MRI data and co-registered histology, the sensitivity and specificity of a new MRI contrast to target cellular structures can be evaluated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the established registration methods used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0f35d75f-be47-4d69-85ee-b116fed2fcb5",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C78",
+      "claim": "With quantitative information on the contributions of different MR contrasts, it is now straightforward to design accurate and efficient multi-contrast MRI strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "With quantitative information on the contributions of different MR contrasts, it is now straightforward to design accurate and efficient multi-contrast MRI strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential applications of the contribution analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5119f717-b874-48e9-8fc4-a03d9c0a8753",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C79",
+      "claim": "Perfect co-registration between MRI and histology is highly challenging, as conventional tissue preparations inevitably introduce tissue deformation and damages.",
+      "claim_type": "EXPLICIT",
+      "source": "Perfect co-registration between MRI and histology is highly challenging, as conventional tissue preparations inevitably introduce tissue deformation and damages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations in histology-MRI registration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "42d9d466-fd23-44bf-812d-150bb7eef144",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C80",
+      "claim": "Differences in tissue contrasts between histology and MRI also limit the accuracy of registration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, differences in tissue contrasts between histology and MRI also limit the accuracy of registration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about limitations in histology-MRI registration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5da82029-8799-4379-834f-6a94fdcf33b6",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C81",
+      "claim": "Serial two-photon tomography used by the Allen Institute and similar methods allow 3D uniform sampling of the entire brain, which facilitate registration using established registration pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "Serial two-photon tomography used by the Allen Institute and similar methods allow 3D uniform sampling of the entire brain, which facilitate registration using established registration pipelines (Kuan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kuan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "ab726d46-1ae9-4a49-905e-a778b3a59293",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C82",
+      "claim": "Recent advances in tissue clearing techniques can assist in registration once issues such as tissue shrinkage and penetration of antibodies for more target cellular structures are resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect recent advances in tissue clearing techniques can assist in this aspect once issues such as tissue shrinkage and penetration of antibodies for more target cellular structures are resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "860c86fc-d7cc-4ed3-956a-806d737f867b",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C83",
+      "claim": "Remaining mismatches can be accommodated by choosing the appropriate patch size in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Remaining mismatches can be accommodated by choosing the appropriate patch size in the network as shown in our results and earlier studies (Rivenson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis in Figure 1\u2014figure supplement 1 and a citation to Rivenson et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "59ab9881-a19f-49a0-804c-e2ea5799192d",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C84",
+      "claim": "It is important to curate a training dataset that covers a broad spectrum of normal and pathological conditions and, ideally, with MRI and histology data acquired from the same animal.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is important to curate a training dataset that covers a broad spectrum of normal and pathological conditions and, ideally, with MRI and histology data acquired from the same animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "d77b64c3-aab9-4cba-becd-59eaddf112cb",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C85",
+      "claim": "The data included in this study were adult mouse brain and most white matter structures are myelinated.",
+      "claim_type": "EXPLICIT",
+      "source": "The data included in this study were adult mouse brain and most white matter structures are myelinated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristics of the training data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7338dee6-0ca9-415e-82f0-ec50803c7891",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C86",
+      "claim": "The network to predict axons place a substantial weight on MRI contrasts that reflect myelin content (e.g., MT).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the network to predict axons place a substantial weight on MRI contrasts that reflect myelin content (e.g., MT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the contribution analysis and the characteristics of the training data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1cbae8b4-6dce-446d-9ca6-f3e057ed23f6",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C87",
+      "claim": "With the inclusion of unmyelinated embryonic or neonatal mouse brains, the contribution of myelin will be reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "With the inclusion of unmyelinated embryonic or neonatal mouse brains, we anticipate that the contribution of myelin will be reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how the network would behave with different training data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "94e1bb4b-8058-463a-84a7-09deb1c3ee62",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C88",
+      "claim": "Inclusion of pathological examples, such as shiverer mouse brain data, for training will likely improve our ability to characterize pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Inclusion of pathological examples, such as shiverer mouse brain data, for training will likely improve our ability to characterize pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "348b9e40-4c62-4c56-8d28-4d86106514ad",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C89",
+      "claim": "The result from the shiverer data does not tell us whether it will work for cases with more complex pathology, which will require further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "The result from the shiverer data, while demonstrating the usage of the tool, does not tell us whether it will work for cases with more complex pathology, which will require further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9ccef510-c9a3-4c0f-a6cd-792070f3f435",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C90",
+      "claim": "New advances on network architecture design could further enhance the performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the CNNs constructed in this study involved several common building blocks of deep learning, and new advances on network architecture design (e.g., Goodfellow et al., 2014; Zhu et al., 2017) could further enhance the performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential improvements, with citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2b920399-72c9-4dad-9aaa-c54a840d62b3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C91",
+      "claim": "Several recently reported approaches, such as deep Taylor decomposition and Grad-CAM, can help explain the inner working of CNNs.",
+      "claim_type": "EXPLICIT",
+      "source": "While CNNs have been commonly treated as black boxes, several recently reported approaches, such as deep Taylor decomposition (Montavon et al., 2017) and Grad-CAM (Selvaraju et al., 2017), can help explain the inner working.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "77de61e0-a23d-42c3-b7e6-017b8761ecb3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C92",
+      "claim": "Developing similar networks for in vivo MRI data and potential clinical application will require additional effort.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, developing similar networks for in vivo MRI data and potential clinical application will require additional effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future work needed for clinical translation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "60060322-8082-4889-91aa-7bfa79847b66",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C93",
+      "claim": "The MRI data used in this study were collected from post-mortem mouse brain specimens, which are different from in vivo mouse brains due to death and chemical fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRI data used in this study were collected from post-mortem mouse brain specimens, which are different from in vivo mouse brains due to death and chemical fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "6ea9983d-f910-413c-9b51-affd90d43ad2",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C94",
+      "claim": "Differences in tissue properties between human and mouse brains also require additional steps for clinical translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in tissue properties between human and mouse brains also require additional steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about challenges in translating the method to humans.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7fd50215-bcf8-4dfd-8662-d2c39a34b5ff",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C95",
+      "claim": "MRI parameters, either empirical or model based, may help to bridge the gap between mouse and human applications as they are translatable and less dependent on acquisition settings.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI parameters, either empirical or model based, may help to bridge this gap as they are translatable and less dependent on acquisition settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential solutions for clinical translation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "c9f8c131-3461-4374-b253-22a9a26b570c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C96",
+      "claim": "Networks trained using well-selected MRI parameters can predict tissue histology with reasonable accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "As demonstrated in Figure 2, networks trained using well-selected MRI parameters can predict tissue histology with reasonable accuracy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "d05d086a-88cf-4188-bf55-5688220d8d6c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C97",
+      "claim": "Deep learning cannot replace the good understanding of the physics involved in MRI contrasts and the development of new MRI contrast that targets specific cellular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, deep learning cannot replace the good understanding of the physics involved in MRI contrasts and the development of new MRI contrast that targets specific cellular structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of deep learning approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0c49ee75-67e3-4fb4-8018-a1b916b24a86",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C98",
+      "claim": "All animal experiments have been approved by the Institute Animal Care and Use Committee at New York University, Memorial Sloan Kettering Cancer Center, and Johns Hopkins University.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments have been approved by the Institute Animal Care and Use Committee at New York University, Memorial Sloan Kettering Cancer Center, and Johns Hopkins University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "aa6b9272-34f3-41cd-93a9-1b84904ee638",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C99",
+      "claim": "Adult C57BL/6 mice (P60, n = 10) were perfusion fixed with 4% paraformaldehyde (PFA) in PBS.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult C57BL/6 mice (P60, n = 10, Charles River, Wilmington, MA), sas4-/-p53-/- (Insolera et al., 2014) and littermate controls (n = 4/4, P28), rag2-/- shiverer and littermate controls (n = 5/5, P50) were perfusion fixed with 4% paraformaldehyde (PFA) in PBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "95d2a0b2-b8f9-443f-bf78-1e6bc4fa9d17",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C100",
+      "claim": "Ex vivo MRI of mouse brain specimens was performed on a horizontal 7 T MR scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "Ex vivo MRI of mouse brain specimens was performed on a horizontal 7 T MR scanner (Bruker Biospin, Billerica, MA) with a triple-axis gradient system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "943c5a31-40f0-4a9a-8889-b03bb836af92",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C101",
+      "claim": "The specimens were imaged with the skull intact and placed in a syringe filled with Fomblin to prevent tissue dehydration.",
+      "claim_type": "EXPLICIT",
+      "source": "The specimens were imaged with the skull intact and placed in a syringe filled with Fomblin (perfluorinated polyether, Solvay Specialty Polymers USA, LLC, Alpharetta, GA) to prevent tissue dehydration (Arefin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods, with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3a8f04c1-6b7b-4d80-9a33-22051ac76f90",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C102",
+      "claim": "The total imaging time was approximately 12 hr for each specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "The total imaging time was approximately 12 hr for each specimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "f8d8a498-670b-49c6-b6dc-c1de8afe55d5",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C103",
+      "claim": "All 3D MRI data were interpolated to a numerical resolution of 0.06 mm \u00d7 0.06 mm \u00d7 0.06 mm to match the resolution of the MRI-based atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "All 3D MRI data were interpolated to a numerical resolution of 0.06 mm \u00d7 0.06 mm \u00d7 0.06 mm to match the resolution of our MRI-based atlas (Chuang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "04ac32fe-5d41-4806-8538-817afbc62127",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C104",
+      "claim": "MTR images were generated as MTR=(M0\u2212Mt)/M0.",
+      "claim_type": "EXPLICIT",
+      "source": "MTR images were generated as MTR=(M0\u2212Mt)/M0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "c84db051-f0f7-4420-b6ff-321ef27560f3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C105",
+      "claim": "The mouse brain images were spatial normalized to an ex vivo MRI template using the large deformation diffeomorphic metric mapping (LDDMM) method.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouse brain images were spatial normalized to an ex vivo MRI template (Chuang et al., 2011) using the large deformation diffeomorphic metric mapping (LDDMM) method (Ceritoglu et al., 2009) implemented in the DiffeoMap software (https://www.mristudio.org).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "be919811-1f05-40f9-95d0-52ba04a81d13",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C106",
+      "claim": "From the Allen mouse brain atlas, single subject 3D Nissl data and 3D AF data (n = 100), which were already registered to the ARA space, were down-sampled to 0.06 mm isotropic resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "From the Allen moue brain atlas, single subject 3D Nissl data and 3D AF data (n = 100), which were already registered to the ARA space, were down-sampled to 0.06 mm isotropic resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5dfaa714-8fba-4bb5-b8a9-69afabb06fc8",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C107",
+      "claim": "NF- and MBP-stained images of the C57BL/6 mouse brain were downloaded from the ARA reference dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "NF- and MBP-stained images of the C57BL/6 mouse brain were downloaded from the ARA reference dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "35e04db2-4af5-456b-a176-12a7b59826d9",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C108",
+      "claim": "Images with major artifacts or tissue loss were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Images with major artifacts or tissue loss were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "4625387f-d0e1-4035-8c90-5aa2dcfde4a3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C109",
+      "claim": "Small tissue tearing and staining artifacts were removed using the inpainting feature implemented in the photoshop heading brush tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Small tissue tearing and staining artifacts were removed using the inpainting feature implemented in the photoshop heading brush tool (https://www.adobe.com), and dark voxels in the ventricles were replaced by the average intensity values of the cortex to match MRI data (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the data preprocessing methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e2b9858a-5176-4bde-bacf-b1a522c31deb",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C110",
+      "claim": "MRH networks are constructed using a CNN model with convolutions from the MRI to histology space.",
+      "claim_type": "EXPLICIT",
+      "source": "MRH networks are constructed using a CNN model with convolutions from the MRI to histology space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7e1b71ec-649b-493f-841d-57c74860192c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C111",
+      "claim": "The networks were implemented using the deep learning toolbox in Matlab using the directed acyclic graph architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The networks were implemented using the deep learning toolbox in Matlab (https://www.mathworks.com) using the directed acyclic graph architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the implementation details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "da9b0bce-071e-4283-a5d5-2928c63bbbcf",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C112",
+      "claim": "64 hidden layers (60 layers in 30 residual blocks plus four layers at the input and output ends) were chosen, each with 64 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose 64 hidden layers (60 layers in 30 residual blocks plus four layers at the input and output ends), each with 64 neurons, which applied a filter size of 3 \u00d7 3 and included a rectified linear unit (ReLu).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network architecture details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "aad1d16b-047f-4fd5-a080-d7f32206cc45",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C113",
+      "claim": "Most of the hidden layers utilized skip connections to jump over layers to avoid vanishing gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the hidden layers utilized skip connections to jump over layers to avoid vanishing gradients (He et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network architecture with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0995dbb9-34c5-45d9-935b-2834a09c14a8",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C114",
+      "claim": "The network was initialized with orthogonal random weights and was trained using a stochastic gradient descent optimizer to minimize voxel-level absolute distance loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The network was initialized with orthogonal random weights and was trained using a stochastic gradient descent optimizer to minimize voxel-level absolute distance loss (Figure 1\u2014figure supplement 2A-B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "88c58a5e-fa2f-48ce-9954-0f8452bbc1da",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C115",
+      "claim": "The mini batch size was set to 128 to attain a balance between training speed and performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Several choices of mini batch sizes were tested and the size was set to 128 to attain a balance between training speed and performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training hyperparameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "4ca508ab-adfd-4410-8b47-2bb67e6c7e80",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C116",
+      "claim": "Stochastic gradient descent with a momentum beta of 0.9 was used for stochastic optimization, with an initial learning rate of 0.1 and a learning rate factor of 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic gradient descent with a momentum beta of 0.9 was used for stochastic optimization, with an initial learning rate of 0.1 and a learning rate factor of 0.1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training hyperparameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "ad9e450a-be08-49ef-ad27-b952d84f35fe",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C117",
+      "claim": "During training, the learning rate was reduced by a factor of 0.1 every 10 epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "During training, the learning rate was reduced by a factor of 0.1 every 10 epochs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e8a62ef0-f2bb-41c5-83fd-c0f39e2bdc60",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C118",
+      "claim": "Maximum epoch number was set at 60, but early stopping was employed if the validation set loss did not decrease in five epochs.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximum epoch number was set at 60, but early stopping was employed if the validation set loss did not decrease in five epochs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9fd78e63-043b-42aa-8a86-8d7a3515f541",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C119",
+      "claim": "During hyper-parameter tuning, 1000 3 \u00d7 3 patches were randomly held out to as the validation dataset and isolated from the training dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "During hyper-parameter tuning, 1000 3 \u00d7 3 patches were randomly held out to as the validation dataset and isolated from the training dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the training procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9bbf1386-1a44-42c8-8bdc-df5e0c0cab98",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C120",
+      "claim": "The weights from the epoch with the lowest validation loss were selected for final testing.",
+      "claim_type": "EXPLICIT",
+      "source": "The weights from the epoch with the lowest validation loss were selected for final testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model selection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7eb3e0c2-517c-443c-b212-0fdf2d12ab83",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C121",
+      "claim": "When retraining the MRH-AF neural network using MBP/NF data, the last three layers' parameters were refined while leaving the parameters in other layers untouched.",
+      "claim_type": "EXPLICIT",
+      "source": "When retraining the MRH-AF neural network using MBP/NF data, we refined the last three layers' parameters while leaving the parameters in other layers untouched in the Matlab deep learning toolbox using the directed acyclic graph architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transfer learning procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "91237b99-c023-4a2f-b738-1cba1a82c41e",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C122",
+      "claim": "The network training initial learning rate was 0.0001, while learning rate factor was 0.1 to accomplish transfer learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the network training initial learning rate was 0.0001, while learning rate factor was 0.1 to accomplish transfer learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the transfer learning hyperparameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "4e20815a-3e4c-4db8-9eae-05ff36554418",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C123",
+      "claim": "The t-SNE cluster was performed using the Matlab t-SNE analysis function on the network prediction based on values in 2000 randomly selected 3 \u00d7 3 patches in the mouse brain MRI data.",
+      "claim_type": "EXPLICIT",
+      "source": "The t-SNE cluster was performed using the Matlab t-SNE analysis function on the network prediction based on values in 2000 randomly selected 3 \u00d7 3 patches in the mouse brain MRI data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "91c997aa-11bd-42e5-b285-f12e557aa5af",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C124",
+      "claim": "Following the perturbation method, Rician noises were added to one input MR image to the pre-trained MRH networks, and RMSE between the noise contaminated outputs and the original output without noise was recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the perturbation method described by Olden et al., 2004, Rician noises were added to one input MR image to the pre-trained MRH networks, and RMSE between the noise contaminated outputs and the original output without noise was recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the contribution analysis method with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "313fd6ad-5c93-4d96-8e01-197c2a147c52",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C125",
+      "claim": "By repeating this procedure for all MR images, the sensitivities of MRH to each of the 67 input MR image or their contributions were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "By repeating this procedure for all MR images, the sensitivities of MRH to each of the 67 input MR image or their contributions were obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the contribution analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2ef04f96-cac5-45c0-b557-4e96b3d9a6b1",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C126",
+      "claim": "Gaussian random displacement fields were generated for pixels on a 1 mm by 1 mm grid in the coronal plane and propagated to other voxels by B-spline interpolations to simulate voxel mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaussian random displacement fields were generated for pixels on a 1 mm by 1 mm grid in the coronal plane and propagated to other voxels by B-spline interpolations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for evaluating the effect of voxel mismatches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a4ffc119-78ff-4a8f-a73f-4bc72e78248f",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C127",
+      "claim": "The displacement fields followed a Chi distribution with 2 degrees of freedom and were adjusted to match the level of voxel mismatches observed between MRI and histological data.",
+      "claim_type": "EXPLICIT",
+      "source": "The displacement fields followed a Chi distribution with 2 degrees of freedom and were adjusted to match the level of voxel mismatches observed between MRI and histological data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for evaluating the effect of voxel mismatches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "6e6d2c1a-5dd1-4c42-8cec-3779e306cded",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C128",
+      "claim": "Statistical significance was determined using unpaired Student's t-test with threshold set at 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical significance was determined using unpaired Student's t-test with threshold set at 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "9cc4bcfb-69f5-4d0a-90b9-7e7e27d8717c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C129",
+      "claim": "All statistical tests were performed with Prism (GraphPad).",
+      "claim_type": "EXPLICIT",
+      "source": "All statistical tests were performed with Prism (GraphPad).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7b7f5cca-5cad-4ccc-b99d-23fc86d463d5",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C130",
+      "claim": "All values in bar graphs indicate mean + standard deviation.",
+      "claim_type": "EXPLICIT",
+      "source": "All values in bar graphs indicate mean + standard deviation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how data are presented in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "338023a5-4871-4710-8e03-8f8f602eeb74",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "claim_id": "C131",
+      "claim": "70% of the pixel displacements are within one pixel (0.0625 mm) and 95% within two pixels (0.125 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 70% of the pixel displacements are within one pixel (0.0625 mm) and 95% within two pixels (0.125 mm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the distribution analysis in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cdbda5b9-4dbe-4c7e-8028-956292169a98",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deep CNNs trained with co-registered multi-contrast MRI and auto-fluorescence (AF) histological data can predict AF staining intensity from MRI signals with high accuracy (R\u00b2=0.71, AUC>0.94 for 60-subject training), demonstrating enhanced specificity compared to conventional MRI markers. The network primarily relies on multi-contrast MR signals rather than spatial patterns within patches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C34 provide strong quantitative evidence (R\u00b2=0.71, AUC>0.94) supported by Figure 1D-F. Claims C36-C38 demonstrate through t-SNE analysis and modified patch experiments that the network learns voxel-level relationships. The convergence of visual, quantitative, and mechanistic evidence strongly supports this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1ce514c1-28b9-4057-9862-ef730dd42e2e",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transfer learning from MRH-AF to predict neurofilament (NF) and myelin basic protein (MBP) staining produces virtual histology maps with closer visual congruence to reference histology than conventional MRI markers (FA, MTR, DR), with strong correlations (R\u00b2=0.61/0.73) and improved ROC performance. The networks adaptively weight different MRI contrasts based on regional tissue properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 provide visual and quantitative evidence from Figure 3A-C showing superior performance. Claims C54-C59 demonstrate region-specific behavior with appropriate statistical support (p<0.005, Figure 3G). The transfer learning approach is well-justified given limited histological training data (C48-C49). Multiple lines of evidence converge to support enhanced specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Perturbation analysis reveals that individual MRI contrasts contribute differentially to network predictions, with T2 and MT images showing highest contributions. Using only the top 38 of 67 MR images (57% imaging time) maintains comparable quality and diagnostic power (AUC=0.937 vs 0.940).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by systematic perturbation experiments shown in Figure 2C-F with appropriate quantitative metrics (RMSE, SSIM, ROC). The cumulative contribution analysis (C45) provides clear evidence for optimization potential. Statistical comparisons confirm no significant loss in performance with reduced inputs, validating the practical application of this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0f6dec9e-7630-4ac3-878f-f9c12f2a049c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MRH-MBP applied to dysmyelinating shiverer mouse brains (not included in training) generates maps resembling MBP histology with slightly stronger correlation (R\u00b2=0.91 vs 0.81) and small improvement in specificity compared to MTR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 demonstrate generalization to pathological conditions with appropriate controls (n=5/5). Figure 4A-D provides visual and quantitative support. However, the improvement over MTR is modest (R\u00b2=0.91 vs 0.81), and C89 acknowledges this doesn't validate performance on more complex pathologies. The result is supported but with recognized limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "72e818f8-af36-4100-9369-0bef9ad6e6ac",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MRH-Nissl network utilizing OGSE and PGSE diffusion MRI data generates maps with good agreement to Nissl staining, showing higher sensitivity/specificity than PGSE alone. PGSE and OGSE contribute equally, and the method successfully identifies heterotopia in sas4-/-p53-/- mutant brains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 are supported by Figure 5A-E with appropriate ROC analysis and contribution measurements. C69 demonstrates application to pathological tissue. The equal contribution of PGSE and OGSE (C68) is clearly shown in Figure 5E. This extends the method to a different histological target with consistent methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "1adb065d-3fe9-4256-8446-79402e91b909",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study used 6 ex vivo C57BL/6 mouse brains with 67 3D MRI images each, co-registered with 100 AF datasets from Allen Mouse Brain Connectivity Atlas. A 30-residual-block CNN (MRH-AF) was trained using 40,000 3\u00d73 patches, with mismatches between MRI and AF mostly within 1-2 voxels. The 3\u00d73 patch size accommodates residual registration errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 describe the experimental design with specific numbers and methods. C27 is quantitatively supported by Figure 1\u2014figure supplement 1B (70% within 1 pixel, 95% within 2 pixels). C30 is validated by Figure 1\u2014figure supplement 1F-H. The methodology is clearly documented with appropriate sample sizes for proof-of-concept.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Network performance depends on sufficient training data (declining with <1 subject) and architecture depth (30 vs 10 residual blocks). Using 67 raw MRI images outperforms 5 MRI parameter maps (T2, MTR, FA, MD, MK), and deep learning outperforms polynomial fitting, suggesting raw data contains information not captured by standard parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C39-C41 are supported by systematic comparisons in Figures 1D-F and 2A-B with appropriate metrics (RMSE, SSIM, AUC). C42 is a reasonable inference from the observation that 5 parameters produce inferior results. The comparisons are fair and demonstrate the value of the deep learning approach over simpler alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "05758365-c2b1-439b-bec1-d99360601216",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The virtual histology resolution is limited by input MRI resolution (~100 \u03bcm/voxel). The approach has potential applications in mouse disease models but cannot be directly applied to human MRI due to tissue and protocol differences. The co-registered dataset provides a testbed for evaluating new MRI contrasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C72 is supported by Figure 3\u2014figure supplement 4 showing resolution analysis. However, C73-C78 are largely speculative claims about potential applications (evidence_type: SPECULATION). While the limitations (C74) are appropriately acknowledged, the practical utility claims lack experimental validation. These represent reasonable expectations but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The training dataset characteristics (adult myelinated mouse brains) influence network behavior, with the axon-prediction network placing substantial weight on myelin-sensitive contrasts. Future improvements would require broader training data including unmyelinated brains and diverse pathological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C85-C86 describe and interpret the training data characteristics with support from contribution analysis. C87-C89 are reasonable speculations about how different training data would affect performance, appropriately framed as future work. C89 explicitly acknowledges the limitation that shiverer results don't validate performance on complex pathologies. The self-critical assessment is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "7bf68927-77ea-4073-9e95-a9b791952191",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The MRH networks use a 64-layer CNN architecture with 30 residual blocks (64 neurons each, 3\u00d73 filters, ReLU activation, skip connections) implemented in MATLAB. Training used stochastic gradient descent (momentum=0.9, initial learning rate=0.1, batch size=128) with early stopping. Transfer learning for NF/MBP used reduced learning rate (0.0001) and fine-tuned only the last 3 layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C122 provide detailed methodological specifications that are internally consistent and follow standard deep learning practices. The architecture choices (residual blocks, skip connections) are appropriate for the task. Training procedures include proper validation and early stopping. Transfer learning approach is standard and well-justified. Sufficient detail is provided for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "812c5f47-f972-497d-a3e7-08512d8658f6",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ex vivo MRI was performed on perfusion-fixed mouse brains using a 7T scanner with 67 3D images (T2, MT, diffusion) at 0.06mm isotropic resolution after interpolation. Total imaging time was ~12 hours per specimen. Images were registered to Allen Reference Atlas using LDDMM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C105 describe standard experimental procedures with appropriate institutional approvals, specific technical parameters, and established registration methods (LDDMM with citations). The methods are clearly documented and follow accepted practices in the field. Sample preparation and imaging protocols are appropriate for the study objectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "412e5243-1c6a-4c66-bc81-57149ad2da1c",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Contribution analysis used perturbation method (adding Rician noise to individual inputs) to measure sensitivity. Simulated mismatches used Gaussian displacement fields (Chi distribution, 2 DOF) matching observed registration errors. Statistical testing used unpaired t-tests (p<0.05) in Prism, with bar graphs showing mean\u00b1SD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C124-C127 describe analysis methods with appropriate citations (Olden et al., 2004). The perturbation approach is valid for assessing input importance. Simulated mismatch analysis appropriately matches observed error distributions (C131: 70% within 1 pixel). Statistical methods (C128-C130) are standard and appropriate for the comparisons made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MRI provides non-invasive brain imaging with versatile contrasts but inferring histopathological information remains challenging due to lack of direct links between MRI signals and cellular structures, limiting diagnostic value and creating uncertainty in determining pathological events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C10 represent established knowledge about MRI capabilities and limitations, supported by citation to Lerch et al., 2017. These are accurate characterizations of the field's challenges that motivate the study. The claims are well-established and provide appropriate context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multi-modal MRI promises enhanced specificity by combining contrasts (MT, T2, diffusion) targeting different aspects of cellular structures, but progress is hindered by lack of realistic tissue models and validation data. Deep learning offers advantages as a data-driven approach not limited by specific models, with 3D MRI providing ample training instances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately describe the state of the field with appropriate citations (Mangeat et al., 2015; Cercignani and Bouyagoub, 2018). C15-C18 present the study's hypothesis and rationale, supported by citations to deep learning applications (Christiansen et al., 2018; Leynes et al., 2018; Ounkomol et al., 2018). The motivation is well-grounded in prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "adc309da-2eb0-4059-9438-434ebd606eda",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Using MRI parameters as network inputs offers broader applicability without specific protocols, though with reduced accuracy. Future improvements could include advanced network architectures, interpretability methods (deep Taylor decomposition, Grad-CAM), and translation to in vivo/clinical applications, though deep learning cannot replace physics understanding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "C43 and C95-C97 mix demonstrated results (C96 supported by Figure 2) with speculations about future improvements. C90-C92 appropriately cite relevant methods but don't demonstrate their application. C93-C94 acknowledge real limitations. These represent reasonable future directions but are largely speculative rather than demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Previous work on MRI-histology relationships includes new contrasts, tissue models, statistical methods, and registration techniques, but co-registered data and realistic models remain scarce. Perfect co-registration is challenging due to tissue deformation, though serial two-photon tomography and tissue clearing may help. Remaining mismatches can be accommodated by appropriate patch sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately characterize prior work with appropriate citations. C79-C81 describe known challenges and existing solutions with citation support (Kuan et al., 2015). C82 is speculative but appropriately framed. C83 is supported by Figure 1\u2014figure supplement 1 and citation to Rivenson et al., 2019. The literature review and technical challenges are accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "e984b259-4d33-4864-9bef-76a669243156",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "NF and MBP are commonly used markers for axons and myelin. Due to limited histological images, transfer learning was adopted, fixing most MRH-AF layers while training the last 3 layers. Histological images from Allen Brain Atlas were preprocessed to remove artifacts and normalize ventricle intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C47 represents established knowledge. C48-C49 describe the transfer learning approach with citation support (Weiss et al., 2016), which is appropriate given data limitations. C106-C109 describe data preprocessing steps that are reasonable and documented in Figure 3\u2014figure supplement 1. The methodological choices are justified and clearly explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    },
+    {
+      "id": "5dff02bf-484a-4a5d-811a-d548459b4a73",
+      "content_id": "668edc2e-4120-4800-bb6c-aa6c85619a13",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "70% of pixel displacements between MRI and histology are within one pixel (0.0625 mm) and 95% within two pixels (0.125 mm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "C131 provides specific quantitative measurements of registration accuracy supported by Figure 1\u2014figure supplement 1B showing the distribution analysis. This validates the quality of co-registration and justifies the 3\u00d73 patch size choice. The measurement is direct and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:35:50.690221Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c07b2ed4-28c4-4e68-adc7-9c95016864b7",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "da23af24-d6e5-4702-9400-7e0732e8ffc4",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "168757cd-7d89-424b-80bf-00b2a05f7bf4",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "861a060f-e8b3-494f-b187-73a9b00018aa",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "a21d20fb-f903-4b72-8800-5010b65780de",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "b2b016b0-5f25-4a7f-9650-41ddcd13c62b",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "6e64c70d-8a43-46f5-8a34-8f9aa4a99a98",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "5268d5d5-8d4c-481b-9ca8-56f785519136",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "226efb62-539f-48ba-8cc7-48392d60bb1a",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "ad656493-7816-4bbc-b16b-df403785c5de",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "22b6d9f6-cef0-4a08-ac22-22b75bc4f7f9",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "7381ed5e-384a-4c1d-b8b2-0652806c0c1d",
+      "result_id": "cdbda5b9-4dbe-4c7e-8028-956292169a98"
+    },
+    {
+      "claim_id": "b4b6d90f-010d-40f5-bff4-fd9270539028",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "0ae98b55-7943-4856-b472-08f0691fdcef",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "a025c2de-ec72-4c46-b5f6-f76c408dedf0",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "0dbcf83a-f35c-421a-84b5-aa82dcb8572e",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "b41428d2-c858-4298-b0a4-d905ece3c113",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "2b715cb1-d6c2-4dda-8689-7f02c6e495c3",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "dbcfd8bf-d72c-4c22-8c7c-354a3c87570b",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "a5fc39e0-cac2-42f5-9f81-d1d8b7ab6f98",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "9126c4d0-3a1c-4d43-885a-03a559bf1496",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "3c8f022d-691c-40f2-9edb-a12cff3b0744",
+      "result_id": "1ce514c1-28b9-4057-9862-ef730dd42e2e"
+    },
+    {
+      "claim_id": "35af1567-599a-40b4-b0d6-07ae52c04e10",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "220a30d8-b54e-45eb-9f95-7e4294f6850b",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "1a4d6b8c-28a9-4631-98b4-cd9c01fdbf85",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "efe11e30-bd79-43d0-8605-bd06f6a1674a",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "ef39d184-d39a-4e03-b582-47539d783b9b",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "f4522037-94e5-4a0e-862a-3e95062a1eca",
+      "result_id": "071d52d2-4ef5-4756-bb5a-77ad6b40c9bd"
+    },
+    {
+      "claim_id": "555728cb-3a6c-47a7-b4af-85031817199d",
+      "result_id": "0f6dec9e-7630-4ac3-878f-f9c12f2a049c"
+    },
+    {
+      "claim_id": "3962e920-a623-4840-973d-ef76c649af18",
+      "result_id": "0f6dec9e-7630-4ac3-878f-f9c12f2a049c"
+    },
+    {
+      "claim_id": "2bd54cc5-2b91-4ea0-9f22-4197a88edd91",
+      "result_id": "0f6dec9e-7630-4ac3-878f-f9c12f2a049c"
+    },
+    {
+      "claim_id": "67792857-5d7a-4213-a4ba-42cf3164ed0a",
+      "result_id": "0f6dec9e-7630-4ac3-878f-f9c12f2a049c"
+    },
+    {
+      "claim_id": "2f9b6647-5825-4e6f-8034-ae54bf51d28b",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "718bc7e6-3173-45be-9045-085ed4124636",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "f99d3ce8-2161-466e-9f27-e8b127fc6579",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "007c8959-d251-4f7f-96b2-5ae49d027a78",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "dfe85434-cf68-4dce-b24e-98cb119a7924",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "4ed45802-5f25-44b3-92c1-319c35b47af4",
+      "result_id": "72e818f8-af36-4100-9369-0bef9ad6e6ac"
+    },
+    {
+      "claim_id": "2a80a8ff-f008-4d05-bc2c-954b8babe1ed",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "3ef954d1-af5e-461e-bfbc-0db04b3dca19",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "0e2dbb8d-0e1d-446d-a371-4e14558ef862",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "70517454-80c1-412c-ae8d-fca9b8c70722",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "89d11fc6-71c4-43c9-b3a4-facbae9c4d16",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "b162f0fa-0663-4b37-898a-0a930dcc6431",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "f4444ca5-8adb-457b-82b8-5c3435150e56",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "49c7742e-a3e8-460b-bd2d-5518adca6f55",
+      "result_id": "1adb065d-3fe9-4256-8446-79402e91b909"
+    },
+    {
+      "claim_id": "4105b576-ec13-4667-9290-74260d82e1b9",
+      "result_id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4"
+    },
+    {
+      "claim_id": "acae77bf-d38a-4d72-9824-93b48042f7e7",
+      "result_id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4"
+    },
+    {
+      "claim_id": "b63c3da1-f581-44f1-b1f6-9e7f6d70ef3a",
+      "result_id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4"
+    },
+    {
+      "claim_id": "a7b5c988-0a31-4d94-9ee9-632271c353b8",
+      "result_id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4"
+    },
+    {
+      "claim_id": "3754e510-e6e8-4954-85ff-9074f995adf1",
+      "result_id": "e9236384-dfcd-4ef7-8025-a07ed2f046e4"
+    },
+    {
+      "claim_id": "88c87b7c-0875-41b1-91b8-4070fdbbedf8",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "730ff959-aaae-47ab-9825-7eea86d29893",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "1b5d3771-9dad-4f55-9e8d-be8c9b3cf887",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "0540f858-d12b-4a75-8a24-54226e32f584",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "10222685-517c-4207-bb20-d6cf4126e567",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "b04b5b2b-c2a6-4316-bc5a-32071d9e0d70",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "0f35d75f-be47-4d69-85ee-b116fed2fcb5",
+      "result_id": "05758365-c2b1-439b-bec1-d99360601216"
+    },
+    {
+      "claim_id": "59ab9881-a19f-49a0-804c-e2ea5799192d",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "d77b64c3-aab9-4cba-becd-59eaddf112cb",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "7338dee6-0ca9-415e-82f0-ec50803c7891",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "1cbae8b4-6dce-446d-9ca6-f3e057ed23f6",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "94e1bb4b-8058-463a-84a7-09deb1c3ee62",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "348b9e40-4c62-4c56-8d28-4d86106514ad",
+      "result_id": "3e17610f-6a6e-4baa-818f-58e7b968cfa8"
+    },
+    {
+      "claim_id": "e2b9858a-5176-4bde-bacf-b1a522c31deb",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "7e1b71ec-649b-493f-841d-57c74860192c",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "da9b0bce-071e-4283-a5d5-2928c63bbbcf",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "aad1d16b-047f-4fd5-a080-d7f32206cc45",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "0995dbb9-34c5-45d9-935b-2834a09c14a8",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "88c58a5e-fa2f-48ce-9954-0f8452bbc1da",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "4ca508ab-adfd-4410-8b47-2bb67e6c7e80",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "ad9e450a-be08-49ef-ad27-b952d84f35fe",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "e8a62ef0-f2bb-41c5-83fd-c0f39e2bdc60",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "9fd78e63-043b-42aa-8a86-8d7a3515f541",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "9bbf1386-1a44-42c8-8bdc-df5e0c0cab98",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "7eb3e0c2-517c-443c-b212-0fdf2d12ab83",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "91237b99-c023-4a2f-b738-1cba1a82c41e",
+      "result_id": "7bf68927-77ea-4073-9e95-a9b791952191"
+    },
+    {
+      "claim_id": "0c49ee75-67e3-4fb4-8018-a1b916b24a86",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "aa6b9272-34f3-41cd-93a9-1b84904ee638",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "95d2a0b2-b8f9-443f-bf78-1e6bc4fa9d17",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "943c5a31-40f0-4a9a-8889-b03bb836af92",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "3a8f04c1-6b7b-4d80-9a33-22051ac76f90",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "f8d8a498-670b-49c6-b6dc-c1de8afe55d5",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "04ac32fe-5d41-4806-8538-817afbc62127",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "c84db051-f0f7-4420-b6ff-321ef27560f3",
+      "result_id": "812c5f47-f972-497d-a3e7-08512d8658f6"
+    },
+    {
+      "claim_id": "91c997aa-11bd-42e5-b285-f12e557aa5af",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "313fd6ad-5c93-4d96-8e01-197c2a147c52",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "2ef04f96-cac5-45c0-b557-4e96b3d9a6b1",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "a4ffc119-78ff-4a8f-a73f-4bc72e78248f",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "6e6d2c1a-5dd1-4c42-8cec-3779e306cded",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "9cc4bcfb-69f5-4d0a-90b9-7e7e27d8717c",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "7b7f5cca-5cad-4ccc-b99d-23fc86d463d5",
+      "result_id": "412e5243-1c6a-4c66-bc81-57149ad2da1c"
+    },
+    {
+      "claim_id": "68ee837c-9938-458b-b91a-e7132cee296b",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "cf2cfd23-d045-4220-9ca3-9359722c1782",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "095a1e43-4c8e-46e8-aef0-b5893742d50c",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "f20f8ff9-fc95-412d-b84a-7d55db695ecb",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "57f2e383-206b-4261-9899-0b038aa101ad",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "e06ef177-eb66-4c74-bb3b-1605c4858f56",
+      "result_id": "0c56e3d2-26a1-4ff8-aa58-a9ec93cf6153"
+    },
+    {
+      "claim_id": "17ecc53d-3843-4e00-991d-df139c2c4d89",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "441bdd4a-c4fa-4b50-9710-3f1bfa97ea94",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "0e43f23d-6b47-4b5f-9dc9-3e91d8c3ef5e",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "708432fa-b9b3-4f51-81ae-ce119aaf984e",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "0879a9cd-3500-44e2-9a88-d2dec7889b4b",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "9e7c8c42-3b24-44dd-8c8f-c56fc02558a2",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "9504f976-62ac-4c44-8bb7-ab9ff5a60f56",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "0ca9eebc-9231-4a8b-b7dc-d1bd76138b9b",
+      "result_id": "2b8a8e3c-a741-4306-a174-3e0d70550bf3"
+    },
+    {
+      "claim_id": "adf08be5-b119-43e3-afa9-d4594a4fbd71",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "9ccef510-c9a3-4c0f-a6cd-792070f3f435",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "2b920399-72c9-4dad-9aaa-c54a840d62b3",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "77de61e0-a23d-42c3-b7e6-017b8761ecb3",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "60060322-8082-4889-91aa-7bfa79847b66",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "6ea9983d-f910-413c-9b51-affd90d43ad2",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "7fd50215-bcf8-4dfd-8662-d2c39a34b5ff",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "c9f8c131-3461-4374-b253-22a9a26b570c",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "d05d086a-88cf-4188-bf55-5688220d8d6c",
+      "result_id": "adc309da-2eb0-4059-9438-434ebd606eda"
+    },
+    {
+      "claim_id": "5ac5758c-b27b-4072-8776-040aeb817398",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "a46d0024-1a08-4fde-8161-bdd3466fcf69",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "5119f717-b874-48e9-8fc4-a03d9c0a8753",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "42d9d466-fd23-44bf-812d-150bb7eef144",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "5da82029-8799-4379-834f-6a94fdcf33b6",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "ab726d46-1ae9-4a49-905e-a778b3a59293",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "860c86fc-d7cc-4ed3-956a-806d737f867b",
+      "result_id": "a4c71a6d-7214-4db3-9d02-3f3b5abac6e7"
+    },
+    {
+      "claim_id": "1261d80e-5682-44ec-b803-6033fcdbe101",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "8fec6c8f-349e-45f9-88f4-e9849c6fc32f",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "e1c32ef1-81f3-4193-9fb0-090d81837a96",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "be919811-1f05-40f9-95d0-52ba04a81d13",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "5dfaa714-8fba-4bb5-b8a9-69afabb06fc8",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "35e04db2-4af5-456b-a176-12a7b59826d9",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "4625387f-d0e1-4035-8c90-5aa2dcfde4a3",
+      "result_id": "e984b259-4d33-4864-9bef-76a669243156"
+    },
+    {
+      "claim_id": "338023a5-4871-4710-8e03-8f8f602eeb74",
+      "result_id": "5dff02bf-484a-4a5d-811a-d548459b4a73"
+    }
+  ],
+  "comparisons": []
+}

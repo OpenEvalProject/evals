@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on malaria epidemiology, RDT diagnostics, and the problem of hrp2/hrp3 gene deletions in P. falciparum parasites. These deletions prevent detection by HRP2-based RDTs and have been reported globally at varying frequencies, with WHO recommending alternative diagnostics when deletion prevalence exceeds 5%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 establish well-documented background information supported by appropriate citations to WHO reports and peer-reviewed literature. The claims accurately describe the malaria burden, RDT characteristics, hrp2/hrp3 deletion problem, and WHO guidelines. These are established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript describes limitations of existing methods for hrp2/hrp3 deletion detection, including nPCR (requiring 12 reactions per sample, prone to false negatives, cannot detect mixed infections) and qPCR (high variation at low parasite densities). These limitations motivate the need for improved detection methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 accurately describe established limitations of nPCR and qPCR methods, supported by appropriate citations. The inference that 12 PCRs are needed (C23) follows logically from threefold replication of hrp2, hrp3, and control genes. The description of mixed infection detection problems is well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors developed a novel ddPCR-based method for hrp2/hrp3 deletion typing. The method leverages ddPCR's advantages including highly accurate quantification, no need for external standards, reliability despite suboptimal amplification, multiplexing capability without competition, and minimal risk of false negatives. New primers and probes were designed for hrp2 exon 1, hrp2 exon 2, hrp3, and tRNA control gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 describe the development of the novel ddPCR assay and its theoretical advantages. The technical characteristics of ddPCR (C31-C39) are well-established and appropriately cited. The development of new primers and probes (C40) is documented in Table 1. The advantages are logically inferred from ddPCR principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The ddPCR assay was optimized and validated using culture strains. Clear separation between positive and negative droplets was achieved across parasite densities from 1.3 to 49,000 parasites/\u00b5l. Deletions showed no positive droplets for target genes while tRNA control remained positive. Primers were designed to detect all known deletion variants and showed no SNPs across >3000 genomes, enabling global application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C115-C117 describe assay optimization and validation with culture strains. Results are supported by Figure 1 and supplements showing clear droplet separation. The primer design strategy (C115) is logical, and bioinformatic validation (C116) provides evidence for global applicability. The control gene function (C44) follows logically from the assay design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C118"
+    ],
+    "result": "Reproducibility and detection limits were evaluated using 248 Kenyan samples (geometric mean 95 parasites/\u00b5l, 47 samples <10 parasites/\u00b5l). The assay showed high reproducibility with R\u00b2=0.990-0.991 for technical replicates, CV of 11.8-17.7% between replicates, and lower CV (4.7-11.8%) within wells. No deletions were detected. The theoretical limit of detection was 0.33 parasites/\u00b5l.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C59, C118 describe reproducibility validation with strong quantitative data. High R\u00b2 values (C49-C50) and CV measurements (C51-C57) demonstrate excellent reproducibility. The inference that pipetting variation is the main source of error (C55) is well-supported by comparing within-well vs between-replicate CV. The theoretical LOD calculation (C59, C118) is mathematically sound based on the assay parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C98",
+      "C119"
+    ],
+    "result": "The ability to detect mixed infections was tested using experimental mixtures of 3D7 (wild-type) and Dd2 (hrp2 deletion) strains. At densities of 200-1000 parasites/reaction, the assay accurately quantified mixture ratios. Deletions were reliably detected when \u226540% of parasites carried the deletion at densities >100 parasites/reaction. At 20% deletion frequency or densities of 20 parasites/reaction, detection was unreliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65, C98, C119 describe controlled mixture experiments with clear results shown in Figure 2B. The data demonstrate both the capabilities and limitations of mixed infection detection. The 40% threshold and density requirements are empirically determined and clearly stated. Results for hrp3 mixtures (C65) corroborate the hrp2 findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Field sample analysis showed that in wild-type samples >50 parasites/\u00b5l, the hrp2/tRNA ratio was >0.6, approaching 1 with increasing density. Zanzibar samples showed a lower mean ratio of 0.82, possibly due to DNA degradation from prolonged storage at ambient temperature on filter paper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe field sample validation with data shown in Figure 3. The 0.6 ratio threshold (C66) is empirically established from the data. The Zanzibar observation (C68) is documented with supporting figure. However, the explanation for lower ratios (C70) is speculative and appropriately qualified as such. The speculation is reasonable given the storage conditions (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95",
+      "C96",
+      "C97",
+      "C120",
+      "C121"
+    ],
+    "result": "Direct comparison of ddPCR and nPCR using 248 Kenyan samples showed ddPCR had higher sensitivity (95% vs 85% samples meeting inclusion criteria) and specificity. nPCR detected hrp2 deletion in 8% of samples (17/212), while ddPCR detected 0% deletions (0/235). This suggests nPCR may overestimate deletion frequency due to false negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79, C95-C97, C120-C121 describe a rigorous head-to-head comparison with clear quantitative results shown in Table 2 and Figure 4. The discrepancy between methods (8% vs 0%) is striking and well-documented. The inference that nPCR overestimates deletions (C97) is reasonable given the data, though the authors appropriately note this as a possibility rather than certainty. The comparison is strengthened by using the same samples and triplicate testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C122"
+    ],
+    "result": "The ddPCR assay was applied to 830 samples from six countries. No hrp2 deletions were found in Kenya (241 samples) or Zanzibar (91 samples). Low frequencies were observed in Ghana (1/223 mixed infection) and Ethiopia (1/47, 2.1%). High frequencies were found in Brazil (87/187, 46.5% hrp2; 116/187, 62% hrp3). Ecuador showed no hrp2 deletions but 53.7% hrp3 deletions. More hrp3 than hrp2 deletions were observed overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C91, C122 present field screening results from multiple countries with clear quantitative data in Table 3. The geographic variation in deletion frequencies is well-documented. Sample sizes vary by site but are clearly stated. The observation of more hrp3 than hrp2 deletions (C122) is supported by the data across multiple sites. Results are consistent with the assay's demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The novel ddPCR assay demonstrated high accuracy, ability to detect mixed infections, robustness (<10/800 samples required repeating), minimized false-negative risk, increased sensitivity, and greatly reduced the number of reactions needed compared to conventional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94, C123-C125 are summary conclusions well-supported by the collective experimental data. High accuracy is demonstrated by reproducibility studies (C49-C50). Mixed infection detection is shown in mixture experiments (C61-C62). Robustness is documented (C94). Reduced false negatives and increased sensitivity are supported by the nPCR comparison (C71-C79). Reduced reaction number follows from the multiplexed design requiring fewer replicates than the 12-reaction nPCR protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors argue that qPCR cannot detect the mixed infections detectable by ddPCR because the difference in copy numbers would result in <0.5 cycle difference, which is within normal technical variation for qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 present a theoretical comparison with qPCR based on quantification principles. The calculation that similar copy number differences would yield <0.5 cycle difference in qPCR is mathematically sound. The assertion that this is within normal qPCR variation is supported by citations (Koepfli et al., 2016; Hindson et al., 2013). This provides theoretical justification for ddPCR's advantage in detecting mixed infections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Some RDT-negative samples from Zanzibar and Ghana showed no hrp2 deletions by ddPCR despite high parasite densities. False-negative RDTs may result from incorrect handling, prozone effect, or sequence variation without deletion. Deletion of hrp2 exon 1 alone could theoretically prevent HRP2 expression, but no such discrepancies were observed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 address an important observation about RDT-negative samples. The finding of no deletions in RDT-negative samples (C101) is clearly documented. Alternative explanations for false-negative RDTs (C102) are appropriately cited and reasonable. The speculation about exon 1-only deletion (C103) is clearly marked as hypothetical and not previously reported. The observation of no exon 1/2 discrepancies (C104) provides reassurance about the assay design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Results showed geographic heterogeneity in deletion frequencies. Ghana results contrast with a previous study reporting >30% deletion. Ethiopia showed low hrp2 deletion (2.1%) in the southwest versus high levels in western regions. South America showed heterogeneous patterns with high deletion in the Amazon but low levels on the Pacific coast. Brazil's deletion frequency (46.5%) exceeds the 5% WHO threshold, warranting discontinuation of HRP2-based RDTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 discuss geographic patterns and compare with previous studies. Comparisons with prior work are appropriately cited. The observation of within-country heterogeneity (C106-C107) is well-supported by the data and previous literature. The recommendation for Brazil (C112) logically follows from the data (46.5% deletion) and WHO guidelines (5% threshold). Geographic context (C108) is factually correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "WHO recommends typing a minimum of 370 samples per site to determine if deletion frequency exceeds 5%. Simulation studies suggest hrp2-based RDT use selects for hrp2-negative parasites, especially at low transmission with high treatment-seeking rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 provide important context from WHO guidelines and modeling studies. Both claims are appropriately cited (WHO 2020; Gatton et al., 2017; Watson et al., 2017). These establish the public health context and evolutionary dynamics relevant to the study's findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31"
+    ],
+    "result": "Participants (N=33) successfully learned novel association rules in a task where pacman-like characters' fruit preferences were governed by combinations of two out of three visual features. Performance exceeded chance by trial 2, learning speed increased across blocks, and neither block type nor association type systematically affected learning speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C31 provide converging behavioral evidence with appropriate statistical tests (t-tests, correlations) and are supported by figures. The experimental design is clearly described, sample size is adequate (N=33), and results show consistent learning patterns with proper controls for confounding variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C22",
+      "C42"
+    ],
+    "result": "Participants' self-reported confidence in task performance correlated specifically with learning speed and degree of abstraction, but not with total number of trials or proportion of successes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C22, and C42 demonstrate a specific relationship between metacognitive confidence and learning strategy. Statistical tests are appropriate (robust regression, correlation comparisons), and the specificity of the correlation (learning speed but not other metrics) strengthens the interpretation that confidence relates to abstraction ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A mixture-of-experts reinforcement learning model with Feature RL (8 states) and Abstract RL (4 states) algorithms successfully captured participant behavior. Simulations and empirical data showed that the appropriate Abstract RL had highest expected value and responsibility, and RPE variance correlated negatively with learning speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 describe a computational modeling approach with clear model architecture and validation. The model successfully reproduces key patterns in both simulations and participant data (C36-C37), and the correlation between RPE variance and learning speed (C38, p=0.015) provides quantitative support for the model's psychological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C65",
+      "C66"
+    ],
+    "result": "Participants shifted from Feature RL to Abstract RL strategies over the course of learning. Feature RL was slower and less efficient in simulations, predominated in slow-learning blocks and early sessions, while Abstract RL predominated in fast-learning blocks and late sessions. Degree of abstraction correlated positively with learning speed across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C45-C46, C65-C66 provide converging evidence from simulations, block-level analysis, and temporal dynamics. Statistical tests are appropriate (sign tests, robust regression with p<0.001), and the pattern is consistent across multiple analyses. The shift from Feature RL to Abstract RL is demonstrated both within and between participants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "When considering all blocks regardless of fit, Feature RL showed higher learning rates and greediness compared to Abstract RL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 report statistically significant differences (p<10^-10 and p<10^-30) with appropriate non-parametric tests. However, the supplementary analyses (Figure 3\u2014figure supplement 1) show this pattern reverses when considering only best-fitting blocks, suggesting these differences may reflect model misspecification rather than true algorithmic differences. The authors acknowledge this complexity in their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C3",
+      "C4"
+    ],
+    "result": "The vmPFC showed strong correlation with anticipated value magnitude at stimulus presentation, and this region prioritized and selected latent task elements during abstraction both locally and through connections to visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C3, and C4 are supported by fMRI GLM analysis with appropriate whole-brain correction (p(FWE)<0.05) and are consistent with prior literature on vmPFC function in value computation. The finding is illustrated in Figure 4A and represents a key neural signature of the valuation process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C69"
+    ],
+    "result": "Functional connectivity between visual cortex and vmPFC was higher on high-value trials compared to low-value trials, and the strength of this VC-vmPFC coupling correlated positively with learning speed across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C69 are supported by psychophysiological interaction (PPI) analysis and between-subject correlation (p=0.016). The specificity of the VC-vmPFC connection (only this pathway showed value-dependent modulation) and its behavioral relevance provide strong support for the proposed mechanism of abstraction through value-based sensory feature integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C76"
+    ],
+    "result": "vmPFC activity distinguished between Feature RL and Abstract RL learning strategies, showing higher engagement during Abstract RL, while hippocampal activity remained similar across both strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C76 are supported by linear mixed effects model analysis with appropriate post-hoc comparisons (vmPFC: p(FDR)=0.009; HPC: p(FDR)=0.54). The differential engagement of vmPFC but not HPC provides evidence for region-specific roles in abstraction, though the interpretation would benefit from additional control analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multivoxel pattern analysis revealed that feature classification accuracy was significantly higher during Abstract RL trials compared to Feature RL trials in both HPC and vmPFC, with the opposite (non-significant) pattern in visual cortex. This difference was significantly larger in HPC/vmPFC compared to VC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by appropriate MVPA with cross-validation and statistical testing (t-tests, LMEM). The control analysis with equated trial numbers (Figure 5\u2014figure supplement 3) confirms the finding is not due to unequal sample sizes. The pattern suggests feature information is actively represented in higher-order regions during abstract learning, not just read out from sensory cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C77"
+    ],
+    "result": "Searchlight MVPA showed significant reduction in feature decoding accuracy in OFC, ACC, vmPFC, and dorsolateral PFC when a feature was irrelevant to the rule compared to when it was relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C77 are supported by whole-brain searchlight analysis with appropriate cluster correction (p(fpr)<0.01). The finding extends the ROI-based results and demonstrates that prefrontal regions selectively represent task-relevant features, consistent with their proposed role in goal-dependent abstraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C92"
+    ],
+    "result": "In a neurofeedback experiment (N=22), artificially adding value to a neural representation of a task-relevant feature in visual cortex resulted in increased use of Abstract RL strategies specifically when that feature was relevant to the block rule, but not when it was irrelevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C92 provide causal evidence for the role of feature valuation in abstraction. The specificity of the effect (relevant vs. irrelevant blocks) is demonstrated with appropriate statistical tests (binomial test p=1.37\u00d710^-7, Wilcoxon signed rank test p=0.015, permutation test p<0.001). The unconscious nature of decoded neurofeedback strengthens the interpretation that the effect operates at the sensory representation level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Participants who were more successful at neurofeedback training showed larger increases in abstraction in the subsequent behavioral test compared to their initial level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by correlation analysis (Figure 6\u2014figure supplement 1C) showing a dose-response relationship between neurofeedback success and behavioral change. This strengthens the causal interpretation of the neurofeedback manipulation by demonstrating that the magnitude of neural manipulation predicts the magnitude of behavioral effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C14",
+      "C21",
+      "C23",
+      "C105",
+      "C109"
+    ],
+    "result": "Value signals guide the construction and selection of abstract representations during learning. The vmPFC uses valuation of low-level sensory features to forge abstract representations through goal-dependent processes implemented as top-down control of sensory cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6, C14, C21, C23, C105, and C109 represent the main theoretical conclusions of the study. These are well-supported by the convergence of behavioral modeling (showing value-based strategy selection), neuroimaging (showing vmPFC value signals and VC-vmPFC connectivity), MVPA (showing feature representations in prefrontal regions), and causal neurofeedback evidence. The integration across multiple methods and levels of analysis provides strong support for this novel interpretation of value's role in abstraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "In this task, learning faster requires using Abstract RL rather than Feature RL. This builds on prior work showing that efficient decision-making depends on higher-order representations, and extends it by showing that feature valuation supports formation of abstract representations for learning computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C70-C71 connect the current findings to theoretical frameworks in reinforcement learning and decision-making. C67 is directly supported by the task structure and simulation results. C68 and C70 appropriately cite prior work. C71 represents a reasonable extension of the findings, though it is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Excluded participants (N=11) had overall lower performance than included participants, though some had comparable accuracy ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by statistical comparison (Figure 1\u2014figure supplement 2, Wilcoxon test p=0.006). This validates the exclusion criteria and demonstrates that excluded participants represent a distinct group with genuine learning difficulties rather than arbitrary exclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Activity in insular and dorsal prefrontal cortices increased under conditions of low expected value, consistent with error monitoring and processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by fMRI analysis (Figure 4\u2014figure supplement 1) and is consistent with cited prior work on error monitoring. This represents an expected control finding that validates the value manipulation but is not central to the main hypotheses about abstraction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Block rules were encoded in multivoxel activity patterns within the OFC/DLPFC circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by searchlight MVPA (Figure 5E) and is consistent with cited prior work on rule representation in prefrontal cortex. This finding demonstrates that abstract task rules are explicitly represented in prefrontal regions, supporting the broader framework of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C20"
+    ],
+    "result": "The study demonstrates that abstraction emerges during the course of learning in two fMRI experiments where human volunteers learned novel association rules based on simple visual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C20 accurately describe the overall experimental approach. The emergence of abstraction during learning is demonstrated by the temporal analyses (C45-C46) showing shifts from Feature RL to Abstract RL over time. This represents one of the two stated aims of the study and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "The vmPFC and HPC have distinct but complementary roles in abstraction: the HPC stores and updates conceptual memories while the vmPFC creates new concepts through valuation-driven channeling of sensory features to higher-order areas. Task states are continuously reconstructed rather than maintained in a fixed location, enabling robust decisions based on relevant, up-to-date information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 and C80-C81 represent theoretical interpretations that go beyond the direct evidence. While C72-C74 are supported by citations to prior work, C75 and C80-C81 are inferences from the current data. The finding that HPC activity doesn't distinguish learning strategies (C52) is consistent with this framework, but the study doesn't directly test the proposed division of labor or the dynamic reconstruction hypothesis. These claims require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study examined abstraction at the lowest level (simple visual features rather than complex objects), but the authors speculate that the same valuation-based mechanism should generalize to higher levels of abstraction with different sensory modalities coupling to vmPFC depending on task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 accurately characterize the study's scope. Claims C86-C91 are explicitly speculative predictions about generalization. While these are reasonable hypotheses based on the current findings and prior literature (C88 is partially supported by the PPI results), they require direct experimental testing. The authors appropriately acknowledge these as speculations requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "It remains unclear whether value affects abstraction by enabling more efficient construction of abstract representations or by improving selection among existing internal models. Parallel prefrontal-basal ganglia circuits may track different levels of abstraction in hierarchical fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 identify important open questions and speculative mechanisms. The current study cannot distinguish between construction and selection mechanisms (C95), and the hierarchical circuit hypothesis (C96) is speculative though supported by citations. These represent appropriate acknowledgments of the study's limitations and directions for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The results argue against top-down attention as the sole driver of Abstract RL. Instead, attention is likely an effector of abstraction and valuation processes, as evidenced by the unconscious operation of decoded neurofeedback and the pattern of feature decodability across regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 address an important alternative explanation. The argument is supported by the pattern of MVPA results (no marked increase in VC decodability during Abstract RL, C54) and the neurofeedback manipulation (which operates unconsciously, C98). However, the distinction between attention as driver vs. effector is somewhat conceptual, and the evidence doesn't completely rule out attentional contributions. The evaluation is reasonable but not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C108"
+    ],
+    "result": "Valuation may itself be an abstraction, providing a dimensionless common currency that indexes task states and behavioral strategies. This interpretation reconciles findings in decision-making and memory literature, positioning value as a conceptual representation built on-the-fly rather than a simple numerical reward signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 cite prior work appropriately. Claims C102-C103, C106, and C108 represent theoretical interpretations that are conceptually appealing and consistent with the data, but go beyond what the current experiments directly demonstrate. The idea that value is itself an abstraction is philosophically interesting but would require additional experimental evidence to establish. These represent important theoretical contributions but remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Recent work in mice shows that value governs functional remapping in sensory cortex through direct OFC projections carrying RPE information and by modulating neuronal gain to irrelevant stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 accurately cite recent rodent work (Banerjee et al., 2020; Liu et al., 2020) that provides mechanistic support for the current findings in humans. These citations appropriately contextualize the neurofeedback results and suggest potential neural mechanisms, though cross-species generalization should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes theoretical background: abstraction is the ability to organize information beyond immediate sensory reality; classic RL algorithms collapse in complex problems but abstraction to lower-dimensional manifolds enables efficient behavior; the vmPFC computes value, forms schemas, and is well-positioned to extract latent task information; and task goals determine what is valuable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 and C15-C19 provide appropriate background from prior literature with proper citations. These claims establish the theoretical motivation for the study and are well-supported by the cited work. They represent accurate characterizations of the relevant prior literature rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C78",
+      "C82",
+      "C83"
+    ],
+    "result": "Prefrontal regions construct goal-dependent task states and abstract rules from relevant sensory information. HPC neurons continuously generate representations of alternative future trajectories and replay past cognitive trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C82-C83 appropriately cite prior work to contextualize the current findings. These represent established findings from the literature that provide theoretical framework for interpreting the current results, particularly the dynamic reconstruction hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "This work reconciles apparently disconnected findings in decision-making and memory literature on the role of the vmPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 represents a broad claim about the study's theoretical contribution. While the study does integrate perspectives from decision-making (value computation) and memory (schema formation) literatures, whether it truly 'reconciles' these fields is a matter of interpretation. The claim is reasonable but somewhat aspirational and would benefit from more explicit demonstration of how specific contradictions or disconnections are resolved.",
+    "result_type": "MINOR"
+  }
+]

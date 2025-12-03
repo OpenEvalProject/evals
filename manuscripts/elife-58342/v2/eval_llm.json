@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "TRAIL treatment induces rapid mRNA decay and reduced RNAPII transcription by 1.5-2 hours. The study demonstrates that TRAIL causes caspase activation by 1.5 hr, coincident with decreased mRNA levels of housekeeping genes, reduced nascent RNAPII transcript production, while RNAPIII transcription remains unaffected or enhanced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are well-supported by multiple experimental approaches including western blots (Figure 1B), RT-qPCR (Figure 1C), and 4sU labeling (Figure 1D). The data consistently show temporal correlation between caspase activation and mRNA changes, with appropriate controls (18S rRNA normalization, RNAPIII transcripts as specificity controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pan-caspase inhibition with zVAD rescues both mRNA decay and transcriptional repression during TRAIL-induced apoptosis. The study shows that 71.2% of transcripts are downregulated during apoptosis with DMSO, but only 14.7% with zVAD treatment, confirming the role of canonical apoptotic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by western blot validation of zVAD efficacy (Figure 2\u2014figure supplement 1A), RT-qPCR rescue data (Figure 2A-B), and genome-wide 4sU-seq analysis (Figure 2C-D). The dramatic difference in transcript downregulation between DMSO and zVAD conditions provides strong evidence for caspase-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Genes upregulated during TRAIL-induced apoptosis are enriched for chemokine/cell death responses and regulated by apoptosis-associated transcription factors. Gene ontology and transcription factor enrichment analyses reveal specific functional categories and regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by appropriate bioinformatics analyses (Figure 2E-F) with multiple literature citations validating the apoptotic roles of identified transcription factors. The enrichment analyses follow standard methodologies and the results are consistent with known apoptotic transcriptional programs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MOMP-inducing CASP8, but not executioner CASP3 or CAD, is required for mRNA decay and transcriptional repression during early apoptosis. DNA fragmentation occurs later (4-8 hr) than mRNA decay and transcriptional changes (1.5-2 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are well-supported by siRNA knockdown experiments (Figure 3A-B, Figure 3\u2014figure supplement 1A) and TUNEL assays (Figure 3\u2014figure supplement 1C). The temporal separation between early events (mRNA decay/transcriptional repression) and late events (DNA fragmentation) is clearly demonstrated, consistent with prior literature (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MOMP is the main driver of mRNA decay and transcriptional repression during apoptosis. siRNA depletion of BAX/BAK rescues both mRNA abundance and RNAPII transcription despite continued caspase cleavage, indicating CASP8 functions primarily through MOMP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are strongly supported by BAX/BAK knockdown experiments (Figure 3C-D, Figure 3\u2014figure supplement 1D) showing rescue of both phenotypes despite persistent caspase activation. This elegant genetic dissection clearly establishes MOMP as the critical upstream event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Raptinal-induced MOMP is sufficient to drive mRNA decay and transcriptional repression independently of caspase activity. Treatment with raptinal causes MOMP and reduces mRNA levels and transcription even in the presence of zVAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by raptinal experiments in HeLa cells (Figure 3E-F, Figure 3\u2014figure supplement 1E) demonstrating MOMP sufficiency. The use of raptinal to bypass CASP8 while maintaining zVAD treatment provides strong evidence that caspases are not required beyond MOMP induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C96"
+    ],
+    "result": "Cytoplasmic 3'-5' decay machinery (DIS3L2, EXOSC4, PNPT1), but not 5'-3' exonuclease XRN1, is required for transcriptional repression during apoptosis. Co-depletion of 3' decay factors restores RNAPII transcription without significantly affecting CASP3 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C96 are well-supported by siRNA knockdown experiments (Figure 4A-C) showing selective rescue with 3' but not 5' decay factor depletion. The control showing minimal effect on CASP3 activation (C64) is critical for ruling out indirect effects through altered apoptosis progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Apoptosis-induced transcriptional repression occurs at or before preinitiation complex (PIC) formation. ChIP-qPCR shows reduced RNAPII and TBP occupancy at promoters in a decay-dependent manner, while RPB1 CTD phosphorylation patterns remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by comprehensive ChIP-qPCR (Figure 4D-E) and western blot analyses (Figure 4F, Figure 4\u2014figure supplement 1D-E). The combination of reduced promoter occupancy with unchanged phosphorylation ratios provides strong evidence for a PIC assembly defect rather than elongation defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PABPC1 relocalizes to the nucleus during early apoptosis in a CASP8-dependent manner. Nuclear PABPC1 levels increase 2 hr after TRAIL treatment, mirroring the timing of mRNA decay and transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by cell fractionation and western blot data (Figure 5A) showing increased nuclear PABPC1 with appropriate controls (LMNB1, TUBA1A). The CASP8 dependence (C76) is demonstrated by siRNA experiments, establishing correlation with other apoptotic events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Importin \u03b1/\u03b2-mediated nuclear import is required for transcriptional repression but not mRNA decay during apoptosis. Ivermectin pretreatment rescues RNAPII transcription without affecting mRNA decay extent or CASP3 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are well-supported by ivermectin experiments (Figure 5B-C, Figure 5\u2014figure supplement 1A-B) demonstrating selective rescue of transcription. The controls showing no effect on baseline transcription (C82) or caspase activation (C81) are critical for ruling out off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C106"
+    ],
+    "result": "PABPC1 nuclear translocation occurs via an importin \u03b1/\u03b2-independent pathway and is not sufficient for transcriptional repression. Ivermectin blocks transcriptional repression but not PABPC1 import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C106 are supported by cell fractionation data (Figure 5\u2014figure supplement 1C) showing PABPC1 still translocates with ivermectin treatment. This dissociation between PABPC1 import and transcriptional repression provides important mechanistic insight, though the inference about pathway independence (C84) is reasonable but not directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Viral nuclease-induced mRNA decay similarly requires importin \u03b1/\u03b2-mediated nuclear transport for transcriptional repression. Wild-type but not catalytically-dead muSOX causes mRNA decay and transcriptional repression, with ivermectin rescuing RNAPII promoter occupancy without affecting decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by muSOX expression experiments (Figure 5D-E, Figure 5\u2014figure supplement 1D-F) with appropriate negative controls (D219A mutant). The parallel results in viral and apoptotic contexts strongly support a conserved mechanism, though the study is limited to one viral nuclease system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "During early apoptosis, widespread mRNA decay represses RNAPII transcription through a positive feedback mechanism requiring active cytoplasmic mRNA degradation, impaired PIC recruitment, and importin \u03b1/\u03b2-mediated nuclear protein import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C9, C90-C93 represent the main conclusions synthesizing multiple experimental findings. These are well-supported by the combined evidence from 4sU-seq, decay factor knockdowns, ChIP-qPCR, and ivermectin experiments. However, C93 involves speculation about the specific mechanism of how proteins signal to halt transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95"
+    ],
+    "result": "An analogous pathway linking mRNA decay to transcriptional repression is activated by viral nucleases and depends on nuclear protein import, suggesting distinct cellular stresses converge on this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C94-C95 are supported by the muSOX experiments (Figure 5D-E) and citations to prior work. The convergence of apoptotic and viral pathways on importin-dependent transcriptional repression is demonstrated, though the generalization to 'distinct cellular stresses' (C95) extends beyond the data to only two contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C107"
+    ],
+    "result": "The authors propose a threshold model where accelerated mRNA decay tips the balance of mRNA-bound versus unbound proteins, causing accumulation and nuclear import of unbound RBPs. They hypothesize transcriptional repression results from cumulative nuclear import of multiple factors via importin \u03b1/\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103, C107 are explicitly speculative proposals by the authors. While the model is reasonable and consistent with the data, these specific mechanistic details are not directly tested. The threshold concept (C101) and protein balance model (C102-C103) lack experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims establishing prior knowledge about RNA homeostasis, compensatory feedback between transcription and decay, viral effects on host gene expression, and apoptotic mRNA decay mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C28 are background statements supported by appropriate citations to prior literature. These establish the context for the current study and are generally well-accepted in the field. C28 involves some speculation ('likely potentiates') but is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C74",
+      "C100",
+      "C104",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background claims about mechanisms of mRNA decay (3' vs 5' pathways), RBP trafficking during viral infection, PABPC1 nuclear localization signals, and connections between mRNA processing and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C74, C100, C104-C105, C108-C113 are background statements appropriately supported by citations to prior literature. These provide mechanistic context for interpreting the current findings. C104 involves some inference but is reasonably supported by the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "mRNA decay and transcriptional repression are very early apoptotic events independent of subsequent caspase-driven phenotypes. CASP8 is required only for MOMP induction, while CASP3 and CAD are dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 synthesize findings from the caspase/CAD knockdown and timing experiments. These conclusions are well-supported by the data showing selective requirements and temporal separation from late apoptotic events. The inference about independence from caspase-driven phenotypes (C99) is reasonable given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion of potential biological significance including chromatin regulation, autoimmunity, viral defense, and evolutionary context. The authors speculate about potential benefits of transcriptional shutdown and relevance to multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C122 are speculative discussion points about potential mechanisms and biological significance. While C115-C117, C119-C120 are supported by citations, C114, C118, C121-C122 are explicitly speculative ('could,' 'may be,' 'if true'). These represent reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

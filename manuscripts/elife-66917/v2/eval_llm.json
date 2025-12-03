@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C26",
+      "C27",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "TDLM is a domain-general method that combines nonlinear classification and linear temporal modeling within a GLM framework to detect neural sequences. The method works on decoded state space (time \u00d7 states), uses multiple linear regression for first-level analysis of all state-to-state transitions, tests hypothesized sequences via second-level GLM, and employs non-parametric permutation testing with state identity shuffling for statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 collectively describe TDLM's methodological framework with internal consistency. The two-level GLM approach (C26-C27), permutation testing strategy (C34-C35), and multiple comparison correction (C36) are clearly specified. The method is well-defined mathematically and conceptually, though empirical validation is addressed in separate result groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "States in TDLM can be defined as sensory stimuli or abstract representations. For sensory stimuli, logistic regression classifiers are trained on whole-brain sensor activity at peak decoding time points using leave-one-out cross-validation. For abstract representations (e.g., sequence position), classifiers must generalize across stimulus sets and be orthogonal to sensory representations to avoid confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 describe state definition strategies with appropriate methodological considerations. The distinction between sensory and abstract representations is well-motivated by citations (C42-C45), and the orthogonalization strategy (C46-C47) addresses a genuine confound. The peak decoding time selection (C40) is reasonable though somewhat circular\u2014using decoding accuracy to select the time point for training could introduce bias if not carefully implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C59",
+      "C60"
+    ],
+    "result": "Multiple linear regression in TDLM addresses temporal autocorrelation and spatial correlations between states that would otherwise create spurious sequence detection. This approach allows independent measurement of forward and backward sequences, unlike simple subtraction methods (D = Z_F - Z_B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C60 identify a real statistical problem (autocorrelation interacting with state correlations) and propose multiple regression as a solution. The logic is sound: controlling for all states at time t when predicting state j at t+\u0394t accounts for mediated relationships. Figure 3a demonstrates this empirically (C59-C60). However, the claim that this 'solves' the problem (C59) may be overstated\u2014it reduces but may not eliminate all spurious correlations, especially with imperfect state estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C66"
+    ],
+    "result": "Background alpha oscillations (~10 Hz) during rest can reduce sequence detection sensitivity, particularly when states experience oscillations at different phases. Including phase-shifted versions of state time series (e.g., X(t+\u03c4) where \u03c4=100ms for 10Hz) in the GLM controls for this confound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 identify a specific confound (alpha oscillations) and propose a solution (including phase-shifted regressors). The logic is sound: if oscillations at different phases create spurious correlations, controlling for time-shifted activity should help. Citation C66 provides empirical support from real MEG data. However, the generality of this approach to other oscillatory frequencies or more complex phase relationships is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Spatial correlations between state decoder patterns reduce sequence detection sensitivity due to collinearity. Training decoders to discriminate each state against a mixture of other states and null data, with the mixture ratio adjusted to minimize inter-state correlations, improves sequence detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 identify collinearity as a problem (C67) and demonstrate its impact via simulation (C68, Figure 3c). The proposed solution of adjusting null data ratio (C70-C72) is empirically validated in Figure 3d. This is a practical contribution, though the optimal ratio may be dataset-dependent and the approach requires iterative tuning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "L1 regularization of classifier weights improves sequence detection more robustly than L2 regularization or unregularized models. L1 achieves this by reducing spatial correlations between classifier weights and encoding weaker assumptions about background noise distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by simulation results in Figure 3e showing L1 outperforms L2 and unregularized models (C74), with lower spatial correlations (C75). The mechanistic explanation (reduced covariance, weaker noise assumptions) is plausible and supported by citation C76. However, the simulations may not capture all real-world scenarios, and optimal regularization strength is not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "State identity permutation testing provides valid group-level inference by randomizing stimulus-to-state mappings across subjects. This approach maintains appropriate false-positive rates (~5%) in both simulation and real MEG data, unlike time permutation which inflates false positives by destroying temporal smoothness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 describe the statistical testing framework with strong empirical validation. Figures 4a-c demonstrate that state permutation maintains nominal false-positive rates while time permutation fails (C83-C85). The rationale for cross-subject randomization (C78-C79) addresses the non-random nature of spontaneous activity. This is a well-validated statistical approach, though the assumption of state exchangeability can be violated (addressed in C92-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Multiple comparison correction across time lags uses max-permutation testing, taking the peak sequenceness across all lags in each permutation to form the null distribution. Different permutation strategies (all states vs. only between-sequence states) offer trade-offs between precision and sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe a standard and appropriate multiple comparison correction method (max-permutation), validated in Figure 4d (C87). The discussion of permutation strategy trade-offs (C89-C90) is thoughtful, though the practical impact of these choices on statistical power is not quantified. The method is well-established in neuroimaging (C87 cites fMRI precedent).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "State exchangeability can be violated if task training induces systematic relationships between specific state pairs. While low-level factors are controlled by counterbalancing across subjects, training-induced representational overlap has been observed, though it tends to be localized to discrete brain regions and may have limited impact on whole-brain decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 identify a potential limitation of the permutation testing approach. The concern is valid and supported by citations (C94-C95), but the practical impact is uncertain. C96 suggests limited impact based on localization, but this is speculative and depends on the specific brain regions involved in sequence representation. The authors acknowledge they haven't found false positives in simulation, but this doesn't rule out the possibility in real data with strong training effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Sequence onset can be identified by transforming to sequence event space and using high-scoring time points for sequence-triggered averaging. Applied to real MEG data, this approach detected increased hippocampal power at 120-150 Hz at replay onset using LCMV beamforming source reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 describe a source localization approach with results shown in Figures 5b-c (C99). The sequence-triggered averaging is analogous to established methods (C98). However, C101-C102 acknowledge significant limitations of LCMV beamforming (distal correlated sources), and suggest better alternatives exist. The hippocampal ripple finding is interesting but should be interpreted cautiously given the source localization limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "TDLM differs fundamentally from existing rodent replay methods (Radon transform, linear weighted correlation) which search for linear relationships between state and time ('line search'). TDLM instead measures transition strengths in a graph framework, making it applicable to complex state spaces (2D mazes, non-spatial tasks) where no linear embedding exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 clearly distinguish TDLM from existing methods with appropriate citations (C103-C107). The conceptual difference (graph-based vs. line-based) is well-articulated and illustrated in Figure 6. The example of non-spatial decision-making tasks (C111, Figure 6e-f) effectively demonstrates TDLM's generality. This is a legitimate advantage for complex experimental designs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "TDLM in its original form may be less sensitive for continuous spaces than methods assuming linear state-time relationships, as it doesn't benefit from Euclidean geometry assumptions. Multi-scale TDLM addresses this by applying the method at multiple spatial discretizations and averaging results for the same replay speed, reinstating Euclidean assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 acknowledge a limitation (C112) and propose a solution (C113-C114). The multi-scale approach is conceptually sound: different scales capture different transition granularities, and averaging by replay speed recovers spatial continuity. However, the effectiveness of this approach is not empirically validated in simulation before application to real data, and the variance-weighting scheme may require careful implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Multi-scale TDLM applied to rodent CA1 place cell data (\u00d3lafsd\u00f3ttir et al., 2016) identified significant forward replay for the outbound map across speeds of 1-10 m/s during post-running rest. The fastest detected speed (~10 m/s, 20\u00d7 running speed) represents approximately half a track-arm per typical replay event, consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C127 describe application of multi-scale TDLM to real rodent data with results shown in Figure 7d. The detected replay speeds (C126-C127) are consistent with cited prior work, providing validation. The approach of concatenating replay events (C122-C125) is justified by the linear framework. However, this is a single dataset analysis, and the generalizability to other recording sessions or animals is not established. The consistency with prior work (C127) is reassuring but doesn't constitute independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "TDLM's GLM framework enables second-order inference through linear contrasts and interactions. Applied to rodent data, contrasts revealed greater forward than backward replay overall, and interactions showed forward replay decreasing while backward replay increasing over sleep time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C137 demonstrate TDLM's flexibility for second-order inference with results in Figures 7d and 7f. The statistical framework (contrasts and interactions, C130-C134) is standard and appropriate. The findings (C132-C133, C135-C137) are clearly presented. However, these are exploratory analyses on a single dataset without correction for multiple testing across different second-order questions, which could inflate false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "ROI-based analysis can avoid multiple comparison correction, but requires that the ROI not be defined using the measure under test to avoid selection bias. Using total replay (forward+backward) to define an ROI, spatial modulation analysis showed forward replay stronger at track beginning and backward replay stronger at track end, consistent with prior rodent literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 describe an ROI approach with appropriate attention to selection bias (C139, citing Kriegeskorte et al., 2009). The spatial modulation findings (C140-C142, Figure 8) are consistent with cited prior work (C143, Diba & Buzs\u00e1ki, 2007), providing validation. However, the ROI definition (sum of forward and backward) may not be fully orthogonal to the individual directional effects being tested, potentially introducing some bias despite the authors' precautions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "TDLM is a domain-general method working on decoded state space, applicable to diverse data types (human MEG/EEG, rodent electrophysiology) and settings. Its GLM foundation provides flexibility for controlling confounds and testing second-order questions. The method works on discrete states but can handle continuous spaces via multi-scale discretization, with accuracy improving with longer time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C153 summarize TDLM's characteristics and advantages. The domain-generality is demonstrated through applications to both human MEG (earlier results) and rodent electrophysiology (C126-C143). The GLM framework advantages (C146) are validated through the second-order inference examples. The recommendation to aggregate events (C151-C153) is justified by the linear framework. These are well-supported summary claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "TDLM has been successfully applied to human experiments with complex state spaces and is particularly suited for summarizing replay strength across events, comparing conditions, and analyzing complex paradigms. Unlike alternative tools, TDLM has not been demonstrated for individual replay event analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C159 accurately characterize TDLM's demonstrated applications (C154 with multiple citations) and appropriate use cases (C157-C158). The acknowledgment of limitations (C159) is appropriate. However, C155 is speculative about future rodent applications. The claims about what TDLM is 'particularly suited for' (C157) are reasonable given the method's design but represent the authors' judgment rather than systematic comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "TDLM extends beyond prior work on neural state dynamics and reactivation by revealing temporal structure of representational content. The method can be applied to both off-task (replay) and on-task data (sequential reactivation, decision-making), potentially enabling tests of neural predictions from process models like reinforcement learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C167 position TDLM relative to prior work with appropriate citations (C160-C163). The distinction from classification-only approaches (C164) is valid. The on-task applications (C165-C166) are supported by citations to studies using TDLM. However, C167's claim about testing RL predictions is somewhat speculative ('may allow') and the cited papers (Wimmer et al., 2020; Nour et al., 2021; Liu et al., 2019; Liu et al., 2021a) are described as having 'proved hard to probe previously,' suggesting this remains challenging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "TDLM works with EEG data (demonstrated in Appendix 4), which is unsurprising given EEG and MEG measure similar signals. Application to fMRI may be possible but requires addressing methodological caveats like hemodynamic response bias. Combining MEG/EEG temporal resolution with fMRI spatial precision could enable region-specific sequence analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C172 discuss TDLM's applicability to other modalities. C168-C169 are supported (EEG demonstration in appendix, similar physics). However, C170-C172 regarding fMRI are speculative. C171 claims TDLM 'can deal with' hemodynamic bias but acknowledges 'further work is needed,' making this uncertain. C172 about combining modalities is a reasonable future direction but not demonstrated. The fMRI claims require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "TDLM's linear framework facilitates assessment of time-varying replay effects and other second-order questions. Future directions include separating process and measurement noise via latent state-space models, and applications to human cognition (language, planning) and complex rodent tasks. TDLM is particularly suited for testing neural predictions from process models and could promote cross-species synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C173-C177 mix demonstrated capabilities (C173, validated in rodent analysis) with future directions and aspirations. C174 about latent state-space models is a reasonable suggestion with citations but not demonstrated. C175-C177 about future applications are speculative, representing hopes rather than established results. While these are appropriate for a Discussion section, they should not be evaluated as supported findings. The cross-species synthesis goal (C177) is partially demonstrated but remains aspirational.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "TDLM can be extended to capture rodent replay in electrophysiology including continuous spaces, and is applicable to both rodent and human data. Previous applications to human neuroimaging have measured sequenceness in spontaneous representations, with results resembling rodent hippocampal replay characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C18 describe TDLM's cross-species applicability. C4 and C16 state the method's extensibility, which is demonstrated through the rodent data analysis (C126-C143). C17-C18 cite prior human applications showing replay-like phenomena. The cross-species applicability is a major contribution, though the claim that human results 'resemble' rodent replay (C18) is based on qualitative comparison rather than quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Resting brain activity is structurally rich, including hippocampal replay where place cells spontaneously recapitulate trajectories. These sequences are hypothesized to reflect fundamental neural computation. Existing rodent replay methods are not domain-general, typically applying to electrophysiology in linear tracks, and cannot be directly adapted for human non-invasive neuroimaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 provide background context with appropriate citations. C5-C7 describe established phenomena in the field. C8-C10 accurately characterize limitations of existing methods, supported by methodological review citations (van der Meer et al., 2020; Tingley and Peyrache, 2020). C11 positions TDLM relative to prior work. These are well-supported contextual claims that motivate the development of TDLM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "TDLM can accommodate second-order statistical questions (e.g., forward vs. backward replay, temporal changes) naturally as linear contrasts in a GLM framework, and is suited to measure average replay strength across many events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 describe key capabilities of TDLM that are validated through the rodent data analysis (C128-C143). The GLM framework naturally supports these analyses, and the examples provided (forward vs. backward, temporal changes) are successfully demonstrated. This is a genuine advantage over methods requiring ad hoc approaches for second-order questions.",
+    "result_type": "MAJOR"
+  }
+]

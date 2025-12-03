@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "Bath application of NMDAR antagonists (MK801 and AP5) reduces PPR variance without changing mean PPR in stratum radiatum inputs. The reduction in PPR variance is characterized by a negative correlation between \u0394PPR and baseline PPR, with linear fits intercepting near the baseline mean PPR. MK801 had minimal effects on EPSC amplitude and CV\u207b\u00b2, while AP5 significantly increased EPSC amplitudes and CV\u207b\u00b2, suggesting presynaptic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C18-C22, and C25 provide converging evidence from pharmacological experiments showing that NMDAR antagonists reduce PPR variance while maintaining mean PPR. The data include appropriate statistical tests (f-tests for variance, t-tests for means), correlation analyses, and CV\u207b\u00b2 measurements that support presynaptic mechanisms. The experimental design with intracellular MK801 to block postsynaptic NMDARs is well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "GluN2B-specific antagonist Ro25-6981 and mGluR5-specific antagonist MPEP had no effect on PPR variance, though MPEP increased mean PPR. Neither drug reduced PPR disparity in two-pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C26 demonstrate receptor specificity through negative controls. The lack of effect of Ro25-6981 and MPEP on PPR variance, combined with MPEP's effect on mean PPR, helps establish that the observed effects are specific to non-GluN2B NMDARs and not mediated by mGluR5. Statistical tests support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Astrocyte-specific knockdown of GluN1 using AAV-Cre in Grin1 floxed mice reduces baseline PPR variance in stratum radiatum and occludes the effects of AP5 on PPR variance. The viral transduction was specific to astrocytes (~41% of GFAP+ cells, <1% of NeuN+ cells) and reduced NMDA-glycine responses specifically in SR astrocytes but not in SO or SLM astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C42 provide strong genetic evidence that astrocyte NMDARs mediate the observed effects. The AAV-Cre approach with appropriate controls, cell-type specificity quantification, functional validation via NMDA-glycine puff responses, and occlusion experiments with AP5 collectively support the conclusion. The layer-specific effects of GluN1 knockdown on NMDA responses (C30-C31) are particularly informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mathematical modeling using gamma distributions fitted to FM1-43 data shows that reducing release probability variance (as in AP5 condition) compromises LTP expression while having minimal effect on LTD. The AP5 condition requires higher postsynaptic current injection to trigger LTP compared to control, and this effect persists when variance is reduced while maintaining the control mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe a computational modeling approach that links release probability variance to synaptic plasticity. The modeling is based on experimental FM1-43 data (C44-C46), uses established gamma distribution fitting (C43), and demonstrates consistent effects across different simulation conditions (C47-C50). The modeling provides mechanistic insight into the functional consequences of reduced PPR variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In simulations with Poisson spike trains, reducing release probability variance attenuates both LTP and LTD expression. Spike inputs that promote potentiation or depression under control conditions favor weaker plasticity in reduced variance conditions. Reducing variance without changing the mean has a stronger effect on LTP than LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 extend the modeling results to more general conditions using Poisson spike trains. The findings are consistent with the STDP simulations (C47-C50) and provide additional support for the functional importance of release probability variance. The differential effects on LTP vs LTD (C53) are particularly informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single-cell RT-PCR, immunoprecipitation, and Grin2c-iCre reporter mouse experiments demonstrate that GluN2C is highly expressed in CA1 astrocytes across all layers (SR, SO, SLM) compared to pyramidal neurons. Astrocytes show minimal expression of GluN2A and GluN2B, and low GluN1 expression. GluN2C protein is present in hippocampus, and 81.6% of GFAP+ cells express tdTomato in Grin2c-iCre x Ai9 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 provide multiple lines of molecular evidence for GluN2C expression in astrocytes using complementary techniques (RT-PCR, immunoprecipitation, reporter mice). The quantification is rigorous, with appropriate cell-type markers and controls. The finding of low GluN1 but high GluN2C mRNA in astrocytes (C57-C58) is notable and discussed by the authors as potentially reflecting differential subcellular localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "QNZ46, a GluN2C/D-specific antagonist, reduces PPR variance and PPR disparity similarly to MK801 and AP5. QNZ46 increases EPSC amplitudes and CV\u207b\u00b2, suggesting presynaptic changes. The effects of QNZ46 on PPR variance and disparity are occluded by astrocyte GluN1 knockdown, indicating that GluN2C-containing NMDARs in astrocytes mediate these effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 provide pharmacological evidence that GluN2C NMDARs mediate the observed effects on PPR variance. The QNZ46 experiments parallel the MK801/AP5 experiments and show similar effects. The occlusion by astrocyte GluN1 knockdown (C70-C71) is critical for establishing that the effects are mediated by astrocyte GluN2C NMDARs. The convergence of molecular (C54-C63) and pharmacological (C65-C72) evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C92"
+    ],
+    "result": "The regulation of PPR variance by astrocyte NMDARs is layer-specific, occurring only in stratum radiatum (SR) inputs and not in stratum oriens (SO) or stratum lacunosum moleculare (SLM) inputs. Despite relatively even GluN2C mRNA expression across layers, SR astrocytes show the highest sensitivity to GluN1 knockdown in NMDA-glycine responses. Neither MK801 nor AP5 affected PPR variance or disparity in SO or SLM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 and C92 demonstrate layer-specific regulation through systematic comparison across CA1 layers. The experiments include both genetic (GluN1 knockdown) and pharmacological (MK801, AP5) approaches tested in all three layers. The layer specificity is surprising given the even GluN2C mRNA expression (C73) but is supported by the differential sensitivity to GluN1 knockdown in NMDA-glycine responses (C74). The negative results in SO and SLM are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C85"
+    ],
+    "result": "Astrocyte GluN2C NMDARs maintain broad presynaptic strength diversity in stratum radiatum by keeping strong synapses stronger and weak synapses weaker without affecting mean synaptic strength. This represents a novel feedback signaling system that adjusts basal synaptic weight distribution and impacts CA1 pyramidal neuron computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C6, and C85 represent the main conclusions of the study, synthesizing the experimental findings. These conclusions are well-supported by the convergence of pharmacological (C15-C26), genetic (C27-C42), molecular (C54-C63), and computational (C43-C53) evidence. The layer-specific regulation (C73-C82) further supports the specificity of this mechanism. The interpretation that this system 'impacts computations' (C6) is supported by the modeling showing effects on synaptic plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establishing the importance of NMDARs in neuronal plasticity, the controversial nature of astrocyte NMDAR function, the significance of synaptic strength distributions for information storage, NMDAR structure and pathological roles, and astrocyte functions in brain activity and synaptic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C14 provide established background knowledge supported by appropriate citations to prior literature. These claims set the context for the study and are not novel findings. They are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion claims about the fundamental nature of synaptic heterogeneity, factors contributing to release probability variability, PPR as a measure of presynaptic efficacy, the functional significance of the findings for learning and memory, and connections to prior work on astrocyte signaling in LTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C95 are discussion points that contextualize the findings within the broader literature. These claims are appropriately supported by citations and represent reasonable interpretations of the data. Claims C91 and C93 are speculative but clearly presented as such and are supported by the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Mechanistic speculation about how astrocyte GluN2C NMDARs might impose dual modulatory actions, potentially involving ATP/adenosine signaling or other gliotransmitters. Discussion of the discordance between GluN1 and GluN2C mRNA levels and potential explanations involving differential subcellular localization. Speculation about mechanisms underlying layer-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C104 are speculative mechanistic proposals that are not directly tested in the study. While these are reasonable hypotheses supported by citations to relevant literature (C97-C99, C102), they remain speculative. The proposal about differential mRNA localization (C101) is plausible but not directly tested. These represent important directions for future work but are not established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion of GluN2C NMDAR properties (diheteromeric and triheteromeric complexes, reduced Mg\u00b2\u207a sensitivity, high glutamate sensitivity) and their implications for the observed rapid effects of MK801, detection of synaptic release events, and therapeutic considerations for drugs targeting NMDARs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 discuss established properties of GluN2C-containing NMDARs (C105-C106, C110) supported by citations, and make reasonable inferences about how these properties relate to the experimental observations (C107-C109). The therapeutic implications (C111) are appropriately cautious and well-supported by the findings. These are valid interpretations linking known receptor properties to the experimental results.",
+    "result_type": "MINOR"
+  }
+]

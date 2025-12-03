@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C53"
+    ],
+    "result": "The study enrolled 121 adults with influenza-like illness (ILI) over five consecutive influenza seasons (2016-2020), including 70 IAV patients, 51 patients with other infections (IBV, RSV, SARS-CoV-2), and 20 healthy controls. Patient demographics and clinical characteristics were documented, including age, timing of medical attention, comorbidities, and disease severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 and C53 provide comprehensive descriptive data about the study cohort, including enrollment numbers, infection types, demographics, comorbidities, and timing of medical care. These are straightforward descriptive statistics from the study design and are well-documented in Table 1 and the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "IAV infection results in significantly reduced PBMCs in blood but a threefold increase in cell recovery from the nasopharynx compared to healthy controls. Significantly higher frequencies of lineage-negative HLA-DR+ cells (monocytes and DCs) were found in both blood and nasopharynx of IAV patients, indicating an influx of these cells to the site of infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by flow cytometry data (Figure 1D-E) showing statistically significant differences in cell yields and frequencies between IAV patients and healthy controls. The conclusion (C16) logically follows from the observed data showing increased myeloid cells in the nasopharynx during infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During acute IAV infection, classical monocytes (CMs) remain the most frequent monocyte subset in blood but are significantly increased in the nasopharynx. Intermediate monocytes (IMs) are significantly elevated in both blood and nasopharynx. All DC subsets (cDC2, cDC1, PDCs) are significantly decreased in blood but significantly increased in the nasopharynx, while healthy controls have virtually no DCs in the nasopharynx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are supported by flow cytometry data (Figure 2A-H) showing statistically significant changes in monocyte and DC subset distributions between blood and nasopharynx in IAV patients versus healthy controls. The data demonstrate clear compartment-specific and infection-specific patterns of immune cell distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Age correlates with altered immune cell distribution in IAV patients: IM frequency in blood negatively correlates with age (R=-0.55, p=0.0008) while positively correlating with age in the nasopharynx (R=0.46, p=0.045). cDC2 frequency in nasopharynx inversely correlates with age (R=-0.558, p=0.016). During convalescence, these altered distributions normalize toward healthy control values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by correlation analyses (Figure 2H-K) and convalescent data (Figure 2L) showing statistically significant age-related differences in immune cell distribution and normalization during recovery. The correlations are appropriately analyzed using Spearman's rank correlation with reported p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Monocytes and DCs in the nasopharynx of IAV patients are more mature than those in blood, as evidenced by higher expression of HLA-DR, CD86, and CD83. CM maturation (CD86 expression) inversely correlates with viral RNA load (R=-0.696, p=0.0019), and CM maturation positively correlates with cDC2 (R=0.735, p=0.0012) and cDC1 (R=0.832, p=0.0001) maturation in the nasopharynx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are supported by flow cytometry data (Figure 3A-H) showing statistically significant differences in maturation marker expression between blood and nasopharynx, and significant correlations between viral load, CM maturation, and DC maturation. The correlations suggest coordinated maturation responses at the site of infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "IAV infection is associated with elevated levels of inflammatory cytokines (TNF\u03b1, IL-6, IFN\u03b1, IL-10, IL-15, IL-18) in both nasopharyngeal secretions and plasma. TNF\u03b1 levels positively correlate with CM frequency in both compartments and with patient age. Plasma IFN\u03b1 levels positively correlate with Ct values (inversely with viral load). Plasma CCL2 levels positively correlate with IM frequencies (R=0.639, p=0.048). During convalescence, TNF\u03b1 and IL-6 levels decrease in both compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 are supported by ELISA data (Figure 4A-L) showing statistically significant elevations in cytokine levels and significant correlations between cytokines, cell frequencies, age, and viral load. The convalescent data demonstrate resolution of inflammation. The interpretations (C44, C46) are reasonable inferences from the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Blood monocytes and DCs from IAV patients spontaneously produce TNF\u03b1 without external stimulation, with CMs being the primary source. In contrast, cells from healthy controls only produce TNF\u03b1 upon TLR7/8L stimulation. IAV patient cells remain responsive to additional TLR7/8L stimulation, suggesting blood monocytes and DCs function as a general source of TNF\u03b1 contributing to systemic inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by TNF\u03b1 release assay data (Figure 5C-D) showing statistically significant differences in spontaneous and stimulated TNF\u03b1 production between IAV patients and healthy controls. The conclusion (C52) is a reasonable inference from the functional data, though the speculative nature is appropriately indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Different respiratory viral infections (IAV, IBV, RSV, SARS-CoV-2) elicit distinct patterns of monocyte and DC recruitment to the nasopharynx. SARS-CoV-2 and RSV patients show increased nasopharyngeal cell yields like IAV, but the IM expansion seen in IAV is not observed in IBV or SARS-CoV-2 (though present in RSV). DC subset patterns also differ: cDC2s increase only in IAV and SARS-CoV-2, cDC1s only in IAV, while PDCs increase in all groups. Cytokine profiles also differ between infection types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C66 are supported by comparative flow cytometry and ELISA data (Figure 6A-E) showing statistically significant differences in immune cell distribution and cytokine levels across different viral infections. The data demonstrate pathogen-specific immune responses, though sample sizes for some groups (IBV n=10, RSV n=6) are relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Proteomic analysis using SomaScan revealed distinct protein expression patterns between blood and nasopharynx, and between IAV and SARS-CoV-2 infections. In IAV, more proteins were differentially expressed in blood (n=548) than nasopharynx (n=281) with only 8.4% overlap. In SARS-CoV-2, the nasopharynx had considerably more differentially expressed proteins (n=1868) than blood (n=693). Pathway analysis identified enrichment of innate immunity pathways, particularly in IAV nasopharynx, with nasopharyngeal samples showing more enriched pathways than plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are supported by SomaScan proteomic data (Figure 7A-E) showing differential protein expression and pathway enrichment. The analysis used appropriate statistical methods (p<0.05, fold-change >1.5) and pathway enrichment tools. The data demonstrate compartment-specific and pathogen-specific proteomic signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Older IAV patients display weaker recruitment of CD1c+ MDCs (cDC2s) to the nasopharynx. The authors speculate that CMs recruited to the nasopharynx in older individuals may preferentially differentiate into IMs rather than mo-DCs, and that diminished cDC2 recruitment may contribute to more severe disease in older patients given the critical role of cDC2s in IAV clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is supported by the age correlation data (C26). However, claims C108-C111 are largely speculative interpretations based on in vitro studies (C108) and cited literature (C110). While the speculation is reasonable given the data, the mechanistic claims about preferential differentiation (C109) and contribution to disease severity (C111) lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors discuss potential roles for DC3 subsets and mechanisms of monocyte/DC recruitment and differentiation during IAV infection, including speculation about DC3 presence in the nasopharynx, monocyte-mediated DC recruitment via cytokine/chemokine secretion, and migration versus in situ differentiation of DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C117 are primarily speculative interpretations and discussions of potential mechanisms, appropriately acknowledged as such by the authors. C112-C113 discuss DC3s which were not directly measured in this study. C114-C117 propose mechanisms based on cited literature and the study's maturation marker data, but lack direct experimental validation of these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors provide mechanistic interpretations of their cytokine and immune cell data, including discussions of monocyte subset function, CCL2-mediated recruitment, IFN responses in relation to viral control and age, and comparisons to pandemic influenza and mouse models. They conclude that inflammation in seasonal IAV appears limited to the acute phase and is short-lived compared to pandemic strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C132 combine direct observations (C118, C122, C130) with interpretations supported by cited literature (C119, C121, C124-C125, C128-C129, C131-C132) and reasonable inferences from the study data (C120, C123, C126-C127). The conclusions about short-lived inflammation (C130-C131) are supported by the convalescent data. The speculative elements are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "In COVID-19 patients, the cell influx to the nasopharynx appears to be due to cDC2s and PDCs rather than monocytes, with elevated plasma levels of IL-6 and TNF\u03b1. Proteomic analysis of IAV patients showed differential enrichment of innate immune pathway proteins including TNF and IL-6 in the nasopharynx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 are supported by the comparative data in Figure 6 and proteomic data in Figure 7, with appropriate citations to previous COVID-19 studies (C133-C135). The findings are consistent with the broader literature on COVID-19 immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study's main conclusions are that acute IAV infection is characterized by IM expansion and monocyte-mediated cytokinemia driving cell migration to the nasopharynx; older patients show recruitment patterns skewed toward IMs and TNF rather than cDC2s which may contribute to disease severity; and different respiratory viruses elicit distinct immune cell recruitment patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 represent the study's primary conclusions, which are well-supported by the comprehensive data on monocyte/DC distribution (C12-C28), maturation (C29-C36), cytokine production (C37-C52), age effects (C24-C26, C42, C107, C122), and comparative viral infection data (C54-C66). The speculative element in C138 about contribution to disease severity is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The introduction provides background on influenza epidemiology, transmission, immune cell biology (monocyte and DC subsets), and prior literature on immune responses during influenza and other respiratory viral infections, establishing the rationale for studying monocyte and DC responses in mild seasonal influenza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C106 are background statements from the introduction, appropriately supported by citations to established literature (WHO data, previous studies on influenza, monocyte/DC biology, and COVID-19). These claims establish the scientific context and knowledge gaps that motivate the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1720 @@
+{
+  "submission": {
+    "id": "b337f068-c301-4ccf-b509-ce2735fa0ba2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:27:39.403112Z",
+    "updated_at": "2025-12-03T01:27:39.403112Z"
+  },
+  "content": [
+    {
+      "id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "submission_id": "b337f068-c301-4ccf-b509-ce2735fa0ba2",
+      "content_type": "manuscript",
+      "content_text": "# Molecular basis for the adaptive evolution of environment-sensing by H-NS proteins\n\n## Authors\n\n- Xiaochuan Zhao<sup>1</sup> ([ORCID: 0000-0002-0127-4789](https://orcid.org/0000-0002-0127-4789))\n- Umar F Shahul Hameed<sup>2</sup> ([ORCID: 0000-0002-0552-7149](https://orcid.org/0000-0002-0552-7149))\n- Vladlena Kharchenko<sup>3</sup>\n- Chenyi Liao<sup>1</sup>\n- Franceline Huser<sup>3</sup>\n- Jacob M Remington<sup>3</sup>\n- Anand K Radhakrishnan<sup>3</sup>\n- Mariusz Jaremko<sup>3</sup>\n- \u0141ukasz Jaremko<sup>3</sup> ([ORCID: 0000-0001-7684-9359](https://orcid.org/0000-0001-7684-9359)) \u2020\n- Stefan T Arold<sup>2</sup> ([ORCID: 0000-0001-5278-0668](https://orcid.org/0000-0001-5278-0668)) \u2020\n- Jianing Li<sup>1</sup> ([ORCID: 0000-0002-0143-8894](https://orcid.org/0000-0002-0143-8894)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, The University of Vermont Burlington United States\n2. King Abdullah University of Science and Technology (KAUST), Computational Bioscience Research Center (CBRC), Biological and Environmental Science and Engineering (BESE) Thuwal Saudi Arabia\n3. King Abdullah University of Science and Technology (KAUST), Biological and Environmental Science and Engineering (BESE) Thuwal Saudi Arabia\n4. Centre de Biochimie Structurale, CNRS, INSERM, Universit\u00e9 de Montpellier Montpellier France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe DNA-binding protein H-NS is a pleiotropic gene regulator in gram-negative bacteria. Through its capacity to sense temperature and other environmental factors, H-NS allows pathogens like Salmonella to adapt their gene expression to their presence inside or outside warm-blooded hosts. To investigate how this sensing mechanism may have evolved to fit different bacterial lifestyles, we compared H-NS orthologs from bacteria that infect humans, plants, and insects, and from bacteria that live on a deep-sea hypothermal vent. The combination of biophysical characterization, high-resolution proton-less nuclear magnetic resonance spectroscopy, and molecular simulations revealed, at an atomistic level, how the same general mechanism was adapted to specific habitats and lifestyles. In particular, we demonstrate how environment-sensing characteristics arise from specifically positioned intra- or intermolecular electrostatic interactions. Our integrative approach clarified the exact modus operandi for H-NS-mediated environmental sensing and suggested that this sensing mechanism resulted from the exaptation of an ancestral protein feature.\n\n## Introduction\n\nThe histone-like nucleoid-structuring (H-NS) protein is a central controller of the gene regulatory networks in enterobacteria (Williams and Rimsky, 1997). H-NS inhibits gene transcription by coating and/or condensing DNA; an environment-sensing mechanism allows H-NS to liberate these DNA regions for gene expression in response to physicochemical changes (Fang and Rimsky, 2008; Winardhi et al., 2015; Ali et al., 2012). H-NS preferentially binds to AT-rich sequences, which enables its dual role in (1) the organization of the bacterial chromosome and (2) the silencing of horizontally acquired foreign DNAs (Gordon et al., 2011; Landick et al., 2015; Lang et al., 2007; Navarre et al., 2007). The latter mechanism allows bacteria to assimilate foreign DNAs, which, however, are only expressed as a last resort in case of acute threats or stresses (Navarre et al., 2007). Thus, H-NS plays a crucial role in the adaptation, survivability, and antibiotic resistance of bacteria. Given the growing threat of multidrug resistance, H-NS has attracted increasing research interest, with a particular focus on elucidating the molecular mechanisms of adaptive evolution (Ali et al., 2014; Will et al., 2015; Higashi et al., 2016).\n\nH-NS possesses two dimerization domains (site1, residues 1\u201344; site2, resides 52\u201382; the numbering of Salmonella typhimurium is adopted throughout the text) and a C-terminal DNA-binding domain (DNAbd, residues 93\u2013137) that is connected through a flexible region (linker, residues 83\u201392) to site2 (Figure 1;\u00a0Gordon et al., 2011; Shindo et al., 1995; Bloch et al., 2003; Arold et al., 2010; Gao et al., 2017). The combination of site1 \u2018head-to-head\u2019 dimers with site2 \u2018tail-to-tail\u2019 dimers allows H-NS to multimerize (Figure 1B). These H-NS multimers form a superhelix that recapitulates the structure of plectonemic DNA, offering a mechanism for a stable concerted DNA coating by H-NS that results in gene silencing (Arold et al., 2010). However, other modes of DNA association by H-NS were also proposed (Qin et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig1-v2.jpg)\n\n**Figure 1.:** (A) Sequence alignment of H-NS orthologs (prepared with ESPript 3.0) (Robert and Gouet, 2014): H-NSST (Salmonella typhimurium; UniprotID: P0A1S2), H-NSEA (Erwinia amylovora; UniprotID: D4I3 \u00d7 2), H-NSBA (Buchnera aphidicola; UniprotID: P57360), and H-NSIL (Idiomarina loihiensis UniprotID: Q5QW35). The color scheme for sequence similarity is\u00a0as\u00a0follows: red background (identical in four orthologs) > red font (similar residues) > black font (totally different). Green, cyan, and yellow frames indicate the site1 (residues 1\u201344), site2 (resides 52\u201382), and DNAbd (residues 93\u2013137). (B) Multimer formed by H-NSST. The model was built based on the available experimental structures (PDB accessions 3NR7 and 2L93). One H-NSST dimer shows site1, site2, and DNAbd colored as in (A) (green, cyan, and yellow, respectively). (C) The tetrameric H-NSST model we used for molecular dynamics\u00a0(MD) is shown. The central dimer has each domain color-coded as in (A) and (B). (D) Illustration of the environment of the selected orthologs.\n\nIn a previous study, we showed that site2 of S. typhimurium H-NS is the primary response element to temperature changes (Shahul Hameed et al., 2019). Site2 unfolds at human body temperature, allowing the linker-DNAbd region to associate with site1 to adapt an autoinhibited conformation incapable of binding to DNA. Salinity and pH can also influence the stability of site2 dimers and hence may also affect gene repression by H-NS (Shahul Hameed et al., 2019; van der Valk et al., 2017). Thus, the sensitivity of H-NS to temperature and other physiochemical changes allows human pathogens such as S. typhimurium, Vibrio cholerae, and enterohaemorrhagic Escherichia coli to sense when they enter a homothermic host and adapt their gene expression profiles accordingly.\n\nTo date, studies to elucidate environment-sensing of H-NS were almost exclusively conducted with proteins from two model systems, S. typhimurium (e.g. Ali et al., 2014; Navarre et al., 2006; Ali et al., 2013; Hu et al., 2019) and E. coli (e.g. van der Valk et al., 2017; Oshima et al., 2006; White-Ziegler and Davis, 2009; Kahramanoglou et al., 2011; Ueda et al., 2013; Kotlajich et al., 2015), both of which infect humans. Yet, H-NS orthologs are also present in enterobacteria that do not have warm-blooded hosts, raising the question of what biological role H-NS plays in these species. Answering this question requires to determine the structural basis for environment-sensing in H-NS orthologs with drastically different lifestyles. However, the multidomain composition of H-NS hamper conventional structural analysis. Therefore, we combined large-scale molecular simulations and spectroscopic approaches to elucidate how environment-sensing by H-NS may have adapted in different species. This multidisciplinary approach yielded an atomic-level understanding of how H-NS orthologs evolved specific residue substitutions to adapt environment-sensing to their bacterial habitats, and may open new avenues for strategies to combat antibiotic resistance.\n\n## Results\n\nTo investigate the adaptation of environment-sensing by H-NS, we searched for representatives of H-NS\u2013containing bacteria that have diverse lifestyles. Accordingly, we selected four H-NS orthologs from\u00a0~3000 hr-NS-like sequences available in the Uniprot database: (1) H-NSST from S. typhimurium. This bacterium is a pathogen of mammals and uses temperature-sensing to adapt to a presence inside the warm-blooded host. (2) H-NSEA from Erwinia amylovora, which is a plant pathogen that infects apples and pears. Hence, temperature is not a reliable differentiator between free-living and host-based states. (3) H-NSBA from Buchnera aphidicola. This bacterium is an obligate endosymbiont of aphids\u00a0and has no free-living forms. (4) H-NSIL from Idiomarina loihiensis, which is a free-living bacterium from a deep-sea hydrothermal vent producing large heat gradients. H-NSEA and H-NSBA share more than 60% sequence identity with H-NSST, whereas H-NSIL is only 40% identical to H-NSST (Figure 1A, Supplementary file 1A).\n\n### The site1 dimer is markedly more stable than the site2 dimer in the H-NS orthologs\n\nH-NSST site1 and site2 form homodimers to enable H-NS multimerization in a head-to-head/tail-to-tail fashion (Figure 1B;\u00a0Arold et al., 2010). In concert with the DNA interaction of the individual domains, this homo-oligomerization is required for tight DNA binding and hence gene repression. In our previous study, we showed that only H-NSST site2 dimers unfold and dissociate within a biologically relevant temperature range, whereas site1 dimers remain unaffected (Shahul Hameed et al., 2019). The higher stability of the site1 dimer of H-NSST is explained by a substantially larger contact surface between the two monomers (ca. 3300 \u00c52 compared to ca. 850 \u00c52 for site1 and site2, respectively, according to PDBePISA\u00a0[Krissinel and Henrick, 2007]).\n\nTo investigate whether this mechanism is conserved in other H-NS orthologs, we built homology models for H-NSEA, H-NSBA, and H-NSIL using the crystal structure of the H-NSST site1\u2013site2 fragment as a template (PDB ID: 3NR7) (Arold et al., 2010). Next, we constructed a tetrameric model as a minimal representation that conserves all features of the H-NS multimer. This tetramer contained two full-length H-NS monomers (residues 1\u2013137, with templates PDB IDs: 3NR7 and 2L93) and two partial monomers, truncated before site2 (residues 1\u201352) (Figure 1C). To probe differences in environmental responses of the orthologs, we first used conventional all-atom MD. We simulated all four tetramers (~100,000 atoms\u00a0in\u00a0each system; see Materials\u00a0and\u00a0methods) for 200 ns at three different conditions (0.15 M NaCl, 293 K; 0.50 M NaCl, 293 K/20\u00b0C; or 0.15 M NaCl, 313 K/40 \u00b0C) (Supplementary file 1B).\n\nThe tetramer simulations at 0.15 M NaCl and 20\u00b0C produced a lower residue fluctuation level in site1 (local root-mean-square fluctuation\u00a0[RMSF] 0.4\u20131.9 \u00c5) than in site2 (local RMSF 0.5\u20134.4 \u00c5) for all four orthologs (Supplementary file 1C). The higher stability of the site1 dimer is explained by the generally higher number of nonpolar contacts than in the site2 dimer (Figure 2\u2014figure supplement 1). These contacts involved conserved hydrophobic amino acid residues, notably L5 (or I5) and L8 of \u03b11, L14 of \u03b12, and L23, L26, V36, and V37 (or I37) of \u03b13 (Figure 2). Our in silico mutant stability prediction analysis corroborated qualitatively the importance of hydrophobic residues for stabilizing the site1 dimer, in particular of L5, L8, L23, and L26 (Supplementary file 1D and 1E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig2-v2.jpg)\n\n**Figure 2.:** Hydrophobic contact residues are shown as sphere models and polar contact residues as stick models. The two protein chains forming the dimer are color-coded. The site2 sequence alignment indicates in red the residue sites that potentially form salt bridges in H-NSST, and in green the residues that form nonpolar contacts in H-NSST. For additional details, see Figure S1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Comparison of nonpolar contacts of H-NS orthologs at 20\u00b0C and 0.15M NaCl, using the last 100 ns in the molecular dynamics\u00a0(MD) simulations.\u00a0(B) The separation distance between residue 42/44 and residue 87/89 (Y axis in \u00c5) versus time (X axis in nanosecond). The separation distance was measured as the C\u03b1\u2212C\u03b1 distance in the tetramer model (within chains B/C, which were modeled as full-length molecules). The color scheme annotates different simulation conditions: 20\u00b0C, 0.15 M NaCl (green), 20\u00b0C, 0.50 M NaCl (blue), and 40\u00b0C, 0.15 M NaCl (red). For clarity, we show the smoothed data of two replicas for each system (solid and dash lines, respectively). Since complete unfolding of site2 was not observed in these simulations (presumably due to the short timescale and the difficulty of sampling), these plots indicate a minimum separation of 15\u201320 \u00c5 between the N- and C-termini, demonstrating that site2 has to unfold to allow closer contacts between the termini.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Size exclusion chromatography\u2013multi-angle light scattering\u00a0elution profile of H-NSBA (dark green), H-NSEA (fluorescent green), H-NSIL (violet), H-NSST (red), and H-NSST E34K/E42K (magenta) in buffer containing 20 mM HEPES pH 7.5 and 150 mM NaCl. (B) Table showing observed molecular weight and calculated molecular weight for monomeric protein of H-NS 1-57. (C) Aggregation temperature of H-NS 1-57 measured between 20\u00a0and\u00a095\u00b0C in buffer containing 20 mM HEPES pH 7.5 and 150 mM NaCl. (D) Table showing the aggregation temperature of H-NS 1-57 proteins.\n\nThese interactions remained formed in all site1 dimers in our tetramer simulations (at 0.15 M NaCl at 20\u00b0C) and tetramer simulations at higher salinity (at 0.50 M NaCl at 20\u00b0C) or higher temperature (at 0.15 M NaCl at 40\u00b0C). Hence, we found that the stability of the site1 dimers resulted mainly from strong and conserved nonpolar packing. Indeed, recombinantly expressed site1 fragments of all four orthologs formed\u00a0~15 kDa dimers in size exclusion chromatography\u2013multi-angle light scattering. These dimers were stable within the temperature range relevant for environment-sensing (aggregation temperature, Tagg\u00a0>\u00a037 \u00b0C; Figure 2\u2014figure supplement 2). We concluded that the mechanism observed for H-NSST\u00a0\u2013 where site1 remains stable and the site2 stability is affected by the environment \u2013 is conserved in H-NSEA, H-NSBA, and H-NSIL.\n\n### Variations in the site2 sequence alter the sensing sensitivity of H-NS orthologs\n\nCompared to site1 dimers, site2 dimers harbor fewer nonpolar contacts, only involving residues L58 (or I58), Y61 (or F61), M64 (or A64), I70, and L75 (or I75) (Figure 2). Hence, while site1 dimerization was largely maintained by nonpolar packing, site2 dimerization was strongly driven by electrostatic interactions from selective salt bridges. MD simulations revealed that these salt bridges were in a dynamic equilibrium between forming, breaking, and rearranging. These salt bridges were either formed in cis, within the site2 monomer, (e.g. E52-R56 and R62-E63 in H-NSST) or in trans, between two monomers in the site2 dimer (e.g. R54-D71\u2019, R54-E74\u2019, and K57-D68\u2019 in H-NSST,\u00a0where the apostrophe denotes residues from the second chain; illustrated in Figure 3). In addition to substitutions that delete (E52A in H-NSBA; E63S and D68A in H-NSIL) or weaken (E63Q in H-NSEA; D71N in H-NSBA) these salt bridges, our simulations showed different levels of site2 salt bridge stability among orthologs (Figure 3, Supplementary file 1F): (1) The inter-monomer salt bridge R/K54-E/D74\u2019 was stable in all our simulations at 20\u00b0C and 0.15 M NaCl, but less likely to form at an increased temperature (40\u00b0C) or salinity (0.50 M NaCl), suggesting that this salt bridge is involved in environmental sensing (Figure 3A). (2) Absent in H-NSIL, the inter-monomer salt bridge K57-D68\u2019 remained formed during all our simulations of H-NSST, H-NSEA, and H-NSBA, indicating a \u2018housekeeping\u2019 role for the stability of the site2 dimer in all orthologs except for H-NSIL (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig3-v2.jpg)\n\n**Figure 3.:** (A,\u00a0B) Violin plots of the distance between the nearest side\u00a0chain nitrogen atom of lysine/arginine and the side\u00a0chain oxygen atom of aspartic/glutamic acid in the salt bridge. Each subplot shows the results obtained at 20\u00b0C, 0.15 M NaCl (left), 40\u00b0C, 0.15 M NaCl (middle), and 20\u00b0C, 0.50 M NaCl (right). Each \u2018violin\u2019 displays the mean value (the bar in the center of the violin), the range (the stretched line), and the distribution of the distance (kernel density on the side). As we use the numbering of H-NSST, there are position shifts in H-NSBA and H-NSIL: R54 to R53, K57 to K56, and D68 to D67 in H-NSBA; R54 to K53 in H-NSIL. (C) Final snapshots of the R54-E74\u2019 salt bridge in H-NSST and K54-D71\u2019 in H-NSEA. Color scheme of the cartoon: 20\u00b0C, 0.15 M NaCl (green), 40\u00b0C, 0.15 M NaCl (red), and 20\u00b0C, 0.50 M NaCl (cyan). (D) Final snapshots of the K57-D/A68 contact in H-NSST and H-NSIL. Same color scheme as (C). (E) Free energy changes as a result of increased salinity or temperature, according to the potential of mean force\u00a0(PMF) calculated from umbrella sampling.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** To highlight the linker region in \u03b13, we use a pale color for the rest of the backbone in each protein. This figure shows that while H-NS proteins are mostly \u2018straight\u2019 at 20\u00b0C, 0.15 M NaCl (green), bending of \u03b13 is common through all H-NS orthologs under the high-temperature or high-salinity condition. The most significant bending is found in H-NSST.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The umbrella histogram and convergency to simulate the H-NS orthologs site2 dimer at different simulation conditions: 20\u00b0C, 0.15 M NaCl (Green), 20\u00b0C, 0.50 M NaCl (Blue), and 40\u00b0C, 0.15 M NaCl (Red).\u00a0Each PMF subplot contains a series of five curves from 38 to 54 ns/window (4 ns increment), demonstrating convergence. (B) Shown\u00a0are\u00a0the initial (yellow bar) and final (blue bars) average helicity percentage of all windows in umbrella sampling.\n\nOur simulations show how specific protein dynamics might modulate the ortholog\u2019s response to salinity or temperature. For example, we observed increased bending of the \u03b13 backbone (annotated by the black arrow in Figure 3C) at high temperature (40\u00b0C) or high salinity (0.50 M NaCl) (Figure 3\u2014figure supplement 1). Although \u03b13 bending occurred in all orthologs, it only significantly affected the site2 dimer of H-NSST by separating R54 from E74\u2019 or D71\u2019, suggesting that this mechanism contributed to the salt and temperature sensitivity of H-NSST site2, whereas it was not strong enough to significantly affect site2 stability in other orthologs.\n\nAnother example was given by H-NSEA, where an alternative R54-D71\u2019 salt bridge formed whenever the R54-E74\u2019 contact was broken at 40\u00b0C. This alternative R54-D71\u2019 salt bridge stabilized the H-NSEA site2 dimer at the higher temperature, suggesting that this compensatory mechanism resulted in a decreased sensitivity to temperature (Figure 3C). H-NSIL provided a final example for a specific response. Compared with the R54-E74\u2019 salt bridge (Figure 3A), the K57-D68\u2019 salt bridge only varied slightly in all our simulations (Figure 3B). However, the substitution D68A in H-NSIL supplanted the electrostatic interaction with a nonpolar interaction, which was broken at 40\u00b0C in our simulations (Figure 3D). This effect suggested that H-NSIL had a reduced sensitivity to salinity, while remaining sensitive to temperature.\n\nTo complement the dynamics of H-NS orthologs from our conventional MD simulations, we used extensive simulations with umbrella sampling\u00a0(US) to quantitate the overall site2 stability. We calculated the potential of mean force (PMF) for site2 dimer dissociation (residues 50\u201382, ~46,000 atoms) of the four H-NS orthologs for three different conditions (low salinity/low temperature, high salinity, or high temperature). The site2 monomers were not constrained and remained structurally flexible during the dissociation process. To ensure convergence in the PMFs, we employed long windows (54 ns) in simulations totaling 52 \u00b5s (details provided in the SI; see Figure 3\u2014figure supplement 2 for resulting histograms and PMFs along the dissociation coordinate). According to the free-energy difference between the dimerization and dissociation states (\u2206G\u00a0=\u00a0Gdimer \u2212\u00a0Gdissociation), we estimated the energetic impact from increased salinity and temperature as\u00a0follows: \u2206\u2206G\u00a0=\u00a0\u2206Ghigh salinity or temperature\u2212\u00a0\u2206G293K, 0.15M NaCl (Figure 3E). Notably, high salinity (0.50 M NaCl) or temperature (40\u00b0C) decreased the stability of the H-NSST site2 dimer by 2.2 kcal/mol. H-NSBA displayed a similar sensitivity to temperature but a lower sensitivity to salinity, which destabilized the dimer by 1.5 kcal/mol. Interestingly, our data indicated that H-NSEA was only sensitive to salinity, whereas raising the temperature had little impact on the stability of the H-NSEA site2 dimer. Conversely, H-NSIL only responded to temperature, whereas the increased salinity did not affect the stability of its site2 dimer (\u2206G\u00a0~\u00a00 kcal/mol). Collectively, our conventional MD simulations and PMF calculations suggested how, on the atomic level, changes in the site2 sequence may alter the sensitivity of the H-NS orthologs to different environmental changes.\n\n### The autoinhibited H-NS conformation is maintained through dynamic electrostatic interactions\n\nIn a previous study (Shahul Hameed et al., 2019), we had shown that melting and dissociation of site2 dimers allow H-NSST to adapt a closed conformation in which the linker-DNAbd fragment interacts with a negatively charged region on site1 \u03b13 (Figure 4\u2014figure supplement 1A) and that this autoinhibitory interaction is incompatible with DNA interactions. However, due to extensive signal broadening of mainly linker amides exchanging with water, our conventional proton-detected NMR analysis based on exchangeable amide H/N-observed correlations did not allow confident mapping of the binding site on the C-terminal region (Shahul Hameed et al., 2019;\u00a0Figure 4\u2014figure supplement 1B). Herein, we overcame this limitation by using proton-less 13C-detected NMR analysis to complete the resonance assignment of the linker-DNAbd fragment (Figure 4 and Figure 4\u2014figure supplement 1C). These complete carbon chemical shifts allowed us to elucidate the structural mechanism of H-NSST autoinhibition fully and, in a second step, to use this understanding to investigate the existence of this closed conformation in the orthologs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig4-v2.jpg)\n\n**Figure 4.:** (A) The 2D CBCACO correlation 13C-detected spectra of 200 \u00b5M 13C,15N H-NSSTCt (orange) and 150 \u00b5M 13C,15N H-NSSTCt saturated 1:10 (molar) with unlabeled 1.5 mM H-NS1-57 (dark grey). Given a Kd of\u00a0~4 \u00b5M (Shahul Hameed et al., 2019) over 99% of H-NSSTCt are expected to be in the complexed form under these conditions. The OX axis holds all of the 13C,15N H-NSSTCt backbone C\u2019 carbonyl chemical shifts correlated with OY (marked 13Cab) where each amino acid stripe crosses with its own C\u03b1 and C\u03b2 (linked by thin dotted lines). (B) Top panel: The 13C chemical shift differences as a function of residue number of H-NS1-57 saturated 13C,15N H-NSSTCt and apo form. The most marked changes occur in residues K89, R90, A91, and A92 that predominantly form a \u03b2-turn type VIII. (C) Structural model of the H-NSSTCt in transparent surface representation revealing the backbone as ribbon. The structure is based on PDB ID 2L93, but extended N-terminally in random conformation to represent the full sequence of our construct in its apo form. All residues experiencing significant 13C chemical shift changes upon binding to H-NS1-57 are marked in magenta on the structure of the H-NSSTCt; positive residues (R+K) are labeled in bold. Bottom panel: The sequence alignment of the four selected HN-S orthologs highlighting conserved positively charged linker residues (bold) and residues implicated in binding to site1 (green). (D) Secondary structure motifs (red: helix; blue: \u03b2-sheet; green: \u03b2-turn, present only in the complex) and the RCI-S2 order parameter (describing the backbone dynamics) of ligand-free (orange) and saturated (gray) H-NSSTCt are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0The 1H-15N HSQC spectrum of 200 \u00b5M 13C,15N-labeled S. typhimurium H-NS84-137 protein in Apo (orange) and H-NS1-57 saturated (1.5 mM) form (dark gray). The residues that are missing from H/N correlation 1H-detected experiments are depicted in (B) with black and green mapped on the NMR solution structure of H-NS91-137 (PDB id 1HNR; the lowest energy structure). The flexible residues of S84-A91 were added together with GPLG artificial residues left after the tag cleavage. The only tryptophan side chain H\u03b5/N\u03b5 imidazole correlation is marked W109 in green. (C) The overlay of 2D (H)CACO and (H)CANCO 13C-detected experiments and sequential walk for two regions, G80-A91 marked black and T110-G111 marked green, that are not detected on (A). A complete sequential carbon walk can be done for the entire protein H-NS84-137 sequence.\n\nWe first titrated unlabeled H-NSST site1 (residues 1\u201357) onto the 13C,15N-labeled H-NSST C-terminal region (CtST, residues 84\u2013137), comprising the linker (residues 84\u201393) and DNAbd (residues 94\u2013137) (Figure 4A, Figure 4\u2014figure supplement 1A). Motif identification from chemical shifts (MICS) (Shen and Bax, 2013) revealed that the interaction promoted the formation of a short type VIII \u03b2-turn in residues 89\u201392 (MICS confidence coefficient was 0.69). No significantly stable other motif besides the residual random coil was identified (Figure 4B,C). This sharp turn brings the positively charged linker side\u00a0chains K87, K89, R90, R93 closer to each other than in the free state, presumably as a result of pairing them with opposite charges on site1 (Shahul Hameed et al., 2019;\u00a0Figure 4B,C).\n\nTo further probe the local dynamics of the polypeptide chain, we determined the random-coil-index order parameter RCI-S2 based on the fully assigned 13C-resonances for each residue for the ligand-free and site1-saturated CtST. The dynamics of the well-ordered DNAbd domain remained unchanged with or without site1 present, in agreement with its only minor involvement in the autoassociation (Figure 4D). Conversely, the linker residues 84\u201395 were disordered without regular secondary motifs in the absence of site1 (RCI-S2\u00a0<\u00a00.35). Upon addition of site1, the local dynamics decreased, particularly within the stretch of four amino acids K89-R90-A91-A92 (RCI-S2\u00a0>\u00a00.6) that predominantly form the type VIII \u03b2-turn according to MICS. Nonetheless, the overall RCI-S2 of the linker remained low, although experimental conditions resulted in\u00a0>99% of ligand saturation of the labeled CtST, demonstrating that the association with site1 did not substantially restrict the linker\u2019s movements (Figure 4D).\n\nCollectively, our analysis established that the autoinhibitory site1:CtST association was driven by oppositely charged residues located on site1 and the linker, and involved only a small region of the DNAbd. The center of this linker region, residues 89\u201392, rigidified upon binding and predominantly formed a \u03b2-turn conformation. However, the resulting intramolecular interaction was maintained through \u2018fuzzy\u2019 charge-pairing that did not fix the partners into a structurally stable complex.\n\n### Autoinhibition varies among H-NS orthologs\n\nHaving established the detailed autoinhibitory interactions between site1 and the Ct region in H-NSST, we next examined the H-NS orthologs. Based on our structural models (initial homology models and models from conventional MD), the electrostatic surface of the Ct was well conserved across all H-NS orthologs (Figure 5A). This level of conservation was expected, given that this region is also required for DNA association (Gao et al., 2017) \u2013 a role that needs to be conserved in all H-NS. Conversely, the site1 surface that binds to Ct was not conserved across all orthologs. While H-NSEA was similar to H-NSST in the overall charge distribution, \u03b13 of H-NSBA showed a distinctly basic surface. H-NSIL displayed an intermediate electrostatic character, with features closer to H-NSST/H-NSEA (Figure 5A). These findings suggested that the stability of the closed conformation varies across orthologs. To test this prediction, we carried out in vitro binding experiments using microscale thermophoresis (MST).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig5-v2.jpg)\n\n**Figure 5.:** (A) Left and middle panels: Surface representation of site1 of H-NS orthologs (modeled on E. coli H-NS, PDB accession 1NI8) shown as side and \u03b13 (bottom) view. Right panel: Ct, comprising the linker-DNAbd fragment, residues 84\u2013137. The top row shows the residues mapped by NMR involved in forming the autoinhibitory closed conformation (Shahul Hameed et al., 2019 and this study). Other rows show the electrostatic surfaces, color-ramped from blue (positive) to red (negative) (calculated and visualized by Pymol). (B) Microscale thermophoresis (MST) titrations of unlabeled linker-DNAbd fragment onto 50 nM of Alexa-488-labeled H-NS\u00a01-57 at 23\u00b0C (red) and 40\u00b0C (blue). The dissociation constant Kd is color-coded in red (23\u00b0C) and blue (40\u00b0C). N.D.: not determined.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Microscale thermophoresis\u00a0(MST) curve for H-NSST84-137 binding to H-NS 1-57 of all four species and H-NSST1-57double mutant (E34K/E42K). (B) MST curve for H-NSST\u00a084-137 (K89E/R90E) binding to H-NSST1-57. (C) Cartoon representation of dimeric H-NSSTsite1 E34K (magenta stick) E42K (cyan stick) mutant. (D) Electrostatic surface of dimeric H-NSST site1 E34K/E42K mutant (\u03b13 view) showing the effect of the double mutation. Please compare with the \u03b13 view in Figure 5A of H-NSST and H-NSBA.\n\nThese binding experiments between site1 and Ct confirmed that the strength of the autoassociation was similar for H-NSST and H-NSEA (Figure 5B). The autoassociation was 10-fold stronger in H-NSIL than in H-NSST, despite a less acidic site1. Hence, autoinhibition in H-NSIL might include additional and/or different interactions. Conversely, H-NSBA did not show a significant capacity for autoassociation, as expected from its markedly more basic site1 surface. In agreement, the double H-NSST site1 mutant E34K/E42K (designed to make the electrostatic site1 surface of H-NSST B. aphidicola\u00a0like) dramatically lowered its affinity for H-NSSTCt (Figure 5\u2014figure supplement 1). In addition to the reduced electrostatic complementarity, H-NSBACt also has a proline residue (P91) in position 3 of the \u03b2-turn region, which is highly unfavorable for this secondary structure element (Creighton, 1990). Indeed, at room temperature, H-NSBACt associated only very weakly with H-NSST site1 (Kd > mM), whereas the Ct of H-NSEA and H-NSIL bound to H-NSST site1 with a similar affinity than H-NSSTCt (Kds were 31.2\u00a0\u00b1\u00a03 \u00b5M and 18.2\u00a0\u00b1\u00a02 \u00b5M, respectively Figure 5\u2014figure supplement 1A,B). Given that all four Cts display comparable electrostatic surfaces, the loss of affinity for H-NSBACt supported the importance of the \u03b2-turn. Increasing the temperature decreased the self-association strength 2-\u00a0to\u00a03-fold in H-NSST and H-NSIL and more than 10-fold in H-NSEA (Figure 5B). It also decreased the Kd for H-NSBA to values beyond the measurement range.\n\nWe concluded that the strength of the autoinhibitory conformation is mostly modulated by the electrostatic surface characteristics of site1. The Ct is constrained by the requirement to preserve the overlapping DNA binding surface, but can decrease autoinhibition by disrupting the \u03b2-turn conformation.\n\n### H-NS orthologs show adaptive features in vitro\n\nWe next experimentally assessed the response of the H-NS orthologs to physicochemical changes using dynamic light scattering (DLS). DLS provides the average hydration radius RH of the particles in solution, and hence gives a proxy for the tendency of H-NS molecules to form site2-mediated multimers or (still site1-linked) dimers. Thus, the RH is a convoluted signal of both effects, that\u00a0is the relative strength of site2 multimerization and of the autoinhibitory conformation (if it exists). We measured the RH under different salt concentrations and temperatures. As reported previously, H-NSST showed a clear drop in RH from 10\u00b0C to 40 \u00b0C (Figure 6A;\u00a0Shahul Hameed et al., 2019). The marked decrease of RH for curves at 0.15, 0.25, and 0.50 M NaCl indicated a strong inverse correlation between salinity and site2 stability, in agreement with a key role of salt bridges in stabilizing the site2 dimers.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig6-v2.jpg)\n\n**Figure 6.:** (A) Dynamic light scattering\u00a0(DLS) experiments showing changes in hydrodynamic radius (as a proxy of apparent site2 stability) upon changes in salinity and temperature. Data in (B,\u00a0D) are means \u00b1 S.D., n\u00a0=\u00a03. (B) Fluorescence anisotropy to determine oligomerization of H-NS site1\u2013site2 (residues 1\u201383) and mutants at various salt concentrations. Unlabeled H-NSST (1\u201383) was titrated against Alexa-488-labeled H-NSST (1\u201383), D68A, and R54M mutants. Unlabeled H-NSIL (1\u201383) was titrated against Alexa-488-labeled H-NSIL (1\u201383) and A68D mutant.\n\nAll three H-NS orthologs displayed a similar behavior overall, further supporting that the general mechanism of site2-mediated multimerization and environment-sensing was preserved. However, we noted important differences in the orthologs\u2019 response characteristics (Figure 6A): (1) Of the four orthologs, H-NSST responded most strongly to salinity and temperature, consistent with the broken R54-E74\u2019 salt bridge and large site2 RMSF in our high-salinity or high-temperature simulations. (2) H-NSEA was less temperature\u00a0sensitive and showed weaker multimerization than the other orthologs. Indeed, our simulations suggested that H-NSEA site2 can rearrange the inter-dimer salt bridge and form either R54-E74\u2019 or R54-D71\u2019 to maintain site2 stability at higher temperatures. (3) H-NSBA had the highest tendency to multimerize among all the orthologs tested, which might partly be explained by the\u00a0absence of the autoinhibitory conformation. Compared to H-NSST, our PMF calculations showed a slightly higher sensitivity to temperature and a slightly reduced sensitivity to salinity. Although these tendencies were apparent in our DLS data, these data were also affected by the fact that H-NSBA required more than 150 mM NaCl to stay in solution, but H-NSBA nonetheless aggregated at 30\u00b0C. (4) H-NSIL showed a decreased sensitivity to salinity compared to H-NSST, as suggested by our computational analysis (i.e. the lack of the site2 K57-D68\u2019 salt bridge, the lack of salt-promoted free-energy changes, and the attenuated electrostatic site1 surface).\n\nTo corroborate these conclusions, we designed several site2 mutants and tested their effect on protein multimerization using fluorescence anisotropy. To eliminate the influence of the autoinhibitory site1:Ct interaction, we used H-NS constructs that lacked the Ct (H-NS 1\u201383). The normalized fluorescence polarization (NFP) of H-NSST declined between 20\u00b0C and\u00a0~40\u00b0C to a value of 0.2, indicating that the average particle size decreased with temperature, as observed in DLS. And as in DLS, increases in salt lowered the NFP, and hence, the propensity of the particles to form site2-linked multimers (Figure 6B). The H-NSST R54M mutant, disrupting the \u2018housekeeping\u2019 salt bridges R54-E74\u2019 and R54-D71\u2019, displayed an NFP of 0.2 at all temperatures and salt concentrations. Thus, this mutant supported the key roles of the R54-mediated salt bridges in H-NS multimerization and environment-sensing. To experimentally assess the role of the K57-D68\u2019 salt bridge in conveying salt sensitivity, we introduced the D68A \u2018IL-like\u2019 mutation in H-NSST, and the A68D \u2018ST-like\u2019 mutation in H-NSIL. These mutations abrogated salt sensitivity in H-NSST and introduced salt sensitivity in H-NSIL, as predicted by our computational analysis (Figure 6B).\n\nCollectively, our experimental observations revealed significant differences in response to physicochemical parameters, which were in agreement with our predictions based on the molecular features of the H-NS orthologs.\n\n### Conclusion\n\nEnvironment-sensing through the pleiotropic gene regulator H-NS helps S. typhimurium to adapt when it is present inside its host mammal. In a previous study, we had shown that an increase in temperature, and to some extent salinity, dissociates the second dimerization element (site2). Melting of site2 produces two effects: first, it impedes synergistic DNA binding of H-NS multimers, and second, it allows H-NS to adopt an autoinhibitory conformation where DNA binding residues on the C-terminal linker-DNAbd fragment (herein abbreviated as the Ct) associate with the N-terminal site1 dimerization domain (Shahul Hameed et al., 2019). In our current study, we confirmed that site2 is the element that senses changes in physicochemical parameters, and we uncovered additional aspects of this process. In particular, proton-less NMR fully revealed the position and dynamics of the Ct residues involved in the autoinhibitory association with site1. We also showed that the formation of a \u03b2-turn in the linker residues 89\u201391 is associated with the autoinhibited conformation. The Ct residues critical for autoinhibition cannot reach site1 without site2 dissociation (Figure 3\u2014figure supplement 2B), confirming that the closed autoinhibited conformation is mutually exclusive with H-NS multimerization. Our NMR analysis also demonstrated that this autoinhibition is achieved at a low entropic cost, maintaining a high flexibility with respect to the exact distribution of the interacting charges on both site1 and the linker-DNAbd fragment. On the one hand, avoiding the entropic penalty helps the autoinhibitory interaction to prevail against the competing DNA association. (Of note, the covalent link between site1 and the Ct will enhance their local concentration and hence their apparent affinity compared to our measurement based on separate domains in Figure 5B.) On the other hand, the fuzziness of the charge\u2013charge interactions facilitates preserving the capacity for autoinhibition during bacterial evolution and adaptation.\n\nBased on our refined molecular understanding of S. typhimurium H-NS, we then investigated environment-sensing of H-NS orthologs from bacteria that infect plants, bacteria that are endosymbionts of insects, and bacteria that are presumably free-living in or close to a hydrothermal vent. Across all four orthologs, we observed a conceptually similar response to temperature and salt, both overall and on an atomic level, where salt bridges play key roles. This similarity suggests that environment-sensing in H-NS evolved by co-opting an ancestral feature, namely the relative instability of the simple site2 helix-turn-helix dimerization motif. However, marked idiosyncrasies in the response of H-NS orthologs suggest that this ancestral feature was then adapted to fit the current habitat and lifestyle. Thus, our analysis suggests that environment-sensing by H-NS originated from an exaptation followed by adaptation. Our combined computational and experimental structural analysis allowed us to relate the observed in vitro features of this adaptation to events on a residual level: in particular, the salt bridge disposition and stability of site2, and the strength of the autoinhibition governed mostly by the electrostatics of site1 helix \u03b13.\n\nAlthough other factors inside bacteria can modify the in vitro behavior of the isolated protein, it is interesting to consider these idiosyncrasies with respect to the bacteria\u2019s habitats (Figure 7):\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57467/elife-57467-fig7-v2.jpg)\n\nOur integrative approach provided atomistic insights on how residue-level substitutions on a protein support adaptation of organisms to different lifestyles.\n\n## Materials and methods\n\nUsing the CHARMM36 all-atom force field, we performed conventional MD simulations of H-NS tetramers and simulations with US enhanced sampling of site2 dimers in GROMACS. For DLS and MST, recombinant protein production and measurements were adapted from Shahul Hameed et al., 2019. However, we fluorescently labeled site1 for DLS, instead of the Ct. For NMR, 13C,15N-labeled S. typhimurium H-NS84-137 was expressed in minimal M9 media with 5 g/L of [U-13C] glucose and 1 g/L of 15NH4Cl salt. Proton and low-\u03b3 detected high-resolution NMR spectroscopy was carried out on a 700MHz Bruker\u00a0Avance NEO spectrometer equipped\u00a0with a 5 mm TXO cryogenic probe optimised for 15N and 13C direct detection at 25\u00b0C. Details are shown below.\n\n### Computational methods\n\n#### Model preparation\n\nWe built our homology model of full-length H-NS (UniprotID: P0A1S2) based on orthologs in SwissModel (Arnold et al., 2006) with the templates for the dimerization domain (PDB ID: 3NR7) and the DNA-binding domain (PDB ID: 2L93). The site2 dimer models were initiated in an anti-parallel configuration, while the tetramer models were constructed according to the crystal packing (PDB ID: 3NR7). Maestro (Schr\u00f6dinger, Inc) was used to construct the full-length model from different domains.\n\n#### Simulation setup\n\nOur simulations were carried out by GROMACS (Wassenaar et al., 2013) (MD simulations of tetramers and PMF simulations of site2 dimers). All the models were solvated in a TIP3P water box, with counterions to neutralize the charges and additional NaCl for the desired salinity. Each tetramer system contains ~33,000 TIP3P water molecules, counter ions, and 150 or 500 mM NaCl, totaling ca. 100,000 atoms in a periodic box 13 \u00d7 9\u00a0\u00d7 9 nm3. All simulations were performed following a minimization, 250 ps equilibration in the NVT and NPT ensemble with Berendsen temperature and pressure coupling, and a production stage NPT (20 or 40\u00b0C, 1 bar). The CHARMM36 force field (Best et al., 2012) was used with the cmap correction. The particle mesh Ewald (PME) technique (Darden et al., 1993) was used for the electrostatic calculations. The van der Waals and short-range electrostatics were cut-off at 12.0 \u00c5 with switch at 10 \u00c5.\n\nThe PMF simulations were carried out with the MD program GROMACS (Wassenaar et al., 2013) using the umbrella sampling technique. The CHARMM36 force field was also used. Each site2 monomer of the center of mass (COM) distance was chosen as the dissociation pathway and used for enhanced sampling. After 500 ps equilibrium with the NPT ensemble, initial structures for windows along the reaction coordinates were generated with steered MD. In the steered MD simulation, one chain was pulled away along the direction of increasing the COM distance with a force constant of k\u00a0=\u00a012 kcal mol\u22121 \u00c5\u22122, until the COM distance reached 25 \u00c5. The windows were taken within a range of 0\u201325 \u00c5. The umbrella windows were optimized at the 0.3 \u00c5 interval to ensure sufficient overlap. There are about 80 windows per simulation, and each window was simulated with a force constant of 1.2 kcal mol\u22121 \u00c5\u22122. All PMF simulations converged in 54 ns per window (Figure 3\u2014figure supplement 2A). The helicity percentage of initial and final structures was measured for each window. For all windows, the helicity percentage was approximately 87.5% for the initial models and 85% for the final ones (Figure 3\u2014figure supplement 2B).\n\n### Experimental methods\n\n#### Protein production\n\nS.\u00a0typhimurium H-NS1-57,C21S, H-NS1-57,C21S,E34K,E42K, H-NS1-83, C21S, H-NS1-83,C21S,D68A, H-NS1-83,C21S,R54F, H-NS84-137,\u00a0and H-NS84-137,K89E,R90E were cloned and produced as described previously (Shahul Hameed et al., 2019). E. amylovora (H-NS1-57, H-NS82-134), B. aphidicola (H-NS1-57, H-NS84-135), and I. loihiensis (H-NS1-57, H-NS1-83, H-NS1-83,A68D,\u00a0and H-NS85-138) genes were individually cloned into pGEX6P-1, expressed, and purified as described previously (Shahul Hameed et al., 2019). For the high-resolution nuclear magnetic resonance (NMR) studies, the uniformly double 13C,15N-labeled S. typhimurium H-NS84-137 (with additional GPLG residues before S84) was expressed in minimal M9 media with 5 g/L of [U-13C] glucose and 1 g/L of 15NH4Cl salt. The unlabeled S. typhimurium H-NS1-57 N-terminal domain was expressed and purified as\u00a0described before (Shahul Hameed et al., 2019). The final NMR buffer was 50 mM NaCl, 2% (vol/vol) D2O, 20 mM Bis\u2013Tris at pH 6.5%, and 0.002% NaN3.\n\n#### Dynamic light scattering\n\nFor DLS measurements, H-NS from S. typhimurium, E. amylovora, B. aphidicola, and I. loihiensis were expressed as N-terminal mCherry fusion proteins with an N-term His tag in E. coli BL21 using the expression vector pET28b. The linker sequence SAGGSASGASG was inserted between mCherry and H-NS proteins to avoid steric clashes in the dimer. Bacteria were grown in LB medium, induced with 1 mM IPTG at 25\u00b0C overnight. Cells were harvested and resuspended in lysis buffer (50 mM Tris pH8, 500 mM NaCl, 10 mM Imidazole with addition of lysozyme, DNase I, and 1% triton X-100) and lysed by mild sonication. Proteins and bacterial membranes were separated by centrifugation (30 min, at 15,000 \u00d7\u00a0g), and the supernatant was applied to Ni-NTA beads (Qiagen) for 2 hr. The column was washed thoroughly with 50 mM Tris pH8, 500 mM NaCl, 10 mM Imidazole, and protein was then eluted with 50 mM Tris pH8, 500 mM NaCl, 400 mM\u00a0imidazole, and\u00a01 mM dithiothreitol. After dialysis in 50 mM HEPES pH7.4, 300 mM NaCl, 0.5 mM TCEP, eluted protein was further purified by ion-exchange chromatography using either MonoQ or MonoS column (GE) in the same buffer. Protein multimerization was observed in the\u00a0combination of different salt (150, 250, and 500 M NaCl) and pH (6, 7, and 8) conditions. For this, 100 mM MES, MOPS, and HEPES buffers were used, with proteins at concentrations ranging from 125 to 500 \u03bcM, in a final volume of 100 \u03bcL. Dynamic light scattering measurements were performed in 96-well plates (Greiner) using a DynaPro plate reader-II (Wyatt Technologies). A triplicate of three wells was measured for every sample with five\u00a0acquisitions of 5 s for every well. The machine was cooled with gaseous nitrogen, with a starting temperature of 5\u2103, followed by an increase to 60\u2103 at a ramp rate set so that each well is measured every 1\u2103. Data were analyzed with DYNAMICS software (Wyatt Technologies) as temperature dependence and exported for further fitting on Origin software using a Logistic Fit. The presented results are mean values with standard error mean determined from the triplicate sample.\n\n#### Proton and low-\u03b3 detected high-resolution NMR spectroscopy\n\nAll NMR measurements were done on 700 MHz Bruker Avance\u00a0NEO spectrometer equipped with a\u00a05 mm cryogenic TXO direct detection probe optimized for 15N\u00a0and\u00a013C\u00a0direct\u00a0detection at 25\u00b0C. The sequence-specific backbone resonance assignments of visible H/N correlations on 1H-detected spectra of S. typhimurium H-NS84-137 protein at 200 \u03bcM concentration in Apo and H-NS1-57-saturated (1.5 mM) forms were achieved with classical set of triple-resonance experiments, that\u00a0is HNCA, HncoCA, HNCO, HNcaCO, HNCACB, CBCAcoNH (Sattler, 1999) and previously published assignments (Shindo et al., 1995). The 100% complete sets of C\u03b1, C\u03b2, and C\u2019 resonances for Apo and H-NS1-57-saturated (1.5 mM) forms covering the entire protein sequence, together with the residues not visible on H/N correlation 1H-detected experiments (due to amide exchange with water), were achieved with intra-residue 2D (H)CACO (c_hcaco_ia3d, 16 scans) and (H)CACBCO (c_hcbcaco_ia3d, 32 scans) supported with sequential (H)CANCO (c_hcanco_ia3d, 96 scans) 13C-detected experiments (Gray et al., 2012). The low-\u03b3, 13C-detected experiments mentioned above were started with 1H-excitation in order to enhance the sensitivity and recorded in in-phase and anti-phase mode for the virtual decoupling. All spectra were processed in NMRpipe and analyzed in CARA and Sparky software. The random-coil-index order parameters RCI-S2 and secondary motifs, like \u03b2-turn, for Apo and H-NS1-57-saturated (1.5 mM) forms were determined from complete lists of C\u03b1, C\u03b2 (except glycines), N, C\u2019 chemical shifts with the TalosN and MICS programs, respectively. The significance of chemical shift perturbations (CSPs) was established as follows: We calculated the combined CSP of backbone 13C atoms, that\u00a0is CSP = sqrt(\u0394\u03c3C\u03b1^2 + \u0394\u03c3CO^2), and selected the residues that are above the median+1.5*IQR (interquartile range) as the cut-off (1.5*IQR corresponds to\u00a0~2.7*S.D.)\n\n#### MST for protein\u2013protein interactions\n\nH-NS (residues 1\u201357) from S. typhimurium and its double mutant (E34K, E42K), E. amylovora, B. aphidicola, and I. loihiensis were individually labeled N-terminally with fluorescent Alexa-488-TFP (Thermo Scientific) and then unlabeled C-term of those proteins and S. typhimurium double mutant K89E, R90E were titrated against Alexa-488-labeled N-term correspondingly and the final results were plotted as described previously (Shahul Hameed et al., 2019).\n\n#### Fluorescence anisotropy to determine protein oligomerization\n\nH-NSST 1-83,C21S and H-NSIL 1-83 were N-terminally labeled with Alexa-488-TFP (Thermo Scientific) (Shahul Hameed et al., 2019). 200 \u00b5M of unlabeled H-NSST 1-83,C21S, H-NSST 1-83,C21S,D68A, H-NSST 1-83,C21S,R54F, H-NSIL 1-83,\u00a0and H-NSIL 1-83, A68D were\u00a0added to 1 \u00b5M of the corresponding labeled H-NS proteins with the final volume of 25 \u00b5L. The proteins were incubated for 30 min, and then measurements were recorded at a temperature ranging from 20\u00b0C to 45\u00b0C with intervals of 5\u00b0C. Measurements were using black/clear 384 well plate (Corning) with PHERAstar FS microplate reader (BMG Labtech) installed with a fluorescence polarization filter. The excitation wavelength was 480 nm,\u00a0and emission was 520 nm. Polarization with a gain of 40% was used to measure the initial fluorescence polarization of 1 \u00b5M protein. Polarization was calculated using MARS data analysis software (Pastor-Flores et al., 2020).\n",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "767b1ea1-a442-4d75-b4b7-08f238487af6",
+      "submission_id": "b337f068-c301-4ccf-b509-ce2735fa0ba2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, Antidote Health Foundation United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57467.sa1](https://doi.org/10.7554/eLife.57467.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nCombining simulation, NMR and biophysical experiments, this study investigated the molecular basis of the temperature- and salinity-dependence of DNA availability regulated by H-NS protein. The study compared four orthologs from human, plants, insects and deep-sea hypothermal vent and illustrated that modulation of the strength of electrostatic interactions in H-NS oligomerization underlies the environment sensing.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Molecular Basis for the Adaptive Evolution of Environment Sensing by H-NS Proteins\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Yibing Shan as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Cynthia Wolberger as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nThe manuscript reports a study that combines simulation, NMR and biophysical experiments to determine the molecular basis of environment sensing of the histone-like nucleoid-structuring (H-NS) protein from enterobacteria, which regulate DNA availability for transcription in response to environmental cues including temperature and salinity. The study compared four orthologs from human, plants, insects and deep-sea hypothermal vent and concluded that the differential strength of the electrostatic interactions at the so-called site 1 of H-NS in its oligomerization may explain the different temperature and salinity-dependence of these orthologs. The authors argue that this provide a molecule mechanism for the adaptive evolution of the H-NS proteins.\n\nRevisions for this paper:\n\n1) The reviewers raised concerns that some of the key conclusions do not have direct experimental support, while the simulation observations are highly qualitative. The conclusion regarding the role of electrostatic interactions in the evolutionary adaption needs substantiation. Point mutations at Site 1 should be tried to validate this conclusion. Alchemical free-energy calculation (FEP) on mutations at selected residues at Site 1 should be considered.\n\n2) There is not enough direct evidence to attribute the difference in site1 and Ct binding to \"dynamic electrostatic interactions\". At minimum, a salt dependence study should be done. Ideally, one should perform site-specific mutagenesis experiments to test some of the specific contacts discussed in detail from MD trajectories.\n\n3) Regarding the interpretation of how site2 sequences alter sensing sensitivity. The discussion is speculative and rely solely on the presence and absence of various salt bridges during MD. Again, such detailed predictions need to be substantiated by experimental data, such as mutagenesis data.\n\n4) Has the evolution relied on one or two specific mutations to introduce certain behavior, or relied on some more extensive combination of mutations. The authors should perform more extensive sequence comparison covering more bacteria H-NS proteins in more species.\n\n5) A key point is the presence of a b-turn in the structure around R90 that inverts the direction of the backbone and allows the formation of differential salt bridges. The authors used heteronuclear-detected NMR pulse sequences to assign the protein resonances and the determine the structural propensity of the protein. Protonless NMR spectroscopy was necessary as the amide resonances broadened beyond detection. How did the author decide the most significant chemical shift changes? Did they use the standard deviation from the average? Is it really the case that the NMR unequivocally determined the short type VIII \u03b2-turn in residues 89-92, or that's just one possible conformation consistent with the data. The authors needs to present more details of their analysis and carefully calibrate their claim with respect to this finding. What is the binding affinity between CTst and site 1? what are the concentrations used in NMR? How do we rule out nonspecific effects of CS changes? Figure 4 legend does not have a description of panel C. What coordinates did the authors use to render the residues involved in the b-turn? What type of b-turn is represented? Figure 4 Panels B and C do not seem to match.\n\n6) The PMF calculation provides a nice and self-consistent picture of the temperature and salt dependence of site2 dimerization. However, site2 is persumably unstable in monomer form based on the authors previous study (and the current one), but how is unfolding accounted for in PMF calculations. Has restraints to the folded structure been applied in the PMF calculation? In any case this potential needs to be discussed in the revision.\n\n7) The claims regarding exaptation and therapeutics from the Abstract are not even discussed or illustrated.\n\n8) DLS experiments appear somewhat low in information content. The interpretation of the DLS measurements may be complicated by the interplay of multimerization and intramolecular compaction. This needs to be discussed and calibrated. Mutatgenesis combined with DLS can help. Alternative approaches like analytical ultracentrifugation or non-equilibrium measurements such as SEC would increase the confidence in the conclusions.\n",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e40fcce-2914-4d7d-9392-0dc6f385143d",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C1",
+      "claim": "H-NS is a pleiotropic gene regulator in gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-binding protein H-NS is a pleiotropic gene regulator in gram-negative bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that is supported by established scientific knowledge about H-NS function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "37aa9034-71dd-447d-b4a7-af12a216cb36",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C2",
+      "claim": "H-NS allows pathogens like Salmonella to adapt their gene expression to their presence inside or outside warm-blooded hosts through its capacity to sense temperature and other environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Through its capacity to sense temperature and other environmental factors, H-NS allows pathogens like Salmonella to adapt their gene expression to their presence inside or outside warm-blooded hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the study's findings and prior knowledge about H-NS function in Salmonella.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "5f7e706e-f04b-4781-9153-83363f994748",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C3",
+      "claim": "Environment-sensing characteristics arise from specifically positioned intra- or intermolecular electrostatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we demonstrate how environment-sensing characteristics arise from specifically positioned intra- or intermolecular electrostatic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational and experimental data presented in the manuscript showing the role of salt bridges and electrostatic interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "a0938dbb-fd36-4ea8-94f9-11f23565f06b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C4",
+      "claim": "The sensing mechanism resulted from the exaptation of an ancestral protein feature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our integrative approach clarified the exact modus operandi for H-NS-mediated environmental sensing and suggested that this sensing mechanism resulted from the exaptation of an ancestral protein feature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of H-NS orthologs across different species.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "138098db-0da3-4943-84c5-66d35732a1aa",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C5",
+      "claim": "H-NS inhibits gene transcription by coating and/or condensing DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NS inhibits gene transcription by coating and/or condensing DNA; an environment-sensing mechanism allows H-NS to liberate these DNA regions for gene expression in response to physicochemical changes (Fang and Rimsky, 2008; Winardhi et al., 2015; Ali et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "af51672e-25bd-423b-a27c-05769d7eca46",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C6",
+      "claim": "H-NS preferentially binds to AT-rich sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NS preferentially binds to AT-rich sequences, which enables its dual role in (1) the organization of the bacterial chromosome and (2) the silencing of horizontally acquired foreign DNAs (Gordon et al., 2011; Landick et al., 2015; Lang et al., 2007; Navarre et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "92417179-d951-4e38-b7ee-48b575e7925b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C7",
+      "claim": "H-NS plays a crucial role in the adaptation, survivability, and antibiotic resistance of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, H-NS plays a crucial role in the adaptation, survivability, and antibiotic resistance of bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on H-NS's role in gene regulation and DNA silencing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "0779be8a-7e2a-4ef5-b791-0f05c604e8ba",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C8",
+      "claim": "H-NS possesses two dimerization domains (site1, residues 1\u201344; site2, resides 52\u201382) and a C-terminal DNA-binding domain (DNAbd, residues 93\u2013137).",
+      "claim_type": "EXPLICIT",
+      "source": "H-NS possesses two dimerization domains (site1, residues 1\u201344; site2, resides 52\u201382; the numbering of Salmonella typhimurium is adopted throughout the text) and a C-terminal DNA-binding domain (DNAbd, residues 93\u2013137) that is connected through a flexible region (linker, residues 83\u201392) to site2 (Figure 1; Gordon et al., 2011; Shindo et al., 1995; Bloch et al., 2003; Arold et al., 2010; Gao et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural information is supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "7f547688-49cd-458b-8338-376024e5280b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C9",
+      "claim": "The combination of site1 'head-to-head' dimers with site2 'tail-to-tail' dimers allows H-NS to multimerize.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of site1 'head-to-head' dimers with site2 'tail-to-tail' dimers allows H-NS to multimerize (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "d9eb60f0-3966-4f5f-9ade-4b9abdb45b16",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C10",
+      "claim": "H-NS multimers form a superhelix that recapitulates the structure of plectonemic DNA, offering a mechanism for a stable concerted DNA coating by H-NS that results in gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "These H-NS multimers form a superhelix that recapitulates the structure of plectonemic DNA, offering a mechanism for a stable concerted DNA coating by H-NS that results in gene silencing (Arold et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "55ab993e-e960-48ed-a681-d3889ea2c3e0",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C11",
+      "claim": "Site2 of S. typhimurium H-NS is the primary response element to temperature changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that site2 of S. typhimurium H-NS is the primary response element to temperature changes (Shahul Hameed et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "e5af1167-aab3-41a3-8ed7-832fb09c5a8d",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C12",
+      "claim": "Site2 unfolds at human body temperature, allowing the linker-DNAbd region to associate with site1 to adapt an autoinhibited conformation incapable of binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Site2 unfolds at human body temperature, allowing the linker-DNAbd region to associate with site1 to adapt an autoinhibited conformation incapable of binding to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous findings and is supported by the current study's data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "327bd64a-37f1-4bb0-a016-c3738c864953",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C13",
+      "claim": "Salinity and pH can also influence the stability of site2 dimers and hence may also affect gene repression by H-NS.",
+      "claim_type": "EXPLICIT",
+      "source": "Salinity and pH can also influence the stability of site2 dimers and hence may also affect gene repression by H-NS (Shahul Hameed et al., 2019; van der Valk et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "ff3d0ad1-d824-4fe7-a83d-1d5af8437bcf",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C14",
+      "claim": "H-NSEA and H-NSBA share more than 60% sequence identity with H-NSST.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NSEA and H-NSBA share more than 60% sequence identity with H-NSST, whereas H-NSIL is only 40% identical to H-NSST (Figure 1A, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 1A and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "73f9caff-2eb1-42bf-bde7-46dc6b3544a0",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C15",
+      "claim": "H-NSIL is only 40% identical to H-NSST.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NSEA and H-NSBA share more than 60% sequence identity with H-NSST, whereas H-NSIL is only 40% identical to H-NSST (Figure 1A, Supplementary file 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment data shown in Figure 1A and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "92f25353-32c3-4e77-b7f5-71ec98b13a52",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C16",
+      "claim": "Only H-NSST site2 dimers unfold and dissociate within a biologically relevant temperature range, whereas site1 dimers remain unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we showed that only H-NSST site2 dimers unfold and dissociate within a biologically relevant temperature range, whereas site1 dimers remain unaffected (Shahul Hameed et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "d7b3e6aa-ba18-446f-bb04-d7cb9f45b6bd",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C17",
+      "claim": "The higher stability of the site1 dimer of H-NSST is explained by a substantially larger contact surface between the two monomers (ca. 3300 \u00c52 compared to ca. 850 \u00c52 for site1 and site2, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The higher stability of the site1 dimer of H-NSST is explained by a substantially larger contact surface between the two monomers (ca. 3300 \u00c52 compared to ca. 850 \u00c52 for site1 and site2, respectively, according to PDBePISA [Krissinel and Henrick, 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis using PDBePISA software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c8810940-a944-4ba0-b1a8-c61cf0afc4fa",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C18",
+      "claim": "The tetramer simulations at 0.15 M NaCl and 20\u00b0C produced a lower residue fluctuation level in site1 (local root-mean-square fluctuation [RMSF] 0.4\u20131.9 \u00c5) than in site2 (local RMSF 0.5\u20134.4 \u00c5) for all four orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "The tetramer simulations at 0.15 M NaCl and 20\u00b0C produced a lower residue fluctuation level in site1 (local root-mean-square fluctuation [RMSF] 0.4\u20131.9 \u00c5) than in site2 (local RMSF 0.5\u20134.4 \u00c5) for all four orthologs (Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c3c5e577-0c77-4c42-94b1-3002e65c2b68",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C19",
+      "claim": "The higher stability of the site1 dimer is explained by the generally higher number of nonpolar contacts than in the site2 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher stability of the site1 dimer is explained by the generally higher number of nonpolar contacts than in the site2 dimer (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis of nonpolar contacts shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "b6782f6b-fd92-4509-8bfc-a68a85aa9911",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C20",
+      "claim": "Conserved hydrophobic amino acid residues, notably L5 (or I5) and L8 of \u03b11, L14 of \u03b12, and L23, L26, V36, and V37 (or I37) of \u03b13, are involved in nonpolar contacts in site1.",
+      "claim_type": "EXPLICIT",
+      "source": "These contacts involved conserved hydrophobic amino acid residues, notably L5 (or I5) and L8 of \u03b11, L14 of \u03b12, and L23, L26, V36, and V37 (or I37) of \u03b13 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "0ff50674-2c64-4df2-97f5-372f9da24da0",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C21",
+      "claim": "In silico mutant stability prediction analysis corroborated qualitatively the importance of hydrophobic residues for stabilizing the site1 dimer, in particular of L5, L8, L23, and L26.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in silico mutant stability prediction analysis corroborated qualitatively the importance of hydrophobic residues for stabilizing the site1 dimer, in particular of L5, L8, L23, and L26 (Supplementary file 1D and 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational mutant stability predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "6d9be46c-45b3-4a18-923f-15221b817579",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C22",
+      "claim": "The stability of the site1 dimers resulted mainly from strong and conserved nonpolar packing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we found that the stability of the site1 dimers resulted mainly from strong and conserved nonpolar packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "f03f7020-879a-4feb-83f2-a377933aca51",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C23",
+      "claim": "Recombinantly expressed site1 fragments of all four orthologs formed ~15 kDa dimers in size exclusion chromatography\u2013multi-angle light scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recombinantly expressed site1 fragments of all four orthologs formed ~15 kDa dimers in size exclusion chromatography\u2013multi-angle light scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental SEC-MALS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "45d9012b-88ff-4d2c-a3e0-e8000f65d5c4",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C24",
+      "claim": "Site1 dimers were stable within the temperature range relevant for environment-sensing (aggregation temperature, Tagg > 37 \u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "These dimers were stable within the temperature range relevant for environment-sensing (aggregation temperature, Tagg > 37 \u00b0C; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental aggregation temperature measurements shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "ab1b7ba8-1053-4916-83f1-fd8872bbed78",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C25",
+      "claim": "The mechanism observed for H-NSST \u2013 where site1 remains stable and the site2 stability is affected by the environment \u2013 is conserved in H-NSEA, H-NSBA, and H-NSIL.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the mechanism observed for H-NSST \u2013 where site1 remains stable and the site2 stability is affected by the environment \u2013 is conserved in H-NSEA, H-NSBA, and H-NSIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of all four orthologs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "79e63d56-0061-4795-abb1-472fac067470",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C26",
+      "claim": "Site2 dimers harbor fewer nonpolar contacts than site1 dimers, only involving residues L58 (or I58), Y61 (or F61), M64 (or A64), I70, and L75 (or I75).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to site1 dimers, site2 dimers harbor fewer nonpolar contacts, only involving residues L58 (or I58), Y61 (or F61), M64 (or A64), I70, and L75 (or I75) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "a67d1e1a-57a5-4d31-a33b-f9895723b3be",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C27",
+      "claim": "While site1 dimerization was largely maintained by nonpolar packing, site2 dimerization was strongly driven by electrostatic interactions from selective salt bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, while site1 dimerization was largely maintained by nonpolar packing, site2 dimerization was strongly driven by electrostatic interactions from selective salt bridges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of site1 and site2 interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "033e7166-c632-45df-83e8-71d4f9386750",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C28",
+      "claim": "MD simulations revealed that site2 salt bridges were in a dynamic equilibrium between forming, breaking, and rearranging.",
+      "claim_type": "EXPLICIT",
+      "source": "MD simulations revealed that these salt bridges were in a dynamic equilibrium between forming, breaking, and rearranging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "e0386477-fec2-4c4a-b560-202863090ad6",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C29",
+      "claim": "Site2 salt bridges were either formed in cis, within the site2 monomer, (e.g. E52-R56 and R62-E63 in H-NSST) or in trans, between two monomers in the site2 dimer (e.g. R54-D71', R54-E74', and K57-D68' in H-NSST).",
+      "claim_type": "EXPLICIT",
+      "source": "These salt bridges were either formed in cis, within the site2 monomer, (e.g. E52-R56 and R62-E63 in H-NSST) or in trans, between two monomers in the site2 dimer (e.g. R54-D71', R54-E74', and K57-D68' in H-NSST, where the apostrophe denotes residues from the second chain; illustrated in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "bd651230-633d-4648-a3e0-a8156e513bdf",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C30",
+      "claim": "The inter-monomer salt bridge R/K54-E/D74' was stable in all simulations at 20\u00b0C and 0.15 M NaCl, but less likely to form at an increased temperature (40\u00b0C) or salinity (0.50 M NaCl), suggesting that this salt bridge is involved in environmental sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) The inter-monomer salt bridge R/K54-E/D74' was stable in all our simulations at 20\u00b0C and 0.15 M NaCl, but less likely to form at an increased temperature (40\u00b0C) or salinity (0.50 M NaCl), suggesting that this salt bridge is involved in environmental sensing (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "43009b59-8d1a-4ccf-b9f2-3b6e23644700",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C31",
+      "claim": "The inter-monomer salt bridge K57-D68' remained formed during all simulations of H-NSST, H-NSEA, and H-NSBA, indicating a 'housekeeping' role for the stability of the site2 dimer in all orthologs except for H-NSIL.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Absent in H-NSIL, the inter-monomer salt bridge K57-D68' remained formed during all our simulations of H-NSST, H-NSEA, and H-NSBA, indicating a 'housekeeping' role for the stability of the site2 dimer in all orthologs except for H-NSIL (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "cb91fa63-7fd5-4af3-b09c-d14838dda3a6",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C32",
+      "claim": "Increased bending of the \u03b13 backbone occurred at high temperature (40\u00b0C) or high salinity (0.50 M NaCl) in all orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we observed increased bending of the \u03b13 backbone (annotated by the black arrow in Figure 3C) at high temperature (40\u00b0C) or high salinity (0.50 M NaCl) (Figure 3\u2014figure supplement 1). Although \u03b13 bending occurred in all orthologs, it only significantly affected the site2 dimer of H-NSST by separating R54 from E74' or D71', suggesting that this mechanism contributed to the salt and temperature sensitivity of H-NSST site2, whereas it was not strong enough to significantly affect site2 stability in other orthologs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "8cb2fc6b-756d-4e87-aeea-bcb5ef6053df",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C33",
+      "claim": "\u03b13 bending only significantly affected the site2 dimer of H-NSST by separating R54 from E74' or D71', suggesting that this mechanism contributed to the salt and temperature sensitivity of H-NSST site2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although \u03b13 bending occurred in all orthologs, it only significantly affected the site2 dimer of H-NSST by separating R54 from E74' or D71', suggesting that this mechanism contributed to the salt and temperature sensitivity of H-NSST site2, whereas it was not strong enough to significantly affect site2 stability in other orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data and represents an inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "84c87a42-06b1-4a9f-a50f-a8233b3ff602",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C34",
+      "claim": "In H-NSEA, an alternative R54-D71' salt bridge formed whenever the R54-E74' contact was broken at 40\u00b0C, stabilizing the H-NSEA site2 dimer at the higher temperature and suggesting a decreased sensitivity to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example was given by H-NSEA, where an alternative R54-D71' salt bridge formed whenever the R54-E74' contact was broken at 40\u00b0C. This alternative R54-D71' salt bridge stabilized the H-NSEA site2 dimer at the higher temperature, suggesting that this compensatory mechanism resulted in a decreased sensitivity to temperature (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "858db994-c4fb-432a-b794-4fa62df2dbd9",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C35",
+      "claim": "The substitution D68A in H-NSIL supplanted the electrostatic interaction with a nonpolar interaction, which was broken at 40\u00b0C, suggesting that H-NSIL had a reduced sensitivity to salinity, while remaining sensitive to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NSIL provided a final example for a specific response. Compared with the R54-E74' salt bridge (Figure 3A), the K57-D68' salt bridge only varied slightly in all our simulations (Figure 3B). However, the substitution D68A in H-NSIL supplanted the electrostatic interaction with a nonpolar interaction, which was broken at 40\u00b0C in our simulations (Figure 3D). This effect suggested that H-NSIL had a reduced sensitivity to salinity, while remaining sensitive to temperature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "1d32d2a6-5ce4-4b1a-a522-39511ee64605",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C36",
+      "claim": "High salinity (0.50 M NaCl) or temperature (40\u00b0C) decreased the stability of the H-NSST site2 dimer by 2.2 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, high salinity (0.50 M NaCl) or temperature (40\u00b0C) decreased the stability of the H-NSST site2 dimer by 2.2 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by potential of mean force (PMF) calculations from umbrella sampling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "997943c4-5032-4a5e-953a-28494178f1f6",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C37",
+      "claim": "H-NSBA displayed a similar sensitivity to temperature but a lower sensitivity to salinity (1.5 kcal/mol destabilization) compared to H-NSST.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NSBA displayed a similar sensitivity to temperature but a lower sensitivity to salinity, which destabilized the dimer by 1.5 kcal/mol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by potential of mean force (PMF) calculations from umbrella sampling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "efa849e8-0752-4966-b872-c389814b3824",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C38",
+      "claim": "H-NSEA was only sensitive to salinity, whereas raising the temperature had little impact on the stability of the H-NSEA site2 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our data indicated that H-NSEA was only sensitive to salinity, whereas raising the temperature had little impact on the stability of the H-NSEA site2 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by potential of mean force (PMF) calculations from umbrella sampling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "983c8a60-0901-4dd2-aa46-98518a4dec75",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C39",
+      "claim": "H-NSIL only responded to temperature, whereas the increased salinity did not affect the stability of its site2 dimer (\u2206G ~ 0 kcal/mol).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, H-NSIL only responded to temperature, whereas the increased salinity did not affect the stability of its site2 dimer (\u2206G ~ 0 kcal/mol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by potential of mean force (PMF) calculations from umbrella sampling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "238d4721-aa0e-472d-993b-5296d1619a9e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C40",
+      "claim": "Melting and dissociation of site2 dimers allow H-NSST to adapt a closed conformation in which the linker-DNAbd fragment interacts with a negatively charged region on site1 \u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study (Shahul Hameed et al., 2019), we had shown that melting and dissociation of site2 dimers allow H-NSST to adapt a closed conformation in which the linker-DNAbd fragment interacts with a negatively charged region on site1 \u03b13 (Figure 4\u2014figure supplement 1A) and that this autoinhibitory interaction is incompatible with DNA interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to previous work and illustrated in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c7e13450-bef1-4f0e-b571-ed12a5286e48",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C41",
+      "claim": "The autoinhibitory interaction is incompatible with DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study (Shahul Hameed et al., 2019), we had shown that melting and dissociation of site2 dimers allow H-NSST to adapt a closed conformation in which the linker-DNAbd fragment interacts with a negatively charged region on site1 \u03b13 (Figure 4\u2014figure supplement 1A) and that this autoinhibitory interaction is incompatible with DNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "433b21a9-830a-4b33-a943-8cdd7d029c8e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C42",
+      "claim": "The interaction between site1 and the linker-DNAbd fragment promoted the formation of a short type VIII \u03b2-turn in residues 89\u201392.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif identification from chemical shifts (MICS) (Shen and Bax, 2013) revealed that the interaction promoted the formation of a short type VIII \u03b2-turn in residues 89\u201392 (MICS confidence coefficient was 0.69).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR chemical shift analysis using MICS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "f49f3a7f-3c24-4af1-a73e-8f6194200bbe",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C43",
+      "claim": "The sharp turn brings the positively charged linker side chains K87, K89, R90, R93 closer to each other than in the free state, presumably as a result of pairing them with opposite charges on site1.",
+      "claim_type": "EXPLICIT",
+      "source": "This sharp turn brings the positively charged linker side chains K87, K89, R90, R93 closer to each other than in the free state, presumably as a result of pairing them with opposite charges on site1 (Shahul Hameed et al., 2019; Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NMR data and structural analysis shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "8341ca5f-97f2-4ebb-9ccd-7078bf9f285e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C44",
+      "claim": "The dynamics of the well-ordered DNAbd domain remained unchanged with or without site1 present, in agreement with its only minor involvement in the autoassociation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of the well-ordered DNAbd domain remained unchanged with or without site1 present, in agreement with its only minor involvement in the autoassociation (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RCI-S2 order parameter analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "b9774c18-33b7-444d-9cad-29392f2282aa",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C45",
+      "claim": "The linker residues 84\u201395 were disordered without regular secondary motifs in the absence of site1 (RCI-S2 < 0.35).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the linker residues 84\u201395 were disordered without regular secondary motifs in the absence of site1 (RCI-S2 < 0.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RCI-S2 order parameter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "ff096113-48a4-425d-9c04-0a5d5ca64f25",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C46",
+      "claim": "Upon addition of site1, the local dynamics of linker residues K89-R90-A91-A92 decreased (RCI-S2 > 0.6) and these residues predominantly form the type VIII \u03b2-turn.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon addition of site1, the local dynamics decreased, particularly within the stretch of four amino acids K89-R90-A91-A92 (RCI-S2 > 0.6) that predominantly form the type VIII \u03b2-turn according to MICS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RCI-S2 order parameter analysis and MICS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "139fe461-abe1-412c-b258-eed4aa037a1d",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C47",
+      "claim": "The overall RCI-S2 of the linker remained low despite >99% ligand saturation, demonstrating that the association with site1 did not substantially restrict the linker's movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the overall RCI-S2 of the linker remained low, although experimental conditions resulted in >99% of ligand saturation of the labeled CtST, demonstrating that the association with site1 did not substantially restrict the linker's movements (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RCI-S2 order parameter analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "2cbf0f66-1537-4aa1-ac8e-33dcf70f149b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C48",
+      "claim": "The autoinhibitory site1:CtST association was driven by oppositely charged residues located on site1 and the linker, and involved only a small region of the DNAbd.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our analysis established that the autoinhibitory site1:CtST association was driven by oppositely charged residues located on site1 and the linker, and involved only a small region of the DNAbd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the NMR analysis and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "579a7457-3840-4563-9e72-0c5fe9f1a65e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C49",
+      "claim": "The center of the linker region, residues 89\u201392, rigidified upon binding and predominantly formed a \u03b2-turn conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The center of this linker region, residues 89\u201392, rigidified upon binding and predominantly formed a \u03b2-turn conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR analysis including RCI-S2 and MICS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "7148cb65-577e-4248-9617-8f12562fae99",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C50",
+      "claim": "The intramolecular interaction was maintained through 'fuzzy' charge-pairing that did not fix the partners into a structurally stable complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the resulting intramolecular interaction was maintained through 'fuzzy' charge-pairing that did not fix the partners into a structurally stable complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the NMR data showing high flexibility despite binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "7a5b38bf-f45f-4a00-88a5-310194153c95",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C51",
+      "claim": "The electrostatic surface of the Ct was well conserved across all H-NS orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our structural models (initial homology models and models from conventional MD), the electrostatic surface of the Ct was well conserved across all H-NS orthologs (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural modeling and electrostatic surface analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "45dd99c7-e4af-480f-aeb4-8f63082d3201",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C52",
+      "claim": "The site1 surface that binds to Ct was not conserved across all orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the site1 surface that binds to Ct was not conserved across all orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural modeling and electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "e21efe6e-1707-4dcd-8a54-ed22fb28b0dc",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C53",
+      "claim": "H-NSEA was similar to H-NSST in the overall charge distribution of site1.",
+      "claim_type": "EXPLICIT",
+      "source": "While H-NSEA was similar to H-NSST in the overall charge distribution, \u03b13 of H-NSBA showed a distinctly basic surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrostatic surface analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "4818ae67-4f07-4742-bb4a-b300a25f8c5f",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C54",
+      "claim": "\u03b13 of H-NSBA showed a distinctly basic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "While H-NSEA was similar to H-NSST in the overall charge distribution, \u03b13 of H-NSBA showed a distinctly basic surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrostatic surface analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c415bc56-abe7-46d3-9a4a-7c41655ed5b7",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C55",
+      "claim": "H-NSIL displayed an intermediate electrostatic character, with features closer to H-NSST/H-NSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "H-NSIL displayed an intermediate electrostatic character, with features closer to H-NSST/H-NSEA (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrostatic surface analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "3ca99d3c-871e-4241-a41e-35a2f9cbbf8e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C56",
+      "claim": "The strength of the autoassociation was similar for H-NSST and H-NSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "These binding experiments between site1 and Ct confirmed that the strength of the autoassociation was similar for H-NSST and H-NSEA (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "62b2f9cc-f6fa-4982-85ee-ef004ef35538",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C57",
+      "claim": "The autoassociation was 10-fold stronger in H-NSIL than in H-NSST.",
+      "claim_type": "EXPLICIT",
+      "source": "The autoassociation was 10-fold stronger in H-NSIL than in H-NSST, despite a less acidic site1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "d188afed-23f8-49f8-9f0d-8d2b16f41f15",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C58",
+      "claim": "H-NSBA did not show a significant capacity for autoassociation, as expected from its markedly more basic site1 surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, H-NSBA did not show a significant capacity for autoassociation, as expected from its markedly more basic site1 surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments and electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c60f6e5d-4439-49c3-bb7c-47f0c5597ab3",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C59",
+      "claim": "The double H-NSST site1 mutant E34K/E42K dramatically lowered its affinity for H-NSSTCt.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, the double H-NSST site1 mutant E34K/E42K (designed to make the electrostatic site1 surface of H-NSST B. aphidicola like) dramatically lowered its affinity for H-NSSTCt (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "e2bc111b-9bb5-4fa3-9e71-2c68f06caf37",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C60",
+      "claim": "H-NSBACt has a proline residue (P91) in position 3 of the \u03b2-turn region, which is highly unfavorable for this secondary structure element.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the reduced electrostatic complementarity, H-NSBACt also has a proline residue (P91) in position 3 of the \u03b2-turn region, which is highly unfavorable for this secondary structure element (Creighton, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural knowledge about \u03b2-turn preferences and a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "5bcbbf8d-bc10-4bcf-8898-013242c167c7",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C61",
+      "claim": "At room temperature, H-NSBACt associated only very weakly with H-NSST site1 (Kd > mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at room temperature, H-NSBACt associated only very weakly with H-NSST site1 (Kd > mM), whereas the Ct of H-NSEA and H-NSIL bound to H-NSST site1 with a similar affinity than H-NSSTCt (Kds were 31.2 \u00b1 3 \u00b5M and 18.2 \u00b1 2 \u00b5M, respectively Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "46588b8e-328a-479c-83a2-64fefa092e42",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C62",
+      "claim": "The Ct of H-NSEA and H-NSIL bound to H-NSST site1 with a similar affinity than H-NSSTCt (Kds were 31.2 \u00b1 3 \u00b5M and 18.2 \u00b1 2 \u00b5M, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, at room temperature, H-NSBACt associated only very weakly with H-NSST site1 (Kd > mM), whereas the Ct of H-NSEA and H-NSIL bound to H-NSST site1 with a similar affinity than H-NSSTCt (Kds were 31.2 \u00b1 3 \u00b5M and 18.2 \u00b1 2 \u00b5M, respectively Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments shown in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "0c453f07-2595-4046-a6a8-a2813ce7d289",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C63",
+      "claim": "Increasing the temperature decreased the self-association strength 2- to 3-fold in H-NSST and H-NSIL and more than 10-fold in H-NSEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the temperature decreased the self-association strength 2- to 3-fold in H-NSST and H-NSIL and more than 10-fold in H-NSEA (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscale thermophoresis (MST) binding experiments at different temperatures shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "9d459b28-c999-4ced-8885-b33e2c3ebac7",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C64",
+      "claim": "The strength of the autoinhibitory conformation is mostly modulated by the electrostatic surface characteristics of site1.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the strength of the autoinhibitory conformation is mostly modulated by the electrostatic surface characteristics of site1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the binding experiments and electrostatic surface analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "de6fa622-7485-4ad1-ad6e-28184584bb72",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C65",
+      "claim": "The Ct is constrained by the requirement to preserve the overlapping DNA binding surface, but can decrease autoinhibition by disrupting the \u03b2-turn conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ct is constrained by the requirement to preserve the overlapping DNA binding surface, but can decrease autoinhibition by disrupting the \u03b2-turn conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "f65cedb5-a928-4fce-b39f-1f794a3bed8f",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C66",
+      "claim": "H-NSST showed a clear drop in RH from 10\u00b0C to 40 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously, H-NSST showed a clear drop in RH from 10\u00b0C to 40 \u00b0C (Figure 6A; Shahul Hameed et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments shown in Figure 6A and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "0ce5a41c-3415-4369-b679-d13d849a2255",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C67",
+      "claim": "The marked decrease of RH for curves at 0.15, 0.25, and 0.50 M NaCl indicated a strong inverse correlation between salinity and site2 stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The marked decrease of RH for curves at 0.15, 0.25, and 0.50 M NaCl indicated a strong inverse correlation between salinity and site2 stability, in agreement with a key role of salt bridges in stabilizing the site2 dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments and is consistent with the computational findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "39cb26f2-9451-42e7-8833-ef56c4609736",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C68",
+      "claim": "All three H-NS orthologs displayed a similar behavior overall, further supporting that the general mechanism of site2-mediated multimerization and environment-sensing was preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "All three H-NS orthologs displayed a similar behavior overall, further supporting that the general mechanism of site2-mediated multimerization and environment-sensing was preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the DLS experiments comparing all orthologs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "da6d8fb4-651d-4342-9c04-23f8d1b07dc2",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C69",
+      "claim": "Of the four orthologs, H-NSST responded most strongly to salinity and temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) Of the four orthologs, H-NSST responded most strongly to salinity and temperature, consistent with the broken R54-E74' salt bridge and large site2 RMSF in our high-salinity or high-temperature simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments and is consistent with the computational findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "9c6ce69f-4134-4de4-93da-0b2a679e7eb9",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C70",
+      "claim": "H-NSEA was less temperature sensitive and showed weaker multimerization than the other orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) H-NSEA was less temperature sensitive and showed weaker multimerization than the other orthologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "3c176126-f88b-4717-ba6d-84a36c5aee87",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C71",
+      "claim": "H-NSBA had the highest tendency to multimerize among all the orthologs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) H-NSBA had the highest tendency to multimerize among all the orthologs tested, which might partly be explained by the absence of the autoinhibitory conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "711bec69-24b0-4a0c-936b-fdcf0fd7837f",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C72",
+      "claim": "H-NSIL showed a decreased sensitivity to salinity compared to H-NSST.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) H-NSIL showed a decreased sensitivity to salinity compared to H-NSST, as suggested by our computational analysis (i.e. the lack of the site2 K57-D68' salt bridge, the lack of salt-promoted free-energy changes, and the attenuated electrostatic site1 surface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by dynamic light scattering (DLS) experiments and computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "82157c61-8ca1-458c-b9c6-2f58a333a933",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C73",
+      "claim": "The H-NSST R54M mutant, disrupting the 'housekeeping' salt bridges R54-E74' and R54-D71', displayed an NFP of 0.2 at all temperatures and salt concentrations, supporting the key roles of the R54-mediated salt bridges in H-NS multimerization and environment-sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "The H-NSST R54M mutant, disrupting the 'housekeeping' salt bridges R54-E74' and R54-D71', displayed an NFP of 0.2 at all temperatures and salt concentrations. Thus, this mutant supported the key roles of the R54-mediated salt bridges in H-NS multimerization and environment-sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fluorescence anisotropy experiments with the R54M mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "31043341-b692-4b6f-8203-8c2a6ea1a65b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C74",
+      "claim": "The D68A 'IL-like' mutation in H-NSST abrogated salt sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "To experimentally assess the role of the K57-D68' salt bridge in conveying salt sensitivity, we introduced the D68A 'IL-like' mutation in H-NSST, and the A68D 'ST-like' mutation in H-NSIL. These mutations abrogated salt sensitivity in H-NSST and introduced salt sensitivity in H-NSIL, as predicted by our computational analysis (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence anisotropy experiments with the D68A mutant shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "831e348f-d083-4e26-961b-2487aea784ce",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C75",
+      "claim": "The A68D 'ST-like' mutation in H-NSIL introduced salt sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "To experimentally assess the role of the K57-D68' salt bridge in conveying salt sensitivity, we introduced the D68A 'IL-like' mutation in H-NSST, and the A68D 'ST-like' mutation in H-NSIL. These mutations abrogated salt sensitivity in H-NSST and introduced salt sensitivity in H-NSIL, as predicted by our computational analysis (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fluorescence anisotropy experiments with the A68D mutant shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "b9530d63-f1a3-43de-8623-e9b7d1fcddc0",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C76",
+      "claim": "The formation of a \u03b2-turn in the linker residues 89\u201391 is associated with the autoinhibited conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that the formation of a \u03b2-turn in the linker residues 89\u201391 is associated with the autoinhibited conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR analysis showing \u03b2-turn formation upon binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c50e2300-7746-4267-8ffe-75aa6b01b339",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C77",
+      "claim": "The Ct residues critical for autoinhibition cannot reach site1 without site2 dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ct residues critical for autoinhibition cannot reach site1 without site2 dissociation (Figure 3\u2014figure supplement 2B), confirming that the closed autoinhibited conformation is mutually exclusive with H-NS multimerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data shown in Figure 3\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "f09e220c-06c7-4f5b-aeee-2c8020934db7",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C78",
+      "claim": "The closed autoinhibited conformation is mutually exclusive with H-NS multimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ct residues critical for autoinhibition cannot reach site1 without site2 dissociation (Figure 3\u2014figure supplement 2B), confirming that the closed autoinhibited conformation is mutually exclusive with H-NS multimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "87767877-e93b-47df-9d87-2f8d06090c64",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C79",
+      "claim": "The autoinhibitory interaction is achieved at a low entropic cost, maintaining a high flexibility with respect to the exact distribution of the interacting charges on both site1 and the linker-DNAbd fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our NMR analysis also demonstrated that this autoinhibition is achieved at a low entropic cost, maintaining a high flexibility with respect to the exact distribution of the interacting charges on both site1 and the linker-DNAbd fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR analysis showing high flexibility despite binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "de0f965f-0cdc-4c07-aea8-5fa3472de0be",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C80",
+      "claim": "Avoiding the entropic penalty helps the autoinhibitory interaction to prevail against the competing DNA association.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, avoiding the entropic penalty helps the autoinhibitory interaction to prevail against the competing DNA association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the low entropic cost.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "613772bd-1651-47ad-9295-594e23e1302e",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C81",
+      "claim": "The fuzziness of the charge\u2013charge interactions facilitates preserving the capacity for autoinhibition during bacterial evolution and adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the fuzziness of the charge\u2013charge interactions facilitates preserving the capacity for autoinhibition during bacterial evolution and adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the evolutionary significance of the fuzzy interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "b9ed2b62-1e21-43fb-bd4b-c725a110a0fa",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C82",
+      "claim": "Across all four orthologs, a conceptually similar response to temperature and salt was observed, both overall and on an atomic level, where salt bridges play key roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all four orthologs, we observed a conceptually similar response to temperature and salt, both overall and on an atomic level, where salt bridges play key roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparative analysis of all four orthologs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "2cf68172-50b8-4aed-bd19-6a0e1906fcf3",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C83",
+      "claim": "This similarity suggests that environment-sensing in H-NS evolved by co-opting an ancestral feature, namely the relative instability of the simple site2 helix-turn-helix dimerization motif.",
+      "claim_type": "EXPLICIT",
+      "source": "This similarity suggests that environment-sensing in H-NS evolved by co-opting an ancestral feature, namely the relative instability of the simple site2 helix-turn-helix dimerization motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evolutionary inference based on the conserved mechanism across orthologs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "3689fa61-e392-481b-8202-4112ce6415db",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C84",
+      "claim": "Marked idiosyncrasies in the response of H-NS orthologs suggest that this ancestral feature was then adapted to fit the current habitat and lifestyle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, marked idiosyncrasies in the response of H-NS orthologs suggest that this ancestral feature was then adapted to fit the current habitat and lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evolutionary inference based on the differences observed among orthologs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "c64e9218-8639-40f1-82f9-0916f8d8c094",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C85",
+      "claim": "Environment-sensing by H-NS originated from an exaptation followed by adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis suggests that environment-sensing by H-NS originated from an exaptation followed by adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evolutionary conclusion drawn from the comparative analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "79384f93-abc1-4339-8c5d-6b643162c31c",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C86",
+      "claim": "The combined computational and experimental structural analysis allowed relating the observed in vitro features of adaptation to events on a residual level: in particular, the salt bridge disposition and stability of site2, and the strength of the autoinhibition governed mostly by the electrostatics of site1 helix \u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "Our combined computational and experimental structural analysis allowed us to relate the observed in vitro features of this adaptation to events on a residual level: in particular, the salt bridge disposition and stability of site2, and the strength of the autoinhibition governed mostly by the electrostatics of site1 helix \u03b13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the integrative approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "3d1c5238-5242-4598-a8f4-98c3f6b9184b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C87",
+      "claim": "Salmonella typhimurium is a pathogen of mammals and uses temperature-sensing to adapt to a presence inside the warm-blooded host.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) H-NSST from S. typhimurium. This bacterium is a pathogen of mammals and uses temperature-sensing to adapt to a presence inside the warm-blooded host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about S. typhimurium.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "08bee238-6af8-49cc-9d6a-382ba6aff3f3",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C88",
+      "claim": "Erwinia amylovora is a plant pathogen that infects apples and pears, and temperature is not a reliable differentiator between free-living and host-based states for this bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) H-NSEA from Erwinia amylovora, which is a plant pathogen that infects apples and pears. Hence, temperature is not a reliable differentiator between free-living and host-based states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. amylovora and an inference about its environment.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "aa51adec-eb48-4169-b1b4-a2a4496bff67",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C89",
+      "claim": "Buchnera aphidicola is an obligate endosymbiont of aphids and has no free-living forms.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) H-NSBA from Buchnera aphidicola. This bacterium is an obligate endosymbiont of aphids and has no free-living forms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about B. aphidicola.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "0f69b870-3da6-4497-a076-3e02a8dab17f",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "claim_id": "C90",
+      "claim": "Idiomarina loihiensis is a free-living bacterium from a deep-sea hydrothermal vent producing large heat gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) H-NSIL from Idiomarina loihiensis, which is a free-living bacterium from a deep-sea hydrothermal vent producing large heat gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about I. loihiensis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Site1 dimers are markedly more stable than site2 dimers across all four H-NS orthologs (H-NSST, H-NSEA, H-NSBA, H-NSIL), with stability arising from conserved nonpolar packing involving specific hydrophobic residues (L5, L8, L14, L23, L26, V36, V37). This mechanism is conserved across orthologs, with site1 remaining stable while site2 stability is affected by environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 provide converging computational (MD simulations showing lower RMSF, larger contact surface ~3300 \u00c5\u00b2 vs ~850 \u00c5\u00b2) and experimental evidence (SEC-MALS showing ~15 kDa dimers, aggregation temperatures >37\u00b0C). The in silico mutant predictions (C21) corroborate the importance of specific hydrophobic residues. The conclusion that this mechanism is conserved (C25) is well-supported by data from all four orthologs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Site2 dimerization is driven by dynamic electrostatic interactions from selective salt bridges (R54-E74', K57-D68') that respond differentially to temperature and salinity across orthologs. H-NSST shows the strongest response to both conditions (2.2 kcal/mol destabilization), while H-NSEA is primarily salt-sensitive, H-NSBA shows reduced salt sensitivity, and H-NSIL is temperature-sensitive but salt-insensitive due to the D68A substitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C39 integrate extensive MD simulations (200 ns conventional MD plus 52 \u00b5s umbrella sampling) with detailed analysis of salt bridge dynamics and PMF calculations. The specific mechanisms proposed (\u03b13 bending in H-NSST, alternative R54-D71' bridge in H-NSEA, D68A substitution effects in H-NSIL) are supported by simulation data shown in Figure 3. The quantitative free energy changes from PMF calculations provide robust support for differential sensitivities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "f0199c4e-93e6-43ef-8998-c0132e0c2728",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The autoinhibitory conformation of H-NS involves site2 dissociation followed by interaction between the linker-DNAbd fragment and site1, characterized by formation of a type VIII \u03b2-turn in residues 89-92 and maintained through 'fuzzy' charge-pairing that preserves high flexibility (low RCI-S2 despite >99% saturation). This conformation is mutually exclusive with H-NS multimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C50, C76-C79 are strongly supported by proton-less 13C-detected NMR data that overcame previous limitations in characterizing the linker region. The MICS analysis (confidence coefficient 0.69) confirms \u03b2-turn formation (C42, C49), RCI-S2 analysis demonstrates maintained flexibility (C47), and MD simulations confirm mutual exclusivity with multimerization (C77, C78). The integration of NMR chemical shift analysis with structural modeling provides robust support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "75f54b59-c019-4c84-a739-18fd14288c19",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The strength of autoinhibition varies across orthologs, primarily modulated by electrostatic surface characteristics of site1. H-NSST and H-NSEA show similar binding (Kd ~4-11 \u00b5M at 23\u00b0C), H-NSIL shows 10-fold stronger binding, while H-NSBA shows negligible autoinhibition due to its basic site1 surface and unfavorable P91 in the \u03b2-turn region. Temperature increases weaken autoinhibition 2-3 fold in H-NSST/H-NSIL and >10-fold in H-NSEA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C65 are supported by electrostatic surface analysis from structural models (C51-C55) and quantitative MST binding experiments (C56-C63). The E34K/E42K mutant data (C59) provides strong validation that electrostatic complementarity drives binding. The P91 structural argument (C60) is supported by established \u03b2-turn preferences. However, the stronger binding of H-NSIL (C57) despite less acidic site1 suggests additional interactions not fully characterized, introducing minor uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Experimental validation using DLS and fluorescence anisotropy confirms differential environmental responses: H-NSST responds most strongly to both temperature and salinity, H-NSEA shows reduced temperature sensitivity, H-NSBA has highest multimerization tendency, and H-NSIL shows reduced salt sensitivity. Site-directed mutagenesis (R54M, D68A, A68D) validates the functional importance of predicted salt bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C75 provide experimental validation of computational predictions. DLS data (C66-C72) show clear differential responses across orthologs consistent with MD/PMF predictions. The mutant studies (C73-C75) provide strong causal evidence: R54M abolishes multimerization (NFP=0.2), D68A in H-NSST eliminates salt sensitivity, and A68D in H-NSIL introduces salt sensitivity as predicted. The convergence of computational predictions and experimental validation strongly supports these results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "1516a0ab-7cf7-4e8f-9b4a-18090307f046",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The low entropic cost of the fuzzy autoinhibitory interaction helps it prevail against DNA binding competition and facilitates preservation of autoinhibition capacity during bacterial evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 are mechanistic and evolutionary inferences based on the observed flexibility of the autoinhibitory interaction (C79). While the NMR data clearly demonstrate maintained flexibility despite binding, the functional advantages proposed (competing with DNA binding, evolutionary preservation) are speculative. No direct experimental evidence is provided showing competition with DNA binding or evolutionary selection for this feature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "61355906-6037-48f5-8939-471f46f9b3c3",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Environment-sensing in H-NS evolved through exaptation of an ancestral feature (the relative instability of the site2 helix-turn-helix motif) followed by adaptation to specific habitats, with residue-level variations in salt bridge disposition and site1 electrostatics accounting for ortholog-specific responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 present evolutionary interpretations based on the observed conservation of general mechanism (C82) combined with ortholog-specific variations (C84). While the comparative analysis across four orthologs with different lifestyles is compelling, the evolutionary claims about exaptation (C83, C85) are speculative inferences. The study lacks phylogenetic analysis, ancestral sequence reconstruction, or direct evidence of selection. Claim C86 appropriately summarizes the molecular findings but the evolutionary narrative requires additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "494eda7b-2066-4ce7-bc02-d1b200ad5c6b",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Environment-sensing characteristics arise from specifically positioned intra- or intermolecular electrostatic interactions, and this sensing mechanism resulted from exaptation of an ancestral protein feature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is well-supported by the extensive computational and experimental characterization of salt bridges and electrostatic interactions throughout the manuscript. However, claim C4 regarding exaptation is speculative (as noted in its evidence_type). The first part about electrostatic interactions is SUPPORTED, but the evolutionary claim about exaptation is UNCERTAIN. Given these are abstract-level summary claims, the overall result receives SUPPORTED status for the mechanistic insight while noting the evolutionary interpretation requires caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "H-NS is a pleiotropic gene regulator in gram-negative bacteria that senses temperature and environmental factors through its modular structure (site1, site2, linker, DNAbd), allowing pathogens like Salmonella to adapt gene expression to host presence. H-NS inhibits transcription by DNA coating/condensing and preferentially binds AT-rich sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide established background knowledge (C1, C5-C7, C87-C90) supported by citations, structural information supported by prior work and Figure 1 (C8-C10), and previous findings from the authors' work (C11-C13). These claims establish the context and are well-supported by the literature and prior studies. They serve as the foundation for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    },
+    {
+      "id": "381e94af-23a7-4002-99bb-fcecc60e5403",
+      "content_id": "b57f4e77-2453-430f-9443-3f89f410d534",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The four H-NS orthologs selected represent bacteria with diverse lifestyles: H-NSST from mammalian pathogen S. typhimurium (>60% identity to H-NSST), H-NSEA from plant pathogen E. amylovora (>60% identity), H-NSBA from obligate aphid endosymbiont B. aphidicola (>60% identity), and H-NSIL from free-living deep-sea bacterium I. loihiensis (40% identity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 and C87-C90 describe the ortholog selection rationale and are supported by sequence alignment data (Figure 1A, Supplementary file 1A) and established knowledge about bacterial lifestyles. The sequence identities are quantified and the lifestyle descriptions are accurate. This provides appropriate justification for the comparative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:27:39.403112Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "92f25353-32c3-4e77-b7f5-71ec98b13a52",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "d7b3e6aa-ba18-446f-bb04-d7cb9f45b6bd",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "c8810940-a944-4ba0-b1a8-c61cf0afc4fa",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "c3c5e577-0c77-4c42-94b1-3002e65c2b68",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "b6782f6b-fd92-4509-8bfc-a68a85aa9911",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "0ff50674-2c64-4df2-97f5-372f9da24da0",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "6d9be46c-45b3-4a18-923f-15221b817579",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "f03f7020-879a-4feb-83f2-a377933aca51",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "45d9012b-88ff-4d2c-a3e0-e8000f65d5c4",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "ab1b7ba8-1053-4916-83f1-fd8872bbed78",
+      "result_id": "583f9f41-1b4d-4b0f-94ac-28ca8f2b7619"
+    },
+    {
+      "claim_id": "79e63d56-0061-4795-abb1-472fac067470",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "a67d1e1a-57a5-4d31-a33b-f9895723b3be",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "033e7166-c632-45df-83e8-71d4f9386750",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "e0386477-fec2-4c4a-b560-202863090ad6",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "bd651230-633d-4648-a3e0-a8156e513bdf",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "43009b59-8d1a-4ccf-b9f2-3b6e23644700",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "cb91fa63-7fd5-4af3-b09c-d14838dda3a6",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "8cb2fc6b-756d-4e87-aeea-bcb5ef6053df",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "84c87a42-06b1-4a9f-a50f-a8233b3ff602",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "858db994-c4fb-432a-b794-4fa62df2dbd9",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "1d32d2a6-5ce4-4b1a-a522-39511ee64605",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "997943c4-5032-4a5e-953a-28494178f1f6",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "efa849e8-0752-4966-b872-c389814b3824",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "983c8a60-0901-4dd2-aa46-98518a4dec75",
+      "result_id": "b7c6c9f1-4d42-46c6-a6ec-73bd7fbfb49b"
+    },
+    {
+      "claim_id": "238d4721-aa0e-472d-993b-5296d1619a9e",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "c7e13450-bef1-4f0e-b571-ed12a5286e48",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "433b21a9-830a-4b33-a943-8cdd7d029c8e",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "f49f3a7f-3c24-4af1-a73e-8f6194200bbe",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "8341ca5f-97f2-4ebb-9ccd-7078bf9f285e",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "b9774c18-33b7-444d-9cad-29392f2282aa",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "ff096113-48a4-425d-9c04-0a5d5ca64f25",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "139fe461-abe1-412c-b258-eed4aa037a1d",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "2cbf0f66-1537-4aa1-ac8e-33dcf70f149b",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "579a7457-3840-4563-9e72-0c5fe9f1a65e",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "7148cb65-577e-4248-9617-8f12562fae99",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "b9530d63-f1a3-43de-8623-e9b7d1fcddc0",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "c50e2300-7746-4267-8ffe-75aa6b01b339",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "f09e220c-06c7-4f5b-aeee-2c8020934db7",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "87767877-e93b-47df-9d87-2f8d06090c64",
+      "result_id": "f0199c4e-93e6-43ef-8998-c0132e0c2728"
+    },
+    {
+      "claim_id": "7a5b38bf-f45f-4a00-88a5-310194153c95",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "45dd99c7-e4af-480f-aeb4-8f63082d3201",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "e21efe6e-1707-4dcd-8a54-ed22fb28b0dc",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "4818ae67-4f07-4742-bb4a-b300a25f8c5f",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "c415bc56-abe7-46d3-9a4a-7c41655ed5b7",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "3ca99d3c-871e-4241-a41e-35a2f9cbbf8e",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "62b2f9cc-f6fa-4982-85ee-ef004ef35538",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "d188afed-23f8-49f8-9f0d-8d2b16f41f15",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "c60f6e5d-4439-49c3-bb7c-47f0c5597ab3",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "e2bc111b-9bb5-4fa3-9e71-2c68f06caf37",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "5bcbbf8d-bc10-4bcf-8898-013242c167c7",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "46588b8e-328a-479c-83a2-64fefa092e42",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "0c453f07-2595-4046-a6a8-a2813ce7d289",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "9d459b28-c999-4ced-8885-b33e2c3ebac7",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "de6fa622-7485-4ad1-ad6e-28184584bb72",
+      "result_id": "75f54b59-c019-4c84-a739-18fd14288c19"
+    },
+    {
+      "claim_id": "f65cedb5-a928-4fce-b39f-1f794a3bed8f",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "0ce5a41c-3415-4369-b679-d13d849a2255",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "39cb26f2-9451-42e7-8833-ef56c4609736",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "da6d8fb4-651d-4342-9c04-23f8d1b07dc2",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "9c6ce69f-4134-4de4-93da-0b2a679e7eb9",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "3c176126-f88b-4717-ba6d-84a36c5aee87",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "711bec69-24b0-4a0c-936b-fdcf0fd7837f",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "82157c61-8ca1-458c-b9c6-2f58a333a933",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "31043341-b692-4b6f-8203-8c2a6ea1a65b",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "831e348f-d083-4e26-961b-2487aea784ce",
+      "result_id": "d3b80559-f4db-4362-a9e3-f5d310ad2be8"
+    },
+    {
+      "claim_id": "de0f965f-0cdc-4c07-aea8-5fa3472de0be",
+      "result_id": "1516a0ab-7cf7-4e8f-9b4a-18090307f046"
+    },
+    {
+      "claim_id": "613772bd-1651-47ad-9295-594e23e1302e",
+      "result_id": "1516a0ab-7cf7-4e8f-9b4a-18090307f046"
+    },
+    {
+      "claim_id": "b9ed2b62-1e21-43fb-bd4b-c725a110a0fa",
+      "result_id": "61355906-6037-48f5-8939-471f46f9b3c3"
+    },
+    {
+      "claim_id": "2cf68172-50b8-4aed-bd19-6a0e1906fcf3",
+      "result_id": "61355906-6037-48f5-8939-471f46f9b3c3"
+    },
+    {
+      "claim_id": "3689fa61-e392-481b-8202-4112ce6415db",
+      "result_id": "61355906-6037-48f5-8939-471f46f9b3c3"
+    },
+    {
+      "claim_id": "c64e9218-8639-40f1-82f9-0916f8d8c094",
+      "result_id": "61355906-6037-48f5-8939-471f46f9b3c3"
+    },
+    {
+      "claim_id": "79384f93-abc1-4339-8c5d-6b643162c31c",
+      "result_id": "61355906-6037-48f5-8939-471f46f9b3c3"
+    },
+    {
+      "claim_id": "5f7e706e-f04b-4781-9153-83363f994748",
+      "result_id": "494eda7b-2066-4ce7-bc02-d1b200ad5c6b"
+    },
+    {
+      "claim_id": "a0938dbb-fd36-4ea8-94f9-11f23565f06b",
+      "result_id": "494eda7b-2066-4ce7-bc02-d1b200ad5c6b"
+    },
+    {
+      "claim_id": "9e40fcce-2914-4d7d-9392-0dc6f385143d",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "37aa9034-71dd-447d-b4a7-af12a216cb36",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "138098db-0da3-4943-84c5-66d35732a1aa",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "af51672e-25bd-423b-a27c-05769d7eca46",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "92417179-d951-4e38-b7ee-48b575e7925b",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "0779be8a-7e2a-4ef5-b791-0f05c604e8ba",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "7f547688-49cd-458b-8338-376024e5280b",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "d9eb60f0-3966-4f5f-9ade-4b9abdb45b16",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "55ab993e-e960-48ed-a681-d3889ea2c3e0",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "e5af1167-aab3-41a3-8ed7-832fb09c5a8d",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "327bd64a-37f1-4bb0-a016-c3738c864953",
+      "result_id": "474fb81c-ece9-4bf2-8ba6-51089731ce1f"
+    },
+    {
+      "claim_id": "ff3d0ad1-d824-4fe7-a83d-1d5af8437bcf",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    },
+    {
+      "claim_id": "73f9caff-2eb1-42bf-bde7-46dc6b3544a0",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    },
+    {
+      "claim_id": "3d1c5238-5242-4598-a8f4-98c3f6b9184b",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    },
+    {
+      "claim_id": "08bee238-6af8-49cc-9d6a-382ba6aff3f3",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    },
+    {
+      "claim_id": "aa51adec-eb48-4169-b1b4-a2a4496bff67",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    },
+    {
+      "claim_id": "0f69b870-3da6-4497-a076-3e02a8dab17f",
+      "result_id": "381e94af-23a7-4002-99bb-fcecc60e5403"
+    }
+  ],
+  "comparisons": []
+}

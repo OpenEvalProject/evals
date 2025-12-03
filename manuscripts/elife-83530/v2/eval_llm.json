@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "At physiological temperature (37\u00b0C), the relationship between Ca2+ influx (\u0394[Ca2+]i) and external Ca2+ concentration ([Ca2+]e) is sub-proportional below 2.0 mM, with the discrepancy most prominent below the physiological set point of 1.2 mM. Linear extrapolation predicts cessation of Ca2+ entry at [Ca2+]e of 0.47 mM, which was confirmed experimentally at 0.4 mM where almost no measurable Ca2+ influx was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C21 are well-supported by experimental data using physin-GCaMP6f shown in Figure 1. The measurements at 37\u00b0C reveal a non-linear relationship that deviates from the simple saturable pore model predicted by previous studies conducted at sub-physiological temperatures. The linear extrapolation and experimental validation at 0.4 mM provide converging evidence for this unexpected relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A subset of nerve terminals exhibits all-or-none silencing of Ca2+ influx when [Ca2+]e is lowered below the physiological set point. This silencing occurs at the single synapse level, as neighboring terminals on the same axonal branch can show different responses, ruling out branch point failure as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by experimental data in Figures 2 and 2\u2014figure supplement 1. The observation that individual axonal branches contain both silent and responding terminals (C25) provides strong evidence against branch point failure (C26) and supports the conclusion that silencing operates at the single synapse level (C24). The all-or-none nature of the response is clearly demonstrated in the single terminal traces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The proportion of silent terminals increases steeply as [Ca2+]e decreases below the physiological set point of 1.2 mM, with the rate of silencing being 48.9% mM\u207b\u00b9 from 1.2 to 0.8 mM compared to 19.0% mM\u207b\u00b9 from 2.0 to 1.2 mM. At 0.4 mM, 93% of terminals are silent. Responding terminals show \u0394[Ca2+]i that scales with [Ca2+]e, and the silencing is reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are well-supported by experimental data in Figure 3 and supplementary figures. The quantification shows substantial heterogeneity across neurons but a consistent steep increase in silencing below 1.2 mM. The reversibility data (C34) and the scaling of responding terminals (C33) provide important controls demonstrating that the silencing is not due to irreversible damage or experimental artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The proportion of silent terminals is critically related to global absolute Ca2+ influx rather than specific VGCC subtypes. Acute inhibition of either N-type or P/Q-type channels causes silencing, with N-type isolation leading to greater silencing. The relationship between \u0394[Ca2+]i and silencing follows a Hill equation (Kd = 25 nM, n = -1.79) regardless of which channel subtype is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by toxin experiments shown in Figure 4. The Hill equation fits (C40) demonstrate that the relationship between Ca2+ influx and silencing is independent of VGCC subtype, supporting the conclusion that absolute Ca2+ influx is the critical determinant (C41). However, the mechanism underlying this threshold behavior remains unclear and would benefit from additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Synaptic vesicle (SV) recycling, measured with vGpH, shows silencing patterns similar to Ca2+ influx measurements, with 25-55% of terminals silent at different [Ca2+]e. Responding terminals show SV recycling that scales with [Ca2+]e, and the silencing occurs in an all-or-none manner around the physiological set point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by vGpH experiments in Figure 5. The agreement between SV recycling and Ca2+ influx silencing patterns (C43) provides strong evidence that Ca2+ influx silencing drives the effect on neurotransmitter release. The use of a robust 200 AP stimulus ensures adequate signal-to-noise for detecting SV recycling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Glutamate exocytosis evoked by single action potentials, measured with iGluSnFR, shows increased silencing as [Ca2+]e decreases below the physiological set point. This demonstrates that [Ca2+]e is an important regulator of presynaptic function across different stimulation paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by iGluSnFR experiments in Figure 6. The single AP paradigm provides physiologically relevant conditions, though the authors acknowledge that iGluSnFR may detect glutamate from neighboring non-transfected neurons, which could complicate interpretation. Despite this limitation, the consistency with Ca2+ influx and SV recycling data supports the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "GABABR agonism with baclofen at physiological [Ca2+]e (1.2 mM) causes ~20% additional terminals to become silent, with ~40% decrease in \u0394[Ca2+]i in responding terminals. This effect is significantly reduced at 2.0 mM [Ca2+]e (7.6% vs 20.5% increase in silencing), demonstrating that GPCR-mediated silencing is dependent on operating at physiological [Ca2+]e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by baclofen experiments in Figure 7. The agreement between baclofen effects and [Ca2+]e manipulation (C55) provides strong evidence that the mechanism operates through Ca2+ influx reduction. The [Ca2+]e-dependence of the effect (C50-C51) is a key finding demonstrating the importance of the physiological set point. Statistical significance is reported (p=0.017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C85"
+    ],
+    "result": "Previous studies at sub-physiological temperatures found that the relationship between \u0394[Ca2+]i and [Ca2+]e obeyed a simple saturable pore model with Kd ~2.5 mM, predicting 1:1 proportionality at concentrations below Kd. These measurements were not carried out at physiological temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C85 accurately describe prior work with appropriate citations (Ariel and Ryan, 2010; Schneggenburger et al., 1999). The authors correctly identify the limitation of previous studies (lack of physiological temperature) and use this to motivate their current work. This represents accurate assessment of prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "GPCRs locally influence synaptic strength through multiple mechanisms, including inhibition of voltage-gated Ca2+ channels via G\u03b2\u03b3 subunits. The cooperative binding of Ca2+ to exocytic machinery amplifies the impact of GPCR-mediated VGCC inhibition, making modulation of VGCC open probability a potent means of presynaptic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C11 represent well-established background knowledge supported by appropriate citations. These claims provide the conceptual framework for the study and are accurately presented. The cooperative Ca2+ binding mechanism (C8) is particularly important for understanding why small changes in Ca2+ influx can have large effects on neurotransmitter release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Plasma [Ca2+] is strictly regulated in vivo at a set point of 1.2 mM in most mammals through feedback loops controlled by parathyroid gland Ca2+ sensors. The CNS is very sensitive to plasma [Ca2+] perturbations, with clinical consequences ranging from seizures (hypocalcemia) to psychiatric symptoms and coma (hypercalcemia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by appropriate citations (Riggs, 2002; Hannan et al., 2019) and represent established physiological knowledge. This information provides important context for why the authors chose to study the 1.2 mM physiological set point and highlights the clinical relevance of their findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Multiple intracellular signaling pathways regulate synaptic silencing, including adenylyl cyclase, CaMKII, and calcineurin/CDK5. Previous studies showed that chronic activity manipulations (TTX or depolarization) alter the proportion of silent terminals, and that GABABR-mediated silencing can be proteasome-dependent on longer timescales (hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C64-C65 accurately describe prior work with appropriate citations. The authors correctly distinguish between the acute silencing they observe (5 min) and the chronic, proteasome-dependent silencing reported previously (4 hr). This represents accurate assessment and integration of prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C66"
+    ],
+    "result": "The acute timescale of silencing observed in the current study (5 min baclofen treatment) suggests a separate, rapid mechanism distinct from the proteasome-dependent pathway identified in previous studies using 4 hr baclofen incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63 and C66 represent speculation about mechanism based on the difference in timescales. While the inference is reasonable, the authors have not directly tested whether their acute silencing is proteasome-independent. Additional experiments with proteasome inhibitors at the 5 min timescale would be needed to definitively establish this as a separate mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C83"
+    ],
+    "result": "The definition of silent terminals (\u0394F below one standard deviation of pre-stimulus fluorescence) agrees well with other approaches used in previous studies. Given the non-linear relationship between Ca2+ influx and exocytosis, even undetectable Ca2+ entry would lead to rare neurotransmitter release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C83 are supported by citations to multiple previous studies using similar definitions. The authors provide additional validation by showing that cumulative frequency distributions of silent terminals are invariant with [Ca2+]e (Figure 2\u2014figure supplement 1), while responding terminals shift as expected. The inference about rare neurotransmitter release (C68) is reasonable given the cooperative Ca2+ binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The sub-proportional relationship between \u0394[Ca2+]i and [Ca2+]e refutes the simple biophysical model and supports nerve terminal specificity in susceptibility to silencing. Small modulation of Ca2+ influx leads to dramatic silencing, with ~40% of terminals silent at physiological [Ca2+]e and the proportion increasing steeply below this set point. The minimal [Ca2+]e needed to sustain neurotransmission is ~0.4-0.5 mM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C86-C97 represent the authors' synthesis and interpretation of their experimental findings. These conclusions are well-supported by the data presented across multiple figures. The comparison with previous studies at 2.0 mM (C90) provides important context. The inference about minimal [Ca2+]e (C96) is supported by both extrapolation and direct measurement at 0.4 mM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The results suggest a feedback mechanism causing selective shutdown of terminals not meeting a threshold for Ca2+ entry, with important implications for neuromodulators that regulate Ca2+ currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 represent speculation about the underlying mechanism. While the threshold behavior is clearly demonstrated, the authors have not identified the molecular components of the proposed feedback mechanism. The term 'feedback mechanism' implies a specific regulatory architecture that has not been experimentally validated. Additional mechanistic studies would be needed to support this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Although CSF [Ca2+] is tightly regulated globally, models predict that local [Ca2+]e may decrease substantially during repetitive firing. The phenomenon of [Ca2+]e-mediated silencing may serve as a homeostatic mechanism to prevent excessive synaptic activity in vivo, and the magnitude of [Ca2+]e decrease needed to silence terminals is relatively small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C74 represent speculation about in vivo function. While the modeling studies cited (C71) predict local [Ca2+]e depletion, the authors have not directly measured this in their system or demonstrated that it occurs at physiologically relevant firing rates. The homeostatic function (C73) is plausible but remains speculative without in vivo validation. These represent reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "[Ca2+]e has a potent effect in setting the proportion of silent terminals driven by \u0394[Ca2+]i, providing evidence that [Ca2+]e is an important lever contributing to neuromodulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 represent the authors' main conclusions, which are well-supported by the comprehensive experimental data across multiple measurement approaches (Ca2+ influx, SV recycling, glutamate release) and manipulations ([Ca2+]e, toxins, baclofen). The convergence of evidence from different experimental paradigms strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Experiments were conducted on primary hippocampal neuronal cultures from postnatal day 0-2 Sprague-Dawley rats, transfected on DIV 6-8 and used on DIV 14-21, with temperature maintained at 37\u00b0C. Different stimulation protocols were used for different biosensors (20 AP for physin-GCaMP, 200 AP for vGpH, single AP for iGluSnFR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 describe the experimental methods and are clearly documented. The use of physiological temperature (37\u00b0C) is a key strength of the study that distinguishes it from previous work. The different stimulation protocols are appropriate for the different biosensors and their signal-to-noise characteristics. These methodological details are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C100"
+    ],
+    "result": "The narrowing of action potentials at warmer temperatures results in lowering of Ca2+ influx during AP firing. Previous studies demonstrated that G\u03b2\u03b3 interacts with presynaptic VGCCs to lower Ca2+ current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C100 represent established knowledge supported by appropriate citations. These provide important context for understanding why temperature matters (C84) and the mechanism of GPCR action (C100). The citations are appropriate and the claims are accurately stated.",
+    "result_type": "MINOR"
+  }
+]

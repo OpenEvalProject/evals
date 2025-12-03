@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background statistics on pain prevalence and the opioid epidemic in the United States, including that over 25 million people suffer from severe pain daily, approximately 80% of opioid addicts initiated through prescription opioids, and the epidemic caused over 47,600 deaths in 2017, making drug overdose the leading cause of accidental death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, and C4 are supported by appropriate citations (Nahin, 2015; Overdose Death Rates, 2019). Claim C2 lacks a specific citation but represents general knowledge in the field. These background statistics provide appropriate context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript reviews prior work on biased opioid ligands, noting that G protein-biased ligands have been proposed to reduce side effects, with mixed results including FDA approval of TRV130 (which shows weak bias), and variable outcomes for other biased ligands at MOR and KOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are all supported by appropriate citations to prior literature. This comprehensive review of the field establishes the scientific context and identifies gaps that motivate the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior evidence suggests that dual MOR/KOR activation may produce synergistic analgesia while offsetting side effects, with examples including U50,488h reducing DAMGO-induced respiratory depression and nalbuphine showing morphine-equivalent analgesia with negligible respiratory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by appropriate citations to prior work (Sutters et al., 1990; Pan, 1998; Dosaka-Akita et al., 1993; Haji and Takeda, 2001; Schmidt et al., 1985; Peng et al., 2007). This establishes the rationale for the dual MOR/KOR agonist approach pursued in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Computational modeling and docking studies suggest that ligand interactions at the TM5-ECL2 region versus TM2-TM3 sub-pocket correlate with signaling bias, with ring C conformation (boat vs. chair) controlling the position of the amidophenyl arm. Chair conformation and TM5-ECL2 engagement correlate with G protein bias, while boat conformation and TM2-TM3 engagement correlate with arrestin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C36-C40, C88-C90 are supported by computational modeling data including QM calculations, docking studies, and structural analysis. The predictions are internally consistent and later validated experimentally (C41-C64). The use of crystal structures (PDB codes provided) and systematic analysis of conformational preferences provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "MP1104 shows arrestin bias at both MOR and KOR, with bias factors of 0.58 at hMOR and 0.15 at hKOR in human receptors, and 0.11 at mMOR and 0.23 at rKOR in rodent receptors. MP1104 acts as a full agonist in both cAMP inhibition and arrestin recruitment assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 are supported by experimental data from multiple assay types (cAMP inhibition, Tango, BRET) across species (human and rodent receptors). Sample sizes are provided (N=3-5), and data are shown in figures with appropriate controls (DAMGO, U50,488h). The consistency across assays strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "IBNtxA and MP1202 show differential bias profiles: both are G protein biased at hMOR (bias factors 24 and 31, respectively) but IBNtxA shows no bias at rKOR while MP1202 shows arrestin bias at hKOR. MP1202 is a full agonist for cAMP inhibition but partial agonist for arrestin recruitment at hMOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 are supported by experimental data from multiple assays (cAMP, Tango, BRET) with appropriate sample sizes and controls. The differential bias profiles between receptors and species are clearly documented with bias factors calculated using established methods (Kenakin et al., 2012). Data shown in Figure 2 and appendix figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MP1207 and MP1208 are G protein biased at hKOR (bias factors 8 and 22) with completely abolished arrestin recruitment at hMOR, though with reduced cAMP efficacy (Emax 33% and 42% vs DAMGO). Both compounds show sub-nanomolar affinity at mMOR and mKOR with >40-fold selectivity over mDOR, and are partial agonists in GTP\u03b3S assays with no arrestin recruitment in BRET assays at rodent receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are supported by comprehensive in vitro characterization including binding assays, cAMP inhibition, Tango, BRET, and GTP\u03b3S assays. Sample sizes are provided (N=3), appropriate controls used, and data shown in Figure 3 and appendix tables. The partial agonism is clearly documented with quantitative Emax values. The lack of arrestin recruitment is consistently observed across assay types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MP1207 shows high selectivity for opioid receptors, with Ki >10 \u00b5M at most screened targets except SERT (356 nM) and \u03b12C-adrenoreceptors (2979 nM), representing 900-fold selectivity for MOR/KOR over the nearest non-opioid target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by radioligand binding data from a broad screen (330 GPCRs in PRESTO-Tango, plus additional radioligand binding). The selectivity data are quantitative with SEM values provided. The 900-fold selectivity calculation is appropriate based on the reported Ki values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Molecular dynamics simulations show that over 50% of trajectory frames have the methyl amine of MP1207 within 4.5 \u00c5 of E209ECL2 and D2235.35 carboxylate oxygens, with fluctuating salt bridge interactions between these residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by MD simulation data from two 1000 ns runs. The distance analysis is quantitative and shown in Figure 4B. The simulations support the design hypothesis regarding TM5-ECL2 interactions, though MD simulations have inherent limitations in sampling and force field accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The Y312W7.35 mutation in KOR reduces arrestin recruitment for IBNtxA and MP1202, with MP1202 showing strong G protein bias (bias factor 34) at the mutant KOR compared to robust arrestin recruitment at wild-type KOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by mutagenesis data shown in appendix figures. C56 is additionally supported by citation to prior work (Che et al., 2018). The mutation experiments provide strong validation of the TM2-TM3 region's role in arrestin recruitment, supporting the structural hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "MP1209 (para-substituted) and MP1210 (meta-hydroxyl) analogs, which cannot form salt bridges with D2235.35 and E209ECL2, lost G protein bias at hKOR while retaining null arrestin recruitment at hMOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by experimental data in Figure 4C-F and appendix figures. These structure-activity relationship studies validate the importance of specific salt bridge interactions for KOR bias, as predicted computationally. The loss of bias with structural modifications that prevent salt bridge formation strongly supports the mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Extending the TM5-ECL2 hypothesis to fentanyl scaffolds, methoxycarbonyl fentanyl shows arrestin bias (bias factor 0.09 at hMOR) while MP102, predicted to target TM5, shows no arrestin recruitment at human and mouse receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by experimental data in appendix figures showing G protein and arrestin activity for both compounds. The extension to a different scaffold (fentanyl vs morphinan) strengthens the generalizability of the TM5-ECL2 mechanism, though only one example of each type is tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Additional morphinan analogs show bias profiles consistent with computational predictions: MP1305 is G protein biased at both MOR and KOR (bias factors 11 and 4), while MP1601 shows arrestin bias at hKOR (bias factor 0.5) but G protein bias at hMOR (bias factor 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by experimental data in appendix figures. These additional SAR examples further validate the structure-bias relationships, with MP1305 showing the predicted chair conformation preference at both receptors and MP1601 showing differential conformational preferences consistent with its bias profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MP1207 and MP1208 produce potent antinociception in mice with ED50 values of 6.1 and 7.2 nmol icv, comparable to U50,488h (8.8 nmol) and slightly higher than morphine (4.77 nmol). Both compounds show peak effects at 10 min, returning to baseline at 90 min (MP1207) and 60 min (MP1208).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by dose-response and time-course data in Figure 5A-C. ED50 values are reported with 95% confidence intervals. Sample sizes appear adequate (n=8-16 per group). The antinociceptive potency is comparable to standard opioid agonists, validating in vivo efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "MP1207/08 antinociception is significantly attenuated in both MOR KO and KOR KO mice but remains intact in DOR KO mice, demonstrating dual MOR/KOR-mediated analgesia with selectivity over DOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by knockout mouse data in Figure 5D-E with statistical analysis (one-way ANOVA, n=8 per group, p-values reported). The attenuation in both MOR KO and KOR KO mice confirms dual receptor engagement, while intact activity in DOR KO mice confirms selectivity consistent with binding data (C45-C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "MP1207 and MP1208 show neither rewarding nor aversive behavior in conditioned place preference assays at 100 nmol icv (~15x ED50), while morphine shows place preference and U50,488h shows place aversion as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by CPP/CPA data in Figure 5F with appropriate sample sizes (n=12-26) and statistical analysis (unpaired t-test). The lack of reward or aversion for MP1207/08 contrasts with standard MOR and KOR agonists, suggesting reduced abuse liability. However, testing was limited to the highest soluble dose, and dose-response relationships were not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MP1207 and MP1208 stimulate respiration at 5x ED50 doses (30 and 35 nmol icv), contrasting with morphine-induced respiratory depression and the neutral effect of U50,488h. MP1207 at 100 nmol icv still stimulates respiration, though less than at 30 nmol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by respiratory rate data in Figure 6A-C using CLAMS with appropriate sample sizes (n=10-26) and statistical analysis (two-way ANOVA). The respiratory stimulation is unexpected and represents a major safety advantage. However, the mechanism is unclear and the dose-response relationship shows complexity (reduced effect at higher dose).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MP1207 and MP1208 stimulate locomotor activity at 30 nmol icv compared to 100 nmol icv, with morphine inducing significantly greater hyperlocomotion than either compound at equianalgesic doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by locomotor activity data in Figure 6D-F and Appendix 1-figure 11 using CLAMS with appropriate sample sizes and statistical analysis. The reduced locomotor effects compared to morphine suggest a better side effect profile, though some stimulation is still observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Recent findings indicate that morphine's respiratory depression is \u03b2-arrestin 2-independent, with MOR C-tail mutant mice retaining respiratory depression, constipation, and withdrawal despite impaired arrestin recruitment, though showing attenuated tolerance and prolonged analgesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by citations to recent literature (Kliewer et al., 2020; Bachmutsky et al., 2020; Kliewer et al., 2019). This discussion contextualizes the current findings within recent controversies about the role of arrestin bias in opioid side effects, appropriately acknowledging limitations of the bias hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Recent reports suggest that putative biased ligands (PZM21, TRV130, SR17018) have low intrinsic efficacy at G protein signaling in assays without receptor reserve, raising the possibility that partial agonism rather than arrestin bias may be critical for improved drug profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by citation to Gillis et al., 2020a. This discussion appropriately acknowledges an alternative interpretation of the field's findings and is relevant to interpreting the current results, as MP1207/08 are also partial agonists (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The TM5-ECL2 region has been proposed to dictate bias at other GPCRs including 5HT2B serotonin and D2 dopamine receptors, though specific mechanisms may differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by citations to McCorvy et al., 2018 and Chun et al., 2018. This discussion places the findings in broader GPCR context, suggesting potential generalizability of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C98"
+    ],
+    "result": "The improved in vivo profile of MP1207/08 (attenuated respiratory depression, lack of place preference/aversion) could result from partial agonism at both KOR and MOR, potentially offering therapeutic benefits over buprenorphine by blunting MOR-mediated respiratory depression through KOR partial agonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92 and C98 represent interpretations and hypotheses rather than demonstrated facts. While the partial agonism is documented (C47) and the improved profile is shown (C73-C79), the causal relationship is not definitively established. The authors appropriately acknowledge this uncertainty (C99), noting that the relative contributions of bias, partial agonism, and dual MOR/KOR activity require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Buprenorphine, a MOR partial agonist with KOR/DOR antagonism and NOP agonism, shows a ceiling effect in respiratory depression but displays hyperlocomotion and inverted U-shaped CPP dose-response. Its pharmacology is complicated by the active metabolite norbuprenorphine, which shows respiratory depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by appropriate citations (Grinnell et al., 2016; Dahan et al., 2005; Marquez et al., 2007; Huang et al., 2001; Brown et al., 2012). This discussion provides context for comparing MP1207/08 to an existing partial agonist with mixed receptor activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The authors acknowledge that the relative roles of G protein bias, reduced G protein efficacy, and mixed MOR-KOR agonism in the improved profile of MP1207/08 are not yet clear and require further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 appropriately acknowledges the limitations and uncertainties in mechanistic interpretation. This honest assessment of what remains unknown is scientifically appropriate and identifies important future directions.",
+    "result_type": "MINOR"
+  }
+]

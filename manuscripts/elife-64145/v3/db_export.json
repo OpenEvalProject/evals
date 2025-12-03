@@ -1,0 +1,1306 @@
+{
+  "submission": {
+    "id": "0c138edd-b1bf-44fe-bf69-0995685d5414",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T02:27:39.063179Z",
+    "updated_at": "2025-12-03T02:27:39.063179Z"
+  },
+  "content": [
+    {
+      "id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "submission_id": "0c138edd-b1bf-44fe-bf69-0995685d5414",
+      "content_type": "manuscript",
+      "content_text": "# Three-dimensional biofilm colony growth supports a mutualism involving matrix and nutrient sharing\n\n## Authors\n\n- Heidi A Arjes<sup>1</sup> ([ORCID: 0000-0002-4708-4286](https://orcid.org/0000-0002-4708-4286))\n- Lisa Willis<sup>1</sup>\n- Haiwen Gui<sup>1</sup> ([ORCID: 0000-0003-0564-940X](https://orcid.org/0000-0003-0564-940X))\n- Yangbo Xiao<sup>1</sup>\n- Jason Peters<sup>2</sup>\n- Carol Gross<sup>2</sup> ([ORCID: 0000-0002-5595-9732](https://orcid.org/0000-0002-5595-9732))\n- Kerwyn Casey Huang<sup>1</sup> ([ORCID: 0000-0002-8043-8138](https://orcid.org/0000-0002-8043-8138)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, Stanford University School of Medicine Stanford United States\n2. Department of Cell and Tissue Biology, University of California San Francisco San Francisco United States\n3. Pharmaceutical Sciences Division, School of Pharmacy, University of Wisconsin-Madison Madison United States\n4. Great Lakes Bioenergy Research Center, Wisconsin Energy Institute, University of Wisconsin-Madison Madison United States\n5. Department of Bacteriology, University of Wisconsin-Madison Madison United States\n6. Department of Medical Microbiology and Immunology, University of Wisconsin-Madison Madison United States\n7. Department of Microbiology & Immunology, Stanford University School of Medicine Stanford United States\n8. Chan Zuckerberg Biohub San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLife in a three-dimensional biofilm is typical for many bacteria, yet little is known about how strains interact in this context. Here, we created essential gene CRISPR interference knockdown libraries in biofilm-forming Bacillus subtilis and measured competitive fitness during colony co-culture with wild type. Partial knockdown of some translation-related genes reduced growth rates and led to out-competition. Media composition led some knockdowns to compete differentially as biofilm versus non-biofilm colonies. Cells depleted for the alanine racemase AlrA died in monoculture but survived in a biofilm colony co-culture via nutrient sharing. Rescue was enhanced in biofilm colony co-culture with a matrix-deficient parent due to a mutualism involving nutrient and matrix sharing. We identified several examples of mutualism involving matrix sharing that occurred in three-dimensional biofilm colonies but not when cultured in two dimensions. Thus, growth in a three-dimensional colony can promote genetic diversity through sharing of secreted factors and may drive evolution of mutualistic behavior.\n\n## Introduction\n\nIn natural environments, many bacteria grow in dense, three-dimensional multicellular communities held together by extracellular matrix, often called biofilms. Biofilms have widespread clinical (Wu et al., 2015), industrial (Lappin\u2010Scott and Costerton, 1989), and biotechnological (Morikawa, 2006) implications. Biofilms allow for genetic differentiation and division of labor that can mutually benefit distinct genotypes. For instance, in a dual-species biofilm, extracellular matrix components were functionally exploited by multiple species to drive emergent structural and mechanical properties of the biofilm that affected viability (Yannarell et al., 2019). Additionally, the amount of mutations that are supported in a population of a given size is higher in microbial colonies compared to well-shaken, liquid cultures that allow beneficial mutations to sweep the population (Fusco et al., 2016; Habets et al., 2007), suggesting that spatial confinement supports an increase in genetic variation. Spatial confinement dramatically increases the frequency of interactions between nearby cells and thus the potential for linked evolutionary outcomes, coupling random genetic drift events in these subpopulations (Kayser et al., 2018). However, mechanisms that support genetic diversity in the context of a three-dimensional bacterial colony or biofilm remain underexplored (Kim et al., 2016).\n\nThe model organism Bacillus subtilis is a soil-dwelling species that adheres to plant roots as a biofilm (Beauregard et al., 2013). In laboratory conditions, B. subtilis grows on surfaces in biofilm or non-biofilm colonies depending on the growth medium. In the commonly used rich medium\u00a0lysogeny\u00a0broth (LB), B. subtilis grows as a colony with limited biofilm characteristics (Shemesh and Chai, 2013). By contrast, when cultured on the biofilm-promoting\u00a0minimal medium MSgg (Branda et al., 2001), B. subtilis natural isolates produce extracellular matrix composed of secreted polysaccharides and proteinaceous components that hold cells together and enhance biofilm colony expansion (Kim et al., 2016; Seminara et al., 2012; van Gestel et al., 2015). The extracellular matrix also establishes colony architecture through the three-dimensional pattern of growth and wrinkling (Asally et al., 2012). This architecture creates a variety of contexts for genetically identical cells to differentially express genes depending on their location, and indeed biofilms contain functionally distinct subpopulations (L\u00f3pez et al., 2010; Vlamakis et al., 2013): living cells differentiate into extracellular\u00a0matrix producers, sporulating cells, and motile cells, while dead cells may be cannibalized (Blair et al., 2008; Cairns et al., 2014; Vlamakis et al., 2008). Thus, biofilms are an environment with heightened potential for interactions among cells in distinct transcriptional states and/or genetic backgrounds. Furthermore, biofilm-specific interactions can be identified and characterized by comparing biofilm and non-biofilm growth conditions.\n\nThe explosion of interest in microbial communities in recent years has stimulated a variety of approaches for identifying interspecies interactions. Liquid co-cultures have been used to quantify interaction networks (Venturelli et al., 2018) and dissect changes in antibiotic sensitivity in co-cultures (Aranda-D\u00edaz et al., 2020), but liquid growth cannot be used to identify biofilm or colony-specific interactions as it removes the spatial context of community growth and likely prioritizes long-range interactions over short-range physical contacts. Moreover, determining the amount of each strain in a co-culture often relies on laborious methods such as dilution plating and colony counting (Aranda-D\u00edaz et al., 2020; Arjes et al., 2020), which may be complicated if cells adhere to each other. Microfluidics has facilitated the production and high-throughput analysis of picoliter (Ohan et al., 2019) and nanoliter (Kehe et al., 2019) droplets with mixed species, but these approaches again rely on liquid growth and the resulting communities contain very few cells compared to many natural communities, especially those that grow in colonies adhered to a surface, making it difficult to study complex fitness phenotypes beyond those affecting initial growth. The production of antibiotics by certain species has been investigated using the inhibition of colony growth of other species at a distance (Stubbendieck et al., 2016; Temkin et al., 2019; Zhang and Straight, 2019), and a colony-based screen identified interspecies interactions between B. subtilis and other soil bacteria (Shank et al., 2011). While powerful, these methods are not amenable to investigating genetically distinct strains growing together in a three-dimensional structure. The increased availability of mutant libraries across organisms (Baba et al., 2006; Koo et al., 2017; Peters et al., 2016; Rousset et al., 2018) motivates the development of a colony-based strategy for high-throughput screening of the fitness of strains within co-cultures.\n\nBoth non-essential and essential genes (so defined based on survival in a typical laboratory environment such as liquid growth in LB) may impact fitness in any environment. While chemical\u00a0genetic screens of ordered libraries of deletions of non-essential genes have revealed novel phenotypes and elucidated the mechanism of action of drugs (Brochado and Typas, 2013; Nichols et al., 2011), and phenotypic screens of transposon libraries have identified sporulation- and biofilm-related non-essential genes (Branda et al., 2004; Meeske et al., 2016), essential genes have traditionally been challenging to address. CRISPR interference (CRISPRi) utilizes an endonuclease-dead version of Cas9 (dCas9) to inhibit transcription from a gene of interest (Qi et al., 2013), facilitating tunable expression of any gene. Previously, we created a library of CRISPRi knockdowns of each essential gene in the non-biofilm-forming strain B. subtilis 168, which we used to uncover essential gene networks and identify functional classes of genes based on growth and morphology (Peters et al., 2016). In each strain of this library, the level of an essential gene can be titrated, from basal knockdown that allows robust growth of cells in liquid cultures, to full knockdown that inhibits the growth of many strains (Peters et al., 2016). Thus, CRISPRi targeting of essential genes provides the potential for a wide distribution of phenotypes, enabling determination of the effects of essential gene disruption without completely inhibiting growth (Larson et al., 2013). This ability to achieve tunable knockdown is particularly appealing for quantifying interstrain interactions, by contrast to the lethal phenotype of complete removal of essential genes. CRISPRi was recently used to identify genes that regulate biofilm formation in Pseudomonas fluorescens (Noirot-Gros et al., 2019); the efficacy of CRISPRi for B. subtilis in a colony/biofilm environment has yet to be ascertained.\n\nHere, we created Green Fluorescent Protein (GFP)-labeled libraries of CRISPRi essential\u00a0gene knockdowns in the biofilm-forming strain B. subtilis NCIB 3610 to investigate the fitness consequences of gene knockdowns and interstrain interactions within three-dimensional biofilm and non-biofilm colonies. We demonstrated that the level of CRISPRi knockdown is tunable during colony growth on LB and biofilm-promoting\u00a0MSgg agar. We developed a high-throughput method for screening monocultures and co-culture colonies on agar plates, and applied this method to quantify growth and fitness when CRISPRi knockdowns were co-cultured with a wild-type-like parent strain. We observed a wide range of fitness phenotypes across media and knockdown levels, with partial knockdowns of translation-related genes producing the lowest fitness, likely due to their negative impact on growth rate. We discovered that full knockdown of alrA, which encodes an alanine racemase required for cell\u00a0wall synthesis, was rescued by the presence of wild-type cells in a co-culture biofilm colony but not in liquid. This rescue was enhanced and stable over time when parent cells were unable to produce extracellular matrix, revealing a mutualistic interaction between these strains. Finally, we identified several other knockdowns with higher competitive fitness when the parent cells are deficient in extracellular matrix production as long as biofilm colony growth occurs in three dimensions, suggesting that these genes have mutualistic potential via nutrient and matrix sharing. These findings highlight the importance of colony geometry and matrix production in determining gene essentiality and interstrain genetic interactions, and provide foundational knowledge of mechanisms that support genetic diversity in pathogenic and environmental biofilms.\n\n## Results\n\n### Construction of a knockdown library for probing gene essentiality in B. subtilis 3610\n\nTo study genetic interactions involving critical cellular processes within a biofilm colony, we constructed a CRISPRi knockdown library in the biofilm-forming B. subtilis strain 3610 (Materials\u00a0and\u00a0methods). The library contains 302 strains: the 252 known essential genes in B. subtilis strain 168, 47 genes that were initially classified as essential in 168 (Kobayashi et al., 2003) but later revealed to be non-essential or conditionally essential (Koo et al., 2017), and three internal controls expressing dCas9 without any guide RNAs (Supplementary file 1; Peters et al., 2016). Each strain in the library contains a xylose-inducible copy of dcas9 and an sgRNA targeting the gene of interest (Figure 1A). In addition, gfp is incorporated at the sacA locus to allow visualization and quantification of the knockdown strain (Figure 1A). The sacA::gfp strain exhibited similar colony growth and biofilm wrinkling as a parental unlabeled control on both non-biofilm LB agar and biofilm-promoting MSgg (Branda et al., 2001) agar (Figure 1B). We refer to colonies on LB and MSgg as \u2018non-biofilm\u2019 colonies and \u2018biofilm\u2019 colonies, respectively. However, it is important to note that the biofilm definition is nuanced; colonies on LB may have some biofilm characteristics (Shemesh and Chai, 2013), and biofilm pellicles formed at air\u2013liquid interfaces may have distinct properties from MSgg colonies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-v3.jpg)\n\n**Figure 1.:** (A) We constructed a GFP-labeled library of CRISPR interference\u00a0(CRISPRi) knockdowns of all known essential and conditionally essential genes (top left). In the library, the nuclease-deactivated Cas9 gene (dcas9) is inducible with xylose and the single-guide RNA (sgRNA) is constitutively expressed. dCas9 binds the sgRNA and blocks transcription by physically impeding RNA polymerase (right). Every strain is labeled with gfp expressed from the sacA locus. A parent strain (parent-RFP, bottom left) that expresses rfp as well as dCas9 without an sgRNA was used in competition assays. (B) The parent-GFP (sacA::gfp, lacA::dCas9) and parent-RFP strains have similar phenotypes to wild type on both biofilm-promoting MSgg agar and non-biofilm-promoting LB agar. Cultures were grown in liquid LB to an optical\u00a0density\u00a0(OD600)\u00a0~1, and then 1 \u00b5L was spotted in the middle of wells of a six-well plate containing LB agar or MSgg agar. Image intensities were adjusted identically; the yellow and red colors of the parent strains are due to GFP and RFP expression, respectively. Scale bar: 5 mm. (C) Schematic of screening strategy to measure the monoculture colony size and competitive fitness of each knockdown against the parent-RFP strain. GFP-labeled knockdown libraries were grown in liquid culture in 96-well microtiter plates. Monocultures were spotted onto LB and MSgg agar plates (top right) without or with xylose to achieve basal or full knockdown, respectively, of the targeted gene. The monoculture plates contained parent controls in wells along an outer column and row (solid box). Co-cultures of a 1:1 volumetric mixture of the parent-RFP and GFP-labeled library strains were spotted onto agar plates of LB and MSgg, without or with xylose. Controls in which parent-GFP was mixed with parent-RFP are bounded by horizontal red box. Bottom right: merged image of RFP and GFP signals from co-cultures. The co-cultures include a titration row from 100% GFP cultures to 100% RFP cultures in 10% increments (dashed box), and several controls of 1:1 mixtures of the parent GFP and parent-RFP strains (purple box). Scale bar: 5 mm. (D) Schematic of image analysis to quantify competitive fitnesses from the co-culture screen. Data from plate 1 spotted on MSgg is presented as an example. Plates were segmented and individual colony intensities were extracted from the GFP and RFP images. GFP intensities were divided by RFP intensities to obtain ratios I. The titration row (dashed box) was fit to a curve using the equation I=\u03b1G/(1\u2212\u03b2G), where G is the fraction of the parent-GFP strain, to extract fit parameters \u03b1 and \u03b2 for each plate individually. These parameters were used to map the GFP fractions of each colony and values were normalized so that the parent-GFP:parent-RFP control co-cultures on each plate (solid box) had an average value of 1. Scale bar 5 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Varying CRISPRi induction generates titrated gene expression in colonies on LB and on the biofilm-promoting medium MSgg. We spotted a strain with CRISPRi targeting rfp onto LB or MSgg agar plates with various amounts of xylose. Left: images were acquired after 24 hr of growth. Right: RFP levels varied inversely with xylose concentration, with basal repression minimally decreasing expression of RFP and higher levels of xylose repressing expression by 10- to 1000-fold in LB and\u00a0~10,000-fold in MSgg. Data were normalized to RFP levels in a strain without a CRISPRi sgRNA (100% RFP). Scale bar 5 mm. (B) Colony counts and fluorescence measurements of co-cultures both map well to the predicted ratio function. Top: parent-RFP and parent-GFP cultures were mixed in various fractions and spotted onto LB (left) or MSgg (right) agar plates. Colony count ratios were normalized to the value for GFP fraction of 0.8 to account for differences in parent-RFP and parent-GFP culture densities. Fluorescence and colony count ratios are shown as circles, and the predicted fitting function is shown as a gray line. (C) Competition data for the entire sacA::gfp library after 16 hr of growth at each step of the analysis pipeline. The titration row is denoted by white dashed boxes. The few gray boxes represent empty wells or wells that involved division by zero during processing and hence were ignored. (D) Competition data for the sacA::GFP library after 24 and 48 hr of growth. The titration row is denoted by white dashed boxes. The few gray boxes represent empty wells or wells that involved division by zero during processing and hence were ignored. (E) Data from the titration row of parent-GFP and parent-RFP co-cultures were well fit by the predicted equation I=\u03b1G/(1\u2013\u03b2G) (red lines, Figure 1D). Circles show the ratio of GFP:RFP intensities of the 0\u201390% GFP (100\u201310% RFP) colonies plotted against the fraction of GFP for each plate of each library at each time point in B,\u00a0C.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Merged images from the competition screen on LB and MSgg agar under basal and full knockdown, at 16, 24, and 48 hr. The CRISPRi\u00a0strains and parent-GFP controls are false-colored in green, and the parent-RFP is false-colored in magenta. The dashed boxes show the titration row of each plate, and the solid boxes show the parent-GFP + parent-RFP controls. The distance between the centers of neighboring colonies is 9 mm.\n\nTo determine whether CRISPRi can be used to knock down gene expression in non-biofilm and biofilm colonies, we engineered a parent strain containing the Red Fluorescent Protein gene (rfp) under a constitutive promoter and used CRISPRi to target rfp. In this strain, RFP levels in non-biofilm colonies on LB agar plates ranged from 40% (basal knockdown) to\u00a0~0% (full knockdown) (Figure 1\u2014figure supplement 1A), a comparable range to knockdown of the domesticated strain 168 in liquid LB (Peters et al., 2016). RFP levels in biofilm colonies on MSgg agar ranged from\u00a0~90% (basal knockdown) to\u00a0~0% (full knockdown) (Figure 1\u2014figure supplement 1A). Thus, CRISPRi is an effective tool to knock down gene expression in non-biofilm and biofilm colonies.\n\n### High-throughput screening of competitive fitness in a colony\n\nWe compared the colony\u00a0growth phenotypes of GFP-labeled knockdown strains grown either alone or mixed with a control strain modified with xylose-inducible dCas9 (without an sgRNA) and constitutive expression of RFP (henceforth referred to as parent-RFP) that exhibits wild-type-like biofilm colony formation (Figure 1A,\u00a0B). After growing each strain individually in liquid LB, GFP-labeled knockdown strains were spotted either alone or mixed with parent-RFP onto agar plates (Figure 1C, Figure 1\u2014figure supplement 2). Each plate included a titration row of colonies grown from mixtures of a parent-GFP strain with the parent-RFP strain at known concentrations from 0% to 100% parent-GFP (Figure 1D, Figure 1\u2014figure supplement 2). Quantification of the titration row closely agreed with the predicted ratio of GFP:RFP at each time point (16, 24, and 48 hr) (Figure 1D, S1B,\u00a0E), indicating that the relative fraction of GFP-labeled mutants in co-culture with the parent-RFP strain can be accurately quantified through comparison of the GFP:RFP ratio with the titration row (Materials\u00a0and\u00a0methods). The titration row also led to good agreement with the predicted ratio of GFP:RFP when LB and MSgg colonies were disrupted by sonication and plated to determine relative colony-forming units (Figure 1\u2014figure supplement 1B), further validating our fluorescence-based assay. Colony phenotypes were quantified using a custom image-analysis pipeline that segmented plates into colonies and computed the ratio of GFP:RFP for each colony; colony size was measured manually (Figure 1D, S1C,\u00a0D; Materials\u00a0and\u00a0methods). Thus, our screen allows us to quantitatively compare growth as a monoculture to growth in co-culture through this competitive fitness value (Figure 1C).\n\n### Gene knockdown results in a broad range of colony sizes and competitive fitnesses\n\nTo measure growth in monocultures or co-cultures across conditions, we spotted knockdowns on their own or mixed with parent-RFP on LB and MSgg agar without and with xylose. After 16 hr of growth, colony sizes of basal knockdown monocultures exhibited a narrow distribution on LB agar, but were more widely distributed on MSgg agar (Figure 2A, Figure 2\u2014figure supplement 1A, Supplementary file 2), indicating increased sensitivity to knockdown on MSgg. By contrast to growth as monocultures on LB, basal knockdowns co-cultured with the parent for 16 hr exhibited a broad distribution of competitive fitness on LB agar: only 92 of the strains had a fitness within two standard deviations of the mean of controls, while the remaining 210 strains were significantly defective in competition (below two standard deviations of the mean of the controls) (Figure 2B, Supplementary file 2). A competitive fitness of 1 signifies equal amounts of GFP-labeled knockdown and parent-RFP, and 0 means that the GFP-labeled knockdown was completely outcompeted by the parent-RFP strain. On MSgg agar, competitive fitness displayed a similar trend, with 198 basal knockdowns exhibiting a significant fitness defect after 16 hr (Figure 2A,\u00a0B, Supplementary file 2). As expected, when transcription was fully knocked down, fitness was even more compromised: 168 and 143 strains had fitness\u00a0<0.08 after 16 hr of growth on LB\u00a0xylose and MSgg\u00a0xylose agar, respectively (Figure 2B, Supplementary file 2). Together, these data demonstrate that even though phenotypes were generally subtle for monocultures grown on non-biofilm-promoting LB agar, screening the library on biofilm-promoting MSgg agar or in competition with a parent strain uncovered phenotypes even under basal knockdown.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig2-v3.jpg)\n\n**Figure 2.:** (A) Basal knockdown (light blue) of essential genes on LB agar (which does not promote biofilms) resulted in similar colony sizes as parent-GFP controls (gray); only 13 of 302 colonies had a\u00a0colony\u00a0size two standard deviations below the mean of the controls. By contrast, on biofilm-promoting MSgg agar the distribution of colony sizes spread to smaller values, with 80 colonies more than two standard deviations below the mean of the controls. Full knockdown (dark blue) inhibited growth of most strains. Data are from measurements at 16 hr using the sacA::gfp library. Vertical solid lines are means of the control distributions, and dashed lines show two standard deviations below the mean. (B) 17 (LB) and 11 (MSgg) knockdown strains in the library competed poorly against the parent-RFP strain at basal knockdown (light blue), while 41 (LB) and 46 (MSgg) had competitive fitness similar to parent-GFP+parent-RFP controls (gray) even at full knockdown (dark blue). Data are from competition ratios at 16 hr using the sacA::gfp library. Low-fitness strains were defined as having fitness at least two standard deviations below the mean of the data, and neutral-fitness strains were defined as having fitness at least one standard deviation above the mean. Vertical solid lines are means of the distribution from basal knockdown, and dashed lines show two standard deviations below and one standard deviation above the mean. (C) Strains with low competitive fitness for basal knockdown generally had lower growth rates in liquid monoculture than parent control strains. Colonies were inoculated into liquid LB, and OD600 was monitored over time. Ribosome-related genes are shown in shades of purple, and a cell envelope-related gene (tagG) is shown in yellow. Curves are means, and shaded regions represent one standard deviation (n\u00a0=\u00a03). Inset: maximum growth rates. *:\u00a0p<0.03, Student\u2019s unpaired t-test with a Benjamini\u2013Hochberg multiple-hypothesis correction. (D) On both LB and MSgg agar, basal knockdown of ygsA, which is involved in gene regulation, exhibited high competitive fitness (left) and tagG and ribosomal-gene knockdowns exhibited low competitive fitness (right). GFP (knockdown strain) is false-colored green, and RFP (parent) is false-colored magenta. Images are from 16 hr using the sacA::gfp library. Scale bar: 5 mm. (E) Competitive fitness of the strains with the highest and lowest values was approximately constant after 16 hr. Curves are means, and shaded regions represent one standard error of the mean (n\u00a0=\u00a03 independent measurements). Inset and dashed black line: a reaction-diffusion model of co-culture colony growth with physically realistic parameters indicates that knockdowns (magenta) with maximum growth rate 20% lower than the parent (green) reproduce the colony size (bottom, inset) and competitive fitness (bottom, dashed black line) of ribosomal protein knockdowns after 16 hr (Materials\u00a0and\u00a0methods, Figure 2\u2014figure supplement 1C).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Monoculture colonies on MSgg agar (basal knockdown) exhibited more variation in size than monoculture colonies on LB agar after 16 hr of growth. With full knockdown, there were many monoculture colonies with small size relative to controls on LB and on MSgg after 16 hr. The CRISPRi library is within the white boxes, and colonies outside of the boxes are parent-GFP controls. The distance between the centers of neighboring colonies is 9 mm. Data for colony areas is in Supplementary file 2. (B) A few knockdowns exhibited high competitive fitness in co-culture despite having reduced colony sizes in monoculture in basal knockdown conditions (orange), and one non-essential gene knockdown in the library had reduced competitive fitness (blue). The rest of the strains are in gray, and the controls are in black. (C) A reaction-diffusion model of colony growth (Materials\u00a0and\u00a0methods) recapitulates competitive fitness when DC\u00a0=\u00a00.003 mm2 hr\u22121; competitive fitness is not strongly perturbed by 10-fold changes in K/n0 and Dn/DC. Parameters M1\u00a0=\u00a00.0175 min\u22121, M1/M2\u00a0=\u00a00.8, r0\u00a0=\u00a01 mm, and C0/(n0/b)=0.001 are estimates from experimental data. The black line shows the simulated competitive fitness corresponding to the colony in the inset of Figure 2E in which both competitive fitness and colony size data were recapitulated with K/n0\u00a0=\u00a00.05 and Dn/DC\u00a0=\u00a0100. Competitive fitness was largely unchanged if Dn/DC\u00a0=\u00a01000 (dark pink, partly beneath black line) or Dn/DC\u00a0=\u00a010 (light pink, partly beneath black line), or if K/n0\u00a0=\u00a01.0 (dark blue) or K/n0\u00a0=\u00a00.005 (light blue, partly beneath dark pink line). (D) Strains that competed well at full knockdown included genes related to metabolism, gene regulation, prophage, and cell envelope (divIB), along with yloU, a gene of unknown function. Merged images show the parent-RFP false-colored in magenta and the knockdown strain false-colored in green. The 100% parent-RFP, 50% parent-RFP+50% parent-GFP, and 100% parent-GFP controls are shown to the right of the knockdowns. Scale bar: 5 mm. (E) Competitive fitnesses of the knockdowns with the highest fitness values at 16 hr were mostly stable over time with full CRISPRi induction. Curves are means, and shaded regions represent one standard error of the mean (n\u00a0=\u00a03 biological replicates).\n\n### Basal knockdown results in low competitive fitness for some depletions\n\nSeveral strains competed poorly with the parent-RFP strain even under basal knockdown in both non-biofilm and biofilm colonies (Figure 2B). Interestingly, some non-essential genes had low competitive fitness. For instance, mapA, which encodes a methionine aminopeptidase, competed poorly in both LB and MSgg colonies, and CRISPRi induction further reduced fitness (Supplementary file 2, Figure 2\u2014figure supplement 1B). Analysis of DAVID functional annotations of strains with competitive fitness\u00a0>2 standard deviations below the mean of controls revealed significant enrichment of structural constituents of ribosomes (p=9.8\u00a0\u00d7\u00a010\u22124 and p=2.1\u00a0\u00d7\u00a010\u22122 on LB and MSgg agar, respectively). Some of the ribosomal\u00a0protein knockdown\u00a0strains that competed most poorly exhibited\u00a0~20% lower maximum growth rate than wild type in liquid cultures (Figure 2C), suggesting that the reduced competitive fitness of these strains is due to their reduced growth rate. Indeed, a reaction-diffusion model of colony growth of a co-culture indicated that a strain\u2019s maximum growth rate is a major determinant of competitive fitness, and that the 20% decrease of maximum growth rate in certain ribosomal protein knockdowns is consistent with our experimental measurements of their competitive fitness (Figure 2E, Figure 2\u2014figure supplement 1C, Materials\u00a0and\u00a0methods).\n\n### Some strains with reduced monoculture colony size do not have a fitness defect in co-culture\n\nSeveral strains had fitness in co-culture with the parent-RFP strain similar to controls for basal and/or full knockdown (Figure 2B), suggesting that the targeted gene was rendered less essential by co-culture with parent-RFP. DAVID functional enrichment analysis of basal knockdowns with fitness values within one standard deviation of the mean across controls (n\u00a0=\u00a041 and 46 strains for LB and MSgg, respectively) highlighted integral membrane components on both solid media (p=2.1\u00a0\u00d7\u00a010\u22123 for both LB and MSgg). Under basal knockdown conditions, there were four strains (menH and cytC on LB and aroF and rny on MSgg) in which monoculture growth was clearly compromised by gene\u00a0knockdown but competitive fitness remained high (Figure 2\u2014figure supplement 1B). As menH and aroF are involved in the\u00a0synthesis of menaquinone (vitamin K2) and aromatic amino acids, respectively, the high competitive fitness may result from nutrient sharing within the colony. In addition, aromatic amino acid biosynthesis genes were enriched in basal knockdowns with high competitive fitness on LB agar (p=1.6\u00a0\u00d7\u00a010\u22122), potentially due to the presence of aromatic amino acids in rich LB medium but not in MSgg. These data underscore the medium\u00a0dependence of gene essentiality in co-culture colonies.\n\n### Competitive fitness is a reproducible and stable metric\n\nTo validate our findings, we replicated fitness measurements over time on a subset of strains with the highest or lowest competitive fitness values during basal knockdown on LB or MSgg agar. We found that the competitive fitness phenotype was highly reproducible and relatively stable over 2 days of colony growth (Figure 2D,\u00a0E, Figure 2\u2014figure supplement 1D, E), highlighting the utility of our CRISPRi library for probing the fitness of essential gene knockdown in co-cultures.\n\n### Several biosynthesis-related genes have different phenotypes in rich versus minimal media\n\nThe distinct nutrient compositions of LB and MSgg, along with the much broader distribution of monoculture colony sizes in MSgg compared with LB (Figure 2A), motivated a comparison of competitive fitness across media. Somewhat surprisingly given the likelihood of different metabolic profiles due to media compositional differences, 93% of the strains exhibited similar competitive fitness (defined here as within 0.24 or 0.3 of the y=x line for basal or full knockdown, respectively) on MSgg and LB agar, whether the targeted gene was basally or fully knocked down (Figure 3A, Supplementary file 2). Nonetheless, we identified 36 strains that competed with the parent-RFP strain better on MSgg than on LB, or vice versa, under basal or full knockdown (Figure 3A,\u00a0B, Supplementary file 3). Strains that competed better in one medium compared to the other were statistically enriched for genes involved in amino\u00a0acid biosynthesis (p=4.7\u00d710\u22126 and p=8.3\u00d710\u22125 for basal and full knockdown, respectively), suggesting that some strains benefit from nutritional components specific to one medium (Figure 3A, Supplementary file 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig3-v3.jpg)\n\n**Figure 3.:** (A) Although most knockdowns had similar fitness on LB and MSgg agar, a subset of knockdowns had higher competitive fitness on LB agar than on MSgg agar, or vice versa. Genes with fitness difference\u00a0>0.24 at 24 hr or\u00a0>0.3 at 48 hr are annotated and colored in orange shades, while those below the cutoff are in grayscale and parent-RFP+parent-GFP co-culture controls are in shades of purple. Genes labeled in bold were selected for follow-up studies. Data are from the sacA::gfp library at 16, 24, and 48 hr. The solid line is y=x, and the dotted lines represent the chosen cutoff. (B) Images of colonies of the bolded genes in A after 48 hr that illustrate the differential competitive fitness between LB and MSgg. Green and magenta represent fluorescence from the gene knockdown and parent, respectively. Scale bar: 5 mm. (C) Addition of specific nutrients to the medium with lower competitive fitness rescued fitness for the mntA, glyA, and mgtE knockdowns. Means (circles) of triplicates (shown at the\u00a0end of lines extending from the circle) are displayed. Filled black circles represent gene knockdowns that had substantially different competitive fitness in LB and MSgg. Open gray circles represent other genes tested that were not identified as different in that condition. Parent-RFP+parent-GFP controls are shown as gray filled circles. Data from addition experiments (LB+manganese, LB+magnesium, and MSgg+glycine for mntA, mgtE, and glyA, respectively) are shown as colored circles and lines at the ends of arrows. All changes marked with arrows are significant after correcting for multiple hypotheses with the Benjamini\u2013Hochberg method (p<0.01, Student\u2019s unpaired t-test). Genes without a colored circle and arrow indicate that the fitness of that knockdown did not change upon addition of any of the nutrients tested (Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The competitive fitness of glyA, mgtE, and mntA knockdowns improved when glycine was added to MSgg agar, Mg2+ was added to LB agar, or Mn2+ was added to MSgg agar, respectively. Images are merges of fluorescence from the knockdown (false-colored in green) and the parent-RFP (false-colored in magenta) after 48 hr. Scale bar: 5 mm. (B) Many nutrients did not alter competitive fitness. Baseline competitive fitness values (top row) versus when a nutrient was added to MSgg agar (yellow) or LB agar (blue). Means are displayed as black circles, with each replicate at the end of lines extending from the circle. Data are from the 48 hr time point.\n\nDespite the undefined nature of LB, it was still possible in the case of many strains to identify candidate components whose addition to the medium with lower competitive fitness might rescue the deficit. We selected 20 knockdowns with medium-dependent fitness to pursue further, many of which displayed fitness differences for both basal and full knockdown (Supplementary file 3). The glyA knockdown had higher competitive fitness on LB agar than on MSgg agar, and as hypothesized, addition of glycine to MSgg significantly improved fitness in basal and induced conditions, to levels close to fitness on LB (Figure 3C). Similarly, adding Mg2+ or Mn2+ to LB agar at the same levels as in MSgg restored the competitive fitness of mgtE and mntA full knockdowns, respectively, to levels on MSgg (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 4). While adding Mn2+ to LB agar promotes biofilm phenotypes (Shemesh and Chai, 2013), in this case the additional Mn2+ likely compensates for mntA knockdown as mntA is a component of the Mn2+ ABC transporter (MntABCD) (Que and Helmann, 2000). Somewhat surprisingly, even though many of the remaining 17 knockdowns with medium-dependent fitness naturally suggested candidates for a missing nutrient, they did not exhibit increased fitness when the hypothesized nutrient was added to the medium with reduced fitness (Figure 3\u2014figure supplement 1B, Supplementary file 3,), showing that at least exogenous provision of those nutrients is insufficient to complement the medium-specific fitness defect. Together, these results indicate that medium-dependent competition ratios can arise due to both nutrient compositional differences between media and other mechanisms that remain unindentified but highlight potentially important factors in selection during colony growth.\n\n### Wild-type cells rescue alrA knockdown in a biofilm colony by sharing D-alanine\n\nSince growth in a structured community provides opportunities for nutrient sharing and cellular differentiation, we hypothesized that some essential\u00a0gene knockdowns would be unable to grow as a colony in monoculture but would fare better in co-culture with wild-type-like parent-RFP cells. Across our sacA::gfp essential\u00a0gene knockdown library, we did not identify any knockdowns that exhibited robust growth in a colony co-culture but died as a monoculture (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 1, Supplementary file 2). (To conform to our inoculation protocol for biofilm\u00a0colony cultures in which we used 1 \u00b5L of a liquid culture of OD\u00a0~1.0 [Materials\u00a0and\u00a0methods], our high-throughput screen involved inoculation of each\u00a0~2-mm-diameter spot with\u00a0~2\u00a0\u00d7\u00a0105 cells, likely facilitating the partial growth of some knockdowns that would be hampered in growth from a single cell on plates with xylose.) We found that disruption of the thrC locus prevents wrinkling formation on MSgg agar, presumably reflecting a growth defect, so we hypothesized that insertion of gfp at the thrC locus might exacerbate growth inhibition due to knockdown of certain essential genes. Thus, we constructed a second thrC::gfp library of knockdowns of all 302 strains and screened it on MSgg with xylose.\n\nIn the thrC::gfp library, alrA was the only knockdown that failed to form a colony as a monoculture but survived with the parent-RFP strain in biofilm colonies on MSgg agar with xylose (Figure 4A, Figure 4\u2014figure supplement 1A, B). AlrA is a racemase that converts L-alanine to D-alanine and is required for cross-linking of the peptidoglycan cell wall (Figure 4B). Full knockdown of alrA expression during liquid growth in a strain without gfp disruption of thrC led to bulging indicative of cell\u00a0wall defects (Figure 4C, Figure 4\u2014figure supplement 1C). On LB-xylose agar, the alrA strain from the thrC::gfp library managed to grow as a monoculture into a colony similar in size to the inoculation spot with petal-like outward projections (Figure 4\u2014figure supplement 1D), as did the alrA strain from the sacA::gfp library on LB-xylose and MSgg-xylose plates (Figure 2\u2014figure supplement 1A). As discussed above, the absence of complete lysis is likely due to the high initial density driving growth of a visible colony (Figure 2\u2014figure supplement 1A); streaking all alrA strains to reduce initial cell density resulted in a substantial reduction in the number of colonies on plates with xylose compared to without for both LB and MSgg (Figure 4\u2014figure supplement 1E), indicating that the full-knockdown phenotype across all media and genotypes is severe for alrA at lower initial cell densities.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig4-v3.jpg)\n\n**Figure 4.:** (A) Left: the sacA::gfp alrA knockdown under full knockdown was rescued by growth with the parent-RFP strain under biofilm-promoting conditions (MSgg-xylose agar). The alrA knockdown expanded beyond the boundaries of the original inoculum (dashed circle) when grown in co-culture with the parent-RFP strain. Right: the control co-culture of parent-RFP with parent-GFP preserved both strains at approximately equal proportions. Images were acquired at 24 hr. In merged images, GFP from the alrA knockdown is false-colored green and RFP from the parent-RFP strain is false-colored magenta. Scale bar: 5 mm. (B)\u00a0AlrA is a racemase that converts L-alanine to D-alanine. D-alanine is critical for cell\u00a0wall cross-linking. (C)\u00a0Full knockdown of alrA caused cells to bulge, signifying cell\u00a0wall defects. Cells were cultured for 6 hr in liquid MSgg with xylose to fully inhibit alrA expression. Arrowheads indicate bulging cells. Scale bar: 5 \u03bcm. (D) Full knockdown of alrA was rescued by exogenous D-alanine. Cultures were grown in liquid LB to an OD600\u00a0~1 and then 1 \u03bcL was spotted on MSgg\u00a0xylose agar alone or supplemented with 0.04 mg/mL D-alanine or D-methionine. Cells from alrA monocultures mostly died (left); the small colonies represent suppressors present in the initial inoculum. By contrast, addition of D-alanine (middle) or D-methionine (right) resulted in comparable growth to wild\u00a0type. Images are of an unlabeled alrA knockdown (HA420) and were acquired after 24 hr of growth. Scale bar: 5 mm. (E) Full knockdown of alrA was not rescued when co-cultured with the parent-RFP strain in liquid. For the co-culture, parent and alrA knockdown cultures were mixed 1:1 and back-diluted 1:100 into liquid MSgg with xylose to fully deplete alrA. For the alrA knockdown monoculture, the culture was diluted 1:200 into liquid MSgg with xylose so that the starting inoculum of the alrA strain was equivalent to that of the co-culture. CFU/mL of the alrA knockdown were not significantly different between the monoculture (dark red) and co-culture (gray) throughout the course of the experiment (p-values from each time\u00a0point range from 0.21 to 0.66, student\u2019s unpaired t-test). The black line is the total CFU/mL of the parent/alrA knockdown co-culture. n\u00a0=\u00a03, error bars represent one standard error of the mean.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A screen under full CRISPRi knockdown for strains that die as monoculture colonies (left) but survive in co-culture (right) highlighted alrA (white box). Left: monoculture colonies of the thrC::gfp library on MSgg-xylose; outer colonies are thrC::gfp parent controls. Right: merged images of co-cultures of the thrC::gfp CRISPRi library (false-colored in green) with the parent-RFP strain (false-colored in magenta). The titration row is indicated by the box. The distance between the centers of two neighboring colonies is 9 mm. (B) The thrC::gfp parent strain did not form wrinkles. One microliter of an LB liquid culture (OD600\u00a0~1) was spotted onto an MSgg-threonine plate and incubated at 30\u00b0C for 48 hr. Scale bar: 5 mm. (C)\u00a0Cells with basal knockdown of alrA are rod-shaped, similar to wild type. Images were taken directly before adding xylose to fully deplete cells of alrA for 6 hr, as shown in Figure 4C. Scale bar: 5 \u03bcm. (D)\u00a0Full knockdown of alrA in the thrC::gfp background resulted in petal-like outward projections from the initial spot on LB-xylose agar. The parent-GFP is shown for comparison. Scale bar: 2 mm. (E)\u00a0Full knockdown of alrA resulted in a growth defect. Cultures were grown and struck onto LB and MSgg plates with and without xylose to qualitatively observe growth under basal and full knockdown. A standard (100 mm) cell culture dish is shown. (F) D-serine inhibited the growth of wild-type colonies and did not rescue growth of the alrA knockdown. The colony was imaged through agar (to avoid having the objective contact the colony) after 24 hr. D-serine was supplemented at 0.04 mg/mL. Scale bar: 5 mm. (G) Most D-amino acids did not restore the growth of alrA-depleted cells. D-leucine inhibited the growth of wild-type colonies (top). Only D-alanine and D-methionine restored growth of full alrA knockdown (bottom). D-amino acids were supplemented at 0.04 mg/mL. We did not test D-isoleucine, D-phenylalanine, D-threonine, or D-tyrosine. Scale bar: 5 mm.\n\nWe hypothesized that cells with full knockdown of alrA transcription were able to maintain their growth in biofilm\u00a0colony co-culture because the parent-RFP cells were providing the necessary D-alanine. To test this hypothesis, we grew monocultures of an alrA strain without gfp in the genome on MSgg-xylose with exogenous D-alanine and found that D-alanine rescued biofilm colony growth (Figure 4D). D-methionine, an amino acid that can substitute for D-alanine in cell\u00a0wall cross-linking (Cava et al., 2011), also rescued alrA growth on MSgg-xylose plates (Figure 4D), while other D-amino acids that are not incorporated into the cell wall did not rescue colony growth (Figure 4\u2014figure supplement 1F,\u00a0G), suggesting that D-alanine\u2019s specific role in peptidoglycan synthesis is rescued. Thus, sharing of D-alanine within a biofilm colony rescues alrA-depleted cells, likely by stabilizing mutant cell walls.\n\nTo test whether alrA cells are rescued by the parent-RFP strain in liquid MSgg-xylose, we grew liquid co-cultures and plated dilutions at hourly time points to quantify survival (separating the two strains based on fluorescence). The vast majority of alrA cells died within hours in both liquid monocultures and co-cultures with the parent-RFP strain (Figure 4E). Thus, the rescue of alrA knockdown cells by D-alanine sharing in co-cultures is specific to growth in a colony, presumably due to the close proximity of cells that facilitates D-alanine sharing.\n\n### alrA knockdown cells stably co-exist with extracellular matrix-deficient wild-type cells in a biofilm colony\n\nSecretion of extracellular matrix provides structural integrity to biofilm colonies (Flemming and Wingender, 2010), including for B. subtilis strain 3610 on MSgg agar (Srinivasan et al., 2018). Thus, we wondered if matrix plays a role in the rescue of alrA, either by providing structural support to alrA knockdown cells with weaker walls (Figure 4C) or by facilitating the diffusion of D-alanine. To test this idea, we deleted the genes encoding both of the main extracellular matrix components (EpsH, TasA) from the parent-RFP strain and the alrA knockdown in the sacA::gfp wrinkling-proficient library. We mixed the two matrix-deficient strains and quantified colony size and competitive fitness in full knockdown conditions on MSgg-xylose plates. As expected, matrix-deficient co-culture colonies were smaller than matrix-proficient co-cultures as matrix is necessary for robust biofilm colony growth (Seminara et al., 2012;\u00a0Figure 5A). Nonetheless, matrix-deficient co-cultures exhibited approximately the same fraction of alrA cells as matrix-proficient co-cultures (Figure 5A,\u00a0B, Figure 5\u2014figure supplement 1A). Thus, matrix is not required for the growth rescue of alrA-knockdown cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig5-v3.jpg)\n\n**Figure 5.:** (A) Extracellular matrix is not required for alrA rescue (third column), and rescue is enhanced when the alrA full knockdown is combined with a matrix-deficient parent strain (fourth column). In the left column, the parent-GFP strain is false-colored in green, and in the other columns the alrA knockdown strain is green. The parent-RFP strain is false-colored in magenta. In the first two columns, both strains express matrix proteins. In the third column, both strains lack epsH and tasA, which encode key matrix components. In the fourth column, epsH and tasA are deleted from the parent-RFP strain while the alrA knockdown produces matrix. Images were acquired after 48 hr of growth. Scale bar: 5 mm. (B) Competitive fitness of the alrA full knockdown decreased over time when both strains or neither produced matrix, while fitness remained 1 (equal proportions of the two strains) and stable over time in co-cultures when the parent was matrix-deficient. The matrix-deficient parent-RFP+alrA knockdown (purple) and the parent-RFP+parent-GFP control (blue) data were not significantly different (p>0.2 at all time points); nor were the parent-RFP+alrA knockdown (orange) and the matrix-deficient parent-RFP+matrix-deficient alrA knockdown (yellow) data (p>0.07, Student\u2019s t-test). The matrix-deficient parent-RFP+alrA knockdown (purple) fitness data were significantly higher than the parent-RFP+alrA knockdown (orange) at all time points after 0.5 days (p<0.014). Data were normalized to fitness at 0.5 days. Curves are means, and error bars represent one standard deviation (n\u00a0=\u00a02\u20133 biological replicates). Statistical analysis: Student\u2019s unpaired t-test with a Benjamini\u2013Hochberg multiple-hypothesis correction. (C) Cells with full knockdown of alrA were outcompeted by the parent-RFP strain during two-dimensional growth. Co-cultures were spotted on a MSgg-xylose agar pad and limited to growth in a layer with thickness one cell by applying a cover slip over the cells. Images were acquired after 24 hr of growth. Scale bar: 0.4 mm. (D) Design of screen to identify mutants that exhibit an increase in fitness when co-cultured with a matrix-deficient parent on MSgg-xylose agar. The sacA::gfp library was used in this screen; plate 3 from the 16 hr time\u00a0point is shown. The distance between the centers of each colony is 9 mm. White box, controls; white dashed box, titration row. (E) Full knockdowns that exhibited mutualism generally involve genes related to nutrient sharing, translation, and DNA\u00a0binding. Top: competitive fitness of co-cultures with the wild-type parent-RFP (purple) and matrix production-deficient parent (red) at 16, 24, and 48 hr. Numbers in the top right indicate the mutualism score. Bottom: merged images of biofilm\u00a0colony co-cultures on MSgg-xylose agar at 48 hr. Scale bar: 5 mm. (F) Full knockdowns that exhibited mutualism in three-dimensional biofilm colonies were outcompeted by the matrix-deficient parent-RFP strain when growth was limited to two dimensions as in C. Images were acquired after 24 hr of growth. Scale bar: 0.4 mm. For (A,\u00a0C\u2013F), GFP is false-colored in green and RFP is false-colored in magenta.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/64145/elife-64145-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A)\u00a0The matrix-deficient parent-RFP+matrix-proficient parent-GFP co-culture did not form sectors in a three-dimensional colony (left), but did at the edge of a two-dimensional colony (right). Merges show the parent-GFP and parent-RFP strains false-colored in green and magenta, respectively. Left scale bar: 5 mm; right scale bar: 0.4 mm. (B)\u00a0The leading edge of a co-culture grown between agar and a coverslip is one cell thick. One microliter of cell culture was spotted onto an MSgg agar pad, and a coverslip was applied to limit growth to two dimensions. The culture was incubated for 24 hr, and the colony edge was imaged. Scale bar: 50 \u03bcm. (C)\u00a0Results from a mutualism screen comparing the competitive fitness of knockdown strains co-cultured with a matrix-proficient (left) or matrix-deficient (right) parent. Control parent-RFP+parent-GFP co-cultures are located on the right and left edges of the library, and the titration row is shown on the top and bottom rows. The distance between the centers of neighboring colonies is 9 mm. GFP (from parent-GFP or knockdown strains) and RFP (from parent-RFP) fluorescence signals are false-colored in green and magenta, respectively. (D)\u00a0The library exhibited a wide range of mutualism scores, with 11 full knockdowns exhibiting a mutualism score\u00a0>2 standard deviations higher than the mean across all strains (>0.22). The library is shown in blue, and controls are shown in gray. (E)\u00a0Representative controls of the parent-RFP strain grown with the parent-GFP strain showing the final composition of RFP and GFP in the colonies. In merged images, the parent-RFP and parent-GFP are false-colored in magenta and green, respectively. These controls are from the mutualism screen at 48 hr (and are the same as the controls shown in Figure 5E). (F) Five non-essential gene knockdowns exhibited mutualism. Top: competitive fitness of co-cultures with the wild-type-like parent-RFP (magenta) and the matrix production-deficient parent (red) at 16, 24, and 48 hr. Numbers in top right indicate the mutualism score. Bottom: merged images of biofilm\u00a0colony co-cultures on MSgg-xylose agar at 48 hr. Scale bar: 5 mm.\n\nSurprisingly, combining the matrix-proficient and wrinkling-proficient alrA strain under full knockdown with the matrix-deficient (\u2206epsH \u2206tasA) parent-RFP strain resulted in an increased fraction of alrA-depleted cells relative to co-cultures with the matrix-proficient parent-RFP strain. By contrast to when both strains were matrix-proficient and the parent-RFP strain outcompeted alrA-depleted cells at the colony edge, alrA-depleted cells were distributed throughout the entire colony (Figure 5A). In addition to improved growth of the alrA knockdown, the RFP fluorescence of the matrix-deficient parent-RFP was also higher and occupied a larger area than in the co-culture of matrix-deficient alrA and parent-RFP strains, suggesting that the matrix-capable mutant promotes growth of the matrix-deficient parent strain (Figure 5A). Moreover, rather than a steady decrease in competitive fitness over time (Figure 5A,B), the competitive fitness of alrA against the matrix-deficient parent was stable at\u00a0~1 for 48 hr. The increased and stable fitness of this strain combination as a biofilm colony suggests a synthetic mutualistic interaction, defined here as the fitness of both strains in co-culture being stable and higher than either strain on its own. The matrix-deficient parent-RFP cells restore viability to alrA knockdown cells by providing D-alanine, and in turn alrA knockdown cells enhance growth of the parent-RFP strain by providing extracellular matrix.\n\nOur finding that the competitive fitness of alrA decreased over time in a co-culture with parent-RFP in which both strains were matrix-deficient (and hence did not form a canonical biofim colony) (Figure 5A) suggests that the mutualism between alrA and the parent-RFP strain requires growth in a matrix-capable biofilm colony. A recent study showed that biofilm colony expansion in three dimensions depends heavily on extracellular matrix, while two-dimensional growth relies more on cell growth and division (Srinivasan et al., 2019). To test whether the mutualism between alrA and the matrix-deficient parent was dependent on three-dimensional biofilm colony growth, we grew co-cultures between an agar pad and a coverslip. In this configuration, the growing edge of the colony has a thickness of only one cell, essentially constraining growth to two dimensions (Figure 5\u2014figure supplement 1B). Now, in all matrix-production combinations of the sacA::gfp alrA strain under full knockdown and parent-RFP, including matrix-proficient alrA with the matrix-deficient parent, the parent-RFP strain had a growth advantage at the edge of the two-dimensional colony and outcompeted the alrA knockdown (Figure 5C, F). Thus, the mutualism we discovered between alrA under full knockdown and the matrix-deficient parent can be eliminated by removing the ability of the colony to grow in three dimensions.\n\n### Many metabolism-related mutants exhibit enhanced rescue in three-dimensional biofilm colonies with matrix-deficient parent cells\n\nOur discovery that alrA knockdown cells grew in a mutualism with an extracellular matrix-deficient parent (Figure 5A,\u00a0B) led us to hypothesize that other essential\u00a0gene knockdowns might display enhanced growth when cultured with the matrix-deficient parent. To test this hypothesis, we performed co-culture screens of each strain in the sacA::gfp library with either the matrix-proficient or matrix-deficient parent-RFP strain on MSgg-xylose (Figure 5D, Figure 5\u2014figure supplement 1C, Supplementary file 2). We measured competitive fitness at 16, 24, and 48 hr to identify strains that had increased and relatively stable fitness when they were the sole provider of extracellular matrix relative to competition with the wild-type-like parent-RFP. For each strain, we calculated a mutualism score defined as the fitness increase due to deletion of matrix components from the parent at 48 hr compared with the fitness increase at 16 hr; a positive score reflects a growing benefit of being the sole matrix provider, and hence implies relatively stable fitness (Figure 5D, Figure 5\u2014figure supplement 1D). We focused on all strains with a mutualism score two standard deviations above the mean across controls (>0.22, Figure 5\u2014figure supplement 1D).\n\nOn MSgg-xylose, in addition to alrA, eight other essential\u00a0gene full knockdowns exhibited a high mutualism score (Figure 5E, Figure 5\u2014figure supplement 1E, F, Supplementary file 5). Of these strains, knockdowns of genes encoding the glutamate racemase (racE) and enzymes involved in menaquinone (vitamin K2) synthesis (menE) were candidates for nutrient- and matrix-sharing mutualisms similar to that of alrA. Knockdowns of two other genes in the menaquinone synthesis pathway (menC and menD) displayed mutualism scores slightly below 0.22 (Figure 5E, Supplementary file 5), providing further support for a menaquinone-based mutualism. The other essential\u00a0gene knockdowns with high mutualism scores encode proteins that bind DNA (scpA and hbs) or are related to translation (rnz and frr); these genes likely either play an indirect role in regulating biosynthesis of a shared nutrient to support the mutualism or employ other mechanisms outside of nutrient sharing. Strains depleted of racE, menE, menD, and rnz showed evidence of being outcompeted by parent-RFP, but stably coexisted throughout the entire colony when the parent could not produce matrix (Figure 5E), further suggesting that matrix-capable mutants promote growth of the matrix-deficient parent strain. In addition, four non-essential strains exhibited high mutualism scores (Figure 5\u2014figure supplement 1F), indicating that the benefits of matrix sharing can extend to genes that are not critical for growth as a monoculture.\n\nSince the alrA full knockdown exhibited mutualism in a three-dimensional biofilm colony but not when growth was confined to two dimensions, we tested whether the other mutualisms were maintained during two-dimensional growth. We grew racE, menE, rnz, and hbs full depletions in individual co-cultures with the matrix-deficient parent-RFP between a glass slide and a coverslip. In each case, the knockdown was outcompeted by the parent-RFP strain at the growing edge of the colony (Figure 5F). In sum, these data suggest that matrix-dependent mutualisms generally require growth in a three-dimensional colony.\n\n## Discussion\n\nHere, we created two libraries of essential gene knockdowns in a biofilm-capable B. subtilis strain and developed a powerful high-throughput screen of competition in bacterial co-cultures to reveal genetic interactions specific to growth in three-dimensional colonies. First, we showed that basal knockdown of some ribosomal proteins reduces competitive fitness with a wild-type-like strain in co-culture colonies (Figure 2), suggesting a high degree of selection on these genes during colony growth. Second, we found that medium composition can dramatically alter competition (Figure 3), highlighting the role of the extracellular environment on fitness in a multicellular context. Third, we discovered that knockdown of alrA can be rescued through sharing of D-alanine in a three-dimensional colony, a context in which the gene is \u2018less essential,\u2019 but not in liquid or when growth is confined\u00a0to two dimensions between an agar surface and a coverslip (Figures 4 and 5). Finally, we uncovered a mutualism between alrA knockdown cells and a parent deficient in extracellular matrix production based on sharing of nutrients and matrix components, and used this finding to identify several other essential gene knockdowns exhibiting similar mutualistic interactions (Figure 5). These findings illustrate how growth in a biofilm colony can alter natural selection by supporting mutant cells that are less likely to survive on their own through short-range interactions.\n\nDespite previous studies showing that D-alanine levels are undetectable in B. subtilis 168 liquid culture supernatants (Lam et al., 2009), we found that D-alanine sharing in a colony can rescue B. subtilis 3610 mutants that cannot synthesize their own D-alanine. Thus, D-alanine is produced and secreted by wild-type cells at sufficient levels to support growth of the mutant in a colony on biofilm-promoting media. Since full knockdown of alrA causes cells to bulge and die in liquid culture within hours (Figure 4C,\u00a0E), we infer that rescue likely occurs early in biofilm development prior to the period of substantial cell death that is thought to drive wrinkling (Asally et al., 2012), suggesting that rescue is not due to the release of D-alanine by dying cells. The close proximity of cells within the colony may aid in rescue, even if secreted D-alanine levels are low. Regardless, this rescue demonstrates that cell\u00a0wall synthesis mutants can be supported in native environments through sharing of cell\u00a0wall components, which could be provided by many other bacterial species in a multispecies community due to the common chemical makeup of peptidoglycan cell walls (Cava et al., 2011).\n\nOur observation that rescue of alrA-depleted cells did not occur when growth was constrained to two dimensions (Figure 5C), combined with the finding that rescue occurred in co-culture colonies when both the alrA knockdown and the parent were matrix-deficient (Figure 5A,\u00a0B), indicates that some aspect of three-dimensional growth beyond matrix production is fundamental to the rescue. One possibility is liquid uptake facilitated by colony architecture, which has been hypothesized to act like a sponge and thereby drive colony expansion (even more so when extracellular matrix is present) (Seminara et al., 2012; Yan et al., 2017). It is also possible that cellular differentiation and development are disrupted by limiting growth to a thin layer. Irrespective, our findings highlight the importance of future high-throughput genetic screens that embrace the natural context of three-dimensional colony growth on surfaces.\n\nThe stable mutualism that we discovered between the alrA knockdown and a matrix-deficient parent (Figure 5B) resembles the initial behavior of \u2206tasA and \u2206epsH mutants grown together as pellicle biofilms on liquid surfaces, in which the pellicle architecture is preserved by cross-complementation for many passages (Drago\u0161 et al., 2018). Our discovery of matrix-based mutualisms involving multiple genes with a range of cellular functions (Figure 5E) motivates future studies to probe the nature of the tasA-espH interaction in these interactions, specifically to examine which matrix components are most important and whether mutualisms can be sustained through repeated passages or with different starting ratios of the strains in the co-culture. We expect the\u00a0genes involved in nutrient-sharing mechanisms (e.g., with D-alanine and menaquinone) to stably interact in passaging experiments as cross-complementation is important for the fitness of both strains. Importantly, our observation that these mutualisms appear to generally require growth in three dimensions further highlights the importance of the geometry of the native environment during evolution.\n\nTogether, our results demonstrate that growth in a biofilm colony can drive genetic diversity and illustrate the potential for mutualism between nutrient and matrix sharing in native biofilms. Such mutualisms may occur during plant root colonization, when the bacterial extracellular matrix is particularly important and may serve to pull nutrients from the root and surrounding soil (Beauregard et al., 2013). In addition to the potential implications for plant growth-promoting bacteria in the rhizosphere, this study provides a foundation to understand how microbial biofilm growth affects selection in industrial and clinical settings.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>Bacillus subtilis strain NCIB 3610</td>\n      <td>Daniel B. Kearns laboratory</td>\n      <td>NCIB 3610 or 3610</td>\n      <td>trpC+, rapP+, sfp+, epsC+,swrA+, degQ+, pBS32</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>Parent-RFP</td>\n      <td>This work</td>\n      <td>HA12</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>Parent-GFP (sacA)</td>\n      <td>This work</td>\n      <td>HA773</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>sacA::gfp CRISPRi library</td>\n      <td>This work</td>\n      <td>See table S1</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>Parent-GFP (thrC)</td>\n      <td>This work</td>\n      <td>HA49</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>thrC::gfp CRISPRi library</td>\n      <td>This work</td>\n      <td>See table S1</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>rfp CRISPRi knockdown</td>\n      <td>This work</td>\n      <td>HA13</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>alrA CRISPRi knockdown</td>\n      <td>This work</td>\n      <td>HA420</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>alrA CRISPRi knockdown \u0394matrix</td>\n      <td>This work</td>\n      <td>HA827</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Bacillus subtilis)</td>\n      <td>Parent-RFP \u0394matrix</td>\n      <td>This work</td>\n      <td>HA825</td>\n      <td>Genotypes listed in table S1</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (SPP1 phage)</td>\n      <td>SPP1 phage</td>\n      <td>Daniel B. Kearns laboratory</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDG1731-gfp</td>\n      <td>This work</td>\n      <td></td>\n      <td>Pveg-sfGFP in a thrC integration construct</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pDG1731</td>\n      <td>Bacillus genetic stock center</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sfGFP fw</td>\n      <td>This work</td>\n      <td></td>\n      <td>tcctagaagcttatcgaattcCTTATTAACGTTGATATAATTTAAATTTTATTTGACAAAAATGGGCTCGTGTTGTACAATAAATGTAACTACTAGTACATAAGGAGGAACTACTATGAGCAAAGGAGAAGAACTTTTC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sfGFP rev</td>\n      <td>This work</td>\n      <td></td>\n      <td>ttaagcaccggtttattaTTTGTAGAGCTCATCCATGCC</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>LB lennox medium</td>\n      <td>RPI</td>\n      <td>L24066-1000.0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab</td>\n      <td>MathWorks</td>\n      <td>R2018a</td>\n      <td>Some scripts were written in earlier versions of Matlab, but all are compatible with R2018a</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe, Inc</td>\n      <td>CS6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FIJI</td>\n      <td>ImageJ</td>\n      <td>2.0.0-rc-44/1.50e</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DAVID functional annotation tool</td>\n      <td>https://david.ncifcrf.gov</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom scripts for growth and image analysis</td>\n      <td>This work</td>\n      <td></td>\n      <td>Data Dryad: doi:10.5061/dryad.79cnp5htm</td>\n    </tr>\n  </tbody>\n</table>\n\n### Media\n\nStrains were grown in LB (Lennox lysogeny\u00a0broth with 10 g/L tryptone, 5 g/L NaCl, and 5 g/L yeast extract) or a\u00a0defined\u00a0MSgg medium (5 mM potassium phosphate buffer, diluted from 0.5 M stock with 2.72 g K2HPO4 and 1.275 g KH2PO4, pH 7.0 in 50 mL; 100 mM MOPS buffer, pH 7.0, adjusted with NaOH [note that some laboratories adjust the pH of MOPS buffer with KOH]; 2 mM MgCl2\u20226H2O; 700 \u03bcM CaCl2\u20222H2O; 100 \u03bcM FeCl3\u20226H2O; 50 \u03bcM MnCl2\u20224H2O; 1 \u03bcM ZnCl2; 2 \u03bcM thiamine HCl; 0.5% [v/v] glycerol; and 0.5% [w/v] monosodium glutamate). MSgg medium was made fresh from stocks the day of each experiment for liquid cultures or a day before the experiment for agar plates. Glutamate and FeCl3 stocks were made fresh weekly. Colonies were grown on 1.5% agar plates. For nutrient addition assays (Figure 3, Figure 3\u2014figure supplement 1), we supplemented LB with one of the following: 0.5% (w/v) monosodium glutamate, 2 mM MgCl2\u20226H2O, 50 \u03bcM MnCl2\u20224H2O, 2 mM MgCl2\u20226H2O, 0.5% (w/v) L-asparagine, 0.5% (w/v) L-aspartic acid, 0.5% (w/v) L-lysine, or 0.5% (w/v) D-glutamic acid, and we supplemented MSgg with one of the following: 0.5% (w/v) L-cysteine, 0.5% (w/v) L-glutamine, 0.5% (w/v) L-glycine, 0.5% (w/v) L-serine, or 0.5% (w/v) L-tryptophan. Where indicated, L-threonine was added to MSgg at a concentration of 0.1 mg/mL. D-amino acids (D-alanine, D-methionine, D-glutamate, D-leucine, D-serine, D-valine) were each used at a concentration of 0.04 mg/mL. We made TY medium for phage transduction using the LB recipe above supplemented with 10 mM MgSO4 and 0.1 mM MnSO4.\n\nAntibiotics for selection of mutant strains were used as follows: kanamycin (kan, 5 \u03bcg/mL), MLS (a combination of erythromycin at 0.5 \u03bcg/mL and lincomycin at 12.5 \u03bcg/mL), chloramphenicol (cm, 5 \u03bcg/mL), tetracycline (tet, 12.5 \u03bcg/mL), and spectinomycin (spc, 100 \u03bcg/mL).\n\n### Strain construction\n\nAll strains and their genotypes are listed in Supplementary file 1. For library construction, we used SPP1 phage transduction (Yasbin and Young, 1974). We used a 168 -strain containing Pxyl-dCas9 at the lacA locus (CAG74399) as a donor and wild-type strain 3610 (a gift from Dan Kearns) as the recipient to create the 3610-dCas9 parent strain (CAG74331) using MLS for selection. We then used this 3610-dCas9 parent as the recipient and a strain with Phyper-spank-gfp at the sacA locus (NRS1473, a\u00a0gift from Nicola Stanley Wall) or a strain with Pveg-gfp at the thrC locus as the donor strain to create the parent-GFP strain expressing dCas9 and gfp (HA773 is the sacA::gfp parent and HA47 is the thrC::gfp parent; phage transduction described below), using kanamycin and tetracycline for selection, respectively.\n\nFor construction of mutant strains, we used either the sacA::gfp parent or the thrC::gfp parent as the recipient strain and strains from a 168 CRISPRi library (Peters et al., 2016) as the donor. We amended the phage transduction protocol to increase the throughput of strain construction as follows. We grew donor strains in 96-well deep-well plates (1 mL cultures in TY medium in 2 mL wells) for at least 5 hr shaking at 37\u00b0C with a Breath-easy (Sigma-Aldrich, St. Louis, MO, USA) film covering the plate. We then aliquoted 0.1 mL of 10\u22125 dilutions of fresh phage stocks grown on strain 3610 cells (10\u22125 was chosen as the dilution factor because it provided the appropriate level of lysis for our phage stock in a trial transduction) into 77 or 71 glass test tubes (each plate of the library contains 77 strains, except the fourth plate contains 71 strains). We added 0.2 mL of each culture to the tubes and incubated the entire rack at 37\u00b0C for 15 min. Then, working quickly in batches of 11, we added 4 mL of TY molten soft agar (~55\u00b0C) to each phage-cells mixture, mixed gently, and poured onto TY plates so that the soft agar covered the entire plate. We incubated these plates at 37\u00b0C overnight in a single layer (not stacked). The next day we examined the plates for lysis and added 5 mL TY broth with 250 ng DNase to each plate and scraped the top agar with a 1 mL filter tip to liberate phage. We then pipetted the TY broth into a syringe attached to a 0.45 \u00b5m filter and carefully filtered into a 5 mL conical vial. After filtering, 1 mL of lysate was added to the appropriate well of a deep-well 96-well plate. Once all of the phage was isolated, we arrayed 10 \u00b5L of each phage stock into 96-well microtiter plates. We aliquoted 100 \u00b5L of a saturated (>5 hr of culturing, OD600\u00a0>1.5) culture into the wells containing phage and incubated for 25 min at 37\u00b0C without shaking. We plated the phage/cell mixtures onto selection plates (LB with chloramphenicol and citrate to select for the sgRNA locus) and incubated the plates for 18 hr at 37\u00b0C. Any plates that did not have visible colonies after this incubation were incubated further at room temperature, and colonies generally appeared within a day. We streaked transductant colonies for single colonies onto LB+chloramphenicol plates and stocked a single colony for each strain in the library by growing in 5 mL LB on a roller drum at 37\u00b0C to mid- to late-log phase and then adding the culture to the appropriate well of 96-well plate with a final concentration of 15% glycerol. The library was stocked at \u221280\u00b0C.\n\nThe GFP-labeled \u2206epsH \u2206tasA alrA knockdown strain (HA823) and the parent-RFP \u2206epsH \u2206tasA strain (HA825) were constructed using phage transduction as described above using DS9259 and DS3323 (gifts from Dan Kearns) as donor strains for epsH::tet and tasA::tn10spc, respectively, and the sacA::gfp alrA knockdown strain (HA761) or parent-RFP (HA12) as the recipient. The epsH::tet transduction was performed first, and the resulting strains were used as the parent to add the tasA::tn10spc construct.\n\nTo construct plasmid pDG1731-gfp (Pveg-sfGFP in a thrC integration construct), the following primers were used to clone superfolder GFP (sfGFP) and add the Pveg promoter: forward, tcctagaagcttatcgaattcCTTATTAACGTTGATATAATTTAAATTTTATTTGACAAAAATGGGCTCGTGTTGTACAATAAATGTAACTACTAGTACATAAGGAGGAACTACTATGAGCAAAGGAGAAGAACTTTTC; reverse, ttaagcaccggtttattaTTTGTAGAGCTCATCCATGCC. The amplicon and pDG1731 were both digested with HindIII and AgeI and ligated together. The ligation was used to transform chemically competent Escherichia coli. We transformed B. subtilis 168 with pDG1731-gfp to create HA45 and confirmed double crossover (spcR, MLSS), then used HA45 as the donor and HA2 as the recipient in phage transduction to create the thrC parent-GFP strain (Pxyl-dCas9 thrC::Pveg-gfp, HA47).\n\n### Growth conditions for library screens of growth on agar plates\n\nTo grow the library for monocultures and co-cultures, we inserted a sterile 96-well Singer pin (Singer Instruments,\u00a0Somerset,\u00a0UK) into frozen glycerol stocks and applied pressure and agitation so that each pin picked up some of the frozen glycerol stock from the appropriate well. The Singer pin was used to spot onto LB agar in a rectangular Singer plus plate, and the plate was incubated overnight at 37\u00b0C. A sterile 96-well Singer pin was used to pick up cells from each colony and inoculate 200 \u03bcL of LB in a 96-well plate. The parent-GFP strain was inoculated in some of the empty wells on the edge of each plate as controls. The plate was covered with an AeraSeal breathable film (Sigma-Aldrich) and grown on a plate shaker at 37\u00b0C for 4\u20135 hr until all wells were cloudy (OD600\u00a0~1.0).\n\nOne hundred microliters of each culture were pipetted into a separate 96-well plate with 100 \u03bcL of a parent-RFP culture in each well. This plate was used as the inoculum for the competitive fitness screen. The remainder of the cultures in the original 96-well plate were used as the inoculum for the monoculture screen. To quantify competitive fitness, a titration row of parent-RFP and parent-GFP mixtures in 10% increments (100% parent-RFP+0% parent-GFP; 90% parent-RFP+10% parent-GFP, etc.) was added to each plate (Figure 1D). Since the oxygen limitation that results in stationary cultures causes cell death in B. subtilis (Arjes et al., 2020), we ensured that the library was aliquoted and spotted within 1 hr. For most assays, a Singer ROTOR HDA pinning robot (Singer Instruments) was used to pin\u00a0~1 \u03bcL of liquid cultures onto LB or MSgg agar Singer PlusPlates (with 35 mL of medium poured on a level surface for co-cultures, or 50 mL of medium for monocultures), without and with xylose. We used the \u2018spot many\u2019 protocol of the Singer ROTOR HDA to mix the wells before spotting and transferred 12 times from the source liquid plate to the target agar plate. For some assays, a RAININ Benchsmart 96-well pipetting robot was used rather than the Singer ROTOR HDA to pipet 1 \u03bcL onto the agar plates. Agar plates were incubated at 30\u00b0C and placed in a box or were loosely covered in plastic to reduce drying.\n\nWhen screen outliers (Figures 2D and 3C) were replicated, strains were streaked for single colonies, which were inoculated into 200 \u03bcL of medium in the interior wells of a 96-well microtiter plate. The exterior wells were inoculated with the parent-GFP control strain, leaving the top for the parent-GFP+parent-RFP titration. To replicate findings regarding alrA, fresh colonies of the alrA knockdown strain and the parent-RFP strain were inoculated into 5 mL LB in test tubes and cultured on a roller drum at 37\u00b0C to an OD600\u00a0~1.0. Equal-volume mixtures of the cultures were spotted along with a parent-GFP+parent-RFP titration in 12- or 6-well plates.\n\n### Imaging and image analysis of monoculture colonies in the library\n\nMonoculture colonies were imaged using a Canon EOS Rebel T5i EF-S with a Canon Ef-S 60 mm f/2.8 Macro USM fixed lens. The DSLR camera was set up at a fixed height in a light box with diffuse lighting from three sides. The lighting and camera settings were maintained for the duration of the experiment using the \u2018manual\u2019 mode on the camera. The EOS Utility software was used to run the camera. Plates were imaged colony side up to avoid imaging through the agar. Images were analyzed using FIJI and scored as \u2018grew outside original spot,\u2019 \u2018did not grow outside original spot,\u2019 or \u2018died and/or threw off suppressors.\u2019 The ones classified as\u00a0\u2018died and/or threw off suppressors\u2019 were assigned a colony size of 0. Suppressors were identified based on off-center colonies, often in flower petal-like arrangements in which one or a few cells within the original spot eventually grew but the majority of the cells did not. Colony size was measured manually in FIJI by drawing a diagonal line across the diameter of the colony.\n\n### Imaging and image analysis of biofilm colony co-cultures\n\nA Typhoon FLA 9500 scanner was used to image colonies using the multi-plate drawer. We used\u00a0~35 mL of medium with agar on a Singer rectangular plate to be near the plane of focus when imaging through agar. GFP (473 nm laser, Long Pass Blue filter) and RFP (532 nm laser, Long Pass Green filter) signals were acquired.\n\nFor image analysis, Typhoon RFP and GFP images were cropped to contain only one plate and the image was rotated so that A1 was in the top left corner. Custom Matlab code was used to read in the image of each plate, divide it into a grid in which each grid cell contained one colony, and extract the fluorescence level across the grid. The ratio of the extracted GFP and RFP values was computed for every colony, and the ratio values for the titration row against the fraction GFP were fitted using the function I=\u03b1G/(1\u2013\u03b2G), where I is the GFP/RFP ratio, G is the fraction GFP, and \u03b1 and \u03b2 are fit parameters (Figure 1D). The fit parameters from the titration row were used to map the library data and assign GFP fractions; the data were normalized so that the average of the internal parent-RFP and parent-GFP co-culture controls was 1. The image analysis and GFP/RFP scripts are available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021).\n\n### Harvesting cells to measure colony-forming units\n\nParent-RFP and parent-GFP were cultured and mixed in ratios from 0% to 100% in 20% increments as described above. One microliter of these mixtures was spotted onto LB or MSgg agar. Plates were incubated at 30\u00b0C in an unsealed ziplock bag with a wet paper towel. After 24 hr, colonies were imaged to quantify RFP and GFP fluorescence as described above. Individual colonies were scraped into 1 mL of 1\u00d7 phosphate\u00a0buffered\u00a0saline using a sterile stick. Colonies were then sonicated using a Vibra-Cell sonicator (Sonics and Materials, Inc, Newtown, CT, USA) using cycles consisting of 12 1-s pulses with 20% amplitude. LB colonies were sonicated with 1\u20132 cycles, and MSgg colonies were sonicated with 5\u20137 cycles to disrupt the matrix and liberate individual cells. Cultures were visualized under a microscope to ensure that all cell clumps had been disrupted. Cell suspensions were serially diluted 10-fold and plated on LB. After overnight incubation at 37\u00b0C, plates were imaged to identify RFP- and GFP-expressing colonies and colony-forming units per mL were calculated.\n\n### CRISPRi rfp knockdown\n\nWild-type 3610, parent-RFP, and CRISPRi-RFP strains were cultured in 5 mL test tubes at 37\u00b0C to an OD600\u00a0~1 in liquid LB. The parent-RFP strain was spotted onto LB and MSgg agar plates without xylose, while the CRISPRi-RFP strain was spotted onto LB and MSgg agar in 12-well plates containing 0.0005\u20131% xylose. RFP fluorescence of the colonies was imaged as described above, and FIJI was used to quantify the fluorescence intensity of each colony, using wild-type 3610 as a blank.\n\n### Wild-type 3610, parent-GFP, and parent-RFP biofilm and non-biofilm colony growth\n\nWild-type 3610, parent-GFP, and parent-RFP strains were cultured in liquid LB to an OD600\u00a0~1 at 37\u00b0C. One microliter of each culture was spotted onto LB or MSgg agar in a six-well plate. Colonies were cultured for 48 hr at 30\u00b0C in an unsealed ziplock plastic bag with a wet paper towel to increase humidity. Colonies were imaged using the DSLR setup described above.\n\n### Liquid culturing for growth rate analysis\n\nA single colony was used to inoculate 200 \u03bcL LB in a 96-well microtiter plate. OD600 was measured every 7.5 min using a Biotek Epoch plate reader at 37\u00b0C. OD600 curves were blanked and smoothed. The maximum growth rate of each culture was defined as the maximum derivative of ln(OD600). The script used for analyzing the growth curves and calculating growth rates is available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021).\n\n### Model of nutrient-dependent colony growth\n\nTo determine how competitive fitness in a co-culture colony is affected by differences in growth rate, we simulated a reaction-diffusion model in which two cell types with densities ($C_{i},i=1,2$) are inoculated in a circular spot from which they spread randomly in two dimensions to compete for fresh nutrients ($n$) and grow with distinct maximal growth rates ($M_{i}$), according to the following equations:\n\n$$\n\\frac{\\partialC_{i}}{\\partialt}=M_{i}\\frac{n}{n+K}C_{i}+D_{C}\\nabla^{2}C_{i}\n$$\n\n\n\n$$\n\\frac{dn}{dt}=-b\\sumiM_{i}\\frac{n}{n+K}C_{i}+D_{n}\\nabla^{2}n,\n$$\n\nwhere $D_{C}$\u00a0is the cell diffusivity, $D_{n}$ is the diffusivity of nutrients, $b$ is a conversion factor dictating how nutrients lead to cell growth, and cell growth is limited by nutrients when $n~K$ or less. Initially $n=n_{0}$ everywhere and, to represent the initial pinning of cells to the agar surface, $C_{i}=C_{0}$ within a disc of radius $r_{0}$ and outside of this disc $C_{i}=0$. The transformations\u00a0$n\u00af=\\frac{n}{n_{0}},C_{i}\u00af=\\frac{C_{i}}{n_{0}/b}$ express the nutrient level normalized by its initial value (so $n_{0}\u00af=1$) and $C_{i}$ normalized by its value if cells of type i consume all initially available nutrients, respectively, and eliminate the parameter $b$ from the equations:\n\n$$\n\\frac{\u2202C_{1}\u00af}{\u2202t}=M_{1}\\frac{n\u00af}{n\u00af+K/n_{0}}C_{1}\u00af+D_{c}\u2207^{2}C_{1}\u00af,\\frac{\u2202C_{2}\u00af}{\u2202t}=M_{2}\\frac{n\u00af}{n\u00af+K/n_{0}}C_{2}\u00af+D_{c}\u2207^{2}C_{2}\u00af\n$$\n\n\n\n$$\n\\frac{dn\u00af}{dt}=\u2212M_{1}\\frac{n\u00af}{n\u00af+K/n_{0}}C_{1}\u00af\u2212M_{2}\\frac{n\u00af}{n\u00af+K/n_{0}}C_{2}\u00af+D_{n}\u2207^{2}n\u2212.\n$$\n\nFour of the seven parameters were approximated from data. The maximal growth rate $M_{1}=$\u00a00.0175 min\u22121 set the timescale and corresponds to a 40-min doubling time, similar to B. subtilis 3610 at 30\u00b0C. The radius of the initial spot ($r_{0}=1$ mm) set the spatial scale. The ratio of maximal growth rates $\\frac{M_{2}}{M_{1}}=0.8$ was set to match the ratio in LB for ribosomal knockdowns compared with wild type (Figure 2C). We estimated the initial areal density of cells compared with their saturation density to be $\\frac{C_{0}}{n_{0}/b}\u224810^{-3}$ within the initial spot. To obtain this estimate, we assumed 1 \u03bcL of stationary phase culture spotted 106 cells over $\\pi$ mm2, and that the spotted cells saturate at a density of 109 cells/mm2 (assuming 1 mL of stationary phase culture contains 109 cells [Moran et al., 2010] and concentrates into 1 mm3 when pelleted, the latter indicating a maximal density of 109 cells/mm3 within a colony with height 1 mm).\n\nThe remaining three parameters ($D_{C},\\frac{K}{n_{0}},\\frac{D_{n}}{D_{C}}$) were fitted to data. The model approximately recapitulates the competitive fitness data (defined in the model as the ratio of integrated cell densities $\\intC_{2}dA/\\intC_{1}dA$) and colony radius at 16 hr when $D_{C}\u22480.003$ mm2\u00a0hr\u22121 (Figure 2E,\u00a0inset), while results were fairly robust over 100-fold ranges to variations in $\\frac{K}{n_{0}}\u22480.05$ and $\\frac{D_{n}}{D_{C}}\u2248100$ (Figure 2\u2014figure supplement 1C).\n\n### DAVID functional enrichment\n\nWe used the DAVID functional annotation tool (https://david.ncifcrf.gov) to determine whether particular gene classes were enriched for each phenotype. The BSU identification numbers of the strains identified by our analysis and of the entire CRISPRi library were used as the \u2018list\u2019 and the \u2018background,\u2019 respectively, using the \u2018locus tag\u2019 option on the website.\n\n### D-amino acid rescue experiments\n\nThe unlabeled alrA knockdown (HA420) and wild-type 3610 were grown to an OD600\u00a0~1 in liquid LB. One microliter of each culture was spotted onto MSgg or MSgg-xylose agar plates with 0.04 mg/mL of one of the D-amino acids. Cultures were incubated for 48 hr, and\u00a0imaged at 24 and 48 hr using the DSLR setup described above.\n\n### Liquid growth of alrA monocultures and co-cultures for plating efficiency\n\nCultures of the alrA knockdown strain (HA420) and the parent strain (HA2) were separately cultured from a colony in liquid LB at 37\u00b0C until both strains reached OD600\u00a0~1.0. HA420 and HA2 cultures were mixed 1:1, and the mixture along with the HA420 monoculture was back-diluted 1:200 into 3 mL MSgg medium with 1% xylose and incubated at 30\u00b0C, shaking at an angle. At 0, 1, 2, 3, 4, and 5 hr, cultures were sampled, 10-fold serially diluted, and spotted onto MLS or chloramphenicol selection plates to determine CFU/mL of each strain (HA2 and HA420 are MLSR, HA420 is cmR, HA2 is cmS). We incubated dilutions overnight and counted colonies to calculate CFU/mL.\n\n### Liquid growth of wild-type 3610 and alrA knockdowns for microscopy\n\nThe 3610 wild-type strain and an unlabeled alrA knockdown strain (HA420) were grown to an OD600\u00a0~1 in LB. Each strain was diluted 1:200 into 3 mL MSgg+1% xylose to fully knock down alrA transcription during incubation at 30\u00b0C, shaking at an angle. At 0 and 6 hr, 1 \u03bcL of each culture were spotted onto 1\u00d7 PBS pads made with 1.5% agar. When dry, we added a coverslip and imaged the cells in phase contrast on a Nikon Ti-E inverted microscope using a \u00d7100 objective (NA: 1.4).\n\n### Two-dimensional culturing\n\nStrains were grown in LB to OD600~1. While strains grew, we prepared a large agar pad at least 1 hr before imaging using the bottom of a rectangular Singer PlusPlate culture plate and 30 mL of MSgg+1% xylose. After the agar solidified, we added a second Singer PlusPlate on top to prevent contamination and drying. We mixed the strains 1:1 volumetrically and spotted 0.5 \u03bcL of this mixture onto the agar pad. After the spot dried, we added a large 113\u00a0\u00d7\u00a077 mm custom no. 1.5 glass coverslip (Nexterion,\u00a0Jena,\u00a0Germany). Pads were incubated in a plastic bag with a wet paper towel to maintain humidity at 30\u00b0C for 24 hr. The entire spot was captured in a grid of images using a Nikon Ti-E inverted microscope with a 40 air objective (NA: 0.95) integrated with \u00b5Manager (Edelstein et al., 2014). Images were stitched together using custom Matlab (MathWorks, Santa Clara, CA, USA) code available on Data Dryad: doi:10.5061/dryad.79cnp5htm (Arjes, 2021). GFP and RFP stitched images were merged using Adobe Photoshop, adjusting each channel identically across all images.\n\n### Mutualism screen\n\nThe mutualism screen (Figure 5D) was performed as described above, except two screens were performed side by side: one in which each strain in the sacA::gfp library was co-cultured with the parent-RFP strain (HA12), and one in which each strain was co-cultured with the \u2206epsH \u2206tasA parent-RFP strain (HA825). These screens were carried out on MSgg+1% xylose plates with a titration row of HA773 (parent-GFP) in combination with either HA12 or HA825, as described above.\n\n### Qualitative fitness determination via dilution streaking\n\nStrains were inoculated from a fresh colony into 5 mL LB and incubated at 37\u00b0C for\u00a0~5 hr on a roller drum. Cultures were streaked onto agar plates using sterile wooden sticks. A new sterile stick was used for each streak. Plates were incubated overnight (~18 hr) at 37\u00b0C and imaged using the DSLR camera setup described above.\n\n### Statistical methods\n\nAll statistical tests are stated in the figure legends. To determine whether data were significantly different, Student\u2019s unpaired t-tests were applied. The Benjamini\u2013Hochberg multiple-hypothesis correction was applied to data in Figures 2C, 3C, and 5B.\n",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "2922e8a5-fc03-48c7-b8c4-7280a27f24e3",
+      "submission_id": "0c138edd-b1bf-44fe-bf69-0995685d5414",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Babak Momeni, Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.64145.sa1](https://doi.org/10.7554/eLife.64145.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors have used tunable CRISPRi variants of B. subtilis to examine how different genes contribute to the interactions of cells within a biofilm. They observed that several genes have different fitness effects in biofilm colonies compared to no-biofilm colonies, as well as in monoculture versus co-culture. Interestingly they identified knockdowns with impaired growth in liquid cultures that were rescued in the context of an ancestral biofilm. Their findings add to our understanding of the presence and consequences of intercellular interactions within biofilm colonies.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Three-dimensional biofilm growth supports a mutualism involving matrix and nutrient sharing\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Babak Momeni as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Mariana Gomez Schiavon (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nOverall, the reviewers all agreed that the submitted manuscript is substantial, well-explained, and a nice addition to the field. They agreed that in principle this work is suitable for publication in eLife.\n\nRevisions:\n\nThe main concern raised by the reviewers is the lack of mechanistic insight, when the \"matrix-dependent mutualism\" is discussed in the Results section. Is the complementation and synergism really dependent on growth in biofilms, or are these caused due to the cultivating conditions (such colonies have extremely reduced oxygen levels inside, for instance)? What is missing in this current manuscript is nicely summarized by the authors: \"some aspect of three-dimensional growth beyond matrix production is fundamental to the rescue.\" This aspect could have been explored more by using microscopy to show the distribution of different genotypes. The reviewers identified this as a weakness. At the same time, the reviewers are cognizant of the substantial contribution of this manuscript and current COVID limitations in running experiments. One solution is to: (A) perform the synergism assays in air-liquid biofilms. If these shows that similar synergism exists, the authors can claim that these observations are due to the 3D environment of the biofilms. (B) if the experiments with air-liquid biofilm do not support their hypothesis, or the authors decides not to perform these experiments, in this case, their claim connected to biofilm and 3D context should be removed and claim only \"growth in a colony on an agar medium\". In the latter case, the reviewer recommend revising the phrasing in the Results section to leave room for alternative explanations and expand the issue in the Discussion section to include hypotheses about what the mechanistic reason might be.\n\nAnother issue raised by one of the reviewers is a concern about the experimental protocol: none of the fluorescence-based fitness measurements are validated with CFU assays. Importantly, all colony measurement has been performed based on fluorescence, while liquid cultures were assayed using survival (CFU). Because the spatial organization is not examined in these colonies, it is not possible to confirm the current interpretation of the data. In the current form, one cannot distinguish whether fitness differences exist or only positioning in the colonies are altered by metabolic differences or lack vs presence of the matrix (e.g., see https://doi.org/10.1371/journal.pcbi.1000716 and https://doi.org/10.1073/pnas.1323632111). The colonies should be also assayed as described in L330 to 336 of planktonic cultures. The reviewers recommend that the authors include additional evidence that would justify their approach.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Three-dimensional biofilm growth supports a mutualism involving matrix and nutrient sharing\" for further consideration by eLife. Your revised article has been evaluated by Aleksandra Walczak (Senior Editor) and a Reviewing Editor.\n\nSummary:\n\nThe manuscript has been improved and the majority of reviewers comments have been addressed. However, there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAfter consulting with the reviewers, the only remaining issue is the validation of the results between liquid and spatial contexts. One of the reviewers had requested a validation of colony CFUs and pellicle biofilm results in the previous round and they did not find the changes satisfactory. All reviewers agreed that if the authors decide not to validate the observation from colonies on other biofilm systems, the issue can be addressed by changing the language from \"biofilm\" to \"colony\" or \"community\" throughout the paper (including the title). The authors have already done this in a limited scale in their last revision, but the reviewer expects the change throughout the manuscript. We also suggest a minor revision in the \u201cMedia\u201d subsection: please correct to \"note that original description of the MSgg medium includes KOH for adjusting the pH, thus it does not contain Na+\".\n",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c31a90b3-6acc-461b-af92-a49f0d3e841c",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C1",
+      "claim": "B. subtilis grows on surfaces in biofilm or non-biofilm colonies depending on the growth medium.",
+      "claim_type": "EXPLICIT",
+      "source": "In laboratory conditions, B. subtilis grows on surfaces in biofilm or non-biofilm colonies depending on the growth medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as an established fact about B. subtilis growth behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "d6c0551c-30bb-4350-a596-356e00600180",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C2",
+      "claim": "In LB medium, B. subtilis grows as a colony with limited biofilm characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the commonly used rich medium lysogeny broth (LB), B. subtilis grows as a colony with limited biofilm characteristics (Shemesh and Chai, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shemesh and Chai, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "368e8137-98fa-406d-8db2-d444c327fd41",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C3",
+      "claim": "When cultured on MSgg medium, B. subtilis natural isolates produce extracellular matrix composed of secreted polysaccharides and proteinaceous components.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when cultured on the biofilm-promoting minimal medium MSgg (Branda et al., 2001), B. subtilis natural isolates produce extracellular matrix composed of secreted polysaccharides and proteinaceous components that hold cells together and enhance biofilm colony expansion (Kim et al., 2016; Seminara et al., 2012; van Gestel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "84effe70-aa8b-4a37-87b0-55bd0d3719ae",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C4",
+      "claim": "Extracellular matrix holds cells together and enhances biofilm colony expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when cultured on the biofilm-promoting minimal medium MSgg (Branda et al., 2001), B. subtilis natural isolates produce extracellular matrix composed of secreted polysaccharides and proteinaceous components that hold cells together and enhance biofilm colony expansion (Kim et al., 2016; Seminara et al., 2012; van Gestel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "fed903de-2434-4bd7-afa1-569991f30746",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C5",
+      "claim": "Extracellular matrix establishes colony architecture through the three-dimensional pattern of growth and wrinkling.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular matrix also establishes colony architecture through the three-dimensional pattern of growth and wrinkling (Asally et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Asally et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "b278d7d0-e366-4a6c-bc05-f85ca8e41f02",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C6",
+      "claim": "Biofilms contain functionally distinct subpopulations including extracellular matrix producers, sporulating cells, and motile cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This architecture creates a variety of contexts for genetically identical cells to differentially express genes depending on their location, and indeed biofilms contain functionally distinct subpopulations (L\u00f3pez et al., 2010; Vlamakis et al., 2013): living cells differentiate into extracellular matrix producers, sporulating cells, and motile cells, while dead cells may be cannibalized (Blair et al., 2008; Cairns et al., 2014; Vlamakis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ca5ee1ee-b27f-4eb0-8951-4bd7b4510ff8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C7",
+      "claim": "Dead cells in biofilms may be cannibalized.",
+      "claim_type": "EXPLICIT",
+      "source": "This architecture creates a variety of contexts for genetically identical cells to differentially express genes depending on their location, and indeed biofilms contain functionally distinct subpopulations (L\u00f3pez et al., 2010; Vlamakis et al., 2013): living cells differentiate into extracellular matrix producers, sporulating cells, and motile cells, while dead cells may be cannibalized (Blair et al., 2008; Cairns et al., 2014; Vlamakis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "06eaf91d-74a4-4b15-bacf-a49f9ee35084",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C8",
+      "claim": "A library of 302 CRISPRi knockdown strains was constructed in B. subtilis 3610.",
+      "claim_type": "EXPLICIT",
+      "source": "The library contains 302 strains: the 252 known essential genes in B. subtilis strain 168, 47 genes that were initially classified as essential in 168 (Kobayashi et al., 2003) but later revealed to be non-essential or conditionally essential (Koo et al., 2017), and three internal controls expressing dCas9 without any guide RNAs (Supplementary file 1; Peters et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the library construction performed in this study, with citations to prior work on gene essentiality.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "6e74a087-dd1c-4996-aa3e-c5a09544cc29",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C9",
+      "claim": "The sacA::gfp strain exhibited similar colony growth and biofilm wrinkling as a parental unlabeled control on both LB and MSgg agar.",
+      "claim_type": "EXPLICIT",
+      "source": "The sacA::gfp strain exhibited similar colony growth and biofilm wrinkling as a parental unlabeled control on both non-biofilm LB agar and biofilm-promoting MSgg (Branda et al., 2001) agar (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "048c2f55-e8e5-448c-8195-d3834e78cc70",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C10",
+      "claim": "CRISPRi can be used to knock down gene expression in non-biofilm and biofilm colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CRISPRi is an effective tool to knock down gene expression in non-biofilm and biofilm colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experimental data showing RFP knockdown in colonies (Figure 1\u2014figure supplement 1A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "4775c11d-1892-4c01-ab8d-795330f0374a",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C11",
+      "claim": "RFP levels in non-biofilm colonies on LB agar ranged from 40% (basal knockdown) to ~0% (full knockdown).",
+      "claim_type": "EXPLICIT",
+      "source": "In this strain, RFP levels in non-biofilm colonies on LB agar plates ranged from 40% (basal knockdown) to ~0% (full knockdown) (Figure 1\u2014figure supplement 1A), a comparable range to knockdown of the domesticated strain 168 in liquid LB (Peters et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "058293bd-b370-49e4-b7ce-38f3c428ce6d",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C12",
+      "claim": "RFP levels in biofilm colonies on MSgg agar ranged from ~90% (basal knockdown) to ~0% (full knockdown).",
+      "claim_type": "EXPLICIT",
+      "source": "RFP levels in biofilm colonies on MSgg agar ranged from ~90% (basal knockdown) to ~0% (full knockdown) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "8be65b58-88ee-4f01-8ab1-a4a29bf27d70",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C13",
+      "claim": "Quantification of the titration row closely agreed with the predicted ratio of GFP:RFP at each time point (16, 24, and 48 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the titration row closely agreed with the predicted ratio of GFP:RFP at each time point (16, 24, and 48 hr) (Figure 1D, S1B, E), indicating that the relative fraction of GFP-labeled mutants in co-culture with the parent-RFP strain can be accurately quantified through comparison of the GFP:RFP ratio with the titration row (Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "319552c7-3170-4842-8539-38305a0ae080",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C14",
+      "claim": "Colony sizes of basal knockdown monocultures exhibited a narrow distribution on LB agar after 16 hr of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "After 16 hr of growth, colony sizes of basal knockdown monocultures exhibited a narrow distribution on LB agar, but were more widely distributed on MSgg agar (Figure 2A, Figure 2\u2014figure supplement 1A, Supplementary file 2), indicating increased sensitivity to knockdown on MSgg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "4152f4c1-0357-4b29-b6b1-219f5e4bd3c3",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C15",
+      "claim": "Colony sizes of basal knockdown monocultures were more widely distributed on MSgg agar after 16 hr of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "After 16 hr of growth, colony sizes of basal knockdown monocultures exhibited a narrow distribution on LB agar, but were more widely distributed on MSgg agar (Figure 2A, Figure 2\u2014figure supplement 1A, Supplementary file 2), indicating increased sensitivity to knockdown on MSgg.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "1214f810-b176-4d1e-b6c9-1d1c9476542d",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C16",
+      "claim": "Only 92 of the strains had fitness within two standard deviations of the mean of controls on LB agar after 16 hr under basal knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast to growth as monocultures on LB, basal knockdowns co-cultured with the parent for 16 hr exhibited a broad distribution of competitive fitness on LB agar: only 92 of the strains had a fitness within two standard deviations of the mean of controls, while the remaining 210 strains were significantly defective in competition (below two standard deviations of the mean of the controls) (Figure 2B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "914891f0-e08a-4802-a8a9-b1977de463a8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C17",
+      "claim": "210 strains were significantly defective in competition on LB agar after 16 hr under basal knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast to growth as monocultures on LB, basal knockdowns co-cultured with the parent for 16 hr exhibited a broad distribution of competitive fitness on LB agar: only 92 of the strains had a fitness within two standard deviations of the mean of controls, while the remaining 210 strains were significantly defective in competition (below two standard deviations of the mean of the controls) (Figure 2B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "3b5408c1-e24c-41c3-958c-32f35ba8afa8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C18",
+      "claim": "198 basal knockdowns exhibited a significant fitness defect on MSgg agar after 16 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "On MSgg agar, competitive fitness displayed a similar trend, with 198 basal knockdowns exhibiting a significant fitness defect after 16 hr (Figure 2A, B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A, B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "2a28fd19-e58c-45d0-ba77-fb52f21058ce",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C19",
+      "claim": "168 strains had fitness <0.08 after 16 hr of growth on LB xylose agar under full knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when transcription was fully knocked down, fitness was even more compromised: 168 and 143 strains had fitness <0.08 after 16 hr of growth on LB xylose and MSgg xylose agar, respectively (Figure 2B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "b20270e5-b36f-4821-95f0-4623c40857d8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C20",
+      "claim": "143 strains had fitness <0.08 after 16 hr of growth on MSgg xylose agar under full knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when transcription was fully knocked down, fitness was even more compromised: 168 and 143 strains had fitness <0.08 after 16 hr of growth on LB xylose and MSgg xylose agar, respectively (Figure 2B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "4e911dee-ae09-4b15-9b97-6b1ca739caaf",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C21",
+      "claim": "Structural constituents of ribosomes were significantly enriched among strains with competitive fitness >2 standard deviations below the mean of controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of DAVID functional annotations of strains with competitive fitness >2 standard deviations below the mean of controls revealed significant enrichment of structural constituents of ribosomes (p=9.8 \u00d7 10\u22124 and p=2.1 \u00d7 10\u22122 on LB and MSgg agar, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of functional annotations using DAVID.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "bf78a3a9-ed9c-4c05-a398-5e561d53274b",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C22",
+      "claim": "Some ribosomal protein knockdown strains exhibited ~20% lower maximum growth rate than wild type in liquid cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the ribosomal protein knockdown strains that competed most poorly exhibited ~20% lower maximum growth rate than wild type in liquid cultures (Figure 2C), suggesting that the reduced competitive fitness of these strains is due to their reduced growth rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "9efd9f18-531c-44e4-a2fb-1dba04efe3a1",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C23",
+      "claim": "A reaction-diffusion model of colony growth indicated that a strain's maximum growth rate is a major determinant of competitive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a reaction-diffusion model of colony growth of a co-culture indicated that a strain's maximum growth rate is a major determinant of competitive fitness, and that the 20% decrease of maximum growth rate in certain ribosomal protein knockdowns is consistent with our experimental measurements of their competitive fitness (Figure 2E, Figure 2\u2014figure supplement 1C, Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling results shown in figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "dcbf80d6-9d6f-4b12-83a0-7d7ad0007fda",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C24",
+      "claim": "41 strains on LB and 46 strains on MSgg had fitness similar to controls even at full knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "DAVID functional enrichment analysis of basal knockdowns with fitness values within one standard deviation of the mean across controls (n = 41 and 46 strains for LB and MSgg, respectively) highlighted integral membrane components on both solid media (p=2.1 \u00d7 10\u22123 for both LB and MSgg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "f4a9ac34-2e21-4078-88a9-14b7e46570ce",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C25",
+      "claim": "Integral membrane components were enriched among basal knockdowns with fitness values within one standard deviation of the mean across controls.",
+      "claim_type": "EXPLICIT",
+      "source": "DAVID functional enrichment analysis of basal knockdowns with fitness values within one standard deviation of the mean across controls (n = 41 and 46 strains for LB and MSgg, respectively) highlighted integral membrane components on both solid media (p=2.1 \u00d7 10\u22123 for both LB and MSgg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of functional annotations using DAVID.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "e9a0e8b1-0733-4bad-b039-1480d0ecab96",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C26",
+      "claim": "Four strains (menH and cytC on LB and aroF and rny on MSgg) had compromised monoculture growth but high competitive fitness under basal knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Under basal knockdown conditions, there were four strains (menH and cytC on LB and aroF and rny on MSgg) in which monoculture growth was clearly compromised by gene knockdown but competitive fitness remained high (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "c5d3b4a7-fcc1-46af-ad20-4c05efbdd917",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C27",
+      "claim": "The competitive fitness phenotype was highly reproducible and relatively stable over 2 days of colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the competitive fitness phenotype was highly reproducible and relatively stable over 2 days of colony growth (Figure 2D, E, Figure 2\u2014figure supplement 1D, E), highlighting the utility of our CRISPRi library for probing the fitness of essential gene knockdown in co-cultures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "07d69a34-acc5-41ca-ad95-e6ddf698722e",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C28",
+      "claim": "93% of the strains exhibited similar competitive fitness on MSgg and LB agar under basal or full knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Somewhat surprisingly given the likelihood of different metabolic profiles due to media compositional differences, 93% of the strains exhibited similar competitive fitness (defined here as within 0.24 or 0.3 of the y=x line for basal or full knockdown, respectively) on MSgg and LB agar, whether the targeted gene was basally or fully knocked down (Figure 3A, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ed49d9fc-bb3b-4782-84fb-e629ca025b11",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C29",
+      "claim": "36 strains competed with the parent-RFP strain better on MSgg than on LB, or vice versa, under basal or full knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we identified 36 strains that competed with the parent-RFP strain better on MSgg than on LB, or vice versa, under basal or full knockdown (Figure 3A, B, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A, B and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "daff320e-5392-458a-bfe2-52a0d9393190",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C30",
+      "claim": "Strains that competed better in one medium compared to the other were statistically enriched for genes involved in amino acid biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains that competed better in one medium compared to the other were statistically enriched for genes involved in amino acid biosynthesis (p=4.7\u00d710\u22126 and p=8.3\u00d710\u22125 for basal and full knockdown, respectively), suggesting that some strains benefit from nutritional components specific to one medium (Figure 3A, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of functional annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "01ca3b3c-cb44-43e2-94bc-aa8bff8de7b7",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C31",
+      "claim": "Addition of glycine to MSgg significantly improved fitness of the glyA knockdown in basal and induced conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The glyA knockdown had higher competitive fitness on LB agar than on MSgg agar, and as hypothesized, addition of glycine to MSgg significantly improved fitness in basal and induced conditions, to levels close to fitness on LB (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ea7ebadb-28d1-4f1c-b7ce-08e025f22a0e",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C32",
+      "claim": "Adding Mg2+ to LB agar restored the competitive fitness of mgtE full knockdowns to levels on MSgg.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adding Mg2+ or Mn2+ to LB agar at the same levels as in MSgg restored the competitive fitness of mgtE and mntA full knockdowns, respectively, to levels on MSgg (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "5f42a9e0-a201-4bd2-98ed-6f00a622d3cb",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C33",
+      "claim": "Adding Mn2+ to LB agar restored the competitive fitness of mntA full knockdowns to levels on MSgg.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adding Mg2+ or Mn2+ to LB agar at the same levels as in MSgg restored the competitive fitness of mgtE and mntA full knockdowns, respectively, to levels on MSgg (Figure 3C, Figure 3\u2014figure supplement 1A, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "273b8878-b90e-42d0-a49d-e44033e3a880",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C34",
+      "claim": "alrA was the only knockdown in the thrC::gfp library that failed to form a colony as a monoculture but survived with the parent-RFP strain in biofilm colonies on MSgg agar with xylose.",
+      "claim_type": "EXPLICIT",
+      "source": "In the thrC::gfp library, alrA was the only knockdown that failed to form a colony as a monoculture but survived with the parent-RFP strain in biofilm colonies on MSgg agar with xylose (Figure 4A, Figure 4\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "931643e1-dd5c-4e24-8378-4fa6eff71719",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C35",
+      "claim": "AlrA is a racemase that converts L-alanine to D-alanine and is required for cross-linking of the peptidoglycan cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "AlrA is a racemase that converts L-alanine to D-alanine and is required for cross-linking of the peptidoglycan cell wall (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the function of AlrA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "4cac2558-d2b7-4388-b177-47825f31091b",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C36",
+      "claim": "Full knockdown of alrA expression during liquid growth led to bulging indicative of cell wall defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Full knockdown of alrA expression during liquid growth in a strain without gfp disruption of thrC led to bulging indicative of cell wall defects (Figure 4C, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "0f52f343-0856-42ae-9bef-0def74dd6b8c",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C37",
+      "claim": "D-alanine rescued biofilm colony growth of alrA monocultures on MSgg-xylose plates.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we grew monocultures of an alrA strain without gfp in the genome on MSgg-xylose with exogenous D-alanine and found that D-alanine rescued biofilm colony growth (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "b94fa3a3-cc27-4bb5-a9df-0b7efe1b06fa",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C38",
+      "claim": "D-methionine rescued alrA growth on MSgg-xylose plates.",
+      "claim_type": "EXPLICIT",
+      "source": "D-methionine, an amino acid that can substitute for D-alanine in cell wall cross-linking (Cava et al., 2011), also rescued alrA growth on MSgg-xylose plates (Figure 4D), while other D-amino acids that are not incorporated into the cell wall did not rescue colony growth (Figure 4\u2014figure supplement 1F, G), suggesting that D-alanine's specific role in peptidoglycan synthesis is rescued.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D and supplementary figures, along with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "7a3c3c16-103d-4051-96f6-e0616cb374fe",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C39",
+      "claim": "Other D-amino acids that are not incorporated into the cell wall did not rescue alrA colony growth.",
+      "claim_type": "EXPLICIT",
+      "source": "D-methionine, an amino acid that can substitute for D-alanine in cell wall cross-linking (Cava et al., 2011), also rescued alrA growth on MSgg-xylose plates (Figure 4D), while other D-amino acids that are not incorporated into the cell wall did not rescue colony growth (Figure 4\u2014figure supplement 1F, G), suggesting that D-alanine's specific role in peptidoglycan synthesis is rescued.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "bf07e400-9534-44ee-a938-35e835525d05",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C40",
+      "claim": "The vast majority of alrA cells died within hours in both liquid monocultures and co-cultures with the parent-RFP strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of alrA cells died within hours in both liquid monocultures and co-cultures with the parent-RFP strain (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "a45f05fd-6902-4623-8ab1-91babae4d977",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C41",
+      "claim": "The rescue of alrA knockdown cells by D-alanine sharing in co-cultures is specific to growth in a colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the rescue of alrA knockdown cells by D-alanine sharing in co-cultures is specific to growth in a colony, presumably due to the close proximity of cells that facilitates D-alanine sharing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the observation that rescue occurs in colonies but not in liquid cultures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "936b046e-7fad-4f5e-9ecd-bda678ccbb49",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C42",
+      "claim": "Matrix-deficient co-culture colonies were smaller than matrix-proficient co-cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, matrix-deficient co-culture colonies were smaller than matrix-proficient co-cultures as matrix is necessary for robust biofilm colony growth (Seminara et al., 2012; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "8f427f7e-1b8a-4711-8fa1-134baea6ef44",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C43",
+      "claim": "Matrix-deficient co-cultures exhibited approximately the same fraction of alrA cells as matrix-proficient co-cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, matrix-deficient co-cultures exhibited approximately the same fraction of alrA cells as matrix-proficient co-cultures (Figure 5A, B, Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "0ed7be55-87a1-463d-9822-6881be8146dd",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C44",
+      "claim": "Matrix is not required for the growth rescue of alrA-knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, matrix is not required for the growth rescue of alrA-knockdown cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the observation that rescue occurs in matrix-deficient co-cultures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ac3c6f2b-6e96-40d3-9dd6-e36e92576ccf",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C45",
+      "claim": "Combining the matrix-proficient alrA strain under full knockdown with the matrix-deficient parent-RFP strain resulted in an increased fraction of alrA-depleted cells relative to co-cultures with the matrix-proficient parent-RFP strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, combining the matrix-proficient and wrinkling-proficient alrA strain under full knockdown with the matrix-deficient (\u2206epsH \u2206tasA) parent-RFP strain resulted in an increased fraction of alrA-depleted cells relative to co-cultures with the matrix-proficient parent-RFP strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different co-culture combinations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "1473673e-c5be-4f60-833b-3dcb7db457db",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C46",
+      "claim": "The competitive fitness of alrA against the matrix-deficient parent was stable at ~1 for 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rather than a steady decrease in competitive fitness over time (Figure 5A,B), the competitive fitness of alrA against the matrix-deficient parent was stable at ~1 for 48 hr.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "14a3b2eb-24a9-42d2-ac29-2f5fe43237db",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C47",
+      "claim": "The matrix-deficient parent-RFP cells restore viability to alrA knockdown cells by providing D-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "The matrix-deficient parent-RFP cells restore viability to alrA knockdown cells by providing D-alanine, and in turn alrA knockdown cells enhance growth of the parent-RFP strain by providing extracellular matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutualistic interaction observed between the two strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "fea8219b-87ae-402c-bc92-ec441697ef13",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C48",
+      "claim": "alrA knockdown cells enhance growth of the parent-RFP strain by providing extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "The matrix-deficient parent-RFP cells restore viability to alrA knockdown cells by providing D-alanine, and in turn alrA knockdown cells enhance growth of the parent-RFP strain by providing extracellular matrix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutualistic interaction observed between the two strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "e1219ef1-216d-4494-a260-405aea28c737",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C49",
+      "claim": "In all matrix-production combinations, the parent-RFP strain had a growth advantage at the edge of the two-dimensional colony and outcompeted the alrA knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Now, in all matrix-production combinations of the sacA::gfp alrA strain under full knockdown and parent-RFP, including matrix-proficient alrA with the matrix-deficient parent, the parent-RFP strain had a growth advantage at the edge of the two-dimensional colony and outcompeted the alrA knockdown (Figure 5C, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "62a9940d-171b-4bdf-a9df-bba9d0075749",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C50",
+      "claim": "The mutualism between alrA under full knockdown and the matrix-deficient parent can be eliminated by removing the ability of the colony to grow in three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mutualism we discovered between alrA under full knockdown and the matrix-deficient parent can be eliminated by removing the ability of the colony to grow in three dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the observation that mutualism is lost in two-dimensional growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "7ec718c7-711e-4f69-8c31-b73da3ba5dce",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C51",
+      "claim": "Eight other essential gene full knockdowns exhibited a high mutualism score on MSgg-xylose in addition to alrA.",
+      "claim_type": "EXPLICIT",
+      "source": "On MSgg-xylose, in addition to alrA, eight other essential gene full knockdowns exhibited a high mutualism score (Figure 5E, Figure 5\u2014figure supplement 1E, F, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "d98c884c-761d-49e7-bc4f-eb06adb6223f",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C52",
+      "claim": "Knockdowns of racE and menE were candidates for nutrient- and matrix-sharing mutualisms similar to that of alrA.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these strains, knockdowns of genes encoding the glutamate racemase (racE) and enzymes involved in menaquinone (vitamin K2) synthesis (menE) were candidates for nutrient- and matrix-sharing mutualisms similar to that of alrA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional roles of these genes and their mutualism scores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "cf2091d8-cd1b-4cab-bd06-d9142a879d2b",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C53",
+      "claim": "Knockdowns of menC and menD displayed mutualism scores slightly below 0.22.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdowns of two other genes in the menaquinone synthesis pathway (menC and menD) displayed mutualism scores slightly below 0.22 (Figure 5E, Supplementary file 5), providing further support for a menaquinone-based mutualism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "a1e13c0e-117e-4400-b33b-584e119b0e48",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C54",
+      "claim": "Strains depleted of racE, menE, menD, and rnz showed evidence of being outcompeted by parent-RFP, but stably coexisted throughout the entire colony when the parent could not produce matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains depleted of racE, menE, menD, and rnz showed evidence of being outcompeted by parent-RFP, but stably coexisted throughout the entire colony when the parent could not produce matrix (Figure 5E), further suggesting that matrix-capable mutants promote growth of the matrix-deficient parent strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "44700d36-754b-498c-9f62-271e5cba72c7",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C55",
+      "claim": "Four non-essential strains exhibited high mutualism scores.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, four non-essential strains exhibited high mutualism scores (Figure 5\u2014figure supplement 1F), indicating that the benefits of matrix sharing can extend to genes that are not critical for growth as a monoculture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "99759fa1-eef7-4030-869c-a4782efe856c",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C56",
+      "claim": "In each case tested (racE, menE, rnz, and hbs full depletions), the knockdown was outcompeted by the parent-RFP strain at the growing edge of the two-dimensional colony.",
+      "claim_type": "EXPLICIT",
+      "source": "We grew racE, menE, rnz, and hbs full depletions in individual co-cultures with the matrix-deficient parent-RFP between a glass slide and a coverslip. In each case, the knockdown was outcompeted by the parent-RFP strain at the growing edge of the colony (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "1f6dd4c2-39cb-46f3-8a60-42a23086ade8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C57",
+      "claim": "Matrix-dependent mutualisms generally require growth in a three-dimensional colony.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these data suggest that matrix-dependent mutualisms generally require growth in a three-dimensional colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the observation that mutualisms are lost in two-dimensional growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "cdef5310-107a-43ba-a897-ccdf9aab41c5",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C58",
+      "claim": "D-alanine levels are undetectable in B. subtilis 168 liquid culture supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite previous studies showing that D-alanine levels are undetectable in B. subtilis 168 liquid culture supernatants (Lam et al., 2009), we found that D-alanine sharing in a colony can rescue B. subtilis 3610 mutants that cannot synthesize their own D-alanine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lam et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "03cacef4-fc28-48f1-998b-04f2a5f2890c",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C59",
+      "claim": "D-alanine is produced and secreted by wild-type cells at sufficient levels to support growth of the mutant in a colony on biofilm-promoting media.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, D-alanine is produced and secreted by wild-type cells at sufficient levels to support growth of the mutant in a colony on biofilm-promoting media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the rescue of alrA mutants in colonies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "a557a929-d4e8-4e0d-9ca4-d31789b5711f",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C60",
+      "claim": "Rescue of alrA mutants likely occurs early in biofilm development prior to the period of substantial cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Since full knockdown of alrA causes cells to bulge and die in liquid culture within hours (Figure 4C, E), we infer that rescue likely occurs early in biofilm development prior to the period of substantial cell death that is thought to drive wrinkling (Asally et al., 2012), suggesting that rescue is not due to the release of D-alanine by dying cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the timing of cell death and the rescue phenotype, with a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "efe295e7-f83e-4f08-8deb-43bfea1114a4",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C61",
+      "claim": "Cell wall synthesis mutants can be supported in native environments through sharing of cell wall components.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, this rescue demonstrates that cell wall synthesis mutants can be supported in native environments through sharing of cell wall components, which could be provided by many other bacterial species in a multispecies community due to the common chemical makeup of peptidoglycan cell walls (Cava et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization drawn from the alrA rescue data, with a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ee37546e-832d-4c2b-8414-cfa7daf046b8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C62",
+      "claim": "The stable mutualism between the alrA knockdown and a matrix-deficient parent resembles the initial behavior of \u2206tasA and \u2206epsH mutants grown together as pellicle biofilms on liquid surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable mutualism that we discovered between the alrA knockdown and a matrix-deficient parent (Figure 5B) resembles the initial behavior of \u2206tasA and \u2206epsH mutants grown together as pellicle biofilms on liquid surfaces, in which the pellicle architecture is preserved by cross-complementation for many passages (Drago\u0161 et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is made with a citation to Drago\u0161 et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "bf91956c-089b-4af4-895d-fd64517b4500",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C63",
+      "claim": "Growth in a biofilm colony can drive genetic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results demonstrate that growth in a biofilm colony can drive genetic diversity and illustrate the potential for mutualism between nutrient and matrix sharing in native biofilms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "70ca8f86-dda3-4cdf-b0fb-806675aeda20",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "claim_id": "C64",
+      "claim": "Mutualisms involving nutrient and matrix sharing may occur during plant root colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mutualisms may occur during plant root colonization, when the bacterial extracellular matrix is particularly important and may serve to pull nutrients from the root and surrounding soil (Beauregard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications, with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "B. subtilis exhibits medium-dependent biofilm formation, with LB supporting limited biofilm characteristics and MSgg promoting extracellular matrix production that establishes colony architecture and supports functionally distinct subpopulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are all supported by citations to prior work and represent established knowledge about B. subtilis biofilm biology. These claims provide essential background context for the study but do not constitute novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A CRISPRi library of 302 essential and conditionally essential gene knockdowns was constructed in B. subtilis 3610, with tunable knockdown levels demonstrated in both biofilm and non-biofilm colonies, and a fluorescence-based quantification method validated for measuring competitive fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 describe the construction and validation of the CRISPRi library and quantification methods. The data in Figures 1 and supplementary figures demonstrate successful library construction, tunable knockdown (C11-C12), and accurate quantification of strain ratios (C13). These technical achievements enable the subsequent experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Basal knockdown of essential genes resulted in a narrow distribution of colony sizes on LB but wider distribution on MSgg, while competitive fitness assays revealed that 210 strains on LB and 198 on MSgg were significantly defective in competition under basal knockdown, with even more severe defects under full knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 are supported by experimental data in Figure 2 and supplementary files. The statistical thresholds (two standard deviations from controls) are clearly defined, and the data show consistent patterns across media types. The increased sensitivity on MSgg (C15) is particularly notable and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "9f720c46-fcdd-4b7c-9ece-fac78e99bf4b",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ribosomal protein knockdowns exhibited significantly reduced competitive fitness, with some showing ~20% lower maximum growth rates in liquid culture, and a reaction-diffusion model confirmed that growth rate is a major determinant of competitive fitness in colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by DAVID functional enrichment analysis (C21, with p-values), experimental growth rate measurements (C22, Figure 2C), and computational modeling (C23, Figure 2E). The model provides mechanistic insight linking growth rate differences to competitive fitness outcomes, though the model parameters require several assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "0aea3030-7464-49fb-ac06-9d2f6f7b6725",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Some knockdowns maintained high competitive fitness despite reduced monoculture growth, with enrichment for integral membrane components among strains with fitness similar to controls, and four specific strains showed compromised monoculture growth but high competitive fitness, suggesting nutrient sharing mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by experimental data and statistical analysis. The enrichment of integral membrane components (C25) is statistically significant (p=2.1\u00d710\u207b\u00b3). The identification of specific strains with discordant monoculture/co-culture phenotypes (C26) suggests interesting biology, though the mechanisms remain incompletely characterized. The reproducibility and stability data (C27) strengthen confidence in the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "ba492083-53dd-4e8c-968e-c790e7b49b94",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "93% of strains exhibited similar competitive fitness on LB and MSgg, but 36 strains showed medium-dependent fitness differences enriched for amino acid biosynthesis genes, with specific nutrient supplementation (glycine, Mg2+, Mn2+) rescuing fitness defects for glyA, mgtE, and mntA knockdowns respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 are supported by experimental data in Figure 3. The statistical enrichment for amino acid biosynthesis genes (C30, p<10\u207b\u2075) is highly significant. The rescue experiments (C31-C33) provide direct evidence for nutrient-dependent fitness effects. However, the authors note that many predicted nutrient additions did not rescue fitness (Figure 3\u2014figure supplement 1B), indicating complexity beyond simple nutrient availability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "43df8ec0-455b-44ed-b540-43da30b8da6d",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The alrA knockdown failed to form colonies as a monoculture but survived in biofilm colony co-culture through D-alanine sharing from wild-type cells, with rescue specific to colony growth and not occurring in liquid culture, and specificity demonstrated by rescue with D-methionine but not other D-amino acids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 describe a key discovery of the paper. The data in Figure 4 clearly show that alrA knockdown is rescued in colony co-culture (C34) but not liquid (C40-C41), and that exogenous D-alanine or D-methionine rescue growth (C37-C38) while other D-amino acids do not (C39). The cell wall defects (C36) provide mechanistic context. This represents a clear example of colony-specific genetic rescue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Matrix-deficient co-cultures maintained alrA rescue, but combining matrix-proficient alrA knockdown with matrix-deficient parent resulted in stable mutualism with competitive fitness ~1 for 48 hours, suggesting reciprocal benefits through D-alanine and matrix sharing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 describe the mutualism discovery. The data in Figure 5A-B show that matrix is not required for alrA rescue (C42-C44) but that the matrix-deficient parent benefits from matrix-producing alrA cells (C45-C46). The inference of reciprocal benefits (C47-C48) is reasonable given the stable 1:1 ratio over time, though direct measurements of D-alanine and matrix exchange are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "e1ee0f3b-4f4c-429a-a351-b7a2c1403775",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mutualism between alrA knockdown and matrix-deficient parent was eliminated when colony growth was constrained to two dimensions, with the parent outcompeting alrA at the colony edge in all matrix-production combinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by the two-dimensional growth experiments in Figure 5C,F. The consistent outcompetition of alrA by parent-RFP at the colony edge in 2D growth across all matrix combinations demonstrates that three-dimensional colony architecture is critical for the mutualism. This is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Eight additional essential gene knockdowns exhibited high mutualism scores, including racE and menE as candidates for nutrient-sharing mutualisms, with four non-essential genes also showing mutualism, and all tested mutualisms requiring three-dimensional colony growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 extend the mutualism findings beyond alrA. The mutualism screen data (Figure 5E, supplementary figures) identify multiple genes with high mutualism scores. The functional predictions for racE and menE (C52) are reasonable inferences based on gene function. The requirement for 3D growth (C56-C57) is demonstrated experimentally for four genes. However, the mechanistic details for most of these mutualisms remain to be fully characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "0426c980-48ef-4b34-ac51-90a292ee4d72",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Despite D-alanine being undetectable in B. subtilis 168 liquid culture supernatants, wild-type cells produce and secrete sufficient D-alanine to support alrA mutant growth in colonies, with rescue likely occurring early in biofilm development, demonstrating that cell wall synthesis mutants can be supported through sharing of cell wall components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 synthesize the alrA findings with prior literature. The contrast with prior work (C58, citing Lam et al. 2009) highlights the novelty of colony-based rescue. The inference about timing (C60) is reasonable given the rapid cell death in liquid (Figure 4C,E) and the citation to work on biofilm development. The generalization to other cell wall mutants (C61) is appropriately cautious, noting the common peptidoglycan structure across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    },
+    {
+      "id": "62bbda3a-06a5-4fe2-bc94-b103ccb3c9c6",
+      "content_id": "e78dbb2a-6a40-4fcc-ac0d-a229a5e7eeb5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The stable mutualism resembles behavior of \u0394tasA and \u0394epsH mutants in pellicle biofilms, demonstrating that biofilm colony growth can drive genetic diversity and illustrating potential for mutualism in native biofilms including during plant root colonization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by the experimental findings and represent reasonable conclusions. The comparison to prior work (C62, citing Drago\u0161 et al. 2018) provides context. The general conclusion about genetic diversity (C63) is justified by the multiple examples of rescue and mutualism. However, C64 is explicitly speculative about plant root colonization and represents a hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T02:27:39.063179Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c31a90b3-6acc-461b-af92-a49f0d3e841c",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "d6c0551c-30bb-4350-a596-356e00600180",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "368e8137-98fa-406d-8db2-d444c327fd41",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "84effe70-aa8b-4a37-87b0-55bd0d3719ae",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "fed903de-2434-4bd7-afa1-569991f30746",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "b278d7d0-e366-4a6c-bc05-f85ca8e41f02",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "ca5ee1ee-b27f-4eb0-8951-4bd7b4510ff8",
+      "result_id": "5af5973d-1f57-4b0c-8e65-d18907f6a4c8"
+    },
+    {
+      "claim_id": "06eaf91d-74a4-4b15-bacf-a49f9ee35084",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "6e74a087-dd1c-4996-aa3e-c5a09544cc29",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "048c2f55-e8e5-448c-8195-d3834e78cc70",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "4775c11d-1892-4c01-ab8d-795330f0374a",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "058293bd-b370-49e4-b7ce-38f3c428ce6d",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "8be65b58-88ee-4f01-8ab1-a4a29bf27d70",
+      "result_id": "9378f8e1-9391-4ce8-9532-b52ad8cfb2ba"
+    },
+    {
+      "claim_id": "319552c7-3170-4842-8539-38305a0ae080",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "4152f4c1-0357-4b29-b6b1-219f5e4bd3c3",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "1214f810-b176-4d1e-b6c9-1d1c9476542d",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "914891f0-e08a-4802-a8a9-b1977de463a8",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "3b5408c1-e24c-41c3-958c-32f35ba8afa8",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "2a28fd19-e58c-45d0-ba77-fb52f21058ce",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "b20270e5-b36f-4821-95f0-4623c40857d8",
+      "result_id": "252813ba-2b8e-48b5-aa3c-61c3044ab8ea"
+    },
+    {
+      "claim_id": "4e911dee-ae09-4b15-9b97-6b1ca739caaf",
+      "result_id": "9f720c46-fcdd-4b7c-9ece-fac78e99bf4b"
+    },
+    {
+      "claim_id": "bf78a3a9-ed9c-4c05-a398-5e561d53274b",
+      "result_id": "9f720c46-fcdd-4b7c-9ece-fac78e99bf4b"
+    },
+    {
+      "claim_id": "9efd9f18-531c-44e4-a2fb-1dba04efe3a1",
+      "result_id": "9f720c46-fcdd-4b7c-9ece-fac78e99bf4b"
+    },
+    {
+      "claim_id": "dcbf80d6-9d6f-4b12-83a0-7d7ad0007fda",
+      "result_id": "0aea3030-7464-49fb-ac06-9d2f6f7b6725"
+    },
+    {
+      "claim_id": "f4a9ac34-2e21-4078-88a9-14b7e46570ce",
+      "result_id": "0aea3030-7464-49fb-ac06-9d2f6f7b6725"
+    },
+    {
+      "claim_id": "e9a0e8b1-0733-4bad-b039-1480d0ecab96",
+      "result_id": "0aea3030-7464-49fb-ac06-9d2f6f7b6725"
+    },
+    {
+      "claim_id": "c5d3b4a7-fcc1-46af-ad20-4c05efbdd917",
+      "result_id": "0aea3030-7464-49fb-ac06-9d2f6f7b6725"
+    },
+    {
+      "claim_id": "07d69a34-acc5-41ca-ad95-e6ddf698722e",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "ed49d9fc-bb3b-4782-84fb-e629ca025b11",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "daff320e-5392-458a-bfe2-52a0d9393190",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "01ca3b3c-cb44-43e2-94bc-aa8bff8de7b7",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "ea7ebadb-28d1-4f1c-b7ce-08e025f22a0e",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "5f42a9e0-a201-4bd2-98ed-6f00a622d3cb",
+      "result_id": "ba492083-53dd-4e8c-968e-c790e7b49b94"
+    },
+    {
+      "claim_id": "273b8878-b90e-42d0-a49d-e44033e3a880",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "931643e1-dd5c-4e24-8378-4fa6eff71719",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "4cac2558-d2b7-4388-b177-47825f31091b",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "0f52f343-0856-42ae-9bef-0def74dd6b8c",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "b94fa3a3-cc27-4bb5-a9df-0b7efe1b06fa",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "7a3c3c16-103d-4051-96f6-e0616cb374fe",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "bf07e400-9534-44ee-a938-35e835525d05",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "a45f05fd-6902-4623-8ab1-91babae4d977",
+      "result_id": "43df8ec0-455b-44ed-b540-43da30b8da6d"
+    },
+    {
+      "claim_id": "936b046e-7fad-4f5e-9ecd-bda678ccbb49",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "8f427f7e-1b8a-4711-8fa1-134baea6ef44",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "0ed7be55-87a1-463d-9822-6881be8146dd",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "ac3c6f2b-6e96-40d3-9dd6-e36e92576ccf",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "1473673e-c5be-4f60-833b-3dcb7db457db",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "14a3b2eb-24a9-42d2-ac29-2f5fe43237db",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "fea8219b-87ae-402c-bc92-ec441697ef13",
+      "result_id": "2d5441ad-f8c1-49d3-a4f4-d0baf195059c"
+    },
+    {
+      "claim_id": "e1219ef1-216d-4494-a260-405aea28c737",
+      "result_id": "e1ee0f3b-4f4c-429a-a351-b7a2c1403775"
+    },
+    {
+      "claim_id": "62a9940d-171b-4bdf-a9df-bba9d0075749",
+      "result_id": "e1ee0f3b-4f4c-429a-a351-b7a2c1403775"
+    },
+    {
+      "claim_id": "7ec718c7-711e-4f69-8c31-b73da3ba5dce",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "d98c884c-761d-49e7-bc4f-eb06adb6223f",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "cf2091d8-cd1b-4cab-bd06-d9142a879d2b",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "a1e13c0e-117e-4400-b33b-584e119b0e48",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "44700d36-754b-498c-9f62-271e5cba72c7",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "99759fa1-eef7-4030-869c-a4782efe856c",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "1f6dd4c2-39cb-46f3-8a60-42a23086ade8",
+      "result_id": "3ef93040-f359-43e3-b3c8-a305d1bd3b05"
+    },
+    {
+      "claim_id": "cdef5310-107a-43ba-a897-ccdf9aab41c5",
+      "result_id": "0426c980-48ef-4b34-ac51-90a292ee4d72"
+    },
+    {
+      "claim_id": "03cacef4-fc28-48f1-998b-04f2a5f2890c",
+      "result_id": "0426c980-48ef-4b34-ac51-90a292ee4d72"
+    },
+    {
+      "claim_id": "a557a929-d4e8-4e0d-9ca4-d31789b5711f",
+      "result_id": "0426c980-48ef-4b34-ac51-90a292ee4d72"
+    },
+    {
+      "claim_id": "efe295e7-f83e-4f08-8deb-43bfea1114a4",
+      "result_id": "0426c980-48ef-4b34-ac51-90a292ee4d72"
+    },
+    {
+      "claim_id": "ee37546e-832d-4c2b-8414-cfa7daf046b8",
+      "result_id": "62bbda3a-06a5-4fe2-bc94-b103ccb3c9c6"
+    },
+    {
+      "claim_id": "bf91956c-089b-4af4-895d-fd64517b4500",
+      "result_id": "62bbda3a-06a5-4fe2-bc94-b103ccb3c9c6"
+    },
+    {
+      "claim_id": "70ca8f86-dda3-4cdf-b0fb-806675aeda20",
+      "result_id": "62bbda3a-06a5-4fe2-bc94-b103ccb3c9c6"
+    }
+  ],
+  "comparisons": []
+}

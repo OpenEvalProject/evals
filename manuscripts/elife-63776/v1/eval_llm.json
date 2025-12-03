@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "HighIR excitation (1300 and 1650 nm) provides more than 2-fold increased imaging depth in tumor tissue compared to lowIR 2-photon excitation, reaching depths of ~395-415 \u00b5m versus ~255 \u00b5m. This improvement is attributed to improved excitation confinement, reduced scattering (increased effective attenuation length from 103 \u00b5m at 1180 nm to 220 \u00b5m at 1650 nm), and maintained resolution at depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C35 provide direct experimental evidence from SNR analysis and imaging depth measurements in tumor tissue (Figure 3). Claims C36-C37 provide mechanistic support through resolution and attenuation length measurements. The 2-fold improvement is consistently demonstrated across multiple metrics and tissue types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HighIR excitation provides at least 2-fold improved imaging depth for THG microscopy across multiple tissue types including tumor (>400 \u00b5m vs <100 \u00b5m), bone (beyond 220 \u00b5m with resolved subcellular structures), and brain (928 \u00b5m vs 444 \u00b5m), irrespective of tissue density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide consistent experimental evidence from SNR analysis and direct imaging comparisons across three distinct tissue types (Figures 4 and Figure 1\u2014figure supplement 3). The 2-fold or greater improvement is demonstrated with quantitative depth measurements and is attributed to increased effective attenuation length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C49"
+    ],
+    "result": "A single highIR laser line at 1650 nm simultaneously induces 3-photon and 4-photon excitation processes, enabling six-channel multiparametric imaging (blue to far-red fluorescence plus SHG and THG) without chromatic aberration. Red fluorophores (TagRFP, mCherry, AF680) follow cubic power dependence (3P), while green/blue fluorophores (eGFP, Hoechst) follow quartic dependence (4P).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20-C22 are directly supported by power-dependence measurements (Figure 1d, Figure 1\u2014figure supplement 4) showing the expected cubic and quartic relationships. Claims C5, C23, C49 demonstrate the practical application with multicolor imaging (Figure 1b-c). The chromatic aberration advantage is a logical consequence of single-beam excitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Safe imaging thresholds for highIR excitation were established at 2.8 nJ (1300 nm) and 8.7 nJ (1650 nm) at the sample surface using dual Ca2+ (GCaMP6) and cell death (Sytox) reporters. Ca2+ detection proved faster and more sensitive than Sytox for detecting phototoxic stress, including sublethal damage. Above threshold (3.9 nJ at 1300 nm, 12 nJ at 1650 nm), cells showed Ca2+ elevation and eventual cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C24-C27, C30-C31, C45-C47 are well-supported by systematic phototoxicity experiments (Figure 2). The dual-reporter approach provides both sensitive (Ca2+) and definitive (Sytox) readouts. Thresholds are quantitatively defined with clear dose-response relationships. The temporal dynamics showing Ca2+ preceding Sytox positivity (C26, C45-C46) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Phototoxic effects from highIR excitation are spatially restricted to the focal plane without linear phototoxicity in out-of-focus regions, even at average powers up to 17 mW (17 nJ \u00d7 1 MHz) at the sample surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by depth-stack measurements (Figure 2e, Figure 2\u2014figure supplement 1c-f) showing Ca2+ and Sytox signals confined to the excitation plane. This demonstrates that damage is due to nonlinear effects in the focus rather than linear absorption throughout the tissue volume.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Photobleaching within the toxic range showed 25% intensity decline after 25 scans for eGFP (1300 nm) and after 2 scans for mCherry (1650 nm). Within the non-toxic range, mCherry decreased 10-20% after 50 scans while 3P-excited eGFP remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by quantitative photobleaching measurements (Figure 2\u2014figure supplement 2b). The differential bleaching rates between toxic and non-toxic ranges, and between fluorophores, are clearly documented. This establishes practical limits for time-lapse imaging applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The highIR microscopy setup achieved resolution better than 0.8 \u00b5m lateral and 3 \u00b5m axial. In mouse brain, 1650 nm highIR excitation enabled THG imaging throughout the cortex (>1 mm depth), outperforming 1270 nm lowIR by nearly 2-fold. Effective attenuation lengths in neocortex were 336 \u00b5m (1650 nm) vs 280 \u00b5m (1280 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by direct measurements of point-spread functions (Figure 1\u2014figure supplement 1) and brain imaging experiments (Figure 1\u2014figure supplement 3). The resolution specifications and depth improvements are quantitatively documented with SNR analysis and attenuation length calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "In-focus phototoxicity thresholds in cell-rich tumor models are comparable to those in low-density tissues, suggesting a general mechanism such as light-induced ionization or reactive oxygen species formation, irrespective of tissue density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by comparison with cited studies (Ouzounov et al., 2017; Yildirim et al., 2019; Wang et al., 2020) and the authors' own measurements. The inference about mechanism is reasonable given the consistency across tissue types, though direct mechanistic evidence is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Multiparametric imaging required pulse energies 1.4-2.1\u00d7 higher than previous studies at 1650 nm and 0.7-1.7\u00d7 at 1300 nm, but remained below phototoxicity thresholds. Requirements for 4P excitation are stricter than 3P due to smaller absorption cross-sections, necessitating high quantum efficiency fluorophores like H2B-eGFP or Hoechst. Red fluorescent proteins showed reduced excitation efficiency at 1300 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by comparison with cited literature and the experimental results (Figure 5b). The stricter requirements for 4P excitation (C51) are well-established in the literature (Cheng et al., 2014) and consistent with the observed need for high-abundance fluorophores. The reduced efficiency of red proteins at 1300 nm (C53) is directly observed in the imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior work has established that confocal microscopy penetrates <100 \u00b5m and is restricted to low-scattering tissues, 2P microscopy (80 MHz, 800-1300 nm) provides 100-400 \u00b5m depth in scattering tissues and 500-800 \u00b5m in brain, 3P microscopy has been demonstrated for deep brain imaging, and efficient 3P microscopy requires sub-100 fs pulses with 5-10\u00d7 higher energy than 2P at lower repetition rates (1-2 MHz vs 80 MHz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C15 accurately summarize prior work and are supported by appropriate citations (Helmchen and Denk 2005, Ritsma et al. 2012, Andresen et al. 2009, K\u00f6nig et al. 1999, Xu et al. 1996, Beaurepaire et al. 2001, Theer et al. 2003). These claims provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Recent work has shown that excitation efficiency of red fluorescent proteins at 1300 nm can be enhanced by tuning the excitation wavelength to higher-energy electronic excited states, enabling multiparametric imaging with high SNR in three channels, at the cost of accelerated photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by citation to Hontani et al., 2021. This represents accurate reporting of prior work that addresses a limitation identified in the current study (reduced red protein excitation at 1300 nm).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C55"
+    ],
+    "result": "The excitation intensities used are compatible with live tissue imaging, and highIR excitation opens novel perspectives for intravital deep-tissue microscopy. HighIR excitation has two main advantages: roughly doubling imaging depth compared to state-of-the-art 2P imaging, and enabling multiparametric imaging through simultaneous 3P/4P fluorescence and multi-harmonic signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C9, C55 represent summary conclusions supported by the phototoxicity experiments (Figure 2) and the imaging depth/multiparametric imaging results throughout the manuscript. These are appropriate syntheses of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HighIR excitation will improve intravital microscopy of understudied tumor regions (core, necrosis zones), advance imaging of challenging tissues (bone marrow, organoids, embryos), and enable recording of cell functions in broader morphological context including tumor microenvironment and label-free intra-operative histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58 are prospective statements about future applications. While they are reasonable extrapolations from the demonstrated capabilities and are supported by citations to relevant literature, they represent speculation about future work rather than demonstrated results. The claims are plausible but not experimentally validated in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

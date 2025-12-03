@@ -1,0 +1,1397 @@
+{
+  "submission": {
+    "id": "2f889a48-4c77-43cf-8496-ebb053ad8160",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T08:52:24.022976Z",
+    "updated_at": "2025-12-03T08:52:24.022976Z"
+  },
+  "content": [
+    {
+      "id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "submission_id": "2f889a48-4c77-43cf-8496-ebb053ad8160",
+      "content_type": "manuscript",
+      "content_text": "# Relating multivariate shapes to genescapes using phenotype-biological process associations for craniofacial shape\n\n## Authors\n\n- Jose D Aponte<sup>1</sup> ([ORCID: 0000-0002-1608-8612](https://orcid.org/0000-0002-1608-8612))\n- David C Katz<sup>1</sup>\n- Daniela M Roth<sup>2</sup> ([ORCID: 0000-0001-8156-4681](https://orcid.org/0000-0001-8156-4681))\n- Marta Vidal-Garc\u00eda<sup>1</sup> ([ORCID: 0000-0001-7617-7329](https://orcid.org/0000-0001-7617-7329))\n- Wei Liu<sup>1</sup>\n- Fernando Andrade<sup>3</sup>\n- Charles C Roseman<sup>3</sup>\n- Steven A Murray<sup>4</sup>\n- James Cheverud<sup>3</sup>\n- Daniel Graf<sup>2</sup>\n- Ralph S Marcucio<sup>6</sup> ([ORCID: 0000-0002-0537-818X](https://orcid.org/0000-0002-0537-818X)) \u2020\n- Benedikt Hallgr\u00edmsson<sup>1</sup> ([ORCID: 0000-0002-7192-9103](https://orcid.org/0000-0002-7192-9103)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology & Anatomy, Alberta Children\u2019s Hospital Research Institute and McCaig Bone and Joint Institute, Cumming School of Medicine, University of Calgary Calgary Canada\n2. School of Dentistry, Faculty of Medicine and Dentistry, University of Alberta Edmonton Canada\n3. Department of Biology, Loyola University Chicago Chicago United States\n4. The Jackson Laboratory Bar Harbor United States\n5. Department of Medical Genetics, Faculty of Medicine and Dentistry, University of Alberta Edmonton Canada\n6. Department of Orthopaedic Surgery, School of Medicine, University of California, San Francisco San Francisco United States\n7. Department of Animal Biology, University of Illinois Urbana Champaign Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRealistic mappings of genes to morphology are inherently multivariate on both sides of the equation. The importance of coordinated gene effects on morphological phenotypes is clear from the intertwining of gene actions in signaling pathways, gene regulatory networks, and developmental processes underlying the development of shape and size. Yet, current approaches tend to focus on identifying and localizing the effects of individual genes and rarely leverage the information content of high-dimensional phenotypes. Here, we explicitly model the joint effects of biologically coherent collections of genes on a multivariate trait \u2013 craniofacial shape \u2013 in a sample of n = 1145 mice from the Diversity Outbred (DO) experimental line. We use biological process Gene Ontology (GO) annotations to select skeletal and facial development gene sets and solve for the axis of shape variation that maximally covaries with gene set marker variation. We use our process-centered, multivariate genotype-phenotype (process MGP) approach to determine the overall contributions to craniofacial variation of genes involved in relevant processes and how variation in different processes corresponds to multivariate axes of shape variation. Further, we compare the directions of effect in phenotype space of mutations to the primary axis of shape variation associated with broader pathways within which they are thought to function. Finally, we leverage the relationship between mutational and pathway-level effects to predict phenotypic effects beyond craniofacial shape in specific mutants. We also introduce an online application that provides users the means to customize their own process-centered craniofacial shape analyses in the DO. The process-centered approach is generally applicable to any continuously varying phenotype and thus has wide-reaching implications for complex trait genetics.\n\n## Introduction\n\nVariation in human craniofacial shape is moderately to highly heritable (~30\u201370%; Cole et al., 2017; Tsagkrasoulis et al., 2017), and resemblances among close relatives as well as twins underscore the strong relationship between shared genetics and shared phenotype (Johannsdottir et al., 2005; Nakata, 2014). Despite many studies in humans and in mice (Claes et al., 2018; Cole et al., 2016; Shaffer et al., 2016), however, we know very little about the genetic basis for variation in craniofacial shape. This is likely due to genetic complexity (Katz et al., 2019; Richtsmeier and Flaherty, 2013; Visscher, 2008; Wood et al., 2014; Wray et al., 2013). Like many aspects of morphological variation, craniofacial shape is extraordinarily polygenic. Genes with major mechanistic roles in facial development such as Fgf8 often contribute little to observed phenotypic variation (Green et al., 2017) while genetic influences without obvious connections to craniofacial development emerge as significant contributors (Kenney-Hunt et al., 2008; Klingenberg and Leamy, 2001; Maga et al., 2015; Pallares et al., 2015; Pallares et al., 2014). The effects of genetic variants on phenotype often depend on genetic background (Mackay and Moore, 2014; Percival et al., 2017), and many mutations have variably penetrant effects even when background is controlled (Kawauchi et al., 2009; Rendel, 1967). These issues likely arise because genetic influences act through multiple layers of interacting developmental processes to influence phenotypic traits, resulting in complex patterns of epistasis and variance heterogeneity (Hallgrimsson et al., 2019; Hallgrimsson et al., 2014; Kawauchi et al., 2009; Wagner and Zhang, 2011; Gasch et al., 2016). Solutions that go beyond studies of single gene effects are required to overcome these significant challenges in complex trait genetics. Here, we implement an enhanced form of the more general candidate gene approach to evaluate the conjoint effects of multiple genes on a complex trait \u2013 craniofacial shape.\n\nThere are two basic approaches to mapping genetic effects on to phenotypic variation. A candidate gene approach measures genotypic values with known physiological and biochemical relationships to the phenotypes of interest (Cheverud and Routman, 1996). In contrast, a random marker or genome-wide approach seeks to associate any potential genetic variant with variation in the trait of interest. There are advantages and disadvantages to these two approaches. The candidate gene approach is blind to the unknown \u2013 phenotypic variation is often associated with genes not expected to be important. On the other hand, a candidate gene approach allows direct measurement of genotypic values and produces results that are interpretable in terms of trait physiology or development. A genome-wide or random marker approach can produce unexpected insight by revealing novel gene-phenotype associations. However, this comes at a great cost in power (Visscher et al., 2017). For highly polygenic traits, this approach often produces a \u2018tip of the iceberg\u2019 effect in which studies reveal a small and often incoherent subset of the genes that actually determine variation in the trait of interest (Broman, 2009).\n\nSeveral strategies have been developed that partially overcome these tradeoffs. One solution is the use of polygenic risk scores. Polygenic risk scores assess the overall genetic influence on a trait without regard to the genome-wide significance of individual SNP effects (Dudbridge, 2013; Wray et al., 2007). Approaches such as meta-analyses of genome-wide association studies (GWAS) or studies based on extreme phenotypes Morozova et al., 2015 have expanded gene lists for a variety of complex traits. However, lengthy lists of genes or overall genomic risk for specific phenotypes do not necessarily constitute tractable genetic explanations for phenotypic variation. When thousands of genes are required to explain heritable variation in stature, for instance, it is not clear what such lists tell you beyond the obvious fact that stature is heritable and polygenic (Yang et al., 2010; Wood et al., 2014). This tension between hypothesis-driven and hypothesis-free approaches and their attendant tradeoffs between statistical power and interpretability is, arguably, a major issue within complex trait genetics. To resolve this conceptual conflict, approaches are needed that integrate quantitative genetics with biological insights regarding the cellular and developmental processes through which genes influence phenotypic variation.\n\nExisting approaches to complex trait genetics also tend to treat phenotypic traits as singular and one-dimensional. Even for morphological variation, most studies reduce shape variation to linear distances, principal components (PCs), regression scores or measures of size that are then mapped as individual traits (Xiong et al., 2019; Shaffer et al., 2016; Cole et al., 2016). This approach disregards the information content of multivariate phenotypic variation. While univariate traits only vary along one dimension, high-dimensional traits such as craniofacial shape can vary in direction as well as magnitude within a multidimensional shape space. To identify the distinctive axes of gene effects on a multivariate trait, one must model such multiple multivariate relationships directly.\n\nBuilding on Mitteroecker et al.\u2019s (2016) multivariate genotype-phenotype (MGP) method, we extend the candidate gene framework to evaluate the combined contributions of genes to variation in high-dimensional phenotypic traits such as craniofacial shape. Grouping genes by ontological information such as membership in developmental pathways or other relevant biological hypotheses, our process-centered multivariate approach, herein referred to as process MGP, brings traditional GWAS together with a simplified model of the hierarchical genotype-phenotype (GP) map. Gene Ontology (GO) terms are broadly grouped into three categories:cellular components, molecular functions, and biological processes. Our work focuses on biological process gene annotations because they group known relationships between several genes that contribute to a developmental function. The process MGP approach aims to leverage this knowledge by modeling the joint effects of these genes on craniofacial shape variation.\n\nUnderstanding the genetic determinants of craniofacial variation, as with most complex traits, represents a many-to-many GP map problem (Lewontin, 1974; Houle et al., 2010). Both phenotypic and genotypic measurements have complex within-set covariance structures. On the genetic side, the covariance structure is represented by pathway/biochemical interactions, as well as chromosomal structure like linkage, chromatin, and 3D chromosomal organization. For shape-related phenotypes, the covariance matrix is structured by the chosen set of landmarks and their resulting coordinates. The functional relationship from genotype to phenotype is then described by a between-set covariance (Klingenberg and Leamy, 2001; Mitteroecker et al., 2016). To dissect these relationships, we use a regularized partial least squares (PLS) (Lorenzo et al., 2019) approach to estimate a low-dimensional mapping from the alleles in our sample to variation in adult mouse craniofacial shape. While PLS is well suited for analysis of covariation between two sets of measurements, regularization is essential for mitigating overfitting when there are many alleles simultaneously modeled. We focus on how allelic variation in processes relevant to craniofacial development maps to craniofacial shape variation. We ask the following four questions:\n\nTogether, these questions demonstrate the ability of the process MGP approach to add meaningful understanding of the complex relationships between genotype and phenotype by quantifying higher-level regularities between complex phenotypic and genomic data. We also demonstrate its potential as a resource for the study of mutational effects on complex traits such as craniofacial shape.\n\n## Results\n\n### Process MGP mapping\n\nFor process MGP analyses, we used the mouse genome informatics database (Bult et al., 2018Kanehisa et al., 2017) to identify genes annotated to a given process. Each annotation term has an associated GO ID. For example, \u2018chondrocyte differentiation\u2019 has GO ID GO:000206 (Figure 1, box 1). We cross-reference the GO ID with the Ensemble genome database (GRCm38.p6) to find the name, chromosome, and base pair start/end position for each gene (Figure 1, box 2) annotated to the process. For genes with multiple splice variants, we select the longest transcript. For each gene, we compare marker base pair positions and select the closest upstream and downstream markers to the center of each gene. The eight-state genotype probability is then calculated as the average founder allele probabilities between the two selected markers. (Figure 1, box 3). After marker selection, we fit a regularized PLS model using the founder allele probabilities (eight variables/marker) and full landmark data set (Figure 1, box 4). Regularization penalizes the coefficients such that increasing regularization strength causes more coefficients to have a value of zero. We chose a regularization parameter using 10-fold cross-validation. For each of the example process MGP analyses shown, we chose the regularization strength that best represented the tradeoff between minimizing model error and maximizing interpretability of marker effects and the similarity of phenotypic effects with mouse mutant models. The full cross-validation results are shown in Figure 2, Figure 4, and Figure 5\u2014figure supplement 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig1-v2.jpg)\n\n**Figure 1.:** Once a process is selected, we cross-reference the known gene locations using Ensembl with the locations of the genotyped markers in the Diversity Outbred (DO) sample. The founder probabilities of the nearest upstream and downstream markers are averaged for each gene. The compiled founder probabilities and landmark coordinates are then used in a regularized partial least squares (PLS) model to estimate the axis of greatest covariance between the marker data and craniofacial variation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig2-v2.jpg)\n\n**Figure 2.:** (A) PLS1 genetic loadings are shown for each gene in the model sorted from largest to smallest effects. Individual founder allele effect sizes are colored within each bar. The gene in red text corresponds to the mutant used for comparison of phenotypic effects. (B) The estimated chondrocyte differentiation MGP phenotype is shown with a heatmap. Warm colors represent areas of relative expansion, light green represents areas of little shape effect, and cool colors represent areas with relative contraction. (C) Chondrocyte differentiation MGP effects shown in black vectors multiplied 4\u00d7 are compared to a Bmpr1b (Alk6) homozygous mutant and are shown with red vectors. The vector correlation between chondrocyte differentiation MGP and Bmpr1b is shown below the phenotypic effects.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The black-labeled Y axis on the left shows the vector correlation between the process MGP model and a Bmpr1b mutant. The red-labeled Y axis on the right shows the root mean squared error (RMSE) of the out-of-fold phenotypic prediction. The X axis shows the range of regularization strengths for the partial least squares (PLS) model. The regularization parameter was chosen to balance the minimization of RMSE and the maximization of the vector correlation to Bmpr1b. The chosen parameter is shown as a black tick along the X axis.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The permuted R2 distribution of 10,000 chondrocyte differentiation multivariate genotype-phenotype (MGP) analyses is shown in blue. The estimated R2 of the chondrocyte differentiation MGP is shown as a black vertical line.\n\nWe demonstrate process MGP mapping with three examples. The first estimates the primary axis of skull shape covariation with genes annotated to \u2018chondrocyte differentiation\u2019 (Figure 2). Differentiation of chondrocytes is one of several key developmental processes involved in endochondral ossification. Endochondral bones form the majority of the cranial base through a cartilage model of bone formation (Percival and Richtsmeier, 2013). There are 38 genes annotated to chondrocyte differentiation in the Ensembl database (Yates et al., 2020). In the figure, genetic effects are shown as zero-centered bars that span the range of estimated allele effects across the eight DO founders; individual founder allele effects \u2013 eight per marker \u2013 are color-coded within those bars (Figure 2A). We chose a regularization parameter of 0.075 for this analysis (Figure 2\u2014figure supplement 1). Among chondrocyte differentiation genes, Nov/Ccn3, Bmpr1b (Alk6), and Nfib are most implicated in the major axis of pathway covariation with craniofacial shape. The phenotypic effects at each landmark primarily relate to anteroposterior positioning of the zygomatic arches and dorsoventral jugal position (Figure 2B). The chondrocyte differentiation GP map explains 2.15% of the total variance in craniofacial shape. Compared to 10,000 random permutations of the model, chondrocyte differentiation explains substantially more craniofacial variation (Figure 2\u2014figure supplement 2).\n\nFigure 2C compares the direction of the chondrocyte differentiation MGP axis \u2013 magnified 4\u00d7 \u2013 to the axis of shape variation of a relevant mutant phenotype. We chose homozygous Bmpr1b mutants for this comparison for three reasons. The first is because Bmpr1b in synergy with other bone morphogenic protein pathway receptors regulates chondrocyte proliferation and differentiation in embryonic cartilage condensations (Yoon et al., 2005, ). The second reason we chose Bmpr1b mutant comparisons is because the marker selected for Bmp1rb in the genomic analysis contains one of the strongest allelic effects associated with the morphological effect. Bmpr1b shows stronger loading/association than Bmpr1a (Figure 2A). While Bmpr1a has well-established roles in craniofacial development (Liu et al., 2005; Liu et al., 2018), the role for Bmpr1b on its own is less clear. Bmpr1b mutants show shorter long bones at birth and overexpression of a dominant negative Bmpr1b using a type 1 collagen promoter showed delayed ossification of the frontal, parietal, and occipital bones (Yoon et al., 2005; Zhao et al., 2002). The overall phenotypic directions of Bmpr1b mutant variation and chondrocyte differentiation variation are moderately correlated at r = 0.371 (t = \u20135.06, df = 160, p<0.0001), but the direction at landmarks with large effects in mutant and MGP is clearly coincident. Over the landmarks we measured, the chondrocyte differentiation effect is less global than the Bmpr1b effect, likely due to the difference in severity of the mutant phenotype.\n\nThe similarity of the chondrocyte differentiation effect with the Bmpr1b mutant and the high loading Bmpr1b allele in the DO genome suggest that Bmpr1b mutants may produce chondrocyte differentiation defects in the developing neurocranium. In response to the process MGP results, quantified cell size and distribution in the intersphenoid synchondroses (ISS) of several mutant and control Bmpr1b mice (Figure 3\u2014figure supplement 1). We found that homozygotes show overall larger cell sizes as well as a differing distribution of cell sizes throughout the width of the ISS (Figure 3A\u2013C; \u03c72 = 21.23, df = 3, p<0.0001). The presence of larger cell sizes in the homozygote Bmpr1b mutants suggests that the synchondroses possess more hypertrophic chondrocytes. Additionally, Bmpr1b homozygous mutant mice show premature fusion of the coronal suture (Figure 3D). Both features have not been reported in the literature.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig3-v2.jpg)\n\n**Figure 3.:** (A, B) Quantification of cell size in the sections of the intersphenoid synchondrosis shows an increase in relative cell size as well as a change in the distribution of cell sizes throughout the width of the synchondrosis. (C) Sections of intersphenoid synchondroses highlighting the midline and extremes of the synchondroses. (D) Premature fusion of the coronal suture is visible in Bmpr1b homozygous mutants.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Landmarks are placed in the top, bottom, left, and right sides of the cell to best capture the height and width of the cells (show here as crosses). The height and width measurements are then used to calculate the area of an ellipsoid as an approximation of cell size.\n\nThe second example quantifies cranial shape covariation with the 81 genes annotated to \u2018determination of left/right symmetry.\u2019 We used a regularization parameter of 0.04 (Figure 4\u2014figure supplement 1). There are several high loading alleles that contribute to the determination of left/right symmetry MGP phenotype. In particular, an Fgf10 allele inherited from the Castaneus founder background was among the most important (Figure 4A). FGF10 is a key ligand in early development, directing proliferation as well as differentiation for many craniofacial components, including the palate, teeth, and bones (Hilliard et al., 2005; Prochazkova et al., 2018; Watson and Francavilla, 2018). The phenotype associated with left/right symmetry alleles is predominately related to a larger neurocranium volume relative to the outgrowth of the face (Figure 4B). We also visualized the asymmetry in the phenotypic response, which shows subtle asymmetry, particularly in the position of the anterior zygomatic landmark (Figure 4D). Several Fgf ligands including Fgf10 are integral in the asymmetric distribution of organs (Hecksher-S\u00f8rensen et al., 2004). Fgf8 has also previously been shown to produce asymmetric craniofacial phenotypes in zebrafish, but craniofacial asymmetry has not previously been observed in Fgf10 mutants (Albertson and Yelick, 2005). Left/right symmetry loci explain 3.4% of the total variance in craniofacial shape, which exceeds the variance explained by 10,000 randomly permuted L/R symmetry MGP analyses (Figure 4\u2014figure supplement 2). We compared the estimated L/R symmetry MGP effect with the direction of an Fgf10 homozygous mutant because of the relative importance of the allelic effect (Figure 4C). The vector correlation between the Fgf10 mutant and the estimated left/right symmetry effect is 0.672 (t = 12.29, df = 160, p<0.0001). The importance of other Fgf ligands in craniofacial symmetry, as well as the high-loading Fgf10 allele for left/right symmetry MGP along with the similar genomic and mutant phenotypes, suggests that Fgf10 mutants could show directional asymmetry in the cranium. To test this hypothesis, we measured a sample of 8 Fgf10 adult mutant crania for object symmetry and detected significant directional asymmetry (Figure 4D; F = 4.91, df = 52, p<0.0001).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig4-v2.jpg)\n\n**Figure 4.:** (A) PLS1 genetic loadings are shown for each gene in the model sorted from largest to smallest effects. Individual founder allele effect sizes are colored within each bar. The gene in red text corresponds to the mutant used for comparison of phenotypic effects. (B) The estimated left/right symmetry MGP phenotype is shown with a heatmap. Warm colors represent areas of relative expansion, light green represents areas of little shape effect, and cool colors represent areas with relative contraction. (C) Estimated left/right symmetry MGP phenotype is shown with black vectors multiplied 4\u00d7. An Fgf10 homozygous mutant is shown with red vectors for comparison. The vector correlation between left/right symmetry MGP and the Fgf10 mutant is shown below the phenotypic effects. (D) Visualizations of asymmetry in the L/R MGP response and the Fgf10 homozygous mutant. Asymmetry vectors are magnified 4\u00d7.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The black-labeled Y axis on the left shows the vector correlation between the process MGP model and a Fgf10 homozygous mutant. The red-labeled Y axis on the right shows the root mean squared error (RMSE) of the out-of-fold phenotypic prediction. The X axis shows the range of regularization strengths for the partial least squares (PLS) model. The regularization parameter was chosen to balance the minimization of RMSE and the maximization of the vector correlation to the Fgf10 homozygous mutant. The chosen parameter is shown as a black tick along the X axis.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The estimated R2 of L/R symmetry MGP is shown as a black vertical line.\n\nThe final example estimates the shape covariation attributed to the 73 genes annotated to \u2018palate development.\u2019 Formation and fusion of the palatal shelves are crucial for proper orofacial development and heavily influence overall facial shape (Greene and Pisano, 2010). We used a regularization penalty of 0.05 because it best balances the vector correlation to the mutant comparison and the reduction of prediction error (Figure 5\u2014figure supplement 1). Several genes contribute strongly to the palate development MGP effect including Ephb2, Gli3, and Lrp6 (Figure 5A). The estimated phenotype shows corresponding variation in palate length as well as strong effects in the majority of the cranial base landmarks (Figure 5B). Palate development MGP loci explain 2.4% of the total variance in cranial shape, which is greater than the variance explained by 10,000 randomly permuted palate development MGP models (Figure 5\u2014figure supplement 2). We compared the palate development phenotype to a heterozygous Ankrd11, neural crest-specific knockout mouse. The Ankrd11 locus is associated with KBG syndrome in humans, which presents with generally delayed bone mineralization as well as craniofacial characteristics including palate abnormalities (Low et al., 2016). While the vector correlation between the palate development MGP effect and the Ankrd11 mutant over the complete set of cranial landmarks is moderate at r = 0.339 (Figure 5C; t = 4.31, df = 160, p=0.0001), the vector correlation for palate landmarks is substantially higher at r = 0.536.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig5-v2.jpg)\n\n**Figure 5.:** (A) PLS1 genetic loadings are shown for each gene in the model sorted from largest to smallest effects. Individual founder allele effect sizes are colored within each bar. The gene in red text corresponds to the mutant used for comparison of phenotypic effects. (B) The estimated palate development MGP phenotype is shown with a heatmap. Warm colors represent areas of relative expansion, light green represents areas of little shape effect, and cool colors represent areas with relative contraction. (C) Estimated palate development MGP phenotype is shown with black vectors multiplied 4\u00d7. An Ankrd11 mutant mean is shown with red vectors for comparison. The vector correlation between palate development MGP and the Ankrd11 mutant is shown below the phenotypic effects.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The black-labeled Y axis on the left shows the vector correlation between the process MGP model and a Ankrd11 homozygous mutant. The red-labeled Y axis on the right shows the root mean squared error (RMSE) of the out-of-fold phenotypic prediction. The X axis shows the range of regularization strengths for the PLS model. The regularization parameter was chosen to balance the minimization of RMSE and the maximization of the vector correlation to the Ankrd11 heterozygous mutant. The chosen parameter is shown as a black tick along the X axis.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The estimated R2 of palate development MGP is shown as a black vertical line.\n\nIn each case above, we have shown how association of gene sets and phenotypic variation can produce highly informative results that can guide subsequent hypothesis testing. For a given biological process, we identified several genes that load strongly on the primary axis of MGP covariation for which mutant samples were available to us, as well. Future investigations could also use this information about genes with high loadings to generate new mutants for analysis of associated developmental processes. For each example, we focus only on the first PLS axis, so distinct joint gene effect combinations may contribute to novel phenotypic directions in lower PLS axes.\n\n### Joint versus single-loci effects\n\nWhile the process MGP approach focuses on the joint effect of markers on craniofacial shape, it is important to measure the extent that joint effects matter for craniofacial shape. Unlike alternative models such as canonical correlation analysis (CCA), the PLS model used for process MGP does not allow for statistical tests of individual marker effects. However, it is possible to measure the similarity of phenotypic effects after successively removing the most heavily loading markers from the full model. Figure 6 shows the change in variance explained (A) as well as the change in the direction of phenotypic response (B) as markers are increasingly removed from the model. For each example analysis, we remove markers in order from most heavily loaded to least heavily loaded. We found that process MGP analyses with few loci of very large effect, like Ccn3/Nov for chondrocyte differentiation MGP, are very sensitive to the removal of the most highly loaded genes. The vector correlation between the full chondrocyte differentiation MGP model and the model with the Ccn3/Nov marker removed is 0.346.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig6-v2.jpg)\n\n**Figure 6.:** For each of the example analyses, we show the effect of removing the most heavily loaded markers from the process multivariate genotype-phenotype (MGP) analysis on the (A) variance explained by the model and (B) vector correlation with the full model. The variance explained as well as vector correlation is relatively stable for both L/R symmetry and palate development MGP models, suggesting that the effect is driven by the coordination of many markers. In contrast, chondrocyte differentiation MGP shows large differences, particularly in the direction of the phenotypic effect as the most heavily loaded markers are removed from the analysis.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** For a sample of 500 processes, we show the proportion of processes with a single marker with 0.5\u00d7, 2\u00d7, and 3\u00d7 higher effect size than any other marker. 51.6% of processes show a marker effect 0.5\u00d7 larger than any other individual effect. 36.6% of processes show a marker effect 2\u00d7 larger than any other individual effect. 20% of processes show a marker effect 3\u00d7 larger than any other individual effect.\n\nFor process MGP analyses with a more uniform distribution of marker effects, we found that the phenotypic effect is much more reliant on a multitude of marker alleles. For instance, L/R symmetry MGP with the 10 most heavily loaded markers removed still produced a vector correlation of 0.95 with the full model. The majority of process MGP analyses demonstrate a similar importance to several alleles, highlighting the main strength of process-level analyses over individual marker tests (Figure 6\u2014figure supplement 1). In the following sections, we will examine how process MGP phenotypes relate to each other, as well as the phenotypic directions of several mutant mouse models.\n\n### Pairwise comparison of craniofacial development processes\n\nWe chose 15 processes integral to craniofacial development and compared the pairwise similarity of effect on craniofacial shape using a heatmap based on clustering of the correlation matrix (R Development Core Team, 2017 ). Processes with similar effects on craniofacial shape will be highly correlated, while processes that affect distinct aspects of craniofacial variation will be uncorrelated to each other. The clustering algorithm resulted in two main blocks of strongly correlated effects (Figure 7A). The largest block of highly correlated phenotypic effects includes neural crest cell migration, epithelial to mesenchymal transition, forebrain development, as well as some of the most general developmental processes like cell proliferation, bone development, apoptosis, A/P pattern specification, and FGFR signaling. In addition, there is a general BMP block, with Bmp signaling, dorsoventral pattern formation, endochondral ossification, and positive regulation of skeletal muscle tissue growth. Interestingly, phenotypic variation associated with cranial suture morphogenesis, neural tube patterning, and intramembranous ossification is largely uncorrelated with the other craniofacial developmental processes included here.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig7-v2.jpg)\n\n**Figure 7.:** (A) Pairwise correlations of phenotypic effects for 15 process MGP analyses. Scale on the right denotes color correspondences to vector correlation, where yellows are high correlations, greens are moderate, and blues are low. (B) Pairwise process MGP vector correlations as a function of the number of shared genes between the processes. Processes that share less than 10 genes can produce very similar and very disparate phenotypic effects. Processes with substantial numbers of shared genes will tend to show highly correlated responses as they increasingly use similar marker sets.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The pairwise vector comparisons have been subset to only include the processes shown in Figure 7A, with four pairs highlighted. Processes that share less than 10 genes can produce very similar and very disparate phenotypic effects. Processes with substantial numbers of shared genes will tend to show highly correlated responses as they increasingly use similar marker sets.\n\nTo assess the stability of the clustering result, we estimated the vector correlation between the cluster distances \u2013 also known as the cophenetic distance \u2013 and the original correlation matrix (Sneath and Sokal, 1973). A high vector correlation suggests reliable clustering, whereas a low correlation suggests a random clustering result. The correlation between the cophenetic distance matrix and the correlation matrix is 0.648 (t = 8.64, df = 103, p=7.6 \u00d7 10\u201314), suggesting a moderate, though significant, structure in the similarity of effects amongst this set of MGP processes.\n\nThe similarity in process MGP effects suggests that processes may coordinate in a limited set of potential directions of phenotypic variation. One reason that we could observe this pattern that is not because of common axes of GP variation is that key genes show up repeatedly within processes and largely drive these patterns of phenotypic variation. Figure 7B shows over 45,000 pairwise process MGP vector correlations as a function of the number of shared genes between the two randomly chosen annotations. While the similarity of phenotypic effects generally increases as the number of shared genes increases, GO processes that share genes are not necessarily strongly correlated. For GO processes that share between 0 and 10 genes, the observed correlations in phenotypic response spanned from no correlation to almost entirely concordant. GO processes that share more than 10 genes show generally higher vector correlations, with the lowest vector correlation we observed at 0.35.\n\n### Process effects in the mutant morphospace\n\nTo assess the extent to which craniofacial shape variation associated with developmental processes aligns with variation from mutants of major effect, we projected seven process effects onto the first two PCs of a dataset containing the DO sample, and samples from 30 mutant genotypes (Figure 8A). Each black label represents the mean shape score of the listed mutant genotype. The shaded ellipse with an orange border displays the 95% data ellipse of PCs 1 and 2 of DO cranial shape variation. The DO mean shape is contrasted by the mutant variation along PC1. The first PC describes vault size relative to the length of the face. The phenotype shown along the X axis of Figure 8A depicts the maximum positive PC1 shape, while the heatmap drawn on the crania represents the local deformations towards the minimum PC1 shape. The positive direction of PC2 describes coordinated variation that includes a relatively wider vault, narrower zygomatic, and shorter premaxilla (Figure 8A, Y axis margin).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig8-v2.jpg)\n\n**Figure 8.:** (A) Seven MGP phenotypes projected onto a principal component analysis (PCA) of the Diversity Outbred (DO) and a sample of 30 mutant mouse genotypes. Mutant means are labeled in black. The directions of MGP effects are shown with orange vectors from the DO mean to the associated process MGP. The range of DO variation on principal components (PCs) 1 and 2 is shown with the shaded ellipse with an orange border. (B) A heatmap of vector correlations between 30 mutant effects and 30 process MGP effects. The scale on the right denotes color correspondences to vector correlation, where yellows are high correlations, greens are moderate, and blues are low.\n\nProcess effects \u2013 highlighted with orange vectors originating at the DO mean shape \u2013 are necessarily of smaller magnitude than the total variation in the DO sample. Therefore, to better compare the direction of process effects the vector magnitudes were magnified 4\u00d7. Several process effects align in distinct directions of mutant effects, such as bmp signaling pathway and endochondral ossification in the direction of Shh, Nipbl, and Ift88 mutants. Neurotransmitter transport and Wnt signaling pathway is similar in direction to Kcna1Mceph and B9d1 mutant effects. Execution phase of apoptosis and intracellular transport both show similar effects to a cluster of Bmp mutants. Figure 8A focuses on two PCs, which allows for the contextualization of how process MGP analyses and mutants vary in similar directions and allows us to visualize what those phenotypes look like. This combination of context and visualization is only possible in limited axes and cannot account for differences or similarities in the full multivariate shape space.\n\nTo show the similarity of process MGP directions with mutants in the full shape space, we present a heatmap of 30 process MGP effects to 30 mouse mutant models in Figure 8B. The heatmap shows the correlation in direction with yellow/green denoting higher correlation and teal/blue denoting lower correlation. The bottom right of the heatmap (highlighted by a white border) shows a block of mutants for which there are strong process correlations. These are among the most extreme phenotypes along PC1 (Figure 8A) and include mutants for Nosip, Bmp2, Grm1, Bmp2; Bmp7 transheterozygote, Bmp7, Ghrhr, Fgf10, and Papps2. The processes most strongly correlated to these mutants are histone methylation, dendrite morphogenesis, chromosome segmentation, vasodilation, and fibroblast growth factor binding.\n\nThere are a set of mutant phenotypes that have generally low correlations to the set of processes chosen. These mutants include Fgf3, Shh, Nipbl, Disp, Pten, Hhat, and Alk2; Alk3 transheterozygote. Interestingly, this group of mutants varies more along PC2 than PC1 (Figure 8A). Notably, regulation of intracellular protein transport and regulation of cell death are strongly uncorrelated with the majority of mutant directions.\n\n### Real-time process GP mapping\n\nFinally, we provide an online tool to visualize process effects and make comparisons to mutant effects in real time. This application is found at https://genopheno.ucalgary.ca/MGP/ and can be used for analyses similar to those described in this paper. When the user selects GO terms, the program searches for genotype markers adjacent to each gene listed and uses the selected markers to fit a regularized PLS model. The result is an estimate of the many-to-many relationship between the selected markers and cranial shape variation. The visual outputs include barplots depicting the relative allele effect sizes for each gene in the process and a 3D plot of the corresponding axis of shape variation. Users can compare the effects of different processes and also compare process effects to mutant effects from a provided database of 30 mutant genotypes.\n\nTo illustrate how to use this application, we have provided the graphical user interface used to select the parameters (Figure 9). As an example, in the \u2018Process text\u2019 entry field, supply a starting term; we chose \u2018brain.\u2019 The GO database is then filtered, returning a user-selectable subset of biological process ontology annotation terms in the \u2018Process filter\u2019 field. We chose \u2018forebrain morphogenesis,\u2019 which has 11 associated genes. We chose to magnify the process phenotype vectors 4\u00d7 and compare the effect to a heterozygous Ift88 mutant. Ift88 is a core component of the primary cilia, which are responsible for promoting developmental signals involved in many facets of facial development (Tian et al., 2017). Further, the plots that are generated are interactive. For example, marker loadings can be highlighted and subset by genes of interest (Sievert, 2019). There is further information about using this online tool in the \u2018About this app\u2019 tab.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig9-v2.jpg)\n\n**Figure 9.:** Analyses include a barplot of the relative effect sizes of each selected marker and the associated phenotype shown with black vectors at each landmark. If a mutant comparison is selected, the vector correlation is provided and the mutant phenotype is shown with red vectors. Selecting \u2018send me the results\u2019 generates an HTML report with an interactive 3D model.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** In order to filter the Gene Ontology (GO) database with multiple terms, the pipe operator can be used as shown. Here, the user has selected processes associated with either the apoptosis or Wnt pathway process. The barplot shows the relative effect sizes for markers associated to both \u2018Wnt signaling pathway\u2019 and \u2018execution phase of apoptosis\u2019 GO terms.\n\n## Discussion\n\nA key goal in genomics is to create tractable genetic explanations for phenotypic variation. In this study, we used the process MGP approach to model the joint effects of genomic markers on multivariate craniofacial shape. This approach allows us to address the joint contributions of multiple genes that share ontological characteristic such as pathway membership on craniofacial shape as a multivariate trait. Specifically, we chose markers adjacent to genes annotated under a developmental process of interest. We showed three process MGP analyses in depth, each with distinct phenotypic effects. Each of these comparisons highlighted the integrated structure of phenotypic variation in mouse craniofacial shape. We found that while there are processes with distinct and localized effects, genetic effects generally converge on a limited set of directions in phenotype space. Further, these process effects often correspond with the directions of major mutations known to affect these same processes.\n\nMany recent studies have addressed the genetics of craniofacial shape in humans and mice (reviewed in Roosenboom et al., 2016; Weinberg et al., 2018; White et al., 2021). While these studies are yielding a growing list of genes, suggesting that facial shape is highly polygenic, they have left the vast majority of heritable variation unexplained. Existing studies have either used univariate measures of facial shape such as linear measurements or univariate summaries of multivariate shape (e.g., Procrustes distances or PC scores). In addition, most genomic studies of craniofacial shape quantify the effects of each genomic marker independently, with notable exceptions focusing on epistatic effects (e.g., Var\u00f3n-Gonz\u00e1lez et al., 2019). Our approach shares common features with some predecessor GP mapping strategies in which candidate genes/SNPs are selected a priori because of common involvement in a pathway (or other mechanistic cluster) (Claes et al., 2014; Liu et al., 2012; Wang et al., 2010; Wang et al., 2007). Wang and colleagues selected SNPs based on proximity to genes of interest and effect size to jointly model the pathway-level effects on Parkinson disease data. Their approach is similar to gene set enrichment analysis, weighing overrepresentation of statistical effects related to case-control group membership. In contrast, our approach focuses on estimating a multivariate set of continuous craniofacial responses. Importantly, our approach jointly identifies GP axes that maximally covary. This differs significantly from approaches that determine phenotypes for analysis a priori or based on a predetermined method of data reduction such as the principal component analysis (PCA). Our implementation also differs from similar methods like CCA that was used to associate single-locus effects with a multivariate phenotype (Claes et al., 2018). In comparison with the process MGP approach, CCA has the advantage of allowing for a parametric hypothesis test, whereas PLS analyses are limited to permutation-based hypothesis testing. A distinguishing feature of the process MGP approach is the ability to penalize the model with regularization. This is ideal for models with many simultaneous genetic effects in order to mitigate the effects of overfitting. Regularization is not unique to PLS as applications of ridge penalties to CCA have been used for genomic analyses (Waaijenborg and Zwinderman, 2009; Le Floch et al., 2012).\n\nA key finding of our application of the MGP method to craniofacial shape is that multivariate phenotypic variation aligns nonrandomly to genetic markers associated with pathways or developmental processes. Process MGP effects that are generally not driven by single loci of large effect are possible, like with the chondrocyte MGP analysis (Figures 2\u20145, Figure 6\u2014figure supplement 1). These covarying effects represent the joint genetic effects of multiple contributors to phenotypic variance. While these patterns of MGP covariation may include genetic variants that do not actually affect the phenotype, many other high-loading alleles will be contributors that we lack statistical power to detect under a typical univariate approach (Pitchers et al., 2019; Var\u00f3n-Gonz\u00e1lez et al., 2019). Here, the overall pattern of GP covariance is the level of genetic explanation for phenotypic variation. When such patterns involve genes that are ontologically linked in meaningful ways, they can provide novel insights into the coordination of genetic effects on phenotypic variation and bolster existing hypotheses from developmental studies.\n\nAnother valuable asset that arises from the process MGP approach is the ability to generate testable hypotheses or predictions from MGP observations. The chondrocyte differentiation MGP analysis suggested differentiation defects in the Bmpr1b mutant that could contribute to craniofacial variation. We followed up the MGP analysis with histological analysis of Bmpr1b mutants and showed premature suture fusion as well as atypical distribution of hypertrophic chondrocytes in the ISS. Similarly, the analysis of left/right symmetry genes suggested that Fgf10 alleles can contribute to directional asymmetry. A follow-up morphometric analysis of symmetry showed that Fgf10 mutants do display significant craniofacial asymmetry (Figure 4D). Process MGP can also be used to test existing hypotheses about GP relationships. The relative importance of the Ankrd11 locus in the palate development analysis and the similarity between the genomic and mutant phenotype further validate the role of Ankrd11 in palate development. These examples illustrate the additional insights that a process MGP analysis of a mutational effect can provide. Given that such comparisons can be run quickly with our web application, this creates a tool with the potential for hypothesis generation and initial screening for hypotheses about process-level effects on craniofacial variation in mice.\n\nThe explicit modeling of multivariate relationships between phenotypes and genotypes also allows a focus on pleiotropy. Developmental studies in mice demonstrate widespread craniofacial morphological effects from localized developmental perturbations (Mart\u00ednez-Abad\u00edas et al., 2012; Stelzer et al., 2007; Young et al., 2010) Perturbations to specific processes in development generally produce effects on multiple aspects of phenotype due to knock-on effects at later stages or to interactions at the level of tissues or anatomical structures (Hallgr\u00edmsson et al., 2007; Hallgr\u00edmsson et al., 2009). A change in cartilage growth in basicranial synchondroses produces a global change in craniofacial form, for example (Parsons et al., 2015). Remarkably, enhancers with highly specific temporospatial effects on gene expression also produce global rather than localized changes in craniofacial shape (Attanasio et al., 2013). Given that pleiotropy is likely ubiquitous (Churchill et al., 2012; Wagner et al., 2007), explicitly multivariate approaches to understanding GP maps are clearly needed.\n\nThis convergence of genetic effects on axes of covariation is reflected in our finding that mutations to major developmental genes produce effects that tend to align with the directions of effect associated with the corresponding broader pathways or ontological groups (Hallgr\u00edmsson et al., 2009). These results suggest that perturbations that are developmentally similar tend to move the phenotype in the same direction in multivariate space (Figure 8). Even so, both mutational and higher-level pathway/process effects tend to converge on a few directions of variation, suggesting that multiple pathways and processes lead to common developmental outcomes (Houle and Fierst, 2013; Uller et al., 2018; Hallgr\u00edmsson and Lieberman, 2008; Gonzalez et al., 2013). This conclusion is further supported by our finding that the genetic axes of covariance for individual processes/pathways can align with multiple directions of mutational effect. For example, the process MGP phenotypes clustered in the bottom right of Figure 8B are all highly correlated with a set of BMP and growth hormone-related mutants.\n\nIn some cases, mutants and MGP map directions do not correspond. There are several ways this can occur. The first is that the DO population may simply lack alleles as deleterious as found in mutant lines. A small effect allele in the DO may not align with the direction of a mutant almost completely lacking expression of the target gene. Further, there are many examples where a mutation may have different and sometimes even opposite effects depending on genetic background (Mackay, 2013; Percival et al., 2017). Mutations of major effect may also differ in direction from variants in related genes that have smaller phenotypic effects due to underlying nonlinearities in development (Green et al., 2017). Investigating how variants in genes that are functionally related vary in phenotypic effect is an important avenue of inquiry that is revealed by analyses such as those we have performed here. Additionally, relationships between process and mutant effects may stimulate hypotheses about previously unknown or unvalidated interactions between loci or pathways.\n\nA second potential reason that MGP effects may not correspond to major mutation effects is the use of only one PLS axis for each process analysis. With only one axis, we only show the phenotypic direction with greatest covariance with genetic marker variation. If there are multiple large marker effects that do not covary, the weaker marker effect will be masked in the analysis. For instance, there may be a PLS axis for \u2018chondrocyte differentiation\u2019 that corresponds more strongly with the Bmp2 mutant phenotype. This phenomenon may be particularly prominent for pathways with substantially different mutant effects, like FGF (Figure 8A). While we did not delve into the directions outside of the first PLS axis, we have facilitated the selection of lower axes in the web application for users to explore and compare with mutants of interest.\n\nFinally, our analysis shares the limitation of all approaches based on gene annotation data. Incomplete annotation may lead to faulty or incomplete groupings of genes when defining pathway/process hypotheses. Gene annotation is a huge undertaking, and there is substantial variation in the completeness of different process annotations. Many process annotations are manually assigned using inference from the literature, while most are a combination of automated efforts based on transcript similarity and human curation (Mudge and Harrow, 2015; Finger et al., 2017). Related to this, we assign gene annotation data to genetic markers based on the closest protein-coding region. While this is a reasonable proxy, there will be regulatory sites that affect genes other than the one immediately adjacent and this is a potential source of uncertainty in our analysis (Forrest et al., 2014; Yue et al., 2014).\n\nIn addition, this approach does not currently model the temporal and spatial aspects of gene function throughout development. As a result, alleles of high importance in an MGP analysis do not necessarily produce craniofacial variation through the selected process. A strong allelic effect like Ccn3 can load heavily in several processes, like \u2018chondrocyte differentiation,\u2019 \u2018fibroblast migration,\u2019 and \u2018negative regulation of inflammatory response.\u2019 We do not know the mechanism through which any individual allele contributes to variation from an MGP analysis alone. Genomic data with more fine grain measurements of variation in expression and utility of individual loci may be better suited to teasing out the potential mechanisms that alleles produce variation.\n\nThe MGP method represents a deliberate decision to trade higher-level insight from GP association data at the expense of statistical certainty about the significance of individual gene effects. The current implementation of the method also does not allow for quantification of individual epistatic effects. Epistasis occurs when the genotypic trait value for a locus is altered by the genotype of a different locus. Such effects generate nonlinear GP maps, but when considered genome-wide, contribute mainly to additive variance (Cheverud and Routman, 1996; Hill, 2017). The MGP method is additive in that it models only the linear effects of genes. However, since it captures the covariances among genotypic effects, much of this \u2018additive\u2019 variation is likely epistatic in origin.\n\nComplex traits present a massive challenge in genomics because so many are turning out to be enormously polygenic. To generate tractable explanations of the genetic basis for such traits, methods are needed that extract higher-level representation of GP relationships than those that emerge from single-locus-focused approaches. Here, we present a process-driven framework for deriving such higher-level genetic explanations for phenotypic variation. Our approach leverages the biological tendency for developmental processes to produce covariation among aspects of a multivariate phenotypic trait (Kawauchi et al., 2009; Wagner et al., 2007). The underlying assumption in this approach is that there are latent variables within high-dimensional GP data that correspond to developmental architecture. We believe that analyses aimed at defining and characterizing such latent variables represent a level of genetic explanation for phenotypic variation that is complementary to genetic analyses designed to establish the significance of single-locus effects. Pursuing such questions will help bridge the gap between emerging mechanistic accounts of morphogenesis and our growing understanding of the genetics of morphological variation.\n\n## Materials and methods\n\n### Mice\n\nWe use a sample (n = 1145) of DO mice (Jackson Laboratory, Bar Harbor, ME) to map GP relationships for craniofacial shape (Churchill et al., 2012; 2004). The DO is a multiparental outcross population derived from the eight founding lines of the Collaborative Cross (CC). Each animal\u2019s genome is a unique mosaic of the genetic diversity found in the CC \u2013 more than 45 million segregating SNPs (Collaborative Cross Consortium, 2012). Random outcrossing over many DO generations maintains this diversity and, with recombination, increases mapping resolution . Discussions of recommended sample sizes in univariate DO studies can be found in Churchill et al., 2012. Both studies recommend a sample size greater than 800 mice for small univariate effect sizes (1\u20135% variance explained). Further, there are inherent power advantages to our approach because multivariate responses represent maximized differences in phenotype given a set of genotypic measurements. In contrast, univariate approaches such as analyses of individual PCs can only detect effects along those predefined axes that may not have clear biological significance.\n\nOur DO sample was sourced from three separate laboratories and seven DO generations. 386 are from the Jackson Laboratory (JAX), 287 from the University of North Carolina (UNC), and 472 come from the Scripps Research Institute. Figure 10\u2014figure supplement 1 shows the distribution of the sample by lab source and generation of breeding. Imaging of mice at the University of Calgary was performed under IACUC protocol AC13-0268. Ankrd11 and Bmpr1b mutant mice were bred at the University of Alberta by the Graf lab under Animal Use and Care Committee protocol AUP1149 in accordance with guidelines of the Canadian Council of Animal Care.\n\n### Genotyping\n\nGenotyping was performed by Neogen (Lincoln, NE). Ear clippings were used to extract DNA for all samples. Mice from generations 9, 10, and 15 were genotyped using the MegaMUGA genotyping array (77,808 markers); mice from generations 19, 21, 23, and 27 were genotyped using the larger GigaMUGA array (143,259 markers) (Morgan et al., 2015). To pool the genotype data from these two SNP arrays with differing numbers of markers, we imputed markers between the two genotyping arrays using the \u2018calc_genoprob\u2019 function in the qtl2 package (Broman et al., 2019). The function uses a hidden Markov model to estimate genotype probabilities and missing genotype data (Gatti et al., 2014). After imputation, the merged genetic dataset consists of 123,309 SNPs that vary among CC founders. Each animal\u2019s genetic record is a 123,309 * 8 matrix of estimated diplotype contributions of each CC founder to each marker.\n\n### Scanning and landmarking\n\nWe used micro-computed tomography to acquire 3D scans of the full heads of the mice. Scanning was done at the University of Calgary at 0.035 mm voxel resolution (Scanco vivaCT40). One of us (WL) then acquired 54 3D landmarks (Figure 10) manually on each volume using Analyze 3D. A discussion of the error associated with manual landmarking can be found in Katz et al., 2019. In addition to the DO phenotype data, the mutant mouse data used for comparisons were collected, scanned, and landmarked between the Hallgrimsson and Marcucio labs.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig10-v2.jpg)\n\n**Figure 10.:** (A) Sagittal view of representative scan with landmarks shown as red spheres. (B) Dorsal view of landmark configuration. (C) Ventral view of landmark configuration.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/68623/elife-68623-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (A) The distribution of the sample by generation and data source (lab). (B) Distribution of sex by source (lab).\n\n### Landmark registration and analysis\n\nWe symmetrized landmarks along the midline of the skull using Klingenberg et al.\u2019s method for object symmetry that configures landmark pairs into a common orientation with reflection and subsequently removes variation associated with translation, scale, and rotation, using Generalized Procrustes Analysis (Adams et al., 2013; Klingenberg et al., 2002; Mardia, 2000 et al.; Schlager, 2017). We tested for directional asymmetry using the Procrustes ANOVA approach described in Klingenberg et al., 2002. To focus on shared, within-generation patterns in our multigenerational DO sample without sex effects, we regressed symmetric shape on DO generation and sex and used the residual shapes with the grand mean added as the observations for analysis.\n\n### Genetic relatedness\n\nAdjustment of phenotypes for the influence of genetic relatedness is a common approach in genomic studies to prevent spurious associations. However, it is not necessary in all cases, such as situations with low genetic relatedness and little variation in relatedness. We evaluated whether accounting for genetic relatedness was important for our sample. To do so, we estimated a kinship matrix based on DO genotype correlations (Cheng and Palmer, 2013; Broman et al., 2019). The kinship values in our sample have a mean of 0 and a standard deviation of.047. As a result of these findings, we performed all subsequent analyses on the within-generation symmetric shape data, without an adjustment for relatedness.\n\n### Regularized PLS analysis\n\nMGP methods for explicitly modeling multivariate phenotypes and for overcoming the limitations of simple linear regression are increasingly common in mapping studies. One example of a multivariate genomic approach is found in Claes et al., 2018, where the authors used CCA to quantify individual SNP effects for a multivariate measurement of facial shape. CCA returns a vector of the linear combination of phenotypic effects that maximally correlates to the alleles at a given locus. Mitteroecker et al., 2016 developed a similar multivariate strategy around a singular value decomposition (SVD) of GP covariance matrices (versus decomposition of correlation matrices in CCA). PLS describes a family of approaches that use SVD to decompose cross-covariance matrices (Lee et al., 2011; Mitteroecker et al., 2016; Singh et al., 2016). PLS is increasingly used with large genetic datasets in order to model how genomic effects extend to multiple traits (Bj\u00f8rnstad et al., 2004; Mehmood et al., 2011; Tyler et al., 2017). However, its implementation for MGP mapping is, thus far, much more limited.\n\nSVD decomposes the covariance matrix into three matrices:\n\n$$\nY=UDV^{\u2032}\n$$\n\nwhere Y is the mean-centered covariance matrix, U denotes the left singular vectors, a set of vectors of unit length describing the relative weighting of each variable on each axis, and D denotes the variance along each axis. V denotes the set of right singular vectors. For a full (square, symmetric) covariance matrix, U and V are identical, and the decomposition is equivalent to PCA. For a non-symmetric matrix of covariances, that is, one describing covariance between two distinct blocks of traits, each successive column of U and V provides a pair of singular vectors describing the best least-squares approximation of covariance between the two blocks, in order of greatest covariance explained to least.\n\nPLS is most often used to find low-rank linear combinations that maximize covariance between two sets of features. Here, we use the data-driven regularized PLS model implemented in the mddsPLS package to find paired axes that maximize covariance between allelic and shape variation (Lorenzo et al., 2019). The model uses a lasso penalty to minimize the coefficients (loadings) towards zero to prevent overfitting (James et al., 2013). Overfitting can occur when many genotypic markers are included in the model, particularly when markers are colinear. The genotype block is composed of the full set of DO founder probabilities for each selected marker. Thus, an analysis of 20 markers would estimate 160 genotype coefficients. The phenotype block consists of the full set of 54 3D landmarks (162 phenotype coefficients). In all biological process analyses undertaken herein, we used a regularization parameter of 0.06 and report only the first paired axes of the PLS model, that is, the genotype and phenotype axes that explain the most covariance.\n\nWe generate graphical displays of process results using the R packages ggplot2 (Wickham, 2016) and Morpho (Schlager, 2017). An example script to reproduce the analyses is provided at https://github.com/J0vid/MGP_shiny/tree/main/analyses (copy archived at swh:1:rev:61fb597c48ced306dd588e289e69c3e3d8f9ce15, Aponte, 2021).\n\n### Statistical results and comparisons\n\nWe estimate the magnitude and direction of MGP process effects using R2 and vector correlations, respectively. R2 is calculated as the ratio of trace of the predicted model covariance to the trace of the phenotypic covariance matrix. We contextualize the MGP process R2 by comparing it to the R2 value of 10,000 randomly drawn marker sets of the same size. For instance, a process annotated with 40 genes would be compared to 10000 40-gene MGP analyses with random markers selected in each iteration. Random marker selection for permutation is constrained to follow similar patterns of linkage disequilibrium to the observed marker set of interest. The null expectation in this scenario is that gene annotation does not provide better information about coordinated marker effects than a randomly selected set of markers.\n\nVector correlations between process MGP effects are calculated by taking the Pearson product-moment correlation of the two sets of process PLS1 phenotypic loadings. Vector correlations between process effects and mutant effects are calculated by taking the correlation between the process PLS1 phenotypic loadings and mutant MANOVA coefficients. MANOVA was used to compare the mutant group phenotype against the DO sample specified as the reference group. The coefficients of MANOVA describe the relative weights of each landmark coordinate difference between the DO mean shape and the mutant mean shape.\n\n### Chondrocyte morphometrics\n\nChondrocyte morphometrics were performed using a novel technique developed by the Marcucio Laboratory. Images of the ISS were stained with H&E, SafO, or picrosirius red and were captured and imported into ImageJ (2\u20136 sections from at least four mice/genotype/synchondrosis; Rueden et al., 2017). Landmarks were placed in a defined order (left, right, top, bottom) of visible chondrocytes in the synchondrosis using ImageJ\u2019s multi-tool. Data points were then exported as XY coordinates and imported into Microsoft Excel for calculation of major and minor axes relative to overall width of synchondrosis. Area of individual cells was determined from height and width values based on the assumption that each cell is roughly ellipsoidal. An example of major and minor axis measurements and ellipsoidal area measurements on a slide is provided in Figure 3\u2014figure supplement 1.\n\nWe compared differences in the distribution of cell sizes along normalized synchondroses between Bmpr1b mutants and controls with a mixed effects model approach. We used ellipsoidal area of cell size (in microns) as our dependent variable. For fixed effects, we modeled the normalized synchondrosis position (first and second order), where a value of 0 represents the relative midline of the synchondrosis and values of \u20131 and 1 represent the most distant cells in that synchondrosis. We also modeled genotype as a fixed effect as well as a genotype by cell position interaction (both first- and second--order interactions). For each individual within each genotype, we measured multiple histological sections. These repeated and nested measurements of cell size in multiple sections for each individual were modeled as random effects. To test for cell size differences between genotypes, we used a likelihood ratio test to compare the full model to a reduced model with the fixed effect of genotype and all genotype interactions removed.\n\n### Visualization tools\n\nWe introduce an interactive web application that allows the user to select processes of interest with a graphical user interface; see the resulting craniofacial effect at https://genopheno.ucalgary.ca/MGP/. The web apps were written using the shiny package in R (Chang et al., 2018; R Development Core Team, 2017). The application dynamically filters the MGI GO database based on the initial user input. Queries will only list GO terms with exact matches. For example, \u2018chond\u2019 will return GO terms that incorporate either \u2018chondrocyte\u2019 and \u2018mitochondria\u2019.\n\nMultiple queries can be selected. An analysis of \u2018chondrocyte differentiation\u2019 and \u2018chondrocyte hypertrophy\u2019 will select the joint gene set of both processes. Processes with different names can be jointly queried with the pipe operator \u2018|,\u2019 which is interpreted as an OR (union) operator. For example, to generate the list of GO terms associated with either apoptosis or WNT, we used the \u2018apoptosis|WNT\u2019 query and selected the processes \u2018Wnt signaling pathway\u2019 and \u2018execution phase of apoptosis\u2019 to perform the analysis on the joint set of associated genes (Figure 9\u2014figure supplement 1).\n\nSeveral other parameters can be specified by the user including the type of plot to be generated for the genetic loadings, the amount of magnification applied to the phenotype effect vectors, the regularization parameter, and the option to overlay a mutant phenotype for comparison. The comparative database currently includes craniofacial shape contrast data (wild-type vs. mutant) for 30 mutant genotypes. If a mutant comparison is selected, the full set of DO specimens are registered with the mutants added (with size removed). We then provide the vector correlation between the process effect and the mutant effect (see Figure 9). The database also includes PC1 of the DO sample for comparison.\n\nThe app enables users to save results. A save request will generate and download an HTML report of the analysis that includes several versions of the genetic effect plot and an interactive 3D model of the estimated phenotypic effect. If a mutant comparison is selected, it will also appear in the report.\n\nThe application tracks recent searches by the user for their reference. A heatmap of process vector correlations of the PLS phenotype loadings is also available under the \u2018recent searches\u2019 tab. The user can select between a heatmap of the processes in their search history or a random assortment of process correlations from past anonymous user searches.\n\nFinally, we provide programmatic access to our model for both process MGP analyses as well as custom gene lists over the web through an application programming interface (API). Queries can be formatted using curl commands as well as request URLs and return results in JavaScript object notation (JSON) format. Documentation for the available functions and their parameters, as well as examples for queries, can be found at https://genopheno.ucalgary.ca/api/__docs__/. The API was written using the plumber package (Schloerke and Allen, 2021) in R, with code available at https://github.com/J0vid/MGP_shiny/tree/main/MGP_API.\n",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "e5afd3af-3973-454a-a2e2-05a167f07cab",
+      "submission_id": "2f889a48-4c77-43cf-8496-ebb053ad8160",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cheryl Ackert-Bicknell, University of Colorado United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68623.sa0](https://doi.org/10.7554/eLife.68623.sa0)\n\nThis paper offers a new take on multivariate genotype-phenotype mapping that identifies the joint phenotypic effect of genes involved in known biological processes that impact craniofacial variation. More specifically, the work expands on the traditional idea of candidate gene investigations into candidate biological process investigations, grouping multiple genes into a single analysis. In doing so, the authors show the joint effects of three strong candidate processes, chondrocyte differentiation, determination of left/right symmetry, and palate development on multidimensional craniofacial shape in the heterogenous Diversity Outbred mouse population.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Cheryl Ackert-Bicknell, University of Colorado United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.68623.sa1](https://doi.org/10.7554/eLife.68623.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Shapes and genescapes: Mapping multivariate phenotype-biological process associations for craniofacial shape\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and George Perry as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Laura Saba (Reviewer #1); Peter Claes (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions\n\nAll three reviewers emphatically stated they found the discussion and conclusions of this paper to be overstated, and not completely supported by the data. That said, they unanimously felt that a substantial revision of this work could deal with this problem and hence a revision opportunity was suggested over an outright rejection. Overall, the requested revisions do not require new data, but do require some reanalysis of the data. These issues are presented in greater detail in the point by point revisions listed below. In addition, when the reviewers tried to use the web app on the browsers Chrome and Firefox, just when the results appeared, they received an error that it disconnected from the server. Please check the web app stability and where necessary provide guidance on browser use for both Mac and PCs.\n\n1. The use of the word 'process' throughout was not initially clear. It would help if it were clearly defined early on.\n\n2. There is some inconsistency between the results, Figure 2A, and the discussion about how Nov/Ccn3 is annotated.\n\n3. For the likelihood ratio test for differences in the distribution of cell sizes between Bmpr1b mutants and controls, it is important that all the interaction effects that included genotype were eliminated as well.\n\n4. The matric used for judging the stability of the cluster results is often referred to as the cophenetic correlation coefficient. This common terminology may help to clarify the first sentence of the paragraph that starts on line 287. It isn't clear why a t-statistics was used to determine if the correlation coefficient was significantly different from zero. Perhaps a reference is needed.\n\n5. In the 'Process effects in mutant morphospace', the authors point out similarities in the direction of the process vector to some of the mutants. It would be impressive if those process/mutant pairs annotated and if those genes had high weights in the MGP genetic vector. Similar comment for the gene/process pairs in the heatmap.\n\n6. The conclusions starting on line 462 and ending on line 466 were not tested rigorously.\n\n7. More detail about how the mutant MANOVA coefficients were calculated is needed.\n\n8. It is not clear how the regularization parameter was chosen.\n\n9. The paper is presented as the development of a new approach; however, it is not written in that way. The methods section \"Regularized PLS analysis\" is not accessible for a general public. If the reader is not already familiar with multivariate PLS, they will have no chance of understanding what this paper is all about. The results don't mention the actual genotype-phenotype approach, a description of the process-based MGP mapping should be done first thing in the results. Accordingly, the first figure should be current figure 10. And hopefully the legend will include more details.\n\n10. The approach provides the phenotypic effect of genetic variation in already known pathways but it does not result in new genotype-phenotype associations; this is acknowledged in the text. However, the manuscript suggest that the results generate testable hypothesis which is just not supported by the provided data. The predictions of phenotypic effects are done on genes that are previously known to be involved in pathways that result in such phenotypes. For example, the Bmpr1b gene is annotated in the 'Chondrocyte Differentiation' biological process and genetic variation in such gene is therefore used for the genotype-phenotype analysis, but then, the authors suggest that given the results of the mapping, Bmpr1b should show chondrocyte development phenotypes, which is a circular argument. This example is also true for the other two predictions described in the manuscript. A way of showing that the approach results in testable hypothesis will be to run the genotype-phenotype mapping on pathways that are not previously known to affect craniofacial shape, and then test whether the high loading genes indeed affect the phenotype in the expected way. Until that is shown, the claim that this approach results in new testable hypothesis should be taking with caution and this paper must be revised to reflect this reality.\n\n11. The approach is not new. Multiple other methods perform versions of multivariate genotype-phenotype mapping (this is discussed in the manuscript), but more importantly, the authors state to be using a method previously published by Mitteroecker et al. 2016 with the twist of restricting the analysis to known biological processes. It is not clear in the manuscript how much of their approach is actually new and how much is Mitteroecker's applied to a subset of markers. To highlight some lines where it sounds as if the authors did develop the method are found on lines 390-392 and lines 423-425, but rereading of Mitteroecker et al. 2016 suggests this is not the case. This is a crucial point that is not explained nor discussed at all.\n\n12. One of the challenges with multivariate analyses of this type is how to measure success of the model. In this case, the authors compared their genotype-phenotype results to phenotype results from genetically manipulated mice. As written, it is not clear where the information from the mutant mice came from. Although not explicitly stated, it appears that the mutant data is assigned to a process simply based on the inclusion of the mutated gene in the process being tested. There was no consideration of the genetic loadings of that particular gene in the original MPG model. If the mutated gene is in the process but has very weak genetic loadings, the assumption that the mutant phenotype should be similar to the phenotype associated with the process genetic loading is suspect. Theoretically, the MPG predicted phenotype in the mutated rodent would be more accurate if the mutated gene had a stronger genetic loading. Furthermore, if the mutant data was derived from the literature than it likely includes some publication bias. All genes included likely have some effect on cranial morphology or their results likely would not have been published.\n\n13. Within the manuscript, there is an emphasis on the concordant direction of association between the process MGP axis and the axis of shape variation of a relevant mutant phenotype. However, some ambiguity remains about the relevance of the direction of association between the direction of the process MGP axis and the axis of shape variation of a relevant mutant phenotype. The loadings per gene are presented as negative/positive values in all figures, but it is never explained in the methods what does the sign mean. From the description in the methods, the direction of the correlation between the process PLS1 phenotypic loadings and the mutant MANOVA coefficients cannot be predicted unless you knew that the mutation of the gene was similar to one or more of the 8 founder haplotypes. This would require functional knowledge about the markers/haplotype included in the genetic loadings. Explain this in the methods and figure legends to help the reader actually understand what the PLS is doing.\n\n14. There was also some confusion surrounding the rationale and methodology for estimating the null distribution of the R2 values. More detail is needed on how random marker selection for permutation was constrained to follow similar patterns of linkage disequilibrium to the observed marker set. Also, it is unclear what the rationale for randomly selecting markers rather than randomly selecting genes to generate the null distribution.\n\n15. In general, the section 'Comparison of processes to principal component' lacks statistical rigor and conclusions are supported by the data. It is not relevant to compare all 1000 processes with the principal components without first filtering based on R2 values from the MPG analysis. The overall value of the analysis in this section is unclear.\n\n16. In the discussion, the authors do not make a compelling case for how these types of analyses could be used to generate hypotheses for further studies.\n\n17. As stated in the introduction this is a study of complex relationships between genotypes and phenotypes, and it is important to keep in mind that the technique used here as many others in similar endeavors, remain linear in nature, and therefore limited in exposing potentially non-linear relationships.\n\n18. While the three example processes are interesting and easy to understand or follow in terms of, how this is of interest. I do struggle with the interpretation of the follow-up analyses, including correlating effects of processes, comparing of processes to principal component directions and process effects in mutant morpho-space. It is unclear if all these analyses make sense, and more importantly, the dimensionality into which these explorations are being made is rather low. First, any process effect is modelled by the first PLS-component only. Therefore, is the process and its effect on craniofacial shape modelled completely? Probably not. Second, the morpho-space in the last two mentioned analyses here above, is restricted to the first two principal components only. Therefore, is craniofacial variability modelled completely? Probably not. As a result, Figure 7 A, especially, represents only a sub-dimensional view of process effects versus mutant phenotypes. Discrepancies observed, e.g., none of the Bmp mutants align with the bmp signaling pathway, can be due to the limited linear dimensionality, or because of other underlying genuine biological explanations. However, it is hard to tell.\n\n19. It is suggested by one of the reviewer that a better overlap between PLS and CCA and the use of both in genotype-phenotype associations is welcome. E.g., the discussion simply states, \"Our approach also differs from methods that associate single locus effects with a multivariate phenotype (Claes et al., 2018)\" without any explanation or insight how and what is different. In fact, the difference is not that great, besides the difference in underlying paradigm (GWAS versus candidate selection) and looking across multiple genes instead, which is the forte of this work. The incorporation of gene-based or haplotype-based MV GWAS into the discussion or introduction is also encouraged.\n\n20. The reviewers need to make a stronger case about the benefit of groups of genes, because of the regularization and the selection of a 1-dimensional latent variable. I.e., It is of interest, for at least the three examples given, to run a gene-by-gene based analysis alongside, and to verify the benefit of the process-based analysis.\n\n21. It is suggest that the authors investigate the effect of the user-defined regularization on their results. Additional cross-validation based results to see how good the first PLS component generalizes is needed. It is recognized that collecting a completely independent replication cohort is outside the scope or typical research resources. However, a more elaborated investigation using cross-validations might help.\n\n22. Somewhat related to the point above, the authors need to provide more information on the dimensionality reductions performed, e.g., please present CV results using multiple PLS components, and provide insights on how many components are expected to be relevant in describing a process and its effect on craniofacial variation. The same applies for the 2-PC morphospace, of interest is to provide insight into choosing only 2PCs and no more?\n\n23. The reviewers found the assessment cluster stability to be circular. Please include some references illustrating this approach or to investigate alternative measures for clustering techniques in machine learning, e.g., the silhouette score.\n\n24. The Comparison of processes to principal component directions, ends with listing processes correlated to PCs. It was hard finding out if these groups listed made sense to be grouped as such. Additional and more explicit information for the reader in those directions is welcome here and in other places where such listing of processes (e.g., the clustering) is done.\n\n25. How are the authors estimating % total phenotypic variance explained by the PLS genotype vector (lines 193, 226)? Is this the R2 they talk about in the methods? If so, please use the same terminology in results and methods sections.\n\n26. The authors show that the %var explained in the first three examples (chondrocytes, palate, and symmetry) is higher than randomly chosen set of genes. But maybe, an additional biologically important point to test is whether pathways that are known to be involved in craniofacial development explain significantly higher phenotypic variance than pathways that are expected not to contribute to such phenotypes. This, besides being a testable hypothesis, will shed light into our understanding of the GO terms annotated to affect craniofacial development, and probably highlight pathways previously not associated with such processes that could be followed up in future work.\n\n27. It is highlighted as a main finding that the phenotypic effect of different biological processes correlate with each other and with single mutants, however it is not discussed how much of that correlation is driven by different processes sharing genes. Could you elaborate on that aspect of the analysis? How many genes are shared and whether that correlates with the correlation of vector directions? I wouldn't be sure about how solid the main finding is unless it is clearly shown that it is not coming from shared genetic effects.\n\n28. Supp Figure 4 shows several covariates for the data, however the methods only described how 'generation' was accounted for. What about sex? Mouse source? I don't have a way of knowing whether you are using them as covariates in your model, or whether you can actually add covariates to the model, because the model is not described in the methods.\n\n29. The Results section is dry and doesn't provide any conclusion for the different sections. This could be improved if the conclusions of the analyses that are currently described in the Discussion section be moved to the relevant Results sections. This will also benefit the discussion that is currently very long and most of it is an actual description of results.\n\n30. The information necessary to understand the figures should be in the corresponding figure legend not in the main text (e.g. l 327-329, l 331-333, l346-349). And, all figures showing results of the MGP analysis will benefit from ranking the genes according to variance of the loadings instead of alphabetical order \u2013 so it becomes easier to asses which genes are more important.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Relating Multivariate Shapes to Genescapes Using Phenotype-Biological Process Associations for Craniofacial Shape\" for further consideration by eLife. Your revised article has been reviewed by 3 peer reviewers and the evaluation has been overseen by George Perry as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed, as outlined below. The reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission. It is recognized that this is the second request for revisions on this paper.\n\nEssential revisions:\n\nA lengthy discussion was had among the reviewers about clarifying what is meant by new hypothesis. It was agreed that this issue must be addressed, but not does not necessarily need new data or experiments. Two of the three points below directly center on this issue.\n\n1) In line 327-329 (of the tracked changes version) the authors write\" \"The majority of process MGP analyses demonstrate a similar importance to many alleles, highlighting the main strength process-level analyses over individual marker tests\". This is an interesting claim, but what data supports this statement exactly? It would be great if this is supported by some density plot with for example # of genes ranking high (whatever threshold you choose) for each process. The authors have tested ~30 or so processes for some of the analyses. Please clarify if this claim coming from there?\n\n2) The reviews all agreed that there was some level of circularity in the examples shown by the authors. The reviewers strongly felt that the response to comment #10 was not convincing, and the main text was not sufficiently modified to clarify this point. The reviewers agreed that if they remained confused on this point, readers of this manuscript likely would be too. The following is a second attempt at explaining the reviewers point again: all three mutants tested (Bmpr1, Fgf10, and Ankrd11) have previous published data showing their effects on craniofacial shape, sometimes even directly related to the biological process the authors are testing. So, given a) they are functionally annotated to be part of that process, b) there are previous publications -possibly the annotation is derived from those studies, although not necessarily- showing their phenotype effect on craniofacial shape, it does not sound as the authors are generating new hypothesis with their method. This would sound more convincing for the readers if the authors explained better for each example what is their rational for calling each of them a new hypothesis generated by the method. Explicitly list what is previously known or not known about those genes and their effect on craniofacial shape (they reference previous studies, but not in the context of framing how this is different from what they are doing), and be emphatically clear about what is the new \"thing\" they are trying to show. The reviewers are not saying it is not great to see those genes highly ranked within the process MPG vector, but they are just saying that strong claims of this being a new hypothesis are being made when working with genes for which an effect on craniofacial shape has been shown before. This exact point was also raised in query #16 but there was no new text in the Discussion addressing this point.\n\n3. Related to the point above, there were several comments in by the reviewer previously on how, with the current data, the authors could approach more directly the 'testable new hypotheses' that this method generates, but they were not really implemented. This of course does not diminish the value of the paper, but the opposite would have increased its ability to prove that new hypotheses are indeed generated and proven true (not related to genes obviously related to craniofacial shape). For example, point #26 suggests to-test effects on processes that are not related/or expected to be related to craniofacial shape. The authors reply that is difficult to delineate such processes. The reviewers wondered about considering or at least mentioning 'gonad /sperm / egg development'? Social / mating behavior? Circadian rhythm? Etc.\n",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "453c6904-1514-490e-b06c-e31097e8f75a",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C1",
+      "claim": "Variation in human craniofacial shape is moderately to highly heritable (~30\u201370%)",
+      "claim_type": "EXPLICIT",
+      "source": "Variation in human craniofacial shape is moderately to highly heritable (~30\u201370%; Cole et al., 2017; Tsagkrasoulis et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Cole et al., 2017; Tsagkrasoulis et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "fed300c4-705b-4625-be1d-267a0d531734",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C2",
+      "claim": "Resemblances among close relatives as well as twins underscore the strong relationship between shared genetics and shared phenotype",
+      "claim_type": "EXPLICIT",
+      "source": "resemblances among close relatives as well as twins underscore the strong relationship between shared genetics and shared phenotype (Johannsdottir et al., 2005; Nakata, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research (Johannsdottir et al., 2005; Nakata, 2014)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "877d618e-f00f-4cad-9f96-1281048c5090",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C3",
+      "claim": "Very little is known about the genetic basis for variation in craniofacial shape despite many studies in humans and mice",
+      "claim_type": "EXPLICIT",
+      "source": "Despite many studies in humans and in mice (Claes et al., 2018; Cole et al., 2016; Shaffer et al., 2016), however, we know very little about the genetic basis for variation in craniofacial shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research and represents a synthesis of the literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "bb2af520-acf7-4187-8abf-4beb8edafefc",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C4",
+      "claim": "Craniofacial shape is extraordinarily polygenic",
+      "claim_type": "EXPLICIT",
+      "source": "Like many aspects of morphological variation, craniofacial shape is extraordinarily polygenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about the genetic architecture of craniofacial shape",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "48bcd7f3-81d7-4567-8064-aad4a0e754b6",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C5",
+      "claim": "Genes with major mechanistic roles in facial development such as Fgf8 often contribute little to observed phenotypic variation",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with major mechanistic roles in facial development such as Fgf8 often contribute little to observed phenotypic variation (Green et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Green et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "ace4b596-eda9-4609-bbb2-ac5cb6395327",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C6",
+      "claim": "Genetic influences without obvious connections to craniofacial development emerge as significant contributors",
+      "claim_type": "EXPLICIT",
+      "source": "while genetic influences without obvious connections to craniofacial development emerge as significant contributors (Kenney-Hunt et al., 2008; Klingenberg and Leamy, 2001; Maga et al., 2015; Pallares et al., 2015; Pallares et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "9b143939-76dc-418e-ad7f-768122853fdd",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C7",
+      "claim": "The effects of genetic variants on phenotype often depend on genetic background",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of genetic variants on phenotype often depend on genetic background (Mackay and Moore, 2014; Percival et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "c77500dc-2969-4c88-b85b-a0b29df23703",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C8",
+      "claim": "Many mutations have variably penetrant effects even when background is controlled",
+      "claim_type": "EXPLICIT",
+      "source": "and many mutations have variably penetrant effects even when background is controlled (Kawauchi et al., 2009; Rendel, 1967)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "0fb30548-cb2b-419d-818e-2550bfe1e953",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C9",
+      "claim": "The study uses a sample of n = 1145 mice from the Diversity Outbred (DO) experimental line",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we explicitly model the joint effects of biologically coherent collections of genes on a multivariate trait \u2013 craniofacial shape \u2013 in a sample of n = 1145 mice from the Diversity Outbred (DO) experimental line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "3d7ef903-85c5-42a8-9bdf-bd1e66a39cd5",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C10",
+      "claim": "The study uses biological process Gene Ontology (GO) annotations to select skeletal and facial development gene sets",
+      "claim_type": "EXPLICIT",
+      "source": "We use biological process Gene Ontology (GO) annotations to select skeletal and facial development gene sets and solve for the axis of shape variation that maximally covaries with gene set marker variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "503bae19-6ad8-4e2c-958d-5e8c494a5109",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C11",
+      "claim": "There are 38 genes annotated to chondrocyte differentiation in the Ensembl database",
+      "claim_type": "EXPLICIT",
+      "source": "There are 38 genes annotated to chondrocyte differentiation in the Ensembl database (Yates et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to the Ensembl database and a citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "7b459354-e418-4cf3-a769-c542a56f3464",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C12",
+      "claim": "Nov/Ccn3, Bmpr1b (Alk6), and Nfib are most implicated in the major axis of pathway covariation with craniofacial shape among chondrocyte differentiation genes",
+      "claim_type": "EXPLICIT",
+      "source": "Among chondrocyte differentiation genes, Nov/Ccn3, Bmpr1b (Alk6), and Nfib are most implicated in the major axis of pathway covariation with craniofacial shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the analysis results shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "118c2bb2-d5ab-4619-9864-1ae25540d6a9",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C13",
+      "claim": "The chondrocyte differentiation GP map explains 2.15% of the total variance in craniofacial shape",
+      "claim_type": "EXPLICIT",
+      "source": "The chondrocyte differentiation GP map explains 2.15% of the total variance in craniofacial shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "cccae84c-75c1-4978-ba1b-b0306ffec620",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C14",
+      "claim": "Chondrocyte differentiation explains substantially more craniofacial variation compared to 10,000 random permutations of the model",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to 10,000 random permutations of the model, chondrocyte differentiation explains substantially more craniofacial variation (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by permutation testing shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "6cb06374-c1dd-4b2a-ab14-16f5073a2980",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C15",
+      "claim": "Bmpr1b in synergy with other bone morphogenic protein pathway receptors regulates chondrocyte proliferation and differentiation in embryonic cartilage condensations",
+      "claim_type": "EXPLICIT",
+      "source": "The first is because Bmpr1b in synergy with other bone morphogenic protein pathway receptors regulates chondrocyte proliferation and differentiation in embryonic cartilage condensations (Yoon et al., 2005, ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research (Yoon et al., 2005)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "1ebbd760-de6a-4b34-bf2f-9a0cebd62c5c",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C16",
+      "claim": "Bmpr1b mutants show shorter long bones at birth",
+      "claim_type": "EXPLICIT",
+      "source": "Bmpr1b mutants show shorter long bones at birth and overexpression of a dominant negative Bmpr1b using a type 1 collagen promoter showed delayed ossification of the frontal, parietal, and occipital bones (Yoon et al., 2005; Zhao et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "afbe073c-d15c-4e28-a842-bd2c20d2c2d3",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C17",
+      "claim": "Overexpression of a dominant negative Bmpr1b using a type 1 collagen promoter showed delayed ossification of the frontal, parietal, and occipital bones",
+      "claim_type": "EXPLICIT",
+      "source": "Bmpr1b mutants show shorter long bones at birth and overexpression of a dominant negative Bmpr1b using a type 1 collagen promoter showed delayed ossification of the frontal, parietal, and occipital bones (Yoon et al., 2005; Zhao et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "dc23cee8-e2b5-43f9-84f8-76d3175f9503",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C18",
+      "claim": "The vector correlation between the chondrocyte differentiation effect and the Bmpr1b mutant is 0.371",
+      "claim_type": "EXPLICIT",
+      "source": "The overall phenotypic directions of Bmpr1b mutant variation and chondrocyte differentiation variation are moderately correlated at r = 0.371 (t = \u20135.06, df = 160, p<0.0001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "f457db14-c77b-44d6-a19e-581867bb1be2",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C19",
+      "claim": "Bmpr1b homozygotes show overall larger cell sizes in the intersphenoid synchondroses",
+      "claim_type": "EXPLICIT",
+      "source": "We found that homozygotes show overall larger cell sizes as well as a differing distribution of cell sizes throughout the width of the ISS (Figure 3A\u2013C; \u03c72 = 21.23, df = 3, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3A-C with statistical testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "fea49ae9-402f-4c53-873d-9728790765e1",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C20",
+      "claim": "Bmpr1b homozygotes show a differing distribution of cell sizes throughout the width of the ISS",
+      "claim_type": "EXPLICIT",
+      "source": "We found that homozygotes show overall larger cell sizes as well as a differing distribution of cell sizes throughout the width of the ISS (Figure 3A\u2013C; \u03c72 = 21.23, df = 3, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3A-C with statistical testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "cb9a79ba-8e52-427a-bd8a-6deba15afe1c",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C21",
+      "claim": "The presence of larger cell sizes in the homozygote Bmpr1b mutants suggests that the synchondroses possess more hypertrophic chondrocytes",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of larger cell sizes in the homozygote Bmpr1b mutants suggests that the synchondroses possess more hypertrophic chondrocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the cell size data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "40ef70cb-6d07-45bf-b17c-ac53aa3e8357",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C22",
+      "claim": "Bmpr1b homozygous mutant mice show premature fusion of the coronal suture",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Bmpr1b homozygous mutant mice show premature fusion of the coronal suture (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "485969cd-7246-4978-8706-6874aa4bef7c",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C23",
+      "claim": "Premature fusion of the coronal suture and the presence of larger cell sizes in Bmpr1b mutants have not been reported in the literature",
+      "claim_type": "EXPLICIT",
+      "source": "Both features have not been reported in the literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a review of existing literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "d612c43b-45e3-4d13-b047-46ebe8710153",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C24",
+      "claim": "There are 81 genes annotated to 'determination of left/right symmetry'",
+      "claim_type": "EXPLICIT",
+      "source": "The second example quantifies cranial shape covariation with the 81 genes annotated to 'determination of left/right symmetry.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the number of genes in the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "e3f7f2e2-c19b-4241-935d-5fed00d0f4f3",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C25",
+      "claim": "An Fgf10 allele inherited from the Castaneus founder background was among the most important for determination of left/right symmetry MGP phenotype",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, an Fgf10 allele inherited from the Castaneus founder background was among the most important (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis results shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "9a204048-e22f-40fe-8700-2b34f5b50ee8",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C26",
+      "claim": "FGF10 is a key ligand in early development, directing proliferation as well as differentiation for many craniofacial components, including the palate, teeth, and bones",
+      "claim_type": "EXPLICIT",
+      "source": "FGF10 is a key ligand in early development, directing proliferation as well as differentiation for many craniofacial components, including the palate, teeth, and bones (Hilliard et al., 2005; Prochazkova et al., 2018; Watson and Francavilla, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "fb1144c4-0572-4646-8739-01c7abafa6ac",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C27",
+      "claim": "Several Fgf ligands including Fgf10 are integral in the asymmetric distribution of organs",
+      "claim_type": "EXPLICIT",
+      "source": "Several Fgf ligands including Fgf10 are integral in the asymmetric distribution of organs (Hecksher-S\u00f8rensen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "4b59c195-5f62-4cf1-a9ee-5798651804f5",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C28",
+      "claim": "Fgf8 has been shown to produce asymmetric craniofacial phenotypes in zebrafish",
+      "claim_type": "EXPLICIT",
+      "source": "Fgf8 has also previously been shown to produce asymmetric craniofacial phenotypes in zebrafish, but craniofacial asymmetry has not previously been observed in Fgf10 mutants (Albertson and Yelick, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "efcd0fd4-a831-472b-82b1-ed333ea3b9d9",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C29",
+      "claim": "Craniofacial asymmetry has not previously been observed in Fgf10 mutants",
+      "claim_type": "EXPLICIT",
+      "source": "Fgf8 has also previously been shown to produce asymmetric craniofacial phenotypes in zebrafish, but craniofacial asymmetry has not previously been observed in Fgf10 mutants (Albertson and Yelick, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a review of existing literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "f1414772-6619-4c24-b97c-34e5dcbfd6f4",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C30",
+      "claim": "Left/right symmetry loci explain 3.4% of the total variance in craniofacial shape",
+      "claim_type": "EXPLICIT",
+      "source": "Left/right symmetry loci explain 3.4% of the total variance in craniofacial shape, which exceeds the variance explained by 10,000 randomly permuted L/R symmetry MGP analyses (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and permutation testing shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "0b364048-7287-4e10-855c-9a9e61c5c575",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C31",
+      "claim": "The vector correlation between the Fgf10 mutant and the estimated left/right symmetry effect is 0.672",
+      "claim_type": "EXPLICIT",
+      "source": "The vector correlation between the Fgf10 mutant and the estimated left/right symmetry effect is 0.672 (t = 12.29, df = 160, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "435d0e78-9857-4000-a72e-3e463d924985",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C32",
+      "claim": "Fgf10 mutants show significant directional asymmetry",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we measured a sample of 8 Fgf10 adult mutant crania for object symmetry and detected significant directional asymmetry (Figure 4D; F = 4.91, df = 52, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of morphometric data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "1bdccb7f-d5b9-4128-9264-9056ba2706f9",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C33",
+      "claim": "There are 73 genes annotated to 'palate development'",
+      "claim_type": "EXPLICIT",
+      "source": "The final example estimates the shape covariation attributed to the 73 genes annotated to 'palate development.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the number of genes in the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "e0740bf3-9b12-4368-a10a-13cb81b721a4",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C34",
+      "claim": "Formation and fusion of the palatal shelves are crucial for proper orofacial development and heavily influence overall facial shape",
+      "claim_type": "EXPLICIT",
+      "source": "Formation and fusion of the palatal shelves are crucial for proper orofacial development and heavily influence overall facial shape (Greene and Pisano, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "1f2b772f-ef52-466e-9d5c-dd6cd0d5324e",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C35",
+      "claim": "Several genes contribute strongly to the palate development MGP effect including Ephb2, Gli3, and Lrp6",
+      "claim_type": "EXPLICIT",
+      "source": "Several genes contribute strongly to the palate development MGP effect including Ephb2, Gli3, and Lrp6 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the analysis results shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "b43018ba-7a34-41c9-91c9-2bea562e7ef2",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C36",
+      "claim": "Palate development MGP loci explain 2.4% of the total variance in cranial shape",
+      "claim_type": "EXPLICIT",
+      "source": "Palate development MGP loci explain 2.4% of the total variance in cranial shape, which is greater than the variance explained by 10,000 randomly permuted palate development MGP models (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis and permutation testing shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "a1af0343-a941-4bb0-afff-5f7f5b315bb5",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C37",
+      "claim": "The Ankrd11 locus is associated with KBG syndrome in humans",
+      "claim_type": "EXPLICIT",
+      "source": "The Ankrd11 locus is associated with KBG syndrome in humans, which presents with generally delayed bone mineralization as well as craniofacial characteristics including palate abnormalities (Low et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "6533a86a-ff5c-4d60-b32c-4f8e2571325f",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C38",
+      "claim": "KBG syndrome presents with generally delayed bone mineralization as well as craniofacial characteristics including palate abnormalities",
+      "claim_type": "EXPLICIT",
+      "source": "The Ankrd11 locus is associated with KBG syndrome in humans, which presents with generally delayed bone mineralization as well as craniofacial characteristics including palate abnormalities (Low et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "189ced8e-84a4-4b29-9e39-04a5804f8e82",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C39",
+      "claim": "The vector correlation between the palate development MGP effect and the Ankrd11 mutant over the complete set of cranial landmarks is 0.339",
+      "claim_type": "EXPLICIT",
+      "source": "While the vector correlation between the palate development MGP effect and the Ankrd11 mutant over the complete set of cranial landmarks is moderate at r = 0.339 (Figure 5C; t = 4.31, df = 160, p=0.0001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "072e606f-cec0-4a3d-9749-1c4a0b27ada3",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C40",
+      "claim": "The vector correlation for palate landmarks between palate development MGP and Ankrd11 mutant is 0.536",
+      "claim_type": "EXPLICIT",
+      "source": "the vector correlation for palate landmarks is substantially higher at r = 0.536.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "1685833e-54bd-4253-8d3b-f949647a96f4",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C41",
+      "claim": "The DO is a multiparental outcross population derived from the eight founding lines of the Collaborative Cross (CC)",
+      "claim_type": "EXPLICIT",
+      "source": "The DO is a multiparental outcross population derived from the eight founding lines of the Collaborative Cross (CC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the genetic background of the study population",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "59cc5983-224a-4c79-abd1-931d4b2f544e",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C42",
+      "claim": "Each DO animal's genome is a unique mosaic of the genetic diversity found in the CC \u2013 more than 45 million segregating SNPs",
+      "claim_type": "EXPLICIT",
+      "source": "Each animal's genome is a unique mosaic of the genetic diversity found in the CC \u2013 more than 45 million segregating SNPs (Collaborative Cross Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "4b9b3758-dcf3-4966-81dc-60f40514c36d",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C43",
+      "claim": "The DO sample was sourced from three separate laboratories and seven DO generations",
+      "claim_type": "EXPLICIT",
+      "source": "Our DO sample was sourced from three separate laboratories and seven DO generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample composition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "3e3b173b-9fb7-4c44-a03e-15c20b090676",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C44",
+      "claim": "386 mice are from the Jackson Laboratory (JAX), 287 from the University of North Carolina (UNC), and 472 come from the Scripps Research Institute",
+      "claim_type": "EXPLICIT",
+      "source": "386 are from the Jackson Laboratory (JAX), 287 from the University of North Carolina (UNC), and 472 come from the Scripps Research Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the sample composition by source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "ee998cf9-a9cc-4377-90df-70b4987b7daa",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C45",
+      "claim": "Mice from generations 9, 10, and 15 were genotyped using the MegaMUGA genotyping array (77,808 markers)",
+      "claim_type": "EXPLICIT",
+      "source": "Mice from generations 9, 10, and 15 were genotyped using the MegaMUGA genotyping array (77,808 markers)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the genotyping methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "3eac6040-0101-4d05-8cbf-61ed2fb52b67",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C46",
+      "claim": "Mice from generations 19, 21, 23, and 27 were genotyped using the larger GigaMUGA array (143,259 markers)",
+      "claim_type": "EXPLICIT",
+      "source": "mice from generations 19, 21, 23, and 27 were genotyped using the larger GigaMUGA array (143,259 markers) (Morgan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the genotyping methodology with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "47cd3c39-f72b-4517-ae2c-78fab4ac6600",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C47",
+      "claim": "After imputation, the merged genetic dataset consists of 123,309 SNPs that vary among CC founders",
+      "claim_type": "EXPLICIT",
+      "source": "After imputation, the merged genetic dataset consists of 123,309 SNPs that vary among CC founders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the final genotype dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "72bc90b4-0a25-461b-a99b-5b6e9e4de637",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C48",
+      "claim": "54 3D landmarks were acquired manually on each volume",
+      "claim_type": "EXPLICIT",
+      "source": "One of us (WL) then acquired 54 3D landmarks (Figure 10) manually on each volume using Analyze 3D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the phenotyping methodology shown in Figure 10",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "38ad97b0-71f6-4590-829b-ec87e6928a96",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C49",
+      "claim": "The kinship values in the sample have a mean of 0 and a standard deviation of .047",
+      "claim_type": "EXPLICIT",
+      "source": "The kinship values in our sample have a mean of 0 and a standard deviation of.047.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the kinship matrix",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "996a866f-0e5d-4dc6-8acf-b5148169290f",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C50",
+      "claim": "The correlation between the cophenetic distance matrix and the correlation matrix is 0.648",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the cophenetic distance matrix and the correlation matrix is 0.648 (t = 8.64, df = 103, p=7.6 \u00d7 10\u201314)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the clustering",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "277d1887-0f56-4cbf-ae73-153bbf62b266",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C51",
+      "claim": "The correlation between the cophenetic distance matrix and the correlation matrix suggests a moderate, though significant, structure in the similarity of effects amongst this set of MGP processes",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation between the cophenetic distance matrix and the correlation matrix is 0.648 (t = 8.64, df = 103, p=7.6 \u00d7 10\u201314), suggesting a moderate, though significant, structure in the similarity of effects amongst this set of MGP processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of the statistical analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "531d7917-9264-49d4-b046-62999c9f830c",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C52",
+      "claim": "Perturbations to specific processes in development generally produce effects on multiple aspects of phenotype due to knock-on effects at later stages or to interactions at the level of tissues or anatomical structures",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations to specific processes in development generally produce effects on multiple aspects of phenotype due to knock-on effects at later stages or to interactions at the level of tissues or anatomical structures (Hallgr\u00edmsson et al., 2007; Hallgr\u00edmsson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "4df688af-869d-41c2-883c-7d7180f0e1b6",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C53",
+      "claim": "A change in cartilage growth in basicranial synchondroses produces a global change in craniofacial form",
+      "claim_type": "EXPLICIT",
+      "source": "A change in cartilage growth in basicranial synchondroses produces a global change in craniofacial form, for example (Parsons et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "adc1d8be-43aa-48af-b246-4dcd008889d3",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C54",
+      "claim": "Enhancers with highly specific temporospatial effects on gene expression produce global rather than localized changes in craniofacial shape",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, enhancers with highly specific temporospatial effects on gene expression also produce global rather than localized changes in craniofacial shape (Attanasio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "7460d74e-b8bc-4685-94e1-7eee9da23abf",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C55",
+      "claim": "Pleiotropy is likely ubiquitous",
+      "claim_type": "EXPLICIT",
+      "source": "Given that pleiotropy is likely ubiquitous (Churchill et al., 2012; Wagner et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "041b3039-9e6c-4550-9db6-9a717889d2d2",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C56",
+      "claim": "Mutations to major developmental genes produce effects that tend to align with the directions of effect associated with the corresponding broader pathways or ontological groups",
+      "claim_type": "EXPLICIT",
+      "source": "This convergence of genetic effects on axes of covariation is reflected in our finding that mutations to major developmental genes produce effects that tend to align with the directions of effect associated with the corresponding broader pathways or ontological groups (Hallgr\u00edmsson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's findings and a citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "533b2c34-fd4e-4af3-b5fd-57aa1290b038",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C57",
+      "claim": "Perturbations that are developmentally similar tend to move the phenotype in the same direction in multivariate space",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that perturbations that are developmentally similar tend to move the phenotype in the same direction in multivariate space (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an interpretation of the results shown in Figure 8",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "21f75a13-2277-4d7b-a2b3-870510bb4cce",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C58",
+      "claim": "Multiple pathways and processes lead to common developmental outcomes",
+      "claim_type": "EXPLICIT",
+      "source": "Even so, both mutational and higher-level pathway/process effects tend to converge on a few directions of variation, suggesting that multiple pathways and processes lead to common developmental outcomes (Houle and Fierst, 2013; Uller et al., 2018; Hallgr\u00edmsson and Lieberman, 2008; Gonzalez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the study's findings and citations to published research",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "80024adc-4747-4557-8744-a25884c5d0ca",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C59",
+      "claim": "The process MGP approach is generally applicable to any continuously varying phenotype",
+      "claim_type": "EXPLICIT",
+      "source": "The process-centered approach is generally applicable to any continuously varying phenotype and thus has wide-reaching implications for complex trait genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a generalization about the applicability of the method",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "2de271d8-c9e9-43e9-aa77-580a2337b2a4",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C60",
+      "claim": "The study introduces an online application that provides users the means to customize their own process-centered craniofacial shape analyses in the DO",
+      "claim_type": "EXPLICIT",
+      "source": "We also introduce an online application that provides users the means to customize their own process-centered craniofacial shape analyses in the DO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a resource provided by the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "bef47131-66dd-47e3-b0d7-a7a099bbc81f",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C61",
+      "claim": "The online tool is found at https://genopheno.ucalgary.ca/MGP/",
+      "claim_type": "EXPLICIT",
+      "source": "This application is found at https://genopheno.ucalgary.ca/MGP/ and can be used for analyses similar to those described in this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides the URL for the online tool",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "5154f6e5-3a53-487d-b6a1-b961d46a8896",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C62",
+      "claim": "Differentiation of chondrocytes is one of several key developmental processes involved in endochondral ossification",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation of chondrocytes is one of several key developmental processes involved in endochondral ossification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "6673c601-efb3-4a3a-af3a-1efca1930f58",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C63",
+      "claim": "Endochondral bones form the majority of the cranial base through a cartilage model of bone formation",
+      "claim_type": "EXPLICIT",
+      "source": "Endochondral bones form the majority of the cranial base through a cartilage model of bone formation (Percival and Richtsmeier, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "39e7ce75-ec96-4d35-8ae7-955d2f556f57",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C64",
+      "claim": "The phenotypic effects of chondrocyte differentiation primarily relate to anteroposterior positioning of the zygomatic arches and dorsoventral jugal position",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypic effects at each landmark primarily relate to anteroposterior positioning of the zygomatic arches and dorsoventral jugal position (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the phenotypic visualization in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "48806432-233e-4b4d-a246-4f08f350996b",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C65",
+      "claim": "The vector correlation between the full chondrocyte differentiation MGP model and the model with the Ccn3/Nov marker removed is 0.346",
+      "claim_type": "EXPLICIT",
+      "source": "The vector correlation between the full chondrocyte differentiation MGP model and the model with the Ccn3/Nov marker removed is 0.346.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "d1ca6b75-d4f1-4bd0-917f-1d992abf76eb",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C66",
+      "claim": "L/R symmetry MGP with the 10 most heavily loaded markers removed still produced a vector correlation of 0.95 with the full model",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, L/R symmetry MGP with the 10 most heavily loaded markers removed still produced a vector correlation of 0.95 with the full model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "040f127d-88c7-4fb6-a26e-d8f01382cac0",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C67",
+      "claim": "51.6% of processes show a marker effect 0.5\u00d7 larger than any other individual effect",
+      "claim_type": "EXPLICIT",
+      "source": "51.6% of processes show a marker effect 0.5\u00d7 larger than any other individual effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "1480f333-28f3-4460-bc99-04c05346d48f",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C68",
+      "claim": "36.6% of processes show a marker effect 2\u00d7 larger than any other individual effect",
+      "claim_type": "EXPLICIT",
+      "source": "36.6% of processes show a marker effect 2\u00d7 larger than any other individual effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "45829dc4-9fef-4e45-864c-01948cdda546",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C69",
+      "claim": "20% of processes show a marker effect 3\u00d7 larger than any other individual effect",
+      "claim_type": "EXPLICIT",
+      "source": "20% of processes show a marker effect 3\u00d7 larger than any other individual effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "3bddfada-cd98-437c-af4f-9c815d95a7ce",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C70",
+      "claim": "Ift88 is a core component of the primary cilia, which are responsible for promoting developmental signals involved in many facets of facial development",
+      "claim_type": "EXPLICIT",
+      "source": "Ift88 is a core component of the primary cilia, which are responsible for promoting developmental signals involved in many facets of facial development (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "049ac963-028c-4677-9511-ef8dd9789cfe",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "claim_id": "C71",
+      "claim": "Micro-computed tomography scans were acquired at 0.035 mm voxel resolution",
+      "claim_type": "EXPLICIT",
+      "source": "Scanning was done at the University of Calgary at 0.035 mm voxel resolution (Scanco vivaCT40).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the imaging methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study developed a process MGP approach using 1145 Diversity Outbred mice to map chondrocyte differentiation genes to craniofacial shape variation. The chondrocyte differentiation pathway (38 genes) explained 2.15% of total craniofacial shape variance, with Nov/Ccn3, Bmpr1b, and Nfib showing the strongest associations. This variance was significantly greater than random permutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 and C62-C64 collectively establish the methodology, sample size, gene set composition, statistical significance via permutation testing, and phenotypic effects. The permutation testing (C14) provides appropriate statistical validation, and the variance explained is modest but significant. The approach is methodologically sound with adequate sample size for the multivariate analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bmpr1b mutants show novel phenotypic features predicted by the chondrocyte differentiation MGP analysis, including larger chondrocyte cell sizes with altered distribution in the intersphenoid synchondroses (\u03c7\u00b2=21.23, p<0.0001) and premature coronal suture fusion. The MGP effect moderately correlated with the Bmpr1b mutant phenotype (r=0.371, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23 provide convergent evidence from literature (C15-C17), computational prediction (C18), and experimental validation (C19-C22). The statistical testing of cell size distribution is appropriate (chi-square test), and the discovery of unreported phenotypes (C23) validates the predictive power of the MGP approach. The moderate correlation suggests biological relevance despite not being a perfect match.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Left/right symmetry genes (81 genes) explained 3.4% of craniofacial shape variance, with Fgf10 showing high loading. The MGP effect strongly correlated with Fgf10 mutant phenotype (r=0.672, p<0.0001), and experimental testing confirmed significant directional asymmetry in Fgf10 mutants (F=4.91, p<0.0001), a previously unreported phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 demonstrate a complete cycle of prediction and validation. The L/R symmetry MGP analysis identified Fgf10 as important (C25), showed strong correlation with mutant phenotype (C31), and the hypothesis was experimentally validated (C32). However, the sample size for Fgf10 mutants (n=8) is small, which could affect the robustness of the asymmetry finding, though the p-value is highly significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "2938115d-a136-4ed2-be7e-b18d6623c385",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Palate development genes (73 genes) explained 2.4% of cranial shape variance, with Ephb2, Gli3, and Lrp6 contributing strongly. The MGP effect showed moderate overall correlation with Ankrd11 mutant phenotype (r=0.339, p=0.0001), but substantially higher correlation for palate-specific landmarks (r=0.536).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 establish the palate development analysis with appropriate statistical validation via permutation testing (C36). The differential correlation between full landmark set (C39) and palate-specific landmarks (C40) is biologically meaningful and demonstrates anatomical specificity. The connection to KBG syndrome (C37-C38) provides clinical relevance, though the mutant used is heterozygous which may reduce effect size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "380029e4-2fb3-4d15-850d-50f378360af0",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of marker importance revealed heterogeneity across processes: chondrocyte differentiation showed high sensitivity to single marker removal (r=0.346 after removing Ccn3/Nov), while L/R symmetry was robust (r=0.95 after removing top 10 markers). Across 500 processes, 51.6% showed a marker with 0.5\u00d7 larger effect than others, 36.6% showed 2\u00d7 larger effects, and 20% showed 3\u00d7 larger effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 provide systematic evaluation of single versus joint marker effects through sensitivity analysis. The contrasting examples (chondrocyte vs L/R symmetry) effectively demonstrate the range of genetic architectures. The analysis of 500 processes (C67-C69) provides appropriate context, though the specific threshold choices (0.5\u00d7, 2\u00d7, 3\u00d7) appear somewhat arbitrary and lack justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pairwise comparison of 15 craniofacial development processes revealed moderate clustering structure (cophenetic correlation=0.648, p=7.6\u00d710\u207b\u00b9\u2074), suggesting that developmentally similar perturbations tend to produce phenotypic effects in similar directions. This convergence indicates that multiple pathways lead to common developmental outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 establish the clustering analysis with appropriate statistical validation (C50-C51). The supporting literature (C52-C55) provides biological context for pleiotropy and developmental integration. However, the interpretation of \"moderate\" correlation (0.648) as indicating \"significant structure\" (C51) could be debated. The claims about convergence (C56-C58) are supported by the data but represent interpretations that extend beyond the direct statistical findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "39498ddd-6cf9-4519-b936-bf2e4962a61e",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study used 1145 Diversity Outbred mice from three laboratories across seven generations, genotyped with MegaMUGA (77,808 markers) or GigaMUGA (143,259 markers) arrays, yielding 123,309 SNPs after imputation. Craniofacial shape was quantified using 54 3D landmarks from micro-CT scans at 0.035mm resolution. Kinship analysis showed mean=0, SD=0.047.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 and C71 comprehensively describe the study design, sample composition, genotyping, phenotyping, and quality control. The methods are standard for DO studies and appropriately documented. The low kinship values (C49) justify not adjusting for relatedness. However, the multi-laboratory and multi-generation design introduces potential batch effects that are addressed by regression (mentioned in methods) but could still be a source of variation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "8377c9e4-e456-40a9-aee3-6730ab44f905",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The process MGP approach is generally applicable to any continuously varying phenotype. The authors developed an online application (https://genopheno.ucalgary.ca/MGP/) allowing users to perform custom process-centered craniofacial shape analyses in the DO population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 makes a broad generalization about applicability to \"any continuously varying phenotype\" that is not directly tested in this manuscript, which focuses exclusively on craniofacial shape. While the statistical framework (PLS) is indeed general, the claim requires validation in other phenotypic domains. Claims C60-C61 about the web application are factual statements about a resource, which is valuable but represents a tool rather than a scientific finding requiring evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The introduction establishes that craniofacial shape is moderately to highly heritable (30-70%) but remains poorly understood genetically despite many studies. The trait is extraordinarily polygenic, with genes having major developmental roles often contributing little to variation, while unexpected genes emerge as significant contributors. Genetic effects depend on background and show variable penetrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 synthesize prior literature to establish the scientific context and motivation for the study. All claims are supported by appropriate citations to published research. These represent accurate characterizations of the field based on the cited literature, though they are background claims rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    },
+    {
+      "id": "8e691a11-27c0-4055-8af6-6b325553cbbc",
+      "content_id": "387c8924-3638-4884-8de0-95e0c16501d0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ift88 is a core component of primary cilia responsible for promoting developmental signals involved in many facets of facial development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a factual statement about Ift88 function supported by citation (Tian et al., 2017). This is background information used to contextualize the web application example rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T08:52:24.022976Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fb30548-cb2b-419d-818e-2550bfe1e953",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "3d7ef903-85c5-42a8-9bdf-bd1e66a39cd5",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "503bae19-6ad8-4e2c-958d-5e8c494a5109",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "7b459354-e418-4cf3-a769-c542a56f3464",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "118c2bb2-d5ab-4619-9864-1ae25540d6a9",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "cccae84c-75c1-4978-ba1b-b0306ffec620",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "5154f6e5-3a53-487d-b6a1-b961d46a8896",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "6673c601-efb3-4a3a-af3a-1efca1930f58",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "39e7ce75-ec96-4d35-8ae7-955d2f556f57",
+      "result_id": "802e4562-20bb-4dc2-94c3-eb9fca796ae3"
+    },
+    {
+      "claim_id": "6cb06374-c1dd-4b2a-ab14-16f5073a2980",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "1ebbd760-de6a-4b34-bf2f-9a0cebd62c5c",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "afbe073c-d15c-4e28-a842-bd2c20d2c2d3",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "dc23cee8-e2b5-43f9-84f8-76d3175f9503",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "f457db14-c77b-44d6-a19e-581867bb1be2",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "fea49ae9-402f-4c53-873d-9728790765e1",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "cb9a79ba-8e52-427a-bd8a-6deba15afe1c",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "40ef70cb-6d07-45bf-b17c-ac53aa3e8357",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "485969cd-7246-4978-8706-6874aa4bef7c",
+      "result_id": "4bc6815a-b346-4fa8-bdf4-e25bcfc246fa"
+    },
+    {
+      "claim_id": "d612c43b-45e3-4d13-b047-46ebe8710153",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "e3f7f2e2-c19b-4241-935d-5fed00d0f4f3",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "9a204048-e22f-40fe-8700-2b34f5b50ee8",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "fb1144c4-0572-4646-8739-01c7abafa6ac",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "4b59c195-5f62-4cf1-a9ee-5798651804f5",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "efcd0fd4-a831-472b-82b1-ed333ea3b9d9",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "f1414772-6619-4c24-b97c-34e5dcbfd6f4",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "0b364048-7287-4e10-855c-9a9e61c5c575",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "435d0e78-9857-4000-a72e-3e463d924985",
+      "result_id": "9156fc9d-154e-4ce0-aa08-7f8f164c3ec0"
+    },
+    {
+      "claim_id": "1bdccb7f-d5b9-4128-9264-9056ba2706f9",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "e0740bf3-9b12-4368-a10a-13cb81b721a4",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "1f2b772f-ef52-466e-9d5c-dd6cd0d5324e",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "b43018ba-7a34-41c9-91c9-2bea562e7ef2",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "a1af0343-a941-4bb0-afff-5f7f5b315bb5",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "6533a86a-ff5c-4d60-b32c-4f8e2571325f",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "189ced8e-84a4-4b29-9e39-04a5804f8e82",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "072e606f-cec0-4a3d-9749-1c4a0b27ada3",
+      "result_id": "2938115d-a136-4ed2-be7e-b18d6623c385"
+    },
+    {
+      "claim_id": "48806432-233e-4b4d-a246-4f08f350996b",
+      "result_id": "380029e4-2fb3-4d15-850d-50f378360af0"
+    },
+    {
+      "claim_id": "d1ca6b75-d4f1-4bd0-917f-1d992abf76eb",
+      "result_id": "380029e4-2fb3-4d15-850d-50f378360af0"
+    },
+    {
+      "claim_id": "040f127d-88c7-4fb6-a26e-d8f01382cac0",
+      "result_id": "380029e4-2fb3-4d15-850d-50f378360af0"
+    },
+    {
+      "claim_id": "1480f333-28f3-4460-bc99-04c05346d48f",
+      "result_id": "380029e4-2fb3-4d15-850d-50f378360af0"
+    },
+    {
+      "claim_id": "45829dc4-9fef-4e45-864c-01948cdda546",
+      "result_id": "380029e4-2fb3-4d15-850d-50f378360af0"
+    },
+    {
+      "claim_id": "996a866f-0e5d-4dc6-8acf-b5148169290f",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "277d1887-0f56-4cbf-ae73-153bbf62b266",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "531d7917-9264-49d4-b046-62999c9f830c",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "4df688af-869d-41c2-883c-7d7180f0e1b6",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "adc1d8be-43aa-48af-b246-4dcd008889d3",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "7460d74e-b8bc-4685-94e1-7eee9da23abf",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "041b3039-9e6c-4550-9db6-9a717889d2d2",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "533b2c34-fd4e-4af3-b5fd-57aa1290b038",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "21f75a13-2277-4d7b-a2b3-870510bb4cce",
+      "result_id": "efc2417d-8033-4f17-bfa5-65f443c5a4d9"
+    },
+    {
+      "claim_id": "1685833e-54bd-4253-8d3b-f949647a96f4",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "59cc5983-224a-4c79-abd1-931d4b2f544e",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "4b9b3758-dcf3-4966-81dc-60f40514c36d",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "3e3b173b-9fb7-4c44-a03e-15c20b090676",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "ee998cf9-a9cc-4377-90df-70b4987b7daa",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "3eac6040-0101-4d05-8cbf-61ed2fb52b67",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "47cd3c39-f72b-4517-ae2c-78fab4ac6600",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "72bc90b4-0a25-461b-a99b-5b6e9e4de637",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "38ad97b0-71f6-4590-829b-ec87e6928a96",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "049ac963-028c-4677-9511-ef8dd9789cfe",
+      "result_id": "39498ddd-6cf9-4519-b936-bf2e4962a61e"
+    },
+    {
+      "claim_id": "80024adc-4747-4557-8744-a25884c5d0ca",
+      "result_id": "8377c9e4-e456-40a9-aee3-6730ab44f905"
+    },
+    {
+      "claim_id": "2de271d8-c9e9-43e9-aa77-580a2337b2a4",
+      "result_id": "8377c9e4-e456-40a9-aee3-6730ab44f905"
+    },
+    {
+      "claim_id": "bef47131-66dd-47e3-b0d7-a7a099bbc81f",
+      "result_id": "8377c9e4-e456-40a9-aee3-6730ab44f905"
+    },
+    {
+      "claim_id": "453c6904-1514-490e-b06c-e31097e8f75a",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "fed300c4-705b-4625-be1d-267a0d531734",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "877d618e-f00f-4cad-9f96-1281048c5090",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "bb2af520-acf7-4187-8abf-4beb8edafefc",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "48bcd7f3-81d7-4567-8064-aad4a0e754b6",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "ace4b596-eda9-4609-bbb2-ac5cb6395327",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "9b143939-76dc-418e-ad7f-768122853fdd",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "c77500dc-2969-4c88-b85b-a0b29df23703",
+      "result_id": "f25c9c9a-ddc8-4a35-81a6-9f5dc5749dc6"
+    },
+    {
+      "claim_id": "3bddfada-cd98-437c-af4f-9c815d95a7ce",
+      "result_id": "8e691a11-27c0-4055-8af6-6b325553cbbc"
+    }
+  ],
+  "comparisons": []
+}

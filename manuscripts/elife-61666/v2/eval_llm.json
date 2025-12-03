@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study recruited 244 elderly subjects (>49 years) from urban communities in Bangalore, classified them as healthy (N=227), MCI (N=12), or AD (N=5) based on clinical assessment and CDR scores, and recorded EEG while subjects viewed visual gratings. Rigorous artifact rejection and quality control procedures were applied to ensure data quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific details about recruitment, classification criteria, EEG recording parameters, and data quality control. The sample sizes, demographic information, and technical specifications are clearly stated and internally consistent across multiple claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Stimulus-induced slow gamma (20-34 Hz) and fast gamma (36-66 Hz) power were significantly reduced in MCI subjects compared to age- and gender-matched controls (slow gamma: \u03c7\u00b2(23)=4.09, p=0.043; fast gamma: \u03c7\u00b2(23)=5.61, p=0.018), while alpha power showed no significant difference (\u03c7\u00b2(23)=0.33, p=0.56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical findings for MCI subjects are clearly presented with specific test statistics and p-values. The results show significant reductions in both gamma bands but not alpha, with appropriate non-parametric testing (Kruskal-Wallis). However, the small sample size (N=12 MCI) and marginal p-values (p=0.043 for slow gamma) suggest the findings should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Both slow and fast gamma power were significantly reduced in AD subjects compared to controls (slow gamma: \u03c7\u00b2(9)=4.81, p=0.028; fast gamma: \u03c7\u00b2(9)=3.94, p=0.047), with all five AD subjects showing reduced slow gamma and four of five showing reduced fast gamma. Alpha power was not significantly different (\u03c7\u00b2(9)=0.01, p=0.92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical tests show significant differences, the extremely small sample size (N=5 AD subjects) severely limits the reliability and generalizability of these findings. The authors themselves acknowledge this limitation, stating they 'interpret these results with caution.' The p-values are also marginal and close to the significance threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52"
+    ],
+    "result": "When MCI and AD subjects were combined, gamma power was strongly reduced compared to controls (slow gamma: \u03c7\u00b2(33)=9.51, p=0.002; fast gamma: \u03c7\u00b2(33)=8.88, p=0.003), with no difference in alpha power. Regression analysis showed CDR was a significant negative predictor of gamma power, and a stronger predictor than age or gender.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combined analysis strengthens the findings by increasing sample size (N=17 cases) and showing more robust p-values. The regression analysis appropriately controls for age and gender confounds. However, combining MCI and AD subjects may obscure disease-specific differences and assumes a linear relationship between CDR and gamma power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Bayes factor analysis provided substantial evidence for reduced gamma in MCI subjects when using optimized frequency ranges (BF=3.34 for slow gamma 26-34 Hz, BF=4.60 for fast gamma 44-56 Hz), and strong evidence when MCI and AD were combined (BF=13.70 for slow gamma, BF=8.60 for fast gamma). Evidence for alpha differences favored the null hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Bayes factor analysis appropriately complements the frequentist statistics and provides additional support for the gamma findings. However, the use of 'optimized' frequency ranges raises concerns about data-driven selection that could inflate evidence. The authors acknowledge this by first reporting results with standard ranges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C26",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MCI/AD subjects and controls had comparable eye positions, microsaccade profiles, main sequence characteristics, and pupillary reactivity, ruling out eye movement differences as an explanation for reduced gamma power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The eye tracking data provide important controls to rule out confounding effects of eye movements on gamma power. The analyses are appropriate and show no significant differences between groups. This strengthens the interpretation that gamma differences reflect neural rather than behavioral differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C63"
+    ],
+    "result": "Cases and controls had comparable baseline power spectral densities and PSD slopes, with no significant differences in baseline alpha, slow gamma, or fast gamma power, indicating that gamma reductions were specific to stimulus-induced responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The baseline analyses appropriately demonstrate that differences are specific to stimulus-evoked responses rather than general differences in resting-state activity. This is an important control that strengthens the interpretation of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C64",
+      "C86"
+    ],
+    "result": "SSVEP power at 32 Hz was comparable between MCI subjects and controls (\u03c7\u00b2(13)=0.04, p=0.85), showing no significant reduction unlike the narrow-band gamma rhythms induced by static gratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SSVEP findings are clearly negative and appropriately reported. However, the sample size for SSVEP analysis was smaller (N=7 MCI) than for the main gamma analysis, and the authors note several methodological differences (frequency, timing, fewer trials) that limit direct comparison with the gamma findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In healthy subjects, fast gamma power did not vary significantly with orientation (F(3,2723)=0.87, p=0.46) with very low orientation selectivity (0.02\u00b10.002). Slow gamma showed small but significant orientation effects (F(3,2723)=6.4, p=0.0003) with low selectivity (0.03\u00b10.002). Gamma power varied significantly across spatial frequencies, with differences between cases and controls most prominent at 2 and 4 cpd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of gamma properties in healthy subjects is well-supported by statistical analysis with large sample size (N=227). The findings are consistent with prior work cited by the authors and provide important context for interpreting the case-control differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C74",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors conclude that stimulus-induced gamma power has potential as a simple, low-cost, objective biomarker for screening MCI/AD, but acknowledge that comparisons with other diagnostic methods, incremental diagnostic value, and specificity for AD versus other dementias remain open questions requiring further research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show significant gamma reductions in MCI/AD, the leap to clinical biomarker utility is premature. The authors appropriately acknowledge major limitations: no comparison with established biomarkers, no assessment of diagnostic accuracy (sensitivity/specificity), no validation cohort, and no testing of specificity for AD versus other dementias. The small sample sizes and lack of longitudinal data further limit biomarker claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In the full set of healthy subjects (N=227), regression analysis showed gamma power decreased significantly with age (\u03b2AGE=-0.018, p=0.014 for slow gamma) and was significantly higher in females (\u03b2GENDER=0.33/0.35, p=0.0070/3.15\u00d710\u207b\u2075 for slow/fast gamma).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age and gender effects on gamma power are well-documented with appropriate regression analysis and large sample size. These findings are consistent with the authors' prior work and provide important context for understanding confounds in the case-control comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study used community-based sampling from urban Bangalore, yielding prevalence rates of ~5% MCI and 2.3% AD that match previously reported prevalence in India. Most cases (~70%) had MCI rather than AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sampling approach and prevalence rates are clearly described and consistent with prior epidemiological data. However, the claim that the sample is 'representative of urban population in India' is overstated\u2014the sample is from a specific longitudinal aging cohort in one city, which may not generalize to all urban Indian populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors claim this is the first study to find abnormalities in visual narrow-band gamma oscillations elicited by Cartesian gratings in human MCI/AD. They note their findings differ from van Deursen et al. 2008 (who found increased gamma in MCI/AD), likely due to differences in task settings (grating-induced gamma versus resting-state or screensaver-evoked gamma).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim appears justified based on the specific paradigm (grating-induced narrow-band gamma in human MCI/AD). The comparison with van Deursen et al. appropriately notes methodological differences that could explain divergent findings. However, the authors should have conducted a more comprehensive literature review to support the 'first study' claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors discuss that their negative SSVEP findings at 32 Hz cannot be directly compared to rodent studies showing neuroprotective effects of 40 Hz entrainment, due to differences in frequency (32 vs 40 Hz), species (human vs rodent), and lack of cognitive/pathological outcome measures. They speculate that entrainment abnormalities may only appear in advanced AD stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately acknowledges limitations in comparing the current findings to prior rodent work. The speculation about stage-dependent effects is reasonable but unsupported by data. The authors correctly note that their study addresses diagnostic rather than therapeutic potential.",
+    "result_type": "MINOR"
+  }
+]

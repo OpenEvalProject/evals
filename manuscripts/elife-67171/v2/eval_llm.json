@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C18"
+    ],
+    "result": "The authors identify a gap in understanding the neuronal mechanisms underlying temporal-order learning, particularly how the brain bridges the timescale mismatch between slow behavioral sequences (seconds) and fast synaptic plasticity (milliseconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C8, and C18 establish the scientific context and identify a clear gap in knowledge. These are well-supported by citations and represent established understanding in the field. The claims accurately describe the problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C25"
+    ],
+    "result": "The authors establish the biological basis for their model, including properties of hippocampal place cells, STDP, and phase precession, all supported by experimental literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C17 and C25 describe established neuroscience phenomena that form the foundation of the model. All claims are supported by appropriate citations to experimental work. These represent accurate descriptions of prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C19",
+      "C33",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Phase precession dramatically facilitates temporal-order learning for narrow (short) synaptic learning windows, increasing synaptic weight changes and signal-to-noise ratios by up to an order of magnitude, thereby bridging the timescale gap between behavioral sequences and STDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C19, C33, C46-C48 represent the core findings of the study. These are supported by both mathematical analysis (Equations 4-7, 19-22) and numerical simulations (Figures 2-3). The analytical derivations are mathematically sound, and simulation results match theoretical predictions well. The order-of-magnitude improvement is quantified (B_max \u2248 10 for typical parameters).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The authors assume that temporal order is encoded in asymmetric synaptic efficacies, where neurons activated earlier have strengthened connections to neurons activated later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 describe a core model assumption that is explicitly stated and reasonable. While this is an assumption rather than a proven mechanism, it is clearly identified as such and forms a logical basis for the analysis. The assumption is consistent with associative chaining models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C38",
+      "C59",
+      "C7"
+    ],
+    "result": "Only the asymmetric (odd) component of STDP learning windows supports temporal-order learning, while symmetric (even) components strengthen connections bidirectionally and increase noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C38, and C59 are supported by mathematical analysis showing that even learning windows yield \u0394w_ij = \u0394w_ji (symmetric weight changes). The derivation showing that only W^odd contributes to temporal order (Equations 2-3) is mathematically correct. This is a key theoretical insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C36",
+      "C37"
+    ],
+    "result": "For narrow learning windows with overlapping firing fields, the maximum benefit of phase precession is approximately the number of theta cycles per firing field, with highest weight changes and SNR occurring for clearly distinct but overlapping fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C36-C37 are supported by analytical derivations (Equations 21-22) and simulations (Figure 3). The relationship B_max \u2248 0.82L/T_\u03b8 is mathematically derived and provides clear quantitative predictions. The dependence on field overlap is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C35",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Stochastic simulations reveal that approximately 14 synapses are sufficient for reliable temporal-order encoding in a single trial for typical hippocampal parameters, with SNR scaling as \u221a(MA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C35, C53-C55 are supported by stochastic Poisson simulations and analytical SNR calculations. The \u221aM scaling is correctly derived (Equation 27), and the prediction of M\u227314 synapses for SNR\u22731 is quantitatively justified. The connection to high place cell firing rates (C54) strengthens the biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C56",
+      "C57"
+    ],
+    "result": "The benefit of phase precession vanishes for wide learning windows (\u03c4 >> 1/\u03c9) but increases SNR for narrow windows, with theta oscillations without phase precession actually degrading temporal-order learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C56-C57 are supported by analytical results and simulations (Figure 4). The mathematical explanation for why wide windows average out theta modulation is sound. The counterintuitive finding that phase locking is worse than no theta (C41) is clearly demonstrated in Figure 4C and explained mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C63"
+    ],
+    "result": "The authors predict that temporal-order learning would benefit from wide, predominantly asymmetric STDP windows, but note that all experimentally observed asymmetric windows are narrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C63 are supported by the analysis in Figure 4C showing SNR increases with \u03c4 for odd windows. The observation that experimental windows are narrow (C43) is well-cited. However, this creates a tension between theoretical predictions and experimental observations that the authors acknowledge but do not fully resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C58"
+    ],
+    "result": "For wide learning windows and non-overlapping firing fields, phase precession provides no benefit, but temporal-order learning is still possible with SNR \u2248 2.2 for A=10, allowing single-synapse encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C58 are supported by analytical approximations (Equations 23-25) and simulations (Figure 5). The derivation for non-overlapping fields is mathematically sound. The SNR calculation (Equation 10) correctly shows that wide windows can bridge temporal gaps without phase precession.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "For narrow STDP windows, the slope of the cross-correlation function at zero offset controls synaptic weight changes, and phase precession substantially increases this slope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by the mathematical analysis in Equations 3-4 and 18. The insight that C'_ij(0) determines weight changes for narrow windows is a key theoretical contribution. The prediction that features beyond the learning window width are irrelevant (C69) follows logically from the mathematics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The learning window from Bittner et al. 2017 shows mild asymmetry unfavorable for temporal-order learning, but neuromodulation can alter STDP window properties, potentially allowing behavioral state-dependent sequence learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C66 are supported by citations and analysis. The assessment of Bittner et al.'s window (C62) is justified by the model's predictions. The neuromodulation claims (C64-C65) are well-cited. The speculation about behavioral modulation (C66) is reasonable but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors compare their work to alternative mechanisms for sequence learning, including persistent activity (Drew and Abbott 2006) and prior network models (Sato and Yamaguchi 2003; Shen et al. 2007).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 accurately describe prior work and position the current study within the literature. The comparisons are appropriate and the citations are accurate. This provides important context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Phase precession is weak in species with weak theta oscillations (bats, humans), but temporal-order learning could still be enhanced through alternative mechanisms like synaptic short-term facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by appropriate citations. The speculation about alternative mechanisms is reasonable and extends the model's applicability. However, this remains a theoretical prediction without direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model assumes weak recurrent connections during encoding with feedforward-dominated activity, and that phase precession is inherited from upstream inputs or generated locally rather than by recurrent networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe key model assumptions that are explicitly stated and justified with citations (Hasselmo 1999, Haam et al. 2018). These assumptions are reasonable for the encoding phase and are clearly distinguished from the replay phase. The authors acknowledge alternative mechanisms and cite supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Theta traveling waves in the hippocampus could preserve temporal order in phase-precession-induced compressed spike timing, potentially addressing issues with different firing field widths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by citations to experimental work on traveling waves. The speculation about preserving temporal order (C78) is reasonable and addresses a potential limitation of the model, though it remains untested in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Triplet STDP models show only mild differences from pairwise STDP for the hippocampal parameters used, suggesting the main results are robust to this alternative plasticity rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by simulations using the Pfister and Gerstner 2006 triplet model with hippocampal parameters. The finding of mild differences (Figure 4C) strengthens confidence in the main results. The explanation based on time constants is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model predicts that phase precession enables efficient and robust temporal-order learning, and the authors suggest experiments manipulating STDP windows or phase precession to test this hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 represent the main conclusions and future directions. C81 is well-supported by citations to replay literature. C82 summarizes the model's predictions, which are supported by the analyses. C83 provides testable experimental predictions, though these remain to be performed.",
+    "result_type": "MAJOR"
+  }
+]

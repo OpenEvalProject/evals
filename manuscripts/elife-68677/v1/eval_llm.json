@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Human RAD9A and RAD9B share 36% identity, while HUS1 and HUS1B are 48% identical, based on prior published work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by citations to prior published work (Dufault et al., 2003; Hang et al., 2002). These are established facts from the literature and serve as background information for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Phylogenetic and genomic analyses reveal that Rad9b is conserved across placental mammals, Rad9a was lost in some species, the Rad9a/Rad9b duplication occurred before bony fish evolution, Hus1b arose from a mammalian retrocopy event, and Rad1 is highly conserved with no paralog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 are supported by genomic sequence analysis, phylogenetic analysis, and ortholog matrix analyses presented in Figure 1A and B. The methods are appropriate for evolutionary inference, though C6 involves some speculation about the retrocopy duplication event.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Expression analysis reveals that 9-1-1 paralogs (RAD9B, HUS1B) are highly expressed in testes, particularly in spermatocytes, while canonical subunits (RAD9A, HUS1) are highest in spermatogonia. ATR pathway genes show cell-type-specific expression patterns in mouse and human testis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 are supported by single-cell RNA-sequencing data from mouse testis (Figure 1C and supplements) and Human Protein Atlas data. The expression patterns are consistent across datasets and provide strong evidence for cell-type-specific roles of 9-1-1 complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Evolutionary rate covariation (ERC) analysis and prior protein interaction studies support the existence of alternative 9-1-1 complexes (9B-1-1 and 9B-1-1B) containing RAD9B and/or HUS1B with RAD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by ERC analysis (Figure 2A) showing significant correlations between RAD1, HUS1, and RAD9B, combined with prior biochemical evidence of protein interactions. The inference of alternative complex formation (C20) is reasonable given the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Rad1 conditional knockout (CKO) mice show significant reduction in RAD1 protein in testes at both juvenile and adult stages, with reduced testis size but normal body weight at 4 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by immunoblotting data (Figure 2C and supplement) and testis weight measurements (Figure 2D). The data demonstrate successful conditional knockout with tissue-specific effects. Sample sizes appear adequate (n=3-5 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Rad1 CKO mice exhibit increased apoptosis of zygotene/pachytene-stage cells starting at 4 weeks, with significantly elevated TUNEL-positive cells compared to controls. Some round spermatids persist, and tubule analysis shows severe germ cell depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by histological analysis, TUNEL staining, and quantification (Figure 2E-G and supplements). Statistical significance is demonstrated with appropriate tests. The observation of some remaining spermatids (C26) is correctly attributed to incomplete CRE recombination or protein perdurance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "TRA98 and LIN28 staining reveal progressive germ cell loss in Rad1 CKO mice starting after meiotic entry, with no pre-meiotic defects at 8 dpp but significant loss of both germ cells and spermatogonial stem cells by 12 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by TRA98 and LIN28 immunostaining quantification (Figure 2\u2014figure supplement 2). The temporal analysis (8 dpp, 4 weeks, 12 weeks) appropriately demonstrates that defects arise after meiotic entry. The late loss of LIN28+ cells (C35) is reasonably attributed to indirect effects of germ cell depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RAD1 localizes to meiotic chromosomes in a stage-specific pattern in control cells, with foci on unsynapsed and synapsed cores during leptonema and zygonema, and enrichment at sex chromosomes in pachynema. In Rad1 CKO mice, 43% of cells lack RAD1 completely, and cells with detectable RAD1 have significantly fewer foci, with approximately 72% of cells showing meiotic defects overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by immunofluorescence staining and quantification (Figure 3A and supplements). The localization patterns are consistent with prior work (cited). The quantification of RAD1-deficient cells and functional defects is thorough, though the incomplete penetrance complicates interpretation and is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RAD9A and RAD9B localize to meiotic chromosomes in control cells with stage-specific patterns, showing abundant foci during leptonema and zygonema. In Rad1 CKO mice, RAD9A and RAD9B foci are absent in 79% and 72% of cells, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 are supported by immunofluorescence staining data (Figure 3B and C). The dependency of RAD9A and RAD9B localization on RAD1 supports the model of heterotrimeric 9-1-1 complex formation. Quantification is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Rad1 CKO mice show severe synapsis defects, with 59.5% \u00b1 4.3% of meiocytes having unsynapsed chromosomes or aberrant synapsis, while 100% of control cells display normal synapsis. Cells lacking RAD1 have an average of only 8 fully synapsed chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by SYCP1/SYCP3 co-staining (Figure 3D and supplements). The quantification is rigorous with adequate sample sizes. This represents a major phenotypic difference from Hus1 or Rad9a CKO mice, which do not show synapsis defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "\u03b3H2AX staining reveals DNA damage signaling defects in Rad1 CKO mice, with 97% of pachytene-like cells showing \u03b3H2AX at asynaptic sites but lacking a clear sex body. Some asynaptic regions lack \u03b3H2AX entirely, and even cells with normal synapsis show XY body defects in 15.1% \u00b1 11.5% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by \u03b3H2AX immunofluorescence staining (Figure 3E and supplements). The observation of asynaptic regions lacking \u03b3H2AX (C55) is particularly interesting and suggests incomplete ATR signaling. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Rad1 CKO meiocytes with asynapsis fail to progress past mid-pachynema, as evidenced by absence of H1T staining and lack of MLH1 foci, contrasting with apparently normal MLH1 formation in Hus1 CKO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by H1T and MLH1 immunofluorescence staining (Figure 3\u2014figure supplement 2D and E). The comparison to Hus1 CKO mice highlights the more severe phenotype of Rad1 loss. The inference about cell cycle arrest is reasonable given the marker data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DSB repair is compromised in Rad1 CKO spermatocytes, with significantly reduced RPA and MEIOB foci in leptotene-stage cells and persistence of these markers in pachytene-like cells. RPA foci appear larger in CKO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by RPA and MEIOB immunofluorescence staining and quantification (Figure 4A-D). The reduced loading and persistence of ssDNA markers suggest defects in DSB processing and repair. The observation of larger RPA foci (C61) is qualitative but supported by images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RAD51 loading is significantly reduced in Rad1 CKO meiocytes during leptonema and zygonema, but RAD51 foci persist at elevated levels in pachytene-like cells, indicating DSB repair defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by RAD51 immunofluorescence staining and quantification (Figure 4E and F). The pattern of reduced loading followed by persistence is consistent with impaired DSB repair. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Irradiation experiments demonstrate that control mice respond to exogenous DSBs with increased RPA and RAD51 focus formation, but Rad1 CKO spermatocytes fail to show this response, indicating a DSB repair defect rather than reduced DSB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by immunofluorescence staining of irradiated mice (Figure 4G-H and supplements). This experiment effectively distinguishes between DSB formation and repair defects, strengthening the conclusion that 9-1-1 complexes are required for DSB repair rather than formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "ATR and TOPBP1 localization is compromised in Rad1 CKO meiocytes, with both proteins localizing to only a subset of asynaptic regions in pachytene-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by ATR and TOPBP1 immunofluorescence staining (Figure 5A and B). The partial localization defects suggest that 9-1-1 complexes are important but not absolutely required for ATR/TOPBP1 recruitment, or that extensive asynapsis overwhelms the available pool of these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CHK1 phosphorylation at ATR target sites (S317 and S345) is absent in Rad1 CKO meiocytes at all prophase I stages, as confirmed by immunofluorescence and immunoblotting. In contrast, Hus1 CKO mice show normal CHK1 phosphorylation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by immunofluorescence staining and immunoblotting (Figure 5C-D and supplement 1A). The complete absence of pCHK1 in Rad1 CKO but not Hus1 CKO mice strongly supports a role for alternative 9-1-1 complexes in CHK1 activation during meiosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "ERC analysis reveals evolutionary correlations between 9-1-1 subunits and cohesin/SC proteins. SMC3 phosphorylation at S1083 is reduced in Rad1 CKO spermatocytes and ATR inhibitor-treated mice, while total SMC3 loading is normal. Hus1 CKO cells show normal pSMC3 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by ERC analysis (Figure 5\u2014figure supplement 1B-C), immunofluorescence staining, and immunoblotting (Figure 5E-F and supplements). The ATR inhibitor experiment (C79) confirms ATR-dependent SMC3 phosphorylation. The contrast with Hus1 CKO supports a role for alternative 9-1-1 complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "HORMAD1 and HORMAD2 localize normally to all unsynapsed regions in Rad1 CKO cells, but HORMAD2 phosphorylation is detected at only a subset of unsynapsed regions in pachytene-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by HORMAD1, HORMAD2, and pHORMAD2 immunofluorescence staining (Figure 6A-C). The normal localization but reduced phosphorylation of HORMAD2 indicates that HORMADs can localize independently of 9-1-1 complexes but require them for ATR-dependent phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "BRCA1 fails to localize properly in Rad1 CKO cells with extensive asynapsis, coating only a subset of asynaptic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by BRCA1 immunofluorescence staining (Figure 6D). The partial localization defect is consistent with the ATR and TOPBP1 localization defects and supports a role for 9-1-1 complexes in meiotic silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Meiotic sex chromosome inactivation (MSCI) is disrupted in Rad1 CKO mice, with 27.8% \u00b1 19.1% of cells with normal synapsis failing to exclude RNA Pol II from the XY body, and 28.9% \u00b1 3.2% of cells showing inappropriate Scml2 expression (vs. 7.1% \u00b1 0.6% in controls).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by RNA Pol II immunofluorescence staining and Scml2 RNA FISH (Figure 6E-F). The analysis appropriately focuses on cells with normal synapsis to avoid confounding effects of asynapsis. Statistical significance is demonstrated (p<0.0001 for Scml2). The high standard deviation for RNA Pol II exclusion (C85) suggests variability but the effect is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Testis-specific RAD1 loss results in homolog asynapsis, compromised DSB repair, faulty ATR signaling, and impaired meiotic silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a summary of the main findings supported by the collective evidence from multiple experiments (Figure 6G). This integrative claim is well-supported by the individual results described above.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Prior work showed that loss of Hus1 or Rad9a leads to unrepaired DSBs and germ cell death, but homolog synapsis, ATR activation, and meiotic silencing remain normal in the absence of canonical 9A-1-1 subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by citations to prior published work and confirmed by the current study's observations in Hus1 CKO mice. This provides important context for interpreting the more severe Rad1 CKO phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Rad1 CKO mice are infertile, with no epididymal sperm and no viable offspring from matings with wild-type females, while control mice produce normal numbers of pregnancies and pups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by sperm count data (Table 1) and fertility testing. The complete infertility is consistent with the severe meiotic defects observed. Sample sizes for fertility testing are adequate (n=3 males per genotype, 12-15 matings).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The reduced testis weight and increased apoptosis in Rad1 CKO mice are more severe than in Hus1 or Rad9a CKO mice, suggesting a broader role for RAD1 in meiocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by comparison of phenotypes between different knockout models, with citations to prior work. The inference of a broader role for RAD1 is reasonable given the additional phenotypes (synapsis defects, MSCI defects) not seen in Hus1 or Rad9a CKO mice.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2014 @@
+{
+  "submission": {
+    "id": "09820ed6-5969-4f25-a09c-078d1e705ceb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:39:44.672962Z",
+    "updated_at": "2025-12-03T06:39:44.672962Z"
+  },
+  "content": [
+    {
+      "id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "submission_id": "09820ed6-5969-4f25-a09c-078d1e705ceb",
+      "content_type": "manuscript",
+      "content_text": "# Variation in the modality of a yeast signaling pathway is mediated by a single regulator\n\n## Authors\n\n- Julius Palme<sup>1</sup> ([ORCID: 0000-0001-5897-1334](https://orcid.org/0000-0001-5897-1334))\n- Jue Wang<sup>2</sup>\n- Michael Springer<sup>1</sup> ([ORCID: 0000-0002-3970-6380](https://orcid.org/0000-0002-3970-6380)) \u2020\n\n### Affiliations\n\n1. Department of Systems Biology, Harvard Medical School Boston United States\n2. Department of Chemical Engineering, University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBimodal gene expression by genetically identical cells is a pervasive feature of signaling networks and has been suggested to allow organisms to hedge their \u2018bets\u2019 in uncertain conditions. In the galactose-utilization (GAL) pathway of Saccharomyces cerevisiae, gene induction is unimodal or bimodal depending on natural genetic variation and pre-induction conditions. Here, we find that this variation in modality arises from regulation of two features of the pathway response: the fraction of cells that show induction and their level of expression. GAL3, the galactose sensor, controls the fraction of induced cells, and titrating its expression is sufficient to control modality; moreover, all the observed differences in modality between different pre-induction conditions and among natural isolates can be explained by changes in GAL3\u2019s regulation and activity. The ability to switch modality by tuning the activity of a single protein may allow rapid adaptation of bet hedging to maximize fitness in complex environments.\n\n## Introduction\n\nNon-genetic heterogeneity is a pervasive feature of gene expression and cellular signaling (K\u00e6rn et al., 2005; Bal\u00e1zsi et al., 2011; Raj and van Oudenaarden, 2008). Bimodal responses, where cells in an isogenic population adopt one of two distinct states, are particularly important for microbes coping with fluctuating environments (Grimbergen et al., 2015; Veening et al., 2008) and cells of multicellular organisms differentiating into discrete types (Xiong and Ferrell, 2003; MacArthur et al., 2009).\n\nThe galactose-utilization (GAL) pathway in Saccharomyces cerevisiae is a well-characterized bimodal response and a classic model of microbial decision-making (Johnston, 1987; Bhat, 2008). Bimodality of GAL gene expression has been attributed to bistability arising from positive feedback through the Gal1p kinase and the Gal3p transducer (Venturelli et al., 2012; Acar et al., 2005). Perturbations of many of the components of the GAL pathway such as the Gal2p permease, the Gal4p activator, and the Gal80p repressor have been found to affect quantitative features of the GAL response (Acar et al., 2005; Hawkins and Smolke, 2006; Acar et al., 2010; Ramsey et al., 2006) and in principle could modify the feedback in the system and thus affect whether the response is bimodal or unimodal. However, only changes in Gal1p and Gal3p Venturelli et al., 2012; Acar et al., 2005 have been shown to affect modality.\n\nOur existing insight into modality in the GAL system comes almost entirely from measuring one pathway phenotype, the induced fraction, under one environmental perturbation, galactose titration (Venturelli et al., 2012; Acar et al., 2010; Venturelli et al., 2015; Peng et al., 2015; Lee et al., 2017). The few studies that have deviated from this experimental approach have resulted in observations that raise new questions. For example, the GAL response was found to be unimodal or bimodal depending on the carbon source prior to encountering galactose (Biggar and Crabtree, 2001); the molecular basis of this behavior is unknown. In our own previous work that focused on differences in GAL genes induction in mixtures of glucose and galactose between natural isolates (Lee et al., 2017; Wang et al., 2015), we noted that some strains showed a bimodal response while others had a unimodal response (Lee et al., 2017). These differences provide an opportunity to dissect the genetic basis underlying the differences in modality.\n\nIn this work, we confirm and expand the observation that the pattern of GAL pathway induction can be either unimodal or bimodal depending on genetic background and pre-induction conditions. A phenomenological model of GAL induction led us to a conceptual framework for variation in modality that identified the relative thresholds of induced fraction and expression level regulation as the two critical factors. Using this simple framework, we can explain the variation in modality we observed and predict how new perturbations would affect modality. Finally, we show that both natural variation and pre-induction conditions achieve changes in modality by tuning the expression and activity of a single signaling protein in the GAL pathway. These results reveal a simple evolutionary mechanism by which organisms can shape their responses to the environment, and suggest that modality is a highly adaptable feature of a signaling response.\n\n## Results\n\n### Genetic and environmental factors affect the modality of the GAL response\n\nTo study what causes the GAL response to be unimodal in some strain backgrounds and bimodal in other strain backgrounds, we measured the expression of a GAL1 promoter driving YFP (GAL1pr-YFP) in 30 geographically and ecologically diverse yeast strains (Wang et al., 2015; Liti et al., 2009; Cromie et al., 2013) grown in different combinations of glucose and galactose (Figure 1A). We titrated glucose concentration in a constant concentration of galactose and observed that some displayed bimodal population distributions (Figure 1B, \u2018DBVPG1106\u2019) while others displayed unimodal population distributions with a glucose-dependent GAL1 expression level (Figure 1B, \u2018BC187\u2019, Figure 1\u2014figure supplement 1;\u00a0Ricci-Tam et al., 2021). Both unimodal and bimodal population distributions were stable even when cells were kept in the same environment for 24 hr (Figure 1\u2014figure supplement 2), suggesting that the difference in modality is a steady-state phenomenon. In addition, we studied what causes the modality of the GAL response to change based on growth history. Biggar and Crabtree, 2001, previously showed that populations of the laboratory strain S288C had a unimodal GAL induction when grown with raffinose as a carbon source prior to encountering mixtures of glucose and galactose, but a bimodal response when mannose was used as the initial carbon source (Figure 1C). In contrast to our results when titrating galactose in the presence of glucose, all 30 of our natural isolates showed bimodal responses when we titrated the galactose concentration in the absence of glucose (Figure 1D, Figure 1\u2014figure supplement 3). These observations suggest that glucose plays a critical role as a second input to the bistable GAL pathway that can cause a qualitative change in the modality of GAL pathway induction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental workflow. Natural isolates of yeast tagged with a fluorescent reporter of GAL1 (GAL1pr-YFP) expression were first grown in synthetic (S) medium with a pre-induction carbon source for 16 hr, then switched to S medium with mixtures of glucose and galactose. After 8 hr, GAL1 expression was analyzed by flow cytometry. (B\u2013C) GAL induction of two natural isolates (DBVPG1106 and BC187) or a lab strain (S288C) in mixtures of glucose and galactose after pre-induction growth in raffinose or mannose. Glucose concentration was titrated in twofold steps from 0.0039% to 1% while galactose concentration was kept constant at 0.25%. Top: Induction profiles of two natural isolates. Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance. Galactose concentration was titrated in twofold steps from 1% to 0.0039%. Bottom: Blow out of two histograms of YFP level normalized by side scatter (SSC) at a single concentration of glucose and galactose (see Figure 1\u2014figure supplement 4 for histograms of all conditions). Since the GAL pathway responds to the ratio of galactose and glucose (Escalante-Chong et al., 2015), increasing the glucose concentration while keeping the galactose concentration constant simultaneously decreases GAL activation and increases glucose repression. All measurements are representative examples of at least two independent repeats. Repeat measurements are plotted in Figure 1\u2014figure supplement 5. (D) GAL induction of two natural isolates in different galactose concentrations after pre-induction growth in raffinose.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%. Orange isolate names indicate unimodal induction, blue isolate names indicate bimodal induction.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Galactose concentration is titrated in twofold steps from 1% to 0.0039%.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-figsupp4-v2.jpg)\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Each line represents an independent repeat. Glucose concentration was titrated in twofold steps from 0.0039% to 1%. Galactose concentration was kept constant at 0.25%.\n\n### Differences in induction and expression level regulation can explain the variation of modality\n\nIn the absence of galactose, Gal80p binds the transcription factor Gal4p and keeps it in an inactive state (Lue et al., 1987; Wu et al., 1996). In the presence of galactose, Gal3p binds Gal80p, releasing Gal4p from the Gal80p-Gal4p complex, and allowing Gal4p to drive the transcription of a number of GAL genes. The initiation of transcription of the galactose sensors Gal1p and Gal3p by Gal4p creates a positive feedback loop, and this is believed to be the mechanism underlying the bistability of the system (Venturelli et al., 2012).\n\nWhile glucose can completely inhibit the GAL response, its role in determining the modality of the response has been poorly explored. Glucose has two inhibitory effects on the GAL pathway. (1) It indirectly decreases the intracellular concentration of galactose through competition for binding to transporters (Escalante-Chong et al., 2015). This in turn decreases the amount of active Gal3p and thereby affects the fraction of cells that induce the GAL pathway (induced fraction) (Ricci-Tam et al., 2021). (2) It directly increases the activity of the transcriptional repressor Mig1p which regulates GAL4 expression and thereby decreases the expression of GAL genes (induction level) (Ricci-Tam et al., 2021;\u00a0Figure 2A). Because the system is bimodal in pure galactose, glucose cannot drive unimodality solely through the transporter-dependent indirect effect, leading us to suspect that the Mig1p-dependent mechanism is responsible.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic description of the GAL pathway with indirect or direct inhibition by glucose. (B\u2013C) Modeling results for varying expression level regulation with constant induced fraction regulation (B) or varying induced fraction regulation with constant expression level regulation (C). The induced fraction and mean induced level curves were chosen to be Hill functions based on empirical data (e.g. Figure 1\u2014figure supplement 5). To create a population distribution, normal distributions were defined around the mean (log) induced level and a constant uninduced expression level, with standard deviations determined by fitting to observed distributions (Figure 2\u2014figure supplement 1). The overall expression distribution is the induced-fraction-weighted sum of induced and uninduced distributions. For the uninduced subpopulation, the relative expression level was set to 10\u22123. Model results are represented by histograms at nine different glucose and galactose combinations. The intensity of the color on the plot corresponds to the density of cells with a given induction value. This analysis can be extended to a continuous range of induced fraction and induced level behaviors (Figure 2\u2014figure supplement 2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Points represent the population mean of unimodal strains in nine different combinations of glucose and galactose (see Figure 1\u2014figure supplement 1). The orange line represents a manual fit to the data (standard deviation = \u22120.2 * (log10(population mean + 1.75)2 + 0.4)).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Simulations were performed as described in Figure 2. The color of the panel describes the modality of the induction profile (see Materials\u00a0and\u00a0methods).\n\nWe built a phenomenological model of the GAL pathway to determine whether independently tuning the indirect and direct effects of glucose are sufficient to change modality. Based on our measurements of the pathway response (Ricci-Tam et al., 2021), we mathematically described the indirect and direct effects of glucose as Hill functions that decrease with increasing glucose concentration, with the final induction profiles being a simple product of these composite functions. To simulate a range of population induction profiles, we generated population distributions for the induced fraction and induced level from a normal distribution whose standard deviation is derived from GAL gene expression measurements (Figure 2\u2014figure supplement 1; Materials\u00a0and\u00a0methods). We then varied the glucose threshold for the induced level while keeping the glucose threshold for the induced fraction constant (Figure 2B) or the glucose threshold for the induced fraction while keeping the glucose threshold for the expression level constant (Figure 2C). Indeed, changing either can switch the population behavior between unimodal and bimodal. In both cases, the pathway is bimodal when the glucose inhibition threshold for the induction level is less than the glucose inhibition threshold for the induced fraction.\n\n### Differences in induction and expression level regulation predict the modality of natural isolates\n\nTo analyze whether natural genetic variation could change modality by altering the induced fraction or induction level, we analyzed these features in our 30 natural yeast isolates. First, we determined the induced and uninduced subpopulations by comparing GAL reporter distributions to the distribution of an uninduced sample (as in Peng et al., 2015, Figure 3\u2014figure supplement 1). From these two subpopulations, we then calculated two summary metrics for each strain\u2019s behavior: E10 (\u2018expression level threshold\u2019), the glucose concentration where the GAL1 expression level of the induced subpopulation reaches 10% of its level in pure galactose (Figure 3A), and F90 (\u2018induced fraction threshold\u2019), the glucose concentration where 90% of cells are in the induced subpopulation (Figure 3B). Our modeling suggests that determining the E10 and F90 should be sufficient to predict whether the induction behavior is bimodal or unimodal. To test this hypothesis, we used the measured E10 and F90 as inputs into phenomenological model and computed modality. Overall, for both bimodal and unimodal strains, the experiments and models are in good agreement (Figure 3C and D, Figure 3\u2014figure supplements 2\u20133). One minor discrepancy is that metrics from unimodal strains often predict a narrow range of bimodality in our model. We believe there are two factors that might explain the difference between the experimental data and the model predictions. First, to measure the F90, there must be measurable gene induction. Therefore, the calculated F90 is a lower bound for the actual value of F90 in unimodal strains; in many cases, the calculated F90 will be higher than the actual F90. If the calculated F90 for simulations of unimodal strains is increased by even a factor of 2, the discrepancy between the behaviors disappears (Figure 3\u2014figure supplement 4). Second, the slopes of the induced fraction curves could also be subject to variation and this could affect modality. Increasing the steepness of the induced fraction curve or induced level curves by increasing the Hill coefficients in our models can make simulations more unimodal (Figure 3\u2014figure supplement 5). Indeed, some natural isolates appear to have steeper induction curves (Figure 3\u2014figure supplement 6). Overall, however, our model correctly predicts and provides a useful conceptual lens for understanding bimodality of GAL pathway induction across natural isolates.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-v2.jpg)\n\n**Figure 3.:** (A) Expression level metric (E10). GAL induction is measured in 2% galactose to determine the maximal expression level. The E10 is the glucose concentration at which the expression level of the induced subpopulation reaches 10% of the expression level in 2% galactose in the absence of glucose. (B) Induced fraction metric (F90). The induced fraction for each strain is calculated as the fraction of cells with an expression level that is outside the range of an uninduced population grown in 2% glucose (Figure 3\u2014figure supplement 1). The F90 is the glucose concentration where the induced fraction reaches 90%. (C\u2013D) Modality prediction based on induction metrics. In the phenomenological model, the position of the induced fraction and induced level functions are determined by the F90 and the E10, respectively. (E) F90 and E10 values of a panel of 30 natural isolates. Values correspond to the mean of two\u00a0to\u00a0five replicates. Modality was determined by comparing the fit of the data to a single or double Gaussian model (See Materials\u00a0and\u00a0methods). Background colors correspond to predicted regimes for unimodal and bimodal strains. Simulations with diverse combinations of F90 and E10 values as well as different slopes for the induced fraction and induced level curves delineate regimes of unimodal and bimodal behaviors. The overlap represents an ambiguous regime where both unimodal and bimodal behaviors are possible. Standard deviations of the F90 and E10 measurements are plotted in Figure 3\u2014figure supplement 7. (F) Effect of mig1\u0394 on GAL1 induction profiles.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A reference distribution from 2% glucose (black histogram) is subtracted from the population distribution (orange histogram) to yield the induced subpopulation (orange shading).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Simulations were performed as shown in Figure 3. Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Simulations were performed as shown in Figure 3. Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Simulations were identical to those in Figure 3\u2014figure supplement 3, but the experimentally determined F90 was increased twofold for simulation purposes.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Simulations were identical to those in Figure 3\u2014figure supplement 3, but the n parameter of the functions (see Figure 3 and Materials\u00a0and\u00a0methods) was increased to the highest value that was observed when the functions were fitted to experimental data (induced level curve: 1.72, induced fraction curve: 3.10, see Figure 3\u2014figure supplement 6).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The functions described in Figure 3 were fitted to (A) the induced level curves of all strains or (B) the induced fraction curves of bimodal strains and the n parameter of the fit was extracted. Shown values represent the mean of fits to replicates. Blue lines indicate the mean of all means.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp7-v2.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Left: Modality calls of natural isolate induction profiles after pre-induction growth in raffinose (Figure S1) when the smaller population size threshold is varied from 0.15. Right: Induction profiles that are always called as unimodal (\u2018BC187\u2019, \u2018YJM653\u2019), always called as bimodal (\u2018273614N\u2019, \u2018DBVPG6040\u2019, \u2018YJM981\u2019), for which the modality metric changes to bimodal when the threshold is decreased from 0.15 (\u2018S288C\u2019, \u2018YPS163\u2019) or for which the modality metric changes the unimodal when the threshold is increased from 0.15 (\u2018DBVPG1788\u2019, \u2018Y12-SGRP\u2019). Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig3-figsupp8-v2.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Values correspond to the mean of two\u00a0to\u00a0five replicates. Error bars correspond to the standard deviation.\n\nWe next scanned the parameters for our phenomenological model using a wide range of summary metrics and slopes to delimit a phase diagram of GAL induction modality. We then compared this phase diagram to the experimental data from natural isolates (Figure 3E). The modality of the natural isolates agrees well with their predicted modality in the phase diagram, supporting our hypothesis that the E10 and F90 measurements capture the important biological features that determine the modality of a strain.\n\nOur phenomenological model gives us a potential molecular explanation for unimodality: Mig1p activity leads to unimodality by inhibiting GAL4 expression in the regime where Gal3p activation is still strongly dependent on glucose and galactose. Therefore, a strong prediction of the model is that removing Mig1p regulation should restore bimodality in unimodal strains. To test this prediction, we analyzed the induction profile of a mig1\u0394 strain. Deleting MIG1 removes the glucose dependent regulation of GAL4 expression level and thus the E10 of the deletion strain is increased compared to the wild-type strain (Figure 3F). As predicted, deleting MIG1 converts the strain from unimodal to bimodal. In addition, the observed F90 value for the bimodal mig1\u0394 strain is higher than that for the unimodal wild\u00a0type. This supports our hypothesis that Mig1p-dependent repression conceals the actual F90 value of unimodal strains and that the observed F90 value of unimodal strains is a lower bound for the actual F90 value.\n\n### Differences in induction regulation explain the history\u00a0dependence in modality\n\nIt has previously been reported that pre-induction growth conditions can affect the modality of GAL induction (Biggar and Crabtree, 2001). This offers another opportunity to test the predictions from our modeling framework. To see how metabolic history affects F90 and E10, we grew 13 natural isolate strains in mannose, raffinose, acetate, or glycerol prior to transferring them into mixtures of glucose and galactose (Figure 4\u2014figure supplement 1). A range of different behaviors were observed, which could be broken into two categories of responses. The first category is strains that are unimodal in some pre-induction conditions but bimodal in others (Figure 4A and C). The second category is strains that do not change modality based on the tested pre-induction conditions; the strains are always bimodal or always unimodal in all pre-induction carbon sources tested here (Figure 4E). As predicted by the model, pre-induction conditions led to changes in F90 and/or E10 that should change modality; all our experimental results agree with the predictions from our phase diagram of GAL induction (Figure 4B,D and F). While changing either F90 or E10 in model is sufficient to change modality, we found that in response to changes in pre-induction carbon the change in F90 was considerably larger than the change in E10\u00a0(8.6 versus 1.8, respectively; Figure 4\u2014figure supplement 2). Our phenomenological model predicts that the magnitude of the changes in F90 alone are sufficient to explain the observed changes of modality.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig4-v2.jpg)\n\n**Figure 4.:** (A) History\u00a0dependence of induction profiles. Induction profiles of S288C in mixtures of glucose and galactose after pre-induction growth in different carbon sources for 16 hr. (B) F90 and E10 values for isolates that are unimodal after growth in raffinose and bimodal after growth in mannose. (C) Induction profiles of Y12-WashU after growth in different carbon sources for 16 hr. (D) F90 and E10 values for isolates that are bimodal after growth in raffinose and unimodal after growth in either acetate or glycerol. (E) Induction profiles of YPS1009 after growth in different carbon sources for 16 hr. (F) F90 and E10 values for isolates that are always unimodal or bimodal. All measurements are representative examples of two independent repeats (compared in Figure 4\u2014figure supplements 3\u20134).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%. Orange titles indicate unimodal induction, blue titles indicate bimodal induction.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Gray bars indicate the means of the maximal fold changes.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Each line represents an independent repeat. Glucose concentration was titrated in twofold steps from 0.0039% to 1%. Galactose concentration was kept constant at 0.25%.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A+B) Comparison of two independent repeats of (A) F90 and (B) E10 measurements after growth in different pre-induction conditions (Figure 4).\n\n### Differences in GAL3 expression explain the history\u00a0dependence in modality\n\nTo determine how pre-induction carbon source modulates F90, we measured the expression of GAL genes in pre-induction conditions using transcriptional reporters (Figure 5A). We found that GAL genes are down-regulated in carbon sources that lead to bimodal induction (mannose) and up-regulated in carbon sources that lead to unimodal induction (acetate, glycerol). Among all GAL genes, the expression levels of GAL3 and GAL4 show the strongest fold change between the carbon sources tested (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig5-v2.jpg)\n\n**Figure 5.:** (A) Expression of galactose-utilization (GAL) genes in different pre-induction carbon sources in S288C as determined by fluorescence of GAL promoter-YFP protein transcriptional reporter strains. (B) Effect of pre-induction growth in different carbon sources on the expression of a GAL3S288C reporter in S288C and nine natural isolates. Colors correspond to the modality of the induction profile of these strains in the given pre-induction carbon source. (C) Left: Effect of GAL3 overexpression during pre-induction growth in mannose. Connected points correspond to a doxycycline titration series for a S288C TetO7pr-GAL3 strain. Right: Complete induction profiles of S288C in mannose (I) or raffinose (II) and S288C TetO7pr-GAL3 in mannose at two concentrations of doxycycline that lead to GAL3 expression levels that bracket the expression level of GAL3 from a raffinose pre-induction culture (III, IV). (D) Left: Effect of synthetic GAL3 expression in a \u0394gal3 during pre-induction growth in different carbon sources. Connected points correspond to a doxycycline titration series in different carbon sources for a S288C \u0394gal3 TetO7pr-GAL3-mScarlet strain. Right: Complete induction profiles of S288C \u0394gal3 TetO7pr-GAL3-mScarlet after pre-induction growth in different carbon sources with constant GAL3 expression.\n\nWe hypothesized that GAL3 was more likely than GAL4 to be the dominant factor due to its high dynamic range of expression (Figure 5A) and prior evidence that GAL3 can have a large effect on the GAL decision (Acar et al., 2010). We therefore analyzed the regulation of GAL3 by a range of pre-induction carbon sources in nine natural isolates using a transcriptional reporter for the GAL3S288C promoter. We found that in each strain the GAL3 expression level in a pre-induction conditions generally correlates with the modality observed later (Figure 5B).\n\nTo test if GAL3 expression prior to induction is the key determinant of modality, we used a tetracycline-inducible promoter to control the expression of GAL3 directly. We predicted that forcing a change in GAL3 expression while keeping the pre-induction carbon the same should change modality. Conversely, changing the pre-induction carbon without changing GAL3 expression should not change modality.\n\nIndeed, we found that the pre-induction level of Gal3p, not the pre-induction carbon, is critical for setting modality. For the laboratory strain S288C, pre-induction growth in mannose leads to low GAL3 expression and a bimodal induction profile, while pre-induction growth in raffinose leads to higher GAL3 expression and a unimodal induction profile (Figures 4A and 5A). When we overexpressed GAL3 during pre-induction growth in mannose using tetracycline induction, we saw an increase in the induced fraction and a loss of bimodality (Figure 5C). Thus, the GAL3 concentration pre-induction is sufficient to set the modality in this strain background. Similarly, artificially setting the GAL3 level of mannose pre-induction cultures to that of a raffinose pre-induction culture converted the induction profiles to one similar to a raffinose pre-induction culture (Figure 5C,II and IV). In addition to showing unimodal induction after raffinose pre-induction, this strain also shows unimodal behavior after pre-induction in acetate or glycerol (Figure 4A). Next, we titrated GAL3 in a strain where the endogenous GAL3 gene was deleted to allow for constant GAL3 expression below the wild-type level. As predicted, when pre-induction GAL3 expression in these sugars was low, we saw bimodal induction almost identical to that seen with mannose pre-induction (Figure 5D). Pre-induction GAL3 concentrations also set the induced fraction with almost no dependence on the pre-induction carbon source (Figure 5D). We conclude that regulation of GAL3 expression in pre-induction conditions is the major driver of history\u00a0dependence in the modality of GAL induction.\n\n### Natural variation in GAL3 alleles underlies the genetic changes in modality\n\nThe central role of GAL3 expression in setting the modality of induction suggests that natural variation in GAL3 alleles could be responsible for the observed differences in modality between isolates (Figure 1B). Previously, we showed that polymorphisms in the GAL3 gene explain most of the natural variation in the decision to induce the GAL pathway (i.e. the F90) (Lee et al., 2017), suggesting that allele swaps of the GAL3 ORF should alter the F90 of the strain, which in some cases would be enough to switch the modality of induction. To test this prediction, we determined the modality of a set of 30 allele swap strains comprised of 10 GAL3 alleles in three genetic backgrounds. The experimentally determined modality of all allele swap strains agrees with the expected modality (Figure 6A, Figure 6\u2014figure supplement 1). For example, replacing the GAL3 allele of two unimodal strains, BC187 and S288C, with the GAL3 allele of any of the bimodal strains is sufficient to change the induction profiles from unimodal to bimodal (Figure 6B and C). In agreement with our model, the F90 in these strains decreases sufficiently to convert strains from unimodal to bimodal. Replacing the GAL3 gene of the bimodal strain YJM978 with the alleles of unimodal strains does not change the modality (Figure 6D). This is also in agreement with the model which predicts that the magnitude of the increase in F90 caused by allele swaps in the YJM978 strain background is insufficient to change modality (Figure 6D). Swapping the alleles of GAL1, the second galactose sensor, or GAL4, the transcription factor that activates GAL gene expression, does not affect modality (Figure 6\u2014figure supplement 2). Similarly, swaps of GAL1 or GAL4 alleles in GAL3 allele swap strains have no additional effect on modality (Figure 6\u2014figure supplement 3), suggesting that the role of GAL3 in setting modality can evolve independently of other GAL genes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-v2.jpg)\n\n**Figure 6.:** (A) F90 and E10 values for a panel of allele swaps (10 GAL3 alleles in three different genetic backgrounds). Strains that never reach an induced fraction of 90% are not shown here. Black outlines denote the wild-type strains. All measurements are representative examples of two independent repeats (compared in Figure 6\u2014figure supplements 4\u20135). (B\u2013E) Effect of GAL3 allele swaps on modality. (Top) Induction profiles of (B\u2013D) wild-type isolates or (E) S288C GAL3YPS606.\u00a0(Middle) Induction profiles of (B\u2013D) GAL3 allele swaps and (E) GAL3 promoter or GAL3 coding regions\u00a0(CDS) swaps. (Bottom) Effect of the perturbation on F90 and E10. Arrows start at the values of the wild-type or S288C GAL3YPS606 strains and end at the values of the perturbed strain.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Top titles indicate the genotype of the strain, right titles indicate the source of the swapped allele. All swaps are in the S288C background. Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Top titles indicate the genotype of the strain, right titles indicate the source of the swapped allele(s). All swaps are in the S288C background. Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Each line represents an independent repeat. Glucose concentration was titrated in twofold steps from 0.0039% to 1%. Galactose concentration was kept constant at 0.25%.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Each plot is composed of nine histograms with color intensities corresponding to the density of cells with a given YFP abundance (normalized by side\u00a0scatter [SSC]). Glucose concentration is titrated in twofold steps from 1% to 0.0039%, galactose concentration is constant at 0.25%. Plot titles indicate the source of the GAL3 allele. Orange titles indicate unimodal induction, blue titles indicate bimodal induction.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/69974/elife-69974-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** (A+B) Comparison of two independent repeats of (A) F90 and (B) E10 measurements of GAL3 allele swap strains (Figure 6).\n\nTo further explore the variations in modality among the natural isolates, we analyzed the contribution of promoter and coding sequence variation. We found that SNPs\u00a0(single nucleotide polymorphisms) in either promoter or coding regions (CDS) are sufficient to change modality (Figure 6E\u2013F). For example, S288C with GAL3YPS606 is unimodal, but replacing the YPS606 promoter in this strain with the YJM421 promoter leads to bimodal induction (Figure 6E). Similarly, BC187 with GAL3NC-02 is unimodal, but replacing the NC-02 coding sequence with the YJM978 coding sequence leads to bimodal induction (Figure 6F). The mechanisms by which promoter and CDS changes are able to change the modality will be the subject of future work.\n\n## Discussion\n\nIn mixtures of glucose and galactose, the response of the GAL pathway in a population of yeast cells can be either unimodal or bimodal depending on their evolutionary history and their current environmental conditions. Here, we show that the modality of GAL induction in different strains depends on the relationship between the glucose effects on the induced fraction and the expression level. Glucose inhibits the expression of GAL genes, preventing the positive feedback that is crucial for bistability. In general, any input to a pathway that can conditionally create or eliminate feedback has the potential to modulate bistability. Since many signaling responses are controlled by multiple inputs, our findings imply that other unimodal responses could be bimodal in different conditions and vice versa.\n\nBimodality in the GAL response is considered a bet-hedging strategy where a fraction of the population prepares for glucose depletion by inducing the GAL pathway while other cells maximize their current growth and do not induce the pathway (Venturelli et al., 2015; Wang et al., 2015). This heterogeneity helps populations deal with uncertain, fluctuating environments. Bet-hedging is advantageous in the GAL system when the switching rate between glucose and galactose environments is high (Acar et al., 2008). Indeed, cells evolve bimodality in MAL gene expression when they are continuously switched between glucose and maltose (New et al., 2014). Because cells can sometimes be in environments with a high switching rate and other times in environments with a low switching rate, a strategy that allows the extent of bet-hedging to be tuned could be optimal. In this work, we show strains can tune the amount of bimodality both physiologically, based on their metabolic history, and genetically, presumably based on the environmental statistics that different natural isolates have faced in their evolutionary history. Further work will be needed to determine the evolutionary consequences of tunable bimodal responses such as the ones we characterize here.\n\nPrevious work on cell-to-cell heterogeneity has typically emphasized the complex genetic architecture of the pathways involved (Ansel et al., 2008; Fehrmann et al., 2013). In contrast, the physiological and genetic variation in modality in the GAL pathway can be explained by changes in the behavior of a single gene. Swapping the GAL3 alleles of natural isolates can turn a unimodal strain into a bimodal strain. We show that the environment tunes the expression level of GAL3, and this tuning is sufficient to change the modality of GAL induction (Figure 6 and Figure 6\u2014figure supplement 1). Circuit designs such as these, where a single gene controls modality, may have been selected in evolution, since they allow cells to easily adapt their behavior on both physiological and evolutionary timescales.\n\nThe control of GAL pathway modality by mannose, raffinose, glycerol, and acetate suggests an additional layer of metabolic regulation that has been largely missed in previous analyses of this pathway. These findings show that factors other than canonical glucose catabolite repression can be important in determining the inducibility of GAL genes, consistent with our findings that many mutants outside the GAL pathway can have a significant effect on GAL response (Hua and Springer, 2018). The fact that pre-induction carbon sources mostly affect F90, just as GAL3 allele swaps do, suggests that the GAL3 positive feedback loop may be a nexus of regulation of GAL genes by multiple signals in the cell. In future studies, understanding the metabolic regulation of this well-studied system could give insight into the connections between metabolism and metabolic signaling in a variety of systems.\n\n## Materials and methods\n\n### Strains and media\n\nStrains were obtained as described in Lee et al., 2017; Wang et al., 2015. An initial set of 36 strains were assayed in a glucose gradient (1\u20130.0039%) with a constant background of 0.25% galactose. Strains DBVPG6765, CLIB324, L-1528, M22, W303, YIIC17-E5 were excluded from downstream analysis due to poor growth in our media conditions. Strain 378604X was also excluded due to a high basal expression phenotype that was an outlier in our collection. The genetic basis of this behavior is likely an interesting topic for follow-up studies. All experiments were performed in synthetic minimal medium (\u2018S\u2019), which contains 1.7 g/L yeast nitrogen base (YNB) (BD, Franklin Lakes, NJ) and 5 g/L ammonium sulfate (EMD). In addition, D-glucose (EMD, Darmstadt, Germany), D-galactose (MilliporeSigma, St. Louis, MO), mannose (MilliporeSigma), glycerol (EMD), acetate (MilliporeSigma), and/or raffinose (MilliporeSigma) were added as a carbon source. Cultures were grown in a humidified incubator (Infors Multitron, Bottmingen, CH) at 30\u00b0C with rotary shaking 999 rpm (500 \u00b5L cultures in 1 mL 96-well plates).\n\n### Flow cytometry\n\nCells were struck onto YPD agar from \u221280\u00b0C glycerol stocks, grown to colonies, then inoculated from colony into YPD liquid and cultured for 16\u201324 hr. Then, cultures were inoculated in a dilution series (1:200 to 1:6400) in S + 2% pre-induction carbon source medium. The pre-induction cultures were incubated for 16\u201320 hr, and then their optical density (OD600) was measured on a plate reader (PerkinElmer Envision). The outgrowth culture with OD600 closest to 0.1 was selected for each strain, and then washed twice in S (with no carbon sources). To determine expression levels in pre-induction conditions, washed cells were then diluted in Tris-EDTA pH 8.0 (TE) in a shallow microtiter plate (CELLTREAT, Pepperell, MA). For sugar gradient experiments, washed cells were diluted 1:200 into the appropriate sugar in 96-well plates (500 \u00b5L cultures in each well) and incubated for 8 hr. Then, cells were harvested and fixed by washing twice in TE and resuspended in TE before transferring to microtiter plate for measurement. Flow cytometry was performed using a Stratedigm S1000EX with A700 automated plate handling system.\n\n### GAL3 titration in pre-induction conditions\n\nTo titrate GAL3 levels in the presence of the native GAL3 gene, the AGA1 gene was replaced with a MYO2pr-rtTA-TetO7pr-GAL3 construct in a ho\u0394:GAL1pr-YFP strain. Cells were grown for 16 hr in S + 2% mannose as described above, but the medium was supplemented with doxycycline (MilliporeSigma) concentrations ranging from 38.9 to 0.0176 \u03bcg/mL in 1.5\u00d7 dilutions steps. To measure the total GAL3 expression level after pre-induction growth, the AGA1 gene was replaced with a MYO2pr-rtTA-TetO7pr-YFP construct in a ho\u0394:GAL3pr-YFP reporter strain. After pre-induction growth in the same dilution doxycycline concentrations, cells were harvested and YFP levels were determined using flow cytometry as described above.\n\nTo titrate GAL3 levels in the absence of the native GAL3 gene, the AGA1 gene was replaced with a MYO2pr-rtTA-TetO7pr-GAL3-mScarlet construct in a gal3\u0394 ho\u0394:GAL1pr-YFP strain. Cells were grown for 16 hr in S + 2% pre-induction carbon source as described above, but the medium was supplemented with doxycycline concentrations ranging from 38.9 to 0.0176 \u03bcg/mL in 1.5\u00d7 dilutions steps. To measure the total GAL3 expression level after pre-induction growth, cells were washed and mScarlet levels were determined by fluorescence microscopy using a Hamamatsu Orca-R2 camera (Hamamatsu, Japan) on a Ti Eclipse inverted Nikon microscope (Tokyo, Japan). Microscopy images were analyzed using U-net (Falk et al., 2019) and custom Python scripts.\n\n### Data analysis\n\nData analysis was performed using custom MATLAB scripts, including Flow-Cytometry-Toolkit (https://github.com/springerlab/Flow-Cytometry-Toolkit);\u00a0Springer, 2016.\n\nTo determine the modality of GAL induction experiments, a Gaussian function was fitted to the population distribution for each of the nine sugar combinations. If the degree-of-freedom adjusted R2 of the fit was less than 0.99, two Gaussian functions were fitted to the data. Distributions were then determined to be bimodal if the distance between the means of the Gaussians was more than twice of the highest standard deviation of the Gaussian (as in Venturelli et al., 2012) and the fraction of the smaller Gaussian was higher than 0.15. The modality of induction profiles was mostly unaffected by changes in this threshold (Figure 3\u2014figure supplement 7). GAL induction experiments or simulations that had a bimodal distribution in at least one combination of glucose and galactose in all replicates were called bimodal.\n\n### Phenomenological model\n\nInduction profiles were simulated from E10 and F90 metrics using functions that describe the induced fraction and the mean expression level of the induced subpopulations as a function of the glucose concentration. For the mean induced level, the following function was used:\n\n$$\nlog_{10}(Meaninducedlevel)=\\frac{(\\betaE_{10})^{n}}{[glucose]^{n}+(\\betaE_{10})^{n}}\u22172.5\u22123\n$$\n\nwhere $\\beta=\\sqrt[n]{0.6/0.4}$\u00a0converts the glucose concentration where 10% of the maximal expression level is reached (i.e. the E10) to the glucose concentration where 50% of the maximal expression level is reached. The function was scaled from \u22123 to \u22120.5 to match the range of the experimental data. To obtain realistic versions for the n constant, this function was fitted to the induced level curves of natural isolates, the mean fitted n value was extracted for every natural isolate, and the mean of these values was used for simulations (induced level curve: 1.15, induced fraction curve: 1.69, see Figure 3\u2014figure supplement 6).\n\nFor the induced fraction, the following function was used:\n\n$$\nInducedfraction=\\frac{(\\alphaF_{90})^{n}}{[glucose]^{n}+(\\alphaF_{90})^{n}}\n$$\n\nwhere $\\alpha=\\sqrt[n]{0.9/0.1}$\u00a0converts the glucose concentration where 90% of the cells are induced (i.e. the F90) to the glucose concentration where 50% of the cells are induced. This function was fitted to the induced level curves of bimodal natural isolates, the mean fitted n value extracted for every natural isolate, and the mean of these values was used for simulations (Figure 3\u2014figure supplement 6).\n\nFor nine concentrations of glucose and galactose, induced level and induced fraction values were extracted from these curves to generate simulated populations in these conditions. For a total population size of 20,000 cells, uninduced and induced subpopulations were generated according to the induced fraction value. The expression level values of cells were drawn from normal distributions with the mean expression level of the uninduced subpopulation at a constant level of 10\u22123 and the mean expression level of the induced subpopulation determined by the equation above. The standard deviations of the distributions were determined by fitting a quadratic equation to experimental standard deviations at different expression levels:\n\n$$\nStandarddeviation=\u22120.2\u2217(log_{10}(Inducedlevel)+1.75)^{2}+0.4\n$$\n\nTo delineate possible unimodal and bimodal regimes, GAL induction was simulated using all possible combinations of 10 different values for E10 and F90 (1, 0.5, 0.25, 0.125, 0.0625, 0.0313, 0.156, 0.0078, 0.0039, 0.0020, 0.0010). The Hill constants n for the induced fraction and the induced level functions in these simulations were varied between the lowest and highest experimentally fitted n values (induced level curve: 0.84 and 1.50, induced fraction curve: 0.75 and 2.95, see Figure 3\u2014figure supplement 6). The E10 metric, the F90 metrics, and the modality of the induction profile were determined from these simulations as described above. In the F90-E10 space, unimodal and bimodal regimes were delineated by the bounding line with a slope of 1 that would capture all the unimodal or bimodal simulations respectively on one side of the line.\n",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "ebff89f1-866c-40ac-9e89-d9296115bb42",
+      "submission_id": "09820ed6-5969-4f25-a09c-078d1e705ceb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Developmental Biology Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69974.sa1](https://doi.org/10.7554/eLife.69974.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Variation in the modality of a yeast signaling pathway is mediated by a single regulator\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions, we regret to inform you that your work will not be considered further for publication in eLife.\n\nHere is the consensus review:\n\nThis paper continues the lab's study of GAL1 induction in natural and laboratory strains of budding yeast. As previously shown, whether the induction is bimodal or unimodal depends upon the strain and the pre-induction carbon source. As the authors acknowledge in the Discussion section, we don't yet know the physiological significance of the phenomenon \u2013 i.e., is a unimodal response better under some environmental conditions and a bimodal response better under others \u2013 but still, working out how it arises is a nice test of our understanding of the system.\n\nHere they present more data on the effects of strain background and pre-induction carbon source on the uni/bimodal nature of the response. They also present an ODE model of bistability and a much simpler phenomenological model that can account for many of the responses. This simpler model is based on Hill function (monostable) response curves with different thresholds for induced fraction and expression level of pathway output. And finally, they do gene swap experiments that argue that the uni vs. bimodal nature of a strain's response is largely determined by the sequence of the Gal3 gene.\n\nThis work could well be an interesting exercise in quantitative biology, but the reviewers found it so hard to understand what the authors were saying and showing that we are not really sure. For example, is the GAL system bistable (which is how the ODE model behaves) or not (as the phenomenological model assumes)? The reviewers were left confused about what the authors are concluding about the mechanism underpinning the phenomena they are describing.\n\nWe aim to publish work if revisions can be carried out in a couple of months. While required changes to the current work are too extensive to invite revision, we would likely be interested in a better-analyzed and better-presented take on this subject. It would be treated as a new submission, but we would try to recruit the same reviewers for evaluation.\n\nHere are some specific aspects of the paper we had trouble with.\n\nData interpretation:\n\n1. One of the core findings is that while all isolates are bimodal when galactose is titrated (in a background of raffinose), some are unimodal when glucose is titrated (in a background of an intermediate galactose (0.25%) + raffinose). One thing they did not mention, but can be seen comparing Figure S1 and Figure S2 is that some strains become more bimodal (in the sense that there is wide range of Glu/Gal mixtures in which two populations can clearly be detected). See for example the WashU strains or YJM981. (Does the ODE model also reproduce this?).\n\nIn general, this raises the question as to what is really going on. In my opinion, there might be a sort of misinterpretation of the data. Most strains seem to me to stay bimodal (comparing Figure S1 with S2), even if the statistical analysis they perform says otherwise. Let's take the case of the lab strain S288C as an example. The authors find that it is unimodal in Glu/Gal: however, what I see is that a group of uninduced cells persists as one moves from right to left (Figure S2), at the same time that the induced group starts to be induced in a graded fashion (again from right to left). So, in my view, that is a bimodal behavior: one mode corresponds to the group of uninduced yeast, and the other mode to the group of inducible cells, whose induction (or repression by glucose) is graded. The same behavior may be observed in other strains. My conclusion, comparing the galactose titration vs the glucose titration, is that the change in modality is (at least in most cases, maybe in all) apparent, not real; there is a change from a switch-like response to gradual induction (or repression) for those yeast that get induced, all in the context of a bimodal behavior. Thus, glucose is affecting only the inducible group.\n\nIn summary: the dose response to galactose (Figure S1) is switch-like (and bimodal), and the dose-response to glucose (Figure S2) (in a background of galactose) is graded (and bimodal).\n\nIf my interpretation is correct, the data in all the manuscript might need an overall change in interpretation.\n\nControls:\n\n2. The Gal3 swap experiments are arguably the most interesting part of the paper (although, curiously, they are not mentioned in the abstract). And Gal3 was chosen for the swap for a good reason. However, it is quite possible that the other major regulators also affect strain behavior, and they could well be correlated with the allelic form of Gal3. As the authors know, previous work showed that simultaneous removal of the Gal3 and Gal1 positive feedbacks was required to truly eliminate bimodality. I wonder then what is the role of Gal1 and also Gal4 in strain to strain differences, since all these molecules have co-evolved in these strains. Thus, I think it would be important to show (a), considering that Gal1 serves a role very similar to Gal3, that Gal1 alleles are not important factors; (b) the result of a swap experiment using the Gal4 alleles, at least for a few interesting strains. Combining a joint swap of Gal3 and Gal4 and comparing with just Gal3 (already done with just Gal4). It would be important to see if the effect is reversed, or enhanced.\n\n3. The authors need to present more than 'representative examples of at least two independent repeats'. Some assessment of experiment-to-experiment variability needs to be included.\n\nThe ODE model:\n\n4. The ODE model needs to be written out. There is a parameter table, but without knowing what the rate equations are, the parameters are of little use. And as it is a reader can't really see what assumptions go into the model (e.g. Michaelis-Menten kinetics, which assume that the substrate is in huge excess over the enzyme?).\n\n5. If I understand the ODE model correctly, it is a single-cell model; the authors are not trying to account for the cell-to-cell variability that makes the population level responses (sometimes) be bimodal. Why is this consideration included in the phenomenological model but not in the ODE model?\n\n6. Finally, what is being measured is GAL1pr-YFP expression. What is being modeled in Figure 2 is various aspects of Gal4p and Gal3p. This is confusing.\n\nThe phenomenological model:\n\n7. As mentioned above, this simpler model is based on Hill function (monostable) response curves (not bistable response curves, although I'm not sure how many readers will understand that the way this is written) with different thresholds for induced fraction and expression level of pathway output. And it accounts for much of the observed behavior. What does this mean? Is the point that the system is not bistable after all; or that the system may be bistable but you don't need bistability to account for the observed phenomena; or something else?\n\nClarity:\n\n8. The authors need a more detailed cartoon than that shown in Figure 2A to give the uninitiated an idea of how the system works, and the scheme should include GAL1. The scheme also needs to be explained better.\n\n9. If the authors are going to use the same figure panel more than once (e.g. Figure 7EF), the repetitions must be explicitly acknowledged.\n\n10. Are the panels in Figure 6B flipped?\n\n11. Throughout: Is it possible that 8 hours is too little to actually reach steady state after switching from pre-induced conditions? Could that explain the differences in strains? Maybe longer waiting needs to be tested.\n\n12. Why are the GAL1pr-YFP fluorescence measurements normalized by dividing by SSC (a measure of cell texture) rather than FSC (a measure of cell size)?\n\n13. Figure 2: Both Figure 2C and 2D are glucose titrations with constant galactose, so the labeling is confusing.\n\n14. Line 171: '\u2026determine whether a strain is bimodal' \u2013 bimodality is shown in many figures to depend on the pre-incubation conditions, not just the strain's identity. So what is meant by 'a strain is bimodal' \u2013 bimodal some of the time, all of the time, under some specific conditions compared across strains?\n\n15. p. 9: The authors need to better explain why the fraction of active Gal3p should determine the fraction of cells in the induced state, whereas the amount of free Gal4p determines level of GAL1 induction in the induced cells. The logic is not apparent from Figure 2A. On p. 11 the authors do mention that they \"previously showed that induced fraction and expression level are regulated by galactose/glucose ratio or the glucose concentration, respectively\", but if \"Pathway activation\" is determined by Gal4p (Figure 2A) it is not clear how Gal3p and Gal4p could be determining different aspects of the response.\n",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5b0bde4-2ce4-4284-bcdc-eeffb46410b6",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C1",
+      "claim": "Bimodal gene expression by genetically identical cells is a pervasive feature of signaling networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodal gene expression by genetically identical cells is a pervasive feature of signaling networks and has been suggested to allow organisms to hedge their 'bets' in uncertain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bimodal gene expression in signaling networks, presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "edca5463-27ce-43bc-8353-42029c39a287",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C2",
+      "claim": "Bimodal gene expression has been suggested to allow organisms to hedge their 'bets' in uncertain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodal gene expression by genetically identical cells is a pervasive feature of signaling networks and has been suggested to allow organisms to hedge their 'bets' in uncertain conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to a hypothesis about the function of bimodal expression that has been proposed in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "1cdcc734-631e-402a-9c90-9dc289dc94b2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C3",
+      "claim": "In the galactose-utilization (GAL) pathway of Saccharomyces cerevisiae, gene induction is unimodal or bimodal depending on natural genetic variation and pre-induction conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the galactose-utilization (GAL) pathway of Saccharomyces cerevisiae, gene induction is unimodal or bimodal depending on natural genetic variation and pre-induction conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "33c14bdf-360e-4477-842b-60c0a953df1c",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C4",
+      "claim": "Variation in modality of the GAL pathway arises from regulation of two features: the fraction of cells that show induction and their level of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we find that this variation in modality arises from regulation of two features of the pathway response: the fraction of cells that show induction and their level of expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the phenomenological model and experimental data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "46e2929b-8717-4ee3-8017-12fe1d9ddbbe",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C5",
+      "claim": "GAL3, the galactose sensor, controls the fraction of induced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GAL3, the galactose sensor, controls the fraction of induced cells, and titrating its expression is sufficient to control modality",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing GAL3 titration experiments in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "65c03ca3-cb63-45c9-b7b8-ba868ea782e8",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C6",
+      "claim": "Titrating GAL3 expression is sufficient to control modality.",
+      "claim_type": "EXPLICIT",
+      "source": "GAL3, the galactose sensor, controls the fraction of induced cells, and titrating its expression is sufficient to control modality",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally in Figure 5C and 5D where GAL3 expression is artificially controlled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "4848f274-27de-4d84-9ca8-74d94ac18af2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C7",
+      "claim": "All observed differences in modality between different pre-induction conditions and among natural isolates can be explained by changes in GAL3's regulation and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "moreover, all the observed differences in modality between different pre-induction conditions and among natural isolates can be explained by changes in GAL3's regulation and activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Figures 5 and 6 showing GAL3 expression correlates with modality and GAL3 allele swaps change modality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "9310480c-5db0-47ad-86cf-fc5baa495dd1",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C8",
+      "claim": "The ability to switch modality by tuning the activity of a single protein may allow rapid adaptation of bet hedging to maximize fitness in complex environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to switch modality by tuning the activity of a single protein may allow rapid adaptation of bet hedging to maximize fitness in complex environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "93af4a54-e31a-4d93-92f6-0c0bd5d7c5de",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C9",
+      "claim": "Non-genetic heterogeneity is a pervasive feature of gene expression and cellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-genetic heterogeneity is a pervasive feature of gene expression and cellular signaling (K\u00e6rn et al., 2005; Bal\u00e1zsi et al., 2011; Raj and van Oudenaarden, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "e16d1683-47b7-4b71-9d3e-a2099c9c2c70",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C10",
+      "claim": "Bimodal responses are particularly important for microbes coping with fluctuating environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodal responses, where cells in an isogenic population adopt one of two distinct states, are particularly important for microbes coping with fluctuating environments (Grimbergen et al., 2015; Veening et al., 2008) and cells of multicellular organisms differentiating into discrete types (Xiong and Ferrell, 2003; MacArthur et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "50681b83-2932-4c01-a4b2-ad5c380e12c9",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C11",
+      "claim": "Bimodal responses are particularly important for cells of multicellular organisms differentiating into discrete types.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodal responses, where cells in an isogenic population adopt one of two distinct states, are particularly important for microbes coping with fluctuating environments (Grimbergen et al., 2015; Veening et al., 2008) and cells of multicellular organisms differentiating into discrete types (Xiong and Ferrell, 2003; MacArthur et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "abfee80a-3ef2-44a5-b9d9-7999814eaa67",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C12",
+      "claim": "The galactose-utilization (GAL) pathway in Saccharomyces cerevisiae is a well-characterized bimodal response and a classic model of microbial decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "The galactose-utilization (GAL) pathway in Saccharomyces cerevisiae is a well-characterized bimodal response and a classic model of microbial decision-making (Johnston, 1987; Bhat, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "ec58dd5b-32b0-438c-a89c-f8fbe34ceffa",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C13",
+      "claim": "Bimodality of GAL gene expression has been attributed to bistability arising from positive feedback through the Gal1p kinase and the Gal3p transducer.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodality of GAL gene expression has been attributed to bistability arising from positive feedback through the Gal1p kinase and the Gal3p transducer (Venturelli et al., 2012; Acar et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "77fe276e-e07d-4ba3-ac67-fdc8dbaa1f83",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C14",
+      "claim": "Perturbations of many components of the GAL pathway such as the Gal2p permease, the Gal4p activator, and the Gal80p repressor have been found to affect quantitative features of the GAL response.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations of many of the components of the GAL pathway such as the Gal2p permease, the Gal4p activator, and the Gal80p repressor have been found to affect quantitative features of the GAL response (Acar et al., 2005; Hawkins and Smolke, 2006; Acar et al., 2010; Ramsey et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "bf5e4f2b-92de-4613-ba3b-324f5e6df973",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C15",
+      "claim": "Only changes in Gal1p and Gal3p have been shown to affect modality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only changes in Gal1p and Gal3p Venturelli et al., 2012; Acar et al., 2005 have been shown to affect modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "94387945-682c-4784-9291-5ddcb1de3516",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C16",
+      "claim": "Existing insight into modality in the GAL system comes almost entirely from measuring one pathway phenotype, the induced fraction, under one environmental perturbation, galactose titration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our existing insight into modality in the GAL system comes almost entirely from measuring one pathway phenotype, the induced fraction, under one environmental perturbation, galactose titration (Venturelli et al., 2012; Acar et al., 2010; Venturelli et al., 2015; Peng et al., 2015; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the existing literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "0741b407-0ec8-40e6-b736-7a0585a19606",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C17",
+      "claim": "The GAL response was found to be unimodal or bimodal depending on the carbon source prior to encountering galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the GAL response was found to be unimodal or bimodal depending on the carbon source prior to encountering galactose (Biggar and Crabtree, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c09b9fca-de5f-45c1-af76-5634942b52b0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C18",
+      "claim": "The molecular basis of how pre-induction carbon source affects GAL response modality is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "the molecular basis of this behavior is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "193c4701-39a3-4790-b102-c5fec266061e",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C19",
+      "claim": "Some natural yeast strains show a bimodal GAL response while others have a unimodal response.",
+      "claim_type": "EXPLICIT",
+      "source": "In our own previous work that focused on differences in GAL genes induction in mixtures of glucose and galactose between natural isolates (Lee et al., 2017; Wang et al., 2015), we noted that some strains showed a bimodal response while others had a unimodal response (Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "d4203058-c2d3-47d0-ab88-376be1a11494",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C20",
+      "claim": "Some natural yeast strains displayed bimodal population distributions when grown in different combinations of glucose and galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "We titrated glucose concentration in a constant concentration of galactose and observed that some displayed bimodal population distributions (Figure 1B, 'DBVPG1106')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c1c75593-3bda-4549-b3a6-f9ef07bd1550",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C21",
+      "claim": "Some natural yeast strains displayed unimodal population distributions with a glucose-dependent GAL1 expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "while others displayed unimodal population distributions with a glucose-dependent GAL1 expression level (Figure 1B, 'BC187', Figure 1\u2014figure supplement 1; Ricci-Tam et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "6cc89f78-491e-444c-837f-3c00120634db",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C22",
+      "claim": "Both unimodal and bimodal population distributions were stable even when cells were kept in the same environment for 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Both unimodal and bimodal population distributions were stable even when cells were kept in the same environment for 24 hr (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "48c5ad61-d448-48dd-9025-663b2c88283a",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C23",
+      "claim": "The difference in modality is a steady-state phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the difference in modality is a steady-state phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the stability of the distributions over 24 hours.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "a4e08887-def2-41a0-9117-e68d0cd52ec0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C24",
+      "claim": "Populations of the laboratory strain S288C had a unimodal GAL induction when grown with raffinose as a carbon source prior to encountering mixtures of glucose and galactose.",
+      "claim_type": "EXPLICIT",
+      "source": "Biggar and Crabtree, 2001, previously showed that populations of the laboratory strain S288C had a unimodal GAL induction when grown with raffinose as a carbon source prior to encountering mixtures of glucose and galactose, but a bimodal response when mannose was used as the initial carbon source (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous literature and confirmed by data in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "0aa67d00-5ba0-4d23-b9c9-47b73a648260",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C25",
+      "claim": "Populations of the laboratory strain S288C had a bimodal GAL response when mannose was used as the initial carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "Biggar and Crabtree, 2001, previously showed that populations of the laboratory strain S288C had a unimodal GAL induction when grown with raffinose as a carbon source prior to encountering mixtures of glucose and galactose, but a bimodal response when mannose was used as the initial carbon source (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous literature and confirmed by data in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "a94b3bda-bb34-40e7-ac35-6cc847714c24",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C26",
+      "claim": "All 30 natural isolates showed bimodal responses when galactose concentration was titrated in the absence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our results when titrating galactose in the presence of glucose, all 30 of our natural isolates showed bimodal responses when we titrated the galactose concentration in the absence of glucose (Figure 1D, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D and Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "ff6d2cbe-df2c-44a8-b54a-d0abbee76ce7",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C27",
+      "claim": "Glucose plays a critical role as a second input to the bistable GAL pathway that can cause a qualitative change in the modality of GAL pathway induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that glucose plays a critical role as a second input to the bistable GAL pathway that can cause a qualitative change in the modality of GAL pathway induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that modality changes with glucose presence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "fc86a26b-0613-41e3-bca4-3f2bd14186bc",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C28",
+      "claim": "In the absence of galactose, Gal80p binds the transcription factor Gal4p and keeps it in an inactive state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of galactose, Gal80p binds the transcription factor Gal4p and keeps it in an inactive state (Lue et al., 1987; Wu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the GAL pathway supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "db3c2fc8-b2a8-4f7f-ac6e-b7eab944d20b",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C29",
+      "claim": "In the presence of galactose, Gal3p binds Gal80p, releasing Gal4p from the Gal80p-Gal4p complex, and allowing Gal4p to drive the transcription of GAL genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of galactose, Gal3p binds Gal80p, releasing Gal4p from the Gal80p-Gal4p complex, and allowing Gal4p to drive the transcription of a number of GAL genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the GAL pathway mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "11cd3bc9-359a-4ab5-b2ea-60c95b6d0e67",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C30",
+      "claim": "The initiation of transcription of the galactose sensors Gal1p and Gal3p by Gal4p creates a positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The initiation of transcription of the galactose sensors Gal1p and Gal3p by Gal4p creates a positive feedback loop, and this is believed to be the mechanism underlying the bistability of the system (Venturelli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "a435586e-7dc2-4be1-9abe-475d9e0461f1",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C31",
+      "claim": "The positive feedback loop through Gal1p and Gal3p is believed to be the mechanism underlying the bistability of the GAL system.",
+      "claim_type": "EXPLICIT",
+      "source": "The initiation of transcription of the galactose sensors Gal1p and Gal3p by Gal4p creates a positive feedback loop, and this is believed to be the mechanism underlying the bistability of the system (Venturelli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c37aefd8-9ccb-479c-8771-6b72c549ce2e",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C32",
+      "claim": "Glucose has two inhibitory effects on the GAL pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose has two inhibitory effects on the GAL pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated and then elaborated with two specific mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "6d2c7400-3a06-4172-8ac5-09f5e05aed18",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C33",
+      "claim": "Glucose indirectly decreases the intracellular concentration of galactose through competition for binding to transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) It indirectly decreases the intracellular concentration of galactose through competition for binding to transporters (Escalante-Chong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "9b1af750-0e4a-4ce4-a7da-44ba3e1f5c7f",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C34",
+      "claim": "Glucose-mediated decrease in intracellular galactose decreases the amount of active Gal3p and thereby affects the fraction of cells that induce the GAL pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn decreases the amount of active Gal3p and thereby affects the fraction of cells that induce the GAL pathway (induced fraction) (Ricci-Tam et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "683ac135-ec34-4129-9981-b60d0322640d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C35",
+      "claim": "Glucose directly increases the activity of the transcriptional repressor Mig1p which regulates GAL4 expression and thereby decreases the expression of GAL genes.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) It directly increases the activity of the transcriptional repressor Mig1p which regulates GAL4 expression and thereby decreases the expression of GAL genes (induction level) (Ricci-Tam et al., 2021; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous literature and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "76a1d8d1-3e76-46cb-922c-3b6fb02d6f5e",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C36",
+      "claim": "Because the system is bimodal in pure galactose, glucose cannot drive unimodality solely through the transporter-dependent indirect effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the system is bimodal in pure galactose, glucose cannot drive unimodality solely through the transporter-dependent indirect effect, leading us to suspect that the Mig1p-dependent mechanism is responsible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the observation that the system is bimodal without glucose.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c2de8b96-6d62-4629-adbd-33a415b799ce",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C37",
+      "claim": "The Mig1p-dependent mechanism is responsible for glucose-driven unimodality.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the system is bimodal in pure galactose, glucose cannot drive unimodality solely through the transporter-dependent indirect effect, leading us to suspect that the Mig1p-dependent mechanism is responsible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on logical inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "bdfaf46f-c0cd-4f66-9f15-d72f6d9e0714",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C38",
+      "claim": "Independently tuning the indirect and direct effects of glucose are sufficient to change modality.",
+      "claim_type": "EXPLICIT",
+      "source": "We built a phenomenological model of the GAL pathway to determine whether independently tuning the indirect and direct effects of glucose are sufficient to change modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested using a phenomenological model as shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "40321de9-025f-491e-a893-fcf31aab92c2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C39",
+      "claim": "Changing the glucose threshold for the induced level while keeping the glucose threshold for the induced fraction constant can switch the population behavior between unimodal and bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "We then varied the glucose threshold for the induced level while keeping the glucose threshold for the induced fraction constant (Figure 2B) or the glucose threshold for the induced fraction while keeping the glucose threshold for the expression level constant (Figure 2C). Indeed, changing either can switch the population behavior between unimodal and bimodal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "b5193633-1a50-479f-9e90-79ea1b2d0343",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C40",
+      "claim": "Changing the glucose threshold for the induced fraction while keeping the glucose threshold for the expression level constant can switch the population behavior between unimodal and bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "We then varied the glucose threshold for the induced level while keeping the glucose threshold for the induced fraction constant (Figure 2B) or the glucose threshold for the induced fraction while keeping the glucose threshold for the expression level constant (Figure 2C). Indeed, changing either can switch the population behavior between unimodal and bimodal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by modeling results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "cbb49e38-3d7f-41a5-b4e4-01cf0a621b32",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C41",
+      "claim": "The pathway is bimodal when the glucose inhibition threshold for the induction level is less than the glucose inhibition threshold for the induced fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the pathway is bimodal when the glucose inhibition threshold for the induction level is less than the glucose inhibition threshold for the induced fraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "b450f4cc-9813-4b16-bec9-0f1fafdcf473",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C42",
+      "claim": "For both bimodal and unimodal strains, the experiments and phenomenological models are in good agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, for both bimodal and unimodal strains, the experiments and models are in good agreement (Figure 3C and D, Figure 3\u2014figure supplements 2\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of experimental and model data in Figure 3C, D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "31aae4a3-4feb-4d9e-9fb5-f8d36f429099",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C43",
+      "claim": "The phenomenological model correctly predicts and provides a useful conceptual lens for understanding bimodality of GAL pathway induction across natural isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, however, our model correctly predicts and provides a useful conceptual lens for understanding bimodality of GAL pathway induction across natural isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "38af8c05-9d21-4c5d-b23f-7ee3ad1de18b",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C44",
+      "claim": "Deleting MIG1 removes the glucose dependent regulation of GAL4 expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting MIG1 removes the glucose dependent regulation of GAL4 expression level and thus the E10 of the deletion strain is increased compared to the wild-type strain (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "bbc3a7b2-738d-446d-b038-1aa7b402c2ec",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C45",
+      "claim": "The E10 of the mig1\u0394 strain is increased compared to the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting MIG1 removes the glucose dependent regulation of GAL4 expression level and thus the E10 of the deletion strain is increased compared to the wild-type strain (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "22648b23-8328-48f5-934d-5da864ca944d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C46",
+      "claim": "Deleting MIG1 converts the strain from unimodal to bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, deleting MIG1 converts the strain from unimodal to bimodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "199c0162-9034-4c0d-b02b-b78abf301791",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C47",
+      "claim": "The observed F90 value for the bimodal mig1\u0394 strain is higher than that for the unimodal wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the observed F90 value for the bimodal mig1\u0394 strain is higher than that for the unimodal wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "27abe369-9e39-40f2-a605-5daa7d624430",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C48",
+      "claim": "Mig1p-dependent repression conceals the actual F90 value of unimodal strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports our hypothesis that Mig1p-dependent repression conceals the actual F90 value of unimodal strains and that the observed F90 value of unimodal strains is a lower bound for the actual F90 value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deleting MIG1 increases F90.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "5c6ffab2-e523-419f-854d-72eb7d894e6d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C49",
+      "claim": "The observed F90 value of unimodal strains is a lower bound for the actual F90 value.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports our hypothesis that Mig1p-dependent repression conceals the actual F90 value of unimodal strains and that the observed F90 value of unimodal strains is a lower bound for the actual F90 value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deleting MIG1 increases F90.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "40f691d3-2675-416b-9a06-1d54d7bc37f8",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C50",
+      "claim": "Pre-induction growth conditions can affect the modality of GAL induction.",
+      "claim_type": "EXPLICIT",
+      "source": "It has previously been reported that pre-induction growth conditions can affect the modality of GAL induction (Biggar and Crabtree, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "0e5bae47-77e7-46ac-bdb9-6ed165eee865",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C51",
+      "claim": "Pre-induction conditions led to changes in F90 and/or E10 that should change modality.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the model, pre-induction conditions led to changes in F90 and/or E10 that should change modality; all our experimental results agree with the predictions from our phase diagram of GAL induction (Figure 4B,D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "4cf3da50-a056-4f34-8cc7-8ea3d6d7def4",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C52",
+      "claim": "All experimental results agree with the predictions from the phase diagram of GAL induction.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by the model, pre-induction conditions led to changes in F90 and/or E10 that should change modality; all our experimental results agree with the predictions from our phase diagram of GAL induction (Figure 4B,D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of experimental data with model predictions in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "d0de08b7-ec3a-4384-94a3-9694a6d75eb5",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C53",
+      "claim": "In response to changes in pre-induction carbon, the change in F90 was considerably larger than the change in E10 (8.6 versus 1.8, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "While changing either F90 or E10 in model is sufficient to change modality, we found that in response to changes in pre-induction carbon the change in F90 was considerably larger than the change in E10 (8.6 versus 1.8, respectively; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "58b74272-3efd-40f1-8405-3a493c1c012c",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C54",
+      "claim": "The magnitude of the changes in F90 alone are sufficient to explain the observed changes of modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our phenomenological model predicts that the magnitude of the changes in F90 alone are sufficient to explain the observed changes of modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the phenomenological model based on the observed changes in F90.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "327a933b-9919-4dd4-b03e-6411c44e42cc",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C55",
+      "claim": "GAL genes are down-regulated in carbon sources that lead to bimodal induction (mannose).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GAL genes are down-regulated in carbon sources that lead to bimodal induction (mannose) and up-regulated in carbon sources that lead to unimodal induction (acetate, glycerol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c4c8afff-506a-4d21-8874-954b562aaadf",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C56",
+      "claim": "GAL genes are up-regulated in carbon sources that lead to unimodal induction (acetate, glycerol).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GAL genes are down-regulated in carbon sources that lead to bimodal induction (mannose) and up-regulated in carbon sources that lead to unimodal induction (acetate, glycerol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "f63fb6ee-9e1f-4a07-b1e6-584ebfa66e81",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C57",
+      "claim": "Among all GAL genes, the expression levels of GAL3 and GAL4 show the strongest fold change between the carbon sources tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all GAL genes, the expression levels of GAL3 and GAL4 show the strongest fold change between the carbon sources tested (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "a28bfec4-aa82-4154-82ad-b74aac9b0ff4",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C58",
+      "claim": "In each strain, the GAL3 expression level in pre-induction conditions generally correlates with the modality observed later.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in each strain the GAL3 expression level in a pre-induction conditions generally correlates with the modality observed later (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "79e63a82-beb9-4a3f-a5f4-57eba2b0f3e9",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C59",
+      "claim": "The pre-induction level of Gal3p, not the pre-induction carbon, is critical for setting modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the pre-induction level of Gal3p, not the pre-induction carbon, is critical for setting modality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GAL3 titration experiments shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "87a277f7-b2ad-4895-8870-796ccafa4997",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C60",
+      "claim": "Overexpressing GAL3 during pre-induction growth in mannose using tetracycline induction increased the induced fraction and caused a loss of bimodality.",
+      "claim_type": "EXPLICIT",
+      "source": "When we overexpressed GAL3 during pre-induction growth in mannose using tetracycline induction, we saw an increase in the induced fraction and a loss of bimodality (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "51e90046-4dae-43fa-aa39-1b24fc20e6c2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C61",
+      "claim": "The GAL3 concentration pre-induction is sufficient to set the modality in the S288C strain background.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the GAL3 concentration pre-induction is sufficient to set the modality in this strain background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the GAL3 overexpression experiment shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "2900a632-ef87-47b8-b538-91dc2e4cb7f9",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C62",
+      "claim": "Artificially setting the GAL3 level of mannose pre-induction cultures to that of a raffinose pre-induction culture converted the induction profiles to one similar to a raffinose pre-induction culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, artificially setting the GAL3 level of mannose pre-induction cultures to that of a raffinose pre-induction culture converted the induction profiles to one similar to a raffinose pre-induction culture (Figure 5C,II and IV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c97d3a55-6013-4c59-aa96-5c62caa269a4",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C63",
+      "claim": "When pre-induction GAL3 expression was low, bimodal induction almost identical to that seen with mannose pre-induction was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, when pre-induction GAL3 expression in these sugars was low, we saw bimodal induction almost identical to that seen with mannose pre-induction (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "9fd45417-e499-41b7-b614-1c82cd9d037f",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C64",
+      "claim": "Pre-induction GAL3 concentrations set the induced fraction with almost no dependence on the pre-induction carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-induction GAL3 concentrations also set the induced fraction with almost no dependence on the pre-induction carbon source (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "85a0cea8-0d5f-4649-bc92-fcd2ec0454b2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C65",
+      "claim": "Regulation of GAL3 expression in pre-induction conditions is the major driver of history dependence in the modality of GAL induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that regulation of GAL3 expression in pre-induction conditions is the major driver of history dependence in the modality of GAL induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the GAL3 titration experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "19e6cc7b-24b1-46ab-ac9a-17b4992137d5",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C66",
+      "claim": "Natural variation in GAL3 alleles could be responsible for the observed differences in modality between isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The central role of GAL3 expression in setting the modality of induction suggests that natural variation in GAL3 alleles could be responsible for the observed differences in modality between isolates (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the findings about GAL3's role in modality.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "93b4f57a-22da-4246-b804-9747728a1298",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C67",
+      "claim": "Polymorphisms in the GAL3 gene explain most of the natural variation in the decision to induce the GAL pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that polymorphisms in the GAL3 gene explain most of the natural variation in the decision to induce the GAL pathway (i.e. the F90) (Lee et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "603470d7-3d31-4e70-9946-c61468e0e5eb",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C68",
+      "claim": "The experimentally determined modality of all allele swap strains agrees with the expected modality.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimentally determined modality of all allele swap strains agrees with the expected modality (Figure 6A, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "56bf0110-e09b-402b-8e87-d78ecdf23514",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C69",
+      "claim": "Replacing the GAL3 allele of two unimodal strains, BC187 and S288C, with the GAL3 allele of any of the bimodal strains is sufficient to change the induction profiles from unimodal to bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, replacing the GAL3 allele of two unimodal strains, BC187 and S288C, with the GAL3 allele of any of the bimodal strains is sufficient to change the induction profiles from unimodal to bimodal (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "d179cc9f-1484-4fa3-bcf4-7cb22cdbd098",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C70",
+      "claim": "The F90 in BC187 and S288C strains decreases sufficiently to convert strains from unimodal to bimodal when GAL3 alleles are swapped.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our model, the F90 in these strains decreases sufficiently to convert strains from unimodal to bimodal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "a31fa28c-7ef2-4ac4-9198-bae767cb8e3f",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C71",
+      "claim": "Replacing the GAL3 gene of the bimodal strain YJM978 with the alleles of unimodal strains does not change the modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing the GAL3 gene of the bimodal strain YJM978 with the alleles of unimodal strains does not change the modality (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "704bd835-40d7-4356-b640-e56837822b3b",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C72",
+      "claim": "The model predicts that the magnitude of the increase in F90 caused by allele swaps in the YJM978 strain background is insufficient to change modality.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also in agreement with the model which predicts that the magnitude of the increase in F90 caused by allele swaps in the YJM978 strain background is insufficient to change modality (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the phenomenological model shown in Figure 6D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "23d015e6-ad25-4a1e-b736-0fdb5bed741a",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C73",
+      "claim": "Swapping the alleles of GAL1, the second galactose sensor, does not affect modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Swapping the alleles of GAL1, the second galactose sensor, or GAL4, the transcription factor that activates GAL gene expression, does not affect modality (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "6b9389bb-4d6b-4dd6-9e1c-ad18aa906bef",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C74",
+      "claim": "Swapping the alleles of GAL4, the transcription factor that activates GAL gene expression, does not affect modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Swapping the alleles of GAL1, the second galactose sensor, or GAL4, the transcription factor that activates GAL gene expression, does not affect modality (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "0a596714-7044-4dc7-b9bc-53615b38ac7d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C75",
+      "claim": "Swaps of GAL1 or GAL4 alleles in GAL3 allele swap strains have no additional effect on modality.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, swaps of GAL1 or GAL4 alleles in GAL3 allele swap strains have no additional effect on modality (Figure 6\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "5451b23f-391f-4e49-bc91-935cfc4f35f0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C76",
+      "claim": "The role of GAL3 in setting modality can evolve independently of other GAL genes.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the role of GAL3 in setting modality can evolve independently of other GAL genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GAL1 and GAL4 swaps don't affect modality.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "0438d917-74c5-4b9d-950f-bb5cbd4fade4",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C77",
+      "claim": "SNPs in either promoter or coding regions of GAL3 are sufficient to change modality.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SNPs (single nucleotide polymorphisms) in either promoter or coding regions (CDS) are sufficient to change modality (Figure 6E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "1a91fcff-e5fa-4f60-9d04-44d183a76405",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C78",
+      "claim": "S288C with GAL3YPS606 is unimodal, but replacing the YPS606 promoter with the YJM421 promoter leads to bimodal induction.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, S288C with GAL3YPS606 is unimodal, but replacing the YPS606 promoter in this strain with the YJM421 promoter leads to bimodal induction (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "3170a5b8-38d8-4275-a9e3-fe88798b6b1c",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C79",
+      "claim": "BC187 with GAL3NC-02 is unimodal, but replacing the NC-02 coding sequence with the YJM978 coding sequence leads to bimodal induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, BC187 with GAL3NC-02 is unimodal, but replacing the NC-02 coding sequence with the YJM978 coding sequence leads to bimodal induction (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "07d896f1-a7e8-4098-9e2a-1b5f59d4ce98",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C80",
+      "claim": "In mixtures of glucose and galactose, the response of the GAL pathway in a population of yeast cells can be either unimodal or bimodal depending on their evolutionary history and their current environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In mixtures of glucose and galactose, the response of the GAL pathway in a population of yeast cells can be either unimodal or bimodal depending on their evolutionary history and their current environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "ae5c9628-3196-45c0-993a-a347fd8293b0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C81",
+      "claim": "The modality of GAL induction in different strains depends on the relationship between the glucose effects on the induced fraction and the expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the modality of GAL induction in different strains depends on the relationship between the glucose effects on the induced fraction and the expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings supported by the phenomenological model and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "1e845399-a435-41a9-880a-0287211ed0d7",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C82",
+      "claim": "Glucose inhibits the expression of GAL genes, preventing the positive feedback that is crucial for bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose inhibits the expression of GAL genes, preventing the positive feedback that is crucial for bistability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "23eb5f44-199c-4079-9a90-f79dfd30d066",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C83",
+      "claim": "Any input to a pathway that can conditionally create or eliminate feedback has the potential to modulate bistability.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, any input to a pathway that can conditionally create or eliminate feedback has the potential to modulate bistability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "1d359a48-9274-41e0-935d-3876d64e38dc",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C84",
+      "claim": "Other unimodal responses could be bimodal in different conditions and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many signaling responses are controlled by multiple inputs, our findings imply that other unimodal responses could be bimodal in different conditions and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "8d0cd632-a46a-4f26-92ba-5c8bcb6507d6",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C85",
+      "claim": "Bimodality in the GAL response is considered a bet-hedging strategy where a fraction of the population prepares for glucose depletion by inducing the GAL pathway while other cells maximize their current growth and do not induce the pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Bimodality in the GAL response is considered a bet-hedging strategy where a fraction of the population prepares for glucose depletion by inducing the GAL pathway while other cells maximize their current growth and do not induce the pathway (Venturelli et al., 2015; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "9e43b91d-b2ff-446d-a6a3-4533b19e2fbe",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C86",
+      "claim": "Heterogeneity helps populations deal with uncertain, fluctuating environments.",
+      "claim_type": "EXPLICIT",
+      "source": "This heterogeneity helps populations deal with uncertain, fluctuating environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of heterogeneity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "54a32359-ba75-455b-9293-fc313d917e00",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C87",
+      "claim": "Bet-hedging is advantageous in the GAL system when the switching rate between glucose and galactose environments is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Bet-hedging is advantageous in the GAL system when the switching rate between glucose and galactose environments is high (Acar et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "82c27831-be41-4cd4-bb4c-993d97a10b78",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C88",
+      "claim": "Cells evolve bimodality in MAL gene expression when they are continuously switched between glucose and maltose.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cells evolve bimodality in MAL gene expression when they are continuously switched between glucose and maltose (New et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "eb252f65-9ca5-42ac-bf1a-1ef01e6f11b7",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C89",
+      "claim": "A strategy that allows the extent of bet-hedging to be tuned could be optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cells can sometimes be in environments with a high switching rate and other times in environments with a low switching rate, a strategy that allows the extent of bet-hedging to be tuned could be optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary advantage of tunable bet-hedging.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "8091e6b5-9e63-42fe-9412-6fe205e7142f",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C90",
+      "claim": "Strains can tune the amount of bimodality both physiologically, based on their metabolic history, and genetically, presumably based on the environmental statistics that different natural isolates have faced in their evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we show strains can tune the amount of bimodality both physiologically, based on their metabolic history, and genetically, presumably based on the environmental statistics that different natural isolates have faced in their evolutionary history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c0e0e6e8-05fc-49ad-96e1-124b248b5e11",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C91",
+      "claim": "Previous work on cell-to-cell heterogeneity has typically emphasized the complex genetic architecture of the pathways involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on cell-to-cell heterogeneity has typically emphasized the complex genetic architecture of the pathways involved (Ansel et al., 2008; Fehrmann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "ca0f7aec-9d72-4be8-a5fb-5cb962b1163c",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C92",
+      "claim": "The physiological and genetic variation in modality in the GAL pathway can be explained by changes in the behavior of a single gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the physiological and genetic variation in modality in the GAL pathway can be explained by changes in the behavior of a single gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "d4a95d14-6130-423e-af38-ce07b11a3ec2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C93",
+      "claim": "Swapping the GAL3 alleles of natural isolates can turn a unimodal strain into a bimodal strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Swapping the GAL3 alleles of natural isolates can turn a unimodal strain into a bimodal strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "588cc0dc-817d-4c8c-9260-d597b9ae8481",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C94",
+      "claim": "The environment tunes the expression level of GAL3, and this tuning is sufficient to change the modality of GAL induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the environment tunes the expression level of GAL3, and this tuning is sufficient to change the modality of GAL induction (Figure 6 and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "bddcb5bf-0cff-4d91-a1d9-4b46fa5ea4e2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C95",
+      "claim": "Circuit designs where a single gene controls modality may have been selected in evolution, since they allow cells to easily adapt their behavior on both physiological and evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Circuit designs such as these, where a single gene controls modality, may have been selected in evolution, since they allow cells to easily adapt their behavior on both physiological and evolutionary timescales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the evolutionary implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "d2b3417e-dec5-46cc-a7cd-b3939740d943",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C96",
+      "claim": "The control of GAL pathway modality by mannose, raffinose, glycerol, and acetate suggests an additional layer of metabolic regulation that has been largely missed in previous analyses of this pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The control of GAL pathway modality by mannose, raffinose, glycerol, and acetate suggests an additional layer of metabolic regulation that has been largely missed in previous analyses of this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings about pre-induction carbon sources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "dee40da3-b2f3-46c8-b01f-a00ccdc0ecfe",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C97",
+      "claim": "Factors other than canonical glucose catabolite repression can be important in determining the inducibility of GAL genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that factors other than canonical glucose catabolite repression can be important in determining the inducibility of GAL genes, consistent with our findings that many mutants outside the GAL pathway can have a significant effect on GAL response (Hua and Springer, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the findings of the study and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "2237db63-8667-48f3-ad0a-4a99c9316357",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C98",
+      "claim": "The GAL3 positive feedback loop may be a nexus of regulation of GAL genes by multiple signals in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that pre-induction carbon sources mostly affect F90, just as GAL3 allele swaps do, suggests that the GAL3 positive feedback loop may be a nexus of regulation of GAL genes by multiple signals in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the findings about GAL3's role.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "39185514-53f3-40cf-a2b0-38556d44fa8d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C99",
+      "claim": "Understanding the metabolic regulation of the GAL system could give insight into the connections between metabolism and metabolic signaling in a variety of systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In future studies, understanding the metabolic regulation of this well-studied system could give insight into the connections between metabolism and metabolic signaling in a variety of systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "5a5ff893-0923-4372-bf2e-a1fb713896bd",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C100",
+      "claim": "30 geographically and ecologically diverse yeast strains were measured for GAL1 promoter expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To study what causes the GAL response to be unimodal in some strain backgrounds and bimodal in other strain backgrounds, we measured the expression of a GAL1 promoter driving YFP (GAL1pr-YFP) in 30 geographically and ecologically diverse yeast strains (Wang et al., 2015; Liti et al., 2009; Cromie et al., 2013) grown in different combinations of glucose and galactose (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach and is supported by citations and Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "acf9c2bf-2b91-4f56-bc0e-4613a1c310c0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C101",
+      "claim": "The GAL pathway responds to the ratio of galactose and glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the GAL pathway responds to the ratio of galactose and glucose (Escalante-Chong et al., 2015), increasing the glucose concentration while keeping the galactose concentration constant simultaneously decreases GAL activation and increases glucose repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "cd970d23-8624-4ee7-9959-abbf733b0636",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "claim_id": "C102",
+      "claim": "Increasing the glucose concentration while keeping the galactose concentration constant simultaneously decreases GAL activation and increases glucose repression.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the GAL pathway responds to the ratio of galactose and glucose (Escalante-Chong et al., 2015), increasing the glucose concentration while keeping the galactose concentration constant simultaneously decreases GAL activation and increases glucose repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the pathway responding to the ratio of sugars.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f0162d08-582a-483e-9ad8-6d80f4a58087",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that GAL pathway induction modality varies among 30 natural yeast isolates when grown in glucose-galactose mixtures, with some strains showing bimodal and others unimodal responses. All strains showed bimodal responses when galactose was titrated in the absence of glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20, C21, C26, and C100 are well-supported by experimental flow cytometry data shown in Figures 1B, 1D, and supplementary figures. The experimental design is clearly described, measurements were replicated (Figure 1\u2014figure supplement 5), and the observations are consistent across multiple strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "3667eeed-9b4a-49f3-8674-719a69e84aac",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pre-induction carbon source affects GAL pathway modality: S288C shows unimodal induction after raffinose pre-growth but bimodal induction after mannose pre-growth. These changes in modality correlate with predicted changes in F90 and E10 metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C50, C51, and C52 are supported by experimental data in Figures 1C and 4, which show clear differences in modality based on pre-induction conditions. The agreement between experimental observations and model predictions (Figure 4B, D, F) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "db5f83df-1ed7-42b0-9c69-804b70217998",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A phenomenological model demonstrates that modality variation arises from regulation of two features: the fraction of induced cells and their expression level. Independently tuning either the glucose threshold for induced fraction or expression level can switch between unimodal and bimodal behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38, C39, C40, and C41 are supported by the modeling results in Figure 2. The phenomenological model successfully recapitulates the key features of modality switching. However, the model relies on empirically fitted parameters and simplified assumptions about population distributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The phenomenological model correctly predicts modality across natural isolates based on E10 and F90 metrics. Deleting MIG1 converts unimodal strains to bimodal by increasing E10, supporting the model's prediction that Mig1p-dependent repression conceals the actual F90 in unimodal strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 are supported by the agreement between experimental data and model predictions (Figure 3C-E) and the mig1\u0394 experiment (Figure 3F). The model successfully predicts modality for most strains, though some discrepancies exist in the ambiguous regime. The mig1\u0394 experiment provides strong validation of the model's mechanistic assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Changes in F90 are considerably larger than changes in E10 in response to pre-induction carbon sources (8.6-fold vs 1.8-fold). GAL3 and GAL4 show the strongest expression changes among GAL genes, and GAL3 expression correlates with modality across strains and conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 are supported by quantitative data in Figure 4\u2014figure supplement 2 and Figure 5A-B. The measurements of GAL gene expression using transcriptional reporters provide direct evidence for the correlation between GAL3 levels and modality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "4bbda399-ed12-4a29-bb73-37307d5dc70d",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GAL3 expression level in pre-induction conditions is the major driver of modality. Artificially controlling GAL3 expression using a tetracycline-inducible promoter is sufficient to change modality, independent of the pre-induction carbon source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C59-C65 are strongly supported by the GAL3 titration experiments in Figure 5C-D. The experiments demonstrate both necessity (low GAL3 leads to bimodality) and sufficiency (increasing GAL3 converts bimodal to unimodal) for GAL3's role in controlling modality. The use of both overexpression and deletion strains provides complementary evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "50719f6a-777f-4564-a42c-95c1f6c99e32",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Natural variation in GAL3 alleles explains differences in modality between isolates. Swapping GAL3 alleles between unimodal and bimodal strains is sufficient to change modality in unimodal backgrounds (BC187, S288C) but not in the bimodal YJM978 background, consistent with model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C67-C72, and C93 are supported by the comprehensive allele swap experiments in Figure 6A-D. The experimentally determined modality of all 30 allele swap strains agrees with predictions. The asymmetric effect (swaps change modality in some backgrounds but not others) is explained by the phenomenological model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "8029fcfa-152e-4c55-8438-2f7067b4ecdf",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Swapping GAL1 or GAL4 alleles does not affect modality, either alone or in combination with GAL3 swaps, suggesting GAL3's role in modality can evolve independently of other GAL genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 are supported by experimental data in Figure 6\u2014figure supplements 2-3. The negative results (no effect of GAL1/GAL4 swaps) strengthen the conclusion that GAL3 is the primary determinant of modality variation. The experiments include appropriate controls and multiple strain backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "550c1390-f7b2-4b16-a376-6fa2739160ed",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SNPs in either the promoter or coding regions of GAL3 are sufficient to change modality, as demonstrated by promoter and CDS swap experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by experimental data in Figure 6E-F showing that both promoter and coding sequence variations can independently affect modality. However, the mechanistic basis for how these SNPs affect GAL3 function is not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "1c6cbe82-8dbc-4128-8fba-533484829647",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Glucose plays a critical role in modulating GAL pathway modality through two mechanisms: indirect inhibition via transporter competition and direct inhibition via Mig1p-mediated repression of GAL4. The Mig1p-dependent mechanism is responsible for glucose-driven unimodality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C32-C37 are supported by the observation that all strains are bimodal in pure galactose (C26) and the mig1\u0394 experiment (C44-C46). The logical inference that transporter competition alone cannot explain unimodality (C36) is sound. However, C37 is somewhat speculative as direct mechanistic validation is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "6d851fcd-3aea-4781-929c-0f1edf89ed90",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both unimodal and bimodal population distributions are stable for 24 hours, indicating modality is a steady-state phenomenon rather than a transient response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by experimental data in Figure 1\u2014figure supplement 2. The 24-hour time course provides evidence for stability, though longer time points would strengthen the conclusion about steady-state behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "e071ff1e-aa57-4c66-9acf-634afc9b5336",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The modality of GAL induction depends on evolutionary history and environmental conditions, and can be explained by changes in a single gene (GAL3). Strains can tune bimodality both physiologically (via metabolic history) and genetically (via GAL3 allelic variation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80, C81, C90, and C92 are well-supported summaries of the major findings. They integrate results from multiple experiments (natural variation, pre-induction conditions, allele swaps, GAL3 titration) into a coherent conclusion about the genetic and physiological control of modality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about bimodal gene expression, the GAL pathway, and prior work on modality establish the context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9-C19 are background statements supported by appropriate citations to prior literature. These establish the known features of bimodal responses and the GAL pathway, and identify gaps in knowledge that the current study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "29792971-08f2-4564-9ac5-328e308d65ec",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The GAL pathway mechanism involves Gal80p-Gal4p regulation and positive feedback through Gal1p and Gal3p, which underlies bistability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 describe established knowledge about GAL pathway regulation, supported by appropriate citations. These mechanistic details provide necessary background for understanding the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "9e74ddfc-c34d-4abd-abad-8112a5afdbbf",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The GAL pathway responds to the ratio of galactose and glucose, so increasing glucose while keeping galactose constant simultaneously decreases GAL activation and increases glucose repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101 and C102 are supported by citation to prior work (Escalante-Chong et al., 2015) and provide important context for interpreting the experimental design where glucose is titrated at constant galactose.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "89428242-4cc1-42f1-8d54-e7b588c066f0",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion claims about evolutionary implications, bet-hedging strategies, and broader significance of the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C82-C89, C95-C99 are largely speculative statements about evolutionary implications and broader significance. While they are reasonable interpretations of the findings, they lack direct experimental support. Claims about bet-hedging advantages (C87-C89) are supported by citations, but the evolutionary implications for the specific system studied here (C8, C95) remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    },
+    {
+      "id": "c637eb64-a4ba-40c3-9342-80bf46760bec",
+      "content_id": "91cbef5b-7126-4be1-85a1-eee4e9f717df",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Previous work on cell-to-cell heterogeneity has emphasized complex genetic architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is a characterization of prior work supported by appropriate citations, providing context for the contrast with the current findings about single-gene control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:39:44.672962Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1cdcc734-631e-402a-9c90-9dc289dc94b2",
+      "result_id": "f0162d08-582a-483e-9ad8-6d80f4a58087"
+    },
+    {
+      "claim_id": "d4203058-c2d3-47d0-ab88-376be1a11494",
+      "result_id": "f0162d08-582a-483e-9ad8-6d80f4a58087"
+    },
+    {
+      "claim_id": "c1c75593-3bda-4549-b3a6-f9ef07bd1550",
+      "result_id": "f0162d08-582a-483e-9ad8-6d80f4a58087"
+    },
+    {
+      "claim_id": "a94b3bda-bb34-40e7-ac35-6cc847714c24",
+      "result_id": "f0162d08-582a-483e-9ad8-6d80f4a58087"
+    },
+    {
+      "claim_id": "5a5ff893-0923-4372-bf2e-a1fb713896bd",
+      "result_id": "f0162d08-582a-483e-9ad8-6d80f4a58087"
+    },
+    {
+      "claim_id": "a4e08887-def2-41a0-9117-e68d0cd52ec0",
+      "result_id": "3667eeed-9b4a-49f3-8674-719a69e84aac"
+    },
+    {
+      "claim_id": "0aa67d00-5ba0-4d23-b9c9-47b73a648260",
+      "result_id": "3667eeed-9b4a-49f3-8674-719a69e84aac"
+    },
+    {
+      "claim_id": "40f691d3-2675-416b-9a06-1d54d7bc37f8",
+      "result_id": "3667eeed-9b4a-49f3-8674-719a69e84aac"
+    },
+    {
+      "claim_id": "0e5bae47-77e7-46ac-bdb9-6ed165eee865",
+      "result_id": "3667eeed-9b4a-49f3-8674-719a69e84aac"
+    },
+    {
+      "claim_id": "4cf3da50-a056-4f34-8cc7-8ea3d6d7def4",
+      "result_id": "3667eeed-9b4a-49f3-8674-719a69e84aac"
+    },
+    {
+      "claim_id": "33c14bdf-360e-4477-842b-60c0a953df1c",
+      "result_id": "db5f83df-1ed7-42b0-9c69-804b70217998"
+    },
+    {
+      "claim_id": "bdfaf46f-c0cd-4f66-9f15-d72f6d9e0714",
+      "result_id": "db5f83df-1ed7-42b0-9c69-804b70217998"
+    },
+    {
+      "claim_id": "40321de9-025f-491e-a893-fcf31aab92c2",
+      "result_id": "db5f83df-1ed7-42b0-9c69-804b70217998"
+    },
+    {
+      "claim_id": "b5193633-1a50-479f-9e90-79ea1b2d0343",
+      "result_id": "db5f83df-1ed7-42b0-9c69-804b70217998"
+    },
+    {
+      "claim_id": "cbb49e38-3d7f-41a5-b4e4-01cf0a621b32",
+      "result_id": "db5f83df-1ed7-42b0-9c69-804b70217998"
+    },
+    {
+      "claim_id": "b450f4cc-9813-4b16-bec9-0f1fafdcf473",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "31aae4a3-4feb-4d9e-9fb5-f8d36f429099",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "38af8c05-9d21-4c5d-b23f-7ee3ad1de18b",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "bbc3a7b2-738d-446d-b038-1aa7b402c2ec",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "22648b23-8328-48f5-934d-5da864ca944d",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "199c0162-9034-4c0d-b02b-b78abf301791",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "27abe369-9e39-40f2-a605-5daa7d624430",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "5c6ffab2-e523-419f-854d-72eb7d894e6d",
+      "result_id": "4cb9cfd6-4073-4fb0-be80-39916be9f77b"
+    },
+    {
+      "claim_id": "d0de08b7-ec3a-4384-94a3-9694a6d75eb5",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "58b74272-3efd-40f1-8405-3a493c1c012c",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "327a933b-9919-4dd4-b03e-6411c44e42cc",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "c4c8afff-506a-4d21-8874-954b562aaadf",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "f63fb6ee-9e1f-4a07-b1e6-584ebfa66e81",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "a28bfec4-aa82-4154-82ad-b74aac9b0ff4",
+      "result_id": "aab3b377-7ab2-4e79-8d02-ae10c9b16a5d"
+    },
+    {
+      "claim_id": "46e2929b-8717-4ee3-8017-12fe1d9ddbbe",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "65c03ca3-cb63-45c9-b7b8-ba868ea782e8",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "79e63a82-beb9-4a3f-a5f4-57eba2b0f3e9",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "87a277f7-b2ad-4895-8870-796ccafa4997",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "51e90046-4dae-43fa-aa39-1b24fc20e6c2",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "2900a632-ef87-47b8-b538-91dc2e4cb7f9",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "c97d3a55-6013-4c59-aa96-5c62caa269a4",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "9fd45417-e499-41b7-b614-1c82cd9d037f",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "85a0cea8-0d5f-4649-bc92-fcd2ec0454b2",
+      "result_id": "4bbda399-ed12-4a29-bb73-37307d5dc70d"
+    },
+    {
+      "claim_id": "4848f274-27de-4d84-9ca8-74d94ac18af2",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "93b4f57a-22da-4246-b804-9747728a1298",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "603470d7-3d31-4e70-9946-c61468e0e5eb",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "56bf0110-e09b-402b-8e87-d78ecdf23514",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "d179cc9f-1484-4fa3-bcf4-7cb22cdbd098",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "a31fa28c-7ef2-4ac4-9198-bae767cb8e3f",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "704bd835-40d7-4356-b640-e56837822b3b",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "d4a95d14-6130-423e-af38-ce07b11a3ec2",
+      "result_id": "50719f6a-777f-4564-a42c-95c1f6c99e32"
+    },
+    {
+      "claim_id": "23d015e6-ad25-4a1e-b736-0fdb5bed741a",
+      "result_id": "8029fcfa-152e-4c55-8438-2f7067b4ecdf"
+    },
+    {
+      "claim_id": "6b9389bb-4d6b-4dd6-9e1c-ad18aa906bef",
+      "result_id": "8029fcfa-152e-4c55-8438-2f7067b4ecdf"
+    },
+    {
+      "claim_id": "0a596714-7044-4dc7-b9bc-53615b38ac7d",
+      "result_id": "8029fcfa-152e-4c55-8438-2f7067b4ecdf"
+    },
+    {
+      "claim_id": "5451b23f-391f-4e49-bc91-935cfc4f35f0",
+      "result_id": "8029fcfa-152e-4c55-8438-2f7067b4ecdf"
+    },
+    {
+      "claim_id": "0438d917-74c5-4b9d-950f-bb5cbd4fade4",
+      "result_id": "550c1390-f7b2-4b16-a376-6fa2739160ed"
+    },
+    {
+      "claim_id": "1a91fcff-e5fa-4f60-9d04-44d183a76405",
+      "result_id": "550c1390-f7b2-4b16-a376-6fa2739160ed"
+    },
+    {
+      "claim_id": "3170a5b8-38d8-4275-a9e3-fe88798b6b1c",
+      "result_id": "550c1390-f7b2-4b16-a376-6fa2739160ed"
+    },
+    {
+      "claim_id": "ff6d2cbe-df2c-44a8-b54a-d0abbee76ce7",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "c37aefd8-9ccb-479c-8771-6b72c549ce2e",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "6d2c7400-3a06-4172-8ac5-09f5e05aed18",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "9b1af750-0e4a-4ce4-a7da-44ba3e1f5c7f",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "683ac135-ec34-4129-9981-b60d0322640d",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "76a1d8d1-3e76-46cb-922c-3b6fb02d6f5e",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "c2de8b96-6d62-4629-adbd-33a415b799ce",
+      "result_id": "1c6cbe82-8dbc-4128-8fba-533484829647"
+    },
+    {
+      "claim_id": "6cc89f78-491e-444c-837f-3c00120634db",
+      "result_id": "6d851fcd-3aea-4781-929c-0f1edf89ed90"
+    },
+    {
+      "claim_id": "48c5ad61-d448-48dd-9025-663b2c88283a",
+      "result_id": "6d851fcd-3aea-4781-929c-0f1edf89ed90"
+    },
+    {
+      "claim_id": "07d896f1-a7e8-4098-9e2a-1b5f59d4ce98",
+      "result_id": "e071ff1e-aa57-4c66-9acf-634afc9b5336"
+    },
+    {
+      "claim_id": "ae5c9628-3196-45c0-993a-a347fd8293b0",
+      "result_id": "e071ff1e-aa57-4c66-9acf-634afc9b5336"
+    },
+    {
+      "claim_id": "8091e6b5-9e63-42fe-9412-6fe205e7142f",
+      "result_id": "e071ff1e-aa57-4c66-9acf-634afc9b5336"
+    },
+    {
+      "claim_id": "ca0f7aec-9d72-4be8-a5fb-5cb962b1163c",
+      "result_id": "e071ff1e-aa57-4c66-9acf-634afc9b5336"
+    },
+    {
+      "claim_id": "f5b0bde4-2ce4-4284-bcdc-eeffb46410b6",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "edca5463-27ce-43bc-8353-42029c39a287",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "93af4a54-e31a-4d93-92f6-0c0bd5d7c5de",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "e16d1683-47b7-4b71-9d3e-a2099c9c2c70",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "50681b83-2932-4c01-a4b2-ad5c380e12c9",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "abfee80a-3ef2-44a5-b9d9-7999814eaa67",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "ec58dd5b-32b0-438c-a89c-f8fbe34ceffa",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "77fe276e-e07d-4ba3-ac67-fdc8dbaa1f83",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "bf5e4f2b-92de-4613-ba3b-324f5e6df973",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "94387945-682c-4784-9291-5ddcb1de3516",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "0741b407-0ec8-40e6-b736-7a0585a19606",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "c09b9fca-de5f-45c1-af76-5634942b52b0",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "193c4701-39a3-4790-b102-c5fec266061e",
+      "result_id": "e87e626e-06de-4cfa-a71b-2d8da193b1d2"
+    },
+    {
+      "claim_id": "fc86a26b-0613-41e3-bca4-3f2bd14186bc",
+      "result_id": "29792971-08f2-4564-9ac5-328e308d65ec"
+    },
+    {
+      "claim_id": "db3c2fc8-b2a8-4f7f-ac6e-b7eab944d20b",
+      "result_id": "29792971-08f2-4564-9ac5-328e308d65ec"
+    },
+    {
+      "claim_id": "11cd3bc9-359a-4ab5-b2ea-60c95b6d0e67",
+      "result_id": "29792971-08f2-4564-9ac5-328e308d65ec"
+    },
+    {
+      "claim_id": "a435586e-7dc2-4be1-9abe-475d9e0461f1",
+      "result_id": "29792971-08f2-4564-9ac5-328e308d65ec"
+    },
+    {
+      "claim_id": "acf9c2bf-2b91-4f56-bc0e-4613a1c310c0",
+      "result_id": "9e74ddfc-c34d-4abd-abad-8112a5afdbbf"
+    },
+    {
+      "claim_id": "cd970d23-8624-4ee7-9959-abbf733b0636",
+      "result_id": "9e74ddfc-c34d-4abd-abad-8112a5afdbbf"
+    },
+    {
+      "claim_id": "9310480c-5db0-47ad-86cf-fc5baa495dd1",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "1e845399-a435-41a9-880a-0287211ed0d7",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "23eb5f44-199c-4079-9a90-f79dfd30d066",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "1d359a48-9274-41e0-935d-3876d64e38dc",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "8d0cd632-a46a-4f26-92ba-5c8bcb6507d6",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "9e43b91d-b2ff-446d-a6a3-4533b19e2fbe",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "54a32359-ba75-455b-9293-fc313d917e00",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "82c27831-be41-4cd4-bb4c-993d97a10b78",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "eb252f65-9ca5-42ac-bf1a-1ef01e6f11b7",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "bddcb5bf-0cff-4d91-a1d9-4b46fa5ea4e2",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "d2b3417e-dec5-46cc-a7cd-b3939740d943",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "dee40da3-b2f3-46c8-b01f-a00ccdc0ecfe",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "2237db63-8667-48f3-ad0a-4a99c9316357",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "39185514-53f3-40cf-a2b0-38556d44fa8d",
+      "result_id": "89428242-4cc1-42f1-8d54-e7b588c066f0"
+    },
+    {
+      "claim_id": "c0e0e6e8-05fc-49ad-96e1-124b248b5e11",
+      "result_id": "c637eb64-a4ba-40c3-9342-80bf46760bec"
+    }
+  ],
+  "comparisons": []
+}

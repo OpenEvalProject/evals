@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "PAC channels exhibit pH-dependent desensitization below pH 4.6, with increasing magnitude and faster kinetics at more acidic conditions. Endogenous PAC currents are stable at pH 5.0 but show progressive desensitization at pH 4.6-3.6, with a time constant of 64.1\u00b16.9 s at pH 3.6. Overexpressed PAC shows similar pH-dependent desensitization but with faster kinetics (27.1\u00b14.7 s at pH 3.6). The channel fully recovers from desensitization within seconds upon return to neutral pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C35, C104-C107, C111-C114 are supported by comprehensive patch-clamp electrophysiology data shown in Figure 1 and supplementary figures. The experiments systematically characterize desensitization across pH ranges with appropriate controls, quantification, and statistical analysis. The data demonstrate clear pH-dependent desensitization with reproducible kinetics and recovery properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "H98 and acidic residues E107/D109 at the ECD-TMD interface are critical for PAC desensitization. Charge-reversing mutations (H98R, E107R, D109R) impair desensitization at pH 4.0. MD simulations reveal that H98R increases side-chain flexibility and reduces interaction energy with E107/D109, particularly D109. The specific biochemical properties of histidine at position 98 (charge and flexibility) are essential for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C8, C37-C57 are well-supported by combined experimental and computational evidence. Mutagenesis data (Figure 2B-C) show consistent impairment of desensitization for charge-reversing mutants. MD simulations (Figure 2D-I) provide mechanistic insight into why H98R reduces desensitization through altered flexibility and interaction energies. The integration of structural analysis, functional data, and simulations provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C86"
+    ],
+    "result": "E94 at the extracellular TM1 extension prevents PAC desensitization. The E94R mutation causes desensitization at pH 5.0 (where wild-type shows none) and enhanced desensitization at pH 4.6. Positive charge at position 94 is critical for this phenotype. MD simulations show E94R stabilizes the desensitized conformation through enhanced interactions with the \u03b210-\u03b211 linker. The E94R/H98R double mutant reverses the fast-desensitizing phenotype, indicating H98-E107/D109 interactions play a dominant role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C73, C86 are supported by electrophysiology data (Figure 3-4) and MD simulations. The gain-of-function phenotype of E94R is clearly demonstrated with appropriate controls (E94K, E94Q, E94D). MD simulations provide mechanistic explanation through RMSF analysis and interaction energy calculations. The epistasis experiment with E94R/H98R double mutant strengthens the conclusion about the relative importance of different interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "D91 at the extracellular TM1 extension prevents PAC desensitization. The D91R mutation causes strong desensitization at pH 5.0 and enhanced desensitization at pH 4.6, while D91N does not. MD simulations show D91 faces the lipid bilayer in the desensitized state, and R91 forms more hydrogen bonds with lipid headgroups. In the open state, D91 points toward K95 and N305 near the pore, suggesting D91R may also destabilize the open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C74-C85 are supported by electrophysiology (Figure 5A-C) and MD simulations (Figure 5D-E). The charge-specific effect is demonstrated by comparing D91R and D91N. MD simulations provide structural context for both desensitized and open states. However, claim C85 about D91R destabilizing the open state is somewhat speculative as it's based on structural inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "E250 in the \u03b210-\u03b211 linker is critical for PAC desensitization. E250R (but not E249R or D251R) reduces desensitization at pH 4.0, while E250Q has no effect, indicating protonation is not involved. In silico mutagenesis and MD simulations show R250 cannot fit into the pocket occupied by E250 in the desensitized state, leading to weaker interactions with D297. E250 represents an important tethering point between the \u03b210-\u03b211 linker and TMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C87-C101 are supported by mutagenesis data (Figure 6B-C) and MD simulations (Figure 6A, D-E). The specificity of E250R effect is demonstrated by testing neighboring residues. MD simulations provide mechanistic explanation for reduced desensitization through altered E250-D297 interactions. Claims C99-C100 about the open state are more speculative but are clearly presented as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C102",
+      "C103",
+      "C108"
+    ],
+    "result": "TM1 undergoes a dramatic rotational movement during the transition from activated to desensitized states, switching its interaction partner from its cognate TM2 to the neighboring TM2. Extensive interactions between residues at the TM1 extension and the ECD-TMD interface stabilize the desensitized conformation. This large conformational change requires overcoming a high energy barrier, consistent with the slow desensitization kinetics observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C102-C103, C108 are supported by structural analysis (citing prior cryo-EM structures) and functional data. The rotational movement of TM1 is established from prior structural work (C102). The functional characteristics (slow kinetics, high pH threshold) are consistent with a high energy barrier for this large conformational change. MD simulations throughout the paper demonstrate extensive interactions at the ECD-TMD interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C41",
+      "C57"
+    ],
+    "result": "The low-pH non-conducting PAC structures previously observed at pH 4.0 and 4.5 by cryo-EM represent a desensitized state. This hypothesis is supported by the pH range of desensitization (below pH 4.6) and the functional importance of residues characteristic of this structure (H98, E107, D109, E94, D91, E250).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C41, C57 integrate prior structural work with the current functional data. The hypothesis that the low-pH non-conducting structure represents a desensitized state is well-supported by the convergence of: (1) pH range matching functional desensitization, (2) mutagenesis of key residues in this structure affecting desensitization, and (3) MD simulations showing these residues stabilize this conformation. This represents a major contribution linking structure to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C20"
+    ],
+    "result": "PAC desensitization mechanism differs fundamentally from ASIC channels. In ASICs, the desensitized conformation is similar to the open state with a collapsed pore, and desensitization is ~100-fold faster than PAC. ASICs desensitize rapidly (seconds) after proton-induced activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C20 are supported by citations to prior work on ASICs and comparison with PAC data. The contrast between PAC and ASIC desensitization mechanisms is well-established through literature citations and the current functional characterization. This contextualizes PAC as having a distinct desensitization mechanism within acid-sensing channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The pH dependence of PAC desensitization (pH 4.6-3.6) correlates with the pKa of acidic residues (~4.0). Protonation of acidic residues like E107 and D109 likely contributes to pH-dependent desensitization. Multiple titratable amino acids in the ECD and ECD-TMD interface collectively tune the conformational equilibrium from open to desensitized state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 are partially supported but contain significant speculation. C115 is factual (pKa values). C116 is a reasonable inference from charge-neutralizing mutant data, though the effect was modest. C117 is supported by the lack of effect of E94Q and D91N. However, C118 is highly speculative as the authors did not systematically identify which residues are responsible for pH sensing of desensitization. The claim about 'multiple titratable amino acids' lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "There is a potential endogenous factor/mechanism limiting PAC desensitization that is overwhelmed by overexpressed channels, as overexpressed PAC shows faster and greater desensitization than endogenous PAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 is speculative and lacks supporting evidence. While the observation of different desensitization kinetics between endogenous and overexpressed PAC is valid (C34-C35), the interpretation of an 'endogenous factor' is one of several possible explanations. Alternative explanations (e.g., differences in channel density, local environment, or post-translational modifications) are not explored. This requires follow-up work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The physiological relevance of PAC desensitization may involve protection from acid-induced cell death during tissue acidosis or regulation of lysosomal Cl- concentration. However, tissue pH rarely drops below 6.0 in pathologies, while lysosomes can reach pH 4.5. PAC normally traffics to endosomes but may also reach lysosomes where desensitization could prevent Cl- leak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C125 are highly speculative about physiological relevance. C120-C121 are factual (tissue pH ranges, lysosomal pH). C122 is based on prior work. C123 suggests PAC doesn't localize to lysosomes. C119, C124-C125 are speculation without experimental support. The authors appropriately present these as possibilities ('may', 'potentially'), but no experiments test these hypotheses. This represents future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "PAC channel plays important roles in regulating pH and size of organelles in the endocytic pathway, mediates pH-dependent chloride transport, regulates endosome acidification and macropinosome shrinkage, and is involved in acid-induced cell death. PAC activity has been recorded for decades, and PACC1/TMEM206 was recently identified as encoding PAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C19 are background claims supported by citations to prior work. These establish the context and importance of PAC but are not novel findings of this manuscript. They are appropriately cited and provide necessary background for understanding the significance of the desensitization mechanism.",
+    "result_type": "MINOR"
+  }
+]

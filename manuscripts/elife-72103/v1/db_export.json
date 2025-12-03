@@ -1,0 +1,2155 @@
+{
+  "submission": {
+    "id": "77ddd3c1-570e-41b0-8514-8d14a5b5596f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:10:13.184478Z",
+    "updated_at": "2025-12-03T13:10:13.184478Z"
+  },
+  "content": [
+    {
+      "id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "submission_id": "77ddd3c1-570e-41b0-8514-8d14a5b5596f",
+      "content_type": "manuscript",
+      "content_text": "# The DNA sensors AIM2 and IFI16 are SLE autoantigens that bind neutrophil extracellular traps\n\n## Authors\n\n- Brendan Antiochos<sup>1</sup> ([ORCID: 0000-0001-6166-9750](https://orcid.org/0000-0001-6166-9750)) \u2020\n- Daniela Trejo-Zambrano<sup>1</sup>\n- Paride Fenaroli<sup>2</sup>\n- Avi Rosenberg<sup>3</sup>\n- Alan Baer<sup>1</sup>\n- Archit Garg<sup>4</sup>\n- Jungsan Sohn<sup>1</sup> ([ORCID: 0000-0002-9570-2544](https://orcid.org/0000-0002-9570-2544))\n- Jessica Li<sup>1</sup>\n- Michelle Petri<sup>1</sup>\n- Daniel W Goldman<sup>1</sup>\n- Christopher Mecoli<sup>1</sup>\n- Livia Casciola-Rosen<sup>1</sup> ([ORCID: 0000-0002-4172-1539](https://orcid.org/0000-0002-4172-1539))\n- Antony Rosen<sup>1</sup>\n\n### Affiliations\n\n1. Johns Hopkins University School of Medicine, Division of Rheumatology Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. Nephrology Unit, Parma University Hospital, Department of Medicine and Surgery Parma Italy ([ROR:02k7wn190](https://ror.org/02k7wn190))\n3. Johns Hopkins University School of Medicine, Division of Pathology Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n4. Johns Hopkins University School of Medicine, Department of Biophysics and Biophysical Chemistry Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Nucleic acid binding proteins are frequently targeted as autoantigens in systemic lupus erythematosus (SLE) and other interferon (IFN)-linked rheumatic diseases. The AIM-like receptors (ALRs) are IFN-inducible innate sensors that form supramolecular assemblies along double-stranded (ds)DNA of various origins. Here, we investigate the ALR absent in melanoma 2 (AIM2) as a novel autoantigen in SLE, with similar properties to the established ALR autoantigen interferon-inducible protein 16 (IFI16). We examined neutrophil extracellular traps (NETs) as DNA scaffolds on which these antigens might interact in a pro-immune context.Methods:AIM2 autoantibodies were measured by immunoprecipitation in SLE and control subjects. Neutrophil extracellular traps were induced in control neutrophils and combined with purified ALR proteins in immunofluorescence and DNase protection assays. SLE renal tissues were examined for ALR-containing NETs by confocal microscopy.Results:AIM2 autoantibodies were detected in 41/131 (31.3%) SLE patients and 2/49 (4.1%) controls. Our SLE cohort revealed a frequent co-occurrence of anti-AIM2, anti-IFI16, and anti-DNA antibodies, and higher clinical measures of disease activity in patients positive for antibodies against these ALRs. We found that both ALRs bind NETs in vitro and in SLE renal tissues. We demonstrate that ALR binding causes NETs to resist degradation by DNase I, suggesting a mechanism whereby extracellular ALR-NET interactions may promote sustained IFN signaling.Conclusions:Our work suggests that extracellular ALRs bind NETs, leading to DNase resistant nucleoprotein fibers that are targeted as autoantigens in SLE.Funding:These studies were funded by NIH R01 DE12354 (AR), P30 AR070254, R01 GM 129342 (JS), K23AR075898 (CM), K08AR077100 (BA), the Jerome L. Greene Foundation and the Rheumatology Research Foundation. Dr. Antiochos and Dr. Mecoli are Jerome L. Greene Scholars. The Hopkins Lupus Cohort is supported by NIH grant R01 AR069572. Confocal imaging performed at the Johns Hopkins Microscopy Facility was supported by NIH Grant S10 OD016374.\n\n## Introduction\n\nSystemic lupus erythematosus (SLE) is a rheumatic disease characterized by upregulated interferon (IFN) expression and autoantibody production (Gupta and Kaplan, 2021). Autoantibodies inform the identification of specific disease phenotypes and also provide insight into the mechanisms operative in rheumatic diseases (Rosen and Casciola-Rosen, 2016). Many SLE autoantigens are nucleic acid binding proteins, and nucleic acid containing immune complexes are implicated in aspects of pathogenesis (Mahajan et al., 2016).\n\nThe AIM2-like receptors (ALRs) are a group of IFN-induced innate sensors of double-stranded (ds) DNA. AIM2 and IFI16 are the most studied members of the ALR family, which also includes IFIX and MNDA. The ALRs bind to dsDNA in a sequence-independent manner via electrostatic interactions with the dsDNA backbone and form an oligomerized filament along areas of accessible dsDNA of any origin (Morrone et al., 2014; Morrone et al., 2015). These innate sensors equip the cell with a means of identifying harmful stimuli, including viral genomes, mislocalized mitochondrial DNA, and chromosomal DNA from tumor cells. Once activated, the ALRs activate downstream innate immune signaling by type I IFN and inflammasome (IL-1/IL-18) pathways (Hornung et al., 2009; Unterholzner et al., 2010).\n\nAnti-IFI16 antibodies occur in both SLE and Sjogren\u2019s Syndrome (SS), but we have previously reported that the targeted epitopes differ in these diseases (Antiochos et al., 2018; Baer et al., 2016). IFI16 oligomers appear to be recognized by SS sera, suggesting that dsDNA binding may enhance its antigenicity. While AIM2 assembles similar filamentous structures on dsDNA, its status as an autoantigen has not been reported. Here, we identify AIM2 as an autoantigen in SLE (targeted in 31.3% of patients), with antibodies against AIM2, IFI16, and dsDNA being highly associated with one another. To understand why anti-ALR and anti-dsDNA antibodies might be closely co-targeted in SLE, we considered the possibility that ALRs bind to neutrophil extracellular traps (NETs) in the extracellular space. NETs are microbicidal structures consisting of protein-laden chromatin fibers generated by neutrophils in response to various stimuli (Brinkmann et al., 2004). The NET dsDNA scaffold is a structure on which a variety of molecules interact (Gugliesi et al., 2013), representing a platform for antigenic materials (including SLE autoantigens) to be presented to the adaptive immune system (Mistry and Kaplan, 2017). We find that both AIM2 and IFI16 bind NETs in vitro and in tissues, with their binding yielding polymeric structures that confer resistance to DNase I. Together, our findings demonstrate that AIM2 and IFI16 are NET-bound autoantigens in SLE.\n\n## Materials and methods\n\n### Patients\n\nPlasma from 131 SLE patients (defined by the SLICC criteria Petri et al., 2012) in the Hopkins Lupus Cohort was studied for autoantibodies. Sera from 49 healthy controls were analyzed to establish a threshold for assay positivity. 133 primary was analyzed to establish a threshold for assay positivity. 133 primary Sj\u00f6gren\u2019s Syndrome (SS) patients (defined by ACR/EULAR criteria Shiboski et al., 2017) were included as disease controls. All patients and healthy controls gave informed consent for blood used in research, and all work involving human subjects was approved by the Johns Hopkins Institutional Review Board. Paraffin sections from SLE renal biopsies were obtained for immunostaining and are detailed in the Supplementary file 1c.\n\n### ALR autoantibody assays\n\nFull length AIM2 cDNA was subcloned into the pET28 vector (Novagen) and used to generate 35S-methionine labeled AIM2 protein by in vitro transcription and translation (IVTT) (Promega). Immunoprecipitations (IP) were performed using IVTT product diluted in Lysis Buffer (20 mM Tris pH 7.4, 150 mM NaCl, 1 mM EDTA pH 7.4, 1% NP40) and 1 microliter of serum (90 min, 4 \u00b0C). 20 microliters of Protein G Dynabeads (Thermo Fisher) were then added to each IP and incubated for 60 min. Beads were magnetically isolated, washed, and boiled in gel application buffer. IP products were electrophorezed on SDS-polyacrylamide gels and visualized by fluorography. Films were scanned and AIM2 bands quantified using Quantity One software (Bio- Rad). IP products were normalized to the same positive reference serum included on each gel. The cutoff for antibody positivity was set at 2 standard deviations above the mean control serum value. To test anti-AIM2 antibody binding in the absence of DNA, TURBO DNase (Life Technologies) was incubated with human sera and AIM2 IVTT products separately at a concentration of 10 U/mL for 20 min at RT prior to the IP reaction being performed. IFI16 antibodies were assayed by ELISA as described (Matyszewski et al., 2021). To test antibody binding of the PYRIN domain in the absence of the DNA binding domain, AIM2-PYD was cloned into eGFP expression vector and transiently expressed in 293T cells. Human sera were then used to immunoprecipitate the AIM2 PYD-GFP fusion protein using Protein G Dyna Beads as with the full length AIM2 assay. MNDA was expressed and purified from E. coli as previously described (Matyszewski et al., 2021) and analyzed by Western blotting using a commercial anti-MNDA antibody (3C1, Cell Signaling). The MNDA ELISA was developed similar to prior ELISA assays (Antiochos et al., 2021), and utilized 50 ng of protein per well, blocked with 5% milk in PBS-Tween, and human sera applied at 1:2000 dilution for 2 hr.\n\n### NET assays\n\nNeutrophils were isolated from healthy control PBMCs using Ficoll-Paque density gradient followed by RBC lysis using ACK buffer (Quality Biological). NET formation was induced using PMA at 100 nM for 3 hr. For immunofluorescence studies, neutrophils were plated on glass coverslips for 15 minprior to PMA treatment. For quantitative DNAse protection assays, NETs were induced with PMA in 96 well plates, incubated with or without purified ALRs, then treated with DNAse I at room temperature (RT) prior to incubation with 5 \u00b5M Sytox Green (Thermo Fisher) and quantification via fluorimetry using a Perkin Elmer plate reader. Experiments were performed twice.\n\n### Immunofluorescence\n\nNeutrophil samples were stained with anti-MPO-FITC antibody and mounted in DAPI-containing ProLong Gold Antifade Mountant (Thermo Fisher Scientific). AIM2 and IFI16 proteins were expressed, purified, and fluorescently labeled as previously described (Morrone et al., 2014; Morrone et al., 2015). SLE renal biopsies were stained as previously described (Antiochos et al., 2018) using anti-MPO rabbit polyclonal (ThermoFisher), anti-MPO mouse monoclonal (ThermoFisher), anti-IFI16 mouse monoclonal (Sigma), anti-AIM2 rabbit polyclonal (Sigma), and Hoechst 33,342 (ThermoFisher). Confocal imaging was performed with a Zeiss AxioObserver with 780-Quasar confocal module.\n\n### Fluorescence anisotropy\n\nFluorescence anisotropy (FA) experiments were performed as in Matyszewski et al., 2018 to compare DNase shielding of IFI16 versus the catalytic domain of cGAS (cGAS-CD). 150 nM (binding site normalized for each protein) FAM-labeled 72bps dsDNA derived from VACV was pre-incubated for 30 min with 300 nM IFI16 or 500 nM cGAS-CD. DNase I was added at time 0, then the fraction of bound dsDNA was monitored via the FA of dsDNA\u2022protein complex.\n\n### Statistics\n\nFeatures of patients with and without AIM2 antibodies were compared using Fisher\u2019s exact test for categorical variables and the Mann-Whitney test for continuous variables. Multivariable logistic regression was utilized to determine associations between variables. P values less than 0.05 were considered statistically significant.\n\n## Results\n\n### AIM2 autoantibodies are present in SLE, and frequently co-occur with anti-IFI16 and anti-dsDNA antibodies\n\nTo determine whether AIM2 was a target of the humoral immune response in SLE, we developed an IP assay to screen for anti-AIM2 antibodies. 41/131 (31.3%) of SLE versus 2/49 (4.1%) of healthy controls were anti-AIM2-positive (P < 0.001) (Figure 1A). Interestingly, anti-AIM2 antibodies were strongly associated with both anti-IFI16 and anti-DNA antibodies in the SLE samples measured on the day of visit (Figure 1B and Table 1). We found that anti-AIM2 antibodies were associated with higher measures of SLEDAI (2.29 \u00b1 2.3 vs 1.05 \u00b1 1.61, P = 0.0026, Table 1), which was largely driven by the immunology component. Anti-AIM2 antibodies were associated with the presence of disease activity in the skin domain of the SLEDAI index at the date of blood draw: 11/41 (26.8%) of anti-AIM2 positive patients had scores > 0 in this domain, compared to 11/90 (12.2%) of anti-AIM2 negative patients (P = 0.0463). Anti-AIM2 antibodies were also associated with a small but significant increase (0.63 \u00b1 0.55 vs 0.43 \u00b1 0.51, P = 0.0333) in the SLE Physician Global Disease Activity score, which is based solely on clinical estimation of SLE activity, rather than serologic indices. A multivariable analysis correcting for SLEDAI, anti-dsDNA, and C4 results demonstrated that anti-AIM2 antibodies were significantly associated with anti-IFI16 antibodies with an OR of 3.7 (P = 0.007, 95% CI 1.44\u20139.7). A subset of SLE patients (n = 9) demonstrated particularly high levels of anti-AIM2 antibodies with normalized OD >20 (Figure 1A). These patients had higher SLEDAI values than both lower level anti-AIM2-positive and anti-AIM2-negative patients (Supplementary file 1a). Among all anti-AIM2 positive patients, we found a higher prevalence of positivity for anti\u2013Ro (18/41, 44% vs 19/90, 21%, P = 0.0114) and anti\u2013La (10/41, 24% vs 7/90, 8%, P = 0.0125) antibodies (Supplementary file 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig1-v1.jpg)\n\n**Figure 1.:** AIM2 antibodies were detected using immunoprecipitation (IP) of 35S-methionine labeled, in vitro transcribed and translated protein. Data are presented as OD units calibrated to a known positive reference serum. Dotted line indicates positive threshold value determined as the mean + 2 standard deviations of control serum samples. AIM2 autoantibodies were identified in 2/49 controls and 41/131 SLE patients. Statistical significance was determined using the Mann-Whitney test for nonparametric values (A). Relationship between anti-AIM2, -IFI16, and \u2013DNA antibodies in the SLE cohort (B). Anti-AIM2 +SLE and control (CT) sera and AIM2 protein were each treated with or without DNase prior to being combined in the IP reaction. Coomassie stain of IgG heavy chain (HC) is shown below each IP result (C). 1 \u00b5g of Poly(dA:dT) was treated with DNase as in (C) and analyzed by SYBR Green staining in agarose gel (D). 293T cells were transfected with AIM2-PYD-GFP expression plasmid, and lysate was used in IP reaction with anti-AIM2 +SLE and CT sera (E). IP products and 293T lysates were blotted for AIM2 using anti-N terminal antibody (Cell Signaling D5X7K).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Anti-MNDA antibodies were analyzed by ELISA using 59 healthy control (HC) and 137 SLE sera. (A). MNDA protein utilized in ELISA analyzed by Coommasie staining (left) and Western botting (right) (B). AU = arbitrary units.\n\n**Table 1.**\n Day of visit phenotypic characteristics of SLE patients related to AIM2 autoantibody status.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Autoantibody</th>\n      <th>Anti-AIM2+n = 41</th>\n      <th>Anti-AIM2-n = 90</th>\n      <th>P value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>IFI16 Positive</td>\n      <td>19/41 (46%)</td>\n      <td>12/90 (13%)</td>\n      <td>&lt; 0.0001</td>\n    </tr>\n    <tr>\n      <td>DNA Positive</td>\n      <td>12/41 (29%)</td>\n      <td>7/89 (8%)</td>\n      <td>0.0026</td>\n    </tr>\n    <tr>\n      <td>Disease Activity Feature</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Physician Global Disease Activity</td>\n      <td>0.63 \u00b1 0.55</td>\n      <td>0.43 \u00b1 0.51</td>\n      <td>0.0333</td>\n    </tr>\n    <tr>\n      <td>SLEDAI</td>\n      <td>2.29 \u00b1 2.3</td>\n      <td>1.05 \u00b1 1.61</td>\n      <td>0.0026</td>\n    </tr>\n    <tr>\n      <td>C3</td>\n      <td>114.7 \u00b1 36.9</td>\n      <td>121.4 \u00b1 29.0</td>\n      <td>0.1352</td>\n    </tr>\n    <tr>\n      <td>C4</td>\n      <td>19.5 \u00b1 8.2</td>\n      <td>25 \u00b1 9.3</td>\n      <td>0.0005</td>\n    </tr>\n    <tr>\n      <td>Urine Protein/Creatinine ratio</td>\n      <td>0.134 \u00b1 0.15</td>\n      <td>0.107 \u00b1 0.11</td>\n      <td>0.4372</td>\n    </tr>\n  </tbody>\n</table>\n\n_Numerators correspond to number of patients with indicated feature positive and denominators to total number of patients with indicated feature recorded in the cohort, followed by percent (%) positive._\n\nSS shares several phenotypic features with SLE, including the presence of an IFN signature and B cell dysregulation (Yao et al., 2013), but anti-DNA antibodies are not characteristic of SS. We therefore analyzed SS sera for the presence of anti-AIM2 antibodiesand found that 46/133 (34.6%) of SS sera were positive. In contrast to SLE, anti-IFI16 was not enriched in patients with anti-AIM2 antibodies in SS (35% anti-AIM2-positive and anti-IFI16-positive versus 28% anti-AIM2-negative and anti-IFI16-positive in SS, P = 0.4324), showing that the association between anti-IFI16 and anti-AIM2 antibodies is specific to SLE, where these immune responses are also associated with anti-dsDNA antibodies.\n\nBecause AIM2 binds dsDNA of any sort, we considered whether the IP reaction observed here might identify interactions between AIM2 and dsDNA bound in circulating SLE immune complexes (Means et al., 2005), rather than a direct antibody-AIM2 interaction. To address this, we pre-treated anti-AIM2 +SLE sera and the AIM2 IVTT product with DNase prior to combining them in the IP reaction, and found that SLE sera retained the ability to bind AIM2 following DNase treatment (Figure 1C\u2013D). To further confirm this, we also performed immunoprecipitation of AIM2 PYRIN domain (PYD) that lacks the DNA-binding HIN domain, finding that 8/10 anti-AIM2 +SLE sera immunoprecipitated the isolated AIM2 PYD in this assay. Thus, DNA was not required for AIM2 binding in the samples assessed in these assays, confirming that this is a bona fide antibody specificity. It remains possible that the presence of dsDNA in SLE immune complexes could theoretically enhance AIM2 binding in vivo, with important consequences for epitope spreading and amplification of inflammation in tissues (see below).\n\nThe identification of anti-AIM2 autoantibodies raises the question of whether additional ALR proteins might be SLE autoantigens. To address this point, we developed an ELISA against MNDA \u2013 a third member of the ALR dsDNA sensor family. Despite the fact that antibodies against peptides derived from MNDA had been reported in some patients with SLE and other rheumatic diseases (van Beers et al., 2013), we did not identify any difference in anti-MNDA reactivity between healthy control and SLE sera (median AU HC = 1.279, median AU SLE = 1.228, P = 0.9319) (Figure 1\u2014figure supplement 1).\n\n### AIM2 and IFI16 bind to neutrophil extracellular traps and inhibit their degradation by DNase I\n\nThe close relationship between anti-AIM2, anti-IFI16, and anti-dsDNA antibodies in the SLE cohort led us to consider scenarios in which ALR-DNA complexes could be generated and promote the development of autoantibodies against these three antigens. Neutrophil extracellular traps (NETs) have been implicated as important sources of extracellular DNA in SLE and are linked to the IFN signature as well as autoantibody generation in this disease (Gupta and Kaplan, 2016). ALRs are IFN-induced, bind to dsDNA of many origins in a sequence-independent manner, and AIM2 has been identified as a protein constituent of SLE NETs in a proteomics analysis (Bruschi et al., 2019). IFI16 is released from epithelial cells undergoing apoptosis (Antiochos et al., 2018; Costa et al., 2011), and extracellular IFI16 is quantifiable in the sera of SLE patients (Gugliesi et al., 2013). Considering these observations, we reasoned that when ALRs are generated in the setting of IFN exposure and subsequently released from cells, they might encounter and bind to extracellular NETs, accumulating on this extracellular platform and creating a hub for amplification similar to that observed in the complement and coagulation pathways (de Bont et al., 2019).\n\nTo test this hypothesis, we used NETs as a DNA substrate for ALR binding: neutrophils were stimulated to undergo NETosis with PMA, and then incubated with fluorescently labeled IFI16 and AIM2 proteins. We found that both ALRs bind readily to NETs (Figure 2A\u2013B). Co-localization of AIM2 and IFI16 along NET chromatin fibers was visible by confocal microscopy in this analysis, suggesting that both ALRs assemble into filaments on NET DNA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig2-v1.jpg)\n\n**Figure 2.:** NETs were induced in neutrophils using PMA 100 nM for 3 hr, then left untreated (A) or incubated with fluorescently labeled AIM2 (pink) and IFI16 (red) at 200 nM at RT for 1 hr (B). Following ALR incubation, samples were stained with anti-MPO-FITC antibody (green) and DAPI (blue), then imaged by confocal microscopy. NETs were treated with DNase I at 20 U/mL at RT for 1 hr (C). NETs incubated with ALRs as in (B) were then treated with 20 U/mL DNase I for 1 hr (D). Scale bars = 20 \u00b5m. NETs in 96 well plates were incubated with ALRs at 200 nM (or buffer only) for 1 hr at RT, then treated with DNase I at 0, 20, and 100 U/mL for 30 min at RT. NETs were then stained with Sytox-Green 5 \u00b5M, and samples analyzed by fluorimetry (E). RFU = fluorescence units. Mean and standard deviation of 4 replicate wells are indicated. Mann-Whitney test was used to compare groups. P > 0.05 = not significant (ns). P < 0.05 = significant (*). IFI16 and the catalytic domain of cGAS were combined with FAM-labeled 72 bp VACV dsDNA for 30 min, then DNase I added at concentration of 20 U/mL at time = 0 and the fraction of bound dsDNA was monitored via the fluorescence anisotropy of dsDNA\u2022protein complex (F).\n\nIFI16 and AIM2 nucleoprotein filaments are highly stable and persist even after the dsDNA template has been degraded by nucleases (Antiochos et al., 2018; Matyszewski et al., 2018), and impaired clearance of NETs by DNase I has been observed in some SLE patients (Hakkim et al., 2010). We therefore hypothesized that ALRs might represent one group of proteins with the ability to mediate NET resistance to nucleases, potentially enhancing antigenicity. We used DNase I to explore this question, as DNase I is the nuclease responsible for effective clearance of NETs (Hakkim et al., 2010), and DNase I deficiency has been associated with SLE in both human subjects and animal models (Mart\u00ednez Valle et al., 2008). After exposure to 20 U/ml DNase I for 1 hr at RT, both myeloperoxidase (MPO) and DNA signals were completely degraded, leaving no observable fluorescence in any channel (Figure 2C). When NETs were first incubated with ALRs, however, we observed incomplete ALR-NET degradation by DNase I \u2013 in some areas, IFI16 and AIM2 remained present and co-localized with MPO (Figure 2D). In addition, there was observable DNA remaining in these areas of persistent ALR structures, implying that the ALRs had partially shielded NET DNA from degradation. This finding suggested that both the protein and DNA components of the ALR-NET structure are resistant to DNase-mediated clearance. To better quantify this, we employed a plate-based Sytox Green assay to measure the dsDNA content of NETs following exposure to DNase I (Figure 2E). This assay confirmed that ALR-bound NETs are resistant to DNase I, leaving more DNA present following nuclease treatment (Figure 2E). Together these experiments demonstrate that ALRs bind to NETs, generating a protein-DNA structure with enhanced resistance to DNase-mediated clearance.\n\nTo test the specificity of this observation, we utilized a fluorescence anisotropy assay to compare IFI16 against the catalytic domain of cGAS (cGAS-CD), to determine whether the property of DNA binding alone confers proteins with the ability to shield bound dsDNA from DNAse I (Figure 2F). In this second assay, we again observed that IFI16 blocked dsDNA degradation, while cGAS-CD did not. Thus, the ability to shield dsDNA from nuclease does not appear to be a universal property of all DNA-binding proteins, and other factors (such as the ability to oligomerize) may be required for this behavior.\n\n### IFI16-NETs are present in lupus nephritis\n\nPrior studies have presented evidence of in vivo NET formation within the renal tissues of SLE patients, supporting the notion that dysregulated neutrophil function contributes to immune pathology in this disease (Villanueva et al., 2011). We therefore sought to determine whether ALR-NET interactions could be identified among NETs present in lupus nephritis biopsies. Considering that patients with diffuse proliferative lupus nephritis are known to harbor netting neutrophils in renal tissue (Villanueva et al., 2011), we identified patients with diffuse proliferative lupus nephritis, then selected 5 samples whose biopsies demonstrated neutrophilic infiltrates or karyorrhectic debris (Supplementary file 1c). We found that AIM2 was highly expressed in MPO-positive infiltrating cells (Figure 3A), while IFI16 was expressed more broadly throughout renal cell types (Figure 3B). We detected NETs containing both AIM2 and IFI16 in glomerular and interstitial infiltrates (Figure 3C and D). High magnification, z-stack imaging (Figure 3\u2014figure supplement 1) confirmed that these structures represented extracellular DNA that co-stained for MPO and AIM2 or IFI16, consistent with ALR-bound NETs, rather than adjacent or overlapping cell nuclei. In summary, our immunostaining experiments provide evidence that AIM2 and IFI16 bind NETs in the setting of diffuse proliferative lupus nephritis, establishing AIM2 and IFI16 as NET-bound SLE autoantigens.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig3-v1.jpg)\n\n**Figure 3.:** Representative images of ALR expression and ALR-NETs identified in patients with class IV lupus nephritis. AIM2 (A) expression was largely detected in MPO expressing neutrophils, while IFI16 (B) was more broadly distributed. NETs (arrows) demonstrating co-localizing staining for DNA, MPO, and AIM2 (C) or IFI16 (D) visualized by confocal microscopy. Scale bars: 50 \u00b5m (A, B) 5 \u00b5m (C), 2 \u00b5m (D).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Renal biopsy paraffin section stained for DNA, MPO, and IFI16/AIM2 and imaged using z-stacking to identify extracellular DNA-containing structures containing MPO and IFI16 or AIM2. Individual squares within each panel represent adjacent focal planes, proceeding sequentially from top left to bottom right in each area imaged.\n\n## Discussion\n\nSLE features autoantibodies that bind nucleic acids and nucleic acid-binding proteins, and extracellular nucleic acids contribute to SLE pathogenesis (Mustelin et al., 2019). Here, we identify the dsDNA sensor AIM2 as a novel autoantigen in SLE and demonstrate that anti-AIM2 antibodies are associated with SLE disease activity markers. Furthermore, we find that NETs provide a scaffold for ALR oligomerization, which in turn confers resistance to nuclease degradation.\n\nNETosis is a process whereby dsDNA is expelled into the extracellular space at sites of tissue damage and is of mechanistic relevance in SLE (Gupta and Kaplan, 2016). The NET dsDNA scaffold is a structure on which a variety of molecules can interact, and is a source of antigenic proteins in SLE and other inflammatory diseases (Mistry and Kaplan, 2017; Lee et al., 2017). While the ALRs have been most extensively studied for their intracellular functions, there are reasons to theorize that they may perform extracellular activities as well. Our previous work demonstrated that IFI16 is released from epithelial cells injured by the NK cell granule killing pathway and that IFI16 retains its ability to interact with dsDNA in the extracellular space (Antiochos et al., 2018). Our findings are consistent with the observations that (i) IFI16 is released from irradiated epithelial cells, and (ii) extracellular IFI16 is quantifiable in the sera of SLE patients (Gugliesi et al., 2013; Iannucci et al., 2020). In addition, the release of AIM2 from pyroptotic cells into extracellular vesicles in the context of pyroptosis has been described (So et al., 2018) and extracellular signaling activities of the related oligomerizing inflammasome adaptor protein ASC have also been reported (Franklin et al., 2014). We therefore reasoned that ALRs released from injured epithelial, endothelial, or other immune cells, generated in the setting of SLE end-organ tissue damage, might encounter and bind to extracellular NETs. We found that both IFI16 and AIM2 readily assemble into filaments along the length of NET dsDNA. Unexpectedly, we found this ALR-NET structure resists DNase-mediated degradation \u2013 a property that was not demonstrated by cGAS-CD. NETs promote IFN signaling at sites of their generation when engulfed by immune cells (Garcia-Romo et al., 2011; Apel et al., 2021), and may have additional disease-amplifying functions (Salazar-Gonzalez et al., 2019). By prolonging the stability of interferogenic NETs, extracellular ALRs may enhance IFN signaling at sites of neutrophil activation, which could be further amplified by IFN-induced expression of the ALRs themselves.\n\nImpairment of NET removal has been specifically linked to the presence of lupus nephritis (Hakkim et al., 2010) - a manifestation of SLE with significant associated morbidity (Gasparotto et al., 2020). Neutrophilic infiltration of the kidney is a feature of more severe forms of glomerulonephritis, and NET formation in this organ may contribute to renal damage through the propagation of IFN signaling, immune cell activation, and thrombosis (Salazar-Gonzalez et al., 2019). Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with SLE (Villanueva et al., 2011; Frangou et al., 2019) and also ANCA associated vasculitis (Kessenbrock et al., 2009), supporting the notion that NETs play a pathogenic role in the immune dysregulation and tissue damage that occur in glomerulonephritis.\n\nHere, we demonstrate for the first time that the DNA sensors AIM2 and IFI16 bind to NETs in vivo, through imaging studies of proliferative lupus nephritis specimens. Our data include z-stack images at high magnification, clearly demonstrating the presence of extracellular DNA-MPO-ALR complexes in this site. This finding supports previous data (Gugliesi et al., 2013; Iannucci et al., 2020; Bawadekar et al., 2015) suggesting that the ALRs may have important functions not just intracellularly, but also in the extracellular environment. The large chromatin fibers generated through NETosis represent sizeable dsDNA templates upon which IFI16 and AIM2 monomers oligomerize in the extracellular space and are expected to result in durable immunostimulatory structures at sites of IFN-induced protein expression. ALR-bound NETs may therefore promote not only local immune activation but the targeting of ALRs (and DNA) by antibodies in SLE. NET-bound ALRs may potentiate autoimmunity by activating B cells through either endosomal TLR9-NET DNA interactions, or activation of the B cell receptor, in a manner analogous to that reported for the NET-binding peptide LL37 (Gestermann et al., 2018). Alternatively, the initial presence of anti-DNA antibodies containing Ig-bound DNA (derived from NETs or other sources) could lead to immune complexes consisting of Ig-DNA-ALR interactions in the periphery, thereby promoting the subsequent development of anti-ALR antibodies through epitope spreading.\n\nOur data indicate that AIM2 is targeted not only in SLE but also in SS \u2013 a condition in which NETosis has not been linked to disease pathology. In contrast to the relationship seen in SLE, we found no association between AIM2 and IFI16 antibodies in SS, and anti-dsDNA antibodies are absent in SS. This difference highlights the important role of disease-specific tissue processes in the development of unique autoantibody profiles against shared antigens. In the setting of lupus nephritis, we observed ALR expression by both neutrophils and resident renal cells and suspect that these antigens may be released by a variety of cell types in the kidney, leading to the observed extracellular interaction with NET DNA. Contrastingly, neutrophil infiltration in target salivary tissues is not a common feature of SS, and the absence of the NET DNA scaffold may explain the differing autoantibody profile observed in that condition.\n\nIn summary, we have identified the ALRs AIM2 and IFI16 as NET-binding autoantigens in SLE. The ALR-NET interaction may increase NET longevity and perpetuate NET-mediated inflammatory signaling in lupus nephritis and other sites of NET generation and IFN expression. This work supports a role for the ALRs in extracellular immune processes as NET-binding antigens in SLE.\n",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "90119b83-b06e-4db9-81c3-8a3a87a83caf",
+      "submission_id": "77ddd3c1-570e-41b0-8514-8d14a5b5596f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Russell E Vance, https://ror.org/01an7q238 University of California Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72103.sa0](https://doi.org/10.7554/eLife.72103.sa0)\n\nThis paper identifies proteins that serve as targets of self-reactive autoantibodies during an autoimmune disease called systemic lupus erythematosus (commonly referred to as lupus). Importantly, the authors provide evidence that these proteins bind and protect extracellular DNA from destruction, and propose that this property may enhance the autoimmune response to the DNA and associated proteins. The work may therefore provide an important underlying mechanism for a prevalent and important human autoimmune disease.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Russell E Vance, https://ror.org/01an7q238 University of California Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72103.sa1](https://doi.org/10.7554/eLife.72103.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The DNA sensors AIM2 and IFI16 are NET-binding SLE autoantigens\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Betty Diamond as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Kate Fitzgerald (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Reviewer 2 raises an important issue as to the specificity of the assay measuring anti-Aim2 autoantibodies. The concern is specifically that the assay detects other antibodies (e.g. anti-DNA antibodies) that bind to a complex (e.g. containing DNA) to which the AIM2 protein binds as well. The reviewers discussed this concern and agreed that it should be addressed. One suggestion was to repeat the experiment with a radiolabelled AIM2 protein that lacks a DNA binding domain. Alternatively, the presence of anti-AIM2 antibodies could be assessed with another technique, e.g. immunoblotting. Regardless, some additional experimentation appears to be required to solidify this central claim of the manuscript.\n\n2) Reviewers 1 and 3 raise other issues that can be discussed by the authors. It would be ideal if there were data to address the specificity of the effects (e.g. comparison to other DNA binding proteins), but the authors are welcome to try to address the point by discussion if they feel that the concern would be satisfactorily addressed in this manner.\n\nReviewer #1 (Recommendations for the authors):\n\nOverall the data is compelling and convincing. A few issues should be addressed.\n\n1. It would be useful to address the specificity of these responses. For example are autoantibodies to other ALRs or DNA sensors (eg. cGAS) also feature of SLE or is there something unique about these 2 ALR family members.\n\n2. The ability of AIM2 or IFI16 to bind NETs and prevent their destruction by Dnase-1 could be controlled better. Do other dsDNA binding proteins similarly shield NETs from destruction or is this unique to ALRs.\n\n3. The authors should discuss in more detail how AIM2 and IFI16 accumulate extracellularly in SLE patient samples to modulate the stability and interferogenic potential of NETs.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors of Antiochos et al., present important observations of the behavior of AIM2 in association with NET DNA and in lupus kidney biopsies. It is observed that AIM2 has a strong affinity for NET DNA and that it appears to be expressed by neutrophils. This may provide an opportunity for AIM2 to escape the cell confines and become exposed to the external milieu, in which it may contribute to a immune stimulation by nuclear antigens. If so, the high affinity for DNA and AIM2's ability to form larger assemblies on the DNA may explain why the binding of AIM2 to DNA NETs makes them resistant to DNAse 1 digestion.\n\nHowever, this observation also provides the major concern for the detection of anti-AIM2 autoantibodies. Lupus plasma may contain anti-DNA antibodies and extracellular DNA (either free or in complex with antibodies). Such DNA-Ig complexes could then act as a bridge to capture the recombinant AIM2 during the IP procedure, even without the direct participation of anti-AIM2 antibodies. Unfortunately, there may not be a simple way to unambiguously discriminate between these alternatives. Treating the plasma with DNAse 1 may not disrupt the DNA-AIM2 complexes, as shown in Figure 2. Perhaps a Western blot to the purified AIM2 could be attempted, in at least a subset of plasmas that are either anti-DNA positive or negative?\n\nReviewer #3 (Recommendations for the authors):\n\nPotential explanations for the immunogenicity of NET-bound proteins should be addressed. For example, does the increased valency of multimerized antigen result in greater activation through the BCR, or does does association with DNA result in the activation of additional pattern recognition receptors, or can sensor/DNA complexes continue to signal either extracellularly or when taken up by scavenger cells.\n",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5b37c6c7-ba0b-4ba2-8ab8-6d2f8469ee40",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C1",
+      "claim": "AIM2 autoantibodies were detected in 41/131 (31.3%) SLE patients and 2/49 (4.1%) controls.",
+      "claim_type": "EXPLICIT",
+      "source": "41/131 (31.3%) of SLE versus 2/49 (4.1%) of healthy controls were anti-AIM2-positive (P < 0.001) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation assays measuring AIM2 autoantibodies in patient and control sera, with results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "06e75a2b-89b6-489b-a904-d14403e33c1e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C2",
+      "claim": "Anti-AIM2 antibodies are significantly more prevalent in SLE patients compared to healthy controls (P < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "41/131 (31.3%) of SLE versus 2/49 (4.1%) of healthy controls were anti-AIM2-positive (P < 0.001) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical significance (P < 0.001) is provided from comparison of AIM2 antibody prevalence between SLE patients and controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4c6947d0-cd47-4def-994d-18371f957a62",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C3",
+      "claim": "Anti-AIM2 antibodies are strongly associated with anti-IFI16 antibodies in SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, anti-AIM2 antibodies were strongly associated with both anti-IFI16 and anti-DNA antibodies in the SLE samples measured on the day of visit (Figure 1B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The association is demonstrated through data analysis of SLE patient samples, shown in Figure 1B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "37dd9b44-408d-4934-ac17-34b8f6aeb809",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C4",
+      "claim": "Anti-AIM2 antibodies are strongly associated with anti-DNA antibodies in SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, anti-AIM2 antibodies were strongly associated with both anti-IFI16 and anti-DNA antibodies in the SLE samples measured on the day of visit (Figure 1B and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The association is demonstrated through data analysis of SLE patient samples, shown in Figure 1B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d710b391-49b9-4ba4-a49b-419c2ac8c8f8",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C5",
+      "claim": "Anti-AIM2 antibodies are associated with higher SLEDAI scores in SLE patients (2.29 \u00b1 2.3 vs 1.05 \u00b1 1.61, P = 0.0026).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that anti-AIM2 antibodies were associated with higher measures of SLEDAI (2.29 \u00b1 2.3 vs 1.05 \u00b1 1.61, P = 0.0026, Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of SLEDAI scores comparing anti-AIM2 positive and negative patients, with data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "de585a27-dcb9-4113-94a9-a83f0c3737cc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C6",
+      "claim": "The association between anti-AIM2 antibodies and higher SLEDAI scores is largely driven by the immunology component.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that anti-AIM2 antibodies were associated with higher measures of SLEDAI (2.29 \u00b1 2.3 vs 1.05 \u00b1 1.61, P = 0.0026, Table 1), which was largely driven by the immunology component.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of SLEDAI component scores in the patient cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "b2327a59-ad23-4257-b0a6-8cc8b5cdb90f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C7",
+      "claim": "Anti-AIM2 antibodies are associated with skin domain disease activity in SLE patients (26.8% vs 12.2%, P = 0.0463).",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-AIM2 antibodies were associated with the presence of disease activity in the skin domain of the SLEDAI index at the date of blood draw: 11/41 (26.8%) of anti-AIM2 positive patients had scores > 0 in this domain, compared to 11/90 (12.2%) of anti-AIM2 negative patients (P = 0.0463).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of skin domain SLEDAI scores comparing anti-AIM2 positive and negative patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "566198ab-c304-42ac-bceb-eabf60a73f24",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C8",
+      "claim": "Anti-AIM2 antibodies are associated with increased SLE Physician Global Disease Activity scores (0.63 \u00b1 0.55 vs 0.43 \u00b1 0.51, P = 0.0333).",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-AIM2 antibodies were also associated with a small but significant increase (0.63 \u00b1 0.55 vs 0.43 \u00b1 0.51, P = 0.0333) in the SLE Physician Global Disease Activity score, which is based solely on clinical estimation of SLE activity, rather than serologic indices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of Physician Global Disease Activity scores comparing anti-AIM2 positive and negative patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "6ab61f2a-710b-484d-b50a-ca360b469345",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C9",
+      "claim": "Anti-AIM2 antibodies are significantly associated with anti-IFI16 antibodies with an odds ratio of 3.7 (P = 0.007, 95% CI 1.44\u20139.7) after multivariable analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A multivariable analysis correcting for SLEDAI, anti-dsDNA, and C4 results demonstrated that anti-AIM2 antibodies were significantly associated with anti-IFI16 antibodies with an OR of 3.7 (P = 0.007, 95% CI 1.44\u20139.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multivariable logistic regression analysis controlling for confounding variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "32a6c012-d101-4784-af9b-afc57c6f9aba",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C10",
+      "claim": "A subset of SLE patients (n = 9) with particularly high levels of anti-AIM2 antibodies (normalized OD >20) had higher SLEDAI values than both lower level anti-AIM2-positive and anti-AIM2-negative patients.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of SLE patients (n = 9) demonstrated particularly high levels of anti-AIM2 antibodies with normalized OD >20 (Figure 1A). These patients had higher SLEDAI values than both lower level anti-AIM2-positive and anti-AIM2-negative patients (Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of SLEDAI scores in patients stratified by anti-AIM2 antibody levels, with data shown in Figure 1A and Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "202d5d25-464c-441b-9872-c90c180b0df3",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C11",
+      "claim": "Among anti-AIM2 positive SLE patients, there is a higher prevalence of anti-Ro antibodies (44% vs 21%, P = 0.0114).",
+      "claim_type": "EXPLICIT",
+      "source": "Among all anti-AIM2 positive patients, we found a higher prevalence of positivity for anti\u2013Ro (18/41, 44% vs 19/90, 21%, P = 0.0114) and anti\u2013La (10/41, 24% vs 7/90, 8%, P = 0.0125) antibodies (Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of anti-Ro antibody prevalence comparing anti-AIM2 positive and negative patients, with data in Supplementary file 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d3c9144a-98bb-4454-8ffe-53dc220889ba",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C12",
+      "claim": "Among anti-AIM2 positive SLE patients, there is a higher prevalence of anti-La antibodies (24% vs 8%, P = 0.0125).",
+      "claim_type": "EXPLICIT",
+      "source": "Among all anti-AIM2 positive patients, we found a higher prevalence of positivity for anti\u2013Ro (18/41, 44% vs 19/90, 21%, P = 0.0114) and anti\u2013La (10/41, 24% vs 7/90, 8%, P = 0.0125) antibodies (Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of anti-La antibody prevalence comparing anti-AIM2 positive and negative patients, with data in Supplementary file 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "ba72f8d7-f205-41b9-9023-e0c8664a8a21",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C13",
+      "claim": "SLE sera retain the ability to bind AIM2 following DNase treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we pre-treated anti-AIM2 +SLE sera and the AIM2 IVTT product with DNase prior to combining them in the IP reaction, and found that SLE sera retained the ability to bind AIM2 following DNase treatment (Figure 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation assays performed with DNase-treated samples, shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "2c79a4e8-b28d-4fc2-abdc-12f8686b9c42",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C14",
+      "claim": "8/10 anti-AIM2 positive SLE sera immunoprecipitated the isolated AIM2 PYRIN domain lacking the DNA-binding HIN domain.",
+      "claim_type": "EXPLICIT",
+      "source": "To further confirm this, we also performed immunoprecipitation of AIM2 PYRIN domain (PYD) that lacks the DNA-binding HIN domain, finding that 8/10 anti-AIM2 +SLE sera immunoprecipitated the isolated AIM2 PYD in this assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation assays using AIM2 PYD construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "988e7beb-3524-4798-914a-dc30cb6f52ba",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C15",
+      "claim": "DNA is not required for AIM2 antibody binding in the immunoprecipitation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DNA was not required for AIM2 binding in the samples assessed in these assays, confirming that this is a bona fide antibody specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the DNase treatment and PYD domain experiments demonstrating antibody binding in the absence of DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4d665ab3-0428-4600-a42f-079bacc673be",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C16",
+      "claim": "There is no difference in anti-MNDA reactivity between healthy control and SLE sera (median AU HC = 1.279, median AU SLE = 1.228, P = 0.9319).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that antibodies against peptides derived from MNDA had been reported in some patients with SLE and other rheumatic diseases (van Beers et al., 2013), we did not identify any difference in anti-MNDA reactivity between healthy control and SLE sera (median AU HC = 1.279, median AU SLE = 1.228, P = 0.9319) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ELISA data comparing anti-MNDA antibody levels between healthy controls and SLE patients, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "03017af8-ce9e-419b-af25-345a6e66d72e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C17",
+      "claim": "Antibodies against peptides derived from MNDA had been reported in some patients with SLE and other rheumatic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that antibodies against peptides derived from MNDA had been reported in some patients with SLE and other rheumatic diseases (van Beers et al., 2013), we did not identify any difference in anti-MNDA reactivity between healthy control and SLE sera (median AU HC = 1.279, median AU SLE = 1.228, P = 0.9319) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior published work (van Beers et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "624fa468-807e-430f-8df5-f9d1d7f0b596",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C18",
+      "claim": "46/133 (34.6%) of Sj\u00f6gren's Syndrome sera were positive for anti-AIM2 antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore analyzed SS sera for the presence of anti-AIM2 antibodiesand found that 46/133 (34.6%) of SS sera were positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from immunoprecipitation assays measuring AIM2 autoantibodies in SS patient sera.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "03f4e390-3ba6-42b5-b698-c06a3b057e2f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C19",
+      "claim": "In Sj\u00f6gren's Syndrome, anti-IFI16 is not enriched in patients with anti-AIM2 antibodies (35% vs 28%, P = 0.4324).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to SLE, anti-IFI16 was not enriched in patients with anti-AIM2 antibodies in SS (35% anti-AIM2-positive and anti-IFI16-positive versus 28% anti-AIM2-negative and anti-IFI16-positive in SS, P = 0.4324)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis comparing anti-IFI16 prevalence in anti-AIM2 positive versus negative SS patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "3860a48d-c6af-4324-a7eb-be19c6f16021",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C20",
+      "claim": "The association between anti-IFI16 and anti-AIM2 antibodies is specific to SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to SLE, anti-IFI16 was not enriched in patients with anti-AIM2 antibodies in SS (35% anti-AIM2-positive and anti-IFI16-positive versus 28% anti-AIM2-negative and anti-IFI16-positive in SS, P = 0.4324), showing that the association between anti-IFI16 and anti-AIM2 antibodies is specific to SLE, where these immune responses are also associated with anti-dsDNA antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from comparing the association patterns between SLE and SS patient cohorts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "fc9c6d90-2e64-4cd9-9afb-17ec39a841f9",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C21",
+      "claim": "Both IFI16 and AIM2 bind readily to neutrophil extracellular traps.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we used NETs as a DNA substrate for ALR binding: neutrophils were stimulated to undergo NETosis with PMA, and then incubated with fluorescently labeled IFI16 and AIM2 proteins. We found that both ALRs bind readily to NETs (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from immunofluorescence microscopy showing ALR binding to NETs, shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d7bd01ed-06d9-41fc-9e56-fbeac22a0491",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C22",
+      "claim": "Co-localization of AIM2 and IFI16 along NET chromatin fibers is visible by confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-localization of AIM2 and IFI16 along NET chromatin fibers was visible by confocal microscopy in this analysis, suggesting that both ALRs assemble into filaments on NET DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by confocal microscopy imaging data showing co-localization of AIM2 and IFI16 on NETs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f48c3521-b330-43fa-a48b-d283cd4f7f89",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C23",
+      "claim": "Both AIM2 and IFI16 assemble into filaments on NET DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-localization of AIM2 and IFI16 along NET chromatin fibers was visible by confocal microscopy in this analysis, suggesting that both ALRs assemble into filaments on NET DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-localization pattern observed in confocal microscopy images.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "5047852b-3b9e-426f-9622-95e889c8a707",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C24",
+      "claim": "ALR-bound NETs show incomplete degradation by DNase I, with IFI16 and AIM2 remaining present and co-localized with MPO in some areas.",
+      "claim_type": "EXPLICIT",
+      "source": "When NETs were first incubated with ALRs, however, we observed incomplete ALR-NET degradation by DNase I \u2013 in some areas, IFI16 and AIM2 remained present and co-localized with MPO (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data showing persistent ALR-NET structures after DNase treatment, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "295c9e40-86ca-46b7-b553-bd7018fbb586",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C25",
+      "claim": "Observable DNA remains in areas of persistent ALR structures after DNase treatment, implying that ALRs partially shield NET DNA from degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there was observable DNA remaining in these areas of persistent ALR structures, implying that the ALRs had partially shielded NET DNA from degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from microscopy observations showing DNA signal persisting in areas with ALR structures after DNase treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f2e2e16a-39ab-4fc8-916d-c0dbcd1b4a8c",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C26",
+      "claim": "Both the protein and DNA components of the ALR-NET structure are resistant to DNase-mediated clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggested that both the protein and DNA components of the ALR-NET structure are resistant to DNase-mediated clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the observation that both ALR proteins and DNA persist after DNase treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "805753da-a095-4d77-bd2d-7481544a1263",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C27",
+      "claim": "ALR-bound NETs are resistant to DNase I, leaving more DNA present following nuclease treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "To better quantify this, we employed a plate-based Sytox Green assay to measure the dsDNA content of NETs following exposure to DNase I (Figure 2E). This assay confirmed that ALR-bound NETs are resistant to DNase I, leaving more DNA present following nuclease treatment (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorimetry data measuring DNA content after DNase treatment, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "9d870686-421d-4fc5-9bc5-adf11de83cce",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C28",
+      "claim": "ALRs bind to NETs, generating a protein-DNA structure with enhanced resistance to DNase-mediated clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these experiments demonstrate that ALRs bind to NETs, generating a protein-DNA structure with enhanced resistance to DNase-mediated clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined results of microscopy and quantitative assays showing ALR binding and DNase resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "c2455fe1-a022-4b24-a2e9-ac94fb4b816e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C29",
+      "claim": "IFI16 blocks dsDNA degradation by DNase I in a fluorescence anisotropy assay.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the specificity of this observation, we utilized a fluorescence anisotropy assay to compare IFI16 against the catalytic domain of cGAS (cGAS-CD), to determine whether the property of DNA binding alone confers proteins with the ability to shield bound dsDNA from DNAse I (Figure 2F). In this second assay, we again observed that IFI16 blocked dsDNA degradation, while cGAS-CD did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence anisotropy data comparing IFI16 and cGAS-CD effects on DNA degradation, shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "0446d035-6bf5-4945-a0be-2468b617930f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C30",
+      "claim": "cGAS-CD does not block dsDNA degradation by DNase I in a fluorescence anisotropy assay.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the specificity of this observation, we utilized a fluorescence anisotropy assay to compare IFI16 against the catalytic domain of cGAS (cGAS-CD), to determine whether the property of DNA binding alone confers proteins with the ability to shield bound dsDNA from DNAse I (Figure 2F). In this second assay, we again observed that IFI16 blocked dsDNA degradation, while cGAS-CD did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence anisotropy data comparing IFI16 and cGAS-CD effects on DNA degradation, shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4d60aecd-ccf4-43cf-aeea-956d2614dfb5",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C31",
+      "claim": "The ability to shield dsDNA from nuclease does not appear to be a universal property of all DNA-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to shield dsDNA from nuclease does not appear to be a universal property of all DNA-binding proteins, and other factors (such as the ability to oligomerize) may be required for this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the differential behavior of IFI16 versus cGAS-CD in the DNase protection assay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "b386c05c-bf1a-4a4a-bbf2-795634472343",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C32",
+      "claim": "Other factors such as the ability to oligomerize may be required for proteins to shield dsDNA from nuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ability to shield dsDNA from nuclease does not appear to be a universal property of all DNA-binding proteins, and other factors (such as the ability to oligomerize) may be required for this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the known oligomerization properties of IFI16 and the observed differences between IFI16 and cGAS-CD.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d3476ef3-38d6-41fb-b7c8-446fa61481d2",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C33",
+      "claim": "AIM2 is highly expressed in MPO-positive infiltrating cells in lupus nephritis biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AIM2 was highly expressed in MPO-positive infiltrating cells (Figure 3A), while IFI16 was expressed more broadly throughout renal cell types (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data from lupus nephritis tissue sections, shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "8ee1b5bb-1218-4608-a1aa-c75f934135da",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C34",
+      "claim": "IFI16 is expressed more broadly throughout renal cell types in lupus nephritis biopsies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AIM2 was highly expressed in MPO-positive infiltrating cells (Figure 3A), while IFI16 was expressed more broadly throughout renal cell types (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence microscopy data from lupus nephritis tissue sections, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d72369a4-532d-4e1c-8b6f-fef1783791bc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C35",
+      "claim": "NETs containing both AIM2 and IFI16 are detected in glomerular and interstitial infiltrates in lupus nephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected NETs containing both AIM2 and IFI16 in glomerular and interstitial infiltrates (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data from lupus nephritis tissue sections, shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "92b8cc9c-0700-4049-b751-806ef06a73d1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C36",
+      "claim": "High magnification z-stack imaging confirms that ALR-containing structures in lupus nephritis represent extracellular DNA that co-stains for MPO and AIM2 or IFI16, consistent with ALR-bound NETs.",
+      "claim_type": "EXPLICIT",
+      "source": "High magnification, z-stack imaging (Figure 3\u2014figure supplement 1) confirmed that these structures represented extracellular DNA that co-stained for MPO and AIM2 or IFI16, consistent with ALR-bound NETs, rather than adjacent or overlapping cell nuclei.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by z-stack confocal microscopy data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "6764ca88-57f0-42ab-99ec-72969669f045",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C37",
+      "claim": "AIM2 and IFI16 bind NETs in the setting of diffuse proliferative lupus nephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our immunostaining experiments provide evidence that AIM2 and IFI16 bind NETs in the setting of diffuse proliferative lupus nephritis, establishing AIM2 and IFI16 as NET-bound SLE autoantigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the immunofluorescence microscopy data showing ALR-NET co-localization in lupus nephritis tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "abe8ecd4-6767-4f3d-91ab-645372ec03ab",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C38",
+      "claim": "AIM2 and IFI16 are NET-bound SLE autoantigens.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our immunostaining experiments provide evidence that AIM2 and IFI16 bind NETs in the setting of diffuse proliferative lupus nephritis, establishing AIM2 and IFI16 as NET-bound SLE autoantigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the combined evidence of autoantibody presence, NET binding in vitro, and NET co-localization in tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "87dac25b-f91a-4207-b895-4dba4f23b504",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C39",
+      "claim": "Systemic lupus erythematosus is characterized by upregulated interferon expression and autoantibody production.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic lupus erythematosus (SLE) is a rheumatic disease characterized by upregulated interferon (IFN) expression and autoantibody production (Gupta and Kaplan, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Gupta and Kaplan, 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "554dfca8-c179-41d1-b15a-cfb09751fe3b",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C40",
+      "claim": "Many SLE autoantigens are nucleic acid binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Many SLE autoantigens are nucleic acid binding proteins, and nucleic acid containing immune complexes are implicated in aspects of pathogenesis (Mahajan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Mahajan et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "711b20a7-efd3-4be3-a4ef-e5332c057852",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C41",
+      "claim": "Nucleic acid containing immune complexes are implicated in aspects of SLE pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many SLE autoantigens are nucleic acid binding proteins, and nucleic acid containing immune complexes are implicated in aspects of pathogenesis (Mahajan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Mahajan et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "ef84ba1f-d640-4a69-b6f7-748eae90a2bc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C42",
+      "claim": "The AIM2-like receptors are a group of IFN-induced innate sensors of double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The AIM2-like receptors (ALRs) are a group of IFN-induced innate sensors of double-stranded (ds) DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ALR protein family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f4199ca5-5220-4def-a235-2bbd7c92e38e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C43",
+      "claim": "AIM2 and IFI16 are the most studied members of the ALR family.",
+      "claim_type": "EXPLICIT",
+      "source": "AIM2 and IFI16 are the most studied members of the ALR family, which also includes IFIX and MNDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ALR protein family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "98d1fa38-1b20-427f-9150-1af3c5683efc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C44",
+      "claim": "The ALR family includes IFIX and MNDA in addition to AIM2 and IFI16.",
+      "claim_type": "EXPLICIT",
+      "source": "AIM2 and IFI16 are the most studied members of the ALR family, which also includes IFIX and MNDA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ALR protein family.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "fb5ed117-0e2d-4edb-8f78-1efc7a10d1cc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C45",
+      "claim": "ALRs bind to dsDNA in a sequence-independent manner via electrostatic interactions with the dsDNA backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "The ALRs bind to dsDNA in a sequence-independent manner via electrostatic interactions with the dsDNA backbone and form an oligomerized filament along areas of accessible dsDNA of any origin (Morrone et al., 2014; Morrone et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work (Morrone et al., 2014; Morrone et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "a5688717-2ff0-46d9-a0f9-1acbc63dc93e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C46",
+      "claim": "ALRs form an oligomerized filament along areas of accessible dsDNA of any origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The ALRs bind to dsDNA in a sequence-independent manner via electrostatic interactions with the dsDNA backbone and form an oligomerized filament along areas of accessible dsDNA of any origin (Morrone et al., 2014; Morrone et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work (Morrone et al., 2014; Morrone et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "98c3e630-d49f-4b49-8170-4c6b5f6702c1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C47",
+      "claim": "ALRs activate downstream innate immune signaling by type I IFN and inflammasome (IL-1/IL-18) pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Once activated, the ALRs activate downstream innate immune signaling by type I IFN and inflammasome (IL-1/IL-18) pathways (Hornung et al., 2009; Unterholzner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work (Hornung et al., 2009; Unterholzner et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4d53c089-29fa-4163-9704-3c98f5f1946d",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C48",
+      "claim": "Anti-IFI16 antibodies occur in both SLE and Sjogren's Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-IFI16 antibodies occur in both SLE and Sjogren's Syndrome (SS), but we have previously reported that the targeted epitopes differ in these diseases (Antiochos et al., 2018; Baer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work by the authors (Antiochos et al., 2018; Baer et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "7ed749da-ecf4-465d-9f5d-d7292d87c26c",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C49",
+      "claim": "The targeted epitopes of IFI16 differ between SLE and Sjogren's Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-IFI16 antibodies occur in both SLE and Sjogren's Syndrome (SS), but we have previously reported that the targeted epitopes differ in these diseases (Antiochos et al., 2018; Baer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work by the authors (Antiochos et al., 2018; Baer et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "bcc21d51-4009-4a46-97d4-ef4f5b3a3da8",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C50",
+      "claim": "IFI16 oligomers appear to be recognized by Sjogren's Syndrome sera.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 oligomers appear to be recognized by SS sera, suggesting that dsDNA binding may enhance its antigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior work on IFI16 antibodies in SS.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "cca09aba-f064-4356-a563-6169b97580b1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C51",
+      "claim": "dsDNA binding may enhance IFI16 antigenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 oligomers appear to be recognized by SS sera, suggesting that dsDNA binding may enhance its antigenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observation that oligomers are recognized.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "32ef65f8-f238-42fb-aa1d-7ab8114d5171",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C52",
+      "claim": "AIM2 assembles similar filamentous structures on dsDNA as IFI16.",
+      "claim_type": "EXPLICIT",
+      "source": "While AIM2 assembles similar filamentous structures on dsDNA, its status as an autoantigen has not been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AIM2 structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "34fe5e0a-6748-4229-a5a7-d26bbd7080ec",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C53",
+      "claim": "NETs are microbicidal structures consisting of protein-laden chromatin fibers generated by neutrophils in response to various stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "NETs are microbicidal structures consisting of protein-laden chromatin fibers generated by neutrophils in response to various stimuli (Brinkmann et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Brinkmann et al., 2004).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "bdcf6a80-a7a5-45d5-9942-8a7f3f20564c",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C54",
+      "claim": "The NET dsDNA scaffold is a structure on which a variety of molecules interact.",
+      "claim_type": "EXPLICIT",
+      "source": "The NET dsDNA scaffold is a structure on which a variety of molecules interact (Gugliesi et al., 2013), representing a platform for antigenic materials (including SLE autoantigens) to be presented to the adaptive immune system (Mistry and Kaplan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Gugliesi et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "7cb157f6-cca6-4d04-977a-2b762cb95f41",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C55",
+      "claim": "NETs represent a platform for antigenic materials (including SLE autoantigens) to be presented to the adaptive immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The NET dsDNA scaffold is a structure on which a variety of molecules interact (Gugliesi et al., 2013), representing a platform for antigenic materials (including SLE autoantigens) to be presented to the adaptive immune system (Mistry and Kaplan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Mistry and Kaplan, 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e9725599-2d77-4720-be15-50cbce2cb8b1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C56",
+      "claim": "IFI16 and AIM2 nucleoprotein filaments are highly stable and persist even after the dsDNA template has been degraded by nucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 and AIM2 nucleoprotein filaments are highly stable and persist even after the dsDNA template has been degraded by nucleases (Antiochos et al., 2018; Matyszewski et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior published work (Antiochos et al., 2018; Matyszewski et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "272b559c-63b2-484e-be12-e23bb56f2bab",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C57",
+      "claim": "Impaired clearance of NETs by DNase I has been observed in some SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 and AIM2 nucleoprotein filaments are highly stable and persist even after the dsDNA template has been degraded by nucleases (Antiochos et al., 2018; Matyszewski et al., 2018), and impaired clearance of NETs by DNase I has been observed in some SLE patients (Hakkim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Hakkim et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "1cab2596-5f1d-42e3-8540-2aa831429aea",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C58",
+      "claim": "DNase I is the nuclease responsible for effective clearance of NETs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used DNase I to explore this question, as DNase I is the nuclease responsible for effective clearance of NETs (Hakkim et al., 2010), and DNase I deficiency has been associated with SLE in both human subjects and animal models (Mart\u00ednez Valle et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Hakkim et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f2000a02-28d2-46fc-bd7a-2a7a2d92e577",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C59",
+      "claim": "DNase I deficiency has been associated with SLE in both human subjects and animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "We used DNase I to explore this question, as DNase I is the nuclease responsible for effective clearance of NETs (Hakkim et al., 2010), and DNase I deficiency has been associated with SLE in both human subjects and animal models (Mart\u00ednez Valle et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Mart\u00ednez Valle et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "5fbfe997-2355-435a-8ee6-0616cd978c3a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C60",
+      "claim": "Prior studies have presented evidence of in vivo NET formation within the renal tissues of SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have presented evidence of in vivo NET formation within the renal tissues of SLE patients, supporting the notion that dysregulated neutrophil function contributes to immune pathology in this disease (Villanueva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Villanueva et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "895451a4-d943-492c-93a9-7726d013562a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C61",
+      "claim": "Dysregulated neutrophil function contributes to immune pathology in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have presented evidence of in vivo NET formation within the renal tissues of SLE patients, supporting the notion that dysregulated neutrophil function contributes to immune pathology in this disease (Villanueva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Villanueva et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "398a5d31-67d5-4fc7-b473-1dd7884bf65f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C62",
+      "claim": "Patients with diffuse proliferative lupus nephritis harbor netting neutrophils in renal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that patients with diffuse proliferative lupus nephritis are known to harbor netting neutrophils in renal tissue (Villanueva et al., 2011), we identified patients with diffuse proliferative lupus nephritis, then selected 5 samples whose biopsies demonstrated neutrophilic infiltrates or karyorrhectic debris (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Villanueva et al., 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "7a900082-5631-442f-9708-a0a4d26dd640",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C63",
+      "claim": "NETosis is a process whereby dsDNA is expelled into the extracellular space at sites of tissue damage and is of mechanistic relevance in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "NETosis is a process whereby dsDNA is expelled into the extracellular space at sites of tissue damage and is of mechanistic relevance in SLE (Gupta and Kaplan, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Gupta and Kaplan, 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "21d2cd6f-cbd8-4a51-b077-17d1243fe199",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C64",
+      "claim": "The NET dsDNA scaffold is a source of antigenic proteins in SLE and other inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "The NET dsDNA scaffold is a structure on which a variety of molecules can interact, and is a source of antigenic proteins in SLE and other inflammatory diseases (Mistry and Kaplan, 2017; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature (Mistry and Kaplan, 2017; Lee et al., 2017).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "905834d4-232b-40b0-9674-ca0380744a17",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C65",
+      "claim": "IFI16 is released from epithelial cells injured by the NK cell granule killing pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work demonstrated that IFI16 is released from epithelial cells injured by the NK cell granule killing pathway and that IFI16 retains its ability to interact with dsDNA in the extracellular space (Antiochos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior published work by the authors (Antiochos et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "cc3cab0a-d9d5-4e3c-8ad4-6f32c178a9aa",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C66",
+      "claim": "IFI16 retains its ability to interact with dsDNA in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work demonstrated that IFI16 is released from epithelial cells injured by the NK cell granule killing pathway and that IFI16 retains its ability to interact with dsDNA in the extracellular space (Antiochos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior published work by the authors (Antiochos et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "a14da5b2-500f-4918-a576-bf46935a5bc4",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C67",
+      "claim": "IFI16 is released from irradiated epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with the observations that (i) IFI16 is released from irradiated epithelial cells, and (ii) extracellular IFI16 is quantifiable in the sera of SLE patients (Gugliesi et al., 2013; Iannucci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature (Gugliesi et al., 2013; Iannucci et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "7d8bafd4-e7bf-4fa7-8ca4-b775d447016f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C68",
+      "claim": "Extracellular IFI16 is quantifiable in the sera of SLE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are consistent with the observations that (i) IFI16 is released from irradiated epithelial cells, and (ii) extracellular IFI16 is quantifiable in the sera of SLE patients (Gugliesi et al., 2013; Iannucci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature (Gugliesi et al., 2013; Iannucci et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "8bd58602-73fc-48ae-81f3-84a87bcb0758",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C69",
+      "claim": "AIM2 is released from pyroptotic cells into extracellular vesicles in the context of pyroptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the release of AIM2 from pyroptotic cells into extracellular vesicles in the context of pyroptosis has been described (So et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (So et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e83c53c8-1282-4670-978c-2cea24b6d36c",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C70",
+      "claim": "Extracellular signaling activities of the related oligomerizing inflammasome adaptor protein ASC have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the release of AIM2 from pyroptotic cells into extracellular vesicles in the context of pyroptosis has been described (So et al., 2018) and extracellular signaling activities of the related oligomerizing inflammasome adaptor protein ASC have also been reported (Franklin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Franklin et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "480d47e7-6493-4039-bd48-a4097da8e578",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C71",
+      "claim": "NETs promote IFN signaling at sites of their generation when engulfed by immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "NETs promote IFN signaling at sites of their generation when engulfed by immune cells (Garcia-Romo et al., 2011; Apel et al., 2021), and may have additional disease-amplifying functions (Salazar-Gonzalez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature (Garcia-Romo et al., 2011; Apel et al., 2021).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "30e017ae-e517-45b9-b484-4e234a640cf9",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C72",
+      "claim": "NETs may have additional disease-amplifying functions beyond promoting IFN signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "NETs promote IFN signaling at sites of their generation when engulfed by immune cells (Garcia-Romo et al., 2011; Apel et al., 2021), and may have additional disease-amplifying functions (Salazar-Gonzalez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Salazar-Gonzalez et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d268f1b0-dda0-4501-b8ba-b0ee8b30b03e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C73",
+      "claim": "Extracellular ALRs may enhance IFN signaling at sites of neutrophil activation by prolonging the stability of interferogenic NETs.",
+      "claim_type": "EXPLICIT",
+      "source": "By prolonging the stability of interferogenic NETs, extracellular ALRs may enhance IFN signaling at sites of neutrophil activation, which could be further amplified by IFN-induced expression of the ALRs themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed DNase resistance of ALR-bound NETs and known IFN-inducing properties of NETs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "181dbe36-ca5c-4dee-8f35-4a45a5f7329a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C74",
+      "claim": "IFN-induced expression of ALRs could further amplify IFN signaling at sites of neutrophil activation.",
+      "claim_type": "EXPLICIT",
+      "source": "By prolonging the stability of interferogenic NETs, extracellular ALRs may enhance IFN signaling at sites of neutrophil activation, which could be further amplified by IFN-induced expression of the ALRs themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about a potential positive feedback loop involving IFN and ALRs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4baf2116-87a0-4cb5-a6ca-61b5ab4b9909",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C75",
+      "claim": "Impairment of NET removal has been specifically linked to the presence of lupus nephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of NET removal has been specifically linked to the presence of lupus nephritis (Hakkim et al., 2010) - a manifestation of SLE with significant associated morbidity (Gasparotto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Hakkim et al., 2010).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "1ce48db4-bf6f-4979-9a8e-b4607bc683cd",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C76",
+      "claim": "Lupus nephritis is a manifestation of SLE with significant associated morbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "Impairment of NET removal has been specifically linked to the presence of lupus nephritis (Hakkim et al., 2010) - a manifestation of SLE with significant associated morbidity (Gasparotto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Gasparotto et al., 2020).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "cfbd0f89-1e51-476b-b779-d68b9283b656",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C77",
+      "claim": "Neutrophilic infiltration of the kidney is a feature of more severe forms of glomerulonephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophilic infiltration of the kidney is a feature of more severe forms of glomerulonephritis, and NET formation in this organ may contribute to renal damage through the propagation of IFN signaling, immune cell activation, and thrombosis (Salazar-Gonzalez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about glomerulonephritis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "39daee4c-58ba-4bc8-b1f1-1b10b3de9df1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C78",
+      "claim": "NET formation in the kidney may contribute to renal damage through the propagation of IFN signaling, immune cell activation, and thrombosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrophilic infiltration of the kidney is a feature of more severe forms of glomerulonephritis, and NET formation in this organ may contribute to renal damage through the propagation of IFN signaling, immune cell activation, and thrombosis (Salazar-Gonzalez et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Salazar-Gonzalez et al., 2019).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e7c937d5-ff09-4258-a861-9b7f6f0ac437",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C79",
+      "claim": "Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with SLE (Villanueva et al., 2011; Frangou et al., 2019) and also ANCA associated vasculitis (Kessenbrock et al., 2009), supporting the notion that NETs play a pathogenic role in the immune dysregulation and tissue damage that occur in glomerulonephritis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature (Villanueva et al., 2011; Frangou et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "59d0af6c-321c-4e32-9fba-cd8baef1a10f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C80",
+      "claim": "Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with ANCA associated vasculitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with SLE (Villanueva et al., 2011; Frangou et al., 2019) and also ANCA associated vasculitis (Kessenbrock et al., 2009), supporting the notion that NETs play a pathogenic role in the immune dysregulation and tissue damage that occur in glomerulonephritis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Kessenbrock et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "14029685-582f-47e7-9eb6-e657156c9e8a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C81",
+      "claim": "NETs play a pathogenic role in the immune dysregulation and tissue damage that occur in glomerulonephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal microscopy has been utilized to demonstrate the presence of NET structures in renal lesions of patients with SLE (Villanueva et al., 2011; Frangou et al., 2019) and also ANCA associated vasculitis (Kessenbrock et al., 2009), supporting the notion that NETs play a pathogenic role in the immune dysregulation and tissue damage that occur in glomerulonephritis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited studies showing NET presence in glomerulonephritis lesions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e05197f8-daa7-49d4-a796-fef5b4ab9590",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C82",
+      "claim": "AIM2 has been identified as a protein constituent of SLE NETs in a proteomics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "ALRs are IFN-induced, bind to dsDNA of many origins in a sequence-independent manner, and AIM2 has been identified as a protein constituent of SLE NETs in a proteomics analysis (Bruschi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Bruschi et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "789c15da-5d05-4116-88dc-68524909ea3a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C83",
+      "claim": "ALR-bound NETs may promote local immune activation and the targeting of ALRs and DNA by antibodies in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "ALR-bound NETs may therefore promote not only local immune activation but the targeting of ALRs (and DNA) by antibodies in SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed properties of ALR-NET complexes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "789f56de-7dcf-4d4b-bc3e-b3d67f5e9a3d",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C84",
+      "claim": "NET-bound ALRs may potentiate autoimmunity by activating B cells through endosomal TLR9-NET DNA interactions or activation of the B cell receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "NET-bound ALRs may potentiate autoimmunity by activating B cells through either endosomal TLR9-NET DNA interactions, or activation of the B cell receptor, in a manner analogous to that reported for the NET-binding peptide LL37 (Gestermann et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on analogy to the known mechanism of LL37, supported by citation (Gestermann et al., 2018).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d1396c84-6030-4a53-9397-fbac6c5ad61e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C85",
+      "claim": "The initial presence of anti-DNA antibodies containing Ig-bound DNA could lead to immune complexes consisting of Ig-DNA-ALR interactions in the periphery, promoting the subsequent development of anti-ALR antibodies through epitope spreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the initial presence of anti-DNA antibodies containing Ig-bound DNA (derived from NETs or other sources) could lead to immune complexes consisting of Ig-DNA-ALR interactions in the periphery, thereby promoting the subsequent development of anti-ALR antibodies through epitope spreading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about a potential mechanism for anti-ALR antibody development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "eb8c5a21-e0e1-44f6-852a-3c99aa64c16e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C86",
+      "claim": "Sj\u00f6gren's Syndrome shares several phenotypic features with SLE, including the presence of an IFN signature and B cell dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SS shares several phenotypic features with SLE, including the presence of an IFN signature and B cell dysregulation (Yao et al., 2013), but anti-DNA antibodies are not characteristic of SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature (Yao et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "2c729381-de15-411c-a675-8affc0aad486",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C87",
+      "claim": "Anti-DNA antibodies are not characteristic of Sj\u00f6gren's Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "SS shares several phenotypic features with SLE, including the presence of an IFN signature and B cell dysregulation (Yao et al., 2013), but anti-DNA antibodies are not characteristic of SS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about Sj\u00f6gren's Syndrome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "909ac6c5-d065-40f7-8396-d7678ed7597a",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C88",
+      "claim": "NETosis has not been linked to disease pathology in Sj\u00f6gren's Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that AIM2 is targeted not only in SLE but also in SS \u2013 a condition in which NETosis has not been linked to disease pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the absence of literature linking NETosis to SS pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "a79f7ed1-3dcc-4213-a55a-1cd41e5ae539",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C89",
+      "claim": "Disease-specific tissue processes play an important role in the development of unique autoantibody profiles against shared antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference highlights the important role of disease-specific tissue processes in the development of unique autoantibody profiles against shared antigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed differences in autoantibody associations between SLE and SS.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "bd02ff25-d8fb-4b9a-9567-f124ccfe2aca",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C90",
+      "claim": "ALR expression is observed in both neutrophils and resident renal cells in lupus nephritis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the setting of lupus nephritis, we observed ALR expression by both neutrophils and resident renal cells and suspect that these antigens may be released by a variety of cell types in the kidney, leading to the observed extracellular interaction with NET DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the immunofluorescence microscopy observations in lupus nephritis tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f5a41f22-ec02-4bff-a27a-abf347df2daa",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C91",
+      "claim": "ALRs may be released by a variety of cell types in the kidney in lupus nephritis, leading to extracellular interaction with NET DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the setting of lupus nephritis, we observed ALR expression by both neutrophils and resident renal cells and suspect that these antigens may be released by a variety of cell types in the kidney, leading to the observed extracellular interaction with NET DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed ALR expression patterns and NET co-localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4c0ede17-3461-4286-a9a5-878cf96bec07",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C92",
+      "claim": "Neutrophil infiltration in target salivary tissues is not a common feature of Sj\u00f6gren's Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, neutrophil infiltration in target salivary tissues is not a common feature of SS, and the absence of the NET DNA scaffold may explain the differing autoantibody profile observed in that condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about Sj\u00f6gren's Syndrome pathology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "76abc1f1-57a7-44da-854c-d1539a3bc78e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C93",
+      "claim": "The absence of the NET DNA scaffold in Sj\u00f6gren's Syndrome may explain the differing autoantibody profile observed in that condition compared to SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrastingly, neutrophil infiltration in target salivary tissues is not a common feature of SS, and the absence of the NET DNA scaffold may explain the differing autoantibody profile observed in that condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning connecting the absence of NETs to the different autoantibody patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "40932c86-de06-448e-99c0-2c6000b4aedf",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C94",
+      "claim": "The ALR-NET interaction may increase NET longevity and perpetuate NET-mediated inflammatory signaling in lupus nephritis and other sites of NET generation and IFN expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The ALR-NET interaction may increase NET longevity and perpetuate NET-mediated inflammatory signaling in lupus nephritis and other sites of NET generation and IFN expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed DNase resistance of ALR-bound NETs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "0740ab1a-e09e-4e50-8896-13af62db0770",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C95",
+      "claim": "This work supports a role for the ALRs in extracellular immune processes as NET-binding antigens in SLE.",
+      "claim_type": "EXPLICIT",
+      "source": "This work supports a role for the ALRs in extracellular immune processes as NET-binding antigens in SLE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion drawn from all the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "b5b371a5-2902-4e95-946c-f9fb00f06087",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C96",
+      "claim": "19/41 (46%) of anti-AIM2 positive SLE patients are also IFI16 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 Positive\t19/41 (46%)\t12/90 (13%)\t< 0.0001",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "6ece97cd-8a66-4988-95ba-18463b676101",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C97",
+      "claim": "12/90 (13%) of anti-AIM2 negative SLE patients are IFI16 positive.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 Positive\t19/41 (46%)\t12/90 (13%)\t< 0.0001",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "1270514b-d788-498d-9b2b-8bf451e4ae46",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C98",
+      "claim": "The association between anti-AIM2 and anti-IFI16 antibodies in SLE is statistically significant (P < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 Positive\t19/41 (46%)\t12/90 (13%)\t< 0.0001",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "5788af3f-5dd1-4a0a-b603-c29e392f06cb",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C99",
+      "claim": "12/41 (29%) of anti-AIM2 positive SLE patients are DNA positive.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA Positive\t12/41 (29%)\t7/89 (8%)\t0.0026",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "414c9f82-9bd3-4ad9-8c41-430bd6afd500",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C100",
+      "claim": "7/89 (8%) of anti-AIM2 negative SLE patients are DNA positive.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA Positive\t12/41 (29%)\t7/89 (8%)\t0.0026",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "65f03374-7cda-49fa-b97f-0cbb4262d00e",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C101",
+      "claim": "The association between anti-AIM2 and anti-DNA antibodies in SLE is statistically significant (P = 0.0026).",
+      "claim_type": "EXPLICIT",
+      "source": "DNA Positive\t12/41 (29%)\t7/89 (8%)\t0.0026",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "7c49a4f8-14de-4d02-b1b6-4599b5d7c937",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C102",
+      "claim": "Anti-AIM2 positive SLE patients have lower C4 levels compared to anti-AIM2 negative patients (19.5 \u00b1 8.2 vs 25 \u00b1 9.3, P = 0.0005).",
+      "claim_type": "EXPLICIT",
+      "source": "C4\t19.5 \u00b1 8.2\t25 \u00b1 9.3\t0.0005",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "35b1f525-c706-4aa5-ba83-c992235ec64b",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C103",
+      "claim": "There is no significant difference in C3 levels between anti-AIM2 positive and negative SLE patients (114.7 \u00b1 36.9 vs 121.4 \u00b1 29.0, P = 0.1352).",
+      "claim_type": "EXPLICIT",
+      "source": "C3\t114.7 \u00b1 36.9\t121.4 \u00b1 29.0\t0.1352",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "275a7588-6822-4745-87e2-2c468b0e21fa",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C104",
+      "claim": "There is no significant difference in urine protein/creatinine ratio between anti-AIM2 positive and negative SLE patients (0.134 \u00b1 0.15 vs 0.107 \u00b1 0.11, P = 0.4372).",
+      "claim_type": "EXPLICIT",
+      "source": "Urine Protein/Creatinine ratio\t0.134 \u00b1 0.15\t0.107 \u00b1 0.11\t0.4372",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "a6243a3b-d3a7-432c-acb3-fd2a7fb28bf1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C105",
+      "claim": "After exposure to 20 U/ml DNase I for 1 hr at RT, both myeloperoxidase (MPO) and DNA signals were completely degraded in NETs not pre-incubated with ALRs.",
+      "claim_type": "EXPLICIT",
+      "source": "After exposure to 20 U/ml DNase I for 1 hr at RT, both myeloperoxidase (MPO) and DNA signals were completely degraded, leaving no observable fluorescence in any channel (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by confocal microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "fac2df09-df1a-4b0d-a3a4-0104364242e1",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C106",
+      "claim": "Plasma from 131 SLE patients defined by the SLICC criteria was studied for autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma from 131 SLE patients (defined by the SLICC criteria Petri et al., 2012) in the Hopkins Lupus Cohort was studied for autoantibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the patient cohort used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "c7f54fd0-b3aa-43a6-b3fb-a8d0b5ae3baa",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C107",
+      "claim": "133 primary Sj\u00f6gren's Syndrome patients defined by ACR/EULAR criteria were included as disease controls.",
+      "claim_type": "EXPLICIT",
+      "source": "133 primary Sj\u00f6gren's Syndrome (SS) patients (defined by ACR/EULAR criteria Shiboski et al., 2017) were included as disease controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the disease control cohort used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f43822a2-63cc-4cf7-a17e-0a24ca02ae7b",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C108",
+      "claim": "All patients and healthy controls gave informed consent for blood used in research.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients and healthy controls gave informed consent for blood used in research, and all work involving human subjects was approved by the Johns Hopkins Institutional Review Board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "4fb2f2ac-9de9-4383-8547-a69748456dc4",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "claim_id": "C109",
+      "claim": "All work involving human subjects was approved by the Johns Hopkins Institutional Review Board.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients and healthy controls gave informed consent for blood used in research, and all work involving human subjects was approved by the Johns Hopkins Institutional Review Board.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5ceb141a-334d-40dc-9305-b0e55544a2c6",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AIM2 autoantibodies are significantly more prevalent in SLE patients (31.3%) compared to healthy controls (4.1%), with P < 0.001.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are well-supported by immunoprecipitation assay data with appropriate statistical analysis. The sample sizes (131 SLE patients, 49 controls) are reasonable, and the p-value indicates strong statistical significance. The methodology is clearly described and the result is shown in Figure 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "b005fe84-d185-4cfe-956d-b067c706c0e0",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Anti-AIM2 antibodies are strongly associated with both anti-IFI16 and anti-DNA antibodies in SLE patients, with the association remaining significant after multivariable analysis (OR 3.7, P = 0.007).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The associations are supported by statistical analyses presented in Table 1 and Figure 1B. The multivariable analysis (C9) appropriately controls for confounders (SLEDAI, anti-dsDNA, C4), strengthening the conclusion. The data show 46% of anti-AIM2+ patients are IFI16+ vs 13% of anti-AIM2- patients (P < 0.0001), and 29% vs 8% for DNA positivity (P = 0.0026).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "afe2dbc3-686a-4494-8e26-9fe4695ff011",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Anti-AIM2 antibodies are associated with higher disease activity in SLE, including elevated SLEDAI scores (2.29 vs 1.05, P = 0.0026), skin domain involvement (26.8% vs 12.2%, P = 0.0463), and Physician Global Disease Activity scores (0.63 vs 0.43, P = 0.0333).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The clinical associations are supported by appropriate statistical comparisons between anti-AIM2 positive and negative patients. However, the effect sizes are modest, particularly for the Physician Global score. The claim that SLEDAI association is 'largely driven by the immunology component' (C6) lacks detailed supporting data showing component-specific analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "ddb468b0-b100-457b-a2de-9389f78ef6e2",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Anti-AIM2 positive SLE patients show higher prevalence of anti-Ro (44% vs 21%, P = 0.0114) and anti-La (24% vs 8%, P = 0.0125) antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The associations are statistically significant with appropriate p-values. However, these are secondary findings and no correction for multiple testing is mentioned, which could affect interpretation given the number of comparisons performed across the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "d5b7681b-4a9a-4b5c-836d-8a36f4fd2988",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anti-AIM2 positive SLE patients have significantly lower C4 complement levels (19.5 vs 25, P = 0.0005).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The finding is statistically significant and consistent with active SLE pathology. The data are clearly presented in Table 1. Notably, C3 levels showed no significant difference (C103), suggesting specificity for C4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "299b9455-4fab-4b8e-a864-b8439eeaedbc",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No significant differences were found between anti-AIM2 positive and negative patients for C3 levels (P = 0.1352) or urine protein/creatinine ratio (P = 0.4372).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These negative findings are appropriately reported with statistical tests. The lack of association with proteinuria is notable given the proposed role in lupus nephritis, though this may reflect the cross-sectional nature of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "97e66065-50d3-49b8-ab63-d4fac19a6131",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Anti-AIM2 antibodies bind directly to AIM2 protein independent of DNA, as demonstrated by DNase treatment experiments and immunoprecipitation of the isolated PYRIN domain lacking the DNA-binding HIN domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experiments provide strong evidence for DNA-independent antibody binding. DNase treatment of both sera and antigen (C13) and the use of the isolated PYRIN domain (C14, 8/10 positive sera) effectively rule out DNA-mediated binding. This is a critical control addressing a potential confounding factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "2170f9d8-552f-46a6-93d8-44fef7241fb4",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "No difference in anti-MNDA reactivity was found between SLE patients and healthy controls (P = 0.9319), despite prior reports of anti-MNDA antibodies in rheumatic diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The negative finding is well-documented with appropriate statistical analysis. The discrepancy with prior literature (C17, van Beers et al., 2013) may reflect methodological differences (full protein ELISA vs peptide-based assays in the cited work), which the authors do not fully address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "ff47db63-8b11-4ceb-b2b0-f663805175c3",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Anti-AIM2 antibodies are present in 34.6% of Sj\u00f6gren's Syndrome patients, but unlike in SLE, there is no association with anti-IFI16 antibodies (35% vs 28%, P = 0.4324), indicating disease-specific autoantibody patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between SLE and SS is informative and statistically sound. The disease-specific association patterns support the hypothesis that tissue-specific processes (e.g., NETs in SLE) drive particular autoantibody profiles. Sample size for SS (133 patients) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "1341b982-13a6-4ae9-a2d8-dcbed2b4f9ae",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both IFI16 and AIM2 bind readily to neutrophil extracellular traps (NETs) in vitro, with co-localization visible by confocal microscopy, suggesting filament assembly on NET DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro binding experiments are well-documented with confocal microscopy images (Figure 2A-B). The co-localization of both ALRs on NETs is clearly demonstrated. The inference that they assemble into filaments (C23) is reasonable based on known ALR biology and the observed patterns, though direct structural evidence is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ALR-bound NETs resist degradation by DNase I, with both protein and DNA components persisting after nuclease treatment, as demonstrated by microscopy and quantitative fluorimetry assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The DNase resistance is demonstrated through multiple complementary approaches: confocal microscopy showing persistent structures (C24, Figure 2D), observation of residual DNA (C25), and quantitative Sytox Green assays (C27, Figure 2E). The control showing complete degradation without ALRs (C105, Figure 2C) strengthens the conclusion. The experiments were performed twice, though more replicates would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e1eb9950-acb7-4cc0-a5dd-096b354a3c94",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IFI16 blocks dsDNA degradation by DNase I while cGAS-CD does not, suggesting that DNA binding alone is insufficient and other factors such as oligomerization may be required for nuclease protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The fluorescence anisotropy comparison between IFI16 and cGAS-CD (Figure 2F) provides important specificity controls. The differential behavior supports the conclusion that not all DNA-binding proteins confer nuclease resistance. However, the speculation about oligomerization (C32) as the key factor, while reasonable, is not directly tested and remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "AIM2 and IFI16 bind to NETs in lupus nephritis tissue, with AIM2 highly expressed in MPO-positive infiltrating cells and IFI16 more broadly distributed, establishing them as NET-bound SLE autoantigens in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The immunofluorescence microscopy of lupus nephritis biopsies (Figure 3) provides strong in vivo evidence. The z-stack imaging (C36, Figure 3\u2014figure supplement 1) effectively rules out artifacts from overlapping nuclei. However, the sample size is small (5 biopsies), and all were selected for neutrophilic infiltrates, potentially introducing selection bias. The conclusion that these are NET-bound autoantigens (C38) integrates multiple lines of evidence well.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that extracellular ALRs may enhance IFN signaling by prolonging NET stability, potentially creating a positive feedback loop and promoting autoimmunity through various mechanisms including B cell activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are largely speculative (marked as SPECULATION in evidence_type). While the speculation is reasonable and based on the demonstrated DNase resistance and known biology of NETs and IFN, no direct experimental evidence is provided for enhanced IFN signaling, B cell activation, or the proposed feedback loops. These represent hypotheses for future testing rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Disease-specific tissue processes, particularly the presence or absence of NETs, play an important role in determining autoantibody profiles, explaining differences between SLE and Sj\u00f6gren's Syndrome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparative analysis between SLE and SS effectively supports this conclusion. The observation that anti-AIM2 and anti-IFI16 antibodies are associated in SLE but not SS, combined with the known absence of neutrophil infiltration in SS salivary tissues (C92), provides a coherent mechanistic framework. However, the explanation remains somewhat inferential as direct evidence of NET absence in SS tissues is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "5b19d149-6baa-4833-a8b2-07530857941b",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background and contextual claims about SLE, ALRs, NETs, and related biology based on established literature and prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide appropriate context and are supported by citations to established literature. They represent accepted knowledge in the field and prior work by the authors and others. The citations appear appropriate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "17aa1b43-c231-4bd7-ac42-bfd3332dc301",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Study cohorts consisted of 131 SLE patients (SLICC criteria), 133 Sj\u00f6gren's Syndrome patients (ACR/EULAR criteria), and 49 healthy controls, with appropriate ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cohort descriptions and ethical approvals are clearly stated. The use of established diagnostic criteria (SLICC for SLE, ACR/EULAR for SS) is appropriate. Sample sizes are reasonable for the primary analyses, though some subgroup analyses may be underpowered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    },
+    {
+      "id": "e102fb99-9672-4387-ae5e-979d1c39117f",
+      "content_id": "e2dbc27b-58e4-427d-850c-559e1bafa699",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Overall conclusion that ALRs function as NET-binding antigens in SLE with extracellular immune roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary conclusion is well-supported by the collective experimental evidence: autoantibody detection, in vitro NET binding, DNase resistance, and in vivo tissue localization. The integration of multiple experimental approaches strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:10:13.184478Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b37c6c7-ba0b-4ba2-8ab8-6d2f8469ee40",
+      "result_id": "5ceb141a-334d-40dc-9305-b0e55544a2c6"
+    },
+    {
+      "claim_id": "06e75a2b-89b6-489b-a904-d14403e33c1e",
+      "result_id": "5ceb141a-334d-40dc-9305-b0e55544a2c6"
+    },
+    {
+      "claim_id": "4c6947d0-cd47-4def-994d-18371f957a62",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "37dd9b44-408d-4934-ac17-34b8f6aeb809",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "b5b371a5-2902-4e95-946c-f9fb00f06087",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "6ece97cd-8a66-4988-95ba-18463b676101",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "1270514b-d788-498d-9b2b-8bf451e4ae46",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "5788af3f-5dd1-4a0a-b603-c29e392f06cb",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "414c9f82-9bd3-4ad9-8c41-430bd6afd500",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "65f03374-7cda-49fa-b97f-0cbb4262d00e",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "6ab61f2a-710b-484d-b50a-ca360b469345",
+      "result_id": "b005fe84-d185-4cfe-956d-b067c706c0e0"
+    },
+    {
+      "claim_id": "d710b391-49b9-4ba4-a49b-419c2ac8c8f8",
+      "result_id": "afe2dbc3-686a-4494-8e26-9fe4695ff011"
+    },
+    {
+      "claim_id": "de585a27-dcb9-4113-94a9-a83f0c3737cc",
+      "result_id": "afe2dbc3-686a-4494-8e26-9fe4695ff011"
+    },
+    {
+      "claim_id": "b2327a59-ad23-4257-b0a6-8cc8b5cdb90f",
+      "result_id": "afe2dbc3-686a-4494-8e26-9fe4695ff011"
+    },
+    {
+      "claim_id": "566198ab-c304-42ac-bceb-eabf60a73f24",
+      "result_id": "afe2dbc3-686a-4494-8e26-9fe4695ff011"
+    },
+    {
+      "claim_id": "32a6c012-d101-4784-af9b-afc57c6f9aba",
+      "result_id": "afe2dbc3-686a-4494-8e26-9fe4695ff011"
+    },
+    {
+      "claim_id": "202d5d25-464c-441b-9872-c90c180b0df3",
+      "result_id": "ddb468b0-b100-457b-a2de-9389f78ef6e2"
+    },
+    {
+      "claim_id": "d3c9144a-98bb-4454-8ffe-53dc220889ba",
+      "result_id": "ddb468b0-b100-457b-a2de-9389f78ef6e2"
+    },
+    {
+      "claim_id": "7c49a4f8-14de-4d02-b1b6-4599b5d7c937",
+      "result_id": "d5b7681b-4a9a-4b5c-836d-8a36f4fd2988"
+    },
+    {
+      "claim_id": "35b1f525-c706-4aa5-ba83-c992235ec64b",
+      "result_id": "299b9455-4fab-4b8e-a864-b8439eeaedbc"
+    },
+    {
+      "claim_id": "275a7588-6822-4745-87e2-2c468b0e21fa",
+      "result_id": "299b9455-4fab-4b8e-a864-b8439eeaedbc"
+    },
+    {
+      "claim_id": "ba72f8d7-f205-41b9-9023-e0c8664a8a21",
+      "result_id": "97e66065-50d3-49b8-ab63-d4fac19a6131"
+    },
+    {
+      "claim_id": "2c79a4e8-b28d-4fc2-abdc-12f8686b9c42",
+      "result_id": "97e66065-50d3-49b8-ab63-d4fac19a6131"
+    },
+    {
+      "claim_id": "988e7beb-3524-4798-914a-dc30cb6f52ba",
+      "result_id": "97e66065-50d3-49b8-ab63-d4fac19a6131"
+    },
+    {
+      "claim_id": "4d665ab3-0428-4600-a42f-079bacc673be",
+      "result_id": "2170f9d8-552f-46a6-93d8-44fef7241fb4"
+    },
+    {
+      "claim_id": "03017af8-ce9e-419b-af25-345a6e66d72e",
+      "result_id": "2170f9d8-552f-46a6-93d8-44fef7241fb4"
+    },
+    {
+      "claim_id": "624fa468-807e-430f-8df5-f9d1d7f0b596",
+      "result_id": "ff47db63-8b11-4ceb-b2b0-f663805175c3"
+    },
+    {
+      "claim_id": "03f4e390-3ba6-42b5-b698-c06a3b057e2f",
+      "result_id": "ff47db63-8b11-4ceb-b2b0-f663805175c3"
+    },
+    {
+      "claim_id": "3860a48d-c6af-4324-a7eb-be19c6f16021",
+      "result_id": "ff47db63-8b11-4ceb-b2b0-f663805175c3"
+    },
+    {
+      "claim_id": "fc9c6d90-2e64-4cd9-9afb-17ec39a841f9",
+      "result_id": "1341b982-13a6-4ae9-a2d8-dcbed2b4f9ae"
+    },
+    {
+      "claim_id": "d7bd01ed-06d9-41fc-9e56-fbeac22a0491",
+      "result_id": "1341b982-13a6-4ae9-a2d8-dcbed2b4f9ae"
+    },
+    {
+      "claim_id": "f48c3521-b330-43fa-a48b-d283cd4f7f89",
+      "result_id": "1341b982-13a6-4ae9-a2d8-dcbed2b4f9ae"
+    },
+    {
+      "claim_id": "5047852b-3b9e-426f-9622-95e889c8a707",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "295c9e40-86ca-46b7-b553-bd7018fbb586",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "f2e2e16a-39ab-4fc8-916d-c0dbcd1b4a8c",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "805753da-a095-4d77-bd2d-7481544a1263",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "9d870686-421d-4fc5-9bc5-adf11de83cce",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "a6243a3b-d3a7-432c-acb3-fd2a7fb28bf1",
+      "result_id": "6dad5705-2255-458e-8d86-f0d8ee6c94bb"
+    },
+    {
+      "claim_id": "c2455fe1-a022-4b24-a2e9-ac94fb4b816e",
+      "result_id": "e1eb9950-acb7-4cc0-a5dd-096b354a3c94"
+    },
+    {
+      "claim_id": "0446d035-6bf5-4945-a0be-2468b617930f",
+      "result_id": "e1eb9950-acb7-4cc0-a5dd-096b354a3c94"
+    },
+    {
+      "claim_id": "4d60aecd-ccf4-43cf-aeea-956d2614dfb5",
+      "result_id": "e1eb9950-acb7-4cc0-a5dd-096b354a3c94"
+    },
+    {
+      "claim_id": "b386c05c-bf1a-4a4a-bbf2-795634472343",
+      "result_id": "e1eb9950-acb7-4cc0-a5dd-096b354a3c94"
+    },
+    {
+      "claim_id": "d3476ef3-38d6-41fb-b7c8-446fa61481d2",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "8ee1b5bb-1218-4608-a1aa-c75f934135da",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "d72369a4-532d-4e1c-8b6f-fef1783791bc",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "92b8cc9c-0700-4049-b751-806ef06a73d1",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "6764ca88-57f0-42ab-99ec-72969669f045",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "abe8ecd4-6767-4f3d-91ab-645372ec03ab",
+      "result_id": "1414fa3d-eee9-43ab-a3e6-ab9b20d549de"
+    },
+    {
+      "claim_id": "d268f1b0-dda0-4501-b8ba-b0ee8b30b03e",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "181dbe36-ca5c-4dee-8f35-4a45a5f7329a",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "789c15da-5d05-4116-88dc-68524909ea3a",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "789f56de-7dcf-4d4b-bc3e-b3d67f5e9a3d",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "d1396c84-6030-4a53-9397-fbac6c5ad61e",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "40932c86-de06-448e-99c0-2c6000b4aedf",
+      "result_id": "f5075b6b-ab9d-44ab-aad7-df4d0c1f08d5"
+    },
+    {
+      "claim_id": "a79f7ed1-3dcc-4213-a55a-1cd41e5ae539",
+      "result_id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2"
+    },
+    {
+      "claim_id": "bd02ff25-d8fb-4b9a-9567-f124ccfe2aca",
+      "result_id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2"
+    },
+    {
+      "claim_id": "f5a41f22-ec02-4bff-a27a-abf347df2daa",
+      "result_id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2"
+    },
+    {
+      "claim_id": "4c0ede17-3461-4286-a9a5-878cf96bec07",
+      "result_id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2"
+    },
+    {
+      "claim_id": "76abc1f1-57a7-44da-854c-d1539a3bc78e",
+      "result_id": "76aefd5a-a4f3-4ed1-b4a5-8f1a537609a2"
+    },
+    {
+      "claim_id": "87dac25b-f91a-4207-b895-4dba4f23b504",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "554dfca8-c179-41d1-b15a-cfb09751fe3b",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "711b20a7-efd3-4be3-a4ef-e5332c057852",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "ef84ba1f-d640-4a69-b6f7-748eae90a2bc",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "f4199ca5-5220-4def-a235-2bbd7c92e38e",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "98d1fa38-1b20-427f-9150-1af3c5683efc",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "fb5ed117-0e2d-4edb-8f78-1efc7a10d1cc",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "a5688717-2ff0-46d9-a0f9-1acbc63dc93e",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "98c3e630-d49f-4b49-8170-4c6b5f6702c1",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "4d53c089-29fa-4163-9704-3c98f5f1946d",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "7ed749da-ecf4-465d-9f5d-d7292d87c26c",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "bcc21d51-4009-4a46-97d4-ef4f5b3a3da8",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "cca09aba-f064-4356-a563-6169b97580b1",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "32ef65f8-f238-42fb-aa1d-7ab8114d5171",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "34fe5e0a-6748-4229-a5a7-d26bbd7080ec",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "bdcf6a80-a7a5-45d5-9942-8a7f3f20564c",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "7cb157f6-cca6-4d04-977a-2b762cb95f41",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "e9725599-2d77-4720-be15-50cbce2cb8b1",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "272b559c-63b2-484e-be12-e23bb56f2bab",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "1cab2596-5f1d-42e3-8540-2aa831429aea",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "f2000a02-28d2-46fc-bd7a-2a7a2d92e577",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "5fbfe997-2355-435a-8ee6-0616cd978c3a",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "895451a4-d943-492c-93a9-7726d013562a",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "398a5d31-67d5-4fc7-b473-1dd7884bf65f",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "7a900082-5631-442f-9708-a0a4d26dd640",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "21d2cd6f-cbd8-4a51-b077-17d1243fe199",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "905834d4-232b-40b0-9674-ca0380744a17",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "cc3cab0a-d9d5-4e3c-8ad4-6f32c178a9aa",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "a14da5b2-500f-4918-a576-bf46935a5bc4",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "7d8bafd4-e7bf-4fa7-8ca4-b775d447016f",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "8bd58602-73fc-48ae-81f3-84a87bcb0758",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "e83c53c8-1282-4670-978c-2cea24b6d36c",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "480d47e7-6493-4039-bd48-a4097da8e578",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "30e017ae-e517-45b9-b484-4e234a640cf9",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "4baf2116-87a0-4cb5-a6ca-61b5ab4b9909",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "1ce48db4-bf6f-4979-9a8e-b4607bc683cd",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "cfbd0f89-1e51-476b-b779-d68b9283b656",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "39daee4c-58ba-4bc8-b1f1-1b10b3de9df1",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "e7c937d5-ff09-4258-a861-9b7f6f0ac437",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "59d0af6c-321c-4e32-9fba-cd8baef1a10f",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "14029685-582f-47e7-9eb6-e657156c9e8a",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "e05197f8-daa7-49d4-a796-fef5b4ab9590",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "eb8c5a21-e0e1-44f6-852a-3c99aa64c16e",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "2c729381-de15-411c-a675-8affc0aad486",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "909ac6c5-d065-40f7-8396-d7678ed7597a",
+      "result_id": "5b19d149-6baa-4833-a8b2-07530857941b"
+    },
+    {
+      "claim_id": "fac2df09-df1a-4b0d-a3a4-0104364242e1",
+      "result_id": "17aa1b43-c231-4bd7-ac42-bfd3332dc301"
+    },
+    {
+      "claim_id": "c7f54fd0-b3aa-43a6-b3fb-a8d0b5ae3baa",
+      "result_id": "17aa1b43-c231-4bd7-ac42-bfd3332dc301"
+    },
+    {
+      "claim_id": "f43822a2-63cc-4cf7-a17e-0a24ca02ae7b",
+      "result_id": "17aa1b43-c231-4bd7-ac42-bfd3332dc301"
+    },
+    {
+      "claim_id": "4fb2f2ac-9de9-4383-8547-a69748456dc4",
+      "result_id": "17aa1b43-c231-4bd7-ac42-bfd3332dc301"
+    },
+    {
+      "claim_id": "0740ab1a-e09e-4e50-8896-13af62db0770",
+      "result_id": "e102fb99-9672-4387-ae5e-979d1c39117f"
+    }
+  ],
+  "comparisons": []
+}

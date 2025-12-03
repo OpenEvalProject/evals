@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "The study generated 101 highly contiguous and complete genome assemblies for 93 drosophilid species using Oxford Nanopore sequencing. The assemblies have an average contig N50 of 10.5 Mb, with 94 assemblies containing over 98% of sequence in contigs larger than 10 kb and N50s exceeding 1 Mb. BUSCO completeness exceeds 97% in 97/101 assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C22-C24, and C26 collectively demonstrate high assembly quality through multiple independent metrics (contiguity, completeness, correlation with genome size estimates). The quantitative measures are clearly stated and supported by the data presented in figures and supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "Nanopore-based assemblies are highly accurate in coding regions despite variable genome-wide quality scores. Manual validation of D. melanogaster revealed only 32 coding indels in 21 of 13,913 genes (0.15%), with most differences explained by poor short-read mapping in repetitive regions and supported by independent long-read assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C35-C51 provide converging evidence from reference-based quality assessment, manual curation, and comparison with independent assemblies. The detailed characterization of coding sequence accuracy, including the finding that errors cluster in specific genomic regions and that large insertions are often supported by other long-read assemblies, strongly supports the conclusion that coding regions are highly accurate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C20",
+      "C21",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The modified Nanopore sequencing protocol enables cost-effective genome assembly at approximately $350 per Drosophila line, with optimal runs yielding 12-15 Gb per flow cell at >30\u00d7 coverage with read N50 >20 kb and 30% of reads >50 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C20-C21, and C62-C64 describe the practical outcomes of the modified protocol. The cost estimate and sequencing metrics are based on empirical data from the study. However, these represent optimal conditions and actual results varied with sample quality (as noted in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Sample heterozygosity varied widely across assemblies (0.00035-1.1% from long reads, 0.0015-2.1% from short reads), with long-read estimates systematically lower than short-read estimates. No significant relationship was observed between heterozygosity and assembly contiguity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 present quantitative measures of sample diversity with clear statistical support (p=0.30 for lack of correlation with contiguity). The systematic bias between long and short read estimates is acknowledged and the heterozygous variants consistently exceeded homozygous variants as expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Genome-wide quality scores varied substantially across assemblies, with estimates from short reads (QV17-QV45), long reads (QV19-QV52), and Merqury (QV16-QV40). Merqury estimates were on average higher but correlated with variant-calling based estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report quality score estimates from multiple independent methods with stated correlations (Spearman's \u03c1=0.642 and 0.684, p<2.2e-16). The consistency across methods and acknowledgment of factors affecting quality (strain differences, sample diversity) support these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "BUSCO-based synteny analysis revealed that single-copy orthologs cluster into six major groups corresponding to D. melanogaster chromosome arms, consistent with conserved Muller element gene content but extensive within-element shuffling across drosophilids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 describe a synteny analysis that recapitulates known patterns of drosophilid chromosome evolution (cited as C65-C66). The graph-based visualization (Figure 4) clearly shows the expected clustering pattern, and the interpretation is consistent with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "No correlation exists between assembly contiguity and repeat content, suggesting long-read sequencing overcomes challenges posed by repetitive sequences. A positive relationship between repetitive and non-repetitive sequence sizes suggests both contribute to genome size variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 present statistical findings from repeat analysis. The lack of correlation between contiguity and repeat content (Figure 5\u2014figure supplement 1) and positive relationship between repetitive and non-repetitive sequences (Spearman's \u03c1=0.679, p<2.2e-16, Figure 5\u2014figure supplement 2) using phylogenetically independent contrasts support these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C71",
+      "C72"
+    ],
+    "result": "Flye was selected as the assembler based on superior contiguity and favorable runtimes (8-12 hours) compared to Miniasm and Canu, with Flye producing significantly more contiguous assemblies than previously reported methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C71-C72 describe the assembler benchmarking with supporting data in Figure 1\u2014figure supplement 2. The comparison shows clear differences in contiguity and runtime, justifying the choice of Flye. The authors appropriately note that assembler performance should be re-evaluated with current versions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "High contiguity (N50>20 Mb) can be achieved with minimal coverage (15-20\u00d7) of moderately long Nanopore reads (N50 ~27.5 kb), as demonstrated by downsampling analysis of D. jambulina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by the downsampling experiment shown in Figure 6. The analysis demonstrates that near-chromosome-scale assemblies are achievable at lower coverage than used for most assemblies, though this is based on a single species and may not generalize to all samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Of 76 representative drosophilid genomes previously available on NCBI, only 25 have an N50 greater than 1 Mb, compared to 94 of 101 assemblies in this study exceeding this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides a direct comparison to existing resources using cited data (Hotaling et al., 2021) and is supported by Figure 1\u2014figure supplement 1. This demonstrates the improvement in assembly quality achieved by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Genome size was estimated separately from Nanopore and Illumina data, using GenomeScope for short reads and BUSCO coverage for long reads, with the latter approach necessitated by the 5-15% error rate of Nanopore reads precluding k-mer-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 describe the genome size estimation methodology with clear rationale for the different approaches. The correlation between assembly size and estimated genome size (C24, Figure 1\u2014figure supplement 4) validates the approach, though the authors acknowledge limitations of the long-read method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Haplotig removal was performed when BUSCO duplication exceeded 1%. Pilon in default mode introduced spurious indels in regions with poor short-read mapping that were not supported by long reads or reference comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe quality control steps in the assembly pipeline. The observation about Pilon introducing spurious indels is supported by comparison to long reads and reference assemblies, leading to the modified approach of using Pilon only for SNV and indel correction (not gap filling).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript provides historical context for Drosophila genomics, noting that while high-quality assemblies exist for some species, they represent only a small fraction of the 1600+ described drosophilid species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C14 provide background information supported by citations and general knowledge. These claims establish the motivation for the study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The sequenced samples represent substantial taxonomic, geographic, and ecological diversity, including 99 assemblies from 14 species groups in Drosophilinae, species from multiple continents and latitudes, and two independent transitions to leaf-mining herbivory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 describe the sample composition with details provided in Table 1 and Supplementary files. The taxonomic and geographic diversity is clearly documented, though the claim about independent transitions to herbivory (C19) relies on established knowledge rather than new analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Assembly decontamination was performed using BLAST to remove non-BUSCO contigs of microbial origin and NCBI Contamination Screen, followed by soft repeat masking with RepeatMasker using Dfam and RepBase libraries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 describe standard quality control and annotation procedures that are clearly documented in the methods. These are routine bioinformatics steps appropriately applied to the assemblies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The auN statistic (area under Nx curve) is always sensitive to assembly breaks and is a fairer metric than contig N50 for comparing different versions of the same assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 describe a statistical measure with cited definition (Li, 2020). The properties of auN are mathematically sound and the rationale for its use is appropriate, though the claim that it is 'fairer' (C81) is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "BUSCO v3 was used during assembly for consistency, while BUSCO v4 was used to assess completeness of all final assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 document the versioning of BUSCO used in the study. This is a straightforward methodological detail that is clearly stated and appropriate given the timeline of the project.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Variant calling was performed with PEPPER-Margin-DeepVariant for long reads and BCFtools for short reads, with quality filtering (depth \u226510, quality \u226530). Quality assessment used Merqury (reference-free) and Pomoxis (reference-based in 100 kb windows).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe the variant calling and quality assessment methodology. These are standard approaches appropriately applied, with clear documentation of parameters and tools used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Species relationships were inferred from 250 randomly selected single-copy BUSCO orthologs using amino acid sequences, with gene trees built by RAxML-NG and species tree by ASTRAL-MP. The authors note this is not intended as a definitive phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe the phylogenetic analysis methodology with appropriate caveats (C94). The approach is standard and the authors appropriately reference a more comprehensive phylogenetic study (Suvorov et al., 2021) for definitive relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Phylogenetically independent contrasts were computed for repetitive and non-repetitive sequence content using the species tree with root age set to 53 million years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 describes the statistical method for analyzing repeat content evolution. The approach is appropriate for comparative analysis and the root age is taken from a cited comprehensive study (Suvorov et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Docker and Singularity were used to manage computing containers to ensure reproducibility across different computing environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe the computational infrastructure used for reproducibility. This is a methodological detail that is clearly documented and represents good practice for computational reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The cost of a highly contiguous and complete Drosophila assembly based on long-read sequencing was previously estimated at about $1,000 USD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 cites previous work (Miller et al., 2018; Solares et al., 2018) for this cost estimate. This is appropriately attributed background information used to contextualize the cost improvements achieved in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Gene ordering in drosophilid Muller elements has been extensively shuffled over ~53 million years of evolution, but gene content of each element remains largely conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 cite established knowledge about drosophilid genome evolution from multiple sources. This background information is well-supported by the cited literature and provides context for the synteny analysis.",
+    "result_type": "MINOR"
+  }
+]

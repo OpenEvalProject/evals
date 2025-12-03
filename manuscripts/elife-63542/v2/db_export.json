@@ -1,0 +1,1641 @@
+{
+  "submission": {
+    "id": "a47c53c2-3e34-4034-9104-0cebf0168d49",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T04:38:28.840358Z",
+    "updated_at": "2025-12-03T04:38:28.840358Z"
+  },
+  "content": [
+    {
+      "id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "submission_id": "a47c53c2-3e34-4034-9104-0cebf0168d49",
+      "content_type": "manuscript",
+      "content_text": "# An evolutionary model identifies the main evolutionary biases for the evolution of genome-replication profiles\n\n## Authors\n\n- Rossana Droghetti<sup>1</sup> ([ORCID: 0000-0002-4596-7288](https://orcid.org/0000-0002-4596-7288))\n- Nicolas Agier<sup>2</sup>\n- Gilles Fischer<sup>2</sup> ([ORCID: 0000-0001-5732-2682](https://orcid.org/0000-0001-5732-2682))\n- Marco Gherardi<sup>3</sup>\n- Marco Cosentino Lagomarsino<sup>3</sup> ([ORCID: 0000-0003-0235-0445](https://orcid.org/0000-0003-0235-0445)) \u2020\n\n### Affiliations\n\n1. Dipartimento di Fisica, Universit\u00e0 degli Studi di Milano, via Celoria 16 Milan Italy\n2. Sorbonne Universit\u00e8, CNRS, Institut de Biologie Paris-Seine, Laboratory of Computational and Quantitative Biology Paris France\n3. Dipartimento di Fisica, Universit\u00e0 degli Studi di Milano, via Celoria 16, Milan, Italy and INFN sezione di Milano Milan Italy\n4. IFOM Foundation, FIRC Institute for Molecular Oncology, via Adamello 16 Milan Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent results comparing the temporal program of genome replication of yeast species belonging to the Lachancea clade support the scenario that the evolution of the replication timing program could be mainly driven by correlated acquisition and loss events of active replication origins. Using these results as a benchmark, we develop an evolutionary model defined as birth-death process for replication origins and use it to identify the evolutionary biases that shape the replication timing profiles. Comparing different evolutionary models with data, we find that replication origin birth and death events are mainly driven by two evolutionary pressures, the first imposes that events leading to higher double-stall probability of replication forks are penalized, while the second makes less efficient origins more prone to evolutionary loss. This analysis provides an empirically grounded predictive framework for quantitative evolutionary studies of the replication timing program.\n\n## Introduction\n\nEukaryotes, from yeast to mammals, rely on predefined \u2018replication origins\u2019 along the genome to initiate replication Leonard and M\u00e9chali, 2013; Musia\u0142ek and Rybaczek, 2015; Ganier et al., 2019; Gilbert, 2001, but we still ignore most of the evolutionary principles shaping the biological properties of these objects. Binding by initiation complexes defines origins as discrete chromosomal loci, which are characterized by multiple layers of genomic properties, including the necessary presence of autonomously replicating sequences, nucleosome depletion, and absence of transcription (M\u00e9chali et al., 2013; Di Rienzi et al., 2012). Initiation at origins is stochastic, so that different cells of the same population undergoing genome replication in S-phase will typically initiate replication from different origins Bechhoefer and Rhind, 2012; Rhind et al., 2010.\n\nInitiation from a single origin can be described by intrinsic rates and/or licensing events Hawkins et al., 2013. Indeed, the genome-wide replication kinetics of a population of cells can be accessed experimentally by different techniques Hawkins et al., 2013; Baker et al., 2012; Agier et al., 2013. Recent techniques also allow to measure replication progression at the single-cell level M\u00fcller et al., 2019; Hennion, 2020. The estimation of key origin parameters from data requires minimal mathematical models describing stochastic origin initiation and fork progression Retkute et al., 2012; Baker et al., 2012; de Moura et al., 2010; Zhang et al., 2017. Typically, one can extract from the data origin positions, as well as estimated origin-intrinsic characteristic firing times or rates. Knowledge of origins positions and rates makes it possible to estimate the \u2018efficiency\u2019 of an origin, that is, its probability of actively firing during S-phase, rather than being passively replicated.\n\nOver evolution, a genome modifies its replication timing profile by \u2018reprogramming\u2019 origin positions and rates in order to maximize fitness under the constraints of the possible changes of these parameters that are physically and biologically accessible. Little is known about this process, and finding basic rules that drive origin evolution is our main focus here Koonin, 2011. The main recognized constraint determining negative selection is due to replication forks stalling between adjacent origins Newman et al., 2013; Letessier et al., 2011; Cha and Kleckner, 2002. If two converging replication forks stall with no origins in between them, it is generally agreed that replication cannot be rescued, and the event leads to cell death. Such deadly \u2018double stalls\u2019 can only happen with two converging forks generated from consecutive origins. A pioneering study by Newman et al., 2013 used a combination of data analysis and mathematical models to understand the role of lethal double-stall events on origin placement. They found that the fork per-base stall probability affects the distance between neighbor origins, and the optimal distance distribution tends to a regular spacing, which is confirmed by experimental data. Thus, origin placement is far from a uniform random distribution (which would translate into an exponential distribution of neighbor origin distances). Instead, the regular lattice-like spacing that origin tend to take is reminiscent of particles repelling each other.\n\nDue to the streamlined genome and the experimental accessibility, yeasts are interesting systems to study experimentally the evolution of replication programs. However, at the level of the Saccharomyces genus, the replication program is highly conserved M\u00fcller and Nieduszynski, 2012. Hence, until recently, no experimental account of the evolution of the replication program was available. Our collaboration has recently produced data of this kind Agier et al., 2018 by comparing replication dynamics and origin usage of 10 distant Lachancea yeast species. This study highlights the dominance of origin birth-death events (rather than, e.g., chromosomal rearrangements) as the main evolutionary drive of the replication program changes and characterizes the main principles underlying origin birth-death events. Briefly, the fate of an origin strongly depends on its neighbourhood, particularly the distance from neighbor origins and their efficiency. Indeed, proximity to efficient origins correlates with weaker origin loss events. An evolutionary bias against weak origins could be due to the fact that their presence is neutral or even advantageous (e.g., in terms of reducing double stalls), but their advantage is not sufficiently high for them to survive drift. These findings open the question of capturing the relevant evolutionary biases acting on replication profiles in the framework of the empirical birth-death evolutionary dynamics, for which the data set Agier et al., 2018 provides an empirical testing ground.\n\nHere, we define a minimal evolutionary birth-death model for replication program evolution encompassing all the empirical observations made by Agier et al., 2018, and we use it to investigate the main evolutionary trade-offs that could explain the data.\n\n## Results\n\n### Experimental data motivate an evolutionary model for origins turnover\n\nThis section presents a reanalysis of the experimental data from Agier et al., 2018. We summarize the main results of that study and present additional considerations on the same data, which motivate the evolutionary model framework used in the following.\n\nFigure 1\u2014figure supplement 1 recapitulates the Lachancea clade phylogenetic tree used in the analysis. The evolution of the temporal program of genome replication can be quantified by the divergence of the replication timing profiles across different species. Agier and coworkers found that timing profiles diverge gradually with increasing evolutionary divergence between species Agier et al., 2018. In principle, such divergence could be attributed to changes in the number, placement, and biological properties of all origins. However, a careful analysis of correlations (comparing the timing profiles and the activity of orthologous origins) shows that the main driver of program differentiation across species is the acquisition and loss of active replication origins. Specifically, the number of conserved origins decreases with increasing phylogenetic distance between species, following the same trend as the conservation of the timing profiles. This trend is the same in regions that are close to or away from breakpoints, pointing to a secondary role of genome rearrangements. In addition, the authors of Agier et al., 2018 show that the differences in the mere number of origins and the median difference in origin replication timing between pairs of species are nearly constant with phylogenetic distance, leading to exclude that origin reprogramming (rather than birth-death) plays a primary role in the evolution of the timing program.\n\nAny model for the evolution of the replication program must (i) reproduce the empirical distribution of the inter-origin distances, (ii) reproduce the empirical distribution of the origin efficiencies, and (iii) account for the observed origin turnover dynamics. Previous analyses Agier et al., 2018; Newman et al., 2013 have shown that origins are far from following a uniform distribution along the genome. Figure 1A shows that the inter-origin distance distribution robustly shows a unimodal shape across the 10 Lachancea species studied in Agier et al., 2018. Specifically, distributions for each species show a marked peak around 35 kbp. This peak corresponds to a typical inter-origin distance, which is strikingly invariant across all Lachancea species. Figure 1B shows the distribution of the efficiencies, which is defined as the probability to actively fire during the S phase, estimated for each origin in the Lachancea clade using Equation 4 and a fit inferring the firing rates of all origins assuming a standard nucleation-growth model (see Materials and methods and Zhang et al., 2017). The single-species efficiency distributions show more variability across species than the inter-origin distance distributions, but they are consistent with a common shape and support.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig1-v2.jpg)\n\n**Figure 1.:** (A) Distribution of the distance between neighbor origins in 10 Lachancea species, each histogram refers to a different species (data from Agier et al., 2018), and all the plots show a marked peak around 35 kbp. (B) Distribution of the efficiency (calculated from a fit, using Equation 4) for all origins in 10 Lachancea yeast species Agier et al., 2018. (C) From Agier et al., 2018, box plot of the distribution of the distance from the nearest origin split by evolutionary events, for conserved (dark red), newly gained (red), and lost origins (black), estimated comparing six sister species of the Lachancea clade Agier et al., 2018. (D) Analysis of the origins that are nearest to conserved, newly gained, and lost, compared to the expected result if events were uncorrelated Agier et al., 2018. (E) Distribution of the efficiency of lost, conserved, and newly gained origins (respectively in black, dark red, and red) and their neighbors (gray). Note that the efficiency of lost origins is lower than average, while the efficiency of origins flanking a lost origin is higher. (F) Box plot of efficiency of all conserved and newly gained origins compared to those flanking a lost origin, which tend to be more efficient. Braces indicate subsampling (the box plots on the right side are defined by a subset of points of the box plots on the left). Box plots show the median (bar), 25\u201375 (box), and 10\u201390 (whiskers) percentiles. The data in panel (C\u2013F) refers to the six sister species of the Lachancea tree.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Taken from [Agier et al., 2018], Figure 3A. L. kluyveri was used as the outgroup species. Hence, evolutionary events that occurred on both the L. kluyveri and the b2 branches (gray lines) could not be retraced. As a consequence, our simulations of the model were not possible for the b2 and L. kluyveri branches, and it was possible to simulate 9 species instead of 10. Internal branches, labeled b3 to b9, and terminal branches are drawn in black and red, respectively. The number of origin gains (with plus sign) and losses (with minus sign) was estimated for each branch of the tree in Agier et al., 2018. The six sister species, which belong to the three closest pairs of species, are highlighted with the red shaded areas.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The plot shows the empirical distribution of the fractional distance from the midpoints of nearby origins for newborn origins of the Lachancea clade. More than half of all the newborn origins are less than 20% far away from the midpoint of the inter-origin interval where they are born. This means that for an ideal 50 kbp interval, more than half of the birth events would occur in positions between 20 and 30 kbp, which is remarkably close to the midpoint position of 25 kbp. This result justifies the simplified choice of placing newborn origins at midpoints in our models.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The firing rates Spearman correlation coefficient \u03c1 between sets of corresponding origins decreases with increasing phylogenetic distance between species. Each point in the plot represents a pair of species. The $x$ axis reports the phylogenetic distance between the two species, while the $y$ axis reports the Spearman correlation between the sets of normalized firing rates for corresponding origins between the two species. Empty squares represent the analysis carried out with Lachancea clade yeasts, while the symbol with coordinates (0,1) represents the fact that that non-distant species must have $\u03c1=1$. (B) Cumulative probability distribution of the normalized firing rates of newly gained origins (green triangles, for the six sister species) compared to all the extant origins (red squares, for the six sister species). This plot shows that all the functions are very similar. This result is compatible with the assumption of resampling of firing rates over evolution taken for the model (see Appendix 1).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For each pair of species, we compute the Spearman correlation coefficient between the set of normalized firing rates belonging to corresponding origins. The figure shows the results of this analysis. The red empty points refer to experimental data, each dot is a pair of species, the x coordinate is the phylogenetic distance between them while the y coordinate is the value of the Spearman correlation coefficient. The squared dot in (0,1) is a fictitious point placed to remark that the Spearman coefficient between non-distant species must be 1. The blue line represent the results of a simulation (1000 runs, where we only implemented an unbiased death process) with $R=0.92\u2062t^{-1}$ and the light blue area the standard deviation. We fixed the value of $R$ by fitting this specific trend, and indeed the simulations that use this value of $R$ show a remarkable agreement with the experimental trend. For the algorithm details, see Materials and methods and Appendix 1.\n\nAs mentioned above, a key result of Agier and coworkers is the insight that the evolution of the replication program is mainly shaped by the birth-death process of replication origins. Figure 1C\u2013F recapitulates the main quantitative results that characterize this process. Note that the analyses in Figure 1C\u2013F have been performed on the six sister species of Lachancea clade since the other species pairs are too distant to perform a reliable identification of conserved, newly gained, and lost origins Agier et al., 2018.\n\nFigure 1C shows a box plot of the distance from the nearest origin for all the conserved (dark red), newly gained (red), and lost (black) origins. Lost replication origins tend to be closer to their neighbors, much more so than newly gained or conserved origins. This observation reveals that the distance of an origin from its nearest neighbor is correlated to the loss rate of the same origin over evolution. This is an essential feature that any evolutionary model of this process must take into account Newman et al., 2013; Agier et al., 2018. More in detail, Figure 1D further quantifies the correlation between gain and loss events of neighboring origins by comparing the fraction of observed events of loss, gain, or conservation, given the state of the nearest origin (conserved, lost, or gained). The distribution of event types for origins that are nearest neighbors of a newly gained origin deviates significantly from the null expectation of random uncorrelated events (i.e., in a simple scenario where the fractions of conserved, newly gained, and lost origins are fixed to the empirical values, and birth and death events of neighboring origins are independent). The same non-null behavior is observed for origins that are nearest to a lost origin, with the roles of gain and loss events exchanged. In summary, successive birth/death or death/birth events happen more frequently in the same genomic location than expected by chance. Beyond such a spatial correlation along the chromosomal coordinate, the analysis illustrates that birth and death events are correlated in time as well (in fact, the analyzed evolutionary events took place in the terminal branches of the phylogenetic tree, and thus they must have been close in term of evolutionary time).\n\nFinally, Figure 1E and F show that origins lying near loci where origins were recently lost are typically in the high-efficiency range of the distribution, and that lost origins tend to be less efficient than conserved origins. Figure 1E compares the distribution of the efficiency of lost, conserved, and newly gained origins with the distribution of efficiency of the nearest origins. The efficiency of origins neighboring a loss event is higher than average, while the efficiency of lost origins is lower than average. These results clearly support the influence of origin efficiency on origin death events. This is confirmed by Figure 1F, which shows the distribution of efficiency of all conserved and newly gained origins. For both classes, considering only those origins that are nearest neighbors to a recently lost origin yields an increase in the efficiency.\n\nDifferent mechanisms could lead to the correlations described above. Overall, it is clear that origin strength is somehow \u2018coupled\u2019 to birth-death events. For example, conserved origins may become more efficient after the loss of neighbor origins, or the birth of new highly efficient origins could facilitate the loss of neighbors, or losing an origin could expedite the acquisition of a new origin nearby. Overall, these results reveal that the origin birth-death process is following some specific \u2018rules\u2019 that involve both inter-origin distances and origin efficiency.\n\nNote that the results of Figure 1E might appear to be incompatible with Figure 1D, but they are not. Figure 1E shows that the efficiency of newly gained origins is lower than average, and Figure 1D shows that the majority of origins that are nearest to a locus with a recent loss event are newly gained. The apparent contradiction arises from Figure 1E, which shows that the average efficiency of origins close to a lost one is higher than average. This inconsistency is resolved by the analysis shown in Figure 1F, which shows that origins appearing close to recently lost ones are among the most efficient.\n\n### A birth-death model including evolutionary bias from inter-origin replication fork double stalling recapitulates the main features of replication origin turnover\n\nThe joint stalling of two replication forks in the same inter-origin region along the genome is a well-characterized fatal event that may occur during S-phase. The frequency of this event in a clonal population clearly affects fitness. A previous modeling study Newman et al., 2013 focusing on yeast demonstrated that, in order to minimize the probability of a double stall anywhere along the chromosome, origins must be placed in the most ordered spatial configuration, namely all the consecutive origins must be equidistant from each other. However, the previous study did not incorporate this principle into an evolutionary dynamics of origin turnover. Thus, the important question arises of whether the tendency to avoid double stalls is related to origin gain and loss. To address this question, we defined a birth-death model, rooted in the experimental observations discussed in the previous section. This \u2018double-stall-aversion model,\u2019 described in detail below, biases the turnover of replication origins in such a way that events (in particular, birth events) leading to a decreasing double-stall probability are promoted because they increase the fitness of the cell.\n\nIn the double-stall-aversion model, the extent to which the acquisition of a new origin changes the probability of a double stall $P_{i}^{DS}$ depends on the length li of the inter-origin region where the event occurred. This probability is therefore coordinate-dependent and can be derived by a procedure similar to the one carried out in Newman et al., 2013 (see more details in Materials and methods),\n\n$$\nP_{i}^{DS}=1-(1+\\pi\u2062l_{i})\u2062exp\u2061(-\\pi\u2062l_{i}),\n$$\n\nwhere li is the length of the genome region between the (i+1)th and the ith origin and \u03c0 is the mean per-nucleotide fork-stall rate; we use the value from Newman et al., 2013, $\\pi=5\\times10^{-8}$ per nucleotide. Note that the double-stall probability is completely independent from the origin firing rates and efficiency, and depends only on the distance between the origins.\n\nIn our simulations of the model (see Materials and methods for a more detailed explanation), the genome was represented as a vector of origins, identified by the position and the firing rate. The model is a discrete-time Markov chain, and for the double-stall-aversion variant the chain is specified by the following update rules:\n\nThe justification for the assumption that newborn origins are placed at midpoints in the model ultimately comes from data (Figure 1\u2014figure supplement 2) where a strong bias in this direction is found. Relaxing this assumptions has consequences on the distance distribution and leads to poorer-performing models. We interpret this bias as the result of a faster (hence undetectable in our data) evolutionary process that counter-selects origins far from midpoints.\n\nFiring rates in the model evolve by reshuffling of the empirical firing rate distribution, with a time scale that is set empirically (see Materials and methods and Figure 1\u2014figure supplements 3 and 4). On shorter time scales, firing rate changes are likely more gradual, making firing rate evolution similar to a diffusion process. However, such changes are not quantifiable in our data set, which would leave the model with many extra parameters (a firing rate diffusion constant and bounds to set the empirical distributions) that are very difficult to estimate. Additionally, the firing rate distributions of the conserved (thus older) origins and of newborn (younger) ones are quite similar (Figure 1\u2014figure supplement 3), and this condition is not generally met under a simple diffusive process.\n\nFigure 2 shows the simulation results of the model with best-fitting parameter values (see Materials and methods and Figure 2 for other parameter values). Figure 2A and B show that the double-stall-aversion model reproduces the two main \u2018structural\u2019 features of yeast genome, namely the inter-origin distance distribution and the origin efficiency distribution. Additionally, Figure 2C and D show that the same model reproduces the observed correlations between the inter-origin distance and origin birth-death events, as well as the correlation between birth-death events and nature of the neighbor origins observed in the data (conserved, newly gained, or lost).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig2-v2.jpg)\n\n**Figure 2.:** The plots show the simulations of the best-fitting double-stall-aversion model compared with empirical data. (A) Inter-origin distance distribution in simulated species (blue bars) compared to the empirical distribution for the 10 Lachancea species (red diamonds). (B) Origin efficiency distribution in simulated (blue bars) vs. empirical species (red diamonds). (C) Box plot of the distance from the nearest origin split by evolutionary events, that is, for conserved (dark blue), newly gained (blue), and lost origins (black) for simulated species. (D) Fraction of origins that are nearest to conserved, newly gained, and lost for simulated species compared to the expected result for uncorrelated events. (E) Box plot of efficiency of lost, conserved, and newly gained origins (respectively in black, dark blue, and blue) and their neighbors (gray) in simulated species. The six distributions show very little variation. (F) The efficiency of all conserved and newly gained origins compared to the ones flanking a lost origin. Braces indicate subsampling. Box plots show the median (bar), 25\u201375 (box), and 10\u201390 (whiskers) percentiles. Simulation parameters (see Materials and methods): $\\gamma=2.4$ overall birth and death rate $b\u00af=13.6\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$, $d\u00af=0.61\u2062t^{-1}$ and firing rate resampling rate $R=0.92\u2062t^{-1}$, where $t$ is measured by protein-sequence divergence. Panels (A) and (B) were generated using data from approximately 320,000 simulated origins, while panels (C\u2013F) were built using data from about 60,000 birth and death events and 240,000 conservation events.\n\n### The double-stall hypothesis alone fails to capture correlations of origin turnover with efficiency\n\nIn spite of the good performance of the double-stall-aversion model in explaining the empirical marginal distributions, we find that it fails to reproduce the observed correlations between the efficiency of an origin and the recent history of the nearest ones. Figure 2E shows very faint variations in efficiency of origins that are nearest neighbors to origins of different evolutionary fate. In particular, the observed huge divergence in efficiency between lost origins and their neighbors is absent in the model simulations. Note that Figure 2 and Figure 4 show that in the double-stall-aversion model origins nearest to a loss event are slightly more efficient than average. This trend is due to the fact that after an origin is lost, its neighbors are subject to lower interference and automatically become more efficient. However, Figure 4 shows that this null trend is too weak to explain the experimental data. These considerations indicate that a model without a direct mechanism linking the efficiency of an origin to the birth-death events of its neighbors cannot reproduce the data.\n\n### Double-stall aversion and interference between proximate origins explain the correlated evolution of origin presence and efficiency\n\nBased on the above considerations, we defined a joint model that takes into account both the evolutionary pressure given by the double-stall probability and the direct effect of origin efficiency on birth-death events.\n\nSpecifically, this model is defined as follows:\n\nWe note that the bias parameters \u03b2 and \u03b3 are not inferred based on branch data, but on distributions of extant species (see Materials and methods).\n\nFigure 3 gathers plots of the structural features (distribution of inter-origin distances and efficiencies, Figure 3A\u2013B) and the evolutionary correlations involving efficiency, evolutionary fate, distance to nearest neighbor, and fate of nearest neighbor (Figure 3C\u2013F). Overall, the joint model reproduces all the observations considered here regarding the layout of origins and their evolutionary dynamics, indicating that the experimental data can be rationalized by a fitness function that includes both the detrimental effects of nonreplicated regions and the evolutionary cost of maintaining inefficient replication origins.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig3-v2.jpg)\n\n**Figure 3.:** Result of the joint model best-fitting simulation compared with empirical data. (A) Inter-origin distance distribution in simulated species (blue bars) vs. empirical distribution for the 10 Lachancea species (red diamonds). (B) Origin efficiency distribution in simulated (blue bars) vs. empirical species (red diamonds). The agreement between simulation and experimental data shows that this joint evolutionary model reproduces the typical structural features of a yeast genome. (C) Box plot of the distance from the nearest origin split by evolutionary events, that is, for conserved (dark blue), newly gained (blue), and lost origins (black) for simulated species. (D) Fraction of origins that are nearest to conserved, newly gained, and lost for simulated species compared to the expected result for uncorrelated events. (E) Box plot of efficiency of lost, conserved, and newly gained origins (respectively in black, dark blue, and blue) and their neighbors (gray) in simulated species. (F) The efficiency of all conserved and newly gained origins compared to the ones flanking a lost origin. Braces indicate subsampling. Box plots show the median (bar), 25\u201375 (box), and 10\u201390 (whiskers) percentiles. Panels (D\u2013F) show that the model correctly reproduces the correlation between origin birth-death events over evolution and efficiency of the nearest origin. Simulation parameters (see Materials and methods): $\\gamma=2.2$, $\\beta=1.9$, overall birth and death rate $b\u00af=13.6\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$, $d\u00af=0.61\u2062t^{-1}$, and rate of origin firing rate reshuffling $R=0.92\u2062t^{-1}$, where $t$ is measured by protein-sequence divergence. Panels (A) and (B) show data from approximately 600,000 simulated origins, while panels (C\u2013F) data from about 100,000 birth and death events and 500,000 conservation events.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We simulated eight linear chromosomes (the number of chromosomes of the majority of Lachancea species), with length equal to one eighth of the average genome size. We have modified the model so that the birth probability at the chromosomes ends is biased by the single-stall probability (as double stalls are not possible). The plot shows the results of the simulations (100 runs) of the model. The main difference is visible in the distance distribution shown in panel (A). The correlations shown in panels (C\u2013F) only display minor quantitative changes. The predicted efficiency distribution is in agreement with the empirical one (B). In the model, the accumulation of origins towards the chromosome ends is due to the fact that single-stall events are more prone to happen than double stalls. Biologically, the region involving the last origin before telomeres is specific, and additional mechanisms such as telomerase or homologous recombination could repair stalled forks Matmati et al., 2020.\n\nIn particular, the coupling between the efficiency of an origin and the death rate of its neighbors, through the probability of passive replication, reproduces the empirical correlations shown in Figure 1. Figure 4 summarizes this crucial point of comparison between the joint efficiency/double-stall-aversion model and the pure double-stall-aversion case. The three plots compare efficiency distributions of lost, conserved, and newly gained origins (red for the data, blue for the models) with those of their neighbors (gray). Comparison of these plots shows that only the joint model reproduces the differences in efficiency of lost origins and their neighbors.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig4-v2.jpg)\n\n**Figure 4.:** The plots in the red upper box compare efficiency distributions of the best-fitting simulation of the two different models (bottom and central panels) with experimental data (top panel). Comparison of the box plot of efficiency of lost, conserved, and newly gained origins (red for the data, blue for the models) shows better agreement of the joint efficiency/double-stall-aversion model (bottom panel) with the experimental data. Hence, the joint model reproduces well the correlation between evolutionary birth-death events of origins and efficiency of the nearest origin, while the double-stall-aversion model fails. Box plots show the median (bar), 25\u201375 (box), and 10\u201390 (whiskers) percentiles. Simulation parameters for the joint model (see Materials and methods): $\\gamma=2.2$, $\\beta=1.9$, and for the double-stall-aversion one: $\\gamma=2.4$. General parameters: overall birth and death rate $b\u00af=13.6\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$, $d\u00af=0.61\u2062t^{-1}$ and rate of origin firing rate reshuffling $R=0.92\u2062t^{-1}$, where $t$ is measured by protein-sequence divergence. In the green lower box, we compare the predictive power of the two models for each of the tested feature of the experimental data. The box highlights that both the double-stall aversion model and the joint efficiency\u2013double-stall model are able to reproduce the structural features of the genome. Also, the correlation between events\u2013distance from the nearest and event\u2013event of the nearest are correctly predicted by both models. The important difference between the two proposed models is found for the correlation between evolutionary events and origin efficiency, which is predicted and can be explained solely by the joint model.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Comparison between the firing rates events correlation for experimental data, double-stall-aversion model, and joint model. Only the joint model can reproduce this correlation, which is observed in experimental data. The reason is that in the double-stall-aversion model the evolution of firing rates is uncoupled from the origin birth-death dynamics.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The plot shows a comparison between the empirical inter-origin distance distribution (red line, diamonds) and the analytical prediction from the scenario of origin birth-death driven by interference alone (blue dotted line, see Appendix 1 for the calculation). The predicted distribution does not match the empirical one, thus the scenario can be rejected because it fails to reproduce a crucial feature of the data.\n\nIn order to show that the stall-aversion and interference model has better quantitative agreement with the data, we also performed a simplified likelihood ratio analysis. The full likelihood of the model is complex, but we have defined \u2018partial\u2019 likelihoods for the joint and the double-stall-aversion model just taking into account the marginal probabilities shown as box plots in Figure 4, Figure 4\u2014figure supplement 1 (see Materials and methods). Figure 1 shows that the joint model performs better for all the four chosen features. In our view, the qualitative difference shown in Figure 4 may be taken as a stronger argument in favor of the combined model in the sense that, beyond any quantitative agreement relying on parameters, the additional ingredient of a coupling between origin birth-death dynamics and origin rates is needed to explain the data.\n\n### The joint efficiency/double-stall-aversion model correctly predicts origin family divergence\n\nHaving established that the joint model is required to reproduce observations on single lineages, we turned to its predictions on observations that require knowledge of the whole phylogenetic tree, such as origin evolutionary families, defined as sets of orthologous origins Agier et al., 2018.\n\nWe thus set up a simulation of the model on a cladogenetic structure, fixed by the observed structure of the Lachancea clade phylogenetic tree (see Materials and methods for the simulations details). The outputs of each run in such simulations are nine different simulated genomes whose lineages are interconnected in the same way as the empirical species, and each branch follows the empirical divergence. We stress that these simulations just include intersecting lineages whose branched structure corresponds precisely to the lineages of the empirical tree. The phylogenetic structure does not emerge from the simulation as our model does not describe speciation. The model for the tree can simulate nine species, all the species except for Lachancea kluyveri, as this species was used as outgroup for the computation of the length of the tree branches Agier et al., 2018. We have repeated all the analyses on these simulations and verified that all the previous results hold (Figure 5\u2014figure supplement 1). We then turned to other independent predictions of the joint model, which could be compared to measurements in Agier et al., 2018.\n\nFigure 5A reports the dynamics of origin families. As reported in Agier et al., 2018, origins that belong to larger evolutionary families tend to have a higher efficiency compared to origins in smaller families, which is possibly due to the fact that, on average, high-efficiency origins tend to survive longer. Note, however, that there is no deterministic relation between family size and origin age because the relationship between these two is determined by the structure of the phylogenetic tree. Indeed, two families of the same size may have roots in different points of the tree, and thus the origins belonging to them may have very different ages. Thus, the prediction of the relation between origin efficiency and origin family size is not trivial. Figure 5A shows the results for the origin efficiency for families of varying size, comparing the experimental data and 100 different runs of the simulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig5-v2.jpg)\n\n**Figure 5.:** The plots compare predictions of the evolutionary model on the extent of origin divergence (simulations of the Lachancea phylogenetic tree) with empirical data. (A) Box plot of origins efficiency distributions split by family size. The plot compares origin families (sets of orthologous origins) in the nine Lachancea species (white line and red shaded areas) and simulated species (blue boxes, for 100 simulation runs). Medians are shown as white line for data, black bar for simulation, 25\u201375 percentiles as shaded area for data, box for simulation, and 10\u201390 percentiles as coarse shaded area for data, whiskers for simulation. (B) Origin divergence measured by the number of origins in the common ancestor that were lost in a pair of species, plotted as a function of total origin loss events. The plot compares model simulations (blue circles, 100 simulation runs), the experimental data (red squares), and a null model that shuffles the empirical birth-death events in each branch (green triangles, 1000 simulation runs). Error bars are standard deviations on y-axis values. Simulation parameters (for the evolutionary model, see Materials and methods): $\\gamma=2.2$, $\\beta=1.9$, overall birth and death rate $b\u00af=13.6\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$, $d\u00af=0.61\u2062t^{-1}$, and rate of origin firing rate reshuffling $R=0.92\u2062t^{-1}$, where $t$ is measured by protein-sequence divergence.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The results refer to 100 different runs of the simulation of the joint model on the empirical tree structure compared with empirical data. (A) Inter-origin distance distribution in simulated species (blue bars) compared to the empirical distribution for the 10 Lachancea species (red diamonds). (B) Origin efficiency distribution in simulated (blue bars) vs. empirical species (red diamonds). (C) Box plot of the distance from the nearest origin split by evolutionary events, that is, for conserved (dark blue), newly gained (blue), and lost origins (black) for simulated species. (D) Fraction of origins that are nearest to conserved, newly gained, and lost for simulated species compared to the expected result for uncorrelated events. (E) Box plot of efficiency of lost, conserved, and newly gained origins (respectively black, dark blue, and blue) and their neighbors (gray) in simulated species. (F) The efficiency of all conserved and newly gained origins compared to the ones flanking a lost origin. Box plots show the median (bar), 25\u201375 (box), and 10\u201390 (whiskers) percentiles. Panels (D) and (F) show that the model correctly reproduces the correlation between origin birth-death events over evolution and efficiency of the nearest origin. Simulation parameters (see Materials and methods): $\\gamma=2.2$, $\\beta=1.9$, overall birth and death rate $b\u00af=13.6\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$, $d\u00af=0.61\u2062t^{-1}$ , and rate of origin firing rate reshuffling $R=0.92\u2062t^{-1}$, where $t$ is measured by protein-sequence divergence.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63542/elife-63542-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** In each plot, a symbol corresponds to one branch of the phylogenetic tree, empty squares represent the simulations of the cladogenetic structure (100 different runs), and round black circles the experimental data. The $x$ axis represents the branch length, while the $y$ axis is the number of death events (A) or birth events (B) that occur in that branch. Both plots show a similar spread, supporting the idea that a fixed birth (death) rate in the simulations represents sufficiently well the fluctuations of the number of birth (death) events observed in the data.\n\nAs a second step, we have considered the model prediction for the divergence of the shared origins in two species descending from a common ancestor. Specifically, we asked whether the number of origin death events occurring in two branches of the tree could justify the number of common origins in the two species. Indeed, whenever in a pair of species the number of shared origins is lower than the number of origins belonging to their common ancestor, this discrepancy must be due to the evolutionary loss events. These events are predicted by our model to be correlated in diverging species due to the common ancestry and the coupling of loss events to origin efficiency and distance. This correlation should lower the number of shared origins losses compared to a null expectation where loss events are not correlated. Figure 5B shows that the model correctly predicts the divergence in the number of shared origins lost during evolution without any parameter adjustment. We also verified that, as expected, a null evolutionary model is not able to reproduce this feature. The null model fixes in each branch of the simulated tree the same number of birth and death events that are present in the corresponding branch of Lachancea tree, but these events occur uniformly along the genome. The difference between the null model and the evolutionary model predictions shown in Figure 5B is a consequence of correlated origins losses due to the common genome structure, in terms of origins positions and efficiencies, that each pair of species inherit from their common ancestor.\n\nWe note that birth and death rate are inferred as global parameters, ignoring correlations. Despite this, Figure 5B shows that the model reproduces the higher correlation in birth and death events in closer-related branches than in distant branches as a consequence of the common positions and firing rates of the origins in the ancestor.\n\n## Discussion\n\nOverall, this study provides a framework to study replication program evolution driven by replication origin birth-death events and demonstrates that both fork stalling and efficiency shape the adaptive evolution of replication programs. The model framework is predictive and falsifiable, and it can be used to formulate predictions on the phylogenetic tree. In future studies, it would be interesting to explore the predictions for the evolutionary dynamics under perturbations, such as evolution under increased replication stress or conditions where fork stalling becomes more frequent. Additionally, the framework can be used to discover specific trends, such as different evolutionary dynamics of specific genomic regions (subtelomeres Yue, 2017, regions containing repeats, etc. Arbona et al., 2018; Boos and Ferreira, 2019), role of genome spatial organization Marchal et al., 2019, and correlated firing of nearby origins.\n\nA general question concerns the predictive value of the model proposed here on out-of-sample data. Figure 5 shows that fit-independent predictions apply across the tree. Importantly, the model is based on simple global parameters and not fine-tuned on local features of the tree. To underline this point, we verified that a model fit using only the subtree between LADA a LAWA yielded similar parameters. Clearly, we cannot exclude that the values of the birth and death rate, and also the bias parameters \u03b3 and \u03b2, could be Lachancea-specific, while we speculate that the conclusions on the relevant evolutionary mechanisms might apply more generally.\n\nThe previous approach by Newman et al., 2013 described the evolution of origin distance as an optimization process that minimizes double fork-stall events, without attempting to characterize explicitly the evolutionary dynamics. Such approaches are limited compared to the framework presented here because they can predict only the origin distance distribution, and they do not allow any prediction regarding origin and replication program evolution along lineages and across phylogenetic trees. In accordance with the results of Newman et al., we confirm that double-stall events are a primary driver of the evolution of replication programs, and we frame this finding into the empirically measured birth-death evolutionary dynamics of replication origins. Additionally, we show that next to fork-stall events, origin efficiency plays an important role in shaping the evolutionary landscape seen by a replication timing profile.\n\nWhat could be the mechanisms coupling efficiency to origin birth-death? The actual process of origin death could be nearly neutral Koonin, 2016 as low-efficiency origins are \u2013 by definition \u2013 rarely used, and unused origins over evolutionary times are more prone to decay in sequence, and consequently in firing rate until they disappear. Equally, a newborn origin close to a very strong one (which would make the newborn origin relatively inefficient) could be used rarely. This would make this origin relatively less likely to establish over evolutionary times compared to an isolated newborn origin. However, rarely used origins could be essential in situations of stress (and in particular they could resolve double-stall events). Finally, a fitness cost for maintaining too many origins might set up an overall negative selection preventing a global increase in origin number Zhang et al., 2017; Karschau et al., 2012; Das et al., 2015.\n\n## Materials and methods\n\n### Data\n\nThe experimental data used in this work come from Agier et al., 2018. In particular, we made use of the data regarding the replication origins. For each origin in each of the 10 Lachancea species, this data set includes the chromosome coordinate and firing rate, and the inferred birth and death events occurred in the branches of the phylogenetic tree shown in Figure 1\u2014figure supplement 1. Focusing on the terminal branches of the tree and on the extant replication origins, this study defines three categories of origins: (i) \u2018conserved\u2019 origins (which survived from the last ancestor), (ii) \u2018newly gained\u2019 origins gained in the last branch of the phylogenetic tree, and (iii) \u2018lost\u2019 origins, which were present in the last ancestor species and are not present in the terminal branch. Properties of the lost origins (e.g., position and firing rate) are inferred from the projection of the corresponding ones on the closest species, keeping into account synteny. Since the synteny map is less precise in distant species, the information on the origins events is only available for the six sister species in the tree, which belong to the three closest species pairs, highlighted with the red shaded area in Figure 1\u2014figure supplement 1.\n\n### Computation of the efficiency\n\nOrigin efficiency was defined as the probability of actively firing during S phase (or, equivalently, the probability of not being passively replicated by forks coming from nearby origins). In practice, we computed it by the following formula:\n\n$$\neff_{i}=(1\u2212P_{i,i\u22121})(1\u2212P_{i,i+1})\u00a0,\n$$\n\nwhere $P_{i,i+1}$ and $P_{i,i-1}$ are the probabilities for the ith origin of passive replication respectively from the (i+1)th and (i-1)th origins. Note that this efficiency formula Equation 4 is an approximation that only takes into account the possibility to be passively replicated by neighbor origins, neglecting the influence of other nearby origins. Following Agier et al., 2018, for computing the efficiency we assumed that the origin firing process has constant rate Zhang et al., 2017, and we thus obtain the following closed expressions for the probabilities of passive replication:\n\n$$\nP_{i,i+1}=\\frac{\\lambda_{i+1}^{^{\u2032}}}{\\lambda_{i+1}^{^{\u2032}}+\\lambda_{i}^{^{\u2032}}}exp\u2061[\u2212\\lambda_{i}^{^{\u2032}}\\frac{|x_{i+1}\u2212x_{i}|}{v}]\u00a0,\n$$\n\nand\n\n$$\nP_{i,i-1}=\\frac{\\lambda_{i-1}^{^{\u2032}}}{\\lambda_{i-1}^{^{\u2032}}+\\lambda_{i}^{^{\u2032}}}\u2062exp\u2061[-\\lambda_{i}^{^{\u2032}}\u2062\\frac{|x_{i-1}-x_{i}|}{v}].\n$$\n\nIn the above equations, $v$ is the typical velocity of replication forks, xi is the ith origin chromosome coordinate, and $\\lambda_{i}^{^{\u2032}}$ is the ith origin firing rate divided by the mean firing rate of the species the origin belong to. The raw firing rates in the data are affected by the different physiology of the nine Lachancea species in the experimental growth conditions (which were the same for all the species). In order to reduce these differences, we normalized the rates by their average for each given species. For this reason, we did not make use of the origin efficiency data already present in Agier et al., 2018.\n\n### Computation of the double-stall probability\n\nThe probability $P_{i}^{DS}$ that two converging forks stall is easily computed in the limit where the stall probability per basepair is small and the number of basepairs is large. Under these assumptions, stalling is a Poisson process with rate (per basepair) \u03c0. $P_{i}^{DS}$ can be written in terms of the probability $P^{S}\u2062(x)$ that a single fork stalls after replicating $x$ nucleotides:\n\n$$\nP_{i}^{DS}=\\int_{0}^{l_{i}}dx\\int_{0}^{l_{i}\u2212x}dyP^{S}(x)P^{S}(y)\u00a0,\n$$\n\nwhere li is the length (number of basepairs) of the ith inter-origin region. Imagine two converging replication forks starting from origins $i$ and $i+1$: the two integration variables $x$ and $y$ represent the number of basepairs that each fork replicates before stalling. By using the Poisson process result $P^{S}\u2062(x)=\\pi\u2062exp\u2061(-\\pi\u2062x)$ and performing the integration, one obtains the result in Equation 1.\n\n### Evolutionary model\n\nWe defined origin birth-death models incorporating different evolutionary biases. In these models, the genome is described as a one-dimensional circle with discrete origin location xi, where the length of the genome is equal to the average genome length in Lachancea clade ($10.7\u2062M\u2062b\u2062p$). We made use of a circular genome in order to avoid border effects. In the model, the set of origins change over evolution by three basic (stochastic) processes, birth of an origin in a certain genome region, origin death, and change of origins firing rate. We have verified that choosing linear chromosome does not alter significantly our findings, although it affects the distances between origins close to chromosome ends (Figure 3\u2014figure supplement 1).\n\nOverall origin birth/death rates were estimated from the data as follows. To estimate the overall birth rate $b\u00af$, we considered, for all the terminal branches of the phylogenetic tree, the number of birth events $N_{b}$, the genome length of the corresponding species $L$, and the length of the tree branch $T$, and divided $N_{b}$ by $L\u2062T$. Then we averaged over all terminal branches. To estimate the overall death rate $d\u00af$, we followed a similar approach, taking the number of death events $N_{d}$ in the terminal branches, the length of the branch $T$, and the number of origins in the corresponding species $n_{o\u2062r\u2062i}$, then computing $N_{d}\u2062T^{-1}\u2062n_{o\u2062r\u2062i}^{-1}$ for all the terminal branches and averaging these values. The final results for overall birth and death rates from the origin birth-death events across the Lachancea clade are $b\u00af=13.5627\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$ and $d\u00af=0.612287\u2062t^{-1}$.\n\nWe verified that the assumption of constant rates was consistent with the empirical variability of the numbers of birth and death events per unit time along different branches of the tree by comparing simulations with data. Figure 5\u2014figure supplement 2 shows that simulations and empirical data present similar spreading.\n\nThe process by which origin firing rates change over evolution was described as stochastic, with every origin having a fixed probability per unit time of changing its firing rate, given by $R=0.92\u2062t^{-1}$, a value fixed from experimental data (see Appendix 1 and Figure 1\u2014figure supplement 4). When a firing rate changes, it is resampled from the distribution of all the empirical normalized firing rates computed using the data in Agier et al., 2018 (see Appendix 1 and Figure 1\u2014figure supplement 3 for more details).\n\n### Simulations\n\n#### Code availability\n\nThe code used to run the simulations, together with instructions to run it, was shared as a repository on Mendeley data (Droghetti, 2020).\n\n#### Algorithm\n\nThe prediction of the different evolutionary models was derived numerically, making use of custom simulations written in C++, which implement the origin birth-death dynamics as a Gillespie algorithm (Gillespie, 1976). Every model variant was required to reproduce the experimental overall rates, $b\u00af=13.5627\u2062M\u2062b\u2062p^{-1}\u2062t^{-1}$ for origin birth, $d\u00af=0.612287\u2062t^{-1}$ for origin death, and $R=0.92\u2062t^{-1}$ for firing rate change. We simulated the three processes defining the model as follows. (i) the birth process has a common definition for the stall-aversion and joint model. The algorithm first tests each subsequent inter-origin region, calculates the birth probability from Equation 2, and stores the results. Subsequently, it computes the normalization factor $N$ in order to match the empirical birth rate per nucleotide $b\u00af$. Finally, it samples all the inter-origin regions drawing birth events from the computed birth probability (Equation 2). New origins are placed the midpoints of the tested intervals. (ii) The death process is different for the stall-aversion model (unbiased) and the joint model (related to the origin efficiency). In the joint model, the algorithm first calculates the death rate for each origin using Equation 3 and stores the results. Subsequently, it computes the normalization factor $N$ in order to match the empirical mean death rate $d\u00af$. Finally, it samples all origin drawing death events from the computed death probability. For the unbiased process (stall-aversion model), the dynamics is identical, but all the origins have the same death rate $d\u00af$ so that the algorithm can skip the calculation of $N$. (iii) The process updating origin firing rates over evolutionary times is common to all model variants. The probability of update per origin per unit time is $R$. Origins are sampled for each time step and assigned a new rate uniformly extracted from the empirical distribution of all normalized firing rates with probability $R\u2062d\u2062t$.\n\nDuring the simulation, the genome configuration (chromosome position, firing rate, efficiency for each origin) is known at each time step, which matches the empirical time (tree branch length, measured by protein-sequence divergence). For simulating single lineages, we started with a collection of 50 origins, with positions and firing rate uniformly drawn from all the possible ones. Rapidly, the inter-origin distances distribution, the efficiency one, and the number of origins reach a steady state (for the number of origins, set by the balance of birth and death rate, and characterized by approximately 225 origins). Configurations, including birth-death events, were printed at regular time intervals after steady state is reached. The time interval between prints is chosen to be equal to the average length of the Lachancea phylogenetic tree terminal branches in order to compare single-lineage simulations with empirical data. For simulations on a phylogenetic tree, after one species reaches the steady state, it is used as a root. To reproduce the empirical branching structure of the tree, we run the simulation, one for each branch of the phylogenetic tree, each time starting from the species at the previous branching point, for a period that matches the length of the branch. If the simulated branch is terminal, then the configuration corresponds to one of the empirical species, otherwise it corresponds to a \u2018branching-point species\u2019 and it can be used as a starting point for other simulations. Each simulation run gives nine different simulated species with the same cladogenetic structure as the empirical species (Figure 1\u2014figure supplement 1).\n\n#### Fitting procedure\n\nThe biased birth-death processes in the simulations rely on some parameters to tune the strength of the bias, which are the only parameters to fix by a fit, since all the other parameter values are fixed empirically. In the joint model, there are two free parameters, \u03b3 and \u03b2, that tune respectively the strength of the bias on the origin birth and on the origin death process. For a discrete set of parameter pairs spanning realistic intervals, we run hundred different simulations, each starting with a randomized genome. Considering the simulated species for all the pairs of parameter values, we quantify the discrepancy with experimental data by evaluating the L1 distance of the normalized histogram of efficiency and inter-origin distances. This quantity is a number between 0 and 2, 0 if the histograms perfectly overlap and 2 if they have completely different supports. For each pair of parameters, the analysis gives two values of discrepancy. We choose the value of \u03b3 (the parameter that tunes the bias on the birth rate based on double-stall aversion) by taking the smaller discrepancy from the inter-origin distances distribution. For the value of \u03b2 (which tunes the interference bias on the death rate in joint model), we chose the one that gave us the smaller area on the efficiency distribution. For the double-stall-aversion model, the fitting procedure is identical and only requires to fix \u03b3.\n\n#### Simplified likelihood analysis\n\nWe performed a (simplified) likelihood ratio analysis in order to test the better quantitative performance of the combined model. The full likelihood of the models analyzed here is complex, but we have defined \u2018partial\u2019 likelihoods for the joint and the double-stall-aversion model only taking into account the marginal probabilities shown in Figure 4\u2014figure supplement 1. Hence, the test evaluates for both models the goodness of the predicted correlation between the efficiency and firing rate of the lost origins and the ones of their neighbors. The likelihood ratio test quantifies how much the prediction of a certain model is better than a reference (\u2018null\u2019) model. We chose the double-stall-aversion model as reference (equivalent to setting $\\beta=0$ in the joint model). Specifically, one evaluates\n\n$$\nL_{r}=2log(\\frac{L_{j\u2062o\u2062i\u2062n\u2062t}\u2062(\\gamma,\\beta)}{L_{D\u2062S}(\\gamma,\\beta=0)})=2(l_{j\u2062o\u2062i\u2062n\u2062t}(\\gamma,\\beta)-l_{D\u2062S}(\\gamma,\\beta=0)),\n$$\n\nwhere $L_{X}$ are the likelihoods of the two models and $l_{X}$ are the log-likelihoods. Assuming that $L_{r}$ is \u03c7-squared distributed (this is generally the case for large samples), we could compute a p-value associated to this test.\n\n### Null birth-death model\n\nWe defined a null birth-death model where origin birth-death events in sister species are uncorrelated in order to analyze the divergence of shared origins and compare it with the prediction of the evolutionary model. This model implements birth and death events uniformly, regardless of origin position and firing rate, fixing the number of events for each branch of the simulated phylogenetic tree. These values are taken from the inference reported in Agier et al., 2018 (shown in Figure 3A of that study and in Figure 1\u2014figure supplement 1). The simulation of this model starts with 220 origins (the number of origins inferred for to LA2, the species at the root of the tree). Subsequently, following the structure of the Lachancea phylogenetic tree, the simulation proceeds as follows: (i) at each branching point, the genome is copied into two daughters; (ii) for each daughter, the prescribed number of random death and birth events (in this order) is generated on random origins; and (iii) the simulation stops when it reaches the leaves of the Lachancea tree.\n",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "3de71203-73d3-443a-88d8-baa9691b04c5",
+      "submission_id": "a47c53c2-3e34-4034-9104-0cebf0168d49",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sandeep Krishna, National Centre for Biological Sciences\u00ad\u2010Tata Institute of Fundamental Research India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63542.sa1](https://doi.org/10.7554/eLife.63542.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe reviewers and editors found that the manuscript presents a simple but compelling model that explains the dynamics of replication origin birth and death, which enhances our understanding of the selection pressures that have shaped the distribution of replication origins.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"An evolutionary model identifies the main selective pressures for the evolution of genome-replication profiles\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Alessandro De Moura (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers appreciate that the manuscript presents a simple but compelling model that explains the dynamics of replication origin birth and death, which enhances our understanding of the selection pressures that have shaped the distribution of replication origins. However, both reviewers had a series of concerns. Please go through their reviews below. In your revised manuscript please address in particular the major concerns they have raised.\n\nWe would like to draw your attention to changes in our policy on revisions we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nReviewer #2:\n\nThe manuscript entitled \"An evolutionary model identifies the main selective pressures for the evolution of genome-replication profiles\" is an examination of the principles shaping evolution of replication origin placement. Overall I found the manuscript to be engaging and interesting, and the topic of general importance. It is quite compelling that with just two parameters, origin efficiency and distance between origins, a good model can be built to describe the dynamics of origin birth and death. While this work on its own is sufficiently important for publication, it would be very interesting to see whether the model can be updated in the future to address whether there are fork-stalling or origin-generating mechanisms that shape evolution of specific inter-origin spaces. This work provides a very good foundation for such efforts.\n\nI have a few major, general concerns I would like the authors to address.\n\nIf I'm interpreting the methods correctly, it seems the parameters used in these simulations, such as mean birth rate, mean death rate, \u03b3, and \u03b2, were fit to the data once, and used as point estimates during simulation. If true, I expect the simulations to be yielding estimates of birth and death rates with a much narrower distribution of outcomes than is likely to be realistic given what an appropriate level of confidence in those parameter estimates would be. Could the parameters be fit to data in such a way that we attain an estimate of confidence in the parameter values, from which a distribution could be generated and sampled from during simulation?\n\nClosely related to my prior concern, I would like the authors to demonstrate the general predictive value of their model on out-of-sample data. Can the model be applied to other data on replication timing? Without such an attempt to demonstrate the model's applicability to out-of-sample prediction, the reader cannot ascertain whether the model is overfit to the Lachancea data from Agier et al., 2018. Also, keeps the parameter estimates here from being overfit to better predict origin birth and death events in closely related branches of the Lachancea tree in Figure S1? Are \u03b3 and \u03b2 inferred in a way that accounts for the higher correlation in birth and death events in closer-related branches than in distal branches, or has the fit ignored those correlations?\n\nThe authors state that their model identifies selective pressures. The authors imply, and specifically state in lines 238-242, that increased death rate of origins which happen to be nearby highly efficient origins represents selective pressure against the less efficient origins. It isn't until the discussion that the authors raise the possibility that there may simply be a lack of selective pressure to retain inefficient origins that are near highly efficient origins. In my view, it's more likely that selection for the existence of an inefficient origin is simply lower than the drift barrier, so mutagenesis and drift can passively remove such origins over time without the need to invoke selection against inefficient origins.\n\nFigure 3 is intended to show that the stall-aversion and interference model performs better at predicting correlations between efficiency of lost origins and their nearest neighbor. I agree, but I do not think Figure 3 presents a strong case for this conclusion. Figure S6 presents stronger evidence to me. While Figure 3 does qualitatively suggest that the joint model may predict the correlation between neighboring origin efficiency and origin loss better than the double-stall model alone, it almost appears to me that the model with fork stalling and interference has significantly overestimated the correlation. Is there a quantitative way, perhaps using information criteria, though I admittedly am not sure how one would go about doing that with simulations such as these, to demonstrate that the model with both effects has better predictive value than the one with only fork stalling?\n\nThere are a couple of assumptions of the model that I would like the authors to examine in further detail. First, that origin birth events occur in the middle of an inter-origin space. I am not aware of evidence pointing to this being a good a priori assumption. Can you re-run the simulations, allowing origins to arise at a random site within the inter-origin space into which it is born? Second, is it reasonable to expect origin firing rates to reshuffle to a new value randomly, without any dependence on their prior rate? Perhaps I'm mistaken, but it seems to me that an origin's firing rate should evolve more gradually, and should have a higher probability of sampling from values near its current value than from values very far from its current value.\n\nReviewer #3:\n\nThis paper proposes a novel and relevant evolutionary model that explains many aspects of replication origin statistics in a family of yeast species. It is a step forward in our understanding of the evolutionary pressures that affect the distribution of replication origins in Eukaryotes. I recommend it should be published in eLife, provided the authors revise the paper to address the following issue:\n\n1. Many of the conclusions of the paper are based on the claim that the extending the model by adding an efficiency bias to the origin death rate makes the model fit the data better; in particular, they say in line 213 that \"the observed huge divergence in efficiency between lost origins and their neighbors is absent in the model simulations.\"\n\nThis is reinforced in line 243, and in other parts of the text. But inspecting Figure 3, the two models (with and without a death rate bias) yield almost identical box-plots; if anything, the box-plots for the lost/nearest fractions of the pure double-stall aversion model seem visually to match the data marginally better. So why do the authors claim that the model with death rate bias is a much better fit? This is far from clear by just inspecting the data. I see no \"huge difference\" in the plots. There is a difference, but it is far from huge \u2013 the differences in the mean are much smaller than the size of the boxes. It seems to me unjustified to use this to choose one model over another. One way to ascertain this is to do rigorous statistical tests to determine if the differences in the means of the simulated and observed data are statistically significant; for example, a t-test.\n",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb113023-072c-4c88-ab13-d54920836086",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C1",
+      "claim": "Recent results comparing the temporal program of genome replication of yeast species belonging to the Lachancea clade support the scenario that the evolution of the replication timing program could be mainly driven by correlated acquisition and loss events of active replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent results comparing the temporal program of genome replication of yeast species belonging to the Lachancea clade support the scenario that the evolution of the replication timing program could be mainly driven by correlated acquisition and loss events of active replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018) and is the basis for the current study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "337bc1eb-85f2-4eb7-a0ba-5c8434c29ef8",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C2",
+      "claim": "Replication origin birth and death events are mainly driven by two evolutionary pressures: events leading to higher double-stall probability of replication forks are penalized, and less efficient origins are more prone to evolutionary loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing different evolutionary models with data, we find that replication origin birth and death events are mainly driven by two evolutionary pressures, the first imposes that events leading to higher double-stall probability of replication forks are penalized, while the second makes less efficient origins more prone to evolutionary loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by comparison of different evolutionary models with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "b20bad9d-a72e-4a87-9128-6cf3612feffc",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C3",
+      "claim": "Eukaryotes, from yeast to mammals, rely on predefined 'replication origins' along the genome to initiate replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes, from yeast to mammals, rely on predefined 'replication origins' along the genome to initiate replication Leonard and M\u00e9chali, 2013; Musia\u0142ek and Rybaczek, 2015; Ganier et al., 2019; Gilbert, 2001, but we still ignore most of the evolutionary principles shaping the biological properties of these objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "69fc6244-7ebc-4f36-bb00-49a57364836a",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C4",
+      "claim": "Binding by initiation complexes defines origins as discrete chromosomal loci, which are characterized by multiple layers of genomic properties, including the necessary presence of autonomously replicating sequences, nucleosome depletion, and absence of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding by initiation complexes defines origins as discrete chromosomal loci, which are characterized by multiple layers of genomic properties, including the necessary presence of autonomously replicating sequences, nucleosome depletion, and absence of transcription (M\u00e9chali et al., 2013; Di Rienzi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "82c37a74-9756-425b-9a8f-ec8595fab9de",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C5",
+      "claim": "Initiation at origins is stochastic, so that different cells of the same population undergoing genome replication in S-phase will typically initiate replication from different origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Initiation at origins is stochastic, so that different cells of the same population undergoing genome replication in S-phase will typically initiate replication from different origins Bechhoefer and Rhind, 2012; Rhind et al., 2010.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e0ed7f86-03fb-4878-a63b-071894788f27",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C6",
+      "claim": "If two converging replication forks stall with no origins in between them, replication cannot be rescued, and the event leads to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "If two converging replication forks stall with no origins in between them, it is generally agreed that replication cannot be rescued, and the event leads to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "efc22b90-1510-49d3-892f-c9948f6a934f",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C7",
+      "claim": "Double stalls can only happen with two converging forks generated from consecutive origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Such deadly 'double stalls' can only happen with two converging forks generated from consecutive origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of double stalls.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "630263cf-fc04-4974-90d4-eb3b9b3871ce",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C8",
+      "claim": "Newman et al., 2013 found that the fork per-base stall probability affects the distance between neighbor origins, and the optimal distance distribution tends to a regular spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "A pioneering study by Newman et al., 2013 used a combination of data analysis and mathematical models to understand the role of lethal double-stall events on origin placement. They found that the fork per-base stall probability affects the distance between neighbor origins, and the optimal distance distribution tends to a regular spacing, which is confirmed by experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "c6ca5dd5-d7f3-434a-9ffa-5e7509be6fad",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C9",
+      "claim": "Origin placement is far from a uniform random distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, origin placement is far from a uniform random distribution (which would translate into an exponential distribution of neighbor origin distances).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior work (Newman et al., 2013) and confirmed by data analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "2f616de2-8381-4f86-93c4-da83be51fe1f",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C10",
+      "claim": "At the level of the Saccharomyces genus, the replication program is highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at the level of the Saccharomyces genus, the replication program is highly conserved M\u00fcller and Nieduszynski, 2012.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e5e31b12-7931-4847-9899-d1ee0689781b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C11",
+      "claim": "Agier et al., 2018 compared replication dynamics and origin usage of 10 distant Lachancea yeast species.",
+      "claim_type": "EXPLICIT",
+      "source": "Our collaboration has recently produced data of this kind Agier et al., 2018 by comparing replication dynamics and origin usage of 10 distant Lachancea yeast species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors' collaboration.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "fdbcc978-2869-4043-8124-ba74f62378ab",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C12",
+      "claim": "The Agier et al., 2018 study highlights the dominance of origin birth-death events (rather than chromosomal rearrangements) as the main evolutionary drive of the replication program changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This study highlights the dominance of origin birth-death events (rather than, e.g., chromosomal rearrangements) as the main evolutionary drive of the replication program changes and characterizes the main principles underlying origin birth-death events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "0ce42c05-d728-4f47-ba8a-bf9154583e29",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C13",
+      "claim": "The fate of an origin strongly depends on its neighbourhood, particularly the distance from neighbor origins and their efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the fate of an origin strongly depends on its neighbourhood, particularly the distance from neighbor origins and their efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "7514d350-1ccd-48f2-8e57-06764350876b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C14",
+      "claim": "Proximity to efficient origins correlates with weaker origin loss events.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, proximity to efficient origins correlates with weaker origin loss events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "58af7f6d-e3fa-413d-ba7f-4aac8bc1bb1f",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C15",
+      "claim": "Timing profiles diverge gradually with increasing evolutionary divergence between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Agier and coworkers found that timing profiles diverge gradually with increasing evolutionary divergence between species Agier et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "0c0c6bf9-872f-4bd8-ae5e-b137fb56d117",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C16",
+      "claim": "The main driver of program differentiation across species is the acquisition and loss of active replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a careful analysis of correlations (comparing the timing profiles and the activity of orthologous origins) shows that the main driver of program differentiation across species is the acquisition and loss of active replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "d14e4f9c-ed35-4840-9fde-634e84f9fa1c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C17",
+      "claim": "The number of conserved origins decreases with increasing phylogenetic distance between species, following the same trend as the conservation of the timing profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the number of conserved origins decreases with increasing phylogenetic distance between species, following the same trend as the conservation of the timing profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "17d003d2-cc76-4a3b-8d30-94e365a8e36c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C18",
+      "claim": "The trend of origin conservation is the same in regions that are close to or away from breakpoints, pointing to a secondary role of genome rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is the same in regions that are close to or away from breakpoints, pointing to a secondary role of genome rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Agier et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "1142db26-77b4-480c-accb-82404f9ef52a",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C19",
+      "claim": "The differences in the mere number of origins and the median difference in origin replication timing between pairs of species are nearly constant with phylogenetic distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the authors of Agier et al., 2018 show that the differences in the mere number of origins and the median difference in origin replication timing between pairs of species are nearly constant with phylogenetic distance, leading to exclude that origin reprogramming (rather than birth-death) plays a primary role in the evolution of the timing program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "3c9c98da-a7d1-46de-938c-15c2076a37ec",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C20",
+      "claim": "Origins are far from following a uniform distribution along the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous analyses Agier et al., 2018; Newman et al., 2013 have shown that origins are far from following a uniform distribution along the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "95083251-afb4-4a53-9c51-f9ff284f5266",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C21",
+      "claim": "The inter-origin distance distribution robustly shows a unimodal shape across the 10 Lachancea species studied in Agier et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1A shows that the inter-origin distance distribution robustly shows a unimodal shape across the 10 Lachancea species studied in Agier et al., 2018.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "802ed320-8be9-4ca7-937f-31ef568aa56c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C22",
+      "claim": "Distributions for each species show a marked peak around 35 kbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, distributions for each species show a marked peak around 35 kbp.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "100b72e7-5881-4a01-bb77-989f0a02f714",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C23",
+      "claim": "The typical inter-origin distance peak around 35 kbp is strikingly invariant across all Lachancea species.",
+      "claim_type": "EXPLICIT",
+      "source": "This peak corresponds to a typical inter-origin distance, which is strikingly invariant across all Lachancea species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "c7ec5f29-f531-422c-84c6-c7222b124a1b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C24",
+      "claim": "The single-species efficiency distributions show more variability across species than the inter-origin distance distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The single-species efficiency distributions show more variability across species than the inter-origin distance distributions, but they are consistent with a common shape and support.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "d3d366b2-62ef-4071-86da-39079e4fcb0a",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C25",
+      "claim": "Lost replication origins tend to be closer to their neighbors, much more so than newly gained or conserved origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Lost replication origins tend to be closer to their neighbors, much more so than newly gained or conserved origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "57823a5c-c718-42cc-9ea3-cfc807de9fd7",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C26",
+      "claim": "The distance of an origin from its nearest neighbor is correlated to the loss rate of the same origin over evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation reveals that the distance of an origin from its nearest neighbor is correlated to the loss rate of the same origin over evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "47b032b4-887a-49bb-815b-4d6948809db2",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C27",
+      "claim": "The distribution of event types for origins that are nearest neighbors of a newly gained origin deviates significantly from the null expectation of random uncorrelated events.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of event types for origins that are nearest neighbors of a newly gained origin deviates significantly from the null expectation of random uncorrelated events (i.e., in a simple scenario where the fractions of conserved, newly gained, and lost origins are fixed to the empirical values, and birth and death events of neighboring origins are independent).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "2a8c4e5f-fa3c-4859-a7e5-cf84322bdd1d",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C28",
+      "claim": "Successive birth/death or death/birth events happen more frequently in the same genomic location than expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, successive birth/death or death/birth events happen more frequently in the same genomic location than expected by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "3667b6b1-932d-43c2-b0e2-0d0f8219c439",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C29",
+      "claim": "Birth and death events are correlated in time as well as space.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond such a spatial correlation along the chromosomal coordinate, the analysis illustrates that birth and death events are correlated in time as well (in fact, the analyzed evolutionary events took place in the terminal branches of the phylogenetic tree, and thus they must have been close in term of evolutionary time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "f1d68735-2397-4c90-82f5-c7ddd9657234",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C30",
+      "claim": "Origins lying near loci where origins were recently lost are typically in the high-efficiency range of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Figure 1E and F show that origins lying near loci where origins were recently lost are typically in the high-efficiency range of the distribution, and that lost origins tend to be less efficient than conserved origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "88bd76ce-b8ce-4799-a1c0-5e5ca0ce02e6",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C31",
+      "claim": "Lost origins tend to be less efficient than conserved origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, Figure 1E and F show that origins lying near loci where origins were recently lost are typically in the high-efficiency range of the distribution, and that lost origins tend to be less efficient than conserved origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "673003f7-a4b8-4008-8b26-681560978a93",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C32",
+      "claim": "The efficiency of origins neighboring a loss event is higher than average.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of origins neighboring a loss event is higher than average, while the efficiency of lost origins is lower than average.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "5b0eeda7-b23b-479c-b076-579c8c9f2535",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C33",
+      "claim": "The efficiency of lost origins is lower than average.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of origins neighboring a loss event is higher than average, while the efficiency of lost origins is lower than average.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "d5e4e2f0-0584-488a-b3b1-da71ec7624d2",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C34",
+      "claim": "Origins appearing close to recently lost ones are among the most efficient.",
+      "claim_type": "EXPLICIT",
+      "source": "This inconsistency is resolved by the analysis shown in Figure 1F, which shows that origins appearing close to recently lost ones are among the most efficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "7857fa98-4861-4fe9-bbc9-df62ef7cf58d",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C35",
+      "claim": "The double-stall probability is completely independent from the origin firing rates and efficiency, and depends only on the distance between the origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the double-stall probability is completely independent from the origin firing rates and efficiency, and depends only on the distance between the origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the double-stall probability formula (Equation 1).",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "5a1f8ee7-fbdb-4bd6-987e-1347c8951112",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C36",
+      "claim": "More than half of all the newborn origins are less than 20% far away from the midpoint of the inter-origin interval where they are born.",
+      "claim_type": "EXPLICIT",
+      "source": "More than half of all the newborn origins are less than 20% far away from the midpoint of the inter-origin interval where they are born.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "6eae6b12-f9e1-4a58-9771-265fac6f3f02",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C37",
+      "claim": "The double-stall-aversion model reproduces the inter-origin distance distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A and B show that the double-stall-aversion model reproduces the two main 'structural' features of yeast genome, namely the inter-origin distance distribution and the origin efficiency distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e8912992-18ad-426b-90cc-96e27c75b687",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C38",
+      "claim": "The double-stall-aversion model reproduces the origin efficiency distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A and B show that the double-stall-aversion model reproduces the two main 'structural' features of yeast genome, namely the inter-origin distance distribution and the origin efficiency distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "ad2cac97-66d6-4df6-af68-a064a7602c18",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C39",
+      "claim": "The double-stall-aversion model reproduces the observed correlations between the inter-origin distance and origin birth-death events.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Figure 2C and D show that the same model reproduces the observed correlations between the inter-origin distance and origin birth-death events, as well as the correlation between birth-death events and nature of the neighbor origins observed in the data (conserved, newly gained, or lost).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "65ea19ab-6a84-45c8-9d3c-ec60c8194f19",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C40",
+      "claim": "The double-stall-aversion model fails to reproduce the observed correlations between the efficiency of an origin and the recent history of the nearest ones.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of the good performance of the double-stall-aversion model in explaining the empirical marginal distributions, we find that it fails to reproduce the observed correlations between the efficiency of an origin and the recent history of the nearest ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of simulation results with data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "acbf83b8-a3c7-4a68-bfbc-82a0896b0a52",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C41",
+      "claim": "In the double-stall-aversion model, origins nearest to a loss event are slightly more efficient than average due to lower interference after an origin is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that Figure 2 and Figure 4 show that in the double-stall-aversion model origins nearest to a loss event are slightly more efficient than average. This trend is due to the fact that after an origin is lost, its neighbors are subject to lower interference and automatically become more efficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model mechanism and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "869c9f47-a4bb-4a99-8b1e-9522f046b8cd",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C42",
+      "claim": "A model without a direct mechanism linking the efficiency of an origin to the birth-death events of its neighbors cannot reproduce the data.",
+      "claim_type": "EXPLICIT",
+      "source": "These considerations indicate that a model without a direct mechanism linking the efficiency of an origin to the birth-death events of its neighbors cannot reproduce the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the failure of the double-stall-aversion model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "a71a4487-6b26-45fa-a72d-b390e6966235",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C43",
+      "claim": "The joint model reproduces all the observations considered regarding the layout of origins and their evolutionary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the joint model reproduces all the observations considered here regarding the layout of origins and their evolutionary dynamics, indicating that the experimental data can be rationalized by a fitness function that includes both the detrimental effects of nonreplicated regions and the evolutionary cost of maintaining inefficient replication origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "47739a0c-fe20-41ce-9f34-475753879981",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C44",
+      "claim": "The experimental data can be rationalized by a fitness function that includes both the detrimental effects of nonreplicated regions and the evolutionary cost of maintaining inefficient replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the joint model reproduces all the observations considered here regarding the layout of origins and their evolutionary dynamics, indicating that the experimental data can be rationalized by a fitness function that includes both the detrimental effects of nonreplicated regions and the evolutionary cost of maintaining inefficient replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the success of the joint model in reproducing the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "45f9e2b9-7ede-4a45-b302-d48861146101",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C45",
+      "claim": "Only the joint model reproduces the differences in efficiency of lost origins and their neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of these plots shows that only the joint model reproduces the differences in efficiency of lost origins and their neighbors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e55f21bd-e5bb-410b-805f-19a2d64982b6",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C46",
+      "claim": "The joint model correctly predicts the dynamics of origin families.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5A reports the dynamics of origin families. As reported in Agier et al., 2018, origins that belong to larger evolutionary families tend to have a higher efficiency compared to origins in smaller families, which is possibly due to the fact that, on average, high-efficiency origins tend to survive longer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "4c26c631-b2c0-4cc0-aa77-00e053fc230d",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C47",
+      "claim": "Origins that belong to larger evolutionary families tend to have a higher efficiency compared to origins in smaller families.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported in Agier et al., 2018, origins that belong to larger evolutionary families tend to have a higher efficiency compared to origins in smaller families, which is possibly due to the fact that, on average, high-efficiency origins tend to survive longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and data shown in Figure 5A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "13964c0d-4e44-47a5-85fa-156b4d1c5c8b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C48",
+      "claim": "The model correctly predicts the divergence in the number of shared origins lost during evolution without any parameter adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5B shows that the model correctly predicts the divergence in the number of shared origins lost during evolution without any parameter adjustment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "7723965c-4f9a-4ff7-b3d5-51e4f20e8ba5",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C49",
+      "claim": "A null evolutionary model is not able to reproduce the divergence in the number of shared origins.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified that, as expected, a null evolutionary model is not able to reproduce this feature.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "6b71bc5c-03af-4f5f-930b-a521ff55e434",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C50",
+      "claim": "The difference between the null model and the evolutionary model predictions is a consequence of correlated origins losses due to the common genome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the null model and the evolutionary model predictions shown in Figure 5B is a consequence of correlated origins losses due to the common genome structure, in terms of origins positions and efficiencies, that each pair of species inherit from their common ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model mechanism and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "5182e8d9-376e-48be-9016-2cdaf141d0ee",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C51",
+      "claim": "This study provides a framework to study replication program evolution driven by replication origin birth-death events.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study provides a framework to study replication program evolution driven by replication origin birth-death events and demonstrates that both fork stalling and efficiency shape the adaptive evolution of replication programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "f329c503-6642-4dd2-8ae2-1fdb421fd7c5",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C52",
+      "claim": "Both fork stalling and efficiency shape the adaptive evolution of replication programs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this study provides a framework to study replication program evolution driven by replication origin birth-death events and demonstrates that both fork stalling and efficiency shape the adaptive evolution of replication programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by model comparison with data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "7affdc09-f333-40b2-8b21-229ec574b210",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C53",
+      "claim": "The model framework is predictive and falsifiable.",
+      "claim_type": "EXPLICIT",
+      "source": "The model framework is predictive and falsifiable, and it can be used to formulate predictions on the phylogenetic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the model framework.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e61a074e-449f-4ef2-84be-1c6b35a29aa8",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C54",
+      "claim": "The actual process of origin death could be nearly neutral as low-efficiency origins are rarely used.",
+      "claim_type": "EXPLICIT",
+      "source": "The actual process of origin death could be nearly neutral Koonin, 2016 as low-efficiency origins are \u2013 by definition \u2013 rarely used, and unused origins over evolutionary times are more prone to decay in sequence, and consequently in firing rate until they disappear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "26074440-481e-41eb-b954-0fd075c6597c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C55",
+      "claim": "Rarely used origins could be essential in situations of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "However, rarely used origins could be essential in situations of stress (and in particular they could resolve double-stall events).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential role of low-efficiency origins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "703db2f0-2af6-460c-b7b6-a8848667ec04",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C56",
+      "claim": "A fitness cost for maintaining too many origins might set up an overall negative selection preventing a global increase in origin number.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a fitness cost for maintaining too many origins might set up an overall negative selection preventing a global increase in origin number Zhang et al., 2017; Karschau et al., 2012; Das et al., 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "0dc966b4-cba7-4bec-9b5b-cf68234162ae",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C57",
+      "claim": "Origin efficiency is defined as the probability of actively firing during S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Origin efficiency was defined as the probability of actively firing during S phase (or, equivalently, the probability of not being passively replicated by forks coming from nearby origins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "404400ab-4f81-4c22-97ea-b292ddf4684c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C65",
+      "claim": "The model reproduces the higher correlation in birth and death events in closer-related branches than in distant branches as a consequence of the common positions and firing rates of the origins in the ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, Figure 5B shows that the model reproduces the higher correlation in birth and death events in closer-related branches than in distant branches as a consequence of the common positions and firing rates of the origins in the ancestor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model mechanism and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "b24b4857-1196-46f6-9818-b60a3ac3b330",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C66",
+      "claim": "The firing rates Spearman correlation coefficient \u03c1 between sets of corresponding origins decreases with increasing phylogenetic distance between species.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) The firing rates Spearman correlation coefficient \u03c1 between sets of corresponding origins decreases with increasing phylogenetic distance between species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "fb92d4b3-2606-4dbd-9420-b8d7a85705ae",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C67",
+      "claim": "The cumulative probability distribution of the normalized firing rates of newly gained origins is similar to that of all extant origins.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Cumulative probability distribution of the normalized firing rates of newly gained origins (green triangles, for the six sister species) compared to all the extant origins (red squares, for the six sister species). This plot shows that all the functions are very similar.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "0c48fc8f-fae1-466a-b2d9-ac2b2e0b531c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C68",
+      "claim": "The result that newly gained origins have similar firing rate distributions to all extant origins is compatible with the assumption of resampling of firing rates over evolution taken for the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is compatible with the assumption of resampling of firing rates over evolution taken for the model (see Appendix 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "2e410425-22e3-4e4a-b92c-1394157b8abd",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C70",
+      "claim": "The model can simulate nine species, all the species except for Lachancea kluyveri, as this species was used as outgroup for the computation of the length of the tree branches.",
+      "claim_type": "EXPLICIT",
+      "source": "We stress that these simulations just include intersecting lineages whose branched structure corresponds precisely to the lineages of the empirical tree. The phylogenetic structure does not emerge from the simulation as our model does not describe speciation. The model for the tree can simulate nine species, all the species except for Lachancea kluyveri, as this species was used as outgroup for the computation of the length of the tree branches Agier et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation setup.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "a2d02a1f-b4b4-4218-96ea-554dc401efd9",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C71",
+      "claim": "The phylogenetic structure does not emerge from the simulation as the model does not describe speciation.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic structure does not emerge from the simulation as our model does not describe speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clarification about the model scope.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e3075a70-a693-473b-9632-0b50334289f2",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C72",
+      "claim": "Choosing linear chromosome does not alter significantly the findings, although it affects the distances between origins close to chromosome ends.",
+      "claim_type": "EXPLICIT",
+      "source": "We have verified that choosing linear chromosome does not alter significantly our findings, although it affects the distances between origins close to chromosome ends (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "3bd7edaa-1493-48f4-b14d-f36db1ed9a2a",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C73",
+      "claim": "In the model, the accumulation of origins towards the chromosome ends is due to the fact that single-stall events are more prone to happen than double stalls.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, the accumulation of origins towards the chromosome ends is due to the fact that single-stall events are more prone to happen than double stalls.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the model mechanism shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "de95c5b6-e831-4552-b504-76a967483ff6",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C74",
+      "claim": "The region involving the last origin before telomeres is specific, and additional mechanisms such as telomerase or homologous recombination could repair stalled forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Biologically, the region involving the last origin before telomeres is specific, and additional mechanisms such as telomerase or homologous recombination could repair stalled forks Matmati et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "0e0e0d96-1df1-4a47-9c0f-5172f7dfa82c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C75",
+      "claim": "A model fit using only the subtree between LADA and LAWA yielded similar parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "To underline this point, we verified that a model fit using only the subtree between LADA a LAWA yielded similar parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a robustness check of the model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "8051a509-a206-44f7-a46b-64a422f12095",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C76",
+      "claim": "The values of the birth and death rate, and also the bias parameters \u03b3 and \u03b2, could be Lachancea-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, we cannot exclude that the values of the birth and death rate, and also the bias parameters \u03b3 and \u03b2, could be Lachancea-specific, while we speculate that the conclusions on the relevant evolutionary mechanisms might apply more generally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the model parameters.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "4bf0698e-f0cb-4ee6-b7c0-411358dc1051",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C77",
+      "claim": "The conclusions on the relevant evolutionary mechanisms might apply more generally beyond Lachancea.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, we cannot exclude that the values of the birth and death rate, and also the bias parameters \u03b3 and \u03b2, could be Lachancea-specific, while we speculate that the conclusions on the relevant evolutionary mechanisms might apply more generally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the generalizability of the model conclusions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "d6663fa7-6899-4896-b898-7e4d2ff7f1cf",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C78",
+      "claim": "The previous approach by Newman et al., 2013 described the evolution of origin distance as an optimization process that minimizes double fork-stall events.",
+      "claim_type": "EXPLICIT",
+      "source": "The previous approach by Newman et al., 2013 described the evolution of origin distance as an optimization process that minimizes double fork-stall events, without attempting to characterize explicitly the evolutionary dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "71082fbc-11a1-4a41-a853-a4b5f679a7b9",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C79",
+      "claim": "The previous approach by Newman et al., 2013 is limited compared to the framework presented here because it can predict only the origin distance distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Such approaches are limited compared to the framework presented here because they can predict only the origin distance distribution, and they do not allow any prediction regarding origin and replication program evolution along lineages and across phylogenetic trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current work with prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "1b802e75-d778-445c-a286-3d9f594a87b8",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C80",
+      "claim": "Double-stall events are a primary driver of the evolution of replication programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with the results of Newman et al., we confirm that double-stall events are a primary driver of the evolution of replication programs, and we frame this finding into the empirically measured birth-death evolutionary dynamics of replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the model results and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "c9ce345f-4cd7-4b02-ad51-6ae283743088",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "claim_id": "C81",
+      "claim": "Origin efficiency plays an important role in shaping the evolutionary landscape seen by a replication timing profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that next to fork-stall events, origin efficiency plays an important role in shaping the evolutionary landscape seen by a replication timing profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "662d1588-04fe-48e5-ac0e-a274636f2514",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The inter-origin distance distribution across 10 Lachancea species shows a robust unimodal shape with a marked peak around 35 kbp, which is strikingly invariant across all species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are directly supported by empirical data shown in Figure 1A. The unimodal distribution with a peak at ~35 kbp is clearly visible and consistent across species, providing strong evidence for a conserved structural feature of replication origin spacing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "22aa0198-bbc5-4544-a892-b7e3e3a85957",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lost replication origins tend to be closer to their neighbors than newly gained or conserved origins, revealing that inter-origin distance correlates with evolutionary loss rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by data in Figure 1C showing clear differences in distance distributions between lost, conserved, and newly gained origins. The inference that distance correlates with loss rate follows logically from the observed pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "2aa746b0-c94f-45a7-8e98-96aef06f8e9b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Birth and death events of neighboring origins are spatially and temporally correlated, occurring more frequently in the same genomic location than expected by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by Figure 1D showing significant deviation from null expectations of uncorrelated events. The spatial correlation is demonstrated empirically, and temporal correlation is inferred from the phylogenetic context (terminal branches).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lost origins tend to be less efficient than conserved origins, while origins neighboring loss events are typically more efficient than average, and newly gained origins near lost ones are among the most efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by data in Figure 1E-F showing clear efficiency differences between origin classes and their neighbors. The apparent contradiction between C30 and C32 is resolved by C34, demonstrating careful data analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "b08b723b-c89e-4e71-800d-0df61783c666",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The double-stall-aversion model successfully reproduces the inter-origin distance distribution, origin efficiency distribution, and correlations between inter-origin distance and birth-death events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by simulation results in Figure 2A-D showing good agreement between model predictions and empirical data for these structural features and distance-event correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "a2e1b0da-528c-4dd9-a2b7-541d20a74ab8",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The double-stall-aversion model fails to reproduce correlations between origin efficiency and evolutionary history of neighbors, indicating that a direct mechanism linking efficiency to birth-death events is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by comparison of Figure 2E-F with Figure 1E-F, showing the model's failure to capture efficiency-history correlations. The inference that a direct coupling mechanism is needed (C42) follows logically from this failure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "299f732f-faa0-472b-b6e9-f8ddc3394a05",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The joint model incorporating both double-stall aversion and efficiency-dependent death rates reproduces all observations regarding origin layout and evolutionary dynamics, including efficiency differences between lost origins and their neighbors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by simulation results in Figures 3 and 4 showing comprehensive agreement with empirical data. The joint model succeeds where the double-stall-aversion model fails, particularly for efficiency-event correlations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "cbc116f0-d5b0-422b-8a15-19fd584b1d83",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The joint model correctly predicts that origins in larger evolutionary families have higher efficiency than those in smaller families, consistent with high-efficiency origins surviving longer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by Figure 5A showing agreement between model predictions and empirical data for the relationship between family size and efficiency. The explanation (longer survival of high-efficiency origins) is plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "6b299452-a39c-488f-9c67-67f700104f82",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The joint model correctly predicts the divergence in shared origins lost during evolution without parameter adjustment, outperforming a null model, due to correlated losses from common ancestral genome structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 and C65 are supported by Figure 5B showing the joint model matches empirical divergence patterns while the null model fails. The explanation of correlated losses due to shared ancestry is mechanistically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "378bf27e-fec9-40bc-a28c-fa669b1e3acc",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Replication origin birth-death events are driven by two evolutionary pressures: penalization of events increasing double-stall probability and preferential loss of less efficient origins, demonstrating that both fork stalling and efficiency shape replication program evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C52, C80-C81 represent the main conclusions supported by the comprehensive model comparison. The joint model's success in reproducing all empirical patterns while simpler models fail provides strong evidence for both mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e99c7cf1-4eaf-45d0-810e-8bf2f2ec3a1b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Origin efficiency distributions show more variability across species than inter-origin distance distributions, but remain consistent with a common shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C24 is supported by visual comparison of Figure 1A and 1B. The efficiency distributions show greater spread but maintain similar overall shape, indicating both conservation and flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "c97198d9-3823-42df-a4fe-2eeb6df0a8ac",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "More than half of newborn origins are positioned within 20% of the midpoint of the inter-origin interval where they are born.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by data in Figure 1\u2014figure supplement 2 showing a strong bias toward midpoint placement. This justifies the model assumption of placing new origins at midpoints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "e2f9dcdd-73ef-4688-9b1a-01cf02f6154b",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Firing rate correlation between corresponding origins decreases with phylogenetic distance, while newly gained origins have similar firing rate distributions to all extant origins, supporting the model's resampling assumption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by Figure 1\u2014figure supplement 3. The decreasing correlation with distance (C66) and similarity of new and extant distributions (C67) provide empirical justification for the model's firing rate evolution mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "ac5b89c1-cf6a-4403-bb93-e07f1c00b3c2",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Using linear chromosomes instead of circular does not significantly alter findings, though it affects distances near chromosome ends due to single-stall events being more probable than double stalls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 are supported by Figure 3\u2014figure supplement 1 showing similar results with linear chromosomes except near ends. The mechanistic explanation for end accumulation is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "ba3e3f78-0f51-470b-a27b-ef113095bd9c",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Double-stall probability depends only on inter-origin distance, not on origin firing rates or efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by the mathematical derivation of Equation 1, which shows double-stall probability is a function of distance alone. This is a direct consequence of the Poisson stalling model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "b121876b-67aa-4248-9472-13533fd2396d",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Model fitting using only the LADA-LAWA subtree yields similar parameters to the full tree fit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 demonstrates robustness of parameter estimation. While specific parameter values are not provided, this robustness check supports the reliability of the fitted model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "3b9eeab1-1a7a-4076-aa84-3939e13dc807",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study provides a predictive and falsifiable framework for studying replication program evolution driven by origin birth-death events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51 and C53 accurately characterize the study's contribution. The framework makes testable predictions (e.g., Figure 5) and can be falsified by comparing predictions to new data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work (Agier et al., 2018) established that replication program evolution in Lachancea is driven primarily by origin birth-death events rather than chromosomal rearrangements, with origin fate depending on neighborhood characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C11-C19 accurately summarize prior work from Agier et al., 2018, which provides the empirical foundation for the current modeling study. These are appropriately cited background claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "b40e5e01-a1f7-423e-a968-4a7000789e1f",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Origin death may be nearly neutral as low-efficiency origins are rarely used and prone to sequence decay, though rarely used origins could be essential under stress, and fitness costs may prevent global origin number increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 are speculative mechanistic explanations for the observed patterns. While plausible and supported by citations, they are not directly tested in this study and remain hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "f5adff2c-04cf-4c59-bf4e-a505711d34ab",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Model parameters (birth/death rates, bias parameters \u03b3 and \u03b2) may be Lachancea-specific, though the evolutionary mechanisms may apply more generally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77 acknowledge limitations in generalizability. Without data from other clades, it's uncertain whether parameters or mechanisms are universal. This is an appropriate caveat.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "9301f747-b043-4a4d-a71a-ba6c77006482",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background on replication origins: eukaryotes use predefined origins with specific genomic properties, initiation is stochastic, double-stall events are lethal, and origin placement is non-uniform with regular spacing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C10 and C20 provide well-established background knowledge supported by multiple citations. These foundational concepts are widely accepted in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "f1eb6d39-f22b-4b81-b5b4-f786e0f9901e",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Origin efficiency is defined as the probability of actively firing during S phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 provides a standard definition used in the field and in this study. The definition is clear and operationalized through Equations 4-6.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "6e6f7f34-26b8-40a0-aa03-ddae7e7616c1",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The model simulates nine species (excluding L. kluyveri used as outgroup) with a phylogenetic structure that is imposed rather than emergent, as the model does not describe speciation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately describe the simulation setup and its limitations. The clarification that phylogenetic structure is imposed is important for interpreting results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "6883b70d-61b2-46c9-a357-b83fa645a3a4",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The region near telomeres is specific, and additional mechanisms like telomerase or homologous recombination could repair stalled forks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is a speculative explanation for why the model's prediction of origin accumulation near chromosome ends may not match biology. While plausible and cited, it's not tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    },
+    {
+      "id": "c3bd3bb9-9691-48e1-9e26-4d32206b6073",
+      "content_id": "56476ef9-d33d-44ee-91e8-d36f1c5ccbf2",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The previous approach by Newman et al., 2013 was limited to predicting origin distance distributions through optimization, without characterizing evolutionary dynamics or making phylogenetic predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 accurately characterize prior work and explain how the current study advances beyond it. This is a fair comparison highlighting the novelty of the birth-death framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T04:38:28.840358Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95083251-afb4-4a53-9c51-f9ff284f5266",
+      "result_id": "662d1588-04fe-48e5-ac0e-a274636f2514"
+    },
+    {
+      "claim_id": "802ed320-8be9-4ca7-937f-31ef568aa56c",
+      "result_id": "662d1588-04fe-48e5-ac0e-a274636f2514"
+    },
+    {
+      "claim_id": "100b72e7-5881-4a01-bb77-989f0a02f714",
+      "result_id": "662d1588-04fe-48e5-ac0e-a274636f2514"
+    },
+    {
+      "claim_id": "d3d366b2-62ef-4071-86da-39079e4fcb0a",
+      "result_id": "22aa0198-bbc5-4544-a892-b7e3e3a85957"
+    },
+    {
+      "claim_id": "57823a5c-c718-42cc-9ea3-cfc807de9fd7",
+      "result_id": "22aa0198-bbc5-4544-a892-b7e3e3a85957"
+    },
+    {
+      "claim_id": "47b032b4-887a-49bb-815b-4d6948809db2",
+      "result_id": "2aa746b0-c94f-45a7-8e98-96aef06f8e9b"
+    },
+    {
+      "claim_id": "2a8c4e5f-fa3c-4859-a7e5-cf84322bdd1d",
+      "result_id": "2aa746b0-c94f-45a7-8e98-96aef06f8e9b"
+    },
+    {
+      "claim_id": "3667b6b1-932d-43c2-b0e2-0d0f8219c439",
+      "result_id": "2aa746b0-c94f-45a7-8e98-96aef06f8e9b"
+    },
+    {
+      "claim_id": "f1d68735-2397-4c90-82f5-c7ddd9657234",
+      "result_id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4"
+    },
+    {
+      "claim_id": "88bd76ce-b8ce-4799-a1c0-5e5ca0ce02e6",
+      "result_id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4"
+    },
+    {
+      "claim_id": "673003f7-a4b8-4008-8b26-681560978a93",
+      "result_id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4"
+    },
+    {
+      "claim_id": "5b0eeda7-b23b-479c-b076-579c8c9f2535",
+      "result_id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4"
+    },
+    {
+      "claim_id": "d5e4e2f0-0584-488a-b3b1-da71ec7624d2",
+      "result_id": "063fab09-6f1a-460b-b927-a2df9b0b1bd4"
+    },
+    {
+      "claim_id": "6eae6b12-f9e1-4a58-9771-265fac6f3f02",
+      "result_id": "b08b723b-c89e-4e71-800d-0df61783c666"
+    },
+    {
+      "claim_id": "e8912992-18ad-426b-90cc-96e27c75b687",
+      "result_id": "b08b723b-c89e-4e71-800d-0df61783c666"
+    },
+    {
+      "claim_id": "ad2cac97-66d6-4df6-af68-a064a7602c18",
+      "result_id": "b08b723b-c89e-4e71-800d-0df61783c666"
+    },
+    {
+      "claim_id": "65ea19ab-6a84-45c8-9d3c-ec60c8194f19",
+      "result_id": "a2e1b0da-528c-4dd9-a2b7-541d20a74ab8"
+    },
+    {
+      "claim_id": "acbf83b8-a3c7-4a68-bfbc-82a0896b0a52",
+      "result_id": "a2e1b0da-528c-4dd9-a2b7-541d20a74ab8"
+    },
+    {
+      "claim_id": "869c9f47-a4bb-4a99-8b1e-9522f046b8cd",
+      "result_id": "a2e1b0da-528c-4dd9-a2b7-541d20a74ab8"
+    },
+    {
+      "claim_id": "a71a4487-6b26-45fa-a72d-b390e6966235",
+      "result_id": "299f732f-faa0-472b-b6e9-f8ddc3394a05"
+    },
+    {
+      "claim_id": "47739a0c-fe20-41ce-9f34-475753879981",
+      "result_id": "299f732f-faa0-472b-b6e9-f8ddc3394a05"
+    },
+    {
+      "claim_id": "45f9e2b9-7ede-4a45-b302-d48861146101",
+      "result_id": "299f732f-faa0-472b-b6e9-f8ddc3394a05"
+    },
+    {
+      "claim_id": "e55f21bd-e5bb-410b-805f-19a2d64982b6",
+      "result_id": "cbc116f0-d5b0-422b-8a15-19fd584b1d83"
+    },
+    {
+      "claim_id": "4c26c631-b2c0-4cc0-aa77-00e053fc230d",
+      "result_id": "cbc116f0-d5b0-422b-8a15-19fd584b1d83"
+    },
+    {
+      "claim_id": "13964c0d-4e44-47a5-85fa-156b4d1c5c8b",
+      "result_id": "6b299452-a39c-488f-9c67-67f700104f82"
+    },
+    {
+      "claim_id": "7723965c-4f9a-4ff7-b3d5-51e4f20e8ba5",
+      "result_id": "6b299452-a39c-488f-9c67-67f700104f82"
+    },
+    {
+      "claim_id": "6b71bc5c-03af-4f5f-930b-a521ff55e434",
+      "result_id": "6b299452-a39c-488f-9c67-67f700104f82"
+    },
+    {
+      "claim_id": "404400ab-4f81-4c22-97ea-b292ddf4684c",
+      "result_id": "6b299452-a39c-488f-9c67-67f700104f82"
+    },
+    {
+      "claim_id": "337bc1eb-85f2-4eb7-a0ba-5c8434c29ef8",
+      "result_id": "378bf27e-fec9-40bc-a28c-fa669b1e3acc"
+    },
+    {
+      "claim_id": "f329c503-6642-4dd2-8ae2-1fdb421fd7c5",
+      "result_id": "378bf27e-fec9-40bc-a28c-fa669b1e3acc"
+    },
+    {
+      "claim_id": "1b802e75-d778-445c-a286-3d9f594a87b8",
+      "result_id": "378bf27e-fec9-40bc-a28c-fa669b1e3acc"
+    },
+    {
+      "claim_id": "c9ce345f-4cd7-4b02-ad51-6ae283743088",
+      "result_id": "378bf27e-fec9-40bc-a28c-fa669b1e3acc"
+    },
+    {
+      "claim_id": "c7ec5f29-f531-422c-84c6-c7222b124a1b",
+      "result_id": "e99c7cf1-4eaf-45d0-810e-8bf2f2ec3a1b"
+    },
+    {
+      "claim_id": "5a1f8ee7-fbdb-4bd6-987e-1347c8951112",
+      "result_id": "c97198d9-3823-42df-a4fe-2eeb6df0a8ac"
+    },
+    {
+      "claim_id": "b24b4857-1196-46f6-9818-b60a3ac3b330",
+      "result_id": "e2f9dcdd-73ef-4688-9b1a-01cf02f6154b"
+    },
+    {
+      "claim_id": "fb92d4b3-2606-4dbd-9420-b8d7a85705ae",
+      "result_id": "e2f9dcdd-73ef-4688-9b1a-01cf02f6154b"
+    },
+    {
+      "claim_id": "0c48fc8f-fae1-466a-b2d9-ac2b2e0b531c",
+      "result_id": "e2f9dcdd-73ef-4688-9b1a-01cf02f6154b"
+    },
+    {
+      "claim_id": "e3075a70-a693-473b-9632-0b50334289f2",
+      "result_id": "ac5b89c1-cf6a-4403-bb93-e07f1c00b3c2"
+    },
+    {
+      "claim_id": "3bd7edaa-1493-48f4-b14d-f36db1ed9a2a",
+      "result_id": "ac5b89c1-cf6a-4403-bb93-e07f1c00b3c2"
+    },
+    {
+      "claim_id": "7857fa98-4861-4fe9-bbc9-df62ef7cf58d",
+      "result_id": "ba3e3f78-0f51-470b-a27b-ef113095bd9c"
+    },
+    {
+      "claim_id": "0e0e0d96-1df1-4a47-9c0f-5172f7dfa82c",
+      "result_id": "b121876b-67aa-4248-9472-13533fd2396d"
+    },
+    {
+      "claim_id": "5182e8d9-376e-48be-9016-2cdaf141d0ee",
+      "result_id": "3b9eeab1-1a7a-4076-aa84-3939e13dc807"
+    },
+    {
+      "claim_id": "7affdc09-f333-40b2-8b21-229ec574b210",
+      "result_id": "3b9eeab1-1a7a-4076-aa84-3939e13dc807"
+    },
+    {
+      "claim_id": "eb113023-072c-4c88-ab13-d54920836086",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "e5e31b12-7931-4847-9899-d1ee0689781b",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "fdbcc978-2869-4043-8124-ba74f62378ab",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "0ce42c05-d728-4f47-ba8a-bf9154583e29",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "7514d350-1ccd-48f2-8e57-06764350876b",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "58af7f6d-e3fa-413d-ba7f-4aac8bc1bb1f",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "0c0c6bf9-872f-4bd8-ae5e-b137fb56d117",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "d14e4f9c-ed35-4840-9fde-634e84f9fa1c",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "17d003d2-cc76-4a3b-8d30-94e365a8e36c",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "1142db26-77b4-480c-accb-82404f9ef52a",
+      "result_id": "8bf7628e-34eb-4e4b-b9c3-5d2ccfc2ef11"
+    },
+    {
+      "claim_id": "e61a074e-449f-4ef2-84be-1c6b35a29aa8",
+      "result_id": "b40e5e01-a1f7-423e-a968-4a7000789e1f"
+    },
+    {
+      "claim_id": "26074440-481e-41eb-b954-0fd075c6597c",
+      "result_id": "b40e5e01-a1f7-423e-a968-4a7000789e1f"
+    },
+    {
+      "claim_id": "703db2f0-2af6-460c-b7b6-a8848667ec04",
+      "result_id": "b40e5e01-a1f7-423e-a968-4a7000789e1f"
+    },
+    {
+      "claim_id": "8051a509-a206-44f7-a46b-64a422f12095",
+      "result_id": "f5adff2c-04cf-4c59-bf4e-a505711d34ab"
+    },
+    {
+      "claim_id": "4bf0698e-f0cb-4ee6-b7c0-411358dc1051",
+      "result_id": "f5adff2c-04cf-4c59-bf4e-a505711d34ab"
+    },
+    {
+      "claim_id": "b20bad9d-a72e-4a87-9128-6cf3612feffc",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "69fc6244-7ebc-4f36-bb00-49a57364836a",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "82c37a74-9756-425b-9a8f-ec8595fab9de",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "e0ed7f86-03fb-4878-a63b-071894788f27",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "efc22b90-1510-49d3-892f-c9948f6a934f",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "630263cf-fc04-4974-90d4-eb3b9b3871ce",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "c6ca5dd5-d7f3-434a-9ffa-5e7509be6fad",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "2f616de2-8381-4f86-93c4-da83be51fe1f",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "3c9c98da-a7d1-46de-938c-15c2076a37ec",
+      "result_id": "9301f747-b043-4a4d-a71a-ba6c77006482"
+    },
+    {
+      "claim_id": "0dc966b4-cba7-4bec-9b5b-cf68234162ae",
+      "result_id": "f1eb6d39-f22b-4b81-b5b4-f786e0f9901e"
+    },
+    {
+      "claim_id": "2e410425-22e3-4e4a-b92c-1394157b8abd",
+      "result_id": "6e6f7f34-26b8-40a0-aa03-ddae7e7616c1"
+    },
+    {
+      "claim_id": "a2d02a1f-b4b4-4218-96ea-554dc401efd9",
+      "result_id": "6e6f7f34-26b8-40a0-aa03-ddae7e7616c1"
+    },
+    {
+      "claim_id": "de95c5b6-e831-4552-b504-76a967483ff6",
+      "result_id": "6883b70d-61b2-46c9-a357-b83fa645a3a4"
+    },
+    {
+      "claim_id": "d6663fa7-6899-4896-b898-7e4d2ff7f1cf",
+      "result_id": "c3bd3bb9-9691-48e1-9e26-4d32206b6073"
+    },
+    {
+      "claim_id": "71082fbc-11a1-4a41-a853-a4b5f679a7b9",
+      "result_id": "c3bd3bb9-9691-48e1-9e26-4d32206b6073"
+    }
+  ],
+  "comparisons": []
+}

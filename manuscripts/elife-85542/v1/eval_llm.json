@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19"
+    ],
+    "result": "The SAM complex mediates transcriptional activation in Drosophila S2R+ cells in a copper-inducible manner, with robust upregulation of target genes (Jon25Biii, Sdr, CG9877) in the presence of copper and moderate activation without copper due to leaky promoter expression. The system shows specificity, activating CG9877 without affecting the nearby divergent gene CG13538.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 and C18 provide direct experimental evidence from qPCR and Figure 1B-C showing robust gene activation with copper and specificity for target genes. Claim C14 provides a reasonable explanation for leaky expression. Claim C19 appropriately qualifies the specificity finding to 'at least in some divergent gene pairs.' The experimental design includes appropriate controls (empty vector, no copper conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A focused CRISPRa screen with 6335 sgRNAs targeting 652 genes identified genes affecting cell fitness (scyl, Cyp12a4 depleted) and rapamycin resistance (CG8468 enriched at 1 nM rapamycin), demonstrating the feasibility of pooled CRISPRa screening in Drosophila cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C31-32 provide statistical evidence (FDR<0.05) for specific hits with appropriate controls (DMSO vs rapamycin, time course). Claim C29 validates the scyl finding against prior literature. The lack of hits at 0.1 nM (C33) is explained by biological reasoning. However, the focused screen only identified one rapamycin resistance gene, which is a limited result for demonstrating broad feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C101",
+      "C102"
+    ],
+    "result": "A genome-wide dual-sgRNA library was constructed containing 84,143 vectors targeting 13,293 protein-coding genes and 2332 non-coding genes, with high quality metrics (98.5% representation, 15.5-fold difference between 10th and 90th percentiles) comparable to published libraries. The library design includes 4-6 dual-sgRNA vectors per gene and targets alternative promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide quantitative metrics for library quality with appropriate comparison to published standards (Sanjana et al., 2014). The library design features (C35, C101-C102) are clearly described. The quality metrics indicate good library construction, though the 15.5-fold representation difference is substantial and could affect screen sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C110"
+    ],
+    "result": "The genome-wide CRISPRa screen identified known rapamycin resistance genes (Pka-C3, Cdc25) and three novel candidates (CG8468, CG5399, CG9932) that were significantly enriched (FDR<0.05) in both replicates. The screen also identified genes affecting cell fitness, including scyl, consistent with the focused screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 show reproducibility across replicates with statistical significance (FDR<0.05). Claims C43-C46 validate the screen by identifying known rapamycin resistance genes with literature support. Claims C47-C51 identify novel candidates with appropriate statistical thresholds and consistency between focused and genome-wide screens (CG8468). The identification of both known and novel genes supports screen validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Validation experiments confirmed that dual-sgRNA vectors showed variable activation efficiency, with enrichment in the screen highly correlated with target activation efficiency. Only vectors that efficiently activated target genes conferred rapamycin resistance in competition assays, as measured by GFP proportion changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide experimental validation through multiple approaches (qPCR for activation, NGS for enrichment, flow cytometry for competition assays) with appropriate controls (empty vector, inefficient vectors). The correlation between activation efficiency and enrichment (C54) strengthens confidence in the screen results. However, C53 provides only speculative explanations for variable efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CG5399 overexpression dramatically elevated phospho-S6 levels in the presence of rapamycin compared to controls, while CG8468 did not show this effect. CG9932 overexpression also increased phospho-S6 levels, consistent with its human ortholog REST activating Akt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide direct experimental evidence with appropriate controls (wild-type SAM cells, empty vector). The differential effects on phospho-S6 (C61 vs C62) help distinguish mechanisms. However, C63 is speculative about CG8468's mechanism, and C64-C65 rely on analogy to a human ortholog which may not be directly applicable to Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CG5399 overexpression activates the RTK-Akt-mTOR signaling pathway in normal medium without insulin stimulation, acting through PI3K and requiring both InR and Pvr. This was demonstrated by elevated phospho-S6, phospho-Akt, and phospho-InR levels, with knockdown experiments confirming specificity and pathway dependencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C78 provide comprehensive mechanistic evidence through multiple complementary approaches: overexpression (C66-C68, C76), knockdown validation (C69, C71, C74), and ORF overexpression (C77). The pathway is systematically dissected from receptors (InR, Pvr) through PI3K to Akt and mTOR. Controls include multiple independent dsRNAs and different overexpression methods. The evidence converges on a coherent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "InR activation by CG5399 overexpression does not require insulin, as demonstrated by persistent phospho-InR and phospho-Akt elevation after serum starvation for 2 hours, despite potential trace insulin in FBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 provides direct experimental evidence with serum starvation. Claims C79-C81 provide appropriate biological context about InR structure and potential confounders (insulin in FBS). However, 2 hours of serum starvation may not be sufficient to completely deplete all insulin/IGF signaling, and the experiment could be strengthened with longer starvation or insulin receptor blocking antibodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Computational analysis revealed that CG5399 has a conserved lipocalin barrel structure formed by eight beta-sheets, similar to lipocalins in other species. Molecular docking simulation indicated cholesterol can insert into this structure, suggesting cholesterol as a potential substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 provide computational predictions (AlphaFold structure, molecular docking) but lack experimental validation. While the structural similarity to known lipocalins (C85) is supported by citations, the cholesterol binding prediction (C86-C87) is purely computational. Molecular docking can produce false positives, and the claim that cholesterol 'might be a substrate' (C87) is appropriately qualified as speculative but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Activation of InR-Akt-mTOR signaling by CG5399 overexpression requires cholesterol at the membrane, as demonstrated by dose-dependent elimination of phospho-InR/Akt/S6 with M\u03b2CD treatment, rescue by cholesterol supplementation, and direct activation of the pathway by cholesterol supplementation in wild-type cells. M\u03b2CD treatment does not affect normal InR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 provide strong experimental evidence through multiple complementary approaches: cholesterol depletion (C89), rescue experiments (C91), direct supplementation (C94), and controls for M\u03b2CD specificity (C92-C93). The dose-dependent effect (C89) and bidirectional manipulation (depletion and supplementation) strengthen the conclusion. However, M\u03b2CD can have off-target effects beyond cholesterol depletion, and the insulin response test (C92) may not fully exclude all potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "InR-Akt-mTOR signaling activation by CG5399 overexpression requires clathrin-coated pits but not flotillin-coated microdomains at the cell membrane. Knockdown of clathrin heavy chain (Chc) dampened the increase in phospho-InR and phospho-Akt in CG5399-overexpressing cells and eliminated InR activation by cholesterol supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 provide experimental evidence distinguishing between different membrane microdomains through selective knockdown experiments. The requirement for clathrin but not flotillin (C97-C98) is clearly demonstrated. Claim C99 shows that cholesterol-mediated activation also requires clathrin, linking the two mechanisms. However, the experiments use only knockdown approaches; pharmacological inhibitors of clathrin-mediated endocytosis could provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Some dual-sgRNA vectors failed to activate target genes, possibly due to steric hindrance or different sgRNA binding efficiency. The metallothionein promoter showed leaky expression causing moderate gene activation without copper induction. Previous work showed sgRNAs lose efficiency beyond -600 bp from the TSS in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 acknowledges an important limitation with observational evidence but only speculative explanations. Claim C104 is directly observed in the data. Claim C105 is supported by citation to prior work (Mao et al., 2020). These are honest assessments of system limitations that affect interpretation of negative results and potential for collateral activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "InR activation can be regulated by the lipid environment, as higher InR activity was observed in CG5399-overexpressing cells without insulin stimulation. This is consistent with prior work showing that InR transmembrane domain rearrangement is crucial for activation and that lipid exchange to form ordered domains induces InR autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 provide appropriate literature context for the mechanism. Claim C108 provides the experimental observation. Claim C109 is a reasonable inference connecting the experimental data to the mechanistic framework. However, the study does not directly demonstrate lipid domain formation or InR transmembrane domain rearrangement, relying instead on inference from prior work in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "CG5399 is predicted to have a transmembrane helix at the C-terminus and be located on the cell membrane based on computational predictions by PredictProtein and DeepLoc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are purely computational predictions without experimental validation. While these predictions are consistent with the proposed mechanism, they lack experimental confirmation through techniques such as membrane fractionation, immunofluorescence, or protease protection assays. Computational predictions of transmembrane domains and localization can have significant error rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "About half of Drosophila genes lack functional characterization. While genome-wide LOF screens have been extensively used in Drosophila, genome-wide GOF screens have not been feasible due to lack of reagents. Current cDNA library approaches only cover a subset of the genome. CRISPRa using the SAM complex has been used for genome-wide screens in mammalian cells but not tested in Drosophila cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide appropriate background context supported by multiple citations to establish the gap in the field. These claims accurately represent the state of knowledge and justify the need for the current study. The claims are primarily descriptive of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Lentivirus vectors are extremely inefficient in Drosophila cells, necessitating alternative library delivery methods. A pooled library delivery method based on site-specific recombination was previously established. Rapamycin is an allosteric mTOR inhibitor that inhibits Drosophila S2R+ cell proliferation in a dose-dependent manner, with partial inhibition at 0.1 nM and almost complete inhibition at 1 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide established background knowledge with appropriate citations. Claims C24-C25 provide experimental characterization of the screening conditions with dose-response data (Figure 2\u2014figure supplement 1B). This establishes the biological basis for the screen design and choice of rapamycin concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "In the Drosophila genome, 32% of genes form divergent gene pairs with transcriptional start sites <1 kb apart. CG9877 and CG13538 form such a pair with TSSs 908 bp apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by citation to Yang and Yu, 2009. Claim C17 is a factual statement about a specific gene pair used as a test case. These claims provide important context for evaluating the specificity of the CRISPRa system and potential for collateral activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "CG8468 is a member of the SLC16 family of monocarboxylate transporters, CG5399 encodes a lipocalin protein family member implicated in lipid binding and transport, and CG9932 encodes a zinc finger C2H2 transcription factor. CG5399 and CG9932 were not included in the focused library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide gene annotations based on established knowledge. Claim C52 is a factual statement about library design. These are descriptive claims that provide context for interpreting the screen results and explain why some hits were only found in the genome-wide screen.",
+    "result_type": "MINOR"
+  }
+]

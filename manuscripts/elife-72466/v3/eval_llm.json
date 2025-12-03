@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Double-membrane autophagosomes labeled with LGG-1, LGG-2, and ATG-9 are recruited to phagosomal surfaces and subsequently fuse with phagosomes, releasing their inner membrane into the phagosomal lumen. This process is observed across multiple phagosomes during embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C13, C16-C21, C32-C36 collectively demonstrate autophagosome-phagosome fusion through time-lapse imaging showing LGG signal accumulation inside phagosomes (Figures 1, 3). The use of acid-resistant mCherry/mNG reporters and comparison with single-membrane lysosomal markers (C21) provides strong evidence for double-membrane vesicle fusion. Co-localization of ATG-9 with LGG reporters (C32-C34) and observations across multiple phagosomes (C35-C36) support generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The LGG+ vesicles that fuse to phagosomes are canonical double-membrane autophagosomes, not single-membrane LAP vesicles. This is demonstrated by dependence on autophagy genes (atg-7, atg-9, atg-13, epg-8) that are dispensable for LAP vesicle formation, and by TEM visualization of double-membrane vesicles on phagosomal surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C22-C31, C37-C40 provide multiple converging lines of evidence: (1) genetic requirement for atg-13 and epg-8 (C23-C26), which are not needed for LAP vesicles; (2) drastic reduction of LGG+ puncta in autophagy mutants (C27-C31); (3) TEM visualization of double-membrane vesicles (C37-C39); (4) prior EM/immuno-gold data (C22). The logic distinguishing autophagosomes from LAP vesicles based on membrane topology (C8, C19-C20) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Autophagy mutants (atg-7, atg-9, atg-13, epg-8, lgg-1, lgg-2, atg-3, atg-2, atg-18, unc-51) display significant defects in apoptotic cell degradation, with 46.9-91.2% more cell corpses than wild-type and prolonged phagosome lifespans (>60 min in 43.8-82.4% of phagosomes vs. 40-60 min in wild-type), without affecting engulfment timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41-C47 demonstrate that autophagy defects specifically impair phagosome degradation but not engulfment. The cell corpse quantification (C41, Figure 5) and phagosome lifespan measurements (C44-C46, Figure 6) provide quantitative evidence. The separation of engulfment from degradation defects (C43) strengthens the conclusion that autophagosomes specifically contribute to degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The CED-1/CED-6/DYN-1 signaling pathway promotes autophagosome recruitment to phagosomes, while the parallel CED-5/CED-10 pathway is not involved. In ced-1, ced-6, and dyn-1 mutants, autophagosome recruitment to phagosomes is severely defective, with minimal LGG signal enrichment on phagosomal surfaces and inside phagosomal lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C77 demonstrate pathway specificity through genetic analysis. The severe recruitment defects in ced-1, ced-6, and dyn-1 mutants (C68-C75, Figures 9-10) contrast with normal autophagosome incorporation in ced-5 and ced-10 mutants (C76-C77). The observation that autophagosome biogenesis is normal in ced-1 mutants (C72) rules out indirect effects and supports a specific signaling defect (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RAB-7 and the HOPS complex (VPS-18) are essential for autophagosome-phagosome fusion but not for autophagosome recruitment. In rab-7 and vps-18 mutants, autophagosomes are recruited to phagosomal surfaces (100% of surface autophagosomes are RAB-7+), but fusion is blocked or severely delayed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54-C65 demonstrate that RAB-7/HOPS function specifically in fusion, not recruitment. The observation that 100% of autophagosomes on phagosomal surfaces are RAB-7+ (C56) but only ~65% in cytoplasm (C55) suggests RAB-7 recruitment precedes fusion. The complete fusion block in rab-7 mutants (C58-C61) and partial defect in vps-18 mutants (C62-C64) support the RAB-7/HOPS model (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Autophagosomes provide degradation activities in parallel to lysosomes. Lysosome-phagosome fusion is not significantly affected in autophagy mutants (lgg-1, lgg-2, atg-7), but rab-7 mutants (blocking both pathways) show more severe defects (100% of phagosomes >60 min lifespan) than autophagy mutants alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C66-C67, C78-C83 demonstrate parallel pathways through comparative analysis. The normal lysosome-phagosome fusion in autophagy mutants (C80-C83, Figure 11) combined with more severe defects in rab-7 mutants (C66-C67) supports additive contributions. However, the assay may not be sensitive enough to detect modest decreases in lysosomal fusion (acknowledged in C82), introducing some uncertainty about complete independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "LGG-1 and LGG-2 define three subpopulations of autophagosomes (LGG-1+ LGG-2-, LGG-1- LGG-2+, and LGG-1+ LGG-2+ at 35.8%, 40.7%, and 23.5% respectively) that play parallel and partially redundant roles in phagosome degradation. The lgg-1; lgg-2 double mutant shows enhanced defects (22-27% more cell corpses than single mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 demonstrate functional redundancy through genetic epistasis. The additive phenotype in double mutants (C48-C49, Figure 5B) and identification of three distinct populations (C50-C52, Figure 7) support the model of parallel pathways. Cell-specific rescue experiments (C53) confirm that lgg-1 and lgg-2 act in engulfing cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Among LGG+ puncta on phagosomal surfaces, 40.6% (LGG-1+) and 36.5% (LGG-2+) are autolysosomes (also labeled with lysosomal marker NUC-1), while the remaining LGG+ NUC-1- population likely delivers autophagosome-specific materials to phagosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 characterize autophagosome heterogeneity through dual-labeling experiments (Figure 12). The quantification of autolysosome vs. autophagosome populations (C85) is well-supported by imaging data. The inference that LGG+ NUC-1- vesicles deliver autophagosome-specific materials (C86) is reasonable but somewhat speculative, as the specific materials are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "atg-7 mutants show moderate defects in phagosome acidification (acidification index 0.679 vs. 0.443 in wild-type at 51 min) and chromatin DNA degradation (nuclear diameter reduced to 66% vs. 49% in wild-type at 60 min), distinct from severe defects in cup-5 lysosomal mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 demonstrate moderate functional defects using two complementary assays (Figures 13-14). The acidification index measurements (C88-C90) and nuclear diameter quantification (C92-C95) provide quantitative evidence. The comparison with cup-5 mutants establishes that autophagy defects are less severe than lysosomal defects, supporting the parallel pathway model. Sample sizes appear adequate (n=6-13 phagosomes).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "Background information on C. elegans apoptosis and LC3/GABARAP family members. C. elegans has two LC3/GABARAP family members (LGG-1 and LGG-2) that are lipidated and label autophagosomes of different maturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, C14-C15 provide established background information supported by citations and basic characterization experiments. The lipidation-dependent membrane attachment (C14-C15) is demonstrated by loss of punctate pattern in G116A and G130A mutants (Figure 1D, G). These are well-established facts that provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Summary of main findings: autophagosomes facilitate apoptotic cell degradation through phagosome fusion, presumably by providing materials to phagosomes, and this process is regulated by the CED-1 pathway (recruitment) and RAB-7/HOPS (fusion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 summarize the major findings supported by the data. However, C98 includes speculation about the mechanism ('presumably through providing certain materials'), which is acknowledged but not directly demonstrated. The specific materials or mechanisms by which autophagosomes facilitate degradation remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Speculation that autophagosome-phagosome fusion might be conserved in metazoans and that canonical autophagosomes (in addition to LAP vesicles) might contribute to apoptotic cell degradation in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 are explicitly speculative proposals based on evolutionary conservation arguments. While the reasoning is plausible given conservation of autophagy and phagocytosis pathways, these claims require experimental validation in mammalian systems. The authors appropriately frame these as proposals rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

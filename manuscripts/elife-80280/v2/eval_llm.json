@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Monkeys developed a natural strategy of tracking invisible targets with their eyes during navigation. The target-tracking index averaged 0.73 during the first second of trials (C6), and monkeys attempted to maintain gaze on targets even after they disappeared (C7). Better target tracking correlated with reduced angular bias (r\u00b2=0.43, p=0.004) and radial bias (r\u00b2=0.26, p=0.04), as well as increased reward rate (r\u00b2=0.24, p=0.042) (C39-C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C38-C41 provide converging evidence that eye tracking of invisible targets is a consistent behavioral strategy with functional benefits. The quantitative measurements (C6), behavioral observations (C7), and correlations with performance metrics (C38-C41) all support this result with appropriate statistical tests and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Large-scale neural recordings were obtained from three interconnected cortical areas during the firefly task. A total of 4254 units were recorded (231 from MSTd, 3200 from area 7a, 823 from dlPFC) across 82 sessions (C8-C10). Neural activity was modeled using a P-GAM with 17 task inputs (C12), achieving an average cross-validated pseudo-R\u00b2 of 0.072 (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 provide clear documentation of the recording dataset and modeling approach. The sample sizes are substantial, the model structure is well-defined, and the model fit quality is quantified with appropriate cross-validation. These methodological details are essential for interpreting subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neural encoding showed patterned mixed selectivity across brain areas. MSTd showed the highest proportion of neurons coding for eye position (58.8-63.3%) (C13), while area 7a showed the highest fraction tuned to sensorimotor variables (C14) and strong LFP phase dependency (C15). dlPFC showed the greatest fraction encoding path integration and spatial goals (30.6-57.5%) (C16). Area 7a had more path integration neurons than MSTd (p<1.6\u00d710\u207b\u2075, d>0.54) (C17), while MSTd had more neurons coding for distance/angle to target than 7a (p<6.1\u00d710\u207b\u2075, d>0.41) (C18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 demonstrate clear functional differentiation across brain areas with appropriate statistical tests (p-values and effect sizes). The pattern of mixed selectivity is well-documented with quantitative proportions and statistical comparisons. The findings are internally consistent and supported by the P-GAM analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Neural populations showed systematic biases in preferred distances and angles for path integration and spatial goal coding. Preferred distances/angles spanned the full feature space (C19), with 0\u00b0 offset from origin over-represented (C20) but 0\u00b0 offset from target under-represented (C21). In area 7a and dlPFC, the distribution of preferred angles to target was bimodal (bimodality coefficients: 7a=0.89, dlPFC=0.80, p<0.05) (C22), with preferences for ~45-90\u00b0 away from target (C23). All areas over-represented distances near the starting location (<150 cm) (C25), but area 7a preferred nearby targets (~30 cm, 50% of units) (C26) while MSTd and dlPFC preferred intermediate/far distances from target (200-400 cm) (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 provide detailed characterization of neural tuning distributions with appropriate statistical tests (bimodality coefficients, p-values). The findings reveal systematic organizational principles in how different brain areas represent spatial variables. The cross-validated sorting approach (Figure 3B) strengthens confidence in the stability of these tuning preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "The reversed pattern of angle preferences between cortex and hippocampus may suggest functional differentiation, with cortex guiding heading toward desired states while hippocampus maintains heading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 is explicitly labeled as speculative by the authors and relies on comparison with a single prior study (Sarel et al., 2017). While the comparison is interesting, the interpretation requires additional experimental validation to determine whether this functional differentiation actually exists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Clustering analysis based on tuning profiles revealed distinct functional organization across brain areas. Nearly all MSTd (89%) and dlPFC (94%) neurons belonged to a single cluster characterized by mixed selectivity (C28), while area 7a neurons appeared in three distinct clusters (36%, 22%, 31%) (C29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by spectral clustering analysis with clear quantitative results. The finding is corroborated by subsampling analysis (Figure 4\u2014figure supplement 1A) showing the pattern holds when controlling for unequal sample sizes across areas. The clustering approach is appropriate for the binary tuning data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "UMAP analysis of tuning function shapes revealed that MSTd and dlPFC are functionally more similar to each other than to area 7a. The centroid of MSTd was 6.49 times closer to dlPFC than to area 7a in UMAP space (C120), a finding that held with subsampling (5.56 times closer, 95% CI=[4.07, 7.33]) (C121). Cluster 1 contained 81.5% of dlPFC neurons, 58.9% of MSTd neurons, but only 3.6% of 7a neurons (C122), while clusters 2 and 3 exclusively contained 7a neurons (C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 provide converging evidence for functional similarity between MSTd and dlPFC using UMAP dimensionality reduction. The analysis is strengthened by subsampling controls (C121) and citation to prior work validating UMAP's preservation of global structure (C119). The clustering results are quantitatively clear and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Inter-area LFP-spike phase coupling revealed reciprocal connections consistent with anatomy. 37% of dlPFC neurons were tuned to beta-band LFP phase in area 7a (C30), while 59% of 7a neurons were modulated by beta-band LFP in dlPFC (C31). Additionally, 24% of 7a units were modulated by alpha-band LFP in MSTd (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 document inter-area phase coupling with clear quantitative proportions. The findings are corroborated by an independent analysis method (pairwise phase consistency, Figure 2\u2014figure supplement 9). The pattern of coupling is consistent with known anatomical connections between these areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Unit-to-unit coupling analysis revealed differential connectivity patterns across areas. Within-area coupling was higher in MSTd (13%) and area 7a (22%) than dlPFC (7%) (C33). Across areas, 12% of dlPFC neurons were coupled to MSTd (C34) and 7% of MSTd neurons to dlPFC (C35), but neither area showed >4% coupling with area 7a (C36). Coupling probability increased with tuning similarity (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide evidence for functional connectivity that differs from anatomical predictions. The analysis appropriately corrects for electrode distance (C117-C118) and demonstrates that coupling reflects functional properties (tuning similarity, C37) rather than just volume conductance. The finding of like-to-like connectivity (C37) validates the coupling measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MSTd-dlPFC coupling strength correlated with the monkeys' ability to track hidden targets with their eyes. Strong associations were observed between target tracking and MST-to-dlPFC coupling (r\u00b2=0.63, p=0.003) (C42), dlPFC-to-MSTd coupling (r\u00b2=0.41, p=0.035) (C43), and dlPFC-to-dlPFC coupling (r\u00b2=0.43, p=0.047) (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate behaviorally relevant functional coupling with appropriate statistical tests. The correlations are specific to MSTd-dlPFC interactions and eye tracking behavior, as other coupling patterns did not correlate with tracking (C45) or with radial/angular biases (Figure 5\u2014figure supplement 1). This specificity strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Unit-to-unit coupling did not correlate with steering biases or reward rate. No correlation was found between coupling and radial/angular biases (p>0.06 for all comparisons) (C45) or between coupling and proportion of rewarded trials (p>0.11, Bonferroni corrected) (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide important negative controls showing that coupling is specifically related to eye tracking strategy rather than general task performance. The statistical tests include appropriate multiple comparison corrections. These negative results strengthen the specificity of the positive findings in C42-C44.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C76",
+      "C81"
+    ],
+    "result": "The study identifies a functional MSTd-dlPFC subnetwork that reflects the monkeys' natural strategy of tracking invisible targets with their eyes. All areas encoded latent task variables (C55), but global encoding profiles and unit-to-unit coupling suggested a functional subnetwork between dlPFC and MSTd rather than the anatomically predicted MSTd-7a-dlPFC pathway (C56). This subnetwork reflects the task strategy of continuously gazing toward invisible target locations (C57, C76, C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C76, and C81 synthesize multiple lines of evidence (encoding profiles, clustering, coupling, behavior-coupling correlations) to support the main conclusion. The interpretation is well-grounded in the data, though the authors appropriately acknowledge that functional connectivity must be subserved by anatomical structure (C77). The finding challenges simple hierarchical models of cortical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The P-GAM model validation demonstrated excellent performance in variable selection and model parsimony. In synthetic data simulations (n=1344), the P-GAM showed 0.0% false negative rate (C62) and 0.0007% false positive rate (C63). The reduced model retained only 18.9% of parameters (C64) while maintaining comparable performance to the full model (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide rigorous validation of the modeling approach using synthetic data with known ground truth. The extremely low error rates and substantial parameter reduction without loss of performance demonstrate the method's reliability. This validation is essential for trusting the subsequent biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75"
+    ],
+    "result": "The findings suggest that navigation to remembered targets involves separable computational pathways. A circuit including anterior hippocampus and prefrontal cortex may abstractly plan goal-directed trajectories (C68), while posterior hippocampus and posterior parietal cortex may compute body-centric sensorimotor affordances (C69). The MSTd-7a-dlPFC pathway may be primarily involved in path integration (C74), while MSTd and dlPFC form a functional subnetwork for vector coding of spatial goals (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 and C74-C75 present interpretive frameworks that extend beyond the current data by incorporating hippocampal circuits not recorded in this study. While the interpretations are grounded in cited prior work (C68-C69 cite Strange et al., 2014; C70-C71 cite Gothard et al., 1996 and Kanitscheider & Fiete, 2017), they require additional experimental validation. The proposed functional organization is plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study demonstrates three broad principles of neural computation during closed action-perception loops: (i) mixed yet patterned single cell selectivity (C78), (ii) coding of latent variables even in traditionally sensory areas (C79), and (iii) differential coarse and fine-grain connectivity between task-relevant areas (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 appropriately synthesize the main findings into general principles. Each principle is well-supported by multiple results: mixed selectivity by clustering analyses (C28-C29), latent variable coding in MSTd by tuning analyses (C13-C18), and differential connectivity by LFP-spike coupling and unit-to-unit coupling analyses (C30-C36). The principles are stated cautiously as 'may be broad principles.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Undershooting targets is optimal given that uncertainty over position scales supra-linearly with time and distance traveled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by citation to prior work (Lakshminarasimhan et al., 2018) that presumably demonstrates this optimality principle. The observed undershooting behavior in the current study (Figure 1D) is consistent with this principle, though the current manuscript does not independently validate the optimality claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Closed-loop tasks preserve natural timing between action and perception. Severing the action-perception loop disrupts natural timing between sensory events and neural dynamics (C47). Neural excitability in primary visual cortex (C48) and anterior thalamus (C49) is enhanced at saccade offset, likely mediated by phase-reset of neural oscillations (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide conceptual motivation for the experimental approach, supported by multiple citations to prior work. While these claims describe prior findings rather than new results, they appropriately contextualize why closed-loop tasks are important for understanding natural neural computation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MSTd, area 7a, and dlPFC form reciprocally interconnected areas with established roles in navigation-relevant computations. Redundancy has been observed between parietal and frontal cortices (C51), which is an adaptive feature (C52). These areas form reciprocally interconnected pathways (C53) involved in optic flow processing, sensorimotor transformations, and working memory (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 accurately summarize prior anatomical and functional work with appropriate citations. These claims provide essential background for understanding why these particular brain areas were selected for recording and how the current findings relate to established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The study acknowledges limitations including potential differences between virtual and real-world navigation (C66) and uncertainty about whether eye movements reflect intended head movements (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 appropriately acknowledge limitations of the experimental approach. C66 is supported by citation to prior work (Aghajan et al., 2015), while C67 is explicitly labeled as speculative with citations to rodent studies. These limitations are important for interpreting the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The functional connection between MSTd and dlPFC must be subserved by anatomical structure, possibly through a third area not recorded in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 provides an important caveat about the interpretation of functional connectivity. The authors appropriately acknowledge that functional coupling does not imply direct anatomical connections and that the observed MSTd-dlPFC coupling likely involves intermediate structures. This logical inference is sound and important for proper interpretation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Database searches identified candidate plant OBPs through two approaches: (a) direct search for proteins annotated as 'odorant-binding' yielded 5 sequences, but only one showed statistically relevant similarity to known plant proteins (FT, T1, heading date 3A/3B); (b) comparison with 432 animal OBPs identified 5 animal protein families with sequence similarity to plant proteins (20-45% identity, 60-96% coverage). Notably, previously reported plant OBPs (COI1-JAZ, SABP2, TPL) were not retrieved by similarity searches, suggesting plant OBPs may differ structurally from animal OBPs. Nine putative plant OBPs with available 3D structures were selected for docking simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 describe a systematic bioinformatics approach with clear methodology and criteria (E-values, identity ranges, coverage thresholds in C39). The negative result (C45) that known plant OBPs were not retrieved is appropriately interpreted (C46) as evidence for structural divergence rather than methodological failure. The identification of inflorescence-related proteins (C40-C44) is well-documented with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C95"
+    ],
+    "result": "Molecular docking simulations show that monoterpenes (\u03b1-pinene, \u03b2-myrcene, limonene) bind several putative plant OBPs with binding energies comparable to or better than reference protein-ligand complexes. \u03b1-pinene binds SABP2 (-6.03 kcal/mol, Ki=37 \u03bcM) and complete JA receptor (-5.92 kcal/mol, Ki=38.55 \u03bcM) more strongly than the reference cytochrome P450 2B6 complex (-5.42 kcal/mol, Ki=103 \u03bcM). Similar patterns were observed for \u03b2-myrcene and limonene, with SABP2 consistently showing the strongest binding among candidate OBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the docking simulations provide quantitative binding energy values (C48-C54, C95), several concerns limit confidence: (1) the limonene reference uses a modified form (limonene 1,2 epoxide), acknowledged as less reliable; (2) no statistical analysis or error estimates are provided for the docking scores; (3) the comparison relies heavily on a single reference complex per ligand; (4) the very high Ki values (C92-C94) compared to animal OBPs raise questions about biological relevance, though this is acknowledged and cited as consistent with other plant studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C7",
+      "C8"
+    ],
+    "result": "\u03b2-caryophyllene showed the lowest binding energy values among all tested VOCs, while isoprene showed the highest (weakest binding). Monoterpenes are efficiently bound by putative plant OBPs, whereas isoprene does not bind strongly to any investigated OBP, suggesting isoprene may not have an info-chemical role in plant-plant communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 present clear comparative data from Table 2. The interpretation that isoprene lacks strong OBP binding (C60-C61, C7) is supported by consistently high (unfavorable) binding energies across all tested proteins. The inference about isoprene's lack of info-chemical role (C8) is appropriately qualified as speculative and is supported by ecological observations cited in C62-C63.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Isoprene, the main constitutively emitted VOC not induced by stress, shows poor binding to all tested OBPs, suggesting that constitutive VOCs may generally not be bound by OBPs, unlike stress-induced VOCs. However, isoprene has documented roles in modifying membrane properties and influencing plant traits through mechanisms that may not require OBP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The generalization from isoprene to all constitutive VOCs (C68) is explicitly acknowledged as speculative ('may be tempting to generalize'). While the docking data for isoprene is clear (C56, C61), extrapolating to all constitutive VOCs based on a single compound is premature. The alternative mechanisms for isoprene function (C64-C66) are well-cited but do not directly validate the OBP-binding results. The ecological context (C62-C63) supports the interpretation but does not constitute direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C9",
+      "C72"
+    ],
+    "result": "Monoterpenes bind the same plant proteins (particularly SABP2) that bind other stress-induced VOCs, suggesting plant OBPs have broad ligand specificity and can bind multiple different VOCs, similar to animal OBPs. SABP2, which binds MeSA, also shows strong binding to all three tested monoterpenes, while heading date 3A, tfl1, GA receptor, and FT may bind monoterpenes more specifically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C69-C72 are well-supported by the docking data showing SABP2 binds multiple ligands (C70, Table 2) and by comparison with animal OBPs (C72, citing Ramoni et al., 2007). The observation that the same binding site accommodates different ligands (C73) provides structural support. The qualification 'perhaps more specifically' in C71 appropriately acknowledges uncertainty. The conclusion about broad specificity (C9, C72) follows logically from the multi-ligand binding patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Multiple VOC ligands (\u03b1-pinene, limonene, \u03b2-myrcene) bind at the same site in SABP2 as the experimentally determined salicylic acid binding site. The binding sites of candidate plant OBPs are characterized by aromatic side chains (phenylalanines, tyrosines, tryptophans), with SABP2 containing 2 Phe, 1 Tyr, 1 Trp; GA receptor: 2 Phe, 4 Tyr; JA receptor: 1 Phe, 1 Tyr, 1 Trp; FT receptor: 2 Phe, 1 Trp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79, C96-C98 are directly supported by visual evidence in Figure 1 and structural analysis of binding sites. The observation that different ligands occupy the same binding site (C73, C96-C98) is clearly demonstrated through spatial orientation comparisons in Figure 1A-D. The enumeration of aromatic residues (C74-C79) provides specific structural details that can be verified from the protein structures. This represents solid computational structural analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The presence of aromatic side chains in plant OBP binding sites is reminiscent of animal OBPs (bovine: 5 Phe, 1 Tyr; Drosophila: 4 Phe, 1 Trp; porcine: 2 Phe), suggesting a conserved hydrophobic environment for odorant accommodation is needed across biomes. Analysis of \u03b2-caryophyllene complexes suggests larger ligands may interact with additional aromatic or hydrophobic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 make a valid comparative structural analysis between plant and animal OBPs, supported by citation (Bianchet et al., 1996) and known structural information (C81-C83). The inference about functional conservation (C84) is reasonable given the structural conservation of aromatic residues across kingdoms. The observation about larger ligands (C85) is supported by analysis of Figure 1\u2014figure supplement 1. This represents sound structure-function reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C57",
+      "C58"
+    ],
+    "result": "Plant OBPs may exist and be structurally and functionally similar to animal OBPs, capable of binding different VOCs (including MEP pathway products) in the same binding site using the same amino acid sequences, though with both common and different features compared to animal OBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88, C57-C58 represent the main conclusions but are appropriately qualified with 'may' throughout. The evidence is entirely computational (docking simulations) without experimental validation. The authors acknowledge this limitation and call for functional validation (C89-C90). While the computational evidence is systematic and the structural comparisons are sound, the lack of experimental binding data, functional assays, or validation in plant systems means these remain hypotheses rather than confirmed results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The predicted Ki values from docking simulations are very high compared to animal OBPs but are consistent with other plant Ki studies, suggesting plants may sense VOCs only at higher concentrations than animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 appropriately acknowledge a significant limitation of the results (high Ki values) but contextualize it with citation to Nagashima et al., 2019 showing consistency with other plant studies (C93). This transparent reporting of a potential weakness, along with a plausible biological interpretation (C94), strengthens rather than weakens the overall assessment. The acknowledgment that Ki values should be interpreted as 'indicative' is appropriate for docking-derived values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "VOCs mediate plant-plant communication and prime defensive responses in receiving plants, but the receptors by which plants sense VOCs from neighboring plants are largely unknown. Plants likely have odorant-binding proteins (OBPs) similar to animals, and a few OBPs are known to bind stress-induced plant VOCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C16 establish the background and motivation for the study, all supported by appropriate citations to existing literature (Ninkovic et al., 2021; Dicke and Loreto, 2010; Vickers et al., 2009; Baldwin et al., 2002; Erb, 2019; Ninkovic et al., 2019; Zuo et al., 2019; Frank et al., 2021). The characterization of the knowledge gap (C2, C16) appropriately frames the research question. These are accurate representations of the field's state of knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Three cases of putative plant OBPs have been previously reported: (1) COI1-JAZ receptor for methyl-jasmonate; (2) SABP2 that binds and converts MeSA to SA; (3) TPL that binds \u03b2-caryophyllene. However, these three cases need confirmation, and only \u03b2-caryophyllene binding by TPL has been tested with emitting and receiving plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 accurately summarize prior work on plant OBPs with appropriate citations (Sheard et al., 2010; Cheong and Choi, 2003; Park et al., 2007; Nagashima et al., 2019). The critical assessment that these cases 'need confirmation' (C29) is a reasonable scientific position given the limited experimental validation, particularly for TPL (C28). This provides important context for why additional computational screening is warranted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C91",
+      "C89",
+      "C90"
+    ],
+    "result": "Plant OBPs may play an important role in allowing plants to eavesdrop on neighboring plants' messages, triggering defensive responses. Retrieval and description of plant OBPs may be an important step to unveil plant-plant communication mechanisms. Future validation could use fluorescent VOCs or mutant/transgenic plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C91 are appropriately speculative statements about potential significance, clearly marked with 'may.' Claims C89-C90 provide reasonable suggestions for experimental validation. These represent appropriate discussion of implications and future directions rather than overstatement of the computational results. The speculative nature is transparent and the suggested validation approaches are scientifically sound.",
+    "result_type": "MINOR"
+  }
+]

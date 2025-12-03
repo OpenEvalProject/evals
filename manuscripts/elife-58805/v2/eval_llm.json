@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Three N-glycosylation mutants (IMXylT1A, IMMan1A, and IMMan1AxIMXylT1A) were characterized with distinct N-glycan compositions but normal flagellar length. IMXylT1A lacks core xylose and has reduced N-glycan length; IMMan1A lacks 6O-methylation with slightly greater N-glycan length; the double mutant lacks 6O-methylation but has WT-like length with core xylose and fucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe the N-glycan compositions of the mutants based on prior characterization (Schulze et al., 2018) and Figure 1A. Claim C47 shows flagellar length is unaffected (Figure 1\u2014figure supplement 1). The mutant characterization is well-documented and provides the foundation for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FMG-1B and FAP113 are correctly targeted to flagella in all N-glycosylation mutants despite altered N-glycan patterns. Immunoblotting and immunostaining with glycan-specific and peptide-specific antibodies show that while N-glycan epitopes are altered or reduced in mutants, the protein backbone localization remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C60 are supported by multiple complementary techniques: immunoblotting (Figure 1B), mass spectrometry (Figures 1C-D), and immunostaining (Figure 1E). The use of both glycan-specific and peptide-specific antibodies provides strong evidence that protein localization is independent of N-glycan maturation. This is a critical control showing that adhesion defects are not due to mistargeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Proteomic analysis revealed no proteins consistently and significantly changed in abundance in flagella of N-glycosylation mutants compared to WT-Ins, indicating flagellar assembly is not considerably altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by label-free mass spectrometry data (Figure 1\u2014figure supplement 7). The lack of consistent proteomic changes across mutants strengthens the conclusion that observed adhesion defects are specifically due to altered N-glycan structures rather than global changes in flagellar composition or assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C4",
+      "C5"
+    ],
+    "result": "Microbead binding and transport are impaired in N-glycosylation mutants. The percentage of flagella with beads bound decreased from 52% in WT-Ins to 46% (IMMan1A), 33% (IMXylT1A), and 27% (double mutant). Among attached beads, movement decreased from 37% (WT-Ins) to 22-29% in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are supported by quantitative microbead binding and transport assays (Figure 2). The progressive decrease in both binding and transport correlates with the severity of N-glycan alterations, with the double mutant showing the strongest effect. Statistical significance is reported (Figure 2\u2014source data 1). This provides functional evidence that N-glycan composition affects flagellar surface interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C3"
+    ],
+    "result": "AFM measurements show that adhesion forces are significantly reduced in N-glycosylation mutants compared to WT-Ins. The double mutant showed the strongest effect with adhesion force reduced from 8 nN to 1 nN and average energy reduced from 4 to 0.5 J nm\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by AFM force measurements (Figures 3B-D) with appropriate statistical analysis. The measurements were performed with ciliobrevin D to inhibit gliding, ensuring adhesion forces were measured independently of dynein-1b activity. Three biological replicates with minimum 5 cells per replicate provide adequate statistical power. The dose-dependent effect across mutants strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C90"
+    ],
+    "result": "Micropipette force measurements on an independent CRISPR/Cas9-generated XylT1A mutant (CRISPRXylT1A_1) confirmed reduced adhesion forces compared to WT-SAG under both blue and red light conditions, with and without ciliobrevin D. N-glycan patterns of IMXylT1A and CRISPRXylT1A were comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C90 are supported by micropipette force measurements (Figure 4) using an independent mutant in a different genetic background. This orthogonal validation strengthens the conclusion that N-glycan composition affects adhesion. The light-dependent adhesion response is preserved in both WT and mutant, indicating N-glycosylation does not affect photoreceptor function. Statistical analysis using Kolmogorov-Smirnov test is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ciliobrevin D treatment significantly increased adhesion forces in both WT and N-glycosylation mutants, suggesting that active dynein-1b reduces surface adhesion forces. In the absence of ciliobrevin D, the double mutant still showed significantly lower adhesion than WT-Ins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by AFM measurements with and without ciliobrevin D (Figures 4, 5A). The observation that dynein-1b inhibition increases adhesion forces is consistent across multiple experiments and strains. However, claim C81 is somewhat speculative as it proposes a mechanism (destabilization of protein clusters) that is not directly tested. The inference is reasonable but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C6",
+      "C8",
+      "C88"
+    ],
+    "result": "Gliding velocity and IFT velocities (both anterograde and retrograde) were not significantly affected by altered N-glycosylation when comparing WT-Ins and the double mutant, indicating no significant impact of altered N-glycan maturation on IFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by TIRF microscopy measurements (Figure 5C). The lack of effect on IFT and gliding despite reduced adhesion forces is a key finding that decouples adhesion from IFT function. The measurements were performed on adherent cells without ciliobrevin D. Three biological replicates with 10 cells per replicate (300 IFT events per strain) provide adequate statistical power. Statistical tests (t-test and Mann-Whitney U) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Using a temperature-sensitive dynein-1b mutant crossed with the double N-glycosylation mutant, AFM measurements at restrictive temperature (dynein-1b depleted) showed significantly elevated adhesion force (1.64 nN) compared to control (0.48 nN), suggesting dynein-1b action reduces adhesion forces by destabilizing surface-adhered protein clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is supported by AFM measurements on the triple mutant (Figure 5\u2014figure supplement 1). However, the interpretation in claim C86 is speculative. While the data show that dynein-1b depletion increases adhesion, the proposed mechanism (destabilization of protein clusters) is not directly demonstrated. The control using NaPPi (which shortens flagella without affecting dynein-1b) is appropriate, but the measurements were performed at a specific flagellar length (~6.5 \u03bcm), which may introduce confounding factors. Additional experiments would be needed to confirm the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C94",
+      "C10",
+      "C11",
+      "C91"
+    ],
+    "result": "The maturation of N-glycans has an impact on flagella-mediated cell adhesion in C. reinhardtii. Proper N-glycosylation of flagellar proteins is crucial for adhering cells to surfaces, with N-glycans mediating surface adhesion via direct surface contact rather than through effects on protein targeting or IFT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C94, C10, C11, and C91 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: microbead assays (Figure 2), AFM measurements (Figure 3), micropipette measurements (Figure 4), and TIRF microscopy (Figure 5). The conclusion that N-glycans mediate direct surface contact is inferred from the observation that adhesion is affected while protein localization and IFT are not. This inference is logical but somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C7",
+      "C9"
+    ],
+    "result": "Flagellar assembly, IFT, and FMG-1B transport into flagella were not affected by altered N-glycosylation, implicating no role of N-glycosylation in these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C7, and C9 are supported by multiple lines of evidence: flagellar length measurements (Figure 1\u2014figure supplement 1), IFT velocity measurements (Figure 5C), and proteomic analysis showing correct targeting of FMG-1B and FAP113 (Figures 1C-D). This negative result is important for establishing that the observed adhesion defects are specific to surface interactions rather than general flagellar dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Altered N-glycosylation diminished adhesion forces but did not affect IFT, strongly suggesting that adhesion to surfaces and IFT are not necessarily coupled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by the combined observations from Figures 3-5 showing reduced adhesion forces but unchanged IFT velocities. This challenges the prevailing model that adhesion and IFT are tightly coupled and suggests they can function independently. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "N-glycosylation does not significantly impact light perception, as both WT-SAG and CRISPRXylT1A showed significantly stronger adhesion under blue light than red light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by micropipette measurements (Figure 4) showing that both WT and mutant respond similarly to different wavelengths of light. This indicates that the photoreceptor pathway governing light-dependent adhesion is independent of N-glycan maturation. The inference is reasonable and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The remaining adhesion force in N-glycan mutants, although diminished, is still sufficient for gliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by the observation that gliding is not significantly affected in mutants (Figure 5C) despite reduced adhesion forces (Figures 3-4). This suggests a threshold model where a minimum adhesion force is required for gliding, and mutants retain sufficient force above this threshold. The inference is reasonable and consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Adhesion might result in photoprotection via biofilm formation, which would enable mutual cell shading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is speculative and not directly tested in this study. While the authors cite relevant literature (Kreis et al., 2018; Petroutsos et al., 2016), the connection between N-glycan-mediated adhesion and photoprotection is hypothetical. This represents a potential direction for future research but is not supported by data in the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background knowledge about N-glycosylation, flagellar biology, and C. reinhardtii is established through citations to prior literature, including the role of N-glycosylated proteins in mating and adhesion, the structure and function of FMG-1B, IFT mechanisms, and light-dependent adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C42 represent established knowledge from prior literature, appropriately cited throughout the introduction. These claims provide necessary context for the current study and are well-documented in the cited references. The authors accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

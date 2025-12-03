@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "PTCH1 is a 12-pass transmembrane receptor for Hedgehog ligands that inhibits Smoothened (SMO) to keep Hedgehog signaling in the off state. Hedgehog ligands like SHH bind and inactivate PTCH1, allowing SMO to activate and transduce the signal. Inactivating mutations in PTCH1 cause birth defects and cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe well-established background knowledge about the Hedgehog signaling pathway, supported by appropriate citations to prior work and reviews. These claims provide essential context for the study but do not represent novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work established that PTCH1 has sequence similarity to the cholesterol transporter NPC1, can enhance cholesterol efflux from cells, and that cholesterol and oxysterols directly bind and activate SMO. A previous CRISPR screen by the authors identified cholesterol biosynthesis genes as positive regulators of Hedgehog signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 summarize prior work that motivated the current study, all supported by appropriate citations. These claims establish the rationale for investigating PTCH1's role in cholesterol transport but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Plasma membrane cholesterol segregates into accessible and inaccessible pools, with the major physicochemical difference being chemical activity. Prior work by the authors showed that manipulating accessible cholesterol (by depleting sphingomyelin or using ALOD4) predictably altered Hedgehog signaling, and that PTCH1 inactivation by SHH increases accessible cholesterol in the outer leaflet of ciliary membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 describe the accessible cholesterol model and prior findings from the authors' previous work, all supported by appropriate citations. These claims establish the conceptual framework for the current study but represent prior rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "PTCH1 expression increases the binding of two different cholesterol sensors (TdTomato-PFOD4H and GFP-GRAM1b) to the inner leaflet of the plasma membrane, and this effect can be blocked by SHH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by experimental data in Figures 1B and 1C showing statistically significant increases in probe binding with PTCH1 expression that are reversed by SHH. The use of two independent probes strengthens the conclusion. However, this finding appears to contradict the authors' main conclusion that PTCH1 depletes outer leaflet cholesterol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "PTCH1 activity decreases outer leaflet cholesterol accessibility as measured by mNeon-ALOD4 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by experimental data in Figure 1\u2014figure supplement 1 showing small but consistent decreases in outer leaflet cholesterol with PTCH1 activity. This finding is more consistent with the authors' overall model but the effect size is noted as small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Methyl-\u03b2-cyclodextrin (M\u03b2CD) rapidly extracts cholesterol from membranes, with the rate constant proportional to cholesterol accessibility. M\u03b2CD-catalyzed cholesterol efflux follows biexponential kinetics with a fast pool (t1/2 <1 min) representing accessible cholesterol that can be expanded by depleting sphingomyelin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe the properties of M\u03b2CD as a tool for measuring accessible cholesterol, all supported by appropriate citations to prior work. These claims establish the methodological foundation for the kinetic assay developed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors developed a kinetic assay using TIRFM to measure accessible cholesterol by monitoring M\u03b2CD-induced detachment of TdTomato-PFOD4H from the inner leaflet. The assay shows rapid kinetics (t1/2 <1 min), can be blocked by ALOD4, and is accelerated by sphingomyelin depletion with myriocin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the development and validation of the kinetic assay, supported by experimental data in Figure 2. The assay shows expected behavior with positive and negative controls (ALOD4 and myriocin), demonstrating that it measures accessible cholesterol. This represents a novel methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PTCH1 expression prevents M\u03b2CD-induced cholesterol extraction, increasing the M\u03b2CD concentration required for half-maximum detachment from ~170 \u03bcM to ~700 \u03bcM. This effect can be reversed by SHH in a dose-dependent manner. PTCH1-\u0394L2 also antagonizes cholesterol extraction but cannot be reversed by SHH, and appears more effective than wild-type PTCH1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by extensive experimental data in Figure 3 showing dose-response curves and SHH titrations. The use of PTCH1-\u0394L2 as a control that cannot bind SHH strengthens the conclusion that the effect is specific to PTCH1 function. This is a core finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "When accessible cholesterol is expanded by sphingomyelin depletion, PTCH1 cannot completely prevent cholesterol extraction by M\u03b2CD, though it still reduces both the rate and total amount extracted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by experimental data in Figure 4B showing that myriocin treatment prevents PTCH1 from fully blocking M\u03b2CD extraction. This finding is consistent with the model that PTCH1 acts on accessible cholesterol and provides an explanation for prior observations about sphingomyelin depletion potentiating Hedgehog signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PTCH1 has a triad of acidic residues (D513, D514, E1095) implicated in coordinating a cation, with structural evidence showing extra cryo-EM density at this site. Mutations in D513 and D514 are linked to Gorlin's syndrome and abrogate PTCH1's ability to reduce outer leaflet accessible cholesterol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by citations to prior structural and functional studies and new experimental data in Figure 5 showing that D513 and D514 mutants lose the ability to reduce cholesterol accessibility. This establishes that the ion-binding site is required for PTCH1's cholesterol transport activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PTCH1 requires the integrity of the transmembrane K+ gradient to reduce cholesterol accessibility. Treatment with monensin or nigericin blocks PTCH1 activity, as does high extracellular K+. PTCH1 functions normally when Na+ is replaced with NMDG+ or choline+, showing it does not depend on Na+ permeation. RbCl and CsCl also inhibit PTCH1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by extensive experimental data in Figure 6 testing various ion gradients and ionophores. The systematic manipulation of different ion gradients provides strong evidence that PTCH1 specifically requires the K+ gradient. This is a major mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "PTCH1 depletes accessible cholesterol from the outer leaflet of the plasma membrane, and SHH inactivates PTCH1 to elevate outer leaflet cholesterol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 summarize the main findings of the study, supported by the collective experimental evidence from multiple assays. However, there is some tension with the inner leaflet measurements (C16-C18) that show increased cholesterol binding with PTCH1 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors propose that PTCH1 uses potassium efflux to drive cholesterol movement from the outer to the inner leaflet of the plasma membrane, similar to the directionality used by the structurally related NPC1. This model is based on PTCH1-\u0394L2 being able to suppress SMO activity despite lacking the putative transport tunnel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52 represent a proposed mechanistic model rather than directly demonstrated findings. While C50 is supported by prior work showing PTCH1-\u0394L2 can suppress signaling, the proposed mechanism of K+-driven cholesterol flipping (C51) is speculative and not directly tested. The directionality claim (C52) is inferred from structural similarity to NPC1 but not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The outer leaflet has exclusive sphingomyelin and saturated phospholipids that suppress cholesterol accessibility, while the inner leaflet has higher unsaturation and lower packing that increases accessibility. TdTomato-PFOD4H readily binds the inner leaflet in unperturbed cells, and prior work showed PTCH1 inactivation increases outer leaflet labeling in primary cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe membrane lipid asymmetry and cholesterol distribution, supported by appropriate citations and experimental observations. These claims provide important context for interpreting the results but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The transmembrane potassium gradient is required for PTCH1 function in cholesterol transport and SMO inhibition, though direct K+ permeation through PTCH1 has not been demonstrated. The K+ gradient is predicted to store less energy than the Na+ gradient because the resting membrane potential is closest to the K+ equilibrium potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the experimental results in this study and prior work, though the authors acknowledge the limitation that direct K+ permeation has not been shown. Claim C59 is based on established biophysical principles. These claims highlight an important unresolved question about the energetics of PTCH1 transport.",
+    "result_type": "MAJOR"
+  }
+]

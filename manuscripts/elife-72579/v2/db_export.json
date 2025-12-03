@@ -1,0 +1,1563 @@
+{
+  "submission": {
+    "id": "0a6d6440-0d93-46e0-9b67-4bf7f78de2a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:05:18.470567Z",
+    "updated_at": "2025-12-03T10:05:18.470567Z"
+  },
+  "content": [
+    {
+      "id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "submission_id": "0a6d6440-0d93-46e0-9b67-4bf7f78de2a5",
+      "content_type": "manuscript",
+      "content_text": "# Stable flow-induced expression of KLK10 inhibits endothelial inflammation and atherosclerosis\n\n## Authors\n\n- Darian Williams<sup>1</sup> ([ORCID: 0000-0002-4572-3056](https://orcid.org/0000-0002-4572-3056))\n- Marwa Mahmoud<sup>1</sup>\n- Renfa Liu<sup>1</sup>\n- Aitor Andueza<sup>1</sup>\n- Sandeep Kumar<sup>1</sup>\n- Dong-Won Kang<sup>1</sup>\n- Jiahui Zhang<sup>1</sup>\n- Ian Tamargo<sup>2</sup>\n- Nicolas Villa-Roel<sup>1</sup> ([ORCID: 0000-0002-2981-9330](https://orcid.org/0000-0002-2981-9330))\n- Kyung-In Baek<sup>1</sup>\n- Hwakyoung Lee<sup>4</sup>\n- Yongjin An<sup>4</sup>\n- Leran Zhang<sup>5</sup>\n- Edward W Tate<sup>5</sup>\n- Pritha Bagchi<sup>6</sup>\n- Jan Pohl<sup>7</sup>\n- Laurent O Mosnier<sup>8</sup>\n- Eleftherios P Diamandis<sup>9</sup> ([ORCID: 0000-0002-1589-820X](https://orcid.org/0000-0002-1589-820X))\n- Koichiro Mihara<sup>10</sup>\n- Morley D Hollenberg<sup>10</sup>\n- Zhifei Dai<sup>3</sup>\n- Hanjoong Jo<sup>1</sup> ([ORCID: 0000-0003-1833-372X](https://orcid.org/0000-0003-1833-372X)) \u2020\n\n### Affiliations\n\n1. Coulter Department of Biomedical Engineering, Emory University and Georgia Institute of Technology Atlanta United States\n2. Molecular and Systems Pharmacology Program, Emory University Atlanta United States\n3. Department of Biomedical Engineering, Peking University Beijing China\n4. Celltrion Incheon Republic of Korea\n5. Department of Chemistry, Imperial College London London United Kingdom\n6. Emory Integrated Proteomics Core, Emory University Atlanta United States\n7. Biotechnology Core Facility Branch, Centers for Disease Control and Prevention Atlanta United States\n8. Department of Molecular Medicine, Scripps Research Institute San Diego United States\n9. Department of Pathology and Laboratory Medicine, Mount Sinai Hospital Toronto Canada\n10. Department of Physiology and Pharmacology, University of Calgary Calgary Canada\n11. Department of Medicine, Emory University Atlanta United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAtherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow), while regions exposed to stable flow (s-flow) are protected. The proatherogenic and atheroprotective effects of d-flow and s-flow are mediated in part by the global changes in endothelial cell (EC) gene expression, which regulates endothelial dysfunction, inflammation, and atherosclerosis. Previously, we identified kallikrein-related peptidase 10 (Klk10, a secreted serine protease) as a flow-sensitive gene in mouse arterial ECs, but its role in endothelial biology and atherosclerosis was unknown. Here, we show that KLK10 is upregulated under s-flow conditions and downregulated under d-flow conditions using in vivo mouse models and in vitro studies with cultured ECs. Single-cell RNA sequencing (scRNAseq) and scATAC sequencing (scATACseq) study using the partial carotid ligation mouse model showed flow-regulated Klk10 expression at the epigenomic and transcription levels. Functionally, KLK10 protected against d-flow-induced permeability dysfunction and inflammation in human artery ECs, as determined by NF\u03baB activation, expression of vascular cell adhesion molecule 1 and intracellular adhesion molecule 1, and monocyte adhesion. Furthermore, treatment of mice in vivo with rKLK10 decreased arterial endothelial inflammation in d-flow regions. Additionally, rKLK10 injection or ultrasound-mediated transfection of Klk10-expressing plasmids inhibited atherosclerosis in Apoe\u2212/\u2212 mice. Moreover, KLK10 expression was significantly reduced in human coronary arteries with advanced atherosclerotic plaques compared to those with less severe plaques. KLK10 is a flow-sensitive endothelial protein that serves as an anti-inflammatory, barrier-protective, and anti-atherogenic factor.\n\n## Introduction\n\nAtherosclerosis is an inflammatory disease that preferentially occurs in branched or curved arterial regions exposed to disturbed flow (d-flow), while areas of stable flow (s-flow) are protected from atherosclerosis (Chiu and Chien, 2011; Davies, 1995; Kwak et al., 2014; Tarbell et al., 2014). Endothelial cells (ECs) are equipped with several mechanosensors located at the luminal and abluminal surface, cell\u2013cell junction, and cytoskeleton, which detect fluid shear stress and trigger cascades of signaling pathways and cellular responses (Kwak et al., 2014; Tarbell et al., 2014; Mack et al., 2017; Tzima et al., 2005; Li et al., 2015; Chachisvilis et al., 2006; Florian et al., 2003; Wang et al., 2016). D-flow induces endothelial dysfunction and atherosclerosis in large part by regulating flow-sensitive coding and noncoding genes, as well as epigenetic modifiers (Davies, 1995; Kumar et al., 2014; Kumar et al., 2019; Dunn et al., 2014). Using the partial carotid ligation (PCL) mouse model of atherosclerosis and transcriptomic studies, we identified hundreds of flow-sensitive genes in ECs that change by d-flow in the left carotid artery (LCA) compared to the s-flow in the right carotid artery (RCA) (Nam et al., 2009; Ni et al., 2010). Among the flow-sensitive genes, kallikrein-related peptidase 10 (Klk10) was identified as one of the most flow sensitive; with high expression under s-flow and low expression under d-flow conditions (Ni et al., 2010). However, its role in endothelial function and atherosclerosis was not known.\n\nKLK10 was initially identified as a normal epithelial cell-specific 1 (NES1) (Diamandis et al., 2000) and is a member of the kallikrein-related peptidase \u2018KLK\u2019 family of 15 secreted serine proteases, which are found as a gene cluster on human chromosome (19q13.4) (Yousef et al., 1999). The tissue KLKs are distinct from plasma kallikrein, which is encoded on a separate chromosome (4q35) (Yousef and Diamandis, 2003). Despite the chromosomal clustering of the KLKs, each enzyme has a unique tissue expression pattern with different cellular functions. Typically, the KLKs are produced as inactive full-length prepropeptides, which are then secreted and activated by a complex process to yield active extracellular enzyme (Yousef and Diamandis, 2003). KLKs are involved in a wide variety of processes ranging from skin desquamation to tooth development, hypertension, and cancer (Madeddu et al., 2007; Clements et al., 2004; Yousef and Diamandis, 2001; Pampalakis and Sotiropoulou, 2007; Margolius, 1998; Campbell, 2001).\n\nKLK10 was initially discovered as a potential tumor suppressor with its expression downregulated in breast, prostate, testicular, and lung cancer (Goyal et al., 1998; Liu et al., 1996; Hu et al., 2015; Luo et al., 2001; Zhang et al., 2010). Further studies, however, showed a more complex story as KLK10 is overexpressed in ovarian, pancreatic, and uterine cancer (Luo et al., 2003; Yousef et al., 2005; Dorn et al., 2013; Tailor et al., 2018; Sotiropoulou et al., 2009; Bharaj et al., 2002). However, the role of KLK10 for endothelial function and atherosclerosis is not known.\n\nHere, we tested the hypothesis that KLK10 mediates the anti-atherogenic effects of s-flow, while the loss of KLK10 under d-flow conditions leads to proatherogenic effects.\n\n## Results\n\n### KLK10 expression is increased by s-flow and decreased by d-flow in ECs in vitro and in vivo\n\nWe first validated our previous mouse gene array data at the mRNA and protein levels by additional quantitative real-time polymerase chain reaction (qPCR), immunostaining, western blots, and ELISA in ECs in vivo and in vitro. To validate the flow-dependent regulation of KLK10 expression in vivo, mouse PCL surgery was performed to induce d-flow in the LCA while maintaining s-flow in RCA (Figure 1a). Consistent with our previous data (Nam et al., 2009; Ni et al., 2010), KLK10 protein (Figure 1b, c) and mRNA expression (Figure 1d) were significantly higher in ECs in the s-flow RCA compared to the d-flow LCA. Interestingly, KLK10 protein was also found in the adventitia and occasionally observed in the subendothelial layer as well (Figure 1b). In addition, KLK10 protein expression was reduced in the lesser curvature (LC; the atheroprone aortic arch region that is naturally and chronically exposed to d-flow) compared to the greater curvature region (GC; the atheroprotected aortic arch region that is naturally and chronically exposed to s-flow) as shown by en face immunostaining (Figure 1e, f).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig1-v2.jpg)\n\n**Figure 1.:** (a) Depiction of the partial carotid ligation (PCL) surgery and flow-sensitive regions in the aortic arch: right carotid artery (RCA; s-flow), left carotid artery (LCA; d-flow), greater curvature (GC: s-flow), and lesser curvature (LC; d-flow). Two days following the PCL of C57BL/6J mice, the RCA and LCA were collected for frozen section imaging (b, c) and (d) endothelial-enriched RNA preparation. (b) Confocal images of immunostaining with anti-KLK10 or anti-CD31 antibodies (red) and counterstained with 4',6-diamidino-2-phenylindole (DAPI, blue) are shown. Scale bar = 20 \u03bcm. Arrows indicate endothelial cells and L is the lumen. (c) Quantification of endothelial KLK10 fluorescence intensity expressed as fold-change normalized to the RCA. N = 4. (d) Klk10 mRNA was measured in endothelial-enriched RNA from the carotid arteries by quantitative real-time polymerase chain reaction (qPCR). Data are expressed as fold-change normalized to 18s internal control. N = 3\u20134. (e) Confocal images of en face coimmunostaining of the LC and GC with anti-KLK10 (green) and anti-VE-Cadherin (red) antibody are shown counterstained with DAPI (blue). Scale bar = 10 \u03bcm. (f) Quantification of endothelial KLK10 fluorescence intensity expressed as fold-change normalized to the GC. N = 5. (g\u2013j) Human artery endothelial cells (HAECs) subjected to 24 hr of unidirectional laminar shear (LS; 15 dynes/cm2) or oscillatory shear (OS; \u00b1 5 dynes/cm2) were used to measure expression of KLK10 mRNA by qPCR (g), KLK10 protein in cell lysates by western blot (h, i), and KLK10 protein secreted to the conditioned media by ELISA (j). N = 4\u20136. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using paired t-test (Figure 1\u2014source data 1). (k) Single-cell RNAseq analysis of Klk10 gene transcripts and (l) single-cell ATACseq analysis of Klk10 chromatin accessibility in eight endothelial cell clusters (E1\u2013E8), smooth muscle cells (SMCs), fibroblasts (Fibro), 4 monocytes/macrophages clusters (Mo1\u20134), dendritic cells (DCs), and T cells (T) in the mouse carotid arteries following 2 days or 2 weeks of the PCL surgery as we recently reported (Andueza et al., 2020). The published datasets (Andueza et al., 2020) were reanalyzed here for the Klk10 gene. E1\u2013E4 clusters represent ECs exposed to s-flow conditions in the RCA. E5 and E7 clusters represent ECs exposed to acute (2 days) d-flow in the LCA. E6 and E8 clusters represent ECs exposed to chronic (2 weeks) d-flow in the LCA. TSS indicates transcription start site.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Violin plots show single-cell expression of (a) Klk10 and (b) CD31 (Pecam1) gene transcripts in eight endothelial cell clusters (E1\u2013E8), smooth muscle cells (SMCs), fibroblasts (Fibro), 4 monocytes/macrophages clusters (Mo1\u20134), dendritic cells (DCs), and T cells (T) in the mouse carotid arteries following 2 days or 2 weeks of the PCL surgery as we recently reported (Andueza et al., 2020). The published scRNAseq data (Andueza et al., 2020) were reanalyzed here for Klk10 and Pecam1 genes. E1\u2013E4 clusters represent ECs exposed to s-flow conditions in the right carotid artery (RCA). E5 and E7 clusters represent ECs exposed to acute (2 days) d-flow in the LCA. E6 and E8 clusters represent ECs exposed to chronic (2 weeks) d-flow in the LCA.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The plots display single-cell chromatin accessibility status of (a) Klk10 and (b) CD31 (Pecam1) genes in eight endothelial cell clusters (E1\u2013E8), smooth muscle cells (SMCs), fibroblasts (Fibro), 4 monocytes/macrophages clusters (Mo1\u20134), dendritic cells (DCs), and T cells (T) in the mouse carotid arteries following 2 days or 2 weeks of the PCL surgery as we recently reported (Andueza et al., 2020). The published scATACseq data (Andueza et al., 2020) were reanalyzed here for Klk10 and Pecam1 genes. E1\u2013E4 clusters represent ECs exposed to s-flow conditions in the right carotid artery (RCA). E5 and E7 clusters represent ECs exposed to acute (2 days) d-flow in the LCA. E6 and E8 clusters represent ECs exposed to chronic (2 weeks) d-flow in the LCA.\n\nWe next tested whether flow can regulate KLK10 expression in vitro using human aortic ECs (HAECs) exposed to unidirectional laminar shear (LS at 15 dynes/cm2) or oscillatory shear (OS at \u00b15 dynes/cm2 at 1 Hz) for 24 hr using the cone-and-plate viscometer, mimicking s-flow and d-flow conditions in vivo, respectively (Jo et al., 2006; Chang et al., 2007). KLK10 mRNA (Figure 1g), KLK10 protein in cell lysates (Figure 1h, j), and secreted protein in the conditioned media (Figure 1j) were decreased by OS and increased by LS, confirming the role of KLK10 as a flow-sensitive gene and protein in vivo and in vitro.\n\nWe further confirmed the flow-dependent expression of Klk10 by reanalyzing the single-cell RNA sequencing (scRNAseq) and scATACseq datasets that we recently published using the PCL model (Andueza et al., 2020). For the scRNAseq and scATACseq study, single cells and nuclei obtained from the LCAs and RCAs, respectively, at 2 days or 2 weeks after the PCL were used. As described previously, the carotid artery wall cells were identified as EC clusters (E1\u2013E8), smooth muscle cells (SMCs), fibroblasts (Fibro), monocytes/macrophages (Mo1\u20134), dendritic cells (DCs), and T cells (Andueza et al., 2020, Figure 1k). E1\u2013E4 clusters consisted of ECs exposed to acute and chronic s-flow conditions (2 days and 2 weeks). E5\u2013E7 clusters consisted of ECs exposed to acute d-flow (2 days). E8 cells were exclusively found in the chronic d-flow condition (2 weeks). As shown in the scRNAseq data analysis (Figure 1k; Figure 1\u2014figure supplement 1), Klk10 transcript expression is highest in s-flow (E2 and E3) and decreases in response to acute (E5 and E7) and chronic (E6 and E8) d-flow. It also shows Klk10 expression is specific to ECs and not expressed in other cell types studied in the carotid artery. Similarly, scATACseq data (Figure 1i; Figure 1\u2014figure supplement 2) showed that the Klk10 promoter region is open and accessible (indicating active transcription status) only in ECs exposed to s-flow conditions but closed and inaccessible (indicating inactive transcription status) in ECs under d-flow conditions and all other non-EC types. Together, both the scRNAseq and scATACseq results demonstrate that Klk10 expression is potently regulated by flow in ECs at the epigenomic and transcriptome level, supporting the in vitro and in vivo results shown above (Figure 1b\u2013g). Importantly, all non-EC types in the carotid artery express nearly undetectable levels of Klk10 mRNA transcript and also display closed chromatin accessibility in the Klk10 promoter region, demonstrating that Klk10 is primarily expressed by ECs. This suggests that KLK10 protein observed in nonendothelial layers, including the adventitia and subendothelial layer (Figure 1b), is unlikely to be originated from cell types other than ECs.\n\n### KLK10 inhibits endothelial inflammation and protects permeability barrier\n\nWe next tested if KLK10 regulates EC function by evaluating its role in endothelial inflammatory response, tube formation, migration, proliferation, and apoptosis, which play critical roles in the pathogenesis of atherosclerosis. Treatment of human umbilical vein ECs (HUVECs) with rKLK10 significantly inhibited migration and tube formation, but not proliferation and apoptosis (Figure 2\u2014figure supplement 1). In addition, transfection of HAECs with plasmids to overexpress KLK10 reduced THP-1 monocyte adhesion to the ECs in response to tumor necrosis factor alpha (TNF\u03b1) and under basal conditions (Figure 2a; Figure 2\u2014figure supplement 2). Next, we pretreated HAECs overnight with increasing concentrations of rKLK10, followed by TNF\u03b1 treatment (5 ng/ml for 4 hr). Treatment with rKLK10 significantly inhibited monocyte adhesion to ECs in a concentration-dependent manner (Figure 2b). Of note, the anti-inflammatory effect of rKLK10 was lost if rKLK10 was heated, implicating the importance of the enzymatic activity or native conformation of KLK10 (Figure 2b; Figure 2\u2014figure supplement 3). Furthermore, treatment with rKLK10 significantly inhibited mRNA and protein expression of the proinflammatory adhesion molecules vascular cell adhesion molecule 1 (VCAM1) and intracellular adhesion molecule 1 (ICAM1) (Figure 2c\u2013g).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-v2.jpg)\n\n**Figure 2.:** (a) THP-1 monocyte adhesion assay was carried out in human artery endothelial cells (HAECs) transfected with 0.1 or 0.25 \u03bcg of KLK10 plasmid (KLK10-p) or GFP plasmid (GFP-p) for 48 hr followed by TNF\u0251 treatment (5 ng/ml for 4 hr). Data are represented as percentage of monocyte adhesion normalized to GFP-p control. N = 3. (b) THP-1 monocyte adhesion assay was carried out in HAECs treated with rKLK10 (0.1\u201310 ng/ml) or heat-inactivated rKLK10 (HI-10) for 24 hr followed by TNF\u0251 treatment (5 ng/ml for 4 hr). Data are represented as percentage of monocyte adhesion normalized to vehicle control. N = 3. (c\u2013g) HAECs were treated with rKLK10 (0.1\u201310 ng/ml for 24 hr) followed by TNF\u0251 treatment (5 ng/ml for 4 hr) and expression of vascular cell adhesion molecule 1 (VCAM1) and intracellular adhesion molecule 1 (ICAM1) were assessed by quantitative real-time polymerase chain reaction (qPCR) (c, d) or western blot (e\u2013g). N = 3. Data are represented as fold-change of the vehicle control and normalized to 18s or GAPDH (Figure 2\u2014source data 1). (h, i) THP-1 monocyte adhesion assay was conducted on HAECs subjected to 24 hr of either laminar shear (LS; 15 dynes/cm2) or oscillatory shear (OS; \u00b15 dynes/cm2) with either (h) rKLK10 (100 ng/ml) or (i) KLK10 siRNA (50 nM) or a nontargeting siRNA control. Data are represented as percentage of monocyte adhesion normalized to the control OS condition. N = 3\u20137. (j) C57BL/6J mice were injected with rKLK10 (0.6 mg/kg) or a vehicle control by tail vein once every 2 days for 5 days. The aortic arches were en face immunostained and imaged using confocal microscopy with an anti-VCAM1 antibody (red) and DAPI (blue). (k) Quantification of endothelial VCAM1 fluorescence intensity represented as fold-change normalized to control LC condition. N = 4\u20135. Scale bar = 10 \u03bcm. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using one-way analysis of variance (ANOVA) with Bonferroni correction for multiple comparisons.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Human umbilical vein endothelial cells (HUVECs) were treated with rKLK10 from 0.5 to 100 ng/ml and (a) the scratch assay was performed to measure the rate at which endothelial cells migrated across the scratch; (b) apoptosis was assessed by TUNEL staining; (c) proliferation was assayed by Ki67 imunnostaining. (d) HUEVCs were grown on Matrigel and treated with rKLK10 at 100 ng/ml or vehicle and tube length was measured in ImageJ. N = 3\u20135. One-way analysis of variance (ANOVA) with Bonferroni correction for multiple comparisons where appropriate (a\u2013c) or paired two-tailed t-test (d). Mean \u00b1 standard error of mean (SEM).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Human aortic endothelial cells (HAECs) were transfected with KLK10 plasmid ranging from 0.1 to 1 or 1 \u03bcg/ml GFP plasmid for 24 hr and the THP-1 monocyte adhesion assay was performed. N = 3. (b) HAECs were treated with 0.5\u2013100 ng/ml rKLK10 and monocyte adhesion assay was performed. N = 4\u20136. (c) HAECs were treated with 100 ng/ml rKLK10 for 24 hr and quantitative real-time polymerase chain reaction (qPCR) was performed to assess mRNA expression of VCAM1, ICAM1, and MCP1. N = 3\u20135. One-way analysis of variance (ANOVA) with Bonferroni correction for multiple comparisons (a, b) or two-way ANOVA with Bonferroni correction for multiple comparisons. (c) Mean \u00b1 standard error of mean (SEM).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a, b) Human aortic endothelial cells (HAECs) were treated with TNF\u03b1 (5 ng/ml) for 4 hr followed by 1, 10, or 10 ng/ml heat-inactivated (HI) rKLK10 overnight and mRNA expression of (a) Vcam1 and (b) Icam1 mRNA was measured by quantitative real-time polymerase chain reaction (qPCR). n = 3. One-way analysis of variance (ANOVA) with Bonferroni correction for multiple comparisons. Mean \u00b1 standard error of mean (SEM).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Mice (male, C57BL/6J) were administered 0.006\u20130.6 mg/kg rKLK10 or vehicle by tail-vein injection and inflammation was assessed by en face immunostaining of VCAM1 at the lesser curvature (LC) and the greater curvature (GC) of the aortic arch. Red = VCAM1, blue = DAPI, green = Elastin. Scale bar = 10 \u00b5m. (b) Quantification of VCAM1 staining in A normalized to the LC. Shown are mean \u00b1 standard error of mean (SEM), N = 3\u20136. Two-way analysis of variance (ANOVA) with Bonferroni correction for multiple comparisons. Part of results in (a) and (b) are shown in Figure 2j. (c) C57BL/6J mice (8-week-old males, n = 12) were injected with human rKLK10 (0.6 mg/kg) via tail-vein injection in three groups (n = 4 mice per group) to collect blood via cheek vein at three different time points per group: (1) before injection (Time 0), 1, and 12 hr, (2) 0, 3, and 24 hr, and (3) 0, 6, and 48 hr after the injection. rKLK10 levels in the plasma were determined by human KLK10 ELISA and data were shown as one phase decay plot. t1/2 of rKLK10 was 4.458 hr. Mean \u00b1 SEM is shown.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** En face immunostaining for VCAM1 (shown in Figure 2j) was imaged by confocal microscopy. Shown is a Z-section image demonstrating VCAM1 expression (red) at the endothelial layer above the internal elastic lamina (green). Blue is DAPI. XYZ refers to an optical plane in the confocal image.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (a) Human aortic endothelial cells (HAECs) were transfected with 0.02\u20131 \u03bcg/ml KLK10 plasmid or 1 \u03bcg/ml GFP plasmid and KLK10 mRNA expression was measured by quantitative real-time polymerase chain reaction (qPCR). N = 3\u20134. (b) HAECs were transfected with 0.02\u20131 \u03bcg/ml KLK10 plasmid or 1 \u03bcg/ml GFP plasmid and KLK10 secretion into the media was measured by ELISA. N = 3\u20135. (c) HAECs were transfected with 0.5\u20132 \u03bcg/ml KLK10 plasmid or 2 \u03bcg/ml GFP and KLK10 protein expression was measured by western blot, using GAPDH as an internal control. N = 3 (Figure 2\u2014figure supplement 6\u2014source data 1). (d) HAECs were transfected with 25\u2013100 nM KLK10 siRNA or 100 nM scrambled siRNA and KLK10 mRNA expression was measured by qPCR. N = 3\u20135. Mean \u00b1 standard error of mean (SEM). One-way ANOVA with Bonferroni correction for multiple comparisons where appropriate.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Human rKLK10 with His-tag overexpressed in CHO cells was purified by affinity chromotagraphy. Purified rKLK10 (5 \u00b5g) was resolved by sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) under reducing (R) or nonreducing (NR) conditions and stained with Coomassie blue (Figure 2\u2014figure supplement 7\u2014source data 1).\n\nWe then tested the effect of KLK10 on the endothelial inflammatory response under flow conditions in vitro and in vivo. rKLK10 treatment inhibited OS-induced monocyte adhesion in HAECs (Figure 2h). In contrast, siRNA-mediated knockdown of KLK10 significantly increased monocyte adhesion under LS conditions (Figure 2i). We next tested if rKLK10 could also inhibit the endothelial inflammation in naturally flow-disturbed LC of the aortic arch in mice. Treatment with rKLK10 in vivo (intravenous injection every 2 days for 5 days at 0.6 mg/kg) dramatically reduced VCAM1 expression in the d-flow (LC) region in the aortic arch of these mice (Figure 2j, k). We also observed a dose-dependent effect of rKLK10 on VCAM1 expression in the same study (Figure 2\u2014figure supplement 4). Injection of rKLK10 at 0.6 mg/kg dose increased its plasma level to a peak of ~1600 ng/ml with a t1/2 of 4.5 hr, becoming undetectable by 24 hr (Figure 2\u2014figure supplement 4). These results demonstrate that either KLK10 overexpression using plasmids or rKLK10 treatment protects against EC inflammation both in vitro and in vivo under TNF\u03b1 or d-flow conditions, whereas the reduction of KLK10 by d-flow condition or KLK10 mRNA knockdown using siRNA increases inflammation.\n\nSince NF\u03baB is a well-known proinflammatory transcription factor, which induces expression of VCAM1 and ICAM1 and subsequent monocyte adhesion to ECs (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013), we tested whether KLK10 inhibits NF\u03baB activation in response to shear stress and TNF\u03b1. We first found that KLK10 prevented phosphorylation (p-Ser536) and trans-nuclear location of p65, two important markers of NF\u03baB activation, in response to TNF\u03b1 (Figure 3a\u2013d). KLK10 also prevented trans-nuclear location of p65 in response to acute shear challenge using LS condition (Figure 3e, f), which is well known to induce robust and transient NF\u03baB activation (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig3-v2.jpg)\n\n**Figure 3.:** (a, b) Human aortic endothelial cells (HAECs) were treated with rKLK10 (10 ng/ml) or vehicle for 16 hr followed by TNF\u03b1 (5 ng/ml for 4 hr). Cell lysates were then collected and analyzed for phosphorylated p65 (p-p65) by sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE). Data are expressed as p-p65 fold-change normalized to GAPDH and vehicle control. N = 3 (Figure 3\u2014source data 1). (c, d) HAECs were treated with rKLK10 (10 ng/ml) or vehicle for 16 hr followed by TNF\u03b1 (5 ng/ml for 4 hr). Cells were then fixed and immunostained for p65 using anti-p65 antibody. Data are expressed as nuclear p65/total p65, normalized to the vehicle control. N = 6. (e, f) HAECs were treated with rKLK10 (10 ng/ml) or vehicle for 16 hr and exposed to shear for 1 hr. Cells were then fixed and immunostained for p65 using anti-p65 antibody. Data are expressed as nuclear p65/total p65, normalized to the static control. N = 4. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using one-way analysis of variance (ANOVA) with Bonferroni correction.\n\nNext, we tested if rKLK10 treatment can protect the permeability barrier function of ECs. As a positive control, thrombin treatment increased the permeability of HAECs as measured by increased binding of fluorescently labeled (FITC)-avidin to biotin-gelatin as reported previously (Dubrovskyi et al., 2013). Overnight rKLK10 pretreatment prevented the permeability increase induced by thrombin in HAECs (Figure 4a, b). Similarly, rKLK10 reduced the permeability induced by OS (Figure 4c, d). Together, these results demonstrate the protective role of KLK10 in endothelial inflammation and barrier function.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig4-v2.jpg)\n\n**Figure 4.:** Human aortic endothelial cells (HAECs) were grown to confluency on biotinylated gelatin and were treated with (a, b) rKLK10 (10 ng/ml) or vehicle for 16 hr followed by thrombin (5 U/ml for 30 min), or (c, d) exposed to OS (\u00b15 dynes/cm2) with rKLK10 (10 ng/ml) or vehicle for 24 hr. Endothelial permeability was then measured by the binding of FITC-avidin to the biotinylated gelatin. (b, d) Quantification of endothelial permeability measured as FITC-avidin fluorescence intensity. N = 3 each. Scale bar = 50 \u03bcm. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using one-way analysis of variance (ANOVA) with Bonferroni correction (b) or paired t-test (d).\n\n### Treatment with rKLK10 inhibits atherosclerosis in Apoe\u2212/\u2212 mice\n\nGiven its anti-inflammatory and barrier-protective effect in ECs, we tested if atherosclerosis development could be prevented by treating mice with rKLK10. For this study, we used the PCL model of atherosclerosis to induce atherosclerosis rapidly in a flow-dependent manner in hyperlipidemic Apoe\u2212/\u2212 mice fed with a high-fat diet. Injection with rKLK10 by tail vein (twice per week at 0.6 mg/kg for 3 weeks post-PCL surgery) significantly reduced atherosclerosis development and macrophage accumulation in the LCA (Figure 5a\u2013e). The rKLK10 treatment showed no effect on plasma levels of total, LDL (low-density lipoprotein), and HDL (high-density lipoprotein) cholesterols and triglycerides (Figure 5f\u2013i). Thus, rKLK10 showed an anti-atherogenic effect in vivo.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig5-v2.jpg)\n\n**Figure 5.:** (a) Apoe\u2212/\u2212 were subjected to partial carotid ligation and high-fat diet feeding. The mice received either rKLK10 (0.6 mg/kg) or vehicle injection every 3 days for the duration of 3 weeks. Left carotid artery (LCA) showed plaque development, which was reduced by rKLK10 as shown by dissection microscopy. Frozen sections from the LCA and right carotid artery (RCA) were stained with (b) H&E and (c) for CD68 in LCA. DAPI (blue). Scale bar low mag = 250 \u03bcm, high mag = 50 \u03bcm. (d) Plaque area was quantified from H&E staining and is represented as \u03bcm2. (e) CD68 fluorescence intensity was quantified and is represented as the CD68 fold-change normalized to the control. Plasma lipid analysis of (f) total cholesterol, (g) low-density lipoprotein (LDL cholesterol), (h) high-density lipoprotein (HDL) cholesterol, or (i) triglycerides showed no effect of rKLK10 compared to control. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using paired t-test. N = 6. ns = not significant.\n\n### Ultrasound-mediated overexpression of KLK10 inhibits atherosclerosis in Apoe\u2212/\u2212 mice\n\nWe next asked whether overexpression of KLK10 using a plasmid vector could also inhibit atherosclerosis in vivo. For this study, we injected either KLK10 plasmid (pCMV-Ig\u03ba-Klk10-T2A-Luc) or luciferase plasmid (pCMV-Luc) as a control along with microbubbles to the hind-limbs of Apoe\u2212/\u2212 mice and sonoporated the legs with ultrasound as previously described (Liu et al., 2019; Borden et al., 2005; Shapiro et al., 2016). The plasmid injection and sonoporation were repeated 10 days later to ensure sustained protein expression for the duration of the study. Bioluminescence imaging showed that all mice expressed luciferase in the hind-limbs at the conclusion of the study, indicating successful and sustained overexpression of the plasmids (Figure 6a).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig6-v2.jpg)\n\n**Figure 6.:** (a) Bioluminescent imaging of Apoe\u2212/\u2212 partial carotid ligation (PCL) mice on a high-fat diet injected with luciferase control plasmid or Klk10-luciferase plasmid, measured in photons/second. (b) Gross plaque images of excised carotid arteries and (c) quantification of plaque burden normalized to the percentage of the luciferase control. (d) H&E staining of sections from the left carotid artery (LCA) and right carotid artery (RCA) of mice injected with luciferase control plasmid or Klk10-luciferase plasmid. Scale bar low mag = 250 \u03bcm, high mag = 50 \u03bcm. (e) Quantification of plaque area measured in \u03bcm2. All data are represented as mean \u00b1 standard error of mean (SEM). Statistical analyses were performed using paired t-test. N = 11. (f) Sections from the RCA and LCA were coimmunostained with anti-KLK10 (orange) and anti-CD31 (red) antibodies. Blue is DAPI. Arrows indicate the ECs. L is the lumen and Adv is the adventitia. Scale bar = 10 \u03bcm. (g) Quantification of endothelial KLK10 fluorescent intensity represented as fold-change normalized to luciferase control. (h) Western blot analysis of KLK10 expression in lung tissue from mice injected with control luciferase plasmid or Klk10 plasmid (Figure 6\u2014source data 1). (i) Quantification of KLK10 expression normalized to GAPDH and luciferase control. Plasma lipid analysis of (j) total cholesterol, (k) triglycerides, (l) high-density lipoprotein (HDL) cholesterol, (m) low-density lipoprotein (LDL) cholesterol, or (n) non-HDL cholesterol. All data are represented as mean \u00b1 SEM. Statistical analyses were performed using paired t-test. N = 5. ns = not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** KLK10 expression was measured in the plasma from mice overexpressing luciferase (Ctrl) or mouse Klk10 plasmid with ultrasound treatment in the hind-limb as described in Figure 6. Plasma KLK10 level was determined using mouse KLK10 ELISA (BG-MUS11429). Paired two-tailed t-test was used. Shown are mean \u00b1 standard error of mean (SEM), n = 5.\n\nAtherosclerotic plaque formation in the LCA was significantly reduced in the KLK10 overexpressing mice compared to the luciferase control (Figure 6b). Further assessment of the carotid artery sections by histochemical staining with hematoxylin and eosin (Figure 6d, e) showed decreased plaque area in the LCA of these mice. Circulating plasma KLK10 levels in the mice measured by ELISA at the time of sacrifice showed no measurable difference between the luciferase and KLK10 groups (Figure 6\u2014figure supplement 1). This may be due to a waning plasmid expression at the sacrifice time. However, we found higher levels of KLK10 staining at the endothelial layer in the LCA and RCA (Figure 6f, g), as well as in the lung tissue samples as shown by western blot (Figure 6h, i). We observed no significant difference in plasma total cholesterol, triglycerides, HDLc, LDLc, and non-HDLc (Figure 6j\u2013n) in the KLK10-injected mice compared to the control mice. These results demonstrate that treatment with KLK10 by either rKLK10 or KLK10 expression vector can inhibit atherosclerosis development in Apoe\u2212/\u2212 mice.\n\n### KLK10 expression is decreased in human coronary arteries with advanced atherosclerotic plaques\n\nWe next examined if KLK10 expression is altered in human coronary artery tissue sections with varying degrees of atherosclerotic plaques (n = 40 individuals, Table 1). KLK10 and CD31 immunostaining demonstrated that KLK10 expression was significantly reduced at the endothelial layer in arteries with significant plaques (grades 4\u20136; Figure 7a, b) than less-diseased arteries (grades 1\u20133).\n\n**Table 1.**\n Patient characteristics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Age (mean \u00b1 SEM)</th>\n      <th>Stroke</th>\n      <th>Hypertension</th>\n      <th>Diabetes</th>\n      <th>Smoking</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Total (n = 40)</td>\n      <td>52.25 \u00b1 13.35</td>\n      <td>15</td>\n      <td>26</td>\n      <td>8</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Sex</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Male (n = 27)</td>\n      <td>53.21 \u00b1 11.15</td>\n      <td>10</td>\n      <td>16</td>\n      <td>5</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>Female (n = 13)</td>\n      <td>51.93 \u00b1 16.22</td>\n      <td>5</td>\n      <td>10</td>\n      <td>3</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Race</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>White (n = 21)</td>\n      <td>54.95 \u00b1 13.14</td>\n      <td>8</td>\n      <td>12</td>\n      <td>3</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Black (n = 17)</td>\n      <td>49.72 \u00b1 14.17</td>\n      <td>7</td>\n      <td>14</td>\n      <td>5</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Hispanic (n = 2)</td>\n      <td>44 \u00b1 5.66</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n_SEM, standard error of mean._\n\n![Figure 7.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig7-v2.jpg)\n\n**Figure 7.:** (a) Human coronary artery sections with varying degrees of atherosclerotic lesions were stained with anti-KLK10 antibody (red) and DAPI (blue). Scale bar low mag = 500 \u03bcm, scale bar; high mag = 50 \u03bcm. Arrows indicate endothelial cells. (b) Consecutive arterial sections from the same patients were stained with anti-CD31 antibody (red) and DAPI (blue). (c) Quantification of endothelial KLK10 fluorescence intensity in lower stage plaques (AHA grades 1\u20133) and advanced stage plaques (AHA grades 4\u20136). Data are from 40 different patients. Statistical analyses were performed using unpaired t-test. Mean \u00b1 standard error of mean (SEM) (Table 1).\n\n## Discussion\n\nHere, we describe that s-flow promotes, while d-flow inhibits, expression and secretion of KLK10 in ECs in vitro and in vivo. We found for the first time that KLK10 inhibits endothelial inflammation, endothelial barrier dysfunction, and reduces endothelial migration and tube formation, but not apoptosis or proliferation. Importantly, treatment of ECs in vitro with rKLK10 or a KLK10 expression plasmid inhibited endothelial inflammation induced by d-flow or TNF\u03b1. Moreover, treatment with rKLK10 or overexpression of KLK10 by ultrasound-mediated plasmid expression inhibited endothelial inflammation and atherosclerosis development in vivo. Our findings also indicate that KLK10 is likely to be important in human atherosclerotic plaque development. The protective effects of rKLK10 or plasmid-driven KLK10 expression on endothelial inflammation, barrier function, and atherosclerosis suggest its therapeutic potential for atherosclerosis treatment.\n\nThe Klk10 mRNA transcript was primarily found in ECs, while KLK10 protein was found not only in ECs but also in the adventitia and subendothelial layer (Figure 1). It is important to note that our single-cell RNAseq and ATACseq analyses of Klk10 expression in the mouse carotid artery clearly demonstrate that Klk10 mRNA is highly expressed only in ECs but not in other cell types including the SMCs, fibroblasts, or immune cells (Figure 1k, l). In addition, KLK10 is a secreted protein, which could be released to the circulation to be found in other locations including the adventitia and diffuse to the subendothelial layer. Therefore, we conclude that KLK10 protein signals observed in the subendothelial and adventitial layers are likely to be originated from ECs.\n\nKLK10 expression is downregulated in breast, prostate, testicular, and lung cancer (Goyal et al., 1998; Liu et al., 1996; Hu et al., 2015; Luo et al., 2001; Zhang et al., 2010) but overexpressed in ovarian, pancreatic, and uterine cancer (Luo et al., 2003; Yousef et al., 2005; Dorn et al., 2013; Tailor et al., 2018). These suggest that abnormal, either too low or too high, levels of KLK10 are associated with various pathophysiological conditions. Overall, the effective concentration of rKLK10 we used in this study is within a reasonable range of human and mouse KLK10 levels in the plasma. Our mouse KLK10 ELISA study (Figure 6\u2014figure supplement 1) showed that plasma KLK10 level in Apoe\u2212/\u2212 mice is in the range of 5\u201310 ng/ml. In humans, normal plasma KLK10 levels are ~0.5 ng/ml, with a range from nearly undetectable to ~20 ng/ml in various cancers patients (Luo et al., 2003; Planque et al., 2008). We found that KLK10 levels in HAECs exposed to the anti-inflammatory LS was ~0.3 ng/ml, which decreased to ~0.13 ng/ml by the proinflammatory OS (Figure 1j). In functional studies, we found that 1\u201310 ng/ml of rKLK10 inhibits permeability and inflammation in HAECs, which falls within the reasonable physiological range. The effective rKLK10 dose used in mouse studies was 0.6 mg/kg, although how this effective dose translates to humans will need to be further studied. It is also worth noting that the effect of rKLK10 on monocyte adhesion (Figure 2b) is weaker than that of KLK10 overexpression using the plasmid vector (Figure 2a). We speculate that KLK10 produced from plasmid directly in HAECs is processed to be more effective than the rKLK10 produced and processed in CHO cells, which underwent multiple purification steps and storage conditions.\n\nInterestingly, the anti-inflammatory effect of KLK10 seems to be unique in comparison to other KLKs expressed in ECs, including KLK8 and KLK11. Analysis of the sc-RNAseq dataset showed that Klk8 and Klk11 are two other KLK members expressed in ECs (Figure 8\u2014figure supplement 1). We found that rKLK10, but not rKLK8 or rKLK11, inhibited endothelial inflammation in response to TNF\u03b1 in HAECs (Figure 8\u2014figure supplement 2).\n\nTaken together, we demonstrated that KLK10 is a flow-sensitive protein that is upregulated by s-flow and downregulated by d-flow in ECs. Our results also demonstrate that KLK10 is a potent mediator of the anti-inflammatory, barrier-protective, and anti-atherogenic effects of s-flow in an autocrine manner in ECs (Figure 8). KLK10 may serve as potential anti-atherogenic therapeutic targets.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig8-v2.jpg)\n\n**Figure 8.:** KL10 is upregulated by s-flow and downregulated by d-flow at the genomic and protein levels. Under s-flow conditions when KLK10 is expression is high, KLK10 inhibits NF\u03baB and expression of vascular cell adhesion molecule 1 (VCAM1) and intracellular adhesion molecule 1 (ICAM1), thereby preventing monocyte adhesion. Additionally, KLK10 produced by s-flow protects the endothelial permeability barrier. Together, the anti-inflammatory and barrier-protective effects of KLK10 lead to an overall protection against atherosclerosis.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Violin plots representing single-cell expression of (a) Klk8 and (b) Klk11 gene transcripts in eight endothelial cell clusters (E1\u2013E8), smooth muscle cells (SMCs), fibroblasts (Fibro), 4 monocytes/macrophages clusters (Mo1\u20134), dendritic cells (DCs), and T cells (T) in the mouse carotid arteries following 2 days or 2 weeks of the PCL surgery as we recently reported (Andueza et al., 2020). The published scRNAseq data (Andueza et al., 2020) were reanalyzed here for Klk8 and Klk11 genes. E1\u2013E4 clusters represent ECs exposed to s-flow conditions in the right carotid artery (RCA). E5 and E7 clusters represent ECs exposed to acute (2 days) d-flow in the left carotid artery (LCA). E6 and E8 clusters represent ECs exposed to chronic (2 weeks) d-flow in the LCA.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72579/elife-72579-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** HAECs were treated with rKLK8, 10, or 11 (10 ng/ml each) or vehicle (UTC) for 16 hr, followed by TNF\u03b1 (5 ng/ml) or vehicle for 4 hr. Then, (a) THP-1 monocyte adhesion assay and (b) western blot analysis for VCAM1 expression were performed (Figure 8\u2014figure supplement 2\u2014source data 1). (c) is the quantification of (b) using beta-actin as an internal control using the NIH ImageJ. One-way analysis of variance (ANOVA) was used for statistical analysis. Shown are mean \u00b1 standard error of the mean (SEM), n = 4\u20136.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (human)</td>\n      <td>KLK10</td>\n      <td></td>\n      <td>Gene ID: 5655</td>\n      <td>Kallikrein-related peptidase 10</td>\n    </tr>\n    <tr>\n      <td>Gene (mouse)</td>\n      <td>Klk10</td>\n      <td></td>\n      <td>Gene ID: 69,540</td>\n      <td>Kallikrein-related peptidase 10</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse)</td>\n      <td>C57BL/6J</td>\n      <td>The Jackson Laboratory</td>\n      <td>000664</td>\n      <td>Male, 6\u201310 weeks of age</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (mouse)</td>\n      <td>Apoe\u2212/\u2212 (B6.129P2-Apoetm1Unc/J)</td>\n      <td>The Jackson Laboratory</td>\n      <td>002052</td>\n      <td>C57BL/6J Mice homozygous for the Apoetm1Unc mutation. Male, 6\u201310 weeks of age</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant human KLK10</td>\n      <td>RayBiotech</td>\n      <td>230-00040-10</td>\n      <td>Human produced in E. coli</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant human KLK10-6xHis</td>\n      <td>This paper</td>\n      <td>Gene ID: 5655</td>\n      <td>Ala34-Asn276 with C-terminal His tagHuman produced in CHO cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human TNF\u03b1</td>\n      <td>Thermo Fisher</td>\n      <td>PHC3011</td>\n      <td>Human produced in E. coli</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.4_hKLK10-6X His Plasmid</td>\n      <td>This paper</td>\n      <td>Gene ID: 5655</td>\n      <td>Human KLK10 Met1- Asn276 with C-terminal His tag</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-Ig\u03ba-Klk10-T2A-Luc Plasmid</td>\n      <td>This paper</td>\n      <td>Gene ID: 69,540</td>\n      <td>Mouse Klk10 Met1-Lys278 with secretion tag and cleavable Luc reporter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PCMV-Luciferase Plasmid</td>\n      <td>Addgene</td>\n      <td>#45,968</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PmaxGFPPlasmid</td>\n      <td>Lonza</td>\n      <td>#D-00059</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Human KLK10 siRNA</td>\n      <td>Dharmacon</td>\n      <td>J-005907-08</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Human Scrambled siRNA</td>\n      <td>Dharmacon</td>\n      <td>D-001810-10-05</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>Primary Human Aortic Endothelial Cells</td>\n      <td>Cell Applications</td>\n      <td>304-05a</td>\n      <td>25\u201340-Year-old males. Multiple lots. Cell identity confirmed through diacetylated LDL and FACs. Company tested cells free of mycoplasma, bacteria, yeast, and fungi</td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>Primary Human Umbilical Vein Endothelial Cells</td>\n      <td>Lonza</td>\n      <td>CC-2519</td>\n      <td>Pooled female donors. Multiple lots. Cell identity confirmed through diacetylated LDL and FACs. Company tested cells free of mycoplasma, bacteria, yeast, and fungi</td>\n    </tr>\n    <tr>\n      <td>Cell line</td>\n      <td>THP1 Human Monocytes</td>\n      <td>ATCC</td>\n      <td>Cat TIB-202</td>\n      <td>STR Profiling and mycoplasma testing done by ATCC</td>\n    </tr>\n    <tr>\n      <td>Biological sample (human)</td>\n      <td>Human Coronary Arteries</td>\n      <td>Lifelink Georgia</td>\n      <td></td>\n      <td>Deidentified human hearts not suitable for cardiac transplantation donated to LifeLink of Georgia</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>KLK10 (Rabbit Polyclonal)</td>\n      <td>Bioss</td>\n      <td>Bioss Cat# bs-2531R, RRID:AB_10882440</td>\n      <td>IF (1:100), WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CD31 (Rabbit Polyclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab28364, RRID:AB_726362</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>VCAM1 (Rabbit Monoclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab134047, RRID:AB_2721053</td>\n      <td>IF (1:100)WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>VE-Cadherin (Mouse monoclonal)</td>\n      <td>Santacruz</td>\n      <td>Santa Cruz Biotechnology Cat# sc-9989, RRID:AB_2077957</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>NFKB P65 (Rabbit Monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cell Signaling Technology Cat# 8242, RRID:AB_10859369</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>phospho-NF\u03baB p65 S356 (Rabbit Monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cell Signaling Technology Cat# 3033, RRID:AB_331284</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor Secondaries</td>\n      <td>Thermo Fisher</td>\n      <td></td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Ki67 (Rabbit Polyclonal)</td>\n      <td>Abcam</td>\n      <td>Abcam Cat# ab15580, RRID:AB_443209</td>\n      <td>IF (1:100)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>H&amp;E Staining Kit</td>\n      <td>American Mastertech</td>\n      <td>KTHNEPT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Human KLK10 ELISA</td>\n      <td>MyBioSource</td>\n      <td>Cat. #: MBS009286</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Mouse Klk10 ELISA</td>\n      <td>NovateinBio</td>\n      <td>BG-MUS11429</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TUNEL Staining Kit</td>\n      <td>Roche</td>\n      <td>12156792910</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>2\u2032,7\u2032-bis(carboxyethyl)-5 (6)-carboxyfluorescein-AM</td>\n      <td>Thermo Fisher</td>\n      <td>B1150</td>\n      <td>1 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Primers</td>\n      <td>Human KLK10</td>\n      <td></td>\n      <td></td>\n      <td>For: GAGTGTGAGGTCTTCTACCCTGRev:ATGCCTTGGAGGGTCTCGTCAC</td>\n    </tr>\n    <tr>\n      <td>Primers</td>\n      <td>Mouse Klk10</td>\n      <td></td>\n      <td></td>\n      <td>For:CGC TAC TGA TGG TGC AAC TCTRev:ATA GTC ACG CTC GCA CTG G</td>\n    </tr>\n    <tr>\n      <td>Primers</td>\n      <td>Human/Mouse 18s</td>\n      <td></td>\n      <td></td>\n      <td>For:AGGAATTGACGGAAGGGCACCARev:GTGCAGCCCCGGACATCTAAG</td>\n    </tr>\n    <tr>\n      <td>Primers</td>\n      <td>Human VCAM1</td>\n      <td></td>\n      <td></td>\n      <td>For:GATTCTGTGCCCACAGTAAGGCRev:TGGTCACAGAGCCACCTTCTTG</td>\n    </tr>\n    <tr>\n      <td>Primers</td>\n      <td>Human ICAM1</td>\n      <td></td>\n      <td></td>\n      <td>For:AGCGGCTGACGTGTGCAGTAATRev:TCTGAGACCTCTGGCTTCGTCA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Zen Blue</td>\n      <td>Zeiss</td>\n      <td></td>\n      <td>Confocal Microscopy</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td></td>\n      <td>Image Analysis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI Mounting media</td>\n      <td>Vector Biolabs</td>\n      <td>H-1200-10</td>\n      <td>Methods \u2013 immunostaining of mouse artery sections an en face preparation of the aortic arch</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Oligofectamine</td>\n      <td>Thermo Fisher</td>\n      <td>12252011</td>\n      <td>Methods \u2013 overexpression or knockdown experiments in vitro</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Lipofectamine</td>\n      <td>Thermo Fisher</td>\n      <td>L3000008</td>\n      <td>Methods \u2013 overexpression or knockdown experiments in vitro</td>\n    </tr>\n  </tbody>\n</table>\n\n### PCL surgery\n\nAll animal studies were performed with male C57BL/6J or Apoe\u2212/\u2212 mice (Jackson Laboratory), were approved by Institutional Animal Care and Use Committee by Emory University, and were performed in accordance with the established guidelines and regulations consistent with federal assurance. All studies using mice were carried out with male mice at 6\u201310 weeks to reduce the sex-dependent variables. For PCL studies, mice at 10 weeks were anesthetized and three of four caudal branches of LCA (left external carotid, internal carotid, and occipital artery) were ligated with 6\u20130 silk suture, but the superior thyroid artery was left intact. The development of d-flow with characteristic low and oscillating shear stress in each mouse was determined by ultrasound measurements as we described (Nam et al., 2009). Following the partial ligation, mice were either continued to be fed chow-diet for 2 days or high-fat diet for atherosclerosis studies for 3 weeks as specified in each study.\n\nEndothelial-enriched RNA was prepared from the LCA and the contralateral RCA control following 48 hr after the partial ligation as we described previously (Nam et al., 2009).\n\n### Immunostaining of mouse artery sections and en face preparation of the aortic arch\n\nFor mouse frozen section staining studies, fresh mouse aortas were fixed in 4% paraformaldehyde for 15 min and placed in Tissue-Tek OCT compound, snap-frozen in liquid nitrogen, and sectioned at 7 \u03bcm as we described (Son et al., 2013). Sections were then permeabilized using 0.1% Triton X-100 in Phosphate-buffered saline (PBS) for 15 min, blocked for 2 hr with 10% donkey serum, and incubated with anti-KLK10 (BiossUSA bs-2531R, 1:100) or anti-CD31 (R&D Systems AF3628, 1:100) primary antibodies overnight at 4\u00b0C followed by Alexa Fluor secondary antibodies (Thermo Fisher Scientific, 1:500) for 2 hr at room temperature. All images were taken with a Zeiss (Jena, Germany) LSM800 confocal microscope. Endothelial KLK10 fluorescent intensity was measured with NIH ImageJ using CD31 as a reference. Hematoxylin and eosin staining (American Mastertech) and plaque area quantification were performed using ImageJ software (NIH) as we described (Chang et al., 2007; Kim et al., 2013).\n\nFor en face immunostaining, mice were euthanized under CO2 and the aortas were pressure fixed with 10% formalin saline (Nam et al., 2009). The aortas were carefully cleaned in situ, and the aortic arches and thoracic aortas were dissected, opened longitudinally, and fixed in 4% paraformaldehyde for 1 hr, permeabilized using 0.1% Triton X-100 in PBS for 15 min, blocked for 2 hr with 10% donkey serum, and incubated with anti-KLK10 (BiossUSA bs-2531R, 1:100), anti-VCAM1 (Abcam ab134047, 1:100), or anti-VE-Cadherin (Santa Cruz sc-9989, 1:100) primary antibodies overnight at 4\u00b0C followed by Alexa Fluor-647 secondary antibodies (Thermo Fisher Scientific, 1:500) for 2 hr at room temperature. The LC and GC of each arch were separated and the aortas were then mounted on glass slides with VectaShield that contained DAPI (Vector Laboratories). En face images were collected as a Z-stack with a Zeiss LSM 800 confocal microscope. We used three Z-sections showing the endothelial layer using the internal elastic laminar as a reference from each tissue sample to quantify VCAM1 or KLK10 expression in the ECs (orthogonal image shown in Figure 2\u2014figure supplement 5). The fluorescence intensity was quantified using the NIH ImageJ program.\n\n### Cell culture and in vitro shear stress study\n\nHAECs were obtained from Lonza and maintained in EGM2 medium (Lonza) supplemented with 10% fetal bovine serum (Hyclone), 1% bovine brain extract, 10 mM L-glutamine, 1 \u03bcg/ml hydrocortisone hemisuccinate, 50 \u03bcg/ml ascorbic acid, 5 ng/ml EGF, 5 ng/ml VEGF, 5 ng/ml FGF, and 15 ng/ml IGF-1 as we described (Son et al., 2013). HUVECs were purchased from BD Biosciences, cultured in M199 media (Cellgro) supplemented with 20% fetal bovine serum (Hyclone), 1% bovine brain extract, 10 mM L-glutamine, and 0.75 U/ml heparin sulfate as we described (Ni et al., 2011). All ECs were grown at 5% CO2 and 37\u00b0C and used between passages 5 and 9. EC identity was confirmed through diacetylated-LDL uptake and FACs-based cell sorting. THP-1 monocytes were obtained from ATCC and maintained in RPMI-1640 medium supplemented with 10% fetal bovine serum and 0.05 mM 2-mercaptoethanol at 5% CO2 and 37\u00b0C as we described (Ni et al., 2011). THP-1 STR Profiling and mycoplasma testing were done by ATCC. For flow experiments, confluent HAECs or HUVECs were exposed to steady unidirectional laminar shear stress (LS, 15 dynes/cm2) or bidirectional oscillatory shear stress (OS, \u00b15 dynes/cm2 at 1 Hz), mimicking s-flow and d-flow conditions, respectively, using the cone-and-plate viscometer for 24 hr experiments, as we reported (Jo et al., 2006; Chang et al., 2007).\n\n### Preparation of whole-cell lysate and immunoblotting\n\nAfter treatment, cells were washed 3\u00d7 with ice-cold Hank's Balanced Salt Solution (HBSS) and lysed with Radioimmunoprecipitation Assay buffer (RIPA) buffer containing protease inhibitors (Boston Bioproducts BP-421) Son et al., 2013. The protein content of each sample was determined by Pierce BCA protein assay. Aliquots of cell lysate were resolved on 10% to 12% sodium dodecyl sulfate\u2013polyacrylamide gels and subsequently transferred to a polyvinylidene difluoride membrane (Millipore). The membrane was incubated with the following primary antibodies: anti-KLK10 (BiossUSA bs-2531R, 1:1000), anti-GAPDH (Abcam ab23565, 1:2000), anti-\u03b2-actin (Sigma-Aldrich A5316, 1:2000), anti-VCAM1 (Abcam ab134047, 1:1000), anti-ICAM1 (Abcam ab53013, 1:1000), and anti-phospho-NF\u03baB p65 S356 (Cell Signaling #3033, 1:1000) overnight at 4\u00b0C in 5% milk in TBST at the concentration recommended by the manufacturer, followed by secondary antibody addition for 1 hr at RT in 5% milk in TBST. Protein expression was detected by a chemiluminescence method (Son et al., 2013).\n\n### Quantitative real-time polymerase chain reaction\n\nTotal RNAs were isolated using RNeasy Mini Kit (Qiagen 74106) and reverse transcribed to cDNA using High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems 4368814). qPCR was performed for genes of interests using VeriQuest Fast SYBR QPCR Master Mix (Affymetrix 75690) with custom designed primers (Table 2) using 18S as house-keeping control as we previously described (Son et al., 2013).\n\n**Table 2.**\n Quantitative real-time polymerase chain reaction (qPCR) primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer (custom)</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>h_KLK10 For</td>\n      <td>GAGTGTGAGGTCTTCTACCCTG</td>\n    </tr>\n    <tr>\n      <td>h_KLK10 Rev</td>\n      <td>ATGCCTTGGAGGGTCTCGTCAC</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>m_Klk10 For</td>\n      <td>CGC TAC TGA TGG TGC AAC TCT</td>\n    </tr>\n    <tr>\n      <td>m_Klk10 Rev</td>\n      <td>ATA GTC ACG CTC GCA CTG G</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>H/M 18S For</td>\n      <td>AGGAATTGACGGAAGGGCACCA</td>\n    </tr>\n    <tr>\n      <td>H/M 18S Rev</td>\n      <td>GTGCAGCCCCGGACATCTAAG</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>h_VCAM1 For</td>\n      <td>GATTCTGTGCCCACAGTAAGGC</td>\n    </tr>\n    <tr>\n      <td>h_VCAM1 Rev</td>\n      <td>TGGTCACAGAGCCACCTTCTTG</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>h_ICAM1 For</td>\n      <td>AGCGGCTGACGTGTGCAGTAAT</td>\n    </tr>\n    <tr>\n      <td>h_ICAM1 Rev</td>\n      <td>TCTGAGACCTCTGGCTTCGTCA</td>\n    </tr>\n  </tbody>\n</table>\n\n### KLK10 ELISAs\n\nKLK10 secreted into the conditioned cell culture media from HAECs exposed to shear stress was measured by using a human KLK10 ELISA kit (MyBioSource, MBS009286). KLK10 in mouse plasma was measured by using a mouse KLK10 ELISA kit (NovateinBio, BG-MUS11429).\n\n### rKLK10 and KLK10 plasmids\n\nInitially, human rKLK10 (Ala34-Asn276 with a 6\u00d7 N-terminal His tag) produced in E. coli (Ray Biotech, 230-00040-10) was used. Additional studies using human rKLK10 produced in the mammalian CHO-K1 cells validated the initial results. Most studies were carried out using human rKLK10 produced in CHO-K1 cells using a full-length expression vector (pcDNA3.4 hKLK10-6X His). rKLK10 with a 6\u00d7 C-terminal His tag was affinity purified using HisPur Ni-NTA Resin (Thermo Scientific) per the manufacturer\u2019s instruction (Figure 2\u2014figure supplement 7) using the conditioned medium. Amino acid sequencing analysis of the purified rKLK10 by mass spectrometry showed that our rKLK10 preparation was a mature form expressing Ala34-Asn276 (data not shown).\n\n### Overexpression or knockdown experiments in vitro\n\nCells were transiently transfected with a human KLK10-encoding plasmid (pcDNA3.4 hKLK10-6X His) at 0.1\u20132 \u03bcg/ml or as a control a GFP plasmid (PmaxGFP, Lonza, Cat. No. D-00059) using Lipofectamine 3000 (Invitrogen, Cat. No. L3000008) as we described (Son et al., 2013). Alternatively, cells were transfected with KLK10 siRNA (Dharmacon; J-005907-08) or Scrambled siRNA (Dharmacon; D-001810-10-05) using Oligofectamine (Invitrogen, Cat. No. 12252011) as we described (Son et al., 2013). Overexpression and knockdown of KLK10 were confirmed in HAECs (Figure 2\u2014figure supplement 6).\n\n### Endothelial functional assays\n\nEndothelial migration was measured by the endothelial scratch assay, as we described (Tressel et al., 2007). Briefly, HUVECs were treated with rKLK10 at increasing doses overnight and cell monolayers were scratched with a 200 \u03bcl pipette tip. The monolayer was washed once, and the medium was replaced with 2% serum media. After 6 hr, the number of cells migrated into the scratch area was quantified microscopically using NIH ImageJ.\n\nEndothelial apoptosis was determined using the TUNEL apoptosis assay, as we described (Alberts-Grill et al., 2012). Briefly, HUVECs were treated with rKLK10 at increasing doses overnight and the cells were fixed using 4% paraformaldehyde for 15 min and permeabilized with 0.1% Triton X-100 for 15 min. TUNEL staining was then performed using a commercially available kit (Roche, 12156792910) and the number of TUNEL-positive cells was counted using NIH ImageJ.\n\nEndothelial proliferation was determined using Ki67 immunohistochemistry, as we described (Wang et al., 2019). Briefly, HUVECs were treated with rKLK10 at increasing doses overnight and the cells were washed twice with PBS, fixed using 4% paraformaldehyde for 15 min, and permeabilized with 0.1% Triton X-100 for 15 min. After blocking with 10% Goat Serum for 2 hr at RT, cells were incubated overnight at 4\u00b0C with rabbit anti-Ki67 primary antibody (Abcam ab15580, 1:100). The following day, cells were washed three times with PBS, incubated for 2 hr at RT protected from light with Alexa Fluor-647-labeled goat anti-rabbit IgG (1:500 dilution), and counterstained with VectaShield that contained DAPI (Vector Laboratories). The number of Ki67-positive cells was counted using NIH ImageJ.\n\nEndothelial tube formation was measured using a Matrigel tube formation assay, as we described (Tressel et al., 2007). Briefly, HUVECs were seeded in a growth factor reduced Matrigel (BD Bioscience) coated 96-well plate and incubated with rKLK10 (100 ng/ml) for 6 hr at 37\u00b0C. Tubule formation was quantified microscopically by measuring tubule length using NIH ImageJ.\n\nEndothelial permeability was determined by FITC-avidin binding to biotinylated gel, as previously described (Dubrovskyi et al., 2013). Briefly, HAECs were seeded on biotinylated gelatin and treated with rKLK10 overnight followed by thrombin (5 U/ml) for 4 hr or OS for 24 hr as described above. Following the completion of the experiments, FITC-avidin was added to the cells and fluorescent intensity was measured using NIH ImageJ.\n\nMonocyte adhesion to ECs was determined using THP-1 monocytes (ATCC TIB-202) as we described (Son et al., 2013). In brief, THP-1 cells (1.5 \u00d7 105 cells/ml) were labeled with a fluorescent dye 2\u2032,7\u2032-bis(carboxyethyl)-5 (6)-carboxyfluorescein-AM (Thermo Fisher Scientific B1150; 1 mg/ml) in serum-free RPMI medium (Thermo Fisher Scientific 11875093) for 45 min at 37\u00b0C. After exposure to flow or other experimental treatments, the ECs were washed in RPMI medium before adding 2\u2032,7\u2032-bis(carboxyethyl)-5 (6)-carboxyfluorescein-AM-loaded THP-1 cells. After a 30-min incubation at 37\u00b0C under no-flow conditions, unbound monocytes were removed by washing the endothelial dishes 5\u00d7 with HBSS and cells with bound monocytes were fixed with 4% paraformaldehyde for 10 min. Bound monocytes were quantified by counting the number of labeled cells at the endothelium under a fluorescent microscope.\n\nNF\u03baB p65 nuclear translocation was performed using HAECs treated with rKLK10 (10 ng/ml for 16 hr) followed by TNF\u03b1 (5 ng/ml for 4 hr) or LS (20 dynes/cm2 for 1 hr). Cells were washed three times, fixed with 4% paraformaldehyde for 15 min, and then permeabilized using 0.1% Triton X-100 in PBS for 15 min. Cells were then blocked for 2 hr with 10% donkey serum, and incubated with anti-p65 antibody (Cell Signaling #8242) overnight at 4\u00b0C followed by Alexa Fluor secondary antibodies (Thermo Fisher Scientific, 1:500) for 2 hr at room temperature. All images were taken with a Zeiss (Jena, Germany) LSM800 confocal microscope and nuclear p65 fluorescence intensity was quantified in comparison to total p65 fluorescence intensity using NIH ImageJ.\n\n### rKLK10 treatment and KLK10 overexpression in C57BL/6J and Apoe\u2212/\u2212 mice\n\nTwo independent methods were used, rKLK10 and Klk10 plasmid, to treat mice with KLK10. Treatment with rKLK10 was first performed in C57BL/6J mice by administering rKLK10 (0.006\u20130.6 mg/kg) by tail vein once every 2 days and sacrificed on day 5. At the completion of the study, mice were euthanized by CO2 inhalation and en face preparation of the aorta was performed as we described (Son et al., 2013). Alternatively, Apoe\u2212/\u2212 on a high-fat diet containing 1.25% cholesterol, 15% fat, and 0.5% cholic acid were given the PCL surgery and rKLK10 or vehicle was administered by tail vein once every 3 days for 3 weeks as we described (Son et al., 2013). Following the completion of the study, mice were euthanized by CO2 inhalation and the aortas were excised, imaged, and sectioned for IHC (Son et al., 2013).\n\nKlk10 plasmid overexpression was performed using ultrasound-mediated sonoporation method of gene therapy as reported (Liu et al., 2019; Borden et al., 2005; Shapiro et al., 2016). Briefly, perfluoropropane microbubbles encapsulated by DSPC and DSPE-PEG2000 (9:1 molar ratio) were made using the shaking method as previously described (Liu et al., 2019; Borden et al., 2005; Shapiro et al., 2016). Klk10 plasmid expressing secreted KLK10 and luciferase (pCMV-Ig\u03ba-Klk10-T2A-Luc) from GENEWIZ or luciferase plasmid (pCMV-Luc) from Invitrogen (50 \u03bcg each) was then mixed with the microbubbles (5 \u00d7 105) and saline to reach 20 \u03bcl total volume. Following PCL, Apoe\u2212/\u2212 mice were intramuscular injected to the hind-limbs with the plasmid-microbubble solution. The injected areas of the hind-legs were then exposed to ultrasound (0.35 W/cm2) for 1 min, and repeated 10 days later. At the completion of the study 3 weeks after the partial ligation and on high-fat diet, mice were anesthetized, administered with luciferin (IP; 3.75 mg) and imaged for bioluminescence on a Bruker In Vivo Xtreme X-ray Imaging System. Mice were then euthanized by CO2 inhalation and the aortas were excised, imaged, and sectioned for staining as described above.\n\n### Immunohistochemical staining of sections from human coronaries\n\nFor human coronaries arteries, 2 mm cross-sections of the left anterior descending arteries were obtained from deidentified human hearts not suitable for cardiac transplantation donated to LifeLink of Georgia. The deidentified donor information is shown in Table 1. Tissues were fixed in 10% neutral buffered formalin overnight, embedded in paraffin, and 7 \u03bcm sections were taken, and stained as we described (Chang et al., 2007; Kim et al., 2013). Sections were deparaffinized and antigen retrieval was performed as described previously (Chang et al., 2007; Kim et al., 2013). Sections were then permeabilized using 0.1% Triton X100 in PBS for 15 min, blocked for 2 hr with 10% goat serum, and incubated with anti-KLK10 (BiossUSA bs-2531R, 1:100) or anti-CD31 (Abcam ab28364, 1:100) primary antibody overnight at 4\u00b0C followed by Alexa Fluor-647 (Thermo Fisher Scientific, 1:500) secondary antibody for 2 hr at room temperature. Nuclei were counterstained with VectaShield that contained DAPI (Vector Laboratories). All confocal images were taken with a Zeiss (Jena, Germany) LSM800 confocal microscope. Endothelial KLK10 fluorescent intensity was measured with NIH ImageJ using CD31 as a reference.\n\n### Serum lipid analysis\n\nSerum lipid analysis was performed at the Cardiovascular Specialty Laboratories (Atlanta, GA) using a Beckman CX7 biochemical analyzer for total cholesterol, triglycerides, HDL and LDL as we reported (Son et al., 2013).\n\n### Statistical analyses\n\nStatistical analyses were performed using GraphPad Prism software. All of the n numbers represent biological replicates. Error bars depict the standard error of means (SEMs). Initially, the datasets were analyzed for normality using the Shapiro\u2013Wilk test (p < 0.05) and equal variance using the F-test (p > 0.05). Data that followed a normal distribution and possessed equal variance were analyzed using two-tailed Student t-test or one-way analysis of variance (ANOVA), where appropriate with Bonferroni post hoc test as needed. In the case where the data showed unequal variances, an unpaired t-test with Welch correction was performed or Brown\u2013Forsythe and Welch ANOVA for multiple comparisons. In the case where the data failed the Shapiro\u2013Wilk test (p > 0.05), a nonparametric Mann\u2013Whitney U-test was conducted for pairwise comparisons or the Kruskal\u2013Wallis for multiple groups was performed.\n",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "6c846216-d955-4070-adce-1c88d3e01a02",
+      "submission_id": "0a6d6440-0d93-46e0-9b67-4bf7f78de2a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward A Fisher, New York University Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72579.sa0](https://doi.org/10.7554/eLife.72579.sa0)\n\nThis group has previously demonstrated that endothelial expression of kallikrein related-peptidase 10 (KLK10) is elevated arteries in conditions of high stable flow and down-regulated by disturbed flow conditions. In the present study, the authors tested the anti-atherogenic effects of KLK10 and found that endothelial expression of KLK10 after artery ligation or exposure to oscillatory flow decreases. Notably, recombinant KLK10 or KLK10 overexpression reproduce many vaso-protective effects and reduced atherosclerosis in a mouse model. Besides new insights into the atherogenic process, a potential therapeutic target may have been discovered.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edward A Fisher, New York University Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72579.sa1](https://doi.org/10.7554/eLife.72579.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Stable Flow-induced Expression of KLK10 Inhibits Endothelial Inflammation and Atherosclerosis\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this letter to help you prepare a revised submission.\n\nEssential revisions:\n\n1) More clarity supporting the claimed endothelial specific expression of KLK10 with better images and clearer explanations of VCAM1 quantification.\n\n2) Also, in regard to VCAM1, a monocyte adhesion assay to strengthen the VCAM1 expression data.\n\n3) It is essential to provide additional data to support the role of KLK10 in the inhibition of endothelial inflammation (which is also related to the first 2 points).\n\n4) The data on the roles of HTRA1 and PAR are considered incomplete. Reviewers suggested either additional studies to strengthen the case for them, or to remove the data (or include as supplemental data). If stronger data are not available, statements about their roles should be toned down and Figure 9 eliminated from the main text, with mention that definitive conclusions on their roles will require more data in future studies.\n\nReviewer #1:\n\nThis is an interesting study that combines in vitro and in vivo approaches to bridge the gap between mechanosensitive endothelial cells and atherosclerotic plaque formation. The work stems from previous discoveries from the authors' laboratory and proceeds to expand and refine those findings. The authors make interesting connections between the major protagonists, KLK10, PAR1/PAR2, and HTRA1. Yet they did not completely establish how these elements come together to regulate inflammation and plaque progression.\n\nSpecific points are noted below:\n\nIn figure 1b, it is surprising that RCA imaging shows KLK10 expression in the sub-endothelial compartment, but authors comment that KLK10 is expressed uniquely in endothelium.\n\nAre the endothelial effects on adhesion molecule expression and permeability specific to KLK10 or do they extend to other family members (KLK2, KLK4)?\n\nThe effect of rKLK10 appears to occur within a very narrow concentration range. Does this correspond to physiological concentrations?\n\nrKLK10 reduced atherosclerosis in the partially ligated LCA. Was this effect duplicated in the aortic arch of the same animals? Whole mount photographs of vessels (4a) are too dim to decipher if this is the case.\n\nIt would be important to confirm proximity ligation assay result by co-IP.\n\nDo VEGFA or VATB2 siRNA also reduce anti-inflammatory effects of KLK10? Could either molecule account for the residual protective effect of KLK10 after HTRA1 siRNA?\n\nDoes HTRA1 influence PAR1/PAR2 cleavage? The link between KLK10 activity and PAR1/PAR2 remains unresolved.\n\nThe work done so far is compelling. Nevertheless, it would be interesting to verify how PAR1/2 cleavage occurs. Is it possible that HTRA1 itself cleaves PARs? This possibility has not been investigated.\n\nReviewer #2:\n\nWilliams et al., demonstrate that Klk10 is upregulated under laminar flow conditions and downregulated in disturbed flow conditions both in vitro and in vivo. They further show that Klk10 overexpression or recombinant Klk10 administration reduces monocyte adhesion to endothelial cells, lessens endothelial permeability, and reduces inflammatory induction of ICAM1 and VCAM1 -- all of which are canonical indicators of endothelial activation. The authors then demonstrate in a mouse model of atherosclerosis that exogenous Klk10 reduces plaque development in a cholesterol and triglyceride independent manner, which is consistent with the hypothesis that the anti-atherosclerotic effect of Klk10 is mediated in/on the endothelium.\n\nThe investigators go on to show that the ability of overexpressed and recombinant Klk10 to reduce monocyte adhesion depends on PAR1 and PAR2, implicating these receptors as targets of Klk10; they further demonstrate that while Klk10 has serine protease activity, overexpressed/recombinant Klk10 does not induce the cleavage of PAR1 or PAR2.\n\nThe authors then determine through affinity pulldown and mass spectrometry that HTRA1, VEGFA, and VATB2 bind to Klk10. They further investigate HTRA1 and find that knockdown of HTRA1 results in increased endothelial activation. Additionally, they find that HTRA1 is upregulated by oscillatory shear (OS) relative to linear shear (LS), which is opposite the effect OS and LS have on Klk10.\n\nLastly, Williams et al., find that Klk10 levels are higher in advanced human atherosclerotic plaques that in early plaques.\n\nThese results demonstrate that Klk10 is an import regulator of endothelial activation and atherosclerotic plaque development. The authors elucidate a mechanism by which HTRA1 may regulate the activity of Klk10.\n\nComments\n\nThe Figure 1 legend contains references that haven't been given numeric symbols. Also, clusters E1 and E4 are not explained in the text or the legend.\n\nFigure 3c legend should contain the phrase \"subjected to OS\" rather than \"subjected OS.\"\n\nDiscussion line 7 should read \"Unexpectedly, however, KLK10 did\" rather than \"Unexpectedly, however, but KLK10 did.\"\n\nFigure S9 legend contains red underlines in the figure labels.\n\nFigure S13 legend contains a typo. \"Firboblasts\" should be \"Fibroblasts.\"\n\nThe anti-inflammatory effect of Klk10 is proposed by the authors to be mediated by PAR1 and PAR2. However, the authors only assay monocyte adhesion, whereas in other sections of the paper, endothelial permeability and the expression of VCAM1 and ICAM1 are used as additional measures of endothelial activation. Do PAR1 and PAR2 not mediate the effect of Klk10 on these other phenotypes?\n\nThe effect of oscillatory shear on HTRA1 is demonstrated in vitro (Figure 7e, S12a) but not in vivo (Figure S13a). The expression of Klk10 and Htra1 appear to be largely concordant among the scRNA-seq endothelial clusters from Andueza et al., (except for E8). Additionally, endothelial activation appears to be increased by HTRA1 knockdown (Figure 7d-g) in OS conditions, which seemingly contradicts the results in Figure 7d-g. Lastly, the experiment in Figure 7h-i was performed under LS conditions, which is different than the conditions under which the other endothelial activation experiments were performed (Figure 7d-g).\n\nReviewer #3:\n\nThe authors showed previously that the peptidase KLK10 is expressed by endothelial cells in response to stable laminar flow whereas its expression is suppressed under disturbed flow. They now report on an exploration of the potential function of KLK10 in endothelial cells and provide some evidence that KLK10 is involved in mediating the anti-inflammatory and anti-atherogenic effect of stable laminar flow. The study is of potential interest; however, some of the conclusions need to be better supported by experimental data, the underlying mechanism remains still rather unclear, and there are also some conceptual issues.\n\n1. A large part of the experiments is based on the use of recombinant KLK10. It is not clear whether the employed concentrations are similar to those found under physiological conditions. It may be difficult to measure them in tissues, but a rough estimation would be helpful to understand this a little better. In Figure 2a, it looks as if KLK10 expression has an effect on the basal adhesion of monocytes (in the absence of TNF\u03b1). This should be tested directly. The effect of recombinant KLK10 appears to be smaller (Figure 2b). Is there an explanation for this difference?\n\n2. When giving recombinant KLK10 systemically (e.g. Figure 2j and k, Figure 4), the authors gave injections (where?) every two days or twice per week. What is the plasma half-life of KLK10? It is important to know how long KLK10 is present at particular concentrations in the blood to interpret the effects of the chosen dosage scheme.\n\n3. Data presented in Figure 2j and k are not clear. How was VCAM1 expression quantified? It would be good to have a counterstain to normalize expression. In any case, the subtle effect of recombinant KLK10 on endothelial VCAM1 expression in the greater curvature shown in the statistical analysis (Figure 2k) is not reflected by the image (Figure 2j), which shows a dramatic reduction in VCAM1 staining. Please explain how staining intensity was compared between different groups of animals. Also the graph in Figure 2k is unclear. The figure legend says that VCAM1 expression is presented as fold change normalized to control LC condition, but the numbering of the ordinate shows a value of about 125.\n\n4. For the experiments shown in Figure 5 it is very important to prove expression of KLK10 in endothelial cells of the carotid artery. The data presented in Figure 5f are not clear, and the images are of rather poor quality. Higher magnified images should be shown. Why is there a strong signal for KLK10 in the adventitia in the test group but not in the Luc control?\n\n5. The experiments shown in Figure 6a and b are key experiments testing an involvement of PAR1/2 in the effects of KLK10. While the authors used both, a knockdown and a pharmacological inhibitor approach, they only tested effects on monocyte adhesion. This needs to be extended to other readouts including downstream signaling (NF\u03baB) and expression of inflammatory genes to rule out unspecific effects on one readout system. Do the authors have an explanation why inhibition of PAR2 in combination with recombinant KLK10 leads to an increase in monocyte adhesion whereas both alone have no effect?\n\n6. The data indicating a role of HTRA1 in the effect of KLK10 are for various reasons still not clear and certainly not strong enough to support the conclusion. The authors show that HTRA1 can cleave KLK10, but it remains completely unclear what the consequences of this are. Somehow the authors seem to propose that cleavage of KLK10 is required for KLK10 to activate PAR receptors (at least, that is what Figure 9 and the corresponding figure legend suggests). However, no experiments have been performed to support this. It should be possible to test whether cleaved KLK10 fragments function as activators of PARs.\n\n7. I also have a general conceptual problem: If it is true that the effect of KLK10 depends on HTRA1, it is difficult to understand how this would function under in vivo conditions, since the effect of KLK10 is in particular relevant under conditions of laminar stable flow when KLK10 is upregulated, whereas under these conditions HTRA1 expression is low or hardly measureable (e.g. blot in Figure 7e). Since the relationship of HTRA1 and KLK10 is studied using exogenously added recombinant KLK10, direct or indirect functional interactions can be seen, but it remains completely unclear whether they occur also when endogenously expressed proteins are studied.\n\n8. Vascular PAR receptors seem to have complex mechanisms and roles in the progression of atherosclerosis and some studies show pro- as well as antiatherogenic/antiinflammatory effects (e.g. Minami et al., Arterioscler. Thromb. Vasc. Biol. 24:41 (2004); Kim et al., Sci. Rep. 8:15172 (2018); Seitz et al., Arterioscler. Thromb. Vasc. Biol. 27:769 (2007); Archiniegas et al., DNA Cell Biol. 23:815 (2004)). The authors argue solely on the basis of an anti-inflammatory antiatherogenic role of endothelial PAR1/2. This point needs to be discussed adequately.\n",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cdfe3f47-e5a8-4b1a-90f1-7c42b7dd553f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C1",
+      "claim": "Atherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow).",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow), while regions exposed to stable flow (s-flow) are protected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established statement in the field, supported by citations in the introduction (Chiu and Chien, 2011; Davies, 1995; Kwak et al., 2014; Tarbell et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "bc0c093e-7a98-492c-b2bb-6cba3354d3e6",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C2",
+      "claim": "Regions exposed to stable flow (s-flow) are protected from atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow), while regions exposed to stable flow (s-flow) are protected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated explicitly in the abstract and supported by citations (Chiu and Chien, 2011; Davies, 1995; Kwak et al., 2014; Tarbell et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "80b0a333-e321-42d5-96fd-1b8851ae93e6",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C3",
+      "claim": "Kallikrein-related peptidase 10 (Klk10) was identified as a flow-sensitive gene in mouse arterial ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we identified kallikrein-related peptidase 10 (Klk10, a secreted serine protease) as a flow-sensitive gene in mouse arterial ECs, but its role in endothelial biology and atherosclerosis was unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and refers to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "d9c0e76f-4e2a-4a16-ba46-3ab89cd035c7",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C4",
+      "claim": "KLK10 is upregulated under s-flow conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that KLK10 is upregulated under s-flow conditions and downregulated under d-flow conditions using in vivo mouse models and in vitro studies with cultured ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1, including immunostaining, western blots, qPCR, and ELISA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "0637d14f-da92-4624-b9c1-20f24da1f7f0",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C5",
+      "claim": "KLK10 is downregulated under d-flow conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that KLK10 is upregulated under s-flow conditions and downregulated under d-flow conditions using in vivo mouse models and in vitro studies with cultured ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1, including immunostaining, western blots, qPCR, and ELISA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9140a86b-5ae3-49f0-be72-2a36fb129163",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C6",
+      "claim": "KLK10 protein expression was significantly higher in ECs in the s-flow RCA compared to the d-flow LCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous data (Nam et al., 2009; Ni et al., 2010), KLK10 protein (Figure 1b, c) and mRNA expression (Figure 1d) were significantly higher in ECs in the s-flow RCA compared to the d-flow LCA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining and quantification data shown in Figure 1b and 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "97e2eee0-d60a-4b8c-bbae-50bacb2ece95",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C7",
+      "claim": "KLK10 mRNA expression was significantly higher in ECs in the s-flow RCA compared to the d-flow LCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous data (Nam et al., 2009; Ni et al., 2010), KLK10 protein (Figure 1b, c) and mRNA expression (Figure 1d) were significantly higher in ECs in the s-flow RCA compared to the d-flow LCA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "ea4a0959-312a-46ea-82cf-9fa097214c28",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C8",
+      "claim": "KLK10 protein was found in the adventitia and occasionally observed in the subendothelial layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, KLK10 protein was also found in the adventitia and occasionally observed in the subendothelial layer as well (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in immunostaining images shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "09282a04-99f2-4730-a51e-2efc8219c7f4",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C9",
+      "claim": "KLK10 protein expression was reduced in the lesser curvature (LC) compared to the greater curvature region (GC) of the aortic arch.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, KLK10 protein expression was reduced in the lesser curvature (LC; the atheroprone aortic arch region that is naturally and chronically exposed to d-flow) compared to the greater curvature region (GC; the atheroprotected aortic arch region that is naturally and chronically exposed to s-flow) as shown by en face immunostaining (Figure 1e, f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by en face immunostaining data shown in Figure 1e and 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "e606ed6d-19dd-4820-bf87-2d1b52530ed1",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C10",
+      "claim": "KLK10 mRNA was decreased by OS and increased by LS in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 mRNA (Figure 1g), KLK10 protein in cell lysates (Figure 1h, j), and secreted protein in the conditioned media (Figure 1j) were decreased by OS and increased by LS, confirming the role of KLK10 as a flow-sensitive gene and protein in vivo and in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b534ed95-b337-4a0b-bb65-95ab38e0a9e2",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C11",
+      "claim": "KLK10 protein in cell lysates was decreased by OS and increased by LS in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 mRNA (Figure 1g), KLK10 protein in cell lysates (Figure 1h, j), and secreted protein in the conditioned media (Figure 1j) were decreased by OS and increased by LS, confirming the role of KLK10 as a flow-sensitive gene and protein in vivo and in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 1h and 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "f32ce6ae-b985-4849-aa3a-8da36d337897",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C12",
+      "claim": "Secreted KLK10 protein in the conditioned media was decreased by OS and increased by LS in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 mRNA (Figure 1g), KLK10 protein in cell lysates (Figure 1h, j), and secreted protein in the conditioned media (Figure 1j) were decreased by OS and increased by LS, confirming the role of KLK10 as a flow-sensitive gene and protein in vivo and in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "8856b8e8-d998-467b-9b18-e48a92ffccc2",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C13",
+      "claim": "Klk10 transcript expression is highest in s-flow (E2 and E3) and decreases in response to acute (E5 and E7) and chronic (E6 and E8) d-flow.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in the scRNAseq data analysis (Figure 1k; Figure 1\u2014figure supplement 1), Klk10 transcript expression is highest in s-flow (E2 and E3) and decreases in response to acute (E5 and E7) and chronic (E6 and E8) d-flow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell RNA sequencing data shown in Figure 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "1fc9cded-3495-4696-a009-d047ef42fae0",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C14",
+      "claim": "Klk10 expression is specific to ECs and not expressed in other cell types studied in the carotid artery.",
+      "claim_type": "EXPLICIT",
+      "source": "It also shows Klk10 expression is specific to ECs and not expressed in other cell types studied in the carotid artery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell RNA sequencing data shown in Figure 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "63e9c74f-5da4-481f-a362-1d330c116c8c",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C15",
+      "claim": "The Klk10 promoter region is open and accessible (indicating active transcription status) only in ECs exposed to s-flow conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, scATACseq data (Figure 1i; Figure 1\u2014figure supplement 2) showed that the Klk10 promoter region is open and accessible (indicating active transcription status) only in ECs exposed to s-flow conditions but closed and inaccessible (indicating inactive transcription status) in ECs under d-flow conditions and all other non-EC types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell ATAC sequencing data shown in Figure 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9858afb2-abc8-48ac-8aba-8a6ca623243a",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C16",
+      "claim": "The Klk10 promoter region is closed and inaccessible (indicating inactive transcription status) in ECs under d-flow conditions and all other non-EC types.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, scATACseq data (Figure 1i; Figure 1\u2014figure supplement 2) showed that the Klk10 promoter region is open and accessible (indicating active transcription status) only in ECs exposed to s-flow conditions but closed and inaccessible (indicating inactive transcription status) in ECs under d-flow conditions and all other non-EC types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-cell ATAC sequencing data shown in Figure 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "8d3c7399-5e04-4a5d-9d84-d10c58089fe4",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C17",
+      "claim": "Transfection of HAECs with plasmids to overexpress KLK10 reduced THP-1 monocyte adhesion to the ECs in response to TNF\u03b1 and under basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, transfection of HAECs with plasmids to overexpress KLK10 reduced THP-1 monocyte adhesion to the ECs in response to tumor necrosis factor alpha (TNF\u03b1) and under basal conditions (Figure 2a; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "faf1330c-56cb-44d9-90fc-0d469f909324",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C18",
+      "claim": "Treatment with rKLK10 significantly inhibited monocyte adhesion to HAECs in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we pretreated HAECs overnight with increasing concentrations of rKLK10, followed by TNF\u03b1 treatment (5 ng/ml for 4 hr). Treatment with rKLK10 significantly inhibited monocyte adhesion to ECs in a concentration-dependent manner (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "20c01bc8-a63d-455b-acd8-a4e4aff6d2a9",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C19",
+      "claim": "The anti-inflammatory effect of rKLK10 was lost if rKLK10 was heated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the anti-inflammatory effect of rKLK10 was lost if rKLK10 was heated, implicating the importance of the enzymatic activity or native conformation of KLK10 (Figure 2b; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay data shown in Figure 2b and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b47bc466-e4ec-4654-a68d-c692db84dce7",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C20",
+      "claim": "Treatment with rKLK10 significantly inhibited mRNA and protein expression of VCAM1 and ICAM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment with rKLK10 significantly inhibited mRNA and protein expression of the proinflammatory adhesion molecules vascular cell adhesion molecule 1 (VCAM1) and intracellular adhesion molecule 1 (ICAM1) (Figure 2c\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR and western blot data shown in Figure 2c-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "046995c5-fa0d-49ac-8e28-2e9d845be11f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C21",
+      "claim": "rKLK10 treatment inhibited OS-induced monocyte adhesion in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "rKLK10 treatment inhibited OS-induced monocyte adhesion in HAECs (Figure 2h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "330e7789-70a6-46b6-9480-a12662a29191",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C22",
+      "claim": "siRNA-mediated knockdown of KLK10 significantly increased monocyte adhesion under LS conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, siRNA-mediated knockdown of KLK10 significantly increased monocyte adhesion under LS conditions (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay data shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "6108df2a-965a-42c4-9283-021f5f679ffc",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C23",
+      "claim": "Treatment with rKLK10 in vivo dramatically reduced VCAM1 expression in the d-flow (LC) region in the aortic arch of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with rKLK10 in vivo (intravenous injection every 2 days for 5 days at 0.6 mg/kg) dramatically reduced VCAM1 expression in the d-flow (LC) region in the aortic arch of these mice (Figure 2j, k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by en face immunostaining data shown in Figure 2j and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "99a5c969-759a-4f8a-9b1b-d0d1a0687d00",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C24",
+      "claim": "KLK10 prevented phosphorylation (p-Ser536) and trans-nuclear location of p65 in response to TNF\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We first found that KLK10 prevented phosphorylation (p-Ser536) and trans-nuclear location of p65, two important markers of NF\u03baB activation, in response to TNF\u03b1 (Figure 3a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot and immunostaining data shown in Figure 3a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "167200db-5c39-44ee-923e-b9a01df305f3",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C25",
+      "claim": "KLK10 prevented trans-nuclear location of p65 in response to acute shear challenge using LS condition.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 also prevented trans-nuclear location of p65 in response to acute shear challenge using LS condition (Figure 3e, f), which is well known to induce robust and transient NF\u03baB activation (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3e and 3f, and by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "5f864e81-9bb1-4c60-8948-5e83721ee16f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C26",
+      "claim": "Overnight rKLK10 pretreatment prevented the permeability increase induced by thrombin in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, thrombin treatment increased the permeability of HAECs as measured by increased binding of fluorescently labeled (FITC)-avidin to biotin-gelatin as reported previously (Dubrovskyi et al., 2013). Overnight rKLK10 pretreatment prevented the permeability increase induced by thrombin in HAECs (Figure 4a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by permeability assay data shown in Figure 4a and 4b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "95c632e2-32a1-4947-accb-c12a38ca2433",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C27",
+      "claim": "rKLK10 reduced the permeability induced by OS.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, rKLK10 reduced the permeability induced by OS (Figure 4c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by permeability assay data shown in Figure 4c and 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "ec14684e-4d25-4888-9b6c-2f730b388594",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C28",
+      "claim": "Injection with rKLK10 significantly reduced atherosclerosis development and macrophage accumulation in the LCA of Apoe\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection with rKLK10 by tail vein (twice per week at 0.6 mg/kg for 3 weeks post-PCL surgery) significantly reduced atherosclerosis development and macrophage accumulation in the LCA (Figure 5a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological and immunostaining data shown in Figure 5a-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "dcc5db36-0de5-4590-bad9-3220a63d037f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C29",
+      "claim": "rKLK10 treatment showed no effect on plasma levels of total, LDL, and HDL cholesterols and triglycerides.",
+      "claim_type": "EXPLICIT",
+      "source": "The rKLK10 treatment showed no effect on plasma levels of total, LDL (low-density lipoprotein), and HDL (high-density lipoprotein) cholesterols and triglycerides (Figure 5f\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by plasma lipid analysis data shown in Figure 5f-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "4c80ebca-1428-42f6-be79-19f4dfcdd8b8",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C30",
+      "claim": "Atherosclerotic plaque formation in the LCA was significantly reduced in the KLK10 overexpressing mice compared to the luciferase control.",
+      "claim_type": "EXPLICIT",
+      "source": "Atherosclerotic plaque formation in the LCA was significantly reduced in the KLK10 overexpressing mice compared to the luciferase control (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gross plaque images and quantification shown in Figure 6b and 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "f99f3f8e-5536-4d04-aab4-230ec90bf343",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C31",
+      "claim": "Plaque area in the LCA was decreased in KLK10 overexpressing mice compared to luciferase control.",
+      "claim_type": "EXPLICIT",
+      "source": "Further assessment of the carotid artery sections by histochemical staining with hematoxylin and eosin (Figure 6d, e) showed decreased plaque area in the LCA of these mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by H&E staining and quantification shown in Figure 6d and 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "7fb8730e-8173-4d7d-9a71-36c1e4d5898b",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C32",
+      "claim": "Higher levels of KLK10 staining were found at the endothelial layer in the LCA and RCA of KLK10 overexpressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found higher levels of KLK10 staining at the endothelial layer in the LCA and RCA (Figure 6f, g), as well as in the lung tissue samples as shown by western blot (Figure 6h, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 6f and 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "dfb08815-8454-4a78-bdd0-3b46b06fdd6e",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C33",
+      "claim": "Higher levels of KLK10 were found in the lung tissue samples of KLK10 overexpressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found higher levels of KLK10 staining at the endothelial layer in the LCA and RCA (Figure 6f, g), as well as in the lung tissue samples as shown by western blot (Figure 6h, i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 6h and 6i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "d149aab3-b5bb-4fc6-972a-89aa08653c37",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C34",
+      "claim": "No significant difference was observed in plasma total cholesterol, triglycerides, HDLc, LDLc, and non-HDLc in the KLK10-injected mice compared to the control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant difference in plasma total cholesterol, triglycerides, HDLc, LDLc, and non-HDLc (Figure 6j\u2013n) in the KLK10-injected mice compared to the control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by plasma lipid analysis data shown in Figure 6j-n.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "df7dafc0-608d-494f-8961-d735deab27bf",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C35",
+      "claim": "KLK10 expression was significantly reduced at the endothelial layer in arteries with significant plaques (grades 4\u20136) than less-diseased arteries (grades 1\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 and CD31 immunostaining demonstrated that KLK10 expression was significantly reduced at the endothelial layer in arteries with significant plaques (grades 4\u20136; Figure 7a, b) than less-diseased arteries (grades 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data from human coronary artery sections shown in Figure 7a, 7b, and 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "1caae008-9b3b-451d-9b8d-bc2434f6d8a6",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C36",
+      "claim": "KLK10 is a member of the kallikrein-related peptidase 'KLK' family of 15 secreted serine proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 was initially identified as a normal epithelial cell-specific 1 (NES1) (Diamandis et al., 2000) and is a member of the kallikrein-related peptidase 'KLK' family of 15 secreted serine proteases, which are found as a gene cluster on human chromosome (19q13.4) (Yousef et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Diamandis et al., 2000; Yousef et al., 1999).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "22e6c9a3-ac77-47f1-98b8-a4d6b9c64d2b",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C37",
+      "claim": "The tissue KLKs are distinct from plasma kallikrein, which is encoded on a separate chromosome (4q35).",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue KLKs are distinct from plasma kallikrein, which is encoded on a separate chromosome (4q35) (Yousef and Diamandis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation (Yousef and Diamandis, 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "545bd924-0078-44a4-a7cd-121440403896",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C38",
+      "claim": "KLK10 was initially discovered as a potential tumor suppressor with its expression downregulated in breast, prostate, testicular, and lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 was initially discovered as a potential tumor suppressor with its expression downregulated in breast, prostate, testicular, and lung cancer (Goyal et al., 1998; Liu et al., 1996; Hu et al., 2015; Luo et al., 2001; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Goyal et al., 1998; Liu et al., 1996; Hu et al., 2015; Luo et al., 2001; Zhang et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "f58dedd0-6537-4267-9a94-bcc3ece02de9",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C39",
+      "claim": "KLK10 is overexpressed in ovarian, pancreatic, and uterine cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies, however, showed a more complex story as KLK10 is overexpressed in ovarian, pancreatic, and uterine cancer (Luo et al., 2003; Yousef et al., 2005; Dorn et al., 2013; Tailor et al., 2018; Sotiropoulou et al., 2009; Bharaj et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Luo et al., 2003; Yousef et al., 2005; Dorn et al., 2013; Tailor et al., 2018; Sotiropoulou et al., 2009; Bharaj et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "25cf8b11-256d-48ee-b7b7-30b1dbe971bb",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C40",
+      "claim": "Treatment of mice in vivo with rKLK10 decreased arterial endothelial inflammation in d-flow regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, treatment of mice in vivo with rKLK10 decreased arterial endothelial inflammation in d-flow regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 2j and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "44c16e42-7d10-490a-a28c-9dfaee0fc5ed",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C41",
+      "claim": "rKLK10 injection inhibited atherosclerosis in Apoe\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, rKLK10 injection or ultrasound-mediated transfection of Klk10-expressing plasmids inhibited atherosclerosis in Apoe\u2212/\u2212 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "51799708-b4f6-47c2-9694-2060fe662ef5",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C42",
+      "claim": "Ultrasound-mediated transfection of Klk10-expressing plasmids inhibited atherosclerosis in Apoe\u2212/\u2212 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, rKLK10 injection or ultrasound-mediated transfection of Klk10-expressing plasmids inhibited atherosclerosis in Apoe\u2212/\u2212 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "1287adfb-725e-48e2-850c-0039a2abe69f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C43",
+      "claim": "KLK10 protected against d-flow-induced permeability dysfunction in human artery ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, KLK10 protected against d-flow-induced permeability dysfunction and inflammation in human artery ECs, as determined by NF\u03baB activation, expression of vascular cell adhesion molecule 1 and intracellular adhesion molecule 1, and monocyte adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "db99dda3-f5f4-4ba4-b0ba-c2818a2b0b76",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C44",
+      "claim": "KLK10 protected against d-flow-induced inflammation in human artery ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, KLK10 protected against d-flow-induced permeability dysfunction and inflammation in human artery ECs, as determined by NF\u03baB activation, expression of vascular cell adhesion molecule 1 and intracellular adhesion molecule 1, and monocyte adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "cd27463b-d347-4a4a-9560-dbdb4fc4acb0",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C45",
+      "claim": "KLK10 is a flow-sensitive endothelial protein that serves as an anti-inflammatory, barrier-protective, and anti-atherogenic factor.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 is a flow-sensitive endothelial protein that serves as an anti-inflammatory, barrier-protective, and anti-atherogenic factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the concluding statement of the abstract, summarizing the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "76db9740-85b0-4fb0-b588-b116453884b7",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C46",
+      "claim": "Treatment with rKLK10 significantly inhibited migration and tube formation in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of human umbilical vein ECs (HUVECs) with rKLK10 significantly inhibited migration and tube formation, but not proliferation and apoptosis (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by scratch assay and tube formation assay data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "c50b23d7-4133-4bba-ba58-6ead4d0f33f1",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C47",
+      "claim": "Treatment with rKLK10 did not affect proliferation and apoptosis in HUVECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of human umbilical vein ECs (HUVECs) with rKLK10 significantly inhibited migration and tube formation, but not proliferation and apoptosis (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Ki67 and TUNEL staining data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "2bd571f2-8888-4969-8f30-21b473ec23d5",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C48",
+      "claim": "Injection of rKLK10 at 0.6 mg/kg dose increased its plasma level to a peak of ~1600 ng/ml with a t1/2 of 4.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of rKLK10 at 0.6 mg/kg dose increased its plasma level to a peak of ~1600 ng/ml with a t1/2 of 4.5 hr, becoming undetectable by 24 hr (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "5bd68bf4-054e-4a74-bf1a-f5bdba5d6512",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C49",
+      "claim": "rKLK10 became undetectable in plasma by 24 hr after injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of rKLK10 at 0.6 mg/kg dose increased its plasma level to a peak of ~1600 ng/ml with a t1/2 of 4.5 hr, becoming undetectable by 24 hr (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "219da3f8-5835-4fcb-8973-92b2ef3caa09",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C50",
+      "claim": "KLK10 protein signals observed in the subendothelial and adventitial layers are likely to be originated from ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that KLK10 protein observed in nonendothelial layers, including the adventitia and subendothelial layer (Figure 1b), is unlikely to be originated from cell types other than ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the scRNAseq and scATACseq data showing that Klk10 is primarily expressed by ECs, and the fact that KLK10 is a secreted protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "18046a10-bc3e-4c67-8486-042f7436255d",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C51",
+      "claim": "The anti-inflammatory effect of KLK10 is unique in comparison to other KLKs expressed in ECs, including KLK8 and KLK11.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the anti-inflammatory effect of KLK10 seems to be unique in comparison to other KLKs expressed in ECs, including KLK8 and KLK11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 8\u2014figure supplement 2, where rKLK10, but not rKLK8 or rKLK11, inhibited endothelial inflammation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9d5f4736-1b21-4fcd-a7e6-7d02c762dc70",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C52",
+      "claim": "rKLK10, but not rKLK8 or rKLK11, inhibited endothelial inflammation in response to TNF\u03b1 in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rKLK10, but not rKLK8 or rKLK11, inhibited endothelial inflammation in response to TNF\u03b1 in HAECs (Figure 8\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by monocyte adhesion assay and western blot data shown in Figure 8\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "2e919383-17c3-4873-8318-a012b884ccc3",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C53",
+      "claim": "D-flow induces endothelial dysfunction and atherosclerosis in large part by regulating flow-sensitive coding and noncoding genes, as well as epigenetic modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "D-flow induces endothelial dysfunction and atherosclerosis in large part by regulating flow-sensitive coding and noncoding genes, as well as epigenetic modifiers (Davies, 1995; Kumar et al., 2014; Kumar et al., 2019; Dunn et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Davies, 1995; Kumar et al., 2014; Kumar et al., 2019; Dunn et al., 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "d38b8360-299c-49e1-95a2-c6f69b8dc924",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C54",
+      "claim": "Klk10 was identified as one of the most flow sensitive genes, with high expression under s-flow and low expression under d-flow conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the flow-sensitive genes, kallikrein-related peptidase 10 (Klk10) was identified as one of the most flow sensitive; with high expression under s-flow and low expression under d-flow conditions (Ni et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation (Ni et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "3e393d84-8dba-4bea-8fb3-ce87b4708157",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C55",
+      "claim": "The KLKs are produced as inactive full-length prepropeptides, which are then secreted and activated by a complex process to yield active extracellular enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the KLKs are produced as inactive full-length prepropeptides, which are then secreted and activated by a complex process to yield active extracellular enzyme (Yousef and Diamandis, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation (Yousef and Diamandis, 2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "53d24503-5211-4fb7-9b66-e0f1bbed79e5",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C56",
+      "claim": "KLKs are involved in a wide variety of processes ranging from skin desquamation to tooth development, hypertension, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "KLKs are involved in a wide variety of processes ranging from skin desquamation to tooth development, hypertension, and cancer (Madeddu et al., 2007; Clements et al., 2004; Yousef and Diamandis, 2001; Pampalakis and Sotiropoulou, 2007; Margolius, 1998; Campbell, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Madeddu et al., 2007; Clements et al., 2004; Yousef and Diamandis, 2001; Pampalakis and Sotiropoulou, 2007; Margolius, 1998; Campbell, 2001).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "02f81835-f9b5-4bfc-86ed-06d0575b9837",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C57",
+      "claim": "Endothelial cells are equipped with several mechanosensors located at the luminal and abluminal surface, cell\u2013cell junction, and cytoskeleton, which detect fluid shear stress and trigger cascades of signaling pathways and cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial cells (ECs) are equipped with several mechanosensors located at the luminal and abluminal surface, cell\u2013cell junction, and cytoskeleton, which detect fluid shear stress and trigger cascades of signaling pathways and cellular responses (Kwak et al., 2014; Tarbell et al., 2014; Mack et al., 2017; Tzima et al., 2005; Li et al., 2015; Chachisvilis et al., 2006; Florian et al., 2003; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations (Kwak et al., 2014; Tarbell et al., 2014; Mack et al., 2017; Tzima et al., 2005; Li et al., 2015; Chachisvilis et al., 2006; Florian et al., 2003; Wang et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "d5ff89a0-3403-43b1-b139-3ed2293d8ed3",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C58",
+      "claim": "NF\u03baB is a well-known proinflammatory transcription factor, which induces expression of VCAM1 and ICAM1 and subsequent monocyte adhesion to ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since NF\u03baB is a well-known proinflammatory transcription factor, which induces expression of VCAM1 and ICAM1 and subsequent monocyte adhesion to ECs (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013), we tested whether KLK10 inhibits NF\u03baB activation in response to shear stress and TNF\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "0b5b25d1-c755-46de-983b-b5448a656953",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C59",
+      "claim": "Acute shear challenge using LS condition is well known to induce robust and transient NF\u03baB activation.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 also prevented trans-nuclear location of p65 in response to acute shear challenge using LS condition (Figure 3e, f), which is well known to induce robust and transient NF\u03baB activation (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by citations (Baeriswyl et al., 2019; Baeyens et al., 2014; Chen et al., 2003; Coleman et al., 2020; Lay et al., 2019; Mohan et al., 1997; Petzold et al., 2009; Stefanini et al., 2015; Wang et al., 2009; Wilson et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9f8183c9-76a7-437b-8d3f-4ddcfcebd799",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C60",
+      "claim": "Normal plasma KLK10 levels in humans are ~0.5 ng/ml, with a range from nearly undetectable to ~20 ng/ml in various cancers patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, normal plasma KLK10 levels are ~0.5 ng/ml, with a range from nearly undetectable to ~20 ng/ml in various cancers patients (Luo et al., 2003; Planque et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by citations (Luo et al., 2003; Planque et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "1afe5e89-cae7-4ccb-9007-4b5b59f07383",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C61",
+      "claim": "Plasma KLK10 level in Apoe\u2212/\u2212 mice is in the range of 5\u201310 ng/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mouse KLK10 ELISA study (Figure 6\u2014figure supplement 1) showed that plasma KLK10 level in Apoe\u2212/\u2212 mice is in the range of 5\u201310 ng/ml.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by ELISA data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "aaa8d061-cdc0-4ca1-a9fe-e7523c8d8381",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C62",
+      "claim": "KLK10 levels in HAECs exposed to the anti-inflammatory LS was ~0.3 ng/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that KLK10 levels in HAECs exposed to the anti-inflammatory LS was ~0.3 ng/ml, which decreased to ~0.13 ng/ml by the proinflammatory OS (Figure 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by ELISA data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9230950b-3c02-42fe-abe6-8d7c85a217a6",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C63",
+      "claim": "KLK10 levels in HAECs decreased to ~0.13 ng/ml by the proinflammatory OS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that KLK10 levels in HAECs exposed to the anti-inflammatory LS was ~0.3 ng/ml, which decreased to ~0.13 ng/ml by the proinflammatory OS (Figure 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by ELISA data shown in Figure 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "cfbf6997-fb02-4af6-8a5d-2ca54e2e7fc5",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C64",
+      "claim": "1\u201310 ng/ml of rKLK10 inhibits permeability and inflammation in HAECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In functional studies, we found that 1\u201310 ng/ml of rKLK10 inhibits permeability and inflammation in HAECs, which falls within the reasonable physiological range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by data shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9caaeba7-90f1-4789-ba49-ca7bf2a8f368",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C65",
+      "claim": "The effect of rKLK10 on monocyte adhesion is weaker than that of KLK10 overexpression using the plasmid vector.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that the effect of rKLK10 on monocyte adhesion (Figure 2b) is weaker than that of KLK10 overexpression using the plasmid vector (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by data shown in Figure 2a and 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "d330cb04-3c86-47bc-a026-3a036161ffb1",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C66",
+      "claim": "KLK10 produced from plasmid directly in HAECs is processed to be more effective than the rKLK10 produced and processed in CHO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that KLK10 produced from plasmid directly in HAECs is processed to be more effective than the rKLK10 produced and processed in CHO cells, which underwent multiple purification steps and storage conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation stated in the discussion based on the observation that plasmid-driven KLK10 expression is more effective than rKLK10 treatment.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "567f15c1-18d7-4707-9268-3098b06bd8ef",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C67",
+      "claim": "Klk8 and Klk11 are two other KLK members expressed in ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the sc-RNAseq dataset showed that Klk8 and Klk11 are two other KLK members expressed in ECs (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and supported by scRNAseq data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b4908337-6457-4a64-b7fa-c2d7be510a97",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C68",
+      "claim": "All non-EC types in the carotid artery express nearly undetectable levels of Klk10 mRNA transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all non-EC types in the carotid artery express nearly undetectable levels of Klk10 mRNA transcript and also display closed chromatin accessibility in the Klk10 promoter region, demonstrating that Klk10 is primarily expressed by ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by scRNAseq and scATACseq data shown in Figure 1k and 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b78ed539-5bfb-4c05-b0cf-e1071d370b66",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C69",
+      "claim": "All non-EC types in the carotid artery display closed chromatin accessibility in the Klk10 promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all non-EC types in the carotid artery express nearly undetectable levels of Klk10 mRNA transcript and also display closed chromatin accessibility in the Klk10 promoter region, demonstrating that Klk10 is primarily expressed by ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by scATACseq data shown in Figure 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "401c4366-6689-4e02-9351-a8e3dd7d4c0b",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C70",
+      "claim": "Klk10 is primarily expressed by ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all non-EC types in the carotid artery express nearly undetectable levels of Klk10 mRNA transcript and also display closed chromatin accessibility in the Klk10 promoter region, demonstrating that Klk10 is primarily expressed by ECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by scRNAseq and scATACseq data shown in Figure 1k and 1l.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "bc1e99ba-fe0b-442e-9557-32fcd6eafcd1",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C71",
+      "claim": "KLK10 may serve as potential anti-atherogenic therapeutic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "KLK10 may serve as potential anti-atherogenic therapeutic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement in the discussion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "49e3009f-d0b7-46e9-b44c-21b737dcd94f",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C72",
+      "claim": "The protective effects of rKLK10 or plasmid-driven KLK10 expression on endothelial inflammation, barrier function, and atherosclerosis suggest its therapeutic potential for atherosclerosis treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The protective effects of rKLK10 or plasmid-driven KLK10 expression on endothelial inflammation, barrier function, and atherosclerosis suggest its therapeutic potential for atherosclerosis treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement in the discussion based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "2541a21e-7b0e-4055-9e1e-29fba56fbff3",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C73",
+      "claim": "Single-cell RNA sequencing (scRNAseq) and scATAC sequencing (scATACseq) study using the partial carotid ligation mouse model showed flow-regulated Klk10 expression at the epigenomic and transcription levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RNA sequencing (scRNAseq) and scATAC sequencing (scATACseq) study using the partial carotid ligation mouse model showed flow-regulated Klk10 expression at the epigenomic and transcription levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 1k and 1l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b1c5e9cc-94b2-4675-844b-f51c097e2701",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C74",
+      "claim": "The proatherogenic and atheroprotective effects of d-flow and s-flow are mediated in part by the global changes in endothelial cell (EC) gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The proatherogenic and atheroprotective effects of d-flow and s-flow are mediated in part by the global changes in endothelial cell (EC) gene expression, which regulates endothelial dysfunction, inflammation, and atherosclerosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a well-established concept in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "7c73210e-5467-4005-8712-aed0ef05ad3e",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "claim_id": "C75",
+      "claim": "Global changes in endothelial cell gene expression regulate endothelial dysfunction, inflammation, and atherosclerosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The proatherogenic and atheroprotective effects of d-flow and s-flow are mediated in part by the global changes in endothelial cell (EC) gene expression, which regulates endothelial dysfunction, inflammation, and atherosclerosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a well-established concept in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8be3caac-9f67-43c0-8309-23d5be16d6c1",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Atherosclerosis preferentially occurs in arterial regions exposed to disturbed blood flow (d-flow), while regions exposed to stable flow (s-flow) are protected. These effects are mediated in part by global changes in endothelial cell gene expression that regulate endothelial dysfunction, inflammation, and atherosclerosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C74, and C75 represent well-established background knowledge in the field, supported by multiple citations (Chiu and Chien, 2011; Davies, 1995; Kwak et al., 2014; Tarbell et al., 2014). These claims provide the foundational context for the study and are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "643c41bb-79be-45b1-9ef2-539bbb82fbdf",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Kallikrein-related peptidase 10 (Klk10) was previously identified as a flow-sensitive gene in mouse arterial ECs, with high expression under s-flow and low expression under d-flow conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C54 refer to prior work by the authors (Ni et al., 2010) and establish the rationale for the current study. These are supported by citations to previous publications and represent background rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "9c79ac87-68d5-4c29-829e-c7bc685df777",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "KLK10 expression is upregulated under s-flow conditions and downregulated under d-flow conditions in vivo and in vitro. This flow-dependent regulation occurs at the epigenomic and transcriptional levels, with Klk10 being primarily expressed by endothelial cells and not other cell types in the carotid artery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C16, C68-C70, and C73 are well-supported by multiple complementary experimental approaches including immunostaining (Figure 1b-c), qPCR (Figure 1d, 1g), western blot (Figure 1h-i), ELISA (Figure 1j), and single-cell RNA-seq and ATAC-seq (Figure 1k-l). The data consistently demonstrate flow-dependent regulation of KLK10 expression across different experimental systems (PCL model, aortic arch, cultured HAECs). The single-cell data provide strong evidence for EC-specific expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "b75243fa-3e89-45e0-be27-1f4ee63dc0ea",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "KLK10 protein was found in the adventitia and subendothelial layer, likely originating from endothelial cells as a secreted protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C50 are supported by immunostaining data (Figure 1b) showing KLK10 protein in non-endothelial layers, combined with scRNA-seq and scATAC-seq data (Figure 1k-l) demonstrating that Klk10 mRNA is primarily expressed by ECs. The inference that the protein originates from ECs is reasonable given that KLK10 is a secreted protein.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "59e94d80-5890-4bbe-a335-909f254fb17b",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KLK10 inhibits endothelial inflammation in vitro and in vivo, as demonstrated by reduced monocyte adhesion, decreased expression of VCAM1 and ICAM1, and reduced VCAM1 expression in d-flow regions of mouse aortic arch. The anti-inflammatory effect requires the native conformation or enzymatic activity of KLK10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23, C40, and C44 are supported by multiple complementary assays including monocyte adhesion assays (Figure 2a-b, 2h-i), qPCR and western blot for VCAM1/ICAM1 (Figure 2c-g), and in vivo en face immunostaining (Figure 2j-k). The concentration-dependent effects (Figure 2b) and loss of activity with heat-inactivated rKLK10 (Figure 2b, Figure 2\u2014figure supplement 3) strengthen the conclusions. Both gain-of-function (rKLK10 treatment, plasmid overexpression) and loss-of-function (siRNA knockdown) approaches support the anti-inflammatory role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "7f11424b-8d5c-4a47-a500-644cd264f673",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "KLK10 prevents NF\u03baB activation by inhibiting phosphorylation and nuclear translocation of p65 in response to TNF\u03b1 and acute shear stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are supported by western blot data showing reduced p65 phosphorylation (Figure 3a-b) and immunostaining data showing reduced nuclear p65 translocation (Figure 3c-f) in response to both TNF\u03b1 and acute laminar shear stress. The data are consistent with the known role of NF\u03baB in mediating inflammatory responses and provide a mechanistic link to the observed anti-inflammatory effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "8ae8cbba-33e2-4a7c-87c0-61e434e12589",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "KLK10 protects against endothelial permeability dysfunction induced by thrombin and oscillatory shear stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C27, and C43 are supported by FITC-avidin permeability assays (Figure 4a-d) showing that rKLK10 pretreatment reduces permeability increases induced by both thrombin and oscillatory shear stress. The use of thrombin as a positive control strengthens the validity of the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "5b98ce2b-40ee-4253-abd4-b2c2df5ce313",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "rKLK10 treatment inhibits endothelial cell migration and tube formation but does not affect proliferation or apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 are supported by scratch assay, tube formation assay, Ki67 staining, and TUNEL staining data (Figure 2\u2014figure supplement 1). The selective effects on migration and tube formation without affecting proliferation or apoptosis suggest specific functional roles for KLK10 in endothelial biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "793abfe3-dda3-4bc9-9639-10a6ba316afd",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Injection of rKLK10 significantly reduced atherosclerosis development and macrophage accumulation in the LCA of Apoe\u2212/\u2212 mice without affecting plasma lipid levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, and C41 are supported by gross plaque images, H&E staining, CD68 immunostaining (Figure 5a-e), and plasma lipid analysis (Figure 5f-i). The lack of effect on plasma lipids indicates that the anti-atherogenic effect is mediated through local vascular effects rather than systemic lipid metabolism, strengthening the conclusion that KLK10 acts directly on the vessel wall.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "c7bc21fc-f446-4377-9fec-810ad68674bd",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ultrasound-mediated transfection of Klk10-expressing plasmids reduced atherosclerotic plaque formation in Apoe\u2212/\u2212 mice without affecting plasma lipid levels. KLK10 expression was increased in the endothelial layer and lung tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 and C42 are supported by bioluminescence imaging confirming plasmid expression (Figure 6a), gross plaque images and H&E staining showing reduced plaque burden (Figure 6b-e), immunostaining and western blot showing increased KLK10 expression (Figure 6f-i), and plasma lipid analysis (Figure 6j-n). The approach provides independent validation of the anti-atherogenic effects observed with rKLK10 injection. However, the lack of detectable plasma KLK10 difference by ELISA (Figure 6\u2014figure supplement 1) raises questions about the systemic versus local effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "ad6084d0-6efd-4b59-bdac-0aaccec8b0cd",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "KLK10 expression is significantly reduced in human coronary arteries with advanced atherosclerotic plaques (grades 4-6) compared to less-diseased arteries (grades 1-3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by immunostaining data from 40 human coronary artery samples (Figure 7a-c, Table 1). The use of CD31 as an endothelial marker and the comparison across different plaque stages strengthen the conclusion. This finding provides translational relevance by demonstrating that the observations in mouse models are applicable to human atherosclerosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "53761d3d-90b9-48bc-a879-057e69da0dd3",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Injection of rKLK10 at 0.6 mg/kg dose increased plasma levels to a peak of ~1600 ng/ml with a half-life of 4.5 hours, becoming undetectable by 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C49 are supported by ELISA data showing pharmacokinetic profile (Figure 2\u2014figure supplement 4). This information is important for understanding the dosing regimen used in the in vivo studies and provides context for the therapeutic potential of KLK10.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "2eb21826-5209-4bcf-bb93-d772a3d9060d",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The anti-inflammatory effect of KLK10 is unique compared to other KLKs expressed in ECs (KLK8 and KLK11), as only rKLK10 inhibited endothelial inflammation in response to TNF\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, and C67 are supported by scRNA-seq data showing expression of Klk8 and Klk11 in ECs (Figure 8\u2014figure supplement 1) and monocyte adhesion and western blot data showing that only rKLK10, but not rKLK8 or rKLK11, inhibited TNF\u03b1-induced inflammation (Figure 8\u2014figure supplement 2). This specificity strengthens the conclusion that KLK10 has a unique functional role among the KLK family members.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "251b0501-6143-4db3-a24e-a332df26a9aa",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The effective concentrations of rKLK10 used in functional studies (1-10 ng/ml) fall within physiologically relevant ranges based on normal human plasma levels (~0.5 ng/ml), mouse plasma levels (5-10 ng/ml), and KLK10 levels in HAECs under flow conditions (~0.3 ng/ml for LS, ~0.13 ng/ml for OS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are supported by ELISA data (Figure 1j, Figure 6\u2014figure supplement 1) and citations to prior literature (Luo et al., 2003; Planque et al., 2008). This analysis provides important context for interpreting the in vitro functional studies and supports the physiological relevance of the observed effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "93de048d-2a65-4f85-9556-3d8be10bfa45",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The effect of rKLK10 on monocyte adhesion is weaker than that of KLK10 overexpression using plasmid vectors, possibly because KLK10 produced directly in HAECs is processed more effectively than rKLK10 produced in CHO cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is supported by comparison of data in Figure 2a and 2b, showing that plasmid-driven overexpression produces stronger effects than rKLK10 treatment. However, claim C66 is speculative (as acknowledged by the authors) and lacks direct experimental evidence. Alternative explanations such as differences in local concentration, duration of exposure, or experimental conditions are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "3e8afde2-ab3f-4df4-85f5-3108f9011710",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information on KLK family members, their biological functions, and the role of mechanosensors and NF\u03baB in endothelial biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39, C53, C55-C59 represent established background knowledge supported by multiple citations. These claims provide context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    },
+    {
+      "id": "04885067-c523-4cfa-8420-0645ab7f620e",
+      "content_id": "23899c6f-1e82-4c35-b82c-9aaf164777fd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "KLK10 is a flow-sensitive endothelial protein that serves as an anti-inflammatory, barrier-protective, and anti-atherogenic factor with potential therapeutic applications for atherosclerosis treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C71, and C72 represent the overall conclusions of the study, synthesizing the findings from multiple experiments. These conclusions are well-supported by the collective evidence demonstrating flow-dependent regulation (C4-C16), anti-inflammatory effects (C17-C25), barrier-protective effects (C26-C27), and anti-atherogenic effects (C28-C35). However, the therapeutic potential (C71-C72) remains speculative and would require additional preclinical and clinical studies to validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:05:18.470567Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdfe3f47-e5a8-4b1a-90f1-7c42b7dd553f",
+      "result_id": "8be3caac-9f67-43c0-8309-23d5be16d6c1"
+    },
+    {
+      "claim_id": "bc0c093e-7a98-492c-b2bb-6cba3354d3e6",
+      "result_id": "8be3caac-9f67-43c0-8309-23d5be16d6c1"
+    },
+    {
+      "claim_id": "b1c5e9cc-94b2-4675-844b-f51c097e2701",
+      "result_id": "8be3caac-9f67-43c0-8309-23d5be16d6c1"
+    },
+    {
+      "claim_id": "7c73210e-5467-4005-8712-aed0ef05ad3e",
+      "result_id": "8be3caac-9f67-43c0-8309-23d5be16d6c1"
+    },
+    {
+      "claim_id": "80b0a333-e321-42d5-96fd-1b8851ae93e6",
+      "result_id": "643c41bb-79be-45b1-9ef2-539bbb82fbdf"
+    },
+    {
+      "claim_id": "d38b8360-299c-49e1-95a2-c6f69b8dc924",
+      "result_id": "643c41bb-79be-45b1-9ef2-539bbb82fbdf"
+    },
+    {
+      "claim_id": "d9c0e76f-4e2a-4a16-ba46-3ab89cd035c7",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "0637d14f-da92-4624-b9c1-20f24da1f7f0",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "9140a86b-5ae3-49f0-be72-2a36fb129163",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "97e2eee0-d60a-4b8c-bbae-50bacb2ece95",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "09282a04-99f2-4730-a51e-2efc8219c7f4",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "e606ed6d-19dd-4820-bf87-2d1b52530ed1",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "b534ed95-b337-4a0b-bb65-95ab38e0a9e2",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "f32ce6ae-b985-4849-aa3a-8da36d337897",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "8856b8e8-d998-467b-9b18-e48a92ffccc2",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "1fc9cded-3495-4696-a009-d047ef42fae0",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "63e9c74f-5da4-481f-a362-1d330c116c8c",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "9858afb2-abc8-48ac-8aba-8a6ca623243a",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "b4908337-6457-4a64-b7fa-c2d7be510a97",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "b78ed539-5bfb-4c05-b0cf-e1071d370b66",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "401c4366-6689-4e02-9351-a8e3dd7d4c0b",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "2541a21e-7b0e-4055-9e1e-29fba56fbff3",
+      "result_id": "9c79ac87-68d5-4c29-829e-c7bc685df777"
+    },
+    {
+      "claim_id": "ea4a0959-312a-46ea-82cf-9fa097214c28",
+      "result_id": "b75243fa-3e89-45e0-be27-1f4ee63dc0ea"
+    },
+    {
+      "claim_id": "219da3f8-5835-4fcb-8973-92b2ef3caa09",
+      "result_id": "b75243fa-3e89-45e0-be27-1f4ee63dc0ea"
+    },
+    {
+      "claim_id": "8d3c7399-5e04-4a5d-9d84-d10c58089fe4",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "faf1330c-56cb-44d9-90fc-0d469f909324",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "20c01bc8-a63d-455b-acd8-a4e4aff6d2a9",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "b47bc466-e4ec-4654-a68d-c692db84dce7",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "046995c5-fa0d-49ac-8e28-2e9d845be11f",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "330e7789-70a6-46b6-9480-a12662a29191",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "6108df2a-965a-42c4-9283-021f5f679ffc",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "25cf8b11-256d-48ee-b7b7-30b1dbe971bb",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "db99dda3-f5f4-4ba4-b0ba-c2818a2b0b76",
+      "result_id": "59e94d80-5890-4bbe-a335-909f254fb17b"
+    },
+    {
+      "claim_id": "99a5c969-759a-4f8a-9b1b-d0d1a0687d00",
+      "result_id": "7f11424b-8d5c-4a47-a500-644cd264f673"
+    },
+    {
+      "claim_id": "167200db-5c39-44ee-923e-b9a01df305f3",
+      "result_id": "7f11424b-8d5c-4a47-a500-644cd264f673"
+    },
+    {
+      "claim_id": "5f864e81-9bb1-4c60-8948-5e83721ee16f",
+      "result_id": "8ae8cbba-33e2-4a7c-87c0-61e434e12589"
+    },
+    {
+      "claim_id": "95c632e2-32a1-4947-accb-c12a38ca2433",
+      "result_id": "8ae8cbba-33e2-4a7c-87c0-61e434e12589"
+    },
+    {
+      "claim_id": "1287adfb-725e-48e2-850c-0039a2abe69f",
+      "result_id": "8ae8cbba-33e2-4a7c-87c0-61e434e12589"
+    },
+    {
+      "claim_id": "76db9740-85b0-4fb0-b588-b116453884b7",
+      "result_id": "5b98ce2b-40ee-4253-abd4-b2c2df5ce313"
+    },
+    {
+      "claim_id": "c50b23d7-4133-4bba-ba58-6ead4d0f33f1",
+      "result_id": "5b98ce2b-40ee-4253-abd4-b2c2df5ce313"
+    },
+    {
+      "claim_id": "ec14684e-4d25-4888-9b6c-2f730b388594",
+      "result_id": "793abfe3-dda3-4bc9-9639-10a6ba316afd"
+    },
+    {
+      "claim_id": "dcc5db36-0de5-4590-bad9-3220a63d037f",
+      "result_id": "793abfe3-dda3-4bc9-9639-10a6ba316afd"
+    },
+    {
+      "claim_id": "44c16e42-7d10-490a-a28c-9dfaee0fc5ed",
+      "result_id": "793abfe3-dda3-4bc9-9639-10a6ba316afd"
+    },
+    {
+      "claim_id": "4c80ebca-1428-42f6-be79-19f4dfcdd8b8",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "f99f3f8e-5536-4d04-aab4-230ec90bf343",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "7fb8730e-8173-4d7d-9a71-36c1e4d5898b",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "dfb08815-8454-4a78-bdd0-3b46b06fdd6e",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "d149aab3-b5bb-4fc6-972a-89aa08653c37",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "51799708-b4f6-47c2-9694-2060fe662ef5",
+      "result_id": "c7bc21fc-f446-4377-9fec-810ad68674bd"
+    },
+    {
+      "claim_id": "df7dafc0-608d-494f-8961-d735deab27bf",
+      "result_id": "ad6084d0-6efd-4b59-bdac-0aaccec8b0cd"
+    },
+    {
+      "claim_id": "2bd571f2-8888-4969-8f30-21b473ec23d5",
+      "result_id": "53761d3d-90b9-48bc-a879-057e69da0dd3"
+    },
+    {
+      "claim_id": "5bd68bf4-054e-4a74-bf1a-f5bdba5d6512",
+      "result_id": "53761d3d-90b9-48bc-a879-057e69da0dd3"
+    },
+    {
+      "claim_id": "18046a10-bc3e-4c67-8486-042f7436255d",
+      "result_id": "2eb21826-5209-4bcf-bb93-d772a3d9060d"
+    },
+    {
+      "claim_id": "9d5f4736-1b21-4fcd-a7e6-7d02c762dc70",
+      "result_id": "2eb21826-5209-4bcf-bb93-d772a3d9060d"
+    },
+    {
+      "claim_id": "567f15c1-18d7-4707-9268-3098b06bd8ef",
+      "result_id": "2eb21826-5209-4bcf-bb93-d772a3d9060d"
+    },
+    {
+      "claim_id": "9f8183c9-76a7-437b-8d3f-4ddcfcebd799",
+      "result_id": "251b0501-6143-4db3-a24e-a332df26a9aa"
+    },
+    {
+      "claim_id": "1afe5e89-cae7-4ccb-9007-4b5b59f07383",
+      "result_id": "251b0501-6143-4db3-a24e-a332df26a9aa"
+    },
+    {
+      "claim_id": "aaa8d061-cdc0-4ca1-a9fe-e7523c8d8381",
+      "result_id": "251b0501-6143-4db3-a24e-a332df26a9aa"
+    },
+    {
+      "claim_id": "9230950b-3c02-42fe-abe6-8d7c85a217a6",
+      "result_id": "251b0501-6143-4db3-a24e-a332df26a9aa"
+    },
+    {
+      "claim_id": "cfbf6997-fb02-4af6-8a5d-2ca54e2e7fc5",
+      "result_id": "251b0501-6143-4db3-a24e-a332df26a9aa"
+    },
+    {
+      "claim_id": "9caaeba7-90f1-4789-ba49-ca7bf2a8f368",
+      "result_id": "93de048d-2a65-4f85-9556-3d8be10bfa45"
+    },
+    {
+      "claim_id": "d330cb04-3c86-47bc-a026-3a036161ffb1",
+      "result_id": "93de048d-2a65-4f85-9556-3d8be10bfa45"
+    },
+    {
+      "claim_id": "1caae008-9b3b-451d-9b8d-bc2434f6d8a6",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "22e6c9a3-ac77-47f1-98b8-a4d6b9c64d2b",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "545bd924-0078-44a4-a7cd-121440403896",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "f58dedd0-6537-4267-9a94-bcc3ece02de9",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "3e393d84-8dba-4bea-8fb3-ce87b4708157",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "53d24503-5211-4fb7-9b66-e0f1bbed79e5",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "02f81835-f9b5-4bfc-86ed-06d0575b9837",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "2e919383-17c3-4873-8318-a012b884ccc3",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "d5ff89a0-3403-43b1-b139-3ed2293d8ed3",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "0b5b25d1-c755-46de-983b-b5448a656953",
+      "result_id": "3e8afde2-ab3f-4df4-85f5-3108f9011710"
+    },
+    {
+      "claim_id": "cd27463b-d347-4a4a-9560-dbdb4fc4acb0",
+      "result_id": "04885067-c523-4cfa-8420-0645ab7f620e"
+    },
+    {
+      "claim_id": "bc1e99ba-fe0b-442e-9557-32fcd6eafcd1",
+      "result_id": "04885067-c523-4cfa-8420-0645ab7f620e"
+    },
+    {
+      "claim_id": "49e3009f-d0b7-46e9-b44c-21b737dcd94f",
+      "result_id": "04885067-c523-4cfa-8420-0645ab7f620e"
+    }
+  ],
+  "comparisons": []
+}

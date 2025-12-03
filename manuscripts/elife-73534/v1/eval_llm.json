@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Mdn1 is an essential AAA mechanoenzyme that uses its MIDAS domain to extract UBL domain-containing proteins Rsa4 and Ytm1 from ribosomal precursors during ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts from prior work, supported by multiple citations throughout the manuscript (Bassler et al., 2010; Ulbrich et al., 2009). These claims provide essential background context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C72",
+      "C73"
+    ],
+    "result": "The Mdn1 MIDAS domain binds Rsa4-GFP in solution with weak affinity (~7 \u03bcM KD), as demonstrated by size exclusion chromatography coelution assays, microscale thermophoresis, and native mass spectrometry validation of protein quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C72-C73 collectively demonstrate weak solution binding between MIDAS and Rsa4-GFP through multiple orthogonal techniques. The protein quality was rigorously validated by mass spectrometry (within 20 Da) and mass photometry (within 2 kDa), coelution was observed with wild-type but not mutant MIDAS, and MST yielded a fitted KD of 6.9 \u00b1 2.0 \u03bcM. The convergence of multiple independent measurements strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The Mdn1 MIDAS domain binds Ytm1-GFP in solution, but the interaction is even weaker than with Rsa4-GFP, as shown by size exclusion chromatography and microscale thermophoresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate that MIDAS binds Ytm1-GFP in solution through coelution experiments, though MST data could not be fitted to a binding isotherm, indicating weaker binding than with Rsa4. The protein quality was validated by mass spectrometry and mass photometry. The qualitative conclusion of weaker binding is supported, though a quantitative KD could not be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C39",
+      "C79",
+      "C80"
+    ],
+    "result": "The Mdn1 MIDAS domain forms a catch bond with Rsa4, with bond lifetimes increasing up to 10-fold under applied tension up to ~4 pN (critical force 4.2 pN), then decreasing at higher forces, as measured by optical tweezers force jump assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C24-C27, C29-C30, C39, C79-C80 collectively demonstrate catch bond behavior for MIDAS-Rsa4 through systematic force-dependent measurements. Bond lifetime distributions fit single exponentials at all forces tested, the mutant control (Y4666R) showed substantially shorter lifetimes, and results were consistent across two bridge constructs (55 and 70 nt) and two Rsa4 constructs (GFP and SNAP tagged). The chevron-shaped force-lifetime curve and fitting to the catch-slip Bell model yielded a critical force of 4.2 pN. Multiple controls and technical validations strongly support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "The Mdn1 MIDAS domain forms a catch bond with Ytm1, with a critical force of 3.3 pN, despite Rsa4 and Ytm1 UBL domains having only 43% sequence similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C35-C37, C40 demonstrate that catch bond behavior extends to a second substrate (Ytm1) with low sequence similarity to Rsa4. The force-dependent bond lifetime measurements showed similar catch bond behavior with a critical force of 3.3 pN (vs 4.2 pN for Rsa4). This demonstrates generality of the catch bond mechanism across different UBL substrates, which is a key novel finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69"
+    ],
+    "result": "This work demonstrates that the Mdn1 MIDAS domain can form catch bonds with more than one UBL substrate, representing a novel example of catch bonds between a protein and multiple different substrates in ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C69 represent the overarching conclusion that MIDAS forms catch bonds with multiple substrates. This is directly supported by the experimental data showing catch bond behavior with both Rsa4 and Ytm1 (claims grouped in previous results). The novelty of catch bonds with multiple substrates and in ribosome biogenesis is well-supported by the data and appropriately contextualized relative to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C81",
+      "C82"
+    ],
+    "result": "A mechanical circuit model accurately predicts the force partitioning and displacement (\u0394x) in the force jump assay without fitting to experimental data, validating the assay design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C81-C82 describe validation of the mechanical circuit model used to convert total applied force to force on the protein bond. The model uses established worm-like chain equations for DNA elasticity and an estimated protein length (8 nm from structural data). The agreement between model predictions and experimental \u0394x measurements (Figure 3F) without fitting provides strong validation of the approach. This is critical for interpreting the force-dependent measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70",
+      "C71"
+    ],
+    "result": "A proposed model suggests that catch bonds regulate the Mdn1 enzymatic cycle: tension from linker stretching (1-2 pN) engages the catch bond during substrate extraction, and tension relief upon MIDAS undocking facilitates substrate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C45, C70-C71 present a mechanistic model for how catch bonds regulate Mdn1 function. While the model is logical and consistent with structural data (C41-C43 from prior work) and the catch bond measurements, several aspects remain speculative. The estimated 1-2 pN tension from computational modeling (C43) is below the measured 3.3-4.2 pN catch bond peak, requiring additional assumptions about ATPase-generated force (C45, explicitly speculative). The proposed undocking mechanism (C70-C71) is inferred but not directly tested. The model provides a reasonable framework but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The catch bond mechanism prevents non-productive Mdn1-Rsa4/Ytm1 binding in the nucleolus and nucleoplasm where free copies of these proteins exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C48 propose a functional consequence of the catch bond: preventing off-target binding. While C46-C47 cite prior work showing that Ytm1/Rsa4 removal occurs at different stages and free copies exist, the inference that catch bonds prevent non-productive binding (C48) is logical but not directly tested. This would require demonstrating that Mdn1 does not bind free Rsa4/Ytm1 in vivo or that disrupting the catch bond increases non-productive binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors speculate that Mdn1 may process other UBL or SUMO domain-containing proteins beyond Rsa4 and Ytm1, and predict that MIDAS would form catch bonds with these putative substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C54 present speculation about broader substrate specificity. While the structural similarity of UBL domains (C49-C50), targeting to SUMOylated substrates (C51), and role in RNA clearance (C52) are cited from prior work, the speculation that Mdn1 processes other substrates (C53) and prediction of catch bonds with them (C54) are not tested. These are reasonable hypotheses for future work but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Comparison with integrin suggests that MIDAS domains can be tuned to form catch bonds at forces ranging from single motor (~4 pN for Mdn1) to multi-motor regimes (~10-30 pN for integrin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C55-C58 compare Mdn1 MIDAS to integrin MIDAS domains. The structural homology (C14), integrin's weak solution binding enhanced by force (C15-C16), and integrin's catch bond behavior at higher forces (C55-C56) are all from cited prior work. The observation that Mdn1's critical force (~4 pN) matches dynein force production (C57, cited) while integrin's matches multi-motor adhesion forces provides strong support for the inference that MIDAS domains are tuned for different force regimes (C58).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Numerous AAA motor proteins and mechanically activated proteins contain or couple with MIDAS domains, suggesting broader relevance of MIDAS mechanobiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is well-supported by multiple citations to prior work identifying MIDAS domains in various AAA motors (CbbQ, Vwa8, magnesium chelatase) and mechanically activated proteins (von Willebrand factor). This contextualizes the potential broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The force jump assay applies force at a high rate (~20,000 pN/s), but the shortest measured binding durations (20 ms) are >100-fold longer than the force jump rise time, mitigating concerns about rate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 acknowledge a limitation of the assay (high loading rate) but provide quantitative justification that measured events are much longer than the rise time. This is an appropriate discussion of technical limitations and their impact on interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background on catch bonds: they are a form of mechanoregulation where force strengthens protein-ligand interactions, contrasting with slip bonds, and are hypothesized to be widely used but most examples involve single protein-substrate pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C62-C67 provide background on catch bonds from prior work. These are well-established concepts supported by appropriate citations and provide essential context for understanding the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Mdn1 is a large multi-domain enzyme with six AAA domains forming a pseudohexameric ring, followed by a linker and C-terminal MIDAS domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 describe the domain architecture of Mdn1 based on prior structural work (cited). This provides essential background for understanding the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Brownian dynamics simulations from prior work estimate that MIDAS docking generates 1-2 pN of tension along the MIDAS-UBL bond axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 accurately cites prior computational work by the authors. This provides important context for interpreting the measured catch bond forces, though as noted in the model evaluation, the estimated tension is below the catch bond peak.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The similar values of distance parameters xc and xs in the catch-slip Bell model fit give rise to roughly symmetric force-dependent bond lifetime curves, similar to P-selectin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 provides interpretation of the fitted model parameters with comparison to a known catch bond system (P-selectin). This is appropriately supported by citation and helps contextualize the quantitative findings.",
+    "result_type": "MINOR"
+  }
+]

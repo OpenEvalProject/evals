@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors developed a method to monitor single-cell dry mass and dry mass density with ~75 s temporal resolution, achieving 1.3% and 0.3% measurement precision respectively. This precision is comparable to state-of-the-art QPM for dry mass, and represents the first single-cell method capable of measuring dry mass density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24-C27 are well-supported by measurements on non-growing cells, fixed cells, and polystyrene beads (Figure 1\u2014figure supplement 1). The precision estimates are based on coefficient of variation measurements and are appropriately validated. The comparison to QPM is supported by citations and the novelty claim for dry mass density measurements appears reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The method enables non-invasive monitoring of cells over many generations by exposing cells to D2O only periodically (every 75 s) for short durations (10-15 s), which is sufficient for complete water exchange based on known aquaporin properties and experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C28-C32 are supported by experimental validation showing dry mass and dry mass density measurements are independent of D2O exposure time (Figure 1\u2014figure supplement 2), multi-generational tracking (Figure 2A), and calculations based on aquaporin water permeability. The assumption of complete water exchange (C20) is well-validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C41"
+    ],
+    "result": "L1210, BaF3, and S-Hela cells tolerate continuous exposure to up to 30% D2O without changes in proliferation rate. While periodic D2O exposure in measurements may influence cell proliferation rate (FUCCI cells showed slightly increased cell cycle duration and systematically shorter mitosis/cytokinesis), it does not radically alter cell size and growth regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C41 are supported by proliferation experiments (Figure 2\u2014figure supplement 1) and cell cycle duration measurements (Figure 2B-C). The observation that wt L1210 cells maintain normal cell cycle duration while FUCCI cells show slight increases suggests the measurement approach has minimal but detectable effects. The conclusion that growth regulation is not radically altered is supported by exponential growth analysis and size homeostasis data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Dry mass growth in interphase follows exponential kinetics in L1210 cells, with instantaneous growth rates increasing as a function of dry mass. Cell size homeostasis is maintained across generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by AIC analysis showing exponential fits are better than linear fits in 37/39 interphases (Figure 2D), growth rate analysis (Figure 2E), and lineage tracking showing stable dry mass at division (Figure 2\u2014figure supplement 2A). This is consistent with previous findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Buoyant mass and dry mass are highly correlated (R\u00b2>0.97) at the population level and in interphase (R\u00b2~0.99), but show lower correlation in mitosis (R\u00b2~0.5-0.9). Dry mass density shows low variability (~1.6% CV) within proliferating populations, approximately 15-fold less than dry mass variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are well-supported by correlation analysis at population and single-cell levels (Figure 2\u2014figure supplement 3). The high correlation in interphase and lower correlation in mitosis is a key finding that motivates the mitotic studies. The low variability in dry mass density is appropriately interpreted as tight regulation of molecular composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C53",
+      "C56"
+    ],
+    "result": "Many L1210 cells lose dry mass following mitotic entry, with FUCCI L1210 cells losing on average ~4% of dry mass in early mitosis (up to ~8% in extreme cases), occurring over approximately 15 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C49, C53, C56 are supported by single-cell measurements in Figure 3A-C. The quantification is based on averaging multiple cells and the temporal resolution is sufficient to capture these dynamics. The observation that not all cells show this behavior (C49) is important for interpreting the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C54"
+    ],
+    "result": "Suspension grown mammalian cells increase dry mass density following mitotic entry, with FUCCI L1210 cells increasing dry mass density by on average ~2.5% in early mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50, C54 are supported by single-cell measurements in Figure 3A-C. The dry mass density increase is coupled to dry mass loss (C62) and is demonstrated across multiple cell types (C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The mitotic changes in dry mass and dry mass density display large, non-genetic cell-to-cell variability. Approximately 7% of L1210 cells showed little to no dry mass density increase, and mother-daughter pairs can show different behaviors. These changes are not required for successful cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C65-C68 are supported by the distribution of responses shown in Figure 3C and mother-daughter pair examples in Figure 3\u2014figure supplement 2A-C. The lack of correlation with measurement noise (C67, Figure 3\u2014figure supplement 2D) strengthens the interpretation that this is biological variability. The conclusion that changes are not required for division (C68) is a logical inference from the observation that some cells divide without these changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "The changes in dry mass and dry mass density are reversed at metaphase-anaphase transition, with dry mass recovery occurring faster than normal growth, suggesting a distinct 'recovery growth' mechanism. After this transition, dry mass continues accumulating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C57-C60 are supported by population average data in Figure 3B showing recovery at metaphase-anaphase transition. The observation that recovery is faster than normal growth (C59) is visible in the data and supports the inference of a distinct mechanism (C60). However, the mechanism of recovery growth is not experimentally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Over 10% of total dry mass accumulated in the cell cycle occurs during mitosis and cytokinesis in L1210 cells, supporting the conclusion that average growth rates in mitosis are comparable to interphase, consistent with high protein synthesis rates reported for unperturbed mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C131-C133 are supported by quantification in Figure 3D and are consistent with previous findings on protein synthesis rates (citations provided). This reconciles the dry mass loss in early mitosis with overall high growth rates during the complete mitotic period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C129",
+      "C130"
+    ],
+    "result": "The increase in dry mass density causes buoyant mass and dry mass measurements to differ specifically in early mitosis, with buoyant mass increasing even in cells that lose dry mass. This finding reconciles previous contradictory reports of mitotic buoyant mass and QPM-based dry mass measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62-C64, C129-C130 are supported by the mathematical relationship in Equation 1 and demonstrated in Figure 3\u2014figure supplement 2A-C. The correlation between dry mass loss and dry mass density increase (C62, Figure 3E) strengthens this interpretation. This is a key conceptual contribution that resolves apparent contradictions in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The mitotic loss of dry mass and increase in dry mass density are not specific to L1210 cells. BaF3 cells showed growth arrest rather than mass loss on average (though some individual cells lost ~4%), while THP-1 cells lost ~5% of dry mass. Both cell types showed transient dry mass density increases in early mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by measurements in BaF3 and THP-1 cells (Figure 3\u2014figure supplement 3). The observation of cell-type specific differences in the magnitude of dry mass loss, while dry mass density increases are more consistent, suggests the phenomenon is general but with quantitative variation. This strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "STLC-arrested cells (prometaphase arrest) show initial dry mass loss and dry mass density increase similar to control cells, but do not recover these changes. This demonstrates that the changes occur before prometaphase completion and that mitotic progression is required for recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by STLC treatment experiments (Figure 4A-C). The prometaphase arrest is validated by p-histone H3 labeling. The lack of recovery in arrested cells provides strong evidence that mitotic progression is required for the recovery phase, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Barasertib treatment (Aurora B inhibition, preventing cytokinesis) shows slightly lower but not significantly different dry mass and dry mass density changes compared to controls. The mitotic changes cannot be fully explained by cell elongation and furrowing, though these processes may still have some influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by Barasertib treatment experiments (Figure 4D-F). The validation of cytokinesis inhibition by microscopy strengthens the interpretation. The conclusion that elongation/furrowing cannot fully explain the changes (C86) is appropriate, though the suggestion that they may still have influence (C87) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "EIPA treatment prevents mitotic cell swelling in FUCCI L1210 cells but does not change the dry mass loss or dry mass density increase in early mitosis. Therefore, the mitotic dry mass and dry mass density changes do not require mitotic cell swelling, though they may share a common driving mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are supported by water volume measurements and dry mass/density measurements with EIPA treatment (Figure 4E-G). The dissociation between swelling and dry mass/density changes is clearly demonstrated. The suggestion that they may share a common mechanism (C94) is speculative but appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cells in early mitosis increase lysosomal exocytosis, as demonstrated by increased LAMP-1 on cell surface. LAMP-1 accumulates throughout early mitosis (from prophase to anaphase), contrasting with a previous report suggesting lysosomal exocytosis increases specifically in late mitosis. This is observed in L1210, BaF3, and THP-1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C105-C112 are supported by LAMP-1 surface labeling in freely proliferating cells (Figure 5A-B) and synchronized cells (Figure 5C-D, Figure 5\u2014figure supplement 2). The validation of surface-specific labeling and use of multiple approaches (microscopy and flow cytometry) strengthen the findings. The contrast with previous work (C108) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Inhibition of lysosomal exocytosis with brefeldin A or vacuolin-1 decreases the mitotic dry mass loss and dry mass density increase without preventing cell divisions or changing baseline dry mass density. Therefore, lysosomal exocytosis is at least partly responsible for these mitotic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C113-C120 are supported by validation of lysosomal exocytosis inhibition (Figure 6A, Figure 5\u2014figure supplement 1) and dry mass/density measurements with inhibitors (Figure 6B-C). The observation that inhibition decreases but does not eliminate the changes appropriately leads to the conclusion that lysosomal exocytosis is 'at least partly' responsible, acknowledging other mechanisms may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C76"
+    ],
+    "result": "Mitosis is coupled to extensive exocytosis-mediated secretion of cellular contents, representing a previously unrecognized aspect of mitotic cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C76 represent the main conclusion integrating the dry mass loss observations with the lysosomal exocytosis findings. This is supported by the combined evidence from dry mass measurements (Figure 3) and lysosomal exocytosis data (Figures 5-6). The term 'extensive' is justified by the magnitude of dry mass loss (up to 8%) and the partial dependence on lysosomal exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The mitotic dry mass and dry mass density changes are observed in both wt and FUCCI L1210 cells, though FUCCI cells display larger changes in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by comparison of wt and FUCCI cells in Figure 3B. This observation is important for interpreting the results, as it suggests the FUCCI reporter may influence the magnitude of the phenotype. However, the presence of the phenotype in wt cells validates its biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The measurement approach decreased the duration of mitosis and cytokinesis compared to previous SMR experiments, which is contradictory to previous studies showing D2O prolongs mitosis. This may be due to the brief but repeated D2O exposure pattern used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 are supported by measurements in Figure 2C and comparison to previous work. The contradiction with previous D2O studies is appropriately noted with citations. The suggested explanation (C139) is speculative but reasonable. This is an important caveat for interpreting the mitotic dynamics observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Cells recover dry mass at a high rate at metaphase-anaphase transition. Compensatory endocytosis following lysosomal exocytosis could explain this rapid recovery, but further studies are needed to confirm this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C140 is supported by data in Figure 3B, but claims C141-C142 about compensatory endocytosis are speculative, based only on citations to previous work showing this occurs after lysosomal exocytosis. No direct experimental evidence for this mechanism is provided in the current study. The authors appropriately acknowledge this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Based on calculations assuming typical cell composition, cells would need to secrete ~1/3 of their lipid content to achieve a 2.5% dry mass density increase. This could be achieved via lysosomal exocytosis of lipids, though other mechanisms involving secretion of low-density components or increases in high-density components likely also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C150 involve back-of-the-envelope calculations and speculation about compositional changes. While the calculations are reasonable given stated assumptions (C145), the mechanisms proposed (C146-C150) are largely speculative, supported primarily by citations showing these processes can occur rather than direct experimental evidence in this system. The authors appropriately acknowledge uncertainty with phrases like 'could be' and 'seems likely.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors propose three hypothetical functions for mitotic lysosomal exocytosis: (1) providing membrane for mitotic swelling, (2) secreting extracellular matrix modifying enzymes, and (3) acting as a 'reset' to clear toxic/excess components, which could have therapeutic implications for non-dividing cells and various diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C158 are entirely speculative hypotheses about the function of mitotic lysosomal exocytosis. While each hypothesis is supported by citations showing these functions exist in other contexts, no direct experimental evidence is provided to test these specific functions in mitosis. These are reasonable hypotheses for future work but should not be considered supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "This is the first method capable of non-invasively measuring single-cell dry volume or dry mass density. While lacking molecular specificity, the method is non-invasive, quantitative, has high temporal resolution, is comparable to QPM in precision, and is not limited by phototoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 represent methodological assessments and comparisons. The novelty claim (C123) appears reasonable based on the authors' knowledge of the field. The advantages and limitations (C124-C128) are appropriately stated and supported by the measurement precision data and comparison to QPM. The lack of phototoxicity is a clear advantage for long-term tracking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "In interphase, dry mass density is conserved, making buoyant mass an excellent proxy for dry mass. While dry mass loss in mitosis has been reported in adherent cells using QPM, the higher temporal resolution of this method enables more detailed examination of the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by the high correlation data in interphase (Figure 2\u2014figure supplement 3) and appropriate citations to previous QPM work. The claim about higher temporal resolution (C136) is reasonable given the ~75 s measurement interval compared to typical QPM imaging intervals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors reason that macromolecules are the most likely form of mass lost in mitosis (constituting most of dry mass), while ions and small molecules are unlikely candidates. Endocytosis is reported to stop in mitosis, while lysosomal exocytosis has been suggested to increase and can secrete low-density fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 represent reasoning about potential mechanisms based on literature and known cell biology. The logic is sound and appropriately supported by citations. This reasoning motivates the focus on lysosomal exocytosis as a mechanism. Claims C99-C100 appropriately note contradictory findings in the literature regarding endocytosis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors generated a Tg(mitfa:nlsEGFP) transgenic zebrafish line to enrich for melanocyte lineage cells, which represent 0.19% of total skin cells. Using FACS sorting and scRNAseq, they obtained transcriptomes from 29,453 wild-type cells across six time points during melanocyte regeneration, with 87.5% of captured cells expressing endogenous mitfa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the experimental approach and dataset generation. The methodology is well-documented with supporting data in Figure 1A, Figure 1\u2014figure supplement 1A-B, and the Methods section. The enrichment strategy successfully captured mitfa-expressing cells, as evidenced by the high percentage (87.5%) of cells positive for endogenous mitfa expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Single-cell transcriptomic analysis identified multiple cell populations in zebrafish skin, including two major mitfa-expressing subgroups distinguished by differential expression of aox5. One subgroup contains differentiated melanocytes (tyrp1b+, pmela+), while the other contains cells expressing xanthophore markers. Additional populations include iridophores, keratinocytes, fibroblasts, immune cells, and Schwann cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 describe the initial cell type identification from scRNAseq data. The assignments are well-supported by gene expression patterns shown in Figure 1C-E and supplementary figures, using established marker genes. The validation against a published developmental dataset (Saunders et al., 2019) in Figure 1\u2014figure supplement 4 strengthens confidence in the cell type assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Subclustering of mitfa+aox5lo cells revealed four distinct subpopulations plus differentiated melanocytes. Two subpopulations (MP-0 and MP-1) are characterized by high sox4a and low tyrp1b expression, along with neural crest markers, and are designated as melanocyte progenitors. These progenitor subpopulations show distinct gene expression differences (e.g., dio3a, bco2b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe the identification and characterization of progenitor subpopulations. The data in Figure 2A-B and Figure 2\u2014figure supplement 1A-C clearly show distinct clustering and differential gene expression. The designation as progenitors is reasonable based on sox4a expression (associated with stemness in mammals, C55) and neural crest markers, though the functional validation of these populations as progenitors comes from subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The scRNAseq approach is reproducible, as demonstrated by consistent cell type proportions between independent pre-ablation samples. During regeneration, melanocyte populations decrease >95% after ablation (days 0-1) then recover through day 10. Two intermediate subpopulations emerge during regeneration: 'cycling differentiation' (expressing cell cycle genes pcna, cdk1) and 'direct differentiation' (lacking cell cycle genes), both of which expand after ablation and diminish as regeneration completes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 describe temporal dynamics during regeneration. The reproducibility validation (C60, Figure 2\u2014figure supplement 1D) is appropriate. The temporal changes in subpopulation proportions (Figure 2C-D) are well-documented and statistically analyzed. The identification of intermediate subpopulations based on gene expression patterns is clearly supported by the data in Figure 2B and Figure 2\u2014figure supplement 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pseudotime analysis reveals two developmental trajectories from progenitors to melanocytes: one through MP-0 and direct differentiation, another through MP-1 and cycling differentiation. The pseudotime distribution shows loss of high-pseudotime melanocytes after ablation (day 1), enrichment of intermediate states (days 2-5), and recovery of mature melanocytes, mirroring in vivo observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe trajectory analysis results. The pseudotime analysis (Figure 2E-F) is appropriately applied and clearly visualized. The interpretation that this mirrors in vivo observations (C71) is reasonable given prior work (Iyengar et al., 2015), though this is an inference connecting computational analysis to biological reality. The trajectory analysis is supported by RNA velocity (Figure 2\u2014figure supplement 1E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Comparative analysis with murine melanocyte stem cells reveals conserved transcriptional changes during differentiation. Zebrafish MP-0 and MP-1 subpopulations are most similar to murine quiescent McSCs, the direct differentiation subpopulation shares features of multiple murine populations, the cycling differentiation subpopulation overlaps with murine cycling McSCs, and mature melanocytes are similar across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe cross-species comparison. The analysis (Figure 3\u2014figure supplement 1) uses appropriate methods (signature scoring, ortholog mapping) to compare zebrafish and murine datasets. The conservation of transcriptional programs supports the biological relevance of the zebrafish findings. However, the comparison is limited by differences in experimental context (regeneration vs. homeostatic cycling) and the relatively small murine dataset (626 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "NicheNetR analysis identified multiple signaling pathways active during regeneration, including KITLG/KIT, ASIP/MC1R, EDN3/EDNRB, and NRG1/ERBB2. The kita receptor is expressed in progenitor and intermediate subpopulations with stable expression during regeneration, while kitlga ligand expression increases shortly after melanocyte destruction then decreases. kitlga is expressed in fibroblasts and keratinocytes, similar to human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C84-C88, C91 describe signaling pathway analysis. The NicheNetR analysis (Figure 3A) appropriately identifies ligand-receptor pairs, and the identified pathways have known roles in melanocyte biology (supported by citations). The qRT-PCR data (Figure 3C) clearly shows temporal dynamics of kitlga expression. The cellular source of kitlga is supported by scRNAseq data (Figure 3\u2014figure supplement 2) and comparison to human data strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Loss-of-function mutations in kita receptor or kitlga ligand significantly impair melanocyte regeneration. Wild-type animals fully regenerate melanocytes within 2 weeks, while kita(lf) mutants regenerate only 51.4% of melanocytes, and kitlga(lf) mutants show similar defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe the regeneration phenotype in KIT pathway mutants. The data in Figure 4A-B clearly demonstrate the regeneration defect with appropriate quantification and statistical analysis. The similar phenotypes in kita(lf) and kitlga(lf) mutants support a shared pathway requirement. Sample sizes appear adequate (n=9-11 fish per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Single-cell transcriptomic analysis of kita(lf) mutants (24,724 cells) reveals that cell types are conserved but the direct differentiation pathway is absent. The direct differentiation subpopulation fails to expand during regeneration in kita(lf) mutants, and the cycling differentiation subpopulation shows reduced expansion. Serial imaging confirms an eightfold decrease in direct differentiation and twofold decrease in asymmetric divisions in both kita(lf) and kitlga(lf) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 describe the cellular basis of the regeneration defect. The scRNAseq analysis of kita(lf) mutants is well-executed with appropriate integration and trajectory analysis (Figure 4C-D, Figure 4\u2014figure supplements 1-2). The serial imaging data (Figure 4E) provides orthogonal validation of the scRNAseq findings with clear quantification. The convergence of computational and imaging approaches strongly supports the conclusions about fate-specific requirements for KIT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Two distinct progenitor fate paths exist during melanocyte regeneration: (1) direct differentiation through an intermediate state with strong KIT signaling requirement, and (2) asymmetric division characterized by co-expression of differentiation and cell cycle genes with moderate KIT signaling requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 synthesize findings from multiple experiments. The conclusion is well-supported by the combined scRNAseq (trajectory analysis showing two paths) and functional data (differential effects of kita loss on the two paths). The characterization of the two paths is based on clear molecular signatures (cell cycle gene expression) and functional outcomes (direct differentiation vs. division).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ERK activity measurements using ERKKTR-mClover reporter show that progenitors have lower ERK activity than melanocytes under homeostatic conditions. Following melanocyte ablation, wild-type progenitors increase MAPK activity (cytosolic ERKKTR-mClover localization), while kita(lf) progenitors maintain similar baseline ERK activity but fail to upregulate MAPK activity during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 describe ERK activity dynamics. The ERKKTR-mClover reporter is an established tool for measuring MAPK activity. The data in Figure 5A-D clearly show differential ERK activity between cell types and conditions with appropriate quantification. The failure of kita(lf) progenitors to upregulate MAPK activity during regeneration directly links KIT signaling to MAPK pathway activation. Sample sizes appear adequate for the imaging-based measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Constitutively active BRAFV600E rescues melanocyte regeneration in kita(lf) mutants, with minimal effect in wild-type animals. This demonstrates that KIT signaling through the MAPK pathway is necessary and sufficient for proper melanocyte regeneration, and suggests adult melanocyte progenitors are more sensitive to RAS/MAPK signaling than embryonic counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe the genetic rescue experiment. The data in Figure 5E-F and Figure 5\u2014figure supplement 1 clearly show rescue of the kita(lf) regeneration defect by BRAFV600E with appropriate quantification and statistical analysis. This is a strong demonstration of sufficiency. The inference about increased sensitivity compared to embryonic cells (C114) is reasonable but somewhat speculative, as direct comparison data are not provided. The necessity was already established by the loss-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "A separate population of mitfa+aox5hi cycling cells forms a characteristic loop in clustering analysis, with cells in S phase (pcna-enriched) and G2/M phase (cdk1-enriched). These cells do not express melanization genes (tyrp1b, pmela), are rare before injury (day 0), increase robustly during regeneration (days 1-5), and diminish when regeneration completes (day 10). Adjacent subpopulations suggest input (S adj) and output (G2/M adj) populations, with the G2/M adj subpopulation expressing multipotent pigment progenitor markers (foxd3, zeb2a, vim) and sox4a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 describe a distinct cycling population. The clustering analysis (Figure 6A) clearly shows the loop structure, and cell cycle scoring (Figure 6B, Figure 6\u2014figure supplement 1A) appropriately identifies S and G2/M phases. The temporal dynamics (Figure 6C-D) are well-documented. The gene expression patterns (Figure 6E, Figure 6\u2014figure supplement 1B) support the characterization. However, the biological identity and function of these cells remain uncertain (discussed in C143-C149), which is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Serial imaging of 65 inter-stripe xanthophores shows no cell divisions following neocuproine treatment, confirming no xanthophore ablation. All unpigmented mitfa-positive cells in the melanocyte stripe co-express aox5:PALM-EGFP with heterogeneous expression levels (aox5hi and aox5lo). Cells undergoing symmetric divisions during regeneration exhibit high aox5 expression before regeneration, suggesting cycling mitfa+aox5hi cells from scRNAseq correspond to cells undergoing symmetric divisions in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 connect scRNAseq populations to in vivo cell behaviors. The serial imaging data (Figure 7, Figure 7\u2014figure supplement 1) clearly demonstrate that xanthophores do not divide after neocuproine treatment and that symmetrically dividing cells are aox5hi. The dual-reporter imaging (Figure 7A-B) shows heterogeneity in aox5 expression among mitfa+ cells. The connection between scRNAseq populations and in vivo behaviors (C133) is a reasonable inference but remains somewhat indirect, as direct lineage tracing was not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "Melanocyte progenitor heterogeneity is illustrated by two transcriptionally distinct subpopulations (MP-0 and MP-1) present in unperturbed animals. RNA velocity and trajectory analyses indicate both are activated upon melanocyte ablation, with MP-1 feeding primarily into cycling differentiation and MP-0 into direct differentiation. MP-0 appears to be a more stem-like subpopulation that can also backfill MP-1 during regeneration, and both subpopulations are primed to adopt different fates when activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138, C140 synthesize findings about progenitor heterogeneity. The existence of two distinct progenitor subpopulations is well-supported by clustering and gene expression data (Figure 2). The trajectory and RNA velocity analyses (Figure 2E, Figure 2\u2014figure supplement 1E) support the differential fate trajectories. The inference that MP-0 is more stem-like and can backfill MP-1 (C138) is based on trajectory analysis but would benefit from direct lineage tracing validation. The conclusion that cells are 'primed' for different fates is reasonable but somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "MP-0 and MP-1 progenitor subpopulations are unaffected by kita loss of function, but their differentiation products (direct differentiation and cycling differentiation subpopulations) are impacted. This parallels findings in mice where quiescent McSCs are Kit-independent but activated derivatives are Kit-dependent. Although progenitors are unaffected, MAPK signaling is decreased in kita(lf) progenitors, suggesting Kit has a role in specification or survival of differentiation subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C160 compare zebrafish and murine findings and interpret the mechanism. The observation that progenitors persist but their derivatives are affected in kita(lf) mutants is supported by the scRNAseq data (Figure 4D). The comparison to murine studies (C153-C154, citing Ueno et al., 2014) is appropriate and highlights conserved mechanisms. The decreased MAPK signaling in kita(lf) progenitors (C158, from Figure 5C-D) combined with the persistence of progenitors suggests the defect is in the transition to differentiation rather than progenitor maintenance. The proposed role in specification/survival (C160) is a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C161"
+    ],
+    "result": "The study identifies unexpected heterogeneity of melanocyte progenitor subpopulations, defines intermediate subpopulations involved in regeneration, and discovers cellular trajectories linking these populations. KIT signaling via the RAS/MAPK pathway regulates melanocyte progenitor direct differentiation and asymmetric division. Activation of different mitfa-positive subpopulations underlies cellular transitions required to reconstitute the melanocyte pigmentary system, with conserved gene expression changes between zebrafish and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C34-C37, C161 represent the main conclusions of the study. These are well-supported by the comprehensive scRNAseq analysis (29,453 WT cells + 24,724 kita(lf) cells), trajectory analysis, comparative analysis with murine data, functional validation with kita/kitlga mutants, ERK activity measurements, and BRAFV600E rescue experiments. The integration of computational and experimental approaches provides strong support for the conclusions. The conservation with murine systems strengthens the biological significance.",
+    "result_type": "MAJOR"
+  }
+]

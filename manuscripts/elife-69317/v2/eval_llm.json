@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C13"
+    ],
+    "result": "The study collected sera from 29 B.1.1.7-infected patients (23 mild, 6 asymptomatic) and compared them with sera from 20 hospitalized and 17 mild/asymptomatic D614G-infected individuals. B.1.1.7 sera were collected earlier on average than D614G sera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C8-C9, and C13 describe the study cohort composition and sampling strategy. The sample sizes and clinical characteristics are clearly documented in the text and supplementary materials. The timing difference (C13) is acknowledged as a potential confounder that the authors attempt to address through matched subset analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Antibody binding to heterotypic spike proteins was reduced by a small but statistically significant degree for both D614G and B.1.1.7 sera across all three immunoglobulin classes (IgG, IgM, IgA). IgM and IgA antibodies showed less cross-reactivity than IgG. Notably, the direction of cross-reactivity was asymmetric, with IgA antibodies in B.1.1.7 sera retaining only 30% recognition of D614G spike versus 81% retention in the reverse direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C29 describe antibody binding cross-reactivity measured by flow cytometry. The data in Figure 1 support these findings with statistical significance noted. The asymmetric cross-reactivity pattern is particularly striking given >98% amino acid identity between variants (C28-C29), suggesting that even limited mutations can substantially affect polyclonal antibody recognition. The observation is unexpected but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "D614G and B.1.1.7 variants showed comparable immunogenicity when measured by homotypic antibody responses. Antibody titres that bound or neutralized the homotypic virus were similar between D614G and B.1.1.7 sera, despite B.1.1.7 sera being collected earlier. Within B.1.1.7 infections, antibody levels were not statistically different between mild and asymptomatic cases, though they were on average lower in asymptomatic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C19 suggest comparable immunogenicity between variants based on homotypic responses. However, this conclusion is complicated by timing differences (C13), small sample sizes for asymptomatic cases (n=6), and later findings (C52-C53) showing B.1.1.7 sera had higher absolute neutralizing antibody levels in matched subsets. The lack of statistical significance for mild vs. asymptomatic comparison (C18) may reflect insufficient power rather than true equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Neutralizing antibody titres correlated most closely with IgG binding antibodies. D614G sera largely preserved neutralization of B.1.1.7 (fold change -1.3, p=0.183), indicating substantial cross-neutralization. In contrast, B.1.1.7 sera showed significantly reduced neutralization of the Wuhan strain (fold change -3.4, p<0.001), and the difference in cross-neutralization drop between the two groups was statistically significant (p<0.001). Both D614G and B.1.1.7 sera showed markedly reduced neutralization of B.1.351 (fold changes -8.2 and -7.7, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present the core neutralization findings with appropriate statistical analysis and clear quantitative data shown in Figure 2. The asymmetric cross-neutralization pattern is well-supported by the data and consistent with independent findings from Brown et al. (C43-C44). The p-values and fold-change ranges are reported, and the findings are replicated across multiple assays. This is the study's primary result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C80",
+      "C81"
+    ],
+    "result": "Natural infection with each SARS-CoV-2 strain induces antibodies that recognize the infecting strain most strongly, with variable cross-recognition of other strains. Importantly, antibodies induced by B.1.1.7 infection were less cross-reactive with other dominant strains than those induced by the parental strain, and this drop in cross-reactivity was significantly more pronounced following B.1.1.7 than parental strain infection. The results indicate that heterotypic immunity induced by SARS-CoV-2 variants is asymmetric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C80-C81 represent the study's main conclusions, which are well-supported by the binding (C20-C27) and neutralization (C35-C40) data. The asymmetric pattern is demonstrated across multiple antibody isotypes and functional assays. The conclusion is strengthened by independent confirmation from Brown et al. (C43-C44) and consistency across matched subset analyses (C88-C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The stronger heterotypic recognition of B.1.1.7 by D614G sera was independent of disease severity and more pronounced in mild/asymptomatic than severe D614G infection (85% vs. 52% neutralization retained). The ability of mild/asymptomatic D614G sera to neutralize B.1.1.7 did not change over 2 months of follow-up, while binding antibody titres declined significantly for all Ig classes. Neutralizing antibody titres against B.1.351 remained undetectable at both timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 address potential confounders of disease severity and time since infection. The longitudinal data (Figure 2\u2014figure supplement 2) demonstrate stability of neutralizing antibody function despite declining binding antibody levels, which is an important observation. However, the severe D614G group is small (n=20) and the follow-up is limited to 2 months, which may not capture longer-term dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In matched subsets of mild/asymptomatic cases with comparable time since infection (24.0 vs. 19.5 days, p=0.37), D614G sera retained 87% neutralization of B.1.1.7 while B.1.1.7 sera retained only 42% neutralization of D614G. B.1.1.7 sera contained higher absolute levels of neutralizing antibodies than D614G sera against both the infecting variant (p=0.003) and B.1.351 (p=0.006). The authors acknowledge that larger sample sizes are needed to conclusively determine if B.1.1.7 infection is more immunogenic than D614G infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C52-C54 present matched subset analysis addressing confounding by severity and timing. The statistical significance (p=0.003, p=0.006) and careful matching strengthen the conclusion about asymmetric cross-reactivity. However, the authors appropriately acknowledge limitations (C54) regarding sample size for definitive conclusions about relative immunogenicity. The matched subset is small (n=11 per group), which limits power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The unidirectional pattern of cross-reactivity argues that emergence of B.1.1.7 is unlikely to have been driven by antibody escape. Supporting this, B.1.1.7 and D614G viruses were equally sensitive to neutralization by BNT162b2 and AZD1222 vaccination-induced antibodies, though both were approximately twofold less sensitive than the Wuhan strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 present an inference about the evolutionary drivers of B.1.1.7 emergence based on the cross-reactivity pattern. The logic is sound: if B.1.1.7 emerged to escape D614G immunity, D614G sera should show reduced neutralization of B.1.1.7, but the opposite is observed. The vaccine data (C46-C48) from Wall et al. provide independent support. This is a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In contrast to the current study and Brown et al., Liu et al. reported that B.1.1.7 convalescent sera recognized the Victoria strain more strongly than homotypic B.1.1.7 virus, with neutralizing antibody titres 2-3 times higher than sera from other infections. This discrepancy may be explained by higher viral loads during B.1.1.7 infection compared to D614G infection, potentially inducing higher antibody levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C51 discuss conflicting findings from Liu et al. The authors appropriately acknowledge this discrepancy and propose donor selection and viral load differences as potential explanations. However, without access to the Liu et al. cohort details or direct comparison, it's difficult to definitively resolve this contradiction. The viral load hypothesis (C51) is plausible but speculative. This highlights the need for standardized cohort selection and reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A comparison of sera from B.1.351 or parental strain B.1.1.117 infection in South Africa showed stronger neutralization of the infecting strain. However, unlike B.1.1.7 infection, B.1.351 infection induced substantial cross-neutralization of the parental strain and B.1.1.28 variant, while parental strain infection induced significantly lower B.1.351 neutralization. Therefore, heterotypic immunity between B.1.351 and the parental strain was also asymmetrical, but reversed compared to B.1.1.7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 discuss findings from Cele et al. and Moyo-Gwete et al. regarding B.1.351, which show a reversed asymmetry pattern compared to B.1.1.7. This is well-supported by the cited literature and provides important context for understanding variant-specific immune responses. The observation that different variants induce different patterns of cross-reactivity is significant for vaccine design considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The B.1.351, B.1.1.28, and B.1.617.2 variants appear comparably sensitive to BNT162b2 and AZD1222 vaccine-induced antibodies (both based on Wuhan sequence). However, infection with B.1.351 or B.1.1.28 may induce lower cross-neutralization of each other than of themselves, likely due to spike sequence divergence. Current variants of concern harbor 10-12 amino acid changes from Wuhan but 12-21 changes between each other, with B.1.617.2 being most divergent. The authors infer that greater sequence divergence will lead to lower heterotypic immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 synthesize findings about multiple variants from the literature and sequence analysis (Figure 2\u2014figure supplement 4). The sequence divergence data (C67-C69) are directly shown and support the inference about reduced cross-reactivity with increasing divergence (C70). However, C70 is somewhat speculative as it extrapolates beyond the tested variants. The vaccine sensitivity data (C63-C65) are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The measurable reduction in polyclonal antibody binding to heterotypic spikes was unexpected given >98% amino acid identity. Mutations selected for antibody escape typically target the receptor binding domain and should not directly affect non-neutralizing antibodies to other spike domains. However, the reduction in heterotypic binding was less pronounced than the reduction in heterotypic neutralization. The findings suggest either that mutated epitopes are targeted by a substantial fraction of the response or that allosteric effects/conformational changes affect a larger fraction of polyclonal antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 discuss the mechanistic interpretation of reduced binding despite high sequence similarity. The observation is well-documented (C31) and the proposed explanations (C33) are reasonable hypotheses supported by citations. The finding that binding reduction is less than neutralization reduction (C31) is consistent with neutralizing antibodies being more focused on the RBD where most mutations occur. However, the mechanistic explanation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C57"
+    ],
+    "result": "The authors conclude that the degree of heterotypic immunity should be an important consideration in choosing spike variants as vaccine candidates, and that antigenic variation associated with SARS-CoV-2 evolution may necessitate multivalent vaccines. They emphasize that assessment of heterotypic immunity induced by new variants will be critical for understanding infection-induced immunity and adapting vaccines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C57 present forward-looking recommendations based on the study findings. These are reasonable conclusions given the demonstrated asymmetric cross-reactivity and increasing variant divergence. However, these are speculative recommendations about future vaccine strategies rather than direct experimental findings. The logic is sound but the practical implementation would require additional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study used expression plasmids encoding B.1.1.7 spike (with mutations D614G, \u039469\u201370, \u0394144, N501Y, A570D, P681H, T716I, S982A, D1118H) and B.1.351 spike (with mutations D614G, L18F, D80A, D215G, L242H, R246I, K417N, E484K, N501Y, A701V). The B.1.351 virus isolate acquired Q677H and R682W mutations at the furin cleavage site during passage in Vero V1 cells, detected in approximately 50% of genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 describe the spike constructs used, which is important methodological information. However, C93 reveals a significant technical concern: the B.1.351 virus isolate acquired additional mutations during cell culture passage. These furin cleavage site mutations (Q677H, R682W) could potentially affect viral infectivity and neutralization sensitivity, introducing uncertainty into the B.1.351 neutralization results. The authors report this finding but do not fully address its implications for data interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C55",
+      "C56"
+    ],
+    "result": "The B.1.1.7 variant is thought to have emerged in the UK in September 2020 and has been detected in over 50 countries. The B.1.617.2 (Delta) variant first emerged in India and has now replaced B.1.1.7 in the UK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C55-C56 provide epidemiological context from the literature and established knowledge at the time of writing. These are well-supported by citations (C1-C2) and represent accurate background information. However, these are not original findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Antibody titres may depend on the severity of SARS-CoV-2 infection and time since infection. Mutations in B.1.1.7 and B.1.351 variants reduce recognition by antibodies elicited by natural infection with the parental Wuhan strain and D614G variant, which also impinges the effectiveness of current vaccines based on the Wuhan strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C73-C75 provide established background knowledge from the literature, well-supported by multiple citations. These claims set up the rationale for the study's design and the importance of controlling for confounding factors. This is not original data but appropriate contextualization.",
+    "result_type": "MINOR"
+  }
+]

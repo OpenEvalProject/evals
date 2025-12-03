@@ -1,0 +1,420 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MCF-7 breast cancer cells were adapted to doxorubicin (98.1 nM, DoxR) or epirubicin (852 nM, EpiR) over several months, with control cells maintained in DMSO. The resistant cells grew slower than controls, retained resistance after a 7-week drug holiday, and resistance was not simply due to drug exclusion via ABC transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the cell model generation and basic characterization. The methodology is cited from prior work (Hembruff et al., 2008) and supported by experimental data in Figure 1a-c and Figure 1\u2014figure supplement 1a. The stable resistance and growth characteristics are directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "DoxR and EpiR cells show 56% overlap in differentially expressed genes compared to controls, but 44% of genes are distinct. Principal component analysis separates the three cell types, with DoxR and EpiR diverging in the second component. Gene expression profiles overlap significantly with post-treatment patient biopsies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by transcriptomic analysis (Figure 1d,e) and comparison with patient data (GSE43816, Figure 1\u2014figure supplement 1b,c). The statistical analysis using random shuffling to assess significance of overlap with patient data is appropriate. PCA clearly shows three discrete groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "GSEA reveals both DoxR and EpiR cells show enrichment in drug clearance pathways and depletion of proliferation pathways. However, specific metabolic pathways are enriched differently: pyruvate and glutathione metabolism in DoxR; nicotinate/nicotinamide and amino acid metabolism in EpiR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by GSEA analysis shown in Figure 1f and Figure 1\u2014figure supplement 1d. The analysis appropriately identifies both shared and distinct pathway enrichments between the two resistant cell types, establishing the foundation for subsequent metabolic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Global metabolite profiling shows significant differences between Control, DoxR, and EpiR cells. Integrated network analysis reveals DoxR cells have increased glutathione pathway genes and metabolites, while EpiR cells show alterations in pyruvate and glutamate metabolism through transamination reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by metabolomics data (Figure 1g,h) and integrated network analysis (Figure 1i). The integration of transcriptomics and metabolomics provides converging evidence for distinct metabolic adaptations. The visualization clearly shows pathway-specific changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "shRNA screening targeting 1215 druggable genes reveals DoxR cells are sensitive to knockdown of glutathione metabolism genes (GSR, GPX family), while EpiR cells are vulnerable to suppression of oxidative phosphorylation genes (NDUF, SDH family) and methionine metabolism genes. Both are sensitive to aldo-keto reductase knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by pooled shRNA screen data analyzed by GSEA (Figure 1k, Figure 1\u2014figure supplement 1e). The screen design is appropriate with 7-day timepoint and MAGeCK analysis. Results align with transcriptomic/metabolomic findings, providing functional validation of metabolic dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "DoxR cells show significantly increased expression of anaplerotic metabolism, glutamine metabolism, and glutathione metabolism genes. Stable isotope tracing confirms DoxR cells favor anaplerotic pyruvate metabolism through PC/ME1/2 rather than PDH, with decreased synthesis of glutamate, alanine, and serine from glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by RT-qPCR (Figure 2a) and [U-13C]-glucose tracing (Figure 2b-d, Figure 2\u2014figure supplement 1a,b). The isotope tracing methodology is appropriate with kinetic measurements. The m+3 labeling pattern clearly indicates anaplerotic metabolism. Full kinetics are shown as recommended by field standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DoxR cells show enriched glutamine metabolism with increased labeling to glutamate, \u03b1-ketoglutarate, and citrate. Reductive carboxylation is particularly increased (m+5 citrate). Most strikingly, DoxR cells show fourfold enrichment in glutamine-derived glutathione synthesis (GSH m+5, GSSG m+5,10) and export significantly more glutamate than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by [U-13C]-glutamine tracing (Figure 2e,f, Figure 2\u2014figure supplement 2a,b) and media metabolite analysis (Figure 2\u2014figure supplement 3a). The fourfold enrichment in glutathione labeling is a key quantitative finding. The increased glutamate export is consistent with cystine/glutamate antiporter activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "DoxR cells have significantly higher total glutathione and GSH:GSSG ratio than EpiR and Control cells, with decreased NADH:NAD and NADPH:NADP ratios. EpiR cells show elevated NAD(P)H:NAD(P) ratios. IDH1 expression is significantly increased in DoxR cells, consistent with reductive carboxylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by direct measurements of glutathione (Figure 2g,h) and NAD(P)(H) ratios (Figure 2i), plus gene expression (Figure 2a,f). The decreased NADPH:NADP ratio in DoxR is consistent with NADPH consumption by glutathione reductase and reductive carboxylation. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Both resistant cell lines show increased antioxidant gene expression, with DoxR showing higher increases in NFE2L2, NQO1, SOD2, PRDX5, and CAT. DoxR cells have lower ROS signals than EpiR at baseline and after H2O2 treatment, with both resistant lines having lower ROS than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by gene expression data (Figure 2j) and CM-H2DCFDA ROS measurements (Figure 2k,l). The ROS measurements are appropriate with both baseline and H2O2-challenged conditions. The lower ROS in DoxR is consistent with their elevated glutathione metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "EpiR cells show significantly increased basal and maximal oxygen consumption rates compared to controls, with 69% of ATP from OXPHOS (vs 60-62% in DoxR/Control). EpiR cells have 25% greater total bioenergetic capacity, greater oxidative reserve capacity, and elevated mitochondrial volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by Seahorse respirometry (Figure 3a-c) and calculated ATP production rates using published algorithms (Mookerjee et al., 2017; Figure 3d-h). Mitochondrial volume quantification by immunofluorescence (Figure 3i) provides structural validation. The bioenergetic analysis is rigorous and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "PPARGC1A expression is markedly increased in EpiR cells at mRNA and protein levels, with modest non-significant increase in DoxR. ERR\u03b1 expression is increased in both resistant lines. ChIP shows PGC-1\u03b1 and ERR\u03b1 enrichment at promoters of glutathione, oxidative response, drug efflux, and resistance genes, with notably higher PGC-1\u03b1 enrichment in EpiR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by gene expression (Figure 3j), immunoblots (Figure 3k), and ChIP analysis (Figure 3\u2014figure supplement 1a-c). The ChIP data directly demonstrate transcriptional regulation. The higher PGC-1\u03b1 enrichment in EpiR aligns with its elevated expression. Prior work citations for AKR1C3/FTH1 are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Knockdown of both PPARGC1A and PPARGC1B significantly reduces growth and survival of both DoxR and EpiR cells. PGC-1 knockdown reduces expression of glutathione metabolism genes (GCLM, GSS, GSR) in DoxR and GCLM in EpiR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by siRNA knockdown experiments (Figure 3l-o). The dual knockdown approach is appropriate to avoid compensation between PGC-1\u03b1 and PGC-1\u03b2. The functional effects on growth/survival and downstream gene expression provide strong evidence for PGC-1 importance in resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Glutamine withdrawal severely affects proliferation of all cell lines, but while Control cells maintain low proliferation, DoxR and EpiR cells cannot proliferate without glutamine. This is accompanied by small but significant increases in cell death (5% DoxR, 10% EpiR). Glucose limitation has no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by proliferation assays with glutamine withdrawal (Figure 4a,b) and glucose limitation (Figure 4\u2014figure supplement 1a). The differential sensitivity to glutamine vs glucose withdrawal is clearly demonstrated. The quantitative differences in cell death are modest but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "After 4 hours of glutamine withdrawal, all cell lines show decreased mitochondrial ATP production (DoxR most affected). EpiR and Control cells compensate with increased glycolytic ATP production, maintaining total ATP. DoxR cells fail to increase glycolytic ATP, resulting in decreased total ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by Seahorse bioenergetics analysis with glutamine withdrawal (Figure 4c-f). The 4-hour timepoint is appropriate for acute metabolic response. The failure of DoxR cells to compensate glycolytically is a key finding revealing metabolic inflexibility. The JATP calculations are properly performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Glutamine starvation entirely abrogates spare oxidative capacity in DoxR cells, significantly reducing their total bioenergetic capacity and flexibility. Control and EpiR cells show diminished oxidative but increased glycolytic capacity with maintained flexibility. EpiR cells retain greater total capacity than DoxR after glutamine withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by bioenergetic space plot analysis (Figure 4g-j). The visualization clearly shows the differential effects on capacity and flexibility. The complete loss of spare oxidative capacity in DoxR is striking. The analysis appropriately uses established bioenergetic framework (Mookerjee et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In independently derived resistant cells (D100, E100), key oxidative response genes and GLS/IDH1 are overexpressed in both lines, but only D100 shows glutathione metabolism gene overexpression. D100 cells have increased glutathione synthesis from glutamine (decreased in E100) and lower ROS signals than E100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by gene expression (Figure 5b), stable isotope tracing (Figure 5c, Figure 5\u2014figure supplement 1a), and ROS measurements (Figure 5d,e) in independently derived cell lines. This replication with cells selected to a common 100 nM dose strengthens the conclusion that metabolic adaptations are drug-specific, not dose-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "E100 cells show significantly higher PPARGC1A expression and increased oxygen consumption, extracellular acidification, total ATP production, basal/maximum oxidative ATP production, and greater bioenergetic capacity compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by gene expression (Figure 5b) and Seahorse bioenergetics (Figure 5\u2014figure supplement 1b,c and Figure 5f-i) in independently derived E100 cells. This replicates the EpiR phenotype, confirming that epirubicin resistance is associated with elevated OXPHOS capacity regardless of selection protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "D100 cells show significant PPARGC1A increase (unlike DoxR) and elevated maximum oxidative ATP production and bioenergetic capacity. Despite differences between doxorubicin-resistant models, epirubicin-resistant cells consistently display higher oxidative capacity than doxorubicin-resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by gene expression and bioenergetics data (Figure 5b,g-i). The difference in PPARGC1A expression between DoxR and D100 suggests some variability in adaptation strategies, but the consistent finding that epirubicin-resistant cells have higher oxidative capacity than doxorubicin-resistant cells (C90) is the key conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Phenformin has strong dose-dependent effects on drug-na\u00efve cells. Epirubicin-resistant cells (EpiR, E100) are similarly vulnerable to phenformin, while doxorubicin-resistant cells (DoxR, D100) are only mildly responsive. Epirubicin-resistant cells are significantly more sensitive to phenformin than doxorubicin-resistant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 are supported by phenformin treatment data in both cell models (Figure 6a,b). The differential sensitivity aligns with the elevated OXPHOS dependence of epirubicin-resistant cells. The dose-response curves clearly show the differences. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Both doxorubicin-resistant cell models (DoxR, D100) are acutely and specifically sensitive to BSO treatment in vitro. BSO reduces DoxR proliferation by 60% at 50 \u00b5M with little effect on Control/EpiR cells at this concentration. D100 cells are significantly more sensitive to BSO than Ctl and E100 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by BSO treatment data in both cell models (Figure 6c,d). The specific sensitivity of doxorubicin-resistant cells to glutathione synthesis inhibition is striking and aligns with their elevated glutathione metabolism. The dose-response data clearly demonstrate differential sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In vivo, daily BSO treatment significantly reduced DoxR tumor growth (30% increase vs 100% in vehicle), while EpiR tumor growth was unaffected. Both tumor types doubled in size over 20 days with vehicle treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by in vivo xenograft data (Figure 6e-g). The experimental design is appropriate with opposing mammary fat pad injections and estrogen supplementation. The differential response to BSO in vivo validates the in vitro findings. Sample sizes (N=4-5) are modest but show clear effects with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Summary schematic: Both anthracyclines induce ROS and DNA damage. Both resistant cell types engage oxidative response, drug metabolism, and efflux pathways, and depend on PGC-1\u03b1. Doxorubicin-resistant cells rely on glutamine for glutathione synthesis and mitochondrial ATP. Epirubicin-resistant cells show elevated mitochondrial content, OCR, and oxidative capacity. These dependencies are actionable: epirubicin-resistant cells are more sensitive to phenformin, doxorubicin-resistant cells to BSO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 summarize the main findings (Figure 6h). These summary claims are well-supported by the collective evidence from transcriptomics, metabolomics, stable isotope tracing, bioenergetics, functional genomics, and therapeutic intervention experiments presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cardiotoxicity is a common anthracycline side effect, linked to oxidative stress. Epirubicin induces less cardiotoxicity than doxorubicin despite equivalent response rates. This suggests doxorubicin-treated cells may face greater oxidative challenge, potentially explaining their greater dependence on glutathione synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by citations (Mao et al., 2019; Salvatorelli et al., 2006). Claim C112 is presented as speculation but is reasonable given the data. The inference connecting differential cardiotoxicity to differential oxidative stress and glutathione dependence is logical but remains speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Targeting uncoupling proteins sensitizes resistant leukemia cells to anthracyclines. PGC-1\u03b1 regulates multiple resistance-related pathways (OXPHOS, oxidative stress, glutamine/glutathione metabolism). Its context-dependent roles may underpin specific metabolic vulnerabilities in both resistance types. Both resistant cell types were sensitive to PGC-1\u03b1 knockdown. PGC-1\u03b1 is implicated in drug resistance across cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 are supported by appropriate citations and the PGC-1\u03b1 knockdown data (Figure 3m,n). The discussion appropriately contextualizes the findings within the broader literature on PGC-1\u03b1 in cancer and drug resistance. The inference about context-dependent roles (C117) is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Targeting transcription factors downstream of PGC-1\u03b1 may be effective in some cases, but direct PGC-1\u03b1 targeting has shown little success. Targeting global regulators like PGC-1\u03b1 may be promising broadly, but exploiting specific metabolic dependencies (e.g., BSO for doxorubicin resistance) may be more immediately effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by citations. Claims C122-C123 represent reasonable conclusions based on the study's findings, particularly the successful BSO treatment of doxorubicin-resistant tumors. The discussion appropriately weighs broad vs. targeted therapeutic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background claims establishing the clinical significance of breast cancer, drug resistance, chemotherapy use, and the role of OXPHOS in resistance across cancer types. Examples of successful metabolic targeting strategies in other cancers are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C134 are background/context claims supported by appropriate citations. These establish the rationale and significance of the study. The citations appear appropriate for the claims made. These are standard background claims for this type of study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C90"
+    ],
+    "result": "The manuscript establishes the clinical context that neonatal pain is a significant problem with few proven analgesics, creating an urgent need for better approaches to testing pain interventions in this population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C14, and C90 collectively establish the clinical rationale through citations to prior literature. These background claims are well-supported by multiple references and represent established knowledge in neonatal pain research, providing appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Multiple factors including age, prior pain experience, stress, sex, illness, and behavioral state contribute to high inter-individual variability in neonatal pain responses, necessitating large sample sizes in analgesic trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C16-C21 are well-supported by extensive citations to prior research. This establishes the scientific rationale for why reducing sample sizes through accounting for baseline variability would be valuable, though these are background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cross-over trial designs commonly used in adult pain studies are not appropriate for neonatal pain research due to ethical constraints and rapidly changing within-subject variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 logically establish why alternative approaches are needed for neonatal studies. C22 is citation-supported, while C23-C25 represent reasonable inferences based on ethical standards and neonatal physiology. This provides justification for the proposed paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C4"
+    ],
+    "result": "EEG-derived measures of noxious-evoked brain activity provide a validated surrogate marker for pain assessment in neonates, with a characterized template that discriminates noxious from non-noxious stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C4 are well-supported by citations to prior validation work, particularly Hartley et al. 2017. The specificity of the noxious-evoked template (C34) is important for the validity of the paradigm, distinguishing it from general arousal responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C61"
+    ],
+    "result": "Study 1 demonstrates that noxious-evoked brain activity in response to mild experimental stimuli (64 mN) is strongly correlated with responses to clinically required heel lance within individual neonates (R\u00b2 = 0.77, p = 0.0025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35 and C61 report a strong correlation in Study 1, but the sample size is very small (n=9) and acknowledged as a feasibility study. While the correlation is statistically significant and strong, the limited sample and retrospective nature warrant caution. The finding is retested in Study 3 with a larger sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C62",
+      "C63"
+    ],
+    "result": "Study 2 simulations demonstrate that accounting for baseline sensitivity can reduce required sample sizes from 66 to 16 neonates per group (76% reduction) for detecting a 40% intervention effect with 95% power, with the magnitude of reduction depending on intervention effect size and correlation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C62-C63 are supported by the simulation methodology described in the methods. The simulations appropriately model the relationship observed in Study 1 and systematically vary key parameters. The code is made available, supporting reproducibility. The conclusions about sample size reduction are mathematically sound given the assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C60",
+      "C67",
+      "C68"
+    ],
+    "result": "The proposed noxious-evoked baseline sensitivity paradigm accounts for individual differences in pain responses and significantly reduces required sample sizes in neonatal analgesic trials, likely capturing effects from multiple factors including prior pain exposure and prematurity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C60, C67-C68 represent the core methodological contribution. The paradigm is demonstrated across four studies with 92 neonates. While C67-C68 involve inference about what factors are captured, the overall approach is well-justified and empirically tested. The claim of significant sample size reduction (C60) is supported by both simulation and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Study 3 confirms that gentle touch reduces noxious-evoked brain activity by 39%, with statistical significance achieved only when accounting for baseline sensitivity (p=0.026 vs p=0.05). The intervention effect is most prominent in neonates with high baseline sensitivity, disrupting the expected correlation between experimental and clinical responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by the Study 3 data (n=31 after exclusions). The correlation in controls (C40, R\u00b2=0.65) replicates Study 1. The borderline significance without adjustment (C42, p=0.05) becoming significant with adjustment (C43, p=0.026) demonstrates the paradigm's utility. The disrupted correlation in the intervention group (C44) and differential effects by baseline sensitivity (C45-C46) provide mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C39",
+      "C64",
+      "C73",
+      "C74"
+    ],
+    "result": "Gentle touch (brushing at 3 cm/s to optimally stimulate C-tactile fibers) reduces noxious-evoked brain activity in neonates, reconfirming prior findings and supporting the need for randomized controlled trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C39, C64, C73-C74 are supported by Study 3 data showing 39% reduction and prior work (Gursul et al. 2018). The physiological rationale for the 3 cm/s brushing speed is citation-supported (C73-C74). However, the study lacks randomization and blinding, which the authors acknowledge, appropriately calling for RCTs rather than claiming definitive efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Study 3 shows that reflex withdrawal responses to experimental stimuli correlate with heel lance responses (R\u00b2=0.36, p=0.009) but more weakly than brain activity, and gentle touch did not significantly reduce reflex withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by EMG data from Study 3. The weaker correlation (C48, R\u00b2=0.36 vs 0.65 for brain activity) limits the utility of reflex measures for this paradigm. The lack of significant intervention effect on reflexes (C49) is consistent with prior work cited and may reflect spinal vs cortical processing differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Study 4 demonstrates that paracetamol administered 1 hour before immunization significantly reduces noxious-evoked brain activity (p<0.001), with disrupted baseline-response correlations suggesting analgesic efficacy, particularly in neonates with high baseline sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50 and C56-C59 show significant group differences in Study 4, but the study has important limitations: it was opportunistic following guideline changes (not randomized), baseline sensitivity was only measured in a subset (n=9), and the lack of baseline measures in controls limits interpretation. The disrupted correlations (C56, C58) are suggestive but indirect evidence of analgesic effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C65"
+    ],
+    "result": "Paracetamol reduces noxious-evoked brain activity in neonates, providing evidence that it is a candidate analgesic for procedural pain, though prior studies using behavioral measures have been inconclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C51-C55, and C65 present paracetamol findings in context of prior literature. While Study 4 shows significant brain activity reduction (C50), the study design limitations (non-randomized, opportunistic) and the authors' own acknowledgment that this is preliminary evidence requiring RCTs (C66) suggest the claim of efficacy should be tempered. The contrast with prior behavioral studies (C54) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C84",
+      "C91"
+    ],
+    "result": "The findings warrant randomized controlled trials of gentle touch and paracetamol using multi-modal pain assessment, and implementing this paradigm in clinical trials could optimize resources and expedite analgesic discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C84, and C91 represent appropriate conclusions given the study limitations. The authors correctly identify that their observational studies provide preliminary evidence requiring confirmation through RCTs. The recommendation for multi-modal assessment (C84) acknowledges the limitations of single-measure approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Brain-derived measures of noxious-evoked activity may represent better proxy pain measures than spinal reflex signals because pain is a complex cortical experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the IASP definition (C75) and the empirical finding of stronger correlations with brain vs reflex measures (C48). However, this remains an inference about what constitutes a \"better\" pain measure in non-verbal populations, appropriately presented as a possibility rather than certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Assessing baseline sensitivity may identify neonates who would benefit most from interventions, as those with higher baseline sensitivity showed greater reductions, while those with low sensitivity showed minimal benefit possibly due to floor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by the differential effects observed in Studies 3 and 4 (C45, C57). The floor effect explanation (C80) is appropriately labeled as speculation. This finding has important clinical implications for personalized pain management, though it requires validation in larger randomized studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C97",
+      "C98"
+    ],
+    "result": "The experimental noxious stimulus (PinPrick) is appropriate for neonatal research as it is non-tissue damaging, activates nociceptive fibers, does not cause behavioral distress, and is acceptable to parents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C97-C98 establish the ethical and practical suitability of the experimental stimulus. These characteristics are supported by citations (C70, C71) and stated knowledge (C69, C72, C98). This is important for the feasibility and ethical acceptability of the paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The noxious-evoked brain activity measure quantifies activity at the Cz electrode, which has the greatest and most reproducible response, but does not represent all nociceptive activity across the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 appropriately describe both the strengths and limitations of the measurement approach. The focus on Cz is justified by prior validation work (C82), while the acknowledgment of limitations (C83) is important for interpreting the findings. This represents appropriate scientific transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The paradigm does not account for rapidly fluctuating state effects like attention or sleep state, though resting state brain activity and white matter integrity can predict noxious-evoked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 acknowledge an important limitation while noting potential future improvements. C86 represents a genuine limitation that could reduce the correlation between baseline and clinical responses. C87 (citation-supported) suggests future directions for enhancing the paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The paradigm is applicable to common acute somatic painful procedures (heel lancing, cannulation, injections) but may not apply to visceral pain, post-operative pain, longer procedures, or chronic pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 appropriately define the scope and limitations of the paradigm. C88 is supported by the empirical testing in heel lance and immunization. C89 represents reasonable inference about limitations, appropriately presented as speculation about untested applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Validation studies confirm that experimental noxious stimuli applied to different body locations (foot, hand, thigh) evoke characteristic brain activity at latencies related to distance from the brain, and the noxious-evoked template appropriately characterizes immunization responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 describe thorough validation work supporting the use of the template across different stimulus locations. The latency-distance relationship (C102) follows neurophysiological principles. The validation for immunization (C103-C104) is important for Study 4's validity. Statistical testing and correlation with the template support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The four studies included 92 neonates total, with Study 1 using retrospective data from 9 neonates, Study 3 recording from 38 neonates, Study 4 recording from 29 neonates, and validation conducted in 16 additional neonates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 accurately describe the study samples as detailed in the methods. These are straightforward factual claims about study design and sample sizes, which are clearly documented in Table 1 and the methods section.",
+    "result_type": "MINOR"
+  }
+]

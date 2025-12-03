@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C100"
+    ],
+    "result": "The 3PM71 mutant exhibits progressive loss of flight ability and synaptic integrity with age. At Day 3, 3PM71 mutants perform similarly to wild-type flies in flight assays and show comparable NMJ morphology. However, by Day 25, 3PM71 mutants display significantly reduced flight performance, severe motor neuron deterioration, and significant decreases in total branch length, branch number, and bouton number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 and C100 provide converging evidence from both functional (flight assays) and structural (immunohistochemistry) analyses showing progressive deterioration. The data includes appropriate controls, quantitative measurements, and statistical analysis (p<0.0001). The temporal progression from normal to impaired function/structure strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C105",
+      "C106"
+    ],
+    "result": "The 3PM71 mutation maps to CG31475 on chromosome 3R. Deficiency mapping shows that 3PM71 is recessive and the responsible gene lies within the region uncovered by Df(3R)ED5938. Three independent CG31475 alleles phenocopy 3PM71 when tested with the deficiency, and DNA sequencing reveals a deletion and amino acid change in the second exon of CG31475.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 provide comprehensive genetic mapping evidence including complementation tests with multiple independent alleles and DNA sequencing confirmation. The genetic logic is sound: deficiency mapping narrows the region, complementation tests with three independent alleles confirm the gene identity, and sequencing identifies the molecular lesion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C107"
+    ],
+    "result": "Transcript levels of myd are not significantly altered in mutant alleles compared to wild-type, suggesting that the mutations interfere with protein function rather than expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is directly supported by qPCR data (Figure 3\u2014figure supplement 1), and C107 provides a reasonable interpretation. However, the manuscript does not provide protein-level data to confirm whether the mutations affect protein stability or function, which would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C108"
+    ],
+    "result": "Tissue-specific RNAi experiments demonstrate that Myd is required in postsynaptic muscle tissue to maintain synaptic integrity. Ubiquitous knockdown is lethal, while muscle-specific knockdown recapitulates the progressive flight defect and NMJ deterioration seen in myd mutants. Knockdown in neurons or glia does not produce similar phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide systematic tissue-specific knockdown data with appropriate controls. The specificity of the RNAi was validated by rescue with UAS-myd (C33). The progressive nature of the defect is documented both functionally and structurally. The conclusion that muscle tissue is the primary site of Myd requirement is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Temporal knockdown experiments using temperature-sensitive Gal80 show that adult-specific knockdown of mayday after eclosion still results in progressive loss of flight ability, indicating that mayday is required throughout aging to maintain synaptic integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by the temporal knockdown data (Figure 4\u2014figure supplement 3). The experimental design appropriately addresses whether the adult phenotype is due to developmental defects. However, the interpretation that mayday is required \"throughout aging\" is somewhat overstated, as the experiment only demonstrates requirement after eclosion, not continuous requirement throughout the lifespan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C109",
+      "C119"
+    ],
+    "result": "Rescue experiments demonstrate that maintaining synaptic integrity requires Myd expression in both presynaptic motor neurons and postsynaptic muscles. Ubiquitous expression of UAS-venus::myd rescues both flight behavior and NMJ morphology in myd3PM71 mutants, but muscle-specific expression alone is insufficient. Combined expression in both muscles and motor neurons fully rescues the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide comprehensive rescue data for both functional and structural phenotypes. The requirement for both pre- and postsynaptic expression is clearly demonstrated. However, there is an apparent inconsistency: muscle-specific knockdown (C36) recapitulates the mutant phenotype, but muscle-specific rescue (C43) is insufficient. This suggests either that the knockdown is more complete than the rescue, or that there are technical differences between the experiments that are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C95",
+      "C101",
+      "C102",
+      "C112"
+    ],
+    "result": "Mayday is functionally homologous to human Cab45, a Trans Golgi Network (TGN) protein involved in sorting secretory cargo. Protein alignment shows 48% similarity and 28% identity, with greatest similarity in conserved EF hand domains associated with Ca2+ binding. Myd strongly colocalizes with a Golgi marker in muscle tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide multiple lines of evidence for functional homology: sequence similarity (C50), conserved functional domains (C101-C102), and subcellular localization (C52). The colocalization data (Figure 6B-G) clearly demonstrates Golgi localization. However, the functional homology claim would be strengthened by the rescue experiments with Cab45 (addressed in a separate result).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C116",
+      "C117"
+    ],
+    "result": "Human Cab45 can functionally substitute for Drosophila Mayday. Ubiquitous expression of Cab45 rescues both flight defects and NMJ structural defects in myd3PM71 mutants. Similar to Myd, Cab45 requires expression in both muscles and motor neurons for full rescue, with muscle-specific expression being insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 demonstrate functional conservation across species through cross-species rescue experiments. The parallel requirement for both pre- and postsynaptic expression (C55, C58) strengthens the functional homology argument. The observation that muscle-specific Cab45 expression partially restores some structural parameters but not bouton number (C117) suggests subtle functional differences or incomplete rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C118"
+    ],
+    "result": "Gbb accumulates in muscle tissue of myd3PM71 mutants with age. At Day 3, Gbb levels are only slightly elevated, but by Day 25, Gbb signal is significantly enhanced in myd mutants. Double heterozygous mutants of myd3PM71 and gbbD20 show severe flight defects, indicating genetic interaction. Gbb accumulates in Golgi and early endosomes, with most Gbb puncta not colocalizing with examined membrane-bound structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 provide multiple lines of evidence for Gbb accumulation and dysregulation: immunohistochemistry showing increased Gbb (C60), genetic interaction (C61-C62), and subcellular localization (C63-C65). The colocalization analysis is appropriately quantified. However, the interpretation that most Gbb is cytoplasmic (C65) is speculative, as other organelles were not examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Trans-synaptic BMP signaling is progressively impaired in myd mutants. At Day 3, pMad staining is similar between wild-type and myd3PM71 flies in motor neuron nuclei. By Day 21, myd3PM71 mutants show significantly decreased pMad in motor neuron nuclei but increased pMad in muscle tissue, suggesting that Gbb cannot reach presynaptic motor neurons to activate downstream signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide clear evidence for progressive BMP signaling defects with appropriate temporal analysis. The opposite changes in pre- and postsynaptic pMad (C115) are consistent with impaired retrograde signaling. The quantification is rigorous (n=12 per condition). The inference that Gbb cannot reach motor neurons (C113) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mayday genetically interacts with presynaptic BMP signaling components. Double heterozygous combinations of myd3PM71 with wit, tkv, or mad mutants show progressive loss of flight, while single heterozygotes fly normally. Expression of constitutively active Tkv in motor neurons rescues the flight defect in myd3PM71 mutants, supporting the functional role of myd in trans-synaptic BMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide systematic genetic interaction data with multiple BMP pathway components. The rescue by constitutively active Tkv (C73) is particularly strong evidence that bypassing the upstream defect can restore function. However, the genetic interactions alone do not definitively prove that Myd acts through BMP signaling, as dominant genetic interactions can occur through various mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C97",
+      "C120"
+    ],
+    "result": "Loss of synaptic integrity in myd3PM71 mutants leads to cell death in both presynaptic motor neurons and postsynaptic muscles. TUNEL staining at Day 25 reveals widespread TUNEL-positive nuclei in motor neurons and muscle cells of myd3PM71 mutants compared to wild-type, demonstrating that sustained trans-synaptic signaling is required to maintain cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide clear evidence for cell death in both tissues using TUNEL staining with appropriate quantification. The conclusion that loss of synaptic integrity leads to cell death (C77) is a reasonable inference, though the causal relationship is not definitively established. The cell death could be a consequence of synaptic dysfunction or a parallel process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The authors propose a model in which Myd regulates trafficking of Gbb from the TGN, promoting secretion from muscle tissue to presynaptic motor neurons. In myd3PM71 mutants, BMP retrograde signaling is dysregulated by Gbb accumulation in muscles, leading to decreased pMad in motor neurons and progressive loss of synaptic integrity and cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 present a coherent model integrating the various findings. The model is well-supported by the data showing Golgi localization (C52), Gbb accumulation (C60), decreased presynaptic pMad (C67), and cell death (C75-C76). However, the model is largely inferential\u2014direct evidence for Myd's role in Gbb trafficking (e.g., biochemical assays, trafficking assays) is not provided. The model is consistent with the data but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C51",
+      "C79",
+      "C81",
+      "C83",
+      "C85",
+      "C87",
+      "C88",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript provides extensive background on synaptic maintenance, the Drosophila NMJ model system, BMP signaling, and Cab45 function based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C7-C20, C51, C79, C81, C83, C85, C87-C88, C102-C104) are appropriately cited to previous research and represent established knowledge in the field. They provide necessary context for the current work. No evaluation of the accuracy of these prior work claims is possible without examining the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C84",
+      "C86",
+      "C111"
+    ],
+    "result": "The authors speculate about broader implications and alternative mechanisms, including the possibility that other developmental signaling pathways may be required throughout life, that anterograde BMP signaling may play a role, and that disrupted autophagy could contribute to synaptic dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82, C84, C86, and C111 are explicitly speculative statements in the Discussion section. They represent reasonable hypotheses based on the data and prior literature but are not tested in this study. These speculations are appropriately presented as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The authors conclude that myd has a neuroprotective role in positively regulating BMP signaling in postsynaptic muscle tissue in adult NMJs, supported by comparisons with elevated BMP signaling in muscular dystrophy and ALS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 integrates the current findings with prior literature on BMP signaling in neuromuscular diseases (C87-C88). The conclusion is reasonable given the data showing Gbb accumulation in muscles and decreased pMad in motor neurons. However, the term \"neuroprotective\" may be somewhat imprecise, as the data show that Myd is required to prevent both neuronal and muscle cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript describes the anatomical organization of the DLM system, including six muscle fibers innervated by five motor neurons located in the thoracic ganglion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 describe the anatomical features of the experimental system, supported by both text and Figure 1. These are well-established anatomical facts appropriately cited to previous literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The pre- and post-synaptic rescue with Myd showed greater branch length and bouton number than wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is directly supported by the quantification data in Figure 5G-I. The authors acknowledge this unexpected finding and offer a speculative explanation (C111) that overexpression by multiple Gal4 drivers may be responsible. This observation warrants further investigation but does not undermine the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors developed a quantitative glycoproteomics strategy using CRISPR-edited ALG6-/- HEK293 cells that transfer non-glucosylated N-glycans, allowing specific detection of UGGT-mediated reglucosylation. This approach identified 37 UGGT substrates, including the previously known substrate prosaposin, validating the method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44, C53-C57 describe a well-designed experimental system where ALG6 knockout eliminates glucosidase-mediated lectin chaperone binding, isolating UGGT-mediated reglucosylation. The identification of prosaposin (C57), the only previously known endogenous UGGT substrate, provides strong validation. The methodology is sound and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C167"
+    ],
+    "result": "UGGT substrates are characterized as significantly larger (median 737 vs 443 amino acids), more heavily glycosylated (median 7 vs 2 N-glycans), and containing more cysteine residues (median 16 vs 11) compared to the general N-glycoproteome, suggesting UGGTs preferentially modify complex, multidomain proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C132 and C167 present comprehensive bioinformatic analysis comparing UGGT substrates to the computationally defined N-glycoproteome (C63-C67). The statistical comparisons are clearly presented in Figure 4A-C with appropriate visualization. The conclusion that UGGTs favor complex proteins (C167) is well-supported by multiple independent metrics (size, glycosylation, cysteine content).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Using ALG6/UGGT1-/- and ALG6/UGGT2-/- cells, the authors identified 66 UGGT1-specific substrates and 33 UGGT2-specific substrates, demonstrating for the first time that UGGT2 is a functional glucosyltransferase in cells with natural substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe systematic identification of UGGT1 and UGGT2 substrates using complementary knockout cell lines. The identification of 33 UGGT2 substrates (C74-C76) provides the first cellular evidence of UGGT2 activity (C47, C76, C168), addressing a longstanding question in the field. The ~50% increase in UGGT1 expression in UGGT2-/- cells (C72) is appropriately noted as a potential confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C97",
+      "C171"
+    ],
+    "result": "UGGT2 shows strong preference for soluble lysosomal proteins, with 45% of UGGT2 substrates being lysosomal (vs 2% in N-glycoproteome and 27% for UGGT1), and the three UGGT2-specific substrates are all soluble lysosomal enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 and C90-C95 demonstrate clear substrate specificity for UGGT2 toward lysosomal proteins through multiple lines of evidence: enrichment analysis (C80-C83), identification of specific substrates (C90-C91), and topology analysis (C94-C95). The statistical enrichment is substantial (45% vs 2%) and the pattern is consistent across different analytical approaches shown in Figures 2B-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C49",
+      "C84",
+      "C87",
+      "C88",
+      "C93",
+      "C96",
+      "C98",
+      "C141",
+      "C142",
+      "C146",
+      "C173",
+      "C174"
+    ],
+    "result": "UGGT1 is the dominant glucosyltransferase with twice as many substrates as UGGT2, showing preference for transmembrane proteins, particularly type I membrane proteins targeted to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C49, C84, C87-C88, C93, C96, C98, C141-C142, C146, C173-C174 establish UGGT1 as the predominant quality control sensor through substrate number (66 vs 33) and diversity. The preference for transmembrane proteins, especially type I orientation (70% of membrane substrates, C142), is well-documented in Figure 4E and supported by analysis of luminal domain size (C144-C145).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Validation experiments using immunoblot-based reglucosylation assays confirmed CI-M6PR and IGF-1R as UGGT1 substrates, ENPP1 as a substrate of both UGGTs with slight UGGT1 preference, and HexB as a highly reglucosylated UGGT2-preferred substrate, with no reglucosylation observed in double knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C117 describe orthogonal validation of mass spectrometry results using GST-CRT affinity purification and immunoblotting across multiple cell lines (Figure 3). The quantitative measurements are consistent with TMT data (C103, C107, C114), and the complete loss of reglucosylation in ALG6/UGGT1/UGGT2-/- cells (C101, C106, C113, C116) provides strong specificity controls. HexB showing 34% reglucosylation (C110) establishes it as the first validated UGGT2 substrate (C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "IGF-1R trafficking studies demonstrate that both early (glucosidase-mediated) and late (UGGT-mediated) lectin chaperone binding contribute to efficient ER-to-Golgi trafficking and processing, with early binding being most critical (21% mature in ALG6-/- vs 59% in WT vs 42% in UGGT1/2-/-).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C166 present a systematic dissection of lectin chaperone binding contributions using complementary genetic perturbations and pulse-chase analysis (Figure 5). The experimental design elegantly separates early vs late binding by comparing ALG6-/- (no early binding) with UGGT1/2-/- (no late binding). The quantitative data are internally consistent and support the conclusion that early binding is most critical (C166), though both contribute (C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C69",
+      "C68",
+      "C85",
+      "C86"
+    ],
+    "result": "Approximately two-thirds of UGGT substrates are destined for plasma membrane or lysosomes, with significant enrichment for lysosomal proteins compared to the N-glycoproteome (which is 37% plasma membrane, 20% secreted, 2% lysosomal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C68-C69, C85-C86 describe the subcellular localization distribution of UGGT substrates based on UniprotKB annotations (Figure 1C-D). The enrichment for lysosomal proteins is statistically significant and biologically meaningful. The absence of Golgi protein modification (C86) is notable given 4% of N-glycoproteome is Golgi-localized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "UGGT substrates display bimodal pI distribution with predominant clustering near pH 6.0 and a pronounced low-density region at pH 7.9, suggesting both UGGT1 and UGGT2 preferentially engage proteins with low pIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C136 describe pI distribution patterns (Figure 4D), but the interpretation is limited. While the low-density region at pH 7.9 is observed, the explanation that it's due to protein instability at ER pH (C135) is speculative without supporting data. The preference for low pI proteins (C136) is stated but the biological significance and mechanism are unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C144",
+      "C145",
+      "C175",
+      "C176"
+    ],
+    "result": "UGGT substrates show strong preference for type I transmembrane proteins over multi-pass membrane proteins, likely due to larger luminal domains and higher N-glycan content. Only two multi-pass membrane proteins (NPC1 and SR-BI) were identified, both having unusually large luminal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C145 and C175-C176 describe topology preferences with supporting analysis in Figure 4E-G. The preference for type I over multi-pass proteins is well-documented (C139-C142), and the mechanistic explanation based on luminal domain size and glycan content (C144-C145) is supported by comparative analysis. The identification of only two multi-pass proteins (C175), both with atypical large luminal domains (C176), strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C169",
+      "C170"
+    ],
+    "result": "The lower number of UGGT2 substrates (33 vs 66 for UGGT1) is attributed to UGGT2 being expressed at only ~4% of UGGT1 levels in HeLa cells, with a ~50% compensatory increase in UGGT1 expression observed in ALG6/UGGT2-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C169-C170 address the substrate number disparity between UGGTs. The expression level difference (C170) is supported by citation to Itzhak et al., 2016, and the compensatory UGGT1 increase in UGGT2-/- cells (C72) is documented in Figure 2\u2014figure supplement 1. This provides a plausible explanation for the substrate number difference, though it doesn't fully account for the distinct substrate specificities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Multiple UGGT substrates possessed as few as two N-glycans, suggesting the experimental approach did not require high numbers of monoglucosylated glycans for detection, though substrates with multiple reglucosylated sites are likely isolated more efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 address a methodological consideration about the sensitivity and potential bias of the GST-CRT pulldown approach. The observation that substrates with only 2 N-glycans were detected (C125) supports the claim that high glycan numbers aren't required (C126), though the inference about efficiency bias (C127) is reasonable speculation based on avidity effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C191"
+    ],
+    "result": "Protein expression levels do not appear to be a major determining factor in substrate identification, as multiple strong substrates were expressed at or below average levels and no correlation was observed between mRNA expression and TMT fold increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C191 addresses whether the identified substrates are simply the most abundant proteins. The analysis in Figure 2\u2014figure supplement 2 shows no correlation between expression level and reglucosylation signal (Pearson R values near zero), supporting that substrate identification is based on UGGT recognition rather than abundance. This is an important control for the validity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "UGGT1 and UGGT2 display high sequence identity in catalytic domains (83%) but lower identity in folding sensor domains (49%), which may drive altered substrate selection, potentially along with differential ER subdomain localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C182 propose mechanisms for differential substrate specificity. While the sequence identity data (C180) is cited from Arnold and Kaufman 2003, the mechanistic explanations (C181-C182) are speculative. The folding sensor domain differences could explain specificity, but this hasn't been experimentally tested. The subdomain localization hypothesis (C182) is entirely speculative without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C184",
+      "C185"
+    ],
+    "result": "Among preferential UGGT2 lysosomal substrates, only \u03b2-hexosaminidase subunit \u03b2 showed increased mRNA expression in ALG6/UGGT1-/- cells, potentially due to slight UPR induction through the ATF6 branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 address whether increased substrate identification in ALG6/UGGT1-/- cells is due to upregulation. The RNAseq data (Figure 3\u2014figure supplement 1) and UPR marker analysis (Figure 3\u2014figure supplement 2) support that only HexB is upregulated, and this correlates with mild ATF6 activation. This rules out general upregulation as an explanation for UGGT2 substrate identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Several factors limit the number of identified UGGT substrates (71 out of 4361 N-glycoproteins): many proteins fold chaperone-independently, the profile is likely cell-type dependent, ~1500 multi-pass membrane proteins are de-enriched due to limited luminal exposure, and the isolation method may be biased toward multiply-glycosylated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 provide a thoughtful discussion of experimental limitations and biological factors affecting substrate identification. The multi-pass membrane protein de-enrichment (C188-C189) is well-documented in Figure 4E-G. The other factors (C186-C187, C190) are reasonable considerations, though some are speculative. This discussion appropriately contextualizes why only 71 substrates were identified from a potential pool of 4361.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background claims establishing the role of UGGTs and lectin chaperones in ER quality control, including their function as gatekeepers, the calnexin cycle mechanism, and prior knowledge about UGGT1 and UGGT2 from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11-C42 provide established background knowledge supported by extensive citations. These claims accurately represent the state of the field prior to this study, including the known functions of lectin chaperones (C14, C17-C21), the calnexin cycle (C15-C16, C24-C26), UGGT1 recognition mechanisms (C28-C30), and the lack of demonstrated UGGT2 activity in cells (C37-C40). This background appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The identification of UGGT substrates provides insight into proteins requiring multiple rounds of lectin chaperone binding for proper maturation, representing glycoproteins that have evolved to utilize the lectin chaperone system and may be more prone to misfold under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43, C199-C202 present broader implications of the findings. While the logic is sound that reglucosylated proteins require multiple chaperone binding rounds (C43, C201), the evolutionary interpretation (C199-C200) and stress vulnerability prediction (C202) are speculative inferences not directly tested in this study. These represent reasonable hypotheses for future work but are not experimentally supported here.",
+    "result_type": "MINOR"
+  }
+]

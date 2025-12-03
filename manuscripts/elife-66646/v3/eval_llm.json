@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C5"
+    ],
+    "result": "A novel heterozygous missense mutation (c.2812G > A, p.A938T) in ZNF862 was identified that co-segregates with HGF in a four-generation Chinese family. The variant is absent in population databases (ExAC, 1000 Genomes, gnomAD), has a LOD score of 3.6, and is classified as 'Pathogenic' according to ACMG/ClinGen guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C26, C50, C51, C52, C53, and C5 collectively provide strong genetic evidence for the ZNF862 variant. The variant was identified through WES (C4, C25), validated by Sanger sequencing in all 23 family members showing perfect co-segregation (C26, C53), is absent from population databases (C5, C50), achieves significant LOD score (C51), and meets ACMG pathogenicity criteria (C52). The genetic evidence is robust with appropriate controls and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C6",
+      "C42",
+      "C49"
+    ],
+    "result": "Functional studies demonstrate that ZNF862 regulates profibrotic gene expression, particularly COL1A1, TGFB1/2, and SMAD1. RNA sequencing showed upregulation of these genes in patient fibroblasts, and shRNA knockdown of ZNF862 in control cells recapitulated the patient phenotype, suggesting the mutation causes loss of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40 and C41 provide experimental data from RNA-seq and shRNA knockdown experiments. However, the mechanistic interpretation (C42, C49) is explicitly speculative. The study lacks critical experiments: no direct testing of the mutant protein function, no rescue experiments with wild-type ZNF862, and no demonstration that the p.A938T mutation actually impairs protein function. The shRNA knockdown mimics loss-of-function, but whether the missense mutation causes loss-of-function, gain-of-function, or dominant-negative effects remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Transcriptomic analysis identified 597 differentially expressed genes between HGF patients and controls, with lipoic acid metabolism as the most enriched pathway and MAPK signaling pathway associated with IL-6 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45, C46, and C47 report RNA-seq findings with very small sample size (N=6 total: 2 patients vs 4 controls). The authors acknowledge using relaxed statistical cutoffs (FDR < 0.05) due to limited statistical power. The biological significance of lipoic acid metabolism enrichment is unclear and not discussed. The association between MAPK and IL-6 pathways (C47) appears to be an inference without direct experimental validation. Larger sample sizes and validation would be needed to support these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The previously identified HGF causative gene SOS1 was mildly down-regulated in patient fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by RNA-seq data and real-time PCR validation shown in Figure 2 and Figure 2\u2014figure supplement 3. This finding suggests potential crosstalk between different HGF genetic mechanisms, though the functional significance remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "ZNF862 knockdown did not significantly affect fibroblast proliferation over a 5-day culture period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by CCK8 proliferation assay data (Figure 2\u2014figure supplement 2). The authors appropriately acknowledge this may be due to insufficient time course to observe effects. This negative result suggests the HGF phenotype is primarily due to altered gene expression rather than increased proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C54"
+    ],
+    "result": "Clinical characterization of the family showed generalized gingival fibromatosis in all affected members with no other congenital abnormalities, no medication exposure, and one case of mild recurrence after surgery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 and C54 provide thorough clinical documentation including visual inspection, medical history, and follow-up data. The clinical phenotyping is well-documented with photographs (Figure 1B) and detailed in Table 1. The exclusion of medication-induced GF and syndromic forms strengthens the genetic diagnosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C35"
+    ],
+    "result": "ZNF862 is located on chromosome 7q36.1, encodes a 1169-amino acid protein with eight exons, and the identified p.A938T variant is located upstream of the Dimer_Tnp_hAT domain. This locus does not overlap with previously reported HGF loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C29, and C35 provide accurate gene structure information from genomic databases and protein domain analysis. The observation that ZNF862 maps to a novel locus (C29) is significant as it expands the genetic landscape of HGF beyond the four previously known loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C48"
+    ],
+    "result": "ZNF862 is a zinc finger protein with predicted transcriptional regulatory function, expressed ubiquitously across tissues, with prior associations to matrix-producing metaplastic carcinoma and IgE-mediated hypersensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C48 appropriately characterize ZNF862 based on protein domains and literature. The speculation about transcriptional repressor function (C30, C48) is reasonable given the zinc finger domain structure, though it remains unproven. The ubiquitous expression (C31) and prior disease associations (C33, C34) provide context but do not directly support the HGF mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Technical quality metrics for WES and RNA sequencing met standard thresholds with >100\u00d7 average depth for WES, >95% coverage at 20\u00d7, and >45 million reads per RNA-seq sample with >99.7% effective rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 report appropriate quality control metrics for sequencing experiments. The WES depth and coverage are adequate for variant calling, and RNA-seq metrics indicate high-quality data. These technical details support the reliability of the sequencing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background information on HGF including clinical features, inheritance patterns, known genetic loci and genes (SOS1, REST), epidemiology, and treatment options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C19 provide comprehensive background on HGF drawn from established literature. These claims are appropriately cited and provide necessary context for the study. The information about previously identified genes and loci (C2, C3, C13-C15) is particularly important for establishing the novelty of the ZNF862 finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Prior literature suggests HGF pathophysiology involves overproduction of extracellular matrix components, particularly COL1A1, with involvement of TIMP-1, TGF-\u03b21, IL-6, and TGF-\u03b2/SMAD signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 summarize established knowledge about HGF molecular mechanisms from prior literature. While C36 includes speculative language, the overall mechanistic framework is well-supported by citations. This background provides important context for interpreting the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "This study represents the first identification of ZNF862's physiological role in association with HGF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 asserts novelty based on literature review and the current findings. Given that ZNF862 has not been previously associated with HGF in the literature and maps to a novel locus, this claim of first identification is justified. However, the 'physiological role' is only partially elucidated through the functional studies.",
+    "result_type": "MAJOR"
+  }
+]

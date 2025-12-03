@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C13",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DeCalciOn is an open-source hardware system for real-time calcium imaging that is compatible with UCLA Miniscope DAQ interfaces, performs online motion stabilization, neural enhancement, and calcium trace extraction, and achieves decoding latencies of <50 ms for up to 1024 traces using FPGA-based image processing and ARM-based decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C31 collectively describe the DeCalciOn system's architecture, capabilities, and performance specifications. The hardware implementation (C27-C29), processing pipeline (C7, C11, C12, C23, C24), and measured latency performance (C8, C22) are documented with specific technical details and measurements. The system description is internally consistent and supported by the experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C20",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "DeCalciOn accurately decodes rat position on a linear track from hippocampal CA1 calcium fluorescence in 12 rats, with the linear classifier achieving accurate position predictions from raw calcium trace amplitudes without speed filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C20, C71-C87 describe the CA1 position decoding experiments with appropriate sample size (n=12), established neuroscience principles (C73-C74), and documented methodological choices (C76, C78, C80-C82). The spatial tuning stability analysis (C86) and training methodology (C87) support the validity of the decoding approach. Statistical comparisons and performance metrics are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C21",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "DeCalciOn categorically classifies behaviors during an instrumental touchscreen task from orbitofrontal cortex calcium fluorescence in 2 rats, with varying performance across different behavioral events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C21, C113-C120 describe OFC behavior decoding with very small sample size (n=2) and highly variable neuron detection between subjects (138 vs 17 cells, C115). While behavioral performance was high (C114), the limited replication and large inter-subject variability make it difficult to assess generalizability. The finding that trial initiation was poorly decoded (C119-C120) suggests task-specific limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C99",
+      "C100",
+      "C140",
+      "C141",
+      "C143"
+    ],
+    "result": "Contour-free trace extraction (using uniform tile-based ROIs) achieves comparable or superior decoding accuracy to contour-based methods while eliminating the 30-60 minute computational overhead required for neuron identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60, C90-C100, C140-C143 demonstrate that contour-free (CF) methods match or exceed contour-based (CB) decoding accuracy despite not isolating individual neurons. The efficiency advantage is substantial (0 vs 30-60 min, C39-C40, C92) and the performance comparison is supported by data from multiple rats. The finding that CF traces showed broader spatial tuning (C94) but equivalent population-level decoding (C95) is consistent with the multiunit recording analogy (C97, C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C145",
+      "C146",
+      "C149"
+    ],
+    "result": "Online motion correction reduces correlations between decoding error and image displacement, prevents decoders from learning ersatz predictions based on motion artifacts, and is justified despite high computational costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112, C145-C146, C149 demonstrate motion correction benefits through statistical analysis (C110-C111) and behavioral task-specific effects (C146). While shift errors were rare (1/12 sessions, C105), jitter errors were common and correlated with specific behaviors. The analysis showing reduced motion artifact scores with correction (C110-C111) and prevention of motion-based decoding (C146) supports the conclusion that motion correction is necessary (C149).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C102"
+    ],
+    "result": "Asymptotic decoding accuracy for position on a linear track requires approximately 3 minutes (~3000 frames) of training data, while behavioral classification in the instrumental task requires 20-40 minutes (~100 trials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C102 provide specific training data requirements with clear performance metrics. The difference between tasks (3 min vs 20-40 min) is explained by task complexity. The asymptotic accuracy analysis (C102) demonstrates diminishing returns beyond 3000 frames for position decoding, supporting the training duration recommendations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C129",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "DeCalciOn's total feedback latency of <47.5 ms (including light-gathering, transmission, and processing delays) achieves position decoding accuracy comparable to offline analysis of single-unit place cell recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C134-C136 provide detailed latency calculations and performance comparisons. The comparison to single-unit recordings (C135-C136) uses appropriate datasets and acknowledges the difficulty of direct comparison between calcium indicators and spike counting windows. The behavioral context (7.5 cm travel at maximum speed, C134) helps interpret the practical significance of the latency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "DeCalciOn's latency performance and hardware compatibility compare favorably to other real-time imaging systems, with FPGA-based processing achieving similar latencies to GPU-based approaches while offering compatibility with head-free miniscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C157 compare DeCalciOn to prior systems (Liu et al. 2021, Zhang et al. 2018), but the comparisons involve different latency measurement definitions (C152), estimated rather than measured values (C154), and different hardware platforms (C156). While the comparisons suggest competitive performance, the lack of direct head-to-head testing and differences in measurement methodology limit confidence in the relative performance claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The DeCalciOn workflow consists of five sequential steps: reference image collection (~3 min), training data collection (3-60 min depending on task), trace extraction (0-60 min depending on method), decoder training (<60 s), and real-time imaging/decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C44 describe the experimental workflow with specific timing measurements for each step. The protocol is clearly documented with practical considerations (C33, C41) and method-dependent variations (C39-C40). The timing measurements are consistent across the manuscript and supported by the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "DeCalciOn's real-time processing pipeline consists of four stages implemented across FPGA fabric (motion stabilization, background removal, trace extraction) and ARM core (decoding), with the ARM core capable of implementing various decoder architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C65 provide detailed technical description of the processing pipeline with clear hardware/software partitioning. The algorithmic details (C50-C51) are supported by citations to prior work. The claim about ARM core flexibility (C65) is supported by citation but not directly demonstrated in this manuscript beyond linear classifiers (C64).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C146"
+    ],
+    "result": "In the OFC instrumental task, session-averaged decoding accuracy was similar with and without motion correction, but without correction the decoder learned to predict behavior from image motion rather than calcium fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C146 describe a subtle but important finding: motion correction did not improve average accuracy but prevented the decoder from learning spurious motion-based predictions. This is supported by the analysis showing correlations between motion and specific behaviors in the touchscreen task. The finding highlights the importance of motion correction beyond simple accuracy metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "For real-time decoding, the high computational costs of source identification (demixing) may not yield proportional benefits to decoding accuracy, as online non-demixed traces achieve similar accuracy to offline demixed traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C139-C143 present a key finding about the cost-benefit tradeoff of source identification for real-time applications. The comparison between online and offline traces using identical ROIs (C140) and the analogy to electrophysiology (C142) support this conclusion. However, the claim is specific to decoding applications and explicitly acknowledges limitations for single-neuron analysis (C138, C182).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Surgical procedures, behavioral training, and histological verification were performed according to established protocols with appropriate ethical approval for 14 Long-Evans rats across CA1 and OFC experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C171 document the experimental methods with appropriate detail for reproducibility. Ethical approval is documented (C160), surgical procedures are described with specific coordinates and parameters (C161-C166), and histological verification is included (C170-C171). The methods are consistent with standard practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Performance testing used two UCLA Miniscope versions (MiniLFOV for CA1, V4 for OFC) with a virtual sensor that replicated real-time frame rates and produced identical calcium traces to real-time imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe the testing methodology with appropriate validation (C70). The virtual sensor approach allows controlled comparison of different algorithms on identical datasets (C69), which is a strength of the experimental design. The verification that virtual and real-time traces are identical (C70) is critical for validating the performance measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "DeCalciOn hardware and software components are documented and available, with specific implementation details for contour-based and contour-free trace extraction methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C182 provide implementation details and acknowledge both advantages (C180) and limitations (C181-C182) of the contour-free method. The documentation of hardware requirements (C172-C174) and software availability (C175) supports reproducibility. The acknowledgment that contour-free methods limit single-neuron interpretation (C182) is an appropriate caveat.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2096 @@
+{
+  "submission": {
+    "id": "0e29e22c-8a39-4481-9a79-350e0625f15b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T10:24:34.568756Z",
+    "updated_at": "2025-12-03T10:24:34.568756Z"
+  },
+  "content": [
+    {
+      "id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "submission_id": "0e29e22c-8a39-4481-9a79-350e0625f15b",
+      "content_type": "manuscript",
+      "content_text": "# RNA binding to human METTL3-METTL14 restricts N6-deoxyadenosine methylation of DNA in vitro\n\n## Authors\n\n- Shan Qi<sup>1</sup> ([ORCID: 0000-0003-0175-6267](https://orcid.org/0000-0003-0175-6267))\n- Javier Mota<sup>1</sup>\n- Siu-Hong Chan<sup>3</sup>\n- Johanna Villarreal<sup>1</sup>\n- Nan Dai<sup>3</sup>\n- Shailee Arya<sup>1</sup>\n- Robert A Hromas<sup>4</sup>\n- Manjeet K Rao<sup>1</sup>\n- Ivan R Corr\u00eaa Jr<sup>3</sup> ([ORCID: 0000-0002-3169-6878](https://orcid.org/0000-0002-3169-6878))\n- Yogesh K Gupta<sup>1</sup> ([ORCID: 0000-0001-6372-5007](https://orcid.org/0000-0001-6372-5007)) \u2020\n\n### Affiliations\n\n1. Greehey Children\u2019s Cancer Research Institute, University of Texas Health at San Antonio San Antonio United States\n2. Department of Biochemistry and Structural Biology, University of Texas Health at San Antonio San Antonio United States\n3. New England Biolabs Ipswich United States\n4. Division of Hematology and Medical Oncology, Department of Medicine, University of Texas Health at San Antonio San Antonio United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMethyltransferase like-3 (METTL3) and METTL14 complex transfers a methyl group from S-adenosyl-L-methionine to N6 amino group of adenosine bases in RNA (m6A) and DNA (m6dA). Emerging evidence highlights a role of METTL3-METTL14 in the chromatin context, especially in processes where DNA and RNA are held in close proximity. However, a mechanistic framework about specificity for substrate RNA/DNA and their interrelationship remain unclear. By systematically studying methylation activity and binding affinity to a number of DNA and RNA oligos with different propensities to form inter- or intra-molecular duplexes or single-stranded molecules in vitro, we uncover an inverse relationship for substrate binding and methylation and show that METTL3-METTL14 preferentially catalyzes the formation of m6dA in single-stranded DNA (ssDNA), despite weaker binding affinity to DNA. In contrast, it binds structured RNAs with high affinity, but methylates the target adenosine in RNA (m6A) much less efficiently than it does in ssDNA. We also show that METTL3-METTL14-mediated methylation of DNA is largely restricted by structured RNA elements prevalent in long noncoding and other cellular RNAs.\n\n## Introduction\n\nN6-methyladenosine (m6A) is considered a major covalent modification of the adenosine (A) base in coding and noncoding (nc) RNAs (Desrosiers et al., 1974; Bokar et al., 1994; Rottman et al., 1994; Dominissini et al., 2012; Meyer et al., 2012). It is linked to diverse physiological processes, including \u2013 but not limited to \u2013 RNA turnover (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020), stem cell differentiation (Batista et al., 2014; Geula et al., 2015,) oncogenic translation (Lin et al., 2016; Barbieri et al., 2017; Vu et al., 2017; Choe et al., 2018), and DNA damage repair (Xiang et al., 2017; Zhang et al., 2020). In human cells, most m6A in cellular RNAs is installed by methyltransferase like-3 (METTL3) and METTL14 methyltransferases (Bokar et al., 1994; Dominissini et al., 2012; Liu et al., 2014), both of which belong to the \u03b2-class of S-adenosyl methionine (SAM)-dependent methyltransferases (N6-MTases) (Bujnicki et al., 2002; Woodcock et al., 2020) that also include N6-deoxyadenosine DNA methyltransferases (m6dA MTases), especially those from Type III restriction-modification (R-M) systems in bacteria (e.g., ModA/B dimer of EcoP15I) (Gupta et al., 2015). The first structures of METTL3-METTL14 complexes suggested common features in EcoP15I and METTL3-METTL14 (Wang et al., 2016b; Sledz and Jinek, 2016). We analyzed these MTases and found high structural similarity of the cores of human METTL3, METTL14, and EcoP15I, suggesting their evolutionary origin from a common ancestor (Figure 1a\u2013e and Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/67150/elife-67150-fig1-v3.jpg)\n\n**Figure 1.:** (a\u2013b) Domain architecture of Mod subunit of EcoP15I, human methyltransferase like-3 (METTL3), and human METTL14 methyltransferases (MTases). All three members belong to the \u03b2-class of SAM-dependent MTases and exhibit a sequential arrangement of motifs (IV-X followed by motif I) (Bujnicki et al., 2002; Woodcock et al., 2020; Malone et al., 1995). Motif IV (D/EPPY/W/L) and I are associated with the recognition of target adenine base (Gupta et al., 2015) and co-factor (SAM) binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a), respectively. (c) Crystal structure of EcoP15I-DNA complex (PDB ID: 4ZCF) (Gupta et al., 2015): ModA MTase (cyan), ModB MTase (blue), non-methylating DNA strand (gray), target (methylating) DNA strand (orange), flipped adenine base (red stick). The methyltransferase cores of ModB and ModA are shown in dark blue and light pink, respectively. The Res subunit of EcoP15I was omitted for clarity. (d) MTase domains of two Mod subunits (ModA/B) of EcoP15I with target DNA strand. The regions flanking the methyltransferase core (e.g., CTD and TRD) are omitted for clarity. Only the region encompassing the MTase core (aa 90\u2013132, 169\u2013261, and 385\u2013511) of EcoP15I Mod was selected for the alignment with the methyltransferase core of METTL3 (aa 358\u2013580) and METTL14 (aa 165\u2013378). (e) An overlay of MTase domains of EcoP15I and METTL14 (PDB ID: 5IL0) shows structural similarity within MTase folds (rmsd = 2.55 \u00c5 over 278 C\u03b1 atoms). RNA strand here was modeled based on the respective methylating strand in the EcoP15I structure.(f) Chromatogram of final size exclusion chromatography (SEC) step of purification showing METTL3-METTL14 complexes (left, full-length; right, METL3-METTL14[-RGG]) co-eluted as single homogenous species. Blue, absorbance at 280 nm; green, absorbance at 260 nm (A260). Coomassie stained gels (lower panels) confirm high purity of METTL3-METTL14 proteins in the SEC peak fractions. (g) Sequence of DNA and RNA oligonucleotides used in this study. All oligos have a covalently attached 5\u2019-fluorescein (not shown). (h) Secondary structure of rNEAT2 and its 3D model as predicted by MC-SYM (Parisien and Major, 2008). rNEAT2 harbors a potential DRACH motif (yellow line). (i) Secondary structure of rTCE23 RNA and its solution NMR structure (PDB ID: 2ES5) (Oberstrass et al., 2006).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/67150/elife-67150-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Blue ribbons, the MTase core (ModB) of EcoP15I (aa 90\u2013132, 169\u2013261, 385\u2013511 from PDB: 4ZCF) in complex with the target DNA strand (orange sticks). The conserved motifs in class \u03b2 MTases are shown in magenta. The motif IV (D/EPPY/W/L) that surrounds the Watson-Crick edge of the flipped target adenine base (red) is shown in stick mode. (b) Cyan ribbons, MTase core of human METTL14 (PDB: 5IL0) with a modeled single-stranded DNA (ssDNA) as in ModB. The conserved motifs are colored in yellow. (c) An overlay of MTases of ModB and METTL14 was performed using the SSM method (secondary structure-based) that yielded an rmsd of 2.55 over 282aa of METTL14 aligned with 278aa of ModB. The canonical MTase motifs, including motif IV, in two MTases overlay well. Due to lack of structures of METTL3 or ModA (in complex with a flipped adenine base), we chose ModB and METTL14 for this superposition. We could not model RGG motifs due to the lack of predicted structure for this region.\n\nWhile m6dA in bacterial DNA is deposited in a strictly sequence-dependent manner in double-stranded DNA (dsDNA) (Gupta et al., 2015; Malone et al., 1995), m6A in RNA by human METTL3-METTL14 shows less stringent sequence dependency for sequences flanking the target A within the recognition motif DRACH (D = A/G/U, R = A/G, H = A/C/U) (Bokar et al., 1994; Liu et al., 2014; Linder et al., 2015). Such relaxed specificity maybe required to expand the repertoire of target transcripts of METTL3-METTL14. However, this does not correlate with low levels of m6A in cellular RNA, which remains at ~0.1% of total pool of ribonucleotides in cultured mammalian cells (Dubin and Taylor, 1975). Of note, recent evidence suggests that all m6A is deposited co-transcriptionally, with most occurring on chromatin-associated RNAs, for example, nascent pre-mRNA (CA-RNA), promoter-associated RNA, enhancer RNA, and repeat RNA elements (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020; Slobodin et al., 2017). Consistently, the METTL3-METTL14 m6A writers can be recruited to chromatin by modified histone tails (e.g., H3K36me3) (Huang et al., 2019b) or the transcription machinery (Barbieri et al., 2017; Slobodin et al., 2017). Certain long noncoding (lnc) RNAs that are essential for regulated transcription, such as chromatin-associated XIST (Patil et al., 2016) and NEAT2 (MALAT1) (Liu et al., 2015), also harbor m6A marks. A role of m6A in DNA damage response and repair has also been suggested (Zhang et al., 2020; Xiang et al., 2017). In those contexts, METTL3 localizes at sites of dsDNA breaks and installs the m6A on DNA-damage-associated RNAs (Zhang et al., 2020). METTL3 is also emerged as a pro-viral host factor in SARS-CoV-2 pathogenesis. Consistently, genetic depletion or inhibition of METTL3 by small molecules triggers innate immune response and limits viral growth (Burgess et al., 2021; Li et al., 2021).\n\nThe increasingly appreciated roles of m6A in nucleic acid metabolism thus seem to converge to a common point: the occurrence of m6A at chromatin, a predominantly DNA- and RNA-rich environment inside the nucleus. A recent study showed that METTL3-METTL14 can convert dA to m6dA within equivalent DRACH (D = A/G/U, R = A/G, H = A/C/U) motif in a single-stranded DNA (ssDNA) with a 2.5-fold preference over the equivalent RNA in vitro (Woodcock et al., 2019). Since m6dA levels in mammalian DNA are extremely low (0.006\u20130.01%) and thought to originate from RNA catabolism rather than from SAM-dependent MTase reactions (Musheev et al., 2020), fundamental questions about substrate(s) specificity and mechanisms of action of METTL3-METTL14 have emerged. By using classical biochemical and mass spectrometry assays, we show that METTL3-METTL14 preferentially methylates N6dA on ssDNAs to m6dA, and this activity is largely regulated by structured RNA elements prevalent in lnc RNAs, that are also found in other cellular RNAs. Thus, our work provides a framework to explore a new regulatory axis of RNA-mediated restriction of N6-deoxyadenosine (m6dA) methylation in mammalian genomes.\n\n## Results\n\nWe compared the MTase cores of (ModB) of EcoP15I (aa 90\u2013132, 169\u2013261, 385\u2013511, PDB: 4ZCF Gupta et al., 2015) and METTL14 (aa 116\u2013402, PDB: 5IL0 Wang et al., 2016b). A secondary structure-based superposition (Krissinel and Henrick, 2004) of these two structures revealed common features and similar arrangement of canonical MTase motifs (motifs I and IV-X), including the motif IV (D/EPPY/W/L) that surrounds the Watson-Crick edge of the flipped target adenine base (Figure 1a\u2013e and Figure 1\u2014figure supplement 1). Previous studies identified three loops encompassing the sequence intervening MTase motifs IV and V (loop 1), VIII and VIII\u2019 (loop 2), and motifs IX and X (loop 3) contribute to substrate binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a). Due to lack of experimental structures of METTL3 or ModA (in complex with a flipped adenine base), we chose ModB and METTL14 for this comparison. While the MTase domain of METTL14 is enzymatically inactive, it harbors features that contribute to substrate binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a). These observations prompted us to address the prevailing question about substrate specificity of the human full-length METTL3-METTL14 enzyme complex. We co-purified the full-length human METTL3-METTL14 complex and its truncated form devoid of the RGG motif of METTL14 (METL3-METL14-RGG) from insect cells (see details in Materials and methods section) (Figure 1f). The RGG motifs are clustered sequences of arginines and glycines. These motifs are commonly present in diverse set of RNA-binding proteins that play important roles in physiological processes, such as RNA synthesis and processing (Thandapani et al., 2013). In human METTL14, a total of seven RGG triplets and two RG motifs are present at its C-terminus tail (aa 408\u2013457). The region also harbors a number of aromatic amino acids, which can further stabilize the bound nucleic acids via hydrophobic or stacking interactions. Consistently, this region contributes to substrate binding and m6A activity of the METTL3-METTL14 enzyme complex (Sch\u00f6ller et al., 2018). The sequence encompassing the RGG motifs in METTL14 is well conserved in higher vertebrates (Liu et al., 2014).\n\nNext, we designed RNA substrates of varied lengths (5\u201330 nucleotides) with at least one canonical m6A signature motif (RRACH), including an RNA oligo (rPal-Top+ bat) in which two RRACH sites were arranged in a palindromic fashion (Figure 1g). We included a 14-mer DNA oligo (d6T) according to Woodcock et al., 2019, that reported that METTL3-METTL14 exhibited highest methyltransferase (MTase) activity on d6T. We also included two structured RNAs with propensity to form a perfect stem-loop (23-mer rTCE23 or also known as SRE; Oberstrass et al., 2006) without a DRACH motif, and a 30-mer rNEAT2 (or MALAT1) encompassing one DRACH motif and predicted to form a stem-loop with a bulged stem (Figure 1h\u2013i).\n\nThe m6A mark in mammalian RNAs is widespread and expands beyond internal adenines in mRNAs to lncRNAs (XIST Patil et al., 2016, NEAT2 or MALAT1 Liu et al., 2015), pri-miRNAs (Alarc\u00f3n et al., 2015), and snoRNAs (Linder et al., 2015) \u2013 all of which are crucial to gene regulation and maintenance of cellular homeostasis. Of note, NEAT2 lncRNA can relocate a large subset of transcription units across cellular compartments from polycomb bodies to interchromatin granules (Yang et al., 2011). According to this model, a 49-nt long fragment of NEAT2 (nt 4917\u20134966) facilitates the recruitment of a mega transcription complex (Yang et al., 2011). We observed that this NEAT2 fragment harbors one RRACH motif (AAACA) in its loop region and fulfils the criteria of m6A peak signature (RRACH Bokar et al., 1994; Liu et al., 2014 or DRACH Linder et al., 2015 or ACA Garcia-Campos et al., 2019; Figure 1g). Thus, we decided to test the activity of METTL3-METTL14 on this regulatory module of the lncRNA. For simplicity of synthesis and purification, we focused on a slightly shorter version (30-nt; rNEAT2-30) of NEAT2-49 in which both the m6A signature motif and bulged stem regions were well preserved (Figure 1g\u2013h). The rTCE23 could serve as a control \u2013 it forms a perfect stem-loop structure in solution \u2013 confirmed by solution NMR previously (Oberstrass et al., 2006) \u2013 but lacks an m6A signature motif (Figure 1g and i).\n\nWe observed higher enzymatic activity of METTL3-METTL14 on the d6T DNA oligo compared with its RNA counterpart (r6T) (Figure 2a and c). By closely examining the sequence of the 14-mer d6T/r6T, we found a propensity of these oligos to form duplex DNA (for d6T) or RNA (for r6T): 6 of the 14 nucleotides at 5\u2019-end will pair with a complementary sequence to create a duplex with an 8-nt overhang at the 3\u2019-end of each strand (Figures 1g and 2d). As a result of this self-annealing, two adenine bases are available for methylation (m6dA) at the end of the short palindromic sequence (5\u2019-CCG\u2022CGG-3\u2019). We thus hypothesized that d6T (or 6T, as referred to by Woodcock et al., 2019) may not truly represent an ssDNA substrate. Thus, we designed a new DNA oligo (d6T*) in which two nucleotides, a deoxycytidine and a deoxyguanosine at \u20133 and \u20132 positions (relative to the signature motif RRACH), respectively, were replaced by two thymidines to disrupt base pairing and palindrome formation without affecting the core RRACH motif required for m6dA installation (Figure 1g). We reasoned that if METTL3-METTL14 indeed prefers a ssDNA for methylation, it should show higher activity for d6T*, a true ssDNA substrate, over d6T. Indeed, we found that the methyltransferase activity of METTL3-METTL14 toward d6T* increased by 2-fold compared with d6T (and >12-fold compared with r6T) (Figure 2a). Consistent with previous observations (Woodcock et al., 2019), METTL3-METTL14 showed no activity in the presence of a perfect duplex version of d6T DNA (d6T-ds). These results confirm a robust activity of METTL3-METTL14 on ssDNA substrates.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/67150/elife-67150-fig2-v3.jpg)\n\n**Figure 2.:** (a) Methyltransferase activity of METTL3-METTL14 in the presence of various DNA or RNA substrates measured by radiometric assay. CPM, counts per minute. The highest activity was measured with the d6T* oligo. (b) FP-based binding assay for DNA and RNA oligos showing highest affinity for rNEAT2 RNA (green) and lowest affinity for d6T* oligo (red). Equilibrium dissociation constants (Kd) for each oligo are shown on the right side of the isotherms. The data were fit into one site-specific binding model (Y = Bmax*X/(Kd+ X)). See Materials and methods section and source data for details. (c) Methyltransferase activity of METTL3-METTL14 on the respective RNA oligos (red), d6T* DNA alone (black) and equimolar mixture of the two (blue), measured by radiometric assay. (d) Predicted secondary structures of each oligonucleotide. Yellow, RNA strand; black, DNA strand. The values of the equilibrium dissociation constants (Kd) shown for each oligonucleotide indicate an inverse relationship between binding affinity and methyltransferase activity. (e) Dose-dependent inhibition of METTL3-METTL14 activity by RNA oligos rNEAT2 or rTCE23, as measured by radiometric assay in a reaction buffer containing 5.0 mM NaCl (upper panel) and 50.0 mM NaCl (lower panel). IC50, concentration of RNA required to achieve 50% inhibition of the METTL3-METTL14 activity. (f) Attenuation of the methyltransferase activity in presence of rNEAT2 or rTCE23, as measured by oligonucleotide intact mass analysis. Quantitation of modified dA (black circle) or rA (red square) is shown in absence or presence of equivalent amounts of rNEAT2 or rTCE23. (g) Nucleoside composition analysis of the METTL3-METTL14 reactions. UHPLC chromatograms showing the reaction in absence (blue trace) or in the presence of either rNEAT2 (red trace) or rTCE23 (green trace). The quantitation of the fraction of modified bases in the nucleoside pool was consistent with the results from the oligonucleotide intact mass analysis shown in (f). The insert shows the full chromatographic trace with all detected nucleosides. Results presented in panels (a\u2013c and e\u2013f) are the average of three independent experiments (n = 3) with one standard deviation (s.d.) for each oligonucleotide (shown as error bars). Source data are provided as a Source Data file.\n\nWe observed no methyltransferase activity on rTCE23 RNA, as expected; but surprisingly, some low (but consistently detectable) methyltransferase activity on rNEAT2 (Figure 2a). We then asked what attributes (sequence, length, and shape) in an RNA substrate are critical for METTL3-METTL14 to yield a high methyltransferase activity. To answer this question, we designed eight RNA oligos with varied length (5- to 22-nt) and sequences (Figure 1g). We also varied the position of the RRACH motif and the flanking sequences in these oligos. All oligos comprised one RRACH motif, except the RNA duplex Pal-Top+ bot, where two RRACH sites were arranged in a palindromic fashion within each 10-mer strand. We designed another variant of probe rC2-flip (22-mer, RRACH in the center), rC-flip wherein the RRACH motif resided at the 3\u2019-end. The other three RNA oligos, FoxM1-p1 (13-nt, RRACH at 3\u2019-end), c-Myc-p5 (8-nt), and c-Myc-p6 (11-nt, RRACH at 5\u2019-end), were derived from the FOXM1 and MYC genes because of their involvement in m6A-mediated processes in glioblastoma and acute myeloid leukemia (Vu et al., 2017; Zhang et al., 2017). We covalently attached a fluorescein moiety at the 5\u2019-end of all these oligos to facilitate the quantitative measurement of their binding affinities (equilibrium dissociation constant or Kd) to METTL3-METTL14 (see Materials and methods section for details).\n\nWe used a radiometric assay and fluorescence polarization (FP) to determine methylation activity and RNA binding, respectively. As shown in Figure 2a and c, RNA oligos with high propensity toward forming secondary structures (rNEAT2, rTCE23, Pal-Top+ bot) showed low to negligible levels of methylation by METTL3-METTL14. The other RNA oligos showed some levels of methylation, though they could not be methylated with as much efficiency as the ssDNA substrate, d6T*. The results of binding experiments are shown in Figure 2b and Table 1. The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3\u2019-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM). Surprisingly, the DNA substrates (d6T and d6T*) that showed highest methyltransferase activity were the poorest binders, with Kd values of 370 and 509 nM, respectively.\n\n**Table 1.**\n Equilibrium binding constants.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Nucleic acid substrate</th>\n      <th colspan=\"2\">kd in nM (range of Kd in nM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Full-length METTL3-METTL14</td>\n      <td>METTL3-METTL14-RGG</td>\n    </tr>\n    <tr>\n      <td>RNA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>rNEAT2</td>\n      <td>2.1 (1.8\u20132.3)</td>\n      <td>21.2 (19.2\u201323.5)</td>\n    </tr>\n    <tr>\n      <td>rNEAT2*</td>\n      <td>13.0 (12.3\u201313.8)</td>\n      <td>274.1 (150.7\u2013497.2)</td>\n    </tr>\n    <tr>\n      <td>rTCE23</td>\n      <td>25.6 (23.2\u201328.5)</td>\n      <td>413 (341\u2013502)</td>\n    </tr>\n    <tr>\n      <td>rPal-top+ bot</td>\n      <td>127 (97.2\u2013167)</td>\n      <td>257 (132\u2013491)</td>\n    </tr>\n    <tr>\n      <td>rFoxM1-p1</td>\n      <td>294 (245\u2013354)</td>\n      <td>920 (480\u20131940)</td>\n    </tr>\n    <tr>\n      <td>r6T</td>\n      <td>114 (103\u2013127)</td>\n      <td>704 (323\u20131668)</td>\n    </tr>\n    <tr>\n      <td>DNA</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>d6T</td>\n      <td>370 (343\u2013401)</td>\n      <td>2097 (1494 \u2013 &gt;2000)</td>\n    </tr>\n    <tr>\n      <td>d6T*</td>\n      <td>509 (470\u2013553)</td>\n      <td>&gt;2000</td>\n    </tr>\n  </tbody>\n</table>\n\nIf METTL3-METTL14 were to methylate ssDNA in vivo, and the evidence to date does not support its direct enzymatic origin (Musheev et al., 2020), then what could be the significance of high affinity RNA binding to structured RNA oligos (rNEAT2 and rTCE23)? One explanation is that structural motifs in ncRNA or mRNAs can serve as a recruitment platform for METTL3-METTL14 in a specific context. But how would the RNA-binding activity then affect DNA methylation activity? To answer this question, we measured the methyltransferase activity of METTL3-METTL14 in the presence of roughly equimolar mixtures of d6T* DNA with each RNA oligonucleotide. The methyltransferase activity of METTL3-METTL14 was significantly reduced in the presence of RNA (Figure 2c). Of note, RNAs with propensity to form secondary structures and highest binding affinity to METTL3-METTL14 (rNEAT2, rTCE23) attenuated methyltransferase activity to the most negligible levels (Figure 2c). To further explore the relationship between methyltransferase activity and substrate-binding affinity, we synthesized a variant of the stem-loop oligo (rNEAT2*) with the DRACH motif (5\u2019-AAACA-3\u2019) changed to an ideal m6A target sequence, that is, 5\u2019-GGACU-3\u2019 (Figure 1g). Although higher methylation levels were observed for rNEAT2* compared to rNEAT2, most likely attributed to a perfect GGACU motif in rNEAT2*, yet the methylation was significantly lower than that of d6T* DNA (last panel of Figure 2c). Moreover, rNEAT2* showed ~6 fold reduction in affinity compared to rNEAT2 (Figure 2b). Importantly, rNEAT2* also attenuated methylation of the single-stranded d6T* DNA by METTL3-METL14 but to a lesser extent than the rNEAT2 (Figure 2c). These results suggests that: (a) the sequence and shape of the target RNAs dictate the m6A activity of METTL3-METTL14, and (b) that higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.\n\nTo further investigate RNA-mediated inhibition, we showed that the two structured RNAs (rTCE23 and rNEAT2) inhibited the DNA methylation activity of METTL3-METTL14 in a dose-dependent manner, with rNEAT2 (IC50 = 216 nM) showing 4-fold stronger inhibition than rTCE23 (IC50 = 887 nM) (Figure 2e). Next, we employed an LC/MS-based oligonucleotide intact mass analysis to further validate the results of the radiometric assay. As shown in Figure 2f, an equimolar (with respect to d6T* DNA) addition of rNEAT2 or rTCE23 significantly reduced the methyltransferase activity from 80.5\u201314.5% to 7.3%, respectively. We then performed nucleoside analysis of the METTL3-METTL14 reactions to unambiguously determine the identity of methylated base and efficiency of methylation (Figure 2g). We confirmed that deoxyadenosine on d6T* and adenosine on rNEAT2 were the only modified bases. In the absence of rNEAT2 or rTCE23, 86.3% of dAs on d6T* were modified. When rNEAT2 or rTCE23 were present, only 14.4% and 7.4%, respectively, of dAs on d6T* were modified. Additionally, 5.8% of the rAs on rNEAT2 were modified. As expected, no methylation on rTCE23 was detected (no RRACH motif). These results are consistent with those obtained by oligonucleotide intact mass analysis. Altogether, the methyltransferase and binding assays confirm that the binding to structured RNAs, especially those lacking the GGACU sequence, almost completely abolishes the methyltransferase activity METTL3-METTL14.\n\nThe C-terminal RGG repeat motif of METTL14 contributes to RNA binding and activity of METTL3-METTL14 (Sch\u00f6ller et al., 2018; Figure 3a). Thus, we hypothesized that the absence of RGG motif in METTL3-METTL14 should diminish its ability to bind RNA and consequently attenuate the effect of RNA on DNA methylation. In fact, we observed a 2- to 10-fold decrease in binding affinity by METTL3-METTL14-RGG (Figure 3b and Table 1). This suggests that the RGG motifs play a major role in RNA and DNA substrates, while other parts of the enzyme (e.g., CCCH-type zinc finger domains in METTL3 Huang et al., 2019a and MTase core of METTL14 Wang et al., 2016a) may also contribute to the overall binding (Figure 3b). As expected, the deletion of RGG caused 60% reduction in DNA methylation activity. In the presence of rNEAT2, the activity of METTL3-METTL14-RGG on d6T* DNA was reduced to about 75% of its activity in absence of the RNA; comparatively, a >90% activity reduction was observed for the full-length METTL3-METTL14 in presence of the same RNA (Figure 3c). These results suggest that the RGG motif, as a general RNA-binding domain, dictates the shape-specific RNA recognition and promotes an RNA-mediated restriction of the DNA methylation activity of METTL3-METTL14 (Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/67150/elife-67150-fig3-v3.jpg)\n\n**Figure 3.:** (a) Domain architecture of methyltransferase like-3 (METTL3) and METTL14. LH, leader helix; NLS, nuclear localization signal; ZnF1/2, zinc-finger domain 1/2; RGG, arginine-glycine rich repeats motif. (b) FP-based-binding assay for DNA and RNA oligos showing the highest affinity of METTL3-METTL14(-RGG) for rNEAT2 RNA (green) and lowest affinity for d6T* (red). Equilibrium dissociation constants (Kd) for each oligo are shown. The data were fit into one site-specific binding model (Y = Bmax*X/(Kd+ X)). See Materials and methods section and source data for details. (c) Relative methyltransferase activity of full-length METTL3-METTL14 and the truncated enzyme devoid of the RGG motif in METTL14 ([METTL3-METTL14(-RGG)]) in the presence of d6T*, rNEAT2, or an equimolar mixture of these two oligos, as measured by radiometric assay. Results presented are the average of three independent experiments (n = 3) with one standard deviation (s.d.) for each oligonucleotide (shown as error bars). The results of two groups were analyzed and compared using two-tailed Student\u2019s unpaired t-test (p-value < 0.0001). Details about Student\u2019s t-test are provided in the Source Data file. (d, e) Proposed models showing that the METTL3-METTL14 complex can methylate a target adenine (yellow) in a single-stranded DNA region (black). Structured motifs present in ncRNA/mRNAs (orange) can block the methyltransferase activity by a shape-dependent binding of these RNAs to METTL3-METTL14.\n\n## Discussion\n\nOur results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020). Earlier studies suggest the existence of a large complex of multiple subunits of ~1 MDa size, possessing RNA N6-adenosine methylation activity distributed over two sub-complexes of approximate molecular mass of ~200 and ~800 kDa (Bokar et al., 1994Bokar et al., 1997). One such subunit is WTAP, which alters both the pattern and location of the m6A transcriptome (Schwartz et al., 2014). Future studies could examine the role of WTAP and other partners of METTL3-METTL14 in substrate recognition and specificity, especially within the context of the regulatory role of RNA in DNA methylation.\n\nIn summary, we unveiled a new N6-deoxyadenosine methylation activity on ssDNA, which is regulated by binding of METTL3-METTL14 to shape-dependent structured regions of ncRNAs and chromatin-associated nascent pre-mRNAs (CA-RNA) (Figure 3d and e). The structured elements in RNA could facilitate the recruitment of METTL3-METTL14 to chromatin and/or keep the writer complex engaged during co-transcriptional occurrence of m6A. Such a topological arrangement of METTL3-METTL14/RNA interaction could also restrict m6dA deposition, especially to the single-stranded regions of DNA exposed during transcription (Slobodin et al., 2017), DNA recombination (Zhang et al., 2020), damage and repair (Xiang et al., 2017), and R-loop metabolism (Abakir et al., 2020).\n\nA major difference in prokaryotic and eukaryotic genomes is the contrasting occurrence of the base methylation. The m6dA is a predominant modification mark in bacterial DNA, whereas the m5dC is more prevalent in eukaryotic genomes. How is the eukaryotic genome then protected from m6dA deposition despite having an efficient enzyme machinery (e.g., METTL3-METTL14) to accomplish such task? A comparative sequence/structural analysis of the bacterial EcoP15I and human METTL3 and METTL14 MTases provides some hints (Figures 1a\u2013c\u20133a). Of note, there are two major differences that exist in the sequences of METTL3 and METTL14: (a) loss of the target recognition domain (TRD) and (b) acquisition of the RGG motif in METTL14. The TRD motif (in EcoP15I MTase) is a major contributor to binding and specificity for a dsDNA (Gupta et al., 2015), whereas the RGG motif is known for RNA binding (Thandapani et al., 2013). It is likely that gene fusion/genome arrangement event(s) could have occurred during evolution (Bujnicki et al., 2002; Woodcock et al., 2020) to ensure very low/no occurrence (Douvlataniotis et al., 2020) of m6dA in mammalian genome. The high affinity to structured RNAs as demonstrated here could also ensure efficient recruitment of METTL3-METTL14 to specific nuclear compartment(s) in human cells.\n\nInterestingly, a recent study showed that a comprehensive network of RNA-RNA and RNA-DNA interactions mediated by ncRNAs (including MALAT1) creates distinct nuclear compartments and facilitates recruitment of proteins for RNA processing, heterochromatin assembly, and gene regulation (Quinodoz et al., 2020). Thus, the secondary structure and 3D shape of the RNAs appears to be crucial for these important biological processes. In line with these observations, our results suggest that structured elements in RNAs may play an important role in regulating the ssDNA and ssRNA methylation activity of METTL3-METTL14.\n\n## Materials and methods\n\n### Protein expression, purification, and oligonucleotide preparation\n\nThe coding sequence of full-length human METTL3 (NCBI reference sequence GI: 33301371) was used in this study. The gene was cloned into a plasmid suitable for expression of proteins in insect cells with an N-terminal poly histidine tag followed by a tobacco etch virus (TEV) protease site. This plasmid (5TEY (METTL3)) was a kind gift from Dr Cheryl Arrowsmith (Addgene plasmid # 101892; http://n2t.net/addgene:101892; RRID:Addgene_101892). The coding sequence of full-length human METTL14 (NCBI reference number GI: 172045930) was cloned into the pFastBac1 vector between BamHI and NotI restriction enzyme sites. For expression of recombinant proteins, we used ExpiSf Expression System (Thermo Fisher). First, the viral DNA bacmids for each gene were prepared from individual plasmids transformed into MAX Efficiency DH10Bac competent cells (Thermo Fisher). We confirmed the identity of the inserted genes by PCR amplification and DNA sequencing. The recombinant P0 virus for each gene were generated in ExpiSf9 insect cells following the manufacturer\u2019s recommendations (Thermo Fisher). The amount of each virus needed for infection has been optimized for maximal production of the two proteins. Infected cells were grown in ExpiSf CD medium (Thermo Fisher) at 27\u00b0C on an orbital shaker (speed 125 rpm) in a controlled (non-humidified, air-regulated) environment. Cells were harvested at 72 hr post-infection by spinning at 300\u00d7 g for 5 min, washed with phosphate buffered saline (PBS) twice, and resuspended in a buffer A (0.025 M Tris-HCl pH 8.0, 0.5 M NaCl, 0.005 M imidazole, 0.1 mM TCEP, 10% [(v/v)] glycerol) supplemented with 0.5% (v/v) Igepal, two mini-protease inhibitor cocktail tablets (Roche), DNase I, and lysozyme. Cells were lysed using a microfluidizer (Analytik, UK) and the soluble fraction was separated by centrifuging the lysate at 40,000 rpm for 40 min. The supernatant was passed through a 0.22 \u00b5m filter.\n\nThe clarified soluble fraction was loaded on to a Nuvia IMAC column (Bio-Rad) pre-equilibrated in buffer A. The proteins were eluted by increasing the concentration of imidazole. The 6XHis tag was then proteolytically removed using TEV protease. Any uncleaved fractions and remaining protein impurities were removed by second passage through an IMAC column. The METTL3-METTL14 complex was further purified by successive passage through HiTrap heparin and HiLoad Superdex 200 columns (GE Healthcare). The protein complex was eluted as a single homogenous species in a final buffer containing 0.02 M Tris-HCl pH 8.0, 0.15 M NaCl, 0.1 mM TCEP. The purified protein complex was concentrated to 3\u20135 mg/mL and used immediately, or flash-frozen in liquid nitrogen and stored at \u201380\u00b0C. The METTL3-METT14-RGG complex lacks the C-terminus RGG repeats motif (amino acids 400\u2013457) of METTL14. It was expressed and purified using same method as the full-length METTL3-METTL14 complex.\n\nAll RNA and DNA oligonucleotides used in this study were synthesized, purified by HPLC, and received in deprotected (for RNAs) and desalted form from Dharmacon and Integrated DNA Technologies, respectively. Oligos were dissolved in 1\u00d7 buffer containing 0.01 M Tris-HCl pH 8.0, 0.05 M NaCl. To prepare double-stranded oligos, the two strands were mixed in roughly equimolar amounts. Annealing was carried out by heating the mixture to 95\u00b0C for 2 min followed by gradual cooling to 25\u00b0C over 45 min in a thermocycler (Eppendorf).\n\n### Methyltransferase assays\n\n#### Radiometric assay\n\nEach reaction was carried out in a 5 \u00b5L mixture containing 50 mM HEPES pH 7.5, 5 mM NaCl, 1 mM dithiothreitol (DTT), 5 \u00b5M [methyl-3H] SAM (PerkinElmer), 10 \u00b5M substrate RNA/DNA probe, and 1 \u00b5M co-purified full-length METTL3-METTL14 enzyme complex. The reactions were incubated at 37\u00b0C for 1 hr and 3 \u00b5L of each reaction was quenched by blotting on Hybond-N+ membrane (Amersham). RNA/DNA probes were crosslinked to membrane by exposure to ultraviolet light (254 nm) for 2 min. The membranes were successively washed three times by 1\u00d7 PBS followed by three ethanol washes for 5 min each. The membranes were air-dried in the hood for 15 min and the counts per minute (c.p.m.) of the RNA/DNA probes were measured using a scintillation counter (Beckman LS6500). We also performed this assay in a reaction buffer containing higher salt (50.0 mM NaCl) and observed consistent results (dose-dependent inhibition of m6dA activity of METTL3-METTL14 by small, structured RNA oligos) as presented in Figure 2e. Results presented here are an average of three independent experiments (n = 3) with one standard deviation (s.d.) for each oligonucleotide shown as error bars. Source data are provided as a Source Data file. The results of two groups in Figure 3c were derived from three independent experiments and were analyzed using two-tailed Student\u2019s t-test (unpaired).\n\n#### Quantitation of methylation and validation of identity of methylated base by mass spectrometry\n\nMethylation reactions were carried out in a 10 \u03bcL mixture containing 50 mM Tris-HCl, pH 7.5, 5 mM NaCl, 1 mM DTT, 200 \u03bcM SAM, 10 \u03bcM substrate RNA/DNA probe, and 1 \u03bcM METTL3-METTL14 enzyme complex. The reactions were incubated at 37\u00b0C for 1 hr, followed by incubation with 0.8 units of proteinase K (New England Biolabs) at 37\u00b0C for 10 min. Two microliters of each reaction were subjected to oligonucleotide intact mass analysis by liquid chromatography-mass spectrometry (LC-MS) as described previously (Viswanathan et al., 2020). The raw data was deconvoluted using ProMass HR (Novatia, LCC). The deconvoluted-mass peak area ratio between reactants and expected products was used to estimate the percentage of methylation. Results from three independent experiments (n = 3) are shown. To verify the identity of the modified nucleotides, METTL3-METTL14 reactions were also subjected to nucleoside analysis. Briefly, 8 \u03bcL of each of reaction were purified using Oligo Clean-Up and Concentration Kit (Norgen Biotek) according to manufacturer\u2019s instructions. The nucleic acids were eluted in 20 \u03bcL nuclease-free water. To seventeen microliters of the eluates were added 2 \u03bcL of 10\u00d7 Nucleoside Digestion Mix reaction buffer and 1 \u03bcL of Nucleoside Digestion Mix (New England Biolabs). Reactions were incubated at 37\u00b0C for 1 hr. The entirety of the nucleoside digestion reaction was subjected to ultra-high-performance liquid chromatography (UHPLC) or UHPLC-MS analysis without purification. UHPLC analysis was performed on an Agilent 1290 Infinity II system equipped with a G7117A diode array detector (DAD). UHPLC-MS analysis was performed an Agilent 1290 Infinity II system equipped with a G7117A DAD and a 6135 XT mass detector. LC separations were carried out using a Waters XSelect HSS T3 XP column (2.1 \u00d7 100 mm, 2.5 \u00b5m) with the gradient mobile phase consisting of methanol and 10 mM ammonium acetate buffer (pH 4.5). The identity of each nucleoside was confirmed by analysis of the LC retention times relative to authentic standards and by mass spectrometric analysis. The relative abundance of each nucleoside was determined by UV absorbance.\n\n#### Determining the nucleic acid-binding affinities of METTL3-METTL14 and METTL3-METTL14-RGG\n\nFP-based assay was used to measure equilibrium dissociation-binding constants (Kd). The reactions were carried out in a buffer 0.01 M HEPES pH 7.5 and 0.05 M KCl. All oligonucleotides contain a fluorescein moiety covalently attached to the 5\u2019-end. A constant concentration of the fluorescein labeled oligo (1 nM) was used with increasing concentrations of full-length METTL3-METTL14 protein or its truncated version (METTL3-METTL14-RGG (0\u20132000 nM)) in a 384-well plate. Significant changes in FP upon increasing concentrations of protein were indicative of direct binding. The FP (emission wavelength = 530 nm, excitation wavelength = 485 nm) value for each dilution was measured using PHERAstar FS (BMG Labtech). The buffer corrected values were used to calculate the equilibrium dissociation constant (Kd) for protein-DNA/RNA binding using a simple 1:1 specific binding model (Y = Bmax*X/(Kd+ X), where X denotes the concentration of protein ligand, Y = specific binding, Bmax = maximum binding, Kd = equilibrium dissociation constant in same units as X). Data were fitted by a single-site binding model in GraphPad Prism (GraphPad Software, San Diego, CA). Results presented here are an average of three independent experiments (n = 3) with one standard deviation (s.d.) for each oligonucleotide shown as error bars. Source data are provided as a Source Data file.\n",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "397807ee-1d0f-46c1-a7c5-2f4434d81054",
+      "submission_id": "0e29e22c-8a39-4481-9a79-350e0625f15b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shozeb Haider, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67150.sa0](https://doi.org/10.7554/eLife.67150.sa0)\n\nThis manuscript will be of interest to researchers in the fields of nucleic acid chemical biology in general and diseases related to nucleic acid methylation in particular. The data presented support the conclusions of the paper within the current context, provide new evidence and plausible explanations to previously inexplicable mechanisms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Shozeb Haider, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.67150.sa1](https://doi.org/10.7554/eLife.67150.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for resubmitting your work entitled \"RNA binding to human METTL3-METTL14 restricts N6-deoxyadenosine methylation of DNA\" for further consideration by eLife. Your article has been reviewed by 3 peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mone Zaidi as the Senior Editor. The reviewers have opted to remain anonymous.\n\nEssential revisions:\n\nPlease address a few questions raised by the Reviewer #1 #2 and #3. Their comments are appended.\n\nReviewer #1:\n\nThe manuscript submitted by Shan Qi et al., investigates the mechanistic role of METTL3-METTL14 enzymes in the methylation of DNA and RNA. Up until now, the detailed understanding of their specificity for nucleic acids has been liimted. Their study uses classical biochemical and mass spectrometry experiments to investigate the relationship between substrate binding and methylation. Interestingly, their results highlight that the METTL3-METTL14 complex prefers to methylate dA in single-stranded DNA even though it does not prefer to bind to DNA. They also go on to demonstrate that the complex binds structured RNA with high affinity but methylates RNA less efficiently than single-stranded DNA and that structured RNA prevalent in long noncoding RNA regulates methylation of single-stranded DNA.\n\nStrength:\n\nThis work adds to the discussion about the substrate specificity of these enzyme complexes. The data presented support the conclusions made.\n\nWeakness:\n\nSince the authors use structural models, they should detail the structural aspects of the METTL3-METTL14 complex behind the preference of one substrate over the other.\n\nThe reviewer believes that the study will benefit immensely if the structural details are expanded to explain substrate specificity in their discussion. The authors use structural models in their figures but do not use these models to their advantage in explaining their results. This should be included.\n\nReviewer #2:\n\nIn this manuscript by Qi et al., the authors have studied the methyltransferase activity of the METTL3-METTL14 complex. The authors propose that the structured elements in RNAs may play an essential role in regulating the ssDNA and ssRNA methylation activity by METTL3-METTL14 and affect biological processes where DNA and RNA are held in close proximity such as transcription, DNA recombination, transcription-coupled DNA damage repair, and R-loop metabolism.\n\nTo carry out this study, the authors have purified full-length METTL3-METTL14 and METTL3-METTL14 truncated protein lacking RGG motif and measured its methyltransferase activity and binding affinity with different DNA and RNA substrates. Differential binding affinity was observed for different DNA and RNA oligos which were fluorescently labeled for the binding assay.\n\nThe results demonstrate an inverse relationship for substrate binding and methyltransferase activity in ssDNA and RNA in 'in vitro' experiments. While the M3-M14 complex showed the highest affinity and lowest activity for structured RNA oligos, maximum activity and lowest affinity were observed with single-stranded DNA. And the presence of structured RNA oligos can modulate the methyltransferase activity of the M3-M14 enzyme on single-stranded DNA.\n\nBefore this research, it was reported that the METTL3-METTL14 complex from mammals could catalyze the transfer of methyl group to N6 of Adenine in ssDNA and unpaired DNA in vitro but spares the double-stranded DNA or DNA/RNA hybrid (Woodcock et al., 2019). Further, it was also shown that the catalytic efficiency on ssDNA is much higher than that on RNA substrate. Moreover, Wilms tumor suppressor-associated protein (WTAP) interacts with this complex and affects its methylation activity.\n\nThe enzymatic reactions performed in this work are at non-physiological conditions with extremely low salt. The authors have discussed the significance of the work in transcription, DNA damage repair, and R loop metabolism. However, the substrates used in this study do not represent the process mentioned. Hence, it is difficult to reach rigorous insights into the biological processes for the activity observed.\n\nThe subject of the work is interesting; however, the progress made to the field is incremental. There some concerns which I have listed below:\n\n1. The enzymatic reactions performed in this work are at non-physiological conditions in 5mM NaCl. Hence, it is difficult to comment on the biological processes for the activity observed under such conditions. The title is misleading and it should state 'in vitro'. In the abstract, the authors state: \"We also show that the methyltransferase activity of METTL3-METTL14 on ssDNAs is largely regulated by structured RNA elements prevalent in long noncoding (lnc) RNAs but also found in other cellular RNAs.\" However, the experiments are done in vitro using short oligos. Also, WTAN is known to interact with this complex and affect its methylation activity. In the absence of an experiment to test the role of WTAN in the methyltransferase activity of METTL3-METTL14, it may be difficult to reach this conclusion. The authors have discussed the significance of the work in the process of transcription, DNA damage repair, and R loop metabolism, and also depicted in the model in Figure 3d. However, none of the substrates used in this study represent that of the model.\n\n2. The enzymatic reactions are done in buffer with 5 mM NaCl, while binding studies were done in 50 mM KCl. Why the difference in salt concentrations? What role the different salt conditions play in these experiments?\n\n3. Why rNEAT2 binds with higher affinity but has lower methylation than r6T, which binds with lesser affinity? What is the mechanism behind the inverse relationship of binding and methylation activity?\n\n4. The authors suggest that 'the code for shape-specific RNA recognition resides in the RGG motif'. So in Figure 3c, why the % methylation in d6T* decreases significantly in RGG mutant compared to wild type. Why is an affinity change observed for unstructured d6T* and r6T in RGG mutant in Table 1?\n\n5. In the present form, the manuscript is difficult to read for a general reader. The manuscript text assumes the reader has a more detailed understanding of the subject. For example, the RGG motif and its role in substrate binding is not introduced; the structural similarity between human METTL3-METTL14 and N6-deoxyadenosine DNA methyltransferases.\n\nReviewer #3:\n\nQi et al., have investigated the RNA/DNA substrate specificity of human Methyltransferase like-3 (METTL3) and METTL14 complex using various substrates including ssDNA, dsDNA, various RNA substrates with or without secondary substrate and various placements of the specific recognition motif DRACH. They showed higher methyltransferase activity towards ssDNA (d6T*) compared to a previously identified DNA substrate d6T which had the propensity to form duplex DNA or its RNA counterpart. They also show an inverse relation between binding affinity and catalysis with higher affinity to RNA substrates with propensity to form secondary structures with negligible levels of methylation. Similarly, the DNA substrates with the 370 and 509nM Kd for d6T and d6T* had the highest methyltransferase. They further investigate the effect of structured RNA binding on DNA methylation, showing a inhibitory effect in a dose-dependent manner (a 4-fold stronger inhibition with rNEAT2) compared to a control RNA substrate with no recognition motif. They further investigate the effect of RGG deletion (a previously identified RNA binding region) which reduces RNA substrate binding by 2- to 10-fold with 75% reduction in DNA methylation activity compared to >90%. The authors suggest the role of structured RNAs for recruitment of the METTL3/METTL14 complex to specific sites for function. This manuscript provides incremental advances in further qualifying the substrate specificity under the experimental conditions tested.\n\nThe main conclusions of the paper on the role of structured RNAs for DNA methylation are only partially supported in this paper in the context of the experiments carried out. A wider mechanistic understanding of the role of structured RNAs for DNA methylation or why a ssDNA substrate is preferable over a RNA substrate when the occurrence of DNA methylation is a lot fewer than RNA methylation are all aspects that cannot be addressed by the specific experiments in this paper and is a particular weakness in this manuscript.\n\nTo enhance the manuscript and further the conclusions in this manuscript, authors need to further investigate the role of structured RNAs initially using molecular modelling to further inform functional roles. The authors in Figure 1 show structure of EcoP15I with a DNA substrate to show a model of the METTL3/METTL14 with an RNA substrate. It is not clear how the authors have gone about modelling this, what is the sequence similarity/ conservation of residues in the binding site, is the RGG domain involved in binding in this model, does the structural model support specificity to RNA or DNA, which residues might be involved in the active site? Authors need to undertake a structural analysis using the crystal structure available to perform molecular dynamics with DNA and RNA substrates to get a mechanistic understanding for this or do an experimental structure with a nucleic acid substrate to provide this understanding.\n\nThe authors have tested the effect of structured RNAs on DNA methylation specifically, why not RNA substrates lacking structure. Is this a competition between substrates with different affinities and what could be the relevance in cellular processes specifically? Competition experiments haven't been performed here.\n",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9625606-26de-4c71-97d2-501c6ef1042c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C1",
+      "claim": "METTL3 and METTL14 complex transfers a methyl group from S-adenosyl-L-methionine to N6 amino group of adenosine bases in RNA (m6A).",
+      "claim_type": "EXPLICIT",
+      "source": "Methyltransferase like-3 (METTL3) and METTL14 complex transfers a methyl group from S-adenosyl-L-methionine to N6 amino group of adenosine bases in RNA (m6A) and DNA (m6dA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known function of the METTL3-METTL14 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "1b7690f6-4b9a-419f-9c3d-ae8f47e4c76d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C2",
+      "claim": "METTL3 and METTL14 complex transfers a methyl group from S-adenosyl-L-methionine to N6 amino group of adenosine bases in DNA (m6dA).",
+      "claim_type": "EXPLICIT",
+      "source": "Methyltransferase like-3 (METTL3) and METTL14 complex transfers a methyl group from S-adenosyl-L-methionine to N6 amino group of adenosine bases in RNA (m6A) and DNA (m6dA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known function of the METTL3-METTL14 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "824992ee-d020-4e10-a238-9b23e4e49c20",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C3",
+      "claim": "METTL3-METTL14 preferentially catalyzes the formation of m6dA in single-stranded DNA (ssDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "we uncover an inverse relationship for substrate binding and methylation and show that METTL3-METTL14 preferentially catalyzes the formation of m6dA in single-stranded DNA (ssDNA), despite weaker binding affinity to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from methyltransferase assays and binding studies presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "9ed285ed-8793-4271-a24b-e97b4c4d2428",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C4",
+      "claim": "METTL3-METTL14 has weaker binding affinity to DNA compared to RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "we uncover an inverse relationship for substrate binding and methylation and show that METTL3-METTL14 preferentially catalyzes the formation of m6dA in single-stranded DNA (ssDNA), despite weaker binding affinity to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarization binding assays showing higher Kd values for DNA substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "9f396288-e62b-4715-b9aa-2b0417bc410b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C5",
+      "claim": "METTL3-METTL14 binds structured RNAs with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it binds structured RNAs with high affinity, but methylates the target adenosine in RNA (m6A) much less efficiently than it does in ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarization data showing low Kd values (2-25 nM) for structured RNAs like rNEAT2 and rTCE23.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "2d8b061d-282b-4cc8-892d-e891d9f471d1",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C6",
+      "claim": "METTL3-METTL14 methylates the target adenosine in RNA (m6A) much less efficiently than it does in ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it binds structured RNAs with high affinity, but methylates the target adenosine in RNA (m6A) much less efficiently than it does in ssDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by radiometric assays and mass spectrometry data comparing methylation efficiency on RNA versus DNA substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e0e2fbca-bfca-44d9-9f3d-c825b748bb5d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C7",
+      "claim": "METTL3-METTL14-mediated methylation of DNA is largely restricted by structured RNA elements prevalent in long noncoding and other cellular RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that METTL3-METTL14-mediated methylation of DNA is largely restricted by structured RNA elements prevalent in long noncoding and other cellular RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing dose-dependent inhibition of DNA methylation by structured RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "65dd8644-b2b0-4b7a-9cae-b6d50c7d3816",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C8",
+      "claim": "N6-methyladenosine (m6A) is considered a major covalent modification of the adenosine (A) base in coding and noncoding (nc) RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "N6-methyladenosine (m6A) is considered a major covalent modification of the adenosine (A) base in coding and noncoding (nc) RNAs (Desrosiers et al., 1974; Bokar et al., 1994; Rottman et al., 1994; Dominissini et al., 2012; Meyer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "de6a36db-c556-48db-a364-8a22aaf083dd",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C9",
+      "claim": "m6A is linked to RNA turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "It is linked to diverse physiological processes, including \u2013 but not limited to \u2013 RNA turnover (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020), stem cell differentiation (Batista et al., 2014; Geula et al., 2015,) oncogenic translation (Lin et al., 2016; Barbieri et al., 2017; Vu et al., 2017; Choe et al., 2018), and DNA damage repair (Xiang et al., 2017; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "c23b28c0-f1da-4c4b-8638-e1ec8e11b98c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C10",
+      "claim": "m6A is linked to stem cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is linked to diverse physiological processes, including \u2013 but not limited to \u2013 RNA turnover (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020), stem cell differentiation (Batista et al., 2014; Geula et al., 2015,) oncogenic translation (Lin et al., 2016; Barbieri et al., 2017; Vu et al., 2017; Choe et al., 2018), and DNA damage repair (Xiang et al., 2017; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "985e89d3-9f18-48dd-a80c-b52da2d8bf29",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C11",
+      "claim": "m6A is linked to oncogenic translation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is linked to diverse physiological processes, including \u2013 but not limited to \u2013 RNA turnover (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020), stem cell differentiation (Batista et al., 2014; Geula et al., 2015,) oncogenic translation (Lin et al., 2016; Barbieri et al., 2017; Vu et al., 2017; Choe et al., 2018), and DNA damage repair (Xiang et al., 2017; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "acca520a-b120-465a-a72a-90313fe90621",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C12",
+      "claim": "m6A is linked to DNA damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "It is linked to diverse physiological processes, including \u2013 but not limited to \u2013 RNA turnover (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020), stem cell differentiation (Batista et al., 2014; Geula et al., 2015,) oncogenic translation (Lin et al., 2016; Barbieri et al., 2017; Vu et al., 2017; Choe et al., 2018), and DNA damage repair (Xiang et al., 2017; Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ec2bc06b-57ec-4ee0-808f-9c0f408cc10d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C13",
+      "claim": "Most m6A in cellular RNAs is installed by methyltransferase like-3 (METTL3) and METTL14 methyltransferases in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, most m6A in cellular RNAs is installed by methyltransferase like-3 (METTL3) and METTL14 methyltransferases (Bokar et al., 1994; Dominissini et al., 2012; Liu et al., 2014), both of which belong to the \u03b2-class of S-adenosyl methionine (SAM)-dependent methyltransferases (N6-MTases) (Bujnicki et al., 2002; Woodcock et al., 2020) that also include N6-deoxyadenosine DNA methyltransferases (m6dA MTases), especially those from Type III restriction-modification (R-M) systems in bacteria (e.g., ModA/B dimer of EcoP15I) (Gupta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "7dd44cd0-a77b-4d12-bebd-e8b48e45d0a3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C14",
+      "claim": "METTL3 and METTL14 belong to the \u03b2-class of S-adenosyl methionine (SAM)-dependent methyltransferases (N6-MTases).",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, most m6A in cellular RNAs is installed by methyltransferase like-3 (METTL3) and METTL14 methyltransferases (Bokar et al., 1994; Dominissini et al., 2012; Liu et al., 2014), both of which belong to the \u03b2-class of S-adenosyl methionine (SAM)-dependent methyltransferases (N6-MTases) (Bujnicki et al., 2002; Woodcock et al., 2020) that also include N6-deoxyadenosine DNA methyltransferases (m6dA MTases), especially those from Type III restriction-modification (R-M) systems in bacteria (e.g., ModA/B dimer of EcoP15I) (Gupta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "7053bfe7-95ac-41f3-9228-95f3578d6598",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C15",
+      "claim": "The \u03b2-class of SAM-dependent methyltransferases includes N6-deoxyadenosine DNA methyltransferases (m6dA MTases) from Type III restriction-modification systems in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In human cells, most m6A in cellular RNAs is installed by methyltransferase like-3 (METTL3) and METTL14 methyltransferases (Bokar et al., 1994; Dominissini et al., 2012; Liu et al., 2014), both of which belong to the \u03b2-class of S-adenosyl methionine (SAM)-dependent methyltransferases (N6-MTases) (Bujnicki et al., 2002; Woodcock et al., 2020) that also include N6-deoxyadenosine DNA methyltransferases (m6dA MTases), especially those from Type III restriction-modification (R-M) systems in bacteria (e.g., ModA/B dimer of EcoP15I) (Gupta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "12d512fc-c353-45b6-9b5d-8a4a5a8f2cd9",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C16",
+      "claim": "The first structures of METTL3-METTL14 complexes suggested common features in EcoP15I and METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "The first structures of METTL3-METTL14 complexes suggested common features in EcoP15I and METTL3-METTL14 (Wang et al., 2016b; Sledz and Jinek, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6ad6e27b-67c8-4d6f-9ad1-9b799707ae03",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C17",
+      "claim": "There is high structural similarity of the cores of human METTL3, METTL14, and EcoP15I.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed these MTases and found high structural similarity of the cores of human METTL3, METTL14, and EcoP15I, suggesting their evolutionary origin from a common ancestor (Figure 1a\u2013e and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis and comparison shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ce62694a-1b71-4cc2-9b34-0d86fc17fe26",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C18",
+      "claim": "METTL3, METTL14, and EcoP15I share an evolutionary origin from a common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed these MTases and found high structural similarity of the cores of human METTL3, METTL14, and EcoP15I, suggesting their evolutionary origin from a common ancestor (Figure 1a\u2013e and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structural similarity observed in the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "d5fc23a0-f88f-4321-a41a-995595b8bae2",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C19",
+      "claim": "All three members (EcoP15I Mod, METTL3, and METTL14) belong to the \u03b2-class of SAM-dependent MTases and exhibit a sequential arrangement of motifs (IV-X followed by motif I).",
+      "claim_type": "EXPLICIT",
+      "source": "All three members belong to the \u03b2-class of SAM-dependent MTases and exhibit a sequential arrangement of motifs (IV-X followed by motif I) (Bujnicki et al., 2002; Woodcock et al., 2020; Malone et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "c3dfc187-0d1e-4b5a-89e1-fd7ffc8cb3d7",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C20",
+      "claim": "Motif IV (D/EPPY/W/L) is associated with the recognition of target adenine base.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif IV (D/EPPY/W/L) and I are associated with the recognition of target adenine base (Gupta et al., 2015) and co-factor (SAM) binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "32258c51-ef32-4417-85a1-8fd5939b23fb",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C21",
+      "claim": "Motif I is associated with co-factor (SAM) binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Motif IV (D/EPPY/W/L) and I are associated with the recognition of target adenine base (Gupta et al., 2015) and co-factor (SAM) binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6232d351-5cb1-4daa-88dc-a2554c552607",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C22",
+      "claim": "An overlay of MTase domains of EcoP15I and METTL14 shows structural similarity within MTase folds (rmsd = 2.55 \u00c5 over 278 C\u03b1 atoms).",
+      "claim_type": "EXPLICIT",
+      "source": "An overlay of MTase domains of EcoP15I and METTL14 (PDB ID: 5IL0) shows structural similarity within MTase folds (rmsd = 2.55 \u00c5 over 278 C\u03b1 atoms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative structural comparison result shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "006e22d0-a213-407c-9cc4-1c12fd92074f",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C23",
+      "claim": "m6dA in bacterial DNA is deposited in a strictly sequence-dependent manner in double-stranded DNA (dsDNA).",
+      "claim_type": "EXPLICIT",
+      "source": "While m6dA in bacterial DNA is deposited in a strictly sequence-dependent manner in double-stranded DNA (dsDNA) (Gupta et al., 2015; Malone et al., 1995), m6A in RNA by human METTL3-METTL14 shows less stringent sequence dependency for sequences flanking the target A within the recognition motif DRACH (D = A/G/U, R = A/G, H = A/C/U) (Bokar et al., 1994; Liu et al., 2014; Linder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "f98eb942-74af-4cb8-934e-61936b7305c0",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C24",
+      "claim": "m6A in RNA by human METTL3-METTL14 shows less stringent sequence dependency for sequences flanking the target A within the recognition motif DRACH.",
+      "claim_type": "EXPLICIT",
+      "source": "While m6dA in bacterial DNA is deposited in a strictly sequence-dependent manner in double-stranded DNA (dsDNA) (Gupta et al., 2015; Malone et al., 1995), m6A in RNA by human METTL3-METTL14 shows less stringent sequence dependency for sequences flanking the target A within the recognition motif DRACH (D = A/G/U, R = A/G, H = A/C/U) (Bokar et al., 1994; Liu et al., 2014; Linder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "3cdc8425-4115-46bf-9bb8-5293113dfef1",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C25",
+      "claim": "m6A levels in cellular RNA remain at ~0.1% of total pool of ribonucleotides in cultured mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this does not correlate with low levels of m6A in cellular RNA, which remains at ~0.1% of total pool of ribonucleotides in cultured mammalian cells (Dubin and Taylor, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "b17b27ca-c893-4e95-858a-4f0108cf8a3c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C26",
+      "claim": "All m6A is deposited co-transcriptionally, with most occurring on chromatin-associated RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, recent evidence suggests that all m6A is deposited co-transcriptionally, with most occurring on chromatin-associated RNAs, for example, nascent pre-mRNA (CA-RNA), promoter-associated RNA, enhancer RNA, and repeat RNA elements (Ke et al., 2017; Knuckles et al., 2017; Liu et al., 2020; Slobodin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "c9816a81-f531-472c-a600-281dfd437667",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C27",
+      "claim": "The METTL3-METTL14 m6A writers can be recruited to chromatin by modified histone tails (e.g., H3K36me3).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the METTL3-METTL14 m6A writers can be recruited to chromatin by modified histone tails (e.g., H3K36me3) (Huang et al., 2019b) or the transcription machinery (Barbieri et al., 2017; Slobodin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "d72ae7fd-76f4-4bc6-af1b-22ceb131ac4c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C28",
+      "claim": "The METTL3-METTL14 m6A writers can be recruited to chromatin by the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the METTL3-METTL14 m6A writers can be recruited to chromatin by modified histone tails (e.g., H3K36me3) (Huang et al., 2019b) or the transcription machinery (Barbieri et al., 2017; Slobodin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ddfb1fa0-8fa8-40b0-a5a8-a961d3e6b53b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C29",
+      "claim": "Chromatin-associated XIST lncRNA harbors m6A marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain long noncoding (lnc) RNAs that are essential for regulated transcription, such as chromatin-associated XIST (Patil et al., 2016) and NEAT2 (MALAT1) (Liu et al., 2015), also harbor m6A marks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "cf6e38b5-f847-4490-b471-420e3a5ac620",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C30",
+      "claim": "NEAT2 (MALAT1) lncRNA harbors m6A marks.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain long noncoding (lnc) RNAs that are essential for regulated transcription, such as chromatin-associated XIST (Patil et al., 2016) and NEAT2 (MALAT1) (Liu et al., 2015), also harbor m6A marks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "2dcef515-618d-4531-99ad-d4da73bef3e3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C31",
+      "claim": "A role of m6A in DNA damage response and repair has been suggested.",
+      "claim_type": "EXPLICIT",
+      "source": "A role of m6A in DNA damage response and repair has also been suggested (Zhang et al., 2020; Xiang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "46bcb3c8-6130-4180-843e-6758e9001db9",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C32",
+      "claim": "METTL3 localizes at sites of dsDNA breaks and installs the m6A on DNA-damage-associated RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In those contexts, METTL3 localizes at sites of dsDNA breaks and installs the m6A on DNA-damage-associated RNAs (Zhang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "b50ee021-094c-4981-9751-d06bb2f030e2",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C33",
+      "claim": "METTL3 is a pro-viral host factor in SARS-CoV-2 pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "METTL3 is also emerged as a pro-viral host factor in SARS-CoV-2 pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an emerging finding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "45dafc91-0d04-4c30-9760-476afd805b9d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C34",
+      "claim": "Genetic depletion or inhibition of METTL3 by small molecules triggers innate immune response and limits viral growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, genetic depletion or inhibition of METTL3 by small molecules triggers innate immune response and limits viral growth (Burgess et al., 2021; Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6427f3e1-1a65-4d0b-880c-a9c2ef5f1141",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C35",
+      "claim": "METTL3-METTL14 can convert dA to m6dA within equivalent DRACH motif in a single-stranded DNA (ssDNA) with a 2.5-fold preference over the equivalent RNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that METTL3-METTL14 can convert dA to m6dA within equivalent DRACH (D = A/G/U, R = A/G, H = A/C/U) motif in a single-stranded DNA (ssDNA) with a 2.5-fold preference over the equivalent RNA in vitro (Woodcock et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "9ab556a3-2664-4125-beeb-a51f5bf04cc4",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C36",
+      "claim": "m6dA levels in mammalian DNA are extremely low (0.006\u20130.01%).",
+      "claim_type": "EXPLICIT",
+      "source": "Since m6dA levels in mammalian DNA are extremely low (0.006\u20130.01%) and thought to originate from RNA catabolism rather than from SAM-dependent MTase reactions (Musheev et al., 2020), fundamental questions about substrate(s) specificity and mechanisms of action of METTL3-METTL14 have emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "450e303f-60fa-4f30-a49b-630fd6536dad",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C37",
+      "claim": "m6dA in mammalian DNA is thought to originate from RNA catabolism rather than from SAM-dependent MTase reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since m6dA levels in mammalian DNA are extremely low (0.006\u20130.01%) and thought to originate from RNA catabolism rather than from SAM-dependent MTase reactions (Musheev et al., 2020), fundamental questions about substrate(s) specificity and mechanisms of action of METTL3-METTL14 have emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "3b7ec494-cba8-469b-b60b-fe47129fd114",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C38",
+      "claim": "A secondary structure-based superposition of EcoP15I ModB and METTL14 revealed common features and similar arrangement of canonical MTase motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the MTase cores of (ModB) of EcoP15I (aa 90\u2013132, 169\u2013261, 385\u2013511, PDB: 4ZCF Gupta et al., 2015) and METTL14 (aa 116\u2013402, PDB: 5IL0 Wang et al., 2016b). A secondary structure-based superposition (Krissinel and Henrick, 2004) of these two structures revealed common features and similar arrangement of canonical MTase motifs (motifs I and IV-X), including the motif IV (D/EPPY/W/L) that surrounds the Watson-Crick edge of the flipped target adenine base (Figure 1a\u2013e and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e59c252d-ff43-41a8-9733-2f91172b661a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C39",
+      "claim": "Three loops encompassing the sequence intervening MTase motifs IV and V (loop 1), VIII and VIII' (loop 2), and motifs IX and X (loop 3) contribute to substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies identified three loops encompassing the sequence intervening MTase motifs IV and V (loop 1), VIII and VIII' (loop 2), and motifs IX and X (loop 3) contribute to substrate binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "4189bf69-46bf-4334-ad3a-a3fb5ff49620",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C40",
+      "claim": "The MTase domain of METTL14 is enzymatically inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "While the MTase domain of METTL14 is enzymatically inactive, it harbors features that contribute to substrate binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "28d2c80f-9bbd-4c95-8401-236b4c745d9b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C41",
+      "claim": "The MTase domain of METTL14 harbors features that contribute to substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "While the MTase domain of METTL14 is enzymatically inactive, it harbors features that contribute to substrate binding (Wang et al., 2016b; Sledz and Jinek, 2016; Wang et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "dcab8f6d-c36e-4a2b-98db-e5419fb23247",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C42",
+      "claim": "METTL3-METTL14 exhibited higher enzymatic activity on the d6T DNA oligo compared with its RNA counterpart (r6T).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed higher enzymatic activity of METTL3-METTL14 on the d6T DNA oligo compared with its RNA counterpart (r6T) (Figure 2a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2a and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ecf38832-1d03-496d-8fd0-3ecb6a84483a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C43",
+      "claim": "The 14-mer d6T/r6T oligos have a propensity to form duplex DNA (for d6T) or RNA (for r6T).",
+      "claim_type": "EXPLICIT",
+      "source": "By closely examining the sequence of the 14-mer d6T/r6T, we found a propensity of these oligos to form duplex DNA (for d6T) or RNA (for r6T): 6 of the 14 nucleotides at 5'-end will pair with a complementary sequence to create a duplex with an 8-nt overhang at the 3'-end of each strand (Figures 1g and 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis and predicted secondary structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "325724bc-c7b3-40d4-a72a-1b19498853e9",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C44",
+      "claim": "The methyltransferase activity of METTL3-METTL14 toward d6T* increased by 2-fold compared with d6T.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the methyltransferase activity of METTL3-METTL14 toward d6T* increased by 2-fold compared with d6T (and >12-fold compared with r6T) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "da106a2c-180d-4be1-9240-26b937bb73da",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C45",
+      "claim": "The methyltransferase activity of METTL3-METTL14 toward d6T* increased by >12-fold compared with r6T.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the methyltransferase activity of METTL3-METTL14 toward d6T* increased by 2-fold compared with d6T (and >12-fold compared with r6T) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "03895b10-085b-44f9-9efc-d9d0fde3dc78",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C46",
+      "claim": "METTL3-METTL14 showed no activity in the presence of a perfect duplex version of d6T DNA (d6T-ds).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Woodcock et al., 2019), METTL3-METTL14 showed no activity in the presence of a perfect duplex version of d6T DNA (d6T-ds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "91d4b927-ae7b-416f-b73f-cff4007a1867",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C47",
+      "claim": "METTL3-METTL14 showed some low but consistently detectable methyltransferase activity on rNEAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no methyltransferase activity on rTCE23 RNA, as expected; but surprisingly, some low (but consistently detectable) methyltransferase activity on rNEAT2 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6e656169-373c-40af-ab92-6624df257629",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C48",
+      "claim": "METTL3-METTL14 showed no methyltransferase activity on rTCE23 RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no methyltransferase activity on rTCE23 RNA, as expected; but surprisingly, some low (but consistently detectable) methyltransferase activity on rNEAT2 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "7b08ad1e-f1fb-4543-b877-bdda8a13a2dc",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C49",
+      "claim": "Full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3'-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "058e7628-9659-44ca-ae74-99e8cb62631b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C50",
+      "claim": "Full-length METTL3-METTL14 binds to rTCE23 with Kd = 25 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3'-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "31e43823-2357-41d0-860b-d13d16bb1ff8",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C51",
+      "claim": "Full-length METTL3-METTL14 binds to r6T with Kd = 114 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3'-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "a14b3dbc-5d3f-4e46-bf87-7c96642a128e",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C52",
+      "claim": "Full-length METTL3-METTL14 binds to Pal-Top+ bot with Kd = 127 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3'-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "99087fe9-f66f-4f58-8ff0-03d316fb41d2",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C53",
+      "claim": "Full-length METTL3-METTL14 binds to FoxM1-p1 with Kd = 294 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length METTL3-METTL14 binds to rNEAT2 with the highest affinity (Kd = 2 nM), followed by the hairpin rTCE23 (Kd = 25 nM), the 3'-overhang r6T (Kd = 114 nM), the palindromic Pal-Top+ bot (Kd = 127 nM), and the ssRNA FoxM1-p1 (Kd = 294 nM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6f95a29f-adfc-4348-97d9-c442307ba63b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C54",
+      "claim": "DNA substrates (d6T and d6T*) that showed highest methyltransferase activity were the poorest binders, with Kd values of 370 and 509 nM, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the DNA substrates (d6T and d6T*) that showed highest methyltransferase activity were the poorest binders, with Kd values of 370 and 509 nM, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "406a933b-7986-4b3c-b39a-c3e7c396cf45",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C55",
+      "claim": "There is an inverse relationship between substrate binding affinity and methylation activity for METTL3-METTL14.",
+      "claim_type": "IMPLICIT",
+      "source": "Surprisingly, the DNA substrates (d6T and d6T*) that showed highest methyltransferase activity were the poorest binders, with Kd values of 370 and 509 nM, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of binding and methylation data across multiple substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e46a3096-da66-4403-a4e8-6920477a935d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C56",
+      "claim": "The methyltransferase activity of METTL3-METTL14 was significantly reduced in the presence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The methyltransferase activity of METTL3-METTL14 was significantly reduced in the presence of RNA (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "37d2ba93-d173-432c-8d86-d9424afc7993",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C57",
+      "claim": "RNAs with propensity to form secondary structures and highest binding affinity to METTL3-METTL14 (rNEAT2, rTCE23) attenuated methyltransferase activity to the most negligible levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, RNAs with propensity to form secondary structures and highest binding affinity to METTL3-METTL14 (rNEAT2, rTCE23) attenuated methyltransferase activity to the most negligible levels (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "55121a4d-6e97-4660-aa12-44d01d64f617",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C58",
+      "claim": "Higher methylation levels were observed for rNEAT2* compared to rNEAT2, most likely attributed to a perfect GGACU motif in rNEAT2*.",
+      "claim_type": "EXPLICIT",
+      "source": "Although higher methylation levels were observed for rNEAT2* compared to rNEAT2, most likely attributed to a perfect GGACU motif in rNEAT2*, yet the methylation was significantly lower than that of d6T* DNA (last panel of Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "0aa06403-abaa-4270-a1a3-980c81802d5f",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C59",
+      "claim": "rNEAT2* showed ~6 fold reduction in affinity compared to rNEAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, rNEAT2* showed ~6 fold reduction in affinity compared to rNEAT2 (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "de110dbf-747a-4b55-b563-0fc526ee780d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C60",
+      "claim": "rNEAT2* attenuated methylation of the single-stranded d6T* DNA by METTL3-METL14 but to a lesser extent than the rNEAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, rNEAT2* also attenuated methylation of the single-stranded d6T* DNA by METTL3-METL14 but to a lesser extent than the rNEAT2 (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "09751cd2-1d21-482f-9df8-858fbf4f5de3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C61",
+      "claim": "The sequence and shape of the target RNAs dictate the m6A activity of METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggests that: (a) the sequence and shape of the target RNAs dictate the m6A activity of METTL3-METTL14, and (b) that higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results comparing different RNA substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "a93e094d-6b15-4707-b77d-2afbac56253c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C62",
+      "claim": "Higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggests that: (a) the sequence and shape of the target RNAs dictate the m6A activity of METTL3-METTL14, and (b) that higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and involves speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "0006abc9-0bcd-48d1-b45c-07b70c4d7a13",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C63",
+      "claim": "rNEAT2 inhibited the DNA methylation activity of METTL3-METTL14 with IC50 = 216 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate RNA-mediated inhibition, we showed that the two structured RNAs (rTCE23 and rNEAT2) inhibited the DNA methylation activity of METTL3-METTL14 in a dose-dependent manner, with rNEAT2 (IC50 = 216 nM) showing 4-fold stronger inhibition than rTCE23 (IC50 = 887 nM) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-dependent inhibition assay data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "af5aa285-b21d-47fe-965c-c7986bf0178a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C64",
+      "claim": "rTCE23 inhibited the DNA methylation activity of METTL3-METTL14 with IC50 = 887 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate RNA-mediated inhibition, we showed that the two structured RNAs (rTCE23 and rNEAT2) inhibited the DNA methylation activity of METTL3-METTL14 in a dose-dependent manner, with rNEAT2 (IC50 = 216 nM) showing 4-fold stronger inhibition than rTCE23 (IC50 = 887 nM) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-dependent inhibition assay data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "32be503d-e3c4-47d1-9872-a60f21cc5f60",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C65",
+      "claim": "rNEAT2 showed 4-fold stronger inhibition than rTCE23 of METTL3-METTL14 DNA methylation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate RNA-mediated inhibition, we showed that the two structured RNAs (rTCE23 and rNEAT2) inhibited the DNA methylation activity of METTL3-METTL14 in a dose-dependent manner, with rNEAT2 (IC50 = 216 nM) showing 4-fold stronger inhibition than rTCE23 (IC50 = 887 nM) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-dependent inhibition assay data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "9545a30c-ed95-4bfc-a448-d012ca19870c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C66",
+      "claim": "An equimolar addition of rNEAT2 reduced the methyltransferase activity from 80.5% to 14.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2f, an equimolar (with respect to d6T* DNA) addition of rNEAT2 or rTCE23 significantly reduced the methyltransferase activity from 80.5\u201314.5% to 7.3%, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC/MS-based oligonucleotide intact mass analysis shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "4a203eb1-ce74-4150-ac0d-cc4e93f35109",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C67",
+      "claim": "An equimolar addition of rTCE23 reduced the methyltransferase activity from 80.5% to 7.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2f, an equimolar (with respect to d6T* DNA) addition of rNEAT2 or rTCE23 significantly reduced the methyltransferase activity from 80.5\u201314.5% to 7.3%, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC/MS-based oligonucleotide intact mass analysis shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "8d951505-305c-40cd-8070-e3f9c000bc8b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C68",
+      "claim": "Deoxyadenosine on d6T* and adenosine on rNEAT2 were the only modified bases in METTL3-METTL14 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that deoxyadenosine on d6T* and adenosine on rNEAT2 were the only modified bases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "658ae06d-4f74-4618-abf1-9da93adf3c9e",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C69",
+      "claim": "In the absence of rNEAT2 or rTCE23, 86.3% of dAs on d6T* were modified.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of rNEAT2 or rTCE23, 86.3% of dAs on d6T* were modified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e9e73f73-a9b6-4f7a-8e25-ad368cbdf964",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C70",
+      "claim": "When rNEAT2 was present, only 14.4% of dAs on d6T* were modified.",
+      "claim_type": "EXPLICIT",
+      "source": "When rNEAT2 or rTCE23 were present, only 14.4% and 7.4%, respectively, of dAs on d6T* were modified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e9337976-5ed1-4ba7-ae21-f461b88efd9f",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C71",
+      "claim": "When rTCE23 was present, only 7.4% of dAs on d6T* were modified.",
+      "claim_type": "EXPLICIT",
+      "source": "When rNEAT2 or rTCE23 were present, only 14.4% and 7.4%, respectively, of dAs on d6T* were modified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "d72319c8-c656-432a-b595-8511374f49d2",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C72",
+      "claim": "5.8% of the rAs on rNEAT2 were modified.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 5.8% of the rAs on rNEAT2 were modified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "18ceef3f-269e-4340-b691-6ffdb58ceeba",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C73",
+      "claim": "No methylation on rTCE23 was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, no methylation on rTCE23 was detected (no RRACH motif).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleoside analysis shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "81d19a12-f96e-4c25-9a69-ef524af9800a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C74",
+      "claim": "The C-terminal RGG repeat motif of METTL14 contributes to RNA binding and activity of METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal RGG repeat motif of METTL14 contributes to RNA binding and activity of METTL3-METTL14 (Sch\u00f6ller et al., 2018; Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "c68f57f7-316e-4a03-b748-17a242a1437c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C75",
+      "claim": "METTL3-METTL14-RGG showed a 2- to 10-fold decrease in binding affinity compared to full-length METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we observed a 2- to 10-fold decrease in binding affinity by METTL3-METTL14-RGG (Figure 3b and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence polarization binding assay data shown in Figure 3b and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "f84c6858-becb-48a7-9eb1-a0f5efa73469",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C76",
+      "claim": "The RGG motifs play a major role in RNA and DNA substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the RGG motifs play a major role in RNA and DNA substrates, while other parts of the enzyme (e.g., CCCH-type zinc finger domains in METTL3 Huang et al., 2019a and MTase core of METTL14 Wang et al., 2016a) may also contribute to the overall binding (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the binding data comparing full-length and RGG-deleted enzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "bee63b99-1337-4a10-8292-52485c8dfbcd",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C77",
+      "claim": "Other parts of the enzyme (e.g., CCCH-type zinc finger domains in METTL3 and MTase core of METTL14) may also contribute to the overall binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the RGG motifs play a major role in RNA and DNA substrates, while other parts of the enzyme (e.g., CCCH-type zinc finger domains in METTL3 Huang et al., 2019a and MTase core of METTL14 Wang et al., 2016a) may also contribute to the overall binding (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding data and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "cfbccdfc-04c2-4044-8258-8609111c587b",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C78",
+      "claim": "The deletion of RGG caused 60% reduction in DNA methylation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the deletion of RGG caused 60% reduction in DNA methylation activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "62cf8ed7-1a4a-447c-ad48-62fea87a0995",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C79",
+      "claim": "In the presence of rNEAT2, the activity of METTL3-METTL14-RGG on d6T* DNA was reduced to about 75% of its activity in absence of the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of rNEAT2, the activity of METTL3-METTL14-RGG on d6T* DNA was reduced to about 75% of its activity in absence of the RNA; comparatively, a >90% activity reduction was observed for the full-length METTL3-METTL14 in presence of the same RNA (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "7b482772-c56f-4265-9b79-ea8548023a3e",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C80",
+      "claim": "A >90% activity reduction was observed for the full-length METTL3-METTL14 in presence of rNEAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of rNEAT2, the activity of METTL3-METTL14-RGG on d6T* DNA was reduced to about 75% of its activity in absence of the RNA; comparatively, a >90% activity reduction was observed for the full-length METTL3-METTL14 in presence of the same RNA (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by radiometric assay data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "9b9aea15-feb2-4a79-833c-58015d477d56",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C81",
+      "claim": "The RGG motif, as a general RNA-binding domain, dictates the shape-specific RNA recognition and promotes an RNA-mediated restriction of the DNA methylation activity of METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the RGG motif, as a general RNA-binding domain, dictates the shape-specific RNA recognition and promotes an RNA-mediated restriction of the DNA methylation activity of METTL3-METTL14 (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results comparing full-length and RGG-deleted enzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "c66a1fb9-619b-4160-ac81-ab0dc2fb251c",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C82",
+      "claim": "METTL3 localizes to sites of dsDNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "7ad941c7-8343-4ca9-a5df-a2de41236d80",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C83",
+      "claim": "METTL3 plays a role in DNA/RNA hybrid accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e5d9892f-c987-42f0-aafe-8699828cf2ea",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C84",
+      "claim": "METTL3 can be recruited to chromatin by promoter-bound transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ddd1a5ff-7a29-468a-906f-02553d4acef9",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C85",
+      "claim": "METTL3 is involved in UV-induced DNA damage signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "610ae0c5-6578-4c55-8d49-7be3527692db",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C86",
+      "claim": "METTL3 is involved in metabolism of R-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are noteworthy given the relevance of METTL3-METTL14 in regions where RNA and DNA are held in closed proximity, as supported by recent studies suggesting: (a) localization of METTL3 to sites of dsDNA breaks, and its role in DNA/RNA hybrid accumulation (Zhang et al., 2020), (b) recruitment of METTL3 to chromatin by promoter-bound transcription factors (Barbieri et al., 2017), (c) UV-induced DNA damage signaling (Xiang et al., 2017), and (d) metabolism of R-loops (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "3ba71f14-f08a-4bbd-ba23-c780766c3b4a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C87",
+      "claim": "A large complex of multiple subunits of ~1 MDa size possesses RNA N6-adenosine methylation activity distributed over two sub-complexes of approximate molecular mass of ~200 and ~800 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies suggest the existence of a large complex of multiple subunits of ~1 MDa size, possessing RNA N6-adenosine methylation activity distributed over two sub-complexes of approximate molecular mass of ~200 and ~800 kDa (Bokar et al., 1994Bokar et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "51b8cd2e-d623-4fa8-a5c7-0172e1730bb9",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C88",
+      "claim": "WTAP alters both the pattern and location of the m6A transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "One such subunit is WTAP, which alters both the pattern and location of the m6A transcriptome (Schwartz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "16e2f315-1e55-49f9-bb91-c44dde7e6039",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C89",
+      "claim": "Structured elements in RNA could facilitate the recruitment of METTL3-METTL14 to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The structured elements in RNA could facilitate the recruitment of METTL3-METTL14 to chromatin and/or keep the writer complex engaged during co-transcriptional occurrence of m6A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "d6a180d3-4ac7-4d3f-9159-39e2c661eb65",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C90",
+      "claim": "Structured elements in RNA could keep the writer complex engaged during co-transcriptional occurrence of m6A.",
+      "claim_type": "EXPLICIT",
+      "source": "The structured elements in RNA could facilitate the recruitment of METTL3-METTL14 to chromatin and/or keep the writer complex engaged during co-transcriptional occurrence of m6A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "86e3fcbe-d4ab-4114-ad98-c1b71ba02a65",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C91",
+      "claim": "A topological arrangement of METTL3-METTL14/RNA interaction could restrict m6dA deposition to the single-stranded regions of DNA exposed during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a topological arrangement of METTL3-METTL14/RNA interaction could also restrict m6dA deposition, especially to the single-stranded regions of DNA exposed during transcription (Slobodin et al., 2017), DNA recombination (Zhang et al., 2020), damage and repair (Xiang et al., 2017), and R-loop metabolism (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "d3cac1bb-3360-41b3-bd94-1f9525eb8a61",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C92",
+      "claim": "A topological arrangement of METTL3-METTL14/RNA interaction could restrict m6dA deposition to the single-stranded regions of DNA exposed during DNA recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a topological arrangement of METTL3-METTL14/RNA interaction could also restrict m6dA deposition, especially to the single-stranded regions of DNA exposed during transcription (Slobodin et al., 2017), DNA recombination (Zhang et al., 2020), damage and repair (Xiang et al., 2017), and R-loop metabolism (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "4cc9df1f-fb8c-4c75-88b7-7692cd7c9492",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C93",
+      "claim": "A topological arrangement of METTL3-METTL14/RNA interaction could restrict m6dA deposition to the single-stranded regions of DNA exposed during damage and repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a topological arrangement of METTL3-METTL14/RNA interaction could also restrict m6dA deposition, especially to the single-stranded regions of DNA exposed during transcription (Slobodin et al., 2017), DNA recombination (Zhang et al., 2020), damage and repair (Xiang et al., 2017), and R-loop metabolism (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "cb8f9e4f-14d6-4751-b893-98b13bc52034",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C94",
+      "claim": "A topological arrangement of METTL3-METTL14/RNA interaction could restrict m6dA deposition to the single-stranded regions of DNA exposed during R-loop metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a topological arrangement of METTL3-METTL14/RNA interaction could also restrict m6dA deposition, especially to the single-stranded regions of DNA exposed during transcription (Slobodin et al., 2017), DNA recombination (Zhang et al., 2020), damage and repair (Xiang et al., 2017), and R-loop metabolism (Abakir et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings and supported by citations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "87890c83-84bd-472c-adec-d677e814d701",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C95",
+      "claim": "The m6dA is a predominant modification mark in bacterial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A major difference in prokaryotic and eukaryotic genomes is the contrasting occurrence of the base methylation. The m6dA is a predominant modification mark in bacterial DNA, whereas the m5dC is more prevalent in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e25c8430-0e54-4a42-a964-ab57c6d79a54",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C96",
+      "claim": "The m5dC is more prevalent in eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A major difference in prokaryotic and eukaryotic genomes is the contrasting occurrence of the base methylation. The m6dA is a predominant modification mark in bacterial DNA, whereas the m5dC is more prevalent in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "540deef1-f809-4dec-b018-196a354cdf54",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C97",
+      "claim": "There are two major differences that exist in the sequences of METTL3 and METTL14: loss of the target recognition domain (TRD) and acquisition of the RGG motif in METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparative sequence/structural analysis of the bacterial EcoP15I and human METTL3 and METTL14 MTases provides some hints (Figures 1a\u2013c\u20133a). Of note, there are two major differences that exist in the sequences of METTL3 and METTL14: (a) loss of the target recognition domain (TRD) and (b) acquisition of the RGG motif in METTL14.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative sequence/structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "ac1d1478-825c-431e-a0a7-7b51148b27a3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C98",
+      "claim": "The TRD motif (in EcoP15I MTase) is a major contributor to binding and specificity for a dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRD motif (in EcoP15I MTase) is a major contributor to binding and specificity for a dsDNA (Gupta et al., 2015), whereas the RGG motif is known for RNA binding (Thandapani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "420e4d7c-96a2-4008-811c-304801cb4de0",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C99",
+      "claim": "The RGG motif is known for RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRD motif (in EcoP15I MTase) is a major contributor to binding and specificity for a dsDNA (Gupta et al., 2015), whereas the RGG motif is known for RNA binding (Thandapani et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "b0979135-7086-470f-b499-5c2dc05bd8c1",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C100",
+      "claim": "Gene fusion/genome arrangement event(s) could have occurred during evolution to ensure very low/no occurrence of m6dA in mammalian genome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that gene fusion/genome arrangement event(s) could have occurred during evolution (Bujnicki et al., 2002; Woodcock et al., 2020) to ensure very low/no occurrence (Douvlataniotis et al., 2020) of m6dA in mammalian genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on evolutionary analysis and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "33deb9c2-04a1-4646-a434-5becb17621f3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C101",
+      "claim": "The high affinity to structured RNAs could ensure efficient recruitment of METTL3-METTL14 to specific nuclear compartment(s) in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The high affinity to structured RNAs as demonstrated here could also ensure efficient recruitment of METTL3-METTL14 to specific nuclear compartment(s) in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "89da0d04-fddc-4b57-a7bb-1c3495f50a1e",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C102",
+      "claim": "A comprehensive network of RNA-RNA and RNA-DNA interactions mediated by ncRNAs (including MALAT1) creates distinct nuclear compartments and facilitates recruitment of proteins for RNA processing, heterochromatin assembly, and gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study showed that a comprehensive network of RNA-RNA and RNA-DNA interactions mediated by ncRNAs (including MALAT1) creates distinct nuclear compartments and facilitates recruitment of proteins for RNA processing, heterochromatin assembly, and gene regulation (Quinodoz et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "e4bf46d8-81d0-41f3-ac14-48dba6b1a31e",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C103",
+      "claim": "The secondary structure and 3D shape of the RNAs appears to be crucial for important biological processes including RNA processing, heterochromatin assembly, and gene regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the secondary structure and 3D shape of the RNAs appears to be crucial for these important biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited study and the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6518299d-a0b5-4335-b08a-16650852ea2a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C104",
+      "claim": "Structured elements in RNAs may play an important role in regulating the ssDNA and ssRNA methylation activity of METTL3-METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these observations, our results suggest that structured elements in RNAs may play an important role in regulating the ssDNA and ssRNA methylation activity of METTL3-METTL14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "8ae1cb1d-48e0-48b3-93fc-1849306e672a",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C105",
+      "claim": "The coding sequence of full-length human METTL3 (NCBI reference sequence GI: 33301371) was used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The coding sequence of full-length human METTL3 (NCBI reference sequence GI: 33301371) was used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "98133438-d220-47f4-b1d5-61ef8eec2a72",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C106",
+      "claim": "The coding sequence of full-length human METTL14 (NCBI reference number GI: 172045930) was cloned into the pFastBac1 vector between BamHI and NotI restriction enzyme sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The coding sequence of full-length human METTL14 (NCBI reference number GI: 172045930) was cloned into the pFastBac1 vector between BamHI and NotI restriction enzyme sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "1210ce02-496c-4ec4-af51-37a875628434",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C107",
+      "claim": "METTL3-METTL14 complex was expressed in ExpiSf9 insect cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For expression of recombinant proteins, we used ExpiSf Expression System (Thermo Fisher). First, the viral DNA bacmids for each gene were prepared from individual plasmids transformed into MAX Efficiency DH10Bac competent cells (Thermo Fisher). We confirmed the identity of the inserted genes by PCR amplification and DNA sequencing. The recombinant P0 virus for each gene were generated in ExpiSf9 insect cells following the manufacturer's recommendations (Thermo Fisher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "1c37b359-a057-4ed0-9799-bb8226ce3293",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "claim_id": "C108",
+      "claim": "The METTL3-METTL14[-RGG] complex lacks the C-terminus RGG repeats motif (amino acids 400\u2013457) of METTL14.",
+      "claim_type": "EXPLICIT",
+      "source": "The METTL3-METT14-RGG complex lacks the C-terminus RGG repeats motif (amino acids 400\u2013457) of METTL14.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8c4340dc-ccd0-4e91-b229-3ee2a9bc4c75",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate high structural similarity between the methyltransferase cores of human METTL3, METTL14, and bacterial EcoP15I, suggesting evolutionary origin from a common ancestor. Structural superposition reveals an rmsd of 2.55 \u00c5 over 278 C\u03b1 atoms between EcoP15I ModB and METTL14, with similar arrangement of canonical MTase motifs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C22, and C38 are well-supported by structural analysis data shown in Figure 1. The quantitative rmsd value and visual structural comparisons provide strong evidence for the structural similarity and inferred evolutionary relationship. The methodology (secondary structure-based superposition) is appropriate and clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "40352f8b-1839-4245-9078-20fdc4c04624",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "METTL3-METTL14 preferentially methylates single-stranded DNA (ssDNA) substrates. The enzyme shows 2-fold higher activity on d6T* (a true ssDNA) compared to d6T (which can form partial duplex), and >12-fold higher activity on d6T* compared to the RNA equivalent r6T. No activity was observed on perfect duplex DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C42-C46 are strongly supported by radiometric assay data in Figure 2a. The experimental design appropriately addresses the question of substrate preference by comparing structurally distinct oligonucleotides. The inference that d6T forms partial duplex (C43) is reasonable based on sequence analysis, though direct structural confirmation would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "abeed77f-f93b-49cf-86e9-0c443bcf6831",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An inverse relationship exists between substrate binding affinity and methylation activity for METTL3-METTL14. Structured RNAs (rNEAT2, rTCE23) bind with highest affinity (Kd = 2-25 nM) but show lowest methylation. DNA substrates (d6T, d6T*) bind with lowest affinity (Kd = 370-509 nM) but show highest methylation activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C49-C55 are well-supported by comprehensive fluorescence polarization binding data (Figure 2b, Table 1) and methylation assays (Figure 2a). The inverse relationship is clearly demonstrated across multiple substrates with consistent methodology. The data quality appears robust with error bars indicating reproducibility across replicates (n=3).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "1b0717b5-0989-41b1-8fc4-7334d536b588",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "METTL3-METTL14 methylates RNA substrates much less efficiently than ssDNA. Structured RNAs (rNEAT2, rTCE23) show low to negligible methylation activity, with rTCE23 showing no detectable activity and rNEAT2 showing only low but detectable activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47, C48, C56, C57 are supported by radiometric assay data in Figure 2a and 2c. The lack of activity on rTCE23 is expected given the absence of RRACH motif, serving as an appropriate negative control. The low activity on rNEAT2 despite containing a DRACH motif supports the conclusion about reduced RNA methylation efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Structured RNA elements (rNEAT2, rTCE23) dose-dependently inhibit METTL3-METTL14-mediated DNA methylation. rNEAT2 shows stronger inhibition (IC50 = 216 nM) than rTCE23 (IC50 = 887 nM). Equimolar addition of these RNAs reduces DNA methylation from 80.5% to 14.5% (rNEAT2) or 7.3% (rTCE23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C63-C67, C70-C71 are strongly supported by multiple orthogonal methods: radiometric assays (Figure 2c, 2e), LC/MS oligonucleotide intact mass analysis (Figure 2f), and nucleoside analysis (Figure 2g). The consistency across different analytical approaches strengthens confidence in the inhibition phenomenon. IC50 values are appropriately determined from dose-response curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "a3d4a8b9-683a-4370-8756-1ee5dbd7783f",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The sequence and shape of target RNAs dictate m6A activity of METTL3-METTL14. rNEAT2* (with perfect GGACU motif) shows higher methylation than rNEAT2 but ~6-fold reduced binding affinity, and still methylates less efficiently than d6T* DNA. rNEAT2* also inhibits DNA methylation but less effectively than rNEAT2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are supported by experimental data comparing rNEAT2 and rNEAT2* variants (Figure 2b, 2c). The design appropriately tests the contribution of sequence versus structure. However, the conclusion about sequence and shape dictating activity (C61) is somewhat broad given the limited number of sequence variants tested. Additional sequence variants would strengthen this generalization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "b4ea8c37-556d-4be9-bddf-21610ef33ee3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Higher affinity substrates tend to show lower methylation levels, possibly due to slow off rates of m6A RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 proposes a mechanistic explanation (slow off rates) for the observed inverse relationship between binding and methylation. While the inverse relationship is well-documented, the proposed mechanism is speculative and not directly tested. Kinetic measurements of on/off rates or product release would be needed to support this mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "fd69923f-fb04-4e2d-95f2-36929cce4621",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nucleoside analysis confirms that deoxyadenosine on d6T* and adenosine on rNEAT2 are the only modified bases. In absence of inhibitory RNAs, 86.3% of dAs on d6T* are modified. rNEAT2 shows 5.8% modification of rAs, while rTCE23 shows no modification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C69, C72, C73 are well-supported by nucleoside composition analysis (Figure 2g). This orthogonal validation method confirms the identity of modified bases and quantifies methylation efficiency. The lack of modification on rTCE23 serves as an appropriate negative control given the absence of RRACH motif.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "be378c13-dddc-4582-8249-442d509295c3",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The C-terminal RGG repeat motif of METTL14 plays a major role in substrate binding and mediates RNA-dependent restriction of DNA methylation activity. Deletion of RGG reduces binding affinity 2-10 fold, decreases DNA methylation activity by 60%, and substantially reduces RNA-mediated inhibition (from >90% to ~75% activity reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C81 are well-supported by systematic comparison of full-length and RGG-deleted enzymes using binding assays (Figure 3b, Table 1) and activity assays (Figure 3c). The experimental design appropriately tests the contribution of the RGG domain. Statistical analysis (t-test, p<0.0001) supports the significance of observed differences. The conclusion that RGG mediates shape-specific RNA recognition is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "bdba9a64-1a61-49f8-a59d-aa15e9daab00",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Other parts of the enzyme (CCCH-type zinc finger domains in METTL3 and MTase core of METTL14) may also contribute to overall substrate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C77 is reasonably inferred from the observation that RGG deletion does not completely abolish binding (C75). The residual binding activity suggests contributions from other domains. However, this remains an inference as these other domains were not directly tested through deletion or mutation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "527dc619-558f-4a8c-9587-d856616b8a98",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that structured RNA elements could facilitate METTL3-METTL14 recruitment to chromatin and/or maintain enzyme engagement during co-transcriptional m6A deposition. This topological arrangement could restrict m6dA deposition to single-stranded DNA regions exposed during transcription, recombination, damage/repair, and R-loop metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C94 are speculative models based on the in vitro findings but not directly tested. While the in vitro data on RNA-mediated inhibition of DNA methylation is solid, the proposed in vivo mechanisms and biological contexts are hypothetical. These claims appropriately cite relevant literature but would require cellular or in vivo experiments to validate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "34d194e8-cd15-4a9e-9538-4fc5f345450d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Comparative analysis reveals two major differences between METTL3/METTL14 and bacterial EcoP15I: loss of the target recognition domain (TRD) and acquisition of the RGG motif in METTL14. The authors speculate that gene fusion/genome rearrangement events during evolution may have ensured low/no occurrence of m6dA in mammalian genomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97-C99 regarding structural differences are supported by sequence/structural analysis (Figure 1, 3a). However, claim C100 about evolutionary gene fusion events is highly speculative. While the structural observations are valid, the evolutionary interpretation lacks direct evidence and represents one possible explanation among several. Phylogenetic analysis would strengthen this evolutionary claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "81c09a2a-94f6-4e0f-a551-8f5eff0af5ef",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that high affinity binding to structured RNAs could ensure efficient recruitment of METTL3-METTL14 to specific nuclear compartments, and that structured RNA elements may regulate ssDNA and ssRNA methylation activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101 and C104 are reasonable speculations based on the in vitro findings but lack direct experimental support. The high-affinity RNA binding is well-documented, but the proposed role in nuclear compartment recruitment is hypothetical. Cellular localization studies or chromatin immunoprecipitation experiments would be needed to test these proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and literature context claims establishing known functions of METTL3-METTL14, m6A biology, structural features of methyltransferases, and relevant cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C2, C8-C16, C19-C21, C23-C37, C39-C41, C82-C88, C95-C96, C102-C103) represent established knowledge from the literature, appropriately cited throughout. They provide necessary context for the current work. The citations appear appropriate and the claims accurately represent prior work based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    },
+    {
+      "id": "6cf2461a-a232-43bc-8a1c-50abd97f660d",
+      "content_id": "cab346e8-534a-42ce-91da-9aef40a0c84c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details regarding protein constructs, expression systems, and purification procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C108 describe methodological details that are clearly stated in the Materials and Methods section. The protein expression and purification procedures appear standard and appropriate. Figure 1f shows quality control data (SEC chromatograms and gels) confirming protein purity and complex formation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T10:24:34.568756Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6ad6e27b-67c8-4d6f-9ad1-9b799707ae03",
+      "result_id": "8c4340dc-ccd0-4e91-b229-3ee2a9bc4c75"
+    },
+    {
+      "claim_id": "ce62694a-1b71-4cc2-9b34-0d86fc17fe26",
+      "result_id": "8c4340dc-ccd0-4e91-b229-3ee2a9bc4c75"
+    },
+    {
+      "claim_id": "6232d351-5cb1-4daa-88dc-a2554c552607",
+      "result_id": "8c4340dc-ccd0-4e91-b229-3ee2a9bc4c75"
+    },
+    {
+      "claim_id": "3b7ec494-cba8-469b-b60b-fe47129fd114",
+      "result_id": "8c4340dc-ccd0-4e91-b229-3ee2a9bc4c75"
+    },
+    {
+      "claim_id": "824992ee-d020-4e10-a238-9b23e4e49c20",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "dcab8f6d-c36e-4a2b-98db-e5419fb23247",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "ecf38832-1d03-496d-8fd0-3ecb6a84483a",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "325724bc-c7b3-40d4-a72a-1b19498853e9",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "da106a2c-180d-4be1-9240-26b937bb73da",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "03895b10-085b-44f9-9efc-d9d0fde3dc78",
+      "result_id": "40352f8b-1839-4245-9078-20fdc4c04624"
+    },
+    {
+      "claim_id": "9ed285ed-8793-4271-a24b-e97b4c4d2428",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "9f396288-e62b-4715-b9aa-2b0417bc410b",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "7b08ad1e-f1fb-4543-b877-bdda8a13a2dc",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "058e7628-9659-44ca-ae74-99e8cb62631b",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "31e43823-2357-41d0-860b-d13d16bb1ff8",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "a14b3dbc-5d3f-4e46-bf87-7c96642a128e",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "99087fe9-f66f-4f58-8ff0-03d316fb41d2",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "6f95a29f-adfc-4348-97d9-c442307ba63b",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "406a933b-7986-4b3c-b39a-c3e7c396cf45",
+      "result_id": "abeed77f-f93b-49cf-86e9-0c443bcf6831"
+    },
+    {
+      "claim_id": "2d8b061d-282b-4cc8-892d-e891d9f471d1",
+      "result_id": "1b0717b5-0989-41b1-8fc4-7334d536b588"
+    },
+    {
+      "claim_id": "91d4b927-ae7b-416f-b73f-cff4007a1867",
+      "result_id": "1b0717b5-0989-41b1-8fc4-7334d536b588"
+    },
+    {
+      "claim_id": "6e656169-373c-40af-ab92-6624df257629",
+      "result_id": "1b0717b5-0989-41b1-8fc4-7334d536b588"
+    },
+    {
+      "claim_id": "e46a3096-da66-4403-a4e8-6920477a935d",
+      "result_id": "1b0717b5-0989-41b1-8fc4-7334d536b588"
+    },
+    {
+      "claim_id": "37d2ba93-d173-432c-8d86-d9424afc7993",
+      "result_id": "1b0717b5-0989-41b1-8fc4-7334d536b588"
+    },
+    {
+      "claim_id": "e0e2fbca-bfca-44d9-9f3d-c825b748bb5d",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "0006abc9-0bcd-48d1-b45c-07b70c4d7a13",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "af5aa285-b21d-47fe-965c-c7986bf0178a",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "32be503d-e3c4-47d1-9872-a60f21cc5f60",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "9545a30c-ed95-4bfc-a448-d012ca19870c",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "4a203eb1-ce74-4150-ac0d-cc4e93f35109",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "e9e73f73-a9b6-4f7a-8e25-ad368cbdf964",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "e9337976-5ed1-4ba7-ae21-f461b88efd9f",
+      "result_id": "f6ed19e3-b36c-418d-af1f-39ada4bdde50"
+    },
+    {
+      "claim_id": "55121a4d-6e97-4660-aa12-44d01d64f617",
+      "result_id": "a3d4a8b9-683a-4370-8756-1ee5dbd7783f"
+    },
+    {
+      "claim_id": "0aa06403-abaa-4270-a1a3-980c81802d5f",
+      "result_id": "a3d4a8b9-683a-4370-8756-1ee5dbd7783f"
+    },
+    {
+      "claim_id": "de110dbf-747a-4b55-b563-0fc526ee780d",
+      "result_id": "a3d4a8b9-683a-4370-8756-1ee5dbd7783f"
+    },
+    {
+      "claim_id": "09751cd2-1d21-482f-9df8-858fbf4f5de3",
+      "result_id": "a3d4a8b9-683a-4370-8756-1ee5dbd7783f"
+    },
+    {
+      "claim_id": "a93e094d-6b15-4707-b77d-2afbac56253c",
+      "result_id": "b4ea8c37-556d-4be9-bddf-21610ef33ee3"
+    },
+    {
+      "claim_id": "8d951505-305c-40cd-8070-e3f9c000bc8b",
+      "result_id": "fd69923f-fb04-4e2d-95f2-36929cce4621"
+    },
+    {
+      "claim_id": "658ae06d-4f74-4618-abf1-9da93adf3c9e",
+      "result_id": "fd69923f-fb04-4e2d-95f2-36929cce4621"
+    },
+    {
+      "claim_id": "d72319c8-c656-432a-b595-8511374f49d2",
+      "result_id": "fd69923f-fb04-4e2d-95f2-36929cce4621"
+    },
+    {
+      "claim_id": "18ceef3f-269e-4340-b691-6ffdb58ceeba",
+      "result_id": "fd69923f-fb04-4e2d-95f2-36929cce4621"
+    },
+    {
+      "claim_id": "81d19a12-f96e-4c25-9a69-ef524af9800a",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "c68f57f7-316e-4a03-b748-17a242a1437c",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "f84c6858-becb-48a7-9eb1-a0f5efa73469",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "cfbccdfc-04c2-4044-8258-8609111c587b",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "62cf8ed7-1a4a-447c-ad48-62fea87a0995",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "7b482772-c56f-4265-9b79-ea8548023a3e",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "9b9aea15-feb2-4a79-833c-58015d477d56",
+      "result_id": "be378c13-dddc-4582-8249-442d509295c3"
+    },
+    {
+      "claim_id": "bee63b99-1337-4a10-8292-52485c8dfbcd",
+      "result_id": "bdba9a64-1a61-49f8-a59d-aa15e9daab00"
+    },
+    {
+      "claim_id": "16e2f315-1e55-49f9-bb91-c44dde7e6039",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "d6a180d3-4ac7-4d3f-9159-39e2c661eb65",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "86e3fcbe-d4ab-4114-ad98-c1b71ba02a65",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "d3cac1bb-3360-41b3-bd94-1f9525eb8a61",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "4cc9df1f-fb8c-4c75-88b7-7692cd7c9492",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "cb8f9e4f-14d6-4751-b893-98b13bc52034",
+      "result_id": "527dc619-558f-4a8c-9587-d856616b8a98"
+    },
+    {
+      "claim_id": "540deef1-f809-4dec-b018-196a354cdf54",
+      "result_id": "34d194e8-cd15-4a9e-9538-4fc5f345450d"
+    },
+    {
+      "claim_id": "ac1d1478-825c-431e-a0a7-7b51148b27a3",
+      "result_id": "34d194e8-cd15-4a9e-9538-4fc5f345450d"
+    },
+    {
+      "claim_id": "420e4d7c-96a2-4008-811c-304801cb4de0",
+      "result_id": "34d194e8-cd15-4a9e-9538-4fc5f345450d"
+    },
+    {
+      "claim_id": "b0979135-7086-470f-b499-5c2dc05bd8c1",
+      "result_id": "34d194e8-cd15-4a9e-9538-4fc5f345450d"
+    },
+    {
+      "claim_id": "33deb9c2-04a1-4646-a434-5becb17621f3",
+      "result_id": "81c09a2a-94f6-4e0f-a551-8f5eff0af5ef"
+    },
+    {
+      "claim_id": "6518299d-a0b5-4335-b08a-16650852ea2a",
+      "result_id": "81c09a2a-94f6-4e0f-a551-8f5eff0af5ef"
+    },
+    {
+      "claim_id": "a9625606-26de-4c71-97d2-501c6ef1042c",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "1b7690f6-4b9a-419f-9c3d-ae8f47e4c76d",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "65dd8644-b2b0-4b7a-9cae-b6d50c7d3816",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "de6a36db-c556-48db-a364-8a22aaf083dd",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "c23b28c0-f1da-4c4b-8638-e1ec8e11b98c",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "985e89d3-9f18-48dd-a80c-b52da2d8bf29",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "acca520a-b120-465a-a72a-90313fe90621",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "ec2bc06b-57ec-4ee0-808f-9c0f408cc10d",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "7dd44cd0-a77b-4d12-bebd-e8b48e45d0a3",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "7053bfe7-95ac-41f3-9228-95f3578d6598",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "12d512fc-c353-45b6-9b5d-8a4a5a8f2cd9",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "d5fc23a0-f88f-4321-a41a-995595b8bae2",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "c3dfc187-0d1e-4b5a-89e1-fd7ffc8cb3d7",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "32258c51-ef32-4417-85a1-8fd5939b23fb",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "006e22d0-a213-407c-9cc4-1c12fd92074f",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "f98eb942-74af-4cb8-934e-61936b7305c0",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "3cdc8425-4115-46bf-9bb8-5293113dfef1",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "b17b27ca-c893-4e95-858a-4f0108cf8a3c",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "c9816a81-f531-472c-a600-281dfd437667",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "d72ae7fd-76f4-4bc6-af1b-22ceb131ac4c",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "ddfb1fa0-8fa8-40b0-a5a8-a961d3e6b53b",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "cf6e38b5-f847-4490-b471-420e3a5ac620",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "2dcef515-618d-4531-99ad-d4da73bef3e3",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "46bcb3c8-6130-4180-843e-6758e9001db9",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "b50ee021-094c-4981-9751-d06bb2f030e2",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "45dafc91-0d04-4c30-9760-476afd805b9d",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "6427f3e1-1a65-4d0b-880c-a9c2ef5f1141",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "9ab556a3-2664-4125-beeb-a51f5bf04cc4",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "450e303f-60fa-4f30-a49b-630fd6536dad",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "e59c252d-ff43-41a8-9733-2f91172b661a",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "4189bf69-46bf-4334-ad3a-a3fb5ff49620",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "28d2c80f-9bbd-4c95-8401-236b4c745d9b",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "c66a1fb9-619b-4160-ac81-ab0dc2fb251c",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "7ad941c7-8343-4ca9-a5df-a2de41236d80",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "e5d9892f-c987-42f0-aafe-8699828cf2ea",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "ddd1a5ff-7a29-468a-906f-02553d4acef9",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "610ae0c5-6578-4c55-8d49-7be3527692db",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "3ba71f14-f08a-4bbd-ba23-c780766c3b4a",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "51b8cd2e-d623-4fa8-a5c7-0172e1730bb9",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "87890c83-84bd-472c-adec-d677e814d701",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "e25c8430-0e54-4a42-a964-ab57c6d79a54",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "89da0d04-fddc-4b57-a7bb-1c3495f50a1e",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "e4bf46d8-81d0-41f3-ac14-48dba6b1a31e",
+      "result_id": "a39dfe9d-d5c0-4962-ac8c-7891a53f2d94"
+    },
+    {
+      "claim_id": "8ae1cb1d-48e0-48b3-93fc-1849306e672a",
+      "result_id": "6cf2461a-a232-43bc-8a1c-50abd97f660d"
+    },
+    {
+      "claim_id": "98133438-d220-47f4-b1d5-61ef8eec2a72",
+      "result_id": "6cf2461a-a232-43bc-8a1c-50abd97f660d"
+    },
+    {
+      "claim_id": "1210ce02-496c-4ec4-af51-37a875628434",
+      "result_id": "6cf2461a-a232-43bc-8a1c-50abd97f660d"
+    },
+    {
+      "claim_id": "1c37b359-a057-4ed0-9799-bb8226ce3293",
+      "result_id": "6cf2461a-a232-43bc-8a1c-50abd97f660d"
+    }
+  ],
+  "comparisons": []
+}

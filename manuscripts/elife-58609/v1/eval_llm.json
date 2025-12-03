@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C38"
+    ],
+    "result": "Metagenomic analysis of DSS-treated mice revealed a significantly higher abundance of genes encoding predicted uptake hydrogenases compared to mock-treated mice (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C38 are directly supported by metagenomic data shown in Figure 1A. The statistical significance (p<0.05) is reported and the analysis methodology is described in the Materials and methods section, including validation of the HydDB database using simulated datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40"
+    ],
+    "result": "Metagenomic analysis of IBD patients showed significantly higher abundance of genes encoding predicted uptake hydrogenases compared to non-IBD controls (p<0.001 for Crohn's disease; p<0.01 for ulcerative colitis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, and C40 are supported by metagenomic analysis of human samples shown in Figure 1B-C. Statistical significance is reported with appropriate p-values. The analysis used a previously published dataset (Franzosa, 2019) and applied the same HydDB classification approach validated for the murine samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "There was a significantly higher abundance of reads aligned to predicted evolving hydrogenases in IBD samples compared to non-IBD controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by metagenomic data in Figure 1B-C. However, the manuscript notes this finding contrasts with murine data, suggesting species-specific differences in H2 metabolism during inflammation. The statistical significance is visually apparent in the figures though specific p-values are not provided in the text for this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "E. coli mutants lacking hydrogenase-1 and hydrogenase-2 (\u0394hya \u0394hyb) displayed significantly decreased fitness during colonization of the inflamed cecum and colon in competitive colonization experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C47, C48, C49, and C50 are well-supported by competitive colonization data in Figures 2C-D. The EcN wild-type strain outcompeted the \u0394hya \u0394hyb mutant 12-fold in colon and 5.8-fold in cecum; MP1 wild-type outcompeted the mutant 25-fold in colon and 22-fold in cecum. Statistical significance is demonstrated (p<0.01 or p<0.001), and appropriate controls including plasmid-marked strains are described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In single colonization experiments, wild-type E. coli was more abundant than the \u0394hya \u0394hyb mutant in inflamed colonic (4.7-fold) and cecal (5.1-fold) content, demonstrating that H2 utilization enhances E. coli fitness during colonization of the inflamed large intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, and C53 are supported by single colonization data in Figure 3B. The results are consistent with competitive colonization experiments and demonstrate the phenotype is not solely due to direct competition. Statistical significance is shown (p<0.05 or p<0.01). The conclusion in C53 is a reasonable inference from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "Under homeostatic conditions, wild-type and \u0394hya \u0394hyb mutant strains colonized at similar low levels, but during DSS-induced inflammation, the wild-type strain had a marked fitness advantage, demonstrating that Hyd-1 and Hyd-2 provide a fitness advantage during inflammation-associated expansion of E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C58 are supported by data in Figure 4D-E comparing colonization under mock and DSS conditions. The experiment demonstrates that the hydrogenase phenotype is inflammation-dependent. Statistical significance is shown (p<0.001), and the experimental design appropriately controls for inflammation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The fitness advantage conferred by H2 utilization increased as inflammation developed over time and correlated inversely with colon length (a measure of colitis severity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by time-course data in Figure 5C-D and correlation analysis in Figure 5\u2014figure supplement 3A,B. The Spearman correlation shows significant inverse correlation between colon length and competitive index (p<0.0001 for cecum, p=0.002 for colon). This provides strong evidence linking the hydrogenase phenotype to inflammation severity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Wild-type E. coli strains significantly outcompeted \u0394hya \u0394hyb mutants in the piroxicam-accelerated Il10-/- colitis model across multiple experimental settings, demonstrating that H2 utilization provides a fitness advantage in both chemically and genetically induced colitis models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by data in Figure 6C-E showing consistent phenotypes across different mouse genetic backgrounds (C57BL/6 and BALB/c), piroxicam doses, and E. coli strains (EcN and MP1). Statistical significance is demonstrated (p<0.05 or p<0.001). This strengthens the generalizability of the findings beyond the DSS model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C87"
+    ],
+    "result": "H2 utilization via Hyd-1 and Hyd-2 in the inflamed intestine requires fumarate reductase, cytochrome bd-II oxidase, or nitrate reductase activity, with each electron acceptor contributing partially to the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67, C68, C69, C70, and C87 are supported by genetic epistasis experiments shown in Figure 7B-C. Deletion of each reductase significantly reduced but did not abolish the hydrogenase phenotype, consistent with multiple electron acceptors contributing. Statistical significance is demonstrated (p<0.05, p<0.01, or p<0.001). The in vitro data in Figure 7A provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both Hyd-1 (encoded by hya) and Hyd-2 (encoded by hyb) individually provide fitness advantages for E. coli during colitis, with \u0394hya mutants showing 3.3-fold (colon) and 2.2-fold (cecum) defects, and \u0394hyb mutants showing 6.4-fold (colon) and 4.7-fold (cecum) defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C74, C75, and C76 are supported by competitive colonization data in Figure 8B-C. The experiments demonstrate that both hydrogenases contribute to fitness, with Hyd-2 appearing to have a larger effect. Statistical significance is shown (p<0.01 or p<0.001). This addresses the relative contributions of the two uptake hydrogenases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In vitro, inactivation of Hyd-1 and Hyd-2 had no effect on aerobic growth, but H2 utilization provided a growth advantage under anaerobic conditions only when external electron acceptors (fumarate or nitrate) were added, with Hyd-2 being primarily responsible for this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, and C46 are supported by in vitro growth and competition data in Figure 2\u2014figure supplement 1A-B. The results are consistent with established knowledge about hydrogenase function and provide important controls demonstrating that the phenotype is specific to conditions mimicking the inflamed gut. Genetic complementation (Figure 2\u2014figure supplement 1C) further validates the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "In vitro, hydrogen oxidation is coupled to fumarate reduction and nitrate respiration, with nitrate being the preferred electron acceptor for H2 utilization in E. coli based on more favorable redox potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 are supported by in vitro competition data in Figure 7A and Figure 2\u2014figure supplement 1B, along with citations to prior work. The preference for nitrate is explained by thermodynamic considerations (redox potentials) and demonstrated experimentally. This provides mechanistic context for the in vivo findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "During gut inflammation, levels of inducible nitric oxide synthase (Nos2) increase, enabling nitrate respiration that supports growth of Enterobacteriaceae family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C65 are supported by mRNA data in Figure 5\u2014figure supplement 1C showing increased Nos2 expression during inflammation, along with citations to prior work (Singer, 1996; Winter, 2013; Hughes, 2017). This provides context for why nitrate respiration is relevant during inflammation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C83"
+    ],
+    "result": "H2 metabolism is perturbed during murine non-infectious colitis and in human IBD patients, consistent with inflammation-disruption of H2 syntrophic networks in the gut microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C83 are supported by the metagenomic analyses in Figure 1 and the colonization experiments in Figures 2-8. The inference about disruption of syntrophic networks is reasonable given the increased abundance of uptake hydrogenases and the fitness advantage they provide to E. coli during inflammation. However, direct evidence of syntrophic network disruption is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "During intestinal inflammation, the gut microbiota composition changes, including decreased microbial diversity, increased mucolytic bacteria, and expansion of Enterobacteriaceae populations, as observed in IBD patients, enteric infections, necrotizing enterocolitis, and animal models of colitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15 provide background context supported by multiple citations to established literature. These claims describe well-documented phenomena in the field and provide the scientific rationale for the study. The claims are appropriately cited and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mucosal host responses contribute to microbiota changes during inflammation, and metabolic versatility of Enterobacteriaceae, particularly the ability to utilize inflammation-derived electron acceptors (tetrathionate, nitrate, oxygen), allows them to thrive in the inflamed gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 provide mechanistic background supported by citations to prior work. These claims establish the conceptual framework for understanding how inflammation creates metabolic niches that favor Enterobacteriaceae. The claims are well-supported by the cited literature and represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Hydrogenases are diverse metalloenzymes classified by metal content ([NiFe], [Fe], [FeFe]) and biochemical activity (uptake, evolving, bidirectional, bifurcating, sensory), with uptake hydrogenases converting H2 to protons and electrons that participate in electron transport chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C37 provide essential background on hydrogenase biology, supported by appropriate citations. This information is necessary for understanding the experimental approach and interpreting the results. The claims accurately represent established knowledge about hydrogenase structure and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C61",
+      "C71"
+    ],
+    "result": "E. coli K-12 encodes four hydrogenases, including two H2-oxidizing enzymes (Hyd-1 and Hyd-2) encoded by the hya and hyb operons, which are membrane-bound hydrogenases that transfer electrons from H2 oxidation to the electron transport chain and belong to distinct [NiFe]-hydrogenase subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C61, and C71 describe the genetic and biochemical properties of E. coli hydrogenases, supported by Figure 2A and citations to established literature. This information is essential for understanding the experimental design and provides the molecular basis for the genetic manipulations performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "E. coli respires oxygen using cytochrome bd-II oxidase (AppBCX), and nitrate is generated from reactive nitrogen species metabolism; both bacterial nitrate respiration and AppBCX-dependent oxygen respiration are consequences of host inflammatory metabolism, which may explain why H2 utilization contributes to E. coli expansion during colitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C88-C93 integrate prior knowledge (supported by citations) with the current findings to provide mechanistic explanation. The inference in C93 is reasonable given that the electron acceptors used by hydrogenases are products of inflammation. However, this remains somewhat speculative as direct causal links are not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Free fumarate concentration is very low in the large intestine but can be generated from aspartate or malate; the three electron acceptors (fumarate, nitrate, oxygen) may couple to Hyd-1 or Hyd-2 in different spatially distinct subpopulations or at different time points as inflammation develops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94 and C95 are supported by citations (Nguyen, 2020; Schubert et al., 2021), but C96 is explicitly speculative (\"consistent with a scenario\"). While the speculation is reasonable given that no single reductase deletion abolished the phenotype, direct evidence for spatial or temporal separation is not provided. This represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "H2 is a key metabolite in gut microbiota cross-feeding, supporting colonization of methanogens, acetogens, and sulfate-reducing bacteria; changes in microbe-microbe H2 exchange during inflammation might allow E. coli to access a H2 pool, analogous to how C. difficile expands due to succinate accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C80-C82, C84-C85 are supported by citations to prior work, but C86 is explicitly speculative (\"It is conceivable\"). While the analogy to C. difficile and succinate is reasonable, direct evidence that E. coli accesses a H2 pool due to disrupted syntrophic networks is not provided. This represents an interesting hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "H2 uptake contributes to gut colonization in commensal E. coli strains during non-infectious colitis, with both Hyd-1 and Hyd-2 playing roles, similar to findings in Salmonella Typhimurium where H2 uptake is important for virulence, gut colonization, and fecal shedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide context from prior work on Salmonella (supported by citations), while C101-C102 summarize the main findings of the current study. The comparison to Salmonella is appropriate and highlights both similarities and differences (e.g., variable results for systemic colonization). The summary claims accurately reflect the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Animal models of colitis could be useful tools to probe the physiological role of H2 metabolism in the gut microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a reasonable proposal based on the findings of the study. The authors successfully used multiple colitis models (DSS and Il10-/-) to investigate H2 metabolism, demonstrating the utility of these models. This represents a valid conclusion about the value of the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

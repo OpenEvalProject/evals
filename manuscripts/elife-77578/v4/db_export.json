@@ -1,0 +1,1323 @@
+{
+  "submission": {
+    "id": "ae7ebfd8-fa98-4400-a732-4e8f2d74be82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T19:45:52.636817Z",
+    "updated_at": "2025-12-03T19:45:52.636817Z"
+  },
+  "content": [
+    {
+      "id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "submission_id": "ae7ebfd8-fa98-4400-a732-4e8f2d74be82",
+      "content_type": "manuscript",
+      "content_text": "# The cellular architecture of memory modules in Drosophila supports stochastic input integration\n\n## Authors\n\n- Omar A Hafez<sup>1</sup> ([ORCID: 0000-0002-7846-9226](https://orcid.org/0000-0002-7846-9226))\n- Benjamin Escribano<sup>2</sup> ([ORCID: 0000-0002-1432-5952](https://orcid.org/0000-0002-1432-5952))\n- Rouven L Ziegler<sup>2</sup> ([ORCID: 0000-0002-3050-7692](https://orcid.org/0000-0002-3050-7692))\n- Jan J Hirtz<sup>3</sup> ([ORCID: 0000-0002-4486-3057](https://orcid.org/0000-0002-4486-3057))\n- Ernst Niebur<sup>1</sup> ([ORCID: 0000-0002-2815-9262](https://orcid.org/0000-0002-2815-9262)) \u2020\n- Jan Pielage<sup>2</sup> ([ORCID: 0000-0002-5115-5884](https://orcid.org/0000-0002-5115-5884)) \u2020\n\n### Affiliations\n\n1. Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n2. Division of Neurobiology and Zoology, Department of Biology, University of Kaiserslautern Kaiserslautern Germany ([ROR:04zrf7b53](https://ror.org/04zrf7b53))\n3. Physiology of Neuronal Networks Group, Department of Biology, University of Kaiserslautern Kaiserslautern Germany ([ROR:04zrf7b53](https://ror.org/04zrf7b53))\n4. Solomon Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to associate neutral stimuli with valence information and to store these associations as memories forms the basis for decision making. To determine the underlying computational principles, we build a realistic computational model of a central decision module within the Drosophila mushroom body (MB), the fly\u2019s center for learning and memory. Our model combines the electron microscopy-based architecture of one MB output neuron (MBON-\u03b13), the synaptic connectivity of its 948 presynaptic Kenyon cells (KCs), and its membrane properties obtained from patch-clamp recordings. We show that this neuron is electrotonically compact and that synaptic input corresponding to simulated odor input robustly drives its spiking behavior. Therefore, sparse innervation by KCs can efficiently control and modulate MBON activity in response to learning with minimal requirements on the specificity of synaptic localization. This architecture allows efficient storage of large numbers of memories using the flexible stochastic connectivity of the circuit.\n\n## Introduction\n\nOperating successfully within a complex environment requires organisms to discriminate between a vast number of rewarding and stressful interactions. Learning to avoid potentially harmful interactions will promote survival of individual animals and requires long-term memory mechanisms. In recent years, significant progress has been made toward our understanding of the cellular and circuit mechanisms underlying learning and memory. Despite these advances, at the computational level it remains largely unknown how the cellular and circuit architectures contribute to the efficient formation and storage of multiple memories.\n\nHere, we use the Drosophila melanogaster mushroom body (MB) as a simple model system to investigate the computational principles underlying learning and memory in the context of decision making. A key advantage of the MB, the learning and memory center of the fly, is its relative simplicity in terms of the number and types of neurons compared to the mammalian brain. It has been demonstrated that the MB is required for the acquisition and recall of associative olfactory memories (de Belle and Heisenberg, 1994), and a wide variety of genetic tools are available to access and manipulate key cell types within the memory circuitry (Owald et al., 2015b; Lai and Lee, 2006).\n\nOdor information is transmitted from the antennal lobe via projection neurons (PNs) to the Kenyon cells (KCs) of the MB. PNs are connected in a largely stochastic manner to the approximately 2000 KCs per brain hemisphere, resulting in a unique KC odor representation in individual flies (Litwin-Kumar et al., 2017; Aso et al., 2014a; Caron et al., 2013; Gruntman and Turner, 2013; Lin et al., 2007; Betkiewicz et al., 2020; Eichler et al., 2017). The exception to this is a partial non-random connectivity of a population of food-responsive PNs (Zheng et al., 2022). The formation of olfactory memories within the MB circuit is assayed through experimental manipulations in which normally neutral odors are associated with either positive (reward learning) or negative (avoidance learning) valences (Livingstone et al., 1984).\n\nElectrophysiological and calcium imaging studies demonstrated that any given odor activates approximately 3\u20139% of KCs (Campbell et al., 2013; Honegger et al., 2011; Turner et al., 2008; Siegenthaler et al., 2019). KCs then transmit this odor information to mushroom body output neurons (MBONs) that subdivide the MB lobes into distinct structural and functional modules by virtue of their dendritic arborizations (Owald et al., 2015a; Aso et al., 2014b; Hige et al., 2015a; Cognigni et al., 2018). During associative olfactory conditioning, the behavioral response to any given odor can be altered to encode positive (approach) or negative (avoidance) behavior. The valence of the conditioned response is encoded by the activation of dopaminergic neurons (DANs) that selectively innervate the structural MB modules defined by the MBON dendrites (Aso et al., 2014a; Saumweber et al., 2018).\n\nDANs of the PPL1 cluster preferentially provide input to the vertical lobe of the MB and are activated during negative reinforcement, while DANs of the PAM cluster are activated during positive reinforcement and modulate activity in the horizontal lobe of the MB (Handler et al., 2019; Aso and Rubin, 2016; Tomchik and Davis, 2009; S\u00e9journ\u00e9 et al., 2011; Cohn et al., 2015; Burke et al., 2012; Rohwedder et al., 2016; Saumweber et al., 2018; Selcho et al., 2009). The majority of MBONs of the vertical lobe utilize acetylcholine as a neurotransmitter, and artificial activation of these MBONs often mediates approach behavior (Aso et al., 2014b; Eschbach et al., 2021). In contrast, the majority of MBONs of the horizontal lobe release glutamate as a neurotransmitter, and these neurons mediate avoidance behavior (Aso et al., 2014b; Eschbach et al., 2021).\n\nIn vivo calcium imaging and electrophysiological experiments demonstrated that the activity of individual MBONs can be altered by conditioning paradigms (Hige et al., 2015a; Aso and Rubin, 2016; Pla\u00e7ais et al., 2013; Owald et al., 2015a; Jacob and Waddell, 2020; Perisse et al., 2016; Felsenberg et al., 2018). This modulation of MBON activity depends on the pairing of DAN and KC activity and results in either an enhancement or depression of the strength of the KC>MBON connection (Handler et al., 2019; Owald et al., 2015a; Cohn et al., 2015; Burke et al., 2012). These changes in KC>MBON connection strength occur in either the horizontal or the vertical lobe depending on the administered stimulus-reward contingencies. As a consequence, the resulting net activity of all MBONs is shifted to either approach or avoidance behavior, and the behavioral response toward the conditioned stimulus during memory recall is changed (Handler et al., 2019; Aso and Rubin, 2016; Cohn et al., 2015; Burke et al., 2012). Evidence for this MBON balance model (Cognigni et al., 2018) has been provided for short-term memory (Aso et al., 2014a; Hige et al., 2015a; Perisse et al., 2016; Cohn et al., 2015) but to what extent, if any, such a model applies to long-term memory remains unclear. Recently, genetic tools have been created that enable genetic tagging of long-term memory engram cells in the MB (Miyashita et al., 2018; Siegenthaler et al., 2019). These studies indicate that modulation of a relatively small number of KCs is sufficient to significantly alter memory recall.\n\nHere, we generate a realistic computational model of a core KC>MBON module that is essential for the incorporation of memories to determine the cellular basis for decision making. Prior studies (Gouwens and Wilson, 2009) used \u2018synthetic\u2019 (randomly generated) models of dendritic trees of Drosophila projection neurons to gain first insights into the computational processes of central neurons. Using linear cable theory, they demonstrated that voltage differences are much smaller within the dendritic trees than between the dendrites and the soma. Using a similar approach, Scheffer and coworkers simulated voltage distributions in the dendritic tuft of another Drosophila neuron (EPG) but used its measured morphology, rather than random geometries (Scheffer et al., 2020). Here, we go beyond these studies by combining precise structural data including the full synaptic connectivity from the electron microscopy-based synaptic connectome (Takemura et al., 2017) of the Drosophila MB with functional (electrophysiological) data of an individual MBON. This approach allows us to determine the impact of populations of KCs on MBON activity and to resolve the potential computational mechanisms underlying memory encoding. We focus on MBON-\u03b13 (MBON-14 in the terminology of Aso et al., 2014a), an MBON at the tip of the \u03b1-lobe that is relevant for long-term memory (Aso et al., 2014b; Pla\u00e7ais et al., 2013). We first determine the physiological parameters of MBON-\u03b13 by patch-clamp electrophysiology. We then use these parameters to generate an anatomically and physiologically realistic in silico model of MBON-\u03b13 and its KC inputs. Using a variety of computational simulations, we provide evidence that MBON-\u03b13 is electrotonically compact and perfectly suited to incorporate a substantial number of memories based on largely stochastic KC inputs.\n\n## Results\n\n### Electrophysiological characterization of MBON-\u03b13\n\nMBON-\u03b13 is particularly suitable for computational modeling due to the availability of its complete dendritic reconstruction through electron microscopy (Takemura et al., 2017). In addition, we can access MBON-\u03b13 genetically by using a specific Gal4 line (MB082C-Gal4) to label MBON-\u03b13 by the expression of membrane-bound GFP (10xUAS-IVS-mCD8::GFP; Figure 1A). In immunohistochemical co-labelings with the active zone marker Bruchpilot (Brp), we were able to visualize the dendritic input sites, the axonal projections and the cell soma of MBON-\u03b13 (Figure 1A, arrow). We used this labeling to perform fluorescence-guided electrophysiological whole-cell patch-clamp recordings of this neuron ex vivo (Figure 1C and D). We carried out standard patch-clamp protocols in five cells of independent preparations and recorded all essential physiological parameters (Table 1). It is of note that we cannot discriminate between the two different MBON-\u03b13 cells that are marked by the split Gal4 line and that are almost identical with regard to their dendritic tree position and synaptic input number (Takemura et al., 2017). First, we performed a continuous current-clamp protocol over $60\u2062s$ at a sampling rate of $50\u2062k\u2062H\u2062z$ which allowed us to determine the average resting membrane potential as $-56.7\\pm2.0\u2062m\u2062V$. This value for the resting membrane potential is in line with prior measurements of MBONs in vivo and of other central neurons in Drosophila (Hige et al., 2015a; Wilson et al., 2004; Gu and O\u2019Dowd, 2006; Groschner et al., 2022). In these recordings, we observed spontaneous firing activity of MBON-\u03b13 with an average frequency of $12.1\u2062H\u2062z$. Next, we performed a current-clamp de- and hyper-polarization protocol where we recorded $400\u2062m\u2062s$ trials at a sampling rate of $50\u2062k\u2062H\u2062z$. Each trial started with $0\u2062p\u2062A$ for $10\u2062m\u2062s$, followed by a current injection of $-26\u2062p\u2062A$ to $32\u2062p\u2062A$, with $2\u2062p\u2062A$ increments for $400\u2062m\u2062s$. These protocols allowed us to evoke action potentials and to determine the resulting changes in membrane potential. An example displaying selected traces of a representative recording is shown in Figure 1F. Two additional examples are illustrated in Figure 1\u2014figure supplement 1. From this data, we determined the average membrane time constant as $\\tau_{m}=16.06\\pm2.3\u2062m\u2062s$. We then performed a voltage-clamp step protocol without compensating for the series resistance. In this experiment, we recorded at $20\u2062k\u2062H\u2062z$ while applying a $5\u2062m\u2062V$ voltage step for $100\u2062m\u2062s$. This allowed us to calculate the average membrane resistance as $R_{m}=926\\pm55\u2062M\u2062\u03a9$, a rather high membrane resistance when compared to similarly sized neurons (Gouwens and Wilson, 2009). MBON-\u03b13 is thus highly excitable, with small input currents being sufficient to significantly alter its membrane potential.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-v4.jpg)\n\n**Figure 1.:** (A) Immunohistochemical analysis of the MBON-\u03b13 (green, marked by GFP expression) reveals the unique morphology of the MBON with its dendritic tree at the tip of the \u03b1-lobe and the cell soma (arrowhead) at a ventro-medial position below the antennal lobes. The brain architecture is revealed by a co-staining with the synaptic active zone marker Bruchpilot (Brp, magenta). (B) Artificial superimposition of a partial rendering of MBON-\u03b13 (green) and of $\\alpha\u2062\\beta\u2062\\gamma$-KCs (magenta) to illustrate KC>MBON connectivity. A simplified schematic $\\alpha\u2062\\beta$-KC projection is illustrated in white. (C) Transmitted light image of an MBON-\u03b13 cell body attached to a patch pipette. (D) Visualisation of the GFP-expression of MBON-\u03b13 that was used to identify the cell via fluorescence microscopy. The patch pipette tip is attached to the soma (right side). The scale bar in C applies to C and D. (E) Recording of spontaneous activity of an MBON-\u03b13 neuron in current clamp without current injection. (F) Recording of evoked neuronal activity of an MBON-\u03b13 neuron with step-wise increasing injection of $400\u2062m\u2062s$ current pulses. Pulses start at $-26\u2062p\u2062A$ (bottom) with increasing $2\u2062p\u2062A$ steps and end at $+32\u2062p\u2062A$ (top). (G) Mean trace of the induced membrane polarization resulting from a $200\u2062m\u2062s$ long current injection of $-10\u2062p\u2062A$. 105 trials from three different cells (35 each) were averaged. Gray shading indicates the SD. (H) Relative change of membrane potential after current injection. Vm is equal to the maximum depolarization of the membrane. (I) Correlation between the frequency of action potential firing and changes in membrane potential. (J) Relative change of spike amplitude after current injections. Spike amplitude represents the peak of the largest action potential minus baseline. Also see Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Second (A) and third (B) example cells for the evoked neuronal activity of MBON-\u03b13 through a step-wise increasing injection of $400\u2062m\u2062s$ current pulses. Pulses start at $-26\u2062p\u2062A$ (bottom) with increasing $2\u2062p\u2062A$ steps and end at $+32\u2062p\u2062A$ (top). (C) Correlation between frequency of action potential firing and injected current. The frequency describes action potentials per second. (D) Relative change of spike amplitude after current injections. Spike amplitude corresponds to the peak of the highest action potential minus baseline. (E) Change of membrane potential relative to the resting membrane potential after current injection. \u0394Vm is equal to the maximum depolarisation minus the resting membrane potential.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) MBON-\u03b13 was identified for patch-clamp recordings using either mCD8::GFP (data in B-D) or cytoplasmic EGFP (data in E-H). (B\u2013H) Raw traces of the induced membrane polarization resulting from a $200\u2062m\u2062s$ long current injection of $-10\u2062p\u2062A$. (I) Comparison of the mean traces of the three cells recorded using mCD8::GFP (B-D, red) and the four cells recorded using EGFP (E-H, blue). Blue and red shadings indicate the SD. (J) Exemplary illustration of the procedure to determine the membrane time constant tau. All parameters used to calculate $\\tau_{m}$ are highlighted. The first vertical dashed line is defined as the time ($t_{1}$) when the current injection starts. The second line ($t_{2}$) is when the voltage has decayed to $(V\u2062m\u2062(t_{1})+(\u0394\u2062V\u2062m/e))$, where $\u0394\u2062V\u2062m$ is the difference between $V\u2062(t_{1})$ and the asymptotic voltage, and $e$ is the base of the natural logarithm. Thus, at $t_{2}$, the deflection is at 1/e of the maximum deflection. (K) Comparison of $200\u2062m\u2062s$ and $400\u2062m\u2062s$ current injections of $-10\u2062p\u2062A$ from an example cell (cell 1\u2019). No significant difference for $\\tau_{m}$ could be detected between the two stimulation protocols.\n\n**Table 1.**\n Summary of passive membrane properties of MBON-\u03b13, calculated from electrophysiological measurements from five neurons.Table 1\u2014source data 1.Summary of the passive membrane properties of MBON-\u03b13, calculated from electrophysiological measurements from four neurons marked by cytoplasmic EGFP.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>V\u2062m\u2062[m\u2062V]</th>\n      <th>\u03c4m\u2062[m\u2062s]</th>\n      <th>Cm\u2062[p\u2062F]</th>\n      <th>Cs\u2062p\u2062e\u2062c\u2062[\u03bc\u2062F/c\u2062m2]</th>\n      <th>Cp\u2062a\u2062s\u2062s\u2062[S/c\u2062m2]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell 1</td>\n      <td>\u201359.2</td>\n      <td>13.54</td>\n      <td>12.35</td>\n      <td>0.200</td>\n      <td>1.87\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n      <td>\u201352.3</td>\n      <td>14.46</td>\n      <td>20.79</td>\n      <td>0.337</td>\n      <td>2.12\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Cell 3</td>\n      <td>\u201356.2</td>\n      <td>24.58</td>\n      <td>21.60</td>\n      <td>0.350</td>\n      <td>1.48\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Cell 4</td>\n      <td>\u201352.8</td>\n      <td>15.50</td>\n      <td>15.83</td>\n      <td>0.257</td>\n      <td>1.66\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Cell 5</td>\n      <td>\u201363.1</td>\n      <td>12.20</td>\n      <td>13.21</td>\n      <td>0.214</td>\n      <td>1.76\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>Mean</td>\n      <td>\u201356.7</td>\n      <td>16.06</td>\n      <td>16.76</td>\n      <td>0.272</td>\n      <td>1.78\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>SD</td>\n      <td>4.5</td>\n      <td>4.92</td>\n      <td>4.26</td>\n      <td>0.069</td>\n      <td>0.24\u00d710\u22125</td>\n    </tr>\n    <tr>\n      <td>SEM</td>\n      <td>2.0</td>\n      <td>2.20</td>\n      <td>1.90</td>\n      <td>0.031</td>\n      <td>0.11\u00d710\u22125</td>\n    </tr>\n  </tbody>\n</table>\n\nThe amplitude of action potentials was rather small ($4.3\\pm0.029\u2062m\u2062V$) but similar to previously reported values for different MBONs (Hige et al., 2015a). The small amplitudes are likely a result of the unipolar morphology of the neuron with a long neurite connecting the dendritic input region to the soma (see below). As a result, signal propagation may partially bypass the soma (Figure 1A, B and F; Gouwens and Wilson, 2009). We calculated the neuron\u2019s membrane capacitance ($C_{m}=\\tau_{m}/R\u2062m$) as $C_{m}=16.76\\pm1.90\u2062p\u2062F$, which classifies MBON-\u03b13 as a mid-sized neuron.\n\nTo enable the calibration of the in silico model, we then recorded 35 trials per cell in a current-clamp injection protocol with injections of $10\u2062p\u2062A$ current pulses for $200\u2062m\u2062s$ at a sampling rate of $20\u2062k\u2062H\u2062z$. We averaged 105 traces from three selected example cells to a standard curve, describing the membrane kinetics of MBON-\u03b13 in response to current injections (Figure 1G). To further characterize MBON-\u03b13, we analyzed the resulting data from the current-clamp de- and hyper-polarization protocols in the three example cells (Figure 1F and Figure 1\u2014figure supplement 1). We recorded the absolute deflection, the action potential firing frequency, and the amplitude of action potentials for all individual cells. In all three cells, we observed that the absolute deflection of the membrane potential was proportional to the increasing current injections (Figure 1H). The action potential firing frequency increased gradually with increasing membrane potential deflections (Figure 1I), with no significant change in action potential amplitudes (Figure 1J). The same effect was observed with an increasing current injection (Figure 1\u2014figure supplement 1). This is consistent with the general idea that action potentials are \"all or nothing\" events, and that MBON-\u03b13 is a spike-frequency adapting neuron constistent with prior observations of other MBONs (Hige et al., 2015a). We repeated these recordings with a cytosolic EGFP as an independent and non-membrane associated marker and observed consistent results (Figure 1\u2014figure supplement 2 and Table 1\u2014source data 1). We next used these data to generate an in silico model based on realistic passive membrane properties.\n\n### Constructing an in silico model of MBON-\u03b13\n\nFor our in silico model of MBON-\u03b13, we used the recently published electron-microscopy-based connectome of the Drosophila mushroom body (Takemura et al., 2017). This dataset includes the precise morphological parameters of the entire dendritic tree including the precise location data for all 12,770 synaptic connections from the 948 innervating KCs. It is important to note that this dataset represents a single fly and the EM-based reconstruction was not able to faithfully assign all synaptic connections (potentially missing 10% of synapses; Takemura et al., 2017). The comparison with the hemibrain data set (Scheffer et al., 2020) that provides a second independent reconstruction of the MBON from a different fly showed very few differences in KC to MBON-\u03b13 connectivity. Thus, despite potential shortcomings, this dataset represents the most accurate template to reconstruct the dendritic tree and connectivity of the MBON. To build a complete morphological reconstruction of MBON-\u03b13, we included the axonal reconstructions from the hemibrain dataset (Scheffer et al., 2020) and determined the length of the connection between the soma and the dendritic region via confocal light microscopy. We incorporated these data together with all other values into the NEURON simulation environment (Hines and Carnevale, 1997; Figure 2A and C and Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-v4.jpg)\n\n**Figure 2.:** (A) Electron microscopy based reconstruction of MBON-\u03b13. Data was obtained from NeuPrint (Takemura et al., 2017) and visualized with NEURON (Hines and Carnevale, 1997). Data set MBON14 (ID 54977) was used for the dendritic architecture (A\u2013C) and MBON14(a3)R (ID 300972942) was used to model the axon (light gray) and synaptic terminal (dark gray, A, C). The proximal neurite (bright green) was defined as the proximal axonal region next to the dendritic tree. This is the presumed site of action potential generation. Connectivity to the soma (blue) is included for illustration of the overall morphology and is not drawn to scale. (B) A magnified side view of the dendritic tree of MBON-\u03b13. Within the dendritic tree a total of 4336 individual membrane sections were defined (light gray area). The 3121 membrane sections that contain one or more of the 12,770 synaptic input sites from the 948 innervating KCs are highlighted in magenta. (C) Simplified in silico model of MBON-\u03b13 highlighting the size of the individual neuronal segments. We simulated recordings at the proximal neurite (specified as the potential site of action potential generation based on morphological parameters; this area is still included in the dendritic tree reconstruction of Takemura et al., 2017) or at the soma. Values for the different sections are provided in Figure 2\u2014figure supplement 1, Figure 2\u2014source data 1. (D) Normalized trace of a simulated membrane polarization after injection of a $200\u2062m\u2062s$ long square-pulse current of $-10\u2062p\u2062A$ at the soma. (E) Normalized and averaged experimental traces (blue) with standard deviation (light blue) of our measured depolarization. (F) Comparison of a normalized induced depolarization from the model (red) and from the experimental approach (black). The model was fitted within the NEURON environment to the measured normalized mean traces with a mean squared error between model and measured data of $0.048\u2062m\u2062V^{2}$. Also see Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2 and Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The pink and brown sections represent the presynaptic release sites of MBON-\u03b13. Color-coded electron-microscopy based reconstruction (A) and in silico model (B). The reconstruction of the hemibrain did not include the complete axonal area (yellow) and the soma. (B) illustrates the appended sections and the corresponding diameter and lengths. The soma diameter (black) and axon length (yellow) were estimated from confocal microscopy images and literature. Values of individual segments are presented Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We hypothesize that this behavior is a reflection of the cell\u2019s morphology, shown in panel A of that Figure, as well as in Figure 2\u2014figure supplement 1. In the experiment, as well as in the simulation, current is injected into the soma and recorded there. The soma is a relatively small compartment, with small membrane area. It is connected via a long, thin neurite with the rest of the cell which has a substantially larger membrane area. Current injection charges the somatic capacitance very quickly, leading to a rapid change in the somatic voltage at each current step, while the rest of the cell reacts on a much larger time scale. This is visible by the small \u2018kink\u2019 right after each change in the injected constant current, Figure 2D. (A) Highly simplified schematic circuit of the cell. The soma is represented by the RC circuit consisting of a $1\u2062G\u2062\u03a9$ resistor and a $1.5\u2062p\u2062F$ capacitor. The time constant of this circuit is very short $1.5\u2062m\u2062s$. The neurite connecting it to the rest of the cell (axon and dendrites) is represented by a $100\u2062M\u2062\u03a9$ resistor. The rest of the cell is represented by the second RC circuit ($1\u2062G\u2062\u03a9$ resistor and $15\u2062p\u2062F$ capacitor) with a time constant exceeding that of the soma by a factor of ten. (B) Simulated current step protocol in the simplified circuit, with negative current injected for $\u22485\u2062m\u2062s$ and then removed (red bar). The somatic voltage (green trace) shows the fast change at start and end of the current injection, followed by a slower near-exponential trace. This Link to the circuit simulator allows the reader to simulate the circuit shown in (A). Closing the switch, by clicking on its symbol, starts the $-10\u2062p\u2062A$ current injection and shows the soma voltage, that is the voltage over the $1.5\u2062p\u2062F$ capacitor. Opening the switch (by clicking on the symbol again) results in the circuit returning to its equilibrium state. The voltage trace (green) displays the two characteristic times of the coupled circuit. To ensure long-term access to the circuit simulation, we captured a web archive snapshot of the web app. (C) The two time scales are visible in the electrophysiologically recorded raw (not averaged) voltage, in fact more clearly than in the averaged data in Figure 2D, E and F. Shown here are two representative voltage traces recorded from cell 1 in Figure 1\u2014figure supplement 2B.\n\nBased on the published vector data (Takemura et al., 2017) we subdivided the dendritic tree into 4336 linear sections, of which 3121 are postsynaptic to one or more of the 12,770 synaptic contacts from 948 KCs (Figure 2B). We used linear cable theory (Niebur, 2008) to generate the in silico model of MBON-\u03b13. Linear cable theory is the baseline model for neurites and the most rational approach in the absence of detailed information about potential nonlinear currents.\n\nIn previous simulations of Drosophila neurons, the kinetics of membrane polarisation as a response to current injections were adjusted to in vivo measurements through a fitting procedure (Gouwens and Wilson, 2009). We first defined the boundaries of the passive membrane parameters within NEURON\u2019s PRAXIS (principle axis) optimization algorithm and incorporated the experimentally defined passive membrane properties (Table 1). We then determined the biophysical parameters of the in silico neuron by current step injections of $-10\u2062p\u2062A$ for $200\u2062m\u2062s$ at the soma and by recording the neuronal voltage traces. This enabled us to fit the membrane parameters of our model neuron to the experimental data of the three example cells (Figure 2E). The biophysical parameters that resulted from the fitting procedure are provided in Table 2.\n\n**Table 2.**\n Electrophysiological values applied for the in silico model of MBON-\u03b13-A.Parameter values were obtained from literature or were based on the fitting to our electrophysiological data. The first column shows the parameters, with the names used in the NEURON environment in parentheses. The maximal conductance was determined to achieve the target MBON depolarization from monosynaptic KC innervation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"4\">Electrophysiological Properties</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Variable</td>\n      <td>Description</td>\n      <td>Fitted</td>\n      <td>Literature</td>\n    </tr>\n    <tr>\n      <td>Ra (Ra)</td>\n      <td>Cytoplasm resistivity [\u03a9\u00d7c\u2062m]</td>\n      <td>85.41</td>\n      <td>30\u2013400 (Borst and Haag, 1996; Gouwens and Wilson, 2009)</td>\n    </tr>\n    <tr>\n      <td>Cm (cm)</td>\n      <td>Specific membrane capacitance [\u03bc\u2062F/c\u2062m2]</td>\n      <td>0.6961</td>\n      <td>0.6\u20132.6 (Borst and Haag, 1996)</td>\n    </tr>\n    <tr>\n      <td>gp\u2062a\u2062s (pas.g)</td>\n      <td>Passive membrane conductance [S/c\u2062m2]</td>\n      <td>9.399\u00d710-6</td>\n      <td>3.8\u00d710-5-1.2\u00d710-4 (Cassenaer and Laurent, 2007)</td>\n    </tr>\n    <tr>\n      <td>ep\u2062a\u2062s (pas.e)</td>\n      <td>Leak reversal potential [m\u2062V]</td>\n      <td>\u201355.64</td>\n      <td>\u201360 (Berger and Crook, 2015)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Synaptic Parameters</td>\n    </tr>\n    <tr>\n      <td>\u03c4s (tau)</td>\n      <td>Time to max. conductance [m\u2062s]</td>\n      <td>N.A.</td>\n      <td>0.44 (Su and O\u2019Dowd, 2003)</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>Synaptic current reversal potential [m\u2062V]</td>\n      <td>N.A.</td>\n      <td>8.9 (Su and O\u2019Dowd, 2003)</td>\n    </tr>\n    <tr>\n      <td>Gm\u2062a\u2062x (gmax)</td>\n      <td>Maximal conductance [\u03bc\u2062m\u2062h\u2062o ]</td>\n      <td>N.A.</td>\n      <td>1.5627\u00d710-5 (Hige et al., 2015b)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe obtained membrane kinetics that closely resemble ex vivo current injections of $-10\u2062p\u2062A$, with a mean squared error between model and measured data of $0.0481\u2062m\u2062V^{2}$. For comparison, we normalized both the modelled current injection (Figure 2D) and the average of the traces from the ex vivo recordings (Figure 2E) and overlayed the resulting traces in Figure 2F.\n\nNote that the faster voltage change at the onset and offset of the current injection seen in the simulation is caused by the small size of the soma which results in a much faster \u2018local\u2019 somatic time constant than that of the whole cell (Figure 2\u2014figure supplement 2). This is also visible in the average of the recorded traces (Figure 2F), but more obvious in individual (not trial-averaged) recorded traces (Figure 2\u2014figure supplement 2C). Overall, these results indicate that we were able to generate a realistic in silico model of MBON-\u03b13.\n\n### Effect of KC>MBON synaptic inputs\n\nAs KCs are cholinergic (Barnstedt et al., 2016) we utilized previously determined parameters of cholinergic synapses to simulate synaptic input to MBON-\u03b13. We used a reversal potential of $8.9\u2062m\u2062V$ and a synaptic time constant $\\tau_{s}=0.44\u2062m\u2062s$ as target values (Su and O\u2019Dowd, 2003). Individual synaptic contacts were simulated as alpha functions ($g_{m\u2062a\u2062x}\u2062(t-t_{i})\\timesexp\u2061(-(t-t_{i}-\\tau_{s})/\\tau_{s})$) where $t_{i}$ is the time of the incoming spike and $g_{m\u2062a\u2062x}=1.56\\times10^{-11}\u2062S$, chosen to obtain response levels in agreement with the target values. The average number of synaptic contacts from a KC to this MBON is 13.47 (Takemura et al., 2017), Figure 4B. To determine the computational constraints of MBON-\u03b13, we first stimulated each of the 3,121 dendritic sections that receive KC synaptic innervation using the described alpha-function conductance change. We then \"recorded\" (from our simulation) the resulting voltage excursions at the dendritic input site (Figure 3A, red), at the proximal neurite (putative action potential initiation site, green) and at the cell soma (blue). The comparative analysis of the responses at these three locations revealed two notable features: (1) voltage excursions directly within the dendrite are faster and substantially larger than in the proximal neurite and soma, and (2), the resulting voltages in the latter two compartments are much less variable than in the dendrite and distributed within a very small voltage range (Figure 3D and E). These results indicate that the morphological architecture and biophysical parameters of MBON-\u03b13 promote a \u2018compactification\u2019, or \u2018democratization\u2019, of synaptic inputs, with all inputs resulting in similar voltage excursions at the proximal neurite and soma, regardless of the strength of the initial dendritic voltage or the position on the dendritic tree.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig3-v4.jpg)\n\n**Figure 3.:** (A) Simulated stimulation of individual synaptic input sites. Voltage deflections of synaptic currents were analyzed locally at the dendritic segment (red, next to electrode tip), the proximal neurite (green) and the soma (blue). The soma is depicted as a square that reflects its size in the NEURON environment. Color code also applies to B-F. (B) Resulting mean voltages (lines) and standard deviations (shading) from synaptic activations in 3121 individual stimulus locations (dendrite), and at the proximal neurite and soma. (C\u2013E) Violin plots of the simulated maximal amplitudes at the dendritic section (C), the proximal neurite (D) and the soma (E) in response to synaptic activations. Dotted lines represents the quartiles and dashed lines the mean. Proportions of the violin body represent the distribution of individual data points. Note the difference in scale and compactification of the amplitudes in the proximal neurite and soma. (F) Distribution of the percentage of voltage attenuation recorded at the soma. (G) Distribution of distance between all individual dendritic sections and the soma. This color code is applied in H and I. (H) The elicited local dendritic depolarization is plotted as a function of the local dendritic section volume. (I) The soma amplitude is plotted as a function of the amplitude at individual dendritic segments. Note different scales between abscissa and ordinate; the blue line represents identity. Also see Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Distance to the proximal neurite for each stimulated dendritic segment with the color code for the following graphs. (B) Scatter plot of the elicited amplitude relative to the resting membrane potential in each stimulated dendritic section as function of its surface area. (C) Scatter plot of the voltage in the proximal neurite as a function of the voltage in the dendrite, both relative to their baseline values. The blue line represents the line of identity. (D) Correlation of the measured distance to the proximal neurite with the percent of voltage attenuation in the proximal neurite for each synaptic section. (E) Distribution of the percentage of voltage attenuation in the PN per synapse. Vertical dotted line represents the mean attenuation in percent. (F) Correlation of the measured distance to the soma with the percent of voltage attenuation in the soma for each synaptic section. (G) Correlation of the attenuation in percent at the soma (blue) or at the proximal neurite (green) relative to the dendritic voltage.\n\nTo a first approximation, compactification can be understood from a simple analytical estimate of the space constant of this neuron. It is obtained by assuming a non-branching cylinder with the mean diameter of the dendritic segments, $0.29\u2062\\mu\u2062m$, as obtained from the morphological data from Takemura et al., 2017. Taking the values for the resistivity of the cytoplasm ($R_{a}=85\u2062\u03a9\u2062c\u2062m$) and the transmembrane conductance ($g_{p\u2062a\u2062s}=9.4\\times10^{-6}\u2062S/c\u2062m^{2}$) from Table 2, the characteristic length over which excitations decay can then be computed by linear cable theory (Niebur, 2008) as $\\lambda\u22481,300\u2062\\mu\u2062m$. This is about twice the maximal path length between any two segments of the cell, see Figure 2C. Using the average diameter of all neuronal compartments, both in the dendritic tree and in the other components of the neuron as listed in Figure 2\u2014figure supplement 1, increases $\\lambda$ by about 10% because the non-dendritic segments have larger diameters. In either case, synaptic input even at distal locations on the dendritic tree can influence somatic voltage deflections nearly as strongly as more proximal synapses, see Figure 3E.\n\nTo understand additional influences of cell morphology for the input computation, we analyzed the relation between synaptic position and local dendritic volume and the resulting voltages in the dendrite, proximal neurite, and soma. Representing the distance between dendritic inputs and soma (Figure 3G) by a color code, we find that, as in many tree-like structures, there is a systematic tendency that more distal segments (more distant from the soma) have a smaller volume and diameter, Figure 3H. The same figure also shows that the simulated voltage excursions are many times larger in distal, small segments than in proximal, large segments, over a range from $\u22480.03\u2062m\u2062V$ to $\u22481\u2062m\u2062V$. This is expected: placing an electrical charge (integrated synaptic current) on a small capacitor (low-volume segment with small surface area) results in a larger voltage excursion than placing the same charge on a large capacitor (large segment). It is highly remarkable, however, that the morphology of the MBON-\u03b13 dendritic tree seems finely tuned, with the goal of maximizing the equality of the functional weight of all synapses. Specifically, the decrease of the voltage excursion in the soma caused by the injection of a current is nearly perfectly (within less than $0.5\u2062\\mu\u2062V$) compensated by the increase of the local dendritic voltage due to the smaller volume of distal segments, see Figure 3I. The approximately 30-fold difference of local dendritic voltages ($\u22480.03\u2062m\u2062V$ to $\u22481\u2062m\u2062V$) is nearly exactly compensated, such that activation of each synapse has exactly the same effect at the soma, within less than one $\\mu\u2062V$.\n\nWe next analyzed the impact of individual KCs on MBON-\u03b13. We simulated the activation of all synapses of each individual KC that innervates MBON-\u03b13, using the synaptic parameters described above, and we recorded the simulated voltage excursions in the soma, Figure 4A. The number of synapses varied between KCs, ranging from 1 to 27 (plus one outlier with 38 synaptic contacts), with a mean of 13.47 synapses per KC (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig4-v4.jpg)\n\n**Figure 4.:** (A) Simulated activation of all synapses from all 948 individual KCs innervating MBON-\u03b13. A representative example of a KC (KC12) with 13 input synapses to MBON-\u03b13 is shown. (B) Histogram of the distribution of the number of synapses per KC. (C) Membrane potential traces from simulated activation of all 948 KCs. (D) Distribution of the elicited amplitudes evoked by the individual activations of all KCs. (E) Correlation between the somatic amplitude and the number of activated synapses in the trials. (F) Blue: Distribution of the somatic voltage change evoked by the activation of all KCs with exactly 12, 13, or 14 input synapses. Each dot represents one simulated KC. Bars represent mean and SD. Red: Same, but for activation of 13 random synapses per simulation in 1000 independent trials.\n\nIn these simulations, we observed a wide range of voltage excursions (note the outlier in Figure 4B, C, D and E). The neuron is firmly in a small-signal operation mode, as we observed a highly linear relation between the voltage excursion and the number of synapses per KC, Figure 4E. Activating a single KC leads to a voltage excursion at the soma with a mean of $0.37\u2062m\u2062V$, Figure 4D. To further analyze this linear relationship between synapse number and somatic voltage excursion, we analyzed all KCs with exactly 12, 13, or 14 synaptic inputs to MBON-\u03b13. This analysis revealed a highly stereotypical depolarization at the soma for all these KCs, despite wide variations in the position of the individual synaptic contacts (Figure 4E and F). Activation of 13 randomly selected synapses in 1000 independent trials resulted in similar voltage excursions as observed for the KCs with 13 synaptic connections. Interestingly, in these simulations the responses showed less variability compared to the activation of individual KCs with synapses at anatomically observed locations (Figure 4F). Together, these results provide further support for the electrotonical compactness of MBON-\u03b13.\n\n### Physiological and tuned activation of MBON-\u03b13\n\nA given odor activates only a small fraction of KCs reliably, reported as about 5% in some studies (Honegger et al., 2011; Siegenthaler et al., 2019) and 6% in others (Turner et al., 2008; Campbell et al., 2013). This one-percentage point difference may well be caused by differences in the experimental preparations. However, in absolute terms a change from 5% to 6% in the same system represents a 20% increase. To understand the physiological effect of differences in the number of activated KCs of this size, we first established a baseline condition by simulating voltage excursions in the soma resulting from the simultaneous activation of sets of 50 KCs (corresponding to 5%), randomly selected from the 948 KCs innervating MBON-\u03b13 and addressed increases in KC number afterwards.\n\nIn 1000 independent activation trials (Figure 5A), we observed highly stereotypical activation patterns, with a mean somatic depolarization of $15.24\u2062m\u2062V$ and only small variations in the time course (Figure 5B and C (blue)). These results are consistent with an activation of 50 KCs being sufficient to induce changes in the firing frequency of MBON-\u03b13 (Figure 1H, I). The fact that all simulations resulted in a significant depolarization consistent with action potential generation or alterations of the firing frequency together with the small range of variation within this dataset, provides support for the current model that odor encoding in KCs is, at least to a large extent, random (stochastic; Caron et al., 2013; Zheng et al., 2022; Li et al., 2020; Eichler et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77578/elife-77578-fig5-v4.jpg)\n\n**Figure 5.:** (A) Schematic of the simulated recording paradigm. We modeled the activation of \u22485% of random combinations of identified KCs, that is we activated the anatomically correct synapse locations of 50 randomly selected KCs to mimic activation by an odor. The panel shows the distribution of activated synapses for one of these trials. We then varied the number of activated KCs by \u00b125% around its mean of 50, that is 38, 50, and 63 KCs, and we varied synaptic strength \u00b125% around its original value, that is 75%, 100%, and 125%. (B) Mean somatic depolarizations after activating 1000 different sets of either 38 (light blue), 50 (blue), or 63 (dark blue) KCs, all at standard synaptic strength (100%). Shades represent the standard deviations. (C) Mean somatic depolarizations after activating 1000 different sets of 50 KCs at either 75% (red), 100% (blue), or 125% (purple) synaptic strength. Shades represent the standard deviations. (D, E) Violin plots of the relative amplitudes evoked by the different KC sets from (B, C). (F\u2013G) Violin plots for the comparison of the amplitudes between the different plasticity paradigms. (F) 63 KCs at 100% vs 50 KCs at 125% synaptic strength. (G) 38 KCs at 100% vs 50 KCs at 75% synaptic strength. Plots in D-G use the color code from (B) and (C). (H) 63 KCs at 75% (dark red) vs. 50 KCs at 100% (blue) and 38 KCs at 125% (light purple) synaptic strength. See Figure 3 for symbols in violin plots. (I) Relation between somatic depolarization and the number and strength of activated synapses. Illustrated are all tested conditions for synaptic plasticity and KC recruitment. Stimulation paradigms are color coded as shown. (J) Relation between the slope of the condition-specific linear regressions from (I) and the synaptic strength of the activated KC sets. (K) Relation between the slope of the condition-specific linear regressions from (I) and the number of recruited KCs. (L) Slopes of the condition-specific linear regressions from (I). Color codes of (J\u2013L) as in (I). Statistical significance was tested in multiple comparisons with a parametric one-way ANOVA test (D, E and H) resulting in p=<0.0001 for all conditions, or in an unpaired parametric t-test (F and G) resulting in p=<0.0001 for all conditions. Numerical results are summarized in Table 3.\n\nBased on in vivo data, two different modes of plasticity may act at the level of the KC-MBON module to alter MBON output to conditioned odors. In vivo imaging of short-term memory formation demonstrated alterations of KC input strength (Owald and Waddell, 2015; Hige et al., 2015a; Perisse et al., 2016; Pla\u00e7ais et al., 2013; Pai et al., 2013; S\u00e9journ\u00e9 et al., 2011; Jacob and Waddell, 2020) while recent observations of long-term memory demonstrated a specific change (increase) in the number of KCs representing the conditioned odor (Delestro et al., 2020; Shyu et al., 2019; Baltruschat et al., 2021). To directly address the relative impact of these two modulations on MBON depolarization, we repeated the same simulation but now modified input strength by either altering activated KC numbers or by modulating the synaptic gain. To enable a direct comparison, we modulated each factor by 25%. First, we increased the number of activated KCs per set by 25%, from 50 to 63. This lead to a mean somatic depolarization of $18\u2062m\u2062V$, a significant increase by 19% (Figure 5B and D; dark blue). Decreasing the number of activated KCs by 25%, from 50 to 38, lead to a mean somatic depolarization of $12\u2062m\u2062V$, a significant decrease by 20% (Figure 5B and D; light blue). Next, we either increased or decreased synaptic strength within sets by 25%. Increase lead to a mean somatic depolarization of $18\u2062m\u2062V$, a significant increase by 19% (Figure 5C and E; purple) while decrease lead to a mean somatic depolarization of $12\u2062m\u2062V$, a significant decrease by 21% (Figure 5C and E; red). Averaged over all conditions, a change of input of 25% lead to a change of 20\u00b11% in membrane depolarization.\n\nEven though the integrated synaptic conductance was changed by the same amount by our manipulation of either synaptic strength or number of activated KCs, we observed small but significant differences in the resultant mean somatic amplitudes (Figure 5F and G). Finally, we combined both manipulations by compensating an increase in KC number with a corresponding decrease in synaptic strength and vice versa. Both manipulations resulted, on average, in a significant decrease of MBON membrane depolarization (Figure 5). An overview of the performed simulations and numerical results is provided in Table 3.\n\n**Table 3.**\n Summary of data from the plasticity simulations of Figure 5.Simulations vary the number of active KCs and/or the strength of the KC-MBON synapses by scaling the maximal conductance parameter of the synaptic alpha-conductance function. Results include the mean number of activated synaptic sites as well as the mean amplitude of the somatic voltage depolarization across the 1000 trial repetitions of each simulation. Ranges are reported as parentheticals. The slope of the linear regression describing the relation between the number of active synapses and somatic voltage amplitude is reported (Figure 5I\u2013L).\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Simulation parameters</th>\n      <th colspan=\"3\">Results</th>\n    </tr>\n    <tr>\n      <th># KCs</th>\n      <th>Synaptic strength</th>\n      <th>Mean # Activated synapses</th>\n      <th>Mean somatic depolarization amplitude [m\u2062V]</th>\n      <th>Slope</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>63</td>\n      <td>125%</td>\n      <td>847.88 (747 - 939)</td>\n      <td>21.55 (19.66\u201323.21)</td>\n      <td>0.0184</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>125%</td>\n      <td>672.55 (573 - 778)</td>\n      <td>18.14 (15.99\u201320.29)</td>\n      <td>0.0209</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>125%</td>\n      <td>511.77 (425 - 615)</td>\n      <td>14.60 (12.48\u201316.96)</td>\n      <td>0.0235</td>\n    </tr>\n    <tr>\n      <td>63</td>\n      <td>100%</td>\n      <td>847.08 (725 - 977)</td>\n      <td>18.26 (16.15\u201320.34)</td>\n      <td>0.0166</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>100%</td>\n      <td>673.76 (574 - 805)</td>\n      <td>15.24 (13.34\u201317.58)</td>\n      <td>0.0185</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>100%</td>\n      <td>512.48 (429 - 599)</td>\n      <td>12.14 (10.43\u201313.85)</td>\n      <td>0.0203</td>\n    </tr>\n    <tr>\n      <td>63</td>\n      <td>75%</td>\n      <td>849.05 (749 - 965)</td>\n      <td>14.56 (13.11\u201316.17)</td>\n      <td>0.0141</td>\n    </tr>\n    <tr>\n      <td>50</td>\n      <td>75%</td>\n      <td>672.86 (570 - 767)</td>\n      <td>11.98 (10.37\u201313.41)</td>\n      <td>0.0153</td>\n    </tr>\n    <tr>\n      <td>38</td>\n      <td>75%</td>\n      <td>511.97 (420 - 606)</td>\n      <td>9.44 (7.91\u201310.96)</td>\n      <td>0.0164</td>\n    </tr>\n  </tbody>\n</table>\n\nOur simulations revealed a nearly linear relationship between the activated number of synapses and the measured amplitude in the soma regardless of synaptic strength (Figure 5I). Interestingly, we observed some differences in the slope of the responses between the different tuning modalities (Figure 5J, K and L), indicating that these modulations are not completely equivalent.\n\n## Discussion\n\nFor our understanding of the computational principles underlying learning and memory, it is essential to determine the intrinsic contributions of neuronal circuit architecture. Associative olfactory memory formation in Drosophila provides an excellent model system to investigate such circuit motifs, as a large number of different odors can be associated with either approach or rejection behavior through the formation of both short- and long-term memory within the MB circuitry (Aso and Rubin, 2016). In contrast to most axon guidance processes in Drosophila that are essentially identical in all wild-type individuals, processing of odor information in the MB largely, but not exclusively, depends on the stochastic connectivity of projection neurons to KCs that relay odor information from the olfactory glomeruli to the MBONs (Caron et al., 2013; Gruntman and Turner, 2013; Litwin-Kumar et al., 2017; Warth P\u00e9rez Arias et al., 2020; Zheng et al., 2022). However, the role of MBONs within the circuit is largely fixed between animals and many MBONs can be classified as either approach or avoidance neurons in specific behavioral paradigms (Aso et al., 2014a; Aso et al., 2014b; Litwin-Kumar et al., 2017; Li et al., 2020; Takemura et al., 2017; Scheffer et al., 2020). Furthermore, individual KCs are not biased in their MBON connectivity but innervate both kinds of output modules, for both approach and avoidance. Learning and memory, the modulation of odor response behavior through pairing of an individual odor with either positive or negative valence, is incorporated via the local activity of valence-encoding DANs that can either depress or potentiate KC>MBON synaptic connections (Aso and Rubin, 2016; Berry et al., 2018; Handler et al., 2019; Yamagata et al., 2015; Cohn et al., 2015; Burke et al., 2012; Hige et al., 2015a; Owald et al., 2015a; Jacob and Waddell, 2020; Pai et al., 2013; Pla\u00e7ais et al., 2013; S\u00e9journ\u00e9 et al., 2011; Bouzaiane et al., 2015). As KC odor specificity and connectivity differ significantly between flies with respect to the number and position of KC>MBON synapses, this circuit module must be based on architectural features supporting robust formation of multiple memories regardless of specific individual KC connectivity.\n\nPrior computational work addressing properties of central nervous system neurons in Drosophila relied on synthetic (randomly generated) data (Gouwens and Wilson, 2009) or partial neuronal reconstructions (Scheffer et al., 2020; Tobin et al., 2017). We go beyond these previous studies by combining precise structural data from the electron-microscopy based synaptic connectome (Takemura et al., 2017) with functional (electrophysiological) data. The structural data consists of the neuroanatomical structure of MBON-\u03b13, including the 12,770 synaptic inputs of all its 948 innervating KCs. While this EM reconstruction may contain some mistakes in synaptic connectivity as e.g. up to 10% of synaptic sites remained unassigned within the dataset (Takemura et al., 2017), it currently represents the best possible template for an in silico reconstruction. The neuron\u2019s functional properties were determined from ex vivo patch clamp recordings. Near-perfect agreement between experimentally observed and simulated voltage traces recorded in the soma shows that linear cable theory is an excellent model for information integration in this system.\n\nTogether, we obtain a realistic in silico model of a central computational module of memory-modulated animal behavior, that is a mushroom body output neuron.\n\nOur data show that the dendritic tree of the MBON is electrotonically compact, despite the complex architecture that includes a high degree of branching. This data is in agreement with a prior electrophysiological characterization of an MBON in locust (Cassenaer and Laurent, 2007), and a similar feature has been reported for neurons in the stomatogastric ganglion of crayfish. Here the electrotonic compactness supports linear integration of synaptic inputs across extensive arborizations and likely serves to functionally compensate for inter-individual variability (Otopalik et al., 2017; Otopalik et al., 2019). The location of an individual synaptic input within the dendritic tree has therefore only a minor effect on the amplitude of the neuron\u2019s output, despite large variations of local dendritic potentials. This effect was particularly striking when we restricted the analysis to a population of KCs with identical numbers of synapses that all elicited highly stereotypical responses. The compactification of the neuron is likely related to the architectural structure of its dendritic tree. Together with the relatively small size of many central neurons in Drosophila, this indicates that in contrast to large vertebrate neurons, local active amplification or other compensatory mechanisms (Rumsey and Abbott, 2006; Sterratt et al., 2012; Froemke et al., 2005; Gidon and Segev, 2009; Schiller et al., 2000; Polsky et al., 2004) may not be necessary to support input normalization in the dendritic tree. In contrast, for axons it has been recently reported that voltage-gated Na+ channels are localized in putative spike initiation zones in a subset of central neurons of Drosophila (Ravenscroft et al., 2020). In case in vivo physiological data quantitatively describing local active currents become available, they can be incorporated into our model to further increase the agreement between model and biological system.\n\nEncoding of odor information and incorporation of memory traces is not performed by individual KCs but by ensembles of KCs and MBONs. Calcium imaging in vivo demonstrated that individual odors evoke activity reliably in approximately 3\u20139% of KCs (Campbell et al., 2013; Honegger et al., 2011). Our simulations of 1000 independent trials with random sets of 50 KCs, each representing one distinct odor that activates approximately 5% of the KCs innervating the target MBON, demonstrate that such activation patterns robustly elicit MBON activity in agreement with in vivo observations of odor-induced activity that elicited robust increases in action potential frequency in MBONs (Hige et al., 2015a; Warth P\u00e9rez Arias et al., 2020). The low variability of depolarizations observed in these simulations indicates that information coding by such activation patterns is highly robust. As a consequence, labeled line representations of odor identity are likely not necessary at the level of KCs since relaying information via any set of \u224850 KCs is of approximately equal efficiency. Such a model is supported by a recent computational study demonstrating that variability in parameters controlling neuronal excitability of individual KCs negatively affects associative memory performance. The authors provide evidence that compensatory variation mechanisms exist that ensure similar activity levels between all odor-encoding KC sets to maintain efficient memory performance (Abdelrahman et al., 2021).\n\nOptical recordings of in vivo activity of MBONs revealed selective reductions in MBON activity in response to aversive odor training (Jacob and Waddell, 2020; Pai et al., 2013; Owald and Waddell, 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011) or to optogenetic activation of selective DANs (Hige et al., 2015a). More generally, both depression and potentiation of MBON activity have been previously observed in different MBON modules in vivo (Owald and Waddell, 2015; Hige et al., 2015a; Perisse et al., 2016; Pla\u00e7ais et al., 2013; Pai et al., 2013; S\u00e9journ\u00e9 et al., 2011; Jacob and Waddell, 2020). In addition, recent studies have observed changes in KC stimulus representations after conditioning (Delestro et al., 2020; Shyu et al., 2019) that may be due to learning-dependent modulations of synaptic PN input to KCs (Baltruschat et al., 2021). Our computational model allowed us to implement and compare these two mechanisms changing MBON output: One is a change in the strength of the KC>MBON synapses (over a range of \u00b125%); the other is a change in the number of activated KCs (over the same range). Interestingly, we found almost linear relationships between the number of active KCs and the resulting depolarizations, and the same between the strength of synapses and MBON depolarization. Decreasing or increasing either of these variables by 25% significantly altered the level of MBON activation with only minor differences in the extent to which these modifications contributed to MBON depolarization. The two different mechanisms of altering MBON output are potentially utilized for the establishment of different types of memory with fast and local alterations of synaptic transmission likely essential for short-term memory while structural changes may ensure maintenance of memory over long periods of time. In addition, differential modes of plasticity may be required at potentially more static parts of the MB circuitry like the food-related part that is not entirely based on stochastic connectivity (Zheng et al., 2022).\n\nOur simulation data thus shows that the KC>MBON architecture represents a biophysical module that is well-suited to simultaneously process changes based on either synaptic and/or network modulation. Together with the electrotonic nature of the MBONs, the interplay between KCs and MBONs thus ensures reliable information processing and memory storage despite the stochastic connectivity of the memory circuitry. While our study focuses on the detailed activity patterns within a single neuron, the availability of large parts of the fly connectome at the synaptic level, in combination with realistic models for synaptic dynamics, should make it possible to extend this work to circuit models to gain a network understanding of the computational basis of decision making.\n\n## Materials and methods\n\n### Fly stocks\n\nFlies were reared at 25\u00b0C and 65% humidity on standard fly food. The following stocks were used in this study: 10XUAS-IVS-mCD8::GFP (Pfeiffer et al., 2010) (BDSC 32186), MB082C-Gal4 (Aso et al., 2014b) (BDSC 68286), 2xUAS-EGFP (BDSC 23867) (all from the Bloomington Drosophila Stock Center, Indiana).\n\n### Immunohistochemistry\n\nMale flies expressing GFP in MBON-\u03b13 were fixed for 3.5 hr at 4\u00b0C in 4% PFA containing PBST (0.2% Triton-X100). Flies were then washed for at least 3x30min at RT in PBST before dissection. Dissected brains were then labelled with primary antibodies rabbit anti-GFP (A6455, Life technologies, Carlsbad, USA 1:2000) and mouse anti-Brp (nc82, Developmental Studies Hybridoma Bank, Iowa, USA, 1:200) for two nights at 4\u00b0C. After incubation, brains were washed at least 6x30 min in PBST. Secondary antibodies (Alexa488 (goat\u03b1rabbit) and Alexa568 (goat\u03b1mouse) coupled antibodies, Life technologies, Carlsbad, USA, 1:1000) were applied for two nights at 4\u00b0C. After a repeated washing period, brains were submerged in Vectashield (Vector Laboratories, Burlingame, USA), mounted onto microscope slides, and stored at 4\u00b0C.\n\nImages were acquired using a LSM 710 confocal scanning microscope with a 25 x Plan-NEOFLUAR, NA 0.8 Korr DIC, oil objective (Carl Zeiss GmbH, Jena, Germany) and a Leica STELLARIS 8 confocal microscope with a 20 x HC PL APO NA 0.75 multi-immersion objective (Leica Microsystems, Wetzlar, Germany). Raw images were projected with Fiji (Schindelin et al., 2012) and cropped in Photoshop (Adobe, San Jos\u00e9, USA). Uniform adjustments of brightness and contrast were performed.\n\n### Electrophysiology\n\nAll patch clamp recordings were performed at room temperature similar to prior descriptions (Hige et al., 2015a; Hige et al., 2015b). Flies were flipped 1d after hatching to obtain 2- to 3-day-old flies. Due to the ventral location of the MBON-\u03b13 somata within the brain, we performed the recordings ex vivo. For preparation, flies expressing GFP in MBON-\u03b13 were briefly anesthetized on ice before removing the entire brain out of the head capsule. The preparation was performed in oxygenated (95% and 5%) high glucose ($260\u2062m\u2062M$) extracellular saline. Analogous to a prior study, the brains were incubated for $30\u2062s$ in $0.5\u2062m\u2062g/m\u2062l$ protease (from Streptomyces griseus, CAS# 90036-06-0, Sigma-Aldrich, St. Louis, USA) containing extracellular saline (Wilson et al., 2004). The brain was then transferred to standard extracellular saline (Wilson et al., 2004; in $m\u2062M$: 103 $N\u2062a\u2062C\u2062l$, 3 $K\u2062C\u2062l$, 5 TES, 10 trehalose, 10 glucose, 7 sucrose, 26 $N\u2062a\u2062H\u2062C\u2062O_{3}$, 1 $N\u2062a\u2062H_{2}\u2062P\u2062O_{4}$, 1.5 $C\u2062a\u2062C\u2062l_{2}$, 4 $M\u2062g\u2062C\u2062l_{2}$, pH 7.3, $280-290\u2062m\u2062O\u2062s\u2062m\u2062o\u2062l$/$k\u2062g$ adjusted with sucrose). For physiological recordings, the brain was transferred to a glass bottom chamber with continuously perfused ($2\u2062m\u2062l$/$m\u2062i\u2062n$) oxygenated standard extracellular saline and held in place by a custom made platinum frame.\n\nWe used glass capillaries (GB150 (F-)\u201310 P, Science Products, Hofheim, Germany) and a horizontal puller (Flaming Brown Micropipette Puller P-1000, Sutter instruments, Novato, USA) to obtain pipettes with a resistance of $7-10\u2062M\u2062\u03a9$. The puller was equipped with a 2.5 mm box filament and patch pipettes were pulled with a program consisting of 2 lines (Line 1/Line 2: Heat 472/463 with a ramp value of 468, Pull 0/41, Velocity 52/70, Delay 1/10, Pressure 350). For recordings, patch pipettes were filled with internal solution (Mauss et al., 2014) (in $m\u2062M$: 140 K-aspartate, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP, 1 EGTA, 1 $K\u2062C\u2062l$, pH 7.29 adjusted with $K\u2062O\u2062H$, $265\u2062m\u2062O\u2062s\u2062m\u2062o\u2062l/k\u2062g$). Whole-cell recordings were made using the EPC10 amplifier (HEKA, Reutlingen, Germany) and the PatchMaster software (HEKA, Reutlingen, Germany). Signals were low-pass filtered at $3\u2062k\u2062H\u2062z$, and digitized at $10\u2062k\u2062H\u2062z$ via a digital-to-analog converter. The liquid junction potential of $13\u2062m\u2062V$ was corrected online. Patch pipettes were guided under visual control with an upright microscope (BX51WI; Olympus, Tokio, Japan) equipped with a 60x water immersion objective (LUMPlanFl/IR; Olympus, Tokio, Japan) and a CCD camera (Orca 05 G, Hamamatsu, Japan). GFP signal of target cells was visualized through fluorescence excitation (100 W fluorescence lamp, Carl Zeiss GmbH, Jena, Germany), and a dual-band emission filter set (512/630 HC Dualband Filter GFP/DsRed, AHF Analysentechnik, Germany). We used GFP expression in soma and neurite to identify MBON-\u03b13 neurons. During recordings, the fluorescence excitation was shut off to minimize phototoxic effects. The complete setup was mounted on an air-damped table while being shielded by a Faraday cage. Series resistance was maintained below $90\u2062M\u2062\u03a9$ and compensated for up to 35% through the amplifier\u2019s compensation circuitry. In current-clamp mode, cells were held at a baseline of $-60\u2062m\u2062V$ to measure the relevant parameters for the model. Signals were recorded with a sample rate of $20\u2062k\u2062H\u2062z$ or $50\u2062k\u2062H\u2062z$ and low-pass filtered at $5\u2062k\u2062H\u2062z$.\n\nTo determine passive electrical membrane properties and qualitative patch characteristics, a series of protocols were performed:\n\n#### Protocol 1\n\nIn voltage-clamp mode, a voltage-step ($100\u2062m\u2062s$, $5\u2062m\u2062V$) is applied without compensating the series resistance. The corresponding current trace was then used to determine $R_{s\u2062e\u2062r\u2062i\u2062e\u2062s}$ and $R_{i\u2062n\u2062p\u2062u\u2062t}$ using Ohms law and $R_{m}$ was determined as ($R_{s\u2062e\u2062r\u2062i\u2062e\u2062s}-R_{i\u2062n\u2062p\u2062u\u2062t}$) (Numberger and Draguhn, 1996) in Igor Pro (WaveMetrics, Portland, USA).\n\n#### Protocol 2\n\nIn current-clamp mode, a step-protocol was performed and recorded at $50\u2062k\u2062H\u2062z$. Each sweep starts with $0\u2062p\u2062A$ for $10\u2062m\u2062s$, which is followed by a current injection ($-26\u2062p\u2062A$ to $32\u2062p\u2062A$, with $2\u2062p\u2062A$ increments) and a step duration of $400\u2062m\u2062s$. The resulting changes in membrane potential and induced action potentials were then analyzed and plotted with Matlab (MathWorks, Natick, USA). The maximum depolarization was calculated as a mean of the last 70 sample points of the stimulation sweep in each trace. The resting membrane potential was calculated as the mean of the first 500 sample points before the stimulation in each trace. The absolute action potential was measured as the maximum of each trace. The relative action potential amplitude resulted from subtracting the baseline from the absolute value. The baseline resulted from the mean of a 400 sample points window, starting 700 sample points upstream of the maxima in each trace. The resulting trace of the $-10\u2062p\u2062A$ injection was used to calculate the membrane time constant $\\tau_{m}$ of each cell.\n\n#### Protocol 3\n\nIn current-clamp mode, no current was injected throughout a $60\u2062s$ recording at $50\u2062k\u2062H\u2062z$. The resting membrane potential was determined as the mean of the baseline in the recording with Igor Pro and spontaneous activity was plotted with Matlab.\n\n#### Protocol 4\n\nIn current-clamp mode, a short current pulse ($-10\u2062p\u2062A$, $200\u2062m\u2062s$) was injected and recorded at $20\u2062k\u2062H\u2062z$. We performed 35 iterations per cell. The resulting data of three example cells was used for fitting the membrane kinetics of the model as described previously (Gouwens and Wilson, 2009). Averaging, normalisation (($V_{m}$-$V_{m\u20620}$)/$V_{m\u20620}$) and plotting was performed with Matlab. This data was used to perform the model fitting. The baseline ($V_{m\u20620}$) resulted from the average of the sample points before stimulation.\n\nCells displaying a resting membrane potential higher than $-45\u2062m\u2062V$ and/or where the series resistance was too high (> $90\u2062M\u2062\u03a9$) were excluded from the analysis. Only cells that were firing action potentials were included in the analysis. A list of the five included cells using mCD-GFP as a marker and of the four cells using cytoplasmic GFP as a marker and the corresponding calculated values are provided in Table 1 and Table 1\u2014source data 1.\n\n### Computational model\n\nMorphology data for the Drosophila MBON-\u03b13-A was originally characterized using scanning electron microscopy (Takemura et al., 2017) and for the present study obtained from the \u2018mushroombody\u2019 dataset hosted in the database neuPrint (https://neuprint-examples.janelia.org/; cell ID 54977). These data describe the structure of its dendritic arborization  (Figure 2B, and Figure 2\u2014figure supplement 1), with coordinates specified at 8 nm pixel resolution and converted to $\\mu\u2062m$ for model implementation. The reconstruction is limited to the portion of the neuron in the mushroom body, not including its soma and axon. The geometry of the axon was determined from the corresponding MBON14(\u03b13)R (Figure 2A), obtained from neuPrint\u2019s \u2018hemibrain:v1.1\u2019 dataset (https://neuprint.janelia.org/; cell ID 300972942). The axon and synaptic terminal of this neuron were approximated as five separate sections, distinguished by the major branch points identified in the electron microscopic reconstruction (Figure 2\u2014figure supplement 1). Each section was characterized by its total length and average diameter and divided into segments to maintain the average section length of that region in the original reconstruction. They were then appended to the MBON-\u03b13-A proximal neurite as individual linear segments (Figure 2\u2014figure supplement 1). The dimensions of the soma were characterized by confocal microscopy of MBON-\u03b13-A (Figure 1A). Synaptic locations of the KC innervation of MBON-\u03b13-A were also obtained from neuPrint\u2019s \u2018mushroombody\u2019 dataset. MBON-\u03b13-A is innervated by 948 distinct KCs, forming a total of 12,770 synapses with an average of 13.47 synapses per KC. This data set potentially misses up to 10% of synaptic connections and includes errors associated with electron microscopy reconstructions (Takemura et al., 2017).\n\nElectrophysiological properties of the model neuron (Table 2) were determined by fitting the model response to the recorded data, an approach consistent with prior work modeling Drosophila central neurons (Gouwens and Wilson, 2009). Somatic voltage excursions in response to $200\u2062m\u2062s$ current injections of $-10\u2062p\u2062A$ were recorded ex vivo (Figure 1G) and compared with the simulated membrane potential (Figure 2D). This current injection was replicated in silico and the membrane potential change at the soma was fit to our recorded data by varying the cell\u2019s cytoplasm resistivity, specific membrane capacitance, and passive membrane conductance. The fitting was performed using NEURON\u2019s principle axis optimization algorithm, where parameters were tuned until the computed voltage excursion at the soma matched our electrophysiological recordings. The model optimization searched parameter space to minimize an error function defined as the squared differences between the averaged experimental responses to current pulses (Figure 1G) and the computed model responses (Figure 2D\u2013F). The fitting was then verified by normalizing both the model and experimental voltage excursions. The model was first allowed to equilibrate for $30\u2062m\u2062s$ simulated time, after which the $200\u2062m\u2062s$ current pulse was initiated. The region of data used for the fitting ranged from $32.025\u2062m\u2062s$ to $228.03\u2062m\u2062s$, excluding approximately the first and last $2\u2062m\u2062s$ of current injection. The domain of the parameter space was restricted to physiologically plausible values: $0.5\u2062\\mu\u2062F/c\u2062m^{2}$ to $1.5\u2062\\mu\u2062F/c\u2062m^{2}$ for specific membrane capacitance, $1\u2062E-7\u2062S/c\u2062m^{2}$ to $1\u2062E-4\u2062S/c\u2062m^{2}$ for passive membrane conductance, and $30\u2062\u03a9\u2062c\u2062m$ to $400\u2062\u03a9\u2062c\u2062m$ for cytoplasm resistivity (Table 2). The final values for each parameter are well within these margins. Resting membrane potential and the leak current reversal potential were set at $-55.64\u2062m\u2062V$ based on the initial conditions of the recorded data to which the model was fit.\n\nCholinergic KC to MBON synapses were modeled as localized conductance changes described by alpha functions (Table 2). KC innervation of MBON-\u03b13-A was determined to be cholinergic (Barnstedt et al., 2016). Currents recorded in Drosophila KCs were demonstrated to have a reversal potential of $8.9\u2062m\u2062V$ and a rise time to a maximal conductance of $0.44\u2062m\u2062s$ (Su and O\u2019Dowd, 2003). The maximal conductance for the synapses was set at $1.5627*10^{-5}\u2062\\mu\u2062S$, the value determined to achieve the target MBON depolarization from monosynaptic KC innervation (Hige et al., 2015b).\n\nAll simulations were performed using the NEURON 7.7.2 simulation environment (Hines and Carnevale, 1997) running through a Python 3.8.5 interface in Ubuntu 20.04.1. The morphology data divided the MBON-\u03b13-A dendritic tree into 4336 sections. We added 6 additional sections describing the axon, synaptic terminals, and soma to a total of 4342 sections with an average of $1.24\u2062\\mu\u2062m$ in length and $0.29\u2062\\mu\u2062m$ in diameter (Table 4). Passive leak channels were inserted along the membrane of the dendrite sections as well as throughout the axon and soma. Each dendritic section was automatically assigned an index number by NEURON and modeled as a piece of cylindrical cable, with connectivity specified by the neuron\u2019s morphology. The coordinate location of each KC synapse was mapped to the nearest section of the MBON dendrite, and the conductance-based synapse model was implemented in the center of that section. Simulations were performed in which each synapse-containing section was individually activated, followed by additional simulations activating groups of synapses corresponding to single or multiple active KCs. A list of all performed simulations related to Figure 5 is provided in Table 3. Membrane potential data was analyzed and plotted with MATLAB R2020b (MathWorks, Natick, USA) and Prism 9 (GraphPad, San Diego, USA).\n\n**Table 4.**\n Morphological parameters of the model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Number of sections</td>\n      <td>4342</td>\n    </tr>\n    <tr>\n      <td>Average section length</td>\n      <td>1.24\u2062\u03bc\u2062m</td>\n    </tr>\n    <tr>\n      <td>Total length</td>\n      <td>5377.39\u2062\u03bc\u2062m</td>\n    </tr>\n    <tr>\n      <td>Average diameter</td>\n      <td>0.29\u2062\u03bc\u2062m</td>\n    </tr>\n    <tr>\n      <td>Average segment surface area</td>\n      <td>1.26\u2062\u03bc\u2062m2</td>\n    </tr>\n    <tr>\n      <td>Total surface area</td>\n      <td>6168.32\u2062\u03bc\u2062m2</td>\n    </tr>\n    <tr>\n      <td>Soma diameter</td>\n      <td>6.45\u2062\u03bc\u2062m</td>\n    </tr>\n  </tbody>\n</table>\n\nAll code and data files necessary to replicate the simulations are available at: https://doi.org/10.7281/T1/HRK27V.\n\n### Statistical analysis\n\nStatistical analysis and visualization of data was performed in Prism 9 (GraphPad, San Diego, USA) and Matlab (MathWorks, Natick, USA). Before a statistical comparison was performed, individual groups were tested in Prism for normality and lognormality with an Anderson-Darling test. Statistical significance was tested with an unpaired parametric t-test or in case of multiple comparisons, with an ordinary corrected parametric one-way ANOVA test. Further information is provided in figure legends.\n",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "71854247-bda6-4740-8163-decc2f619cb4",
+      "submission_id": "ae7ebfd8-fa98-4400-a732-4e8f2d74be82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77578.sa0](https://doi.org/10.7554/eLife.77578.sa0)\n\nIn light of the ongoing emergence of volume electron microscopy connectomics, detailed morphologies at the nanometre scale for many neurons are now available, ready for functional and computational analysis. Building on these foundational resources, this work delivers compelling evidence that synaptic inputs onto the dendritic arborisations of readout neurons (MBONs) of the learning and memory system of the adult Drosophila melanogaster contribute with equal weight to the depolarization of the neuron, independently of their location on the arbor, a phenomenon known as synaptic democracy. These important findings establish the validity of computational models based on passive dendritic propagation for simulating fly brain circuits and highlight the differences between the much larger mammalian neurons that present active propagation strategies as part of their approach to synaptic democracy.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Albert Cardona, https://ror.org/013meh722 University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77578.sa1](https://doi.org/10.7554/eLife.77578.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"The cellular architecture of memory modules in Drosophila supports stochastic input integration\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and K VijayRaghavan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Albert Cardona (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nPlease follow carefully the many detailed comments by the reviewers. To emphasize comments with regard to the caveats of using partially EM-reconstructed neuronal morphologies, and in the statements regarding electrotonic compactness.\n\nReviewer #1 (Recommendations for the authors):\n\nHafez and collaborators describe the construction and analysis of a computational model of a mushroom body neuron. The anatomy derives from a combination of electron microscopy reconstructions of MBON-\u03b13 and also from light microscopy. The physiological parameters derive from publications that measured them, in addition to the author's own electrophysiological recordings with patch-clamp.\n\nThere are two main findings. First, the dendritic arbor of MBON-\u03b13 is electrotonically compact, meaning, individual connections from Kenyon cells will similarly elicit action potentials independently as to where, spatially, the synapses lay on the arbor. Second, in simulation, exploration of changes in the strength of Kenyon cell inputs illustrate two possible ways to alter the strength of the KC-MBON physiological connection, showing that either could account for the observed synaptic depression in the establishment of associative memories. The properties of each approach differ.\n\nOverall, the manuscript clearly describes the journey from connectomics and electrophysiology to computational modeling and exploration of the physiological properties of a circuit in simulation.\n\nThe discussion ought to be expanded to include the implications of two possible approaches to physiologically altering the KC-MBON synapse and the consequence of their combination in expanding the space of alterations induced by associative memory paradigms.\n\nIn general, the results are clear, but some details remain underdetermined and I have listed them below in the detailed comments. The introduction and discussion present some inaccuracies that can be swiftly addressed by the authors\n\nDetailed comments:\n\nLine 45: Language: \"potential rewarding\": potentially.\n\nLine 49: Language: \"cellular and circuit architecture contributes\": architectures contribute.\n\nLine 72: instead of 5%, the number of KCs active at any one time seems to be 6% as per Turner et al. 2008 and Campbell et al. 2013. What is the robustness of the analysis to this small change? Did you explore a range of possible single-digit percent KC activations?\n\nLine 99: Aso & Rubin 2016 belongs with citations in line 95.\n\nLine 122: \"Drosophila\" needs italics, throughout the manuscript.\n\nThe authors devise a computational model of an MBON using a neuronal arbor reconstructed from volume electron microscopy by Takemura et al. 2017. That paper details that only 93% of all synapses were connected to an arbor, and only 86% of the synapses had known pre- and postsynaptic arbors. For the MBON that was used for modeling, what was the fraction of terminal ends labeled as uncertain, and where these clustered or scattered across the arbor? Furthermore, the volume imaged with FIBSEM did not fully enclose the vertical lobe of the MB. Any estimate of what fraction of the chosen MBON's arbor is contained within the imaged volume? In other words, what analysis has been done here to ensure that the modeled arbor is representative of an MBON arbor in vivo, and what mitigating measures were taken to account for the potentially missing 14% or more of the arbor synapses and terminal dendrites?\n\nThe authors report using the 10XUAS-IVS-mCD8::GFP to label the MBON, so that they can then record electrophysiologically with patch-clamp. What is the effect of inserting so many mCD8 proteins (a large transmembrane protein) into the neuron's membrane on the voltage potential and action potential formation and transport? The 10XUAS is particularly strong. How does the morphology of the imaged neuron differ from that of the EM-reconstructed neuron, regarding calibers and amount of cable? For this purpose, a cytosolic GFP targeting the soma or nucleus and poorly diffusing into the arbor would have been far preferable, as the effect of inserting transmembrane proteins in neurons' membranes on resting potentials is well reported.\n\nLine 155: average resting potential for the MBON is reported at -56.7 mV +/- 2.0 mV. In Hige et al. 2015a, cells were held at -70 or -60 mV. Nowhere does Hige et al. 2015a report on the resting potential.\n\nLine 174: amplitude of action potentials was rather small, but in Hige et al. 2015a action potentials typically exceeded 200 pA. Is this what the authors mean by small? Just how small were the recorded action potentials?\n\nLine 176: by small amplitudes and the explanation on the long neurite connecting the dendritic arbor with the soma, you mean that the signal is attenuated over long distances?\n\nLine 179: how was the membrane capacitance calculated?\n\nTable 1: 5 neurons were used. How do you know they are all MBON-\u03b13? Has it been confirmed that the GAL4 line doesn't have stochastic expression among similar yet different sibling neurons of the same lineage? How many other MBONs innervate the tip of the \u03b1 lobe and do any of them share neuroblast lineage with MBON-\u03b13? The large differences in measured values listed in Table 1 could be explained by having measured similar yet different neurons. Did you run a battery of tests before and after the measurements to ensure the recorded neurons remained in good health throughout the measurement session? Such tests often consist in a ramp of current injections and the recording of the neuron's responses, which are then compared between before and after the experimental measurements of membrane properties (like the current step protocol of Figure 1F).\n\nLine 184: why only 3 cells? In Drosophila, recording from e.g. 10 cells, all homologous cells across 10 individuals, gives e.g., 8 responding with excitation to a sensory stimuli with some variation and 2 responding with inhibition. There is a lot of variability in the responses. Recording from only 3 cells seems risky, statistically speaking. What justifies this low number?\n\nLine 186: \"To to further\".\n\nLine 199: when you say that the measurements are in \"good agreement with prior recordings\" of other neurons in Drosophila, what do you mean exactly? How similar, how far off, by what parameters?\n\nLine 203: might as well mention that there were 948 reconstructed KCs synapting onto MBON-\u03b13, so 5% is 50. Spare the reader remembering where the 50 was picked from. (If you correct this to 6%, would be 57 KCs). And you seem to not keep in mind that the KCs responding to a specific odor may be correlated in their synaptic connectivity strength onto MBON-\u03b13. Data to this end may be included in Li et al. 2020 eLife where the whole mushroom body is reconstructed, including the olfactory projection neurons, so such correlations if any may be evident in that data set.\n\nLine 210: a complete reconstruction of MBON-\u03b13 now exists, from either the FAFB volume or the Hemibrain volume. In the methods you mention you used the Hemibrain data set for the axon.\n\nLine 209: the 12,770 synaptic connections aren't \"all\", these are the ones reported from the anatomical reconstruction from volume electron microscopy. According to the source papers (Takemura et al. 2017) about 10% of all synapses are missing. An analysis of how these missing synapses impacts the structure of the arbor is absent from the paper.\n\nIn addition, sample preparation for electron microscopy with chemical fixation alters the fine anatomical details, including the length of terminal dendrites and the calibers of neurites throughout. See e.g., Korogod et al. 2015 eLife \"Ultrastructural analysis of adult mouse neocortex comparing aldehyde perfusion with cryo fixation\" and the follow up paper Tamada et al. 2020 eLife \"Ultrastructural comparison of dendritic spine morphology preserved with cryo and chemical fixation\". What measures were taken to correct or mitigate these artifactual differences with in vivo neurons?\n\nLater, Figure 2F strongly supports the appropriateness of the model, yet, the above points merit discussion and even exploration: how much of the dendritic arbor can you miss and still get the same result? What does the response to current injection depend on, cable, number of synapses, synapse spatial location, cable calibers, tapering of cable? What cable truncations are tolerable? This is very important information towards future computational studies based on neuronal morphologies reconstructed from volume electron microscopy.\n\nFigure 2 legend: what is the evidence that the \"proximal neurite\" in green in Figure 2B is the site of axon potential generation? Gouwens and Wilson 2009 pointed at a region anywhere between the root of the dendritic tree and half-way through the axon of the uniglomerular olfactory projection neuron they modeled.\n\nDoes the site of axon potential generation emerge from your model, or did you specify it in the model?\n\nWhy is the two-tailed non-parametric Spearman correlation the correct statistic to compare the modeled and the experimentally measured membrane potential in Figure 2F?\n\nFigure 2 legend reads \"see appendix\" but there isn't any appendix to the manuscript?\n\nLine 249: \"the average number of synaptic contacts from a KC to this MBON is 13.47\". This statement ought to be qualified: for the single MBON-\u03b13 measured in Takemura et al. 2017, and with the caveat of ~10% of synapses potentially missing. You could just as easily apply a correction factor and say the average number is about 14.7 + 1.47 = 16.2. Would this change the outcome of your model?\n\nPlease don't use \"PN\" as an acronym for proximal neurite. First, eLife doesn't restrict the length of your test. Second, PN is an established acronym, universally across all neuroscience literature, for projection neuron. Plus, the \"proximal neurite\" (as per figure 2B) might as well be called the putative AIS (axon initial segment; pAIS for \"putative\") where the integration of inputs across the entire dendritic tree take place and the axon potential is initiated.\n\nFigure 3H: in the measurement of \"local dendritic section volume\", did you correct for volume artifacts induced by using (in purpose!) an incorrect osmolarity of the buffers when fixing the tissue in the sample preparation protocol for electron microscopy? See Korogod et al. 2015 eLife and Tamada et al. 2020 eLife.\n\nLine 291: \"this value is in good agreement with in vivo data for MBONs\". Please could you specify what this agreement is, how close, some details.\n\nLine 293: in line with analyzing all KCs with exactly 13 synaptic inputs onto MBON-\u03b13, what's the result of analyzing the voltage excursion from drawing random subsets of 13 synapses? (or 16 as per the correction, see above). Are the natural groups of 13 synapses different in their effect on the neuron's voltage than artificial groupings?\n\nLine 299: inaccurate statement: \"Given that \u2248 5% of the 984 KCs innervating MBON-\u03b13 are typically activated by an odor\". Instead, what is known from the literature is that, given the presence of the GABAergic neuron APL in the mushroom body which acts as the inhibitory unit of a winner-take-all configuration, only 6% (not 5%) of KCs simultaneously respond to any one odor. Plus when the APL neuron is inhibited, a huge double-digit percent of KCs are active in response to an odor.\n\nLine 311: there is now far better evidence of stochastic odor encoding by KCs than Caron et al. 2013. See Zheng e t al. 2020 bioRxiv \"Structured sampling of olfactory input by the fly mushroom body\", and Li et al. 2020 eLife, and also, for larvae, Eichler et al. 2017 Nature.\n\nLine 319: see also Baltruschat L, Prisco L, Ranft P, Lauritzen JS, Fiala A, Bock DD, Tavosanis G. Circuit reorganization in the Drosophila mushroom body calyx accompanies memory consolidation. Cell reports. 2021 Mar 16;34(11):108871.\n\nLine 337: the differences in the somatic amplitudes may be significant statistically, but are they meaningful? In other words, the effect size looks like near zero. The real, and important difference, is in Line 345 where it is stated that \"we observed some differences in the slope of the responses between the different tuning modalities (Figure 5J,K,L).\"\n\nLine 350: Scheffer et al. 2020 is not an appropriate citation for the statement \"Te ability of an animal to adapt its behavior to a large spectrum of sensory information requires specialized neuronal circuit motifs\". Rather, a textbook such as Kandel et al. Principles of Neural Science, or no reference at all, would be appropriate. You could also delete the sentence without loss.\n\nLine 353: Drosophila must go in italics, it's a species name. Multiple occurrences throughout.\n\nLine 356: through both short-term and long-term memory. A good example is Aso & Rubin 2016 eLife.\n\nLine 359: note the olfactory system of the fly has a sort of \"fovea\", Zheng et al. 2020 bioRxiv.\n\nLine 362: this sentence needs work, I am not sure what it means: \"Individual flies display idiosyncratic, apparently random connectivity patterns that transmit information of specific odors to the output circuit of the MB.\"\n\nLine 366: MBONs can only each be classified as approach or avoidance within specific behavioral paradigms. In different contexts, including different physiological states (e.g., hunger, satiation, others), the classification changes.\n\nLine 381: prior work includes Tobin et al. 2017 eLife, where EM-reconstructed dendrites of olfactory projection neurons were modeled to understand the impact of dendritic arbor size on neuronal function.\n\nLine 386: again, these numbers aren't precise. There's about 10% of missing synapses to consider, and potentially additional Kenyon cells. And some of the KCs, particularly those with low number of synaptic connections to MBON-\u03b13, may have been connected in error.\n\nLine 397: Strongest finding of this work: \"The location of an individual synaptic input within the dendritic tree has therefore only a minor effect on the amplitude of the neuron's output, despite large variations of local dendritic potential.\" Would be best to surface it more.\n\nLine 402: a comparison would be appropriate with neurons from the crayfish stomatogastric ganglion (STG) as described by Eve Marder lab's, with published findings such as neurons being electrotonically compact despite their large size in mature adult animals. For example, Otopalik et al. 2017 eLife \"When complex neuronal structures may not matter\", where the authors \"quantify animal-to-animal variability in cable lengths (CV = 0.4) and branching patterns in the Gastric Mill (GM) neuron\". And also Otopalik et al. 2019 eLife \"Neuronal morphologies built for reliable physiology in a rhythmic motor circuit\".\n\nLine 406: you forgot to cite Jackie Schiller's work on cortical pyramidal cells and their tuft dendrites, some of which predates all the cited work in this statement.\n\nLine 412: your model, as per Figure 2F, rather very closely matches the observed electrophysiological responses of the neuron under study. In what further ways could you model more closely match experimental observations? This would be very instructive to the reader.\n\nLine 415: by ensembles of both KCS and MBONs, not just KCs, if you are including the memory part and not only the input representation part.\n\nLine 416: for most of the paper, you quoted these papers to justify the 5% of KCs being simultaneously active in response to an odor. Now the range is shown as 3 to 9%. This discrepancy ought to be reconciled.\n\nLine 422: again, nowhere in the manuscript so far did you detail in what way your simulation and experimental findings match those of prior experimental reports regarding neuron response and physiological properties.\n\nLine 425: this statement is inaccurate. An individual KC does not encode for a single odor. That would almost never be the case even if a KC was single-claw, as in, exclusively integrated inputs from a single projection neuron: individual projection neurons rarely encode an odor; it's the population of projection neurons that does. Similarly, ensembles of co-active KCs together represent an odor, and do so more narrowly and accurately than the population of projection neurons that excited them.\n\nLine 452: left unresolved remains the question of why would both mechanisms exist, as in, is the combination of altering the KC-MBON synapse and altering the PN-KC synapse better in some dimension than altering either alone? Does this relate perhaps to a possible dynamic nature of the olfactory \"fovea\" proposed by Zheng et al. 2020 bioRxiv as presumably static?\n\nLine 466: what is standard fly food? Please define it. Choice of food affects very much behavioral assays, for example.\n\nLine 476: no antigen saturation steps in the immunohistochemistry protocol? Please revise.\n\nLine 505: what were the settings of the puller? These would be necessary to reproduce your glass capillaries. Did you grind the tips, and if so, how?\n\nLine 534: how were the R_series, R_input and R_m determined with Igor Pro?\n\nLine 561: why was a threshold of 600 M\u03a9 used to exclude cells? How many cells were recorded in total, and how many were excluded?\n\nLine 584: once again the data is the best human effort in proofreading a semiautomatic segmentation. It is not the absolute truth. Also, each individual fly is somewhat different, so this is merely one fairly complete yet partial reconstruction, and not assured to be error free, particularly of errors of omission, of a single MBON from a single individual. Would be appropriate to remark this clearly.\n\nDid you provide the NeuroML or similar files necessary to run the model in the NEURON simulation software? These should be appended to the manuscript as supplemental data.\n\nLine 596: if \"parameters were tuned until the computed voltage excursion at the soma matched our electrophysiological recordings\", what is the rationale for comparing the voltage potential of the simulation with those of the experimental observations?\n\nLine 607: where do these ranges of physiologically plausible values come from? Citation, or measurements done in the lab and therefore a figure is needed to show them? Are these ranges from the literature listed in Table 2? Likely yes, would be appropriate to cite them here too or at least explicitly point to Table 2.\n\nLine 616: innervation of MBONs is cholinergic because KCs are cholinergic, but that's not from Takemura et al. 2017, instead from Barnsted et al. 2016 Neuron.\n\nLine 622: would be appropriate to include the python scripts used to configure and run the NEURON simulation as supplemental material. Likewise for the matlab scripts used to load the analyzed data and plot it. The raw data ought to be included as CSV files or similar.\n\nReviewer #2 (Recommendations for the authors):\n\n\"The cellular architecture of memory modules in Drosophila supports stochastic input integration\" is a classical biophysical compartmental modelling study. It takes advantage of some simple current injection protocols in a massively complex mushroom body neuron called MBON\u2013a3 and compartmental models that simulate the electrophysiological behaviour given a detailed description of the anatomical extent of its neurites.\n\nThis work is interesting in a number of ways:\n\n\u2013 The input structure information comes from EM data (Kenyon cells) although this is not discussed much in the paper.\n\n\u2013 The paper predicts a potentially novel normalization of the throughput of KC inputs at the level of the proximal dendrite and soma.\n\n\u2013 It claims a new computational principle in dendrites, this didn't become very clear to me.\n\nProblems I see:\n\n\u2013 The current injections did not last long enough to reach steady state (e.g. Figure 1FG), and the model current injection traces have two time constants but the data only one (Figure 2DF). This does not make me very confident in the results and conclusions.\n\n\u2013 The time constant in Table 1 is much shorter than in Figure 1FG?\n\n\u2013 Related to this, the capacitance values are very low maybe this can be explained by the model's wrong assumption of tau?\n\n\u2013 That latter in turn could be because of either space clamp issues in this hugely complex cell or bad model predictions due to incomplete reconstructions, bad match between morphology and electrophysiology (both are from different datasets?), or unknown ion channels that produce non\u2013linear behaviour during the current injections.\n\n\u2013 The PRAXIS method in NEURON seems too ad hoc. Passive properties of a neuron should probably rather be explored in parameter scans.\n\nQuestions I have:\n\n\u2013 Computational aspects were previously addressed by e.g. Larry Abbott and Gilles Laurent (sparse coding), how do the findings here distinguish themselves from this work.\n\n\u2013 What is valence information?\n\n\u2013 It seems that Martin Nawrot's work would be relevant to this work.\n\n\u2013 Compactification and democratization could be related to other work like Otopalik et al. 2017 eLife but also passive normalization. The equal efficiency in line 427 reminds me of dendritic/synaptic democracy and dendritic constancy.\n\n\u2013 The morphology does not obviously seem compact, how unusual would it be that such a complex dendrite is so compact?\n\n\u2013 What were the advantages of using the EM circuit?\n\n\u2013 Isn't Figure 4E rather trivial if the cell is compact?\n\nOverall, I am worried that the passive modelling study of the MBON\u2013a3 does not provide enough evidence to explain the electrophysiological behaviour of the cell and to make accurate predictions of the cell's responses to a variety of stochastic KC inputs.\n\nReviewer #3 (Recommendations for the authors):\n\nThis manuscript presents an analysis of the cellular integration properties of a specific mushroom body output neuron, MBON-\u03b13, using a combination of patch clamp recordings and data from electron microscopy. The study demonstrates that the neuron is electrotonically compact permitting linear integration of synaptic input from Kenyon cells that represent odor identity.\n\nStrengths of the manuscript:\n\n1) The study integrates morphological data about MBON-\u03b13 along with parameters derived from electrophysiological measurements to build a detailed model.\n\n2) The modeling provides support for existing models of how olfactory memory is related to integration at the MBON.\n\nWeaknesses of the manuscript:\n\n1) The study does not provide experimental validation of the results of the computational model.\n\n2) The conclusion of the modeling analysis is that the neuron integrates synaptic inputs almost completely linearly. All the subsequent analyses are straightforward consequences of this result.\n\n3) The manuscript does not provide much explanation or intuition as to why this linear conclusion holds.\n\nIn general, there is a clear takeaway here, which is that the dendritic tree of MBON-\u03b13 in the lobes is highly electrotonically compact. The authors did not provide much explanation as to why this is, and the paper would benefit from a clearer conclusion. Furthermore, I found the results of Figures 4 and 5 rather straightforward given this previous observation. I am sceptical about whether the tiny variations in, e.g. Figures 3I and 5F-H, are meaningful biologically.\n\n1) My biggest question is about the claim of extreme electrotonic compactness of this neuron. Figure 3D,E suggests that the voltage change at the proximal neurite and at the soma varies by only about 1% depending on stimulation location. Since this is supported only by simulation, it is worth asking how robust this conclusion is.\n\na) Given that the variability in 3I is so small in magnitude, any dependence would be swamped by other sources of heterogeneity, so the statement that this correlates with distance (line 278) is likely irrelevant.\n\nb) Can the authors provide a confidence interval for the fit of biophysical parameters to their recordings?\n\nc) On lines 271-274, the authors state, \"This architecture with the smallest dendritic sections at the most distant sites may contribute to the compactness of the dendritic tree, ensuring that even the most distant synaptic inputs result in somatic voltage deflections comparable to the most proximal ones.\" Is a dependence of dendritic size on distance required for the results? It seems like the result is simply that there is no attenuation within the dendritic tree at all. In general, the authors don't actually provide an explanation for the compactness. In the discussion, it is stated that, \"The compactification of the neuron is likely related to the architectural structure of its dendritic tree,\" which again is rather vague. The authors should strive to provide a clear explanation for this, since it is their key result.\n\nd) Can the authors report what the electrotonic length for such a dendrite would be? How long before we expect to see a significant spread in 3E?\n\n2) My other concern is that, once we assume this perfect integration, the subsequent analyses are all a straightforward consequence. In particular, Figures 4 and 5 just repeatedly convey that it doesn't matter which synapse is being activated, the effect on the somatic voltage is the same. I was particularly confused about the conclusions of 5F,G,H. The authors claim \"small but significant differences\" here, but practically speaking, I can't imagine any of the differences in these plots being meaningful.\n\n3) Reference to the data used to constrain the model is confusing.\n\na) At various places in the manuscript references are made to in vivo recordings, but it appears that all of the recordings were done ex vivo.\n\nb) On lines 389-392, the authors state: \"Near-perfect agreement between experimentally observed and simulated voltage distributions in the dendritic tree shows that linear cable theory is an excellent model for information integration in this system.\" What recordings of the voltage distribution in the dendritic tree were performed?\n\n4) It seems like the conclusions are different than those of Gouwens and Wilson (2009), who described their reconstructed PNs as electrotonically extensive. The authors should comment on what about MBONs and PNs is different.\n",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e9bc7168-b46b-4b5f-8df9-931368531f3f",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C1",
+      "claim": "The Drosophila mushroom body (MB) is required for the acquisition and recall of associative olfactory memories.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that the MB is required for the acquisition and recall of associative olfactory memories (de Belle and Heisenberg, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to de Belle and Heisenberg, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "fa249fc6-aa15-4bc0-9774-c98dc62972fb",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C2",
+      "claim": "Projection neurons (PNs) are connected in a largely stochastic manner to approximately 2000 Kenyon cells (KCs) per brain hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "PNs are connected in a largely stochastic manner to the approximately 2000 KCs per brain hemisphere, resulting in a unique KC odor representation in individual flies (Litwin-Kumar et al., 2017; Aso et al., 2014a; Caron et al., 2013; Gruntman and Turner, 2013; Lin et al., 2007; Betkiewicz et al., 2020; Eichler et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a29f471a-9400-4a25-b9cb-8e68fb891750",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C3",
+      "claim": "A population of food-responsive PNs shows partial non-random connectivity, which is an exception to the largely stochastic connectivity pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The exception to this is a partial non-random connectivity of a population of food-responsive PNs (Zheng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zheng et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "83dad29f-dccf-45b3-b6b8-b331a5bde38e",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C4",
+      "claim": "Any given odor activates approximately 3\u20139% of Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological and calcium imaging studies demonstrated that any given odor activates approximately 3\u20139% of KCs (Campbell et al., 2013; Honegger et al., 2011; Turner et al., 2008; Siegenthaler et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to electrophysiological and calcium imaging studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "1b0433ea-b6ea-481f-99d0-0d3a2b8ab36f",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C5",
+      "claim": "Mushroom body output neurons (MBONs) subdivide the MB lobes into distinct structural and functional modules by virtue of their dendritic arborizations.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs then transmit this odor information to mushroom body output neurons (MBONs) that subdivide the MB lobes into distinct structural and functional modules by virtue of their dendritic arborizations (Owald et al., 2015a; Aso et al., 2014b; Hige et al., 2015a; Cognigni et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "9b4757f0-ac72-45b9-9e61-6dcaf1e1e9e5",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C6",
+      "claim": "Dopaminergic neurons (DANs) of the PPL1 cluster preferentially provide input to the vertical lobe of the MB and are activated during negative reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "DANs of the PPL1 cluster preferentially provide input to the vertical lobe of the MB and are activated during negative reinforcement, while DANs of the PAM cluster are activated during positive reinforcement and modulate activity in the horizontal lobe of the MB (Handler et al., 2019; Aso and Rubin, 2016; Tomchik and Davis, 2009; S\u00e9journ\u00e9 et al., 2011; Cohn et al., 2015; Burke et al., 2012; Rohwedder et al., 2016; Saumweber et al., 2018; Selcho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "ce808f79-c6fc-4a92-aab5-5fe32f2f1406",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C7",
+      "claim": "DANs of the PAM cluster are activated during positive reinforcement and modulate activity in the horizontal lobe of the MB.",
+      "claim_type": "EXPLICIT",
+      "source": "DANs of the PPL1 cluster preferentially provide input to the vertical lobe of the MB and are activated during negative reinforcement, while DANs of the PAM cluster are activated during positive reinforcement and modulate activity in the horizontal lobe of the MB (Handler et al., 2019; Aso and Rubin, 2016; Tomchik and Davis, 2009; S\u00e9journ\u00e9 et al., 2011; Cohn et al., 2015; Burke et al., 2012; Rohwedder et al., 2016; Saumweber et al., 2018; Selcho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "cc78c71f-50d0-4e9a-96c7-bd2526c9f866",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C8",
+      "claim": "The majority of MBONs of the vertical lobe utilize acetylcholine as a neurotransmitter and artificial activation of these MBONs often mediates approach behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of MBONs of the vertical lobe utilize acetylcholine as a neurotransmitter, and artificial activation of these MBONs often mediates approach behavior (Aso et al., 2014b; Eschbach et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Aso et al., 2014b and Eschbach et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "3b8c26b3-71f4-4289-ae03-a06c8b584c36",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C9",
+      "claim": "The majority of MBONs of the horizontal lobe release glutamate as a neurotransmitter and these neurons mediate avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of MBONs of the horizontal lobe release glutamate as a neurotransmitter, and these neurons mediate avoidance behavior (Aso et al., 2014b; Eschbach et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Aso et al., 2014b and Eschbach et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a8d1221c-c784-4337-90f0-c09ef4c95ca8",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C10",
+      "claim": "The activity of individual MBONs can be altered by conditioning paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo calcium imaging and electrophysiological experiments demonstrated that the activity of individual MBONs can be altered by conditioning paradigms (Hige et al., 2015a; Aso and Rubin, 2016; Pla\u00e7ais et al., 2013; Owald et al., 2015a; Jacob and Waddell, 2020; Perisse et al., 2016; Felsenberg et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to in vivo calcium imaging and electrophysiological experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "68b63697-4c26-43f7-9b8d-0ac5f315bdb2",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C11",
+      "claim": "Modulation of MBON activity depends on the pairing of DAN and KC activity and results in either an enhancement or depression of the strength of the KC>MBON connection.",
+      "claim_type": "EXPLICIT",
+      "source": "This modulation of MBON activity depends on the pairing of DAN and KC activity and results in either an enhancement or depression of the strength of the KC>MBON connection (Handler et al., 2019; Owald et al., 2015a; Cohn et al., 2015; Burke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "5c3cf2e8-3083-432d-b1af-535bf76110a7",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C12",
+      "claim": "Modulation of a relatively small number of KCs is sufficient to significantly alter memory recall.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies indicate that modulation of a relatively small number of KCs is sufficient to significantly alter memory recall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from genetic tagging studies mentioned in the preceding sentence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "c55136de-3e10-4ddd-975f-0cfeb9fbfe58",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C13",
+      "claim": "MBON-\u03b13 is an MBON at the tip of the \u03b1-lobe that is relevant for long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We focus on MBON-\u03b13 (MBON-14 in the terminology of Aso et al., 2014a), an MBON at the tip of the \u03b1-lobe that is relevant for long-term memory (Aso et al., 2014b; Pla\u00e7ais et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Aso et al., 2014b and Pla\u00e7ais et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "acd26bc9-a835-417f-b5af-f988f12b2363",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C15",
+      "claim": "The resting membrane potential of MBON-\u03b13 is in line with prior measurements of MBONs in vivo and of other central neurons in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "This value for the resting membrane potential is in line with prior measurements of MBONs in vivo and of other central neurons in Drosophila (Hige et al., 2015a; Wilson et al., 2004; Gu and O'Dowd, 2006; Groschner et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "51c9efd3-99c2-4a0f-b186-b460399eed40",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C19",
+      "claim": "MBON-\u03b13 is highly excitable, with small input currents being sufficient to significantly alter its membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "MBON-\u03b13 is thus highly excitable, with small input currents being sufficient to significantly alter its membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the high membrane resistance measurement.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "2216c069-76bf-438d-8a0e-189760d3697b",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C21",
+      "claim": "The small amplitudes of action potentials in MBON-\u03b13 are likely a result of the unipolar morphology of the neuron with a long neurite connecting the dendritic input region to the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "The small amplitudes are likely a result of the unipolar morphology of the neuron with a long neurite connecting the dendritic input region to the soma (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the neuron's morphology and comparison with literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "9359e24b-f4aa-4832-b000-4a5c353d36c1",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C22",
+      "claim": "Signal propagation in MBON-\u03b13 may partially bypass the soma.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, signal propagation may partially bypass the soma (Figure 1A, B and F; Gouwens and Wilson, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from morphology and supported by citation and figures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "8326a231-77fe-45f4-856c-41e65463b459",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C24",
+      "claim": "MBON-\u03b13 is a spike-frequency adapting neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the general idea that action potentials are \"all or nothing\" events, and that MBON-\u03b13 is a spike-frequency adapting neuron constistent with prior observations of other MBONs (Hige et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and comparison with cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "30d518b8-da88-4f70-beaa-08e25a63c4aa",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C25",
+      "claim": "MBON-\u03b13 receives 12,770 synaptic connections from 948 innervating Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For our in silico model of MBON-\u03b13, we used the recently published electron-microscopy-based connectome of the Drosophila mushroom body (Takemura et al., 2017). This dataset includes the precise morphological parameters of the entire dendritic tree including the precise location data for all 12,770 synaptic connections from the 948 innervating KCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the electron microscopy-based connectome.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "521f30ea-5d52-4a36-8c58-0e9bd4c4aaf8",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C26",
+      "claim": "The EM-based reconstruction potentially misses 10% of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that this dataset represents a single fly and the EM-based reconstruction was not able to faithfully assign all synaptic connections (potentially missing 10% of synapses; Takemura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Takemura et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "df702a7e-36a6-4320-ad8c-a9df842f992b",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C27",
+      "claim": "The dendritic tree of MBON-\u03b13 was subdivided into 4336 linear sections for the in silico model.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the published vector data (Takemura et al., 2017) we subdivided the dendritic tree into 4336 linear sections, of which 3121 are postsynaptic to one or more of the 12,770 synaptic contacts from 948 KCs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the modeling methodology and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "fc849b45-dcc1-4cdf-949b-aecc17182cfb",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C28",
+      "claim": "3121 dendritic sections of MBON-\u03b13 are postsynaptic to one or more of the 12,770 synaptic contacts from 948 KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the published vector data (Takemura et al., 2017) we subdivided the dendritic tree into 4336 linear sections, of which 3121 are postsynaptic to one or more of the 12,770 synaptic contacts from 948 KCs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the modeling methodology and reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a16794c4-099f-4ba0-8238-c7b135c6ba4b",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C29",
+      "claim": "Linear cable theory is the baseline model for neurites and the most rational approach in the absence of detailed information about potential nonlinear currents.",
+      "claim_type": "EXPLICIT",
+      "source": "We used linear cable theory (Niebur, 2008) to generate the in silico model of MBON-\u03b13. Linear cable theory is the baseline model for neurites and the most rational approach in the absence of detailed information about potential nonlinear currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "785c61c7-f975-4932-8191-1922a46bb0a0",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C31",
+      "claim": "The average number of synaptic contacts from a KC to MBON-\u03b13 is 13.47.",
+      "claim_type": "EXPLICIT",
+      "source": "The average number of synaptic contacts from a KC to this MBON is 13.47 (Takemura et al., 2017), Figure 4B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from Takemura et al., 2017 and Figure 4B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "70a1cd48-8f69-497c-a2c5-e52dbf9016ef",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C32",
+      "claim": "MBON-\u03b13 is electrotonically compact.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the morphological architecture and biophysical parameters of MBON-\u03b13 promote a 'compactification', or 'democratization', of synaptic inputs, with all inputs resulting in similar voltage excursions at the proximal neurite and soma, regardless of the strength of the initial dendritic voltage or the position on the dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results showing similar voltage excursions across different input locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "e1261aa5-a173-4d40-b818-21679e33d62c",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C34",
+      "claim": "The characteristic length (\u03bb \u2248 1,300 \u03bcm) is about twice the maximal path length between any two segments of MBON-\u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "This is about twice the maximal path length between any two segments of the cell, see Figure 2C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of the calculated characteristic length with the cell morphology shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "d64b11ad-6f84-48c9-be3c-e1e76176201b",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C35",
+      "claim": "The morphology of the MBON-\u03b13 dendritic tree is finely tuned to maximize the equality of the functional weight of all synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is highly remarkable, however, that the morphology of the MBON-\u03b13 dendritic tree seems finely tuned, with the goal of maximizing the equality of the functional weight of all synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from simulation results showing compensation of voltage differences.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a2b819ed-356f-42c6-9397-ee902001b75d",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C37",
+      "claim": "The number of synapses per KC innervating MBON-\u03b13 ranges from 1 to 27, with one outlier having 38 synaptic contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of synapses varied between KCs, ranging from 1 to 27 (plus one outlier with 38 synaptic contacts), with a mean of 13.47 synapses per KC (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "7bf3af64-d090-48aa-9ef0-048fff483efb",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C38",
+      "claim": "MBON-\u03b13 is in a small-signal operation mode, with a highly linear relation between the voltage excursion and the number of synapses per KC.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuron is firmly in a small-signal operation mode, as we observed a highly linear relation between the voltage excursion and the number of synapses per KC, Figure 4E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "8e7d16b9-5099-4ba2-b5d0-ef3c7184b242",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C40",
+      "claim": "Activation of 13 randomly selected synapses in 1000 independent trials resulted in similar voltage excursions as observed for the KCs with 13 synaptic connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of 13 randomly selected synapses in 1000 independent trials resulted in similar voltage excursions as observed for the KCs with 13 synaptic connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results comparing random and anatomical synapse activation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "d335aeda-da91-4c85-be2c-e8c4fa166f20",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C41",
+      "claim": "In simulations with random synapse activation, the responses showed less variability compared to the activation of individual KCs with synapses at anatomically observed locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in these simulations the responses showed less variability compared to the activation of individual KCs with synapses at anatomically observed locations (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "55679efd-20df-4497-bc3f-afeb6afa330d",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C43",
+      "claim": "Activation of 50 KCs is sufficient to induce changes in the firing frequency of MBON-\u03b13.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with an activation of 50 KCs being sufficient to induce changes in the firing frequency of MBON-\u03b13 (Figure 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from simulation results and comparison with experimental data in Figure 1H, I.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "270787fc-1444-49df-9fab-c3e5030688f8",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C48",
+      "claim": "A change of input of 25% leads to a change of 20\u00b11% in membrane depolarization, averaged over all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged over all conditions, a change of input of 25% lead to a change of 20\u00b11% in membrane depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by averaging simulation results across different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "26b3d38d-3700-4be8-959a-83107306ae19",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C49",
+      "claim": "There is a nearly linear relationship between the activated number of synapses and the measured amplitude in the soma regardless of synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations revealed a nearly linear relationship between the activated number of synapses and the measured amplitude in the soma regardless of synaptic strength (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation results shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "cb2c435b-f8c6-4f02-a1eb-749cf52660b1",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C50",
+      "claim": "Processing of odor information in the MB largely depends on the stochastic connectivity of projection neurons to KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to most axon guidance processes in Drosophila that are essentially identical in all wild-type individuals, processing of odor information in the MB largely, but not exclusively, depends on the stochastic connectivity of projection neurons to KCs that relay odor information from the olfactory glomeruli to the MBONs (Caron et al., 2013; Gruntman and Turner, 2013; Litwin-Kumar et al., 2017; Warth P\u00e9rez Arias et al., 2020; Zheng et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "601d9675-eb79-4a86-bd87-5ecbe458bc3f",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C51",
+      "claim": "The role of MBONs within the circuit is largely fixed between animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of MBONs within the circuit is largely fixed between animals and many MBONs can be classified as either approach or avoidance neurons in specific behavioral paradigms (Aso et al., 2014a; Aso et al., 2014b; Litwin-Kumar et al., 2017; Li et al., 2020; Takemura et al., 2017; Scheffer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "3ddeb3ab-445d-4992-a908-cbca7eee0e59",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C52",
+      "claim": "Individual KCs are not biased in their MBON connectivity but innervate both approach and avoidance output modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, individual KCs are not biased in their MBON connectivity but innervate both kinds of output modules, for both approach and avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about KC connectivity patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "b29caefd-92d0-47ef-81fe-6c06049e6521",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C53",
+      "claim": "Learning and memory is incorporated via the local activity of valence-encoding DANs that can either depress or potentiate KC>MBON synaptic connections.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning and memory, the modulation of odor response behavior through pairing of an individual odor with either positive or negative valence, is incorporated via the local activity of valence-encoding DANs that can either depress or potentiate KC>MBON synaptic connections (Aso and Rubin, 2016; Berry et al., 2018; Handler et al., 2019; Yamagata et al., 2015; Cohn et al., 2015; Burke et al., 2012; Hige et al., 2015a; Owald et al., 2015a; Jacob and Waddell, 2020; Pai et al., 2013; Pla\u00e7ais et al., 2013; S\u00e9journ\u00e9 et al., 2011; Bouzaiane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "366d80da-af24-4b5e-a1b3-c6bde7532fe0",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C54",
+      "claim": "The dendritic tree of the MBON is electrotonically compact, despite the complex architecture that includes a high degree of branching.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the dendritic tree of the MBON is electrotonically compact, despite the complex architecture that includes a high degree of branching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results showing voltage compactification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "bb6825b9-7286-4baf-970a-160fb4dfdf4c",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C55",
+      "claim": "Electrotonic compactness in MBON-\u03b13 is in agreement with prior electrophysiological characterization of an MBON in locust.",
+      "claim_type": "EXPLICIT",
+      "source": "This data is in agreement with a prior electrophysiological characterization of an MBON in locust (Cassenaer and Laurent, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "7535fb4e-e344-4a51-bbf9-86c6ca0c8d09",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C56",
+      "claim": "Electrotonic compactness supports linear integration of synaptic inputs across extensive arborizations and likely serves to functionally compensate for inter-individual variability.",
+      "claim_type": "EXPLICIT",
+      "source": "and a similar feature has been reported for neurons in the stomatogastric ganglion of crayfish. Here the electrotonic compactness supports linear integration of synaptic inputs across extensive arborizations and likely serves to functionally compensate for inter-individual variability (Otopalik et al., 2017; Otopalik et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in crayfish neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "22dbf7a8-c558-4e86-8c7a-9355173b6803",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C57",
+      "claim": "The location of an individual synaptic input within the dendritic tree has only a minor effect on the amplitude of the neuron's output, despite large variations of local dendritic potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of an individual synaptic input within the dendritic tree has therefore only a minor effect on the amplitude of the neuron's output, despite large variations of local dendritic potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from simulation results showing voltage compactification.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "1818e85c-baf6-4cc4-bab5-052ad61f4bdd",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C58",
+      "claim": "In contrast to large vertebrate neurons, local active amplification or other compensatory mechanisms may not be necessary to support input normalization in the dendritic tree of small central neurons in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the relatively small size of many central neurons in Drosophila, this indicates that in contrast to large vertebrate neurons, local active amplification or other compensatory mechanisms (Rumsey and Abbott, 2006; Sterratt et al., 2012; Froemke et al., 2005; Gidon and Segev, 2009; Schiller et al., 2000; Polsky et al., 2004) may not be necessary to support input normalization in the dendritic tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the compactness results and comparison with vertebrate neurons.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "fc2225fa-5672-4bc1-9e60-f0082461d3d0",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C59",
+      "claim": "Voltage-gated Na+ channels are localized in putative spike initiation zones in a subset of central neurons of Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for axons it has been recently reported that voltage-gated Na+ channels are localized in putative spike initiation zones in a subset of central neurons of Drosophila (Ravenscroft et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Ravenscroft et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "cae95cd2-1a4e-4857-8f22-f31e12bee3a4",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C60",
+      "claim": "Individual odors evoke activity reliably in approximately 3\u20139% of KCs based on calcium imaging in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium imaging in vivo demonstrated that individual odors evoke activity reliably in approximately 3\u20139% of KCs (Campbell et al., 2013; Honegger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to calcium imaging studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "39999308-5ad5-4f9c-b62d-16c3a783c51e",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C61",
+      "claim": "Simulations of 1000 independent trials with random sets of 50 KCs demonstrate that such activation patterns robustly elicit MBON activity in agreement with in vivo observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations of 1000 independent trials with random sets of 50 KCs, each representing one distinct odor that activates approximately 5% of the KCs innervating the target MBON, demonstrate that such activation patterns robustly elicit MBON activity in agreement with in vivo observations of odor-induced activity that elicited robust increases in action potential frequency in MBONs (Hige et al., 2015a; Warth P\u00e9rez Arias et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results and comparison with cited in vivo observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "39e933bc-a3ea-4b98-ad23-4bfb44177011",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C62",
+      "claim": "The low variability of depolarizations observed in simulations indicates that information coding by activation patterns is highly robust.",
+      "claim_type": "EXPLICIT",
+      "source": "The low variability of depolarizations observed in these simulations indicates that information coding by such activation patterns is highly robust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "4a392148-7b2d-4a65-9c7d-1d0989fb3305",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C63",
+      "claim": "Labeled line representations of odor identity are likely not necessary at the level of KCs since relaying information via any set of \u224850 KCs is of approximately equal efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, labeled line representations of odor identity are likely not necessary at the level of KCs since relaying information via any set of \u224850 KCs is of approximately equal efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from simulation results showing robust and consistent activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "4e6a2e97-1fd6-4ecc-b033-55f61693a0b8",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C64",
+      "claim": "Variability in parameters controlling neuronal excitability of individual KCs negatively affects associative memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model is supported by a recent computational study demonstrating that variability in parameters controlling neuronal excitability of individual KCs negatively affects associative memory performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a computational study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "af9fd75d-15e3-4684-9844-c45684fcbceb",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C65",
+      "claim": "Compensatory variation mechanisms exist that ensure similar activity levels between all odor-encoding KC sets to maintain efficient memory performance.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors provide evidence that compensatory variation mechanisms exist that ensure similar activity levels between all odor-encoding KC sets to maintain efficient memory performance (Abdelrahman et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Abdelrahman et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "157e6657-e634-42bb-8d18-8702274b5b7b",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C66",
+      "claim": "Optical recordings of in vivo activity of MBONs revealed selective reductions in MBON activity in response to aversive odor training.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical recordings of in vivo activity of MBONs revealed selective reductions in MBON activity in response to aversive odor training (Jacob and Waddell, 2020; Pai et al., 2013; Owald and Waddell, 2015; Perisse et al., 2016; S\u00e9journ\u00e9 et al., 2011) or to optogenetic activation of selective DANs (Hige et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to optical recording studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "c0920d9b-a398-4606-a433-902b413b175e",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C67",
+      "claim": "Both depression and potentiation of MBON activity have been previously observed in different MBON modules in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, both depression and potentiation of MBON activity have been previously observed in different MBON modules in vivo (Owald and Waddell, 2015; Hige et al., 2015a; Perisse et al., 2016; Pla\u00e7ais et al., 2013; Pai et al., 2013; S\u00e9journ\u00e9 et al., 2011; Jacob and Waddell, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to in vivo studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "e8acaf88-2b12-4b06-a119-fc5d1458cd26",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C68",
+      "claim": "Recent studies have observed changes in KC stimulus representations after conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent studies have observed changes in KC stimulus representations after conditioning (Delestro et al., 2020; Shyu et al., 2019) that may be due to learning-dependent modulations of synaptic PN input to KCs (Baltruschat et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "79eece9d-f1ca-4100-9e62-b15608243194",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C69",
+      "claim": "Changes in KC stimulus representations after conditioning may be due to learning-dependent modulations of synaptic PN input to KCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, recent studies have observed changes in KC stimulus representations after conditioning (Delestro et al., 2020; Shyu et al., 2019) that may be due to learning-dependent modulations of synaptic PN input to KCs (Baltruschat et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on cited studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "b025c29c-7a6c-4e75-978a-971a413ff260",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C70",
+      "claim": "The two different mechanisms of altering MBON output (synaptic strength vs. KC number) are potentially utilized for the establishment of different types of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The two different mechanisms of altering MBON output are potentially utilized for the establishment of different types of memory with fast and local alterations of synaptic transmission likely essential for short-term memory while structural changes may ensure maintenance of memory over long periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "d105ad86-501a-414d-9cf4-1f3a05f9d9ba",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C71",
+      "claim": "Fast and local alterations of synaptic transmission are likely essential for short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The two different mechanisms of altering MBON output are potentially utilized for the establishment of different types of memory with fast and local alterations of synaptic transmission likely essential for short-term memory while structural changes may ensure maintenance of memory over long periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "729df0db-8c65-4c4e-aff5-635f98a553bf",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C72",
+      "claim": "Structural changes may ensure maintenance of memory over long periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "The two different mechanisms of altering MBON output are potentially utilized for the establishment of different types of memory with fast and local alterations of synaptic transmission likely essential for short-term memory while structural changes may ensure maintenance of memory over long periods of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a334bf15-f481-49f2-a9ea-3921077e6ab0",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C73",
+      "claim": "The KC>MBON architecture represents a biophysical module that is well-suited to simultaneously process changes based on either synaptic and/or network modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation data thus shows that the KC>MBON architecture represents a biophysical module that is well-suited to simultaneously process changes based on either synaptic and/or network modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "4a3e3cff-18b1-404f-8e17-ad7e1faaa2c3",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C74",
+      "claim": "The interplay between KCs and MBONs ensures reliable information processing and memory storage despite the stochastic connectivity of the memory circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the electrotonic nature of the MBONs, the interplay between KCs and MBONs thus ensures reliable information processing and memory storage despite the stochastic connectivity of the memory circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the overall study results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "69d900bf-7104-484f-8525-808ceb8b7883",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C75",
+      "claim": "MBON-\u03b13 can be accessed genetically by using a specific Gal4 line (MB082C-Gal4).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we can access MBON-\u03b13 genetically by using a specific Gal4 line (MB082C-Gal4) to label MBON-\u03b13 by the expression of membrane-bound GFP (10xUAS-IVS-mCD8::GFP; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the experimental methodology and Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "ed3569b2-423b-4fcd-8028-1b981f3ffebc",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C76",
+      "claim": "The MB082C-Gal4 line marks two different MBON-\u03b13 cells that are almost identical with regard to their dendritic tree position and synaptic input number.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that we cannot discriminate between the two different MBON-\u03b13 cells that are marked by the split Gal4 line and that are almost identical with regard to their dendritic tree position and synaptic input number (Takemura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Takemura et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "6d815c43-6ccb-4907-afb8-ab335088f98e",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C77",
+      "claim": "Kenyon cells are cholinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "As KCs are cholinergic (Barnstedt et al., 2016) we utilized previously determined parameters of cholinergic synapses to simulate synaptic input to MBON-\u03b13.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Barnstedt et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "1d67ca3a-39dc-4c64-bfb5-6bcfcd6508b9",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C79",
+      "claim": "The faster voltage change at the onset and offset of the current injection seen in the simulation is caused by the small size of the soma which results in a much faster 'local' somatic time constant than that of the whole cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the faster voltage change at the onset and offset of the current injection seen in the simulation is caused by the small size of the soma which results in a much faster 'local' somatic time constant than that of the whole cell (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the cell morphology and supported by Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "ed5a0264-a2b2-4abd-8421-4bde4c4e8392",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C81",
+      "claim": "More distal dendritic segments (more distant from the soma) have a smaller volume and diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Representing the distance between dendritic inputs and soma (Figure 3G) by a color code, we find that, as in many tree-like structures, there is a systematic tendency that more distal segments (more distant from the soma) have a smaller volume and diameter, Figure 3H.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figures 3G and 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "c573c06a-990a-496d-a761-909b4f266d04",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "claim_id": "C83",
+      "claim": "Placing an electrical charge (integrated synaptic current) on a small capacitor (low-volume segment with small surface area) results in a larger voltage excursion than placing the same charge on a large capacitor (large segment).",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected: placing an electrical charge (integrated synaptic current) on a small capacitor (low-volume segment with small surface area) results in a larger voltage excursion than placing the same charge on a large capacitor (large segment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of electrical circuits.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the Drosophila mushroom body (MB) circuit architecture, including the role of Kenyon cells (KCs), mushroom body output neurons (MBONs), and dopaminergic neurons (DANs) in olfactory learning and memory. The claims establish that the MB is required for associative memory, that KCs receive largely stochastic input from projection neurons, that odors activate 3-9% of KCs, and that MBONs and DANs form functional modules that can be modulated by conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C13) are well-supported by extensive citations to prior literature. They establish the known architecture and function of the MB circuit as background for the current study. The claims are consistent with established knowledge in the field and provide appropriate context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors performed patch-clamp electrophysiology on MBON-\u03b13 neurons labeled with GFP and characterized their passive membrane properties. They report a resting membrane potential of -56.7\u00b12.0 mV, high membrane resistance (926\u00b155 M\u03a9), membrane time constant of 16.06\u00b12.3 ms, and small action potential amplitudes (4.3\u00b10.029 mV). The neuron exhibits spike-frequency adaptation and high excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrophysiological characterization (C75, C76, C15, C19, C21, C22, C24) is well-supported by experimental data from five cells with appropriate controls. The measurements are consistent with prior work on MBONs and other Drosophila central neurons. The small action potential amplitudes are appropriately attributed to the neuron's unipolar morphology. Sample sizes are adequate for these measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "3168106f-7465-451b-8a56-3298147255b2",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors constructed an in silico model of MBON-\u03b13 using electron microscopy-based connectome data from Takemura et al. 2017. The model includes 12,770 synaptic connections from 948 KCs, subdivided into 4336 linear sections (3121 postsynaptic). Linear cable theory was used as the modeling framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model construction (C25-C29) is well-documented and based on published EM data. The authors appropriately acknowledge limitations (10% missing synapses, single fly dataset). The choice of linear cable theory is justified as the most rational approach given the absence of detailed information about nonlinear currents. The methodology is transparent and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "0845c003-a76b-475a-80f6-4c307c066416",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that MBON-\u03b13 is electrotonically compact, with synaptic inputs at different dendritic locations producing similar voltage excursions at the soma and proximal neurite. The characteristic length (\u03bb \u2248 1,300 \u03bcm) is about twice the maximal path length of the cell. The dendritic morphology appears finely tuned to maximize equality of functional synaptic weights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The electrotonic compactness claims (C32, C34, C35, C54, C57) are well-supported by simulation data showing voltage compactification across the dendritic tree. The analytical estimate of the space constant provides theoretical support. The claim about fine-tuning of morphology (C35) is strongly supported by the near-perfect compensation (within <0.5 \u03bcV) of voltage differences shown in Figure 3I. This is a key finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "ae5c1185-8aa9-4593-8b67-c6aa333a1c4a",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors show that more distal dendritic segments have smaller volume and diameter, and that placing charge on smaller segments results in larger local voltage excursions than on larger segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C81, C83) are supported by morphological data (Figures 3G, 3H) and basic electrical circuit principles. The relationship between segment size and local voltage is expected from capacitance considerations and is well-established in cable theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual KCs form 1-27 synapses (mean 13.47) with MBON-\u03b13. The neuron operates in a small-signal mode with a highly linear relationship between synapse number and somatic voltage. Activation of 13 randomly selected synapses produces similar responses to anatomically correct KC activation, but with less variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C31, C37, C38, C40, C41) are well-supported by simulation data (Figure 4). The linear relationship between synapse number and voltage is clearly demonstrated. The comparison between random and anatomical synapse placement (C40, C41) provides important insight into the robustness of the system. The finding that random placement shows less variability is interesting and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "2dd85a3b-92da-4aae-8f45-3d0aab657661",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Simulations with 50 randomly selected KCs (\u22485% of inputs) robustly elicit MBON depolarization consistent with in vivo observations. The low variability across 1000 trials indicates robust information coding. The authors conclude that labeled line representations are likely not necessary at the KC level since any set of \u224850 KCs is approximately equally efficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C43, C60, C61, C62, C63) are well-supported by simulation results and comparison with cited in vivo data. The 1000 independent trials provide strong statistical support for the robustness claim. The conclusion about labeled line representations (C63) is a reasonable inference from the data, though it remains a computational prediction that would benefit from experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors tested two mechanisms for altering MBON output: changing synaptic strength (\u00b125%) or changing the number of active KCs (\u00b125%). Both produce approximately 20% changes in membrane depolarization. They propose these mechanisms may underlie different types of memory (short-term vs. long-term) and that the KC>MBON architecture is well-suited to process both types of modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The simulation results (C48, C49) are well-supported and show nearly linear relationships. However, the claims about different memory types (C70, C71, C72) are explicitly speculative and lack direct experimental support. While the simulations demonstrate that both mechanisms can modulate MBON output, the assignment of synaptic changes to short-term memory and structural changes to long-term memory is an inference that requires experimental validation. The claim about the architecture being well-suited (C73) is supported by the simulations but remains a computational prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "a91fd4d3-6938-4332-bc2a-3fdacb58c796",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors compare their findings to prior work, noting agreement with locust MBON electrophysiology and crayfish neurons. They suggest that unlike large vertebrate neurons, small Drosophila neurons may not require local active amplification for input normalization, though voltage-gated channels have been reported in some Drosophila axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These comparative claims (C55, C56, C58, C59) are appropriately supported by citations. The inference about not requiring active amplification (C58) is reasonable given the electrotonic compactness demonstrated, though it remains a prediction that could be tested experimentally. The authors appropriately acknowledge that active currents could be incorporated if data become available.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss the broader context of MB function, including stochastic PN-KC connectivity, fixed MBON roles, unbiased KC connectivity, DAN-mediated plasticity, and prior observations of MBON activity changes during learning. They cite computational work on KC excitability and experimental observations of KC representation changes after conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These discussion claims (C50-C69) are well-supported by appropriate citations to prior literature. The speculative claim about PN input modulation (C69) is appropriately qualified as speculative. These claims provide important context for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "8db5041e-6e75-45ae-9dd0-705e50c8df78",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that the interplay between KCs and MBONs ensures reliable information processing and memory storage despite stochastic connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C74) is well-supported by the combined experimental and computational results. The electrotonic compactness, linear integration properties, and robustness across different KC activation patterns all support this conclusion. However, it remains a computational prediction that would benefit from direct experimental validation of memory performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    },
+    {
+      "id": "d63c3976-decc-487d-a498-03da94e99e08",
+      "content_id": "9faa3485-412d-49b1-8ca7-c3cd2b14897b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors note that KCs are cholinergic and explain that faster voltage changes at current injection onset/offset in simulations are due to the small soma size creating a faster local time constant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These technical claims (C77, C79) are appropriately supported. C77 is supported by citation, and C79 is a reasonable inference from the cell morphology supported by supplementary figures showing the two-compartment behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T19:45:52.636817Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e9bc7168-b46b-4b5f-8df9-931368531f3f",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "fa249fc6-aa15-4bc0-9774-c98dc62972fb",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "a29f471a-9400-4a25-b9cb-8e68fb891750",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "83dad29f-dccf-45b3-b6b8-b331a5bde38e",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "1b0433ea-b6ea-481f-99d0-0d3a2b8ab36f",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "9b4757f0-ac72-45b9-9e61-6dcaf1e1e9e5",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "ce808f79-c6fc-4a92-aab5-5fe32f2f1406",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "cc78c71f-50d0-4e9a-96c7-bd2526c9f866",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "3b8c26b3-71f4-4289-ae03-a06c8b584c36",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "a8d1221c-c784-4337-90f0-c09ef4c95ca8",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "68b63697-4c26-43f7-9b8d-0ac5f315bdb2",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "5c3cf2e8-3083-432d-b1af-535bf76110a7",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "c55136de-3e10-4ddd-975f-0cfeb9fbfe58",
+      "result_id": "50d44d19-9276-4d27-8fe0-e6abf77c9e95"
+    },
+    {
+      "claim_id": "69d900bf-7104-484f-8525-808ceb8b7883",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "ed3569b2-423b-4fcd-8028-1b981f3ffebc",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "acd26bc9-a835-417f-b5af-f988f12b2363",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "51c9efd3-99c2-4a0f-b186-b460399eed40",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "2216c069-76bf-438d-8a0e-189760d3697b",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "9359e24b-f4aa-4832-b000-4a5c353d36c1",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "8326a231-77fe-45f4-856c-41e65463b459",
+      "result_id": "02f8d35a-a4a6-4637-bdc1-d7c205b11907"
+    },
+    {
+      "claim_id": "30d518b8-da88-4f70-beaa-08e25a63c4aa",
+      "result_id": "3168106f-7465-451b-8a56-3298147255b2"
+    },
+    {
+      "claim_id": "521f30ea-5d52-4a36-8c58-0e9bd4c4aaf8",
+      "result_id": "3168106f-7465-451b-8a56-3298147255b2"
+    },
+    {
+      "claim_id": "df702a7e-36a6-4320-ad8c-a9df842f992b",
+      "result_id": "3168106f-7465-451b-8a56-3298147255b2"
+    },
+    {
+      "claim_id": "fc849b45-dcc1-4cdf-949b-aecc17182cfb",
+      "result_id": "3168106f-7465-451b-8a56-3298147255b2"
+    },
+    {
+      "claim_id": "a16794c4-099f-4ba0-8238-c7b135c6ba4b",
+      "result_id": "3168106f-7465-451b-8a56-3298147255b2"
+    },
+    {
+      "claim_id": "70a1cd48-8f69-497c-a2c5-e52dbf9016ef",
+      "result_id": "0845c003-a76b-475a-80f6-4c307c066416"
+    },
+    {
+      "claim_id": "e1261aa5-a173-4d40-b818-21679e33d62c",
+      "result_id": "0845c003-a76b-475a-80f6-4c307c066416"
+    },
+    {
+      "claim_id": "d64b11ad-6f84-48c9-be3c-e1e76176201b",
+      "result_id": "0845c003-a76b-475a-80f6-4c307c066416"
+    },
+    {
+      "claim_id": "366d80da-af24-4b5e-a1b3-c6bde7532fe0",
+      "result_id": "0845c003-a76b-475a-80f6-4c307c066416"
+    },
+    {
+      "claim_id": "22dbf7a8-c558-4e86-8c7a-9355173b6803",
+      "result_id": "0845c003-a76b-475a-80f6-4c307c066416"
+    },
+    {
+      "claim_id": "ed5a0264-a2b2-4abd-8421-4bde4c4e8392",
+      "result_id": "ae5c1185-8aa9-4593-8b67-c6aa333a1c4a"
+    },
+    {
+      "claim_id": "c573c06a-990a-496d-a761-909b4f266d04",
+      "result_id": "ae5c1185-8aa9-4593-8b67-c6aa333a1c4a"
+    },
+    {
+      "claim_id": "785c61c7-f975-4932-8191-1922a46bb0a0",
+      "result_id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d"
+    },
+    {
+      "claim_id": "a2b819ed-356f-42c6-9397-ee902001b75d",
+      "result_id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d"
+    },
+    {
+      "claim_id": "7bf3af64-d090-48aa-9ef0-048fff483efb",
+      "result_id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d"
+    },
+    {
+      "claim_id": "8e7d16b9-5099-4ba2-b5d0-ef3c7184b242",
+      "result_id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d"
+    },
+    {
+      "claim_id": "d335aeda-da91-4c85-be2c-e8c4fa166f20",
+      "result_id": "c4ee1ba0-2f78-4f5f-b53d-a2d8a8d0ab8d"
+    },
+    {
+      "claim_id": "55679efd-20df-4497-bc3f-afeb6afa330d",
+      "result_id": "2dd85a3b-92da-4aae-8f45-3d0aab657661"
+    },
+    {
+      "claim_id": "cae95cd2-1a4e-4857-8f22-f31e12bee3a4",
+      "result_id": "2dd85a3b-92da-4aae-8f45-3d0aab657661"
+    },
+    {
+      "claim_id": "39999308-5ad5-4f9c-b62d-16c3a783c51e",
+      "result_id": "2dd85a3b-92da-4aae-8f45-3d0aab657661"
+    },
+    {
+      "claim_id": "39e933bc-a3ea-4b98-ad23-4bfb44177011",
+      "result_id": "2dd85a3b-92da-4aae-8f45-3d0aab657661"
+    },
+    {
+      "claim_id": "4a392148-7b2d-4a65-9c7d-1d0989fb3305",
+      "result_id": "2dd85a3b-92da-4aae-8f45-3d0aab657661"
+    },
+    {
+      "claim_id": "270787fc-1444-49df-9fab-c3e5030688f8",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "26b3d38d-3700-4be8-959a-83107306ae19",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "b025c29c-7a6c-4e75-978a-971a413ff260",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "d105ad86-501a-414d-9cf4-1f3a05f9d9ba",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "729df0db-8c65-4c4e-aff5-635f98a553bf",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "a334bf15-f481-49f2-a9ea-3921077e6ab0",
+      "result_id": "213d0e9b-fbcf-4a0b-9ab3-81731ce6d612"
+    },
+    {
+      "claim_id": "bb6825b9-7286-4baf-970a-160fb4dfdf4c",
+      "result_id": "a91fd4d3-6938-4332-bc2a-3fdacb58c796"
+    },
+    {
+      "claim_id": "7535fb4e-e344-4a51-bbf9-86c6ca0c8d09",
+      "result_id": "a91fd4d3-6938-4332-bc2a-3fdacb58c796"
+    },
+    {
+      "claim_id": "1818e85c-baf6-4cc4-bab5-052ad61f4bdd",
+      "result_id": "a91fd4d3-6938-4332-bc2a-3fdacb58c796"
+    },
+    {
+      "claim_id": "fc2225fa-5672-4bc1-9e60-f0082461d3d0",
+      "result_id": "a91fd4d3-6938-4332-bc2a-3fdacb58c796"
+    },
+    {
+      "claim_id": "cb2c435b-f8c6-4f02-a1eb-749cf52660b1",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "601d9675-eb79-4a86-bd87-5ecbe458bc3f",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "3ddeb3ab-445d-4992-a908-cbca7eee0e59",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "b29caefd-92d0-47ef-81fe-6c06049e6521",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "4e6a2e97-1fd6-4ecc-b033-55f61693a0b8",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "af9fd75d-15e3-4684-9844-c45684fcbceb",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "157e6657-e634-42bb-8d18-8702274b5b7b",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "c0920d9b-a398-4606-a433-902b413b175e",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "e8acaf88-2b12-4b06-a119-fc5d1458cd26",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "79eece9d-f1ca-4100-9e62-b15608243194",
+      "result_id": "cb4849d4-10f9-4cee-aed2-5df95d307c0c"
+    },
+    {
+      "claim_id": "4a3e3cff-18b1-404f-8e17-ad7e1faaa2c3",
+      "result_id": "8db5041e-6e75-45ae-9dd0-705e50c8df78"
+    },
+    {
+      "claim_id": "6d815c43-6ccb-4907-afb8-ab335088f98e",
+      "result_id": "d63c3976-decc-487d-a498-03da94e99e08"
+    },
+    {
+      "claim_id": "1d67ca3a-39dc-4c64-bfb5-6bcfcd6508b9",
+      "result_id": "d63c3976-decc-487d-a498-03da94e99e08"
+    }
+  ],
+  "comparisons": []
+}

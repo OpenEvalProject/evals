@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "High-density Neuropixels recordings were successfully performed in two macaque monkeys, yielding 802 neurons across 5 sessions with detailed characterization of recording parameters and data acquisition methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C57-C65 provide comprehensive methodological details including subject information, probe specifications, recording parameters, and data processing steps. The methods are well-documented with specific quantitative parameters (e.g., 986 contacts, 384 simultaneously recorded, 30 kHz sampling rate), supporting the technical feasibility and rigor of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C67"
+    ],
+    "result": "Recorded V1 neurons exhibited expected orientation selectivity and cell type properties, with a ratio of 1:2.4 simple to complex cells (236 simple, 566 complex out of 802 total neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C67 demonstrate that recorded neurons showed characteristic V1 properties consistent with prior literature. The cell type classification using modulation ratio is well-established, and the observed ratio is within expected ranges for V1, providing validation of recording quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C68",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Using established statistical criteria (peak within 10ms, >7 SD above noise), 10,246 significant CCGs were identified from 68,579 neuronal pairs (~15%), consistent with prior studies in macaque, cat, and mouse V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 and C90-C92 document the CCG analysis methodology and results with clear statistical criteria adopted from prior work (Siegle et al., 2021). The proportion of significant pairs (~15%) falls within ranges reported in previous studies across species, providing cross-validation of the approach and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C48"
+    ],
+    "result": "Both synchrony (peak lag) and strength (peak efficacy) of functional interactions depend heavily on vertical distance within V1 columns, with peak lag increasing linearly (1.3 ms/500 \u03bcm, r=0.42, p<10\u207b\u2075) and peak efficacy decaying exponentially (half-life 154 \u03bcm, r=-0.34, p<10\u207b\u2075), independent of laminar boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C48 present a major finding with strong statistical support. The linear and exponential fits are well-characterized with correlation coefficients and p-values. Claim C17 importantly demonstrates that distance effects are independent of layer boundaries, strengthening the interpretation. The consistency across sessions (Figure 2 supplements) further validates these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C70"
+    ],
+    "result": "Signal correlations (orientation tuning similarity) predict both synchrony and strength of functional interactions independent of vertical distance, with distance-matched analysis confirming distinct but overlapping effects. For peak lag, distance effects dominate (coefficient ~3x larger), while for peak efficacy, signal correlation effects dominate (coefficient ~2x larger).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 and C27-C28 demonstrate sophisticated analysis separating distance and tuning effects. The distance-matching procedure (C70: >99% of pairs matched within 2 \u03bcm) is rigorous. GLM analysis with standardized predictors allows direct comparison of effect sizes, revealing differential contributions to synchrony vs. strength. The finding that distance-matched correlations are smaller than unmatched (C25) appropriately acknowledges overlapping effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C69"
+    ],
+    "result": "Clustering analysis using t-SNE and k-means identified four distinct classes of functional interactions: sharply synchronous (Ssync, 14%), broadly synchronous (Bsync, 26%), forward asynchronous (Fasync, 31%), and reverse asynchronous (Rasync, 29%), with synchronous classes exhibiting higher peak efficacies than asynchronous classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31, and C112-C115 describe the clustering approach and results. The choice of four clusters is justified by both elbow method and silhouette score (C29, C112-C113), though the authors appropriately acknowledge uncertainty (C112-C114). The exclusion of inhibitory CCGs due to low incidence (C115) is a limitation but is transparently reported. The methodological choice of t-SNE over PCA (C69) is reasonably justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The four CCG classes show distinct distributions across cortical architecture: asynchronous classes have larger vertical distances and smaller signal correlations than synchronous classes; Bsync pairs are more distant but more correlated than Ssync pairs; asynchronous pairs are predominantly between layers (71-73%) while synchronous pairs are predominantly within layers (52-65% for Bsync, 65% for Ssync); and layer location has independent effects on class assignment beyond distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide multiple lines of corroborating evidence for the validity of the four-class clustering. Statistical tests are appropriate (Wilcoxon rank-sum, chi-squared, logistic regression with p<10\u207b\u2075 for most comparisons). The logistic regression analysis (C37, Table 1) demonstrates layer effects independent of distance, strengthening the biological interpretation of the classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Among simple-complex cell pairs, forward (simple\u2192complex) CCGs predominate over reverse (p<10\u207b\u2075), consistent with established V1 models, though heterogeneity exists with many reverse and synchronous interactions, supporting continuous rather than discrete cell type models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C130-C133 demonstrate consistency with known V1 circuitry while acknowledging complexity. The predominance of forward interactions (C39) aligns with hierarchical models (C130-C131), but the authors appropriately note heterogeneity (C132) and relate this to alternative models (C133). This balanced interpretation strengthens rather than weakens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Ssync CCGs are overrepresented in V1 input layers 4c\u03b1-4c\u03b1, 4c\u03b2-4c\u03b2, and 6-6 (p<10\u207b\u2075 for 4c layers, p<10\u207b\u00b2 for layer 6), consistent with common dLGN input, but not between 4c\u03b1 and 4c\u03b2, potentially reflecting asynchrony between magnocellular and parvocellular pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C123-C125 link CCG class distributions to known anatomical connectivity. The overrepresentation of Ssync within but not between 4c\u03b1 and 4c\u03b2 (C40, C125) provides a specific, testable prediction that is confirmed. The interpretation based on magno/parvo timing differences (C125) is reasonable though speculative. The anatomical knowledge cited (C123) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Forward (Fasync) CCGs are overrepresented in projections from layer 6 to layers 4c\u03b1/4c\u03b2 (p<10\u207b\u2075 and p<10\u207b\u00b3) and from all deeper layers (6, 5, 4c\u03b2, 4c\u03b1, 4A/B) to layer 2/3 (p<10\u207b\u2075 to p<10\u207b\u00b2), consistent with known feedforward architecture. Within layer 2/3, Ssync and Bsync classes are equally overrepresented (p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C126-C129 demonstrate strong correspondence between CCG class distributions and established V1 laminar connectivity. The prediction of forward projections to layer 2/3 (C129) is explicitly tested and confirmed across multiple layer pairs (C43) with appropriate statistics. The equal representation of Ssync and Bsync within layer 2/3 (C45) contrasts with input layers, suggesting distinct circuit properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C116"
+    ],
+    "result": "High-density recordings identified thousands of functionally interacting neuronal pairs within single V1 columns, revealing systematic variations in synchrony and strength that depend on vertical distance, laminar location, and orientation tuning similarity, with distinct interaction classes distributed consistently with known V1 microcircuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C49-C50, and C116 provide high-level summaries of the main findings. These are well-supported by the detailed results in other claim groups. The consistency with known V1 circuitry (C50, C116) is demonstrated through multiple specific comparisons (input layers, simple-complex relationships, layer 2/3 projections), providing strong validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The observed proportion of asynchronous interactions (~9% of total pairs) is consistent with synaptic connectivity estimates from multi-patch recordings (5-12% in mouse/rat V1), and 86% of asynchronous CCGs meet narrow peak criteria (<5ms) for monosynaptic connections. However, CCGs reflect functional interactions that may include both direct connections and common input, not direct synaptic measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C56-C99 appropriately contextualize the findings relative to ground-truth connectivity measurements. The comparison to multi-patch data (C52, C56) provides plausibility checks. The application of alternative criteria from prior work (C53) strengthens cross-study comparisons. Importantly, the authors clearly acknowledge limitations (C93-C95, C99), distinguishing functional interactions from direct synaptic measurements. The low frequency of inhibitory CCGs (C54-C55) is consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior work established that correlations decline with horizontal distance across columns, but few studies examined within-column vertical distance effects. The current finding of peak efficacy decay within <200 \u03bcm is consistent with estimates from rat auditory/somatosensory cortex (~300 \u03bcm) and mouse V1 (~250 \u03bcm connection probability decay).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C111 provide thorough literature context. The authors correctly identify a gap in prior work (C101) and position their findings relative to existing knowledge. The consistency with other species/cortices (C104-C107) strengthens the generalizability. The distinction between within-column (current study) and across-column (prior work, C108-C111) effects is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "High-density Neuropixels probes overcome limitations of conventional recording techniques by dramatically increasing recording yield and the incidence of identifiable functional interactions, making them well-suited for investigating local cortical microcircuits, particularly in primates where other approaches are limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C89 establish the technological and conceptual foundation for the study. The advantages of Neuropixels (C75-C78, C84-C85) are well-documented in cited literature. The limitation of conventional approaches (C83) and the value for primate studies (C79) appropriately motivate the work. The discussion of crosscorrelation methodology and interpretation (C86-C89) provides necessary context for understanding the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The approach of using high-density recordings to identify large numbers of functional interactions may constrain models of cortical microcircuits, particularly in experimentally challenging systems like primates or humans, and could be extended to examine higher-order interactions and cell-type-specific connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C122 describe potential future applications and broader implications. While the current results (C119-C120) support the feasibility of the approach, the utility for constraining circuit models (C117-C118) and extensions to higher-order interactions or cell types (C121-C122) remain speculative. These are reasonable directions but require additional validation work.",
+    "result_type": "MINOR"
+  }
+]

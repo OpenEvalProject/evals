@@ -1,0 +1,2298 @@
+{
+  "submission": {
+    "id": "2991967e-313a-4dcc-8976-2b1360de72f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T06:17:18.166535Z",
+    "updated_at": "2025-12-03T06:17:18.166535Z"
+  },
+  "content": [
+    {
+      "id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "submission_id": "2991967e-313a-4dcc-8976-2b1360de72f5",
+      "content_type": "manuscript",
+      "content_text": "# Towards novel herbicide modes of action by inhibiting lysine biosynthesis in plants\n\n## Authors\n\n- Tatiana P Soares da Costa<sup>1</sup> ([ORCID: 0000-0002-6275-7485](https://orcid.org/0000-0002-6275-7485)) \u2020\n- Cody J Hall<sup>1</sup>\n- Santosh Panjikar<sup>2</sup> ([ORCID: 0000-0001-7429-3879](https://orcid.org/0000-0001-7429-3879))\n- Jessica A Wyllie<sup>1</sup>\n- Rebecca M Christoff<sup>4</sup>\n- Saadi Bayat<sup>4</sup>\n- Mark D Hulett<sup>1</sup> ([ORCID: 0000-0003-2072-5968](https://orcid.org/0000-0003-2072-5968))\n- Belinda M Abbott<sup>4</sup>\n- Anthony R Gendall<sup>5</sup> ([ORCID: 0000-0002-2255-3939](https://orcid.org/0000-0002-2255-3939))\n- Matthew A Perugini<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Genetics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia\n2. Australian Synchrotron, ANSTO Clayton Australia\n3. Department of Molecular Biology and Biochemistry, Monash University Melbourne Australia\n4. Department of Chemistry and Physics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia\n5. Department of Animal, Plant and Soil Sciences, AgriBio, La Trobe University Bundoora Australia\n6. Australian Research Council Research Hub for Medicinal Agriculture Bundoora Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nWeeds are becoming increasingly resistant to our current herbicides, posing a significant threat to agricultural production. Therefore, new herbicides with novel modes of action are urgently needed. In this study, we exploited a novel herbicide target, dihydrodipicolinate synthase (DHDPS), which catalyses the first and rate-limiting step in lysine biosynthesis. The first class of plant DHDPS inhibitors with micromolar potency against Arabidopsis thaliana DHDPS was identified using a high-throughput chemical screen. We determined that this class of inhibitors binds to a novel and unexplored pocket within DHDPS, which is highly conserved across plant species. The inhibitors also attenuated the germination and growth of A. thaliana seedlings and confirmed their pre-emergence herbicidal activity in soil-grown plants. These results provide proof-of-concept that lysine biosynthesis represents a promising target for the development of herbicides with a novel mode of action to tackle the global rise of herbicide-resistant weeds.\n\n## Introduction\n\nOur ability to provide food security for a growing world population is increasingly challenged by the emergence and spread of herbicide-resistant weeds. Resistance has now been observed to the most widely used classes of herbicides. This includes amino acid biosynthesis inhibitors such as chlorsulfuron, glufosinate, and glyphosate, which target enzymes in the biosynthetic pathways leading to the production of branched-chain amino acids, glutamine, and aromatic amino acids, respectively (Gaines et al., 2020; Hall et al., 2020). The impact of herbicide resistance is exacerbated by the lack of new herbicides entering the market in the past 30 years, especially those with new mechanisms of action (Duke, 2012). Nevertheless, the successful commercialisation of such herbicides provides proof-of-concept that targeting the biosynthesis of amino acids offers an excellent strategy for herbicide development (Hall et al., 2020). Amino acids are not only essential building blocks for protein biosynthesis, but they also play important roles in physiological processes that are critical for plant growth and development, such as carbon and nitrogen metabolism, in addition to serving as precursors to a wide range of secondary metabolites (Hildebrandt et al., 2015).\n\nOne amino acid biosynthesis pathway that remains largely unexplored for herbicide development is the diaminopimelate (DAP) pathway (Figure 1), which is responsible for the production of l-lysine (here after referred to as lysine) in plants and bacteria (Figure 1;\u00a0Hall and Soares da Costa, 2018). Animals, including humans, do not synthesise lysine, and therefore, must acquire it from dietary sources (Galili and Amir, 2013; Tom\u00e9 and Bos, 2007). Consequently, specific chemical inhibition of the DAP pathway in plants is unlikely to be harmful to animals and humans (Hutton et al., 2007). The DAP pathway commences with a condensation reaction between l-aspartate semialdehyde (ASA) and pyruvate to form (4S)\u22124-hydroxy-2,3,4,5-tetrahydro-(2S)-dipicolinic acid (HTPA), catalysed by HTPA synthase (EC 4.2.1.52), also known as dihydrodipicolinate synthase (DHDPS) (Griffin et al., 2012; Soares da Costa et al., 2018; Soares da Costa et al., 2015). HTPA is then reduced by dihydrodipicolinate reductase (DHDPR, EC 1.3.1.26) in the presence of NAD(P)H to produce 2,3,4,5-tetrahydrodipicolinate (THDP) (Christensen et al., 2016). In plants, THDP undergoes an amino-transfer by diaminopimelate aminotransferase (DAPAT, EC 2.6.1.83) to form l,l-DAP, which is converted to meso-DAP by diaminopimelate epimerase (DAPEpi, EC 5.1.1.7) (Hudson et al., 2005; McCoy et al., 2006). Lastly, meso-DAP is irreversibly decarboxylated by diaminopimelate decarboxylase (DAPDC, EC 4.1.1.20) to produce lysine (Peverelli and Perugini, 2015). Lysine regulates flux through the pathway by binding allosterically to DHDPS and inhibiting the enzyme. Thus, DHDPS catalyses the rate-limiting step of the DAP pathway (Geng et al., 2013; Soares da Costa et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig1-v2.jpg)\n\n**Figure 1.:** Plants utilise the diaminopimelate (DAP) pathway, a branch of the aspartate-derived super-pathway, to synthesise l-lysine. Firstly, l-aspartate semialdehyde (ASA) and pyruvate are converted to (4S)\u22124-hydroxy-2,3,4,5-tetrahydro-(2S)-dipicolinic acid (HTPA) in a condensation reaction catalysed by dihydrodipicolinate synthase (DHDPS). Dihydrodipicolinate reductase (DHDPR) then catalyses an NAD(P)H-dependent reduction of HTPA to produce 2,3,4,5-tetrahydrodipicolinate (THDP). THDP subsequently undergoes an amino-transfer reaction with l-glutamate, catalysed by diaminopimelate aminotransferase (DAPAT), to yield l,l-DAP. l,l-DAP is converted to meso-DAP by diaminopimelate epimerase (DAPEpi) and lastly, meso-DAP is decarboxylated by diaminopimelate decarboxylase (DAPDC) to yield l-lysine, which imparts a negative feedback loop on DHDPS.\n\nDue to the central role of DHDPS in lysine production in plants, this enzyme has been proposed as a potential target for the development of herbicides (Griffin et al., 2012; Soares da Costa et al., 2018). Indeed, the lysine analogue, S-(2-aminoethyl)-l-cysteine, halts rooting of potato tuber discs at mid-micromolar concentrations (Perl et al., 1993; Ghislain et al., 1995). However, given its poor in vitro potency against plant DHDPS, it is believed that this analogue inhibits plant growth by competing with lysine for incorporation into proteins rather than inhibition of the DHDPS enzyme (Ghislain et al., 1995; Perl et al., 1993). Plants typically have two annotated DHDPS-encoding genes (DHDPS) (Figure 2\u2014figure supplement 1;\u00a0Craciun et al., 2000; Sarrobert et al., 2000; Vauterin and Jacobs, 1994). In Arabidopsis thaliana, these genes are At3G60880 (DHDPS1) and At2G45440 (DHDPS2), which encode chloroplast-targeted AtDHDPS1 and AtDHDPS2, respectively (Jones-Held et al., 2012). RNA sequencing data have elucidated that both DHDPS-encoding genes are expressed at all stages of A. thaliana development, with the most prominent expression at the seed development stages, in the dry seeds and during germination (Klepikova et al., 2016). Interestingly, maximal DHDPS2 expression is approximately 3-fold greater than that of DHDPS1 (Klepikova et al., 2016). Moreover, upon comparison to the known glyphosate herbicide target, 5-enolpyruvyl-shikimate 3-phosphate synthase (At1G48860), expression of DHDPS1 is considerably lower at almost all developmental stages, while expression of DHDPS2 is comparable at all stages, except in the dry seeds (Klepikova et al., 2016). This is a key consideration in target validation as low expressing targets will require less inhibitor to achieve phytotoxicity. Double knockouts of DHDPS1 and DHDPS2 result in non-viable embryos even after exogenous supplementation with lysine, indicating that DHDPS activity is essential (Jones-Held et al., 2012). AtDHDPS enzymes exist as homotetramers (Figure 2A), with the active site located within the (\u03b2/\u03b1)8-barrel (Figure 2B) and the allosteric cleft in the tight-dimer interface located in the interior of the structure (Figure 2C;\u00a0Griffin et al., 2012; Hall et al., 2021).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig2-v2.jpg)\n\n**Figure 2.:** (A) Cartoon structure of Arabidopsis thaliana (At) DHDPS1 (PDB: 6VVI) in the unliganded form illustrating the \u2018back-to-back\u2019 homotetramer conformation. (B) Cartoon structure of AtDHDPS1, with residues critical for catalysis shown as sticks. (C) Multiple sequence alignment of residues important for catalysis. (D) Cartoon structure of AtDHDPS1, with residues important for lysine binding and allosteric regulation shown as sticks. Residues are coloured by nitrogen (blue), oxygen (red), and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schr\u00f6dinger). (E) Multiple sequence alignment of residues involved in allosteric lysine binding. Sequences are AtDHDPS1 (At1; UNIPROT ID: Q9LZX6), AtDHDPS2 (At2; UNIPROT ID: Q9FVC8), Arabidopsis lyrata DHDPS1 (Al1; UNIPROT ID: D7LRV3), Nicotiana tabacum DHDPS (Nt; UNIPROT ID: Q42948), Oryza sativa DHDPS1 (Os1; UNIPROT ID: A0A0K0K9A6), Solanum lycopersicum DHDPS1 (Sl1; UNIPROT ID: A0A3Q7IMG0), Triticum aestivum DHDPS1 (Ta1; UNIPROT ID: P24846), Vitis vinifera DHDPS1 (Vv1; UNIPROT ID: A0A438E022), Zea mays DHDPS1 (Zm1; UNIPROT ID: P26259), and Escherichia coli (Ec) DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to AtDHDPS1 with dots (.) representing interspacing residues. Sequences were aligned in BioEdit (v 7.2.5) (Hall, 1999) using the ClustalW algorithm (Thompson et al., 1994).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Arabidopsis thaliana DHDPS1 (UNIPROT ID: Q9LZX6) and DHDPS2 (UNIPROT ID: Q9FVC8), Arabidopsis lyrata DHDPS1 (UNIPROT ID: D7LRV3) and DHDPS2 (UNIPROT ID: D7LCJ3), Nicotiana tabacum DHDPS (UNIPROT ID: Q42948), Oryza sativa DHDPS1 (UNIPROT ID: A0A0K0K9A6) and DHDPS2 (UNIPROT ID: Q9LWB9), Solanum lycopersicum DHDPS1 (UNIPROT ID: A0A3Q7IMG0) and DHDPS2 (UNIPROT ID: A0A3Q7FJL9), Triticum aestivum DHDPS1 (UNIPROT ID: P24846) and DHDPS2 (UNIPROT ID: P24847), Vitis vinifera DHDPS1 (UNIPROT ID: A0A438E022) and DHDPS2 (UNIPROT ID: D7U7T8), Zea mays DHDPS1 (UNIPROT ID: P26259) and DHDPS2 (UNIPORT ID: B4FLW2), and Escherichia coli DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to AtDHDPS1; identical residues are shown as dots (.), gaps are shown as dashes (-), and similar residues are highlighted in grey. Sequences were aligned in BioEdit (v 7.2.5) using the ClustalW algorithm.\n\nIn this study, we describe a new class of plant DHDPS inhibitors. We show that these compounds display micromolar potency in vitro and in planta against A. thaliana using a combination of enzyme kinetics, seedling, and soil assays, whilst exhibiting no cytotoxic effects in bacterial or human cell lines at equivalent concentrations. Furthermore, we employ X-ray crystallography to show that\u00a0these compounds target a previously unexplored binding site within DHDPS, which is highly conserved amongst plant species. Thus, this study provides proof-of-concept that lysine biosynthesis represents a promising pathway to target for the development of herbicides with a new mode of action and highlights a novel DHDPS binding pocket to assist in the discovery of herbicide candidates.\n\n## Results\n\n### High-throughput chemical screen for inhibitor discovery\n\nA high-throughput screen of a library of 87,648 compounds was conducted against recombinant DHDPS enzyme by the Walter and Eliza Hall Institute High Throughput Chemical Screening Facility (Melbourne, Australia). The o-aminobenzaldehyde (o-ABA) colourimetric assay was used to estimate DHDPS activity via the formation of a purple chromophore that can be measured at 520\u2013540 nm (Yugari and Gilvarg, 1965). Using a cut-off equal to the mean \u00b1 3\u00d7 standard deviation for classification as a hit compound, 435 compounds out of 87,648 were identified as hits at 20 mM (hit rate = 0.50%). The activity of these 435 compounds was confirmed at the same concentration as the primary screen, resulting in 38 compounds demonstrating >40% inhibition of the DHDPS enzymatic reaction (confirmation rate = 8.7%). A counter screen was employed to exclude false-positive compounds i.e., compounds that interacted with o-ABA detection or absorbance quantification. The compounds that displayed confirmed DHDPS inhibition were subsequently progressed to full dose response titration assays using recombinant DHDPS. One promising compound from the screen was (Z)\u22122-(5-(4-fluorobenzylidene)\u22122,4-dioxothiazolidin-3-yl)acetic acid (FBDTA). The characterisation of two thiazolidinedione analogues containing methoxy substituents, MBDTA-1 and MBDTA-2, will be discussed here (Figure 3, Supplementary file 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig3-v2.jpg)\n\n**Figure 3.:** Chemical structures of the hit compound, (Z)\u22122-(5-(4-fluorobenzylidene)\u22122,4-dioxothiazolidin-3-yl)acetic acid (FBDTA), and two analogues, (Z)\u22122-(5-(2-methoxybenzylidene)\u22122,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-1) and (Z)\u22122-(5-(4-methoxybenzylidene)\u22122,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2).\n\n### Efficacy of inhibitors on recombinant DHDPS\n\nThe inhibitory activity of MBDTA-1 and MBDTA-2 against both recombinant A. thaliana DHDPS proteins was quantitated using a DHDPS\u2013DHDPR coupled assay (Atkinson et al., 2013). This was achieved by titrating different concentrations of each compound with substrates fixed at previously determined Michaelis\u2013Menten constant values (Griffin et al., 2012; Hall et al., 2021). The IC50 values of MBDTA-1 and MBDTA-2 against AtDHDPS1 were 126 \u00b1 6.50 \u00b5M and 63.3 \u00b1 1.80 \u00b5M, respectively (Figure 4A). Similarly, the dose\u2013response curves for AtDHDPS2 yielded IC50 values of 116 \u00b1 5.20 \u00b5M and 64.0 \u00b1 1.00 \u00b5M for MBDTA-1 and MBDTA-2, respectively (Figure 4B). As these compounds represent a novel class of inhibitors of plant DHDPS, we set out to assess the mechanism of inhibition by examining the binding of MBDTA-2 to DHDPS using X-ray crystallography.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig4-v2.jpg)\n\n**Figure 4.:** Dose responses of MBDTA-1 (\u25cf or \u25a0) and MBDTA-2 (\u25cb or \u25a1) against recombinant (A) AtDHDPS1 and (B) AtDHDPS2. Initial enzyme rates were normalised against a vehicle control (1% [v/v] DMSO). Normalised data (% activity remaining) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean \u00b1 S.E.M. (N = 3).\n\n### Molecular basis for inhibitor binding\n\nTo probe the molecular determinants for inhibition, recombinant AtDHDPS1 was co-crystallised with MBDTA-2 using the same crystallisation conditions as for the apo enzyme with the addition of inhibitor (Hall et al., 2021). Diffraction data were obtained at a maximal resolution of 2.29 \u00c5, phases solved by molecular replacement and repeating rounds of model building and refinement were performed that allowed us to generate an atomic inhibitor-bound model (Figure 5A, Table 1). We initially found several MBDTA-2 molecules at the crystal contact formed between protein molecules at chains B and D. Specifically, two parallel MBDTA-2 molecules were bound to H187 (of the symmetry mate) and F210 with complete occupancy (Figure 5\u2014figure supplement 1). However, given that these molecules were found solely at the crystal interface and were absent in chains A and C, they were assumed to be a result of non-specific binding.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig5-v2.jpg)\n\n**Figure 5.:** (A) Cartoon view of overall AtDHDPS1 quaternary (tetrameric) structure, illustrating the binding sites for MBDTA-2 at the centre of the tetramer. (B) Overlay of the lysine-bound (PDB: 6VVH) and MBDTA-2-bound structures. (C) Close-up of inhibitor binding pocket, with interacting residues shown as sticks. Lysine and MBDTA-2 are shown as green sticks and coloured by nitrogen (blue), oxygen (red), and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schr\u00f6dinger). (D) Sequence alignment of residues involved in MBDTA-2 binding from A. thaliana DHDPS1 (At1; UNIPROT ID: Q9LZX6), A. thaliana DHDPS2 (At2; UNIPROT ID: Q9FVC8), A. lyrata DHDPS1 (Al1; UNIPROT ID: D7LRV3), N. tabacum DHDPS (Nt; UNIPROT ID: Q42948), O. sativa DHDPS1 (Os1; UNIPROT ID: A0A0K0K9A6), S. lycopersicum DHDPS1 (Sl1; UNIPROT ID: A0A3Q7IMG0), T. aestivum DHDPS1 (Ta1; UNIPROT ID: P24846), V. vinifera DHDPS1 (Vv1; UNIPROT ID: A0A438E022), Z. mays DHDPS1 (Zm1; UNIPROT ID: P26259), and E. coli (Ec) DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to A. thaliana DHDPS1 with dots (.) representing interspacing residues. Sequences were aligned in BioEdit (v 7.2.5) using the ClustalW algorithm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Surface view of symmetry mates of MBDTA-2 bound toAtDHDPS1, highlighting chains A (blue), B (purple), C (cyan), and D (turquoise). (B) Close up of MBDTA-2 molecules bound to the surface of the protein on chains B (top inlay) and D (bottom inlay) and wedged between chains C and A, respectively, of the symmetry mates. MBDTA-2 is shown as green sticks and coloured by nitrogen (blue), oxygen (red) and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schr\u00f6dinger).\n\n**Table 1.**\n Summary of MBDTA-2-bound AtDHDPS1 crystallographic data collection, processing, and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection</th>\n      <th>AtDHDPS1 + MBDTA-2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Space group</td>\n      <td>P41212</td>\n    </tr>\n    <tr>\n      <td>Unit-cell parameters (\u00c5)</td>\n      <td>94.47, 94.47, 181.41</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>20\u20132.29 (2.43\u20132.29)</td>\n    </tr>\n    <tr>\n      <td>No. of observations</td>\n      <td>491,320 (74,297)</td>\n    </tr>\n    <tr>\n      <td>No. of unique reflections</td>\n      <td>37,390 (5768)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.4 (96.6)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>13.1 (12.8)</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>9.9 (39.1)</td>\n    </tr>\n    <tr>\n      <td>Rmeas (%)</td>\n      <td>10.0 (40.7)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>99.9 (97.8)</td>\n    </tr>\n    <tr>\n      <td>Average I/\u03c3(I)</td>\n      <td>27.9 (7.9)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>R (%)</td>\n      <td>18.3</td>\n    </tr>\n    <tr>\n      <td>Rfree (%)</td>\n      <td>22.6</td>\n    </tr>\n    <tr>\n      <td>No. (%) of reflections in test set</td>\n      <td>1071</td>\n    </tr>\n    <tr>\n      <td>No. of protein molecules per asu</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>r.m.s.d bond length (\u00c5)</td>\n      <td>0.007</td>\n    </tr>\n    <tr>\n      <td>r.m.s.d bond angle (\u00b0)</td>\n      <td>1.415</td>\n    </tr>\n    <tr>\n      <td>Average B-factors (\u00c52)*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein molecules</td>\n      <td>44.52</td>\n    </tr>\n    <tr>\n      <td>Ligand molecules</td>\n      <td>60.01</td>\n    </tr>\n    <tr>\n      <td>Water molecules</td>\n      <td>40.33</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot\u2020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Residues other than Gly and Pro in:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Most favored regions (%)</td>\n      <td>98.0</td>\n    </tr>\n    <tr>\n      <td>Additionally allowed regions (%)</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Disallowed regions (%)</td>\n      <td>0.0</td>\n    </tr>\n    <tr>\n      <td>PDB code</td>\n      <td>7MDS</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in parentheses are for the highest-resolution shell.*Calculated by BAVERAGE in CCP4 Suite (Winn et al., 2011).\u2020Calculated using MolProbity (Chen et al., 2010)._\n\nCloser inspection of the crystal structure revealed the presence of four MBDTA-2 molecules bound at the centre of the homotetrameric protein (Figure 5A), in antiparallel pairs with each molecule, which were stabilised by interactions across three of the monomers (Figure 5B). Interestingly, this pocket, albeit distinct to the lysine binding site, shares two residues with it, namely W116 and E147 (Figure 2C). Specifically, the methoxy group of MBDTA-2 interacts with W116, E147, and H150 from chain B, while the pendant carboxylic acid interacts with S115 from chain A as well as H150 and Q154 from chain C (Figure 5C). Additionally, we observed that upon binding, MBDTA-2 forces D117 to adopt a different rotamer conformation, which in turn, results in W116 assuming a different conformation. It must be noted that the four MBDTA-2 molecules were present with 50% occupancy. Consequently, each of the two moving residues, D117 and W116, adopt two distinct rotamer conformations, one of the apo- and ligand-bound states of AtDHDPS1. Given that no major rotamer changes or movement of catalytically important residues were noted, the exact mechanism of inhibition remains elusive. Nevertheless, this indicates the presence of a novel DHDPS allosteric pocket that has not been previously exploited for inhibitor discovery. Moreover, an alignment of the primary structure of several DHDPS enzymes from plant species indicates that the residues involved in MBDTA-2 binding are highly conserved across both monocotyledons and dicotyledons (Figure 5D) and therefore should allow for broad-spectrum inhibition.\n\n### Specificity of DHDPS inhibitors\n\nFollowing determination of the binding site, we examined the specificity of MBDTA-1 and MBDTA-2 to determine whether\u00a0any future applications would have off-target effects. First, the cytotoxicity of the inhibitors was examined against the human cell lines, HepG2 and HEK293, using the 3-(4,5-dimethylthiazol-2-yl)\u22122,5-diphenyltetrazolium bromide (MTT) assay (Figure 6A,B). At the highest concentration assessed (400 \u03bcM), treatment with the inhibitors did not affect the viability of either cell line relative to the vehicle control. Second, the effect of the inhibitors on several bacterial species commonly found in the human flora and soil microbiome was assessed by measuring their minimum inhibitory concentrations. No inhibition of bacterial growth was observed up to 128 \u00b5g\u00b7mL\u22121 (equivalent to ~400 \u00b5M) (Table 2), indicating that these DHDPS inhibitors have specificity directed towards plants.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig6-v2.jpg)\n\n**Figure 6.:** Toxicity of MBDTA-1 (black) and MBDTA-2 (grey), compared to the positive control defensin (white), assessed against (A) HepG2 and (B) HEK293 human cell lines using the MTT assay. Data were normalised against a vehicle control (1%\u00a0[v/v] DMSO) and plotted against inhibitor concentration. Data represents mean \u00b1 S.E.M. (N = 3).\n\n**Table 2.**\n Minimum inhibitory concentration (MIC) values for MBDTA-1 and MBDTA-2 against several bacterial strains.Table 2\u2014source data 1.Minimum inhibitory concentration(MIC) values for MBDTA-1 and MBDTA-2 against several bacterial strains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>MBDTA-1 MIC (\u00b5g\u00b7mL\u22121)</th>\n      <th>MBDTA-2 MIC (\u00b5g\u00b7mL\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Human flora</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Enterococcus spp.</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Staphylococcus aureus</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Escherichia coli</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Soil bacteria</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Enterobacter ludwigii</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Arthrobacter sp.</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Enterobacter cancerogenus</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Cedecea davisae</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n    <tr>\n      <td>Rhodococcus erthropolis</td>\n      <td>&gt;128</td>\n      <td>&gt;128</td>\n    </tr>\n  </tbody>\n</table>\n\n### Herbicidal efficacy\n\nGiven the promising in vitro properties of the inhibitors, we determined their herbicidal efficacy against A. thaliana, initially using seedling agar assays. At high micromolar concentrations of both MBDTA-1 and MBDTA-2, growth was completely attenuated, and most seeds were unable to germinate. Upon quantitation of root lengths, we determined an IC50 of 98.1 \u00b1 4.34 \u00b5M and 47.4 \u00b1 0.450 \u00b5M for MBDTA-1 (Figure 7A) and MBDTA-2 (Figure 7B), respectively. Based on these results, we examined their pre-emergence effect on soil-grown A. thaliana. Specifically, compounds were dissolved in a solution containing a non-ionic organic surfactant (Agral) and seeds were treated immediately after sowing on soil. The vehicle control-treated plants (Figure 8A) were used as a benchmark to visually assess the effects of inhibitors. The growth of A. thaliana in the presence of MBDTA-1 (Figure 8B) or MBDTA-2 (Figure 8C) at 300 mg\u00b7L\u22121 was severely impeded as evidenced by the growth area relative to the DMSO control (Figure 8D), wherein few seeds were able to germinate. This is consistent with the results observed at the highest concentrations of inhibitor on agar. Furthermore, the A. thaliana seeds capable of germinating in the presence of 300 mg\u00b7L\u22121 MBDTA-2 were halted at the cotyledon stage before the generation of true leaves. As such, our newly discovered MBDTA compounds represent the first DAP pathway inhibitors with soil efficacy against plants.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig7-v2.jpg)\n\n**Figure 7.:** A thaliana root lengths after treatment with increasing concentrations of either (A) MBDTA-1 or (B) MBDTA-2. Root lengths were determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Normalised data (\u25cf) (% root length) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean \u00b1 S.E.M. (N = 3).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig8-v2.jpg)\n\n**Figure 8.:** Treatments of (A) vehicle control (1%\u00a0[v/v] DMSO), (B) 300 mg\u00b7L\u22121 MBDTA-1, and (C) 300 mg\u00b7L\u22121 MBDTA-2 given at day 0 (first day under controlled environment room conditions). A representative in triplicate of the biological replicates is shown vertically. (D) Leaf area of MBDTA-1/2-treated A. thaliana. Area was determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Data represents mean \u00b1 S.D. (n = 3).\n\n## Discussion\n\nThe lack of herbicides with novel modes of action entering the market in the past three decades has led to an over-reliance on our current agrichemicals, which has contributed to the rapid generation of resistance. Although the DAP pathway has gained attention as a way to increase the nutritional content of lysine in crops (Wang et al., 2017), it has remained an unexplored target for the development of herbicides until now. DHDPS catalyses the first step of the DAP pathway and is commonly duplicated in plant species, including A. thaliana. Both DHDPS proteins are localised to the chloroplast and share >85% of primary structure identity, with the majority of differences at the N-terminus. Although DHDPS is essential in A. thaliana (Jones-Held et al., 2012), there have been no published inhibitors of the plant enzymes, with much of the focus on inhibitors of bacterial DHDPS as possible new antibiotics. Several iterations of active site inhibitors against bacterial DHDPS enzymes have been developed, but most of these have, at best, high micromolar potency (Christoff et al., 2019). As the active site of DHDPS is seemingly difficult to target, the allosteric site of the enzyme could represent a more fruitful route for the development of inhibitors. Indeed, lysine is the most potent inhibitor of plant DHDPS orthologues. Furthermore, the most potent bacterial DHDPS inhibitor to date is bislysine, whereby two lysine molecules are linked together via an ethylene bridge (Skovpen et al., 2016). Although herbicides commonly directly target, or bind closely to, the active site of their respective enzyme target, this study shows that\u00a0allosteric site inhibitors can be employed and afford lethal phytotoxicity.\n\nOur study describes the discovery of the first plant DHDPS inhibitors, with two MBDTA analogues identified and characterised here. The mode of inhibition is via a novel binding pocket adjacent to the lysine binding site, which results in the allosteric inhibition of the enzyme. Lysine has recently been shown to differentially inhibit the AtDHDPS isoforms, with AtDHDPS1 being 10-fold more sensitive to the allosteric inhibitor (Hall et al., 2021). In this study, we demonstrate that the MBDTA compounds have similar inhibitory effects against both enzymes. This further supports crystallography data demonstrating that MBDTA-2 binds in a pocket adjacent to the lysine allosteric site and is likely acting in a different way. However, the exact mechanism of inhibition, much like lysine-mediated allostery, remains elusive. Moreover, this binding pocket is conserved across multiple plant species, including both monocots and dicots. Importantly, our compounds lacked off-target toxicity, whilst resulting in the inhibition of germination and growth of A. thaliana seedlings on solidified media and in soil. However, as expected, plant inhibition was more pronounced on media likely due to the stability, distribution, and persistence of the compounds. Nevertheless, the assays performed on soil demonstrate their potential applicability as pre-emergence treatments. It would also be of interest to investigate the metabolic shifts in plants treated with inhibitors and determine if there is a toxic build-up of other amino acids such as threonine, which has been observed in DHDPS knockout experiments (Sarrobert et al., 2000). Indeed, a common trait of systemic herbicides is that their efficacy is often related to the cascading consequences of inhibiting a key reaction, rather than inhibition of the reaction itself (Hall et al., 2020). Additionally, it would be of interest to determine the metabolic state of the compounds after uptake into the cells. This would elucidate whether the MBDTA compounds act as proherbicides, potentially through the demethylation of their aryl methyl ethers. As such, it would also be of interest to test demethylated analogues in vitro and in planta to assess any changes in potency relative to the methoxy compounds.\n\nDeveloping enzyme inhibitors into a commercial product is an arduous and costly process. Optimisation of phytotoxicity, water solubility, cell wall penetration, translocation, soil/water persistence, and formulation must all be considered. The MBDTA compounds described here represent an attractive avenue to pursue, and with the elucidation of a novel binding pocket within DHDPS, it may be possible to rationally improve their potency guided by the crystallography data. Specifically, it would be of interest to build compounds that extend into the lysine binding pocket, which could improve potency. Alternatively, novel chemical scaffolds could be explored to target the DHDPS pocket identified. The inhibitors must be able to traverse the chloroplast membrane in order to reach the DHDPS target and be amenable to post-emergence application. It would also be of interest to study inhibitors with increased hydrophobicity and thus, potentially enhanced transport through the epidermis, cell wall, and plastid membrane, to reach the DHDPS target. However, it is important to recognise that there is a fine balance between membrane permeability and aqueous solubility that must be achieved for any new herbicides. Following the synthesis of more potent analogues, it would be of interest to test inhibitors against weed species. To further pursue the compounds described herein and eventually deploy more potent analogues as herbicides, tolerant crops will eventually need to be engineered. As the MBDTA binding pocket is highly conserved among plant species, these inhibitors will likely have broad-spectrum phytotoxicity. Given that the inhibitors do not bind at the active site, it should be possible to engineer tolerant crops with mutant DHDPS enzymes that are not susceptible to inhibition with minimal effects on enzyme function. Importantly, DHDPS inhibitors could also be used in conjunction with other herbicides as part of a combinatorial treatment to yield synergistic responses and circumvent resistance mechanisms to tackle the global rise in herbicide-resistant weeds.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>DHDPS1</td>\n      <td>TAIR</td>\n      <td>At3G60880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Arabidopsis thaliana)</td>\n      <td>DHDPS2</td>\n      <td>TAIR</td>\n      <td>At2G45440</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HepG2</td>\n      <td>ATCC</td>\n      <td>ATCC: HB-8065 RRID:CVCL_0027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>ATCC:ACS-4500 RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### High-throughput chemical screen and analogue synthesis\n\nA high-throughput screen of a library of 87,648 compounds was conducted against recombinant DHDPS enzyme by the Walter and Eliza Hall Institute High Throughput Chemical Screening Facility (Melbourne, Australia). The o-ABA colourimetric assay employed assesses DHDPS activity via the formation of a purple chromophore that can be measured at 520\u2013540 nm (Yugari and Gilvarg, 1965). The assay was miniaturised, so it could be performed in 384-well plates. For the primary screen, reactions comprised 0.5 mg\u00b7mL\u22121 DHDPS, 0.5 mM sodium pyruvate, and 0.5 mM ASA. Library compounds were added at final concentrations of 20 mM, with DMSO concentrations kept at 0.4% (v/v). After ASA addition, reactions were incubated at 25\u00b0C for 15 min, before a final concentration of 350 mM HCl was added to stop the reaction. o-ABA was subsequently added to a final concentration of 0.44 mg\u00b7mL\u22121, plates incubated at room temperature for 1 hr, and absorbance quantified at 540 nm. Vehicle (DMSO) was used as positive controls, and negative controls lacked ASA. For the secondary screen, 11-point dose\u2013response curves were generated using the same reactions as described above. A counter screen was conducted using the same set-up albeit without the inclusion library compounds before the addition of 350 mM HCl. Library compounds were then added after the reaction was stopped, followed by o-ABA to a final concentration of 0.44 mg\u00b7mL\u22121. The plates were subsequently incubated at room temperature for 1 hr, and absorbance was\u00a0quantified at 540 nm. Analogues were designed and synthesised using the methods described in previous and contemporary work (Perugini et al., 2018).\n\n### Expression and purification of A. thaliana DHDPS enzymes\n\nBoth DHDPS isoforms from A. thaliana were expressed and purified as previously described (Hall et al., 2021). Briefly, AtDHDPS isoforms were expressed in Escherichia coli BL21 (DE3) cells, with AtDHDPS2 requiring the GroEL/ES chaperone complex to facilitate correct folding. Purification was performed using immobilised metal affinity chromatography. Lastly, fusion tags were cleaved by human rhinovirus 3C or tobacco etch virus protease for AtDHDPS1 and AtDHDPS2, respectively, whilst simultaneously dialysing into storage buffer (20 mM Tris, 150 mM NaCl, 0.5 mM TCEP, pH 8.0).\n\n### Enzyme kinetics\n\nDHDPS enzyme activity was determined using the DHDPS\u2013DHDPR coupled assay as previously described by measuring the oxidation of NADPH (Atkinson et al., 2013; Hall et al., 2021). Assays were carried out in a Cary 4000 UV/Vis spectrophotometer at 30\u00b0C with substrates fixed at the previously determined Michaelis\u2013Menten constant values (Griffin et al., 2012; Hall et al., 2021). Inhibitor was titrated against AtDHDPS enzymes, and reactions were incubated at 30\u00b0C for 12 min before initiation with ASA. Initial velocity data were normalised against a vehicle (DMSO) control and analysed using Equation 1 (log(inhibitor) vs. normalised response \u2013 variable slope, GraphPad Prism v 8.3). Dose responses were performed with three technical replicates for each concentration of compound. Dose responses were repeated with three biological replicates, each using a new stock of reagents.\n\n$$\nY\u00a0=\u00a0100/(1+10^{((LogIC_{50}\u2212X)\\timesHillSlope)})\n$$\n\nwhere Y is the normalised rate, logIC50 is the logarithmic concentration of ligand resulting in 50% activity, X is the concentration of ligand, and Hill Slope is the steepness of the curve.\n\n### X-ray crystallography\n\nAtDHDPS1 was co-crystallised as previously described in the presence of MBDTA-2 (Hall et al., 2021). Briefly, protein (8.5 mg\u00b7mL\u22121) was incubated at 20\u00b0C with MBDTA-2 at a final concentration of 1 mM (in 2%\u00a0[v/v] DMSO) before being added in a 1:1 ratio to a reservoir solution containing 1.4 M (NH4)2SO4, 0.1 M NaCl, 0.1 M HEPES (pH 7.5), and 1 mM MBDTA-2 (in 2%\u00a0[v/v] DMSO). Plates were incubated at 20\u00b0C. Crystals were briefly dipped in cryo-protectant (1.4 M (NH4)2SO4, 0.1 M NaCl, 0.1 M HEPES [pH 7.5], 1 mM MBDTA-2 [in 2% (v/v) DMSO], and 20%\u00a0[v/v] glycerol) and flash frozen in liquid nitrogen. Data were collected at the Australian Synchrotron using the MX2 beamline (Arag\u00e3o et al., 2018). A total of 1800 diffraction images were collected with 0.1\u00b0 oscillation using an EIGER 16M detector at a distance of 350 mm, with 20% beam attenuation for a total exposure time of 18 s. X-ray data were integrated using XDS (Kabsch, 2010) and scaled with AIMLESS (Evans and Murshudov, 2013) before phases were determined by molecular replacement through Auto-Rickshaw (Panjikar et al., 2005) with AtDHDPS1 (PDB ID: 6VVI) used as a search model (Hall et al., 2021). Manual building was performed in COOT Emsley et al., 2010 followed by refinement employing REFMAC5 in the CCP4i2 (v7.0) software suite (Emsley et al., 2010; Murshudov et al., 2011; Winn et al., 2011). SMILES string of the inhibitor (MBDTA-2) was processed through AceDRG to generate the coordinate and cif file (Long et al., 2017). Validation was completed using MolProbity (Chen et al., 2010). The structure of MBDTA-2 bound to AtDHDPS1 is deposited in the Protein Data Bank as 7MDS.\n\n### Cell lines\n\nCell lines used were sourced from the American Type Culture Collection and were authenticated using STR DNA profiling, and no mycoplasma contamination was detected.\n\n### Toxicity assays\n\nThe toxicity of inhibitors against human HepG2 and HEK293 cell lines was assessed using the MTT viability assay as previously described (Soares da Costa et al., 2012). In brief, the cells were suspended in Dulbecco-modified Eagle\u2019s medium containing 10% (v/v) fetal bovine serum and then seeded in 96-well tissue culture plates at 5000 cells per well. After 24 hr, cells were treated with 50\u2013400 \u00b5M of MBDTA-1 or MBDTA-2, such that the DMSO concentration was consistent at 1% (v/v) in all wells. Alternatively, cells were treated with the cytotoxic defensin protein at 100 \u00b5M (Baxter et al., 2017). After treatment for 48 hr, MTT cell proliferation reagent was added to each well and incubated for 3 hr at 37\u00b0C. The percentage viability remaining reported is relative to the vehicle control of 1% (v/v) DMSO. Assays were performed in three biological replicates, using a different batch of reagents and cells.\n\n### Antibacterial assays\n\nThe minimum inhibitory concentration (MIC) for MBDTA-1 and MBDTA-2 was determined against a panel of Gram-positive and Gram-negative bacteria using a broth microdilution method according to guidelines defined by the Clinical Laboratory Standards Institute (National Committee for Clinical Laboratory Standards, 2004; National Committee for Clinical Laboratory Standards, 2003). An inoculum of 1 \u00d7 105 colony forming units/mL was used, and the testing conducted using tryptic soy broth in 96-well plates. Growth was assessed after incubation at 37\u00b0C for 20 hr by measuring the absorbance at 600 nm. The MIC value is defined as the lowest concentration of inhibitor where no bacterial growth is observed. Experiments were performed in three biological replicates, using a different stock of reagents and bacterial culture.\n\n### Seedling assays\n\nInhibitors were dissolved in 1\u00d7 Gamborg modified/Murashige Skoog (GM/MS) media to final concentrations of 8\u20131000 \u00b5M. Specifically, media were prepared with 0.8% (w/v) plant grade agar and 1% (w/v) sucrose before sterilisation (Lindsey et al., 2017). A. thaliana seeds were surface sterilised by soaking in 80% (v/v) ethanol for 5\u00a0min, followed by a 15 min incubation in bleach solution containing 1% (v/v) active NaClO and rinsed in excess sterile water before placing onto agar-containing inhibitors (Boyes et al., 2001). A. thaliana seeds were stratified at 4\u00b0C for 72 hr in the dark prior to relocation to a controlled environment room (CER), where seeds were grown at 22 \u00b1 0.5\u00b0C at 60 \u00b1 10% humidity with light produced by cool white fluorescent lights at a rate of ~110 \u00b5mol\u00b7m\u22122\u00b7s\u22121 over long-day conditions (16 hr light:8 hr dark) (Boyes et al., 2001). Plates were positioned upright to allow roots to grow downwards, and after 7 days, images were taken, and root length was\u00a0determined using ImageJ (v 1.53b) (Rasband, 2011). Outliers were identified using the 1.5\u00d7 interquartile range method (Tukey, 1977). Resulting data were analysed using Equation 1 (log(inhibitor) vs. normalised response \u2013 variable slope, GraphPad Prism v 8.3). No DMSO and vehicle (1%\u00a0[v/v] DMSO) controls were also employed. Assays were carried out with 20 technical replicates (i.e. seeds) per experiment and were repeated in three biological replicates, with each biological replicate using a different stock of reagents and batch of seeds.\n\n### Soil assays\n\nInhibitors were prepared in DMSO and diluted to 300 mg\u00b7L\u22121 (1%\u00a0[v/v] DMSO) in H2O containing 0.01% (v/v) Agral (Syngenta, North Ryde, NSW, Australia). A. thaliana seeds were surface sterilised as above and resuspended in 0.1% (w/v) agar before stratification. Subsequently, ~30 seeds were sown into a small indentation (depth ~1 cm) in moist seed raising soil (pH 5.5) (Biogro, Dandenong South, VIC, Australia), supplemented with 0.22% (w/w) Nutricote N12 Micro 140 day-controlled release fertiliser (Yates, Sydney, NSW, Australia). Seeds were treated with 1 mL (equivalent to 1200 g\u00b7ha\u22121) of compound or vehicle control by pipetting and covered with soil just prior to transfer to a CER and images taken after 7 days. Area analysis was performed using colour thresholding in ImageJ (v 1.53b) and normalised against the DMSO control (Corral et al., 2017; Rasband, 2011). Assays were carried out across three technical replicates (i.e. pots) using the same batch of reagents and seed stock.\n",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "bd24e363-b15f-4d92-8527-5ba6b8482a57",
+      "submission_id": "2991967e-313a-4dcc-8976-2b1360de72f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Todd Gaines, Colorado State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.69444.sa1](https://doi.org/10.7554/eLife.69444.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript reports two compounds identified out of a large library screen that have inhibition activity on dihydrodipicolinate synthase (DHDPS), a two copy gene in most plants that is essential in Arabidopsis and is the rate-limiting step for lysine synthesis. Inhibition was shown using an in vitro assay on recombinant DHDPS, a crystal model was used to identify possible binding sites, and biological data in the form of plant growth inhibition on agar and in soil were reported to demonstrate proof of concept for herbicidal activity. Lysine biosynthesis inhibition has high potential as an important new herbicide mode of action to address the global issue of multiple herbicide-resistant weeds.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Towards Novel Herbicide Modes of Action by Inhibiting Lysine Biosynthesis in Plants\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, including Todd Gaines as the Reviewing Editor and Reviewer #2, and the evaluation has been overseen Detlef Weigel as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Stephen Duke (Reviewer #1); Franck Dayan (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Reviewer #1 noted that the I50 values for inhibition of the putative target enzyme and for inhibition of Arabidopsis growth on agar were similar, which suggests that the chemical structures (both methoxy compounds) of the two herbicide candidates may be proherbicides, possibly demethoxylated in vivo to compounds that are more active at the target site. The authors are requested to revise the discussion to explore the possibility that the compounds may be proherbicides, and describe follow-up experiments that would be needed to test this hypothesis.\n\n2) Reviewer #3 noted that the tested compounds may be allosteric inhibitors; the authors are requested to revise the manuscript to address this point and possible implications for developing commercial inhibitors of this enzyme.\n\nReviewer #1:\n\nThe authors provide candidates for a new herbicide mode of action \u2013 something that is badly needed. This well-written paper provides good data at the enzyme and whole plant level. However, the similar I50 values at these two levels is surprising. I think that the two compounds are probably proherbicides. More data will be needed to determine this.\n\nThese authors provide data in support of two new compounds being herbicidal as a result of inhibition of the first enzyme of the lysine biosynthesis pathway \u2013 a new herbicide mode of action. The paper is well written and good as far as it goes, but the similar I50 values for inhibition of the putative target enzyme and for inhibition of arabidopsis growth on agars are surprising, as target enzyme I50 values for herbicides are normally much lower than whole plant herbicide I50 values. The chemical structures (both methoxy compounds) of the two herbicide candidates indicates that they may be proherbicides \u2013 that is, they are probably demethoxylated in vivo to compounds that are more active at the target site. Nevertheless, this paper adds significantly to what is known of herbicides that act on amino acid synthesis and will be of great interest to those who work in this field.\n\nAny information about a potential new mode of action for herbicides is welcome. This is a well-written paper. However, there is a major issue that should be easily sorted out with a couple of simple experiments.\n\nThis issue is that the in vitro activity of the two compounds on the enzyme is similar to the in vivo activity on the Arabidopsis on agar. Usually, the in vitro I50 value for the enzyme is much lower than that for as a herbicide on whole plants. Looking at the structures of the two compounds, I would guess that both of them are demethylated in vivo (like diclofop-methyl). If so, the molecules that reach the target are the demethylated versions of these compounds. If I am right, the I50 values of the demethylated compounds on the enzyme will be much lower that what is reported for the O-methylated forms, and the I50 values of the demethylated compounds as herbicides on Arabidopsis in agar will be much higher than that of the O-methylated forms. These experiments should be done in future work, and this possibility should be discussed in the paper because it will be obvious to most scientists who deal with herbicide chemistry and mode of action.\n\nReviewer #2:\n\nThis manuscript reports convincing data showing several compounds identified out of a large library screen that have inhibition activity on dihydrodipicolinate synthase (DHDPS), a two copy gene in most plants previously shown to be essential in Arabidopsis and previously shown by this research group to be the rate limiting step for lysine synthesis. Inhibition was shown using an in vitro assay on recombinant DHDPS, a crystal model was used to identify possible binding sites, and biological data in the form of plant growth inhibition on agar and in soil were reported to demonstrate herbicidal activity. Lysine biosynthesis inhibition has high potential as an important new herbicide mode of action.\n\nStrengths:\n\nThe combination of biochemical, crystallography, and biological data was very convincing to demonstrate the herbicidal activity of the tested compounds for lysine synthesis inhibition. The paper is novel in that while DHDPS has previously been shown to be essential in plants (double knockouts of the two genes are lethal), this is the first report of chemical inhibitors of DHDPS in plants. This would represent a new mode of action for herbicides, which is a major finding. The identified inhibitors have biological activity at reasonable concentrations that could be applicable in agriculture. The claims made by the authors are justified based on their data. All experiments are technically sound, the results are clearly presented, and the supporting data are all fully available.\n\nWeaknesses:\n\nSome questions remain about the potential utility of the identified inhibitors as effective herbicides. The soil application experiment showed biological activity by reducing plant growth, but the possible use of the inhibitors for post-emergence weed control was not explored. The inhibitors would likely be non-selective, meaning they would also damage crops, so the potential for generating resistant crops by identifying metabolic detoxification genes from bacteria could be explored.\n\nComments for the authors:\n\nThis is an outstanding manuscript. I have a few comments for some points that could be addressed to further improve the paper.\n\nRegarding the soil experiment, was the compound sprayed onto the soil before placing the seeds, or was the compound sprayed directly on the seeds? Were seeds covered by soil, whether before or after spraying, and if covered, to what depth of soil? This is important to know if the seedlings are absorbing the herbicide from the soil-water solution, or if they were contacted directly by the spray droplets at application. A few more details needed on the soil, such as composition (pH; percent sand, silt, and clay; percent organic matter). Regarding the application of the herbicide solution to the soil, the authors state that 1 mL was applied, but how? Was it pipetted on or sprayed? The 1 mL volume is quite a lot for the small area, and may represent an unrealistically high quantity. Also need to state volume of solution sprayed on soil (the solution was 300 mg/L of the herbicide but what volume of this was applied to the soil?) This is important to enable replication and testing by others.\n\nThe authors state that there are two copies of the DHDPS gene in plants; suggest that they consider reporting published Arabidopsis RNA seq data for these genes to state what is their relative expression level, whether relatively low, mid, or high? And is there any tissue or developmental specificity known for these genes? These questions are relevant because an ideal herbicide target has lower expression, thereby making it easier to inhibit.\n\nThis herbicide would apparently be non-selective in crops, given that it has conserved sequence in rice and Arabidopsis, grape, wheat. The authors could perhaps explore a few more dicot plant families containing important weeds to determine if sequence conservation is maintained. Also there is the question of how this herbicide would be used in crops; if non-selective, a resistance transgene would be needed. The authors could consider proposing in the discussion to run bacteria screens to look for metabolism genes to engineer crops?\n\nRegarding how the herbicide would be used, what about leaf uptake? What are the physicochemical properties of the compounds? Predictions about binding to soil? Consider running them through a predictor to report log Kow, any pKa that would be relevant for uptake and acid trapping, and try to predict if these would translocate or not. A potentially helpful reference for this would be:\n\nGandy, M.N., Corral, M.G., Mylne, J.S. and Stubbs, K.A., 2015. An interactive database to explore herbicide physicochemical properties. Organic & biomolecular chemistry, 13(20), pp.5586-5590.\n\nLine 345-346: hydrophilicity is not generally expected to increase movement across cell wall, should this be hydrophobicity? Again the log Kow to indicate water solubility should be reported. In addition to the cell wall as a barrier, herbicides must pass the cell membrane and if plastid targeted, the plastid membrane, along with passing the wax and cuticle on the epidermis; consider revising this discussion point to expand that the cell wall is not the only barrier for uptake.\n\nReviewer #3:\n\nThe discovery of herbicide target sites is a difficult endeavor. While there are hundreds of targets that can be inhibited, it turns out that very few of them provide suitable lethality to develop commercial herbicides. This study investigates dihydrodipicolinate synthase (the rate limiting step in lysine biosynthesis as a potential herbicide target site) and identifies a couple of molecules that provide some level of inhibition. Binding of these inhibitors is characterized biochemically and via crystallography.\n\nLysine biosynthesis is an essential amino acid, so only plants and microbes have the capacity to synthesize it. This makes it a particularly attractive pathway to develop herbicides because animals (humans) don't have that pathway. So the rational for the study is valid.\n\nThis study investigates dihydrodipicolinate synthase (the rate limiting step in lysine biosynthesis as a potential herbicide target site) and identifies a couple of molecules that provide some level of inhibition. Generally speaking this study is done properly and the experiments appear to have been done correctly. I have made several grammatical/typographical suggestions directly on the manuscript.\n\nFirst, the authors do a good job demonstrating that DHDPS can be inhibited, establishing the fact that it might be a suitable target site. The two most active molecules are not very potent, so I am glad the authors don't oversell the potency of the molecules they discovered. However, it is interesting that these compounds have some soil activity, albeit at very high concentrations.\n\nI find the portion of the manuscript characterizing the binding of these inhibitors could be developed a little more.\n\n1. At first glance, I am not sure if the pose of the inhibitors shown in Figure 5 is a true reflection of their binding on DHDPS. These poses may be a crystallization artifact. The inhibitors appear to interact with each other via pi pi stacking and I wonder if they would crystalize like this if by themselves.\n\n2. The authors did note that some histidine residues moved to accommodate for the presence of the inhibitors. However, one would expect that the inhibitors binding would be stabilized by pi pi stacking with the histidine or the tryptophan residues within the proximity of the molecules, but this does not appear to be the case. May be the authors should discuss this.\n\n3. The binding of these inhibitors appears to overlap with the allosteric binding site of lysine. This may explain why the potency of the inhibitors is not very high. To my knowledge, no commercial herbicide is known to target an allosteric site. Their may be come biochemical reasons for this. Allosteric regulation by inhibitors may not be 'lethal' enough. The authors should discuss this possibility. I suggest that they also include a statement indicating that other inhibitors interacting with the catalytic domain of DHDPS might lead to more active herbicide leads.\n\nNonetheless, this article is very interesting and provides new information.\n\nThe authors will not have any problem addressing the grammatical/typographical suggestions I made directly on the manuscript (see attached PDF).\n",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1112ee4-6d72-4b94-baae-7aa8764b5228",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C1",
+      "claim": "Weeds are becoming increasingly resistant to current herbicides, posing a significant threat to agricultural production.",
+      "claim_type": "EXPLICIT",
+      "source": "Weeds are becoming increasingly resistant to our current herbicides, posing a significant threat to agricultural production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of herbicide resistance in agriculture, presented as established fact in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "ad63187c-cb82-45bc-96f5-0ce786e30ba6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C2",
+      "claim": "Dihydrodipicolinate synthase (DHDPS) catalyses the first and rate-limiting step in lysine biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we exploited a novel herbicide target, dihydrodipicolinate synthase (DHDPS), which catalyses the first and rate-limiting step in lysine biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact about DHDPS function and is supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "3f714d6c-5642-420f-a5c1-bbf402f4f124",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C3",
+      "claim": "The first class of plant DHDPS inhibitors with micromolar potency against Arabidopsis thaliana DHDPS was identified using a high-throughput chemical screen.",
+      "claim_type": "EXPLICIT",
+      "source": "The first class of plant DHDPS inhibitors with micromolar potency against Arabidopsis thaliana DHDPS was identified using a high-throughput chemical screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data from the high-throughput screen and subsequent dose-response assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "b7d73968-9fcf-41c5-a97f-a893ed9f24e3",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C4",
+      "claim": "The inhibitors bind to a novel and unexplored pocket within DHDPS that is highly conserved across plant species.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that this class of inhibitors binds to a novel and unexplored pocket within DHDPS, which is highly conserved across plant species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by X-ray crystallography data and sequence alignment analysis presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "01f397a6-388d-4659-b6bd-28c216328db3",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C5",
+      "claim": "The inhibitors attenuated the germination and growth of A. thaliana seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitors also attenuated the germination and growth of A. thaliana seedlings and confirmed their pre-emergence herbicidal activity in soil-grown plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from seedling assays showing dose-dependent inhibition of root growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c5ad9655-917a-44b6-a281-cf45b3c96d07",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C6",
+      "claim": "The inhibitors have pre-emergence herbicidal activity in soil-grown plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitors also attenuated the germination and growth of A. thaliana seedlings and confirmed their pre-emergence herbicidal activity in soil-grown plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from soil assays showing reduced plant growth and germination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "a16bbfde-0eab-46d6-80c9-c93f2a8b2b85",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C7",
+      "claim": "Lysine biosynthesis represents a promising target for the development of herbicides with a novel mode of action.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide proof-of-concept that lysine biosynthesis represents a promising target for the development of herbicides with a novel mode of action to tackle the global rise of herbicide-resistant weeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing inhibitor efficacy in vitro and in planta.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "73aa9993-4693-4c1e-8be3-cceb22ce8a29",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C8",
+      "claim": "Resistance has been observed to amino acid biosynthesis inhibitors such as chlorsulfuron, glufosinate, and glyphosate.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance has now been observed to the most widely used classes of herbicides. This includes amino acid biosynthesis inhibitors such as chlorsulfuron, glufosinate, and glyphosate, which target enzymes in the biosynthetic pathways leading to the production of branched-chain amino acids, glutamine, and aromatic amino acids, respectively (Gaines et al., 2020; Hall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on herbicide resistance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "2dd284ca-5319-44f7-a9c6-aae4a8e34c57",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C9",
+      "claim": "Chlorsulfuron, glufosinate, and glyphosate target enzymes in the biosynthetic pathways leading to the production of branched-chain amino acids, glutamine, and aromatic amino acids, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes amino acid biosynthesis inhibitors such as chlorsulfuron, glufosinate, and glyphosate, which target enzymes in the biosynthetic pathways leading to the production of branched-chain amino acids, glutamine, and aromatic amino acids, respectively (Gaines et al., 2020; Hall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on herbicide mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "2c33f7f3-f800-4b27-880a-5a5bb5549fd8",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C10",
+      "claim": "No new herbicides with new mechanisms of action have entered the market in the past 30 years.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of herbicide resistance is exacerbated by the lack of new herbicides entering the market in the past 30 years, especially those with new mechanisms of action (Duke, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Duke, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "19f74695-74e6-4060-b7d6-c17223662625",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C11",
+      "claim": "The successful commercialisation of herbicides targeting amino acid biosynthesis provides proof-of-concept that targeting amino acid biosynthesis offers an excellent strategy for herbicide development.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the successful commercialisation of such herbicides provides proof-of-concept that targeting the biosynthesis of amino acids offers an excellent strategy for herbicide development (Hall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hall et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "b091024e-a8e8-4f03-96a4-c27b769f2df1",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C12",
+      "claim": "Amino acids are essential building blocks for protein biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids are not only essential building blocks for protein biosynthesis, but they also play important roles in physiological processes that are critical for plant growth and development, such as carbon and nitrogen metabolism, in addition to serving as precursors to a wide range of secondary metabolites (Hildebrandt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "49332b14-7318-4cff-a837-6acbf33445c9",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C13",
+      "claim": "Amino acids play important roles in physiological processes critical for plant growth and development, such as carbon and nitrogen metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids are not only essential building blocks for protein biosynthesis, but they also play important roles in physiological processes that are critical for plant growth and development, such as carbon and nitrogen metabolism, in addition to serving as precursors to a wide range of secondary metabolites (Hildebrandt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hildebrandt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c152ace1-2633-4a7d-a1c9-ce7292148ed8",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C14",
+      "claim": "Amino acids serve as precursors to a wide range of secondary metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids are not only essential building blocks for protein biosynthesis, but they also play important roles in physiological processes that are critical for plant growth and development, such as carbon and nitrogen metabolism, in addition to serving as precursors to a wide range of secondary metabolites (Hildebrandt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hildebrandt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "6fe9fda1-b893-4969-bc43-5675e205d9f6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C15",
+      "claim": "The diaminopimelate (DAP) pathway is responsible for the production of l-lysine in plants and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "One amino acid biosynthesis pathway that remains largely unexplored for herbicide development is the diaminopimelate (DAP) pathway (Figure 1), which is responsible for the production of l-lysine (here after referred to as lysine) in plants and bacteria (Figure 1; Hall and Soares da Costa, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d39cc762-2275-46d2-a86d-4e9059006254",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C16",
+      "claim": "Animals, including humans, do not synthesise lysine and must acquire it from dietary sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals, including humans, do not synthesise lysine, and therefore, must acquire it from dietary sources (Galili and Amir, 2013; Tom\u00e9 and Bos, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "9e811cfd-2178-453d-9ca1-00d8696d0ed5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C17",
+      "claim": "Specific chemical inhibition of the DAP pathway in plants is unlikely to be harmful to animals and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, specific chemical inhibition of the DAP pathway in plants is unlikely to be harmful to animals and humans (Hutton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the fact that animals do not have the DAP pathway, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "583bf0cf-7b71-49c6-8c77-b73a8600b987",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C18",
+      "claim": "The DAP pathway commences with a condensation reaction between l-aspartate semialdehyde (ASA) and pyruvate to form HTPA, catalysed by DHDPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The DAP pathway commences with a condensation reaction between l-aspartate semialdehyde (ASA) and pyruvate to form (4S)\u22124-hydroxy-2,3,4,5-tetrahydro-(2S)-dipicolinic acid (HTPA), catalysed by HTPA synthase (EC 4.2.1.52), also known as dihydrodipicolinate synthase (DHDPS) (Griffin et al., 2012; Soares da Costa et al., 2018; Soares da Costa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "8f0bfcde-962e-4245-bb50-ec6f7128e6f1",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C19",
+      "claim": "HTPA is reduced by dihydrodipicolinate reductase (DHDPR) in the presence of NAD(P)H to produce THDP.",
+      "claim_type": "EXPLICIT",
+      "source": "HTPA is then reduced by dihydrodipicolinate reductase (DHDPR, EC 1.3.1.26) in the presence of NAD(P)H to produce 2,3,4,5-tetrahydrodipicolinate (THDP) (Christensen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "1e93df0e-0ee4-4f0a-b6f1-27b904d595a2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C20",
+      "claim": "In plants, THDP undergoes an amino-transfer by diaminopimelate aminotransferase (DAPAT) to form l,l-DAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, THDP undergoes an amino-transfer by diaminopimelate aminotransferase (DAPAT, EC 2.6.1.83) to form l,l-DAP, which is converted to meso-DAP by diaminopimelate epimerase (DAPEpi, EC 5.1.1.7) (Hudson et al., 2005; McCoy et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "2f17f417-6a83-4d8d-ab7c-f8f180ed9bd3",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C21",
+      "claim": "l,l-DAP is converted to meso-DAP by diaminopimelate epimerase (DAPEpi).",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, THDP undergoes an amino-transfer by diaminopimelate aminotransferase (DAPAT, EC 2.6.1.83) to form l,l-DAP, which is converted to meso-DAP by diaminopimelate epimerase (DAPEpi, EC 5.1.1.7) (Hudson et al., 2005; McCoy et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "43722743-fec5-4f3a-ad61-c3116632200f",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C22",
+      "claim": "meso-DAP is irreversibly decarboxylated by diaminopimelate decarboxylase (DAPDC) to produce lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, meso-DAP is irreversibly decarboxylated by diaminopimelate decarboxylase (DAPDC, EC 4.1.1.20) to produce lysine (Peverelli and Perugini, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "0b2b47ba-c353-4946-b3c7-9e068a088004",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C23",
+      "claim": "Lysine regulates flux through the DAP pathway by binding allosterically to DHDPS and inhibiting the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysine regulates flux through the pathway by binding allosterically to DHDPS and inhibiting the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about feedback inhibition in the DAP pathway.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d36979c6-8c0e-4ffd-9aff-54f8002d0e17",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C24",
+      "claim": "DHDPS catalyses the rate-limiting step of the DAP pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DHDPS catalyses the rate-limiting step of the DAP pathway (Geng et al., 2013; Soares da Costa et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "3b3c5054-b016-44c7-ba96-5d787c3b53d4",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C25",
+      "claim": "DHDPS has been proposed as a potential target for the development of herbicides.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the central role of DHDPS in lysine production in plants, this enzyme has been proposed as a potential target for the development of herbicides (Griffin et al., 2012; Soares da Costa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "346d199e-0f0a-4bd6-a294-9ab89afe1a96",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C26",
+      "claim": "S-(2-aminoethyl)-l-cysteine halts rooting of potato tuber discs at mid-micromolar concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the lysine analogue, S-(2-aminoethyl)-l-cysteine, halts rooting of potato tuber discs at mid-micromolar concentrations (Perl et al., 1993; Ghislain et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "70a2270e-6283-4d73-9f3c-6409ed53615e",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C27",
+      "claim": "S-(2-aminoethyl)-l-cysteine inhibits plant growth by competing with lysine for incorporation into proteins rather than inhibition of the DHDPS enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given its poor in vitro potency against plant DHDPS, it is believed that this analogue inhibits plant growth by competing with lysine for incorporation into proteins rather than inhibition of the DHDPS enzyme (Ghislain et al., 1995; Perl et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the poor in vitro potency, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "aba95682-6d57-4a93-a89e-4f83e1350b7b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C28",
+      "claim": "Plants typically have two annotated DHDPS-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants typically have two annotated DHDPS-encoding genes (DHDPS) (Figure 2\u2014figure supplement 1; Craciun et al., 2000; Sarrobert et al., 2000; Vauterin and Jacobs, 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c4ea5d84-4e91-463d-a323-3db7b38e7ee5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C29",
+      "claim": "In Arabidopsis thaliana, the DHDPS genes are At3G60880 (DHDPS1) and At2G45440 (DHDPS2).",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, these genes are At3G60880 (DHDPS1) and At2G45440 (DHDPS2), which encode chloroplast-targeted AtDHDPS1 and AtDHDPS2, respectively (Jones-Held et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jones-Held et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "87136c41-999a-4e47-babb-4f375e4543cc",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C30",
+      "claim": "At3G60880 and At2G45440 encode chloroplast-targeted AtDHDPS1 and AtDHDPS2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, these genes are At3G60880 (DHDPS1) and At2G45440 (DHDPS2), which encode chloroplast-targeted AtDHDPS1 and AtDHDPS2, respectively (Jones-Held et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jones-Held et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "879e5501-1da8-452a-80c2-132ed868f47d",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C31",
+      "claim": "Both DHDPS-encoding genes are expressed at all stages of A. thaliana development.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing data have elucidated that both DHDPS-encoding genes are expressed at all stages of A. thaliana development, with the most prominent expression at the seed development stages, in the dry seeds and during germination (Klepikova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to RNA sequencing data from Klepikova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "2f9ea54f-243f-4bd8-8fbe-20216a90f845",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C32",
+      "claim": "The most prominent expression of DHDPS genes occurs at the seed development stages, in the dry seeds and during germination.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing data have elucidated that both DHDPS-encoding genes are expressed at all stages of A. thaliana development, with the most prominent expression at the seed development stages, in the dry seeds and during germination (Klepikova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to RNA sequencing data from Klepikova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d54cd2d8-f580-4a0d-ad9e-93679e4d825a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C33",
+      "claim": "Maximal DHDPS2 expression is approximately 3-fold greater than that of DHDPS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, maximal DHDPS2 expression is approximately 3-fold greater than that of DHDPS1 (Klepikova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to RNA sequencing data from Klepikova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "e2636e76-4bc4-4431-87d2-e4892f88d10d",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C34",
+      "claim": "Expression of DHDPS1 is considerably lower than the glyphosate target 5-enolpyruvyl-shikimate 3-phosphate synthase at almost all developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, upon comparison to the known glyphosate herbicide target, 5-enolpyruvyl-shikimate 3-phosphate synthase (At1G48860), expression of DHDPS1 is considerably lower at almost all developmental stages, while expression of DHDPS2 is comparable at all stages, except in the dry seeds (Klepikova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to RNA sequencing data from Klepikova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5ba61f32-a548-43c9-89dd-127048dcef9d",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C35",
+      "claim": "Expression of DHDPS2 is comparable to 5-enolpyruvyl-shikimate 3-phosphate synthase at all stages, except in the dry seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, upon comparison to the known glyphosate herbicide target, 5-enolpyruvyl-shikimate 3-phosphate synthase (At1G48860), expression of DHDPS1 is considerably lower at almost all developmental stages, while expression of DHDPS2 is comparable at all stages, except in the dry seeds (Klepikova et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to RNA sequencing data from Klepikova et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "71a990d1-da87-4f94-b301-62e7c89342b5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C36",
+      "claim": "Low expressing targets will require less inhibitor to achieve phytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a key consideration in target validation as low expressing targets will require less inhibitor to achieve phytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between target expression and inhibitor requirements.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "55b4d72d-efa8-400c-8aba-e35c299b2721",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C37",
+      "claim": "Double knockouts of DHDPS1 and DHDPS2 result in non-viable embryos even after exogenous supplementation with lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "Double knockouts of DHDPS1 and DHDPS2 result in non-viable embryos even after exogenous supplementation with lysine, indicating that DHDPS activity is essential (Jones-Held et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jones-Held et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "600f09ed-9bb7-40dc-aa5f-646eb90cf4b1",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C38",
+      "claim": "DHDPS activity is essential in Arabidopsis thaliana.",
+      "claim_type": "EXPLICIT",
+      "source": "Double knockouts of DHDPS1 and DHDPS2 result in non-viable embryos even after exogenous supplementation with lysine, indicating that DHDPS activity is essential (Jones-Held et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the double knockout data, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "62c3c2dc-60a1-4120-9c74-f7a924c85639",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C39",
+      "claim": "AtDHDPS enzymes exist as homotetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "AtDHDPS enzymes exist as homotetramers (Figure 2A), with the active site located within the (\u03b2/\u03b1)8-barrel (Figure 2B) and the allosteric cleft in the tight-dimer interface located in the interior of the structure (Figure 2C; Griffin et al., 2012; Hall et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "9119cac9-2789-4bdd-ae7d-8367c3124829",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C40",
+      "claim": "The active site of AtDHDPS is located within the (\u03b2/\u03b1)8-barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "AtDHDPS enzymes exist as homotetramers (Figure 2A), with the active site located within the (\u03b2/\u03b1)8-barrel (Figure 2B) and the allosteric cleft in the tight-dimer interface located in the interior of the structure (Figure 2C; Griffin et al., 2012; Hall et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 2B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "3260b8ce-a2b2-4baf-9bf8-93ca8182d8d2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C41",
+      "claim": "The allosteric cleft of AtDHDPS is in the tight-dimer interface located in the interior of the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "AtDHDPS enzymes exist as homotetramers (Figure 2A), with the active site located within the (\u03b2/\u03b1)8-barrel (Figure 2B) and the allosteric cleft in the tight-dimer interface located in the interior of the structure (Figure 2C; Griffin et al., 2012; Hall et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 2C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "ac28f27b-fcc3-4c1c-be93-137426514680",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C42",
+      "claim": "A high-throughput screen of 87,648 compounds was conducted against recombinant DHDPS enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A high-throughput screen of a library of 87,648 compounds was conducted against recombinant DHDPS enzyme by the Walter and Eliza Hall Institute High Throughput Chemical Screening Facility (Melbourne, Australia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "0e698cfa-7262-4321-bcde-1a270b6995c6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C43",
+      "claim": "435 compounds out of 87,648 were identified as hits at 20 mM (hit rate = 0.50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cut-off equal to the mean \u00b1 3\u00d7 standard deviation for classification as a hit compound, 435 compounds out of 87,648 were identified as hits at 20 mM (hit rate = 0.50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the high-throughput screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "06e01ddf-15b2-451e-8172-30a05d138e0c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C44",
+      "claim": "38 compounds demonstrated >40% inhibition of the DHDPS enzymatic reaction in the confirmation screen (confirmation rate = 8.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of these 435 compounds was confirmed at the same concentration as the primary screen, resulting in 38 compounds demonstrating >40% inhibition of the DHDPS enzymatic reaction (confirmation rate = 8.7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the confirmation screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "91dd47ce-4584-435f-ad3e-d4a274e8de46",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C45",
+      "claim": "The IC50 value of MBDTA-1 against AtDHDPS1 is 126 \u00b1 6.50 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values of MBDTA-1 and MBDTA-2 against AtDHDPS1 were 126 \u00b1 6.50 \u00b5M and 63.3 \u00b1 1.80 \u00b5M, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from dose-response assays, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d6914e46-4ef3-4de9-adde-7b95b2c8d15d",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C46",
+      "claim": "The IC50 value of MBDTA-2 against AtDHDPS1 is 63.3 \u00b1 1.80 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 values of MBDTA-1 and MBDTA-2 against AtDHDPS1 were 126 \u00b1 6.50 \u00b5M and 63.3 \u00b1 1.80 \u00b5M, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from dose-response assays, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "45bffa7a-474e-4e94-9d2d-ac31a4b5490e",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C47",
+      "claim": "The IC50 value of MBDTA-1 against AtDHDPS2 is 116 \u00b1 5.20 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dose\u2013response curves for AtDHDPS2 yielded IC50 values of 116 \u00b1 5.20 \u00b5M and 64.0 \u00b1 1.00 \u00b5M for MBDTA-1 and MBDTA-2, respectively (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from dose-response assays, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "985f3fcf-1f66-4290-b105-877c40618c9b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C48",
+      "claim": "The IC50 value of MBDTA-2 against AtDHDPS2 is 64.0 \u00b1 1.00 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dose\u2013response curves for AtDHDPS2 yielded IC50 values of 116 \u00b1 5.20 \u00b5M and 64.0 \u00b1 1.00 \u00b5M for MBDTA-1 and MBDTA-2, respectively (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from dose-response assays, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "1b2b0276-5c51-4d00-a830-b851903dee94",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C49",
+      "claim": "Diffraction data for AtDHDPS1 co-crystallised with MBDTA-2 were obtained at a maximal resolution of 2.29 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data were obtained at a maximal resolution of 2.29 \u00c5, phases solved by molecular replacement and repeating rounds of model building and refinement were performed that allowed us to generate an atomic inhibitor-bound model (Figure 5A, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Table 1 and Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d8b960b3-3d0d-41ad-86f8-451902c3b06a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C50",
+      "claim": "Two parallel MBDTA-2 molecules were bound to H187 and F210 at the crystal contact with complete occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, two parallel MBDTA-2 molecules were bound to H187 (of the symmetry mate) and F210 with complete occupancy (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "6affd8cc-b7b0-42fb-9500-d19dbec6071f",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C51",
+      "claim": "The MBDTA-2 molecules at the crystal interface were assumed to be a result of non-specific binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that these molecules were found solely at the crystal interface and were absent in chains A and C, they were assumed to be a result of non-specific binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the location of the molecules in the crystal structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "08ebb604-c626-452c-a7e5-1d3414447e36",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C52",
+      "claim": "Four MBDTA-2 molecules were bound at the centre of the homotetrameric protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of the crystal structure revealed the presence of four MBDTA-2 molecules bound at the centre of the homotetrameric protein (Figure 5A), in antiparallel pairs with each molecule, which were stabilised by interactions across three of the monomers (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "50d43851-f87a-4756-87d7-2150010fd5be",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C53",
+      "claim": "MBDTA-2 molecules are in antiparallel pairs stabilised by interactions across three of the monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of the crystal structure revealed the presence of four MBDTA-2 molecules bound at the centre of the homotetrameric protein (Figure 5A), in antiparallel pairs with each molecule, which were stabilised by interactions across three of the monomers (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "025fae24-68df-4595-8040-d19f422e99c6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C54",
+      "claim": "The MBDTA-2 binding pocket shares two residues with the lysine binding site, namely W116 and E147.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this pocket, albeit distinct to the lysine binding site, shares two residues with it, namely W116 and E147 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of crystal structures, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5ccfd556-8c00-4eae-9f1c-9cc3592d08dd",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C55",
+      "claim": "The methoxy group of MBDTA-2 interacts with W116, E147, and H150 from chain B.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the methoxy group of MBDTA-2 interacts with W116, E147, and H150 from chain B, while the pendant carboxylic acid interacts with S115 from chain A as well as H150 and Q154 from chain C (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5e7aea10-6e00-464a-8bb7-71128786a340",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C56",
+      "claim": "The pendant carboxylic acid of MBDTA-2 interacts with S115 from chain A as well as H150 and Q154 from chain C.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the methoxy group of MBDTA-2 interacts with W116, E147, and H150 from chain B, while the pendant carboxylic acid interacts with S115 from chain A as well as H150 and Q154 from chain C (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from X-ray crystallography, shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "4c50c06d-4193-42ad-9d38-7a4c734ffdb2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C57",
+      "claim": "Upon MBDTA-2 binding, D117 adopts a different rotamer conformation, which results in W116 assuming a different conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed that upon binding, MBDTA-2 forces D117 to adopt a different rotamer conformation, which in turn, results in W116 assuming a different conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "38ba276f-7bbf-406f-9a76-cd403d374c92",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C58",
+      "claim": "The four MBDTA-2 molecules were present with 50% occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "It must be noted that the four MBDTA-2 molecules were present with 50% occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "0af17f05-b4e2-40c8-8a5b-c4b8b9323f4a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C59",
+      "claim": "D117 and W116 adopt two distinct rotamer conformations, one of the apo- and ligand-bound states of AtDHDPS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, each of the two moving residues, D117 and W116, adopt two distinct rotamer conformations, one of the apo- and ligand-bound states of AtDHDPS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the 50% occupancy observed in the crystal structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "13bfbc29-e435-4b4b-9c59-e94bf04b2dc1",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C60",
+      "claim": "No major rotamer changes or movement of catalytically important residues were noted upon MBDTA-2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that no major rotamer changes or movement of catalytically important residues were noted, the exact mechanism of inhibition remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "eba202c4-7c65-4b93-9c31-c89e5f80a262",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C61",
+      "claim": "The exact mechanism of inhibition by MBDTA-2 remains elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that no major rotamer changes or movement of catalytically important residues were noted, the exact mechanism of inhibition remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the lack of observable structural changes in catalytic residues.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d6d77bc8-96bf-4423-b2de-e66be62af10f",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C62",
+      "claim": "The MBDTA-2 binding site represents a novel DHDPS allosteric pocket that has not been previously exploited for inhibitor discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, this indicates the presence of a novel DHDPS allosteric pocket that has not been previously exploited for inhibitor discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the crystallography data showing a new binding site.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "f5c595af-3baf-4313-97a9-0cbf8e21ee55",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C63",
+      "claim": "The residues involved in MBDTA-2 binding are highly conserved across both monocotyledons and dicotyledons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an alignment of the primary structure of several DHDPS enzymes from plant species indicates that the residues involved in MBDTA-2 binding are highly conserved across both monocotyledons and dicotyledons (Figure 5D) and therefore should allow for broad-spectrum inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence alignment data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "bb0f3092-54ae-49c2-98e3-e0e37c6fe62a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C64",
+      "claim": "The conservation of MBDTA-2 binding residues should allow for broad-spectrum inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, an alignment of the primary structure of several DHDPS enzymes from plant species indicates that the residues involved in MBDTA-2 binding are highly conserved across both monocotyledons and dicotyledons (Figure 5D) and therefore should allow for broad-spectrum inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the sequence conservation data shown in Figure 5D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "3787f5d6-b0f8-463d-a2a2-b4c74fa6f450",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C65",
+      "claim": "At the highest concentration assessed (400 \u03bcM), treatment with MBDTA-1 and MBDTA-2 did not affect the viability of HepG2 or HEK293 cell lines relative to the vehicle control.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest concentration assessed (400 \u03bcM), treatment with the inhibitors did not affect the viability of either cell line relative to the vehicle control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from MTT assays shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "2515243f-3a9e-4770-b878-7c7975f4d223",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C66",
+      "claim": "No inhibition of bacterial growth was observed up to 128 \u00b5g\u00b7mL\u22121 (equivalent to ~400 \u00b5M) for MBDTA-1 and MBDTA-2.",
+      "claim_type": "EXPLICIT",
+      "source": "No inhibition of bacterial growth was observed up to 128 \u00b5g\u00b7mL\u22121 (equivalent to ~400 \u00b5M) (Table 2), indicating that these DHDPS inhibitors have specificity directed towards plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from MIC assays shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "dda280e5-0a77-49a0-a87d-054da3181f92",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C67",
+      "claim": "MBDTA-1 and MBDTA-2 have specificity directed towards plants.",
+      "claim_type": "EXPLICIT",
+      "source": "No inhibition of bacterial growth was observed up to 128 \u00b5g\u00b7mL\u22121 (equivalent to ~400 \u00b5M) (Table 2), indicating that these DHDPS inhibitors have specificity directed towards plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of toxicity to human cells and bacteria, shown in Table 2 and Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5457cf7a-3d1b-44ca-87a0-bad57ef27b91",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C68",
+      "claim": "At high micromolar concentrations of both MBDTA-1 and MBDTA-2, growth of A. thaliana seedlings was completely attenuated, and most seeds were unable to germinate.",
+      "claim_type": "EXPLICIT",
+      "source": "At high micromolar concentrations of both MBDTA-1 and MBDTA-2, growth was completely attenuated, and most seeds were unable to germinate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from seedling assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "75d85d41-bef3-477d-8080-1e1e276c0dad",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C69",
+      "claim": "The IC50 of MBDTA-1 for A. thaliana root growth is 98.1 \u00b1 4.34 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon quantitation of root lengths, we determined an IC50 of 98.1 \u00b1 4.34 \u00b5M and 47.4 \u00b1 0.450 \u00b5M for MBDTA-1 (Figure 7A) and MBDTA-2 (Figure 7B), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from seedling assays shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "440ce747-84c0-4e42-9b48-0fcad721be61",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C70",
+      "claim": "The IC50 of MBDTA-2 for A. thaliana root growth is 47.4 \u00b1 0.450 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon quantitation of root lengths, we determined an IC50 of 98.1 \u00b1 4.34 \u00b5M and 47.4 \u00b1 0.450 \u00b5M for MBDTA-1 (Figure 7A) and MBDTA-2 (Figure 7B), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from seedling assays shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "77ef6c2f-876c-49a4-a8c1-a2c7e9ee1c19",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C71",
+      "claim": "The growth of A. thaliana in the presence of MBDTA-1 or MBDTA-2 at 300 mg\u00b7L\u22121 was severely impeded as evidenced by the growth area relative to the DMSO control.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of A. thaliana in the presence of MBDTA-1 (Figure 8B) or MBDTA-2 (Figure 8C) at 300 mg\u00b7L\u22121 was severely impeded as evidenced by the growth area relative to the DMSO control (Figure 8D), wherein few seeds were able to germinate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from soil assays shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "1aee7983-de6b-4551-b173-94766dbe73a4",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C72",
+      "claim": "Few A. thaliana seeds were able to germinate in the presence of 300 mg\u00b7L\u22121 MBDTA-1 or MBDTA-2.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of A. thaliana in the presence of MBDTA-1 (Figure 8B) or MBDTA-2 (Figure 8C) at 300 mg\u00b7L\u22121 was severely impeded as evidenced by the growth area relative to the DMSO control (Figure 8D), wherein few seeds were able to germinate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental observation from soil assays shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "8b66c58e-faf0-4d7f-bb6e-b5b888cbf05c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C73",
+      "claim": "A. thaliana seeds capable of germinating in the presence of 300 mg\u00b7L\u22121 MBDTA-2 were halted at the cotyledon stage before the generation of true leaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the A. thaliana seeds capable of germinating in the presence of 300 mg\u00b7L\u22121 MBDTA-2 were halted at the cotyledon stage before the generation of true leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental observation from soil assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "0f6a2132-1544-44c8-9340-10827c43c6e1",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C74",
+      "claim": "MBDTA compounds represent the first DAP pathway inhibitors with soil efficacy against plants.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our newly discovered MBDTA compounds represent the first DAP pathway inhibitors with soil efficacy against plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the soil assay data and the lack of previous DAP pathway inhibitors with soil efficacy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "8dcd2983-e9a6-4f1b-80b5-c2d8c5411177",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C75",
+      "claim": "The DAP pathway has gained attention as a way to increase the nutritional content of lysine in crops.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the DAP pathway has gained attention as a way to increase the nutritional content of lysine in crops (Wang et al., 2017), it has remained an unexplored target for the development of herbicides until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "78cc2379-733d-41a9-b3b2-7fc353491c14",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C76",
+      "claim": "The DAP pathway has remained an unexplored target for the development of herbicides until now.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the DAP pathway has gained attention as a way to increase the nutritional content of lysine in crops (Wang et al., 2017), it has remained an unexplored target for the development of herbicides until now.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the current work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "415fff4a-cf6a-4a72-ae3f-541b874783b5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C77",
+      "claim": "Both DHDPS proteins in A. thaliana are localised to the chloroplast.",
+      "claim_type": "EXPLICIT",
+      "source": "Both DHDPS proteins are localised to the chloroplast and share >85% of primary structure identity, with the majority of differences at the N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about AtDHDPS proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "63a4efc4-671f-4a2c-acc0-e5ddbae73214",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C78",
+      "claim": "AtDHDPS1 and AtDHDPS2 share >85% of primary structure identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both DHDPS proteins are localised to the chloroplast and share >85% of primary structure identity, with the majority of differences at the N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c457d188-9b6b-4296-9b9f-8435da7c59b6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C79",
+      "claim": "The majority of differences between AtDHDPS1 and AtDHDPS2 are at the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both DHDPS proteins are localised to the chloroplast and share >85% of primary structure identity, with the majority of differences at the N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5f8d48bd-c136-428a-9db2-58becef626c5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C80",
+      "claim": "There have been no published inhibitors of plant DHDPS enzymes prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DHDPS is essential in A. thaliana (Jones-Held et al., 2012), there have been no published inhibitors of the plant enzymes, with much of the focus on inhibitors of bacterial DHDPS as possible new antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c674f5f7-17c8-4606-ba44-b7e28c6fa1f8",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C81",
+      "claim": "Much of the focus on DHDPS inhibitors has been on bacterial DHDPS as possible new antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Although DHDPS is essential in A. thaliana (Jones-Held et al., 2012), there have been no published inhibitors of the plant enzymes, with much of the focus on inhibitors of bacterial DHDPS as possible new antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "4ecf3273-c996-4be6-a070-9917b2f5c849",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C82",
+      "claim": "Most bacterial DHDPS inhibitors have, at best, high micromolar potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Several iterations of active site inhibitors against bacterial DHDPS enzymes have been developed, but most of these have, at best, high micromolar potency (Christoff et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Christoff et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d4511957-02b1-4e1c-a482-f0f4e7e3c133",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C83",
+      "claim": "The active site of DHDPS is seemingly difficult to target.",
+      "claim_type": "EXPLICIT",
+      "source": "As the active site of DHDPS is seemingly difficult to target, the allosteric site of the enzyme could represent a more fruitful route for the development of inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limited success of active site inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "ba422699-e05d-4a57-ac81-2d5e4c495317",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C84",
+      "claim": "The allosteric site of DHDPS could represent a more fruitful route for the development of inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "As the active site of DHDPS is seemingly difficult to target, the allosteric site of the enzyme could represent a more fruitful route for the development of inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the difficulty of targeting the active site.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "1fce4ab4-cdb0-4f47-9071-454a17b72db5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C85",
+      "claim": "Lysine is the most potent inhibitor of plant DHDPS orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, lysine is the most potent inhibitor of plant DHDPS orthologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DHDPS regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "83fef531-63fe-4792-9f26-99a160c337a7",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C86",
+      "claim": "The most potent bacterial DHDPS inhibitor to date is bislysine, whereby two lysine molecules are linked together via an ethylene bridge.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the most potent bacterial DHDPS inhibitor to date is bislysine, whereby two lysine molecules are linked together via an ethylene bridge (Skovpen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Skovpen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "01174907-2218-492b-bfaf-ad26f9b92ae9",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C87",
+      "claim": "Herbicides commonly directly target, or bind closely to, the active site of their respective enzyme target.",
+      "claim_type": "EXPLICIT",
+      "source": "Although herbicides commonly directly target, or bind closely to, the active site of their respective enzyme target, this study shows that allosteric site inhibitors can be employed and afford lethal phytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about herbicide mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "9c623041-95fb-486f-a570-2b99ac0239d0",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C88",
+      "claim": "This study shows that allosteric site inhibitors can be employed and afford lethal phytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although herbicides commonly directly target, or bind closely to, the active site of their respective enzyme target, this study shows that allosteric site inhibitors can be employed and afford lethal phytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing efficacy of allosteric inhibitors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "77f44c78-42bf-4c5b-b046-bc2c19be8c1b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C89",
+      "claim": "Lysine has been shown to differentially inhibit the AtDHDPS isoforms, with AtDHDPS1 being 10-fold more sensitive to the allosteric inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysine has recently been shown to differentially inhibit the AtDHDPS isoforms, with AtDHDPS1 being 10-fold more sensitive to the allosteric inhibitor (Hall et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hall et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "03628609-a446-498e-acd1-4a451c430f31",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C90",
+      "claim": "The MBDTA compounds have similar inhibitory effects against both AtDHDPS1 and AtDHDPS2.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that the MBDTA compounds have similar inhibitory effects against both enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the IC50 values determined for both enzymes, which are similar.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "71a7e02f-e043-4563-9559-ae72b52fbf92",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C91",
+      "claim": "MBDTA-2 binds in a pocket adjacent to the lysine allosteric site and is likely acting in a different way than lysine.",
+      "claim_type": "EXPLICIT",
+      "source": "This further supports crystallography data demonstrating that MBDTA-2 binds in a pocket adjacent to the lysine allosteric site and is likely acting in a different way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the crystallography data showing a distinct binding site.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "19346acf-e5c8-4aeb-92b3-0078cb5aef0c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C92",
+      "claim": "The MBDTA compounds lacked off-target toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our compounds lacked off-target toxicity, whilst resulting in the inhibition of germination and growth of A. thaliana seedlings on solidified media and in soil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the lack of toxicity to human cells and bacteria shown in the specificity assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "f89e3836-a4f9-496d-a627-8f8758adce4c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C93",
+      "claim": "MBDTA compounds resulted in the inhibition of germination and growth of A. thaliana seedlings on solidified media and in soil.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our compounds lacked off-target toxicity, whilst resulting in the inhibition of germination and growth of A. thaliana seedlings on solidified media and in soil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the seedling and soil assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "da575c2d-774e-40e2-8ce8-0939b51e6ab0",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C94",
+      "claim": "Plant inhibition was more pronounced on media likely due to the stability, distribution, and persistence of the compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as expected, plant inhibition was more pronounced on media likely due to the stability, distribution, and persistence of the compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of media and soil assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "9ec8674d-34fd-43dc-ab50-a10ae04365f6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C95",
+      "claim": "The assays performed on soil demonstrate the potential applicability of MBDTA compounds as pre-emergence treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the assays performed on soil demonstrate their potential applicability as pre-emergence treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the soil assay data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "4cec6498-4bed-40e0-952f-cd6cb8e52685",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C96",
+      "claim": "It would be of interest to investigate the metabolic shifts in plants treated with inhibitors and determine if there is a toxic build-up of other amino acids such as threonine.",
+      "claim_type": "EXPLICIT",
+      "source": "It would also be of interest to investigate the metabolic shifts in plants treated with inhibitors and determine if there is a toxic build-up of other amino acids such as threonine, which has been observed in DHDPS knockout experiments (Sarrobert et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experiments, supported by a citation to DHDPS knockout data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "fd7f2dcf-5c8f-4397-a30e-3d73a1cda9e3",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C97",
+      "claim": "A toxic build-up of threonine has been observed in DHDPS knockout experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "It would also be of interest to investigate the metabolic shifts in plants treated with inhibitors and determine if there is a toxic build-up of other amino acids such as threonine, which has been observed in DHDPS knockout experiments (Sarrobert et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sarrobert et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "49e24fb5-7caf-403d-b0fa-ea1ceb70f7ff",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C98",
+      "claim": "A common trait of systemic herbicides is that their efficacy is often related to the cascading consequences of inhibiting a key reaction, rather than inhibition of the reaction itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a common trait of systemic herbicides is that their efficacy is often related to the cascading consequences of inhibiting a key reaction, rather than inhibition of the reaction itself (Hall et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hall et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "eb5e2515-9067-41fd-8784-e63383f6d3cc",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C99",
+      "claim": "It would be of interest to determine the metabolic state of the compounds after uptake into the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it would be of interest to determine the metabolic state of the compounds after uptake into the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "379a276f-2ef6-4f91-98d7-5e3b627c0940",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C100",
+      "claim": "The MBDTA compounds may act as proherbicides, potentially through the demethylation of their aryl methyl ethers.",
+      "claim_type": "EXPLICIT",
+      "source": "This would elucidate whether the MBDTA compounds act as proherbicides, potentially through the demethylation of their aryl methyl ethers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of action.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "277858d2-0a17-4a66-b262-99691f0e594b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C101",
+      "claim": "It would be of interest to test demethylated analogues in vitro and in planta to assess any changes in potency relative to the methoxy compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, it would also be of interest to test demethylated analogues in vitro and in planta to assess any changes in potency relative to the methoxy compounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "1c4a7875-a6ab-4da5-a271-10dd6d0a1793",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C102",
+      "claim": "Developing enzyme inhibitors into a commercial product is an arduous and costly process.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing enzyme inhibitors into a commercial product is an arduous and costly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about drug/herbicide development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5aede7a8-a4c1-4a69-9e99-9fa0b08c50d2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C103",
+      "claim": "Optimisation of phytotoxicity, water solubility, cell wall penetration, translocation, soil/water persistence, and formulation must all be considered in herbicide development.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimisation of phytotoxicity, water solubility, cell wall penetration, translocation, soil/water persistence, and formulation must all be considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about herbicide development requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "a44a8d08-3eee-41ca-833f-1459c6c77363",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C104",
+      "claim": "The MBDTA compounds represent an attractive avenue to pursue for herbicide development.",
+      "claim_type": "EXPLICIT",
+      "source": "The MBDTA compounds described here represent an attractive avenue to pursue, and with the elucidation of a novel binding pocket within DHDPS, it may be possible to rationally improve their potency guided by the crystallography data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the promising results obtained in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "5ebdd179-a0dc-4ce4-8a3c-e94f73e1a3f6",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C105",
+      "claim": "It may be possible to rationally improve the potency of MBDTA compounds guided by the crystallography data.",
+      "claim_type": "EXPLICIT",
+      "source": "The MBDTA compounds described here represent an attractive avenue to pursue, and with the elucidation of a novel binding pocket within DHDPS, it may be possible to rationally improve their potency guided by the crystallography data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future structure-guided drug design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d4fd1eb3-948b-468c-8cca-81a888ebb52b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C106",
+      "claim": "It would be of interest to build compounds that extend into the lysine binding pocket, which could improve potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, it would be of interest to build compounds that extend into the lysine binding pocket, which could improve potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future compound design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "19025fec-a7e2-4f3f-b4f4-38e89bc4d645",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C107",
+      "claim": "Novel chemical scaffolds could be explored to target the DHDPS pocket identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, novel chemical scaffolds could be explored to target the DHDPS pocket identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future compound design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "f6350dbc-a12f-4b8d-8be7-39e64ceb3c5b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C108",
+      "claim": "The inhibitors must be able to traverse the chloroplast membrane in order to reach the DHDPS target.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitors must be able to traverse the chloroplast membrane in order to reach the DHDPS target and be amenable to post-emergence application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement based on the chloroplast localization of DHDPS.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "cd630ac7-00f5-4be7-bb4f-8d4631693fe5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C109",
+      "claim": "The inhibitors must be amenable to post-emergence application.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitors must be able to traverse the chloroplast membrane in order to reach the DHDPS target and be amenable to post-emergence application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a desirable property for herbicide development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "fd7915e6-8399-4f98-ab55-58b2f6295d9a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C110",
+      "claim": "It would be of interest to study inhibitors with increased hydrophobicity and thus, potentially enhanced transport through the epidermis, cell wall, and plastid membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It would also be of interest to study inhibitors with increased hydrophobicity and thus, potentially enhanced transport through the epidermis, cell wall, and plastid membrane, to reach the DHDPS target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future compound design to improve cellular uptake.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "6d795bba-8e69-4b5f-bef6-891fcddc2186",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C111",
+      "claim": "There is a fine balance between membrane permeability and aqueous solubility that must be achieved for any new herbicides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to recognise that there is a fine balance between membrane permeability and aqueous solubility that must be achieved for any new herbicides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about drug/herbicide design principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d9b183e5-6cbb-4052-a450-a13e7012626c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C112",
+      "claim": "Following the synthesis of more potent analogues, it would be of interest to test inhibitors against weed species.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the synthesis of more potent analogues, it would be of interest to test inhibitors against weed species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "65203a33-eb4f-4d5d-958b-34991bca20aa",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C113",
+      "claim": "To pursue the compounds as herbicides, tolerant crops will eventually need to be engineered.",
+      "claim_type": "EXPLICIT",
+      "source": "To further pursue the compounds described herein and eventually deploy more potent analogues as herbicides, tolerant crops will eventually need to be engineered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement for herbicide commercialization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "e8db01ba-867a-46b0-990a-25e75f193e69",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C114",
+      "claim": "The MBDTA binding pocket is highly conserved among plant species, so these inhibitors will likely have broad-spectrum phytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "As the MBDTA binding pocket is highly conserved among plant species, these inhibitors will likely have broad-spectrum phytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sequence conservation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "f4e89d8b-4c4f-42df-9d6c-4d54c39b3785",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C115",
+      "claim": "It should be possible to engineer tolerant crops with mutant DHDPS enzymes that are not susceptible to inhibition with minimal effects on enzyme function.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the inhibitors do not bind at the active site, it should be possible to engineer tolerant crops with mutant DHDPS enzymes that are not susceptible to inhibition with minimal effects on enzyme function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the allosteric binding mode of the inhibitors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "40ad59d5-392c-4098-8759-4f4d5a6e1f7c",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "claim_id": "C116",
+      "claim": "DHDPS inhibitors could be used in conjunction with other herbicides as part of a combinatorial treatment to yield synergistic responses and circumvent resistance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DHDPS inhibitors could also be used in conjunction with other herbicides as part of a combinatorial treatment to yield synergistic responses and circumvent resistance mechanisms to tackle the global rise in herbicide-resistant weeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future applications of the inhibitors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A high-throughput screen of 87,648 compounds identified MBDTA-1 and MBDTA-2 as the first plant DHDPS inhibitors with micromolar potency (IC50 values of 116-126 \u00b5M for MBDTA-1 and 63-64 \u00b5M for MBDTA-2 against both AtDHDPS1 and AtDHDPS2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C48 provide a complete experimental workflow from high-throughput screening through confirmation to dose-response characterization. The hit rate (0.50%), confirmation rate (8.7%), and IC50 values are clearly reported with error estimates and supported by Figure 4. The methodology is standard and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "X-ray crystallography at 2.29 \u00c5 resolution revealed that MBDTA-2 binds to a novel allosteric pocket at the center of the AtDHDPS1 tetramer, with four inhibitor molecules binding in antiparallel pairs across three monomers. The binding pocket shares residues W116 and E147 with the lysine allosteric site but represents a distinct, previously unexploited binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C62 describe comprehensive crystallographic analysis with appropriate resolution (2.29 \u00c5), proper controls (distinguishing non-specific crystal contacts from functional binding), and detailed molecular interactions. The 50% occupancy (C58) is appropriately noted and explained (C59). The conclusion that the mechanism remains elusive (C61) is honest given the lack of major conformational changes in catalytic residues (C60). Table 1 provides complete crystallographic statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "3cb20d97-a3b7-4649-8e20-862c873ec937",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sequence alignment analysis shows that residues involved in MBDTA-2 binding are highly conserved across both monocotyledonous and dicotyledonous plant species, suggesting potential for broad-spectrum herbicidal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by sequence alignment data shown in Figure 5D. The conservation analysis is appropriate and the inference about broad-spectrum potential (C64) is reasonable, though it remains to be experimentally validated against diverse plant species. The logic connecting conservation to broad-spectrum activity is sound but represents a prediction rather than demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "45761a79-677e-4d2b-95d4-f0ba64e79ffd",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MBDTA-1 and MBDTA-2 showed no cytotoxicity to human HepG2 and HEK293 cell lines at concentrations up to 400 \u00b5M and no antibacterial activity against human flora and soil bacteria up to ~400 \u00b5M, indicating plant-specific activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by MTT assay data (Figure 6) and MIC determinations (Table 2). The specificity conclusion (C67) is a reasonable inference from the lack of mammalian and bacterial toxicity, though the mechanism of selectivity is not established. The experimental design appropriately tests relevant off-target organisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "d8a039f9-69a4-45c4-bc5e-bc77c852fee2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MBDTA-1 and MBDTA-2 inhibited A. thaliana seedling root growth with IC50 values of 98.1 \u00b1 4.34 \u00b5M and 47.4 \u00b1 0.450 \u00b5M, respectively, with complete growth attenuation at high micromolar concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by seedling assay data shown in Figure 7. The IC50 values are reported with appropriate error estimates and the dose-response relationship is clear. The in planta potency is roughly comparable to the in vitro enzyme inhibition, which is consistent with on-target activity. Methods describe appropriate controls and replication (N=3 biological replicates with 20 technical replicates each).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "7c2dfa5a-a7e4-48f2-b5ab-ae4ef36d61c3",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In soil-grown A. thaliana, treatment with 300 mg\u00b7L\u207b\u00b9 MBDTA-1 or MBDTA-2 severely impeded growth and germination, with MBDTA-2-treated seedlings arrested at the cotyledon stage. These compounds represent the first DAP pathway inhibitors with demonstrated soil efficacy against plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by soil assay data in Figure 8. The visual evidence and quantified growth area show clear herbicidal effects. The claim of being 'first DAP pathway inhibitors with soil efficacy' (C74) is supported by the literature context provided (C26-C27, C80). However, only one concentration was tested in soil, limiting dose-response characterization in this more realistic setting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "045df359-17bd-4eec-a62a-b8127c70227e",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MBDTA compounds inhibit both AtDHDPS1 and AtDHDPS2 with similar potency, and bind in a pocket adjacent to but distinct from the lysine allosteric site, likely acting through a different mechanism than lysine-mediated feedback inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91 are supported by the similar IC50 values for both isoforms (C45-C48) and crystallographic data showing a distinct binding site (C52-C56). The inference about a different mechanism (C91) is reasonable given the structural data, though the exact mechanism remains undefined (C61). This contrasts with the differential lysine sensitivity reported in C89.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "776b9305-f08b-4171-b7eb-f881db7730f5",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MBDTA compounds demonstrated herbicidal efficacy both on agar media and in soil with minimal off-target toxicity, though inhibition was more pronounced on media, likely due to compound stability and distribution factors. The soil assays demonstrate potential for pre-emergence herbicide applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 synthesize results from specificity assays (C65-C67), seedling assays (C68-C70), and soil assays (C71-C73). The comparison between media and soil (C94) is a reasonable inference though not rigorously quantified. The conclusion about pre-emergence potential (C95) is appropriate given the experimental design but requires further validation for field applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "7a298932-2d96-4c49-818a-cc8275b72174",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study identified the first class of plant DHDPS inhibitors with micromolar potency that bind to a novel, conserved allosteric pocket and demonstrate herbicidal activity in seedling and soil assays, providing proof-of-concept that lysine biosynthesis is a promising herbicide target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 represent the main conclusions of the study and are well-supported by the experimental data from screening (C42-C48), crystallography (C49-C62), specificity assays (C65-C67), and plant assays (C68-C74). The 'proof-of-concept' framing (C7) is appropriate given the early-stage nature of these compounds and acknowledged need for optimization (C102-C111).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "995f0366-7f3b-49b6-9950-d046da07d459",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DHDPS catalyzes the first and rate-limiting step of the DAP pathway, converting ASA and pyruvate to HTPA, which is subsequently processed through multiple enzymatic steps to produce lysine. Lysine provides feedback inhibition by binding allosterically to DHDPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18-C24 describe established biochemistry of the DAP pathway supported by multiple citations (Griffin et al. 2012, Soares da Costa et al. 2015, 2018, Christensen et al. 2016, Hudson et al. 2005, McCoy et al. 2006, Peverelli and Perugini 2015, Geng et al. 2013, Soares da Costa et al. 2016). This background is well-established and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "897da3af-0c2d-4802-90eb-61f57909de6b",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A. thaliana has two DHDPS genes (DHDPS1 and DHDPS2) encoding chloroplast-targeted enzymes expressed throughout development with peak expression during seed development and germination. DHDPS2 expression is ~3-fold higher than DHDPS1 and comparable to the glyphosate target EPSPS. Double knockouts are embryo-lethal, indicating DHDPS is essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C38 are supported by appropriate citations (Craciun et al. 2000, Sarrobert et al. 2000, Vauterin and Jacobs 1994, Jones-Held et al. 2012, Klepikova et al. 2016) and Figure 2\u2014figure supplement 1. The expression data and essentiality establish DHDPS as a valid herbicide target. The inference about inhibitor requirements (C36) is logical but somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "21624af7-f443-4901-aef0-ff441de144bf",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "AtDHDPS enzymes exist as homotetramers with the active site in the (\u03b2/\u03b1)8-barrel and the allosteric site in the tight-dimer interface in the interior of the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 describe the structural organization of AtDHDPS supported by citations (Griffin et al. 2012, Hall et al. 2021) and illustrated in Figure 2. This structural context is important for understanding the inhibitor binding mode.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Herbicide resistance is a growing threat to agriculture, with resistance observed to major herbicide classes including amino acid biosynthesis inhibitors. No new herbicides with novel mechanisms have entered the market in 30 years, though the success of amino acid biosynthesis inhibitors validates this strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C11 establish the agricultural context and are supported by appropriate citations (Gaines et al. 2020, Hall et al. 2020, Duke 2012). This background justifies the need for novel herbicide targets and modes of action.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "9dd1ceaa-92da-4781-88f0-cb59b1ef4d36",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The DAP pathway produces lysine in plants and bacteria but not in animals, suggesting that specific inhibition of this pathway should be safe for animals and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are supported by citations (Hall and Soares da Costa 2018, Galili and Amir 2013, Tom\u00e9 and Bos 2007, Hutton et al. 2007). The safety inference (C17) is reasonable based on pathway absence in animals, and is experimentally supported by the lack of mammalian cytotoxicity (C65).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DHDPS has been proposed as a herbicide target, but prior to this study there were no published plant DHDPS inhibitors. The lysine analog S-(2-aminoethyl)-l-cysteine affects plant growth but likely acts by competing with lysine incorporation rather than DHDPS inhibition. Most bacterial DHDPS inhibitors have only high micromolar potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C76, C80-C82 establish the novelty of the current work and are supported by appropriate citations (Griffin et al. 2012, Soares da Costa et al. 2018, Perl et al. 1993, Ghislain et al. 1995, Wang et al. 2017, Christoff et al. 2019). This context justifies the significance of discovering the first plant DHDPS inhibitors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "b7888215-a7ae-4153-b6db-1ed7326b35c9",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Both AtDHDPS proteins are chloroplast-localized and share >85% sequence identity, with most differences at the N-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe basic properties of the AtDHDPS isoforms. The localization (C77) is established knowledge, while the sequence identity (C78-C79) can be verified from sequence data. This information is relevant for understanding inhibitor action and potential for resistance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "39251223-6a2e-438c-a08e-dc7a02b36551",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The active site of DHDPS is difficult to target, suggesting allosteric inhibition may be more fruitful. Lysine is the most potent natural inhibitor of plant DHDPS, and bislysine is the most potent bacterial DHDPS inhibitor. This study demonstrates that allosteric inhibitors can achieve lethal phytotoxicity, despite most herbicides targeting active sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 provide rationale for the allosteric inhibition strategy and are supported by citations (Skovpen et al. 2016, Hall et al. 2021). The inference about difficulty of active site targeting (C83) is reasonable given the limited success with bacterial inhibitors (C82). The demonstration of allosteric inhibitor efficacy (C88) is a significant finding supported by the experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Future work should investigate metabolic shifts in inhibitor-treated plants, including potential threonine accumulation observed in DHDPS knockouts, and determine if MBDTA compounds act as proherbicides through demethylation. The efficacy of systemic herbicides often relates to cascading metabolic consequences rather than direct enzyme inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C96-C101 are speculative suggestions for future work. The threonine accumulation reference (C97) is supported by citation (Sarrobert et al. 2000), and the general principle about herbicide efficacy (C98) is cited (Hall et al. 2020). However, these remain untested hypotheses for the MBDTA compounds. The speculation is reasonable but not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "ffac1c27-0dd2-4268-817b-ed207513e47a",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Developing these inhibitors into commercial herbicides will require optimization of multiple properties including potency, solubility, membrane permeability, and translocation. The crystallographic data could guide rational improvement, and the allosteric binding mode may facilitate engineering of resistant crops. The compounds could potentially be used in combination with other herbicides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C116 discuss future development requirements and possibilities. While the general principles (C102-C103, C111) are established knowledge, the specific predictions about rational improvement (C105-C107), crop engineering (C115), and combination treatments (C116) are speculative. The inference about broad-spectrum activity (C114) is reasonable given conservation data (C63) but unproven. These represent logical next steps but are not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    },
+    {
+      "id": "0ed948ff-6fb7-4d32-ac35-56dd0430dd1d",
+      "content_id": "0099f6cc-b194-4594-9a74-187eee051ad9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Amino acids are essential for protein biosynthesis, play critical roles in plant metabolism including carbon and nitrogen metabolism, and serve as precursors for secondary metabolites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 describe general biochemical principles supported by citation (Hildebrandt et al. 2015). This background establishes why amino acid biosynthesis is an effective herbicide target.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T06:17:18.166535Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ac28f27b-fcc3-4c1c-be93-137426514680",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "0e698cfa-7262-4321-bcde-1a270b6995c6",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "06e01ddf-15b2-451e-8172-30a05d138e0c",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "91dd47ce-4584-435f-ad3e-d4a274e8de46",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "d6914e46-4ef3-4de9-adde-7b95b2c8d15d",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "45bffa7a-474e-4e94-9d2d-ac31a4b5490e",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "985f3fcf-1f66-4290-b105-877c40618c9b",
+      "result_id": "726eb9d0-1664-4444-81b0-60a2f24b2e1f"
+    },
+    {
+      "claim_id": "1b2b0276-5c51-4d00-a830-b851903dee94",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "d8b960b3-3d0d-41ad-86f8-451902c3b06a",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "6affd8cc-b7b0-42fb-9500-d19dbec6071f",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "08ebb604-c626-452c-a7e5-1d3414447e36",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "50d43851-f87a-4756-87d7-2150010fd5be",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "025fae24-68df-4595-8040-d19f422e99c6",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "5ccfd556-8c00-4eae-9f1c-9cc3592d08dd",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "5e7aea10-6e00-464a-8bb7-71128786a340",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "4c50c06d-4193-42ad-9d38-7a4c734ffdb2",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "38ba276f-7bbf-406f-9a76-cd403d374c92",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "0af17f05-b4e2-40c8-8a5b-c4b8b9323f4a",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "13bfbc29-e435-4b4b-9c59-e94bf04b2dc1",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "eba202c4-7c65-4b93-9c31-c89e5f80a262",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "d6d77bc8-96bf-4423-b2de-e66be62af10f",
+      "result_id": "c487a0ae-a6d4-43cf-bc5d-fb2e18d71626"
+    },
+    {
+      "claim_id": "f5c595af-3baf-4313-97a9-0cbf8e21ee55",
+      "result_id": "3cb20d97-a3b7-4649-8e20-862c873ec937"
+    },
+    {
+      "claim_id": "bb0f3092-54ae-49c2-98e3-e0e37c6fe62a",
+      "result_id": "3cb20d97-a3b7-4649-8e20-862c873ec937"
+    },
+    {
+      "claim_id": "3787f5d6-b0f8-463d-a2a2-b4c74fa6f450",
+      "result_id": "45761a79-677e-4d2b-95d4-f0ba64e79ffd"
+    },
+    {
+      "claim_id": "2515243f-3a9e-4770-b878-7c7975f4d223",
+      "result_id": "45761a79-677e-4d2b-95d4-f0ba64e79ffd"
+    },
+    {
+      "claim_id": "dda280e5-0a77-49a0-a87d-054da3181f92",
+      "result_id": "45761a79-677e-4d2b-95d4-f0ba64e79ffd"
+    },
+    {
+      "claim_id": "5457cf7a-3d1b-44ca-87a0-bad57ef27b91",
+      "result_id": "d8a039f9-69a4-45c4-bc5e-bc77c852fee2"
+    },
+    {
+      "claim_id": "75d85d41-bef3-477d-8080-1e1e276c0dad",
+      "result_id": "d8a039f9-69a4-45c4-bc5e-bc77c852fee2"
+    },
+    {
+      "claim_id": "440ce747-84c0-4e42-9b48-0fcad721be61",
+      "result_id": "d8a039f9-69a4-45c4-bc5e-bc77c852fee2"
+    },
+    {
+      "claim_id": "77ef6c2f-876c-49a4-a8c1-a2c7e9ee1c19",
+      "result_id": "7c2dfa5a-a7e4-48f2-b5ab-ae4ef36d61c3"
+    },
+    {
+      "claim_id": "1aee7983-de6b-4551-b173-94766dbe73a4",
+      "result_id": "7c2dfa5a-a7e4-48f2-b5ab-ae4ef36d61c3"
+    },
+    {
+      "claim_id": "8b66c58e-faf0-4d7f-bb6e-b5b888cbf05c",
+      "result_id": "7c2dfa5a-a7e4-48f2-b5ab-ae4ef36d61c3"
+    },
+    {
+      "claim_id": "0f6a2132-1544-44c8-9340-10827c43c6e1",
+      "result_id": "7c2dfa5a-a7e4-48f2-b5ab-ae4ef36d61c3"
+    },
+    {
+      "claim_id": "03628609-a446-498e-acd1-4a451c430f31",
+      "result_id": "045df359-17bd-4eec-a62a-b8127c70227e"
+    },
+    {
+      "claim_id": "71a7e02f-e043-4563-9559-ae72b52fbf92",
+      "result_id": "045df359-17bd-4eec-a62a-b8127c70227e"
+    },
+    {
+      "claim_id": "19346acf-e5c8-4aeb-92b3-0078cb5aef0c",
+      "result_id": "776b9305-f08b-4171-b7eb-f881db7730f5"
+    },
+    {
+      "claim_id": "f89e3836-a4f9-496d-a627-8f8758adce4c",
+      "result_id": "776b9305-f08b-4171-b7eb-f881db7730f5"
+    },
+    {
+      "claim_id": "da575c2d-774e-40e2-8ce8-0939b51e6ab0",
+      "result_id": "776b9305-f08b-4171-b7eb-f881db7730f5"
+    },
+    {
+      "claim_id": "9ec8674d-34fd-43dc-ab50-a10ae04365f6",
+      "result_id": "776b9305-f08b-4171-b7eb-f881db7730f5"
+    },
+    {
+      "claim_id": "3f714d6c-5642-420f-a5c1-bbf402f4f124",
+      "result_id": "7a298932-2d96-4c49-818a-cc8275b72174"
+    },
+    {
+      "claim_id": "b7d73968-9fcf-41c5-a97f-a893ed9f24e3",
+      "result_id": "7a298932-2d96-4c49-818a-cc8275b72174"
+    },
+    {
+      "claim_id": "01f397a6-388d-4659-b6bd-28c216328db3",
+      "result_id": "7a298932-2d96-4c49-818a-cc8275b72174"
+    },
+    {
+      "claim_id": "c5ad9655-917a-44b6-a281-cf45b3c96d07",
+      "result_id": "7a298932-2d96-4c49-818a-cc8275b72174"
+    },
+    {
+      "claim_id": "a16bbfde-0eab-46d6-80c9-c93f2a8b2b85",
+      "result_id": "7a298932-2d96-4c49-818a-cc8275b72174"
+    },
+    {
+      "claim_id": "ad63187c-cb82-45bc-96f5-0ce786e30ba6",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "583bf0cf-7b71-49c6-8c77-b73a8600b987",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "8f0bfcde-962e-4245-bb50-ec6f7128e6f1",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "1e93df0e-0ee4-4f0a-b6f1-27b904d595a2",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "2f17f417-6a83-4d8d-ab7c-f8f180ed9bd3",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "43722743-fec5-4f3a-ad61-c3116632200f",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "0b2b47ba-c353-4946-b3c7-9e068a088004",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "d36979c6-8c0e-4ffd-9aff-54f8002d0e17",
+      "result_id": "995f0366-7f3b-49b6-9950-d046da07d459"
+    },
+    {
+      "claim_id": "aba95682-6d57-4a93-a89e-4f83e1350b7b",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "c4ea5d84-4e91-463d-a323-3db7b38e7ee5",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "87136c41-999a-4e47-babb-4f375e4543cc",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "879e5501-1da8-452a-80c2-132ed868f47d",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "2f9ea54f-243f-4bd8-8fbe-20216a90f845",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "d54cd2d8-f580-4a0d-ad9e-93679e4d825a",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "e2636e76-4bc4-4431-87d2-e4892f88d10d",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "5ba61f32-a548-43c9-89dd-127048dcef9d",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "71a990d1-da87-4f94-b301-62e7c89342b5",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "55b4d72d-efa8-400c-8aba-e35c299b2721",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "600f09ed-9bb7-40dc-aa5f-646eb90cf4b1",
+      "result_id": "897da3af-0c2d-4802-90eb-61f57909de6b"
+    },
+    {
+      "claim_id": "62c3c2dc-60a1-4120-9c74-f7a924c85639",
+      "result_id": "21624af7-f443-4901-aef0-ff441de144bf"
+    },
+    {
+      "claim_id": "9119cac9-2789-4bdd-ae7d-8367c3124829",
+      "result_id": "21624af7-f443-4901-aef0-ff441de144bf"
+    },
+    {
+      "claim_id": "3260b8ce-a2b2-4baf-9bf8-93ca8182d8d2",
+      "result_id": "21624af7-f443-4901-aef0-ff441de144bf"
+    },
+    {
+      "claim_id": "c1112ee4-6d72-4b94-baae-7aa8764b5228",
+      "result_id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793"
+    },
+    {
+      "claim_id": "73aa9993-4693-4c1e-8be3-cceb22ce8a29",
+      "result_id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793"
+    },
+    {
+      "claim_id": "2dd284ca-5319-44f7-a9c6-aae4a8e34c57",
+      "result_id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793"
+    },
+    {
+      "claim_id": "2c33f7f3-f800-4b27-880a-5a5bb5549fd8",
+      "result_id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793"
+    },
+    {
+      "claim_id": "19f74695-74e6-4060-b7d6-c17223662625",
+      "result_id": "b78d9f63-3b11-4164-8e15-f75d0f9f1793"
+    },
+    {
+      "claim_id": "6fe9fda1-b893-4969-bc43-5675e205d9f6",
+      "result_id": "9dd1ceaa-92da-4781-88f0-cb59b1ef4d36"
+    },
+    {
+      "claim_id": "d39cc762-2275-46d2-a86d-4e9059006254",
+      "result_id": "9dd1ceaa-92da-4781-88f0-cb59b1ef4d36"
+    },
+    {
+      "claim_id": "9e811cfd-2178-453d-9ca1-00d8696d0ed5",
+      "result_id": "9dd1ceaa-92da-4781-88f0-cb59b1ef4d36"
+    },
+    {
+      "claim_id": "3b3c5054-b016-44c7-ba96-5d787c3b53d4",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "346d199e-0f0a-4bd6-a294-9ab89afe1a96",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "70a2270e-6283-4d73-9f3c-6409ed53615e",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "78cc2379-733d-41a9-b3b2-7fc353491c14",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "5f8d48bd-c136-428a-9db2-58becef626c5",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "c674f5f7-17c8-4606-ba44-b7e28c6fa1f8",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "4ecf3273-c996-4be6-a070-9917b2f5c849",
+      "result_id": "4e66ec4f-f0c0-4e5b-bbdd-8ee255616422"
+    },
+    {
+      "claim_id": "415fff4a-cf6a-4a72-ae3f-541b874783b5",
+      "result_id": "b7888215-a7ae-4153-b6db-1ed7326b35c9"
+    },
+    {
+      "claim_id": "63a4efc4-671f-4a2c-acc0-e5ddbae73214",
+      "result_id": "b7888215-a7ae-4153-b6db-1ed7326b35c9"
+    },
+    {
+      "claim_id": "c457d188-9b6b-4296-9b9f-8435da7c59b6",
+      "result_id": "b7888215-a7ae-4153-b6db-1ed7326b35c9"
+    },
+    {
+      "claim_id": "d4511957-02b1-4e1c-a482-f0f4e7e3c133",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "ba422699-e05d-4a57-ac81-2d5e4c495317",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "1fce4ab4-cdb0-4f47-9071-454a17b72db5",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "83fef531-63fe-4792-9f26-99a160c337a7",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "01174907-2218-492b-bfaf-ad26f9b92ae9",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "9c623041-95fb-486f-a570-2b99ac0239d0",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "77f44c78-42bf-4c5b-b046-bc2c19be8c1b",
+      "result_id": "39251223-6a2e-438c-a08e-dc7a02b36551"
+    },
+    {
+      "claim_id": "4cec6498-4bed-40e0-952f-cd6cb8e52685",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "fd7f2dcf-5c8f-4397-a30e-3d73a1cda9e3",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "49e24fb5-7caf-403d-b0fa-ea1ceb70f7ff",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "eb5e2515-9067-41fd-8784-e63383f6d3cc",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "379a276f-2ef6-4f91-98d7-5e3b627c0940",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "277858d2-0a17-4a66-b262-99691f0e594b",
+      "result_id": "435085b5-41c7-4efe-8bea-71ab4a8f59b2"
+    },
+    {
+      "claim_id": "1c4a7875-a6ab-4da5-a271-10dd6d0a1793",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "5aede7a8-a4c1-4a69-9e99-9fa0b08c50d2",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "a44a8d08-3eee-41ca-833f-1459c6c77363",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "5ebdd179-a0dc-4ce4-8a3c-e94f73e1a3f6",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "d4fd1eb3-948b-468c-8cca-81a888ebb52b",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "19025fec-a7e2-4f3f-b4f4-38e89bc4d645",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "f6350dbc-a12f-4b8d-8be7-39e64ceb3c5b",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "cd630ac7-00f5-4be7-bb4f-8d4631693fe5",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "fd7915e6-8399-4f98-ab55-58b2f6295d9a",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "6d795bba-8e69-4b5f-bef6-891fcddc2186",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "d9b183e5-6cbb-4052-a450-a13e7012626c",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "65203a33-eb4f-4d5d-958b-34991bca20aa",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "e8db01ba-867a-46b0-990a-25e75f193e69",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "f4e89d8b-4c4f-42df-9d6c-4d54c39b3785",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "40ad59d5-392c-4098-8759-4f4d5a6e1f7c",
+      "result_id": "ffac1c27-0dd2-4268-817b-ed207513e47a"
+    },
+    {
+      "claim_id": "b091024e-a8e8-4f03-96a4-c27b769f2df1",
+      "result_id": "0ed948ff-6fb7-4d32-ac35-56dd0430dd1d"
+    },
+    {
+      "claim_id": "49332b14-7318-4cff-a837-6acbf33445c9",
+      "result_id": "0ed948ff-6fb7-4d32-ac35-56dd0430dd1d"
+    },
+    {
+      "claim_id": "c152ace1-2633-4a7d-a1c9-ce7292148ed8",
+      "result_id": "0ed948ff-6fb7-4d32-ac35-56dd0430dd1d"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,2061 @@
+{
+  "submission": {
+    "id": "370d3438-6e52-408d-bf16-88237a7b5e63",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:30:50.704084Z",
+    "updated_at": "2025-12-03T11:30:50.704084Z"
+  },
+  "content": [
+    {
+      "id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "submission_id": "370d3438-6e52-408d-bf16-88237a7b5e63",
+      "content_type": "manuscript",
+      "content_text": "# Large-scale orientational order in bacterial colonies during inward growth\n\n## Authors\n\n- Mustafa Basaran<sup>1</sup> ([ORCID: 0000-0002-1895-254X](https://orcid.org/0000-0002-1895-254X))\n- Y Ilker Yaman<sup>1</sup> ([ORCID: 0000-0003-4094-616X](https://orcid.org/0000-0003-4094-616X))\n- Tevfik Can Y\u00fcce<sup>1</sup> ([ORCID: 0000-0002-6888-2690](https://orcid.org/0000-0002-6888-2690))\n- Roman Vetter<sup>3</sup> ([ORCID: 0000-0003-2901-7036](https://orcid.org/0000-0003-2901-7036))\n- Askin Kocabas<sup>1</sup> ([ORCID: 0000-0002-6930-1202](https://orcid.org/0000-0002-6930-1202)) \u2020\n\n### Affiliations\n\n1. Department of Physics, Ko\u00e7 University Istanbul Turkey ([ROR:00jzwgz36](https://ror.org/00jzwgz36))\n2. Bio-Medical Sciences and Engineering Program, Ko\u00e7 University Istanbul Turkey ([ROR:00jzwgz36](https://ror.org/00jzwgz36))\n3. Computational Physics for Engineering Materials, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n4. Ko\u00e7 University Surface Science and Technology Center, Ko\u00e7 University Istanbul Turkey ([ROR:00jzwgz36](https://ror.org/00jzwgz36))\n5. Ko\u00e7 University Research Center for Translational Medicine, Ko\u00e7 University Istanbul Turkey ([ROR:00jzwgz36](https://ror.org/00jzwgz36))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring colony growth, complex interactions regulate the bacterial orientation, leading to the formation of large-scale ordered structures, including topological defects, microdomains, and branches. These structures may benefit bacterial strains, providing invasive advantages during colonization. Active matter dynamics of growing colonies drives the emergence of these ordered structures. However, additional biomechanical factors also play a significant role during this process. Here, we show that the velocity profile of growing colonies creates strong radial orientation during inward growth when crowded populations invade a closed area. During this process, growth geometry sets virtual confinement and dictates the velocity profile. Herein, flow-induced alignment and torque balance on the rod-shaped bacteria result in a new stable orientational equilibrium in the radial direction. Our analysis revealed that the dynamics of these radially oriented structures, also known as aster defects, depend on bacterial length and can promote the survival of the longest bacteria around localized nutritional hotspots. The present results indicate a new mechanism underlying structural order and provide mechanistic insights into the dynamics of bacterial growth on complex surfaces.\n\n## Introduction\n\nBacterial colonization and invasion are collective phenomena. These processes are regulated through a complex interplay of physical and biological interactions in a crowded population. Bacterial morphology, hydrodynamics, surface topology, and topography markedly alter growth mechanisms, morphology, and overall competition among bacteria (Grant et al., 2014; Su et al., 2012; Volfson et al., 2008; Warren et al., 2019; Cho et al., 2007; Smith et al., 2017). Elucidation of the factors regulating collective bacterial growth and their competition is essential to enhance our understanding of evolutionary dynamics, bacterial infection, and the progression of inflammatory diseases.\n\nA characteristic feature of bacterial colonization is the formation of large-scale order. Rod-shaped bacteria display nematic alignment on surfaces, wherein localized stress, surface friction, and elasticity trigger the formation of ordered domains and lead to the emergence of topological defects (Doostmohammadi et al., 2016; Dell\u2019Arciprete et al., 2018; Doostmohammadi et al., 2018; You et al., 2018; You et al., 2021) and various types of self-assembled structures, including edge fingerings (Farrell et al., 2013) and vertical structures (Beroz et al., 2018; Hartmann et al., 2019).\n\nIn particular, \u00b1\u00bd topological defects are the typical orientational singularities observed among growing bacterial colonies and biofilms (Doostmohammadi et al., 2016; Doostmohammadi et al., 2018; You et al., 2018; Yaman et al., 2019). These topological defects have biological significance and regulate stress distribution across the structure, alter the physiology of the cells (Saw et al., 2017), and could control entire morphology; eventually, these effects trigger the formation of fruiting bodies (Copenhagen et al., 2020) and bacterial spores in biofilms (Yaman et al., 2019). Liquid crystal theory has successfully predicted the dynamics of these defects; $-\\frac{1}{2}$ defects are stationary whereas $+\\frac{1}{2}$ defects are generally motile (Shankar and Marchetti, 2019; DeCamp et al., 2015; Giomi et al., 2013). Another interesting structural order in bacterial colonies is anchoring, where the bacteria are tangentially oriented along the edge of the colony (Su et al., 2012; Doostmohammadi et al., 2016; Dell\u2019Arciprete et al., 2018).\n\nIn this study, we assess the orientational dynamics of a crowded bacterial population competing for limited space. Unlike regular expanding colonies, if growing bacteria surround a closed area, domains of inward growth are formed. Under these conditions, entire mechanical interactions differ and lead to the formation of asters, formed as radially aligned +1 topological defects. With only a few exemptions (Maroudas-Sacks et al., 2020; Meacock et al., 2021), higher-order topological defects (Thijssen and Doostmohammadi, 2020; Shankar et al., 2018) are not commonly observed in extensile active matter systems, including growing bacterial colonies. These defects only appear under external modifications such as stress (Rivas et al., 2020), confinement (Duclos et al., 2016; Opathalage et al., 2019), and flow (Mart\u00ednez-Prat et al., 2019). Our results also reveal that velocity profile is an important factor controlling the emergence of these radially aligned structures. Furthermore, we investigate the invasive advantages of this orientation for competing bacterial strains of different lengths.\n\nInward growth is commonly observed in various biological systems. During wound healing (Basan et al., 2013), cancer cell growth (Lee et al., 2017; Vader et al., 2009), and retina development (Than-Trong and Bally-Cuif, 2015; Azizi et al., 2020), similar dynamic mechanisms are underway. Our results may provide novel mechanistic insights into these dynamics, particularly on the physical conditions for radial structural alignments during these complex growth processes.\n\n## Results\n\n### Experimental observation of aster structures\n\nTo observe the dynamics of inward-growing bacterial colonies, we sparsely spread nonmotile Escherichia coli and Bacillus subtilis separately, on a flat agarose surface (see Materials and methods). Time-lapse fluorescence microscopy was then performed to investigate the temporal evolution of growing colonies. With colony growth, the closed area invaded by multiple colonies was observed across the plate. Rough colony interfaces gradually converge to symmetric, relatively smooth, and enclosed circular areas. We refer to these shrinking circular regions as inward-growing bacterial domains because the growth direction is toward the center of the area. Figure 1 displays typical snapshots of the inward growth process (Figure 1a and b, Video 1, Figure 1\u2014video 1). Unlike regular expanding colonies, the bacterial orientation around these domains is generally radial. To assess the orientation, we first analyzed the radial order parameter $S_{R}$ around the center of these domains. The radial order parameter $S_{R}$ can be expressed as:\n\n$$\n\u27e8S_{R}\u27e9=\\frac{1}{N}\u00a0\\sumicos\u2061[2(\\theta^{i}\u2212\u03d5^{i})]\n$$\n\nwhere $\\theta^{i}$ is the angular orientation with respect to x-axis and $\u03d5^{i}$ is the angular position of the bacterium i in polar coordinates about the colony center. Figure 1d and c displays the bacterial orientation and order parameter $S_{R}(r)$ as a function of radial distance. $S_{R}=+1$ corresponds to radial alignment and $S_{R}=-1$ corresponds to tangential alignment. It is evident that large-scale radial order emerges across these inward-growing domains (Figure 1c and d). These structures strongly resemble +1 topological defects also known as aster structures. We also measured the velocity of the bacterial flow during this process (Figure 1d). We found that the direction of the flow is toward the center. From these measurements, we can conclude this radial inward flow could align the bacteria in a radial direction.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig1-v2.jpg)\n\n**Figure 1.:** (a) Early stage of a closed area surrounded by growing bacterial colonies (Bacillus subtilis). (b) Snapshot of the radially aligned bacterial profile immediately before hole closure. (c) A director field superimposed on an inward-growing domain displaying radial alignment. Scale bar 25 \u03bcm. (d) The azimuthally averaged radial order parameter (SR) and velocity against the distance from the colony center for the colony snapshot given in (c). Error bars are defined as s.d. (e,g) Simulation of 2D inward colony growth and regular expansion of bacterial colonies. (f,h) Schematic illustration of the velocity field (black arrow) and frictional force (red arrow) on bacteria in the inward and outward growing domain. Cell colors represent the radial order parameter (SR). Red represents radial alignment; blue, tangential alignment.\n\n![Video 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-video1.mp4.jpg)\n\n**Video 1.:** The video shows the fluorescence image of GFP labeled Escherichia coli (BAK 55) during inward growth. The duration of the experiment is 120 min and the total area is 125 \u00d7 125 \u03bcm2.\n\n### Numerical simulation of bacterial orientation during inward growth\n\nTo clarify the impact of flow-induced alignment and differences in orientation between inward-growing and regular expanding colonies, we simulated 2D bacterial growth using a hard rod model. We used the open-source simulation code GRO (Jang et al., 2012) which provides a fast platform to observe bacterial growth (see Materials and methods). To determine the morphology of the inward-growing domain, we initially distributed bacteria in a random orientation. With growth, bacteria form small colonies, which eventually fuse into a growing annulus (Figure 1e). To visualize the large-scale order, we color-coded bacteria on the basis of their radial orientation, with red representing radial orientation, and blue representing tangential orientation around the center of the hole (Figure 1e, Video 2). These simulation results captured the experimentally observed radial order across the colony.\n\n![Video 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-video2.mp4.jpg)\n\n**Video 2.:** This video is associated with Figure 1f.\n\nHowever, regular expanding colonies only formed microdomains with random local orientations (Figure 1g, Figure 1\u2014video 2). Regular expanding colonies represent the outward growth initiating from a single bacterium displayed in Figure 1g. Based on these simulations, the primary difference between regular expanding and inward-growing colonies is the sudden change in the direction of the surface drag force which depends on the velocity (Figure 1f and h). In inward-growing colonies, this force flips its sign at a critical radius where the local radial velocity of the colony vanishes.\n\nTo further quantify the effects of the critical radius, we determined the stress distribution and radial velocity profile $v_{r}$ , in growing colonies. Figure 2 summarizes the comparison and time evolution of these parameters. We first focused on radial and azimuthal stress profiles. We noted that the stresses ($\\sigma_{rr}$ and $\\sigma_{\\theta\\theta}$) (Figure 2\u2014figure supplement 1) are maximum around the critical radius during inward growth (Figure 2a and b). The stress profiles initially show the quadratic form which is particularly dictated by the radial velocity profile (Beroz et al., 2018).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-v2.jpg)\n\n**Figure 2.:** (a, b) Plot of azimuthally averaged radial stress distribution ($\\sigma_{rr}$) at different time points of regular expanding and inward-growing colonies against the distances from the center of the colony. Time points are given in cell division time (t). (c,d) Plot of the azimuthally averaged radial order parameter (SR) across the colonies. Radial order emerges not only below the critical radius but also beyond this level. Negative radial order corresponds to a tangential orientation or active anchoring. (e,f) Comparison of azimuthally averaged radial velocity (vr) profiles of regular expanding and inward-growing colonies. Regular expanding colonies display a linear profile; however, inward-growing colonies form a nonlinear velocity profile. Error bars are defined as s.d. and averaged over 25 simulations. (g) Snapshots of gradual rotation of a single bacterium (green) into a radial orientation during inward growth. Similar bacterial rotation can be seen in experimental results (Figure 2\u2014figure supplement 5).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Plot of azimuthally averaged stress distribution ($\\sigma_{\\theta\\theta}$ and $|\\sigma_{r\\theta}|$) at different time points of regular expanding and inward-growing colonies against the distances from the center of the colony.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Plot of the radius of the regular expanding colony against time. (b) Plot of the inner and outer radius of the bacterial colony of the inward-growing colony against time. Critical radius is determined by where vr equals to zero. Critical radius shows constant profile immediately before hole closure.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Plot of the inner radius of inward-growing bacterial domain against time. (b) Plot of radial velocity (vr) of the inner edge of the inward-growing bacterial domain in the experiment against time.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp5-v2.jpg)\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Under both conditions, colonies can develop radial alignment.\n\nThen we observed that, as colonies grew, only inward-growing colonies developed substantial radial order $S_{R}(r)$ (Figure 2c and d). Furthermore, radial velocity profiles $v_{r}$ significantly differed between regular expanding and inward-growing colonies. In contrast with regular expanding colonies, which have a linear radial velocity profile, inward-growing colonies developed radially nonlinear velocity, which vanishes at the critical radius (Figure 2e and f, Figure 2\u2014figure supplement 3). Experimentally, similar profiles were measured (Figure 2\u2014figure supplement 4). This profile gradually rotated the bacteria into the radial direction (Figure 2g, Figure 2\u2014figure supplement 5). Based on these results, the velocity profile appears to be the key physical parameter regulating the flow-induced alignment and the formation of the radial order.\n\n### Velocity profile and radial alignment\n\nTo better understand the association between the velocity profile on radial alignment, we first focused on the development of a minimum theoretical model based on active nematics. The theory of active nematics and liquid crystal physics provides a robust framework for understanding the dynamics of bacterial orientation. The primary characteristic of expanding colonies is the constant growth rate of the colony structure. The incompressibility criteria in 2D results in a linear relation between bacterial growth rate and radial velocity profile of the colony, $v_{r}=grr= \\frac{\u039b}{2}r$ , where $gr$ is the local growth rate and $\u039b$ is the exponential bacterial growth rate. These coefficients are related to incompressible expanding bacterial colonies.\n\nThis relation was previously referred to as a Hubble-like constant owing to its similarity to the expansion of the universe (Dell\u2019Arciprete et al., 2018). We considered the same approximations to obtain insights into bacterial orientation during inward growth. First, we used the assumption that without molecular field and convection terms, the time evolution of the orientational angle $\\theta$ is simply regulated as follows (see Materials and methods):\n\n$$\n\\frac{d\\theta}{dt}=\\frac{\u03beg^{\u2032}r}{2S}sin\u2061(2(\u03d5\u2212\\theta))\n$$\n\nwhere $\u03d5$ is the angular position of the bacteria in polar coordinates, and $\u03be$ is the flow alignment parameter. Furthermore, $g(r)$ is the local growth rate of the colony and its spatial derivative $g^{\u2032}(r)$ regulating the stability of the bacterial orientation. The constant growth rate observed in regular expanding colonies does not provide any orientational preference, $\\frac{d\\theta}{dt}=0$. However, this condition significantly differs during inward growth, wherein the local growth rate can be expressed as follows:\n\n$$\ng(r)=\\frac{v_{r}}{r}=\\frac{\u039b}{2}\\frac{(r^{2}\u2212R_{c}^{2})}{r^{2}}\u00a0and\u00a0g^{\u2032}(r)=\u039b\\frac{R_{c}^{2}}{r^{3}}>0\n$$\n\nOur assumption of a constant critical radius (Figure 2\u2014figure supplement 3b) indicates that the spatial derivative of the growth rate is positive everywhere across the colony, $g^{\u2032}(r)>0$, suggesting the possibility of a stable state with $\\theta=\u03d5$ . The stable radial orientation stimulates aster formation, being referred to as a +1 topological defect. This finding is significant because $g`r\\neq0$ is generally possible in compressible structures and also only around leading edges of growing colonies due to sudden drop (Dell\u2019Arciprete et al., 2018). Although bacterial colonies are not compressible, inward growth and the shrinking hole structure alter the overall velocity profile and lead to an essential local growth rate.\n\nThe radial orientation is stable throughout the colony and not only below the critical radius. To clarify this point, we simulated colony growth under a fixed circular wall mimicking the stationary critical radius (Figure 2\u2014figure supplement 6). We observed a similar radial alignment. These results indicate the association between the circular confinement owing to the critical radius which dictates velocity profiles and the stability of bacterial orientations.\n\n### Nemato-hydrodynamics and continuum modeling\n\nThereafter, we investigated whether the same defects were obtained through the continuum nemato-hydrodynamics equations of growing active matter (Giomi et al., 2012; Olmsted and Goldbart, 1992; Mishra, 2017). Due to coarse graining over specific physical details, the continuum model could provide generality of our observation. The model is based on continuity, Navier\u2013Stokes equations, and dynamics of the order parameter tensor $Q$ (see Materials and methods). The coupled differential equations governing the primary material fields density $\u03c1$, $Q$, and velocity $\u03bd$ can be expressed as follows:\n\n$$\n\\frac{D\u03c1}{Dt}=\u039b\u03c1+D_{\u03c1}\u2207^{2}\u03c1\n$$\n\n\n\n$$\n\\frac{D(\u03c1\u03bd)}{Dt}=\u00a0\u2207\u22c5\\sigma\u2212\\gamma\u03c1\u03bd\n$$\n\n\n\n$$\n\\frac{DQ}{Dt}=\u00a0\u03beu+Q\u22c5\\omega\u2212\\omega\u22c5Q+\u0393^{\u22121}H\n$$\n\nHere, $\\frac{D}{Dt}$ is the material derivative, and the stress tensor is given as:\n\n$$\n\\sigma=\u2212pI\u2212a(\u03c1)Q\u2212\u03beH+\u00a0Q\u22c5H\u2212H\u22c5Q\n$$\n\nHere, $a(\u03c1)Q$ represents the active stress originating from the extensile nature of bacterial growth. $u$ and $\\omega$ are the traceless strain rate and vorticity, respectively (see Materials and methods). The critical parameter $\u03be$ is the flow alignment parameter. The details of the frictional drag coefficient per unit density $\\gamma$, the molecular field $H$, pressure $p$, rotational diffusion constant $\u0393,$ and small diffusion coefficient $D_{\u03c1}$ are given in Material and methods. These equations were initially solved for growing bacterial colonies (Volfson et al., 2008; Doostmohammadi et al., 2016; Dell\u2019Arciprete et al., 2018; You et al., 2018; Atis et al., 2019) and successfully predicted the active nematic nature and domain formations among colonies of rod-shaped bacteria. We solved them numerically with finite element method (FEM) (see Materials and methods). As a benchmark, we compared the simulations with regular expanding colonies. Figure 3 summarizes the results of these continuum simulations. As expected, regular expanding colonies exhibited only local alignment (Figure 3a and c, Figure 3\u2014video 1) corresponding to microdomains. However, inward-growing colonies developed robust radial alignment and order not only below but also beyond the critical radius (Figure 3b and d, Video 3). Inward-growing colonies also displayed the expected nonlinear velocity profile required for radial alignment (Figure 3e and f , Figure 3\u2014videos 2 and 3, Figure 3\u2014figure supplement 1). Moreover, a sudden drop of the velocity profile near the inner and outer colony edges also resulted in tangential orientation. These results from continuum simulation suggest that similar radial alignment could also be observed in other active matter systems under the same radial velocity profiles.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig3-v2.jpg)\n\n**Figure 3.:** (a,b) Scalar order parameter (S) overlapped with the director field pattern of both regular expanding and inward-growing bacterial colonies. Comparison of azimuthally averaged (c,d) radial order parameter (SR) and (e,f) radial velocity (vr) profiles of the colonies against the distance from the center of the colony. In contrast with regular expanding colonies, inward-growing domains developed radial order throughout the colony. A sudden velocity drop near the edge of the colonies resulted in tangential orientation. Error bars are defined as s.d.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a,b) Velocity field superimposed on a density profile of regular expanding and inward-growing colony. (c,d) Plot of azimuthally averaged density against the distance from the colony center for regular expanding and inward-growing colony.\n\n![Video 3.](https://cdn.elifesciences.org/articles/72187/elife-72187-video3.mp4.jpg)\n\n**Video 3.:** The scalar order parameter is overlapped with the director field pattern. This video is associated with Figure 3b.\n\n### Inward-growing domains in multi-layered colonies\n\nGrowing bacterial colonies on elastic substrates generally form multi-layered structures. We investigated whether these multi-layered structures could change the radial alignment during inward growth. Herein, experimentally we observed inward-growing domains only around the inner edge surrounded by dense multi-layered structures. This is because merging colonies and the accumulated stress trigger multi-layer formation and limit the size of monolayer region around the edge (Figure 4\u2014figure supplement 1). We investigated whether these multi-layered structures affect the radial alignment during inward growth by performing three-dimensional (3D) FEM simulations based on recently developed algorithms (Yaman et al., 2019; Vetter et al., 2015; Vetter et al., 2013). Our previous computational tool (GRO) cannot simulate bacterial growth in 3D. Our FEM algorithms are relatively slow, but this approach is very powerful to capture detailed bacterial growth in three-dimentional complex environments. The bacterial cells were modeled as growing elastic rods that undergo controlled cell division during colony growth. We first tested the 3D capability of FEM simulations by replicating similar radial alignment under spherical confinement (Figure 4\u2014figure supplement 2). Then we focused on growing colonies on flat surfaces with surface friction. Figure 4 shows the prototypical FEM simulation outcome from inward-growing colonies. As expected, accumulated stress triggers verticalization and multi-layer formation around the critical radius of the colony (Figure 4a and b and Video 4). However, a bacterial monolayer was observed only around the inner and outer leading edges of the colony. The formation of a monolayer region around growing colonies has been investigated in great detail (Warren et al., 2019). We found that these monolayers could also result in planar radial alignment (Video 5). The width of the monolayer was approximately \u0394r = 90\u00b130 \u00b5m (Figure 4c). This width defines the size of the aster structures observed herein.\n\n![Video 4.](https://cdn.elifesciences.org/articles/72187/elife-72187-video4.mp4.jpg)\n\n**Video 4.:** Color represents vertical displacement. This video is associated with Figure 4b.\n\n![Video 5.](https://cdn.elifesciences.org/articles/72187/elife-72187-video5.mp4.jpg)\n\n**Video 5.:** Color represents the radial order parameter. This video is associated with Figure 4a.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig4-v2.jpg)\n\n**Figure 4.:** (a,b) Snapshot of inward-growing bacterial domains obtained through the finite element model simulation in 3D. The colors represent (a) the radial order parameter ( $S_{R}$ ) and (b) the vertical displacement of the bacteria during growth. L is the bacterial length. (c) Experimental snapshot of the inward-growing domain indicating the transition between mono- to multi-layer. \u0394r represents the width of the monolayer bacteria domain.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Using PDMS and glass flat surfaces as vertical confinement, cannot generate large bacterial monolayers. Bright white regions around the center correspond to the second and the third layers. Scale bar corresponds to 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** A confined colony can develop strong radial alignment. Gray surfaces were added for visualization purposes. Cell colors represent the radial order. The blue color on the surface indicates surface anchoring.\n\n### Inward-growing domains in monolayer colonies\n\nSo far, we experimentally studied naturally emerged inward-growing domains on agar surfaces. These domains are randomly formed across the plate. Due to random seeding of bacteria, outward growing edges of multiple colonies merge and form multi-layered structures. In these experiments particularly, the confinement is defined by crowded multi-layered environments. Thus, observing critical radius, outer growing edge and detailed velocity profiles are not possible around these dense regions. Our simulations showed that the initial annulus shape could overcome these limitations. We asked whether we could induce similar annulus structures by patterning the initial distribution of bacteria to observe both inward and outward growing domains. We first tried to imprint bacteria on an agarose surface using soft PDMS molds. However, the wet surface and capillary effect quickly disturbed the initial bacterial patterns defined by the mold. Then we preferred non-contact lithographic techniques for patterning. Using a photomask (Figure 5\u2014figure supplement 1), we exposed randomly distributed bacteria with blue light to define an initial growth geometry by killing the remaining part of the pattern (see Materials and methods). Figure 5a shows the time evolution of growing bacteria starting from annulus-shaped initial distribution. We observed that on a regular agar surface, again multi-layer formation dominates the overall colony morphology. Only very narrow monolayer regions are observable around the inner and outer edges of the colony. We then focus our attention on how to eliminate this multi-layering process. A simple glass or PDMS confinement cannot eliminate this multi-layering (Figure 4\u2014figure supplement 1). Previous studies showed that attractive biochemical interactions between bacteria and surface could generate additional strong friction force (Duvernoy et al., 2018). Altogether friction force, stress accumulation, and verticalization of bacteria in a monolayer colony trigger the formation of these multi-layered structures. This process is mainly controlled by the competition between vertical force and lateral compression in the colony (Grant et al., 2014; Beroz et al., 2018; Duvernoy et al., 2018; You et al., 2019). Above the critical stress level, the orientation of rod-shaped bacteria becomes unstable and triggers the extrusion. Performing FEM simulations, we noticed that this extrusion process occurs around the center of the annuls and it can be controlled by surface friction (Figure 5\u2014figure supplement 2). Although we don\u2019t know the detailed biological mechanism behind the friction force, it is evident that minimizing the surface friction can increase the size of the monolayer colony. Then, we tested the same bacterial patterning on different membranes to find a surface with low friction by minimizing biochemical interaction. We noted that only polycarbonate (PC) surfaces are useful for this purpose, and they support large monolayer colonies while providing a sufficient bacterial growth rate (Figure 5\u2014figure supplement 3, Figure 5\u2014video 1, see Materials and methods). The size of these monolayer colonies was approximately 600 \u00b5m. As we observed in our previous simulations (Figure 4), at a later stage, the second layer formation appeared around the center of these annulus shapes which is close to the critical radius (Figure 5a, Figure 5\u2014video 2). Similarly, we observed strong radial alignment across the colony (Figure 5c and d, Figure 5\u2014figure supplements 4 and 5). We did not observe any radial alignment in regular isolated monolayer colonies. Instead, we clearly observed orientational defects and microdomains in these monolayer colonies on PC surfaces (Figure 5\u2014figure supplement 6). Inward and outward growing monolayer domains also provided the nonlinear velocity profile (Figure 5e), which is essential for radial alignment. We noticed that during this process critical radius shows a constant profile (Figure 5f, Figure 5\u2014figure supplement 7, Figure 5\u2014video 2). The other interesting form of bacterial growth is biofilm formation which has filamentous and nematic internal structures. As a next step, we similarly tested the radial alignment dynamics of these bacterial biofilms during the inward growth process, starting from the same initial distribution. We used a biofilm-forming strain B. subtilis 168 (Yaman et al., 2019) and observed similar strong radial alignment across the biofilms (Figure 5\u2014video 3, Figure 5\u2014figure supplement 8). Our FEM simulations also captured the alignment process of growing elastic bacterial biofilm structures (Figure 5\u2014video 4, Figure 5\u2014figure supplement 8c,d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-v2.jpg)\n\n**Figure 5.:** (a,b) Snapshot of inward-growing bacterial colonies (Bacillus subtilis) on different surfaces. Initial bacterial distribution is defined by non-contact lithographic techniques with blue light exposure. Inward-growing domains are formed by merging colonies originating from annulus-shaped initial distribution. (a) On an agarose surface, growing colonies easily form multi-layer structures and provide narrow monolayer inward-growing domains. However, (b) on a low friction polycarbonate (PC) surface, bacteria form monolayer colonies and provide large-scale inward-growing domains. Scale bar 500 \u03bcm. (c) Magnified fluorescence image superimposed with director field of the inward-growing domain indicating the radial alignment of bacteria. \u0394r represents the width of the monolayer region. Scale bar 50 \u03bcm. (d) Radial order parameter (SR) and (e) radial velocity profile (vr) as a function of distance across the monolayer colony. Velocity profile was extracted by using PIV algorithms around the center of the annulus shape (Figure 5\u2014video 2). (f) The experimentally measured inner and outer and critical radius. d, e, f are averaged over four different colonies, starting from the same initial annulus-shaped distribution.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp1-v2.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Snapshot of inward-growing bacterial domains with the color representing compressive stress (a) on individual bacteria, velocity profile (b), and azimuthally averaged $\\sigma_{rr}$ radial, $\\sigma_{\\theta\\theta}$ hoop stress, the velocity profile, and the positions of the first five extrusion events triggering the multi-layering process (c).(d\u2013f) Snapshot of the colonies under different surface friction. Snapshots were taken during the first extrusion event before multi-layer formation. The first verticalization processes are shown in red circles. (g) The width of the monolayer colony obtained through the finite element model simulation on flat surfaces as a function of friction coefficients.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Nutrition can leak from Luria-Bertani (LB) plate through the holes and provide a sufficient growth environment for bacteria.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The bottom edge corresponds to the inner radius of the annulus shape. Large-scale radial alignment occurs around the colony. Scale bar 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** The bottom side corresponds to the inner leading edge of the colony. Scale bar 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** Scale bar 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp7-v2.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Scale bar 20 \u03bcm. The left side corresponds to the inward-growing domain.\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig5-figsupp8-v2.jpg)\n\n**Figure 5\u2014figure supplement 8.:** (a) Time evolution of growing chaining bacterial colonies starting from annulus-shaped initial geometry. (b) Magnified fluorescence images indicating the radial alignment of the biofilm around the inner radius. The regions are highlighted in (a). (c) Finite element method (FEM) simulation of growing biofilm structure. (d) Magnified images of simulation results indicating the radial alignment.\n\n### Biological significance\n\nFinally, to assess the biological significance of radial alignment, we investigated whether these structures potentially affect the competition among bacteria during inward growth. In general, near the leading edge of a bacterial colony, competition strongly depends on physical parameters. The most prominent example is a genetic drift based on random fluctuations (Hallatschek et al., 2007; Kayser et al., 2018). This phenomenon could be altered through steric interactions among the cells, which can potentially alter the evolutionary dynamics of competing bacteria (Farrell et al., 2017). Although bacterial orientation is generally tangential at the expanding colony edge, radial bacterial alignment potentially contributes to inward growth. We hypothesized that longer rod-shaped bacteria potentially have an advantage owing to the torque balance. The basic premise is that the torque depends on the length of the bacteria, resulting in rapid radial alignment. Radial alignment further leads to lane formation and promotes an invasive advantage to the longest one, which could be beneficial in terms of approaching nutritional hotspots localized around the defect core more effectively.\n\nTo assess this competition, we initially simulated the growth dynamics of a mixed population with different division lengths from the same random initial distribution on a circle (Figure 6\u2014figure supplement 1). This is the most challenging condition to test the impact of the length difference on the bacterial alignment. Although the initial distribution of the bacteria is random, long bacteria can develop a higher radial order during inward growth (Figure 6a\u2013f). This radial order gradually allows the longest bacteria to approach the center of the defect more effectively (Figure 6g). The bacterial growth is local, and it can create strong segregation within the colonies. The impact of the length could be more significant in segregated colonies. To visualize the difference, we initially segregated the bacterial strains with different lengths around the edge of the colony. Similar segregation can be commonly observed around the edge of the colony owing to random fluctuations. These segregations can also occur during inward growth (Figure 6\u2014figure supplement 2). Instead of expanding segments owing to perimeter inflation, we observed shrinking segments owing to the deflation of the hole geometry. Computationally, the advantage of radial alignment was more evident in segregated bacterial colonies (Figure 6h). Interestingly, in a monolayer colony, radial alignment promotes the invasion of both the center and the leading outer edge of the colony through the longest bacteria (Figure 6g). After the complete invasion of the center, the radial lanes buckle (Figure 6\u2014figure supplement 3, Videos 6 and 7). However, experimental verification of this competition remains challenging. Although precise regulation of the aspect ratio of bacterial morphology is well established (Dion et al., 2019), cell length can still not be independently tuned without perturbing other essential physiological properties, including growth rate and the biofilm-forming potential of the bacteria.\n\n![Video 6.](https://cdn.elifesciences.org/articles/72187/elife-72187-video6.mp4.jpg)\n\n**Video 6.:** RFP and GFP labeled bacteria are initially segregated. Color represents the bacterial type. This video is associated with Figure 6h.\n\n![Video 7.](https://cdn.elifesciences.org/articles/72187/elife-72187-video7.mp4.jpg)\n\n**Video 7.:** RFP and GFP labeled bacteria are initially segregated. Color represents the bacterial type. This video is associated with Figure 6h.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig6-v2.jpg)\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Starting from random initial annulus distribution, the longest bacteria could develop higher radial order (SR ) shown in Figure 6a\u2013c. The zoomed versions of (SR ) are given in Figure 6a. This packed and random distribution is hypothetical initial distribution to test the worst-case scenario to challenge bacterial competition. The relative packing fraction is shown in Figure 6g.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Competing RFP and GFP labeled, identical bacterial strains were mixed and printed on an agar surface using a sharp cylindrical object.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/72187/elife-72187-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** The longest bacteria can invade the center more effectively. After a complete invasion of the center, the radial lanes buckle.\n\n## Discussion\n\nRadially aligned structures can be considered as a +1 aster defect. These are ubiquitous topological structures observed in biological (Roostalu et al., 2018; Ross et al., 2019; Kruse et al., 2004; Julicher et al., 2007) or synthetic (Sokolov et al., 2019; Snezhko and Aranson, 2011) active matter systems. For instance, microtubules can form nematic alignment or asters during mitosis, depending on the extensile or contractile activity. Bacterial colonies can be considered an extensile active material platform, generally supporting the formation of only \u00b1\u00bd topological defects. This study shows that stable radially aligned, aster structures can also emerge during inward growth. In particular, we report the critical role of the colony velocity profile during this process, which depends on numerous factors. Although the bacterial growth rate is constant throughout the colony, growth geometry, confinement, or boundary conditions can alter the velocity profile. Together, these biomechanical interactions change the bacterial orientation and stability, thus generating ordered structures. Different types of ordered structures have been observed in bacterial biofilms (Yan et al., 2016) and 3D colonies (Warren et al., 2019). Furthermore, we believe that the velocity profile of growing structures on flat surfaces plays a significant role in bacterial alignment. Future studies are required to investigate the contribution of these effects.\n\nWe should emphasize that inward-growing bacterial colonies and wrinkling thin circular sheets have geometric similarities (Davidovitch et al., 2011). In these elastic circular objects, under axisymmetric tensile load, azimuthal stress (hoop stress, $\\sigma_{\\theta\\theta}$ ) show transition from tensile to compressive profile which eventually creates radial wrinkling pattern below critical radius. However, unlike elastic objects, growing bacterial colonies can only develop compressive stress due to negligible attractive force between bacteria. Experimental measurement of internal stress could provide more details, but it remains challenging. We noticed that the packing fraction of the bacteria shows a correlated profile (Figure 2\u2014figure supplement 2). However, particularly for aligned bacteria, it is still very difficult to extract this information. In the future, new molecular probes could be useful for the experimental measurement of accumulated stress in the bacterial colonies (Chowdhury et al., 2016; Prabhune et al., 2017).\n\nFinally, this study reveals the potential biological significance of radial alignment during the invasion. These ordered structures provide additional advantages and promote the survival of the longest bacteria. These results link the orientational properties and competition dynamics of bacterial colonies. Our findings are of potential relevance for the understanding of complex dynamics of bacterial infections and the progression of inflammatory diseases.\n\n## Materials and methods\n\n### Bacterial preparation and growth conditions\n\nBacterial cultures (BAK47 and BAK51) were grown in Luria-Bertani (LB) broth at 37\u00b0C on a shaker. An overnight culture was diluted 100\u00d7 and grown for 8 hr. The culture was diluted 10,000\u00d7, and 10 \u00b5l of culture was seeded on an LB agarose plate. These isolated bacteria on plates were grown at 21\u00b0C for 12 hr and then imaged. Strains used in experiments are described in Table 1. In B. subtilis bacterial strains, the flagella-producing gene (hag) was mutated to eliminate the swimming-induced motion. The background strain TMN1138 was obtained from R Losick Lab.\n\n**Table 1.**\n List of strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Parent</th>\n      <th>Operation</th>\n      <th>Genotype</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BAK47</td>\n      <td>168</td>\n      <td>Transformed with plasmid ECE321 from Bacillus Genetic Stock Center</td>\n      <td>amyE::Pveg-sfGFP (Spc)</td>\n    </tr>\n    <tr>\n      <td>BAK115</td>\n      <td>TMN1138</td>\n      <td>Transformed with plasmid ECE327 from Bacillus Genetic Stock Center</td>\n      <td>amyE::Pveg-mKate (Spc) sacA::Phag-mKate2L (Kan) hagA233V (Phleo)</td>\n    </tr>\n    <tr>\n      <td>BAK51</td>\n      <td>TMN1138</td>\n      <td>Transformed with plasmid ECE321 from Bacillus Genetic Stock Center</td>\n      <td>amyE::Pveg-sfGFP (Spc) sacA::Phag-mKate2L (Kan) hagA233V (Phleo)</td>\n    </tr>\n    <tr>\n      <td>BAK 55</td>\n      <td>DH5alpha</td>\n      <td>Transformed with plasmid 107741 from Addgene</td>\n      <td>pDawn-sfGFP</td>\n    </tr>\n  </tbody>\n</table>\n\n### Microscopy imaging\n\nFluorescence time-lapse imaging was performed using a Nikon inverted and Stereo SMZ18 microscopes. Images were obtained using a Andor EMCCD camera. Time intervals between successive images were set to 5\u201310 min.\n\n### 2D hard-Rod simulations of a growing colony\n\nWe used the open-source simulation program GRO based on a hard-rod model. The code is available from https://depts.washington.edu/soslab/gro/. We modified the original code to be able to change the initial bacterial position and to extract the orientation of the bacteria. Sample files and scripts used for modifications are available on GitHub (https://github.com/mustafa-basaran/Large_Scale_Orientation_Bacteria, copy archived at swh:1:rev:fd7673254fa57874676b183f9a944d9e457c3ac0; Basaran, 2021).\n\n### Bacterial patterning\n\nWe used photolithographic techniques to define the initial distribution of the bacteria by killing with structured blue light illumination. We used 15 min exposure under 5 mW/mm2 480 nm uniform light beam. We think the killing mechanism is mainly based on the local drying process. The geometry was defined by chromium photomask. The mask (Figure 5\u2014figure supplement 1) was fabricated by using Heidelberg DWL 66+ Direct Writing Lithography System and developed with chromium etchant. We have tested different annulus-shaped patterns by tuning the inner and outer radius. Due to light diffraction, the final exposed pattern depends on the spacing between the PC filter and a mask. Our optimized pattern has 400 \u03bcm inner and 800 \u03bcm outer radius.\n\n### Growing monolayer colonies on low friction surfaces\n\nIn order to minimize surface friction, we replaced the agarose surface with a filter membrane. We have tested several membrane filters, including nylon, polycarbonate (PC), polyethersulfone, cellulose acetate. Only white PC filters with 0.4 \u03bcm pore size supported stable and large-scale monolayer colony formation. We noted that the brown PC filter has similar low surface friction; however, it has strong light absorption and does not allow noncontact lithography due to heavy condensation on the photomask.\n\n### SEM imaging\n\nA PC filter paper with a pore size of 0.4 \u00b5m was placed on LB agar surface. After seeding the 10,000\u00d7 diluted bacteria on the filter paper, bacteria were grown on the paper for 12 hr at 21\u00b0C. Then the filter paper was peeled off from the surface, and the colonies were fixed using paraformaldehyde and left to dry. Fixed colonies were coated with 20 nm gold and imaged using a Zeiss Ultra Plus Field Emission Electron Microscope.\n\n### Calculating stress distribution in a growing colony\n\nThe stress inside the colony can be calculated from the virial expansion (Volfson et al., 2008) $\\sigma_{i}= \\frac{1}{2a_{i}^{`}}\\sumjr_{ij}F_{ij}$ , $a_{i}^{`}$ is the effective area, $r_{ij}$ is the position of the contact, and $F_{ij}$ is the interaction force between the cells. Using the following transformations, we calculated the stress in polar coordinate\n\n$$\n\\sigma_{rr}=\u00a0\\sigma_{xx}\u2217cos^{2}\u2061(\\theta)+\\sigma_{yy}\u2217sin^{2}\u2061(\\theta)+\\sigma_{xy}\u2217sin\u2061(\\theta)\u2217cos\u2061(\\theta)\n$$\n\n\n\n$$\n\\sigma_{\\theta\\theta}=\u00a0\\sigma_{xx}\u2217sin^{2}\u2061(\\theta)+\\sigma_{yy}\u2217cos^{2}\u2061(\\theta)+\\sigma_{xy}\u2217sin\u2061(\\theta)\u2217cos\u2061(\\theta)\n$$\n\n\n\n$$\n\\sigma_{\\thetar}=\u00a0cos\u2061(\\theta)sin\u2061(\\theta)(\\sigma_{yy}\u2212\\sigma_{xx})+\\sigma_{xy}\u2217cos\u2061(2\u2217\\theta)\n$$\n\nDue to negligible lateral friction between bacteria, we ignore $\\sigma_{xy}$ and our equations become:\n\n$$\n\\sigma_{rr}=\u00a0\\sigma_{xx}\u2217cos^{2}\u2061(\\theta)+\\sigma_{yy}\u2217sin^{2}\u2061(\\theta)\n$$\n\n\n\n$$\n\\sigma_{\\theta\\theta}=\u00a0\\sigma_{xx}\u2217sin^{2}\u2061(\\theta)+\\sigma_{yy}\u2217cos^{2}\u2061(\\theta)\n$$\n\n\n\n$$\n\\sigma_{\\thetar}=\u00a0cos\u2061(\\theta)sin\u2061(\\theta)(\\sigma_{yy}\u2212\\sigma_{xx})\n$$\n\n### 3D FEM simulations of growing bacterial colonies\n\nFor the 3D computer simulations, we employed an open-source (https://libmesh.github.io/) parallel finite element library written in C++ (Vetter et al., 2013). Sample files and scripts used for analysis are available on GitHub (https://github.com/mustafa-basaran/Large_Scale_Orientation_Bacteria, copy archived at swh:1:rev:fd7673254fa57874676b183f9a944d9e457c3ac0; Basaran, 2021). Analogous to Yaman et al., 2019, the bacteria were modeled as an isotropic, linearly elastic continuum whose initial stress-free shapes were spherocylinders. The bacteria were assumed to maintain a uniform circular cross-section with radius $r=0.5\u00a0m$, a mass density of $1gcm^{-3}$ , a Young\u2019s modulus of $E=5300Pa$, and a Poisson ratio of $\u03bd=\u2153$ 1/3. The total elastic energy U of each bacterium comprised the usual terms for axial dilatation or compression, bending, and torsion (Vetter et al., 2015):\n\n$$\nU= \\frac{E\\pir^{2}}{2}\\int_{0}^{L}\\epsilon^{2}+\\frac{r^{2}}{4}\u03ba^{2}+\\frac{1}{1+\u03bd}\\phi^{2}ds\n$$\n\nwhere $L$ denotes the bacterium length, $\\epsilon$ the axial Cauchy strain, $\u03ba$ the scalar midline curvature, and $\\phi$ the twist per unit length. Hertzian steric forces were exchanged between overlapping bacterial elements in a normal direction. Tangential forces and torques exchanged during contact between bacterium pairs and between bacteria and the substrate was computed with a slip-stick friction model with a uniform isotropic Coulomb friction coefficient. We modeled the substrate as an elastic half-space onto which the bacterial colony was placed, and exerted a perpendicular gravitational force on the bacteria. The bacteria were grown exponentially in length over time by continuously increasing each element\u2019s equilibrium length. For this study, the finite element program was extended to allow for cell division when the bacterial length surpassed a division threshold $L_{\\theta}=5\u00a0m$. When $L>L_{\\theta}$ , the bacteria were split into two pieces at a random position drawn from a normal distribution about their center with a standard deviation of $L/10$, but no further away from the center than $L/5$. To evolve the colony in time, Newton\u2019s translational and rotational equations of motion were integrated with a Newmark predictor-corrector method of second order. To equilibrate the colony during growth, viscous damping forces were added.\n\nIn order to simulate inward-growing biofilm structure, we used our previous biofilm model (Yaman et al., 2019) and the same parameters. Eight identical replica of small biofilm structures are circularly distributed to form an initial annulus shape. We used fracture strain (0.3) to relax the extreme bending condition by triggering filament division.\n\n### Radial velocity profile\n\nTo calculate radial velocity profile, $v_{r}$ , during inward growth, we assume there is a critical radius $R_{c}$ , where $v_{r}$ is equal to zero. For $r<R_{c}$ and the initial domain size equals to $A_{in}$ :\n\n$$\nAt=A_{in}e^{\u039bt}=\\piR_{c}^{2}-r^{2}\n$$\n\nIf we take derivative wrt time.\n\n$$\nA_{in}\u039be^{\u039bt}=-2\\pir\\frac{dr}{dt}\n$$\n\n\n\n$$\nv_{r}r,t=\\frac{dr}{dt}=-\\frac{\u039bAt}{2\\pir}=\\frac{\u039br^{2}-R_{c}^{2}}{2r}\n$$\n\nFor outer growth where\u2009$r>R_{c}$\n\n$$\nAt=A_{out}e^{\u039bt}=\\pir^{2}-R_{c}^{2}\n$$\n\nSimilarly, the time derivative is\n\n$$\nA_{out}\u039be^{\u039bt}=2\\pir\\frac{dr}{dt}\n$$\n\n\n\n$$\nv_{r}r,t=\\frac{dr}{dt}=\\frac{\u039bAt}{2\\pir}=\\frac{\u039br^{2}-R_{c}^{2}}{2r}\n$$\n\nwhich results in the same equation. Consider that for $r$ lower than $R_{c}$ , velocity will be negative (inward direction) and for $r$ greater than $R_{c}$ velocity will be positive (outward direction).\n\n### Continuum modeling\n\nFor the continuum modeling, Equations 4\u20137 were solved with the FEM in COMSOL Multiphysics. The material derivative is given by $D/Dt=\\partial_{t}+v\u2219\\nabla+\\nabla\u2219v$ . $u$ and $\\omega$ are the strain rate and vorticity tensors, respectively, with components $u_{ij}=\\partial_{i}v_{j}+\\partial_{j}v_{i}-\\delta_{ij}\\nabla\u2219v/2$ and $\\omega_{ij}=\\partial_{i}v_{j}-\\partial_{j}v_{i}/2$ . We constructed a traceless and symmetric Q-tensor field:\n\n$$\nQ_{\\alpha\\beta}=Sn_{\\alpha}n_{\\beta}-\\frac{1}{2}\\delta_{\\alpha\\beta}\n$$\n\nand we defined scalar order parameter:\n\n$$\nSr=2\\sqrt{Q_{xx}^{2}r+Q_{xy}^{2}r}\n$$\n\nThe molecular field $H$ can be obtained starting from the Landau-de Gennes free energy density given as:\n\n$$\nf_{LdG}=\\frac{1}{2}\u039a\\nablaQ^{2}+\\frac{1}{2}\\alpha\u03c1trQ^{2}+\\frac{1}{4}\\beta\u03c1trQ^{2}^{2}\n$$\n\nTherefore, $H=\\delta/\\deltaQ \\intdAf_{LdG}=\u039a\\nabla^{2}Q-\\alpha\u03c1Q-\\beta\u03c1trQ^{2}Q$. In the simulations, the relationships $a\u03c1=a_{0}\u03c1$ ,$\\beta\u03c1=\\frac{\\alpha_{0}}{2}\u03c1$, $\\alpha\u03c1=\\alpha_{0}\u03c1_{c}-\u03c1$, and $p=G*max\\frac{\u03c1}{\u03c1_{0}}-1,0$ were used. We set the initial cell density $\u03c1_{0}=1$, growth rate $\u039b=0.005$, frictional drag coefficient per unit density $\\gamma=0.2$ , flow aligning parameter $\u03be$ = 0.7, rotational diffusion constant $\u0393=1$, and the remaining parameters $a_{0}=0.002$, $\\alpha_{0}=0.01$, $\u03c1_{c}=\u03c1_{0}/2=0.5$, $G=2$, $D_{\u03c1}=0.04$, $\u039a=0.01$.\n\n### Approximation for growth-induced alignment\n\nThe following approximation and equations are received from Dell\u2019Arciprete et al., 2018. These approximations were used to explain the tangential alignment of bacteria at the edge of growing colonies. The equation of motion for 2D nematodynamics without any free energy and no spatial variation of $Q$ can be written as:\n\n$$\n\\frac{\\partialQ_{\\alpha\\beta}}{\\partialt}+v_{\\gamma}\\partial_{\\gamma}Q_{\\alpha\\beta}=\u03beu_{\\alpha\\beta}-Q_{\\alpha\\gamma}\\omega_{\\gamma\\beta}+\\omega_{\\alpha\\gamma}Q_{\\gamma\\beta}\n$$\n\nIf we assume\n\n$$\nv_{r}=grr\n$$\n\nFrom this formulation we can conclude that:\n\n$$\nv_{\\alpha}=grx_{\\alpha}\n$$\n\nwhere $x_{\\alpha}$ is the Cartesian component of the position vector\n\n$$\n\\partial_{\\beta}v_{\\alpha}=g\\delta_{\\alpha\\beta}+g`rr_{\\alpha}r_{\\beta}\n$$\n\nwhere $r_{\\alpha}=\\frac{x_{\\alpha}}{r}$. Now this tensor is symmetric, with calculating $u_{\\alpha\\beta}$ and $\\omega_{\\alpha\\beta}=0$ putting it in Equation 17 above we get:\n\n$$\n\\frac{\\partialQ_{\\alpha\\beta}}{\\partialt}=\u03beg`rr_{\\alpha}r_{\\beta}-\\frac{\\delta_{\\alpha\\beta}}{2}\n$$\n\nWith writing $Q_{\\alpha\\beta}$ using:\n\n$$\nQ_{\\alpha\\beta}=S[cos^{2}\u2061\\theta\u2212\\frac{1}{2}sin\u2061\\thetacos\u2061\\thetasin\u2061\\thetacos\u2061\\thetasin^{2}\u2061\\theta\u2212\\frac{1}{2}]\n$$\n\n\n\n$$\n=\\frac{S}{2}[cos\u2061(2\\theta)sin\u2061(2\\theta)sin\u2061(2\\theta)\u2212cos\u2061(2\\theta)]\n$$\n\nIn polar coordinates $r,\u03d5$ right-hand side of Equation 21 is:\n\n$$\n\\frac{\u2202Q}{\u2202t}=\\frac{\u03beg^{\u2032}r}{2}[cos\u2061(2\u03d5)sin\u2061(2\u03d5)sin\u2061(2\u03d5)\u2212cos\u2061(2\u03d5)]\n$$\n\nIf we combine Equation 23 and Equation 24:\n\n$$\n\u2212Ssin\u2061(2\\theta)\\frac{d\\theta}{dt}=\\frac{\u03beg^{\u2032}r}{2}\u00a0cos\u2061(2\u03d5)\n$$\n\n\n\n$$\nScos\u2061(2\\theta)\\frac{d\\theta}{dt}=\\frac{\u03beg^{\u2032}r}{2}\u00a0sin\u2061(2\u03d5)\n$$\n\nMultiply first equation (Equation 25) by $-sin2\u03d5$ and second equation (Equation 26) by $cos2\u03d5$ and sum them up:\n\n$$\n\\frac{d\\theta}{dt}=\\frac{\u03beg^{\u2032}r}{2S}[sin\u2061(2\u03d5)cos\u2061(2\\theta)\u2212cos\u2061(2\u03d5)sin\u2061(2\\theta)]\n$$\n\n\n\n$$\n\\frac{d\\theta}{dt}=\\frac{\u03beg^{\u2032}r}{2S}sin\u2061(2(\u03d5\u2212\\theta))\n$$\n\nThus if $g^{\u2032}>0$, equation above has a stable equilibrium for $\\theta=\u03d5$ (aster).\n\n### Code availability\n\nThe codes utilized previously published open-source software from https://depts.washington.edu/soslab/gro/ and are made available on GitHub (https://github.com/mustafa-basaran/Large_Scale_Orientation_Bacteria, swh:1:rev:fd7673254fa57874676b183f9a944d9e457c3ac0; Basaran, 2021).\n",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "95108f4e-ea54-47ce-bd46-3fde40426d60",
+      "submission_id": "370d3438-6e52-408d-bf16-88237a7b5e63",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/02feahw73 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72187.sa0](https://doi.org/10.7554/eLife.72187.sa0)\n\nThe growth of bacterial colonies on solid substrates is a common assay used in a variety of settings, from probing bacterial organization in biofilms to spatial population genetics. The common setup is an outward growing colony from a central seed. In this work, Basaran et al., study a colony growing inward from an annulus. The authors show that this geometrical modification has profound consequences on the alignment of rod-shaped bacteria. This is caused by a flow alignment effect, and lead to a radial ordering reminiscent of an aster or +1 topological defect. This result is motivated by experimental observations with E. coli and interpreted using modern active matter theories, with ample support from extensive numerical simulations of detailed finite element and continuum models.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Pierre Sens, https://ror.org/02feahw73 Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.72187.sa1](https://doi.org/10.7554/eLife.72187.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Large-scale orientational order in bacterial colonies during inward growth\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aleksandra Walczak as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Suraj Shankar (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Substantiate your claim that the ordering is caused by flow alignment effect by reporting the flow distribution observed experimentally and comparing it to the theoretical prediction (reviewer #2 question 1)\n\n2) Specify how stress is computed in the simulations, and discuss the extent to which it can be determined experimentally. (reviewer #1 question 2 and reviewer #1 question 1))\n\n3) Improve the discussion of the multilayering transition, and in particular the role of in-plane stress in the process along the lines suggested by reviewer #1 question 1 and reviewer #2 question 2 and question 4\n\n4) Provide a point-by-point answer to all the reviewers comments and questions.\n\nReviewer #1:\n\nThis manuscript combines experiments, theory and simulation to study bacterial patterns in a colony growing inwards, from an annulus. The authors find that in this geometry growth leads to leads to the formation of an aster, which is a defect of topological charge +1, where bacteria tend to align in the radial direction. Previously, a growing colony of bacteria was reported to lead to nematic microdomain formation, with bacteria aligning tangentially at the colony edge, with half-integer defects in between microdomains. Overall I think this work is a nice example of an application of topology to bacterial biophysics, and is likely to appeal the growing active matter community.\n\nThe combination of experiments, theory and simulation renders the results convincing. It is nice that the theory allows to get a mechanistic and fundamental understanding of the reason for the aster formation, which can be traced back to the nonlinearity of the bacterial velocity/flow profiles. It is also nice that the simulations reproduce all previous observations in different geometries, providing validation of the current results.\n\nAlthough overall the methodology is sound and the results appear robust, some clarifications are sought as follows.\n\n1. In the orientational patterns in Figure 3 it appears that some bacteria align out of the plane. If this is the case, and not a visualisation issue, it would be good to mention the relevance of the verticalisation, or to perform simulations where this is disallowed as in a growing monolayer.\n\n2. It would be good to describe in a bit more detail how the plotted stress is computed in the simulation and how it could be estimated experimentally.\n\n3. The patterns in multilayer colonies are of interest but it would be good to add a discussion of the reason why different surfaces lead to results which are so different.\n\nRecommendations for the authors:\n\nAs mentioned I find this work interesting and I believe it will stimulate discussion in the active matter and bacterial biophysics community. Specifying more in detail what said in the public summary:\n\n1. I would encourage authors to discuss the issue of verticalisation and to specify more clearly where the director can escape to the 3rd dimensions in their monolayer colony simulations (I understand this is possible in multilayer colony simulations).\n\n2. Please specify how stress is computed, is this a component or a scalar built starting from the stress tensor? This should be specified in the main text.\n\n3. It could be said more clearly that the inward colony is a particular geometry where g' (in the manuscript notation) is non-zero, there could be others as well. Simulations of expanding monolayers I believe suggested a possible radial orientation at the edge for sufficiently large colonies, I think this is mentioned in Ref. 42.\n\n4. Is the drop in nematic order e.g. in Figure 3d, which occurs close to the critical radius for which v is about 0, robust and can be understood via flow-mediated rotation as well? Sorry if I missed this.\n\n5. The final part on competition is interesting but I am missing the difference between e.g. a and c in Figure 6 or in general where red and green are swapped but the ratio between long and short is the same. Are these not symmetric?\n\n6. A very minor point: why is the left-hand side of Eq. 6 not written as a material derivative?\n\nReviewer #2:\n\nThe growth of bacterial colonies on solid substrates is a common assay used in a variety of settings, from probing bacterial organization in biofilms to spatial population genetics. In this work, Basaran et al., study how crowded bacterial colonies invade an enclosed space, in contrast to the more common setup of a growing monolayer that expands outward in a unconstrained fashion. This seemingly innocuous modification has dramatic consequences as the authors show. Geometric confinement and growth from cell division dictate a characteristic velocity field that vanishes at a finite radius and the resulting shear flow aligns bacteria to orient in a radial fashion. The colony wide radial ordering is reminiscent of an aster or +1 topological defect seen in liquid crystals. A key point emphasized in the paper is that such large scale ordering of bacteria does not occur in outward expanding colonies, but is typical of inward growth. This result is motivated by experimental observations with E. coli and interpreted using modern active matter theories, with ample support from extensive numerical simulations of detailed finite element and continuum models. The structure and flow generated by radially oriented bacteria is shown to affect multilayering, both in simulations and in experiments with prepatterned annular rings of bacteria. Finally the authors demonstrate a potential biological significance of such orientational order by considering (in silico) two competing bacterial strains that are genetically neutral but have different lengths. The enhanced propensity of the longer bacterium to radially order endows it with a selective advantage to out compete the shorter strain in a spatial setting.\n\nI find that most of the claims are well substantiated and justified by the data presented, though a few points need better support. The main strength of the paper is the involved and detailed numerical modelling employed to describe the invasion of bacterial colonies. It is an impressive amount of computational work. While some of the main points such as the emergence of a radial aster accompanied by a sign changing velocity field in inward growth are recapitulated in experimental data, the authors only make qualitative comparisons with the model. This I feel is a missed opportunity that can be easily remedied given the present data, particularly in the case of patterned colonies (Figure 5). For instance, it is unclear what selects the critical radius Rc, and how it is determined by the initial inoculation geometry. A more quantitative comparison between the experimental and numerical data might help elucidate this point more.\n\nAnother weakness is in the discussion surrounding multilayer formation which is a bit disjointed and separate from the first part of the paper. The primary claim rests on a plausible argument suggesting compressive stresses near the critical radius cause buckling and multilayer formation, but the current data is only partially convincing. Figure 4 only demonstrates the presence of multilayering in the finite element simulations and in the experiments but does not validate the suggested mechanism. A straightforward resolution would be to present measurements (at least from the simulation) of the hoop and radial stress in the monolayer and correlate it with the flow, radial order and buckling. The experimental demonstrations also lack descriptions of simple details regarding their setup at various places, which needs to be improved.\n\nIn the last section on bacterial competition with differential length strains, I feel the claim regarding the enhanced radial order in the longer bacterium is also not sufficiently substantiated. The red and green curves in Figure 6a-f are meant to demonstrate this claim, but all three plots look rather similar and it is unclear how statistically significant the difference between the curves really is. Either the data must be presented along with a statistical analysis demonstrating significant difference in radial order or the claim must be toned down. Note, the statement about enhanced radial order doesn't necessarily affect (though it is suggested as a causal mechanism) the more significant and consequential result regarding the excess area fraction of the longer bacterium over the shorter, which does demonstrate the claimed selective advantage.\n\nRecommendations for the authors:\n\nMost of my comments are regarding presentation. The current structure of the paper is a bit confusing with the many different numerical simulation methods and experimental setups used. The following suggestions may help clarify and improve the paper. I recommend publication once the comments and questions are satisfactorily answered.\n\n1) The experimental data in Figure 1 only shows the presence of radial order (Figure 1d), but the following figure panels (the rest of Figure 1, and also Figures 2-3) provide details of both radial ordering and the velocity profile. The latter is shown to be the more important and primary ingredient (in numerical simulations) that causes radial alignment of bacteria. In this regard the experimental results of Figure 1only provides circumstantial evidence for the proposed flow induced mechanism. Only much later, in the section on \"Inward growing domains in monolayer colonies\", is it mentioned that \"So far, we studied naturally emerged inward growing domains on agar surfaces. These domains are randomly formed across the plate. In these experiments particularly, the confinement is defined by the crowded multilayered environment. Thus, observing critical radius and detailed velocity profiles are not possible.\" The lithographically patterned bacterial rings on a PC surface shown in Figure 5 do allow the measurement of both radial order and the flow field, both of which display the qualitative features predicted by the model.\n\nI would hence suggest moving part of the results on patterned bacteria to the beginning, as it provides a clearer and more striking comparison with the numerical work. It should also be clarified when the experiments in Figure 1 are discussed whether the bacterial colony exhibits multilayering outside the field of view shown, in which case prevents a good measurement of the flow field is not possible. Several details about Figure 5 are missing though. What bacteria were used for these experiments and what are the time stamps for the various snapshots in panels a and b? Are the plots in d and e also averaged over 4 independent experiments? Presumably, the whiter regions in the phase contrast images are small patches of double or triple layers. These points should be clarified and explicitly mentioned.\n\n2) Is it understood why decreasing substrate friction permits larger monolayers? Is there a way to test this using the 3D FEM simulation? It would be helpful if some intuition could be given about the connection between friction and buckling, perhaps as a balance of traction forces and growth pressure? On line 256, it is mentioned that \"Previous studies showed that, particularly, the surface friction and stress accumulation are responsible for the formation of this multi-layered structures\". What previous studies are being referred to here?\n\nFor the FEM simulations modelling biofilm forming bacteria, what parameters were modified? The methods section primarily doesn't seem to provide any details about this.\n\n3) While one of the main strengths of the paper is the sophisticated modelling, the use of so many different methods (2D and 3D FEM, continuum theory) makes the reader wonder what benefit is gained from one method over the other. In particular, it is unclear what specific role the continuum active nematic model plays in understanding the phenomena of radial ordering in growing bacterial collectives. All of the results from the continuum model in Figure 3 are essentially the same as obtained from the detailed FEM simulation in Figure 2. Although the use of active nematic continuum models to describe growing bacteria has become fashionable in recent years, it is unclear in the current paper if it offers any new insight that may not be gained otherwise.\n\nI would suggest that the authors reword this section to highlight specific benefits and insights gained from using the continuum model, or move some of the discussion to the SI. It might also help to frame the benefit of the continuum model as generalizing the results (by virtue of coarse-graining over irrelevant microscopic details) beyond the specific bacterial and particle based implementation. As of now, the relevance of the active nematic model is not apparent.\n\n4) I don't quite understand the line \"Herein, experimentally we only observed inward growing domains around the inner edge because the accumulated stress triggers multi-layer formation\" (Line 206-207). What does stress triggered multilayer formation have to do with observing (or not) inward growth of the colony? I thought the former was causal consequence of the latter and not the other way around.\n\nAs mentioned earlier, I think it would be useful to present stress profiles (both radial and hoop components separately as a function of r) from the simulations to substantiate the mechanism triggering buckling and multilayer formation. I suspect that the annular geometry and self-induced confinement due to cell proliferation generates a compressive hoop stress that underlies escape into the third dimension. In this regard it might be worth making a comparison with a classic wrinkling instability of thin sheets in the so-called Lame problem (see for instance, Davidovitch et al. \"Prototypical model for tensional wrinkling in thin sheets.\" PNAS 108.45 (2011): 18227-18232.) In the passive elastic case, outward tension combined with the annular geometry of the elastic film generates compressive hoop stresses that are resolved by wrinkling. Analogously, growth (instead of outward external tension) combined with the geometry leads to a potentially similar effect, now in an active bacterial layer, which resolves the stresses by forming multiple layers, rather than wrinkling.\n",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7fd3bdca-5e8b-46cf-8a11-2c43d6ac2efe",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C1",
+      "claim": "During colony growth, complex interactions regulate the bacterial orientation, leading to the formation of large-scale ordered structures, including topological defects, microdomains, and branches.",
+      "claim_type": "EXPLICIT",
+      "source": "During colony growth, complex interactions regulate the bacterial orientation, leading to the formation of large-scale ordered structures, including topological defects, microdomains, and branches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement from the abstract summarizing the phenomenon under study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "bcdeb4e4-fb08-4954-8383-6bedf1376d80",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C2",
+      "claim": "These structures may benefit bacterial strains, providing invasive advantages during colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures may benefit bacterial strains, providing invasive advantages during colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential biological significance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1d8133b5-b823-4192-afe6-32ec0048eb56",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C3",
+      "claim": "The velocity profile of growing colonies creates strong radial orientation during inward growth when crowded populations invade a closed area.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that the velocity profile of growing colonies creates strong radial orientation during inward growth when crowded populations invade a closed area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental and simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "76179e7a-f400-4454-97db-cb846679d54d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C4",
+      "claim": "During inward growth, growth geometry sets virtual confinement and dictates the velocity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "During this process, growth geometry sets virtual confinement and dictates the velocity profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation and theoretical analysis in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1f986832-09eb-41dc-ac41-20f947d11c2a",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C5",
+      "claim": "Flow-induced alignment and torque balance on the rod-shaped bacteria result in a new stable orientational equilibrium in the radial direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, flow-induced alignment and torque balance on the rod-shaped bacteria result in a new stable orientational equilibrium in the radial direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by theoretical modeling and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "55e3aaa2-43b3-4056-aedc-cfc0b04e99e6",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C6",
+      "claim": "The dynamics of radially oriented structures (aster defects) depend on bacterial length.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that the dynamics of these radially oriented structures, also known as aster defects, depend on bacterial length and can promote the survival of the longest bacteria around localized nutritional hotspots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data showing length-dependent competition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2722b775-8941-4627-a47a-ef3b2d670ce2",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C7",
+      "claim": "Radially oriented structures can promote the survival of the longest bacteria around localized nutritional hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that the dynamics of these radially oriented structures, also known as aster defects, depend on bacterial length and can promote the survival of the longest bacteria around localized nutritional hotspots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results showing competitive advantage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e6cc97f9-52b4-495e-a5f1-20342611e457",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C8",
+      "claim": "Bacterial morphology, hydrodynamics, surface topology, and topography markedly alter growth mechanisms, morphology, and overall competition among bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial morphology, hydrodynamics, surface topology, and topography markedly alter growth mechanisms, morphology, and overall competition among bacteria (Grant et al., 2014; Su et al., 2012; Volfson et al., 2008; Warren et al., 2019; Cho et al., 2007; Smith et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e94d1893-bdaa-4a4f-b226-de5a7fa52f6d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C9",
+      "claim": "Rod-shaped bacteria display nematic alignment on surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod-shaped bacteria display nematic alignment on surfaces, wherein localized stress, surface friction, and elasticity trigger the formation of ordered domains and lead to the emergence of topological defects (Doostmohammadi et al., 2016; Dell'Arciprete et al., 2018; Doostmohammadi et al., 2018; You et al., 2018; You et al., 2021) and various types of self-assembled structures, including edge fingerings (Farrell et al., 2013) and vertical structures (Beroz et al., 2018; Hartmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "91418de6-099a-4f24-9bf8-83c5df3ac219",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C10",
+      "claim": "Localized stress, surface friction, and elasticity trigger the formation of ordered domains and lead to the emergence of topological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Rod-shaped bacteria display nematic alignment on surfaces, wherein localized stress, surface friction, and elasticity trigger the formation of ordered domains and lead to the emergence of topological defects (Doostmohammadi et al., 2016; Dell'Arciprete et al., 2018; Doostmohammadi et al., 2018; You et al., 2018; You et al., 2021) and various types of self-assembled structures, including edge fingerings (Farrell et al., 2013) and vertical structures (Beroz et al., 2018; Hartmann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "75ba788a-0ec5-43f1-a511-f41cfc3e6e74",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C11",
+      "claim": "\u00b1\u00bd topological defects are the typical orientational singularities observed among growing bacterial colonies and biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, \u00b1\u00bd topological defects are the typical orientational singularities observed among growing bacterial colonies and biofilms (Doostmohammadi et al., 2016; Doostmohammadi et al., 2018; You et al., 2018; Yaman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "5821751c-b755-4998-b242-d63db3aec365",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C12",
+      "claim": "Topological defects regulate stress distribution across the structure, alter the physiology of the cells, and could control entire morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "These topological defects have biological significance and regulate stress distribution across the structure, alter the physiology of the cells (Saw et al., 2017), and could control entire morphology; eventually, these effects trigger the formation of fruiting bodies (Copenhagen et al., 2020) and bacterial spores in biofilms (Yaman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "9db2dba1-a4f9-4982-9f72-209fee9ab89e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C15",
+      "claim": "Bacteria are tangentially oriented along the edge of the colony in a phenomenon called anchoring.",
+      "claim_type": "EXPLICIT",
+      "source": "Another interesting structural order in bacterial colonies is anchoring, where the bacteria are tangentially oriented along the edge of the colony (Su et al., 2012; Doostmohammadi et al., 2016; Dell'Arciprete et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "dbc437a3-cf51-4df7-bfbc-90be0063b30c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C16",
+      "claim": "If growing bacteria surround a closed area, domains of inward growth are formed.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike regular expanding colonies, if growing bacteria surround a closed area, domains of inward growth are formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental setup described in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "6db4634d-8372-4f40-b787-e49796a24194",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C17",
+      "claim": "Under inward growth conditions, entire mechanical interactions differ and lead to the formation of asters, formed as radially aligned +1 topological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, entire mechanical interactions differ and lead to the formation of asters, formed as radially aligned +1 topological defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental and simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "856ae526-572d-4cdb-b3f3-dfba7d02a408",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C18",
+      "claim": "Higher-order topological defects are not commonly observed in extensile active matter systems, including growing bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "With only a few exemptions (Maroudas-Sacks et al., 2020; Meacock et al., 2021), higher-order topological defects (Thijssen and Doostmohammadi, 2020; Shankar et al., 2018) are not commonly observed in extensile active matter systems, including growing bacterial colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "bb4296b9-a138-4f53-a249-6bfd12c9f114",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C19",
+      "claim": "Higher-order topological defects only appear under external modifications such as stress, confinement, and flow.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects only appear under external modifications such as stress (Rivas et al., 2020), confinement (Duclos et al., 2016; Opathalage et al., 2019), and flow (Mart\u00ednez-Prat et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "887ab079-fc2e-4d94-9320-1e729ac0d3af",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C20",
+      "claim": "Velocity profile is an important factor controlling the emergence of radially aligned structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also reveal that velocity profile is an important factor controlling the emergence of these radially aligned structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by theoretical and simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "86ca8294-178e-4529-b672-e33a3d4c2a2b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C21",
+      "claim": "Inward growth is commonly observed in various biological systems including wound healing, cancer cell growth, and retina development.",
+      "claim_type": "EXPLICIT",
+      "source": "Inward growth is commonly observed in various biological systems. During wound healing (Basan et al., 2013), cancer cell growth (Lee et al., 2017; Vader et al., 2009), and retina development (Than-Trong and Bally-Cuif, 2015; Azizi et al., 2020), similar dynamic mechanisms are underway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies in different biological contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "15a392c8-e34c-4613-beaf-946f2e56c2cd",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C22",
+      "claim": "Nonmotile Escherichia coli and Bacillus subtilis were sparsely spread on a flat agarose surface for experimental observation.",
+      "claim_type": "EXPLICIT",
+      "source": "To observe the dynamics of inward-growing bacterial colonies, we sparsely spread nonmotile Escherichia coli and Bacillus subtilis separately, on a flat agarose surface (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2252093f-61b1-405f-952f-56a5e33c002b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C23",
+      "claim": "With colony growth, closed areas invaded by multiple colonies were observed across the plate.",
+      "claim_type": "EXPLICIT",
+      "source": "With colony growth, the closed area invaded by multiple colonies was observed across the plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "6f16764e-50ef-482e-8483-3853513f45b4",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C24",
+      "claim": "Rough colony interfaces gradually converge to symmetric, relatively smooth, and enclosed circular areas during inward growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Rough colony interfaces gradually converge to symmetric, relatively smooth, and enclosed circular areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "6542359f-4b12-4d50-8f5b-be5e01249318",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C25",
+      "claim": "The bacterial orientation around inward-growing domains is generally radial.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike regular expanding colonies, the bacterial orientation around these domains is generally radial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements of the radial order parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a5286e16-2b1a-4ae3-a2a5-534f08128f32",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C26",
+      "claim": "Large-scale radial order emerges across inward-growing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "It is evident that large-scale radial order emerges across these inward-growing domains (Figure 1c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "9e6f7b3a-9a47-406b-8c39-3ec88d47e94d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C27",
+      "claim": "Radially aligned structures strongly resemble +1 topological defects also known as aster structures.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures strongly resemble +1 topological defects also known as aster structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed radial alignment pattern.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2c1b3a1e-c07a-4eb5-bb7c-99d5f001255c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C28",
+      "claim": "The direction of the bacterial flow during inward growth is toward the center.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured the velocity of the bacterial flow during this process (Figure 1d). We found that the direction of the flow is toward the center.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by velocity measurements shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "b0df71ce-21d0-40c5-9c50-0ca37bd39638",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C29",
+      "claim": "Radial inward flow could align the bacteria in a radial direction.",
+      "claim_type": "EXPLICIT",
+      "source": "From these measurements, we can conclude this radial inward flow could align the bacteria in a radial direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the velocity measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d5b2d168-ab89-44f1-b6fa-6ebfd16eef9c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C30",
+      "claim": "2D bacterial growth simulations using a hard rod model captured the experimentally observed radial order across the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulation results captured the experimentally observed radial order across the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data presented in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2d55213e-2fdb-463b-8dac-1796e9ae891b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C31",
+      "claim": "Regular expanding colonies only formed microdomains with random local orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regular expanding colonies only formed microdomains with random local orientations (Figure 1g, Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "0abaf2a0-af03-4569-99e0-f7f0167cbc6d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C32",
+      "claim": "The primary difference between regular expanding and inward-growing colonies is the sudden change in the direction of the surface drag force which depends on the velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these simulations, the primary difference between regular expanding and inward-growing colonies is the sudden change in the direction of the surface drag force which depends on the velocity (Figure 1f and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "31c94775-c6d8-4acd-a3f3-4a3c3ee38c6b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C33",
+      "claim": "In inward-growing colonies, the surface drag force flips its sign at a critical radius where the local radial velocity of the colony vanishes.",
+      "claim_type": "EXPLICIT",
+      "source": "In inward-growing colonies, this force flips its sign at a critical radius where the local radial velocity of the colony vanishes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation and theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "3e80586e-7c2a-4b27-a467-cb7439fdc251",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C35",
+      "claim": "The stress profiles initially show the quadratic form which is particularly dictated by the radial velocity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "The stress profiles initially show the quadratic form which is particularly dictated by the radial velocity profile (Beroz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "b6d06ac3-54ae-4b05-a3e8-cf48488399cb",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C38",
+      "claim": "Regular expanding colonies have a linear radial velocity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with regular expanding colonies, which have a linear radial velocity profile, inward-growing colonies developed radially nonlinear velocity, which vanishes at the critical radius (Figure 2e and f, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d61dfd7e-4d17-4e96-964d-e73254c82441",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C39",
+      "claim": "Inward-growing colonies developed radially nonlinear velocity, which vanishes at the critical radius.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with regular expanding colonies, which have a linear radial velocity profile, inward-growing colonies developed radially nonlinear velocity, which vanishes at the critical radius (Figure 2e and f, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e0e8632c-19e8-4838-8a83-97fdebba51a3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C40",
+      "claim": "The velocity profile gradually rotated the bacteria into the radial direction.",
+      "claim_type": "EXPLICIT",
+      "source": "This profile gradually rotated the bacteria into the radial direction (Figure 2g, Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "b39ddd41-9816-4c85-85d8-eef6549a33d3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C41",
+      "claim": "The velocity profile appears to be the key physical parameter regulating the flow-induced alignment and the formation of the radial order.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, the velocity profile appears to be the key physical parameter regulating the flow-induced alignment and the formation of the radial order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d4ff5318-51a0-4ea9-9f59-5efdecaae9eb",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C47",
+      "claim": "The stable radial orientation stimulates aster formation, being referred to as a +1 topological defect.",
+      "claim_type": "EXPLICIT",
+      "source": "The stable radial orientation stimulates aster formation, being referred to as a +1 topological defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "497b7307-1deb-488e-8437-a35c3743117e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C49",
+      "claim": "Although bacterial colonies are not compressible, inward growth and the shrinking hole structure alter the overall velocity profile and lead to an essential local growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Although bacterial colonies are not compressible, inward growth and the shrinking hole structure alter the overall velocity profile and lead to an essential local growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "6fc9cdcb-b65b-4130-acde-d2ff8b0a54af",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C50",
+      "claim": "The radial orientation is stable throughout the colony and not only below the critical radius.",
+      "claim_type": "EXPLICIT",
+      "source": "The radial orientation is stable throughout the colony and not only below the critical radius.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "7aed0009-f946-4004-b993-232f6fb3afe3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C51",
+      "claim": "Simulations under a fixed circular wall mimicking the stationary critical radius showed similar radial alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "To clarify this point, we simulated colony growth under a fixed circular wall mimicking the stationary critical radius (Figure 2\u2014figure supplement 6). We observed a similar radial alignment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "db8f8849-ba7f-4c3a-b8ed-536ed0d79c04",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C52",
+      "claim": "There is an association between the circular confinement owing to the critical radius which dictates velocity profiles and the stability of bacterial orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate the association between the circular confinement owing to the critical radius which dictates velocity profiles and the stability of bacterial orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2e3f89e3-0be8-4664-a7ab-fe42f669e9a5",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C53",
+      "claim": "Continuum nemato-hydrodynamics equations of growing active matter can obtain the same radially aligned defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, we investigated whether the same defects were obtained through the continuum nemato-hydrodynamics equations of growing active matter (Giomi et al., 2012; Olmsted and Goldbart, 1992; Mishra, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by continuum simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1b4487cd-f128-49b0-800a-5b1c23ca1236",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C54",
+      "claim": "Regular expanding colonies exhibited only local alignment corresponding to microdomains in continuum simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, regular expanding colonies exhibited only local alignment (Figure 3a and c, Figure 3\u2014video 1) corresponding to microdomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by continuum simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "01c68ab9-625e-4b0e-88e7-870c1e410d3c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C55",
+      "claim": "Inward-growing colonies developed robust radial alignment and order not only below but also beyond the critical radius in continuum simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, inward-growing colonies developed robust radial alignment and order not only below but also beyond the critical radius (Figure 3b and d, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by continuum simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "73216e7f-d73f-483a-b4a7-1ed2ab609d5c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C56",
+      "claim": "Inward-growing colonies displayed the expected nonlinear velocity profile required for radial alignment in continuum simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Inward-growing colonies also displayed the expected nonlinear velocity profile required for radial alignment (Figure 3e and f , Figure 3\u2014videos 2 and 3, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by continuum simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "bd8cfa96-04a0-4999-9503-31de3ef75080",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C57",
+      "claim": "A sudden drop of the velocity profile near the inner and outer colony edges resulted in tangential orientation in continuum simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a sudden drop of the velocity profile near the inner and outer colony edges also resulted in tangential orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by continuum simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "279c4d21-3584-4f66-ae48-ba1fd61ebe83",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C58",
+      "claim": "Results from continuum simulation suggest that similar radial alignment could also be observed in other active matter systems under the same radial velocity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "These results from continuum simulation suggest that similar radial alignment could also be observed in other active matter systems under the same radial velocity profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the continuum simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e87cc4f4-33b0-477a-aa89-bbead2f0861b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C59",
+      "claim": "Growing bacterial colonies on elastic substrates generally form multi-layered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing bacterial colonies on elastic substrates generally form multi-layered structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about bacterial colony growth.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "8c2cb0db-9a09-472e-aede-94f892f32ed3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C60",
+      "claim": "Experimentally, inward-growing domains were observed only around the inner edge surrounded by dense multi-layered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, experimentally we observed inward-growing domains only around the inner edge surrounded by dense multi-layered structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "6702bc49-0023-473a-a05e-6f15186cbb0f",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C61",
+      "claim": "Merging colonies and the accumulated stress trigger multi-layer formation and limit the size of monolayer region around the edge.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because merging colonies and the accumulated stress trigger multi-layer formation and limit the size of monolayer region around the edge (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "792d70e8-4b03-428a-bdd5-82c6de352c76",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C62",
+      "claim": "Accumulated stress triggers verticalization and multi-layer formation around the critical radius of the colony in 3D FEM simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, accumulated stress triggers verticalization and multi-layer formation around the critical radius of the colony (Figure 4a and b and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by 3D FEM simulation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e41de729-e8cf-47bf-9f8e-a5b824281b26",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C63",
+      "claim": "A bacterial monolayer was observed only around the inner and outer leading edges of the colony in 3D FEM simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a bacterial monolayer was observed only around the inner and outer leading edges of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by 3D FEM simulation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e3d0242a-5e81-4f81-88d5-5279759c4779",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C64",
+      "claim": "Monolayers around growing colonies could result in planar radial alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these monolayers could also result in planar radial alignment (Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by 3D FEM simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "46248915-063d-4c93-89bb-0a1341e9b405",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C65",
+      "claim": "The width of the monolayer was approximately \u0394r = 90\u00b130 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The width of the monolayer was approximately \u0394r = 90\u00b130 \u00b5m (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental measurement shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "daf774a1-b637-471e-8be3-c74a745478ed",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C66",
+      "claim": "The width of the monolayer defines the size of the aster structures observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This width defines the size of the aster structures observed herein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental measurement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "fbc24aff-a951-4fe7-8768-f21aede5ed05",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C67",
+      "claim": "Photolithographic techniques using blue light exposure can be used to pattern the initial distribution of bacteria by killing with structured illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a photomask (Figure 5\u2014figure supplement 1), we exposed randomly distributed bacteria with blue light to define an initial growth geometry by killing the remaining part of the pattern (see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a5228eab-927e-4652-a599-790cd254b224",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C68",
+      "claim": "On a regular agar surface, multi-layer formation dominates the overall colony morphology with only very narrow monolayer regions around the inner and outer edges.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that on a regular agar surface, again multi-layer formation dominates the overall colony morphology. Only very narrow monolayer regions are observable around the inner and outer edges of the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a6849830-b5c5-47b6-9987-7ff68c90e3d3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C69",
+      "claim": "Attractive biochemical interactions between bacteria and surface can generate additional strong friction force.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that attractive biochemical interactions between bacteria and surface could generate additional strong friction force (Duvernoy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "7210024c-6a79-4c45-b84a-25780ac75854",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C70",
+      "claim": "Friction force, stress accumulation, and verticalization of bacteria in a monolayer colony trigger the formation of multi-layered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether friction force, stress accumulation, and verticalization of bacteria in a monolayer colony trigger the formation of these multi-layered structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge and simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "76c64db4-ee6a-4a70-b6c0-5a8a8151dad2",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C71",
+      "claim": "The multi-layering process is mainly controlled by the competition between vertical force and lateral compression in the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is mainly controlled by the competition between vertical force and lateral compression in the colony (Grant et al., 2014; Beroz et al., 2018; Duvernoy et al., 2018; You et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d50be17a-0c8a-4b7f-811b-6cb3a69e2941",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C72",
+      "claim": "Above the critical stress level, the orientation of rod-shaped bacteria becomes unstable and triggers the extrusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Above the critical stress level, the orientation of rod-shaped bacteria becomes unstable and triggers the extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about bacterial colony mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1b196096-8afe-4406-96e3-64659bb750a6",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C73",
+      "claim": "FEM simulations showed that the extrusion process occurs around the center of the annulus and it can be controlled by surface friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing FEM simulations, we noticed that this extrusion process occurs around the center of the annuls and it can be controlled by surface friction (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FEM simulation data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "3361fbb5-8bd2-48c1-bcea-0315ec99a7b3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C74",
+      "claim": "Minimizing the surface friction can increase the size of the monolayer colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we don't know the detailed biological mechanism behind the friction force, it is evident that minimizing the surface friction can increase the size of the monolayer colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "9e388e3f-dcf3-4a35-bb42-06458b51e7ff",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C75",
+      "claim": "Polycarbonate (PC) surfaces support large monolayer colonies while providing a sufficient bacterial growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that only polycarbonate (PC) surfaces are useful for this purpose, and they support large monolayer colonies while providing a sufficient bacterial growth rate (Figure 5\u2014figure supplement 3, Figure 5\u2014video 1, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "8acee849-4231-4cd8-ba10-8687d9aae860",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C76",
+      "claim": "The size of monolayer colonies on PC surfaces was approximately 600 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of these monolayer colonies was approximately 600 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "61c81907-0906-40c8-82ed-da514a9a49c4",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C77",
+      "claim": "At a later stage, the second layer formation appeared around the center of annulus shapes which is close to the critical radius.",
+      "claim_type": "EXPLICIT",
+      "source": "As we observed in our previous simulations (Figure 4), at a later stage, the second layer formation appeared around the center of these annulus shapes which is close to the critical radius (Figure 5a, Figure 5\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "4eabe572-b879-48a1-8e17-0a061d5b6466",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C78",
+      "claim": "Strong radial alignment was observed across the colony on PC surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed strong radial alignment across the colony (Figure 5c and d, Figure 5\u2014figure supplements 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "446a2463-6cfe-46e6-a2a6-7ba097897458",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C79",
+      "claim": "No radial alignment was observed in regular isolated monolayer colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any radial alignment in regular isolated monolayer colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1b9204a7-fa59-44f0-8029-ecaace92f6b8",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C80",
+      "claim": "Orientational defects and microdomains were clearly observed in monolayer colonies on PC surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we clearly observed orientational defects and microdomains in these monolayer colonies on PC surfaces (Figure 5\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 5\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "ab0b271a-e33b-4e79-b7d2-98dcf2d48f4a",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C81",
+      "claim": "Inward and outward growing monolayer domains provided the nonlinear velocity profile which is essential for radial alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Inward and outward growing monolayer domains also provided the nonlinear velocity profile (Figure 5e), which is essential for radial alignment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "96ab891e-e7f1-4878-82c6-13179d0c447c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C82",
+      "claim": "During inward growth on PC surfaces, critical radius shows a constant profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that during this process critical radius shows a constant profile (Figure 5f, Figure 5\u2014figure supplement 7, Figure 5\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "aa97d6a0-2237-45d8-b25b-a95de4b536ee",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C83",
+      "claim": "Bacterial biofilms (B. subtilis 168) showed similar strong radial alignment during the inward growth process.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a biofilm-forming strain B. subtilis 168 (Yaman et al., 2019) and observed similar strong radial alignment across the biofilms (Figure 5\u2014video 3, Figure 5\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 5\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a3357139-4c37-487a-8058-6c5ad4490965",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C84",
+      "claim": "FEM simulations captured the alignment process of growing elastic bacterial biofilm structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our FEM simulations also captured the alignment process of growing elastic bacterial biofilm structures (Figure 5\u2014video 4, Figure 5\u2014figure supplement 8c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FEM simulation data shown in Figure 5\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e441236c-2f7d-49ef-b4c1-e85aef9c5109",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C85",
+      "claim": "Near the leading edge of a bacterial colony, competition strongly depends on physical parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, near the leading edge of a bacterial colony, competition strongly depends on physical parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about bacterial competition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "b612c9d8-63bc-4037-b94d-1a884936799f",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C86",
+      "claim": "Genetic drift based on random fluctuations is a prominent example of competition at the colony edge.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent example is a genetic drift based on random fluctuations (Hallatschek et al., 2007; Kayser et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "0340fc76-9f58-40b9-9a2b-73fb2ee8d435",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C87",
+      "claim": "Genetic drift could be altered through steric interactions among the cells, which can potentially alter the evolutionary dynamics of competing bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon could be altered through steric interactions among the cells, which can potentially alter the evolutionary dynamics of competing bacteria (Farrell et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "deccbd6e-786d-4961-8b03-89583720d01e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C88",
+      "claim": "Radial bacterial alignment potentially contributes to inward growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Although bacterial orientation is generally tangential at the expanding colony edge, radial bacterial alignment potentially contributes to inward growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed radial alignment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "8ec213fa-df0e-43c3-b430-1fb62e51463e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C89",
+      "claim": "Longer rod-shaped bacteria potentially have an advantage during inward growth owing to the torque balance.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that longer rod-shaped bacteria potentially have an advantage owing to the torque balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "36774656-5e91-45d4-8933-508a044bc656",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C90",
+      "claim": "The torque depends on the length of the bacteria, resulting in rapid radial alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "The basic premise is that the torque depends on the length of the bacteria, resulting in rapid radial alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on mechanical considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "c491b3cc-8e72-49ae-b99b-07a60fb41e4d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C91",
+      "claim": "Radial alignment leads to lane formation and promotes an invasive advantage to the longest bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Radial alignment further leads to lane formation and promotes an invasive advantage to the longest one, which could be beneficial in terms of approaching nutritional hotspots localized around the defect core more effectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by simulation data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "b337b481-d9a8-4b5d-b926-5fe3c94548d4",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C92",
+      "claim": "Long bacteria can develop a higher radial order during inward growth from random initial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the initial distribution of the bacteria is random, long bacteria can develop a higher radial order during inward growth (Figure 6a\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "1ad0f2df-b9d7-412d-8a84-6d7e15138ebd",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C93",
+      "claim": "Radial order gradually allows the longest bacteria to approach the center of the defect more effectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This radial order gradually allows the longest bacteria to approach the center of the defect more effectively (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "ddce0589-3cf5-434c-a9cc-b0cadf4ae449",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C94",
+      "claim": "The advantage of radial alignment was more evident in segregated bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Computationally, the advantage of radial alignment was more evident in segregated bacterial colonies (Figure 6h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "f80dd810-c2c5-42d4-a8cb-49232cf86402",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C95",
+      "claim": "In a monolayer colony, radial alignment promotes the invasion of both the center and the leading outer edge of the colony through the longest bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in a monolayer colony, radial alignment promotes the invasion of both the center and the leading outer edge of the colony through the longest bacteria (Figure 6g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "c089e6ac-522a-4f39-8efe-edf8bcaeed2a",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C96",
+      "claim": "After the complete invasion of the center, the radial lanes buckle.",
+      "claim_type": "EXPLICIT",
+      "source": "After the complete invasion of the center, the radial lanes buckle (Figure 6\u2014figure supplement 3, Videos 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a10f2d1e-0c77-4fad-bd1b-b3877b4f7a70",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C97",
+      "claim": "Experimental verification of competition based on bacterial length remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental verification of this competition remains challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "c1426f73-8736-4673-b1f8-e1a6c73a58fb",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C98",
+      "claim": "Cell length cannot be independently tuned without perturbing other essential physiological properties, including growth rate and the biofilm-forming potential of the bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although precise regulation of the aspect ratio of bacterial morphology is well established (Dion et al., 2019), cell length can still not be independently tuned without perturbing other essential physiological properties, including growth rate and the biofilm-forming potential of the bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and explains a limitation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "9264c4b9-1bf2-401a-8bda-f6b04dea857e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C99",
+      "claim": "Radially aligned structures can be considered as a +1 aster defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Radially aligned structures can be considered as a +1 aster defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classification based on topological defect theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e66999d9-81f1-470f-a69b-b16c0ff9159d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C100",
+      "claim": "Aster defects are ubiquitous topological structures observed in biological or synthetic active matter systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These are ubiquitous topological structures observed in biological (Roostalu et al., 2018; Ross et al., 2019; Kruse et al., 2004; Julicher et al., 2007) or synthetic (Sokolov et al., 2019; Snezhko and Aranson, 2011) active matter systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "0e6d5eaa-4610-4859-a3a4-a0eae37b4393",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C101",
+      "claim": "Microtubules can form nematic alignment or asters during mitosis, depending on the extensile or contractile activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, microtubules can form nematic alignment or asters during mitosis, depending on the extensile or contractile activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about microtubule organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "80582db1-3350-489b-bafb-9520747ee86b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C102",
+      "claim": "Bacterial colonies can be considered an extensile active material platform, generally supporting the formation of only \u00b1\u00bd topological defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial colonies can be considered an extensile active material platform, generally supporting the formation of only \u00b1\u00bd topological defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about bacterial colonies as active matter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "498d9bfd-ff12-4955-83c5-3526eaed414d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C103",
+      "claim": "Stable radially aligned, aster structures can emerge during inward growth in bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "This study shows that stable radially aligned, aster structures can also emerge during inward growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "f8642fcc-0dd6-4f1b-8a5c-14d3336ed896",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C104",
+      "claim": "The colony velocity profile plays a critical role in aster formation during inward growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we report the critical role of the colony velocity profile during this process, which depends on numerous factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "53b367c6-fd1a-4570-ab58-0c3f06e6e10d",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C105",
+      "claim": "Growth geometry, confinement, or boundary conditions can alter the velocity profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the bacterial growth rate is constant throughout the colony, growth geometry, confinement, or boundary conditions can alter the velocity profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "27aecb9b-2106-4f60-9fbf-2966775c76c0",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C106",
+      "claim": "Biomechanical interactions change the bacterial orientation and stability, thus generating ordered structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these biomechanical interactions change the bacterial orientation and stability, thus generating ordered structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "7a63cf6c-4680-4beb-8159-9aa51f2fd795",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C107",
+      "claim": "Different types of ordered structures have been observed in bacterial biofilms and 3D colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Different types of ordered structures have been observed in bacterial biofilms (Yan et al., 2016) and 3D colonies (Warren et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "2118e76c-088e-4825-bca8-18d01f99c1e1",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C108",
+      "claim": "The velocity profile of growing structures on flat surfaces plays a significant role in bacterial alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we believe that the velocity profile of growing structures on flat surfaces plays a significant role in bacterial alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "ab055919-49a8-49ee-86be-bff12c0eec6e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C109",
+      "claim": "Inward-growing bacterial colonies and wrinkling thin circular sheets have geometric similarities.",
+      "claim_type": "EXPLICIT",
+      "source": "We should emphasize that inward-growing bacterial colonies and wrinkling thin circular sheets have geometric similarities (Davidovitch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analogy supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "477390bb-5daa-4873-b3a0-3bbc397a1f16",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C111",
+      "claim": "Unlike elastic objects, growing bacterial colonies can only develop compressive stress due to negligible attractive force between bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike elastic objects, growing bacterial colonies can only develop compressive stress due to negligible attractive force between bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of bacterial interactions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "e26a3686-4c94-474e-b47a-f2b830694df2",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C112",
+      "claim": "The packing fraction of the bacteria shows a correlated profile with stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that the packing fraction of the bacteria shows a correlated profile (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "075a7b00-89a7-497c-8f6b-af2719458ba4",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C113",
+      "claim": "For aligned bacteria, it is very difficult to extract packing fraction information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, particularly for aligned bacteria, it is still very difficult to extract this information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation in the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d9c2eebc-488e-4709-89f0-e9aeb28f460e",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C114",
+      "claim": "New molecular probes could be useful for the experimental measurement of accumulated stress in the bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, new molecular probes could be useful for the experimental measurement of accumulated stress in the bacterial colonies (Chowdhury et al., 2016; Prabhune et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future work supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "34b1b79e-77f6-4aa4-a346-b993d0cf4381",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C115",
+      "claim": "Radial alignment provides additional advantages and promotes the survival of the longest bacteria during invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this study reveals the potential biological significance of radial alignment during the invasion. These ordered structures provide additional advantages and promote the survival of the longest bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "3a4259e0-5bf4-4782-b13b-95e51ec64d05",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C116",
+      "claim": "The findings link the orientational properties and competition dynamics of bacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results link the orientational properties and competition dynamics of bacterial colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "7827e739-2da1-4237-a3dc-e5d0c96885a3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "claim_id": "C117",
+      "claim": "The findings are of potential relevance for the understanding of complex dynamics of bacterial infections and the progression of inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are of potential relevance for the understanding of complex dynamics of bacterial infections and the progression of inflammatory diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The velocity profile of growing bacterial colonies is the key physical parameter regulating radial orientation during inward growth. Growth geometry sets virtual confinement and dictates the velocity profile, which through flow-induced alignment and torque balance results in stable radial orientational equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C5, C20, C41, and C104 collectively establish that the velocity profile is the critical factor controlling radial alignment during inward growth. This is supported by experimental observations (C3), simulation data (C4, C5, C41), and theoretical analysis (C5, C104). The mechanistic explanation is well-supported by multiple lines of evidence including 2D simulations, 3D FEM simulations, continuum modeling, and theoretical derivations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "ee04bfd4-5c39-4d13-b193-570285788acc",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When growing bacteria surround a closed area, domains of inward growth form with radially aligned bacteria resembling +1 topological defects (aster structures). Large-scale radial order emerges across these domains, with bacterial flow directed toward the center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C29 describe the experimental observation of inward-growing domains and radial alignment. The claims are supported by experimental data including fluorescence microscopy (C22-C26), velocity measurements (C28), and radial order parameter analysis (C25, C26). The interpretation as aster structures (C27) is reasonable given the observed radial alignment pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "09ef1cfa-ccb2-4b3e-a72a-8abd4be31027",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "2D hard rod simulations captured the experimentally observed radial order in inward-growing colonies. The primary difference from regular expanding colonies is the sudden change in direction of the surface drag force at a critical radius where local radial velocity vanishes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 describe simulation results that reproduce experimental observations. The simulations successfully captured radial alignment in inward-growing colonies (C30) and microdomains in expanding colonies (C31). The mechanistic explanation involving surface drag force reversal at the critical radius (C32, C33) is supported by simulation data shown in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "20476c35-cb07-4f87-b1d9-8027c566456c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Inward-growing colonies develop radially nonlinear velocity profiles that vanish at the critical radius, contrasting with the linear velocity profiles of regular expanding colonies. This nonlinear velocity profile gradually rotates bacteria into the radial direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C38-C40 describe the velocity profile differences between inward-growing and expanding colonies. These claims are well-supported by simulation data shown in Figure 2, which demonstrates the nonlinear velocity profile in inward-growing colonies and its effect on bacterial orientation. The quadratic stress profile (C35) is also supported by simulation data and citation to previous work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "0b35a428-a190-4d27-afe0-4807defe6b27",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Theoretical analysis shows that stable radial orientation stimulates aster formation (+1 topological defect). The radial orientation is stable throughout the colony due to the association between circular confinement at the critical radius and velocity profiles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C49-C52 present theoretical analysis and supporting simulations. The theoretical derivation showing stable radial equilibrium is presented in the Materials and methods section. The claim that radial orientation is stable throughout the colony (C50) is supported by simulation data (C51) showing similar alignment under fixed circular wall conditions, demonstrating the role of confinement (C52).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "60884bb5-dc61-4ced-af8a-e36e0716e74c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Continuum nemato-hydrodynamics simulations of growing active matter reproduced the radially aligned defects observed in inward-growing colonies. Regular expanding colonies showed only local alignment, while inward-growing colonies developed robust radial alignment with the expected nonlinear velocity profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe continuum modeling results that validate the findings from discrete simulations. The continuum simulations successfully reproduced radial alignment in inward-growing colonies (C55, C56) and microdomains in expanding colonies (C54), as shown in Figure 3. The generalization to other active matter systems (C58) is a reasonable inference from the continuum modeling approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "044da8d9-0005-4056-873e-6df421c3c956",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In multi-layered bacterial colonies, inward-growing domains are observed only around the inner edge as monolayers. 3D FEM simulations show that accumulated stress triggers multi-layer formation around the critical radius, with monolayers of width ~90\u00b130 \u03bcm forming around the edges that exhibit planar radial alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 describe the behavior of multi-layered colonies during inward growth. Experimental observations (C60, C65) are supported by 3D FEM simulations (C62-C64) shown in Figure 4. The measured monolayer width (C65) and its relationship to aster structure size (C66) are supported by experimental data. The explanation of multi-layer formation due to stress accumulation (C61, C62) is consistent with simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using photolithographic patterning and polycarbonate surfaces with low friction, large monolayer colonies (~600 \u03bcm) were created that exhibited strong radial alignment during inward growth. These colonies provided the nonlinear velocity profile essential for radial alignment, with a constant critical radius profile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C68, C75-C78, C81-C82 describe the experimental approach to create large monolayer colonies and their properties. The photolithographic patterning method (C67) and use of PC surfaces (C75) are well-documented experimental procedures. The observed radial alignment (C78), nonlinear velocity profile (C81), and constant critical radius (C82) are supported by experimental data shown in Figure 5. The size measurement (C76) is directly reported from experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "ff8fbf36-222b-40ee-ab94-740e187241ba",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multi-layer formation is controlled by the competition between vertical force and lateral compression, with surface friction playing a key role. FEM simulations showed that extrusion occurs around the center of the annulus and can be controlled by surface friction, with minimizing friction increasing monolayer colony size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 explain the mechanism of multi-layer formation and the role of surface friction. The explanation is supported by citations to previous work (C69, C71), established knowledge (C72), and FEM simulation data (C73) shown in Figure 5\u2014figure supplement 2. The inference that minimizing friction increases monolayer size (C74) is supported by simulation results and the experimental success with PC surfaces.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "a973c886-27f0-43db-a86a-7cf5339de68b",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bacterial biofilms (B. subtilis 168) showed similar strong radial alignment during inward growth, which was captured by FEM simulations of growing elastic bacterial biofilm structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 extend the findings to biofilm systems. The experimental observation (C83) and simulation validation (C84) are supported by data shown in Figure 5\u2014figure supplement 8. This demonstrates the generality of the radial alignment phenomenon beyond monolayer colonies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "82540846-b15d-461d-893e-7c3e90b91ada",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Simulation analysis shows that longer bacteria develop higher radial order during inward growth and can approach the center more effectively. Radial alignment promotes invasion of both the center and outer edge by the longest bacteria, providing a length-dependent competitive advantage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C7, C89-C96 describe length-dependent competition during inward growth. While simulation data (C92-C96) shown in Figure 6 supports the computational predictions, the authors acknowledge that experimental verification remains challenging (C97, C98) because cell length cannot be independently tuned without affecting other physiological properties. The result is based solely on simulations without experimental validation, making it uncertain despite the computational support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "c7add491-f003-4977-94ad-8bcc37ab4271",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Experimental verification of competition based on bacterial length remains challenging because cell length cannot be independently tuned without perturbing other essential physiological properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 acknowledge a limitation of the study. This is a straightforward statement about experimental constraints supported by citation to previous work (C98) and represents an honest assessment of the study's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates that stable radially aligned aster structures emerge during inward growth in bacterial colonies, linking orientational properties to competition dynamics. These structures may provide invasive advantages and are potentially relevant for understanding bacterial infections and inflammatory diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C1-C2, C103, C115-C117 present the overall significance and potential applications. While the emergence of aster structures during inward growth (C103) is well-supported by the study's data, the biological significance claims (C2, C115) are based primarily on simulations without experimental validation. The potential relevance to infections and diseases (C117) is speculative. The link between orientational properties and competition (C116) is an inference that requires further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "21e3affe-a223-407c-aecf-fbdc91b6fd92",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work has established that bacterial morphology, hydrodynamics, and surface properties affect colony growth; rod-shaped bacteria display nematic alignment with topological defects (typically \u00b1\u00bd); and higher-order defects are uncommon in extensile systems. Inward growth is observed in various biological systems including wound healing and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C15, C18-C19, C21 summarize relevant prior work. These claims are well-supported by multiple citations to previous studies and represent accurate characterization of the existing literature. This provides appropriate context for the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study builds on established knowledge about bacterial colony growth, active matter systems, topological defects, and competition dynamics. Aster defects are ubiquitous in active matter systems, and bacterial colonies are typically extensile systems supporting \u00b1\u00bd defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C85-C87, C99-C102, C107, C109, C111 provide background knowledge and context. These claims are supported by citations to previous work and represent accurate characterization of established concepts in the field. The analogy to wrinkling sheets (C109) is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "88d4970c-fabc-4360-80fd-ce4ddbdcd7c6",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Growth geometry, confinement, or boundary conditions can alter the velocity profile, and biomechanical interactions change bacterial orientation and stability to generate ordered structures. The velocity profile of growing structures on flat surfaces plays a significant role in bacterial alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106, C108 present general conclusions from the study's findings. These inferences are well-supported by the experimental and simulation data presented throughout the manuscript, including the various conditions tested (2D simulations, 3D FEM, continuum modeling, different surfaces).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    },
+    {
+      "id": "189f8c40-b151-402b-b987-7880d063aea3",
+      "content_id": "e852ee89-73fa-4036-ae44-486b82f575b8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The packing fraction of bacteria shows a correlated profile with stress, but extracting this information for aligned bacteria is difficult. Future molecular probes could be useful for experimental measurement of accumulated stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C114 acknowledge limitations in stress measurement and suggest future directions. The observation about packing fraction (C112) is supported by simulation data (Figure 2\u2014figure supplement 2), the limitation (C113) is a reasonable assessment, and the suggestion for future work (C114) is appropriately supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:30:50.704084Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d8133b5-b823-4192-afe6-32ec0048eb56",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "76179e7a-f400-4454-97db-cb846679d54d",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "1f986832-09eb-41dc-ac41-20f947d11c2a",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "887ab079-fc2e-4d94-9320-1e729ac0d3af",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "b39ddd41-9816-4c85-85d8-eef6549a33d3",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "f8642fcc-0dd6-4f1b-8a5c-14d3336ed896",
+      "result_id": "d40921f9-ab40-4d3d-909c-46dbaa5d3e21"
+    },
+    {
+      "claim_id": "dbc437a3-cf51-4df7-bfbc-90be0063b30c",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "6db4634d-8372-4f40-b787-e49796a24194",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "15a392c8-e34c-4613-beaf-946f2e56c2cd",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "2252093f-61b1-405f-952f-56a5e33c002b",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "6f16764e-50ef-482e-8483-3853513f45b4",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "6542359f-4b12-4d50-8f5b-be5e01249318",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "a5286e16-2b1a-4ae3-a2a5-534f08128f32",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "9e6f7b3a-9a47-406b-8c39-3ec88d47e94d",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "2c1b3a1e-c07a-4eb5-bb7c-99d5f001255c",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "b0df71ce-21d0-40c5-9c50-0ca37bd39638",
+      "result_id": "ee04bfd4-5c39-4d13-b193-570285788acc"
+    },
+    {
+      "claim_id": "d5b2d168-ab89-44f1-b6fa-6ebfd16eef9c",
+      "result_id": "09ef1cfa-ccb2-4b3e-a72a-8abd4be31027"
+    },
+    {
+      "claim_id": "2d55213e-2fdb-463b-8dac-1796e9ae891b",
+      "result_id": "09ef1cfa-ccb2-4b3e-a72a-8abd4be31027"
+    },
+    {
+      "claim_id": "0abaf2a0-af03-4569-99e0-f7f0167cbc6d",
+      "result_id": "09ef1cfa-ccb2-4b3e-a72a-8abd4be31027"
+    },
+    {
+      "claim_id": "31c94775-c6d8-4acd-a3f3-4a3c3ee38c6b",
+      "result_id": "09ef1cfa-ccb2-4b3e-a72a-8abd4be31027"
+    },
+    {
+      "claim_id": "3e80586e-7c2a-4b27-a467-cb7439fdc251",
+      "result_id": "20476c35-cb07-4f87-b1d9-8027c566456c"
+    },
+    {
+      "claim_id": "b6d06ac3-54ae-4b05-a3e8-cf48488399cb",
+      "result_id": "20476c35-cb07-4f87-b1d9-8027c566456c"
+    },
+    {
+      "claim_id": "d61dfd7e-4d17-4e96-964d-e73254c82441",
+      "result_id": "20476c35-cb07-4f87-b1d9-8027c566456c"
+    },
+    {
+      "claim_id": "e0e8632c-19e8-4838-8a83-97fdebba51a3",
+      "result_id": "20476c35-cb07-4f87-b1d9-8027c566456c"
+    },
+    {
+      "claim_id": "d4ff5318-51a0-4ea9-9f59-5efdecaae9eb",
+      "result_id": "0b35a428-a190-4d27-afe0-4807defe6b27"
+    },
+    {
+      "claim_id": "497b7307-1deb-488e-8437-a35c3743117e",
+      "result_id": "0b35a428-a190-4d27-afe0-4807defe6b27"
+    },
+    {
+      "claim_id": "6fc9cdcb-b65b-4130-acde-d2ff8b0a54af",
+      "result_id": "0b35a428-a190-4d27-afe0-4807defe6b27"
+    },
+    {
+      "claim_id": "7aed0009-f946-4004-b993-232f6fb3afe3",
+      "result_id": "0b35a428-a190-4d27-afe0-4807defe6b27"
+    },
+    {
+      "claim_id": "db8f8849-ba7f-4c3a-b8ed-536ed0d79c04",
+      "result_id": "0b35a428-a190-4d27-afe0-4807defe6b27"
+    },
+    {
+      "claim_id": "2e3f89e3-0be8-4664-a7ab-fe42f669e9a5",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "1b4487cd-f128-49b0-800a-5b1c23ca1236",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "01c68ab9-625e-4b0e-88e7-870c1e410d3c",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "73216e7f-d73f-483a-b4a7-1ed2ab609d5c",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "bd8cfa96-04a0-4999-9503-31de3ef75080",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "279c4d21-3584-4f66-ae48-ba1fd61ebe83",
+      "result_id": "60884bb5-dc61-4ced-af8a-e36e0716e74c"
+    },
+    {
+      "claim_id": "8c2cb0db-9a09-472e-aede-94f892f32ed3",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "6702bc49-0023-473a-a05e-6f15186cbb0f",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "792d70e8-4b03-428a-bdd5-82c6de352c76",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "e41de729-e8cf-47bf-9f8e-a5b824281b26",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "e3d0242a-5e81-4f81-88d5-5279759c4779",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "46248915-063d-4c93-89bb-0a1341e9b405",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "daf774a1-b637-471e-8be3-c74a745478ed",
+      "result_id": "044da8d9-0005-4056-873e-6df421c3c956"
+    },
+    {
+      "claim_id": "fbc24aff-a951-4fe7-8768-f21aede5ed05",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "a5228eab-927e-4652-a599-790cd254b224",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "9e388e3f-dcf3-4a35-bb42-06458b51e7ff",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "8acee849-4231-4cd8-ba10-8687d9aae860",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "61c81907-0906-40c8-82ed-da514a9a49c4",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "4eabe572-b879-48a1-8e17-0a061d5b6466",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "ab0b271a-e33b-4e79-b7d2-98dcf2d48f4a",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "96ab891e-e7f1-4878-82c6-13179d0c447c",
+      "result_id": "fb423077-585d-49f6-99b1-ab2bdc3cbb96"
+    },
+    {
+      "claim_id": "a6849830-b5c5-47b6-9987-7ff68c90e3d3",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "7210024c-6a79-4c45-b84a-25780ac75854",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "76c64db4-ee6a-4a70-b6c0-5a8a8151dad2",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "d50be17a-0c8a-4b7f-811b-6cb3a69e2941",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "1b196096-8afe-4406-96e3-64659bb750a6",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "3361fbb5-8bd2-48c1-bcea-0315ec99a7b3",
+      "result_id": "ff8fbf36-222b-40ee-ab94-740e187241ba"
+    },
+    {
+      "claim_id": "aa97d6a0-2237-45d8-b25b-a95de4b536ee",
+      "result_id": "a973c886-27f0-43db-a86a-7cf5339de68b"
+    },
+    {
+      "claim_id": "a3357139-4c37-487a-8058-6c5ad4490965",
+      "result_id": "a973c886-27f0-43db-a86a-7cf5339de68b"
+    },
+    {
+      "claim_id": "55e3aaa2-43b3-4056-aedc-cfc0b04e99e6",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "2722b775-8941-4627-a47a-ef3b2d670ce2",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "8ec213fa-df0e-43c3-b430-1fb62e51463e",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "36774656-5e91-45d4-8933-508a044bc656",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "c491b3cc-8e72-49ae-b99b-07a60fb41e4d",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "b337b481-d9a8-4b5d-b926-5fe3c94548d4",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "1ad0f2df-b9d7-412d-8a84-6d7e15138ebd",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "ddce0589-3cf5-434c-a9cc-b0cadf4ae449",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "f80dd810-c2c5-42d4-a8cb-49232cf86402",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "c089e6ac-522a-4f39-8efe-edf8bcaeed2a",
+      "result_id": "82540846-b15d-461d-893e-7c3e90b91ada"
+    },
+    {
+      "claim_id": "a10f2d1e-0c77-4fad-bd1b-b3877b4f7a70",
+      "result_id": "c7add491-f003-4977-94ad-8bcc37ab4271"
+    },
+    {
+      "claim_id": "c1426f73-8736-4673-b1f8-e1a6c73a58fb",
+      "result_id": "c7add491-f003-4977-94ad-8bcc37ab4271"
+    },
+    {
+      "claim_id": "7fd3bdca-5e8b-46cf-8a11-2c43d6ac2efe",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "bcdeb4e4-fb08-4954-8383-6bedf1376d80",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "498d9bfd-ff12-4955-83c5-3526eaed414d",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "34b1b79e-77f6-4aa4-a346-b993d0cf4381",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "3a4259e0-5bf4-4782-b13b-95e51ec64d05",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "7827e739-2da1-4237-a3dc-e5d0c96885a3",
+      "result_id": "d7e728c3-f246-48c1-b9b4-cda087d85c1c"
+    },
+    {
+      "claim_id": "e6cc97f9-52b4-495e-a5f1-20342611e457",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "e94d1893-bdaa-4a4f-b226-de5a7fa52f6d",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "91418de6-099a-4f24-9bf8-83c5df3ac219",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "75ba788a-0ec5-43f1-a511-f41cfc3e6e74",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "5821751c-b755-4998-b242-d63db3aec365",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "9db2dba1-a4f9-4982-9f72-209fee9ab89e",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "856ae526-572d-4cdb-b3f3-dfba7d02a408",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "bb4296b9-a138-4f53-a249-6bfd12c9f114",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "86ca8294-178e-4529-b672-e33a3d4c2a2b",
+      "result_id": "21e3affe-a223-407c-aecf-fbdc91b6fd92"
+    },
+    {
+      "claim_id": "e87cc4f4-33b0-477a-aa89-bbead2f0861b",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "e441236c-2f7d-49ef-b4c1-e85aef9c5109",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "b612c9d8-63bc-4037-b94d-1a884936799f",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "0340fc76-9f58-40b9-9a2b-73fb2ee8d435",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "9264c4b9-1bf2-401a-8bda-f6b04dea857e",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "e66999d9-81f1-470f-a69b-b16c0ff9159d",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "0e6d5eaa-4610-4859-a3a4-a0eae37b4393",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "80582db1-3350-489b-bafb-9520747ee86b",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "7a63cf6c-4680-4beb-8159-9aa51f2fd795",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "ab055919-49a8-49ee-86be-bff12c0eec6e",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "477390bb-5daa-4873-b3a0-3bbc397a1f16",
+      "result_id": "12fda1be-1f0c-4f7e-87b6-6a821a25c143"
+    },
+    {
+      "claim_id": "53b367c6-fd1a-4570-ab58-0c3f06e6e10d",
+      "result_id": "88d4970c-fabc-4360-80fd-ce4ddbdcd7c6"
+    },
+    {
+      "claim_id": "27aecb9b-2106-4f60-9fbf-2966775c76c0",
+      "result_id": "88d4970c-fabc-4360-80fd-ce4ddbdcd7c6"
+    },
+    {
+      "claim_id": "2118e76c-088e-4825-bca8-18d01f99c1e1",
+      "result_id": "88d4970c-fabc-4360-80fd-ce4ddbdcd7c6"
+    },
+    {
+      "claim_id": "e26a3686-4c94-474e-b47a-f2b830694df2",
+      "result_id": "189f8c40-b151-402b-b987-7880d063aea3"
+    },
+    {
+      "claim_id": "075a7b00-89a7-497c-8f6b-af2719458ba4",
+      "result_id": "189f8c40-b151-402b-b987-7880d063aea3"
+    },
+    {
+      "claim_id": "d9c2eebc-488e-4709-89f0-e9aeb28f460e",
+      "result_id": "189f8c40-b151-402b-b987-7880d063aea3"
+    }
+  ],
+  "comparisons": []
+}

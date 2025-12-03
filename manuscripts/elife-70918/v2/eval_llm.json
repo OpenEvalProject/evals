@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors evolved 152 diploid and 20 haploid yeast populations in three distinct environments (YPD at 30\u00b0C, YPD + acetic acid at 30\u00b0C, and YPD at 37\u00b0C) for ~1000 generations using barcoded strains, with fitness assayed at 200-generation intervals across five environments. 19 outlier diploid populations were excluded from analysis, leaving 153 populations total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 and C67-C72 provide comprehensive experimental design details including population numbers, environments, barcoding strategy, propagation conditions, and quality control measures. The methods are clearly described with appropriate technical details (bottleneck size, storage conditions, exclusion criteria). The autodiploidization of most haploid populations (C67-C68) is documented, justifying the final sample composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Populations consistently increased fitness in their home environments following a pattern of declining adaptability (early rapid gains slowing over time, p < 0.0001), with this pattern especially pronounced in acetic acid but absent in haploid populations at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe home environment fitness dynamics with statistical support (p < 0.0001 for declining adaptability). The pattern is consistent with cited prior work and supported by Figure 2. Environment-specific differences are noted with appropriate caveats about the speculative explanation for haploid 37\u00b0C populations (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Adaptation in each environment led to pleiotropic fitness changes in most other environments, with consistent directional trends for each environment pair but greater variability than home environment fitness. Specialization was rare overall, though substantial fractions of populations declined in fitness at 21\u00b0C after evolution in other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 comprehensively describe pleiotropic effects with specific examples of fitness gains (C16) and losses (C17, C20-C22). The characterization of greater variability in away environments (C18) and rarity of specialization (C19, C23) is supported by Figure 2 and summary statistics. The claims appropriately distinguish general trends from exceptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The dynamics of pleiotropic fitness changes differed by evolution environment and ploidy. Populations evolved at 37\u00b0C initially gained fitness in YPD+NaCl before YPD at 30\u00b0C, while populations evolved in YPD at 30\u00b0C or acetic acid showed the reverse pattern. Haploid and diploid populations at 37\u00b0C showed similar overall patterns but differed in specific environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 describe environment- and ploidy-specific trajectories supported by Figure 3. The temporal ordering of fitness gains in different environments (C25-C26) provides mechanistic insight. The interpretation that divergence depends on environment and genomic architecture (C29) is appropriately supported by citation and data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Principal component analysis revealed that populations separated into distinct clusters by evolution environment and ploidy over time, with characteristic pleiotropic profiles emerging rapidly and stabilizing by ~600 generations. The first two PCs consistently explained >50% of variance at each timepoint, and clustering was statistically significant (p < 0.001) from generation 200 onward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe PCA results with appropriate quantification of variance explained and statistical testing of clustering. The temporal dynamics of cluster formation (C34) and statistical significance (C35) are well-documented. The interpretation of characteristic pleiotropic profiles (C32, C36) follows logically from the clustering patterns shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Despite general trends, significant stochastic variability existed among replicate populations, with patterns structured by evolution condition. Populations evolved in acetic acid showed wider variation across environments, and the role of chance in pleiotropic trajectories was contingent on the adaptation condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 characterize variability within general trends, supported by Figures 2-5. Specific examples (C38-C39, C41-C42) illustrate environment-specific patterns. The inference about qualitatively different evolutionary paths (C40) is appropriately cautious and based on observed patterns. The conclusion about contingency (C43) is a reasonable interpretation of the structured variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Variation in fitness at home remained relatively low over 1000 generations while variation in away environments generally increased over time. Statistical testing showed significantly greater variance in away environments for 48/80 comparisons (p < 0.05) versus only 6/80 showing greater home variance, suggesting selection suppresses variation in home environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 describe temporal dynamics of variance with statistical support from Brown-Forsythe tests. The quantification (48/80 vs 6/80 comparisons) provides strong evidence. The interpretation that selection suppresses home environment variation (C46) is reasonable given the data, though appropriately qualified to the timescales studied. Figure 5 supports these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Populations rarely showed nonmonotonic fitness trajectories in home environments (4/153, 2.6%) but commonly showed them in away environments (102/612, 16.7%; p < 0.0001). Of nonmonotonic trajectories, 71% reflected initially positive pleiotropic effects becoming negative in the second half of the experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 quantify nonmonotonicity with clear statistical support (\u03c7\u00b2 test, p < 0.0001). The methodology for defining nonmonotonic trajectories is described in the methods. The characterization of the predominant pattern (C52) provides biological insight. Figure 6 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study found repeatable fitness trajectories in home environments with declining adaptability, consistent trajectories in away environments, rapid emergence of characteristic pleiotropic patterns stabilizing by ~600 generations, and ~17% nonmonotonic away-environment trajectories indicating sequential fixation of mutations with opposing pleiotropic effects. Variance among replicates tended to increase over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 summarize key findings appropriately supported by the data presented throughout. The interpretation of nonmonotonicity as evidence for sequential fixation (C57) is reasonable though inferential. The summary is consistent with earlier work (C58) and integrates multiple lines of evidence about trajectory diversity (C59-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors conclude that specialization versus generalization will not simply reflect physiological constraints but rather depends on both the distribution of pleiotropic effects and dynamical factors influencing mutation fixation. Pleiotropic profiles stabilize by ~600 generations, suggesting environmental fluctuations on different timescales will lead to qualitatively different outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 present interpretations and implications appropriately grounded in the data. The conclusions about the role of chance and contingency (C61-C63) follow from observed variability patterns. The inference about timescale effects (C65) is reasonable given the observed stabilization at 600 generations (C64). The claim about sequence dependence (C66) is appropriately inferential based on environment-specific patterns.",
+    "result_type": "MAJOR"
+  }
+]

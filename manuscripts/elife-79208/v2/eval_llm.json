@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prime editing (PE) is more efficient and precise than DSB-based methods (CRISPR/Cas9 and TALEN) for generating heterozygous mutations in hPSCs. PE achieved 2-4% correct substitutions with <0.5% indels, compared to 19.6% and 3.3% indels for CRISPR/Cas9 and TALEN respectively, resulting in higher efficiency of heterozygous correctly targeted clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide quantitative NGS and clonal genotyping data directly comparing PE to DSB-based methods at the LRRK2 locus. The data consistently show that while editing efficiencies are comparable (2-4%), PE generates substantially fewer indels (<0.5% vs 3.3-19.6%), leading to higher recovery of heterozygous correctly targeted clones. This supports the overall conclusion in C2 and C3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Stable integration of nCas9-RT into hPSCs achieves editing efficiencies comparable to cancer cells (up to 22-27% depending on locus), demonstrating that PE component expression rather than cell-intrinsic features limits PE efficiency in hPSCs. Delivery method significantly impacts editing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 establish baseline differences between hPSCs (~4.3% PPE) and HEK293T cells (~12.7% PPE). Claims C24-C26 show that stable nCas9-RT expression increases efficiency to 12-27% across multiple loci, approaching cancer cell levels. This supports the inference in C4-C5 that delivery/expression, not cell biology, is the limiting factor. Claim C27 appropriately summarizes this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "mRNA-based delivery of nCas9-RT combined with chemically-modified synthetic pegRNAs and ngRNAs improved editing efficiencies up to 13-fold compared to plasmid delivery and 8-fold compared to RNP delivery, achieving up to 26.7% editing efficiency comparable to tumor cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 provides quantitative comparison data across three loci showing consistent improvement with mRNA delivery. Claims C31-C32 report maximum efficiencies achieved and compare to published tumor cell data. The fold-change claims in C6 and C30 are directly supported by experimental data in Figure 3A, making this a well-supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C50"
+    ],
+    "result": "Multiple rounds of mRNA-based PE can substantially increase editing efficiencies, yielding up to 60% correctly targeted alleles across all tested loci (HEK3, LRRK2, SNCA), potentially enabling nearly complete editing of bulk hPSC populations without selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 provides experimental data from multi-dosing experiments across three loci showing cumulative increases in editing efficiency. Claims C7 and C50 report the maximum efficiency achieved (>60%). Claim C39 makes an inference about potential for complete editing, which is reasonable given the data but represents extrapolation. The core experimental findings are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C52"
+    ],
+    "result": "mRNA-based PE can both introduce and correct familial Parkinson's disease mutations in hPSCs. Correction of heterozygous and homozygous SNCA (A30P) mutations achieved 31.0% and 30.1% bulk correction respectively, with 26.2% and 48% precisely corrected clones. Three PD mutations (LRRK2 G2019S, SNCA A30P, A53T) were successfully introduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide specific quantitative data for mutation correction experiments with both bulk NGS and clonal genotyping. Claim C52 confirms successful introduction of three different PD mutations. The data demonstrate bidirectional capability (introduction and correction) with quantified efficiencies, supporting the overall claim C8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C65"
+    ],
+    "result": "RNP-based PE is feasible in hPSCs but achieves only 1-6% editing efficiency, comparable to plasmid-based approaches and substantially lower than stable nCas9-RT expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 provide experimental data showing RNP-based PE works but with limited efficiency. The comparison to other methods is supported by data in Figure 2E and related figures. Claim C65 appropriately characterizes this as demonstrating feasibility but not optimal performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "mRNA-based editing efficiencies depend on the in vitro transcription method used, but are highly consistent across different mRNA batches when using optimized transcription conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by experimental data in Figure 3\u2014figure supplement 1A and 1B. The data show variation between transcription methods but consistency within the optimal method across batches. This is a methodological finding important for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "mRNA-based delivery results in improved cell health and increased clonal survival following nucleofection compared to RNP or plasmid delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by experimental data in Figure 3B showing increased colony formation with mRNA delivery. This is an important practical advantage of the mRNA approach, though it is a secondary benefit rather than a primary finding about editing efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "mRNA-based PE achieves comparable editing efficiencies in a second hiPSC line (8858) for LRRK2 (G2019S) and SNCA (A30P) loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by experimental data in Figure 3C demonstrating that the mRNA-based PE approach is not specific to the WIBR3 hESC line. This addresses generalizability across hPSC lines, though testing in only one additional line is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Efficient PE of the LRRK2 (G2019S) locus was achieved in WIBR3 hESCs using several feeder-free culture systems with comparable efficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by experimental data in Figure 3\u2014figure supplement 1C. This demonstrates compatibility with clinically-relevant xeno-free culture conditions, which is important for translational applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "mRNA-based PE is well-tolerated and highly effective for introducing precise mutations in hPSCs with base-pair precision and minimal undesired modifications on the second allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C44-C45) are supported by the collective experimental data showing high editing efficiencies, low indel rates, and successful generation of heterozygous mutations. They represent appropriate synthesis of the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C55",
+      "C61"
+    ],
+    "result": "Prime edited hPSC lines showed normal karyotypes (7/7 tested lines), consistent with low genotoxicity of PE due to lack of DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C55, and C61 report karyotyping results showing normal karyotypes in all tested lines. While the sample size is limited (n=7), this provides important safety data. The interpretation linking this to lack of DSBs (C46) is reasonable but somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "A high-throughput genome editing pipeline omitting FACS enrichment enables multiplexed generation of genome-edited hPSC lines in less than 4 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the description of the workflow in Figure 1\u2014figure supplement 2 and the methods. This represents a practical methodological advance that facilitates the application of PE, though it results in slightly lower bulk editing efficiencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C59",
+      "C60"
+    ],
+    "result": "The LRRK2 G2019S mutation is found in approximately 4% of familial PD cases and 1% of sporadic PD cases, making it one of the most frequent pathogenic substitutions linked to Parkinson's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about the frequency and significance of the LRRK2 G2019S mutation are supported by citation to Healy et al., 2008. This is background information establishing the relevance of the mutation being targeted, not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "PE is a multicomponent editing system that does not require DSBs but directly repairs nicked DNA strands using a Cas9-nickase fused to reverse transcriptase and an extended pegRNA that is reverse transcribed to function as a repair template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the established mechanism of prime editing based on citation to Anzalone et al., 2019. This is background information explaining the technology being applied, not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "DSB-mediated genome editing frequently generates undesirable compound heterozygous outcomes due to preferential NHEJ repair, making it challenging to generate disease-associated dominant mutations in heterozygous settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe established limitations of DSB-based editing supported by citation to Cox et al., 2015 and general knowledge. This provides context for why PE is advantageous but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "PE has been previously demonstrated in hPSCs, though its potential for facilitating hPSC-based disease model generation remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 accurately describes prior work (Chemello et al., 2021; Chen et al., 2021; S\u00fcr\u00fcn et al., 2020) and identifies the gap this study addresses. This is appropriate contextualization of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Similar differences in gene editing efficiencies between hPSCs, primary cells, and tumor cell lines have been commonly observed for other genome engineering approaches including CRISPR/Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by citations to Bowden et al., 2020; Haapaniemi et al., 2018; Ihry et al., 2018. This contextualizes the observed efficiency differences as a general phenomenon rather than PE-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "PE3-mediated editing can generate indels around the target site, with frequency varying by locus and pegRNA design. Indel frequency may also be affected by delivery modality due to different kinetics and expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 cites Habib et al., 2022 regarding indels with PE3. Claim C48 describes established knowledge about variability. However, claim C49 is explicitly speculative about delivery modality effects. The authors acknowledge this is speculation without providing experimental data to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "PE efficiencies might be further increased by including mRNAs coding for DNA mismatch repair inhibiting proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is explicitly speculative, suggesting a potential future improvement based on Chen et al., 2021. While the citation provides precedent in other contexts, this approach was not tested in the current study, making this a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "PE efficiencies vary widely depending on genomic context and pegRNA design, but systematic optimization approaches and Cas9 variants with non-classical PAMs are expected to overcome these limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 describes general knowledge about PE variability. Claim C54 is explicitly speculative about future developments, citing recent advances but not demonstrating these improvements in the current study. This represents reasonable expectations but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "PE is highly specific and shows much lower guide RNA-dependent or independent off-target effects compared with DSB-based CRISPR/Cas9 or base editing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 cites multiple studies (Gao et al., 2021; Geurts et al., 2021; Habib et al., 2022; Jin et al., 2021; Kim et al., 2020a; Schene et al., 2020) showing low off-target effects of PE in other systems. However, the authors explicitly state they \"refrained from a detailed off-target analysis\" in their own study (C55), so this claim about PE specificity in their hPSC system is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Genome-wide off-target analyses remain challenging for genome editing approaches due to background genetic alterations during cell culture. Future clinical PE development will require sophisticated off-target analysis tools accounting for nCas9 and reverse transcriptase-mediated alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by citation to Kuijk et al., 2020 and represents established knowledge about challenges in off-target analysis. Claim C58 is a reasonable opinion about future research needs, appropriately framed as speculative. These claims acknowledge limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The SNCA A30P mutation is caused by G88C substitution and A53T by G209A substitution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about the molecular basis of SNCA mutations are supported by citations to Kr\u00fcger et al., 1998 and Polymeropoulos et al., 1997. This is background information about the mutations being targeted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The hiPSC line 8858 was obtained from Sergiu Pasca lab at Stanford, and the hESC line WIBR3 has NIH Registration Number 0079.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide cell line provenance information supported by appropriate citations and registry numbers. This is standard methodological documentation.",
+    "result_type": "MINOR"
+  }
+]

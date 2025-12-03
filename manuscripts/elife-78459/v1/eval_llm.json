@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study recruited three couples undergoing IVF and used deep whole-genome sequencing (~300\u00d7 depth) with the MSMF computational pipeline to identify male gonadal mosaicism, followed by targeted ultra-deep genotyping (MPAS) to validate variants and assess transmission to 32 preimplantation blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C27-C32 collectively describe the study design, recruitment, and methodology. The approach is well-documented with appropriate sequencing depth, validated computational pipelines (C32 cites >95% sensitivity and 90% specificity), and clear sample sizes. The methodology is internally consistent and builds on prior validated work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The three sperm donors harbored 55 gonadal mosaic mutations (F01: 12, F02: 13, F03: 30) at allelic fractions between 0.003-0.247 (mean: 0.047), with lower AF mutations typically sperm-specific and higher AF mutations shared between sperm and somatic tissues, consistent with prior unbiased analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 describe the detection and characterization of gonadal mosaic mutations. The data are presented with quantitative measures (C40), tissue distribution patterns (C41-C42), and comparison to prior work (C43). The observation of clonal hematopoiesis in F01 (C44) is supported by citations and figure references. The results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Across 55 gonadal mosaic variants, 15 were transmitted to blastocysts for 19 total transmission events, with transmission rates positively correlated with sperm allelic fraction (R=0.67, p=2.9e-8), demonstrating that gonadal mosaic mutations detected in sperm can transmit to preimplantation blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C25, C45-C47 present the core transmission findings with statistical support. The correlation between AF and transmission (C46-C47) is statistically significant with appropriate testing. Quality control measures were applied (C45). The result directly addresses the study's main hypothesis with quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The MPAS genotyping approach on whole-genome-amplified blastocyst material demonstrated a false-negative rate of ~0.06 and false-positive rate of ~0.001, indicating modest allelic dropout but high specificity for detecting gonadal mosaic mutation transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe the technical validation of the detection method. The false-negative rate was calculated from homozygous variant transmission (expected 100%, observed 94%), and false-positive rate from cross-sample contamination testing (1/985 events). These are appropriate validation approaches with clear quantitative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cosegregation of mutations with similar allelic fractions and nonrandom distribution of transmitted mutations across blastocysts (particularly in F03) suggests that some early male germ cell lineages are more susceptible to mutation than others, and that mutations from one sperm progenitor may uncouple during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe patterns in mutation transmission with statistical support (C49 references Figure 2\u2014figure supplement 2 showing permutation analysis). The inference about differential lineage susceptibility (C50-C51) is reasonable given the observed cosegregation patterns, though it remains somewhat speculative about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Observed transmission rates were within the 95% confidence interval of expectations for F01 and F02, but slightly below expectations for F03 and across all individuals combined, likely reflecting model limitations assuming independent mutation transmission when mutations on the same lineage can cotransmit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 compare observed to expected transmission with appropriate statistical measures (95% CI). The interpretation of undertransmission (C55-C57) acknowledges model limitations regarding independence assumptions. The conclusion that observations closely reflect expectations (C58) is reasonable given the modest deviation and is supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C9"
+    ],
+    "result": "Reanalysis of the REACH cohort (8 families, 14 offspring, 131 sperm-detectable variants) showed 9 transmissions among 7 unique variants, with observed transmission slightly below the expected 95% confidence interval, replicating the undertransmission pattern observed in blastocysts and supporting the predictive power of gonadal mosaicism assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 and C9 describe the replication analysis using previously published data. The methodology is clearly described (C65), results are quantified (C66-C67), and the consistency with blastocyst findings strengthens the main conclusions (C68-C69). The replication in live-born offspring provides important validation despite lower statistical power due to fewer offspring per family.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The 55 gonadal mosaic mutations were distributed across chromosomes roughly as expected by length (excluding chr 19, 22, X/Y), predominantly in intergenic (n=28) or intronic (n=24) regions, with one exonic nonsynonymous mutation in RABGAP1 (p.Asp74Gly) that is rare and has no known disease association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe the genomic distribution and functional annotation of detected mutations. The chromosomal distribution (C59-C60) and regional distribution (C61-C62) are consistent with expectations. The characterization of the single exonic mutation (C63-C64) is appropriately detailed. These are descriptive findings that support the neutrality of variants used for modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C26"
+    ],
+    "result": "The study provides proof-of-concept that a priori detected gonadal mosaic mutations can transmit to preimplantation blastocysts and likely to offspring, with assessment at the blastocyst stage avoiding potential selection bias during implantation or survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C26 summarize the main conclusion. The proof-of-concept is supported by the transmission data (19 events across 15 variants). The rationale for studying blastocysts (C26) is methodologically sound to avoid selection bias, though the extrapolation to offspring (C71) is reasonable but not directly demonstrated in this cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study has important limitations: only three sperm donors were assessed, and none of the interrogated variants were predicted to be disease-causing, requiring future research with larger cohorts and pathogenic variants, as well as technological development for biopsy-based assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 appropriately acknowledge study limitations. The small sample size (C72) and lack of pathogenic variants (C73) are significant constraints on clinical applicability. The recommendations for future work (C74-C75) are reasonable and necessary before clinical implementation. This honest assessment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C24",
+      "C80",
+      "C89"
+    ],
+    "result": "Unbiased preimplantation genetic testing for gonadal mosaicism may represent a feasible approach to reduce transmission of potentially harmful de novo mutations, potentially reducing their impact on miscarriages and pediatric disease through embryo selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11, C24, C80, and C89 make speculative statements about clinical applications. While the proof-of-concept is demonstrated, the study only examined neutral variants (C73), and clinical feasibility requires validation with pathogenic variants, larger cohorts, and biopsy-based methods (C74-C75). The potential benefits are plausible but not yet demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background context establishes that de novo mutations underlie pediatric congenital disorders, mosaic mutations can be detected in parental tissues (particularly sperm at 5-20% of pathogenic mutations), every male harbors dozens of gonadal mosaic mutations independent of age, but experimental evidence of transmission of prospectively identified gonadal mosaic mutations was lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 provide background context supported by multiple citations to prior work. These establish the scientific rationale and identify the knowledge gap (C23) that the study addresses. The claims about prevalence (C17-C19), age-independence (C20-C21), and clinical significance (C16, C22) are appropriately cited to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Previous approaches focused on detecting mosaicism after identifying de novo mutations in offspring, providing empirical recurrence risks of 1-2% that mask heterogeneity (near-zero to 25% risk), whereas this study demonstrates prospective detection and transmission assessment, complementing prior work on detection capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 contextualize the study's contribution relative to prior work. The description of current clinical practice (C77-C78) and limitations of reactive approaches (C81-C82) are appropriately cited. The claim that this study provides an important complement (C84) is supported by the transmission data demonstrating prospective prediction capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Based on prior estimates, 1 in 15 males carry potentially pathogenic mutations detectable in ~5% of sperm, potentially affecting 1 in 300 concepti, representing ~15% of monogenic sporadic disease that could theoretically be prevented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 present estimates about population-level impact. While C85 is cited to prior work, the prediction about 1 in 300 concepti (C86) and the 15% estimate (C87) involve extrapolations with uncertainty. The claim that this is the 'sole fraction' preventable (C88) is speculative and may not account for future advances in preventing other de novo mutation types.",
+    "result_type": "MINOR"
+  }
+]

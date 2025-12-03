@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors developed an optical system for remote, spatiotemporally precise optogenetic stimulation of somatosensory afferents in freely moving mice. The system achieves spatial targeting resolution of 6.2 \u03bcm, temporal precision with sub-millisecond pulses, and can deliver stimuli to a 400 cm\u00b2 arena with spot sizes ranging from 0.0185 to 2.307 mm\u00b2. The system uses galvanometer mirrors, NIR-FTIR imaging, and dual-camera recording to enable simultaneous high-speed behavioral monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C54 collectively describe the technical specifications and validation of the optical system. The design criteria are clearly stated and supported by technical characterization data (C40, C43-C46) showing spatial resolution, spot size uniformity (coefficient of variation \u22640.1), and temporal capabilities. The system architecture is well-documented with specific measurements and validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The system was validated using TRPV1Cre::ChR2 mice expressing ChR2 in nociceptors. A single 1 ms laser pulse (S6, 0.577 mm\u00b2, <1% of paw area) initiated behavioral responses at 29 ms with complete paw withdrawal 5 ms later. Negative control littermates lacking Cre showed no responses even with maximal stimuli, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 demonstrate successful validation of the system with appropriate genetic controls. The rapid response latencies (29 ms), small stimulus size (<1% paw area), and negative controls in Cre-negative littermates provide strong evidence for specific optogenetic activation. The data are consistent with nociceptor activation kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Brief optogenetic stimuli generate single action potentials in nociceptors due to ChR2 kinetics (\u03c4 = 1.9 ms) relative to nociceptor interspike intervals. Varying pulse duration (300 \u03bcs to several ms) with nanosecond precision controls the probability of action potential generation, with response probability increasing with pulse duration until approaching unity, matching ChR2 on-kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 are well-supported by citations to previous work (C63, C65-C66, C71) and experimental data (C69-C71). The mechanistic explanation linking ChR2 kinetics to single action potential generation is sound. However, C68 (Boolean array hypothesis) is more speculative and represents an inference rather than direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The total area of stimulated skin determines behavioral response probability. Sub-threshold stimulations are spatially additive: seven spatially displaced small stimulations reproduced the response probability of a single large stimulation approximately seven times their size, but repeated stimulation at the same site could not achieve this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by experimental data in Figure 2E-F. The spatial summation experiment (C73-C75) provides strong evidence for spatial integration of nociceptive inputs. The statistical analysis (Friedman's test, p=0.0004) supports the conclusion that absolute size rather than geometric pattern determines response probability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Nociceptive input size influences behavioral response latency, vigor (rise time), and completeness. Larger inputs produced shorter latencies (27\u00b11 ms for S8 vs 112\u00b146 ms for S5 with 3 ms pulses), faster rise times, and higher probability of full withdrawal (>65% of responses). Response latencies fit log-log regressions (R\u00b2=0.87-0.90) and are consistent with A\u03b4-fiber conduction velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are well-supported by quantitative data in Figure 3. The hierarchical bootstrap analysis provides appropriate statistical treatment of nested data. The correlation between input size and multiple response parameters (latency, vigor, completeness) is consistent and well-characterized. The interpretation regarding A\u03b4 vs C-fiber contributions (C77) is reasonable given the latency data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Whole-body movement initiated with mean latency of 30\u00b11 ms and mean duration of 136\u00b114 ms. The magnitude of whole-body movement increased with stimulation spot size, with peak motion energy showing a lognormal relationship with nociceptive input size (R\u00b2=0.99), indicating global behaviors are proportional to the number of recruited nociceptors firing single action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by motion energy analysis in Figure 4\u2014figure supplements 1-2. The tight correlation (R\u00b2=0.99) between input size and motion energy is compelling. However, the inference that this reflects single action potential recruitment (C94) relies on the earlier claims about ChR2 kinetics and may not account for potential variability in nociceptor recruitment efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Nociceptive stimulation causes simultaneous behavior across the body, including fast outward movement of both hind paws and head orientation. Principal component analysis of body part positions at 115 ms explains 88.8% of variance (PC1: hind paw translation, PC2: head/body movement, PC3: head orientation). Response trajectories are largely directional (circular SD=52.9\u00b0) and response magnitude is partly explained by initial pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 are supported by comprehensive markerless tracking analysis in Figure 4. The PCA approach is appropriate and well-validated with shuffled controls (C103). The finding that initial pose influences response magnitude (C104-C105) is supported by correlation analysis (Figure 4F-G), though the correlations are moderate (r=0.55, -0.36, -0.36), suggesting other factors also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Discrete body parts move with coordinated timing: stimulated paw at 29\u00b11 ms, contralateral paw at 34\u00b14 ms, nose at 33\u00b12 ms. In 94% of trials, multiple body parts moved together. The head selectively and rapidly orients to the stimulated side, with nose movement positively correlating with stimulated paw movement (r=0.64). Short latencies indicate A\u03b4-nociceptor rather than C-fiber mediation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 are well-supported by high-speed tracking data in Figure 4H-K. The simultaneous movement onset across body parts and selective head orientation are clearly demonstrated. The correlation between nose and paw movement (C110) is moderate but significant. The inference about A\u03b4 vs C-fiber mediation (C111) is reasonable given the latencies. Claims C114-C115 about functional significance are more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "In Vglut1Cre::ChR2 mice expressing ChR2 in A\u03b2-LTMRs, single 3 ms pulses rarely elicited responses (probability=0.10\u00b10.03) with earliest response at 206 ms (vs 19 ms in TRPV1Cre::ChR2). Trains of five pulses increased response probability (0.31\u00b10.09 at 5 Hz, 0.40\u00b10.10 at 10 Hz), but 20 Hz did not increase probability further, possibly reflecting ChR2 desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C124 are supported by experimental data in Figure 5A-C and citations to previous characterization work (C116, C118). The contrast with nociceptor responses is striking and well-documented. The interpretation of 20 Hz plateau as ChR2 desensitization (C124) is speculative but reasonable given cited ChR2 properties. Sample sizes are adequate (99-117 trials from 11-12 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "In Vglut1Cre::ChR2 mice, responses occurred after the second or third pulse regardless of stimulation frequency. Response distributions superimpose when normalized to interstimulus interval, suggesting response probability is driven by pulse summation rather than frequency. Probabilities and latencies can be explained by the probability sum rule using single-pulse values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by analysis in Figure 5A, D showing that pulse-matched latencies superimpose across frequencies. The probability sum rule prediction matches observed data well (Figure 5C-D). This is a strong mechanistic finding distinguishing temporal summation from frequency-dependent effects. The analysis is rigorous and the conclusion is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Whole-body behaviors in Vglut1Cre::ChR2 mice were subtle compared to TRPV1Cre::ChR2 mice, with motion energy not affected by stimulation frequency. Responses were mostly limited to small hind paw movements that did not disturb balance. Whisking and forepaw movements preceded hind paw responses, initiating as early as the first pulse even in non-withdrawal trials, suggesting early perception with delayed action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by motion energy analysis (Figure 5\u2014figure supplement 1) and qualitative behavioral observations. The contrast with nociceptor responses is clear. However, C132-C133 rely on qualitative observations and the interpretation about early perception (C133) is speculative. More quantitative analysis of whisking and forepaw movements would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The probabilistic recruitment of nociceptors determines behavioral response probability, latency, and magnitude. The authors propose that aggregate first action potentials from nociceptors could be summated by spinal neurons for threshold-based behavior selection. Resultant behaviors include coordinated head orientation and body repositioning dependent on initial pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C142 is well-supported by the experimental data. However, C143-C144 are theoretical proposals about spinal integration mechanisms that are not directly tested in this study. While plausible and consistent with the data, these claims about spinal summation and threshold-based selection represent speculation about underlying mechanisms rather than demonstrated findings. Additional experiments would be needed to test these mechanistic hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Responses from multiple A\u03b2-LTMR inputs can be explained by the sum rule of probabilities rather than frequency-dependence. This does not rule out tuning to more complex stimuli, and subpopulations may exploit diverse coding strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 is well-supported by the experimental data and analysis in Figure 5. Claims C147-C148 appropriately acknowledge limitations and alternative possibilities. The caveat that more complex stimuli might reveal frequency-dependent effects is important and scientifically appropriate. C148 is speculative but reasonable given that broad Cre lines were used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The approach can remotely deliver spatiotemporally accurate optogenetic stimuli with predefined parameters while simultaneously monitoring behavior at millisecond timescale. Microscale stimulation can simulate patterns, edges, and moving points. The modular design allows addition of lasers or analysis approaches. The system was validated in two transgenic mouse lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 accurately summarize the demonstrated capabilities of the system. These are well-supported by the technical characterization and validation experiments throughout the manuscript. The modularity claim (C137) is reasonable given the design but represents potential rather than demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes the importance of somatosensory inputs, current methodological limitations (imprecise manual stimulation, observer bias, mixed afferent activation, subjective behavioral measures), and identifies gaps in applying machine vision to somatosensory studies. These claims provide context and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 are primarily background statements supported by citations to previous literature or represent well-established knowledge in the field. The characterization of current limitations (C2, C13, C17-C18, C24-C26) appropriately motivates the technical development. These claims accurately represent the state of the field and are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Pain-related responses involve simultaneous movement of multiple body parts beyond the affected limb. These non-local behaviors theoretically serve protective purposes: investigating danger, moving away from danger, attending to the affected area, and maintaining balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by citations and the experimental data. Claims C86-C89 about the theoretical purposes of these behaviors are speculative interpretations supported by citations but not directly tested in this study. These represent reasonable hypotheses about functional significance rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C149",
+      "C150"
+    ],
+    "result": "The discussion contextualizes findings within broader neuroscience: transcriptional profiling has identified diverse afferent populations, selective activation recruits specific circuits, and the strategy enables investigation of sensorimotor, perceptual, cognitive, and motivational processes in health and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately place the work in broader context. C139 is supported by citation. C140-C141 represent established knowledge. C149-C150 describe potential applications of the method rather than demonstrated findings. These are reasonable statements about the utility and future applications of the approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2069 @@
+{
+  "submission": {
+    "id": "b3d327dd-07a7-48c5-95c6-56d8747ec284",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T01:09:29.306749Z",
+    "updated_at": "2025-12-03T01:09:29.306749Z"
+  },
+  "content": [
+    {
+      "id": "57930920-69f1-490e-a361-449367c74e01",
+      "submission_id": "b3d327dd-07a7-48c5-95c6-56d8747ec284",
+      "content_type": "manuscript",
+      "content_text": "# SUMOylation contributes to proteostasis of the chloroplast protein import receptor TOC159 during early development\n\n## Authors\n\n- Sonia Accossato<sup>1</sup>\n- Felix Kessler<sup>1</sup> ([ORCID: 0000-0001-6409-5043](https://orcid.org/0000-0001-6409-5043)) \u2020\n- Venkatasalam Shanmugabalaji<sup>1</sup> ([ORCID: 0000-0002-3855-6958](https://orcid.org/0000-0002-3855-6958)) \u2020\n\n### Affiliations\n\n1. Laboratory of Plant Physiology, University of Neuch\u00e2tel Neuch\u00e2tel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nChloroplast biogenesis describes the transition of non-photosynthetic proplastids to photosynthetically active chloroplasts in the cells of germinating seeds. Chloroplast biogenesis requires the import of thousands of nuclear-encoded preproteins by essential import receptor TOC159. We demonstrate that the small ubiquitin-related modifier (SUMO) pathway crosstalks with the ubiquitin\u2013proteasome pathway to affect TOC159 stability during early plant development. We identified a SUMO3-interacting motif (SIM) in the TOC159 GTPase domain and a SUMO3 covalent SUMOylation site in the membrane domain. A single K to R substitution (K1370R) in the M-domain disables SUMOylation. Compared to wild-type TOC159, TOC159K1370R was destabilized under UPS-inducing stress conditions. However, TOC159K1370R recovered to same protein level as wild-type TOC159 in the presence of a proteasome inhibitor. Thus, SUMOylation partially stabilizes TOC159 against UPS-dependent degradation under stress conditions. Our data contribute to the evolving model of tightly controlled proteostasis of the TOC159 import receptor during proplastid to chloroplast transition.\n\n## Introduction\n\nChloroplasts are unique organelles that carry out photosynthesis. Although chloroplasts contain their own genome, the majority of chloroplast proteins are encoded by the nuclear genome and synthesized as preproteins in cytosol, and these preproteins are imported into the chloroplast through TOC-TIC complexes (Translocon at the Outer or Inner membrane of the Chloroplast) (Jarvis and L\u00f3pez-Juez, 2013). The core of the TOC complex contains two related GTP-dependent preprotein receptor GTPases, TOC159 and TOC33, which interact with a \u03b2-barrel membrane protein, TOC75, that forms a protein-conducting channel, and is regulated by specific interactions with nuclear-encoded preproteins (Schnell et al., 1994; Kessler et al., 1994; Jarvis et al., 1998). TOC159 is a major point of entry for highly abundant photosynthesis-associated preproteins arriving at the translocon complex. It is therefore regarded as the major chloroplast protein import receptor. TOC159 has a three-domain structure: a highly acidic N-terminal domain (A-domain), a central GTP-binding domain (G-domain), and a C-terminal membrane anchor domain (M-domain). Chloroplast biogenesis, the transition of a non-photosynthetic proplastid to a photosynthetically active chloroplast, depends on the essential import receptor TOC159 and its mutation results in non-photosynthetic albino plants (Bauer et al., 2000).\n\nRecent studies have shown that during the etioplast to chloroplast transition, the TOC components are ubiquitinated by a novel chloroplast RING-type E3 ubiquitin ligase SP1 (suppressor of ppi1 locus 1). Ubiquitinated TOC components are extracted from the chloroplast outer envelope membrane with the help of SP2 (an Omp85-like \u03b2-barrel protein) and Cdc48 (a cytosolic AAA+ chaperone) providing the extraction force. The ubiquitinated TOC\u00a0component is degraded by the 26S proteasome in the cytosol (Ling et al., 2012; Ling et al., 2019). This proteolytic pathway has been named CHLORAD. In a different context, chloroplast biogenesis takes place during the proplastid to chloroplast transition. It is dependent on the plant hormone gibberellic acid (GA). Under unfavorable seed germination conditions when gibberellic concentrations are low, a DELLA (RGL2) (a negative regulator of GA signaling) promotes the ubiquitylation and degradation of TOC159 by the 26S proteasome to insertion into the outer membrane of the chloroplast. This mechanism delays the onset of chloroplast biogenesis at an early developmental stage and has been shown to be independent of SP1 and presumably CHLORAD (Shanmugabalaji et al., 2018).\n\nA recent study employed a yeast-two-hybrid screen to identify putative Arabidopsis small ubiquitin-like modifier (SUMO) substrates. The E2 SUMO conjugating enzyme (SCE1) was used as bait, and TOC159 was identified as a high-probability interaction candidate. TOC159 contains a predicted SUMO attachment site (\u03c8KXE/D) (Elrouby and Coupland, 2010). The SUMO, a 11 kDa protein, covalently modifies a large number of proteins. SUMO-dependent regulation is involved in many cellular processes, including gene expression, signal transduction, genome maintenance, protein localization, and activity (Gill, 2004). SUMOylation plays a crucial role in plant development and stress responses (Elrouby, 2017; Augustine and Vierstra, 2018; Morrell and Sadanandom, 2019). This reversible and dynamic SUMOylation starts with the attachment of SUMO to the target protein by a conjugation pathway, mechanistically analogous to the ubiquitylation system (Augustine and Vierstra, 2018; Novatchkova et al., 2012). The target protein covalently modified by SUMO performs specific functions, which may subsequently be reversed by SUMO proteases that hydrolyze the isopeptide bond between SUMO and the target protein (Yates et al., 2016). In addition, SUMO can also interact with target proteins through a SUMO-interacting motif (SIM). The non-covalent SUMO\u2013SIM interaction may work as a molecular signal for protein\u2013protein interaction and affect stability of proteins (Geiss-Friedlander and Melchior, 2007).\n\nIn this study, we address the role of SUMO modification of TOC159 in the context of the proplastid to chloroplast transition and investigate both covalent SUMOylation and non-covalent SUMO\u00a0interaction. The biochemical and genetic evidence showed that the TOC159 G-domain contains a SIM that interacts with the SUMO3 and that SUMOylation of TOC159 at the M-domain is the key regulatory mechanism to protect it from further depletion under low GA\u00a0conditions. The data provides new insight for TOC159 SUMO-binding and SUMOylation, demonstrating that SUMOylation positively influences protein stability with regard to the UPS. Thereby SUMOylation contributes to the proteostatic fine-tuning of TOC159 levels during TOC159-dependent chloroplast biogenesis in early plant development.\n\n## Results\n\n### SUMO3 interacts with the TOC159 G-domain and is SUMOylated at the TOC159 M-domain\n\nAn earlier study using an in vitro SUMOylation assay showed that of the\u00a0three SUMO isoforms (SUMO1, SUMO2, and SUMO3), only SUMO3 SUMOylated TOC159 (Elrouby and Coupland, 2010). TOC159 has a N-terminal A- (acidic-), a central G- (GTP-binding domain), and a C-terminal M- (membrane) domain (Bauer et al., 2000). The A-domain is known to be non-essential for TOC159 function and exquisitely sensitive to protease activity (Agne et al., 2009; Agne et al., 2010). It was excluded from our DNA constructs and only the TOC159 G- and M-domains (TOC159GM) were used. In addition to a covalent SUMOylation site, TOC159 may also have SIM. To investigate the possibility of SUMO interaction with TOC159GM, we used the GPS-SUMO prediction algorithm (http://sumosp.biocuckoo.org/online.php) to search for SIM in TOC159GM (Zhao et al., 2014). Based on the search results, there is a predicted SIM (VKVLP) in the G-domain (Figure 1A). To analyze the physical interaction between TOC159GM and SUMO isoforms, we performed yeast two-hybrid assays using TOC159G and TOC159M separately as baits. TOC159G interacted exclusively with SUMO3, but not SUMO1 and SUMO2. None of the SUMO isoforms interacted with TOC159M in the yeast two-hybrid assay (Figure 1B, Figure 1\u2014figure supplement 1). We further confirmed the TOC159GM\u2013SUMO3 interaction by co-immunoprecipitation of GFP-TOC159GM and SUMO3-MYC by in planta transient co-expression using the Nicotiana benthamiana system (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of TOC159GM indicating the predicted SUMO-interacting motif (SIM) in the G-domain. (B) Yeast two-hybrid interaction assay of TOC159 G with SUMO proteins on \u2013Leu, \u2013Trp and \u2013Leu, \u2013Trp, \u2013His medium. AD, activation domain; BD, binding domain. (C) Transient expression of SUMO3-MYC, GFP-TOC159GM, and the combination of both in Nicotiana benthamiana leaves. Total protein extracts were subjected to immunoprecipitation with anti-GFP beads. The immunoprecipitated proteins from the expression of SUMO3-MYC (lane 1) and GFP-TOC159GM (lane 2) alone and the co-expression both (lane 3) were analyzed by western blotting using anti-GFP and anti-MYC antibodies. (D) Schematic representation of TOC159GM with indication of the predicted SUMOylation site K1370 (Lysine) at the M-domain. (E) Alignment of the conserved predicted K1370 SUMOylation sites in the M-domain of multiple species: Arabidopsis thaliana (At), Pisum sativum (Ps), Solanum lycopersicum (Sl), Oryza sativa (Os), and Sorghum bicolor (Sb) by using CLUSTAL Omega (1.2.4) multiple sequence alignment tool. (F) Transient expression of GFP-TOC159GM\u00a0and GFP-TOC159GM-K/R (SUMO mutant, K1370 replaced with R) with and without SUMO3-MYC in N. benthamiana leaves. Total protein extracts were subjected to immunoprecipitation with anti-GFP beads. The immunoprecipitated proteins from the expression of GFP-TOC159GM (lane 1) and GFP-TOC159GM-K/R (lane 2) alone as well as the co-expression with SUMO3 (lanes 3 and 4) were analyzed by western blotting using anti-GFP, anti-MYC and anti-SUMO3 antibodies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** AD, activation domain; BD, binding domain; empty vector was used as a control.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Predicted SUMOylation sites at TOC159GM domain using the GPS-SUMO prediction algorithm with a high threshold (http://sumosp.biocuckoo.org/online.php). (B) Transient expression of GFP, GFP-TOC159GM, and\u00a0GFP-TOC159GM-K/R (SUMO mutant, K1370 replaced with R) with SUMO3-MYC in Nicotiana benthamiana leaves. Total protein extracts were subjected to immunoprecipitation with anti-GFP beads. The immunoprecipitated proteins from the expression of GFP (lane 1), GFP-TOC159GM (lane 2), and GFP-TOC159GM-K/R (lane 3) co-expression with SUMO3 were analyzed by western blotting using anti-GFP and anti-MYC antibodies.\n\nWe used the GPS-SUMO algorithm (http://sumosp.biocuckoo.org/online.php) to search for covalent SUMOylation sites in TOC159GM. A high scoring consensus SUMOylation site with a strongly conserved motif (TGVKLED) and containing a potentially SUMOylatable lysine (K1370) was identified within the M-domain (Figure 1D, Figure 1\u2014figure supplement 2A). The SUMOylation motif as well as K1370 of Arabidopsis are well conserved in other plants species (Figure 1E). To investigate the SUMOylation of TOC159GM, we selected the SUMO3 isoform based on the earlier in vitro study (Elrouby and Coupland, 2010). We infiltrated Nicotiana benthamiana with 35S-GFP-TOC159GM or GFP-TOC159GM-K/R (replacing lysine with a non-sumoylatable arginine residue at position 1370) each together with or without 35S-SUMO3-MYC. To analyze the infiltration experiments identical amounts of total extracts were subjected to immunoprecipitation using anti-GFP-beads followed by western blotting. An anti-GFP antibody was used to indicate total expression of GFP-TOC159GM and GFP-TOC159GM-K/R and resulted in bands of similar intensities in all four experiments. Anti-MYC and anti-SUMO3 were used to analyze conjugation of SUMO3-MYC to GFP-TOC159GM and GFP-TOC159GM-K/R. The western blotting using anti-MYC and anti-SUMO3 antibodies resulted in strong signals for GFP-TOC159GM (Figure 1F, lane 3) but only very weak ones for GFP-TOC159GM-K/R (Figure 1F, lane 4) when co-expressed with SUMO3-MYC. No signals were detected when the GFP-TOC159GM constructs were expressed in the absence of SUMO3-MYC (Figure 1F, lanes 1 and 2). Note that GFP-TOC159GM co-infiltration with SUMO3 resulted in a much higher molecular mass band when analyzed with anti-MYC or -SUMO3 than the main, strong GFP-TOC159GM band detected with anti-GFP. It therefore appears that upon co-expression with SUMO3-MYC only a small fraction of GFP-TOC159GM was present in the SUMOylated form and that it had a higher molecular mass than GFP-TOC159GM alone (Figure 1F). We further checked the SUMOylation assay by co-infiltration of GFP alone (control), GFP-TOC159GM, and GFP-TOC159GM-K/R together with SUMO3 in the N. benthamiana system. The co-immunoprecipitation gave strong signals for GFP-TOC159GM (Figure 1\u2014figure supplement 2B, lane 2) but only very weak signals for GFP-TOC159GM-K/R (Figure 1\u2014figure supplement 2B, lane 3) and no detectable signals for GFP alone (Figure 1\u2014figure supplement 2B, lane 1) when using the anti-MYC antibody. The results confirmed specificity of TOC159GM SUMOylation.\n\n### The non-SUMOylatable TOC159GM-K/R mutant complements the ppi2 mutation\n\nIt has been demonstrated that the A-domain of TOC159 is dispensable but that the M-domain of TOC159 is essential for protein import into the chloroplast (Lee et al., 2003). Furthermore, it was demonstrated that TOC159GM alone without the A-domain could complement the albino ppi2 phenotype (Agne et al., 2009). To characterize the effect of the K1370R mutation on the M-domain in vivo, we engineered transgenic lines expressing GFP-TOC159GM as well as GFP-TOC159GM-K/R under the TOC159 promoter in the ppi2 background. Two independent transgenic lines of pTOC159-GFP-TOC159GM:ppi2 and pTOC159-GFP-TOC159GM-K/R:ppi2 (called GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 plants hereafter) were isolated and the genotypes were confirmed by PCR using specific primer pairs (Figure 2A, Figure 2\u2014figure supplement 1A). Homozygous GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 transgenic lines gave green plants with almost identical chlorophyll concentrations that were very close to those of the wild type (Figure 2C). This indicated complementation of the albino ppi2 phenotype. Western blotting analysis using GFP antibodies specifically detected GFP-TOC159GM and GFP-TOC159GM-K/R proteins. The blots revealed that TOC159GM and GFP-TOC159GM-K/R proteins accumulated to very similar levels in the respective transgenic lines. The blots were also probed with antibodies against TOC75 and TOC33, showing no significant differences between the two transgenic lines (Figure 2B, Figure 2\u2014figure supplement 1B,C). To localize the GFP-TOC159GM and GFP-TOC159GM-K/R in vivo, 7\u00a0days\u00a0old seedlings were analyzed by confocal fluorescence microscopy. Both GFP-TOC159GM and GFP-TOC159GM-K/R gave clear fluorescent signals at the chloroplast periphery that are consistent with outer envelope membrane localization (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig2-v2.jpg)\n\n**Figure 2.:** (A) Phenotypes of 7 days old seedling of ppi2, WT (Ws), GFP-TOC159GM:ppi2, and GFP-TOC159GM-K/R:ppi2. (B) Western blot analysis of total protein extracts from 7 days old seedlings of WT (Ws), GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2. The blot was probed with anti-GFP, -TOC75, and TOC33 antibodies. Actin was used as a loading control. (C) Chlorophyll levels of wild type, GFP-TOC159GM:ppi2, and GFP-TOC159GM-K/R:ppi2 from 7 days old seedlings. Error bars indicate\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a04). (D) Confocal microscopy analysis of 7 days old GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 seedlings. Green fluorescence (GFP, left-hand panel), red fluorescence (chlorophyll, middle pane), and the overlay of the two (right-hand panel) are shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Genotyping of two independent plant lines (3.1 and 3.12) expressing GFP-TOC159GM in the ppi2 background (GFP-TOC159GM:ppi2) and two independent plant lines (4.2 and 4.8) expressing GFP-TOC159GM-K/R in the ppi2 background (GFP-TOC159GM-K/R:ppi2). WT was used as the control for primers. The ppi2 and TOC159 primer sets were used. (B) Immunoblotting of total protein extracts of seedlings from two independent plant lines (3.1 and 3.12) expressing GFP-TOC159GM in the ppi2 background (GFP-TOC159GM:ppi2). WT was used as the control for antibody specificity. The following antibodies were used: GFP, TOC75, and TOC33 proteins. Actin was used as a loading control. (C) Immunoblotting of total protein extracts of seedlings from two independent plant lines (4.2 and 4.8) expressing GFP-TOC159GM-K/R in ppi2 background (GFP-TOC159GM-K/R:ppi2). WT was used as the control for antibody specificity. The following antibodies were used: GFP, TOC75, and TOC33 proteins. Actin was used as a loading control.\n\n### TOC159GM-K/R accumulation is diminished when compared to TOC159GM under low GA\u00a0conditions\n\nAddition of paclobutrazol (PAC) to the Murashige\u2013Skoog\u00a0(MS) growth medium can be used to inhibit GA biosynthesis and results in low GA conditions (Piskurewicz et al., 2008). Under low GA during early germination, the DELLA (RGL2) destabilizes TOC159 via the ubiquitin\u2013proteasome system (Shanmugabalaji et al., 2018). To explore a possible role of SUMOylation of K1370 on protein stability, GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 were allowed to germinate in the presence or absence of PAC. As reported earlier, the GFP-TOC159GM protein level was severely reduced in GFP-TOC159GM:ppi2 seeds under low GA. In comparison, the level of GFP-TOC159-K/R in GFP-TOC159GM-K/R:ppi2 seeds was even more diminished. Moreover, TOC75 and TOC33 levels were also lower in mutant TOC159GM-K/R:ppi2 than in wild-type GFP-TOC159GM:ppi2 under low GA, whereas their levels were the same in the untreated lines (Figure 3A,B, Figure 3\u2014figure supplements 1 and 2). PAC-treated seeds, low in GA, accumulated very high levels of the RGL2 protein (Piskurewicz et al., 2008). We also compared RGL2 protein levels between TOC159GM:ppi2 and TOC159GM-K/R:ppi2 in the presence of PAC. The results revealed that there was no difference in RGL2 accumulation between the two lines (Figure 3C, Figure 3\u2014figure supplement 3A,B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-v2.jpg)\n\n**Figure 3.:** (A) Immunoblotting of total protein extracts from 3 days old seedling of GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 grown in the presence or absence of paclobutrazol\u00a0(PAC) (5 \u00b5M). WT (Ws) was used as the control for antibody specificity. The blot was probed with anti-GFP, -TOC75, and -TOC33 antibodies. Anti-actin was used for a loading control. (B) Specific bands corresponding to GFP, TOC75, TOC33, and actin were quantified from three independent experiments (A). The quantified bands were normalized to GFP-TOC159GM in GFP-TOC159GM:ppi2 plants grown in the absence of PAC. Error bars indicate\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). two-tailed t test; \u2217p<0.05; \u2217\u2217\u2217p<0.005. (C) Immunoblotting of total protein extracts from 3 days old GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 seedlings grown in the presence or absence of PAC (5 \u00b5M). The blot was probed with anti-GFP and -RGL2 antibodies. Anti-actin was used for a loading control. (D) Total protein extracts of 3\u00a0days old GFP-TOC159GM:ppi2 or GFP-TOC159GM-K/R:ppi2 grown seedling grown on PAC and subsequently treated with or without MG132 were analyzed by immunoblotting using anti-GFP antibodies and anti-UGPase for a loading control. (E) The specific bands corresponding to GFP and UGPase were quantified from three independent experiments (C). The quantified bands were normalized to GFP-TOC159GM in GFP-TOC159GM:ppi2 without MG132. Error bars indicate\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). two-tailed t test; \u2217\u2217p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Total protein was extracted from 3\u00a0days old seedlings grown in the presence or absence of PAC (5 \u00b5M). WT was used as the control for antibody specificity. The following antibodies were used GFP, TOC75, and TOC33 proteins. Actin was used as a loading control.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** WT was used as the control for antibody specificity. The following antibodies were used: GFP, TOC75, and TOC33 proteins. Actin was used as a loading control. The specific bands corresponding to GFP, TOC75, TOC33, and actin were quantified. The quantified bands were normalized to GFP-TOC159GM in GFP-TOC159GM:ppi2 grown in the absence of PAC. These data were used in Figure 3B.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Immunoblotting of total protein extracts from two independent biological replicates of 3\u00a0days old GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 seedlings grown in the presence or absence of PAC (5 \u00b5M). The blot was probed with anti-GFP and -RGL2 antibodies. Anti-actin was used as a loading control.\u00a0(B) Specific bands corresponding to GFP, RGL2, and actin were quantified from three independent experiments (A) and Figure 3C.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** UGPase was used as a loading control. The specific bands corresponding to GFP and UGPase were quantified. The quantified bands were normalized to GFP-TOC159GM in GFP-TOC159GM:ppi2 without MG132. These data were used for Figure 3E.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) Immunoblotting of total protein extracts from 3\u00a0days old seedling of GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 grown in the presence or absence of PAC (2 \u00b5M). The blot was probed with anti-GFP, -TOC75, -TOC33, -PSBA, and -PSBO1 antibodies. Anti-actin was used as a loading control. (B) The specific bands corresponding to GFP, TOC75, TOC33, PSBA, PSBO1, RBCL, RBCS, PETC, PSAD, ATPC, LHCB2, and actin were quantified from three independent experiments (A). The quantified bands were normalized to GFP-TOC159GM in GFP-TOC159GM:ppi2 grown in the absence of PAC. Error bars indicate\u00a0\u00b1\u00a0SEM (n\u00a0=\u00a03). two-tailed t test; \u2217p<0.05; \u2217\u2217p<0.01.\n\n### SUMOylation partially stabilizes the TOC159 under low GA\u00a0conditions\n\nTo determine whether the diminished stability of GFP-TOC159GM-K/R under low GA in the presence of PAC is also due to UPS-mediated degradation, GFP-TOC159GM-K/R:ppi2 and GFP-TOC159GM:ppi2 seeds were germinated in the presence of PAC and subjected to treatment with or without the proteasome inhibitor MG132. Western blot analysis demonstrated that both GFP-TOC159GM-K/R and GFP-TOC159GM were rescued by MG132 and accumulated to the same level (Figure 3E,F, Figure 3\u2014figure supplement 4). The results suggest that SUMOylation partially protects GFP-TOC159GM against UPS-mediated degradation under low GA when compared to GFP-TOC159GM-K/R.\n\n### Accumulation of photosynthesis-associated proteins trended lower in TOC159GM-K/R:ppi2 than TOC159GM:ppi2\n\nThe results so far demonstrated that non-SUMOylatable TOC159GM-K/R is significantly more susceptible to UPS-mediated degradation than wild-type TOC159GM under low GA. To address whether this has an effect on the accumulation of photosynthesis-associated proteins (the presumed TOC159 cargo proteins), western blotting was carried out comparing GFP-TOC159GM-K/R:ppi2 to GFP-TOC159GM:ppi2. It has been shown that the expression of most photosynthesis-associated genes did not change significantly in the presence of moderate and low PAC concentrations (5 and 1 \u03bcM) (De Giorgi et al., 2015). To eliminate the possibility of gene expression effects on protein accumulation, GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 seedlings were grown in the presence or absence of an intermediate 2 \u03bcM PAC concentration. The western blot analysis revealed that the accumulation of photosynthesis-associated proteins (PSBO1, PSBA, RBCL, RBCS, PETC, PSAD, ATPC, and LHCB2) systematically trended lower but not to statistically significant extent in TOC159GM-K/R:ppi2 when compared to TOC159GM:ppi2 (Figure 3\u2014figure supplement 5).\n\n## Discussion\n\nIt has been demonstrated previously that TOC159 physically interacts with the SUMO E2 enzyme in a yeast two-hybrid screen and that the SUMO3 isoform covalently SUMOylated TOC159 in an in vitro assay (Elrouby and Coupland, 2010). Apart from a covalent SUMOylation motif, the GPS-SUMO algorithm identified a conserved non-covalent SIM\u00a0(\u2018VKVLP\u2019) in the G-domain of TOC159. We confirmed this prediction using a yeast two-hybrid assay and co-immunoprecipitation experiment. It also revealed that the G-domain specifically interacted with the SUMO3 isoform and not with SUMO1 and 2. (Figure 1B). It has been shown in Arabidopsis that the GA receptor GID1 interacted with SUMO1 through a SIM that prevented its interaction with a DELLA protein (Conti et al., 2014). It is tempting to hypothesize that non-covalent binding of TOC159(SIM) to SUMO3 may modify interactions with SUMOylated complex partners such as TOC33/TOC75 or the DELLA (RGL2) under low GA conditions as these proteins also have predicted SUMOylation sites (http://sumosp.biocuckoo.org/online.php).\n\nTOC159 has highly conserved SUMOylation motif (\u2018TGVKLED\u2019) with a lysine at position 1370 (K1370) within the M-domain of TOC159. We established SUMOylation at K1370 using an in planta SUMOylation assay in N. benthamiana (Figure 1F,\u00a0Figure 1\u2014figure supplement 2B). Expression of non-SUMOylatable GFP-TOC159GM-K/R (containing the K1370R substitution) restored a wild-type green phenotype in the GFP-TOC159GM-K/R:ppi2 Arabidopsis plants. Note that ppi2 mutant plants normally have an albino phenotype. Based on the presence of wild-type levels of TOC75 and TOC33, it appeared that the TOC complex assembled normally in the GFP-TOC159GM-K/R:ppi2 plants (Figure 2A,B). Confocal laser microscopy localized GFP-TOC159GM-K/R at the envelope of the chloroplast (Figure 2D). Taken together, these results indicate that outer membrane insertion, TOC complex assembly, as well as chloroplast biogenesis take place normally under standard growth conditions despite the K1370R mutation and disabled SUMOylation.\n\nIn Arabidopsis, SUMOylation is triggered by environmental stimuli including biotic and abiotic stress. Hormone signaling (GA, auxin, brassinosteroids, and\u00a0ABA) and development (root, seed, embryo, and meristem) are the main biological processes associated with SUMOylation in plants (Conti et al., 2014; Miura et al., 2009; Ishida et al., 2009; Augustine et al., 2016; Orosa-Puente et al., 2018; Kwak et al., 2019; Srivastava et al., 2020). While SUMOylation is independent of the ubiquitination pathway, there is the complex crosstalk between these two pathways. SUMOylation can promote the UPS-dependent degradation through SUMO-targeted Ub ligases (Perry et al., 2008). Contrary to this, SUMOylation may also protect from UPS-dependent degradation by blocking the ubiquitination of lysine residues (Creton and Jentsch, 2010; Jentsch and Psakhye, 2013; Ramachandran et al., 2015; Rott et al., 2017). Here, we explored the connection between TOC159 SUMOylation and the UPS-mediated TOC159 degradation under low GA during early developmental stages in seed germination.\n\nWe previously demonstrated that low GA concentrations brought about by PAC\u00a0promote the DELLA (RGL2)-dependent TOC159 degradation via the UPS (Shanmugabalaji et al., 2018). Under low GA, GFP-TOC159GM-K/R accumulated to significantly (<50%) lower levels than wild-type GFP-TOC159GM in the respective overexpression lines. In addition, the TOC159-interacting TOC-complex core proteins TOC75 and \u221233 also accumulated to considerably lower levels in the GFP-TOC159GM-K/R:ppi2 line under low GA presumably to maintain complex stoichiometry (Figure 3A,B). Typically, a small fraction of the SUMO target protein pool undergoes SUMOylation under a specific cellular condition (Johnson, 2004). The reduced levels under low GA of GFP-TOC159GM-K/R when compared to the wild-type protein were attributed to increased UPS-mediated protein degradation as both proteins recovered to the same protein levels in the presence of the proteasome inhibitor MG132 (Figure 3D,E).\n\nWe conclude that SUMOylation partially stabilizes TOC159 against UPS-dependent degradation under specific conditions such as low GA during early development. The photosynthesis-associated proteins are considered the preferred transport cargoes of TOC159 because they fail to accumulate in the ppi2 mutant lacking TOC159. They tended to accumulate to a lesser degree in GFP-TOC159GM-K/R:ppi2 plants under low GA in the presence of PAC, but not in statistically significant fashion. The explanation may be that the levels of TOC159 are already low in the GFP-TOC159GM-K/R:ppi2 plants in the absence of PAC and allow only for relatively small changes in the accumulation of photosynthesis-associated proteins in the presence of PAC. Nevertheless, the results suggest that SUMOylation at the M-domain of TOC159 serves to fine tune preprotein import under low GA.\n\nBased on the results, we propose a hypothetical model for the role of SUMOylation during early developmental stages, when environmental conditions are unfavorable and GA concentrations are low. As previously demonstrated, the chloroplast import receptor TOC159 is ubiquitylated prior to outer membrane insertion by an unknown E3-ligase other than SP1 and degraded via the UPS. In addition, its G-domain interacts with SUMO3, the physiological consequences of which remain unknown but may regulate interaction with DELLA system. The M-domain may be SUMOylated by SUMO3, protecting to some extent against UPS-dependent degradation. When the environmental conditions become more favorable, GA levels increase, and the GA receptor-DELLA complex is degraded by the UPS and TOC159 liberated for outer membrane insertion. The non-ubiquitinated TOC159 is assembled into the TOC complex thus allowing proplastids to differentiate into chloroplasts (Figure 4). In the CHLORAD pathway, cytosolic Cdc48 extracts ubiquitinated TOC proteins from the outer membrane of the chloroplast (Ling et al., 2019; Shanmugabalaji and Kessler, 2019). The intriguing connection between the Cdc48 and SUMO pathways in chromatin dynamics (Franz et al., 2016)\u00a0suggests that the SUMO pathway might also act on the CHLORAD pathway at specific developmental stage, but we currently do not offer evidence for such a mechanism. Our data specifically implicate SUMOylation and probably SUMO interaction in the control of proplastid to chloroplast transition by regulation of TOC159 levels in early plant development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60968/elife-60968-fig4-v2.jpg)\n\n**Figure 4.:** Environmental conditions influence the concentrations of gibberellic acid\u00a0(GA) that accumulate upon seed imbibition. When active GA levels are reduced by stress (-GA; left-hand panel), DELLA (RGL2) accumulates and sequesters TOC159, which is then degraded via the UPS. In addition, TOC159 interacts and is also covalently SUMOylated by SUMO3. Covalent SUMOylation protects TOC159 against UPS-mediated degradation and supports the accumulation of photosynthesis-associated proteins in the chloroplast. Any unimported preproteins are degraded in the cytosol via the UPS. When GA concentrations increase (+GA, right-hand panel), the GA receptor complex binds to DELLA, which is degraded by the UPS. TOC159 is then free to assemble into the TOC complex. Protein import is thus enabled, allowing proplastids to differentiate into chloroplasts.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>pTOC159-GFP-TOC159GM:ppi2</td>\n      <td>Shanmugabalaji et al., 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Arabidopsis thaliana)</td>\n      <td>pTOC159-GFP-TOC159GM-K/R</td>\n      <td>This paper</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGBKT7-TOC159G</td>\n      <td>Shanmugabalaji et al., 2018</td>\n      <td></td>\n      <td>Yeast two-hybrid assay</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGBKT7-TOC159M</td>\n      <td>Shanmugabalaji et al., 2018</td>\n      <td></td>\n      <td>Yeast two-hybrid assay</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGADT7-SUMO1</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Yeast two-hybrid assay</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGADT7-SUMO2</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Yeast two-hybrid assay</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGADT7-SUMO3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Yeast two-hybrid assay</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>35S-GFP-TOC159GM</td>\n      <td>Shanmugabalaji et al., 2018</td>\n      <td></td>\n      <td>In planta CoIP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>35S-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In planta CoIP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>35S-SUMO3-MYC</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In planta CoIP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>35S-GFP-TOC159GM-K/R</td>\n      <td>This paper</td>\n      <td></td>\n      <td>In planta CoIP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TOC75, rabbit polyclonal</td>\n      <td>Hiltbrunner et al., 2001</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-TOC33, rabbit polyclonal</td>\n      <td>Rahim et al., 2009</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RGL2, rabbit polyclonal</td>\n      <td>Piskurewicz et al., 2008</td>\n      <td></td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-SUMO3, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS08349</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-UGPase, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS05086 RRID:AB_1031827</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PSBA, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS05084 RRID:AB_2172617</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PSBO1, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS142824 RRID:AB_1031788</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RBCL, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS03037 RRID:AB_2175406</td>\n      <td>1:15,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-RBCS, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS07259 RRID:AB_1031806</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PETC, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS08330 RRID:AB_2162102</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-PSAD, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS09461 RRID:AB_1832088</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ATPC, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS08312 RRID:AB_2290280</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-LHCB2, rabbit polyclonal</td>\n      <td>Agrisera</td>\n      <td>Cat# AS01003 RRID:AB_1832080</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-actin, mouse monoclonal antibody</td>\n      <td>Sigma</td>\n      <td>Cat# A0480 RRID:AB_476670</td>\n      <td>1:2000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP, mouse monoclonal antibody</td>\n      <td>Takara</td>\n      <td>Cat#632380 RRID:AB_10013427</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MYC, mouse monoclonal antibody</td>\n      <td>Cell Signaling</td>\n      <td>Cat#2276 RRID:AB_331783</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG conjugated with horseradish peroxidase</td>\n      <td>Millipore</td>\n      <td>Cat# AP132P RRID:AB_90264</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG conjugated with horseradish peroxidase</td>\n      <td>Sigma</td>\n      <td>Cat# A5278 RRID:AB_258232</td>\n      <td>1:10,000</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH5\u03b1</td>\n      <td>Invitrogen</td>\n      <td>Cat# 18265017</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Agrobacterium tumefaciens)</td>\n      <td>C58</td>\n      <td>Community resource</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MG132</td>\n      <td>AbMole</td>\n      <td>Cat# M1902</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Paclobutrazol</td>\n      <td>Sigma</td>\n      <td>Cat# 43900</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>\u00b5MACS GFP-tagged beads</td>\n      <td>Miltenyi Biotech</td>\n      <td>Cat# 130091125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant TL</td>\n      <td>GE Healthcare</td>\n      <td>RRID:SCR_014246</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>Graphpad</td>\n      <td>RRID:SCR_015807</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Plant materials and growth conditions\n\nThe A. thaliana Wassilewskija (Ws) ecotype was used as wild types. The ppi2 mutant and pTOC159-GFP-TOC159GM:ppi2 line used in this study were in the Wassilewskija (Ws) ecotype as\u00a0previously described (Bauer et al., 2000; Shanmugabalaji et al., 2018). Seedlings were grown on MS medium with long-day conditions (16 hr light, 8 hr dark, 120 \u00b5mol \u00d7 m\u22122\u00a0\u00d7 s\u22121, 21\u00b0C). Plants were grown on soil either\u00a0under short-day conditions (16 hr dark, 8 hr light, 120 \u00b5mol \u00d7 m\u22122\u00a0\u00d7 s\u22121, 21\u00b0C) for vegetative growth\u00a0or under long-day conditions (16 hr light, 8 hr dark, 120 \u00b5mol \u00d7 m\u22122\u00a0\u00d7 s\u22121, 21\u00b0C) for flower development and seed production.\n\n### Seedling treatment\n\nSurface-sterilized seeds were placed on MS medium supplemented with 2 \u03bcM or 5 \u03bcM PAC. The plates were incubated under long-day conditions for 3 days. Proteasome inhibitor experiments were performed as described earlier (Shanmugabalaji et al., 2018).\n\n### Plant transformation and transgenic lines\n\nThe K1370R point mutation was introduced into the binary construct pTOC159-GFP-TOC159GM using a site-directed mutagenesis kit (Agilent-QuikChangeII) with the primers TOC159S3F and TOC159S3R and resulted in pTOC159-GFP-TOC159GM-K/R. The pTOC159-GFP-TOC159GM-K/R construct was introduced into Agrobacterium tumefaciens (C58 strain) and stably transformed into heterozygous ppi2 plants using the floral dip method (Clough and Bent, 1998). Transformed plants were selected on phosphinothricin-containing medium, and lines homozygous for the transgene as well as the ppi2 mutation were isolated and named pTOC159:GFP-TOC159GM-K/R:ppi2 (referred to as GFP-TOC159GM-K/R:ppi2 plants).\n\n### Yeast two-hybrid assays\n\nThe pGBKT7-TOC159G (BD fusion) and pGBKT7-TOC159M (BD fusion) vector were introduced into the yeast strain Y2H GOLD as previously described (Shanmugabalaji et al., 2018). The full-length cDNA sequences of SUMO1, SUMO2, and SUMO3 were amplified using primers (S1F, S1R, S2F, S2R, S3F, S3R), digested with NdeI/EcoRI, and ligated into the corresponding sites of the pGADT7 vector. The empty bait vector (BD) was used as a negative control. Co-transformants were selected on SD \u2013Leu \u2013Trp and SD \u2013Leu \u2013Trp \u2013His plates.\n\n### Chlorophyll measurements\n\nChlorophyll levels were measured from four biological replicates as previously described (Agne et al., 2009).\n\n### Confocal laser scanning microscopy\n\nOne week old seedlings of the GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 lines were directly observed under a TCS SP5 II confocal laser scanning microscope (Leica Microsystems, Heerbrugg, Switzerland). Samples were excited by a 488 nm argon laser and detected with a 524\u2013546 nm band-pass filter for GFP and chlorophyll autofluorescence seen in the 650\u2013720 nm range with \u00d760. The digital images were acquired using LAS AF digital system (version: 2.0.0 build 1934, Leica Microsystems, Wetzlar, Germany). The LCS lite software (Leica) was used for the\u00a0analysis of\u00a0the picture.\n\n### Protein extraction and immunoblotting\n\nIdentical amounts of samples were collected, and proteins were\u00a0extracted using AP extraction buffer (100 mM Tris pH 8, 2% b-mercaptoethanol, 4% sodium dodecyl sulfate, 20% glycerol) followed by acetone precipitation (Piskurewicz and Lopez-Molina, 2011). The sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis\u00a0and immunoblotting were performed according to the\u00a0standard protocols. To probe the blots, primary antibodies recognizing TOC75 (Hiltbrunner et al., 2001), TOC33 (Rahim et al., 2009), GFP (Takara), SUMO3 (Agrisera), MYC (Cell signling), UGPase (Agrisera), actin (Sigma), and RGL2 (Piskurewicz et al., 2008) were used. As markers for photosynthesis-associated proteins, antibodies recognizing PSBA,\u00a0PSBO1, RBCL, RBCS, PETC, PSAD, ATPC, and LHCB2 were purchased from Agrisera. Secondary antibodies were anti-rabbit IgG conjugated with horseradish peroxidase (Millipore) or goat anti-mouse IgG conjugated with horseradish peroxidase (Sigma). Chemiluminescence was detected using ECL Plus Western Blotting Detection Reagents (Pierce) and developed using a GE Amersham Imager 600. Band intensities were quantified using ImageQuant TL (GE Healthcare) software.\n\n### In planta co-immunoprecipitation\u00a0(CoIP) from transient expression system in N. benthamiana\n\nFull-length SUMO3 was PCR amplified from cDNA using the primers SUMO3\u2013F(GATE) and SUMO3\u2013R2(GATE) and inserted into the pENTR221 vector by BP clonase (Invitrogen). It was recombined into the pEarleyGate 203 binary vector with LR clonase to obtain a 35S-SUMO3-MYC fusion construct. The binary vector 35S-GFP-TOC159GM used in this study has been described previously (Shanmugabalaji et al., 2018). The point mutation was introduced in the binary construct 35S-GFP-TOC159GM by using a site-directed mutagenesis kit (Agilent-QuikChangeII) with the primers TOC159S3F and TOC159S3R, as results we obtained 35S-GFP-TOC159GM-K/R. The 35S-GFP, 35S-SUMO3-MYC, 35S-GFP-TOC159GM, and 35S-GFP-TOC159GM-K/R were introduced into A. tumefaciens (C58 strain). And co-infiltrated into 3 week\u00a0old N. benthamiana. Immunoprecipitation to isolate the protein complexes from total protein extracts using GFP-tagged microbeads (Miltenyi Biotec) has been described previously (Shanmugabalaji et al., 2018). Anti-GFP antibody was used to detect GFP-TOC159, GFP-TOC159GM-K/R. Anti-SUMO3 and anti-MYC antibodies were used to identify the SUMOylated TOC159GM.\n\n### Quantification and statistical analysis\n\nFor protein quantification on immunoblots, ImageQuant TL (GE Healthcare) software was used to measure band intensities, and the data are\u00a0shown as mean\u00a0\u00b1\u00a0SEM. The statistical analysis (two-tailed t test) was performed in GraphPad Prism 8.4.3 (http://www.graphpad.com), with p values higher than 0.05 being considered non-significant (n.s.), while p values lower than 0.05 being considered significant for the analyzed data and indicated as\u00a0follows: *p<0.05; **p<0.01; ***p<0.005.\n",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "7aee2943-31b8-4fce-b9dd-ef41e79626b4",
+      "submission_id": "b3d327dd-07a7-48c5-95c6-56d8747ec284",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Heather E McFarlane, University of Toronto Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60968.sa1](https://doi.org/10.7554/eLife.60968.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors provide evidence that chloroplast protein import machinery can be SUMOylated and propose a model in which interplay between SUMOylation and ubiquitination of a chloroplast protein import receptor could influence proplastid development into chloroplasts in germinating seeds.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"SUMOylation contributes to proteostasis of the chloroplast protein import receptor TOC159 during early development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Christian Hardtke as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Danny Schnell (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nBased on previous results that Toc159 can be modified by SUMOylation by SUMO3, the authors confirm interactions between a truncated version of TOC159 and SUMO3 using Y2H and co-IPs. They find that this interaction is substantially decreased with a K1370->R mutant that abolishes a high-confidence SUMOylation site, but that this K1370R mutant can complement the ppi2 (toc159) mutant as efficiently as the wild type version of TOC159. However, under conditions that normally deplete the TOC complex (paclobutrazol-induced low GA conditions during germination), they find that the K1370R mutant is more sensitive to degradation, but ultimately this had no significant effect on chloroplast protein import. The authors propose a model in which under low GA conditions, TOC159 is either SUMOylated and stable or ubiquitinated and degraded, suggesting an important balance between these post-translational modifications. All three reviewers agree that while the findings are interesting, additional experimentation, particularly controls, are required to support the model that the authors present.\n\nEssential revisions:\n\n1) Although compelling, the authors' hypothesis would be strengthened if they could demonstrate the impact of SUMOylation on the accumulation of photosynthetic proteins or chloroplast biogenesis. Can the authors test additional photosynthetic proteins to see if they can detect a defect in accumulation? Did the authors consider including stress conditions to test if SUMOylation impacts chloroplast biogenesis or protein accumulation under non-ideal conditions? Alternatively, does the TOC159GM-K/R impact de-etiolation?\n\n2) The model speculates that SUMOylated TOC159 is not incorporated into the chloroplast membrane or into a functional TOC complex and that \"deSUMOylation of TOC159 by a SUMO protease (ULP) assists assembly into the TOC complex\". What is the evidence that SUMO-Toc159 is cytoplasmic and not at the chloroplast envelope? Figure 2D shows all Toc159 at the chloroplast envelope. Is it possible that SUMOylation works downstream of DELLA to stabilize TOC complexes that are assembled at the membrane? Please present these data or revise the model and associated text accordingly.\n\n3) It is a stretch to call the TOC159GM-K/R mutant \"non-SUMOylatable\", since there are there are clear bands on the K/R lanes of Figure 1F. There are several other high confidence SUMOylation sites in TOC159. What was the rationale for selecting only one SUMOylation site on Toc159? Please present a blot with TOC159GM-K/R and SUMO3-Myc alone in Figure 1F so that readers can evaluate the anti-SUMO/anti-MYC signal in this case and revise the text accordingly unless all anti-SUMO signal is abolished in this experiment.\n\n4) Controls seem to be missing from the co-IPs in Figure 1. Please present a GFP/MYC-only (or even better, SUMO1-MYC) as a negative control.\n\n5) The authors should switch the vectors of the yeast two-hybrid constructs (Figure 1) to demonstrate that the interaction is not a vector artifact. This is a standard control for this assay.\n\n6) The authors should quantify the protein bands in Figure 3C. Although they conclude the RGL2 does not change, the levels appear to be lower in the K/R mutant under normal and PAC treatment. Although this is beyond the scope of the current study, it would be interesting to determine if the K/R plants exhibit a germination defect if RGL2 levels are lower.\n\n7) In Figure 3A to show clear protein stability effects for K/R and WT TOC159 in the during PAC treatment the authors would really need to use cycloheximide treatment to verify the stability of the K/R form to substantiate their claims.\n\n8) What are the possible effects of using a truncated form of TOC159? This could also explain why they see a knock-on reduction in TOC75 and TOC33. The A-domain is protease sensitive, but could this sensitivity be underpinned by post-translational modifications? Please provide additional experimental evidence or revise the discussion of these results.\n\n9) The \"phylogenetic analysis\" to document that K1370 is conserved need to be rigorously conducted and methods need to be reported to give context to the \"alignment\" presented in Figure 1E.\n",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44e4e466-334c-441e-a575-0091ecc9a321",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C1",
+      "claim": "Chloroplast biogenesis describes the transition of non-photosynthetic proplastids to photosynthetically active chloroplasts in the cells of germinating seeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Chloroplast biogenesis describes the transition of non-photosynthetic proplastids to photosynthetically active chloroplasts in the cells of germinating seeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement that draws from established scientific knowledge about chloroplast development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "3ff7f72c-e699-4f7b-8599-9d620fdc620a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C2",
+      "claim": "Chloroplast biogenesis requires the import of thousands of nuclear-encoded preproteins by essential import receptor TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "Chloroplast biogenesis requires the import of thousands of nuclear-encoded preproteins by essential import receptor TOC159.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about chloroplast protein import and the role of TOC159.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "f74986bc-aacd-4910-96a6-faa6ddf48018",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C3",
+      "claim": "The small ubiquitin-related modifier (SUMO) pathway crosstalks with the ubiquitin\u2013proteasome pathway to affect TOC159 stability during early plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the small ubiquitin-related modifier (SUMO) pathway crosstalks with the ubiquitin\u2013proteasome pathway to affect TOC159 stability during early plant development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "13908d91-f8b9-43f4-9949-5e4cead7b3a7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C4",
+      "claim": "TOC159 contains a SUMO3-interacting motif (SIM) in the GTPase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a SUMO3-interacting motif (SIM) in the TOC159 GTPase domain and a SUMO3 covalent SUMOylation site in the membrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including yeast two-hybrid assays and co-immunoprecipitation experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "66242119-84d2-4bcc-989a-cd6c61d94dcf",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C5",
+      "claim": "TOC159 contains a SUMO3 covalent SUMOylation site in the membrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a SUMO3-interacting motif (SIM) in the TOC159 GTPase domain and a SUMO3 covalent SUMOylation site in the membrane domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including in planta SUMOylation assays shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "386f8a25-4d52-4e09-bc28-7206a240bde6",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C6",
+      "claim": "A single K to R substitution (K1370R) in the M-domain disables SUMOylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A single K to R substitution (K1370R) in the M-domain disables SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F demonstrating reduced SUMOylation in the K1370R mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "e5010b0a-c2f6-4afa-b4ab-f2c7b633c405",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C7",
+      "claim": "TOC159K1370R was destabilized under UPS-inducing stress conditions compared to wild-type TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to wild-type TOC159, TOC159K1370R was destabilized under UPS-inducing stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B demonstrating reduced protein levels of TOC159K1370R under low GA conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "712c2da5-9abf-48c3-a445-e06489302531",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C8",
+      "claim": "TOC159K1370R recovered to same protein level as wild-type TOC159 in the presence of a proteasome inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TOC159K1370R recovered to same protein level as wild-type TOC159 in the presence of a proteasome inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D,E using the proteasome inhibitor MG132.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "fb4afb90-604e-4adb-be0a-274cb63f1059",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C9",
+      "claim": "SUMOylation partially stabilizes TOC159 against UPS-dependent degradation under stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SUMOylation partially stabilizes TOC159 against UPS-dependent degradation under stress conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing differential stability of wild-type versus K1370R mutant TOC159.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "0404b71a-dd6a-48c4-bf70-d94577eebb7c",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C10",
+      "claim": "The majority of chloroplast proteins are encoded by the nuclear genome and synthesized as preproteins in cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Although chloroplasts contain their own genome, the majority of chloroplast proteins are encoded by the nuclear genome and synthesized as preproteins in cytosol, and these preproteins are imported into the chloroplast through TOC-TIC complexes (Translocon at the Outer or Inner membrane of the Chloroplast) (Jarvis and L\u00f3pez-Juez, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jarvis and L\u00f3pez-Juez, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "092977a2-76b2-401b-9dad-ddadf552f0ab",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C11",
+      "claim": "Preproteins are imported into the chloroplast through TOC-TIC complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although chloroplasts contain their own genome, the majority of chloroplast proteins are encoded by the nuclear genome and synthesized as preproteins in cytosol, and these preproteins are imported into the chloroplast through TOC-TIC complexes (Translocon at the Outer or Inner membrane of the Chloroplast) (Jarvis and L\u00f3pez-Juez, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jarvis and L\u00f3pez-Juez, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "bd71fa6c-1f68-4429-977c-a79387534e58",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C12",
+      "claim": "The core of the TOC complex contains two related GTP-dependent preprotein receptor GTPases, TOC159 and TOC33.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the TOC complex contains two related GTP-dependent preprotein receptor GTPases, TOC159 and TOC33, which interact with a \u03b2-barrel membrane protein, TOC75, that forms a protein-conducting channel, and is regulated by specific interactions with nuclear-encoded preproteins (Schnell et al., 1994; Kessler et al., 1994; Jarvis et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Schnell et al., 1994; Kessler et al., 1994; Jarvis et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "d6a3a83d-e7b5-49f7-982d-d3e8cefd0082",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C13",
+      "claim": "TOC159 and TOC33 interact with a \u03b2-barrel membrane protein, TOC75, that forms a protein-conducting channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The core of the TOC complex contains two related GTP-dependent preprotein receptor GTPases, TOC159 and TOC33, which interact with a \u03b2-barrel membrane protein, TOC75, that forms a protein-conducting channel, and is regulated by specific interactions with nuclear-encoded preproteins (Schnell et al., 1994; Kessler et al., 1994; Jarvis et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Schnell et al., 1994; Kessler et al., 1994; Jarvis et al., 1998.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "121e21f5-08f7-41cf-b013-225a01d1f050",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C14",
+      "claim": "TOC159 is a major point of entry for highly abundant photosynthesis-associated preproteins arriving at the translocon complex.",
+      "claim_type": "EXPLICIT",
+      "source": "TOC159 is a major point of entry for highly abundant photosynthesis-associated preproteins arriving at the translocon complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about TOC159 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "d1af2802-011a-4c0c-8728-843616e38c40",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C15",
+      "claim": "TOC159 is regarded as the major chloroplast protein import receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore regarded as the major chloroplast protein import receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on TOC159's role in importing photosynthesis-associated preproteins.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "bf8c4bf5-f853-43c0-816c-bb36ebfbb5a9",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C16",
+      "claim": "TOC159 has a three-domain structure: a highly acidic N-terminal domain (A-domain), a central GTP-binding domain (G-domain), and a C-terminal membrane anchor domain (M-domain).",
+      "claim_type": "EXPLICIT",
+      "source": "TOC159 has a three-domain structure: a highly acidic N-terminal domain (A-domain), a central GTP-binding domain (G-domain), and a C-terminal membrane anchor domain (M-domain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TOC159 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "33bc620b-b53a-4d1c-bc9a-611b205edfe7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C17",
+      "claim": "Chloroplast biogenesis depends on the essential import receptor TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "Chloroplast biogenesis, the transition of a non-photosynthetic proplastid to a photosynthetically active chloroplast, depends on the essential import receptor TOC159 and its mutation results in non-photosynthetic albino plants (Bauer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Bauer et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "ab697327-36a5-421a-b55b-d4a3e71e5f9b",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C18",
+      "claim": "Mutation of TOC159 results in non-photosynthetic albino plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Chloroplast biogenesis, the transition of a non-photosynthetic proplastid to a photosynthetically active chloroplast, depends on the essential import receptor TOC159 and its mutation results in non-photosynthetic albino plants (Bauer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Bauer et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "3a3382b7-22b8-440f-be80-6b5c5228dd96",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C19",
+      "claim": "During the etioplast to chloroplast transition, the TOC components are ubiquitinated by a novel chloroplast RING-type E3 ubiquitin ligase SP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that during the etioplast to chloroplast transition, the TOC components are ubiquitinated by a novel chloroplast RING-type E3 ubiquitin ligase SP1 (suppressor of ppi1 locus 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on recent studies and is supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "733eb691-3c5c-4133-b1b6-38bd5624c2df",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C20",
+      "claim": "Ubiquitinated TOC components are extracted from the chloroplast outer envelope membrane with the help of SP2 and Cdc48.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitinated TOC components are extracted from the chloroplast outer envelope membrane with the help of SP2 (an Omp85-like \u03b2-barrel protein) and Cdc48 (a cytosolic AAA+ chaperone) providing the extraction force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ling et al., 2012; Ling et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "2ffdee63-46d3-4f4c-895f-b86735118825",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C21",
+      "claim": "The ubiquitinated TOC component is degraded by the 26S proteasome in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitinated TOC component is degraded by the 26S proteasome in the cytosol (Ling et al., 2012; Ling et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ling et al., 2012; Ling et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "9ef8defd-6dfc-4ed6-a3ac-76d40c5ea7af",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C22",
+      "claim": "The proteolytic pathway involving SP1, SP2, Cdc48, and the 26S proteasome has been named CHLORAD.",
+      "claim_type": "EXPLICIT",
+      "source": "This proteolytic pathway has been named CHLORAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a naming convention based on the described pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "e9fd3380-7f01-440b-9c4a-a52a940c749e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C23",
+      "claim": "Chloroplast biogenesis during the proplastid to chloroplast transition is dependent on the plant hormone gibberellic acid (GA).",
+      "claim_type": "EXPLICIT",
+      "source": "In a different context, chloroplast biogenesis takes place during the proplastid to chloroplast transition. It is dependent on the plant hormone gibberellic acid (GA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about GA's role in chloroplast biogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8ee818fd-ce6d-45e9-9c19-c4628123997c",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C24",
+      "claim": "Under unfavorable seed germination conditions when gibberellic concentrations are low, a DELLA (RGL2) promotes the ubiquitylation and degradation of TOC159 by the 26S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Under unfavorable seed germination conditions when gibberellic concentrations are low, a DELLA (RGL2) (a negative regulator of GA signaling) promotes the ubiquitylation and degradation of TOC159 by the 26S proteasome to insertion into the outer membrane of the chloroplast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shanmugabalaji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "7adc4fc3-23d9-4969-98c9-6db323ae42f0",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C25",
+      "claim": "The DELLA-mediated degradation of TOC159 delays the onset of chloroplast biogenesis at an early developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism delays the onset of chloroplast biogenesis at an early developmental stage and has been shown to be independent of SP1 and presumably CHLORAD (Shanmugabalaji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shanmugabalaji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "24dfaa11-d020-45e9-906d-0c8eb00acf11",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C26",
+      "claim": "The DELLA-mediated degradation of TOC159 has been shown to be independent of SP1 and presumably CHLORAD.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism delays the onset of chloroplast biogenesis at an early developmental stage and has been shown to be independent of SP1 and presumably CHLORAD (Shanmugabalaji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shanmugabalaji et al., 2018, with speculation about CHLORAD independence.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "82ab3e23-3118-484a-9cb1-e379ef248785",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C27",
+      "claim": "A yeast-two-hybrid screen identified TOC159 as a high-probability interaction candidate with the E2 SUMO conjugating enzyme (SCE1).",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study employed a yeast-two-hybrid screen to identify putative Arabidopsis small ubiquitin-like modifier (SUMO) substrates. The E2 SUMO conjugating enzyme (SCE1) was used as bait, and TOC159 was identified as a high-probability interaction candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on a recent study and is supported by citation to Elrouby and Coupland, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "bde0c694-ba46-4c88-9e9c-d1b9bc1e4aef",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C28",
+      "claim": "TOC159 contains a predicted SUMO attachment site (\u03c8KXE/D).",
+      "claim_type": "EXPLICIT",
+      "source": "TOC159 contains a predicted SUMO attachment site (\u03c8KXE/D) (Elrouby and Coupland, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Elrouby and Coupland, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "37a547bf-03f1-4b00-9e45-64a8e78405b2",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C29",
+      "claim": "SUMO is a 11 kDa protein that covalently modifies a large number of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The SUMO, a 11 kDa protein, covalently modifies a large number of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SUMO.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "97a77a58-356d-424f-95a1-9f107834e715",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C30",
+      "claim": "SUMO-dependent regulation is involved in many cellular processes, including gene expression, signal transduction, genome maintenance, protein localization, and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "SUMO-dependent regulation is involved in many cellular processes, including gene expression, signal transduction, genome maintenance, protein localization, and activity (Gill, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gill, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "0f84efe6-ca3d-4cae-b392-5c7d814039f4",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C31",
+      "claim": "SUMOylation plays a crucial role in plant development and stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "SUMOylation plays a crucial role in plant development and stress responses (Elrouby, 2017; Augustine and Vierstra, 2018; Morrell and Sadanandom, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Elrouby, 2017; Augustine and Vierstra, 2018; Morrell and Sadanandom, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "be2517a1-c7b8-4d43-b137-b72d0b0d9254",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C32",
+      "claim": "SUMOylation is reversible and dynamic, starting with the attachment of SUMO to the target protein by a conjugation pathway mechanistically analogous to the ubiquitylation system.",
+      "claim_type": "EXPLICIT",
+      "source": "This reversible and dynamic SUMOylation starts with the attachment of SUMO to the target protein by a conjugation pathway, mechanistically analogous to the ubiquitylation system (Augustine and Vierstra, 2018; Novatchkova et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Augustine and Vierstra, 2018; Novatchkova et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "644a6330-b8bf-4479-95da-d7d9bef0eb52",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C33",
+      "claim": "SUMOylation may be reversed by SUMO proteases that hydrolyze the isopeptide bond between SUMO and the target protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The target protein covalently modified by SUMO performs specific functions, which may subsequently be reversed by SUMO proteases that hydrolyze the isopeptide bond between SUMO and the target protein (Yates et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Yates et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "73e013bb-8ead-46d5-bcaf-414c0e86314c",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C34",
+      "claim": "SUMO can interact with target proteins through a SUMO-interacting motif (SIM).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SUMO can also interact with target proteins through a SUMO-interacting motif (SIM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SUMO-protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "9b3a83cf-d3e6-4a31-847f-60070d6ea110",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C35",
+      "claim": "The non-covalent SUMO\u2013SIM interaction may work as a molecular signal for protein\u2013protein interaction and affect stability of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-covalent SUMO\u2013SIM interaction may work as a molecular signal for protein\u2013protein interaction and affect stability of proteins (Geiss-Friedlander and Melchior, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Geiss-Friedlander and Melchior, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "29d3cee9-dce7-4795-b49e-3cf8c6a9056d",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C36",
+      "claim": "Of the three SUMO isoforms (SUMO1, SUMO2, and SUMO3), only SUMO3 SUMOylated TOC159 in an in vitro SUMOylation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "An earlier study using an in vitro SUMOylation assay showed that of the three SUMO isoforms (SUMO1, SUMO2, and SUMO3), only SUMO3 SUMOylated TOC159 (Elrouby and Coupland, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Elrouby and Coupland, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "6efc4e7b-83c9-46d9-8508-8f64d9616f51",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C37",
+      "claim": "The A-domain of TOC159 is known to be non-essential for TOC159 function.",
+      "claim_type": "EXPLICIT",
+      "source": "The A-domain is known to be non-essential for TOC159 function and exquisitely sensitive to protease activity (Agne et al., 2009; Agne et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Agne et al., 2009; Agne et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "c073a2c8-f587-48c3-b13b-60cb8dbf214a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C38",
+      "claim": "The A-domain of TOC159 is exquisitely sensitive to protease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The A-domain is known to be non-essential for TOC159 function and exquisitely sensitive to protease activity (Agne et al., 2009; Agne et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Agne et al., 2009; Agne et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "92d6a330-da39-4112-9613-e03f8963a529",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C39",
+      "claim": "There is a predicted SIM (VKVLP) in the G-domain of TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the search results, there is a predicted SIM (VKVLP) in the G-domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GPS-SUMO prediction algorithm results and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "c79d8287-f549-4da4-8b3a-182042facf41",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C40",
+      "claim": "TOC159G interacted exclusively with SUMO3, but not SUMO1 and SUMO2 in yeast two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "TOC159G interacted exclusively with SUMO3, but not SUMO1 and SUMO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "56ed58b0-96a5-4d48-86be-b1f52c349d64",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C41",
+      "claim": "None of the SUMO isoforms interacted with TOC159M in the yeast two-hybrid assay.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the SUMO isoforms interacted with TOC159M in the yeast two-hybrid assay (Figure 1B, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "97c5975f-c5cb-4f93-9c37-3f143846fd34",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C42",
+      "claim": "TOC159GM\u2013SUMO3 interaction was confirmed by co-immunoprecipitation in planta using the Nicotiana benthamiana system.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed the TOC159GM\u2013SUMO3 interaction by co-immunoprecipitation of GFP-TOC159GM and SUMO3-MYC by in planta transient co-expression using the Nicotiana benthamiana system (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "a008c9b1-11ce-4420-8975-4bcb1ff2c386",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C43",
+      "claim": "A high scoring consensus SUMOylation site with a strongly conserved motif (TGVKLED) containing a potentially SUMOylatable lysine (K1370) was identified within the M-domain of TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "A high scoring consensus SUMOylation site with a strongly conserved motif (TGVKLED) and containing a potentially SUMOylatable lysine (K1370) was identified within the M-domain (Figure 1D, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GPS-SUMO algorithm prediction and shown in Figure 1D and Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "176c2237-3d54-41f5-a4d5-b3e00f0368f6",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C44",
+      "claim": "The SUMOylation motif as well as K1370 of Arabidopsis are well conserved in other plants species.",
+      "claim_type": "EXPLICIT",
+      "source": "The SUMOylation motif as well as K1370 of Arabidopsis are well conserved in other plants species (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8233eadb-2a4c-4aad-ab74-3201190a2d8b",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C45",
+      "claim": "Upon co-expression with SUMO3-MYC only a small fraction of GFP-TOC159GM was present in the SUMOylated form.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore appears that upon co-expression with SUMO3-MYC only a small fraction of GFP-TOC159GM was present in the SUMOylated form and that it had a higher molecular mass than GFP-TOC159GM alone (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on western blot data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "72043c55-3ba9-425e-a12a-59d101076da5",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C46",
+      "claim": "SUMOylated GFP-TOC159GM had a higher molecular mass than GFP-TOC159GM alone.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore appears that upon co-expression with SUMO3-MYC only a small fraction of GFP-TOC159GM was present in the SUMOylated form and that it had a higher molecular mass than GFP-TOC159GM alone (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "fa330edb-ab0e-422c-b197-7826b2b57e08",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C47",
+      "claim": "The A-domain of TOC159 is dispensable but the M-domain of TOC159 is essential for protein import into the chloroplast.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated that the A-domain of TOC159 is dispensable but that the M-domain of TOC159 is essential for protein import into the chloroplast (Lee et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lee et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "015bcc59-bdbf-4811-a262-99ab53571224",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C48",
+      "claim": "TOC159GM alone without the A-domain could complement the albino ppi2 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it was demonstrated that TOC159GM alone without the A-domain could complement the albino ppi2 phenotype (Agne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Agne et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "49c2239b-7cc5-4bca-a652-162d8cec7f78",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C49",
+      "claim": "Homozygous GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 transgenic lines gave green plants with almost identical chlorophyll concentrations that were very close to those of the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 transgenic lines gave green plants with almost identical chlorophyll concentrations that were very close to those of the wild type (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "c1f6f3a7-55e9-4099-a276-153db428a9cd",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C50",
+      "claim": "The green phenotype of GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 transgenic lines indicated complementation of the albino ppi2 phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated complementation of the albino ppi2 phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of green plants and chlorophyll measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "a9b6d89b-6608-432b-940f-5f29a597af85",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C51",
+      "claim": "TOC159GM and GFP-TOC159GM-K/R proteins accumulated to very similar levels in the respective transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The blots revealed that TOC159GM and GFP-TOC159GM-K/R proteins accumulated to very similar levels in the respective transgenic lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "a64e4d13-19b1-4435-8924-3d222de06d85",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C52",
+      "claim": "There were no significant differences in TOC75 and TOC33 levels between GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The blots were also probed with antibodies against TOC75 and TOC33, showing no significant differences between the two transgenic lines (Figure 2B, Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "15e222ce-755a-45ef-b64f-943f28ba5f25",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C53",
+      "claim": "Both GFP-TOC159GM and GFP-TOC159GM-K/R gave clear fluorescent signals at the chloroplast periphery consistent with outer envelope membrane localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GFP-TOC159GM and GFP-TOC159GM-K/R gave clear fluorescent signals at the chloroplast periphery that are consistent with outer envelope membrane localization (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "14c5fd11-c254-4d5c-94b4-ee32999443aa",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C54",
+      "claim": "Addition of paclobutrazol (PAC) to the Murashige\u2013Skoog (MS) growth medium can be used to inhibit GA biosynthesis and results in low GA conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of paclobutrazol (PAC) to the Murashige\u2013Skoog (MS) growth medium can be used to inhibit GA biosynthesis and results in low GA conditions (Piskurewicz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Piskurewicz et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "4a3856f3-003a-4330-bb32-713a2f7e7b7a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C55",
+      "claim": "Under low GA during early germination, the DELLA (RGL2) destabilizes TOC159 via the ubiquitin\u2013proteasome system.",
+      "claim_type": "EXPLICIT",
+      "source": "Under low GA during early germination, the DELLA (RGL2) destabilizes TOC159 via the ubiquitin\u2013proteasome system (Shanmugabalaji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shanmugabalaji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "89f5729a-5cd6-4695-aedd-5102cdde8dbf",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C56",
+      "claim": "The GFP-TOC159GM protein level was severely reduced in GFP-TOC159GM:ppi2 seeds under low GA.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported earlier, the GFP-TOC159GM protein level was severely reduced in GFP-TOC159GM:ppi2 seeds under low GA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "53a07124-307d-4fbc-b21f-706f9afc8d70",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C57",
+      "claim": "The level of GFP-TOC159-K/R in GFP-TOC159GM-K/R:ppi2 seeds was even more diminished than GFP-TOC159GM under low GA.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the level of GFP-TOC159-K/R in GFP-TOC159GM-K/R:ppi2 seeds was even more diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "ded97b10-b694-4234-a8c3-d42abd5a6bf3",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C58",
+      "claim": "TOC75 and TOC33 levels were lower in mutant TOC159GM-K/R:ppi2 than in wild-type GFP-TOC159GM:ppi2 under low GA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TOC75 and TOC33 levels were also lower in mutant TOC159GM-K/R:ppi2 than in wild-type GFP-TOC159GM:ppi2 under low GA, whereas their levels were the same in the untreated lines (Figure 3A,B, Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "fa25dec7-281e-4464-b709-7622b15a2f04",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C59",
+      "claim": "TOC75 and TOC33 levels were the same in GFP-TOC159GM:ppi2 and GFP-TOC159GM-K/R:ppi2 lines in the absence of PAC treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TOC75 and TOC33 levels were also lower in mutant TOC159GM-K/R:ppi2 than in wild-type GFP-TOC159GM:ppi2 under low GA, whereas their levels were the same in the untreated lines (Figure 3A,B, Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "3e077aeb-79c8-4ac4-a4e0-a0ffb3193757",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C60",
+      "claim": "PAC-treated seeds, low in GA, accumulated very high levels of the RGL2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "PAC-treated seeds, low in GA, accumulated very high levels of the RGL2 protein (Piskurewicz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Piskurewicz et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "6663939f-a860-4cea-95a4-472b40fbbe35",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C61",
+      "claim": "There was no difference in RGL2 accumulation between TOC159GM:ppi2 and TOC159GM-K/R:ppi2 lines in the presence of PAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that there was no difference in RGL2 accumulation between the two lines (Figure 3C, Figure 3\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "5acf6bbc-5a96-4db1-8135-adee7821c2b3",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C62",
+      "claim": "Both GFP-TOC159GM-K/R and GFP-TOC159GM were rescued by MG132 and accumulated to the same level.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis demonstrated that both GFP-TOC159GM-K/R and GFP-TOC159GM were rescued by MG132 and accumulated to the same level (Figure 3E,F, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E,F and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "49e48b9c-df7f-4a97-83c9-6ca900f2991f",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C63",
+      "claim": "The reduced levels under low GA of GFP-TOC159GM-K/R when compared to the wild-type protein were attributed to increased UPS-mediated protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced levels under low GA of GFP-TOC159GM-K/R when compared to the wild-type protein were attributed to increased UPS-mediated protein degradation as both proteins recovered to the same protein levels in the presence of the proteasome inhibitor MG132 (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the rescue of protein levels by the proteasome inhibitor MG132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "de747c0d-2f77-4d45-b2f1-65dad82c87c2",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C64",
+      "claim": "The expression of most photosynthesis-associated genes did not change significantly in the presence of moderate and low PAC concentrations (5 and 1 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the expression of most photosynthesis-associated genes did not change significantly in the presence of moderate and low PAC concentrations (5 and 1 \u03bcM) (De Giorgi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to De Giorgi et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "836f3cde-df82-4158-bfe4-8a478eaa570f",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C65",
+      "claim": "The accumulation of photosynthesis-associated proteins (PSBO1, PSBA, RBCL, RBCS, PETC, PSAD, ATPC, and LHCB2) systematically trended lower but not to statistically significant extent in TOC159GM-K/R:ppi2 when compared to TOC159GM:ppi2.",
+      "claim_type": "EXPLICIT",
+      "source": "The western blot analysis revealed that the accumulation of photosynthesis-associated proteins (PSBO1, PSBA, RBCL, RBCS, PETC, PSAD, ATPC, and LHCB2) systematically trended lower but not to statistically significant extent in TOC159GM-K/R:ppi2 when compared to TOC159GM:ppi2 (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "816c20f0-61dd-4b84-9636-3ceb95c36cd5",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C66",
+      "claim": "TOC159 physically interacts with the SUMO E2 enzyme in a yeast two-hybrid screen.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated previously that TOC159 physically interacts with the SUMO E2 enzyme in a yeast two-hybrid screen and that the SUMO3 isoform covalently SUMOylated TOC159 in an in vitro assay (Elrouby and Coupland, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Elrouby and Coupland, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "d59abc70-a194-4006-a718-a54b276ecf4f",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C67",
+      "claim": "The SUMO3 isoform covalently SUMOylated TOC159 in an in vitro assay.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been demonstrated previously that TOC159 physically interacts with the SUMO E2 enzyme in a yeast two-hybrid screen and that the SUMO3 isoform covalently SUMOylated TOC159 in an in vitro assay (Elrouby and Coupland, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Elrouby and Coupland, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "693c09d6-1093-4551-82d1-3a1dc15884f0",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C68",
+      "claim": "The GPS-SUMO algorithm identified a conserved non-covalent SIM ('VKVLP') in the G-domain of TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from a covalent SUMOylation motif, the GPS-SUMO algorithm identified a conserved non-covalent SIM ('VKVLP') in the G-domain of TOC159.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational prediction using the GPS-SUMO algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "f9087cfb-1d8e-4b0c-b241-1bb74d3e67b1",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C69",
+      "claim": "The G-domain of TOC159 specifically interacted with the SUMO3 isoform and not with SUMO1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "It also revealed that the G-domain specifically interacted with the SUMO3 isoform and not with SUMO1 and 2. (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8d4eb42a-90c3-423d-9103-1c9615ce2072",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C70",
+      "claim": "The GA receptor GID1 interacted with SUMO1 through a SIM that prevented its interaction with a DELLA protein in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in Arabidopsis that the GA receptor GID1 interacted with SUMO1 through a SIM that prevented its interaction with a DELLA protein (Conti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Conti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "157fddf5-932e-4eb1-bf85-8aa9107da337",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C71",
+      "claim": "Non-covalent binding of TOC159(SIM) to SUMO3 may modify interactions with SUMOylated complex partners such as TOC33/TOC75 or the DELLA (RGL2) under low GA conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to hypothesize that non-covalent binding of TOC159(SIM) to SUMO3 may modify interactions with SUMOylated complex partners such as TOC33/TOC75 or the DELLA (RGL2) under low GA conditions as these proteins also have predicted SUMOylation sites (http://sumosp.biocuckoo.org/online.php).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observation of SIM in TOC159 and predicted SUMOylation sites in other proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "47da51c7-89f5-4585-84c0-1dd4bcc20164",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C72",
+      "claim": "TOC33, TOC75, and DELLA (RGL2) have predicted SUMOylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to hypothesize that non-covalent binding of TOC159(SIM) to SUMO3 may modify interactions with SUMOylated complex partners such as TOC33/TOC75 or the DELLA (RGL2) under low GA conditions as these proteins also have predicted SUMOylation sites (http://sumosp.biocuckoo.org/online.php).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational prediction using the GPS-SUMO algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "68ca890a-79b1-4ea7-973e-32bf3e86c793",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C73",
+      "claim": "TOC159 has a highly conserved SUMOylation motif ('TGVKLED') with a lysine at position 1370 (K1370) within the M-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TOC159 has highly conserved SUMOylation motif ('TGVKLED') with a lysine at position 1370 (K1370) within the M-domain of TOC159.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational prediction and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8d36311f-b893-4deb-b3f1-f663e3bb2229",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C74",
+      "claim": "Expression of non-SUMOylatable GFP-TOC159GM-K/R (containing the K1370R substitution) restored a wild-type green phenotype in the GFP-TOC159GM-K/R:ppi2 Arabidopsis plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of non-SUMOylatable GFP-TOC159GM-K/R (containing the K1370R substitution) restored a wild-type green phenotype in the GFP-TOC159GM-K/R:ppi2 Arabidopsis plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "cdf5624d-83b1-4b88-8add-857ea1ecea6e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C75",
+      "claim": "The TOC complex assembled normally in the GFP-TOC159GM-K/R:ppi2 plants based on the presence of wild-type levels of TOC75 and TOC33.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the presence of wild-type levels of TOC75 and TOC33, it appeared that the TOC complex assembled normally in the GFP-TOC159GM-K/R:ppi2 plants (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on western blot data showing normal levels of TOC75 and TOC33.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "bfa30766-7b7e-444e-bb39-af2c4ec64ebd",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C76",
+      "claim": "Outer membrane insertion, TOC complex assembly, as well as chloroplast biogenesis take place normally under standard growth conditions despite the K1370R mutation and disabled SUMOylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that outer membrane insertion, TOC complex assembly, as well as chloroplast biogenesis take place normally under standard growth conditions despite the K1370R mutation and disabled SUMOylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental observations including complementation, protein levels, and localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "6b5f8662-5b88-4ef8-a361-5b06f399a321",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C77",
+      "claim": "In Arabidopsis, SUMOylation is triggered by environmental stimuli including biotic and abiotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis, SUMOylation is triggered by environmental stimuli including biotic and abiotic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SUMOylation in plants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "0df4f993-9f0a-475d-a0dd-5e6419ddd8e6",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C78",
+      "claim": "Hormone signaling (GA, auxin, brassinosteroids, and ABA) and development (root, seed, embryo, and meristem) are the main biological processes associated with SUMOylation in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Hormone signaling (GA, auxin, brassinosteroids, and ABA) and development (root, seed, embryo, and meristem) are the main biological processes associated with SUMOylation in plants (Conti et al., 2014; Miura et al., 2009; Ishida et al., 2009; Augustine et al., 2016; Orosa-Puente et al., 2018; Kwak et al., 2019; Srivastava et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "73070d39-7d63-4783-8c3d-2d2dd109af1a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C79",
+      "claim": "SUMOylation is independent of the ubiquitination pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While SUMOylation is independent of the ubiquitination pathway, there is the complex crosstalk between these two pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between SUMOylation and ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "3cd655be-85f1-4bb4-937b-36e3f98ffdf7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C80",
+      "claim": "There is complex crosstalk between SUMOylation and ubiquitination pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "While SUMOylation is independent of the ubiquitination pathway, there is the complex crosstalk between these two pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between SUMOylation and ubiquitination.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "a3681341-a63f-463a-baef-437d579af970",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C81",
+      "claim": "SUMOylation can promote the UPS-dependent degradation through SUMO-targeted Ub ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "SUMOylation can promote the UPS-dependent degradation through SUMO-targeted Ub ligases (Perry et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Perry et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "dfca10ec-d141-4d74-809e-a752cff6a6f3",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C82",
+      "claim": "SUMOylation may protect from UPS-dependent degradation by blocking the ubiquitination of lysine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this, SUMOylation may also protect from UPS-dependent degradation by blocking the ubiquitination of lysine residues (Creton and Jentsch, 2010; Jentsch and Psakhye, 2013; Ramachandran et al., 2015; Rott et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "f7a92f0e-e3d6-44b1-8ca3-492927fb14c9",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C83",
+      "claim": "Low GA concentrations brought about by PAC promote the DELLA (RGL2)-dependent TOC159 degradation via the UPS.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that low GA concentrations brought about by PAC promote the DELLA (RGL2)-dependent TOC159 degradation via the UPS (Shanmugabalaji et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shanmugabalaji et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "2c649520-e754-45f9-8f78-e1653e32d4d7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C84",
+      "claim": "Under low GA, GFP-TOC159GM-K/R accumulated to significantly (<50%) lower levels than wild-type GFP-TOC159GM in the respective overexpression lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Under low GA, GFP-TOC159GM-K/R accumulated to significantly (<50%) lower levels than wild-type GFP-TOC159GM in the respective overexpression lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "abd08df4-1bd4-4d18-afd6-ecaa97c5715e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C85",
+      "claim": "The TOC159-interacting TOC-complex core proteins TOC75 and \u221233 accumulated to considerably lower levels in the GFP-TOC159GM-K/R:ppi2 line under low GA presumably to maintain complex stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the TOC159-interacting TOC-complex core proteins TOC75 and \u221233 also accumulated to considerably lower levels in the GFP-TOC159GM-K/R:ppi2 line under low GA presumably to maintain complex stoichiometry (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data with speculation about the reason for reduced levels.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "256d6124-fc74-42a3-b4f0-4ad7ba60e129",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C86",
+      "claim": "A small fraction of the SUMO target protein pool undergoes SUMOylation under a specific cellular condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, a small fraction of the SUMO target protein pool undergoes SUMOylation under a specific cellular condition (Johnson, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Johnson, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "815ce74c-4215-4844-be32-9fd7c3c54475",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C87",
+      "claim": "Photosynthesis-associated proteins are considered the preferred transport cargoes of TOC159 because they fail to accumulate in the ppi2 mutant lacking TOC159.",
+      "claim_type": "EXPLICIT",
+      "source": "The photosynthesis-associated proteins are considered the preferred transport cargoes of TOC159 because they fail to accumulate in the ppi2 mutant lacking TOC159.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that photosynthesis-associated proteins fail to accumulate in ppi2 mutants.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "202a5cd0-67eb-4b46-acd4-74bed1d29ca7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C88",
+      "claim": "Photosynthesis-associated proteins tended to accumulate to a lesser degree in GFP-TOC159GM-K/R:ppi2 plants under low GA in the presence of PAC, but not in statistically significant fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "They tended to accumulate to a lesser degree in GFP-TOC159GM-K/R:ppi2 plants under low GA in the presence of PAC, but not in statistically significant fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "6b7055e0-4297-491e-869f-d6ce3a3ff5b2",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C89",
+      "claim": "The levels of TOC159 are already low in the GFP-TOC159GM-K/R:ppi2 plants in the absence of PAC and allow only for relatively small changes in the accumulation of photosynthesis-associated proteins in the presence of PAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The explanation may be that the levels of TOC159 are already low in the GFP-TOC159GM-K/R:ppi2 plants in the absence of PAC and allow only for relatively small changes in the accumulation of photosynthesis-associated proteins in the presence of PAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the lack of statistically significant changes in photosynthesis-associated protein levels.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "32be617e-f76a-44ae-bcfd-a8b48f9b4a92",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C90",
+      "claim": "SUMOylation at the M-domain of TOC159 serves to fine tune preprotein import under low GA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the results suggest that SUMOylation at the M-domain of TOC159 serves to fine tune preprotein import under low GA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations about protein stability and cargo protein accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "a025c2a6-e5ba-4ae9-a923-6c40e5994c60",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C91",
+      "claim": "The chloroplast import receptor TOC159 is ubiquitylated prior to outer membrane insertion by an unknown E3-ligase other than SP1 and degraded via the UPS under low GA conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously demonstrated, the chloroplast import receptor TOC159 is ubiquitylated prior to outer membrane insertion by an unknown E3-ligase other than SP1 and degraded via the UPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "16c5e25f-2b32-4b03-90a6-78bd1ea9d36a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C92",
+      "claim": "The G-domain of TOC159 interacts with SUMO3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, its G-domain interacts with SUMO3, the physiological consequences of which remain unknown but may regulate interaction with DELLA system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "d641ffb4-ef0b-4219-b4e7-2e91f5a3b5ac",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C93",
+      "claim": "The physiological consequences of G-domain interaction with SUMO3 remain unknown but may regulate interaction with DELLA system.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, its G-domain interacts with SUMO3, the physiological consequences of which remain unknown but may regulate interaction with DELLA system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential function of the SUMO3-G-domain interaction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "bb35bdcf-4392-4830-a12e-9e4955c760d4",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C94",
+      "claim": "The M-domain of TOC159 may be SUMOylated by SUMO3, protecting to some extent against UPS-dependent degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The M-domain may be SUMOylated by SUMO3, protecting to some extent against UPS-dependent degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental data showing differential stability of wild-type versus K1370R mutant TOC159.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "0cfff918-9589-4411-b4e5-a217756a518e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C95",
+      "claim": "When environmental conditions become more favorable, GA levels increase, and the GA receptor-DELLA complex is degraded by the UPS and TOC159 liberated for outer membrane insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "When the environmental conditions become more favorable, GA levels increase, and the GA receptor-DELLA complex is degraded by the UPS and TOC159 liberated for outer membrane insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about GA signaling and DELLA degradation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "85d8950e-2bc3-4d35-ae6c-753dba94c776",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C96",
+      "claim": "The non-ubiquitinated TOC159 is assembled into the TOC complex thus allowing proplastids to differentiate into chloroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-ubiquitinated TOC159 is assembled into the TOC complex thus allowing proplastids to differentiate into chloroplasts (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model based on the experimental findings and shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "0010d148-37f0-4c98-ae54-3a208be8c782",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C97",
+      "claim": "In the CHLORAD pathway, cytosolic Cdc48 extracts ubiquitinated TOC proteins from the outer membrane of the chloroplast.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CHLORAD pathway, cytosolic Cdc48 extracts ubiquitinated TOC proteins from the outer membrane of the chloroplast (Ling et al., 2019; Shanmugabalaji and Kessler, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ling et al., 2019; Shanmugabalaji and Kessler, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "b475c2be-2d58-4b3a-9ce5-bb1a1c6da485",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C98",
+      "claim": "The intriguing connection between the Cdc48 and SUMO pathways in chromatin dynamics suggests that the SUMO pathway might also act on the CHLORAD pathway at specific developmental stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The intriguing connection between the Cdc48 and SUMO pathways in chromatin dynamics (Franz et al., 2016) suggests that the SUMO pathway might also act on the CHLORAD pathway at specific developmental stage, but we currently do not offer evidence for such a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on a citation to Franz et al., 2016, with explicit acknowledgment that no evidence is provided.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "85772d70-518c-4ba6-9113-a8f607c5866e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "claim_id": "C99",
+      "claim": "SUMOylation and probably SUMO interaction are implicated in the control of proplastid to chloroplast transition by regulation of TOC159 levels in early plant development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data specifically implicate SUMOylation and probably SUMO interaction in the control of proplastid to chloroplast transition by regulation of TOC159 levels in early plant development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TOC159 contains a SUMO-interacting motif (SIM) in its G-domain that specifically interacts with SUMO3 but not SUMO1 or SUMO2. This was identified through computational prediction using GPS-SUMO algorithm and validated experimentally through yeast two-hybrid assays and co-immunoprecipitation in planta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39, C40, C41, C42, C68, C69, and C92 collectively demonstrate the presence and specificity of the SIM-SUMO3 interaction. The computational prediction (C39, C68) is validated by experimental data from yeast two-hybrid assays (C40, C41, C69) and co-immunoprecipitation (C42), providing converging lines of evidence. The specificity for SUMO3 over SUMO1/2 is consistently demonstrated across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "ddff8902-22a3-46c7-b615-c06bc01a75ee",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TOC159 contains a conserved SUMOylation site at lysine 1370 (K1370) in the M-domain. A K1370R substitution disables SUMOylation, and only a small fraction of TOC159 is SUMOylated under normal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C43, C44, C45, C46, and C73 provide strong evidence for the SUMOylation site. The site was identified computationally (C43, C73), shown to be conserved across species (C44), and validated experimentally through in planta SUMOylation assays (C5, C6, C45, C46). The K1370R mutation effectively abolishes SUMOylation (C6), confirming this as the primary SUMOylation site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The non-SUMOylatable TOC159GM-K/R mutant complements the albino ppi2 phenotype under normal growth conditions, showing normal chlorophyll levels, protein accumulation, TOC complex assembly, and chloroplast localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C74-C76 demonstrate that SUMOylation is not essential for TOC159 function under standard conditions. Multiple lines of evidence including phenotypic complementation (C49, C50, C74), protein level measurements (C51, C52), and localization studies (C53) all support this conclusion. The inference that TOC complex assembly is normal (C75, C76) is reasonably supported by the presence of wild-type levels of TOC75 and TOC33.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under low GA conditions induced by PAC treatment, the non-SUMOylatable TOC159GM-K/R mutant is destabilized compared to wild-type TOC159GM, accumulating to significantly lower levels (<50%). This destabilization also affects TOC complex partners TOC75 and TOC33.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C56, C57, C58, and C84 provide consistent evidence from western blot analyses showing differential protein stability under low GA stress. The quantification shows statistically significant differences (C84: <50% levels), and the effect extends to TOC complex partners (C58), suggesting a physiologically relevant destabilization. The experimental design appropriately uses PAC to induce low GA conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "8b4642f2-0eb6-4eb0-ad01-6b0388c8884f",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Treatment with the proteasome inhibitor MG132 rescues both wild-type TOC159GM and the K/R mutant to the same protein levels, indicating that the differential stability is due to UPS-mediated degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C62, and C63 demonstrate that proteasome inhibition eliminates the difference in protein levels between wild-type and mutant TOC159. This is strong evidence that the destabilization of the K/R mutant is specifically due to increased proteasomal degradation. The rescue experiment is a critical control that mechanistically links SUMOylation to protection from UPS-dependent degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "4be3ea67-2b22-49a2-a848-9565cb280602",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SUMOylation at K1370 partially stabilizes TOC159 against UPS-dependent degradation under low GA stress conditions, contributing to fine-tuning of preprotein import and regulation of TOC159 levels during early plant development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C9, C90, C94, and C99 represent the main conclusions of the study. These are well-supported by the experimental evidence showing differential stability (C7, C56-C58, C84), rescue by proteasome inhibition (C8, C62, C63), and effects on cargo protein accumulation (C65, C88). The use of 'partially stabilizes' appropriately reflects that SUMOylation provides protection but does not completely prevent degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "1e0b8d30-6c44-479c-8d4a-3cf0a93de0cc",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RGL2 protein levels are similar between TOC159GM:ppi2 and TOC159GM-K/R:ppi2 lines under low GA conditions, indicating that the K1370R mutation does not affect DELLA accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by western blot data showing no difference in RGL2 levels between the two lines. This is an important control demonstrating that the differential stability of TOC159 variants is not due to differences in the upstream GA signaling pathway or DELLA protein levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "7e791f10-dc84-4434-b209-b9ddd2d976dd",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Photosynthesis-associated proteins (PSBO1, PSBA, RBCL, RBCS, PETC, PSAD, ATPC, LHCB2) trended lower in TOC159GM-K/R:ppi2 plants under low GA but not to a statistically significant extent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65 and C88 explicitly state that the differences are not statistically significant, which undermines the strength of this result. Claim C89 offers speculation about why significant differences were not observed (already low TOC159 levels), but this remains untested. While the trend is consistent with the hypothesis, the lack of statistical significance means this result cannot be considered definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "764d2223-9231-4e94-9402-c18a5ef8557a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The physiological consequences of the SIM-SUMO3 interaction in the G-domain remain unknown but may regulate interactions with SUMOylated complex partners such as TOC33, TOC75, or DELLA (RGL2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71 and C93 are explicitly speculative, and C72 only provides computational predictions of SUMOylation sites in other proteins. No experimental evidence is provided to test these hypotheses. While the speculation is reasonable given the established SIM-SUMO3 interaction, this remains an untested hypothesis requiring future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "73b13642-6871-4911-b8f3-83e51f0c8fe5",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The SUMO pathway might act on the CHLORAD pathway at specific developmental stages, based on connections between Cdc48 and SUMO pathways in chromatin dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is explicitly acknowledged as speculation without supporting evidence from the current study. While the authors cite a connection between Cdc48 and SUMO in chromatin dynamics (Franz et al., 2016), they explicitly state 'we currently do not offer evidence for such a mechanism.' This is purely speculative and requires future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "41686b12-1b10-4ae3-a527-d66bb79e6daf",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background information on chloroplast biogenesis, protein import machinery, and TOC159 structure and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10-C18 provide established background knowledge about chloroplast biology and TOC159. These are well-supported by citations to prior literature and represent accepted knowledge in the field. This contextual information is necessary for understanding the significance of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on the CHLORAD pathway and GA-dependent regulation of TOC159 during chloroplast biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 describe prior work on TOC159 regulation through the CHLORAD pathway and GA signaling. These are supported by appropriate citations and provide essential context for the current study. The speculation in C26 about CHLORAD independence is appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information on SUMO biology, SUMOylation mechanisms, and prior evidence for TOC159 SUMOylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C38 provide background on SUMO biology and cite prior work identifying TOC159 as a potential SUMO substrate. These are well-supported by citations and establish the rationale for the current study. The information about TOC159 domain structure (C37, C38) is relevant for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "b0d52c3b-b03d-45b9-bb80-10b949e02998",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The A-domain of TOC159 is dispensable while the M-domain is essential for protein import, and TOC159GM can complement the ppi2 phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C48 cite prior work (Lee et al., 2003; Agne et al., 2009) establishing that the A-domain can be omitted while maintaining function. This justifies the use of TOC159GM constructs in the current study and is well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "aff60f9b-2955-43f6-8c7d-2875cedbed09",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PAC treatment inhibits GA biosynthesis, creating low GA conditions that promote DELLA-dependent TOC159 degradation via the UPS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C55, C60, and C83 describe the experimental system used to induce low GA conditions. These are supported by appropriate citations (Piskurewicz et al., 2008; Shanmugabalaji et al., 2018) and represent established methodology for studying GA-dependent processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "5dce5280-987b-4d46-897c-c2575459ccec",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TOC75 and TOC33 levels are the same in both transgenic lines in the absence of PAC treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by western blot data and serves as an important control showing that differences only emerge under stress conditions. This validates the experimental design and demonstrates that the K1370R mutation specifically affects stress-induced degradation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "37a1ff69-60d8-459a-81c1-6960690114c8",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Gene expression of photosynthesis-associated genes does not change significantly at moderate PAC concentrations (1-5 \u03bcM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 cites prior work (De Giorgi et al., 2015) to justify the use of 2 \u03bcM PAC for examining protein accumulation without confounding transcriptional effects. This is appropriate use of prior literature to support the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "774c5e98-712d-425d-b1c7-bc0775562c50",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior work demonstrated that TOC159 physically interacts with the SUMO E2 enzyme and is SUMOylated by SUMO3 in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C67 cite prior work (Elrouby and Coupland, 2010) that provided initial evidence for TOC159 SUMOylation. This establishes the foundation for the current study's more detailed investigation of SUMOylation sites and functional consequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "e022243e-6ee5-4fc0-b6c7-5cf572ee08dc",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The GA receptor GID1 interacts with SUMO1 through a SIM that prevents its interaction with DELLA in Arabidopsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 cites prior work (Conti et al., 2014) as an example of how SIM-SUMO interactions can regulate protein-protein interactions in GA signaling. This provides precedent for the authors' speculation about TOC159 SIM function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background information on SUMOylation in plant stress responses and development, and the crosstalk between SUMOylation and ubiquitination pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 provide background on SUMO biology in plants and the complex relationship between SUMOylation and ubiquitination. These are well-supported by multiple citations and establish the conceptual framework for understanding how SUMOylation might protect TOC159 from UPS-dependent degradation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "421595ad-4a43-445d-b0a8-5357f5d1a948",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "TOC75 and TOC33 accumulate to lower levels in the K/R mutant line under low GA, presumably to maintain complex stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C85 is supported by experimental data showing reduced TOC75 and TOC33 levels. However, the explanation about maintaining stoichiometry is speculative. The data clearly show the reduction, but the mechanism remains uncertain. The claim is appropriately qualified with 'presumably.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "ca41f27a-eef3-4377-8af2-021c7baa2e6b",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Typically, only a small fraction of SUMO target proteins undergo SUMOylation under specific cellular conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 cites established knowledge (Johnson, 2004) about SUMO biology. This contextualizes the observation that only a small fraction of TOC159 is SUMOylated (C45) and explains why this is consistent with functional significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "416bc909-1722-4b9d-89c6-894b566d479a",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Photosynthesis-associated proteins are considered preferred TOC159 cargo because they fail to accumulate in ppi2 mutants lacking TOC159.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 represents an inference based on established knowledge about the ppi2 phenotype. This is reasonable given that ppi2 mutants are albino and lack photosynthetic capacity, which is attributed to failure to import photosynthesis-associated proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    },
+    {
+      "id": "58bdadcc-af4f-4727-8c55-e0b8583fa7a2",
+      "content_id": "57930920-69f1-490e-a361-449367c74e01",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Model describing TOC159 regulation through ubiquitination, DELLA interaction, and the role of GA signaling in controlling chloroplast biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91, C95, C96, and C97 describe a model integrating current findings with prior work. C91 and C97 cite prior literature, while C95 and C96 represent established knowledge about GA signaling. This model provides a framework for understanding how SUMOylation fits into the broader regulatory network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T01:09:29.306749Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "13908d91-f8b9-43f4-9949-5e4cead7b3a7",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "92d6a330-da39-4112-9613-e03f8963a529",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "c79d8287-f549-4da4-8b3a-182042facf41",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "56ed58b0-96a5-4d48-86be-b1f52c349d64",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "97c5975f-c5cb-4f93-9c37-3f143846fd34",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "693c09d6-1093-4551-82d1-3a1dc15884f0",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "f9087cfb-1d8e-4b0c-b241-1bb74d3e67b1",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "16c5e25f-2b32-4b03-90a6-78bd1ea9d36a",
+      "result_id": "a04e594d-9fb7-4e74-8643-c07dfc6979f7"
+    },
+    {
+      "claim_id": "66242119-84d2-4bcc-989a-cd6c61d94dcf",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "386f8a25-4d52-4e09-bc28-7206a240bde6",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "a008c9b1-11ce-4420-8975-4bcb1ff2c386",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "176c2237-3d54-41f5-a4d5-b3e00f0368f6",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "8233eadb-2a4c-4aad-ab74-3201190a2d8b",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "72043c55-3ba9-425e-a12a-59d101076da5",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "68ca890a-79b1-4ea7-973e-32bf3e86c793",
+      "result_id": "ddff8902-22a3-46c7-b615-c06bc01a75ee"
+    },
+    {
+      "claim_id": "49c2239b-7cc5-4bca-a652-162d8cec7f78",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "c1f6f3a7-55e9-4099-a276-153db428a9cd",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "a9b6d89b-6608-432b-940f-5f29a597af85",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "a64e4d13-19b1-4435-8924-3d222de06d85",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "15e222ce-755a-45ef-b64f-943f28ba5f25",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "8d36311f-b893-4deb-b3f1-f663e3bb2229",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "cdf5624d-83b1-4b88-8add-857ea1ecea6e",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "bfa30766-7b7e-444e-bb39-af2c4ec64ebd",
+      "result_id": "c7da4e04-9e06-43e0-b564-7e2cd9361f73"
+    },
+    {
+      "claim_id": "e5010b0a-c2f6-4afa-b4ab-f2c7b633c405",
+      "result_id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8"
+    },
+    {
+      "claim_id": "89f5729a-5cd6-4695-aedd-5102cdde8dbf",
+      "result_id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8"
+    },
+    {
+      "claim_id": "53a07124-307d-4fbc-b21f-706f9afc8d70",
+      "result_id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8"
+    },
+    {
+      "claim_id": "ded97b10-b694-4234-a8c3-d42abd5a6bf3",
+      "result_id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8"
+    },
+    {
+      "claim_id": "2c649520-e754-45f9-8f78-e1653e32d4d7",
+      "result_id": "1f613879-ee00-4ea5-9f35-f94cba8ad2a8"
+    },
+    {
+      "claim_id": "712c2da5-9abf-48c3-a445-e06489302531",
+      "result_id": "8b4642f2-0eb6-4eb0-ad01-6b0388c8884f"
+    },
+    {
+      "claim_id": "5acf6bbc-5a96-4db1-8135-adee7821c2b3",
+      "result_id": "8b4642f2-0eb6-4eb0-ad01-6b0388c8884f"
+    },
+    {
+      "claim_id": "49e48b9c-df7f-4a97-83c9-6ca900f2991f",
+      "result_id": "8b4642f2-0eb6-4eb0-ad01-6b0388c8884f"
+    },
+    {
+      "claim_id": "f74986bc-aacd-4910-96a6-faa6ddf48018",
+      "result_id": "4be3ea67-2b22-49a2-a848-9565cb280602"
+    },
+    {
+      "claim_id": "fb4afb90-604e-4adb-be0a-274cb63f1059",
+      "result_id": "4be3ea67-2b22-49a2-a848-9565cb280602"
+    },
+    {
+      "claim_id": "32be617e-f76a-44ae-bcfd-a8b48f9b4a92",
+      "result_id": "4be3ea67-2b22-49a2-a848-9565cb280602"
+    },
+    {
+      "claim_id": "bb35bdcf-4392-4830-a12e-9e4955c760d4",
+      "result_id": "4be3ea67-2b22-49a2-a848-9565cb280602"
+    },
+    {
+      "claim_id": "85772d70-518c-4ba6-9113-a8f607c5866e",
+      "result_id": "4be3ea67-2b22-49a2-a848-9565cb280602"
+    },
+    {
+      "claim_id": "6663939f-a860-4cea-95a4-472b40fbbe35",
+      "result_id": "1e0b8d30-6c44-479c-8d4a-3cf0a93de0cc"
+    },
+    {
+      "claim_id": "836f3cde-df82-4158-bfe4-8a478eaa570f",
+      "result_id": "7e791f10-dc84-4434-b209-b9ddd2d976dd"
+    },
+    {
+      "claim_id": "202a5cd0-67eb-4b46-acd4-74bed1d29ca7",
+      "result_id": "7e791f10-dc84-4434-b209-b9ddd2d976dd"
+    },
+    {
+      "claim_id": "6b7055e0-4297-491e-869f-d6ce3a3ff5b2",
+      "result_id": "7e791f10-dc84-4434-b209-b9ddd2d976dd"
+    },
+    {
+      "claim_id": "157fddf5-932e-4eb1-bf85-8aa9107da337",
+      "result_id": "764d2223-9231-4e94-9402-c18a5ef8557a"
+    },
+    {
+      "claim_id": "47da51c7-89f5-4585-84c0-1dd4bcc20164",
+      "result_id": "764d2223-9231-4e94-9402-c18a5ef8557a"
+    },
+    {
+      "claim_id": "d641ffb4-ef0b-4219-b4e7-2e91f5a3b5ac",
+      "result_id": "764d2223-9231-4e94-9402-c18a5ef8557a"
+    },
+    {
+      "claim_id": "b475c2be-2d58-4b3a-9ce5-bb1a1c6da485",
+      "result_id": "73b13642-6871-4911-b8f3-83e51f0c8fe5"
+    },
+    {
+      "claim_id": "44e4e466-334c-441e-a575-0091ecc9a321",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "3ff7f72c-e699-4f7b-8599-9d620fdc620a",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "0404b71a-dd6a-48c4-bf70-d94577eebb7c",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "092977a2-76b2-401b-9dad-ddadf552f0ab",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "bd71fa6c-1f68-4429-977c-a79387534e58",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "d6a3a83d-e7b5-49f7-982d-d3e8cefd0082",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "121e21f5-08f7-41cf-b013-225a01d1f050",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "d1af2802-011a-4c0c-8728-843616e38c40",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "bf8c4bf5-f853-43c0-816c-bb36ebfbb5a9",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "33bc620b-b53a-4d1c-bc9a-611b205edfe7",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "ab697327-36a5-421a-b55b-d4a3e71e5f9b",
+      "result_id": "41686b12-1b10-4ae3-a527-d66bb79e6daf"
+    },
+    {
+      "claim_id": "3a3382b7-22b8-440f-be80-6b5c5228dd96",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "733eb691-3c5c-4133-b1b6-38bd5624c2df",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "2ffdee63-46d3-4f4c-895f-b86735118825",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "9ef8defd-6dfc-4ed6-a3ac-76d40c5ea7af",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "e9fd3380-7f01-440b-9c4a-a52a940c749e",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "8ee818fd-ce6d-45e9-9c19-c4628123997c",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "7adc4fc3-23d9-4969-98c9-6db323ae42f0",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "24dfaa11-d020-45e9-906d-0c8eb00acf11",
+      "result_id": "595afa09-f30d-40b7-9b79-2751ff6dcd1e"
+    },
+    {
+      "claim_id": "82ab3e23-3118-484a-9cb1-e379ef248785",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "bde0c694-ba46-4c88-9e9c-d1b9bc1e4aef",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "37a547bf-03f1-4b00-9e45-64a8e78405b2",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "97a77a58-356d-424f-95a1-9f107834e715",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "0f84efe6-ca3d-4cae-b392-5c7d814039f4",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "be2517a1-c7b8-4d43-b137-b72d0b0d9254",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "644a6330-b8bf-4479-95da-d7d9bef0eb52",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "73e013bb-8ead-46d5-bcaf-414c0e86314c",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "9b3a83cf-d3e6-4a31-847f-60070d6ea110",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "29d3cee9-dce7-4795-b49e-3cf8c6a9056d",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "6efc4e7b-83c9-46d9-8508-8f64d9616f51",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "c073a2c8-f587-48c3-b13b-60cb8dbf214a",
+      "result_id": "d84a6af3-e50b-4cec-afd5-9313ac2b089d"
+    },
+    {
+      "claim_id": "fa330edb-ab0e-422c-b197-7826b2b57e08",
+      "result_id": "b0d52c3b-b03d-45b9-bb80-10b949e02998"
+    },
+    {
+      "claim_id": "015bcc59-bdbf-4811-a262-99ab53571224",
+      "result_id": "b0d52c3b-b03d-45b9-bb80-10b949e02998"
+    },
+    {
+      "claim_id": "14c5fd11-c254-4d5c-94b4-ee32999443aa",
+      "result_id": "aff60f9b-2955-43f6-8c7d-2875cedbed09"
+    },
+    {
+      "claim_id": "4a3856f3-003a-4330-bb32-713a2f7e7b7a",
+      "result_id": "aff60f9b-2955-43f6-8c7d-2875cedbed09"
+    },
+    {
+      "claim_id": "3e077aeb-79c8-4ac4-a4e0-a0ffb3193757",
+      "result_id": "aff60f9b-2955-43f6-8c7d-2875cedbed09"
+    },
+    {
+      "claim_id": "f7a92f0e-e3d6-44b1-8ca3-492927fb14c9",
+      "result_id": "aff60f9b-2955-43f6-8c7d-2875cedbed09"
+    },
+    {
+      "claim_id": "fa25dec7-281e-4464-b709-7622b15a2f04",
+      "result_id": "5dce5280-987b-4d46-897c-c2575459ccec"
+    },
+    {
+      "claim_id": "de747c0d-2f77-4d45-b2f1-65dad82c87c2",
+      "result_id": "37a1ff69-60d8-459a-81c1-6960690114c8"
+    },
+    {
+      "claim_id": "816c20f0-61dd-4b84-9636-3ceb95c36cd5",
+      "result_id": "774c5e98-712d-425d-b1c7-bc0775562c50"
+    },
+    {
+      "claim_id": "d59abc70-a194-4006-a718-a54b276ecf4f",
+      "result_id": "774c5e98-712d-425d-b1c7-bc0775562c50"
+    },
+    {
+      "claim_id": "8d4eb42a-90c3-423d-9103-1c9615ce2072",
+      "result_id": "e022243e-6ee5-4fc0-b6c7-5cf572ee08dc"
+    },
+    {
+      "claim_id": "6b5f8662-5b88-4ef8-a361-5b06f399a321",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "0df4f993-9f0a-475d-a0dd-5e6419ddd8e6",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "73070d39-7d63-4783-8c3d-2d2dd109af1a",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "3cd655be-85f1-4bb4-937b-36e3f98ffdf7",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "a3681341-a63f-463a-baef-437d579af970",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "dfca10ec-d141-4d74-809e-a752cff6a6f3",
+      "result_id": "97b23db5-e567-4624-b0a5-a2d12d82f9c6"
+    },
+    {
+      "claim_id": "abd08df4-1bd4-4d18-afd6-ecaa97c5715e",
+      "result_id": "421595ad-4a43-445d-b0a8-5357f5d1a948"
+    },
+    {
+      "claim_id": "256d6124-fc74-42a3-b4f0-4ad7ba60e129",
+      "result_id": "ca41f27a-eef3-4377-8af2-021c7baa2e6b"
+    },
+    {
+      "claim_id": "815ce74c-4215-4844-be32-9fd7c3c54475",
+      "result_id": "416bc909-1722-4b9d-89c6-894b566d479a"
+    },
+    {
+      "claim_id": "a025c2a6-e5ba-4ae9-a923-6c40e5994c60",
+      "result_id": "58bdadcc-af4f-4727-8c55-e0b8583fa7a2"
+    },
+    {
+      "claim_id": "0cfff918-9589-4411-b4e5-a217756a518e",
+      "result_id": "58bdadcc-af4f-4727-8c55-e0b8583fa7a2"
+    },
+    {
+      "claim_id": "85d8950e-2bc3-4d35-ae6c-753dba94c776",
+      "result_id": "58bdadcc-af4f-4727-8c55-e0b8583fa7a2"
+    },
+    {
+      "claim_id": "0010d148-37f0-4c98-ae54-3a208be8c782",
+      "result_id": "58bdadcc-af4f-4727-8c55-e0b8583fa7a2"
+    }
+  ],
+  "comparisons": []
+}

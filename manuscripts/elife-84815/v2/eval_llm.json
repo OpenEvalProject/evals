@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study cohort consisted of 3196 drug-susceptible TB patients from three sites in China (Shanghai, Sichuan, Heilongjiang), with 3105 good outcomes and 91 poor outcomes. The patients had a mean age of 42.1\u00b118.2 years, 72.4% were male, and whole-genome sequencing showed 74.2% were lineage 2, with 54.9% belonging to the modern Beijing sublineage L2.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 provide comprehensive descriptive statistics of the study population that are internally consistent and clearly documented. The demographic and genomic characterization data appear straightforward and well-supported by the figures referenced (Figure 1A, 1B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "GWAS identified fourteen fixed nonsynonymous variants in thirteen genes associated with poor treatment outcomes, with the otsB1 G559D mutation showing the strongest association (p=7.3\u00d710\u207b\u00b9\u2070). These genes are involved in intermediary metabolism, respiration, cell wall processes, and virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 report the primary GWAS findings with appropriate statistical thresholds (Bonferroni correction) and functional annotation. The p-value for the lead variant is highly significant, and the results are visualized in Figure 2A with supporting data referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "GWAS analysis of unfixed mutations identified 237 mutations associated with poor outcomes, with frequencies mostly 5-10%, predominantly in genes involved in cell wall processes, intermediary metabolism, and respiration. The highest-ranked gene was gatA, previously associated with rifampicin tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe unfixed mutation analysis with appropriate characterization of frequency distributions and functional categories. The connection to gatA and prior literature (C34) provides biological plausibility, though the low frequencies suggest limited individual effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Gene expression analysis under drug and hypoxic stress showed that Rv2164c expression increased under both conditions and was the only gene containing both GWAS-identified fixed and unfixed mutations. Other genes (otsB1, Rv0648, Rv1248c, Rv3168) showed decreased expression under stress, suggesting involvement in stress adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C40 integrate expression data with GWAS findings, but the expression data comes from H37Rv laboratory strain (not patient isolates), which may not reflect in vivo conditions. The inference about stress adaptation (C40) is speculative without functional validation. The connection between expression changes and treatment outcomes remains indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C99"
+    ],
+    "result": "Fixed mutations showed no difference in ROS mutational signatures between good and poor outcomes (43.9% vs 44.2%, p=0.364), but unfixed de novo mutations showed significantly higher ROS signatures in poor outcomes (26.3% vs 22.9%, p=0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report statistically significant findings for unfixed mutations with appropriate statistical tests. The distinction between fixed and unfixed mutations is biologically meaningful, suggesting ongoing oxidative stress during infection in poor outcome cases. The p-value for unfixed mutations (p=0.027) is marginally significant but consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Analysis of unfixed mutations across functional categories showed no difference in total mutations between outcomes, but isolates from poor outcomes had a higher percentage of nonsynonymous mutations in 'information pathway' genes (5.7% vs 3.9%, p=0.048).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 report a specific finding about nonsynonymous mutations in information pathway genes with marginal statistical significance (p=0.048). The finding is biologically plausible as information pathway genes could affect bacterial fitness, though the effect size is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "Nucleotide diversity showed no significant difference between good and poor outcomes (p=0.156), but modern Beijing lineage L2.3 was more prevalent in good outcomes (55.5% vs 44.0%, p=0.038). However, lineage was not associated with poor treatment outcomes in the populations studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C50 present contradictory findings: C48 shows L2.3 is significantly associated with good outcomes, but C50 states lineage was not associated with poor outcomes. This logical inconsistency suggests either the statistical analysis or interpretation may be problematic. The finding contradicts prior literature (C49) associating L2.3 with high virulence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C58"
+    ],
+    "result": "Logistic regression identified patient age, sex, diagnostic delay, and GWAS-identified fixed mutations as independently associated with poor outcomes. A clinical example showed risk increasing from 5.4% to 17.4% in a 65-year-old male with 4-month diagnostic delay if carrying at least one GWAS-identified mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 report multivariable regression results with appropriate covariates. The clinical prediction example (C52) demonstrates practical application, though it's based on model predictions rather than observed data. The independent associations are visualized in Figure 4A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C100",
+      "C101"
+    ],
+    "result": "Prediction models showed host factors alone had AUC=0.70, bacterial factors alone had AUC=0.58, and combining both significantly improved prediction to AUC=0.74 (p=0.01, sensitivity=0.85, specificity=0.55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 report ROC analysis with appropriate statistical comparisons (DeLong's test). The modest improvement from 0.70 to 0.74 is statistically significant but clinically limited. The low specificity (0.55) indicates high false positive rates. The findings are consistent across abstract and results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C83"
+    ],
+    "result": "Only 24.2% (22/91) of patients with poor outcomes carried at least one GWAS-identified fixed mutation, and none of the fourteen mutations were shared among all 22 patients, suggesting these mutations played no role in the majority of poor outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide critical context showing limited penetrance of identified mutations. The inference in C70 is reasonable given the low frequency. The lack of shared mutations (C83) suggests heterogeneous mechanisms rather than a single dominant pathway, which is biologically plausible but limits clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 237 GWAS-identified unfixed mutations are diverse with frequencies generally 5-10%, suggesting small selective advantages without preferential mutation types. None overlapped with the 14 fixed mutations, suggesting they reflect individual genetic features without homoplastic fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 provide appropriate characterization of unfixed mutations with reasonable inferences about selective advantage and lack of homoplasy. The low frequencies and diversity are consistent with within-host evolution rather than transmitted variants. The interpretation is cautious and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C95",
+      "C96"
+    ],
+    "result": "Host factors are significantly more important determinants of poor outcomes than bacterial factors, but bacterial genomic factors can also contribute. The most accurate prediction models incorporate both host and bacterial risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C95-C96 synthesize the main findings appropriately. The conclusion that host factors dominate is supported by the AUC comparisons (0.70 vs 0.58), while the modest but significant improvement with combined factors (AUC=0.74) supports the contribution of bacterial factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Attempted validation with 1397 Malawi TB cases failed because the dataset only recorded death as poor outcome without distinguishing TB deaths from non-TB deaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 transparently report failed validation attempts, which is scientifically appropriate. The explanation for failure (inability to distinguish TB vs non-TB deaths) is reasonable and highlights a key limitation in outcome classification that affects generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "Several genes carrying GWAS-identified mutations have prior functional evidence: otsB1 encodes trehalose-6-phosphate phosphatase associated with rifampicin tolerance under hypoxia; dlaT encodes pyruvate dehydrogenase E2 required for MTB growth and RNI resistance; ctpB and metA were previously associated with first-line drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C80-C81 appropriately cite prior literature to provide biological context for identified mutations. The functional evidence strengthens the plausibility of associations, though it doesn't prove causality in the current study. The citations appear appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82"
+    ],
+    "result": "Most genes with the fourteen fixed mutations were rarely reported in previous large-scale GWAS of drug-resistant MTB, and none of the specific mutations were reported. The limited effects on treatment outcomes would explain why they weren't identified previously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 appropriately compare findings to prior literature, and C82 provides a reasonable inference about why these mutations weren't previously detected (limited effect sizes, drug-susceptible vs drug-resistant populations). The interpretation is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Future applications may include identifying high-risk patients by analyzing both host and bacterial genome characteristics, potentially enabling personalized treatment regimens to improve cure rates for drug-susceptible TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 are speculative about future applications. While the direction is reasonable, the modest predictive performance (AUC=0.74, specificity=0.55) and lack of validation limit confidence in clinical utility. The claims appropriately use conditional language ('may', 'could') but require prospective validation before implementation.",
+    "result_type": "MINOR"
+  }
+]

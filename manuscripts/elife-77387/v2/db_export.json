@@ -1,0 +1,1357 @@
+{
+  "submission": {
+    "id": "7107fd5a-eef2-45b5-86aa-9cd8ad3eb098",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:39:05.615990Z",
+    "updated_at": "2025-12-03T13:39:05.615990Z"
+  },
+  "content": [
+    {
+      "id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "submission_id": "7107fd5a-eef2-45b5-86aa-9cd8ad3eb098",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary convergence of a neural mechanism in the cavefish lateral line system\n\n## Authors\n\n- Elias T Lunsford<sup>1</sup> ([ORCID: 0000-0002-3713-6994](https://orcid.org/0000-0002-3713-6994))\n- Alexandra Paz<sup>2</sup>\n- Alex C Keene<sup>3</sup>\n- James C Liao<sup>1</sup> ([ORCID: 0000-0003-0181-6995](https://orcid.org/0000-0003-0181-6995)) \u2020\n\n### Affiliations\n\n1. Department of Biology, University of Florida Saint Augustine United States ([ROR:02y3ad647](https://ror.org/02y3ad647))\n2. Department of Biological Sciences, Florida Atlantic University Jupiter United States ([ROR:05p8w6387](https://ror.org/05p8w6387))\n3. Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals can evolve dramatic sensory functions in response to environmental constraints, but little is known about the neural mechanisms underlying these changes. The Mexican tetra, Astyanax mexicanus, is a leading model to study genetic, behavioral, and physiological evolution by comparing eyed surface populations and blind cave populations. We compared neurophysiological responses of posterior lateral line afferent neurons and motor neurons across A. mexicanus populations to reveal how shifts in sensory function may shape behavioral diversity. These studies indicate differences in intrinsic afferent signaling and gain control across populations. Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish leading to increased evoked potentials during hair cell deflection in cavefish. We next measured the effect of inhibitory corollary discharges from hindbrain efferent neurons onto afferents during locomotion. We discovered that three independently derived cavefish populations have evolved persistent afferent activity during locomotion, suggesting for the first time that partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.\n\n## Introduction\n\nOur understanding of the sensory systems and behavior of animals is challenging to contextualize within the framework of evolution. Anatomical comparisons between species have allowed us to infer sensory capabilities, but this approach cannot directly reveal neural function. Discovery of neural mechanisms that underlie behavior are often constrained to a limited number of model species (Jourjine and Hoekstra, 2021). Like morphology, neural circuits can adapt to the environment. Of these, many circuits are sensory and regulate essential behaviors such as foraging, navigation, and escapes (Blin et al., 2018; Hoke et al., 2012; H\u00fcppop, 1987; Paz et al., 2020).\n\nThe Mexican blind cavefish, Astyanax mexicanus, is a powerful model to understand the evolution of physiological and molecular traits that contribute to behaviors such as sleep (Dubou\u00e9 et al., 2011; Jaggard et al., 2018) and prey capture (Lloyd et al., 2018; Yoshizawa et al., 2014). A. mexicanus exists in two morphs: (1) eyed surface-dwelling populations and (2) blind cave populations. There are at least 30 independently evolved cavefish populations in the caves of the Sierra de El Abra region of Northeast Mexico (Espinasa et al., 2018; Herman et al., 2018; McGaugh et al., 2020; Mitchell et al., 1997). A. mexicanus populations are interfertile, and this attribute has allowed investigators to demonstrate independent convergence of numerous behavioral, developmental, and physiological traits (Chin et al., 2018; Kowalko, 2020; Riddle et al., 2018; Stockdale et al., 2018; Varatharasan et al., 2009). Our goal is to apply a neurophysiological approach across multiple A. mexicanus populations to examine the functional evolution of the lateral line sensory system.\n\nThe mechanoreceptive hair cells of the lateral line system detects fluid motion relative to the body and play an important role in essential behaviors (McHenry et al., 2009; Mekdara et al., 2018; Olszewski et al., 2012; Oteiza et al., 2017; Stewart et al., 2013). Cavefish have evolved anatomical enhancements of the lateral line, presumably to compensate for the loss of vision (Kowalko, 2020; McGaugh et al., 2020; Teyke, 1990; Yoshizawa et al., 2012). These anatomical alterations have been linked to substantial changes in behavior (Lloyd et al., 2018; Yoshizawa et al., 2010). However, almost nothing is known about physiological changes that accompany evolution, despite the fact that the response of peripheral senses to environmental change has been well documented (Kelley et al., 2018; McBride, 2007).\n\nEndogenous depolarizations within sensory cells are transmitted to afferent neurons (hereafter \u2018afferents\u2019) as spontaneous action potentials (hereafter \u2018spikes\u2019), and are essential for maintaining a state of responsiveness and sensitivity (Kiang, 1965; Manley and Robertson, 1976). For example, the spontaneous spikes from auditory hair cells have been shown to enable precise encoding of much higher frequencies (K\u00f6ppl, 1997). Here, we suggest a similar underlying mechanism, though the correlation of spontaneous activity to sensitivity in the lateral line awaits empirical evidence. In the lateral line, spontaneous depolarizing currents within the hair cell maintain a resting potential within the critical activation range of channels. This range is required to ensure transmitter release; thus these currents decrease the detection threshold of the system (Trapani and Nicolson, 2011). Spontaneous afferent activity is an established and reliable target for probing the neurophysiological basis of sensitivity across taxa (Hedwig, 2006; Krasne and Bryan, 1973; Mohr et al., 2003). Here, we use spontaneous afferent activity as an entry point into understanding the neural mechanism underlying lateral line function in cavefish.\n\nAnother important mechanism that determines lateral line sensitivity is an inhibitory feedback effect of the efferent system during swimming. Feedback mechanisms in general sculpt sensory systems in important ways; for example, by changing detection thresholds by altering the transmission frequency of afferent spikes (Crapse and Sommer, 2008; Straka et al., 2018). The efferent system of hair cells in particular has repeatedly evolved to modulate sensory processing (K\u00f6ppl, 2011). More specifically, hindbrain efferent neurons (hereafter \u2018efferents\u2019) issue predictive signals that transmit in parallel to locomotor commands, termed corollary discharge (CD). CDs inhibit afferent activity to mitigate sensor fatigue that can result from self-generated stimuli (Russell and Roberts, 1972). CD is an important mechanism for sensitivity enhancement but has rarely been implicated for ecologically relevant behaviors. For example, active-flow sensing by cavefish depends on detecting reafferent signals while swimming (Tan et al., 2011). Increased reliance on self-generated fluid motion (Odstrcil et al., 2022; Patton et al., 2010; Teyke, 1985) is divergent from our current understanding of the CD\u2019s role in predictive motor signaling in the lateral line (Lunsford et al., 2019; Pichler and Lagnado, 2020).\n\nFor the first time, we identify a neurophysiological mechanism that has convergently evolved across A. mexicanus populations to increase hair cell sensitivity after eye loss. By investigating how differences in afferent and efferent signaling contribute to sensory enhancement in a comparative model, we provide insight into a potentially ubiquitous mechanism for sensory evolution.\n\n## Results\n\nNeuromasts of surface fish and Pach\u00f3n cavefish larvae (6 days post fertilization; dpf) were labeled via 2-[4-(dimethylamino)styryl]-1-ethylpyridinium iodide (DASPEI) staining and subsequently imaged (Figure 1B, C). Anterior lateral line (ALL) neuromasts had previously been shown to differ in quantities and morphology as early as 2 months post fertilization between surface and cavefish (Yoshizawa et al., 2010). Here, we show that Pach\u00f3n cavefish exhibit this significant increase in anterior neuromast quantity as early as 6 dpf (p < 0.01, t = 3.168, df = 29; Figure 1D). In contrast, both populations exhibit a similar number of posterior lateral line neuromasts (p = 0.77, U = 111.5; Figure 1E). Neuromasts along the posterior lateral line were comprised of similar quantities of hair cells across blind (n = 11) and surface morphs (n = 9; p = 0.09; Figure 1F). No significant interaction was detected between the effects of population and age (5\u20137 dpf; F2,72 = 2.96, p = 0.06; Figure 1G). We exclusively probed the posterior lateral line afferent neurons to establish whether sensory systems that are anatomically similar exhibit neurophysiological differences that contribute to enhanced sensitivity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/77387/elife-77387-fig1-v2.jpg)\n\n**Figure 1.:** Illustration (not to scale) of the canonical circuit of lateral line function depicting the neuromast (blue) comprised of mechanoreceptive hair cells that are innervated by ascending afferent neurons (green) that collect into the posterior lateral line ganglion. Putative cholinergic efferent neurons (red) descend from the hindbrain and project onto neuromast hair cells (A). 2-[4-(Dimethylamino)styryl]-1-ethylpyridinium iodide (DASPEI) staining of 6 dpf surface (n = 14, B) and cavefish (n = 17, C) show significantly different quantities of anterior lateral line neuromasts (p < 0.01, D) and similar quantities of posterior neuromasts (p = 0.77, E). Hair cells were labeled with a 30-min treatment of YO-PRO1 (green) and found to be of similar quantities between surface (n = 9) and cave (n = 11) populations (unpaired two-way t-test, p = 0.09, F). Box-and-whisker plot representing the number of hair cells per neuromast was indistinguishable across development (5\u20137 dpf; p = 0.06, G). Error bars are \u00b1 standard error (SE) and ** denotes a significant difference (p < 0.01) detected by an unpaired t-test.\n\nTo examine the physiological basis of differences in lateral line function across surface and cavefish we used extracellular lateral line recordings adapted from protocols used in zebrafish (Figure 2A, B). Extracellular recordings of posterior lateral line afferents revealed intrinsic spontaneous activity was higher in Pach\u00f3n cavefish (18.6 \u00b1 0.2 Hz) while the animal was at rest, relative to surface fish (12.4 \u00b1 0.3 Hz; p < 0.01, t = 15.97, df = 5,795; Figure 2C). Single neuromasts were then deflected and evoked activity was recorded from the connected afferent neuron (Figure 2D, E). The neuromasts were stimulated at different frequencies (5\u201340 Hz) and a pairwise comparison of evoked afferent activity at 30 Hz revealed statistically elevated spike rates in Pach\u00f3n cavefish (n = 12; 119.6 \u00b1 16.6 Hz) relative to surface fish (n = 10; 73.2 \u00b1 6.9 Hz; p = 0.03, t = 2.38, df = 18; Figure 2F). Significantly elevated spike rates were also detected in response to a 40-Hz stimulus in Pach\u00f3n cavefish (101.3 \u00b1 13.6 Hz) relative to surface fish (52.3 \u00b1 7.0 Hz; p < 0.01, t = 3.00, df = 18; Figure 2F). Together these findings support spontaneous afferent activity as a reliable metric for estimating the sensitivity of the lateral line and reveal enhanced neural responses to hair cell deflection in cavefish.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/77387/elife-77387-fig2-v2.jpg)\n\n**Figure 2.:** Extracellular recordings were made in posterior lateral line afferents where the neuromast densities and hair cell quantities were similar to resolve the differences observed in afferent activity between larval surface fish (A) and Pach\u00f3n cavefish (B) between 4 and 7 dpf. The number of occurrences and median intrinsic spike rates in both surface (blue; 12.4 Hz, n = 10 fish) and Pach\u00f3n (red; 18.6 Hz, n = 5 fish) fish suggests that lateral line response thresholds in cavefish are lower than those of surface fish (C). Evoked afferent activity during stimulation of a single neuromast in surface fish (n = 10, D) and cavefish (n = 12, E) and peristimulus time histograms demonstrate elevated spike rate in cavefish. Evoked spike rate was stimulus frequency dependent and pairwise comparisons reveal significantly (open circles) elevated sensitivity in cavefish at 30 and 40 Hz (p = 0.03 and p < 0.01, respectively, F). Error bars are \u00b1 standard error (SE) and ** denotes a significant difference (p < 0.01) detected by an unpaired t-test.\n\nWe examined afferent signaling during motor commands in our paralyzed preparation which were denoted by bouts of fictive swimming (hereafter swimming). Swim bouts of longer duration were observed in surface fish (357 \u00b1 5 ms; n = 3167 swim bouts) when compared to Pach\u00f3n cavefish (264 \u00b1 4 ms; n = 2612 swim bouts; p < 0.01, t-stat = 15.2, df = 5777). Instantaneous afferent spike rate demonstrates substantial decreases during swimming in surface fish and little effect in Pach\u00f3n cavefish (Figure 3A, B). We quantified and compared spike rates during swimming relative to the pre-swim period to examine patterns of the inhibitory effect between populations. During most surface fish swim bouts there was a reduction in afferent activity (n = 1966/2291, 85.8%), many of which resulted in complete quiescence of transmissions (n = 1112/2291, 48.5%). Conversely, afferent activity partially reduced during many swim bouts in Pach\u00f3n cavefish (n = 1303/2439, 53.4%), but very few instances led to complete inhibition (n = 275/2439, 11.3%). The distributions of relative spike rates during swimming reveal surface fish have a higher likelihood of experiencing no afferent activity during swimming while cavefish experience afferent activity during swimming similar to that of pre-swim activity levels (Figure 3C). Therefore, surface fish experience significantly higher levels of inhibition (68.5 \u00b1 0.01%) compared to cavefish (28.9 \u00b1 0.01%; p < 0.01, t = 36.5, df = 4449; Figure 3D). Surface fish demonstrate lateral line inhibition during swimming comparable to other fishes with intact visual systems (Flock and Russell, 1973; Lunsford et al., 2019; Pichler and Lagnado, 2020; Russell and Roberts, 1972) suggesting cavefish have evolved a unique functional phenotype for sensory gain control.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/77387/elife-77387-fig3-v2.jpg)\n\n**Figure 3.:** Simultaneous recordings from afferent neurons from the posterior lateral line afferent ganglion and ventral motor roots along the body in (Ai) surface fish and (Bi) Pach\u00f3n cavefish. Afferent spike rate decreases at the onset of swimming (time = 0) in (Aii) surface fish while (Bii) Pach\u00f3n cavefish spike rate remained relatively constant during swimming. Bars represent average swim duration for surface fish (357 \u00b1 5 ms, n = 2272 swims) and Pach\u00f3n cavefish (264 \u00b1 4 ms, n = 2612 swims). (C) Kernel density estimate of spike rate during swimming relative to the pre-swim interval in both surface fish (blue) and cavefish (red). (D) Surface fish experience greater levels of inhibition during swimming than cavefish. Significance level p < 0.001 indicated by \u2018***\u2019 detected via unpaired two-way t-test. Error bars are \u00b1 standard error (SE).\n\nWe imaged hindbrain cholinergic efferent neurons to determine anatomical and functional connectivity. Between populations, backfilled efferents revealed similar soma quantities (surface: 2.4\u00b10.3; cave: 3.2\u00b10.5; p = 0.2, t = 1.36, df = 18) and size (surface: 62.1 \u00b1 3.6 \u00b5m2; cave: 70.9 \u00b1 4.5 \u00b5m2; p = 0.1, t = 1.50, df = 51; Figure 4A\u2013C). From electrophysiological recordings, we observed average spike rates during and prior to a swim were not positively correlated in control surface fish (r2=0.15, F1,13 = 2.3, p = 0.2), but the slope of the line indicates a fractional suppression of 78% that is significantly less than unity (slope 0.1, confidence interval [CI]: \u22120.2 to 0.4; Figure 4Di). In the efferent-ablated surface fish, the spike rates during swimming intervals were indistinguishable from those during nonswimming intervals (slope 1.2, CI = \u22120.1 to 2.4) showing no detectable inhibitory effect. While swimming, surface fish without functioning efferent neurons demonstrated a signaling phenotype similar to both intact cavefish (slope 0.88, CI = \u22120.5 to 2.2) and cavefish with ablated efferents (slope 0.9, CI = 0.1 to 1.8; Figure 4Dii). Therefore, putative cholinergic hindbrain efferents are necessary for afferent inhibition in surface fish, but do not demonstrate modulatory control of afferents in cavefish.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/77387/elife-77387-fig4-v2.jpg)\n\n**Figure 4.:** (A) Backfilled hindbrain cholinergic efferent neurons were present in comparable numbers (2\u20133 cells) in both surface fish (n = 14) and cavefish (n = 6, unpaired two-way t-test: p = 0.2). (Bi) Efferent soma size in surface (blue) and cavefish (red) is similar in both populations (unpaired two-way t-test: p = 0.1, ii). (C) Efferent cell bodies were identified by backfilling rhodamine through posterior lateral line neuromasts in both surface fish (i) and cavefish (ii) and were ablated with a 30-s UV pulse. Scale bar: 20 \u00b5m. (D) The line of best fit of spike rates before compared to during the swim significantly excludes unity in nonablated, control surface fish (CI: -0.2 to 0.4, circle), but not in ablated surface fish (CI: -0.1 to 2.4, square), implying spike rate suppression in the former but not the latter (i). The slope of the line for control fish suggests the inhibition is not correlated to the spontaneous afferent activity preceding the swim (p = 0.2). The line of best fit of Pach\u00f3n cavefish pre-swim and swim spike rates did not exclude unity in both control (CI: -0.5 to 2.2, circle) and ablated (CI: 0.9 to 1.8, square) treatments (ii). Dashed line indicates the line of unity, corresponding to no average difference of spike rate during swimming. (E) Instantaneous spike rates of Pach\u00f3n cavefish were unaffected by ablating the lateral line whereas the inhibitory effect was eliminated in ablated surface fish. Time is relative to the onset of motor activity. (F) Surface fish (blue) display reduced spike rates during swimming compared to before swimming in control fish (Tukey\u2019s post-hoc test: p < 0.01). Pach\u00f3n cavefish (red) did not display reduced spike rate during swimming in neither control nor ablated treatments. Ablated surface individuals also did not display reduced spike rate during swimming resulting in a signaling phenotype comparable to cavefish. Groupings of statistical similarity are denoted by \u2018a\u2019 and \u2018b\u2019, whereas a is significantly different from b. All error bars represent \u00b1 standard error (SE).\n\nWe compared pre-swim and swim spike rates across populations and treatments to determine efferent contribution to inhibition (Figure 4E). We found significant differences in afferent activity among pre-swim and swim intervals (F7,40 = 7.6, p < 0.01; Figure 4F). Surface fish afferent spike rates during swimming (3.9 \u00b1 0.1 Hz) were 71% lower than the immediate pre-swim period in control fish (13.7 \u00b1 0.2 Hz; Tukey\u2019s post hoc test, p < 0.01). Post-swim spike rate (13. 7 \u00b1 0.3 Hz) recovered to pre-swim spike rate. In control Pach\u00f3n cavefish, we observed some decrease in afferent spike rate during swimming (16.8 \u00b1 0.2 Hz) but it was not statistically discriminated from pre-swim (20.5 \u00b1 0.2 Hz; Tukey\u2019s post hoc test, p = 0.94). Efferent ablation in surface fish resulted in afferent activity during swimming (17.4 \u00b1 0.3 Hz) to increase to pre-swim levels (20.7 \u00b1 0.3 Hz; Tukey\u2019s post hoc test, p = 0.99). Ablated surface fish also demonstrated spike dynamics during swimming comparable to ablated and control cavefish (Pach\u00f3n ablated, pre-swim: 18.6 \u00b1 0.3 Hz; Pach\u00f3n ablated, swimming: 14.7 \u00b1 0.3 Hz). These findings indicate that efferents are necessary for inhibition of afferents during swimming in surface fish.\n\nWe compared lateral line activity between three different cave populations (Figure 5A); the Tinaja and Pach\u00f3n populations, which are derived from similarly timed colonization events, and the Molino population that is derived from a more recent colonization event (Bradic et al., 2012; Dowling et al., 2002; Herman et al., 2018). Blind cavefish populations exhibited similar spontaneous spike rates across populations (F2,17 = 0.68, p = 0.52), and swimming showed little effect on lateral line activity across blind cavefish populations (Figure 5B). We observed a minor decrease in afferent spike rates across cavefish populations and the relative change (i.e., inhibition) was similar in Pach\u00f3n and Tinaja (Tukey\u2019s post hoc test; Pach\u00f3n: 0.28 \u00b1 0.01; Tinaja: 0.32 \u00b1 0.02; Figure 5C). Molino demonstrated an intermediate phenotype compared to Pach\u00f3n and Tinaja (Tukey\u2019s post hoc test; Molino: 0.23 \u00b1 0.01; p < 0.01). The Molino population (new lineage) is most distantly related to the Pach\u00f3n and Tinaja populations (old lineage), originating from a more recent surface fish colonization of caves thus providing phylogenetic evidence that coincides with statistically similar groupings (Herman et al., 2018). We examined the correlation between nonswimming and swimming spike rates across cave populations to determine whether the inhibitory effect was significant. Spike rates during swimming and pre-swim intervals were positively correlated in all cave populations, and afferent spike rates during swimming were not statistically distinguishable from unity across populations (Pach\u00f3n: slope = 0.88, CI = \u22120.5 to 2.2; Tinaja: slope = 1.03, CI = \u22120.2 to 2.2; Molino: slope = 1.02, CI = 0.8 to 1.2; Figure 5D), indicating there was no significant decrease in afferent activity during swimming within blind cavefish populations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/77387/elife-77387-fig5-v2.jpg)\n\n**Figure 5.:** (A) Molino cave populations (pink; New Lineage) have evolved more recently relative to Pach\u00f3n (red) and Tinaja (purple; Old Lineage) cave populations. Lineage delineations inferred from phylogenetic data (Herman et al., 2018). (B) Mean spontaneous afferent spike rate remains constant at the onset of fictive swimming (time = 0) in Pach\u00f3n (n = 5), Molino (n = 8), and Tinaja (n = 5) populations (N-way ANOVA: p = 0.52).Bar represents average swim duration for Pach\u00f3n (0.27 s, n = 2429 swim bouts), Molino (0.42 s, n = 1,474 swim bouts), and Tinaja (0.35 s, n = 464). (C) Percent change in spike rate from pre-swim to swim intervals (i.e., inhibition) was small, but significantly different between blind cave populations. Post hoc Tukey test revealed that Molino cavefish experienced significantly less reduction in spike rate when compared to Pach\u00f3n and Tinaja populations (p < 0.01). Statistically similar groups are indicated by \u2018a\u2019 and \u2018b\u2019. (D) The line of best fit of pre-swim and swim spike rates does not significantly exclude unity in any of the blind cavefish populations implying there is no detectable inhibitory effect (Pach\u00f3n: CI = -0.5 to 2.2, Tinaja: CI = -0.2 to 2.2, Molino: CI = 0.8 to 1.2). Dashed line indicates the line of unity, corresponding to no average difference of spike rate during swimming. All values represent mean \u00b1 standard error (SE).\n\n## Discussion\n\nOur principal findings indicate elevated afferent spike activity and an increased responsiveness to hair cell deflection in cavefish. The increased afferent activity in cavefish is a likely consequence of eye loss, which has robust effects on other physiological systems (Dubou\u00e9 et al., 2011; Varatharasan et al., 2009). Heightened lateral line sensitivity in adults has been previously attributed to increased neuromast density in the ALL as well as increased hair cell quantities per neuromast (Jaggard et al., 2017; Lloyd et al., 2018; McHenry et al., 2008; Patton et al., 2010; Teyke, 1990; Yoffe et al., 2020; Yoffe et al., 2020; Yoshizawa et al., 2010). These differences do not exist in the posterior lateral line at the larval stage, allowing us a unique opportunity to investigate the neural mechanisms that can enhance flow sensing in a strong model for evolution. Our discovery of increased spontaneous activity that contributes to the enhanced evoked responses in cavefish is a powerful addition for flow sensing, and we predict that this in combination with the increased number of neuromasts in the ALL (Yoshizawa et al., 2010) is what ultimately enables cavefish to perform active-flow sensing.\n\nHigher spontaneous activity is one of two mechanisms that are responsible for higher lateral line sensitivity. The other involves the inhibitory effects of the efferent system during swimming, a feedback mechanism that is conserved across the diversity of fishes (Flock and Russell, 1973; Lunsford et al., 2019; Montgomery et al., 1996; Montgomery and Bodznick, 1994; Roberts and Russell, 1972; Tricas and Highstein, 1991). This is true in swimming surface fish but not in cavefish. We found that three blind populations of cavefish (i.e., Pach\u00f3n, Molino, and Tinaja) have repeatedly lost the capability for efferent modulation during swimming. When one considers that lateral line efferent activity can be driven by direct inputs from the visual system in zebrafish (Reinig et al., 2017), it seems possible that eye degeneration induces the loss of efferent function. This interpretation is consistent with the idea that lateral line efferents are thought to have undergone regressive loss before in the ancestral lamprey and hagfish (Kishida et al., 1987; K\u00f6ppl, 2011; Koyama et al., 1990), both of which are nearly or completely blind during development (Dickson and Collard, 1979; Fernholm and Holmberg, 1975). However, our results illustrate that cholinergic efferent system is still present in cavefish, having lost functionality rather than disappearing (the efferent system is functional in surface fish). Exploring pre- and postsynaptic differences such as acetylcholine release or the density of nicotinic acetylcholine receptors (nAChR) may explain the reduced inhibitory efficacy and reveal molecular targets that could disrupt efferent function over the course of evolution (Dawkins et al., 2005).\n\nOur demonstration of CD inactivity in cavefish provides an alternative mechanism by which evolution can enhance sensitivity, one that proceeds by decreasing inhibition rather than augmenting sensor morphology or density (Yamamoto et al., 2009; Yoshizawa et al., 2010; Yoshizawa et al., 2014). The impact of increasing sensitivity through a lack of inhibition is apparent during active-flow sensing in adult A. mexicanus. Active-flow sensing occurs during swimming and involves using the reflection of self-generated flow fields (Bleckmann et al., 1991) to follow walls (Patton et al., 2010), avoid obstacles (Teyke, 1985; Windsor et al., 2008), and discrimination between shapes (de Perera, 2004; Hassan, 1989; von Campenhausen et al., 1981). The repeated loss of inhibition across populations at the larval stage suggests that selection may act early in development on the efferent over afferent systems. Future experiments may test this hypothesis in adults, though it seems likely that this phenomenon would be preserved and only elaborated on throughout ontogeny, rather than reconfigured. Cavefish swim by using different body motions than surface fish. This finding has been interpreted as a mechanism to enhance wall following, which occurs when the bow wake of a swimming cavefish is reflected off of a solid surface and then detected (Patton et al., 2010; Sharma et al., 2009). Altered swimming kinematics are also thought to have arisen from a general increase in sensitivity to flow (Tan et al., 2011; Windsor et al., 2008). Our results provide an alternate suggestion; the lack of efferent function in cavefish precludes the sensory feedback necessary for sensing self-movement and body position in water (proprioception). CD, a parallel motor command that decreases the afferent activity of fishes when swimming, has recently been found to play a critical role in swimming efficiency by enabling the tracking of the traveling body wave during undulation (Skandalis et al., 2021). We hypothesize that the evolved loss of efferent function that enables cavefish to successfully avoid collisions in subterranean habitats is likely favored over optimizing swimming efficiency (Nakamura, 1997; Atasavun Uysal et al., 2010). We predict that loss of efferent function will be found in other blind hypogean species (Costa Sampaio et al., 2012) and that their respective surface populations will possess intact efferent functionality, as we have found in A. mexicanus. Neurophysiological recordings across a wider diversity of species would provide valuable insight into how efferent function may be sculpted by environmental selection and phylogenetic membership.\n\nBy employing neurophysiological approaches in the lateral line system of A. mexicanus for the first time, we show that elevated lateral line afferent activity and loss of efferent function have repeatedly evolved together across cavefish populations. Our findings come at a time when genetic tools in A. mexicanus enable brain-wide imaging and gene-editing based screening to identify candidate neural circuits and genes critical in the evolution of sensory systems (Jaggard et al., 2020; Warren et al., 2021). Going forward, applying genetic and electrophysiological tools in well-characterized neural circuits promises to inform our understanding of the evolution of neural systems and behavior more broadly.\n\n## Materials and methods\n\n### Animals\n\nFish were progeny of pure-bred stocks originally collected in Mexico (Dubou\u00e9 et al., 2011) that have been maintained at the Florida Atlantic University core facilities. Larvae were raised in 10% Hank\u2019s solution (137 mM NaCl, 5.4 mM KCl, 0.25 mM Na2HPO4, 0.44 mM KH2PO4, 1.3 mM CaCl2, 1.0 mM MgSO4, 4.2 mM NaHCO4; pH 7.3) at 26\u00b0C. All experiments were performed according to protocols approved by the University of Florida or Florida Atlantic University Institutional Animal Care and Use Committee (IACUC201603267, IACUC202200000056). Animal health was assessed by monitoring blood flow throughout each experiment.\n\n### Neuromast imaging\n\nTo assess neuromast quantities, larvae aged 6 dpf were submerged in 5 \u00b5g/ml DASPEI dissolved in embryo medium for 15 min as previously described (Van Trump et al., 2010). Larvae were then transferred to ice-cold water for 30\u201345 s then immersed in 8% methylcellulose for imaging. Images were taken using a Nikon DS-Qi2 monochrome microscope camera mounted on a Nikon SMZ25 Stereo microscope (Nikon; Tokyo, Japan). Neuromasts innervated by posterior lateral line afferents and ALL afferents were tabulated separately. To image hair cells that comprise each neuromast, larvae (5\u20137 dpf) were immersed in 2 \u00b5M YO-PRO1 (Invitrogen; Y3603) in embryo media for 30 min, rinsed three times in embryo media (Santos et al., 2006). Larvae were then embedded on their sides in low-melting point-1.6% agarose and imaged on a confocal microscope (Leica TCS SP5, \u00d763/1.2 water immersion, 200 Hz, emission: 644\u2013698 nm). Images were processed on ImageJ (v1.48; U. S. National Institutes of Health, Bethesda, MD).\n\n### Electrophysiology\n\nPrior to recordings, A. mexicanus larvae (4\u20137 dpf) were paralyzed using 0.1% \u03b1-bungarotoxin (Lunsford and Liao, 2021). Once paralyzed, larvae were then transferred into extracellular solution (134 mM NaCl, 2.9 mM KCl, 1.2 mM MgCl2, 2.1 mM CaCl2, 10 mM glucose, 10 mM HEPES buffer; pH 7.8, adjusted with NaOH) and pinned with etched tungsten pins through their dorsal notochord and otic vesicle into a Sylgard-bottom dish.\n\nMultiunit extracellular recordings of the posterior lateral line afferent ganglion were made in surface fish (n = 10) and Pach\u00f3n cavefish (n = 5). Prior to recording from the afferent neurons, a bore pipette was used to break through the skin to expose the afferent soma. Recording electrodes (~30 \u00b5m tip diameter) were pulled from borosilicate glass (model G150F-3, inner diameter: 0.86, outer diameter: 1.50; Warner Instruments, Hamden, CT) on a model P-97 Flaming/Brown micropipette puller (Sutter Instruments, Novato, CA) and filled with extracellular solution. Once contact with afferent somata was achieved, gentle negative pressure was applied (20\u201350 mm Hg; pneumatic transducer tester, model DPM1B, Fluke Biomedical Instruments, Everett, WA). Pressure was adjusted to atmospheric (0 mm Hg) once a stable recording was achieved. Simultaneously, ventral root recordings were made through the skin (Masino and Fetcho, 2005) to detect voluntary fictive swimming. To record response properties from afferent neurons during neuromast deflection we systematically probed neuromasts starting at D1 and continued down the body until stereotypical evoked potentials were detected (Levi et al., 2015). The sinusoidal stimulus was driven using a single-axis piezo stimulator (30V300, Piezosystem Jena, Hopedale, MA). The stimulus probe was formed by melting the tip of a small diameter (~2 \u00b5m) recording electrode on a MF-830 microforge (Narishige International, Amityville, NY) and the probe tip was positioned approximately 50 \u00b5m anterior to the cupula at kinocilia-tip height. Stimulation occurred at 5, 10, 20, 30, and 40 Hz which encompasses frequency ranges at the lower limit of tail beats (5\u201310 Hz) and typical range of tail beat during free swimming (20\u201340 Hz) (Mirat et al., 2013). The stimulus period lasted for 1 s with 4 s at rest to allow for recovery and was repeated for each frequency for 60 sweeps. Care was taken to avoid any contact between the probe and the cupula which can alter the response (Levi et al., 2015). All recordings were sampled at 20 kHz and amplified with a gain of 1000 in Axoclamp 700B, digitized with Digidata 1440A and saved in pClamp10 (Molecular Devices).\n\nAll recordings were analyzed in Matlab (vR2019b) using custom written scripts. Both spontaneous afferent spikes and swimming motor activity identified using a combination of spike parameters previously described (Lunsford et al., 2019). Afferent neuron activity within a time interval equal to the subsequent fictive swim bout, hereafter termed \u2018pre-swim\u2019, was quantified and compared to afferent activity during swimming to measure relative changes in spontaneous firing.\n\n### Efferent ablations\n\nHindbrain efferent neurons were backfilled with tetramethylrhodamine (TRITC, 3 kDa; Molecular Probes, Eugene, OR). A. mexicanus larvae (4 dpf) were anesthetized in MS-222 (Tricaine, Western Chemical Inc, Ferndale, WA) and embedded in agar. To selectively label the hindbrain cholinergic efferent neurons, we systematically electroporated (Axoporator 800A Single Cell Electroporator, Axon CNS Systems, Molecular Devices LLC, San Jose, CA) TRITC into the efferent terminals that innervate the D1, D2, L1, and L2 neuromasts of the lateral line in surface fish (n = 14) and Pach\u00f3n cavefish (n = 7; Figure 4Ci). Electroporation does not ensure labeling of all efferent neurons so we standardized parameters (30 V, 50 Hz, 500 ms, square pulse) and targeted the same neuromasts across populations to minimize variation in labeling efficacy. Larvae were then gently freed from the agar and allowed to swim freely and recover overnight. Larvae (5 dpf) were then paralyzed via \u03b1-bungarotoxin immersion, remounted in agar dorsal surface down, and imaged on a Leica SP5 confocal microscope (Leica Microsystems, Wetzlar, Germany). Efferent soma size and quantity were measured within identified TRITC-labeled cells in ImageJ (v1.48; U. S. National Institutes of Health, Bethesda, MD). To perform targeted ablations of surface fish (n = 5) and cavefish (n = 6) efferent neurons, a near-ultraviolet laser was focused at a depth corresponding to the maximum fluorescence intensity of each soma, to ensure we were targeting its center. We applied the FRAP Wizard tool in Leica application software to target individual cells. We ablated target cells with a 30-s exposure to the near-ultraviolet laser line (458 nm), and successful targeting was confirmed by quenching of the backfilled dye. This method has been successfully applied and validated in similar systems (Liu and Fetcho, 1999; Soustelle et al., 2008). Fish were again freed from agar and allowed to swim freely and recover overnight. Electrophysiological recordings were performed on ablated surface fish (n = 4) and cavefish (n = 5) at 6 dpf to simultaneously monitor afferent activity and motor activity.\n\n### Statistical analysis\n\nNeuromast data were analyzed using GraphPad Prism 8.4.3. Normality was assessed via Shapiro\u2013Wilk test. ALL neuromast count data were found to be normally distributed. ALL neuromast quantities in surface and cave larvae were compared using an unpaired t-test. Posterior lateral line neuromast count was found to not be normally distributed and was subsequently analyzed via Mann\u2013Whitney U-test neuromast hair cell data were analyzed using MatLab (v2019b). Surface and cavefish hair cell counts per neuromast compared using an unpaired two-way t-test.\n\nAnalyses of electrophysiological data (Supplementary file 1) were performed using custom written models in the R language (R development core team, vR2016b) using packages car, visreg, reshape2, plyr, dplyr, ggplot2, gridExtra, minpack.lm, nlstools, investr, and cowplot (Auguie et al., 2017; Baty et al., 2015; Breheny and Burchett, 2017; Fox and Weisberg, 2018; Wickham, 2007; Wickham, 2011; Wickham et al., 2019; Wilke, 2019) and Matlab (v2019b). Spontaneous afferent spike rate was calculated by taking the number of spikes over the duration of time where the larva was inactive and the neuromast was not being stimulated. Instantaneous afferent spike rate was calculated using a moving average filter and a 100ms sampling window. Evoked afferent spike rate was calculated by taking the number of spikes over the duration of the stimulus period (1 s). Pre-swim and swim spike rate were calculated by taking the number of spikes within the respective period over its duration. Pre-swim periods of inactivity made it challenging to interpret changes in afferent activity, so we restricted the dataset to only include swim bouts that were preceded by a minimum of one afferent spike within the pre-swim interval (surface = 2291 swim bouts; Pach\u00f3n = 2429 swim bouts; Molino = 1.474 swim bouts; Tinaja = 464 swim bouts). Swim frequency was calculated by taking the number of bursts within a swim bout over the duration of the swim bout. Relative spike rate was calculated by taking the swim spike rate over the pre-swim spike rate. All variables were averaged for each individual fish. The precision of estimates for each individual is a function of the number of swims, so we analyzed variable relationships using weighted regressions, with individual weights equal to the square root of the number of swims. We log transformed variables in which the mean and the variance were correlated. To quantify the inhibition of the afferent spike frequency during swimming we tested for a significant difference in afferent spike frequency during swimming as compared to nonswimming periods using a paired sample Student\u2019s t-test.\n\nDifferences in afferent spike rates between the periods of interest (pre-swim and swim) across populations and treatments were tested by N-way analysis of variance followed by Tukey\u2019s post hoc test to detect significant differences in spike rates between swim periods or treatments. Linear models were used to detect relationships between spike rate during swimming and other independent variables (e.g., spike rate pre-swim). Data are shown throughout the manuscript as mean \u00b1 standard error. Statistical significance is reported at \u03b1 = 0.05.\n",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "533588fc-c372-45b7-95aa-0b4e4f2e4861",
+      "submission_id": "7107fd5a-eef2-45b5-86aa-9cd8ad3eb098",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthieu Louis, https://ror.org/02t274463 University of California, Santa Barbara United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77387.sa0](https://doi.org/10.7554/eLife.77387.sa0)\n\nWhile most cavefish lack vision, their blindness is compensated by enhanced sensitivity to water flows. Through a powerful comparative analysis of neural circuits, the present work sheds light on how sensory mechanisms have convergently evolved in multiple populations of fish that have independently colonized different cave environments.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Matthieu Louis, https://ror.org/02t274463 University of California, Santa Barbara United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.77387.sa1](https://doi.org/10.7554/eLife.77387.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Evolutionary convergence of a neural mechanism in the cavefish lateral line system\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Hern\u00e1n L\u00f3pez-Schier (Reviewer #1); Masato Yoshizawa (Reviewer #2); Jason Gallant (Reviewer #3).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1. A weakness of the work is that the relationship between sensitivity and spontaneous activities in the afferents was not established experimentally. The authors should tackle this weakness to support their assertion that \"elevated afferent activity underlies the increased responsiveness of cavefish to flow stimuli\". Neurophysiological evidence should be added to establish the increase in hair cell sensitivity. Does a sensitivity gain truly result from higher spontaneous activity? The authors should also examine potential changes in the number of mechanoreceptive hair cells.\n\n2. Further evidence is needed to state that \"elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish.\" To do this, the authors could for instance puff the trunk of the lateral line system and measure the threshold of the afferents.\n\nReviewer #1 (Recommendations for the authors):\n\nLine 200 \"Our principle finding\", should be \"Our principal finding\".\n\n\"elevated afferent activity underlies the increased responsiveness of cavefish to flow stimuli.\" There is an element of wishful thinking here unless we know what happens with the hair cells.\n\n\"The repeated loss of inhibitory feedback across blind cavefish populations suggests that it is easier to cease function than to develop more neuromasts or other additive alternatives.\" This may be true if the fish will remain in a 6dpf stage all their lives. If you disagree, please explain.\n\nReviewer #2 (Recommendations for the authors):\n\nL79 \u2013 82: \"Spontaneous action potential in afferent (noise activities) is essential for maintaining the state of responsiveness/sensitivity\".\n\nIt is ambiguous if the increase of spontaneous spikes supports the sensitivity.\n\nL104-105: \"we identify a neurophysiological mechanism \u2026 to increase hair cell sensitivity\" Does the data author presented here support this conclusion? I agree that the spontaneous afferent activities are increased, but the 'increase hair sensitivity' needs to be proved by a neurophysiological method (eg. puffing to the trunk LLS and measuring the threshold of the afferent). I believe the S/N ratio in the afferent spikes (spikes evoked by actual cupula bending as the Signal; the Noise is the spontaneous skipes of the afferent) is more biologically important for the sensitivity increase. Authors should provide the evidence for the increased sensitivity to keep their conclusion.\n\nThis evidence is also needed to support the statement in the abstract: L43: \"Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish.\" I may have missed finding their evidence, but I could not find the one that supports this statement, particularly for 'lower response threshold'.\n\nIf the authors did not show the above evidence, their abstract summary statement \"\u2026 regression of the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.\" is not supported.\n\nReviewer #3 (Recommendations for the authors):\n\nI have very little to add to my overall recommendations above. I would like to provide only more detail in regards to these comments:\n\n\u2013 I would recommend including a figure outlining the canonical circuit for lateral line function, or, at the very least better labels in figure 3Ci.\n",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b19c482f-f673-41f4-8485-fa8dd69c7c3e",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C1",
+      "claim": "The Mexican tetra, Astyanax mexicanus, exists in two morphs: eyed surface-dwelling populations and blind cave populations.",
+      "claim_type": "EXPLICIT",
+      "source": "A. mexicanus exists in two morphs: (1) eyed surface-dwelling populations and (2) blind cave populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as a fundamental characteristic of the species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b0f2a6c8-29d2-4494-aeeb-5595f317b10d",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C2",
+      "claim": "There are at least 30 independently evolved cavefish populations in the caves of the Sierra de El Abra region of Northeast Mexico.",
+      "claim_type": "EXPLICIT",
+      "source": "There are at least 30 independently evolved cavefish populations in the caves of the Sierra de El Abra region of Northeast Mexico (Espinasa et al., 2018; Herman et al., 2018; McGaugh et al., 2020; Mitchell et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "67225f5b-a406-423e-a8b5-c3f92810bd3a",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C3",
+      "claim": "A. mexicanus populations are interfertile.",
+      "claim_type": "EXPLICIT",
+      "source": "A. mexicanus populations are interfertile, and this attribute has allowed investigators to demonstrate independent convergence of numerous behavioral, developmental, and physiological traits (Chin et al., 2018; Kowalko, 2020; Riddle et al., 2018; Stockdale et al., 2018; Varatharasan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly and supported by citations showing how this property has been used in research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "536a9c65-9650-406e-9070-ad846e7c53a8",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C4",
+      "claim": "The mechanoreceptive hair cells of the lateral line system detect fluid motion relative to the body and play an important role in essential behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanoreceptive hair cells of the lateral line system detects fluid motion relative to the body and play an important role in essential behaviors (McHenry et al., 2009; Mekdara et al., 2018; Olszewski et al., 2012; Oteiza et al., 2017; Stewart et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research on lateral line function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "864ee3cd-1c10-44ef-befa-45cfc00e7870",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C5",
+      "claim": "Cavefish have evolved anatomical enhancements of the lateral line, presumably to compensate for the loss of vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavefish have evolved anatomical enhancements of the lateral line, presumably to compensate for the loss of vision (Kowalko, 2020; McGaugh et al., 2020; Teyke, 1990; Yoshizawa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and includes a speculative element about the compensatory function.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "7d18dd95-35f8-48de-a47e-8fe5d5e5e5eb",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C6",
+      "claim": "Anatomical alterations of the lateral line in cavefish have been linked to substantial changes in behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These anatomical alterations have been linked to substantial changes in behavior (Lloyd et al., 2018; Yoshizawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "8a9983d8-70bb-42e6-a185-4f5ed54d8533",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C7",
+      "claim": "Spontaneous spikes from auditory hair cells enable precise encoding of much higher frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the spontaneous spikes from auditory hair cells have been shown to enable precise encoding of much higher frequencies (K\u00f6ppl, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "e0528057-262d-418b-9834-f8e0df039ddc",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C8",
+      "claim": "Spontaneous depolarizing currents within the hair cell maintain a resting potential within the critical activation range of channels, which is required to ensure transmitter release and decrease the detection threshold of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lateral line, spontaneous depolarizing currents within the hair cell maintain a resting potential within the critical activation range of channels. This range is required to ensure transmitter release; thus these currents decrease the detection threshold of the system (Trapani and Nicolson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "2b27fcb5-a3eb-454b-9338-bccd996da980",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C9",
+      "claim": "Hindbrain efferent neurons issue predictive signals that transmit in parallel to locomotor commands, termed corollary discharge.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, hindbrain efferent neurons (hereafter 'efferents') issue predictive signals that transmit in parallel to locomotor commands, termed corollary discharge (CD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about neural mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "501dbac0-38f7-4233-a906-50cebb037862",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C10",
+      "claim": "Corollary discharges inhibit afferent activity to mitigate sensor fatigue that can result from self-generated stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "CDs inhibit afferent activity to mitigate sensor fatigue that can result from self-generated stimuli (Russell and Roberts, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "ebc3a96b-5dd3-4e30-b9af-cf03876505a5",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C11",
+      "claim": "Active-flow sensing by cavefish depends on detecting reafferent signals while swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, active-flow sensing by cavefish depends on detecting reafferent signals while swimming (Tan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "eacbea1d-491e-4631-ad64-fd0dfacb2bae",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C12",
+      "claim": "Pach\u00f3n cavefish exhibit a significant increase in anterior neuromast quantity as early as 6 dpf compared to surface fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Pach\u00f3n cavefish exhibit this significant increase in anterior neuromast quantity as early as 6 dpf (p < 0.01, t = 3.168, df = 29; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "382c641b-d9bb-4279-a62a-f7728dce5e22",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C13",
+      "claim": "Both surface and Pach\u00f3n populations exhibit a similar number of posterior lateral line neuromasts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both populations exhibit a similar number of posterior lateral line neuromasts (p = 0.77, U = 111.5; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and reference to Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "8a41a982-616b-42fd-b4d3-6ea26381f38f",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C14",
+      "claim": "Neuromasts along the posterior lateral line were comprised of similar quantities of hair cells across blind and surface morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuromasts along the posterior lateral line were comprised of similar quantities of hair cells across blind (n = 11) and surface morphs (n = 9; p = 0.09; Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and reference to Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "924832e5-d80d-4fce-acf0-3d7fa705ef65",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C15",
+      "claim": "No significant interaction was detected between the effects of population and age (5\u20137 dpf) on hair cell counts.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant interaction was detected between the effects of population and age (5\u20137 dpf; F2,72 = 2.96, p = 0.06; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and reference to Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "49a8693f-0e88-4731-8f29-90b74dd2a387",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C16",
+      "claim": "Intrinsic spontaneous activity was higher in Pach\u00f3n cavefish (18.6 \u00b1 0.2 Hz) while the animal was at rest, relative to surface fish (12.4 \u00b1 0.3 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular recordings of posterior lateral line afferents revealed intrinsic spontaneous activity was higher in Pach\u00f3n cavefish (18.6 \u00b1 0.2 Hz) while the animal was at rest, relative to surface fish (12.4 \u00b1 0.3 Hz; p < 0.01, t = 15.97, df = 5,795; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electrophysiological measurements and statistical analysis, with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b35c607e-ac01-4c75-8a61-80c107ff8b70",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C17",
+      "claim": "Evoked afferent activity at 30 Hz was statistically elevated in Pach\u00f3n cavefish (119.6 \u00b1 16.6 Hz) relative to surface fish (73.2 \u00b1 6.9 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The neuromasts were stimulated at different frequencies (5\u201340 Hz) and a pairwise comparison of evoked afferent activity at 30 Hz revealed statistically elevated spike rates in Pach\u00f3n cavefish (n = 12; 119.6 \u00b1 16.6 Hz) relative to surface fish (n = 10; 73.2 \u00b1 6.9 Hz; p = 0.03, t = 2.38, df = 18; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental stimulation data and statistical analysis, with reference to Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "2e238260-0d4c-4a6b-88d3-3a5fd99955ed",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C18",
+      "claim": "Significantly elevated spike rates were detected in response to a 40-Hz stimulus in Pach\u00f3n cavefish (101.3 \u00b1 13.6 Hz) relative to surface fish (52.3 \u00b1 7.0 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly elevated spike rates were also detected in response to a 40-Hz stimulus in Pach\u00f3n cavefish (101.3 \u00b1 13.6 Hz) relative to surface fish (52.3 \u00b1 7.0 Hz; p < 0.01, t = 3.00, df = 18; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental stimulation data and statistical analysis, with reference to Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "1275349e-a664-48fa-b31d-08ee687d2195",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C19",
+      "claim": "Spontaneous afferent activity is a reliable metric for estimating the sensitivity of the lateral line.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these findings support spontaneous afferent activity as a reliable metric for estimating the sensitivity of the lateral line and reveal enhanced neural responses to hair cell deflection in cavefish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "6f390bf1-d498-4e24-94cf-9c0237a77a21",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C20",
+      "claim": "Swim bouts of longer duration were observed in surface fish (357 \u00b1 5 ms) when compared to Pach\u00f3n cavefish (264 \u00b1 4 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "Swim bouts of longer duration were observed in surface fish (357 \u00b1 5 ms; n = 3167 swim bouts) when compared to Pach\u00f3n cavefish (264 \u00b1 4 ms; n = 2612 swim bouts; p < 0.01, t-stat = 15.2, df = 5777).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "e30df7e6-3e59-48b2-b6ba-9b3d33365171",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C21",
+      "claim": "During most surface fish swim bouts there was a reduction in afferent activity (85.8%), with many resulting in complete quiescence of transmissions (48.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "During most surface fish swim bouts there was a reduction in afferent activity (n = 1966/2291, 85.8%), many of which resulted in complete quiescence of transmissions (n = 1112/2291, 48.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b6fb8e33-edf3-4594-ab5d-8ba0626ffc49",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C22",
+      "claim": "Afferent activity partially reduced during many swim bouts in Pach\u00f3n cavefish (53.4%), but very few instances led to complete inhibition (11.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, afferent activity partially reduced during many swim bouts in Pach\u00f3n cavefish (n = 1303/2439, 53.4%), but very few instances led to complete inhibition (n = 275/2439, 11.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "d5ff3fdc-47f3-4e65-9ead-a594832b12ff",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C23",
+      "claim": "Surface fish experience significantly higher levels of inhibition (68.5 \u00b1 0.01%) compared to cavefish (28.9 \u00b1 0.01%) during swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, surface fish experience significantly higher levels of inhibition (68.5 \u00b1 0.01%) compared to cavefish (28.9 \u00b1 0.01%; p < 0.01, t = 36.5, df = 4449; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and reference to Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "d0568fd2-9721-4973-ba0c-b061a508438b",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C24",
+      "claim": "Surface fish demonstrate lateral line inhibition during swimming comparable to other fishes with intact visual systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface fish demonstrate lateral line inhibition during swimming comparable to other fishes with intact visual systems (Flock and Russell, 1973; Lunsford et al., 2019; Pichler and Lagnado, 2020; Russell and Roberts, 1972) suggesting cavefish have evolved a unique functional phenotype for sensory gain control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research and includes an inference about cavefish evolution.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "1db0482f-2cbb-4084-a2f3-51f77809cfce",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C25",
+      "claim": "Backfilled efferents revealed similar soma quantities between surface fish (2.4\u00b10.3) and cavefish (3.2\u00b10.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Between populations, backfilled efferents revealed similar soma quantities (surface: 2.4\u00b10.3; cave: 3.2\u00b10.5; p = 0.2, t = 1.36, df = 18) and size (surface: 62.1 \u00b1 3.6 \u00b5m2; cave: 70.9 \u00b1 4.5 \u00b5m2; p = 0.1, t = 1.50, df = 51; Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical measurements and statistical analysis, with reference to Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "bb986bbb-a875-4c05-ac8e-58d82fccf503",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C26",
+      "claim": "Efferent soma size was similar between surface fish (62.1 \u00b1 3.6 \u00b5m2) and cavefish (70.9 \u00b1 4.5 \u00b5m2).",
+      "claim_type": "EXPLICIT",
+      "source": "Between populations, backfilled efferents revealed similar soma quantities (surface: 2.4\u00b10.3; cave: 3.2\u00b10.5; p = 0.2, t = 1.36, df = 18) and size (surface: 62.1 \u00b1 3.6 \u00b5m2; cave: 70.9 \u00b1 4.5 \u00b5m2; p = 0.1, t = 1.50, df = 51; Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by anatomical measurements and statistical analysis, with reference to Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "79a201dd-fbd9-4596-9636-2a750186161d",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C27",
+      "claim": "In control surface fish, average spike rates during and prior to a swim were not positively correlated, but the slope indicates a fractional suppression of 78%.",
+      "claim_type": "EXPLICIT",
+      "source": "From electrophysiological recordings, we observed average spike rates during and prior to a swim were not positively correlated in control surface fish (r2=0.15, F1,13 = 2.3, p = 0.2), but the slope of the line indicates a fractional suppression of 78% that is significantly less than unity (slope 0.1, confidence interval [CI]: \u22120.2 to 0.4; Figure 4Di).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data and reference to Figure 4Di.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "a4730950-4256-4f72-b9aa-a6acf9ecf913",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C28",
+      "claim": "In efferent-ablated surface fish, spike rates during swimming intervals were indistinguishable from those during nonswimming intervals, showing no detectable inhibitory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In the efferent-ablated surface fish, the spike rates during swimming intervals were indistinguishable from those during nonswimming intervals (slope 1.2, CI = \u22120.1 to 2.4) showing no detectable inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data from ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "4e4bba03-1781-41c5-8fcd-79984fc4307f",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C29",
+      "claim": "Putative cholinergic hindbrain efferents are necessary for afferent inhibition in surface fish, but do not demonstrate modulatory control of afferents in cavefish.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, putative cholinergic hindbrain efferents are necessary for afferent inhibition in surface fish, but do not demonstrate modulatory control of afferents in cavefish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ablation experiments comparing surface fish and cavefish.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "10c33cf2-9b12-4a7b-962b-e15e2299d97a",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C30",
+      "claim": "Surface fish afferent spike rates during swimming (3.9 \u00b1 0.1 Hz) were 71% lower than the immediate pre-swim period in control fish (13.7 \u00b1 0.2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Surface fish afferent spike rates during swimming (3.9 \u00b1 0.1 Hz) were 71% lower than the immediate pre-swim period in control fish (13.7 \u00b1 0.2 Hz; Tukey's post hoc test, p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "a9e3d125-1e8c-4382-84ce-3679f3c0d30a",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C31",
+      "claim": "In control Pach\u00f3n cavefish, afferent spike rate during swimming (16.8 \u00b1 0.2 Hz) was not statistically discriminated from pre-swim (20.5 \u00b1 0.2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "In control Pach\u00f3n cavefish, we observed some decrease in afferent spike rate during swimming (16.8 \u00b1 0.2 Hz) but it was not statistically discriminated from pre-swim (20.5 \u00b1 0.2 Hz; Tukey's post hoc test, p = 0.94).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "60faa616-dbbc-4d8d-b7d2-ad36053dfeb8",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C32",
+      "claim": "Efferent ablation in surface fish resulted in afferent activity during swimming (17.4 \u00b1 0.3 Hz) to increase to pre-swim levels (20.7 \u00b1 0.3 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Efferent ablation in surface fish resulted in afferent activity during swimming (17.4 \u00b1 0.3 Hz) to increase to pre-swim levels (20.7 \u00b1 0.3 Hz; Tukey's post hoc test, p = 0.99).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data from ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "c3cf2811-6091-4084-81d5-85961723a0b3",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C33",
+      "claim": "Efferents are necessary for inhibition of afferents during swimming in surface fish.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that efferents are necessary for inhibition of afferents during swimming in surface fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the ablation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "1e914bb2-54a0-44fa-95db-517537a39270",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C34",
+      "claim": "Blind cavefish populations exhibited similar spontaneous spike rates across populations (Pach\u00f3n, Tinaja, and Molino).",
+      "claim_type": "EXPLICIT",
+      "source": "Blind cavefish populations exhibited similar spontaneous spike rates across populations (F2,17 = 0.68, p = 0.52), and swimming showed little effect on lateral line activity across blind cavefish populations (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data and reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "ece4f3f8-e29c-42f0-90f7-aea2e1989134",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C35",
+      "claim": "The relative change in afferent spike rates (inhibition) was similar in Pach\u00f3n (0.28 \u00b1 0.01) and Tinaja (0.32 \u00b1 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a minor decrease in afferent spike rates across cavefish populations and the relative change (i.e., inhibition) was similar in Pach\u00f3n and Tinaja (Tukey's post hoc test; Pach\u00f3n: 0.28 \u00b1 0.01; Tinaja: 0.32 \u00b1 0.02; Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data and reference to Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "e028a142-cef3-4885-8b13-1b2d0c4e9bf2",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C36",
+      "claim": "Molino demonstrated an intermediate phenotype compared to Pach\u00f3n and Tinaja (inhibition: 0.23 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Molino demonstrated an intermediate phenotype compared to Pach\u00f3n and Tinaja (Tukey's post hoc test; Molino: 0.23 \u00b1 0.01; p < 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "4e6c65b7-a93c-4186-ad87-06459a19be8c",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C37",
+      "claim": "The Molino population (new lineage) is most distantly related to the Pach\u00f3n and Tinaja populations (old lineage), originating from a more recent surface fish colonization of caves.",
+      "claim_type": "EXPLICIT",
+      "source": "The Molino population (new lineage) is most distantly related to the Pach\u00f3n and Tinaja populations (old lineage), originating from a more recent surface fish colonization of caves thus providing phylogenetic evidence that coincides with statistically similar groupings (Herman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published phylogenetic research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "f3ff103a-b519-4be4-92a3-7a93ba2d4d48",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C38",
+      "claim": "Afferent spike rates during swimming were not statistically distinguishable from unity across all cave populations (Pach\u00f3n, Tinaja, and Molino).",
+      "claim_type": "EXPLICIT",
+      "source": "Spike rates during swimming and pre-swim intervals were positively correlated in all cave populations, and afferent spike rates during swimming were not statistically distinguishable from unity across populations (Pach\u00f3n: slope = 0.88, CI = \u22120.5 to 2.2; Tinaja: slope = 1.03, CI = \u22120.2 to 2.2; Molino: slope = 1.02, CI = 0.8 to 1.2; Figure 5D), indicating there was no significant decrease in afferent activity during swimming within blind cavefish populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of electrophysiological data and reference to Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "35fe10fa-ea04-4b65-91c1-80f32e7f9210",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C39",
+      "claim": "Elevated lateral line afferent activity and loss of efferent function have repeatedly evolved together across cavefish populations.",
+      "claim_type": "EXPLICIT",
+      "source": "By employing neurophysiological approaches in the lateral line system of A. mexicanus for the first time, we show that elevated lateral line afferent activity and loss of efferent function have repeatedly evolved together across cavefish populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference drawn from the experimental results across multiple populations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "beaa4b2a-9353-4ccc-b794-31a2a63fb13a",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C40",
+      "claim": "The increased afferent activity in cavefish is a likely consequence of eye loss.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased afferent activity in cavefish is a likely consequence of eye loss, which has robust effects on other physiological systems (Dubou\u00e9 et al., 2011; Varatharasan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by citations to research on physiological effects of eye loss.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "202dfbcb-0d7d-41cc-a20a-38ffcfb5c883",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C41",
+      "claim": "Heightened lateral line sensitivity in adults has been previously attributed to increased neuromast density in the anterior lateral line as well as increased hair cell quantities per neuromast.",
+      "claim_type": "EXPLICIT",
+      "source": "Heightened lateral line sensitivity in adults has been previously attributed to increased neuromast density in the ALL as well as increased hair cell quantities per neuromast (Jaggard et al., 2017; Lloyd et al., 2018; McHenry et al., 2008; Patton et al., 2010; Teyke, 1990; Yoffe et al., 2020; Yoffe et al., 2020; Yoshizawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "d6b9b3d9-ba6a-4d8e-8feb-5e242429f935",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C42",
+      "claim": "The increased spontaneous activity that contributes to the enhanced evoked responses in cavefish is a powerful addition for flow sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery of increased spontaneous activity that contributes to the enhanced evoked responses in cavefish is a powerful addition for flow sensing, and we predict that this in combination with the increased number of neuromasts in the ALL (Yoshizawa et al., 2010) is what ultimately enables cavefish to perform active-flow sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference and prediction based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "a726f418-3f43-45ac-a767-2be0b2bb7696",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C43",
+      "claim": "Three blind populations of cavefish (Pach\u00f3n, Molino, and Tinaja) have repeatedly lost the capability for efferent modulation during swimming.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that three blind populations of cavefish (i.e., Pach\u00f3n, Molino, and Tinaja) have repeatedly lost the capability for efferent modulation during swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results across multiple populations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "f5f9e8bf-81b6-431c-9b0b-2d23c137ad61",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C44",
+      "claim": "Lateral line efferent activity can be driven by direct inputs from the visual system in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "When one considers that lateral line efferent activity can be driven by direct inputs from the visual system in zebrafish (Reinig et al., 2017), it seems possible that eye degeneration induces the loss of efferent function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and is used to support a speculative hypothesis.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b8f1665c-0ea4-4122-b0ea-7996b113ddd6",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C45",
+      "claim": "Lateral line efferents are thought to have undergone regressive loss in the ancestral lamprey and hagfish.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with the idea that lateral line efferents are thought to have undergone regressive loss before in the ancestral lamprey and hagfish (Kishida et al., 1987; K\u00f6ppl, 2011; Koyama et al., 1990), both of which are nearly or completely blind during development (Dickson and Collard, 1979; Fernholm and Holmberg, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b4a91ec4-6030-4396-ab94-02978352016d",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C46",
+      "claim": "The cholinergic efferent system is still present in cavefish, having lost functionality rather than disappearing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results illustrate that cholinergic efferent system is still present in cavefish, having lost functionality rather than disappearing (the efferent system is functional in surface fish).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the anatomical and functional data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "f8cb1e3a-b9d5-4637-8d41-d0bc0e7ea77c",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C47",
+      "claim": "Active-flow sensing occurs during swimming and involves using the reflection of self-generated flow fields to follow walls, avoid obstacles, and discriminate between shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Active-flow sensing occurs during swimming and involves using the reflection of self-generated flow fields (Bleckmann et al., 1991) to follow walls (Patton et al., 2010), avoid obstacles (Teyke, 1985; Windsor et al., 2008), and discrimination between shapes (de Perera, 2004; Hassan, 1989; von Campenhausen et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "c7193d6f-5734-47a8-b3a9-d9c9f4a0ede4",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C48",
+      "claim": "The repeated loss of inhibition across populations at the larval stage suggests that selection may act early in development on the efferent over afferent systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeated loss of inhibition across populations at the larval stage suggests that selection may act early in development on the efferent over afferent systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "81280369-54d4-4f77-8a47-7adb9d032d87",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C49",
+      "claim": "Cavefish swim by using different body motions than surface fish, which has been interpreted as a mechanism to enhance wall following.",
+      "claim_type": "EXPLICIT",
+      "source": "Cavefish swim by using different body motions than surface fish. This finding has been interpreted as a mechanism to enhance wall following, which occurs when the bow wake of a swimming cavefish is reflected off of a solid surface and then detected (Patton et al., 2010; Sharma et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "9f3a800c-f848-4b94-ae46-30d53ab5c616",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C50",
+      "claim": "Altered swimming kinematics in cavefish are thought to have arisen from a general increase in sensitivity to flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Altered swimming kinematics are also thought to have arisen from a general increase in sensitivity to flow (Tan et al., 2011; Windsor et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "884831af-4a42-42f4-946c-1b8fe72d50bd",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C51",
+      "claim": "The lack of efferent function in cavefish precludes the sensory feedback necessary for sensing self-movement and body position in water (proprioception).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an alternate suggestion; the lack of efferent function in cavefish precludes the sensory feedback necessary for sensing self-movement and body position in water (proprioception).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "946c8d21-c7cb-41dc-aea3-252c553d8f98",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C52",
+      "claim": "Corollary discharge plays a critical role in swimming efficiency by enabling the tracking of the traveling body wave during undulation.",
+      "claim_type": "EXPLICIT",
+      "source": "CD, a parallel motor command that decreases the afferent activity of fishes when swimming, has recently been found to play a critical role in swimming efficiency by enabling the tracking of the traveling body wave during undulation (Skandalis et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "e346f67d-1e20-44f2-a8ea-e9daa4cb8836",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C53",
+      "claim": "The evolved loss of efferent function that enables cavefish to successfully avoid collisions in subterranean habitats is likely favored over optimizing swimming efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the evolved loss of efferent function that enables cavefish to successfully avoid collisions in subterranean habitats is likely favored over optimizing swimming efficiency (Nakamura, 1997; Atasavun Uysal et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "54b434e8-0564-4cba-b4d5-0bcdf08dc839",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C54",
+      "claim": "Loss of efferent function will be found in other blind hypogean species.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that loss of efferent function will be found in other blind hypogean species (Costa Sampaio et al., 2012) and that their respective surface populations will possess intact efferent functionality, as we have found in A. mexicanus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on the findings in A. mexicanus.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b85f8a72-2692-45f1-8375-cc35aad733b3",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C55",
+      "claim": "Anterior lateral line neuromasts had previously been shown to differ in quantities and morphology as early as 2 months post fertilization between surface and cavefish.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterior lateral line (ALL) neuromasts had previously been shown to differ in quantities and morphology as early as 2 months post fertilization between surface and cavefish (Yoshizawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "bbe4b0aa-cb0a-4e56-b2c8-0375469c1e09",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C56",
+      "claim": "The posterior lateral line was exclusively probed to establish whether sensory systems that are anatomically similar exhibit neurophysiological differences that contribute to enhanced sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We exclusively probed the posterior lateral line afferent neurons to establish whether sensory systems that are anatomically similar exhibit neurophysiological differences that contribute to enhanced sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "00b5acf4-9fa4-48f9-ac24-25c3b88d4c5d",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C57",
+      "claim": "Extracellular recordings of posterior lateral line afferents were adapted from protocols used in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the physiological basis of differences in lateral line function across surface and cavefish we used extracellular lateral line recordings adapted from protocols used in zebrafish (Figure 2A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "127ed639-bac3-4440-9810-802f4f7c9dc4",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C58",
+      "claim": "The Tinaja and Pach\u00f3n populations are derived from similarly timed colonization events.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared lateral line activity between three different cave populations (Figure 5A); the Tinaja and Pach\u00f3n populations, which are derived from similarly timed colonization events, and the Molino population that is derived from a more recent colonization event (Bradic et al., 2012; Dowling et al., 2002; Herman et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to published phylogenetic research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "ad72512b-1687-4e5f-9007-d29894e96755",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C59",
+      "claim": "The Molino population is derived from a more recent colonization event than Pach\u00f3n and Tinaja.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared lateral line activity between three different cave populations (Figure 5A); the Tinaja and Pach\u00f3n populations, which are derived from similarly timed colonization events, and the Molino population that is derived from a more recent colonization event (Bradic et al., 2012; Dowling et al., 2002; Herman et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to published phylogenetic research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "01fc0105-8e45-474f-8058-1aaf2f10650e",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C60",
+      "claim": "Three independently derived cavefish populations have evolved persistent afferent activity during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that three independently derived cavefish populations have evolved persistent afferent activity during locomotion, suggesting for the first time that partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study based on experimental data across multiple populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "6587a491-f6d8-4c76-9a50-82e1c566300c",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C61",
+      "claim": "Partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that three independently derived cavefish populations have evolved persistent afferent activity during locomotion, suggesting for the first time that partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel inference drawn from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "55976ec4-418a-4ec5-94d6-5ebf33a8ed2e",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C62",
+      "claim": "Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish leading to increased evoked potentials during hair cell deflection in cavefish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental measurements of spontaneous and evoked activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "943f6c5f-e943-4508-9906-2af97caa3602",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C63",
+      "claim": "Elevated endogenous afferent activity leads to increased evoked potentials during hair cell deflection in cavefish.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish leading to increased evoked potentials during hair cell deflection in cavefish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting spontaneous activity to evoked responses based on experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "2312a3e9-a221-480d-9644-a6f61ce9f987",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C64",
+      "claim": "Differences in intrinsic afferent signaling and gain control exist across A. mexicanus populations.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies indicate differences in intrinsic afferent signaling and gain control across populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings from the neurophysiological studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "af25cf84-ec12-4c1f-8086-fc279f7d8d1d",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C65",
+      "claim": "Higher spontaneous activity is one of two mechanisms responsible for higher lateral line sensitivity in cavefish.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher spontaneous activity is one of two mechanisms that are responsible for higher lateral line sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "a4d3e463-9901-4180-9895-c8058b6e05ae",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C66",
+      "claim": "The inhibitory effects of the efferent system during swimming is a feedback mechanism conserved across the diversity of fishes.",
+      "claim_type": "EXPLICIT",
+      "source": "The other involves the inhibitory effects of the efferent system during swimming, a feedback mechanism that is conserved across the diversity of fishes (Flock and Russell, 1973; Lunsford et al., 2019; Montgomery et al., 1996; Montgomery and Bodznick, 1994; Roberts and Russell, 1972; Tricas and Highstein, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "7d3d6f33-3fd2-4e0c-8723-d0465046bf30",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "claim_id": "C67",
+      "claim": "The inhibitory feedback mechanism is true in swimming surface fish but not in cavefish.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true in swimming surface fish but not in cavefish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results comparing surface fish and cavefish.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eb1a5bbb-f6e4-4d50-9062-2b6ca3c0b6e7",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pach\u00f3n cavefish exhibit significantly more anterior lateral line neuromasts than surface fish at 6 dpf, but posterior lateral line neuromasts and hair cell counts per neuromast are similar between populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 provide converging anatomical evidence with appropriate statistical tests (t-tests, Mann-Whitney U, two-way ANOVA) and clear p-values. The data establish that anatomical differences are region-specific (anterior vs. posterior lateral line), which is critical for the study's rationale to focus on the posterior lateral line where anatomy is similar.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cavefish exhibit elevated spontaneous afferent activity and enhanced evoked responses to neuromast stimulation compared to surface fish, indicating lower response thresholds and increased lateral line sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19, C62-C63 present electrophysiological data with appropriate statistical tests showing both higher baseline activity and stimulus-frequency-dependent increases in evoked responses. The inference that spontaneous activity correlates with sensitivity (C19) is reasonable given the convergent evidence, though the causal mechanism remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Surface fish experience significantly greater inhibition of lateral line afferent activity during swimming (68.5%) compared to cavefish (28.9%), with surface fish showing patterns comparable to other fish with intact vision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 provide quantitative analysis of afferent activity during swimming with large sample sizes (>2000 swim bouts per population) and appropriate statistical tests. The comparison to other fish species (C24) is supported by citations, strengthening the interpretation that cavefish have evolved a unique phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "7c306b23-4e7a-48fd-964a-98a9fcb61553",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Efferent neurons are anatomically similar between surface fish and cavefish, but ablation experiments demonstrate that efferents are necessary for swim-related inhibition in surface fish while they lack functional modulatory control in cavefish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 combine anatomical measurements (C25-C26) with functional ablation experiments (C27-C32) to demonstrate that the loss of inhibition in cavefish is not due to anatomical absence but functional loss of efferent control. The experimental design with appropriate controls (ablated vs. non-ablated) and statistical analysis (confidence intervals, post-hoc tests) strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Three independently evolved cavefish populations (Pach\u00f3n, Tinaja, and Molino) all exhibit persistent afferent activity during swimming with minimal inhibition, demonstrating convergent evolution of reduced efferent function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38, C43, C60 demonstrate that the loss of swim-related inhibition has evolved independently across multiple cave populations with different evolutionary histories (C37, C58-C59). The statistical analyses show no significant inhibition across all three populations, with confidence intervals including unity. This provides strong evidence for convergent evolution of this neural mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "115e001c-27c0-46dc-8971-996df49b91e5",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study identifies two convergently evolved mechanisms for enhanced lateral line sensitivity in cavefish: elevated spontaneous afferent activity and loss of efferent inhibition during swimming, representing a novel evolutionary mechanism for vertebrate sensory adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C61, C64-C65, C67 synthesize the major findings into a coherent evolutionary framework. The claim that this represents a novel mechanism (C61) is supported by the convergent evolution across independent populations and the demonstration that sensitivity enhancement can occur through loss of inhibition rather than only through anatomical changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "2bce76d4-008e-4e30-bd39-7699c25e4b41",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The loss of efferent function in cavefish may be linked to eye loss, as lateral line efferents can receive visual system inputs in other fish, and similar regressive loss has occurred in other blind species like lamprey and hagfish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40, C44-C46 present speculative hypotheses about the evolutionary mechanism. While the citations to lamprey/hagfish (C45) and zebrafish visual inputs (C44) provide comparative context, the causal link between eye loss and efferent dysfunction remains undemonstrated. The observation that efferents are anatomically present but functionally inactive (C46) is supported, but the mechanistic explanation requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The loss of efferent inhibition may enable active-flow sensing behavior in cavefish by maintaining sensory input during swimming, potentially at the cost of swimming efficiency, and selection may act early in development on efferent rather than afferent systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42, C47-C53 present behavioral and functional interpretations that are largely speculative. While the citations support that active-flow sensing exists (C47) and that altered kinematics occur (C49-C50), the causal connections to efferent loss and the trade-off with swimming efficiency (C52-C53) are hypotheses requiring direct testing. The developmental timing hypothesis (C48) is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "bd691246-f267-4c34-9a01-11e51d834961",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors predict that loss of efferent function will be found in other blind hypogean species with intact efferent function in their surface-dwelling relatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is a testable prediction based on the findings in A. mexicanus, but it remains unverified. This represents future work rather than a current result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "ab030652-8924-4f11-baf9-d66082100bf8",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background information establishes A. mexicanus as a model system with multiple independently evolved cave populations, describes lateral line function and its anatomical enhancements in cavefish, and explains the role of spontaneous activity and corollary discharge in sensory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide well-cited background information establishing the study system and relevant sensory mechanisms. These are appropriately supported by multiple citations to published literature and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "b6625b07-35dd-4d5d-9489-901183c6fd5b",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study design rationally focuses on the posterior lateral line where anatomy is similar between populations, uses established electrophysiological methods adapted from zebrafish, and compares three cave populations with different evolutionary histories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 describe the methodological rationale and phylogenetic context. The choice to focus on the posterior lateral line (C56) is well-justified given the anatomical similarity shown in C13-C15. The phylogenetic relationships (C58-C59) are appropriately cited and provide important context for interpreting convergent evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    },
+    {
+      "id": "c1d17626-0387-453e-871b-9b0b1624d0a1",
+      "content_id": "637501ef-3584-4ef1-8fa2-ea9bdcd7e19b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior research has attributed heightened lateral line sensitivity in adult cavefish to increased neuromast density and hair cell numbers, and efferent inhibition during swimming is conserved across diverse fish species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C66 summarize prior work with appropriate citations. These establish the context for the current findings by showing what was previously known about anatomical contributions to sensitivity and the conservation of efferent inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:39:05.615990Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eacbea1d-491e-4631-ad64-fd0dfacb2bae",
+      "result_id": "eb1a5bbb-f6e4-4d50-9062-2b6ca3c0b6e7"
+    },
+    {
+      "claim_id": "382c641b-d9bb-4279-a62a-f7728dce5e22",
+      "result_id": "eb1a5bbb-f6e4-4d50-9062-2b6ca3c0b6e7"
+    },
+    {
+      "claim_id": "8a41a982-616b-42fd-b4d3-6ea26381f38f",
+      "result_id": "eb1a5bbb-f6e4-4d50-9062-2b6ca3c0b6e7"
+    },
+    {
+      "claim_id": "924832e5-d80d-4fce-acf0-3d7fa705ef65",
+      "result_id": "eb1a5bbb-f6e4-4d50-9062-2b6ca3c0b6e7"
+    },
+    {
+      "claim_id": "49a8693f-0e88-4731-8f29-90b74dd2a387",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "b35c607e-ac01-4c75-8a61-80c107ff8b70",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "2e238260-0d4c-4a6b-88d3-3a5fd99955ed",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "1275349e-a664-48fa-b31d-08ee687d2195",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "55976ec4-418a-4ec5-94d6-5ebf33a8ed2e",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "943f6c5f-e943-4508-9906-2af97caa3602",
+      "result_id": "1d0d3cf3-d249-4095-b1e5-a7b563f8edf2"
+    },
+    {
+      "claim_id": "6f390bf1-d498-4e24-94cf-9c0237a77a21",
+      "result_id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae"
+    },
+    {
+      "claim_id": "e30df7e6-3e59-48b2-b6ba-9b3d33365171",
+      "result_id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae"
+    },
+    {
+      "claim_id": "b6fb8e33-edf3-4594-ab5d-8ba0626ffc49",
+      "result_id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae"
+    },
+    {
+      "claim_id": "d5ff3fdc-47f3-4e65-9ead-a594832b12ff",
+      "result_id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae"
+    },
+    {
+      "claim_id": "d0568fd2-9721-4973-ba0c-b061a508438b",
+      "result_id": "523d3e09-7780-47c2-b4fa-25f841d4a2ae"
+    },
+    {
+      "claim_id": "1db0482f-2cbb-4084-a2f3-51f77809cfce",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "bb986bbb-a875-4c05-ac8e-58d82fccf503",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "79a201dd-fbd9-4596-9636-2a750186161d",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "a4730950-4256-4f72-b9aa-a6acf9ecf913",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "4e4bba03-1781-41c5-8fcd-79984fc4307f",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "10c33cf2-9b12-4a7b-962b-e15e2299d97a",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "a9e3d125-1e8c-4382-84ce-3679f3c0d30a",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "60faa616-dbbc-4d8d-b7d2-ad36053dfeb8",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "c3cf2811-6091-4084-81d5-85961723a0b3",
+      "result_id": "7c306b23-4e7a-48fd-964a-98a9fcb61553"
+    },
+    {
+      "claim_id": "1e914bb2-54a0-44fa-95db-517537a39270",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "ece4f3f8-e29c-42f0-90f7-aea2e1989134",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "e028a142-cef3-4885-8b13-1b2d0c4e9bf2",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "4e6c65b7-a93c-4186-ad87-06459a19be8c",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "f3ff103a-b519-4be4-92a3-7a93ba2d4d48",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "a726f418-3f43-45ac-a767-2be0b2bb7696",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "01fc0105-8e45-474f-8058-1aaf2f10650e",
+      "result_id": "eaecbdf4-65f6-4664-acb8-5c1f972c91f9"
+    },
+    {
+      "claim_id": "35fe10fa-ea04-4b65-91c1-80f32e7f9210",
+      "result_id": "115e001c-27c0-46dc-8971-996df49b91e5"
+    },
+    {
+      "claim_id": "6587a491-f6d8-4c76-9a50-82e1c566300c",
+      "result_id": "115e001c-27c0-46dc-8971-996df49b91e5"
+    },
+    {
+      "claim_id": "2312a3e9-a221-480d-9644-a6f61ce9f987",
+      "result_id": "115e001c-27c0-46dc-8971-996df49b91e5"
+    },
+    {
+      "claim_id": "af25cf84-ec12-4c1f-8086-fc279f7d8d1d",
+      "result_id": "115e001c-27c0-46dc-8971-996df49b91e5"
+    },
+    {
+      "claim_id": "7d3d6f33-3fd2-4e0c-8723-d0465046bf30",
+      "result_id": "115e001c-27c0-46dc-8971-996df49b91e5"
+    },
+    {
+      "claim_id": "beaa4b2a-9353-4ccc-b794-31a2a63fb13a",
+      "result_id": "2bce76d4-008e-4e30-bd39-7699c25e4b41"
+    },
+    {
+      "claim_id": "f5f9e8bf-81b6-431c-9b0b-2d23c137ad61",
+      "result_id": "2bce76d4-008e-4e30-bd39-7699c25e4b41"
+    },
+    {
+      "claim_id": "b8f1665c-0ea4-4122-b0ea-7996b113ddd6",
+      "result_id": "2bce76d4-008e-4e30-bd39-7699c25e4b41"
+    },
+    {
+      "claim_id": "b4a91ec4-6030-4396-ab94-02978352016d",
+      "result_id": "2bce76d4-008e-4e30-bd39-7699c25e4b41"
+    },
+    {
+      "claim_id": "d6b9b3d9-ba6a-4d8e-8feb-5e242429f935",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "f8cb1e3a-b9d5-4637-8d41-d0bc0e7ea77c",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "c7193d6f-5734-47a8-b3a9-d9c9f4a0ede4",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "81280369-54d4-4f77-8a47-7adb9d032d87",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "9f3a800c-f848-4b94-ae46-30d53ab5c616",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "884831af-4a42-42f4-946c-1b8fe72d50bd",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "946c8d21-c7cb-41dc-aea3-252c553d8f98",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "e346f67d-1e20-44f2-a8ea-e9daa4cb8836",
+      "result_id": "4e5c304d-8e63-41f2-838b-92ec8b0b0506"
+    },
+    {
+      "claim_id": "54b434e8-0564-4cba-b4d5-0bcdf08dc839",
+      "result_id": "bd691246-f267-4c34-9a01-11e51d834961"
+    },
+    {
+      "claim_id": "b19c482f-f673-41f4-8485-fa8dd69c7c3e",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "b0f2a6c8-29d2-4494-aeeb-5595f317b10d",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "67225f5b-a406-423e-a8b5-c3f92810bd3a",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "536a9c65-9650-406e-9070-ad846e7c53a8",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "864ee3cd-1c10-44ef-befa-45cfc00e7870",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "7d18dd95-35f8-48de-a47e-8fe5d5e5e5eb",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "8a9983d8-70bb-42e6-a185-4f5ed54d8533",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "e0528057-262d-418b-9834-f8e0df039ddc",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "2b27fcb5-a3eb-454b-9338-bccd996da980",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "501dbac0-38f7-4233-a906-50cebb037862",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "ebc3a96b-5dd3-4e30-b9af-cf03876505a5",
+      "result_id": "ab030652-8924-4f11-baf9-d66082100bf8"
+    },
+    {
+      "claim_id": "b85f8a72-2692-45f1-8375-cc35aad733b3",
+      "result_id": "b6625b07-35dd-4d5d-9489-901183c6fd5b"
+    },
+    {
+      "claim_id": "bbe4b0aa-cb0a-4e56-b2c8-0375469c1e09",
+      "result_id": "b6625b07-35dd-4d5d-9489-901183c6fd5b"
+    },
+    {
+      "claim_id": "00b5acf4-9fa4-48f9-ac24-25c3b88d4c5d",
+      "result_id": "b6625b07-35dd-4d5d-9489-901183c6fd5b"
+    },
+    {
+      "claim_id": "127ed639-bac3-4440-9810-802f4f7c9dc4",
+      "result_id": "b6625b07-35dd-4d5d-9489-901183c6fd5b"
+    },
+    {
+      "claim_id": "ad72512b-1687-4e5f-9007-d29894e96755",
+      "result_id": "b6625b07-35dd-4d5d-9489-901183c6fd5b"
+    },
+    {
+      "claim_id": "202dfbcb-0d7d-41cc-a20a-38ffcfb5c883",
+      "result_id": "c1d17626-0387-453e-871b-9b0b1624d0a1"
+    },
+    {
+      "claim_id": "a4d3e463-9901-4180-9895-c8058b6e05ae",
+      "result_id": "c1d17626-0387-453e-871b-9b0b1624d0a1"
+    }
+  ],
+  "comparisons": []
+}

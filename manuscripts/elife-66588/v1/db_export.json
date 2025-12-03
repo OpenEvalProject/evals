@@ -1,0 +1,1388 @@
+{
+  "submission": {
+    "id": "95fc3e7d-2cfe-4d5c-ac53-5525717cbb9c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T07:58:55.861205Z",
+    "updated_at": "2025-12-03T07:58:55.861205Z"
+  },
+  "content": [
+    {
+      "id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "submission_id": "95fc3e7d-2cfe-4d5c-ac53-5525717cbb9c",
+      "content_type": "manuscript",
+      "content_text": "# Cell-to-cell heterogeneity in Sox2 and Bra expression guides progenitor motility and destiny\n\n## Authors\n\n- Mich\u00e8le Romanos<sup>1</sup>\n- Guillaume Allio<sup>1</sup>\n- Myriam Roussign\u00e9<sup>1</sup> ([ORCID: 0000-0002-4240-4105](https://orcid.org/0000-0002-4240-4105))\n- L\u00e9a Combres<sup>1</sup>\n- Nathalie Escalas<sup>1</sup>\n- Cathy Soula<sup>1</sup>\n- Fran\u00e7ois M\u00e9devielle<sup>1</sup>\n- Benjamin Steventon<sup>3</sup> ([ORCID: 0000-0001-7838-839X](https://orcid.org/0000-0001-7838-839X))\n- Ariane Trescases<sup>2</sup>\n- Bertrand B\u00e9naz\u00e9raf<sup>1</sup> ([ORCID: 0000-0002-1937-637X](https://orcid.org/0000-0002-1937-637X)) \u2020\n\n### Affiliations\n\n1. Molecular, Cellular and Developmental biology department (MCD), Centre de Biologie Int\u00e9grative (CBI), Universit\u00e9 de Toulouse, CNRS, UPS Toulouse France\n2. Institut de Math\u00e9matiques de Toulouse UMR 5219, Universit\u00e9 de Toulouse Toulouse France\n3. Department of Genetics, University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough cell-to-cell heterogeneity in gene and protein expression within cell populations has been widely documented, we know little about its biological functions. By studying progenitors of the posterior region of bird embryos, we found that expression levels of transcription factors Sox2 and Bra, respectively involved in neural tube (NT) and mesoderm specification, display a high degree of cell-to-cell heterogeneity. By combining forced expression and downregulation approaches with time-lapse imaging, we demonstrate that Sox2-to-Bra ratio guides progenitor\u2019s motility and their ability to stay in or exit the progenitor zone to integrate neural or mesodermal tissues. Indeed, high Bra levels confer high motility that pushes cells to join the paraxial mesoderm, while high levels of Sox2 tend to inhibit cell movement forcing cells to integrate the NT. Mathematical modeling captures the importance of cell motility regulation in this process and further suggests that randomness in Sox2/Bra cell-to-cell distribution favors cell rearrangements and tissue shape conservation.\n\n## Introduction\n\nCells are the functional units of living organisms. During embryogenesis, they divide and specify in multiple cell types that organize spatially into tissues and organs. Specification events take place under the influences of the cell\u2019s own history and of environmental clues. Over the last years, access to new technologies has revealed that embryonic cells often display an unappreciated level of heterogeneity. For instance, gene expression analyses suggest that, within the same embryonic tissue, cells that were thought to be either equivalent or different are actually organized into a continuum of various specification states (Farrell et al., 2018; Wagner et al., 2018). The impact of this new level of complexity on morphogenesis has not been extensively explored due to the difficulty of experimentally manipulating expression levels within targeted populations of cells in vivo. Progenitor cells located at the posterior tip of the vertebrate embryo, in an area known as the progenitor zone (PZ), constitute a great model to study how a population of stem-like cells develops into different cell types. The use of fluorescent tracers in bird and mouse embryos has revealed that cells of the PZ, called here posterior progenitors, contribute to formation of the presomitic mesoderm (PSM), the mesodermal tissue that generates muscle and vertebrae but also of the neural tube (NT), the neuro-ectodermal tissue that gives rise to the central nervous system (Selleck and Stern, 1991; Iimura et al., 2007; Wilson and Beddington, 1996; Psychoyos and Stern, 1996). These studies also evidenced different cell behaviors with some cells exiting the PZ and others remaining resident in this area. Grafting experiments next showed that resident posterior progenitors have the capacity to self-renew while providing new neural and mesodermal progenies (Cambray and Wilson, 2002; McGrew et al., 2008), thus indicating that the PZ contains progenitors of different tissues. Heterogeneity in the\u00a0progeny of PZ cells was further confirmed by retrospective clonal analysis studies performed in the mouse embryo which revealed the existence of single progenitors, giving rise either to neural or mesodermal cells, but also of bi-potent progenitors, named neuro-mesodermal progenitors (NMPs), that generate both neural and mesodermal cells (Tzouanacou et al., 2009). The existence of bi-potent progenitors has since been shown at earlier stages of zebrafish development (Attardi et al., 2018) and in bird embryos (Solovieva et al., 2020; Wood et al., 2019; Guillot et al., 2021) (for reviews Wymeersch et al., 2021; Sambasivan and Steventon, 2020). Thus, to sustain the\u00a0formation of tissues that compose the vertebrate body axis, the heterogeneous population of posterior progenitors must maintain an appropriate balance between the two choices of staying in place and self-renew or exit the progenitor region to contribute to the\u00a0formation of the NT and the PSM. How this balance is established and controlled over time remains an open question.\n\nTwo transcription factors, Sox2 (SRY sex-determining region Y-box 2) and Bra (Brachyury), have been described for their respective roles in neural and mesodermal specification during embryonic development (Herrmann et al., 1990; Bergsland et al., 2011). Sox2 is known to be expressed in the neural progenitors that form the NT where it contributes to maintain their undifferentiated state. Its involvement in the\u00a0neural specification has also been revealed by a study showing that ectopic expression of Sox2 in cells of the PSM is sufficient to reprogram these cells, which then adopt a neural identity (Takemoto et al., 2011). Bra protein was initially identified for its essential function in the\u00a0formation of the paraxial mesoderm during the posterior extension phase (Herrmann et al., 1990; Wilson et al., 1995). Its crucial role in mesodermal specification has been demonstrated, in particular, by phenotypic study of chimeric mouse embryos composed of both Bra mutant and wild-type cells, and in which only wild-type cells are capable of generating posterior mesoderm (Wilson and Beddington, 1997). More recent studies have shown that Sox2 and Bra are expressed in posterior progenitors of developing embryos, indicating that activation of their expression takes place in progenitor cells before these cells colonize the NT or the PSM (Olivera-Martinez et al., 2012; Wymeersch et al., 2016; Martin and Kimelman, 2012). In addition, these studies have shown that both proteins are co-expressed in progenitor cells, an observation consistent with the presence of bi-potent progenitors in this tissue. Importantly, it has been found that mouse progenitors display regional differences in Sox2 and Bra expression levels with regions of higher Sox2 in the PZ being neural-fated, and those with higher Bra being mesoderm-fated (Wymeersch et al., 2016). Works done in mouse embryos and in in vitro systems derived from embryonic stem cells indicate that Bra and Sox2 influence the choice between neural and mesodermal lineages by their antagonistic activities on the regulation of neural and mesodermal gene expression (Koch et al., 2017; Veenvliet et al., 2020).\n\nIn this study, we aimed at understanding further the relationships between the processes of cell specification and tissue morphogenesis within the PZ, with a particular attention to cellular mechanisms underlying the tightly regulated balance between maintenance of residing posterior progenitors and production of exiting cells that contribute to the\u00a0formation of mesodermal and neural tissues. By analyzing Sox2 and Bra expression in the PZ of the quail embryo, we show that these proteins are expressed with various levels from one cell to another, thus highlighting an important degree of cell-to-cell heterogeneity in this area. Using overexpression and downregulation approaches, we provide evidence that the relative levels of Sox2 and Bra proteins are a key determinant for posterior progenitor choice to stay in place or exit the PZ to join their destination tissues (neural and mesodermal). Time-lapse experiments further revealed that most posterior progenitors are highly migratory without strong directionality. Functional experiments then revealed that heterogeneous levels of Sox2 and Bra control cell motility: Bra promotes cell motility whereas Sox2 inhibits it indicating a crucial role of motility in guiding progenitors segregation. Mathematical modeling of this process suggests that the spatial distribution of Sox2/Bra heterogeneity is an important factor regulating morphogenesis. Indeed, while graded expression of Sox2/Bra confers a higher short-term stability in PZ shape, random distribution provides a\u00a0higher rate of elongation, tissue fluidity, and long-term conservation of tissue shape.\n\n## Results\n\n### Levels of Sox2 and Bra proteins display high spatial cell-to-cell variability in the PZ\n\nThe transcription factors Sox2 and Bra are known to be co-expressed in progenitors of the PZ (Olivera-Martinez et al., 2012; Wymeersch et al., 2016). As they differentiate from posterior progenitors, neural cells maintain Sox2 expression and downregulate Bra while mesodermal cells downregulate Sox2 and maintain Bra expression. Although Sox2 and Bra are recognized to be key players in driving neural and mesodermal cell fates, the spatial and temporal dynamics of these events remain to be elucidated. As a first step to address this question, we carefully examined the\u00a0expression levels of the two proteins in the PZ of the quail embryo at stages HH10\u201311. As expected, analyses of immunodetection experiments revealed co-expression of Sox2 and Bra in nuclei of all PZ cells (Figure 1A\u2013C) (n=8 embryos). Noticeably, we observed a high heterogeneity in the relative levels of Sox2 and Bra proteins between neighboring PZ cells. We indeed found intermingled cells displaying high Sox2 (Sox2high) and low Bra (Bralow) levels and, conversely, Brahigh and Sox2low levels as well as cells in which both proteins appear to be at equivalent levels. This cellular heterogeneity was very apparent when compared to the adjacent nascent tissues, that\u00a0is, the NT and the PSM, where Sox2 and Bra protein levels were found to be very homogenous between neighboring cells (Figure 1D\u2013F). Cell-to-cell heterogeneity in posterior progenitor was detected as early as stages HH5\u20136, a stage corresponding to initial activation of Sox2 and Bra co-expression in the quail embryo (Figure 1\u2014figure supplement 1). We also observed heterogeneous levels of Sox2 and Bra proteins in PZ cells of chicken embryo, indicating that it is not a specific feature of quail (Figure 1\u2014figure supplement 2). To infer how Sox2 and Bra protein levels go from being co-expressed in a heterogeneous manner in the PZ to being expressed homogeneously in the nascent tissues, we analyzed variations of their respective levels in a series of seven volumes (containing around 100 cells in each volume) located in a posterior to anterior path (from the PZ to the maturating tissues), corresponding to putative trajectories of PSM or NT cells (Figure 1G\u2013G\u2019). Data showed that the average expression level of Sox2 increases (+2.22 folds, n=7 embryos) while that of Bra decreases (\u22123.81 folds) following the neural path (Figure 1G). On the contrary, along the paraxial mesoderm path, the\u00a0average expression level of Sox2 decreases (\u22122.12 folds, n=7 embryos) while Bra level first increases in the posterior PSM (1.14 folds, positions 1\u20132) and decreases anteriorly (\u22125.06 folds, positions 2\u20137) (Figure 1G\u2019). Next, to define whether the cellular heterogeneity found in the PZ depends more on variability of one of the two transcription factors, we quantified protein levels per nuclei of cells populating the PZ. By plotting Sox2 and Bra levels in individual cells, we noticed a broader distribution for Sox2 levels (coefficient of variation of 41.8%) compared to Bra levels (coefficient of variation of 30.75%) (Figure 1H), indicating that the cell-to-cell heterogeneity in the PZ is preferentially driven by differences in Sox2 levels. To quantify Sox2 and Bra heterogeneity, we calculated the Sox2-to-Bra ratio (Sox2/Bra) for each cell of the PZ as well as for cells of the NT and PSM, and compared these values. Our data showed high divergences between the three tissues and confirmed the high heterogeneity previously observed in PZ cells (Figure 1I). It must however be noticed that these quantitative data revealed a broad range of cell distribution, highlighting, in particular, the presence of cells in the PZ displaying similar Sox2/Bra values as mesodermal or neural cells. We next asked whether the cellular heterogeneity caused by differences in Sox2 and Bra levels is present in the whole volume of the PZ or displays regionalization in this tissue. To address this issue, we analyzed spatial distribution of the Sox2/Bra values on optical transverse sections performed at anterior, mid, and posterior positions of the PZ (Figure 1J\u2013J\u2019\u2019\u2019). This analysis confirmed the heterogeneity of Sox2/Bra values which are equally represented in the mid area of the PZ (Figure 1J\u2019\u2019). Cells with a high ratio level (Sox2High BraLow) were found to be more represented in the most dorso-anterior part of the PZ (Figure 1J\u2019) and cells with a low ratio level (BraHigh Sox2Low) were found to be more represented in the most posterior part of the PZ (Figure 1J\u2019\u2019\u2019). This particular antero-posterior distribution was further confirmed by tissue expression analysis (Figure 1\u2014figure supplement 3). However, it should be noted that variations of Sox2/Bra values were noticed in all these areas, indicating that the Sox2/Bra-related cell-to-cell heterogeneity is present in the whole PZ.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013F) Immunodetection of Sox2 (green) and Bra (red) analyzed at the cellular scale in the caudal part of stage HH11 quail embryo, either in the PZ (A\u2013C) or in the nascent NT and the PSM (D\u2013F). Overlay images are presented in (C) and (F). Note cell-to-cell heterogeneity in Sox2 and Bra levels in the PZ, with neighboring cells expressing higher level of Bra (red arrow), higher level of Sox2 (green arrow), or comparable levels of both proteins (yellow arrow), a feature not apparent in the nascent NT and PSM tissues. (G, G\u2019) Measurements of Sox2 and Bra levels along putative trajectories (yellow lines) of NT (G) and PSM (G\u2019) cells. Fluorescence measurements (blue squares, left images), numbered from 1 to 7, red bars and green dashed lines are errors bars (variability between embryos). (H) Distribution of normalized cell-to-cell expression of Sox2 and Bra in the PZ (n=8 embryos). (I) Cell distribution of Sox2/Bra levels in the PZ (n=9 embryos), the NT (n=7 embryos), and the PSM (n=8 embryos); ratios have been color-coded according to\u00a0a red (higher Bra) to green (higher Sox2) scale shown on the right side. (J\u2013J\u2019\u2019\u2019) Representation of the Sox2-to-Bra ratio (green to red same as (I)) in digital transversal sections (40 \u00b5m) made in the PZ (dashed lines in the double immunodetection image in (J)). Scale bars=10 \u00b5m in (A\u2013F), 100 \u00b5m in (G) and (J).\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013F) Double immunodetection of Sox2 and Bra viewed on whole-mount embryos (A\u2013C) and at cell levels in the PZ (D\u2013F) at stages HH4 (A,\u00a0D), HH5 (B,\u00a0E), and HH6 (C,\u00a0F). (G) Sox2 and Bra average levels in posterior progenitors at different stages of development.\u00a0PZ, progenitor zone.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013H) Double immunodetection of Bra and Sox2, counterstained with DAPI, on stage HH10 chicken embryo. Horizontal sets present successively the DAPI staining (A, E), the Bra (B, F), and Sox2 (C, G) signals and the merged images (D, H) on ventral views of the posterior region (A\u2013D) and on a close up of the PZ ((E\u2013H), white square in (D)). Note variability in the Sox2 and Bra signal intensities in chicken PZ cells: a Bra high/Sox2 low nucleus (red arrow), a Bra low/Sox2 high nucleus (green arrow) and a nucleus with intermediate levels of Sox2 and Bra (yellow arrow).\u00a0PZ, progenitor zone.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Immunodetection of Sox2 (green) and Bra (red) viewed at the tissue scale in the caudal part of stage HH11 quail embryo. Dashed white rectangle delineates the PZ. (B) Quantification of Sox2 (green) and Bra (red) proteins at different antero-posterior and dorso-ventral levels (n=9 embryos, thick lines indicate average values, and\u00a0thin lines demarcate the SEM).\u00a0(C) Optical parasagittal section of Sox2-to-Bra ratios (corresponding to Figure 1J), anterior to the left. Prospective neural tissue is delineated with black dashed line.\u00a0PZ, progenitor zone.\n\nAltogether, our data, highlighting significant variability in Sox2 and Bra protein levels within neighboring progenitors of the PZ, evidence an extensive cell-to-cell heterogeneity of this cell population. Noticeably, despite an overall enrichment of Sox2high cells in the dorsal-anterior part of the PZ and Brahigh cells in the most posterior part, no clear spatial regionalization of these cells was detected, indicating that the PZ is composed of a complex mixture of cells displaying variable Sox2/Bra levels. This variability is further lost as cells enter the NT or the PSM.\n\n### Relative levels of Sox2 and Bra in PZ cells influence their future tissue distribution\n\nThe fact that cell-to-cell heterogeneity caused by differences in the Sox2 and Bra levels is observed in PZ cells but not in the\u00a0PSM and the NT cells was suggestive of a role of these relative protein levels in the decision to leave or not the PZ and to locate in a specific tissue. To test this possibility, we developed functional experiments aimed at increasing or decreasing Sox2 and Bra levels in PZ cells. In the early bird embryo (stages HH4\u20137), the future posterior progenitors are initially located in anterior epithelial structures: the epiblast and the primitive streak. We thus performed targeted electroporation of progenitors in the anterior primitive streak/epiblast of stage HH5 embryos to transfect expression vectors or morpholinos and further analyzed the\u00a0subsequent distribution of targeted cells, focusing on the PZ, the PSM, and the NT (Figure 2). As early as 7 hr after electroporation, we could detect the expected modifications of Sox2 or Bra expression in PZ cells for both overexpression and downregulation experiments (Figure 2\u2014figure supplements 1 and 2). We observed a significant decrease in the Sox2/Bra levels by either overexpressing Bra or downregulating Sox2 and a significant increase of this ratio when Sox2 was overexpressed or when Bra was downregulated (Figure 2A,F). After transfection of expression vectors or morpholinos, we next let the embryos develop until stages HH10\u201311 and examined fluorescent cell distribution in the different tissues. For this, we measured the fluorescence intensity of the reporter protein (GFP) in the PZ, the PSM, and the NT and calculated the percentage of fluorescence in each tissue. We obtained reproducible data using control expression vector with less than 20% of the fluorescent signal found in the PZ (16.78\u00b12.83%), a little more than 20% in the PSM (22.64\u00b13.30%), and about 60% in the NT (60.57\u00b14.39%) (Figure 2B,E). We next found that overexpression of Bra leads to a marked reduction of the fluorescent signal in the PZ (1.17\u00b10.57%) and to an increased signal in the PSM (33.04\u00b14.06%) but has no effect on the NT signal (Figure 2B,C,E). Elevating Bra levels is thus sufficient to trigger cell exit from the PZ and to favor integration in the PSM. However, this is not sufficient to impede PZ cell contribution to form the NT. Similarly, we found that overexpression of Sox2 drives exit of the cells from the PZ (1.16\u00b10.67%) favoring their localization in the NT (75.40\u00b14.57%) without significantly affecting proportions of cells in the PSM (Figure 2B,D,E). To verify that the differences in fluorescence distributions we observed did not result from distinct apoptotic or proliferation rates, we quantified these parameters 7 hr after electroporation. Our data showed no major changes between the different experimental conditions, validating that protein misregulations indeed act by influencing the distribution of cells in the different tissues (Figure 2\u2014figure supplement 3). Spatial distribution of the fluorescent signals obtained using control morpholinos appeared very similar to thoseobserved using the control expression vector (18.93\u00b13.06%, 22.68\u00b14.09%, and 58.38\u00b13.63% for the PZ, the PSM, and the NT, respectively) (Figure 2G,J). We found that downregulation of Bra leads to exit of cells from the PZ (4.16\u00b11.57%) and favors cell localization in the NT (88.23\u00b12.04%) at the expense of the PSM (7.59\u00b11.81%) (Figure 2G,H,J). Similarly, Sox2 downregulation triggers cell exit from the PZ (7.50\u00b12.35%) and, as expected, leads to higher contribution of cells to the PSM (34.59\u00b14.79%) but this does not occur at the expense of cell contribution to the NT (Figure 2G,I,J). These data have been validated by observation of cell distribution on transverse sections (Figure 2\u2014figure supplement 4). It must be noticed that, transverse sections showed the presence of a large proportion of Bra-overexpressing cells located in the medial part of the paraxial mesoderm, very close to the NT, while only a\u00a0few Bra-overexpressing cells were indeed located in the NT. We thus cannot exclude the possibility that, due to this particular cell distribution, the NT signal quantified on whole-mount embryos might have been slightly overestimated (Figure 2E). Even if it were the case, it does not question our main conclusions that Bra overexpression, in comparison to control conditions, favors the exit of progenitors from PZ and their subsequent localization into the paraxial mesoderm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig2-v1.jpg)\n\n**Figure 2.:** (A, F) Sox2-to-Bra ratios calculated following Bra and Sox2 double immunodetection in the PZ performed 7 hr after electroporation. Values were normalized to the average ratio of non-transfected cells of the same region. (A) Sox2/Bra values in cells transfected with Bra (Pcig-Bra) and Sox2 (Pcig-Sox2) expression vectors compared to cells transfected with the empty vector (Pcig). (F) Sox2/Bra values in cells transfected with morpholinos directed against Bra (Bra-Mo) or Sox2 (Sox2- Mo) compared to cells transfected with a Control-Mo. Ratios were calculated on the basis of 286\u2013590 cells and 3\u20135 embryos per condition. (B\u2013D), (G\u2013I) Ventral views of embryos collected 20 hr after electroporation showing the GFP signals (white). The PZ, the PSM, and the NT are delineated by yellow, red, and green dash lines, respectively. Expression vectors or morpholinos used are indicated below each picture. Scale bar=100 \u00b5m. (E, J) Staked histograms displaying the proportion of cells in the PZ (yellow), the PSM (red), and the NT (green). For each experimental condition, proportion of cells in a given tissue was compared to the same tissue of control embryos by unpaired Student's test (n=27 embryos for Pcig-Bra, n=21 embryos control for Pcig, and\u00a0n=23 embryos for Pcig-Sox2; n=28 embryos for Bra-Mo, n=27 embryos for Control-Mo, and n=28 embryos for Sox2-Mo). Error bars represent the SEM.\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013F) Immunodetection of Sox2 performed 7 hr after electroporation of the Pcig-Sox2 (A\u2013C) and the Sox2-Mo (D\u2013F). Horizontal sets show high magnification of the PZ and present successively the GFP signal (white (A, D)), the Sox2 signal (green (B, E)), and the merged images (C, F). Note co-localization of high Sox2 signal and GFP in Pcig-Sox2 transfected cells (yellow arrows in (A\u2013C)) but not in Sox2-Mo transfected cells (blue arrows in (D\u2013F)). (G\u2013L) Immunodetection of Bra performed 7 hr after electroporation of the Pcig-Bra (G\u2013I) and the Bra-Mo (J\u2013L). Horizontal sets show high magnification of the PZ and present successively the GFP signal (white (G, J)), the Bra signal (red (H, K)), and the merged images (I, L). Note co-localization of high Bra signal and GFP in Pcig-Bra transfected cells (yellow arrows in (G\u2013I)) but not in Bra-Mo transfected cells (blue arrows in (J\u2013L)). Scale bar=50 \u00b5m.\u00a0PZ, progenitor zone.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013D) Quantification of Bra (A, C) and Sox2 (B, D) protein levels in cells electroporated with the Pcig-Bra (A, D) or the Pcig-Sox2 (B, C) expression vectors. Note the significant upregulation of Bra and Sox2 in cells electroporated with the Pcig-Bra and the Pcig-Sox2, respectively, compared to control cells (Pcig). Note also the significant downregulation of Bra and Sox2 in cells electroporated with the Pcig-Sox2 and the Pcig-Bra, respectively. (E\u2013H) Quantification of Bra (E, G) and Sox2 (F, H) protein levels in cells electroporated with the Mo-Bra (E, H) or the Mo-Sox2 (F, G). Note the significant downregulation of Bra or Sox2 in cells electroporated with the Mo-Bra and the Mo-Sox2, respectively, compared to control cells (Control-Mo). Note also the significant upregulation of Bra in Mo-Sox2 electroporated cells but not that of Sox2 in Mo-Bra electroporated cells. Levels of protein expression are normalized to neighboring non-electroporated cells.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Quantification of activated Caspase-3 immunostaining among in GFP positive (electroporated) progenitor cells 7 hr after Pcig, Pcig-Sox2, or Pcig-Bra transfection. (B) Quantification of the rates of EdU positive cells (1 hr pulse) among GFP positive (electroporated) progenitor cells 7 hr after Pcig, Pcig-Sox2, or Pcig-Bra transfection. Number of embryos and cells are indicated on the figure; error bars in (B) are standard deviation.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Visualization of GFP-expressing cells (green) 20 hrs after electroporation viewed on whole embryos (ventral views, left panels from A to F) and on transverse sections performed at distinct antero-posteriors levels (indicated by whites bars by ' to ''' for each set of panels, ''' corresponding to the PZ level). Pcig (A\u2013A\u2019\u2019\u2019), Pcig-Bra (B\u2013B\u2019\u2019\u2019), Pcig-Sox2 (C\u2013C\u2019\u2019\u2019), Control-Mo (D\u2013D\u2019\u2019\u2019), Sox2-Mo (E\u2013E\u2019\u2019\u2019), and Bra-Mo (F\u2013F\u2019\u2019\u2019). Transverse section analysis confirms results of Figure 2: control cells located in the PZ (yellow arrowhead),\u00a0in\u00a0the PSM (red arrowhead), and in\u00a0the\u00a0NT (green arrowhead).\u00a0Of\u00a0note, all experimental conditions leads to depletion of electroporated cells in the\u00a0ZP, Pcig-Bra, and Sox2-Mo leads to enrichment of cells in\u00a0the paraxial tissue (red arrowheads), Pcig-Sox2, and Bra-Mo leads to enrichment of cells in the NT (green arrowheads). Beige arrowheads indicate the position of the posterior end of the notochord on whole-mount pictures. Scale bars represent 100 \u00b5m on whole mount and 20 \u00b5m on sections.\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\nThese data, showing that changing the Sox2-to-Bra ratio, tending either toward higher or lower values, is sufficient to trigger cell exit from the PZ, evidence that the relative levels of Sox2 and Bra proteins are the\u00a0key determinant of PZ cell choice to stay in the PZ or exit this area to enter more mature tissues. Our data also point to the critical influence of the relative levels of Sox2 and Bra in controlling the final destination of cells exiting the PZ, with Sox2high (Bralow) cells and Brahigh (Sox2low) cells preferentially integrating the NT and the PSM, respectively.\n\n### PZ cells are highly motile without strong directionality\n\nTo better characterize the movements of posterior progenitors, either staying resident to the PZ or exiting this area, we examined their behaviors using live-cell imaging. We electroporated quail embryos at stage HH5 with a vector encoding for nuclear GFP and performed time-lapse imaging experiments from stage HH8 to stage HH12. At these stages (from stage HH8 onward), posterior progenitors are no longer located in the dorsal epithelium but rather within a dense and internal mesenchymal structure that prefigures the embryonic tailbud\u00a0(Schoenwolf and Delongo, 1980 ; Guillot et al., 2021). In order to compare migration properties between tissues, we focused on the PZ , the PSM and on\u00a0the posterior NT (Figure 3A, Figure 3\u2014video 1). Because the three tissues have a global movement directed posteriorly due to the embryonic elongation, we generated two types of cellular tracking: the raw movement, in which the last-formed somite is set as a reference point, and the \u2018corrected\u2019 movement, in which the cellular movements are analyzed in reference to the ROI (Figure 3B). Tracking cell movements allowed for quantification of motility distribution, directionality of migration, and time-averaged mean squared displacement (MSD)\u00a0(n=7 embryos)\u00a0(Figure 3C\u2013E) . First, we noticed that the average raw motility of PZ cells is higher than that of PSM or NT cells (Figure 3C, top panel). Raw directionality was also found more pronounced for PZ cells in the posterior direction compared to PSM or NT cells (Figure 3D, upper panel). These results thus confirm that the PZ is moving faster in a posterior direction than surrounding tissues, as previously measured using transgenic quail embryos (B\u00e9naz\u00e9raf et al., 2017). Analysis of local (corrected) motility revealed that PZ cells move in average as fast as PSM cells and significantly faster than NT cells (Figure 3C, bottom panel). The distribution of individually corrected PZ cell motilities is however different from the ones of PSM cells as analysis in the PZ showed slower moving cells (PZ corrected motility violin plot in Figure 3C is larger for slow values than the PSM counterpart and Figure 3\u2014figure supplement 1A), indicating that the motile behavior of PZ cells is more heterogeneous than that of PSM cells. To further characterize the\u00a0heterogeneity of PZ cell motile behaviors, we co-electroporated a vector coding for a nuclear marker (NLS-Scarlet) with a Sox2 reporter that drives the expression of a\u00a0destabilized form of eGFP (N1N2-eGFP-Pest). The fluorescence threshold was then adjusted so that only cells emitting high eGFP signal, that\u00a0is, Sox2high cells, were detected. We then compared motilities of progenitors emitting or not the eGFP fluorescent signal and found that negative cells are more motile than positive cells (Figure 3\u2014figure supplement 1B, Figure 3\u2014video 2), thus confirming diversity in cell motile behaviors within the PZ and pointing to cells expressing Sox2 as the least motile cells. As previously reported (B\u00e9naz\u00e9raf et al., 2010), we found that, after tissue correction, the motion of PSM cells was mostly non-directional with, however, a slight tendency toward anterior direction which is expected due to the posterior elongation movements of the reference tissue (Figure 3D, red plot in the lower panel). The distribution of corrected angles of PZ cell motilities was also found globally non-directed, with however a slight tendency toward anterior direction, to some extent more pronounced than for PSM cells, suggesting that our method is able to detect trajectories of cells exiting the PZ to integrate the NT or the PSM (Figure 3D, yellow plot lower panel). Examination of individual cell tracks further confirmed extensive non-directional local migration and neighbor exchanges within the PZ (Figure 3\u2014video 3). As PZ cell movement was found being mostly non-directional, we next looked at their diffusive motion by plotting their MSDs, measured in each tissue over time, as it has been previously done for PSM cells (B\u00e9naz\u00e9raf et al., 2010). This analysis showed that the MSD of posterior progenitors is linear after tissue subtraction, as intense as the MSD of PSM cells and significantly higher than that of NT cells, thus demonstrating the diffusive nature of PZ cell movements (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative image of an H2B-GFP electroporated quail embryo (ventral view) analyzed by live imaging . Transfected cells are detected by the GFP signal (green) . The PZ, the nascent PSM, and the NT are delineated by yellow, red, and green lines respectively. (B) Examples of cell trajectories before (raw) and after tissue motion subtraction (corrected). (C) Distribution of the raw (top) and corrected (bottom) cell motilities computed in the different regions. (D) Directionality of motion assessed by the distribution of angles weighed by the velocity for the different regions, before and after tissue subtraction. (E) Assessment of diffusion by analysis of the mean squared displacement in function of time for the different regions (n=7 embryos, 538 cell trajectories analyzed in the PZ, 496 in the PSM, and\u00a0128 in the NT). Scale bar=100 \u00b5m.\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representation of the distribution of frequency for different classes of speeds ranging from slow -moving cells to fast-moving cells corresponding to Figure 3C corrected motility. Top panel (yellow) corresponds to the PZ, middle panel (red) to the PSM, and bottom panel (green) to the NT. Note that the distributions of speed are different between the three groups, the NT containing more slow cells than the two other tissues and the progenitor zone having slightly more slower cells than the PSM (higher histogram pointed by the blue arrow). (B) Cell motilities for progenitors positive or negative for the\u00a0Sox2 reporter (N1N2-eGFP-Pest). Tracking has been made in the PZ, on cell\u00a0nuclei\u00a0constitutively expressing NLS-Scarlet signal (co-electroporated). Note that GFP positive progenitors display significantly slower motility than negative cells (n=5 embryos).\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\nTaken\u00a0together, these data evidenced that, in the referential of the progenitor region, PZ cell migration is diffusive/without displaying strong directionality (except a slight anterior tendency), with an average motility that is comparable to that of PSM cells and that is significantly higher than that of NT cells. The motility of individual PZ cells is however heterogeneous with some cells exhibiting high motile behavior, as do PSM cells, and others, characterized by higher levels of Sox2 expression, displaying low motility comparable to that of NT cells.\n\n### The Sox2-to-Bra ratio controls motility of PZ cells\n\nTo test if Sox2 and Bra could influence progenitor choice of staying in or exiting the PZ and contribute to NT or PSM by controlling cellular motility, we designed experiments combining functional assay and time-lapse imaging in vivo. Sox2 and Bra were either overexpressed or downregulated in PZ cells and the behaviors of posterior progenitors were followed by time-lapse imaging (Figure 4A\u2013F). We first monitored raw cell motilities (Figure 4\u2014figure supplement 1) and conducted subtraction of the tissue motion to gain insight into local motility and directionality (Figure 4). We found that Bra-overexpressing PZ cells display higher motility without significant differences in directionality when compared to control cells. By contrast, when PZ cells overexpress Sox2, we detected a significant reduction of their motility accompanied by an anterior bias in angle distribution compared to control cells (Figure 4B,C,D, and\u00a0Figure 4\u2014video 1). We found that Bra downregulation leads to similar significant reduction of cell motility, as well as a change in directionality toward the anterior direction (Figure 4B,E,F). Conversely, Sox2 downregulation did not result in significant effect on average cell motility or directionality, even though a tendency toward a slight increase in motility was noticed (Figure 4B,E,F\u00a0and\u00a0Figure 4\u2014video 2). To test if Sox2 and Bra act on motility downstream of neural and mesodermal differentiation processes, we checked the differentiation status of progenitors 7 hr after transfection, at a time when progenitors overexpressing Sox2 or Bra have not yet exited the PZ but when effects of Sox2 or Bra misregulation on cell motility can already be measured (data not shown). We found that neither the neural marker Pax6 nor the mesodermal marker Msgn1 was induced in PZ cells overexpressing Sox2 and Bra, respectively (Figure 4\u2014figure supplement 2). These data thus strongly support the view that the effects of Sox2 and Bra on PZ cell motility is not a consequence of a drastic change in the\u00a0differentiation process of progenitor cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative image of a Pcig electroporated quail embryo (ventral view) used to perform progenitor tracking and motility analysis. Transfected cells are detected by the GFP-signal (green) and the PZ is delineated by the yellow line. (B) Examples of cell tracks after correction in embryos electroporated with expression vectors or morpholinos indicated on each panel. (C, E) Distribution of PZ cell motilities after tissue motion subtraction in gain of function (C) and in downregulation (E) experiments. (D, F) Directionality of cell motion after tissue motion subtraction assessed by the distribution of angles in gain of function (D) and in downregulation (F) experiments (n=7 embryos and 541 trajectories for Pcig, n=5 embryos and 307 trajectories for Pcig-Bra, and\u00a0n=5 embryos and 234 trajectories for Pcig-Sox2; n=5 embryos and 590 trajectories for Control-Mo, n=7 embryos and 753 trajectories for Bra-Mo, and\u00a0n=5 Embryos and 874 trajectories for Sox2-Mo). Scale bar=100 \u00b5m.\u00a0PZ, progenitor zone.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Raw cell movements\u00a0(A, C), elongation(B, D), and raw angle distribution (E, F) measurements for Sox2 and Bra overexpression (A, B, E) and downregulation (C, D, F).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Analysis of msgn1 mRNA expression (A\u2013B\u2019\u2019\u2019) and Pax6 Protein (C-D\u2019\u2019\u2019)\u00a0(red signals) 7 hr after transfection, transfected nuclei are visualized in green. Whole-mounts (A\u2013D) and high-resolution images in the ZP (white dash rectangle on whole mount) (A\u2019\u2013A\u2019\u2019\u2019, B\u2013B\u2019\u2019\u2019, C\u2019\u2013C\u2019\u2019\u2019, D\u2019\u2013D\u2019\u2019\u2019); Pcig (n=6 and 5, A\u2013A\u2019\u2019\u2019, C\u2013C\u2019\u2019\u2019), Pcig-Bra (n=8, B\u2013B\u2019\u2019\u2019), and\u00a0Pcig-Sox2 (n=9, D\u2013D\u2019\u2019\u2019). Note that Bra overexpression does not induce an upregulation of Msgn1 after 7 hr, and that Sox2 overexpression does not induce an upregulation of Pax6 after 7 hr. Scale bars represent 100 \u00b5m on whole mount and 20 \u00b5m on high magnifications.\u00a0PZ, progenitor zone.\n\nThese data, showing that changing the respective levels of Sox2 and Bra is sufficient to modulate PZ cell motility/migration properties, highlight a key role for these transcription factors in controlling PZ cell movements with Sox2 and Bra inhibiting and promoting cell motility, respectively. When cells have high Sox2/Bra levels, they migrate less and are left behind the PZ to be integrated into the NT. When cells have a low Sox2/Bra ratio, they tend to migrate more, mostly in a diffusive manner, explaining how they leave the PZ to be integrated into the surrounding PSM tissues.\n\n### Modeling spatial cellular heterogeneity and tissue morphogenesis\n\nOur data showed that different levels of Sox2 and Bra affect progenitor motility and regulate their contribution to neural and mesodermal tissues. Cells displaying various levels of these proteins were found intermingled in all regions of the PZ, raising the question of the importance of apparent randomness in their spatial distribution on morphogenesis. Because this question is extremely difficult to tackle experimentally, we turned to agent-based mathematical modeling (Figure 5). We set up a model representing developmental times ranging from stage HH8 to stage HH12, a period when the NT, the PSM, and the PZ have already been formed. As there are few dorso-ventral tissue deformations during the selected time window (B\u00e9naz\u00e9raf et al., 2017), we designed a 2D model (X,\u00a0Y). In this model, PZ cells express dynamic Sox2/Bra levels with a defined probability to switch into a Brahigh (Sox2low) state (PSM state) or into a Sox2 high (Bra low) state (NT state). The motility is directly controlled by the Sox2-to-Bra ratio: Bra high (Sox2low) cells display high motility, Sox2high (Bralow) cells display low motility, and undetermined progenitors, meaning cells in which the Sox2-to-Bra ratio is still fluctuating, display intermediate motility (Figure 5A). Based on the known cell-cell adhesion properties of NT (Sox2high) and PSM (Brahigh) cells, we also considered the Sox2-to-Bra ratio as controlling cellular adhesion so that Sox2high (Bralow) cells adhere more to each other than Brahigh (Sox2low) cells. We as well integrated a non-mixing property between cell types in a way that physical boundaries are maintained between tissues (Appendix 1). Finally, we implemented cell proliferation rates and tissue shape to be as close as possible to biological measurements (B\u00e9naz\u00e9raf et al., 2017\u00a0Appendix 1). This framework allowed us to model different types of Sox2/Bra spatial distributions within the PZ. We first simulated a distribution that recapitulates the biological data, combining random cell distribution and gradient patterning, that\u00a0is,. cell-to-cell variations combined with an enrichment in Sox2high cells anteriorly and in Brahigh cells posteriorly, as seen in Figure 1J (Figure 5B). We then verified that this model recapitulates the basic properties of the biological system. Simulations showed that the relative cell numbers (taking into account proliferation) evolve as expected with a stable number of PZ cells and an increased number of NT and PSM cells (Figure 5C). We also found that this model reproduces general trends with regard to cell motilities and non-directionality of cell movements (Figure 5D,E). We next explored the ability of the model to reproduce maintenance of residing posterior progenitors while the NT and PSM extend toward the posterior pole. Looking at different time points of the simulation process, we indeed observed that the PZ is maintained posteriorly during the elongation process\u00a0(Figure 5\u2014video 1). Our biological results pointed out a critical role of the motility control, however, in our model, Sox2 and Bra control cell motility, adhesion, and non-mixing properties. Thus, we wanted to know if motility is indeed an important parameter in comparison to adhesion and non-mixing properties of progenitors in our model. It turns out that without either random motion or adhesion/non-mixing properties, integrity of the tissues is severely affected (Figure 5F), revealing the importance of these parameters in progenitors\u2019 behavior in controlling posterior tissue morphogenesis. To challenge further this model, we next tested its ability to recapitulate the experimental results we obtained by overexpressing or downregulating Sox2 and Bra. For this purpose, we explored the consequences on tissues and cell behaviors of numerically deregulating the Sox2/Bra values. As a result, BraHigh values increase PZ cell motility (Figure 5G), lead to generation of a higher number of PSM cells (Figure 5H), to a depletion of cells in the PZ, and to a shorter NT (Figure 5J; Figure 5\u2014video 2). On the opposite, Sox2High values lead to reduced PZ cell motility (Figure 5G), to a depletion of PZ cells, to an increased number of NT cells, and to an enlarged NT (Figure 5I,J;\u00a0Figure 5\u2014video 2). This model thus recapitulates with success the main biological effects of Sox2 and Bra on progenitor behaviors. To define which particular properties the distribution of heterogeneity, either random or gradient can confer, we created two extreme versions of this model: a first one in which the distribution of Sox2/Bra values in the PZ are fully random (random model) and a second one in which these values are strictly distributed along opposite gradients, that\u00a0is, a decreasing gradient of Sox2 and an increasing gradient of Bra along the antero-posterior axis (gradient model). We next compared these two models with the initial mixed model (Figure 6A). We found that these two extreme cases (random and gradient models) exhibit the main properties regarding PZ maintenance and progenitor distribution than that observed in the mixed model (Figure 6\u2014video 1, Figure 6\u2014figure supplement 1), suggesting that randomness and gradient features might both be at work in this system. We then analyzed in detail a set of additional parameters and compared these parameters for the different models. We first measured the distance traveled by the PZ over time to define the elongation speed according to each model. We found differences between the three models, simulation of the random model showed faster elongation than simulation of the gradient model, while simulation of the mixed model resulted in an intermediate speed (Figure 6A\u2019). To test if posterior movements of resident progenitors also differ between the three models, we tracked cells that remain in the PZ throughout the simulation and calculated the distances they traveled in the Y direction. This analysis showed that resident progenitors have traveled in a more posterior position in the random and the mixed models than in the gradient model, indicating that random distribution of Sox2/Bra values is more efficient in imposing a posterior movement to these cells than graded distribution (Figure 6A\u2019\u2019). From the simulation movies, it was obvious that the shape of the PZ was different throughout the three types of simulations (Figure 6\u2014video 1). By analyzing the PZ shape at the beginning and at the end of the simulation, we found that proportions (length/width) of the PZ were much more conserved over the elongation process in the random model compared to the gradient model where it became larger (medio-lateral) and shorter (antero-posterior) (Figure 6B). Once again, the mixed model gives results that are in between the two extreme models. Finally, to test if the changes we observed at the tissue scale could be due to changes in the diffusivity of cellular migration, we plotted the MSD through time for both the random and the gradient models. We found that the MSD of the random model is higher than that of the mixed model, which itself is higher than the MSD of the gradient model (Figure 6C), suggesting that the spatial heterogeneity in the expression of Sox2 and Bra is enhancing the diffusive behavior of PZ cells. This higher diffusivity can therefore bring more tissue fluidity to deform and remodel the PZ and maintain its global shape over long time scales. Indeed, we observed that the PZ, although progressively losing its initial shape in the gradient model, shows fewer transient deformations than in the random model, this stability being inherited in the mixed model (Figure 6\u2014video 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig5-v1.jpg)\n\n**Figure 5.:** (A) Graphical representation of the mathematical function defining the Sox2-to-Bra ratio dynamics. The Sox2/Bra value oscillates randomly from 0.4 to 1.6 and noise in the system ensures that some cells pass below 0.4 to be specified into PSM cells (red) while some cells pass above 1.6 to become NT cells (green). Low ratios (below 0.4) confer high\u00a0motility\u00a0, high ratios (above 1.6) inhibit motility\u00a0and ratios between 0.4 and 1.6 confer intermediate levels of motility. (B) Posterior region showing the spatial heterogeneity of Sox2/Bra levels with a close-up on the PZ on the bottom panel. (C) Evolution of the number of each cell type over time. (D) Distribution of cell motilities. (E) Directionality of migration in the three tissues. (F) Simulation without random motility (left) or without non-mixing and adhesion (right) for progenitors. (G) Effects of deregulations of the Sox2/Bra values on cell motility (G), cell numbers (H, I), and on tissue evolution at 10 hr (J).\u00a0NT, neural tube; PSM, presomitic mesoderm; PZ, progenitor zone.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig6-v1.jpg)\n\n**Figure 6.:** (A) Random model (left), mixed (defined in Figure 5), and the graded model following opposite gradients (right). (A) Initial conditions and close-up of the PZ showing the spatial organization of Sox2/Bra levels (bottom panels). (A\u2019) Elongation rates measured with the distance traveled by the posterior part of the PZ (black line) in 10 hr. (A\u2019\u2019)\u00a0Y displacement of resident progenitors located at the center (along the anteroposterior axis) of the PZ for each model. (B) Initial (left) and final (right) shapes of the PZ in the different models. Conservation of proportions (length/width) is noted in percentage (100% would correspond to an unchanged shape). (C) MSD calculated for progenitors in the three models.\u00a0MSD, mean squared displacement;\u00a0PZ, progenitor zone.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/66588/elife-66588-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The top panel corresponds to measurements of the gradient model; the bottom panel corresponds to the random model. (A,\u00a0B) (left): Directionality of migration in the three tissues in the gradient model (A, left) and the random model (B, left). (A,\u00a0B) (middle): Evolution of the number of each cell type over time in the gradient model (A, middle) and the random model (B, middle). (A, B) (right): Distribution of cell motilities in the gradient model (A, right) and the random model (B, right).\n\nTaken\u00a0together, by exploring and comparing Sox2/Bra spatial distributions, our modeling data indicate that while the gradient pattern provides stability by limiting local and transient deformations, random distribution of cell-to-cell heterogeneity could promote cell rearrangements, tissue fluidity, and long-term conservation of tissue shape.\n\n## Discussion\n\nIn the present work, we bring evidence that variations of the Sox2-to-Bra ratio in progenitors of the PZ are critical to regulate progenitor motility and tissue destination. Our data support a model in which high levels of Sox2 give cells low motile properties and make them integrate the NT while high levels of Bra rather give them high motile and diffusive properties that push them to exit the PZ and integrate the PSM. Located in-between these low and high motile/diffusive cells are progenitors co-expressing Sox2 and Bra at comparable levels, that are moving with an intermediate speed and remain resident of the PZ as this tissue is moving posteriorly. We propose mathematical models to estimate the importance of spatial cell-to-cell heterogeneity created by variations of the Sox2-to-Bra ratio in the elongation process. As a whole, this study unravels how cellular motility is coupled to progenitors\u2019 segregation into different tissues and sheds a new light on how cell-to-cell heterogeneity might ensure robustness in morphogenesis.\n\nIn this work, we show that Sox2 and Bra proteins are co-expressed in PZ cells of quail embryos. This co-expression is a conserved property of vertebrate embryos since it has been previously reported in chick, zebrafish, mouse, and human embryos (Olivera-Martinez et al., 2012; Wymeersch et al., 2016; Martin and Kimelman, 2012). Interestingly, it has also been noticed that Sox2 and Bra are expressed at different levels and are therefore heterogeneously expressed in the PZ. In particular, it has been shown that cells from the anterior part of the PZ express high level of Sox2 and are fated toward the NT whereas cells from the posterior part of the PZ are expressing high levels of Bra and are fated toward mesodermal destiny (Wymeersch et al., 2016; Kawachi et al., 2020). Even though our data showed that such a pattern is apparent in the quail PZ, an important finding of our work is that neighboring cells with variable levels of Sox2 and Bra are found in all areas of the PZ. How the distribution of this particular cell-to-cell heterogeneity is established and further maintained over the elongation process remains an open question. Graded activity of signaling pathways such as Wnt, FGF, and RA, all known to regulate Bra and Sox2 expression (Ciruna and Rossant, 2001; Yamaguchi et al., 1999; Gouti et al., 2017; Cunningham et al., 2016; Goto et al., 2017), together with dynamic cross-regulatory activities of Sox2 and Bra (Koch et al., 2017) and cell mixing are likely to contribute to create and maintain such a heterogeneity.\n\nThe antagonistic interaction between Sox2 and Bra has been proposed to determine fate decision of posterior progenitors (Koch et al., 2017). However, this has recently been questioned based on data obtained in mouse showing that Bra does not directly repress Sox2 (Guibentif et al., 2021). Interestingly, we also found that Bra-Mo does not lead to an upregulation of Sox2 (Figure 2\u2014figure supplement 2). Due to the inhibitory relationships between Sox2 and Bra, it is therefore difficult to know if the ratio between them or the absolute levels are most important to drive their effects. Independently of their regulative interactions, the different levels of Sox2 and Bra expression we observed between posterior progenitors seem indicative of the presence of mixed cell populations in the PZ harboring different specification states: BraHigh progenitors being engaged toward the mesodermal fate, Sox2 High toward the neural fate while progenitors with comparable levels of the two proteins being situated in between these two states. In agreement, we found that forced expression of Sox2 and downregulation of Bra favor the\u00a0integration of posterior progenitors into the NT while forced expression of Bra and downregulation of Sox2 favor their distribution to the PSM. Downregulation or loss of Bra expression has been associated with retention of cells in the progenitor regions in mouse embryo studies, particularly in the tail bud at the level of the CNH (Chordo-Neural Hinge) (Wilson et al., 1995; Wilson and Beddington, 1997). Although we observed a clear decrease in the number of PZ cells in Bra-Mo compared to control conditions, it is possible that some of the Bra-Mo cells that are remaining in the PZ indeed reside in a region that will contribute to the CNH. Despite clear effects of our experimental approaches on cell localization in the different tissues, results could not explain why, in gain and loss-of-function experiments, preferential distribution of electroporated cells into the NT is not always paralleled by a decrease in their participation to PSM formation (or conversely) (Figure 2E,J). A possible explanation is that a progenitor which is already engaged toward a given fate is no longer competent to switch its fate and, thereby, to change its tissue destination. As mentioned above, we found the different types of progenitors intermingled in all areas of the PZ. Single-cell sequencing studies have revealed the molecular signatures of the different progenitor states; however, due to technical limitations, these studies could not reveal their exact locations within the posterior region. Fate maps studies around stages HH4\u20135 have shown that the distribution of progenitors along the antero-posterior axis of the epiblast/streak is translated in the distribution of their descendants along the medio-lateral axis in formed tissues of older embryos (NT, PSM, and\u00a0lateral plate)\u00a0(Iimura et al., 2007; Psychoyos and Stern, 1996). In this perspective, anterior cells which are expressing high levels of Sox2, give rise to neural cells and more posterior cells, expressing high levels of Bra, give rise to PSM (and eventually to lateral mesoderm for cells located even more caudally). The fact that we found Sox2 and Bra heterogeneously expressed within the PZ is rather suggestive of a more complex picture where position in the progenitor region does not systematically prefigure final tissue destination. Following this scenario, neighboring progenitors could give rise to progeny in different tissues, an observation that is consistent with prospective maps of the PZ in which a small number of labeled cells participate in different tissues (Selleck and Stern, 1991; Iimura et al., 2007; Wilson and Beddington, 1996; Psychoyos and Stern, 1996).\n\nAnalysis of our time-lapse experiments shows that most PZ cells are highly mobile and that this motility is mainly non-directional. Overexpression of Sox2 or downregulation of Bra strongly inhibits cell motility in the PZ leading to an anterior bias in the direction of progenitor movements. At the opposite, overexpression of Bra and, to some extends, downregulation of Sox2, favor a slight increase in PZ cell motility. Similarly, cells located axially in the zebrafish tailbud have been shown to display highly disordered motility, suggesting conservation of the role of high and non-directional progenitor\u2019s motility between vertebrate species (Lawton et al., 2013; Das et al., 2017). The fact that posterior progenitors often exchange neighbors offers an explanation on how the spatial heterogeneity of posterior progenitors is sorted out to form PSM and NT. Indeed, thanks to their highly migratory properties, BraHigh cells could make their way to the surrounding PSM by moving in between other cells including Sox2 High cells that are less motile. It has been shown that Brachyury plays a role in cell migration (Wilson et al., 1995; Wilson and Beddington, 1997; Turner et al., 2014; Wilson et al., 1993). In particular, mouse cells that have a mutation in the Brachyury gene have lower migration speed than wild-type cells when isolated and cultured, explaining part of the mouse embryonic axis truncation phenotype (Hashimoto et al., 1987). Although a role for Sox2 in the control of progenitor cell migration has, to our knowledge, not previously been reported, recent works have demonstrated that a rise of Sox2 expression promotes the transition of posterior progenitors to NT during chick embryo secondary neurulation (Kawachi et al., 2020) and that turning off Sox2 is necessary for NMP to enter the mesoderm in zebrafish embryo (Kinney et al., 2020). In addition, it has also been observed by time-lapse analysis that the dorsal zone between the PZ and the NT does not display excessive cell migration but rather local cell intercalations (Roszko et al., 2007; Gonzalez-Gobartt et al., 2021a). Taken\u00a0together, these data confirm the hypothesis that Sox2High cells could be laid down as the PZ moves posteriorly. In our experiments, while a clear inhibition of cell motility can be obtained by Bra downregulation and Sox2 overexpression, only a subtle enhancement of cell motility was obtained by downregulating Sox2 and overexpressing Bra. These differences can be explained by the fact that posterior progenitor\u2019s Sox2/Bra ratios and motilities are much more similar to ratios and motilities of PSM cells than NT cells (Figures 1 and 3). Biasing progenitors with mesenchymal properties toward a neural state is therefore much more likely to give a difference in motility than a change toward another mesodermal state. In line with this explanation is the fact that during the course of axis elongation posterior progenitors undergo an epithelial-mesenchymal transition before reaching their full potential to give rise to progeny in the NT and the PSM (Guillot et al., 2021; Goto et al., 2017; Dias et al., 2020). Therefore, it is likely that even though Sox2/Bra heterogeneity is present since stage HH5, regulation of progenitor destiny by cellular motility is mostly active after stage HH8 when the progenitors have become mesenchymal with cellular properties that are closer to PSM cells. Indeed, we observed that PZ cell motilities were higher if analyzed between stages HH8 and HH12 compared to the earlier stages HH5 and HH8 (data not shown). Interestingly, the posterior global movement of the PZ region seems constant all along those different stages. Several works, performed in bird embryo, have indicated that physical constraints exerted by neighboring tissues, in particular the PSM, promote the posterior movement of the PZ (B\u00e9naz\u00e9raf et al., 2017; B\u00e9naz\u00e9raf et al., 2010; Xiong et al., 2020; Regev et al., 2017). It is therefore likely that the posterior movement of PZ cells is the result of both local re-arrangements and external forces acting on the whole region. How Sox2 and Bra are regulating local motility is still an open question. One interesting possibility that is taken into account in our mathematical models is that, as it has been demonstrated during NT dorso-ventral patterning (Tsai et al., 2020), differential adhesion between progenitors could regulate their segregation.\n\nBased on our simulations, we propose that both a mix between spatially random and graded patterns heterogeneity in Sox2 and Bra expression are able to maintain progenitors caudally and to guide their progeny in the NT and the PSM. However, little is known about the role of spatial cell-to-cell heterogeneity during morphogenesis. Here, we propose that the spatially random pattern allows more posterior movements, cell rearrangements, and tissue fluidity in the PZ. Interestingly, this fluid-like state as well as disordered cellular movements have been described in PSM tissue to be key for zebrafish embryo axis elongation and morphogenesis (Lawton et al., 2013; Das et al., 2017; Mongera et al., 2018). In addition, the more efficient self-correction observed in the random model is also supportive of spatial cell-to-cell heterogeneity in the PZ providing plasticity to the system. Several studies have shown that this particular region of the embryo is able to regenerate after partial ablation (Joubin and Stern, 1999; Yuan and Schoenwolf, 1999). Spatial cell-to-cell heterogeneity, which allows easier re-organization of remaining cells than graded cell pattern, thus appears to be an enabling factor for self-correction. Moreover, if gradients of Sox2 and Bra are controlled by secreted signals, tissue ablation could be more detrimental to the diffusion of these signals (and re-patterning) than auto-organization of cell-to-cell heterogeneity. Spatial heterogeneity in gene and protein expression is a common trait of living systems and has been observed in many contexts including, early mouse embryos or cancer cells (Prasetyanti and Medema, 2017; Fiorentino et al., 2020). The link between cellular spatial heterogeneity and the robustness of morphogenetic processes that we describe here can therefore be relevant beyond the scope of developmental biology.\n\n## Materials and methods\n\n### Quail embryos and cultures\n\nFertilized eggs of quail (Coturnix japonica), obtained from commercial sources, were incubated at 38\u00b0C at constant humidity and embryos were harvested at the desired stage of development. The early development of quail being comparable to chicken, embryonic stages were defined using quail (Ainsworth et al., 2010) or chicken embryo development tables Hamburger and Hamilton, 1951. Embryos were grown ex ovo using the EC (early chick) technique (Chapman et al., 2001) for 6\u201320 hr at 39\u00b0C in a humid atmosphere.\n\n### Expression vectors and morpholinos\n\ncBra full-length cDNA was cloned by PCR using the following primers (5\u2032-ACCATGGGCTCCCCGGAG-3\u2032; 5\u2032-CTACGCAAAGCAGTGCAGGTGC-3\u2032) into Pcig (Megason and McMahon, 2002). cSox2 was cloned from Pccags-cSox2 (Roellig et al., 2017) using EcoRV/XbaI into Pcig to obtain Pcig-cSox2. N1N2-eGFP-Pest Sox2 gene reporter gene was obtained from Daniela Roellig (Roellig et al., 2017; Uchikawa et al., 2003). 3xnls-mScarlet was obtained from Addgene (Chertkova et al., 2017). Fluorescein-coupled morpholinos (Mo) were synthesized by Gene Tools. The nucleotide sequences of the morpholinos were designed to target the translation initiation site of quail Bra (5\u2032-AAATCCCCCCCCCCTTCCCCGAG-3\u2032) and Sox2 (5\u2032-GTACATTCAAACTACTTTTGCCTGG-3\u2032) mRNAs. The Mo (5\u2032-CCTCTTACCTCAGTTACAATTTATA-3\u2032) directed against the transcript of \u03b2-human globin was used as control.\n\n### Electroporation\n\nWe collected stages HH4\u20136 quail embryos. The solution containing the morpholinos (1 mM) and pCIG empty (1\u20132 \u03bcg/\u03bcl) as a carrier or the DNA solution containing expression vectors Pcig, pCIG-Bra, or pCIG-Sox2 (2\u20135 \u03bcg/\u03bcl) were microinjected between the vitelline membrane and the epiblast at the anterior region of the primitive streak (Iimura and Pourqui\u00e9, 2008). The electrodes were positioned on either side of the embryo and five pulses of 5.2\u00a0V, with a duration of 50 ms, were carried out at a time interval of 200 ms. The embryos were screened for fluorescence and morphology and kept in culture for up to 24 hr. To observe the distribution of fluorescence in electroporated tissues, embryos were cultured overnight and fixed before being mounted, ventral side up. Transversal sections have been made with a cryostat on embryos embedded in gelatine (Andrieu et al., 2020).\n\n### Immunodetection, in situ hybridization and\u00a0proliferation essay\n\nFor immunodetection, embryos of stages HH9\u201311 were fixed for 2 hr at room temperature in formaldehyde 4% in phosphate-buffered saline\u00a0(PBS). Blocking and permeabilization were achieved by incubating the embryos in a solution containing Triton X-100 (0.5%) and donkey serum (1%) diluted in PBS for 2 hr. The embryos were then incubated with primary antibodies to Sox2 (1/5000, EMD Millipore, ab5603), Bra (1/500, R and D Systems, AF2085), cleaved Caspase3 (D175, 1/100, CST #9661S),\u00a0or Pax6 (1/200, MBL, # JM-3636R-100) overnight at 4\u00b0C under agitation. After washes, the embryos were incubated with secondary antibodies coupled with Alexa\u00a0Fluor\u00a0555, Alexa\u00a0Fluor\u00a0488 (1/1000, Thermo\u00a0Fisher\u00a0Scientific), and with DAPI (4\u2032,6-diamidino-2-phenylindole, 1/1000, Thermo\u00a0Fisher\u00a0Scientific D1306) overnight at 4\u00b0C under agitation. For in situ hybridization, probes for quail Mesogenin were amplified with the following primers 5\u2032-CGGAGCACTCTGTCTGCTTA-3\u2032\u00a0and 5\u2032- TCCCTCATGTTCCTCTGTCA-3\u2032. In situ protocol was adapted from Denkers et al., 2004. Proliferation rates were assessed by Edu staining (Click-iT EdU Alexa Fluor 647 Imaging Kit, Thermo\u00a0Fisher\u00a0Scientific, C10340) with a pulse of 1 hr duration, for details see B\u00e9naz\u00e9raf et al., 2017.\n\n### Image acquisition, processing, and quantification\n\nImage acquisition for immunodetection and in situ hybridization was performed using Zeiss 710 laser and Leica SP8 confocal microscopes (20\u00d7, 40\u00d7, 63\u00d7 objectives). Quantification of Sox2 and Bra levels in 3D was made with Fiji or with the spot function (DAPI staining) of Imaris. Immunodetection signals were normalized to DAPI signal to consider loss in intensity due to depth of the tissue. Immunodetection signals and ratios were calculated and plotted using Matlab. Quantification of protein levels in gain and loss of function experiments was performed 7 hr after electroporation by analyzing immunodetection signal levels within GFP positive progenitors and by normalizing to endogenous expressions measured in non-electroporated cells. Fluorescence distribution in tissues was acquired on a wide-field microscope Axio-imager type 2 (Colibri eight multi-diode light source, 10\u00d7 objective). Images of electroporated embryos were processed with the Zen software that allows the assembly of the different parts of the mosaic (\u2018Stitch\u2019 function) and were then processed with the \u2018Stack focuser\u2019 plugin of the ImageJ software. The different tissues were delineated on ImageJ with the hands-free selection tool and the images were then binarized using the threshold tool. The total fluorescence intensity emitted by cells transfected with the different constructs was measured and the sum of the positive pixels for the different tissues was calculated. The percentage of fluorescence distribution in the different tissues was then calculated. Immunodetection/proliferation data were quantified using Imaris (Bitplane) and ImageJ/Fiji (Schindelin et al., 2012) sofwares.\n\n### Live imaging and cell tracking\n\nLive Imaging was done using Zeiss Axio-imager type 2 (10\u00d7\u00a0objective), as previously described\u00a0(Gonzalez-Gobartt et al., 2021b; B\u00e9naz\u00e9raf et al., 2010). Briefly, stages 7\u20138 electroporated embryos were cultured under the microscope at 38\u00b0 in humid atmosphere. Two channels (GFP and brightfield), three fields of views, 10 Z levels were imaged every 6 min for each embryo (six embryos per experiment). Images were stitched and pixels in focus were selected using Stack Focuser (ImageJ). X, Y drift was corrected using MultiStackReg adapted from TurboReg (ImageJ) (Th\u00e9venaz et al., 1998). Image segmentation was done after background correction using Background Subtractor plugin (from the MOSAIC suite in ImageJ) and cell tracking was done using Particle Tracker 2D/3D plugin (ImageJ) (Sbalzarini and Koumoutsakos, 2005). A reference point was defined for each frame at the last formed somite using manual tracking. Regions of interest (ROIs)\u00a0were defined manually and their posterior movement was defined by manual tracking of the tailbud movement. Subtraction of the tissue movement was done by defining the average motions of cells in the region. Violin plots were generated on Prism 8 (Graphpad). MSD and distribution of angles were calculated and plotted with a Matlab routine. Angle distribution was calculated from trajectories weighted with velocities, and plotted as rosewind plot using Matlab.\n\n### Data representation and statistical testing\n\nData were plotted using Excel (Microsoft), Prism (Graphpad), Matlab (Mathworks), and PlotsOfData (Postma and Goedhart, 2019).\u00a0Kolmorogov-Sminorv test was used to test for differences in angle distributions in Figure 4D,F. For all the other comparisons, unpaired Student's test was used, p<0.05*, p<0.001**, p<0.0001***, p<0.00001****, p>0.05 non-significant (ns).\n\n### Mathematical modeling\n\nA cell population of 1100 progenitor cells, 1200 neural cells and 3200 PSM cells was initially distributed in their respective areas. Each cell type was endowed with its proliferation rate, that\u00a0is, 11.49 hrs for progenitor cells, 10.83 hrs for neural cells, and 8.75 hrs for PSM cells. Each cell I was characterized by a given ratio of Sox2/Bra, named R_I(t), with an assigned value from 0 to 2 (depicted as 0\u20132 in Figure 5A to match with biological ratios), and by a 2D position (x_I(t),y_I(t)), each of these variables being time-dependent. In the random model an initial Sox2/Bra ratio value from 0.15 to 0.85 was randomly attributed to progenitor cells. At each time step, each cell updates its Sox2/Bra value through a stochastic differential equation, using the function represented in Figure 5A (+noise) and then updates its position (x,y), depending on the value of the ratio, by a biased/adapted random motion. Interaction properties between cells such as adhesion, maximum density, and packing were implemented in the bias of the random motion as detailed in Appendix\u00a01. Simulations focused on the posterior body (1 unit=150 \u00b5m). Cells movements in the most anterior region were blocked, considering this region, composed of somites and neuroepithelial cells, as a very dense area, and, similarly, cell passage to either side of the PSM was blocked, considering the lateral plate to be a solid structure.\n",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "237c1daf-320a-44d5-a4b5-6e82f8f35abe",
+      "submission_id": "95fc3e7d-2cfe-4d5c-ac53-5525717cbb9c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.66588.sa1](https://doi.org/10.7554/eLife.66588.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nAcceptance summary:\n\nRomanos and colleagues reveal extensive cell-to-cell heterogeneity in levels of Sox2 and Bra in the region containing progenitors for neural and paraxial mesoderm. Gradually, this resolves such that cells with high Bra/low Sox2 are in the mesoderm versus those with high Sox2/low Bra in the neurectoderm. Modulating Sox2 and Bra bias the cells with high Sox2 toward neurectoderm and high Bra toward mesoderm, with the latter being more motile. Finally, they mathematically model these behaviors. The study is nicely done and will be of broad interest to the readership of eLife.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cell-to-cell heterogeneity in Sox2 and Bra expression ratios guides progenitor destiny by controlling their motility\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Valerie Wilson (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers raise several issues that need to be addressed, as detailed in the full reviews below. While the work nicely establishes correlations, we ask that you tone down arguments regarding causality. Specifically, we ask for better analysis of the existing data on effects of up- or down-regulating Sox2 and Bra, as well as improving the model to better fit the experimental data.\n\nReviewer #1 (Recommendations for the authors):\n\n1. It would be important to describe better the experiments in which cell motility was measured. For instance, in the experiment shown in Figure 3 it is not clear where cells were electroporated. I assume that it was in the progress zone, but was this the case? If it was indeed the case and the image on Figure 3A is a representative example of an embryo in which motility was measured, I cannot see cells in the region of the neural tube, whereas there are many in the mesoderm, even at anterior levels. Does this introduce a bias to the results?\n\n2. In the images shown in Supplemental Figure 2 it is hard to see the claimed \"high degree of cell to cell heterogenicity\" that is supposed to illustrate.\n\n3. The authors state \"overexpression of Bra leads to a marked reduction of the fluorescent signal in the PZ (1.17% {plus minus} 0.57) and to an increased signal in the PSM (33.04% {plus minus} 4.06) but has no effect on the NT signal (Figure 2 B, C, E)\". However, in the image shown in Figure 2C there is a clear reduction of the number of cells in the PSM compared to the control and no obvious signals in the NT. A similar problem affects the experiment overexpressing Sox2. In particular, according to the description in the text \"overexpression of Sox2 drives exit of the cell from the PZ (1.16% {plus minus} 0.67) favoring their localization in the NT (75.40% {plus minus} 4.57) without significantly affecting proportions of cells in the PSM (Figure 2 B, D, E)\". However, in the image shown in Figure 2D all the signal is in the NT, with no obvious labelled cell in the PSM. If these are representative images, I do not see that the description in the text matches the images. Also, how can this type of images lead to the quantification shown in panel E of this figure?\n\n4. The number of labelled cells in the embryos after overexpression of Sox2 or Bra is clearly much less than in the control. Does it mean that overexpression of Sox2 or Bra blocks cell division or increase cell death?\n\n5. In Figure 4, the image corresponding to the simulation after 10 hours shown in panel F is the same as the one shown in the control of panel J, but in this case representing 5 hours of simulation (at least according to the Figure legend). Can this be clarified?\n\nReviewer #2 (Recommendations for the authors):\n\nRecent data from chimeras made with Bra mutant and wildtype cells suggests that Bra does not directly repress Sox2 (doi 10.1016/j.devcel.2020.11.013), and in fact morpholino knockdown of Bra does not lead to a significant reduction in the level of Sox2 (Figure S5H). The figure showing the effect of overexpressing Bra seems to show cells at either side of the midline (Figure 2C), ie not in the same pattern as the control vector (Figure 2B). Transverse views should be presented to be convincing that cells are in fact in the neural tube, as scored in Figure 2E, rather than in the medial part of the presomitic mesoderm. If it is the latter, this might explain the apparent tolerance of Bra epression in the neurectoerm. Furthermore, I would have expected from mouse data on Bra knockout cells in chimeras that cells would accumulate in the PZ. However Figure 2H, showing a Bra MO-treated embryo, shows accumulated cells in the posterior part of the neurectoderm- scored as neural tube. Is this in fact an abnormally-shaped PZ? Again sections may be helpful to convince the reader that these cells have really exited the PZ and become neurectoderm. Finally, the authors might be able to usefully comment on whether the ratio of Sox2/Bra is most important, or whether the absolute levels of each protein contribute to the outcome.\n\nThe authors only show limited data on the dorso-ventral organisation of the PZ (Figure 1 and S3). Clearly a part of the heterogeneity in Sox/Bra ratios correlates with the dorso-ventral axis, with Sox2 dominating dorsally and Bra ventrally. This is how I would expect Sox and Bra to be expressed- they should be coexpressed in the PZ epithelium and Sox2 should be downregulated as cells enter the paraxial mesoderm to either side. Likewise I would have expected to see dorsal to ventral movement, as well as mediolateral movement as cells exit the PZ to the paraxial mesoderm. The PZ cell tracks seem to indicate mediolateral movement (Figure 3B-corrected tracks) and so I can't quite understand how this is not more prominent on the radial plots in Figure 3D. This may need more explanation, as the rest of the manuscript, including the modelling, works on the assumption that cell motility is random in the PZ. Intuitively, I would have thought that if random motility is the only factor resulting in segregation of mesoderm/neurectoderm, raising Sox2/lowering Bra in cells would lead to nests of coherent low-motility cells rather than a coherent single neural tube flanked by paraxial mesoderm. Is this what is seen in the slightly branched neural tubes in Figure 4F and J? It doesn't seem to be the case after the experimental manipulations shown in Figure 2.\n\nReviewer #3 (Recommendations for the authors):\n\n\u2013 My main concern is whether cell motility of NMPs is upstream or downstream of the fate choice. Establishing the timing of cell fate commitment with additional markers cell transplantation experiments, or single-cell experiments could be used to clarify this.\n\n\u2013 Additional evidence that supports a role of Sox2/Bra as regulators of cell migration would strengthen the study \u2013 these could include migration assays, use of EMT/migration markers, precise manipulation of Sox2/Bra levels.\n\n\u2013 Measurements of cell motility in the PZ and mesoderm (Figure 3) suggest that NMPs move as much as cells in the mesoderm. Why does the model consider that NMPs move less than the mesoderm? The authors should clarify this.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Cell-to-cell heterogeneity in Sox2 and Bra expression guides progenitor motility and destiny\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Marianne Bronner as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Moises Mallo (Reviewer #1); Valerie Wilson (Reviewer #2).\n\nI am happy to say the reviewers were very pleased with your revisions and only ask for a few clarifications as detailed below.\n\nEssential revisions:\n\n1. The sections in Figure 2\u2014figure supplement 3 illustrate well that the effects on the differentiated cells of Pcig-Sox2 versus Bra-MO are quite similar (decreased mesoderm contribution). However the authors don\u2019t address the question of whether an accumulation of cells in Bra-MO electroporated embryo PZ (specifically in the CNH) has been overlooked. To my eye, it seems that this is visible in section F\u201d of. Comparing the distribution of electroporated cells in the embryos shown, it seems that F\u201d (cells expressing Bra-MO) shows a high proportion of electroporated cells in an abnormally thickened posterior-ventral neural tube (the position looks comparable to that of the section in B\u201d). This is a more posterior location that C\u201d, showing cells overexpressing Pcig-Sox2. It seems to support the idea that knocking down Bra leads to accumulation of cells in the (CNH) of the progenitor zone, as seen before in mouse studies, so that the effect on the progenitors of reducing Bra is not the same as increasing Sox2. I think it would be worth including this in the discussion, if these sections are representative of all embryos of this type.\n\n2. Related to this, it would be helpful if the position of the end of the notochord could be marked in the wholemount picture, to orient the reader.\n\n3. The statement that \u2018the proportion of signal quantified within the neural tube on whole mount (Figure 2E) is probably over-estimated\u2019 (line 196-7) is slightly problematic as it raises a doubt in the reader\u2019s mind about the accuracy of the quantitation. To address this completely, it would be necessary to add data showing the correlation between automated counts and a sample of corresponding manual counts. Alternatively, providing an explanation or a qualifying sentence that says why this is irrelevant to the main argument might suffice.\n\n4. In the response to reviewers, the authors show data supporting the idea that there are no major effects on cell death or cell cycle. It would help the authors\u2019 case to include this in the supplementary data.\n",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3f59101a-c3a7-4f1a-96f0-6ea4ac88f62b",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C1",
+      "claim": "Sox2 and Bra are co-expressed in nuclei of all PZ cells in quail embryos at stages HH10-11.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, analyses of immunodetection experiments revealed co-expression of Sox2 and Bra in nuclei of all PZ cells (Figure 1A\u2013C) (n=8 embryos).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunodetection experiments performed on 8 embryos at stages HH10-11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "6b799212-44e7-423b-affa-9889e1115838",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C2",
+      "claim": "There is high heterogeneity in the relative levels of Sox2 and Bra proteins between neighboring PZ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Noticeably, we observed a high heterogeneity in the relative levels of Sox2 and Bra proteins between neighboring PZ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through immunodetection experiments and quantitative analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "36e9f040-8ef2-471b-b0bf-2b79fd7498f7",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C3",
+      "claim": "PZ cells display intermingled cells with high Sox2 and low Bra levels, high Bra and low Sox2 levels, and cells with equivalent levels of both proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found intermingled cells displaying high Sox2 (Sox2high) and low Bra (Bralow) levels and, conversely, Brahigh and Sox2low levels as well as cells in which both proteins appear to be at equivalent levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through immunodetection experiments and cellular-level analysis shown in Figure 1A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "85fff015-7829-419b-bfa0-8209878b4f62",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C4",
+      "claim": "Sox2 and Bra protein levels are very homogenous between neighboring cells in the adjacent nascent tissues (NT and PSM).",
+      "claim_type": "EXPLICIT",
+      "source": "This cellular heterogeneity was very apparent when compared to the adjacent nascent tissues, that is, the NT and the PSM, where Sox2 and Bra protein levels were found to be very homogenous between neighboring cells (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through immunodetection experiments comparing PZ to NT and PSM tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "92a6ec17-47ec-4aa6-a020-198798f88939",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C5",
+      "claim": "Cell-to-cell heterogeneity in posterior progenitors is detected as early as stages HH5-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-to-cell heterogeneity in posterior progenitor was detected as early as stages HH5\u20136, a stage corresponding to initial activation of Sox2 and Bra co-expression in the quail embryo (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through immunodetection experiments at early developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "7441ae73-ec0f-4685-b1ec-fa1239882f6d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C6",
+      "claim": "Heterogeneous levels of Sox2 and Bra proteins are observed in PZ cells of chicken embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed heterogeneous levels of Sox2 and Bra proteins in PZ cells of chicken embryo, indicating that it is not a specific feature of quail (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through immunodetection experiments in chicken embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "23fa2ecf-a241-4285-8765-3549cfcf2fed",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C7",
+      "claim": "Along the neural path, the average expression level of Sox2 increases (+2.22 folds) while that of Bra decreases (\u22123.81 folds).",
+      "claim_type": "EXPLICIT",
+      "source": "Data showed that the average expression level of Sox2 increases (+2.22 folds, n=7 embryos) while that of Bra decreases (\u22123.81 folds) following the neural path (Figure 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from immunodetection data across 7 embryos along putative neural trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "85e692ab-3adc-4d57-84dc-61dfe5b55e34",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C8",
+      "claim": "Along the paraxial mesoderm path, the average expression level of Sox2 decreases (\u22122.12 folds) while Bra level first increases in the posterior PSM (1.14 folds) and decreases anteriorly (\u22125.06 folds).",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, along the paraxial mesoderm path, the average expression level of Sox2 decreases (\u22122.12 folds, n=7 embryos) while Bra level first increases in the posterior PSM (1.14 folds, positions 1\u20132) and decreases anteriorly (\u22125.06 folds, positions 2\u20137) (Figure 1G').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from immunodetection data across 7 embryos along putative PSM trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "1ddd4ea3-dba3-48b9-b187-20e67af047a9",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C9",
+      "claim": "Cell-to-cell heterogeneity in the PZ is preferentially driven by differences in Sox2 levels (coefficient of variation of 41.8%) compared to Bra levels (coefficient of variation of 30.75%).",
+      "claim_type": "EXPLICIT",
+      "source": "By plotting Sox2 and Bra levels in individual cells, we noticed a broader distribution for Sox2 levels (coefficient of variation of 41.8%) compared to Bra levels (coefficient of variation of 30.75%) (Figure 1H), indicating that the cell-to-cell heterogeneity in the PZ is preferentially driven by differences in Sox2 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from single-cell protein level measurements shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "0504d3bb-5740-461d-9afe-eaa62b05f30f",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C11",
+      "claim": "Cells with a low Sox2/Bra ratio are more represented in the most posterior part of the PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "cells with a low ratio level (BraHigh Sox2Low) were found to be more represented in the most posterior part of the PZ (Figure 1J''').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through spatial distribution analysis of Sox2/Bra ratios on optical sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "8020b2fe-deb2-488d-a822-70f4a757f5bb",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C12",
+      "claim": "Variations of Sox2/Bra values are present in all areas of the PZ, indicating that Sox2/Bra-related cell-to-cell heterogeneity is present in the whole PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that variations of Sox2/Bra values were noticed in all these areas, indicating that the Sox2/Bra-related cell-to-cell heterogeneity is present in the whole PZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed through spatial distribution analysis across different regions of the PZ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "ce8466d8-6757-421b-9b23-0d5ab6e824eb",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C13",
+      "claim": "Overexpression of Bra leads to a significant decrease in the Sox2/Bra ratio in PZ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant decrease in the Sox2/Bra levels by either overexpressing Bra or downregulating Sox2 and a significant increase of this ratio when Sox2 was overexpressed or when Bra was downregulated (Figure 2A,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured 7 hours after electroporation through immunodetection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "3a33f1a3-c1cd-4b29-acef-f7fbcd5e0874",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C14",
+      "claim": "Overexpression of Sox2 leads to a significant increase in the Sox2/Bra ratio in PZ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant decrease in the Sox2/Bra levels by either overexpressing Bra or downregulating Sox2 and a significant increase of this ratio when Sox2 was overexpressed or when Bra was downregulated (Figure 2A,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured 7 hours after electroporation through immunodetection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "a0e0d3fc-b1a3-4536-a9e8-6967e4a8542b",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C15",
+      "claim": "Overexpression of Bra leads to a marked reduction of fluorescent signal in the PZ (1.17\u00b10.57%) and an increased signal in the PSM (33.04\u00b14.06%).",
+      "claim_type": "EXPLICIT",
+      "source": "We next found that overexpression of Bra leads to a marked reduction of the fluorescent signal in the PZ (1.17\u00b10.57%) and to an increased signal in the PSM (33.04\u00b14.06%) but has no effect on the NT signal (Figure 2B,C,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from fluorescence distribution in electroporated embryos at stages HH10-11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "8f89deb2-2a13-47c2-83b6-b08096a3ce90",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C16",
+      "claim": "Overexpression of Sox2 drives exit of cells from the PZ (1.16\u00b10.67%) and favors their localization in the NT (75.40\u00b14.57%).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that overexpression of Sox2 drives exit of the cells from the PZ (1.16\u00b10.67%) favoring their localization in the NT (75.40\u00b14.57%) without significantly affecting proportions of cells in the PSM (Figure 2B,D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from fluorescence distribution in electroporated embryos at stages HH10-11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "d79813ef-809f-4151-82d7-bf3f551d1e74",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C17",
+      "claim": "Downregulation of Bra leads to exit of cells from the PZ (4.16\u00b11.57%) and favors cell localization in the NT (88.23\u00b12.04%) at the expense of the PSM (7.59\u00b11.81%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that downregulation of Bra leads to exit of cells from the PZ (4.16\u00b11.57%) and favors cell localization in the NT (88.23\u00b12.04%) at the expense of the PSM (7.59\u00b11.81%) (Figure 2G,H,J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from fluorescence distribution in morpholino-electroporated embryos at stages HH10-11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "75a52531-127f-4059-a844-60ff8b106872",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C18",
+      "claim": "Sox2 downregulation triggers cell exit from the PZ (7.50\u00b12.35%) and leads to higher contribution of cells to the PSM (34.59\u00b14.79%).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Sox2 downregulation triggers cell exit from the PZ (7.50\u00b12.35%) and, as expected, leads to higher contribution of cells to the PSM (34.59\u00b14.79%) but this does not occur at the expense of cell contribution to the NT (Figure 2G,I,J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from fluorescence distribution in morpholino-electroporated embryos at stages HH10-11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "04b84ab6-1a45-428e-ab88-bb328f915329",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C19",
+      "claim": "The average raw motility of PZ cells is higher than that of PSM or NT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we noticed that the average raw motility of PZ cells is higher than that of PSM or NT cells (Figure 3C, top panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments tracking cell movements in 7 embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "1f88a3e0-9dcd-4da4-b40d-44b1e9ce3d26",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C20",
+      "claim": "Raw directionality was more pronounced for PZ cells in the posterior direction compared to PSM or NT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw directionality was also found more pronounced for PZ cells in the posterior direction compared to PSM or NT cells (Figure 3D, upper panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments analyzing cell movement directionality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "a90fd2ee-e919-4e61-86a3-7bde642fc8b4",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C21",
+      "claim": "PZ cells move on average as fast as PSM cells and significantly faster than NT cells (corrected motility).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of local (corrected) motility revealed that PZ cells move in average as fast as PSM cells and significantly faster than NT cells (Figure 3C, bottom panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments after tissue motion correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "8b4e049a-efa9-4753-a4f1-1df01849894a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C22",
+      "claim": "Sox2high progenitor cells are less motile than Sox2-negative cells in the PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compared motilities of progenitors emitting or not the eGFP fluorescent signal and found that negative cells are more motile than positive cells (Figure 3\u2014figure supplement 1B, Figure 3\u2014video 2), thus confirming diversity in cell motile behaviors within the PZ and pointing to cells expressing Sox2 as the least motile cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments using Sox2 reporter construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "6583d031-925a-4c75-97a0-4a5e191bf427",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C23",
+      "claim": "The MSD of posterior progenitors is linear after tissue subtraction, as intense as the MSD of PSM cells and significantly higher than that of NT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that the MSD of posterior progenitors is linear after tissue subtraction, as intense as the MSD of PSM cells and significantly higher than that of NT cells, thus demonstrating the diffusive nature of PZ cell movements (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments analyzing mean squared displacement over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "3f349c4a-bb45-4f87-95b7-bb6dc4879482",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C24",
+      "claim": "Bra-overexpressing PZ cells display higher motility without significant differences in directionality when compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Bra-overexpressing PZ cells display higher motility without significant differences in directionality when compared to control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments of electroporated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9cda5028-e626-4ae8-8f4d-71b76f895dfb",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C25",
+      "claim": "When PZ cells overexpress Sox2, there is a significant reduction of their motility accompanied by an anterior bias in angle distribution compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when PZ cells overexpress Sox2, we detected a significant reduction of their motility accompanied by an anterior bias in angle distribution compared to control cells (Figure 4B,C,D, and Figure 4\u2014video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments of electroporated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "d1fbf4e8-5c37-41fb-9b1c-64d133e2b500",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C26",
+      "claim": "Bra downregulation leads to significant reduction of cell motility and a change in directionality toward the anterior direction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Bra downregulation leads to similar significant reduction of cell motility, as well as a change in directionality toward the anterior direction (Figure 4B,E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments of morpholino-electroporated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "7db7cab9-758c-4cb1-91f7-06dd0ba48a62",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C27",
+      "claim": "Sox2 downregulation did not result in significant effect on average cell motility or directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Sox2 downregulation did not result in significant effect on average cell motility or directionality, even though a tendency toward a slight increase in motility was noticed (Figure 4B,E,F and Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantified from time-lapse imaging experiments of morpholino-electroporated embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "6637ef72-b3ab-4069-87b6-f6cd9d5984b2",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C28",
+      "claim": "Neither the neural marker Pax6 nor the mesodermal marker Msgn1 is induced in PZ cells overexpressing Sox2 and Bra, respectively, 7 hours after transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neither the neural marker Pax6 nor the mesodermal marker Msgn1 was induced in PZ cells overexpressing Sox2 and Bra, respectively (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Assessed through immunodetection and in situ hybridization 7 hours after electroporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "2de2b9b6-62cd-4ec8-9d62-20cfa3c063d3",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C29",
+      "claim": "The effects of Sox2 and Bra on PZ cell motility is not a consequence of a drastic change in the differentiation process of progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus strongly support the view that the effects of Sox2 and Bra on PZ cell motility is not a consequence of a drastic change in the differentiation process of progenitor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that differentiation markers are not induced 7 hours after Sox2/Bra overexpression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "e55f7173-abc0-4ab2-a18e-425912b5c786",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C30",
+      "claim": "The mathematical model recapitulates the basic properties of the biological system with stable PZ cell numbers and increased NT and PSM cell numbers over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations showed that the relative cell numbers (taking into account proliferation) evolve as expected with a stable number of PZ cells and an increased number of NT and PSM cells (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "097abd15-6b43-406f-9637-69023beec663",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C31",
+      "claim": "The mathematical model reproduces general trends with regard to cell motilities and non-directionality of cell movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that this model reproduces general trends with regard to cell motilities and non-directionality of cell movements (Figure 5D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "4c2a6bb7-fec0-40ec-a7ce-18a0e7df75df",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C32",
+      "claim": "Without either random motion or adhesion/non-mixing properties, integrity of the tissues is severely affected in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "It turns out that without either random motion or adhesion/non-mixing properties, integrity of the tissues is severely affected (Figure 5F), revealing the importance of these parameters in progenitors' behavior in controlling posterior tissue morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations testing different parameter conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "65ac8d58-df35-4251-8648-05a7e92dc384",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C33",
+      "claim": "In the model, BraHigh values increase PZ cell motility, lead to generation of a higher number of PSM cells, to a depletion of cells in the PZ, and to a shorter NT.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, BraHigh values increase PZ cell motility (Figure 5G), lead to generation of a higher number of PSM cells (Figure 5H), to a depletion of cells in the PZ, and to a shorter NT (Figure 5J; Figure 5\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations with altered Sox2/Bra ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5f31da91-4151-4039-a88d-0b12aad66a44",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C34",
+      "claim": "In the model, Sox2High values lead to reduced PZ cell motility, to a depletion of PZ cells, to an increased number of NT cells, and to an enlarged NT.",
+      "claim_type": "EXPLICIT",
+      "source": "On the opposite, Sox2High values lead to reduced PZ cell motility (Figure 5G), to a depletion of PZ cells, to an increased number of NT cells, and to an enlarged NT (Figure 5I,J; Figure 5\u2014video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations with altered Sox2/Bra ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "b867ada3-31da-4f90-ab30-89197679141d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C35",
+      "claim": "The random model shows faster elongation than the gradient model, while the mixed model results in an intermediate speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found differences between the three models, simulation of the random model showed faster elongation than simulation of the gradient model, while simulation of the mixed model resulted in an intermediate speed (Figure 6A').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations comparing different spatial distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "0b0a1408-d3fb-4ab3-9eca-730588fd87b8",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C36",
+      "claim": "Resident progenitors have traveled to a more posterior position in the random and mixed models than in the gradient model.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that resident progenitors have traveled in a more posterior position in the random and the mixed models than in the gradient model, indicating that random distribution of Sox2/Bra values is more efficient in imposing a posterior movement to these cells than graded distribution (Figure 6A'').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations tracking resident progenitor cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "f1b9f8bd-adcf-40e8-bb0d-909aafde12c5",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C37",
+      "claim": "Proportions (length/width) of the PZ are much more conserved over the elongation process in the random model compared to the gradient model.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing the PZ shape at the beginning and at the end of the simulation, we found that proportions (length/width) of the PZ were much more conserved over the elongation process in the random model compared to the gradient model where it became larger (medio-lateral) and shorter (antero-posterior) (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations analyzing tissue shape over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "bef24a00-e6a7-4d21-9377-94d9780a1d5a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C38",
+      "claim": "The MSD of the random model is higher than that of the mixed model, which itself is higher than the MSD of the gradient model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the MSD of the random model is higher than that of the mixed model, which itself is higher than the MSD of the gradient model (Figure 6C), suggesting that the spatial heterogeneity in the expression of Sox2 and Bra is enhancing the diffusive behavior of PZ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling simulations analyzing mean squared displacement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9e119f7b-fe17-4363-ad9e-9939fa294344",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C39",
+      "claim": "Sox2 and Bra are known to be expressed in neural progenitors and paraxial mesoderm, respectively, during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Two transcription factors, Sox2 (SRY sex-determining region Y-box 2) and Bra (Brachyury), have been described for their respective roles in neural and mesodermal specification during embryonic development (Herrmann et al., 1990; Bergsland et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by Herrmann et al., 1990 and Bergsland et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "3ab0102c-d835-4c89-9fbb-215cac2c5013",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C40",
+      "claim": "Sox2 is known to be expressed in neural progenitors that form the NT where it contributes to maintain their undifferentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2 is known to be expressed in the neural progenitors that form the NT where it contributes to maintain their undifferentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Sox2 function in neural development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "7fcaa932-5f22-43a5-b8eb-55b317219314",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C41",
+      "claim": "Ectopic expression of Sox2 in cells of the PSM is sufficient to reprogram these cells to adopt a neural identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Its involvement in the neural specification has also been revealed by a study showing that ectopic expression of Sox2 in cells of the PSM is sufficient to reprogram these cells, which then adopt a neural identity (Takemoto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Takemoto et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "165d6c8a-55a8-4666-a563-91b9fa2e793b",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C42",
+      "claim": "Bra protein was initially identified for its essential function in the formation of the paraxial mesoderm during the posterior extension phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Bra protein was initially identified for its essential function in the formation of the paraxial mesoderm during the posterior extension phase (Herrmann et al., 1990; Wilson et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by Herrmann et al., 1990 and Wilson et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "eb0f708d-05e8-4dde-bf34-f93e957a572d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C43",
+      "claim": "In chimeric mouse embryos composed of both Bra mutant and wild-type cells, only wild-type cells are capable of generating posterior mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "Its crucial role in mesodermal specification has been demonstrated, in particular, by phenotypic study of chimeric mouse embryos composed of both Bra mutant and wild-type cells, and in which only wild-type cells are capable of generating posterior mesoderm (Wilson and Beddington, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Wilson and Beddington, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5a8d9c6c-a066-4d17-b9f0-4e909f049ead",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C44",
+      "claim": "Sox2 and Bra are expressed in posterior progenitors of developing embryos, indicating that activation of their expression takes place in progenitor cells before these cells colonize the NT or the PSM.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies have shown that Sox2 and Bra are expressed in posterior progenitors of developing embryos, indicating that activation of their expression takes place in progenitor cells before these cells colonize the NT or the PSM (Olivera-Martinez et al., 2012; Wymeersch et al., 2016; Martin and Kimelman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by Olivera-Martinez et al., 2012; Wymeersch et al., 2016; Martin and Kimelman, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "da27e5c5-d536-489e-919e-a894d68941f8",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C45",
+      "claim": "Both Sox2 and Bra proteins are co-expressed in progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these studies have shown that both proteins are co-expressed in progenitor cells, an observation consistent with the presence of bi-potent progenitors in this tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies and consistent with the concept of bi-potent progenitors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "14fac430-f9a7-4099-a4d8-c2cfd607dbd7",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C46",
+      "claim": "Mouse progenitors display regional differences in Sox2 and Bra expression levels with regions of higher Sox2 in the PZ being neural-fated, and those with higher Bra being mesoderm-fated.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it has been found that mouse progenitors display regional differences in Sox2 and Bra expression levels with regions of higher Sox2 in the PZ being neural-fated, and those with higher Bra being mesoderm-fated (Wymeersch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Wymeersch et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "96a9d758-3b71-42a8-9b39-13947a012b0c",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C47",
+      "claim": "Bra and Sox2 influence the choice between neural and mesodermal lineages by their antagonistic activities on the regulation of neural and mesodermal gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Works done in mouse embryos and in in vitro systems derived from embryonic stem cells indicate that Bra and Sox2 influence the choice between neural and mesodermal lineages by their antagonistic activities on the regulation of neural and mesodermal gene expression (Koch et al., 2017; Veenvliet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by Koch et al., 2017 and Veenvliet et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "f5ef4286-d026-415c-a6ca-7468ee01640d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C48",
+      "claim": "Cells of the PZ contribute to formation of the presomitic mesoderm (PSM) and the neural tube (NT).",
+      "claim_type": "EXPLICIT",
+      "source": "The use of fluorescent tracers in bird and mouse embryos has revealed that cells of the PZ, called here posterior progenitors, contribute to formation of the presomitic mesoderm (PSM), the mesodermal tissue that generates muscle and vertebrae but also of the neural tube (NT), the neuro-ectodermal tissue that gives rise to the central nervous system (Selleck and Stern, 1991; Iimura et al., 2007; Wilson and Beddington, 1996; Psychoyos and Stern, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies using fluorescent tracers in bird and mouse embryos.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9ff0a928-f0b9-4f6a-b38f-5589fd2db1e8",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C49",
+      "claim": "Resident posterior progenitors have the capacity to self-renew while providing new neural and mesodermal progenies.",
+      "claim_type": "EXPLICIT",
+      "source": "Grafting experiments next showed that resident posterior progenitors have the capacity to self-renew while providing new neural and mesodermal progenies (Cambray and Wilson, 2002; McGrew et al., 2008), thus indicating that the PZ contains progenitors of different tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous grafting experiments by Cambray and Wilson, 2002 and McGrew et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "4c77ee24-591a-476a-b91f-773a9c3b102e",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C50",
+      "claim": "Retrospective clonal analysis studies in mouse embryo revealed the existence of single progenitors giving rise either to neural or mesodermal cells, and bi-potent progenitors (NMPs) that generate both neural and mesodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneity in the progeny of PZ cells was further confirmed by retrospective clonal analysis studies performed in the mouse embryo which revealed the existence of single progenitors, giving rise either to neural or mesodermal cells, but also of bi-potent progenitors, named neuro-mesodermal progenitors (NMPs), that generate both neural and mesodermal cells (Tzouanacou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous clonal analysis study by Tzouanacou et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5a3a1b81-9b29-4349-bac5-f6e4ce075d99",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C51",
+      "claim": "The existence of bi-potent progenitors has been shown at earlier stages of zebrafish development and in bird embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of bi-potent progenitors has since been shown at earlier stages of zebrafish development (Attardi et al., 2018) and in bird embryos (Solovieva et al., 2020; Wood et al., 2019; Guillot et al., 2021) (for reviews Wymeersch et al., 2021; Sambasivan and Steventon, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies in zebrafish and bird embryos.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5c218c88-2a77-4cde-a666-c7b3cf59347d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C52",
+      "claim": "High levels of Sox2 give cells low motile properties and make them integrate the NT.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a model in which high levels of Sox2 give cells low motile properties and make them integrate the NT while high levels of Bra rather give them high motile and diffusive properties that push them to exit the PZ and integrate the PSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from overexpression and time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "d836078e-0488-4d2b-9e3f-fd26f3ed7705",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C53",
+      "claim": "High levels of Bra give cells high motile and diffusive properties that push them to exit the PZ and integrate the PSM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a model in which high levels of Sox2 give cells low motile properties and make them integrate the NT while high levels of Bra rather give them high motile and diffusive properties that push them to exit the PZ and integrate the PSM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from overexpression and time-lapse imaging experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "b278ddd4-6ce7-4d6a-baf2-7452bf8683b1",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C54",
+      "claim": "Progenitors co-expressing Sox2 and Bra at comparable levels move with an intermediate speed and remain resident of the PZ as this tissue is moving posteriorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Located in-between these low and high motile/diffusive cells are progenitors co-expressing Sox2 and Bra at comparable levels, that are moving with an intermediate speed and remain resident of the PZ as this tissue is moving posteriorly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data showing different motility levels based on Sox2/Bra ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "a03708b7-652e-4c87-ba38-29f29a83d5f0",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C55",
+      "claim": "While graded expression of Sox2/Bra confers a higher short-term stability in PZ shape, random distribution provides a higher rate of elongation, tissue fluidity, and long-term conservation of tissue shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while graded expression of Sox2/Bra confers a higher short-term stability in PZ shape, random distribution provides a higher rate of elongation, tissue fluidity, and long-term conservation of tissue shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling comparing different spatial distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5b0686f5-4a97-467f-9943-b98ae9ecfbd4",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C56",
+      "claim": "The gradient pattern provides stability by limiting local and transient deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, by exploring and comparing Sox2/Bra spatial distributions, our modeling data indicate that while the gradient pattern provides stability by limiting local and transient deformations, random distribution of cell-to-cell heterogeneity could promote cell rearrangements, tissue fluidity, and long-term conservation of tissue shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling comparing different spatial distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "5fac2b5d-549e-4c65-bf93-cc4468108f90",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C57",
+      "claim": "Random distribution of cell-to-cell heterogeneity could promote cell rearrangements, tissue fluidity, and long-term conservation of tissue shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, by exploring and comparing Sox2/Bra spatial distributions, our modeling data indicate that while the gradient pattern provides stability by limiting local and transient deformations, random distribution of cell-to-cell heterogeneity could promote cell rearrangements, tissue fluidity, and long-term conservation of tissue shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mathematical modeling comparing different spatial distribution patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9cbd575e-2986-49ef-9b48-f5f40971f3e9",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C58",
+      "claim": "Brachyury plays a role in cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that Brachyury plays a role in cell migration (Wilson et al., 1995; Wilson and Beddington, 1997; Turner et al., 2014; Wilson et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on Brachyury function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "49b85df3-8838-4493-9590-f411aad9629a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C59",
+      "claim": "Mouse cells that have a mutation in the Brachyury gene have lower migration speed than wild-type cells when isolated and cultured.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mouse cells that have a mutation in the Brachyury gene have lower migration speed than wild-type cells when isolated and cultured, explaining part of the mouse embryonic axis truncation phenotype (Hashimoto et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Hashimoto et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "095ac8f2-d7d0-4cdc-b3ac-80b22edf2c4a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C60",
+      "claim": "A rise of Sox2 expression promotes the transition of posterior progenitors to NT during chick embryo secondary neurulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a role for Sox2 in the control of progenitor cell migration has, to our knowledge, not previously been reported, recent works have demonstrated that a rise of Sox2 expression promotes the transition of posterior progenitors to NT during chick embryo secondary neurulation (Kawachi et al., 2020) and that turning off Sox2 is necessary for NMP to enter the mesoderm in zebrafish embryo (Kinney et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Kawachi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "db78d5cb-114f-4c31-9937-2447f943f10e",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C61",
+      "claim": "Turning off Sox2 is necessary for NMP to enter the mesoderm in zebrafish embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a role for Sox2 in the control of progenitor cell migration has, to our knowledge, not previously been reported, recent works have demonstrated that a rise of Sox2 expression promotes the transition of posterior progenitors to NT during chick embryo secondary neurulation (Kawachi et al., 2020) and that turning off Sox2 is necessary for NMP to enter the mesoderm in zebrafish embryo (Kinney et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous study by Kinney et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "d6ba1b53-e56c-4c22-8a7a-efa2c9fb4377",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C62",
+      "claim": "The dorsal zone between the PZ and the NT does not display excessive cell migration but rather local cell intercalations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it has also been observed by time-lapse analysis that the dorsal zone between the PZ and the NT does not display excessive cell migration but rather local cell intercalations (Roszko et al., 2007; Gonzalez-Gobartt et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous time-lapse studies by Roszko et al., 2007 and Gonzalez-Gobartt et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "e91cbdf0-7c39-4498-84cf-f5e796f66e47",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C63",
+      "claim": "Posterior progenitors undergo an epithelial-mesenchymal transition before reaching their full potential to give rise to progeny in the NT and the PSM.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this explanation is the fact that during the course of axis elongation posterior progenitors undergo an epithelial-mesenchymal transition before reaching their full potential to give rise to progeny in the NT and the PSM (Guillot et al., 2021; Goto et al., 2017; Dias et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies by Guillot et al., 2021; Goto et al., 2017; Dias et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "6669c58b-aeb8-42ef-a610-3eef93839413",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C64",
+      "claim": "Physical constraints exerted by neighboring tissues, in particular the PSM, promote the posterior movement of the PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Several works, performed in bird embryo, have indicated that physical constraints exerted by neighboring tissues, in particular the PSM, promote the posterior movement of the PZ (B\u00e9naz\u00e9raf et al., 2017; B\u00e9naz\u00e9raf et al., 2010; Xiong et al., 2020; Regev et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on physical constraints in bird embryos.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "b57a4f21-47ec-4f3e-9ad8-b9d91d51a195",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C65",
+      "claim": "Differential adhesion between progenitors could regulate their segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting possibility that is taken into account in our mathematical models is that, as it has been demonstrated during NT dorso-ventral patterning (Tsai et al., 2020), differential adhesion between progenitors could regulate their segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative possibility based on previous work by Tsai et al., 2020 on differential adhesion in NT patterning.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "c4f341be-5699-464a-ab3a-69d77174c97a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C66",
+      "claim": "Fluid-like state and disordered cellular movements have been described in PSM tissue to be key for zebrafish embryo axis elongation and morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this fluid-like state as well as disordered cellular movements have been described in PSM tissue to be key for zebrafish embryo axis elongation and morphogenesis (Lawton et al., 2013; Das et al., 2017; Mongera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on PSM tissue properties in zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "77b3670c-1034-4db3-a0d5-06a99d524f6d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C67",
+      "claim": "The PZ is able to regenerate after partial ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have shown that this particular region of the embryo is able to regenerate after partial ablation (Joubin and Stern, 1999; Yuan and Schoenwolf, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous ablation studies by Joubin and Stern, 1999 and Yuan and Schoenwolf, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "a74c0e34-7fd4-4c90-af3b-66bec1a06255",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C68",
+      "claim": "Spatial cell-to-cell heterogeneity appears to be an enabling factor for self-correction in the PZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial cell-to-cell heterogeneity, which allows easier re-organization of remaining cells than graded cell pattern, thus appears to be an enabling factor for self-correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from modeling results showing better shape conservation with random distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9b171dfa-a10e-4187-9b57-845d0aab968d",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "claim_id": "C69",
+      "claim": "Spatial heterogeneity in gene and protein expression is a common trait of living systems and has been observed in many contexts including early mouse embryos or cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial heterogeneity in gene and protein expression is a common trait of living systems and has been observed in many contexts including, early mouse embryos or cancer cells (Prasetyanti and Medema, 2017; Fiorentino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on cellular heterogeneity in different biological contexts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "35b8a290-f347-4947-8b86-70c0f2d0f399",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sox2 and Bra proteins are co-expressed in all PZ cells of quail and chicken embryos at stages HH5-11, with high cell-to-cell heterogeneity in their relative levels. This heterogeneity is characterized by intermingled cells displaying high Sox2/low Bra, high Bra/low Sox2, or equivalent levels of both proteins, contrasting with the homogeneous expression in adjacent NT and PSM tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide converging evidence from immunodetection experiments across multiple embryos (n=8 for quail, confirmed in chicken) and developmental stages (HH5-11). The observations are consistent, well-documented with appropriate sample sizes, and supported by visual evidence in Figure 1. The comparison to adjacent tissues (C4) provides important context validating the specificity of heterogeneity to the PZ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "0dee8c9e-81af-4083-b65d-41da81a54f94",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sox2 and Bra protein levels change along putative cell trajectories from the PZ to differentiated tissues, with Sox2 increasing and Bra decreasing along the neural path, and the opposite pattern along the PSM path. Cell-to-cell heterogeneity is driven more by Sox2 variation (CV=41.8%) than Bra variation (CV=30.75%), and while some spatial enrichment exists (Sox2high anteriorly, Brahigh posteriorly), heterogeneity is present throughout the entire PZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 are supported by quantitative measurements from 7-9 embryos with clear statistical analysis. The coefficient of variation calculations (C9) provide rigorous quantification of heterogeneity. The spatial analysis (C11-C12) appropriately acknowledges both regional enrichment and widespread heterogeneity, avoiding overinterpretation of the gradient pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "f72887db-d2b8-472b-8ae9-f952bea00aef",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Manipulating Sox2/Bra ratios through overexpression or downregulation controls PZ cell exit and tissue destination. High Bra or low Sox2 promotes exit to PSM, while high Sox2 or low Bra promotes exit to NT, with cells largely depleting from the PZ in all manipulation conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are supported by functional experiments with appropriate controls, adequate sample sizes (n=21-28 embryos per condition), and statistical testing. The bidirectional manipulations (gain and loss of function) provide strong evidence. However, the authors acknowledge potential overestimation of NT signal in Bra overexpression due to medial PSM cell localization, showing appropriate caution in interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PZ cells exhibit high motility with diffusive, non-directional movement patterns. Raw motility and posterior directionality of PZ cells exceed those of PSM and NT cells, while corrected motility shows PZ cells move as fast as PSM cells and faster than NT cells. Within the PZ, Sox2high cells are less motile than Sox2-negative cells, and cell movements are diffusive as demonstrated by linear MSD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 are supported by rigorous time-lapse imaging analysis across 7 embryos with 538 PZ cell trajectories. The distinction between raw and corrected motility appropriately accounts for tissue-level movements. The MSD analysis (C23) provides quantitative evidence for diffusive motion. The Sox2 reporter experiment (C22) directly links protein expression to motility, though sample size (n=5) is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "7f41b7d1-18b5-4659-b7b1-f38f9e00598f",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sox2 and Bra regulate PZ cell motility in opposite directions: Bra overexpression increases motility without affecting directionality, while Sox2 overexpression decreases motility and introduces anterior bias. Bra downregulation reduces motility and shifts directionality anteriorly, while Sox2 downregulation shows no significant effect on motility or directionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by time-lapse imaging of electroporated embryos with adequate sample sizes (n=5-7 embryos, 234-874 trajectories per condition). The asymmetry in effects (strong for Sox2 overexpression and Bra knockdown, weaker for Bra overexpression and Sox2 knockdown) is acknowledged and discussed. Statistical testing appears appropriate, though the 'tendency' noted in C27 suggests borderline significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "fcb8d4b8-aec8-482b-a844-97eb66abded2",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The effects of Sox2 and Bra on PZ cell motility occur independently of differentiation, as neither Pax6 (neural marker) nor Msgn1 (mesodermal marker) is induced 7 hours after Sox2 or Bra overexpression, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by immunodetection and in situ hybridization at an appropriate early timepoint (7 hours) when motility effects are measurable but before differentiation. This temporal analysis strengthens the conclusion that motility regulation is a direct effect rather than a consequence of differentiation. However, the sample sizes (n=5-9 embryos) are modest, and the analysis is limited to two markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "689ab917-256d-4ded-b830-be7da45d1890",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A mathematical agent-based model incorporating Sox2/Bra-dependent motility, adhesion, and proliferation recapitulates key biological properties including stable PZ cell numbers, increasing NT/PSM cells, cell motility patterns, and non-directional movement. The model demonstrates that both random motion and adhesion/non-mixing properties are essential for tissue integrity, and simulated Sox2/Bra perturbations reproduce experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 describe a computational model that successfully captures experimental observations. The model validation against multiple experimental parameters (cell numbers, motilities, directionality) and perturbation experiments strengthens confidence. However, as with all models, it relies on assumptions about parameters and mechanisms (e.g., adhesion, non-mixing) that are not all directly validated experimentally. The model is appropriately presented as supporting rather than proving the biological mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "9fac1d79-93da-447e-acf4-93240a5dff9e",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational modeling comparing random, gradient, and mixed Sox2/Bra spatial distributions reveals that random distribution provides faster elongation, more posterior movement of resident progenitors, better conservation of PZ shape over time, and higher diffusivity (MSD) compared to gradient distribution. The gradient pattern provides short-term stability by limiting transient deformations, while random distribution promotes cell rearrangements, tissue fluidity, and long-term shape conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C55-C57 present modeling predictions comparing different spatial distribution patterns. The predictions are internally consistent and follow logically from the model structure. However, these are computational predictions that lack direct experimental validation. The biological system appears to use a 'mixed' pattern, which shows intermediate properties, but the specific functional advantages of randomness versus gradient remain theoretical predictions rather than experimentally demonstrated facts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "8890e6f9-d43b-4ace-aa4d-b2e0138d8440",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a model where high Sox2 levels confer low motility causing cells to integrate into the NT, high Bra levels confer high motility causing cells to exit to PSM, and intermediate Sox2/Bra levels result in intermediate motility allowing cells to remain resident in the posteriorly-moving PZ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 represent the central mechanistic model synthesizing the experimental findings. This model is well-supported by the convergence of expression data (C1-C12), functional perturbations (C13-C18, C24-C27), and motility measurements (C19-C23). The model provides a coherent explanation for how cell-to-cell heterogeneity in transcription factor levels translates into differential cell behaviors and tissue destinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "fcf9685f-1305-4112-bcab-6b43e657292a",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that Sox2 and Bra are key transcription factors for neural and mesodermal specification, respectively, that they are co-expressed in posterior progenitors before cells colonize NT or PSM, that regional differences in their expression correlate with cell fate, and that they influence lineage choice through antagonistic regulation of neural and mesodermal gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47 accurately summarize prior literature with appropriate citations. These background claims provide essential context for the current work. The citations appear appropriate and the characterizations of prior findings are consistent with the cited work. However, as these are literature claims, their validity depends on the accuracy of the cited studies, which are not independently evaluated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "72a733c6-a32d-4be3-8724-e23493aecaa6",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous studies using fluorescent tracers, grafting experiments, and clonal analysis have established that PZ cells contribute to both PSM and NT formation, that resident progenitors can self-renew while producing neural and mesodermal progeny, and that the PZ contains both uni-potent and bi-potent (NMP) progenitors in multiple vertebrate species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 accurately summarize key prior findings about PZ cell properties with appropriate citations spanning multiple model organisms and experimental approaches. This background establishes the biological context and heterogeneity of the progenitor population that motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "c85c88bb-2743-40e0-b60e-cc6d1f110256",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has shown that Brachyury plays a role in cell migration (with Bra mutant cells showing reduced migration speed), that Sox2 expression changes are associated with progenitor transitions to NT in chick and mesoderm entry in zebrafish, that the dorsal PZ-NT boundary shows local cell intercalations rather than extensive migration, and that posterior progenitors undergo epithelial-mesenchymal transition during axis elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 accurately cite relevant prior work connecting Sox2/Bra to cell behaviors and developmental transitions. These citations appropriately support the discussion of mechanisms and provide context for interpreting the current findings. The characterizations of prior work appear accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    },
+    {
+      "id": "7f1c6084-030d-4a32-aae5-91477f578d51",
+      "content_id": "078865cf-6612-4b57-8fb4-874cb6923c88",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work and theoretical considerations suggest that physical constraints from neighboring tissues promote PZ posterior movement, that differential adhesion may regulate progenitor segregation, that fluid-like states and disordered movements are important for morphogenesis in related systems, that the PZ can regenerate after ablation, and that spatial heterogeneity in gene expression is common in biological systems and may enable self-correction and robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 draw on prior literature and extend it with speculation about mechanisms and broader implications. C64, C66, C67, and C69 are well-supported by citations. C65 is explicitly speculative ('interesting possibility'). C68 is an inference from the modeling results. These claims appropriately distinguish between established facts, speculative mechanisms, and implications of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T07:58:55.861205Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3f59101a-c3a7-4f1a-96f0-6ea4ac88f62b",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "6b799212-44e7-423b-affa-9889e1115838",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "36e9f040-8ef2-471b-b0bf-2b79fd7498f7",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "85fff015-7829-419b-bfa0-8209878b4f62",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "92a6ec17-47ec-4aa6-a020-198798f88939",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "7441ae73-ec0f-4685-b1ec-fa1239882f6d",
+      "result_id": "35b8a290-f347-4947-8b86-70c0f2d0f399"
+    },
+    {
+      "claim_id": "23fa2ecf-a241-4285-8765-3549cfcf2fed",
+      "result_id": "0dee8c9e-81af-4083-b65d-41da81a54f94"
+    },
+    {
+      "claim_id": "85e692ab-3adc-4d57-84dc-61dfe5b55e34",
+      "result_id": "0dee8c9e-81af-4083-b65d-41da81a54f94"
+    },
+    {
+      "claim_id": "1ddd4ea3-dba3-48b9-b187-20e67af047a9",
+      "result_id": "0dee8c9e-81af-4083-b65d-41da81a54f94"
+    },
+    {
+      "claim_id": "0504d3bb-5740-461d-9afe-eaa62b05f30f",
+      "result_id": "0dee8c9e-81af-4083-b65d-41da81a54f94"
+    },
+    {
+      "claim_id": "8020b2fe-deb2-488d-a822-70f4a757f5bb",
+      "result_id": "0dee8c9e-81af-4083-b65d-41da81a54f94"
+    },
+    {
+      "claim_id": "ce8466d8-6757-421b-9b23-0d5ab6e824eb",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "3a33f1a3-c1cd-4b29-acef-f7fbcd5e0874",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "a0e0d3fc-b1a3-4536-a9e8-6967e4a8542b",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "8f89deb2-2a13-47c2-83b6-b08096a3ce90",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "d79813ef-809f-4151-82d7-bf3f551d1e74",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "75a52531-127f-4059-a844-60ff8b106872",
+      "result_id": "f72887db-d2b8-472b-8ae9-f952bea00aef"
+    },
+    {
+      "claim_id": "04b84ab6-1a45-428e-ab88-bb328f915329",
+      "result_id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04"
+    },
+    {
+      "claim_id": "1f88a3e0-9dcd-4da4-b40d-44b1e9ce3d26",
+      "result_id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04"
+    },
+    {
+      "claim_id": "a90fd2ee-e919-4e61-86a3-7bde642fc8b4",
+      "result_id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04"
+    },
+    {
+      "claim_id": "8b4e049a-efa9-4753-a4f1-1df01849894a",
+      "result_id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04"
+    },
+    {
+      "claim_id": "6583d031-925a-4c75-97a0-4a5e191bf427",
+      "result_id": "c5dfc641-468a-4e32-9e93-c5f95d2ccf04"
+    },
+    {
+      "claim_id": "3f349c4a-bb45-4f87-95b7-bb6dc4879482",
+      "result_id": "7f41b7d1-18b5-4659-b7b1-f38f9e00598f"
+    },
+    {
+      "claim_id": "9cda5028-e626-4ae8-8f4d-71b76f895dfb",
+      "result_id": "7f41b7d1-18b5-4659-b7b1-f38f9e00598f"
+    },
+    {
+      "claim_id": "d1fbf4e8-5c37-41fb-9b1c-64d133e2b500",
+      "result_id": "7f41b7d1-18b5-4659-b7b1-f38f9e00598f"
+    },
+    {
+      "claim_id": "7db7cab9-758c-4cb1-91f7-06dd0ba48a62",
+      "result_id": "7f41b7d1-18b5-4659-b7b1-f38f9e00598f"
+    },
+    {
+      "claim_id": "6637ef72-b3ab-4069-87b6-f6cd9d5984b2",
+      "result_id": "fcb8d4b8-aec8-482b-a844-97eb66abded2"
+    },
+    {
+      "claim_id": "2de2b9b6-62cd-4ec8-9d62-20cfa3c063d3",
+      "result_id": "fcb8d4b8-aec8-482b-a844-97eb66abded2"
+    },
+    {
+      "claim_id": "e55f7173-abc0-4ab2-a18e-425912b5c786",
+      "result_id": "689ab917-256d-4ded-b830-be7da45d1890"
+    },
+    {
+      "claim_id": "097abd15-6b43-406f-9637-69023beec663",
+      "result_id": "689ab917-256d-4ded-b830-be7da45d1890"
+    },
+    {
+      "claim_id": "4c2a6bb7-fec0-40ec-a7ce-18a0e7df75df",
+      "result_id": "689ab917-256d-4ded-b830-be7da45d1890"
+    },
+    {
+      "claim_id": "65ac8d58-df35-4251-8648-05a7e92dc384",
+      "result_id": "689ab917-256d-4ded-b830-be7da45d1890"
+    },
+    {
+      "claim_id": "5f31da91-4151-4039-a88d-0b12aad66a44",
+      "result_id": "689ab917-256d-4ded-b830-be7da45d1890"
+    },
+    {
+      "claim_id": "b867ada3-31da-4f90-ab30-89197679141d",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "0b0a1408-d3fb-4ab3-9eca-730588fd87b8",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "f1b9f8bd-adcf-40e8-bb0d-909aafde12c5",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "bef24a00-e6a7-4d21-9377-94d9780a1d5a",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "a03708b7-652e-4c87-ba38-29f29a83d5f0",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "5b0686f5-4a97-467f-9943-b98ae9ecfbd4",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "5fac2b5d-549e-4c65-bf93-cc4468108f90",
+      "result_id": "9fac1d79-93da-447e-acf4-93240a5dff9e"
+    },
+    {
+      "claim_id": "5c218c88-2a77-4cde-a666-c7b3cf59347d",
+      "result_id": "8890e6f9-d43b-4ace-aa4d-b2e0138d8440"
+    },
+    {
+      "claim_id": "d836078e-0488-4d2b-9e3f-fd26f3ed7705",
+      "result_id": "8890e6f9-d43b-4ace-aa4d-b2e0138d8440"
+    },
+    {
+      "claim_id": "b278ddd4-6ce7-4d6a-baf2-7452bf8683b1",
+      "result_id": "8890e6f9-d43b-4ace-aa4d-b2e0138d8440"
+    },
+    {
+      "claim_id": "9e119f7b-fe17-4363-ad9e-9939fa294344",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "3ab0102c-d835-4c89-9fbb-215cac2c5013",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "7fcaa932-5f22-43a5-b8eb-55b317219314",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "165d6c8a-55a8-4666-a563-91b9fa2e793b",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "eb0f708d-05e8-4dde-bf34-f93e957a572d",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "5a8d9c6c-a066-4d17-b9f0-4e909f049ead",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "da27e5c5-d536-489e-919e-a894d68941f8",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "14fac430-f9a7-4099-a4d8-c2cfd607dbd7",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "96a9d758-3b71-42a8-9b39-13947a012b0c",
+      "result_id": "fcf9685f-1305-4112-bcab-6b43e657292a"
+    },
+    {
+      "claim_id": "f5ef4286-d026-415c-a6ca-7468ee01640d",
+      "result_id": "72a733c6-a32d-4be3-8724-e23493aecaa6"
+    },
+    {
+      "claim_id": "9ff0a928-f0b9-4f6a-b38f-5589fd2db1e8",
+      "result_id": "72a733c6-a32d-4be3-8724-e23493aecaa6"
+    },
+    {
+      "claim_id": "4c77ee24-591a-476a-b91f-773a9c3b102e",
+      "result_id": "72a733c6-a32d-4be3-8724-e23493aecaa6"
+    },
+    {
+      "claim_id": "5a3a1b81-9b29-4349-bac5-f6e4ce075d99",
+      "result_id": "72a733c6-a32d-4be3-8724-e23493aecaa6"
+    },
+    {
+      "claim_id": "9cbd575e-2986-49ef-9b48-f5f40971f3e9",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "49b85df3-8838-4493-9590-f411aad9629a",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "095ac8f2-d7d0-4cdc-b3ac-80b22edf2c4a",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "db78d5cb-114f-4c31-9937-2447f943f10e",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "d6ba1b53-e56c-4c22-8a7a-efa2c9fb4377",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "e91cbdf0-7c39-4498-84cf-f5e796f66e47",
+      "result_id": "c85c88bb-2743-40e0-b60e-cc6d1f110256"
+    },
+    {
+      "claim_id": "6669c58b-aeb8-42ef-a610-3eef93839413",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    },
+    {
+      "claim_id": "b57a4f21-47ec-4f3e-9ad8-b9d91d51a195",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    },
+    {
+      "claim_id": "c4f341be-5699-464a-ab3a-69d77174c97a",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    },
+    {
+      "claim_id": "77b3670c-1034-4db3-a0d5-06a99d524f6d",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    },
+    {
+      "claim_id": "a74c0e34-7fd4-4c90-af3b-66bec1a06255",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    },
+    {
+      "claim_id": "9b171dfa-a10e-4187-9b57-845d0aab968d",
+      "result_id": "7f1c6084-030d-4a32-aae5-91477f578d51"
+    }
+  ],
+  "comparisons": []
+}

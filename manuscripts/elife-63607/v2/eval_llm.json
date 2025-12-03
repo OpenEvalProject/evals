@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C75",
+      "C78",
+      "C80"
+    ],
+    "result": "Higher viscosity during movement led to shorter perceived durations in both temporal categorization and reproduction tasks. In Experiment 1, increased viscosity shifted the bisection point such that subjects responded 'long' less often. In Experiment 2, the degree of overestimation decreased as a function of viscosity, confirming temporal compression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C19, C75, C78, and C80 converge on the finding that viscosity manipulation leads to interval underestimation. The effect is demonstrated across two independent experiments using different paradigms (categorization and reproduction), with statistical support (F-tests, linear contrasts, bootstrap confidence intervals). The consistency across tasks strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C23",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C76",
+      "C79"
+    ],
+    "result": "Computational modeling using drift-diffusion models (Experiment 1) and Bayesian observer models (Experiment 2) demonstrated that viscosity effects arose from perceptual mechanisms rather than decision-making biases. In Experiment 1, only the drift rate parameter (reflecting perceptual evidence) linearly shifted with viscosity. In Experiment 2, only the perceptual offset parameter significantly correlated with behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C23, C52, C53, C76, and C79 provide converging computational evidence that viscosity affects perception rather than decision-making. The DDM analysis shows drift rate (perceptual) but not threshold/bias (decision) parameters correlate with behavioral effects (C52, C53). The Bayesian model comparison (C23, C69, C71) further supports perceptual over production-stage effects. Model validation through posterior predictive checks (C47) and DIC comparisons (C46) strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C58",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "Timing precision, as measured by coefficient of variation (CV), was generally unaffected by viscosity manipulations in both experiments. CV remained constant across viscosities in both the temporal categorization task (Experiment 1) and temporal reproduction task (Experiment 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C58, C81, C82, and C85 consistently report no effect of viscosity on CV across both experiments, supported by statistical tests (F-tests with p>0.05) and Bayes Factors (BF10=0.073 for Exp 1, BF10=0.016 for Exp 2) favoring the null hypothesis. This finding is important as it demonstrates that viscosity affects bias but not precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C43",
+      "C84"
+    ],
+    "result": "Within-subject analysis revealed that greater movement led to greater precision (lower CV) only in the zero viscosity condition. This effect disappeared when viscous resistance was present, suggesting that free movement can improve timing precision only in unrestricted movement environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C43, and C84 describe a specific interaction between movement amount and viscosity on precision. The median split analysis (C83) shows the effect is restricted to zero viscosity, and C84 provides a reasonable interpretation consistent with prior work (Wiener et al., 2019). However, this is a post-hoc within-subject analysis that would benefit from replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Large inter-individual differences in movement parameters were observed, but these differences did not correlate with the magnitude of viscosity effects on time perception. In Experiment 1, subjects were consistent in their movement distances across viscosities, and movement distance/force did not predict bisection point shifts. In Experiment 2, no correlations were found between movement parameters and duration reproduction effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C61-C63 consistently report lack of between-subject correlations between movement parameters and behavioral effects, supported by correlation statistics (all p>0.05). This suggests the viscosity effect on timing is not simply mediated by individual differences in how much subjects move. The finding is important for ruling out alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "Bayesian Observer Model analysis of Experiment 2 revealed that viscosity affected the perceptual offset parameter (b) in a linear manner, but did not affect measurement noise (m). Production noise (p) decreased non-linearly with higher viscosities. Only the offset term significantly correlated with the underestimation effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68, and C69 describe the Bayesian model results with statistical support (F-tests, correlation statistics, Fisher Z-tests). The linear shift in offset (C69) with correlation to behavior, combined with no effect on measurement noise (C68), supports the perceptual interpretation. The production noise finding (C65) is interpreted as a compensatory strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C23"
+    ],
+    "result": "Model comparison between Perception and Production versions of the Bayesian Observer Model demonstrated that the Perception Model (with offset at measurement stage) provided significantly better fit than the Production Model (with offset at production stage), further confirming that viscosity affects perception rather than motor production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C23 describe a critical model comparison using negative log-likelihood (F-test, p<0.001) and predictive checks. This provides strong evidence for the perceptual locus of the viscosity effect. The comparison is methodologically sound and directly addresses the key mechanistic question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Viscosity did not affect relative hand position at interval offset in Experiment 1, suggesting that movement had little impact on subjects' ability to employ a positional strategy for the categorization task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by statistical analysis (F-test, p=0.197). This finding is important for ruling out the possibility that viscosity effects were mediated by changes in spatial strategy. However, the authors note that viscosity may have altered optimal positional strategies across participants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C86"
+    ],
+    "result": "In Experiment 2, viscosity was associated with increased central tendency of reproduction slopes, which may indicate greater uncertainty in temporal estimates with higher viscosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22 and C86 report increased central tendency with viscosity (F-test, p=0.023), but the interpretation as reflecting uncertainty is speculative (C86 includes 'may have been associated'). The CV did not change (C58, C85), which would be expected if uncertainty increased. The central tendency effect could reflect other mechanisms and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C72",
+      "C74",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C100",
+      "C101"
+    ],
+    "result": "Movement distance has a direct influence on perceived interval length regardless of whether this parameter is modulated by volitional or environmental factors. The biasing effect of viscous environments was robust across different task demands (categorization vs. reproduction), suggesting movement influenced similar temporal estimation mechanisms. Critically, temporal biases occurred even though participants knew task demands did not change with viscosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C72, C74, C89, C90, C91, C93, C100, and C101 represent the main conclusions drawn from both experiments. The consistency of viscosity effects across two different paradigms (C89, C90, C91) with different task demands strengthens the conclusion. The finding that effects occurred without volitional modulation (C74, C100) is a key contribution distinguishing this work from prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study employed two experiments with 28 participants (Experiment 1) and 18 participants (Experiment 2), all right-handed, using a robotic arm manipulandum to apply varying levels of viscosity (0, 12, 24, 36 Ns/m\u00b2) while participants timed auditory intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C133, C134, C135, C136, and C137 describe the basic methodological details. Sample sizes are stated clearly, handedness was controlled, and the apparatus is described with citations. These are straightforward methodological facts that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The current findings complement previous work showing time perception is sensitive to movement parameters (duration, speed, direction). However, this study demonstrates that movement parameters did not have to be self-modulated to induce temporal distortions. Unlike prior studies (e.g., Yon et al., 2017) that relied on volitional modulation, the viscosity manipulation affected movement distance without changing task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C2, C10-C15, C94-C99 contextualize the current findings within prior literature. The citations to previous work (Yon et al., 2017; Yokosaka et al., 2015; Tomassini and Morrone, 2016; Press et al., 2014) are appropriate. The distinction between volitional and environmental modulation (C97, C98, C99) is clearly articulated and represents a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Some prior findings appear inconsistent with the current results. Yokosaka et al. (2015) found compression during fast movement, whereas the current study shows compression during slowed movement. The authors note that many distortive effects of movement can be linked to whether intervals are filled or unfilled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C104 acknowledge discrepancies with prior work and provide a potential explanation (filled vs. unfilled intervals). This is appropriate scientific practice. However, the explanation is somewhat speculative and the discrepancies highlight the complexity of movement-timing interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The results align with A Theory of Magnitude (ATOM), which proposes common neural circuitry for spatial, temporal, and numerosity representations. The viscosity manipulation scaled spatial characteristics of movement and led to scaling down of perceived duration. Viscosity was introduced via sensorimotor channels but had cross-modal effects on auditory timing, suggesting the two channels were not redundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116, C117, and C118 provide a theoretical interpretation of the findings in terms of ATOM (Walsh, 2003). The interpretation is reasonable given the spatial-temporal interaction observed. The cross-modal effect (C117, C118) is an important observation, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The authors suggest that noisy auditory estimates reaped a benefit from integrating motor information with higher precision, at the cost of a slight bias, consistent with optimal cue combination principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is explicitly speculative ('we suggest') and proposes an optimal cue combination interpretation. While this is a reasonable hypothesis consistent with the data, it is not directly tested. The claim that motor information has 'higher precision' is not demonstrated in the current study. This interpretation requires further empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C131"
+    ],
+    "result": "This work highlights the importance of sensory feedback in timing, confirming that time is subject to distortion by externally imposed movement constraints, at least in the auditory modality and within the suprasecond range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111 and C131 summarize the main contribution of the work. The findings are well-supported by the experimental data. The qualification regarding modality and temporal range (C131) is appropriate given the specific parameters tested. The emphasis on sensory feedback vs. feedforward effects (C111) is a valid distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior work on biological vs. non-biological motion suggests that biological motion is timed more precisely and accurately, and that concurrent movement can improve timing of non-biological motion. The authors speculate that viscosity effects might occur more strongly for non-biological motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 accurately cite prior work (Gavazzi et al., 2013; Wang and Jiang, 2012; Carlini and French, 2014). Claim C110 is explicitly speculative ('we predict') about future experiments. The speculation is reasonable but untested. These claims provide useful context but are not central to the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The findings have potential clinical relevance for disorders involving both motor and timing deficits, including Parkinson's Disease, Huntington's Disease, and ADHD. Motor control may be an extension of cognitive computations, and understanding motor-timing interactions could inform therapeutic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 discuss clinical implications with appropriate citations (Lepora and Pezzulo, 2015; Obeso et al., 2000, 2014; Avanzino et al., 2016; Rapport et al., 2009; Plummer and Humphrey, 2009). These are reasonable extrapolations from the findings, though direct clinical applications are not tested. The discussion is appropriately speculative about future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C16",
+      "C112",
+      "C113",
+      "C114",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132"
+    ],
+    "result": "The manuscript provides extensive background on interval timing, temporal distortions, motor-sensory interactions, and the neural basis of timing. This includes discussion of central pattern generators, subjective time distortions, motor system involvement in timing, and modality-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9, C16, C112-C114, C127-C130, C132 provide background context with appropriate citations. These are well-established findings from the literature that frame the current work. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C84"
+    ],
+    "result": "The current findings are consistent with the authors' previous work (Wiener et al., 2019) showing that movement can enhance temporal precision by reducing variability, but only in unrestricted movement environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C84 reference the authors' prior work appropriately. The consistency between studies strengthens both sets of findings. The qualification about unrestricted environments (C84) is supported by the median split analysis showing precision benefits only at zero viscosity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C92"
+    ],
+    "result": "Methodological differences between experiments included that movement was allowed in Experiment 1 but required in Experiment 2, and that movement had utilitarian value in the categorization task but not in the reproduction task. Subjects were not required to time their movements but were using their movements for timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, and C92 describe important methodological distinctions between the two experiments. These are accurate descriptions of the task designs. The distinction in C92 (timing movements vs. using movements for timing) is conceptually important for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

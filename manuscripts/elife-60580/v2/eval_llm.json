@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C34",
+      "C35",
+      "C36",
+      "C75",
+      "C79"
+    ],
+    "result": "The mouse dorsal striatum consists of two non-overlapping functional circuits (DLS and DMS) separated by a sharp boundary, distinguished by independent integration of spontaneous activity and differential cortical coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C34-C36, C75, and C79 collectively demonstrate that DLS and DMS are functionally distinct circuits. The classification analysis (C75) achieved ~92% accuracy using SWO features, the DCS boundary analysis (C79) showed a sharp transition rather than a gradient, and multiple lines of evidence (oscillations C34-C35, cortical coupling C36, C4-C6) converge on functional segregation. The statistical significance of differences and high classification accuracy provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "DLS-MSNs and DMS-MSNs can be distinguished with high accuracy (up to ~92%) using machine learning classification based on 13 features of Up states during slow wave oscillations, with the number of peaks and amplitude being most discriminative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C68 describe a systematic feature extraction and classification approach. The RFE analysis identified the most relevant features (C64-C65), achieving 84.61% accuracy with two features and ~92% with additional features (C66-C68). The methodology is clearly described (C54, C63), statistical differences are reported for 11/13 features (C55), and the one-animal-out validation addresses potential bias. The convergent evidence strongly supports the classification result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Analysis of the dorsocentral striatum (DCS) reveals a sharp functional boundary between DLS and DMS circuits, with DCS neurons representing a mixture of both populations rather than an intermediate circuit type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide statistical evidence that DCS distribution differs from both DLS and DMS individually (p<0.01, C77) but is equivalent to their combination (p=0.681, C78). This pattern supports Hypothesis 3 (sharp boundary) over Hypotheses 1 (gradient) or 2 (third circuit type). The visual response data (C80-C81) further demonstrates that circuit identity is independent of sensory response properties, strengthening the boundary interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C109"
+    ],
+    "result": "DLS-MSNs show stronger functional coupling with frontal associative (FrA) and motor (M1) cortical areas, while DMS-MSNs show stronger coupling with primary visual cortex (V1), as demonstrated by correlation and propagation probability analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 and C109 present convergent evidence from two complementary analyses: correlation coefficients (C97-C100) and Up state propagation probabilities (C101-C102). Both methods show consistent patterns of differential cortical coupling. The statistical significance is reported, and the results align with known anatomical connectivity patterns cited in the manuscript. The conclusion (C109) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "Sequential propagation of cortical slow wave oscillations occurs along the dorsal striatum, with DLS preceding DMS in 71% of cases with an average delay of ~53 ms, consistent with rostro-caudal cortical propagation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C105-C110 describe novel double patch-clamp recordings demonstrating sequential activation. The cortical propagation pattern (FrA\u2192V1, 71%, C105) parallels the striatal pattern (DLS\u2192DMS, 71.11%, C106) with similar delays (C107-C108). The statistical significance (p=0.0313, C106; p<0.0001, C105) and consistency between cortical and striatal patterns provide strong support. This is the first demonstration of simultaneous dual striatal recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Visual responses in MSNs vary along the mediolateral axis based on cortical projection patterns rather than DLS/DMS circuit identity, with DMS-MSNs showing larger amplitudes, faster slopes, and shorter onset delays than DCS-MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C80-C88 demonstrate that visual responses differ along the mediolateral axis with statistical significance (onset p=0.007, amplitude p=0.00009, slope p=0.0003, C84-C86). Critically, some DLS-classified neurons in DCS responded to visual stimulation (C81), and the response differences are attributed to distinct visual cortical areas (V1 vs AM/AL, C82-C83, C88) rather than circuit identity. The interpretation is well-supported by anatomical citations and the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Beta band oscillation energy is higher in DMS-MSNs and peaks earlier in the Up state compared to DLS-MSNs, but high-frequency oscillations alone do not discriminate between circuits as effectively as SWO features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 report statistically significant differences in beta energy and phase (p=0.0007, C72) with clear data presentation in Figure 2. However, C73-C74 demonstrate that high-frequency features yield only 70.61% classification accuracy and do not improve the SWO-based classifier. The negative result (C74) is important for understanding which features are most discriminative and is appropriately supported by the classification analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Cortical areas S1 and M1 show more peaks per Up state than FrA and V1, and DLS-MSNs display higher depolarization/hyperpolarization ratios during state transitions, suggesting differential modulation by sensory-motor cortical inputs and local inhibitory circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 connect cortical Up state properties to striatal dynamics. The cortical recordings (C91) show significant differences (Figure 4C with Holm-Bonferroni correction), and the DH ratio analysis (C93-C94) reveals significant differences in transition dynamics (Figure 4E). The interpretation (C92, C96) linking these findings to cortical modulation and local circuits is reasonable given the anatomical evidence cited, though the mechanistic claims are somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Direct and indirect pathway MSNs show distinct properties within DLS and DMS regions, with differences in electrophysiological properties and spontaneous activity integration, but cannot be reliably classified by pathway identity alone within each region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C111-C117 describe pathway-specific differences. The classification analysis (C112-C113) shows poor accuracy (50% DMS, 64% DLS), indicating pathways do not subdivide the circuits. However, specific differences exist: three Up state features differ in DLS (C111), and resistance differs between indirect MSNs across regions (C114). The conclusion (C116-C117) appropriately balances the negative classification result with the observed specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Input resistance is significantly higher in DLS-MSNs compared to DMS-MSNs, which may impact synaptic integration properties including gain and timing of inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 reports a statistically significant difference in input resistance (p=0.04) with clear values provided. However, C52-C53 are interpretive claims about potential functional consequences. While the interpretation is reasonable based on neurophysiological principles, it remains speculative without direct experimental evidence of the proposed effects on synaptic integration. The resistance difference itself is well-supported, but the functional implications are uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Intrinsic membrane properties of MSNs are not relevant for discriminating between DLS and DMS striatal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by the correlation analysis shown in Figure 1\u2014figure supplement 2, where all correlation coefficients between intrinsic properties and Up state features were <0.3. This negative result is important for understanding that the functional segregation is not simply explained by intrinsic cellular properties but rather by network-level differences. The analysis is appropriate and the conclusion is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In vivo whole-cell recordings from 223 neurons (197 striatal, 26 cortical) showed consistent slow wave oscillations at ~0.7 Hz with stable Down state potentials and low spontaneous firing rates across striatal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe basic dataset characteristics and control measurements. Sample sizes are clearly stated (C46), SWO presence is documented across all neurons (C47), and key parameters show no regional differences (Down state potential p=0.42, firing rate p=0.58, C49-C50). These are straightforward descriptive statistics with appropriate statistical tests, providing essential baseline characterization of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Divergences in spontaneous activity integration between DLS and DMS may reflect differences in excitatory and inhibitory inputs received by MSNs in each region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 cites prior work establishing that Up states comprise barrages of excitatory and inhibitory inputs. Claim C62 is an interpretive inference connecting observed differences to input changes. While this interpretation is plausible and consistent with the data, it is not directly tested. The manuscript does not provide direct measurements of excitatory/inhibitory input strengths or ratios, making this a reasonable hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The rodent dorsal striatum is segregated into two neuronal circuits in homology with the caudate and putamen nuclei of primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C9 makes a strong comparative neuroanatomical claim about homology between rodent DLS/DMS and primate caudate/putamen. While the functional segregation is well-demonstrated by the manuscript's data, establishing true homology requires evolutionary, developmental, and detailed anatomical evidence beyond the functional similarities shown here. The claim is supported by functional parallels but the homology assertion goes beyond what the presented data can definitively establish.",
+    "result_type": "MAJOR"
+  }
+]

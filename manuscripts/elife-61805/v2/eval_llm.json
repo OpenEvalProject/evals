@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C55"
+    ],
+    "result": "The study identified and excluded 107 patients from the original 307 due to contamination (32 patients), mixed infection (31 patients), or reinfection (44 patients), leaving 200 patients with persistent or relapsed clonal infection. This represents 28% of samples collected \u22652 months apart showing mixed infection or reinfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C55 provide a clear and consistent account of the quality control filtering process. The exclusion criteria are well-defined (contamination via Goig et al. 2020 method, F2 metric for mixed infection, >7 fSNP distance for reinfection), and the numbers add up correctly (307 - 32 - 31 - 44 = 200). The 28% calculation is consistent with the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study established a \u0394AF threshold of 70% to distinguish true in-host variation from technical noise, based on analysis of 82 technical/biological replicate pairs with an estimated false error rate \u22640.053. This threshold identified 174 SNPs that developed in-host among 200 TB cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C31-C33 describe a systematic approach to determining signal from noise using technical replicates. The exclusion of glpK (C31) is justified by citations. The 70% threshold (C32) is derived from requiring \u22645% of SNPs in replicates, which is a reasonable statistical criterion. The false error rate estimate (C16) provides validation of the pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C54"
+    ],
+    "result": "Among 178 patients with persistent clonal infection >2 months, 27 (15%) developed new resistance mutations, with 20/27 (74%) occurring in patients with pre-existing resistance. Among 119 patients with confirmed treatment failure, 9% (11/119) acquired \u22651 AR SNP, with 9/11 receiving fewer than four effective drugs. Pre-existing resistance was found in 41% (73/178) of patients, with 64% (47/73) having MDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C23-C27, and C54 present consistent statistics on resistance acquisition. The association between pre-existing resistance and new acquisition is supported by statistical testing (OR=5.28, P=2.2\u00d710\u207b\u2074). The finding that most patients acquiring resistance had inadequate treatment (9/11 with <4 effective drugs) is clinically coherent. The percentages are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C56"
+    ],
+    "result": "Low abundance resistance variants at \u226519% allele frequency in the first isolate predict fixation (AF\u226575%) in the subsequent sample with 27.0% sensitivity and 95.8% specificity. However, the majority (25/37) of alleles that fixed were undetectable (<5 reads) at the first time point, limiting the predictive utility of this threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C22, and C56 present a coherent analysis of predictive value. The 19% threshold is derived from TPR/FPR analysis with a maximum 5% FPR constraint, which is methodologically sound. The low sensitivity (27%) is honestly reported and explained by C22 and C56 - most fixing alleles were initially undetectable. This is a limitation but doesn't invalidate the finding that detectable variants \u226519% have high specificity for fixation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study detected 1939 SNPs in antibiotic resistance loci that changed in allele frequency by \u22655%, of which 1774 were non-synonymous. Analysis identified 11 cases of clonal interference, demonstrating competition between resistance mutations within patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the detection and characterization of resistance-associated SNPs. The filtering criteria (\u22655% \u0394AF, \u22655 read support) are clearly defined. The identification of clonal interference (C19) requires specific criteria (multiple mutations in same gene, opposing trajectories, \u226540% AF) which are methodologically appropriate. The numbers are consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Of 174 in-host SNPs identified, 112 were non-synonymous, 42 synonymous, and 21 intergenic. The 153 coding SNPs were distributed across 127/3,886 genes in 71/200 patients. The GC>AT transition was most common while AT>TA transversion was least common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide consistent descriptive statistics. The numbers add up correctly (112+42+21=175, with 1 discrepancy likely due to rounding or the rrs region mentioned in C17). The mutational spectrum findings (C36-C37) are standard observations in Mtbc and are supported by Figure 6A. The distribution across genes and patients is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C43",
+      "C60"
+    ],
+    "result": "Antibiotic resistance genes showed the highest nucleotide diversity while essential genes varied least. Only one in-host SNP was detected in epitope-encoding regions (PPE18), and diversity spared CD4+/CD8+ T cell epitope regions, providing evidence that host adaptive immunity does not drive directional selection at short time scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C43, and C60 present a coherent finding about selective pressures. The nucleotide diversity analysis (C39) is supported by Figure 6D. The epitope analysis (C43) is specific and verifiable. The inference about adaptive immunity (C60) is supported by the data and consistent with cited prior work (Comas et al. 2010, Copin et al. 2014, Coscolla et al. 2015). The logic is sound: if adaptive immunity drove selection, epitope regions would show more diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C5"
+    ],
+    "result": "The study identified 27 genes with significant in-host variation through mutational density testing and convergence analysis. This includes three genes of unknown function (Rv0139, Rv0895, Rv1543) convergent in two patients each, with Rv0139 and Rv1543 showing significant mutational density (p<2\u00d710\u207b\u2075), and PPE60 also showing significant mutational density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C48 describe the identification of genes under selection. The mutational density test is properly described in methods with Bonferroni correction (\u03b1=0.05/3,386). The convergence criterion (\u22652 patients) is conservative. The p-values are specific and significant. The 27 genes mentioned in C5 likely includes the 12 known resistance genes plus 15 novel genes identified through this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C63"
+    ],
+    "result": "Six pathways not associated with antibiotic resistance showed convergent in-host variation, including biotin biosynthesis, ribosomal proteins, glycerolipid metabolism, ESAT-6 secretion, and coenzyme B12/cobalamin synthesis. Four variants in the cobalamin synthesis locus (cobG, cobG-cobH intergenic, cobH, cobK) developed in three separate patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C63 identify novel pathways under selection. The pathway analysis is based on SEED subsystem annotation (described in methods). The cobalamin synthesis finding (C63) is particularly strong with 4 variants in consecutive genes in 3 patients. This is supported by prior work (C62, C85) showing this pathway's importance in Mtbc survival. The convergence across patients suggests genuine selection rather than chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Phylogenetic analysis of 20,352 global isolates identified 26/141 in-host SNPs as convergent across multiple lineages. Convergent sites included PPE genes (PPE18, PPE54, PPE60), conserved proteins of unknown function (Rv0095c, Rv1944c), and multiple antibiotic resistance loci (gyrB, gyrA, rpoB, rpoC, inhA, embB, gid).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe phylogenetic convergence analysis with clear methodology: mutations present in \u22653 lineages but not fixed in any lineage. The sample size (20,352 isolates) is substantial. The identification of both known resistance loci (C53) and novel genes (C51-C52) provides internal validation - known resistance genes should show convergence. The t-SNE visualizations (Figure 7) support the convergence claims by showing mutations scattered across genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C83"
+    ],
+    "result": "The observed mutational spectrum, including high rates of non-synonymous substitutions and predominance of GC>AT transitions, is consistent with purifying selection on synonymous variants and oxidative DNA damage (deamination of cytosine/5-methyl-cytosine or 8-oxoguanine formation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C83 interpret the mutational spectrum with support from prior work (Ford et al. 2011, Namouchi et al. 2012, Dillon et al. 2015). The GC>AT bias is a well-established signature of oxidative damage in Mtbc. The high non-synonymous rate is consistent with relaxed purifying selection on synonymous sites. These interpretations are standard in the field and the data (C36-C37) support them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "PPE genes showed higher in-host diversity than PE genes and three PPE genes (PPE18, PPE54, PPE60) showed signals of positive selection, indicating PPE genes may play an important role in host-adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by multiple lines of evidence: nucleotide diversity analysis (Figure 6I-J showing PPE > PE, p=0.019), convergence in multiple patients, and phylogenetic convergence across global lineages (C51). The inference about host-adaptation is reasonable given the known immunomodulatory roles of PPE proteins (C67, C70-C71). However, the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C86"
+    ],
+    "result": "Three PPE genes under positive selection (PPE18, PPE54, PPE60) have documented roles in host-pathogen interactions: PPE18 and PPE60 interact with TLR2, PPE54 arrests phagosomal maturation, and PPE18 is used in the M72/AS01E vaccine candidate. The positive selection on PPE18 may have implications for vaccine efficacy against diverse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 and C86 integrate the study's findings with prior literature. The functional roles are supported by appropriate citations (Nair et al. 2009, Su et al. 2018, Brodin et al. 2010, Podinovskaia et al. 2013, Hebert et al. 2007, Tait et al. 2019). The vaccine implication (C86) is appropriately cautious (\"may have implications\") and is a reasonable inference given that PPE18 is under selection and is a vaccine antigen. However, this remains speculative without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The findings are consistent with ongoing co-evolution between humans and Mtbc, with SNPs in human TLR2/TLR4 genes associated with TB susceptibility and Mtbc genes (PPE18, PPE54, PPE60) that interact with these receptors showing positive selection. Most co-evolution is thought to have occurred over long timescales, but this study observes dynamics within single infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 synthesize the study's findings with human genetics literature (Azad et al. 2012, Kleinnijenhuis et al. 2011, Tientcheu et al. 2017, Brites and Gagneux 2015). The co-evolution inference (C74) is supported by the parallel findings of selection in both host and pathogen genes involved in the same pathways (TLR2/TLR4 and their ligands). The observation of short-term dynamics (C75) is novel and well-supported by the longitudinal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Culturing sputa in vitro enriches Mtbc DNA for WGS but creates experimental noise and can purge genetic diversity from the sputum sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by citations (Vargas and Farhat 2020, Nimmo et al. 2019) and is consistent with the study's approach of using technical replicates to estimate noise (C16, C31-C32). This is a known limitation of culture-based WGS and the study appropriately addresses it through stringent filtering and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study analyzed 614 clinical isolates from 307 patients (456 from public databases, 158 newly sequenced), 33,873 global isolates for phylogenetic analysis, and 1,875 epitope sequences from 348 genes for epitope analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe the study datasets with appropriate citations and accession information. The numbers are consistent and the data sources are properly attributed. The epitope filtering process (C79-C80) is clearly described with specific criteria. These are straightforward descriptive claims about study materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "A reduction in diversity at the second time point was observed for patients in which drug-resistant alleles or putative host-pathogen alleles swept to fixation, consistent with positive selection acting on these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe an observation from Figure 3A supporting positive selection. The reduction in heterozygous SNPs when an allele sweeps to fixation is expected under positive selection - the selected allele increases in frequency while other variants are lost. This is a standard population genetics expectation and the data support it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Isolates from clonal infections spanned five of the eight known Mtbc lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a straightforward descriptive finding supported by Figure 5A showing the lineage distribution. This demonstrates the genetic diversity of the study sample and is important for generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C85"
+    ],
+    "result": "The identified pathways under selection (coenzyme B12/cobalamin synthesis, biotin biosynthesis, ESAT-6 secretion) have documented roles in Mtbc survival, growth, infection, and immune modulation based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64-C65, and C85 provide literature support for the biological importance of pathways identified in the study. Each claim is backed by appropriate citations (Rowley and Kendall 2019, Salaemae et al. 2011, Clemmensen et al. 2017). This contextualizes the study's findings within existing knowledge and strengthens the interpretation that these pathways are under genuine selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims about TB epidemiology, Mtbc biology, and prior genomic findings establish the context for the study: TB is a leading cause of death, only 5-10% of infected individuals develop disease, vaccine development has failed, Mtbc is an obligate human pathogen with all selective forces originating in-host, and infections consist of bacterial populations rather than single clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10 are background statements supported by appropriate citations (Pai et al. 2016, Ernst 2018, Gagneux 2018, Sun et al. 2012, multiple papers on within-host diversity). These are well-established facts in the TB field and provide necessary context for the study's rationale.",
+    "result_type": "MINOR"
+  }
+]

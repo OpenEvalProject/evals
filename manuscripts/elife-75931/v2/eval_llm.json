@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed an improved IRM-based assay for measuring microtubule dynamics with high temporal resolution (10 frames/s) and signal-to-noise ratio (>4), incorporating sub-pixel drift correction and robust image analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C19, and C88-C95 collectively describe a well-documented experimental methodology. The IRM imaging approach, sample preparation, drift correction, and tracking algorithms are all described with appropriate citations and technical detail. The methodological improvements over prior work are clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C24",
+      "C25"
+    ],
+    "result": "In GMPCPP (no GTPase activity), microtubules grew steadily with very low fluctuations (2-4 nm\u00b2/s), with measurement noise estimated at ~1 nm\u00b2/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C24-C25 report consistent experimental observations about low growth fluctuations in GMPCPP. The noise floor was characterized using multiple approaches (extrapolation and static microtubules), providing convergent evidence. Quantitative values are reported with appropriate error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C45",
+      "C58",
+      "C59"
+    ],
+    "result": "The measured growth fluctuations in both GMPCPP and GTP were substantially smaller (~5-7 fold) than previously reported, attributed to methodological improvements including sub-pixel drift correction and more robust analysis methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C45, C58-C59 document discrepancies with prior work and provide plausible explanations. The authors acknowledge the differences, cite the prior work appropriately, and explain technical reasons for the improved measurements. This is a well-supported methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Microtubule end tapers in GMPCPP were detectable and dynamic, with the fraction of detectable tapers increasing with tubulin concentration and tapers alternately growing and shrinking on timescales of tens of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 report experimental observations about microtubule end structure with appropriate references to supporting figures. The observations are consistent with the model predictions and provide additional structural context for the growth measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A minimal 2D lattice computational model was used to simulate microtubule dynamics, with key parameters being the association rate constant (kon), longitudinal affinity (KDlong), and corner affinity (KDcorner), assuming trans-acting GTP and no pure lateral associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C100-C107 describe the computational model with appropriate citations to prior work. The model structure, assumptions, and parameters are clearly documented. The model is appropriately characterized as minimal and simplified, with acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Fitting the model to GMPCPP growth rates alone revealed parameter degeneracy: a ~10-fold range of kon values (0.27-2.2 \u03bcM\u207b\u00b9s\u207b\u00b9) could fit the data when corner affinity was sufficiently high (<100 nM), with longitudinal affinity inversely related to kon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report modeling results showing parameter degeneracy when fitting to growth rates alone. This is a well-documented limitation of the approach and motivates the use of fluctuation data as an additional constraint. The inverse relationship between kon and KDlong is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C62"
+    ],
+    "result": "Growth fluctuations in simulations showed a bell-shaped dependence on kon, with intermediate values producing the largest fluctuations, providing stronger constraints on model parameters than growth rates alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C62 report simulation results showing that fluctuations are more sensitive to parameter choices than growth rates. This bell-shaped response is clearly demonstrated in the figures and provides the rationale for using fluctuations as a fitting constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C63",
+      "C82"
+    ],
+    "result": "The optimal parameters from fitting both growth rates and fluctuations in GMPCPP correspond to relatively slow association kinetics (kon = 0.74 \u03bcM\u207b\u00b9s\u207b\u00b9) and strong longitudinal interactions (KDlong = 87 \u03bcM, KDcorner = 25 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37, C63, C82 report the best-fit parameters from the constrained fitting procedure. The values are clearly stated and the conclusion about slow association kinetics is well-supported by the modeling results. This represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The best-fit model parameters produce microtubule end structures that are somewhat tapered but less tapered than observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 acknowledges a limitation of the model by comparing simulated and experimental taper structures. This honest assessment of model limitations strengthens confidence in the overall approach while identifying an area for future improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The slow association/strong longitudinal interaction model is consistent with recent single-molecule studies and the emerging view that microtubule protofilaments can elongate somewhat independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 appropriately contextualize the findings within the broader literature. The consistency with prior single-molecule work and structural studies is well-documented with appropriate citations. This strengthens the interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Microtubules growing with GTP showed growth rates ~10-fold higher than GMPCPP (reflecting higher concentrations), with similar konapp (2.3 vs 3.1 \u03bcM\u207b\u00b9s\u207b\u00b9) but ~35-fold higher critical concentration (3.9 \u03bcM vs 50 nM), consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 report experimental observations for GTP conditions with appropriate quantitative comparisons to GMPCPP and prior literature. The measurements are internally consistent and the comparison to prior work validates the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C46",
+      "C80"
+    ],
+    "result": "Microtubules growing with GTP displayed substantially larger growth fluctuations than GMPCPP, with fluctuations several-fold larger than expected based on extrapolation from GMPCPP data even when accounting for different growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, C46, C80 report the key experimental observation of excess fluctuations in GTP conditions. The comparison is made both in absolute terms and normalized for growth rate, providing strong evidence for a qualitative difference between GTP and GMPCPP conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C67",
+      "C68"
+    ],
+    "result": "Fitting the GTPase-free model to GTP growth rates required weaker longitudinal (KDlong = 1.7 mM) and corner (KDcorner = 2.9 \u03bcM) affinities compared to GMPCPP, with values in the same general range as prior modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C67-C68 report modeling results for GTP conditions using the GTPase-free model. The weaker affinities are consistent with the higher critical concentration, and comparison to prior work validates the approach. This sets up the key finding that the GTPase-free model fails to explain fluctuations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C69",
+      "C70",
+      "C81"
+    ],
+    "result": "The GTPase-free model could fit GTP growth rates but dramatically underestimated fluctuations, and modifying the model to use site-dependent association rates did not improve predictions, indicating that an additional biochemical state is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C69-C70, C81 document the failure of the GTPase-free model to explain fluctuations in GTP. Multiple model variants were tested, strengthening the conclusion that GTPase activity (and thus GDP exposure) is necessary to explain the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C71",
+      "C72",
+      "C83"
+    ],
+    "result": "Incorporating GTPase activity into the model, which allows transient exposure of GDP-tubulin at protofilament ends, produced fluctuations matching experimental observations by transiently 'poisoning' growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C53, C71-C72, C83 report the key mechanistic finding from modeling. The simulations with GTPase activity successfully recapitulate the experimental fluctuations, and the mechanism (GDP poisoning) is clearly demonstrated. This is the central result of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In simulations with GTPase, GDP-tubulin exposure occurs through dissociation of more terminal subunits, and the largest decreases in instantaneous growth rate coincide with multiple protofilaments having terminal GDP, with even low frequencies of GDP exposure showing demonstrable effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide mechanistic detail about how GDP exposure affects growth in the simulations. The correlation between GDP exposure and slow growth is clearly demonstrated, and the sensitivity analysis shows that even low levels of GDP have significant effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C84"
+    ],
+    "result": "The decrease in growth rate accompanying GDP exposure may represent an early event in catastrophe initiation, though this notion is not widely accepted in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C73-C74, C84 present a speculative interpretation connecting the results to catastrophe mechanisms. While the logic is sound and supported by citation, this is explicitly acknowledged as speculation and would require additional experimental validation. The authors appropriately acknowledge that this view contradicts prevailing opinion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors used a simplified model that does not incorporate conformational changes, mechanochemical effects, or GDP-to-GTP exchange, though these limitations are unlikely to eliminate the GDP poisoning effect on fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 provide an honest assessment of model limitations. The authors clearly state what was not included and provide logical arguments for why these limitations do not invalidate the main conclusions. This transparency strengthens confidence in the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The slow association kinetics observed imply that regulatory factors could control microtubule dynamics by modulating either association or dissociation rates, or potentially by altering GDP-tubulin lifetime at the growing end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 draw reasonable implications from the findings for regulatory mechanisms. The connection to known regulatory proteins (Stu2/XMAP215) is appropriately cited, and the speculation about GDP-modulating factors is clearly identified as such while being logically grounded in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The computational model is similar to VanBuren et al. 2002 but uses trans-acting GTP and does not incorporate additional states (GDP.Pi), beyond-nearest neighbor effects, or mechanochemical effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 clearly describe the model's relationship to prior work and its simplifications. The citations are appropriate and the limitations are honestly stated, providing context for interpreting the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Model parameters were optimized using iterative fitting in MATLAB with 50 independent simulations of 600 s each at the same concentrations as experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 describe the parameter optimization procedure with sufficient detail for reproducibility. The number of simulations and their duration are clearly specified, and the approach is standard for this type of modeling work.",
+    "result_type": "MINOR"
+  }
+]

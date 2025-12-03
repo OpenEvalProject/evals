@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors identified 69 trans-regulatory mutations affecting expression of the PTDH3-YFP reporter gene in S. cerevisiae through a combination of bulk-segregant analysis with whole-genome sequencing (BSA-Seq), candidate gene sequencing, and functional validation. The mutations were identified from 82 EMS-mutagenized strains, with BSA-Seq identifying 1819 total mutations (97.2% single nucleotide changes, 96.3% G:C to A:T transitions consistent with EMS mutagenesis), and functional testing in single-site mutants confirming that 96% of tested mutations caused significant expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C23-C43 collectively provide strong evidence for the identification and validation of 69 trans-regulatory mutations. The BSA-Seq approach is well-described (C29-C35), the mutational spectrum is consistent with EMS mutagenesis (C31-C32), and functional validation shows high concordance between EMS mutants and single-site mutants (C40-C42, r\u00b2=0.944). The ~4% false positive rate (C40) and systematic validation approach support the reliability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Trans-regulatory mutations were significantly enriched in coding sequences (98.5% vs 71.3% of non-regulatory mutations, p=4.3\u00d710\u207b\u2079) and in protein-altering changes, particularly nonsense mutations (20% vs 3%, p=4.8\u00d710\u207b\u2076) and glycine substitutions (49.2% vs 14.5%, p<10\u207b\u2074). Aneuploidies were also significantly overrepresented among trans-regulatory mutations (p=8.6\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 report statistically significant enrichments with appropriate statistical tests (G-tests, permutation tests) and clear p-values. The enrichment of glycine substitutions is mechanistically plausible given glycine's unique structural properties (C54-C56), and the statistical comparisons are made against a large control set of 1766 non-regulatory mutations. The findings are internally consistent across multiple mutation types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C83"
+    ],
+    "result": "Trans-regulatory mutations showed significant enrichment in a predicted TDH3 regulatory network (6.1% vs 0.5%, p=0.0037) but were not enriched in transcription factors generally (7.7% vs 5.6%, p=0.52). Targeted mutagenesis of RAP1 and GCR1, two direct TDH3 regulators, revealed that most RAP1 mutations (90.9%) did not significantly affect expression, likely due to lethality of functional mutations, while 37.7% of GCR1 mutations affected expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C83 demonstrate that while trans-regulatory mutations are enriched in the predicted regulatory network, most (>90%) map outside this network. The RAP1 and GCR1 mutagenesis experiments (C61-C68) provide mechanistic insight into why certain regulators were not recovered, with evidence that RAP1 mutations are likely lethal (C65-C66). The statistical tests are appropriate and the experimental validation strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C84"
+    ],
+    "result": "The 65 trans-regulatory point mutations in coding sequences mapped to 42 genes with diverse functions, with significant enrichment in genes involved in chromatin structure (13 genes), metabolism (6 genes), transcriptional regulation (9 genes), glucose signaling (5 genes), purine biosynthesis, and iron homeostasis. Nearly half (31 of 65) of trans-regulatory mutations were in genes involved in purine biosynthesis or iron homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 and C84 report gene ontology enrichment analysis with appropriate statistical testing (Fisher's exact tests, p<0.05). The concentration of mutations in purine biosynthesis and iron homeostasis pathways is striking and well-documented (C77-C79). The diversity of affected genes beyond transcription factors is a key finding, though the mechanistic connections between these pathways and TDH3 expression remain unclear (acknowledged in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "Trans-regulatory mutations were significantly enriched in eQTL regions associated with natural variation in PTDH3-YFP expression (88% vs 66.7%, p=9.6\u00d710\u207b\u2075), with significant enrichment observed in SK1\u00d7BY and YPS1000\u00d7BY crosses but not M22\u00d7BY. This suggests that mutational sources of regulatory variation have shaped genetic variation segregating in natural populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 report statistically significant enrichment with appropriate controls (non-regulatory mutations show no enrichment, p=0.15). The cross-specific differences (C81) are interesting but the lack of enrichment in M22\u00d7BY is not explained. The inference about evolutionary implications (C85) is reasonable but somewhat speculative, as it assumes the eQTL regions accurately capture natural variation and that mutational biases persist through selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C41"
+    ],
+    "result": "Mutations in purine biosynthesis genes (ADE2, ADE4, ADE5, ADE6) were identified in 14 of 15 mutants with >5% increased fluorescence through candidate gene sequencing, and all 11 tested mutations significantly increased fluorescence. These mutations affected expression through the TDH3 promoter rather than YFP, as they did not increase fluorescence driven by other promoters (PRNR1, PSTM1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C41 provide strong evidence for purine biosynthesis genes as a major source of trans-regulatory variation affecting TDH3 expression. The promoter-specificity experiment (C38) is a critical control demonstrating that effects are mediated through TDH3 regulation rather than post-transcriptional effects on YFP. The 100% validation rate (C41) and systematic identification approach support the robustness of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "This study provides the largest collection of individual trans-regulatory mutations affecting a single gene to date, with methods sensitive to 1.6% expression changes, though it is limited to a single gene (TDH3) in a single species (S. cerevisiae) using EMS mutagenesis and a YFP reporter system. TDH3 has specific properties (highly expressed, TATA box, nucleosome-free promoter) and S. cerevisiae has unique genomic features (69.4% coding, compact promoters, few introns, low DNA methylation) that may limit generalizability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 appropriately acknowledge the study's scope and limitations. The claim of being the largest collection (C86) is reasonable but not verifiable without comprehensive literature review. The limitations regarding EMS mutagenesis (C88), reporter gene use (C89), and species-specific features (C90-C95) are well-articulated and important for interpreting the results. These caveats are appropriately conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The number of mutations per strain did not follow a Poisson distribution, with more strains having mutation counts far from the average than expected (p<10\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports a statistically significant deviation from Poisson distribution with appropriate statistical testing (resampling test). The observation is surprising and the authors provide a plausible explanation (cell-to-cell heterogeneity in DNA repair). However, the biological significance of this finding for the main conclusions is unclear, and alternative explanations (e.g., technical artifacts, selection during culture) are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes background knowledge about gene regulation, trans-regulatory variation, and the rationale for studying trans-regulatory mutations in S. cerevisiae, including the limitations of targeted approaches for studying trans-regulatory mutations and the polygenic nature of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C16, C18, C20-C21 are well-supported by appropriate citations to established literature. These claims provide necessary context and justify the study design. Claim C9 is a logical inference about the limitations of targeted approaches. Claim C17 is appropriately speculative about potential differences between coding and non-coding mutations. These background claims are appropriately referenced and provide solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The genomic distribution of new trans-regulatory mutations overlaps significantly with trans-regulatory variants segregating among wild S. cerevisiae isolates affecting the same gene, suggesting mutational processes shaped regulatory variation in the wild.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by data comparing new mutations to segregating variants (with citation to Metzger and Wittkopp, 2019). However, this claim is somewhat redundant with the more detailed analysis in C80-C81 and C85. The inference about mutational processes shaping wild variation is reasonable but assumes that selection and drift have not substantially altered the distribution of variants, which may not be fully justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Trans-regulatory mutations were widely spread throughout the genome, with all except one located in coding sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 summarizes key findings already detailed in C47-C48. This is a valid summary statement supported by the data, showing that 98.5% of trans-regulatory mutations are in coding sequences. The claim is accurate but represents a summary rather than a new finding.",
+    "result_type": "MINOR"
+  }
+]

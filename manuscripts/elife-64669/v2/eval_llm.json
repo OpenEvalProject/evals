@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C31",
+      "C32",
+      "C66"
+    ],
+    "result": "The CNN achieves high accuracy (>88% precision, >90% overall accuracy) on simulated data for detecting adaptive introgression under various demographic models, with performance maintained for both phased and unphased genotypes and only moderate decreases in the presence of heterosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C27, C31, C32, and C66 collectively demonstrate strong CNN performance across multiple demographic models and data types. The precision values (88.1-90.2%) and NPV values (82.5-98.7%) are explicitly reported with supporting figures, and the robustness to heterosis is demonstrated through DFE simulations (C3, C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C33",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CNN prediction probabilities correlate with selection parameters: higher probabilities are output for AI simulations with larger selection coefficients, older times of selection onset, and more ancient gene flow pulses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C33, C76, C77, and C78 describe consistent patterns in CNN behavior across different selection parameters. These are supported by Figure 2 panel B and Figure 2\u2014figure supplement 1, showing systematic variation in recall and prediction probabilities with selection timing and strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C79"
+    ],
+    "result": "The CNN more frequently misclassifies neutral simulations as AI compared to sweep simulations, indicating that distinguishing AI from neutral variation is more challenging than distinguishing AI from selective sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C79 are supported by the confusion matrix analysis shown in Figure 2. This pattern is consistent across different demographic models and represents an important characterization of the method's error profile.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C67"
+    ],
+    "result": "Heterosis following introgression produces patterns similar to adaptive introgression and inflates false positive detection by the CNN to a small extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C67 are supported by simulations incorporating a distribution of fitness effects with recessive dominance (70% deleterious mutations). Figure 2 shows the DFE results, and the authors note this represents a worst-case scenario since all mutations were simulated with recessive dominance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C68",
+      "C69"
+    ],
+    "result": "When the demographic model is correctly specified, the CNN outperforms VolcanoFinder and performs better than summary statistics, though the Q95(1%, 100%) statistic also performs remarkably well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C68, and C69 are supported by the method comparison shown in Figure 2\u2014figure supplement 2. The MCC-F1 curves demonstrate clear performance differences, with the CNN closest to perfect performance, followed by Q95(1%, 100%). VolcanoFinder's poor performance is explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C70"
+    ],
+    "result": "Under demographic model misspecification, CNN performance degrades, with the Q95(1%, 100%) statistic showing greater robustness than the CNN, suggesting summary statistics may be preferable when demographic uncertainty exists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C39, and C70 are supported by the misspecification analysis in Figure 2\u2014figure supplement 2. Weak misspecification (Model A2) caused small performance reduction, while strong misspecification (Model B) caused noticeable degradation. The Q95 statistic's robustness is demonstrated across both scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Saliency map analysis reveals that the CNN focuses attention on donor and recipient population haplotypes rather than the unadmixed outgroup, with concentration in the central genomic region near where selected mutations were simulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, and C42 are supported by the saliency map analysis shown in Figure 3. The gradient visualizations clearly show differential attention patterns across populations and genomic positions, providing interpretability for the CNN's decision-making process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C47"
+    ],
+    "result": "Application of the CNN to European genomes identified both previously reported candidates for Neanderthal adaptive introgression (BNC2, KCNQ2/EEF1A2, WRD88/GPATCH1, TANC1/BAZ2B) and novel candidates including regions on chr6:28.18-28.32 Mb and chr20:62.1-62.28 Mb containing zinc finger protein genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C47 are supported by the application to empirical data shown in Figure 5 and Table 1. Previously reported candidates validate the method, while novel candidates are identified with supporting genomic coordinates and gene annotations. However, the authors note that visual inspection remains necessary (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Application of the CNN to Melanesian genomes identified candidates for Denisovan adaptive introgression, including the previously reported TNFAIP3 and novel candidates such as CYCS, PRDM4/ASCL4, SUMF1/LRNN1, SFRP4, RAB27A, PRKCH, and KCNH5, many associated with immune, metabolic, and neurological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C65 are supported by the application to Melanesian genomic data shown in Figure 6 and Table 2. The identification of TNFAIP3 validates the method against prior work, while novel candidates are supported by genomic coordinates and functional annotations from cited literature. The biological plausibility is enhanced by disease associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Visual inspection of candidate regions remains necessary for accurate assessment, and method performance depends on the demographic history of the populations involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 are supported by the discussion of false positives in empirical data (e.g., chr2:109360001-109460000, chr4:54240001-54340000) and the performance differences between demographic models. This represents an important limitation and recommendation for method application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "Simulations for CNN training used three scenarios (neutral, sweep, AI) with selection coefficients drawn log-uniformly from 0.0001-0.1, rejection sampling to condition on allele frequency \u22655%, and genotype matrices constructed with MAF >5% filtering, selected site exclusion, and haplotype sorting by similarity to donor population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, C91, C92, C93, C94, and C97 describe the simulation and data processing pipeline. These methodological details are clearly stated in the Materials and methods section and are internally consistent. The procedures are standard for population genetic simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C102",
+      "C104",
+      "C105"
+    ],
+    "result": "The CNN architecture consists of batch normalization followed by 7 convolutional blocks with 2\u00d72 stride (no pooling), trained for 3 epochs on 100,000 simulations per scenario using Adam optimizer and cross-entropy loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C99, C102, C104, and C105 describe the CNN architecture and training procedure. These are clearly specified in the Materials and methods section and Figure 1. The use of stride instead of pooling is justified by computational efficiency (Springenberg et al., 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Beta calibration and isotonic regression both produced well-calibrated probabilities compared to uncalibrated outputs, with beta calibration chosen for empirical data due to its relative simplicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C107, and C108 are supported by the calibration analysis shown in Figure 4\u2014figure supplements 1-4. Reliability plots and variance-normalized residuals demonstrate calibration quality. The choice of beta calibration is justified by simplicity while maintaining performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Saliency maps were computed by averaging input-specific gradient maps calculated using tf-keras-vis v0.5.5 with 'vanilla' saliency configuration over 300 simulated matrices per scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C110 describe the saliency map computation procedure. The methodology is clearly stated and uses established software (tf-keras-vis) with appropriate citation. The approach follows standard practices for CNN interpretability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "CNN training required approximately 15 minutes on one NVIDIA Tesla T4 GPU (equivalent to 60 CPU hours).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 provides specific computational requirements that are clearly stated in the Materials and methods section. This represents practical information for method reproducibility and resource planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The method requires sequencing data from the donor population, can accept either phased or unphased genotypes, but requires called genotypes and is not suitable for low-coverage data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, and C82 describe method requirements and limitations. These are clearly stated in the Discussion section and are consistent with the simulation and empirical data analysis procedures described throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "CNNs are a powerful approach for detecting adaptive introgression that can recover both known and novel selection candidates, exemplifying how deep learning serves as a powerful tool for population genetic inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 represent summary conclusions supported by the collective results of the study. The recovery of known candidates (BNC2, KCNQ2, TNFAIP3) validates the method, while novel candidates demonstrate discovery potential. The conclusion is appropriately contextualized with citations to related work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior work has established that adaptive introgression occurs across species, human evolution involved Neanderthal/Denisovan admixture with evidence for both negative and positive selection, and deep learning has been applied to various population genetic problems, but no dedicated deep learning methods existed for detecting adaptive introgression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C23 summarize prior work and establish context for the study. These are supported by appropriate citations throughout the Introduction section. The claim that no prior deep learning methods existed for AI detection (C23) establishes the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C52",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Candidate genes identified by the CNN have biological functions related to chromatin remodeling, neurodevelopment, mitochondrial function, transcriptional regulation, metabolism, and disease associations based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C52, C54, C55, C57, C58, C60, C62, C64, and C65 describe gene functions and disease associations based on cited literature. These provide biological context for the computational predictions but represent secondary knowledge claims rather than primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The method achieves >88% precision for detecting adaptive introgression, is effective on both ancient and recently selected haplotypes, and was successfully applied to human genomic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C26 represent high-level summary statements that are supported by the detailed performance results (C27, C31, C32) and empirical applications (C43-C65). These claims accurately summarize the main findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

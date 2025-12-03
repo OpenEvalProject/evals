@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Elevation of extracellular K+ causes a steep, sudden failure of muscle force over a narrow range of resting potentials. Force initially increases with K+ elevation, then declines rapidly at higher K+ concentrations. Between 10 and 14 mM K+, force drops from near normal to almost zero, corresponding to resting potentials of approximately -62 mV and -57 mV respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide converging experimental evidence from force measurements (n=3 muscles per K+ concentration) and intracellular recordings (n=4-5 muscles, 32-50 fibers) showing the steep K+ and voltage dependence of force failure. The data are consistent with prior literature (C31 cites Cairns et al., 1997) and include appropriate sample sizes and statistical reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Action potentials can still be initiated at K+ concentrations where force production has failed. AP amplitude decreases with depolarization, but small APs (peaking between -40 and +10 mV) persist even at 14-16 mM K+ where force is near zero. Ca2+ transients fail when APs peak below -30 mV, suggesting that failure of Ca2+ release, not failure to initiate APs, underlies force failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 are supported by simultaneous AP and Ca2+ imaging data showing dissociation between AP generation and force production. The threshold of -30 mV for Ca2+ transient failure (C44-C45) is clearly demonstrated in Figure 1D and F. The inference that Ca2+ transient failure precedes AP initiation failure (C46) is logically sound given the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The relationship between Ca2+ transients (\u0394F/F) and resting potential parallels the relationship between force and resting potential, indicating that failure to trigger Ca2+ release from the SR is the mechanism underlying depolarization-induced failure of ECC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by Ca2+ imaging data using GCAMP6f in muscle fibers. The parallel between \u0394F/F vs. resting potential (Figure 1E) and force vs. resting potential (Figure 1B) provides strong evidence for the proposed mechanism. However, the high variability in 10 mM K+ (C39) suggests some experimental limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "During continuous recording of individual fibers with 16 mM K+ infusion, there is an initial increase in \u0394F/F despite declining AP peak, followed by rapid complete loss of \u0394F/F. The relationship between \u0394F/F and resting potential is significantly steeper (slope factor 0.4\u00b10.2 mV) than the relationship between AP peak and resting potential (slope factor 1.8\u00b10.6 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are well-supported by time-course recordings from 12 fibers (5 mice) with appropriate statistical analysis (paired t-tests, p<0.0001 for initial increase, p<1\u00d710\u207b\u2075 for slope comparison). Boltzmann fits provide quantitative characterization of the voltage dependence. The steeper slope for \u0394F/F decline indicates a more abrupt failure mechanism than AP amplitude reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The integral of AP voltage with respect to time (above -30 mV) correlates more closely with Ca2+ transient amplitude (R\u00b2=0.86\u00b10.11) than does AP peak (R\u00b2=0.65\u00b10.14). APs peaking below -30 mV trigger little to no Ca2+ elevation. The \u0394F/F is half-maximal at an AP peak of -21.0\u00b14.0 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C55-C63 are supported by systematic analysis of AP properties vs. \u0394F/F in 12 fibers with statistical comparison (p<0.001 for R\u00b2 values). The use of -30 mV as a threshold for AP integral calculation is justified by the observation that APs below this voltage do not trigger Ca2+ release. The correlation analysis is appropriate and the conclusion that AP integral better predicts Ca2+ release is statistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "AP conduction fails when APs peak below -21 mV. With electrodes separated by 1.6 mm, conduction failure occurs over a very narrow range of resting potentials (0.8\u00b10.5 mV difference between last successful and first failed ECC). At the time of conduction failure, local Ca2+ transients near the stimulating electrode remain near normal (96\u00b115%), indicating that local APs can still trigger Ca2+ release even when they fail to propagate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C67-C78 are supported by dual-electrode recordings with Ca2+ imaging (n=8 muscles for far electrodes, n=10 muscles for close electrodes). The -21 mV threshold for conduction is consistent across both electrode configurations. The observation of maintained local Ca2+ release during conduction failure (C74-C75) is a novel finding supported by spatial imaging data. However, the inference about t-tubule invasion (C75) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors hypothesize that AP conduction is governed by AP peak voltage, whereas Ca2+ release from the SR is governed by AP integral. This hypothesis proposes distinct AP properties control different steps of ECC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C96-C97 present a central hypothesis that is well-supported by the experimental data showing: (1) AP peak predicts conduction failure at -21 mV, (2) AP integral better correlates with Ca2+ release than peak, and (3) the mechanistic rationale based on Na+ and Cav1.1 channel kinetics (C10-C11, C98-C105). The hypothesis is explicitly stated and the supporting evidence is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The mechanistic basis for AP peak governing conduction is that Na+ channels have rapid kinetics and ~90% are activated by -20 mV. Below -21 mV, the steep decline in Na+ channel activation creates a positive feedback loop where decremental conduction further reduces AP peak, leading to propagation failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C87-C90, and C98-C100 are supported by prior voltage-clamp data (C87 cites Rich and Pinter, 2003) and general knowledge of Na+ channel kinetics (C10, C98). The hypothesis about the feedback loop below -21 mV (C89-C90) is a reasonable inference from the experimental observations and Na+ channel properties. The conclusion that AP width doesn't affect propagation (C100) follows logically from rapid Na+ channel kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C93",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The mechanistic basis for AP integral governing Ca2+ release is that Cav1.1 gating charge movement has slower kinetics than the AP upstroke, such that wider APs allow more charge movement. Only ~65% of total intramembrane charge moves during an AP, and Ca2+ release begins at -30 to -20 mV and becomes maximal above +10 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C93, and C101-C105 are supported by multiple citations to prior work on Cav1.1 kinetics and charge movement (Schneider and Chandler, 1973; Banks et al., 2021, 2022; Savalli et al., 2021). The voltage range for Ca2+ release (C93) is consistent with both the current study and prior voltage-clamp studies (Wang et al., 1999; Braubach et al., 2014). The inference that AP integral governs Ca2+ release (C105) follows logically from the kinetic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C114"
+    ],
+    "result": "Inactivation of Nav1.4 channels, rather than inactivation of SR Ca2+ release, is the primary mechanism underlying depolarization-induced failure of ECC. When 5 ms current injections were used to depolarize inexcitable fibers at -52 mV resting potential, \u0394F/F averaged 92\u00b110% of maximum, suggesting at most modest SR Ca2+ release inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 and C114 are supported by experiments using prolonged current injections to bypass Nav1.4 inactivation (n=13 fibers from 5 muscles). The finding that artificial depolarization can restore near-normal Ca2+ release (C81) provides strong evidence that SR Ca2+ release machinery remains functional. However, the authors appropriately note this doesn't rule out partial inactivation (C82), and the conclusion is stated as an inference rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "AP peaks above -21 mV serve as a safety factor for ECC, analogous to the safety factor at the neuromuscular junction. The authors propose that conduction along fiber length fails before conduction into t-tubules fails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the experimental demonstration that APs must peak above -21 mV for reliable conduction, with appropriate citation to prior work on NMJ safety factors (Rich, 2006). Claim C92 is a reasonable inference from the observation that local Ca2+ release persists when longitudinal conduction fails (C74-C75), though the authors acknowledge this requires direct measurement of t-tubule propagation for definitive confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Despite being controlled by different AP properties, failure of conduction and failure of Ca2+ release occur nearly simultaneously because once AP peak drops below -30 mV, no Ca2+ release occurs regardless of AP width, and only minimal additional depolarization is needed to reduce AP peak from -20 to -30 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by the experimental observations showing the narrow voltage range over which both failures occur. The explanation reconciles the distinct mechanisms (AP peak for conduction, AP integral for Ca2+ release) with the observed near-simultaneous failure. This is a logical synthesis of the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The speed of depolarization affects the relationship between resting potential and AP properties. Rapid depolarization (16 mM K+ infusion over minutes) results in higher AP peaks at a given resting potential compared to prolonged exposure (20 min incubation), likely due to greater slow inactivation of Na+ channels with prolonged depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by comparison of data from different experimental protocols (Figures 1C vs 2E, 1E vs 2F) and citations to prior work on slow inactivation (Ruff, 1996, 1999; Rich and Pinter, 2003). The explanation that slow inactivation occurs at more negative potentials than fast inactivation (C112) is supported by prior work. This is an important methodological consideration for interpreting depolarization-induced failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "GCAMP6f is a high-affinity Ca2+ indicator (Kd ~600 nM) that can detect Ca2+ changes from 100 nM to 5 \u03bcM, but has slow kinetics that preclude study of Ca2+ signal kinetics. The 30 Hz sampling rate introduced slight underestimation of peak \u0394F/F, as the signal at 33 ms was 96.2\u00b10.8% of peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by citations to prior characterization of GCAMP6f (Chen et al., 2013; Shang et al., 2014). Claims C115-C118 provide validation of the imaging approach, showing that the time to peak (44.3\u00b13.2 ms) is slower than muscle twitch (22.3\u00b13.2 ms), consistent with slow Ca2+ binding kinetics. The assessment of sampling rate effects (C117-C118) demonstrates appropriate methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The length constant of mouse EDL fibers is ~0.5 mm, such that with electrodes separated by 1.6 mm, passive current spread from the stimulating electrode contributes minimally to depolarization at the recording electrode. This was confirmed by showing that 1000 nA hyperpolarizing current for 0.2 ms caused no detectable voltage deflection at the recording electrode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by citation to prior measurement of length constant (Riisager et al., 2014) and direct experimental validation (C66). This is important for establishing that recorded APs at the distant electrode reflect conducted APs rather than passive spread. The experimental design is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17"
+    ],
+    "result": "Depolarization of skeletal muscle resting potential contributes to failure of ECC in periodic paralysis and ICU-acquired weakness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C16-C17 are statements of established knowledge supported by appropriate citations (Lehmann-Horn et al., 2008; Cannon, 2015; Friedrich et al., 2015). These provide important clinical context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C18"
+    ],
+    "result": "Depolarization of resting potential possibly/potentially contributes to fatigue during vigorous exercise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3 and C18 are explicitly speculative (using 'possibly' and 'potentially') and supported by only one citation (Allen et al., 2008). The authors appropriately qualify this as uncertain, and it serves as motivation for the study rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The canonical ECC pathway involves depolarization in t-tubules activating Cav1.1 channels, which triggers opening of ryanodine receptors, Ca2+ exit from the SR, and force production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe the established mechanism of ECC, supported by multiple authoritative citations (Melzer et al., 1995; Dulhunty, 2006; Bannister and Beam, 2013; Hern\u00e1ndez-Ochoa and Schneider, 2018). This is background knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior studies have shown that muscle force is stable or slightly increased with mild depolarization, followed by steep decline with further depolarization. This decline parallels decreases in Ca2+ transients and compound muscle APs, and may involve graded failure of excitation and reduction in AP peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately summarize prior literature with appropriate citations. These establish the context and gaps in knowledge that motivate the current study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior studies have measured conduction velocity in mouse EDL using three-electrode recording and Ca2+ indicators, and have demonstrated AP conduction failure during repetitive stimulation and nonpropagating Ca2+ release during bipolar stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 accurately cite prior work (Riisager et al., 2014; Banks et al., 2018; Hern\u00e1ndez-Ochoa et al., 2016) that provides methodological precedent and context for the current study. These are appropriate literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Prior work has reported that depolarization triggers AP widening, and a computer simulation suggested this contributes to increased Ca2+ signal with modest depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 cite prior experimental (Yensen et al., 2002) and computational (Senneff and Lowery, 2021) work. The authors note some uncertainty ('see, however, Yensen et al., 2002'), suggesting potential controversy. These citations provide context for interpreting the role of AP width.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "All animal procedures were performed in accordance with institutional and federal guidelines. All experiments were performed at 21-23\u00b0C within 4 hours of sacrifice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are straightforward statements of experimental conditions and ethical compliance. These are standard methodological details that are appropriately reported.",
+    "result_type": "MINOR"
+  }
+]

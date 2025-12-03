@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors developed a generalized Kalman filter for ion channel kinetics that extends prior work by incorporating state-dependent noise (open-channel noise and Poisson noise in fluorescence data). They solved the technical challenge that state-dependent noise causes the Bayesian update equation to lose its analytical solution by deriving an approximation correct for the first two moments of probability distributions using the theorem of total variance decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C56-C59 collectively establish the methodological innovation. The derivation is stated to be exact up to the second moment (C75), which is appropriate for the Kalman filter framework. The mathematical approach using total variance decomposition (C57) is a standard technique for handling state-dependent noise, and the authors acknowledge the limitation that mean and covariance no longer form sufficient statistics (C59, C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C62",
+      "C70",
+      "C78"
+    ],
+    "result": "The generalized Kalman filter outperforms both a classical Kalman filter and rate equation (RE) approach on patch-clamp data with realistic open-channel noise, even for unrealistically large numbers of channels (>several thousand per patch). The KF shows lower Euclidean error and is more robust to analog filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C62, C70, and C78 are supported by data in Figures 3, 11, and related analyses. The comparison shows consistent superiority of the generalized KF over both the classical KF (which fails with state-dependent noise, C27) and the RE approach across multiple metrics. The error ratio remains constant even at large channel numbers (C78, Figure 3c), challenging the assumption that RE approaches become equivalent to stochastic methods for large ensembles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C80",
+      "C81"
+    ],
+    "result": "Adding orthogonal fluorescence data (cPCF) to current measurements makes previously unidentifiable parameters identifiable and increases parameter estimate accuracy by approximately an order of magnitude. The second observable also reduces overfitting tendency of the RE approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C80, and C81 are supported by Figures 4, 7, and 10. Figure 4a shows the Euclidean error is roughly an order of magnitude larger for PC data compared to cPCF data for N_ch > 2000. Figure 7 demonstrates that parameters unidentifiable with PC data alone become identifiable with cPCF data. The reduction in overfitting for the RE approach is shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The Bayesian filter yields realistic uncertainty quantification via properly shaped posteriors and valid highest density credibility volumes (HDCVs), while the RE approach produces posteriors that never cover true values within reasonable HDCVs across various signal-to-noise ratios, making Bayesian uncertainty quantification meaningless when combined with RE approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C82-C85 are supported by the systematic HDCV analysis in Figures 5 and 6. The binomial success statistics (Figures 5c, 6a-b) demonstrate that the KF HDCVs have appropriate coverage properties while RE HDCVs consistently fail to include true values even at high probability masses. This is a rigorous empirical test of frequentist coverage properties. The conclusion that this invalidates confidence volumes based on likelihood curvature (C84) logically follows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C86"
+    ],
+    "result": "The Bayesian filter delivers less biased estimates for a wider range of data quality and identifies parameters in complex models where the RE approach fails, even for large ion channel ensembles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C86 are supported by Figures 8, 9, 11, and 12 showing bias analysis, and Figure 7 showing parameter identifiability across model complexity. Figure 9 shows the RE approach produces biased estimates and unidentified parameters even at N_ch = 75,000 for the five-state model, while the KF identifies all parameters. The bias analysis in Figures 11 and 12 demonstrates superior robustness of the KF across different data quality conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C86"
+    ],
+    "result": "For some data sets with increased model complexity, the Bayesian filter identifies more parameters than the RE approach, particularly for patch-clamp data alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C86 are directly supported by Figure 7, which shows that for the five-state model with PC data, the RE approach fails to identify k54 even at high N_ch values, while the KF identifies all parameters. This demonstrates a clear advantage in parameter identifiability, particularly as model complexity increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C87",
+      "C88"
+    ],
+    "result": "The Bayesian filter is more robust against errors from analog filtering before analog-to-digital conversion than the RE approach. The KF should sample as fast as possible with a cut-off frequency at least one order of magnitude higher than the sampling frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70, C87, and C88 are supported by Figure 11, which systematically varies the Bessel filter cut-off frequency. The data show the KF maintains lower bias and is less affected by filtering across a range of cut-off frequencies. The recommendation for high sampling rates (C88) follows logically from the analysis showing that bias increases when f_cut approaches f_ana.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C89",
+      "C90"
+    ],
+    "result": "The Bayesian filter is more robust than the RE approach against errors from limited time resolution of fluorescence data, though both algorithms require that intrinsic time scales (1/eigenvalues) of the process be slower than the integration time of data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71, C89, and C90 are supported by Figure 12. While both algorithms show similar bias due to finite integration time (C71), the KF is more robust overall (C89). The critical finding that time scales must be slower than integration time (C90) is demonstrated by the sharp increase in error when f_int approaches the eigenvalues (Figure 12b). This is an important practical limitation for both methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The authors' approach is equivalent to approaches based on the chemical Langevin or Fokker-Planck equations and uses a time-integrated version of the linear noise approximation, which is exact up to the second moment for first-order chemical reaction networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by citations to Wallace et al., 2012 and Grima, 2015 for the linear noise approximation properties, and Gillespie, 2002 for the equivalence to chemical Langevin/Fokker-Planck equations. This theoretical grounding is appropriate and the connection to established methods in chemical kinetics is well-founded. The limitation to second moments is consistent with the Kalman filter framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C45",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "The Kalman filter approximates the solution of the chemical master equation to manage computational complexity while remaining in a stochastic framework. For systems obeying the linear Gaussian assumptions, the KF is the minimum variance filter, and it has linear time complexity in the number of data points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C45, C48, C49, and C54 describe well-established properties of Kalman filters supported by standard references (Anderson and Moore, 2012; Kalman, 1960). The optimality property (C48) is conditional on the assumptions being met, and the authors appropriately note that non-linear filters might be better if distributions are non-normal (C49). The linear time complexity (C54) is a key computational advantage enabling Bayesian inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C101",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The Bayesian approach is superior to maximum likelihood estimation for singular models (like HMMs and KFs) because it remains valid when parameters are unidentifiable or posteriors are non-Gaussian, provides correct uncertainty quantification, and offers superior model selection tools, whereas ML fitting fails due to breakdown of the Cram\u00e9r-Rao bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C101-C110 describe well-established advantages of Bayesian methods for singular models, supported by appropriate citations (Watanabe, 2007; Hines et al., 2014; Gelman et al., 2014). The theoretical argument about Fisher information matrix singularity (C105-C106) and its consequences for ML estimation (C107-C108) is mathematically sound. The empirical demonstration in this paper (Figures 5-6) provides strong support for these theoretical claims in the specific context of ion channel kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study uses an exemplary ligand-gated channel model with two binding steps and one opening step, simulating confocal patch-clamp fluorometry (cPCF) data at 10-100 kHz sampling, with KF analysis at 200-500 Hz for cPCF data and 2-5 kHz for current data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C93-C95 describe the simulation setup, which is clearly stated in the text and shown in Figure 1a. These are straightforward methodological details that are well-documented. The choice of analysis frequencies is appropriate given the time scales of the simulated processes and the need to avoid violating white noise assumptions after filtering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The algorithm uses automatic differentiation and Hamiltonian Monte Carlo (HMC) via Stan software to sample from the posterior distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by citations to Betancourt, 2017; Hoffman and Gelman, 2014; Gelman et al., 2015, and is stated in the Methods section. HMC with automatic differentiation is a standard and appropriate choice for sampling complex posteriors in Bayesian inference. The use of Stan is well-justified for this application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129",
+      "C131"
+    ],
+    "result": "Microscopic reversibility was enforced using a hierarchical prior distribution that allows at maximum \u00b10.005 relative deviation from strict microscopic reversibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129 and C131 describe a methodological choice for handling microscopic reversibility constraints. The approach using a hierarchical prior (Equation 60-62) is mathematically sound and more flexible than strict algebraic constraints. The \u00b10.005 tolerance is stated explicitly and represents a very tight constraint that effectively enforces microscopic reversibility while remaining within the Bayesian framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "Deterministic rate equation approaches do not use information from time- and cross-correlations of intrinsic noise, are asymptotically valid only for infinite channels, and effectively treat each time trace as containing only one independent data point. The Milescu et al. 2005 algorithm achieves computational efficiency by ignoring time correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C20 describe well-known limitations of deterministic approaches, supported by the theoretical framework and citations. The statement about one independent data point (C17) is a logical consequence of the asymptotic validity (C16). The characterization of the Milescu et al. algorithm (C20) is supported by citation and is consistent with the comparative analysis in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The approach can approximate any stochastic system with linear (pseudo-first-order) kinetics. Prospective extensions using Bayesian Gaussian sum filters or particle filters could overcome modeling errors at low ion channel numbers or low photon fluxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is supported by citation to Sorenson and Alspach, 1971, indicating this is a known property of Kalman filters for linear systems. However, C92 is speculative about future extensions (marked as SPECULATION in evidence_type). While the suggestion is reasonable and supported by citations to relevant methods (Golightly and Wilkinson, 2011; Gillespie and Golightly, 2012), no empirical validation is provided in this work. The claim about overcoming modeling errors is plausible but undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C13"
+    ],
+    "result": "Inferring kinetic schemes from ensemble currents is challenging due to limited information, and a Bayesian estimator that can exploit cross-correlations and time correlations in multi-dimensional signals of ion channel ensembles was previously missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C13 provide motivation for the work. C1 is a general statement about the difficulty of the problem that is widely accepted in the field. C13 identifies a specific gap that this work addresses. Both claims are reasonable characterizations of the state of the field prior to this work, though C13 could be considered somewhat self-serving as a motivation.",
+    "result_type": "MINOR"
+  }
+]

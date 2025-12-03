@@ -1,0 +1,450 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C221",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "The study improved the S. mediterranea genome annotation by integrating 183 RNA-seq datasets, identifying 91,068 transcripts at 28,097 loci, including 50,213 new isoforms and 7,412 new loci (3,121 coding, 4,291 non-coding). This represents a >10% increase in protein-coding genes, with new transcripts being shorter but expressed at similar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C68 and C221-C231 provide comprehensive quantitative data on the annotation improvements, including transcript counts, loci numbers, and expression characteristics. The methodology is clearly described (C55-C57), and the findings are internally consistent with appropriate statistical comparisons (C64). The validation that all SMESG high-confidence annotations were retained (C59) strengthens confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study identified genes with high alternative splicing, including a planarian ankyrin-3 homolog with 112 isoforms, supporting evolutionary conservation of the giant ankyrin-based cytoskeleton of the axon initial segment in the last common ancestor of bilaterians.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe specific examples of alternative splicing with quantitative data (112 isoforms for ankyrin-3). The evolutionary interpretation (C83) is appropriately supported by comparison with mammalian data (C80-C81) and citation to previous work. The finding is consistent with the overall annotation results showing extensive isoform diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C222",
+      "C232"
+    ],
+    "result": "The study identified 551 transcription factors in S. mediterranea through systematic domain annotation and literature review, including 248 previously described TFs and numerous uncharacterized zinc finger TFs, some showing similarity to vertebrate-specific ZSCAN and POGK families in their DNA-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C99 and C222, C232 describe a systematic TF annotation approach with clear methodology (C84-C85, C88) and quantitative results (C86-C87). The identification of ZNFs with similarity to vertebrate-specific families (C93-C95) is appropriately qualified by noting the similarity is limited to DNA-binding domains, not full protein structure. The findings are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TF expression analysis showed an even distribution across cell compartments with slight X1 enrichment, with most TFs expressed in X1+X2 or X2+Xins compartments, and no compartment-specific enrichment for different TF domains (\u03c7\u00b2 test, p=0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 provide expression distribution data with appropriate statistical testing (C104). The findings are consistent with expected lineage relationships (C102-C103) and supported by referenced figures. The statistical test appropriately addresses the question of domain enrichment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C241"
+    ],
+    "result": "The study predicted binding motifs for 263 TFs (166 unique motifs) using JASPAR database similarity searches, with motifs showing a normal distribution of information content and varying informativeness across TF families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 and C241 describe the motif prediction methodology and results with quantitative data. The approach is appropriately referenced to previous work (C105), and the results include specific examples of high and low information motifs (C107-C108). The limitation that motifs could only be assigned to ~half of TFs (C241) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C223",
+      "C224",
+      "C243",
+      "C244"
+    ],
+    "result": "The study identified 37,345 H3K27ac and 13,868 H3K4me1 peaks in X1 cells, with H3K4me1 displaying a bimodal pattern flanking H3K27ac peaks. Enhancer-like regions showed reduced H3K4me1 upon lpt(RNAi), providing functional validation. The pattern suggests evolutionary conservation of enhancer chromatin architecture in metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C126 and related claims describe comprehensive ChIP-seq analysis with quantitative peak counts (C113-C114), characteristic chromatin patterns (C116-C117), and functional validation through lpt(RNAi) (C122-C124). The evolutionary conservation interpretation (C119) is appropriately supported by comparison with mammalian data (C118) and citations. The multiple lines of evidence (ChIP-seq, RNAi, ATAC-seq) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "ATAC-seq analysis showed that predicted enhancer-like regions had more accessible chromatin than random genomic regions, with accessibility peaks centered at enhancer regions, providing independent evidence for enhancer identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 describe ATAC-seq validation of enhancer predictions with clear comparative analysis (C128) and spatial localization (C129). The interpretation as independent evidence (C130) is appropriate given the different methodological approach from ChIP-seq. The findings are consistent with the ChIP-seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Enhancer-target gene assignments showed TFs were significantly enriched among target genes, with particular enrichment for fate-specific TFs (FSTFs) expressed in S/G2/M neoblasts. Target genes were enriched for RNA metabolic/biosynthetic processes and transcription regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C137 describe enhancer-target assignments with appropriate enrichment analyses (C133-C134) and GO analysis (C136). The enrichment of FSTFs (C134) is supported by citation to previous work and provides validation of the enhancer predictions (C135, C137). The distance range (C132) is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "ATAC-seq footprinting identified 22,489 putatively bound TF motifs in enhancer-like regions but none in random regions. The most bound motifs were for irx-1/irx6-1/2/3, egr4-1/2, smad1/9, sp5, and nf-ya1/2, while mef2-1, mef2-2, phox, pou6-2, and lmx1-2 had the fewest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 describe footprinting analysis with clear quantitative results (C141) and appropriate negative control (C142). The contrast between enhancer-like regions and random regions (C143) provides strong evidence for specificity. The ranking of TFs by binding site abundance (C144-C145) is well-documented with referenced supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study constructed GRNs including 35/43 FSTFs, revealing cross-regulatory links between different cell fate pathways (e.g., neural FSTFs regulating muscle FSTF enhancers and vice versa), supporting the view that fate specification occurs in S/G2/M phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 and C46-C48 describe GRN construction with quantitative coverage (C147) and specific examples of cross-regulation (C149). The interpretation regarding S/G2/M phase fate specification (C47) is appropriately supported by the FSTF enrichment data. The findings are consistent with previous models of neoblast fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Detailed analysis of FSTF regulatory regions revealed specific TF binding patterns: p53 (epidermal) has promoter binding by myoD, zic-1, zeb-1, and snail-1/2; myoD has an intronic enhancer with fir-1, msx, pou-p1, sp6-9, lhx2-1, and foxA(P) motifs; nkx6-1 and soxB1-1 have distal enhancers with diverse TF motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 provide specific examples of regulatory interactions with detailed genomic locations and TF binding patterns. The assignment of the myoD enhancer (C151) includes appropriate reasoning based on TSS proximity and expression data. The findings are well-documented with figure references and citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C49"
+    ],
+    "result": "Among unstudied TFs, znf596 showed the most regulatory interactions, with expression in neural-committed neoblasts and predicted binding by multiple FSTFs (sp6-9, neuroD-1, ovo-1, gata456-1, smad1/9, isl-1, prep) at intronic enhancers, though its binding motif could not be predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 and C49 identify znf596 as a key unstudied TF with quantitative data on regulatory interactions and appropriate characterization of current knowledge (C158). The limitation regarding motif prediction (C161) is appropriately acknowledged. The findings are supported by single-cell expression data (C160) and figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The study identified five planarian tbx genes with multiple predicted bound motifs in the genome and at enhancer-like regions. tbx-20 has intronic and distal enhancers containing motifs for positional control genes (hox1, hox4a, prep, smad1, smad9, zic-1, sp5) and migration factors (snail-1/2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C167 describe tbx gene analysis with quantitative motif counts (C166) and detailed characterization of tbx-20 enhancers (C167). The comparison with mammalian tbx function (C163-C164) provides appropriate context, while acknowledging the lack of functional data in planarians (C165). The findings are well-documented with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Analysis of positional control genes showed sp5 has putative bound footprints near post-2c and lox5a promoters and 431 bound motifs genome-wide (4th most abundant), suggesting it mediates Wnt signaling-derived positional information, consistent with the conserved Wnt\u2192sp5 regulatory link.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C177 describe positional control gene analysis with appropriate context from previous work (C168-C173) and new findings (C174-C177). The quantitative data on sp5 binding (C176) and the interpretation regarding Wnt signaling (C177) are well-supported. The findings are consistent with previous studies showing \u03b2-catenin knockdown effects (C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The study identified one enhancer-like region in the wnt1 first intron with high H3K27ac, H3K4me1, and Fox TF footprinting scores, confirming one of two foxG binding sites described by Pascual-Carreras et al., 2020, but not the second motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C184 describe validation and extension of previous work with appropriate comparison (C183) and acknowledgment of discrepancies (C184). The findings partially replicate previous results while providing additional epigenetic evidence (C182). The comparison is appropriately documented with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Analysis of Hox genes involved in fission (hox1, hox3a, hox3b, lox5b, post2b) showed few or no predicted bound motifs at their promoters and low X1 expression (3-63%), suggesting these genes do not drive fission through regulatory activity in adult stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C191 describe Hox gene analysis with appropriate context from previous work (C185-C187), quantitative expression data (C190), and footprinting results (C188-C189). The interpretation (C191) is appropriately cautious and based on the combined evidence of low stem cell expression and lack of regulatory interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Anterior pole PCGs (prep, zic-1, isl-1, foxD1) showed binding to multiple enhancer-like region motifs in X1 cells. prep enhancers contain smad and nkx2-2/3/4 motifs, consistent with RNAi phenotypes suggesting nkx2-2 works upstream of prep at the anterior end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C197 describe anterior PCG analysis with quantitative binding data (C193) and specific enhancer characterization (C194). The interpretation regarding nkx2-2/prep hierarchy (C197) is appropriately supported by previous RNAi phenotype data (C195-C196) and the current enhancer findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The Hedgehog receptor ptch-1 has an intronic enhancer with bound motifs for gli-1/2, sp5, lox5a/b, smad4-1, smad1/9, prep, zic-1, snail-1/2, myoD, and twist, indicating that positional control gene regulatory networks are active in S/G2/M neoblasts and integral to overall neoblast GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C201 describe ptch-1 enhancer analysis with detailed TF binding patterns (C198) and appropriate context regarding Hedgehog signaling pleiotropy (C199). The broader interpretation (C200-C201) is well-supported by the cumulative evidence from multiple PCG analyses. The findings integrate well with the overall GRN model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C219",
+      "C220",
+      "C250",
+      "C251"
+    ],
+    "result": "Validation using eight TF RNAi/RNA-seq datasets showed 10.38\u00d7 enrichment for unbound footprints and 21.09\u00d7 for bound footprints (both p<0.0001) compared to expected values. Predictive power correlated with X1 expression and inversely with Xins expression, suggesting GRNs reflect stem cell activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C210 and C219-C220, C250-C251 describe comprehensive validation with appropriate quantitative analysis and statistical testing. The correlation with compartment-specific expression (C208-C210) provides strong evidence that predictions reflect stem cell-specific regulation. The acknowledgment of dataset limitations (C203-C204) and variable results (C207) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "Specific validation of coe\u2192pou4-1 regulatory link showed pou4-1 was the only differentially expressed TF with a bound coe footprint among eight predicted targets. Both coe(RNAi) and pou4-1(RNAi) cause neural defects, functionally validating the predicted regulatory link.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C211-C216 provide a detailed example of validation with integration of computational predictions and experimental data. The functional validation through RNAi phenotypes (C215-C216) strengthens the computational predictions. This represents a strong case study of the GRN prediction approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C217",
+      "C218"
+    ],
+    "result": "The unstudied zinc finger zfhx3 is differentially expressed in lox5b(RNAi) worms and has a putative bound lox5b footprint in an upstream enhancer, representing a high-confidence prediction for future study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C218 describe a specific prediction for an unstudied TF with both differential expression and footprint evidence. This represents the type of high-confidence prediction the study aimed to generate for future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C17",
+      "C18",
+      "C20",
+      "C31"
+    ],
+    "result": "The study addresses a gap in planarian research where regulatory elements remain largely undescribed despite planarians being an established regeneration model, with few studies addressing epigenetic mechanisms and no prior predictions of enhancers or GRNs for neoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C13, C17-C18, C20, C31 establish the context and motivation for the study with appropriate citations. These claims accurately describe the state of the field and the gap being addressed. The characterization is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C45",
+      "C52",
+      "C53",
+      "C254"
+    ],
+    "result": "The study's integrated approach using ChIP-seq, ATAC-seq, and footprinting identified high-confidence enhancers enriched for TF binding sites, with footprinting evidence of occupancy and independent validation from RNAi/RNA-seq data, providing a foundation for understanding planarian stem cell regulatory logic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C45, C52-C53, C254 summarize the overall study approach and significance. The claims accurately reflect the multi-faceted methodology and validation strategy. The characterization as providing a foundation for future work (C52, C254) is appropriate given the comprehensive nature of the resource generated.",
+    "result_type": "MAJOR"
+  }
+]

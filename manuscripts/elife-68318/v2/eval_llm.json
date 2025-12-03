@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the scientific context and prior work on sexual age-mixing patterns and their relationship to HIV transmission, including various modeling approaches and empirical findings from previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 accurately summarize established knowledge and prior work in the field, supported by appropriate citations. The claims about prior studies (C4-C10, C13-C16) are properly attributed and the general knowledge claims (C1, C2, C11, C12) are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study analyzed three datasets: AHRI (77,619 partnerships from 36,033 respondents), Manicaland (58,676 partnerships from 25,024 respondents), and Haiti DHS (12,447 partnerships from 12,143 respondents), with detailed descriptions of data collection methods and study designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 and C70-C75 provide clear descriptions of the data sources with specific sample sizes and methodological details. These are straightforward descriptive statistics and study design characteristics that are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Empirical analysis showed that mean partner age increased consistently with respondent age across all datasets and both sexes, with increases of 22.7-26.0 years for women between age bins 20-24 and 45-49, while standard deviations showed more variable patterns (0.5-3.5 year changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 report descriptive statistics directly from the data analysis, supported by Figure 3. The values are specific and internally consistent, representing straightforward empirical observations from the datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The sinh-arcsinh distribution is a four-parameter distribution (location, scale, skewness, tail weight) originally proposed by Jones and Pewsey (2009) as an extension of Johnson's distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 accurately describe the mathematical properties and provenance of the sinh-arcsinh distribution, properly citing the original work. This is established mathematical knowledge correctly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In the probability distribution comparison, the sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%), with 29 cases showing statistically significant superiority (>2 standard errors), and achieved the lowest average QQ RMSE across all three datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C78-C84 report model comparison results with specific statistics from Tables 3 and 4. The statistical significance criterion (>2 standard errors) is appropriate, and the results are consistently reported across multiple metrics (ELPD and QQ RMSE).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The sinh-arcsinh distribution predicted empirical quantiles with high accuracy: within 0.36 years for AHRI, 0.37 years for Haiti DHS, and 0.44 years for Manicaland data on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 report QQ RMSE values from Table 4, providing interpretable measures of model accuracy. These values are specific, consistent with the broader results, and represent meaningful predictive performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C56"
+    ],
+    "result": "The most complex distributional model (Distributional 4) achieved the highest ELPD and lowest QQ RMSE across all datasets, with the largest improvements coming from moving from conventional to distributional regression (1646.0, 361.0, and 2181.2 ELPD units for AHRI, Haiti DHS, and Manicaland respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C56 report results from Table 5 showing clear performance improvements. The ELPD differences are substantial and the statistical significance is noted for AHRI and Manicaland datasets. The comparison demonstrates the value of distributional regression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Distributional models revealed substantial variation in skewness and scale parameters across age and sex that conventional regression missed, with women's skewness at age 15 estimated at -0.26 (vs. -0.05 in conventional model) and men's scale parameter showing non-linear variation peaking at age 37.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 report parameter estimates from Figure 6 with specific values and uncertainty intervals. These demonstrate the key advantage of distributional regression in capturing variation that conventional models constrain to be constant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The Haiti DHS and Manicaland estimates showed similar patterns across all four distributional parameters, though Haiti estimates for ages 50-64 are extrapolated since DHS does not collect data on adults aged 50 and older.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 make observations from Figure 7 and note an important limitation of the DHS data. The extrapolation caveat (C55) is appropriately acknowledged as a limitation of the analysis for older ages in Haiti.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C76",
+      "C77"
+    ],
+    "result": "Distributional regression offers methodological advantages including principled uncertainty propagation and access to hierarchical modeling tools through the brms package, enabling estimation in low-data settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C76-C77 describe established advantages of distributional regression methodology and capabilities of the brms software. These are accurate characterizations of the statistical framework and software capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The sinh-arcsinh distribution failed to produce the highest ELPD in the smallest data subset (N=170) but was not significantly worse than the best distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 acknowledge a limitation in the smallest dataset while noting the difference was not statistically significant. This is an honest reporting of results that doesn't undermine the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The analysis has potential limitations from non-independence: repeated partnerships across survey rounds and multiple partners per individual may be correlated, which could artificially increase precision since observations were modeled as conditionally independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 identify legitimate sources of non-independence in the data and acknowledge the modeling assumption of conditional independence. The speculation about inflated precision (C64) is appropriately cautious and represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Age heaping was observed in the data, with respondents disproportionately reporting partners' ages as multiples of five.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 describes a common data quality issue in self-reported age data. The observation is consistent with known reporting biases and the authors tested sensitivity to this issue (mentioned in methods).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "All analyses were conducted using R with the brms library for model fitting, loo library for ELPD estimation, and ggplot2 for visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide standard methodological details about software and packages used, with appropriate citations. These are straightforward statements about computational implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The main finding is that distributional regression with a sinh-arcsinh distribution replicated observed partner age distributions most accurately across three geographically diverse datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 summarizes the primary conclusion, which is well-supported by the comprehensive model comparison results (C36-C46, C83-C84) showing consistent superiority across multiple metrics and datasets. The evidence from both probability distribution comparison and distributional regression evaluation converges on this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

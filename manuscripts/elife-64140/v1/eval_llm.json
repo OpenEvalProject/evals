@@ -1,0 +1,484 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The argus mutant exhibits a severe short-sleep phenotype characterized by ~600 fewer minutes of sleep per 24 hr compared to controls, primarily driven by inability to sustain sleep (reduced bout duration) rather than hyperactivity. The mutation shows slight dominance in heterozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by quantitative sleep measurements with strong statistical significance (p < 0.0001 to p < 0.001) shown in Figure 1A-F. The characterization includes appropriate controls for hyperactivity (C4) and demonstrates dose-dependent effects (C5), providing comprehensive phenotypic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The argus mutant maintains an intact circadian clock with >60% of homozygotes showing robust locomotor activity rhythms, though ~30% exhibit arrhythmia likely secondary to severe sleep loss. Mutants display longer activity episodes in constant darkness consistent with their short sleep phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by circadian rhythm analysis (Figure 1\u2014figure supplement 1A-B) and comparison to other short-sleeping mutants. The interpretation that arrhythmia stems from sleep loss (C7) is reasonable given the cited precedent, though this remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The argus mutation was mapped to a ~5 Mb region on chromosome 3R between 19-24 Mb through classical genetic mapping and SNP analysis, narrowing to 622 argus-specific SNPs with 10 causing amino acid changes in 9 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 describe a standard positional cloning approach with clear mapping data shown in Figure 2A-B. The sequential refinement from classical mapping to SNP markers to candidate genes is well-documented and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Pan-neuronal knockdown of cg16791 with multiple independent RNAi lines and different Gal4 drivers recapitulates the argus sleep phenotype, and drug-inducible knockdown demonstrates that cg16791 regulates sleep specifically in adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are strongly supported by multiple independent RNAi experiments with appropriate controls and statistical significance (p < 0.01 to p < 0.0001). The RU486-inducible system (C15) provides temporal specificity, though only one RNAi line showed robust drug-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Bioinformatic analysis predicts CG16791 is a 5-transmembrane protein localized to cell membranes and possibly ER/Golgi, with the argus mutations located in an internal loop between transmembrane helices 3 and 4. This prediction is supported by experimental isolation from membrane fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 combine multiple bioinformatic predictions (ProDom, TMPred, Deep-Loc-1.0) with experimental validation from a cited study (C19). The convergent predictions strengthen confidence, though bioinformatic predictions alone have inherent uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Multiple genetic approaches confirm cg16791 as the argus locus: a P-element insertion allele and CRISPR knockout both fail to complement argus, and pan-neuronal expression of either short or full-length cg16791 rescues the sleep phenotype, indicating the N-terminus is dispensable for sleep function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 provide strong genetic validation through complementation tests (p < 0.01 to p < 0.0001) and rescue experiments (Figure 3A-C). The semi-lethality of homozygous knockouts (C22) suggests essential functions beyond sleep. The conclusion about N-terminus dispensability (C24) is well-supported by rescue with both constructs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Argus functions in peptidergic neurons to regulate sleep, as demonstrated by expression pattern analysis with ausP2k-Gal4 and rescue experiments using peptidergic-specific c929-Gal4 driver. Genetic interaction with dimmed further supports a role in neuropeptidergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 are supported by expression pattern data (Figure 4A), partial rescue with peptidergic drivers (p < 0.05, Figure 4B), and genetic interaction with dimmed (p < 0.01, Figure 4C). The rescue is partial rather than complete, suggesting argus functions in multiple cell types, with peptidergic neurons being important but not exclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "CG16791 was previously identified as interacting with Draper, a receptor involved in autophagy-associated cell death, providing a mechanistic link to autophagy pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by appropriate citations. This provides important context for investigating autophagy but represents prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Argus mutants show impaired autophagy flux with accumulation of autophagosomes relative to autolysosomes, indicated by a shift toward double-labeled (GFP+mCherry+) puncta and reduction in mCherry-only puncta, suggesting inefficient lysosomal digestion. The autophagy reporter system was validated with rapamycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by live imaging with GFP-mCherry-Atg8a reporter (Figure 5). The interpretation of inefficient lysosomal digestion (C34) is reasonable given the shift in autophagosome/autolysosome ratio (p < 0.001), though the lack of change in total puncta number (C32) is surprising and may indicate compensatory mechanisms. Rapamycin validation (C35) strengthens confidence in the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The blue cheese (bchs) mutant, known for autophagy defects that decrease autophagosome accumulation, increases sleep compared to controls, primarily by lengthening night sleep bouts and decreasing sleep latency at nightfall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by sleep measurements (p < 0.01 to p < 0.0001, Figure 6A and supplements). The characterization of bchs autophagy function (C38) is well-established in cited literature. This provides a critical counterpoint to the argus phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "A single bchs allele robustly and non-additively suppresses argus sleep phenotypes, with bchs/+; aus/+ transheterozygotes showing sleep levels indistinguishable from bchs/+ and higher than aus/+, demonstrating epistasis consistent with bchs acting upstream of argus in the autophagy pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are strongly supported by genetic interaction data (p < 0.05, Figure 6B). The epistasis interpretation (C40) is well-justified given that bchs blocks autophagosome formation upstream of the argus-dependent clearance step. This is a key result linking the two mutants mechanistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pan-neuronal RNAi knockdown of atg5 or atg7 rescues sleep in argus mutant backgrounds but not in wild-type flies (atg7 RNAi actually decreases sleep in controls), demonstrating that blocking autophagosome formation specifically suppresses the argus phenotype rather than additively increasing sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are well-supported by RNAi experiments (p < 0.05 to p < 0.001, Figure 6C-D and supplements). The lack of sleep increase in wild-type backgrounds and actual decrease with atg7 RNAi (C43) is critical for ruling out additive effects and supporting the epistasis model. The rescue of both aus/aus and aus/+ flies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Targeted RNAi screens of autophagy genes identified multiple hits that increase sleep when knocked down, including upstream regulators (Atg1, Bip, Daor) and autophagosome maturation proteins (Atg8b, Atg12, Atg7). The actin-geneswitch screen yielded more hits than the neuronal nsyb-geneswitch screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 describe systematic RNAi screens with appropriate controls (p < 0.05, Figure 7A-B and supplements). The identification of functionally related gene clusters strengthens confidence that effects are on-target. The greater number of hits with actin-GS (C50) is expected given broader expression and is appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Validation of atg1 RNAi hits shows robust, largely RU-dependent increases in total sleep (p < 0.0001) driven by consolidation of night sleep (longer bouts, fewer bout numbers) and decreased sleep latency at nightfall. Increased waking activity excludes sickness as a confound, and qPCR confirms knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 provide thorough validation of atg1 RNAi effects with multiple behavioral metrics and molecular confirmation (Figure 7C-D and supplements). The RU-dependence varies between RNAi lines (C55-C56), with one showing leakiness, but both increase sleep. The detailed characterization including activity index (C60) and qPCR (C61) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Validation of atg8b RNAi shows RU-dependent increases in night sleep and sleep bout length, though only one RNAi increased total sleep after backcrossing. The atg8b RNAis likely act through knockdown of atg8a due to sequence conservation, as supported by qPCR showing atg8a reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 show more variable results than atg1 RNAi, with only partial consistency between the two RNAi lines (Figure 7E-F and supplements). The interpretation that effects are mediated through atg8a knockdown (C64) is reasonable given qPCR data (p < 0.05) and low atg8b expression, though this represents an off-target effect that happens to be functionally relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Pan-neuronal atg1 and whole-fly atg8 knockdown phenotypes recapitulate key bchs phenotypes (night sleep gain, consolidation, decreased latency), and RU-dependence demonstrates that perturbing autophagosome formation in adulthood is sufficient to alter sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 synthesize results from multiple experiments to draw broader conclusions. The phenotypic similarity to bchs (C65) is well-supported by the data. The conclusion about adult sufficiency (C66) is strongly supported by RU-dependent effects, though some RNAi lines showed leakiness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Under normal conditions, autophagosome levels are higher at nightfall than daybreak, increase with sleep deprivation, and decrease with gaboxadol-induced sleep, demonstrating that wake increases and sleep decreases autophagosome number in wild-type neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by live imaging experiments at different times and conditions (p < 0.05, Figure 8). The lack of change in autophagosome/autolysosome ratio across conditions suggests effects on production rather than clearance. These results appear paradoxical relative to mutant data (C71) but are well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Genetic manipulations demonstrate that high neuronal autophagosome levels decrease sleep (argus mutant) while low levels increase sleep (bchs mutant, atg RNAi), with the authors proposing these reflect sustained perturbations not seen during normal daily cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 synthesize the mutant and RNAi data to establish the relationship between autophagosome levels and sleep. The interpretation that mutant phenotypes reflect sustained perturbations (C74) is reasonable speculation to reconcile the apparent paradox with wild-type dynamics, though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The authors propose that Argus is required for transition of autophagosomes to autolysosomes, such that in its absence autophagosomes accumulate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is a reasonable mechanistic proposal based on the autophagy flux data showing accumulation of autophagosomes relative to autolysosomes in argus mutants (Figure 5D). However, this remains a model rather than directly demonstrated mechanism, as the precise molecular function of Argus is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Strong and sustained disruption of autophagy in adulthood perturbs sleep such that high autophagosome levels decrease sleep while low autophagosome levels increase sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 synthesizes the major findings from argus, bchs, and atg RNAi experiments. This conclusion is well-supported by the convergent evidence from multiple genetic manipulations with opposite effects on autophagosome levels producing opposite effects on sleep.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The data indicate that sleep either increases autophagosome clearance and/or decreases autophagosome production, with the lack of change in autophagosome/autolysosome ratio suggesting sleep primarily reduces autophagosome production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide logical interpretation of the wild-type autophagy flux data. The reasoning that unchanged autophagosome/autolysosome ratios across conditions (Figure 8) favor reduced production over increased clearance is sound, though the authors appropriately note that gradual or late-onset clearance effects cannot be fully ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a model where sleep inhibits autophagosome formation on a 24 hr timescale, while strong and/or sustained upregulation or downregulation of autophagosome levels is required to meaningfully modify sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 present the authors' integrative model reconciling the wild-type dynamics with mutant phenotypes. This model is well-supported by the totality of the data, though it remains a model requiring further testing. The distinction between physiological fluctuations and pathological perturbations is conceptually important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The authors speculate that elevated metabolic activity during wake generates waste that enhances autophagosome production, leading to accumulation that is reduced during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is explicitly presented as speculation to explain the observed autophagosome accumulation during wake. While plausible, this mechanism is not directly tested and represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior studies show that sleep enhances degradation of debris and damaged cells and flushing of wastes from the brain, and autophagosome-related puncta accumulate in mice under chronic sleep fragmentation, suggesting the findings may generalize to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 appropriately cite relevant prior work to contextualize the findings. These represent established knowledge from other studies rather than new findings, but provide important support for the generalizability and functional relevance of the sleep-autophagy relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "The authors speculate that chronic sleep loss could establish a deleterious feedback loop where cumulative autophagosome accumulation further suppresses sleep, and that chronically elevated autophagosomes in neurodegenerative disorders may similarly disrupt sleep, potentially explaining sleep disturbances in these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93-C95 present speculative implications for pathology. While these are logical extensions of the findings and cite relevant literature on neurodegeneration (C94), they remain untested hypotheses. The speculation is reasonable but requires experimental validation in disease models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose that the sleep-autophagy relationship may be adaptive under starvation conditions, where high autophagy and sleep suppression both support foraging behavior, and that neuropeptidergic populations may integrate homeostatic phenomena via autophagosome levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 present an evolutionary/ecological interpretation of the findings. While starvation-induced autophagy is well-established (C96-C97), the adaptive interpretation (C98) and role of neuropeptidergic neurons in homeostatic integration (C99) are speculative, though supported by the peptidergic rescue data and cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors speculate that alterations in autophagosome levels could integrate nutritive cues to couple learning/memory with sleep and feeding homeostats, and that autophagy's involvement in diverse cellular functions positions it as a potential cell-autonomous integrator of homeostatic needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 present broad speculative implications about autophagy as a homeostatic integrator. While conceptually interesting and supported by cited examples of homeostatic integration (C101-C102), these remain untested hypotheses extending well beyond the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors argue that Drosophila forward genetic screens have been powerful for identifying molecular mechanisms of physiological processes like circadian rhythms, and that the argus mutant is unique in that its mechanisms are likely relevant for sleep function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide appropriate context about the power of Drosophila genetics (C75-C76 supported by general knowledge and citations). The claim that argus is unique in linking to sleep function (C77) is somewhat speculative but reasonable given the autophagy connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Argus expression is temporally elevated during developmental stages with high autophagy and spatially enriched in tissues with high autophagy levels (brain, gut, fat body), consistent with predicted localization to autophagosome membrane donor compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by expression data from cited databases and bioinformatic predictions. This provides important correlative evidence linking argus expression patterns to autophagy, though the expression data comes from databases rather than new experiments in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The abstract summarizes that argus is a transmembrane protein acting in adult peptidergic neurons to regulate sleep, that argus mutants accumulate autophagosomes, and that genetic manipulations impeding autophagosome formation suppress argus phenotypes, indicating autophagosome accumulation drives short sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 accurately summarize the major findings of the paper. These conclusions are well-supported by the experimental data described in the detailed results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The abstract summarizes that bchs mutant increases sleep, RNAi screens identified autophagy genes whose knockdown increases sleep, and that autophagosomes accumulate during daytime with sleep deprivation extending this accumulation while gaboxadol-induced sleep reduces it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 accurately summarize additional major findings. These are well-supported by the experimental results presented in the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The abstract summarizes the paradoxical finding that wakefulness increases and sleep decreases autophagosome levels under normal conditions, yet strong sustained upregulation decreases sleep while downregulation increases sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 accurately capture the key paradox and resolution presented in the paper. This synthesis is well-supported by the combined wild-type and mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The abstract speculates that the sleep-autophagy relationship may have implications for chronic sleep disorders, neurodegeneration, and integration with other homeostats like starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 present speculative implications discussed in the paper. While these are reasonable extensions of the findings, they remain untested hypotheses as acknowledged in the discussion.",
+    "result_type": "MINOR"
+  }
+]

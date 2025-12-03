@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript reviews prior literature on social-specific versus domain-general learning mechanisms, noting that some studies find dissociable neural correlates for social and individual learning while others find shared dopaminergic mechanisms. The authors identify a confound in prior work: studies showing dissociation typically had social information as a secondary source, while studies showing shared mechanisms had social information as primary or sole source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 accurately characterize the state of the literature and identify a key methodological confound. The citations are appropriate and the logical inference about the confound between social/individual nature and primary/secondary status is well-supported by the cited studies. This provides strong motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors hypothesized that haloperidol would dissociate learning along a primary-secondary axis but not a social-individual axis. They predicted haloperidol would affect learning from primary sources (whether social or individual) but not secondary sources, and that effects would be comparable between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C33-C35 clearly state the study's pre-registered hypothesis and foreshadow the main findings. The hypothesis is logically derived from the literature review and the study design directly tests it. The claims are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "The study used a double-blind, placebo-controlled, crossover design with two groups (individual-primary n=15, social-primary n=16 in final analysis). Groups were matched on demographics. Participants completed 120 trials on each of two days (haloperidol 2.5mg vs placebo), with the task starting 3 hours post-administration. The task manipulated which information source (social vs individual) was primary through temporal order, salience, and feedback relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 and C128-C146 describe a well-designed pharmacological study with appropriate controls. The pre-registration (C129), double-blind design (C130), counterbalancing (C44), matched groups (C42), and timing relative to drug pharmacokinetics (C131) are all methodological strengths. The manipulation of primary/secondary status through multiple features (temporal order, salience, feedback) is clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Under placebo, participants in both groups learned more optimally from the primary versus secondary information source, with no significant interaction between information source and group. This validated that the experimental manipulation successfully made one source primary and the other secondary, regardless of social/individual nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 report the validation analysis showing the manipulation worked as intended. The lack of interaction between information source and group (C52, F(1,29)=0.067, p=0.797) with significant main effect of information source provides strong evidence that primary/secondary status was successfully orthogonalized from social/individual nature. The statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Haloperidol significantly reduced learning rates for primary information (\u03b1primary) relative to placebo (z(30)=-2.050, p=0.040) but had no significant effect on secondary learning rates (\u03b1secondary). Under placebo, \u03b1primary was significantly higher than \u03b1secondary, but this difference was eliminated under haloperidol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 report the key drug \u00d7 information interaction (F(1,203)=6.852, p=0.009) with appropriate follow-up contrasts. The statistical analysis using linear mixed models with random intercepts for subjects is appropriate. The pattern clearly shows haloperidol selectively affected primary learning. Figure 3 visually supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "There was no significant three-way interaction between drug, information source, and group (F(1,203)=0.098, p=0.754). Bayesian analysis provided moderate evidence (BFexcl=7.516) supporting the null hypothesis of no three-way interaction. This demonstrates that haloperidol's effects on primary learning did not differ between the social-primary and individual-primary groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C87-C89 report the critical test of the main hypothesis. The lack of three-way interaction, supported by both frequentist (p=0.754) and Bayesian statistics (BFexcl=7.516), provides strong evidence that haloperidol affects primary learning regardless of social/individual nature. The Bayesian approach appropriately addresses the challenge of interpreting null results. This is the study's central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C79",
+      "C85"
+    ],
+    "result": "Optimal learning rate analysis showed that under placebo, learning rates for primary sources were higher than optimal, and haloperidol brought them within the optimal range. The optimal learner model was fit to 100 synthetic datasets yielding benchmark values for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C79, and C85 describe an optimality analysis that provides important context for interpreting the drug effects. The approach of comparing estimated parameters to an optimal learner model is methodologically sound. However, the authors acknowledge (C114-C115) that the current design cannot distinguish whether haloperidol optimizes or simply reduces learning rate, which is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Regression analyses showed that under placebo, accuracy was primarily driven by \u03b1secondary (approaching significance, p=0.055), while under haloperidol, accuracy was predicted by both \u03b1primary (\u03b2=0.404, p=0.028) and \u03b1secondary (R=0.450, F(2,28)=3.560, p=0.042).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 and C86 report regression analyses linking model parameters to accuracy. However, the placebo model only approached significance (p=0.055), which weakens the interpretation. The inference that haloperidol brought \u03b1primary into optimal range and thus both sources contributed to accuracy (C82-C83) is logical but somewhat speculative given the marginal placebo result. Additional analyses or larger sample size would strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Participant choices were modeled using an adapted Rescorla-Wagner model with separate learning rates for primary/secondary sources and volatile/stable phases. Model comparison showed this model had exceedance probability ~1, indicating it provided the best fit to the data among eight candidate models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C157 describe the computational modeling approach. The use of model comparison (C150, exceedance probability ~1) and the adaptation of established models (Rescorla-Wagner) is appropriate. The model architecture with separate parameters for primary/secondary and volatile/stable is well-justified by prior work (C155). The description of model parameters (\u03b1, \u03b2, \u03b6) is clear and standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors address potential concerns about whether participants perceived the social information as truly social. They note that participants required 100% quiz accuracy before starting, post-task questionnaires confirmed understanding, and prior work showed personality traits predict social but not individual learning in this paradigm. They argue even more overtly social manipulations show dopaminergic involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 address an important validity concern. The pre-task quiz requirement (C90), post-task questionnaire data (C91), and citation to prior work showing differential personality correlates (C92) provide reasonable evidence that participants distinguished social from individual information. The argument about more overtly social manipulations (C94-C95) is speculative but supported by citation to Diaconescu et al. 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The manipulation successfully made social information the primary learning source when it was temporally first, highly salient, and directly related to feedback. However, because temporal order, salience, and feedback were manipulated simultaneously, the study cannot determine which factor is most influential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 accurately summarize the validation results and acknowledge a limitation. The simultaneous manipulation of multiple features (C98) is a design limitation that prevents determining which specific aspect (temporal order, salience, or feedback relevance) drives the primary/secondary distinction. This is an honest acknowledgment that could guide future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C111"
+    ],
+    "result": "The authors conclude that social and individual learning share common dopaminergic mechanisms when matched for primary/secondary status, and that previous dissociations may reflect primary/secondary rather than social/individual differences. They argue existing studies have not controlled for primary/secondary status and thus do not provide convincing evidence for social-specific mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 and C111 present the main conclusions, which are well-supported by the data. The reinterpretation of prior literature (C103) is justified given the current findings. The strong claim that we lack convincing evidence for social-specific mechanisms (C111) is warranted given the identified confound, though the authors appropriately note alternative possibilities (C107-C110) that require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors discuss alternative interpretations: haloperidol might have comparable algorithmic effects but different neural implementations for social/individual learning; social/individual learning might be dissociable when secondary; or they might share dopaminergic but differ in other neurochemical mechanisms. They argue location-based differences are unlikely to occur without magnitude differences given dopamine system anatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 appropriately discuss alternative interpretations and limitations. The distinction between algorithmic and implementation levels (C107) is conceptually important. The argument against pure location-based dissociations (C108) is reasonable given dopamine system heterogeneity. These speculative claims (C109-C110) appropriately identify avenues for future research while acknowledging current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study reveals a dissociation between primary and secondary learning, with haloperidol making primary learning rates more optimal. However, the authors acknowledge they cannot determine whether haloperidol truly optimizes or simply reduces learning rate, as the paradigm was not designed to test this and most participants had supraoptimal learning rates under placebo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 honestly acknowledge a key limitation: the confound between optimization and reduction (C114-C115). The suggestion for future work (C116) is constructive. This limitation does not undermine the main finding about primary/secondary dissociation but does limit mechanistic interpretation. The acknowledgment strengthens rather than weakens the paper's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors discuss potential mechanisms by which haloperidol affects learning rates, including postsynaptic D2 receptor blockade reducing prediction error weighting, and presynaptic autoreceptor effects potentially enhancing phasic signaling. They speculate that combined pre- and postsynaptic effects might increase signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C124 discuss plausible mechanisms supported by citations to relevant pharmacology literature. However, these are largely speculative (especially C124) as the study did not directly measure neural activity or dopamine signaling. The discussion appropriately cites evidence that haloperidol attenuates prediction error signals (C121-C122) but the specific mechanisms proposed remain hypothetical. This is appropriate speculation for a Discussion section but should not be taken as demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors propose that humans organize information hierarchically with the highest-value source having greatest influence, and that dopamine system involvement is graded according to a source's hierarchical status. They note that learning hierarchies can be rapidly remodeled according to current value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 extend the findings to propose a hierarchical learning framework. The proposal that dopamine involvement is graded by hierarchical status (C126) is a reasonable inference from the data, though the study only tested two levels (primary/secondary). The citation to Daw et al. 2006 regarding flexibility (C127) is appropriate, though the current within-subjects design limits direct testing of hierarchy remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C84",
+      "C102"
+    ],
+    "result": "The study's main finding is that dopaminergic mechanisms can be dissociated along a primary-secondary but not social-individual axis, supporting the view that neurochemical pathways process both social and non-social cues and arbitrate based on task relevance rather than being specialized for particular inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C84, and C102 state the paper's central conclusion, which is strongly supported by the convergent evidence from the drug \u00d7 information interaction (no three-way interaction with group), Bayesian analysis, and validation of the experimental manipulation. This is a clear, well-supported finding that resolves an apparent conflict in the literature by identifying a methodological confound.",
+    "result_type": "MAJOR"
+  }
+]

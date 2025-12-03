@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C123"
+    ],
+    "result": "T3 supplementation in drinking water induced a high T3 state in mice with approximately fivefold increased T3 levels compared to controls, showing temporal variation but no significant 24-hour rhythm, while T4 levels were reduced 2-3 fold and nonrhythmic in all groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C25-C28, and C123 collectively establish the experimental model and hormone measurements. The data show successful induction of high T3 state with appropriate controls, statistical analysis (ANOVA p=0.006, JTK_CYCLE analysis), and consistent findings across multiple measurements. The methodology is clearly described and results are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "T3 supplementation affected metabolic parameters in a time-of-day-dependent manner, including increased body temperature (especially during light phase), elevated oxygen consumption (more pronounced during dark phase), increased food and water intake, and higher body weight, with energy expenditure increases independent of body weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 describe comprehensive metabolic phenotyping with appropriate statistical analyses (linear regression, ANOVA). The findings are supported by multiple measurements across circadian time points with proper controls. The interpretation that higher EE arises from metabolic state rather than just body weight is supported by regression analysis showing different intercepts but similar slopes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "T3 levels correlate with baseline metabolic state (body temperature and VO2) but do not correlate with diurnal variations in metabolic parameters, indicating T3 serves as a state marker but not a temporal marker of metabolic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 present correlation analyses with appropriate statistical methods (Spearman correlation). The distinction between state-level and temporal correlations is well-supported by the data showing positive correlations for average levels but lack of correlation across daytime. This is a key finding for understanding T3's role in metabolic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Transcriptome analysis identified 2336 differentially expressed genes (DEGs) in response to T3, with 37 genes robustly regulated across all timepoints, involved in xenobiotic transport/metabolism, lipid metabolism, and other processes, proposed as daytime-independent biomarkers of thyroid hormone state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe comprehensive transcriptome analysis with appropriate statistical thresholds (\u00b11.5-fold change, FDR <0.1) and gene set enrichment analysis. The identification of 37 time-independent markers is well-supported by the data. However, C50's proposal of these as biomarkers is speculative and would require validation in independent cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Rhythmic gene analysis revealed 10-15% of liver transcriptome as rhythmic in both control and T3 groups, with only 4% (1033 genes) rhythmic across both conditions, including most core circadian clock genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C51-C54 present rhythmic analysis using JTK_CYCLE algorithm with appropriate statistical cutoffs (p<0.05). The finding that core clock genes remain rhythmic in both conditions is crucial for the main conclusion. The analysis is rigorous with proper methodology and independent confirmation by qPCR (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "T3 treatment caused a minor phase advance of approximately 1 hour in rhythmic genes without marked effects on mesor and amplitude of clock genes, with altered distribution of peak expression times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 and C61 describe phase analysis using CircaCompare with independent qPCR validation. The finding of minimal phase shift (1 hr) with preserved clock gene rhythmicity is well-supported and central to the conclusion that T3 acts independently of the molecular clock. Statistical significance is demonstrated (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Gene set enrichment analysis of rhythmic genes showed distinct pathway enrichment between control (transport, RNA splicing, lipid/glucose metabolism) and T3 conditions (immune processes, FA oxidation, MAPK signaling), with robustly rhythmic genes enriched for lipid/cholesterol metabolism and circadian processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 present GSEA results with appropriate methodology. The interpretation in C60 that lipid/cholesterol metabolism is tightly coupled to circadian clock regulation is reasonable given the enrichment data, though the causal relationship is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "T3 treatment altered expression of thyroid hormone regulators (loss of rhythmicity in transporters Slc16a2, Slc7a8, Slc10a1; changes in Dio1, Thra, Thrb expression) and increased expression of TH target genes without clear effects on amplitude or phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 describe changes in TH signaling components with appropriate rhythmic analysis. The findings are consistent with expected feedback regulation and support the interpretation of compensatory mechanisms (C163-C164), though protein-level validation is acknowledged as missing (C165).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C102"
+    ],
+    "result": "The molecular clock of the liver functions independently of TH state, while metabolic gene expression patterns (FA oxidation, immune genes) and TH signaling components are altered, indicating clock-independent transcriptome adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C102 present the central conclusion of the study. This is well-supported by the preservation of clock gene rhythmicity (C61) combined with extensive metabolic transcriptome changes (C69-C70). The conclusion is appropriately qualified as 'largely' clock-independent, acknowledging the minor phase shift observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Quantitative rhythm analysis revealed T3 predominantly affects mesor (2504 genes), followed by amplitude (516 genes) and phase (491 genes), with differential regulation of lipid metabolism gene sets and enrichment of FA metabolism/cholesterol biosynthesis in amplitude-reduced genes and immune genes in amplitude-elevated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C72-C77 present detailed CircaCompare analysis with appropriate statistical methods. The quantification of rhythm parameter changes provides mechanistic insight into how T3 rewires the transcriptome. The interpretation of differential lipid metabolism regulation (C74) is reasonable given the enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "T3 treatment disrupted glucose metabolism rhythms, with loss of rhythmicity in carbohydrate metabolization transcripts, reduced amplitude in Gck and Pgk1, loss of rhythmicity in Pdk4 and Pdhb, and altered glucose transporter expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 and C167-C169 describe comprehensive analysis of glucose metabolism genes with appropriate rhythmic analysis. The interpretation that reduced pyruvate dehydrogenase inhibition favors \u03b2-oxidation (C81) is supported by cited literature. The findings are consistent with the overall metabolic shift observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "T3 induced a metabolic shift toward fatty acid \u03b2-oxidation over glucose utilization, with loss of rhythmicity in Fasn, preferential effects on long-chain FA synthesis/oxidation, and time-dependent changes in liver and serum TAG levels showing increased synthesis during light phase and consumption during dark phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 and C171-C174 present integrated analysis of FA metabolism combining transcriptomics and metabolite measurements. The temporal TAG measurements provide crucial validation of the transcriptomic predictions. The interpretation of metabolic shift is well-supported by multiple lines of evidence, though some interpretations (C86, C88) are inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C176",
+      "C177"
+    ],
+    "result": "T3 treatment altered cholesterol metabolism with weakened rhythmicity in biosynthesis genes (including Hmgcr), no change in liver cholesterol levels but marked reduction in serum cholesterol (especially during dark phase), and increased expression of genes involved in cholesterol uptake and bile acid secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 and C125-C130, C176-C177 present comprehensive cholesterol metabolism analysis combining transcriptomics and metabolite measurements. The interpretation of increased cholesterol uptake and conversion to bile acids (C95, C97) is well-supported by both the transcriptomic data and literature citations. The temporal specificity of serum cholesterol reduction adds important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C100",
+      "C101",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Tonic changes in T3 levels restructure the diurnal liver metabolic transcriptome independent of local molecular circadian clocks, with T3 acting as a rewiring factor that reduces rhythmicity of major metabolic pathways to sustain higher energy demands, representing a novel layer of TH action regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C100-C101, C103, C107-C110 present the main conclusions of the study. These are well-supported by the comprehensive data showing preserved clock function with extensive metabolic rewiring. The characterization of T3 as a 'chronodisruptor' (C103) is appropriately qualified with citations. The novelty claim (C110) is justified given the comprehensive temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118"
+    ],
+    "result": "The findings have clinical implications suggesting that time of assessment should be considered for metabolic parameters in thyroid patients, temporal aspects may affect treatment outcomes, and chronomodulated therapeutic regimes could benefit metabolic pathologies including nonalcoholic fatty liver disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C116 and C118 present clinical implications and therapeutic speculation. While the basic science findings are solid, the translation to clinical practice (C112) and therapeutic applications (C116, C118) are speculative and would require clinical validation. The recommendation for temporal control in studies (C115) is reasonable but the therapeutic claims are premature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C165"
+    ],
+    "result": "Study limitations include lack of protein-level and enzymatic activity data for diurnal regulation of T3 effects, which may represent additional mechanisms of circadian-TH interaction not captured by transcriptomics alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 and C165 appropriately acknowledge study limitations. The recognition that transcriptomic data may not fully capture post-transcriptional regulation is important for interpreting the scope of the findings. This honest assessment strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The experimental model differs from human hyperthyroidism in that T4 and likely TSH are reduced due to negative feedback, and mice show increased body weight unlike human patients, leading to the designation 'T3 high' rather than hyperthyroid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C137 provide important context about model limitations and differences from human disease. The explanation of feedback mechanisms (C133) is based on established endocrinology. The acknowledgment of discrepancies with human disease (C135-C137) is appropriate and supported by citations, though the explanation for body weight differences (C137) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "T3 is a strong activator of energy metabolism, with increased energy output relying on slightly increased glucose consumption, requiring multiple adaptive mechanisms to increase basal metabolic rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 synthesize the metabolic findings with appropriate citations (C138). The interpretation that adaptive mechanisms are required (C139) is reasonable speculation based on the data. The conclusion about glucose consumption (C140) is supported by RQ measurements, though the interpretation is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The study found stable diurnal T3 rhythm in control mice and time-dependent T3 effects in liver despite previous reports of weak or absent T3 rhythms, with 10% of transcriptome robustly regulated compared to 2-5% in earlier studies, potentially due to methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 contextualize findings relative to prior literature with appropriate citations. The explanation of differences (C147) is reasonable. The hypothesis about increased liver sensitivity (C144) is speculative but testable. The comparison with earlier studies (C145-C146) appropriately acknowledges methodological advances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Enrichment analyses showed T3 association with oxidation-reduction and immune genes (positive) and glucose/FA metabolism (negative), with time-dependent differential expression and Dio1 upregulation potentially reflecting metabolic sensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C154 present GSEA results and mechanistic interpretation. The enrichment findings are well-supported. The interpretation of Dio1 upregulation (C153) is speculative but reasonable. The citation of Dio1's role in liver thyroid state (C151, C154) appropriately grounds the interpretation in established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The study confirms 10-15% rhythmic transcriptome consistent with prior studies, identifies slight phase-delaying effect of T3 similar to clock gene effects, and proposes potential direct THRB regulation of clock genes based on binding site analysis, requiring further experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C161 integrate findings with prior literature and propose mechanisms. The consistency with previous studies (C156) strengthens the findings. The mechanistic speculation about THRB binding (C159-C160) is appropriately qualified and the need for validation acknowledged (C161). The phase analysis (C157-C158) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C166"
+    ],
+    "result": "Loss of TH transporter rhythmicity may represent compensatory mechanisms for elevated T3, with transcriptional responses suggesting desensitization through receptor downregulation and increased Dio1/transporter expression, though T3 effects appear to act downstream of the molecular clock through unclear mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C164 and C166 present mechanistic interpretations that are reasonable but speculative. The compensatory mechanism hypothesis (C162-C164) is plausible but lacks direct validation at protein/activity levels. The conclusion that T3 acts downstream of the clock (C166) is supported by the data but the mechanism remains 'elusive' as stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C170",
+      "C175"
+    ],
+    "result": "The data suggest preferential T3 effects on FA biosynthesis and oxidation with reduced glucose metabolization, with potential clinical relevance given GLUT1's association with liver pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170 and C175 synthesize metabolic findings. The overall conclusion (C175) is well-supported by the comprehensive metabolic data. The note about GLUT1 and liver disease (C170) appropriately contextualizes findings with clinical relevance, though the connection is associative rather than causal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "T3 increases TAG synthesis in liver with novel time-of-day dependency, showing preferential effects on glucose and FA-related energy sources without marked protein catabolism alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 integrate findings with established knowledge (C89 with citation). The novelty of temporal dependency (C90) is justified. The interpretation of preferential substrate effects (C92) is supported by the data and citations, though the lack of protein catabolism changes (C91) is based on absence of enrichment rather than direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Speculation that loss of metabolic rhythmicity may occur in other organs beyond liver, potentially explaining higher energetic demands, with possible temporal windows for treatment effectiveness, though no optimal time identified for TH regulator genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 and C104-C106 are explicitly speculative about effects in other organs and therapeutic timing. While the speculation is reasonable based on liver findings, it lacks direct evidence. The acknowledgment that no optimal time could be identified (C105) is honest but limits the therapeutic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background knowledge establishing that circadian rhythms depend on clock genes, are coordinated by systemic factors including thyroid hormones which regulate metabolism, with T3/T4 showing modest circadian amplitudes and disrupted TSH rhythms in hyperthyroid patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C16-C24 present established background knowledge appropriately supported by citations. This contextualizes the study rationale and demonstrates understanding of the field. All statements are consistent with current understanding of circadian biology and thyroid hormone physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The data suggest a novel layer of diurnal regulation of liver metabolism with potential for future treatments of thyroid-related diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 presents an appropriate concluding statement that is supported by the comprehensive findings. The qualification 'can bear fruits' appropriately indicates potential rather than proven therapeutic benefit. The novelty claim is justified by the temporal resolution and mechanistic insights provided.",
+    "result_type": "MINOR"
+  }
+]

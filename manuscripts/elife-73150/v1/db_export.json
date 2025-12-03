@@ -1,0 +1,1893 @@
+{
+  "submission": {
+    "id": "794ed2f9-56cd-4c0e-bcb7-c30aa84eeb4b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:33:09.344013Z",
+    "updated_at": "2025-12-03T11:33:09.344013Z"
+  },
+  "content": [
+    {
+      "id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "submission_id": "794ed2f9-56cd-4c0e-bcb7-c30aa84eeb4b",
+      "content_type": "manuscript",
+      "content_text": "# Confined migration promotes cancer metastasis through resistance to anoikis and increased invasiveness\n\n## Authors\n\n- Deborah Fanfone<sup>1</sup>\n- Zhichong Wu<sup>1</sup>\n- Jade Mammi<sup>1</sup>\n- Kevin Berthenet<sup>1</sup>\n- David Neves<sup>6</sup>\n- Kathrin Weber<sup>1</sup>\n- Andrea Halaburkova<sup>1</sup>\n- Fran\u00e7ois Virard<sup>1</sup>\n- F\u00e9lix Bunel<sup>8</sup>\n- Catherine Jamard<sup>1</sup>\n- Hector Hernandez-Vargas<sup>1</sup>\n- Stephen WG Tait<sup>10</sup>\n- Ana Hennino<sup>1</sup>\n- Gabriel Ichim<sup>1</sup> ([ORCID: 0000-0002-8386-7405](https://orcid.org/0000-0002-8386-7405)) \u2020\n\n### Affiliations\n\n1. Cancer Research Center of Lyon (CRCL), INSERM 1052, CNRS Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))\n2. Cancer Cell Death Laboratory, part of LabEx DEVweCAN, Universit\u00e9 de Lyon Lyon France ([ROR:01rk35k63](https://ror.org/01rk35k63))\n3. Universit\u00e9 Lyon 1, Villeurbanne Villeurbanne France ([ROR:01rk35k63](https://ror.org/01rk35k63))\n4. Centre L\u00e9on B\u00e9rard Lyon France ([ROR:01cmnjq37](https://ror.org/01cmnjq37))\n5. Department of General Surgery, Pancreatic Disease Center, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n6. Netris Pharma Lyon France ([ROR:00ws9ra62](https://ror.org/00ws9ra62))\n7. Universite\u0301 Claude Bernard Lyon 1, Facult\u00e9 d\u2019Odontologie, Hospices Civils de Lyon Lyon France ([ROR:01rk35k63](https://ror.org/01rk35k63))\n8. ENS de Lyon, Universit\u00e9 Claude Bernard Lyon 1, CNRS, Laboratoire de Physique Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))\n9. Universit\u00e9 Claude Bernard Lyon 1 Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))\n10. Cancer Research UK Beatson Institute Glasgow United Kingdom ([ROR:03pv69j64](https://ror.org/03pv69j64))\n11. Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMechanical stress is known to fuel several hallmarks of cancer, ranging from genome instability to uncontrolled proliferation or invasion. Cancer cells are constantly challenged by mechanical stresses not only in the primary tumour but also during metastasis. However, this latter has seldom been studied with regards to mechanobiology, in particular resistance to anoikis, a cell death programme triggered by loss of cell adhesion. Here, we show in vitro that migrating breast cancer cells develop resistance to anoikis following their passage through microporous membranes mimicking confined migration (CM), a mechanical constriction that cancer cells encounter during metastasis. This CM-induced resistance was mediated by Inhibitory of Apoptosis Proteins, and sensitivity to anoikis could be restored after their inhibition using second mitochondria-derived activator of caspase (SMAC) mimetics. Anoikis-resistant mechanically stressed cancer cells displayed enhanced cell motility and evasion from natural killer cell-mediated immune surveillance, as well as a marked advantage to form lung metastatic lesions in mice. Our findings reveal that CM increases the metastatic potential of breast cancer cells.\n\n## Introduction\n\nThe majority of cancer-related deaths arise following metastasis (Dillek\u00e5s et al., 2019; Chaffer and Weinberg, 2011). Metastatic cancer cells acquire de novo phenotypic traits allowing them to efficiently leave the primary tumour, enter blood circulation, and survive harsh conditions, then exit the bloodstream and establish metastasis at a distant site. Though the mechanisms driving cancer cell migration and invasion are well documented, with a clear understanding of epithelial\u2013mesenchymal transition and the metastatic niche, no efficient therapeutic strategies currently prevent metastasis formation (Lambert et al., 2017). Metastasis is thus largely incurable, yet this lengthy process can take years and the therapeutic window is therefore large enough to envisage its targeting (Mehlen and Puisieux, 2006).\n\nMultiple mechanical forces occur at each step of cancer development, from the primary tumour to metastasis. During early tumour development, excessive cell proliferation, massive extracellular matrix deposition, or cancer-associated fibroblasts exert compressive forces on cancer cells that can reach up to 10kPa in pancreatic ductal adenocarcinoma (Nia et al., 2016). As they engage in their metastatic journey, cancer cells migrate through barriers including desmoplastic tumour stroma, basal membranes, endothelial layers, and when entering low-diameter capillaries. In healthy tissues or tumours, the extracellular matrix creates pores or tunnel-shaped tracks that are often smaller than the diameter of a cell and migrating cells adjust their shape and size according to these constrictions (Butcher et al., 2009). These events, known as confined migration (CM), have dramatic consequences on cancer cells and might even break the nuclear envelope and trigger DNA damage and mutagenesis if the breaks are not efficiently repaired (Raab et al., 2016; Denais et al., 2016).\n\nCM can alter the phenotypic traits of cancer cells rendering them even more aggressive. More precisely, repeated nuclear deformations and loss of nuclear envelope integrity can activate an invasive programme, and engage the pro-oncogenic Ras/MAPK signalling pathway (Nader et al., 2021; Rudzka et al., 2021; Rudzka et al., 2019). Once inside the blood or the lymphatic vessels, circulating tumour cells (CTCs) are confronted with deadly fluid shear stress until they extravasate (Fan et al., 2016). Moreover, most CTCs are eliminated by apoptosis in a process called anoikis, occurring when cells detach from the extracellular matrix (Shen and Kang, 2020; Paoli et al., 2013). By rapidly engaging either the death receptors or the mitochondrial pathway of apoptosis, anoikis has evolved as an efficient physiological barrier for preventing the formation of metastatic colonies by CTCs reaching target organs (Shen and Kang, 2020). Nonetheless, cancer cells developed strategies to evade anoikis such as overly activated Ras/ERK and PI3K/Akt pathways, engaging the tyrosine kinase receptor TrkB, inactivation of E-cadherin and p53 or enhanced autophagy (de Sousa Mesquita et al., 2017; Douma et al., 2004; Derksen et al., 2006; Fung et al., 2008; Chavez-Dominguez et al., 2020).\n\nMechanical stress has emerged as a key factor in shaping the pro-metastatic features of cancer cells. We thus hypothesized that CM may also contribute to the metastatic potential by impacting anoikis and cancer invasiveness. We show here that breast cancer cells having undergone CM, but not compression, become resistant to anoikis, through a mechanism involving lowering apoptotic caspase activation through an upregulation of Inhibitory of Apoptosis Proteins (IAPs). We also report that treatment with SMAC mimetics to lower IAPs expression restores the sensitivity to anoikis. Ultimately, a single round of CM is sufficient to enhance emerging aggressiveness, the most obvious effects observed being for single-cell migration and escape from natural killer (NK) cell-mediated immune surveillance. In addition, these observations are endorsed in vivo by higher lung metastatic burden when mice are engrafted with breast cancer cells challenged by CM. Taken together, our results support that CM triggers a particular signalling signature that might favour certain metastatic hallmarks such as resistance to anoikis and increased invasiveness.\n\n## Results\n\n### CM confers breast cancer cells with resistance to anoikis\n\nThe human breast cancer cells MDA-MB-231 are highly invasive and aggressive in vitro and in vivo, and represent an ideal cellular model to study metastasis (Cailleau et al., 1974). To investigate the effects of constriction on these cells, we subjected them to a forced passage through a membrane with 3 \u00b5m in diameter pores, via a serum gradient, mimicking the CM encountered during cancer progression (Rudzka et al., 2021; Porporato et al., 2014; Xia et al., 2019). MDA-MB-231 cells were seeded onto a matrigel-coated tissue culture insert, prior to applying the serum gradient, and thus initially invaded the matrigel plug before following the serum through the microporous membrane (Figure 1A). We ascertained that CM did not affect cell viability, by verifying the incorporation of Calcein AM (viability dye), and by showing that apoptosis-triggering cytochrome c was not released by the mitochondria of CM cells, as it co-localized with COX IV (mitochondrial marker) (Figure 1B, C). Since caspases are the main apoptotic executioners, we next tested if they were activated in CM-challenged cancer cells. For this experiment, MDA-MB-231 cells expressing a bimolecular fluorescence complementation-based caspase-3 reporter (Zhang et al., 2013), which is functional in actinomycin D-treated and not in CRISPRBAX/BAK cells, were subjected to CM (Figure 1\u2014figure supplement 1A, B). Recovered cells were viable and had not activated apoptotic effector caspases (Figure 1D), substantiating our previous result. In a complementary approach, we determined cell cycle distribution and found that CM cells have a negligible proportion of cells in subG1 (apoptotic cells) right after constriction (Figure 1\u2014figure supplement 1C, D) and while they have a slight arrest in G1 phase (Figure 1\u2014figure supplement 1E), this does not affect the overall cellular proliferation (Figure 1E). In line with this, CM cells displayed an unaltered mitochondrial membrane potential, ATP production and did not generate excessive reactive oxygen species (ROS) (Figure 1\u2014figure supplement 1F\u2013I). Hence, the CM model used here did not alter cell viability and was deemed suitable for studying phenotypic changes occurring in these mechanically challenged cancer cells.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the 3-\u00b5m transwell-based CM model. (B) MDA-MB-231 control cells or cells recovered from CM were stained with the Calcein AM viability dye and imaged by epifluorescence microscopy. (C) Representative immunofluorescence images of control and CM-challenged MDA-MB-231 cells stained for COX IV and cytochrome c. (D) Flow cytometry-based quantitative analysis of cells activating the VC3AI caspase reporter (n = 3, one-way analysis of variance [ANOVA] statistical test). (E) IncuCyte ZOOM live-cell imaging-based analysis of cell proliferation (n = 3, a representative experiment is shown). (F) Representative images of clonogenic structures from control and confined MDA-MB-231 cells grown in anoikis-promoting, ultra-low attachment conditions (left panel). Corresponding quantification of resistance to anoikis after 7 and 14 days of culture (right panel, n = 3, two-way ANOVA statistical test). (G) Control and CM-challenged MDA-MB-231 cells were grown in soft agar to test their anchorage-independent growth. Left panel depicts representative images, while the right panel is the quantification of clonogenic structures after 1 month (n = 3, t-test). (H) Control and CM-challenged MDA-MB-231 cells were imaged for 48 hr in an IncuCyte ZOOM imager in anoikis-promoting, ultra-low attachment conditions, and stained with SYTOX Green (n = 3, a representative experiment is shown). (I) IncuCyte-based SYTOX Green staining quantification of cell survival in control and CM MDA-MB-231 cells in anoikis-promoting conditions (n = 3, a representative experiment is shown). (J) Quantitative analysis of clonogenic structures illustrating the duration of resistance to anoikis between control and CM MDA-MB-231 cells up to 7 days post-CM (n = 3, one-way ANOVA statistical test). (K) Western blot analysis of PARP-1 cleavage and caspase-3 processing following CM and anoikis growth in control and in CRISPR/Cas9-mediated BAX/BAK DKO MDA-MB-231 cells. Actinomycin D treatment (1 \u00b5M for 12 hr) is used as a positive control for induction of apoptosis. (L) Densitometry analysis of PARP-1 and caspase-3 cleavage (ratio of CM cells to control) in anoikis conditions in MDA-MB-231 cells (n = 3\u20134, t-test). (M) The effect of CM on effector caspase activation was assessed using a fluorometric assay. Caspase activation was tested either immediately after CM, or in cells that were subsequently grown 24 hr in anoikis conditions (n = 3, two-way ANOVA statistical test). (N) Quantification of clonogenic structures formed by control or compressed MDA-MB-231 cells (subjected to 200, 400, or 600 Pa of compression for 16 hr) after 7 and 14 days of culture in anoikis conditions (n = 3, two-way ANOVA statistical test). (O) Quantification of clonogenic structures formed in soft agar by compressed MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative epifluorescence and phase images of VC3AI caspase reporter-expressing control and BAX/BAK double-KO MDA-MB-231 cells validating the bimolecular fluorescence complementation (BiFC) caspase reporter. Treatment with Actinomycin D was used as a positive control to induce caspase activation. (B) Western blot analysis of BAX and BAK protein expression, validating their KO through CRISPR/Cas9 in VC3AI-expressing MDA-MB-231 cells. The expression of the caspase reporter VC3AI is determined through anti-GFP immunoblotting. (C) Flow cytometry-based cell cycle profiles for PI-stained control, CM, and Actinomycin D-treated MDA-MB-231 cells. (D) Flow cytometry-based subG1 quantification (n = 3, one-way analysis of variance [ANOVA] statistical test). (E) Assessment of MDA-MB-231 cell cycle profile using PI staining and flow cytometry analysis (n = 3, two-way ANOVA statistical test). (F) Flow cytometry analysis of mitochondrial membrane potential (tetramethylrhodamine ethyl ester perchlorate [TMRE] staining). Carbonyl cyanide 3-chlorophenylhydrazone (CCCP) treatment at 12.5 \u00b5M was used as a positive control for disrupting the mitochondrial membrane potential (n = 3, one-way ANOVA statistical test). (G) Quantification of total ATP content in control and constricted MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). Flow cytometry-based quantification as mean fluorescence intensity (MFI) for mitochondrial reactive oxygen species (ROS) (H) and overall cellular ROS (I). Cells treated with 500 \u00b5M H2O2 were used as a control for the production of ROS (n = 3, one-way ANOVA statistical test). (J) Representative pictures of control and CM Hs578T cells cultured in ultra-low attachment condition and forming clonogenic structures (left panel). The corresponding quantitative analysis of the number of clonogenic structures after 7 and 14 days of culture is shown in the right panel (n = 3, two-way ANOVA statistical test). (K) Schematic diagram of the compression device, allowing the compression of breast cancer cells MDA-MB-231 with a constant force. Cells are plated on a transwell membrane, allowing gas and passage of nutrients. An agarose cushion is placed on top of the cell monolayer (control cells were compressed only by the agarose disk) and a custom printed cup is then added on top and filled with the corresponding weight in lead, resulting in various pressures. (L) Representative images of MDA-MB-231 nuclei (stained with Hoechst) during 600 Pa compression (left panel) and the corresponding quantification of nuclear area showing a significant increase under compression (right panel, n = 3, t-test). (M, N) Quantitative comparison of the number of clonogenic structures for MDA-MB-231 passing through transwells with 8 \u00b5m in diameter pores in ultra-low attachment conditions (M, n = 3, two-way ANOVA statistical test) or in soft agar (N, n = 3, t-test). (O) The effect of MDA-MB-231 cells migrating through transwells with 8 \u00b5m in diameter pores on caspase-3/7 activation as assessed by a fluorometric assay. This was either tested immediately after the transwell assay or in cells that were subsequently grown 24 hr in anoikis conditions (n = 3, two-way ANOVA statistical test). (P) Western blot analysis of BCL-xL, BCL2, and MCL1 expression in control and CM MDA-MB-231 cells. (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\nWe then focused on their response to anoikis, as we hypothesized that circulating tumour cells (CTCs) capable of withstanding such a physiological barrier and forming metastases may have acquired tumourigenic properties through the unique mechanical constriction imposed by CM (Shen and Kang, 2020). Importantly, CM-challenged MDA-MB-231 cells survived, grew, and formed clonogenic structures in low attachment conditions, as evidenced by the spheres generated, more efficiently than control cells (Figure 1F). The effect was not restricted to MDA-MB-231 cells since CM-challenged Hs578T breast cancer cells also developed more colonies than control counterparts, indicating that CM-challenged cells had overcome anoikis (Figure 1\u2014figure supplement 1J). This is also the case when cells are grown in soft agar, in an anchorage-independent manner (Figure 1G). In addition, resistance to anoikis was assessed by IncuCyte Imager-based real-time imaging, using SYTOX Green dye exclusion, and again breast cancer cells undergoing CM had a survival advantage when grown in low attachment conditions (Figure 1H, I). Next, we investigated whether the survival advantage acquired following a single round of CM was transient. MDA-MB-231 cells were challenged by CM once and anoikis resistance was quantified at 3, 5, and 7 days post-CM, revealing that resistance to anoikis was transient (Figure 1J). Since anoikis is a variant of apoptosis, we wondered whether the activation of pro-apoptotic effector caspases was affected by CM. This was assessed by immunoblotting for cleaved caspase-3 and PARP-1, a proxy for efficient caspase activation. Strikingly, CM-challenged cancer cells had lower caspase-3 processing into the active p17 and p19 fragments, whereas PARP-1 cleavage followed the same pattern (Figure 1K, L). Lower effector caspase activation was also confirmed using a fluorometric caspase-3/7 assay, demonstrating that inhibition was particularly important for cells grown in ultra-low attachment and soft agar conditions (further designated as anoikis-favouring conditions) (Figure 1M).\n\nTo verify whether this resistance to anoikis was specific to cells having undergone CM and could not arise following the compressive stress experienced within primary tumours upon uncontrolled proliferation or increased extracellular matrix deposition, we tested the effects of compression on resistance to anoikis. We exposed MDA-MB-231 cells in vitro to a defined compression by pressing them against a permeable membrane with a weighted piston. The different weights translated into different pressures (200, 400, or 600 Pa) (Figure 1\u2014figure supplement 1K). As shown by the increased nuclear size in compressed cells, this device was suitable to evaluate the effects of compression (Figure 1\u2014figure supplement 1L). Resistance to anoikis, as assessed by growing these cells in anoikis-favouring conditions, was not modified under compression (Figure 1N, O), suggesting that acquisition of resistance to anoikis may be specific to CM. In addition, cancer cell migration through 8 \u00b5m in diameter microporous transwells, which does not impose cellular constriction, did not confer cancer cells with resistance to anoikis (Figure 1\u2014figure supplement 1M, N) and had no impact on caspase activation (Figure 1\u2014figure supplement 1O). Of note, the expression of several anti-apoptotic proteins such as BCL-xL, BCL2, and MCL1 was unchanged in CM cells, suggesting another resistance mechanism to anoikis (Figure 1\u2014figure supplement 1P). In conclusion, these results show that CM has a profound impact on cancer cells resistance to cell death through inhibition of pro-apoptotic caspases.\n\n### CM-driven resistance to anoikis relies on the anti-apoptotic IAP proteins\n\nPrevious studies reported that IAPs such as cIAP1, cIAP2, and XIAP promote resistance to anoikis in several cancers, through caspase inhibition (Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005). We therefore hypothesized that under CM challenge, IAPs expression may underlie resistance to anoikis. This was tested by immunoblotting for cIAP1, cIAP2, and XIAP protein expression in CM MDA-MB-231 cells grown in anoikis-favouring conditions, which revealed an upregulation of all three IAPs (Figure 2A, left panel for densitometry analysis). Conversely, MDA-MB-231 cells subjected to compression or migration through 8 \u00b5m in diameter microporous transwells had unaltered levels of IAPs (Figure 2\u2014figure supplement 1A, B). To further investigate this correlation, we transiently overexpressed all three IAPs in MDA-MB-231 cells (Figure 2B). Enforced expression of cIAP1 and XIAP significantly enhanced resistance to anoikis in cells grown under anoikis-favouring conditions, while cIAP2 overexpression was dispensable (Figure 2C\u2013E). In a complementary approach, we deleted all three IAPs in MDA-MB-231 cells through CRISPR/Cas9-mediated gene editing (Figure 2F). Following CM and growth in anoikis-favouring conditions, control cells (EV) displayed the expected resistance to anoikis, whereas IAP-depleted cells lost their survival advantage (Figure 2G and Figure 2\u2014figure supplement 1C). In addition, the use of a SMAC mimetic, one of several developed to specifically induce IAP degradation, namely BV6, successfully depleted both cIAP1 and XIAP (Figure 2H; Varfolomeev et al., 2007). Interestingly, it also abrogated the resistance to anoikis observed in CM-challenged breast cancer cells (Figure 2I, J).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig2-v1.jpg)\n\n**Figure 2.:** (A) Western blot analysis of IAPs protein expression in MDA-MB-231 cells after CM through 3 \u00b5m in diameter membranes, with cells grown in ultra-low attachment conditions (left panel) and the corresponding densitometry analysis (right panel) (n = 3\u20134, two-way analysis of variance [ANOVA] statistical test). (B) Validation of IAPs protein overexpression in MDA-MB-231 cells by Western blot. Quantitative comparison of resistance to anoikis in cIAP1 (C), cIAP2 (D), and XIAP (E) overexpressing MDA-MB-231 cells in steady-state conditions. Clonogenic structures were counted after 7 and 14 days of culture in ultra-low attachment condition (n = 3, two-way ANOVA statistical test). (F) Western blot analysis of protein expression validating the efficacy of CRISPR/Cas9-mediated deletion of IAPs. (G) Quantitative comparison of resistance to anoikis in MDA-MB-231 cells deleted for cIAP1, cIAP2, and XIAP using CRISPR/Cas9 and subjected to CM (n = 3, two-way ANOVA statistical test). (H) Validation by Western blot of IAPs expression inhibition by treating MDA-MB-231 cells with BV6. Two concentrations of BV6 (0.5 and 1 \u00b5M) were used for 16 hr of treatment. (I) Representative images of clonogenic structures from MDA-MB-231 control and CM cells cultured in low attachment conditions and treated with 0.5 \u00b5M of BV6. (J) Quantitative comparison of resistance to anoikis in CM MDA-MB-231 cells treated with 0.5 \u00b5M of SMAC mimetic BV6. Western blot analysis confirming inhibition of cIAP1 and XIAP expression following BV6 treatment (n = 3, two-way ANOVA statistical test). (K) CRISPR EV (control) and CRISPR cIAP1 or XIAP MDA-MB-231 cells were stained with DiO and DiI, respectively, mixed at a 50:50% ratio and then tested in CM. The cells undergoing CM were then scored for the ratio DiO:DiI and representative fluorescence images are shown. (L) Quantification of the percentage of CRISPR EV versus CRISPR cIAP1 and XIAP cells passing through constrictive pores (n = 3, t-test). (M) Control and anoikis-resistant cells (selected for 7 days in ultra-low attachment culture plates) were stained with DiO and DiI, respectively, mixed at a 50:50% ratio and then tested in CM. The cells undergoing CM were then scored for the ratio DiO:DiI and representative fluorescence images are shown. (N) Quantification of the percentage of control versus anoikis-resistant cells passing through constrictive pores (n = 3, t-test). (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blot analysis of Inhibitory of Apoptosis Proteins (IAPs) expression in MDA-MB-231 cells compressed 16 hr with 200, 400, or 600 Pa. The right panel represents the corresponding densitometry analysis (n = 3\u20134, two-way analysis of variance [ANOVA] statistical test). (B) Western blot analysis of IAPs expression, PARP-1 cleavage, and caspase-3 processing in MDA-MB-231 cells after their migration through transwell pores of 8 \u00b5m in diameter, with or without culturing cells in anoikis-promoting conditions (in ultra-low attachment culture plates). (C) Quantitative comparison of soft agar clonogenic survival using control or CM MDA-MB-231 cells deleted for individual IAPs using CRISPR/Cas9 (n = 3, one-way ANOVA statistical test). (D) IAPs relative mRNA expression by qRT-PCR in control and CM MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). (E) Western blot analysis of K48 ubiquitination in total protein lysates from control and CM cells (left panel). Treatment with MG132 was used as a positive control for proteasome inhibition. The right panel depicts the corresponding densitometry analysis (n = 4, t-test). (F) Cycloheximide chase assay (50 ng/ml) showing by Western blot XIAP and MCL1 proteosomal degradation (upper panel). Lower panel represents the corresponding densitometry analysis, n = 2. (G) The effect of confined migration on p65 nuclear localization in MDA-MB-231 cells was assessed by immunofluorescence. TNF\u03b1 treatment (20 ng/ml for 1 hr) was used to induce p65 nuclear translocation. Corresponding quantification of the percentage of cells with nuclear p65 staining is shown in the right panel. (H) Luciferase assay to validate the NF-\u03baB luciferase reporters following stimulation with TNF\u03b1 (20 ng/ml for 1 hr) (n = 4, two-way ANOVA statistical test). (I) MDA-MB-231 cells transiently expressing two NF-\u03baB luciferase reporters were mechanically stressed by CM and luciferase activity was immediately assessed (n = 3, two-way ANOVA statistical test). (J) Quantification for the percentage of EV versus IkBSR-expressing cells treated or not with TNF\u03b1 and presenting nuclear p65 staining. (K) Quantification of resistance to anoikis in empty vector or IkBSR-expressing MDA-MB-231 by SYTOX Green incorporation and IncuCyte ZOOM-based live-cell microscopy (n = 3, a representative experiment is shown). (L) Empty vector or IkBSR-expressing MDA-MB-231 control or CM cells were cultured for 7 and 14 days in anoikis-favouring conditions and the surviving clonogenic structures were quantified (n = 3, two-way ANOVA statistical test). (M) Luciferase assay validating NF-\u03baB activation following TNF\u03b1 treatment (20 ng/ml) for 6 and 24 hr (n = 3, one-way ANOVA statistical test). (N) Western blot analysis of IAPs expression in MDA-MB-231 cells treated as in (M). (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\nNext, we sought to understand the mechanisms responsible for IAPs upregulation in constricted cells. We initially performed qRT-PCR analysis to assess IAPs mRNA expression in CM cells and uncovered that their transcript expression was not increased compared to control cells, with a significant inhibition observed for cIAP2 and XIAP (Figure 2\u2014figure supplement 1D). IAPs contain a RING domain with E3 ubiquitin ligase activity which mediates their own K48 polyubiquitination and that of other protein targets and thus it is crucial for the role of IAPs in suppressing apoptosis (Estornes and Bertrand, 2015). To identify a possible post-transcriptional regulation of IAPs, we first compared the total amount of K48-ubiquitin-linked proteins in control and CM cells. Constricted cells displayed an accumulation of ubiquitinated proteins, indicating a possible bottleneck for protein degradation in CM-stressed cells (Figure 2\u2014figure supplement 1E). In addition, we performed a chase assay with the protein synthesis inhibitor cycloheximide, in order to assess protein half-life (Figure 2\u2014figure supplement 1F), using MCL-1 as a positive control as it is rapidly degraded by the proteasome. When focusing on XIAP, which was the most differentially expressed IAP in CM-challenged cells, we observed a slower decrease in XIAP protein in CM cells compared to control cells, suggesting a lower proteasomal degradation (Figure 2\u2014figure supplement 1F). XIAP may thus be more stable in CM cells, which might explain its higher expression following CM. CM-triggered resistance to anoikis therefore involves the pro-survival IAP proteins, which can be efficiently targeted by pre-clinically validated SMAC mimetics.\n\nIAPs are commonly described to modulate NF-\u03baB pathway, while in a positive feedback loop NF-\u03baB regulates IAPs expression (Diessenbacher et al., 2008; Gyrd-Hansen and Meier, 2010). To test whether CM activates NF-\u03baB, we first assessed p65 translocation from the cytoplasm to the nucleus upon CM, and showed an increase in cells displaying nuclear p65 (Figure 2\u2014figure supplement 1G). Using two luciferase-based NF-\u03baB reporter constructs, CM was also found to increase NF-\u03baB transcriptional activity (Figure 2\u2014figure supplement 1H, I). To test whether NF-\u03baB activation was required for CM-driven resistance to anoikis, we expressed in MDA-MB-231 cells the I\u03baB super repressor (I\u03baBSR), which is a non-degradable I\u03baB\u03b1 that blocks the nuclear shuttling of p65 (Van Antwerp et al., 1996). Accordingly, the stable expression of I\u03baBSR blocked p65 nuclear shuttling following TNF\u03b1 treatment (Figure 2\u2014figure supplement 1J). However, in these settings, blocking the NF-\u03baB pathway in CM cells did not prevent their resistance to anoikis (Figure 2\u2014figure supplement 1K,L ). In addition, the artificial activation of NF-\u03baB pathway using TNF\u03b1 treatment, can upregulate cIAP2 as previously described, yet it had no effect on both cIAP1 and XIAP (Figure 2\u2014figure supplement 1M, N; Diessenbacher et al., 2008). These data suggest that CM-driven mechanical stress is characterized by NF-\u03baB activation, which is not involved in the survival advantage observed in CM-challenged cancer cells.\n\nAn important issue is whether CM selects for a cellular population exhibiting higher IAPs expression and/or anoikis resistance or it specifically induces de novo these changes. If the observed phenotypes were the effect of a selection mechanism, this would imply that cells with higher IAPs expression or being more resistant to anoikis (these cells being pre-existent in a heterogeneous cell population) would have a migration advantage when undergoing CM. To test this, first we used the CRISPR/Cas9 cells described previously (Figure 2F), with CRISPR EV considered as high cIAP1 and XIAP-expressing cells. We stained the EV and the CRISPR cIAP1/XIAP with the lipophilic cyanide dyes DiO (green) and DiI (red), respectively, and then mixed them a known ratio of 50:50. The cellular mix was then subjected to CM and at the end the green-to-red ratio was reassessed (Figure 2K). As shown in Figure 2L, the score was similar to the initial 50:50 ratio, with IAPs high expressing cells (the EV cells) showing the same CM capacity as IAPs KO cells. In a complementary approach, to determine whether CM selects cancer cells initially displaying an increased resistance to anoikis, we enriched in anoikis-resistant cells by continuously culturing MDA-MB-231 cells in ultra-low attachment plates for 7 days (Figure 2M). As described above, control adherent and anoikis-resistant cells were stained with DiO and DiI, respectively, mixed in a 50:50 ratio and tested in CM (Figure 2M). This time as well we did not observe any CM advantage driven by resistance to anoikis, as the green-to-red ratio of cells undergoing CM is identical to the initial one (Figure 2N). These results imply that CM is not selecting for cells having a different expression of IAPs or displaying resistance to anoikis.\n\nTo conclude, resistance to anoikis driven by CM mechanical stress relies on the pro-survival function of IAPs, regulated at the post-transcriptional level following mechanical stress.\n\n### CM enhances the aggressiveness of breast cancer cells and promotes evasion from immune surveillance\n\nTo gain mechanistic insights into the relationship between cellular constriction and resistance to anoikis, we performed RNA sequencing (RNA seq) analysis on MDA-MB-231 cells undergoing CM, compared to control cells. Remarkably, CM cells displayed an almost global inhibition of transcription, making their transcriptional profile distinct from control cells (Figure 3\u2014figure supplement 1A, B). To investigate this effect further, we performed a Western blot analysis for histone H3 epigenetic modifications, associated with transcriptional activation (H3K27 acetylation) or heterochromatin (H3K9 tri-methylation). Consistently with their overall transcriptional inhibition, CM cells had a lower histone H3 acetylation and a reduction in heterochromatin (lower H3K9 me3), which may indicate a decrease in nuclear stiffness, which is needed when cells navigate through narrow spaces (Figure 3\u2014figure supplement 1C). When querying the Gene Ontology (GO) Biological Processes using both Enrichr (Figure 3\u2014figure supplement 1D) and g:Profiler (Figure 3\u2014figure supplement 1E), several pathways associated with cellular motility such as \u2018Extracellular matrix organization\u2019, \u2018Cell-matrix adhesion\u2019, or \u2018Cell adhesion\u2019 were significantly overrepresented in CM cells (Chen et al., 2013; Raudvere et al., 2019). Given that metastatic cells acquire an aggressive phenotype, we thus hypothesized that CM may impact cancer cell motility (Lambert et al., 2017).\n\nSince external mechanical forces are responsible for rapid cytoskeleton rearrangement, we first stained F-actin in control and CM-stressed MDA-MB-231 cells (Torrino et al., 2021). This revealed an increased number of stress fibres following CM, in addition to more abundant filopodia (Figure 3A). By using Nanolive imager-based cellular tomography, we uncovered that cancer cells subjected to CM had a higher variation in cell area over time (Figure 3B). To test whether these phenotypic changes were accompanied by increased cell motility, single-cell migration was first tracked in control and CM cells over a 24-hr period. CM-challenged cancer cells displayed a significantly higher velocity and travelled further than control cells (Figure 3C\u2013E). Proliferating cancer cells adhere to their substrate via focal adhesions that are equally important during migration, especially metastasis (Devreotes and Horwitz, 2015; Roussos et al., 2011). Here, we used immunofluorescence for two key components of focal adhesions, namely paxillin and vinculin (Figure 3\u2014figure supplement 1F), to assess the number of focal adhesions following CM. The increased single-cell migration observed was not correlated with the number of focal adhesions. In contrast to single-cell migration, breast cancer cells subjected to a single round of CM did not outperform control cells when assessed by collective cell migration and invasion (Figure 3F\u2013K). As cells encounter several mechanical challenges during metastasis, we then imposed three consecutive CM passages on MDA-MB-231 cells, and found that challenged cells had a significant gain in chemotaxis and collective cell migration (Figure 3L\u2013N, experimental setup in Figure 3\u2014figure supplement 1G). In an effort to determine other features that might facilitate CM, we focused on nuclear lamins, which are important regulators of nuclear stiffness and shape during CM (Harada et al., 2014; de Leeuw et al., 2018). To establish whether lamins have a role during MDA-MB-231 CM, we stably overexpressed lamin A GFP (Figure 3\u2014figure supplement 1H) and set up a competition-like scenario between lamin A GFP overexpressing and control cells stained in red with DiI, similar to the experiments performed in Figure 2K, M (Figure 3\u2014figure supplement 1I). Confirming previous studies, we also found that MDA-MB-231 cells with higher levels of lamin A have a lower capacity to perform CM, most probably due to increased nuclear stiffness (Figure 3\u2014figure supplement 1J). Yet, when the expression of lamin A/C was tested in cancer cells right after CM, it was similar to that found in control cells, implying once more that CM does not select for cells with certain characteristics, such as lower expression of lamins (Figure 3\u2014figure supplement 1K).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative immunofluorescence images of MDA-MB-231 cells after CM with phalloidin-stained actin filaments. The right panels are quantification of the number of stress fibres and filopodia. (B) Representative kinetics holotomographic images (phase and cell segmentation) of control and MDA-MB-231 cells subjected to CM obtained by Nanolive imaging (left panel). Corresponding quantitative analysis of cell area variations of control and CM cells during a 60-min time-lapse acquisition is shown in the right panel. (C) Spider plot analysis for single-cell migration assay. Control (117 cells) and CM (110 cells) cells were tracked for 24 hr. Quantitative analysis of single-cell migration velocity (D) and distance travelled (E) between control and CM MDA-MB-231 cells. (F) Schematic representation of the IncuCyte ZOOM imager-based wound-healing assay. (G) Monolayers of MDA-MB-231 control and CM cells were wounded and pictures were taken immediately after wound induction (T0) and 24 hr later. (H) Corresponding quantitative analysis of the migratory potential of control and CM cells through wound area measurement (n = 3, a representative experiment is shown). (I) Schematic representation of invasion assay. After the wound was made, breast cancer MDA-MB-231 cells invaded through a matrigel plug until they closed the wound. (J) Monolayers of MDA-MB-231 control and CM cells were wounded and pictures were taken immediately after wound induction (T0) and 24 hr later. (K) Corresponding quantitative analysis of the invasive potential of control and CM cells through wound area measurement (n = 3, a representative experiment is shown). (L) Representative images of control and MDA-MB-231 cells subjected to serial CM and undergoing chemotaxis through transwell membranes with 8 \u00b5m in diameter pores. (M) Chemotaxis quantification relative to (l) (n = 3, one-way analysis of variance [ANOVA] statistical test). (N) Comparative quantitative analysis based on IncuCyte ZOOM imager of the migratory potential between control and MDA-MB-231 cells that have undergone serial CM (for three different clones) (n = 3, a representative experiment is shown). (O) FACS analysis of apoptotic cells among CM tumour cells compared to control cells, co-cultured with natural killer (NK cells at the ratio of 1:20 for NK cells). Results were analysed by assessing the ratio of CFSElow/CFSEhigh with baseline-correction to no NK cell culture condition (n = 3, t-test). (P) FACS analysis of GrzB+ tumour cells among CM and control MDA-MB-231 cells, co-cultured with NK cells at a ratio of 1:20 (n = 3, t-test). (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Unsupervised clustering of the RNA sequencing data in control and confined migration (CM) MDA-MB-231 cells. Orange indicates increased and blue decreased mRNA abundance of selected genes with fold change above 3, 3 replicates/condition. (B) Volcano plot displaying the expression (in log fold change) of each differentially expressed gene. (C) Western blot analysis of H3K27 acetylation and H3K9 tri-methylation in control and CM MDA-MB-231 cells. The right panel is the densitometry analysis (n = 3, one-way analysis of variance ANOVA statistical test). Enrichr- (D) and g:Profiler- (E) based gene ontology (GO) analysis of the genes differentially expressed (above 2 FC, up- and downregulated) in cancer cells subjected to CM. Signatures related to cellular motility are in red while those concerning immune surveillance are in green. (F) Assessment of the number of focal adhesions between control and CM MDA-MB-231 cells based on immunostaining for paxillin and vinculin (t-test). (G) Schematic representation of the serial CM. Between CM events, cells were amplified and re-challenged until reaching three consecutive CM. (H) Upper panel: Western blotting analysis for GFP showing the expression of lamin A GFP into MDA-MB-231 cells. Lower panel: representative image of lamin A GFP-positive MDA-MB-231 cellular nuclei. (I) Control cells were stained in red with DiI, mixed at a 50:50% ratio with lamin A GFP-expressing MDA-MB-231 and then tested in CM. The cells undergoing CM were then scored for the ratio DiI:GFP and a representative fluorescence image is shown. (J) Quantification of the percentage of control versus lamin A GFP-expressing cells passing through constrictive pores (n = 4, t-test). (K) Western blot analysis for lamin A/C expression in control and CM MDA-MB-231 cells. (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\nTwo of the gene expression signatures over-represented in breast cancer cells undergoing CM involve the regulation of T-cell-mediated immunity and most importantly the negative regulation of NK cells mediated cytotoxicity (Figure 3\u2014figure supplement 1D, E). The immune system plays a crucial role in preventing metastatic dissemination through a process called immune surveillance. The innate immune NK cells and the adaptive ones, T cells \u03b1\u03b2 (CD4+ and CD8+), as well as \u03b3\u03b4 T lymphocytes are the unique actors of this phenomenon (Pag\u00e8s et al., 2005; Barrow et al., 2018). The advantage of NK-mediated immune surveillance is that it is very effective on cancer cells that are in the blood circulation (Garrido and Aptsiauri, 2019). We therefore reasoned that CM might also influence NK-mediated immune surveillance. To test this, we co-cultured control and CM-challenged cells stained with carboxyfluorescein succinimidyl ester (CFSE) with primary NK cells, obtained from healthy donor blood. Interestingly, breast cancer cells were partially protected from the NK-mediated cytotoxicity following CM (Figure 3O, CFSElow population represents apoptotic cells), consistent with lower levels of toxic granzyme B incorporation (Figure 3P).\n\nTaken together, these data demonstrate that a single event of CM has a profound effect on single-cell migration, while several rounds of CM enhance cancer cell chemotaxis and collective migration. In addition, CM contributes to evasion from NK-mediated immune surveillance.\n\n### Breast cancer cells subjected to CM have an increased metastatic potential in vivo\n\nWe next wondered whether the effect of CM on the in vitro breast cancer aggressiveness was applicable in vivo. We injected control and MDA-MB-231 cells subjected to one round of CM into the tail vein of immune-deficient mice and then analysed lung metastatic colonization by micro-computed tomography (microCT). We observed that metastasis incidence was significantly higher for CM cells 6 weeks post-engraftment (Figure 4A). Moreover, the volume of healthy lung tissue in mice engrafted with CM breast cancer cells was considerably smaller than control counterparts, indicating their increased aggressiveness (Figure 4B, C). Of note, this was also the case for breast cancer cells experiencing three consecutive rounds of CM (Figure 4\u2014figure supplement 1A). In addition, the increased aggressiveness of constricted cells was also quantified by measuring the area of metastatic lesions following H&E staining (Figure 4D, E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig4-v1.jpg)\n\n**Figure 4.:** (A) Analysis of lung metastasis incidence in nude mice engrafted with either control or CM MDA-MB-231 cells (two-tailed Fisher\u2019s exact test). (B) Representative micro-computed tomography (microCT)-based 3D reconstructions (red represents healthy lung volume) of lungs from mice engrafted with either control or MDA-MB-231 cells undergoing CM, 15 mice/condition. (C) Corresponding quantification of remaining healthy lung volume 6 and 8 weeks post-engraftment. (D) Representative H&E staining of lung sections. (E) Quantification of lung metastatic foci (ratio to total lung surface). (F) Model: as a consequence of CM but not compression, cancer cells become resistant to cell death triggered by loss of cell attachment (anoikis), which relies on increased expression of IAPs proteins. NF-\u03baB is also activated by mechanical stress, yet it does not impact resistance to anoikis. In addition, CM cancer cells are more resistant to natural killer (NK)-mediated immune surveillance. Together with a marked motility advantage, this confers an increased metastatic colonization advantage to breast cancer cells having undergone CM. (Statistical significance: ns - P > 0.05; * - P \u2264 0.05; ** - P \u2264 0.01; *** - P \u2264 0.001; **** - P \u2264 0.0001).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Analysis of lung metastasis incidence in nude mice engrafted with either control or MDA-MB-231 cells undergoing three consecutive rounds of confined migration (CM; left panel). Right panel presents the corresponding quantification of remaining healthy lung volume in engrafted mice, 4\u20135 mice/condition.\n\nCollectively, these data demonstrate that a single event of CM was sufficient to enhance lung metastatic colonization in mice. Hence, we show here that CM is characterized by resistance to anoikis, increased single-cell motility, NF-\u03baB activation and escape from immune surveillance. Although independent of NF-\u03baB activation, the resistance to anoikis relies on pro-survival IAPs, regulated at the post-transcriptional level following mechanical stress. Overall, these events contribute to enhancing breast cancer cell aggressiveness (Figure 4F).\n\n## Discussion\n\nThe role of cell death in cancer has been extensively investigated and its inhibition by cell-autonomous mechanisms such as overexpressing IAPs or anti-apoptotic BCL2 family proteins is a stepping stone for oncogenesis (Gyrd-Hansen and Meier, 2010; Strasser and Vaux, 2020). However, very little is known on how the mechanically challenging tumour microenvironment impacts efficient lethal caspase activation and cancer cell death, and how this might favour cancer aggressiveness. This is a timely issue since the causal link between tumour stiffening, mechanical stress, and cancer progression is well documented (Paszek et al., 2005; Acerbi et al., 2015). As the tumour stiffness and the inherent mechanical stress recently gained notoriety in favouring cancer progression, one could wonder whether this pro-oncogenic effect may be partly attributed to an underappreciated inhibitory effect on efficient induction of tumour cell death (Shen and Kang, 2020; Gensbittel et al., 2021; Nia et al., 2020).\n\nHere, we characterized the impact of mechanical stress, mimicking that encountered either within the primary tumour (compression) or during metastasis (CM), on the acquisition of tumourigenic properties, in particular resistance to cell death. Our experimental setup, based on commercially available transwell membranes with pores of 3 \u00b5m in diameter, forced breast cancer cells to undergo severe CM towards a chemotactic cue. Although it was previously reported that CM caused nuclear lamina breaks and widespread DNA damage, the MDA-MB-231 cells subjected to CM used herein recovered well from the forced passage, lacked obvious apoptotic caspase activation, and displayed no major differences in cell proliferation (Raab et al., 2016; Denais et al., 2016; Harada et al., 2014; Pfeifer et al., 2018).\n\nIn addition to the CM that cells undergo to exit the primary tumour, CTCs also need to survive the complete loss of cell attachment, which normally triggers anoikis. Since resistance to anoikis was previously described to protect CTCs and favour their metastatic seeding, we tested this in breast cancer cells challenged by CM and unveiled a significant resistance to anoikis (Paoli et al., 2013). As anoikis is a variation of apoptosis that relies on lethal caspase activation, we found that CM-driven resistance to anoikis was also mirrored by an inhibition of caspase activation. Although it has been reported that resistance to anoikis could be promoted by shear stress, we report here for the first time that CM, a mechanical stress in the metastatic cascade happening before the fluid shear stress, can also induce resistance to anoikis in breast cancer cells (Li et al., 2019). Conversely, cancer cells migrating through larger 8 \u00b5m in diameter microporous transwells, which do not induce CM, did not acquire resistance to anoikis. Aside from CM, cancer cells are subjected in situ to an important compressive stress within a rapidly growing tumour (Nia et al., 2020). Regarding cell death sensitivity, however, compression did not impact the resistance to anoikis, thus discriminating both types of mechanical stress. Interestingly, resistance to anoikis was transient since it remained significant up to 3 days following the mechanical challenge. This reversibility suggests that a temporary epigenetic, transcriptional, and/or translational programme is induced following acute constriction.\n\nWe then sought to uncover the cell-autonomous pro-survival pathways engaged in CM-challenged breast cancer cells and we narrowed them down to the pro-survival IAPs. Interestingly, these proteins were described to promote resistance to anoikis in several cancers. Nevertheless this is the first study showing that mechanical stress increases IAPs expression, especially cIAP1 and XIAP, likely by modifying their protein turnover (Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005). In an effort to revert resistance to anoikis and restore caspase-dependent cell death, we used SMAC mimetics developed to efficiently deplete IAPs. Currently, several SMAC mimetics such as birinapant and LCL161 are in phase two clinical trials for ovarian cancer and myeloma (source: https://clinicaltrials.gov/). Importantly, we found that BV6 treatment re-sensitized cancer cells subjected to CM to anoikis, reinforcing the relevance of SMAC mimetics for clinical use. Moreover, we found that breast cancer cells experiencing CM activate the NF-\u03baB pathway, which is likely due to DNA damage (Pfeifer et al., 2018; Hadian and Krappmann, 2011). However, our results indicate that NF-\u03baB activation is dispensable for the acquired resistance to anoikis, yet we cannot exclude additional pro-survival effects.\n\nIn this study, we also made an attempt to establish whether CM is actively inducing changes in IAPs protein levels and resistance to anoikis or simply it selects and enriches in a pre-existing cellular population displaying these characteristics. The experiments shown in Figure 2K\u2013N and Figure 3\u2014figure supplement 1I\u2013K do not support the scenario of a selection process, yet we cannot completely exclude that CM selects for cells having other characteristics indirectly influencing IAPs expression or anoikis resistance.\n\nTo gain a clearer insight into CM-associated gene regulation, control and cancer cells experiencing CM were analysed by RNA sequencing. CM had a dramatic effect of overall transcriptional inhibition, which is most probably the immediate effect of DNA damage and altered chromatin organization (Shah, 2021; Hsia et al., 2021; Heine et al., 2008). Indeed, this was mirrored by the marked reduction of acetylated histone H3, illustrating global transcriptional inhibition. However, the duration of transcriptional inhibition following acute cell constriction remains to be investigated. In addition, it would be relevant to test by ChIP-Seq the exact gene regulatory networks impacted by loss of histone acetylation at promoter regions.\n\nSince several gene expression signatures in CM cells were focused on cell adhesion and extracellular matrix disassembly, we next established whether breast cancer cells acquired migratory and invasive properties after recovering from a single round of CM. In line with published data, these cells displayed modifications of their cellular motility, with most obvious differences observed for F-actin filament remodelling and single-cell migration (Rudzka et al., 2019; Liu et al., 2015; Tse et al., 2012). When CM was applied three consecutive times, the recovered cells were very aggressive, possibly due to the acquisition of a more stable aggressive transcriptional and/or epigenetic programme. This illustrates that multiple CM events encountered by a cancer cell during its dissemination to distant organs can have dramatic effects on its aggressive phenotype. These data support the existing relationship between mechanical stress and increased aggressiveness (Nader et al., 2021; Tse et al., 2012). A recent study from Nader et al. elegantly showed that invasive foci in breast cancer are enriched in constricted cells characterized by deformed nuclei and frequent TREX1-dependant DNA lesions. Relevant to our study, these cells were in a partial EMT state that enhanced their invasion potential (Nader et al., 2021).\n\nAside from the capacity to overcome anoikis and discrete modifications in motility, cancer cells experiencing a single CM event were also protected from NK-mediated immune surveillance. Despite these promising results, further research should be undertaken to evaluate NK function and analyse NK cytokine secretion in the presence of mechanically stressed cells. Since NK immune surveillance is conditioned by the expression on the cancer cell surface of MHC/HLA class I molecules and activation ligands, their expression should also be profiled following a mechanical stress (Garrido and Aptsiauri, 2019).\n\nFinally, we tested whether CM-triggered resistance to anoikis, increased single-cell motility and evasion from NK-mediated immune surveillance were reflected in vivo by increasing the metastatic potential of invading cells. This was indeed the case since MDA-MB-231 breast cancer cells subjected to a single round of CM had a significant advantage to form metastatic lesions in the lungs of nude mice. This was also evidenced for cancer cells experiencing several rounds of CM.\n\nIn summary, this study refines our understanding of the pathophysiological relationship between mechanical stress and cancer aggressiveness. Our model of mechanical stress mimicking CM had an unexpected effect on resistance to anoikis, which was then mirrored by an enhanced metastatic seeding. In addition, our findings unveiled a previously unknown reliance of mechanically challenged breast cancer cells on IAPs for survival that could be targeted by treatment with SMAC mimetics.\n\n## Materials and methods\n\n### Cell lines\n\nHuman breast cancer cells MDA-MB-231 and Hs 578T (both a gift from P. Mehlen, CRCL, Lyon) were maintained in RPMI supplemented with 2 mM L-glutamine (Thermo Fisher Scientific, 25030-24), non-essential amino acids (Thermo Fisher Scientific, 11140-035), 1 mM sodium pyruvate (Thermo Fisher Scientific, 11360-039), 10% fetal bovine serum (FBS) (Eurobio, CVFSVF00-01), and 1% penicillin/streptomycin (Thermo Fisher Scientific, 15140-122).\n\n### Stable cell line generation by lentiviral transduction\n\n293T cells (1.5 \u00d7 106 in a 10-cm Petri dish) were transfected with lentiviral plasmids together with pVSVg (Addgene, 8454) and psPAX2 (Addgene, 12260) using Lipofectamine 2000 (Thermo Fisher Scientific, 11668019) according to the manufacturer\u2019s instructions. Twenty-four and 48 hr later, virus-containing supernatant was collected, filtered, supplemented with 1 \u00b5g/ml polybrene (Sigma-Aldrich, H9268), and used to infect target cells. Two days later, the transduced cells were selected by growth in the appropriate antibiotic.\n\n### Plasmid transfection\n\nFor the transient overexpression of cIAP1 and XIAP, MDA-MB-231 cells (1.2 \u00d7 106) were plated overnight on a 10-cm Petri dish. The cells were then transfected using Lipofectamine 2000 (Thermo Fisher Scientific, 11668019) with pcDNA3 as empty vector or PEF-hXIAP-Flag for XIAP. A co-transfection with PV2L-Blasti-TRAF2 and pEF6 2xHA cIAP1 WT was needed for overexpressing cIAP1. Six hours later, the transfection medium was replaced by fresh medium and the cells were allowed to grow for 48 h.\n\n### Generation of CRISPR/Cas9-based KO cells\n\nThe oligos containing the gene-specific sgRNA target were cloned into the LentiCRISPRv2 Blasticidin (Addgene, 83480) as previously described (Shalem et al., 2014). Following lentiviral transduction, cells were selected with 10 mg/ml blasticidin (Invivogen, ant-bl) for 2 weeks prior to analysis. The CRISPR/Cas9 primers are presented in Table 1.\n\n**Table 1.**\n List of CRISPR primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene of interest</th>\n      <th>Forward primer (5\u2032\u20133\u2032)</th>\n      <th>Reverse primer (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>BAX</td>\n      <td>CACCGAGTAGAAAAGGGCGACAACC</td>\n      <td>AAACGGTTGTCGCCCTTTTCTACTC</td>\n    </tr>\n    <tr>\n      <td>BAK1</td>\n      <td>CACCGGCCATGCTGGTAGACGTGTA</td>\n      <td>AAACTACACGTCTACCAGCATGGCC</td>\n    </tr>\n    <tr>\n      <td>BIRC2</td>\n      <td>CACCGCATGGGTAGAACATGCCAAG</td>\n      <td>AAACCTTGGCATGTTCTACCCATGC</td>\n    </tr>\n    <tr>\n      <td>BIRC3</td>\n      <td>CACCGCATGGGTTCAACATGCCAAG</td>\n      <td>AAACCTTGGCATGTTGAACCCATGC</td>\n    </tr>\n    <tr>\n      <td>XIAP</td>\n      <td>CACCGTATCAGACACCATATACCCG</td>\n      <td>AAACCGGGTATATGGTGTCTGATAC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Transwell assays\n\nBreast cancer cells (MDA-MB-231, Hs578T; 3 \u00d7 106) were plated on a 75-mm transwell insert with a polycarbonate membrane pore size of 3 \u00b5m (Corning, 3420). Before seeding, the insert was coated with a layer of matrigel (300 \u00b5g/ml). A gradient of serum was then created between the two compartments of the transwell (0% FBS in the top compartment and 20% below) and renewed 5 hr later. After 72 hr, cells were harvested after washing the insert with phosphate-buffered saline (PBS) and incubation with trypsin. Cells that have migrated through the 3 \u00b5m pores were designated as the \u2018constricted cells\u2019, whereas the ones that did not migrate were the \u2018control cells\u2019.\n\nFor the 8-\u00b5m transwell experiments, 5 \u00d7 105 MDA-MB-231 cells were plated on a 6-well insert with a polycarbonate membrane pore size of 8 \u00b5m (Greiner Bio One 657628) and the cells were recovered and analysed 48 hr later.\n\nFor certain experiments, cells recovered for the transwell assay were stained with Hoechst 33,342 (10 \u00b5g/ml, Thermo Fisher Scientific, H1399), Calcein AM (0.4 mg/ml, Life, C1430), and Vybrant cell-labelling solutions (DiI and DiO, V-22885 and V-22886) according to the manufacturer\u2019s instruction.\n\n### Anoikis assay\n\nMDA-MB-231 and Hs578T cells (2 \u00d7 105) were seeded onto a 6-well Clear Flat Bottom Ultra-Low Attachment plate (Corning, 3471) in complete RPMI medium. Cells then formed 3D clonogenic structures that were imaged and scored after 7 and 14 days of culture. Six wells were plated for each condition and experiments were repeated three times for each cell line. Cells were also grown on a 1% agarose Petri dish in RPMI medium without serum for 24 hr and proteins were extracted with protein lysis buffer.\n\n### Soft agar colony assay\n\nCells (103/well) were suspended in 1 ml of 0.3% low gelling temperature agarose (Sigma, A9414) and plated onto a 1% agarose layer in three wells of a 6-well plate. When the 0.3% agarose solidified, the wells were covered in complete RPMI media and colonies were scored 4 weeks later.\n\n### Immunofluorescence\n\nMDA-MB-231 (5 \u00d7 104) were seeded onto coverslips placed in 24-well plate overnight. For studies on focal adhesions, the coverslips were first coated with 100 \u00b5g/ml matrigel (Sigma-Aldrich, E1270). After washing in PBS, cells were fixed in 4% PFA for 5 min and then washed once. Cells were permeabilized with 0.2% Triton X-100 (Pan Reac, A4975.01) diluted in PBS, for 10 min at room temperature and the blocking of non-specific binding sites was done using 2% bovine serum albumin (BSA) in PBS, for 1 hr at room temperature. Cells were then incubated with the primary antibody COX IV (Cell Signaling, 4850 S), cytochrome c (Cell Signaling, 12,963 S), Alexa Fluor 647 Phalloidin (Invitrogen, A22287), vinculin (Sigma-Aldrich, V9131), paxillin (BD Transduction Biosciences, 610052), or p65 at 1/400\u2013500 dilution in PBS, for 1 hr at room temperature or overnight at 4\u00b0C. Next, the cells were washed in PBS three times and then incubated with the appropriate secondary antibody coupled to Alexa Fluor (1/300, Thermo Fisher scientific, A21151 and A31571) for 1 hr at room temperature protected from light. The staining of nuclei was done with Hoechst 33,342 (10 \u00b5g/ml, Thermo Fisher Scientific, H1399) or with DAPI mounting medium (Vectashield). The coverslips were finally mounted using Fluoromount (Southern Biotech, 0100-01). Slides were left to dry overnight before image acquisition using a Zeiss Axio Imager microscope (Zeiss).\n\n### Anoikis resistance assay using the IncuCyte ZOOM imager\n\nMDA-MB-231 cells (104 cells) were plated in a 96-well Clear Round Bottom Ultra-Low Attachment Microplate (Corning, 7007). SytoxGreen (30 nM, Life, 1846592) was also added to the medium to stain apoptotic cells. Cells were then imaged every 60 min using the IncuCyte ZOOM imager.\n\n### VC3AI reporter-based caspase activation assay\n\nMDA-MB-231 VC3AI (control and constricted) cells (2 \u00d7 105) were collected from transwell assay and the mean fluorescence intensity of the green signal (VC3AI) was then determined by FACS Calibur flow cytometry (BD Biosciences, San Jose, CA, USA). Control cells were treated with 1 \u00b5M Actinomycin D as a positive control for cell death.\n\n### Fluorometric caspase-3/7 activity assay\n\nThe cell pellets were resuspended in Cell Lysis Buffer before evaluating the amount of protein in each sample. Twenty \u00b5g of proteins were then mixed with Reaction Buffer supplemented with DEVD-AFC substrate. After 1 hr of incubation at 37\u00b0C, the caspase-3/7 activity was assessed by fluorescence measurement. Caspase-3 activity was determined using the caspase-3/CPP32 Fluorometric assay kit according to the manufacturer\u2019s instructions (BioVision, K105).\n\n### Mitochondrial membrane potential assay\n\nMDA-MB-231 cells (105) were harvested and resuspended in 0.1 \u00b5M tetramethylrhodamine ethyl ester perchlorate (TMRE, Thermo Fisher Scientific, T669) for 30 min at 37\u00b0C. This fluorescent compound accumulates only in intact mitochondria and highlights the mitochondrial membrane potential of living cells. CCCP (carbonyl cyanide 3-chlorophenylhydrazone) was used as a mitochondrial membrane potential disruptor. When mitochondria are depolarized, leading to a decrease in membrane potential, TMRE accumulation is reduced. After washing, the membrane potential (mean fluorescence intensity of the red signal) was determined by flow cytometry.\n\n### Evaluation of mitochondrial superoxide levels\n\nMDA-MB-231 (control and constricted) cells (5 \u00d7 104) were harvested and resuspended in 5 \u00b5M Mitosox (Thermo Fisher Scientific, M36008) for 15 min at 37\u00b0C. After washing with PBS, the level of mitochondrial superoxide was determined by flow cytometry. Cells treated 1 hr with 500 \u00b5M H2O2 were used as a positive control for ROS production.\n\n### Measurement of total ROS in live cells using CellROX staining\n\nAfter plating 5 \u00d7 104 MDA-MB-231 cells (control and constricted) overnight in a 12-well plate, cells were trypsinized and treated 30 min at 37\u00b0C with 5 \u00b5M CellROX Deep Red reagent (Life Technologies, C10422) diluted in medium. This cell-permeant dye exhibits a strong fluorescence once oxidized by cytosolic ROS. Positive control of ROS consisted in cells treated 1 hr with 500 \u00b5M H2O2 (Sigma, H1009) before staining. Cells were then centrifuged and washed in PBS three times, before being resuspended in 200 \u00b5l of medium. The subsequent analysis was performed using FACS Calibur.\n\n### ATP assay\n\nATP levels were measured in control and constricted breast cancer cells (3 \u00d7 105 cells) using the ATP fluorometric assay kit (Sigma-Aldrich, MAK190), following the manufacturer\u2019s instructions. Cells treated 1 hr with 500 \u00b5M H2O2 served as a negative control. To evaluate the ATP concentration, an ATP standard curve from 0 to 10 nM was used.\n\n### Cell cycle analysis\n\n105 MDA-MB-231 cells (control and constricted) were washed once in PBS and pelleted in FACS tubes. Cold ethanol at 100% was added drop by drop while vortexing at a final concentration of 70% in PBS. Cells were then stored at \u221220\u00b0C until use. For FACS analysis, the cells were centrifuged at 1500 rpm to remove ethanol, rinsed with PBS and then centrifuged at 2200 rpm for 5 min. The pellet was then treated with 100 \u00b5g/ml ribonuclease A (A8950) in order to specifically stain DNA. Propidium iodide (Sigma, P4864) was added at 100 \u00b5g/ml and cells were immediately analysed by flow cytometry.\n\n### Cell compression\n\nMDA-MB-231 cells (3 \u00d7 106) were plated on 75-mm transwell inserts with a polycarbonate membrane pore size of 3 \u00b5m (Corning, 3420) that allows media and gas exchange during compression. Twenty-four hours later, a 2% agarose (Sigma, A9539-100G) disk was placed on top of the cells in order to prevent the direct contact with the plastic cup (3D printed by F. B.) placed above the agarose disk. A range of pressure was then tested for 24 hr (0, 200, 300, 400, and 600 Pa) by adding the appropriate lead weights in the plastic cup. At the end of the compression time, the cells under the agarose disk were washed and collected for further analysis.\n\n### Western blot analysis\n\nProteins were isolated by lysing cell pellets in RIPA lysis buffer (Cell Signaling, 9806 S) supplemented with phosphatase inhibitors complexes 2 and 3 (Sigma-Aldrich, P5726-1ML, P6044-1ML), dithiothreitol (DTT) 10 mM, and protease inhibitor cocktail (Sigma-Aldrich, 4693116001). The protein concentration was then determined using the Protein Assay dye Reagent Concentrate (BioRad, 50000006). Equal amounts (15\u201320 \u03bcg) of each sample were separated on 4\u201312% sodium dodecyl sulfate\u2013polyacrylamide gels (BioRad) under denaturating conditions (SDS\u2013PAGE sample loading buffer [VWR, GENO786-701] supplemented with 1 mM DTT). The gels were then transferred onto a nitrocellulose membrane using the Transblot Turbo Transfer System (BioRad, 1704150EDU). An incubation of 1 hr with Intercept blocking buffer (Licor, 927-70001) blocked non-specific binding sites before incubating the membranes with the primary antibody (1/1000 in Intercept T20 Antibody Diluent (Licor)) overnight at 4\u00b0C, under agitation. The primary antibodies used were: actin (Sigma-Aldrich, A3854), PARP-1 (Cell Signaling, 9532), caspase-3 (Cell Signaling, 9,62 S), GFP (Life, A11122), BAX (Cell Signaling, 2772 S), BAK (Cell Signaling, 12,105 S), HSP60 (Cell Signaling, 4870), K48-Ub (Cell Signaling, 8081 S), COX IV (Cell Signaling, 4850 S), cIAP1 (Cell Signaling, 7065T), cIAP2 (Cell Signaling, 3130T), XIAP (Cell Signaling, 14,334 S), HSC70 (Santa Cruz Biotechnology, sc-7298), H3K27ac (Diagenode, C15210016), H3K9me3 (Diagenode, C15200153), BCL-xL (Cell Signaling, 2764), BCL2 (Cell Signaling, 15071), MCL1 (Cell Signaling, 4572), and lamin A/C (Cell Signaling, 4777). The membranes were rinsed four times for 5 min in tris buffered saline, with Tween 20 (TBST) 0.1% and then incubated with appropriate secondary antibody coupled to IRDye 800CW or 680RD dye (Licor; 1/10,000) for 1 hr at room temperature under agitation and protected from light. Four extra washing steps in TBST 1% and one in TBS were performed before scanning the membrane by Odyssey Imaging System for near infrared detection.\n\n### Cycloheximide chase assay\n\nTo determine protein half-life, control and constricted MDA-MB-231 cells (5 \u00d7 105) were treated in ultra-low attachment conditions with cycloheximide (50 \u00b5g/ml) for different durations (0, 6, 16, 24, 33, and 48 hr) and protein extracts were analysed by Western blot.\n\n### Dual luciferase reporter assay\n\nMDA-MB-231 cells (105) were plated in 12-well plates for 24 hr and were then co-transfected with the NF-\u03baB luciferase reporter-containing plasmid and a Renilla plasmid using Lipofectamine 2000. After 48 hr of transfection, the luciferase activity was assessed with the Dual luciferase reporter assay (Promega, E1910) following the manufacturer\u2019s instructions. Firefly luciferase activity was then normalized against Renilla luciferase activity.\n\n### Holotomographic microscopy\n\nMDA-MB-231 cells (5 \u00d7 104) cells were seeded onto Fluorodishes (Ibidi GmbH, Gr\u00e4feling, Germany). Holotomographic microscopy was performed on the 3D Cell-Explorer Fluo (Nanolive, Ecublens, Switzerland) using a \u00d760 air objective at a wavelength of \u03bb = 520 nm. Physiological conditions for live-cell imaging were maintained using a top-stage incubator (Oko-lab, Pozzuoli, Italy). A constant temperature of 37\u00b0C and an air humidity saturation as well as a level of 5% CO2 were maintained throughout imaging. Refractory index maps were generated every 5 min for 1 hr. Images were processed with the software STEVE.\n\n### Single-cell migration assay\n\n103 breast cancer cells were seeded onto a 96-well ImageLock plate (Sartorius, 4379) and imaged for 24 hr using the IncuCyte ZOOM-based time-lapse microscopy. The acquired time-lapse images were treated with a manual tracking plugin using the ImageJ software. About 100 cells/condition were followed for 30 min in order to determine the accumulated distance and their velocity.\n\n### Wound-healing assay\n\nMDA-MB 231 cells (5.5 \u00d7 104) were seeded onto a 96-well imageLock plate (Sartorius, 4379) and grown for 24 hr until cell confluency was reached. A scratch was then performed in the cell monolayer using a WoundMaker (Sartorius, 4563), following the manufacturer\u2019s instructions. Wound closure was imaged and quantified using the IncuCyte ZOOM imaging system.\n\n### Invasion assay\n\nWells of a 96-well imageLock plate (4379, Sartorius) were first coated with 100 \u00b5g/ml of Matrigel (Sigma-Aldrich, E609-10 ml). After 1 hr, MDA-MB-231 cells (5.5 \u00d7 104) were seeded 24 hr prior to the assay. A wound was then performed in the cell monolayer with the WoundMaker and a new layer of Matrigel (800 \u00b5g/ml, 2.55 mm thickness) was deposited onto cells for 1 hr at 37\u00b0C to allow polymerization. The top of the cells was covered with complete medium and the invasion potential of cancer cells was evaluated and quantified using IncuCyte ZOOM-based time-lapse microscopy.\n\n### RNA sequencing\n\nRNA sequencing from control and mechanically challenged MDA-MB-231 cells was done by the CRCL Cancer Genomics core facility. The libraries were prepared from 600 ng total RNA using the TruSeq Stranded mRNA kit (Illumina) following the manufacturer\u2019s instructions. The different steps include the PolyA mRNA capture with oligo dT beads, cDNA double strand synthesis, adaptors ligation, library amplification, and sequencing. Sequencing was carried out with the NextSeq500 Illumina sequencer in 75-bp paired-end.\n\n### Bioinformatics analysis\n\nAll genomic data were analysed with R/Bioconductor packages, R version 4.0.3 (2020-10-10) [https://cran.r-project.org/https://cran.r-project.org/; http://www.bioconductor.org/] on a linux platform (x86_64-pc-linux-gnu [64-bit]).\n\nIllumina sequencing was performed on RNA extracted from triplicates of each condition. Standard Illumina bioinformatics analyses were used to generate fastq files, followed by quality assessment [MultiQC v1.7, https://multiqc.info/], trimming and demultiplexing. \u2018Rsubread\u2019 v2.4.3 was used for mapping to the hg38 genome and creating a matrix of RNA-Seq counts. Rsamtools v2.6.0 * was used to merge two bam files for each sample (run in two different lanes). Next, a DGElist object was created with the \u2018edgeR\u2019 package v3.32.1 [https://doi.org/10.1093/bioinformatics/btp616]. After normalization for composition bias, genewise exact tests were computed for differences in the means between groups, and differentially expressed genes were extracted based on a false discovery rate (FDR)-adjusted p value <0.05 and a minimum absolute fold change of 2. All raw and processed RNA-Seq data have been deposited at the Gene Expression Omnibus (GEO) repository, under accession number GSE176081.\n\nRsamtools: Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import. R package version 2.6.0. https://bioconductor.org/packages/Rsamtools.\n\n### Quantitative RT-PCR\n\nTotal RNA extraction was performed using the Nucleospin RNA Macherey-Nagel kit (740955) and quantified by NanoDrop. The conversion of messenger RNA into cDNA was performed using the Sensifast cDNA synthesis kit (Bioline, BIO-65053). cDNA was then amplified by PCR using specific primers for each gene designed with Primer-blast software (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) and listed in Table 2. GAPDH, ACTB, and HPRT were used as housekeeping genes. The thermal cycling steps included an initial polymerase activation step at 95\u00b0C for 2 min, followed by 40 cycles at 95\u00b0C, 5 s, and 60\u00b0C, 30 s. The qRT-PCR experiments were performed using SYBR Green and a Lightcycler96 (Roche, Indianapolis, USA).\n\n**Table 2.**\n List of qRT-PCR primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene of interest</th>\n      <th>Forward primer (5\u2032\u20133\u2032)</th>\n      <th>Reverse primer (5\u2032\u20133\u2032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GAPDH</td>\n      <td>TGCACCACCAACTGCTTAGC</td>\n      <td>GGCATGGACTGTGGTCATGAG</td>\n    </tr>\n    <tr>\n      <td>ACTB</td>\n      <td>AGAGCTACGAGCTGCCTGAC</td>\n      <td>AGCACTGTGTTGGCGTACAG</td>\n    </tr>\n    <tr>\n      <td>HPRT</td>\n      <td>TGAGGATTTGGAAAGGGTGT</td>\n      <td>GAGCACACAGAGGGCTACAA</td>\n    </tr>\n    <tr>\n      <td>XIAP</td>\n      <td>TGAGGGAGACGAAGGGACTT</td>\n      <td>TTGTCCACCTTTTCGCGCC</td>\n    </tr>\n    <tr>\n      <td>BIRC2</td>\n      <td>ATCGTGCGTCAGAGTGAGC</td>\n      <td>CTTCAGGGTTGTAAATCGCAGT</td>\n    </tr>\n    <tr>\n      <td>BIRC3</td>\n      <td>CTCTGGGCAGCAGGTTTACAA</td>\n      <td>AGGTCTCCATTTTGAGATGTTTTGA</td>\n    </tr>\n  </tbody>\n</table>\n\n### In vivo lung metastasis model and lung imaging\n\nMDA-MB-231 control and constricted cells (2.5 \u00d7 104) were suspended in 100 \u00b5l PBS and injected into the tail vein of NMRI nude female mice. To attain statistical significance of a p value between 0.05 and 0.02, we grafted 15 mice for each group. Sample-size calculation was performed as previously described (Fitts, 2011). The absence of mycoplasma in injected cells was controlled before injection in animals. Burden of lung metastasis was evaluated over time by X-ray microCT-Scan (Quantum FX, Perkin Elmer). Mice were anesthetized with a continuous flow of 2\u20134% isoflurane/air (1.5 l/min). The lungs were imaged in a longitudinal manner for 2 min with an exposure of 0.746 Gy and the obtained raw data were reconstructed with the following acquisition settings: a 24-mm FOV diameter, 512 slices, and 50 \u00b5m voxel. The resulting images were viewed and analysed using \u2018Analyze of Caliper\u2019 software (AnalyzeDirect) and the remaining healthy lung volume was quantified and 3D represented.\n\n### Histological analyses\n\nIf limiting points were not observed, mice were euthanized 8 weeks post-engraftment. Lungs were fixed in 4% buffered formalin, paraffin embedded, and three 3-\u00b5m sections separated by 300 \u00b5m were stained with hematoxylin\u2013eosin. The slides were scanned using the panoramic scan II (3D Histech). These were then analysed with CaseViewer 2.2.0.85100 software (3DHISTECH Ltd) for the detection of metastasis.\n\n### NK-mediated immune surveillance\n\nControl and constricted MDA-MB-231 cells were cocultured with human NK cells sorted from peripheral blood using the NK cell isolation Kit (Miltenyi Biotec 130-092-657) at the ratio of 1:20, in triplicate for each condition. Before co-culturing, tumour cells were pretreated with 10 \u00b5g/ml mitomycin for 1 hr to stop proliferation, and were incubated and tagged with CFSE (Invitrogen CellTrace, C34570) at 1 \u00b5l/ml for 20 min. Twenty-four hours later, cells in each condition were recovered by trypsin and stained intracellularly with Granzyme B (Biolegend, AF647, clone GB11). Flow cytometry was performed by BD LSR Fortessa HTS and data were analysed using GraphPad Prism V9.\n\n### Image analysis\n\nImage analysis was performed using the ImageJ software 1.52a.\n\n### Statistical analysis\n\nData are expressed as the mean \u00b1 standard error of the mean. A two-tailed Student\u2019s t-test was applied to compare two groups of data. Analyses were performed using the Prism 5.0 software (GraphPad).\n",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b9f59aad-6500-4f22-8b7f-7c30936d8b4e",
+      "submission_id": "794ed2f9-56cd-4c0e-bcb7-c30aa84eeb4b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edna Cukierman, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73150.sa0](https://doi.org/10.7554/eLife.73150.sa0)\n\nThe authors provide data supporting the notion that while cells expressing higher levels of cIAP1 or XIAP have no confined migratory advantage, these apoptosis inhibitors are upregulated in response to confined migration, which provides cells with a migratory and survival (e.g., anoikis resistance) advantage as well as means to evade NK cells, resulting in increased metastasis.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Edna Cukierman, https://ror.org/0567t7073 Fox Chase Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73150.sa1](https://doi.org/10.7554/eLife.73150.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting the paper \"Confined migration promotes cancer metastasis through resistance to anoikis and increased invasiveness\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nComments to the Authors:\n\nWe are sorry to say that, after consultation with the reviewers, we have decided that this work will not be considered further for publication by eLife.\n\nThe study proposes that confined migration renders breast cancer cells resistant to apoptosis via NFkappaB-dependent mechanisms. The consensus among the reviewers was that while the technical aspect of the study is impressive and experiments were very well performed, demonstrating the value of mimetic bioengineering approaches, the presented data did not include the necessary rigor to support the postulated central premise.\n\nSpecifically, while reviewers agreed that the team conducted a technically impressive study and that the bioengineering aspect of the system is exciting and merits broad use by investigators, there was also consensus regarding the numerous shortcomings of the study. The main concern was that the authors did not address whether the observed effects were \"selected\" by the provided conditions, or \"induced\" by the experimental settings. Two of the reviewers noted, and all agreed during the discussion period, that the lack of demonstration to whether confined migration is a causative or a selection process constitutes a major shortcoming. Further, added issues had to do with the incorrect use of statistical approaches, which often rendered biologically similar results as \"statistically significant\", while other times results that seemed rather biologically distinct were referred to statistically similar or unchanged. It was also noted that the discussion should address recent/similar reported observations made by another group (in Cell). There were some additional points where more data was required to support conclusions, such as whether expression levels of anti-apoptotic proteins are evident prior to or following confined migration (please note detailed provided points by each reviewer). It was hence the consensus that results, statistics, and conclusions need significant clarifications, and it was agreed that the scope of the needed revisions is substantial.\n\nWe wish you good luck with this work and we hope you will consider eLife for future submissions.\n\nReviewer #1:\n\nThis manuscript by Fanfone et al., describes the use an in vitro model of confined migration through transwells via a serum gradient, to study how mechanically challenged breast cancer cells acquire IAP-mediated resistance against anoikis. They demonstrate that these mechanically challenged breast cancer cells survive low-attachment culture to form spheroids. Additionally, the authors demonstrate that after confined migration NFkB is activated but potentially dispensable, as when it is blocked, it does not impact anoikis or spheroid formation. Also, mechanically challenged breast cancer cells demonstrate enhanced motility. Finally, the authors also demonstrate in vivo how mechanically challenged breast cancer cells were more metastatic competent to successfully colonize the lungs. This is an impressive manuscript that reveals how developing an in vitro model of confined migration provides much needed insight as to how microenvironmental constriction can in fact aid cancer cells in acquiring a pro-survival and enhanced migratory phenotype to successfully metastasize.\n\nThis is very interesting paper and the authors should be commended on all the work that was put into it. The conclusions were mostly supported by the data, and if some areas could be clarified would be strengthened.\n\nP6 line 194: do you mean cIAP2 over expression was dispensable?\n\nFigure 2g: is there a legend missing?\n\nSuppl Figb is confusing, could you clarify in the legend?\n\nP7 line 223: Change \"This\" to \"To\"\n\nP7 line 224: please fix extra paragraph spacing.\n\nP8 line 259: delete \"on\".\n\nFigure 3i and in the corresponding text: how thick is this Matrigel plug? Was there any cell invasion/migration in the z-plane that could be affecting some of them\n\nP8 line 280 or Figure 3m,n: could you clarify the following: When mechanically challenged multiple times, these cells appear to gain additional migratory capabilities though it was not clear if these serially mechanically challenged cells were migrating on a scratch wound or invading through a Matrigel plug. Also, in the text the authors write that serially mechanically challenged cells gain directionality but there were no data on directionality ratios. Could you extract that from your existing data?\n\nReviewer #2:\n\nThe authors present a detailed account of the anti-apoptotic characteristics of breast cancer cells that have undergone confined migration, specifically demonstrating an upregulation of cIAP1, cIAP2 and XIAP that promotes anoikis resistance. These cells were also more migratory and potentially displayed a resistance to immune surveillance.\n\nOn the whole the paper is technically well performed, although the conclusion that confined migration causes these effects needs further work to be validated. A key question is whether confined migration has caused these changes to occur within individual cells, or whether the assay design results in selection of cells with these characteristics.\n\nFor example, it may not be a surprise that selecting cells on the basis of their ability to migrate through a membrane would result in cells with an increased random migratory capacity? Therefore it may also be possible that these innately migratory cells have different expression patterns that include an upregulation of anti-apoptotic proteins? Therefore, there is a need to determine whether these cells were present in the population prior to confined migration, or whether these characteristics were acquired during the process.\n\nOn the whole, this manuscript is very well presented and well written. The results and clearly presented, although there is scope for a closer investigation of some of the claims of significance, as well as a need to address the causative vs selective nature of confined migration.\n\nThe main thing I would suggest is an experiment that is capable of determining whether the cells with upregulated cIAP1/cIAP2/XIAP (or decreased H3K27ac) are present within the population prior to the process of confined migration. If these cells are already present then it doesn't change the validity of the paper, but it completely changes the interpretation. If the cells are not present, and there is a change following confined migration, then the conclusions of the paper stand.\n\nThis could be done by endogenously tagging cIAP1/2/X, or by correlative, antibody based single-cell imaging of the two populations using some of the high content approaches already presented in this paper.\n\nReviewer #3:\n\nMechanical stress has been emerging as the key factor for activating pro-metastatic features, and authors hypothesize confined migration results in anoikis (death in suspension) and increased invasiveness.\n\nBy clever repurposing of transwell membranes, authors have generated a confined migration assay (CM), in which cells that have crossed the 3 micron-pore membrane are collected, cultured and further analyzed. The intensity of the CM-related response was shown to increase with number of CM rounds, and the response decays and reverts back 5 days after the CM event.\n\nThe resistance to anoikis achieved by CM was not conferred by compressive stress, or migration without constriction through 8-micron pores, and it was further demonstrated to rely on NFkB activation and IAP regulation at post-transcriptional level.\n\nUsing RNASeq, authors next show that while transcription is globally inhibited, resulting in lower nuclear stiffness, components of cell adhesion and regulation of NK-cell cytotoxicity were upregulated. Both of these functions were elegantly and succinctly confirmed by time-lapse measurements of cell velocities and immunofluorescence.\n\nFinally, in vivo experiments confirmed metastasis was increased in tail-vein injected cells post-CM.\n\nMajor comments:\n\n1. It would be important to demonstrate that, prior to confined migration, cells have similar features, and that CM is not selecting for subpopulation of cells (e.g. low lamin expression).\n\n2. A recent study by Nader et al., published in Cell 2021, notes that breast cancer cells exposed to confinement go through nuclear envelope breakage and TREX1-dependent DNA damage which causes increase in invasiveness. It would be important to describe this study in Discussion, and, if possible, link it to here presented results.\n",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "236d5e86-95f2-4f2e-8181-69cc35bc8a3d",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C1",
+      "claim": "MDA-MB-231 breast cancer cells are highly invasive and aggressive in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The human breast cancer cells MDA-MB-231 are highly invasive and aggressive in vitro and in vivo, and represent an ideal cellular model to study metastasis (Cailleau et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cailleau et al., 1974",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "7f659858-7261-4d86-a8fd-5a6c71c99414",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C2",
+      "claim": "CM did not affect cell viability of MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We ascertained that CM did not affect cell viability, by verifying the incorporation of Calcein AM (viability dye), and by showing that apoptosis-triggering cytochrome c was not released by the mitochondria of CM cells, as it co-localized with COX IV (mitochondrial marker) (Figure 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Calcein AM staining data shown in Figure 1B and cytochrome c/COX IV colocalization in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "f2b12ac1-5f88-4449-929f-e6cb47751ed0",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C3",
+      "claim": "CM-challenged MDA-MB-231 cells did not activate apoptotic effector caspases.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovered cells were viable and had not activated apoptotic effector caspases (Figure 1D), substantiating our previous result.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by caspase reporter data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b899a44b-bb77-441f-a2cd-13f627be04d2",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C4",
+      "claim": "CM cells have a negligible proportion of cells in subG1 phase right after constriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In a complementary approach, we determined cell cycle distribution and found that CM cells have a negligible proportion of cells in subG1 (apoptotic cells) right after constriction (Figure 1\u2014figure supplement 1C, D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell cycle analysis data shown in Figure 1\u2014figure supplement 1C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "aabf8e7c-2544-4631-8dca-f9c07b92e119",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C5",
+      "claim": "CM cells have a slight arrest in G1 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "while they have a slight arrest in G1 phase (Figure 1\u2014figure supplement 1E), this does not affect the overall cellular proliferation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell cycle data in Figure 1\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d3c55f2f-2108-40cc-8d04-82007111bb68",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C6",
+      "claim": "CM does not affect overall cellular proliferation of MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "while they have a slight arrest in G1 phase (Figure 1\u2014figure supplement 1E), this does not affect the overall cellular proliferation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by proliferation data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "0b8e8c68-5e66-43a1-924d-4d3d7d8259cc",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C7",
+      "claim": "CM cells displayed an unaltered mitochondrial membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CM cells displayed an unaltered mitochondrial membrane potential, ATP production and did not generate excessive reactive oxygen species (ROS) (Figure 1\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mitochondrial membrane potential data in Figure 1\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b5529eda-9597-46ab-8371-8b91c8651a44",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C8",
+      "claim": "CM cells displayed unaltered ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CM cells displayed an unaltered mitochondrial membrane potential, ATP production and did not generate excessive reactive oxygen species (ROS) (Figure 1\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATP production data in Figure 1\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "ee350d26-7eac-4047-b16a-949c698c0e0f",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C9",
+      "claim": "CM cells did not generate excessive reactive oxygen species (ROS).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, CM cells displayed an unaltered mitochondrial membrane potential, ATP production and did not generate excessive reactive oxygen species (ROS) (Figure 1\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS measurement data in Figure 1\u2014figure supplement 1H-I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e62d0d46-cbd2-4761-a280-999fa1085761",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C10",
+      "claim": "CM-challenged MDA-MB-231 cells survived and formed clonogenic structures in low attachment conditions more efficiently than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CM-challenged MDA-MB-231 cells survived, grew, and formed clonogenic structures in low attachment conditions, as evidenced by the spheres generated, more efficiently than control cells (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clonogenic assay data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d96ee680-7e64-4ff6-a676-30a53be33481",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C11",
+      "claim": "CM-challenged Hs578T breast cancer cells developed more colonies than control counterparts in low attachment conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was not restricted to MDA-MB-231 cells since CM-challenged Hs578T breast cancer cells also developed more colonies than control counterparts, indicating that CM-challenged cells had overcome anoikis (Figure 1\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by clonogenic assay data for Hs578T cells shown in Figure 1\u2014figure supplement 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "df400a28-41d8-4fb4-bfd8-17613a4c5f21",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C12",
+      "claim": "CM-challenged cells had overcome anoikis.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was not restricted to MDA-MB-231 cells since CM-challenged Hs578T breast cancer cells also developed more colonies than control counterparts, indicating that CM-challenged cells had overcome anoikis (Figure 1\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from increased colony formation in low attachment conditions shown in Figure 1F and Figure 1\u2014figure supplement 1J",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "aadd00f0-dd38-432e-9383-c6ac41bc2614",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C13",
+      "claim": "CM-challenged cells show increased survival when grown in soft agar.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also the case when cells are grown in soft agar, in an anchorage-independent manner (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by soft agar assay data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "af550589-f7b9-48b4-9716-cb51124b7115",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C14",
+      "claim": "Breast cancer cells undergoing CM had a survival advantage when grown in low attachment conditions as assessed by real-time imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, resistance to anoikis was assessed by IncuCyte Imager-based real-time imaging, using SYTOX Green dye exclusion, and again breast cancer cells undergoing CM had a survival advantage when grown in low attachment conditions (Figure 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IncuCyte imaging data shown in Figure 1H, I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e9a98b0f-fa86-414f-bdfa-4505e4237bdc",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C15",
+      "claim": "Resistance to anoikis following CM was transient.",
+      "claim_type": "EXPLICIT",
+      "source": "MDA-MB-231 cells were challenged by CM once and anoikis resistance was quantified at 3, 5, and 7 days post-CM, revealing that resistance to anoikis was transient (Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-course data shown in Figure 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "f028211e-d472-4339-a22b-bb4b309802c7",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C16",
+      "claim": "CM-challenged cancer cells had lower caspase-3 processing into the active p17 and p19 fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, CM-challenged cancer cells had lower caspase-3 processing into the active p17 and p19 fragments, whereas PARP-1 cleavage followed the same pattern (Figure 1K, L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1K, L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "61409962-60a5-40e8-af93-8383ffe4199b",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C17",
+      "claim": "PARP-1 cleavage was reduced in CM-challenged cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, CM-challenged cancer cells had lower caspase-3 processing into the active p17 and p19 fragments, whereas PARP-1 cleavage followed the same pattern (Figure 1K, L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1K, L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "3ea2613a-b9c1-4f30-9fd3-230dff8b111d",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C18",
+      "claim": "Lower effector caspase activation in CM cells was confirmed using a fluorometric caspase-3/7 assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower effector caspase activation was also confirmed using a fluorometric caspase-3/7 assay, demonstrating that inhibition was particularly important for cells grown in ultra-low attachment and soft agar conditions (further designated as anoikis-favouring conditions) (Figure 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorometric caspase assay data shown in Figure 1M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "325fd89c-72dd-47e1-a0ad-21455d74b8d1",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C19",
+      "claim": "Caspase inhibition was particularly important for CM cells grown in anoikis-favouring conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower effector caspase activation was also confirmed using a fluorometric caspase-3/7 assay, demonstrating that inhibition was particularly important for cells grown in ultra-low attachment and soft agar conditions (further designated as anoikis-favouring conditions) (Figure 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fluorometric caspase assay data shown in Figure 1M",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "1c29f3f4-66d1-40bd-9432-f087b57a5c35",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C20",
+      "claim": "Compression did not affect resistance to anoikis in MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to anoikis, as assessed by growing these cells in anoikis-favouring conditions, was not modified under compression (Figure 1N, O), suggesting that acquisition of resistance to anoikis may be specific to CM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by compression experiment data shown in Figure 1N, O",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "066bd4d6-fab1-459f-9a48-d718d7cf0207",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C21",
+      "claim": "Acquisition of resistance to anoikis may be specific to CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to anoikis, as assessed by growing these cells in anoikis-favouring conditions, was not modified under compression (Figure 1N, O), suggesting that acquisition of resistance to anoikis may be specific to CM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of CM and compression effects on anoikis resistance shown in Figure 1N, O",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "c49d826b-0d54-4d92-b120-2e47681ce784",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C22",
+      "claim": "Cancer cell migration through 8 \u00b5m in diameter microporous transwells did not confer cancer cells with resistance to anoikis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cancer cell migration through 8 \u00b5m in diameter microporous transwells, which does not impose cellular constriction, did not confer cancer cells with resistance to anoikis (Figure 1\u2014figure supplement 1M, N) and had no impact on caspase activation (Figure 1\u2014figure supplement 1O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 8 \u00b5m transwell experiment data shown in Figure 1\u2014figure supplement 1M, N",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "08939a37-1fcd-4c1f-968e-d5b052f70568",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C23",
+      "claim": "Migration through 8 \u00b5m transwells had no impact on caspase activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, cancer cell migration through 8 \u00b5m in diameter microporous transwells, which does not impose cellular constriction, did not confer cancer cells with resistance to anoikis (Figure 1\u2014figure supplement 1M, N) and had no impact on caspase activation (Figure 1\u2014figure supplement 1O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by caspase activation data shown in Figure 1\u2014figure supplement 1O",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "5bd49078-dbbb-4b46-9072-07322a644f3e",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C24",
+      "claim": "The expression of BCL-xL, BCL2, and MCL1 was unchanged in CM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the expression of several anti-apoptotic proteins such as BCL-xL, BCL2, and MCL1 was unchanged in CM cells, suggesting another resistance mechanism to anoikis (Figure 1\u2014figure supplement 1P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1\u2014figure supplement 1P",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "45abb5a0-e35b-44b3-812b-79b5f4e5e59f",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C25",
+      "claim": "CM-driven resistance to anoikis suggests a mechanism other than upregulation of BCL-xL, BCL2, and MCL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the expression of several anti-apoptotic proteins such as BCL-xL, BCL2, and MCL1 was unchanged in CM cells, suggesting another resistance mechanism to anoikis (Figure 1\u2014figure supplement 1P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from unchanged expression of BCL-xL, BCL2, and MCL1 shown in Figure 1\u2014figure supplement 1P",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "55cbd291-be0a-40ec-b2a9-05292de19231",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C26",
+      "claim": "IAPs such as cIAP1, cIAP2, and XIAP promote resistance to anoikis in several cancers through caspase inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies reported that IAPs such as cIAP1, cIAP2, and XIAP promote resistance to anoikis in several cancers, through caspase inhibition (Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "716b8fac-633e-4efc-ade9-d60293e82716",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C27",
+      "claim": "CM MDA-MB-231 cells grown in anoikis-favouring conditions showed an upregulation of cIAP1, cIAP2, and XIAP.",
+      "claim_type": "EXPLICIT",
+      "source": "This was tested by immunoblotting for cIAP1, cIAP2, and XIAP protein expression in CM MDA-MB-231 cells grown in anoikis-favouring conditions, which revealed an upregulation of all three IAPs (Figure 2A, left panel for densitometry analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "8b78f08f-58a5-43f7-a435-72ecebae185d",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C28",
+      "claim": "MDA-MB-231 cells subjected to compression had unaltered levels of IAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MDA-MB-231 cells subjected to compression or migration through 8 \u00b5m in diameter microporous transwells had unaltered levels of IAPs (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "abdc38c1-1c7e-40ce-b60e-8c776237fc03",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C29",
+      "claim": "MDA-MB-231 cells subjected to migration through 8 \u00b5m in diameter microporous transwells had unaltered levels of IAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MDA-MB-231 cells subjected to compression or migration through 8 \u00b5m in diameter microporous transwells had unaltered levels of IAPs (Figure 2\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "5f38d9d6-8af5-4592-af4c-c9b018137189",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C30",
+      "claim": "Enforced expression of cIAP1 significantly enhanced resistance to anoikis in MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enforced expression of cIAP1 and XIAP significantly enhanced resistance to anoikis in cells grown under anoikis-favouring conditions, while cIAP2 overexpression was dispensable (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overexpression experiment data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "f56b394a-7481-46c6-b73a-2ef5cf55b1ed",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C31",
+      "claim": "Enforced expression of XIAP significantly enhanced resistance to anoikis in MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enforced expression of cIAP1 and XIAP significantly enhanced resistance to anoikis in cells grown under anoikis-favouring conditions, while cIAP2 overexpression was dispensable (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overexpression experiment data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "2dde2032-9c7e-44d4-aba4-86724340c832",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C32",
+      "claim": "cIAP2 overexpression was dispensable for resistance to anoikis in MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Enforced expression of cIAP1 and XIAP significantly enhanced resistance to anoikis in cells grown under anoikis-favouring conditions, while cIAP2 overexpression was dispensable (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overexpression experiment data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "5fab887b-68af-48d2-b488-82e1e77706b2",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C33",
+      "claim": "IAP-depleted MDA-MB-231 cells lost their survival advantage following CM and growth in anoikis-favouring conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Following CM and growth in anoikis-favouring conditions, control cells (EV) displayed the expected resistance to anoikis, whereas IAP-depleted cells lost their survival advantage (Figure 2G and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CRISPR knockout experiment data shown in Figure 2G and Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "87b14ebb-6665-41f9-8536-d052da2d1b94",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C34",
+      "claim": "BV6 SMAC mimetic successfully depleted both cIAP1 and XIAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of a SMAC mimetic, one of several developed to specifically induce IAP degradation, namely BV6, successfully depleted both cIAP1 and XIAP (Figure 2H; Varfolomeev et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2H and citation to Varfolomeev et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d5f5a047-30e9-4036-b8b9-5d776221b385",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C35",
+      "claim": "BV6 SMAC mimetic abrogated the resistance to anoikis observed in CM-challenged breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it also abrogated the resistance to anoikis observed in CM-challenged breast cancer cells (Figure 2I, J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by BV6 treatment experiment data shown in Figure 2I, J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "3333c1de-976f-45cc-b3b0-918402c8bef6",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C36",
+      "claim": "IAPs mRNA expression was not increased in CM cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially performed qRT-PCR analysis to assess IAPs mRNA expression in CM cells and uncovered that their transcript expression was not increased compared to control cells, with a significant inhibition observed for cIAP2 and XIAP (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "651a67cf-896d-48f5-8cc4-c0377bf22e3c",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C37",
+      "claim": "cIAP2 and XIAP mRNA expression was significantly inhibited in CM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially performed qRT-PCR analysis to assess IAPs mRNA expression in CM cells and uncovered that their transcript expression was not increased compared to control cells, with a significant inhibition observed for cIAP2 and XIAP (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "59d00d38-df9b-4e06-a44b-444add17ef35",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C38",
+      "claim": "Constricted cells displayed an accumulation of ubiquitinated proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Constricted cells displayed an accumulation of ubiquitinated proteins, indicating a possible bottleneck for protein degradation in CM-stressed cells (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by K48-ubiquitin Western blot data shown in Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "4b478d1b-76ef-4c38-a905-bb125c7e72f1",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C39",
+      "claim": "XIAP protein showed a slower decrease in CM cells compared to control cells in cycloheximide chase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "When focusing on XIAP, which was the most differentially expressed IAP in CM-challenged cells, we observed a slower decrease in XIAP protein in CM cells compared to control cells, suggesting a lower proteasomal degradation (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cycloheximide chase assay data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e4b3efb7-1765-440a-b40d-d1bfffa3c0b4",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C40",
+      "claim": "XIAP may be more stable in CM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "XIAP may thus be more stable in CM cells, which might explain its higher expression following CM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cycloheximide chase assay data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "0414be4f-028b-4b9d-b5d4-040ab3b9880a",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C41",
+      "claim": "CM increases p65 nuclear translocation in MDA-MB-231 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether CM activates NF-\u03baB, we first assessed p65 translocation from the cytoplasm to the nucleus upon CM, and showed an increase in cells displaying nuclear p65 (Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "ed8af278-efe4-4063-8593-52f9a4ebe188",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C42",
+      "claim": "CM increases NF-\u03baB transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two luciferase-based NF-\u03baB reporter constructs, CM was also found to increase NF-\u03baB transcriptional activity (Figure 2\u2014figure supplement 1H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by luciferase reporter assay data shown in Figure 2\u2014figure supplement 1H, I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "4a1ba577-8c3f-4541-982e-573faec0a4ec",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C43",
+      "claim": "Blocking the NF-\u03baB pathway in CM cells did not prevent their resistance to anoikis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in these settings, blocking the NF-\u03baB pathway in CM cells did not prevent their resistance to anoikis (Figure 2\u2014figure supplement 1K,L ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by I\u03baBSR expression experiment data shown in Figure 2\u2014figure supplement 1K, L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "6b5489c5-7a66-4272-ad28-4d2ccaadb198",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C44",
+      "claim": "TNF\u03b1 treatment can upregulate cIAP2 but had no effect on cIAP1 and XIAP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the artificial activation of NF-\u03baB pathway using TNF\u03b1 treatment, can upregulate cIAP2 as previously described, yet it had no effect on both cIAP1 and XIAP (Figure 2\u2014figure supplement 1M, N; Diessenbacher et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TNF\u03b1 treatment experiment data shown in Figure 2\u2014figure supplement 1M, N and citation to Diessenbacher et al., 2008",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "bd65e372-30c1-4498-a31d-31aef3ce9d42",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C45",
+      "claim": "CM-driven mechanical stress is characterized by NF-\u03baB activation, which is not involved in the survival advantage observed in CM-challenged cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that CM-driven mechanical stress is characterized by NF-\u03baB activation, which is not involved in the survival advantage observed in CM-challenged cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from I\u03baBSR blocking experiments shown in Figure 2\u2014figure supplement 1K, L",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "002d0ad8-babf-4f2f-a72d-6fab9a2658ed",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C46",
+      "claim": "IAPs high expressing cells (EV cells) showed the same CM capacity as IAPs KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2L, the score was similar to the initial 50:50 ratio, with IAPs high expressing cells (the EV cells) showing the same CM capacity as IAPs KO cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by competition assay data shown in Figure 2L",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "6154e001-5dce-4125-959a-b5a6b03fb04f",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C47",
+      "claim": "CM does not select for cells having a different expression of IAPs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that CM is not selecting for cells having a different expression of IAPs or displaying resistance to anoikis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from competition assay data shown in Figure 2L, N",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "4d9ea83e-e4b4-45a0-8b6d-83fa689df11b",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C48",
+      "claim": "CM does not select for cells displaying resistance to anoikis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that CM is not selecting for cells having a different expression of IAPs or displaying resistance to anoikis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from competition assay data shown in Figure 2N",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "1a5d1a3c-de17-44bf-b541-e5ec9da3d2dd",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C49",
+      "claim": "Resistance to anoikis driven by CM mechanical stress relies on the pro-survival function of IAPs, regulated at the post-transcriptional level following mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, resistance to anoikis driven by CM mechanical stress relies on the pro-survival function of IAPs, regulated at the post-transcriptional level following mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experiments showing IAP upregulation at protein but not mRNA level, and functional rescue experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "15230c1e-91c9-4cdb-a111-593a9b73e339",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C50",
+      "claim": "CM cells displayed an almost global inhibition of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, CM cells displayed an almost global inhibition of transcription, making their transcriptional profile distinct from control cells (Figure 3\u2014figure supplement 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figure 3\u2014figure supplement 1A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "05a8c4a3-1160-4c1b-886e-1470d291d7c8",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C51",
+      "claim": "CM cells had a lower histone H3 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with their overall transcriptional inhibition, CM cells had a lower histone H3 acetylation and a reduction in heterochromatin (lower H3K9 me3), which may indicate a decrease in nuclear stiffness, which is needed when cells navigate through narrow spaces (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "6a194d7a-dbc2-46b2-89c2-f7d9e53e36a9",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C52",
+      "claim": "CM cells had a reduction in heterochromatin (lower H3K9 me3).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with their overall transcriptional inhibition, CM cells had a lower histone H3 acetylation and a reduction in heterochromatin (lower H3K9 me3), which may indicate a decrease in nuclear stiffness, which is needed when cells navigate through narrow spaces (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 3\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "6bd640f4-4f1c-4244-9def-bddd91e9fedd",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C53",
+      "claim": "Reduced H3K9 me3 in CM cells may indicate a decrease in nuclear stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with their overall transcriptional inhibition, CM cells had a lower histone H3 acetylation and a reduction in heterochromatin (lower H3K9 me3), which may indicate a decrease in nuclear stiffness, which is needed when cells navigate through narrow spaces (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculated based on histone modification data shown in Figure 3\u2014figure supplement 1C and established knowledge about chromatin and nuclear stiffness",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "933bfc16-d743-40db-b1cf-894ed81fbc5c",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C54",
+      "claim": "Several pathways associated with cellular motility such as 'Extracellular matrix organization', 'Cell-matrix adhesion', or 'Cell adhesion' were significantly overrepresented in CM cells.",
+      "claim_type": "EXPLICIT",
+      "source": "When querying the Gene Ontology (GO) Biological Processes using both Enrichr (Figure 3\u2014figure supplement 1D) and g:Profiler (Figure 3\u2014figure supplement 1E), several pathways associated with cellular motility such as 'Extracellular matrix organization', 'Cell-matrix adhesion', or 'Cell adhesion' were significantly overrepresented in CM cells (Chen et al., 2013; Raudvere et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GO analysis data shown in Figure 3\u2014figure supplement 1D, E and citations to Chen et al., 2013; Raudvere et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "7bd4ec94-8ef4-4c76-82e3-1f538f08dd78",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C55",
+      "claim": "Cancer cells subjected to CM had an increased number of stress fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed an increased number of stress fibres following CM, in addition to more abundant filopodia (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by F-actin staining data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "c047daa1-687a-446b-b38a-8c3266a18244",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C56",
+      "claim": "Cancer cells subjected to CM had more abundant filopodia.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed an increased number of stress fibres following CM, in addition to more abundant filopodia (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by F-actin staining data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "7dc6ca7b-98b9-41ff-947c-1866d655d81f",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C57",
+      "claim": "Cancer cells subjected to CM had a higher variation in cell area over time.",
+      "claim_type": "EXPLICIT",
+      "source": "By using Nanolive imager-based cellular tomography, we uncovered that cancer cells subjected to CM had a higher variation in cell area over time (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Nanolive imaging data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d9f38957-6294-43ee-82d5-5945e8bbdfc7",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C58",
+      "claim": "CM-challenged cancer cells displayed a significantly higher velocity than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CM-challenged cancer cells displayed a significantly higher velocity and travelled further than control cells (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell migration tracking data shown in Figure 3C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d873dd58-df96-475e-aea1-ac8c5c19c669",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C59",
+      "claim": "CM-challenged cancer cells travelled further than control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CM-challenged cancer cells displayed a significantly higher velocity and travelled further than control cells (Figure 3C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell migration tracking data shown in Figure 3C-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b540679c-15f1-4457-a012-cf49099e3bae",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C60",
+      "claim": "The increased single-cell migration observed in CM cells was not correlated with the number of focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased single-cell migration observed was not correlated with the number of focal adhesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from focal adhesion quantification data shown in Figure 3\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "713ba1a4-1644-4eaa-873b-6eb49a184802",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C61",
+      "claim": "Breast cancer cells subjected to a single round of CM did not outperform control cells in collective cell migration and invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to single-cell migration, breast cancer cells subjected to a single round of CM did not outperform control cells when assessed by collective cell migration and invasion (Figure 3F\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by wound healing and invasion assay data shown in Figure 3F-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e2801be9-f0b5-4940-8995-720e88b862da",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C62",
+      "claim": "MDA-MB-231 cells subjected to three consecutive CM passages had a significant gain in chemotaxis and collective cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "As cells encounter several mechanical challenges during metastasis, we then imposed three consecutive CM passages on MDA-MB-231 cells, and found that challenged cells had a significant gain in chemotaxis and collective cell migration (Figure 3L\u2013N, experimental setup in Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by serial CM experiment data shown in Figure 3L-N",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "08b883d2-4161-433c-94ff-b566346e0965",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C63",
+      "claim": "MDA-MB-231 cells with higher levels of lamin A have a lower capacity to perform CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming previous studies, we also found that MDA-MB-231 cells with higher levels of lamin A have a lower capacity to perform CM, most probably due to increased nuclear stiffness (Figure 3\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lamin A overexpression competition assay data shown in Figure 3\u2014figure supplement 1J and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "78dd461c-a68e-4300-8269-212ce4a8094b",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C64",
+      "claim": "The expression of lamin A/C in cancer cells right after CM was similar to that found in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, when the expression of lamin A/C was tested in cancer cells right after CM, it was similar to that found in control cells, implying once more that CM does not select for cells with certain characteristics, such as lower expression of lamins (Figure 3\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 3\u2014figure supplement 1K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "be45a3bc-2d29-4747-ba54-8d03a1277116",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C65",
+      "claim": "CM does not select for cells with lower expression of lamins.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, when the expression of lamin A/C was tested in cancer cells right after CM, it was similar to that found in control cells, implying once more that CM does not select for cells with certain characteristics, such as lower expression of lamins (Figure 3\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from lamin A/C expression data shown in Figure 3\u2014figure supplement 1K",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "dfd8bf09-86fd-474c-8791-5054cd653796",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C66",
+      "claim": "Breast cancer cells were partially protected from NK-mediated cytotoxicity following CM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, breast cancer cells were partially protected from the NK-mediated cytotoxicity following CM (Figure 3O, CFSElow population represents apoptotic cells), consistent with lower levels of toxic granzyme B incorporation (Figure 3P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NK cell co-culture experiment data shown in Figure 3O, P",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "672ba647-3277-4277-9e0b-699101811ee8",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C67",
+      "claim": "CM cells showed lower levels of toxic granzyme B incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, breast cancer cells were partially protected from the NK-mediated cytotoxicity following CM (Figure 3O, CFSElow population represents apoptotic cells), consistent with lower levels of toxic granzyme B incorporation (Figure 3P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by granzyme B incorporation data shown in Figure 3P",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "edc1f39b-9465-48da-b6ff-3c458e52d207",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C68",
+      "claim": "A single event of CM has a profound effect on single-cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that a single event of CM has a profound effect on single-cell migration, while several rounds of CM enhance cancer cell chemotaxis and collective migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from single-cell migration data shown in Figure 3C-E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "fe2316c6-f9c0-49e4-9002-2a102595eee2",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C69",
+      "claim": "Several rounds of CM enhance cancer cell chemotaxis and collective migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate that a single event of CM has a profound effect on single-cell migration, while several rounds of CM enhance cancer cell chemotaxis and collective migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from serial CM data shown in Figure 3L-N",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e808b66b-1a01-4f56-8ae7-e3da59d084e2",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C70",
+      "claim": "CM contributes to evasion from NK-mediated immune surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CM contributes to evasion from NK-mediated immune surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from NK cell co-culture data shown in Figure 3O, P",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "f4003322-0cf9-4249-90f4-62de383acf95",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C71",
+      "claim": "Metastasis incidence was significantly higher for CM cells 6 weeks post-engraftment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that metastasis incidence was significantly higher for CM cells 6 weeks post-engraftment (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo metastasis incidence data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "699930c6-59ae-4202-a7a6-c8d78551a5b8",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C72",
+      "claim": "The volume of healthy lung tissue in mice engrafted with CM breast cancer cells was considerably smaller than control counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the volume of healthy lung tissue in mice engrafted with CM breast cancer cells was considerably smaller than control counterparts, indicating their increased aggressiveness (Figure 4B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microCT imaging data shown in Figure 4B, C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "55121e2b-12da-4d5b-b541-d38e179393e7",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C73",
+      "claim": "Breast cancer cells experiencing three consecutive rounds of CM showed increased aggressiveness in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this was also the case for breast cancer cells experiencing three consecutive rounds of CM (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vivo data shown in Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "85356d6f-14ef-4fcf-a99f-8f437363bdf6",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C74",
+      "claim": "The increased aggressiveness of constricted cells was quantified by measuring the area of metastatic lesions following H&E staining.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the increased aggressiveness of constricted cells was also quantified by measuring the area of metastatic lesions following H&E staining (Figure 4D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histological analysis data shown in Figure 4D, E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "ebf32aca-4c95-4eb8-8113-f0e9b16fcf8c",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C75",
+      "claim": "A single event of CM was sufficient to enhance lung metastatic colonization in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data demonstrate that a single event of CM was sufficient to enhance lung metastatic colonization in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from in vivo metastasis data shown in Figure 4A-E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "839b257d-b359-46c8-b3de-0110cfc81a19",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C76",
+      "claim": "CM is characterized by resistance to anoikis, increased single-cell motility, NF-\u03baB activation and escape from immune surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we show here that CM is characterized by resistance to anoikis, increased single-cell motility, NF-\u03baB activation and escape from immune surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experimental results throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "eb1b8932-60a2-4ac8-95d8-6dd15cf6bf04",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C77",
+      "claim": "The resistance to anoikis following CM relies on pro-survival IAPs, regulated at the post-transcriptional level following mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Although independent of NF-\u03baB activation, the resistance to anoikis relies on pro-survival IAPs, regulated at the post-transcriptional level following mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from IAP expression and functional studies shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b0c61e91-1d4c-4a42-a186-2dafa55bb70e",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C78",
+      "claim": "CM promotes cancer metastasis through resistance to anoikis and increased invasiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Confined migration promotes cancer metastasis through resistance to anoikis and increased invasiveness",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion inferred from all experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "0239c3aa-d86b-4e5d-9fc3-c10667ff9b02",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C79",
+      "claim": "The majority of cancer-related deaths arise following metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of cancer-related deaths arise following metastasis (Dillek\u00e5s et al., 2019; Chaffer and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dillek\u00e5s et al., 2019; Chaffer and Weinberg, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "968eba4e-6932-4f58-a80a-42ad77ea48ca",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C80",
+      "claim": "No efficient therapeutic strategies currently prevent metastasis formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the mechanisms driving cancer cell migration and invasion are well documented, with a clear understanding of epithelial\u2013mesenchymal transition and the metastatic niche, no efficient therapeutic strategies currently prevent metastasis formation (Lambert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lambert et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "6fe97e0b-7a0d-4356-94a1-976ed17d075b",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C81",
+      "claim": "Metastasis is largely incurable.",
+      "claim_type": "EXPLICIT",
+      "source": "Metastasis is thus largely incurable, yet this lengthy process can take years and the therapeutic window is therefore large enough to envisage its targeting (Mehlen and Puisieux, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mehlen and Puisieux, 2006 and established clinical knowledge",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "e66ff556-87be-4393-9d75-3a319a7a26e4",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C82",
+      "claim": "Compressive forces on cancer cells can reach up to 10kPa in pancreatic ductal adenocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "During early tumour development, excessive cell proliferation, massive extracellular matrix deposition, or cancer-associated fibroblasts exert compressive forces on cancer cells that can reach up to 10kPa in pancreatic ductal adenocarcinoma (Nia et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nia et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "8892387b-9af3-4466-b499-81506bba2920",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C83",
+      "claim": "CM can break the nuclear envelope and trigger DNA damage and mutagenesis if the breaks are not efficiently repaired.",
+      "claim_type": "EXPLICIT",
+      "source": "These events, known as confined migration (CM), have dramatic consequences on cancer cells and might even break the nuclear envelope and trigger DNA damage and mutagenesis if the breaks are not efficiently repaired (Raab et al., 2016; Denais et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Raab et al., 2016; Denais et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "0df83128-9530-4c79-b9ca-92b7e45ed99c",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C84",
+      "claim": "Repeated nuclear deformations and loss of nuclear envelope integrity can activate an invasive programme.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, repeated nuclear deformations and loss of nuclear envelope integrity can activate an invasive programme, and engage the pro-oncogenic Ras/MAPK signalling pathway (Nader et al., 2021; Rudzka et al., 2021; Rudzka et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nader et al., 2021; Rudzka et al., 2021; Rudzka et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "15bffd15-0da3-49a1-a05e-1494424b31f4",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C85",
+      "claim": "Most CTCs are eliminated by apoptosis in a process called anoikis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most CTCs are eliminated by apoptosis in a process called anoikis, occurring when cells detach from the extracellular matrix (Shen and Kang, 2020; Paoli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shen and Kang, 2020; Paoli et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "0db6bc7d-cdbe-476c-8291-b06cebac2a36",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C86",
+      "claim": "Anoikis has evolved as an efficient physiological barrier for preventing the formation of metastatic colonies by CTCs reaching target organs.",
+      "claim_type": "EXPLICIT",
+      "source": "By rapidly engaging either the death receptors or the mitochondrial pathway of apoptosis, anoikis has evolved as an efficient physiological barrier for preventing the formation of metastatic colonies by CTCs reaching target organs (Shen and Kang, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shen and Kang, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "1e5d1862-dca9-4ed5-9195-6cf9302bc014",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C87",
+      "claim": "Cancer cells developed strategies to evade anoikis such as overly activated Ras/ERK and PI3K/Akt pathways, engaging the tyrosine kinase receptor TrkB, inactivation of E-cadherin and p53 or enhanced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, cancer cells developed strategies to evade anoikis such as overly activated Ras/ERK and PI3K/Akt pathways, engaging the tyrosine kinase receptor TrkB, inactivation of E-cadherin and p53 or enhanced autophagy (de Sousa Mesquita et al., 2017; Douma et al., 2004; Derksen et al., 2006; Fung et al., 2008; Chavez-Dominguez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to de Sousa Mesquita et al., 2017; Douma et al., 2004; Derksen et al., 2006; Fung et al., 2008; Chavez-Dominguez et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "98a3fce4-0d38-497f-a205-ba8c9db33881",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C88",
+      "claim": "This is the first study showing that mechanical stress increases IAPs expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these proteins were described to promote resistance to anoikis in several cancers. Nevertheless this is the first study showing that mechanical stress increases IAPs expression, especially cIAP1 and XIAP, likely by modifying their protein turnover (Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim of novelty made by the authors based on their findings and comparison to existing literature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "266fb57a-f379-420a-b472-8090a5aadea3",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C89",
+      "claim": "Several SMAC mimetics such as birinapant and LCL161 are in phase two clinical trials for ovarian cancer and myeloma.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, several SMAC mimetics such as birinapant and LCL161 are in phase two clinical trials for ovarian cancer and myeloma (source: https://clinicaltrials.gov/).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to clinicaltrials.gov database",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "53ad104d-fc3e-4a1b-a99d-37f011beafeb",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C90",
+      "claim": "Resistance to anoikis could be promoted by shear stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been reported that resistance to anoikis could be promoted by shear stress, we report here for the first time that CM, a mechanical stress in the metastatic cascade happening before the fluid shear stress, can also induce resistance to anoikis in breast cancer cells (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "85c12fac-c12d-412c-92d5-90f48df31408",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C91",
+      "claim": "This is the first report that CM can induce resistance to anoikis in breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been reported that resistance to anoikis could be promoted by shear stress, we report here for the first time that CM, a mechanical stress in the metastatic cascade happening before the fluid shear stress, can also induce resistance to anoikis in breast cancer cells (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim of novelty made by the authors based on their findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "eb55b31c-e6aa-4442-b39e-ff85013fb587",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C92",
+      "claim": "Invasive foci in breast cancer are enriched in constricted cells characterized by deformed nuclei and frequent TREX1-dependant DNA lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study from Nader et al. elegantly showed that invasive foci in breast cancer are enriched in constricted cells characterized by deformed nuclei and frequent TREX1-dependant DNA lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to Nader et al. study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "92bd9adb-b498-423d-b482-bf3bb87a48bf",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "claim_id": "C93",
+      "claim": "Constricted cells in invasive foci were in a partial EMT state that enhanced their invasion potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Relevant to our study, these cells were in a partial EMT state that enhanced their invasion potential (Nader et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nader et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0846303d-d9b6-426c-9316-9cc9a9d98860",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Confined migration (CM) through 3 \u00b5m pores does not affect cell viability, apoptosis, or basic cellular functions in MDA-MB-231 breast cancer cells. CM cells showed no cytochrome c release, no caspase activation, negligible subG1 population, only slight G1 arrest without affecting proliferation, and maintained normal mitochondrial function, ATP production, and ROS levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C9 provide converging evidence from multiple complementary assays (Calcein AM viability, cytochrome c localization, caspase reporter, cell cycle analysis, mitochondrial function, ATP, ROS) all demonstrating that CM does not compromise cell viability or trigger apoptosis. The data are internally consistent and use appropriate positive controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CM confers breast cancer cells with transient resistance to anoikis. CM-challenged MDA-MB-231 and Hs578T cells showed significantly increased survival and clonogenic growth in low attachment conditions, soft agar, and real-time imaging assays. This resistance was transient, declining by 7 days post-CM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 demonstrate anoikis resistance through multiple independent assays (clonogenic assays, soft agar, IncuCyte imaging) in two cell lines, with appropriate time-course analysis showing transience. The convergence of multiple methodologies and cell lines strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "87e32f8f-d930-48f9-a11c-e5ba8f4f0ba0",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CM-challenged cells exhibit reduced apoptotic caspase activation. CM cells showed decreased caspase-3 processing to active fragments, reduced PARP-1 cleavage, and lower caspase-3/7 activity, particularly when grown in anoikis-promoting conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 provide consistent evidence from Western blot and fluorometric assays showing reduced caspase activation. The data are internally consistent and the observation that inhibition is most pronounced in anoikis-promoting conditions logically connects to the anoikis resistance phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "aece4e97-18f3-4e0f-a0e0-b774b07c009c",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Resistance to anoikis is specific to confined migration and not induced by compression or non-constrictive migration. Cells subjected to compression (200-600 Pa) or migration through 8 \u00b5m pores showed no change in anoikis resistance or caspase activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 provide important negative controls demonstrating specificity. The compression experiments use defined pressures and the 8 \u00b5m transwell controls for migration without constriction. These controls strengthen the conclusion that the phenotype is specific to CM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "096f47bb-e907-4a92-98e6-f2a80762c5e2",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CM-driven anoikis resistance does not involve upregulation of BCL-xL, BCL2, or MCL1, suggesting an alternative mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 show unchanged expression of canonical anti-apoptotic BCL-2 family proteins by Western blot, appropriately ruling out one potential mechanism and motivating investigation of alternative pathways (IAPs).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "64dd228c-a550-40cb-8979-e2fae655e1ee",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CM-induced anoikis resistance is mediated by upregulation of IAP proteins (cIAP1, cIAP2, XIAP). CM cells in anoikis conditions showed increased IAP expression, while compression or 8 \u00b5m migration did not. Overexpression of cIAP1 or XIAP (but not cIAP2) enhanced anoikis resistance, CRISPR knockout of IAPs abolished CM-induced resistance, and SMAC mimetic BV6 treatment restored anoikis sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 provide comprehensive evidence through gain-of-function (overexpression), loss-of-function (CRISPR knockout), and pharmacological inhibition (BV6) approaches. The specificity controls (compression, 8 \u00b5m migration) and the differential effects of individual IAPs strengthen the mechanistic conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IAP upregulation in CM cells occurs at the post-transcriptional level. IAP mRNA levels were not increased (cIAP2 and XIAP mRNA were decreased), CM cells showed accumulation of ubiquitinated proteins, and XIAP protein showed slower degradation in cycloheximide chase assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 provide evidence for post-transcriptional regulation through qRT-PCR, ubiquitination analysis, and protein stability assays. The disconnect between mRNA and protein levels, combined with altered protein stability, supports the post-transcriptional mechanism. However, only n=2 for the cycloheximide chase is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CM activates NF-\u03baB signaling, but this activation is not required for CM-induced anoikis resistance. CM increased p65 nuclear translocation and NF-\u03baB transcriptional activity, but I\u03baBSR expression blocking NF-\u03baB did not prevent anoikis resistance. TNF\u03b1-induced NF-\u03baB activation upregulated cIAP2 but not cIAP1 or XIAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 demonstrate NF-\u03baB activation through multiple assays but appropriately show it is dispensable for anoikis resistance through I\u03baBSR blocking experiments. The TNF\u03b1 control showing differential IAP regulation strengthens the conclusion that NF-\u03baB is not the primary driver of cIAP1/XIAP upregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "88795b5f-bba3-4a28-9cb0-2875d2e70a7a",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CM does not select for pre-existing cells with high IAP expression or anoikis resistance. Competition assays mixing IAP-high (EV) and IAP-KO cells, or control and anoikis-resistant cells, showed equal CM capacity with maintained 50:50 ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 address an important alternative hypothesis through well-designed competition experiments. The maintained 50:50 ratios argue against selection and support that CM actively induces the phenotype. This is a critical control for the study's conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "22c0f9ad-4c47-4697-8750-ec1a861b1984",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CM induces global transcriptional inhibition and chromatin remodeling. RNA-seq showed widespread transcriptional downregulation, with decreased H3K27 acetylation and H3K9 trimethylation, potentially indicating reduced nuclear stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are well-supported by RNA-seq and Western blot data. However, C53's interpretation about nuclear stiffness is speculative and appropriately hedged with 'may indicate.' The connection between histone modifications and nuclear stiffness, while plausible, is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CM enhances single-cell migration and cytoskeletal remodeling. GO analysis showed enrichment of motility-related pathways. CM cells displayed increased stress fibers and filopodia, higher cell area variation, and significantly increased migration velocity and distance traveled. This was independent of focal adhesion number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C60 provide converging evidence from transcriptomics, cytoskeletal imaging, live-cell imaging, and single-cell tracking. The multiple complementary approaches and quantitative migration data strongly support enhanced single-cell motility. The focal adhesion analysis appropriately rules out one potential mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b83e74f0-b463-4eae-80eb-0e18e35cbd1a",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Single CM event enhances single-cell migration but not collective migration, while multiple CM rounds enhance both. One CM passage increased single-cell migration but not wound healing or invasion. Three consecutive CM passages significantly enhanced chemotaxis and collective migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 and C68-C69 demonstrate an important dose-response relationship between CM frequency and phenotypic effects. The distinction between single-cell and collective migration effects is well-supported by appropriate assays (single-cell tracking vs. wound healing/invasion).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "41c05593-c428-4756-8bc2-5b47cee05020",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CM does not select for cells with lower lamin A/C expression. While lamin A overexpression reduced CM capacity, lamin A/C expression in CM cells was similar to controls, indicating CM does not enrich for low-lamin cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 provide another important control against selection mechanisms. The lamin A overexpression experiment confirms its role in CM capacity, while the expression analysis in CM cells argues against selection, consistent with the IAP competition experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "076147fc-ee1b-4373-9f88-a46bc4270a58",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CM confers partial protection from NK cell-mediated cytotoxicity. CM cells showed reduced apoptosis and lower granzyme B incorporation when co-cultured with NK cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide flow cytometry evidence for reduced NK-mediated killing. However, the evaluation is limited to one NK:tumor ratio (1:20) and does not assess NK cell function, cytokine production, or expression of NK ligands on tumor cells. Additional mechanistic studies would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CM enhances metastatic colonization in vivo. Mice injected with CM-challenged cells showed significantly higher metastasis incidence, reduced healthy lung volume, and larger metastatic lesions. This was observed for both single and triple CM passages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C75 provide strong in vivo validation through multiple quantitative measures (incidence, microCT volume, histological area). The use of 15 mice per group provides adequate statistical power. The consistency between single and triple CM further validates the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "dc50a59f-2791-4375-9201-e45379d383dd",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CM promotes metastasis through IAP-mediated anoikis resistance, increased motility, NF-\u03baB activation, and immune evasion. The anoikis resistance mechanism involves post-transcriptional IAP regulation independent of NF-\u03baB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 represent the integrated conclusions of the study. These summary claims are well-supported by the collective evidence from all prior results, though they represent synthesis rather than new data. The mechanistic pathway is clearly delineated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "3ae523e7-553a-49ec-a3eb-306294863f10",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context: cancer metastasis is the major cause of cancer deaths, mechanical forces affect cancer cells during metastasis, CM can cause nuclear damage, anoikis eliminates most CTCs, and cancer cells develop various anoikis evasion strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C26, C79-C87, C90, C92-C93) are appropriately supported by citations to established literature and provide necessary context for the study. They represent accepted knowledge in the field rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "abf6a3aa-b941-4b5c-94db-eedb63b203be",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Novelty claims: This is the first study showing mechanical stress increases IAP expression and the first report that CM induces anoikis resistance in breast cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C91 represent novelty assertions by the authors. While the experimental data support that CM increases IAPs and induces anoikis resistance, the claim of being 'first' depends on comprehensive literature knowledge. The authors appropriately distinguish their CM model from previously reported shear stress effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    },
+    {
+      "id": "b2e71151-9f32-445c-a882-35d26c5383b8",
+      "content_id": "4ad55b13-6f04-4467-aacd-e7efb2de3089",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "SMAC mimetics birinapant and LCL161 are in phase 2 clinical trials for ovarian cancer and myeloma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by reference to clinicaltrials.gov, providing clinical context for the therapeutic relevance of targeting IAPs. This is verifiable information that supports the translational potential of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:33:09.344013Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f659858-7261-4d86-a8fd-5a6c71c99414",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "f2b12ac1-5f88-4449-929f-e6cb47751ed0",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "b899a44b-bb77-441f-a2cd-13f627be04d2",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "aabf8e7c-2544-4631-8dca-f9c07b92e119",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "d3c55f2f-2108-40cc-8d04-82007111bb68",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "0b8e8c68-5e66-43a1-924d-4d3d7d8259cc",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "b5529eda-9597-46ab-8371-8b91c8651a44",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "ee350d26-7eac-4047-b16a-949c698c0e0f",
+      "result_id": "0846303d-d9b6-426c-9316-9cc9a9d98860"
+    },
+    {
+      "claim_id": "e62d0d46-cbd2-4761-a280-999fa1085761",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "d96ee680-7e64-4ff6-a676-30a53be33481",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "df400a28-41d8-4fb4-bfd8-17613a4c5f21",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "aadd00f0-dd38-432e-9383-c6ac41bc2614",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "af550589-f7b9-48b4-9716-cb51124b7115",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "e9a98b0f-fa86-414f-bdfa-4505e4237bdc",
+      "result_id": "d466aa7f-e16f-48b3-9bcd-a2ec0d5039af"
+    },
+    {
+      "claim_id": "f028211e-d472-4339-a22b-bb4b309802c7",
+      "result_id": "87e32f8f-d930-48f9-a11c-e5ba8f4f0ba0"
+    },
+    {
+      "claim_id": "61409962-60a5-40e8-af93-8383ffe4199b",
+      "result_id": "87e32f8f-d930-48f9-a11c-e5ba8f4f0ba0"
+    },
+    {
+      "claim_id": "3ea2613a-b9c1-4f30-9fd3-230dff8b111d",
+      "result_id": "87e32f8f-d930-48f9-a11c-e5ba8f4f0ba0"
+    },
+    {
+      "claim_id": "325fd89c-72dd-47e1-a0ad-21455d74b8d1",
+      "result_id": "87e32f8f-d930-48f9-a11c-e5ba8f4f0ba0"
+    },
+    {
+      "claim_id": "1c29f3f4-66d1-40bd-9432-f087b57a5c35",
+      "result_id": "aece4e97-18f3-4e0f-a0e0-b774b07c009c"
+    },
+    {
+      "claim_id": "066bd4d6-fab1-459f-9a48-d718d7cf0207",
+      "result_id": "aece4e97-18f3-4e0f-a0e0-b774b07c009c"
+    },
+    {
+      "claim_id": "c49d826b-0d54-4d92-b120-2e47681ce784",
+      "result_id": "aece4e97-18f3-4e0f-a0e0-b774b07c009c"
+    },
+    {
+      "claim_id": "08939a37-1fcd-4c1f-968e-d5b052f70568",
+      "result_id": "aece4e97-18f3-4e0f-a0e0-b774b07c009c"
+    },
+    {
+      "claim_id": "5bd49078-dbbb-4b46-9072-07322a644f3e",
+      "result_id": "096f47bb-e907-4a92-98e6-f2a80762c5e2"
+    },
+    {
+      "claim_id": "45abb5a0-e35b-44b3-812b-79b5f4e5e59f",
+      "result_id": "096f47bb-e907-4a92-98e6-f2a80762c5e2"
+    },
+    {
+      "claim_id": "716b8fac-633e-4efc-ade9-d60293e82716",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "8b78f08f-58a5-43f7-a435-72ecebae185d",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "abdc38c1-1c7e-40ce-b60e-8c776237fc03",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "5f38d9d6-8af5-4592-af4c-c9b018137189",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "f56b394a-7481-46c6-b73a-2ef5cf55b1ed",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "2dde2032-9c7e-44d4-aba4-86724340c832",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "5fab887b-68af-48d2-b488-82e1e77706b2",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "87b14ebb-6665-41f9-8536-d052da2d1b94",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "d5f5a047-30e9-4036-b8b9-5d776221b385",
+      "result_id": "64dd228c-a550-40cb-8979-e2fae655e1ee"
+    },
+    {
+      "claim_id": "3333c1de-976f-45cc-b3b0-918402c8bef6",
+      "result_id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a"
+    },
+    {
+      "claim_id": "651a67cf-896d-48f5-8cc4-c0377bf22e3c",
+      "result_id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a"
+    },
+    {
+      "claim_id": "59d00d38-df9b-4e06-a44b-444add17ef35",
+      "result_id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a"
+    },
+    {
+      "claim_id": "4b478d1b-76ef-4c38-a905-bb125c7e72f1",
+      "result_id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a"
+    },
+    {
+      "claim_id": "e4b3efb7-1765-440a-b40d-d1bfffa3c0b4",
+      "result_id": "c0cb4b29-15fa-4c92-bff0-4bbe28a2448a"
+    },
+    {
+      "claim_id": "0414be4f-028b-4b9d-b5d4-040ab3b9880a",
+      "result_id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78"
+    },
+    {
+      "claim_id": "ed8af278-efe4-4063-8593-52f9a4ebe188",
+      "result_id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78"
+    },
+    {
+      "claim_id": "4a1ba577-8c3f-4541-982e-573faec0a4ec",
+      "result_id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78"
+    },
+    {
+      "claim_id": "6b5489c5-7a66-4272-ad28-4d2ccaadb198",
+      "result_id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78"
+    },
+    {
+      "claim_id": "bd65e372-30c1-4498-a31d-31aef3ce9d42",
+      "result_id": "eebc0be2-a8d3-4875-a72b-6976fe40ce78"
+    },
+    {
+      "claim_id": "002d0ad8-babf-4f2f-a72d-6fab9a2658ed",
+      "result_id": "88795b5f-bba3-4a28-9cb0-2875d2e70a7a"
+    },
+    {
+      "claim_id": "6154e001-5dce-4125-959a-b5a6b03fb04f",
+      "result_id": "88795b5f-bba3-4a28-9cb0-2875d2e70a7a"
+    },
+    {
+      "claim_id": "4d9ea83e-e4b4-45a0-8b6d-83fa689df11b",
+      "result_id": "88795b5f-bba3-4a28-9cb0-2875d2e70a7a"
+    },
+    {
+      "claim_id": "15230c1e-91c9-4cdb-a111-593a9b73e339",
+      "result_id": "22c0f9ad-4c47-4697-8750-ec1a861b1984"
+    },
+    {
+      "claim_id": "05a8c4a3-1160-4c1b-886e-1470d291d7c8",
+      "result_id": "22c0f9ad-4c47-4697-8750-ec1a861b1984"
+    },
+    {
+      "claim_id": "6a194d7a-dbc2-46b2-89c2-f7d9e53e36a9",
+      "result_id": "22c0f9ad-4c47-4697-8750-ec1a861b1984"
+    },
+    {
+      "claim_id": "6bd640f4-4f1c-4244-9def-bddd91e9fedd",
+      "result_id": "22c0f9ad-4c47-4697-8750-ec1a861b1984"
+    },
+    {
+      "claim_id": "933bfc16-d743-40db-b1cf-894ed81fbc5c",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "7bd4ec94-8ef4-4c76-82e3-1f538f08dd78",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "c047daa1-687a-446b-b38a-8c3266a18244",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "7dc6ca7b-98b9-41ff-947c-1866d655d81f",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "d9f38957-6294-43ee-82d5-5945e8bbdfc7",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "d873dd58-df96-475e-aea1-ac8c5c19c669",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "b540679c-15f1-4457-a012-cf49099e3bae",
+      "result_id": "5c6f5f3b-75a7-4c81-88b9-6308ebe97a83"
+    },
+    {
+      "claim_id": "713ba1a4-1644-4eaa-873b-6eb49a184802",
+      "result_id": "b83e74f0-b463-4eae-80eb-0e18e35cbd1a"
+    },
+    {
+      "claim_id": "e2801be9-f0b5-4940-8995-720e88b862da",
+      "result_id": "b83e74f0-b463-4eae-80eb-0e18e35cbd1a"
+    },
+    {
+      "claim_id": "edc1f39b-9465-48da-b6ff-3c458e52d207",
+      "result_id": "b83e74f0-b463-4eae-80eb-0e18e35cbd1a"
+    },
+    {
+      "claim_id": "fe2316c6-f9c0-49e4-9002-2a102595eee2",
+      "result_id": "b83e74f0-b463-4eae-80eb-0e18e35cbd1a"
+    },
+    {
+      "claim_id": "08b883d2-4161-433c-94ff-b566346e0965",
+      "result_id": "41c05593-c428-4756-8bc2-5b47cee05020"
+    },
+    {
+      "claim_id": "78dd461c-a68e-4300-8269-212ce4a8094b",
+      "result_id": "41c05593-c428-4756-8bc2-5b47cee05020"
+    },
+    {
+      "claim_id": "be45a3bc-2d29-4747-ba54-8d03a1277116",
+      "result_id": "41c05593-c428-4756-8bc2-5b47cee05020"
+    },
+    {
+      "claim_id": "dfd8bf09-86fd-474c-8791-5054cd653796",
+      "result_id": "076147fc-ee1b-4373-9f88-a46bc4270a58"
+    },
+    {
+      "claim_id": "672ba647-3277-4277-9e0b-699101811ee8",
+      "result_id": "076147fc-ee1b-4373-9f88-a46bc4270a58"
+    },
+    {
+      "claim_id": "e808b66b-1a01-4f56-8ae7-e3da59d084e2",
+      "result_id": "076147fc-ee1b-4373-9f88-a46bc4270a58"
+    },
+    {
+      "claim_id": "f4003322-0cf9-4249-90f4-62de383acf95",
+      "result_id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57"
+    },
+    {
+      "claim_id": "699930c6-59ae-4202-a7a6-c8d78551a5b8",
+      "result_id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57"
+    },
+    {
+      "claim_id": "55121e2b-12da-4d5b-b541-d38e179393e7",
+      "result_id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57"
+    },
+    {
+      "claim_id": "85356d6f-14ef-4fcf-a99f-8f437363bdf6",
+      "result_id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57"
+    },
+    {
+      "claim_id": "ebf32aca-4c95-4eb8-8113-f0e9b16fcf8c",
+      "result_id": "4550ac94-1e9f-4ded-9f25-9fc4cb773e57"
+    },
+    {
+      "claim_id": "839b257d-b359-46c8-b3de-0110cfc81a19",
+      "result_id": "dc50a59f-2791-4375-9201-e45379d383dd"
+    },
+    {
+      "claim_id": "eb1b8932-60a2-4ac8-95d8-6dd15cf6bf04",
+      "result_id": "dc50a59f-2791-4375-9201-e45379d383dd"
+    },
+    {
+      "claim_id": "b0c61e91-1d4c-4a42-a186-2dafa55bb70e",
+      "result_id": "dc50a59f-2791-4375-9201-e45379d383dd"
+    },
+    {
+      "claim_id": "236d5e86-95f2-4f2e-8181-69cc35bc8a3d",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "0239c3aa-d86b-4e5d-9fc3-c10667ff9b02",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "968eba4e-6932-4f58-a80a-42ad77ea48ca",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "6fe97e0b-7a0d-4356-94a1-976ed17d075b",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "e66ff556-87be-4393-9d75-3a319a7a26e4",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "8892387b-9af3-4466-b499-81506bba2920",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "0df83128-9530-4c79-b9ca-92b7e45ed99c",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "15bffd15-0da3-49a1-a05e-1494424b31f4",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "0db6bc7d-cdbe-476c-8291-b06cebac2a36",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "1e5d1862-dca9-4ed5-9195-6cf9302bc014",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "55cbd291-be0a-40ec-b2a9-05292de19231",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "53ad104d-fc3e-4a1b-a99d-37f011beafeb",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "eb55b31c-e6aa-4442-b39e-ff85013fb587",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "92bd9adb-b498-423d-b482-bf3bb87a48bf",
+      "result_id": "3ae523e7-553a-49ec-a3eb-306294863f10"
+    },
+    {
+      "claim_id": "98a3fce4-0d38-497f-a205-ba8c9db33881",
+      "result_id": "abf6a3aa-b941-4b5c-94db-eedb63b203be"
+    },
+    {
+      "claim_id": "85c12fac-c12d-412c-92d5-90f48df31408",
+      "result_id": "abf6a3aa-b941-4b5c-94db-eedb63b203be"
+    },
+    {
+      "claim_id": "266fb57a-f379-420a-b472-8090a5aadea3",
+      "result_id": "b2e71151-9f32-445c-a882-35d26c5383b8"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,586 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C146"
+    ],
+    "result": "Thyroid hormone (TH) is necessary for timely mineralization and development of the proximal femur head (FH) in mice. X-ray and \u03bcCT imaging show that Tshr-/- hypothyroid mice exhibit underdevelopment of all three proximal femur structures (greater trochanter, FH, lesser trochanter), with a distinct gap between the FH and acetabulum. TH injection (T3/T4) on days 5-14 rescues this developmental defect, restoring normal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C146 provide converging evidence from multiple imaging modalities (X-ray, \u03bcCT) demonstrating the FH defect in Tshr-/- mice and its rescue by TH treatment. The experimental design includes appropriate controls (Tshr+/- mice) and a rescue experiment that directly tests TH dependence. The timing of TH treatment corresponds to the period when serum TH levels rise in wild-type mice, supporting a direct causal role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "Mineralization at the proximal FH is delayed by approximately 10 days compared to the distal femoral epiphysis. Nano-CT imaging reveals that while the distal femur shows mineralization by day 10, the FH does not show mineral staining (Alizarin red, Von Kossa) until day 21 in euthyroid mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34, and C35 are supported by complementary imaging techniques (nano-CT and histological staining) that consistently demonstrate the temporal delay in FH mineralization. The data are internally consistent across multiple detection methods, strengthening the conclusion about differential timing of mineralization at the two sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Histological analysis reveals distinct differences in tissue composition and cellular markers between the mineralizing FH and distal femur SOC. The FH shows greater cartilage area in Tshr-/- mice, while the distal femur SOC exhibits TRAP-positive cells (osteoclasts) that are absent in the FH, even at day 21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are supported by multiple histological staining methods (Safranin O, toluidine blue, Alizarin red, Von Kossa, TRAP) that consistently demonstrate compositional differences between the two sites. The absence of TRAP staining in the FH across all timepoints and genotypes is particularly notable and well-documented. However, quantification of cartilage area differences would strengthen claim C33.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "RT-qPCR analysis on day 10 reveals delayed chondrocyte maturation in hypothyroid mice at both femoral ends, with more substantial delay at the FH. Markers of mature chondrocytes (Ihh, Tnfsf11, Sp7, Col10a1, Alpl, Mmp13) are reduced, while immature markers (Shh, Sox9) are increased significantly only at the FH. Mineralization genes (Ibsp, Spp1, Acp5) are reduced at the distal femur but unaffected at the FH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by RT-qPCR data from Figure 3A-D showing consistent patterns of gene expression changes. The differential response between FH and distal femur is well-documented, with statistical significance indicated. The data align with the histological findings of delayed maturation. However, the manuscript should clarify sample sizes and whether biological or technical replicates are shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "On day 21, hypothyroid mice continue to show delayed maturation profiles with increased immature markers (Sox9, Acan) and altered expression of maturation and mineralization genes. TH treatment rescues many of these defects, including restoration of Ihh, Bglap2, Alpl, and Acp5 expression, though some genes show site-specific responses (e.g., Runx2 and Ctnnb1 increased only at FH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by RT-qPCR data from Figure 3E-H demonstrating persistent maturation delays and TH-mediated rescue. The data show both common and site-specific TH effects, which is biologically plausible. Statistical significance is indicated, though the opposite effects of TH on Ibsp at the two sites (C53) warrant further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Hypoxia signaling genes show differential regulation at the FH versus distal femur in day 10 Tshr-/- mice. While Hif1a expression is unchanged at both sites, Epas1 and Vegfa are reduced at the FH and not restored by TH treatment. Tgfa shows site-specific negative regulation by TH at the FH only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by RT-qPCR data from Figure 3A-B. The differential regulation of hypoxia pathway genes between the two sites is clearly documented. However, the functional significance of these changes and why TH fails to rescue Epas1 and Vegfa at the FH requires further investigation. The authors acknowledge this as an area for future study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Temporal comparison of gene expression between FH and distal femur in euthyroid mice reveals that reduced expression of maturation markers (Ihh, Tnfsf11, Sp7, Mmp13, Ibsp, Alpl) at day 10 is consistent with delayed FH maturation, while by day 21 these genes are expressed at higher levels in the FH, consistent with active mineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by RT-qPCR data from Figure 3I showing temporal changes in gene expression ratios between FH and distal femur. The interpretation that day 21 represents active mineralization at the FH is consistent with the histological data. This temporal analysis effectively demonstrates the developmental delay at the FH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Immunofluorescence analysis reveals a distinct collagen expression pattern during FH mineralization. COL2A1 is present at day 10 and is replaced by COL10A1 by day 17, which persists during active mineralization. Remarkably, COL1A1 is not detected during FH mineralization, contrasting with the SOC. In Tshr-/- mice, COL2A1 domain is expanded and COL10A1 is decreased, consistent with delayed maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are strongly supported by immunofluorescence data in Figure 4 showing clear spatial and temporal patterns of collagen expression. The absence of COL1A1 in the mineralizing FH is a key finding that distinguishes cartilage calcification from endochondral ossification. The data in Tshr-/- mice provide additional validation of the maturation delay. Appropriate controls and multiple timepoints strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Matrix metalloproteinases show differential expression patterns between FH and SOC. MMP13 is expressed in a non-overlapping domain with COL2A1 on day 10, but overlaps both COL2A1 and COL10A1 on days 17 and 21, with minimal overlap with COL1A1 in bone. MMP9 is detected in bone tissue and strongly at the SOC but is absent from FH chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by immunofluorescence data in Figure 5 showing clear spatial patterns of MMP expression. The differential expression of MMP9 between SOC and FH is particularly notable and consistent with the different mineralization mechanisms. The persistence of MMP13 in Tshr-/- FH (C68) supports its role in chondrocyte maturation independent of mineralization status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Carbonic anhydrase 2 (CAR2) is expressed in osteoblasts at the tibia SOC and in bone beneath the FH, but is not detected in FH chondrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by immunofluorescence data in Figure 5. The absence of CAR2 in FH chondrocytes is consistent with the lack of osteoblast involvement in FH mineralization. This finding aligns with the overall model of direct cartilage mineralization at the FH versus osteoblast-mediated mineralization at the SOC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Non-collagenous extracellular matrix proteins involved in mineralization (IBSP, BGLAP2, DMP1, SPP1) show differential expression between SOC and FH. All are highly expressed in SOC and bone below the FH, but only BGLAP2 is found in day 10 FH (at lower levels than bone). SPP1 is expressed at high levels in mineralizing FH chondrocytes on day 17. None are expressed in Tshr-/- FH chondrocytes. ALPL activity is detected in mineralizing FH regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by immunofluorescence data in Figure 6 and ALPL histochemistry in Figure 6\u2014figure supplement 1. The differential expression patterns are clearly documented and consistent across multiple proteins. The absence of DMP1 in FH at all timepoints (C77) is particularly notable. However, the claim that IBSP signal in FH is 'much less' than in bone (C76) would benefit from quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SOX9 and RUNX2 show distinct expression patterns during FH development. SOX9 is limited to chondrocytes, absent from hypertrophic chondrocytes in the tibia growth plate on day 10, but present throughout the FH at all stages. RUNX2 is expressed in SOC osteoblasts and maturing chondrocytes at the tibia growth plate, but not detected in FH chondrocytes until day 17. Both are expressed in Tshr-/- FH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by immunofluorescence data in Figure 7. The delayed appearance of RUNX2 in FH chondrocytes (day 17) compared to its early expression at the SOC is a key finding that helps explain the developmental delay. The persistent expression of SOX9 in FH at all stages is consistent with maintained chondrocyte identity during mineralization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "SP7 shows strong expression at the SOC and pre-hypertrophic chondrocytes of the tibia growth plate, but is minimally expressed in FH chondrocytes until day 21 and is absent in Tshr-/- FH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by immunofluorescence data in Figure 7. The minimal/absent SP7 expression in FH chondrocytes is a critical finding that distinguishes FH cartilage calcification from SOC endochondral ossification. This is one of the key mechanistic differences identified in the study and is well-documented across multiple timepoints and genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "DLX3 and DLX5 show differential expression patterns between FH and SOC. Both are detected in mineralizing bone proximally and distally. DLX3 is expressed in FH chondrocytes prior to and during mineralization, while DLX5 expression is weak or absent in the mineralizing region of the FH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by immunofluorescence data in Figure 7. The differential expression of DLX3 (present) versus DLX5 (weak/absent) in mineralizing FH is a key finding that helps explain the different transcriptional programs operating at the two sites. This is consistent with the in vitro knockdown experiments showing antagonistic roles for these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "HIF1A is expressed in differentiating chondrocytes of both proximal femur and tibia but to a reduced extent in mineralizing bone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by immunofluorescence data in Figure 7. The expression pattern is clearly documented, though the functional significance of reduced HIF1A in mineralizing bone versus its presence in differentiating chondrocytes is not fully explored. This finding is consistent with the RT-qPCR data showing unchanged Hif1a levels in Tshr-/- mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "THRA1 shows minimal expression in proximal FH chondrocytes on day 10 but is expressed in day 10 chondrocytes and pre-hypertrophic chondrocytes of the proximal tibia. A gradual increase in THRA1 expression is observed in the FH on days 17 and 21, with reduced expression in Tshr-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by immunofluorescence data in Figure 8. The delayed expression of THRA1 in FH compared to the tibia is a key finding that may explain the delayed response to TH at the FH. The temporal correlation between THRA1 expression (day 17) and onset of FH mineralization supports a causal relationship. This is one of the most important mechanistic insights of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "THRB1 is expressed on day 10 FH in subarticular chondrocytes and in an expanded domain at the FH on days 17 and 21. It is also expressed in chondrocytes surrounding the SOC and in pre-hypertrophic chondrocytes of the growth plate in the proximal tibia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by immunofluorescence data in Figure 8. The expression pattern of THRB1 differs from THRA1, being present earlier at the FH. The functional significance of having THRB1 but minimal THRA1 at day 10 FH is not fully explored but suggests potential receptor-specific effects of TH signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "IHH expression is found in differentiating chondrocytes of both FH and tibia in a pattern that overlaps COL10A1 expression, consistent with IHH being a direct target of TH action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by immunofluorescence data in Figure 8 and citations to previous work (Aghajanian et al., 2017; Xing et al., 2016) establishing IHH as a TH target. The overlap with COL10A1 expression is consistent with IHH's known role in chondrocyte maturation. This finding connects TH signaling to downstream effectors of chondrocyte differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In ATDC5 chondrocyte progenitors, TH treatment alone represses Sox9 and Col2a1 while inducing Col10a1 and mineralization modulators (Ibsp, Spp1, Bglap2, Alpl, Dmp1). Ascorbic acid (AA) induces Runx2 and Sp7. Combined AA/TH treatment represses Dlx3, induces Dlx5, and enhances expression of Col10a1, Spp1, Bglap2, Alpl, and Dmp1 compared to AA alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by RT-qPCR data from ATDC5 cells in Figure 9A. The data show clear and consistent effects of TH, AA, and their combination on chondrocyte differentiation markers. Statistical significance is indicated. However, the manuscript should clarify whether these are biological or technical replicates and provide more details on the culture conditions and timing of treatments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In the absence of TH and/or AA treatment, RUNX2, SP7, and DLX3 positively regulate chondrocyte maturation markers (Col10a1, Mmp13) but inhibit matrix mineralization markers (Ibsp, Spp1, Dmp1, Mgp). Bone formation markers (Bglap2, Alpl) are regulated antagonistically by DLX3 (negative) and DLX5 (positive). RUNX2 knockdown reduces Sp7 but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by knockdown experiments in ATDC5 cells shown in Figure 9B-F and Figure 9\u2014figure supplement 1. The data reveal complex transcriptional networks with both positive and negative regulatory relationships. The hierarchical relationship between RUNX2 and SP7 (C110-C111) is consistent with established knowledge. However, the manuscript should provide more details on knockdown efficiency and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "SP7 perturbation positively regulates Car2 but does not affect Acp5 in ATDC5 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by gain and loss of function experiments in Figure 9\u2014figure supplement 2. The positive regulation of Car2 by SP7 is consistent with the expression of CAR2 at the SOC (where SP7 is present) but not in FH chondrocytes (where SP7 is minimal/absent). This provides a mechanistic link between SP7 expression and osteoblast-specific functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In the presence of TH, RUNX2 positively regulates Sox9, Sp7, Dlx3, and Dlx5. DLX3 negatively regulates Sp7 and Dlx6. SP7 negatively regulates Dlx3 while DLX5 positively regulates Dlx3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by knockdown experiments in TH-treated ATDC5 cells shown in Figure 9C-F. The data reveal complex regulatory networks among transcription factors that are modulated by TH. The mutual antagonism between SP7 and DLX3 (C115, C116) is particularly interesting and may explain their differential roles at FH versus SOC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "TH and AA have distinct and combinatorial effects on collagen gene expression in ATDC5 cells. TH alone represses Col2a1 and induces Col10a1 and Col1a1. In the presence of AA, TH promotes Col2a1 and Col10a1 but not Col1a1. In TH-treated cultures, Col10a1 is positively regulated by SP7 and DLX5 but negatively by RUNX2. In AA/TH cultures, all four transcription factors positively regulate Col10a1 and Col1a1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are supported by RT-qPCR data from ATDC5 cells in Figure 9A and knockdown experiments. The context-dependent regulation of collagen genes by TH and transcription factors is well-documented. However, the biological significance of the switch from negative to positive regulation by RUNX2 depending on AA presence requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "TH represses Mmp13 expression regardless of AA involvement. In TH-treated cultures, Mmp13 is positively regulated by RUNX2, SP7, and DLX3. In AA/TH-treated cultures, Mmp13 is positively regulated by RUNX2 and DLX3 but negatively regulated by DLX5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by RT-qPCR data from ATDC5 cells in Figure 9A and knockdown experiments in Figure 9C and E. The consistent repression of Mmp13 by TH across conditions is notable, as is the switch in DLX5 regulation from neutral to negative in the presence of AA. These findings help explain the differential regulation of matrix remodeling at FH versus SOC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Mmp9 is repressed by TH only in the presence of AA and is negatively regulated by RUNX2 and DLX3 in both TH+AA treated cultures and control cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by RT-qPCR data in Figure 9A and knockdown experiments in Figure 9 and Figure 9\u2014figure supplement 1. The AA-dependent repression of Mmp9 by TH is consistent with the absence of MMP9 in FH chondrocytes (where AA-like conditions may not be present). The consistent negative regulation by RUNX2 and DLX3 across conditions is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "In the presence of TH, mineralization modulators (Ibsp, Spp1, Bglap2, Alpl, Dmp1) are induced, with complex regulation by transcription factors. RUNX2 and SP7 negatively regulate Ibsp and Spp1, with collaboration from DLX5 (at Ibsp) and DLX3 (at Spp1). DLX3 positively regulates Ibsp while DLX5 positively regulates Spp1. Alpl is positively regulated by RUNX2 and DLX5, negatively by DLX3. Dmp1 is negatively regulated by RUNX2 and SP7, positively by DLX5. DLX5 promotes TH-mediated Bglap2 regulation, while AA effects on Bglap2 are mediated by DLX3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 are supported by knockdown experiments in TH-treated ATDC5 cells shown in Figure 9C-F. The data reveal intricate regulatory networks with both positive and negative regulation of mineralization genes. The antagonistic roles of DLX3 and DLX5 in regulating different mineralization genes is a key finding. However, the complexity of these interactions suggests that additional validation experiments (e.g., chromatin immunoprecipitation) would strengthen the conclusions about direct versus indirect regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Double knockdown experiments reveal that the effects of DLX3 and DLX5 on Mmp9 and Bglap2 expression in the presence of TH are dependent on SP7. The inhibitory effect of DLX3 on Mmp9 is lost in the absence of SP7. DLX5 but not DLX3 mediates TH effects on Bglap2 in the presence of SP7, and this positive effect is lost when SP7 is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by double knockdown experiments in Figure 9G. These experiments provide critical evidence for functional interactions between SP7 and DLX factors in regulating gene expression. The SP7-dependent effects of DLX factors help explain why the FH (with minimal SP7) and SOC (with high SP7) have different gene expression profiles despite both responding to TH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Ex vivo culture experiments with isolated FH and distal femur chondrocytes show that TH preferentially induces Sp7 in the distal femur and Dlx3 in the FH, while negatively regulating Dlx3 at the distal femur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by RT-qPCR data from ex vivo cultured chondrocytes in Figure 9\u2014figure supplement 3. These experiments provide important validation that the differential responses to TH observed in vivo are intrinsic properties of the chondrocytes from the two sites. However, the manuscript should provide more details on the culture conditions and duration (22 days is mentioned) to ensure that the cells maintain their site-specific identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Histological analysis reveals fundamental differences in matrix composition between mineralizing FH and distal femur. Safranin O and toluidine blue staining show cartilage presence in the mineralized FH region at day 21, while cartilage staining is absent in the mineralized distal femur tissue at day 10. COL10A1 is abundantly present in mineralizing FH but absent at the distal SOC, while COL1A1 shows the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are supported by histological data in Figure 2 and immunofluorescence data in Figure 4. The presence of cartilage matrix in the mineralized FH versus its absence in the mineralized distal femur is a key finding that distinguishes cartilage calcification from endochondral ossification. The complementary collagen expression patterns (COL10A1 in FH, COL1A1 in SOC) provide strong molecular evidence for these different processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "MMP9 is a direct target of SP7, and SP7 gain/loss of function experiments in ATDC5 cells show that SP7 is upstream of bone matrix genes. Ex vivo studies demonstrate that TH regulates SP7 in distal but not FH chondrocytes, suggesting SP7 functions at the distal but not proximal end of the femur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by citation to Yao et al., 2019 (C155), gain/loss of function experiments in ATDC5 cells, and ex vivo culture data in Figure 9\u2014figure supplement 3. The evidence converges to support a model where SP7 is a key determinant of endochondral ossification at the distal femur but plays minimal role in FH cartilage calcification. This is one of the central mechanistic insights of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Knockdown experiments in ATDC5 cells reveal that RUNX2 is the main positive regulator of SP7, while DLX3 is a negative regulator. Both COL10A1 and COL1A1 are positively regulated by all four transcription factors in AA and AA+TH cultures. MMP9 is negatively regulated by RUNX2 and DLX3 but positively by DLX5. TH's negative effect on MGP is mediated by RUNX2, DLX5, and SP7, while TH's positive effect on Bglap2 is mainly mediated by DLX5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C164 are supported by knockdown experiments summarized in Table 1 and shown in Figure 9. The data reveal a complex transcriptional network with both hierarchical (RUNX2\u2192SP7) and antagonistic (DLX3\u22a3SP7) relationships. The identification of DLX3 as a negative regulator of SP7 is a novel finding. However, the manuscript should clarify whether these regulatory relationships are direct or indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C165",
+      "C166"
+    ],
+    "result": "Double knockdown experiments reveal that the positive effect of DLX5 on Bglap2 expression is dependent on SP7 presence, demonstrating that interactions between SP7 and DLX factors contribute to transcriptional regulation of bone matrix genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166 are supported by double knockdown experiments in Figure 9G. This is a key mechanistic finding that explains how the presence or absence of SP7 can fundamentally alter the transcriptional response to TH and other signals. The data provide strong evidence for functional interactions between transcription factors rather than independent parallel pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "A proposed model suggests that at the proximal FH, an RUNX2/DLX3 duo represses MMP9 expression, protecting COL10A1 from degradation, while RUNX2 also represses mineralization inhibitors (DMP1, MGP), allowing COL10A1 mineralization. The lack of COL1A1 in the mineralizing FH is consistent with COL10A1 being the major matrix component that is mineralized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C169 represent a proposed model based on the data presented. While the individual observations (MMP9 absence in FH, RUNX2/DLX3 expression, lack of COL1A1, presence of COL10A1) are well-supported, the causal relationships proposed in the model require additional validation. Direct tests of the model (e.g., forced expression of MMP9 in FH, or blocking RUNX2/DLX3 function) would be needed to confirm these mechanistic predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "A proposed model suggests that during SOC formation at the distal femur, TH induces SPP1, IBSP, and BGLAP2 primarily through DLX5, and mature chondrocytes transdifferentiate into osteoblasts in the presence of an SP7/DLX5 duo. At the FH, RUNX2 in the absence of SP7 may interact with DLX3 to promote terminal differentiation and cartilage mineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C172 represent a proposed model that integrates multiple observations from the study. While the differential expression of SP7, DLX3, and DLX5 at the two sites is well-documented, and the in vitro knockdown experiments support their roles in regulating mineralization genes, the model makes several speculative leaps. The claim about chondrocyte-to-osteoblast transdifferentiation at the SOC relies on previous work (Aghajanian et al., 2017) but is not directly tested here. The proposed RUNX2/DLX3 interaction at the FH is inferred but not directly demonstrated. Lineage tracing or conditional knockout experiments would be needed to definitively test these models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "The authors claim this is the first demonstration that TH provides fundamental input for proximal femur formation and chondrocyte maturation/mineralization at the FH, and that the study provides a mechanistic framework for understanding cartilage mineralization versus endochondral bone formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by the comprehensive data presented in the manuscript, including imaging, histology, gene expression, and protein localization studies. While previous work established TH's role in SOC formation at the distal femur/proximal tibia, this study is indeed the first to systematically investigate TH's role in FH development and to delineate the molecular differences between cartilage calcification and endochondral ossification. The novelty claims are justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C147",
+      "C148"
+    ],
+    "result": "Despite systemic TH elevation, distal knee epiphyseal chondrocytes respond early and undergo endochondral ossification, while proximal FH chondrocytes experience delayed maturation that is exacerbated in Tshr-/- mice. Detection of THRA1 and downstream genes in FH on day 17 (when mineralization begins) suggests TH provides a crucial initiating signal. In vitro, TH induces positive and negative modulators of mineralization in chondrogenic progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 and C147-C148 are supported by the in vivo data showing differential timing of mineralization, the immunofluorescence data showing delayed THRA1 expression at the FH, and the in vitro data showing TH effects on mineralization genes. The temporal correlation between THRA1 expression and mineralization onset is compelling. However, the claim that TH provides a 'crucial signal' (C147) is somewhat overstated\u2014while TH is necessary (as shown by the Tshr-/- phenotype), it may not be sufficient, and other factors likely contribute to the timing of FH mineralization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Literature citations support that chondrocyte-specific SP7 knockout results in expanded hypertrophic chondrocyte mineralization, demonstrating SP7 is not required for chondrocyte mineralization. Forced RUNX2 expression increases chondrocyte maturation and induces ectopic mineralization. SP7 is a positive regulator of COL1A1 and its interaction with DLX5 is critical for osteoblast specification. The authors propose that an SP7/DLX5 duo contributes to chondrocyte-to-osteoblast transdifferentiation at the distal femur, while limited SP7 activity at the proximal femur may explain the difference in fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C177 are supported by appropriate citations to the literature (Jing et al., 2014; Zhou et al., 2010; Takeda et al., 2001; Hojo et al., 2016; Ortu\u00f1o et al., 2013). Claims C178-C179 represent the authors' model integrating their findings with prior knowledge. The model is consistent with the data presented, particularly the differential expression of SP7 and DLX5 at the two sites and the in vitro knockdown experiments. However, the model remains somewhat speculative and would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Literature citations support that developmental delay of proximal FH compared to distal femur occurs in humans as in mice, and that hypothyroidism is a major cause of slipped capital femoral epiphysis in humans. Recent studies show that components regulating physiological mineralization are present in pathological mineralization, suggesting pathological mineralization may recapitulate normal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C183 are supported by appropriate citations (Windschall et al., 2016; Kadowaki et al., 2017; Wells et al., 1993; Bourne et al., 2021; Tesfamariam, 2019). These claims establish the clinical relevance of the findings and provide context for potential translational applications. However, claim C183 about pathological mineralization recapitulating development is somewhat speculative and represents a hypothesis rather than an established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "The authors claim that understanding regulatory molecules and cellular processes in normal cartilage ossification may provide clues for understanding pathological mineralization in vascular tissues and soft tissue calcifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C143 is speculative and represents a potential future application rather than a demonstrated result. While the logic is sound\u2014that understanding physiological processes can inform pathological ones\u2014this claim is not directly tested in the manuscript. The connection between FH cartilage calcification and pathological soft tissue mineralization remains hypothetical and would require additional studies to validate.",
+    "result_type": "MINOR"
+  }
+]

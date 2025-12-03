@@ -1,0 +1,515 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors cultivated C. necator in bioreactors under four substrate limitations and five growth rates, then quantified the proteome using LC-MS/MS. They achieved comprehensive proteome coverage, quantifying over 4000 proteins per sample, 5357 proteins (81%) across all conditions, and 99% of the proteome by mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C29-C32 collectively describe a well-executed experimental design with robust proteomics coverage. The quantification of 81% of annotated genes and 99% of proteome mass represents excellent coverage for bacterial proteomics. The methodology is clearly described and the data quality metrics are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Protein expression is unequally distributed across the C. necator genome, with 78.7% from chromosome 1, 16.4% from chromosome 2, and 5.4% from pHG1. Chromosome 2 and pHG1 encode specialized functions including the cbb operon and hydrogenases, with pHG1 protein mass primarily related to autotrophic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are well-supported by proteomics data (Figure 1B) and consistent with prior genomic analyses. The unequal distribution of protein expression across replicons and the specialization of chromosome 2 and pHG1 for autotrophic functions are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed an RBA model that predicts optimal flux distributions while accounting for kinetic parameters and enzyme abundance. The model includes macromolecular machines and was able to reproduce experimental protein allocation. Model simulations identified 587 utilized reactions, including 280 core reactions used across all substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 describe the RBA model construction and validation. The model successfully reproduced experimental protein allocation (C39, Figure 2\u2014figure supplement 2A) and provided reasonable predictions of reaction utilization. The methodology is well-documented with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The proteome was categorized into non-modeled (38%, 0.26 g/gDCW), non-utilized enzymes (0.03 g/gDCW), utilized enzymes (0.27 g/gDCW), and machinery (0.12 g/gDCW). Non-utilized enzymes showed no functional enrichment, while non-modeled proteins were enriched in transport, transcription, and post-translational modification. Overall, 43% of the proteome is unlikely to be utilized under tested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present a comprehensive proteome allocation analysis supported by RBA modeling (Figure 2A-B). The categorization is methodologically sound, though the definition of 'non-utilized' depends on model assumptions. The functional enrichment analysis provides biological insight into the non-modeled fraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Gene essentiality was determined using a barcoded transposon library (60,000 mutants), categorizing genes as essential (496), probably essential (149), or non-essential (4,712). Essential genes comprised 47% of utilized enzyme mass but only 19% and 3% of non-modeled and non-utilized protein mass, respectively. The authors conclude that a large portion of the proteome is associated with nutrient scavenging and environmental adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe a well-executed transposon library experiment using established RB-TnSeq methodology. The correlation between essentiality and protein utilization category is logical and well-supported by data (Figure 2A). The conclusion about environmental adaptation (C54) is a reasonable inference from the essentiality patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ribosomal protein abundance increased linearly with growth rate, consistent with other bacteria. The RBA model accurately predicted ribosome expansion with growth rate but failed to predict incomplete reduction at low growth rates, which can be explained by cells maintaining a ribosome reserve for nutrient upshifts. This reserve led to decreased utilization at low growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are well-supported by data (Figure 3\u2014figure supplement 1) and consistent with established bacterial physiology. The model limitation (C56) is acknowledged and explained by citing relevant literature (C57). The ribosome reserve concept is well-established in bacterial physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Highly utilized enzymes were more abundant, showed lower variability across conditions, and were more likely to be encoded by essential genes compared to lowly utilized enzymes. The authors conclude that C. necator optimizes the cost-benefit ratio by keeping utilization high for abundant enzymes, and that low variability could provide fitness benefits during environmental changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by statistical analysis (Figure 3A-C) showing significant differences between utilization categories. The optimization interpretation (C61) is a reasonable inference from the data. Claim C62 is speculative but appropriately framed as a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Enzyme abundance and utilization differed markedly between central carbon metabolism pathways. Upper glycolysis and CBB cycle enzymes showed high variability and condition-dependent expression, while lower glycolysis, TCA cycle, and pyruvate metabolism enzymes showed low expression and variability. The authors conclude that gene expression is hierarchically organized, with substrate assimilation enzymes expressed 'on demand' and downstream enzymes showing constitutive low expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are well-supported by proteomics and modeling data (Figure 3D). The hierarchical organization conclusion (C67-C68) is a reasonable interpretation. Claims C69-C70 are speculative but appropriately framed as potential evolutionary benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CBB cycle enzyme abundance correlated with growth rate on formate but showed different patterns on other substrates. Rubisco was highly abundant (up to 3% of proteome) even on fructose where the model predicted no CBB flux. CBB enzymes exist in three genomic copies with different regulation patterns. The authors conclude that C. necator maintains large amounts of underutilized CBB enzymes (3.5-5.9% of proteome) not warranted by expected metabolic fluxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by proteomics data (Figure 4A-B) and genomic information. The high Rubisco abundance on fructose despite no predicted flux (C73) is a key observation. The conclusion about underutilization (C78) is well-supported by the modeling analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Previous work showed C. necator fixes CO2 via Rubisco during fructose growth, improving PHB yield by 20%. However, RBA simulations enforcing CO2 fixation on fructose showed no improvement in biomass yield or growth rate. Instead, flux was diverted to the non-oxidative PPP and TCA cycle, increasing respiration and CO2 emission. The similar degree of reduction for fructose and biomass leaves no extra redox power for CO2 reassimilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 combine prior work (C84-C85) with new modeling results (C86-C90). The RBA simulations (Figure 5A-D) clearly show that enforced CO2 fixation does not improve yield or growth. The thermodynamic argument (C91) provides a mechanistic explanation. However, the modeling assumes optimal growth, which may not capture all biological scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Fitness of cbb gene mutants was largely unchanged even on formate where CBB is essential, indicating compensation by the second cbb operon copy. However, cbbR mutants showed strong fitness penalty on formate but not on fructose or succinate. The authors conclude that CO2 fixation during heterotrophic growth is unlikely to provide growth benefit without additional energy, and that Rubisco upregulation on fructose is a 'byproduct' of cbb operon regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 are supported by transposon library competition experiments (Figure 5E-F). The compensation by the second cbb copy (C93) is clearly demonstrated. The cbbR fitness data (C96) supports the regulatory interpretation. The conclusion about CO2 fixation (C98) integrates modeling and experimental data. The 'byproduct' hypothesis (C99) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Transposon library analysis identified conditionally essential genes in central carbon metabolism. On formate, fdsABDG (soluble FDH) and ppc (PEP-carboxylase) showed reduced fitness. On fructose, pgl, edd1, eda (ED pathway), and pdhA (pyruvate dehydrogenase) were essential. On succinate, maeA (malic enzyme) and pdhA showed reduced fitness. Alternative isoenzymes could not compensate for these losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 are supported by transposon library fitness data (Figure 6A-D). The substrate-specific essentiality patterns correlate well with predicted metabolic fluxes. The failure of alternative isoenzymes to compensate (C106, C107, C110) is an important observation about functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The central carbon metabolism of C. necator has very high redundancy, with most enzyme functions compensated by alternative copies. Conditionally essential genes were either present as single copies or had non-functional alternatives. The degree of essentiality correlated with enzyme flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 synthesize the transposon library results into a coherent conclusion about metabolic redundancy. The correlation between essentiality and flux (C114) is supported by Figure 6B-D. This is a well-supported conclusion from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Burkholderiales have fragmented genomes (2-4 replicons). Comparative genomics suggested chromosome 1 is more conserved than chromosome 2 and pHG1. Chromosome 1 showed constitutive expression while chromosome 2 and pHG1 showed regulated expression. This supports the hypothesis that C. necator acquired chromosome 2 and pHG1 later in evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 integrate prior genomic analyses (C115-C116) with new proteomics data (C117). The expression patterns support the evolutionary hypothesis (C118), though this remains speculative. The data are consistent with the 'accessory' character of chromosome 2 and pHG1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Of 5357 quantified proteins, only 1,223 are enzymes and 93 are machinery in the RBA model. Utilized enzymes and machinery comprised 57% of protein mass, while 43% was non-utilized. This is higher than E. coli estimates (26-39%). The authors conclude that C. necator expresses many genes without utilizing them in controlled environments, possibly related to environmental readiness in variable soil conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 present a clear comparison with E. coli showing C. necator has a larger non-utilized fraction. The conclusion about environmental readiness (C124) is speculative but reasonable given C. necator's soil habitat. However, the comparison depends on modeling assumptions and may not fully account for unmeasured protein functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Underutilization serves as a proxy for the ratio of maximum to actual reaction rate, influenced by substrate saturation, reverse flux, and allosteric effects. At low growth rates, bacteria reallocate resources but incompletely, leading to low enzyme utilization. C. necator shows this pattern with incomplete ribosome reduction and high enzyme abundance at low growth rates, creating an underutilized enzyme reserve that represents an 'efficiency sacrifice'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 provide important context for interpreting underutilization. The concepts are well-supported by citations and consistent with bacterial physiology. The observation that C. necator follows this pattern (C131) is supported by Figure 3\u2014figure supplement 1 and Figure 4. The 'efficiency sacrifice' interpretation (C132) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "While excess protein expression reduces growth rate, enzyme underutilization in E. coli provides buffering against environmental perturbations and is important for metabolic stability. The authors observed that highly abundant enzymes in C. necator are better utilized and less variable, likely due to evolutionary pressure on enzyme reserve costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 integrate literature on enzyme underutilization with the current findings. The observation about C. necator (C136) is supported by Figure 3A-B. This provides important evolutionary context for the underutilization findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "C. necator's upper EMP/PPP enzymes showed strong transcriptional regulation, unlike E. coli where these enzymes show low variation and flux is regulated allosterically. TCA cycle enzymes in C. necator showed low abundance and utilization, similar to E. coli. The RBA framework does not account for thermodynamic driving forces and may underestimate enzyme demand for reactions with low driving force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 provide a detailed comparison with E. coli metabolism. The transcriptional regulation difference (C138) is supported by Figure 3D and citations. The acknowledgment of RBA limitations (C142) is important for interpreting the results. The comparisons are well-supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "E. coli is adapted to regular nutrient upshifts and evolved allosteric regulation for the EMP pathway. In contrast, C. necator likely does not prefer sugars and has low flux through upper EMP. Slow transcriptional regulation of glycolysis could provide fitness benefit in environments with limited and irregular substrate supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 present a comparative evolutionary argument. The E. coli adaptation (C143-C144) is supported by citations. The speculation about C. necator's adaptation (C147) is reasonable given its metabolic characteristics and soil habitat, though it remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Only cbb operon-encoded glycolysis/PPP enzymes are transcriptionally regulated, while ancestral chromosome 1 enzymes are constitutively expressed and scattered across the chromosome. This diverging regulation could mark an evolutionary branching point. The pHG1 plasmid was likely acquired recently, and cbb genes could either be lost or take over glycolysis functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 present an evolutionary hypothesis supported by proteomics data (Figure 4\u2014figure supplement 1) and genomic organization. The recent acquisition of pHG1 (C151) is supported by citation. The speculation about future evolution (C152) is appropriately framed as a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The cbb operon is regulated by CbbR and RegA/B. RegA/B provides constitutive expression while CbbR senses PEP concentration. PEP is an important allosteric regulator in E. coli. In C. necator, fructose growth leads to low PEP triggering cbb expression, while succinate has the opposite effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C157 describe cbb regulation mechanisms supported by appropriate citations. The PEP-dependent regulation (C157) is supported by the proteomics data showing substrate-specific cbb expression patterns. This provides a mechanistic explanation for the observed expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "On substrates more reduced than biomass (e.g., glycerol), there is sufficient redox power for CO2 fixation, but not on less reduced substrates. The authors propose that PEP-dependent cbb regulation leads to collateral Rubisco expression on fructose where it is not required, representing a remarkable example of suboptimality where one benefit could be readiness for lithoautotrophic growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 integrate thermodynamic reasoning with the regulatory mechanism. The redox argument (C158-C159) is supported by citations. The 'collateral expression' hypothesis (C160-C161) is speculative but well-reasoned and consistent with all the data on cbb expression and fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "C. necator can compensate for loss of any cbb gene by expressing the second copy. This applies generally to central carbon metabolism where most enzyme functions are covered by multiple gene loci. The results highlight C. necator's metabolic flexibility and robustness, though high genomic redundancy may lead to regulatory conflicts exemplified by cbb expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 synthesize the transposon library results into conclusions about metabolic flexibility. The compensation by redundant genes (C162-C163) is clearly demonstrated by the fitness data. The conclusion about flexibility and regulatory conflicts (C164-C165) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Comparative genomics showed the CBB cycle is accompanied by metabolism-wide adaptations. Considering possible recent acquisition of the CBB cycle via pHG1, C. necator is likely currently evolving to make best use of cbb genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 place the findings in broader evolutionary context. The comparative genomics (C166) is supported by citation. The evolutionary speculation (C167) is reasonable given the evidence for recent pHG1 acquisition and the regulatory conflicts observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "C. necator is far from ideal for biotech applications due to gene duplications complicating engineering, protein-inefficient expression of unutilized pathways, and difficulty controlling metabolic flux. Strategies to improve it could include systematic deletion of undesired functions (e.g., hydrogenase expression on formate) or laboratory evolution for beneficial traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C172 present biotechnology implications and suggestions. The limitations (C168) are well-supported by the proteomics and modeling data. The suggested strategies (C169-C172) are reasonable applications of the findings, though they remain speculative future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "C. necator H16 has a large genome (~6600 genes) on two chromosomes and one megaplasmid, with diverse metabolic capabilities including xenobiotics degradation, hydrogen/formate oxidation, CBB cycle, and denitrification. Several substrate assimilation operons exist in multiple copies. It can metabolize 229 compounds, prefers organic acids over sugars, and only grows on fructose and N-acetylglucosamine via the ED pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide background on C. necator supported by appropriate citations. These are well-established facts from prior literature that provide essential context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The 'cellular economy' concept describes limited enzyme resources requiring reallocation to meet environmental needs, exemplified by the respiration-fermentation switch. Protein economy has been studied in E. coli, S. cerevisiae, and photoautotrophs. Previous C. necator studies showed condition-dependent gene expression, including CBB cycle upregulation on fructose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 provide theoretical background and prior work on C. necator. All claims are supported by appropriate citations. The CBB upregulation on fructose (C14) is a key prior observation that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "C. necator invests >40% of protein mass in genes unlikely to be utilized or with unknown function. Enzyme utilization in central carbon metabolism differed between pathways, with substrate assimilation enzymes showing higher variability, abundance, and utilization than biomass precursor enzymes. CO2-assimilation enzymes in heterotrophic growth were unlikely to provide fitness benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 summarize key findings from the study. These are high-level conclusions supported by the detailed analyses in other claim groups. They represent the main discoveries of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The two cbb operon copies are 99% identical and cannot be distinguished well by LC-MS/MS, though promoter studies showed similar expression levels. C. necator has two types of FDH (soluble and membrane-bound), with FDH expression induced only on formate and the soluble form (fds) predominating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe methodological limitations (C25) and FDH expression patterns (C27-C28). The cbb operon similarity (C25) is an important caveat for interpreting the data. The FDH findings (C27-C28) are supported by proteomics data (Figure 1\u2014figure supplement 3E).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Sample similarity analysis based on protein abundance revealed that low growth rates are more similar to each other, and that growth on formate is most unlike other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe proteomics data quality analysis supported by Figure 1\u2014figure supplement 3C. This validates the experimental design and shows that substrate type has a larger effect on proteome composition than growth rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The underutilized CBB enzyme mass may prepare for autotrophic/formatotrophic growth. C. necator's Rubisco has a CO2/O2 specificity ratio of 75 suggesting low 2-phosphoglycolate synthesis. Primary 2-PGly salvage enzymes were not upregulated on formate and their knockout had no growth effect, suggesting phosphoglycolate salvage is not vital during formate growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 address the question of phosphoglycolate salvage. The speculation about readiness (C79) is reasonable. The Rubisco specificity argument (C80) and experimental data (C81-C82) support the conclusion that salvage is not important (C83), though this may be specific to the tested conditions.",
+    "result_type": "MINOR"
+  }
+]

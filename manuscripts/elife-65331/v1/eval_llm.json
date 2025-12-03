@@ -1,0 +1,484 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C56",
+      "C57"
+    ],
+    "result": "Systematic analysis of 3' end formation factors using PAT-seq and mPAT revealed that mutations in core cleavage and polyadenylation machinery (CFIA, CFIB, CPF complexes) generally promote global 3'UTR lengthening through increased usage of distal cleavage sites, with 422 genes significantly affected across mutants and ysh1-13 showing the highest number of shifts (2486 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39, C46-C50, C53, C56-C57 are well-supported by PAT-seq and mPAT data shown in Figures 1 and 2. The systematic analysis includes appropriate controls (wild-type comparisons), multiple biological replicates, and statistical testing with FDR correction. The conclusion that core machinery loss leads to 3'UTR lengthening is consistently demonstrated across multiple mutants with quantitative metrics (shift scores, confect values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of Sen1 helicase function causes significant switching to shorter 3'UTRs for 676 genes, with 81.5% of genes showing opposite directional shifts compared to pcf11-2 mutants, suggesting Sen1 antagonizes core 3' end processing factors at a subset of longer genes (median 1270.5 bp vs 986 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C76-C78, C81-C82 are supported by PAT-seq data in Figure 3 showing sen1-1 causes proximal site usage (opposite to other mutants), with statistical significance (p=9.174\u00d710\u207b\u2079 for gene length difference). The opposing directionality compared to pcf11-2 (81.5% of 411 overlapping genes) provides strong evidence for an antagonistic role. However, the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Cordycepin treatment (20 \u00b5g/ml) causes global 3'UTR lengthening affecting 1959 genes, with patterns similar to 3' end factor mutants (98.1% concordance with pcf11-2, 98.9% with ysh1-13), accompanied by nucleotide accumulation shown by metabolomics, but cordycepin is unlikely to act through direct interaction with 3' end machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C41, C85-C87, C90, C93-C94 are well-supported by PAT-seq data (Figure 4), metabolomics data (Figure 5), and comparative analysis. The high concordance in directionality with mutants (>98%) combined with the existence of 153 cordycepin-specific genes supports the conclusion that cordycepin mimics but doesn't directly interact with the machinery. The nucleotide accumulation provides a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C126",
+      "C127",
+      "C129"
+    ],
+    "result": "Cordycepin treatment causes major metabolic rewiring with significant accumulation of nucleotides and their biosynthetic intermediates (including CDP, CTP, UDP, UTP, dCDP, dCTP, dADP, cAMP, IMP, adenylosuccinate), 3.8-fold increase in trehalose, and 3.1-fold increase in acetyl CoA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133, C126-C127, C129 are supported by comprehensive metabolomics analysis (Figure 5) with six biological replicates and appropriate statistical testing. The metabolite identification includes both confirmed (MSI level 1) and putative (MSI level 2-3) identifications. The magnitude of changes is substantial and the pathway analysis is appropriate. Quality controls (internal standards, pooled QC samples) were monitored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C137",
+      "C138",
+      "C139",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Cordycepin-induced 3'UTR lengthening is mediated by increased transcription elongation rate, as demonstrated by: (1) 4tU labeling showing newly synthesized transcripts preferentially use distal sites, (2) suppression of cordycepin effects by slow rpb1 mutant (H1085Y), and (3) fast rpb1 alleles mimicking cordycepin effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42, C137-C139, C143-C147 are supported by 4tU labeling experiments (Figure 6A-B) and rpb1 mutant analysis (Figure 6B-C) with two biological replicates. The logic is sound: if cordycepin acts through transcription rate, then slowing transcription should suppress its effects (observed) and fast polymerase should mimic it (observed). However, C140-C142 note that direct measurement of transcription rate by 4tU incorporation was confounded by nucleotide pool dilution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C156",
+      "C157",
+      "C159",
+      "C201",
+      "C202"
+    ],
+    "result": "Mycophenolic acid (MPA), which reduces GTP levels and slows RNAP II elongation, promotes proximal site usage, reverses cordycepin-induced 3'UTR lengthening, and overrides the effects of pcf11-2 and sen1-1 mutations, demonstrating that nucleotide availability has a dominant effect on cleavage site choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C150-C153, C156-C157, C159, C201-C202 are supported by TVN-PAT data (Figure 6D-G) showing MPA causes proximal site usage, suppresses cordycepin effects, and overrides genetic mutations. The epistasis experiments (MPA treatment of mutants) provide strong evidence for nucleotide levels being a key determinant. The slow rpb1 allele similarly suppresses cordycepin effects, supporting the transcription rate mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C210",
+      "C213"
+    ],
+    "result": "Cordycepin-responsive convergent genes have innately wider nucleosome depleted regions at the 3' end (p<0.001), with nucleosome occupancy differences correlating with APA occurrence, suggesting that chromatin landscape is a pre-determined factor influencing APA potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44, C163-C167, C210, C213 are supported by nucleosome occupancy analysis (Figure 7C) using published data (Kaplan et al., 2009). The statistical significance (p<0.001 for convergent genes) and the observation that these differences exist in untreated cells support the conclusion. However, the analysis relies on published nucleosome data rather than direct measurement in cordycepin-treated cells, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C168",
+      "C169",
+      "C171",
+      "C172",
+      "C211",
+      "C212"
+    ],
+    "result": "Cordycepin-responsive convergent genes have significantly longer intergenic regions (median 332 bp vs 198 bp, p<0.001), while tandem genes show no such correlation (p=0.856), suggesting that intergenic region length determines APA potential specifically for convergent genes to avoid transcriptional interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C168-C169, C171-C172, C211-C212 are supported by intergenic region analysis (Figure 7D) with appropriate statistical testing (ANOVA for convergent, t-test for tandem). The differential effect on convergent vs. tandem genes is logically consistent with transcriptional interference being an issue only for convergent genes. The statistical significance is strong (p<0.001 for convergent, p=0.856 for tandem).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C45",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218"
+    ],
+    "result": "The authors propose a kinetic competition model where alternative polyadenylation is governed by temporal coordination of RNAP II transcription and 3' end processing, controlled by the balance between 3' end factor availability, nucleotide levels, transcriptional rate, and chromatin landscape, with proximal sites having temporal advantage but distal sites favored under conditions of fast elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C45, C173-C178, C214-C218 represent a synthesis of all experimental findings into a unified kinetic model. The model is well-supported by converging evidence from: (1) genetic analysis showing machinery loss causes distal site usage, (2) pharmacological manipulation showing nucleotide levels control site choice, (3) transcription rate manipulation showing elongation speed affects APA, and (4) chromatin analysis showing permissive landscape facilitates distal site usage. The model logically integrates all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparison of different alleles reveals that in vivo APA defects correlate with defective in vitro polyadenylation activity and defective RNAP II CTD interaction (pcf11-13), but not with defective in vitro cleavage activity, suggesting polyadenylation and transcription coupling are critical for APA while cleavage per se is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 are supported by mPAT analysis of multiple alleles (Figure 2B) combined with literature on in vitro activities. The logic is sound: nab4-1/7 (polyadenylation-defective) show APA defects, yth1-1/4 (both polyadenylation-defective, only yth1-4 cleavage-defective) both show APA defects, and pcf11-13 (CTD interaction-defective) shows APA defects. This systematic comparison across alleles with known biochemical defects provides strong evidence for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Genetic analysis using \u0394ado1 and \u0394adk1 strains shows that cordycepin monophosphate (CoMP), not cordycepin triphosphate (CoTP), mediates APA effects, separating the APA role from RNA incorporation and toxicity roles, with Nrt1 acting as a partially redundant transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 are supported by TVN-PAT analysis of metabolic mutants (Figure 4\u2014figure supplement 2D). The differential resistance of \u0394ado1 (resistant to APA) vs. \u0394adk1 (not resistant) logically implicates CoMP as the active species, since Ado1 converts cordycepin to CoMP while Adk1 converts CoMP to CoTP. The \u0394nrt1 mild resistance supports a transport role. The logic is sound and the genetic approach is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C191"
+    ],
+    "result": "Cordycepin treatment causes coordinated changes in 3' end factor RNA expression, with CPF subunits decreasing and CFIA/CFIB genes (PCF11, RNA14, HRP1/NAB4) and NNS subunits (NRD1, SEN1) increasing after 40 min treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97, C99, C191 are supported by RNA expression data (Figure 4\u2014figure supplement 2A). The coordinated changes are clearly shown in the heatmap. However, C192-C193 note that only Hrp1/Nab4 showed significant protein level changes, and the timing suggests these expression changes are unlikely to cause the APA observed within 10 min. This is appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C107"
+    ],
+    "result": "Cordycepin treatment causes decreased polysome formation indicating reduced translation, but proteomics shows only five proteins significantly changed (including 49% increase in Hrp1/Nab4), suggesting limited immediate impact on global protein expression within the 40 min treatment period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104, C107 are supported by polysome profiling (Figure 4\u2014figure supplement 2B) and DIA mass spectrometry (Figure 4\u2014figure supplement 2C) with five biological replicates. The authors appropriately acknowledge limitations (C105-C106): short timeframe and DIA methodology limitations. The Hrp1/Nab4 increase is consistent with its mRNA upregulation and provides a potential feedback mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Adenine co-treatment does not reverse cordycepin-induced APA, and 3' deoxyguanosine (guanosine analogue) causes no APA, indicating the effect is specific to the adenosine analogue and unlikely to involve RNA chain termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by TVN-PAT data (Figure 4\u2014figure supplement 2E). The lack of effect with adenine (despite suppressing growth effects) and lack of effect with 3' deoxyguanosine (which should also cause chain termination) provide strong negative controls supporting the specificity of cordycepin's APA effect and arguing against a chain termination mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Seahorse metabolic flux analysis shows cordycepin does not affect oxygen consumption but reduces glycolytic output (extracellular acidification), indicating decreased ethanol synthesis and diversion of glycolytic metabolites toward alternative pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by Seahorse data (Figure 5\u2014figure supplement 1) with three independent experimental repeats. The interpretation that reduced ECAR in yeast reflects CO2 production rather than lactate (C124) is appropriate given yeast metabolism. The conclusion about metabolite diversion (C125) is a reasonable inference given sufficient glucose availability. However, this is a relatively minor supporting observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C158",
+      "C203",
+      "C204"
+    ],
+    "result": "Cordycepin cannot further lengthen 3'UTRs in pcf11-2 mutant or suppress sen1-1 shortening, while MPA prevents pcf11-2 lengthening and enhances sen1-1 shortening, demonstrating that 3'ends cannot extend past their most distal poly(A) site and nucleotide depletion has stronger effects than genetic mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155, C158, C203-C204 are supported by TVN-PAT data (Figure 6G). The epistasis experiments are well-designed: cordycepin cannot push beyond the maximum (pcf11-2 already at distal sites) but MPA can override genetic effects. This provides strong evidence for the hierarchy of effects and the existence of functional limits to 3'UTR extension. The inference about distal site limits (C158) is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Genes undergoing APA are significantly longer than non-APA genes (median 1420 bp vs 1275 bp, p=0.031), suggesting gene length influences APA potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by statistical analysis (Figure 7A) with appropriate testing (t-test, p=0.031). The effect size is modest but statistically significant. The inference that gene length influences APA potential (C161) is reasonable but somewhat speculative\u2014longer genes may simply have more opportunity for multiple poly(A) sites. This is a correlative observation supporting the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C73"
+    ],
+    "result": "The clp1-pm and \u0394syc1 mutants show minimal APA defects, with Syc1 being the only non-essential subunit of core complexes, suggesting negligible roles in cleavage site choice, and NNS complex impairment has little impact in mPAT analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C73 are supported by mPAT data (Figure 2A) and growth data (Figure 1B). The lack of APA phenotype in clp1-pm is consistent with its P-loop mutation having limited impact on 3' end formation in vitro. The \u0394syc1 result is consistent with it being non-essential. However, C74 appropriately notes that NNS effects may be gene-specific and not captured in the mPAT gene set.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "RNA with cordycepin incorporated lacks a 3' hydroxyl group and is not detectable by PAT-seq, but such transcripts are expected to be unstable and degraded if premature termination occurs in coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 represent methodological considerations appropriately acknowledged by the authors. C88 is a logical inference from cordycepin chemistry and PAT-seq methodology (requires 3'-OH). C89 is supported by citation to Kamieniarz-Gdula and Proudfoot, 2019 regarding nonsense-mediated decay. These are important caveats for interpreting the PAT-seq data but don't undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Total 4tU incorporation did not significantly differ between DMSO and cordycepin samples (p=0.227), likely due to dilution by de novo nucleotide biosynthesis, preventing direct confirmation of increased transcription rate by 4tU incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 represent an important negative result appropriately reported and interpreted. The statistical analysis is sound (p=0.227, 95% CI provided). The interpretation that nucleotide pool expansion dilutes the 4tU label (C141) is a reasonable explanation consistent with the metabolomics data. The authors appropriately acknowledge this limitation (C142) and use alternative approaches (rpb1 mutants) to test the transcription rate hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background claims establishing that 3' end processing is a critical two-step process involving cleavage and polyadenylation, with conserved machinery (CPF, CFIA, CFIB in yeast) recognizing sequence elements (PE, EE, UUE, DUE), coupled to RNAP II transcription, and that alternative polyadenylation is pervasive (up to 70% of genes) with functional consequences for mRNA stability, localization, translation, and links to development and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C38 represent established background knowledge appropriately cited from the literature. These claims provide necessary context for the study and are well-supported by the cited references (Colgan and Manley 1997, Zhao et al. 1999, Mandel et al. 2008, Graber et al. 1999, Tian and Graber 2012, Guo and Sherman 1996, Barabino et al. 2000, Dichtl and Keller 2001, Kessler et al. 1997, Gross and Moore 2001, Baejen et al. 2014, McCracken et al. 1997, Zhang et al. 2005, Derti et al. 2012, Ozsolak et al. 2010, Mayr and Bartel 2009, etc.). These are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C108",
+      "C115",
+      "C121",
+      "C134",
+      "C135",
+      "C136",
+      "C148",
+      "C149",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C188",
+      "C189",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C205",
+      "C206"
+    ],
+    "result": "Background claims about cordycepin mechanism (chain termination, prior 3' end effects), MPA mechanism (IMP dehydrogenase inhibition, GTP depletion), nucleotide effects on transcription, prior work on transcription rate and APA, chromatin effects on elongation, and comparative aspects between yeast and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C108, C115, C121, C134-C136, C148-C149, C180-C183, C188-C189, C195-C199, C205-C206 represent established knowledge and prior work appropriately cited. These include the authors' own prior work (Holbein et al. 2009) and relevant literature (Uptain et al. 1997, Mason and Struhl 2005, Swaminathan and Beilharz 2016, Pinto et al. 2011, Geisberg et al. 2020, Hodges et al. 2009, Baejen et al. 2014, Kamieniarz-Gdula and Proudfoot 2019, Martin et al. 2012, Masamha et al. 2014, etc.). These provide important context and rationale for the experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C60",
+      "C63",
+      "C98",
+      "C100",
+      "C101",
+      "C103",
+      "C105",
+      "C106",
+      "C170",
+      "C179",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C194",
+      "C207",
+      "C208",
+      "C209",
+      "C219"
+    ],
+    "result": "Speculative interpretations and mechanistic proposals including: ysh1 mutants skipping proximal sites due to cleavage inefficiency, CFIA/CFIB roles involving decreased sequence interactions, cellular compensatory responses to cordycepin, translation repression mechanisms, protein expression timing, intergenic region functions, physical coupling effects, evolutionary considerations, and kinetic advantages of nucleosome positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C55, C60, C63, C98, C100-C101, C103, C105-C106, C170, C179, C184-C187, C194, C207-C209, C219 represent speculative interpretations and mechanistic proposals. While these are reasonable hypotheses consistent with the data, they are explicitly acknowledged as speculative by the authors (using language like 'may', 'might', 'likely', 'predicted'). These interpretations extend beyond what is directly demonstrated and would require additional experiments to confirm. They represent thoughtful discussion but not established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "No significant changes in transcript levels were associated with APA events in sen1-1 strains (data not shown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 reports a negative result without showing the data. While the authors state this finding, the lack of presented data makes it impossible to evaluate the quality of the analysis, statistical power, or potential confounders. This is an important control for distinguishing APA from differential expression, but without the data, the claim cannot be fully evaluated. The result is plausible but unverifiable from the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The concentration of cordycepin used (20 \u00b5g/ml) did not significantly impair cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by growth assay data (Figure 4\u2014figure supplement 2F) showing comparable growth between DMSO control and 20 \u00b5g/ml cordycepin, while 120 \u00b5g/ml shows clear growth inhibition. This is an important control demonstrating that the APA effects occur at sub-lethal doses and are not simply due to general cellular toxicity. The experimental design is appropriate.",
+    "result_type": "MINOR"
+  }
+]

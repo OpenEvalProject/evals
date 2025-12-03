@@ -1,0 +1,2075 @@
+{
+  "submission": {
+    "id": "d45f3d63-3b6f-4415-8573-f9897fc0201c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T11:10:58.105906Z",
+    "updated_at": "2025-12-03T11:10:58.105906Z"
+  },
+  "content": [
+    {
+      "id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "submission_id": "d45f3d63-3b6f-4415-8573-f9897fc0201c",
+      "content_type": "manuscript",
+      "content_text": "# Parallel evolution of Pseudomonas aeruginosa phage resistance and virulence loss in response to phage treatment in vivo and in vitro\n\n## Authors\n\n- Meaghan Castledine<sup>1</sup> ([ORCID: 0000-0001-5752-2641](https://orcid.org/0000-0001-5752-2641)) \u2020\n- Daniel Padfield<sup>1</sup> ([ORCID: 0000-0001-6799-9670](https://orcid.org/0000-0001-6799-9670))\n- Pawel Sierocinski<sup>1</sup>\n- Jesica Soria Pascual<sup>1</sup>\n- Adam Hughes<sup>1</sup>\n- Lotta M\u00e4kinen<sup>1</sup>\n- Ville-Petri Friman<sup>2</sup>\n- Jean-Paul Pirnay<sup>3</sup>\n- Maya Merabishvili<sup>3</sup>\n- Daniel de Vos<sup>3</sup>\n- Angus Buckling<sup>1</sup>\n\n### Affiliations\n\n1. College of Life and Environmental Sciences, Environment and Sustainability Institute, University of Exeter Penryn United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))\n2. Department of Biology, University of York York United Kingdom ([ROR:04m01e293](https://ror.org/04m01e293))\n3. Laboratory for Molecular and Cellular Technology, Queen Astrid Military Hospital Brussels Belgium ([ROR:0243t3259](https://ror.org/0243t3259))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWith rising antibiotic resistance, there has been increasing interest in treating pathogenic bacteria with bacteriophages (phage therapy). One limitation of phage therapy is the ease at which bacteria can evolve resistance. Negative effects of resistance may be mitigated when resistance results in reduced bacterial growth and virulence, or when phage coevolves to overcome resistance. Resistance evolution and its consequences are contingent on the bacteria-phage combination and their environmental context, making therapeutic outcomes hard to predict. One solution might be to conduct \u2018in vitro evolutionary simulations\u2019 using bacteria-phage combinations from the therapeutic context. Overall, our aim was to investigate parallels between in vitro experiments and in vivo dynamics in a human participant. Evolutionary dynamics were similar, with high levels of resistance evolving quickly with limited evidence of phage evolution. Resistant bacteria\u2014evolved in vitro and in vivo\u2014had lower virulence. In vivo, this was linked to lower growth rates of resistant isolates, whereas in vitro phage resistant isolates evolved greater biofilm production. Population sequencing suggests resistance resulted from selection on de novo mutations rather than sorting of existing variants. These results highlight the speed at which phage resistance can evolve in vivo, and how in vitro experiments may give useful insights for clinical evolutionary outcomes.\n\n## Introduction\n\nBy 2050, as many as 10 million people may die annually from antimicrobial-resistant infections (WHO, 2019). To combat this threat, phage therapy is being increasingly researched as a complement to antibiotics (Abedon, 2019; Kwiatek et al., 2020). Phage therapy uses viruses (phage) that infect pathogenic bacteria to clear infections (Kwiatek et al., 2020). Phage therapy has several advantages to antibiotics by being species-specific (thus not harming beneficial microbiota) (Koskella and Meaden, 2013) and self-amplifying at infection sites (G\u00f3rski et al., 2015). A major consideration with the use of therapeutic phages is the ease and speed (sometimes within hours) at which bacteria can evolve resistance, which can greatly limit the therapeutic potential of phages (Jariah and Hakim, 2019; Torres-Barcel\u00f3, 2018; Torres-Barcel\u00f3 and Hochberg, 2016). However, phages may contribute to reducing the severity of infections even after resistance evolves. First, phage can sometimes evolve to overcome this resistance (i.e., bacteria-phage coevolution) and so they may continue lowering bacterial densities (Gandon et al., 2008; Hampton et al., 2020). Second, resistance can trade-off against bacterial growth rates and virulence; as the alteration or loss of bacterial surface structures, typically associated with phage resistance, can affect other fitness-related phenotypes such as nutrient uptake, biofilm formation, and binding of host receptors (Mangalea and Duerkop, 2020). Predicting the evolutionary outcome of phage therapy is therefore of crucial importance (Abedon, 2017).\n\nBacteria-phage dynamics and its consequences for phage therapy are highly context-specific (Gandon et al., 2008; Hampton et al., 2020). Both human clinical and animal models studies report a range of outcomes with differing phage therapy success, and differences in the extent of resistance evolution and associated costs and virulence (Abedon, 2019; Brix et al., 2020; Kwiatek et al., 2020; Leitner et al., 2021). One solution to better understand the outcome of in vivo therapy is to conduct controlled in vitro experiments with the relevant organisms. However, while most of our understanding of the ecology and evolution of bacteria-phage interactions comes from highly controlled in vitro environments (Gandon et al., 2008; Hampton et al., 2020), we do not know how well in vitro dynamics mirror in vivo dynamics quantitatively or even qualitatively.\n\nThere are good reasons to expect the outcomes may be very different. In vivo environments are expected to be more stressful for bacteria owing to limiting resources, presence of immune cells, and competing microbiota (Everest, 2007). Consequently, these conditions may differ significantly from studies of bacteria-phage coevolution in nutrient-rich microcosms which could drive differences in (co)evolutionary dynamics and associated trade-offs (Gandon et al., 2008; Hampton et al., 2020). In order to evolve phage resistance, bacteria must have sufficient mutation supply, which will primarily be determined by population size and gene flow (Gandon et al., 2008; Hampton et al., 2020; Morgan et al., 2010; Morgan et al., 2005; Pal et al., 2007). Smaller population sizes in vivo may therefore limit resistance. Moreover, resistance costs and trade-offs may be greater as a consequence of the additional selection pressures facing bacteria, which may limit selection for resistance, making it easier for phage to overcome resistance, or reduce growth rates and virulence (Buckling et al., 2006; Scanlan et al., 2015).\n\nConsequently, the main aim of this research was to determine how well in vitro bacteria\u2014phage coevolutionary dynamics mirror dynamics in a clinical context. As a starting point, we followed bacteria-phage coevolutionary dynamics during a phage-mediated decolonization trial in parallel with the dynamics between the same bacteria and phage in vitro. The nasal cavity can act as a source of infection, notably from highly drug-resistant Pseudomonas aeruginosa and Staphylococcus aureus when patients undergo hospitalization and are treated with broad-spectrum antibiotics (Mainz et al., 2009; Wertheim et al., 2004). The trial was conducted to try and decolonize intensive care (ICU) patients with P. aeruginosa and S. aureus, using a phage cocktail prior to antibiotic treatment in the prevention of ICU infections with these pathogens. Mucirocin (trade name Bactroban) and chlorhexidine are routinely used for nasal decolonization in such contexts, but extensive use of these agents has led to resistance and new nasal antiseptics need to be considered (Edgeworth, 2011). We focused on a single patient, in which we could detect P. aeruginosa at the beginning of the trial and both P. aeruginosa and phage during treatment. Decolonization of P. aeruginosa was ultimately successful in this patient. We used the pre-treatment P. aeruginosa isolates and evolved these populations in vitro in the absence and presence of treatment phages. We measured bacteria-phage (co)evolution and while we found extensive resistance evolution both in vivo and in vitro, we only found evidence of limited phage infectivity evolution in vitro. We determined the consequences of resistance, with respect to virulence, and the possible mechanisms linking this resistance-virulence trade-off using phenotypic (growth rate and biofilm assays) and metagenomic analyses for the in vivo and in vitro populations. As we only had access to samples from a single patient, we did not have a control group to understand the impact of phage application frequency in vivo. However, we were able to simulate this in our in vitro experiments, where we included two phage treatments: one where phages were added repeatedly (mimicking multiple phage doses during in vivo phage treatment) and one where phage was added once (single dose at the start of the experiment). By comparing these treatments with the in vivo treatment, we were able to gain further insight into how multiple phage doses may affect phage therapy.\n\n## Results\n\n### Resistance and infectivity (co)evolution\n\n#### In vivo\n\nResistance to phage can evolve via de novo mutations or selection on preexisting resistance and we therefore tested the resistance of ancestral bacterial isolates to ancestral phage and pooled phage isolates isolated in vivo. Of the 24 ancestral isolates isolated in vivo at day 0, 23 were susceptible to both the ancestral phage (14\u20131 and PNM) while one was resistant to 14\u20131 but susceptible to PNM. All ancestral bacteria were susceptible to phage isolated from the patient during and after decolonization (Figure 1a). We considered whether bacteria and phage coevolved in vivo using time-shift assays to determine changes in resistance and infectivity through time. After 2 days, we saw evidence of resistance evolution, with more than half of bacterial isolates being resistant to ancestral phage. One of the two isolates isolated at day 4 was phage resistant and no P. aeruginosa was detected from nasal swabs after this time point. Although both bacterial populations from days 2 and 4 showed observationally higher phage resistance (87.5% day 2, 100% day 4) against day 2 phage, this was nonsignificantly different to resistance shown to ancestral phage and phage from days 4 and 7 (Tukey HSD: p>0.05; Supplementary file 1; Figure 1a). This nonsignificance is likely due to low statistical power from limited clonal numbers (only eight isolates from day 2) and the consistency of resistance levels in bacterial populations from day 2 (apart from resistance to contemporary phage). Overall, results showed equal levels of phage resistance over time in vivo. The absence of changes in phage infectivity through time did not warrant further investigation of the population dynamics of the two inoculated phages.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig1-v2.jpg)\n\n**Figure 1.:** The proportion of phage resistant bacterial isolates from (a) ancestral (pre-phage therapy, \u201cAnc.\u201d), and days 2 (T1) and 4 (T2) of in vivo (clinical) phage therapy (n=8) tested against ancestral phage (\u2018anc.\u2019: 14\u20131 and PNM) and phage isolates from days 2 (T1), 4 (T2), and 7 (T3). The same ancestral bacterial isolates are evolved in vitro with phage added either (b) once, at the start of the experiment for comparison to (c) in which phage is added repeatedly, emulating clinical treatment. For (b) and (c), the proportion of bacterial isolates susceptible to phage at three time points (T1\u2013T3: days 4, 8, and 12 of coevolution) is presented with small points as independent treatment replicates. Resistance of bacteria isolated at T3 to ancestral phage (anc.: 14\u20131 and PNM) is indicated within the shaded region, note that these isolates are distinct from those tested against phage from T1\u2013T3. Filled points are the mean proportion of resistant isolates across replicates. Bars=\u00b1SE.\n\n#### In vitro\n\nWe used the same bacterial isolates and phages to determine how well the in vivo evolutionary dynamics paralleled in vitro experiments in the lab. To assess the impact of phage application schedule, we added phages once at the start of the experiment, repeatedly (as was the case in vivo) or not at all. The dynamics in the phage treatments largely mirrored the in vivo dynamics. Resistance to phage increased through time, reaching comparable levels to that observed in vivo (>50%). While phage resistance increased in both phages treatments (ANOVA comparing models with and without bacterial time: phage added: once $\u03c7_{2\u00a0}^{2}$=79.08, p<0.001; repeatedly $\u03c7_{2\u00a0}^{2}$=45.30, p<0.001; Figure 1b and c), there was a significantly higher proportion of bacteria resistant to contemporary phage present at the end of the experiment in the treatment where phages were added once (90.81%, \u00b1SE=0.0003) compared to when phages were added repeatedly (66.7%, \u00b1SE=7.64; Tukey HSD comparing phage added once and repeatedly, treatments:estimate=\u20131.63, z-ratio=\u20133.75, p=0.0002; Figure 1b, c). All isolates from the control condition were susceptible to ancestral phages.\n\nThe lower resistance of bacteria when phages were added repeatedly was driven by evolution of increased phage infectivity. When phages were added once, resistance to ancestral phage (14\u20131: 88.64%, \u00b1SE=2.77; PNM: 90.15%, \u00b1SE=2.60) did not differ relative to phage isolated at the end of experimental evolution (90.0%, \u00b1SE=4.27); Tukey HSD comparing end-point phage resistance to contemporary phage to resistance to 14\u20131 (p=1.0) and PNM (p=0.938; Figure 1b). However, when phages were added repeatedly, resistance to ancestral phage (14\u20131: 94.41%, \u00b1SE=1.93; PNM: 96.5%, \u00b1SE=1.54) was significantly higher than to phage isolated at the end of experiment (61.5%, \u00b1SE=12.5), indicative of increased phage infectivity (Tukey HSD comparing end-point phage resistance to contemporary phage to resistance to 14\u20131 (p<0.001) and PNM (p<0.001); Figure 1c). We saw no further evidence of phage evolution in either treatments, with phage resistance being independent to the time point from which phage was isolated during experimental evolution (ANOVA comparing models with and without phage time: phage added: once $\u03c7_{2 }^{2}$=0.41; p=0.814; repeatedly $\u03c7_{2 }^{2}$=0.68; p=0.713; Figure 1c). This suggests the increase in phage infectivity evolved before the first sampling time point (the second transfer, or 96 hr). The absence of any further changes in phages during experimental evolution did not warrant further investigation of the population dynamics of the two inoculated phages.\n\n### Phage resistance-virulence trade-offs\n\nWe next assessed whether phage application altered the virulence of P. aeruginosa populations in vivo and in vitro using a Galleria mellonella infection model. Here, virulence can be calculated as the inverse of G. mellonella survival over time: the more virulent the bacterial isolate, the shorter the time until death. In vivo, phage therapy reduced bacterial virulence by 95.5% on average (median hazard ratio [HR]=0.045, 95% confidence interval [CI]=0.012\u20130.163). When inoculated with bacteria isolated before phage therapy, 479 (99.7%) of G. mellonella died within 46 hr, with death occurring at a mean time of 15 hr (Figure 2a). In contrast, after phage therapy, bacteria killed only 70% of G. mellonella within 50 hr, with mean time of death occurring at 20.5 hr (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig2-v2.jpg)\n\n**Figure 2.:** (a) Virulence of bacterial isolates isolated from before (black) and after (gray) phage therapy. (b) Virulence of bacteria in control populations where no phage is present (yellow) is much greater than populations that were exposed to either a single (orange) or repeated (red) phage applications. (c) Virulence is significantly reduced in bacterial isolates resistant to both phages while bacteria resistant to one phage are nonsignificantly different in virulence to phage susceptible isolates. Lines represent the average prediction and shaded bands represent the 95% credible intervals of those predictions. Proportion and mean time to death of G. mellonella that died are presented as summary statistics for each treatment.\n\nWe also saw a reduction in virulence in vitro when populations had evolved with phage compared to without phage. Bacteria in the phage added once and phage added repeatedly treatments were 96.15% (median HR=0.0385, 95% CI=0.011\u20130.124) and 89.8% (median HR=0.102, 95% CI=0.0294\u20130.355) less virulent on average compared to the no-phage control populations (Figure 2b). In the control populations, 96 (80%) of the G. mellonella died within 47 hr, with death occurring at a mean time of 19 hr. In contrast, only 32.5% and 41.2% of G. mellonella died in the phage added once and phage added repeatedly treatments, respectively, with a mean time to death of 36.7 and 35.4 hr (Figure 2b).\n\nThis difference was driven by two impacts of phage application. First, there was a huge reduction in virulence of bacteria that were resistant to both phages. When resistant to both phages, virulence reduced by 95.69% compared to susceptible bacteria (median HR=0.0431, 95% CI=0.0139\u20130.122) and was 93.33% lower than bacteria resistant to only a single phage (median HR=0.0663, 95% CI=0.0179\u20130.247; Figure 2c). Meanwhile, there was no reduction in virulence for bacteria resistant to just a single phage (median HR=0.653, 95% CI=0.185\u20132.09) when compared to phage susceptible bacteria. Second, even susceptible bacteria became less virulent after phage application, with a 91.14% (median HR=0.0886, 95% CI=0.0246\u20130.344) reduction in the phage added once treatment and an 80.7% reduction when phage was added repeatedly (median HR=0.193, 95% CI=0.04\u20131.06; Figure 2c).\n\n### Growth rate\n\nEvolving resistance against phage can trade-off with growth rate (Buckling et al., 2006; Koskella et al., 2011; Wright et al., 2018), and could be a plausible mechanism for virulence reduction. In the case of the in vivo isolates, the growth rate of pre-phage treatment isolates ($x-$=0.36, 95% CI=0.342\u20130.369) was significantly higher than that of post-treatment isolates ($x-$=0.25, 95% CI=0.195\u20130.302). Post-treatment isolates which evolved resistance (to one or both phages) had a significantly lower growth rate ($x-$=0.21, 95% CI=0.162\u20130.266) than the ancestral isolates ($x-$ = 0.36, 95% CI=0.342\u20130.369). However, the 95% CIs of the susceptible isolates\u2019 growth rate ($x-$=0.33, 95% CI=0.256\u20130.402) overlapped with the ancestral and resistant isolates, indicating nonsignificance, which was likely driven by a lack of statistical power (n=3 susceptible isolates) (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig3-v2.jpg)\n\n**Figure 3.:** Populations were evolved (a, c) in vivo and (b, d) in vitro. (a, b) Changes in bacterial growth were estimated for populations isolated (a) before and after phage treatment, and (b) between control and the phage treatment groups. Single points represent individual bacterial isolates of differing phage resistance levels: resistant to both phages (light blue), resistant to 14\u20131 or PNM (dark blue), or phage susceptible (red). Tops and bottoms of the bars represent the 75th and 25th percentiles of the data, the middle lines are the medians, and the whiskers extend from their respective hinge to the smallest or largest value no further than 1.5* interquartile range.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Measures from the first 2.5 hr were excluded (blue line) as a rise in OD was observed independent of bacterial logistic growth which may skew the rolling regression process. Growth curves were independently replicated a total of three times (a\u2013c) owing to cellular clumping which may have skewed OD measures. (\u2018anc\u2019=ancestral clones; \u2018blank\u2019=uninoculated wells; \u2018control\u2019=control clones; \u2018mix add\u2019=clones from repeated phage treatment; \u2018mix\u2019=clones from treatment where phage were added once; \u2018resist\u2019=phage resistant clones; \u2018susc\u2019=susceptible clones; \u2018sing_res\u2019=in vitro clones resistant to one phage; \u2018TP1\u2019=in vivo clones from day 2; \u2018TP2\u2019=in vivo clones from day 4).\n\nFor in vitro isolates, growth rate was significantly affected by treatment ($\u03c7_{2 }^{2}$=20.14, p<0.001) with the control group having significantly higher growth rates ($x-$=0.43, 95% CI=0.373\u20130.477) compared to treatments in which phage was added once ($x -$=0.30, 95% CI=0.256\u20130.346; p=0.002) or repeatedly ($x-$=0.276, 95% CI=0.235\u20130.318; p<0.001; Figure 3b). No significant difference was observed in growth rates between each phage treatment (Tukey HSD: estimate=0.025, t-ratio=0.95, p=0.628); and changes in growth were not associated with phage resistance (interaction between treatment and resistance: $\u03c7_{2 }^{2}$=0.37, p=0.832; fixed effect of resistance: $\u03c7_{2 }^{2}$=2.98, p=0.226; Figure 3b).\n\n### Biofilm production\n\nBiofilm production is often altered in phage resistant isolates (Harrison et al., 2015; Kim et al., 2015; Scanlan and Buckling, 2012) and this can also affect virulence and growth rate (Li et al., 2008; Wang et al., 2011). Therefore, we compared the biofilm productivity between isolates evolved in vitro and in vivo. For in vivo isolates, there was no significant difference in biofilm production between isolates isolated pre- ($x-$=5.53, 95% CI=5.45\u20135.6) or post-phage therapy ($x-$=5.39, 95% CI=5.27\u20135.5), and between phage resistant ($x-$=5.38, 95% CI=5.27\u20135.50) and susceptible isolates ($x-$=5.39, 95% CI=5.1\u20135.69; Figure 3c).\n\nFor in vitro isolates, there was no significant difference in biofilm production between treatments (treatment\u00d7resistance interaction: $\u03c7_{2 }^{2}$=0.785, p=0.675; treatment: $\u03c7_{2 }^{2}$=4.52, p=0.104). However, phage resistance was associated with increased biofilm production ($\u03c7_{2 }^{2}$=19.12, p<0.001), with phage susceptible isolates ($x-$=5.35, 95% CI=5.16\u20135.54) having lower biofilm production than isolates resistant to one ($x-$=5.85, 95% CI=5.56\u20136.13; p=0.012) or both phages ($x-$=5.93, 95% CI=5.73\u20136.13; p=0.004; Figure 3d).\n\n### Genetic basis of evolutionary changes\n\nGiven the parallel phenotypic differences we observed under in vivo and in vitro conditions, we next explored whether the underlying genetic changes were the same for in vitro and in vivo evolved populations. Results were not affected whether we included only genetic variants occurring in genes of known function or all genetic variants (Figure 5\u2014figure supplement 1). As we were interested in attributing potential functions to the variants identified, we only present the results for genetic variants occurring in genes of known function. From the in vitro pooled sequencing, we found significant changes in 26 different genes with known function (Figure 4), 16 of which changed in frequency compared to the ancestral population (selection on standing genetic variation) while 10 were novel mutations (de novo evolution).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig4-v2.jpg)\n\n**Figure 4.:** The frequency of genes that differed significantly between treatments in vitro is shown. Genetic changes that were already present in the ancestral population (first column) are shown in blue, while de novo mutations are in orange. Only genes whose function was identified are included. Multiple rows of the same gene indicate different genomic variants of the same gene. Colour intensity shows how frequent the genetic change is in the population. For in vitro treatments, each column is an independent replicate representing the results of the pooled sequencing. For the in vivo isolates (final column), all isolates were pooled to visualize the frequency of each genetic change in vivo.\n\nIn terms of genetic distance from the ancestral population, populations in the treatment where phage was added repeatedly diverged more than when phage was added once (Tukey HSD: t=\u20134.32, d.f.=15, p=0.0017), which diverged more from the ancestral populations than the control populations (Tukey HSD: t=\u20138.81, d.f.=15, p<0.0001; Figure 5a and b). Consistent with this, more novel SNPs/indels were found in the treatment populations where phages were added repeatedly (mean=19.2) compared to where phages were added once (mean=11.8, Tukey HSD: t=\u20134.80, d.f.=15, p=0.0006), which in turn had more novel SNPs/indels than control populations (mean=2.5, Tukey HSD: t=\u20136.105, d.f.=15, p=0.0001; Figure 5b). This suggests novel SNPs/indels were potentially more important determinants of phage resistance than selection acting on standing variation. Within-population diversity was highest in phage added repeatedly treatment (Tukey HSD phage added repeatedly vs. phage added once: t=\u20135.96, d.f.=15, p=0.0001; Tukey HSD phage added repeatedly vs. control: t=\u20134.33, d.f.=15, p=0.0016), but there was no difference between control populations and phage added once treatment (Tukey HSD: t=\u20131.14, d.f.=15, p=0.2625; Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig5-v2.jpg)\n\n**Figure 5.:** (a) The divergence of each treatment group as indicated by Euclidean distances of each gene from the ancestral isolates. Genetic changes were characterized as a change in frequency of an existing gene in the ancestor or selection on a mutation that was gained during experimental evolution. The presence of phage significantly affected (b) genotypic distance from the ancestor, (c) the number of new SNPs, and (d) alpha diversity.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) The divergence of each treatment group as indicated by Euclidean distances of each gene from the ancestral isolates. Genetic changes were characterized as a change in frequency of an existing gene in the ancestor or selection on a mutation that was gained during experimental evolution. The presence of phage significantly affected (b) genotypic distance from the ancestor, (c) the number of new SNPs, and (d) alpha diversity.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Individual points represent individual clones isolated at day 2 (n=8) and day 4 (n=2) of phage treatment. Genes that diverged in frequency in vitro from the ancestor are indicated in gray while in vivo clones are overlayed according to their individual genetic make-up. Across quantitative (a\u2013c) and qualitative (d) phenotypic traits, no clustering in genotypes and clones of particular phenotypes is observed.\n\nIn vitro treatment significantly altered genetic composition (i.e., the centroids of phage added once, phage added repeatedly, and control populations were different, Figure 4, PERMANOVA, F3,15=16.05, R2=0.76, p=0.0001). There was no difference in beta-diversity (calculated from distance-to-centroids between groups) between treatments (homogeneity of multi-variation dispersion ANOVA: F3,15=1.65, p=0.22). Genetic changes associated with both in vitro phage treatments, but not control, were flagellar hook-associated protein (flgK) and rod-shape determining proteins (mreC and mreD) (Figure 4). Additionally, genetic changes in DNA mismatch repair (mutS), elongation factor G (fusA), signal recognition particle (ffs), type three secretion system pilotin (yscW), and pilus assembly protein (pilB) were mainly found in vitro in the phage added repeatedly treatment (Figure 4).\n\nWe examined whether these same mutations arose in the clonal in vivo isolates. Out of the 50 genetic changes identified in vitro, the in vivo isolates had a mean of 11.8 changes (maximum=23, minimum=1). Changes in frequencies or mutations were found at 16/26 of the same genes identified in vitro in at least one isolate (Figure 4). Crucially, some of the de novo mutations that were observed at high frequency in vitro also had high frequency in vivo (flgL=30%, mutS=45%, mreC=50%, mreD=30%, and pilB=40%). In total, 31 out of 50 genetic changes (62%) in vitro were found in vivo. Of these, 77% were de novo mutations in vitro, indicating that de novo mutations were also important for phage resistance in vivo.\n\nWe next assessed whether mutations arising in individual isolates in vivo could be linked to phenotypic changes (resistance, virulence, biofilm productivity, and growth rate). If strong genotypic\u2014phenotype links can be made, we would expect isolates to cluster according to their trait value. However, we found no obvious genotype to phenotype links in vivo and due to the small number of isolates, we were unable to conduct robust statistical analyses (Figure 5; Figure 5\u2014figure supplement 2).\n\n## Discussion\n\nParallel evolutionary dynamics were found in vivo and in vitro, showing that laboratory studies can be predictive of certain phenotypic outcomes of clinical phage therapy (phage-mediated decolonization). Levels of phage resistance were comparable in vivo and in vitro with limited phage infectivity evolution occurring only in vitro. While bacteria went extinct in vivo, they persisted with phage in vitro, suggesting that in vitro experiments may be more important in predicting evolutionary than clinical outcomes. Additionally, phage resistance was associated with trade-offs with virulence and bacterial growth and similar mutations or genetic variants could explain these parallel evolutionary changes in both ecological contexts.\n\nParallel evolution is promising for future clinical work in which the trajectory of bacteria and phage (co)evolution may be predicted for individual patients. Given the difference in environments between that of a laboratory and human nasal cavity, it was surprising that evolution was so similar. The nasal cavity would have been more nutrient limited and spatially heterogenous and such conditions have been shown to change bacteria-phage interactions compared to evolution in high-nutrient laboratory growth medium (e.g., Luria broth [LB]). For instance, bacteria-phage coevolution is altered in soil compared to growth medium because of increased costs of resistance in the former (G\u00f3mez and Buckling, 2011); and in plant leaves, bacteria and phage have failed to evolve while otherwise coevolving in the laboratory due to lower bacteria\u2014phage contact rates (Hernandez and Koskella, 2019). Other media types can be used in vitro to replicate in vivo conditions more close (e.g., sputum media) than LB used here which may be more appropriate for other infection types such as those infecting lungs of cystic fibrosis patients (Palmer et al., 2007; Palmer et al., 2005).\n\nRapid phage resistance has been highlighted as a concern for phage therapy development (Torres-Barcel\u00f3, 2018) and was found in this case study. Without ongoing reciprocal phage evolution, phage resistance is likely to lead to regrowth of bacteria during infections; this has been found in a few case studies but has been combatted by selecting a different phage (single or cocktail) (Aslam et al., 2020; Schooley et al., 2017; Wu et al., 2021; Zhvania et al., 2017). That many de novo mutations\u2014as well as selection on existing variation\u2014occurred during bacteria-phage coevolution in vitro and many were also found in vivo (77% of variants observed in vivo also evolved de novo during in vitro coevolution) further highlights the fact that stressful in vivo conditions do not prevent bacteria evolving resistance to phage. However, phage resistance was found to have growth rate costs which may further explain why some isolates remained sensitive to phage, and why decolonization was ultimately successful. The natural nasal microbiota, and host immunity, may have further contributed to this success by outcompeting slower growing phage resistant isolates (Wang et al., 2019). Bacteria did not go extinct in our in vitro experiments which may be reflective of differences in environmental conditions such as nutrient availability and interspecies competition.\n\nResistance-virulence trade-offs have been found in previous in vitro animal models and clinical studies and are expected to improve treatment success in spite of phage resistance (Oechslin, 2018). Phage resistance however is not always costly and likely depends on the genetic background of the bacteria and phage, as well as the environmental context (Meaden et al., 2015; van Houte et al., 2016). The absence of clear links between resistance phenotypes and growth rate within our in vitro treatments, despite clear between-treatment effects, is presumably because the cultures were initiated with genetically diverse clinical isolates, rather than a single ancestral clone. Ultimately, phage resistance was beneficial in controlling the pathogen in this case study and such benefits could have led to treatment success.\n\nPopulation genomics of the isolates in vivo and in vitro revealed parallel genomic changes and the effects of phage selection at a molecular level. In line with previous studies, phage selection accelerated molecular evolution which resulted in populations being more diverged from their ancestral pool than control isolates (in vitro) (Betts et al., 2018; Morgan et al., 2010; Pal et al., 2007). This suggests that phage placed strong selection on bacteria and this further resulted in mutator strains (mutS genotype), especially where phage was added repeatedly in vitro and in vivo, that likely accelerated the rate of evolution further (Morgan et al., 2010). Between both in vivo and in vitro results, mutations selected by phage gave insight into potential mechanisms of resistance. In particular, mutations to mreD and mreC were encoded for cell shape (Cabeen and Jacobs-Wagner, 2005) while missense mutations at flgK and flgL probably resulted in flagella loss (Macnab, 2003). The result of these mutations was likely reduced cell surface area which reduces the probability of phage absorption (Dennehy and Abedon, 2021). pilB mutations were also selected which is likely a surface mutation to prevent PNM (a pilus binding phage) from attaching (Ceyssens et al., 2011).\n\nStrong genotype-phenotype links were difficult to distinguish as a high number of the same mutations or existing variants were selected upon both in vivo and in vitro, and no unique candidate genes were obvious to explain phenotypic differences (i.e., growth rate and biofilm production). Flagella and mreC mutations are associated with increased biofilm production (Whiteley et al., 2001) and as they were found in the in vitro isolates, this may suggest a generalistic phage defence strategy (Harper et al., 2014). However, as these same mutations were found in vivo, without increases in biofilm production, strong genotype\u2014phenotype links are unclear. Surface mutation is a common form of phage resistance (van Houte et al., 2016) but here it appears coupled with mechanisms that prevent absorption more generally; combined, these strategies could have reduced bacterial growth and/or virulence by impairing swarming motility (Haiko and Westerlund-Wikstr\u00f6m, 2013). Motility (Alseth et al., 2019) and resource-use assays (using Biolog plates) may have provided some stronger genotype-phenotype correlations, but this was beyond the scope of this work. In contrast, other studies using the same phage but P. aeruginosa PA01 instead reported mutations predominantly at pilus and LPS receptors, showing that greater selection is placed on specific phage resistance strategies at phage binding sites (Wright et al., 2019; Wright et al., 2018). Our results highlight the importance of genetic background, and hence the use of clinical isolates over laboratory clones, in determining evolutionary trajectories (Betts et al., 2014; Friman et al., 2016; Le\u00f3n and Bast\u00edas, 2015; Rossitto et al., 2018; van Houte et al., 2016).\n\nHow phages were applied in vitro had an impact on phage resistance. Although we observed a greater number of mutations where phages were added repeatedly (mimicking multiple phage doses), the proportion of resistant bacteria (resistance to contemporary phage) at the end of the experiment was significantly lower (61.5%) compared to where phages were just added at the start of the experiment (90%). That resistance of evolved bacteria to the ancestral phages (~90%) did not differ between treatments suggests that differences in resistance to evolved phages were caused by phage infectivity evolution in the repeated phage treatment. This infectivity evolution occurred before the first time point, with no subsequent changes, and was presumably the result of greater mutation supply rate in this repeated phage application treatment. It is interesting that although this \u2018repeated\u2019 treatment mimics clinical methods more closely, these same patterns were not observed in vivo. However, as bacteria went extinct in vivo, it is likely phage generations were fewer which may have restricted phage evolution in the lower resource environment (Lopez-Pascua and Buckling, 2008). Multiple (Manohar et al., 2018) and higher (Barrow et al., 1998; Biswas et al., 2002; Debarbieux et al., 2010; Merril et al., 1996; Sunagar et al., 2010; Vinodkumar et al., 2008; Wang et al., 2006; Wills et al., 2005) phage doses have been shown previously to decrease morbidity and mortality in animal models. Our results build upon this work to show that maintaining high phage titers may have a positive effect in reducing resistant populations despite increasing the strength of selection for resistance.\n\nAlthough our results suggest that the results of laboratory studies may parallel phage resistance\u2014virulence trade-offs during in vivo phage therapy, there a number of important caveats. First, our in vivo results are based on that of a single patient which limits the generalizability of our results. Nevertheless, our replicated in vitro experiments agreed with our in vivo findings, which provide strength behind our conclusions. Second, our in vitro\u2014in vivo results were comparable with regards to the direction of change, but absolute effect sizes were greater in vitro. For instance, we observed a higher proportion of phage resistant isolates in vitro that were also far less virulent than isolates found in vivo. Therefore, it may be expected that phenotypic changes will be exaggerated in vitro. These parallels were further dependent on the different underlying mechanisms (biofilm formation or growth rate) mediating the resistance-virulence trade-off having the same knock-on phenotypic outcomes. Had different environments selected for different phage resistance strategies, this may have resulted divergent phenotypic outcomes for virulence (Alseth et al., 2019). Additionally, as this patient had a nasal colonization, the role of the adaptive immune system would have been heavily reduced (Ooi et al., 2008). The immune system has the potential to improve phage therapy success by synergistically killing bacteria with phage which may diminish the potential for phage resistance by reducing bacterial growth (Leung and Weitz, 2017; Roach et al., 2017). Alternatively, immune cells may kill phage and therefore prevent phage acting on bacterial populations (Van Belleghem et al., 2018). Additionally, the nasal cavity has a diverse microbiome that may have contributed to P. aeruginosa decolonization (Hu et al., 2018; Kumpitsch et al., 2019). The role of the microbiome will differ in infection type, with gut and respiratory infections potentially having a greater microbiome effect (Hu et al., 2018; Kumpitsch et al., 2019; Lloyd-Price et al., 2016) while septic infections may have a greater immune system effect (Van Belleghem et al., 2018). Therefore, it is important to compare laboratory vs in vivo phage therapy in a number of infection types. The genomic background of the bacteria may further affect how sensitive its resistance strategies are to the environment it is in as more costly resistance strategies are more likely to be selected in vitro than in vivo (van Houte et al., 2016). This encompasses not only genetic variation within species but also differences between species that may differ in infection sites, immune responses, virulence and sensitivity to phage (Abedon, 2019; Doffkay, 2015; van Houte et al., 2016). Further work using isolates from case studies and clinical trials will give an insight into the predictability of bacteria and phage evolution from laboratory to in vivo studies.\n\n## Materials and methods\n\n### Patient information, bacteria, and phage strains and phage-bacteria evolution in vivo\n\nBacterial isolates were sampled from a patient as part of a clinical trial in Brussels, Belgium. The patient (85 years old, male) had been admitted to an ICU in 2015 for treatment of burns (10% body area). Independent of his burns, a nasal colonization of P. aeruginosa was observed. Here, the patient was treated every day with a three-phage cocktail (BFC-1) for 5 days, which consisted of two phages (14\u20131 and PNM) that could lytically infect P. aeruginosa. The phage cocktail included a third phage that specifically infects S. aureus bacterium, but this bacterium was not detected in this patient. The phage cocktail has previously been characterized to ensure no prophage elements are present or that the phage carry toxin-encoding genes that may increase bacterial resistance and/or virulence (Merabishvili et al., 2009). Furthermore, a purification process including the removal of endotoxins in phage production was used to ensure such waste products cannot harm patients (Merabishvili et al., 2009). As 14\u20131 infects via a lipopolysaccharide (LPS) (Betts et al., 2014; Kropinski et al., 1977) receptor and PNM uses type IV pili (Ceyssens et al., 2011), resistance to one phage is unlikely to result in cross-resistance and neither phage should compete for receptor sites (Wright et al., 2018). Swabs of both nasal cavities were taken on day 0 (commencement of phage therapy), 2, 4, 7, and 13 and frozen at \u201380\u2103 in lysogeny broth containing 20% glycerol. Individual P. aeruginosa isolates were obtained by plating swabs onto cetrimide selection plates. Colonies were picked and inoculated into LB and grown overnight, shaking at 180 rpm, at 37\u2103 to achieve high cell densities. Additionally, swabs were soaked in LB broth to amplify phage overnight in the same conditions. Phage was isolated from overnight cultures via chloroform extraction: 100 \u00b5l of chloroform was added 900 \u00b5l of culture, vortexed, and then centrifuged (14,000 rpm, 1 min); the supernatant was isolated and stored at 4\u00b0C. Culture samples were frozen in 80% glycerol (final concentration 40%) at \u201380\u2103. Spot assays on lawns of P. aeruginosa P573 (a phage susceptible control strain) confirmed the presence of phage at all time points. Twelve individual plaques were picked at each time point and amplified with an overnight culture of P573 to obtain clonal isolates. Individual isolates of P. aeruginosa were isolated from days 0 (n=24), 2 (n=8), and 4 (n=2) for use in this study and swabs were negative on days 7 and 13.\n\n### Experimental in vitro phage-bacteria evolution\n\nTo examine whether findings in vitro are consistent with in vivo bacteria-phage (co)evolution, phage therapy was replicated in the laboratory. We used two treatments: (1) phage added \u2018once\u2019, at the start of the experiment, and (2) phage added at every second transfer (\u2018repeated\u2019 treatment). The repeated phage treatment aimed to emulate the conditions of the clinical trial (while preventing the buildup of too many ancestral phages in the \u2018closed\u2019 in vitro system) and the \u2018once\u2019 condition was used to assess whether repeated doses change the observed dynamics. The phages were identical to the two lytic phages (14\u20131 and PNM) used in the clinical trial. A control group in which bacteria evolved in the absence of phage was set up and there were six biological replicates in the control and each phage treatment.\n\nPrior to experimental setup, in vivo ancestral isolates (n=24, same isolates as day 0) were individually amplified in LB media and cultured at room temperature for 2 days. Cell densities were estimated via optical density (wavelength 600 nm; OD600) measures. Cultures were centrifuged (14,000 rpm, 3 min), the supernatant removed, and resuspended in M9 buffer to equalize cell densities. These were added to a master-mix in which isolates were equally represented in equal ratio (total 108 CFUs/ml; ~4\u00d7106 CFUs/ml of each isolate). 100 \u00b5l of master-mix (107 CFUs; ~4\u00d7105 CFUs per isolate) was inoculated into 5 ml LB media. 100 \u00b5l of phage was added to treatment microcosms at a total multiplicity of infection (MOI) of 0.5. Microcosms were cultured, shaken (180 rpm), at 37\u2103. 1% transfer (50 \u00b5l culture into 5 ml LB) took place every 2 days for a total of 12 days. At each transfer, culture samples were frozen in glycerol, and in the phage treatments, phages were extracted as described previously. Cultures were diluted and plated from frozen stocks onto LB agar and incubated for 2 days at 37\u00b0C. From each biological treatment replicate and time point (days 4, 8, and 12), 16 bacterial colonies were picked (96 total colonies) for time-shift assays to measure coevolutionary changes. An additional 24 isolates were isolated at day 12 from each treatment and control group replicate for bacterial virulence, growth rate, and biofilm assays. Picked isolates were individually amplified in LB media overnight before being frozen as described previously.\n\n### Measuring resistance-infectivity (co)evolution\n\nTo assess whether bacteria and phage had coevolved in vivo and in vitro, resistance assays were conducted where bacteria were exposed to phage populations from the same/contemporary, past, and future time points (time-shift assays) (Buckling and Rainey, 2002). If bacteria and phage coevolved, both bacteria and phage would show significant changes in resistance and infectivity, respectively, through time. Increases in resistance and infectivity would be indicative of arms race dynamics, while nondirectional changes would be indicative of fluctuating selection dynamics (Lopez Pascua et al., 2014). Infectivity/resistance was determined by spot assays in which 100 \u00b5l of overnight bacterial cultures was added to 5\u20138 \u00b5l soft LB agar overlay and 5 \u00b5l of each ancestral phage, or evolved phage mixture, was spotted onto the overlay. For in vivo isolates, ancestral isolates (isolated pre-phage therapy) and bacterial isolates from days 2 to 4 were tested against the phage clonal isolates from days 2, 4, and 7. A bacterial isolate was scored as susceptible (1=susceptible, 0=resistant) if at least 1 of the 12 clonal phage isolates could infect. For in vivo analyses, each isolate was treated as an individual biological replicate. In vitro isolates from days 4, 8, and 12 were tested (16 colonies per time point) against phage populations isolated from each time point (Figure 6). Each treatment replicates from each time point were defined as biological replicates, while clonal isolates are biological replicates nested within each treatment replicate. In addition, we assessed the infectivity of both ancestral phage against the ancestral bacteria (n=24), the in vivo isolates (n=8), and the in vitro populations from day 12 (n=24 per treatment replicate; Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/73679/elife-73679-fig6-v2.jpg)\n\n**Figure 6.:** For time-series assays, 16 bacterial colonies were randomly selected from each treatment replicate (phage added once or repeatedly, n=6 each) and time point (T1\u2013T3), alongside a phage extract that contains a pool of phage genotypes and species (14\u20131 and PNM). Each colony was then tested for resistance to the pooled isolated across each time point. For phenotypic assays, 24 colonies from T3 replicates of each treatment were screened for resistance to each phage. From these 24 colonies, bacterial colonies of each resistance type were randomly selected for further phenotypic assays. Created with icons from BioRender.com.\n\n### Virulence assays\n\nChanges in bacterial virulence were measured using a G. mellonella infection model (Tsai et al., 2016). Although lacking an adaptive immune system, G. mellonella innate immune systems are comparable with that of vertebrates, making them suitable, and well-used models of virulence in acute infections (Tsai et al., 2016). Note that we define virulence as increased host mortality resulting from parasite infection (May and Anderson, 1990). Virulence of all ancestral (n=24) and in vivo isolates (n=10) were measured; however, two in vivo isolates (from day 2 of phage therapy) were excluded from analyses as time of death was not accurately determined. As few isolates remained phage susceptible (n=3), these were pooled with phage resistant isolates to determine a change in virulence from pre- (ancestral, n=24) to post-phage treatment (n=8). For in vitro isolates, where possible, one resistant and one susceptible (to ancestral phage) isolate were selected from each treatment replicate to give a total of 12 resistant and 12 susceptible isolates, with 14 isolates from the \u2018phage added once\u2019 and 10 isolates from the \u2018phage added repeatedly\u2019 (Figure 6). As some treatment replicates contained no susceptible isolates, multiple susceptible isolates were chosen from the same replicate (Supplementary file 2). Seven in vitro isolates evolved resistance to one phage only (single resistance), therefore their virulence was measured to assess whether changes in virulence were mediated by resistance to one or both phages. The virulence of in vitro isolates was contrasted to six isolates from the control group isolated from six independent replicates.\n\nFor each bacterial isolate (total of 56 biological replicates), 20 G. mellonella larvae (20 technical replicates) were infected with 10 \u00b5l (~100 CFUs) of overnight culture (cells resuspended in M9 buffer) using a sterile syringe. Twenty G. mellonella larvae were injected with 10 \u00b5l of M9 buffer as a technical control. Survival of each larva was assessed every 2 hr for up to 58 hr.\n\n### Growth rate assays\n\nWe measured bacterial growth rates as a potential mechanism underlying virulence variation and cost of resistance for ancestral and all evolved isolates (in vitro and in vivo) tested in the virulence assay. Growth curves were measured in a 96-well plate with 10 \u00b5l of culture (1.0\u00d7105 CFUs) from each isolate inoculated into individual wells containing 140 \u00b5l LB broth. Twenty-six wells remained as blank controls. The plate was incubated in a spectrophotometer (Biotek Instruments Ltd) at 37\u2103 in shaken conditions and OD600 was measured every 20 min for 24 hr to estimate changes in cellular density. Growth curves were independently replicated three times (technical replicates).\n\n### Biofilm assay\n\nBiofilm production of isolates isolated for virulence and growth rate assays was measured using a resazurin assay, based upon a previously described protocol (Peeters et al., 2008). Overnight monocultures were diluted to 0.1 OD600 (~109 CFU/ml) into M9 buffer. 100 \u00b5l of each culture was inoculated into a sterile 96-well plate and incubated at 37\u2103 for 4 hr for cellular adhesion. Then, the supernatant was removed, and wells were washed gently with 100 \u00b5l of M9 buffer by pipetting up and down three times. 100 \u00b5l of fresh LB media was added to each well including 25 controls (no bacteria) and plates were incubated for 16 hr. Liquid was removed and wells were washed with 100 \u00b5l M9 buffer. 100 \u00b5l of fresh M9 was added followed by 10 \u00b5l resazurin solution (final resazurin concentration: 100 \u00b5M). Fluorescence (\u03bbex: 560 nm and \u03bbem: 590 nm) was measured after 1-hr incubation. Biofilm assays were independently replicated three times (technical replicates).\n\n### Sequencing\n\nWe sequenced the genomes of the bacterial isolates used for the in vitro experiment to establish to what extent evolution was driven by de novo mutation or selection on existing genetic variation. This is especially pertinent as the experiment did not start from a clonal population, rather from 24 isolates (which included an isolate that was resistant to one phage). At the end of the experiment, we picked 24 isolates, extracted DNA from isolates individually, and performed whole-genome sequencing (WGS) on pools of the bacterial isolates that were isolated from each replicate (pool-seq). Total DNA extraction (19 pooled-isolate samples) was performed using the \u2018Qiagen QIAmp DNA Mini Kit\u2019 following the manufacturer\u2019s instructions. An Illumina HiSeq 2000 sequencer was used to generate 250-bp paired reads from a 500-bp insert library.\n\nReads were trimmed for the presence of Illumina adapter sequences and for quality scores below 10 using TrimGalore (v0.6.4_dev, powered by Cutadapt). TrimGalore also removed any paired-end reads when one of the paired-end reads was shorter than 20 bp. Trimmed reads were mapped to the P. aeruginosa UCBPP-14 reference genome (Locus: NC_008463) with bwa-mem (v0.7.17-r1188), and duplicates were marked using samblaster (v0.1.24). Subsequent bam files were split into mapped and unmapped reads, sorted, and indexed using samtools (v0.1.19-44428cd). Across all files, ~93% of the reads mapped to the reference genome (minimum 92.5%), giving on average ~12,000,000 reads per replicate (minimum 8,807,569). Variants were identified using freebayes (v1.3.2-dirty) with ploidy set to 24 (-p 24) and we assumed pooled samples with a known number of genome copies (--pooled-discrete). Due to the high ploidy of the pooled samples, we reduced the number of alleles that are considered at the cost of sensitivity to lower frequency alleles at multiallelic loci by setting --use-best-n-alleles 4.\n\nNext, we compiled the vcf files (standard output of SNP callers) into R using the package vcfR and kept only the variants that were sequenced at a depth within two standard deviations of the mean. Variants were further filtered to retain only those with quality scores >30. We used the two replicate sequencing runs of the same samples to conservatively identify variants; variants were only kept if they occurred in both sequencing runs and if there was less than 0.3 difference in frequency between runs. We then only kept variants that had different frequency than the ancestor (>1/24 difference in frequency). To identify significant differences in genetic variants (SNPs and indels) between treatments, we first filtered unique that were present in at least three replicates of any treatment. This identified 960 potential variants. We then performed a Wilcoxon test on each variant, with frequency as the response variable and treatment (control, phage added once, and phage added repeatedly) as the predictor. Significant genetic variants were identified if the adjusted p value (fdr method) was <0.05. Of these significant changes, 160 were existing genetic variants and 120 were novel mutations. We then checked where each variant was in the genome and only retained variants that occurred in a gene. After these steps, 50 genetic variants were identified in genes of known function, and 236 in genes of unknown function. We performed all downstream statistical analyses on (a) only genetic variants in genes of known function and (b) all genetic variants.\n\nFor the in vivo isolates, DNA extraction and WGS were conducted on each isolate individually by MicrobesNG using in-house protocols (MicrobesNG Sequencing Service Methods, 2021). WGS was carried out on each isolate individually by MicrobesNG using Illumina sequencers (HiSeq/NovaSeq) to create 250-bp paired-end reads. In-house processing by MicobesNG trimmed the adapters and removed reads with a quality <15. We then processed the reads as for the pooled sequencing, except ploidy was set to 1 when using freebayes. On average, 81% of reads mapped back to the reference genome, but there was more variation as compared to the in vitro experiment, with a minimum of 44% and a maximum of 94%. As we only had isolates from a single patient, there was limited statistical analysis we could do, so we primarily concentrated on whether the significant changes found in vitro were also present in the in vivo isolates.\n\n### Statistical analyses\n\nAll data were analyzed using R (v.4.0.3) in RStudio (R Development Core Team, 2013) and all plots were made using the package \u2018ggplot2\u2019 (Wickham, 2016). Model simplification was conducted using likelihood ratio tests and Tukey\u2019s post hoc multiple comparison tests were used to identify the most parsimonious model using the R package \u2018emmeans\u2019 (Lenth, 2018). First, we established whether bacteria and phage had coevolved in vivo and in each in vitro treatment using general linear mixed-effects models. Models were fitted using the package \u2018lme4\u2019 (Bates et al., 2015). In vivo isolates from day 4 were excluded as their small sample size (n=2) prevented model convergence. For in vivo isolates: infection (1=susceptible, 0=resistant) was analyzed against phage time point (fixed effect) with a binomial error structure. A random effect of \u2018isolate\u2019 was included to account for the same bacterial isolate being used in infectivity assays across each phage time point. For in vitro analyses, the proportion of isolates infected was analyzed against fixed effects of phage and bacterial time points with separate models for each phage treatment. To see if there were any differences in phage resistance to ancestral phage or in vitro phage isolates at the end of the experiment, the proportion of isolates infected was analyzed against fixed effects of phage treatment and phage type (ancestral or end-point phage). All in vitro models included a random effect of \u2018replicate\u2019 (which treatment replicate isolates had been isolated from) with a binomial error structure.\n\nVirulence of bacterial isolates was analyzed based on survival of Galleria infected with different bacterial isolates. Survival curves were fitted using Bayesian regression models using the package \u2018rstanarm\u2019 (Goodrich, 2020) and parameters were estimated using \u2018tidybayes\u2019 (Kay and Mastny, 2020). For all models, we fit a proportional hazards model with an M-splines baseline hazard. Models were ran for 3000 iterations and three chains were used with uninformative priors. Model convergence was assessed using Rhat values (all values were 1) and manually checking chain mixing. For all models, log hazards were estimated for each treatment value and HRs were calculated as the exponential of the difference between two log hazards. A HR below 1 indicates a decrease in virulence compared to the baseline treatment, with a value above 1 indicating an increase in virulence. Median HRs with 95% credible intervals that do not cross 1 indicate a significant difference in virulence between the two factors. Proportion of Galleria that died and mean time to death of Galleria that died were calculated as summary statistics for each treatment.\n\nFor virulence analyses of in vivo isolates, treatment (pre- or post-phage therapy) was the only predictor of survival, with a random effect of \u2018isolate\u2019 added to account for multiple Galleria larvae being infected by the same isolate. For the in vitro isolates, survival was analyzed against interacting fixed effects of resistance (resistant, single resistant, and susceptible) and treatment (no phage added, phage added once, and phage added repeatedly). Here, an additional random effect of \u2018replicate\u2019 was included to account for clonal nonindependence.\n\nBiofilm productivity of in vitro isolates was estimated using linear mixed-effects models. Biofilm production (fluorescence 560/590 nm) was log transformed to account for the data being abundance-based. Biofilm production was averaged over each technical replicate for each biological replicate (individual bacterial isolates). Biofilm production was used as the response variable and explained with interacting fixed effects of treatment and phage resistance, while treatment replicate was included as a random effect. Due to the low number of isolates, biofilm productivity of in vivo isolates from before and after phage treatment as well as phage susceptible and resistant isolates were estimated using a nonparametric bootstrap using the R package \u2018boot\u2019 (Canty and Ripley, 2021). Non-overlapping 95% CIs were interpreted as being significantly different.\n\nGrowth rates were estimated using a rolling regression taking the steepest slope of the linear regression between ln OD600 and time in hours in a shifting window of every seven time points (every 2.3 hr). Growth rate was averaged over each technical replicate for each biological replicate (individual bacterial isolates). For in vitro isolates, growth rate was analyzed against treatment and resistance in a linear mixed-effects model with a random effect of treatment \u2018replicate.\u2019 Growth rates of isolates pre- and post-phage treatment, and resistant and susceptible in vivo isolates were compared using 95% CIs that were estimated using a nonparametric bootstrap.\n\nTo explore genetic differences of in vitro isolates, we calculated several commonly used metrics using the frequency data of the 50 variants in known genes that differed significantly between our treatments: (1) the genetic distance from the ancestral population, calculated as the sum of the difference of the proportion of each SNP/indel in each population from the ancestral proportion; (2) the number of unique de novo SNPs/indels in each population; (3) alpha diversity, calculated using a modified version of the Hardy-Weinberg equilibrium, such that $\\alpha= \\sum(1- p_{i}^{2}- q_{i}^{2})$, where i is the position of each SNP/indel, p is the proportion of the SNP/indel, and q is 1\u2013p. This is equivalent to expected heterozygosity. Differences between these metrics were analyzed using linear models. To test whether consistent genetic differences occur within treatments, we performed nonmetric multidimensional scaling on the Euclidean distance matrix of SNPs/indels and their proportions in each population using \u2018metaMDS\u2019 in the R package \u2018vegan.\u2019 Nonmetric multidimensional scaling aims to collapse information from multiple dimensions (i.e., from different populations and multiple SNPs/indels per population) into just a few, allowing differences between samples to be visualized and interpreted. Permutational ANOVA tests were run using \u2018vegan::adonis,\u2019 with Euclidean distance as the response term and treatment as the predictor variable with 9999 iterations. Changes in beta-diversity were examined using \u2018vegan::betadisper\u2019 based on the same response and predictor variables as in the PERMANOVA.\n\nFor the in vivo sequencing, we looked for the presence of variants found to be significant in vitro in the in vivo isolates. To see if any of the genetic changes could explain differences in phenotypes of the isolates, we used nonmetric multidimensional scaling as described previously. Phenotypic traits of the isolates (virulence, growth rate, resistance profile, and biofilm production) were then mapped onto the resulting NMDS plot to see whether observed genetic changes correlated with any changes in phenotypes (Figure 5\u2014figure supplement 2).\n\n### Data cleaning\n\nBefore growth rate analyses, data points from the first 2.5 hr were removed as a sharp increase in OD was observed before lag phase independent of exponential growth (Figure 3; Figure 3\u2014figure supplement 1).\n\nIn the in vitro data set, one replicate in the control and one in the susceptible treatments were found to be outliers that significantly impacted data analysis. In the susceptible treatment, the outlier (711) had a value 2.9\u00d7 greater than the group mean (246.9) and this was 2.7\u00d7 greater than the next nearest value (266.1). Similarly, in the control group, the outlier (708.6) had a value 2.26\u00d7 greater than the group mean (313.5) and this was 2.5\u00d7 greater than the next nearest value (278). We subsequently determined the impact of these values individually and when together on model output by sequentially removing these from the data set (Supplementary files 3 and 4). Resistance was significant regardless of outlier removal (Supplementary file 3) as were comparisons between resistant and susceptible groups (Supplementary file 4). Although treatment became significant when the susceptible outlier was removed, all Tukey-HSD comparisons were nonsignificant. The only change detected in Tukey HSD comparisons was that between the single resistant and susceptible isolates which was found when the susceptible and both outliers were removed (Supplementary file 4).\n",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c1e20b2f-6e4b-4974-b99e-56fea127ed45",
+      "submission_id": "d45f3d63-3b6f-4415-8573-f9897fc0201c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73679.sa0](https://doi.org/10.7554/eLife.73679.sa0)\n\nWith the increased interest in phage therapy to treat antibiotic resistant infections, there are questions about the ease at which bacteria evolve phage resistance. To examine this, Castledine et al. cultured a set of bacterial isolates from a patient pre- and during phage therapy and also experimentally evolved a mixture of the bacterial isolates from the patient in the absence or presence of phage in vitro. Overall, the authors observed similarities between the evolutionary outcomes (genomic and phenotypic) in the patient and in vitro.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.73679.sa1](https://doi.org/10.7554/eLife.73679.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Parallel evolution of phage resistance \u2013 virulence trade \u2013 offs during\u00a0in vitro\u00a0and nasal\u00a0Pseudomonas aeruginosa\u00a0phage treatment\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Gisela Storz serving as Reviewing and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nThe reviewers thought this study was a strong candidate for eLife but suggest important edits and additional genomic analysis to improve the paper.\n\nReviewer #1 (Recommendations for the authors):\n\n1. The title is difficult to parse. Perhaps change to: \"Parallel evolutionary responses by Pseudomonas aeruginosa to phage therapy in vivo and in vitro lead to enhanced phage resistance and loss of virulence\".\n\n2. Line 79-80 this wording is slightly odd. Do you mean that the supply of genetic variation is determined by population size and gene flow?\n\n3. Line 103 there is something up with the hyphens/dashes here. I think perhaps you are using the wrong symbol?\n\n4. Line 131-132 this requires a citation e.g. Wright et al. 2018.\n\n5. Figure 1. I find this figure difficult to understand; I can't understand why you use different formats for A versus B/C or why you have a line connecting the ancestral phages to the in vivo isolated phages in panel A? The simplest fix would be to change panel A to match the format of panel B/C.\n\n6. Virulence assays: do these test virulence or the ability to establish acute infection i.e. did you sample bacteria from the waxmoth at the end to see if they did indeed establish infection?\n\n7. Phenotype-genotype correlations: another caveat here is that you tested a limited number of phenotypes; adding motility, resource use etc. would have been interesting and are known to be affected by phage resistance.\n\n8. Line 621 these references don't really support the statement about molecular evolution as neither did any sequencing? Perhaps Betts et al. Science 2018 would be better?\n\nReviewer #2 (Recommendations for the authors):\n\nThis work is a nice contribution to the literature on understanding bacteria-phage interactions in different conditions. Below I have included some questions that remained for me after reading the manuscript, and specific suggestions for improving clarity.\n\n1. In general, I often found it hard to follow where isolates were coming from for the different assays. An overview schematic/diagram figure might help clarify.\n\n2. I thought it was particularly interesting that evolutionary similarities were found using LB as the in vitro media (and not a media type meant to replicate the in vivo environment). Could be interesting to highlight or at least mention in the discussion.\n\n3. Line 124: \"The phage cocktail included a third phage that specifically infects S. aureus bacterium but was not detected in this patient.\" Was S. aureus or the third phage not detected in the patient? The language is unclear to me.\n\n4. Line 149: Could the authors comment on why the \"repeated\" treatment was done using added phage every two transfers, with the transfers occurring two days apart? I am curious why this was chosen rather than applying phage daily as was done in vivo.\n\n5. Line 162: An MOI of 0.5 was used in vitro \u2013 is there any idea/estimate of whether this was similar to what was applied in vivo?\n\n6. Lines 184-186: I am curious about what the results would look like if the bacterial resistance/susceptibility data were not condensed to this binary metric (given that the authors have access to this information!). Is there any relationship between # of phages an isolate is resistant to and the other traits measured in this study?\n\n7. Line 191: Could the authors comment more on the relevance of this model for virulence in humans (possibly in the discussion)?\n\n8. Line 368: \"In subsequent tests of phage resistance to phage isolates isolated in vivo\" I found this wording unclear.\n\n9. Line 374: Is \"7\" meant to be \"4\"?\n\n10. Line 383 Figure 1: The text is written mostly in terms of bacterial resistance, but the y-axis in this figure is plotting susceptibility. I think it would be easier to follow if the y-axis is proportion resistant.\n\n11. Line 403: \"there was a significantly higher proportion of phage resistant bacteria in the treatment where phages were added once compared to when phages were added repeatedly\" I think as written this is a little misleading \u2013 I am assuming (although not sure) that this is comparing proportion of T3 bacterial resistance to the T3 phages from the different treatments (which are different sets of phages). When comparing resistance to the same phages (e.g. the ancestral phages as shown in Figure 1b and 1c), bacteria from the \"repeated\" treatment have similar or even possibly higher levels of resistance. Note this was also written similarly in lines 650-651.\n\n12. Line 453 Figure 2: Why is there no legend below panel a?\n\n13. Line 501 Figure 3d: Given that the significant result here was that phage resistant isolates had increased biofilm production compared to phage sensitive isolates, it would be nice to see the boxplots broken down by resistance/sensitivity.\n\n14. Line 602-603: \"That resistance emerged predominantly by de novo mutations and not selection on existing variation\" how exactly was this concluded?\n\n15. Various possible typos/errors: line 151 (\"assessed\"), lines 247-248 (\"called identified\"), line 265 (\"were occurred\"), lines 267-268 (\"DNA extraction and whole genome sequencing on each isolate individually\"), lines 378-379 (\"apart from to\"), line 455 (\"bacterial\").\n",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d3daec3a-597c-4797-b551-462188fa1cf5",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C1",
+      "claim": "By 2050, as many as 10 million people may die annually from antimicrobial-resistant infections.",
+      "claim_type": "EXPLICIT",
+      "source": "By 2050, as many as 10 million people may die annually from antimicrobial-resistant infections (WHO, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO 2019 report",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "1c1cfc5e-4e1c-4994-a477-e872459d7d79",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C2",
+      "claim": "Phage therapy uses viruses (phage) that infect pathogenic bacteria to clear infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage therapy uses viruses (phage) that infect pathogenic bacteria to clear infections (Kwiatek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kwiatek et al., 2020",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "de45dbdd-63c3-486c-862f-bcefd303847b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C3",
+      "claim": "Phage therapy is species-specific and does not harm beneficial microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage therapy has several advantages to antibiotics by being species-specific (thus not harming beneficial microbiota) (Koskella and Meaden, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koskella and Meaden, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "b2ae3810-600f-42c0-af35-1b9fc63cd3cd",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C4",
+      "claim": "Phages are self-amplifying at infection sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage therapy has several advantages to antibiotics by being species-specific (thus not harming beneficial microbiota) (Koskella and Meaden, 2013) and self-amplifying at infection sites (G\u00f3rski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to G\u00f3rski et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "51a16163-af09-4376-8b83-3e0f49b3b7ff",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C5",
+      "claim": "Bacteria can evolve resistance to phages within hours.",
+      "claim_type": "EXPLICIT",
+      "source": "A major consideration with the use of therapeutic phages is the ease and speed (sometimes within hours) at which bacteria can evolve resistance, which can greatly limit the therapeutic potential of phages (Jariah and Hakim, 2019; Torres-Barcel\u00f3, 2018; Torres-Barcel\u00f3 and Hochberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jariah and Hakim, 2019; Torres-Barcel\u00f3, 2018; Torres-Barcel\u00f3 and Hochberg, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "1604457a-7d9d-4f37-8fd5-034f8d3c72e2",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C6",
+      "claim": "Phage can sometimes evolve to overcome bacterial resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, phage can sometimes evolve to overcome this resistance (i.e., bacteria-phage coevolution) and so they may continue lowering bacterial densities (Gandon et al., 2008; Hampton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gandon et al., 2008; Hampton et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "41c21260-369d-4834-8d48-859a804de309",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C7",
+      "claim": "Phage resistance can trade-off against bacterial growth rates and virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, resistance can trade-off against bacterial growth rates and virulence; as the alteration or loss of bacterial surface structures, typically associated with phage resistance, can affect other fitness-related phenotypes such as nutrient uptake, biofilm formation, and binding of host receptors (Mangalea and Duerkop, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mangalea and Duerkop, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "98950398-1552-46d4-8ae0-113e9126d304",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C8",
+      "claim": "The nasal cavity can act as a source of infection from highly drug-resistant Pseudomonas aeruginosa and Staphylococcus aureus when patients undergo hospitalization and are treated with broad-spectrum antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "The nasal cavity can act as a source of infection, notably from highly drug-resistant Pseudomonas aeruginosa and Staphylococcus aureus when patients undergo hospitalization and are treated with broad-spectrum antibiotics (Mainz et al., 2009; Wertheim et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mainz et al., 2009; Wertheim et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "dc468ae5-721b-4223-8d92-b4bf29988e4e",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C9",
+      "claim": "Of the 24 ancestral isolates isolated in vivo at day 0, 23 were susceptible to both the ancestral phage (14\u20131 and PNM) while one was resistant to 14\u20131 but susceptible to PNM.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 24 ancestral isolates isolated in vivo at day 0, 23 were susceptible to both the ancestral phage (14\u20131 and PNM) while one was resistant to 14\u20131 but susceptible to PNM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from resistance testing of ancestral isolates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "4368a04c-313a-451e-8919-c159424f3d55",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C10",
+      "claim": "All ancestral bacteria were susceptible to phage isolated from the patient during and after decolonization.",
+      "claim_type": "EXPLICIT",
+      "source": "All ancestral bacteria were susceptible to phage isolated from the patient during and after decolonization (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "d5089375-b3d8-494c-b902-c1c162038fc4",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C11",
+      "claim": "After 2 days of in vivo phage therapy, more than half of bacterial isolates were resistant to ancestral phage.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2 days, we saw evidence of resistance evolution, with more than half of bacterial isolates being resistant to ancestral phage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from time-shift assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c5afc710-3411-4286-847c-979488712bbc",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C12",
+      "claim": "One of the two isolates isolated at day 4 was phage resistant and no P. aeruginosa was detected from nasal swabs after this time point.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the two isolates isolated at day 4 was phage resistant and no P. aeruginosa was detected from nasal swabs after this time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from bacterial isolation and resistance testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "67ad3cd9-aac9-4e8a-b4ca-37efbe9381be",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C13",
+      "claim": "Bacterial populations from days 2 and 4 showed observationally higher phage resistance (87.5% day 2, 100% day 4) against day 2 phage, but this was nonsignificantly different to resistance shown to ancestral phage and phage from days 4 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both bacterial populations from days 2 and 4 showed observationally higher phage resistance (87.5% day 2, 100% day 4) against day 2 phage, this was nonsignificantly different to resistance shown to ancestral phage and phage from days 4 and 7 (Tukey HSD: p>0.05; Supplementary file 1; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (Tukey HSD) of experimental data shown in Figure 1a and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "421f2ade-4b0d-44fc-a01b-5ab539119f68",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C14",
+      "claim": "Resistance to phage increased through time in vitro, reaching comparable levels to that observed in vivo (>50%).",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance to phage increased through time, reaching comparable levels to that observed in vivo (>50%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from in vitro evolution experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c0888e38-7bf0-4c9e-9225-444a83f1f787",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C16",
+      "claim": "There was a significantly higher proportion of bacteria resistant to contemporary phage at the end of the experiment in the treatment where phages were added once (90.81%) compared to when phages were added repeatedly (66.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "there was a significantly higher proportion of bacteria resistant to contemporary phage present at the end of the experiment in the treatment where phages were added once (90.81%, \u00b1SE=0.0003) compared to when phages were added repeatedly (66.7%, \u00b1SE=7.64; Tukey HSD comparing phage added once and repeatedly, treatments:estimate=\u20131.63, z-ratio=\u20133.75, p=0.0002; Figure 1b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of experimental data shown in Figure 1b and c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "d32b60ee-97fa-40f2-82f3-637298bb63c6",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C17",
+      "claim": "All isolates from the control condition were susceptible to ancestral phages.",
+      "claim_type": "EXPLICIT",
+      "source": "All isolates from the control condition were susceptible to ancestral phages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from resistance testing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "389c97bc-25b5-48c3-b539-e7b0edb52a5c",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C18",
+      "claim": "When phages were added once, resistance to ancestral phage (14\u20131: 88.64%; PNM: 90.15%) did not differ relative to phage isolated at the end of experimental evolution (90.0%).",
+      "claim_type": "EXPLICIT",
+      "source": "When phages were added once, resistance to ancestral phage (14\u20131: 88.64%, \u00b1SE=2.77; PNM: 90.15%, \u00b1SE=2.60) did not differ relative to phage isolated at the end of experimental evolution (90.0%, \u00b1SE=4.27); Tukey HSD comparing end-point phage resistance to contemporary phage to resistance to 14\u20131 (p=1.0) and PNM (p=0.938; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of experimental data shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "e395bd41-f459-4ba2-9f5c-4e340aacf545",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C19",
+      "claim": "When phages were added repeatedly, resistance to ancestral phage (14\u20131: 94.41%; PNM: 96.5%) was significantly higher than to phage isolated at the end of experiment (61.5%), indicative of increased phage infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when phages were added repeatedly, resistance to ancestral phage (14\u20131: 94.41%, \u00b1SE=1.93; PNM: 96.5%, \u00b1SE=1.54) was significantly higher than to phage isolated at the end of experiment (61.5%, \u00b1SE=12.5), indicative of increased phage infectivity (Tukey HSD comparing end-point phage resistance to contemporary phage to resistance to 14\u20131 (p<0.001) and PNM (p<0.001); Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of experimental data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "7163da79-5764-44ff-95b7-6fb32500689c",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C20",
+      "claim": "The increase in phage infectivity evolved before the first sampling time point (the second transfer, or 96 hr) in the repeated phage treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the increase in phage infectivity evolved before the first sampling time point (the second transfer, or 96 hr).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that phage resistance was independent of phage time point during experimental evolution",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "be455c7c-cda1-49a4-add8-120a7f41c587",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C21",
+      "claim": "In vivo, phage therapy reduced bacterial virulence by 95.5% on average (median hazard ratio=0.045, 95% confidence interval=0.012\u20130.163).",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, phage therapy reduced bacterial virulence by 95.5% on average (median hazard ratio [HR]=0.045, 95% confidence interval [CI]=0.012\u20130.163).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "a8857ec5-cd0b-4444-8851-08eb47686248",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C22",
+      "claim": "When inoculated with bacteria isolated before phage therapy, 479 (99.7%) of G. mellonella died within 46 hr, with death occurring at a mean time of 15 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "When inoculated with bacteria isolated before phage therapy, 479 (99.7%) of G. mellonella died within 46 hr, with death occurring at a mean time of 15 hr (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Galleria mellonella infection assays shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "ebf32088-96d2-499d-b01f-ac45d48f26dc",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C23",
+      "claim": "After phage therapy, bacteria killed only 70% of G. mellonella within 50 hr, with mean time of death occurring at 20.5 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, after phage therapy, bacteria killed only 70% of G. mellonella within 50 hr, with mean time of death occurring at 20.5 hr (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Galleria mellonella infection assays shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c35c97ca-e715-48cd-bb7d-46256385908f",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C24",
+      "claim": "Bacteria in the phage added once treatment were 96.15% less virulent on average compared to the no-phage control populations (median HR=0.0385, 95% CI=0.011\u20130.124).",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria in the phage added once and phage added repeatedly treatments were 96.15% (median HR=0.0385, 95% CI=0.011\u20130.124) and 89.8% (median HR=0.102, 95% CI=0.0294\u20130.355) less virulent on average compared to the no-phage control populations (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "858b7cac-4f08-4f54-9351-aa22f92f1565",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C25",
+      "claim": "Bacteria in the phage added repeatedly treatment were 89.8% less virulent on average compared to the no-phage control populations (median HR=0.102, 95% CI=0.0294\u20130.355).",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria in the phage added once and phage added repeatedly treatments were 96.15% (median HR=0.0385, 95% CI=0.011\u20130.124) and 89.8% (median HR=0.102, 95% CI=0.0294\u20130.355) less virulent on average compared to the no-phage control populations (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "291d318f-5e49-47eb-b2aa-897fafda1a15",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C26",
+      "claim": "In the control populations, 96 (80%) of the G. mellonella died within 47 hr, with death occurring at a mean time of 19 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control populations, 96 (80%) of the G. mellonella died within 47 hr, with death occurring at a mean time of 19 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from Galleria mellonella infection assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "7100cb53-56ea-4971-a7c4-9523912aa5b0",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C27",
+      "claim": "In the phage added once treatment, only 32.5% of G. mellonella died with a mean time to death of 36.7 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 32.5% and 41.2% of G. mellonella died in the phage added once and phage added repeatedly treatments, respectively, with a mean time to death of 36.7 and 35.4 hr (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Galleria mellonella infection assays shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "91a78e3b-fbca-43d2-a0ac-f9ce7ac23248",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C28",
+      "claim": "In the phage added repeatedly treatment, 41.2% of G. mellonella died with a mean time to death of 35.4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only 32.5% and 41.2% of G. mellonella died in the phage added once and phage added repeatedly treatments, respectively, with a mean time to death of 36.7 and 35.4 hr (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Galleria mellonella infection assays shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "e34fb8e4-6389-4e26-b501-b54a531ab4fe",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C29",
+      "claim": "When resistant to both phages, virulence reduced by 95.69% compared to susceptible bacteria (median HR=0.0431, 95% CI=0.0139\u20130.122).",
+      "claim_type": "EXPLICIT",
+      "source": "When resistant to both phages, virulence reduced by 95.69% compared to susceptible bacteria (median HR=0.0431, 95% CI=0.0139\u20130.122) and was 93.33% lower than bacteria resistant to only a single phage (median HR=0.0663, 95% CI=0.0179\u20130.247; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "b8e235a5-9ca1-4152-ae37-03160c2f969a",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C30",
+      "claim": "Bacteria resistant to both phages were 93.33% lower in virulence than bacteria resistant to only a single phage (median HR=0.0663, 95% CI=0.0179\u20130.247).",
+      "claim_type": "EXPLICIT",
+      "source": "When resistant to both phages, virulence reduced by 95.69% compared to susceptible bacteria (median HR=0.0431, 95% CI=0.0139\u20130.122) and was 93.33% lower than bacteria resistant to only a single phage (median HR=0.0663, 95% CI=0.0179\u20130.247; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "f95356aa-5d1e-4437-8407-a0dc626db67c",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C31",
+      "claim": "There was no reduction in virulence for bacteria resistant to just a single phage (median HR=0.653, 95% CI=0.185\u20132.09) when compared to phage susceptible bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, there was no reduction in virulence for bacteria resistant to just a single phage (median HR=0.653, 95% CI=0.185\u20132.09) when compared to phage susceptible bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "4684992b-bf18-4528-bdbf-b4089b4b5d7a",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C32",
+      "claim": "Susceptible bacteria became less virulent after phage application, with a 91.14% reduction in the phage added once treatment (median HR=0.0886, 95% CI=0.0246\u20130.344).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, even susceptible bacteria became less virulent after phage application, with a 91.14% (median HR=0.0886, 95% CI=0.0246\u20130.344) reduction in the phage added once treatment and an 80.7% reduction when phage was added repeatedly (median HR=0.193, 95% CI=0.04\u20131.06; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "090082c2-7d6b-4d7a-bd07-745ba6a57366",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C33",
+      "claim": "Susceptible bacteria showed an 80.7% reduction in virulence when phage was added repeatedly (median HR=0.193, 95% CI=0.04\u20131.06).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, even susceptible bacteria became less virulent after phage application, with a 91.14% (median HR=0.0886, 95% CI=0.0246\u20130.344) reduction in the phage added once treatment and an 80.7% reduction when phage was added repeatedly (median HR=0.193, 95% CI=0.04\u20131.06; Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Bayesian regression analysis of Galleria mellonella survival data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "5e82ad15-75ef-4b29-abe3-f6b1775978ee",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C38",
+      "claim": "No significant difference was observed in growth rates between each phage treatment (Tukey HSD: estimate=0.025, t-ratio=0.95, p=0.628).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was observed in growth rates between each phage treatment (Tukey HSD: estimate=0.025, t-ratio=0.95, p=0.628)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of experimental growth rate data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "a3cd432c-fb60-4085-bd4e-3101562ca024",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C45",
+      "claim": "From the in vitro pooled sequencing, significant changes were found in 26 different genes with known function.",
+      "claim_type": "EXPLICIT",
+      "source": "From the in vitro pooled sequencing, we found significant changes in 26 different genes with known function (Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "0562a027-c68e-4464-a192-e17f08d9165d",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C46",
+      "claim": "16 genetic variants changed in frequency compared to the ancestral population (selection on standing genetic variation) while 10 were novel mutations (de novo evolution).",
+      "claim_type": "EXPLICIT",
+      "source": "16 of which changed in frequency compared to the ancestral population (selection on standing genetic variation) while 10 were novel mutations (de novo evolution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "4f43f535-d6e0-4574-9587-ccb3f57d7954",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C47",
+      "claim": "Populations in the treatment where phage was added repeatedly diverged more than when phage was added once (Tukey HSD: t=\u20134.32, d.f.=15, p=0.0017).",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of genetic distance from the ancestral population, populations in the treatment where phage was added repeatedly diverged more than when phage was added once (Tukey HSD: t=\u20134.32, d.f.=15, p=0.0017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "0a0d7a13-8ecb-4d41-83f2-1026fb520ef8",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C48",
+      "claim": "Populations where phage was added once diverged more from the ancestral populations than the control populations (Tukey HSD: t=\u20138.81, d.f.=15, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "which diverged more from the ancestral populations than the control populations (Tukey HSD: t=\u20138.81, d.f.=15, p<0.0001; Figure 5a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data shown in Figure 5a and b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "0e1cd9b2-5ac8-4a75-bad1-cf4ab24eb470",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C49",
+      "claim": "More novel SNPs/indels were found in the treatment populations where phages were added repeatedly (mean=19.2) compared to where phages were added once (mean=11.8, Tukey HSD: t=\u20134.80, d.f.=15, p=0.0006).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, more novel SNPs/indels were found in the treatment populations where phages were added repeatedly (mean=19.2) compared to where phages were added once (mean=11.8, Tukey HSD: t=\u20134.80, d.f.=15, p=0.0006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "03796456-7a8d-4305-bb43-087a9a64083d",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C50",
+      "claim": "Populations where phages were added once had more novel SNPs/indels than control populations (mean=2.5, Tukey HSD: t=\u20136.105, d.f.=15, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "which in turn had more novel SNPs/indels than control populations (mean=2.5, Tukey HSD: t=\u20136.105, d.f.=15, p=0.0001; Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c238279f-a4a6-46dd-a887-46b9bc8b5a66",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C51",
+      "claim": "Within-population diversity was highest in phage added repeatedly treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Within-population diversity was highest in phage added repeatedly treatment (Tukey HSD phage added repeatedly vs. phage added once: t=\u20135.96, d.f.=15, p=0.0001; Tukey HSD phage added repeatedly vs. control: t=\u20134.33, d.f.=15, p=0.0016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c44a04d8-4deb-4c2a-966d-ee11aa84d8db",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C52",
+      "claim": "There was no difference in within-population diversity between control populations and phage added once treatment (Tukey HSD: t=\u20131.14, d.f.=15, p=0.2625).",
+      "claim_type": "EXPLICIT",
+      "source": "but there was no difference between control populations and phage added once treatment (Tukey HSD: t=\u20131.14, d.f.=15, p=0.2625; Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tukey HSD statistical analysis of genomic sequencing data shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "870acd5a-44ca-4c89-b8fc-1d1d91146b54",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C53",
+      "claim": "In vitro treatment significantly altered genetic composition (PERMANOVA, F3,15=16.05, R2=0.76, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro treatment significantly altered genetic composition (i.e., the centroids of phage added once, phage added repeatedly, and control populations were different, Figure 4, PERMANOVA, F3,15=16.05, R2=0.76, p=0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PERMANOVA statistical analysis of genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "023c3bdc-8483-4084-becf-9a95d8922ca3",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C54",
+      "claim": "There was no difference in beta-diversity (calculated from distance-to-centroids between groups) between treatments (homogeneity of multi-variation dispersion ANOVA: F3,15=1.65, p=0.22).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in beta-diversity (calculated from distance-to-centroids between groups) between treatments (homogeneity of multi-variation dispersion ANOVA: F3,15=1.65, p=0.22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ANOVA statistical analysis of genomic sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "ed0d9697-b56e-4b95-8a34-fc0124304987",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C55",
+      "claim": "Genetic changes associated with both in vitro phage treatments, but not control, were flagellar hook-associated protein (flgK) and rod-shape determining proteins (mreC and mreD).",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic changes associated with both in vitro phage treatments, but not control, were flagellar hook-associated protein (flgK) and rod-shape determining proteins (mreC and mreD) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "f50529bd-27a3-4d41-99df-bed1e23c0d02",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C56",
+      "claim": "Genetic changes in DNA mismatch repair (mutS), elongation factor G (fusA), signal recognition particle (ffs), type three secretion system pilotin (yscW), and pilus assembly protein (pilB) were mainly found in vitro in the phage added repeatedly treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, genetic changes in DNA mismatch repair (mutS), elongation factor G (fusA), signal recognition particle (ffs), type three secretion system pilotin (yscW), and pilus assembly protein (pilB) were mainly found in vitro in the phage added repeatedly treatment (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c82bcbe3-ba07-4acb-8b36-da4f5a5c7c91",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C57",
+      "claim": "Out of the 50 genetic changes identified in vitro, the in vivo isolates had a mean of 11.8 changes (maximum=23, minimum=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 50 genetic changes identified in vitro, the in vivo isolates had a mean of 11.8 changes (maximum=23, minimum=1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "20cfc5af-6a84-48b9-999e-a8b0e06ed269",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C58",
+      "claim": "Changes in frequencies or mutations were found at 16/26 of the same genes identified in vitro in at least one in vivo isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in frequencies or mutations were found at 16/26 of the same genes identified in vitro in at least one isolate (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "25ab417a-220f-4c17-b68b-46aadb6b1268",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C59",
+      "claim": "Some of the de novo mutations that were observed at high frequency in vitro also had high frequency in vivo (flgL=30%, mutS=45%, mreC=50%, mreD=30%, and pilB=40%).",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, some of the de novo mutations that were observed at high frequency in vitro also had high frequency in vivo (flgL=30%, mutS=45%, mreC=50%, mreD=30%, and pilB=40%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "dcea7dbf-bdca-4480-b8a9-05559aafe292",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C60",
+      "claim": "In total, 31 out of 50 genetic changes (62%) in vitro were found in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 31 out of 50 genetic changes (62%) in vitro were found in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "44386d1d-6f39-49d0-a2f1-d2e6d4b830aa",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C61",
+      "claim": "Of the genetic changes found in both in vitro and in vivo, 77% were de novo mutations in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 77% were de novo mutations in vitro, indicating that de novo mutations were also important for phage resistance in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "6bf8d7f0-f2bb-49cf-9043-7fa06f82b4ca",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C62",
+      "claim": "Parallel evolutionary dynamics were found in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel evolutionary dynamics were found in vivo and in vitro, showing that laboratory studies can be predictive of certain phenotypic outcomes of clinical phage therapy (phage-mediated decolonization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of in vivo and in vitro experimental data across multiple phenotypes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c7c3f2f8-37e0-4810-80ad-6b0d64a8e0ca",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C63",
+      "claim": "Laboratory studies can be predictive of certain phenotypic outcomes of clinical phage therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel evolutionary dynamics were found in vivo and in vitro, showing that laboratory studies can be predictive of certain phenotypic outcomes of clinical phage therapy (phage-mediated decolonization).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation of parallel evolutionary dynamics in vivo and in vitro",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "67de2d34-af7b-4fe7-833a-a88ffd4c2531",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C64",
+      "claim": "Levels of phage resistance were comparable in vivo and in vitro with limited phage infectivity evolution occurring only in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of phage resistance were comparable in vivo and in vitro with limited phage infectivity evolution occurring only in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of resistance data from in vivo and in vitro experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "7364e3be-15e7-4698-93a3-5294ab7b0be6",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C65",
+      "claim": "Bacteria went extinct in vivo but persisted with phage in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While bacteria went extinct in vivo, they persisted with phage in vitro, suggesting that in vitro experiments may be more important in predicting evolutionary than clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations of bacterial populations in vivo and in vitro",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "baf46216-72ce-4749-a677-962fd1007e43",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C66",
+      "claim": "In vitro experiments may be more important in predicting evolutionary than clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While bacteria went extinct in vivo, they persisted with phage in vitro, suggesting that in vitro experiments may be more important in predicting evolutionary than clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that bacteria persisted in vitro but went extinct in vivo",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "3b1e2b4b-3093-44be-9d89-37d345c472fe",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C67",
+      "claim": "Phage resistance was associated with trade-offs with virulence and bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, phage resistance was associated with trade-offs with virulence and bacterial growth and similar mutations or genetic variants could explain these parallel evolutionary changes in both ecological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing reduced virulence and growth in resistant isolates",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "b2f72b56-f13c-4729-8fcc-2a533282e9b5",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C68",
+      "claim": "Similar mutations or genetic variants could explain parallel evolutionary changes in both in vivo and in vitro ecological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, phage resistance was associated with trade-offs with virulence and bacterial growth and similar mutations or genetic variants could explain these parallel evolutionary changes in both ecological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data showing overlap in genetic changes between in vivo and in vitro",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "31cc7156-5ab9-42ae-8c1a-a80c05b0d455",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C69",
+      "claim": "The nasal cavity would have been more nutrient limited and spatially heterogenous compared to laboratory conditions.",
+      "claim_type": "IMPLICIT",
+      "source": "The nasal cavity would have been more nutrient limited and spatially heterogenous and such conditions have been shown to change bacteria-phage interactions compared to evolution in high-nutrient laboratory growth medium (e.g., Luria broth [LB]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about in vivo environments and cited literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "f04965f1-44ad-43bd-bb6c-cd35156b7b38",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C70",
+      "claim": "Bacteria-phage coevolution is altered in soil compared to growth medium because of increased costs of resistance in soil.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, bacteria-phage coevolution is altered in soil compared to growth medium because of increased costs of resistance in the former (G\u00f3mez and Buckling, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to G\u00f3mez and Buckling, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "bfa3c7b1-a885-454a-9ab3-dde8501c5500",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C71",
+      "claim": "In plant leaves, bacteria and phage have failed to evolve while otherwise coevolving in the laboratory due to lower bacteria\u2014phage contact rates.",
+      "claim_type": "EXPLICIT",
+      "source": "and in plant leaves, bacteria and phage have failed to evolve while otherwise coevolving in the laboratory due to lower bacteria\u2014phage contact rates (Hernandez and Koskella, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hernandez and Koskella, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "8ab058b3-d1ea-4027-9463-fbf20a6b62ae",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C72",
+      "claim": "Rapid phage resistance has been highlighted as a concern for phage therapy development.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid phage resistance has been highlighted as a concern for phage therapy development (Torres-Barcel\u00f3, 2018) and was found in this case study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Torres-Barcel\u00f3, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "812be9c2-fe6b-4169-be38-a9c598e45c01",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C73",
+      "claim": "Without ongoing reciprocal phage evolution, phage resistance is likely to lead to regrowth of bacteria during infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Without ongoing reciprocal phage evolution, phage resistance is likely to lead to regrowth of bacteria during infections; this has been found in a few case studies but has been combatted by selecting a different phage (single or cocktail) (Aslam et al., 2020; Schooley et al., 2017; Wu et al., 2021; Zhvania et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aslam et al., 2020; Schooley et al., 2017; Wu et al., 2021; Zhvania et al., 2017",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "9dee259f-a465-4dae-a4dc-e70d6572c8d1",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C74",
+      "claim": "Phage resistance was found to have growth rate costs which may explain why some isolates remained sensitive to phage, and why decolonization was ultimately successful.",
+      "claim_type": "EXPLICIT",
+      "source": "However, phage resistance was found to have growth rate costs which may further explain why some isolates remained sensitive to phage, and why decolonization was ultimately successful.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing growth rate costs of resistance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "86357f99-4825-4604-a745-9872256a112d",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C75",
+      "claim": "The natural nasal microbiota, and host immunity, may have contributed to decolonization success by outcompeting slower growing phage resistant isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural nasal microbiota, and host immunity, may have further contributed to this success by outcompeting slower growing phage resistant isolates (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference supported by citation to Wang et al., 2019",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "13782f59-5674-47b6-bd32-a9b81059b431",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C76",
+      "claim": "Bacteria did not go extinct in in vitro experiments which may be reflective of differences in environmental conditions such as nutrient availability and interspecies competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria did not go extinct in our in vitro experiments which may be reflective of differences in environmental conditions such as nutrient availability and interspecies competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from experimental observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "54c0ee81-31a0-4599-a247-8eb92f13ad8b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C77",
+      "claim": "Resistance-virulence trade-offs have been found in previous in vitro animal models and clinical studies and are expected to improve treatment success in spite of phage resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Resistance-virulence trade-offs have been found in previous in vitro animal models and clinical studies and are expected to improve treatment success in spite of phage resistance (Oechslin, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Oechslin, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "857dda8d-d19c-4c18-8b7a-5407b6b415eb",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C78",
+      "claim": "Phage resistance is not always costly and likely depends on the genetic background of the bacteria and phage, as well as the environmental context.",
+      "claim_type": "EXPLICIT",
+      "source": "Phage resistance however is not always costly and likely depends on the genetic background of the bacteria and phage, as well as the environmental context (Meaden et al., 2015; van Houte et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Meaden et al., 2015; van Houte et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "50ea6c4a-35ff-40d9-88d5-3f3eb96295b5",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C79",
+      "claim": "Phage selection accelerated molecular evolution which resulted in populations being more diverged from their ancestral pool than control isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies, phage selection accelerated molecular evolution which resulted in populations being more diverged from their ancestral pool than control isolates (in vitro) (Betts et al., 2018; Morgan et al., 2010; Pal et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to Betts et al., 2018; Morgan et al., 2010; Pal et al., 2007",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "4a425caf-3dd2-4f5b-8efc-72ee553e868a",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C80",
+      "claim": "Phage placed strong selection on bacteria which resulted in mutator strains (mutS genotype), especially where phage was added repeatedly in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that phage placed strong selection on bacteria and this further resulted in mutator strains (mutS genotype), especially where phage was added repeatedly in vitro and in vivo, that likely accelerated the rate of evolution further (Morgan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic data showing mutS mutations and supported by citation to Morgan et al., 2010",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "6d4c69ea-96b9-4c95-a856-3907e142bbe5",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C81",
+      "claim": "Mutations to mreD and mreC were encoded for cell shape.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mutations to mreD and mreC were encoded for cell shape (Cabeen and Jacobs-Wagner, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cabeen and Jacobs-Wagner, 2005",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "15c94718-f198-4b6b-a9dc-a1acb1bdb91e",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C82",
+      "claim": "Missense mutations at flgK and flgL probably resulted in flagella loss.",
+      "claim_type": "EXPLICIT",
+      "source": "while missense mutations at flgK and flgL probably resulted in flagella loss (Macnab, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic data and supported by citation to Macnab, 2003",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "6e762222-ecc7-4a8b-9e65-3c5dc8d8a62a",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C83",
+      "claim": "The result of mreD, mreC, flgK, and flgL mutations was likely reduced cell surface area which reduces the probability of phage absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "The result of these mutations was likely reduced cell surface area which reduces the probability of phage absorption (Dennehy and Abedon, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic data and supported by citation to Dennehy and Abedon, 2021",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "2c13d68c-8c48-4592-902d-54f45e3d4d29",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C84",
+      "claim": "pilB mutations were selected which is likely a surface mutation to prevent PNM (a pilus binding phage) from attaching.",
+      "claim_type": "EXPLICIT",
+      "source": "pilB mutations were also selected which is likely a surface mutation to prevent PNM (a pilus binding phage) from attaching (Ceyssens et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic data and supported by citation to Ceyssens et al., 2011",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "f605471e-57ec-46d4-8583-de0e7ad0e915",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C85",
+      "claim": "Flagella and mreC mutations are associated with increased biofilm production.",
+      "claim_type": "EXPLICIT",
+      "source": "Flagella and mreC mutations are associated with increased biofilm production (Whiteley et al., 2001) and as they were found in the in vitro isolates, this may suggest a generalistic phage defence strategy (Harper et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Whiteley et al., 2001 and Harper et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c1ea6da3-1dab-4367-a901-e5205418cce1",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C86",
+      "claim": "Surface mutation is a common form of phage resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface mutation is a common form of phage resistance (van Houte et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Houte et al., 2016",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "8d1db700-2343-42e4-8aa7-7dad60216369",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C87",
+      "claim": "Surface mutations coupled with mechanisms that prevent absorption more generally could have reduced bacterial growth and/or virulence by impairing swarming motility.",
+      "claim_type": "EXPLICIT",
+      "source": "but here it appears coupled with mechanisms that prevent absorption more generally; combined, these strategies could have reduced bacterial growth and/or virulence by impairing swarming motility (Haiko and Westerlund-Wikstr\u00f6m, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genomic and phenotypic data and supported by citation to Haiko and Westerlund-Wikstr\u00f6m, 2013",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "04530868-fcdd-41c9-bd17-8801022c1415",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C88",
+      "claim": "Studies using the same phage but P. aeruginosa PA01 reported mutations predominantly at pilus and LPS receptors, showing that greater selection is placed on specific phage resistance strategies at phage binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, other studies using the same phage but P. aeruginosa PA01 instead reported mutations predominantly at pilus and LPS receptors, showing that greater selection is placed on specific phage resistance strategies at phage binding sites (Wright et al., 2019; Wright et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wright et al., 2019; Wright et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "ca2dcb74-c4a4-4ad8-84a3-b063cca6622b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C89",
+      "claim": "The results highlight the importance of genetic background, and hence the use of clinical isolates over laboratory clones, in determining evolutionary trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight the importance of genetic background, and hence the use of clinical isolates over laboratory clones, in determining evolutionary trajectories (Betts et al., 2014; Friman et al., 2016; Le\u00f3n and Bast\u00edas, 2015; Rossitto et al., 2018; van Houte et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of results with previous studies and supported by citations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "df4ddce9-01fa-4b58-a0a7-8a5a8d692e5b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C90",
+      "claim": "The proportion of resistant bacteria at the end of the experiment was significantly lower (61.5%) in the repeated phage treatment compared to where phages were just added at the start of the experiment (90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed a greater number of mutations where phages were added repeatedly (mimicking multiple phage doses), the proportion of resistant bacteria (resistance to contemporary phage) at the end of the experiment was significantly lower (61.5%) compared to where phages were just added at the start of the experiment (90%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from resistance assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "60bbd4b1-3d86-4871-b40a-b04feb9f3235",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C91",
+      "claim": "Differences in resistance to evolved phages between treatments were caused by phage infectivity evolution in the repeated phage treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "That resistance of evolved bacteria to the ancestral phages (~90%) did not differ between treatments suggests that differences in resistance to evolved phages were caused by phage infectivity evolution in the repeated phage treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data comparing resistance to ancestral vs. evolved phages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "5726b3b0-3d14-4b34-a09b-73bcd5627f37",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C92",
+      "claim": "Phage infectivity evolution occurred before the first time point, with no subsequent changes, and was presumably the result of greater mutation supply rate in the repeated phage application treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This infectivity evolution occurred before the first time point, with no subsequent changes, and was presumably the result of greater mutation supply rate in this repeated phage application treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing no changes in phage infectivity after first time point",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "d0683ac6-86b7-4651-b9c1-15a41a07ab00",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C93",
+      "claim": "As bacteria went extinct in vivo, it is likely phage generations were fewer which may have restricted phage evolution in the lower resource environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as bacteria went extinct in vivo, it is likely phage generations were fewer which may have restricted phage evolution in the lower resource environment (Lopez-Pascua and Buckling, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from experimental observations and supported by citation to Lopez-Pascua and Buckling, 2008",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "aee607ba-dea8-4f6d-8619-f7a0c7ad0549",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C94",
+      "claim": "Multiple and higher phage doses have been shown previously to decrease morbidity and mortality in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple (Manohar et al., 2018) and higher (Barrow et al., 1998; Biswas et al., 2002; Debarbieux et al., 2010; Merril et al., 1996; Sunagar et al., 2010; Vinodkumar et al., 2008; Wang et al., 2006; Wills et al., 2005) phage doses have been shown previously to decrease morbidity and mortality in animal models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "05e001a9-8dfe-4ca9-b9f1-e6aa04a404ad",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C95",
+      "claim": "Maintaining high phage titers may have a positive effect in reducing resistant populations despite increasing the strength of selection for resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results build upon this work to show that maintaining high phage titers may have a positive effect in reducing resistant populations despite increasing the strength of selection for resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing lower resistance in repeated phage treatment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "b79858b4-2b2b-4355-b91a-e0a663f8d05b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C96",
+      "claim": "Absolute effect sizes of evolutionary changes were greater in vitro than in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our in vitro\u2014in vivo results were comparable with regards to the direction of change, but absolute effect sizes were greater in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of in vitro and in vivo experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "6d2989bc-eeed-4d49-81b3-383621eda6cb",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C97",
+      "claim": "A higher proportion of phage resistant isolates were observed in vitro that were also far less virulent than isolates found in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we observed a higher proportion of phage resistant isolates in vitro that were also far less virulent than isolates found in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of resistance and virulence data from in vitro and in vivo experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "1293082f-cc20-4bed-930e-476394488151",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C98",
+      "claim": "The patient had a nasal colonization where the role of the adaptive immune system would have been heavily reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as this patient had a nasal colonization, the role of the adaptive immune system would have been heavily reduced (Ooi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ooi et al., 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "50cd9480-e933-49a3-84f2-db67fea591fc",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C99",
+      "claim": "The immune system has the potential to improve phage therapy success by synergistically killing bacteria with phage which may diminish the potential for phage resistance by reducing bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The immune system has the potential to improve phage therapy success by synergistically killing bacteria with phage which may diminish the potential for phage resistance by reducing bacterial growth (Leung and Weitz, 2017; Roach et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leung and Weitz, 2017; Roach et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "79f01720-c212-4436-98f5-7a5197d210cf",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C100",
+      "claim": "Immune cells may kill phage and therefore prevent phage acting on bacterial populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, immune cells may kill phage and therefore prevent phage acting on bacterial populations (Van Belleghem et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Van Belleghem et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "92ebafbe-624a-4748-90a1-51f1a8dcc3b8",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C101",
+      "claim": "The nasal cavity has a diverse microbiome that may have contributed to P. aeruginosa decolonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the nasal cavity has a diverse microbiome that may have contributed to P. aeruginosa decolonization (Hu et al., 2018; Kumpitsch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hu et al., 2018; Kumpitsch et al., 2019",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "2a49673e-bef3-445b-abbc-862cb3eaaa9b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C102",
+      "claim": "The patient was 85 years old, male, and had been admitted to an ICU in 2015 for treatment of burns (10% body area).",
+      "claim_type": "EXPLICIT",
+      "source": "The patient (85 years old, male) had been admitted to an ICU in 2015 for treatment of burns (10% body area).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial patient information",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "34850fd8-13f2-44c8-9be3-24522ad343ec",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C103",
+      "claim": "A nasal colonization of P. aeruginosa was observed in the patient independent of his burns.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of his burns, a nasal colonization of P. aeruginosa was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial patient information",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "29bc0855-7efc-4052-a116-2debe03438a7",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C104",
+      "claim": "The patient was treated every day with a three-phage cocktail (BFC-1) for 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the patient was treated every day with a three-phage cocktail (BFC-1) for 5 days, which consisted of two phages (14\u20131 and PNM) that could lytically infect P. aeruginosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial treatment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "17d88aef-919f-422d-a2a0-28ef70db2ad8",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C105",
+      "claim": "The phage cocktail consisted of two phages (14\u20131 and PNM) that could lytically infect P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the patient was treated every day with a three-phage cocktail (BFC-1) for 5 days, which consisted of two phages (14\u20131 and PNM) that could lytically infect P. aeruginosa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial treatment protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "b194b3cf-db0d-4eea-9f16-cbca68c14d24",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C106",
+      "claim": "The phage cocktail included a third phage that specifically infects S. aureus bacterium, but this bacterium was not detected in this patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The phage cocktail included a third phage that specifically infects S. aureus bacterium, but this bacterium was not detected in this patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial treatment protocol and patient data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "ca72b63c-70ae-4936-82fd-87737603757e",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C107",
+      "claim": "The phage cocktail has been characterized to ensure no prophage elements are present or that the phage carry toxin-encoding genes that may increase bacterial resistance and/or virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "The phage cocktail has previously been characterized to ensure no prophage elements are present or that the phage carry toxin-encoding genes that may increase bacterial resistance and/or virulence (Merabishvili et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Merabishvili et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "d501d39a-d0b7-479a-a28e-262b2e9da303",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C108",
+      "claim": "A purification process including the removal of endotoxins in phage production was used to ensure such waste products cannot harm patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a purification process including the removal of endotoxins in phage production was used to ensure such waste products cannot harm patients (Merabishvili et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Merabishvili et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "c2d28a39-3130-4606-b442-21eb9870f528",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C109",
+      "claim": "14\u20131 infects via a lipopolysaccharide (LPS) receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "As 14\u20131 infects via a lipopolysaccharide (LPS) (Betts et al., 2014; Kropinski et al., 1977) receptor and PNM uses type IV pili (Ceyssens et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Betts et al., 2014; Kropinski et al., 1977",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "9d59ea66-ad29-4b33-ad8e-cd0c29c669c3",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C110",
+      "claim": "PNM uses type IV pili as a receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "As 14\u20131 infects via a lipopolysaccharide (LPS) (Betts et al., 2014; Kropinski et al., 1977) receptor and PNM uses type IV pili (Ceyssens et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ceyssens et al., 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "55daa26f-a06d-4abe-a61e-053875692b6d",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C111",
+      "claim": "Resistance to one phage is unlikely to result in cross-resistance and neither phage should compete for receptor sites.",
+      "claim_type": "EXPLICIT",
+      "source": "resistance to one phage is unlikely to result in cross-resistance and neither phage should compete for receptor sites (Wright et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the different receptor usage of the two phages and supported by citation to Wright et al., 2018",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "1f27f5f0-23d2-4997-af56-bffda3842e84",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "claim_id": "C112",
+      "claim": "Decolonization of P. aeruginosa was ultimately successful in this patient.",
+      "claim_type": "EXPLICIT",
+      "source": "Decolonization of P. aeruginosa was ultimately successful in this patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical trial outcome data showing no P. aeruginosa detected after day 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vivo phage therapy led to rapid evolution of bacterial resistance, with more than half of isolates resistant to ancestral phage by day 2, but no significant phage infectivity evolution was detected through time-shift assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 collectively demonstrate rapid bacterial resistance evolution in vivo (>50% by day 2) with appropriate statistical testing (Tukey HSD). The absence of phage evolution is supported by nonsignificant differences in bacterial resistance to phage from different time points, though statistical power was limited by small sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "ff0af9c3-4790-45e4-9335-23229221122d",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vitro evolution experiments showed comparable resistance levels to in vivo (>50%), but repeated phage application led to significantly lower bacterial resistance (66.7%) compared to single application (90.81%) due to phage infectivity evolution that occurred before the first sampling point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C20 provide strong statistical evidence (Tukey HSD, p=0.0002) for differential resistance outcomes based on phage application frequency. The inference that phage evolution occurred early (C20) is logically supported by the observation that resistance was independent of phage time point during evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "5f311a79-7e31-4b56-bb29-43cb1a58b245",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In vivo phage therapy reduced bacterial virulence by 95.5% on average, with G. mellonella mortality decreasing from 99.7% (pre-therapy) to 70% (post-therapy) and mean time to death increasing from 15 hr to 20.5 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are well-supported by Bayesian regression analysis with appropriate statistical measures (median HR=0.045, 95% CI=0.012-0.163). The large sample sizes (479 larvae pre-therapy) and clear effect sizes provide strong evidence for virulence reduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "61e22b70-3960-4ee1-8153-b4107a415629",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro phage exposure reduced bacterial virulence by 89.8-96.15% compared to controls, with G. mellonella mortality decreasing from 80% (control) to 32.5-41.2% (phage treatments) and mean time to death increasing from 19 hr to 35-37 hr.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 demonstrate consistent virulence reduction in vitro using Bayesian regression with appropriate statistical rigor. The effect sizes are substantial and confidence intervals do not overlap 1, indicating significant differences between treatments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "372a782b-b469-4d9c-9dd7-944e252c07fd",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Virulence reduction in vitro was strongly associated with resistance to both phages (95.69% reduction) but not single-phage resistance, and even susceptible bacteria showed reduced virulence (80.7-91.14%) after phage exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 reveal a dose-dependent relationship between resistance level and virulence reduction, supported by Bayesian regression with non-overlapping confidence intervals. The finding that susceptible bacteria also show reduced virulence (C32-C33) is particularly interesting and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "227123d5-374d-4ee8-8d13-58b74bdf34a5",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No significant difference in growth rates was observed between the two in vitro phage treatments (once vs. repeatedly added).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by appropriate statistical testing (Tukey HSD, p=0.628) with sufficient power to detect differences between treatments, indicating that phage application frequency did not affect bacterial growth rates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "3cecfe79-a5d7-4d53-96ac-351418b9982f",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Genomic analysis revealed 26 genes with significant changes in vitro, with phage selection accelerating molecular evolution in a dose-dependent manner: repeated phage application led to greater genetic divergence, more novel mutations, and higher within-population diversity than single application or control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C54 are supported by comprehensive genomic sequencing with appropriate statistical analyses (Tukey HSD, PERMANOVA). The hierarchical pattern of divergence (repeated > once > control) is consistent across multiple metrics (genetic distance, novel SNPs, alpha diversity) with significant p-values throughout.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "5c207bef-4461-47d3-b4f8-8683971fa7c2",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Specific genetic changes associated with phage resistance included mutations in flagellar (flgK) and cell shape (mreC, mreD) genes in both phage treatments, while mutations in DNA repair (mutS), pilus assembly (pilB), and other genes were primarily found in the repeated phage treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 identify specific genes under selection with support from pooled sequencing data. The differential selection patterns between treatments are clearly documented in Figure 4, though mechanistic validation would strengthen these associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "2cb998d5-def4-4449-bb79-8c2e6d663bed",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo isolates showed substantial genetic overlap with in vitro populations: 62% of in vitro genetic changes were found in vivo, with 77% of these being de novo mutations, and several high-frequency de novo mutations (flgL, mutS, mreC, mreD, pilB) were shared between contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 demonstrate parallel evolution between in vivo and in vitro contexts through systematic comparison of genomic data. The high proportion of shared de novo mutations (77%) provides strong evidence for predictable evolutionary trajectories, though the small number of in vivo isolates (n=10) limits statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Parallel evolutionary dynamics were observed in vivo and in vitro for resistance levels and virulence trade-offs, though bacteria persisted in vitro but went extinct in vivo, suggesting in vitro experiments may better predict evolutionary rather than clinical outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C66 make broad conclusions about predictability based on a single patient case study. While the parallel phenotypic changes are well-documented (C62, C64), the inference about predictive value (C63, C66) is speculative and would require validation across multiple patients and infection contexts. The distinction between evolutionary and clinical outcomes (C66) is interesting but not rigorously tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "cc917991-4627-492d-997a-c64f2c5464a3",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Phage resistance was associated with trade-offs in virulence and bacterial growth, with similar mutations or genetic variants explaining these parallel changes in both in vivo and in vitro contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by convergent evidence from phenotypic assays (virulence, growth) and genomic data showing overlap in selected genes. However, direct genotype-phenotype links were difficult to establish (as noted in Figure 5\u2014figure supplement 2), limiting mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "15ca29e5-423e-47df-81f1-950667b17e45",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mutations in cell shape genes (mreC, mreD) and flagellar genes (flgK, flgL) likely reduced cell surface area and phage absorption probability, while pilB mutations prevented pilus-binding phage attachment; these surface modifications may have reduced virulence by impairing motility and are associated with increased biofilm production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C87 provide mechanistic interpretations of genomic data supported by appropriate citations. The inferences about functional consequences (reduced surface area, impaired motility) are reasonable given the known gene functions, though direct experimental validation of these mechanisms is not provided in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "610d5260-16e2-468c-8a33-91a9dd2636ad",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison with studies using P. aeruginosa PA01 showed different mutation patterns (pilus/LPS receptors vs. generalized surface modifications), highlighting the importance of genetic background and the use of clinical isolates over laboratory strains in determining evolutionary trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 make valid comparisons with previous work and draw appropriate conclusions about the importance of strain background. The inference is well-supported by citations and the observed differences in mutation patterns between this study and previous work with PA01.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "e004ac49-b69d-4e87-bf77-d69dac3edda3",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Repeated phage application resulted in lower bacterial resistance to evolved phages (61.5%) compared to single application (90%), caused by phage infectivity evolution that occurred before the first time point, presumably due to greater mutation supply rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 are supported by experimental data showing differential resistance outcomes and appropriate statistical analysis. The inference about timing (C92) is logical given the lack of subsequent changes, though the mechanism (mutation supply rate) remains somewhat speculative without direct measurement of phage mutation rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "3b837f17-e378-4f40-8471-8c9f7d25c900",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple phage doses may reduce resistant populations despite increasing selection pressure, building on previous animal model studies showing that higher phage doses decrease morbidity and mortality; however, phage evolution may be restricted in vivo due to bacterial extinction and lower resource availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 integrate current findings with previous literature appropriately. The conclusion about maintaining high phage titers (C95) is supported by the experimental data, though the explanation for lack of phage evolution in vivo (C93) is speculative and based on a single case.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "642509b9-9874-4991-a1e6-980f219208af",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "While in vitro and in vivo results were comparable in direction of change, absolute effect sizes were greater in vitro, with higher proportions of resistant isolates that were also less virulent than in vivo isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 accurately describe quantitative differences between in vitro and in vivo outcomes based on direct comparison of experimental data. This is an important caveat for interpreting the predictive value of in vitro experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "8f509910-cda5-4f01-8246-67584e201715",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Growth rate costs of phage resistance may explain why some isolates remained susceptible and why decolonization was successful, potentially aided by nasal microbiota and host immunity outcompeting slower-growing resistant isolates; bacterial persistence in vitro may reflect differences in environmental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 make reasonable inferences from the data but are largely speculative. While growth rate costs were documented (C74), the contributions of microbiota and immunity (C75) and environmental differences (C76) are not directly tested and remain hypothetical explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "5c988287-fb9a-47e3-af6f-1052a0428bfb",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Phage selection accelerated molecular evolution and resulted in mutator strains (mutS genotype), especially in repeated phage treatment and in vivo, likely accelerating evolution further.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are supported by genomic data showing mutS mutations and increased divergence in phage treatments, with appropriate citations to previous work. The inference about mutator phenotypes accelerating evolution is reasonable given the known function of mutS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "46d9d82e-7b22-44c0-823f-fd5b49b7f128",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The nasal colonization context may have reduced adaptive immune involvement, though the immune system and nasal microbiome could potentially contribute to phage therapy outcomes through synergistic bacterial killing or by killing phage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C101 discuss potential roles of immunity and microbiome but are largely speculative. While the reduced adaptive immunity in nasal colonization (C98) is supported by citation, the actual contributions of these factors (C99-C101) were not measured in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "a2fbc3b0-0548-40df-8c52-bd89db092959",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "An 85-year-old male ICU patient with nasal P. aeruginosa colonization was successfully decolonized using a characterized three-phage cocktail (BFC-1) applied daily for 5 days, with two phages (14-1 and PNM) targeting different receptors (LPS and type IV pili) to minimize cross-resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C112 provide comprehensive clinical context and treatment details supported by clinical trial data and appropriate citations for phage characterization. The successful decolonization outcome (C112) is documented by absence of P. aeruginosa after day 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background context establishes that antimicrobial resistance is a major global health threat, phage therapy offers advantages over antibiotics but faces challenges from rapid bacterial resistance evolution, though resistance may trade off with virulence; nasal colonization by drug-resistant bacteria poses infection risks in hospitalized patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide appropriate background context supported by citations to established literature. These claims set up the rationale for the study but do not present novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    },
+    {
+      "id": "9579aa7a-966c-42de-8dc5-bc3540669c68",
+      "content_id": "56c35718-9b28-46db-bec6-12cd6f5b172f",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Environmental context affects bacteria-phage interactions, with in vivo environments being more nutrient-limited and spatially heterogeneous than laboratory conditions; rapid phage resistance is a concern for therapy but resistance-virulence trade-offs may improve outcomes, though costs are context-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73, C77-C78 provide relevant discussion context supported by appropriate citations. These claims synthesize prior knowledge to interpret the current findings but do not present new experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T11:10:58.105906Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc468ae5-721b-4223-8d92-b4bf29988e4e",
+      "result_id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc"
+    },
+    {
+      "claim_id": "4368a04c-313a-451e-8919-c159424f3d55",
+      "result_id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc"
+    },
+    {
+      "claim_id": "d5089375-b3d8-494c-b902-c1c162038fc4",
+      "result_id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc"
+    },
+    {
+      "claim_id": "c5afc710-3411-4286-847c-979488712bbc",
+      "result_id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc"
+    },
+    {
+      "claim_id": "67ad3cd9-aac9-4e8a-b4ca-37efbe9381be",
+      "result_id": "423aca6d-ec82-419f-8327-0e5d50a3f6dc"
+    },
+    {
+      "claim_id": "421f2ade-4b0d-44fc-a01b-5ab539119f68",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "c0888e38-7bf0-4c9e-9225-444a83f1f787",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "d32b60ee-97fa-40f2-82f3-637298bb63c6",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "389c97bc-25b5-48c3-b539-e7b0edb52a5c",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "e395bd41-f459-4ba2-9f5c-4e340aacf545",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "7163da79-5764-44ff-95b7-6fb32500689c",
+      "result_id": "ff0af9c3-4790-45e4-9335-23229221122d"
+    },
+    {
+      "claim_id": "be455c7c-cda1-49a4-add8-120a7f41c587",
+      "result_id": "5f311a79-7e31-4b56-bb29-43cb1a58b245"
+    },
+    {
+      "claim_id": "a8857ec5-cd0b-4444-8851-08eb47686248",
+      "result_id": "5f311a79-7e31-4b56-bb29-43cb1a58b245"
+    },
+    {
+      "claim_id": "ebf32088-96d2-499d-b01f-ac45d48f26dc",
+      "result_id": "5f311a79-7e31-4b56-bb29-43cb1a58b245"
+    },
+    {
+      "claim_id": "c35c97ca-e715-48cd-bb7d-46256385908f",
+      "result_id": "61e22b70-3960-4ee1-8153-b4107a415629"
+    },
+    {
+      "claim_id": "858b7cac-4f08-4f54-9351-aa22f92f1565",
+      "result_id": "61e22b70-3960-4ee1-8153-b4107a415629"
+    },
+    {
+      "claim_id": "291d318f-5e49-47eb-b2aa-897fafda1a15",
+      "result_id": "61e22b70-3960-4ee1-8153-b4107a415629"
+    },
+    {
+      "claim_id": "7100cb53-56ea-4971-a7c4-9523912aa5b0",
+      "result_id": "61e22b70-3960-4ee1-8153-b4107a415629"
+    },
+    {
+      "claim_id": "91a78e3b-fbca-43d2-a0ac-f9ce7ac23248",
+      "result_id": "61e22b70-3960-4ee1-8153-b4107a415629"
+    },
+    {
+      "claim_id": "e34fb8e4-6389-4e26-b501-b54a531ab4fe",
+      "result_id": "372a782b-b469-4d9c-9dd7-944e252c07fd"
+    },
+    {
+      "claim_id": "b8e235a5-9ca1-4152-ae37-03160c2f969a",
+      "result_id": "372a782b-b469-4d9c-9dd7-944e252c07fd"
+    },
+    {
+      "claim_id": "f95356aa-5d1e-4437-8407-a0dc626db67c",
+      "result_id": "372a782b-b469-4d9c-9dd7-944e252c07fd"
+    },
+    {
+      "claim_id": "4684992b-bf18-4528-bdbf-b4089b4b5d7a",
+      "result_id": "372a782b-b469-4d9c-9dd7-944e252c07fd"
+    },
+    {
+      "claim_id": "090082c2-7d6b-4d7a-bd07-745ba6a57366",
+      "result_id": "372a782b-b469-4d9c-9dd7-944e252c07fd"
+    },
+    {
+      "claim_id": "5e82ad15-75ef-4b29-abe3-f6b1775978ee",
+      "result_id": "227123d5-374d-4ee8-8d13-58b74bdf34a5"
+    },
+    {
+      "claim_id": "a3cd432c-fb60-4085-bd4e-3101562ca024",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "0562a027-c68e-4464-a192-e17f08d9165d",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "4f43f535-d6e0-4574-9587-ccb3f57d7954",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "0a0d7a13-8ecb-4d41-83f2-1026fb520ef8",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "0e1cd9b2-5ac8-4a75-bad1-cf4ab24eb470",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "03796456-7a8d-4305-bb43-087a9a64083d",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "c238279f-a4a6-46dd-a887-46b9bc8b5a66",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "c44a04d8-4deb-4c2a-966d-ee11aa84d8db",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "870acd5a-44ca-4c89-b8fc-1d1d91146b54",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "023c3bdc-8483-4084-becf-9a95d8922ca3",
+      "result_id": "3cecfe79-a5d7-4d53-96ac-351418b9982f"
+    },
+    {
+      "claim_id": "ed0d9697-b56e-4b95-8a34-fc0124304987",
+      "result_id": "5c207bef-4461-47d3-b4f8-8683971fa7c2"
+    },
+    {
+      "claim_id": "f50529bd-27a3-4d41-99df-bed1e23c0d02",
+      "result_id": "5c207bef-4461-47d3-b4f8-8683971fa7c2"
+    },
+    {
+      "claim_id": "c82bcbe3-ba07-4acb-8b36-da4f5a5c7c91",
+      "result_id": "2cb998d5-def4-4449-bb79-8c2e6d663bed"
+    },
+    {
+      "claim_id": "20cfc5af-6a84-48b9-999e-a8b0e06ed269",
+      "result_id": "2cb998d5-def4-4449-bb79-8c2e6d663bed"
+    },
+    {
+      "claim_id": "25ab417a-220f-4c17-b68b-46aadb6b1268",
+      "result_id": "2cb998d5-def4-4449-bb79-8c2e6d663bed"
+    },
+    {
+      "claim_id": "dcea7dbf-bdca-4480-b8a9-05559aafe292",
+      "result_id": "2cb998d5-def4-4449-bb79-8c2e6d663bed"
+    },
+    {
+      "claim_id": "44386d1d-6f39-49d0-a2f1-d2e6d4b830aa",
+      "result_id": "2cb998d5-def4-4449-bb79-8c2e6d663bed"
+    },
+    {
+      "claim_id": "6bf8d7f0-f2bb-49cf-9043-7fa06f82b4ca",
+      "result_id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2"
+    },
+    {
+      "claim_id": "c7c3f2f8-37e0-4810-80ad-6b0d64a8e0ca",
+      "result_id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2"
+    },
+    {
+      "claim_id": "67de2d34-af7b-4fe7-833a-a88ffd4c2531",
+      "result_id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2"
+    },
+    {
+      "claim_id": "7364e3be-15e7-4698-93a3-5294ab7b0be6",
+      "result_id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2"
+    },
+    {
+      "claim_id": "baf46216-72ce-4749-a677-962fd1007e43",
+      "result_id": "72d4445b-7f4d-4e46-a200-e8544abb6fe2"
+    },
+    {
+      "claim_id": "3b1e2b4b-3093-44be-9d89-37d345c472fe",
+      "result_id": "cc917991-4627-492d-997a-c64f2c5464a3"
+    },
+    {
+      "claim_id": "b2f72b56-f13c-4729-8fcc-2a533282e9b5",
+      "result_id": "cc917991-4627-492d-997a-c64f2c5464a3"
+    },
+    {
+      "claim_id": "6d4c69ea-96b9-4c95-a856-3907e142bbe5",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "15c94718-f198-4b6b-a9dc-a1acb1bdb91e",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "6e762222-ecc7-4a8b-9e65-3c5dc8d8a62a",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "2c13d68c-8c48-4592-902d-54f45e3d4d29",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "f605471e-57ec-46d4-8583-de0e7ad0e915",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "c1ea6da3-1dab-4367-a901-e5205418cce1",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "8d1db700-2343-42e4-8aa7-7dad60216369",
+      "result_id": "15ca29e5-423e-47df-81f1-950667b17e45"
+    },
+    {
+      "claim_id": "04530868-fcdd-41c9-bd17-8801022c1415",
+      "result_id": "610d5260-16e2-468c-8a33-91a9dd2636ad"
+    },
+    {
+      "claim_id": "ca2dcb74-c4a4-4ad8-84a3-b063cca6622b",
+      "result_id": "610d5260-16e2-468c-8a33-91a9dd2636ad"
+    },
+    {
+      "claim_id": "df4ddce9-01fa-4b58-a0a7-8a5a8d692e5b",
+      "result_id": "e004ac49-b69d-4e87-bf77-d69dac3edda3"
+    },
+    {
+      "claim_id": "60bbd4b1-3d86-4871-b40a-b04feb9f3235",
+      "result_id": "e004ac49-b69d-4e87-bf77-d69dac3edda3"
+    },
+    {
+      "claim_id": "5726b3b0-3d14-4b34-a09b-73bcd5627f37",
+      "result_id": "e004ac49-b69d-4e87-bf77-d69dac3edda3"
+    },
+    {
+      "claim_id": "d0683ac6-86b7-4651-b9c1-15a41a07ab00",
+      "result_id": "3b837f17-e378-4f40-8471-8c9f7d25c900"
+    },
+    {
+      "claim_id": "aee607ba-dea8-4f6d-8619-f7a0c7ad0549",
+      "result_id": "3b837f17-e378-4f40-8471-8c9f7d25c900"
+    },
+    {
+      "claim_id": "05e001a9-8dfe-4ca9-b9f1-e6aa04a404ad",
+      "result_id": "3b837f17-e378-4f40-8471-8c9f7d25c900"
+    },
+    {
+      "claim_id": "b79858b4-2b2b-4355-b91a-e0a663f8d05b",
+      "result_id": "642509b9-9874-4991-a1e6-980f219208af"
+    },
+    {
+      "claim_id": "6d2989bc-eeed-4d49-81b3-383621eda6cb",
+      "result_id": "642509b9-9874-4991-a1e6-980f219208af"
+    },
+    {
+      "claim_id": "9dee259f-a465-4dae-a4dc-e70d6572c8d1",
+      "result_id": "8f509910-cda5-4f01-8246-67584e201715"
+    },
+    {
+      "claim_id": "86357f99-4825-4604-a745-9872256a112d",
+      "result_id": "8f509910-cda5-4f01-8246-67584e201715"
+    },
+    {
+      "claim_id": "13782f59-5674-47b6-bd32-a9b81059b431",
+      "result_id": "8f509910-cda5-4f01-8246-67584e201715"
+    },
+    {
+      "claim_id": "50ea6c4a-35ff-40d9-88d5-3f3eb96295b5",
+      "result_id": "5c988287-fb9a-47e3-af6f-1052a0428bfb"
+    },
+    {
+      "claim_id": "4a425caf-3dd2-4f5b-8efc-72ee553e868a",
+      "result_id": "5c988287-fb9a-47e3-af6f-1052a0428bfb"
+    },
+    {
+      "claim_id": "1293082f-cc20-4bed-930e-476394488151",
+      "result_id": "46d9d82e-7b22-44c0-823f-fd5b49b7f128"
+    },
+    {
+      "claim_id": "50cd9480-e933-49a3-84f2-db67fea591fc",
+      "result_id": "46d9d82e-7b22-44c0-823f-fd5b49b7f128"
+    },
+    {
+      "claim_id": "79f01720-c212-4436-98f5-7a5197d210cf",
+      "result_id": "46d9d82e-7b22-44c0-823f-fd5b49b7f128"
+    },
+    {
+      "claim_id": "92ebafbe-624a-4748-90a1-51f1a8dcc3b8",
+      "result_id": "46d9d82e-7b22-44c0-823f-fd5b49b7f128"
+    },
+    {
+      "claim_id": "2a49673e-bef3-445b-abbc-862cb3eaaa9b",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "34850fd8-13f2-44c8-9be3-24522ad343ec",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "29bc0855-7efc-4052-a116-2debe03438a7",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "17d88aef-919f-422d-a2a0-28ef70db2ad8",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "b194b3cf-db0d-4eea-9f16-cbca68c14d24",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "ca72b63c-70ae-4936-82fd-87737603757e",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "d501d39a-d0b7-479a-a28e-262b2e9da303",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "c2d28a39-3130-4606-b442-21eb9870f528",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "9d59ea66-ad29-4b33-ad8e-cd0c29c669c3",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "55daa26f-a06d-4abe-a61e-053875692b6d",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "1f27f5f0-23d2-4997-af56-bffda3842e84",
+      "result_id": "a2fbc3b0-0548-40df-8c52-bd89db092959"
+    },
+    {
+      "claim_id": "d3daec3a-597c-4797-b551-462188fa1cf5",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "1c1cfc5e-4e1c-4994-a477-e872459d7d79",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "de45dbdd-63c3-486c-862f-bcefd303847b",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "b2ae3810-600f-42c0-af35-1b9fc63cd3cd",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "51a16163-af09-4376-8b83-3e0f49b3b7ff",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "1604457a-7d9d-4f37-8fd5-034f8d3c72e2",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "41c21260-369d-4834-8d48-859a804de309",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "98950398-1552-46d4-8ae0-113e9126d304",
+      "result_id": "05a422b7-7c4d-484e-9f49-72ac93fcf43b"
+    },
+    {
+      "claim_id": "31cc7156-5ab9-42ae-8c1a-a80c05b0d455",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "f04965f1-44ad-43bd-bb6c-cd35156b7b38",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "bfa3c7b1-a885-454a-9ab3-dde8501c5500",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "8ab058b3-d1ea-4027-9463-fbf20a6b62ae",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "812be9c2-fe6b-4169-be38-a9c598e45c01",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "54c0ee81-31a0-4599-a247-8eb92f13ad8b",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    },
+    {
+      "claim_id": "857dda8d-d19c-4c18-8b7a-5407b6b415eb",
+      "result_id": "9579aa7a-966c-42de-8dc5-bc3540669c68"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Wild-type mice exhibit increased dmPFC-BLA 4-7 Hz power and decreased 30-60 Hz power during social interaction sessions compared to no-target sessions, with enhanced dmPFC-BLA coherence and directional information flow from dmPFC to BLA at 4-7 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide statistically significant evidence (paired t-tests with Bonferroni correction, n=14 and n=6 mice) for bidirectional power changes. Claims C24-C25 demonstrate enhanced circuit coordination with appropriate statistical tests. Control experiments (C34-C36) with different target mice and toy mouse strengthen specificity. The granger causality analysis (C25-C26) appropriately identifies directional information flow consistent with known anatomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The observed LFP power changes are influenced by locomotion, with 4-7 Hz power higher during stop periods than running periods, but the target session effects persist specifically during stop periods independent of individual behavioral variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate appropriate consideration of locomotion as a confound with statistical validation. Claim C33 shows the critical control analysis separating stop and running periods, confirming target session effects persist during stop periods. This addresses a major potential confound. However, the lack of correlation between SI ratios and LFP power (C27-C28) within wild-type mice limits interpretation of individual differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The dmPFC-BLA oscillatory changes are specific to social behavior rather than novelty, anxiety, or spatial location, as demonstrated by control experiments with different target mouse strains, toy mice, and spatial zone analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide critical specificity controls showing effects persist with same-strain targets but not toy mice. Claims C37-C39 address anxiety confounds by analyzing avoidance zones, peripheral areas, and center areas, finding no LFP differences across anxiety-related locations. These controls strengthen the social-specificity interpretation, though the anxiety analysis relies on spatial proxies rather than direct anxiety measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Shank3 KO mice exhibit reduced social interaction and show exaggerated dmPFC 4-7 Hz power increases during target sessions, with specific enhancement in avoidance zones that is not observed in wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate both behavioral deficits and enhanced dmPFC oscillations with appropriate statistical comparisons (Mann-Whitney U tests, one-way ANOVA across groups). Claims C44-C47 provide spatial specificity showing avoidance-zone-specific increases in Shank3 KO but not wild-type mice. Sample sizes are adequate (n=7 KO, n=14 WT) and statistical corrections applied. The result links pathological oscillations to specific maladaptive behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Socially defeated mice show reduced social interaction and exhibit enhanced dmPFC 4-7 Hz power during target sessions and in avoidance zones, similar to Shank3 KO mice, suggesting a common oscillatory signature across different models of social deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate parallel findings in defeated mice (n=6) with appropriate statistical tests. Claim C54 synthesizes across both models to propose a common mechanism. The defeated control group mentioned in supplementary data strengthens causal attribution to social defeat. However, the smaller sample size for defeated mice (n=6) compared to wild-type (n=14) and the lack of detailed defeated control data in main claims slightly limits confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "During social approach behavior (defined by cage-oriented movement <90\u00b0), wild-type mice show reduced dmPFC-BLA 4-7 Hz power and coherence compared to leaving behavior (>90\u00b0), with diminished directional information flow from dmPFC to BLA, independent of locomotion speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 establish that approach and leaving behaviors are matched for speed, addressing a critical confound. Claims C60-C62 demonstrate consistent reductions in power, coherence, and granger causality during approach with appropriate paired t-tests. The behavioral definition (C55-C57) is clearly operationalized. This result provides dynamic, behavior-specific oscillatory changes beyond simple location-based analyses. The 5-second restriction to initial approach bouts is methodologically sound but limits generalizability to sustained interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Shank3 KO mice fail to show the normal reduction in dmPFC 4-7 Hz power during approach behavior, suggesting dysregulated social behavior-related dmPFC activity in socially deficient mice, consistent with opposite changes during avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides statistical evidence (n=7 mice) for lack of approach-leaving differences in Shank3 KO mice. Claims C65-C67 appropriately synthesize this with avoidance data to propose dysregulation. The logic is sound: wild-type mice show dynamic modulation (reduced during approach, increased during avoidance in disease models), while Shank3 KO mice lack this modulation. This supports a regulatory deficit interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fast-spiking interneurons in the mPFC show higher mean vector length (phase-locking) to 4-7 Hz oscillations during leaving behavior compared to approach behavior, suggesting that social approach involves disruption of interneuronal entrainment to theta oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 establish cell-type classification using established criteria from prior literature. Claim C70 provides statistical evidence (n=6 FS neurons, paired t-test p=0.025) for behavior-dependent phase-locking changes after excluding behavior-invariant neurons. The exclusion criterion (C70) is methodologically appropriate. However, the small sample size (n=6 FS neurons from 6 mice) and lack of confirmation that recorded interneurons are PV+ (acknowledged in Discussion) limit strength. Regular-spiking neurons showed no effect, providing specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Optogenetic stimulation of dmPFC PV interneurons at 40 Hz, but not 4 Hz or 10 Hz, replicates the bidirectional LFP changes observed during natural social approach (decreased 4-7 Hz, increased 30-60 Hz) and is sufficient to increase social interaction time in defeated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 demonstrate frequency-specific LFP modulation with appropriate statistics (n=7 ChR2 mice, paired t-tests). Claim C77 explicitly links optogenetic effects to natural behavior patterns. Claims C78-C80 show behavioral rescue with 40 Hz specifically, with proper YFP-only controls (n=5 mice). The experimental design includes multiple frequency controls and appropriate Bonferroni corrections. This provides strong causal evidence linking oscillatory patterns to behavior. The sequential session design (no stim, then 4, 10, 40 Hz) could introduce order effects, though this is partially mitigated by the specificity of 40 Hz effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior literature establishes that the mPFC-amygdala circuit is critical for social behavior and emotional regulation, with theta-range oscillations associated with anxiety and fear, gamma-range oscillations facilitating social interaction, and disruptions in both clinical populations and animal models of psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims C1-C16 are supported by appropriate citations to prior literature. These establish the scientific context and rationale for the current study. The authors appropriately cite foundational work on mPFC-amygdala anatomy, LFP oscillations, and pathological changes in psychiatric disorders. This background is essential for interpreting the novel findings but represents prior work rather than new results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Unlike fear-related theta-gamma coupling, no pronounced phase-amplitude coupling was observed between 4-7 Hz and 30-60 Hz frequency bands in dmPFC and BLA during social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by phase-amplitude coupling analysis shown in supplementary figure. This negative result is important for distinguishing social behavior-related oscillations from fear-related oscillations reported in prior work (Stujenske et al., 2014). The analysis appropriately addresses whether the two frequency bands interact through phase-amplitude coupling, finding they do not, suggesting independent modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Summary of main findings: all mouse types show increased dmPFC-BLA 4-7 Hz power during target sessions; socially deficient models show exaggerated increases during avoidance; wild-type mice show dynamic reductions during approach; and optogenetic replication of approach-related patterns rescues social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 accurately summarize the main experimental findings from the manuscript. These summary claims are supported by the detailed results described in other claim groups. They represent appropriate synthesis of the data rather than new findings, providing an overview of the study's contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Discussion of mechanisms: PV interneurons are established generators of gamma oscillations; 40 Hz optogenetic stimulation of PV interneurons reduces 4-7 Hz power while increasing 40 Hz power, possibly through interference with theta entrainment; these manipulations extend to BLA and rescue social behavior in defeated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately cite prior literature on PV interneurons and gamma oscillations. Claim C90 summarizes experimental findings. Claim C91 proposes a mechanistic explanation (interference with theta entrainment) that is speculative but reasonable given the data. Claims C92-C93 summarize the circuit-level and behavioral effects. The mechanistic explanation (C91) is appropriately qualified as speculative and represents interpretation rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The findings contribute to understanding how disruptions in excitatory-inhibitory balance and dynamic oscillatory changes regulated by inhibitory networks at appropriate timings are crucial for social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 cites prior literature on E/I balance in autism models. Claim C95 synthesizes the current findings with this broader framework. These claims represent appropriate contextualization of the results within the field's understanding of circuit mechanisms underlying social behavior. The interpretation is reasonable given the data showing dynamic, behavior-specific oscillatory changes and their manipulation through interneuron stimulation.",
+    "result_type": "MINOR"
+  }
+]

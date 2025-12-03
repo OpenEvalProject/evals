@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C22"
+    ],
+    "result": "The study addresses a knowledge gap regarding how working-memory limitations affect deliberative decision-making that requires accumulation of evidence over time. Prior studies using binary choice tasks failed to identify working-memory constraints on decisions, potentially because such tasks are insensitive to known working-memory limitations. The sensitivity of computed mean angles (continuous decision variables) to working-memory limitations has not been examined in detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C18, and C22 establish the motivation and knowledge gap for the study through citations to prior literature and logical reasoning. The claims accurately characterize established knowledge about working memory, evidence accumulation, and limitations of prior work. The knowledge gap is clearly defined and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study used a spatial working-memory task where 17 participants (age 22-87 years) reported remembered locations of visual disks after variable delays. The task compared Perceived (single disk location) versus Computed (mean of multiple disks) conditions, and Simultaneous (all disks at once) versus Sequential (one disk presented later) conditions. The task was implemented in PsychoPy3 and performed remotely on participants' home computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C26, and C39-C53 describe the experimental design and methods in detail. The task design is clearly specified with appropriate controls and conditions to test the hypotheses. The sample size (n=17) is modest but reasonable for a psychophysics study. Remote testing on home computers introduces potential variability but is documented. The exclusion criterion (>30\u00b0 errors, <10% of trials) is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study developed two computational models based on diffusion dynamics and bump-attractor models of working memory. The Average-then-Diffuse (AtD) model assumes the decision variable is computed immediately and stored as a single diffusing particle. The Diffuse-then-Average (DtA) model assumes all items are stored as separate diffusing particles and combined only at decision time, resulting in an effective diffusion constant inversely related to the number of items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C31-C35, C110-C113, and C134-C138 describe the theoretical framework and models grounded in established bump-attractor models of working memory (supported by citations). The mathematical predictions of each model are clearly specified and logically derived. The models make distinct, testable predictions about how memory precision should degrade with time and set size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In Simultaneous conditions, reports of Perceived spatial angles were unbiased but showed variance that increased linearly over time and depended on set size. The rate of variance increase (diffusion constant) did not depend on set size (ANOVA: significant effects of set size F(2,32)=83.87, p<0.001 and delay F(2,32)=29.55, p<0.001, but no interaction F(4,64)=1.36, p=0.256). Computed angle reports showed similar patterns with weaker set-size dependence: variance was higher at larger set sizes, but the rate of degradation did not depend on set size (ANOVA: significant effects of set size F(2,32)=13.53, p<0.001 and delay F(2,32)=130.79, p<0.001, but no interaction F(4,64)=0.538, p=0.708).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 report behavioral results with appropriate statistical tests (ANOVA with interaction terms). The lack of bias is verified with t-tests, and the linear increase in variance over time is consistent with diffusion dynamics. The key finding that rate of degradation does not depend on set size for either Perceived or Computed conditions is statistically supported and critical for distinguishing between models. Sample size (n=17) provides adequate power for within-subjects ANOVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C96",
+      "C97",
+      "C98",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For Simultaneous conditions, participants showed different strategy use depending on set size. At set size 2, equal numbers were best fit by AtD (n=8) and DtA (n=8) models (p=0.756). At set size 5, significantly more participants were best fit by AtD (n=12) than DtA (n=3) (p=0.0027). Participants were more likely to use AtD at set size 5 compared to set size 2 (p=0.029). Strategy use did not correlate with age and was not predictive across conditions for individual participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66, C96-C98, C116-C118 report model comparison results with appropriate statistical tests (Wilcoxon signed-rank tests). The finding that strategy use shifts toward AtD at higher working-memory loads is statistically significant and theoretically meaningful. However, the small number of DtA users at set size 5 (n=3) limits the strength of this conclusion. The lack of correlation with age and lack of individual consistency across conditions are important null findings that are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In Sequential conditions, Early Perceived reports were unbiased and became more variable over time in a linear manner, with higher variance at larger set sizes but no set-size dependence in the rate of variance increase (ANOVA: significant effects of set size F(2,32)=33.44, p<0.001 and delay F(1,16)=77.02, p<0.001, but no interaction F(2,32)=0.15, p=0.256). Late Perceived reports were unbiased and degraded over time, but degradation did not depend on set size (ANOVA: significant effect of delay F(1,16)=39.28, p<0.001, but not set size F(1,16)=0.90, p=0.36). Computed reports showed a slight bias toward Early items for set size 2 (13% closer, p<0.001) but not set size 5 (3.5% closer, p>0.5). Variance increased over time with a significant interaction between set size and delay (ANOVA: F(2,32)=6.81, p=0.003), suggesting different diffusion constants than for single Perceived values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C80 report Sequential condition results with appropriate statistical tests. The bias toward Early items in set size 2 Computed reports is a novel finding that suggests incomplete integration of Late information. The significant interaction between set size and delay for Computed reports (C78-C79) is critical evidence that the representation differs from single items. Statistical tests are appropriate and sample size is adequate. The lack of training effects (C77) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "For Sequential conditions, both strategies were used across set sizes. At set size 2, 9 participants were best fit by AtD and 8 by DtA (p=0.868). At set size 5, 9 were best fit by AtD and 7 by DtA (p=0.234). Neither model was significantly more likely across the population at either set size. Strategy use did not correlate with age and was not predictive across set sizes or temporal conditions for individual participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86, C88, C91-C95 report model comparison results for Sequential conditions with appropriate statistical tests (Wilcoxon signed-rank tests, Fisher's exact tests). Unlike Simultaneous conditions, there is no clear preference for either strategy in Sequential conditions. The lack of individual consistency in strategy use across conditions (C91-C95) is an important finding suggesting task-dependent strategy selection. Statistical tests are appropriate for the sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C131",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Most participants' behavior was well fit by one of two distinct strategies (AtD or DtA), each with its own constraints on decision performance based on different working-memory demands. Different participants employed different strategies for storing computed values, and these strategies have different consequences on overall accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C131, C144-C146 summarize the main finding that participants use different strategies with different memory demands. This is supported by the model fitting results showing that most participants are well-fit by one of the two models (though some are poorly fit or use hybrid strategies). The claim that strategies have different consequences is supported by the different predicted and observed patterns of variance increase. This is a major conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C99",
+      "C100",
+      "C107",
+      "C108",
+      "C143"
+    ],
+    "result": "Memory for computed mean locations degraded with increased set size and delay, similar to perceived locations. However, the degree of degradation depended on the strategy used to compute the decision variables. Computed variables based on either simultaneously or sequentially presented information were susceptible to the same kinds of working-memory constraints as perceived variables, corresponding to a decrease in precision over time. Increasing the number of decision-relevant items decreased accuracy, though the nature of this effect was variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C99-C100, C107-C108, C143 state the primary findings of the study. These are well-supported by the behavioral data (C54-C61, C67-C80) and model fitting results (C62-C66, C81-C86). The finding that computed decision variables are subject to working-memory limitations is novel and important. The strategy-dependence of degradation is a key insight supported by the differential model fits across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Variability from singular events (sensory encoding, averaging) was ~10\u00b0 in Simultaneous conditions, while noise accumulating during memory delays was ~3.5\u00b0/s. After ~3 seconds, memory noise begins to dominate overall variability, as noise from memory versus non-memory sources becomes approximately equal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 provide quantitative estimates of noise sources derived from model fits. The calculation that memory and non-memory noise are equal after ~3s (C103-C104) is a straightforward inference from the fitted parameters. These estimates are useful for understanding the relative contributions of different noise sources and are supported by the model fits, though confidence intervals on these estimates are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The finding that working-memory limitations affect decision accuracy appears to contradict previous studies that found no effect of delays on evidence accumulation. However, those studies used binary choice tasks that may be less sensitive to working-memory effects than the continuous, spatially based decision variable used in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 reconcile the current findings with prior literature. The explanation that binary choice tasks may be insensitive to working-memory effects is reasonable and supported by citations (Liu et al., 2015; Waskom and Kiani, 2018). This interpretation is plausible but would benefit from more direct evidence comparing task types. The claim is appropriately framed as an interpretation rather than a definitive explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C114",
+      "C115"
+    ],
+    "result": "Participants lost fidelity in representations of Computed values when computed from sequentially presented information. Performance differences between strategies were often minimal in the present study but would be expected to grow over longer delays due to differences in rates of degradation over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C114-C115 summarize findings and make predictions. The loss of fidelity in Sequential conditions (C87) is supported by the behavioral data (C74-C79). The prediction that performance differences would grow with longer delays (C115) is a logical inference from the different diffusion constants of the two models, though it remains untested. This is appropriately framed as a prediction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C132",
+      "C133"
+    ],
+    "result": "For Sequential set size 5, six participants (three previously identified as AtD and three as DtA) were slightly better described by a hybrid model. This suggests people likely use a spectrum of strategies, including nuanced combinations of AtD-like and DtA-like dynamics, which would suggest extensive flexibility in when and how evidence is incorporated into computed decision variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C132-C133 report results from alternative model fitting. The finding that some participants are better fit by a hybrid model is important for understanding the range of strategies used. However, the improvement in fit is described as 'slight' (average LL difference 0.34-1.28), and it's unclear if this is statistically significant. The interpretation that this reflects a spectrum of strategies (C90, C133) is reasonable but somewhat speculative given the limited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C109",
+      "C121",
+      "C122",
+      "C124",
+      "C147",
+      "C148"
+    ],
+    "result": "The findings imply that multiple, strategy- and task-dependent effects of working-memory should be considered in future neural and computational models of decision-making. More work is needed to fully characterize the conditions under which working-memory limitations affect decisions. Future studies could examine intermediate set sizes, provide different instructions/incentives, and consider how strategies minimize both response errors and execution costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C109, C121-C122, C124, C147-C148 discuss implications and future directions. These are appropriate inferences from the findings and identify important open questions. The suggestions for future work are reasonable and well-motivated by the current results. These are appropriately framed as implications and suggestions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Several limitations of the study are acknowledged: (1) it is unknown if strategy switching with set size relates to individual working-memory capacity; (2) from an optimality standpoint, DtA better preserves computed values than AtD when storage cost A<1; (3) the study did not consider metabolic/resource costs of different strategies; (4) the DtA model assumed no interference between items, which is an oversimplification given evidence for attraction/repulsion effects; (5) the DtA model assumed individual storage of items, but chunking/discarding could occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120, C123, C125-C130 identify important limitations and assumptions of the study. These are appropriately acknowledged and supported by citations to relevant literature (C123, C126-C127, C130). The discussion of optimality (C120) is a useful theoretical consideration. The acknowledgment that the models make simplifying assumptions (C125-C130) is important for interpreting the results and suggests directions for future modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A recent implementation of attractor models can compute running averages from sequential information. The study's results imply that such models should be extended to support flexible use of different strategies governing when and how information is used to form averages. It would be interesting to see if such models can account for neural activity in dorsolateral prefrontal cortex, which has been associated with both spatial working memory and evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 discuss implications for neural models and are well-supported by citations to relevant literature. The suggestion that attractor models should be extended to support flexible strategies (C140) is a reasonable implication of the findings. The connection to dorsolateral prefrontal cortex (C141-C142) is well-motivated by the literature showing its involvement in both working memory and decision-making. These are appropriately framed as implications and suggestions for future work.",
+    "result_type": "MINOR"
+  }
+]

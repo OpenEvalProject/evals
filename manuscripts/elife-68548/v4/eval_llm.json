@@ -1,0 +1,481 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C52",
+      "C53",
+      "C58",
+      "C94"
+    ],
+    "result": "Substrate binding induces a conformational change in the SB3 loop of BtuB in intact E. coli cells, shifting it approximately 2 nm toward the periplasm. This structural transition titrates with vitamin B12 concentration and saturates above 60 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C52, C53, C58, and C94 collectively demonstrate a substrate-dependent structural change in SB3 using DEER measurements in intact cells. The quantitative distance measurements (2.4 and 3.2 nm peaks with substrate-dependent shifts), titration data showing saturation, and reproducibility across multiple experiments provide strong converging evidence for this conformational change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C117",
+      "C128"
+    ],
+    "result": "Substrate-induced structural changes in the BtuB core are localized to the SB3 loop region. Sites in SB1 and SB2 (positions 63, 65, 72) show no significant structural changes upon substrate binding, while sites 90 and 93 in SB3 exhibit substrate-dependent movements of approximately 8 \u00c5 and 4 \u00c5 respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C117, and C128 are supported by systematic DEER measurements across multiple sites in the core domain. The absence of changes in SB1 and SB2 combined with localized changes in SB3 provides strong evidence that the structural transition is confined to this specific region. The quantitative measurements and multiple site comparisons strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C95",
+      "C107",
+      "C119",
+      "C127"
+    ],
+    "result": "Breaking the R14-D316 ionic lock through mutation produces an alternate structural state where SB3 is displaced approximately 2 nm toward the periplasmic side of BtuB upon substrate binding. This ionic lock normally regulates the structural transition and is expected to be broken during TonB binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C71, C95, C107, C119, and C127 demonstrate that R14A mutation dramatically alters SB3 behavior, producing longer distance components (3.8 and 4.5 nm) not seen in wild-type. The DEER data clearly show this effect, and the functional relevance is supported by the expectation that TonB binding breaks this ionic lock. The R14A mutant remains functional (C74), supporting physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C96"
+    ],
+    "result": "The substrate-induced structural changes observed in intact cells are not observed when BtuB is reconstituted into phospholipid bilayers. In reconstituted systems, the substrate-dependent conversion to shorter distances is much more limited, and the longer substrate-induced shifts seen with R14A mutation are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82-C85, and C96 are strongly supported by direct comparison of DEER measurements in intact cells versus reconstituted proteoliposomes. The systematic loss of substrate-dependent structural changes in the reconstituted system provides compelling evidence that the native membrane environment is required for these conformational transitions. This is a critical finding that explains why these changes were not previously observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C97",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C132"
+    ],
+    "result": "The native outer membrane environment, particularly LPS, is required to populate conformational states important for BtuB function. Computational studies suggest LPS interactions with extracellular loops modulate conformational equilibria, promoting the extended form of SB3 and weakening the R14-D316 ionic interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C97, C102-C106, and C132 integrate computational predictions with experimental observations. The cited MD simulations showing LPS-dependent effects on SB3 conformation and the R14-D316 interaction are consistent with the experimental finding that reconstituted systems lack these structural transitions. The convergence of computational and experimental evidence supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mutating either R14, D316, or both residues has similar effects on SB3 conformation, with all mutations producing significant peaks around 3.8 and 4.5 nm in the substrate-bound state. The double mutant shows the most perturbed distribution, indicating the ionic interaction mediates allosteric changes affecting both the Ton box and SB3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by systematic DEER measurements on single and double mutants shown in Figure 5. The similar effects of R14A and D316A mutations, with enhanced effects in the double mutant, provide strong evidence for the role of this ionic interaction in mediating allosteric changes. The data quality and reproducibility support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The substrate-induced structural transition observed with ionic lock mutations likely represents a structural state that occurs during the transport process, as both substrate and TonB are expected to be bound to BtuB during transport, which would break the R14-D316 ionic lock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121, C122, C129-C131 make inferences about the transport mechanism based on the expectation that the ionic lock is broken during TonB binding. While the R14A mutant is functional (C74), the manuscript does not directly demonstrate that the observed structural states occur during active transport or that TonB binding produces the same conformational changes. This remains a reasonable but unproven hypothesis requiring additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Current pulling models propose that TonB unfolds the N-terminal region of the core (up to residue 73) to permit substrate passage. However, no significant structural changes are observed in the N-terminal side of the core (sites 63, 65, 72) in intact cells, suggesting the N-terminus may not move during transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C114-C118 contrast existing models with the current findings. The absence of structural changes at N-terminal sites (C117) directly challenges pulling models that predict N-terminal unfolding. This is well-supported by the DEER data showing no changes at sites 63, 65, and 72. The critique of pulling models requiring extraction of polypeptide longer than the periplasm width (C116) adds additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C35"
+    ],
+    "result": "Multiple sites on the extracellular surface of BtuB can be spin-labeled in vivo using site-directed cysteines and methanethiosulfonate reagent. Efficient incorporation of spin label pairs for DEER measurements requires use of a DsbA-deficient strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C35 describe established methodology supported by citations to previous work (C35, C41, C42). The successful labeling of multiple sites demonstrated in Figure 1 and the DEER measurements throughout the manuscript validate this approach. This is well-established methodology that enables the key findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "For sites 63, 72, and 93, vitamin B12 addition alters EPR spectra and increases the immobile component population, indicating substrate binding is not prevented by spin labeling. Sites 65 and 90 show no spectral changes, though site 90 does bind substrate as evidenced by DEER measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by the EPR spectra shown in Figure 1C and subsequent DEER measurements. The substrate-dependent spectral changes at sites 63, 72, and 93 demonstrate that labeling does not prevent substrate binding. The inference that site 90 binds substrate despite no spectral change (C50) is validated by the DEER data showing substrate-dependent distance changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Predicted distance distributions from crystal structures show a substrate-dependent shift toward shorter distances due to unfolding of a helical turn in SB3, but the magnitude is smaller than observed by DEER. The structural change must involve movement of the SB3 apex or rotamer changes at position 90, as site 188 does not move with substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 compare computational predictions from crystal structures with experimental DEER data. The qualitative agreement but quantitative discrepancy between predictions and measurements is clearly demonstrated in Figure 2. The inference that the change involves SB3 movement (C57) is well-supported by the constraint that site 188 is fixed (C56, supported by citation C51).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The BtuB R14A mutant is functional in transport as determined by growth assays. This is consistent with earlier work showing that a dipeptide insertion disrupting the D316-R14 ionic lock supported vitamin B12 transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 are supported by the growth assay data in Figure 3\u2014figure supplement 3 and citation to previous work. The functional activity of the R14A mutant is important for establishing that the observed structural changes are physiologically relevant and not artifacts of a non-functional mutant. The convergence with previous work (C75) strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The conformations observed in the V90R1-T188R1-R14A mutant are stable over time for at least 60 minutes, indicating label stability and that conversion back to the apo state does not occur under experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by time-course DEER measurements shown in Figure 3\u2014figure supplement 4. The stability of the conformations over 60 minutes validates that the observed structural states are not transient artifacts and that the spin labels remain intact during the measurement period. This is important for establishing the reliability of the DEER measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "TonB-dependent transporters facilitate uptake of trace nutrients and carbohydrates in Gram-negative bacteria and are essential for pathogenic bacteria and microbiome health. Despite their importance, the mechanism of transport is still unknown. These transporters have a \u03b2-barrel domain and a core domain, with TonB interacting through the Ton box motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C15 provide established background knowledge about TonB-dependent transporters, supported by citations to previous literature. These claims accurately represent the current state of knowledge in the field and provide necessary context for the study. The structural descriptions are consistent with known crystal structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The large size of substrates and absence of obvious permeation pathways have led to proposals that transport involves significant conformational changes, possibly including partial rearrangement or removal of the core domain. However, no direct evidence for major structural changes has been observed, except for substrate-induced unfolding of the Ton box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 accurately summarize the state of knowledge prior to this study, supported by appropriate citations. The statement that no direct evidence for major structural changes existed (C18, C21) is important for establishing the novelty of the current findings. The description of Ton box unfolding (C19, C20) is well-established from previous EPR work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "Crystal structures show TonB binding to BtuB through edge-to-edge interaction with the Ton box, with the remainder of the core remaining essentially unchanged. This has led to proposals that TonB exerts mechanical force on the transporter. Models involving TonB rotation have been proposed but are unlikely in FhuA due to unstructured residues between Ton box and core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C27-C28 accurately describe structural knowledge from crystallography and discuss proposed mechanisms, all supported by appropriate citations. The critique of rotational models based on FhuA structure (C28) is well-founded. These claims provide important context for understanding why alternative mechanisms need to be considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Pulling models explored using steered MD and AFM experiments indicate that an N-terminal region of the core (up to residue 73) is preferentially unfolded to permit vitamin B12 movement, while the C-terminal region remains static and does not unfold during transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 accurately summarize previous computational and experimental work on pulling models, supported by appropriate citations. The conclusion that the C-terminal region is static (C31) is important because it contrasts with the current findings showing C-terminal structural changes. This establishes the novelty and significance of the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Almost all structural work on BtuB has been carried out on purified or partially purified protein where the native outer membrane environment is absent. Transport in TonB-dependent transporters has never been reconstituted, so it has never been established that isolated, reconstituted BtuB is capable of transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 accurately describe important limitations of previous structural studies. These statements are well-established facts in the field and provide crucial motivation for the in situ approach used in this study. The inability to reconstitute transport (C33, C34) is a key limitation that justifies studying the protein in intact cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Preliminary measurements indicate BtuB behaves differently in intact cells than in purified reconstituted systems. A substrate-dependent change in SB3 is observed in situ but not in detergent-treated OM preparations. Extracellular loops are highly constrained in intact cells, and substrate-induced changes observed in proteoliposomes are not seen in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe preliminary findings from previous work (supported by citations) that motivated the current study. These observations of differences between native and reconstituted systems provide important context and justification for the systematic investigation presented in the manuscript. The citations to previous work support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Site 188 on the 3/4 extracellular loop was chosen as a reference point because previous work demonstrated it assumes a well-defined position with minimal or no movement upon substrate addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by citation to previous work (Nyenhuis et al., 2020a). The choice of site 188 as a reference point is critical for interpreting the distance measurements, and the justification based on previous characterization is appropriate. This methodological choice is well-founded and properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The saturation point of the vitamin B12 titration likely reflects the concentration of BtuB in the sample rather than binding affinity, as substrate concentrations greatly exceed the affinity of vitamin B12 to BtuB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 provides a reasonable interpretation of the titration data in Figure 2D, supported by citation to previous work on substrate affinity (Bradbeer et al., 1986). The inference that saturation reflects BtuB concentration rather than binding affinity is logical given the high substrate concentrations used. The consistency with expected spin concentrations supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "BtuB is expected to bind both substrate and TonB during transport, which will break the R14-D316 ionic lock. However, under experimental conditions, BtuB is in large excess relative to TonB (perhaps 10-20 fold), so only a small portion would be bound to TonB during distance measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide important context for interpreting the experiments. The expectation that the ionic lock is broken during transport (C64) is well-founded based on structural knowledge (supported by citation). The estimate of BtuB:TonB ratio (C65) is reasonable based on known cellular protein concentrations, and the inference about TonB binding (C66) logically follows. This explains why ionic lock mutants were used to study the structural transition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "A movement of SB3 toward the extracellular surface is highly unlikely because it would require major unfolding of the core that is not observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 provides a logical inference about the directionality of SB3 movement based on the absence of structural changes in other parts of the core. This reasoning is sound and helps establish that the observed longer distances represent movement toward the periplasm rather than the extracellular surface. The inference is well-supported by the data showing no changes in SB1 and SB2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "In the presence of R14A mutation, a new distance component appears with substrate addition around 3 nm for the V90R1-S237R1 pair, beyond the distance range predicted by crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by DEER measurements shown in Figure 3\u2014figure supplement 2. This provides additional evidence for the substrate-induced movement of SB3 with the R14A mutation, using a different reference point (site 237) than the main experiments. The observation of a distance beyond crystal structure predictions supports the conclusion of a novel conformational state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "In the apo crystal structure (1NQG), SB3 has a single helical turn and shorter conformation that may be associated with the 3.2 nm distance observed by EPR. In the vitamin B12 bound structure (1NQH), SB3 is more extended and may be associated with the 2.4 nm distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77 and C78 are explicitly speculative (\"we speculate may be associated\"). While the structural descriptions of the crystal structures are accurate, the association with specific EPR distance components is tentative. The manuscript appropriately presents this as speculation rather than established fact. Additional structural data would be needed to definitively assign the distance components to specific conformations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Previous work demonstrated that breaking the R14-D316 ionic lock altered the Ton box conformational equilibrium and promoted its unfolded state, with effects comparable between R14A and D316A mutations. Substrate binding partially unfolded the Ton box and shifted the energy by about 2 kcal/mol. Both the Ton box and SB3 were found necessary for TonB-dependent retention of vitamin B12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C88, C98-C101 accurately summarize previous work from the authors' laboratory and others, all supported by appropriate citations. This background establishes the known connections between the ionic lock, Ton box, and substrate binding, providing important context for interpreting the current findings about SB3. The citations support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In the apo state, the R14-D316 mutation enhances the extended form of SB3. Upon substrate binding, an alternate conformational state is generated where sites 90 and 93 are extended as much as 4.5 nm from site 188. This large structural change has not been previously observed and appears localized to the C-terminal side of the core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by DEER measurements with ionic lock mutations shown in Figures 3D and 5. The observation of enhanced extended form in apo state (C108) and the dramatic substrate-induced changes (C109) are clearly demonstrated in the data. The novelty of these findings (C110) and localization to the C-terminal side (C111) are well-supported by the systematic measurements across multiple sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Crystal structures show TonB interacting with the Ton box in an edge-to-edge manner. Since the core is largely unaltered by TonB binding, models for transport have focused on the idea that TonB alters the core structure by exerting mechanical force on the Ton box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 accurately describe structural knowledge and prevailing models in the field, supported by appropriate citations. These claims provide important context for the Discussion section, explaining why the current findings suggest an alternative mechanism. The description of existing models is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "The C-terminal side of the core has lower side chain density than the N-terminal side, suggesting more space for structural rearrangements within this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is based on structural analysis of the core domain and provides a plausible explanation for why structural changes are observed in the C-terminal region but not the N-terminal region. This observation from crystal structures is verifiable and provides useful context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The free energy of binding of TonB to BtuB is significant and characterized by a Kd in the nM range, which could provide energy to promote structural changes and disrupt core-barrel electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by citation to previous work (Freed et al., 2013). This provides a plausible energetic basis for the proposed mechanism where TonB binding drives the structural changes observed with ionic lock mutations. The binding affinity is well-established from previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "To complete the transport cycle, TonB must be disengaged from BtuB. The inner membrane complex of ExbB and ExbD may perform this function and restore the apo state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124 and C125 are speculative proposals about the role of ExbB and ExbD in the transport cycle. While the need for TonB disengagement (C124) is logical, the specific role of ExbB/ExbD in this process (C125) is presented as speculation (\"may perform this function\"). The manuscript appropriately presents this as a hypothesis rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "EPR spectroscopy in whole cells provides evidence for a substrate-induced structural transition in BtuB involving SB3 on the extracellular apex of the core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is a summary statement of the main conclusion, well-supported by the comprehensive DEER measurements presented throughout the manuscript. This conclusion is strongly supported by multiple lines of evidence including distance measurements, titrations, and comparisons across different conditions and mutants.",
+    "result_type": "MAJOR"
+  }
+]

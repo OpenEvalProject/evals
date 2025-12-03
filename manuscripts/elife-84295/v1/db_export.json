@@ -1,0 +1,1576 @@
+{
+  "submission": {
+    "id": "86672092-087b-4694-953e-916c4d404e1a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T18:11:08.262221Z",
+    "updated_at": "2025-12-03T18:11:08.262221Z"
+  },
+  "content": [
+    {
+      "id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "submission_id": "86672092-087b-4694-953e-916c4d404e1a",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic metabolome profiling uncovers potential TOR signaling genes\n\n## Authors\n\n- Stella Reichling<sup>1</sup>\n- Peter F Doubleday<sup>1</sup> ([ORCID: 0000-0002-1784-1282](https://orcid.org/0000-0002-1784-1282))\n- Tomas Germade<sup>1</sup> ([ORCID: 0000-0002-5144-1266](https://orcid.org/0000-0002-5144-1266))\n- Ariane Bergmann<sup>2</sup>\n- Robbie Loewith<sup>2</sup> ([ORCID: 0000-0002-2482-603X](https://orcid.org/0000-0002-2482-603X))\n- Uwe Sauer<sup>1</sup>\n- Duncan Holbrook-Smith<sup>1</sup> ([ORCID: 0000-0003-0787-3165](https://orcid.org/0000-0003-0787-3165)) \u2020\n\n### Affiliations\n\n1. Institute of Molecular Systems Biology, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))\n2. Department of Molecular Biology, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAlthough the genetic code of the yeast Saccharomyces cerevisiae was sequenced 25 years ago, the characterization of the roles of genes within it is far from complete. The lack of a complete mapping of functions to genes hampers systematic understanding of the biology of the cell. The advent of high-throughput metabolomics offers a unique approach to uncovering gene function with an attractive combination of cost, robustness, and breadth of applicability. Here, we used flow-injection time-of-flight mass spectrometry to dynamically profile the metabolome of 164 loss-of-function mutants in TOR and receptor or receptor-like genes under a time course of rapamycin treatment, generating a dataset with >7000 metabolomics measurements. In order to provide a resource to the broader community, those data are made available for browsing through an interactive data visualization app hosted at https://rapamycin-yeast.ethz.ch. We demonstrate that dynamic metabolite responses to rapamycin are more informative than steady-state responses when recovering known regulators of TOR signaling, as well as identifying new ones. Deletion of a subset of the novel genes causes phenotypes and proteome responses to rapamycin that further implicate them in TOR signaling. We found that one of these genes, CFF1, was connected to the regulation of pyrimidine biosynthesis through URA10. These results demonstrate the efficacy of the approach for flagging novel potential TOR signaling-related genes and highlight the utility of dynamic perturbations when using functional metabolomics to deliver biological insight.\n\n## Introduction\n\nDespite the long-standing sequencing of the Saccharomyces cerevisiae genetic code (Goffeau et al., 1996), the characterization of the roles of genes and proteins within it is an ongoing process (Wood et al., 2019). Any systematic understanding of the cell will require a full mapping between genes and functions. Various approaches have been used to explore gene function at a genome-wide scale. Many of these approaches rely only on tracking changes in the fitness of mutants in different conditions (Giaever et al., 1999). Similarly, synthetic genome arrays can be used to explore gene function by identifying genetic interactions between genes of unknown function and genes whose functions are better characterized (Costanzo et al., 2010). These approaches have been very successful, but generally use fitness as a readout to infer function through a guilt-by-association approach (Aravind, 2000) and thus are limited to genes that influence fitness under the chosen experimental conditions. Other techniques have been developed where the effects of mutations on the cell can be tracked beyond fitness. These approaches include transcriptional profiling (Velculescu et al., 1997) and high content imaging (Carpenter, 2007), among others. There is enormous variability for these approaches in terms of the number of unique features that can be collected as well as the time and cost required per sample analyzed. These approaches can also reveal changes within the cell that are measurable but that would not translate into differences in fitness. With the advent of high-throughput metabolomics, including flow-injection analysis mass spectrometry (FIA-MS), it is possible to measure the metabolome profile of cells in less than a minute per sample (Fuhrer et al., 2011). Increased throughput in metabolomics has allowed the union of functional genomics and metabolomics, opening a new approach to the characterization of gene function at a genome-wide scale (Fuhrer et al., 2017).\n\nThe relationship between genetics and the metabolome of S. cerevisiae has been a long-standing area of inquiry (Breunig et al., 2014), and metabolomics has been used to understand gene function. For example, metabolomics has been used to uncover phenotypes for silent mutations (Raamsdonk et al., 2001). In the past, pioneering work has demonstrated that high-throughput approaches can be used on a genome-wide scale to measure amounts of amino acids in yeast deletion mutants for the purpose of characterizing regulatory principles of biosynthesis (M\u00fclleder et al., 2016a). Other work in Escherichia coli has explored the effect of loss-of-function mutations on the metabolome at a genome-wide scale (Fuhrer et al., 2017). However, these genome-scale approaches are insufficient to fully associate genes and functions since not all genetic deletions will exert a measurable effect on the cell in every condition (Giaever et al., 2002). This may in part be due to limited metabolome coverage, but it may also be because these studies were performed under steady-state conditions. Under these conditions, cells are not exposed to any dynamic perturbation, allowing them to buffer their metabolism in such a way as to obscure the effects of different mutations on the cell (Jost and Weiner, 2015). Dynamic cellular perturbation may reveal functional relationships between genes by evading some portion of compensating changes within the cellular system. Tracking the dynamics of the metabolome for large numbers of mutants has historically been unattainable due to throughput limitations, but with the order-of-magnitude increase in measurement speed offered by flow-injection such experiments are now feasible.\n\nThe ability to precisely follow changes in the levels of metabolites is particularly important when investigating the cellular systems that regulate metabolism and growth. The target of rapamycin (TOR) signaling system is a core regulator of these decisions around growth in eukaryotic cells (reviewed in Gonz\u00e1lez and Hall, 2017). Many core components of TOR signaling have been elucidated (Loewith et al., 2002). This includes the discovery of two functionally distinct sets of TOR protein complexes, one of which (TORC1) is sensitive to inhibition by rapamycin and a second complex (TORC2) which is not (reviewed in Eltschinger and Loewith, 2016). Key questions remain regarding the roles of different TOR signaling genes in the regulation of metabolism. For example, although it has been shown that leucine can regulate TOR through interactions with its transporter SLC7A5 (reviewed in Taylor, 2014), the broader question of how other amino acid levels are able to regulate TOR is currently not fully characterized (Gonz\u00e1lez and Hall, 2017). Genome-scale investigations have been devised to identify genes that convey resistance or susceptibility to the TORC1 inhibitor rapamycin in different mutant forms (Butcher et al., 2006). Although these approaches have had successes, they do not provide specific information regarding how any given mutation affects the cell. By contrast, high-throughput metabolomics can provide specific insights by identifying which mutants lead to defects in different dimensions of the metabolic response of the cell to rapamycin while also allowing for guilt-by-association analysis on the basis of metabolome similarity.\n\nIn this work, we exploit dynamic high-throughput metabolome profiling to measure the metabolome profiles of 164 loss-of-function mutants in yeast, and newly associate three genes with TOR signaling. Further investigation of these mutants showed that they have proteomic alterations that further implicate them in TOR signaling. A subset of them also showed altered growth responses during nutrient upshifts where TOR signaling is important. One of these genes, CFF1 (YML079W), is a gene of unknown function with structural similarity to auxin binding proteins in plants (Zhou et al., 2005) that has recently been shown to be required for the production of quorum-sensing compounds (Valastyan et al., 2021). We discovered that a CFF1 loss-of-function mutant also shows altered pyrimidine metabolism during nutrient upshifts, likely due to altered expression of the pyrimidine biosynthetic enzyme URA10. These results demonstrate that CFF1 mutation alters the cell\u2019s response to rapamycin and nutritional shifts, and thus implicates it in TOR signaling.\n\n## Results\n\n### TOR mutants show altered metabolome responses to rapamycin treatment\n\nWe sought to establish the metabolome responses of different TOR-related mutants to rapamycin so that we could use those responses as a baseline to explore gene function for mutants not yet known to be involved in TOR signaling. Thus, we characterized the effects of a collection of 85 mutants in TOR-related signaling genes on the metabolome response of the cell to rapamycin (Figure 1A, Supplementary file 1). The mutant collection included deletions in regulators that act upstream of TORC1, as well as downstream kinases or genes involved TOR-related processes such as autophagy. Only nonessential mutants were selected for the collection. These TOR signaling mutants were cultivated on synthetic defined media with glucose and ammonium as sole carbon and nitrogen sources. Cultures were grown to an optical density at 600 nm (OD600) of 0.7 at which point metabolites were extracted and a rapamycin treatment (400 ng/mL) was performed. Rapamycin treatment inhibits TORC1 and elicits important dynamic responses in terms of metabolite levels and downstream signaling events (Stracka et al., 2014). We aimed to capture these dynamic effects in our mutant strains by preparing polar metabolite extracts after 5, 30, 60, and 90 min of rapamycin treatment. These extracts were measured using FIA-MS (Fuhrer et al., 2011), a chromatography-free method that allows for the measurement of relative metabolite levels with a broad coverage of metabolite classes in less than a minute per sample. The effect of rapamycin treatment on wild-type yeast as measured by high-throughput FIA-MS was orthogonally validated by a longer liquid chromatography-mass spectrometry (LC-MS)-based measurement method (Figure 1\u2014figure supplement 1). The similar metabolome response seen using both methods demonstrated that our high-throughput measurements were of sufficient quality to explore the relative differences in metabolome responses between the mutants in this study while providing the throughput required to study the large number of mutants.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig1-v1.jpg)\n\n**Figure 1.:** (A) A schematic diagram illustrating the study design. (B) The effect of rapamycin treatment over time is shown for wild-type cells after the indicated duration of rapamycin treatment compared with the untreated control condition. Only metabolites that show a significant (p-value<0.05, two-sided t-test) are shown. (C) The share of TOR-related mutants included in the study falling into each of the indicated categories is indicated. (D) The number of significantly changing metabolites across the mutants in the indicated categories is shown for each duration of rapamycin treatment. Significantly changed metabolites show an absolute log2 transformed fold-change compared with wild-type of >0.5, and a p-value of <0.05 based on a two-sided Student's t-test. (E, F) The normalized ion intensities for glutamine and phenylalanine in wild-type and gtr1 yeast are shown after the indicated duration of rapamycin treatment. The central lines indicate the median value across four biological replicates. Shaded areas indicate the standard deviation across replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The average log2 transformed fold-changes for metabolites in wild-type yeast treated with 400 ng/mL rapamycin are compared between flow-injection and LC-MS measurements. Points indicate the average log2 fold-change for three biological replicates for a metabolite that was measured using both analytical systems.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The log2 transformed fold-changes for each indicated mutant compared to the wild-type control are shown across the metabolites that demonstrated the largest changes in metabolite levels across the group. Each point indicates the fold-change at one time point for one mutant.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The normalized ion intensities for inosine (A), glutamine (B), and kynurenine (C) in wild-type and atg13 yeast are shown after the indicated duration of rapamycin treatment. The central lines indicate the median value across four biological replicates. Shaded areas indicate the standard deviation across replicates.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A, B) Principal components analysis representation of the variance within the dataset before (A) and after (B) the normalization as outlined in the 'Methods' section. The points are colored according to the time after rapamycin treatment. (C, D) The cumulative variance explained by principal component analysis is shown before (C) and after (D) normalization. (E, F) The distribution of coefficients of variation for each ion and set of biological replicates is shown before (E) and after (F) normalization.\n\nTORC1 is known to regulate many metabolic functions, but amino acid and nucleotide metabolism exhibit characteristic changes when TORC1 is inactivated (Oliveira et al., 2015; Xu et al., 2013). Specifically, the levels of most amino acids increase after rapamycin treatment due to inhibition of translational initiation (Berset et al., 1998), with some exceptions such as serine (M\u00fclleder et al., 2016a; Oliveira et al., 2015). Upon TORC1 inactivation through starvation, nucleotide degradation increases, which leads to increased pool sizes of nucleoside-related compounds (Xu et al., 2013). Since the yeast were cultivated in media containing glucose as a carbon source and ammonium as a nitrogen source, basal TORC1 signaling is high in these exponentially growing wild-type yeast until rapamycin is added to inhibit TORC1. Consistent with reports in the literature (Oliveira et al., 2015), changes in metabolite levels such as nucleosides were seen when wild-type yeast were treated with rapamycin (Figure 1B).\n\nThe TOR-related mutants within this study are drawn from a range of classes, with multiple genes involved in autophagy, positive and negative regulation of TOR signaling, signaling genes that are mechanistically downstream of TOR, and other classes (Figure 1C). Significantly altered metabolite levels (absolute log2 transformed fold-changes of >0.5 compared with wild-type with a p-value of <0.05) could be observed for mutants across all functional classes compared with wild-type (Figure 1D). The highest number of changes in metabolite levels across all mutants were observed after 90 min of rapamycin treatment (Figure 1D). These results show that treating the cells with rapamycin can reveal metabolic responses that are not measurable prior to treatment.\n\nDeleting genes that are positive upstream regulators of TOR signaling reduces the signal propagated through that system (P\u00e9li-Gulli et al., 2015), and thus either causes changes in the metabolome that resemble those resulting from rapamycin treatment (M\u00fclleder et al., 2016a) or could further sensitize the cell to TORC1 inhibition. gtr1, a mutant in a key positive regulator of TOR signaling that acts upstream of TORC1 (Binda et al., 2009), showed elevated levels of glutamine compared with wild-type in the absence of rapamycin (Figure 1E). Since glutamine levels increase after rapamycin inhibition of TORC1, this increase in glutamine in gtr1 serves as a positive control. Phenylalanine also shows an accumulation after cells were treated with rapamycin, but it showed similar levels in untreated wild-type and gtr1 cells (Figure 1F). However, the gtr1 mutant showed a much stronger accumulation of the amino acid than did wild-type after rapamycin treatment (Figure 1F). Thus, some metabolic alterations manifested by deleting genes involved in TOR signaling are only revealed after treatment with rapamycin. When this analysis was expanded to all deletion mutants in genes that code for positive regulators of TORC1 signaling within our collection (GTR1 [Binda et al., 2009], GTR2 [Binda et al., 2009], LST4 [P\u00e9li-Gulli et al., 2015], MTC5 [Panchaud et al., 2013], RTC1 [Panchaud et al., 2013], SEA4 [Panchaud et al., 2013]; hereafter referred to as 'positive regulators'), similar effects were seen across mutants and time points (Figure 1\u2014figure supplement 2). These results suggest that metabolome profiles could be used to search for novel positive regulators of TORC1 signaling.\n\n### Metabolome profiling identifies novel potential TORC1 signaling genes\n\nBuilding on the investigation of known TOR signaling genes, we assembled another collection of 85 loss-of-function mutants. These mutants were selected for being known receptors, nutrient sensing proteins in S. cerevisiae, showing sequence similarity to known receptors in other species, or carrying protein domains that are common in receptor proteins (Supplementary file 1). Mutants from this collection are from hereon referred to as 'receptor-related.' The collection includes both intracellular and extracellular receptors. By enriching the mutant collection for receptor-related functions, we aimed to increase our chances of identifying genes that are involved in the regulation of TORC1 signaling. Dynamic metabolome extracts for these 85 mutants (from here on referred to as receptor-related) were collected under the same conditions as described above for the TOR mutants (Figure 1A) and were analyzed by FIA-MS.\n\nMetabolome profiles for each mutant at each time point were determined by calculating the average log2 fold-change between the metabolite intensities of the mutants compared with the wild-type control. Patterns of metabolome similarity across the dataset were systematically analyzed by calculating the Pearson correlation between the metabolome profiles for each mutant in the TOR and receptor-related collections to each other for each time point. Manhattan distances between each mutant\u2019s profiles of correlation were then calculated and the mutants were subjected to hierarchical clustering (Figure 2A). This analysis showed clustering of the positive regulators, with most co-clustering mutants being other TOR-related genes. Indeed, the empirical likelihood for the distances between positive regulators being as low as was observed was calculated to be <5% for all time points that were tested (Figure 2B). The median distance between each mutant and the other positive regulators was used as a metric for the binary classification of mutants as being positive regulators or not. Annotated positive regulators of TORC1 signaling were treated as true positives, and all other mutants in the annotated collection were treated as false positives. When the area under a receiver operating characteristic curve was calculated for each time point, the values were >0.5 for all the time points (Figure 2BC). The area under the curve for the untreated cells was observed to be the smallest of all the time points, indicating that a dynamic perturbation by rapamycin treatment improved the recovery of true positives (Figure 2B). This highlights the utility of dynamic perturbations when applying metabolomics to studying gene function. Previous studies have interrogated gene function by measuring the genetic interactions between mutations in yeast systematically, including for mutations in genes included in this study. It is possible that the metabolome-based distances that were calculated here capture the same information that arises from genetic interaction studies. However, when the metabolome distances between mutants were compared with the genetic interaction score between genes (Costanzo et al., 2016), small but significant correlations were seen between the datasets (Figure 2\u2014figure supplement 1). These correlations were largely driven by relatively few interactions with large negative genetic interaction scores. This demonstrates that, with the exception of very strong negative genetic interactions, metabolome-based distances between mutants provide additional descriptions of the functional relationships between mutants. This suggests that new patterns of similarity derived from metabolomics could be used to identify new functional relationships.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig2-v1.jpg)\n\n**Figure 2.:** (A) The Pearson correlation matrix between all TOR and receptor-related genes is shown for the 30 min rapamycin treatment condition with clustering based on Ward\u2019s algorithm of the Manhattan distance. The identity of the clustered mutants (TOR-related, upstream positive regulators of TOR signaling, or receptor-related) is indicated with the alternate colored heatmap as the edge of the correlation heatmap. (B) The area under the curve for the recovery of known upstream positive regulators of TOR signaling is shown for each time point at which metabolomics data was collected. Area under the curve (AUC) is indicated as a blue line. The empirical p-value for the median distance between those genes is also shown for each time point, based on data randomization. The p-value is indicated as a red line. (C) A receiver operating characteristic curve is shown for the 30 min time point demonstrating the recovery of known positive recovery of known upstream positive regulators of TOR signaling. (D) The distance for each mutant relative to the 0.2 false discovery rate (FDR) threshold calculated for the time point is shown across all time points and genes in this study. Values of <1 indicate that the mutant has passed the distance threshold for that time. (E) Table describing the identity and role of receptor-relating genes that pass the 0.2 FDR threshold for distance from positive regulators of TOR signaling.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The relationship between the metabolome distance as represented in Figure 2 between genes after 60 min of rapamycin treatment, and the genetic interaction score as defined in Costanzo et al., 2010.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The metabolome distance as represented in Figure 2 between genes after 30 min of rapamycin treatment and non-self, positive regulators of TOR signaling is shown in ascending order. Positive and negative regulators of TOR signaling are indicated by color.\n\nThis analysis captures other expected relationships between the genes within the dataset. For one, TOR-related genes showed smaller distances to the positive regulators compared with the receptor-related genes (Figure 2A). This is expected since although these genes are not upstream positive regulators of TORC1 signaling, many of them are effectors of TORC1 signaling that are involved in the cellular response to altered TORC1 signaling and thus should share some features of their metabolic response. Additionally, genes that are negative regulators of TORC1 signaling (NPR3 [Neklesa and Davis, 2009], PBP1 [Yang et al., 2019], PSR1 [Chen et al., 2018], PSR2 [Chen et al., 2018], TIP41 [Jacinto et al., 2001], and WHI2 [Chen et al., 2018]) showed among the longest distances to the positive regulators within the dataset (Figure 2\u2014figure supplement 2). This is expected since the metabolome response of a loss-of-function mutant in a negative regulator of TORC1 would be quite distant from those of positive regulators. This, therefore provides additional evidence that metabolome-based distances can capture functional relationships between genes.\n\nGiven that our analysis was able to recover known positive regulators of TORC1, we extended this analysis to ask which receptor-related mutant metabolome profiles were consistent with being a positive regulator of TORC1. For each time point, the distance at which a false-positive rate of 0.2 was obtained for the recovery of positive regulators was determined. Six receptor-related mutants (RGT2, HXK2, URE2, BCK1, CLA4, and CFF1) were able to pass this cutoff and were selected as potential novel positive regulators (Figure 2DE). Out of these genes, three are involved in signaling pathways with known cross-talk with TORC1 signaling. Namely, RGT2 and HXK2 are involved in sugar sensing via the PKA signaling, which feeds into the regulation of downstream TORC1 signaling targets (Shashkova et al., 2015). URE2 is a transcriptional regulator for nitrogen catabolite repression, which is in part regulated by TORC1 (Shashkova et al., 2015). The other hits included the intracellular kinases BCK1 and CLA4, as well as a gene of poorly characterized function YML079W, which has recently been named CFF1 based on its inability to produce the compound 4-hydroxymethylfuranone (Valastyan et al., 2021). These results show that a metabolome profiling-based guilt-by-association approach can be used to identify genes with known cross-talk with TOR signaling as well as genes whose connections to TOR signaling are completely novel.\n\nBeyond the guilt-by-association approach outlined above, the data presented here can also be viewed at the level of the individual mutant and metabolite. This allows us to assess the involvement of different genes in specific metabolic processes. This stands in contrast to other guilt-by-association approaches that are based solely on fitness and cannot directly observe the effect of mutants on metabolic processes. One of the strongest examples is atg13, which is incapable of performing autophagy (Funakoshi et al., 1997). This mutant shows a strong reduction in the accumulation of the nucleoside inosine under rapamycin treatment (Figure 1\u2014figure supplement 3A). This is likely caused by the inability of the mutant to perform autophagy under these conditions (Xu et al., 2013), but other metabolites such as glutamine show no difference in their accumulation (Figure 1\u2014figure supplement 3B) or in the case of kynurenine a more limited effect is observed (Figure 1\u2014figure supplement 3C). These results highlight a clear relationship between ATG13 and nucleoside pool sizes under rapamycin treatment that likely results from the disruption of autophagy, but also raises questions about the mechanism through which ATG13 affects the levels of metabolites like kynurine. This is an example of the type of observation that can be obtained from this analysis that would be missing from a more traditional guilt-by-association approach. Although ATG13 deletion had one of the strongest effects on metabolite levels within the dataset, differences in the metabolome profiles of many genes across a range of different functional classes were observed in this study (Figure 1D). Thus, the data included within this study can be used to query the effect of the deletion of genes of interest on the metabolome. The response of the cell to rapamycin is not restricted to changes at the level of the metabolome, so we set forth to investigate the proteome response of the mutants in the newly predicted positive regulators of TORC1 signaling to rapamycin.\n\n### New and predicted TOR signaling genes show altered proteome responses to rapamycin\n\nMetabolome-based guilt-by-association was used to newly implicate CFF1, BCK1, and CLA4 in TORC1 signaling. It is hypothesized that if these genes are involved in TORC1 signaling, the effect of their deletion on the cell is mediated at least in part by changing protein levels. We would also expect these changes to be similar to those seen in mutants in known positive regulators of TOR signaling. We tested this by analyzing the proteomes of six mutants in known positive regulators of TORC1 signaling, and the six receptor-related mutants that were associated with positive regulation of TORC1 signaling as was described above (Figure 2E). Cultures were grown to an OD600 of approximately 0.8 in defined media with glucose and ammonium as carbon and nitrogen sources. The strains were treated with 400 ng/mL rapamycin and were then grown for 30 min before harvesting the yeast and subjecting them to label-free, quantitative proteomics (Demichev et al., 2020). Treatment of wild-type yeast with rapamycin resulted in broad changes in the proteome, with enriched changes in the levels of proteins in gene ontology (GO) biological process categories such as carbohydrate and organic acid metabolism (Figure 3A), recapitulating patterns observed in previously published work (Iesmantavicius et al., 2014). TOR signaling gene deletion mutants would be expected to show altered proteome responses to rapamycin treatment compared with the proteome responses seen in wild-type. The proteins that changed in abundance upon rapamycin treatment in all 12 mutants were tested for enrichment of the GO terms that were enriched for wild-type treated with rapamycin. All mutants, except HXK2 and RGT2, showed clearly altered patterns of GO enrichment upon rapamycin treatment (Figure 3A), as would be expected for genes that are required to respond to rapamycin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig3-v1.jpg)\n\n**Figure 3.:** (A) -log10 transformed adjusted p-values are shown for the enrichment of gene ontology (GO) biological processes in changing proteins after rapamycin treatment in each mutant. Only GO terms that show enrichment in wild-type yeast treated with rapamycin are included within the plot. Adjusted p-values are Benjamini\u2013Hochberg corrected hypergeometric test outcomes. Negative values indicate an enrichment among proteins of decreased abundance. (B) The Pearson correlations between the protein fold-changes observed when comparing each mutant to wild-type are shown. The Pearson correlation of each mutant proteome to the proteome response of wild-type treated with rapamycin is also shown in bar format to the right of the plot. (C) The maximum relative growth rate for the indicated mutants and wild-type is shown after an upshift from using proline as a nitrogen source to ammonium sulfate. The bar height indicates the mean value, and error bars represent the standard error of the mean from four biological replicates; individual points indicate the average value from one biological replicate. \u2021p-value<0.05 for a two-sided t-test compared with the wild-type control. (D) The lag time for the indicated mutants and wild-type is shown after an upshift from using proline as a nitrogen source to ammonium sulfate. The bar height indicates the mean value, and error bars represent the standard error of the mean from four biological replicates; individual points indicate the average value from one biological replicate. \u2021p-value<0.05 for a two-sided t-test compared ith the wild-type control.\n\nIn addition to an altered proteome response to rapamycin, BCK1, CLA4, and CFF1 also showed similar proteomic profiles to known positive regulators of TOR signaling (Figure 3B). The relative changes in protein levels were calculated for each mutant compared with wild-type. The Pearson correlation between those mutant proteome profiles was then calculated and used to assess how similar the effects of the mutations were on the proteome. The correlations coefficients were universally positive, with values as high as 0.91 (Figure 3B). Some mutants with similar molecular functions were seen to cluster together (both HXK2 and RGT2 are involved in sugar sensing) but cla4, bck1, cff1, and ure2 proteomes clustered with the known positive regulators of TORC1 signaling. Since yeast were grown in conditions where TORC1 signaling is active, a mutant that reduced TORC1 signaling would cause a change in the proteome that is similar to that of rapamycin-treated cells. All tested mutants showed a positive correlation in their proteome compared with that of wild-type treated with rapamycin, but cff1 and bck1 showed the strongest correlations with rapamycin treatment. This shows that the changes in the proteome that were caused by deletion have similar effects on the proteome to reduction of TORC1 signaling, as would be expected if those genes play a positive role in TOR signaling.\n\n### Newly predicted TORC1-related mutants show TORC1-related phenotypes\n\nThe above results implicate six receptor-related genes in the positive regulation of TORC1 signaling. TORC1 signaling is central to the adaptation of the yeast cell to changing nutritional environments. Therefore, mutations that impair TORC1 signaling reduce the ability of the cell to adapt to increases or decreases in nutritional quality (Kira et al., 2014). We tested whether deletion mutants in CFF1, RGT2, HXK2, URE2, CLA4, and BCK1 showed such an impairment by performing nutritional upshift experiments. Cultures were grown in minimal media with proline as a nitrogen source and glucose as a carbon source. Under these conditions, TORC1 activity is reduced due to the poor nitrogen source quality (Stracka et al., 2014). After cultivation for 18 hr, the cultures were exposed to a nutritional upshift through the introduction of ammonium sulfate into the cultures, after which the growth rate and lag time were determined for all the predicted positive regulator mutants. Under these conditions, TORC1 signaling will become more active than before the addition of the ammonium sulfate, and genes involved in the positive regulation of TORC1 signaling would be expected to be physiologically relevant. cff1 and bck1 showed significantly reduced growth rates upon the supplementation of the media with ammonium sulfate (Figure 3C), and hxk2 demonstrated a longer lag time (Figure 3D). Previously published functional genomics screens have shown that known positive regulators of TORC1 signaling show reduced growth rates when grown in minimal media compared with wild-type (Breslow et al., 2008). In that study, the relative growth rates of the positive regulators varied from 0.71 to 0.97 with an average value of 0.84 for the five positive regulators that were measured (Breslow et al., 2008). This means that the reduction of growth rate seen for cff1 and bck1 was within a similar range as was reported previously for the known positive regulators as described above. Although CFF1 and BCK1 have not previously been considered TORC1 signaling genes, these mutants showed reduced growth rates during a nitrogen source upshift as would be expected for a mutation in a positive regulator of TORC1 signaling. These results, in addition to their metabolome and proteome level similarity to known positive regulators of TORC1 signaling, further implicate these two genes in the TORC1 signaling. Although CFF1, BCK1, and CLA4 all show signs of involvement in TORC1 signaling, because CFF1 is a protein of unknown function, we decided to investigate its possible role in TORC1 signaling in greater depth.\n\nThe protein SCH9 is directly phosphorylated by TORC1 and is a key node for transmission of signaling intro processes downstream of TORC1 (Urban et al., 2007). If CFF1 acts mechanistically downstream of TORC1 and SCH9, we would expect that the mutant would not impact the ability of TORC1 to phosphorylate SCH9 under nutrient-rich conditions. As expected, Western blot quantification revealed a similar degree of SCH9 phosphorylation in wild-type and cff1 strains in rich conditions (Figure 4A). Since CFF1 is required for a normal response to changing nutritional environments, it therefore appears to act mechanistically downstream of TORC1. Consistent with this expectation, the relative abundance of the CFF1 protein was reduced upon treatment rapamycin (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig4-v1.jpg)\n\n**Figure 4.:** (A) The relative ratio of phosphorylated SCH9 to total SCH9 is shown for wild-type and cff1 yeast grown in rich conditions before and after a 30 min treatment with 400 ng/mL rapamycin. Error bars indicate the standard deviation of biological replicates (n = 3). (B) The average abundance of CFF1 is shown in wild-type yeast either treated with rapamycin (400 ng/mL) or a control. Points represent a single replicate, bar height indicates the average value, and the error bar indicates the standard deviation (n = 3 biological replicates). \u2021p-value<0.05 for a two-sided t-test compared with the control. (C) The peak areas for the indicated metabolites are indicated for both WT and cff1 yeast that were exposed to a nitrogen source downshift for a duration of 30 min. Data was collected by liquid chromatography-mass spectrometry (LC-MS) as indicated in the 'Methods' section. Bar heights indicate the average value for three biological replicates, with the error bars indicating the standard deviation. (D) A subset of the pathway for pyrimidine biosynthesis is diagrammed with enzymes colored blue and metabolites written in black. (E) The average abundance of URA10 is shown in cff1 yeast or a wild-type control. Points represent a single replicate, bar height indicates the average value, and the error bar indicates the standard deviation (n = 3 biological replicates). \u2021p-value<0.05 for a two-sided t-test compared ith the control.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The average log2 fold-change for protein levels for the indicated comparison groups is shown (n = 3 biological replicates). Changes with a p-value of <0.05 (two-sided Student's t-test) are outlined in black.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84295/elife-84295-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) Principal component analysis representation of the variance within the dataset before (A) and after (B) the normalization as outlined in the 'Methods' section. The points are colored according to the perturbation applied for the sample. (C, D) The cumulative variance explained by principal component analysis is shown before (C) and after (D) normalization. (E, F) The distribution of coefficients of variation for each ion and set of biological replicates is shown before (E) and after (F) normalization.\n\nIf CFF1 is involved in TORC1 signaling, it should also play a role in the regulation of the cell state under nutritional downshifts. To this end, wild-type and cff1 yeast were cultivated in minimal media with ammonium as the sole nitrogen source and then shifted into media where the poor nitrogen source proline, 30 min prior to metabolite extraction. Under these conditions, TORC1 should shift from an activated to an inactive state. If CFF1 is required to adapt to the poor nitrogen source, we would expect to see differences in metabolite pools for the mutant compared with the wild-type. LC-MS analysis of the samples indicated that pyrimidine biosynthetic precursors (carbamoyl aspartate and dihydroorotate) were increased in cff1 compared with wild-type (Figure 4C). TOR signaling has been shown to stimulate de novo pyrimidine biosynthesis in other systems (Ben-Sahra et al., 2013; Robitaille et al., 2013), so the observation that CFF1 is required for the maintenance of pyrimidine precursor pool sizes during this nitrogen source shift further implicates its TORC1-related metabolic processes.\n\nSince CFF1 deletion increased the amounts of pyrimidine precursors under a nitrogen downshift, we queried the proteomic data to determine whether these changes could be explained by alterations in the levels of enzymes involved in that pathway. The enzyme URA10, which converts orotate into oratidine-5-phosphate (Figure 4D), showed a significant decrease in abundance (Figure 4E), which was not shared by the other members of the metabolic pathway (Figure 4\u2014figure supplement 1). This alteration of the expression of URA10 provides a likely explanation for the effect of CFF1 deletion on the abundances of metabolites upstream of that enzyme in the pyrimidine biosynthetic pathway. Taken together with earlier results, CFF1 is required for normal adaptation of the cell to changing metabolic environments in terms of both up- and downshifts with a specific role in the regulation of pyrimidine biosynthesis through URA10. This is in addition to its similarity to positive regulators of TORC1 signaling at the level of metabolome and proteome. This offers an example of how gene function can be explored using high-throughput metabolomics using a guilt-by-association approach during a dynamic perturbation.\n\n## Discussion\n\nIn this study, we used high-throughput metabolomics in a guilt-by-association framework to identify mutants with metabolome responses to rapamycin that are similar to those of mutants in known positive regulators of TOR signaling. Using this approach, we were able to recover known genes involved in positive regulation of yeast TOR signaling based on the relationships between the metabolome profiles of the mutants. Notably, the recovery of known positive regulators of TORC1 signaling was highest after the cells were dynamically perturbed with rapamycin. To our knowledge, this is the first demonstration that dynamic perturbation of the cell improves the recovery of eukaryotic gene function when using a metabolomics-based guilt-by-association scheme. These studies also provide insights into why different genome-wide metabolome profiling experiments conducted under steady state appear to provide incomplete information regarding gene function (M\u00fclleder et al., 2016a; Fuhrer et al., 2017).\n\nThrough our guilt-by-association approach, we were able to use patterns of metabolome similarity to recall known positive regulators of TORC1 signaling and implicate six receptor-related genes in that process as well. Three of the recovered receptor-related genes (HXK2, RGT2, and URE2) are known to have connections to TOR signaling. CFF1, BCK1, and CLA4 were newly predicted to be involved in the positive regulation of TORC1 signaling. CFF1 is of particular interest because it is a gene of unknown function, its mutation has previously shown phenotypes including a reduced resistance to hyperosmotic stress (Yoshikawa et al., 2009), and reduced chronological life span (Campos et al., 2018). Previous work has also demonstrated structural similarity between CFF1 and auxin-binding proteins from plants (Zhou et al., 2005), as well as a role in determining the production of the compound 4-hydroxymethylfuranone (Valastyan et al., 2021). Further exploration of the cff1 response to rapamycin at the proteome level revealed a clearly impaired response to rapamycin, a similarity between the effects of cff1 on the proteome to those of rapamycin, and a reduction in CFF1 abundance under rapamycin treatment. We showed that CFF1 deletion caused a defective response to nutrient upshifts at the level of growth and altered metabolite pool sizes and during a nitrogen quality downshift. The phosphorylation of the key TORC1 target SCH9 was not altered in cff1 yeast, suggesting that the mechanism of action of the gene lies downstream of TORC1. Intriguingly, CFF1 has been reported to be phosphorylated at a number of positions, including serine 68 under glucose limitation (Lanz et al., 2021). This could point to additional regulation of CFF1 activity at a post-translational level within the context of TOR signaling downstream of TORC1. Although the exact mechanistic role of CFF1 in TORC1 signaling will require deeper investigation, CFF1 seems to act downstream of TORC1 to regulate pyrimidine biosynthesis through URA10. Unlike CFF1, both BCK1 and CLA4 have mammalian homologs. BCK1 has homology to mammalian Map3K1, which is implicated in breast cancer in humans (Easton et al., 2007). PAK4, PAK5, and PAK6 are homologs of CLA4, and PAK6 has also been implicated in clear cell renal cell carcinoma (Liu et al., 2014). This suggests that investigating the relationships between these genes and TORC1 signaling could provide additional insights into cancer biology in humans, including novel therapeutic targets.\n\nIn addition to the guilt-by-association approach described above, our approach has the benefit of allowing for the exploration of the effects of mutants on the relative quantities of many metabolites under perturbation with rapamycin. This allowed us to capture the role of ATG13 in the regulation of nucleoside levels in the cell under rapamycin treatment, but also raises questions about the mechanism by which it regulates the abundances of other metabolites under rapamycin treatment. These kinds of observations can be made across many other mutants that are included in this dataset and can be the basis of future work where the roles of genes in metabolic regulation can be explored by members of the scientific community. To enhance the usability of this data, we assembled an interactive data visualization app where users can browse through this data in order to investigate mutants that are of interest to them (https://rapamycin-yeast.ethz.ch). Furthermore, our data are made available in raw form, and because the acquisition of the main dataset was performed in an untargeted mode, these data can be reanalyzed in the future as the library of potential metabolites is expanded. This can allow for even greater utility for researchers with a particular interest in any compound that may be unannotated within our analysis. In addition to this metabolomics data, this article includes the proteome response of 12 mutants to rapamycin and thus provides a resource for members of the community who wish to further explore the proteome response of the cell to rapamycin treatment in those strains.\n\nIn this work, we demonstrate that condition-specific, dynamic metabolome profiling can offer attractive properties for the exploration of gene function compared to steady state metabolomics measurements. This builds on work showing that dynamic perturbations of gene expression can be used to recover drug-target relationships on the basis of metabolome similarity (Holbrook-Smith et al., 2022; Anglada-Girotto et al., 2022) and thus further demonstrates the value of non-steady-state perturbations of the cell in the context of metabolome profiling. Although this approach included measurements of the metabolome at five time points, subsequent analysis at a genome-wide level could just as easily be performed with a single time point within the dynamic perturbation. Thus, we can reveal relationships between metabolites and mutants that could be hidden during steady state due to homeostatic changes in gene expression or other compensatory changes within the cell. This would allow for the discovery of hitherto uncharacterized relationships between genes as well as identify novel roles for genes in metabolic regulation.\n\n## Methods\n\n### Yeast cultivation\n\nLiquid-cultivated yeast were grown at a temperature of 30\u00b0C with a shaking frequency of 250 rpm. Auxotrophic strains were cultivated in YPD medium (10 g/L yeast extract [BD Biosciences: 288630], 20 g/L Bacto-peptone [BD Biosciences: 211830], 5 g/L agar [BD Biosciences: 214530]). Yeast were transformed as described previously (Gietz and Schiestl, 2007) with the pHLUM plasmid (M\u00fclleder et al., 2016b) and selected for growth on SD media with inositol 5 g/L ammonium sulfate (Sigma-Aldrich: A4418), 1.7 g/L Yeast Nitrogen base (BD Biosciences: 233530), 20 g/L D-(+)-glucose (Sigma-Aldrich: G8270), and 10 mg/L myo-inositol (Sigma-Aldrich: I5125). For growth shift experiments, yeast were cultivated in or shifted to SD proline media (5 g/L potassium sulfate [Sigma-Aldrich: P0772], 1.7 g/L Yeast Nitrogen base [BD Biosciences: 233530], 20 g/L D-(+)-glucose [Sigma-Aldrich: G8270], 750 mg/L proline [Sigma-Aldrich: P0380], and 10 mM potassium phthalate [pH 5, Sigma-Aldrich: 60360]).\n\n### Yeast strains\n\nAuxotrophic haploid deletion strains were recovered from the Euroscarf haploid mating type a library (Taylor, 2014) and were transformed as described above (Gietz and Schiestl, 2007) with the pHLUM plasmid (M\u00fclleder et al., 2016b) in order to restore prototrophy.\n\n### Metabolite extraction\n\nYeast were cultivated such that after at least two doublings metabolite extractions could be performed on cultures with an average OD600 of approximately 1.0. The yeast were grown at 1.2 mL scale in 96-well plates with OD600 measured intermittently throughout the sampling. For time-course rapamycin experiments, metabolites extracts were taken immediately before rapamycin treatment, and then at 5, 10, 30, 60, and 90 min after treatment with the drug at a final concentration of 400 ng/mL. Sampling was performed by harvesting 100 \u00b5L aliquots of yeast by centrifugation for 2 min at 2250 rcf in a 4\u00b0C precooled centrifuge, and discarding the supernatant by vigorous inversion. 100 \u00b5L of \u20132\u00b0C extraction solution (40% [v/v] HPLC-grade acetonitrile [Sigma-Aldrich: 34998], 40% [v/v] HPLC grade methanol [Sigma-Aldrich: 34885], 20% [v/v] HPLC-grade water [Sigma-Aldrich: 1153331000]) was added to the cell pellets, and extractions were allowed to proceed for 18 hr at \u20132\u00b0C. Extracts were then stored at \u20138\u00b0C in sealed conical plates (Huber lab: 7.0745, Huber lab: 7.1058).\n\n### Flow-injection time-of-flight mass spectrometry for metabolomics\n\nFlow-injection analysis for mass spectrometry-based metabolomics was performed using an Agilent 6550 Series quadrupole time-of-flight mass spectrometer (Agilent) by an adaptation of the method described by Carpenter, 2007. The analysis was performed utilizing an Agilent 1100 Series HPLC system (Agilent) coupled to a Gerstel MPS 3 autosampler (Gerstel). The mobile phase flow rate was set at 0.15 mL/min, with the isocratic phase composed of 60:40 (v/v) isopropanol and water buffered to a pH of 9 with 4 mM ammonium fluoride. The instrument was run in 4 GHz mode for maximum resolution while collecting mass spectra between 50 and 1000 m/z. Online mass axis correction was performed with taurocholic acid and Hexakis (1H, 1H, 3H-tetrafluoropropoxy\u2013phosphazene) within the mobile phase.\n\n### Flow-injection data analysis\n\nProcessing of mass spectra, including centroiding, merging, and ion annotation, was performed as described in Carpenter, 2007. Raw annotated ion intensities are provided in Supplementary file 2. Data was normalized and analyzed in Python using the Pandas package (McKinney, 2019). Datasets were filtered for outliers in terms of the biomass at the time of sampling as well as in total ion current. Raw ion intensities were normalized to counteract temporal drifts, as well as OD600 effects. In both cases, a locally weighted scatterplot smoothing (LOWESS) regression approach was used to remove trends in the data arising from those parameters. The effect of normalization on data quality is visualized in Figure 1\u2014figure supplement 4. Average metabolite intensities were compared between each mutant with wild-type at each time point in order to calculate an average metabolome profile in the form of log2 fold-changes.\n\n### Distance analysis of metabolome profiling\n\nWithin each time point, the Pearson correlation coefficients between all metabolite log2 fold-changes for each mutant compared with the wild-type control were calculated. Those correlations were clustered according to Ward\u2019s method applied to Manhattan distances between mutant correlation matrices. The average distance between each mutant and genes that are annotated as positive regulators of TORC1 signaling (GO 0032008) were then calculated. For known positive regulators of TORC1 signaling, the distance was calculated with them excluded from the list of known positive regulators of TORC1. Empirical p-values were determined through 10,000 randomizations of labels on correlation profiles in order to determine the distribution of distances between known positive TORC1 signaling genes.\n\n### Liquid-chromatography mass spectrometry for metabolomics\n\nNormal-phase chromatography was used to separate the metabolite extracts. Chromatographic separation was performed using an Agilent Infinity 1290 UHPLC stack with Agilent 1100 Series binary pump with an InfinityLab Poroshell 120 HILIC-Z column (2.1 \u00d7 150 mm, 2.7 \u00b5m, Agilent). An Agilent 6550 Series quadrupole time-of-flight mass spectrometer running in negative extended dynamic range mode was used to analyze the samples. Mobile phases were 10 mM ammonium acetate pH 9 in water with 5 \u00b5M medronic acid, and 85:15 acetonitrile:water with 10 mM ammonium acetate pH 9. A flow rate of 250 \u00b5L/min was used with a total measurement duration of 30 min. Mobile phase compositions were set as described in Supplementary file 3. Online mass-axis correction was performed using purine and Hexakis. Drying gas was provided at 13 L/min at a temperature of 22\u00b0C. Sheath gas was provided at 12 L/min at a temperature of 350\u00b0C. Capillary and nozzle voltages were set to 3500 and 0 V, respectively. Data analysis was performed in Agilent MassHunter Quantitative Analysis (version B.07.00) with peaks chosen based on retention time matching to compounds in standard solution. Twenty parts per million m/z windows were used for peak selection, with integration performed using the Agile2 algorithm. Average log2 transformed fold-changes were calculated between samples. Peak areas for the effect of rapamycin on metabolite levels and for the effect of nitrogen source downshifts are provided in Supplementary files 4 and 5.\n\n### Yeast cultivation for growth rate and lag-time determination\n\nDefined media with glucose and proline as carbon and nitrogen sources (see above) were inoculated with yeast to a target starting OD600 of 0.05. Yeast were cultivated at a 1 mL volume within 48-well flower plates (M2P labs: MTP-48-B). The yeast were allowed to grow at 30\u00b0C for 18 hr at a shaking speed of 800 rpm with optical density monitoring every 5 min using a Biolector 1 microfermentation system. After 18 hr of growth, 1 mL of SD media with ammonium as a nitrogen source (see above) was added and the growth was tracked for another 24 hr. Data was smoothed by applying a 1 hr moving-window averaging to the recorded optical density. The data was natural log transformed, and the maximum slope was determined as well as the cultivation time required to reach the maximum slope. These values were recorded as growth rate and lag time. Average values from six technical replicates were taken per treatment and expressed as ratio to the average value for that experiment. These ratios are from four independent experiments in order to generate the data depicted in Figure 3.\n\n### Protein extraction and peptide preparation for proteomics\n\nThe indicated yeast mutants were cultivated in a 96-well format in SD media (5 g/L ammonium sulfate [Sigma-Aldrich: A4418], 1.7 g/L Yeast Nitrogen base [BD Biosciences: 233530], 20 g/L D-(+)-glucose [Sigma-Aldrich: G8270]). 1 mL cultures were inoculated with the indicated mutant strains carrying the pHLUM prototrophy restoration plasmid and were allowed to double at least twice to achieve an OD600 of approximately 0.8. At this point, the yeast were treated with either rapamycin (400 ng/mL) or a vehicle control. After 1 hr of growth, the yeast were pelleted through centrifugation for 2 min at 2250 rcf in a 4\u00b0C precooled centrifuge. The supernatants were discarded and the remaining pellets were subjected to bead beating (425\u2013600 \u00b5M diameter) for a duration of 20 min at 4\u00b0C after resuspension in 200 \u00b5L of protein extraction solution (8\u2009M urea, 50\u2009mM Tris [pH 8], 75\u2009mM NaCl, 1\u2009mM EDTA [pH 8]). After bead beating, extractions were supplemented with Triton X to 1% (w/v), dithiothreitol (DTT) to 5 mM, and sodium pyrophosphate to 10 mM. DTT-treated extracts were allowed to incubate at 30 min at 55\u00b0C. Samples were then alkylated with a final concentration of 10 mM iodoacetamide in the dark for 30 min. 50 \u00b5g of the extracted protein was then subjected to chloroform precipitation, and the clean protein extracts were subjected to tryptic digestions at a ratio of 50 \u00b5g of extracted protein to 1 \u00b5g of protease. Digestions were allowed to proceed for 16 hr at 37\u00b0C. Proteolysis was quenched through acidification with HCl.\n\n### Quantitative proteomics\n\nPeptides were analyzed by LC-MS/MS. On-line reversed phase chromatography was performed using a Vanquish Neo UPLC system (Thermo Scientific, Sunnyvale) equipped with a heated column compartment set to 50\u00b0C. Mobile Phase A consisted of 0.1% formic acid (FA) in water, while Mobile Phase B was 80% acetonitrile in water and 0.1% FA. Peptides (~1 \u00b5g) were loaded onto a C18 analytical column (500 mm, 75 \u00b5m inner diameter), packed in-house with 1.8 \u03bcm ReproSil-Pur C18 beads (Dr. Maisch, Ammerbuch, Germany) fritted with Kasil, keeping constant pressure of 600 bar or a maximum flow rate of 1 \u00b5L/min. After sample loading, the chromatographic gradient was run at 0.3 \u00b5L/min and consisted of a ramp from 0 to 43% Mobile Phase B in 70 min, followed by a wash at 100% Solution B in 9 min total, and a final re-equilibration step of three-column volumes (total run time 90 min).\n\nPeptides from each sample were analyzed on an Orbitrap HF-X mass spectrometer (Thermo Fisher Scientific, San Jose, CA) using an overlapping window data-independent analysis (DIA) pattern described by Searle et al., 2018, consisting of a precursor scan followed by DIA windows. Briefly, precursor scans were recorded over a 390\u20131010 m/z window using a resolution setting of 120,000, an automatic gain control (AGC) target of 1e6, and a maximum injection time of 60 ms. The RF of the ion funnel was set at 40% of maximum. A total of 150 DIA windows were quadrupole selected with a 8 m/z isolation window from 400.43 m/z to 1000.7 m/z and fragmented by higher-energy collisional dissociation, HCD (NCE = 30, AGC target of 1e6, maximum injection time 60 ms), with data recorded in centroid mode. Data was collected using a resolution setting of 15,000, a loop count of 75, and a default precursor charge state of +3. Peptides were introduced into the mass spectrometer through a 10 \u00b5m tapered pulled tip emitter (Fossil Ion Tech) via a custom nano-electrospray ionization source, supplied with a spray voltage of 1.6 kV. The instrument transfer capillary temperature was held at 275\u00b0C.\n\nAll Thermo RAW files were converted into mzML format using the ProteoWizard package (version 3.0.2315; Chambers et al., 2012). Vendor-specific peak picking was selected as the first filter, and demultiplexing with a 10 ppm window was used for handling the overlapping window scheme. Processed mzML files were then searched using DIA-NN (version 1.8; Demichev et al., 2020) and the UniProt Saccharomyces cerevisiae proteome (UP000002311, June 15, 2021) as the FASTA file for a 'library-free' deep neural network-based search approach. Data was searched using deep learning-based spectra and retention time as described by Demichev et al., 2020, with trypsin as the protease, and allowing for X missed cleavages, with N-terminal methionine cleavage, and cysteine carbamidomethylation. Peptide length was allowed to range from 7 to 30 amino acids with a precursor charge state range from +1 to +4, a precursor range of 300\u20131800 m/z, and a fragment ion range of 200\u20131800 m/z. Data was processed to a 1% precursor-level false discovery rate (FDR) with mass accuracy, MS1 accuracy, and match between runs set to the software default settings. A single-pass mode neural network classifier was used with protein groups inferred from the input Saccharomyces cerevisiae FASTA file. Protein quantities were quantile normalized (Bolstad, 2021) and subjected to differential analysis as described above. The effect of normalization on data quality is visualized in Figure 4\u2014figure supplement 2. GO term enrichment was performed using the clusterProfiler R package (Yu et al., 2012).\n\n### Western blot for SCH9 phosphorylation\n\n15 mL of wild-type and cff1 yeast cells were grown to OD600 of approximately 0.7 in defined media with glucose and ammonium as carbon and nitrogen sources. The cells were then exposed to either a vehicle control or 400 ng/mL rapamycin and were cultivated for a further 30 min. 9 mL of the yeast cultures were mixed with 1 mL of 100% (w/v) TCA. Cells were cooled on ice for 10 min prior to harvesting the cells by centrifugation (2 min at 1620 rcf). The resulting pellet was washed twice in 100% (v/v) acetone prior to resuspension in 100 \u00b5L of lysis buffer (50 mM Tris-HCl pH 7.5, 5 mM EDTA, 6 M urea, 1% [w/v] SDS). Cells were lysed by bead beating at 4\u00b0C for 20 min. Lysates were then incubated at 95\u00b0C for 5 min. Prior to gel loading, 200 \u00b5L of protein sample buffer containing 25% (v/v) \u03b2-mercaptoethanol was added to each sample before they were again incubated at 95\u00b0C for 5 min. Samples were subjected to a two-antibody Western blot analysis for SCH9-P/SCH9 quantification. Protein lysates were separated by SDS-PAGE on a 7.5% (w/v) gel. Membranes for all Western blot analyses were blocked and incubated with PBS-Tween 0.05% (v/v) and 5% (w/v) BSA. The antibodies used in this study were rabbit polyclonal anti-SCH9 (homemade, 1:10,000), mouse monoclonal anti-P-SCH9S-758 (homemade, 1:7000), and the corresponding fluorescent dye-coupled secondary antibodies (Alexa Fluor conjugated secondary antibodies, LI-COR). Protein was transferred to a nitrocellulose membrane, which was probed overnight with primary antibodies at 4\u00b0C. The membrane was then washed, and an incubation with the secondary antibodies was performed for 45 min at room temperature. Membrane development was performed using the Odyssey imaging system (LI-COR). Result quantification was performed using ImageJ (Schneider et al., 2012). Min-max normalization was performed for each sample through comparison to a standard sample generated from BY4741 yeast (MATa his3\u03941, leu2\u03940, met15\u03940, ura3\u03940) grown at 30\u00b0C in YPD and extracted according to the same protocol.\n",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "068ba081-e638-45e5-8d4d-3494d2949da7",
+      "submission_id": "86672092-087b-4694-953e-916c4d404e1a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ignacio Enrique Sanchez, https://ror.org/0081fs513 CONICET / Universidad de Buenos Aires Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84295.sa0](https://doi.org/10.7554/eLife.84295.sa0)\n\nThis work measures time-resolved metabolomes of 164 yeast mutants using a high-throughput method (FIA-MS). The dynamic, nontargeted measurements allow for an improved inference of gene function in the TOR pathway after a rapamycin treatment, including the annotation of three new genes in the TOR signaling pathway. This case study opens an avenue for combined studies of functional genetics and metabolism.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Ignacio Enrique Sanchez, https://ror.org/0081fs513 CONICET / Universidad de Buenos Aires Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84295.sa1](https://doi.org/10.7554/eLife.84295.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: this paper was reviewed by Review Commons.]\n",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "400a872e-706a-4c95-b1e9-1fb1df076337",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C1",
+      "claim": "The genetic code of Saccharomyces cerevisiae was sequenced 25 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the genetic code of the yeast Saccharomyces cerevisiae was sequenced 25 years ago, the characterization of the roles of genes within it is far from complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References established scientific knowledge about the timing of yeast genome sequencing",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "590ac893-5dc8-407c-9813-9116c23f0f61",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C2",
+      "claim": "The characterization of the roles of genes in Saccharomyces cerevisiae is far from complete.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the genetic code of the yeast Saccharomyces cerevisiae was sequenced 25 years ago, the characterization of the roles of genes within it is far from complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the current state of gene function characterization",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "dd8ceb8a-a5c5-4be4-a3b8-3a827ff6fbfa",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C3",
+      "claim": "Flow-injection time-of-flight mass spectrometry was used to dynamically profile the metabolome of 164 loss-of-function mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used flow-injection time-of-flight mass spectrometry to dynamically profile the metabolome of 164 loss-of-function mutants in TOR and receptor or receptor-like genes under a time course of rapamycin treatment, generating a dataset with >7000 metabolomics measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the experimental method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e5187bab-0e65-4671-baa7-515e686e0dee",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C4",
+      "claim": "The study generated a dataset with more than 7000 metabolomics measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used flow-injection time-of-flight mass spectrometry to dynamically profile the metabolome of 164 loss-of-function mutants in TOR and receptor or receptor-like genes under a time course of rapamycin treatment, generating a dataset with >7000 metabolomics measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative description of the dataset size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "31cb100b-e6a1-401e-a54e-e0507a6d7c46",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C5",
+      "claim": "The data are made available through an interactive data visualization app hosted at https://rapamycin-yeast.ethz.ch.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to provide a resource to the broader community, those data are made available for browsing through an interactive data visualization app hosted at https://rapamycin-yeast.ethz.ch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data availability and access",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "c39c8b08-22af-4e71-9723-c24b9f0f1891",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C6",
+      "claim": "Dynamic metabolite responses to rapamycin are more informative than steady-state responses when recovering known regulators of TOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that dynamic metabolite responses to rapamycin are more informative than steady-state responses when recovering known regulators of TOR signaling, as well as identifying new ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparative analysis of dynamic vs steady-state measurements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "94afd5b1-ba91-4bc6-a0d8-ef65da869b3b",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C7",
+      "claim": "Deletion of a subset of novel genes causes phenotypes and proteome responses to rapamycin that implicate them in TOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of a subset of the novel genes causes phenotypes and proteome responses to rapamycin that further implicate them in TOR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from phenotypic and proteomic analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9f23e2dd-8022-4fb9-8a45-94234c729a93",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C8",
+      "claim": "CFF1 is connected to the regulation of pyrimidine biosynthesis through URA10.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that one of these genes, CFF1, was connected to the regulation of pyrimidine biosynthesis through URA10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding about CFF1's role in metabolic regulation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "27cc86e8-542f-4346-bdbc-c1914bd0b308",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C9",
+      "claim": "The Saccharomyces cerevisiae genetic code was sequenced by Goffeau et al. in 1996.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the long-standing sequencing of the Saccharomyces cerevisiae genetic code (Goffeau et al., 1996), the characterization of the roles of genes and proteins within it is an ongoing process (Wood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to the original genome sequencing publication",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "06164824-8793-46b5-9220-91b79f2b80ba",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C10",
+      "claim": "The characterization of the roles of genes and proteins in Saccharomyces cerevisiae is an ongoing process.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the long-standing sequencing of the Saccharomyces cerevisiae genetic code (Goffeau et al., 1996), the characterization of the roles of genes and proteins within it is an ongoing process (Wood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to recent review",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "5ee413f8-8ce8-4b72-a8b9-3c97809fd4a6",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C11",
+      "claim": "Flow-injection analysis mass spectrometry can measure the metabolome profile of cells in less than a minute per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "With the advent of high-throughput metabolomics, including flow-injection analysis mass spectrometry (FIA-MS), it is possible to measure the metabolome profile of cells in less than a minute per sample (Fuhrer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about analytical method capabilities supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "60989488-3a8d-4f0a-9321-ffc8935aa57a",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C12",
+      "claim": "Metabolomics has been used to uncover phenotypes for silent mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, metabolomics has been used to uncover phenotypes for silent mutations (Raamsdonk et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Example of metabolomics application supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "d0ed25a2-7fdc-465c-a964-105f643f9a12",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C13",
+      "claim": "High-throughput approaches have been used on a genome-wide scale to measure amounts of amino acids in yeast deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, pioneering work has demonstrated that high-throughput approaches can be used on a genome-wide scale to measure amounts of amino acids in yeast deletion mutants for the purpose of characterizing regulatory principles of biosynthesis (M\u00fclleder et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of prior work supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "d7c34dd0-8f93-4d46-91f3-105cc279891f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C14",
+      "claim": "The target of rapamycin (TOR) signaling system is a core regulator of growth decisions in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The target of rapamycin (TOR) signaling system is a core regulator of these decisions around growth in eukaryotic cells (reviewed in Gonz\u00e1lez and Hall, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about TOR function supported by review citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "7319b329-9ec0-4791-a560-c634d7c4e3be",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C15",
+      "claim": "Two functionally distinct sets of TOR protein complexes exist: TORC1 (sensitive to rapamycin) and TORC2 (not sensitive to rapamycin).",
+      "claim_type": "EXPLICIT",
+      "source": "This includes the discovery of two functionally distinct sets of TOR protein complexes, one of which (TORC1) is sensitive to inhibition by rapamycin and a second complex (TORC2) which is not (reviewed in Eltschinger and Loewith, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of TOR complexes supported by review citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f6be41b1-2f75-44e9-96fc-fa512d2680cb",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C16",
+      "claim": "The study characterized the effects of 85 mutants in TOR-related signaling genes on the metabolome response to rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we characterized the effects of a collection of 85 mutants in TOR-related signaling genes on the metabolome response of the cell to rapamycin (Figure 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental design with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "dd966ae5-0491-42a6-95d5-2c921f776122",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C17",
+      "claim": "The mutant collection included deletions in regulators that act upstream of TORC1, as well as downstream kinases or genes involved TOR-related processes such as autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant collection included deletions in regulators that act upstream of TORC1, as well as downstream kinases or genes involved TOR-related processes such as autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the composition of the mutant collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "1fa30693-f867-4d42-aa63-225ae0a29e98",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C18",
+      "claim": "Only nonessential mutants were selected for the collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Only nonessential mutants were selected for the collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about selection criteria for mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f20a164d-29e1-436e-8d3a-c48c76b82891",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C19",
+      "claim": "Cultures were grown to an optical density at 600 nm (OD600) of 0.7 before rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures were grown to an optical density at 600 nm (OD600) of 0.7 at which point metabolites were extracted and a rapamycin treatment (400 ng/mL) was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "eca6cc2e-3cc7-47ac-8090-d12df90c376b",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C20",
+      "claim": "Rapamycin treatment was performed at a concentration of 400 ng/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures were grown to an optical density at 600 nm (OD600) of 0.7 at which point metabolites were extracted and a rapamycin treatment (400 ng/mL) was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specification of rapamycin concentration used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "462cd04c-a487-4ca1-8079-a54db73f1954",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C21",
+      "claim": "Rapamycin treatment inhibits TORC1 and elicits important dynamic responses in terms of metabolite levels and downstream signaling events.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin treatment inhibits TORC1 and elicits important dynamic responses in terms of metabolite levels and downstream signaling events (Stracka et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about rapamycin effects supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "21be69bb-7b47-4469-85a2-80a914e159f1",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C22",
+      "claim": "Polar metabolite extracts were prepared after 5, 30, 60, and 90 min of rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We aimed to capture these dynamic effects in our mutant strains by preparing polar metabolite extracts after 5, 30, 60, and 90 min of rapamycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of sampling time points",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "49a45817-0e3e-4e59-9fd7-c84e2d0a4809",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C23",
+      "claim": "The effect of rapamycin treatment on wild-type yeast measured by FIA-MS was validated by LC-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of rapamycin treatment on wild-type yeast as measured by high-throughput FIA-MS was orthogonally validated by a longer liquid chromatography-mass spectrometry (LC-MS)-based measurement method (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of validation experiment with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "1e41e484-e5bf-4045-8d3b-26d316595951",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C24",
+      "claim": "TORC1 regulates amino acid and nucleotide metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "TORC1 is known to regulate many metabolic functions, but amino acid and nucleotide metabolism exhibit characteristic changes when TORC1 is inactivated (Oliveira et al., 2015; Xu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about TORC1 function supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "243a3c26-5a76-41e5-89f9-a3e01b143b57",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C25",
+      "claim": "The levels of most amino acids increase after rapamycin treatment due to inhibition of translational initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the levels of most amino acids increase after rapamycin treatment due to inhibition of translational initiation (Berset et al., 1998), with some exceptions such as serine (M\u00fclleder et al., 2016a; Oliveira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about metabolic response supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "647c4c58-0e5a-443b-a8df-4a410d23937c",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C26",
+      "claim": "Upon TORC1 inactivation through starvation, nucleotide degradation increases, leading to increased pool sizes of nucleoside-related compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TORC1 inactivation through starvation, nucleotide degradation increases, which leads to increased pool sizes of nucleoside-related compounds (Xu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about metabolic response supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "a50376fa-0156-4543-9bd6-caee866c2603",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C27",
+      "claim": "Changes in metabolite levels such as nucleosides were observed when wild-type yeast were treated with rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with reports in the literature (Oliveira et al., 2015), changes in metabolite levels such as nucleosides were seen when wild-type yeast were treated with rapamycin (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from experimental data with reference to figure and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "5de7e79c-5bad-416f-a15c-45a5489fa3d1",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C28",
+      "claim": "The highest number of changes in metabolite levels across all mutants were observed after 90 min of rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest number of changes in metabolite levels across all mutants were observed after 90 min of rapamycin treatment (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "62ddc441-559d-4062-84f4-364ede689b68",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C29",
+      "claim": "Treating cells with rapamycin can reveal metabolic responses that are not measurable prior to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that treating the cells with rapamycin can reveal metabolic responses that are not measurable prior to treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "5c526aa6-bd6f-4e07-b445-42dac65408fe",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C30",
+      "claim": "Deleting genes that are positive upstream regulators of TOR signaling reduces the signal propagated through that system.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting genes that are positive upstream regulators of TOR signaling reduces the signal propagated through that system (P\u00e9li-Gulli et al., 2015), and thus either causes changes in the metabolome that resemble those resulting from rapamycin treatment (M\u00fclleder et al., 2016a) or could further sensitize the cell to TORC1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about genetic effects supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9d045259-4f85-4609-afd6-2d573eba3a0f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C31",
+      "claim": "gtr1 is a mutant in a key positive regulator of TOR signaling that acts upstream of TORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "gtr1, a mutant in a key positive regulator of TOR signaling that acts upstream of TORC1 (Binda et al., 2009), showed elevated levels of glutamine compared with wild-type in the absence of rapamycin (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about gene function supported by citation and experimental observation",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "6083ed1e-e2d2-4556-9c86-59792dbcd4f4",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C32",
+      "claim": "gtr1 showed elevated levels of glutamine compared with wild-type in the absence of rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "gtr1, a mutant in a key positive regulator of TOR signaling that acts upstream of TORC1 (Binda et al., 2009), showed elevated levels of glutamine compared with wild-type in the absence of rapamycin (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "75d4665f-e614-44a8-b1a7-5a0d05637910",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C33",
+      "claim": "The gtr1 mutant showed a much stronger accumulation of phenylalanine than wild-type after rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the gtr1 mutant showed a much stronger accumulation of the amino acid than did wild-type after rapamycin treatment (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "78b73e11-e769-4a54-bedf-99e7ae9ab0f6",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C34",
+      "claim": "Some metabolic alterations manifested by deleting genes involved in TOR signaling are only revealed after treatment with rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, some metabolic alterations manifested by deleting genes involved in TOR signaling are only revealed after treatment with rapamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "a88cfc44-edff-4026-96d5-2fe842524ca4",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C35",
+      "claim": "The study assembled a collection of 85 receptor-related loss-of-function mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on the investigation of known TOR signaling genes, we assembled another collection of 85 loss-of-function mutants. These mutants were selected for being known receptors, nutrient sensing proteins in S. cerevisiae, showing sequence similarity to known receptors in other species, or carrying protein domains that are common in receptor proteins (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of mutant collection assembly",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "4adf8b6c-0c0b-4d58-8e14-da60f439ddb0",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C36",
+      "claim": "The empirical likelihood for the distances between positive regulators being as low as observed was calculated to be less than 5% for all time points tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the empirical likelihood for the distances between positive regulators being as low as was observed was calculated to be <5% for all time points that were tested (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis result with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f4c05825-57b0-41be-80ab-c202170e1052",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C37",
+      "claim": "The area under the receiver operating characteristic curve was greater than 0.5 for all time points.",
+      "claim_type": "EXPLICIT",
+      "source": "When the area under a receiver operating characteristic curve was calculated for each time point, the values were >0.5 for all the time points (Figure 2BC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis result with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "274e780d-e503-4f97-bf3b-b9a3b6e7a54b",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C38",
+      "claim": "The area under the curve for the untreated cells was the smallest of all the time points.",
+      "claim_type": "EXPLICIT",
+      "source": "The area under the curve for the untreated cells was observed to be the smallest of all the time points, indicating that a dynamic perturbation by rapamycin treatment improved the recovery of true positives (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "22853c1d-c716-4b61-8aff-484a425148f1",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C39",
+      "claim": "Dynamic perturbation by rapamycin treatment improved the recovery of true positives.",
+      "claim_type": "EXPLICIT",
+      "source": "The area under the curve for the untreated cells was observed to be the smallest of all the time points, indicating that a dynamic perturbation by rapamycin treatment improved the recovery of true positives (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Conclusion drawn from statistical analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9f17ca07-4661-460e-a227-43530f64568a",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C40",
+      "claim": "Small but significant correlations were seen between metabolome distances and genetic interaction scores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the metabolome distances between mutants were compared with the genetic interaction score between genes (Costanzo et al., 2016), small but significant correlations were seen between the datasets (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from comparative analysis with reference to figure and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9abf7cb8-2bb7-4d55-a4d7-f685e3b00e17",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C41",
+      "claim": "Six receptor-related mutants (RGT2, HXK2, URE2, BCK1, CLA4, and CFF1) were selected as potential novel positive regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Six receptor-related mutants (RGT2, HXK2, URE2, BCK1, CLA4, and CFF1) were able to pass this cutoff and were selected as potential novel positive regulators (Figure 2DE).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from analysis with reference to figure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "a8ec9c33-7b47-4e36-b6b2-ef2eb0652b4d",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C42",
+      "claim": "RGT2 and HXK2 are involved in sugar sensing via the PKA signaling, which feeds into the regulation of downstream TORC1 signaling targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Namely, RGT2 and HXK2 are involved in sugar sensing via the PKA signaling, which feeds into the regulation of downstream TORC1 signaling targets (Shashkova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene function supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "0d0f5a5e-15e9-4ce1-aaef-66db795b9e84",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C43",
+      "claim": "URE2 is a transcriptional regulator for nitrogen catabolite repression, which is in part regulated by TORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "URE2 is a transcriptional regulator for nitrogen catabolite repression, which is in part regulated by TORC1 (Shashkova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene function supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "0a5ad7b8-5909-4320-8d1b-7319654411f2",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C44",
+      "claim": "CFF1 has recently been named based on its inability to produce the compound 4-hydroxymethylfuranone.",
+      "claim_type": "EXPLICIT",
+      "source": "The other hits included the intracellular kinases BCK1 and CLA4, as well as a gene of poorly characterized function YML079W, which has recently been named CFF1 based on its inability to produce the compound 4-hydroxymethylfuranone (Valastyan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene naming supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "8e439c59-5210-4acc-a36c-dae34fd61bcf",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C45",
+      "claim": "atg13 is incapable of performing autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the strongest examples is atg13, which is incapable of performing autophagy (Funakoshi et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene function supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "0d09378f-025d-4f04-8c03-3166b3281d6d",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C46",
+      "claim": "atg13 shows a strong reduction in the accumulation of the nucleoside inosine under rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutant shows a strong reduction in the accumulation of the nucleoside inosine under rapamycin treatment (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "56b2d856-a412-4f78-9fe5-5807c8a95dbd",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C47",
+      "claim": "The proteomes of six mutants in known positive regulators of TORC1 signaling and six receptor-related mutants were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this by analyzing the proteomes of six mutants in known positive regulators of TORC1 signaling, and the six receptor-related mutants that were associated with positive regulation of TORC1 signaling as was described above (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental approach with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "ae54012b-bf51-4f4f-b35a-86d9b703bbf8",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C48",
+      "claim": "Treatment of wild-type yeast with rapamycin resulted in broad changes in the proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of wild-type yeast with rapamycin resulted in broad changes in the proteome, with enriched changes in the levels of proteins in gene ontology (GO) biological process categories such as carbohydrate and organic acid metabolism (Figure 3A), recapitulating patterns observed in previously published work (Iesmantavicius et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "5798f487-fd7f-48a2-b4dd-5e19fa97e152",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C49",
+      "claim": "All mutants except HXK2 and RGT2 showed clearly altered patterns of GO enrichment upon rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "All mutants, except HXK2 and RGT2, showed clearly altered patterns of GO enrichment upon rapamycin treatment (Figure 3A), as would be expected for genes that are required to respond to rapamycin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "2e1fad3b-a7e8-4a72-af98-8a11072c11c9",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C50",
+      "claim": "BCK1, CLA4, and CFF1 showed similar proteomic profiles to known positive regulators of TOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to an altered proteome response to rapamycin, BCK1, CLA4, and CFF1 also showed similar proteomic profiles to known positive regulators of TOR signaling (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from analysis with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e7cabb9f-6f5c-449b-8441-9af5cb1524dd",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C51",
+      "claim": "cff1 and bck1 showed the strongest correlations with rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "All tested mutants showed a positive correlation in their proteome compared with that of wild-type treated with rapamycin, but cff1 and bck1 showed the strongest correlations with rapamycin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "4fdeefca-bfcd-416b-aed9-974c0796cad8",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C52",
+      "claim": "TORC1 signaling is central to the adaptation of the yeast cell to changing nutritional environments.",
+      "claim_type": "EXPLICIT",
+      "source": "TORC1 signaling is central to the adaptation of the yeast cell to changing nutritional environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about TORC1 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f3883bdb-1ebe-43dd-bb8f-f9766f878d5f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C53",
+      "claim": "Mutations that impair TORC1 signaling reduce the ability of the cell to adapt to increases or decreases in nutritional quality.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, mutations that impair TORC1 signaling reduce the ability of the cell to adapt to increases or decreases in nutritional quality (Kira et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about mutation effects supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "bef2d660-4426-4ca7-add4-1c20e9235677",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C54",
+      "claim": "cff1 and bck1 showed significantly reduced growth rates upon supplementation of media with ammonium sulfate.",
+      "claim_type": "EXPLICIT",
+      "source": "cff1 and bck1 showed significantly reduced growth rates upon the supplementation of the media with ammonium sulfate (Figure 3C), and hxk2 demonstrated a longer lag time (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e4449c07-58be-4b31-bf52-95db58d22b6e",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C55",
+      "claim": "hxk2 demonstrated a longer lag time upon supplementation of media with ammonium sulfate.",
+      "claim_type": "EXPLICIT",
+      "source": "cff1 and bck1 showed significantly reduced growth rates upon the supplementation of the media with ammonium sulfate (Figure 3C), and hxk2 demonstrated a longer lag time (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "fdc164fd-a7dc-4bc9-b385-ce3aeb8e018d",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C56",
+      "claim": "Known positive regulators of TORC1 signaling show reduced growth rates when grown in minimal media compared with wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously published functional genomics screens have shown that known positive regulators of TORC1 signaling show reduced growth rates when grown in minimal media compared with wild-type (Breslow et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior findings supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "dc2e1c36-0389-4e9c-90cd-5e35a309fb46",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C57",
+      "claim": "SCH9 is directly phosphorylated by TORC1 and is a key node for transmission of signaling into processes downstream of TORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein SCH9 is directly phosphorylated by TORC1 and is a key node for transmission of signaling intro processes downstream of TORC1 (Urban et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protein function supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "779c7681-6e99-486a-a38e-2259d3f89a42",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C58",
+      "claim": "Western blot quantification revealed a similar degree of SCH9 phosphorylation in wild-type and cff1 strains in rich conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Western blot quantification revealed a similar degree of SCH9 phosphorylation in wild-type and cff1 strains in rich conditions (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "95fc667b-16a2-4f4f-b416-c663d668e0e9",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C59",
+      "claim": "The relative abundance of the CFF1 protein was reduced upon treatment with rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, the relative abundance of the CFF1 protein was reduced upon treatment rapamycin (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "66e7986f-236d-4025-a8ce-affb1bd1f454",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C60",
+      "claim": "Pyrimidine biosynthetic precursors (carbamoyl aspartate and dihydroorotate) were increased in cff1 compared with wild-type during nitrogen downshift.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS analysis of the samples indicated that pyrimidine biosynthetic precursors (carbamoyl aspartate and dihydroorotate) were increased in cff1 compared with wild-type (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "6ef4016d-0f3d-49b3-97ad-ac9e29c4832f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C61",
+      "claim": "TOR signaling has been shown to stimulate de novo pyrimidine biosynthesis in other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "TOR signaling has been shown to stimulate de novo pyrimidine biosynthesis in other systems (Ben-Sahra et al., 2013; Robitaille et al., 2013), so the observation that CFF1 is required for the maintenance of pyrimidine precursor pool sizes during this nitrogen source shift further implicates its TORC1-related metabolic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about TOR function in other systems supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f0969a2d-d863-4578-8d41-b0c8e5eff125",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C62",
+      "claim": "The enzyme URA10 showed a significant decrease in abundance in cff1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzyme URA10, which converts orotate into oratidine-5-phosphate (Figure 4D), showed a significant decrease in abundance (Figure 4E), which was not shared by the other members of the metabolic pathway (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation with reference to figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e56bd4f7-4487-44c6-bbf4-53bcec79c1c3",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C63",
+      "claim": "CFF1 is required for normal adaptation of the cell to changing metabolic environments in terms of both up- and downshifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with earlier results, CFF1 is required for normal adaptation of the cell to changing metabolic environments in terms of both up- and downshifts with a specific role in the regulation of pyrimidine biosynthesis through URA10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "6d1f09eb-7549-44c2-b813-b1f4427cbf7d",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C64",
+      "claim": "This is the first demonstration that dynamic perturbation of the cell improves the recovery of eukaryotic gene function when using a metabolomics-based guilt-by-association scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first demonstration that dynamic perturbation of the cell improves the recovery of eukaryotic gene function when using a metabolomics-based guilt-by-association scheme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of novelty based on authors' knowledge",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "d8147bfa-d9f1-4b98-90d7-8841f91fdfa4",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C65",
+      "claim": "CFF1 has structural similarity to auxin-binding proteins from plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has also demonstrated structural similarity between CFF1 and auxin-binding proteins from plants (Zhou et al., 2005), as well as a role in determining the production of the compound 4-hydroxymethylfuranone (Valastyan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protein structure supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e9b920d3-9b60-433d-9fd0-5654f32fa492",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C66",
+      "claim": "CFF1 has a role in determining the production of the compound 4-hydroxymethylfuranone.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has also demonstrated structural similarity between CFF1 and auxin-binding proteins from plants (Zhou et al., 2005), as well as a role in determining the production of the compound 4-hydroxymethylfuranone (Valastyan et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene function supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "1d01b505-f15e-4ff0-8e50-6aa3cec559c5",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C67",
+      "claim": "CFF1 has been reported to be phosphorylated at a number of positions, including serine 68 under glucose limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, CFF1 has been reported to be phosphorylated at a number of positions, including serine 68 under glucose limitation (Lanz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about post-translational modification supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "c256d694-171d-4dd7-a9e1-6b1f4eacd54a",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C68",
+      "claim": "BCK1 has homology to mammalian Map3K1, which is implicated in breast cancer in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "BCK1 has homology to mammalian Map3K1, which is implicated in breast cancer in humans (Easton et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene homology and disease association supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "ef602588-2484-4437-abae-c80597d9ec7b",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C69",
+      "claim": "PAK4, PAK5, and PAK6 are homologs of CLA4.",
+      "claim_type": "EXPLICIT",
+      "source": "PAK4, PAK5, and PAK6 are homologs of CLA4, and PAK6 has also been implicated in clear cell renal cell carcinoma (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about gene homology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "6fa2a0dd-c002-4cc5-b09d-549135daefe9",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C70",
+      "claim": "PAK6 has been implicated in clear cell renal cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "PAK4, PAK5, and PAK6 are homologs of CLA4, and PAK6 has also been implicated in clear cell renal cell carcinoma (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about disease association supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "0cfd550f-0cd2-494c-9874-f30e89505d50",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C71",
+      "claim": "An interactive data visualization app was assembled where users can browse through the data.",
+      "claim_type": "EXPLICIT",
+      "source": "To enhance the usability of this data, we assembled an interactive data visualization app where users can browse through this data in order to investigate mutants that are of interest to them (https://rapamycin-yeast.ethz.ch).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data resource created",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "ab42dfb2-f612-4ccd-86dc-ae800289b297",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C72",
+      "claim": "The data are made available in raw form.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data are made available in raw form, and because the acquisition of the main dataset was performed in an untargeted mode, these data can be reanalyzed in the future as the library of potential metabolites is expanded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e914abbd-bc45-42e5-b2b8-29e7250de335",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C73",
+      "claim": "The acquisition of the main dataset was performed in an untargeted mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data are made available in raw form, and because the acquisition of the main dataset was performed in an untargeted mode, these data can be reanalyzed in the future as the library of potential metabolites is expanded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data acquisition method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "4e1629d0-8a7e-4d04-94bb-b9694b8c0c1f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "claim_id": "C74",
+      "claim": "Dynamic perturbations of gene expression can be used to recover drug-target relationships on the basis of metabolome similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "This builds on work showing that dynamic perturbations of gene expression can be used to recover drug-target relationships on the basis of metabolome similarity (Holbrook-Smith et al., 2022; Anglada-Girotto et al., 2022) and thus further demonstrates the value of non-steady-state perturbations of the cell in the context of metabolome profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prior work supported by citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study profiled 164 loss-of-function mutants (85 TOR-related and 85 receptor-related) using flow-injection time-of-flight mass spectrometry under rapamycin treatment at multiple time points (5, 30, 60, 90 min), generating over 7000 metabolomics measurements. Only nonessential mutants were included, and cultures were grown to OD600 of 0.7 before treatment with 400 ng/mL rapamycin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C16-C20, C22, and C35 collectively describe the experimental design and dataset generation. The methodology is clearly described with specific parameters (mutant numbers, time points, rapamycin concentration, OD600), and the dataset size is quantified. The approach is validated by LC-MS (C23), providing orthogonal support for the FIA-MS measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9540bb5c-4f7f-4a3a-829f-452e92f4b8d7",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The FIA-MS measurements of rapamycin effects on wild-type yeast were validated using LC-MS, demonstrating concordance between the high-throughput and traditional methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 describes orthogonal validation of the FIA-MS approach using LC-MS. Figure 1\u2014figure supplement 1 shows correlation between the two methods, supporting the reliability of the high-throughput FIA-MS approach used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "8acdf54c-465e-480b-9932-7be1753fb504",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rapamycin treatment induced metabolic changes in wild-type yeast consistent with TORC1 inhibition, including nucleoside accumulation. The gtr1 mutant showed elevated glutamine levels before treatment and enhanced phenylalanine accumulation after rapamycin treatment. The highest number of metabolite changes across mutants occurred at 90 minutes post-treatment, demonstrating that rapamycin reveals metabolic responses not measurable at steady state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 and C32-C34 describe metabolic responses to rapamycin treatment with specific examples (gtr1 mutant) and temporal dynamics. The observations are supported by data in Figures 1B, 1E, 1F, and 1D, showing expected TORC1 inhibition responses and demonstrating the value of dynamic perturbation over steady-state measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dynamic metabolome profiling after rapamycin treatment improved recovery of known positive TORC1 regulators compared to steady-state measurements. The empirical p-value for clustering of positive regulators was <5% at all time points, and AUC values were >0.5 for all time points, with the untreated condition showing the smallest AUC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 and C6 describe statistical validation of the guilt-by-association approach. The empirical p-values (<5%), AUC values (>0.5), and comparison showing untreated cells had the smallest AUC (C38) provide quantitative support that dynamic perturbation improves functional gene recovery. Figure 2B provides visual support for these statistical claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "5a283e54-0f90-403c-a8d9-1498420b303f",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Small but significant correlations were observed between metabolome-based distances and genetic interaction scores, suggesting metabolome distances capture additional functional information beyond genetic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C40 describes correlation analysis between metabolome distances and genetic interaction scores from Costanzo et al. 2016. Figure 2\u2014figure supplement 1 shows the correlation, and the text notes these correlations were largely driven by strong negative genetic interactions, supporting that metabolome-based approaches provide complementary information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "9252ef81-f6b4-4f49-8c01-9755f082decc",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Six receptor-related mutants (RGT2, HXK2, URE2, BCK1, CLA4, CFF1) were identified as potential positive TORC1 regulators using a 0.2 FDR threshold. Three genes (RGT2, HXK2, URE2) have known connections to TOR signaling through PKA signaling or nitrogen catabolite repression, while BCK1, CLA4, and CFF1 represent novel candidates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe the identification of candidate genes through metabolome-based guilt-by-association. The selection criteria (0.2 FDR threshold) is specified, and the genes are categorized by prior knowledge. Figure 2D-E supports the identification, and citations validate the known connections for RGT2, HXK2, and URE2, making the novel candidates (BCK1, CLA4, CFF1) credible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "d4cb1bcb-3af0-453d-bb65-a3e3e6a1ce66",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The atg13 mutant, which is incapable of autophagy, showed a strong reduction in inosine accumulation under rapamycin treatment, demonstrating the connection between autophagy and nucleoside metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 describe a specific example of metabolome profiling revealing gene function. The atg13 phenotype is well-established (C45, supported by citation), and the inosine accumulation defect (C46) is shown in Figure 1\u2014figure supplement 3A, providing a clear mechanistic link between autophagy and nucleoside metabolism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "113c6483-8e77-4f78-99ff-03d20cd67ded",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Proteomic analysis of 12 mutants (6 known positive TORC1 regulators and 6 candidate genes) after rapamycin treatment showed that BCK1, CLA4, and CFF1 had similar proteomic profiles to known positive regulators. All mutants except HXK2 and RGT2 showed altered GO enrichment patterns, with cff1 and bck1 showing the strongest correlations with rapamycin-treated wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 describe proteomic validation of candidate genes. Figure 3A shows GO enrichment patterns, and Figure 3B shows correlation analysis. The observation that BCK1, CLA4, and CFF1 cluster with known positive regulators and show altered proteome responses provides independent validation of the metabolomics-based predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "3889bec6-0f4a-48e6-8c3c-be8f23fe35c3",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During nitrogen upshift experiments, cff1 and bck1 showed significantly reduced growth rates, and hxk2 showed a longer lag time. These phenotypes are consistent with impaired TORC1 signaling, as known positive regulators show similar growth defects in minimal media.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe phenotypic validation through growth assays. Figure 3C-D shows the growth rate and lag time data with statistical significance indicated. The comparison to published data on known positive regulators (C56, Breslow et al. 2008) provides context showing the observed phenotypes are within the expected range for TORC1 signaling genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "49e71d53-7b95-4628-ab33-2ecdbfe01c24",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Western blot analysis showed similar SCH9 phosphorylation levels in wild-type and cff1 strains under rich conditions, suggesting CFF1 acts downstream of TORC1. CFF1 protein abundance decreased upon rapamycin treatment, consistent with TORC1 regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe mechanistic positioning of CFF1 in the TORC1 pathway. Figure 4A shows SCH9 phosphorylation data, and Figure 4B shows CFF1 abundance changes. The similar SCH9 phosphorylation in cff1 and wild-type indicates CFF1 doesn't affect TORC1 activity directly, while the rapamycin-induced reduction in CFF1 levels suggests it's a TORC1 target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "During nitrogen downshift, cff1 mutants showed increased pyrimidine biosynthetic precursors (carbamoyl aspartate and dihydroorotate) and decreased URA10 enzyme abundance. This connects CFF1 to pyrimidine biosynthesis regulation through URA10, consistent with TOR's known role in stimulating pyrimidine biosynthesis in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 and C8 describe CFF1's specific metabolic function. Figure 4C shows metabolite changes, Figure 4E shows URA10 protein decrease, and Figure 4D diagrams the pathway. The connection between CFF1 deletion, URA10 reduction, and pyrimidine precursor accumulation is mechanistically coherent. Citation support (C61) for TOR's role in pyrimidine biosynthesis in other systems strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "977f7b69-d1fc-4813-b351-98bafb1f72a8",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "This study represents the first demonstration that dynamic perturbation improves recovery of eukaryotic gene function using metabolomics-based guilt-by-association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 asserts novelty based on the authors' knowledge. While the study does demonstrate improved recovery with dynamic perturbation (supported by C36-C39), the claim of being 'first' cannot be fully verified without comprehensive literature review. The statement 'to our knowledge' acknowledges this limitation, but the novelty claim remains uncertain without exhaustive prior art search.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "3ac561bf-0d18-4333-afdb-37d88b697267",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study created an interactive data visualization app (https://rapamycin-yeast.ethz.ch) and made raw data available. The dataset was acquired in untargeted mode, allowing future reanalysis as metabolite libraries expand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71-C73 describe data availability and resource creation. These are straightforward statements about data sharing practices that can be verified by accessing the provided URL and data repositories. The untargeted acquisition mode (C73) is a methodological choice that enhances future utility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "f959be23-8902-4b90-9b3d-f373244d4fc5",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The S. cerevisiae genome was sequenced 25 years ago (Goffeau et al. 1996), but gene function characterization remains incomplete and ongoing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C9-C10 provide background context. The genome sequencing date is verifiable through the Goffeau et al. 1996 citation (C9), and the statement about incomplete characterization (C2, C10) is supported by the Wood et al. 2019 citation. These are well-established facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "4698adc0-b3f7-4aaa-8eae-0df40e674b4c",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CFF1 has structural similarity to plant auxin-binding proteins, plays a role in 4-hydroxymethylfuranone production, and is phosphorylated at multiple positions including serine 68 under glucose limitation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 describe prior knowledge about CFF1 from literature. Each claim is supported by specific citations (Zhou et al. 2005, Valastyan et al. 2021, Lanz et al. 2021), providing context for CFF1's potential functions and regulation. These are literature-based statements that contextualize the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "17e02655-6694-4f54-83d7-9cddbd445774",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "BCK1 and CLA4 have mammalian homologs implicated in human cancers: BCK1 is homologous to Map3K1 (breast cancer), and CLA4 is homologous to PAK4/5/6, with PAK6 implicated in clear cell renal cell carcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe evolutionary conservation and disease relevance. The homology relationships and cancer associations are supported by citations (Easton et al. 2007, Liu et al. 2014). These claims provide translational context for the yeast findings but don't constitute primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge about metabolomics methods, TOR signaling biology, and prior applications of metabolomics to gene function studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C11-C15, C21, C24-C26, C30-C31, C42-C43, C52-C53, C56-C57, C61, C74) provide established background knowledge supported by appropriate citations. They contextualize the study but are not primary findings. Each statement is verifiable through the cited literature and represents accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    },
+    {
+      "id": "87701160-4439-4c8a-b326-f2da6f501d99",
+      "content_id": "a3f4eb03-f83e-4b32-b0b9-b3ebc5b7982c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Deletion of novel candidate genes causes phenotypes and proteome responses implicating them in TOR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is a summary statement supported by the detailed results in C48-C51 (proteomics) and C54-C55 (growth phenotypes). This claim integrates multiple lines of evidence showing that the candidate genes identified through metabolomics have TOR-related phenotypes at multiple levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T18:11:08.262221Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd8ceb8a-a5c5-4be4-a3b8-3a827ff6fbfa",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "e5187bab-0e65-4671-baa7-515e686e0dee",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "f6be41b1-2f75-44e9-96fc-fa512d2680cb",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "dd966ae5-0491-42a6-95d5-2c921f776122",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "1fa30693-f867-4d42-aa63-225ae0a29e98",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "f20a164d-29e1-436e-8d3a-c48c76b82891",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "eca6cc2e-3cc7-47ac-8090-d12df90c376b",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "21be69bb-7b47-4469-85a2-80a914e159f1",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "a88cfc44-edff-4026-96d5-2fe842524ca4",
+      "result_id": "1ba63917-d108-4431-a8b5-bd095ec7a9c2"
+    },
+    {
+      "claim_id": "49a45817-0e3e-4e59-9fd7-c84e2d0a4809",
+      "result_id": "9540bb5c-4f7f-4a3a-829f-452e92f4b8d7"
+    },
+    {
+      "claim_id": "a50376fa-0156-4543-9bd6-caee866c2603",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "5de7e79c-5bad-416f-a15c-45a5489fa3d1",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "62ddc441-559d-4062-84f4-364ede689b68",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "6083ed1e-e2d2-4556-9c86-59792dbcd4f4",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "75d4665f-e614-44a8-b1a7-5a0d05637910",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "78b73e11-e769-4a54-bedf-99e7ae9ab0f6",
+      "result_id": "8acdf54c-465e-480b-9932-7be1753fb504"
+    },
+    {
+      "claim_id": "4adf8b6c-0c0b-4d58-8e14-da60f439ddb0",
+      "result_id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac"
+    },
+    {
+      "claim_id": "f4c05825-57b0-41be-80ab-c202170e1052",
+      "result_id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac"
+    },
+    {
+      "claim_id": "274e780d-e503-4f97-bf3b-b9a3b6e7a54b",
+      "result_id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac"
+    },
+    {
+      "claim_id": "22853c1d-c716-4b61-8aff-484a425148f1",
+      "result_id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac"
+    },
+    {
+      "claim_id": "c39c8b08-22af-4e71-9723-c24b9f0f1891",
+      "result_id": "e9f47b37-06b4-4942-9d09-ff49da8cb3ac"
+    },
+    {
+      "claim_id": "9f17ca07-4661-460e-a227-43530f64568a",
+      "result_id": "5a283e54-0f90-403c-a8d9-1498420b303f"
+    },
+    {
+      "claim_id": "9abf7cb8-2bb7-4d55-a4d7-f685e3b00e17",
+      "result_id": "9252ef81-f6b4-4f49-8c01-9755f082decc"
+    },
+    {
+      "claim_id": "a8ec9c33-7b47-4e36-b6b2-ef2eb0652b4d",
+      "result_id": "9252ef81-f6b4-4f49-8c01-9755f082decc"
+    },
+    {
+      "claim_id": "0d0f5a5e-15e9-4ce1-aaef-66db795b9e84",
+      "result_id": "9252ef81-f6b4-4f49-8c01-9755f082decc"
+    },
+    {
+      "claim_id": "0a5ad7b8-5909-4320-8d1b-7319654411f2",
+      "result_id": "9252ef81-f6b4-4f49-8c01-9755f082decc"
+    },
+    {
+      "claim_id": "8e439c59-5210-4acc-a36c-dae34fd61bcf",
+      "result_id": "d4cb1bcb-3af0-453d-bb65-a3e3e6a1ce66"
+    },
+    {
+      "claim_id": "0d09378f-025d-4f04-8c03-3166b3281d6d",
+      "result_id": "d4cb1bcb-3af0-453d-bb65-a3e3e6a1ce66"
+    },
+    {
+      "claim_id": "56b2d856-a412-4f78-9fe5-5807c8a95dbd",
+      "result_id": "113c6483-8e77-4f78-99ff-03d20cd67ded"
+    },
+    {
+      "claim_id": "ae54012b-bf51-4f4f-b35a-86d9b703bbf8",
+      "result_id": "113c6483-8e77-4f78-99ff-03d20cd67ded"
+    },
+    {
+      "claim_id": "5798f487-fd7f-48a2-b4dd-5e19fa97e152",
+      "result_id": "113c6483-8e77-4f78-99ff-03d20cd67ded"
+    },
+    {
+      "claim_id": "2e1fad3b-a7e8-4a72-af98-8a11072c11c9",
+      "result_id": "113c6483-8e77-4f78-99ff-03d20cd67ded"
+    },
+    {
+      "claim_id": "e7cabb9f-6f5c-449b-8441-9af5cb1524dd",
+      "result_id": "113c6483-8e77-4f78-99ff-03d20cd67ded"
+    },
+    {
+      "claim_id": "bef2d660-4426-4ca7-add4-1c20e9235677",
+      "result_id": "3889bec6-0f4a-48e6-8c3c-be8f23fe35c3"
+    },
+    {
+      "claim_id": "e4449c07-58be-4b31-bf52-95db58d22b6e",
+      "result_id": "3889bec6-0f4a-48e6-8c3c-be8f23fe35c3"
+    },
+    {
+      "claim_id": "fdc164fd-a7dc-4bc9-b385-ce3aeb8e018d",
+      "result_id": "3889bec6-0f4a-48e6-8c3c-be8f23fe35c3"
+    },
+    {
+      "claim_id": "779c7681-6e99-486a-a38e-2259d3f89a42",
+      "result_id": "49e71d53-7b95-4628-ab33-2ecdbfe01c24"
+    },
+    {
+      "claim_id": "95fc667b-16a2-4f4f-b416-c663d668e0e9",
+      "result_id": "49e71d53-7b95-4628-ab33-2ecdbfe01c24"
+    },
+    {
+      "claim_id": "66e7986f-236d-4025-a8ce-affb1bd1f454",
+      "result_id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33"
+    },
+    {
+      "claim_id": "6ef4016d-0f3d-49b3-97ad-ac9e29c4832f",
+      "result_id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33"
+    },
+    {
+      "claim_id": "f0969a2d-d863-4578-8d41-b0c8e5eff125",
+      "result_id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33"
+    },
+    {
+      "claim_id": "e56bd4f7-4487-44c6-bbf4-53bcec79c1c3",
+      "result_id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33"
+    },
+    {
+      "claim_id": "9f23e2dd-8022-4fb9-8a45-94234c729a93",
+      "result_id": "ceebd4d3-3fb5-40c7-9e2a-6c88fc3a2e33"
+    },
+    {
+      "claim_id": "6d1f09eb-7549-44c2-b813-b1f4427cbf7d",
+      "result_id": "977f7b69-d1fc-4813-b351-98bafb1f72a8"
+    },
+    {
+      "claim_id": "31cb100b-e6a1-401e-a54e-e0507a6d7c46",
+      "result_id": "3ac561bf-0d18-4333-afdb-37d88b697267"
+    },
+    {
+      "claim_id": "0cfd550f-0cd2-494c-9874-f30e89505d50",
+      "result_id": "3ac561bf-0d18-4333-afdb-37d88b697267"
+    },
+    {
+      "claim_id": "ab42dfb2-f612-4ccd-86dc-ae800289b297",
+      "result_id": "3ac561bf-0d18-4333-afdb-37d88b697267"
+    },
+    {
+      "claim_id": "e914abbd-bc45-42e5-b2b8-29e7250de335",
+      "result_id": "3ac561bf-0d18-4333-afdb-37d88b697267"
+    },
+    {
+      "claim_id": "400a872e-706a-4c95-b1e9-1fb1df076337",
+      "result_id": "f959be23-8902-4b90-9b3d-f373244d4fc5"
+    },
+    {
+      "claim_id": "590ac893-5dc8-407c-9813-9116c23f0f61",
+      "result_id": "f959be23-8902-4b90-9b3d-f373244d4fc5"
+    },
+    {
+      "claim_id": "27cc86e8-542f-4346-bdbc-c1914bd0b308",
+      "result_id": "f959be23-8902-4b90-9b3d-f373244d4fc5"
+    },
+    {
+      "claim_id": "06164824-8793-46b5-9220-91b79f2b80ba",
+      "result_id": "f959be23-8902-4b90-9b3d-f373244d4fc5"
+    },
+    {
+      "claim_id": "d8147bfa-d9f1-4b98-90d7-8841f91fdfa4",
+      "result_id": "4698adc0-b3f7-4aaa-8eae-0df40e674b4c"
+    },
+    {
+      "claim_id": "e9b920d3-9b60-433d-9fd0-5654f32fa492",
+      "result_id": "4698adc0-b3f7-4aaa-8eae-0df40e674b4c"
+    },
+    {
+      "claim_id": "1d01b505-f15e-4ff0-8e50-6aa3cec559c5",
+      "result_id": "4698adc0-b3f7-4aaa-8eae-0df40e674b4c"
+    },
+    {
+      "claim_id": "c256d694-171d-4dd7-a9e1-6b1f4eacd54a",
+      "result_id": "17e02655-6694-4f54-83d7-9cddbd445774"
+    },
+    {
+      "claim_id": "ef602588-2484-4437-abae-c80597d9ec7b",
+      "result_id": "17e02655-6694-4f54-83d7-9cddbd445774"
+    },
+    {
+      "claim_id": "6fa2a0dd-c002-4cc5-b09d-549135daefe9",
+      "result_id": "17e02655-6694-4f54-83d7-9cddbd445774"
+    },
+    {
+      "claim_id": "5ee413f8-8ce8-4b72-a8b9-3c97809fd4a6",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "60989488-3a8d-4f0a-9321-ffc8935aa57a",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "d0ed25a2-7fdc-465c-a964-105f643f9a12",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "d7c34dd0-8f93-4d46-91f3-105cc279891f",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "7319b329-9ec0-4791-a560-c634d7c4e3be",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "462cd04c-a487-4ca1-8079-a54db73f1954",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "1e41e484-e5bf-4045-8d3b-26d316595951",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "243a3c26-5a76-41e5-89f9-a3e01b143b57",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "647c4c58-0e5a-443b-a8df-4a410d23937c",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "5c526aa6-bd6f-4e07-b445-42dac65408fe",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "9d045259-4f85-4609-afd6-2d573eba3a0f",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "a8ec9c33-7b47-4e36-b6b2-ef2eb0652b4d",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "0d0f5a5e-15e9-4ce1-aaef-66db795b9e84",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "4fdeefca-bfcd-416b-aed9-974c0796cad8",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "f3883bdb-1ebe-43dd-bb8f-f9766f878d5f",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "fdc164fd-a7dc-4bc9-b385-ce3aeb8e018d",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "dc2e1c36-0389-4e9c-90cd-5e35a309fb46",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "6ef4016d-0f3d-49b3-97ad-ac9e29c4832f",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "4e1629d0-8a7e-4d04-94bb-b9694b8c0c1f",
+      "result_id": "e813c076-d89e-4f80-9cc9-4ef47d6da1ce"
+    },
+    {
+      "claim_id": "94afd5b1-ba91-4bc6-a0d8-ef65da869b3b",
+      "result_id": "87701160-4439-4c8a-b326-f2da6f501d99"
+    }
+  ],
+  "comparisons": []
+}

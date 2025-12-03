@@ -1,0 +1,1448 @@
+{
+  "submission": {
+    "id": "415070fc-2281-40b7-beb3-57cff989df4a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T09:11:37.102966Z",
+    "updated_at": "2025-12-03T09:11:37.102966Z"
+  },
+  "content": [
+    {
+      "id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "submission_id": "415070fc-2281-40b7-beb3-57cff989df4a",
+      "content_type": "manuscript",
+      "content_text": "# Remote immune processes revealed by immune-derived circulating cell-free DNA\n\n## Authors\n\n- Ilana Fox-Fisher<sup>1</sup> ([ORCID: 0000-0002-3773-9330](https://orcid.org/0000-0002-3773-9330))\n- Sheina Piyanzin<sup>1</sup>\n- Bracha Lea Ochana<sup>1</sup>\n- Agnes Klochendler<sup>1</sup>\n- Judith Magenheim<sup>1</sup>\n- Ayelet Peretz<sup>1</sup>\n- Netanel Loyfer<sup>2</sup>\n- Joshua Moss<sup>1</sup>\n- Daniel Cohen<sup>1</sup>\n- Yaron Drori<sup>3</sup>\n- Nehemya Friedman<sup>3</sup>\n- Michal Mandelboim<sup>3</sup>\n- Marc E Rothenberg<sup>4</sup>\n- Julie M Caldwell<sup>4</sup>\n- Mark Rochman<sup>4</sup> ([ORCID: 0000-0002-0818-927X](https://orcid.org/0000-0002-0818-927X))\n- Arash Jamshidi<sup>5</sup>\n- Gordon Cann<sup>5</sup>\n- David Lavi<sup>6</sup>\n- Tommy Kaplan<sup>2</sup> ([ORCID: 0000-0002-1892-5461](https://orcid.org/0000-0002-1892-5461))\n- Benjamin Glaser<sup>8</sup>\n- Ruth Shemer<sup>1</sup>\n- Yuval Dor<sup>1</sup> ([ORCID: 0000-0003-2456-2289](https://orcid.org/0000-0003-2456-2289)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Biology and Cancer Research, The Institute for Medical Research, Israel-Canada, The Hebrew University-Hadassah Medical School Jerusalem Israel\n2. School of Computer Science and Engineering, The Hebrew University of Jerusalem Jerusalem Israel\n3. Department of Epidemiology and Preventive Medicine, School of Public Health, Sackler Faculty of Medicine, Tel-Aviv University, Tel-Aviv, Israel, and Central Virology Laboratory, Ministry of Health, Chaim Sheba Medical Center Ramat-Gan Israel\n4. Division of Allergy and Immunology, Department of Pediatrics, Cincinnati Children\u2019s Hospital Medical Center, University of Cincinnati Cincinnati United States\n5. GRAIL Menlo Park United States\n6. Department of Hematology, Hadassah Hebrew University Medical Center Jerusalem Israel\n7. Department of Developmental Biology and Cancer Research, The Institute for Medical Research, The Hebrew University-Hadassah Medical School Jerusalem Israel\n8. Endocrinology and Metabolism Service, Hadassah Hebrew University Medical Center Jerusalem Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nBlood cell counts often fail to report on immune processes occurring in remote tissues. Here, we use immune cell type-specific methylation patterns in circulating cell-free DNA (cfDNA) for studying human immune cell dynamics. We characterized cfDNA released from specific immune cell types in healthy individuals (N = 242), cross sectionally and longitudinally. Immune cfDNA levels had no individual steady state as opposed to blood cell counts, suggesting that cfDNA concentration reflects adjustment of cell survival to maintain homeostatic cell numbers. We also observed selective elevation of immune-derived cfDNA upon perturbations of immune homeostasis. Following influenza vaccination (N = 92), B-cell-derived cfDNA levels increased prior to elevated B-cell counts and predicted efficacy of antibody production. Patients with eosinophilic esophagitis (N = 21) and B-cell lymphoma (N = 27) showed selective elevation of eosinophil and B-cell cfDNA, respectively, which were undetectable by cell counts in blood. Immune-derived cfDNA provides a novel biomarker for monitoring immune responses to physiological and pathological processes that are not accessible using conventional methods.\n\n## Introduction\n\nCirculating biomarkers for monitoring inflammatory or immune responses are an essential part of diagnostic medicine and an important tool for studying physiological and pathological processes. These include, among others, counts of specific immune cell types in peripheral blood, RNA expression profiles in blood cells (Maas et al., 2002; Tuller et al., 2013), and levels of circulating proteins such as C-reactive protein (CRP) (Gabay and Kushner, 1999; Sproston and Ashworth, 2018). A major limitation of circulating immune cell analysis is that it often fails to report on immune processes taking place in remote locations. Conversely, CRP and similar proteins do reflect the presence of tissue inflammation but are highly non-specific with regard to tissue location and the nature of inflammatory process (Gabay and Kushner, 1999).\n\nDying cells release nucleosome-size fragments of cell-free DNA (cfDNA), which travel transiently in blood before being cleared by the liver (Heitzer et al., 2019). Analysis of the sequence of such fragments is emerging as a powerful diagnostic modality. Liquid biopsies using cfDNA have been applied to reveal the presence of mutations in a fetus as reflected in maternal cfDNA (Bianchi et al., 2014; Fan et al., 2012; Lo et al., 1997), identify and monitor tumor dynamics via the presence of somatic mutations in plasma (Wan et al., 2017), and detect the rejection of transplanted organs when the levels of donor-derived DNA markers are elevated in recipient plasma (De Vlaminck et al., 2014; De Vlaminck et al., 2015). More recently, we and others have shown that tissue-specific DNA methylation patterns can be used to determine the tissue origins of cfDNA, allowing to infer cell death dynamics in health and disease even when no genetic differences exist between the host and the tissue of interest (Cheng et al., 2019; Lehmann-Werman et al., 2016).\n\nAlthough the majority of cfDNA in healthy individuals is known to originate in hematopoietic cells (Lehmann-Werman et al., 2016; Moss et al., 2018; Sun et al., 2015), it has often been regarded as background noise, against which one may look for rare cfDNA molecules released from a solid tissue of interest. We hypothesized that identification of immune cell-derived cfDNA could open a window into immune and inflammatory cell dynamics, even in cases where peripheral blood counts are not informative. Here, we describe the development of a panel of immune cell type-specific DNA methylation markers, and the use of this panel for cfDNA-based assessment of human immune cell turnover in health and disease. We show that immune cell cfDNA measurement can provide clinical biomarkers in multiple disease and treatment conditions, otherwise undetectable by cell subset enumeration in blood.\n\n## Results\n\n### Identification of cell type-specific DNA methylation markers for immune cells\n\nUsing a reference methylome atlas of 32 primary human tissues and sorted cell types (Moss et al., 2018), we searched for CpG sites that are uniquely methylated or unmethylated in a specific immune cell type. Notably, across the entire atlas, the vast majority of such unique loci are hypomethylated in the cell type of interest and methylated elsewhere (typically marking cell type-specific enhancers), while just a small minority are methylated in a given cell type and hypomethylated elsewhere (manuscript in preparation). We identified dozens of uniquely hypomethylated CpG sites for most cell types examined, qualifying these as biomarkers for DNA derived from a given cell type (Figure 1A). Based on this in silico comparative analysis, we selected for further work 17 different CpG sites, whose combined methylation status could distinguish the DNA of seven major immune cell types: neutrophils, eosinophils, monocytes, B-cells, CD3 T-cells, CD8 cytotoxic T-cells, and regulatory T-cells (Tregs). For each marker CpG we designed PCR primers to amplify a fragment of up to 160 bp flanking it, considering the typical nucleosome size of cfDNA molecules. Amplicons included additional adjacent CpG sites, to gain enhanced cell type specificity due to the regional nature of tissue-specific DNA methylation (Lehmann-Werman et al., 2016). We then established a multiplex PCR protocol, to co-amplify all 17 markers from bisulfite-treated DNA followed by next-generation sequencing (NGS) for assessment of methylation patterns (Neiman et al., 2020). Methylation patterns of amplified loci across 18 different human tissues validated the patterns inferred from in silico analysis and supported the ability of this marker cocktail to specifically identify the presence of DNA from each of the seven immune cell types (Figure 1B). We also assessed assay sensitivity and accuracy via spike-in experiments. We mixed human leukocyte DNA with DNA from the HEK-293 human embryonic kidney cell line and used the methylation cocktail to assess the fraction of each immune cell type. The markers quantitatively detected the presence of DNA from specific immune cell types even when blood DNA was diluted 10- to 20-fold (Figure 1C and Figure 1\u2014figure supplement 1). These findings establish specificity, sensitivity, and accuracy of the methylation marker cocktail for detection of DNA derived from the seven selected immune cell types.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig1-v2.jpg)\n\n**Figure 1.:** (A) Methylation atlas, based on Illumina 450K arrays, composed of 32 tissues and sorted cells (columns). For each immune cell type we chose the top 10 CpGs that are hypomethylated (yellow) in the specific immune cell type and hypermethylated (blue) in other tissues and cells. This yielded 70 cell-specific CpG sites (rows) for seven different immune cell subtypes \u2013 B-cells, CD8 cytotoxic T-cells, CD3 T-cells, regulatory T-cells, eosinophils, monocytes, and neutrophils. (B) Methylation patterns of 17 loci, selected from the 70 shown in panel A, based on the presence of multiple adjacent hypomethylated CpGs within an amplicon of up to 160 bp. Each methylation marker (columns) was assessed using genomic DNA from 19 different tissues and cell types (rows). All 17 markers were amplified in one multiplex PCR. Shades of gray represent the percentage of fully unmethylated molecules from the indicated marker in DNA from the indicated cell type. (C) Spike-in experiments assessing assay sensitivity. Human leukocyte DNA was mixed with DNA from HEK-293 cells (human embryonic kidney cells) in the indicated proportions. Colored lines show the inferred percentage of DNA from the indicated immune cell type in the mixture, as a function of the percentage of leukocyte DNA in the mixture. The percentage of DNA from each immune cell type was calculated using markers specific to neutrophils (NEUT1, NEUT2, NEUT3), monocytes (MONO1, MONO2), eosinophils (EOSI2, EOSI3), B-cells (B-CELL1, B-CELL2, B-CELL3), CD3 T-cells (T-CELL1, T-CELL2), CD8 cytotoxic T-cells (CD8A, CD8B), and regulatory T-cells (TREG1, TREG2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013G) Spike-in experiments for the assessment of assay sensitivity. Human leukocyte DNA was mixed with DNA from HEK-293 cells in the indicated proportion. The fraction of DNA from each immune type cell was assessed using the indicated methylation markers. The Y axis shows cumulative values for percentage contribution from each marker, to underscore the signal from each individual marker.\n\n### Immune cfDNA reflects cell turnover rather than counts of circulating blood cells\n\nTo validate assay accuracy, we applied the immune cell methylation markers to genomic DNA of blood cells, expecting to observe signals that agree with cell ratios as determined by complete blood counts (CBC). We obtained 392 blood samples from 79 healthy individuals at different time points, and simultaneously tested for CBC, and methylation marker cocktail both in DNA extracted from whole blood and in cfDNA extracted from plasma. Theoretically, immune cell cfDNA could be a mere reflection of the counts of each cell type (e.g. if it is released mostly from blood cells that have died during blood draw or preparation of plasma). In such a case, immune cfDNA should correlate well with CBC (and with immune methylation markers measured in genomic DNA from whole blood). Alternatively, if cfDNA reflects cell death events that took place in vivo, the correlation to cell counts is expected to be weaker.\n\nComparing the CBC to DNA methylation pattern, we observed a strong correlation between assessments of specific cell fractions in the two methods (Pearson\u2019s correlations; r = 0.67\u20130.83, p-value < 0.0001, Figure 2A and Figure 2\u2014figure supplement 1), supporting validity of the methylation assay for identifying fractions of DNA derived from specific immune cell types, consistent with previous findings (Baron et al., 2018). However, comparing cfDNA methylation markers in plasma to blood DNA methylation markers and CBC, we observed that proportion of cfDNA from specific immune cell types did not correlate with the proportion of the same markers in circulating blood cells and with CBC (Pearson\u2019s correlations; r = 0.14\u20130.53, Figure 2B\u2013C and Figure 2\u2014figure supplement 1). These findings suggest that immune cfDNA levels are the result of biological processes beyond immune cell counts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig2-v2.jpg)\n\n**Figure 2.:** (A) Levels of immune methylation markers in genomic DNA extracted from whole blood, versus complete blood counts (CBC) from same donors. A total of 392 plasma and blood samples were obtained from 79 healthy donors (47 females, 32 males; age range 20\u201373). Shown are Pearson\u2019s correlations; p-value < 0.0001. (B) cfDNA methylation versus whole blood methylation of the same donors. (C) cfDNA methylation versus CBC of the same donors. Note that cfDNA proportions of immune cells differ from the proportions of these cell types in peripheral blood. (D) Deconvolution of cfDNA and white blood cell (WBC) methylomes generated using whole genome bisulfite sequencing (WGBS) of 23 healthy donors. Note under-representation of lymphocyte DNA and over-representation of monocyte DNA in cfDNA compared with blood DNA (lymphocytes, p-value = 0.0021; monocytes, p-value = 0.0005, Kruskal-Wallis). (E\u2013F) XY scatter plots showing the average of inter-individual coefficient of variation (X-axis) and intra-individual coefficient of variation (Y-axis) for each immune cell type in whole blood (E) and in cfDNA (F) based on methylation markers. Black line represents perfect correlation between inter- and intra-individual dual variation. Dots below the black line reflect greater inter-individual variation and dots that are above reflect greater intra-individual variance. A smaller intra-individual variation in whole blood suggests a set point for proportions of blood cell types in each individual. By contrast, cfDNA levels of immune markers vary similarly within and between individuals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Plasma and blood samples (n = 392) were obtained from 79 healthy individuals that vary in age and gender. Methylation-based immune markers were determined on genomic DNA from whole blood, and on plasma cfDNA. Standard complete blood counts (CBC) values were also obtained. (A\u2013D) Correlation between CBC and methylation markers in cfDNA. (E\u2013H) Correlation between cfDNA methylation signals and whole blood methylation signals (left graph in each panel) or CBC (right graph in each panel). (I\u2013L) Correlation between cfDNA methylation signals whole blood methylation signals for cell types that are not scored in CBC.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013H) Total and immune-derived cfDNA was characterized in healthy individuals (n = 227) as a spline curve fit showing the trend of the data across different age groups (black line), with a breakdown to gender (female pink lines, male blue lines) for the indicated immune cell types. (I) A categorical heat map showing significant (blue, p-value < 0.05) and non-significant (red, p-value > 0.05, Kruskal-wallis) differences in cfDNA values for each immune cell type across different age groups and between genders. Age groups were 1\u201310 years (n = 21), 11\u201320 (n = 30), 21\u201350 (n = 134), and >50 (n = 37). (J) The normal cfDNA range for each cell type: neutrophils (mean = 390, range 10\u20131064 GE/ml), monocytes (mean = 101, range 6\u2013233 GE/ml), eosinophils (mean = 38, range 0\u2013111 GE/ml) T-cells (mean = 30, range1-79) B-cells (mean = 17, range 3\u201342 GE/ml) CD8 T-cells (mean = 8, range 0\u201327 GE/ml), and regulatory T-cells (Tregs) (mean = 2, range 0\u20139 GE/ml) based on samples from 227 individuals excluding outliers using the ROUT outlier test (Q = 5%). (K) XY scatter plot showing the average of inter-individual coefficient of variation (X-axis) and intra-individual coefficient of variation (Y-axis) for the fraction of cells from each immune cell types based on CBC. Black line represents perfect correlation between inter- and intra-individual variation. Dots below the black line represent greater inter-individual variation and dots above represent greater intra-individual variance.\n\nWe reasoned that over- or under-representation of DNA fragments from a specific immune cell type in plasma compared with blood counts most likely result from differences in cell turnover. The concentration of cfDNA from a given cell type should be a function of the total number of cells that have died per unit time (turnover rate), which is derived from the number of cells and their lifespan:\n\n$$\n\\frac{Totalcellnumber}{Lifespan}=Turnoverrate\n$$\n\nThe larger the population of a given cell type (both circulating and tissue-resident), the more cfDNA it will release; similarly, the shorter is lifespan, the more DNA will be released to plasma. The cfDNA findings were consistent with this model. For example, the fraction of lymphocyte cfDNA in plasma was always smaller than the fraction of lymphocyte DNA in circulating blood cells or the fraction of lymphocytes in CBC (Figure 2B\u2013C and Figure 2\u2014figure supplement 1), in agreement with the long half-life of lymphocytes compared with other blood cell types (Macallan et al., 2005; Michie et al., 1992). Conversely, the fraction of monocyte cfDNA was larger than the fraction of monocyte DNA in genomic DNA from whole blood or the fraction of monocytes in CBC (Figure 2B\u2013C), consistent with the shorter half-life of monocytes (Patel et al., 2017).\n\nTo further examine the relative presence of immune cfDNA in plasma and whole blood, we employed an independent set of samples and an independent technology to measure and interpret methylation markers. Specifically, we performed deconvolution (Moss et al., 2018) of methylomes obtained by whole genome bisulfite sequencing (WGBS) (85\u00d7 average coverage), on genomic DNA from whole blood, and matched plasma cfDNA from 23 healthy donors (see Materials and methods). This analysis, based on genome-wide methylation patterns, also revealed that lymphocyte and monocyte cfDNA was under- and over-represented, respectively, relative to the abundance of DNA from these cells in blood (lymphocytes, p-value = 0.002; monocytes, p-value = 0.0005, Kruskal-Wallis) (Figure 2D).\n\nThese findings support the exciting idea that cfDNA levels from a given immune cell type integrate total cell number and the lifespan of that cell type, and can provide information on processes not evident from circulating cell counts. For example, if the level of cfDNA from a specific immune cell type increases while the circulating counts of this cell type are unchanged, this can indicate either growth in the size of a tissue-resident population, or increased cell turnover, both of which are important immune parameters that cannot be easily obtained otherwise. Below, we provide evidence that such information can be extracted following perturbations of immune homeostasis.\n\n### Estimation of immune cfDNA baseline in healthy individuals\n\nTo define the baseline levels of immune-derived cfDNA in healthy individuals, we collected and tested plasma samples from 227 healthy donors (males and females, ages 1\u201385 years). Consistent with our previous plasma methylome analysis (Moss et al., 2018), we found that neutrophils were the main source of immune-derived cfDNA (mean = 390, range 10\u20131064 genome equivalents [GE]/ml), followed by monocytes (mean = 101, range 6\u2013233 GE/ml), eosinophils (mean = 38, range 0\u2013111 GE/ml) and lymphocytes (T-cells, mean = 30, range 1-79; B-cells, mean = 17, range 3\u201342; CD8 T-cells, mean = 8, range 0\u201327; Tregs, mean = 2, range 0\u20139 GE/ml) (Figure 2\u2014figure supplement 2). These data chart the normal range of cfDNA concentrations from specific immune cell types, including age and gender characteristics, against which pathological deviations can be identified (see below).\n\nWe also conducted a longitudinal study, to understand how immune-derived cfDNA is changing over time in the same individual. We collected weekly blood samples from 15 healthy donors over a period of 6 weeks. For each sample we obtained CBC and measured immune DNA methylation markers in genomic DNA of blood cells and in plasma cfDNA. We then calculated the coefficient of variation among CBC, blood methylation markers, and cfDNA methylation markers, within and between individuals. In circulating blood cells, the inter-individual variation in immune methylation markers and CBC was always higher than the intra-individual variation in these markers (Figure 2E and Figure 2\u2014figure supplement 2). This is consistent with previous reports that blood cell counts among individuals are more similar to themselves than to others, indicating distinct set points per person for the total number of specific immune cell types circulating in blood (Alpert et al., 2019; Carr et al., 2016). Strikingly, cfDNA values of the same immune methylation markers varied to the same extent among samples of the same individual and among samples of different individuals (Figure 2F). This argues that unlike cell counts, cfDNA of immune cells has no individual set point. Rather, cfDNA levels appear to reflect homeostatic maintenance of cell number, whereby cell birth and death are modulated to maintain a desired cell count.\n\n### Elevation of B-cell-derived cfDNA after influenza vaccination precedes changes in cell counts and correlates with specific antibody production\n\nWe hypothesized that upon perturbations of the immune system, cfDNA markers will reveal information about immune cell dynamics that is not present in peripheral blood cell counts, for example, extensive cell death during the process of affinity maturation, which repeatedly selects for B-cell clones with increased antibody-target affinity. To test this hypothesis, we examined longitudinal blood samples from healthy individuals who received an annual quadrivalent influenza vaccination (Nakaya et al., 2011; Voigt et al., 2018). The influenza vaccine response is mediated mostly by the humoral immune system (B-cells) aided by CD4 T-cells (Gage et al., 2018). Changes in circulating cell counts occur a week after vaccination, reflecting processes such as plasma cell formation (Victora and Wilson, 2015). cfDNA responses to vaccination were not previously reported. We recruited 92 healthy volunteers (age range 20\u201373, mean age 37.4) who received the vaccination in 2018 or 2019. From each volunteer we obtained blood samples a day before vaccination (day 0, D0), and at day 3, 7, and 28 post-vaccination. Consistent with previous reports, B-cell counts (measured by methylation analysis of DNA from whole blood) were moderately but significantly elevated on day 7, and persisted to day 28 (p-value = 0.0048, Kruskal-Wallis) (Figure 3A; Li et al., 2012). Surprisingly, B-cell-derived cfDNA levels increased as early as day 3, peaked on day 7 and returned to baseline levels on day 28 (p-value < 0.0001, Kruskal-Wallis) (Figure 3B and D), suggesting that cfDNA reveals an early increase in the turnover of B-cells following vaccination, which is not portrayed in circulating B-cells. We observed a similar trend in the ratio of B-cell cfDNA to B-cell counts in each individual (Figure 3C and p-value=0.016, Kruskal-Wallis, B-cell counts calculated from methylation markers in whole blood). Of note, this response was specific to B-cell-derived cfDNA; total cfDNA levels did not change over the time course of vaccination, nor did cfDNA levels of other immune cell types (Figure 3\u2014figure supplement 1). Taken together, this strengthens evidence that cfDNA changes reflect processes beyond alterations in absolute circulating cell counts in a cell-specific manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig3-v2.jpg)\n\n**Figure 3.:** Plasma, serum, and blood samples were obtained from 92 healthy donors receiving the influenza vaccination (55 females, 37 males, age range 20\u201373 years). (A) Circulating B-cells, assessed using methylation markers, are elevated on days 7 (p-value = 0.03) and 28 (p-value = 0.021) compared to baseline (Kruskal-Wallis) (N = 64). (B) B-cell-derived cfDNA markers were normalized to the levels of each individual at baseline (D0) and represented as fold change. B-cell-derived cfDNA is elevated compared to baseline on days 3 and 7 after influenza vaccination (p-value < 0.0001, Kruskal-Wallis) (N = 92). (C) The ratio of B-cell-derived cfDNA and B-cells in blood was calculated for each individual. On day 3 the ratio was significantly higher than at baseline (p-value = 0.016). Bars indicate the median and error bars indicate the confidence interval. (D) A heat map showing the change of B-cell-derived cfDNA in each individual following vaccination relative to baseline. Donors are ordered by their age. (E) Serum antibody titers were used to divide donors into responders (n = 45) who have developed antibodies following vaccination, and non-responders (n = 11) who have not. Graph shows the maximal elevation (fold change [FC] from baseline) in B-cell-derived cfDNA that was recorded for each donor. (p-value = 0.045, Mann-Whitney). (F) Receiver operating characteristic (ROC) curve for distinguishing responders and non-responders to vaccination. (G) Maximal elevation in B-cell counts in blood based on methylation markers does not differ between responders and non-responders. p-Value = 0.2, Mann-Whitney test. (H) XY scatter plot for peak B-cell cfDNA elevation as a function of age. Non-responders (colored with red) tend to be older and show reduced elevation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Plasma and blood samples were taken from volunteers (n = 92) receiving the annual influenza vaccination. Samples were obtained on the day before vaccination (D0), and at days 3,7, and 28 (D3, D7, D28). Immune methylation markers were tested on both cfDNA and whole blood. Statistical significance is calculated relative to the levels at D0. (A) B-cell-derived cfDNA markers are elevated on days 3 and 7 (p-value = 0.0002) after influenza vaccination. Circulating B-cell counts did not change significantly at the population level (p-value = 0.078). (B) Total cfDNA (p-value = 0.9). (C) White blood cells count (p-value = 0.28). (D) Neutrophil DNA in plasma (p-value = 0.65) and whole blood (p-value = 0.53), and neutrophil counts in CBC (p-value = 0.47). (E) Lymphocyte counts in CBC (p-value = 0.26). (F) T-cell DNA in plasma (p-value = 0.58) and whole blood (p-value = 0.84). (G) CD8 T-cell DNA in plasma (p-value = 0.5) and whole blood (p-value = 0.83). (H) Regulatory T-cell (Treg) DNA in plasma (p-value = 0.78) and whole blood (p-value = 0.85). (I) Monocyte DNA in plasma (p-value = 0.22) and whole blood (p-value = 0.68), and monocyte counts in CBC (p-value = 0.79). (J) Eosinophil DNA in plasma (p-value = 0.76) and whole blood (p-value = 0.81), and eosinophil counts in CBC (p-value = 0.93). (K) cfDNA measurements normalized to baseline at D0 of each individual: total cfDNA (p-value = 0.37), neutrophil cfDNA (p-value = 0.57), T-cell cfDNA (p-value = 0.69), CD8 cfDNA (p-value = 0.48), monocyte cfDNA (p-value = 0.01), and eosinophil cfDNA (p-value = 0.88) (Kruskal-wallis).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) A heat map showing the level of B-cell cfDNA(GE/ml) in each individual following vaccination. (B\u2013C) Normalized B-cell-derived cfDNA (B) and normalized circulating B-cells (C) in responders versus non-responders on days 3, 7, and 28. There are no statistically significant differences between the groups (Mann-Whitney test). Note that when the peak value of B-cell cfDNA in blood is considered (at any day after vaccination), responders have a stronger signal, as shown in main Figure 4.\n\nTo ask if the elevation of B-cell cfDNA has functional significance in the development of an immune response, we obtained information on the production of antibodies. We classified all volunteers into responders or non-responders according to the hemagglutinin antibody titer measured at 28 days post-vaccination, and asked if B-cell cfDNA or B-cell counts correlated with antibody production. Responders had a significantly higher peak elevation of B-cell cfDNA relative to their pre-vaccination baseline levels compared with non-responders (p-value = 0.044, Mann-Whitney, AUC = 0.7, p-value = 0.04) (Figure 3E and F and Figure 3\u2014figure supplement 2). Peripheral B-cell counts were not different between responders and non-responders (p-value = 0.2, Mann-Whitney) (Figure 3G). It is well established that influenza vaccination is more effective in younger individuals (Del Giudice et al., 2015; Ranjeva et al., 2019; Siegrist and Aspinall, 2009; Wagner et al., 2018). To examine the relationship between age, antibody production and cfDNA we plotted the fold elevation of B-cell cfDNA from baseline as a function of donor age, and marked responders and non-responders. Non-responders to vaccination in our cohort were all above 35 years and tended to have a minimal elevation of B-cell cfDNA above baseline even when compared to people in their age group (Figure 3H and Figure 3\u2014figure supplement 2, peak elevation of B-cell cfDNA in responders versus non-responders p-value = 0.089), suggesting that B-cell cfDNA dynamics report on a biological process independent of age. We conclude that B-cell turnover (as reflected in B-cell cfDNA but not in B-cell counts) captures an early response of the immune system to influenza vaccination that predicts a functional outcome, suggesting cell-specific cfDNA could serve as a sensitive biomarker of functional immune changes.\n\n### Selective elevation of eosinophil-derived cfDNA in patients with eosinophilic esophagitis\n\nTo test the hypothesis that immune-derived cfDNA can reveal pathological inflammatory processes in remote locations, we studied patients with eosinophilic esophagitis (EoE). EoE is a chronic inflammatory disease characterized clinically by esophageal dysfunction, and histologically by eosinophil-predominant inflammation of the esophagus (Liacouras et al., 2011). Diagnosis of EoE requires an invasive endoscopic biopsy. Notably, most patients do not show peripheral eosinophilia (Aceves et al., 2007; Dellon et al., 2009). We analyzed blindly immune cfDNA markers in plasma samples from patients with active EoE (N = 21), patients with EoE in remission (N = 24), and healthy controls (N = 14). Patients with active EoE had elevated levels of eosinophil cfDNA (mean = 115 GE/ml) compared with both healthy controls (mean = 34 GE/ml, p-value = 0.0056) and patients with inactive EoE (mean = 36 GE/ml, p-value = 0.0003, Kruskal-Wallis), while other immune cfDNA markers were not elevated in active EoE patients (Figure 4A and B and Figure 4\u2014figure supplement 1). The fraction of eosinophils in blood was not significantly elevated in EoE patients (Figure 4C and p-value=0.1, Kruskal-Wallis), consistent with restriction of eosinophil abundance to the esophagus and further supporting the idea that immune cfDNA is not a reflection of circulating immune cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig4-v2.jpg)\n\n**Figure 4.:** (A) Eosinophil-derived cfDNA in active EoE patients (n = 21) compared with healthy controls (n = 14, p-value = 0.0056) and patients with EoE in remission (inactive EoE, n = 24, p-value = 0.0003, Kruskal-Wallis). (B) Differences between immune cfDNA populations in active EoE patients and healthy controls (mean active EoE/ mean control). (C) Eosinophil DNA markers in whole blood of patients and controls (p-value = 0.1, Kruskal-Wallis test). (D) XY scatter plot for eosinophil-derived cfDNA levels versus eosinophil absolute count (ABS) in blood. Dashed lines indicate healthy maximal baseline levels of eosinophil absolute counts in blood, and eosinophil-derived cfDNA in plasma. (E) Receiver operating characteristic (ROC) curve for the diagnosis of active EoE, using eosinophil cfDNA levels in plasma of healthy controls and patients with active EoE. (F) ROC curve for discriminating active from inactive EoE patients.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Plasma was collected from three groups: healthy controls (n = 14), inactive EoE (n = 24), and active EoE (n = 21). Some of the patients had also PBMCs collected: healthy controls (n = 7), inactive EoE (n = 9), and active EoE (n = 6). (A) Total cfDNA levels were significantly higher in active EoE compared to inactive EoE (p-value = 0.01). (B) Neutrophil-derived cfDNA (p-value = 0.19) and neutrophil DNA in whole blood (p-value = 0.23) are not different in EoE. (C) Monocyte cfDNA (p-value = 0.45) and monocytes DNA in whole blood are not different in EoE (p-value = 0.75). (D) B-cell-derived cfDNA is significantly higher in active EoE compared with inactive EoE (p-value = 0.0021), but B-cell DNA in whole blood is not significantly different in EoE (p-value = 0.47). (E) T-cell-derived cfDNA is not significantly different between the groups (p-value = 0.48). However, the fraction of T-cell DNA in whole blood is significantly higher in inactive EoE compared with active EoE (p-value = 0.0454). (F) There is no significant difference in CD8-derived cfDNA (p-value = 0.4) and in CD8-derived DNA in whole blood among EoE patients (p-value = 0.6). (G) Regulatory T-cell (Treg) cfDNA levels are significantly higher in inactive EoE compared with active EoE (p-value = 0.009) while Treg DNA in whole blood is not different between patients and controls (p-value = 0.15, Kruskal-Wallis test). (H) XY scatter plot for eosinophil-derived cfDNA levels versus peak distal esophagus eosinophil count, in healthy controls and in patients with inactive or active EoE. Dashed lines indicate thresholds for negative and positive peak distal esophagus eosinophil count (HPF), and negative and positive eosinophil cfDNA.\n\nAmong a small subset of donors for which we had access to plasma, PBMC and CBC (12 active EoE, 8 inactive EoE, 3 controls), elevated eosinophil counts and elevated eosinophil cfDNA levels were observed in non-overlapping groups of EoE patients (elevated eosinophil counts in 4/12 patients with active EoE, 2/8 patients with inactive EoE, as previously reported [Dellon et al., 2009]; elevated eosinophil cfDNA in 5/12 patients with active EoE), suggesting that counts and cfDNA reflect different biological processes (Figure 4D). Finally, we generated receiver operating characteristic (ROC) curves to test our ability to identify active EoE patients. Eosinophil cfDNA could distinguish active EoE from healthy controls (Figure 4E, AUC 0.83, p-value = 0.001) and from patients with inactive disease (Figure 4F, AUC 0.84, p-value = 0.0001), with high specificity and sensitivity. These findings suggest that cell type-specific cfDNA can be used to detect clinical inflammation occurring in solid tissues that is not reflected in peripheral cell counts.\n\n### B-cell-derived cfDNA elevation in patients with B-cell lymphoma\n\nHematological malignancies occurring in remote immune organs such as the bone marrow, spleen, and lymph nodes are often undetectable in peripheral blood (Conlan et al., 1991). We reasoned that increased turnover of cancer cells in hematological malignancies would release cfDNA molecules carrying methylation marks of the normal cell type from which the tumor originated, informing on tumor presence and dynamics. In support of this idea, previous plasma methylome analysis by Sun et al., 2015, demonstrated elevated B-cell-derived cfDNA in a pregnant woman that unknowingly had B-cell lymphoma. In addition to tumor-derived cfDNA, cell type-specific cfDNA markers could reveal collateral damage incurred by the tumor to normal adjacent cells (M\u00e9n\u00e9trier-Caux et al., 2019; Ray-Coquard et al., 2009). To test this idea we examined blood samples from patients with B-cell lymphoma, a disease which often requires imaging and invasive biopsies for diagnosis and monitoring (Barrington et al., 2014; Laurent et al., 2017). We studied plasma and blood cells from 17 newly diagnosed (treatment-na\u00efve) B-cell lymphoma patients (diffuse large B-cell lymphoma, n = 6; Hodgkin\u2019s lymphoma, n = 5; follicular lymphoma, n = 6) and age-matched healthy controls (Supplementary file 1). Lymphoma patients (mean = 264.4 GE/ml) had dramatically elevated levels of B-cell-derived cfDNA compared with controls (mean = 18.3 GE/ml, p-value < 0.0001), while B-cell counts in peripheral blood were actually decreased (control; mean = 0.162, lymphoma; mean = 0.079, 109/l, p-value = 0.0059, Mann-Whitney) (Figure 5A\u2013C). We observed that the level of B-cell cfDNA accurately distinguished B-cell lymphoma patients from healthy controls, much better than did B-cell counts (cfDNA, AUC = 0.98, p-value < 0.0001; B-cell counts, AUC = 0.75, p-value = 0.006; Figure 5D and E). Total levels of cfDNA as well as the levels of other immune cfDNA markers were also elevated in lymphoma patients, consistent with reports on alterations in non-B-cells in lymphoma (Simone, 2013). We observed the strongest response in the levels of B-cell cfDNA (14.4-fold increase compared with controls), CD8 cytotoxic T-cells (10.7-fold), and Tregs (13.8-fold) (Figure 5F, Figure 5\u2014figure supplement 1). Lymphocyte counts were decreased, such that the ratio of cfDNA to cell count for each cell type was dramatically elevated in lymphoma patients (Figure 5G). In an additional cohort of lymphoma patients that were monitored before and after treatment, we observed a decrease in B-cell-derived cfDNA in most patients (n = 16, p-value = 0.0032, Kruskal-Wallis test), similarly to what have been observed in other cancers following treatment (Moss et al., 2020; Figure 5H). Initial analysis did not reveal a correlation between B-cell cfDNA and clinical outcome of treatment as defined by PET-CT (e.g. the few patients whose B-cell cfDNA were not reduced after treatment did not stand out as having worse prognosis), suggesting more complex relationships between B-cell cfDNA dynamics and clinical phenotype. To validate these findings, we performed the analysis on plasma samples from a second, independent cohort of untreated lymphoma patients and healthy controls. As in the first cohort, we observed higher levels of B-cell cfDNA in patients (lymphoma n = 10, mean = 1473 GE/ml; control n = 34, mean = 15 GE/ml, p-value < 0.0001, Mann-Whitney), accompanied by lower B-cell counts and higher T-cell cfDNA (Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig5-v2.jpg)\n\n**Figure 5.:** (A) B-cell-derived cfDNA in patients with lymphoma (n = 17) compared with age-matched healthy controls (n = 23, p-value < 0.0001, Mann-Whitney). (B) B-cell absolute counts in patients with lymphoma compared with age-matched healthy controls (p-value = 0.0059, Mann-Whitney). (C) XY scatter plot for B-cell-derived cfDNA levels versus B-cell absolute counts in blood. Dashed lines indicate healthy baseline levels of B-cell absolute counts in blood and B-cell cfDNA. (D) Receiver operating characteristic (ROC) curve for the diagnosis of lymphoma based on B-cell cfDNA levels in healthy subjects and patients with B-cell lymphoma. (E) ROC curve for diagnosis of lymphoma based on B-cell counts. (F) Levels of immune cell type-specific cfDNA in lymphoma patients and healthy controls (mean lymphoma/ mean control). (G) The ratio between the percentage of cfDNA from a given immune cell type and the percentage of cells from this population in blood according to complete blood counts (CBC), in each donor among the healthy volunteers (n = 23, blue bars) and patients with lymphoma (n = 17, red bars). Boxes represent 25th and 75th percentiles around the median, whiskers span min to max. (H) B-cell-derived cfDNA in lymphoma patients (n = 16) before and after treatment (p-value = 0.0032, Kruskal-Wallis).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Plasma and blood were collected from healthy controls (n = 22) and patients with lymphoma (n = 17). (A) Total cfDNA levels are significantly higher in lymphoma patients compared with healthy controls (p-value < 0.0001 Mann-Whitney test). (B) Neutrophil-derived cfDNA levels are higher in lymphoma patients compared with controls (p-value < 0.0001), but neutrophil DNA levels in whole blood are not different between patients and controls (p-value = 0.17). (C) Monocyte-derived cfDNA levels are elevated in lymphoma patients (p-value < 0.0001), but monocyte DNA levels in whole blood are not different between patients and controls (p-value = 0.95). (D) Eosinophil-derived cfDNA are elevated in lymphoma patients (p-value < 0.0019) but eosinophil DNA in whole blood is not elevated (p-value = 0.86). (E) T-cell-derived cfDNA levels are elevated in lymphoma (p-value = 0.003) while T-cell DNA is reduced in whole blood (p-value < 0.0001). (F) CD8 T-cell-derived cfDNA levels are elevated in lymphoma (p-value < 0.0001) while CD8 T-cell DNA is reduced in whole blood (p-value = 0.003). (G) Regulatory T-cell (Treg)-derived cfDNA levels are elevated in lymphoma patients (p-value < 0.0001), while Treg DNA in whole blood is reduced (p-value = 0.0026, Mann-Whitney test).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Blood was collected from a second cohort of donors including 34 healthy controls and 10 patients with lymphoma. (A) B-cell-derived cfDNA in an independent second cohort of patients with lymphoma (n = 10) compared with healthy controls (n = 34, p-value < 0.0001, Mann-Whitney). (B) B-cell counts (p-value = 0.03, Mann-Whitney). (C) XY scatter plot for B-cell-derived cfDNA levels versus B-cell absolute counts. Dashed lines indicate healthy baseline levels of B-cell absolute counts and B-cell cfDNA. (D) Receiver operating characteristic (ROC) curve for the diagnosis of lymphoma based on B-cell cfDNA levels in healthy subjects and patients with B-cell lymphoma. (E) ROC curve for diagnosis of lymphoma based on B-cell counts. (F) Levels of immune cell type-specific cfDNA in lymphoma patients and healthy controls (mean lymphoma/ mean control). (G) The ratio between the percentage of cfDNA from a given immune cell type and the percentage of cells from this population in blood according to CBC, in each donor of the second cohort (healthy blue bars; lymphoma red bars). Boxes represent 25th and 75th percentiles around the median, whiskers span min to max. (H) Total cfDNA levels are significantly higher in lymphoma patients compared with healthy controls (p-value = 0.0027 Mann-Whitney test).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Neutrophil-derived cfDNA levels are higher in lymphoma patients compared with controls (p-value = 0.0067), but neutrophil DNA levels in whole blood are not different between patients and controls (p-value = 0.07). (B) Monocyte-derived cfDNA levels are elevated in lymphoma patients (p-value = 0.001), but monocyte DNA levels in whole blood are not different between patients and controls (p-value = 0.71). (C) Eosinophil-derived cfDNA and whole blood are not significantly higher in lymphoma patient\u2019s versus healthy controls (p-value = 0.63; p-value = 0.28). (D) T-cell-derived cfDNA levels are elevated in lymphoma (p-value = 0.0001) while T-cell DNA is reduced in whole blood (p-value = 0.036). (E) CD8 T-cell-derived cfDNA levels are elevated in lymphoma (p-value < 0.0001) while CD8 T-cell DNA in whole blood is not different between patients and controls (p-value = 0.37). (F) Regulatory T-cell (Treg)-derived cfDNA levels are elevated in lymphoma patients (p-value = 0.0001) while Treg DNA is not significantly different in whole blood (p-value = 0.41, Mann-Whitney test).\n\nThese findings indicate that lymphoma growth causes an elevation in the levels of B-cell cfDNA. In addition, a massive loss of normal T-cells leads to extensive release of cfDNA, potentially reflecting an immune response against the tumor or collateral damage. Taken together across all three conditions (influenza vaccination, EoE, and lymphoma), immune cell dynamics in remote locations that are not evident in peripheral blood are detectable via cell-specific methylation markers in plasma.\n\n## Discussion\n\nWe describe a novel method for monitoring turnover dynamics of the human immune system, using cell type-specific cfDNA methylation markers. The assay opens a window into aspects of human immune and inflammation biology that are not reflected in blood cell counts or gene expression patterns. Specifically, the concentration of cfDNA derived from a given immune cell type is a function of the total number of cells of that type (circulating and remote pools, combined), the lifespan of this population, determinants of cfDNA release (e.g. efficiency of phagocytosis) and determinants of cfDNA clearance from plasma (e.g. liver uptake). While many of these parameters are typically unknown, in some cases cfDNA dynamics allow to infer a change in cell turnover or in total cell number outside systemic circulation. For example, when analyzing cfDNA from different cell types in the same sample, it is fair to assume that they were subject to the same clearance kinetics.\n\nWe propose that a deeper qualitative and quantitative understanding of the fundamental rules governing cfDNA release and clearance will enrich our ability to relate liquid biopsy data to physiological processes taking place in vivo.\n\nSince the method relies on highly stable methylation marks of cell identity (Dor and Cedar, 2018), it is expected to be universal, with the same markers allowing to accurately monitor immune cell dynamics in all individuals. While our current assay uses a panel of 17 methylation markers specific to seven key immune cell types, future improvements should increase the resolution of analysis to target essentially all immune cell types. For example, identification of methylation markers specific to memory B-cells, plasma cells, T-cell subtypes, and tissue-specific macrophages is likely feasible, and could greatly increase the information gained from immune cfDNA analysis. We note however that dynamic cellular states may involve changes in gene expression that do not involve reprogramming of DNA methylation patterns, representing a limitation of the approach. In other words, methylation markers can inform on the turnover dynamics of cell types, not cell states. Analysis of more dynamic aspects of the epigenome, such as the profile of histone marks on circulating nucleosomes (Sadeh et al., 2021), may allow inference of transient gene expression programs in cells prior to death and release of cfDNA.\n\nOur cross-sectional and longitudinal analysis of immune cfDNA in healthy individuals begins to define the normal range among the population, an essential step toward using the assay for identifying deviations from health. More extensive characterization of immune cell cfDNA in healthy individuals is necessary to interpret trends that were revealed by our healthy cohorts. For example, we noticed lower levels of neutrophil cfDNA in adult females compared with adult males, suggesting that neutrophils in females live longer; we speculate that such differences in lifespan explain why women have a higher steady-state neutrophil count (Bain and England, 1975) (and data not shown). Additional observations of healthy immune cfDNA dynamics that merit further investigation regard age-related changes, such as elevated monocyte cfDNA and reduced lymphocyte cfDNA in individuals older than 60. Finally, the intra- and inter-individual variation in immune cfDNA levels shows that unlike blood cell counts, cfDNA levels vary wildly, apparently with no regulatory mechanism that attracts them to a certain set point typical to an individual. We propose that varying cfDNA levels reflect the action of regulated cell death as a homeostatic mechanism by which the healthy body maintains cell numbers within a desired range (model, Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/70520/elife-70520-fig6-v2.jpg)\n\n**Figure 6.:** Intra-individual variance of immune cell count (blue) and immune-derived cell-free DNA (cfDNA) (red) in multiple time points. Our findings suggest that while immune cell counts are stable and typical within an individual, immune cell cfDNA levels vary greatly, reflecting changes in cell turnover that help maintain the cell count set point.\n\nThis model has some practical implications. For diagnostic applications of immune cfDNA, one should use the healthy population baseline levels of each methylation marker. Deviation from the normal range would indicate abnormality that requires attention (similar to the situation with blood counts). Our study suggests that fluctuations of specific cfDNA markers within norm levels are not indicative of pathology, but are rather part of a normal homeostatic process.\n\nBeyond the healthy baseline, we studied immune cfDNA dynamics in three settings of immune system perturbation. First, post influenza vaccination, we identified an early elevation of B-cell cfDNA, preceding an increase in circulating B-cell counts and correlating to the effectiveness of antibody production. The correlation was statistically significant and independent of the known age-related risk of non-responsiveness. We propose that elevated B-cell turnover (and elevated B-cell cfDNA as its readout) reflects early stages in the successful response of B-cells to the vaccine, including the process of affinity maturation whereby large numbers of B-cells are generated and eliminated within lymph nodes as a result of insufficient binding to the target epitope. More work is needed to accurately define the population of B-cells that release cfDNA after vaccination, and to understand the physiological driver of this response. Practical applications, if the association between B-cell cfDNA and vaccination outcome proves robust, may include an early personalized indication for the success of vaccination. Second, we examined immune cfDNA dynamics in EoE, a model for an inflammatory disease in which one tissue is damaged by infiltration of a specific immune cell population, while leaving a minimal mark on peripheral cell counts. cfDNA analysis revealed the selective elevation of eosinophil turnover in active EoE, in some cases even when circulating eosinophil cell counts are unchanged. Larger scale studies are warranted to determine if eosinophil cfDNA can be a sufficiently sensitive and specific biomarker for assisting the clinical diagnosis and monitoring of EoE, ultimately relieving the need for invasive biopsies of the esophagus. Lastly, cfDNA dynamics in patients with B-cell lymphoma revealed the impact of disease on the turnover of B-cells (consistent with a previous study by Sun et al., 2015), and the reflection in B-cell cfDNA of the response to treatment. This analysis also revealed the involvement of turnover of other immune cell types in lymphoma. As with EoE, cfDNA in lymphoma provides a systemic biomarker of immune processes taking place in remote locations. However in lymphoma, these processes include both tumor dynamics and host responses \u2013 either bystander effects (collateral damage) or an immune response to the tumor. Potential uses of immune methylation markers in this field include early diagnosis of hematological malignancies, detection of minimal residual disease, and monitoring response to treatment (although our findings suggest that the latter may involve complex relationships between B-cell cfDNA and clinical response). Beyond hematological malignancies, immune-derived cfDNA dynamics can inform on the response to immune checkpoint inhibitors.\n\nIt is important to put the novel assay of immune cfDNA in the context of other emerging immune monitoring tools. In conditions that involve activation of the adaptive immune system, sequencing of the B- and T-cell receptor repertoire can be highly informative regarding the nature of the involved B- and T-cell clones, and the nature of the specific target epitopes. An important current limitation of immune repertoire analysis is that it requires large genomic fragments, which can only be derived from whole cells. This precludes cfDNA-based analysis, and limits access to T- and B-cell dynamics taking place in remote locations. Expression profiling of leukocytes, using single cell RNA sequencing and CyTOF, is also emerging as a powerful tool for understanding immune cell dynamics, revealing rich information about the transcriptome of circulating cells (Bucasas et al., 2011; Jiang et al., 2013; Kurtz et al., 2015; Voigt et al., 2018; Meng et al., 2017). We propose that both T/B repertoire analysis and expression profiling can be complemented by cfDNA profiling, which will provide non-overlapping information about immune cell turnover (and potentially also gene expression patterns associated with cell death) (Sadeh et al., 2021) in remote locations.\n\nIn summary, analysis of specific immune cell methylation markers in cfDNA allows for monitoring of human immune cell dynamics, providing temporal and spatial information not accessible via circulating cell counts. We propose that this novel tool can illuminate healthy and pathological immune processes, including non-immune diseases having an inflammatory component such as cancer, rejection of transplanted organs, metabolic and neurodegenerative disease.\n\n## Materials and methods\n\n### Subject enrollment\n\nThis study was conducted according to protocols approved by the Institutional Review Board at each study site, with procedures performed in accordance with the Declaration of Helsinki. Blood and tissue samples were obtained from donors who have provided written informed consent. When using material from deceased organ donor those with legal authority were consented. Subject characteristics are presented in Supplementary file 1.\n\n### Healthy controls\n\nA total of 234 healthy volunteers (56% females, 44% males, age range 1\u201385 years) participated in the study as unpaid healthy controls. All denied having any chronic or acute disease.\n\n### Temporal experiment cohort\n\nFifteen healthy volunteers gave blood each week for 6 weeks (9 females, 6 males, age 21-68 years).\n\n### Vaccination cohort and determination of anti-hemagglutinin antibody titers\n\nNinety-two healthy volunteers that received the annual influenza vaccination (55 females, 37 males, age range 20-73 years) gave blood samples a day before vaccination, and after 3, 7, and 28 days (\u00b12 days).\n\nThe anti-hemagglutinin antibody titers were determined using hemagglutination inhibition (HI) assay. Serum samples obtained from vaccinated and non-vaccinated individuals were stored at \u221220\u00b0C until tested treated with receptor destroying enzyme (RDE) (Sigma C8772, diluted 1:4), for 16 hr prior to heat inactivation (30 min, 56\u00b0C). Absorption with erythrocytes was performed to remove non-specific hemagglutination, in accordance with a modified WHO protocol (Rowe et al., 1999). Serial 2-fold dilutions (1:20\u20131:2560) of sera in 25 \u03bcl PBS were prepared in V-shaped well plates, and an equal volume of four hemagglutinin units of viral antigen was added. The mixture was then incubated at room temperature for 1 hr. Fifty microliters of 0.5% chicken erythrocytes suspended in PBS, were added to the wells, and mixed by shaking the plates on a mechanical vibrator. Agglutination patterns were read after 30 min and the HI titer was defined as the reciprocal of the last dilution of serum that fully inhibited hemagglutination. The cut-off value selected for a positive result was 1:40. The influenza antigens for 2018\u201319 and 2019\u201320 winter seasons were supplied by the WHO.\n\nResponders were defined as people who did not have at baseline antibodies against at least one of the four strains (2018\u201319: H1N1, H80, YAMA, VIC; 2019\u201320: H1N1, YAMA, VIC, H3; no antibodies defined as influenza strain antigen titer <40) and developed antibodies after vaccination (influenza strain antigen titer >40). One person had antibodies against all strains at baseline and was excluded.\n\n### EoE cohort\n\nTwenty-one active EoE patients, 24 EoE patients in remission, and 14 controls were recruited to the study at Cincinnati Children\u2019s Hospital. Diagnosis of EoE patients was made based on an histological biopsy taken from the distal esophageal tissue.\n\n### Lymphoma cohort\n\nTwenty-seven newly diagnosed lymphoma patients that came for treatment in the hematological daycare unit in Hadassah Medical Center were recruited to the study in two cohorts (17 patients in cohort #1, 10 patients in cohort #2). Diagnosis was made by PET-CT. In addition, we recruited 16 newly diagnosed lymphoma patients who were monitored before and after receiving treatment. Response to treatment was assessed based on PET-CT.\n\n### Sample collection and processing\n\nBlood samples were collected by routine venipuncture in 10 ml EDTA Vacutainer tubes or Streck blood collection tubes and stored at room temperature for up to 4 hr or 5 days, respectively. Tubes were centrifuged at 1500\u00d7 g for 10 min at 4\u00b0C (EDTA tubes) or at room temperature (Streck tubes). The supernatant was transferred to a fresh 15 ml conical tube without disturbing the cellular layer and centrifuged again for 10 min at 3000\u00d7 g. The supernatant was collected and stored at \u201380\u00b0C. We note that immune cfDNA analysis is particularly sensitive to conditions of plasma isolation, given the potential confounding effects of DNA released from lysed leukocytes. Our experiments indicated that the isolation protocol described above is optimal. While the speed of second centrifugation (3000 \u00d7 g or higher) did not have a major effect of yield and purity, consistent with previous work (Risberg et al., 2018; Ungerer et al., 2020), it was important to minimize the time spent between blood drawing and centrifugation when using EDTA tubes. cfDNA was extracted from 2 to 4 ml of plasma using the QIAsymphony liquid handling robot (Qiagen). cfDNA concentration was determined using Qubit double-strand molecular probes kit (Invitrogen) according to the manufacturer\u2019s instructions.\n\nDNA derived from all samples was treated with bisulfite using EZ DNA Methylation-Gold (Zymo Research), according to the manufacturer\u2019s instructions, and eluted in 24 \u03bcl elution buffer.\n\n### Immune cell and tissue isolation and processing\n\nPBMCs from a healthy individual were isolated using ficoll-paque density gradient (Miltenyi Biotec). CD4+ T-cells, CD8+ T-cells, CD19+ B-cells, and Nk CD56+ cells were positively selected using magnetic MicroBeads. Monocytes were negatively selected (Miltenyi Biotec) as instructed by the manufacturer. Tregs (CD4+, CD25+, FOXP3+, 28.5% purity) were purchased from Astarte biologics. Neutrophils and eosinophils were isolated based on a previously published protocol (Hartman et al., 2001; Sagiv et al., 2016). Genomic DNA from other tissues was purchased as previously described (Lehmann-Werman et al., 2016; Zemmour et al., 2018).\n\n### Selection of immune cell methylation markers\n\nImmune cell-specific methylation candidate biomarkers were selected using comparative methylome analysis, based on publicly available datasets (Moss et al., 2020; Moss et al., 2018), to identify loci having more than five CpG sites within 150 bp, with an average methylation value for a specific cytosine (present on Illumina 450K arrays) of less than 0.3 in the specific immune cell type and greater than 0.8 in over 90% of tissues and other immune cells. As noted above, such putative marker loci are far more abundant in the genome than loci that are methylated in the cell type of interest and unmethylated elsewhere. From our previously described atlas of human tissue-specific methylomes (Lehmann-Werman et al., 2016; Moss et al., 2018), we identified ~50 CpG sites that are unmethylated in specific immune cells and methylated in all other major immune cells and tissues. We selected arbitrarily two to three of these sites for neutrophils (i.e. NEUT1, NEUT2, NEUT3), monocytes (i.e. MONO1, MONO2), eosinophils (i.e. EOSI1, EOSI2, EOSI3), B-cells (i.e. B-CELL1, B-CELL2), T-cells (i.e. T-CELL1, T-CELL2), CD8 T-cells (CD8A, CD8B), Tregs (TREG1, TREG2), and designed primers to amplify ~100 bp fragments surrounding them using the multiplex two-step PCR amplification method (Neiman et al., 2020). Marker coordinates and primer sequences are provided in Supplementary file 2.\n\nThe validation of markers was done using DNA extracted from different cells and tissues, and the methylation status of the CpG block was assessed. Some markers were more sensitive if one CpG site was allowed to be methylated differently than other CpGs in the block. as indicated in Supplementary file 2.\n\n### PCR\n\nTo efficiently amplify and sequence multiple targets from bisulfite-treated cfDNA, we used a two-step multiplexed PCR protocol, as described recently (Neiman et al., 2020). In the first step, up to 17 primer pairs were used in one PCR reaction to amplify regions of interest from bisulfite-treated DNA, independent of methylation status. Primers were 18\u201330 base pairs (bp) with primer melting temperature ranging from 58\u00b0C to 62\u00b0C. To maximize amplification efficiency and minimize primer interference, the primers were designed with additional 25 bp adaptors comprising Illumina TruSeq Universal Adaptors without index tags. All primers were mixed in the same reaction tube. For each sample, the PCR was prepared using the QIAGEN Multiplex PCR Kit according to manufacturer\u2019s instructions with 7 \u03bcl of bisulfite-treated cfDNA. Reaction conditions for the first round of PCR were: 95\u00b0C for 15 min, followed by 30 cycles of 95\u00b0C for 30 s, 57\u00b0C for 3 min and 72\u00b0C for 1.5 min, followed by 10 min at 68\u00b0C.\n\nIn the second PCR step, the products of the first PCR were treated with Exonuclease I (ThermoScientific) for primer removal according to the manufacturer\u2019s instructions. Cleaned PCR products were amplified using one unique TruSeq Universal Adaptor primer pair per sample to add a unique index barcode to enable sample pooling for multiplex Illumina sequencing. The PCR was prepared using 2\u00d7 PCRBIO HS Taq Mix Red Kit (PCR Biosystems) according to manufacturer\u2019s instructions. Reaction conditions for the second round of PCR were: 95\u00b0C for 2 min, followed by 15 cycles of 95\u00b0C for 30 s, 59\u00b0C for 1.5 min, 72\u00b0C for 30 s, followed by 10 min at 72\u00b0C. The PCR products were then pooled, run on 3% agarose gels with ethidium bromide staining, and extracted by Zymo GEL Recovery kit.\n\n### NGS and analysis\n\nPooled PCR products were subjected to multiplex NGS using the MiSeq Reagent Kit v2 (Illumina) or the NextSeq 500/550 v2 Reagent Kit (Illumina). Sequenced reads were separated by barcode, aligned to the target sequence, and analyzed using custom scripts written and implemented in R. Reads were quality filtered based on Illumina quality scores. Reads were identified as having at least 80% similarity to the target sequences and containing all the expected CpGs. CpGs were considered methylated if \u2018CG\u2019 was read and unmethylated if \u2018TG\u2019 was read. Proper bisulfite conversion was assessed by analyzing methylation of non-CpG cytosines. We then determined the fraction of molecules in which all CpG sites were unmethylated. The fraction obtained was multiplied by the concentration of cfDNA measured in each sample, to obtain the concentration of tissue-specific cfDNA from each donor. Given that the mass of a haploid human genome is 3.3 pg, the concentration of cfDNA could be converted from units of ng/ml to haploid GE/ml by multiplying by a factor of 303.\n\nMethylation markers were calibrated compared to CBC to give a more accurate quantitative number, using linear regression. When necessary, methylation values were multiplied by a coefficient number derived from our spike-in calibration curves, to reflect the actual concentration of DNA from the relevant cell type. The fraction of neutrophil-derived cfDNA was obtained by dividing methylation fraction by 0.69.\n\nOur entire dataset of PCR sequencing reactions used in this study is available upon request. The computational pipeline used to interpret sequence reads as well as a representative set of data (sequences that gave rise to Figure 1C) were uploaded to GitHub (https://github.com/Joshmoss11/btseq; swh:1:rev:efc75ddd347c20392cf0a034706a7b5b6090be75, Moss, 2021) .\n\n### Deconvolution\n\nWe obtained 46 WGBS datasets from 23 healthy adult individuals. For each of these donors, we extracted genomic DNA from white blood cells (WBC) and cfDNA from plasma, and performed WGBS at an average depth of 85\u00d7. Methylation data was uploaded to GEO (Accession number GSE186888). WGBS data were converted to an array-like format by calculating the average methylation at 7890 CpGs from the Moss et al. methylation atlas (Moss et al., 2018). We then ran the deconvolution algorithm (Loyfer, 2018, https://github.com/nloyfer/meth_atlas) for each WBC and cfDNA sample, to assess the relative presence of each blood cell type.\n\n### Statistics\n\nTo assess the correlation between groups, we used Pearson\u2019s correlation test. To determine the significance of differences between groups we used a non-parametric two-tailed Mann-Whitney test. For multiple comparisons, a Kruskal-Wallis multiple comparison test was used. p-Value was considered significant when < 0.05. To detect outliers in the healthy population we applied a multiple outlier detection ROUT-test (Q = 5%) (Motulsky and Brown, 2006). Samples that were detected as outliers were excluded. All statistical analyses were performed with GraphPad Prism 8.4.3.\n\n### Intra-individual and inter-individual variation\n\nIntra-individual coefficient of variation for each immune cell type in CBC, whole blood, and cfDNA was calculated for each person across six different time points. The inter-individual coefficient of variation for each immune cell type was calculated for each time point across all individuals. The average of the intra-individual coefficient of variation was calculated. To prevent a bias due to difference in sample size (intra-individual variation, six time points; inter-individual variation, 15 individuals), we used R (version3.6.1) to sample all different combinations of a randomly selected six-person group and calculated the inter-individual coefficient of variation. Coefficients of variation of the different combinations were averaged.\n",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "d718d3ae-8a7e-4d75-bc40-1103fd528f54",
+      "submission_id": "415070fc-2281-40b7-beb3-57cff989df4a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Iwijn De Vlaminck, The Chinese University of Hong Kong Hong Kong\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.70520.sa1](https://doi.org/10.7554/eLife.70520.sa1)\n\nOur editorial process produces two outputs: (i) public reviews designed to be posted alongside the preprint for the benefit of readers; (ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Remote immune processes revealed by immune-derived circulating cell-free DNA\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, one of whom is a member of our board of Reviewing Editors, and the evaluation has been overseen by Y M Dennis Lo as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Both reviewers indicated that the primary data and analysis routines are not accessible. Please share all data and analysis routines in a public repository.\n\n2) Please address the question raised by R3 regarding the possibility/need to distinguish B cell subtypes with new experiments, new analysis or, alternatively, additional discussion.\n\nReviewer #1 (Recommendations for the authors):\n\nThis is an interesting manuscript in which Fox-Fisher et al., report a novel method for minimally invasive monitoring of the dynamics of the human immune system, based on profiling of cell-type specific cell-free DNA methylation marks. This method implements targeted DNA sequencing of a small panel of cell-type specific CpG markers and has the potential to be useful for the monitoring of a wide range immune-related diseases. The authors have tested the utility of this assay in three settings: influenza vaccination, Eosinophilic Esophagitis and B cell lymphoma. The experiments are well described and well powered, and the results are compelling, and I am happy to recommend this paper for publication in eLife after the following points are addressed:\n\n1. I appreciate that the authors shared PCR primer sequences. To ensure reproducibility it is important that all sequencing data, as well as analysis scripts or software are shared in a public resource.\n\n2. The presentation of the data in some of the figures can be improved. The cell type labels in panels A, B and C are not consistent. Please indicate the number of samples evaluated in all box, bar and scatter plots (Figures 2D, 3A-C, 3E-F, 4A-C, 5A-B, 5G-H).\n\n3. The observation of significant immune cfDNA dynamics and intra- and interindividual variation is interesting, and the schematic of Figure 6 is helpful. Some discussion of the challenges that this variability brings along for diagnostic applications would be helpful, and it would be great if the authors can suggest solutions.\n\n4. The statistical analysis of the dynamics of B-cell cfDNA for vaccine responders vs non-responders can be improved. How were responders and non-responders selected and how sensitive is the cfDNA analysis to the selection criteria used? The differences observed for the two groups are relatively minor (certainly not striking as claimed in the discussion, please tone this down), and may be largely due to small number of samples from responders that are analyzed?\n\n5. The ROC analysis of the performance of eosinophil cfDNA to discriminate patients with active EoE and healthy controls is helpful. Please provide a similar analysis of the performance of your assay to discriminate inactive EoE from no disease, and to discriminate active and inactive EoE.\n\n6. The lymphoma patients are newly diagnosed and treatment na\u00efve, which is appropriate because treatment would likely lead to a greatly increased burden of B cell cfDNA. Do you have access to samples collected during treatment? It would be interesting to evaluate the possibility to monitor treatment responses and disease recurrence.\n\n7. I would like to hear your thoughts (in the Discussion section), for ways to disentangle the different parameters that define the amount of cfDNA from specific immune cell types in blood (turnover rate, total number of cells, determinants of clearance and release).\n\n8. The Discussion section would benefit from broader and more deeper discussion of other immune monitoring tools that have been reported or that are used in clinical practice, and the relative merit of the immune cfDNA assay the authors describe. For example, immune repertoire analyses of B and T cell compartments have been used to evaluate vaccine response (see the work by Jiang and Quake, and Vollmers and Quake, for example), and to monitor lymphoma. Other assays to monitor inflammation marks, or that use gene expression profiling are in use, or have been used.\n\nReviewer #2 (Recommendations for the authors):\n\n1. The authors should investigate the subtypes of B cells and redo the analysis. In addition As reported by the authors and others (Lam et al., Clin Chem 2017, Moss et al., Nat Commun 2018), blood cells of erythroid lineage also contribute quite a lot in cfDNA, therefore the authors need to validate the specificity of their CpG loci in erythroblasts.\n\n2. The authors clearly stated that they only work on hypo-methylated CpGs, why? I understand that biologically there may not be tissue-specific hyper-methylated CpGs, but the author need to explain this point.\n\n3. Elevation of cfDNA from B-cells in lymphoma has been reported before (Sun et al., PNAS 2015), the authors need to mention such information.\n\n4. Figure 1B is very unclear, what do the values represent? Do they denote the proportions in the mixture?\n\n5. The presentation of Figure 1C is not easy to follow. A barplot with cumulative frequency for all cell types could be better.\n\n6. The authors miss citations of many important prior works in their citation. This needs to be improved in a revision.\n\n7. The blood processing procedure is not as commonly used, especially that the author uses only 3,000g for the 2nd step of centrifusion, while the common approach uses ~16,000g, so I wonder is there any contaminations in cfDNA? Which could significantly affect the result as this work specifically look at immune cells.\n\n8. The data could only partially support the aims and conclusions, and the work is in principle-of-concept stage that needs further enhancements and validations.\n\n9. I could not find any statement on data release in the article. Please kindly add this in a revised manuscript.\n",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d141e966-e438-468b-8e04-34590044dc1f",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C1",
+      "claim": "Blood cell counts often fail to report on immune processes occurring in remote tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood cell counts often fail to report on immune processes occurring in remote tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a limitation of current methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "47fb585d-8749-451b-8ba0-29d4d431e675",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C2",
+      "claim": "Immune cell type-specific methylation patterns in circulating cell-free DNA (cfDNA) can be used for studying human immune cell dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use immune cell type-specific methylation patterns in circulating cell-free DNA (cfDNA) for studying human immune cell dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main methodological approach described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "7de648f3-e682-41a8-b438-d4494faee2ea",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C3",
+      "claim": "Immune cfDNA levels had no individual steady state as opposed to blood cell counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune cfDNA levels had no individual steady state as opposed to blood cell counts, suggesting that cfDNA concentration reflects adjustment of cell survival to maintain homeostatic cell numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "5d40e854-f7e3-4d68-b850-3ccd82287692",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C4",
+      "claim": "cfDNA concentration reflects adjustment of cell survival to maintain homeostatic cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune cfDNA levels had no individual steady state as opposed to blood cell counts, suggesting that cfDNA concentration reflects adjustment of cell survival to maintain homeostatic cell numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed lack of steady state in immune cfDNA levels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "d6bece58-8c72-4508-899e-0412cdd54002",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C5",
+      "claim": "Following influenza vaccination (N = 92), B-cell-derived cfDNA levels increased prior to elevated B-cell counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Following influenza vaccination (N = 92), B-cell-derived cfDNA levels increased prior to elevated B-cell counts and predicted efficacy of antibody production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the vaccination study reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "602a58c0-4e88-4e71-88fc-c1e5c8fb1ecc",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C6",
+      "claim": "B-cell-derived cfDNA levels predicted efficacy of antibody production following influenza vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Following influenza vaccination (N = 92), B-cell-derived cfDNA levels increased prior to elevated B-cell counts and predicted efficacy of antibody production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract and supported by data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "5f8dc285-e3b3-4654-96c5-2e088da8e4ff",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C7",
+      "claim": "Patients with eosinophilic esophagitis (N = 21) showed selective elevation of eosinophil cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with eosinophilic esophagitis (N = 21) and B-cell lymphoma (N = 27) showed selective elevation of eosinophil and B-cell cfDNA, respectively, which were undetectable by cell counts in blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the EoE study reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "43479c32-d397-48cd-898e-1da42fa83cd0",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C8",
+      "claim": "Patients with B-cell lymphoma (N = 27) showed selective elevation of B-cell cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with eosinophilic esophagitis (N = 21) and B-cell lymphoma (N = 27) showed selective elevation of eosinophil and B-cell cfDNA, respectively, which were undetectable by cell counts in blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the lymphoma study reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b04d6d68-9686-4039-98fa-fca084b7593e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C9",
+      "claim": "Selective elevation of eosinophil and B-cell cfDNA in EoE and lymphoma patients were undetectable by cell counts in blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with eosinophilic esophagitis (N = 21) and B-cell lymphoma (N = 27) showed selective elevation of eosinophil and B-cell cfDNA, respectively, which were undetectable by cell counts in blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates the advantage of cfDNA analysis over blood cell counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b03861f8-a371-4c02-9318-19468678134a",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C10",
+      "claim": "A major limitation of circulating immune cell analysis is that it often fails to report on immune processes taking place in remote locations.",
+      "claim_type": "EXPLICIT",
+      "source": "A major limitation of circulating immune cell analysis is that it often fails to report on immune processes taking place in remote locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "60a09d7d-5ff4-444a-950b-d4944ee636ee",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C11",
+      "claim": "CRP and similar proteins reflect the presence of tissue inflammation but are highly non-specific with regard to tissue location and the nature of inflammatory process.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, CRP and similar proteins do reflect the presence of tissue inflammation but are highly non-specific with regard to tissue location and the nature of inflammatory process (Gabay and Kushner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current biomarkers, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "656070c3-a42b-439e-bcd7-091fbf01cae9",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C12",
+      "claim": "Dying cells release nucleosome-size fragments of cell-free DNA (cfDNA), which travel transiently in blood before being cleared by the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Dying cells release nucleosome-size fragments of cell-free DNA (cfDNA), which travel transiently in blood before being cleared by the liver (Heitzer et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cfDNA biology, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "10be9c40-5ada-48c9-ba8f-f62d25bb39a9",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C13",
+      "claim": "Liquid biopsies using cfDNA have been applied to reveal the presence of mutations in a fetus as reflected in maternal cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid biopsies using cfDNA have been applied to reveal the presence of mutations in a fetus as reflected in maternal cfDNA (Bianchi et al., 2014; Fan et al., 2012; Lo et al., 1997), identify and monitor tumor dynamics via the presence of somatic mutations in plasma (Wan et al., 2017), and detect the rejection of transplanted organs when the levels of donor-derived DNA markers are elevated in recipient plasma (De Vlaminck et al., 2014; De Vlaminck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established application of cfDNA analysis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "aa0a1ecf-0f8d-4976-bfaa-e98314a78e7d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C14",
+      "claim": "cfDNA analysis has been used to identify and monitor tumor dynamics via the presence of somatic mutations in plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid biopsies using cfDNA have been applied to reveal the presence of mutations in a fetus as reflected in maternal cfDNA (Bianchi et al., 2014; Fan et al., 2012; Lo et al., 1997), identify and monitor tumor dynamics via the presence of somatic mutations in plasma (Wan et al., 2017), and detect the rejection of transplanted organs when the levels of donor-derived DNA markers are elevated in recipient plasma (De Vlaminck et al., 2014; De Vlaminck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established application of cfDNA analysis, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "aa54e828-f9b8-4db4-9d8e-7b3109ca83a7",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C15",
+      "claim": "cfDNA analysis has been used to detect the rejection of transplanted organs when the levels of donor-derived DNA markers are elevated in recipient plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid biopsies using cfDNA have been applied to reveal the presence of mutations in a fetus as reflected in maternal cfDNA (Bianchi et al., 2014; Fan et al., 2012; Lo et al., 1997), identify and monitor tumor dynamics via the presence of somatic mutations in plasma (Wan et al., 2017), and detect the rejection of transplanted organs when the levels of donor-derived DNA markers are elevated in recipient plasma (De Vlaminck et al., 2014; De Vlaminck et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established application of cfDNA analysis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "5f74cf64-da9c-432b-8fff-297f42e3c472",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C16",
+      "claim": "Tissue-specific DNA methylation patterns can be used to determine the tissue origins of cfDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, we and others have shown that tissue-specific DNA methylation patterns can be used to determine the tissue origins of cfDNA, allowing to infer cell death dynamics in health and disease even when no genetic differences exist between the host and the tissue of interest (Cheng et al., 2019; Lehmann-Werman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key methodological foundation for the study, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "67499286-f7e1-4025-b9df-e3529950bfef",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C17",
+      "claim": "The majority of cfDNA in healthy individuals originates in hematopoietic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of cfDNA in healthy individuals is known to originate in hematopoietic cells (Lehmann-Werman et al., 2016; Moss et al., 2018; Sun et al., 2015), it has often been regarded as background noise, against which one may look for rare cfDNA molecules released from a solid tissue of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cfDNA composition, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b9927ce8-bb6f-450b-82ef-643faa743d2d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C18",
+      "claim": "Dozens of uniquely hypomethylated CpG sites were identified for most immune cell types examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified dozens of uniquely hypomethylated CpG sites for most cell types examined, qualifying these as biomarkers for DNA derived from a given cell type (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the marker identification analysis, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "deea6a30-bc2b-455c-8a20-cef6c8b609de",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C19",
+      "claim": "17 different CpG sites were selected whose combined methylation status could distinguish the DNA of seven major immune cell types: neutrophils, eosinophils, monocytes, B-cells, CD3 T-cells, CD8 cytotoxic T-cells, and regulatory T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this in silico comparative analysis, we selected for further work 17 different CpG sites, whose combined methylation status could distinguish the DNA of seven major immune cell types: neutrophils, eosinophils, monocytes, B-cells, CD3 T-cells, CD8 cytotoxic T-cells, and regulatory T-cells (Tregs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the marker panel developed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "669e3fcc-67d1-4400-b036-77512e405366",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C20",
+      "claim": "The methylation marker cocktail can quantitatively detect the presence of DNA from specific immune cell types even when blood DNA was diluted 10- to 20-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The markers quantitatively detected the presence of DNA from specific immune cell types even when blood DNA was diluted 10- to 20-fold (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from spike-in experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "e05072ef-8f8e-4934-b7a6-fb8b374d045a",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C21",
+      "claim": "A strong correlation was observed between assessments of specific cell fractions using CBC and DNA methylation patterns (Pearson's correlations; r = 0.67\u20130.83, p-value < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the CBC to DNA methylation pattern, we observed a strong correlation between assessments of specific cell fractions in the two methods (Pearson's correlations; r = 0.67\u20130.83, p-value < 0.0001, Figure 2A and Figure 2\u2014figure supplement 1), supporting validity of the methylation assay for identifying fractions of DNA derived from specific immune cell types, consistent with previous findings (Baron et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation finding comparing methylation markers to CBC, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "3ce0cb59-4e8d-4c7f-bea9-665dd945a421",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C22",
+      "claim": "The proportion of cfDNA from specific immune cell types did not correlate well with the proportion of the same markers in circulating blood cells and with CBC (Pearson's correlations; r = 0.14\u20130.53).",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparing cfDNA methylation markers in plasma to blood DNA methylation markers and CBC, we observed that proportion of cfDNA from specific immune cell types did not correlate with the proportion of the same markers in circulating blood cells and with CBC (Pearson's correlations; r = 0.14\u20130.53, Figure 2B\u2013C and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding showing cfDNA differs from blood cell proportions, shown in Figures 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "156a8210-d217-4279-9f33-061a0d1e9704",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C23",
+      "claim": "Immune cfDNA levels are the result of biological processes beyond immune cell counts.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that immune cfDNA levels are the result of biological processes beyond immune cell counts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lack of correlation between cfDNA and cell counts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "af6f40c6-1bf6-4759-a537-00132e9f369d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C24",
+      "claim": "The fraction of lymphocyte cfDNA in plasma was always smaller than the fraction of lymphocyte DNA in circulating blood cells or the fraction of lymphocytes in CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the fraction of lymphocyte cfDNA in plasma was always smaller than the fraction of lymphocyte DNA in circulating blood cells or the fraction of lymphocytes in CBC (Figure 2B\u2013C and Figure 2\u2014figure supplement 1), in agreement with the long half-life of lymphocytes compared with other blood cell types (Macallan et al., 2005; Michie et al., 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is consistent with the long lifespan of lymphocytes, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "5f24a7f3-4a80-4950-907d-17fb1cb860c6",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C25",
+      "claim": "The fraction of monocyte cfDNA was larger than the fraction of monocyte DNA in genomic DNA from whole blood or the fraction of monocytes in CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the fraction of monocyte cfDNA was larger than the fraction of monocyte DNA in genomic DNA from whole blood or the fraction of monocytes in CBC (Figure 2B\u2013C), consistent with the shorter half-life of monocytes (Patel et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is consistent with the short lifespan of monocytes, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "0694448d-8bd1-4944-a2cf-dc007c68e547",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C26",
+      "claim": "Deconvolution of WGBS data revealed that lymphocyte cfDNA was under-represented relative to the abundance of DNA from these cells in blood (p-value = 0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis, based on genome-wide methylation patterns, also revealed that lymphocyte and monocyte cfDNA was under- and over-represented, respectively, relative to the abundance of DNA from these cells in blood (lymphocytes, p-value = 0.002; monocytes, p-value = 0.0005, Kruskal-Wallis) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from WGBS deconvolution analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "62d77650-9916-4593-a866-d2baa885dc6c",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C27",
+      "claim": "Deconvolution of WGBS data revealed that monocyte cfDNA was over-represented relative to the abundance of DNA from these cells in blood (p-value = 0.0005).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis, based on genome-wide methylation patterns, also revealed that lymphocyte and monocyte cfDNA was under- and over-represented, respectively, relative to the abundance of DNA from these cells in blood (lymphocytes, p-value = 0.002; monocytes, p-value = 0.0005, Kruskal-Wallis) (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from WGBS deconvolution analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "274519e4-0ab6-4dc4-ac57-3ebb123d8b0f",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C28",
+      "claim": "Neutrophils were the main source of immune-derived cfDNA in healthy individuals (mean = 390, range 10\u20131064 genome equivalents [GE]/ml).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous plasma methylome analysis (Moss et al., 2018), we found that neutrophils were the main source of immune-derived cfDNA (mean = 390, range 10\u20131064 genome equivalents [GE]/ml), followed by monocytes (mean = 101, range 6\u2013233 GE/ml), eosinophils (mean = 38, range 0\u2013111 GE/ml) and lymphocytes (T-cells, mean = 30, range 1-79; B-cells, mean = 17, range 3\u201342; CD8 T-cells, mean = 8, range 0\u201327; Tregs, mean = 2, range 0\u20139 GE/ml) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of 227 healthy donors, shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "13ff1eab-088c-4c20-9249-6405c54a8357",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C29",
+      "claim": "In circulating blood cells, the inter-individual variation in immune methylation markers and CBC was always higher than the intra-individual variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In circulating blood cells, the inter-individual variation in immune methylation markers and CBC was always higher than the intra-individual variation in these markers (Figure 2E and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from longitudinal analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "023844c3-7681-46aa-b4dc-6973ff170bbe",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C30",
+      "claim": "Blood cell counts among individuals are more similar to themselves than to others, indicating distinct set points per person for the total number of specific immune cell types circulating in blood.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous reports that blood cell counts among individuals are more similar to themselves than to others, indicating distinct set points per person for the total number of specific immune cell types circulating in blood (Alpert et al., 2019; Carr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about blood cell count stability, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "48bea6f3-3529-48c4-a6ea-6a3dcc7bf951",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C31",
+      "claim": "cfDNA values of immune methylation markers varied to the same extent among samples of the same individual and among samples of different individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, cfDNA values of the same immune methylation markers varied to the same extent among samples of the same individual and among samples of different individuals (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from longitudinal analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "fc402745-ba90-4d8a-845b-d234e97d31a0",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C33",
+      "claim": "B-cell counts were moderately but significantly elevated on day 7 post-vaccination, and persisted to day 28 (p-value = 0.0048).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, B-cell counts (measured by methylation analysis of DNA from whole blood) were moderately but significantly elevated on day 7, and persisted to day 28 (p-value = 0.0048, Kruskal-Wallis) (Figure 3A; Li et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the vaccination study shown in Figure 3A, consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "3a630f7b-d75d-449f-8fe6-74f46c52784e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C34",
+      "claim": "B-cell-derived cfDNA levels increased as early as day 3 post-vaccination, peaked on day 7 and returned to baseline levels on day 28 (p-value < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, B-cell-derived cfDNA levels increased as early as day 3, peaked on day 7 and returned to baseline levels on day 28 (p-value < 0.0001, Kruskal-Wallis) (Figure 3B and D), suggesting that cfDNA reveals an early increase in the turnover of B-cells following vaccination, which is not portrayed in circulating B-cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from the vaccination study shown in Figures 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "96f943ad-5d5c-4da5-948a-68015e9624a5",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C35",
+      "claim": "Total cfDNA levels did not change over the time course of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this response was specific to B-cell-derived cfDNA; total cfDNA levels did not change over the time course of vaccination, nor did cfDNA levels of other immune cell types (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the specificity of the B-cell cfDNA response, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "ae7aa9a3-0c02-4525-b04f-5ef4017afc7d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C36",
+      "claim": "cfDNA levels of other immune cell types did not change over the time course of vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, this response was specific to B-cell-derived cfDNA; total cfDNA levels did not change over the time course of vaccination, nor did cfDNA levels of other immune cell types (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the specificity of the B-cell cfDNA response, shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "7e386450-2f45-43b3-9cad-f7b42afba50e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C37",
+      "claim": "Responders to vaccination had a significantly higher peak elevation of B-cell cfDNA relative to their pre-vaccination baseline levels compared with non-responders (p-value = 0.044).",
+      "claim_type": "EXPLICIT",
+      "source": "Responders had a significantly higher peak elevation of B-cell cfDNA relative to their pre-vaccination baseline levels compared with non-responders (p-value = 0.044, Mann-Whitney, AUC = 0.7, p-value = 0.04) (Figure 3E and F and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding linking B-cell cfDNA to vaccination efficacy, shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "bafd90c2-c59d-452a-940e-2da37be7abaf",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C38",
+      "claim": "Peripheral B-cell counts were not different between responders and non-responders to vaccination (p-value = 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral B-cell counts were not different between responders and non-responders (p-value = 0.2, Mann-Whitney) (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates that B-cell counts do not predict vaccination response, shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "371d934c-e69c-4331-99b9-f4942bc6cd8d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C39",
+      "claim": "Influenza vaccination is more effective in younger individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that influenza vaccination is more effective in younger individuals (Del Giudice et al., 2015; Ranjeva et al., 2019; Siegrist and Aspinall, 2009; Wagner et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about vaccination efficacy, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "74ad5bee-5f1c-4e64-8a6c-fa229b16e2b4",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C40",
+      "claim": "Non-responders to vaccination were all above 35 years and tended to have a minimal elevation of B-cell cfDNA above baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-responders to vaccination in our cohort were all above 35 years and tended to have a minimal elevation of B-cell cfDNA above baseline even when compared to people in their age group (Figure 3H and Figure 3\u2014figure supplement 2, peak elevation of B-cell cfDNA in responders versus non-responders p-value = 0.089), suggesting that B-cell cfDNA dynamics report on a biological process independent of age.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from age-stratified analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "7879ed32-0192-4d49-9897-5365a0908055",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C41",
+      "claim": "EoE is a chronic inflammatory disease characterized clinically by esophageal dysfunction, and histologically by eosinophil-predominant inflammation of the esophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "EoE is a chronic inflammatory disease characterized clinically by esophageal dysfunction, and histologically by eosinophil-predominant inflammation of the esophagus (Liacouras et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EoE, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "95dbaeb5-f321-4542-abde-1d6681152967",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C42",
+      "claim": "Diagnosis of EoE requires an invasive endoscopic biopsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Diagnosis of EoE requires an invasive endoscopic biopsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current EoE diagnosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "39c33b5d-1b61-4979-82fe-57408a5c2f33",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C43",
+      "claim": "Most EoE patients do not show peripheral eosinophilia.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, most patients do not show peripheral eosinophilia (Aceves et al., 2007; Dellon et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EoE, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "e7afbcff-0e54-42db-8291-46c214fa5439",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C44",
+      "claim": "Patients with active EoE had elevated levels of eosinophil cfDNA (mean = 115 GE/ml) compared with healthy controls (mean = 34 GE/ml, p-value = 0.0056).",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with active EoE had elevated levels of eosinophil cfDNA (mean = 115 GE/ml) compared with both healthy controls (mean = 34 GE/ml, p-value = 0.0056) and patients with inactive EoE (mean = 36 GE/ml, p-value = 0.0003, Kruskal-Wallis), while other immune cfDNA markers were not elevated in active EoE patients (Figure 4A and B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from the EoE study shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b45f20f8-0752-4366-8e97-1a3bb67dc8b8",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C45",
+      "claim": "Patients with active EoE had elevated levels of eosinophil cfDNA compared with patients with inactive EoE (mean = 36 GE/ml, p-value = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with active EoE had elevated levels of eosinophil cfDNA (mean = 115 GE/ml) compared with both healthy controls (mean = 34 GE/ml, p-value = 0.0056) and patients with inactive EoE (mean = 36 GE/ml, p-value = 0.0003, Kruskal-Wallis), while other immune cfDNA markers were not elevated in active EoE patients (Figure 4A and B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from the EoE study shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "dbda7e5a-bb85-4f04-b890-d4465dbab04e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C46",
+      "claim": "Other immune cfDNA markers were not elevated in active EoE patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with active EoE had elevated levels of eosinophil cfDNA (mean = 115 GE/ml) compared with both healthy controls (mean = 34 GE/ml, p-value = 0.0056) and patients with inactive EoE (mean = 36 GE/ml, p-value = 0.0003, Kruskal-Wallis), while other immune cfDNA markers were not elevated in active EoE patients (Figure 4A and B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the specificity of eosinophil cfDNA elevation in EoE, shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "bbcd0c66-1fb5-4085-ac04-2703d29fb6a7",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C47",
+      "claim": "The fraction of eosinophils in blood was not significantly elevated in EoE patients (p-value=0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of eosinophils in blood was not significantly elevated in EoE patients (Figure 4C and p-value=0.1, Kruskal-Wallis), consistent with restriction of eosinophil abundance to the esophagus and further supporting the idea that immune cfDNA is not a reflection of circulating immune cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates that eosinophil counts do not reflect EoE disease activity, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "843bc762-b88c-455b-a038-5dcfcaa837e4",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C48",
+      "claim": "Eosinophil cfDNA could distinguish active EoE from healthy controls (AUC 0.83, p-value = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Eosinophil cfDNA could distinguish active EoE from healthy controls (Figure 4E, AUC 0.83, p-value = 0.001) and from patients with inactive disease (Figure 4F, AUC 0.84, p-value = 0.0001), with high specificity and sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ROC analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "1d062487-f207-4c66-ad54-895523340d68",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C49",
+      "claim": "Eosinophil cfDNA could distinguish active EoE from patients with inactive disease (AUC 0.84, p-value = 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Eosinophil cfDNA could distinguish active EoE from healthy controls (Figure 4E, AUC 0.83, p-value = 0.001) and from patients with inactive disease (Figure 4F, AUC 0.84, p-value = 0.0001), with high specificity and sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ROC analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "ee2d7675-b10a-4c2f-b881-67626eda430e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C50",
+      "claim": "Lymphoma patients (mean = 264.4 GE/ml) had dramatically elevated levels of B-cell-derived cfDNA compared with controls (mean = 18.3 GE/ml, p-value < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphoma patients (mean = 264.4 GE/ml) had dramatically elevated levels of B-cell-derived cfDNA compared with controls (mean = 18.3 GE/ml, p-value < 0.0001), while B-cell counts in peripheral blood were actually decreased (control; mean = 0.162, lymphoma; mean = 0.079, 109/l, p-value = 0.0059, Mann-Whitney) (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from the lymphoma study shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "16e4fdb2-4c5f-41c8-911c-82b9f9ab83ee",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C51",
+      "claim": "B-cell counts in peripheral blood were decreased in lymphoma patients (control; mean = 0.162, lymphoma; mean = 0.079, 109/l, p-value = 0.0059).",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphoma patients (mean = 264.4 GE/ml) had dramatically elevated levels of B-cell-derived cfDNA compared with controls (mean = 18.3 GE/ml, p-value < 0.0001), while B-cell counts in peripheral blood were actually decreased (control; mean = 0.162, lymphoma; mean = 0.079, 109/l, p-value = 0.0059, Mann-Whitney) (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates that B-cell counts do not reflect lymphoma disease burden, shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "940dc7e4-67ef-4013-a8e4-4d184015619e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C52",
+      "claim": "The level of B-cell cfDNA accurately distinguished B-cell lymphoma patients from healthy controls (AUC = 0.98, p-value < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the level of B-cell cfDNA accurately distinguished B-cell lymphoma patients from healthy controls, much better than did B-cell counts (cfDNA, AUC = 0.98, p-value < 0.0001; B-cell counts, AUC = 0.75, p-value = 0.006; Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ROC analysis shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "bc86fcf0-cbf0-4909-a436-092fb4b42cb8",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C53",
+      "claim": "B-cell counts distinguished B-cell lymphoma patients from healthy controls less accurately than B-cell cfDNA (AUC = 0.75, p-value = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the level of B-cell cfDNA accurately distinguished B-cell lymphoma patients from healthy controls, much better than did B-cell counts (cfDNA, AUC = 0.98, p-value < 0.0001; B-cell counts, AUC = 0.75, p-value = 0.006; Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ROC analysis shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "24e08c42-958b-422c-9fb3-b70fcc74a598",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C54",
+      "claim": "Total levels of cfDNA were elevated in lymphoma patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Total levels of cfDNA as well as the levels of other immune cfDNA markers were also elevated in lymphoma patients, consistent with reports on alterations in non-B-cells in lymphoma (Simone, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the lymphoma study, consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "8907efb5-93a9-4d4a-9be6-cb73f1521fa9",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C55",
+      "claim": "The strongest cfDNA response in lymphoma was observed in B-cells (14.4-fold increase), CD8 cytotoxic T-cells (10.7-fold), and Tregs (13.8-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the strongest response in the levels of B-cell cfDNA (14.4-fold increase compared with controls), CD8 cytotoxic T-cells (10.7-fold), and Tregs (13.8-fold) (Figure 5F, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the lymphoma study shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "bbfa2778-fd49-435e-be74-8e174fce1d4e",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C56",
+      "claim": "A decrease in B-cell-derived cfDNA was observed in most lymphoma patients after treatment (n = 16, p-value = 0.0032).",
+      "claim_type": "EXPLICIT",
+      "source": "In an additional cohort of lymphoma patients that were monitored before and after treatment, we observed a decrease in B-cell-derived cfDNA in most patients (n = 16, p-value = 0.0032, Kruskal-Wallis test), similarly to what have been observed in other cancers following treatment (Moss et al., 2020; Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from longitudinal monitoring of lymphoma patients, shown in Figure 5H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "2d762083-f70b-4901-b363-4b26a0bb45d8",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C57",
+      "claim": "The vast majority of unique methylation loci are hypomethylated in the cell type of interest and methylated elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, across the entire atlas, the vast majority of such unique loci are hypomethylated in the cell type of interest and methylated elsewhere (typically marking cell type-specific enhancers), while just a small minority are methylated in a given cell type and hypomethylated elsewhere (manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the methylation atlas analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "8143bfbb-2ff6-4499-b791-042aa151c7a9",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C58",
+      "claim": "Unique methylation loci typically mark cell type-specific enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, across the entire atlas, the vast majority of such unique loci are hypomethylated in the cell type of interest and methylated elsewhere (typically marking cell type-specific enhancers), while just a small minority are methylated in a given cell type and hypomethylated elsewhere (manuscript in preparation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the genomic location of methylation markers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "f62bdfc7-9c2d-479e-85a4-dc33dffac852",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C59",
+      "claim": "The concentration of cfDNA from a given cell type is a function of the total number of cells of that type, the lifespan of this population, determinants of cfDNA release, and determinants of cfDNA clearance from plasma.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the concentration of cfDNA derived from a given immune cell type is a function of the total number of cells of that type (circulating and remote pools, combined), the lifespan of this population, determinants of cfDNA release (e.g. efficiency of phagocytosis) and determinants of cfDNA clearance from plasma (e.g. liver uptake).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical model explaining cfDNA dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "249d4958-bb97-4aed-bc5a-1d791effa135",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C60",
+      "claim": "Methylation markers can inform on the turnover dynamics of cell types, not cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "We note however that dynamic cellular states may involve changes in gene expression that do not involve reprogramming of DNA methylation patterns, representing a limitation of the approach. In other words, methylation markers can inform on the turnover dynamics of cell types, not cell states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the methylation-based approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "fc29b1fd-b32f-4af8-bfee-ecb78445e5e7",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C61",
+      "claim": "Lower levels of neutrophil cfDNA were observed in adult females compared with adult males.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we noticed lower levels of neutrophil cfDNA in adult females compared with adult males, suggesting that neutrophils in females live longer; we speculate that such differences in lifespan explain why women have a higher steady-state neutrophil count (Bain and England, 1975) (and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the healthy cohort analysis.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "60afb916-2dfd-4ee5-a925-6aca2325ce7c",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C62",
+      "claim": "Women have a higher steady-state neutrophil count.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we noticed lower levels of neutrophil cfDNA in adult females compared with adult males, suggesting that neutrophils in females live longer; we speculate that such differences in lifespan explain why women have a higher steady-state neutrophil count (Bain and England, 1975) (and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "76397b16-ccad-4ec3-aa89-7879ebc8f264",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C63",
+      "claim": "Elevated monocyte cfDNA and reduced lymphocyte cfDNA were observed in individuals older than 60.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional observations of healthy immune cfDNA dynamics that merit further investigation regard age-related changes, such as elevated monocyte cfDNA and reduced lymphocyte cfDNA in individuals older than 60.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the healthy cohort analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "29270843-731e-471b-890d-10f8f88fde52",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C64",
+      "claim": "Varying cfDNA levels reflect the action of regulated cell death as a homeostatic mechanism by which the healthy body maintains cell numbers within a desired range.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that varying cfDNA levels reflect the action of regulated cell death as a homeostatic mechanism by which the healthy body maintains cell numbers within a desired range (model, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model to explain cfDNA dynamics, illustrated in Figure 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "f1fd6ef6-4ab0-4952-9fcb-c816b0a04b35",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C65",
+      "claim": "Elevated B-cell turnover reflects early stages in the successful response of B-cells to the vaccine, including the process of affinity maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that elevated B-cell turnover (and elevated B-cell cfDNA as its readout) reflects early stages in the successful response of B-cells to the vaccine, including the process of affinity maturation whereby large numbers of B-cells are generated and eliminated within lymph nodes as a result of insufficient binding to the target epitope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation of the B-cell cfDNA elevation after vaccination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "acc573b3-ae0d-4f3c-92ea-882c87935fce",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C66",
+      "claim": "In lymphoma, immune cfDNA processes include both tumor dynamics and host responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As with EoE, cfDNA in lymphoma provides a systemic biomarker of immune processes taking place in remote locations. However in lymphoma, these processes include both tumor dynamics and host responses \u2013 either bystander effects (collateral damage) or an immune response to the tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the multiple immune cfDNA elevations observed in lymphoma.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b1e06e04-4cd5-4b92-ac44-533788fcdfd8",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C67",
+      "claim": "An important current limitation of immune repertoire analysis is that it requires large genomic fragments, which can only be derived from whole cells.",
+      "claim_type": "EXPLICIT",
+      "source": "An important current limitation of immune repertoire analysis is that it requires large genomic fragments, which can only be derived from whole cells. This precludes cfDNA-based analysis, and limits access to T- and B-cell dynamics taking place in remote locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of immune repertoire analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "644360db-9144-4aa4-bec8-44088d8d091d",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C68",
+      "claim": "Immune repertoire analysis is precluded from cfDNA-based analysis and limits access to T- and B-cell dynamics taking place in remote locations.",
+      "claim_type": "EXPLICIT",
+      "source": "An important current limitation of immune repertoire analysis is that it requires large genomic fragments, which can only be derived from whole cells. This precludes cfDNA-based analysis, and limits access to T- and B-cell dynamics taking place in remote locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of immune repertoire analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "08261ca4-d094-4d53-8521-4fdbe4e33707",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "claim_id": "C69",
+      "claim": "Both T/B repertoire analysis and expression profiling can be complemented by cfDNA profiling, which will provide non-overlapping information about immune cell turnover in remote locations.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that both T/B repertoire analysis and expression profiling can be complemented by cfDNA profiling, which will provide non-overlapping information about immune cell turnover (and potentially also gene expression patterns associated with cell death) (Sadeh et al., 2021) in remote locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed application of cfDNA analysis to complement other methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01e7d0ec-b57d-4568-8f9f-005c6806b6e3",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a panel of 17 CpG methylation markers that can distinguish DNA from seven major immune cell types (neutrophils, eosinophils, monocytes, B-cells, CD3 T-cells, CD8 cytotoxic T-cells, and regulatory T-cells). The markers showed high specificity, sensitivity (detecting immune cell DNA even at 10-20 fold dilution), and strong correlation with complete blood counts (r=0.67-0.83, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 provide converging evidence for successful marker development. The in silico identification (C18), marker selection (C19), spike-in validation experiments (C20), and correlation with CBC (C21) collectively demonstrate that the methylation marker panel is specific, sensitive, and accurate for identifying immune cell-derived DNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "0862d790-9185-4668-9538-0054e9b1f3b1",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The proportion of cfDNA from specific immune cell types does not correlate well with circulating blood cell proportions (r=0.14-0.53), suggesting that cfDNA reflects biological processes beyond cell counts. Specifically, lymphocyte cfDNA is under-represented and monocyte cfDNA is over-represented relative to their abundance in blood, consistent with differences in cell lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 provide consistent evidence from both targeted methylation markers and WGBS deconvolution showing that cfDNA proportions differ from blood cell proportions. The findings are biologically coherent with known differences in cell lifespan (C24-C25 with supporting citations), and the statistical significance is clearly reported (C26-C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "bd611d77-19e9-46a8-99b9-d4e7a2b52098",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Blood cell counts show higher inter-individual than intra-individual variation, consistent with individual set points. In contrast, cfDNA levels of immune markers vary to the same extent within and between individuals, indicating no individual steady state for immune cfDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 present a clear contrast between blood cell count stability (C29-C30) and cfDNA variability (C31). The longitudinal analysis from 15 individuals over 6 weeks provides appropriate data to assess intra- vs inter-individual variation. The finding is supported by visual evidence in Figure 2E-F.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "58a8e942-a951-41fd-84a7-49fda8e616a6",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Following influenza vaccination (N=92), B-cell-derived cfDNA levels increased as early as day 3, peaked at day 7, and returned to baseline by day 28 (p<0.0001), preceding the moderate elevation in B-cell counts observed at day 7. This response was specific to B-cell cfDNA, with no changes in total cfDNA or other immune cell type cfDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 describe a temporally resolved, cell-type-specific response to vaccination. The statistical significance is clearly reported (p<0.0001 for B-cell cfDNA, p=0.0048 for B-cell counts), and the specificity is demonstrated by lack of changes in other markers (C35-C36). The data are shown in Figures 3A-D and Figure 3\u2014figure supplement 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "da35b508-b7a1-4fbc-843e-b77b41c3f1f8",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Responders to influenza vaccination had significantly higher peak elevation of B-cell cfDNA compared to non-responders (p=0.044, AUC=0.7), while peripheral B-cell counts did not differ between groups (p=0.2). Non-responders were all above 35 years and showed minimal B-cell cfDNA elevation even compared to their age group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 and C40 demonstrate that B-cell cfDNA, but not B-cell counts, predicts vaccination response. The statistical tests are appropriate (Mann-Whitney), p-values are reported, and ROC analysis supports diagnostic utility (AUC=0.7). The age-stratified analysis (C40) suggests the biomarker captures biology independent of age, though the p-value of 0.089 for age-matched comparison is not significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "ead17975-4246-4c36-bb13-cdbefd655004",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Patients with active eosinophilic esophagitis (EoE) showed selective elevation of eosinophil cfDNA (mean=115 GE/ml) compared to healthy controls (mean=34 GE/ml, p=0.0056) and inactive EoE patients (mean=36 GE/ml, p=0.0003), while other immune cfDNA markers were not elevated and eosinophil counts in blood were not significantly different (p=0.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 demonstrate cell-type-specific cfDNA elevation in EoE that is not reflected in blood counts. The statistical significance is clearly reported with appropriate tests (Kruskal-Wallis), sample sizes are adequate (N=21 active, N=24 inactive, N=14 controls), and the specificity is demonstrated by lack of elevation in other immune markers (C46) and blood eosinophil counts (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "1eb078d1-bf7c-48cf-bd51-8d6d73648834",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Eosinophil cfDNA distinguished active EoE from healthy controls (AUC=0.83, p=0.001) and from inactive EoE patients (AUC=0.84, p=0.0001) with high specificity and sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 demonstrate diagnostic utility of eosinophil cfDNA for EoE. The ROC analysis is appropriate, AUC values indicate good discrimination, and p-values demonstrate statistical significance. The results are shown in Figures 4E-F.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b4e7674a-de72-40b2-9ba6-a108f71ccc30",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lymphoma patients showed dramatically elevated B-cell cfDNA (mean=264.4 GE/ml) compared to controls (mean=18.3 GE/ml, p<0.0001), while B-cell counts were actually decreased (p=0.0059). B-cell cfDNA distinguished lymphoma patients from controls much better than B-cell counts (AUC=0.98 vs 0.75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 demonstrate that B-cell cfDNA is a superior biomarker to B-cell counts for lymphoma. The statistical significance is clear (p<0.0001), sample sizes are adequate (N=27 lymphoma, N=23 controls for cohort 1), and the ROC analysis shows excellent discrimination (AUC=0.98). The paradoxical decrease in B-cell counts (C51) strengthens the case that cfDNA captures disease biology not reflected in blood counts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "0c789a63-2b4f-4425-be3f-d9d30fa154a4",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In lymphoma patients, total cfDNA and multiple immune cell type cfDNA markers were elevated, with the strongest responses in B-cells (14.4-fold), CD8 T-cells (10.7-fold), and Tregs (13.8-fold). B-cell cfDNA decreased in most patients after treatment (n=16, p=0.0032).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe the broader immune cfDNA signature in lymphoma beyond B-cells. The fold-changes are clearly quantified (C55), the treatment response is statistically significant (C56, p=0.0032), and the findings are consistent with prior reports on immune alterations in lymphoma (C54 with citation). The data are shown in Figures 5F and 5H.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "6a88e2da-7013-48ae-b68b-66b1d0cb66b7",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In healthy individuals (N=227), neutrophils were the main source of immune-derived cfDNA (mean=390 GE/ml), followed by monocytes (mean=101 GE/ml), eosinophils (mean=38 GE/ml), and lymphocytes (T-cells mean=30, B-cells mean=17, CD8 T-cells mean=8, Tregs mean=2 GE/ml).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 establishes baseline cfDNA levels for different immune cell types in a large healthy cohort (N=227). The data are clearly quantified with means and ranges, and are consistent with prior work (citation to Moss et al., 2018). This provides essential reference values for interpreting pathological deviations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "aaebaf7d-9820-4030-9c42-6ca0fa76cc12",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Immune cfDNA levels have no individual steady state (unlike blood cell counts), suggesting that cfDNA concentration reflects adjustment of cell survival to maintain homeostatic cell numbers through regulated cell death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C64 present a model where cfDNA variability reflects homeostatic regulation. The lack of individual steady state is supported by the longitudinal data (C31), and the model (C64, illustrated in Figure 6) provides a coherent biological interpretation. However, this remains a proposed model rather than directly demonstrated mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b754be47-1ea9-4b38-84dd-5279f2169afe",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The concentration of cfDNA from a given cell type is a function of total cell number, lifespan, determinants of cfDNA release, and clearance from plasma. Methylation markers inform on turnover dynamics of cell types, not cell states, as dynamic cellular states may not involve DNA methylation reprogramming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 describe the theoretical framework and limitations of the approach. The model (C59) is biologically sound and consistent with the observed data (e.g., lymphocyte vs monocyte cfDNA proportions). The limitation (C60) is appropriately acknowledged and represents an important caveat for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "3095a8af-23b6-456d-b8b5-ba2f5d360193",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Blood cell counts and current biomarkers like CRP have limitations: blood cell counts fail to report on immune processes in remote tissues, while CRP is non-specific regarding tissue location and inflammatory process nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C11 establish the rationale for the study by describing limitations of current methods. These are well-established facts supported by citations (C11) and represent accepted knowledge in the field rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "cfDNA biology and applications are well-established: dying cells release nucleosome-sized cfDNA fragments that are cleared by the liver; cfDNA has been used for prenatal testing, tumor monitoring, and transplant rejection detection; tissue-specific methylation patterns can determine cfDNA origins; and most cfDNA in healthy individuals originates from hematopoietic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 provide background on cfDNA biology and prior applications. All claims are supported by appropriate citations and represent established knowledge rather than novel findings. This contextualizes the current work within the broader cfDNA field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "0be19e68-f875-4c0d-b2b7-17c4074eb853",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Across the methylation atlas, the vast majority of unique loci are hypomethylated in the cell type of interest and methylated elsewhere, typically marking cell type-specific enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe a general pattern in the methylation atlas. The observation (C57) is stated as data, though from a manuscript in preparation. The interpretation that these mark enhancers (C58) is reasonable based on known biology of tissue-specific methylation patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "8e5a2e02-3dab-4d0e-b42e-afbfae3f6177",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Sex and age-related differences in immune cfDNA were observed: lower neutrophil cfDNA in adult females compared to males, and elevated monocyte cfDNA with reduced lymphocyte cfDNA in individuals older than 60.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C63 describe interesting observations but are presented as preliminary findings that \"merit further investigation.\" C61 includes speculation about mechanism and references data not shown. C62 cites established knowledge about sex differences in neutrophil counts. C63 describes age-related changes but without statistical analysis or mechanistic insight. These observations require more rigorous follow-up.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "2152a622-8bed-406d-b325-ac883c473081",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on vaccination and EoE: influenza vaccination is more effective in younger individuals; EoE is characterized by eosinophil-predominant esophageal inflammation, requires invasive biopsy for diagnosis, and most patients lack peripheral eosinophilia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C41-C43 provide established background information about the disease contexts studied. All are supported by appropriate citations and represent accepted knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "b046bb77-b56a-4287-8043-037fe0d99539",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Proposed mechanisms: elevated B-cell cfDNA after vaccination reflects early B-cell response including affinity maturation; in lymphoma, immune cfDNA processes include both tumor dynamics and host responses (bystander effects or immune response to tumor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 present proposed mechanistic interpretations of the observed cfDNA changes. These are reasonable hypotheses consistent with known immunology, but remain speculative as no direct evidence is provided to distinguish between alternative mechanisms (e.g., affinity maturation vs other sources of B-cell death in C65; tumor vs host response in C66).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    },
+    {
+      "id": "1dad3249-1a35-41c8-b09e-6a33ca47daa6",
+      "content_id": "5f233288-1ac2-4e4f-988f-cc365c8cc231",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Immune repertoire analysis requires large genomic fragments from whole cells, precluding cfDNA-based analysis. The authors propose that cfDNA profiling can complement T/B repertoire analysis and expression profiling by providing non-overlapping information about immune cell turnover in remote locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 describe a known limitation of immune repertoire analysis. Claim C69 proposes how cfDNA analysis could complement other methods, which is a reasonable proposition supported by the findings of the study, though the actual complementarity is not directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T09:11:37.102966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9927ce8-bb6f-450b-82ef-643faa743d2d",
+      "result_id": "01e7d0ec-b57d-4568-8f9f-005c6806b6e3"
+    },
+    {
+      "claim_id": "deea6a30-bc2b-455c-8a20-cef6c8b609de",
+      "result_id": "01e7d0ec-b57d-4568-8f9f-005c6806b6e3"
+    },
+    {
+      "claim_id": "669e3fcc-67d1-4400-b036-77512e405366",
+      "result_id": "01e7d0ec-b57d-4568-8f9f-005c6806b6e3"
+    },
+    {
+      "claim_id": "e05072ef-8f8e-4934-b7a6-fb8b374d045a",
+      "result_id": "01e7d0ec-b57d-4568-8f9f-005c6806b6e3"
+    },
+    {
+      "claim_id": "3ce0cb59-4e8d-4c7f-bea9-665dd945a421",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "156a8210-d217-4279-9f33-061a0d1e9704",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "af6f40c6-1bf6-4759-a537-00132e9f369d",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "5f24a7f3-4a80-4950-907d-17fb1cb860c6",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "0694448d-8bd1-4944-a2cf-dc007c68e547",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "62d77650-9916-4593-a866-d2baa885dc6c",
+      "result_id": "0862d790-9185-4668-9538-0054e9b1f3b1"
+    },
+    {
+      "claim_id": "13ff1eab-088c-4c20-9249-6405c54a8357",
+      "result_id": "bd611d77-19e9-46a8-99b9-d4e7a2b52098"
+    },
+    {
+      "claim_id": "023844c3-7681-46aa-b4dc-6973ff170bbe",
+      "result_id": "bd611d77-19e9-46a8-99b9-d4e7a2b52098"
+    },
+    {
+      "claim_id": "48bea6f3-3529-48c4-a6ea-6a3dcc7bf951",
+      "result_id": "bd611d77-19e9-46a8-99b9-d4e7a2b52098"
+    },
+    {
+      "claim_id": "fc402745-ba90-4d8a-845b-d234e97d31a0",
+      "result_id": "58a8e942-a951-41fd-84a7-49fda8e616a6"
+    },
+    {
+      "claim_id": "3a630f7b-d75d-449f-8fe6-74f46c52784e",
+      "result_id": "58a8e942-a951-41fd-84a7-49fda8e616a6"
+    },
+    {
+      "claim_id": "96f943ad-5d5c-4da5-948a-68015e9624a5",
+      "result_id": "58a8e942-a951-41fd-84a7-49fda8e616a6"
+    },
+    {
+      "claim_id": "ae7aa9a3-0c02-4525-b04f-5ef4017afc7d",
+      "result_id": "58a8e942-a951-41fd-84a7-49fda8e616a6"
+    },
+    {
+      "claim_id": "7e386450-2f45-43b3-9cad-f7b42afba50e",
+      "result_id": "da35b508-b7a1-4fbc-843e-b77b41c3f1f8"
+    },
+    {
+      "claim_id": "bafd90c2-c59d-452a-940e-2da37be7abaf",
+      "result_id": "da35b508-b7a1-4fbc-843e-b77b41c3f1f8"
+    },
+    {
+      "claim_id": "74ad5bee-5f1c-4e64-8a6c-fa229b16e2b4",
+      "result_id": "da35b508-b7a1-4fbc-843e-b77b41c3f1f8"
+    },
+    {
+      "claim_id": "e7afbcff-0e54-42db-8291-46c214fa5439",
+      "result_id": "ead17975-4246-4c36-bb13-cdbefd655004"
+    },
+    {
+      "claim_id": "b45f20f8-0752-4366-8e97-1a3bb67dc8b8",
+      "result_id": "ead17975-4246-4c36-bb13-cdbefd655004"
+    },
+    {
+      "claim_id": "dbda7e5a-bb85-4f04-b890-d4465dbab04e",
+      "result_id": "ead17975-4246-4c36-bb13-cdbefd655004"
+    },
+    {
+      "claim_id": "bbcd0c66-1fb5-4085-ac04-2703d29fb6a7",
+      "result_id": "ead17975-4246-4c36-bb13-cdbefd655004"
+    },
+    {
+      "claim_id": "843bc762-b88c-455b-a038-5dcfcaa837e4",
+      "result_id": "1eb078d1-bf7c-48cf-bd51-8d6d73648834"
+    },
+    {
+      "claim_id": "1d062487-f207-4c66-ad54-895523340d68",
+      "result_id": "1eb078d1-bf7c-48cf-bd51-8d6d73648834"
+    },
+    {
+      "claim_id": "ee2d7675-b10a-4c2f-b881-67626eda430e",
+      "result_id": "b4e7674a-de72-40b2-9ba6-a108f71ccc30"
+    },
+    {
+      "claim_id": "16e4fdb2-4c5f-41c8-911c-82b9f9ab83ee",
+      "result_id": "b4e7674a-de72-40b2-9ba6-a108f71ccc30"
+    },
+    {
+      "claim_id": "940dc7e4-67ef-4013-a8e4-4d184015619e",
+      "result_id": "b4e7674a-de72-40b2-9ba6-a108f71ccc30"
+    },
+    {
+      "claim_id": "bc86fcf0-cbf0-4909-a436-092fb4b42cb8",
+      "result_id": "b4e7674a-de72-40b2-9ba6-a108f71ccc30"
+    },
+    {
+      "claim_id": "24e08c42-958b-422c-9fb3-b70fcc74a598",
+      "result_id": "0c789a63-2b4f-4425-be3f-d9d30fa154a4"
+    },
+    {
+      "claim_id": "8907efb5-93a9-4d4a-9be6-cb73f1521fa9",
+      "result_id": "0c789a63-2b4f-4425-be3f-d9d30fa154a4"
+    },
+    {
+      "claim_id": "bbfa2778-fd49-435e-be74-8e174fce1d4e",
+      "result_id": "0c789a63-2b4f-4425-be3f-d9d30fa154a4"
+    },
+    {
+      "claim_id": "274519e4-0ab6-4dc4-ac57-3ebb123d8b0f",
+      "result_id": "6a88e2da-7013-48ae-b68b-66b1d0cb66b7"
+    },
+    {
+      "claim_id": "7de648f3-e682-41a8-b438-d4494faee2ea",
+      "result_id": "aaebaf7d-9820-4030-9c42-6ca0fa76cc12"
+    },
+    {
+      "claim_id": "5d40e854-f7e3-4d68-b850-3ccd82287692",
+      "result_id": "aaebaf7d-9820-4030-9c42-6ca0fa76cc12"
+    },
+    {
+      "claim_id": "29270843-731e-471b-890d-10f8f88fde52",
+      "result_id": "aaebaf7d-9820-4030-9c42-6ca0fa76cc12"
+    },
+    {
+      "claim_id": "f62bdfc7-9c2d-479e-85a4-dc33dffac852",
+      "result_id": "b754be47-1ea9-4b38-84dd-5279f2169afe"
+    },
+    {
+      "claim_id": "249d4958-bb97-4aed-bc5a-1d791effa135",
+      "result_id": "b754be47-1ea9-4b38-84dd-5279f2169afe"
+    },
+    {
+      "claim_id": "d141e966-e438-468b-8e04-34590044dc1f",
+      "result_id": "3095a8af-23b6-456d-b8b5-ba2f5d360193"
+    },
+    {
+      "claim_id": "b03861f8-a371-4c02-9318-19468678134a",
+      "result_id": "3095a8af-23b6-456d-b8b5-ba2f5d360193"
+    },
+    {
+      "claim_id": "60a09d7d-5ff4-444a-950b-d4944ee636ee",
+      "result_id": "3095a8af-23b6-456d-b8b5-ba2f5d360193"
+    },
+    {
+      "claim_id": "656070c3-a42b-439e-bcd7-091fbf01cae9",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "10be9c40-5ada-48c9-ba8f-f62d25bb39a9",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "aa0a1ecf-0f8d-4976-bfaa-e98314a78e7d",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "aa54e828-f9b8-4db4-9d8e-7b3109ca83a7",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "5f74cf64-da9c-432b-8fff-297f42e3c472",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "67499286-f7e1-4025-b9df-e3529950bfef",
+      "result_id": "a3ce23b6-2a98-4f19-9a88-40d9ba3f5fbe"
+    },
+    {
+      "claim_id": "2d762083-f70b-4901-b363-4b26a0bb45d8",
+      "result_id": "0be19e68-f875-4c0d-b2b7-17c4074eb853"
+    },
+    {
+      "claim_id": "8143bfbb-2ff6-4499-b791-042aa151c7a9",
+      "result_id": "0be19e68-f875-4c0d-b2b7-17c4074eb853"
+    },
+    {
+      "claim_id": "fc29b1fd-b32f-4af8-bfee-ecb78445e5e7",
+      "result_id": "8e5a2e02-3dab-4d0e-b42e-afbfae3f6177"
+    },
+    {
+      "claim_id": "60afb916-2dfd-4ee5-a925-6aca2325ce7c",
+      "result_id": "8e5a2e02-3dab-4d0e-b42e-afbfae3f6177"
+    },
+    {
+      "claim_id": "76397b16-ccad-4ec3-aa89-7879ebc8f264",
+      "result_id": "8e5a2e02-3dab-4d0e-b42e-afbfae3f6177"
+    },
+    {
+      "claim_id": "371d934c-e69c-4331-99b9-f4942bc6cd8d",
+      "result_id": "2152a622-8bed-406d-b325-ac883c473081"
+    },
+    {
+      "claim_id": "7879ed32-0192-4d49-9897-5365a0908055",
+      "result_id": "2152a622-8bed-406d-b325-ac883c473081"
+    },
+    {
+      "claim_id": "95dbaeb5-f321-4542-abde-1d6681152967",
+      "result_id": "2152a622-8bed-406d-b325-ac883c473081"
+    },
+    {
+      "claim_id": "39c33b5d-1b61-4979-82fe-57408a5c2f33",
+      "result_id": "2152a622-8bed-406d-b325-ac883c473081"
+    },
+    {
+      "claim_id": "f1fd6ef6-4ab0-4952-9fcb-c816b0a04b35",
+      "result_id": "b046bb77-b56a-4287-8043-037fe0d99539"
+    },
+    {
+      "claim_id": "acc573b3-ae0d-4f3c-92ea-882c87935fce",
+      "result_id": "b046bb77-b56a-4287-8043-037fe0d99539"
+    },
+    {
+      "claim_id": "b1e06e04-4cd5-4b92-ac44-533788fcdfd8",
+      "result_id": "1dad3249-1a35-41c8-b09e-6a33ca47daa6"
+    },
+    {
+      "claim_id": "644360db-9144-4aa4-bec8-44088d8d091d",
+      "result_id": "1dad3249-1a35-41c8-b09e-6a33ca47daa6"
+    },
+    {
+      "claim_id": "08261ca4-d094-4d53-8521-4fdbe4e33707",
+      "result_id": "1dad3249-1a35-41c8-b09e-6a33ca47daa6"
+    }
+  ],
+  "comparisons": []
+}

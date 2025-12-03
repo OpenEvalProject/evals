@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors recorded spontaneous neural activity from eight zebrafish larvae (5-7 dpf) using light-sheet microscopy, capturing ~40,000 neurons per recording at 3.9 Hz over ~25 minutes, with fluorescence traces deconvolved to binary spike trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C106-C108 provide comprehensive methodological details about data acquisition. The experimental protocol is well-documented with specific parameters (age, sample size, imaging frequency, recording duration) and appropriate quality control measures (exclusion criteria). The deconvolution method is cited and the resulting dataset size is substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C8"
+    ],
+    "result": "The cRBM is a maximum entropy model with a bipartite architecture that infers neural assemblies solely from data statistics, can generate synthetic data to validate statistical replication, operates in a compositional phase with sparse activation, and enables efficient parallel sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C24, C8 describe well-established theoretical properties of the cRBM model, supported by multiple citations to prior work. The mathematical framework is grounded in maximum entropy principles and the compositional phase property has been previously demonstrated in other domains (C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "cRBMs successfully scaled to brain-wide zebrafish recordings (~41,000 neurons), representing a ~100-fold increase over previous RBM implementations, identifying 100-200 anatomically localized, partially overlapping assemblies that span the entire brain and accurately replicate first and second order neural activity statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 present the core scaling achievement and assembly properties. The quantitative metrics (neuron count, assembly number, anatomical localization) are specific and the statistical accuracy is validated in Figure 2. The comparison to prior work (C26) provides important context for the technical advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C29",
+      "C30",
+      "C78"
+    ],
+    "result": "The cRBM model accurately replicated both constrained (first-order) and unconstrained (second-order pairwise) statistics of brain-scale zebrafish recordings, with better reconstruction quality than a fully connected GLM, demonstrating that neural assemblies are sufficient to explain collective brain dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C29-C30 are strongly supported by Figure 2 showing quantitative comparisons (nRMSE values, correlation coefficients, reconstruction quality). The model's ability to extrapolate to unconstrained statistics (C77) and outperform GLM (C30) provides strong evidence that the assembly organization captures essential features of neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C109",
+      "C110"
+    ],
+    "result": "cRBM assemblies are spatially localized, with each assembly occupying a median of 3 anatomical regions (IQR: 2-6), in contrast to PCA which produces assemblies spanning 160 regions (IQR: 140-168), demonstrating that cRBM sparsity enables anatomically interpretable decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79, C109-C110 are supported by Figure 1C, Figure 2\u2014figure supplement 6, and quantitative regional occupancy analysis. The stark contrast between cRBM (3 regions) and PCA (160 regions) provides compelling evidence for the superior anatomical specificity of the cRBM approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "cRBM identified six assemblies composing the hindbrain circuit controlling eye and tail movements, including bilateral ARTR assemblies with antiphasic 15-second dynamics, oculomotor assemblies (nIII/nVI) locked to ARTR, and tail movement assemblies (Rh7) that activate conditionally on ipsilateral ARTR, all consistent with known circuit organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C50-C53 describe specific assemblies with detailed anatomical and temporal properties that align with extensively characterized zebrafish motor circuits (multiple citations to Ahrens, Dunn, Wolf, Chen). The correspondence between cRBM assemblies and known functional circuits provides strong biological validation. Figure 3A-F and Figure 4B provide visual and temporal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "cRBM identified diverse assembly morphologies across brain regions, including neurotransmitter-specific assemblies (Vglut2, Gad1b), long-range pathway assemblies (Hb-IPN), region-specific organizations (cerebellum: bilateral; torus semicircularis: hemispheric; optic tectum: ~18 spatially tiled assemblies), demonstrating that assembly organization varies substantially across brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by Figure 3G-L showing diverse assembly types with distinct spatial organizations. The neurotransmitter-specific assemblies (C42) align with known expression patterns (ZBrain atlas), the Hb-IPN pathway (C43) matches known connectivity, and the optic tectum organization (C46-C47) replicates previous findings while extending to other regions (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "HU dynamics are diverse and correlated, with the first 3/10/25 PCs capturing 52%/73%/85% of variance respectively. HU activity is bimodal and sparse, operates on slower timescales than individual neurons, consistent with circuit-level versus cellular dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C59-C60 are supported by Figure 4D-F with specific quantitative values. The PCA variance explained (C54-C56) indicates structured dynamics, bimodality (C57) is clearly shown in Figure 4E, and the timescale difference (C59) is demonstrated in Figure 4F with statistical testing. The interpretation (C60) is reasonable given neuroscience principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C31",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Functional connectivity matrices derived from cRBM assemblies are highly conserved across individual fish (average Pearson r=0.69), despite only ~25 minute recordings, suggesting that functional organization is stereotyped at the mesoscale level even if individual brains differ at the neuronal scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C31, C98-C100 are supported by Figure 5E-F showing strong cross-individual correlations. The conservation is non-trivial given short recording duration (C99), and the interpretation about stereotyped mesoscale organization (C100) is a reasonable inference, though speculative. The quantitative correlation value (r=0.69) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C73",
+      "C74",
+      "C101"
+    ],
+    "result": "cRBM-derived functional connectivity is distributed log-normally (similar to structural connectivity), correlates well with anatomical connectivity (Spearman r=0.39), and strong/weak functional connections predict present/absent structural connections, demonstrating that ~25 minutes of recording suffices to infer biologically meaningful connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C73-C74, C101 are supported by Figure 5D, Figure 6C-D. The log-normal distribution (C62) matches structural connectivity patterns (C63), the correlation with anatomy (C101, r=0.39) is statistically significant (P<10^-20), and the predictive relationship (C74) is shown in Figure 6D. However, intermediate functional values remain ambiguous (C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The two-layer cRBM architecture alleviates computational burden by not explicitly optimizing ~10^9 neuron-to-neuron connections, yet still estimates these connections indirectly with high accuracy via assemblies, converging in 8-12 hours on desktop computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C85 describe computational advantages supported by Figure 2F showing accurate pairwise correlation prediction and methodological details about convergence time. The indirect estimation of pairwise connections (C83) is a key theoretical advantage validated empirically. However, only 57.5% of models successfully converged (Methods), which is a notable limitation not emphasized in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Comparative analysis shows that PCA and ICA fail due to deterministic nature, VAEs fail to reproduce second-order statistics and yield poor quality assemblies (61% disconnected HUs), and PCA lacks compositional/stochastic properties needed for assembly extraction, while cRBM's generative component is essential for validating that assemblies reproduce neural statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by Figure 2\u2014figure supplement 7 (VAE comparison) and Figure 2, Figure 2\u2014figure supplement 6 (PCA comparison). The VAE failure is clearly demonstrated with quantitative metrics (C88-C89), and the PCA limitations (C90) are shown through regional occupancy analysis. The comparative analysis strengthens the case for cRBM, though C86-C87 reference prior work rather than current experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "cRBM replicates previous findings of ball-shaped assemblies in optic tectum but reveals that this organization does not generalize to other brain regions, where assemblies are more dispersed with multiple clusters, demonstrating that cRBM-inferred assemblies display expected properties of physiological assemblies (anatomical localization, overlap, functional circuit correspondence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by Figure 3L (optic tectum) and Figure 3 overall (diverse morphologies). The replication of prior optic tectum findings (C92-C93) validates the method, while the discovery of diverse morphologies elsewhere (C94) is a novel contribution. The summary of assembly properties (C95) is well-supported by the comprehensive anatomical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The cRBM architecture lacks direct neuron-to-neuron connections, asymmetric weights, and hierarchical organization beyond one layer, leaving it an open question whether cRBM-inferred assemblies correspond to neurophysiological cell assemblies as postulated by Hebb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately acknowledge important limitations of the model. The architectural constraints (C96) are inherent to the RBM formulation, and the authors correctly identify this as limiting biological interpretation (C97). This honest assessment of model limitations is appropriate for the Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C109",
+      "C110"
+    ],
+    "result": "PCA produces non-sparse weight distributions with predominance of small weights and assemblies occupying 160 regions (IQR: 140-168), compared to cRBM assemblies occupying 3 regions (IQR: 2-6), demonstrating PCA's lack of anatomical specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C109-C110 are supported by Figure 2K and Figure 2\u2014figure supplement 6C. The quantitative comparison clearly demonstrates PCA's failure to produce anatomically localized assemblies, providing important negative control evidence for the value of cRBM's sparse regularization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Neural assemblies have been widely observed across brain regions and species, are thought to form elementary computational units for cognitive functions, and can now be studied brain-wide using light-sheet microscopy, though previous methods did not assess whether inferred assemblies could generate observed data statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide literature context supported by extensive citations. These claims establish the biological importance of assemblies (C33-C34), the technological opportunity (C35), and the gap in previous methods (C36-C37) that motivates the current work. This is appropriate background material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Maximum entropy methods have been popular for inferring pairwise connections between neurons or assemblies, but computational cost has limited applications to ~100 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by multiple citations and provides important context for the computational challenge addressed by cRBM. This establishes the significance of scaling to ~40,000 neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Future work should merge structural and dynamic brain information, with small organisms like zebrafish providing essential access to large cell fractions. cRBMs could generate synthetic data for in silico perturbation studies and can be applied to other high-dimensional neural recording techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C105 are forward-looking statements about future applications. While C102-C103 are reasonable perspectives supported by citations, C104-C105 are speculative about potential applications not yet demonstrated. The generalizability claim (C105) is plausible but unvalidated.",
+    "result_type": "MINOR"
+  }
+]

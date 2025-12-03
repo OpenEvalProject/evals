@@ -1,0 +1,1987 @@
+{
+  "submission": {
+    "id": "6b8df72a-3268-44de-9891-6e782303f1cf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-03T13:14:28.455684Z",
+    "updated_at": "2025-12-03T13:14:28.455684Z"
+  },
+  "content": [
+    {
+      "id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "submission_id": "6b8df72a-3268-44de-9891-6e782303f1cf",
+      "content_type": "manuscript",
+      "content_text": "# Deciphering a hexameric protein complex with Angstrom optical resolution\n\n## Authors\n\n- Hisham Mazal<sup>1</sup> ([ORCID: 0000-0002-2071-9552](https://orcid.org/0000-0002-2071-9552))\n- Franz-Ferdinand Wieser<sup>1</sup>\n- Vahid Sandoghdar<sup>1</sup> ([ORCID: 0000-0003-2594-4801](https://orcid.org/0000-0003-2594-4801)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for the Science of Light Erlangen Germany ([ROR:020as7681](https://ror.org/020as7681))\n2. Max-Planck-Zentrum f\u00fcr Physik und Medizin Erlangen Germany\n3. Friedrich-Alexander University of Erlangen-N\u00fcrnberg Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCryogenic optical localization in three dimensions (COLD) was recently shown to resolve up to four binding sites on a single protein. However, because COLD relies on intensity fluctuations that result from the blinking behavior of fluorophores, it is limited to cases where individual emitters show different brightness. This significantly lowers the measurement yield. To extend the number of resolved sites as well as the measurement yield, we employ partial labeling and combine it with polarization encoding in order to identify single fluorophores during their stochastic blinking. We then use a particle classification scheme to identify and resolve heterogenous subsets and combine them to reconstruct the three-dimensional arrangement of large molecular complexes. We showcase this method (polarCOLD) by resolving the trimer arrangement of proliferating cell nuclear antigen (PCNA) and six different sites of the hexamer protein Caseinolytic Peptidase B (ClpB) of Thermus thermophilus in its quaternary structure, both with Angstrom resolution. The combination of polarCOLD and single-particle cryogenic electron microscopy (cryoEM) promises to provide crucial insight into intrinsic heterogeneities of biomolecular structures. Furthermore, our approach is fully compatible with fluorescent protein labeling and can, thus, be used in a wide range of studies in cell and membrane biology.\n\n## Introduction\n\nProteins and their various assemblies are among the main constituents of all living systems and govern every aspect of cellular physiology in both healthy and disease states (Nelson, 2017; Mavroidis et al., 2004; Schliwa and Woehlke, 2003; Alberts, 1998). These biomolecular structures adopt sophisticated three-dimensional (3D) configurations during their multifaceted conformational changes. A full understanding of their spatial arrangements and associated heterogeneous configurations is crucial for elucidating their molecular mechanisms, helps guide the engineering of new proteins, and is a great asset for drug discovery (Renaud et al., 2018). Indeed, since the pioneering work of Perutz on protein crystals (Fersht, 2008), a variety of techniques such as X-ray crystallography (Shi, 2014) and nuclear magnetic resonance (NMR) spectroscopy (Kanelis et al., 2001) have been explored for gaining insight into protein structure and function. Advances in sample preparation, detector technology, and image processing based on single-particle analysis have also ushered in atomic resolution in cryogenic electron microscopy (cryoEM) studies of protein structure (Nakane et al., 2020; K\u00fchlbrandt, 2014). The inherent resolution of this method is highly desirable, but lack of specific labeling makes it challenging to identify small variations such as structural inhomogeneities. Fluorescence microscopy, on the other hand, draws its success from an exquisite specificity in labeling, but has traditionally suffered from a limited resolution.\n\nThe recent advent of super-resolution (SR) fluorescence microscopy has opened new avenues for studying subcellular organization and is on the way to become a workhorse for biological studies (Lelek et al., 2021; Sahl et al., 2017; Weisenburger and Sandoghdar, 2015). However, conventional SR microscopy performed at room temperature is still not considered as a contestant in the arena of structural biology, where Angstrom-level information about the molecular architecture of proteins and protein complexes is sought after. To push the limit of fluorescence microscopy, one can perform measurements under cryogenic conditions (B\u00f6ning et al., 2021, Hoffman et al., 2020; Dahlberg et al., 2020; Moser et al., 2019; Wang et al., 2019; Hulleman et al., 2018b, Xu et al., 2018; Weisenburger et al., 2017; Furubayashi et al., 2017; Li et al., 2015; Weisenburger et al., 2014; Weisenburger et al., 2013). In addition to slowing down photochemistry, which allows each fluorophore to emit several orders of magnitude more photons than at room temperature (Li et al., 2015; Weisenburger et al., 2014; Weisenburger et al., 2013), a key advantage of cryogenic temperatures is in offering superior sample preservation and high stability for Angstrom-scale structural studies. In one implementation, cryogenic optical localization in 3D (COLD) was introduced, where the stochastic intensity blinking of organic dyes gave access to the positions of up to four labeling sites on a single protein (Weisenburger et al., 2017). We recently employed a more robust protocol to identify individual fluorophores by exploiting the polarization of the fluorescence light dictated by the fluorophore orientation (B\u00f6ning et al., 2021). This latter method was validated by measuring single distances on one-dimensional DNA nanorulers (B\u00f6ning et al., 2021). Control of the fluorescence signal via polarization modulation has also been shown to offer an alternative to random blinking (Hulleman et al., 2018a, Hafi et al., 2014). In our current study, we introduce polarCOLD, which exploits polarization encoding for resolving several fluorophores in 3D. Importantly, we show that the distances and arrangements of protein complexes can be determined by combining images recorded from under-sampled structures. To demonstrate this, we first resolve three fluorophores on a trimer protein complex with Angstrom resolution. Next, we use partial labeling, a supervised particle classification procedure to solve a complete hexameric protein arrangement. We discuss the limits of our methodology for resolving structures with a certain degree of disorder as well as its promise for combination with cryoEM.\n\n## Results\n\n### polarCOLD on a protein trimer\n\nProliferating cell nuclear antigen (PCNA) is a central functional unit in genome repair and replication (Bruck and O\u2019Donnell, 2001). The structure of this complex protein was solved by X-ray crystallography (Georgescu et al., 2008) and more recently by cryoEM (Madru et al., 2020). These studies have shown that PCNA forms a stable homo-trimer with a pseudo-hexameric shape. The stability and simple configuration of its structure make PCNA a good model system for benchmarking our imaging methodology. To study human PCNA with polarCOLD, we first fully labeled it via a His-tag linker on the N-terminal side of each subunit of the protein, forming an equilateral triangle (see Materials and methods section and Figure 1\u2014figure supplement 1). PCNA complexes were then embedded in a hydrophilic poly-vinyl alcohol (PVA) matrix at sub-nanomolar concentration and spin-coated on a mirror-enhanced substrate (see B\u00f6ning et al., 2021 for in-depth characterization of the mirror-enhanced substrate). The resulting density corresponds to fewer than one protein per \u03bcm2 on average so that individual proteins can be easily identified in diffraction-limited imaging. The samples were immediately imaged in our custom-built microscope (see Materials and methods section).\n\nFigure 1a shows a schematic of the imaging setup. A liquid helium cryostat houses the cold stage as well as a scannable microscope objective (Weisenburger et al., 2017; B\u00f6ning et al., 2021). A polarizing beam splitter in the detection path allows us to determine the orientation of dipole-like emitters projected onto the angular interval \u03b8 \u03f5 [0\u00b0, 90\u00b0] in the imaging plane. The high photostability of the fluorophores at T=4 K allows us to collect on average 260 photons per frame (per 14 ms) from a single fluorophore with a total number of registered photons exceeding 106 after 50,000 frames (Figure 1\u2014figure supplement 2). Figure 1b\u2013c (blue trace) displays two examples in which three different polarization states recur at various times. The long photo-blinking off-times (Figure 1\u2014figure supplement 2d) allow one to identify each of the three fluorophores on a given protein complex separately (Weisenburger et al., 2017). More insight into polarization trace processing can be found in Figure 1\u2014figure supplement 3. To resolve the polarization histograms in cases where they partially overlap (see, e.g., Figure 1c), we fit the data using an algorithm that combines unsupervised statistical learning tools with change-point detection in a model-independent manner (White et al., 2020). As illustrated by the red traces in Figure 1b and c, we can robustly identify the polarization states over time and hence assign the signal in each frame to a single fluorophore. We also verified the robustness of our assignment procedure by performing random assignment of frames, which resulted in single, unresolved spots (see Materials and methods section and Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematics of the cryogenic optical microscope. Polarization-resolved detection allows for direct measurement of the in-plane dipole moment of fluorophores. Here we use circularly polarized light from a laser at \u03bb=635 nm. A polarizing beam splitter in the detection path allows one to resolve the polarization state of each individual molecule. (b, c) Exemplary polarization time traces of two single proteins. (b) demonstrates a case of well-separated polarization states, whereas (c) displays a case with smaller separations between polarization states. Blue traces present the experimental polarization values for each frame, and the red lines show the polarization determined by the algorithm (White et al., 2020). Top panels shows the residuals of the fit. The blinking kinetics are exceptionally slow with on/off times in the range of seconds to minutes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematics of the human PCNA crystal structure (PDB: 1AXC). Each monomer is presented in a different color (green, red and purple). The location of the N-terminal His-tag is shown in yellow. Native gel electrophoresis (4\u201315% Mini-PROTEAN TGX Precast Protein Gels) ran in 25 mM Tris and 192 mM glycine, pH 8, at 60 V for 3 hr. The gel was imaged with a ChemiDoc XRS system at 647 nm (b) and was then stained with Coomassie Blue (c). Lane 1 is the protein ladder PM2500 (SMOBIO), lane 2 is thyroglobulin from bovine serum labeled with ATTO647N-NHS, lane 3 is Bovine serum albumin protein (BSA) labeled with ATTO647N-NHS, lane 4 is the non-labeled human PCNA, lane 5 is human PCNA labeled with ATTO647N-NTA. Lanes 4 and 5 of human PCNA in the gel show only one band indicating a homogenous and pure solution of the assembled proteins. Also, this result shows that the labeled human PCNA ran similar to the non-labeled one, indicating that the dye did not affect the protein.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Fluorophore stability histogram shows the fraction of molecules which survived until a given time of data acquisition. Most molecules survived until the end of the measurement, allowing improved photon collection and higher localization precision. (b) Histogram of the mean number of photons per frame. On average we obtain ~260 photons per frame (per 14 ms). (c) Photon budget histogram plotted as a fraction of molecules versus total number of photons collected from 50,000 frames. Around 17% of the molecules emitted at least 107 photons. However, this number is mostly limited by the shorter recording time in these measurements and can be increased further if necessary. (d) The photo-switching behavior of the fluorophores is characterized by the dwell times in the off- and on-state. The ratio of their average duration indicates long-lived off-state facilitate localizing single emitters via polarization-trace fitting. Error bars in a and c represent standard errors of the mean.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Raw total photon counts registered from the two channels (black line). Yellow highlights show the regions which were determined as on events and taken for further analysis. The inset shows the photon signal in each channel separately shown in blue and red. (b) Intensity time trace of the on events highlighted in (a). The blue and red lines represent the intensity of the two polarization channels, and the black line is the total signal. For clarity, the blue line was shifted 200 counts on the y-axis. (c) Polarization trace (purple color) of the signal calculated from (b). (d) The signal trace after filtering based on photon counts per frame (frames below 100 photons were excluded) with the yellow histogram on the side showing the photon distribution over the whole measurement. The color code is the same as in (b). For clarity, the blue line was shifted 200 counts on the y-axis. (e) The polarization trace (purple color) as calculated from intensity signal shown in (d) and used for fluorophore assignment and further analysis. The green histogram on the side shows the polarization distribution. The Orange solid line is the fit of the polarization trace as calculated using DISC algorithm, which combines unsupervised statistical learning tools with change-point detection in a model-independent manner (White et al., 2020). The fit clearly show three separate polarization states, which indicate the fluorophores attached to this molecule. Next, we take the assignment of the polarization trace to assign and localize the coordinate of each fluorophore separately.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Example of 2D maps of the fluorophore localization as obtained for each fluorophore based on fitting the polarization trace, as described in Figure 1\u2014figure supplement 3. (b) In order to validate the assignment of the detected photons originating from a diffraction-limited spot to a specific fluorophore, we performed random assignment of frames. After averaging these randomly assigned localizations, the super-resolved image shows single spots in the center. In comparison, the polarization time trace fit accurately resolves the three positions in (a).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The histogram shows a single peak with a width of 5 degrees, which matches the expected shot noise value estimated from 100 photons.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The fraction of particles for which all fluorophores can be identified by the analysis of their polarization time-trace is shown as a function of the angular resolution of the fit. In order to resolve 50% of a hexamer sample with 6 fluorophores, an angular resolution of 2\u00b0 is required. However, to resolve a partially labeled hexamer with 3 fluorophores only requires a resolution of 10\u00b0. For this simulation, we assumed random dipole angles and accounted for the mapping into the [0\u00b0, 90\u00b0] interval (see Materials and methods section).\n\nThe number of fluorophores that can be simultaneously resolved depends on the blinking on-off dynamics (see Materials and methods section). Furthermore, the shot noise determines the angular resolution and, thus, the maximum number of resolvable polarization states per protein. This, in turn, directly affects the yield of resolved particles (see Figure 1\u2014figure supplements 5\u20136). For example, in our current experiment, we used one polarization basis and projected all orientations to the limited space of \u03b8 \u03f5 [0\u00b0, 90\u00b0]. By taking the experimental angular resolution of ca. 5\u00b0 (Figure 1\u2014figure supplements 5\u20136), we can theoretically expect to resolve 70% of the particles which contain 3 fluorophores, and roughly 15% of the particles which contain 6 fluorophores. Adding a second polarization basis at a tilt of 45\u00b0, would allow one to double the angular space (Stallinga and Rieger, 2012). Moreover, using polarized illumination (Backer et al., 2016; Zhanghao et al., 2019) and a full 3D characterization of the dipole moments (Lieb et al., 2004; Mortensen et al., 2010; Hulleman et al., 2021) would result in less overlap and thus enhanced capacity for identifying different polarization states. We remark, however, that even in our current scheme, one can improve the number of resolved polarization states by excluding the ambivalent cases, albeit at the expense of the overall yield (see Figure 1\u2014figure supplement 6 and Figure 1\u2014source data 2 for the statistics of this analysis).\n\nHaving identified the individual fluorophores, we generate super-resolved images by clustering the respective coordinates and taking their averages (see Figure 2\u2014figure supplements 1 and 2 for moving from traces to 2D resolved image). The top and bottom rows in Figure 2a display a selection of the measured and simulated 2D projection maps. To quantify their similarity, we computed a correlation score ranging from 0 to 1. We obtained 2D correlation scores of 0.92 or higher, representing nearly perfect agreement. To obtain a 3D model from our 2D localization maps, we use a single-particle reconstruction algorithm (Dvornek et al., 2015; Weisenburger et al., 2017; see Materials and methods section and Figure 2\u2014figure supplement 3 for complete data set). Figure 2b shows that the reconstructed fluorophore volumes (red spheroids) agree well with the crystal structure of the PCNA protein (PDB: 1AXC) containing three identical subunits in an equilateral triangle. The slight asymmetry and deviation from the actual crystal structure can in part be attributed to the uncertainty introduced by the dye linker, 6-histidine linker and possibly the restricted rotational mobility of the dye itself, resulting in a minor localization bias. Indeed, by taking the dye linker into account and calculating the accessible volume (Kalinin et al., 2012), we found that our 3D reconstructed volumes correlate very well (0.96 correlation score) with the simulated accessible volumes (see Figure 2b, Animation 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig2-v1.jpg)\n\n**Figure 2.:** (a) Experimentally obtained super-resolved 2D images (top row) of single proteins and simulated images based on the crystal structure (bottom row). The color code represents the occupation probability determined by the localization precision for each fluorophore. The localization precision in the simulated data was normalized. Scale bar is 3 nm. (b) Overlay of the crystal structure of human PCNA with the reconstructed fluorophore volumes shown as red spheroids (see online Animation 1). The transparent white clouds represent the accessible volume of the dye linker attached to the N-terminal side of the protein, calculated using the parameter of ATTO647N as provided in Kalinin et al., 2012. By fitting the reconstructed 3D volumes obtained from polarCOLD into the theoretical accessible volumes of the dyes, we find a correlation score of 0.96, indicating a correct 3D reconstruction. (c) The Fourier shell correlation (FSC, blue curve) of the two half data sets gives a resolution of 4.9 \u00c5 based on the half-bit criterion (red curve). (d) Distribution of the projected side lengths (blue) obtained from the localized positions shown in (b). The model fit (red) takes the finite localization uncertainty and the random particle orientation into account, resulting in 9.9\u00b10.6 nm. The error of the model fit was estimated from 200 fits. The reconstructed 3D volume was calculated from 119 particles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013B) Two different trajectories with three assigned polarizations. Each polarization state was colored differently and shown as red, green, and yellow line, respectively. The localization precision (nm) of each fluorophore is indicated on the 2D super-resolved image accordingly.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Plot of the localization precision as a function of the segment length, plotted as a log-log plot. The figure shows the increase in localization precision with the length of the segment.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** All 2D maps as obtained from polarization trace fitting with a three-state model. Particles were filtered based on localization precision below 3 nm. The image size is 120 \u00d7 120 pixel at 0.15 nm/pixel.\n\n![Animation 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-animation1-v1.mp4.jpg)\n\nTo evaluate the resolution of our 3D reconstructed volumes, we used the well-established method of Fourier shell correlation (FSC) (van Heel and Schatz, 2005). Here, we divide the 2D image data set into two randomly chosen groups and then determine their 3D reconstruction separately. Then we assess the cross-correlation (similarity) between the two 3D volumes in Fourier space as a function of spatial frequency. The overall resolution of a 3D reconstructed volume is thus obtained by finding the maximum spatial frequency corresponding to a correlation above a specific threshold value. Here, we used the half-bit criterion, which is a standard threshold curve used in single-particle cryoEM. As shown in Figure 2c, the intersection of this curve (red) with the FSC curve (blue) indicates at which spatial frequency we have collected a sufficient amount of information in order to interpret the 3D reconstructed volumes accurately (van Heel and Schatz, 2005). We find a remarkable resolution of 4.9 \u00c5. We further quantified the size of the protein-dye conjugate via the pair-wise distances between the localized sites on each particle. The histogram in Figure 2d plots the distribution of the side lengths of the projected triangles and is well-described by a fit that considers the localization uncertainty as well as the random particle orientation (B\u00f6ning et al., 2021, Weisenburger et al., 2017). We determine a side length of 9.9\u00b10.6 nm in excellent agreement with the expected value. The uncertainty was determined via bootstrapping and is consistent with the resolution obtained from the FSC curve. We note that the high signal-to-noise ratio (SNR) of the method (see, e.g, Figure 2a), and the comparatively low information density per particle, deliver a good results from a total of 119 particles (see Figure 1\u2014source data 2 for overall statistics), which is two to three orders of magnitude lower than the number required for typical cryoEM measurements (Cheng et al., 2015). Indeed, the low SNR in cryo-EM requires data from a large number of particles to be first averaged to establish 2D classes before using them for 3D reconstruction (Rosenthal and Henderson, 2003). In our case, each 2D projection directly contributes to the 3D reconstruction process.\n\n### Resolving a hexameric protein complex using partial labeling\n\nThe trimer structure discussed above involves only a single dye-dye distance. We now turn to resolving an example of more complex higher-order protein structures. Considering that a limited number of fluorophores can be resolved via stochastic blinking (Figure 1\u2014figure supplement 6), we pursued a strategy of partial labeling of the sites of interest on a given individual protein complex. The piece-wise information, which involves various fluorophore arrangements and distances is then assembled to solve for the full architecture using prior knowledge of the symmetry. This concept has been successfully used to build structural models in NMR (Fiaux et al., 2002) and more recently in SR microscopy (Heydarian et al., 2018; Molle et al., 2018). To demonstrate this technique, we examine the homo-hexamer Caseinolytic Peptidase B (ClpB) of Thermus thermophilus in its quaternary structure (Lee et al., 2003; Diemand and Lupas, 2006; Figure 3\u2014figure supplement 1a). ClpB is a molecular machine that rescues proteins from aggregation within cells (Doyle et al., 2013), and its structure was shown to be very stable in the presence of ATP at low concentrations (Mazal et al., 2019). Here, we labeled the M-domain of the protein at residue S428C such that the distance between two adjacent labeling sites is expected to be 9 nm after accounting for the dye linker (Figure 3\u2014figure supplement 1a). We deliberately reduced the labeling efficiency to 50% in order to allow for 1/3 of the particles to carry three fluorophores as estimated by the binomial distribution (Figure 3\u2014figure supplement 1b).\n\nLabeled ClpB complexes were imaged in the same fashion as before in the presence of 2 mM ATP to stabilize the protein assembly. We obtained about 510 photons per frame on average and a significantly higher total number of photons after 100,000 frames since 87% of the molecules survived until the end of the acquisition interval (see Figure 3\u2014figure supplement 1c-g for photo-physics charectrization). The photo-blinking behavior was similar to that observed in PCNA with a slight increase in the average off-on ratio, allowing robust fluorophore assignment. Hence, we fitted our polarization traces as described previously and selected only those cases that contained three fluorophores. Particles carrying three labels inherently fall into three distinct classes (I, II, and III) with multiple pair-wise distances of approximately 9, 15, and 18 nm (Figure 3\u2014figure supplement 1a).\n\nTo analyze the resulting triangle images, we used a supervised classification scheme (Gao et al., 2004) to assign each 2D image to one of the three classes, taking the angle of its plane into account. Here, we simulated large data sets of 2D projections for each class and applied a template matching procedure based on the 2D cross-correlation between an experimental image and the simulated images. A control based on simulated ground truth images obtained from the crystal structure of ClpB showed an accuracy of 98% in template matching. Figure 3a displays examples of the 2D super-resolved images of each class (see Figure 3\u2014figure supplement 2 for more examples of different projections, and Figure 3\u2014source data 1 and Figure 3\u2014source data 2 for full dataset). We assigned each image to the class that yielded the highest correlation score. Images that matched all classes with a difference below 10% for class 1 and 3, and below 3% for class 2 in the score (estimated from a simulation analysis, see Figure 3\u2014figure supplement 3) were excluded from further analysis in order to avoid smearing (see Figure 1\u2014source data 2 for all statistics). Next, we picked 2D images of each class with a localization precision better than 3 nm (Figure 3\u2014figure supplement 1c) and correlation score better than 0.9 and calculated their respective 3D structures as described previously for PCNA. Overall, we obtained 232, 100, and 135 particles for classes 1, 2, and 3, respectively, representing a yield of ~7% for all the particles detected with three polarization states (see Figure 1\u2014source data 2). Remarkably, as illustrated in Figure 3b, the reconstructed 3D volumes fit very well to the probable locations of the dye on the protein structure given by the accessible volumes (circles) on each protomer after taking the dye linker into account. The correlation scores between the reconstructed 3D volumes and the accessible volumes of the dyes were 0.98, 0.96, and 0.86 for classes I, II, and III, respectively. As a control, we also performed a reconstruction of unclassified 2D images, and confirmed that no structure was identified (Figure 3\u2014figure supplement 4). Again, the FSC curves of the volumes (see Figure 3\u2014figure supplement 5a-c) suggest an exquisite resolution of 4.0, 7.9, and 6.4 \u00c5, for classes I, II, and III, respectively. Following the successful assignment of the three classes, we merged them as shown in Figure 3c to obtain the complete 3D shape of the hexamer structure (see Animation 2 and 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-v1.jpg)\n\n**Figure 3.:** (a) Top view of super-resolved 2D images for classes I, II, and III, as obtained from single-particle classification procedure. Scale bar is 3 nm. (b) Result of single-particle classification and averaging. The reconstructed 3D volume of each class nicely sits in the simulated accessible volume of the fluorophores (grey spheres). Red, blue and yellow spheres represent classes I, II, and III with correlation values of 0.98, 0.96, and 0.86, respectively. (c) 3D reconstruction of the complete hexamer obtained from merging the 3D volumes (red spheroid) of the three classes. Top figure shows the top view of the reconstructed 3D volume of the hexamer shape, and the bottom figure shows its 90\u00b0 rotation (see online Animation 2 and 3Animation 2 and 3). Crystal structure of ClpB is shown as a cartoon in gold (PDB: 1QVR) (Lee et al., 2003; Diemand and Lupas, 2006). Reconstructed 3D volumes were calculated from 232, 100, and 135 particles for classes 1, 2, and 3, respectively.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) We modeled the dye positions using the method described previously in Figure 2b. In particular, we calculated the accessible volume of the dye-linker attached to the sulfur group of a cysteine amino acid at position 428. We used dye parameters for ATTO647N maleimide as provided in Kalinin et al., 2012. We used the center of mass of the obtained cloud coordinates to calculate the expected pair-wise distances between fluorophores and obtained a distance of 9 nm between two adjacent subunits. Given the planar hexameric geometry, the other possible pair-wise distances are 15.5 nm and 18 nm. Inset shows the three possible configurations, classes I, II, and III obtained from particles labeled with three fluorophores. (b) The fraction of labeled protomers in ClpB molecules was calculated based on the binomial distribution. Here, we assume 50% labeling efficiency and therefore expect that 1/3 of proteins will carry three fluorophores. (c) Histogram of localization precisions with a median of 0.45 nm obtained from the hexamer data. (d-g) Photo-physics characterization of ATTO647N-maleimide attached ClpB protein imaged at 4 K. (d) The fluorophore stability histogram demonstrates a high survival fraction of molecules. (e) Histogram of the off-on ratio. (f) The mean number of photons per frame shows a twofold increase compared to the PCNA trimer with an average of ~510 photons. (g) Photon budget histogram plotted as a fraction of molecules versus total number of photons collected from 100,000 frames. Around 50% of the molecules emitted at least 107 photons. Error bars in d and g represent standard errors of the mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Some examples of the resolved 2D maps as obtained from polarization trace fitting with a three-state model. Particles were filtered based on a localization precision below 3 nm and classified (red = class I, blue = class II, green = class III). The image size is 200 \u00d7 200 pixel at 0.15 nm/pixel.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Examples of simulated projections from all classes were subject to template matching to evaluate the classification procedure. Results showed that we have up to 2% misclassification. The figure shows representative examples of these 2% of misclassified particles. The top row shows a particle which was put into class 3 rather than class 1. The second row shows a particle which was classified into 1 rather than 2. The third row shows a particle which was classified as 1 rather than 3. The difference between the scores of these particles is below 5%. We exclude such particles in our pipeline to avoid smearing.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Here, we took all unclassified 2D images with correlation scores below 0.8 and calculated the 3D reconstruction as described in the method section of main text. The red volume in the image shows no valid structure and could not be fitted to the white clouds which represent the accessible volumes of the fluorophores as calculated for each protomer.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (a\u2013c) For each class, an equal number of 2D images were divided randomly into two halves. Then, a 3D reconstruction was calculated for each half-data set, using a low-pass filtered model as an initial guess. The correlation between the two 3D reconstructions is calculated over shells of the Fourier transform and plotted as a function of spatial frequency (blue curves). The spatial resolution of the 3D reconstruction is then evaluated using the half-bit criterion (red solid line) as described in detail in van Heel and Schatz, 2005. (a) The FSC of class I yields a resolution of 4.0 \u00c5. (b) The FSC of class II yields a resolution of 7.9 \u00c5. (c) The FSC of class III yields a resolution of 6.4 \u00c5.\n\n![Animation 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-animation2-v1.mp4.jpg)\n\n![Animation 3.](https://cdn.elifesciences.org/articles/76308/elife-76308-animation3-v1.mp4.jpg)\n\nAn efficient classification benefits from some prior knowledge of the structure. To examine the applicability of our method for samples with unknown symmetry or side lengths, we followed a similar procedure as demonstrated by Curd et al., 2021. First, by inspecting the raw distance histogram of our unclassified particles obtained from single distance measurements (two polarization states), we could identify a peak at ~9 nm as the most probable side length of our molecules (see Figure 4a). Next, we assumed three models with different symmetries for pentamers, hexamers and heptamers, but all sharing the same side length of 9 nm. We simulated an equivalent number of projections for each model and correlated them with our experimental data. Then, we used the Akaike information criterion (Portet, 2020; Curd et al., 2021) to find the best model that describes our experimental data (see Materials and methods section). As shown in Figure 4b, we found that the hexamer structure matches our data significantly better than the other models. In addition, we examined a different case of hexamer model with reduced symmetry and found that this model resulted in a considerably worse fit to our data (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig4-v1.jpg)\n\n**Figure 4.:** (a) Histogram of pair-wise distances from particles with two polarization states, showing a clear peak at ~9 nm as the most probable side length of the ClpB molecules. (b) Based on the identified most probable side length we built models of the oligomer with different symmetries, but sharing the same side length of 9 nm, and performed single-particle classification of the experimental images. The AIC criterion shows that the hexamer is the best model. Reducing the symmetry of the hexamer results in a worse fit. (c) Schematic of a model deviating from perfect symmetry. Each corner is allowed to be shifted within a circle of radius R. The classification procedure remains accurate for R \u2264 1 nm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Here we tested the code published by Heydarian et al., 2018 which is a template-free particle-fusion based on all-to-all registration approach. (a\u2013b) First, we fed the coordinates of our 2D super-resolved experimental images obtained from the set of 467 particles used to generate the hexamer structure into the algorithm. Our experimental data samples different 3D orientations. Examples of different initial 2D projections are shown. (c) No clear reconstruction was obtained. (d-e) To explore this code further, we simulated 3D rotations of the structure \u2018tud_ralf\u2019 used in their study with 100% labeling efficiency. We applied rotations around the x axis within \u00b1180 degrees (i.e. not only in-plane rotations as in the original code) and used the code \u2018all-to-all\u2019 to solve the structure. The panels show examples of different initial arrangements for two different orientations. (f) No clear reconstruction was obtained. (g\u2013h) Last, we also used a simulated data set of our own hexamer structure. Here, we simulated 500 particles with 900 localization each, with a localization precision below 1 nm, a labeling efficiency of 50%, and different 3D orientations in order to mimic our experimental conditions. (i) Again, the algorithm fails to deliver a clear reconstruction.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/76308/elife-76308-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** By measuring the polarization signal of multiple fluorophores one can classify the particles in a low-contrast EM sample based on distances and orientation. In the exemplary case on the left (i) molecules are identified based on intermolecular or intramolecular distances, indicated by d1 and d2. The case on the right (ii) illustrates the sorting and sizing of interacting molecules using nanometer distance measurement with multi-color polarCOLD, where Apo proteins (P) and ligand (L) are labeled with different fluorophores, such that the resulting complex (PL) exhibits fluorescence at both wavelengths.\n\nQuantification of the robustness of our approach for samples without symmetry and order goes beyond the scope of our current study, but one simple strategy would be to consider a symmetric structure such as a hexamer and allow for each corner to deviate within a circle of radius R (see Figure 4c). Simulations show that classification of our current data becomes less robust for R>1 nm. We point out that solving a completely disordered structure without any prior knowledge would only be possible for complete labeling.\n\nClassification and reconstruction have recently been applied to other single-molecule localization microscopy studies, and in some cases specific algorithms have been developed to handle some degree of partial labeling (Heydarian et al., 2018; Sieben et al., 2018; Salas et al., 2017). As shown in Figure 4\u2014figure supplement 1, however, the existing algorithms do not provide a satisfactory solution for our data. We attribute this to the fact that the structures in our investigations are randomly oriented in 3D, are strongly under-labeled, and involve classes that are similar. A mathematical analysis of the performance of various algorithms for structures of different morphologies is beyond the scope of our current work.\n\n## Discussion\n\npolarCOLD can be further improved and extended to other modalities, for example via combination with genetic labeling (Hoffman et al., 2020; Dahlberg et al., 2018; Liu et al., 2015; Creemers et al., 2000) or by exploiting the narrow absorption and emission spectra at low temperatures for co-localization of larger numbers of fluorescent markers. However, the currently achieved SNR and Angstrom resolution of cryogenic light microscopy is already capable of providing pivotal solutions for quantitative structural analysis of small proteins as well as large protein complexes and aggregates. A specially promising line of study concerns the conformation of membrane proteins in their native environment. Indeed, an estimated 20% of the human genome encodes membrane proteins and many of them are potential drug targets (Piccoli et al., 2013). The structure and active configuration of many proteins and protein complexes, however, remain out of reach because it is very challenging to crystallize or resolve them in their crowded surrounding (Cheng, 2018). In particular, heterogeneities caused by mobile domains and intrinsic distributions in assemblies cannot be preserved and classified in a robust fashion so that they lead to a smearing effect in the final reconstruction in EM studies (Nwanochie and Uversky, 2019; Serna, 2019; Scheres, 2016; Scheres et al., 2007, Orlova and Saibil, 2004; Papai et al., 2020). A future direction is, thus, to vitrify biological samples via rapid freezing (Dubochet and McDowall, 1981) or high-pressure freezing (Studer et al., 2008; Hoffman et al., 2020) in order to exploit the high spatial resolution, sensitivity and specificity of polarCOLD for identifying and determining the positions and orientations of individual particles of interest in low-contrast EM micrographs.\n\nThe combination of cryogenic light microscopy with cryoEM has attracted attention for cellular and tissue imaging, although the existing reports do not surpass a resolution of about 10 nm (Dahlberg and Moerner, 2021; Hoffman et al., 2020; Dahlberg et al., 2020; Wu et al., 2020; Tuijtel et al., 2019; Wolff et al., 2016; de Boer et al., 2015; Loussert Fonta and Humbel, 2015; Kaufmann et al., 2014b, Chang et al., 2014; Kaufmann et al., 2014a, Faas et al., 2013; Watanabe et al., 2011; Mironov and Beznoussenko, 2009; Agronskaia et al., 2008; Sartori et al., 2007). A very exciting prospect is now to combine polarCOLD and cryoEM on the single-particle level. As illustrated in Figure 4\u2014figure supplement 2, by labeling a functional domain within a single molecule with two or three fluorophores, it should be possible to classify the particles based on conformational changes as indicated by their intermolecular distances. Similarly, by labeling two different protomers or functional domains within a protein complex, it will be possible to group the particles based on intramolecular distances that result from conformational changes between subunits. In addition, while we currently screen different symmetries to find the best model that fits to the structures under study, we plan to explore unsupervised classification schemes for identifying and classifying particles in an unknown sample. In addition, one can exploit the axial information directly and follow a similar approach by Heydarian et al., 2021. Altogether, these approaches will help to overcome various challenges connected to low purification yields and large backgrounds from cell membranes, paving the way to studying samples containing a heterogeneous distribution of similar structures and mapping their energy landscapes.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type(species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>PCNA</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. #: SRP5117</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>ClpB</td>\n      <td>https://doi.org/10.1038/s41467-019-09474-6</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATTO647N Ni-NTA</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. #: 02175\u2013250 UG-F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ATTO647N Maleimide</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. #: 05316\u20131 MG-F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Poly-vinyl alcohol (PVA)</td>\n      <td>Sigma Aldrich</td>\n      <td>Cat. #: 360,627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>6-Hydroxy-2,5,7,8-tetramethylchroman-2-carboxylic Acid</td>\n      <td>TCI Deutschland GmbH</td>\n      <td>Cat. #: H0726</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB 2020a</td>\n      <td>MathWorks</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>UCSF ChimeraX</td>\n      <td>http://www.rbvi.ucsf.edu/chimerax</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DISC</td>\n      <td>DOI: 10.7554/eLife.53357</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>3D reconstruction</td>\n      <td>https://doi.org/10.1016/j.jsb.2015.03.009</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FSC</td>\n      <td>https://www.ebi.ac.uk/emdb/validation/fsc/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein labeling\n\nHis-tagged human PCNA protein was purchased from Sigma Aldrich (catalogue number SRP5117), at a concentration of 6.6 \u00b5M. The protein was specifically labeled via the histidine linker on the N-terminal side of the protein with the dye ATTO647N containing a Ni-NTA functional group which was also purchased from Sigma Aldrich (catalogue number 02175\u2013250 UG-F). First, the protein was desalted to a labeling buffer (25 mM HEPES, 25 mM KCl, pH 7.8) using a 7 K MWCO Zeba desalting column (ThermoFischer, cat. 89882) and then reacted with dyes at a ratio of 1:4 for 2 hr at RT. The protein was then desalted from the excess of dyes using the same desalting column. The labeling efficiency was estimated using an absorption spectrometer (Nanodrop 2000, ThermoFischer) confirming ~100% labeling efficiency. SDS-page and native gel indicated that the protein is indeed assembled and labeled. N-terminal His-tagged ClpB protein, mutated at residue 428 from alanine to cysteine, was purified as described in a previous publication (Mazal et al., 2019). The labeling of the single cysteine was done following the same procedure as describe above with ATTO647N maleimide as a specific labeling agent of the cysteine. Absorption spectroscopy, SDS-page and native gel indicate complete assembly of the protein, see previous publication (Mazal et al., 2019).\n\n### Sample preparation\n\nBoth protein samples were prepared in a similar way, and all the samples were prepared freshly on the same day. Proteins were diluted to a stock solution of 50 nM, in 25 mM HEPES, 25 mM KCl, 10 mM MgCl2, 0.5 mM TCEP at pH 7.8 (working buffer). In the case of ClpB 2 mM ATP was added to stabilize protein assembly. The stock solution of poly-vinyl alcohol (PVA) was prepared as follows: 15 \u00b5l of 8% PVA (0.3% final concentration) was diluted into 345 \u00b5l working buffer containing 1 mM Trolox and 2 mM ATP in the case of ClpB. Then 2 \u00b5l of the protein was mixed with the 360 \u00b5l PVA solution and filtered with a 100 nm spin filter (Whatman Anotop-10). 5 \u00b5l of this mixed solution was then spin coated (30 s at 1000 rpm followed by 3000 rpm for 60 s) onto a plasma-cleaned mirror-enhanced substrate, prepared in house (B\u00f6ning et al., 2021), and immediately loaded into our custom-built cryogenic microscope.\n\n### Experimental setup\n\nAll experiments were performed in a cryogenic microscope that is built around a Janis ST-500 flow cryostat and operates at liquid helium temperature. Samples are loaded onto a cold finger and imaged by a 0.95 NA objective (Olympus MPLAPO 100 x), which is mounted in vacuum, onto two separate EMCCD cameras (Andor iXon) in a polarization-resolved configuration. The field of view spans 211 \u00d7 313 pixels with a pixel size of 190 nm. A more detailed description of the optical setup can be found in B\u00f6ning et al., 2021. The laser intensity used in all experiments was set to ~1 kW/cm2 and images were recorded with 14 ms exposure time, more than five times faster than the typical off-time. Therefore, we are able to capture individual bursts and minimize the probability of overlapping emission from two or more fluorophores in a single frame. For each field of view, we collected a total of 50,000 or 100,000 frames for PCNA and ClpB, respectively.\n\n### Image analysis\n\nWe analyzed raw image stacks from two polarization channels with custom-written MATLAB software. Briefly, we perform dual-channel localization using maximum-likelihood estimation with a Gaussian PSF model. The minor asymmetry due to the 3D dipole orientation causes a small bias of less than 3 nm on average after filtering the data. Mechanical drift during the long acquisition times is first corrected based on image cross-correlation. Localized coordinates from both channels are then registered via an affine transformation and a non-linear correction. Registered PSFs are grouped and their polarization is calculated from the intensities. Single fluorophores are identified via this feature and used as fiducial markers to perform additional drift correction and establish a more precise image alignment via an interpolated map. The residual drift is well below 1 nm and the median registration error is less than 2 nm. Polarization time-traces of multi-fluorophore particles are then analyzed in more detail (see Figure 1\u2014figure supplement 3) by a routine that is based on the DISC algorithm (White et al., 2020) to find the polarization states of multi-fluorophore conjugated particles. Once all polarization states are identified, the associated coordinates are averaged by taking their median to generate a 2D super-resolved image. We took particles which were fitted best to three polarization states and used them for further analysis (see Figure 1\u2014source data 2 for statistics).\n\n### Single-molecule 2D image fitting\n\nTo fit the 2D maps of the human PCNA, we used the theoretical distances obtained from the structural model of human PCNA (PDB: 1AXC) and then we performed a least-squares fit over rotation angles and translation using a simulated annealing algorithm. Two-dimensional cross-correlation of the experimental and simulated maps yield a score better than 0.92. In the case of the hexamer protein, ClpB, we generated a large space of multiple 2D projections, ~25,000 images for each class, using a rotation matrix over x, y, and z axis with an angular resolution of 10\u00b0. The exact distances were evaluated from the real crystal structural model taking the dye linker into account (ClpB model, PDB: 1QVR, and the full assembly model taken from Diemand and Lupas, 2006). Then we performed 2D template matching between experimental data and all the images from the simulated data. Here, we used a 2D cross-correlation algorithm to calculate the similarity index between two images. The correlation score ranges from 0 to 1, where 1 indicates a 100% match. For each experimental image, we select the fit with the highest score as the best fit to our data, and to assign it to a class. Images that were fitted to all classes with a difference below 10% for classes 1 and 3, and 3% for class 2 in the score were excluded from further analysis to avoid smearing (see Figure 3\u2014figure supplement 3).\n\n### Tomography and 3D reconstruction\n\nWe selected the particles which were fitted properly to the simulated 2D projections, that is particles with a cross-correlation score better than 0.9 and a localization precision better than 3 nm. The 2D maps of the particles were then normalized (maximum and width) to perform the 3D reconstruction. For a full 3D reconstruction, we used the subspaceEM algorithm (Dvornek et al., 2015) with default settings and 100 runs. The algorithm was initialized with an elliptical Gaussian placed in the center of the volume. The 2D maps of the trimer protein, PCNA, were constructed using a grid size of 120 \u00d7 120 with a pixel size of 1.5 \u00c5. In the case of the hexamer protein, the grid size was 200 \u00d7 200 with a pixel size of 1.5 \u00c5. The 3D volumes were then processed, fitted to the crystal structures/maps of the dye location and edited using ChimeraX (Goddard et al., 2018). The Fourier shell correlation curves (FSC), were computed using the freely available FSC server, provided by the Protein Data Bank in Europe website (https://www.ebi.ac.uk/pdbe/emdb/validation/fsc/). Here we divide the 2D images into two equally large data sets, and calculate their 3D reconstruction as described above. Then we align the two reconstructed volumes and calculate the FSC and determine the resolution based on half-bit criteria (van Heel and Schatz, 2005).\n\n### Quantitative model selection using the Akaike Information Criterion (AIC)\n\nTo show that our method can infer the proper symmetry of a protein complex, we followed a similar approach as demonstrated by Curd et al., 2021, but taking the random projections into account. First, we simulated multiple projections of a regular pentamer, hexamer and heptamer, all with the same side length of 9 nm. Given their symmetry, we obtain 2, 3, and 4 classes when considering three randomly placed fluorophores, respectively. We also simulated a deformed hexamer (as. 6-mer) composed of two isosceles triangles of 9 nm length on opposing sides of a square with a side length of 4 nm. Here, we need to consider a total of 5 classes. Then, we performed 2D cross correlation of the experimental data with these templates, and we picked the particles with a localization precision better than 3 nm and correlation score better than 0.5. The normalized sum of square residuals (nSSR) for each model is calculated as\n\n$$\nnSSR=\\sumj=1N\\frac{\\sumi=1n1-x_{i}^{2}}{n}\n$$\n\nwhere j is the number of classes, n is the number of images per class, and xi is the score of the classified image. Then, we assessed how well each model fits the data by calculating its AIC value (Portet, 2020; Curd et al., 2021) via $AIC=MlognSSR+2K$, where M is the total number of particles in each model and K is the number of parameters (8, 10, 12, 13 for the pentamer, hexamer, heptamer and deformed hexamer, respectively). K was calculated based on the number of sides in each model, number of distances, and number of classes. For example, the pentamer has 5 sides, 1 distance, and 2 classes.\n\n### Distance fitting\n\nFor more quantitative analysis of the pair-wise distances we used a model described in Weisenburger et al., 2017; B\u00f6ning et al., 2021. In short, we convolve the Rician distribution of the distance between two spots with finite localization uncertainty with the projection onto the image plane given by a cosine function. In the case of the PCNA trimer, we only need to consider a single distance due to the symmetry of the structure.\n\n### Determination of expected measurement yield depending on angular resolution\n\nOur co-localization procedure relies on identifying the unique polarization signature belonging to one of a maximum of N fluorophores within a diffraction limited area. To this end, we can choose to consider the complete distribution of polarization values and identify well-separated peaks (histogram method), or consider polarization information in the time domain and identify recurring levels and transitions between them (DISC algorithm White et al., 2020). Both methods are limited in resolution, that is depending on the signal-to-noise ratio and switching rates there is a smallest difference between any two fluorophore dipole orientations that we are able to resolve. We consider a particle with N fluorophores to be completely resolved if all N-1 pairwise angular separations are above this angular resolution. Thus, the yield of completely resolved particles depends on how well two polarization states can be distinguished. We performed a Monte Carlo simulation to estimate this yield in our measurements. To this end, we generate large sets of N random fluorophore angles in the interval [0\u00b0,90\u00b0] and compute the pairwise differences. For a given angular resolution s between 0.1\u00b0 and 90\u00b0 we then calculate the fraction of particles for which all differences are larger than s. This simple estimation shows that for a case of just 2 fluorophores an angular resolution of 20\u00b0 is already sufficient to achieve a yield of 50%. The same yield for the case of 6 fluorophores, however, requires an angular resolution of 2\u00b0.\n",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "7c3a774a-7fa0-4fb5-9061-a13e76f52fc9",
+      "submission_id": "6b8df72a-3268-44de-9891-6e782303f1cf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Felix Campelo, https://ror.org/03g5ew477 Institute of Photonic Sciences Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76308.sa0](https://doi.org/10.7554/eLife.76308.sa0)\n\nThis paper will be of interest to the structural biology community and people working on cryogenic fluorescence microscopy. This paper is a clear step forward in the use of single-molecule localization microscopy at \u00c5 resolution, thanks to low-temperature polarized super-resolution imaging and advanced data processing algorithms.\n\n\n---\n\n# Peer review - Round 1\n\nEditors:\n- Felix Campelo, https://ror.org/03g5ew477 Institute of Photonic Sciences Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.76308.sa1](https://doi.org/10.7554/eLife.76308.sa1)\n\nOur editorial process produces two outputs: i) public reviews designed to be posted alongside the preprint for the benefit of readers; ii) feedback on the manuscript for the authors, including requests for revisions, shown below. We also include an acceptance summary that explains what the editors found interesting or important about the work.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Deciphering a hexameric protein complex with \u00c5 optical resolution\" for consideration by eLife. Your article has been reviewed by 3 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sophie Brasselet (Reviewer #1).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\nAll three reviewers of this manuscript have pointed out important questions that I'm convinced will help the authors to resubmit a revised paper that is much stronger and clearer. The detailed reviews are enclosed in this email, and I would strongly encourage the authors to address all the questions and comments raised in those reports. That being said, the most important points are listed here (see referee reports for the details):\n\n1) About the non-Gaussian shape of a 3D-oriented dipole PSF: what is its effect on localization precision?\n\n2) Discuss the limitations of the method: requirement for no dipole rotation, orientation discrimination, etc.\n\n3) Discuss a more general/wider applicability of the method: how can this be applied to non-symmetric/unknown complexes. How necessary is it the use of particle symmetry to determine the structures?\n\n4) Discuss the reliability of particle discrimination based on the fluorophore polarization state.\n\n5) Provide a better/fairer comparison of this technique to EM (e.g. number of needed particles, low yield in determination, etc.)\n\n6) Expand on the methods (especially because this is a methods paper), in particular in the image analysis bit.\n\nReviewer #1 (Recommendations for the authors):\n\nSome points, detailed here, need to be addressed to clarify the findings, their conclusion and the claims.\n\n1. Effect of the 3D orientation of the fluorophores.\n\n1.1 Even though the used NA is low and the incident polarization is in the sample plane, the localization precision required here is extreme and necessarily comes in competition with the inacuracy of PSF-centroid determination when the dipole is oriented in 3D. In particular, PSFs from 3D dipoles are not symetric Gaussians anymore. It is quite surprising that the 3D-orientation bias does not surpass, in some situations, the other bias sources in the reported data. This bias needs to be estimated and introduced in the localization accuracy estimation, together with the other inaccuracy sources (noise, drift).\n\n1.2 Is the presence of the mirror-enhanced substrate modifying the expected brightness from dipoles at different axial positions, as well as the 3D-orientation bias mentioned above?\n\n2. Orientational and time emission dynamics of the fluorophores.\n\n2.1 The orientation of the dipoles is considered fixed at low T. The authors should give the expected number for the rotational diffusion of the fluorophore. We would expect that if some degree of rotational motion is permitted by the linker between the dipole and protein, this could be an issue for the reconstruction of the information, even at low T since more orientations will be probable for the measured dipoles.\n\n2.2 It is not clear how the time dynamics of emission of the fluorophores affects the reliability of the discrimination of the different oriented dipoles in the time traces recorded. Is there any need for fine-tuning this on-off dynamics as well as the recording time of the measurement such as only one dipole emits at a time ? Optimal settings rules should be mentioned.\n\n3. Orientational discrimination of fluorophores.\n\n3.1 The authors mention in line 126 \u201cThe maximum number of resolvable polarization states per protein is currently limited to fewer than 5, dictated by the width of the polarization histogram\u201d\n\nHow is this number 5 extracted from the width of the histograms, and how does this number depend on the signal level, possible presence of orientational mobility (see above)?\n\n3.2 Would this number increase if the measurement also includes the quantification of the 3D orientation of the dipoles as mentioned below? If the measurement also includes spectral discrimination in addition to polarization discrimination?\n\n3.3 The previous work by the authors (Boning et al.,) involved important signal thresholding, which was determining in the final dipole-distances assessment. How necessary is the signal thresholding here and what how is the choice of this filtering performed?\n\n3.4 The authors mention in line 128 the necessity to exclude cases where the expected number of polarization states is not well resolved. What is the origin of this effect and is this also a limit of the unsupervised statistical learning algorithm used to treat the time traces?\n\n3.5 The authors mention an angular resolution required for resolving 3 vs 6 fluorophores in a structure. How is the experimental angular resolution measured and what are the experimental sources of errors that can affect this resolution?\n\n4. Classification and reconstruction.\n\n4.1 The fluorophores assignment relies on a robust supervised classification procedure and template matching, which decreases the number of unknowns. How would this classification perform if the structure would contain unknown parameters?\n\n4.2 In Figure 3 \u2014figure supplement 2, it is not visible by eye that some of these figures belong to one class rather than another: some of them look very similar (e.g. aligned 3 dots) and belong to different classes.\n\n4.3 Table S1 shows that the yield to reconstruct 3D information is very low (for ClpB, 100-200 particles are used out of more than 23000 particles detected initially). A lot of particles are also excluded from the analysis because a low-confidence score (line 202). What would be needed to increase this yield and increase the confidence score?\n\n5. Methods\n\n5.1 Is the fact that there is an ambiguity on the projection angle retrieval a problem? Since the orientation measured is confined in the [0-90{degree sign}] range, can't the orientation discrimination be problematic if a whole angle sector is missed in the angles determination?\n\n5.2 How is the 100 photon/frame threshold (Figure S3 legend) chosen, what is the rationale behind in terms of estimation precision and accuracy? Isn't intensity thresholding also excluding 3D dipoles orientations?\n\n5.3 The authors mention in line 160 a model to extract the side lengths of the projected triangles, what are the detail and hypotheses of this model?\n\n5.4 The 3D protein orientation is linked to the spatial repartition of the fluorophores, however there is no mention of the possibility to use the 3D z position of the fluorophores to infer such a 3D information. Can't this axial position be exploited?\n\n5.5 There are several recent techniques developed to infer the 3D orientation from emitting dipoles (using PSF engineering and/or polarization splitting, possibly using radial-polarization filtering). The measurement of the 3D orientation of the fluorophores would be of great value to complete the information with an additional angular parameter, which could increase the number of measurable fluorophores. The authors should comment on this, and possibly test this extension of the approach.\n\n5.6 The abstract (line 43) states that the method \u201cpromises to provide crucial insight into intrinsic, environmental and dynamic heterogeneities of biomolecular structures.\u201d The present method requires a large amount of data to be collected in the context of a known, fixed protein structure which density is highly controlled. It seems therefore very robust in the limited framework of low-level labelling, immoblilized and low concentration proteins, however it is difficult to envision its application in a native, dynamic configuration where diffusion potentially comes into play. The authors should provide more detail about what would be the ingredients needed to enlarge the application range.\n\nReviewer #2 (Recommendations for the authors):\n\nIn Weissenburger 2017, the authors already presented the reconstruction of four fluorophore sites within streptavidin. Overall, I think the manuscript presents an advance of previous developments by the authors, but the generalizability and applicability to more complex samples remain partly open. This could be discussed in more detail.\n\n1) Fluorophore discrimination depends on the correct assignment of the different polarization states. It would be good to include a representation of the uncertainties in fluorophore assignment and the resulting filtering procedure. For clarity, it would also help to color-code the different fluorophores as identified from the polarization state in the scatter plots. For example in Figure 2A, some spots appear larger or have an irregular shape, which could be associated with the uncertainty (as mentioned above) or the result of overlapping molecules for which a color code could help.\n\n2) I am wondering about how generalizable the described reconstruction approach is or can be with respect to non-symmetric complexes or mixed samples of multiple protein species. To what extent does the reconstruction rely on prior knowledge of the investigated proteins? For example, the simulations used to classify the triangle images in the case of ClpB. What are the boundaries of these simulations (distance, angle, etc)? Is it possible to combine this with existing pattern extraction schemes (i.e. Curd, 2020)? Also, would more classes be helpful in increasing the precision or applicability of the approach? Particle reconstruction typically relies on many more classes unless some of them are redundant due to symmetries.\n\nReviewer #3 (Recommendations for the authors):\n\nThe paper by Mazal, Wieser and Sandoghdar presents a method to image molecular complexes with light microscopy, but still obtain resolutions/localization uncertainties of fluorescent labels that have been limited to cryo EM.\n\nThis submission build upon earlier work from the same group (Weisenburger 2017 and Boning 2021). The polarisation detection does not increase the sparsity compared to Weisenburger, but on the detection side they can identify different emitters based on their fixed dipole emission as shown in Boning. They further improve the sparsity, by explicit under labelling which later is compensated by particle registration and averaging. Compared to Boning the submission adds 3D reconstructions of two molecular complexes from 2D under labelled structures. The polarisation and localization method is improved technically, but the concept was already there.\n\nThe presented methodology and results are overall very nice.\n\nIn the following a few remarks and details that could help to improve the manuscript or that are unclear to me.\n\n\u2013 Abstract: many it would good to directly state to how many sites you extend the method (l34).\n\nIn how far was the use of a supervised classification and use of particle symmetry really needed? (l93) Typically in cryoEM the use of symmetry is only needed to increase the resolution or in the absence of a large number of particles. What does the method deliver if the symmetry is not implied? That is a strong prior knowledge assumption and hinders discovery of new insights. The supervised classification is similar as model assumptions could be brought into the reconstruction.\n\nIn the introduction it would be nice to mention the idea of Hafi et al., Fluorescence nanoscopy by polarization modulation and polarization angle narrowing. Nature Methods, 11:579-584, 2014. and also Hulleman et al., Fluorescence polarization control for on-off switching of single molecules at cryogenic temperatures. Small Methods, page 1700323, 2018. Similar ideas to exploit polarisation of the fixed dipole emitters have been introduced here too.\n\nl112 the polarisation state give the in-plane dipole angle. Would the method benefit from an estimation of the polar angle in addition? around l125 this could increase the number of resolvable polarisation states, but this might not be the limiting factor but the sparsity of the blinking?\n\nl132 After localizations and identifying emitters by their polarisation state, how is the average position computed? Is that done weighted by the photon count?\n\nl162 The remark the only 119 particles are needed for a reconstruction and not many more as in cryo EM is a bit misplaced. The information density in the LM is very low (only the few coordinates of the particles), while the EM map is a full image with millions of pixels that contain information. In addition early LM particle averaging results have used also hundredth of particles only typically. In addition the benefit of increasing the number of particles in LM is diminishing, because the additional particles cannot improve the localization precision but only fill in missing information thereby increasing the SNR. For cryo EM the resolution scale as sqrt(N) with number of particles, for LM this is much worse and eventually zero.\n\nl181 Could you provide the t_on and t_off for the emitters. The 50% underlabelling is based on their ratio?\n\nl203 \"better 3 nm\" -> better than 3 nm.\n\nl205 yield of 7,46% point and comma not correct. 2 digits behind comma not needed. In addition why was the yield so low? Even if you consider that the polarisation state removes 3/4 of the particles the yield is still low. In cryoEM most particles needs to be removed due to damage resulting from stress close to the air water interface. What could be the reason here?\n\nl 217 The claim to \"all possible orientations\" is a bit strong. I do not see why the 3 citations, in particular Huijben and Sieben, cannot deal with data in all possible orientations. I would argue that up to now, either the particles in a top-down configuration have been images because the structure was 2D or in the case of the much used NPC because the nuclear envelope is running nearly parallel to the cover slip. Therefore the NPC only have a limited tilt range. In conclusion, the claim to being the first is a big too much, as this is certainly not a methodical advance.\n\nl277 the amount of Trolox 1mM seems quite a lot. Is this needed to suppress triplet states?\n\nl288 What is the physical pixel size of the camera. The model is not stated, but the back projected size is stated as 190 nm with a 100x objective. This information is also not present in the supplement of Boning2021.\n\nl290-298 Image analysis.\n\nThis part is vague on the details. Is the code available? I think as the analysis is not standard this needs to be open. The Poisson-weighted Gaussian MLE, what is that? Fitting a Gaussian function with Poisson likelihood? Will not polarisation effects of the restricted dipole play a role already at 0.95NA? (see Stallinga 2010, Optics Express 18:24461 and Engelhardt 2010, NanoLetters 11:209). The drift correction is non-linear, but for the rest it is totally unclear how it works. However, that is quite important as the acquisition time is a bit less than 1h.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your article \"Deciphering a hexameric protein complex with \u00c5 optical resolution\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Volker D\u00f6tsch as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this to help you prepare a revised submission.\n\nEssential revisions:\n\n1) Please, consider answering the 3 specific comments from Reviewer #3, which need no new experiments, just clarification in the text and maybe some simple extra data analysis.\n\nReviewer #2 (Recommendations for the authors):\n\nThe authors have done well in responding to my comments, which at least partly came from misreading and/or misunderstanding on my side. The paper remains a difficult read but shows a clear step forward in using low temperature to increase SNR in single-molecule imaging.\n\nReviewer #3 (Recommendations for the authors):\n\nOverall the authors did a very nice job with the revision. I would support the publication of the manuscript.\n\npoint (2) I strongly disagree that classification is needed and an assumption of symmetry. Many published averaging techniques for LM deal exactly with the problem described by the authors \"In that sense, the incompletely labelled object inherently behaves as a heterogenous sample with multiple labelling configurations and distances\". This is why most of the cryo-EM algorithms fail when applied to strongly under labelled data, they see the different labelling states as different classes. Please have a look at the work of Heydarian et al., (Nat Methods 2018, Nat Com 2021), Sieben et al., (Nat Methods 2018), Salas et al., (PNAS 2017), Shi et al., (PLOS one 2019) and maybe others.\n\nThe question at hand is, if the under labelling here is so severe that indeed the above methods cannot deliver a good reconstruction. From my own experience somewhere between 30-50% degree of labelling is needed to obtain a meaningful reconstruction. However, this depends also on the absolute number of sites. Some of the above papers have open access code, it might be worthwhile to try this at least.\n\nThe approach to validate their model via the AIC is good. The idea from Curd et al., have been well incorporated as this method typically only can learn something for the nearest neighbour distance, exactly what it has been used for her.\n\npoint (5) The average best position of a set of localisations from the same molecule is typically done by photon weighted averaging not median computation? If there are strong outliers which suggest the use of the median, maybe it would be better to remove the outliers first and then compute a weighted average?\n\npoint (13) I see that the author fit a 2D Gaussian, at the expense of a bit of blurring due to model mismatch. I would expect that the random dipole orientation do not average about but give rise to a large standard deviation of the localization than strictly needed with a correct model fitting. The localization will be unbiased due to the randomness, but it will result in a bit of extra blurring.\n",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a458e6ed-d510-42a1-b5e3-382a128ca166",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C1",
+      "claim": "COLD was recently shown to resolve up to four binding sites on a single protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryogenic optical localization in three dimensions (COLD) was recently shown to resolve up to four binding sites on a single protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract without specific data or citation in this sentence, but is a claim about prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "0a3a5e97-dac0-402c-a7ad-9278929b5af8",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C2",
+      "claim": "COLD relies on intensity fluctuations that result from the blinking behavior of fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because COLD relies on intensity fluctuations that result from the blinking behavior of fluorophores, it is limited to cases where individual emitters show different brightness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the COLD method based on established knowledge of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "65ea0e16-8383-40b2-959b-5e8f1eaaf773",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C3",
+      "claim": "COLD is limited to cases where individual emitters show different brightness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because COLD relies on intensity fluctuations that result from the blinking behavior of fluorophores, it is limited to cases where individual emitters show different brightness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the COLD method based on its operational principle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "d4a79c4b-c2b4-4287-a8d6-d05ad82a6ea5",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C4",
+      "claim": "The brightness limitation of COLD significantly lowers the measurement yield.",
+      "claim_type": "EXPLICIT",
+      "source": "This significantly lowers the measurement yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the brightness limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6b96b321-1164-43dd-bdba-d1969031e2f6",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C5",
+      "claim": "polarCOLD employs partial labeling combined with polarization encoding to identify single fluorophores during stochastic blinking.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend the number of resolved sites as well as the measurement yield, we employ partial labeling and combine it with polarization encoding in order to identify single fluorophores during their stochastic blinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "c726b32e-0620-4700-a4c7-e889d979f5cc",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C6",
+      "claim": "polarCOLD uses a particle classification scheme to identify and resolve heterogenous subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We then use a particle classification scheme to identify and resolve heterogenous subsets and combine them to reconstruct the three-dimensional arrangement of large molecular complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a12f975d-6981-41d6-93a1-7456e391acbe",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C7",
+      "claim": "polarCOLD resolves the trimer arrangement of PCNA with Angstrom resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We showcase this method (polarCOLD) by resolving the trimer arrangement of proliferating cell nuclear antigen (PCNA) and six different sites of the hexamer protein Caseinolytic Peptidase B (ClpB) of Thermus thermophilus in its quaternary structure, both with Angstrom resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "d508e529-5270-464e-9d87-d6aa2f2e6463",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C8",
+      "claim": "polarCOLD resolves six different sites of the hexamer protein ClpB with Angstrom resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We showcase this method (polarCOLD) by resolving the trimer arrangement of proliferating cell nuclear antigen (PCNA) and six different sites of the hexamer protein Caseinolytic Peptidase B (ClpB) of Thermus thermophilus in its quaternary structure, both with Angstrom resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "9b778b90-5031-4bc8-9292-3f92a978e20c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C9",
+      "claim": "The combination of polarCOLD and single-particle cryogenic electron microscopy promises to provide crucial insight into intrinsic heterogeneities of biomolecular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of polarCOLD and single-particle cryogenic electron microscopy (cryoEM) promises to provide crucial insight into intrinsic heterogeneities of biomolecular structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about the potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "cefd1096-7454-43a1-9bf9-e00813a760b0",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C10",
+      "claim": "polarCOLD is fully compatible with fluorescent protein labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our approach is fully compatible with fluorescent protein labeling and can, thus, be used in a wide range of studies in cell and membrane biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "aa3c2513-de0b-47fc-8524-a39673eb915b",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C11",
+      "claim": "Proteins and their assemblies govern every aspect of cellular physiology in both healthy and disease states.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins and their various assemblies are among the main constituents of all living systems and govern every aspect of cellular physiology in both healthy and disease states (Nelson, 2017; Mavroidis et al., 2004; Schliwa and Woehlke, 2003; Alberts, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "008a4e71-023b-49e0-9879-62d9f77140e7",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C12",
+      "claim": "Understanding the spatial arrangements and heterogeneous configurations of proteins is crucial for elucidating their molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A full understanding of their spatial arrangements and associated heterogeneous configurations is crucial for elucidating their molecular mechanisms, helps guide the engineering of new proteins, and is a great asset for drug discovery (Renaud et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b60ec0ec-7b48-4935-a63f-2b1bb35f80bf",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C13",
+      "claim": "X-ray crystallography has been used to gain insight into protein structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, since the pioneering work of Perutz on protein crystals (Fersht, 2008), a variety of techniques such as X-ray crystallography (Shi, 2014) and nuclear magnetic resonance (NMR) spectroscopy (Kanelis et al., 2001) have been explored for gaining insight into protein structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "29967881-8731-48da-80d9-5abf474e0b94",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C14",
+      "claim": "NMR spectroscopy has been used to gain insight into protein structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, since the pioneering work of Perutz on protein crystals (Fersht, 2008), a variety of techniques such as X-ray crystallography (Shi, 2014) and nuclear magnetic resonance (NMR) spectroscopy (Kanelis et al., 2001) have been explored for gaining insight into protein structure and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "c51b3c36-a9ca-4354-a78d-96ec2d7fabb9",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C15",
+      "claim": "Advances in sample preparation, detector technology, and image processing have enabled atomic resolution in cryoEM studies of protein structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in sample preparation, detector technology, and image processing based on single-particle analysis have also ushered in atomic resolution in cryogenic electron microscopy (cryoEM) studies of protein structure (Nakane et al., 2020; K\u00fchlbrandt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "721c35bb-3b5f-46c3-8eb5-1e214b9000a1",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C16",
+      "claim": "Lack of specific labeling in cryoEM makes it challenging to identify small variations such as structural inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherent resolution of this method is highly desirable, but lack of specific labeling makes it challenging to identify small variations such as structural inhomogeneities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of cryoEM based on the nature of the technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3f19c1e5-20dc-4e0a-98ab-b024dd398c41",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C17",
+      "claim": "Fluorescence microscopy draws its success from exquisite specificity in labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence microscopy, on the other hand, draws its success from an exquisite specificity in labeling, but has traditionally suffered from a limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of fluorescence microscopy based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "c9aa6a40-3bab-46c8-8295-3418c70bc4ff",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C18",
+      "claim": "Fluorescence microscopy has traditionally suffered from limited resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence microscopy, on the other hand, draws its success from an exquisite specificity in labeling, but has traditionally suffered from a limited resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a historical limitation of fluorescence microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "fc527045-2221-4129-aea1-7d96d2ec2fb1",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C19",
+      "claim": "Super-resolution fluorescence microscopy has opened new avenues for studying subcellular organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent advent of super-resolution (SR) fluorescence microscopy has opened new avenues for studying subcellular organization and is on the way to become a workhorse for biological studies (Lelek et al., 2021; Sahl et al., 2017; Weisenburger and Sandoghdar, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "82904236-2aaa-4476-9bf2-855fa026d894",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C20",
+      "claim": "Conventional SR microscopy at room temperature is not considered a contestant in structural biology for Angstrom-level information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, conventional SR microscopy performed at room temperature is still not considered as a contestant in the arena of structural biology, where Angstrom-level information about the molecular architecture of proteins and protein complexes is sought after.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of conventional SR microscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "289173f7-ae92-436d-b035-9b8a013f92ec",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C21",
+      "claim": "Performing measurements under cryogenic conditions can push the limit of fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "To push the limit of fluorescence microscopy, one can perform measurements under cryogenic conditions (B\u00f6ning et al., 2021, Hoffman et al., 2020; Dahlberg et al., 2020; Moser et al., 2019; Wang et al., 2019; Hulleman et al., 2018b, Xu et al., 2018; Weisenburger et al., 2017; Furubayashi et al., 2017; Li et al., 2015; Weisenburger et al., 2014; Weisenburger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "db9f4ac4-3d47-4fc7-92ab-eb70f39da497",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C22",
+      "claim": "Cryogenic conditions slow down photochemistry, allowing each fluorophore to emit several orders of magnitude more photons than at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to slowing down photochemistry, which allows each fluorophore to emit several orders of magnitude more photons than at room temperature (Li et al., 2015; Weisenburger et al., 2014; Weisenburger et al., 2013), a key advantage of cryogenic temperatures is in offering superior sample preservation and high stability for Angstrom-scale structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "437f9429-51a2-4cf1-a555-4403a898bf68",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C23",
+      "claim": "Cryogenic temperatures offer superior sample preservation and high stability for Angstrom-scale structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to slowing down photochemistry, which allows each fluorophore to emit several orders of magnitude more photons than at room temperature (Li et al., 2015; Weisenburger et al., 2014; Weisenburger et al., 2013), a key advantage of cryogenic temperatures is in offering superior sample preservation and high stability for Angstrom-scale structural studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of cryogenic conditions based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "64d9e914-1705-4c18-880d-a4325838d189",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C24",
+      "claim": "COLD gave access to the positions of up to four labeling sites on a single protein using stochastic intensity blinking of organic dyes.",
+      "claim_type": "EXPLICIT",
+      "source": "In one implementation, cryogenic optical localization in 3D (COLD) was introduced, where the stochastic intensity blinking of organic dyes gave access to the positions of up to four labeling sites on a single protein (Weisenburger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "4b3ae63b-db74-4aab-aca9-f044a387fa89",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C25",
+      "claim": "A more robust protocol was employed to identify individual fluorophores by exploiting the polarization of fluorescence light dictated by fluorophore orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently employed a more robust protocol to identify individual fluorophores by exploiting the polarization of the fluorescence light dictated by the fluorophore orientation (B\u00f6ning et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "4f7666c2-51f2-4f7c-9ee1-9486a42747d0",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C26",
+      "claim": "The polarization-based method was validated by measuring single distances on one-dimensional DNA nanorulers.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter method was validated by measuring single distances on one-dimensional DNA nanorulers (B\u00f6ning et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "54dd9a21-d4a4-4b3c-a15d-df6c8d3f05bf",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C27",
+      "claim": "Control of fluorescence signal via polarization modulation offers an alternative to random blinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Control of the fluorescence signal via polarization modulation has also been shown to offer an alternative to random blinking (Hulleman et al., 2018a, Hafi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "4d881b0c-d63f-462d-a8a2-e8d1fe3bfbdb",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C28",
+      "claim": "Distances and arrangements of protein complexes can be determined by combining images recorded from under-sampled structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we show that the distances and arrangements of protein complexes can be determined by combining images recorded from under-sampled structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the current study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "af56fe8b-5a62-4fa0-863b-15ae8f128139",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C29",
+      "claim": "PCNA is a central functional unit in genome repair and replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferating cell nuclear antigen (PCNA) is a central functional unit in genome repair and replication (Bruck and O'Donnell, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "2616c9d7-ce60-45a0-9577-5b0e858dcc38",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C30",
+      "claim": "The structure of PCNA was solved by X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of this complex protein was solved by X-ray crystallography (Georgescu et al., 2008) and more recently by cryoEM (Madru et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "c8201e2a-70d6-4684-98b7-f53d0e425a35",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C31",
+      "claim": "The structure of PCNA was solved by cryoEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of this complex protein was solved by X-ray crystallography (Georgescu et al., 2008) and more recently by cryoEM (Madru et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "0ebd62ca-5168-44e0-87e1-49bc70fd61bd",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C32",
+      "claim": "PCNA forms a stable homo-trimer with a pseudo-hexameric shape.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have shown that PCNA forms a stable homo-trimer with a pseudo-hexameric shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "1ea19260-c08b-4a36-923f-527914ed1185",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C33",
+      "claim": "Human PCNA was fully labeled via a His-tag linker on the N-terminal side of each subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "To study human PCNA with polarCOLD, we first fully labeled it via a His-tag linker on the N-terminal side of each subunit of the protein, forming an equilateral triangle (see Materials and methods section and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3bb63b5c-57b6-4a32-b9db-ac0010c82ca0",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C34",
+      "claim": "PCNA complexes were embedded in a hydrophilic poly-vinyl alcohol (PVA) matrix at sub-nanomolar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA complexes were then embedded in a hydrophilic poly-vinyl alcohol (PVA) matrix at sub-nanomolar concentration and spin-coated on a mirror-enhanced substrate (see B\u00f6ning et al., 2021 for in-depth characterization of the mirror-enhanced substrate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "f75f10e1-e8cc-4e4b-b63d-03135a3f7def",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C35",
+      "claim": "The resulting density corresponds to fewer than one protein per \u03bcm2 on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting density corresponds to fewer than one protein per \u03bcm2 on average so that individual proteins can be easily identified in diffraction-limited imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions achieved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b2a91fde-0bbe-48cf-a6c8-f2695894ae1b",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C36",
+      "claim": "A polarizing beam splitter in the detection path allows determination of the orientation of dipole-like emitters projected onto the angular interval \u03b8 \u03f5 [0\u00b0, 90\u00b0] in the imaging plane.",
+      "claim_type": "EXPLICIT",
+      "source": "A polarizing beam splitter in the detection path allows us to determine the orientation of dipole-like emitters projected onto the angular interval \u03b8 \u03f5 [0\u00b0, 90\u00b0] in the imaging plane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "81462322-8714-4b76-acd5-6269351124f4",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C37",
+      "claim": "The high photostability of fluorophores at T=4 K allows collection of on average 260 photons per frame (per 14 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "The high photostability of the fluorophores at T=4 K allows us to collect on average 260 photons per frame (per 14 ms) from a single fluorophore with a total number of registered photons exceeding 106 after 50,000 frames (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "734afe90-aa1a-442f-95e1-6e4813b09d43",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C38",
+      "claim": "The total number of registered photons exceeds 106 after 50,000 frames.",
+      "claim_type": "EXPLICIT",
+      "source": "The high photostability of the fluorophores at T=4 K allows us to collect on average 260 photons per frame (per 14 ms) from a single fluorophore with a total number of registered photons exceeding 106 after 50,000 frames (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a94f91ad-776c-452c-a559-280d5877b880",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C39",
+      "claim": "Long photo-blinking off-times allow identification of each of the three fluorophores on a given protein complex separately.",
+      "claim_type": "EXPLICIT",
+      "source": "The long photo-blinking off-times (Figure 1\u2014figure supplement 2d) allow one to identify each of the three fluorophores on a given protein complex separately (Weisenburger et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a5b6a57f-b896-47d1-851d-222e7b0d19eb",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C40",
+      "claim": "An algorithm combining unsupervised statistical learning tools with change-point detection was used to fit polarization histograms.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve the polarization histograms in cases where they partially overlap (see, e.g., Figure 1c), we fit the data using an algorithm that combines unsupervised statistical learning tools with change-point detection in a model-independent manner (White et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b73375aa-cd5c-4c64-8a60-d32e90890d2f",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C41",
+      "claim": "Polarization states can be robustly identified over time to assign the signal in each frame to a single fluorophore.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated by the red traces in Figure 1b and c, we can robustly identify the polarization states over time and hence assign the signal in each frame to a single fluorophore.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6a9250df-28c8-4dfc-837a-a71ca9e94b08",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C42",
+      "claim": "Random assignment of frames resulted in single, unresolved spots, verifying the robustness of the assignment procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "We also verified the robustness of our assignment procedure by performing random assignment of frames, which resulted in single, unresolved spots (see Materials and methods section and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment described in the text and shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "c1c9c2e1-eab7-4874-9450-937d39299fc8",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C43",
+      "claim": "The number of fluorophores that can be simultaneously resolved depends on the blinking on-off dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of fluorophores that can be simultaneously resolved depends on the blinking on-off dynamics (see Materials and methods section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "389ab2dd-1068-4e2d-9e94-a87979286a08",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C44",
+      "claim": "Shot noise determines the angular resolution and thus the maximum number of resolvable polarization states per protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shot noise determines the angular resolution and, thus, the maximum number of resolvable polarization states per protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental limitation based on physics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "1198c764-fa14-4862-b33e-489eaf6ebf12",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C45",
+      "claim": "The angular resolution directly affects the yield of resolved particles.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, directly affects the yield of resolved particles (see Figure 1\u2014figure supplements 5\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplements 5\u20136.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "bd65b046-e637-4fb0-bf19-5c2b346dafd0",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C46",
+      "claim": "With an experimental angular resolution of ca. 5\u00b0, 70% of particles containing 3 fluorophores can theoretically be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "By taking the experimental angular resolution of ca. 5\u00b0 (Figure 1\u2014figure supplements 5\u20136), we can theoretically expect to resolve 70% of the particles which contain 3 fluorophores, and roughly 15% of the particles which contain 6 fluorophores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on theoretical calculations using experimental parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "add148dd-b361-4306-be30-1daa37100187",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C47",
+      "claim": "With an experimental angular resolution of ca. 5\u00b0, roughly 15% of particles containing 6 fluorophores can theoretically be resolved.",
+      "claim_type": "EXPLICIT",
+      "source": "By taking the experimental angular resolution of ca. 5\u00b0 (Figure 1\u2014figure supplements 5\u20136), we can theoretically expect to resolve 70% of the particles which contain 3 fluorophores, and roughly 15% of the particles which contain 6 fluorophores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on theoretical calculations using experimental parameters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "f264b244-3f48-4aa6-a6b7-390846cb298c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C48",
+      "claim": "Adding a second polarization basis at a tilt of 45\u00b0 would allow doubling the angular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding a second polarization basis at a tilt of 45\u00b0, would allow one to double the angular space (Stallinga and Rieger, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "39ca1fd4-f851-4b44-ad47-5bcf8a198794",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C49",
+      "claim": "Using polarized illumination and full 3D characterization of dipole moments would result in less overlap and enhanced capacity for identifying different polarization states.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using polarized illumination (Backer et al., 2016; Zhanghao et al., 2019) and a full 3D characterization of the dipole moments (Lieb et al., 2004; Mortensen et al., 2010; Hulleman et al., 2021) would result in less overlap and thus enhanced capacity for identifying different polarization states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "af233283-386f-4daa-85dc-543f681d9855",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C50",
+      "claim": "The reconstructed fluorophore volumes agree well with the crystal structure of PCNA protein containing three identical subunits in an equilateral triangle.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2b shows that the reconstructed fluorophore volumes (red spheroids) agree well with the crystal structure of the PCNA protein (PDB: 1AXC) containing three identical subunits in an equilateral triangle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "f04abfdf-f1a7-40f4-ac7c-9b18696fdfca",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C51",
+      "claim": "The 3D reconstructed volumes correlate very well (0.96 correlation score) with the simulated accessible volumes when taking the dye linker into account.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by taking the dye linker into account and calculating the accessible volume (Kalinin et al., 2012), we found that our 3D reconstructed volumes correlate very well (0.96 correlation score) with the simulated accessible volumes (see Figure 2b, Animation 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of the data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6fbbaddb-2abd-4017-ba0f-ed70dab0a5c8",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C52",
+      "claim": "The Fourier shell correlation of the two half data sets gives a resolution of 4.9 \u00c5 based on the half-bit criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fourier shell correlation (FSC, blue curve) of the two half data sets gives a resolution of 4.9 \u00c5 based on the half-bit criterion (red curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2c and represents a quantitative measure of resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "71cc6534-fc35-4beb-a5ce-cff8c07bb4af",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C53",
+      "claim": "The reconstructed side length of PCNA is 9.9\u00b10.6 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The model fit (red) takes the finite localization uncertainty and the random particle orientation into account, resulting in 9.9\u00b10.6 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2d and represents a quantitative measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "172830f7-c76b-4c76-aacb-ae2f6379471d",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C54",
+      "claim": "The reconstructed 3D volume of PCNA was calculated from 119 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed 3D volume was calculated from 119 particles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption for Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a3f72cde-28f5-4391-a720-13687e499c4e",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C55",
+      "claim": "The high SNR of the method and low information density per particle deliver good results from 119 particles, which is two to three orders of magnitude lower than required for typical cryoEM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the high signal-to-noise ratio (SNR) of the method (see, e.g, Figure 2a), and the comparatively low information density per particle, deliver a good results from a total of 119 particles (see Figure 1\u2014source data 2 for overall statistics), which is two to three orders of magnitude lower than the number required for typical cryoEM measurements (Cheng et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a comparison to cryoEM, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "af24eed1-b76e-47e0-93fc-1bb187c75250",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C56",
+      "claim": "The low SNR in cryo-EM requires data from a large number of particles to be averaged to establish 2D classes before 3D reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the low SNR in cryo-EM requires data from a large number of particles to be first averaged to establish 2D classes before using them for 3D reconstruction (Rosenthal and Henderson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of cryoEM, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "e4fa8c2d-8c5d-484c-a206-12a55897e92f",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C57",
+      "claim": "In polarCOLD, each 2D projection directly contributes to the 3D reconstruction process.",
+      "claim_type": "EXPLICIT",
+      "source": "In our case, each 2D projection directly contributes to the 3D reconstruction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the polarCOLD method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "efee1506-c6d7-44b0-8ab3-8137f1796410",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C58",
+      "claim": "ClpB is a molecular machine that rescues proteins from aggregation within cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ClpB is a molecular machine that rescues proteins from aggregation within cells (Doyle et al., 2013), and its structure was shown to be very stable in the presence of ATP at low concentrations (Mazal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "dc6ee271-a381-4401-85cc-6489581ae024",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C59",
+      "claim": "The structure of ClpB was shown to be very stable in the presence of ATP at low concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "ClpB is a molecular machine that rescues proteins from aggregation within cells (Doyle et al., 2013), and its structure was shown to be very stable in the presence of ATP at low concentrations (Mazal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "e9501163-4d23-4874-8683-9ac7e247a527",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C60",
+      "claim": "ClpB was labeled at residue S428C such that the distance between two adjacent labeling sites is expected to be 9 nm after accounting for the dye linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we labeled the M-domain of the protein at residue S428C such that the distance between two adjacent labeling sites is expected to be 9 nm after accounting for the dye linker (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design and expected outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b987c00e-fc07-48ef-9078-5576da106371",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C61",
+      "claim": "The labeling efficiency was deliberately reduced to 50% to allow for 1/3 of the particles to carry three fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "We deliberately reduced the labeling efficiency to 50% in order to allow for 1/3 of the particles to carry three fluorophores as estimated by the binomial distribution (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental strategy based on statistical considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "086fa29d-ce38-40b3-a7ff-8d6da057b946",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C62",
+      "claim": "About 510 photons per frame on average were obtained from ClpB samples.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained about 510 photons per frame on average and a significantly higher total number of photons after 100,000 frames since 87% of the molecules survived until the end of the acquisition interval (see Figure 3\u2014figure supplement 1c-g for photo-physics charectrization).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6f9399cd-5836-4b7e-8b17-75fd7ef63c1e",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C63",
+      "claim": "87% of ClpB molecules survived until the end of the acquisition interval.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained about 510 photons per frame on average and a significantly higher total number of photons after 100,000 frames since 87% of the molecules survived until the end of the acquisition interval (see Figure 3\u2014figure supplement 1c-g for photo-physics charectrization).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "493614cd-73fc-470b-a643-6017949f4f4f",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C64",
+      "claim": "Particles carrying three labels inherently fall into three distinct classes (I, II, and III) with multiple pair-wise distances of approximately 9, 15, and 18 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Particles carrying three labels inherently fall into three distinct classes (I, II, and III) with multiple pair-wise distances of approximately 9, 15, and 18 nm (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the geometry of the hexamer structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "103c1862-f0b4-43e9-9a1d-704ca5181094",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C65",
+      "claim": "A supervised classification scheme was used to assign each 2D image to one of the three classes.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the resulting triangle images, we used a supervised classification scheme (Gao et al., 2004) to assign each 2D image to one of the three classes, taking the angle of its plane into account.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "9a4cecde-9d39-4c8e-9adb-6b9bff1103ff",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C66",
+      "claim": "Template matching based on simulated ground truth images showed an accuracy of 98% in classification.",
+      "claim_type": "EXPLICIT",
+      "source": "A control based on simulated ground truth images obtained from the crystal structure of ClpB showed an accuracy of 98% in template matching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the classification method using simulated data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "9025e315-6cc3-4441-bdec-9b6f8adcb946",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C67",
+      "claim": "232, 100, and 135 particles were obtained for classes 1, 2, and 3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we obtained 232, 100, and 135 particles for classes 1, 2, and 3, respectively, representing a yield of ~7% for all the particles detected with three polarization states (see Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6091454f-3b10-492c-8c17-fe1e037be862",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C68",
+      "claim": "The yield of classified particles represents ~7% for all particles detected with three polarization states.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we obtained 232, 100, and 135 particles for classes 1, 2, and 3, respectively, representing a yield of ~7% for all the particles detected with three polarization states (see Figure 1\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the experimental outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "dae79312-9445-49fd-b548-1e3648681e7c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C69",
+      "claim": "The reconstructed 3D volumes fit very well to the probable locations of the dye on the protein structure given by the accessible volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, as illustrated in Figure 3b, the reconstructed 3D volumes fit very well to the probable locations of the dye on the protein structure given by the accessible volumes (circles) on each protomer after taking the dye linker into account.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "07b6e11d-3ab0-4063-9752-8ef472d89be6",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C70",
+      "claim": "The correlation scores between the reconstructed 3D volumes and the accessible volumes of the dyes were 0.98, 0.96, and 0.86 for classes I, II, and III, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation scores between the reconstructed 3D volumes and the accessible volumes of the dyes were 0.98, 0.96, and 0.86 for classes I, II, and III, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the agreement between experimental and theoretical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "07e2cb24-d269-4fae-9299-4932dece763c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C71",
+      "claim": "Reconstruction of unclassified 2D images confirmed that no structure was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, we also performed a reconstruction of unclassified 2D images, and confirmed that no structure was identified (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "7940dc38-28df-4478-954f-9c995616dcfb",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C72",
+      "claim": "The FSC curves suggest resolutions of 4.0, 7.9, and 6.4 \u00c5 for classes I, II, and III, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the FSC curves of the volumes (see Figure 3\u2014figure supplement 5a-c) suggest an exquisite resolution of 4.0, 7.9, and 6.4 \u00c5, for classes I, II, and III, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 5 and represents quantitative measures of resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "ab3a60dc-024c-421a-8da8-e4773b6a5dd3",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C73",
+      "claim": "By inspecting the raw distance histogram of unclassified particles, a peak at ~9 nm was identified as the most probable side length.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by inspecting the raw distance histogram of our unclassified particles obtained from single distance measurements (two polarization states), we could identify a peak at ~9 nm as the most probable side length of our molecules (see Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4a and represents an analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "e04a8035-f396-4374-aa43-577f9afc30f7",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C74",
+      "claim": "The Akaike information criterion was used to find the best model that describes the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we used the Akaike information criterion (Portet, 2020; Curd et al., 2021) to find the best model that describes our experimental data (see Materials and methods section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "579a0996-d920-4320-8f19-b23cab856ac9",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C75",
+      "claim": "The hexamer structure matches the experimental data significantly better than pentamer or heptamer models.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4b, we found that the hexamer structure matches our data significantly better than the other models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4b and represents a quantitative comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a7819180-f679-43be-82ff-aa842bcf2838",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C76",
+      "claim": "A hexamer model with reduced symmetry resulted in a considerably worse fit to the data.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we examined a different case of hexamer model with reduced symmetry and found that this model resulted in a considerably worse fit to our data (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4b and represents a quantitative comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "59b17c4a-bc84-48d1-8de7-c21554e29237",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C77",
+      "claim": "Classification of the current data becomes less robust for deviations R>1 nm from perfect symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations show that classification of our current data becomes less robust for R>1 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on simulation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "590285e3-1e7d-4eb7-9232-bb1b71491c96",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C78",
+      "claim": "Solving a completely disordered structure without any prior knowledge would only be possible for complete labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "We point out that solving a completely disordered structure without any prior knowledge would only be possible for complete labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "8ea4b8f8-6bd8-4206-9ec8-9cdca188d068",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C79",
+      "claim": "Existing algorithms do not provide a satisfactory solution for the data in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4\u2014figure supplement 1, however, the existing algorithms do not provide a satisfactory solution for our data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "bb50661c-9449-45b9-bb0d-20e31b99237b",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C80",
+      "claim": "The failure of existing algorithms is attributed to structures being randomly oriented in 3D, strongly under-labeled, and involving similar classes.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this to the fact that the structures in our investigations are randomly oriented in 3D, are strongly under-labeled, and involve classes that are similar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the observed results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "4c39a7ed-407d-42d2-8444-6019105ea117",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C81",
+      "claim": "polarCOLD can be extended via combination with genetic labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "polarCOLD can be further improved and extended to other modalities, for example via combination with genetic labeling (Hoffman et al., 2020; Dahlberg et al., 2018; Liu et al., 2015; Creemers et al., 2000) or by exploiting the narrow absorption and emission spectra at low temperatures for co-localization of larger numbers of fluorescent markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3f884b71-3ff8-49e3-aa65-81b57ff8f07c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C82",
+      "claim": "polarCOLD can be extended by exploiting narrow absorption and emission spectra at low temperatures for co-localization of larger numbers of fluorescent markers.",
+      "claim_type": "EXPLICIT",
+      "source": "polarCOLD can be further improved and extended to other modalities, for example via combination with genetic labeling (Hoffman et al., 2020; Dahlberg et al., 2018; Liu et al., 2015; Creemers et al., 2000) or by exploiting the narrow absorption and emission spectra at low temperatures for co-localization of larger numbers of fluorescent markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3e456b19-07a1-4090-a2e5-5b38f0c48023",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C83",
+      "claim": "The currently achieved SNR and Angstrom resolution of cryogenic light microscopy is capable of providing pivotal solutions for quantitative structural analysis of small proteins and large protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the currently achieved SNR and Angstrom resolution of cryogenic light microscopy is already capable of providing pivotal solutions for quantitative structural analysis of small proteins as well as large protein complexes and aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "02ab9bd5-e3e2-4c41-b6f9-d60c57147c57",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C84",
+      "claim": "An estimated 20% of the human genome encodes membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an estimated 20% of the human genome encodes membrane proteins and many of them are potential drug targets (Piccoli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "63da6136-d417-4577-83fb-2196621baf1b",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C85",
+      "claim": "Many membrane proteins are potential drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, an estimated 20% of the human genome encodes membrane proteins and many of them are potential drug targets (Piccoli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "436eb0f9-3592-433c-84fd-2abcf7f02da1",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C86",
+      "claim": "It is challenging to crystallize or resolve many proteins and protein complexes in their crowded surrounding.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure and active configuration of many proteins and protein complexes, however, remain out of reach because it is very challenging to crystallize or resolve them in their crowded surrounding (Cheng, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "9130a2ca-26d1-4d7b-9c6e-4e758afd70a9",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C87",
+      "claim": "Heterogeneities caused by mobile domains and intrinsic distributions in assemblies cannot be preserved and classified robustly in EM studies, leading to smearing in final reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, heterogeneities caused by mobile domains and intrinsic distributions in assemblies cannot be preserved and classified in a robust fashion so that they lead to a smearing effect in the final reconstruction in EM studies (Nwanochie and Uversky, 2019; Serna, 2019; Scheres, 2016; Scheres et al., 2007, Orlova and Saibil, 2004; Papai et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "2a0b9708-1ac1-4491-bd6a-de7a6957ff3b",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C88",
+      "claim": "A future direction is to vitrify biological samples via rapid freezing or high-pressure freezing to exploit polarCOLD for identifying particles in low-contrast EM micrographs.",
+      "claim_type": "EXPLICIT",
+      "source": "A future direction is, thus, to vitrify biological samples via rapid freezing (Dubochet and McDowall, 1981) or high-pressure freezing (Studer et al., 2008; Hoffman et al., 2020) in order to exploit the high spatial resolution, sensitivity and specificity of polarCOLD for identifying and determining the positions and orientations of individual particles of interest in low-contrast EM micrographs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "dfbc6f40-58bd-48db-82e1-c9d04387e691",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C89",
+      "claim": "The combination of cryogenic light microscopy with cryoEM has attracted attention for cellular and tissue imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of cryogenic light microscopy with cryoEM has attracted attention for cellular and tissue imaging, although the existing reports do not surpass a resolution of about 10 nm (Dahlberg and Moerner, 2021; Hoffman et al., 2020; Dahlberg et al., 2020; Wu et al., 2020; Tuijtel et al., 2019; Wolff et al., 2016; de Boer et al., 2015; Loussert Fonta and Humbel, 2015; Kaufmann et al., 2014b, Chang et al., 2014; Kaufmann et al., 2014a, Faas et al., 2013; Watanabe et al., 2011; Mironov and Beznoussenko, 2009; Agronskaia et al., 2008; Sartori et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "e03f7578-d4e4-4442-ac8c-22cd3197f926",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C90",
+      "claim": "Existing reports of combined cryogenic light microscopy and cryoEM do not surpass a resolution of about 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of cryogenic light microscopy with cryoEM has attracted attention for cellular and tissue imaging, although the existing reports do not surpass a resolution of about 10 nm (Dahlberg and Moerner, 2021; Hoffman et al., 2020; Dahlberg et al., 2020; Wu et al., 2020; Tuijtel et al., 2019; Wolff et al., 2016; de Boer et al., 2015; Loussert Fonta and Humbel, 2015; Kaufmann et al., 2014b, Chang et al., 2014; Kaufmann et al., 2014a, Faas et al., 2013; Watanabe et al., 2011; Mironov and Beznoussenko, 2009; Agronskaia et al., 2008; Sartori et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a17b9b44-f86a-45aa-aaa8-efdaab85c451",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C91",
+      "claim": "By labeling a functional domain with two or three fluorophores, it should be possible to classify particles based on conformational changes indicated by intermolecular distances.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 4\u2014figure supplement 2, by labeling a functional domain within a single molecule with two or three fluorophores, it should be possible to classify the particles based on conformational changes as indicated by their intermolecular distances.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prospective claim about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "dfc3f6dc-1e72-4a27-af11-25ef4fe95d0e",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C92",
+      "claim": "By labeling two different protomers or functional domains, it will be possible to group particles based on intramolecular distances resulting from conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, by labeling two different protomers or functional domains within a protein complex, it will be possible to group the particles based on intramolecular distances that result from conformational changes between subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "01968798-6287-4675-bc19-83ca27cef71c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C93",
+      "claim": "His-tagged human PCNA protein was purchased from Sigma Aldrich at a concentration of 6.6 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "His-tagged human PCNA protein was purchased from Sigma Aldrich (catalogue number SRP5117), at a concentration of 6.6 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "f74495cb-c295-48b2-a1c7-55bcfb030920",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C94",
+      "claim": "The protein was specifically labeled via the histidine linker on the N-terminal side with ATTO647N containing a Ni-NTA functional group.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein was specifically labeled via the histidine linker on the N-terminal side of the protein with the dye ATTO647N containing a Ni-NTA functional group which was also purchased from Sigma Aldrich (catalogue number 02175\u2013250 UG-F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the labeling procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "cf529412-c302-4559-ba8b-cc0b27f611a3",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C95",
+      "claim": "The labeling efficiency of PCNA was estimated to be ~100% using absorption spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The labeling efficiency was estimated using an absorption spectrometer (Nanodrop 2000, ThermoFischer) confirming ~100% labeling efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "ce26429e-a6b7-40e3-97c2-04ce4718fc40",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C96",
+      "claim": "SDS-page and native gel indicated that PCNA is assembled and labeled.",
+      "claim_type": "EXPLICIT",
+      "source": "SDS-page and native gel indicated that the protein is indeed assembled and labeled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "ec718a71-7c57-4b47-90d8-ce34d7bedc8e",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C97",
+      "claim": "All experiments were performed in a cryogenic microscope built around a Janis ST-500 flow cryostat operating at liquid helium temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed in a cryogenic microscope that is built around a Janis ST-500 flow cryostat and operates at liquid helium temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "fa18cf02-39be-4784-8418-c614cc25cad3",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C98",
+      "claim": "The field of view spans 211 \u00d7 313 pixels with a pixel size of 190 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The field of view spans 211 \u00d7 313 pixels with a pixel size of 190 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "07103759-62ff-4904-890d-d8d901c384e2",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C99",
+      "claim": "The laser intensity used in all experiments was set to ~1 kW/cm2.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser intensity used in all experiments was set to ~1 kW/cm2 and images were recorded with 14 ms exposure time, more than five times faster than the typical off-time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "571ce149-6a96-4563-9dd9-7e26201e979c",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C100",
+      "claim": "Images were recorded with 14 ms exposure time, more than five times faster than the typical off-time.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser intensity used in all experiments was set to ~1 kW/cm2 and images were recorded with 14 ms exposure time, more than five times faster than the typical off-time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions and their rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "44370483-36c5-4a1f-b52b-3f4882b876bb",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C101",
+      "claim": "A total of 50,000 or 100,000 frames were collected for PCNA and ClpB, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For each field of view, we collected a total of 50,000 or 100,000 frames for PCNA and ClpB, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "a54629c6-33c4-4d61-9ea6-3dd2b66a31d9",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C102",
+      "claim": "The median registration error is less than 2 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Registered PSFs are grouped and their polarization is calculated from the intensities. Single fluorophores are identified via this feature and used as fiducial markers to perform additional drift correction and establish a more precise image alignment via an interpolated map. The residual drift is well below 1 nm and the median registration error is less than 2 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the image analysis quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "07d3ba71-490c-48b0-8e43-8f51d33ac99f",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "claim_id": "C103",
+      "claim": "The residual drift is well below 1 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Registered PSFs are grouped and their polarization is calculated from the intensities. Single fluorophores are identified via this feature and used as fiducial markers to perform additional drift correction and establish a more precise image alignment via an interpolated map. The residual drift is well below 1 nm and the median registration error is less than 2 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of the image analysis quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "016ab1b6-4103-476b-bd02-bfbe21fdaf11",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior COLD method limitations are described, including reliance on intensity fluctuations from fluorophore blinking, restriction to cases with different brightness emitters, and significantly lowered measurement yield.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately characterize the limitations of the prior COLD method based on cited work (C1) and established understanding of the technique's operational principles (C2-C4). These are background claims setting up the motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "1841e09a-b817-4642-a0f9-821d38771dac",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "polarCOLD employs partial labeling combined with polarization encoding and particle classification to determine distances and arrangements of protein complexes from under-sampled structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C28 describe the core methodological innovation of polarCOLD. The approach is demonstrated experimentally on PCNA and ClpB (C7-C8), providing strong support for these methodological claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "812f1f8e-e929-413c-99ff-e86d08b5847a",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "polarCOLD resolves the trimer arrangement of PCNA with Angstrom resolution (4.9 \u00c5 by FSC), achieving a reconstructed side length of 9.9\u00b10.6 nm from 119 particles with high correlation (0.96) to simulated accessible volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C33-C42, and C50-C55 collectively demonstrate successful application of polarCOLD to PCNA. The experimental data (photon counts C37-C38, polarization assignment C39-C42, 3D reconstruction C50-C51) and quantitative metrics (FSC resolution C52, side length C53, particle number C54) provide strong evidence. The control experiment (C42) validates the assignment procedure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b730a45e-9191-4ff2-bb7b-2d9f10288107",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "polarCOLD resolves six different sites of the hexamer protein ClpB with Angstrom resolution using partial labeling (50% efficiency), supervised classification (98% accuracy), and reconstruction from 232, 100, and 135 particles for three classes with resolutions of 4.0, 7.9, and 6.4 \u00c5 respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C60-C72 demonstrate successful application to the more complex ClpB hexamer. The partial labeling strategy (C61), classification approach (C65-C66), quantitative results (C67-C68, C70, C72), and control experiment (C71) provide comprehensive support. The high correlation scores (0.98, 0.96, 0.86) between reconstructed and simulated volumes (C70) validate the structural accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "422be102-61b5-4a64-abbe-6b7efd385d75",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model selection using Akaike information criterion on unclassified particle distance histograms correctly identifies the hexamer structure as the best fit, with classification remaining robust for deviations \u22641 nm from perfect symmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 demonstrate that polarCOLD can identify correct oligomeric symmetry without complete prior knowledge. The AIC analysis (C74-C76) and simulation studies (C77) provide quantitative support. However, C78 acknowledges a limitation requiring complete labeling for completely disordered structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "6e3275d6-2e6a-4980-b924-d791ad8d6730",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The number of resolvable fluorophores depends on blinking dynamics and shot noise-limited angular resolution, with experimental 5\u00b0 resolution theoretically enabling resolution of 70% of 3-fluorophore particles and 15% of 6-fluorophore particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 provide theoretical analysis of method limitations supported by experimental measurements (Figure 1\u2014figure supplements 5-6). The quantitative predictions (C46-C47) are based on Monte Carlo simulations using measured angular resolution, providing a sound theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "4ede6aed-1dfe-4085-ab50-7592040b30f6",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Future improvements including additional polarization bases, polarized illumination, and full 3D dipole characterization could enhance the capacity for identifying different polarization states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C49 are theoretical predictions about potential improvements supported by citations but not experimentally validated in this study. These represent reasonable extrapolations but remain speculative without experimental demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "665b54af-b0ab-4796-8c82-1a7d3633e901",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "polarCOLD achieves good results from 119 particles (2-3 orders of magnitude fewer than typical cryoEM) because each 2D projection directly contributes to 3D reconstruction, unlike cryoEM which requires averaging to establish 2D classes first.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 make a valid comparison between polarCOLD and cryoEM requirements. The high SNR of polarCOLD (C55) and direct contribution of 2D projections (C57) are demonstrated experimentally. The comparison to cryoEM particle requirements is supported by citation (C55-C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3b88966a-0709-4652-bbaa-b9309c0acc6d",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Existing algorithms for template-free particle reconstruction do not provide satisfactory solutions for the polarCOLD data due to random 3D orientations, strong under-labeling, and similar classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are supported by testing existing algorithms (Figure 4\u2014figure supplement 1) and providing a reasonable explanation for their failure. This justifies the supervised classification approach used in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "polarCOLD shows promise for combination with cryoEM to study heterogeneities in biomolecular structures, with potential applications in membrane protein studies, cellular imaging, and conformational analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C81-C83, and C88-C92 are prospective statements about future applications. While the demonstrated Angstrom resolution (C83) supports the potential, these applications have not been experimentally validated in this study. The claims about existing combined cryo-light/cryoEM work (C89-C90) are supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "3408a0fd-e506-4efc-ad6b-6f405478a3f0",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "polarCOLD is fully compatible with fluorescent protein labeling for use in cell and membrane biology studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C10 states compatibility with fluorescent protein labeling, but this is not experimentally demonstrated in the study. The work uses only organic dyes (ATTO647N). This claim is an inference based on the method's principles but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Detailed experimental methods are provided including protein labeling procedures, microscope specifications, imaging parameters, and image analysis achieving residual drift <1 nm and median registration error <2 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C103 provide comprehensive methodological details supported by experimental data. The quantitative metrics for drift correction and registration (C102-C103) demonstrate high technical quality. These are essential supporting details for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    },
+    {
+      "id": "be6c1525-322c-414e-8659-6d7037f9b239",
+      "content_id": "8d3913ee-6e5a-4337-a53e-8c97b4f3cb96",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context on protein structural biology, existing techniques (X-ray crystallography, NMR, cryoEM, fluorescence microscopy), and specific proteins studied (PCNA, ClpB) is provided with appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C27, C29-C32, C58-C59, and C84-C87 provide background information supported by appropriate citations to prior literature. These establish the scientific context and motivation for the work but do not represent novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-03T13:14:28.455684Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a458e6ed-d510-42a1-b5e3-382a128ca166",
+      "result_id": "016ab1b6-4103-476b-bd02-bfbe21fdaf11"
+    },
+    {
+      "claim_id": "0a3a5e97-dac0-402c-a7ad-9278929b5af8",
+      "result_id": "016ab1b6-4103-476b-bd02-bfbe21fdaf11"
+    },
+    {
+      "claim_id": "65ea0e16-8383-40b2-959b-5e8f1eaaf773",
+      "result_id": "016ab1b6-4103-476b-bd02-bfbe21fdaf11"
+    },
+    {
+      "claim_id": "d4a79c4b-c2b4-4287-a8d6-d05ad82a6ea5",
+      "result_id": "016ab1b6-4103-476b-bd02-bfbe21fdaf11"
+    },
+    {
+      "claim_id": "6b96b321-1164-43dd-bdba-d1969031e2f6",
+      "result_id": "1841e09a-b817-4642-a0f9-821d38771dac"
+    },
+    {
+      "claim_id": "c726b32e-0620-4700-a4c7-e889d979f5cc",
+      "result_id": "1841e09a-b817-4642-a0f9-821d38771dac"
+    },
+    {
+      "claim_id": "4d881b0c-d63f-462d-a8a2-e8d1fe3bfbdb",
+      "result_id": "1841e09a-b817-4642-a0f9-821d38771dac"
+    },
+    {
+      "claim_id": "a12f975d-6981-41d6-93a1-7456e391acbe",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "1ea19260-c08b-4a36-923f-527914ed1185",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "3bb63b5c-57b6-4a32-b9db-ac0010c82ca0",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "f75f10e1-e8cc-4e4b-b63d-03135a3f7def",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "b2a91fde-0bbe-48cf-a6c8-f2695894ae1b",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "81462322-8714-4b76-acd5-6269351124f4",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "734afe90-aa1a-442f-95e1-6e4813b09d43",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "a94f91ad-776c-452c-a559-280d5877b880",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "a5b6a57f-b896-47d1-851d-222e7b0d19eb",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "b73375aa-cd5c-4c64-8a60-d32e90890d2f",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "6a9250df-28c8-4dfc-837a-a71ca9e94b08",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "af233283-386f-4daa-85dc-543f681d9855",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "f04abfdf-f1a7-40f4-ac7c-9b18696fdfca",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "6fbbaddb-2abd-4017-ba0f-ed70dab0a5c8",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "71cc6534-fc35-4beb-a5ce-cff8c07bb4af",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "172830f7-c76b-4c76-aacb-ae2f6379471d",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "a3f72cde-28f5-4391-a720-13687e499c4e",
+      "result_id": "812f1f8e-e929-413c-99ff-e86d08b5847a"
+    },
+    {
+      "claim_id": "d508e529-5270-464e-9d87-d6aa2f2e6463",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "e9501163-4d23-4874-8683-9ac7e247a527",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "b987c00e-fc07-48ef-9078-5576da106371",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "086fa29d-ce38-40b3-a7ff-8d6da057b946",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "6f9399cd-5836-4b7e-8b17-75fd7ef63c1e",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "493614cd-73fc-470b-a643-6017949f4f4f",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "103c1862-f0b4-43e9-9a1d-704ca5181094",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "9a4cecde-9d39-4c8e-9adb-6b9bff1103ff",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "9025e315-6cc3-4441-bdec-9b6f8adcb946",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "6091454f-3b10-492c-8c17-fe1e037be862",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "dae79312-9445-49fd-b548-1e3648681e7c",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "07b6e11d-3ab0-4063-9752-8ef472d89be6",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "07e2cb24-d269-4fae-9299-4932dece763c",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "7940dc38-28df-4478-954f-9c995616dcfb",
+      "result_id": "b730a45e-9191-4ff2-bb7b-2d9f10288107"
+    },
+    {
+      "claim_id": "ab3a60dc-024c-421a-8da8-e4773b6a5dd3",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "e04a8035-f396-4374-aa43-577f9afc30f7",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "579a0996-d920-4320-8f19-b23cab856ac9",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "a7819180-f679-43be-82ff-aa842bcf2838",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "59b17c4a-bc84-48d1-8de7-c21554e29237",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "590285e3-1e7d-4eb7-9232-bb1b71491c96",
+      "result_id": "422be102-61b5-4a64-abbe-6b7efd385d75"
+    },
+    {
+      "claim_id": "c1c9c2e1-eab7-4874-9450-937d39299fc8",
+      "result_id": "6e3275d6-2e6a-4980-b924-d791ad8d6730"
+    },
+    {
+      "claim_id": "389ab2dd-1068-4e2d-9e94-a87979286a08",
+      "result_id": "6e3275d6-2e6a-4980-b924-d791ad8d6730"
+    },
+    {
+      "claim_id": "1198c764-fa14-4862-b33e-489eaf6ebf12",
+      "result_id": "6e3275d6-2e6a-4980-b924-d791ad8d6730"
+    },
+    {
+      "claim_id": "bd65b046-e637-4fb0-bf19-5c2b346dafd0",
+      "result_id": "6e3275d6-2e6a-4980-b924-d791ad8d6730"
+    },
+    {
+      "claim_id": "add148dd-b361-4306-be30-1daa37100187",
+      "result_id": "6e3275d6-2e6a-4980-b924-d791ad8d6730"
+    },
+    {
+      "claim_id": "f264b244-3f48-4aa6-a6b7-390846cb298c",
+      "result_id": "4ede6aed-1dfe-4085-ab50-7592040b30f6"
+    },
+    {
+      "claim_id": "39ca1fd4-f851-4b44-ad47-5bcf8a198794",
+      "result_id": "4ede6aed-1dfe-4085-ab50-7592040b30f6"
+    },
+    {
+      "claim_id": "a3f72cde-28f5-4391-a720-13687e499c4e",
+      "result_id": "665b54af-b0ab-4796-8c82-1a7d3633e901"
+    },
+    {
+      "claim_id": "af24eed1-b76e-47e0-93fc-1bb187c75250",
+      "result_id": "665b54af-b0ab-4796-8c82-1a7d3633e901"
+    },
+    {
+      "claim_id": "e4fa8c2d-8c5d-484c-a206-12a55897e92f",
+      "result_id": "665b54af-b0ab-4796-8c82-1a7d3633e901"
+    },
+    {
+      "claim_id": "8ea4b8f8-6bd8-4206-9ec8-9cdca188d068",
+      "result_id": "3b88966a-0709-4652-bbaa-b9309c0acc6d"
+    },
+    {
+      "claim_id": "bb50661c-9449-45b9-bb0d-20e31b99237b",
+      "result_id": "3b88966a-0709-4652-bbaa-b9309c0acc6d"
+    },
+    {
+      "claim_id": "9b778b90-5031-4bc8-9292-3f92a978e20c",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "4c39a7ed-407d-42d2-8444-6019105ea117",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "3f884b71-3ff8-49e3-aa65-81b57ff8f07c",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "3e456b19-07a1-4090-a2e5-5b38f0c48023",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "2a0b9708-1ac1-4491-bd6a-de7a6957ff3b",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "dfbc6f40-58bd-48db-82e1-c9d04387e691",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "e03f7578-d4e4-4442-ac8c-22cd3197f926",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "a17b9b44-f86a-45aa-aaa8-efdaab85c451",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "dfc3f6dc-1e72-4a27-af11-25ef4fe95d0e",
+      "result_id": "8b3a6671-5e25-4391-8747-e1ff6e02f5b3"
+    },
+    {
+      "claim_id": "cefd1096-7454-43a1-9bf9-e00813a760b0",
+      "result_id": "3408a0fd-e506-4efc-ad6b-6f405478a3f0"
+    },
+    {
+      "claim_id": "01968798-6287-4675-bc19-83ca27cef71c",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "f74495cb-c295-48b2-a1c7-55bcfb030920",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "cf529412-c302-4559-ba8b-cc0b27f611a3",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "ce26429e-a6b7-40e3-97c2-04ce4718fc40",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "ec718a71-7c57-4b47-90d8-ce34d7bedc8e",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "fa18cf02-39be-4784-8418-c614cc25cad3",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "07103759-62ff-4904-890d-d8d901c384e2",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "571ce149-6a96-4563-9dd9-7e26201e979c",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "44370483-36c5-4a1f-b52b-3f4882b876bb",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "a54629c6-33c4-4d61-9ea6-3dd2b66a31d9",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "07d3ba71-490c-48b0-8e43-8f51d33ac99f",
+      "result_id": "b030ff5d-03e5-4c7c-aeec-7bd57f2b925d"
+    },
+    {
+      "claim_id": "aa3c2513-de0b-47fc-8524-a39673eb915b",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "008a4e71-023b-49e0-9879-62d9f77140e7",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "b60ec0ec-7b48-4935-a63f-2b1bb35f80bf",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "29967881-8731-48da-80d9-5abf474e0b94",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "c51b3c36-a9ca-4354-a78d-96ec2d7fabb9",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "721c35bb-3b5f-46c3-8eb5-1e214b9000a1",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "3f19c1e5-20dc-4e0a-98ab-b024dd398c41",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "c9aa6a40-3bab-46c8-8295-3418c70bc4ff",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "fc527045-2221-4129-aea1-7d96d2ec2fb1",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "82904236-2aaa-4476-9bf2-855fa026d894",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "289173f7-ae92-436d-b035-9b8a013f92ec",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "db9f4ac4-3d47-4fc7-92ab-eb70f39da497",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "437f9429-51a2-4cf1-a555-4403a898bf68",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "64d9e914-1705-4c18-880d-a4325838d189",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "4b3ae63b-db74-4aab-aca9-f044a387fa89",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "4f7666c2-51f2-4f7c-9ee1-9486a42747d0",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "54dd9a21-d4a4-4b3c-a15d-df6c8d3f05bf",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "af56fe8b-5a62-4fa0-863b-15ae8f128139",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "2616c9d7-ce60-45a0-9577-5b0e858dcc38",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "c8201e2a-70d6-4684-98b7-f53d0e425a35",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "0ebd62ca-5168-44e0-87e1-49bc70fd61bd",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "efee1506-c6d7-44b0-8ab3-8137f1796410",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "dc6ee271-a381-4401-85cc-6489581ae024",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "02ab9bd5-e3e2-4c41-b6f9-d60c57147c57",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "63da6136-d417-4577-83fb-2196621baf1b",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "436eb0f9-3592-433c-84fd-2abcf7f02da1",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    },
+    {
+      "claim_id": "9130a2ca-26d1-4d7b-9c6e-4e758afd70a9",
+      "result_id": "be6c1525-322c-414e-8659-6d7037f9b239"
+    }
+  ],
+  "comparisons": []
+}

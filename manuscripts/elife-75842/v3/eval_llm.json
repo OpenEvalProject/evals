@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Four orthologous GFP proteins (avGFP, amacGFP, cgreGFP, and ppluGFP2) with sequence divergences of 18%, 59%, and 82% from avGFP were characterized, generating datasets of 25,000-35,000 genotypes per protein with an average of 3-4 mutations per genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C25 collectively establish the experimental scope and dataset characteristics. The sequence divergence values are explicitly stated and shown in Figure 1b, and the dataset sizes are documented in Table 1. The methodological improvements (C67-C68) further validate the data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30"
+    ],
+    "result": "Two GFP fitness peaks (avGFP and cgreGFP) were sharp, requiring only 3-4 mutations to reduce fitness, while two others (amacGFP and ppluGFP2) were substantially flatter, tolerating twice as many mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C29, and C30 are directly supported by experimental data shown in Figure 3a and Table 1. The mutational LD50 values quantitatively demonstrate this heterogeneity: avGFP (4.1), cgreGFP (3.2), amacGFP (5.8), and ppluGFP2 (6.2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Epistatic interactions were rare in genotypes with two mutations across all fitness peaks, but for genotypes with >5 mutations, epistasis was prevalent in sharp peaks (avGFP, cgreGFP) and nearly absent in flat peaks (amacGFP, ppluGFP2). The sharpness of fitness peaks did not correlate with sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by Figure 3d and Figure 3\u2014figure supplement 1, which quantitatively show the fraction of genotypes requiring epistasis to explain fluorescence. The observation that the two closest sequences (avGFP and amacGFP, 82% identity) have opposite fitness peak shapes (C37) directly supports the lack of correlation with sequence divergence (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45"
+    ],
+    "result": "The most mutationally fragile protein (cgreGFP) was also the most kinetically unstable, while the most robust protein (ppluGFP2) was the most kinetically stable. Mutations causing fluorescence reduction had higher predicted effects on protein stability (\u0394\u0394G), with stronger correlations in sharp fitness peaks (r=0.6) than flat peaks (r=0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C44-C45 are supported by comprehensive biophysical characterization data in Table 2, Figure 4, and Figure 4\u2014figure supplement 3. The statistical significance (p<10\u207b\u2076) and correlation coefficients are explicitly reported. However, the relationship is acknowledged as tentative (C40) and not perfect, as avGFP shows high stability despite mutational fragility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Machine learning predictions were substantially more accurate for the fragile, epistatic cgreGFP (50-60% accuracy at 48 mutations) than for the robust ppluGFP2 (8% accuracy). Successful predictions incorporated conditionally deleterious mutations that are under negative selection (dn/ds = 0.057/0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C51-C55 are supported by experimental validation data in Figure 7 and Figure 7\u2014figure supplement 1. Three independent lines of evidence (conditionally deleterious mutations, evolutionary rates, and differential epistasis in ML-designed variants) demonstrate that success was not due to universally neutral mutations. The statistical significance of evolutionary rate differences (p<0.00001) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "For machine learning-driven protein design to predict distant functional sequences, the fitness landscape data must contain information about epistatic interactions. The authors recommend selecting fragile proteins as templates for mutational scans, as demonstrated by cgreGFP where the model achieved 100% accuracy (12/12) at 6 mutations by learning to avoid negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present a logical conclusion supported by the experimental results. The specific example from cgreGFP (C58-C59) demonstrates the principle: only 32% of genotypes expected to be functional by an additive model were actually fluorescent, but the epistasis-aware model achieved 100% accuracy. This directly supports the recommendation in C56.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The probability that neutral mutations become deleterious in different proteins, and the conservation of epistatically interacting site pairs, were largely independent of sequence divergence (except at single amino acid differences). This indicates that rules determining epistatic interactions and fitness peak shape change on a scale smaller than 20% sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by data in Figure 5a and 5b. The analysis systematically examines how mutation effects and epistatic interactions vary across different levels of sequence divergence, providing quantitative evidence for the conclusion in C50.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Synonymous variants had no measurable effect on fitness, mutations in the chromophore eliminated fluorescence, and mutations of buried residues had stronger effects than surface residues across all four GFP proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by Figure 1\u2014figure supplement 1 (synonymous mutations), Figure 1\u2014figure supplement 2 (chromophore and buried residues), and Figure 3b (buried vs. surface). These represent expected and validated quality controls for the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Fitness peaks of most single-mutation neighbors with high fluorescence were sharper than the wildtype fitness peaks, suggesting local optimization of robustness. The shape of the wildtype fitness peak showed no straightforward relationship with fluorescence level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by Figure 3c and Table 1. The observation that single mutants are generally less robust than wildtype (C31) is consistent with local optimization. The lack of relationship between peak shape and fluorescence level (C32) is documented in Table 1 where proteins with similar fluorescence have different mutational robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Three methodological improvements (gene sequence-agnostic library sequencing, genome integration, and secondary barcodes) resulted in more physiologically relevant expression levels, increased scalability, and reduced measurement variance by a factor of 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by the methods description and data in Figure 1c and Table 1. The 7-fold reduction in variance is quantifiable from the standard deviations reported for wildtype measurements compared to the previous avGFP study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Linear models explained 59-82% of variance in fluorescence across all landscapes. Adding sigmoid output nodes captured an additional 13-78% of remaining variance. Optimized neural networks achieved R\u00b2 values of 0.88-0.95 across the four proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by Figure 6b and Figure 6\u2014figure supplement 1. The progressive improvement in model performance is well-documented, with specific R\u00b2 values reported for each protein and model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "avGFP is the only exclusive monomer among the four wildtype sequences, while ppluGFP2 is exclusively tetrameric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by SEC-MALS data in Table 2 and Figure 4\u2014figure supplement 2. The oligomeric states are quantitatively determined: avGFP >99% monomer, ppluGFP2 >97% tetramer, with amacGFP and cgreGFP showing mixed states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Epistatically interacting amino acid residues were slightly more likely to be spatially proximal across all landscapes, with the effect more pronounced in flatter fitness peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by Figure 4\u2014figure supplement 5, which shows heatmaps of residue distances and statistical analysis (p<10\u207b\u00b9\u00b3) demonstrating that epistatic pairs tend to be physically closer. The differential effect between sharp and flat peaks is also documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Up to 17% of genotypes six mutations away from ppluGFP2 maintained wildtype fluorescence, compared to only 0.9% for cgreGFP, demonstrating extreme heterogeneity in mutational robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by data in Supplementary file 1 as referenced in the text. These specific percentages quantify the dramatic difference in mutational robustness between the most robust and most fragile proteins studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The crystal structure of amacGFP was solved and deposited in the Protein Data Bank with PDB ID 7LG4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by the methods section describing crystallization and structure determination, with the PDB deposition explicitly stated. This structural data enabled the \u0394\u0394G predictions and spatial analysis of epistatic interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The V12L mutation in amacGFP:V12L shifted the distribution of mutation effects, substantially increasing the effect of mutations on the barrel lid near residue 12, without impacting overall mutational robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by Figure 4\u2014figure supplement 4, which shows the spatial distribution of mutation effect differences and demonstrates that while local effects changed, the overall mutational LD50 remained similar (5.8 vs 5.7, Table 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors provide practical recommendations for protein engineering: without direct knowledge of mutational robustness, researchers may use thermodynamic stability as a proxy, though the relationship is complex. The heterogeneity between similar sequences (avGFP and amacGFP) suggests predictions based on single fitness peaks may have limited accuracy for sequences with different epistatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C63 represent interpretations and recommendations based on the study's findings. While C60 is supported by citation to another study, C61-C63 are practical recommendations that extend beyond the direct experimental evidence. The relationship between thermodynamic stability and mutational robustness is acknowledged as imperfect (Table 2 shows avGFP is stable but fragile), making these recommendations tentative rather than definitively supported.",
+    "result_type": "MINOR"
+  }
+]

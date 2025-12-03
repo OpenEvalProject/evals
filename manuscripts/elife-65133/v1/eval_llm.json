@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript reports global malaria burden statistics for 2018, citing WHO data indicating 228 million cases and 405,000 deaths worldwide, with most cases in sub-Saharan Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3) are appropriately cited to WHO 2019 and represent background epidemiological context. They are standard citations of prior work and are not original findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C19",
+      "C28",
+      "C41",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript establishes background knowledge about malaria in pregnancy, including susceptibility mechanisms, adverse outcomes, the importance of prevention, historical trends in malaria burden, and the complex relationship between declining transmission and maternal immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C14, C19, C28, C41, C57-C60 are all appropriately cited to prior literature and represent established knowledge that motivates the study. These are not original findings but rather context from prior work that justifies the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "The study analyzed 18,112 births from 19 sub-Saharan African countries during 2000-2015, with early years defined as 2000-2007 and late years as 2008-2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C50, C52-C53 describe the study design and sample. These are clearly documented in the methods and results sections with explicit justification for the time period selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C61"
+    ],
+    "result": "The study employed a two-step optimal matching procedure to create 219 matched quadruples (pairs of pairs) from 6,812 initial cluster pairs, addressing the challenge that DHS samples different locations over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48, C61 describe the matching methodology with specific numbers documented throughout. The approach is well-justified and the sample sizes at each step are clearly reported, though the complexity of the approach may introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C56"
+    ],
+    "result": "The first-step matching achieved geographic proximity with mean distances of 24.1 km for high-low pairs and 28.7 km for high-high pairs, with within-pair correlations of longitude and latitude near 1.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C56 are directly supported by Table 4 data. The matching successfully created geographically proximate pairs, which is essential for the difference-in-differences design to mimic repeated measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The second-step matching balanced 12 sociodemographic covariates between high-low and high-high pairs, reducing all absolute standardized differences from >0.2 before matching to <0.1 after matching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by Table 5, which shows successful covariate balance after matching. This is critical for the validity of the difference-in-differences approach, though unmeasured confounding remains a concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C48",
+      "C49",
+      "C65",
+      "C66"
+    ],
+    "result": "The study addressed 47-48% missing birth weight data using multiple imputation with 500 replications, leveraging mother's reported child size and other covariates under a missing-at-random assumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C24, C48-C49, C65-C66 describe the imputation approach. While the method is appropriate and well-cited, the missing-at-random assumption is strong and unverifiable. Nearly half the data being imputed introduces substantial uncertainty that may not be fully captured by the confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Among observed births, 8.6% had low birth weight. The imputation model identified mother's age, birth order, education, and reported birth size as significant predictors, with higher maternal education and male sex associated with lower risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C25-C27 are supported by Table 2 and descriptive statistics. The predictors align with prior literature as noted. However, these are descriptive findings from the imputation model, not causal estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The primary analysis estimates that malaria prevalence decline from high (PfPR2-10 >0.4) to low (<0.2) reduces low birth weight rate by 1.48 percentage points (95% CI: -3.70 to 0.74), representing a 17% relative reduction from the 8.6% baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16-C17 present the main finding. While the point estimate suggests a meaningful effect, the 95% CI includes zero, so the result is not statistically significant at conventional levels. The magnitude is substantial if real, but the evidence is insufficient to rule out no effect. The calculation of 17% relative reduction (C17) is mathematically correct but potentially misleading given the non-significant result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "For first pregnancies specifically, the estimated effect is larger: a 3.73 percentage point reduction (95% CI: -9.11 to 1.64) in low birth weight rate with declining malaria prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C18 reports a secondary analysis with a larger point estimate but also includes zero in the CI. While consistent with prior knowledge that first pregnancies are more affected (C28), the wide CI and lack of statistical significance limit confidence in this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Observed low birth weight rates decreased from 9.33% to 7.52% in high-low pairs (1.81 percentage points) versus 9.18% to 9.06% in high-high pairs (0.12 percentage points), yielding a naive difference-in-differences estimate of 1.69 percentage points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 present descriptive statistics and a naive estimator. These calculations are straightforward and verifiable from the reported data. The similarity between the naive estimate (1.69) and the adjusted estimate (1.48) suggests robustness, though both lack statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The time indicator effect was minimal (0.06 percentage points reduction), and changes in covariates over time accounted for only 0.52 percentage points reduction, suggesting most of the observed decline in high-low pairs is attributable to malaria reduction rather than temporal trends or covariate changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by Table 6 and decomposition calculations. This strengthens the causal interpretation by showing that temporal trends and covariate changes do not explain the observed differences, though unmeasured confounding remains possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Visual analysis (Figure 3) shows that reductions in low birth weight from early to late years are considerably greater in high-low pairs than high-high pairs, suggesting that reducing community-level malaria burden can substantially reduce low birth weight rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 interpret Figure 3. While the visual pattern is described, the inference that malaria reduction \"can potentially substantially reduce\" low birth weight (C39) overstates the strength of evidence given the non-significant primary result. The visual pattern is consistent with an effect but does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The estimated effect of malaria reduction (1.48 percentage points) exceeds the estimated effect of antenatal care (0.96 percentage points) in the same model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 compares effect sizes from Table 6. While the point estimates support this comparison, neither effect is statistically significant at the 0.05 level (malaria p=0.191, antenatal care p=0.085). Comparing non-significant effects is problematic and the interpretation may be misleading.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The study concludes that reports of declining malaria mortality underestimate impacts on pregnancy outcomes, and that overall reductions in malaria exposure outweigh individual increases in risk from declining immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C42-C43 are strong causal conclusions that are not adequately supported by the non-significant primary result. While the point estimates are consistent with these conclusions, the wide confidence intervals and lack of statistical significance mean these conclusions are speculative rather than established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study employs a difference-in-differences design with matching to address three sources of bias and violations of the parallel trends assumption, particularly from survey location sampling variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe the methodological rationale with appropriate citations. The approach is well-justified theoretically, though the validity depends on untestable assumptions about parallel trends and no unmeasured confounding.",
+    "result_type": "MINOR"
+  }
+]

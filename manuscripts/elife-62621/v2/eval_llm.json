@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes background knowledge about dietary restriction (DR) and miRNAs. DR extends lifespan across species and delays age-related pathologies. miRNAs are 19-24 nucleotide RNAs that regulate mRNA turnover and translation, with each miRNA capable of targeting multiple mRNAs due to imperfect base-pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C7, C8, and C9 are well-established facts in the field, supported by multiple citations to prior research and general knowledge. These background claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C16",
+      "C17"
+    ],
+    "result": "DR upregulates let-7-Complex miRNAs (miR-100, let-7, and miR-125) in D. melanogaster. After 7 days of DR, only miR-125 levels increased (176\u00b150%), while 20 days of DR led to significant increases in all three miRNAs: miR-100 (223\u00b180%), let-7 (171\u00b122%), and miR-125 (255\u00b154%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C16, and C17 are supported by qRT-PCR data shown in Figure 1B-D. The temporal pattern of miRNA upregulation is clearly demonstrated with appropriate statistical analysis and error bars. The data show a dose-response relationship with duration of DR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Loss-of-function mutations in let-7 and miR-125 dampen DR-dependent lifespan extension. Wild-type flies showed 50% increase in median lifespan on DR, while let-7-Chyp mutants showed only 17% increase, and \u0394miR-125 mutants showed 0% increase. Individual deletion of let-7 or miR-125 significantly reduced DR-mediated lifespan extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C18-C22 are supported by comprehensive survival analysis data in Figure 1 with appropriate statistical tests (log-rank test with p-values and \u03c7\u00b2 values). Multiple genetic backgrounds were tested to control for potential confounding effects. The dose-dependent relationship between miRNA levels and DR response is convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The 3' UTR of chinmo mRNA contains multiple let-7 and miR-125 binding sites. let-7 predominantly represses chinmo during metamorphosis while miR-125 silences chinmo in adulthood. Chinmo is upregulated in adult brains of miR-125 mutants fed AL or DR diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by prior published work (citations) and immunostaining data in Figure 2B. The differential temporal regulation by let-7 and miR-125 is consistent with previously published findings from the same laboratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C26",
+      "C27"
+    ],
+    "result": "The DR phenotype of miR-125 mutants is due to derepression of chinmo. Reducing chinmo levels genetically or by RNAi in miR-125 mutants suppresses their DR-dependent lifespan phenotypes. Genetic reduction of chinmo (chinmo1) was more effective (41.3% increase) than cell-specific RNAi knockdown (25% increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C26, and C27 are supported by genetic rescue experiments shown in Figure 2D and F with appropriate controls. The comparison between tissue-specific and global chinmo reduction provides insight into the mechanism, though the difference suggests additional complexity in the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DR enhances lipid content in Drosophila, but miR-125 mutants show significant drops in TAG levels (83\u00b18.5% in AL, 40.5\u00b121.6% in DR) and lipid droplet diameter (35% decrease in AL, 59% in DR). Reducing chinmo dosage in \u0394miR-125 flies rescues TAG levels and lipid droplet diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by TAG measurements and lipid droplet analysis in Figure 2G-I. The metabolic phenotypes are consistent with the lifespan data and provide a mechanistic link between miR-125, chinmo, and DR-mediated longevity. Prior work on DR and lipid metabolism is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "DR induces chinmo expression in adult fat tissue but not in brain. DR causes redistribution of Chinmo to non-nuclear compartments and increases chinmo mRNA levels, with greater fold-changes in decapitated body tissue (4.11\u00b11.37) than head tissue (1.94\u00b10.35). Chinmo mRNA also increases in hemolymph (2.6\u00b10.19 fold). In brain, high miR-125 levels prevent Chinmo protein accumulation even under DR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are supported by immunostaining (Figure 2B, 3A), qRT-PCR (Figure 3D-E), and quantitation of protein levels (Figure 3B-C). The tissue-specific regulation is well-documented with appropriate controls. The data reveal complex spatial regulation of chinmo by both transcriptional and post-transcriptional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Reducing chinmo in adult fat body increases stored triglyceride levels and lipid droplet diameter in flies fed an AL diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by TAG and lipid droplet measurements in Figure 3H-J. This demonstrates that chinmo acts as a negative regulator of lipid storage in the fat body, consistent with its role in the DR pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Chinmo relocalizes from nucleus to cytoplasm upon starvation in Kc167 cells. Overexpression of dSir2 causes cytoplasmic redistribution of Chinmo under fed conditions. Starvation causes 40\u00b125% decrease in acetylated Chinmo and induces interaction between dSir2 and Chinmo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by cell culture experiments with immunostaining (Figure 4A-C), immunoprecipitation, and western blot analysis (Figure 4D-F). The data establish a mechanistic link between nutrient status, dSir2-mediated deacetylation, and Chinmo localization. However, the relevance of the Kc167 cell line model to in vivo physiology requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Lysine residues K47, K55, and K348 are required for starvation-induced nuclear export of Chinmo. K47QK55Q double mutant and K348Q single mutant retain Chinmo in the nucleus upon starvation (72\u00b14% and 76\u00b14% respectively vs 26\u00b15% for wild-type). The triple mutant K47QK55QK348Q shows 76\u00b13% nuclear retention upon starvation and 86\u00b12% upon dSir2 co-transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by site-directed mutagenesis experiments with immunostaining and quantitation (Figure 4H-P). The identification of specific lysine residues provides molecular detail about the deacetylation mechanism. However, the prediction tool used (GPS-PAIL) should be validated, and direct evidence of deacetylation at these specific sites would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Starvation increases Chinmo protein levels in nuclei of adult and larval fat body and increases chinmo mRNA levels in larvae (3.98\u00b10.83 fold) and adults (3.98\u00b11.66 fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by immunostaining quantitation and qRT-PCR data (Figure 4\u2014figure supplement 2). The data demonstrate that starvation regulates chinmo at both transcriptional and post-translational levels, adding complexity to the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Flag-Chinmo is detected in medium and exosome fractions from starved Kc167 cells but not from cells maintained in complete medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is based on western blot analysis of exosome fractions (Figure 5O). While the data show Chinmo in exosomes under starvation, the functional significance is unclear. The exosome isolation method is described, but additional characterization (e.g., electron microscopy, particle size analysis, additional exosome markers) would strengthen this finding. The relevance to in vivo DR effects requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Overexpression of chinmo in adult neurons or fat body using inducible drivers decreases DR-dependent lifespan extension and reduces TAG levels and lipid droplet diameter in both AL and DR conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by survival analysis (Figure 6A-E) and metabolic measurements (Figure 6F-I). The gain-of-function experiments complement the loss-of-function data and demonstrate that chinmo acts as a negative regulator of DR-mediated longevity. Appropriate controls for the GeneSwitch system are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Neuronal overexpression of chinmo leads to increased chinmo mRNA in both brain (4.25\u00b10.8 fold AL, 11\u00b11.96 fold DR) and fat tissue (8.5\u00b11.79 fold AL, 7.6\u00b11.36 fold DR). Fat body-specific overexpression increases chinmo mRNA predominantly in fat tissue (48\u00b16.7 fold AL, 83.9\u00b112.7 fold DR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by qRT-PCR data (Figure 6J-L). The non-autonomous increase in chinmo mRNA in fat tissue upon neuronal overexpression suggests inter-tissue communication, though the mechanism remains unclear. The tissue specificity of the drivers is validated by GFP expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Proteomic analysis identified downregulated proteins predominantly involved in metabolism when chinmo is overexpressed in neurons. Fat metabolism genes (FATP, CG2017, CG9577, CG17554, CG5009, CG8778, CG9527, FASN1) are significantly downregulated in head (51-78%) and decapitated tissue (27-50%). Fatp protein levels decrease upon Flag-Chinmo overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by proteomic analysis (Figure 7E-F), qRT-PCR validation (Figure 7G-H), and western blot (Figure 7\u2014figure supplement 3A). The proteomic approach identifies downstream targets, though the analysis is limited to 5-day overexpression. The validation of multiple targets by qRT-PCR strengthens the findings, but direct evidence of Chinmo binding to these gene promoters would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Knockdown of fasn1 in adult fat body decreases median lifespan by 18.7% on AL and 3.22% on DR. Knockdown of fatp decreases median lifespan by 14.8% on DR with no change on AL. Overexpression of Flag-FATP in adult fat body increases median lifespan by 14.2% on AL and 25% on DR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by survival analysis (Figure 7I-K) with appropriate RNAi validation by qRT-PCR. The differential effects of fasn1 and fatp knockdown suggest distinct roles in AL vs DR conditions. The gain-of-function experiment with FATP overexpression provides strong evidence for its role as a pro-longevity factor. However, the modest effects suggest these genes are part of a larger network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Overexpression of human miR-125b-1 (which has identical processed sequence to fly miR-125) in adult fat body increases median lifespan by 5.8% on AL and 13.6% on DR. This leads to increased TAG levels and upregulation of FASN1 and FATP, particularly under DR conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by survival analysis (Figure 8C), metabolic measurements (Figure 8D-E), and qRT-PCR (Figure 8G-H). The use of human miR-125 demonstrates evolutionary conservation. However, the modest lifespan increase on AL (5.8%) suggests that simply increasing miR-125 levels is not sufficient to fully recapitulate DR effects. The stronger effect on DR suggests miR-125 works synergistically with other DR-induced changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "miR-125b increases in mouse subcutaneous white fat upon caloric restriction and has been identified as a circulating biomarker in Alzheimer's disease and Type 2 Diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by appropriate citations to prior research. These claims establish the translational relevance of the findings and suggest potential clinical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study identifies miR-125 and let-7 as mediators of DR response in Drosophila. miR-125 functions in neurons while chinmo acts in neurons and fat body to modulate fat metabolism and longevity. Chinmo regulates expression of FATP, CG2017, CG9577, CG17554, CG5009, CG8778, CG9527, and FASN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions of the study, which are well-supported by the comprehensive genetic, molecular, and metabolic data presented throughout the manuscript. The multi-tissue mechanism involving neuronal miR-125, chinmo in both neurons and fat body, and downstream metabolic genes provides a coherent model for DR-mediated longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "Increasing human miR-125 dosage in the fat body increases longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by survival data in Figure 8C showing increased median lifespan with fat body-specific overexpression of human miR-125b-1. This demonstrates the therapeutic potential of miR-125 as a DR mimetic, though the modest effect size suggests optimization may be needed.",
+    "result_type": "MAJOR"
+  }
+]

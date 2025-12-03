@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C31",
+      "C62"
+    ],
+    "result": "Spontaneous pupil size fluctuations correlate with widespread changes in cortical spectral power across multiple frequency bands and large-scale resting state networks. Low-frequency (delta) power decreases while high-frequency (beta-gamma) power increases with larger pupil size, reflecting antagonistic shifts between frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, C31, and C62 are well-supported by experimental MEG and pupil data shown in Figures 2 and 3. The DICS source localization method was appropriately applied, and the widespread correlation pattern is consistent across multiple networks and frequency bands. Statistical significance was established using linear mixed-effects models with appropriate corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C37",
+      "C68"
+    ],
+    "result": "Alpha band power exhibits an inverted U-shaped relationship with pupil size in both resting state and prestimulus baseline conditions. This relationship suggests that eyes-open alpha power does not simply index relaxation or 'idling' as traditionally considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C36, C37, and C68 are supported by experimental data (Figure 3B) showing quadratic relationships between alpha power and pupil size. The finding is consistent with previous EEG studies (Hong et al., 2014; van Kempen et al., 2019) and challenges traditional interpretations of alpha power. The statistical modeling appropriately compared linear and quadratic models using BIC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prestimulus pupil size predicts shifts in detection criterion (c), with larger pupil size associated with more liberal criterion. Hit rate increases linearly with pupil size while false alarm rate remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C43, C44, and C45 are supported by behavioral data from the perceptual decision-making task (Figure 4C, Table 1). The linear mixed-effects models show significant effects (p < 0.05) with appropriate statistical corrections. The dissociation between hit rate and false alarm rate provides strong evidence for criterion shifts rather than general response bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C80"
+    ],
+    "result": "Detection sensitivity (d') exhibits an inverted U-shaped relationship with prestimulus pupil size, with lowest sensitivity at smallest pupil size and peak sensitivity at intermediate pupil size, potentially following the Yerkes-Dodson law.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46, and C80 are supported by experimental data (Figure 4C, Table 1) showing significant quadratic relationships. The inverted-U pattern is consistent with the Yerkes-Dodson law and similar findings in animal studies (McGinley et al., 2015a). However, the connection to Yerkes-Dodson remains somewhat speculative as noted in the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Larger baseline pupil size precedes faster and more accurate object categorization responses and better neural representation of stimulus category, as measured by multivariate decoding of MEG activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by behavioral data (Figure 4D, Table 1) and decoding analysis (Figure 4E). The two-way repeated-measures ANOVA shows significant effects of pupil-linked state on neural category representation (F = 2.97, p = 0.03). The convergence of behavioral and neural measures strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C83",
+      "C84"
+    ],
+    "result": "Both arousal-linked and arousal-independent spectral power fluctuations at baseline predict subsequent recognition behavior. Logistic regression models using spectral power predict behavior better than chance, and removing pupil-linked power worsens performance, but adding pupil size to power-based models provides no additional predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49, C50, C51, C83, and C84 are supported by logistic regression modeling results (Figure 5A). The statistical comparisons using Wilcoxon signed-rank tests are appropriate. The finding that pupil size adds no information beyond spectral power is surprising but well-documented. However, the interpretation that cortical power contains all behaviorally-relevant information from pupil size requires careful consideration of measurement limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C85",
+      "C86"
+    ],
+    "result": "Pupil-independent (residual) spectral power in specific frequency bands and networks predicts distinct aspects of perceptual behavior. Delta power in dorsal attention and visual networks affects detection criterion, while alpha power in visual and default mode networks affects sensitivity but not criterion. This dissociation differs from pupil-linked arousal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54, C56, C85, and C86 are supported by residual power analysis (Figure 5B, Supplementary file 1). The dissociation between criterion and sensitivity effects across different networks and frequency bands is compelling. The statistical approach of regressing out pupil-linked variance before behavioral analysis is sound. The findings challenge previous interpretations of prestimulus alpha effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C93",
+      "C94"
+    ],
+    "result": "Fast spontaneous pupil constriction and dilation events correlate with large-scale MEG activity on a millisecond timescale. Cortical activity precedes pupil events by approximately 400 ms, with MEG activity showing peaks at both 0 ms and -400 ms relative to pupillary events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C57, C58, C59, C93, and C94 are supported by cross-correlation analysis (Figure 6A-D). The spatiotemporal cluster-based permutation test appropriately addresses multiple comparisons. The 400 ms lag is consistent with known physiological delays and similar to findings in monkey LC (Joshi et al., 2016). The dual-peak pattern provides insight into cortical-subcortical interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C61"
+    ],
+    "result": "Fast spontaneous pupil constriction and dilation events do not influence perceptual behavior in the visual detection task, despite their correlation with brain activity. Whether stimuli are presented during constriction or dilation does not affect any behavioral metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C61 are supported by behavioral analysis comparing trials during constriction vs. dilation events (Figure 6E). The null result is surprising given the robust neural correlates but is clearly documented. Control analyses using more stringent thresholds confirmed the null finding. This dissociation between fast events and behavior contrasts with the behavioral relevance of slow pupil states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Both pupil-linked and pupil-independent brain states influence perceptual decision-making through different mechanisms. The prestimulus brain state contains a strong global arousal component alongside unique contributions from specific frequency bands in specialized networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 synthesize findings from multiple analyses (Figures 4 and 5). The conclusion is well-supported by the convergence of pupil-behavior relationships, spectral power-behavior relationships, and residual power effects. The integration of global and network-specific mechanisms provides a comprehensive framework, though some aspects remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C42",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study employed simultaneous MEG and pupil recordings in 24 participants during eyes-open rest and a visual perceptual decision-making task with appropriate experimental controls and ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C42, and C101-C107 describe the experimental design and methods. These are factual statements about the study procedures that are clearly documented. The sample size (N=24) is reasonable for MEG studies. The task design with liminal stimuli at ~50% recognition rate is appropriate for investigating prestimulus effects. One participant was excluded due to discomfort, which is properly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Pupil size fluctuations exhibit a 1/f-type power spectrum dominated by low frequencies, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by power spectral analysis of pupil data (Figure 1F) and citation to previous work (Yellin et al., 2015). The 1/f spectrum is clearly visible in the data and justifies the choice of 2-second windows for 'slow state' analysis. This characterization is important for understanding the timescales of pupil-linked arousal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The widespread cortical modulation by pupil size likely stems from neuromodulatory systems (LC-NE, BF-ACh) that regulate both pupil size and cortical activity. The cross-frequency effects may reflect changes in aperiodic 1/f exponent during arousal state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C63, C64, C65, and C67 provide mechanistic interpretation of the pupil-spectral power relationships. These claims are supported by citations to relevant animal studies and knowledge about neuromodulatory systems. The 1/f exponent interpretation is consistent with recent intracranial EEG findings (Lendner et al., 2020). However, direct evidence for these mechanisms in the current human data is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Pupil-linked arousal effects on cortical power show non-uniform patterns across networks and behavioral conditions, with stronger alpha modulation in visual network at rest and stronger beta modulation in dorsal attention network during task baseline. This may reflect dynamic network reconfiguration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C73, and C74 describe network-specific variations in arousal effects (Figure 3C). The data support these observations, though the functional significance remains somewhat speculative. The connection to dynamic network reconfiguration theories (van den Brink et al., 2019; Shine, 2019) is plausible but not directly tested. The topographic organization of neuromodulatory systems could explain these patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "The current findings on pupil-behavior relationships are consistent with some previous human and animal studies but differ from others, potentially due to methodological differences or sampling different regions of the arousal continuum. The results can be interpreted within the adaptive gain theory framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79, C81, and C82 contextualize the findings within prior literature. The comparisons are appropriate and acknowledge both consistencies and discrepancies. The speculation about methodological differences (e.g., baseline period definition in de Gee et al., 2017) is reasonable. The connection to adaptive gain theory is plausible but remains somewhat speculative without direct measures of LC activity or exploration/exploitation behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The effects of pupil-independent alpha and delta power on behavior are consistent with known roles of these rhythms in attention and decision-making, as established by previous human fMRI and non-human primate electrophysiology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 provide context from prior literature on alpha power, attention, and decision networks. The citations are appropriate and support the interpretation of the current findings. The connection between prestimulus delta power in DAN and detection criterion is novel but consistent with the known role of FEF and posterior parietal cortex in decision criterion (Gold and Shadlen, 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C98"
+    ],
+    "result": "The temporal pattern of MEG activity preceding pupil events is similar to monkey LC spike patterns, suggesting cortical activity may influence LC activity which then triggers pupillary events. The lack of behavioral effects may reflect shared neuromodulatory control not reaching threshold for unique sympathetic/parasympathetic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95, C96, and C98 involve speculation about mechanisms underlying the fast pupil-brain correlations. While the comparison to monkey LC data (Joshi et al., 2016) is appropriate, the interpretation that cortical activity influences LC activity is speculative without direct LC measurements. The explanation for null behavioral effects (C98) is plausible but remains speculative. These mechanistic claims require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The introduction establishes the background on arousal markers (pupil size and spectral power), their historical separation in human research despite correlation in animals, and the gaps in understanding their relationship and behavioral consequences in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide background context from prior literature. These are appropriately cited and accurately represent the state of the field. The characterization of the gap in knowledge (lack of understanding how pupil and spectral power relate in humans and their respective behavioral contributions) justifies the current study. The citations to Yerkes-Dodson law, alpha power effects, and recent animal studies are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C33",
+      "C36",
+      "C39",
+      "C40",
+      "C55",
+      "C66",
+      "C69",
+      "C70",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Various supporting claims about neuromodulatory control of pupil, network definitions, methodological advantages of MEG, and comparisons to prior findings provide context and justification for the study approach and interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C33, C36, C39, C40, C55, C66, C69, C70, C97, C99, and C100 are supporting statements based on citations to prior work or established knowledge. These are generally accurate and appropriately cited. Some involve speculation (e.g., C40 about MEG vs. EEG gamma sensitivity) but are clearly presented as such. These claims support the main findings but are not primary results themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Methodological details regarding eye-tracking analysis (using right eye only), DICS beamforming method, and frequency band definitions are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C109, and C110 describe methodological choices. Using only right eye data is justified by the expectation of no difference between eyes in healthy volunteers. The DICS method description is accurate. The frequency band definitions are standard. These are appropriate methodological decisions that are clearly documented.",
+    "result_type": "MINOR"
+  }
+]
